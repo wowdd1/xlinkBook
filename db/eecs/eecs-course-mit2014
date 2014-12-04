@@ -1,3 +1,4 @@
+6.0 Basic Undergraduate Subjects
 6.0001 Introduction to Computer Science Programming in Python
 6.0002 Introduction to Computational Thinking and Data Science
 6.01 Introduction to EECS I
@@ -41,6 +42,7 @@
 6.073J Creating Video Games
 6.S076-6.S084 Special Subject in Electrical Engineering and Computer Science
 6.S085-6.S099 Special Subject in Electrical Engineering and Computer Science
+6.1 Undergraduate Laboratory Subjects
 6.100 Electrical Engineering and Computer Science Project
 6.101 Introductory Analog Electronics Laboratory
 6.111 Introductory Digital Systems Laboratory
@@ -76,6 +78,7 @@
 6.UAR Seminar in Undergraduate Advanced Research
 6.UAT Oral Communication
 6.URS Undergraduate Research in Electrical Engineering and Computer Science
+6.2 Systems Science and Control Engineering
 6.207J Networks
 6.231 Dynamic Programming and Stochastic Control
 6.241J Dynamic Systems and Control
@@ -100,6 +103,7 @@
 6.268 Network Science and Models
 6.281J Logistical and Transportation Planning Methods
 6.291 Seminar in Systems, Communications, and Control Research
+6.3 Electronics, Computers, and Systems
 6.301 Solid-State Circuits
 6.302 Feedback Systems
 6.331 Advanced Circuit Techniques
@@ -117,6 +121,7 @@
 6.374 Analysis and Design of Digital Integrated Circuits
 6.375 Complex Digital Systems Design
 6.376 Bioelectronics
+6.4 Probabilistic Systems and Communication
 6.431 Applied Probability
 6.434J Statistics for Engineers and Scientists
 6.435 System Identification
@@ -131,6 +136,7 @@
 6.453 Quantum Optical Communication
 6.454 Graduate Seminar in Area I
 6.456 Array Processing
+6.5 Bioelectrical Engineering
 6.503 Foundations of Algorithms and Computational Techniques in Systems Biology
 6.521J Cellular Biophysics
 6.522J Quantitative Physiology: Organ Transport Systems
@@ -147,6 +153,7 @@
 6.580J Principles of Synthetic Biology
 6.581J Foundations of Algorithms and Computational Techniques in Systems Biology
 6.589J Principles of Synthetic Biology
+6.6 Electrodynamics
 6.608J Introduction to Particle Accelerators
 6.630 Electromagnetics
 6.631 Optics and Photonics
@@ -162,6 +169,7 @@
 6.685 Electric Machines
 6.690 Introduction to Electric Power Systems
 6.695J Engineering, Economics and Regulation of the Electric Power Sector
+6.7 Solid-State Materials and Devices
 6.701 Introduction to Nanoelectronics
 6.717J Design and Fabrication of Microelectromechanical Systems
 6.719 Nanoelectronics
@@ -180,6 +188,7 @@
 6.780J Control of Manufacturing Processes
 6.781J Nanostructure Fabrication
 6.789 Organic Optoelectronics
+6.8 Computer Science
 6.801 Machine Vision
 6.802J Foundations of Computational and Systems Biology
 6.803 The Human Intelligence Enterprise
