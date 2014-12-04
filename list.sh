@@ -12,7 +12,7 @@ usage2="eg: ${0} db/eecs-course-all2014 2 'Machine learning'\n
 \040\040\040\040${0} db/eecs-course-all2014 1 '^cs.*Cryptography'\n
 \040\040\040\040${0} db/eecs/eecs-course-edx2014 2 '' no | sort  -k1 -n -r\n"
 
-if [ "${1}" = "help" ]
+if [ "${1}" = "" ] || [ "${1}" = "help" ]
 then
     echo -e "${usage}"
     if [ "${2}" != "" ]
