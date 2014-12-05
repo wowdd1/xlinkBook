@@ -168,7 +168,7 @@ function print_list() {
         pre_result=""
     fi
     
-    if [ "${i}" -gt 1000000 ]
+    if [ "${i}" -gt 0 ]
     then
         if [ "${keyword}" != "" ]
         then
@@ -227,4 +227,4 @@ else
     print_list
 fi
 
-#date
+date
