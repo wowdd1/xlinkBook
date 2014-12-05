@@ -3,14 +3,14 @@
 #author: wowdd1
 #data: 2014.11.19
 
-usage="\nusage:  ${0} filename or dirname [column_num] ['keyword or regexp'] [isAlignCourseName]\n
+usage="\nusage:  ${0} filename or dirname [column_num] ['keyword or regexp'] [is_online_course] [is_align_course_name]\n
 filename or dirname: the course file or dir\n
 column_num: from 1 to 3\n
 keyword or regexp: the keyword for filter course\n
 keyword suggest(to list keyword, please run ${0} help filename):\n"
 usage2="eg: ${0} db/eecs-course-all2014 2 'Machine learning'\n
 \040\040\040\040${0} db/eecs-course-all2014 1 '^cs.*Cryptography'\n
-\040\040\040\040${0} db/eecs/eecs-course-edx2014 2 '' no | sort  -k1 -n -r\n"
+\040\040\040\040${0} db/eecs/eecs-course-edx2014 2 '' n n | sort  -k1 -n -r\n"
 
 if [ "${1}" = "" ] || [ "${1}" = "help" ]
 then
@@ -33,7 +33,8 @@ course_num_len=8
 file_name=${1}
 column_num=${2}
 keyword=${3}
-isAlignCourseName=${4}
+is_online_course=${4}
+is_align_course_name=${5}
 
 
 function fAlignCourseName(){
@@ -86,7 +87,7 @@ function print_list() {
             fi
         fi
     
-        if [ "${isAlignCourseName}" = "no" ] # do not align course name
+        if [ "${is_align_course_name}" = "n" ] # do not align course name
         then
             course_num_len=0
         fi
@@ -166,14 +167,16 @@ function print_list() {
         echo -e ${pre_result//$/\\040}
         pre_result=""
     fi
-
-    if [ "${keyword}" != "" ]
+    
+    if [ "${i}" -gt 1000000 ]
     then
-        echo -e "\nTotal ${i} records cotain ${keyword}"
-    else
-        echo -e "\nTotal ${i} records"
+        if [ "${keyword}" != "" ]
+        then
+            echo -e "\nTotal ${i} records cotain ${keyword},  File: ${file_name}\n"
+        else
+            echo -e "\nTotal ${i} records,  File: ${file_name}\n"
+        fi
     fi
-    echo -e "File: ${file_name}\n"
 }
 
 dir=""
@@ -182,6 +185,23 @@ function print_dir() {
     local filelist=`ls ${1}`
     for file in $filelist
     do
+        if [ "${is_online_course}" = "y" ]
+        then
+            echo "${file}" |grep -iq "youtube"
+            if [ $? -ne 0 ]
+            then
+                echo "${file}" |grep -iq "coursera"
+                if [ $? -ne 0 ]
+                then
+                    echo "${file}" |grep -iq "edx"
+                    if [ $? -ne 0 ]
+                    then
+                        continue
+                    fi
+                fi
+            fi
+        fi
+
         if [ -f "${1}${file}" ]
         then
             file_name=${1}${file}
@@ -207,4 +227,4 @@ else
     print_list
 fi
 
-date
+#date
