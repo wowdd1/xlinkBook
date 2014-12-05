@@ -1,126 +1,129 @@
-Johns Hopkins University
-Developing Data Products
-Johns Hopkins University
-Getting and Cleaning Data
-Johns Hopkins University
-Practical Machine Learning
-Johns Hopkins University
-The Data Scientist’s Toolbox
-Johns Hopkins University
-Mathematical Biostatistics Boot Camp 1
-Johns Hopkins University
-Reproducible Research
-Eindhoven University of Technology
-Process Mining: Data science in Action
-Johns Hopkins University
-Exploratory Data Analysis
-Johns Hopkins University
-Statistical Inference
-Johns Hopkins University
-Regression Models
-Johns Hopkins University
-R Programming
-West Virginia University
-Forensic Accounting and Fraud Examination
-Vanderbilt University
-Data Management for Clinical Research
-Peking University
-Bioinformatics: Introduction and Methods 生物信息学: 导论与方法
-The Pennsylvania State University
-Maps and the Geospatial Revolution
-Northwestern University
-Scaling operations: Linking strategy and execution
-Brown University
-Coding the Matrix: Linear Algebra through Computer Science Applications
-Duke University
-Data Analysis and Statistical Inference
-Icahn School of Medicine at Mount Sinai
-Network Analysis in Systems Biology
-Stanford University
-Machine Learning
-University of Illinois at Urbana-Champaign
-Cluster Analysis in Data Mining
-Johns Hopkins University
-Data Science Capstone
-Caltech
-The Caltech-JPL Summer School on Big Data Analytics
-The Pennsylvania State University
-Geospatial Intelligence & the Geospatial Revolution
-University of Illinois at Urbana-Champaign
-Text Mining and Analytics
-Brown University
-Exploring Neural Data
-University of Washington
-Computational Methods for Data Analysis
-University of Michigan
-Questionnaire Design for Social Surveys
-University of Amsterdam
-Descriptive Statistics
-University of Illinois at Urbana-Champaign
-Pattern Discovery in Data Mining
-University of Amsterdam
-Inferential Statistics
-University of Pennsylvania
-Probability
-University of Amsterdam
-Solid Science: Research Methods
-University of Amsterdam
-Qualitative Research Methods
-University of Illinois at Urbana-Champaign
-Data Visualization
-University of Illinois at Urbana-Champaign
-Text Retrieval and Search Engines
-Higher School of Economics
-Core Concepts in Data Analysis
-The Pennsylvania State University
-Creativity, Innovation, and Change | 创意，创新, 与 变革
-National University of Singapore
-Unpredictable? Randomness, Chance and Free Will
-Wesleyan University
-Passion Driven Statistics
-Northwestern University
-How Green Is That Product? An Introduction to Life Cycle Environmental Assessment
-The University of Edinburgh
-AstroTech: The Science and Technology behind Astronomical Discovery
-University of London
-Enhance Your Career and Employability Skills
-University of Washington
-Machine Learning
-Princeton University
-Statistics One
-Stanford University
-Social and Economic Networks: Models and Analysis
-Johns Hopkins University
-Computing for Data Analysis
-University of Toronto
-Bioinformatic Methods II
-McMaster University
-Experimentation for Improvement
-Stanford University
-Startup Engineering
-Johns Hopkins University
-Data Analysis
-University of Washington
-Scientific Computing
-University of Toronto
-Statistics: Making Sense of Data
-University of Washington
-High Performance Scientific Computing
-University of Toronto
-Neural Networks for Machine Learning
-University of Houston System
-Preparing for the AP* Statistics Exam
-University of Minnesota
-From GPS and Google Maps to Spatial Computing
-Johns Hopkins University
-Case-Based Introduction to Biostatistics
-University of Toronto
-Bioinformatic Methods I
-Columbia University
-Big Data in Education
-University of Washington
-Introduction to Data Science
-Duke University
-Teaching Statistical Thinking: Part 1 Descriptive Statistics
-Technical University of Denmark (DTU)
-Computational Molecular Evolution
+Johns Hopkins University Developing Data Products
+Johns Hopkins University Getting and Cleaning Data
+Johns Hopkins University Practical Machine Learning
+Johns Hopkins University The Data Scientist’s Toolbox
+Johns Hopkins University Mathematical Biostatistics Boot Camp 1
+Johns Hopkins University Reproducible Research
+Eindhoven University of Technology Process Mining Data science in Action
+Johns Hopkins University Exploratory Data Analysis
+Johns Hopkins University Statistical Inference
+Johns Hopkins University Regression Models
+Johns Hopkins University R Programming
+West Virginia University Forensic Accounting and Fraud Examination
+Vanderbilt University Data Management for Clinical Research
+Peking University Bioinformatics Introduction and Methods 生物信息学 导论与方法
+The Pennsylvania State University Maps and the Geospatial Revolution
+Northwestern University Scaling operations Linking strategy and execution
+Brown University Coding the Matrix Linear Algebra through Computer Science Applications
+Duke University Data Analysis and Statistical Inference
+Icahn School of Medicine at Mount Sinai Network Analysis in Systems Biology
+Stanford University Machine Learning
+University of Illinois at Urbana-Champaign Cluster Analysis in Data Mining
+Johns Hopkins University Data Science Capstone
+Caltech The Caltech-JPL Summer School on Big Data Analytics
+The Pennsylvania State University Geospatial Intelligence & the Geospatial Revolution
+University of Illinois at Urbana-Champaign Text Mining and Analytics
+Brown University Exploring Neural Data
+University of Washington Computational Methods for Data Analysis
+University of Michigan Questionnaire Design for Social Surveys
+University of Amsterdam Descriptive Statistics
+University of Illinois at Urbana-Champaign Pattern Discovery in Data Mining
+University of Amsterdam Inferential Statistics
+University of Pennsylvania Probability
+University of Amsterdam Solid Science Research Methods
+University of Amsterdam Qualitative Research Methods
+University of Illinois at Urbana-Champaign Data Visualization
+University of Illinois at Urbana-Champaign Text Retrieval and Search Engines
+Higher School of Economics Core Concepts in Data Analysis
+The Pennsylvania State University Creativity, Innovation, and Change | 创意，创新, 与 变革
+National University of Singapore Unpredictable? Randomness, Chance and Free Will
+Wesleyan University Passion Driven Statistics
+Northwestern University How Green Is That Product? An Introduction to Life Cycle Environmental Assessment
+The University of Edinburgh AstroTech The Science and Technology behind Astronomical Discovery
+University of London Enhance Your Career and Employability Skills
+University of Washington Machine Learning
+Princeton University Statistics One
+Stanford University Social and Economic Networks Models and Analysis
+Johns Hopkins University Computing for Data Analysis
+University of Toronto Bioinformatic Methods II
+McMaster University Experimentation for Improvement
+Stanford University Startup Engineering
+Johns Hopkins University Data Analysis
+University of Washington Scientific Computing
+University of Toronto Statistics Making Sense of Data
+University of Washington High Performance Scientific Computing
+University of Toronto Neural Networks for Machine Learning
+University of Houston System Preparing for the AP'*' Statistics Exam
+University of Minnesota From GPS and Google Maps to Spatial Computing
+Johns Hopkins University Case-Based Introduction to Biostatistics
+University of Toronto Bioinformatic Methods I
+Columbia University Big Data in Education
+University of Washington Introduction to Data Science
+Duke University Teaching Statistical Thinking Part 1 Descriptive Statistics
+Technical University of Denmark (DTU) Computational Molecular Evolution
+zds-MacBook-Pro:course zd$ ./list.sh db/eecs/statistics_and_data_analysis-coursera2014 2 '' n n | sort -k1 -n r 
+sort: open failed: r: No such file or directory
+zds-MacBook-Pro:course zd$ ./list.sh db/eecs/statistics_and_data_analysis-coursera2014 2 '' n n | sort -k1 -n -r 
+West Virginia University Forensic Accounting and Fraud Examination
+Wesleyan University Passion Driven Statistics
+Vanderbilt University Data Management for Clinical Research
+University of Washington Scientific Computing
+University of Washington Machine Learning
+University of Washington Introduction to Data Science
+University of Washington High Performance Scientific Computing
+University of Washington Computational Methods for Data Analysis
+University of Toronto Statistics Making Sense of Data
+University of Toronto Neural Networks for Machine Learning
+University of Toronto Bioinformatic Methods II
+University of Toronto Bioinformatic Methods I
+University of Pennsylvania Probability
+University of Minnesota From GPS and Google Maps to Spatial Computing
+University of Michigan Questionnaire Design for Social Surveys
+University of London Enhance Your Career and Employability Skills
+University of Illinois at Urbana-Champaign Text Retrieval and Search Engines
+University of Illinois at Urbana-Champaign Text Mining and Analytics
+University of Illinois at Urbana-Champaign Pattern Discovery in Data Mining
+University of Illinois at Urbana-Champaign Data Visualization
+University of Illinois at Urbana-Champaign Cluster Analysis in Data Mining
+University of Houston System Preparing for the AP'*' Statistics Exam
+University of Amsterdam Solid Science Research Methods
+University of Amsterdam Qualitative Research Methods
+University of Amsterdam Inferential Statistics
+University of Amsterdam Descriptive Statistics
+The University of Edinburgh AstroTech The Science and Technology behind Astronomical Discovery
+The Pennsylvania State University Maps and the Geospatial Revolution
+The Pennsylvania State University Geospatial Intelligence & the Geospatial Revolution
+The Pennsylvania State University Creativity, Innovation, and Change | 创意，创新, 与 变革
+Technical University of Denmark (DTU) Computational Molecular Evolution
+Stanford University Startup Engineering
+Stanford University Social and Economic Networks Models and Analysis
+Stanford University Machine Learning
+Princeton University Statistics One
+Peking University Bioinformatics Introduction and Methods 生物信息学 导论与方法
+Northwestern University Scaling operations Linking strategy and execution
+Northwestern University How Green Is That Product? An Introduction to Life Cycle Environmental Assessment
+National University of Singapore Unpredictable? Randomness, Chance and Free Will
+McMaster University Experimentation for Improvement
+Johns Hopkins University The Data Scientist’s Toolbox
+Johns Hopkins University Statistical Inference
+Johns Hopkins University Reproducible Research
+Johns Hopkins University Regression Models
+Johns Hopkins University R Programming
+Johns Hopkins University Practical Machine Learning
+Johns Hopkins University Mathematical Biostatistics Boot Camp 1
+Johns Hopkins University Getting and Cleaning Data
+Johns Hopkins University Exploratory Data Analysis
+Johns Hopkins University Developing Data Products
+Johns Hopkins University Data Science Capstone
+Johns Hopkins University Data Analysis
+Johns Hopkins University Computing for Data Analysis
+Johns Hopkins University Case-Based Introduction to Biostatistics
+Icahn School of Medicine at Mount Sinai Network Analysis in Systems Biology
+Higher School of Economics Core Concepts in Data Analysis
+Eindhoven University of Technology Process Mining Data science in Action
+Duke University Teaching Statistical Thinking Part 1 Descriptive Statistics
+Duke University Data Analysis and Statistical Inference
+Columbia University Big Data in Education
+Caltech The Caltech-JPL Summer School on Big Data Analytics
+Brown University Exploring Neural Data
+Brown University Coding the Matrix Linear Algebra through Computer Science Applications
