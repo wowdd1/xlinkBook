@@ -95,6 +95,11 @@ function print_list() {
         then
             result=${line//":"/}
         fi
+
+        if [[ $line =~ "*" ]]
+        then
+            result=${line//"*"/"'*'"}
+        fi
     
         let i++
         if [ "${column_num}" =  "3" ] # print 3 column
@@ -195,7 +200,6 @@ then
     then
         dir=${dir}"/"
     fi
-
     print_dir ${dir}
 
 else
