@@ -1,120 +1,163 @@
-École normale supérieure Statistical Mechanics Algorithms and Computations
-École Polytechnique Fédérale de Lausanne Principles of Reactive Programming
-École Polytechnique Fédérale de Lausanne Linear and Discrete Optimization
-École Polytechnique Fédérale de Lausanne Introduction à la programmation orientée objet (en C++)
-École Polytechnique Fédérale de Lausanne Initiation à la programmation (en Java)
-École Polytechnique Fédérale de Lausanne Initiation à la programmation (en C++)
-École Polytechnique Fédérale de Lausanne Functional Programming Principles in Scala
-École Polytechnique Fédérale de Lausanne Digital Signal Processing
-École Centrale Paris Discrete Inference and Learning in Artificial Vision
-Vanderbilt University Programming Cloud Services for Android Handheld Systems
-Vanderbilt University Pattern-Oriented Software Architectures Programming Mobile Services for Android Handhel...
-University of Washington The Hardware/Software Interface
-University of Washington Programming Languages
-University of Washington Machine Learning
-University of Washington Introduction to Data Science
-University of Washington Information Security and Risk Management in Context
-University of Washington Designing and Executing Information Security Strategies
-University of Washington Computer Networks
-University of Washington Computational Neuroscience
-University of Washington Building an Information Risk Management Toolkit
-University of Toronto Neural Networks for Machine Learning
-University of Toronto Learn to Program Crafting Quality Code
-University of Toronto (NONE) (NONE)
-University of Pennsylvania Networked Life
-University of New Mexico Web Application Architectures
-University of New Mexico Interactive Computer Graphics with WebGL
-University of Minnesota Introduction to Recommender Systems
-University of Minnesota From GPS and Google Maps to Spatial Computing
-University of Michigan Social Network Analysis
-University of Michigan Securing Digital Democracy
-University of Michigan Programming for Everybody (Python)
-University of Michigan Internet History, Technology, and Security
-University of Maryland, College Park Usable Security
-University of Maryland, College Park Software Security
-University of Maryland, College Park Programming Mobile Applications for Android Handheld Systems
-University of Maryland, College Park Making Better Group Decisions Voting, Judgement Aggregation and Fair Division
-University of Maryland, College Park Hardware Security
-University of Maryland, College Park Cryptography Cryptography
-University of London Malicious Software and its Underground Economy Two Sides to Every Story
-University of London Enhance Your Career and Employability Skills
-University of London Creative Programming for Digital Media & Mobile Apps
-University of Illinois at Urbana-Champaign VLSI CAD Logic to Layout
-University of Illinois at Urbana-Champaign Text Retrieval and Search Engines
-University of Illinois at Urbana-Champaign Text Mining and Analytics
-University of Illinois at Urbana-Champaign Pattern Discovery in Data Mining
-University of Illinois at Urbana-Champaign Heterogeneous Parallel Programming
-University of Illinois at Urbana-Champaign Data Visualization
-University of Illinois at Urbana-Champaign Creative, Serious and Playful Science of Android Apps
-University of Illinois at Urbana-Champaign Cluster Analysis in Data Mining
-University of Illinois at Urbana-Champaign Cloud Networking
-University of Illinois at Urbana-Champaign Cloud Computing Concepts Part 2
-University of Illinois at Urbana-Champaign Cloud Computing Concepts
-University of Illinois at Urbana-Champaign Cloud Computing Applications
-University of Colorado System Beginning Game Programming with C#
-University of California, Santa Cruz C++ For C Programmers
-University of California, San Diego Human-Computer Interaction Design
-University of California, San Diego Human-Computer Interaction
-University of California, San Diego Bioinformatics Algorithms (Part 2)
-University of California, San Diego Bioinformatics Algorithms (Part 1)
-University of California, San Diego Algorithms, Biology, and Programming for Beginners
-The University of Tokyo Welcome to Game Theory
-The University of Tokyo Interactive Computer Graphics
-The University of Melbourne Logic Language and Information 2
-The University of Melbourne Logic Language and Information 1
-The University of Melbourne Discrete Optimization
-The University of Edinburgh Philosophy and the Sciences
-The University of Edinburgh Code Yourself! An Introduction to Programming
-The University of Edinburgh Artificial Intelligence Planning
-The University of British Columbia Introduction to Systematic Program Design - Part 1
-The Pennsylvania State University Creativity, Innovation, and Change | 创意，创新, 与 变革
-State University of New York Introduction to Computational Arts Processing
-State University of New York Introduction to Computational Arts
-Stanford University & The University of British Columbia Game Theory II Advanced Applications
-Stanford University & The University of British Columbia Game Theory
-Stanford University Surveillance Law
-Stanford University Startup Engineering
-Stanford University Social and Economic Networks Models and Analysis
-Stanford University Probabilistic Graphical Models
-Stanford University Natural Language Processing
-Stanford University Mining Massive Datasets
-Stanford University Machine Learning
-Stanford University Introduction to Logic
-Stanford University Introduction to Databases
-Stanford University General Game Playing
-Stanford University Cryptography II
-Stanford University Cryptography I
-Stanford University Computer Security
-Stanford University Computer Science 101
-Stanford University Compilers Compilers
-Stanford University Automata Automata
-Stanford University Algorithms Design and Analysis, Part 2
-Stanford University Algorithms Design and Analysis, Part 1
-Rice University Principles of Computing
+Johns Hopkins University R Programming
+Johns Hopkins University The Data Scientist’s Toolbox
+Johns Hopkins University Getting and Cleaning Data
+Johns Hopkins University Exploratory Data Analysis
+Johns Hopkins University Reproducible Research
+Johns Hopkins University Developing Data Products
+Johns Hopkins University Statistical Inference
+Johns Hopkins University Practical Machine Learning
+Johns Hopkins University Regression Models
+Johns Hopkins University Mathematical Biostatistics Boot Camp 1
 Rice University Fundamentals of Computing Capstone Exam
-Rice University An Introduction to Interactive Programming in Python
-Rice University Algorithmic Thinking
-Princeton University Networks Illustrated Principles without Calculus
-Princeton University Networks Friends, Money, and Bytes
-Princeton University Fog Networks and the Internet of Things
-Princeton University Computer Architecture
-Princeton University Analytic Combinatorics
-Princeton University Analysis of Algorithms
-Princeton University Algorithms, Part II
-Princeton University Algorithms, Part I
-Peking University Bioinformatics Introduction and Methods 生物信息学 导论与方法
-Northwestern University Fundamentals of Digital Image and Video Processing
-National University of Singapore Unpredictable? Randomness, Chance and Free Will
-Learn to Program The Fundamentals Web Intelligence and Big Data
-Johns Hopkins University Developing Data Products Johns Hopkins University
-Icahn School of Medicine at Mount Sinai Network Analysis in Systems Biology
-Georgia Institute of Technology Software Defined Networking
-Georgia Institute of Technology Control of Mobile Robots
-Georgia Institute of Technology Computational Photography
-Georgia Institute of Technology Computational Investing, Part I
-Eindhoven University of Technology Process Mining Data science in Action
-Duke University Image and video processing From Mars to Hollywood with a stop at the hospita...
 Copenhagen Business School An Introduction to Consumer Neuroscience & Neuromarketing
-Columbia University Natural Language Processing
+Eindhoven University of Technology Process Mining: Data science in Action
+University of Michigan Programming for Everybody (Python)
+Brown University Coding the Matrix: Linear Algebra through Computer Science Applications
+Duke University Image and video processing: From Mars to Hollywood with a stop at the hospital
+The University of Edinburgh Code Yourself! An Introduction to Programming
+Duke University Data Analysis and Statistical Inference
+University of Maryland, College Park Software Security
+University of Illinois at Urbana-Champaign Creative, Serious and Playful Science of Android Apps
+University of Washington Programming Languages
+West Virginia University Forensic Accounting and Fraud Examination
+Northwestern University Scaling operations: Linking strategy and execution
+Georgia Institute of Technology Software Defined Networking
+The University of Edinburgh Philosophy and the Sciences
+University of California, San Diego Algorithms, Biology, and Programming for Beginners
+University of Maryland, College Park Hardware Security
+University of Maryland, College Park Cryptography
+University of California, San Diego Bioinformatics Algorithms (Part 1)
+University of Maryland, College Park Usable Security
+Peking University Bioinformatics: Introduction and Methods
+Icahn School of Medicine at Mount Sinai Network Analysis in Systems Biology
+The University of Melbourne Logic: Language and Information 1
+The University of Melbourne Logic: Language and Information 2
+The Pennsylvania State University Maps and the Geospatial Revolution
+University of California, San Diego Bioinformatics Algorithms (Part 2)
+University of Illinois at Urbana-Champaign VLSI CAD: Logic to Layout
+Vanderbilt University Data Management for Clinical Research
+University of Illinois at Urbana-Champaign Cloud Computing Concepts
+University of Illinois at Urbana-Champaign Pattern Discovery in Data Mining
+Stanford University Machine Learning
+University of Colorado System Beginning Game Programming with C#
+University of Illinois at Urbana-Champaign Text Mining and Analytics
+Stanford University Introduction to Logic
+Princeton University Algorithms, Part II
+University of Illinois at Urbana-Champaign Text Retrieval and Search Engines
+The University of Tokyo Welcome to Game Theory
+Stanford University Cryptography I
+University of California, San Diego Human-Computer Interaction Design
+Stanford University Algorithms: Design and Analysis, Part 1
+Stanford University Game Theory
+University of Illinois at Urbana-Champaign Data Visualization
+University of Illinois at Urbana-Champaign Cluster Analysis in Data Mining
+University of Pennsylvania Probability
+University of Amsterdam Solid Science: Research Methods
+University of Illinois at Urbana-Champaign Cloud Networking
+École normale supérieure Statistical Mechanics: Algorithms and Computations
+École Polytechnique Fédérale de Lausanne Digital Signal Processing
+University of Illinois at Urbana-Champaign Cloud Computing Concepts: Part 2
+University of Illinois at Urbana-Champaign Heterogeneous Parallel Programming
+The University of Edinburgh Artificial Intelligence Planning
+Stanford University Game Theory II: Advanced Applications
+University of Illinois at Urbana-Champaign Cloud Computing Applications
+Princeton University Fog Networks and the Internet of Things
+Princeton University Analytic Combinatorics
+Stanford University Surveillance Law
+University of Washington Computational Methods for Data Analysis
+Princeton University Networks: Friends, Money, and Bytes
+University of Michigan Questionnaire Design for Social Surveys
+Caltech The Caltech-JPL Summer School on Big Data Analytics
+University of Amsterdam Descriptive Statistics
+University of Amsterdam Inferential Statistics
+The Pennsylvania State University Geospatial Intelligence & the Geospatial Revolution
+Johns Hopkins University Data Science Capstone
+Stanford University Cryptography II
+University of Amsterdam Qualitative Research Methods
+École Polytechnique Fédérale de Lausanne Introduction à la programmation orientée objet (en C++)
+University of Maryland, College Park Programming Mobile Applications for Android Handheld Systems
+Princeton University Algorithms, Part I
+Stanford University Computer Science 101
+École Polytechnique Fédérale de Lausanne Functional Programming Principles in Scala
+University of Toronto Neural Networks for Machine Learning
+University of Toronto Learn to Program: The Fundamentals
+Johns Hopkins University Data Analysis
+Princeton University Computer Architecture
+University of Toronto Statistics: Making Sense of Data
+University of Washington Introduction to Data Science
+Stanford University Mining Massive Datasets
+Stanford University Algorithms: Design and Analysis, Part 2
+The University of Edinburgh AstroTech: The Science and Technology behind Astronomical Discovery
+Stanford University Automata
+Stanford University Natural Language Processing
+Unknow Web Intelligence and Big Data
+Rice University Algorithmic Thinking
+Georgia Institute of Technology Computational Investing, Part I
+Georgia Institute of Technology Computational Photography
+University of Houston System Preparing for the AP* Statistics Exam
+University of Maryland, College Park Making Better Group Decisions: Voting, Judgement Aggregation and Fair Division
+University of Washington Building an Information Risk Management Toolkit
+University of Toronto Learn to Program: Crafting Quality Code
+University of Michigan Securing Digital Democracy
+University of Washington Computer Networks
+University of Washington The Hardware/Software Interface
+University of Washington Scientific Computing
+University of California, San Diego Human-Computer Interaction
+Johns Hopkins University Case-Based Introduction to Biostatistics
+Princeton University Statistics One
+University of Minnesota Introduction to Recommender Systems
+Stanford University Compilers
+Princeton University Networks Illustrated: Principles without Calculus
+The University of British Columbia Introduction to Systematic Program Design - Part 1
+Stanford University Introduction to Databases
+Rice University Principles of Computing
 California Institute of the Arts Introduction to Programming for Musicians and Digital Artists
-Brown University Coding the Matrix Linear Algebra through Computer Science Applications
+National University of Singapore Unpredictable? Randomness, Chance and Free Will
+University of Toronto Bioinformatic Methods II
+University of Washington Computational Neuroscience
+Columbia University Natural Language Processing
+Johns Hopkins University Computing for Data Analysis
+Stanford University Probabilistic Graphical Models
+University of Washington Designing and Executing Information Security Strategies
+Vanderbilt University Pattern-Oriented Software Architectures: Programming Mobile Services for Android Handheld Systems
+École Polytechnique Fédérale de Lausanne Principles of Reactive Programming
+Stanford University General Game Playing
+Rice University An Introduction to Interactive Programming in Python
+Vanderbilt University Programming Cloud Services for Android Handheld Systems
+University of New Mexico Interactive Computer Graphics with WebGL
+Brown University Exploring Neural Data
+Northwestern University Fundamentals of Digital Image and Video Processing
+McMaster University Experimentation for Improvement
+The Pennsylvania State University Creativity, Innovation, and Change
+University of Washington Machine Learning
+Technical University of Denmark (DTU) Computational Molecular Evolution
+University of London Malicious Software and its Underground Economy: Two Sides to Every Story
+University of California, Santa Cruz C++ For C Programmers
+École Polytechnique Fédérale de Lausanne Initiation à la programmation (en Java)
+University of London Enhance Your Career and Employability Skills
+Stanford University Startup Engineering
+University of London Creative Programming for Digital Media & Mobile Apps
+Columbia University Big Data in Education
+Stanford University Computer Security
+Georgia Institute of Technology Control of Mobile Robots
+State University of New York Introduction to Computational Arts: Processing
+University of Minnesota From GPS and Google Maps to Spatial Computing
+The University of Melbourne Discrete Optimization
+The University of Tokyo Interactive Computer Graphics
+École Polytechnique Fédérale de Lausanne Initiation à la programmation (en C++)
+University of Toronto Bioinformatic Methods I
+Northwestern University How Green Is That Product? An Introduction to Life Cycle Environmental Assessment
+State University of New York Introduction to Computational Arts
+Duke University Teaching Statistical Thinking: Part 1 Descriptive Statistics
+University of New Mexico Web Application Architectures
+University of Pennsylvania Networked Life
+University of Michigan Social Network Analysis
+University of Washington Information Security and Risk Management in Context
+Higher School of Economics Core Concepts in Data Analysis
+University of Michigan Internet History, Technology, and Security
+Wesleyan University Passion Driven Statistics
+Stanford University Social and Economic Networks: Models and Analysis
+Princeton University Analysis of Algorithms
+University of Washington High Performance Scientific Computing
+École Centrale Paris Discrete Inference and Learning in Artificial Vision
+École Polytechnique Fédérale de Lausanne Linear and Discrete Optimization
