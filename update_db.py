@@ -54,7 +54,7 @@ i = 0
 print "processing json..."
 for item in jobj:
     for subject in item["subjects"]:
-        if subject == "Computer Science" or subject == "Electronics":
+        if subject == "Computer Science" or subject == "Electronics" or subject == "Statistics & Data Analysis":
             f.write(item["schools"][0].strip() + " " + item["code"].strip() + " " +item["l"].strip() + "\n")
             i = i + 1
 
