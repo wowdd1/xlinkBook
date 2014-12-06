@@ -30,7 +30,7 @@ print "processing json..."
 f = open(file_name, "a")
 for item in jobj["elements"]:
     i = i + 1
-    f.write(getPartnerName(item["partnerIds"][0]).strip() + " " + item["name"].strip().replace('  ', ' ') + "\n")
+    f.write(item["id"] + " " + item["name"].strip().replace('  ', ' ') + " (" + getPartnerName(item["partnerIds"][0]).strip() + ")\n")
 
 
 f.close()
@@ -55,7 +55,7 @@ print "processing json..."
 for item in jobj:
     for subject in item["subjects"]:
         if subject == "Computer Science" or subject == "Electronics" or subject == "Statistics & Data Analysis":
-            f.write(item["schools"][0].strip() + " " + item["code"].strip() + " " +item["l"].strip() + "\n")
+            f.write(item["code"].strip() + " " +item["l"].strip() + " (" + item["schools"][0].strip() + ")\n")
             i = i + 1
 
 
