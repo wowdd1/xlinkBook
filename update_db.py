@@ -90,11 +90,13 @@ def write_bookmark_head(f, folder_name):
     if filter_keyword != "":
         head = bookmark_start.replace("course", filter_keyword)
     else:
-        head = bookmark_start.replace("course", folder)  
+        head = bookmark_start.replace("course", folder_name)  
     
     f.write(head) 
 
 def write_bookmark_body(f, link, title):
+    if link == "":
+        return
     f.write('            <DT><A HREF="' + link + '">' + title + "</A>\n")
 
 def write_bookmark_footer(f):
@@ -117,7 +119,6 @@ def truncateData(file_name):
         f = open(file_name, "w+")
         f.truncate()
         f.close()  
-
 #coursera
 #"""
 print "downloading coursera course info"
@@ -221,8 +222,24 @@ print "Done!!!"
 #"""
 print "downloading mit course info"
 
+def getMitCourseLink(links, course_num):
+    if course_num == "":
+        return course_num
+    for link in links:
+        if link.attrs.has_key("href") and link["href"].find(course_num) != -1 and link["href"].find("editcookie.cgi") == -1:
+            return link["href"]
+    return ""
+    
+
 def processMitData(html, f):
     soup = BeautifulSoup(html);
+    links_all = soup.find_all("a")
+    links = []
+    for link in links_all:
+        if link.attrs.has_key("href") and False == link["href"].startswith("editcookie.cgi") \
+           and False == link["href"].startswith("/ent/cgi-bin") and False == link["href"].startswith("javascript:") \
+           and False == link["href"].startswith("m"):
+            links.append(link)
     content = []
     for tag in soup.find_all("h3"):
         content = tag.prettify().split("\n")
@@ -232,7 +249,7 @@ def processMitData(html, f):
         if gen_bookmark == False:
             write_db(f, content[1].strip())
         else:
-            write_bookmark_body(f, "", content[1].strip())
+            write_bookmark_body(f, getMitCourseLink(links, content[1].strip()[0:content[1].strip().find(" ")]), content[1].strip())
 
 
 
@@ -400,7 +417,6 @@ print "Done!!!"
 
 
 
-
 #berkeley
 #"""
 print "downloading berkeley course info"
@@ -421,11 +437,13 @@ if gen_bookmark == True:
 def processBerkeleyData(f, tr):
     i = 0
     title = ""
+    link = ""
     for td in tr.children:
        if i == 3:
            title = title + td.a.string + " "
        if i == 5:
            title = title + td.u.string
+           link = "http://www-inst.eecs.berkeley.edu" + td.a["href"]
        i = i + 1
     if i > 4:
         if skip(title):
@@ -433,7 +451,7 @@ def processBerkeleyData(f, tr):
         if gen_bookmark == False:
             write_db(f, title)
         else:
-            write_bookmark_body(f, "", title)
+            write_bookmark_body(f, link, title)
 
 
 print "processing html and write data to file..."
@@ -452,7 +470,6 @@ if gen_bookmark == True:
 f.close()
 print "Done!!!" 
 #"""
-
 
 #harvard
 #"""
@@ -474,10 +491,14 @@ if gen_bookmark == True:
 print "processing html and write data to file..."
 for node in soup.find_all("strong"):
     text = ""
+    link = ""
     if node.string == None:
         if node.a != None and node.a.string != None:
             text = node.a.string.replace("\n", "")
+            link = node.a["href"]
         else:
+            if node.a != None:
+                link = node.a["href"]
             text = node.prettify()
             if text.find("href=") > 0 :
                 text = text[text.find(">", 8) + 1 : text.find("<", text.find(">", 8)) - 1]
@@ -492,7 +513,7 @@ for node in soup.find_all("strong"):
     if gen_bookmark == False:
         write_db(f, text)
     else:
-        write_bookmark_body(f, "", text)    
+        write_bookmark_body(f, link, text)    
 
 
 if gen_bookmark == True:
