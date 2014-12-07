@@ -51,6 +51,9 @@ bookmark_end = '        </DL><p>\n\
     </DL><p>\n\
 </DL><p>'
 
+
+#"""
+
 #coursera
 print "download coursera info"
 r = requests.get("https://www.coursera.org/api/courses.v1?fields=certificates,instructorIds,partnerIds,photoUrl,specializations,startDate,v1Details,partners.v1(homeLink,logo,name),instructors.v1(firstName,lastName,middleName,prefixName,profileId,shortName,suffixName),specializations.v1(logo,partnerIds,shortName),v1Details.v1(upcomingSessionId),v1Sessions.v1(durationWeeks,hasSigTrack)&includes=instructorIds,partnerIds,specializations,v1Details,specializations.v1(partnerIds),v1Details.v1(upcomingSessionId)&extraIncludes=_facets&q=search&categories=cs-ai,cs-programming,cs-systems,cs-theory,stats&languages=en&limit=1000")
@@ -75,10 +78,7 @@ i = 0
 if gen_bookmark == False:
     file_name = db_dir + "eecs/cs-course-coursera" + time.strftime("%Y")
 else:
-    file_name = "coursera-bookmark" + time.strftime("%Y-%m-%d %H:%M:%S") + ".html"
-#f = open(file_name, "w+")
-#f.truncate()
-#f.close()
+    file_name = "coursera-bookmark" + time.strftime("%Y-%m-%d") + ".html"
 
 f = open(file_name, "a")
 if gen_bookmark == True:
@@ -109,6 +109,8 @@ if gen_bookmark == True:
     f.write(bookmark_end)
 f.close()
 
+
+
 #edx
 print "download edx info"
 r = requests.get("https://www.edx.org/search/api/all")
@@ -119,10 +121,7 @@ jobj = json.loads(r.text)
 if gen_bookmark == False:
     file_name = db_dir + "eecs/eecs-course-edx" + time.strftime("%Y")
 else:
-    file_name = "edx-bookmark" + time.strftime("%Y-%m-%d %H:%M:%S") + ".html"
-#f = open(file_name, "w+")
-#f.truncate()
-#f.close()
+    file_name = "edx-bookmark" + time.strftime("%Y-%m-%d") + ".html"
 
 f = open(file_name, "a")
 
@@ -158,6 +157,12 @@ if gen_bookmark == True:
     f.write(bookmark_end)
 
 f.close()
+#"""
+
+
+
+
+
 
 
 #TODO get mit stanford berkeley course
@@ -181,25 +186,75 @@ getMitData(r_b.text)
 getMitData(r_c.text)
 
 """
+
+
+
+
+
+
 """
+#stanford
 print "download stanford info"
-def getStanfordData(html):
+
+#for page in range(0, 2):
+#    url = "https://explorecourses.stanford.edu/search?filter-term-Summer=on&filter-coursestatus-Active=on&filter-departmentcode-EE=on&filter-term-Spring=on&filter-term-Winter=on&filter-term-Autumn=on&page=" + str(page) + "&q=EE&filter-catalognumber-EE=on&view=catalog&academicYear=&collapse="
+
+def printStanfordDate(html):
     soup = BeautifulSoup(html)
-    print html
-    for div in soup.findAll("div", class_="courseInfo"):
-        course_number = div.find("span", class_="courseNumber")
-        course_title = div.find("span", class_="courseTitle")
-        print course_number.string + course_title.string
-        
+    th_set = soup.find_all("th")
+    td_set_all = soup.find_all("td")
+    td_set = [] 
+    del th_set[0:5]
 
-for pagiblingin range(0, 2):
-    url = "https://explorecourses.stanford.edu/search?filter-term-Summer=on&filter-coursestatus-Active=on&filter-departmentcode-EE=on&filter-term-Spring=on&filter-term-Winter=on&filter-term-Autumn=on&page=" + str(page) + "&q=EE&filter-catalognumber-EE=on&view=catalog&academicYear=&collapse="
-    r_ee = requests.get(url)
-    print r_ee.status_code
-    #getStanfordData(r_ee.text)
+    i = 0
+    for td in td_set_all:
+        i = i + 1
+        if i == 1:
+            td_set.append(td.string)
+        if i == 4:
+            i = 0
+
+    for index in range(0,len(th_set)):
+        link = th_set[index].prettify()
+        link = link[link.find("http"):link.find("EDU") + 3]
+        print th_set[index].string + " " + td_set[index]
+
+ 
+url = "http://cs.stanford.edu/courses/schedules/2014-2015.autumn.php"
+r = requests.get(url)
+#print r.status_code
+
+printStanfordDate(r.text)
+
+url = "http://cs.stanford.edu/courses/schedules/2014-2015.winter.php"
+r = requests.get(url)
+#print r.status_code
+
+printStanfordDate(r.text)
+
+url = "http://cs.stanford.edu/courses/schedules/2014-2015.spring.php"
+r = requests.get(url)
+#print r.status_code
+
+printStanfordDate(r.text)
+
+url = "http://cs.stanford.edu/courses/schedules/2013-2014.summer.php"
+r = requests.get(url)
+#print r.status_code
+
+printStanfordDate(r.text)
+
+
 """
 
+
+
+
+
+
+
 """
+#berkeley
 print "download berkeley info"
 r = requests.get("http://www-inst.eecs.berkeley.edu/classes-cs.html")
 soup = BeautifulSoup(r.text)
