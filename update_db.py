@@ -1,6 +1,6 @@
 import requests
 import json
-#from bs4 import BeautifulSoup;
+from bs4 import BeautifulSoup;
 import os,sys
 import time
 reload(sys)
@@ -50,7 +50,6 @@ bookmark_start = '<!DOCTYPE NETSCAPE-Bookmark-file-1>\n\
 bookmark_end = '        </DL><p>\n\
     </DL><p>\n\
 </DL><p>'
-
 
 #coursera
 print "download coursera info"
@@ -160,3 +159,70 @@ if gen_bookmark == True:
 
 f.close()
 
+
+#TODO get mit stanford berkeley course
+
+
+"""
+#mit
+print "download mit info"
+def getMitData(html):
+    soup = BeautifulSoup(html);
+    content = []
+    for tag in soup.find_all("h3"):
+        content = tag.prettify().split("\n")
+        print content[1].strip()
+r_a = requests.get("http://student.mit.edu/catalog/m6a.html")
+r_b = requests.get("http://student.mit.edu/catalog/m6b.html")
+r_c = requests.get("http://student.mit.edu/catalog/m6c.html")
+
+getMitData(r_a.text)
+getMitData(r_b.text)
+getMitData(r_c.text)
+
+"""
+"""
+print "download stanford info"
+def getStanfordData(html):
+    soup = BeautifulSoup(html)
+    print html
+    for div in soup.findAll("div", class_="courseInfo"):
+        course_number = div.find("span", class_="courseNumber")
+        course_title = div.find("span", class_="courseTitle")
+        print course_number.string + course_title.string
+        
+
+for pagiblingin range(0, 2):
+    url = "https://explorecourses.stanford.edu/search?filter-term-Summer=on&filter-coursestatus-Active=on&filter-departmentcode-EE=on&filter-term-Spring=on&filter-term-Winter=on&filter-term-Autumn=on&page=" + str(page) + "&q=EE&filter-catalognumber-EE=on&view=catalog&academicYear=&collapse="
+    r_ee = requests.get(url)
+    print r_ee.status_code
+    #getStanfordData(r_ee.text)
+"""
+
+"""
+print "download berkeley info"
+r = requests.get("http://www-inst.eecs.berkeley.edu/classes-cs.html")
+soup = BeautifulSoup(r.text)
+
+print "process berkeley html"
+
+
+def printOneTr(tr):
+    i = 0
+    title = ""
+    for td in tr.children:
+       if i == 3:
+           title = title + td.a.string + " "
+       if i == 5:
+           title = title + td.u.string
+       i = i + 1
+    if i > 4:
+        print title
+for table in soup.find_all("table", attrs={"class": "column"}):
+    tr =  table.tr
+    printOneTr(tr)
+
+    for next_tr in tr.next_siblings:
+        if next_tr.string == None:
+            printOneTr(next_tr)    
+"""
