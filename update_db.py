@@ -16,6 +16,7 @@ import getopt
 gen_bookmark = False
 filter_keyword = ""
 title = ""
+count = 0
 
 def Usage():
     print 'usage:'
@@ -157,7 +158,7 @@ for item in jobj["elements"]:
 
     if skip(item["id"] + " " + title):
         continue
-
+    count = count + 1
     if gen_bookmark == False:
         write_db(f, item["id"] + " " + title)
     else:
@@ -169,7 +170,8 @@ if gen_bookmark == True:
 
 f.close()
 
-print "Done!!!"
+print str(count) + " Done!!!"
+count = 0
 #"""
 
 
@@ -199,7 +201,7 @@ for item in jobj:
             title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
             if skip(item["code"] + " " + title):
                 continue
-
+            count = count + 1
             if gen_bookmark == False:
                 write_db(f, item["code"].strip() + " " + title)
             else:
@@ -210,7 +212,8 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print "Done!!!"
+print str(count) + " Done!!!"
+count = 0
 #"""
 
 
@@ -245,7 +248,8 @@ def processMitData(html, f):
         content = tag.prettify().split("\n")
         if skip(content[1].strip()):
             continue
-
+        global count
+        count = count + 1
         if gen_bookmark == False:
             write_db(f, content[1].strip())
         else:
@@ -276,7 +280,8 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print "Done!!!"
+print str(count) +  " Done!!!"
+count = 0
 #"""
 
 
@@ -312,7 +317,7 @@ for link in soup.find_all("a", class_="preview"):
             ref = ""
             title = ""
             continue
-
+        count = count + 1
         if gen_bookmark == False:
             write_db(f, title)
         else:
@@ -328,7 +333,8 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print "Done!!!"
+print str(count) + " Done!!!"
+count = 0
 #"""
 
 
@@ -363,6 +369,8 @@ def processStanfordDate(f, html):
         title = th_set[index].string + " " + td_set[index]
         if skip(title):
             continue
+        global count
+        count = count + 1
         if gen_bookmark == False:
             write_db(f, title)
         else:
@@ -409,7 +417,8 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print "Done!!!"
+print str(count) + " Done!!!"
+count = 0
 #"""
 
 
@@ -448,6 +457,8 @@ def processBerkeleyData(f, tr):
     if i > 4:
         if skip(title):
             return
+        global count
+        count = count + 1
         if gen_bookmark == False:
             write_db(f, title)
         else:
@@ -468,7 +479,8 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print "Done!!!" 
+print str(count) + " Done!!!"
+count = 0
 #"""
 
 #harvard
@@ -510,6 +522,7 @@ for node in soup.find_all("strong"):
 
     if skip(text):
         continue
+    count = count + 1
     if gen_bookmark == False:
         write_db(f, text)
     else:
@@ -520,7 +533,8 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print "Done!!!"
+print str(count) + " Done!!!"
+count = 0
 #"""
 
 
@@ -547,6 +561,7 @@ print "processing html and write data to file..."
 for title in soup.find_all("h5", class_="course-title"):
     if skip(title.span.a.string):
         continue
+    count = count + 1
     if gen_bookmark == False:
         write_db(f, title.span.a.string)
     else:
@@ -557,5 +572,6 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print "Done!!!"
+print str(count) + " Done!!!"
+count = 0
 #"""
