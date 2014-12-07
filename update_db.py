@@ -17,6 +17,7 @@ gen_bookmark = False
 filter_keyword = ""
 title = ""
 count = 0
+file_lines = 0
 
 def Usage():
     print 'usage:'
@@ -117,9 +118,13 @@ def skip(data):
 def truncateData(file_name):
     if os.path.exists(file_name):
         print "truncate " + file_name + " data"
+        line_count = count = len(open(file_name,'rU').readlines())
         f = open(file_name, "w+")
         f.truncate()
-        f.close()  
+        f.close()
+        return line_count
+    return 0
+ 
 #coursera
 #"""
 print "downloading coursera course info"
@@ -144,7 +149,7 @@ def getHomeLink(id, type, slug):
 
 file_name = get_file_name("coursera")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(get_file_name("coursera"), "a")
 
@@ -170,7 +175,7 @@ if gen_bookmark == True:
 
 f.close()
 
-print str(count) + " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
 
@@ -187,7 +192,7 @@ jobj = json.loads(r.text)
 
 file_name = get_file_name("edx")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(file_name, "a")
 
@@ -212,7 +217,7 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print str(count) + " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
 
@@ -264,7 +269,7 @@ r_c = requests.get("http://student.mit.edu/catalog/m6c.html")
 
 file_name = get_file_name("mit")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(file_name, "a")
 
@@ -280,7 +285,7 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print str(count) +  " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
 
@@ -295,7 +300,7 @@ i = 0
 
 file_name = get_file_name("ocw")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(file_name, "a")
 
@@ -333,7 +338,7 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print str(count) + " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
 
@@ -379,7 +384,7 @@ def processStanfordDate(f, html):
 
 file_name = get_file_name("stanford")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(file_name, "a")
 
@@ -417,7 +422,7 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print str(count) + " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
 
@@ -435,7 +440,7 @@ soup = BeautifulSoup(r.text)
 
 file_name = get_file_name("berkeley")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(file_name, "a")
 
@@ -479,7 +484,7 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print str(count) + " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
 
@@ -493,7 +498,7 @@ sys.setrecursionlimit(1400)
 
 file_name = get_file_name("harvard")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(file_name, "a")
 
@@ -533,7 +538,7 @@ if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print str(count) + " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
 
@@ -543,35 +548,45 @@ count = 0
 
 #princeton
 #"""
-print "downloading princeton info"
-r = requests.get("http://www.math.princeton.edu/undergraduate/courses")
-soup = BeautifulSoup(r.text)
+def processPrincetonData(f, soup):
+    for title in soup.find_all("h5", class_="course-title"):
+        if skip(title.span.a.string):
+            continue
+        global count
+        count = count + 1
+        if gen_bookmark == False:
+            write_db(f, title.span.a.string)
+        else:
+            write_bookmark_body(f, "http://www.math.princeton.edu" + title.span.a["href"], title.span.a.string)
+
+
 
 file_name = get_file_name("princeton")
 
-truncateData(file_name)
+file_lines = truncateData(file_name)
 
 f = open(file_name, "a")
 
 if gen_bookmark == True:
    write_bookmark_head(f, "princeton")
 
+
+print "downloading princeton info"
+r = requests.get("http://www.math.princeton.edu/undergraduate/courses")
+soup = BeautifulSoup(r.text)
+
 print "processing html and write data to file..."
+processPrincetonData(f, soup)
 
-for title in soup.find_all("h5", class_="course-title"):
-    if skip(title.span.a.string):
-        continue
-    count = count + 1
-    if gen_bookmark == False:
-        write_db(f, title.span.a.string)
-    else:
-        write_bookmark_body(f, "http://www.math.princeton.edu" + title.span.a["href"], title.span.a.string)
+r = requests.get("http://www.math.princeton.edu/graduate/courses")
+soup = BeautifulSoup(r.text)
 
+processPrincetonData(f, soup)
 
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
 f.close()
-print str(count) + " Done!!!"
+print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
