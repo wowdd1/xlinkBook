@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #author: wowdd1
+#mail: developergf@gmail.com
 #data: 2014.11.19
 
 usage="\nusage:  ${0} filename or dirname [column_num] ['keyword or regexp'] [is_online_course] [is_align_course_name]\n
