@@ -1,3 +1,8 @@
+
+#author: wowdd1
+#data: 2014.12.07
+
+
 import requests
 import json
 from bs4 import BeautifulSoup;
