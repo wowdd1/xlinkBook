@@ -52,12 +52,72 @@ bookmark_end = '        </DL><p>\n\
 </DL><p>'
 
 
-#"""
+def get_file_name(arg):
+    file_name_part = ""
+    if arg == "coursera":
+        file_name_part = db_dir + "eecs/cs-course-coursera"
+    if arg == "edx":
+        file_name_part = db_dir + "eecs/eecs-course-edx"
+    if arg == "stanford":
+        file_name_part = db_dir + "eecs/cs-course-stanford"
+    if arg == "mit":
+        file_name_part = db_dir + "eecs/eecs-course-mit"
+    if arg == "berkeley":
+        file_name_part = db_dir + "eecs/eecs-course-berkeley"
+    if arg == "ocw":
+        file_name_part = db_dir + "eecs/eecs-course-mit-ocw"
+    if arg == "harvard":
+        file_name_part = db_dir + "eecs/cs-course-harvard"
+    if arg == "princeton":
+        file_name_part = db_dir + "mathematics/math-course-princeton"
+    
+    if gen_bookmark == False:
+        file_name = file_name_part + time.strftime("%Y")
+    else:
+        file_name = arg + "-bookmark" + time.strftime("%Y-%m-%d") + ".html"
+
+    return file_name
+    
+def write_bookmark_head(f, folder_name):
+    print "gen bookmark head"
+    head = ""
+    if filter_keyword != "":
+        head = bookmark_start.replace("course", filter_keyword)
+    else:
+        head = bookmark_start.replace("course", folder)  
+    
+    f.write(head) 
+
+def write_bookmark_body(f, link, title):
+    f.write('            <DT><A HREF="' + link + '">' + title + "</A>\n")
+
+def write_bookmark_footer(f):
+    print "gen bookmark footer"
+    f.write(bookmark_end)    
+
+def write_db(f, data):
+    f.write(data +  "\n")
+
+
+def skip(data):
+    if filter_keyword != "":
+        if (data.lower().find(filter_keyword.lower()) == -1):
+            return True
+    return False
+ 
+def truncateData(file_name):
+    if os.path.exists(file_name):
+        print "truncate " + file_name + " data"
+        f = open(file_name, "w+")
+        f.truncate()
+        f.close()  
 
 #coursera
-print "download coursera info"
+#"""
+print "downloading coursera course info"
 r = requests.get("https://www.coursera.org/api/courses.v1?fields=certificates,instructorIds,partnerIds,photoUrl,specializations,startDate,v1Details,partners.v1(homeLink,logo,name),instructors.v1(firstName,lastName,middleName,prefixName,profileId,shortName,suffixName),specializations.v1(logo,partnerIds,shortName),v1Details.v1(upcomingSessionId),v1Sessions.v1(durationWeeks,hasSigTrack)&includes=instructorIds,partnerIds,specializations,v1Details,specializations.v1(partnerIds),v1Details.v1(upcomingSessionId)&extraIncludes=_facets&q=search&categories=cs-ai,cs-programming,cs-systems,cs-theory,stats&languages=en&limit=1000")
 
+print "loading data..."
 jobj = json.loads(r.text)
 
 
@@ -74,89 +134,76 @@ def getHomeLink(id, type, slug):
                 return session["homeLink"]
     return "https://www.coursera.org/course/" + slug
 
-i = 0
-if gen_bookmark == False:
-    file_name = db_dir + "eecs/cs-course-coursera" + time.strftime("%Y")
-else:
-    file_name = "coursera-bookmark" + time.strftime("%Y-%m-%d") + ".html"
+file_name = get_file_name("coursera")
 
-f = open(file_name, "a")
+truncateData(file_name)
+
+f = open(get_file_name("coursera"), "a")
+
 if gen_bookmark == True:
-    print "processing json and gen bookmark"
-    head = ""
-    if filter_keyword != "":
-        head = bookmark_start.replace("course", filter_keyword)
-    else:
-        head = bookmark_start.replace("course", "coursera")
-        
-    f.write(head)
-else:
-    print "processing json..."
+   write_bookmark_head(f, "coursera") 
 
+
+print "processing json and write data to file..."
 for item in jobj["elements"]:
-    i = i + 1
     title = item["name"].strip().replace('  ', ' ') + " (" + getPartnerName(item["partnerIds"][0]).strip() + ")"
-    if filter_keyword != "":
-        if (title.lower().find(filter_keyword.lower()) == -1):
-            continue
+
+    if skip(item["id"] + " " + title):
+        continue
+
     if gen_bookmark == False:
-        f.write(item["id"] + " " + title +  "\n")
+        write_db(f, item["id"] + " " + title)
     else:
-       f.write('            <DT><A HREF="' + getHomeLink(item["id"], item["courseType"], item["slug"]) + '">' + title + "</A>\n") 
+        write_bookmark_body(f,getHomeLink(item["id"], item["courseType"], item["slug"]), title)
 
 
 if gen_bookmark == True:
-    f.write(bookmark_end)
+    write_bookmark_footer(f)
+
 f.close()
 
+print "Done!!!"
+#"""
 
 
 #edx
-print "download edx info"
+#"""
+print "downloading edx course info"
 r = requests.get("https://www.edx.org/search/api/all")
 
+
+print "loading data..."
 jobj = json.loads(r.text)
 
 
-if gen_bookmark == False:
-    file_name = db_dir + "eecs/eecs-course-edx" + time.strftime("%Y")
-else:
-    file_name = "edx-bookmark" + time.strftime("%Y-%m-%d") + ".html"
+file_name = get_file_name("edx")
+
+truncateData(file_name)
 
 f = open(file_name, "a")
 
-i = 0
 if gen_bookmark == True:
-    print "processing json and gen bookmark"
-    head = ""
-    if filter_keyword != "":
-        head = bookmark_start.replace("course", filter_keyword)
-    else:
-        head = bookmark_start.replace("course", "edx")
-        
-    f.write(head)
-else:
-    print "processing json..."
-
+   write_bookmark_head(f, "edx")
+    
+print "processing json and write data to file..."
 for item in jobj:
     for subject in item["subjects"]:
         if subject == "Computer Science" or subject == "Electronics" or subject == "Statistics & Data Analysis":
             title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
-            if filter_keyword != "":
-                if (title.lower().find(filter_keyword.lower()) == -1) and (item["code"].lower().find(filter_keyword.lower()) == -1) :
-                    continue
+            if skip(item["code"] + " " + title):
+                continue
 
             if gen_bookmark == False:
-                f.write(item["code"].strip() + " " + title  + "\n")
+                write_db(f, item["code"].strip() + " " + title)
             else:
-                f.write('            <DT><A HREF="' + item["url"] + '">' + title + "</A>\n")
-            i = i + 1
+                write_bookmark_body(f, item["url"], title)
 
 
 if gen_bookmark == True:
-    f.write(bookmark_end)
+    write_bookmark_footer(f)
 
 f.close()
+print "Done!!!"
 #"""
 
 
@@ -164,42 +211,115 @@ f.close()
 
 
 
-
-#TODO get mit stanford berkeley course
-
-
-"""
 #mit
-print "download mit info"
-def getMitData(html):
+#"""
+print "downloading mit course info"
+
+def processMitData(html, f):
     soup = BeautifulSoup(html);
     content = []
     for tag in soup.find_all("h3"):
         content = tag.prettify().split("\n")
-        print content[1].strip()
+        if skip(content[1].strip()):
+            continue
+
+        if gen_bookmark == False:
+            write_db(f, content[1].strip())
+        else:
+            write_bookmark_body(f, "", content[1].strip())
+
+
+
 r_a = requests.get("http://student.mit.edu/catalog/m6a.html")
 r_b = requests.get("http://student.mit.edu/catalog/m6b.html")
 r_c = requests.get("http://student.mit.edu/catalog/m6c.html")
 
-getMitData(r_a.text)
-getMitData(r_b.text)
-getMitData(r_c.text)
 
-"""
+file_name = get_file_name("mit")
+
+truncateData(file_name)
+
+f = open(file_name, "a")
+
+if gen_bookmark == True:
+   write_bookmark_head(f, "mit")
+
+print "processing html and write data to file..."
+processMitData(r_a.text, f)
+processMitData(r_b.text, f)
+processMitData(r_c.text, f)
+
+if gen_bookmark == True:
+    write_bookmark_footer(f)
+
+f.close()
+print "Done!!!"
+#"""
+
+
+#ocw
+#"""
+print "downloading ocw course info"
+r = requests.get("http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/")
+
+soup = BeautifulSoup(r.text);
+i = 0
+
+file_name = get_file_name("ocw")
+
+truncateData(file_name)
+
+f = open(file_name, "a")
+
+if gen_bookmark == True:
+   write_bookmark_head(f, "ocw")
+
+print "processing html and write data to file..."
+
+ref = ""
+title = ""
+for link in soup.find_all("a", class_="preview"):
+    i = i + 1
+    if i == 1:
+        title += link.string.replace("\n", "").strip() + " "
+        ref = "http://ocw.mit.edu" + link["href"]
+    if i == 2:
+        title += link.string.replace("\n", "").replace("               ", "").strip()
+        if skip(title):
+            ref = ""
+            title = ""
+            continue
+
+        if gen_bookmark == False:
+            write_db(f, title)
+        else:
+            write_bookmark_body(f, ref, title)
+        
+        ref = ""
+        title = ""
+    if i >= 3:
+        i = 0
+
+
+if gen_bookmark == True:
+    write_bookmark_footer(f)
+
+f.close()
+print "Done!!!"
+#"""
 
 
 
 
 
-
-"""
 #stanford
-print "download stanford info"
+#"""
+print "downloading stanford course info"
 
 #for page in range(0, 2):
 #    url = "https://explorecourses.stanford.edu/search?filter-term-Summer=on&filter-coursestatus-Active=on&filter-departmentcode-EE=on&filter-term-Spring=on&filter-term-Winter=on&filter-term-Autumn=on&page=" + str(page) + "&q=EE&filter-catalognumber-EE=on&view=catalog&academicYear=&collapse="
 
-def printStanfordDate(html):
+def processStanfordDate(f, html):
     soup = BeautifulSoup(html)
     th_set = soup.find_all("th")
     td_set_all = soup.find_all("td")
@@ -217,52 +337,82 @@ def printStanfordDate(html):
     for index in range(0,len(th_set)):
         link = th_set[index].prettify()
         link = link[link.find("http"):link.find("EDU") + 3]
-        print th_set[index].string + " " + td_set[index]
+        title = th_set[index].string + " " + td_set[index]
+        if skip(title):
+            continue
+        if gen_bookmark == False:
+            write_db(f, title)
+        else:
+            write_bookmark_body(f, link, title)
+
+
+file_name = get_file_name("stanford")
+
+truncateData(file_name)
+
+f = open(file_name, "a")
+
+if gen_bookmark == True:
+   write_bookmark_head(f, "stanford")
+
 
  
 url = "http://cs.stanford.edu/courses/schedules/2014-2015.autumn.php"
 r = requests.get(url)
 #print r.status_code
 
-printStanfordDate(r.text)
+print "processing html and write data to file..."
+processStanfordDate(f, r.text)
 
 url = "http://cs.stanford.edu/courses/schedules/2014-2015.winter.php"
 r = requests.get(url)
 #print r.status_code
 
-printStanfordDate(r.text)
+processStanfordDate(f, r.text)
 
 url = "http://cs.stanford.edu/courses/schedules/2014-2015.spring.php"
 r = requests.get(url)
 #print r.status_code
 
-printStanfordDate(r.text)
+processStanfordDate(f, r.text)
 
 url = "http://cs.stanford.edu/courses/schedules/2013-2014.summer.php"
 r = requests.get(url)
 #print r.status_code
 
-printStanfordDate(r.text)
+processStanfordDate(f, r.text)
+
+if gen_bookmark == True:
+    write_bookmark_footer(f)
+
+f.close()
+print "Done!!!"
+#"""
 
 
-"""
 
 
 
 
 
-
-
-"""
 #berkeley
-print "download berkeley info"
+#"""
+print "downloading berkeley course info"
 r = requests.get("http://www-inst.eecs.berkeley.edu/classes-cs.html")
 soup = BeautifulSoup(r.text)
 
-print "process berkeley html"
+
+file_name = get_file_name("berkeley")
+
+truncateData(file_name)
+
+f = open(file_name, "a")
+
+if gen_bookmark == True:
+   write_bookmark_head(f, "berkeley")
 
 
-def printOneTr(tr):
+def processBerkeleyData(f, tr):
     i = 0
     title = ""
     for td in tr.children:
@@ -272,12 +422,113 @@ def printOneTr(tr):
            title = title + td.u.string
        i = i + 1
     if i > 4:
-        print title
+        if skip(title):
+            return
+        if gen_bookmark == False:
+            write_db(f, title)
+        else:
+            write_bookmark_body(f, "", title)
+
+
+print "processing html and write data to file..."
 for table in soup.find_all("table", attrs={"class": "column"}):
     tr =  table.tr
-    printOneTr(tr)
+    processBerkeleyData(f, tr)
 
     for next_tr in tr.next_siblings:
         if next_tr.string == None:
-            printOneTr(next_tr)    
-"""
+            processBerkeleyData(f, next_tr)
+
+
+if gen_bookmark == True:
+    write_bookmark_footer(f)
+
+f.close()
+print "Done!!!" 
+#"""
+
+
+#harvard
+#"""
+print "downloading harvard course info"
+r = requests.get("http://www.registrar.fas.harvard.edu/courses-exams/courses-instruction/computer-science")
+soup = BeautifulSoup(r.text)
+sys.setrecursionlimit(1400)
+
+
+file_name = get_file_name("harvard")
+
+truncateData(file_name)
+
+f = open(file_name, "a")
+
+if gen_bookmark == True:
+   write_bookmark_head(f, "harvard")
+
+print "processing html and write data to file..."
+for node in soup.find_all("strong"):
+    text = ""
+    if node.string == None:
+        if node.a != None and node.a.string != None:
+            text = node.a.string.replace("\n", "")
+        else:
+            text = node.prettify()
+            if text.find("href=") > 0 :
+                text = text[text.find(">", 8) + 1 : text.find("<", text.find(">", 8)) - 1]
+            else:
+                text = text[text.find(">", 2) + 1 : text.find("<", 8) - 1]
+            text = text.replace("\n", "").strip()
+    else:
+        text = node.string.replace("\n", "")
+
+    if skip(text):
+        continue
+    if gen_bookmark == False:
+        write_db(f, text)
+    else:
+        write_bookmark_body(f, "", text)    
+
+
+if gen_bookmark == True:
+    write_bookmark_footer(f)
+
+f.close()
+print "Done!!!"
+#"""
+
+
+
+
+
+#princeton
+#"""
+print "downloading princeton info"
+r = requests.get("http://www.math.princeton.edu/undergraduate/courses")
+soup = BeautifulSoup(r.text)
+
+file_name = get_file_name("princeton")
+
+truncateData(file_name)
+
+f = open(file_name, "a")
+
+if gen_bookmark == True:
+   write_bookmark_head(f, "princeton")
+
+print "processing html and write data to file..."
+
+for title in soup.find_all("h5", class_="course-title"):
+    if skip(title.span.a.string):
+        continue
+    if gen_bookmark == False:
+        write_db(f, title.span.a.string)
+    else:
+        write_bookmark_body(f, "http://www.math.princeton.edu" + title.span.a["href"], title.span.a.string)
+
+
+if gen_bookmark == True:
+    write_bookmark_footer(f)
+
+f.close()
+print "Done!!!"
+#"""
