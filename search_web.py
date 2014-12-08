@@ -14,8 +14,16 @@ def usage(argv0):
     print '-s, --search: the keyword for search the web'
     print 'ex: ' + argv0 + ' -s "cs199"'
 
+def openBrowser(url):
+    if url == "":
+        print "not found url"
+    else:
+        print "open " + url
+        webbrowser.open(url)
+
 def search(args):
     print 'searching , %s'%args
+    urls = []
     url = ""
     i = 0
     file_path = os.path.abspath('.') + "/db/" + ".urls"
@@ -27,12 +35,20 @@ def search(args):
     for line in f.readlines():
         if line.startswith(args):
             print "found " + line
-            if i == 0:
-                url = line[line.find("http"):line.find("\n")]
-            i = i + 1
+            pos = line.find("http")
+            urls.append(line[pos:line.find("|",pos)].strip().lower())
 
-    print "open " + url
-    webbrowser.open(url)
+    if len(urls) > 1:
+       for u in urls:
+           if u.find("google.com") == -1 and u.find("baidu.com") == -1 \
+              and u.find("bing.com") == -1 and u.find("yahoo.com") == -1:
+               url = u
+       if url == "":
+           url = urls[0]
+    elif len(urls) == 1:
+        url = urls[0]
+    
+    openBrowser(url)
     f.close()
 
 def main(argv):

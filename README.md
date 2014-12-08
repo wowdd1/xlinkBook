@@ -119,9 +119,9 @@ eg: ./list.sh db/eecs-course-all2014 2 'Machine learning'
 
 upgrade db: just run ./update_db.py
 
-gen bookmark: run ./update_db.py  -b -f "keyword"
+gen bookmark: run ./gen_bookmark.py  -b -f "keyword"
 
-ex:  ./update_db.py  -b -f "computer"
+ex:  ./gen_bookmark.py  -b -f "computer"
 
 browse course in browser:  run ./search_web.py -s "course number"
 
