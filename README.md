@@ -123,6 +123,6 @@ gen bookmark: run ./update_db.py  -b -f "keyword"
 
 ex:  ./update_db.py  -b -f "computer"
 
-browse course in browser:  run ./search_web -s "course number"
+browse course in browser:  run ./search_web.py -s "course number"
 
-ex:  ./search_web -s "6.001"
+ex:  ./search_web.py -s "6.001"
