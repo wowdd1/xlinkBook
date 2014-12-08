@@ -115,3 +115,14 @@ eg: ./list.sh db/eecs-course-all2014 2 'Machine learning'
     ./list.sh db/eecs/eecs-course-edx2014 2 '' n n | grep -i ""
     
     ./list.sh db/eecs/ 2 'data' y n
+
+
+upgrade db: just run ./update_db.py
+
+gen bookmark: run ./update_db.py  -b -f "keyword"
+
+ex:  ./update_db.py  -b -f "computer"
+
+browse course in browser:  run ./search_web -s "course number"
+
+ex:  ./search_web -s "6.001"
