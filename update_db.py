@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 
 #author: wowdd1
 #mail: developergf@gmail.com
@@ -18,8 +19,9 @@ filter_keyword = ""
 title = ""
 count = 0
 file_lines = 0
+search_engin = "http://www.baidu.com/s?word="
 
-def Usage():
+def usage():
     print 'usage:'
     print '-h,--help: print help message.'
     print '-b,--bookmark: gen bookmark file'
@@ -34,7 +36,7 @@ except getopt.GetoptError, err:
 
 for o, a in opts:
     if o in ('-h', '--help'):
-        Usage()
+        usage()
         sys.exit(1)
     elif o in ('-b', '--bookmark'):
         gen_bookmark = True
@@ -43,6 +45,8 @@ for o, a in opts:
 
 
 db_dir = os.path.abspath('.') + "/db/"
+local_url_file = db_dir + ".urls"
+
 bookmark_start = '<!DOCTYPE NETSCAPE-Bookmark-file-1>\n\
 <!-- This is an automatically generated file.\n\
      It will be read and overwritten.\n\
@@ -85,6 +89,16 @@ def get_file_name(arg):
         file_name = arg + "-bookmark" + time.strftime("%Y-%m-%d") + ".html"
 
     return file_name
+
+
+def open_db(file_name):
+    f = open(file_name, "a")
+    url_f = open(local_url_file, "a")
+    return f, url_f
+
+def close_db(f, url_f):
+    f.close()
+    url_f.close
     
 def write_bookmark_head(f, folder_name):
     print "gen bookmark head"
@@ -108,6 +122,14 @@ def write_bookmark_footer(f):
 def write_db(f, data):
     f.write(data +  "\n")
 
+def write_db_url(url_f, course_num, url, course_name):
+    global gen_bookmark, filter_keyword
+    if gen_bookmark == True or filter_keyword != "":
+        return
+
+    if url == "":
+        url = search_engin + course_num + " " + course_name
+    url_f.write(course_num + " " + url.strip() + "\n")
 
 def skip(data):
     if filter_keyword != "":
@@ -124,6 +146,16 @@ def truncateData(file_name):
         f.close()
         return line_count
     return 0
+
+def truncateUrlData():
+    global gen_bookmark, filter_keyword
+    global local_url_file
+    if gen_bookmark == True or filter_keyword != "":
+        return
+    print "truncateUrlData ...."
+    f = open(local_url_file, "w+")
+    f.truncate()
+    f.close
  
 #coursera
 #"""
@@ -147,11 +179,14 @@ def getHomeLink(id, type, slug):
                 return session["homeLink"]
     return "https://www.coursera.org/course/" + slug
 
+truncateUrlData()
+
 file_name = get_file_name("coursera")
 
 file_lines = truncateData(file_name)
 
-f = open(get_file_name("coursera"), "a")
+f, url_f = open_db(file_name)
+
 
 if gen_bookmark == True:
    write_bookmark_head(f, "coursera") 
@@ -164,16 +199,19 @@ for item in jobj["elements"]:
     if skip(item["id"] + " " + title):
         continue
     count = count + 1
+    link = getHomeLink(item["id"], item["courseType"], item["slug"])
     if gen_bookmark == False:
         write_db(f, item["id"] + " " + title)
+        write_db_url(url_f, item["id"], link, title)
     else:
-        write_bookmark_body(f,getHomeLink(item["id"], item["courseType"], item["slug"]), title)
+        write_bookmark_body(f, link, title)
 
 
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+
+close_db(f, url_f)
 
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
@@ -194,7 +232,7 @@ file_name = get_file_name("edx")
 
 file_lines = truncateData(file_name)
 
-f = open(file_name, "a")
+f, url_f = open_db(file_name)
 
 if gen_bookmark == True:
    write_bookmark_head(f, "edx")
@@ -209,6 +247,7 @@ for item in jobj:
             count = count + 1
             if gen_bookmark == False:
                 write_db(f, item["code"].strip() + " " + title)
+                write_db_url(url_f, item["code"].strip(), item["url"], title)
             else:
                 write_bookmark_body(f, item["url"], title)
 
@@ -216,7 +255,8 @@ for item in jobj:
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+close_db(f, url_f)
+
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
@@ -255,10 +295,14 @@ def processMitData(html, f):
             continue
         global count
         count = count + 1
+        course_num = content[1].strip()[0:content[1].strip().find(" ")]
+        link = getMitCourseLink(links, course_num)
+
         if gen_bookmark == False:
             write_db(f, content[1].strip())
+            write_db_url(url_f, course_num, link, content[1].strip()[content[1].strip().find(" "):])
         else:
-            write_bookmark_body(f, getMitCourseLink(links, content[1].strip()[0:content[1].strip().find(" ")]), content[1].strip())
+            write_bookmark_body(f, link, content[1].strip())
 
 
 
@@ -271,7 +315,7 @@ file_name = get_file_name("mit")
 
 file_lines = truncateData(file_name)
 
-f = open(file_name, "a")
+f, url_f = open_db(file_name)
 
 if gen_bookmark == True:
    write_bookmark_head(f, "mit")
@@ -284,7 +328,8 @@ processMitData(r_c.text, f)
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+close_db(f, url_f)
+
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
@@ -302,7 +347,7 @@ file_name = get_file_name("ocw")
 
 file_lines = truncateData(file_name)
 
-f = open(file_name, "a")
+f, url_f = open_db(file_name)
 
 if gen_bookmark == True:
    write_bookmark_head(f, "ocw")
@@ -325,6 +370,7 @@ for link in soup.find_all("a", class_="preview"):
         count = count + 1
         if gen_bookmark == False:
             write_db(f, title)
+            write_db_url(url_f, title[0:title.find(" ")], ref, title[title.find(" "):])
         else:
             write_bookmark_body(f, ref, title)
         
@@ -337,7 +383,8 @@ for link in soup.find_all("a", class_="preview"):
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+close_db(f, url_f)
+
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
@@ -378,6 +425,7 @@ def processStanfordDate(f, html):
         count = count + 1
         if gen_bookmark == False:
             write_db(f, title)
+            write_db_url(url_f, th_set[index].string, link, td_set[index]) 
         else:
             write_bookmark_body(f, link, title)
 
@@ -386,7 +434,7 @@ file_name = get_file_name("stanford")
 
 file_lines = truncateData(file_name)
 
-f = open(file_name, "a")
+f, url_f = open_db(file_name)
 
 if gen_bookmark == True:
    write_bookmark_head(f, "stanford")
@@ -421,7 +469,8 @@ processStanfordDate(f, r.text)
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+close_db(f, url_f)
+
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
@@ -442,7 +491,7 @@ file_name = get_file_name("berkeley")
 
 file_lines = truncateData(file_name)
 
-f = open(file_name, "a")
+f, url_f = open_db(file_name)
 
 if gen_bookmark == True:
    write_bookmark_head(f, "berkeley")
@@ -466,6 +515,7 @@ def processBerkeleyData(f, tr):
         count = count + 1
         if gen_bookmark == False:
             write_db(f, title)
+            write_db_url(url_f, title[0:title.find(" ")], link, title[title.find(" "):])
         else:
             write_bookmark_body(f, link, title)
 
@@ -483,7 +533,8 @@ for table in soup.find_all("table", attrs={"class": "column"}):
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+close_db(f, url_f)
+
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
@@ -500,7 +551,7 @@ file_name = get_file_name("harvard")
 
 file_lines = truncateData(file_name)
 
-f = open(file_name, "a")
+f, url_f = open_db(file_name)
 
 if gen_bookmark == True:
    write_bookmark_head(f, "harvard")
@@ -530,6 +581,7 @@ for node in soup.find_all("strong"):
     count = count + 1
     if gen_bookmark == False:
         write_db(f, text)
+        write_db_url(url_f, text[0:text.find(".")], link, text[text.find("."):])
     else:
         write_bookmark_body(f, link, text)    
 
@@ -537,7 +589,8 @@ for node in soup.find_all("strong"):
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+close_db(f, url_f)
+
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
@@ -554,10 +607,12 @@ def processPrincetonData(f, soup):
             continue
         global count
         count = count + 1
+        link = "http://www.math.princeton.edu" + title.span.a["href"]
         if gen_bookmark == False:
             write_db(f, title.span.a.string)
+            write_db_url(url_f, title.span.a.string[0:title.span.a.string.find(" ")], link, title.span.a.string[title.span.a.string.find(" "):])
         else:
-            write_bookmark_body(f, "http://www.math.princeton.edu" + title.span.a["href"], title.span.a.string)
+            write_bookmark_body(f, link, title.span.a.string)
 
 
 
@@ -565,7 +620,7 @@ file_name = get_file_name("princeton")
 
 file_lines = truncateData(file_name)
 
-f = open(file_name, "a")
+f, url_f = open_db(file_name)
 
 if gen_bookmark == True:
    write_bookmark_head(f, "princeton")
@@ -586,7 +641,8 @@ processPrincetonData(f, soup)
 if gen_bookmark == True:
     write_bookmark_footer(f)
 
-f.close()
+close_db(f, url_f)
+
 print "before lines: " + str(file_lines) + " after update: " + str(count) + " Done!!!\n\n"
 count = 0
 #"""
