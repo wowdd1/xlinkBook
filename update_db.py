@@ -10,6 +10,7 @@ import json
 from bs4 import BeautifulSoup;
 import os,sys
 import time
+import re
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
@@ -23,7 +24,7 @@ bing = "http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq="
 yahoo = "https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p="
 db_dir = os.path.abspath('.') + "/db/"
 local_url_file = db_dir + ".urls"
-
+zh_re=re.compile(u"[\u4e00-\u9fa5]+")
 
 def get_file_name(arg):
     file_name_part = ""
@@ -66,17 +67,19 @@ def open_db(file_name):
     return f
 
 def do_upgrade_db(file_name):
-    if os.path.exists(file_name) and os.path.exists(file_name + ".tmp"):
+    tmp_file = file_name + ".tmp"
+    if os.path.exists(file_name) and os.path.exists(tmp_file):
         print "upgrading..."
+        #os.system("diff -y --suppress-common-lines -EbwBi " + file_name + " " + file_name + ".tmp " + "| colordiff")
         print "remove " + file_name[file_name.find("db"):]
         os.remove(file_name)
         print "rename " + file_name[file_name.find("db"):] + ".tmp"
-        os.rename(file_name + ".tmp", file_name)
+        os.rename(tmp_file, file_name)
         print "upgrade done"
-    elif os.path.exists(file_name + ".tmp"):
+    elif os.path.exists(tmp_file):
         print "upgrading..."
         print "rename " + file_name[file_name.find("db"):] + ".tmp"
-        os.rename(file_name + ".tmp", file_name)
+        os.rename(tmp_file, file_name)
         print "upgrade done"
     else:
         print "upgrade error"
@@ -114,6 +117,23 @@ def truncateUrlData():
     f.truncate()
     f.close
 
+def delZh(text):
+    if isinstance(text, unicode):
+        list_u = zh_re.findall(text)
+        if len(list_u) > 0 :
+            last_ele = list_u[len(list_u) - 1]
+            last_pos = text.find(last_ele)
+            first_pos = text.find(list_u[0])  
+            title = ""
+            if first_pos == 0:
+                title = text[last_pos + len(last_ele):]
+            else:
+                title = text[0:first_pos] + text[last_pos + len(last_ele):].strip()
+
+            if title.find("|") != -1:
+                title = title.replace("|", "").strip()
+            return title
+    return text
 
 url_f = open(local_url_file, "a") 
 
@@ -152,6 +172,7 @@ f = open_db(file_name + ".tmp")
 print "processing json and write data to file..."
 for item in jobj["elements"]:
     title = item["name"].strip().replace('  ', ' ') + " (" + getPartnerName(item["partnerIds"][0]).strip() + ")"
+    title = delZh(title)
 
     count = count + 1
     link = getHomeLink(item["id"], item["courseType"], item["slug"])
@@ -193,6 +214,7 @@ for item in jobj:
     for subject in item["subjects"]:
         if subject == "Computer Science" or subject == "Electronics" or subject == "Statistics & Data Analysis":
             title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
+            title = delZh(title)
             count = count + 1
             write_db(f, item["code"].strip() + " " + title)
             write_db_url(url_f, item["code"].strip(), item["url"], title)
