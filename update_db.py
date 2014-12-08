@@ -41,14 +41,28 @@ def get_file_name(arg):
         file_name_part = db_dir + "eecs/eecs-course-mit-ocw"
     if arg == "harvard":
         file_name_part = db_dir + "eecs/cs-course-harvard"
+    if arg == "harvard-online":
+        file_name_part = db_dir + "eecs/cs-course-open-harvard"
     if arg == "princeton":
         file_name_part = db_dir + "mathematics/math-course-princeton"
-    
+    if arg == "163-ocw":
+        file_name_part = db_dir + "163/all-course-163-ocw" 
     return file_name_part + time.strftime("%Y")
 
 
 def open_db(file_name):
-    f = open(file_name, "a")
+    if os.path.exists(file_name) == False:
+        index = 0
+        for i in range(0, len(file_name)):
+            if file_name[i] == "/":
+                index = i
+        if os.path.exists(file_name[0:index]) == False:
+            os.makedirs(file_name[0:index])
+
+    try:
+        f = open(file_name, "a")
+    except IOError, err:
+        print str(err)
     return f
 
 def do_upgrade_db(file_name):
@@ -100,6 +114,10 @@ def truncateUrlData():
     f.truncate()
     f.close
 
+
+url_f = open(local_url_file, "a") 
+
+
 #coursera
 #"""
 print "downloading coursera course info"
@@ -122,7 +140,6 @@ def getHomeLink(id, type, slug):
                 return session["homeLink"]
     return "https://www.coursera.org/course/" + slug
 
-url_f = open(local_url_file, "a") 
 truncateUrlData()
 
 file_name = get_file_name("coursera")
@@ -144,7 +161,7 @@ for item in jobj["elements"]:
 
 close_db(f)
 
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -182,7 +199,7 @@ for item in jobj:
 
 close_db(f)
 
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -251,7 +268,7 @@ processMitData(r_c.text, f)
 
 close_db(f)
 
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -297,7 +314,7 @@ for link in soup.find_all("a", class_="preview"):
         i = 0
 
 close_db(f)
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -376,7 +393,7 @@ processStanfordDate(f, r.text)
 
 
 close_db(f)
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -434,7 +451,7 @@ for table in soup.find_all("table", attrs={"class": "column"}):
 
 
 close_db(f)
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -488,7 +505,7 @@ for node in soup.find_all("strong"):
 
 
 close_db(f)
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -498,6 +515,50 @@ count = 0
 #"""
 
 
+#harvard online
+#"""
+
+def getHarvardOnlineLink(url):
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    span = soup.find("span", class_ = "syllabi-bullet-hide")
+
+    if span != None and span.a != None:
+        if span.a.string.lower().find("Course website".lower()) != -1 :
+            return str(span.a["href"])
+    return url
+
+print "downloading harvard online course info"
+r = requests.get("http://www.extension.harvard.edu/courses/subject/computer-science")
+soup = BeautifulSoup(r.text)
+
+file_name = get_file_name("harvard-online")
+
+file_lines = countFileLineNum(file_name)
+
+f = open_db(file_name + ".tmp")
+
+print "processing html and write data to file..."
+for li in soup.find_all("li", class_ = "views-row"):
+    course_num = li.prettify().split("\n")[1].strip()
+    course_num = course_num[course_num.lower().find("e"):]
+    title = li.a.string.strip()
+    link = "http://www.extension.harvard.edu" + str(li.a["href"]).strip()
+    link = getHarvardOnlineLink(link)
+
+    count = count + 1
+    write_db(f, course_num + " " + title)
+    write_db_url(url_f, course_num, link, title)
+
+close_db(f)
+if file_lines != count and count > 0:
+    do_upgrade_db(file_name)
+    print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
+else:
+    cancel_upgrade(file_name)
+    print "no need upgrade\n"
+count = 0
+#"""
 
 
 
@@ -519,7 +580,7 @@ file_lines = countFileLineNum(file_name)
 f = open_db(file_name + ".tmp")
 
 
-print "downloading princeton info"
+print "downloading princeton course info"
 r = requests.get("http://www.math.princeton.edu/undergraduate/courses")
 soup = BeautifulSoup(r.text)
 
@@ -532,7 +593,7 @@ soup = BeautifulSoup(r.text)
 processPrincetonData(f, soup)
 
 close_db(f)
-if file_lines != count:
+if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
 else:
@@ -541,5 +602,55 @@ else:
 count = 0
 #"""
 
+
+#163 ocw
+#"""
+def process163Data(f, soup):
+    for div in soup.find_all("div", class_ = "g-cell1 g-card1"):
+        global count
+        count = count + 1
+        course_num = "163-ocw-" + str(count)
+        for a in div.find_all("a"):
+            if a.attrs.has_key("class") == False:
+                #print a.h5.string
+                #print a["href"]
+                title = ""
+                if a.h5.string == None:
+                    pos = str(a.h5).find(">", 3)
+                    title = str(a.h5)[pos + 1: str(a.h5).find("<" , pos)]
+                else:
+                    title = a.h5.string
+                write_db(f, course_num + " " + title)
+                write_db_url(url_f, course_num, str(a["href"]), title)
+
+
+file_name = get_file_name("163-ocw")
+
+file_lines = countFileLineNum(file_name)
+
+f = open_db(file_name + ".tmp")
+
+print "downloading 163 ocw info"
+r = requests.get("http://open.163.com/ocw/")
+soup = BeautifulSoup(r.text)
+
+
+process163Data(f, soup)
+
+
+close_db(f)
+if file_lines != count and count > 0:
+    do_upgrade_db(file_name)
+    print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
+else:
+    cancel_upgrade(file_name)
+    print "no need upgrade\n"
+
+count = 0           
+#"""
+
+
+
 if url_f != None:
     url_f.close()
+
