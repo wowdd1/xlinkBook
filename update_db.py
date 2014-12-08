@@ -581,7 +581,7 @@ for node in soup.find_all("strong"):
     count = count + 1
     if gen_bookmark == False:
         write_db(f, text)
-        write_db_url(url_f, text[0:text.find(".")], link, text[text.find("."):])
+        write_db_url(url_f, text[0:text.find(".")], link, text[text.find(".") + 2:])
     else:
         write_bookmark_body(f, link, text)    
 
