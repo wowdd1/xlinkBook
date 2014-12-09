@@ -10,7 +10,7 @@ import getopt
 import os,sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
-
+import utils
 
 bookmark_start = '<!DOCTYPE NETSCAPE-Bookmark-file-1>\n\
 <!-- This is an automatically generated file.\n\
@@ -29,8 +29,7 @@ bookmark_end = '        </DL><p>\n\
 </DL><p>'
 
 gen_bookmark = False
-db_dir = os.path.abspath('.') + "/db/"
-local_url_file = db_dir + ".urls"
+
 def usage():
     print 'usage:'
     print '-h,--help: print help message.'
@@ -62,24 +61,27 @@ def get_file_name(filter_keyword):
 
 def do_gen_bookmark(filter_keyword):
     print filter_keyword
-    url_f = open(local_url_file)
     bookmark_file_name = get_file_name(filter_keyword)
     bookmark_f = open(bookmark_file_name, "a")
     write_bookmark_head(bookmark_f, filter_keyword)
-    
-    for line in url_f.readlines():
-        url_pos = line.find("http")
-        url = line[url_pos:line.find("|",url_pos)]
-        title = line[0:line.find("|")].strip() + " " + line[line.find("|",url_pos):line.find("\n")].strip()
 
-        if filter_keyword != "" and title.lower().find(filter_keyword.lower()) != -1:
-            write_bookmark_body(bookmark_f, url, title)
-        elif filter_keyword == "":
-            write_bookmark_body(bookmark_f, url, title)
+    for url_file in utils.find_file_by_pattern(".urls", os.getcwd() + "/db/"):
+        url_f = open(url_file)
+    
+        for line in url_f.readlines():
+            url_pos = line.find("http")
+            url = line[url_pos:line.find("|",url_pos)]
+            title = line[0:line.find("|")].strip() + " " + line[line.find("|",url_pos):line.find("\n")].strip()
+
+            if filter_keyword != "" and title.lower().find(filter_keyword.lower()) != -1:
+                write_bookmark_body(bookmark_f, url, title)
+            elif filter_keyword == "":
+                write_bookmark_body(bookmark_f, url, title)
             
 
+        url_f.close()
+
     write_bookmark_footer(bookmark_f)
-    url_f.close()
     bookmark_f.close()
     print "file " + bookmark_file_name + " is ready, you can import it to browser\n"
 

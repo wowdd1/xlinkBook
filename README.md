@@ -117,7 +117,9 @@ eg: ./list.sh db/eecs-course-all2014 2 'Machine learning'
     ./list.sh db/eecs/ 2 'data' y n
 
 
-upgrade db: just run ./update_db.py
+upgrade db:  
+    cd update/
+    run ./main.py
 
 gen bookmark: run ./gen_bookmark.py  -b -f "keyword"
 
@@ -126,3 +128,4 @@ ex:  ./gen_bookmark.py  -b -f "computer"
 browse course in browser:  run ./search_web.py -s "course number"
 
 ex:  ./search_web.py -s "6.001"
+     ./search_web.py -s "E-100" -s yaohoo
