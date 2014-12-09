@@ -1,4 +1,6 @@
-usage:  ./list.sh filename or dirname [column_num] ['keyword or regexp'] [is_online_course] [is_align_course_name]
+usage:  
+
+./list.sh filename or dirname [column_num] ['keyword or regexp'] [is_online_course] [is_align_course_name]
 
 filename or dirname: the course file or dir
 
@@ -123,11 +125,17 @@ upgrade db:
 
     run ./main.py
 
-gen bookmark: run ./gen_bookmark.py  -b -f "keyword"
+gen bookmark:
+
+
+    run ./gen_bookmark.py  -b -f "keyword"
 
 ex:  ./gen_bookmark.py  -b -f "computer"
 
-browse course in browser:  run ./search_web.py -s "course number"
+
+browse course in browser: 
+
+    run ./search_web.py -s "course number"
 
 ex:  ./search_web.py -s "6.001"
      ./search_web.py -s "E-100" -e yaohoo
