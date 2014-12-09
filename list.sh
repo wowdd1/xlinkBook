@@ -36,7 +36,7 @@ column_num=${2}
 keyword=${3}
 is_online_course=${4}
 is_align_course_name=${5}
-
+color_index=0
 
 function fAlignCourseName(){
     course_num=${result%% *}
@@ -115,8 +115,13 @@ function print_list() {
                 done
                 fAlignCourseName
                 text_output=${pre_result}${space}" "${result}
-                echo -e ${text_output//$/\\040}
-
+                if [ $[${color_index}%2] = "0" ]
+                then
+                    echo -e "\033[48;33m${text_output//$/\\040}\033[0m"
+                else
+                    echo -e "\033[48;36m${text_output//$/\\040}\033[0m"
+                fi
+                color_index=$[${color_index} + 1]
                 pre_result=""
                 pre_result_2=""
                 text_output=""
@@ -147,7 +152,14 @@ function print_list() {
                 done
                 fAlignCourseName
                 text_output=${pre_result}${space}" "${result}
-                echo -e ${text_output//$/\\040}
+                if [ $[${color_index}%2] = "0" ]
+                then
+                    #echo ${color_index}
+                    echo -e "\033[48;33m${text_output//$/\\040}\033[0m"
+                else
+                    echo -e "\033[48;36m${text_output//$/\\040}\033[0m"
+                fi
+                color_index=$[${color_index} + 1]
                 #echo -e ${text_output}
                 pre_result=""
                 text_output="" 
@@ -158,14 +170,25 @@ function print_list() {
         else  #print 1 column
             fAlignCourseName
             text_output=${result}
-            echo -e ${text_output//$/\\040}
+            if [ $[${color_index}%2] = "0" ]
+            then
+                echo -e "\033[48;33m${text_output//$/\\040}\033[0m"
+            else
+                echo -e "\033[48;36m${text_output//$/\\040}\033[0m"
+            fi
+            color_index=$[${color_index} + 1]
             text_output=""
         fi
     done < ${file_name}
 
     if [ "${pre_result}" != "" ]
     then
-        echo -e ${pre_result//$/\\040}
+        if [ $[${color_index}%2] = "0" ]
+        then
+            echo -e "\033[48;33m${pre_result//$/\\040}\033[0m"
+        else
+            echo -e "\033[48;36m${pre_result//$/\\040}\033[0m"
+        fi
         pre_result=""
     fi
     
