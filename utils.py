@@ -20,7 +20,6 @@ def find_file_by_pattern(pattern='.*', base=".", circle=True):
             continue
 
         full_path = os.path.join(base, item)
-        bfile = os.path.isfile(item)
         if os.path.isfile(full_path):
             if re_file.search(full_path):
                 final_file_list.append(full_path)
