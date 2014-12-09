@@ -110,7 +110,7 @@ def print_dir(dir_name):
 def main(argv):
     global source
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'i:c:f:o:a:', [])
+        opts, args = getopt.getopt(sys.argv[1:], 'i:c:f:a:', [])
     except getopt.GetoptError, err:
         print str(err)
         usage()
