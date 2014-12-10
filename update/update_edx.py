@@ -52,27 +52,26 @@ def match_subject(subject, subjects):
 def getEdxOnlineCourse(subject, json_obj):
     if need_update_subject(subject) == False:
         return
+    file_name = get_file_name(subject, school)
+    file_lines = countFileLineNum(file_name)
+    f = open_db(file_name + ".tmp")
+    count = 0
+    print "processing json and write data to file..."
     for obj in json_obj:
         if match_subject(subject, obj["subjects"]):
-            file_name = get_file_name(subject, school)
-            file_lines = countFileLineNum(file_name)
-            f = open_db(file_name + ".tmp")
-            count = 0
-
-            print "processing json and write data to file..."
             for item in json_obj:
                 title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
                 title = delZh(title)
                 count = count + 1
                 write_db(f, item["code"].strip(), title, item["url"])
 
-            close_db(f)
-            if file_lines != count and count > 0:
-                do_upgrade_db(file_name)
-                print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
-            else:
-                cancel_upgrade(file_name)
-                print "no need upgrade\n" 
+    close_db(f)
+    if file_lines != count and count > 0:
+        do_upgrade_db(file_name)
+        print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"
+    else:
+        cancel_upgrade(file_name)
+        print "no need upgrade\n" 
     
 
 

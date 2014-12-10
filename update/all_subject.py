@@ -50,7 +50,8 @@ subject_dict = {\
 need_update_subject_list = [
     "eecs",
     "163-ocw",
-    "mathematics"
+    "mathematics",
+    "statistics-data-analysis"
 ]
 def print_all_subject():
     for (k, v) in subject_dict.items():
