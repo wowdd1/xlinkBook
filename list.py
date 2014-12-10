@@ -45,16 +45,15 @@ def alignCourseName(line):
         return line   
     course_num = line[0 : line.find(" ")].strip()
     course_name = line[line.find(" ") + 1 : ].strip()
-
     if len(course_name) > course_name_len:
-        course_name = course_name[0 : course_name_len] + "..."
+        course_name = course_name[0 : course_name_len - 3 ] + "..."
 
     if len(course_num) < course_num_len:
         space = ""
-        for i in range(1, course_num_len - len(course_num)):
+        for i in range(0, course_num_len - len(course_num)):
             space += " "
         return course_num + space + course_name
-    return line
+    return line.strip()
 
 def print_with_color(text):
     global color_index
@@ -81,7 +80,7 @@ def print_list(file_name):
             if column_num == "3":
                 if i % 3 == 0:
                     space =""
-                    for j in range(1, cell_len - len(old_line_2)):
+                    for j in range(0, cell_len - len(old_line_2.decode('utf8'))):
                         space += " "
                     if output_with_color == True:
                         print_with_color(old_line + space + alignCourseName(line))
@@ -93,14 +92,14 @@ def print_list(file_name):
                     old_line = alignCourseName(line)
                 else:
                     space = ""
-                    for j in range(1, cell_len - len(old_line)):
+                    for j in range(0, cell_len - len(old_line)):
                         space += " "
                     old_line_2 = alignCourseName(line)
                     old_line = old_line + space + old_line_2
             elif column_num == "2":
                 if i % 2 == 0:
                     space = ""
-                    for j in range(1, cell_len - len(old_line)):
+                    for j in range(0, cell_len - len(old_line.decode('utf8'))):
                         space += " "
                     if output_with_color == True:
                         print_with_color(old_line + space + alignCourseName(line))
