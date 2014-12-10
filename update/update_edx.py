@@ -57,13 +57,13 @@ def getEdxOnlineCourse(subject, json_obj):
     f = open_db(file_name + ".tmp")
     count = 0
     print "processing json and write data to file..."
-    for obj in json_obj:
-        if match_subject(subject, obj["subjects"]):
-            for item in json_obj:
-                title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
-                title = delZh(title)
-                count = count + 1
-                write_db(f, item["code"].strip(), title, item["url"])
+    for item in json_obj:
+        if match_subject(subject, item["subjects"]):
+            #for item in json_obj:
+            title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
+            title = delZh(title)
+            count = count + 1
+            write_db(f, item["code"].strip(), title, item["url"])
 
     close_db(f)
     if file_lines != count and count > 0:
