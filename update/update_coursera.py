@@ -6,7 +6,7 @@
 
 from common import *
 
-dir_name = "coursera/"
+school = "coursera"
 
 
 #coursera
@@ -26,11 +26,17 @@ def getHomeLink(id, type, slug):
     return "https://www.coursera.org/course/" + slug
 
 def getCategoriyUrl(subject_id):
-    return "https://www.coursera.org/api/courses.v1?fields=certificates,instructorIds,partnerIds,photoUrl,specializations,startDate,v1Details,partners.v1%28homeLink,logo,name%29,instructors.v1%28firstName,lastName,middleName,prefixName,profileId,shortName,suffixName%29,specializations.v1%28logo,partnerIds,shortName%29,v1Details.v1%28upcomingSessionId%29,v1Sessions.v1%28durationWeeks,hasSigTrack%29&includes=instructorIds,partnerIds,specializations,v1Details,specializations.v1%28partnerIds%29,v1Details.v1%28upcomingSessionId%29&extraIncludes=_facets&q=search&languages=en" + "&categories=" + subject_id
+    return "https://www.coursera.org/api/courses.v1?fields=certificates,instructorIds,partnerIds,photoUrl,specializations,startDate,v1Details,partners.v1%28homeLink,logo,name%29,instructors.v1%28firstName,lastName,middleName,prefixName,profileId,shortName,suffixName%29,specializations.v1%28logo,partnerIds,shortName%29,v1Details.v1%28upcomingSessionId%29,v1Sessions.v1%28durationWeeks,hasSigTrack%29&includes=instructorIds,partnerIds,specializations,v1Details,specializations.v1%28partnerIds%29,v1Details.v1%28upcomingSessionId%29&extraIncludes=_facets&q=search&languages=en&limit=500" + "&categories=" + subject_id
 
 
 def getCourseraOnlineCourse(subject, url):
-    file_name = get_file_name(dir_name + subject.strip())
+    if need_update_subject(subject) == False:
+        return
+    r = requests.get(url)
+    jobj = json.loads(r.text)
+
+    file_name = get_file_name(subject.strip(), school)
+    print "subject " + subject.strip() + " ----> " + file_name
     file_lines = countFileLineNum(file_name)
     f = open_db(file_name + ".tmp")
     count = 0
@@ -42,8 +48,7 @@ def getCourseraOnlineCourse(subject, url):
 
         count = count + 1
         link = getHomeLink(item["id"], item["courseType"], item["slug"])
-        write_db(f, item["id"] + " " + title)
-        write_db_url(url_f, item["id"], link, title)
+        write_db(f, item["id"], title, link)
 
     close_db(f)
     if file_lines != count and count > 0:
@@ -61,9 +66,6 @@ print "loading data..."
 jobj = json.loads(r.text)
 
 
-truncateUrlData(dir_name)
-url_f = open_url_file(dir_name)
-
 
 for subject in jobj["paging"]["facets"]["categories"]["facetEntries"]:
     getCourseraOnlineCourse(subject["name"], getCategoriyUrl(subject["id"]))
@@ -71,5 +73,4 @@ for subject in jobj["paging"]["facets"]["categories"]["facetEntries"]:
     #print subject["name"]
 
 
-close_url_file(url_f)
 

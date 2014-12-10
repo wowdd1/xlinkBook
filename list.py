@@ -72,6 +72,7 @@ def print_list(file_name):
     if os.path.exists(file_name):
         f = open(file_name,'rU')
         for line in f.readlines():
+            line = line[0 : line.find("|", line.find("|") + 1)].replace("|","")
             if line.lower().find(filter_keyword.lower()) == -1:
                 continue
 

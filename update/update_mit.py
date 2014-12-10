@@ -5,14 +5,12 @@
 #data: 2014.12.07
 from common import *
 
-dir_name = "mit/"
-
+school = "mit"
+subject = "eecs"
 #mit
 #"""
 print "downloading mit course info"
-truncateUrlData(dir_name)
-url_f = open_url_file(dir_name)
-file_name = get_file_name(dir_name + "eecs")
+file_name = get_file_name(subject, school)
 file_lines = countFileLineNum(file_name)
 f = open_db(file_name + ".tmp")
 count = 0
@@ -28,6 +26,8 @@ def getMitCourseLink(links, course_num):
     
 
 def processMitData(html, f):
+    if need_update_subject(subject) == False:
+        return
     soup = BeautifulSoup(html);
     links_all = soup.find_all("a")
     links = []
@@ -44,8 +44,7 @@ def processMitData(html, f):
         course_num = content[1].strip()[0:content[1].strip().find(" ")]
         link = getMitCourseLink(links, course_num)
 
-        write_db(f, content[1].strip())
-        write_db_url(url_f, course_num, link, content[1].strip()[content[1].strip().find(" "):])
+        write_db(f, course_num, content[1].strip()[content[1].strip().find(" "):], link)
 
 
 
@@ -61,7 +60,6 @@ processMitData(r_c.text, f)
 
 
 close_db(f)
-close_url_file(url_f)
 if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"

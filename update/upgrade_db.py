@@ -22,7 +22,7 @@ def runPy(processor):
   
     
 for parent,dirnames,filenames in os.walk("."):
-    for filename in filenames:                 
+    for filename in filenames:
         if filename.startswith("update"):
             runPy(filename)
 

@@ -6,7 +6,7 @@
 
 from common import *
 
-dir_name = "edx/"
+school = "edx"
 edx_subject = [\
 "Architecture",
 "Art & Culture",
@@ -50,9 +50,11 @@ def match_subject(subject, subjects):
 
 
 def getEdxOnlineCourse(subject, json_obj):
+    if need_update_subject(subject) == False:
+        return
     for obj in json_obj:
         if match_subject(subject, obj["subjects"]):
-            file_name = get_file_name(dir_name + subject)
+            file_name = get_file_name(subject, school)
             file_lines = countFileLineNum(file_name)
             f = open_db(file_name + ".tmp")
             count = 0
@@ -62,8 +64,7 @@ def getEdxOnlineCourse(subject, json_obj):
                 title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
                 title = delZh(title)
                 count = count + 1
-                write_db(f, item["code"].strip() + " " + title)
-                write_db_url(url_f, item["code"].strip(), item["url"], title)
+                write_db(f, item["code"].strip(), title, item["url"])
 
             close_db(f)
             if file_lines != count and count > 0:
@@ -83,14 +84,10 @@ r = requests.get("https://www.edx.org/search/api/all")
 print "loading data..."
 jobj = json.loads(r.text)
 
-truncateUrlData(dir_name)
-url_f = open_url_file(dir_name)
-
 
 for subject in edx_subject:
     if subject != "":
         getEdxOnlineCourse(subject, jobj)
 
-close_url_file(url_f)
 
 

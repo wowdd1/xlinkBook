@@ -6,16 +6,18 @@
 
 from common import *
 
-dir_name = "harvard/"
+school = "harvard"
 root_url = "http://www.registrar.fas.harvard.edu"
 
 #harvard
 
 def getHarvardCourse(subject, url):
+    if need_update_subject(subject) == False:
+        return
     r = requests.get(url)
     soup = BeautifulSoup(r.text)
     sys.setrecursionlimit(3000)
-    file_name = get_file_name(dir_name + subject)
+    file_name = get_file_name(subject, school)
     file_lines = countFileLineNum(file_name)
     f = open_db(file_name + ".tmp")
     count = 0
@@ -43,8 +45,7 @@ def getHarvardCourse(subject, url):
 
         count = count + 1
         #print text
-        write_db(f, text)
-        write_db_url(url_f, text[0:text.find(".")], link, text[text.find(".") + 2:])
+        write_db(f, text[0:text.find(".")], text[text.find(".") + 2:], link)
     if count == 0:
         print subject + " can not get the data, check the html and python code"
     
@@ -61,13 +62,9 @@ print "downloading harvard course info"
 r = requests.get("http://www.registrar.fas.harvard.edu/courses-exams/courses-instruction")
 soup = BeautifulSoup(r.text)
 
-truncateUrlData(dir_name)
-url_f = open_url_file(dir_name)
-
 
 for span in soup.find_all("span", class_="field-content"):
     #print span.a.string
     getHarvardCourse(span.a.string, root_url + str(span.a["href"]))
 
 
-close_url_file(url_f)

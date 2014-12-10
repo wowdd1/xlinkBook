@@ -11,6 +11,7 @@ import os,sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 import utils
+from update.all_subject import default_subject
 
 bookmark_start = '<!DOCTYPE NETSCAPE-Bookmark-file-1>\n\
 <!-- This is an automatically generated file.\n\
@@ -65,13 +66,14 @@ def do_gen_bookmark(filter_keyword):
     bookmark_f = open(bookmark_file_name, "a")
     write_bookmark_head(bookmark_f, filter_keyword)
 
-    for url_file in utils.find_file_by_pattern(".urls", os.getcwd() + "/db/"):
-        url_f = open(url_file)
+    for file_name in utils.find_file_by_pattern(".*", os.getcwd() + "/db/" + default_subject + "/"):
+        url_f = open(file_name)
     
         for line in url_f.readlines():
-            url_pos = line.find("http")
-            url = line[url_pos:line.find("|",url_pos)]
-            title = line[0:line.find("|")].strip() + " " + line[line.find("|",url_pos):line.find("\n")].strip()
+            pos_1 = line.find("|")
+            pos_2 = line.find("|", pos_1 + 1)
+            url = line[pos_2 + 1 : ].strip()
+            title = line[pos_1 : pos_2].replace("|","").strip()
 
             if filter_keyword != "" and title.lower().find(filter_keyword.lower()) != -1:
                 write_bookmark_body(bookmark_f, url, title)
@@ -99,6 +101,7 @@ def main(argv):
             usage()
             sys.exit(1)
         elif o in ('-b', '--bookmark'):
+            global gen_bookmark
             gen_bookmark = True
         elif o in ('-f', '--filter'):
             filter_keyword = str(a).strip()

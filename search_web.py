@@ -8,6 +8,7 @@ import os,sys
 import getopt
 import webbrowser
 import utils
+from update.all_subject import default_subject, print_all_subject
 
 engin = ""
 keyword = ""
@@ -17,13 +18,16 @@ bing = "http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq="
 yahoo = "https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p="
 
 search_engin_list = [google, baidu, bing, yahoo]
-
+use_subject = ""
 def usage(argv0):
     print ' usage:'
     print '-h,--help: print help message.'
     print '-s, --search: the keyword for search the web'
     print '-e, --engin: what search for search include: google baidu bing yahoo'
-    print 'ex: ' + argv0 + ' -s "cs199"'
+    print '-u, --use: seach in what subject'
+    print "subject include:"
+    print_all_subject()
+    print 'ex: ' + argv0 + ' -s "cs199" -u eecs'
 
 def openBrowser(url):
     if url == "":
@@ -43,19 +47,23 @@ def search(keyword, engin):
     print 'searching , %s'%keyword
     urls = []
     url = ""
-    for url_file in utils.find_file_by_pattern(".urls", os.getcwd() + "/db/"):
-        f = open(url_file)
+    subject = default_subject;
+    if use_subject != "":
+        subject = use_subject
+    for file_name in utils.find_file_by_pattern(".*", os.getcwd() + "/db/" + subject + "/"):
+        f = open(file_name)
         for line in f.readlines():
-            if line.startswith(keyword):
-                print "found " + line
-                pos = line.find("http")
-                title = line[line.find("|", pos) + 1 :].strip()
+            if line.lower().startswith(keyword.lower()):
+                print "found " + line.replace("|","")
+                pos_1 = line.find("|")
+                pos_2 = line.find("|", pos_1 + 1)
+                title = line[pos_1 : pos_2].replace("|","").strip()
                 if engin != "" and validEngin(engin) == True:
                    for item in search_engin_list:
                        if item.lower().find(engin.lower()) != -1:
                            urls.append(item + title)
                 else:
-                    urls.append(line[pos:line.find("|",pos)].strip().lower())
+                    urls.append(line[pos_2 + 1 :].strip().lower())
                 
         f.close()
 
@@ -70,14 +78,15 @@ def search(keyword, engin):
     elif len(urls) == 1:
         url = urls[0]
     else:
-        print "no url found in db"
+        print "no url found in " + subject +" db"
         return
     
     openBrowser(url)
 
 def main(argv):
+    global keyword
     try:
-        opts, args = getopt.getopt(argv[1:], 'hs:e:', [])
+        opts, args = getopt.getopt(argv[1:], 'hs:e:u:', ["help","search","engin","use"])
     except getopt.GetoptError, err:
         print str(err)
         usage(argv[0])
@@ -90,7 +99,10 @@ def main(argv):
         elif o in ('-e', '--engin'):
             global engin
             engin = a
-
+        elif o in ('-u', '--use'):
+            global use_subject
+            use_subject = str(a)
+           
     if keyword != "":
         search(keyword, engin) 
              

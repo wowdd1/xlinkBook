@@ -6,10 +6,7 @@
 
 from common import *
 
-dir_name = "harvard-online/"
-
-
-
+school = "harvard-online"
 
 #harvard online
 #"""
@@ -26,8 +23,10 @@ def getHarvardOnlineLink(url):
     return url
 
 def getHarvardOnlineCourse(subject, url):
+    if need_update_subject(subject) == False:
+        return
     print "processing " + subject + " url " + url
-    file_name = get_file_name(dir_name + subject)
+    file_name = get_file_name(subject,school)
 
     file_lines = countFileLineNum(file_name)
     count = 0
@@ -50,8 +49,7 @@ def getHarvardOnlineCourse(subject, url):
             link = "http://www.extension.harvard.edu" + str(li.a["href"]).strip()
             #link = getHarvardOnlineLink(link)
             count = count + 1
-            write_db(f, course_num + " " + title)
-            write_db_url(url_f, course_num, link, title)
+            write_db(f, course_num, title, link)
     else:
         for li in soup.find_all("li"):
             if li.attrs.has_key("class"):
@@ -65,8 +63,7 @@ def getHarvardOnlineCourse(subject, url):
                     title = li.a.string.strip()
                     link = "http://www.extension.harvard.edu" + str(li.a["href"]).strip()
                     #link = getHarvardOnlineLink(link)
-                    write_db(f, course_num + " " + title)
-                    write_db_url(url_f, course_num, link, title)
+                    write_db(f, course_num, title, link)
     close_db(f)
     if file_lines != count and count > 0:
         do_upgrade_db(file_name)
@@ -82,13 +79,8 @@ print "downloading harvard online course info"
 r = requests.get("http://www.extension.harvard.edu/courses")
 soup = BeautifulSoup(r.text)
 
-truncateUrlData(dir_name)
-
-url_f = open_url_file(dir_name)
 
 for li in soup.find_all("li", class_ = "is-more-items"):
     getHarvardOnlineCourse(li.a.string, "http://www.extension.harvard.edu" + str(li.a["href"]))
     
-
-close_url_file(url_f)
 

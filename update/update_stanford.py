@@ -6,8 +6,8 @@
 
 from common import *
 
-dir_name = "stanford/"
-
+school = "stanford"
+subject = "eecs"
 
 #stanford
 #"""
@@ -16,14 +16,14 @@ print "downloading stanford course info"
 #for page in range(0, 2):
 #    url = "https://explorecourses.stanford.edu/search?filter-term-Summer=on&filter-coursestatus-Active=on&filter-departmentcode-EE=on&filter-term-Spring=on&filter-term-Winter=on&filter-term-Autumn=on&page=" + str(page) + "&q=EE&filter-catalognumber-EE=on&view=catalog&academicYear=&collapse="
 
-truncateUrlData(dir_name)
-url_f = open_url_file(dir_name)
-file_name = get_file_name(dir_name + "cs")
+file_name = get_file_name(subject, school)
 file_lines = countFileLineNum(file_name)
 f = open_db(file_name + ".tmp")
 count = 0
 
 def processStanfordDate(f, html):
+    if need_update_subject(subject) == False:
+        return
     soup = BeautifulSoup(html)
     th_set = soup.find_all("th")
     td_set_all = soup.find_all("td")
@@ -44,8 +44,7 @@ def processStanfordDate(f, html):
         title = th_set[index].string + " " + td_set[index]
         global count
         count = count + 1
-        write_db(f, title)
-        write_db_url(url_f, th_set[index].string, link, td_set[index])
+        write_db(f, th_set[index].string, td_set[index], link)
 
 url = "http://cs.stanford.edu/courses/schedules/2014-2015.autumn.php"
 r = requests.get(url)
@@ -70,7 +69,6 @@ processStanfordDate(f, r.text)
 
 
 close_db(f)
-close_url_file(url_f)
 if file_lines != count and count > 0:
     do_upgrade_db(file_name)
     print "before lines: " + str(file_lines) + " after update: " + str(count) + " \n\n"

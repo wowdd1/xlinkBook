@@ -60,7 +60,7 @@ upgrade db:
 
     cd update/
 
-    run ./main.py
+    run ./update_all.py
 
 gen bookmark:
 

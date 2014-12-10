@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup;
 import os,sys
 import time
 import re
+from all_subject import subject_dict, need_update_subject_list
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
@@ -22,18 +23,39 @@ db_dir = os.path.abspath('.') + "/../" + "db/"
 local_url_file = db_dir + ".urls"
 zh_re=re.compile(u"[\u4e00-\u9fa5]+")
 
-def get_file_name(arg):
-    return db_dir + arg + time.strftime("%Y")
 
-def open_url_file(arg):
-    return open(get_url_file_name(arg), "a")
+def format_subject(subject):
+    match_list = []
+    for (k, v) in subject_dict.items():
+        if subject.lower().strip().find(k.lower()) != -1:
+            match_list.append(k)
 
-def get_url_file_name(arg):
-    return db_dir + arg + ".urls"
+    if len(match_list) > 1:
+        result = subject
+        max_len = 0
+        for key in match_list:
+            if len(key) > max_len:
+                max_len = len(key)
+                result = subject_dict[key]
+        return result
+    elif len(match_list) == 1:
+        return subject_dict[match_list[0]]
+        
+    return subject
 
-def close_url_file(f):
-    f.close()
+def need_update_subject(subject):
+    subject_converted = format_subject(subject)
+    for item in need_update_subject_list:
+        if subject_converted == item:
+            return True
+    print subject + " not config in all_subject.py, ignore it"
+    return False
 
+def replace_sp_char(text):
+    return text.replace(",","").replace("&","").replace(":","").replace("-"," ").replace("  "," ").replace(" ","-").lower()
+
+def get_file_name(subject, school):
+    return db_dir + format_subject(subject) + "/" + replace_sp_char(subject) + "-" + school + time.strftime("%Y")
 
 def create_dir_by_file_name(file_name):
     if os.path.exists(file_name) == False:
@@ -60,14 +82,14 @@ def do_upgrade_db(file_name):
     if os.path.exists(file_name) and os.path.exists(tmp_file):
         print "upgrading..."
         #os.system("diff -y --suppress-common-lines -EbwBi " + file_name + " " + file_name + ".tmp " + "| colordiff")
-        print "remove " + file_name[file_name.find("db"):]
+        #print "remove " + file_name[file_name.find("db"):]
         os.remove(file_name)
-        print "rename " + file_name[file_name.find("db"):] + ".tmp"
+        #print "rename " + file_name[file_name.find("db"):] + ".tmp"
         os.rename(tmp_file, file_name)
         print "upgrade done"
     elif os.path.exists(tmp_file):
         print "upgrading..."
-        print "rename " + file_name[file_name.find("db"):] + ".tmp"
+        #print "rename " + file_name[file_name.find("db"):] + ".tmp"
         os.rename(tmp_file, file_name)
         print "upgrade done"
     else:
@@ -80,14 +102,11 @@ def close_db(f):
     f.close()
 
 
-def write_db(f, data):
-    f.write(data +  "\n")
-
-def write_db_url(url_f, course_num, url, course_name):
+def write_db(f, course_num, course_name, url):
     if url == "":
         url = google + course_num + " " + course_name
 
-    url_f.write(course_num + " | " + url.strip() + " | " + course_name +  "\n")
+    f.write(course_num.strip() + " | " + course_name.replace("|","") + " | " + url  +  "\n")
 
 
 def countFileLineNum(file_name):

@@ -6,19 +6,17 @@
 
 from common import *
 
-dir_name = "mit-ocw/"
+school = "mit-ocw"
 root_url = "http://ocw.mit.edu"
 #ocw
 #"""
-truncateUrlData(dir_name)
 
-url_f = open_url_file(dir_name)
-
-print url_f
 
 def getMitOcwCourse(subject, url):
+    if need_update_subject(subject) == False:
+        return
     print "processing " + subject + " url " + url
-    file_name = get_file_name(dir_name + subject)
+    file_name = get_file_name(subject, school)
 
     file_lines = countFileLineNum(file_name)
     count = 0
@@ -39,8 +37,7 @@ def getMitOcwCourse(subject, url):
         if i == 2:
             title += a.string.replace("\n", "").replace("               ", "").strip()
             count = count + 1
-            write_db(f, title)
-            write_db_url(url_f, title[0:title.find(" ")], link, title[title.find(" "):])
+            write_db(f, title[0:title.find(" ")], title[title.find(" "):], link)
 
             link = ""
             title = ""
@@ -72,6 +69,5 @@ for li in soup.find_all("li"):
         getMitOcwCourse(subject, root_url + str(li.a["href"]).strip())
         #print li.a.string
 
-close_url_file(url_f)
 
 
