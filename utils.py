@@ -23,6 +23,7 @@ class Utils:
                 continue
     
             full_path = os.path.join(base, item)
+            #print full_path
             if os.path.isfile(full_path):
                 if re_file.search(full_path):
                     final_file_list.append(full_path)

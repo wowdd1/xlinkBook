@@ -44,12 +44,12 @@ def validEngin(engin):
     print "invalided search engin: " + engin
     return False
 def search(keyword, engin):
-    print 'searching , %s'%keyword
     urls = []
     url = ""
     subject = default_subject;
     if use_subject != "":
         subject = use_subject
+    print 'searching %s'%keyword + " in " + subject
 
     utils = Utils()
     for file_name in utils.find_file_by_pattern(".*", os.getcwd() + "/db/" + subject + "/"):
