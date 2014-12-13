@@ -10,7 +10,7 @@ import getopt
 import os,sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
-import utils
+from utils import Utils
 from update.all_subject import default_subject
 
 bookmark_start = '<!DOCTYPE NETSCAPE-Bookmark-file-1>\n\
@@ -65,7 +65,7 @@ def do_gen_bookmark(filter_keyword):
     bookmark_file_name = get_file_name(filter_keyword)
     bookmark_f = open(bookmark_file_name, "a")
     write_bookmark_head(bookmark_f, filter_keyword)
-
+    utils = Utils()
     for file_name in utils.find_file_by_pattern(".*", os.getcwd() + "/db/" + default_subject + "/"):
         url_f = open(file_name)
     
