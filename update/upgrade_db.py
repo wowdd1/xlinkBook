@@ -4,7 +4,7 @@
 #mail: developergf@gmail.com
 #data: 2014.12.07
 
-from common import *
+from spider import *
 import subprocess 
 import os.path
 
