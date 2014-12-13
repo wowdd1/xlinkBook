@@ -7,7 +7,7 @@
 import os,sys
 import getopt
 import webbrowser
-import utils
+from utils import Utils
 from update.all_subject import default_subject, print_all_subject
 
 engin = ""
@@ -50,6 +50,8 @@ def search(keyword, engin):
     subject = default_subject;
     if use_subject != "":
         subject = use_subject
+
+    utils = Utils()
     for file_name in utils.find_file_by_pattern(".*", os.getcwd() + "/db/" + subject + "/"):
         f = open(file_name)
         for line in f.readlines():
