@@ -39,9 +39,9 @@ def format_subject(subject):
                 result = subject_dict[key]
         return result
     elif len(match_list) == 1:
-        print subject_dict[match_list[0]]
+        #print subject_dict[match_list[0]]
         return subject_dict[match_list[0]]
-    print subject 
+    #print subject 
     return subject
 
 def need_update_subject(subject):
