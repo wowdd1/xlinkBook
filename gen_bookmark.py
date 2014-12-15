@@ -61,7 +61,7 @@ def get_file_name(filter_keyword):
     return file_name
 
 def do_gen_bookmark(filter_keyword):
-    print filter_keyword
+    #print filter_keyword
     bookmark_file_name = get_file_name(filter_keyword)
     bookmark_f = open(bookmark_file_name, "a")
     write_bookmark_head(bookmark_f, filter_keyword)

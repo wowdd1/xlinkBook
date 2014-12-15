@@ -28,7 +28,7 @@ class Utils:
                 if re_file.search(full_path):
                     final_file_list.append(full_path)
             else:
-                final_file_list += find_file_by_pattern(pattern, full_path)
+                final_file_list += self.find_file_by_pattern(pattern, full_path)
         return final_file_list
     
     def print_inx(self, foreground, newline, *kw):    
@@ -64,9 +64,9 @@ class Utils:
                 foreground = 'brown'
       
             if os.name == 'nt':
-                print_nt(foreground, newline, *kw)
+                self.print_nt(foreground, newline, *kw)
             else:
-                print_inx(foreground, newline, *kw)
+                self.print_inx(foreground, newline, *kw)
         except:
             for t in kw: print t,
             if newline: print

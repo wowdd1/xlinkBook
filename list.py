@@ -7,7 +7,7 @@
 import getopt
 import time
 import os,sys
-import utils
+from utils import Utils
 
 source = ""
 align_course_name = True
@@ -57,6 +57,7 @@ def alignCourseName(line):
 
 def print_with_color(text):
     global color_index
+    utils = Utils()
     if color_index % 2 == 0:
         utils.print_colorful("brown", True, text)
     else:
@@ -121,10 +122,10 @@ def print_list(file_name):
 
     if i > 0:
         if filter_keyword != "":
-            print "\nTotal " + str(i) + " records cotain " + filter_keyword + ", File: " + file_name
+            print "\nTotal " + str(i) + " records cotain " + filter_keyword + ", File: " + file_name + "\n\n"
         else:
-            print "\nTotal " + str(i) + " records, File: " + file_name
-    print "\n"
+            print "\nTotal " + str(i) + " records, File: " + file_name + "\n\n"
+    #print "\n"
             
 
 def print_dir(dir_name):
@@ -177,8 +178,8 @@ def main(argv):
         print "you must input the input file or dir"
         usage()
         return
-    if output_with_color == True:
-        print "color"
+    #if output_with_color == True:
+    #    print "color"
 
     if os.path.isfile(source):
         print_list(source)
