@@ -49,6 +49,7 @@ class GithubSpider(Spider):
         for (k, v) in dict_obj.items():
             if k =="message":
                 print v
+                self.cancel_upgrade(file_name)
                 return
             if k == "items":
                 for item in v:
