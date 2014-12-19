@@ -16,7 +16,7 @@ column_num = "2"
 
 cell_len=94  #  cell_len >= course_num_len + 1 + course_name_len + 3
 course_name_len=70
-course_num_len=8
+course_num_len=10
 color_index=0
 output_with_color = False
 
