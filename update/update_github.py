@@ -58,7 +58,7 @@ class GithubSpider(Spider):
                     self.count = self.count + 1
  
         self.close_db(f)
-        if file_lines != self.count and self.count > 0:
+        if self.count > 0:
             self.do_upgrade_db(file_name)
             print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
         else:
