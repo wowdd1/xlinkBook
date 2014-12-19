@@ -10,7 +10,7 @@ class GithubSpider(Spider):
     lang_list = [
         "C",
         "C++",
-        "C++",
+        "C#",
         "Clojure",
         "CoffeeScript",
         "Common Lisp",

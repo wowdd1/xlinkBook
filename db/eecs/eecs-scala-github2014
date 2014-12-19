@@ -4,9 +4,9 @@
 3350-892 | scala | https://github.com/scala/scala
 3327-934 | akka | https://github.com/akka/akka
 3065-554 | finagle | https://github.com/twitter/finagle
-2681-164 | ArnoldC | https://github.com/lhartikk/ArnoldC
+2682-164 | ArnoldC | https://github.com/lhartikk/ArnoldC
 2552-266 | kestrel | https://github.com/twitter/kestrel
-2367-2120 | spark | https://github.com/apache/spark
+2368-2120 | spark | https://github.com/apache/spark
 2364-165 | flockdb | https://github.com/twitter/flockdb
 2343-762 | swagger-core | https://github.com/swagger-api/swagger-core
 2036-386 | sbt | https://github.com/sbt/sbt
@@ -26,5 +26,5 @@
 1261-113 | scaloid | https://github.com/pocorall/scaloid
 1138-229 | goose | https://github.com/GravityLabs/goose
 1038-605 | kafka | https://github.com/apache/kafka
-1036-199 | slick | https://github.com/slick/slick
+1037-199 | slick | https://github.com/slick/slick
 1013-449 | fpinscala | https://github.com/fpinscala/fpinscala
