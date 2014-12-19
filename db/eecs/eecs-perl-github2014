@@ -1,4 +1,4 @@
-5137-547 | gitolite | https://github.com/sitaramc/gitolite
+5137-548 | gitolite | https://github.com/sitaramc/gitolite
 2225-497 | showdown | https://github.com/showdownjs/showdown
 1824-415 | MySQLTuner-perl | https://github.com/major/MySQLTuner-perl
 1369-307 | mojo | https://github.com/kraih/mojo
@@ -14,7 +14,6 @@
 717-238 | Dancer | https://github.com/PerlDancer/Dancer
 672-89 | duckduckgo | https://github.com/duckduckgo/duckduckgo
 668-119 | nginx-tutorials | https://github.com/openresty/nginx-tutorials
-616-88 | ack2 | https://github.com/petdance/ack2
 614-316 | MultiMarkdown | https://github.com/fletcher/MultiMarkdown
 590-41 | rcm | https://github.com/thoughtbot/rcm
 550-170 | modern_perl_book | https://github.com/chromatic/modern_perl_book
@@ -26,5 +25,6 @@
 465-50 | gitprep | https://github.com/yuki-kimoto/gitprep
 454-152 | cpanminus | https://github.com/miyagawa/cpanminus
 447-275 | dotfiles | https://github.com/sontek/dotfiles
-446-61 | naxsi | https://github.com/nbs-system/naxsi
+445-61 | naxsi | https://github.com/nbs-system/naxsi
 439-151 | App-perlbrew | https://github.com/gugod/App-perlbrew
+429-205 | LearnDataScience | https://github.com/nborwankar/LearnDataScience

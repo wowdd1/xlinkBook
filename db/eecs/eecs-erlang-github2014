@@ -1,5 +1,5 @@
 2985-938 | otp | https://github.com/erlang/otp
-1844-502 | cowboy | https://github.com/ninenines/cowboy
+1845-503 | cowboy | https://github.com/ninenines/cowboy
 1356-449 | ejabberd | https://github.com/processone/ejabberd
 1177-232 | ChicagoBoss | https://github.com/ChicagoBoss/ChicagoBoss
 1173-301 | mochiweb | https://github.com/mochi/mochiweb
@@ -14,7 +14,7 @@
 546-98 | misultin | https://github.com/ostinelli/misultin
 545-42 | lfe | https://github.com/rvirding/lfe
 525-229 | lager | https://github.com/basho/lager
-509-180 | rebar | https://github.com/rebar/rebar
+510-180 | rebar | https://github.com/rebar/rebar
 509-40 | logplex | https://github.com/heroku/logplex
 479-164 | riak_core | https://github.com/basho/riak_core
 469-142 | tsung | https://github.com/processone/tsung
@@ -23,8 +23,8 @@
 420-120 | folsom | https://github.com/boundary/folsom
 413-104 | sync | https://github.com/rustyio/sync
 398-110 | gproc | https://github.com/uwiger/gproc
-391-41 | ernie | https://github.com/mojombo/ernie
+392-41 | ernie | https://github.com/mojombo/ernie
 390-44 | geocouch | https://github.com/couchbase/geocouch
 389-128 | poolboy | https://github.com/devinus/poolboy
 380-111 | jiffy | https://github.com/davisp/jiffy
-377-50 | wsdemo | https://github.com/ericmoritz/wsdemo
+377-32 | edis | https://github.com/inaka/edis

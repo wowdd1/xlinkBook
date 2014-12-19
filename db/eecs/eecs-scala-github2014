@@ -1,14 +1,14 @@
 5595-502 | PredictionIO | https://github.com/PredictionIO/PredictionIO
-5589-2030 | playframework | https://github.com/playframework/playframework
+5590-2031 | playframework | https://github.com/playframework/playframework
 3596-359 | gitbucket | https://github.com/takezoe/gitbucket
-3349-892 | scala | https://github.com/scala/scala
+3350-892 | scala | https://github.com/scala/scala
 3327-934 | akka | https://github.com/akka/akka
 3065-554 | finagle | https://github.com/twitter/finagle
-2680-164 | ArnoldC | https://github.com/lhartikk/ArnoldC
+2681-164 | ArnoldC | https://github.com/lhartikk/ArnoldC
 2552-266 | kestrel | https://github.com/twitter/kestrel
+2367-2120 | spark | https://github.com/apache/spark
 2364-165 | flockdb | https://github.com/twitter/flockdb
-2363-2119 | spark | https://github.com/apache/spark
-2343-761 | swagger-core | https://github.com/swagger-api/swagger-core
+2343-762 | swagger-core | https://github.com/swagger-api/swagger-core
 2036-386 | sbt | https://github.com/sbt/sbt
 1989-259 | snowflake | https://github.com/twitter/snowflake
 1936-157 | gizzard | https://github.com/twitter/gizzard
@@ -17,7 +17,7 @@
 1692-205 | textteaser | https://github.com/MojoJolo/textteaser
 1638-480 | scala_school | https://github.com/twitter/scala_school
 1617-265 | scalaz | https://github.com/scalaz/scalaz
-1549-307 | gatling | https://github.com/gatling/gatling
+1550-307 | gatling | https://github.com/gatling/gatling
 1493-212 | scalatra | https://github.com/scalatra/scalatra
 1456-394 | spark | https://github.com/mesos/spark
 1370-174 | summingbird | https://github.com/twitter/summingbird
@@ -25,6 +25,6 @@
 1341-340 | snowplow | https://github.com/snowplow/snowplow
 1261-113 | scaloid | https://github.com/pocorall/scaloid
 1138-229 | goose | https://github.com/GravityLabs/goose
-1038-604 | kafka | https://github.com/apache/kafka
+1038-605 | kafka | https://github.com/apache/kafka
 1036-199 | slick | https://github.com/slick/slick
-1012-448 | fpinscala | https://github.com/fpinscala/fpinscala
+1013-449 | fpinscala | https://github.com/fpinscala/fpinscala
