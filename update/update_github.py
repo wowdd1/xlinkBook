@@ -55,7 +55,7 @@ class GithubSpider(Spider):
                 for item in v:
                     data = str(item['stargazers_count']) + " " + item["name"] + " " + item['html_url']
                     print data
-                    self.write_db(f, str(item['stargazers_count']), item["name"], item['html_url'])
+                    self.write_db(f, item["name"] + "-" + str(item['stargazers_count']), item["full_name"], item['html_url'])
                     self.count = self.count + 1
  
         self.close_db(f)
