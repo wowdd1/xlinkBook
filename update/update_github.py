@@ -105,17 +105,17 @@ class GithubSpider(Spider):
         i = 0
         for lang in self.lang_list:
             i += 1
-            self.processGithubData(lang, '100','50')
+            self.processGithubData(lang, '1000','70')
             if i % 10 == 0:
-                print "wait 35s..."
-                time.sleep(35)
+                print "wait 45s..."
+                time.sleep(45)
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
 
         print "get user data..."
-        self.processGithubiUserData("", '500', "50")
-        self.processGithubiUserData("china", '500', "50")
+        self.processGithubiUserData("", '1000', "50")
+        self.processGithubiUserData("china", '1000', "50")
         
         
 start = GithubSpider()
