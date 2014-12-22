@@ -49,22 +49,35 @@ class Spider:
             if subject.lower().strip().find(k.lower()) != -1:
                 match_list.append(k)
     
+        result = subject
         if len(match_list) > 1:
-            result = subject
             max_len = 0
             for key in match_list:
                 if len(key) > max_len:
                     max_len = len(key)
                     result = subject_dict[key]
-            return result
         elif len(match_list) == 1:
             #print subject_dict[match_list[0]]
-            return subject_dict[match_list[0]]
-        #print subject 
-        return subject
+            result = subject_dict[match_list[0]]
+        #print subject
+        if result != subject and subject.find('/') != -1:
+            last_index = 0
+            while subject.find('/', last_index + 1) != -1:
+                last_index = subject.find('/', last_index + 1)
+
+            return result + subject[subject.find('/') : last_index + 1]
+        elif result != subject:
+            return result + "/"
+        else:
+            if subject.strip()[len(subject) - 1 : ] != '/':
+                return subject + "/"
+            else:
+                return subject
     
     def need_update_subject(self, subject):
         subject_converted = self.format_subject(subject)
+        if subject_converted[len(subject_converted) - 1 : ] == '/':
+            subject_converted = subject_converted[0 : len(subject_converted) - 1]
         for item in need_update_subject_list:
             if subject_converted == item:
                 return True
@@ -72,10 +85,15 @@ class Spider:
         return False
     
     def replace_sp_char(self, text):
+        while text.find('/') != -1:
+            text = text[text.find('/') + 1 : ]
+
         return text.replace(",","").replace("&","").replace(":","").replace("-"," ").replace("  "," ").replace(" ","-").lower()
     
     def get_file_name(self, subject, school):
-        return self.db_dir + self.format_subject(subject) + "/" + self.replace_sp_char(subject) + "-" + school + time.strftime("%Y")
+        dir_name = self.format_subject(subject)
+
+        return self.db_dir + dir_name + self.replace_sp_char(subject) + "-" + school + time.strftime("%Y")
     
     def create_dir_by_file_name(self, file_name):
         if os.path.exists(file_name) == False:

@@ -45,7 +45,7 @@ class GithubSpider(Spider):
         self.school = "github"
 
     def processGithubData(self, lang, large_than_stars, per_page):
-        file_name = self.get_file_name("eecs-" + lang, self.school)
+        file_name = self.get_file_name("eecs/github/" + lang, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         url = "https://api.github.com/search/repositories?page=1&per_page=" + per_page + "&q=stars:>" + large_than_stars +"+language:" +  lang.replace("#","%23").replace("+","%2B") + "&sort=stars&order=desc"
@@ -107,8 +107,8 @@ class GithubSpider(Spider):
             i += 1
             self.processGithubData(lang, '1000','70')
             if i % 10 == 0:
-                print "wait 45s..."
-                time.sleep(45)
+                print "wait 60s..."
+                time.sleep(60)
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
