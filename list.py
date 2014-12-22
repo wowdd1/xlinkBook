@@ -70,7 +70,20 @@ def print_list(file_name):
     old_line_2 = ""
     color_index = 0
     if os.path.exists(file_name):
+        line_count = len(open(file_name,'rU').readlines())
+        line_half = 0
         f = open(file_name,'rU')
+        list_all = []
+        if column_num == "3":
+            list_all.append([]) 
+            list_all.append([]) 
+            list_all.append([]) 
+            line_half = line_count / 3
+        elif column_num == "2":
+            list_all.append([]) 
+            list_all.append([]) 
+            line_half = line_count / 2
+
         for line in f.readlines():
             line = line[0 : line.find("|", line.find("|") + 1)].replace("|","")
             if line.lower().find(filter_keyword.lower()) == -1:
@@ -79,53 +92,69 @@ def print_list(file_name):
             line = line.replace("\n", "")
             i += 1
             if column_num == "3":
-                if i % 3 == 0:
-                    space =""
-                    for j in range(0, cell_len - len(old_line_2.decode('utf8'))):
-                        space += " "
-                    if output_with_color == True:
-                        print_with_color(old_line + space + alignCourseName(line))
-                    else:
-                        print old_line + space + alignCourseName(line)
-                    old_line_2 = ""
-                    old_line = ""
-                elif ((i - 1) % 3) == 0:
-                    old_line = alignCourseName(line)
+                if i <= line_half + (line_count % 3):
+                    list_all[0].append(alignCourseName(line))
+                elif i <= 2 * line_half + (line_count % 3):
+                    list_all[1].append(alignCourseName(line))
                 else:
-                    space = ""
-                    for j in range(0, cell_len - len(old_line)):
-                        space += " "
-                    old_line_2 = alignCourseName(line)
-                    old_line = old_line + space + old_line_2
+                    list_all[2].append(alignCourseName(line))
+
             elif column_num == "2":
-                if i % 2 == 0:
-                    space = ""
-                    for j in range(0, cell_len - len(old_line.decode('utf8'))):
-                        space += " "
-                    if output_with_color == True:
-                        print_with_color(old_line + space + alignCourseName(line))
-                    else:
-                        print old_line + space + alignCourseName(line)
-                    old_line = ""
+                if i <= line_half + (line_count % 2):
+                    list_all[0].append(alignCourseName(line))
                 else:
-                    old_line = alignCourseName(line)
+                    list_all[1].append(alignCourseName(line))
             else:
                 if output_with_color == True:
                     print_with_color(line)
                 else:
                     print alignCourseName(line) 
-    if old_line != "":
-        if output_with_color == True:
-            print_with_color(old_line)
-        else:
-            print old_line
+        if column_num == "3":
+            if len(list_all[0]) - len(list_all[1]) == 2:
+                list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
+                list_all[0].pop()
 
-    if i > 0:
-        if filter_keyword != "":
-            print "\nTotal " + str(i) + " records cotain " + filter_keyword + ", File: " + file_name + "\n\n"
-        else:
-            print "\nTotal " + str(i) + " records, File: " + file_name + "\n\n"
-    #print "\n"
+            for i in range(0, len(list_all[2])):
+                space = ""
+                for j in range(0, cell_len - len(list_all[0][i].decode('utf8'))):
+                    space += " "
+                tmp = list_all[0][i] + space + list_all[1][i]
+                space = ""
+                for j in range(0, cell_len - len(list_all[1][i].decode('utf8'))):
+                    space += " "
+                
+                if output_with_color == True:
+                    print_with_color(tmp + space + list_all[2][i])
+                else:
+                    print tmp + space + list_all[2][i]
+            if len(list_all[0]) > len(list_all[2]):
+                space = ""
+                for j in range(0, cell_len - len(list_all[0][len(list_all[0]) - 1].decode('utf8'))):
+                    space += " "
+                if output_with_color == True:
+                    print_with_color(list_all[0][len(list_all[0]) - 1] + space + list_all[1][len(list_all[1]) - 1])
+                else:
+                    print list_all[0][len(list_all[0]) - 1] + space + list_all[1][len(list_all[1]) - 1]
+
+        elif column_num == "2":
+            for i in range(0, len(list_all[1])):
+                space = ""
+                for j in range(0, cell_len - len(list_all[0][i].decode('utf8'))):
+                    space += " "
+                if output_with_color == True:
+                    print_with_color(list_all[0][i] + space + list_all[1][i])
+                else:
+                    print list_all[0][i] + space + list_all[1][i]
+            if len(list_all[0]) > len(list_all[1]):
+                if output_with_color == True:
+                    print_with_color(list_all[0][len(list_all[0]) - 1])
+                else:
+                    print list_all[0][len(list_all[0]) - 1]
+        if line_count > 0:
+            if filter_keyword != "":
+                print "\nTotal " + str(line_count) + " records cotain " + filter_keyword + ", File: " + file_name + "\n\n"
+            else:
+                print "\nTotal " + str(line_count) + " records, File: " + file_name + "\n\n"
             
 
 def print_dir(dir_name):
