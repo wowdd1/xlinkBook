@@ -46,7 +46,9 @@ class Spider:
     def format_subject(self, subject):
         match_list = []
         for (k, v) in subject_dict.items():
-            if subject.lower().strip().find(k.lower()) != -1:
+            if subject.find('/') != -1 and subject.lower()[0:subject.find('/')].strip().find(k.lower()) != -1:
+                match_list.append(k)
+            elif subject.find('/') == -1 and subject.lower().strip().find(k.lower()) != -1:
                 match_list.append(k)
     
         result = subject
@@ -92,7 +94,6 @@ class Spider:
     
     def get_file_name(self, subject, school):
         dir_name = self.format_subject(subject)
-
         return self.db_dir + dir_name + self.replace_sp_char(subject) + "-" + school + time.strftime("%Y")
     
     def create_dir_by_file_name(self, file_name):

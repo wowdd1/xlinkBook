@@ -1,6 +1,7 @@
-3230-434 | pandoc | https://github.com/jgm/pandoc
-1455-167 | elm-compiler | https://github.com/elm-lang/elm-compiler
+3232-435 | pandoc | https://github.com/jgm/pandoc
+1456-167 | elm-compiler | https://github.com/elm-lang/elm-compiler
 1347-99 | Haxl | https://github.com/facebook/Haxl
-1225-92 | purescript | https://github.com/purescript/purescript
-1158-66 | shellcheck | https://github.com/koalaman/shellcheck
-1007-191 | yesod | https://github.com/yesodweb/yesod
+1227-92 | purescript | https://github.com/purescript/purescript
+1166-66 | shellcheck | https://github.com/koalaman/shellcheck
+1009-191 | yesod | https://github.com/yesodweb/yesod
+947-72 | fay | https://github.com/faylang/fay

@@ -105,7 +105,7 @@ class GithubSpider(Spider):
         i = 0
         for lang in self.lang_list:
             i += 1
-            self.processGithubData(lang, '1000','70')
+            self.processGithubData(lang, '900','100')
             if i % 10 == 0:
                 print "wait 60s..."
                 time.sleep(60)
