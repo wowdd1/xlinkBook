@@ -65,42 +65,50 @@ def print_with_color(text):
     color_index += 1
 
 def print_list(file_name):
-    i = 0
+    current = 0
     old_line = ""
     old_line_2 = ""
     color_index = 0
     if os.path.exists(file_name):
-        line_count = len(open(file_name,'rU').readlines())
-        line_half = 0
+
         f = open(file_name,'rU')
+        all_lines = f.readlines()
+        if filter_keyword != "":
+            filter_result = []
+            for line in all_lines:
+                line = line[0 : line.find("|", line.find("|") + 1)].replace("|","")
+                if line.lower().find(filter_keyword.lower()) != -1:
+                    filter_result.append(line)
+            all_lines = filter_result
+        
+        line_count = len(all_lines)
         list_all = []
+        line_half = 0
         if column_num == "3":
-            list_all.append([]) 
-            list_all.append([]) 
-            list_all.append([]) 
+            list_all.append([])
+            list_all.append([])
+            list_all.append([])
             line_half = line_count / 3
         elif column_num == "2":
-            list_all.append([]) 
-            list_all.append([]) 
+            list_all.append([])
+            list_all.append([])
             line_half = line_count / 2
-
-        for line in f.readlines():
-            line = line[0 : line.find("|", line.find("|") + 1)].replace("|","")
-            if line.lower().find(filter_keyword.lower()) == -1:
-                continue
-
+        
+        for line in all_lines:
+            if line.find('|') != -1:
+                line = line[0 : line.find("|", line.find("|") + 1)].replace("|","")
             line = line.replace("\n", "")
-            i += 1
+            current += 1
             if column_num == "3":
-                if i <= line_half + (line_count % 3):
+                if current <= line_half + (line_count % 3):
                     list_all[0].append(alignCourseName(line))
-                elif i <= 2 * line_half + (line_count % 3):
+                elif current <= 2 * line_half + (line_count % 3):
                     list_all[1].append(alignCourseName(line))
                 else:
                     list_all[2].append(alignCourseName(line))
 
             elif column_num == "2":
-                if i <= line_half + (line_count % 2):
+                if current <= line_half + (line_count % 2):
                     list_all[0].append(alignCourseName(line))
                 else:
                     list_all[1].append(alignCourseName(line))
@@ -150,11 +158,11 @@ def print_list(file_name):
                     print_with_color(list_all[0][len(list_all[0]) - 1])
                 else:
                     print list_all[0][len(list_all[0]) - 1]
-        if line_count > 0:
+        if current > 0:
             if filter_keyword != "":
-                print "\nTotal " + str(line_count) + " records cotain " + filter_keyword + ", File: " + file_name + "\n\n"
+                print "\nTotal " + str(current) + " records cotain " + filter_keyword + ", File: " + file_name + "\n\n"
             else:
-                print "\nTotal " + str(line_count) + " records, File: " + file_name + "\n\n"
+                print "\nTotal " + str(current) + " records, File: " + file_name + "\n\n"
             
 
 def print_dir(dir_name):
