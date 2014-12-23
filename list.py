@@ -196,12 +196,12 @@ def print_list(file_name):
                 update_max_len(line, 1)
                 list_all[0].append(line)
 
-        format_lines(list_all)
 
         if column_num == "3":
             if len(list_all[0]) - len(list_all[1]) == 2:
                 list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
                 list_all[0].pop()
+            format_lines(list_all)
             print_table_head('id', 'title', 3)
             for i in range(0, len(list_all[2])):
                 tmp = "|" + list_all[0][i] + "|" + list_all[1][i] + "|"
@@ -212,7 +212,12 @@ def print_list(file_name):
                     print content
             if len(list_all[0]) > len(list_all[2]):
                 last = len(list_all[0]) - 1
-                content = "|" + list_all[0][last] + "|" + list_all[1][last] + "|"
+                content = ""
+                if len(list_all[0]) == len(list_all[1]):
+                    content = "|" + list_all[0][last] + "|" + list_all[1][last] + "|"
+                else:
+                    content = "|" + list_all[0][last] + "|" + get_space(0, line_id_max_len_list[1]) + '|' + get_space(0, line_max_len_list[1] - line_id_max_len_list[1] - 1) + '|' \
+                                                            + get_space(0, line_id_max_len_list[2]) + '|' + get_space(0, line_max_len_list[2] - line_id_max_len_list[2] - 1) + '|'
 
                 if output_with_color == True:
                     print_with_color(content)
@@ -220,6 +225,7 @@ def print_list(file_name):
                     print content
             print_table_separator(3)
         elif column_num == "2":
+            format_lines(list_all)
             print_table_head('id', 'title', 2)
             for i in range(0, len(list_all[1])):
                 content = '|' + list_all[0][i] + "|" + list_all[1][i] + '|'
@@ -230,13 +236,14 @@ def print_list(file_name):
                     print content
             if len(list_all[0]) > len(list_all[1]):
                 last = len(list_all[0]) - 1
-                content = '|' + list_all[0][last] + "|"
+                content = '|' + list_all[0][last] + "|" + get_space(0, line_id_max_len_list[1]) + '|' + get_space(0, line_max_len_list[1] - line_id_max_len_list[1] - 1) + '|'
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
             print_table_separator(2)
         elif column_num == '1':
+            format_lines(list_all)
             print_table_head('id', 'title', 1)
             for i in range(0, len(list_all[0])):
                 content = "|" + list_all[0][i] + "|"

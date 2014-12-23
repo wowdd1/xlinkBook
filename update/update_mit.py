@@ -35,9 +35,11 @@ class MitSpider(Spider):
         content = []
         for tag in soup.find_all("h3"):
             content = tag.prettify().split("\n")
-            self.count = self.count + 1
             course_num = content[1].strip()[0:content[1].strip().find(" ")]
+            if course_num[0:1] != '6':
+                continue
             link = self.getMitCourseLink(links, course_num)
+            self.count = self.count + 1
     
             self.write_db(f, course_num, content[1].strip()[content[1].strip().find(" "):], link)
     
