@@ -1,6 +1,6 @@
 usage:  
 
-./list.py -i filename or dirname -c column_num -f 'keyword or regexp'] -r -s 
+    ./list.py -i filename or dirname -c column_num -f 'keyword or regexp'] -r -s 
 
 filename or dirname: the file or dir
 
