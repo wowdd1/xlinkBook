@@ -56,32 +56,33 @@ eg: ./list.py -i db/eecs-course-all2014 -c 2 -f 'Machine learning'
     ./list.py -i db/eecs/ -c 2 -f 'data' -r -s
 
 the output would looks like this:
-+----------+-----------------------------------------------------------------------------+
-|id        |title                                                                        |
-+----------+-----------------------------------------------------------------------------+
-|6572-1996 | FlappySwift                                                                 |
-|5876-576  | Alamofire                                                                   |
-|2764-190  | Design-Patterns-In-Swift                                                    |
-|2631-288  | SwiftyJSON                                                                  |
-|1771-95   | Dollar.swift                                                                |
-|1724-137  | Quick                                                                       |
-|1618-122  | LTMorphingLabel                                                             |
-|1537-416  | swift-2048                                                                  |
-|1505-121  | swiftz                                                                      |
-|1475-62   | Cartography                                                                 |
-|1437-214  | iOS8-day-by-day                                                             |
-|1325-61   | Surge                                                                       |
-|1289-100  | animated-tab-bar                                                            |
-|1232-92   | ExSwift                                                                     |
-|1209-92   | hamburger-button                                                            |
-|1073-134  | Swifter                                                                     |
-|1043-94   | SCLAlertView-Swift                                                          |
-|1017-195  | Chats                                                                       |
-|1010-301  | SwiftWeather                                                                |
-|990-267   | SwiftGuide                                                                  |
-+----------+-----------------------------------------------------------------------------+
 
-Total 20 records, File: db/eecs/github/swift-github2014
+    +----------+-----------------------------------------------------------------------------+
+    |id        |title                                                                        |
+    +----------+-----------------------------------------------------------------------------+
+    |6572-1996 | FlappySwift                                                                 |
+    |5876-576  | Alamofire                                                                   |
+    |2764-190  | Design-Patterns-In-Swift                                                    |
+    |2631-288  | SwiftyJSON                                                                  |
+    |1771-95   | Dollar.swift                                                                |
+    |1724-137  | Quick                                                                       |
+    |1618-122  | LTMorphingLabel                                                             |
+    |1537-416  | swift-2048                                                                  |
+    |1505-121  | swiftz                                                                      |
+    |1475-62   | Cartography                                                                 |
+    |1437-214  | iOS8-day-by-day                                                             |
+    |1325-61   | Surge                                                                       |
+    |1289-100  | animated-tab-bar                                                            |
+    |1232-92   | ExSwift                                                                     |
+    |1209-92   | hamburger-button                                                            |
+    |1073-134  | Swifter                                                                     |
+    |1043-94   | SCLAlertView-Swift                                                          |
+    |1017-195  | Chats                                                                       |
+    |1010-301  | SwiftWeather                                                                |
+    |990-267   | SwiftGuide                                                                  |
+    +----------+-----------------------------------------------------------------------------+
+
+    Total 20 records, File: db/eecs/github/swift-github2014
 
 upgrade db: 
 
