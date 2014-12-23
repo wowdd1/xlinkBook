@@ -20,6 +20,8 @@ course_num_len=10
 color_index=0
 output_with_color = False
 
+line_max_len_list = [0, 0, 0]
+line_id_max_len_list = [0, 0, 0]
 def usage():
     print 'usage:'
     print '\t-h,--help: print help message.'
@@ -43,17 +45,20 @@ def print_keyword(file_name):
 def alignCourseName(line):
     if align_course_name == False:
         return line   
-    course_num = line[0 : line.find(" ")].strip()
-    course_name = line[line.find(" ") + 1 : ].strip()
-    if len(course_name) > course_name_len:
+    course_num = line[0 : line.find("|")]
+    course_name = line[line.find("|") + 1 : ]
+    if len(course_name.decode('utf8')) > course_name_len:
         course_name = course_name[0 : course_name_len - 3 ] + "..."
+    else:
+        course_name = course_name + get_space(0, course_name_len - len(course_name.decode('utf8')))
 
     if len(course_num) < course_num_len:
         space = ""
         for i in range(0, course_num_len - len(course_num)):
             space += " "
-        return course_num + space + course_name
-    return line.strip().replace("|","")
+        return course_num + space + "|"+ course_name
+    else:
+        return course_num + "|" + course_name
 
 def print_with_color(text):
     global color_index
@@ -67,17 +72,18 @@ def print_with_color(text):
 def print_table_head(id_name, title, col):
     table_head_mid = ''
     for i_i in range(0, col):
+        update_cell_len(i_i)
         space = ''
         table_head_mid += '|'
         for sp in range(0, course_num_len - len(id_name)):
             space += ' '
         table_head_mid += id_name + space + '|'
         space = ''
-        for sp in range(3, cell_len - course_num_len - len(title)):
+        for sp in range(0, course_name_len - len(title)):
             space += " "
         table_head_mid = table_head_mid + title + space
 
-    table_head_mid += ' |'
+    table_head_mid += '|'
     print_table_separator(col)
     print table_head_mid
     print_table_separator(col)
@@ -85,13 +91,14 @@ def print_table_head(id_name, title, col):
 def print_table_separator(col):
     table_separator = ''
     for i_i in range(0, col):
+        update_cell_len(i_i)
         table_separator += "+"
         for sp in range(0, course_num_len):
             table_separator += "-"
         table_separator += "+"
-        for sp in range(3, cell_len - course_num_len):
+        for sp in range(0, course_name_len):
             table_separator += "-"
-    table_separator += "-+"
+    table_separator += "+"
     print table_separator
 
 def get_space(start, end):
@@ -99,6 +106,35 @@ def get_space(start, end):
     for j in range(start, end):
         space += " "
     return space
+
+def get_max_line_len(list_data):
+    length = 0
+    for line in list_data:
+        if len(line) > length:
+            length = len(line)
+    return length
+
+def update_max_len(line, col):
+    if len(line) > line_max_len_list[col - 1]:
+        line_max_len_list[col - 1] = len(line)
+    if len(line[0 : line.find('|')]) > line_id_max_len_list[col - 1]:
+        line_id_max_len_list[col - 1] = len(line[0 : line.find('|')]) 
+
+
+def update_cell_len(index):
+    max_len = line_max_len_list[index]
+    global cell_len, course_name_len, course_num_len
+    cell_len = line_max_len_list[index]
+    course_num_len = line_id_max_len_list[index]
+    course_name_len = cell_len - course_num_len - 1
+
+
+def format_lines(list_all):
+    for i in range(0, len(list_all)):
+        update_cell_len(i)
+
+        for j in range(0, len(list_all[i])):
+            list_all[i][j] = alignCourseName(list_all[i][j])
 
 def print_list(file_name):
     current = 0
@@ -116,7 +152,8 @@ def print_list(file_name):
                 if line.lower().find(filter_keyword.lower()) != -1:
                     filter_result.append(line)
             all_lines = filter_result
-        
+        if len(all_lines) == 0:
+            return  
         line_count = len(all_lines)
         list_all = []
         line_half = 0
@@ -131,7 +168,7 @@ def print_list(file_name):
             line_half = line_count / 2
         elif column_num == "1":
             list_all.append([])
-
+         
         for line in all_lines:
             if line.find('|') != -1:
                 line = line[0 : line.find("|", line.find("|") + 1)]
@@ -139,37 +176,43 @@ def print_list(file_name):
             current += 1
             if column_num == "3":
                 if current <= line_half + (line_count % 3):
-                    list_all[0].append(alignCourseName(line))
+                    update_max_len(line, 1)
+                    list_all[0].append(line)
                 elif current <= 2 * line_half + (line_count % 3):
-                    list_all[1].append(alignCourseName(line))
+                    update_max_len(line, 2)
+                    list_all[1].append(line)
                 else:
-                    list_all[2].append(alignCourseName(line))
+                    update_max_len(line, 3)
+                    list_all[2].append(line)
 
             elif column_num == "2":
                 if current <= line_half + (line_count % 2):
-                    list_all[0].append(alignCourseName(line))
+                    update_max_len(line, 1)
+                    list_all[0].append(line)
                 else:
-                    list_all[1].append(alignCourseName(line))
+                    update_max_len(line, 2)
+                    list_all[1].append(line)
             else:
-                list_all[0].append(alignCourseName(line))
+                update_max_len(line, 1)
+                list_all[0].append(line)
+
+        format_lines(list_all)
+
         if column_num == "3":
             if len(list_all[0]) - len(list_all[1]) == 2:
                 list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
                 list_all[0].pop()
             print_table_head('id', 'title', 3)
             for i in range(0, len(list_all[2])):
-                tmp = "|" + list_all[0][i] + get_space(2, cell_len - len(list_all[0][i].decode('utf8')))  + "|" + list_all[1][i] + get_space(2, cell_len - len(list_all[1][i])) + "|"
-                space = get_space(1, cell_len - len(list_all[2][i].decode('utf8'))) 
-                content = tmp + list_all[2][i] + space + "|"
+                tmp = "|" + list_all[0][i] + "|" + list_all[1][i] + "|"
+                content = tmp + list_all[2][i] + "|"
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
             if len(list_all[0]) > len(list_all[2]):
                 last = len(list_all[0]) - 1
-                space = get_space(2, cell_len - len(list_all[0][last].decode('utf8')))
-                space_2 = get_space(2, cell_len - len(list_all[1][last].decode('utf8')))
-                content = "|" + list_all[0][last] + space + "|" + list_all[1][last] + space_2 + "|"
+                content = "|" + list_all[0][last] + "|" + list_all[1][last] + "|"
 
                 if output_with_color == True:
                     print_with_color(content)
@@ -179,19 +222,15 @@ def print_list(file_name):
         elif column_num == "2":
             print_table_head('id', 'title', 2)
             for i in range(0, len(list_all[1])):
-                space = get_space(2, cell_len - len(list_all[0][i].decode('utf8')))
-                space_2 = get_space(1, cell_len - len(list_all[1][i].decode('utf8')))
-                content = '|' + list_all[0][i] + space + "|" + list_all[1][i] + space_2 + '|'
+                content = '|' + list_all[0][i] + "|" + list_all[1][i] + '|'
 
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
-                    #print separator    
             if len(list_all[0]) > len(list_all[1]):
                 last = len(list_all[0]) - 1
-                space = get_space(2, cell_len - len(list_all[0][last].decode('utf8')))
-                content = '|' + list_all[0][last] + space + "|"
+                content = '|' + list_all[0][last] + "|"
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -200,7 +239,7 @@ def print_list(file_name):
         elif column_num == '1':
             print_table_head('id', 'title', 1)
             for i in range(0, len(list_all[0])):
-                content = "|" + list_all[0][i] + get_space(1, cell_len - len(list_all[0][i].decode('utf8'))) + "|"
+                content = "|" + list_all[0][i] + "|"
                 if output_with_color == True:
                     print_with_color(content)
                 else:

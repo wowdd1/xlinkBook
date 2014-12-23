@@ -59,22 +59,45 @@ eg:
 
 the output would looks like this:
 
-    +----------+----------------------------------------------------------------------------+----------+-----------------------------------------------------------------------------+
-    |id        |title                                                                       |id        |title                                                                        |
-    +----------+----------------------------------------------------------------------------+----------+-----------------------------------------------------------------------------+
-    |6572-1996 | FlappySwift                                                                |1437-214  | iOS8-day-by-day                                                             |
-    |5876-576  | Alamofire                                                                  |1325-61   | Surge                                                                       |
-    |2764-190  | Design-Patterns-In-Swift                                                   |1289-100  | animated-tab-bar                                                            |
-    |2631-288  | SwiftyJSON                                                                 |1232-92   | ExSwift                                                                     |
-    |1771-95   | Dollar.swift                                                               |1209-92   | hamburger-button                                                            |
-    |1724-137  | Quick                                                                      |1073-134  | Swifter                                                                     |
-    |1618-122  | LTMorphingLabel                                                            |1043-94   | SCLAlertView-Swift                                                          |
-    |1537-416  | swift-2048                                                                 |1017-195  | Chats                                                                       |
-    |1505-121  | swiftz                                                                     |1010-301  | SwiftWeather                                                                |
-    |1475-62   | Cartography                                                                |990-267   | SwiftGuide                                                                  |
-    +----------+----------------------------------------------------------------------------+----------+-----------------------------------------------------------------------------+
+    +-----------+----------------------------------+---------+------------+---------+---------------------------+
+    |id         |title                             |id       |title       |id       |title                      |
+    +-----------+----------------------------------+---------+------------+---------+---------------------------+
+    |17830-3603 | docker                           |2216-49  | pup        |1302-186 | gorp                      |
+    |10176-895  | lime                             |2187-290 | web        |1290-135 | tsuru                     |
+    |5990-374   | syncthing                        |2160-197 | godropbox  |1268-52  | delve                     |
+    |5971-582   | martini                          |2136-291 | goread     |1266-82  | otto                      |
+    |5504-860   | kubernetes                       |2100-511 | Heartbleed |1229-96  | goconvey                  |
+    |5160-1976  | build-web-application-with-gol...|2087-243 | gocode     |1214-62  | bleve                     |
+    |5043-541   | etcd                             |2081-94  | ga-beacon  |1210-127 | gorm                      |
+    |5005-472   | hub                              |2035-70  | alpaca     |1191-117 | confd                     |
+    |4974-343   | cayley                           |2029-141 | cli        |1188-179 | pq                        |
+    |4939-390   | gogs                             |2026-99  | vegeta     |1184-144 | raft                      |
+    |4901-227   | go                               |1960-70  | peco       |1182-76  | packetbeat                |
+    |4541-681   | revel                            |1931-226 | vitess     |1166-102 | qml                       |
+    |4182-412   | drone                            |1894-77  | gopherjs   |1149-110 | camlistore                |
+    |3950-297   | influxdb                         |1887-106 | gor        |1143-125 | goquery                   |
+    |3873-268   | ngrok                            |1862-111 | goji       |1112-55  | goagain                   |
+    |3715-375   | nsq                              |1817-207 | terraform  |1102-258 | mysql                     |
+    |3532-867   | beego                            |1813-88  | ui         |1096-37  | elvish                    |
+    |3481-144   | websocketd                       |1809-164 | gin        |1073-152 | blackfriday               |
+    |3428-629   | packer                           |1769-136 | swarm      |1071-90  | tiedot                    |
+    |3219-284   | groupcache                       |1769-213 | heka       |1064-90  | go-json-rest              |
+    |3041-185   | flynn                            |1733-99  | negroni    |1056-40  | inspeqtor                 |
+    |3010-266   | shipyard                         |1703-91  | boom       |1053-157 | redigo                    |
+    |2935-191   | rocket                           |1647-261 | codis      |1047-178 | mux                       |
+    |2910-97    | textql                           |1622-74  | bolt       |1043-64  | httprouter                |
+    |2680-399   | hugo                             |1616-141 | cadvisor   |1041-386 | the-way-to-go_ZH_CN       |
+    |2657-195   | serf                             |1577-131 | golearn    |1037-29  | roshi                     |
+    |2599-164   | zeus                             |1513-111 | GoSublime  |1001-137 | skynet                    |
+    |2576-116   | weave                            |1482-80  | libchan    |989-52   | goworker                  |
+    |2574-98    | pgweb                            |1462-101 | godep      |930-259  | logstash-forwarder        |
+    |2559-172   | cockroach                        |1434-149 | fleet      |919-288  | go-fundamental-programm...|
+    |2516-225   | consul                           |1388-199 | freegeoip  |911-81   | streamtools               |
+    |2250-194   | doozerd                          |1325-205 | cow        |904-40   | coop                      |
+    +-----------+----------------------------------+---------+------------+---------+---------------------------+
 
-    Total 20 records, File: db/eecs/github/swift-github2014
+    Total 96 records, File: db/eecs/github/go-github2014
+
 
 upgrade db: 
 
