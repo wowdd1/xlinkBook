@@ -10,7 +10,6 @@ import os,sys
 from utils import Utils
 
 source = ""
-align_course_name = True
 filter_keyword = ""
 column_num = "2"
 
@@ -29,7 +28,6 @@ def usage():
     print '\t-i,--input: filename or dirname'
     print '\t-c,--column: from 1 to 3'
     print '\t-f,--filter: keyword for filter course'
-    print '\t-r,--raw: output raw data'
     print '\t-s,--style: print text with color'
     os.system("cat README.md")
 
@@ -43,8 +41,6 @@ def print_keyword(file_name):
     os.system(cmd)
 
 def alignCourseName(line):
-    if align_course_name == False:
-        return line   
     course_num = line[0 : line.find("|")]
     course_name = line[line.find("|") + 1 : ]
     if len(course_name.decode('utf8')) > course_name_len:
@@ -300,9 +296,6 @@ def main(argv):
         elif o in ('-f', '--filter'):
             global filter_keyword
             filter_keyword = str(a).strip()
-        elif o in ('-r', '--raw'):
-            global align_course_name
-            align_course_name = False
         elif o in ('-s', '--style'):
             global output_with_color
             output_with_color = True

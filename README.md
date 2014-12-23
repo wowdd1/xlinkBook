@@ -1,6 +1,6 @@
 usage:  
 
-    ./list.py -i filename or dirname -c column_num -f 'keyword or regexp'] -r -s 
+    ./list.py -i filename or dirname -c column_num -f 'keyword or regexp'] -s 
 
 filename or dirname: the file or dir
 
@@ -55,7 +55,7 @@ eg:
 
     ./list.py -i db/eecs/eecs-course-edx2014 -c 2 | grep -i ""
     
-    ./list.py -i db/eecs/ -c 2 -f 'data' -r -s
+    ./list.py -i db/eecs/ -c 2 -f 'data' -s
 
 the output would looks like this:
 
