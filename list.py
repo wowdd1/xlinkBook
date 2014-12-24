@@ -181,8 +181,8 @@ def print_list(file_name):
             filter_result = []
             for line in all_lines:
                 record = Record(line)
-                id_and_title = get_id_and_title(record)
-                if id_and_title.lower().find(filter_keyword.lower()) != -1:
+                data = record.get_id() + record.get_title() + record.get_describe()
+                if data.lower().find(filter_keyword.lower()) != -1:
                     filter_result.append(line)
             all_lines = filter_result[:]
         if len(all_lines) == 0:
