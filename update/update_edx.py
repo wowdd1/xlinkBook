@@ -69,7 +69,7 @@ class EdxSpider(Spider):
                 title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
                 title = self.delZh(title)
                 count = count + 1
-                self.write_db(f, item["code"].strip(), title, item["url"])
+                self.write_db(f, item["code"].strip(), title, item["url"], item["availability"])
     
         self.close_db(f)
         if file_lines != count and count > 0:

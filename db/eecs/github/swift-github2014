@@ -1,20 +1,21 @@
-6572-1996 | FlappySwift | https://github.com/fullstackio/FlappySwift
-5876-576 | Alamofire | https://github.com/Alamofire/Alamofire
-2764-190 | Design-Patterns-In-Swift | https://github.com/ochococo/Design-Patterns-In-Swift
-2631-288 | SwiftyJSON | https://github.com/SwiftyJSON/SwiftyJSON
-1771-95 | Dollar.swift | https://github.com/ankurp/Dollar.swift
-1724-137 | Quick | https://github.com/Quick/Quick
-1618-122 | LTMorphingLabel | https://github.com/lexrus/LTMorphingLabel
-1537-416 | swift-2048 | https://github.com/austinzheng/swift-2048
-1505-121 | swiftz | https://github.com/typelift/swiftz
-1475-62 | Cartography | https://github.com/robb/Cartography
-1437-214 | iOS8-day-by-day | https://github.com/ShinobiControls/iOS8-day-by-day
-1325-61 | Surge | https://github.com/mattt/Surge
-1289-100 | animated-tab-bar | https://github.com/Ramotion/animated-tab-bar
-1232-92 | ExSwift | https://github.com/pNre/ExSwift
-1209-92 | hamburger-button | https://github.com/robb/hamburger-button
-1073-134 | Swifter | https://github.com/mattdonnelly/Swifter
-1043-94 | SCLAlertView-Swift | https://github.com/vikmeup/SCLAlertView-Swift
-1017-195 | Chats | https://github.com/acani/Chats
-1010-301 | SwiftWeather | https://github.com/JakeLin/SwiftWeather
-990-267 | SwiftGuide | https://github.com/ipader/SwiftGuide
+6578-1996 | FlappySwift | https://github.com/fullstackio/FlappySwift | swift implementation of flappy bird. More at fullstackedu.com (author:fullstackio stars:6578 forks:1996 watchers:6578)
+5900-576 | Alamofire | https://github.com/Alamofire/Alamofire | Elegant HTTP Networking in Swift (author:Alamofire stars:5900 forks:576 watchers:5900)
+2768-190 | Design-Patterns-In-Swift | https://github.com/ochococo/Design-Patterns-In-Swift | Design Patterns implemented in Swift (author:ochococo stars:2768 forks:190 watchers:2768)
+2648-291 | SwiftyJSON | https://github.com/SwiftyJSON/SwiftyJSON | The better way to deal with JSON data in Swift (author:SwiftyJSON stars:2648 forks:291 watchers:2648)
+1775-95 | Dollar.swift | https://github.com/ankurp/Dollar.swift | A functional tool-belt for Swift Language similar to Lo-Dash or Underscore.js in Javascript (author:ankurp stars:1775 forks:95 watchers:1775)
+1727-137 | Quick | https://github.com/Quick/Quick | The Swift (and Objective-C) testing framework. (author:Quick stars:1727 forks:137 watchers:1727)
+1626-122 | LTMorphingLabel | https://github.com/lexrus/LTMorphingLabel | Graceful morphing effects for UILabel written in Swift. (author:lexrus stars:1626 forks:122 watchers:1626)
+1540-416 | swift-2048 | https://github.com/austinzheng/swift-2048 | 2048 for Swift (author:austinzheng stars:1540 forks:416 watchers:1540)
+1509-121 | swiftz | https://github.com/typelift/swiftz | Functional programming in Swift (author:typelift stars:1509 forks:121 watchers:1509)
+1480-62 | Cartography | https://github.com/robb/Cartography | Declarative Auto Layout in Swift (author:robb stars:1480 forks:62 watchers:1480)
+1446-217 | iOS8-day-by-day | https://github.com/ShinobiControls/iOS8-day-by-day | Selection of projects accompanying the iOS8-Day-by-Day blog series http://www.shinobicontrols.com/iOS8DayByDay (author:ShinobiControls stars:1446 forks:217 watchers:1446)
+1334-28 | Carthage | https://github.com/Carthage/Carthage | A simple, decentralized dependency manager for Cocoa (author:Carthage stars:1334 forks:28 watchers:1334)
+1328-62 | Surge | https://github.com/mattt/Surge | Swift + Accelerate (author:mattt stars:1328 forks:62 watchers:1328)
+1305-101 | animated-tab-bar | https://github.com/Ramotion/animated-tab-bar | RAMAnimatedTabBarController is a Swift module for adding animation to tabbar items. (author:Ramotion stars:1305 forks:101 watchers:1305)
+1238-93 | ExSwift | https://github.com/pNre/ExSwift | A set of Swift extensions for standard types and classes. (author:pNre stars:1238 forks:93 watchers:1238)
+1217-92 | hamburger-button | https://github.com/robb/hamburger-button | A hamburger button transition (author:robb stars:1217 forks:92 watchers:1217)
+1077-135 | Swifter | https://github.com/mattdonnelly/Swifter | A Twitter framework for iOS & OS X written in Swift (author:mattdonnelly stars:1077 forks:135 watchers:1077)
+1049-95 | SCLAlertView-Swift | https://github.com/vikmeup/SCLAlertView-Swift | Beautiful animated Alert View. Written in Swift (author:vikmeup stars:1049 forks:95 watchers:1049)
+1020-196 | Chats | https://github.com/acani/Chats | Open-Source Native iPhone Messages App (author:acani stars:1020 forks:196 watchers:1020)
+1013-302 | SwiftWeather | https://github.com/JakeLin/SwiftWeather | SwiftWeather is an iOS app developed in Swift language. (author:JakeLin stars:1013 forks:302 watchers:1013)
+995-267 | SwiftGuide | https://github.com/ipader/SwiftGuide | 这份指南汇集了Swift语言主流学习资源，并以开发者的视角整理编排。 (author:ipader stars:995 forks:267 watchers:995)

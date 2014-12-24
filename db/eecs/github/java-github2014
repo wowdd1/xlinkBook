@@ -1,100 +1,100 @@
-9346-2862 | elasticsearch | https://github.com/elasticsearch/elasticsearch
-8467-1685 | storm | https://github.com/nathanmarz/storm
-6873-3224 | Android-Universal-Image-Loader | https://github.com/nostra13/Android-Universal-Image-Loader
-6801-3992 | SlidingMenu | https://github.com/jfeinstein10/SlidingMenu
-6527-3746 | ActionBarSherlock | https://github.com/JakeWharton/ActionBarSherlock
-5338-1752 | iosched | https://github.com/google/iosched
-5216-3502 | libgdx | https://github.com/libgdx/libgdx
-5016-2470 | android-async-http | https://github.com/loopj/android-async-http
-4719-2667 | Android-ViewPagerIndicator | https://github.com/JakeWharton/Android-ViewPagerIndicator
-4690-3878 | spring-framework | https://github.com/spring-projects/spring-framework
-4472-1306 | picasso | https://github.com/square/picasso
-4179-2678 | Android-PullToRefresh | https://github.com/chrisbanes/Android-PullToRefresh
-4159-1177 | androidannotations | https://github.com/excilys/androidannotations
-3991-584 | RxJava | https://github.com/ReactiveX/RxJava
-3923-1891 | netty | https://github.com/netty/netty
-3838-649 | retrofit | https://github.com/square/retrofit
-3729-694 | clojure | https://github.com/clojure/clojure
-3617-751 | Android-Bootstrap | https://github.com/Bearded-Hen/Android-Bootstrap
-3533-2447 | zxing | https://github.com/zxing/zxing
-3303-1022 | android-bootstrap | https://github.com/AndroidBootstrap/android-bootstrap
-3251-652 | vert.x | https://github.com/eclipse/vert.x
-3215-958 | TextSecure | https://github.com/WhisperSystems/TextSecure
-3112-1212 | junit | https://github.com/junit-team/junit
-3105-1846 | facebook-android-sdk | https://github.com/facebook/facebook-android-sdk
-3048-795 | EventBus | https://github.com/greenrobot/EventBus
-3035-172 | FizzBuzzEnterpriseEdition | https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
-3011-417 | nokogiri | https://github.com/sparklemotion/nokogiri
-2900-648 | okhttp | https://github.com/square/okhttp
-2888-1034 | ListViewAnimations | https://github.com/nhaarman/ListViewAnimations
-2851-621 | presto | https://github.com/facebook/presto
-2837-704 | AndroidStaggeredGrid | https://github.com/etsy/AndroidStaggeredGrid
-2822-751 | cardslib | https://github.com/gabrielemariotti/cardslib
-2814-992 | ActionBar-PullToRefresh | https://github.com/chrisbanes/ActionBar-PullToRefresh
-2695-469 | dagger | https://github.com/square/dagger
-2667-688 | metrics | https://github.com/dropwizard/metrics
-2661-1116 | dropwizard | https://github.com/dropwizard/dropwizard
-2660-1117 | PhotoView | https://github.com/chrisbanes/PhotoView
-2617-403 | Hystrix | https://github.com/Netflix/Hystrix
-2611-1197 | PagerSlidingTabStrip | https://github.com/astuetz/PagerSlidingTabStrip
-2565-666 | disruptor | https://github.com/LMAX-Exchange/disruptor
-2520-674 | roboguice | https://github.com/roboguice/roboguice
-2517-418 | ion | https://github.com/koush/ion
-2452-392 | OpenRefine | https://github.com/OpenRefine/OpenRefine
-2449-3133 | coursera-android | https://github.com/aporter/coursera-android
-2445-492 | butterknife | https://github.com/JakeWharton/butterknife
-2430-1015 | scribe-java | https://github.com/fernandezpablo85/scribe-java
-2428-1119 | android-swipelistview | https://github.com/47deg/android-swipelistview
-2422-2306 | platform_frameworks_base | https://github.com/android/platform_frameworks_base
-2407-939 | GreenDroid | https://github.com/cyrilmottier/GreenDroid
-2371-398 | titan | https://github.com/thinkaurelius/titan
-2356-1326 | AndEngine | https://github.com/nicolasgramlich/AndEngine
-2309-799 | AndroidSlidingUpPanel | https://github.com/umano/AndroidSlidingUpPanel
-2306-276 | SimianArmy | https://github.com/Netflix/SimianArmy
-2256-760 | HoloEverywhere | https://github.com/Prototik/HoloEverywhere
-2233-776 | StickyListHeaders | https://github.com/emilsjolander/StickyListHeaders
-2175-1028 | android-menudrawer | https://github.com/SimonVT/android-menudrawer
-2147-584 | Crouton | https://github.com/keyboardsurfer/Crouton
-2133-975 | android-pulltorefresh | https://github.com/johannilsson/android-pulltorefresh
-2125-253 | zipkin | https://github.com/twitter/zipkin
-2041-451 | otto | https://github.com/square/otto
-2029-477 | AndroidSwipeLayout | https://github.com/daimajia/AndroidSwipeLayout
-2026-963 | NineOldAndroids | https://github.com/JakeWharton/NineOldAndroids
-2009-1450 | springside4 | https://github.com/springside/springside4
-2005-421 | robospice | https://github.com/stephanenicolas/robospice
-2002-862 | gradle | https://github.com/gradle/gradle
-2001-639 | ShowcaseView | https://github.com/amlcurran/ShowcaseView
-1997-466 | atmosphere | https://github.com/Atmosphere/atmosphere
-1971-1121 | drag-sort-listview | https://github.com/bauerca/drag-sort-listview
-1944-896 | jedis | https://github.com/xetorthio/jedis
-1922-556 | AndroidAsync | https://github.com/koush/AndroidAsync
-1907-486 | AndroidViewAnimations | https://github.com/daimajia/AndroidViewAnimations
-1891-525 | ActiveAndroid | https://github.com/pardom/ActiveAndroid
-1875-483 | java-design-patterns | https://github.com/iluwatar/java-design-patterns
-1846-495 | FadingActionBar | https://github.com/ManuelPeinado/FadingActionBar
-1822-404 | spark | https://github.com/perwendel/spark
-1821-763 | greenDAO | https://github.com/greenrobot/greenDAO
-1807-722 | cassandra | https://github.com/apache/cassandra
-1789-588 | SmoothProgressBar | https://github.com/castorflex/SmoothProgressBar
-1742-196 | android-best-practices | https://github.com/futurice/android-best-practices
-1730-414 | MaterialDesignLibrary | https://github.com/navasmdc/MaterialDesignLibrary
-1700-497 | async-http-client | https://github.com/AsyncHttpClient/async-http-client
-1683-346 | yuicompressor | https://github.com/yui/yuicompressor
-1674-181 | j2objc | https://github.com/google/j2objc
-1667-1087 | k-9 | https://github.com/k9mail/k-9
-1660-277 | FreeFlow | https://github.com/Comcast/FreeFlow
-1648-533 | processing-js | https://github.com/jeresig/processing-js
-1642-1810 | cw-omnibus | https://github.com/commonsguy/cw-omnibus
-1638-481 | acra | https://github.com/ACRA/acra
-1628-127 | droidicon | https://github.com/theDazzler/droidicon
-1598-674 | intellij-community | https://github.com/JetBrains/intellij-community
-1598-484 | MPAndroidChart | https://github.com/PhilJay/MPAndroidChart
-1583-252 | glide | https://github.com/bumptech/glide
-1580-540 | jsoup | https://github.com/jhy/jsoup
-1573-1133 | Bukkit | https://github.com/Bukkit/Bukkit
-1572-327 | twoway-view | https://github.com/lucasr/twoway-view
-1571-324 | circular-progress-button | https://github.com/dmytrodanylyk/circular-progress-button
-1569-992 | android-flip | https://github.com/openaphid/android-flip
-1562-505 | androidquery | https://github.com/androidquery/androidquery
-1562-546 | android-times-square | https://github.com/square/android-times-square
-1538-1095 | afinal | https://github.com/yangfuhai/afinal
+9354-2864 | elasticsearch | https://github.com/elasticsearch/elasticsearch | Open Source, Distributed, RESTful Search Engine (author:elasticsearch stars:9354 forks:2864 watchers:9354)
+8468-1685 | storm | https://github.com/nathanmarz/storm | Distributed and fault-tolerant realtime computation: stream processing, continuous computation, distributed RPC, and more (author:nathanmarz stars:8468 forks:1685 watchers:8468)
+6892-3234 | Android-Universal-Image-Loader | https://github.com/nostra13/Android-Universal-Image-Loader | Powerful and flexible library for loading, caching and displaying images on Android. (author:nostra13 stars:6892 forks:3234 watchers:6892)
+6810-3999 | SlidingMenu | https://github.com/jfeinstein10/SlidingMenu | An Android library that allows you to easily create applications with slide-in menus. You may use it in your Android apps provided that you cite this project and include the license in your app. Thanks! (author:jfeinstein10 stars:6810 forks:3999 watchers:6810)
+6534-3753 | ActionBarSherlock | https://github.com/JakeWharton/ActionBarSherlock | [DEPRECATED] Action bar implementation which uses the native action bar on Android 4.0+ and a custom implementation on pre-4.0 through a single API and theme. (author:JakeWharton stars:6534 forks:3753 watchers:6534)
+5353-1764 | iosched | https://github.com/google/iosched | 
+5227-3504 | libgdx | https://github.com/libgdx/libgdx | Desktop/Android/HTML5/iOS Java game development framework (author:libgdx stars:5227 forks:3504 watchers:5227)
+5036-2483 | android-async-http | https://github.com/loopj/android-async-http | An Asynchronous HTTP Library for Android (author:loopj stars:5036 forks:2483 watchers:5036)
+4727-2673 | Android-ViewPagerIndicator | https://github.com/JakeWharton/Android-ViewPagerIndicator | Paging indicator widgets compatible with the ViewPager from the Android Support Library and ActionBarSherlock. (author:JakeWharton stars:4727 forks:2673 watchers:4727)
+4697-3894 | spring-framework | https://github.com/spring-projects/spring-framework | The Spring Framework (author:spring-projects stars:4697 forks:3894 watchers:4697)
+4486-1309 | picasso | https://github.com/square/picasso | A powerful image downloading and caching library for Android (author:square stars:4486 forks:1309 watchers:4486)
+4192-2682 | Android-PullToRefresh | https://github.com/chrisbanes/Android-PullToRefresh | DEPRECATED (author:chrisbanes stars:4192 forks:2682 watchers:4192)
+4179-1179 | androidannotations | https://github.com/excilys/androidannotations | Fast Android Development. Easy maintainance. (author:excilys stars:4179 forks:1179 watchers:4179)
+4001-590 | RxJava | https://github.com/ReactiveX/RxJava | RxJava – Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM. (author:ReactiveX stars:4001 forks:590 watchers:4001)
+3930-1896 | netty | https://github.com/netty/netty | Netty project - an event-driven asynchronous network application framework (author:netty stars:3930 forks:1896 watchers:3930)
+3856-650 | retrofit | https://github.com/square/retrofit | Type-safe REST client for Android and Java by Square, Inc. (author:square stars:3856 forks:650 watchers:3856)
+3735-694 | clojure | https://github.com/clojure/clojure | The Clojure programming language (author:clojure stars:3735 forks:694 watchers:3735)
+3623-757 | Android-Bootstrap | https://github.com/Bearded-Hen/Android-Bootstrap | Bootstrap style buttons with Font Awesome (author:Bearded-Hen stars:3623 forks:757 watchers:3623)
+3558-2451 | zxing | https://github.com/zxing/zxing | Official ZXing ("Zebra Crossing") project home (author:zxing stars:3558 forks:2451 watchers:3558)
+3307-1024 | android-bootstrap | https://github.com/AndroidBootstrap/android-bootstrap | A template/bootstrap/boilerplate application that includes tons of great open source tools and frameworks.  (author:AndroidBootstrap stars:3307 forks:1024 watchers:3307)
+3251-652 | vert.x | https://github.com/eclipse/vert.x | vert.x - The scalable polyglot application platform for the JVM (author:eclipse stars:3251 forks:652 watchers:3251)
+3218-960 | TextSecure | https://github.com/WhisperSystems/TextSecure | A secure text messaging application for Android. (author:WhisperSystems stars:3218 forks:960 watchers:3218)
+3112-1212 | junit | https://github.com/junit-team/junit | A programmer-oriented testing framework for Java. (author:junit-team stars:3112 forks:1212 watchers:3112)
+3107-1846 | facebook-android-sdk | https://github.com/facebook/facebook-android-sdk | Used to integrate Android apps with Facebook Platform. (author:facebook stars:3107 forks:1846 watchers:3107)
+3077-175 | FizzBuzzEnterpriseEdition | https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition | FizzBuzz Enterprise Edition is a no-nonsense implementation of FizzBuzz made by a serious businessman for serious business purposes. (author:EnterpriseQualityCoding stars:3077 forks:175 watchers:3077)
+3064-797 | EventBus | https://github.com/greenrobot/EventBus | Android optimized event bus that simplifies communication between Activities, Fragments, Threads, Services, etc. Less code, better quality. (author:greenrobot stars:3064 forks:797 watchers:3064)
+3015-420 | nokogiri | https://github.com/sparklemotion/nokogiri | Nokogiri (鋸) is an HTML, XML, SAX, and Reader parser with XPath and CSS selector support. (author:sparklemotion stars:3015 forks:420 watchers:3015)
+2919-649 | okhttp | https://github.com/square/okhttp | An HTTP+SPDY client for Android and Java applications. (author:square stars:2919 forks:649 watchers:2919)
+2899-1037 | ListViewAnimations | https://github.com/nhaarman/ListViewAnimations | An Android library which allows developers to easily add animations to ListView items (author:nhaarman stars:2899 forks:1037 watchers:2899)
+2858-620 | presto | https://github.com/facebook/presto | Distributed SQL query engine for running interactive analytic queries against big data sources. (author:facebook stars:2858 forks:620 watchers:2858)
+2849-709 | AndroidStaggeredGrid | https://github.com/etsy/AndroidStaggeredGrid | An Android staggered grid view which supports multiple columns with rows of varying sizes. (author:etsy stars:2849 forks:709 watchers:2849)
+2834-750 | cardslib | https://github.com/gabrielemariotti/cardslib | Android Library to build a UI Card (author:gabrielemariotti stars:2834 forks:750 watchers:2834)
+2813-993 | ActionBar-PullToRefresh | https://github.com/chrisbanes/ActionBar-PullToRefresh | DEPRECATED (author:chrisbanes stars:2813 forks:993 watchers:2813)
+2703-469 | dagger | https://github.com/square/dagger | A fast dependency injector for Android and Java. (author:square stars:2703 forks:469 watchers:2703)
+2674-688 | metrics | https://github.com/dropwizard/metrics | Capturing JVM- and application-level metrics. So you know what's going on. (author:dropwizard stars:2674 forks:688 watchers:2674)
+2667-1121 | PhotoView | https://github.com/chrisbanes/PhotoView | Implementation of ImageView for Android that supports zooming, by various touch gestures. (author:chrisbanes stars:2667 forks:1121 watchers:2667)
+2666-1114 | dropwizard | https://github.com/dropwizard/dropwizard | A damn simple library for building production-ready RESTful web services. (author:dropwizard stars:2666 forks:1114 watchers:2666)
+2623-406 | Hystrix | https://github.com/Netflix/Hystrix | Hystrix is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable. (author:Netflix stars:2623 forks:406 watchers:2623)
+2620-1203 | PagerSlidingTabStrip | https://github.com/astuetz/PagerSlidingTabStrip | An interactive indicator to navigate between the different pages of a ViewPager (author:astuetz stars:2620 forks:1203 watchers:2620)
+2570-669 | disruptor | https://github.com/LMAX-Exchange/disruptor | High Performance Inter-Thread Messaging Library (author:LMAX-Exchange stars:2570 forks:669 watchers:2570)
+2529-677 | roboguice | https://github.com/roboguice/roboguice | Google Guice on Android, version 3.0 (author:roboguice stars:2529 forks:677 watchers:2529)
+2528-419 | ion | https://github.com/koush/ion | Android Asynchronous Networking and Image Loading (author:koush stars:2528 forks:419 watchers:2528)
+2463-495 | butterknife | https://github.com/JakeWharton/butterknife | View "injection" library for Android. (author:JakeWharton stars:2463 forks:495 watchers:2463)
+2458-394 | OpenRefine | https://github.com/OpenRefine/OpenRefine | OpenRefine is a free, open source power tool for working with messy data and improving it (author:OpenRefine stars:2458 forks:394 watchers:2458)
+2456-3135 | coursera-android | https://github.com/aporter/coursera-android | Source Code for Android Course Example Applications (author:aporter stars:2456 forks:3135 watchers:2456)
+2435-1016 | scribe-java | https://github.com/fernandezpablo85/scribe-java | Simple OAuth library for Java (author:fernandezpablo85 stars:2435 forks:1016 watchers:2435)
+2433-1119 | android-swipelistview | https://github.com/47deg/android-swipelistview | An Android List View implementation with support for drawable cells and many other swipe related features (author:47deg stars:2433 forks:1119 watchers:2433)
+2430-2319 | platform_frameworks_base | https://github.com/android/platform_frameworks_base | 
+2407-940 | GreenDroid | https://github.com/cyrilmottier/GreenDroid | GreenDroid is a development library for the Android platform. It makes UI developments easier and consistent through your applications. (author:cyrilmottier stars:2407 forks:940 watchers:2407)
+2376-398 | titan | https://github.com/thinkaurelius/titan | Distributed Graph Database (author:thinkaurelius stars:2376 forks:398 watchers:2376)
+2358-1326 | AndEngine | https://github.com/nicolasgramlich/AndEngine | Free Android 2D OpenGL Game Engine (author:nicolasgramlich stars:2358 forks:1326 watchers:2358)
+2315-806 | AndroidSlidingUpPanel | https://github.com/umano/AndroidSlidingUpPanel | This library provides a simple way to add a draggable sliding up panel (popularized by Google Music and Google Maps) to your Android application. Brought to you by Umano. (author:umano stars:2315 forks:806 watchers:2315)
+2311-277 | SimianArmy | https://github.com/Netflix/SimianArmy | Tools for keeping your cloud operating in top form. Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures. (author:Netflix stars:2311 forks:277 watchers:2311)
+2257-761 | HoloEverywhere | https://github.com/Prototik/HoloEverywhere | NO LONGER MAINTAINED. DEVELOP FOR 4.X+ DUDE. (author:Prototik stars:2257 forks:761 watchers:2257)
+2240-779 | StickyListHeaders | https://github.com/emilsjolander/StickyListHeaders | An android library for section headers that stick to the top (author:emilsjolander stars:2240 forks:779 watchers:2240)
+2175-1032 | android-menudrawer | https://github.com/SimonVT/android-menudrawer | *DEPRECATED* A slide-out menu implementation, which allows users to navigate between views in your app. (author:SimonVT stars:2175 forks:1032 watchers:2175)
+2154-586 | Crouton | https://github.com/keyboardsurfer/Crouton | Context sensitive notifications for Android   (author:keyboardsurfer stars:2154 forks:586 watchers:2154)
+2134-974 | android-pulltorefresh | https://github.com/johannilsson/android-pulltorefresh | This project aims to provide a reusable pull to refresh widget for Android. (author:johannilsson stars:2134 forks:974 watchers:2134)
+2128-253 | zipkin | https://github.com/twitter/zipkin | Zipkin is a distributed tracing system (author:twitter stars:2128 forks:253 watchers:2128)
+2045-453 | otto | https://github.com/square/otto | An enhanced Guava-based event bus with emphasis on Android support. (author:square stars:2045 forks:453 watchers:2045)
+2039-481 | AndroidSwipeLayout | https://github.com/daimajia/AndroidSwipeLayout | The Most Powerful Swipe Layout! (author:daimajia stars:2039 forks:481 watchers:2039)
+2028-972 | NineOldAndroids | https://github.com/JakeWharton/NineOldAndroids | [DEPRECATED] Android library for using the Honeycomb animation API on all versions of the platform back to 1.0! (author:JakeWharton stars:2028 forks:972 watchers:2028)
+2013-1455 | springside4 | https://github.com/springside/springside4 | A Spring Framework based, pragmatic style JavaEE application reference architecture. (author:springside stars:2013 forks:1455 watchers:2013)
+2011-642 | ShowcaseView | https://github.com/amlcurran/ShowcaseView | Highlight the best bits of your app to users quickly, simply, and cool...ly (author:amlcurran stars:2011 forks:642 watchers:2011)
+2010-421 | robospice | https://github.com/stephanenicolas/robospice | Repo of the Open Source Android library : RoboSpice. RoboSpice is a modular android library that makes writing asynchronous long running tasks easy. It is specialized in network requests, supports caching and offers REST requests out-of-the box using extension modules. (author:stephanenicolas stars:2010 forks:421 watchers:2010)
+2009-863 | gradle | https://github.com/gradle/gradle | A powerful build system for the JVM (author:gradle stars:2009 forks:863 watchers:2009)
+2000-466 | atmosphere | https://github.com/Atmosphere/atmosphere | Realtime Client Server Framework for the JVM, supporting WebSockets with Cross-Browser Fallbacks (author:Atmosphere stars:2000 forks:466 watchers:2000)
+1975-1122 | drag-sort-listview | https://github.com/bauerca/drag-sort-listview | Android ListView with drag and drop reordering. (author:bauerca stars:1975 forks:1122 watchers:1975)
+1951-898 | jedis | https://github.com/xetorthio/jedis | A blazingly small and sane redis java client (author:xetorthio stars:1951 forks:898 watchers:1951)
+1927-557 | AndroidAsync | https://github.com/koush/AndroidAsync | Asynchronous socket, http (client+server), websocket, and socket.io library for android. Based on nio, not threads. (author:koush stars:1927 forks:557 watchers:1927)
+1912-487 | AndroidViewAnimations | https://github.com/daimajia/AndroidViewAnimations | Cute view animation collection. (author:daimajia stars:1912 forks:487 watchers:1912)
+1905-527 | ActiveAndroid | https://github.com/pardom/ActiveAndroid | Active record style SQLite persistence for Android (author:pardom stars:1905 forks:527 watchers:1905)
+1890-487 | java-design-patterns | https://github.com/iluwatar/java-design-patterns | Design pattern samples implemented in Java (author:iluwatar stars:1890 forks:487 watchers:1890)
+1849-498 | FadingActionBar | https://github.com/ManuelPeinado/FadingActionBar | Android library implementing a fading effect for the action bar, similar to the one found in the Play Music app (author:ManuelPeinado stars:1849 forks:498 watchers:1849)
+1828-766 | greenDAO | https://github.com/greenrobot/greenDAO | greenDAO is a light & fast ORM solution for Android that maps objects to SQLite databases. (author:greenrobot stars:1828 forks:766 watchers:1828)
+1827-406 | spark | https://github.com/perwendel/spark | A Sinatra inspired framework for java (author:perwendel stars:1827 forks:406 watchers:1827)
+1810-722 | cassandra | https://github.com/apache/cassandra | Mirror of Apache Cassandra (author:apache stars:1810 forks:722 watchers:1810)
+1795-590 | SmoothProgressBar | https://github.com/castorflex/SmoothProgressBar | A small Android library allowing you to have a smooth and customizable horizontal indeterminate ProgressBar (author:castorflex stars:1795 forks:590 watchers:1795)
+1751-198 | android-best-practices | https://github.com/futurice/android-best-practices | Do's and Don'ts for Android development, by Futurice developers (author:futurice stars:1751 forks:198 watchers:1751)
+1748-424 | MaterialDesignLibrary | https://github.com/navasmdc/MaterialDesignLibrary | This is a library with components of Android L to you use in android 2.2 (author:navasmdc stars:1748 forks:424 watchers:1748)
+1708-499 | async-http-client | https://github.com/AsyncHttpClient/async-http-client | Asynchronous Http and WebSocket Client library for Java  (author:AsyncHttpClient stars:1708 forks:499 watchers:1708)
+1686-347 | yuicompressor | https://github.com/yui/yuicompressor | YUI Compressor (author:yui stars:1686 forks:347 watchers:1686)
+1678-181 | j2objc | https://github.com/google/j2objc | A Java to iOS Objective-C translation tool and runtime. (author:google stars:1678 forks:181 watchers:1678)
+1669-1090 | k-9 | https://github.com/k9mail/k-9 | K-9 Mail, An advanced email client for Android (author:k9mail stars:1669 forks:1090 watchers:1669)
+1661-277 | FreeFlow | https://github.com/Comcast/FreeFlow | A layout engine for Android that decouples layouts from the View containers that manage scrolling and view recycling. FreeFlow makes it really easy to create custom layouts and beautiful transition animations as data and layouts change (author:Comcast stars:1661 forks:277 watchers:1661)
+1649-534 | processing-js | https://github.com/jeresig/processing-js | A port of the Processing visualization language to JavaScript. (author:jeresig stars:1649 forks:534 watchers:1649)
+1646-483 | acra | https://github.com/ACRA/acra | Application Crash Reports for Android (author:ACRA stars:1646 forks:483 watchers:1646)
+1645-1814 | cw-omnibus | https://github.com/commonsguy/cw-omnibus | Source code to omnibus edition of _The Busy Coder's Guide to Android Development_ (author:commonsguy stars:1645 forks:1814 watchers:1645)
+1630-127 | droidicon | https://github.com/theDazzler/droidicon | Over 1600 customizable icons for Android including 750+ Google Material Design icons, 25 ready-made social badges, and more! (author:theDazzler stars:1630 forks:127 watchers:1630)
+1613-489 | MPAndroidChart | https://github.com/PhilJay/MPAndroidChart | A powerful Android chart view / graph view library, supporting line- bar- pie- radar- and candlestick charts as well as scaling, dragging and animations. (author:PhilJay stars:1613 forks:489 watchers:1613)
+1605-680 | intellij-community | https://github.com/JetBrains/intellij-community | IntelliJ IDEA Community Edition (author:JetBrains stars:1605 forks:680 watchers:1605)
+1590-331 | twoway-view | https://github.com/lucasr/twoway-view | RecyclerView made simple (author:lucasr stars:1590 forks:331 watchers:1590)
+1585-254 | glide | https://github.com/bumptech/glide | An image loading and caching library for Android focused on smooth scrolling (author:bumptech stars:1585 forks:254 watchers:1585)
+1583-540 | jsoup | https://github.com/jhy/jsoup | jsoup: Java HTML Parser, with best of DOM, CSS, and jquery (author:jhy stars:1583 forks:540 watchers:1583)
+1579-325 | circular-progress-button | https://github.com/dmytrodanylyk/circular-progress-button | Android Circular Progress Button (author:dmytrodanylyk stars:1579 forks:325 watchers:1579)
+1574-1134 | Bukkit | https://github.com/Bukkit/Bukkit | The Minecraft Mod API (author:Bukkit stars:1574 forks:1134 watchers:1574)
+1572-994 | android-flip | https://github.com/openaphid/android-flip | A component for flip animation on Android, which is similar to the effect in Flipboard iPhone/Android (author:openaphid stars:1572 forks:994 watchers:1572)
+1565-549 | android-times-square | https://github.com/square/android-times-square | Standalone Android widget for picking a single date from a calendar view. (author:square stars:1565 forks:549 watchers:1565)
+1562-507 | androidquery | https://github.com/androidquery/androidquery | AndroidQuery (author:androidquery stars:1562 forks:507 watchers:1562)
+1542-1099 | afinal | https://github.com/yangfuhai/afinal | Afinal是一个android的ioc，orm框架，内置了四大模块功能：FinalAcitivity,FinalBitmap,FinalDb,FinalHttp。通过finalActivity，我们可以通过注解的方式进行绑定ui和事件。通过finalBitmap，我们可以方便的加载bitmap图片，而无需考虑oom等问题。通过finalDB模块，我们一行代码就可以对android的sqlite数据库进行增删改查。通过FinalHttp模块，我们可以以ajax形式请求http数据。详情请通过以下网址查看。 (author:yangfuhai stars:1542 forks:1099 watchers:1542)

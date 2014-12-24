@@ -1,76 +1,76 @@
-20454-6737 | oh-my-zsh | https://github.com/robbyrussell/oh-my-zsh
-10387-1231 | gitflow | https://github.com/nvie/gitflow
-7940-638 | dokku | https://github.com/progrium/dokku
-7932-368 | ievms | https://github.com/xdissent/ievms
-5922-541 | rbenv | https://github.com/sstephenson/rbenv
-5488-367 | git-extras | https://github.com/tj/git-extras
-5080-446 | source-code-pro | https://github.com/adobe-fonts/source-code-pro
-4956-537 | nvm | https://github.com/creationix/nvm
-3898-320 | boot2docker | https://github.com/boot2docker/boot2docker
-3519-192 | spark | https://github.com/holman/spark
-3465-795 | veewee | https://github.com/jedi4ever/veewee
-3451-234 | browser-logos | https://github.com/alrra/browser-logos
-3386-845 | laptop | https://github.com/thoughtbot/laptop
-3320-310 | z | https://github.com/rupa/z
-3279-1526 | prezto | https://github.com/sorin-ionescu/prezto
-2807-715 | rvm | https://github.com/wayneeseguin/rvm
-2755-1717 | dotfiles | https://github.com/holman/dotfiles
-2741-256 | server-configs-nginx | https://github.com/h5bp/server-configs-nginx
-2689-365 | githug | https://github.com/Gazler/githug
-2642-420 | Dropbox-Uploader | https://github.com/andreafabrizi/Dropbox-Uploader
-2509-647 | bash-it | https://github.com/revans/bash-it
-2458-66 | sshrc | https://github.com/Russell91/sshrc
-2260-239 | crouton | https://github.com/dnschneid/crouton
-1984-135 | pyenv | https://github.com/yyuu/pyenv
-1950-414 | ruby-build | https://github.com/sstephenson/ruby-build
-1939-180 | NodeOS | https://github.com/NodeOS/NodeOS
-1923-322 | riak | https://github.com/basho/riak
-1886-360 | todo.txt-cli | https://github.com/ginatrapani/todo.txt-cli
-1850-359 | fonts | https://github.com/powerline/fonts
-1783-66 | wemux | https://github.com/zolrath/wemux
-1740-149 | n | https://github.com/tj/n
-1679-45 | fantasque-sans | https://github.com/belluzj/fantasque-sans
-1678-396 | linuxgems | https://github.com/WilliamHackmore/linuxgems
-1558-82 | streisand | https://github.com/jlund/streisand
-1526-57 | ImageOptim-CLI | https://github.com/JamieMason/ImageOptim-CLI
-1462-151 | liquidprompt | https://github.com/nojhan/liquidprompt
-1461-281 | tmux-powerline | https://github.com/erikw/tmux-powerline
-1456-43 | blackbox | https://github.com/StackExchange/blackbox
-1420-356 | VVV | https://github.com/Varying-Vagrant-Vagrants/VVV
-1417-71 | babun | https://github.com/babun/babun
-1415-64 | resty | https://github.com/micha/resty
-1413-64 | osxfuse | https://github.com/osxfuse/osxfuse
-1367-44 | fasd | https://github.com/clvv/fasd
-1344-21 | tmux-resurrect | https://github.com/tmux-plugins/tmux-resurrect
-1329-101 | zsh-syntax-highlighting | https://github.com/zsh-users/zsh-syntax-highlighting
-1328-113 | chruby | https://github.com/postmodern/chruby
-1289-276 | git-ftp | https://github.com/resmo/git-ftp
-1282-430 | ansible-examples | https://github.com/ansible/ansible-examples
-1226-171 | pipework | https://github.com/jpetazzo/pipework
-1226-73 | bashstrap | https://github.com/barryclark/bashstrap
-1208-393 | rails-dev-box | https://github.com/rails/rails-dev-box
-1196-300 | bento | https://github.com/opscode/bento
-1192-73 | autoenv | https://github.com/kennethreitz/autoenv
-1140-215 | intellij-colors-solarized | https://github.com/jkaving/intellij-colors-solarized
-1126-37 | drip | https://github.com/ninjudd/drip
-1123-79 | bats | https://github.com/sstephenson/bats
-1110-87 | sub | https://github.com/basecamp/sub
-1100-672 | git-achievements | https://github.com/icefox/git-achievements
-1098-363 | smarthosts | https://github.com/smarthosts/smarthosts
-1073-245 | effectivescala | https://github.com/twitter/effectivescala
-1069-83 | perf-tools | https://github.com/brendangregg/perf-tools
-1062-363 | maven-android-sdk-deployer | https://github.com/simpligility/maven-android-sdk-deployer
-1060-180 | git-flow-completion | https://github.com/bobthecow/git-flow-completion
-1056-54 | antigen | https://github.com/zsh-users/antigen
-1053-79 | docker-osx | https://github.com/noplay/docker-osx
-1041-297 | Vaprobash | https://github.com/fideloper/Vaprobash
-1018-188 | ant-build-script | https://github.com/h5bp/ant-build-script
-1011-93 | scm_breeze | https://github.com/ndbroadbent/scm_breeze
-976-94 | rpi-update | https://github.com/Hexxeh/rpi-update
-972-232 | gnome-terminal-colors-solarized | https://github.com/Anthony25/gnome-terminal-colors-solarized
-962-209 | oh-my-fish | https://github.com/bpinto/oh-my-fish
-955-67 | source-sans-pro | https://github.com/adobe-fonts/source-sans-pro
-947-105 | git-subtree | https://github.com/apenwarr/git-subtree
-931-119 | pure | https://github.com/sindresorhus/pure
-921-71 | gvm | https://github.com/moovweb/gvm
-911-702 | devstack | https://github.com/openstack-dev/devstack
+20493-6744 | oh-my-zsh | https://github.com/robbyrussell/oh-my-zsh | A community-driven framework for managing your zsh configuration. Includes 120+ optional plugins (rails, git, OSX, hub, capistrano, brew, ant, macports, etc), over 120 themes to spice up your morning, and an auto-update tool so that makes it easy to keep up with the latest updates from the community. (author:robbyrussell stars:20493 forks:6744 watchers:20493)
+10397-1233 | gitflow | https://github.com/nvie/gitflow | Git extensions to provide high-level repository operations for Vincent Driessen's branching model. (author:nvie stars:10397 forks:1233 watchers:10397)
+7949-642 | dokku | https://github.com/progrium/dokku | Docker powered mini-Heroku in around 100 lines of Bash (author:progrium stars:7949 forks:642 watchers:7949)
+7935-368 | ievms | https://github.com/xdissent/ievms | Automated installation of the Microsoft IE App Compat virtual machines (author:xdissent stars:7935 forks:368 watchers:7935)
+5929-544 | rbenv | https://github.com/sstephenson/rbenv | Groom your app’s Ruby environment (author:sstephenson stars:5929 forks:544 watchers:5929)
+5500-367 | git-extras | https://github.com/tj/git-extras | GIT utilities -- repo summary, repl, changelog population, author commit percentages and more (author:tj stars:5500 forks:367 watchers:5500)
+5086-447 | source-code-pro | https://github.com/adobe-fonts/source-code-pro | Monospaced font family for user interface and coding environments (author:adobe-fonts stars:5086 forks:447 watchers:5086)
+4967-538 | nvm | https://github.com/creationix/nvm | Node Version Manager - Simple bash script to manage multiple active node.js versions (author:creationix stars:4967 forks:538 watchers:4967)
+3904-320 | boot2docker | https://github.com/boot2docker/boot2docker | Lightweight Linux for Docker (author:boot2docker stars:3904 forks:320 watchers:3904)
+3522-192 | spark | https://github.com/holman/spark |  ▁▂▃▅▂▇ in your shell. (author:holman stars:3522 forks:192 watchers:3522)
+3469-795 | veewee | https://github.com/jedi4ever/veewee | Easing the building of vagrant boxes (author:jedi4ever stars:3469 forks:795 watchers:3469)
+3454-234 | browser-logos | https://github.com/alrra/browser-logos | :file_folder: Collection of high resolution web browser logos with transparent backgrounds (author:alrra stars:3454 forks:234 watchers:3454)
+3400-847 | laptop | https://github.com/thoughtbot/laptop | A shell script which turns your OS X laptop into an awesome development machine. (author:thoughtbot stars:3400 forks:847 watchers:3400)
+3328-310 | z | https://github.com/rupa/z | z is the new j, yo (author:rupa stars:3328 forks:310 watchers:3328)
+3281-1526 | prezto | https://github.com/sorin-ionescu/prezto | The configuration framework for Zsh (author:sorin-ionescu stars:3281 forks:1526 watchers:3281)
+2809-716 | rvm | https://github.com/wayneeseguin/rvm | Ruby enVironment (Version) Manager ( rvm ) ~ Monitor GitHub Issues ( https://github.com/wayneeseguin/rvm/issues/ ) for bug reports and fixes.  Fundraiser for mpapis: https://www.bountysource.com/fundraisers/489-rvm-2-0 (author:wayneeseguin stars:2809 forks:716 watchers:2809)
+2756-1722 | dotfiles | https://github.com/holman/dotfiles | @holman does dotfiles (author:holman stars:2756 forks:1722 watchers:2756)
+2742-258 | server-configs-nginx | https://github.com/h5bp/server-configs-nginx | Nginx HTTP server boilerplate configs (author:h5bp stars:2742 forks:258 watchers:2742)
+2691-364 | githug | https://github.com/Gazler/githug | Git your game on! (author:Gazler stars:2691 forks:364 watchers:2691)
+2647-420 | Dropbox-Uploader | https://github.com/andreafabrizi/Dropbox-Uploader | Dropbox Uploader is a BASH script which can be used to upload, download, list or delete files from Dropbox, an online file sharing, synchronization and backup service. (author:andreafabrizi stars:2647 forks:420 watchers:2647)
+2514-648 | bash-it | https://github.com/revans/bash-it | A community bash framework. (author:revans stars:2514 forks:648 watchers:2514)
+2459-66 | sshrc | https://github.com/Russell91/sshrc | bring your .bashrc, .vimrc, etc. with you when you ssh (author:Russell91 stars:2459 forks:66 watchers:2459)
+2264-240 | crouton | https://github.com/dnschneid/crouton | Chromium OS Universal Chroot Environment (author:dnschneid stars:2264 forks:240 watchers:2264)
+1992-135 | pyenv | https://github.com/yyuu/pyenv | Simple Python version management (author:yyuu stars:1992 forks:135 watchers:1992)
+1954-416 | ruby-build | https://github.com/sstephenson/ruby-build | Compile and install Ruby (author:sstephenson stars:1954 forks:416 watchers:1954)
+1938-180 | NodeOS | https://github.com/NodeOS/NodeOS | linux + node + npm (author:NodeOS stars:1938 forks:180 watchers:1938)
+1926-322 | riak | https://github.com/basho/riak | Riak is a decentralized datastore from Basho Technologies. (author:basho stars:1926 forks:322 watchers:1926)
+1887-360 | todo.txt-cli | https://github.com/ginatrapani/todo.txt-cli | A simple and extensible shell script for managing your todo.txt file. (author:ginatrapani stars:1887 forks:360 watchers:1887)
+1854-360 | fonts | https://github.com/powerline/fonts | Patched fonts for Powerline users. (author:powerline stars:1854 forks:360 watchers:1854)
+1783-66 | wemux | https://github.com/zolrath/wemux | Multi-User Tmux Made Easy (author:zolrath stars:1783 forks:66 watchers:1783)
+1742-149 | n | https://github.com/tj/n | Node version management (author:tj stars:1742 forks:149 watchers:1742)
+1679-396 | linuxgems | https://github.com/WilliamHackmore/linuxgems | A succinct cheat sheet for newbie linux coders and system administrators, documenting some of the more obscure and useful gems of linux lore. Intended to be viewed in emacs org-mode, or VimOrganizer, though any text editor will suffice. (author:WilliamHackmore stars:1679 forks:396 watchers:1679)
+1679-45 | fantasque-sans | https://github.com/belluzj/fantasque-sans | A font family with a great monospaced variant for programmers. (author:belluzj stars:1679 forks:45 watchers:1679)
+1564-83 | streisand | https://github.com/jlund/streisand | Streisand sets up a new server running L2TP/IPsec, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, and a Tor bridge. It also generates custom configuration instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists. (author:jlund stars:1564 forks:83 watchers:1564)
+1526-56 | ImageOptim-CLI | https://github.com/JamieMason/ImageOptim-CLI | Make optimisation of images part of your automated build process (author:JamieMason stars:1526 forks:56 watchers:1526)
+1465-152 | liquidprompt | https://github.com/nojhan/liquidprompt | A full-featured & carefully designed adaptive prompt for Bash & Zsh (author:nojhan stars:1465 forks:152 watchers:1465)
+1464-281 | tmux-powerline | https://github.com/erikw/tmux-powerline | Statusbar configuration for tmux that looks like vim-powerline and consist of dynamic segments. (author:erikw stars:1464 forks:281 watchers:1464)
+1459-43 | blackbox | https://github.com/StackExchange/blackbox | Safely store secrets in Git/Mercurial (author:StackExchange stars:1459 forks:43 watchers:1459)
+1425-357 | VVV | https://github.com/Varying-Vagrant-Vagrants/VVV | Varying Vagrant Vagrants is an evolving Vagrant configuration focused on WordPress development. (author:Varying-Vagrant-Vagrants stars:1425 forks:357 watchers:1425)
+1419-64 | osxfuse | https://github.com/osxfuse/osxfuse | FUSE for OS X allows you to extend OS X via third party file systems. (author:osxfuse stars:1419 forks:64 watchers:1419)
+1418-71 | babun | https://github.com/babun/babun | Babun - a Windows shell you will love! (author:babun stars:1418 forks:71 watchers:1418)
+1415-64 | resty | https://github.com/micha/resty | Little command line REST client that you can use in pipelines (bash or zsh). (author:micha stars:1415 forks:64 watchers:1415)
+1372-44 | fasd | https://github.com/clvv/fasd | Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v. (author:clvv stars:1372 forks:44 watchers:1372)
+1346-21 | tmux-resurrect | https://github.com/tmux-plugins/tmux-resurrect | Persists tmux environment across system restarts. (author:tmux-plugins stars:1346 forks:21 watchers:1346)
+1328-101 | zsh-syntax-highlighting | https://github.com/zsh-users/zsh-syntax-highlighting | Fish shell like syntax highlighting for Zsh. (author:zsh-users stars:1328 forks:101 watchers:1328)
+1328-113 | chruby | https://github.com/postmodern/chruby | Changes the current Ruby (author:postmodern stars:1328 forks:113 watchers:1328)
+1289-276 | git-ftp | https://github.com/resmo/git-ftp | Deprected: Project moved to https://github.com/git-ftp/git-ftp (author:resmo stars:1289 forks:276 watchers:1289)
+1287-432 | ansible-examples | https://github.com/ansible/ansible-examples | A few starter examples of ansible playbooks, to show features and how they work together.  See http://galaxy.ansible.com for example roles from the Ansible community for deploying many popular applications. (author:ansible stars:1287 forks:432 watchers:1287)
+1231-172 | pipework | https://github.com/jpetazzo/pipework | Software-Defined Networking tools for LXC (LinuX Containers) (author:jpetazzo stars:1231 forks:172 watchers:1231)
+1226-73 | bashstrap | https://github.com/barryclark/bashstrap | Bootstrap for your terminal. A quick way to spruce up OSX terminal. It cuts out the fluff, adds in timesaving features, and provides a solid foundation for customizing your terminal style. Based on Mathias Bynens epic dotfiles - https://github.com/mathiasbynens/dotfiles (author:barryclark stars:1226 forks:73 watchers:1226)
+1211-395 | rails-dev-box | https://github.com/rails/rails-dev-box | A virtual machine for Ruby on Rails core development (author:rails stars:1211 forks:395 watchers:1211)
+1200-301 | bento | https://github.com/opscode/bento | Modularized Packer definitions for building Vagrant baseboxes (author:opscode stars:1200 forks:301 watchers:1200)
+1193-73 | autoenv | https://github.com/kennethreitz/autoenv | Directory-based environments. (author:kennethreitz stars:1193 forks:73 watchers:1193)
+1145-218 | intellij-colors-solarized | https://github.com/jkaving/intellij-colors-solarized | Solarized Colorscheme for IntelliJ IDEA (author:jkaving stars:1145 forks:218 watchers:1145)
+1127-37 | drip | https://github.com/ninjudd/drip | Fast JVM launching without the hassle of persistent JVMs. (author:ninjudd stars:1127 forks:37 watchers:1127)
+1125-79 | bats | https://github.com/sstephenson/bats | Bash Automated Testing System (author:sstephenson stars:1125 forks:79 watchers:1125)
+1110-87 | sub | https://github.com/basecamp/sub | a delicious way to organize programs (author:basecamp stars:1110 forks:87 watchers:1110)
+1099-672 | git-achievements | https://github.com/icefox/git-achievements | Aquire achievements while using git. (author:icefox stars:1099 forks:672 watchers:1099)
+1099-363 | smarthosts | https://github.com/smarthosts/smarthosts | Smarthosts (author:smarthosts stars:1099 forks:363 watchers:1099)
+1075-245 | effectivescala | https://github.com/twitter/effectivescala | Twitter's Effective Scala Guide (author:twitter stars:1075 forks:245 watchers:1075)
+1069-83 | perf-tools | https://github.com/brendangregg/perf-tools | Performance analysis tools based on Linux perf_events (aka perf) and ftrace (author:brendangregg stars:1069 forks:83 watchers:1069)
+1064-364 | maven-android-sdk-deployer | https://github.com/simpligility/maven-android-sdk-deployer | A tool to install components of the Android SDK into a Maven repository or repository manager to use with the Android Maven Plugin, Gradle and other tools. (author:simpligility stars:1064 forks:364 watchers:1064)
+1061-180 | git-flow-completion | https://github.com/bobthecow/git-flow-completion | Bash, Zsh and fish completion support for git-flow. (author:bobthecow stars:1061 forks:180 watchers:1061)
+1057-54 | antigen | https://github.com/zsh-users/antigen | A plugin manager for zsh, inspired by oh-my-zsh and vundle. (author:zsh-users stars:1057 forks:54 watchers:1057)
+1053-79 | docker-osx | https://github.com/noplay/docker-osx | Fast and easy installation of Docker on OS X (author:noplay stars:1053 forks:79 watchers:1053)
+1047-297 | Vaprobash | https://github.com/fideloper/Vaprobash | Vagrant Provisioning Bash Scripts (author:fideloper stars:1047 forks:297 watchers:1047)
+1018-188 | ant-build-script | https://github.com/h5bp/ant-build-script | Ant build script intended for use with HTML5 Boilerplate. (author:h5bp stars:1018 forks:188 watchers:1018)
+1011-93 | scm_breeze | https://github.com/ndbroadbent/scm_breeze | Adds numbered shortcuts to the output git status, and much more (author:ndbroadbent stars:1011 forks:93 watchers:1011)
+976-94 | rpi-update | https://github.com/Hexxeh/rpi-update | An easier way to update the firmware of your Raspberry Pi (author:Hexxeh stars:976 forks:94 watchers:976)
+975-232 | gnome-terminal-colors-solarized | https://github.com/Anthony25/gnome-terminal-colors-solarized | Solarized Gnome Terminal colors, based on http://ethanschoonover.com/solarized (author:Anthony25 stars:975 forks:232 watchers:975)
+969-210 | oh-my-fish | https://github.com/bpinto/oh-my-fish | Framework for managing your fish shell configuration inspired by Oh My ZSH. (author:bpinto stars:969 forks:210 watchers:969)
+955-67 | source-sans-pro | https://github.com/adobe-fonts/source-sans-pro | Sans serif font family for user interface environments (author:adobe-fonts stars:955 forks:67 watchers:955)
+948-105 | git-subtree | https://github.com/apenwarr/git-subtree | An experimental alternative to the git-submodule command.  Merges and splits subtrees from your project into subprojects and back. (author:apenwarr stars:948 forks:105 watchers:948)
+935-119 | pure | https://github.com/sindresorhus/pure | Pretty, minimal and fast ZSH prompt (author:sindresorhus stars:935 forks:119 watchers:935)
+924-72 | gvm | https://github.com/moovweb/gvm | Go Version Manager (author:moovweb stars:924 forks:72 watchers:924)
+914-702 | devstack | https://github.com/openstack-dev/devstack | oneiric powered development environment for openstack (author:openstack-dev stars:914 forks:702 watchers:914)

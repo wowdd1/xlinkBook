@@ -1,38 +1,38 @@
-5952-927 | corefx | https://github.com/dotnet/corefx
-4684-1337 | SignalR | https://github.com/SignalR/SignalR
-3269-438 | SparkleShare | https://github.com/hbons/SparkleShare
-2842-1471 | mono | https://github.com/mono/mono
-2631-1000 | ServiceStack | https://github.com/ServiceStack/ServiceStack
-2578-669 | Nancy | https://github.com/NancyFx/Nancy
-2453-1399 | MonoGame | https://github.com/mono/MonoGame
-2315-895 | Psychson | https://github.com/adamcaudill/Psychson
-2295-638 | AutoMapper | https://github.com/AutoMapper/AutoMapper
-2202-809 | RestSharp | https://github.com/restsharp/RestSharp
-2197-892 | PushSharp | https://github.com/Redth/PushSharp
-1857-627 | dapper-dot-net | https://github.com/StackExchange/dapper-dot-net
-1667-271 | Opserver | https://github.com/opserver/Opserver
-1593-541 | OpenRA | https://github.com/OpenRA/OpenRA
-1420-619 | Newtonsoft.Json | https://github.com/JamesNK/Newtonsoft.Json
-1359-173 | VsVim | https://github.com/jaredpar/VsVim
-1322-277 | massive | https://github.com/robconery/massive
-1273-294 | ReactiveUI | https://github.com/reactiveui/ReactiveUI
-1260-547 | ravendb | https://github.com/ravendb/ravendb
-1243-628 | MahApps.Metro | https://github.com/MahApps/MahApps.Metro
-1233-160 | ATF | https://github.com/SonyWWS/ATF
-1210-358 | ILSpy | https://github.com/icsharpcode/ILSpy
-1207-524 | monodevelop | https://github.com/mono/monodevelop
-1170-36 | Rant | https://github.com/TheBerkin/Rant
-1145-318 | Mvc | https://github.com/aspnet/Mvc
-1132-332 | Ninject | https://github.com/ninject/Ninject
-1121-560 | fluent-nhibernate | https://github.com/jagregory/fluent-nhibernate
-1101-256 | EntityFramework | https://github.com/aspnet/EntityFramework
-1100-263 | MiniProfiler | https://github.com/SamSaffron/MiniProfiler
-1082-218 | scriptcs | https://github.com/scriptcs/scriptcs
-1080-462 | gitextensions | https://github.com/gitextensions/gitextensions
-1049-217 | ShareX | https://github.com/ShareX/ShareX
-1043-481 | JabbR | https://github.com/JabbR/JabbR
-1019-280 | Glimpse | https://github.com/Glimpse/Glimpse
-1004-431 | MvvmCross | https://github.com/MvvmCross/MvvmCross
-991-215 | Humanizer | https://github.com/MehdiK/Humanizer
-967-206 | Simple.Data | https://github.com/markrendle/Simple.Data
-927-414 | mongo-csharp-driver | https://github.com/mongodb/mongo-csharp-driver
+5988-936 | corefx | https://github.com/dotnet/corefx | This repository contains the foundational libraries that make up the .NET Core development stack. (author:dotnet stars:5988 forks:936 watchers:5988)
+4690-1337 | SignalR | https://github.com/SignalR/SignalR | Incredibly simple real-time web for .NET (author:SignalR stars:4690 forks:1337 watchers:4690)
+3269-437 | SparkleShare | https://github.com/hbons/SparkleShare | SparkleShare is an Open Source collaboration and sharing tool that is designed to keep things simple and to stay out of your way. It allows you to instantly sync with Git repositories and is available for Linux distributions, Mac and Windows. (author:hbons stars:3269 forks:437 watchers:3269)
+2847-1473 | mono | https://github.com/mono/mono | Mono open source ECMA CLI, C# and .NET implementation. (author:mono stars:2847 forks:1473 watchers:2847)
+2636-1000 | ServiceStack | https://github.com/ServiceStack/ServiceStack | Thoughtfully architected, obscenely fast, thoroughly enjoyable web services for all (author:ServiceStack stars:2636 forks:1000 watchers:2636)
+2582-669 | Nancy | https://github.com/NancyFx/Nancy | Lightweight, low-ceremony, framework for building HTTP based services on .Net and Mono (author:NancyFx stars:2582 forks:669 watchers:2582)
+2456-1401 | MonoGame | https://github.com/mono/MonoGame | One framework for creating powerful cross-platform games. (author:mono stars:2456 forks:1401 watchers:2456)
+2317-896 | Psychson | https://github.com/adamcaudill/Psychson | Phison 2251-03 (2303) Custom Firmware & Existing Firmware Patches (BadUSB) (author:adamcaudill stars:2317 forks:896 watchers:2317)
+2299-638 | AutoMapper | https://github.com/AutoMapper/AutoMapper | A convention-based object-object mapper in .NET.  (author:AutoMapper stars:2299 forks:638 watchers:2299)
+2208-809 | RestSharp | https://github.com/restsharp/RestSharp | Simple REST and HTTP API Client for .NET (author:restsharp stars:2208 forks:809 watchers:2208)
+2202-894 | PushSharp | https://github.com/Redth/PushSharp | A server-side library for sending Push Notifications to iOS (iPhone/iPad APNS), Android (C2DM and GCM - Google Cloud Message), Windows Phone, Windows 8, Amazon, Blackberry, and (soon) FirefoxOS devices! (author:Redth stars:2202 forks:894 watchers:2202)
+1864-630 | dapper-dot-net | https://github.com/StackExchange/dapper-dot-net | Dapper (author:StackExchange stars:1864 forks:630 watchers:1864)
+1666-272 | Opserver | https://github.com/opserver/Opserver | Stack Exchange's Monitoring System (author:opserver stars:1666 forks:272 watchers:1666)
+1595-541 | OpenRA | https://github.com/OpenRA/OpenRA | An open-source implementation of the Command & Conquer: Red Alert engine using .NET/Mono and OpenGL. Runs on Windows, Linux and Mac OS X. (author:OpenRA stars:1595 forks:541 watchers:1595)
+1427-621 | Newtonsoft.Json | https://github.com/JamesNK/Newtonsoft.Json | Json.NET is a popular high-performance JSON framework for .NET (author:JamesNK stars:1427 forks:621 watchers:1427)
+1361-173 | VsVim | https://github.com/jaredpar/VsVim | Vim Emulator Plugin for Visual Studio 2010+  (author:jaredpar stars:1361 forks:173 watchers:1361)
+1322-277 | massive | https://github.com/robconery/massive | A small, happy, data access tool that will love you forever. (author:robconery stars:1322 forks:277 watchers:1322)
+1280-296 | ReactiveUI | https://github.com/reactiveui/ReactiveUI | A MVVM framework that integrates with the Reactive Extensions for .NET to create elegant, testable User Interfaces that run on any mobile or desktop platform. Supports Xamarin.iOS, Xamarin.Android, Xamarin.Mac, WPF, Windows Forms, Windows Phone 8 and Windows Store apps. (author:reactiveui stars:1280 forks:296 watchers:1280)
+1261-547 | ravendb | https://github.com/ravendb/ravendb | A linq enabled document database for .NET (author:ravendb stars:1261 forks:547 watchers:1261)
+1245-629 | MahApps.Metro | https://github.com/MahApps/MahApps.Metro | A toolkit for creating Metro/Modern styled WPF apps. (author:MahApps stars:1245 forks:629 watchers:1245)
+1233-159 | ATF | https://github.com/SonyWWS/ATF | Authoring Tools Framework (ATF) is a set of C#/.NET components for making tools on Windows. ATF has been in continuous development in Sony Computer Entertainment's (SCE) Worldwide Studios central tools group since early 2005. ATF has been used by most SCE first party studios to make many custom tools such as Naughty Dog’s level editor and shader editor for The Last of Us, Guerrilla Games’ sequence editor for Killzone games (including the Killzone: Shadow Fall PS4 launch title), an animation blending tool at Santa Monica Studio, a level editor at Bend Studio, a visual state machine editor for Quantic Dream, sound editing tools, and many others. (author:SonyWWS stars:1233 forks:159 watchers:1233)
+1213-359 | ILSpy | https://github.com/icsharpcode/ILSpy | .NET Decompiler (author:icsharpcode stars:1213 forks:359 watchers:1213)
+1209-523 | monodevelop | https://github.com/mono/monodevelop | MonoDevelop is a cross platform IDE mostly aimed at Mono/.NET developers (author:mono stars:1209 forks:523 watchers:1209)
+1176-37 | Rant | https://github.com/TheBerkin/Rant | Procedural text generation language (author:TheBerkin stars:1176 forks:37 watchers:1176)
+1149-318 | Mvc | https://github.com/aspnet/Mvc | Model view controller framework for building dynamic web sites with clean separation of concerns, including the merged MVC, Web API, and Web Pages w/ Razor. (author:aspnet stars:1149 forks:318 watchers:1149)
+1133-333 | Ninject | https://github.com/ninject/Ninject | the ninja of .net dependency injectors (author:ninject stars:1133 forks:333 watchers:1133)
+1121-560 | fluent-nhibernate | https://github.com/jagregory/fluent-nhibernate | Fluent NHibernate! (author:jagregory stars:1121 forks:560 watchers:1121)
+1105-257 | EntityFramework | https://github.com/aspnet/EntityFramework | Microsoft's recommended data access technology for new applications in .NET. (author:aspnet stars:1105 forks:257 watchers:1105)
+1101-263 | MiniProfiler | https://github.com/SamSaffron/MiniProfiler | A simple but effective mini-profiler for ASP.NET MVC, ASP.NET and Ruby. (author:SamSaffron stars:1101 forks:263 watchers:1101)
+1082-218 | scriptcs | https://github.com/scriptcs/scriptcs | Write C# apps with a text editor, nuget and the power of Roslyn! (author:scriptcs stars:1082 forks:218 watchers:1082)
+1080-462 | gitextensions | https://github.com/gitextensions/gitextensions | GitExtensions is a shell extension, a Visual Studio 2008/2010/2012 plugin and a standalone Git repository tool. (author:gitextensions stars:1080 forks:462 watchers:1080)
+1058-219 | ShareX | https://github.com/ShareX/ShareX | ShareX is an open source program that lets you take screenshots or screencasts of any selected area with a single key, save them in your clipboard, hard disk or instantly upload them to over 40 different file hosting services. In addition to taking screenshots, it can upload images, text files and all other different file types. (author:ShareX stars:1058 forks:219 watchers:1058)
+1043-481 | JabbR | https://github.com/JabbR/JabbR | Collaborative chat done right (author:JabbR stars:1043 forks:481 watchers:1043)
+1021-281 | Glimpse | https://github.com/Glimpse/Glimpse | The open source diagnostics platform for the web (author:Glimpse stars:1021 forks:281 watchers:1021)
+1007-431 | MvvmCross | https://github.com/MvvmCross/MvvmCross | The Mvvm Platform for Xamarin.iOS, Xamarin.Android, WindowsPhone, WindowsStore, WPF and Mac. Includes databinding support for Android XML, for iOS XIBs and for MonoTouch.Dialog. (author:MvvmCross stars:1007 forks:431 watchers:1007)
+993-215 | Humanizer | https://github.com/MehdiK/Humanizer | Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities (author:MehdiK stars:993 forks:215 watchers:993)
+968-206 | Simple.Data | https://github.com/markrendle/Simple.Data | A light-weight, dynamic data access component for C# 4.0 (author:markrendle stars:968 forks:206 watchers:968)
+928-415 | mongo-csharp-driver | https://github.com/mongodb/mongo-csharp-driver |  (author:mongodb stars:928 forks:415 watchers:928)

@@ -1,96 +1,96 @@
-17830-3603 | docker | https://github.com/docker/docker
-10176-895 | lime | https://github.com/limetext/lime
-5990-374 | syncthing | https://github.com/syncthing/syncthing
-5971-582 | martini | https://github.com/go-martini/martini
-5504-860 | kubernetes | https://github.com/GoogleCloudPlatform/kubernetes
-5160-1976 | build-web-application-with-golang | https://github.com/astaxie/build-web-application-with-golang
-5043-541 | etcd | https://github.com/coreos/etcd
-5005-472 | hub | https://github.com/github/hub
-4974-343 | cayley | https://github.com/google/cayley
-4939-390 | gogs | https://github.com/gogits/gogs
-4901-227 | go | https://github.com/golang/go
-4541-681 | revel | https://github.com/revel/revel
-4182-412 | drone | https://github.com/drone/drone
-3950-297 | influxdb | https://github.com/influxdb/influxdb
-3873-268 | ngrok | https://github.com/inconshreveable/ngrok
-3715-375 | nsq | https://github.com/bitly/nsq
-3532-867 | beego | https://github.com/astaxie/beego
-3481-144 | websocketd | https://github.com/joewalnes/websocketd
-3428-629 | packer | https://github.com/mitchellh/packer
-3219-284 | groupcache | https://github.com/golang/groupcache
-3041-185 | flynn | https://github.com/flynn/flynn
-3010-266 | shipyard | https://github.com/shipyard/shipyard
-2935-191 | rocket | https://github.com/coreos/rocket
-2910-97 | textql | https://github.com/dinedal/textql
-2680-399 | hugo | https://github.com/spf13/hugo
-2657-195 | serf | https://github.com/hashicorp/serf
-2599-164 | zeus | https://github.com/burke/zeus
-2576-116 | weave | https://github.com/zettio/weave
-2574-98 | pgweb | https://github.com/sosedoff/pgweb
-2559-172 | cockroach | https://github.com/cockroachdb/cockroach
-2516-225 | consul | https://github.com/hashicorp/consul
-2250-194 | doozerd | https://github.com/ha/doozerd
-2216-49 | pup | https://github.com/EricChiang/pup
-2187-290 | web | https://github.com/hoisie/web
-2160-197 | godropbox | https://github.com/dropbox/godropbox
-2136-291 | goread | https://github.com/mjibson/goread
-2100-511 | Heartbleed | https://github.com/FiloSottile/Heartbleed
-2087-243 | gocode | https://github.com/nsf/gocode
-2081-94 | ga-beacon | https://github.com/igrigorik/ga-beacon
-2035-70 | alpaca | https://github.com/pksunkara/alpaca
-2029-141 | cli | https://github.com/codegangsta/cli
-2026-99 | vegeta | https://github.com/tsenart/vegeta
-1960-70 | peco | https://github.com/peco/peco
-1931-226 | vitess | https://github.com/youtube/vitess
-1894-77 | gopherjs | https://github.com/gopherjs/gopherjs
-1887-106 | gor | https://github.com/buger/gor
-1862-111 | goji | https://github.com/zenazn/goji
-1817-207 | terraform | https://github.com/hashicorp/terraform
-1813-88 | ui | https://github.com/andlabs/ui
-1809-164 | gin | https://github.com/gin-gonic/gin
-1769-136 | swarm | https://github.com/docker/swarm
-1769-213 | heka | https://github.com/mozilla-services/heka
-1733-99 | negroni | https://github.com/codegangsta/negroni
-1703-91 | boom | https://github.com/rakyll/boom
-1647-261 | codis | https://github.com/wandoulabs/codis
-1622-74 | bolt | https://github.com/boltdb/bolt
-1616-141 | cadvisor | https://github.com/google/cadvisor
-1577-131 | golearn | https://github.com/sjwhitworth/golearn
-1513-111 | GoSublime | https://github.com/DisposaBoy/GoSublime
-1482-80 | libchan | https://github.com/docker/libchan
-1462-101 | godep | https://github.com/tools/godep
-1434-149 | fleet | https://github.com/coreos/fleet
-1388-199 | freegeoip | https://github.com/fiorix/freegeoip
-1325-205 | cow | https://github.com/cyfdecyf/cow
-1302-186 | gorp | https://github.com/coopernurse/gorp
-1290-135 | tsuru | https://github.com/tsuru/tsuru
-1268-52 | delve | https://github.com/derekparker/delve
-1266-82 | otto | https://github.com/robertkrimen/otto
-1229-96 | goconvey | https://github.com/smartystreets/goconvey
-1214-62 | bleve | https://github.com/blevesearch/bleve
-1210-127 | gorm | https://github.com/jinzhu/gorm
-1191-117 | confd | https://github.com/kelseyhightower/confd
-1188-179 | pq | https://github.com/lib/pq
-1184-144 | raft | https://github.com/goraft/raft
-1182-76 | packetbeat | https://github.com/packetbeat/packetbeat
-1166-102 | qml | https://github.com/go-qml/qml
-1149-110 | camlistore | https://github.com/camlistore/camlistore
-1143-125 | goquery | https://github.com/PuerkitoBio/goquery
-1112-55 | goagain | https://github.com/rcrowley/goagain
-1102-258 | mysql | https://github.com/go-sql-driver/mysql
-1096-37 | elvish | https://github.com/elves/elvish
-1073-152 | blackfriday | https://github.com/russross/blackfriday
-1071-90 | tiedot | https://github.com/HouzuoGuo/tiedot
-1064-90 | go-json-rest | https://github.com/ant0ine/go-json-rest
-1056-40 | inspeqtor | https://github.com/mperham/inspeqtor
-1053-157 | redigo | https://github.com/garyburd/redigo
-1047-178 | mux | https://github.com/gorilla/mux
-1043-64 | httprouter | https://github.com/julienschmidt/httprouter
-1041-386 | the-way-to-go_ZH_CN | https://github.com/Unknwon/the-way-to-go_ZH_CN
-1037-29 | roshi | https://github.com/soundcloud/roshi
-1001-137 | skynet | https://github.com/skynetservices/skynet
-989-52 | goworker | https://github.com/benmanns/goworker
-930-259 | logstash-forwarder | https://github.com/elasticsearch/logstash-forwarder
-919-288 | go-fundamental-programming | https://github.com/Unknwon/go-fundamental-programming
-911-81 | streamtools | https://github.com/nytlabs/streamtools
-904-40 | coop | https://github.com/rakyll/coop
+17886-3616 | docker | https://github.com/docker/docker | Docker - the open-source application container engine (author:docker stars:17886 forks:3616 watchers:17886)
+10188-894 | lime | https://github.com/limetext/lime | Open source API-compatible alternative to Sublime Text (author:limetext stars:10188 forks:894 watchers:10188)
+6005-376 | syncthing | https://github.com/syncthing/syncthing | Open Source Continuous File Synchronization (author:syncthing stars:6005 forks:376 watchers:6005)
+5982-582 | martini | https://github.com/go-martini/martini | Classy web framework for Go (author:go-martini stars:5982 forks:582 watchers:5982)
+5527-864 | kubernetes | https://github.com/GoogleCloudPlatform/kubernetes | Container Cluster Manager (author:GoogleCloudPlatform stars:5527 forks:864 watchers:5527)
+5180-1979 | build-web-application-with-golang | https://github.com/astaxie/build-web-application-with-golang | A golang ebook intro how to build a web with golang (author:astaxie stars:5180 forks:1979 watchers:5180)
+5063-542 | etcd | https://github.com/coreos/etcd | A highly-available key value store for shared configuration and service discovery (author:coreos stars:5063 forks:542 watchers:5063)
+5019-472 | hub | https://github.com/github/hub | hub helps you win at git. (author:github stars:5019 forks:472 watchers:5019)
+4983-344 | cayley | https://github.com/google/cayley | An open-source graph database (author:google stars:4983 forks:344 watchers:4983)
+4960-234 | go | https://github.com/golang/go | The Go programming language (author:golang stars:4960 forks:234 watchers:4960)
+4953-393 | gogs | https://github.com/gogits/gogs | Gogs(Go Git Service) is a painless self-hosted Git Service written in Go. (author:gogits stars:4953 forks:393 watchers:4953)
+4555-682 | revel | https://github.com/revel/revel | A high productivity, full-stack web framework for the Go language. (author:revel stars:4555 forks:682 watchers:4555)
+4189-412 | drone | https://github.com/drone/drone | Drone is a Continuous Integration platform built on Docker, written in Go (author:drone stars:4189 forks:412 watchers:4189)
+3960-305 | influxdb | https://github.com/influxdb/influxdb | Scalable datastore for metrics, events, and real-time analytics (author:influxdb stars:3960 forks:305 watchers:3960)
+3888-271 | ngrok | https://github.com/inconshreveable/ngrok | Introspected tunnels to localhost (author:inconshreveable stars:3888 forks:271 watchers:3888)
+3736-376 | nsq | https://github.com/bitly/nsq | A realtime distributed messaging platform (author:bitly stars:3736 forks:376 watchers:3736)
+3543-869 | beego | https://github.com/astaxie/beego | beego is an open-source, high-performance web framework for the Go programming language. (author:astaxie stars:3543 forks:869 watchers:3543)
+3483-144 | websocketd | https://github.com/joewalnes/websocketd | Turn any program that uses STDIN/STDOUT into a WebSocket server. Like inetd, but for WebSockets.  (author:joewalnes stars:3483 forks:144 watchers:3483)
+3433-633 | packer | https://github.com/mitchellh/packer | Packer is a tool for creating identical machine images for multiple platforms from a single source configuration. (author:mitchellh stars:3433 forks:633 watchers:3433)
+3222-284 | groupcache | https://github.com/golang/groupcache | groupcache is a caching and cache-filling library, intended as a replacement for memcached in many cases. (author:golang stars:3222 forks:284 watchers:3222)
+3059-184 | flynn | https://github.com/flynn/flynn | A next generation open source platform as a service (PaaS) (author:flynn stars:3059 forks:184 watchers:3059)
+3016-268 | shipyard | https://github.com/shipyard/shipyard | Composable Docker Management (author:shipyard stars:3016 forks:268 watchers:3016)
+2954-195 | rocket | https://github.com/coreos/rocket | App Container runtime (author:coreos stars:2954 forks:195 watchers:2954)
+2911-97 | textql | https://github.com/dinedal/textql | Execute SQL against structured text like CSV or TSV (author:dinedal stars:2911 forks:97 watchers:2911)
+2691-400 | hugo | https://github.com/spf13/hugo | A Fast and Flexible Static Site Generator built with love by spf13 in GoLang (author:spf13 stars:2691 forks:400 watchers:2691)
+2660-195 | serf | https://github.com/hashicorp/serf | Service orchestration and management tool. (author:hashicorp stars:2660 forks:195 watchers:2660)
+2601-165 | zeus | https://github.com/burke/zeus | Boot any rails app in under a second. (author:burke stars:2601 forks:165 watchers:2601)
+2583-115 | weave | https://github.com/zettio/weave | The Docker Network (author:zettio stars:2583 forks:115 watchers:2583)
+2577-98 | pgweb | https://github.com/sosedoff/pgweb | Web-based PostgreSQL database browser (author:sosedoff stars:2577 forks:98 watchers:2577)
+2562-171 | cockroach | https://github.com/cockroachdb/cockroach | A Scalable, Geo-Replicated, Transactional Datastore (author:cockroachdb stars:2562 forks:171 watchers:2562)
+2524-226 | consul | https://github.com/hashicorp/consul | Consul is a tool for service discovery, monitoring and configuration. (author:hashicorp stars:2524 forks:226 watchers:2524)
+2253-194 | doozerd | https://github.com/ha/doozerd | A consistent distributed data store. (author:ha stars:2253 forks:194 watchers:2253)
+2216-49 | pup | https://github.com/EricChiang/pup | Parsing HTML at the command line (author:EricChiang stars:2216 forks:49 watchers:2216)
+2188-290 | web | https://github.com/hoisie/web | The easiest way to create web applications with Go (author:hoisie stars:2188 forks:290 watchers:2188)
+2166-198 | godropbox | https://github.com/dropbox/godropbox | Common libraries for writing Go services/applications. (author:dropbox stars:2166 forks:198 watchers:2166)
+2137-291 | goread | https://github.com/mjibson/goread | google reader clone in go on app engine (author:mjibson stars:2137 forks:291 watchers:2137)
+2100-511 | Heartbleed | https://github.com/FiloSottile/Heartbleed | A checker (site and tool) for CVE-2014-0160 (author:FiloSottile stars:2100 forks:511 watchers:2100)
+2091-242 | gocode | https://github.com/nsf/gocode | An autocompletion daemon for the Go programming language (author:nsf stars:2091 forks:242 watchers:2091)
+2082-93 | ga-beacon | https://github.com/igrigorik/ga-beacon | Google Analytics collector-as-a-service (using GA measurement protocol). (author:igrigorik stars:2082 forks:93 watchers:2082)
+2041-141 | cli | https://github.com/codegangsta/cli | A small package for building command line apps in Go (author:codegangsta stars:2041 forks:141 watchers:2041)
+2035-70 | alpaca | https://github.com/pksunkara/alpaca | Given a web API, Generate client libraries in node, php, python, ruby (author:pksunkara stars:2035 forks:70 watchers:2035)
+2032-99 | vegeta | https://github.com/tsenart/vegeta | HTTP load testing tool and library. It's over 9000! (author:tsenart stars:2032 forks:99 watchers:2032)
+1961-70 | peco | https://github.com/peco/peco | Simplistic interactive filtering tool (author:peco stars:1961 forks:70 watchers:1961)
+1935-227 | vitess | https://github.com/youtube/vitess | vitess provides servers and tools which facilitate scaling of MySQL databases for large scale web services. (author:youtube stars:1935 forks:227 watchers:1935)
+1895-77 | gopherjs | https://github.com/gopherjs/gopherjs | A compiler from Go (golang.org) to JavaScript for running Go code in a browser (author:gopherjs stars:1895 forks:77 watchers:1895)
+1887-106 | gor | https://github.com/buger/gor | HTTP traffic replay in real-time. Replay traffic from production to staging and dev environments.   (author:buger stars:1887 forks:106 watchers:1887)
+1868-111 | goji | https://github.com/zenazn/goji | Goji is a minimalistic web framework for Golang that's high in antioxidants (author:zenazn stars:1868 forks:111 watchers:1868)
+1823-165 | gin | https://github.com/gin-gonic/gin | Gin is a web framework written in Golang. It features a Martini-like API with much better performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin. (author:gin-gonic stars:1823 forks:165 watchers:1823)
+1820-207 | terraform | https://github.com/hashicorp/terraform | Terraform is a tool for building, changing, and combining infrastructure safely and efficiently. (author:hashicorp stars:1820 forks:207 watchers:1820)
+1817-88 | ui | https://github.com/andlabs/ui | Platform-native GUI library for Go. (author:andlabs stars:1817 forks:88 watchers:1817)
+1781-137 | swarm | https://github.com/docker/swarm | Swarm: a Docker-native clustering system (author:docker stars:1781 forks:137 watchers:1781)
+1772-213 | heka | https://github.com/mozilla-services/heka | Data collection and processing made easy. (author:mozilla-services stars:1772 forks:213 watchers:1772)
+1741-100 | negroni | https://github.com/codegangsta/negroni | Idiomatic HTTP Middleware for Golang (author:codegangsta stars:1741 forks:100 watchers:1741)
+1706-91 | boom | https://github.com/rakyll/boom | HTTP(S) load generator, ApacheBench (ab) replacement, written in Go (author:rakyll stars:1706 forks:91 watchers:1706)
+1672-267 | codis | https://github.com/wandoulabs/codis | redis cluster powered by go (author:wandoulabs stars:1672 forks:267 watchers:1672)
+1633-74 | bolt | https://github.com/boltdb/bolt | A low-level key/value database for Go. (author:boltdb stars:1633 forks:74 watchers:1633)
+1623-142 | cadvisor | https://github.com/google/cadvisor | Analyzes resource usage and performance characteristics of running containers. (author:google stars:1623 forks:142 watchers:1623)
+1586-131 | golearn | https://github.com/sjwhitworth/golearn | Machine Learning for Go (author:sjwhitworth stars:1586 forks:131 watchers:1586)
+1513-112 | GoSublime | https://github.com/DisposaBoy/GoSublime | A  Golang plugin collection for the text editor SublimeText 2 providing code completion and other IDE-like features. (author:DisposaBoy stars:1513 forks:112 watchers:1513)
+1483-80 | libchan | https://github.com/docker/libchan | Like Go channels over the network (author:docker stars:1483 forks:80 watchers:1483)
+1471-101 | godep | https://github.com/tools/godep | dependency tool for go (author:tools stars:1471 forks:101 watchers:1471)
+1438-150 | fleet | https://github.com/coreos/fleet | A Distributed init System (author:coreos stars:1438 forks:150 watchers:1438)
+1393-200 | freegeoip | https://github.com/fiorix/freegeoip | IP geolocation web server (author:fiorix stars:1393 forks:200 watchers:1393)
+1330-206 | cow | https://github.com/cyfdecyf/cow | HTTP proxy written in Go. COW can automatically identify blocked sites and use parent proxies to access. (author:cyfdecyf stars:1330 forks:206 watchers:1330)
+1306-187 | gorp | https://github.com/coopernurse/gorp | ORM-ish library for Go (author:coopernurse stars:1306 forks:187 watchers:1306)
+1292-135 | tsuru | https://github.com/tsuru/tsuru | Open source Platform as a Service (PaaS). (author:tsuru stars:1292 forks:135 watchers:1292)
+1277-52 | delve | https://github.com/derekparker/delve | Go debugger (author:derekparker stars:1277 forks:52 watchers:1277)
+1269-81 | otto | https://github.com/robertkrimen/otto | A JavaScript interpreter in Go (golang) (author:robertkrimen stars:1269 forks:81 watchers:1269)
+1240-96 | goconvey | https://github.com/smartystreets/goconvey | Go testing in the browser. Integrates with `go test`. Write behavioral tests in Go. (author:smartystreets stars:1240 forks:96 watchers:1240)
+1216-127 | gorm | https://github.com/jinzhu/gorm | The fantastic ORM library for Golang, aims to be developer friendly (author:jinzhu stars:1216 forks:127 watchers:1216)
+1215-63 | bleve | https://github.com/blevesearch/bleve | A modern text indexing library for go (author:blevesearch stars:1215 forks:63 watchers:1215)
+1200-117 | confd | https://github.com/kelseyhightower/confd | Manage local application configuration files using templates and data from etcd or consul (author:kelseyhightower stars:1200 forks:117 watchers:1200)
+1199-179 | pq | https://github.com/lib/pq | Pure Go Postgres driver for database/sql (author:lib stars:1199 forks:179 watchers:1199)
+1185-144 | raft | https://github.com/goraft/raft | A Go implementation of the Raft distributed consensus protocol. (author:goraft stars:1185 forks:144 watchers:1185)
+1183-76 | packetbeat | https://github.com/packetbeat/packetbeat | Open Source Application Monitoring (author:packetbeat stars:1183 forks:76 watchers:1183)
+1169-102 | qml | https://github.com/go-qml/qml | QML support for the Go language (author:go-qml stars:1169 forks:102 watchers:1169)
+1153-111 | camlistore | https://github.com/camlistore/camlistore | Camlistore is your personal storage system for life: a way of storing, syncing, sharing, modelling and backing up content. (author:camlistore stars:1153 forks:111 watchers:1153)
+1148-125 | goquery | https://github.com/PuerkitoBio/goquery | A little like that j-thing, only in Go. (author:PuerkitoBio stars:1148 forks:125 watchers:1148)
+1115-55 | goagain | https://github.com/rcrowley/goagain | Zero-downtime restarts in Go (author:rcrowley stars:1115 forks:55 watchers:1115)
+1108-259 | mysql | https://github.com/go-sql-driver/mysql | Go-MySQL-Driver is a lightweight and fast MySQL-Driver for Go's (golang) database/sql package (author:go-sql-driver stars:1108 forks:259 watchers:1108)
+1097-37 | elvish | https://github.com/elves/elvish | An experimental Unix shell (author:elves stars:1097 forks:37 watchers:1097)
+1077-153 | blackfriday | https://github.com/russross/blackfriday | Blackfriday: a markdown processor for Go (author:russross stars:1077 forks:153 watchers:1077)
+1072-91 | go-json-rest | https://github.com/ant0ine/go-json-rest | A quick and easy way to setup a RESTful JSON API (author:ant0ine stars:1072 forks:91 watchers:1072)
+1071-90 | tiedot | https://github.com/HouzuoGuo/tiedot | Your NoSQL database powered by Golang (author:HouzuoGuo stars:1071 forks:90 watchers:1071)
+1059-40 | inspeqtor | https://github.com/mperham/inspeqtor | Monitor your application infrastructure! (author:mperham stars:1059 forks:40 watchers:1059)
+1056-157 | redigo | https://github.com/garyburd/redigo | Go client for Redis (author:garyburd stars:1056 forks:157 watchers:1056)
+1050-178 | mux | https://github.com/gorilla/mux | A powerful URL router and dispatcher for golang. (author:gorilla stars:1050 forks:178 watchers:1050)
+1047-65 | httprouter | https://github.com/julienschmidt/httprouter | A high performance HTTP request router that scales well (author:julienschmidt stars:1047 forks:65 watchers:1047)
+1046-387 | the-way-to-go_ZH_CN | https://github.com/Unknwon/the-way-to-go_ZH_CN | 《The Way to Go》中文译本，中文正式名《Go入门指南》 (author:Unknwon stars:1046 forks:387 watchers:1046)
+1039-29 | roshi | https://github.com/soundcloud/roshi | Roshi is a large-scale CRDT set implementation for timestamped events. (author:soundcloud stars:1039 forks:29 watchers:1039)
+1005-137 | skynet | https://github.com/skynetservices/skynet | Skynet is a framework for distributed services in Go. (author:skynetservices stars:1005 forks:137 watchers:1005)
+989-52 | goworker | https://github.com/benmanns/goworker | goworker is a Go-based background worker that runs 10 to 100,000* times faster than Ruby-based workers. (author:benmanns stars:989 forks:52 watchers:989)
+936-259 | logstash-forwarder | https://github.com/elasticsearch/logstash-forwarder | An experiment to cut logs in preparation for processing elsewhere. (author:elasticsearch stars:936 forks:259 watchers:936)
+922-289 | go-fundamental-programming | https://github.com/Unknwon/go-fundamental-programming | 《Go编程基础》是一套针对 Google 出品的 Go 语言的视频语音教程，主要面向新手级别的学习者。 (author:Unknwon stars:922 forks:289 watchers:922)
+912-81 | streamtools | https://github.com/nytlabs/streamtools | tools for working with streams of data (author:nytlabs stars:912 forks:81 watchers:912)
+904-40 | coop | https://github.com/rakyll/coop | Cheat sheet for some of the common concurrent flows in Go (author:rakyll stars:904 forks:40 watchers:904)

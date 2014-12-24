@@ -6,7 +6,7 @@ usage:
 
 -f: filename or dirname
 
--s: output with collor
+-s: output with color
 
 -d: output the description
 
@@ -103,6 +103,27 @@ the output would looks like this:
     +-----------+----------------------------------+---------+------------+---------+---------------------------+
 
     Total 96 records, File: db/eecs/github/go-github2014
+
+if you provide the -d option, it will output the describe info:
+
+    +---------+------------------------------------------------------------------------------------------------------------------------+---------+------------------------------------------------------------------------------------------------------------------------+
+    |id       |title                                                                                                                   |id       |title                                                                                                                   |
+    +---------+------------------------------------------------------------------------------------------------------------------------+---------+------------------------------------------------------------------------------------------------------------------------+
+    |3000-940 | otp                                                                                                                    |1177-303 | mochiweb                                                                                                               |
+    |         | Erlang/OTP (author:erlang stars:3000 forks:940 watchers:3000)                                                          |         | MochiWeb is an Erlang library for building lightweight HTTP servers. (author:mochi stars:1177 forks:303 watchers:1177) |
+    |         |                                                                                                                        |         |                                                                                                                        |
+    |1852-503 | cowboy                                                                                                                 |1035-267 | rebar                                                                                                                  |
+    |         | Small, fast, modular HTTP server written in Erlang. (author:ninenines stars:1852 forks:503 watchers:1852)              |         | ATTENTION: Please find the canonical repository here:  (author:basho stars:1035 forks:267 watchers:1035)               |
+    |         |                                                                                                                        |         |                                                                                                                        |
+    |1360-451 | ejabberd                                                                                                               |1023-186 | disco                                                                                                                  |
+    |         | Robust and scalable Jabber / XMPP Instant Messaging platform (author:processone stars:1360 forks:451 watchers:1360)    |         | a Map/Reduce framework for distributed computing (author:discoproject stars:1023 forks:186 watchers:1023)              |
+    |         |                                                                                                                        |         |                                                                                                                        |
+    |1182-233 | ChicagoBoss                                                                                                            |1014-212 | webmachine                                                                                                             |
+    |         | Erlang web MVC, now featuring Comet (author:ChicagoBoss stars:1182 forks:233 watchers:1182)                            |         | A REST-based system for building web applications.  (author:basho stars:1014 forks:212 watchers:1014)                  |
+    |         |                                                                                                                        |         |                                                                                                                        |
+    +---------+------------------------------------------------------------------------------------------------------------------------+---------+------------------------------------------------------------------------------------------------------------------------+
+
+    Total 8 records, File: db/eecs/github/erlang-github2014
 
 
 upgrade db: 

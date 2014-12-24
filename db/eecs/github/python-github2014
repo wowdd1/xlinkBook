@@ -1,100 +1,100 @@
-12597-726 | httpie | https://github.com/jakubroztocil/httpie
-12308-4831 | django | https://github.com/django/django
-11990-1940 | requests | https://github.com/kennethreitz/requests
-11962-3284 | flask | https://github.com/mitsuhiko/flask
-8811-2754 | ansible | https://github.com/ansible/ansible
-8301-1157 | awesome-python | https://github.com/vinta/awesome-python
-8268-2321 | tornado | https://github.com/tornadoweb/tornado
-7893-2334 | the-swift-programming-language-in-chinese | https://github.com/numbbbbb/the-swift-programming-language-in-chinese
-7855-1603 | reddit | https://github.com/reddit/reddit
-7722-1512 | youtube-dl | https://github.com/rg3/youtube-dl
-6799-1900 | scrapy | https://github.com/scrapy/scrapy
-6780-1489 | Probabilistic-Programming-and-Bayesian-Methods-for-Hackers | https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
-6249-684 | YouCompleteMe | https://github.com/Valloric/YouCompleteMe
-6174-1971 | python-guide | https://github.com/kennethreitz/python-guide
-6132-740 | sentry | https://github.com/getsentry/sentry
-5410-1590 | ipython | https://github.com/ipython/ipython
-5290-548 | Mailpile | https://github.com/mailpile/Mailpile
-4856-323 | sshuttle | https://github.com/apenwarr/sshuttle
-4618-2060 | goagent | https://github.com/goagent/goagent
-4547-849 | fabric | https://github.com/fabric/fabric
-4500-905 | shadowsocks | https://github.com/clowwindy/shadowsocks
-4458-1841 | salt | https://github.com/saltstack/salt
-4375-1533 | boto | https://github.com/boto/boto
-4309-872 | 500lines | https://github.com/aosabook/500lines
-4258-1094 | python-patterns | https://github.com/faif/python-patterns
-4113-980 | pelican | https://github.com/getpelican/pelican
-4033-326 | fig | https://github.com/docker/fig
-3967-652 | awesome-machine-learning | https://github.com/josephmisiti/awesome-machine-learning
-3778-1313 | pandas | https://github.com/pydata/pandas
-3554-486 | deis | https://github.com/deis/deis
-3520-237 | huxley | https://github.com/facebookarchive/huxley
-3505-350 | powerline | https://github.com/powerline/powerline
-3470-509 | beets | https://github.com/sampsyo/beets
-3447-214 | bup | https://github.com/bup/bup
-3402-135 | legit | https://github.com/kennethreitz/legit
-3319-1017 | django-rest-framework | https://github.com/tomchristie/django-rest-framework
-3303-297 | ajenti | https://github.com/Eugeny/ajenti
-3243-541 | pyspider | https://github.com/binux/pyspider
-3242-168 | mailinabox | https://github.com/mail-in-a-box/mailinabox
-3240-159 | ngxtop | https://github.com/lebinh/ngxtop
-3198-763 | webpy | https://github.com/webpy/webpy
-3194-226 | docopt | https://github.com/docopt/docopt
-3142-1197 | django-cms | https://github.com/divio/django-cms
-3123-94 | stellar | https://github.com/fastmonkeys/stellar
-3113-1057 | celery | https://github.com/celery/celery
-3110-131 | Gooey | https://github.com/chriskiehl/Gooey
-3104-296 | SublimeCodeIntel | https://github.com/SublimeCodeIntel/SublimeCodeIntel
-2938-674 | redis-py | https://github.com/andymccurdy/redis-py
-2918-1904 | Sick-Beard | https://github.com/midgetspy/Sick-Beard
-2904-584 | django-debug-toolbar | https://github.com/django-debug-toolbar/django-debug-toolbar
-2822-512 | django-old | https://github.com/django/django-old
-2792-397 | pattern | https://github.com/clips/pattern
-2763-338 | portia | https://github.com/scrapinghub/portia
-2688-529 | bottle | https://github.com/bottlepy/bottle
-2663-623 | sqlmap | https://github.com/sqlmapproject/sqlmap
-2660-174 | autojump | https://github.com/joelthelion/autojump
-2639-214 | glances | https://github.com/nicolargo/glances
-2631-262 | faker | https://github.com/joke2k/faker
-2626-919 | django-tastypie | https://github.com/toastdriven/django-tastypie
-2604-197 | localtunnel | https://github.com/progrium/localtunnel
-2603-660 | nupic | https://github.com/numenta/nupic
-2602-625 | kivy | https://github.com/kivy/kivy
-2563-190 | pyston | https://github.com/dropbox/pyston
-2549-165 | chisel | https://github.com/facebook/chisel
-2547-212 | howdoi | https://github.com/gleitz/howdoi
-2547-157 | GitGutter | https://github.com/jisaacks/GitGutter
-2541-196 | sh | https://github.com/amoffat/sh
-2539-143 | Flashlight | https://github.com/nate-parrott/Flashlight
-2534-173 | quietnet | https://github.com/Katee/quietnet
-2511-228 | thumbor | https://github.com/thumbor/thumbor
-2477-131 | q | https://github.com/harelba/q
-2386-295 | aws-cli | https://github.com/aws/aws-cli
-2381-834 | tweepy | https://github.com/tweepy/tweepy
-2379-735 | jieba | https://github.com/fxsjy/jieba
-2355-425 | iOS-Universal-Framework | https://github.com/kstenerud/iOS-Universal-Framework
-2348-428 | Iconic | https://github.com/somerandomdude/Iconic
-2309-162 | glue | https://github.com/jorgebastida/glue
-2241-90 | SublimeWebInspector | https://github.com/sokolovstas/SublimeWebInspector
-2180-477 | python-mode | https://github.com/klen/python-mode
-2156-728 | django-social-auth | https://github.com/omab/django-social-auth
-2119-267 | wagtail | https://github.com/torchbox/wagtail
-2119-1033 | matplotlib | https://github.com/matplotlib/matplotlib
-2117-225 | mackup | https://github.com/lra/mackup
-2116-435 | gunicorn | https://github.com/benoitc/gunicorn
-2104-855 | python-oauth2 | https://github.com/simplegeo/python-oauth2
-2099-456 | Minecraft | https://github.com/fogleman/Minecraft
-2099-421 | jinja2 | https://github.com/mitsuhiko/jinja2
-2096-460 | django-extensions | https://github.com/django-extensions/django-extensions
-2085-184 | explainshell | https://github.com/idank/explainshell
-2070-160 | arrow | https://github.com/crsmithdev/arrow
-2049-190 | TextBlob | https://github.com/sloria/TextBlob
-2045-238 | baseimage-docker | https://github.com/phusion/baseimage-docker
-2023-217 | alternative-internet | https://github.com/redecentralize/alternative-internet
-2015-149 | murder | https://github.com/lg/murder
-1985-752 | mezzanine | https://github.com/stephenmcd/mezzanine
-1938-693 | coursera | https://github.com/coursera-dl/coursera
-1935-976 | python_koans | https://github.com/gregmalcolm/python_koans
-1926-281 | sublime-text-git | https://github.com/kemayo/sublime-text-git
-1925-77 | storm | https://github.com/emre/storm
-1914-324 | package_control | https://github.com/wbond/package_control
+12617-728 | httpie | https://github.com/jakubroztocil/httpie | HTTPie is a command line HTTP client, a user-friendly cURL replacement. (author:jakubroztocil stars:12617 forks:728 watchers:12617)
+12326-4839 | django | https://github.com/django/django | The Web framework for perfectionists with deadlines. (author:django stars:12326 forks:4839 watchers:12326)
+12008-1944 | requests | https://github.com/kennethreitz/requests | Python HTTP Requests for Humans™. (author:kennethreitz stars:12008 forks:1944 watchers:12008)
+11985-3290 | flask | https://github.com/mitsuhiko/flask | A microframework based on Werkzeug, Jinja2 and good intentions (author:mitsuhiko stars:11985 forks:3290 watchers:11985)
+8830-2756 | ansible | https://github.com/ansible/ansible | Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid writing scripts or custom code to deploy and update your applications— automate in a language that approaches plain English, using SSH, with no agents to install on remote systems. (author:ansible stars:8830 forks:2756 watchers:8830)
+8326-1159 | awesome-python | https://github.com/vinta/awesome-python | A curated list of awesome Python frameworks, libraries and software (author:vinta stars:8326 forks:1159 watchers:8326)
+8278-2324 | tornado | https://github.com/tornadoweb/tornado | Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. (author:tornadoweb stars:8278 forks:2324 watchers:8278)
+7907-2339 | the-swift-programming-language-in-chinese | https://github.com/numbbbbb/the-swift-programming-language-in-chinese | 中文版 Apple 官方 Swift 教程《The Swift Programming Language》 (author:numbbbbb stars:7907 forks:2339 watchers:7907)
+7863-1603 | reddit | https://github.com/reddit/reddit | the code that powers reddit.com (author:reddit stars:7863 forks:1603 watchers:7863)
+7746-1520 | youtube-dl | https://github.com/rg3/youtube-dl | Small command-line program to download videos from YouTube.com and other video sites (author:rg3 stars:7746 forks:1520 watchers:7746)
+6819-1908 | scrapy | https://github.com/scrapy/scrapy | Scrapy, a fast high-level screen scraping and web crawling framework for Python. (author:scrapy stars:6819 forks:1908 watchers:6819)
+6787-1492 | Probabilistic-Programming-and-Bayesian-Methods-for-Hackers | https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers | aka "Bayesian Methods for Hackers": An introduction to Bayesian methods + probabilistic programming with a computation/understanding-first, mathematics-second point of view. All in pure Python ;)   (author:CamDavidsonPilon stars:6787 forks:1492 watchers:6787)
+6260-685 | YouCompleteMe | https://github.com/Valloric/YouCompleteMe | A code-completion engine for Vim (author:Valloric stars:6260 forks:685 watchers:6260)
+6193-1979 | python-guide | https://github.com/kennethreitz/python-guide | Python best practices guidebook, written for Humans.  (author:kennethreitz stars:6193 forks:1979 watchers:6193)
+6141-740 | sentry | https://github.com/getsentry/sentry | Sentry is a realtime, platform-agnostic error logging and aggregation platform (author:getsentry stars:6141 forks:740 watchers:6141)
+5418-1591 | ipython | https://github.com/ipython/ipython | Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc. (author:ipython stars:5418 forks:1591 watchers:5418)
+5297-549 | Mailpile | https://github.com/mailpile/Mailpile | A free & open modern, fast email client with user-friendly encryption and privacy features (author:mailpile stars:5297 forks:549 watchers:5297)
+4864-323 | sshuttle | https://github.com/apenwarr/sshuttle | Transparent proxy server that works as a poor man's VPN.  Forwards over ssh.  Doesn't require admin.  Works with Linux and MacOS.  Supports DNS tunneling. (author:apenwarr stars:4864 forks:323 watchers:4864)
+4660-2083 | goagent | https://github.com/goagent/goagent | https://code.google.com/p/goagent/issues/list (author:goagent stars:4660 forks:2083 watchers:4660)
+4558-850 | fabric | https://github.com/fabric/fabric | Simple, Pythonic remote execution and deployment. (author:fabric stars:4558 forks:850 watchers:4558)
+4518-908 | shadowsocks | https://github.com/clowwindy/shadowsocks | A fast tunnel proxy that helps you bypass firewalls (author:clowwindy stars:4518 forks:908 watchers:4518)
+4470-1847 | salt | https://github.com/saltstack/salt | Infrastructure automation and management system (author:saltstack stars:4470 forks:1847 watchers:4470)
+4382-1534 | boto | https://github.com/boto/boto | Python interface to Amazon Web Services (author:boto stars:4382 forks:1534 watchers:4382)
+4335-877 | 500lines | https://github.com/aosabook/500lines | 500 Lines or Less (author:aosabook stars:4335 forks:877 watchers:4335)
+4276-1094 | python-patterns | https://github.com/faif/python-patterns | A collection of design patterns/idioms in Python (author:faif stars:4276 forks:1094 watchers:4276)
+4119-982 | pelican | https://github.com/getpelican/pelican | Static site generator that supports Markdown and reST syntax. Powered by Python. (author:getpelican stars:4119 forks:982 watchers:4119)
+4047-329 | fig | https://github.com/docker/fig | Fast, isolated development environments using Docker (author:docker stars:4047 forks:329 watchers:4047)
+3983-656 | awesome-machine-learning | https://github.com/josephmisiti/awesome-machine-learning | A curated list of awesome Machine Learning frameworks, libraries and software. (author:josephmisiti stars:3983 forks:656 watchers:3983)
+3784-1315 | pandas | https://github.com/pydata/pandas | Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures similar to R data.frame objects, statistical functions, and much more (author:pydata stars:3784 forks:1315 watchers:3784)
+3567-488 | deis | https://github.com/deis/deis | Your PaaS. Your Rules.  (author:deis stars:3567 forks:488 watchers:3567)
+3520-237 | huxley | https://github.com/facebookarchive/huxley | A testing system for catching visual regressions in Web applications. (author:facebookarchive stars:3520 forks:237 watchers:3520)
+3515-351 | powerline | https://github.com/powerline/powerline | Powerline is a statusline plugin for vim, and provides statuslines and prompts for several other applications, including zsh, bash, tmux, IPython, Awesome and Qtile. (author:powerline stars:3515 forks:351 watchers:3515)
+3477-511 | beets | https://github.com/sampsyo/beets | music library manager and MusicBrainz tagger (author:sampsyo stars:3477 forks:511 watchers:3477)
+3450-214 | bup | https://github.com/bup/bup | Very efficient backup system based on the git packfile format, providing fast incremental saves and global deduplication (among and within files, including virtual machine images). Current release is 0.26, and the development branch is master. Please post patches to the mailing list for discussion (see below). (author:bup stars:3450 forks:214 watchers:3450)
+3409-135 | legit | https://github.com/kennethreitz/legit | Git for Humans, Inspired by GitHub for Mac™. (author:kennethreitz stars:3409 forks:135 watchers:3409)
+3330-1021 | django-rest-framework | https://github.com/tomchristie/django-rest-framework | Web APIs for Django. (author:tomchristie stars:3330 forks:1021 watchers:3330)
+3305-298 | ajenti | https://github.com/Eugeny/ajenti | Ajenti - the web admin panel everyone wants. (author:Eugeny stars:3305 forks:298 watchers:3305)
+3264-548 | pyspider | https://github.com/binux/pyspider | A Powerful Spider System with Web UI (author:binux stars:3264 forks:548 watchers:3264)
+3245-159 | ngxtop | https://github.com/lebinh/ngxtop | Real-time metrics for nginx server (author:lebinh stars:3245 forks:159 watchers:3245)
+3244-169 | mailinabox | https://github.com/mail-in-a-box/mailinabox | Mail-in-a-Box helps individuals take back control of their email by defining a one-click, easy-to-deploy SMTP+everything else server: a mail server in a box. (author:mail-in-a-box stars:3244 forks:169 watchers:3244)
+3200-763 | webpy | https://github.com/webpy/webpy | web.py is a web framework for python that is as simple as it is powerful.  (author:webpy stars:3200 forks:763 watchers:3200)
+3196-226 | docopt | https://github.com/docopt/docopt | Pythonic command line arguments parser, that will make you smile (author:docopt stars:3196 forks:226 watchers:3196)
+3148-1197 | django-cms | https://github.com/divio/django-cms | The easy-to-use and developer-friendly CMS (author:divio stars:3148 forks:1197 watchers:3148)
+3124-94 | stellar | https://github.com/fastmonkeys/stellar | Fast database snapshot and restore tool for development (author:fastmonkeys stars:3124 forks:94 watchers:3124)
+3115-1056 | celery | https://github.com/celery/celery | Distributed Task Queue (development branch) (author:celery stars:3115 forks:1056 watchers:3115)
+3114-132 | Gooey | https://github.com/chriskiehl/Gooey | Turn (almost) any Python command line program into a full GUI application with one line (author:chriskiehl stars:3114 forks:132 watchers:3114)
+3106-297 | SublimeCodeIntel | https://github.com/SublimeCodeIntel/SublimeCodeIntel | Full-featured code intelligence and smart autocomplete engine (author:SublimeCodeIntel stars:3106 forks:297 watchers:3106)
+2943-675 | redis-py | https://github.com/andymccurdy/redis-py | Redis Python Client (author:andymccurdy stars:2943 forks:675 watchers:2943)
+2918-1905 | Sick-Beard | https://github.com/midgetspy/Sick-Beard | PVR & episode guide that downloads and manages all your TV shows  (author:midgetspy stars:2918 forks:1905 watchers:2918)
+2907-584 | django-debug-toolbar | https://github.com/django-debug-toolbar/django-debug-toolbar | A configurable set of panels that display various debug information about the current request/response. (author:django-debug-toolbar stars:2907 forks:584 watchers:2907)
+2822-512 | django-old | https://github.com/django/django-old | Old, outdated clone of the Subversion repository. No longer updated! (author:django stars:2822 forks:512 watchers:2822)
+2807-397 | pattern | https://github.com/clips/pattern | Web mining module for Python, with tools for scraping, natural language processing, machine learning, network analysis and visualization. (author:clips stars:2807 forks:397 watchers:2807)
+2768-338 | portia | https://github.com/scrapinghub/portia | Visual scraping for Scrapy (author:scrapinghub stars:2768 forks:338 watchers:2768)
+2694-530 | bottle | https://github.com/bottlepy/bottle | bottle.py is a fast and simple micro-framework for python web-applications. (author:bottlepy stars:2694 forks:530 watchers:2694)
+2669-174 | autojump | https://github.com/joelthelion/autojump | A cd command that learns - easily navigate directories from the command line (author:joelthelion stars:2669 forks:174 watchers:2669)
+2666-628 | sqlmap | https://github.com/sqlmapproject/sqlmap | Automatic SQL injection and database takeover tool (author:sqlmapproject stars:2666 forks:628 watchers:2666)
+2642-215 | glances | https://github.com/nicolargo/glances | Glances an Eye on your system (author:nicolargo stars:2642 forks:215 watchers:2642)
+2632-262 | faker | https://github.com/joke2k/faker | Faker is a Python package that generates fake data for you. (author:joke2k stars:2632 forks:262 watchers:2632)
+2628-919 | django-tastypie | https://github.com/toastdriven/django-tastypie | Creating delicious APIs for Django apps since 2010. v0.12.0 (author:toastdriven stars:2628 forks:919 watchers:2628)
+2608-626 | kivy | https://github.com/kivy/kivy | Open source Python framework for creating NUI applications, running on Windows, Linux, OS X, Android and iOS (author:kivy stars:2608 forks:626 watchers:2608)
+2606-197 | localtunnel | https://github.com/progrium/localtunnel | Expose your local web server to the Internet (author:progrium stars:2606 forks:197 watchers:2606)
+2604-661 | nupic | https://github.com/numenta/nupic | Numenta Platform for Intelligent Computing: a brain-inspired machine intelligence platform, and biologically accurate neural network based on cortical learning algorithms. (author:numenta stars:2604 forks:661 watchers:2604)
+2569-169 | chisel | https://github.com/facebook/chisel | Chisel is a collection of LLDB commands to assist debugging iOS apps. (author:facebook stars:2569 forks:169 watchers:2569)
+2567-190 | pyston | https://github.com/dropbox/pyston | An open-source Python implementation using JIT techniques.  (author:dropbox stars:2567 forks:190 watchers:2567)
+2550-212 | howdoi | https://github.com/gleitz/howdoi | howdoi - instant coding answers via the command line (author:gleitz stars:2550 forks:212 watchers:2550)
+2549-157 | GitGutter | https://github.com/jisaacks/GitGutter | A Sublime Text 2/3 plugin to see git diff in gutter (author:jisaacks stars:2549 forks:157 watchers:2549)
+2545-143 | Flashlight | https://github.com/nate-parrott/Flashlight | The missing Spotlight plugin system (author:nate-parrott stars:2545 forks:143 watchers:2545)
+2544-196 | sh | https://github.com/amoffat/sh | Python process launching (author:amoffat stars:2544 forks:196 watchers:2544)
+2536-174 | quietnet | https://github.com/Katee/quietnet | Simple chat program using inaudible sounds and a computer's microphone and speaker. (author:Katee stars:2536 forks:174 watchers:2536)
+2514-228 | thumbor | https://github.com/thumbor/thumbor | thumbor is an open-source photo thumbnail service by globo.com (author:thumbor stars:2514 forks:228 watchers:2514)
+2479-131 | q | https://github.com/harelba/q | q - Run SQL directly on CSV or TSV files   (author:harelba stars:2479 forks:131 watchers:2479)
+2391-740 | jieba | https://github.com/fxsjy/jieba | 结巴中文分词 (author:fxsjy stars:2391 forks:740 watchers:2391)
+2388-296 | aws-cli | https://github.com/aws/aws-cli | Universal Command Line Interface for Amazon Web Services (author:aws stars:2388 forks:296 watchers:2388)
+2384-835 | tweepy | https://github.com/tweepy/tweepy | Twitter for Python! (author:tweepy stars:2384 forks:835 watchers:2384)
+2359-425 | iOS-Universal-Framework | https://github.com/kstenerud/iOS-Universal-Framework | An XCode project template to build universal frameworks (arm7, arm7s, and simulator) for iOS / iPhone. (author:kstenerud stars:2359 forks:425 watchers:2359)
+2351-428 | Iconic | https://github.com/somerandomdude/Iconic | A minimal set of icons in raster, vector and font formats — free for public use. (author:somerandomdude stars:2351 forks:428 watchers:2351)
+2308-161 | glue | https://github.com/jorgebastida/glue | Glue is a simple command line tool to generate CSS sprites (author:jorgebastida stars:2308 forks:161 watchers:2308)
+2240-90 | SublimeWebInspector | https://github.com/sokolovstas/SublimeWebInspector | Web Inspector allow you debug Javascript right in the editor (author:sokolovstas stars:2240 forks:90 watchers:2240)
+2183-478 | python-mode | https://github.com/klen/python-mode | Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box. (author:klen stars:2183 forks:478 watchers:2183)
+2155-729 | django-social-auth | https://github.com/omab/django-social-auth | Django social authentication made simple (author:omab stars:2155 forks:729 watchers:2155)
+2127-225 | mackup | https://github.com/lra/mackup | Keep your application settings in sync (OS X/Linux) (author:lra stars:2127 forks:225 watchers:2127)
+2121-1036 | matplotlib | https://github.com/matplotlib/matplotlib | matplotlib: plotting with Python (author:matplotlib stars:2121 forks:1036 watchers:2121)
+2120-268 | wagtail | https://github.com/torchbox/wagtail | A Django content management system focused on flexibility and user experience (author:torchbox stars:2120 forks:268 watchers:2120)
+2119-436 | gunicorn | https://github.com/benoitc/gunicorn | gunicorn 'Green Unicorn' is a WSGI HTTP Server for UNIX, fast clients and sleepy applications. (author:benoitc stars:2119 forks:436 watchers:2119)
+2108-856 | python-oauth2 | https://github.com/simplegeo/python-oauth2 | A fully tested, abstract interface to creating OAuth clients and servers. (author:simplegeo stars:2108 forks:856 watchers:2108)
+2103-422 | jinja2 | https://github.com/mitsuhiko/jinja2 | The Jinja2 template engine (author:mitsuhiko stars:2103 forks:422 watchers:2103)
+2099-456 | Minecraft | https://github.com/fogleman/Minecraft | Simple Minecraft-inspired program using Python and Pyglet (author:fogleman stars:2099 forks:456 watchers:2099)
+2095-460 | django-extensions | https://github.com/django-extensions/django-extensions | This is a repository for collecting global custom management extensions for the Django Framework.  (author:django-extensions stars:2095 forks:460 watchers:2095)
+2086-186 | explainshell | https://github.com/idank/explainshell | match command-line arguments to their help text (author:idank stars:2086 forks:186 watchers:2086)
+2073-161 | arrow | https://github.com/crsmithdev/arrow | Better dates & times for Python (author:crsmithdev stars:2073 forks:161 watchers:2073)
+2052-192 | TextBlob | https://github.com/sloria/TextBlob | Simple, Pythonic, text processing--Sentiment analysis, part-of-speech tagging, noun phrase extraction, translation, and more. (author:sloria stars:2052 forks:192 watchers:2052)
+2050-239 | baseimage-docker | https://github.com/phusion/baseimage-docker | A minimal Ubuntu base image modified for Docker-friendliness (author:phusion stars:2050 forks:239 watchers:2050)
+2022-216 | alternative-internet | https://github.com/redecentralize/alternative-internet | A collection of interesting new networks and tech aiming at decentralisation (in some form). (author:redecentralize stars:2022 forks:216 watchers:2022)
+2017-149 | murder | https://github.com/lg/murder | Large scale server deploys using BitTorrent and the BitTornado library (author:lg stars:2017 forks:149 watchers:2017)
+1987-754 | mezzanine | https://github.com/stephenmcd/mezzanine | A content management platform built using the Django framework. (author:stephenmcd stars:1987 forks:754 watchers:1987)
+1941-695 | coursera | https://github.com/coursera-dl/coursera | Script for downloading Coursera.org videos and naming them. (author:coursera-dl stars:1941 forks:695 watchers:1941)
+1937-978 | python_koans | https://github.com/gregmalcolm/python_koans | Python Koans - Learn Python through TDD (author:gregmalcolm stars:1937 forks:978 watchers:1937)
+1928-281 | sublime-text-git | https://github.com/kemayo/sublime-text-git | Plugin for some git integration into sublime text (author:kemayo stars:1928 forks:281 watchers:1928)
+1927-78 | storm | https://github.com/emre/storm | Manage your SSH like a boss. (author:emre stars:1927 forks:78 watchers:1927)
+1927-324 | package_control | https://github.com/wbond/package_control | The Sublime Text package manager (author:wbond stars:1927 forks:324 watchers:1927)

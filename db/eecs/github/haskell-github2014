@@ -1,7 +1,6 @@
-3232-435 | pandoc | https://github.com/jgm/pandoc
-1456-167 | elm-compiler | https://github.com/elm-lang/elm-compiler
-1347-99 | Haxl | https://github.com/facebook/Haxl
-1227-92 | purescript | https://github.com/purescript/purescript
-1166-66 | shellcheck | https://github.com/koalaman/shellcheck
-1009-191 | yesod | https://github.com/yesodweb/yesod
-947-72 | fay | https://github.com/faylang/fay
+3237-437 | pandoc | https://github.com/jgm/pandoc | Universal markup converter (author:jgm stars:3237 forks:437 watchers:3237)
+1456-167 | elm-compiler | https://github.com/elm-lang/elm-compiler | Compiler for the Elm programming language. Elm aims to make web development more pleasant. Elm is a type inferred, functional reactive language that compiles to HTML, CSS, and JavaScript. (author:elm-lang stars:1456 forks:167 watchers:1456)
+1348-99 | Haxl | https://github.com/facebook/Haxl | A Haskell library that simplifies access to remote data, such as databases or web-based services.  (author:facebook stars:1348 forks:99 watchers:1348)
+1186-67 | shellcheck | https://github.com/koalaman/shellcheck | ShellCheck, a static analysis tool for shell scripts (author:koalaman stars:1186 forks:67 watchers:1186)
+1010-191 | yesod | https://github.com/yesodweb/yesod | A RESTful Haskell web framework built on WAI. (author:yesodweb stars:1010 forks:191 watchers:1010)
+951-73 | fay | https://github.com/faylang/fay | A proper subset of Haskell that compiles to JavaScript (author:faylang stars:951 forks:73 watchers:951)

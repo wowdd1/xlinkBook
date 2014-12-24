@@ -1,100 +1,100 @@
-24370-9372 | rails | https://github.com/rails/rails
-20684-10333 | homebrew | https://github.com/Homebrew/homebrew
-17794-3681 | jekyll | https://github.com/jekyll/jekyll
-14497-3798 | gitlabhq | https://github.com/gitlabhq/gitlabhq
-12820-3433 | discourse | https://github.com/discourse/discourse
-11881-2471 | devise | https://github.com/plataformatec/devise
-9677-2470 | diaspora | https://github.com/diaspora/diaspora
-8569-3160 | octopress | https://github.com/imathis/octopress
-8264-772 | huginn | https://github.com/cantino/huginn
-8239-1834 | vagrant | https://github.com/mitchellh/vagrant
-6504-1443 | paperclip | https://github.com/thoughtbot/paperclip
-6484-1958 | ruby | https://github.com/ruby/ruby
-6435-1089 | capistrano | https://github.com/capistrano/capistrano
-6238-1168 | resque | https://github.com/resque/resque
-5787-2689 | spree | https://github.com/spree/spree
-5689-793 | cancan | https://github.com/ryanb/cancan
-5629-861 | capybara | https://github.com/jnicklas/capybara
-5585-1603 | homebrew-cask | https://github.com/caskroom/homebrew-cask
-5536-1967 | activeadmin | https://github.com/activeadmin/activeadmin
-5463-590 | grape | https://github.com/intridea/grape
-5421-891 | carrierwave | https://github.com/carrierwaveuploader/carrierwave
-5040-1441 | rails_admin | https://github.com/sferik/rails_admin
-5025-997 | sass | https://github.com/sass/sass
-5014-456 | whenever | https://github.com/javan/whenever
-4960-664 | omniauth | https://github.com/intridea/omniauth
-4929-863 | CocoaPods | https://github.com/CocoaPods/CocoaPods
-4876-279 | better_errors | https://github.com/charliesome/better_errors
-4870-787 | simple_form | https://github.com/plataformatec/simple_form
-4783-2242 | progit | https://github.com/progit/progit
-4603-752 | sidekiq | https://github.com/mperham/sidekiq
-4547-960 | cucumber | https://github.com/cucumber/cucumber
-4513-549 | formtastic | https://github.com/justinfrench/formtastic
-4513-621 | kaminari | https://github.com/amatsuda/kaminari
-4286-445 | fpm | https://github.com/jordansissel/fpm
-4188-301 | devdocs | https://github.com/Thibaut/devdocs
-4174-655 | will_paginate | https://github.com/mislav/will_paginate
-4014-340 | guard | https://github.com/guard/guard
-3902-534 | factory_girl | https://github.com/thoughtbot/factory_girl
-3859-951 | twitter-bootstrap-rails | https://github.com/seyhunak/twitter-bootstrap-rails
-3743-215 | rails-api | https://github.com/rails-api/rails-api
-3692-365 | middleman | https://github.com/middleman/middleman
-3601-4120 | hw3_rottenpotatoes | https://github.com/saasbook/hw3_rottenpotatoes
-3600-519 | authlogic | https://github.com/binarylogic/authlogic
-3590-794 | maximum-awesome | https://github.com/square/maximum-awesome
-3482-197 | quine-relay | https://github.com/mame/quine-relay
-3474-350 | rubocop | https://github.com/bbatsov/rubocop
-3407-1288 | logstash | https://github.com/elasticsearch/logstash
-3309-1371 | fog | https://github.com/fog/fog
-3302-231 | kss | https://github.com/kneath/kss
-3292-837 | dotfiles | https://github.com/skwp/dotfiles
-3233-1317 | chef | https://github.com/opscode/chef
-3214-380 | backup | https://github.com/meskyanichi/backup
-3210-284 | pry | https://github.com/pry/pry
-3201-327 | travis-ci | https://github.com/travis-ci/travis-ci
-3161-240 | tmuxinator | https://github.com/tmuxinator/tmuxinator
-3141-199 | xiki | https://github.com/trogdoro/xiki
-3141-367 | friendly_id | https://github.com/norman/friendly_id
-3111-493 | guides | https://github.com/thoughtbot/guides
-3090-1066 | mongoid | https://github.com/mongoid/mongoid
-3081-372 | puma | https://github.com/puma/puma
-3062-2626 | metasploit-framework | https://github.com/rapid7/metasploit-framework
-3030-252 | slim | https://github.com/slim-template/slim
-3026-699 | acts-as-taggable-on | https://github.com/mbleigh/acts-as-taggable-on
-3018-1160 | refinerycms | https://github.com/refinery/refinerycms
-2998-343 | state_machine | https://github.com/pluginaweek/state_machine
-2995-729 | twitter | https://github.com/sferik/twitter
-2967-286 | rabl | https://github.com/nesquena/rabl
-2965-388 | paper_trail | https://github.com/airblade/paper_trail
-2950-630 | geocoder | https://github.com/alexreisner/geocoder
-2947-293 | draper | https://github.com/drapergem/draper
-2930-392 | liquid | https://github.com/Shopify/liquid
-2900-230 | t | https://github.com/sferik/t
-2898-1583 | active_merchant | https://github.com/Shopify/active_merchant
-2888-126 | bullet | https://github.com/flyerhzm/bullet
-2865-378 | foreman | https://github.com/ddollar/foreman
-2829-1229 | puppet | https://github.com/puppetlabs/puppet
-2790-441 | eventmachine | https://github.com/eventmachine/eventmachine
-2784-433 | httparty | https://github.com/jnunemaker/httparty
-2751-138 | csscss | https://github.com/zmoazeni/csscss
-2727-1467 | selfstarter | https://github.com/lockitron/selfstarter
-2723-498 | sstoolkit | https://github.com/soffes/sstoolkit
-2706-642 | errbit | https://github.com/errbit/errbit
-2693-180 | psd.rb | https://github.com/layervault/psd.rb
-2662-1105 | bundler | https://github.com/bundler/bundler
-2653-135 | wraith | https://github.com/BBC-News/wraith
-2627-465 | prawn | https://github.com/prawnpdf/prawn
-2603-184 | lolcommits | https://github.com/mroth/lolcommits
-2585-192 | celluloid | https://github.com/celluloid/celluloid
-2585-302 | sharelatex | https://github.com/sharelatex/sharelatex
-2579-302 | thor | https://github.com/erikhuda/thor
-2578-93 | evil-icons | https://github.com/outpunk/evil-icons
-2571-425 | haml | https://github.com/haml/haml
-2558-296 | fluentd | https://github.com/fluent/fluentd
-2552-386 | sprockets | https://github.com/sstephenson/sprockets
-2545-392 | web-app-theme | https://github.com/pilu/web-app-theme
-2509-1042 | linguist | https://github.com/github/linguist
-2508-167 | rails_best_practices | https://github.com/railsbp/rails_best_practices
-2486-326 | koala | https://github.com/arsduo/koala
-2481-191 | pundit | https://github.com/elabs/pundit
-2450-486 | rest-client | https://github.com/rest-client/rest-client
+24392-9383 | rails | https://github.com/rails/rails | Ruby on Rails (author:rails stars:24392 forks:9383 watchers:24392)
+20716-10338 | homebrew | https://github.com/Homebrew/homebrew | The missing package manager for OS X. (author:Homebrew stars:20716 forks:10338 watchers:20716)
+17819-3683 | jekyll | https://github.com/jekyll/jekyll | Jekyll is a blog-aware, static site generator in Ruby (author:jekyll stars:17819 forks:3683 watchers:17819)
+14510-3802 | gitlabhq | https://github.com/gitlabhq/gitlabhq | Open source software to collaborate on code. Follow us on twitter @gitlabhq (author:gitlabhq stars:14510 forks:3802 watchers:14510)
+12853-3440 | discourse | https://github.com/discourse/discourse | A platform for community discussion. Free, open, simple. (author:discourse stars:12853 forks:3440 watchers:12853)
+11904-2470 | devise | https://github.com/plataformatec/devise | Flexible authentication solution for Rails with Warden. (author:plataformatec stars:11904 forks:2470 watchers:11904)
+9676-2471 | diaspora | https://github.com/diaspora/diaspora | Distributed and contextual social networking (author:diaspora stars:9676 forks:2471 watchers:9676)
+8571-3162 | octopress | https://github.com/imathis/octopress | Octopress is an obsessively designed framework for Jekyll blogging. It’s easy to configure and easy to deploy. Sweet huh? (author:imathis stars:8571 forks:3162 watchers:8571)
+8270-774 | huginn | https://github.com/cantino/huginn | Build agents that monitor and act on your behalf.  Your agents are standing by! (author:cantino stars:8270 forks:774 watchers:8270)
+8258-1839 | vagrant | https://github.com/mitchellh/vagrant | Vagrant is a tool for building and distributing development environments. (author:mitchellh stars:8258 forks:1839 watchers:8258)
+6508-1443 | paperclip | https://github.com/thoughtbot/paperclip | Easy file attachment management for ActiveRecord (author:thoughtbot stars:6508 forks:1443 watchers:6508)
+6491-1968 | ruby | https://github.com/ruby/ruby | The Ruby Programming Language (author:ruby stars:6491 forks:1968 watchers:6491)
+6449-1089 | capistrano | https://github.com/capistrano/capistrano | Remote multi-server automation tool (author:capistrano stars:6449 forks:1089 watchers:6449)
+6242-1168 | resque | https://github.com/resque/resque | Resque is a Redis-backed Ruby library for creating background jobs, placing them on multiple queues, and processing them later. (author:resque stars:6242 forks:1168 watchers:6242)
+5794-2693 | spree | https://github.com/spree/spree | Spree is a complete open source e-commerce solution for Ruby on Rails. (author:spree stars:5794 forks:2693 watchers:5794)
+5692-793 | cancan | https://github.com/ryanb/cancan | Authorization Gem for Ruby on Rails. (author:ryanb stars:5692 forks:793 watchers:5692)
+5635-861 | capybara | https://github.com/jnicklas/capybara | Acceptance test framework for web applications (author:jnicklas stars:5635 forks:861 watchers:5635)
+5599-1614 | homebrew-cask | https://github.com/caskroom/homebrew-cask | A CLI workflow for the administration of Mac applications distributed as binaries (author:caskroom stars:5599 forks:1614 watchers:5599)
+5544-1971 | activeadmin | https://github.com/activeadmin/activeadmin | The administration framework for Ruby on Rails applications. (author:activeadmin stars:5544 forks:1971 watchers:5544)
+5470-590 | grape | https://github.com/intridea/grape | An opinionated micro-framework for creating REST-like APIs in Ruby. (author:intridea stars:5470 forks:590 watchers:5470)
+5426-892 | carrierwave | https://github.com/carrierwaveuploader/carrierwave | Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks (author:carrierwaveuploader stars:5426 forks:892 watchers:5426)
+5048-1442 | rails_admin | https://github.com/sferik/rails_admin | RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data (author:sferik stars:5048 forks:1442 watchers:5048)
+5030-1001 | sass | https://github.com/sass/sass | Sass makes CSS fun again. (author:sass stars:5030 forks:1001 watchers:5030)
+5021-456 | whenever | https://github.com/javan/whenever | Cron jobs in Ruby (author:javan stars:5021 forks:456 watchers:5021)
+4963-664 | omniauth | https://github.com/intridea/omniauth | OmniAuth is a flexible authentication system utilizing Rack middleware. (author:intridea stars:4963 forks:664 watchers:4963)
+4935-866 | CocoaPods | https://github.com/CocoaPods/CocoaPods | The Cocoa Dependency Manager. (author:CocoaPods stars:4935 forks:866 watchers:4935)
+4879-279 | better_errors | https://github.com/charliesome/better_errors | Better error page for Rack apps (author:charliesome stars:4879 forks:279 watchers:4879)
+4878-787 | simple_form | https://github.com/plataformatec/simple_form | Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup. (author:plataformatec stars:4878 forks:787 watchers:4878)
+4785-2244 | progit | https://github.com/progit/progit | Pro Git Book Content, 1st Edition - See 2nd edition at progit2 (author:progit stars:4785 forks:2244 watchers:4785)
+4608-752 | sidekiq | https://github.com/mperham/sidekiq | Simple, efficient background processing for Ruby (author:mperham stars:4608 forks:752 watchers:4608)
+4549-960 | cucumber | https://github.com/cucumber/cucumber | BDD that talks to domain experts first and code second (author:cucumber stars:4549 forks:960 watchers:4549)
+4518-623 | kaminari | https://github.com/amatsuda/kaminari | A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Rails 3 and 4 (author:amatsuda stars:4518 forks:623 watchers:4518)
+4515-550 | formtastic | https://github.com/justinfrench/formtastic | A Rails form builder plugin with semantically rich and accessible markup. (author:justinfrench stars:4515 forks:550 watchers:4515)
+4288-445 | fpm | https://github.com/jordansissel/fpm | Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity. (author:jordansissel stars:4288 forks:445 watchers:4288)
+4205-303 | devdocs | https://github.com/Thibaut/devdocs | API Documentation Browser (author:Thibaut stars:4205 forks:303 watchers:4205)
+4178-655 | will_paginate | https://github.com/mislav/will_paginate | Pagination library for Rails, Sinatra, Merb, DataMapper, and more (author:mislav stars:4178 forks:655 watchers:4178)
+4023-340 | guard | https://github.com/guard/guard | Guard is a command line tool to easily handle events on file system modifications. (author:guard stars:4023 forks:340 watchers:4023)
+3906-534 | factory_girl | https://github.com/thoughtbot/factory_girl | A library for setting up Ruby objects as test data. (author:thoughtbot stars:3906 forks:534 watchers:3906)
+3862-951 | twitter-bootstrap-rails | https://github.com/seyhunak/twitter-bootstrap-rails | Twitter Bootstrap for Rails 3.x - 4 Asset Pipeline (author:seyhunak stars:3862 forks:951 watchers:3862)
+3751-215 | rails-api | https://github.com/rails-api/rails-api | Rails for API only applications (author:rails-api stars:3751 forks:215 watchers:3751)
+3694-365 | middleman | https://github.com/middleman/middleman | Hand-crafted frontend development (author:middleman stars:3694 forks:365 watchers:3694)
+3600-4119 | hw3_rottenpotatoes | https://github.com/saasbook/hw3_rottenpotatoes | HW 3 skeleton for doing BDD with RottenPotatoes (author:saasbook stars:3600 forks:4119 watchers:3600)
+3600-519 | authlogic | https://github.com/binarylogic/authlogic | A simple ruby authentication solution. (author:binarylogic stars:3600 forks:519 watchers:3600)
+3592-793 | maximum-awesome | https://github.com/square/maximum-awesome | Config files for vim and tmux. (author:square stars:3592 forks:793 watchers:3592)
+3489-197 | quine-relay | https://github.com/mame/quine-relay | An uroboros program with 100 programming languages (author:mame stars:3489 forks:197 watchers:3489)
+3484-351 | rubocop | https://github.com/bbatsov/rubocop | A Ruby static code analyzer, based on the community Ruby style guide. (author:bbatsov stars:3484 forks:351 watchers:3484)
+3414-1293 | logstash | https://github.com/elasticsearch/logstash | logstash - logs/event transport, processing, management, search. (author:elasticsearch stars:3414 forks:1293 watchers:3414)
+3314-1377 | fog | https://github.com/fog/fog | The Ruby cloud services library. (author:fog stars:3314 forks:1377 watchers:3314)
+3307-230 | kss | https://github.com/kneath/kss | A methodology for documenting CSS and generating styleguides. (author:kneath stars:3307 forks:230 watchers:3307)
+3296-836 | dotfiles | https://github.com/skwp/dotfiles | YADR - The best vim,git,zsh plugins and the cleanest vimrc you've ever seen (author:skwp stars:3296 forks:836 watchers:3296)
+3236-1318 | chef | https://github.com/opscode/chef | A systems integration framework, built to bring the benefits of configuration management to your entire infrastructure. (author:opscode stars:3236 forks:1318 watchers:3236)
+3214-285 | pry | https://github.com/pry/pry | An IRB alternative and runtime developer console (author:pry stars:3214 forks:285 watchers:3214)
+3214-380 | backup | https://github.com/meskyanichi/backup | Provides an elegant DSL in Ruby for performing backups on UNIX-like systems. (author:meskyanichi stars:3214 forks:380 watchers:3214)
+3205-327 | travis-ci | https://github.com/travis-ci/travis-ci | Free continuous integration platform for GitHub projects. (author:travis-ci stars:3205 forks:327 watchers:3205)
+3170-242 | tmuxinator | https://github.com/tmuxinator/tmuxinator | Manage complex tmux sessions easily (author:tmuxinator stars:3170 forks:242 watchers:3170)
+3148-368 | friendly_id | https://github.com/norman/friendly_id | FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models. (author:norman stars:3148 forks:368 watchers:3148)
+3142-199 | xiki | https://github.com/trogdoro/xiki | A shell console with GUI features (author:trogdoro stars:3142 forks:199 watchers:3142)
+3118-493 | guides | https://github.com/thoughtbot/guides | A guide for programming in style. (author:thoughtbot stars:3118 forks:493 watchers:3118)
+3091-1066 | mongoid | https://github.com/mongoid/mongoid | Ruby ODM framework for MongoDB (author:mongoid stars:3091 forks:1066 watchers:3091)
+3082-373 | puma | https://github.com/puma/puma | A ruby web server built for concurrency (author:puma stars:3082 forks:373 watchers:3082)
+3066-2636 | metasploit-framework | https://github.com/rapid7/metasploit-framework | Metasploit Framework (author:rapid7 stars:3066 forks:2636 watchers:3066)
+3032-700 | acts-as-taggable-on | https://github.com/mbleigh/acts-as-taggable-on | A tagging plugin for Rails applications that allows for custom tagging along dynamic contexts. (author:mbleigh stars:3032 forks:700 watchers:3032)
+3031-254 | slim | https://github.com/slim-template/slim | Slim is a template language whose goal is reduce the syntax to the essential parts without becoming cryptic. (author:slim-template stars:3031 forks:254 watchers:3031)
+3018-1161 | refinerycms | https://github.com/refinery/refinerycms | An extendable Ruby on Rails CMS that supports Rails 3.2 and 4.1 (author:refinery stars:3018 forks:1161 watchers:3018)
+3001-345 | state_machine | https://github.com/pluginaweek/state_machine | Adds support for creating state machines for attributes on any Ruby class (author:pluginaweek stars:3001 forks:345 watchers:3001)
+2995-729 | twitter | https://github.com/sferik/twitter | A Ruby interface to the Twitter API. (author:sferik stars:2995 forks:729 watchers:2995)
+2971-389 | paper_trail | https://github.com/airblade/paper_trail | Track changes to your models' data.  Good for auditing or versioning. (author:airblade stars:2971 forks:389 watchers:2971)
+2970-286 | rabl | https://github.com/nesquena/rabl | General ruby templating with json, bson, xml, plist and msgpack support (author:nesquena stars:2970 forks:286 watchers:2970)
+2957-631 | geocoder | https://github.com/alexreisner/geocoder | Complete Ruby geocoding solution. (author:alexreisner stars:2957 forks:631 watchers:2957)
+2951-293 | draper | https://github.com/drapergem/draper | Decorators/View-Models for Rails Applications (author:drapergem stars:2951 forks:293 watchers:2951)
+2935-393 | liquid | https://github.com/Shopify/liquid | Liquid markup language. Safe, customer facing template language for flexible web apps.  (author:Shopify stars:2935 forks:393 watchers:2935)
+2900-230 | t | https://github.com/sferik/t | A command-line power tool for Twitter. (author:sferik stars:2900 forks:230 watchers:2900)
+2899-1587 | active_merchant | https://github.com/Shopify/active_merchant | Active Merchant is a simple payment abstraction library extracted from Shopify. The aim of the project is to feel natural to Ruby users and to abstract as many parts as possible away from the user to offer a consistent interface across all supported gateways. (author:Shopify stars:2899 forks:1587 watchers:2899)
+2891-126 | bullet | https://github.com/flyerhzm/bullet | help to kill N+1 queries and unused eager loading (author:flyerhzm stars:2891 forks:126 watchers:2891)
+2871-377 | foreman | https://github.com/ddollar/foreman | Manage Procfile-based applications (author:ddollar stars:2871 forks:377 watchers:2871)
+2834-1233 | puppet | https://github.com/puppetlabs/puppet | Server automation framework and application (author:puppetlabs stars:2834 forks:1233 watchers:2834)
+2795-443 | eventmachine | https://github.com/eventmachine/eventmachine | EventMachine: fast, simple event-processing library for Ruby programs (author:eventmachine stars:2795 forks:443 watchers:2795)
+2788-433 | httparty | https://github.com/jnunemaker/httparty | Makes http fun again! (author:jnunemaker stars:2788 forks:433 watchers:2788)
+2751-137 | csscss | https://github.com/zmoazeni/csscss | A CSS redundancy analyzer that analyzes redundancy. (author:zmoazeni stars:2751 forks:137 watchers:2751)
+2728-1468 | selfstarter | https://github.com/lockitron/selfstarter | Roll your own crowdfunding (author:lockitron stars:2728 forks:1468 watchers:2728)
+2727-498 | sstoolkit | https://github.com/soffes/sstoolkit | A collection of well-documented iOS classes for making life easier (author:soffes stars:2727 forks:498 watchers:2727)
+2707-643 | errbit | https://github.com/errbit/errbit | The open source error catcher that's Airbrake API compliant (author:errbit stars:2707 forks:643 watchers:2707)
+2695-180 | psd.rb | https://github.com/layervault/psd.rb | Parse Photoshop files in Ruby with ease (author:layervault stars:2695 forks:180 watchers:2695)
+2664-1108 | bundler | https://github.com/bundler/bundler | Manage your application's gem dependencies with less pain (author:bundler stars:2664 forks:1108 watchers:2664)
+2655-135 | wraith | https://github.com/BBC-News/wraith | Wraith — A responsive screenshot comparison tool (author:BBC-News stars:2655 forks:135 watchers:2655)
+2651-95 | evil-icons | https://github.com/outpunk/evil-icons | Simple and clean SVG icon pack with the code to support Rails, Sinatra and Node.js (author:outpunk stars:2651 forks:95 watchers:2651)
+2627-465 | prawn | https://github.com/prawnpdf/prawn | Fast, Nimble PDF Writer for Ruby (author:prawnpdf stars:2627 forks:465 watchers:2627)
+2605-184 | lolcommits | https://github.com/mroth/lolcommits | Takes a snapshot with your webcam every time you git commit code, and archives a lolcat style image with it. (author:mroth stars:2605 forks:184 watchers:2605)
+2589-303 | sharelatex | https://github.com/sharelatex/sharelatex | A web-based collaborative LaTeX editor (author:sharelatex stars:2589 forks:303 watchers:2589)
+2588-192 | celluloid | https://github.com/celluloid/celluloid | Actor-based concurrent object framework for Ruby (author:celluloid stars:2588 forks:192 watchers:2588)
+2585-302 | thor | https://github.com/erikhuda/thor | Thor is a toolkit for building powerful command-line interfaces. (author:erikhuda stars:2585 forks:302 watchers:2585)
+2571-426 | haml | https://github.com/haml/haml | HTML Abstraction Markup Language - A Markup Haiku (author:haml stars:2571 forks:426 watchers:2571)
+2563-297 | fluentd | https://github.com/fluent/fluentd | Fluentd data collector (author:fluent stars:2563 forks:297 watchers:2563)
+2554-387 | sprockets | https://github.com/sstephenson/sprockets | Rack-based asset packaging system (author:sstephenson stars:2554 forks:387 watchers:2554)
+2544-392 | web-app-theme | https://github.com/pilu/web-app-theme | A simple theme for web apps (author:pilu stars:2544 forks:392 watchers:2544)
+2510-167 | rails_best_practices | https://github.com/railsbp/rails_best_practices | a code metric tool for rails projects (author:railsbp stars:2510 forks:167 watchers:2510)
+2510-1041 | linguist | https://github.com/github/linguist | Language Savant. If your repository's language is being reported incorrectly, send us a pull request! (author:github stars:2510 forks:1041 watchers:2510)
+2488-326 | koala | https://github.com/arsduo/koala | A lightweight, flexible library for Facebook with support for OAuth authentication, the Graph and REST APIs, realtime updates, and test users. (author:arsduo stars:2488 forks:326 watchers:2488)
+2488-191 | pundit | https://github.com/elabs/pundit | Minimal authorization through OO design and pure Ruby classes (author:elabs stars:2488 forks:191 watchers:2488)
+2452-486 | rest-client | https://github.com/rest-client/rest-client | Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions. (author:rest-client stars:2452 forks:486 watchers:2452)

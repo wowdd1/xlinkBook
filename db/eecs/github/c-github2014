@@ -1,100 +1,100 @@
-18173-7277 | linux | https://github.com/torvalds/linux
-11423-3631 | redis | https://github.com/antirez/redis
-7693-4457 | git | https://github.com/git/git
-7585-830 | emscripten | https://github.com/kripken/emscripten
-6425-864 | How-to-Make-a-Computer-Operating-System | https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System
-6270-776 | toxcore | https://github.com/irungentoo/toxcore
-5266-2606 | The-Art-Of-Programming-By-July | https://github.com/julycoding/The-Art-Of-Programming-By-July
-5061-1778 | php-src | https://github.com/php/php-src
-4708-325 | the_silver_searcher | https://github.com/ggreer/the_silver_searcher
-4686-711 | cphalcon | https://github.com/phalcon/cphalcon
-4682-1070 | libgit2 | https://github.com/libgit2/libgit2
-4613-2668 | scikit-learn | https://github.com/scikit-learn/scikit-learn
-4586-412 | macvim | https://github.com/b4winckler/macvim
-4514-273 | wrk | https://github.com/wg/wrk
-4404-124 | mjolnir | https://github.com/sdegutis/mjolnir
-4065-785 | ccv | https://github.com/liuliu/ccv
-3575-210 | jq | https://github.com/stedolan/jq
-3522-815 | libuv | https://github.com/joyent/libuv
-3501-2694 | Arduino | https://github.com/arduino/Arduino
-3320-610 | twemproxy | https://github.com/twitter/twemproxy
-3233-1017 | memcached | https://github.com/memcached/memcached
-3230-1132 | openFrameworks | https://github.com/openframeworks/openFrameworks
-3141-800 | godot | https://github.com/okamstudio/godot
-3082-158 | vim.js | https://github.com/coolwanglu/vim.js
-3019-362 | gumbo-parser | https://github.com/google/gumbo-parser
-2903-435 | mruby | https://github.com/mruby/mruby
-2735-333 | Craft | https://github.com/fogleman/Craft
-2597-390 | firefox-ios | https://github.com/mozilla/firefox-ios
-2555-310 | redcarpet | https://github.com/vmg/redcarpet
-2550-433 | seafile | https://github.com/haiwen/seafile
-2501-356 | fastsocket | https://github.com/fastos/fastsocket
-2321-133 | CommonMark | https://github.com/jgm/CommonMark
-2311-709 | tengine | https://github.com/alibaba/tengine
-2274-326 | masscan | https://github.com/robertdavidgraham/masscan
-2205-143 | watchman | https://github.com/facebook/watchman
-2150-244 | beanstalkd | https://github.com/kr/beanstalkd
-2092-151 | sysdig | https://github.com/draios/sysdig
-2061-91 | cv | https://github.com/Xfennec/cv
-2046-1012 | skynet | https://github.com/cloudwu/skynet
-1981-726 | libfreenect | https://github.com/OpenKinect/libfreenect
-1948-359 | shairport | https://github.com/abrasive/shairport
-1926-113 | pifs | https://github.com/philipl/pifs
-1876-89 | mdp | https://github.com/visit1985/mdp
-1858-387 | SFML | https://github.com/LaurentGomila/SFML
-1840-432 | Cinder | https://github.com/cinder/Cinder
-1836-114 | libCello | https://github.com/orangeduck/libCello
-1833-443 | http-parser | https://github.com/joyent/http-parser
-1823-255 | c4 | https://github.com/rswier/c4
-1813-822 | linux | https://github.com/raspberrypi/linux
-1750-457 | Sparkle | https://github.com/sparkle-project/Sparkle
-1723-156 | tig | https://github.com/jonas/tig
-1656-124 | h2o | https://github.com/h2o/h2o
-1643-91 | node-fibers | https://github.com/laverdet/node-fibers
-1641-961 | Telegram | https://github.com/DrKLO/Telegram
-1634-793 | numpy | https://github.com/numpy/numpy
-1605-212 | nanomsg | https://github.com/nanomsg/nanomsg
-1564-152 | keen | https://github.com/keendreams/keen
-1533-144 | zimg | https://github.com/buaazp/zimg
-1507-506 | mongoose | https://github.com/cesanta/mongoose
-1499-240 | micropython | https://github.com/micropython/micropython
-1495-1015 | FFmpeg | https://github.com/FFmpeg/FFmpeg
-1490-275 | wax | https://github.com/probablycorey/wax
-1479-316 | python-for-android | https://github.com/kivy/python-for-android
-1468-421 | nginx-rtmp-module | https://github.com/arut/nginx-rtmp-module
-1460-137 | mozjpeg | https://github.com/mozilla/mozjpeg
-1433-75 | reptyr | https://github.com/nelhage/reptyr
-1410-189 | mpv | https://github.com/mpv-player/mpv
-1396-365 | SoftEtherVPN | https://github.com/SoftEtherVPN/SoftEtherVPN
-1365-123 | lwan | https://github.com/lpereira/lwan
-1357-148 | libsodium | https://github.com/jedisct1/libsodium
-1344-164 | legacy-cc | https://github.com/mortdeus/legacy-cc
-1334-262 | DocSets-for-iOS | https://github.com/omz/DocSets-for-iOS
-1298-686 | zguide | https://github.com/imatix/zguide
-1290-168 | rugged | https://github.com/libgit2/rugged
-1287-52 | clib | https://github.com/clibs/clib
-1285-75 | qlmarkdown | https://github.com/toland/qlmarkdown
-1267-427 | minetest | https://github.com/minetest/minetest
-1261-571 | php-yaf | https://github.com/laruence/php-yaf
-1252-315 | RedPhone | https://github.com/WhisperSystems/RedPhone
-1248-634 | annotated_redis_source | https://github.com/huangz1990/annotated_redis_source
-1243-120 | webdis | https://github.com/nicolasff/webdis
-1240-193 | pthreads | https://github.com/krakjoe/pthreads
-1235-105 | Raphters | https://github.com/DanielWaterworth/Raphters
-1233-407 | msysgit | https://github.com/msysgit/msysgit
-1230-313 | zfs | https://github.com/zfsonlinux/zfs
-1206-268 | Cinnamon | https://github.com/linuxmint/Cinnamon
-1202-228 | yajl | https://github.com/lloyd/yajl
-1201-409 | swoole-src | https://github.com/swoole/swoole-src
-1189-802 | contiki | https://github.com/contiki-os/contiki
-1180-231 | osv | https://github.com/cloudius-systems/osv
-1179-385 | postgres | https://github.com/postgres/postgres
-1175-412 | curl | https://github.com/bagder/curl
-1158-105 | sds | https://github.com/antirez/sds
-1145-426 | firmware | https://github.com/raspberrypi/firmware
-1143-359 | hiredis | https://github.com/redis/hiredis
-1137-280 | flashcache | https://github.com/facebook/flashcache
-1118-253 | RakNet | https://github.com/OculusVR/RakNet
-1116-31 | packr | https://github.com/libgdx/packr
-1114-167 | io | https://github.com/stevedekorte/io
-1112-415 | Quake-III-Arena | https://github.com/id-Software/Quake-III-Arena
+18218-7296 | linux | https://github.com/torvalds/linux | Linux kernel source tree (author:torvalds stars:18218 forks:7296 watchers:18218)
+11459-3636 | redis | https://github.com/antirez/redis | Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, HyperLogLogs, Bitmaps. (author:antirez stars:11459 forks:3636 watchers:11459)
+7712-4462 | git | https://github.com/git/git | Git Source Code Mirror - This is a publish-only repository and all pull requests are ignored. Please follow Documentation/SubmittingPatches procedure for any of your improvements. (author:git stars:7712 forks:4462 watchers:7712)
+7602-832 | emscripten | https://github.com/kripken/emscripten | Emscripten: An LLVM-to-JavaScript Compiler (author:kripken stars:7602 forks:832 watchers:7602)
+6443-868 | How-to-Make-a-Computer-Operating-System | https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System | How to Make a Computer Operating System in C++ (author:SamyPesse stars:6443 forks:868 watchers:6443)
+6273-776 | toxcore | https://github.com/irungentoo/toxcore | The future of online communications. (author:irungentoo stars:6273 forks:776 watchers:6273)
+5284-2613 | The-Art-Of-Programming-By-July | https://github.com/julycoding/The-Art-Of-Programming-By-July | 此为《程序员编程艺术：面试和算法心得》的初稿，于14年6月转移到Word上优化，纸质版15年上市 (author:julycoding stars:5284 forks:2613 watchers:5284)
+5071-1779 | php-src | https://github.com/php/php-src | The PHP Interpreter (author:php stars:5071 forks:1779 watchers:5071)
+4736-331 | the_silver_searcher | https://github.com/ggreer/the_silver_searcher | A code-searching tool similar to ack, but faster. (author:ggreer stars:4736 forks:331 watchers:4736)
+4692-711 | cphalcon | https://github.com/phalcon/cphalcon | Web framework delivered as a C-extension for PHP (author:phalcon stars:4692 forks:711 watchers:4692)
+4681-1071 | libgit2 | https://github.com/libgit2/libgit2 | The Library (author:libgit2 stars:4681 forks:1071 watchers:4681)
+4628-2680 | scikit-learn | https://github.com/scikit-learn/scikit-learn | scikit-learn: machine learning in Python (author:scikit-learn stars:4628 forks:2680 watchers:4628)
+4592-412 | macvim | https://github.com/b4winckler/macvim | Vim - the text editor - for Mac OS X (author:b4winckler stars:4592 forks:412 watchers:4592)
+4523-273 | wrk | https://github.com/wg/wrk | Modern HTTP benchmarking tool (author:wg stars:4523 forks:273 watchers:4523)
+4403-124 | mjolnir | https://github.com/sdegutis/mjolnir | Lightweight automation and productivity app for OS X (author:sdegutis stars:4403 forks:124 watchers:4403)
+4070-791 | ccv | https://github.com/liuliu/ccv | C-based/Cached/Core Computer Vision Library, A Modern Computer Vision Library (author:liuliu stars:4070 forks:791 watchers:4070)
+3580-211 | jq | https://github.com/stedolan/jq | Command-line JSON processor (author:stedolan stars:3580 forks:211 watchers:3580)
+3522-817 | libuv | https://github.com/joyent/libuv | Cross-platform asynchronous I/O (author:joyent stars:3522 forks:817 watchers:3522)
+3505-2701 | Arduino | https://github.com/arduino/Arduino | open-source electronics prototyping platform (author:arduino stars:3505 forks:2701 watchers:3505)
+3329-615 | twemproxy | https://github.com/twitter/twemproxy | A fast, light-weight proxy for memcached and redis (author:twitter stars:3329 forks:615 watchers:3329)
+3236-1018 | memcached | https://github.com/memcached/memcached | memcached development tree (author:memcached stars:3236 forks:1018 watchers:3236)
+3231-1132 | openFrameworks | https://github.com/openframeworks/openFrameworks | OpenFrameworks is a cross platform open source toolkit for creative coding in C++. (author:openframeworks stars:3231 forks:1132 watchers:3231)
+3167-809 | godot | https://github.com/okamstudio/godot | Godot Game Engine (author:okamstudio stars:3167 forks:809 watchers:3167)
+3084-158 | vim.js | https://github.com/coolwanglu/vim.js | JavaScript port of Vim (author:coolwanglu stars:3084 forks:158 watchers:3084)
+3021-361 | gumbo-parser | https://github.com/google/gumbo-parser | An HTML5 parsing library in pure C99 (author:google stars:3021 forks:361 watchers:3021)
+2904-436 | mruby | https://github.com/mruby/mruby | Lightweight Ruby (author:mruby stars:2904 forks:436 watchers:2904)
+2735-334 | Craft | https://github.com/fogleman/Craft | A simple Minecraft clone written in C using modern OpenGL (shaders). (author:fogleman stars:2735 forks:334 watchers:2735)
+2610-392 | firefox-ios | https://github.com/mozilla/firefox-ios | Firefox for iOS (author:mozilla stars:2610 forks:392 watchers:2610)
+2558-310 | redcarpet | https://github.com/vmg/redcarpet | The safe Markdown parser, reloaded. (author:vmg stars:2558 forks:310 watchers:2558)
+2550-437 | seafile | https://github.com/haiwen/seafile | Open source cloud storage with advanced features on privacy protection and teamwork. (author:haiwen stars:2550 forks:437 watchers:2550)
+2504-357 | fastsocket | https://github.com/fastos/fastsocket | Fastsocket is a highly scalable socket and its underlying networking implementation of Linux kernel. With the straight linear scalability, Fastsocket can provide extremely good performance in multicore machines. In addition, it is very easy to use and maintain. As a result, it has been deployed in the production environment of SINA. (author:fastos stars:2504 forks:357 watchers:2504)
+2326-133 | CommonMark | https://github.com/jgm/CommonMark | CommonMark spec, with reference implementations in C and JavaScript (author:jgm stars:2326 forks:133 watchers:2326)
+2317-709 | tengine | https://github.com/alibaba/tengine | A distribution of Nginx with some advanced features (author:alibaba stars:2317 forks:709 watchers:2317)
+2284-327 | masscan | https://github.com/robertdavidgraham/masscan | TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes. (author:robertdavidgraham stars:2284 forks:327 watchers:2284)
+2206-142 | watchman | https://github.com/facebook/watchman | Watches files and records, or triggers actions, when they change.  (author:facebook stars:2206 forks:142 watchers:2206)
+2157-244 | beanstalkd | https://github.com/kr/beanstalkd | Beanstalk is a simple, fast work queue. (author:kr stars:2157 forks:244 watchers:2157)
+2098-151 | sysdig | https://github.com/draios/sysdig | a system exploration and troubleshooting tool (author:draios stars:2098 forks:151 watchers:2098)
+2064-90 | cv | https://github.com/Xfennec/cv | Linux tool to show progress for cp, rm, dd, ... (author:Xfennec stars:2064 forks:90 watchers:2064)
+2052-1015 | skynet | https://github.com/cloudwu/skynet | A lightweight online game framework (author:cloudwu stars:2052 forks:1015 watchers:2052)
+1980-726 | libfreenect | https://github.com/OpenKinect/libfreenect | Drivers and libraries for the Xbox Kinect device on WIndows, Linux, and OS X (author:OpenKinect stars:1980 forks:726 watchers:1980)
+1950-362 | shairport | https://github.com/abrasive/shairport | Airtunes emulator! Shairport is no longer maintained. (author:abrasive stars:1950 forks:362 watchers:1950)
+1929-114 | pifs | https://github.com/philipl/pifs | πfs - the data-free filesystem! (author:philipl stars:1929 forks:114 watchers:1929)
+1876-89 | mdp | https://github.com/visit1985/mdp | A command-line based markdown presentation tool. (author:visit1985 stars:1876 forks:89 watchers:1876)
+1860-390 | SFML | https://github.com/LaurentGomila/SFML | Simple and Fast Multimedia Library (author:LaurentGomila stars:1860 forks:390 watchers:1860)
+1844-432 | Cinder | https://github.com/cinder/Cinder | Cinder is a community-developed, free and open source library for professional-quality creative coding in C++. (author:cinder stars:1844 forks:432 watchers:1844)
+1836-444 | http-parser | https://github.com/joyent/http-parser | http request/response parser for c (author:joyent stars:1836 forks:444 watchers:1836)
+1835-113 | libCello | https://github.com/orangeduck/libCello | Higher level programming in C (author:orangeduck stars:1835 forks:113 watchers:1835)
+1828-255 | c4 | https://github.com/rswier/c4 | C in four functions (author:rswier stars:1828 forks:255 watchers:1828)
+1813-822 | linux | https://github.com/raspberrypi/linux |  (author:raspberrypi stars:1813 forks:822 watchers:1813)
+1752-457 | Sparkle | https://github.com/sparkle-project/Sparkle | A software update framework for OS X (author:sparkle-project stars:1752 forks:457 watchers:1752)
+1727-157 | tig | https://github.com/jonas/tig | Text-mode interface for git (author:jonas stars:1727 forks:157 watchers:1727)
+1660-124 | h2o | https://github.com/h2o/h2o | HTTP server / library implementation with support for HTTP/1, HTTP/2, websocket (author:h2o stars:1660 forks:124 watchers:1660)
+1652-965 | Telegram | https://github.com/DrKLO/Telegram | Telegram for Android source (author:DrKLO stars:1652 forks:965 watchers:1652)
+1644-91 | node-fibers | https://github.com/laverdet/node-fibers | Fiber/coroutine support for v8 and node. (author:laverdet stars:1644 forks:91 watchers:1644)
+1638-796 | numpy | https://github.com/numpy/numpy | Numpy main repository (author:numpy stars:1638 forks:796 watchers:1638)
+1610-216 | nanomsg | https://github.com/nanomsg/nanomsg | nanomsg library (author:nanomsg stars:1610 forks:216 watchers:1610)
+1564-152 | keen | https://github.com/keendreams/keen | Keen Dreams on Greenlight! (author:keendreams stars:1564 forks:152 watchers:1564)
+1534-145 | zimg | https://github.com/buaazp/zimg | A lightweight and high performance image storage and processing system. (author:buaazp stars:1534 forks:145 watchers:1534)
+1510-506 | mongoose | https://github.com/cesanta/mongoose | Embedded web server for C/C++ (author:cesanta stars:1510 forks:506 watchers:1510)
+1503-240 | micropython | https://github.com/micropython/micropython | The Micro Python project (author:micropython stars:1503 forks:240 watchers:1503)
+1503-1016 | FFmpeg | https://github.com/FFmpeg/FFmpeg | mirror of git://source.ffmpeg.org/ffmpeg.git (author:FFmpeg stars:1503 forks:1016 watchers:1503)
+1494-278 | wax | https://github.com/probablycorey/wax | Wax is a framework that lets you write native iPhone apps in Lua. (author:probablycorey stars:1494 forks:278 watchers:1494)
+1479-316 | python-for-android | https://github.com/kivy/python-for-android | Turn your Python application into an Android APK - Build your own python and extension (author:kivy stars:1479 forks:316 watchers:1479)
+1469-422 | nginx-rtmp-module | https://github.com/arut/nginx-rtmp-module | NGINX-based Media Streaming Server (author:arut stars:1469 forks:422 watchers:1469)
+1463-137 | mozjpeg | https://github.com/mozilla/mozjpeg | Improved JPEG encoder. (author:mozilla stars:1463 forks:137 watchers:1463)
+1432-75 | reptyr | https://github.com/nelhage/reptyr | Reparent a running program to a new terminal (author:nelhage stars:1432 forks:75 watchers:1432)
+1413-189 | mpv | https://github.com/mpv-player/mpv | Video player based on MPlayer/mplayer2 (author:mpv-player stars:1413 forks:189 watchers:1413)
+1404-368 | SoftEtherVPN | https://github.com/SoftEtherVPN/SoftEtherVPN | A Free Cross-platform Multi-protocol VPN Software, developed by SoftEther VPN Project at University of Tsukuba, Japan. (author:SoftEtherVPN stars:1404 forks:368 watchers:1404)
+1396-132 | lwan | https://github.com/lpereira/lwan | Experimental, scalable, high performance HTTP server (author:lpereira stars:1396 forks:132 watchers:1396)
+1360-150 | libsodium | https://github.com/jedisct1/libsodium | A modern and easy-to-use crypto library. (author:jedisct1 stars:1360 forks:150 watchers:1360)
+1344-164 | legacy-cc | https://github.com/mortdeus/legacy-cc | The earliest versions of the very first c compiler known to exist in the wild written by the late legend himself dmr.  (author:mortdeus stars:1344 forks:164 watchers:1344)
+1334-262 | DocSets-for-iOS | https://github.com/omz/DocSets-for-iOS | Dedicated app for reading Apple's developer documentation on an iPad or iPhone (author:omz stars:1334 forks:262 watchers:1334)
+1301-687 | zguide | https://github.com/imatix/zguide | Learning and Using ØMQ (author:imatix stars:1301 forks:687 watchers:1301)
+1296-168 | rugged | https://github.com/libgit2/rugged | ruby bindings to libgit2 (author:libgit2 stars:1296 forks:168 watchers:1296)
+1288-52 | clib | https://github.com/clibs/clib | C package manager-ish (author:clibs stars:1288 forks:52 watchers:1288)
+1286-75 | qlmarkdown | https://github.com/toland/qlmarkdown | QuickLook generator for Markdown files. (author:toland stars:1286 forks:75 watchers:1286)
+1286-574 | php-yaf | https://github.com/laruence/php-yaf | a php framework written in c, built in php-ext (author:laruence stars:1286 forks:574 watchers:1286)
+1269-427 | minetest | https://github.com/minetest/minetest | Minetest, an open source infinite-world block sandbox game with survival and crafting. [also https://github.com/minetest/minetest_game] (author:minetest stars:1269 forks:427 watchers:1269)
+1252-316 | RedPhone | https://github.com/WhisperSystems/RedPhone | A secure calling app for Android. (author:WhisperSystems stars:1252 forks:316 watchers:1252)
+1248-635 | annotated_redis_source | https://github.com/huangz1990/annotated_redis_source | 带有详细注释的 Redis 2.6 源码 (author:huangz1990 stars:1248 forks:635 watchers:1248)
+1244-120 | webdis | https://github.com/nicolasff/webdis | A Redis HTTP interface with JSON output (author:nicolasff stars:1244 forks:120 watchers:1244)
+1243-194 | pthreads | https://github.com/krakjoe/pthreads | Threading for PHP - Share Nothing, Do Everything :) (author:krakjoe stars:1243 forks:194 watchers:1243)
+1235-407 | msysgit | https://github.com/msysgit/msysgit | Build environment for Git for Windows. Please post all patches to the msysGit mailing list. (author:msysgit stars:1235 forks:407 watchers:1235)
+1234-105 | Raphters | https://github.com/DanielWaterworth/Raphters | [DEPRECATED] A web framework for C. (author:DanielWaterworth stars:1234 forks:105 watchers:1234)
+1231-313 | zfs | https://github.com/zfsonlinux/zfs | Native ZFS for Linux (author:zfsonlinux stars:1231 forks:313 watchers:1231)
+1215-411 | swoole-src | https://github.com/swoole/swoole-src | Asynchronous & concurrent & distributed networking framework for PHP. (author:swoole stars:1215 forks:411 watchers:1215)
+1208-269 | Cinnamon | https://github.com/linuxmint/Cinnamon | A Linux Desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features.  (author:linuxmint stars:1208 forks:269 watchers:1208)
+1204-228 | yajl | https://github.com/lloyd/yajl | A fast streaming JSON parsing library in C. (author:lloyd stars:1204 forks:228 watchers:1204)
+1192-803 | contiki | https://github.com/contiki-os/contiki | The official git repository for Contiki, the open source OS for the Internet of Things (author:contiki-os stars:1192 forks:803 watchers:1192)
+1185-234 | osv | https://github.com/cloudius-systems/osv | OSv, a new operating system for the cloud. (author:cloudius-systems stars:1185 forks:234 watchers:1185)
+1180-386 | postgres | https://github.com/postgres/postgres | Mirror of the official PostgreSQL GIT repository. Note that this is just a *mirror* - we don't work with pull requests on github. To contribute, please see http://wiki.postgresql.org/wiki/Submitting_a_Patch (author:postgres stars:1180 forks:386 watchers:1180)
+1177-413 | curl | https://github.com/bagder/curl | Curl is a tool and libcurl is a library for transferring data with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, GOPHER, TFTP, SCP, SFTP, TELNET, DICT, LDAP, LDAPS, FILE, IMAP, SMTP, POP3, RTSP and RTMP. libcurl offers a myriad of powerful features (author:bagder stars:1177 forks:413 watchers:1177)
+1167-106 | sds | https://github.com/antirez/sds | Simple Dynamic Strings library for C (author:antirez stars:1167 forks:106 watchers:1167)
+1146-425 | firmware | https://github.com/raspberrypi/firmware |  (author:raspberrypi stars:1146 forks:425 watchers:1146)
+1145-360 | hiredis | https://github.com/redis/hiredis | Minimalistic C client for Redis >= 1.2 (author:redis stars:1145 forks:360 watchers:1145)
+1138-281 | flashcache | https://github.com/facebook/flashcache | A general purpose, write-back block cache for Linux. (author:facebook stars:1138 forks:281 watchers:1138)
+1122-255 | RakNet | https://github.com/OculusVR/RakNet | RakNet is a cross platform, open source, C++ networking engine for game programmers.  (author:OculusVR stars:1122 forks:255 watchers:1122)
+1119-31 | packr | https://github.com/libgdx/packr | Packages your JAR, assets and a JVM for distribution on Windows, Linux and Mac OS X (author:libgdx stars:1119 forks:31 watchers:1119)
+1114-167 | io | https://github.com/stevedekorte/io | Io programming language (author:stevedekorte stars:1114 forks:167 watchers:1114)
+1111-415 | Quake-III-Arena | https://github.com/id-Software/Quake-III-Arena | Quake III Arena GPL Source Release (author:id-Software stars:1111 forks:415 watchers:1111)

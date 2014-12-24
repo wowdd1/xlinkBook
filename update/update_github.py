@@ -62,7 +62,10 @@ class GithubSpider(Spider):
                 for item in v:
                     data = str(item['stargazers_count']) + " " + item["name"] + " " + item['html_url']
                     print data
-                    self.write_db(f, str(item["stargazers_count"]) + "-" + str(item['forks_count']), item["name"], item['html_url'])
+                    description = ""
+                    if item['description'] != None:
+                        description = item['description'] + " (author:" + item['owner']['login'] + " stars:" + str(item["stargazers_count"]) + " forks:" + str(item['forks_count']) + " watchers:" + str(item['watchers']) + ")"
+                    self.write_db(f, str(item["stargazers_count"]) + "-" + str(item['forks_count']), item["name"], item['html_url'], description)
                     self.count = self.count + 1
  
         self.close_db(f)
@@ -74,7 +77,7 @@ class GithubSpider(Spider):
             print "no need upgrade\n"
 
     def processGithubiUserData(self, location, followers, per_page):
-        file_name = self.get_file_name("eecs-" + location, self.school + "-user")
+        file_name = self.get_file_name("eecs/github/" + location, self.school + "-user")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         if location == "":

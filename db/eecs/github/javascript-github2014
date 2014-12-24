@@ -1,100 +1,100 @@
-33853-7585 | node | https://github.com/joyent/node
-33279-13147 | angular.js | https://github.com/angular/angular.js
-32897-7710 | jquery | https://github.com/jquery/jquery
-32773-8007 | d3 | https://github.com/mbostock/d3
-27743-7254 | html5-boilerplate | https://github.com/h5bp/html5-boilerplate
-22664-4783 | impress.js | https://github.com/bartaz/impress.js
-21409-2364 | meteor | https://github.com/meteor/meteor
-20346-4228 | brackets | https://github.com/adobe/brackets
-20090-4553 | backbone | https://github.com/jashkenas/backbone
-18973-1948 | moment | https://github.com/moment/moment
-18507-4735 | jQuery-File-Upload | https://github.com/blueimp/jQuery-File-Upload
-18501-5562 | reveal.js | https://github.com/hakimel/reveal.js
-17568-4989 | three.js | https://github.com/mrdoob/three.js
-16796-3462 | express | https://github.com/strongloop/express
-14552-419 | resume.github.com | https://github.com/resume/resume.github.com
-14320-2711 | socket.io | https://github.com/Automattic/socket.io
-13940-1807 | Modernizr | https://github.com/Modernizr/Modernizr
-13498-1424 | Semantic-UI | https://github.com/Semantic-Org/Semantic-UI
-13367-2997 | Ghost | https://github.com/TryGhost/Ghost
-13129-2925 | underscore | https://github.com/jashkenas/underscore
-12763-2430 | select2 | https://github.com/ivaynberg/select2
-12527-3730 | Chart.js | https://github.com/nnnick/Chart.js
-12447-1689 | react | https://github.com/facebook/react
-12261-1635 | ionic | https://github.com/driftyco/ionic
-12147-2626 | ember.js | https://github.com/emberjs/ember.js
-11659-2363 | skrollr | https://github.com/Prinzhorn/skrollr
-11571-2633 | less.js | https://github.com/less/less.js
-11417-1341 | bower | https://github.com/bower/bower
-11146-1140 | async | https://github.com/caolan/async
-10993-5626 | todomvc | https://github.com/tastejs/todomvc
-10447-776 | gulp | https://github.com/gulpjs/gulp
-10402-1172 | jquery-pjax | https://github.com/defunkt/jquery-pjax
-10117-2283 | pdf.js | https://github.com/mozilla/pdf.js
-9597-1555 | hammer.js | https://github.com/hammerjs/hammer.js
-9341-2477 | jquery-mobile | https://github.com/jquery/jquery-mobile
-9335-2157 | ace | https://github.com/ajaxorg/ace
-9306-1696 | Leaflet | https://github.com/Leaflet/Leaflet
-9145-673 | You-Dont-Know-JS | https://github.com/getify/You-Dont-Know-JS
-8947-1454 | typeahead.js | https://github.com/twitter/typeahead.js
-8882-1045 | grunt | https://github.com/gruntjs/grunt
-8809-1687 | Flat-UI | https://github.com/designmodo/Flat-UI
-8707-954 | sails | https://github.com/balderdashy/sails
-8669-3272 | jquery-ui | https://github.com/jquery/jquery-ui
-8592-878 | slick | https://github.com/kenwheeler/slick
-8588-1368 | backbone-fundamentals | https://github.com/addyosmani/backbone-fundamentals
-8415-1118 | intro.js | https://github.com/usablica/intro.js
-8354-1175 | fastclick | https://github.com/ftlabs/fastclick
-8247-748 | nprogress | https://github.com/rstacruz/nprogress
-8185-3062 | Respond | https://github.com/scottjehl/Respond
-8104-1098 | idiomatic.js | https://github.com/rwaldron/idiomatic.js
-8012-1255 | jasmine | https://github.com/jasmine/jasmine
-7788-1676 | zepto | https://github.com/madrobby/zepto
-7690-755 | dashing | https://github.com/Shopify/dashing
-7654-632 | gitbook | https://github.com/GitbookIO/gitbook
-7652-637 | polymer | https://github.com/Polymer/polymer
-7614-1186 | jade | https://github.com/jadejs/jade
-7519-2038 | video.js | https://github.com/videojs/video.js
-7516-1046 | parallax | https://github.com/wagerfield/parallax
-7513-1071 | handlebars.js | https://github.com/wycats/handlebars.js
-7299-4327 | angular-seed | https://github.com/angular/angular-seed
-7277-3926 | bootstrap | https://github.com/angular-ui/bootstrap
-7249-581 | q | https://github.com/kriskowal/q
-7197-1040 | history.js | https://github.com/browserstate/history.js
-7158-1496 | mustache.js | https://github.com/janl/mustache.js
-7118-1372 | masonry | https://github.com/desandro/masonry
-7109-2331 | phaser | https://github.com/photonstorm/phaser
-7065-1438 | TimelineJS | https://github.com/NUKnightLab/TimelineJS
-7028-550 | lodash | https://github.com/lodash/lodash
-7019-1631 | onepage-scroll | https://github.com/peachananr/onepage-scroll
-6901-742 | spin.js | https://github.com/fgnass/spin.js
-6869-1767 | dropzone | https://github.com/enyo/dropzone
-6815-1039 | raphael | https://github.com/DmitryBaranovskiy/raphael
-6669-968 | statsd | https://github.com/etsy/statsd
-6629-1661 | fullPage.js | https://github.com/alvarotrigo/fullPage.js
-6568-427 | headroom.js | https://github.com/WickyNilliams/headroom.js
-6441-2983 | jquery-cookie | https://github.com/carhartl/jquery-cookie
-6396-302 | io.js | https://github.com/iojs/io.js
-6279-771 | picturefill | https://github.com/scottjehl/picturefill
-6276-818 | request | https://github.com/request/request
-6275-934 | jQuery-menu-aim | https://github.com/kamens/jQuery-menu-aim
-6244-780 | famous | https://github.com/Famous/famous
-6230-479 | velocity | https://github.com/julianshapiro/velocity
-6189-1014 | wysihtml5 | https://github.com/xing/wysihtml5
-6156-1106 | javascript-patterns | https://github.com/shichuan/javascript-patterns
-6150-1200 | pixi.js | https://github.com/GoodBoyDigital/pixi.js
-6058-546 | node-browserify | https://github.com/substack/node-browserify
-5966-871 | mongoose | https://github.com/LearnBoost/mongoose
-5925-787 | jquery.transit | https://github.com/rstacruz/jquery.transit
-5866-266 | pageres | https://github.com/sindresorhus/pageres
-5864-387 | node-inspector | https://github.com/node-inspector/node-inspector
-5837-987 | knockout | https://github.com/knockout/knockout
-5833-1502 | CodeMirror | https://github.com/codemirror/CodeMirror
-5738-536 | flight | https://github.com/flightjs/flight
-5729-790 | markdown-here | https://github.com/adam-p/markdown-here
-5722-1715 | mean | https://github.com/linnovate/mean
-5711-942 | mocha | https://github.com/mochajs/mocha
-5701-1059 | backbone.marionette | https://github.com/marionettejs/backbone.marionette
-5690-726 | PhotoSwipe | https://github.com/dimsemenov/PhotoSwipe
-5663-634 | material | https://github.com/angular/material
-5627-939 | Parsley.js | https://github.com/guillaumepotier/Parsley.js
+33882-7588 | node | https://github.com/joyent/node | evented I/O for v8 javascript (author:joyent stars:33882 forks:7588 watchers:33882)
+33354-13170 | angular.js | https://github.com/angular/angular.js | HTML enhanced for web apps (author:angular stars:33354 forks:13170 watchers:33354)
+32917-7718 | jquery | https://github.com/jquery/jquery | jQuery JavaScript Library (author:jquery stars:32917 forks:7718 watchers:32917)
+32821-8028 | d3 | https://github.com/mbostock/d3 | A JavaScript visualization library for HTML and SVG. (author:mbostock stars:32821 forks:8028 watchers:32821)
+27763-7256 | html5-boilerplate | https://github.com/h5bp/html5-boilerplate | A professional front-end template for building fast, robust, and adaptable web apps or sites. (author:h5bp stars:27763 forks:7256 watchers:27763)
+22691-4786 | impress.js | https://github.com/bartaz/impress.js | It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com. (author:bartaz stars:22691 forks:4786 watchers:22691)
+21448-2371 | meteor | https://github.com/meteor/meteor | Meteor, an ultra-simple, database-everywhere, data-on-the-wire, pure-Javascript web framework. (author:meteor stars:21448 forks:2371 watchers:21448)
+20371-4234 | brackets | https://github.com/adobe/brackets | An open source code editor for the web, written in JavaScript, HTML and CSS. (author:adobe stars:20371 forks:4234 watchers:20371)
+20100-4553 | backbone | https://github.com/jashkenas/backbone | Give your JS App some Backbone with Models, Views, Collections, and Events (author:jashkenas stars:20100 forks:4553 watchers:20100)
+18991-1951 | moment | https://github.com/moment/moment | Parse, validate, manipulate, and display dates in javascript. (author:moment stars:18991 forks:1951 watchers:18991)
+18522-5571 | reveal.js | https://github.com/hakimel/reveal.js | The HTML Presentation Framework (author:hakimel stars:18522 forks:5571 watchers:18522)
+18516-4738 | jQuery-File-Upload | https://github.com/blueimp/jQuery-File-Upload | File Upload widget with multiple file selection, drag&amp;drop support, progress bar, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads. Works with any server-side platform (Google App Engine, PHP, Python, Ruby on Rails, Java, etc.) that supports standard HTML form file uploads. (author:blueimp stars:18516 forks:4738 watchers:18516)
+17593-5000 | three.js | https://github.com/mrdoob/three.js | JavaScript 3D library. (author:mrdoob stars:17593 forks:5000 watchers:17593)
+16804-3458 | express | https://github.com/strongloop/express | Fast, unopinionated, minimalist web framework for node. (author:strongloop stars:16804 forks:3458 watchers:16804)
+14567-419 | resume.github.com | https://github.com/resume/resume.github.com | Resumes generated using the GitHub informations (author:resume stars:14567 forks:419 watchers:14567)
+14362-2716 | socket.io | https://github.com/Automattic/socket.io | Realtime application framework (Node.JS server) (author:Automattic stars:14362 forks:2716 watchers:14362)
+13949-1812 | Modernizr | https://github.com/Modernizr/Modernizr | Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser. (author:Modernizr stars:13949 forks:1812 watchers:13949)
+13391-3004 | Ghost | https://github.com/TryGhost/Ghost | Just a blogging platform (author:TryGhost stars:13391 forks:3004 watchers:13391)
+13142-2926 | underscore | https://github.com/jashkenas/underscore | JavaScript's utility _ belt (author:jashkenas stars:13142 forks:2926 watchers:13142)
+12770-2433 | select2 | https://github.com/ivaynberg/select2 | Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results. (author:ivaynberg stars:12770 forks:2433 watchers:12770)
+12557-3735 | Chart.js | https://github.com/nnnick/Chart.js | Simple HTML5 Charts using the <canvas> tag (author:nnnick stars:12557 forks:3735 watchers:12557)
+12529-1703 | react | https://github.com/facebook/react | A declarative, efficient, and flexible JavaScript library for building user interfaces. (author:facebook stars:12529 forks:1703 watchers:12529)
+12328-1642 | ionic | https://github.com/driftyco/ionic | Advanced HTML5 mobile development framework and SDK. Build great hybrid apps with web technologies you already know and love. Best friends with AngularJS. (author:driftyco stars:12328 forks:1642 watchers:12328)
+12169-2630 | ember.js | https://github.com/emberjs/ember.js | Ember.js - A JavaScript framework for creating ambitious web applications (author:emberjs stars:12169 forks:2630 watchers:12169)
+11676-2367 | skrollr | https://github.com/Prinzhorn/skrollr | Stand-alone parallax scrolling library for mobile (Android + iOS) and desktop. No jQuery. Just plain JavaScript (and some love). (author:Prinzhorn stars:11676 forks:2367 watchers:11676)
+11573-2636 | less.js | https://github.com/less/less.js | Leaner CSS (author:less stars:11573 forks:2636 watchers:11573)
+11421-1340 | bower | https://github.com/bower/bower | A package manager for the web (author:bower stars:11421 forks:1340 watchers:11421)
+11161-1143 | async | https://github.com/caolan/async | Async utilities for node and the browser (author:caolan stars:11161 forks:1143 watchers:11161)
+11007-5626 | todomvc | https://github.com/tastejs/todomvc | Helping you select an MV* framework - Todo apps for Backbone.js, Ember.js, AngularJS, and many more (author:tastejs stars:11007 forks:5626 watchers:11007)
+10474-778 | gulp | https://github.com/gulpjs/gulp | The streaming build system (author:gulpjs stars:10474 forks:778 watchers:10474)
+10414-1173 | jquery-pjax | https://github.com/defunkt/jquery-pjax | pushState + ajax = pjax (author:defunkt stars:10414 forks:1173 watchers:10414)
+10135-2285 | pdf.js | https://github.com/mozilla/pdf.js | PDF Reader in JavaScript (author:mozilla stars:10135 forks:2285 watchers:10135)
+9606-1557 | hammer.js | https://github.com/hammerjs/hammer.js | A javascript library for multi-touch gestures :// You can touch this (author:hammerjs stars:9606 forks:1557 watchers:9606)
+9348-2163 | ace | https://github.com/ajaxorg/ace | Ace (Ajax.org Cloud9 Editor) (author:ajaxorg stars:9348 forks:2163 watchers:9348)
+9344-2479 | jquery-mobile | https://github.com/jquery/jquery-mobile | jQuery Mobile Framework (author:jquery stars:9344 forks:2479 watchers:9344)
+9321-1703 | Leaflet | https://github.com/Leaflet/Leaflet | JavaScript library for mobile-friendly interactive maps (author:Leaflet stars:9321 forks:1703 watchers:9321)
+9165-676 | You-Dont-Know-JS | https://github.com/getify/You-Dont-Know-JS | A JavaScript book series. @YDKJS on twitter. (author:getify stars:9165 forks:676 watchers:9165)
+8954-1458 | typeahead.js | https://github.com/twitter/typeahead.js | typeahead.js is a fast and fully-featured autocomplete library (author:twitter stars:8954 forks:1458 watchers:8954)
+8885-1044 | grunt | https://github.com/gruntjs/grunt | Grunt: The JavaScript Task Runner (author:gruntjs stars:8885 forks:1044 watchers:8885)
+8822-1689 | Flat-UI | https://github.com/designmodo/Flat-UI | Flat UI Free - Design Framework (html/css3/less/js). Flat UI is based on Bootstrap, a comfortable, responsive, and functional framework that simplifies the development of websites. (author:designmodo stars:8822 forks:1689 watchers:8822)
+8723-959 | sails | https://github.com/balderdashy/sails | Realtime MVC Framework for Node.js (author:balderdashy stars:8723 forks:959 watchers:8723)
+8673-3277 | jquery-ui | https://github.com/jquery/jquery-ui | The official jQuery user interface library. (author:jquery stars:8673 forks:3277 watchers:8673)
+8603-882 | slick | https://github.com/kenwheeler/slick | the last carousel you'll ever need (author:kenwheeler stars:8603 forks:882 watchers:8603)
+8599-1366 | backbone-fundamentals | https://github.com/addyosmani/backbone-fundamentals | A creative-commons book on Backbone.js for beginners and advanced users alike (author:addyosmani stars:8599 forks:1366 watchers:8599)
+8423-1119 | intro.js | https://github.com/usablica/intro.js | A better way for new feature introduction and step-by-step users guide for your website and project. (author:usablica stars:8423 forks:1119 watchers:8423)
+8361-1178 | fastclick | https://github.com/ftlabs/fastclick | Polyfill to remove click delays on browsers with touch UIs (author:ftlabs stars:8361 forks:1178 watchers:8361)
+8259-749 | nprogress | https://github.com/rstacruz/nprogress | For slim progress bars like on YouTube, Medium, etc (author:rstacruz stars:8259 forks:749 watchers:8259)
+8198-3063 | Respond | https://github.com/scottjehl/Respond | A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more) (author:scottjehl stars:8198 forks:3063 watchers:8198)
+8113-1099 | idiomatic.js | https://github.com/rwaldron/idiomatic.js | Principles of Writing Consistent, Idiomatic JavaScript (author:rwaldron stars:8113 forks:1099 watchers:8113)
+8017-1254 | jasmine | https://github.com/jasmine/jasmine | DOM-less simple JavaScript testing framework (author:jasmine stars:8017 forks:1254 watchers:8017)
+7797-1676 | zepto | https://github.com/madrobby/zepto | Zepto.js is a minimalist JavaScript library for modern browsers, with a jQuery-compatible API (author:madrobby stars:7797 forks:1676 watchers:7797)
+7696-756 | dashing | https://github.com/Shopify/dashing | The exceptionally handsome dashboard framework in Ruby and Coffeescript. (author:Shopify stars:7696 forks:756 watchers:7696)
+7693-642 | polymer | https://github.com/Polymer/polymer | Leverage the future of the web platform today. (author:Polymer stars:7693 forks:642 watchers:7693)
+7666-631 | gitbook | https://github.com/GitbookIO/gitbook | Modern book format and toolchain using Git and Markdown (author:GitbookIO stars:7666 forks:631 watchers:7666)
+7625-1186 | jade | https://github.com/jadejs/jade | Jade - robust, elegant, feature rich template engine for nodejs (author:jadejs stars:7625 forks:1186 watchers:7625)
+7530-2043 | video.js | https://github.com/videojs/video.js | Video.js - open source HTML5 & Flash video player (author:videojs stars:7530 forks:2043 watchers:7530)
+7522-1049 | parallax | https://github.com/wagerfield/parallax | Parallax Engine that reacts to the orientation of a smart device (author:wagerfield stars:7522 forks:1049 watchers:7522)
+7520-1072 | handlebars.js | https://github.com/wycats/handlebars.js |  (author:wycats stars:7520 forks:1072 watchers:7520)
+7319-4339 | angular-seed | https://github.com/angular/angular-seed | Seed project for angular apps.  (author:angular stars:7319 forks:4339 watchers:7319)
+7300-3938 | bootstrap | https://github.com/angular-ui/bootstrap | Native AngularJS (Angular) directives for Bootstrap. Small footprint (5kB gzipped!), no 3rd party JS dependencies (jQuery, bootstrap JS) required! (author:angular-ui stars:7300 forks:3938 watchers:7300)
+7267-582 | q | https://github.com/kriskowal/q | A tool for making and composing asynchronous promises in JavaScript (author:kriskowal stars:7267 forks:582 watchers:7267)
+7204-1040 | history.js | https://github.com/browserstate/history.js | History.js gracefully supports the HTML5 History/State APIs (pushState, replaceState, onPopState) in all browsers. Including continued support for data, titles, replaceState. Supports jQuery, MooTools and Prototype.  For HTML5 browsers this means that you can modify the URL directly, without needing to use hashes anymore. For HTML4 browsers it will revert back to using the old onhashchange functionality. (author:browserstate stars:7204 forks:1040 watchers:7204)
+7169-1496 | mustache.js | https://github.com/janl/mustache.js | Minimal templating with {{mustaches}} in JavaScript (author:janl stars:7169 forks:1496 watchers:7169)
+7136-2339 | phaser | https://github.com/photonstorm/phaser | Phaser is a fun, free and fast 2D game framework for making HTML5 games for desktop and mobile web browsers, supporting Canvas and WebGL rendering. (author:photonstorm stars:7136 forks:2339 watchers:7136)
+7129-1374 | masonry | https://github.com/desandro/masonry | Cascading grid layout library (author:desandro stars:7129 forks:1374 watchers:7129)
+7070-1440 | TimelineJS | https://github.com/NUKnightLab/TimelineJS | TimelineJS: A Storytelling Timeline built in JavaScript.  (author:NUKnightLab stars:7070 forks:1440 watchers:7070)
+7043-551 | lodash | https://github.com/lodash/lodash | A utility library delivering consistency, customization, performance, & extras. (author:lodash stars:7043 forks:551 watchers:7043)
+7031-1633 | onepage-scroll | https://github.com/peachananr/onepage-scroll | Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin (author:peachananr stars:7031 forks:1633 watchers:7031)
+6909-743 | spin.js | https://github.com/fgnass/spin.js | A spinning activity indicator (author:fgnass stars:6909 forks:743 watchers:6909)
+6880-1769 | dropzone | https://github.com/enyo/dropzone | Dropzone is an easy to use drag'n'drop library. It supports image previews and shows nice progress bars. (author:enyo stars:6880 forks:1769 watchers:6880)
+6819-1040 | raphael | https://github.com/DmitryBaranovskiy/raphael | JavaScript Vector Library (author:DmitryBaranovskiy stars:6819 forks:1040 watchers:6819)
+6683-968 | statsd | https://github.com/etsy/statsd | Simple daemon for easy stats aggregation (author:etsy stars:6683 forks:968 watchers:6683)
+6647-1669 | fullPage.js | https://github.com/alvarotrigo/fullPage.js | fullPage plugin by Alvaro Trigo. Create full screen pages fast and simple (author:alvarotrigo stars:6647 forks:1669 watchers:6647)
+6577-426 | headroom.js | https://github.com/WickyNilliams/headroom.js | Give your pages some headroom. Hide your header until you need it (author:WickyNilliams stars:6577 forks:426 watchers:6577)
+6498-309 | io.js | https://github.com/iojs/io.js | Evented IO for V8 JavaScript (author:iojs stars:6498 forks:309 watchers:6498)
+6445-2985 | jquery-cookie | https://github.com/carhartl/jquery-cookie | A simple, lightweight jQuery plugin for reading, writing and deleting cookies (author:carhartl stars:6445 forks:2985 watchers:6445)
+6288-773 | picturefill | https://github.com/scottjehl/picturefill | A responsive image polyfill for <picture>, srcset, sizes, and more (author:scottjehl stars:6288 forks:773 watchers:6288)
+6284-819 | request | https://github.com/request/request | Simplified HTTP request client. (author:request stars:6284 forks:819 watchers:6284)
+6277-934 | jQuery-menu-aim | https://github.com/kamens/jQuery-menu-aim | jQuery plugin to fire events when user's cursor aims at particular dropdown menu items. For making responsive mega dropdowns like Amazon's. (author:kamens stars:6277 forks:934 watchers:6277)
+6250-783 | famous | https://github.com/Famous/famous | Famo.us is a JavaScript framework for everyone who wants to build beautiful experiences on any device (author:Famous stars:6250 forks:783 watchers:6250)
+6241-481 | velocity | https://github.com/julianshapiro/velocity | Accelerated JavaScript animation. (author:julianshapiro stars:6241 forks:481 watchers:6241)
+6194-1014 | wysihtml5 | https://github.com/xing/wysihtml5 | Open source rich text editor based on HTML5 and the progressive-enhancement approach. Uses a sophisticated security concept and aims to generate fully valid HTML5 markup by preventing unmaintainable tag soups and inline styles. (author:xing stars:6194 forks:1014 watchers:6194)
+6168-1203 | pixi.js | https://github.com/GoodBoyDigital/pixi.js | Super fast HTML 5 2D rendering engine that uses webGL with canvas fallback (author:GoodBoyDigital stars:6168 forks:1203 watchers:6168)
+6159-1107 | javascript-patterns | https://github.com/shichuan/javascript-patterns | JavaScript Patterns (author:shichuan stars:6159 forks:1107 watchers:6159)
+6069-547 | node-browserify | https://github.com/substack/node-browserify | browser-side require() the node.js way (author:substack stars:6069 forks:547 watchers:6069)
+5975-872 | mongoose | https://github.com/LearnBoost/mongoose | MongoDB object modeling designed to work in an asynchronous environment. (author:LearnBoost stars:5975 forks:872 watchers:5975)
+5929-790 | jquery.transit | https://github.com/rstacruz/jquery.transit | Super-smooth CSS3 transformations and transitions for jQuery (author:rstacruz stars:5929 forks:790 watchers:5929)
+5872-387 | node-inspector | https://github.com/node-inspector/node-inspector | Node.js debugger based on Blink Developer Tools (author:node-inspector stars:5872 forks:387 watchers:5872)
+5868-266 | pageres | https://github.com/sindresorhus/pageres | Responsive website screenshots (author:sindresorhus stars:5868 forks:266 watchers:5868)
+5844-1503 | CodeMirror | https://github.com/codemirror/CodeMirror | In-browser code editor (author:codemirror stars:5844 forks:1503 watchers:5844)
+5843-988 | knockout | https://github.com/knockout/knockout | Knockout makes it easier to create rich, responsive UIs with JavaScript (author:knockout stars:5843 forks:988 watchers:5843)
+5779-731 | PhotoSwipe | https://github.com/dimsemenov/PhotoSwipe | JavaScript image gallery for mobile and desktop, modular, framework independent. (author:dimsemenov stars:5779 forks:731 watchers:5779)
+5743-795 | markdown-here | https://github.com/adam-p/markdown-here | Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown and render it before sending. (author:adam-p stars:5743 forks:795 watchers:5743)
+5741-536 | flight | https://github.com/flightjs/flight | A component-based, event-driven JavaScript framework from Twitter (author:flightjs stars:5741 forks:536 watchers:5741)
+5740-1720 | mean | https://github.com/linnovate/mean | MEAN (Mongo, Express, Angular, Node) - A Simple, Scalable and Easy starting point for full stack javascript web development - utilizing many of the best practices we've found on the way (author:linnovate stars:5740 forks:1720 watchers:5740)
+5722-942 | mocha | https://github.com/mochajs/mocha | mocha - simple, flexible, fun javascript test framework for node.js & the browser. (BDD, TDD, QUnit styles via interfaces) (author:mochajs stars:5722 forks:942 watchers:5722)
+5718-641 | material | https://github.com/angular/material | Material design for Angular (author:angular stars:5718 forks:641 watchers:5718)
+5707-1060 | backbone.marionette | https://github.com/marionettejs/backbone.marionette | The Backbone framework (author:marionettejs stars:5707 forks:1060 watchers:5707)
+5629-938 | Parsley.js | https://github.com/guillaumepotier/Parsley.js | Validate your forms, frontend, without writing a single line of javascript (author:guillaumepotier stars:5629 forks:938 watchers:5629)
+5621-430 | PM2 | https://github.com/Unitech/PM2 | Production process manager for Node.JS applications. Perfectly designed for microservice architecture. (author:Unitech stars:5621 forks:430 watchers:5621)
