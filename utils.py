@@ -10,6 +10,7 @@ import re
 
 
 class Utils:    
+        
     def find_file_by_pattern(self, pattern='.*', base=".", circle=True):
         re_file = re.compile(pattern)
         if base == ".":

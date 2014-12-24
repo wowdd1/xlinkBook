@@ -9,6 +9,7 @@ import getopt
 import webbrowser
 from utils import Utils
 from update.all_subject import default_subject, print_all_subject
+from record import Record
 
 engin = ""
 keyword = ""
@@ -57,15 +58,14 @@ def search(keyword, engin):
         for line in f.readlines():
             if line.lower().startswith(keyword.lower()):
                 print "found " + line.replace("|","")
-                pos_1 = line.find("|")
-                pos_2 = line.find("|", pos_1 + 1)
-                title = line[pos_1 : pos_2].replace("|","").strip()
+                record = Record(line)
+                title = record.get_title().strip()
                 if engin != "" and validEngin(engin) == True:
                    for item in search_engin_list:
                        if item.lower().find(engin.lower()) != -1:
                            urls.append(item + title)
                 else:
-                    urls.append(line[pos_2 + 1 :].strip().lower())
+                    urls.append(record.get_url().strip().lower())
                 
         f.close()
 

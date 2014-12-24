@@ -1,14 +1,14 @@
-cs101 | Intro to Computer Science - Create and Analyze a Social Network | https://www.udacity.com/course/cs101
-ud507 | Data Visualization and D3.js - Communicating with Data | https://www.udacity.com/course/ud507
-ud120 | Intro to Machine Learning - Pattern Recognition for Fun and Profit | https://www.udacity.com/course/ud120
-ud617 | Intro to Hadoop and MapReduce - Implement MapReduce | https://www.udacity.com/course/ud617
-ud381 | Real-Time Analytics with Apache Storm - The "Hadoop of Real-Time" | https://www.udacity.com/course/ud381
-ud359 | Intro to Data Science - Investigate New York Subway Data | https://www.udacity.com/course/ud359
-ud651 | Data Analysis with R - Explore a Data Set | https://www.udacity.com/course/ud651
-ud827 | Intro to Descriptive Statistics - Descriptive Statistics with Cards | https://www.udacity.com/course/ud827
-ud201 | Intro to Inferential Statistics - Analyzing Your Own Dataset | https://www.udacity.com/course/ud201
-ud675 | Machine Learning: Supervised Learning - Predict Housing Prices | https://www.udacity.com/course/ud675
-ud820 | Machine Learning: Reinforcement Learning - Design Learning Agents for Pacman | https://www.udacity.com/course/ud820
-ud741 | Machine Learning: Unsupervised Learning - Design a Recommendation System | https://www.udacity.com/course/ud741
-ud032 | Data Wrangling with MongoDB - Add to OpenStreetMap | https://www.udacity.com/course/ud032
-st101 | Intro to Statistics - Making Decisions Based on Data | https://www.udacity.com/course/st101
+cs101 | Intro to Computer Science - Create and Analyze a Social Network | https://www.udacity.com/course/cs101 | Learn key computer science concepts in this introductory Python course. You'll learn by doing, and will build your own search engine and social network.
+ud507 | Data Visualization and D3.js - Communicating with Data | https://www.udacity.com/course/ud507 | Learn the fundamentals of data visualization and apply design and narrative concepts to create your own visualization.
+ud120 | Intro to Machine Learning - Pattern Recognition for Fun and Profit | https://www.udacity.com/course/ud120 | This class will teach you the end-to-end process of investigating data through a machine learning lens, and you'll apply what you've learned to a real-world data set.
+ud617 | Intro to Hadoop and MapReduce - Implement MapReduce | https://www.udacity.com/course/ud617 | In this short course, learn the fundamentals of MapReduce and Apache Hadoop to start making sense of Big Data in the real world!
+ud381 | Real-Time Analytics with Apache Storm - The "Hadoop of Real-Time" | https://www.udacity.com/course/ud381 | The world is trending in real time! Learn Apache Storm, taught by Twitter, to scalably analyze real-time tweets and drive d3 visualizations. Storm is free, open and fun!
+ud359 | Intro to Data Science - Investigate New York Subway Data | https://www.udacity.com/course/ud359 | What does a data scientist do? In this course, we will survey the main topics in data science so you can understand the skills that are needed to become a data scientist!
+ud651 | Data Analysis with R - Explore a Data Set | https://www.udacity.com/course/ud651 | Data is everywhere and so much of it is unexplored. Learn how to investigate and summarize data sets using R and eventually create your own analysis.
+ud827 | Intro to Descriptive Statistics - Descriptive Statistics with Cards | https://www.udacity.com/course/ud827 | Intro to Descriptive Statistics will teach you the basic concepts of statistics that can be used to extract information from data.
+ud201 | Intro to Inferential Statistics - Analyzing Your Own Dataset | https://www.udacity.com/course/ud201 | Intro to Inferential Statistics will teach you how to test your hypotheses and begin to make predictions based on statistical results drawn from data!
+ud675 | Machine Learning: Supervised Learning - Predict Housing Prices | https://www.udacity.com/course/ud675 | In this course, you'll learn how to apply Supervised Learning techniques important for solving a range of data science problems. And for surviving the robot uprising.
+ud820 | Machine Learning: Reinforcement Learning - Design Learning Agents for Pacman | https://www.udacity.com/course/ud820 | Can we program machines to learn like humans? This course will teach you the algorithms for designing self-learning agents like us!
+ud741 | Machine Learning: Unsupervised Learning - Design a Recommendation System | https://www.udacity.com/course/ud741 | Ever wonder how Netflix can predict what movies you'll like? Or how Amazon knows what you want to buy before you do? The answer can be found in Unsupervised Learning!
+ud032 | Data Wrangling with MongoDB - Add to OpenStreetMap | https://www.udacity.com/course/ud032 | Data Scientists spend most of their time cleaning data. In this course, you will learn to convert and manipulate messy data to extract what you need.
+st101 | Intro to Statistics - Making Decisions Based on Data | https://www.udacity.com/course/st101 | Get ready to analyze, visualize, and interpret data! Thought-provoking examples and chances to combine statistics and programming will keep you engaged and challenged.

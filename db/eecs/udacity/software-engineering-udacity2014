@@ -1,21 +1,21 @@
-cs101 | Intro to Computer Science - Create and Analyze a Social Network | https://www.udacity.com/course/cs101
-ud775 | How to Use Git and GitHub - Contribute to a Live Project | https://www.udacity.com/course/ud775
-cs046 | Intro to Java Programming - Building Programs with Classes & Objects | https://www.udacity.com/course/cs046
-ud036 | Programming Foundations with Python - Explore Python to Build Your Own Program | https://www.udacity.com/course/ud036
-ud617 | Intro to Hadoop and MapReduce - Implement MapReduce | https://www.udacity.com/course/ud617
-cs271 | Intro to Artificial Intelligence - Learn the Fundamentals of AI | https://www.udacity.com/course/cs271
-cs344 | Intro to Parallel Programming - Using CUDA to Harness the Power of GPUs | https://www.udacity.com/course/cs344
-ud675 | Machine Learning: Supervised Learning - Predict Housing Prices | https://www.udacity.com/course/ud675
-ud820 | Machine Learning: Reinforcement Learning - Design Learning Agents for Pacman | https://www.udacity.com/course/ud820
-ud741 | Machine Learning: Unsupervised Learning - Design a Recommendation System | https://www.udacity.com/course/ud741
-ud805 | Software Development Life Cycles - Decision Assistance Android App | https://www.udacity.com/course/ud805
-cs373 | Artificial Intelligence for Robotics - Track and Capture a Runaway Robot | https://www.udacity.com/course/cs373
-ud032 | Data Wrangling with MongoDB - Add to OpenStreetMap | https://www.udacity.com/course/ud032
-cs387 | Applied Cryptography - Science of Secrets | https://www.udacity.com/course/cs387
-cs258 | Software Testing - How to Make Software Fail | https://www.udacity.com/course/cs258
-cs215 | Intro to Algorithms - Social Network Analysis | https://www.udacity.com/course/cs215
-cs291 | Interactive 3D Graphics - Create Your Own 3D Scene with WebGL | https://www.udacity.com/course/cs291
-cs262 | Programming Languages - Building a Web Browser | https://www.udacity.com/course/cs262
-cs212 | Design of Computer Programs - Programming Principles | https://www.udacity.com/course/cs212
-cs259 | Software Debugging - Build Your Own Debugger | https://www.udacity.com/course/cs259
-cs313 | Intro to Theoretical Computer Science - Dealing with Challenging Problems | https://www.udacity.com/course/cs313
+cs101 | Intro to Computer Science - Create and Analyze a Social Network | https://www.udacity.com/course/cs101 | Learn key computer science concepts in this introductory Python course. You'll learn by doing, and will build your own search engine and social network.
+ud775 | How to Use Git and GitHub - Contribute to a Live Project | https://www.udacity.com/course/ud775 | Learn to use version control, an important tool for any developer.  The course will focus on Git, a specific version control system, and GitHub, a collaboration platform.
+cs046 | Intro to Java Programming - Building Programs with Classes & Objects | https://www.udacity.com/course/cs046 | Learn essential computer science and object-oriented programming concepts in this introductory Java course.
+ud036 | Programming Foundations with Python - Explore Python to Build Your Own Program | https://www.udacity.com/course/ud036 | Introductory programming class to learn Object-Oriented Programming, a must-have technique to reuse and share code easily. Learn by making projects that spread happiness!
+ud617 | Intro to Hadoop and MapReduce - Implement MapReduce | https://www.udacity.com/course/ud617 | In this short course, learn the fundamentals of MapReduce and Apache Hadoop to start making sense of Big Data in the real world!
+cs271 | Intro to Artificial Intelligence - Learn the Fundamentals of AI | https://www.udacity.com/course/cs271 | This course will introduce you to the basics of AI. Topics include machine learning, probabilistic reasoning, robotics, computer vision, and natural language processing.
+cs344 | Intro to Parallel Programming - Using CUDA to Harness the Power of GPUs | https://www.udacity.com/course/cs344 | Learn the fundamentals of parallel computing with the GPU and the CUDA programming environment by coding a series of image processing algorithms. #filters, #cuda.
+ud675 | Machine Learning: Supervised Learning - Predict Housing Prices | https://www.udacity.com/course/ud675 | In this course, you'll learn how to apply Supervised Learning techniques important for solving a range of data science problems. And for surviving the robot uprising.
+ud820 | Machine Learning: Reinforcement Learning - Design Learning Agents for Pacman | https://www.udacity.com/course/ud820 | Can we program machines to learn like humans? This course will teach you the algorithms for designing self-learning agents like us!
+ud741 | Machine Learning: Unsupervised Learning - Design a Recommendation System | https://www.udacity.com/course/ud741 | Ever wonder how Netflix can predict what movies you'll like? Or how Amazon knows what you want to buy before you do? The answer can be found in Unsupervised Learning!
+ud805 | Software Development Life Cycles - Decision Assistance Android App | https://www.udacity.com/course/ud805 | Software Development Life Cycles explores requirements engineering, architecture and design, testing, and software quality in general.
+cs373 | Artificial Intelligence for Robotics - Track and Capture a Runaway Robot | https://www.udacity.com/course/cs373 | Learn how to program all the major systems of a robotic car. Topics include planning, search, localization, tracking, and control.
+ud032 | Data Wrangling with MongoDB - Add to OpenStreetMap | https://www.udacity.com/course/ud032 | Data Scientists spend most of their time cleaning data. In this course, you will learn to convert and manipulate messy data to extract what you need.
+cs387 | Applied Cryptography - Science of Secrets | https://www.udacity.com/course/cs387 | Cryptography is present in everyday life, from paying with a credit card to using the telephone.  Learn all about making and breaking puzzles in computing.
+cs258 | Software Testing - How to Make Software Fail | https://www.udacity.com/course/cs258 | Learn how to catch bugs and break software as you discover different testing methods that will help you build better software.
+cs215 | Intro to Algorithms - Social Network Analysis | https://www.udacity.com/course/cs215 | This class will give you an introduction to the design and analysis of algorithms, enabling you to analyze networks and discover how individuals are connected.
+cs291 | Interactive 3D Graphics - Create Your Own 3D Scene with WebGL | https://www.udacity.com/course/cs291 | This course will teach you the principles of 3D computer graphics: meshes, transforms, lighting, animation, and making interactive 3D applications run in a browser.
+cs262 | Programming Languages - Building a Web Browser | https://www.udacity.com/course/cs262 | This course is an introduction to the fundamentals of programming languages. Concepts include how to specify and process valid strings, sentences and program structures.
+cs212 | Design of Computer Programs - Programming Principles | https://www.udacity.com/course/cs212 | Learn how to model problems, and how to optimize performance by using some of the advanced features of Python.
+cs259 | Software Debugging - Build Your Own Debugger | https://www.udacity.com/course/cs259 | In this course you will learn how to debug programs systematically using scientific methods and build several automated debugging tools in Python.
+cs313 | Intro to Theoretical Computer Science - Dealing with Challenging Problems | https://www.udacity.com/course/cs313 | Learn the basic concepts in theoretical computer science. Discover what they imply for solving tough computational challenges.

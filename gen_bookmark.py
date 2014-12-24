@@ -12,6 +12,7 @@ reload(sys)
 sys.setdefaultencoding("utf-8")
 from utils import Utils
 from update.all_subject import default_subject
+from record import Record
 
 bookmark_start = '<!DOCTYPE NETSCAPE-Bookmark-file-1>\n\
 <!-- This is an automatically generated file.\n\
@@ -70,10 +71,9 @@ def do_gen_bookmark(filter_keyword):
         url_f = open(file_name)
     
         for line in url_f.readlines():
-            pos_1 = line.find("|")
-            pos_2 = line.find("|", pos_1 + 1)
-            url = line[pos_2 + 1 : ].strip()
-            title = line[pos_1 : pos_2].replace("|","").strip()
+            record = Record(line)
+            url = record.get_url().strip()
+            title = record.get_title().strip()
 
             if filter_keyword != "" and title.lower().find(filter_keyword.lower()) != -1:
                 write_bookmark_body(bookmark_f, url, title)

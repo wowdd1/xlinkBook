@@ -141,11 +141,11 @@ class Spider:
         f.close()
     
     
-    def write_db(self, f, course_num, course_name, url):
+    def write_db(self, f, course_num, course_name, url, describe=""):
         if url == "":
             url = self.google + course_num + " " + course_name
     
-        f.write(course_num.strip() + " | " + course_name.replace("|","") + " | " + url  +  "\n")
+        f.write(course_num.strip() + " | " + course_name.replace("|","") + " | " + url  + " | " + describe + "\n")
     
     
     def countFileLineNum(self, file_name):

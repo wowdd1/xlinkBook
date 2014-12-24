@@ -1,10 +1,16 @@
 usage:  
 
-    ./list.py -i filename or dirname -c column_num -f 'keyword or regexp'] -s 
+    ./list.py -i filename or dirname -c column_num -f 'keyword or regexp' -s -d -w 100 
 
-filename or dirname: the file or dir
+-c: column_num, from 1 to 3
 
-column_num: from 1 to 3
+-f: filename or dirname
+
+-s: output with collor
+
+-d: output the description
+
+-w: custom the cell length
 
 keyword or regexp: the keyword for filter course
 
@@ -55,7 +61,7 @@ eg:
 
     ./list.py -i db/eecs/eecs-course-edx2014 -c 2 | grep -i ""
     
-    ./list.py -i db/eecs/ -c 2 -f 'data' -s
+    ./list.py -i db/eecs/ -c 1 -f 'data' -s -d -w 130
 
 the output would looks like this:
 
