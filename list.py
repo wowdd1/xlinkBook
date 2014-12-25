@@ -60,16 +60,20 @@ def align_id_title(record):
     else:
         return course_num + "|" + course_name
 
-def align_describe(record):
-    describe = record.get_describe()
-    if len(describe.decode('utf8')) > cell_len - course_num_len - 2:
-        describe = describe[0 : cell_len - course_num_len - 2 - 2 ] + "..."
+def align_describe(describe):
+    if len(describe) > course_name_len - 1 and output_with_describe == False:
+        describe = describe[0 : course_name_len - 3 ] + "..."
     else:
-        describe += get_space(0, cell_len - course_num_len - 1 - len(describe) )
+        describe += get_space(0, course_name_len - len(describe))
     return get_space(0, course_num_len) + "|" + describe
 
-def align_black():
-    return get_space(0, course_num_len) + "|" + get_space(0, cell_len - course_num_len - 1)
+def align_black(text):
+    if text == "":
+        return get_space(0, course_num_len) + "|" + get_space(0, cell_len - course_num_len - 1)
+    else:
+        if len(text) > course_name_len:
+            text = text[0 : course_name_len - 3] + "..."
+        return get_space(0, course_num_len) + "|" + text + get_space(0, course_name_len - len(text))
 
 def print_with_color(text):
     global color_index
@@ -149,14 +153,19 @@ def build_lines(list_all):
         if len(id_title_lines[i]) == 0:
             record = Record("");
             id_title_lines[i].append(align_id_title(record))
-            describe_lines[i].append(align_describe(record))
-            black_lines[i].append(align_black())
+            describe_lines[i].append(align_describe(""))
+            black_lines[i].append(align_black(""))
 
 
         for j in range(0, len(list_all[i])):
             id_title_lines[i][j] = align_id_title(list_all[i][j])
-            describe_lines[i][j] = align_describe(list_all[i][j])
-            black_lines[i][j] = align_black()
+            describe = len(list_all[i][j].get_describe())
+            if describe > course_name_len and output_with_describe == True:
+                describe_lines[i][j] = align_describe(list_all[i][j].get_describe()[0 : course_name_len])
+                black_lines[i][j] = align_black(" " + list_all[i][j].get_describe()[course_name_len : ])
+            else:
+                describe_lines[i][j] = align_describe(list_all[i][j].get_describe())
+                black_lines[i][j] = align_black("")
 
     return id_title_lines, describe_lines, black_lines
 

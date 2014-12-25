@@ -24,6 +24,7 @@ class MitSpider(Spider):
     def processMitData(self, html, f):
         if self.need_update_subject(self.subject) == False:
             return
+        #print html
         soup = BeautifulSoup(html);
         links_all = soup.find_all("a")
         links = []
@@ -33,15 +34,23 @@ class MitSpider(Spider):
                and False == link["href"].startswith("m"):
                 links.append(link)
         content = []
-        for tag in soup.find_all("h3"):
-            content = tag.prettify().split("\n")
-            course_num = content[1].strip()[0:content[1].strip().find(" ")]
-            if course_num[0:1] != '6':
-                continue
-            link = self.getMitCourseLink(links, course_num)
-            self.count = self.count + 1
-    
-            self.write_db(f, course_num, content[1].strip()[content[1].strip().find(" "):], link)
+        course_num = ""
+        title = ""
+        link = ""
+        for line in html.split("\n"):
+            if line.strip().find('<h3>') != -1 or (line.strip().startswith('<br>') and (line.strip()[len(line.strip()) - 1 : ] == '.' or line.strip()[len(line.strip()) - 7 : ] == 'limited')):
+                line = line[line.find('>', 3) + 1 : ]
+                if line.find('</h3>') == -1:
+                    #print line
+                    if line[0 : 2] == '6.':
+                        course_num = line.strip()[0 : line.strip().find(" ")]
+                        title = line.strip()[line.strip().find(" ") + 1 : ]
+                        link = self.getMitCourseLink(links, course_num)
+                    else:
+                        print course_num + " " + title + " " + link                     
+                        remark = line.strip()
+                        self.count = self.count + 1
+                        self.write_db(f, course_num, title, link, remark)
     
     def do_work(self):
         #mit

@@ -8,53 +8,91 @@ from spider import *
 
 
 class CourseraSpider(Spider):
+    sessions = []
+    universities = []
+    instructors = []
 
     def __init__(self):
         Spider.__init__(self)    
         self.school = "coursera"
-    
-    
+        
     #coursera
-    
-    
-    def getPartnerName(self, id, jobj):
-        for partner in jobj["linked"]["partners.v1"]:
-            if partner["id"] == id:
-                return partner["name"]
-        return "Unknow"
-    
-    def getHomeLink(self, id, type, slug, jobj):
-        if type == "v1.session":
-            for session in jobj["linked"]["v1Sessions.v1"]:
-                if session["courseId"] == id:
-                    return session["homeLink"]
+    def loopJobj(self, url, dataList):
+        r = requests.get(url);
+        jobj = json.loads(r.text)
+        for item in jobj.items()[0][1]:
+            dataList.append(item)
+
+    def initList(self):
+        url = "https://api.coursera.org/api/catalog.v1/sessions?fields=id,courseId,homeLink,status,active,durationString,startDay,startMonth,startYear,name,signatureTrackCloseTime,signatureTrackOpenTime,signatureTrackPrice,signatureTrackPrice,eligibleForCertificates,eligibleForSignatureTrack,certificateDescription,certificatesReady"
+                
+        self.loopJobj(url, self.sessions)
+
+        url = "https://api.coursera.org/api/catalog.v1/universities?fields=id,name,description,homeLink,website,websiteTwitter,websiteFacebook,websiteYoutube"
+        self.loopJobj(url, self.universities)
+       
+
+        url = "https://api.coursera.org/api/catalog.v1/instructors?fields=fullName,title,department,website,websiteTwitter,websiteFacebook,websiteLinkedin,websiteGplus,shortName" 
+        self.loopJobj(url, self.instructors)
+
+    def getInstructorName(self, instructorIds):
+        name = ""
+        for instructor in self.instructors:
+            for instructorId in instructorIds:
+                if instructor['id'] == instructorId:
+                    name += instructor['firstName'] + " " + instructor['lastName'] + ","
+        if name[len(name) -  1 : ] == ",":
+            name = name[0 : len(name) - 1]
+        return name
+
+    def getUniversitieName(self, universityIds):
+        name = ""
+        for universitie in self.universities:
+            for universityId in universityIds:
+                if universitie['id'] == universityId:
+                    name += universitie['name'] + ","
+        if name[len(name) -  1 : ] == ",":
+            name = name[0 : len(name) - 1]
+        return name
+
+    def getSessionLink(self, sessionIds, slug): 
+        for session in self.sessions:
+            for sessionId in sessionIds:
+                if session['id'] == sessionId and session['active'] == True:
+                    return session['homeLink']   
         return "https://www.coursera.org/course/" + slug
     
-    def getCategoriyUrl(self, subject_id):
-        return "https://www.coursera.org/api/courses.v1?fields=certificates,instructorIds,partnerIds,photoUrl,specializations,startDate,v1Details,partners.v1%28homeLink,logo,name%29,instructors.v1%28firstName,lastName,middleName,prefixName,profileId,shortName,suffixName%29,specializations.v1%28logo,partnerIds,shortName%29,v1Details.v1%28upcomingSessionId%29,v1Sessions.v1%28durationWeeks,hasSigTrack%29&includes=instructorIds,partnerIds,specializations,v1Details,specializations.v1%28partnerIds%29,v1Details.v1%28upcomingSessionId%29&extraIncludes=_facets&q=search&languages=en&limit=500" + "&categories=" + subject_id
-    
+    def getCategoryUrl(self, subjectId):
+        return "https://api.coursera.org/api/catalog.v1/categories?id=" + str(subjectId) + "&includes=courses"
     
     def getCourseraOnlineCourse(self, subject, url):
         if self.need_update_subject(subject) == False:
             return
         r = requests.get(url)
         jobj = json.loads(r.text)
-    
+        ids = ""
+        for courseObj in jobj.items()[1][1]['courses']:
+            ids += str(courseObj['id']) + ","
+
+        url = "https://api.coursera.org/api/catalog.v1/courses?ids=" + ids[0 : len(ids) - 1] + "&fields=id,shortName,name,language,previewLink,shortDescription,instructor&includes=sessions,instructors,universities,categories"
+
+        r = requests.get(url)
+        print url
+        jobj = json.loads(r.text)
+
         file_name = self.get_file_name(subject.strip(), self.school)
         print "subject " + subject.strip() + " ----> " + file_name
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
-        count = 0
-    
-        print "processing json and write data to file..."
-        for item in jobj["elements"]:
-            title = item["name"].strip().replace('  ', ' ') + " (" + self.getPartnerName(item["partnerIds"][0], jobj).strip() + ")"
-            title = self.delZh(title)
-    
-            count = count + 1
-            link = self.getHomeLink(item["id"], item["courseType"], item["slug"], jobj)
-            self.write_db(f, item["id"], title, link)
-    
+        count = 10000
+
+        for courseObj in jobj.items()[0][1]:
+            url = self.getSessionLink(courseObj['links']['sessions'], courseObj['shortName'])
+            print str(courseObj['id']) + " " + courseObj['name'] + " " + url
+            remark = courseObj['shortDescription'] + " university:" + self.getUniversitieName(courseObj['links']['universities']) + " instructor:" + self.getInstructorName(courseObj['links'].get('instructors',"none"))
+            self.write_db(f, str(courseObj['id']), self.delZh(courseObj['name']), url, self.delZh(remark.replace("\n", "" ))) 
+            count += 1
+
         self.close_db(f)
         if file_lines != count and count > 0:
             self.do_upgrade_db(file_name)
@@ -62,22 +100,19 @@ class CourseraSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
-    
+
     def do_work(self):
         print "downloading coursera course info"
-        r = requests.get("https://www.coursera.org/api/courses.v1?fields=certificates,instructorIds,partnerIds,photoUrl,specializations,startDate,v1Details,partners.v1%28homeLink,logo,name%29,instructors.v1%28firstName,lastName,middleName,prefixName,profileId,shortName,suffixName%29,specializations.v1%28logo,partnerIds,shortName%29,v1Details.v1%28upcomingSessionId%29,v1Sessions.v1%28durationWeeks,hasSigTrack%29&includes=instructorIds,partnerIds,specializations,v1Details,specializations.v1%28partnerIds%29,v1Details.v1%28upcomingSessionId%29&extraIncludes=_facets&q=search&languages=en")
-    
     
         print "loading data..."
+        self.initList()
+
+        r = requests.get("https://api.coursera.org/api/catalog.v1/categories") 
         jobj = json.loads(r.text)
-    
-    
-    
-        for subject in jobj["paging"]["facets"]["categories"]["facetEntries"]:
-            self.getCourseraOnlineCourse(subject["name"], self.getCategoriyUrl(subject["id"]))
-        #print subject["id"]
-        #print subject["name"]
-    
+        for k, v in jobj.items():
+            if k == "elements":
+                for subject in v:
+                    self.getCourseraOnlineCourse(subject['name'], self.getCategoryUrl(subject['id']))
    
 
 start = CourseraSpider()
