@@ -44,11 +44,22 @@ class GithubSpider(Spider):
         Spider.__init__(self)
         self.school = "github"
 
+    def isQueryLang(self, lang):
+        for item in self.lang_list:
+            if item.lower() == lang.lower():
+                return True
+        return False
+
     def processGithubData(self, lang, large_than_stars, per_page):
         file_name = self.get_file_name("eecs/github/" + lang, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
-        url = "https://api.github.com/search/repositories?page=1&per_page=" + per_page + "&q=stars:>" + large_than_stars +"+language:" +  lang.replace("#","%23").replace("+","%2B") + "&sort=stars&order=desc"
+        url = ""
+        if self.isQueryLang(lang) == True:
+            url = "https://api.github.com/search/repositories?page=1&per_page=" + per_page + "&q=stars:>" + large_than_stars +"+language:" +  lang.replace("#","%23").replace("+","%2B") + "&sort=stars&order=desc"
+        else:
+            url = "https://api.github.com/search/repositories?page=1&per_page=" + per_page + "&q=" + lang + "+stars:>" + large_than_stars + "&sort=stars&order=desc"
+
         print "processing " + lang + " " + url
         r = requests.get(url)
         dict_obj = json.loads(r.text)
@@ -104,6 +115,7 @@ class GithubSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
+
     def do_work(self):
         i = 0
         for lang in self.lang_list:
@@ -115,6 +127,9 @@ class GithubSpider(Spider):
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
+
+        print "get spark data..."
+        self.processGithubData("spark", '500','100')
 
         print "get user data..."
         self.processGithubiUserData("", '1000', "50")
