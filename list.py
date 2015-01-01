@@ -177,6 +177,13 @@ def get_line(lines, start, end, j):
 
     return result
 
+def get_space_cell(num):
+    result = ""
+    for i in range(0, num):
+        result += get_space(0, course_num_len) + "|" + get_space(0, course_name_len)
+
+    return result
+
 def print_list(file_name):
     current = 0
     old_line = ""
@@ -264,13 +271,13 @@ def print_list(file_name):
                 describe = ""
                 black = ""
                 if len(id_title_lines[0]) == len(id_title_lines[1]):
-                    content = get_line(id_title_lines, 0, 2, last) + get_line(black_lines, 2, 3, 0)[1:]
-                    describe = get_line(describe_lines, 0, 2, last) + get_line(black_lines, 2, 3, 0)[1:]
-                    black = get_line(black_lines, 0, 2, last) + get_line(black_lines, 2, 3, 0)[1:]
+                    content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1) + "|"
+                    describe = get_line(describe_lines, 0, 2, last) + get_space_cell(1) + "|"
+                    black = get_line(black_lines, 0, 2, last) + get_space_cell(1) + "|"
                 else:
-                    content = get_line(id_title_lines, 0, 1, last) + get_line(black_lines, 1, 3, 0)[1:]
-                    describe = get_line(describe_lines, 0, 1, last) + get_line(black_lines, 1, 3, 0)[1:]
-                    black = get_line(black_lines, 0, 1, last) + get_line(black_lines, 1, 3, 0)[1:]
+                    content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2) + "|"
+                    describe = get_line(describe_lines, 0, 1, last) + get_space_cell(2) + "|"
+                    black = get_line(black_lines, 0, 1, last) + get_space_cell(2) + "|"
 
                 if output_with_color == True:
                     print_with_color(content)
@@ -296,9 +303,9 @@ def print_list(file_name):
                     print black
             if len(id_title_lines[0]) > len(id_title_lines[1]):
                 last = len(id_title_lines[0]) - 1
-                content = get_line(id_title_lines, 0, 1, last) + get_line(black_lines, 1, 2, 0)[1:]
-                describe = get_line(describe_lines, 0, 1, last) + get_line(black_lines, 1, 2, 0)[1:]
-                black = get_line(black_lines, 0, 2, 0)
+                content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1) + "|"
+                describe = get_line(describe_lines, 0, 1, last) + get_space_cell(1) + "|"
+                black = get_line(black_lines, 0, 1, last) + get_space_cell(1) + "|"
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -374,8 +381,9 @@ def main(argv):
             global output_with_color
             output_with_color = True
         elif o in ('-d', '--describe'):
-            global output_with_describe
+            global output_with_describe, custom_cell_len
             output_with_describe = True
+            custom_cell_len = cell_len + (cell_len / 14)
         elif o in ('-w', '--width'):
             global custom_cell_len
             custom_cell_len = int(a) 
