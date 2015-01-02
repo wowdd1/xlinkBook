@@ -359,6 +359,7 @@ def main(argv):
         usage()
         sys.exit(2)
 
+    global column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len
     for o, a in opts:
         if o in ('-h', '--help'):
             usage()
@@ -372,20 +373,15 @@ def main(argv):
         elif o in ('-i', '--input'):
             source = a
         elif o in ('-c', '--column_num'):
-            global column_num
             column_num = a
         elif o in ('-f', '--filter'):
-            global filter_keyword
             filter_keyword = str(a).strip()
         elif o in ('-s', '--style'):
-            global output_with_color
             output_with_color = True
         elif o in ('-d', '--describe'):
-            global output_with_describe, custom_cell_len
             output_with_describe = True
             custom_cell_len = cell_len + (cell_len / 14)
         elif o in ('-w', '--width'):
-            global custom_cell_len
             custom_cell_len = int(a) 
     if source == "":
         print "you must input the input file or dir"

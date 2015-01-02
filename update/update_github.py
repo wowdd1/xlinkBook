@@ -92,15 +92,19 @@ class GithubSpider(Spider):
         file_name = self.get_file_name("eecs/github/" + lang, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
-        url = self.getUrl(lang, 1, str(large_than_stars), str(per_page))
+        page = 1
+        url = self.getUrl(lang, page, str(large_than_stars), str(per_page))
         self.count = 0
 
         print "processing " + lang
  
         total_size = self.processPageData(f, file_name, lang, url)
-        if total_size > per_page:
+        if total_size > 1000:
+            total_size = 1000
+        while total_size > (page *per_page):
             #print "total size:" + str(total_size) + " request page 2"
-            self.processPageData(f, file_name, lang, self.getUrl(lang, 2, str(large_than_stars), str(per_page)))
+            page += 1
+            self.processPageData(f, file_name, lang, self.getUrl(lang, page, str(large_than_stars), str(per_page)))
      
         self.close_db(f)
         if self.count > 0:
