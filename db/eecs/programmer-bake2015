@@ -1,0 +1,284 @@
+1 | Peter Norvig | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=1 Peter Norvig | Director of Research at Google and author of the standard text on AI.
+2 | Alan Kay | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=2 Alan Kay | Inventor of Smalltalk. Coined the term "object-oriented programming".
+3 | Guy Steele | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=3 Guy Steele | Co-inventor of Scheme and part of the Common Lisp Gang of Five. Currently working on Fortress.
+4 | Donald Knuth | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=4 Donald Knuth | Author of The Art of Computer Programming and TeX
+5 | Gerald Jay | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=5 Gerald Jay | Sussman Co-creator of Scheme and co-author of The Structure And Interpretation of Computer Programs.
+6 | John McCarthy | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=6 John McCarthy | Invented Lisp
+7 | John Carmack | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=7 John Carmack | Founder of id Software; lead programmer of Doom, Quake, and others.
+8 | Dennis Ritchie | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=8 Dennis Ritchie | Invented C and contributed to development of UNIX
+9 | Joe Armstrong | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=9 Joe Armstrong | Inventor of Erlang
+10 | Ken Thompson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=10 Ken Thompson | Inventor of UNIX
+11 | Brian Kernighan | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=11 Brian Kernighan | The K in AWK and K&amp;R. Author of the original "hello, world" program.
+12 | Guido van | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=12 Guido van | Rossum Invented Python
+13 | Linus Torvalds | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=13 Linus Torvalds | Wrote and maintains Linux kernel. Wrote GIT version control system.
+14 | Steve Wozniak | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=14 Steve Wozniak | Wrote most of the original Apple II software.
+15 | Bill Joy | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=15 Bill Joy | Wrote BSD TCP/IP stack, vi
+16 | Simon Peyton | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=16 Simon Peyton | Jones Co-inventor of Haskell and lead designer of Glasgow Haskell Compiler.
+17 | Larry Wall | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=17 Larry Wall | Invented Perl
+18 | Alan Cox | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=18 Alan Cox | One of Linus Torvalds's main lieutenants. Wrote Linux TCP/IP code.
+19 | Jamie Zawinski | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=19 Jamie Zawinski | Author of XEmacs and early Netscape/Mozilla hacker.
+20 | Ward Cunningham | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=20 Ward Cunningham | Wrote the first Wiki and FIT.
+21 | Chuck Moore | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=21 Chuck Moore | Invented Forth
+22 | Theo de | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=22 Theo de | Raadt Founder of OpenBSD project. Original author of OpenSSH.
+23 | Tim Sweeney | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=23 Tim Sweeney | Founder of Epic Games. Wrote the Unreal Engine.
+24 | Edi Weitz | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=24 Edi Weitz | Lisp library hacker extraordinaire. Co-organizer of the European Common Lisp Meetings 2005 and 2006
+25 | Robert Morris | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=25 Robert Morris | Wrote the Internet Worm and co-founded Viaweb with Paul Graham
+26 | Brendan Eich | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=26 Brendan Eich | Inventor of Javascript. CTO of the Mozilla Corporation
+27 | Paul Graham | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=27 Paul Graham | Lisp hacker and author.
+28 | Yukihiro Matsumoto | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=28 Yukihiro Matsumoto | Invented Ruby
+29 | Fabrice Bellard | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=29 Fabrice Bellard | Wrote QEMU, TinyCC, FFMPEG; Winner of 2001 IOCCC
+30 | Dan Bernstein | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=30 Dan Bernstein | Wrote djbns and qmail
+31 | Andrew Tridgell | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=31 Andrew Tridgell | Wrote Samba file server and co-invented rsync algorithm
+32 | Andrew Tanenbaum | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=32 Andrew Tanenbaum | Created Minix, advocate for micro-kernels.
+33 | Andy Gavin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=33 Andy Gavin | Co-founder of Naughty Dog software. Wrote GOAL which was used to develop Jak and Daxter.
+34 | Brad Fitzpatrick | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=34 Brad Fitzpatrick | Wrote LiveJournal, OpenID, memcached, Perlbal
+35 | Bram Cohen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=35 Bram Cohen | Wrote BitTorrent
+36 | Michael Abrash | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=36 Michael Abrash | Optimization expert
+37 | Hal Abelson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=37 Hal Abelson | Abelson of Abelson and Sussman. MIT professor.
+38 | Miguel de | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=38 Miguel de | Icaza Wrote GNOME and Mono
+39 | Richard Stallman | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=39 Richard Stallman | Wrote Emacs, gcc, and started the Free Software movement.
+40 | Rob Pike | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=40 Rob Pike | Author of first bitmap windowing system for Unix. Worked on Plan 9. Now works at Google.
+41 | Douglas Engelbart | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=41 Douglas Engelbart | Invented computer mouse
+42 | Audrey Tang | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=42 Audrey Tang | Leader of Pugs project to implement Perl 6 in Haskell
+43 | Marvin Minsky | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=43 Marvin Minsky | Artifical Intelligence researcher
+44 | Stephen Wolfram | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=44 Stephen Wolfram | Invented Mathematica
+45 | Bruce Schneier | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=45 Bruce Schneier | Security expert. Creator of Twofish block cipher.
+46 | Philip Greenspun | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=46 Philip Greenspun | Author of Greenspun's Tenth Law and sometimes instructor at MIT
+47 | Frances Allen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=47 Frances Allen | Pioneer in optimizing compilers. First woman to win Turing Award (2006) and first woman IBM fellow.
+48 | Erik Naggum | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=48 Erik Naggum | Lisp hacker
+49 | James Gosling | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=49 James Gosling | Invented Java, NeWS windowing system.
+50 | Paul Buchheit | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=50 Paul Buchheit | Creator of GMail
+51 | Bjarne Stroustrup | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=51 Bjarne Stroustrup | Invented C++
+52 | Anders Hejlsberg | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=52 Anders Hejlsberg | Lead architect of C#, Architect of Delphi at Borland. Wrote what became Turbo Pascal
+53 | Justin Frankel | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=53 Justin Frankel | Wrote Winamp, NSIS, and Gnutella
+54 | David Heinemeier | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=54 David Heinemeier | Hansson Invented Rails
+55 | Bill Gosper | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=55 Bill Gosper | One of the original MIT hackers. Worked on Lisp machines, Maclisp, and Macsyma
+56 | L. Peter | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=56 L. Peter | Deutsch Author of Ghostscript, Implemented Smalltalk-80 at Xerox PARC and Lisp 1.5 on PDP-1
+57 | Whitfield Diffie | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=57 Whitfield Diffie | Discovered principle of public key cryptography
+58 | Wil Shipley | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=58 Wil Shipley | Wrote Delicious Monster. Founded Omni Group
+59 | Andy Hertzfeld | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=59 Andy Hertzfeld | Key Macintosh developer
+60 | Raymond Chen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=60 Raymond Chen | Worked on OS/2, Windows 95, and Direct X
+61 | Richard Gabriel | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=61 Richard Gabriel | Lisper and Poet. Currently a Distinguished Engineer at IBM. Chair of OOPSLA 2007.
+62 | Charles Simonyi | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=62 Charles Simonyi | Invented Hungarian notation. Original author of Microsoft Word. Head of the IP project at Microsoft, now running intentsoft.com
+63 | Sergey Brin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=63 Sergey Brin | Founded Google
+64 | Gregor Kiczales | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=64 Gregor Kiczales | Wrote Common Lisp MOP. Invented Aspect Oriented programming.
+65 | Martin Fowler | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=65 Martin Fowler | Chief Scientist at Thoughtworks. Author of Refactoring and many other books.
+66 | Dan Ingalls | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=66 Dan Ingalls | Smalltalk implementor and designer.
+67 | Steve Yegge | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=67 Steve Yegge | Blogger and Googler
+68 | Matt Dillon | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=68 Matt Dillon | FreeBSD hacker, founded DragonFly BSD project
+69 | Leslie Lamport | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=69 Leslie Lamport | Distributed systems researcher and developer of LaTeX
+70 | Why the | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=70 Why the | lucky stiff Core Ruby developer and free spirit
+71 | Xavier Leroy | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=71 Xavier Leroy | Primary developer of OCaml. Wrote LinuxThreads threading package used in pre 2.6 Linux kernels
+72 | Alexander Stepanov | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=72 Alexander Stepanov | Author of the Standard Template Library for C++
+73 | Douglas Crockford | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=73 Douglas Crockford | JSON founder, JavaScript Architect at Yahoo!
+74 | Larry Page | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=74 Larry Page | Founded Google
+75 | Marc Andreessen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=75 Marc Andreessen | Co-wrote Mosaic. Founded Netscape.
+76 | Douglas McIlroy | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=76 Douglas McIlroy | Unix toolsmith; invented Unix pipelines
+77 | Bill Atkinson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=77 Bill Atkinson | Early Mac developer. Designed and implemented Hypercard
+78 | David Cutler | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=78 David Cutler | Architect of VMS and Windows NT
+79 | Zed Shaw | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=79 Zed Shaw | Wrote Mongrel (Rails HTTP server)
+80 | Danny Hillis | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=80 Danny Hillis | Founder of Thinking Machines
+81 | Roy Fielding | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=81 Roy Fielding | One of the principle authors of HTTP specification. Invented REST. Co-founder of Apache project
+82 | Olin Shivers | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=82 Olin Shivers | Comp Sci professor interested in Scheme and ML. Wrote scsh
+83 | Vinton Cerf | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=83 Vinton Cerf | Father of TCP/IP
+84 | Allison Randal | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=84 Allison Randal | Architect of Parrot virtual machine
+85 | Aaron Swartz | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=85 Aaron Swartz | Invented web.py
+86 | Trevor Blackwell | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=86 Trevor Blackwell | Principal at Viaweb. Now founder and CEO of Anybots
+87 | Bruce Momjian | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=87 Bruce Momjian | Core PostgreSQL developer
+88 | Van Jacobson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=88 Van Jacobson | Redesigned TCP/IP flow control algorithms, saving the net from total collapse. Eponymous inventor of Van Jacobson TCP/IP header compression.
+89 | Mark Pilgrim | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=89 Mark Pilgrim | Wrote Universal Feed Parser. Author of Dive into Python and Dive into Accessibility.
+90 | Bill Gates | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=90 Bill Gates | Wrote BASIC for Altair
+91 | Henry Baker | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=91 Henry Baker | One of the founder of Symbolics; comp sci. researcher
+92 | Brad Cox | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=92 Brad Cox | Invented Objective C
+93 | Jonathan Rees | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=93 Jonathan Rees | Designed T dialect of Scheme and co-wrote Scheme 48
+94 | Bertrand Meyer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=94 Bertrand Meyer | Invented Eiffel
+95 | Ivan Sutherland | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=95 Ivan Sutherland | Invented Sketchpad, precursor to modern GUIs
+96 | Niklaus Wirth | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=96 Niklaus Wirth | Invented Pascal, Modula, Oberon
+97 | Alex Martelli | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=97 Alex Martelli | Co-author of Python Cookbook and Author of Python in a Nutshell
+98 | Philip Wadler | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=98 Philip Wadler | Professor of Theoretical Computer Science at the University of Edinburgh. Contributed to design of Java, Haskell, and XQuery.
+99 | Mark Shuttleworth | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=99 Mark Shuttleworth | Founded Thawte and Ubuntu project. Previously a Debian developer
+100 | Tom Lane | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=100 Tom Lane | Core PostgreSQL developer responsible for optimizer.
+101 | Richard Hipp | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=101 Richard Hipp | Wrote sqlite embedded SQL database
+102 | Ingo MolnÃ¡r | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=102 Ingo MolnÃ¡r | Linux hacker, author of many Linux perfomance improvements.
+103 | Bruce Eckel | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=103 Bruce Eckel | Founding member of ANSI/ISO C++ committee. Author of Thinking in Java and Thinking in C++.
+104 | Kent Pitman | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=104 Kent Pitman | Technical Editor of Common Lisp ANSI standard
+105 | Jeff Rubin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=105 Jeff Rubin | According to Richard Gabriel a "code-writing savant".
+106 | Richard Greenblatt | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=106 Richard Greenblatt | Main implementor of Maclisp on PDP-6. Co-founded Lisp Machines, Inc.
+107 | Adrian Holovaty | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=107 Adrian Holovaty | Lead developer of Django
+108 | Jon Bentley | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=108 Jon Bentley | Author of Programming Pearls books.
+109 | Kent Beck | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=109 Kent Beck | Creator of XP
+110 | Bram Moolenaar | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=110 Bram Moolenaar | Wrote VIM (Vi IMproved)
+111 | Tom Duff | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=111 Tom Duff | Invented Duff's device and noted graphics programmer
+112 | Dave Fox | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=112 Dave Fox | Lisp hacker, directior of Lispworks Ltd.
+113 | Luke Gorrie | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=113 Luke Gorrie | Lisp and Erlang hacker. Project lead for SLIME.
+114 | Marco Baringer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=114 Marco Baringer | Common Lisp hacker, author of Uncommon Web
+115 | Alain Colmerauer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=115 Alain Colmerauer | Invented Prolog
+116 | Don Stewart | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=116 Don Stewart | Haskell hacker
+117 | John Foderaro | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=117 John Foderaro | Original author of Franz's Allegro Common Lisp
+118 | Elizabeth Rather | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=118 Elizabeth Rather | Colleague of Chuck Moore and second ever Forth programmer
+119 | Ka-Ping Yee | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=119 Ka-Ping Yee | Python hacker extraordinaire.
+120 | Jeff Dean | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=120 Jeff Dean | Google Fellow in Systems Infrastructure Group. Co-inventor of MapReduce.
+121 | Tim Peters | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=121 Tim Peters | Python hacker and author of Spambayes
+122 | Rasmus Lerdorf | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=122 Rasmus Lerdorf | Invented PHP
+123 | Alvy Ray | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=123 Alvy Ray | Smith Graphics pioneer. Worked at LucasFilm, helped found Pixar.
+124 | Marshall Kirk | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=124 Marshall Kirk | McKusick Designed Berkeley Fast File System.
+125 | Steve Russell | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=125 Steve Russell | One of John McCarthy's grad students. Brought Lisp to life by hand-coding EVAL in assembler. Wrote Spacewar.
+126 | Damian Conway | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=126 Damian Conway | Perl hacker and three time winner of the Larry Wall award. Wrote Lingua::Romana::Perligata and others.
+127 | Ola Bini | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=127 Ola Bini | Core JRuby developer
+128 | Poul-Henning Kamp | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=128 Poul-Henning Kamp | FreeBSD kernel hacker
+129 | Ellen Spertus | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=129 Ellen Spertus | Head of Interdisciplinary Computer Science department at Mills College
+130 | Wietse Venema | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=130 Wietse Venema | Wrote Postfix. Co-wrote Satan and TCT
+131 | Charles Nutter | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=131 Charles Nutter | Principle JRuby developer
+132 | Jim Hugunin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=132 Jim Hugunin | Original author of Iron Python, now at Microsoft working on dynamic languages on the CLR. Co-designer of AspectJ language, lead development through 1.1 release.
+133 | Roberto Ierusalimschy | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=133 Roberto Ierusalimschy | Invented Lua
+134 | Edward Feigenbaum | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=134 Edward Feigenbaum | Father of Expert Systems
+135 | Joshua Bloch | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=135 Joshua Bloch | Author of Java collections framework. Now at Google.
+136 | Urs Hölzle | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=136 Urs Hölzle | Researcher behind Sun's HotSpot JVM technology.
+137 | P.J. Plauger | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=137 P.J. Plauger | Worked on first commercial C compiler
+138 | Tom Lord | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=138 Tom Lord | Scheme and C hacker. Wrote GNU Arch
+139 | Erich Gamma | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=139 Erich Gamma | One of the Gang of Four
+140 | Jarkko Oikarinen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=140 Jarkko Oikarinen | Started IRC
+141 | Mitchell Kapor | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=141 Mitchell Kapor | Founded Lotus
+142 | Don Hopkins | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=142 Don Hopkins | Invented Pie Menus, working on One Laptop Per Child project.
+143 | Paul Vixie | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=143 Paul Vixie | Wrote BIND
+144 | Michael Feathers | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=144 Michael Feathers | XP guru
+145 | Janus Friis | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=145 Janus Friis | Founder of Joost, Skype, Kazaa
+146 | John Ousterhout | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=146 John Ousterhout | Invented TCL
+147 | Graham Nelson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=147 Graham Nelson | Invented Inform language used to program interatvive fiction
+148 | Eric Meijer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=148 Eric Meijer | Architect in SQL server group at Microsoft working on combining functional programming with the CLR and SQL
+149 | Udi Manber | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=149 Udi Manber | VP of Engineering at Google. Co-author of Glimpse, Agrep, and Harvest search packages.
+150 | Mark Zuckerberg | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=150 Mark Zuckerberg | Founder and CEO of Facebook
+151 | Scott McKay | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=151 Scott McKay | Lisp and Dylan designer.
+152 | Keith Packard | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=152 Keith Packard | X Windows hacker, founded X.Org Server project
+153 | Paul Allen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=153 Paul Allen | Co-founded Microsoft.
+154 | Richard Kelsey | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=154 Richard Kelsey | Co-wrote Scheme 48 and edited R5RS
+155 | Amy Fowler | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=155 Amy Fowler | Core Java Swing developer
+156 | Butler Lampson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=156 Butler Lampson | Systems pioneer. Worked on Xerox's Alto.
+157 | Dan Bricklin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=157 Dan Bricklin | Wrote Visicalc
+158 | Nick Bradbury | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=158 Nick Bradbury | Wrote HomeSite, TopStyle, and FeedDemon
+159 | Ralph Johnson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=159 Ralph Johnson | One of the Gang of Four
+160 | John Gilmore | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=160 John Gilmore | Contributor to several GNU projects. Co-author of Bootstrap protocol which became DHCP. Founder of EFF, Cypherpunks mailing list, and Cygnus solutions.
+161 | Carla Schroder | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=161 Carla Schroder | Long-time Linux geek.
+162 | Zack Rusin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=162 Zack Rusin | Qt graphics guru
+163 | Donald Chamberlin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=163 Donald Chamberlin | Principle designer of SQL; ACM Intercollegiate Programming Contest judge, 1998-2005
+164 | Rick Olsen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=164 Rick Olsen | Core Rails developer, wrote Mephisto and Beast
+165 | Joe Marshall | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=165 Joe Marshall | Lisp hacker
+166 | Gavin King | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=166 Gavin King | Original author of Hibernate, JBoss Seam
+167 | Richard Karp | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=167 Richard Karp | Researcher in theory of algorithms
+168 | Martin Odersky | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=168 Martin Odersky | Invented Scala
+169 | James Duncan | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=169 James Duncan | Davidson Started Apache Ant and Apache Tomcat projects. Author of Java Servlet API and Java API for XML processing J2EE specifications.
+170 | Brian Behlendorf | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=170 Brian Behlendorf | Apache organizer
+171 | Dan Farmer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=171 Dan Farmer | Co-wrote Satan and TCT
+172 | Ray Ozzie | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=172 Ray Ozzie | Main architect of Lotus Notes. Now Chief Software Architect at Microsoft.
+173 | Roger Hui | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=173 Roger Hui | Implementor of of J language
+174 | Scott Meyers | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=174 Scott Meyers | Author of Effective C++, More Effective C++, Effective STL
+175 | Henry Spencer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=175 Henry Spencer | Wrote Unix regex library later incorporated into Tcl and Perl. Co-wrote C News news server
+176 | Jim Blinn | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=176 Jim Blinn | Graphics Fellow at Microsoft
+177 | Steve Dekorte | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=177 Steve Dekorte | Invented Io language.
+178 | Evan Phoenix | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=178 Evan Phoenix | Author of Rubinus compiler/virtual machine for Ruby
+179 | Ray Tomlinson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=179 Ray Tomlinson | Wrote first networked email system and gave us the @-sign in email addresses.
+180 | Larry Osterman | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=180 Larry Osterman | Longtime Microsoftie
+181 | Russ Cox | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=181 Russ Cox | Worked on Plan 9. Represented U.S. at 1995 International Olympiad in Informatics
+182 | Peter Van | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=182 Peter Van | Roy Contributor to Mozart/Oz programming system. Author of Concepts, Techniques, and Models of Computer Programming
+183 | Paul 'Rusty' | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=183 Paul 'Rusty' | Russell One of Linus Torvald's top deputies. Wrote ipchains and netfilter/iptables packet filtering code
+184 | Matt Mackall | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=184 Matt Mackall | Wrote Mecurial version control system.
+185 | Chris Wanstrath | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=185 Chris Wanstrath | Notable Rails programmer
+186 | Niklas Zennstrom | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=186 Niklas Zennstrom | Founder of Joost, Skype, Kazaa
+187 | David Korn | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=187 David Korn | Wrote the Korn shell
+188 | Avi Bryant | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=188 Avi Bryant | Co-founder Dabble DB
+189 | Barry Boehem | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=189 Barry Boehem | Software metrics guru
+190 | Lars Magne | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=190 Lars Magne | Ingebrigtsen Wrote Gnus and Gmane
+191 | Jacob Kaplan-Moss | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=191 Jacob Kaplan-Moss | Django developer. Wrote Tivo apps in Python and now hacking Python on the PSP
+192 | John Mashey | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=192 John Mashey | Early Unix hacker
+193 | Keith Bostic | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=193 Keith Bostic | Worked on BSD at Berkeley and one of the original authors of BerkeleyDB
+194 | Gavin Schmidt | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=194 Gavin Schmidt | Programmer on GISS climate modeling software.
+195 | Robert Martin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=195 Robert Martin | Founder and CEO of Object Mentor. C++ and Agile methods expert.
+196 | Doug Lea | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=196 Doug Lea | Concurrency expert and systems programmer.
+197 | Adele Goldberg | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=197 Adele Goldberg | Smalltalk designer and documenter.
+198 | Dan Geer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=198 Dan Geer | Security expert
+199 | Austin Meyer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=199 Austin Meyer | Author of X-Plane and Space Combat flight simulators
+200 | Neil Hodgson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=200 Neil Hodgson | Wrote Scintilla and SciTE
+201 | Brian Harvey | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=201 Brian Harvey | UC Comp Sci professor. Author of Berkeley Logo
+202 | Paul Haeberli | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=202 Paul Haeberli | Computer graphics researcher
+203 | Rob McCool | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=203 Rob McCool | Wrote NCSA HTTPd; drafted Common Gateway Interface specification
+204 | Radia Perlman | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=204 Radia Perlman | Invented spanning-tree protocol
+205 | Stefan Meyer-Kahlen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=205 Stefan Meyer-Kahlen | Author of Shredder chess program
+206 | Alessandro Rubini | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=206 Alessandro Rubini | Linux kernel hacker
+207 | Wouter van | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=207 Wouter van | Oortmerssen Game programmer and language designer
+208 | Craig McClanahan | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=208 Craig McClanahan | Original author of Apache Struts
+209 | Will Crowther | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=209 Will Crowther | Wrote Adventure and the inner packet processing loop of the original internet IMPs
+210 | Marcus Ranum | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=210 Marcus Ranum | Security expert and author of Firewall Toolkit and Network Flight Recorder
+211 | Eric Allman | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=211 Eric Allman | Wrote sendmail
+212 | Andrew Hunt | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=212 Andrew Hunt | Co-founder of Pragmatic Programmers
+213 | Arthur Whitney | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=213 Arthur Whitney | Invented A+ and K languages and wrote prototype of J language
+214 | Dave Thomas | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=214 Dave Thomas | Co-founder of Pragmatic Programmers
+215 | Dan Piponi | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=215 Dan Piponi | Graphics programmer and theorist.
+216 | Peter Weinberger | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=216 Peter Weinberger | The W in AWK
+217 | Thomas Enebo | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=217 Thomas Enebo | Principle JRuby developer
+218 | Richard Helm | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=218 Richard Helm | One of the Gang of Four
+219 | Bob Scheifler | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=219 Bob Scheifler | Led the development of X Windows while the X Consortium was at MIT
+220 | Charles Hedrick | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=220 Charles Hedrick | Lisp Unix hacker
+221 | Guillaume Laforge | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=221 Guillaume Laforge | Groovy project lead
+222 | Ilya Zakharevich | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=222 Ilya Zakharevich | Major contributor to perl5 including a major reworking of the regex engine.
+223 | John Vlissides | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=223 John Vlissides | One of the Gang of Four
+224 | Dominic Giampaolo | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=224 Dominic Giampaolo | Wrote BeOS file system
+225 | Salvatore Sanfilippo | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=225 Salvatore Sanfilippo | Software developer and security expert
+226 | Rod Johnson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=226 Rod Johnson | Original author of Spring Framework
+227 | Mathias Feist | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=227 Mathias Feist | Co-author of Fritz chess program.
+228 | Sam Leffler | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=228 Sam Leffler | BSD hacker. Wrote FreeBSD wi-fi drivers
+229 | Chris Torek | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=229 Chris Torek | BSDI os hacker
+230 | Mike Karels | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=230 Mike Karels | System architect of BSD 4.3 and 4.4 releases.
+231 | Jeff Mogul | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=231 Jeff Mogul | HP Fellow working on networking performance. Contributed to HTTP 1.1 spec
+232 | Rob Barnaby | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=232 Rob Barnaby | Worked some on early Logo, wrote Word Star. Also did Stringcomp, an early string processing language.
+233 | Eric Bina | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=233 Eric Bina | Co-wrote Mosaic.
+234 | Simon Willison | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=234 Simon Willison | Django developer. Hacker Liason for Yahoo UK
+235 | Frans Morsch | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=235 Frans Morsch | Co-author of Fritz chess program.
+236 | John Harper | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=236 John Harper | Wrote librep and the sawfish window manager
+237 | Spencer Janssen | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=237 Spencer Janssen | Wrote xmonad, a tiling window manager implemened in Haskell
+238 | John Socha | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=238 John Socha | Wrote many DOS software packages for Norton Computing
+239 | Peter Karp | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=239 Peter Karp | Responsible for the development of BioCyc
+240 | Mark Maybee | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=240 Mark Maybee | Worked on ZFS DMU at Sun.
+241 | Peter Norton | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=241 Peter Norton | Wrote the first version of the Norton Utilities
+242 | Graeme Rocher | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=242 Graeme Rocher | Grails project lead
+243 | Dan Sugalski | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=243 Dan Sugalski | Original architect of Parrot VM
+244 | Erik Benson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=244 Erik Benson | Cheif Janitorial Officer - Robot Coop
+245 | Mark Fletcher | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=245 Mark Fletcher | Founder Bloglines, egroups
+246 | Graham Spencer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=246 Graham Spencer | Co-founder Excite &amp; Jot-Spot
+247 | Mark Jason | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=247 Mark Jason | Dominus Perl programmer; author of Higher Order Perl
+248 | Sape Mullender | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=248 Sape Mullender | Member of Technical Staff, Lucent Technologies,Bell Labs Innovations, Computing Sciences Research, Murray Hill, New Jersey.
+249 | Paul Mackerras | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=249 Paul Mackerras | Samba developer
+250 | Val Henson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=250 Val Henson | Kernel hacker and file systems specialist.
+251 | Greg Linden | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=251 Greg Linden | Founder Findory &amp; worked at Amazon
+252 | Dick Wall | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=252 Dick Wall | Co-host of the Java Posse podcast. Works at Google.
+253 | Spencer Kimball | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=253 Spencer Kimball | Co-wrote GIMP. Googler.
+254 | Jeff Bonwick | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=254 Jeff Bonwick | Chief architect of ZFS
+255 | Peter Mattis | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=255 Peter Mattis | Co-wrote GIMP. Googler.
+256 | Bernie Cosell | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=256 Bernie Cosell | One of the main software guys behind the original ARPANET IMP's and a master debugger.
+257 | Shay Bushinsky | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=257 Shay Bushinsky | Co-author of Junior chess program.
+258 | Dennis Crawley | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=258 Dennis Crawley | DodgeBall
+259 | Rainer Joswig | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=259 Rainer Joswig | Contributes to CL-HTTP
+260 | Biz Stone | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=260 Biz Stone | Twitter
+261 | Max Levchin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=261 Max Levchin | Co-founder Pay Pal &amp; Slide
+262 | Joel Reymont | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=262 Joel Reymont | Open Poker
+263 | Jon Kleinberg | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=263 Jon Kleinberg | Cornell Comp. Sci. professor.
+264 | Joel Spolsky | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=264 Joel Spolsky | FogCreekSoftware
+265 | Munjal Shah | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=265 Munjal Shah | Co-founder Riya
+266 | Dierk Koenig. | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=266 Dierk Koenig. | Groovy, Grails contributor
+267 | Peter-Paul Koch | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=267 Peter-Paul Koch | Javascript guru. Maintains quirksmode website.
+268 | Frank Heart | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=268 Frank Heart | Managed the group that built the ARPANET.
+269 | Thomas Knoll | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=269 Thomas Knoll | Original creator of Photoshop.
+270 | Amir Ban | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=270 Amir Ban | Co-author of Junior chess program.
+271 | Watts Humphrey | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=271 Watts Humphrey | CMM guru.
+272 | Rusty Bobrow | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=272 Rusty Bobrow | BBNer doing work in computational linguistics, speech recognition, and artificial intelligence.
+273 | Simon Tatham | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=273 Simon Tatham | Author of PuTTY
+274 | Eric Swildens | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=274 Eric Swildens | Founder Microline Software, Co-founder Speedera Networks
+275 | Evan Williams | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=275 Evan Williams | Twitter
+276 | Dan Weinreb | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=276 Dan Weinreb | Founder of Symbolics. Now at ITA.
+277 | Robert Thau | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=277 Robert Thau | Early Apache developer. Started Bianca Troll
+278 | Chrilly Donninger | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=278 Chrilly Donninger | Author of the Hydra chess program.
+279 | Matthew Ahrens | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=279 Matthew Ahrens | Works on ZFS in kernel group at Sun
+280 | Michael C. | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=280 Michael C. | Schatz Author of a number of gene sequencing programs.
+281 | Richard Fateman | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=281 Richard Fateman | Computer algebraist. Worked on MacSysma and Maxima
+282 | Alex Russell | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=282 Alex Russell | Created Dojo Javascript library
+283 | Naval Ravikanth | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=283 Naval Ravikanth | Founder vast.com
+284 | Sam Stephenson | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=284 Sam Stephenson | Created Prototype Javascript library
