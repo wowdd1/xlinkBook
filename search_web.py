@@ -57,7 +57,7 @@ def search(keyword, engin):
         f = open(file_name)
         for line in f.readlines():
             record = Record(line)
-            if record.get_id().strip() == keyword.lower().strip():
+            if record.get_id().lower().strip() == keyword.lower().strip():
                 print "found " + line.replace("|","")
                 record = Record(line)
                 title = record.get_title().strip()
