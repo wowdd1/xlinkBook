@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+ 
 #author: wowdd1
 #mail: developergf@gmail.com
 #data: 2014.12.07
@@ -41,6 +41,7 @@ class GithubSpider(Spider):
 
     result = ""
     request_times = 0
+    token = "52e3e12b93bbc4220092f51ef307a78a07822fe3"
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -50,6 +51,12 @@ class GithubSpider(Spider):
             if item.lower() == lang.lower():
                 return True
         return False
+
+    def requestWithAuth(self, url):
+        if self.token != "":
+            return requests.get(url, auth=(self.token, ''))    
+        else:
+            return requests.get(url)
 
     def getUrl(self, lang, page, large_than_stars, per_page):
         if self.isQueryLang(lang) == True:
@@ -64,9 +71,9 @@ class GithubSpider(Spider):
             time.sleep(60) 
 
     def processPageData(self, f, file_name, lang, url):
-        self.checkRequestTimes()
+        #self.checkRequestTimes()
         #print "url: " + url
-        r = requests.get(url)
+        r = self.requestWithAuth(url)
         dict_obj = json.loads(r.text)
         total_size = 0
         for (k, v) in dict_obj.items():
@@ -114,33 +121,81 @@ class GithubSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def getUserUrl(self, location, followers, per_page):
+    def getUserUrl(self, location, followers, page, per_page):
         if location == "":
-            return "https://api.github.com/search/users?page=1&per_page=" + per_page + "&q=followers:>" + followers
+            return "https://api.github.com/search/users?page=" + str(page) + "&per_page=" + per_page + "&q=followers:>" + followers
         else:
-            return "https://api.github.com/search/users?page=1&per_page=" + per_page + "&q=followers:>" + followers + "+location:" + location
+            return "https://api.github.com/search/users?page=" + str(page) + "&per_page=" + per_page + "&q=followers:>" + followers + "+location:" + location
 
+    def getUserRepos(self, url):
+        #self.checkRequestTimes()
+        r = self.requestWithAuth(url)
+        repos = ""
+        jobj = json.loads(r.text)
 
+        for repo in jobj:
+            str_repo = repo['name'] + "("
+            if repo["stargazers_count"] != None and repo["stargazers_count"] > 0:
+                str_repo += "stars:" + str(repo["stargazers_count"])
+            if repo['forks_count'] != None and repo['forks_count'] > 0:
+                str_repo += " forks:" + str(repo['forks_count'])
+            if repo['watchers'] != None and repo['watchers'] > 0:
+                str_repo += " watchers:" + str(repo['watchers'])
+            if repo["language"] != None:
+                 str_repo += " lang:" + str(repo["language"])
+            repos += (str_repo.strip() + ") ")
+
+        print repos + "\n"
+        return repos 
+
+    def getUserFollowers(self, url):
+        #self.checkRequestTimes()
+        r = self.requestWithAuth(url)
+        followers = ""
+        jobj = json.loads(r.text)
+
+        for follower in jobj:
+            followers += follower["login"] + " "
+
+        print followers + "\n"
+        return followers
+
+    def processUserPageData(self, f, file_name, url):
+        #self.checkRequestTimes()
+        r = self.requestWithAuth(url)
+        dict_obj = json.loads(r.text)
+        total_size = 0
+        for (k, v) in dict_obj.items():
+            if k == "total_count":
+                total_size = v
+            if k == "message":
+                print v
+                self.cancel_upgrade(file_name)
+                return
+            if k == "items":
+                for item in v:
+                    data = str(item["id"]) + " " + item["login"] + " " + item["html_url"]
+                    print data
+                    self.write_db(f, item["type"] + "-" + str(item["id"]), item["login"], item["html_url"], self.getUserRepos(item["repos_url"])) #"followers: " + self.getUserFollowers(item["followers_url"]))
+                    self.count = self.count + 1
+        return total_size
 
     def processGithubiUserData(self, location, followers, per_page):
-        self.checkRequestTimes()
+        #self.checkRequestTimes()
         file_name = self.get_file_name("eecs/github/" + location, self.school + "-user")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
-
-        url = self.getUserUrl(location, str(followers), str(per_page))
+        self.count = 0
+        page = 1
+        url = self.getUserUrl(location, str(followers), str(page), str(per_page))
             
         print "processing " + url
-        r = requests.get(url)
-        dict_obj = json.loads(r.text)
-        self.count = 0
-        for (k, v) in dict_obj.items():    
-            if k == "items":
-                for item in v:
-                    data = str(item["id"]) + " " + item["login"] + " " + item["url"]
-                    print data
-                    self.write_db(f, item["type"] + "-" + str(item["id"]), item["login"], item["url"])
-                    self.count = self.count + 1
+        total_size = self.processUserPageData(f, file_name, url)
+        if total_size > 1000:
+            total_size = 1000
+        while total_size > (page *per_page):
+            page += 1
+            self.processUserPageData(f, file_name, self.getUserUrl(location, str(followers), str(page), str(per_page)))
 
         self.close_db(f)
         if self.count > 0:
@@ -152,17 +207,16 @@ class GithubSpider(Spider):
 
     def do_work(self):
         for lang in self.lang_list:
-            self.processGithubData(lang, 500, 100)
+            self.processGithubData(lang, 350, 100)
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
 
         print "get spark data..."
-        self.processGithubData("spark", 500, 100)
-
+        self.processGithubData("spark", 350, 100)
         print "get user data..."
-        self.processGithubiUserData("", 1000, 50)
-        self.processGithubiUserData("china", 1000, 50)
+        self.processGithubiUserData("", 500, 100)
+        self.processGithubiUserData("china", 500, 100)
         
         
 start = GithubSpider()
