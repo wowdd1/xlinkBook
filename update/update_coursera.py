@@ -55,12 +55,12 @@ class CourseraSpider(Spider):
             name = name[0 : len(name) - 1]
         return name
 
-    def getSessionLink(self, sessionIds, slug): 
+    def getSessionLinkAndStatus(self, sessionIds, slug): 
         for session in self.sessions:
             for sessionId in sessionIds:
                 if session['id'] == sessionId and session['active'] == True:
-                    return session['homeLink']   
-        return "https://www.coursera.org/course/" + slug
+                    return session['homeLink'], True
+        return "https://www.coursera.org/course/" + slug, False
     
     def getCategoryUrl(self, subjectId):
         return "https://api.coursera.org/api/catalog.v1/categories?id=" + str(subjectId) + "&includes=courses"
@@ -84,13 +84,18 @@ class CourseraSpider(Spider):
         print "subject " + subject.strip() + " ----> " + file_name
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
-        count = 10000
+        count = 0
 
         for courseObj in jobj.items()[0][1]:
-            url = self.getSessionLink(courseObj['links']['sessions'], courseObj['shortName'])
+            url, active = self.getSessionLinkAndStatus(courseObj['links']['sessions'], courseObj['shortName'])
             print str(courseObj['id']) + " " + courseObj['name'] + " " + url
-            remark = courseObj['shortDescription'] + " university:" + self.getUniversitieName(courseObj['links']['universities']) + " instructor:" + self.getInstructorName(courseObj['links'].get('instructors',"none"))
-            self.write_db(f, str(courseObj['id']), self.delZh(courseObj['name']), url, self.delZh(remark.replace("\n", "" ))) 
+            remark = ""
+            if active == True:
+                remark = "available:yes "
+            else:
+                remark = "available:no "
+            remark += courseObj['shortDescription'] + " university:" + self.getUniversitieName(courseObj['links']['universities']) + " instructor:" + self.getInstructorName(courseObj['links'].get('instructors',"none"))
+            self.write_db(f, "cra-" + str(courseObj['id']), self.delZh(courseObj['name']).strip(), url, self.delZh(remark.replace("\n", "" )).strip()) 
             count += 1
 
         self.close_db(f)

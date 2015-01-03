@@ -183,6 +183,10 @@ def get_space_cell(num):
         result += get_space(0, course_num_len) + "|" + get_space(0, course_name_len)
 
     return result
+def reset_max_len_list():
+    global line_max_len_list, line_id_max_len_list
+    line_max_len_list = [0, 0, 0]
+    line_id_max_len_list = [0, 0, 0]
 
 def print_list(file_name):
     current = 0
@@ -205,6 +209,8 @@ def print_list(file_name):
             return  
         line_count = len(all_lines)
         list_all = []
+        reset_max_len_list()
+ 
         line_half = 0
         if column_num == "3":
             list_all.append([])

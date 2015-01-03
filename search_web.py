@@ -56,7 +56,8 @@ def search(keyword, engin):
     for file_name in utils.find_file_by_pattern(".*", os.getcwd() + "/db/" + subject + "/"):
         f = open(file_name)
         for line in f.readlines():
-            if line.lower().startswith(keyword.lower()):
+            record = Record(line)
+            if record.get_id().strip() == keyword.lower().strip():
                 print "found " + line.replace("|","")
                 record = Record(line)
                 title = record.get_title().strip()
