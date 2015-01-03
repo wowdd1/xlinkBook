@@ -1,0 +1,43 @@
+gc-1997 | redis   | https://code.google.com/p/redis/ |  A persistent key-value database with built-in net interface written in…
+gc-885 | mybatis   | https://code.google.com/p/mybatis/ |  SQL Mapping Framework for Java
+gc-798 | wwwsqldesigner   | https://code.google.com/p/wwwsqldesigner/ |  Visual web-based SQL modelling tool
+gc-722 | android-query   | https://code.google.com/p/android-query/ |  Android Framework - Simpler Coding for Android
+gc-677 | vitess   | https://code.google.com/p/vitess/ |  Scaling MySQL databases for the web
+gc-586 | morphia   | https://code.google.com/p/morphia/ |  A type-safe java library for MongoDB
+gc-573 | sqlite-manager   | https://code.google.com/p/sqlite-manager/ |  Extension for Firefox and other apps to manage any sqlite database
+gc-540 | orient   | http://www.orientechnologies.com/docs/last/ https://code.google.com/p/orient/ |  New Documentation:
+gc-518 | sequel-pro   | https://code.google.com/p/sequel-pro/ |  SQL database management for Mac OS X
+gc-503 | cpp-btree   | https://code.google.com/p/cpp-btree/ |  C++ B-tree
+gc-459 | nutz   | https://code.google.com/p/nutz/ |  make you happy with Java
+gc-436 | sqlyog   | https://code.google.com/p/sqlyog/ |  SQLyog  - MySQL Manager and Admin Tool
+gc-414 | heidisql   | https://code.google.com/p/heidisql/ |  A lightweight interface to MySQL, MS SQL and PostgreSQL
+gc-378 | hypertable   | https://code.google.com/p/hypertable/ |  A high performance, scalable, distributed storage and processing syste…
+gc-349 | h2database   | https://code.google.com/p/h2database/ |  Java SQL database
+gc-327 | tungsten-replicator   | https://code.google.com/p/tungsten-replicator/ |  A high performance, open source, data replication engine for MySQL
+gc-302 | twig-persist   | https://code.google.com/p/twig-persist/ |  Object Datastore for Google App Engine
+gc-288 | pyodbc   | https://code.google.com/p/pyodbc/ |  Python ODBC library
+gc-286 | couchdb-python   | https://code.google.com/p/couchdb-python/ |  CouchDB Python Library
+gc-278 | jslibs   | https://code.google.com/p/jslibs/ |  standalone JavaScript development runtime environment with general pur…
+gc-269 | supersonic   | https://code.google.com/p/supersonic/ |  Supersonic Query Engine - a column oriented database query engine libr…
+gc-266 | log4jdbc   | https://code.google.com/p/log4jdbc/ |  JDBC proxy driver for logging SQL and other interesting information.
+gc-245 | sphinxsearch   | https://code.google.com/p/sphinxsearch/ |  Sphinx search engine
+gc-217 | activejdbc   | https://code.google.com/p/activejdbc/ |  Implementation of Active Record pattern in Java. Inspired by Ruby on R…
+gc-178 | leveldb-go   | https://code.google.com/p/leveldb-go/ |  The LevelDB key/value database in Go
+gc-173 | phpliteadmin   | https://code.google.com/p/phpliteadmin/ |  PHP-based admin tool to manage SQLite databases
+gc-162 | pymssql   | http://pymssql.org/ https://code.google.com/p/pymssql/ |  We have a new project home:
+gc-154 | beets   | https://code.google.com/p/beets/ |  the music geek's media organizer
+gc-151 | sqlite4java   | https://code.google.com/p/sqlite4java/ |  Minimalistic high-performance Java wrapper for SQLite
+gc-151 | guzz   | https://code.google.com/p/guzz/ |  A full stack java data-layer solution framework with many unique featu…
+gc-151 | doophp   | https://code.google.com/p/doophp/ |  DooPHP is a high performance MVC based PHP 5 framework
+gc-145 | power-architect   | https://code.google.com/p/power-architect/ |  SQL Power Architect: Data Modeling & Profiling Tool
+gc-138 | rrd4j   | https://code.google.com/p/rrd4j/ |  A high performance data logging and graphing system for time series da…
+gc-136 | innotop   | https://code.google.com/p/innotop/ |  A powerful "top" clone for MySQL
+gc-127 | csvfix   | https://code.google.com/p/csvfix/ |  CSVfix is a tool for manipulating CSV data
+gc-127 | android-active-record   | https://code.google.com/p/android-active-record/ |  ActiveRecord for Android - wrapper for SQLite
+gc-121 | shard-query   | https://code.google.com/p/shard-query/ |  Shard-Query is a massively parallel processing middleware solution for…
+gc-121 | delphi-orm   | https://code.google.com/p/delphi-orm/ |  DORM, the Delphi ORM
+gc-120 | sqlalchemy-migrate   | https://code.google.com/p/sqlalchemy-migrate/ |  SQLAlchemy Schema Migration Tools
+gc-117 | dbdeploy   | https://code.google.com/p/dbdeploy/ |  Java tools to manage agile database development
+gc-108 | scala-migrations   | https://code.google.com/p/scala-migrations/ |  Database migrations written in Scala
+gc-107 | plsql-utils   | https://code.google.com/p/plsql-utils/ |  Oracle PL/SQL Utility Library, codename "Alexandria"
+gc-101 | alchemydatabase   | https://code.google.com/p/alchemydatabase/ |  A Hybrid Relational-Database/NOSQL-Datastore

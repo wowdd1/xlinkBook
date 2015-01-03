@@ -1,0 +1,62 @@
+gc-2822 | googleappengine   | https://code.google.com/p/googleappengine/ |  Google App Engine
+gc-2478 | pubsubhubbub   | https://code.google.com/p/pubsubhubbub/ |  A simple, open, webhook based pubsub protocol & open source reference …
+gc-1510 | wallproxy-plugins   | https://code.google.com/p/wallproxy-plugins/ |  旧版wallproxy
+gc-1502 | gdata-python-client   | https://code.google.com/p/gdata-python-client/ |  Google Data APIs Python Client Library
+gc-1418 | google-api-java-client   | https://code.google.com/p/google-api-java-client/ |  Google APIs Client Library for Java
+gc-1329 | gaeproxy   | https://code.google.com/p/gaeproxy/ |  A GAE proxy for Android
+gc-1209 | objectify-appengine   | https://code.google.com/p/objectify-appengine/ |  The simplest convenient interface to the Google App Engine datastore
+gc-1192 | google-app-engine-samples   | https://code.google.com/p/google-app-engine-samples/ |  Samples for Google App Engine
+gc-1170 | course-builder   | https://code.google.com/p/course-builder/ |  Course Builder
+gc-1032 | rietveld   | https://code.google.com/p/rietveld/ |  Code Review, hosted on Google App Engine
+gc-976 | jaikuengine   | https://code.google.com/p/jaikuengine/ |  Jaiku, now with more open source!
+gc-767 | hyk-proxy   | https://code.google.com/p/hyk-proxy/ |  一个支持基于GAE/Seattle/PHP的web proxy框架 (A web proxy framework support imple…
+gc-758 | wallproxy   | https://github.com/wallproxy/wallproxy https://code.google.com/p/wallproxy/ |  
+gc-667 | birdnest   | https://code.google.com/p/birdnest/ |  Twitter proxy
+gc-650 | snova   | https://code.google.com/p/snova/ |  A client–server model web proxy application build on PaaS platforms.
+gc-622 | google-app-engine-django   | https://code.google.com/p/google-app-engine-django/ |  Google App Engine Helper for Django
+gc-570 | app-engine-patch   | https://code.google.com/p/app-engine-patch/ |  Use Django on App Engine - with lots of goodies
+gc-560 | app-engine-site-creator   | https://code.google.com/p/app-engine-site-creator/ |  A Content Management System for Google App Engine
+gc-458 | typhoonae   | https://code.google.com/p/typhoonae/ |  Typhoon App Engine
+gc-451 | google-http-java-client   | http-java-client  -  Google HTTP Client Library for Java https://code.google.com/p/google-http-java-client/ | 
+gc-433 | gfwinterceptor   | https://code.google.com/p/gfwinterceptor/ |  A set of tools to get around internet censorship for iOS device
+gc-430 | appengine-jruby   | https://code.google.com/p/appengine-jruby/ |  Google App Engine API Wrappers and Tools for JRuby
+gc-401 | cloudcourse   | https://code.google.com/p/cloudcourse/ |  CloudCourse
+gc-393 | mirrorrr   | https://code.google.com/p/mirrorrr/ |  Mirrorrr - Web Cache
+gc-384 | teammatespes   | https://code.google.com/p/teammatespes/ |  TEAMMATES - A free online tool for peer evaluation/feedback in student…
+gc-317 | appengine-rest-server   | https://code.google.com/p/appengine-rest-server/ |  REST server for Google App Engine applications.
+gc-308 | jumpnote   | https://code.google.com/p/jumpnote/ |  Two-way sync'd Notepad demo application for Android
+gc-307 | greatagent   | https://code.google.com/p/greatagent/ |  (原名：wwqgtxx-goagent)一个为goagent/新版wallproxy提供免费加强版公共服务端的项目
+gc-302 | twig-persist   | https://code.google.com/p/twig-persist/ |  Object Datastore for Google App Engine
+gc-279 | windows-package-manager   | https://code.google.com/p/windows-package-manager/ |  Npackd
+gc-279 | android2cloud   | https://code.google.com/p/android2cloud/ |  A way to push web pages from your android device to the cloud.
+gc-259 | cpedialog   | https://code.google.com/p/cpedialog/ |  blog implemented by python and can be hosted on google appengine
+gc-256 | geomodel   | https://code.google.com/p/geomodel/ |  Basic geospatial queries in Google App Engine
+gc-245 | webapp-improved   | https://code.google.com/p/webapp-improved/ |  Google App Engine's webapp, take two
+gc-223 | b3log-solo   | https://code.google.com/p/b3log-solo/ |  Java 博客，奏出你的主音！
+gc-222 | appengine-ndb-experiment   | https://code.google.com/p/appengine-ndb-experiment/ |  NDB: An new Python API for the Google App Engine Datastore
+gc-221 | wwqgtxx-goagent   | https://code.google.com/p/wwqgtxx-goagent/ |  一个为goagent/新版wallproxy提供免费加强版公共服务端的项目
+gc-216 | soc   | https://code.google.com/p/soc/ |  SoC (Spice of Creation)
+gc-214 | kay-framework   | https://code.google.com/p/kay-framework/ |  A web framework made specifically for Google App Engine
+gc-213 | gwtwiki   | https://code.google.com/p/gwtwiki/ |  Java Wikipedia API (Bliki engine)
+gc-210 | datanucleus-appengine   | https://code.google.com/p/datanucleus-appengine/ |  DataNucleus plugin for Google App Engine
+gc-192 | slim3   | https://code.google.com/p/slim3/ |  Full-stack MVC framework optimized for Google App Engine/Java
+gc-170 | gwt-gae-book   | https://code.google.com/p/gwt-gae-book/ |  Free online book exemplifying how to professionally develop applicatio…
+gc-161 | test-analytics   | https://code.google.com/p/test-analytics/ |  Test Analytics
+gc-161 | gaeunit   | https://code.google.com/p/gaeunit/ |  The unit testing framework for Google App Engine
+gc-160 | tipfy   | https://code.google.com/p/tipfy/ |  The almighty little framework for Google App Engine
+gc-160 | gaewiki   | https://code.google.com/p/gaewiki/ |  Simple Wiki for Google App Engine
+gc-150 | gaevfs   | https://code.google.com/p/gaevfs/ |  Distributed, writeable virtual file system for Google App Engine Java
+gc-143 | google-protorpc   | https://code.google.com/p/google-protorpc/ |  Google Protocol RPC
+gc-139 | oppia   | https://code.google.com/p/oppia/ |  Tool for creating interactive educational content
+gc-136 | skylight1   | https://code.google.com/p/skylight1/ |  Android open source project: library, demos and applications.
+gc-134 | jsonengine   | https://code.google.com/p/jsonengine/ |  Simple and ultra-scalable JSON storage on Google App Engine. No server…
+gc-132 | bs2grproxy   | https://code.google.com/p/bs2grproxy/ |  Fast and lightweight Reverse Proxy on GAE
+gc-130 | google-appengine-wx-launcher   | https://code.google.com/p/google-appengine-wx-launcher/ |  Windows Launcher for Google App Engine
+gc-128 | google-plugin-for-eclipse   | https://code.google.com/p/google-plugin-for-eclipse/ |  Google Plugin for Eclipse
+gc-121 | google-appengine-mac-launcher   | https://code.google.com/p/google-appengine-mac-launcher/ |  Mac Launcher for Google App Engine
+gc-120 | gwt-gae-channel   | https://code.google.com/p/gwt-gae-channel/ |  GWT bindings for the App Engine Channel API client
+gc-114 | instant-press   | https://code.google.com/p/instant-press/ |  Instant Press is an open source CMS developed in Web2py Framework (Pyt…
+gc-113 | dyuproject   | https://code.google.com/p/dyuproject/ |  dyuproject
+gc-113 | appengine-go   | https://code.google.com/p/appengine-go/ |  App Engine Go SDK
+gc-112 | basic-http-client   | http-client  -  Basic HTTP client w/ Android AsyncTask wrapper https://code.google.com/p/basic-http-client/ | 
+gc-105 | mind-notes   | https://code.google.com/p/mind-notes/ |  HTML5 mind map editor

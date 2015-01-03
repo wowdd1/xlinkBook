@@ -1,0 +1,63 @@
+gc-2757 | quake2-gwt-port   | https://code.google.com/p/quake2-gwt-port/ |  Quake II GWT Port
+gc-2618 | google-web-toolkit   | https://code.google.com/p/google-web-toolkit/ |  GWT
+gc-1445 | smartgwt   | https://code.google.com/p/smartgwt/ |  Smart GWT - GWT API's for SmartClient
+gc-1176 | gwt-google-apis   | https://code.google.com/p/gwt-google-apis/ |  The Official Google API Libraries for Google Web Toolkit
+gc-831 | google-gin   | https://code.google.com/p/google-gin/ |  GIN (GWT INjection) is Guice for Google Web Toolkit client-side code
+gc-734 | gwt-platform   | https://code.google.com/p/gwt-platform/ |  A complete model-view-presenter framework to simplify your next GWT pr…
+gc-723 | gwtquery   | https://code.google.com/p/gwtquery/ |  A jQuery clone for GWT, and much more.
+gc-586 | morphia   | https://code.google.com/p/morphia/ |  A type-safe java library for MongoDB
+gc-547 | gwt-dnd   | https://code.google.com/p/gwt-dnd/ |  Drag-and-Drop Library for Google-Web-Toolkit (GWT)
+gc-540 | gwt-mobile-webkit   | https://code.google.com/p/gwt-mobile-webkit/ |  GWT library to leverage HTML5 and Mobile WebKit features (specifically…
+gc-432 | mvp4g   | https://code.google.com/p/mvp4g/ |  A framework to build a gwt application the right way
+gc-417 | gwtupload   | https://code.google.com/p/gwtupload/ |  GwtUpload & JsUpload: File Upload Progress with pure javascript (Ajax)
+gc-356 | gwt-mosaic   | https://code.google.com/p/gwt-mosaic/ |  A toolkit for creating Rich Internet Applications with GWT
+gc-352 | gwt-log   | https://code.google.com/p/gwt-log/ |  Logging Library for Google Web Toolkit (GWT) with Deferred Binding
+gc-352 | gwt-examples   | https://code.google.com/p/gwt-examples/ |  Google Web Toolkit examples, demos and source
+gc-337 | protostuff   | https://code.google.com/p/protostuff/ |  java serialization library, proto compiler, code generator, protobuf u…
+gc-334 | gwt-cal   | https://code.google.com/p/gwt-cal/ |  an open-source calendar widget similar to iCal, Outlook, Google Calend…
+gc-327 | gwt-ext   | https://code.google.com/p/gwt-ext/ |  GWT-Ext Widget Library
+gc-308 | jumpnote   | https://code.google.com/p/jumpnote/ |  Two-way sync'd Notepad demo application for Android
+gc-302 | mgwt   | https://code.google.com/p/mgwt/ |  Mobile GWT
+gc-290 | gwt-dispatch   | https://code.google.com/p/gwt-dispatch/ |  Implements a reusable 'command pattern' API for GWT
+gc-274 | charts4j   | https://code.google.com/p/charts4j/ |  Let the computer in the cloud build your charts.
+gc-266 | gwteventservice   | https://code.google.com/p/gwteventservice/ |  Remote event listening for GWT
+gc-264 | gwt-validation   | https://code.google.com/p/gwt-validation/ |  GWT compatible Bean Validation Framework based on the JSR-303
+gc-253 | gwt-phonegap   | https://code.google.com/p/gwt-phonegap/ |  A GWT Wrapper for the Phonegap JS Library
+gc-247 | gwt-exporter   | https://code.google.com/p/gwt-exporter/ |  Use gwt metadata annotations to export GWT Java classes as a JS API
+gc-242 | gwtquery-plugins   | https://code.google.com/p/gwtquery-plugins/ |  Repository for GwtQuery plugins
+gc-242 | gwt-presenter   | https://code.google.com/p/gwt-presenter/ |  Implementation of the Presenter section of a Model-View-Presenter (MVP…
+gc-214 | emite   | https://code.google.com/p/emite/ |  Let's make gwt apps chat each other!
+gc-205 | gwt-comet   | https://code.google.com/p/gwt-comet/ |  A Comet Implementation for the Google Web Toolkit
+gc-176 | speedtracer   | https://code.google.com/p/speedtracer/ |  SpeedTracer
+gc-170 | gwt-gae-book   | https://code.google.com/p/gwt-gae-book/ |  Free online book exemplifying how to professionally develop applicatio…
+gc-170 | gwt-ent   | https://code.google.com/p/gwt-ent/ |  A Reflection, AOP, HTML template, UI Binding, Validate(JSR303) framewo…
+gc-164 | gwt-test-utils   | https://code.google.com/p/gwt-test-utils/ |  gwt-test-utils is a Java framework that allows to test GWT client side…
+gc-163 | gwt-voices   | https://code.google.com/p/gwt-voices/ |  Sound Library for Google-Web-Toolkit (GWT)
+gc-162 | ftr-gwt-library   | https://code.google.com/p/ftr-gwt-library/ |  Gwt Date and Calendar Widgets
+gc-161 | test-analytics   | https://code.google.com/p/test-analytics/ |  Test Analytics
+gc-160 | gwt-ext-ux   | https://code.google.com/p/gwt-ext-ux/ |  GWT-Ext User Extensions
+gc-153 | ijab   | https://code.google.com/p/ijab/ |  An ajax web jabber client. Jabber Web Chat. WebIM. WebMessenger(Facebo…
+gc-140 | jukito   | https://code.google.com/p/jukito/ |  The combined power of JUnit, Guice and Mockito. Plus it sounds like a …
+gc-140 | gwt-oauth2   | https://code.google.com/p/gwt-oauth2/ |  OAuth 2.0 Library for Google Web Toolkit
+gc-140 | gflot   | https://code.google.com/p/gflot/ |  GWT charting library
+gc-138 | gwt-diagrams   | https://code.google.com/p/gwt-diagrams/ |  Diagrams library for Google Web Toolkit (GWT)
+gc-129 | clientsidegchart   | https://code.google.com/p/clientsidegchart/ |  GWT charts without JSNI, browser plugins, or server round-trips
+gc-128 | google-plugin-for-eclipse   | https://code.google.com/p/google-plugin-for-eclipse/ |  Google Plugin for Eclipse
+gc-126 | gwt-g2d   | https://code.google.com/p/gwt-g2d/ |  2D graphics/multimedia library via HTML canvas.
+gc-125 | raphaelgwt   | https://code.google.com/p/raphaelgwt/ |  RaphaelGWT - Raphaël JavaScript Library as a GWT widget
+gc-124 | cobogw   | https://code.google.com/p/cobogw/ |  The official cobogw Issue Tracker & Source Code
+gc-123 | rocket-gwt   | https://code.google.com/p/rocket-gwt/ |  Many extras to help make authoring GWT applications easier, feature ri…
+gc-123 | functionaljava   | https://code.google.com/p/functionaljava/ |  A Library for Functional Programming in Java
+gc-121 | acris   | https://code.google.com/p/acris/ |  Web framework for building applications, web sites and portals using G…
+gc-120 | gwt-gae-channel   | https://code.google.com/p/gwt-gae-channel/ |  GWT bindings for the App Engine Channel API client
+gc-117 | gwt-gdata   | https://code.google.com/p/gwt-gdata/ |  GWT library for GData
+gc-112 | piriti   | https://code.google.com/p/piriti/ |  JSON and XML Mapper for GWT
+gc-112 | gwt-graphics   | https://code.google.com/p/gwt-graphics/ |  A cross-browser vector graphics library for GWT
+gc-111 | gwtx   | https://code.google.com/p/gwtx/ |  An extended GWT JRE Emulation Library that picks up where GWT's basic …
+gc-111 | gwtgl   | https://code.google.com/p/gwtgl/ |  GwtGL - WebGL binding for GWT (Google Web Toolkit)
+gc-110 | gwt-chronoscope   | https://code.google.com/p/gwt-chronoscope/ |  Scalable Charting and Visualization Platform
+gc-105 | mind-notes   | https://code.google.com/p/mind-notes/ |  HTML5 mind map editor
+gc-103 | gwt-connectors   | https://code.google.com/p/gwt-connectors/ |  Library providing dynamic connector capabilities to GWT applications.
+gc-102 | gwtuml   | https://code.google.com/p/gwtuml/ |  A UML modeller based on GWT
+gc-102 | gwt-pectin   | https://code.google.com/p/gwt-pectin/ |  Form binding and validation framework based on the ValueModel, Present…
+gc-101 | gwtphp   | https://code.google.com/p/gwtphp/ |  PHP implementation for GWT RPC

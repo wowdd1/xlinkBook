@@ -1,0 +1,38 @@
+gc-2877 | google-styleguide   | https://code.google.com/p/google-styleguide/ |  Style guides for Google-originated open-source projects
+gc-2493 | googletest   | https://code.google.com/p/googletest/ |  Google C++ Testing Framework
+gc-1409 | google-diff-match-patch   | https://code.google.com/p/google-diff-match-patch/ |  Diff, Match and Patch libraries for Plain Text
+gc-963 | googlemock   | https://code.google.com/p/googlemock/ |  Google C++ Mocking Framework
+gc-948 | google-glog   | https://code.google.com/p/google-glog/ |  Logging library for C++
+gc-943 | re2   | https://code.google.com/p/re2/ |  an efficient, principled regular expression library
+gc-703 | skia   | https://code.google.com/p/skia/ |  2D Graphics Library
+gc-685 | miranda   | https://code.google.com/p/miranda/ |  Miranda IM is an open-source multi-protocol instant messenger for Micr…
+gc-564 | shedskin   | https://code.google.com/p/shedskin/ |  An experimental (restricted-Python)-to-C++ compiler
+gc-519 | thrust   | https://code.google.com/p/thrust/ |  Code at the speed of light
+gc-503 | cpp-btree   | https://code.google.com/p/cpp-btree/ |  C++ B-tree
+gc-410 | bwapi   | https://code.google.com/p/bwapi/ |  An API for interacting with Starcraft: Broodwar (1.16.1)
+gc-300 | win7shell   | https://code.google.com/p/win7shell/ |  Winamp integration with Windows 7's shell
+gc-263 | muduo   | https://code.google.com/p/muduo/ |  A C++ non-blocking network library for multi-threaded server in Linux
+gc-240 | gflags   | https://code.google.com/p/gflags/ |  Commandline flags module for C++
+gc-234 | v8cgi   | https://code.google.com/p/v8cgi/ |  Multi-purpose wrapper around the V8 JavaScript engine
+gc-234 | jnaerator   | https://code.google.com/p/jnaerator/ |  JNAerator - Native C / C++ / Objective-C libraries come to Java !
+gc-218 | angel-engine   | https://code.google.com/p/angel-engine/ |  A 2D Game Prototyping Engine
+gc-210 | asmjit   | https://code.google.com/p/asmjit/ |  Complete x86/x64 JIT and Remote Assembler for C++ Language.
+gc-205 | firebreath   | https://code.google.com/p/firebreath/ |  Cross-platform browser plugin framework
+gc-201 | crashrpt   | https://code.google.com/p/crashrpt/ |  A crash reporting system for Windows applications
+gc-192 | notepad2-mod   | https://code.google.com/p/notepad2-mod/ |  Notepad2-mod, a Notepad2 fork, a fast and light-weight Notepad-like te…
+gc-181 | alembic   | https://code.google.com/p/alembic/ |  Open Interchange Format for Computer Graphics
+gc-150 | nativelibs4java   | https://code.google.com/p/nativelibs4java/ |  Repository of Java/Scala-wrapped native libraries written in C, C++, O…
+gc-149 | touchegg   | https://code.google.com/p/touchegg/ |  Touchégg - Multitouch gesture recognizer
+gc-148 | cortex-vfx   | https://code.google.com/p/cortex-vfx/ |  Libraries for visual effects software development
+gc-141 | qxmpp   | https://code.google.com/p/qxmpp/ |  QXmpp is an xmpp client and server library based on Qt & C++
+gc-136 | webpagetest   | https://code.google.com/p/webpagetest/ |  Web page performance testing infrastructure
+gc-131 | typhoon-blade   | https://code.google.com/p/typhoon-blade/ |  Blade is an advanced building system developed with python, majorly fo…
+gc-128 | v8-juice   | https://code.google.com/p/v8-juice/ |  C++ toolkit for extending the Google v8 JavaScript engine
+gc-128 | musikcube   | https://code.google.com/p/musikcube/ |  A music player
+gc-124 | fog   | https://code.google.com/p/fog/ |  High performance 2d graphics library with embedded SVG engine written …
+gc-124 | conkywizard   | https://code.google.com/p/conkywizard/ |  ConkyWizard es un asistente para la configuración de Conky
+gc-116 | np-activex   | https://code.google.com/p/np-activex/ |  Enable ActiveX plug-ins for NPAPI browsers
+gc-116 | gxp   | https://code.google.com/p/gxp/ |  Google XML Pages
+gc-115 | libkml   | https://code.google.com/p/libkml/ |  a KML library written in C++ with bindings to other languages
+gc-110 | recsyscode   | https://code.google.com/p/recsyscode/ |  implementations of  classic algorithms of recommender system
+gc-104 | gpick   | https://code.google.com/p/gpick/ |  Advanced color picker written in C++ using GTK+ toolkit

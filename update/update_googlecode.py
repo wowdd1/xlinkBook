@@ -7,6 +7,7 @@
 from spider import *
 
 class GoogleCodeSpider(Spider):
+    use_proxy = False
     proxies = {
         "http": "http://127.0.0.1:8087",
         "https": "http://127.0.0.1:8087",
@@ -16,9 +17,15 @@ class GoogleCodeSpider(Spider):
         Spider.__init__(self)
         self.school = "googlecode"
 
+    def requestData(self, url):
+        if self.use_proxy == True:
+            return requests.get(url, proxies=self.proxies, verify=False)
+        else:
+            return requests.get(url)
+
     def processOnePageData(self, list_all, url):
         print 'processing ' + " " + url
-        r = requests.get(url, proxies=self.proxies, verify=False)
+        r = self.requestData(url)
         soup = BeautifulSoup(r.text)
         for td in soup.find_all("td"):
             star_index = td.prettify().find("Stars:")
@@ -29,7 +36,7 @@ class GoogleCodeSpider(Spider):
                 while (len(stars) > len(list_all)):
                     list_all.append([])
                     #print "resize list ----> stars: " + stars + " list_all len: " + str(len(list_all)) 
-                list_all[len(stars) - 1].append(stars + " " + str(td.a.text[0:td.a.text.find('-')]).strip() + " " + "https://code.google.com" + str(td.a['href']).strip())
+                list_all[len(stars) - 1].append(stars + " " + str(td.a.text).strip() + " " + "https://code.google.com" + str(td.a['href']).strip())
         return soup
 
     def processGoogleCodeData(self, lable, stars):
@@ -68,7 +75,9 @@ class GoogleCodeSpider(Spider):
                 if int(item[0 : item.find(' ')].strip()) < stars:
                     exit = True
                     break
-                self.write_db(f, "gc-" + item[0 : item.find(' ')].strip(), item[item.find(' ') : item.find('http')].strip(), item[item.find('http') : ])
+                title = item[item.find(' ') : item.find("- ")].strip()
+                remark = self.delZh(item[item.find("- ") + 1 : item.find('http')]).strip()
+                self.write_db(f, "gc-" + item[0 : item.find(' ')].strip(), title, item[item.find('http') : ], remark)
                 print item
 
         self.close_db(f)
@@ -82,7 +91,7 @@ class GoogleCodeSpider(Spider):
 
     def do_work(self):
         print "tip: update google code info need you run goagent propy on local"
-        r = requests.get(self.base_url, proxies=self.proxies, verify=False)
+        r = self.requestData(self.base_url)
         soup = BeautifulSoup(r.text)
         for a in soup.find_all("a"):
             if str(a['href']).find('search') != -1:

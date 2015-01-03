@@ -1,0 +1,71 @@
+gc-2877 | google-styleguide   | https://code.google.com/p/google-styleguide/ |  Style guides for Google-originated open-source projects
+gc-1409 | google-diff-match-patch   | https://code.google.com/p/google-diff-match-patch/ |  Diff, Match and Patch libraries for Plain Text
+gc-1091 | unladen-swallow   | https://code.google.com/p/unladen-swallow/ |  A faster implementation of Python
+gc-843 | pythonxy   | https://code.google.com/p/pythonxy/ |  Scientific-oriented Python Distribution based on Qt and Spyder
+gc-638 | python-for-android   | https://code.google.com/p/python-for-android/ |  Py4A
+gc-564 | shedskin   | https://code.google.com/p/shedskin/ |  An experimental (restricted-Python)-to-C++ compiler
+gc-556 | sympy   | https://code.google.com/p/sympy/ |  Python library for symbolic mathematics
+gc-502 | pydnsproxy   | https://code.google.com/p/pydnsproxy/ |  DNS本地代理
+gc-485 | corkami   | https://code.google.com/p/corkami/ |  Reverse engineering & visual documentations
+gc-475 | httplib2   | httplib2  -  A comprehensive HTTP client library in Python https://code.google.com/p/httplib2/ | 
+gc-471 | django-tagging   | https://code.google.com/p/django-tagging/ |  A generic tagging application for Django projects
+gc-464 | html5lib   | https://code.google.com/p/html5lib/ |  Library for working with HTML documents
+gc-452 | xbmc-addons-chinese   | https://code.google.com/p/xbmc-addons-chinese/ |  XBMC媒体中心的中文扩展功能脚本、插件、皮肤（Addon scripts, plugins, and skins for XBMC Med…
+gc-452 | feedparser   | https://code.google.com/p/feedparser/ |  Parse Atom and RSS feeds in Python
+gc-421 | ulipad   | https://code.google.com/p/ulipad/ |  python editor based on wxPython
+gc-413 | openbookproject   | https://code.google.com/p/openbookproject/ |  O.B.P~Open Book Proj.中文蟒样开放图书计划!
+gc-393 | mirrorrr   | https://code.google.com/p/mirrorrr/ |  Mirrorrr - Web Cache
+gc-383 | python-graph   | https://code.google.com/p/python-graph/ |  A library for working with graphs in Python
+gc-346 | xbmc-addons   | https://code.google.com/p/xbmc-addons/ |  Addon scripts, plugins and skins for XBMC Media Center
+gc-314 | django-filebrowser   | https://code.google.com/p/django-filebrowser/ |  File-Management with the Django Admin-Interface
+gc-313 | aima-python   | https://code.google.com/p/aima-python/ |  Python implementation of algorithms from Russell and Norvig's 'Artific…
+gc-289 | pyrfeed   | https://code.google.com/p/pyrfeed/ |  This is a RSS/Atom Reader and Framework. It use GoogleReader as a stor…
+gc-274 | s3ql   | https://code.google.com/p/s3ql/ |  a full-featured file system for online data storage
+gc-256 | geomodel   | https://code.google.com/p/geomodel/ |  Basic geospatial queries in Google App Engine
+gc-239 | parallel-ssh   | https://code.google.com/p/parallel-ssh/ |  PSSH: Parallel SSH Tools
+gc-213 | pymacadmin   | https://code.google.com/p/pymacadmin/ |  A collection of Python utilities for Mac OS X system administration
+gc-211 | pywebkitgtk   | https://code.google.com/p/pywebkitgtk/ |  Python bindings for the WebKit GTK+ port
+gc-211 | flukeformac   | https://code.google.com/p/flukeformac/ |  Play FLACs in iTunes
+gc-202 | winpython   | https://code.google.com/p/winpython/ |  Portable Scientific Python 2/3 32/64bit Distribution for Windows
+gc-201 | python-nose   | https://code.google.com/p/python-nose/ |  A unittest-based testing framework for python that makes writing and r…
+gc-198 | sunflower-fm   | https://code.google.com/p/sunflower-fm/ |  Twin-panel file manager for Linux
+gc-194 | rtmplite   | https://code.google.com/p/rtmplite/ |  Flash RTMP server in Python
+gc-194 | django-page-cms   | https://code.google.com/p/django-page-cms/ |  A page based CMS for django
+gc-192 | twitalker   | https://code.google.com/p/twitalker/ |  A Gtalk robot to access twitter based on Google App Engine
+gc-179 | pywinauto   | https://code.google.com/p/pywinauto/ |  Windows GUI automation using Python
+gc-179 | pyffmpeg   | https://code.google.com/p/pyffmpeg/ |  Python FFmpeg wrapper
+gc-179 | google-shared-contacts-client   | https://code.google.com/p/google-shared-contacts-client/ |  Google Shared Contacts Python Client
+gc-176 | jessyink   | https://code.google.com/p/jessyink/ |  A JavaScript that turns a layered Inkscape SVG image into a presentati…
+gc-171 | ipaddr-py   | https://code.google.com/p/ipaddr-py/ |  Python IP address manipulation library
+gc-164 | iphoneofflinemap   | https://code.google.com/p/iphoneofflinemap/ |  iPhone Offline Map Switcher
+gc-163 | google-chartwrapper   | https://code.google.com/p/google-chartwrapper/ |  Python Wrapper for the Google Chart API
+gc-161 | h5py   | https://code.google.com/p/h5py/ |  This project has moved to h5py.org
+gc-157 | django-rosetta   | https://code.google.com/p/django-rosetta/ |  A Django application that eases the translation process of your Django…
+gc-155 | mpmath   | https://code.google.com/p/mpmath/ |  Python library for arbitrary-precision floating-point arithmetic
+gc-148 | cortex-vfx   | https://code.google.com/p/cortex-vfx/ |  Libraries for visual effects software development
+gc-143 | gdocsuploader   | https://code.google.com/p/gdocsuploader/ |  Document and File Uploader for Google Docs
+gc-142 | pymel   | https://code.google.com/p/pymel/ |  Python in Maya Done Right
+gc-139 | pyopencv   | https://code.google.com/p/pyopencv/ |  Python bindings for OpenCV 2.x using Boost.Python and NumPy
+gc-135 | pysmell   | https://code.google.com/p/pysmell/ |  Autocomplete helper for Python
+gc-132 | django-syncr   | https://code.google.com/p/django-syncr/ |  Synchronize Django with the web
+gc-131 | typhoon-blade   | https://code.google.com/p/typhoon-blade/ |  Blade is an advanced building system developed with python, majorly fo…
+gc-130 | pysphere   | https://code.google.com/p/pysphere/ |  vSphere SDK for python
+gc-130 | google-appengine-wx-launcher   | https://code.google.com/p/google-appengine-wx-launcher/ |  Windows Launcher for Google App Engine
+gc-120 | sqlalchemy-migrate   | https://code.google.com/p/sqlalchemy-migrate/ |  SQLAlchemy Schema Migration Tools
+gc-120 | pypcap   | https://code.google.com/p/pypcap/ |  simplified object-oriented Python extension module for libpcap
+gc-118 | patator   | https://code.google.com/p/patator/ |  Patator is a multi-purpose brute-forcer, with a modular design and a f…
+gc-115 | libkml   | https://code.google.com/p/libkml/ |  a KML library written in C++ with bindings to other languages
+gc-114 | instant-press   | https://code.google.com/p/instant-press/ |  Instant Press is an open source CMS developed in Web2py Framework (Pyt…
+gc-111 | pymox   | https://code.google.com/p/pymox/ |  mox: an object-mocking framework for Python
+gc-111 | apkinspector   | https://code.google.com/p/apkinspector/ |  **MOVED TO GITHUB** APKinspector is a powerful GUI tool for analysts t…
+gc-110 | django-voting   | https://code.google.com/p/django-voting/ |  A generic voting application for Django
+gc-107 | findmyhash   | https://code.google.com/p/findmyhash/ |  Python script to crack hashes using online services
+gc-107 | django-cron   | https://code.google.com/p/django-cron/ |  A Django application that will run cron jobs for other django apps
+gc-106 | pymysql   | https://code.google.com/p/pymysql/ |  Pure Python MySQL client
+gc-106 | dragonfly   | https://code.google.com/p/dragonfly/ |  Python-based speech recognition framework
+gc-105 | simplejson   | https://code.google.com/p/simplejson/ |  simple, fast, extensible JSON encoder/decoder for Python
+gc-105 | pydicom   | https://code.google.com/p/pydicom/ |  Read, modify and write DICOM files with python code
+gc-104 | zhpy   | https://code.google.com/p/zhpy/ |  Write Python language in Chinese
+gc-103 | partiwm   | https://code.google.com/p/partiwm/ |  A window manager library and "screen for X11"
+gc-102 | python-spidermonkey   | https://code.google.com/p/python-spidermonkey/ |  A bridge between Python and the Mozilla SpiderMonkey JavaScript engine…
+gc-102 | python-bitstring   | https://code.google.com/p/python-bitstring/ |  A Python module to help you manage your bits.
