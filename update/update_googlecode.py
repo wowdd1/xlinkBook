@@ -90,7 +90,7 @@ class GoogleCodeSpider(Spider):
 
 
     def doWork(self):
-        print "tip: update google code info need you run goagent propy on local"
+        print "tip: if you are in china, update google code info need you run goagent propy on local, then make use_proxy is True in this file,  or you can modify hosts file(see https://github.com/txthinking/google-hosts#%E4%BD%BF%E7%94%A8%E5%BD%93%E5%89%8D%E7%9A%84hosts)"
         r = self.requestData(self.base_url)
         soup = BeautifulSoup(r.text)
         for a in soup.find_all("a"):
