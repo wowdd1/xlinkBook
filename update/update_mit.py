@@ -45,6 +45,9 @@ class MitSpider(Spider):
                     if line[0 : 2] == '6.':
                         course_num = line.strip()[0 : line.strip().find(" ")]
                         title = line.strip()[line.strip().find(" ") + 1 : ]
+                        if course_num.find(',') != -1:
+                            course_num = line.strip()[0 : line.strip().find(" ", line.strip().find(" ") + 1)]
+                            title = line.strip()[line.strip().find(" ", line.strip().find(" ") + 1) + 1 : ]
                         link = self.getMitCourseLink(links, course_num)
                     else:
                         print course_num + " " + title + " " + link                     
