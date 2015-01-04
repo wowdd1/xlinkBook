@@ -57,7 +57,7 @@ class MitOcwSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
     
-    def do_work(self):
+    def doWork(self):
  
         print "downloading ocw course info"
         #r = requests.get("http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/")
@@ -76,4 +76,4 @@ class MitOcwSpider(Spider):
                 #print li.a.string
     
 start = MitOcwSpider();
-start.do_work()
+start.doWork()

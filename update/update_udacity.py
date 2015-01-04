@@ -54,7 +54,7 @@ class UdacitySpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n" 
 
-    def do_work(self):
+    def doWork(self):
         url = "https://www.udacity.com/public-api/v0/courses?projection=internal"
         print "downloading udacity course info"
         r = requests.get(url)
@@ -70,5 +70,5 @@ class UdacitySpider(Spider):
 
 
 start = UdacitySpider()
-start.do_work()
+start.doWork()
 #https://www.udacity.com/public-api/v0/courses?projection=internal

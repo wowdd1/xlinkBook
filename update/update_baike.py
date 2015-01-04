@@ -119,7 +119,7 @@ class BaikeSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def do_work(self):
+    def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
 
@@ -128,4 +128,4 @@ class BaikeSpider(Spider):
 
 
 start = BaikeSpider()
-start.do_work()
+start.doWork()

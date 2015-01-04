@@ -45,7 +45,7 @@ class NetEasySpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
    
-    def do_work(self):
+    def doWork(self):
         print "downloading 163 ocw info"
         r = requests.get(self.url)
         soup = BeautifulSoup(r.text)
@@ -55,4 +55,4 @@ class NetEasySpider(Spider):
     
 
 start = NetEasySpider()
-start.do_work();    
+start.doWork();    

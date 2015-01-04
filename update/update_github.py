@@ -205,7 +205,7 @@ class GithubSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def do_work(self):
+    def doWork(self):
         for lang in self.lang_list:
             self.processGithubData(lang, 350, 100)
 
@@ -220,4 +220,4 @@ class GithubSpider(Spider):
         
         
 start = GithubSpider()
-start.do_work()
+start.doWork()

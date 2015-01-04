@@ -32,7 +32,7 @@ class BerkeleySpider(Spider):
             self.count = self.count + 1
             self.write_db(f, title[0:title.find(" ")], title[title.find(" "):], link)
     
-    def do_work(self):
+    def doWork(self):
         #berkeley
         #"""
         print "downloading berkeley course info"
@@ -63,4 +63,4 @@ class BerkeleySpider(Spider):
             print "no need upgrade\n"
     
 start = BerkeleySpider();
-start.do_work() 
+start.doWork() 

@@ -52,7 +52,7 @@ class MitSpider(Spider):
                         self.count = self.count + 1
                         self.write_db(f, course_num, title, link, remark)
     
-    def do_work(self):
+    def doWork(self):
         #mit
         #"""
         print "downloading mit course info"
@@ -81,4 +81,4 @@ class MitSpider(Spider):
         #"""
    
 start = MitSpider()
-start.do_work() 
+start.doWork() 

@@ -77,7 +77,7 @@ class HarvardOnlineSpider(Spider):
             print "no need upgrade\n"
     
     
-    def do_work(self):
+    def doWork(self):
         print "downloading harvard online course info"
         #r = requests.get("http://www.extension.harvard.edu/courses/subject/computer-science")
         r = requests.get(self.url)
@@ -88,4 +88,4 @@ class HarvardOnlineSpider(Spider):
             self.getHarvardOnlineCourse(li.a.string, "http://www.extension.harvard.edu" + str(li.a["href"]))
         
 start = HarvardOnlineSpider()
-start.do_work() 
+start.doWork() 

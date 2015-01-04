@@ -59,7 +59,7 @@ class HarvardSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
         
-    def do_work(self): 
+    def doWork(self): 
         print "downloading harvard course info"
         r = requests.get("http://www.registrar.fas.harvard.edu/courses-exams/courses-instruction")
         soup = BeautifulSoup(r.text)
@@ -69,4 +69,4 @@ class HarvardSpider(Spider):
             self.getHarvardCourse(span.a.string, self.url + str(span.a["href"]))
     
 start = HarvardSpider()
-start.do_work()
+start.doWork()

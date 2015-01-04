@@ -31,7 +31,7 @@ class SourceforgeSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def do_work(self):
+    def doWork(self):
         url = "http://sourceforge.net/top/top_data"
         r = requests.get(url)
         jobj = json.loads(r.text)
@@ -41,4 +41,4 @@ class SourceforgeSpider(Spider):
                 self.processSourceforgeData(k,v)
 
 start = SourceforgeSpider()
-start.do_work()
+start.doWork()

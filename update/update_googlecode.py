@@ -89,7 +89,7 @@ class GoogleCodeSpider(Spider):
             print "no need upgrade\n"
 
 
-    def do_work(self):
+    def doWork(self):
         print "tip: update google code info need you run goagent propy on local"
         r = self.requestData(self.base_url)
         soup = BeautifulSoup(r.text)
@@ -101,4 +101,4 @@ class GoogleCodeSpider(Spider):
 
 
 start = GoogleCodeSpider()
-start.do_work()
+start.doWork()

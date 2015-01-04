@@ -38,7 +38,7 @@ class StanfordExploreSpider(Spider):
             self.write_db(f, course_num_list[i], course_name_list[i], "https://explorecourses.stanford.edu/search?q=" + course_num_list[i], course_description_list[i])
             self.count += 1
 
-    def do_work(self):
+    def doWork(self):
         file_name = self.get_file_name(self.subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
@@ -60,4 +60,4 @@ class StanfordExploreSpider(Spider):
             print "no need upgrade\n"
 
 start = StanfordExploreSpider()
-start.do_work()
+start.doWork()

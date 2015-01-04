@@ -106,7 +106,7 @@ class CourseraSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def do_work(self):
+    def doWork(self):
         print "downloading coursera course info"
     
         print "loading data..."
@@ -121,4 +121,4 @@ class CourseraSpider(Spider):
    
 
 start = CourseraSpider()
-start.do_work() 
+start.doWork() 

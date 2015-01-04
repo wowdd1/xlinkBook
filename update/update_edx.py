@@ -80,7 +80,7 @@ class EdxSpider(Spider):
             print "no need upgrade\n" 
         
     
-    def do_work(self):
+    def doWork(self):
     
         print "downloading edx course info"
         r = requests.get("https://www.edx.org/search/api/all")
@@ -95,5 +95,5 @@ class EdxSpider(Spider):
                 self.getEdxOnlineCourse(subject, jobj)
     
 start = EdxSpider()
-start.do_work()
+start.doWork()
     

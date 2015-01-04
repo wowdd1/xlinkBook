@@ -40,7 +40,7 @@ class Spider:
         self.url = None
         self.count = 0
 
-    def do_work(self):
+    def doWork(self):
         return
       
     def format_subject(self, subject):

@@ -38,7 +38,7 @@ class StanfordSpider(Spider):
             self.count = self.count + 1
             self.write_db(f, th_set[index].string, td_set[index], link)
     
-    def do_work(self):
+    def doWork(self):
         #stanford
         #"""
         print "downloading stanford course info"
@@ -80,4 +80,4 @@ class StanfordSpider(Spider):
     
     
 start = StanfordSpider()
-start.do_work()    
+start.doWork() 

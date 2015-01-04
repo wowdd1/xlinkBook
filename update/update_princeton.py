@@ -23,7 +23,7 @@ class PrincetonSpider(Spider):
             link = "http://www.math.princeton.edu" + title.span.a["href"]
             self.write_db(f, title.span.a.string[0:title.span.a.string.find(" ")], title.span.a.string[title.span.a.string.find(" "):], link)
     
-    def do_work(self):
+    def doWork(self):
         file_name = self.get_file_name(self.subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
@@ -50,4 +50,4 @@ class PrincetonSpider(Spider):
         #"""
     
 start = PrincetonSpider()
-start.do_work()
+start.doWork()
