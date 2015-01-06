@@ -81,7 +81,7 @@ class Spider:
         if subject_converted[len(subject_converted) - 1 : ] == '/':
             subject_converted = subject_converted[0 : len(subject_converted) - 1]
         for item in need_update_subject_list:
-            if subject_converted == item:
+            if subject_converted.find(item) != -1:
                 return True
         print subject + " not config in all_subject.py, ignore it"
         return False
