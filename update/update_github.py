@@ -207,7 +207,7 @@ class GithubSpider(Spider):
 
     def doWork(self):
         for lang in self.lang_list:
-            self.processGithubData(lang, 350, 100)
+            self.processGithubData(lang, 500, 100)
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
