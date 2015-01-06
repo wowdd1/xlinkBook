@@ -44,7 +44,7 @@ class CMUSpider(Spider):
                 pos = tr.prettify().find("</td>")
                 title = tr.prettify()[tr.prettify().find("<td>", pos) + 4 : tr.prettify().find("</td>", pos + 3)].replace("\n", "").strip()
                 while title.find("<") != -1:
-                    title = title[0 : title.find("<")].strip()+ title[title.find(">") + 1:].strip()
+                    title = title[0 : title.find("<")].strip()+ title[title.find(">") + 1:].replace("\n", "").strip()
                 url = "https://enr-apps.as.cmu.edu" + tr.td.a.prettify()[tr.td.a.prettify().find("/open/SOC/SOCServlet"): tr.td.a.prettify().find("'", tr.td.a.prettify().find("/open/SOC/SOCServlet"))].replace("amp;","")
                 course_num = tr.td.a.text 
                 print course_num + " " + title
