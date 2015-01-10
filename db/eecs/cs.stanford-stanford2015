@@ -73,39 +73,20 @@ cs547 | Human-Computer Interaction Seminar | http://cs547.Stanford.EDU |
 cs801 | TGR Project | http://cs801.Stanford.EDU | 
 cs802 | TGR Dissertation | http://cs802.Stanford.EDU | 
 cs91SI | Digital Canvas: Intro to Visual Design on the Web | http://cs91SI.Stanford.EDU | 
-cs2C | Multimedia Production | http://cs2C.Stanford.EDU | 
-cs9 | Problem-solving for the CS Technical Interview | http://cs9.Stanford.EDU | 
-cs103 | Mathematical Foundations of Computing | http://cs103.Stanford.EDU | 
-cs105 | Introduction to Computers | http://cs105.Stanford.EDU | 
 cs106A-2 | Programming Methodology | http://cs106A-2.Stanford.EDU | 
-cs106A | Programming Methodology | http://cs106A.Stanford.EDU | 
-cs106B | Programming Abstractions | http://cs106B.Stanford.EDU | 
-cs106X | Programming Abstractions (Accelerated) | http://cs106X.Stanford.EDU | 
-cs107 | Computer Organization and Systems | http://cs107.Stanford.EDU | 
 cs107E | Computer Systems from the Ground Up | http://cs107E.Stanford.EDU | 
-cs108 | Object-Oriented Systems Design | http://cs108.Stanford.EDU | 
-cs109 | Intro to Probability for Computer Scientists | http://cs109.Stanford.EDU | 
-cs110 | Principles of Computer Systems | http://cs110.Stanford.EDU | 
 cs124 | From Languages to Information | http://cs124.Stanford.EDU | 
 cs140 | Operating Systems and Systems Programming | http://cs140.Stanford.EDU | 
 cs142 | Web Applications | http://cs142.Stanford.EDU | 
 cs144 | Introduction to Computer Networking | http://cs144.Stanford.EDU | 
 cs149 | Parallel Computing | http://cs149.Stanford.EDU | 
 cs154 | Introduction to Automata and Complexity Theory | http://cs154.Stanford.EDU | 
-cs181 | Computers, Ethics and Public Policy | http://cs181.Stanford.EDU | 
-cs181W | Computers, Ethics and Public Policy (WIM) | http://cs181W.Stanford.EDU | 
-cs191 | Senior Project | http://cs191.Stanford.EDU | 
-cs191W | Writing Intensive Senior Project | http://cs191W.Stanford.EDU | 
-cs192 | Programming Service Project | http://cs192.Stanford.EDU | 
 cs193A | Android Programming | http://cs193A.Stanford.EDU | 
 cs193P | iPhone and iPad Application Programming | http://cs193P.Stanford.EDU | 
 cs194 | Software Project | http://cs194.Stanford.EDU | 
 cs194H | User Interface Design Project | http://cs194H.Stanford.EDU | 
 cs194W | Software Project (WIM) | http://cs194W.Stanford.EDU | 
 cs196 | Computer Consulting | http://cs196.Stanford.EDU | 
-cs198 | Teaching Computer Science | http://cs198.Stanford.EDU | 
-cs199 | Independent Work | http://cs199.Stanford.EDU | 
-cs199P | Independent Work | http://cs199P.Stanford.EDU | 
 cs202 | Law for Computer Science Professionals | http://cs202.Stanford.EDU | 
 cs210A | Software Project Experience with Corporate Partner | http://cs210A.Stanford.EDU | 
 cs223A | Introduction to Robotics | http://cs223A.Stanford.EDU | 
@@ -129,58 +110,22 @@ cs275A | Symbolic Musical Information | http://cs275A.Stanford.EDU |
 cs334A | Convex Optimization | http://cs334A.Stanford.EDU | 
 cs344G | (Your) Great Ideas for Networked Applications | http://cs344G.Stanford.EDU | 
 cs369E | Communication Complexity (for Algorithm Designers) | http://cs369E.Stanford.EDU | 
-cs390A | Curricular Practical Training | http://cs390A.Stanford.EDU | 
-cs390B | Curricular Practical Training | http://cs390B.Stanford.EDU | 
-cs390C | Curricular Practical Training | http://cs390C.Stanford.EDU | 
-cs390P | Part-time Curricular Practical Training | http://cs390P.Stanford.EDU | 
-cs393 | Computer Laboratory | http://cs393.Stanford.EDU | 
-cs395 | Independent Database Project | http://cs395.Stanford.EDU | 
-cs399 | Independent Project | http://cs399.Stanford.EDU | 
-cs399P | Independent Project | http://cs399P.Stanford.EDU | 
 cs427 | Hero's Journey:AI & Game Theory 3D Real-Time Story | http://cs427.Stanford.EDU | 
 cs448I | Computational Imaging and Display | http://cs448I.Stanford.EDU | 
 cs476B | Mobile Music | http://cs476B.Stanford.EDU | 
-cs499 | Advanced Reading and Research | http://cs499.Stanford.EDU | 
-cs499P | Advanced Reading and Research | http://cs499P.Stanford.EDU | 
 cs545 | Database and Information Management Seminar | http://cs545.Stanford.EDU | 
-cs546 | Seminar on Liberation Technologies | http://cs546.Stanford.EDU | 
-cs547 | Human-Computer Interaction Seminar | http://cs547.Stanford.EDU | 
-cs801 | TGR Project | http://cs801.Stanford.EDU | 
-cs802 | TGR Dissertation | http://cs802.Stanford.EDU | 
-cs1U | Practical Unix | http://cs1U.Stanford.EDU | 
 cs81N | Hackers and Heroes | http://cs81N.Stanford.EDU | 
 cs101 | Introduction to Computing Principles | http://cs101.Stanford.EDU | 
-cs103 | Mathematical Foundations of Computing | http://cs103.Stanford.EDU | 
-cs106A | Programming Methodology | http://cs106A.Stanford.EDU | 
-cs106B | Programming Abstractions | http://cs106B.Stanford.EDU | 
-cs106L | Standard C++ Programming Laboratory | http://cs106L.Stanford.EDU | 
-cs107 | Computer Organization and Systems | http://cs107.Stanford.EDU | 
-cs109 | Intro to Probability for Computer Scientists | http://cs109.Stanford.EDU | 
-cs109L | Statistical Computing with R Laboratory | http://cs109L.Stanford.EDU | 
-cs110 | Principles of Computer Systems | http://cs110.Stanford.EDU | 
 cs143 | Compilers | http://cs143.Stanford.EDU | 
 cs155 | Computer and Network Security | http://cs155.Stanford.EDU | 
-cs161 | Design and Analysis of Algorithms | http://cs161.Stanford.EDU | 
 cs168 | The Modern Algorithmic Toolbox | http://cs168.Stanford.EDU | 
 cs170 | Stanford Laptop Orchestra: Composition, Coding, Pe | http://cs170.Stanford.EDU | 
-cs181 | Computers, Ethics and Public Policy | http://cs181.Stanford.EDU | 
-cs181W | Computers, Ethics and Public Policy (WIM) | http://cs181W.Stanford.EDU | 
 cs190 | Software Design Studio | http://cs190.Stanford.EDU | 
-cs191 | Senior Project | http://cs191.Stanford.EDU | 
-cs191W | Writing Intensive Senior Project | http://cs191W.Stanford.EDU | 
-cs192 | Programming Service Project | http://cs192.Stanford.EDU | 
-cs194 | Software Project | http://cs194.Stanford.EDU | 
-cs194W | Software Project (WIM) | http://cs194W.Stanford.EDU | 
-cs196 | Computer Consulting | http://cs196.Stanford.EDU | 
-cs198 | Teaching Computer Science | http://cs198.Stanford.EDU | 
-cs199 | Independent Work | http://cs199.Stanford.EDU | 
-cs199P | Independent Work | http://cs199P.Stanford.EDU | 
 cs204 | Legal Informatics | http://cs204.Stanford.EDU | 
 cs205A | Mathematical Methods for Robotics, Vision & Graph | http://cs205A.Stanford.EDU | 
 cs210B | Software Project Experience with Corporate Partner | http://cs210B.Stanford.EDU | 
 cs210L | Introducing Software Through Video Stories | http://cs210L.Stanford.EDU | 
 cs224U | Natural Language Understanding | http://cs224U.Stanford.EDU | 
-cs225A | Experimental Robotics | http://cs225A.Stanford.EDU | 
 cs227B | General Game Playing | http://cs227B.Stanford.EDU | 
 cs231B | The Cutting Edge of Computer Vision | http://cs231B.Stanford.EDU | 
 cs231M | Mobile Computer Vision | http://cs231M.Stanford.EDU | 
@@ -204,42 +149,6 @@ cs371 | Computational Biology in Four Dimensions | http://cs371.Stanford.EDU |
 cs374 | Algorithms in Biology | http://cs374.Stanford.EDU | 
 cs376 | Research Topics in Human-Computer Interaction | http://cs376.Stanford.EDU | 
 cs379C | Computational Models of the Neocortex | http://cs379C.Stanford.EDU | 
-cs390A | Curricular Practical Training | http://cs390A.Stanford.EDU | 
-cs390B | Curricular Practical Training | http://cs390B.Stanford.EDU | 
-cs390C | Curricular Practical Training | http://cs390C.Stanford.EDU | 
-cs390P | Part-time Curricular Practical Training | http://cs390P.Stanford.EDU | 
-cs393 | Computer Laboratory | http://cs393.Stanford.EDU | 
-cs395 | Independent Database Project | http://cs395.Stanford.EDU | 
-cs399 | Independent Project | http://cs399.Stanford.EDU | 
-cs399P | Independent Project | http://cs399P.Stanford.EDU | 
 cs448X | Topics in Computer Graphics | http://cs448X.Stanford.EDU | 
-cs499 | Advanced Reading and Research | http://cs499.Stanford.EDU | 
-cs499P | Advanced Reading and Research | http://cs499P.Stanford.EDU | 
-cs547 | Human-Computer Interaction Seminar | http://cs547.Stanford.EDU | 
 cs571 | Surgical Robotics Seminar | http://cs571.Stanford.EDU | 
-cs801 | TGR Project | http://cs801.Stanford.EDU | 
-cs802 | TGR Dissertation | http://cs802.Stanford.EDU | 
-cs106A | Programming Methodology | http://cs106A.Stanford.EDU | 
-cs106B | Programming Abstractions | http://cs106B.Stanford.EDU | 
-cs107 | Computer Organization and Systems | http://cs107.Stanford.EDU | 
-cs109 | Intro to Probability for Computer Scientists | http://cs109.Stanford.EDU | 
-cs143 | Compilers | http://cs143.Stanford.EDU | 
-cs145 | Introduction to Databases | http://cs145.Stanford.EDU | 
-cs148 | Introduction to Computer Graphics and Imaging | http://cs148.Stanford.EDU | 
-cs161 | Design and Analysis of Algorithms | http://cs161.Stanford.EDU | 
-cs191 | Senior Project | http://cs191.Stanford.EDU | 
-cs192 | Programming Service Project | http://cs192.Stanford.EDU | 
 cs193C | Client-Side Internet Technologies | http://cs193C.Stanford.EDU | 
-cs199 | Independent Work | http://cs199.Stanford.EDU | 
-cs199P | Independent Work | http://cs199P.Stanford.EDU | 
-cs390A | Curricular Practical Training | http://cs390A.Stanford.EDU | 
-cs390B | Curricular Practical Training | http://cs390B.Stanford.EDU | 
-cs390C | Curricular Practical Training | http://cs390C.Stanford.EDU | 
-cs393 | Computer Laboratory | http://cs393.Stanford.EDU | 
-cs395 | Independent Database Project | http://cs395.Stanford.EDU | 
-cs399 | Independent Project | http://cs399.Stanford.EDU | 
-cs399P | Independent Project | http://cs399P.Stanford.EDU | 
-cs499 | Advanced Reading and Research | http://cs499.Stanford.EDU | 
-cs499P | Advanced Reading and Research | http://cs499P.Stanford.EDU | 
-cs801 | TGR Project | http://cs801.Stanford.EDU | 
-cs802 | TGR Dissertation | http://cs802.Stanford.EDU | 

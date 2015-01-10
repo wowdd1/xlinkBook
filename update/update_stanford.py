@@ -7,12 +7,19 @@
 from spider import *
 
 class StanfordSpider(Spider):
+    course_num_list = []
 
     def __init__(self):
         Spider.__init__(self)
         self.school = "stanford"
         self.subject = "eecs"
     
+    def isInCourseNumList(self, course_num):
+        for item in self.course_num_list:
+            if item == course_num:
+                return True
+        self.course_num_list.append(course_num)
+        return False
     
     def processStanfordDate(self, f, html):
         if self.need_update_subject(self.subject) == False:
@@ -35,6 +42,8 @@ class StanfordSpider(Spider):
             link = th_set[index].prettify()
             link = link[link.find("http"):link.find("EDU") + 3]
             title = th_set[index].string + " " + td_set[index]
+            if self.isInCourseNumList(th_set[index].string) == True:
+                continue
             self.count = self.count + 1
             self.write_db(f, th_set[index].string, td_set[index], link)
     
