@@ -17,13 +17,9 @@ class SJRSpider(Spider):
         self.school = "sjr"
 
 
-    def getKeyValue(self, option):
-        value_pos = option.find("value=") + 7
-        return option[value_pos : option.find('"', value_pos)], option[option.find(">") + 1 : option.find("</", 2)].replace("&amp;", "").replace("\n", "").strip()
-
     def initOptionDict(self, selectId, optionDict, html):
         soup = BeautifulSoup(html)
-        for option in soup.find("select", id=selectId).children:
+        for option in soup.find("select", id="selectId").children:
             if str(option).strip() == "" or str(option).find("value") == -1:
                 continue
             key, value = self.getKeyValue(str(option))

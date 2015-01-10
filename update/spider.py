@@ -179,4 +179,8 @@ class Spider:
                     title = title.replace("|", "").strip()
                 return title
         return text
+
+    def getKeyValue(self, option):
+        value_pos = option.find("value=") + 7
+        return option[value_pos : option.find('"', value_pos)], option[option.find(">") + 1 : option.find("</", 2)].replace("&amp;", "").replace("\n", "").strip()
     
