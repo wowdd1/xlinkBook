@@ -387,6 +387,7 @@ def main(argv):
         elif o in ('-d', '--describe'):
             output_with_describe = True
             custom_cell_len = cell_len + (cell_len / 14)
+            output_with_color = True
         elif o in ('-w', '--width'):
             custom_cell_len = int(a) 
     if source == "":
