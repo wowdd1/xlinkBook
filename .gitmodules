@@ -1,0 +1,6 @@
+[submodule "download/coursera"]
+	path = download/coursera
+	url = git@github.com:coursera-dl/coursera.git
+[submodule "download/youtube-dl"]
+	path = download/youtube-dl
+	url = git@github.com:rg3/youtube-dl.git
