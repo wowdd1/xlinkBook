@@ -88,14 +88,18 @@ class CourseraSpider(Spider):
 
         for courseObj in jobj.items()[0][1]:
             url, active = self.getSessionLinkAndStatus(courseObj['links']['sessions'], courseObj['shortName'])
-            print str(courseObj['id']) + " " + courseObj['name'] + " " + url
             remark = ""
+            session_id = ""
             if active == True:
                 remark = "available:yes "
+                session_id = url[url.find("org/") + 4 : ].replace("/", "")
             else:
                 remark = "available:no "
+                session_id = courseObj['shortName']
+
+            print session_id + " " + courseObj['name'] + " " + url
             remark += courseObj['shortDescription'] + " university:" + self.getUniversitieName(courseObj['links']['universities']) + " instructor:" + self.getInstructorName(courseObj['links'].get('instructors',"none"))
-            self.write_db(f, "cra-" + str(courseObj['id']), self.delZh(courseObj['name']).strip(), url, self.delZh(remark.replace("\n", "" )).strip()) 
+            self.write_db(f, session_id, self.delZh(courseObj['name']).strip(), url, self.delZh(remark.replace("\n", "" )).strip()) 
             count += 1
 
         self.close_db(f)
