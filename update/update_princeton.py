@@ -4,10 +4,18 @@ from spider import *
 
 class PrincetonSpider(Spider):
     termDict = {}
+    course_num_list = []
 
     def __init__(self):
         Spider.__init__(self)
         self.school = "princeton"
+
+    def isInCourseNumList(self, course_num):
+        for item in self.course_num_list:
+            if item == course_num:
+                return True
+        self.course_num_list.append(course_num)
+        return False
 
     def processData(self, f, subject_code, subject, term):
         url = "http://registrar.princeton.edu/course-offerings/search_results.xml?term=" + term + "&subject=" + subject_code
@@ -26,6 +34,9 @@ class PrincetonSpider(Spider):
                         link = "http://registrar.princeton.edu/course-offerings/" + td.a["href"]
                         course_num = td.a.text.replace("\n", "").strip().replace("  ", "").replace(" ", "/")
                     elif i == 3 and course_num != "":
+                        if self.isInCourseNumList(course_num) == True:
+                            continue
+
                         course_title = str(td)[str(td).find(">") + 1 : str(td).find("<", + 2)].strip()
                         print course_num + " " + course_title
                         self.write_db(f, course_num, course_title, link)
