@@ -5,8 +5,8 @@ AlgebraX | Introduction to Algebra (SchoolYourself) | https://www.edx.org/course
 GeometryX | Introduction to Geometry (SchoolYourself) | https://www.edx.org/course/introduction-geometry-schoolyourself-geometryx | Starting Soon
 INFO2040x | Networks, Crowds and Markets (CornellX) | https://www.edx.org/course/networks-crowds-markets-cornellx-info2040x | Starting Soon
 BMA101x | Bases Matemáticas: Álgebra (UPValenciaX) | https://www.edx.org/course/bases-matematicas-algebra-upvalenciax-bma101x | Starting Soon
-PHYS-209x | Introduction à l'astrophysique (EPFLx) | https://www.edx.org/course/introduction-lastrophysique-epflx-phys-209x | Starting Soon
 D003x.1 | Applications of Linear Algebra Part 1 (DavidsonX) | https://www.edx.org/course/applications-linear-algebra-part-1-davidsonx-d003x-1 | Starting Soon
+PHYS-209x | Introduction à l'astrophysique (EPFLx) | https://www.edx.org/course/introduction-lastrophysique-epflx-phys-209x | Starting Soon
 60240013x | Combinatorial Mathematics (TsinghuaX) | https://www.edx.org/course/combinatorial-mathematics-tsinghuax-60240013x-0 | Starting Soon
 D003x.2 | Applications of Linear Algebra Part 2 (DavidsonX) | https://www.edx.org/course/applications-linear-algebra-part-2-davidsonx-d003x-2 | Starting Soon
 ENGR1.0x | Introduction to Engineering and Engineering Mathematics (UTArlingtonX) | https://www.edx.org/course/introduction-engineering-engineering-utarlingtonx-engr1-0x | Starting Soon
@@ -17,7 +17,6 @@ UT.PreC.10.01x | Discovery Precalculus: A Creative and Connected Approach (UTAus
 18.01.3x | Calculus 1C: Coordinate Systems & Infinite Series (MITx) | https://www.edx.org/course/calculus-1c-coordinate-systems-infinite-mitx-18-01-3x | Starting Soon
 DemoX.1 | DemoX (edX) | https://www.edx.org/course/demox-edx-demox-1 | Current
 UT.7.01x | Foundations of Data Analysis (UTAustinX) | https://www.edx.org/course/foundations-data-analysis-utaustinx-ut-7-01x | Current
-04830050.2x | Data Structures and Algorithms Part 2 (PekingX) | https://www.edx.org/course/shu-ju-jie-gou-yu-suan-fa-di-er-bu-fen-pekingx-04830050-2x | Current
 EX101x | Data analysis to the MAX() (DelftX) | https://www.edx.org/course/data-analysis-max-delftx-ex101x | Upcoming
 BMD101x | Bases Matemáticas: Derivadas (UPValenciaX) | https://www.edx.org/course/bases-matematicas-derivadas-upvalenciax-bmd101x | Upcoming
 SOC120x | I "Heart" Stats: Learning to Love Statistics (NotreDameX) | https://www.edx.org/course/i-heart-stats-learning-love-statistics-notredamex-soc120x | Upcoming
@@ -27,8 +26,8 @@ STATx | Preparing for the AP<sup>*</sup> Statistics Exam (Tennessee Board of Reg
 PH207x | Health in Numbers: Quantitative Methods in Clinical & Public Health Research (HarvardX) | https://www.edx.org/course/health-numbers-quantitative-methods-harvardx-ph207x | Archived
 CS-191x | Quantum Mechanics and Quantum Computation (UC BerkeleyX) | https://www.edx.org/course/quantum-mechanics-quantum-computation-uc-berkeleyx-cs-191x | Archived
 16.101x | Introduction to Aerodynamics (MITx) | https://www.edx.org/course/introduction-aerodynamics-mitx-16-101x | Archived
-BIO465X | Neuronal Dynamics- Computational Neuroscience of Single Neurons (EPFLx) | https://www.edx.org/course/neuronal-dynamics-computational-epflx-bio465x | Archived
 2.03x | Dynamics (MITx) | https://www.edx.org/course/dynamics-mitx-2-03x | Archived
+BIO465X | Neuronal Dynamics- Computational Neuroscience of Single Neurons (EPFLx) | https://www.edx.org/course/neuronal-dynamics-computational-epflx-bio465x | Archived
 ASTRO2290x | Relativity and Astrophysics (CornellX) | https://www.edx.org/course/relativity-astrophysics-cornellx-astro2290x | Archived
 AMRx | Autonomous Mobile Robots (ETHx) | https://www.edx.org/course/autonomous-mobile-robots-ethx-amrx | Archived
 UT.9.01x | Effective Thinking Through Mathematics (UTAustinX) | https://www.edx.org/course/effective-thinking-through-mathematics-utaustinx-ut-9-01x | Archived
@@ -38,9 +37,10 @@ Stat2.1X | Introduction to Statistics: Descriptive Statistics (UC BerkeleyX) | h
 Stat2.2x | Introduction to Statistics: Probability (UC BerkeleyX) | https://www.edx.org/course/introduction-statistics-probability-uc-berkeleyx-stat2-2x | Archived
 Stat2.3x | Introduction to Statistics: Inference (UC BerkeleyX) | https://www.edx.org/course/introduction-statistics-inference-uc-berkeleyx-stat2-3x | Archived
 KIExploRx | Explore Statistics with R (KIx) | https://www.edx.org/course/explore-statistics-r-kix-kiexplorx | Archived
-04830050x | Data Structures and Algorithms Part 1 (PekingX) | https://www.edx.org/course/shu-ju-jie-gou-yu-suan-fa-di-yi-bu-fen-pekingx-04830050x | Archived
+04830050x | 数据结构与算法第一部分  Data Structures and Algorithms Part 1 (PekingX) | https://www.edx.org/course/shu-ju-jie-gou-yu-suan-fa-di-yi-bu-fen-pekingx-04830050x | Archived
 CS1156x | Learning From Data (CaltechX) | https://www.edx.org/course/learning-data-caltechx-cs1156x | Archived
 PHYS201x | Waves & Optics (RiceX) | https://www.edx.org/course/waves-optics-ricex-phys201x | Archived
 BIO465.1x | Neuronal Dynamics- Computational Neuroscience of Single Neurons (EPFLx) | https://www.edx.org/course/neuronal-dynamics-computational-epflx-bio465-1x | Archived
 TPM1x | Solving Complex Problems (DelftX) | https://www.edx.org/course/solving-complex-problems-delftx-tpm1x | Archived
 60240013x | Combinatorial Mathematics (TsinghuaX) | https://www.edx.org/course/combinatorial-mathematics-tsinghuax-60240013x | Archived
+04830050.2x | 数据结构与算法第二部分  Data Structures and Algorithms Part 2 (PekingX) | https://www.edx.org/course/shu-ju-jie-gou-yu-suan-fa-di-er-bu-fen-pekingx-04830050-2x | Archived
