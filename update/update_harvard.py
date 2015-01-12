@@ -15,6 +15,23 @@ class HarvardSpider(Spider):
         self.school = "harvard"
         self.url = "http://www.registrar.fas.harvard.edu"
 
+    def formatCourseNum(self, subject, oldTitle):
+        title = oldTitle[0 : oldTitle.find(".")]
+        if title.find("(") != -1:
+            title = title[0 : title.find("(")].strip()
+        title = title.replace("*", "").replace("[", "")
+        if title.find(subject) != -1:
+            course_num = title[len(subject) : ].strip()
+            if subject.find(" ") != -1:
+                words = re.compile("[A-Za-z]+").findall(subject) 
+                pre = ""
+                for word in words:
+                    pre += word[0 : 1]
+                return pre + "-" + course_num
+            else:
+                return subject + "-" + course_num
+        return title
+
     def getHarvardCourse(self, subject, url):
         if self.need_update_subject(subject) == False:
             return
@@ -24,6 +41,7 @@ class HarvardSpider(Spider):
         file_name = self.get_file_name(subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
+        self.count = 0 
     
         print "\n\nprocessing " + subject + " html and write data to file..."
         for node in soup.find_all("strong"):
@@ -47,10 +65,10 @@ class HarvardSpider(Spider):
     
             self.count = self.count + 1
             #print text
-            self.write_db(f, text[0:text.find(".")], text[text.find(".") + 2:], link)
+
+            self.write_db(f, self.formatCourseNum(subject, text), text[text.find(".") + 2:].replace("]", ""), link)
         if self.count == 0:
             print subject + " can not get the data, check the html and python code"
-        
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
             self.do_upgrade_db(file_name)

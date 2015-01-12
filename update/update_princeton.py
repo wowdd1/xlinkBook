@@ -32,12 +32,13 @@ class PrincetonSpider(Spider):
                     i += 1
                     if i == 2 and td.a.text.find(subject_code) != -1:
                         link = "http://registrar.princeton.edu/course-offerings/" + td.a["href"]
-                        course_num = td.a.text.replace("\n", "").strip().replace("  ", "").replace(" ", "/")
+                        course_num = td.a.text.replace("\n", "").strip().replace("  ", "")
+                        course_num = course_num[course_num.find(subject_code) : course_num.find(" ", course_num.find(subject_code))]
                     elif i == 3 and course_num != "":
                         if self.isInCourseNumList(course_num) == True:
                             continue
 
-                        course_title = str(td)[str(td).find(">") + 1 : str(td).find("<", + 2)].strip()
+                        course_title = str(td)[str(td).find(">") + 1 : str(td).find("<", + 2)].strip().replace("&amp;", "")
                         print course_num + " " + course_title
                         self.write_db(f, course_num, course_title, link)
                         self.count += 1
