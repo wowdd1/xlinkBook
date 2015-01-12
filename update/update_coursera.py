@@ -99,7 +99,7 @@ class CourseraSpider(Spider):
 
             print session_id + " " + courseObj['name'] + " " + url
             remark += courseObj['shortDescription'] + " university:" + self.getUniversitieName(courseObj['links']['universities']) + " instructor:" + self.getInstructorName(courseObj['links'].get('instructors',"none"))
-            self.write_db(f, session_id, self.delZh(courseObj['name']).strip(), url, self.delZh(remark.replace("\n", "" )).strip()) 
+            self.write_db(f, session_id, self.delZh(courseObj['name']).replace("(", "").replace(")", "").strip(), url, self.delZh(remark.replace("\n", "" )).strip()) 
             count += 1
 
         self.close_db(f)
