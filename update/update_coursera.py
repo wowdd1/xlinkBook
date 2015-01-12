@@ -93,6 +93,7 @@ class CourseraSpider(Spider):
             if active == True:
                 remark = "available:yes "
                 session_id = url[url.find("org/") + 4 : ].replace("/", "")
+                url = url + "lecture/index"
             else:
                 remark = "available:no "
                 session_id = courseObj['shortName']
