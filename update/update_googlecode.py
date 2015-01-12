@@ -76,7 +76,7 @@ class GoogleCodeSpider(Spider):
                     exit = True
                     break
                 title = item[item.find(' ') : item.find("- ")].strip()
-                remark = self.delZh(item[item.find("- ") + 1 : item.find('http')]).strip()
+                remark = item[item.find("- ") + 1 : item.find('http')].strip()
                 self.write_db(f, "gc-" + item[0 : item.find(' ')].strip(), title, item[item.find('http') : ], remark)
                 print item
 

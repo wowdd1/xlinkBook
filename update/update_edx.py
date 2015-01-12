@@ -67,7 +67,6 @@ class EdxSpider(Spider):
             if self.match_subject(subject, item["subjects"]):
                 #for item in json_obj:
                 title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
-                title = self.delZh(title)
                 count = count + 1
                 self.write_db(f, item["code"].strip(), title, item["url"], item["availability"])
     

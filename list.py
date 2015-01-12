@@ -10,6 +10,9 @@ import os,sys
 from record import Record
 from utils import Utils
 import copy
+import re
+import itertools
+import unicodedata
 
 source = ""
 filter_keyword = ""
@@ -25,6 +28,18 @@ output_with_describe = False
 
 line_max_len_list = [0, 0, 0]
 line_id_max_len_list = [0, 0, 0]
+
+regex = re.compile("\033\[[0-9;]*m")
+py3k = sys.version_info[0] >= 3
+if py3k:
+    unicode = str
+    basestring = str
+    itermap = map
+    uni_chr = chr
+else: 
+    itermap = itertools.imap
+    uni_chr = unichr
+
 def usage():
     print 'usage:'
     print '\t-h,--help: print help message.'
@@ -46,13 +61,61 @@ def print_keyword(file_name):
         head -50 | nl'
     os.system(cmd)
 
+def to_unicode(value):
+    if not isinstance(value, basestring):
+        value = str(value)
+    if not isinstance(value, unicode):
+        value = unicode(value, "UTF-8", "strict")
+    return value
+
+##############################
+# UNICODE WIDTH FUNCTIONS    #
+##############################
+
+def char_block_width(char):
+    # Basic Latin, which is probably the most common case
+    #if char in xrange(0x0021, 0x007e):
+    #if char >= 0x0021 and char <= 0x007e:
+    if 0x0021 <= char <= 0x007e:
+        return 1
+    # Chinese, Japanese, Korean (common)
+    if 0x4e00 <= char <= 0x9fff:
+        return 2
+    # Hangul
+    if 0xac00 <= char <= 0xd7af:
+        return 2
+    # Combining?
+    if unicodedata.combining(uni_chr(char)):
+        return 0
+    # Hiragana and Katakana
+    if 0x3040 <= char <= 0x309f or 0x30a0 <= char <= 0x30ff:
+        return 2
+    # Full-width Latin characters
+    if 0xff01 <= char <= 0xff60:
+        return 2
+    # CJK punctuation
+    if 0x3000 <= char <= 0x303e:
+        return 2
+    # Backspace and delete
+    if char in (0x0008, 0x007f):
+        return -1
+    # Other control characters
+    elif char in (0x0000, 0x001f):
+        return 0
+    # Take a guess
+    return 1
+
+def str_block_width(val):
+
+    return sum(itermap(char_block_width, itermap(ord, regex.sub("", val))))
+
 def align_id_title(record):
     course_num = record.get_id()
     course_name = record.get_title()
-    if len(course_name.decode('utf8')) > course_name_len:
+    if str_block_width(course_name) > course_name_len:
         course_name = course_name[0 : course_name_len - 3 ] + "..."
     else:
-        course_name = course_name + get_space(0, course_name_len - len(course_name.decode('utf8')))
+        course_name = course_name + get_space(0, course_name_len - str_block_width(course_name))
 
     if len(course_num) < course_num_len:
         space = get_space(0, course_num_len - len(course_num))
@@ -61,19 +124,19 @@ def align_id_title(record):
         return course_num + "|" + course_name
 
 def align_describe(describe):
-    if len(describe) > course_name_len - 1 and output_with_describe == False:
+    if str_block_width(describe) > course_name_len - 1 and output_with_describe == False:
         describe = describe[0 : course_name_len - 3 ] + "..."
     else:
-        describe += get_space(0, course_name_len - len(describe))
+        describe += get_space(0, course_name_len - str_block_width(describe))
     return get_space(0, course_num_len) + "|" + describe
 
 def align_black(text):
     if text == "":
         return get_space(0, course_num_len) + "|" + get_space(0, cell_len - course_num_len - 1)
     else:
-        if len(text) > course_name_len:
+        if str_block_width(text) > course_name_len:
             text = text[0 : course_name_len - 3] + "..."
-        return get_space(0, course_num_len) + "|" + text + get_space(0, course_name_len - len(text))
+        return get_space(0, course_num_len) + "|" + text + get_space(0, course_name_len - str_block_width(text))
 
 def print_with_color(text):
     global color_index
@@ -84,7 +147,9 @@ def print_with_color(text):
         utils.print_colorful("darkcyan", True, text)
     color_index += 1
 
-def print_table_head(id_name, title, col):
+def print_table_head(col, id_name='id', title='title'):
+    if output_with_describe == True:
+        title = "describe"
     table_head_mid = ''
     for i_i in range(0, col):
         update_cell_len(i_i)
@@ -125,10 +190,10 @@ def get_id_and_title(record):
     return record.get_id() + "|" + record.get_title()
 
 def update_max_len(record, col):
-    if len(get_id_and_title(record)) > line_max_len_list[col - 1]:
-        line_max_len_list[col - 1] = len(get_id_and_title(record))
-    if len(record.get_id()) > line_id_max_len_list[col - 1]:
-        line_id_max_len_list[col - 1] = len(record.get_id()) 
+    if str_block_width(get_id_and_title(record)) > line_max_len_list[col - 1]:
+        line_max_len_list[col - 1] = str_block_width(get_id_and_title(record))
+    if str_block_width(record.get_id()) > line_id_max_len_list[col - 1]:
+        line_id_max_len_list[col - 1] = str_block_width(record.get_id()) 
 
 
 def update_cell_len(index):
@@ -225,6 +290,7 @@ def print_list(file_name):
             list_all.append([])
          
         for line in all_lines:
+            line = to_unicode(line)
             record = Record(line.replace("\n", ""))
             current += 1
             if column_num == "3":
@@ -258,7 +324,7 @@ def print_list(file_name):
         id_title_lines, describe_lines , black_lines= build_lines(list_all)
 
         if column_num == "3":
-            print_table_head('id', 'title', 3)
+            print_table_head(3)
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
                 describe = get_line(describe_lines, 0, 3, i)  
@@ -295,7 +361,7 @@ def print_list(file_name):
 
             print_table_separator(3)
         elif column_num == "2":
-            print_table_head('id', 'title', 2)
+            print_table_head(2)
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
                 describe = get_line(describe_lines, 0, 2, i)
@@ -321,7 +387,7 @@ def print_list(file_name):
                     print black
             print_table_separator(2)
         elif column_num == '1':
-            print_table_head('id', 'title', 1)
+            print_table_head(1)
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
                 describe = get_line(describe_lines, 0, 1, i)
