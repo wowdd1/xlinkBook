@@ -56,10 +56,14 @@ class CourseraSpider(Spider):
         return name
 
     def getSessionLinkAndStatus(self, sessionIds, slug): 
+        session_id_dict = {}
         for session in self.sessions:
             for sessionId in sessionIds:
                 if session['id'] == sessionId and session['active'] == True:
-                    return session['homeLink'], True
+                    session_id_dict[sessionId] = session['homeLink']
+        if len(session_id_dict.keys()) > 0:
+            return session_id_dict[sorted(session_id_dict.keys())[len(session_id_dict.keys()) - 1]], True
+
         return "https://www.coursera.org/course/" + slug, False
     
     def getCategoryUrl(self, subjectId):
@@ -93,7 +97,7 @@ class CourseraSpider(Spider):
             if active == True:
                 remark = "available:yes "
                 session_id = url[url.find("org/") + 4 : ].replace("/", "")
-                url = url + "lecture/index"
+                url = url + "lecture"
             else:
                 remark = "available:no "
                 session_id = courseObj['shortName']
