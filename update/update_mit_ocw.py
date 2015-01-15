@@ -5,7 +5,7 @@
 #data: 2014.12.07
     
 from spider import *
-
+import time
 
 class MitOcwSpider(Spider):
 
@@ -16,7 +16,12 @@ class MitOcwSpider(Spider):
     #ocw
     #"""
     
-    
+    def getDescription(self, url):
+        r = requests.get(url)
+        jobj = json.loads(r.text)
+        description = ''
+        return 'level:' + jobj['level'] + ' instructors:' + jobj['instructors'] + ' description:' + re.sub(r'[\x00-\x1f]', '', jobj['description'].replace('\n', ''))
+ 
     def getMitOcwCourse(self, subject, url):
         if self.need_update_subject(subject) == False:
             return
@@ -32,6 +37,7 @@ class MitOcwSpider(Spider):
         course_num = ""
         title = ""
         link = ""
+        description = ""
         i = 0
         print "processing html and write data to file..."
         for a in soup.find_all("a", class_="preview"):
@@ -39,13 +45,16 @@ class MitOcwSpider(Spider):
             if i == 1:
                 title += a.string.replace("\n", "").strip() + " "
                 link = self.url + str(a["href"])
+                description = self.getDescription(link + '/index.json?' + str(time.time()).replace('.', ''))
             if i == 2:
                 title += a.string.replace("\n", "").replace("               ", "").strip()
                 count = count + 1
-                self.write_db(f, title[0:title.find(" ")], title[title.find(" "):], link)
+                print title + ' ' + link
+                self.write_db(f, title[0:title.find(" ")], title[title.find(" "):], link, description)
     
-                link = ""
-                title = ""
+                link = ''
+                title = ''
+                description = ''
             if i >= 3:
                 i = 0
     
