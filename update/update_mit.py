@@ -23,7 +23,7 @@ class MitSpider(Spider):
             i = i + 1
             if i == 1:
                 course_num = a.string.replace("\n", "").strip()
-                link = 'http://ocw.mit.edu' + str(a["href"]) + '/Syllabus/'
+                link = 'http://ocw.mit.edu' + str(a["href"]) + '/calendar/'
                 if self.ocw_links.get(course_num, '') == '':
                     self.ocw_links[course_num] = link
             if i >= 3:
