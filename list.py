@@ -224,7 +224,7 @@ def build_lines(list_all):
 
         for j in range(0, len(list_all[i])):
             id_title_lines[i][j] = align_id_title(list_all[i][j])
-            describe = len(list_all[i][j].get_describe())
+            describe = str_block_width(list_all[i][j].get_describe())
             if describe > course_name_len and output_with_describe == True:
                 describe_lines[i][j] = align_describe(list_all[i][j].get_describe()[0 : course_name_len])
                 black_lines[i][j] = align_black(" " + list_all[i][j].get_describe()[course_name_len : ])
@@ -462,6 +462,9 @@ def main(argv):
         return
     #if output_with_color == True:
     #    print "color"
+    if source.lower().find(".pdf") != -1:
+        os.system("open " + source)
+        return
 
     if os.path.isfile(source):
         print_list(source)
