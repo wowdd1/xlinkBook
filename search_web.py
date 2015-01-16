@@ -76,6 +76,7 @@ def search(keyword, engin):
             if u.find("google.com") == -1 and u.find("baidu.com") == -1 \
               and u.find("bing.com") == -1 and u.find("yahoo.com") == -1:
                 url = u
+                break
             if url == "":
                 url = urls[0]
     elif len(urls) == 1:
