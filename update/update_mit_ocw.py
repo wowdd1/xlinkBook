@@ -8,6 +8,8 @@ from spider import *
 import time
 
 class MitOcwSpider(Spider):
+    video_audio_dict = {}
+    online_book_dict = {}
 
     def __init__(self):
         Spider.__init__(self)    
@@ -16,6 +18,33 @@ class MitOcwSpider(Spider):
     #ocw
     #"""
     
+    def initDict(self, url, dict_arg):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        course_num = ''
+        link = ''
+        i = 0
+        for a in soup.find_all("a", class_="preview"):
+            i = i + 1
+            if i == 1:
+                course_num = a.string.replace("\n", "").strip()
+                link = self.url + str(a["href"])             
+                dict_arg[course_num] = link
+            if i >= 3:
+                i = 0
+                course_num = ''
+                link = ''
+
+    def existViewOrAudio(self, course_num):
+        if self.video_audio_dict.get(course_num, '') != '':
+            return True
+        return False
+
+    def existOnlineBook(self, course_num):
+        if self.online_book_dict.get(course_num, '') != '':
+            return True
+        return False
+
     def getDescription(self, url):
         r = requests.get(url)
         jobj = json.loads(r.text)
@@ -43,17 +72,24 @@ class MitOcwSpider(Spider):
         for a in soup.find_all("a", class_="preview"):
             i = i + 1
             if i == 1:
-                title += a.string.replace("\n", "").strip() + " "
+                course_num = a.string.replace("\n", "").strip()
                 link = self.url + str(a["href"])
-                description = self.getDescription(link + '/index.json?' + str(time.time()).replace('.', ''))
+                description = ''
+                if self.existViewOrAudio(course_num):
+                    description += 'video:yes '
+                if self.existOnlineBook(course_num):
+                    description += 'onlinebook:yes '
+                description +=  self.getDescription(link + '/index.json?' + str(time.time()).replace('.', ''))
+                
             if i == 2:
-                title += a.string.replace("\n", "").replace("               ", "").strip()
+                title = a.string.replace("\n", "").replace("               ", "").strip()
                 count = count + 1
-                print title + ' ' + link
-                self.write_db(f, title[0:title.find(" ")], title[title.find(" "):], link, description)
+                print course_num + ' ' + title + ' ' + link
+                self.write_db(f, course_num, title, link, description)
     
                 link = ''
                 title = ''
+                course_num = ''
                 description = ''
             if i >= 3:
                 i = 0
@@ -67,7 +103,10 @@ class MitOcwSpider(Spider):
             print "no need upgrade\n"
     
     def doWork(self):
- 
+        print 'init video and book dict' 
+        self.initDict('http://ocw.mit.edu/courses/audio-video-courses/', self.video_audio_dict)
+        self.initDict('http://ocw.mit.edu/courses/online-textbooks/', self.online_book_dict)
+
         print "downloading ocw course info"
         #r = requests.get("http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/")
         r = requests.get("http://ocw.mit.edu/courses/find-by-department")
