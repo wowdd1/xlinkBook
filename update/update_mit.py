@@ -6,15 +6,35 @@
 from spider import *
 
 class MitSpider(Spider):
-    
+    ocw_links = {}
+ 
     def __init__(self):
         Spider.__init__(self)    
         self.school = "mit"
         self.subject = "eecs"
-    
+   
+    def initOcwLinks(self):
+        r = requests.get('http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/')
+        soup = BeautifulSoup(r.text)
+        i = 0
+        course_num = ''
+        link = ''
+        for a in soup.find_all("a", class_="preview"):
+            i = i + 1
+            if i == 1:
+                course_num = a.string.replace("\n", "").strip()
+                link = 'http://ocw.mit.edu' + str(a["href"]) + '/Syllabus/'
+                self.ocw_links[course_num] = link
+            if i >= 3:
+                i = 0
+
+
     def getMitCourseLink(self, links, course_num):
         if course_num == "":
             return course_num
+        if self.ocw_links.get(course_num, '') != '':
+            return self.ocw_links[course_num]
+
         for link in links:
             if link.attrs.has_key("href") and link["href"].find(course_num) != -1 and link["href"].find("editcookie.cgi") == -1:
                 return link["href"]
@@ -48,7 +68,7 @@ class MitSpider(Spider):
                         if course_num.find(',') != -1:
                             course_num = line.strip()[0 : line.strip().find(" ", line.strip().find(" ") + 1)]
                             title = line.strip()[line.strip().find(" ", line.strip().find(" ") + 1) + 1 : ]
-                        link = self.getMitCourseLink(links, course_num)
+                        link = self.getMitCourseLink(links, course_num.strip())
                     else:
                         print course_num + " " + title + " " + link                     
                         remark = line.strip()
@@ -58,11 +78,15 @@ class MitSpider(Spider):
     def doWork(self):
         #mit
         #"""
+        print 'get ocw course links'
+        self.initOcwLinks()
+
         print "downloading mit course info"
         file_name = self.get_file_name(self.subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
-    
+        self.count = 0
+ 
         r_a = requests.get("http://student.mit.edu/catalog/m6a.html")
         r_b = requests.get("http://student.mit.edu/catalog/m6b.html")
         r_c = requests.get("http://student.mit.edu/catalog/m6c.html")
