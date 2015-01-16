@@ -49,7 +49,6 @@ class MitOcwSpider(Spider):
             if i == 2:
                 title += a.string.replace("\n", "").replace("               ", "").strip()
                 count = count + 1
-                link += '/calendar/'
                 print title + ' ' + link
                 self.write_db(f, title[0:title.find(" ")], title[title.find(" "):], link, description)
     
