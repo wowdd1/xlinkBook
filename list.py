@@ -19,6 +19,7 @@ filter_keyword = ""
 column_num = "2"
 
 custom_cell_len = 0
+custom_cell_row = 2
 cell_len=89  #  cell_len >= course_num_len + 1 + course_name_len + 3
 course_name_len=70
 course_num_len=10
@@ -50,6 +51,7 @@ def usage():
     print '\t-s,--style: print text with color'
     print '\t-d,--describe: output the describe of the item'
     print '\t-w,--width: the width of cell'
+    print '\t-r,--row: the rows of the describe'
     os.system("cat README.md")
 
 def print_keyword(file_name):
@@ -210,29 +212,35 @@ def update_cell_len(index):
 
 def build_lines(list_all):
     id_title_lines = copy.deepcopy(list_all)
-    describe_lines = copy.deepcopy(list_all)
-    black_lines = copy.deepcopy(list_all)
+    describe_lines = []
+    for i in range(0, custom_cell_row):
+        describe_lines.append(copy.deepcopy(list_all))
+
     for i in range(0, len(list_all)):
         update_cell_len(i)
 
         if len(id_title_lines[i]) == 0:
             record = Record("");
             id_title_lines[i].append(align_id_title(record))
-            describe_lines[i].append(align_describe(""))
-            black_lines[i].append(align_black(""))
+            for l in range(0, len(describe_lines)):
+                describe_lines[l][i].append(align_describe(""))
 
 
         for j in range(0, len(list_all[i])):
             id_title_lines[i][j] = align_id_title(list_all[i][j])
             describe = str_block_width(list_all[i][j].get_describe())
             if describe > course_name_len and output_with_describe == True:
-                describe_lines[i][j] = align_describe(list_all[i][j].get_describe()[0 : course_name_len])
-                black_lines[i][j] = align_black(" " + list_all[i][j].get_describe()[course_name_len : ])
+                for l in range(0, len(describe_lines)):
+                    if l * course_name_len > describe:
+                        describe_lines[l][i][j] = align_describe("")
+                        continue
+                    describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[l * course_name_len : (l + 1) * course_name_len])
             else:
-                describe_lines[i][j] = align_describe(list_all[i][j].get_describe())
-                black_lines[i][j] = align_black("")
+                describe_lines[0][i][j] = align_describe(list_all[i][j].get_describe())
+                for l in range(1, len(describe_lines)):
+                    describe_lines[l][i][j] = align_describe("")
 
-    return id_title_lines, describe_lines, black_lines
+    return id_title_lines, describe_lines
 
 
 def get_line(lines, start, end, j):
@@ -321,85 +329,77 @@ def print_list(file_name):
                 list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
                 list_all[0].pop()
 
-        id_title_lines, describe_lines , black_lines= build_lines(list_all)
+        id_title_lines, describe_lines = build_lines(list_all)
 
         if column_num == "3":
             print_table_head(3)
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
-                describe = get_line(describe_lines, 0, 3, i)  
-                black = get_line(black_lines, 0, 3, i)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
                 if output_with_describe == True: 
-                    print describe
-                    print black
+                    for l in range(0, len(describe_lines)):
+                        print get_line(describe_lines[l], 0, 3, i)
 
             if len(id_title_lines[0]) > len(id_title_lines[2]):
                 last = len(id_title_lines[0]) - 1
                 content = ""
-                describe = ""
-                black = ""
                 if len(id_title_lines[0]) == len(id_title_lines[1]):
                     content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1) + "|"
-                    describe = get_line(describe_lines, 0, 2, last) + get_space_cell(1) + "|"
-                    black = get_line(black_lines, 0, 2, last) + get_space_cell(1) + "|"
                 else:
                     content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2) + "|"
-                    describe = get_line(describe_lines, 0, 1, last) + get_space_cell(2) + "|"
-                    black = get_line(black_lines, 0, 1, last) + get_space_cell(2) + "|"
 
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
                 if output_with_describe == True:
-                    print describe
-                    print black
+                    for l in range(0, len(describe_lines)):
+                        if len(id_title_lines[0]) == len(id_title_lines[1]):
+                            print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1) + "|"
+                        else:
+                            print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2) + "|"
 
             print_table_separator(3)
         elif column_num == "2":
             print_table_head(2)
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
-                describe = get_line(describe_lines, 0, 2, i)
-                black = get_line(black_lines, 0, 2, i)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
                 if output_with_describe == True:    
-                    print describe
-                    print black
+                    for l in range(0, len(describe_lines)):
+                        print get_line(describe_lines[l], 0, 2, i)
+
             if len(id_title_lines[0]) > len(id_title_lines[1]):
                 last = len(id_title_lines[0]) - 1
                 content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1) + "|"
-                describe = get_line(describe_lines, 0, 1, last) + get_space_cell(1) + "|"
-                black = get_line(black_lines, 0, 1, last) + get_space_cell(1) + "|"
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
                 if output_with_describe == True:
-                    print describe
-                    print black
+                    for l in range(0, len(describe_lines)):
+                        print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1) + "|"
+
             print_table_separator(2)
         elif column_num == '1':
             print_table_head(1)
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
-                describe = get_line(describe_lines, 0, 1, i)
-                black = get_line(black_lines, 0, 1, i)
 
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
                 if output_with_describe == True:
-                    print describe
-                    print black
+                    for l in range(0, len(describe_lines)):
+                        print get_line(describe_lines[l], 0, 1, i)
+
             print_table_separator(1)
 
         if current > 0:
@@ -425,13 +425,13 @@ def print_dir(dir_name):
 def main(argv):
     global source
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:', ["help", "keyword", "input=", "column=", "filter=", "style", "describe", "width"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:', ["help", "keyword", "input=", "column=", "filter=", "style", "describe", "width", "row"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
         sys.exit(2)
 
-    global column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len
+    global column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row
     for o, a in opts:
         if o in ('-h', '--help'):
             usage()
@@ -452,10 +452,18 @@ def main(argv):
             output_with_color = True
         elif o in ('-d', '--describe'):
             output_with_describe = True
-            custom_cell_len = cell_len + (cell_len / 14)
+            if column_num == '2':
+                custom_cell_len = cell_len + (cell_len / 14)
+            elif column_num == '1':
+                custom_cell_len = cell_len * 2
             output_with_color = True
         elif o in ('-w', '--width'):
             custom_cell_len = int(a) 
+        elif o in ('-r', '--row'):
+            if int(a) > 2 and int(a) < 30:
+                custom_cell_row = int(a)
+            else:
+                print 'the row must between 2 and 30'
     if source == "":
         print "you must input the input file or dir"
         usage()

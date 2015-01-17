@@ -1,6 +1,6 @@
 usage:  
 
-    ./list.py -i filename or dirname -c column_num -f 'keyword or regexp' -s -d -w 100 
+    ./list.py -i filename or dirname -c column_num -f 'keyword or regexp' -s -d -w 100 -r 5
 
 -c: column_num, from 1 to 3
 
@@ -11,6 +11,8 @@ usage:
 -d: output the description
 
 -w: custom the cell length
+
+-r: the rows of the description
 
 keyword or regexp: the keyword for filter course
 
