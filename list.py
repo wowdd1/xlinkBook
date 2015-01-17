@@ -27,6 +27,7 @@ color_index=0
 output_with_color = False
 output_with_describe = False
 
+utils = Utils()
 line_max_len_list = [0, 0, 0]
 line_id_max_len_list = [0, 0, 0]
 
@@ -111,6 +112,14 @@ def str_block_width(val):
 
     return sum(itermap(char_block_width, itermap(ord, regex.sub("", val))))
 
+def color_keyword(text):
+    keyword_list = ['university:', 'available:', 'level:', 'video:', 'instructors:', 'description:', 'textbook:']
+    result = text
+    for k in keyword_list:
+        result = result.replace(k, utils.getColorStr('red', k))
+
+    return result
+
 def align_id_title(record):
     course_num = record.get_id()
     course_name = record.get_title()
@@ -132,17 +141,8 @@ def align_describe(describe):
         describe += get_space(0, course_name_len - str_block_width(describe))
     return get_space(0, course_num_len) + "|" + describe
 
-def align_black(text):
-    if text == "":
-        return get_space(0, course_num_len) + "|" + get_space(0, cell_len - course_num_len - 1)
-    else:
-        if str_block_width(text) > course_name_len:
-            text = text[0 : course_name_len - 3] + "..."
-        return get_space(0, course_num_len) + "|" + text + get_space(0, course_name_len - str_block_width(text))
-
 def print_with_color(text):
     global color_index
-    utils = Utils()
     if color_index % 2 == 0:
         utils.print_colorful("brown", True, text)
     else:
@@ -246,7 +246,7 @@ def build_lines(list_all):
 def get_line(lines, start, end, j):
     result = "|"
     for i in range(start, end):
-        result += lines[i][j]+ "|"
+        result += color_keyword(lines[i][j])+ "|"
 
     return result
 
@@ -374,7 +374,6 @@ def print_list(file_name):
                 if output_with_describe == True:    
                     for l in range(0, len(describe_lines)):
                         print get_line(describe_lines[l], 0, 2, i)
-
             if len(id_title_lines[0]) > len(id_title_lines[1]):
                 last = len(id_title_lines[0]) - 1
                 content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1) + "|"

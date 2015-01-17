@@ -1,22 +1,22 @@
-6.002x | Circuits and Electronics (MITx) | https://www.edx.org/course/circuits-electronics-mitx-6-002x-0 | available:no 
-EE40LX | Electronic Interfaces: Bridging the Physical and Digital Worlds (UC BerkeleyX) | https://www.edx.org/course/electronic-interfaces-bridging-physical-uc-berkeleyx-ee40lx | available:no 
-UT.6.02x | Embedded Systems- Shape The World (UTAustinX) | https://www.edx.org/course/embedded-systems-shape-world-utaustinx-ut-6-02x | available:no 
-ELEC301.1x | Discrete Time Signals and Systems, Part 1: Time Domain (RiceX) | https://www.edx.org/course/discrete-time-signals-systems-part-1-ricex-elec301-1x | available:no 
-nano515x | Organic Electronic Devices (PurdueX) | https://www.edx.org/course/organic-electronic-devices-purduex-nano515x | available:no 
-EE-102Bx | Electrotechnique II (EPFLx) | https://www.edx.org/course/electrotechnique-ii-epflx-ee-102bx-0 | available:no 
-6.004.1x | Computation Structures- Part 1: Digital Circuits (MITx) | https://www.edx.org/course/computation-structures-part-1-digital-mitx-6-004-1x | available:no 
-ELEC301.2x | Discrete Time Signals and Systems, Part 2: Frequency Domain (RiceX) | https://www.edx.org/course/discrete-time-signals-systems-part-2-ricex-elec301-2x | available:no 
-ChM001x | Introduction to Graphene Science and Technology (ChalmersX) | https://www.edx.org/course/introduction-graphene-science-technology-chalmersx-chm001x | available:no 
-nano520x | Fundamentals of Nanoelectronics: Basic Concepts (PurdueX) | https://www.edx.org/course/fundamentals-nanoelectronics-basic-purduex-nano520x | available:no 
-DemoX.1 | DemoX (edX) | https://www.edx.org/course/demox-edx-demox-1 | available:yes 
-ENGRI1280x | Wiretaps to Big Data: Privacy and Surveillance in the Age of Interconnection (CornellX) | https://www.edx.org/course/wiretaps-big-data-privacy-surveillance-cornellx-engri1280x | available:yes 
-ISSCCx | ISSCC Previews: Circuit and System Insights (IEEEx) | https://www.edx.org/course/isscc-previews-circuit-system-insights-ieeex-issccx | available:yes 
-Sense101x | Sense, Control, Act: Measure the Universe, Transform the World (UQx) | https://www.edx.org/course/sense-control-act-measure-universe-uqx-sense101x | available:no 
-ENGR1.0x | Introduction to Engineering and Engineering Mathematics (UTArlingtonX) | https://www.edx.org/course/introduction-engineering-engineering-utarlingtonx-engr1-0x | available:no 
-SNU446.345.1x | Robot Mechanics and Control, Part I (SNUx) | https://www.edx.org/course/robot-mechanics-control-part-i-snux-snu446-345-1x | available:yes 
-HYPERS301x | Hypersonics – from Shock Waves to Scramjets (UQx) | https://www.edx.org/course/hypersonics-shock-waves-scramjets-uqx-hypers301x | available:yes 
-AUTONAVx | Autonomous Navigation for Flying Robots (TUMx) | https://www.edx.org/course/autonomous-navigation-flying-robots-tumx-autonavx | available:yes 
-ET.3034TU | Solar Energy (DelftX) | https://www.edx.org/course/solar-energy-delftx-et-3034tu | available:yes 
-EE-100Bx | Electrotechnique I (EPFLx) | https://www.edx.org/course/electrotechnique-i-epflx-ee-100bx | available:yes 
-ELEC1200.1x | A System View of Communications: From Signals to Packets (Part 1) (HKUSTx) | https://www.edx.org/course/system-view-communications-signals-hkustx-elec1200-1x | available:yes 
-20220214x | Principles of Electric Circuits (TsinghuaX) | https://www.edx.org/course/principles-electric-circuits-tsinghuax-20220214x | available:yes 
+6.002x | Circuits and Electronics | https://www.edx.org/course/circuits-electronics-mitx-6-002x-0 | available:no university:MITx 
+EE40LX | Electronic Interfaces: Bridging the Physical and Digital Worlds | https://www.edx.org/course/electronic-interfaces-bridging-physical-uc-berkeleyx-ee40lx | available:no university:UC BerkeleyX 
+UT.6.02x | Embedded Systems- Shape The World | https://www.edx.org/course/embedded-systems-shape-world-utaustinx-ut-6-02x | available:no university:UTAustinX 
+ELEC301.1x | Discrete Time Signals and Systems, Part 1: Time Domain | https://www.edx.org/course/discrete-time-signals-systems-part-1-ricex-elec301-1x | available:no university:RiceX 
+nano515x | Organic Electronic Devices | https://www.edx.org/course/organic-electronic-devices-purduex-nano515x | available:no university:PurdueX 
+EE-102Bx | Electrotechnique II | https://www.edx.org/course/electrotechnique-ii-epflx-ee-102bx-0 | available:no university:EPFLx 
+6.004.1x | Computation Structures- Part 1: Digital Circuits | https://www.edx.org/course/computation-structures-part-1-digital-mitx-6-004-1x | available:no university:MITx 
+ELEC301.2x | Discrete Time Signals and Systems, Part 2: Frequency Domain | https://www.edx.org/course/discrete-time-signals-systems-part-2-ricex-elec301-2x | available:no university:RiceX 
+ChM001x | Introduction to Graphene Science and Technology | https://www.edx.org/course/introduction-graphene-science-technology-chalmersx-chm001x | available:no university:ChalmersX 
+nano520x | Fundamentals of Nanoelectronics: Basic Concepts | https://www.edx.org/course/fundamentals-nanoelectronics-basic-purduex-nano520x | available:no university:PurdueX 
+DemoX.1 | DemoX | https://www.edx.org/course/demox-edx-demox-1 | available:yes university:edX 
+ENGRI1280x | Wiretaps to Big Data: Privacy and Surveillance in the Age of Interconnection | https://www.edx.org/course/wiretaps-big-data-privacy-surveillance-cornellx-engri1280x | available:yes university:CornellX 
+ISSCCx | ISSCC Previews: Circuit and System Insights | https://www.edx.org/course/isscc-previews-circuit-system-insights-ieeex-issccx | available:yes university:IEEEx 
+Sense101x | Sense, Control, Act: Measure the Universe, Transform the World | https://www.edx.org/course/sense-control-act-measure-universe-uqx-sense101x | available:no university:UQx 
+ENGR1.0x | Introduction to Engineering and Engineering Mathematics | https://www.edx.org/course/introduction-engineering-engineering-utarlingtonx-engr1-0x | available:no university:UTArlingtonX 
+SNU446.345.1x | Robot Mechanics and Control, Part I | https://www.edx.org/course/robot-mechanics-control-part-i-snux-snu446-345-1x | available:yes university:SNUx 
+HYPERS301x | Hypersonics – from Shock Waves to Scramjets | https://www.edx.org/course/hypersonics-shock-waves-scramjets-uqx-hypers301x | available:yes university:UQx 
+AUTONAVx | Autonomous Navigation for Flying Robots | https://www.edx.org/course/autonomous-navigation-flying-robots-tumx-autonavx | available:yes university:TUMx 
+ET.3034TU | Solar Energy | https://www.edx.org/course/solar-energy-delftx-et-3034tu | available:yes university:DelftX 
+EE-100Bx | Electrotechnique I | https://www.edx.org/course/electrotechnique-i-epflx-ee-100bx | available:yes university:EPFLx 
+ELEC1200.1x | A System View of Communications: From Signals to Packets (Part 1) | https://www.edx.org/course/system-view-communications-signals-hkustx-elec1200-1x | available:yes university:HKUSTx 
+20220214x | Principles of Electric Circuits | https://www.edx.org/course/principles-electric-circuits-tsinghuax-20220214x | available:yes university:TsinghuaX 

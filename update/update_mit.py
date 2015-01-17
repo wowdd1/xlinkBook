@@ -91,7 +91,7 @@ class MitSpider(Spider):
                         remark = ''
                         if textbook != '':
                             remark += 'textbook:' + textbook + ' '
-                        remark += line.strip()
+                        remark += 'description:' + line.strip() + ' '
                         self.count = self.count + 1
                         self.write_db(f, course_num, title, link, remark)
     

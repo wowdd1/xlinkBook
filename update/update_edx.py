@@ -66,13 +66,14 @@ class EdxSpider(Spider):
         for item in json_obj:
             if self.matchSubject(subject, item["subjects"]):
                 #for item in json_obj:
-                title = item["l"].strip() + ' (' + item["schools"][0].strip() + ')'
+                title = item["l"].strip()
                 count = count + 1
                 description = ''
                 if item["availability"] == 'Upcoming' or item["availability"] == 'Starting Soon':
                     description += 'available:no '
                 else:
                     description += 'available:yes '
+                description += 'university:' + item["schools"][0].strip() + ' '
                 self.write_db(f, item["code"].strip(), title, item["url"], description)
     
         self.close_db(f)

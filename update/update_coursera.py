@@ -102,12 +102,12 @@ class CourseraSpider(Spider):
                 remark = "available:no "
                 session_id = courseObj['shortName']
 
+            remark += 'university:' + self.getUniversitieName(courseObj['links']['universities']) + ' '
             if self.getInstructorName(courseObj['links'].get('instructors', '')) != '':
-                remark += "instructor:" + self.getInstructorName(courseObj['links'].get('instructors',"")) + ' '
-
-            title = courseObj['name'].strip() + ' (' + self.getUniversitieName(courseObj['links']['universities']) + ')'
+                remark += "instructors:" + self.getInstructorName(courseObj['links'].get('instructors',"")) + ' '
+            title = courseObj['name'].strip()
             print session_id + " " + title + " " + url
-            remark += self.delZh(courseObj['shortDescription'])
+            remark += 'description:' + self.delZh(courseObj['shortDescription'])
             self.write_db(f, session_id, title, url, remark.replace("\n", "" ).strip()) 
             count += 1
 
