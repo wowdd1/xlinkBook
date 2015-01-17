@@ -45,6 +45,23 @@ class MitOcwSpider(Spider):
             return True
         return False
 
+    def getTextBookFormHtml(self, html):
+        soup = BeautifulSoup(html)
+        result = ''
+        for p in soup.find_all('p'):
+            if p.text.lower().find('isbn:') != -1:
+                result += p.text.strip()[0 : p.text.strip().lower().find('isbn:') - 1].replace('\n', '').strip() + ' ' 
+        return result
+
+    def getTextBook(self, url, course_num):
+        r = requests.get(url + '/readings/')
+        if r.status_code != 404:
+            return self.getTextBookFormHtml(r.text)
+        r = requests.get(url + '/syllabus/')
+        if r.status_code != 404:
+            return self.getTextBookFormHtml(r.text) 
+        return ''
+
     def getDescription(self, url):
         r = requests.get(url)
         jobj = json.loads(r.text)
@@ -79,6 +96,10 @@ class MitOcwSpider(Spider):
                     description += 'video:yes '
                 if self.existOnlineBook(course_num):
                     description += 'onlinebook:yes '
+                book = self.getTextBook(link, course_num)
+                if book != '':
+                    description += 'textbook:' + book
+
                 description +=  self.getDescription(link + '/index.json?' + str(time.time()).replace('.', ''))
                 
             if i == 2:
