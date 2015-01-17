@@ -6,8 +6,21 @@
     
 
 import os
+import sys
 import re
+import itertools
+import unicodedata
 
+regex = re.compile("\033\[[0-9;]*m")
+py3k = sys.version_info[0] >= 3
+if py3k:
+    unicode = str
+    basestring = str
+    itermap = map
+    uni_chr = chr
+else:
+    itermap = itertools.imap
+    uni_chr = unichr
 
 class Utils:    
     cc_map = {
@@ -73,3 +86,46 @@ class Utils:
         except:
             for t in kw: print t,
             if newline: print
+
+    def to_unicode(self, value):
+        if not isinstance(value, basestring):
+            value = str(value)
+        if not isinstance(value, unicode):
+            value = unicode(value, "UTF-8", "strict")
+        return value
+
+    def char_block_width(self, char):
+        # Basic Latin, which is probably the most common case
+        #if char in xrange(0x0021, 0x007e):
+        #if char >= 0x0021 and char <= 0x007e:
+        if 0x0021 <= char <= 0x007e:
+            return 1
+        # Chinese, Japanese, Korean (common)
+        if 0x4e00 <= char <= 0x9fff:
+            return 2
+        # Hangul
+        if 0xac00 <= char <= 0xd7af:
+            return 2
+        # Combining?
+        if unicodedata.combining(uni_chr(char)):
+            return 0
+        # Hiragana and Katakana
+        if 0x3040 <= char <= 0x309f or 0x30a0 <= char <= 0x30ff:
+            return 2
+        # Full-width Latin characters
+        if 0xff01 <= char <= 0xff60:
+            return 2
+        # CJK punctuation
+        if 0x3000 <= char <= 0x303e:
+            return 2
+        # Backspace and delete
+        if char in (0x0008, 0x007f):
+            return -1
+        # Other control characters
+        elif char in (0x0000, 0x001f):
+            return 0
+        # Take a guess
+        return 1
+
+    def str_block_width(self, val):
+        return sum(itermap(self.char_block_width, itermap(ord, regex.sub("", val))))

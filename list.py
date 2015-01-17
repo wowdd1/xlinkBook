@@ -10,9 +10,6 @@ import os,sys
 from record import Record
 from utils import Utils
 import copy
-import re
-import itertools
-import unicodedata
 
 source = ""
 filter_keyword = ""
@@ -30,17 +27,6 @@ output_with_describe = False
 utils = Utils()
 line_max_len_list = [0, 0, 0]
 line_id_max_len_list = [0, 0, 0]
-
-regex = re.compile("\033\[[0-9;]*m")
-py3k = sys.version_info[0] >= 3
-if py3k:
-    unicode = str
-    basestring = str
-    itermap = map
-    uni_chr = chr
-else: 
-    itermap = itertools.imap
-    uni_chr = unichr
 
 def usage():
     print 'usage:'
@@ -64,69 +50,24 @@ def print_keyword(file_name):
         head -50 | nl'
     os.system(cmd)
 
-def to_unicode(value):
-    if not isinstance(value, basestring):
-        value = str(value)
-    if not isinstance(value, unicode):
-        value = unicode(value, "UTF-8", "strict")
-    return value
-
-##############################
-# UNICODE WIDTH FUNCTIONS    #
-##############################
-
-def char_block_width(char):
-    # Basic Latin, which is probably the most common case
-    #if char in xrange(0x0021, 0x007e):
-    #if char >= 0x0021 and char <= 0x007e:
-    if 0x0021 <= char <= 0x007e:
-        return 1
-    # Chinese, Japanese, Korean (common)
-    if 0x4e00 <= char <= 0x9fff:
-        return 2
-    # Hangul
-    if 0xac00 <= char <= 0xd7af:
-        return 2
-    # Combining?
-    if unicodedata.combining(uni_chr(char)):
-        return 0
-    # Hiragana and Katakana
-    if 0x3040 <= char <= 0x309f or 0x30a0 <= char <= 0x30ff:
-        return 2
-    # Full-width Latin characters
-    if 0xff01 <= char <= 0xff60:
-        return 2
-    # CJK punctuation
-    if 0x3000 <= char <= 0x303e:
-        return 2
-    # Backspace and delete
-    if char in (0x0008, 0x007f):
-        return -1
-    # Other control characters
-    elif char in (0x0000, 0x001f):
-        return 0
-    # Take a guess
-    return 1
-
-def str_block_width(val):
-
-    return sum(itermap(char_block_width, itermap(ord, regex.sub("", val))))
-
 def color_keyword(text):
     keyword_list = ['university:', 'available:', 'level:', 'video:', 'instructors:', 'description:', 'textbook:']
     result = text
     for k in keyword_list:
-        result = result.replace(k, utils.getColorStr('red', k))
+        if (color_index - 1) % 2 == 0:
+            result = result.replace(k, utils.getColorStr('brown', k))
+        else:
+            result = result.replace(k, utils.getColorStr('darkcyan', k))
 
     return result
 
 def align_id_title(record):
     course_num = record.get_id()
     course_name = record.get_title()
-    if str_block_width(course_name) > course_name_len:
+    if utils.str_block_width(course_name) > course_name_len:
         course_name = course_name[0 : course_name_len - 3 ] + "..."
     else:
-        course_name = course_name + get_space(0, course_name_len - str_block_width(course_name))
+        course_name = course_name + get_space(0, course_name_len - utils.str_block_width(course_name))
 
     if len(course_num) < course_num_len:
         space = get_space(0, course_num_len - len(course_num))
@@ -135,10 +76,10 @@ def align_id_title(record):
         return course_num + "|" + course_name
 
 def align_describe(describe):
-    if str_block_width(describe) > course_name_len - 1 and output_with_describe == False:
+    if utils.str_block_width(describe) > course_name_len - 1 and output_with_describe == False:
         describe = describe[0 : course_name_len - 3 ] + "..."
     else:
-        describe += get_space(0, course_name_len - str_block_width(describe))
+        describe += get_space(0, course_name_len - utils.str_block_width(describe))
     return get_space(0, course_num_len) + "|" + describe
 
 def print_with_color(text):
@@ -192,10 +133,10 @@ def get_id_and_title(record):
     return record.get_id() + "|" + record.get_title()
 
 def update_max_len(record, col):
-    if str_block_width(get_id_and_title(record)) > line_max_len_list[col - 1]:
-        line_max_len_list[col - 1] = str_block_width(get_id_and_title(record))
-    if str_block_width(record.get_id()) > line_id_max_len_list[col - 1]:
-        line_id_max_len_list[col - 1] = str_block_width(record.get_id()) 
+    if utils.str_block_width(get_id_and_title(record)) > line_max_len_list[col - 1]:
+        line_max_len_list[col - 1] = utils.str_block_width(get_id_and_title(record))
+    if utils.str_block_width(record.get_id()) > line_id_max_len_list[col - 1]:
+        line_id_max_len_list[col - 1] = utils.str_block_width(record.get_id()) 
 
 
 def update_cell_len(index):
@@ -228,7 +169,7 @@ def build_lines(list_all):
 
         for j in range(0, len(list_all[i])):
             id_title_lines[i][j] = align_id_title(list_all[i][j])
-            describe = str_block_width(list_all[i][j].get_describe())
+            describe = utils.str_block_width(list_all[i][j].get_describe())
             if describe > course_name_len and output_with_describe == True:
                 for l in range(0, len(describe_lines)):
                     if l * course_name_len > describe:
@@ -298,7 +239,7 @@ def print_list(file_name):
             list_all.append([])
          
         for line in all_lines:
-            line = to_unicode(line)
+            line = utils.to_unicode(line)
             record = Record(line.replace("\n", ""))
             current += 1
             if column_num == "3":
