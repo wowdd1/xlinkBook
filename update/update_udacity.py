@@ -37,11 +37,17 @@ class UdacitySpider(Spider):
                 elif course['subtitle'] != None and len(course['subtitle'].strip()) > 4:
                     title = title + " - " + course['subtitle']
                 remark = ""
+                instructors = 'instructors:'
+                project = ''
                 if course['starter'] == True:
-                    remark = "starter:yes "
+                    remark = "available:yes "
                 else:
-                    remark = "starter:no "
-                remark += course['short_summary'] + " level:" + course['level']
+                    remark = "available:no "
+                for instructor in course['instructors']:
+                    instructors += instructor['name'] + ' '
+                if course['project_name'] != '':
+                    project = 'project:' + course['project_name'] +  ' '
+                remark += "level:" + course['level'] + ' ' + instructors + project + ' description:' + course['summary'].replace('\n', '')
  
                 self.write_db(f, course["key"], title, "https://www.udacity.com/course/" + course["key"], remark)
                 print course["key"] + " " + title + " " + "https://www.udacity.com/course/" + course["key"]

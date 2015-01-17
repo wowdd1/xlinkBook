@@ -51,7 +51,7 @@ def print_keyword(file_name):
     os.system(cmd)
 
 def color_keyword(text):
-    keyword_list = ['university:', 'available:', 'level:', 'video:', 'instructors:', 'description:', 'textbook:']
+    keyword_list = ['project:', 'university:', 'available:', 'level:', 'video:', 'instructors:', 'description:', 'textbook:']
     result = text
     for k in keyword_list:
         if (color_index - 1) % 2 == 0:
