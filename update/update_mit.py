@@ -29,6 +29,20 @@ class MitSpider(Spider):
             if i >= 3:
                 i = 0
 
+    def getTextBook(self, course_num):
+        terms = ['2014SP', '2013SP', '2012SP']
+        for term in terms:
+            r = requests.get('http://eduapps.mit.edu/textbook/books.html?Term=' + term + '&Subject=' + course_num)
+            if r.status_code == 200:
+                soup = BeautifulSoup(r.text)
+                table = soup.find('table', class_='displayTable')
+                if table == None:
+                    continue
+                splits = table.text.strip()[table.text.strip().find('Price') + 6 :].strip().split('\n')
+                if splits[0] == 'Course Has No Materials':
+                    continue
+                return splits[1] + ' (' + splits[0] + ')'
+        return ''
 
     def getMitCourseLink(self, links, course_num):
         if course_num == "":
@@ -48,16 +62,17 @@ class MitSpider(Spider):
         #print html
         soup = BeautifulSoup(html);
         links_all = soup.find_all("a")
-        links = []
+        course_links = []
         for link in links_all:
             if link.attrs.has_key("href") and False == link["href"].startswith("editcookie.cgi") \
                and False == link["href"].startswith("/ent/cgi-bin") and False == link["href"].startswith("javascript:") \
                and False == link["href"].startswith("m"):
-                links.append(link)
+                course_links.append(link)
         content = []
         course_num = ""
         title = ""
         link = ""
+        textbook = ''
         for line in html.split("\n"):
             if line.strip().find('<h3>') != -1 or (line.strip().startswith('<br>') and (line.strip()[len(line.strip()) - 1 : ] == '.' or line.strip()[len(line.strip()) - 7 : ] == 'limited')):
                 line = line[line.find('>', 3) + 1 : ]
@@ -65,14 +80,18 @@ class MitSpider(Spider):
                     #print line
                     if line[0 : 2] == '6.':
                         course_num = line.strip()[0 : line.strip().find(" ")]
+                        textbook = self.getTextBook(course_num)
                         title = line.strip()[line.strip().find(" ") + 1 : ]
                         if course_num.find(',') != -1:
                             course_num = line.strip()[0 : line.strip().find(" ", line.strip().find(" ") + 1)]
                             title = line.strip()[line.strip().find(" ", line.strip().find(" ") + 1) + 1 : ]
-                        link = self.getMitCourseLink(links, course_num.strip())
+                        link = self.getMitCourseLink(course_links, course_num.strip())
                     else:
                         print course_num + " " + title + " " + link                     
-                        remark = line.strip()
+                        remark = ''
+                        if textbook != '':
+                            remark += 'textbook:' + textbook + ' '
+                        remark += line.strip()
                         self.count = self.count + 1
                         self.write_db(f, course_num, title, link, remark)
     
