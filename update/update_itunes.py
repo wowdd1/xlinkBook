@@ -62,12 +62,19 @@ class ItunesSpider(Spider):
     def getDescription(self, url):
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
+        div = soup.find('div', class_='intro')
+        description = ''
+        if div != None:
+            for line in div.text.strip().split('\n'):
+                if line.strip()[0 : 2] == 'by':
+                    description = line.strip() + ' '
+                    break
+
         div = soup.find('div', class_="product-review")
         if div != None:
-            description = div.text.strip().replace('\n', '')
-            description = description[description.find(' ') :].strip()
-            return description
-        return ''
+            description += div.text.strip().replace('\n', '')[div.text.strip().replace('\n', '').find(' ') :].strip()
+            
+        return description
  
     def processData(self, subject, courses, school):
         print 'processing ' + subject + ' of ' + school
