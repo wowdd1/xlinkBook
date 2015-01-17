@@ -47,13 +47,13 @@ class EdxSpider(Spider):
     
     #edx
     
-    def match_subject(self, subject, subjects):
+    def matchSubject(self, subject, subjects):
         for sub in subjects:
             if sub != "" and sub.strip() == subject:
                 return True
     
         return False
-    
+        
     
     def getEdxOnlineCourse(self, subject, json_obj):
         if self.need_update_subject(subject) == False:
@@ -64,11 +64,16 @@ class EdxSpider(Spider):
         count = 0
         print "processing json and write data to file..."
         for item in json_obj:
-            if self.match_subject(subject, item["subjects"]):
+            if self.matchSubject(subject, item["subjects"]):
                 #for item in json_obj:
-                title = item["l"].strip() + " (" + item["schools"][0].strip() + ")"
+                title = item["l"].strip() + ' (' + item["schools"][0].strip() + ')'
                 count = count + 1
-                self.write_db(f, item["code"].strip(), title, item["url"], item["availability"])
+                description = ''
+                if item["availability"] == 'Upcoming' or item["availability"] == 'Starting Soon':
+                    description += 'available:no '
+                else:
+                    description += 'available:yes '
+                self.write_db(f, item["code"].strip(), title, item["url"], description)
     
         self.close_db(f)
         if file_lines != count and count > 0:
