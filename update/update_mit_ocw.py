@@ -33,6 +33,9 @@ class MitOcwSpider(Spider):
                 i = 0
                 course_num = ''
                 link = ''
+    def initVideoDice(self):
+        print 'init video dict'
+        self.initDict('http://ocw.mit.edu/courses/audio-video-courses/', self.video_audio_dict)
 
     def existViewOrAudio(self, course_num):
         if self.video_audio_dict.get(course_num, '') != '':
@@ -59,9 +62,11 @@ class MitOcwSpider(Spider):
     def getDescription(self, url):
         r = requests.get(url)
         jobj = json.loads(r.text)
-        description = ''
         return 'level:' + jobj['level'] + ' instructors:' + jobj['instructors'] + ' description:' + re.sub(r'[\x00-\x1f]', '', jobj['description'].replace('\n', ''))
  
+    def getDescriptionApiUrl(self, url):
+        return url + '/index.json?' + str(time.time()).replace('.', '')
+
     def getMitOcwCourse(self, subject, url):
         if self.need_update_subject(subject) == False:
             return
@@ -92,7 +97,7 @@ class MitOcwSpider(Spider):
                 if book != '':
                     description += book
 
-                description +=  self.getDescription(link + '/index.json?' + str(time.time()).replace('.', ''))
+                description +=  self.getDescription(self.getDescriptionApiUrl(link))
                 
             if i == 2:
                 title = a.string.replace("\n", "").replace("               ", "").strip()
@@ -116,8 +121,7 @@ class MitOcwSpider(Spider):
             print "no need upgrade\n"
     
     def doWork(self):
-        print 'init video and book dict' 
-        self.initDict('http://ocw.mit.edu/courses/audio-video-courses/', self.video_audio_dict)
+        self.initVideoDice()
 
         print "downloading ocw course info"
         #r = requests.get("http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/")
@@ -134,6 +138,6 @@ class MitOcwSpider(Spider):
                     continue;
                 self.getMitOcwCourse(subject, self.url + str(li.a["href"]).strip())
                 #print li.a.string
-    
-start = MitOcwSpider();
-start.doWork()
+def main(argv):    
+    start = MitOcwSpider();
+    start.doWork()

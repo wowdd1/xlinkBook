@@ -4,6 +4,7 @@
 #mail: developergf@gmail.com
 #data: 2014.12.07
 from spider import *
+from update_mit_ocw import MitOcwSpider
 
 class MitSpider(Spider):
     ocw_links = {}
@@ -12,6 +13,8 @@ class MitSpider(Spider):
         Spider.__init__(self)    
         self.school = "mit"
         self.subject = "eecs"
+        self.ocw_spider = MitOcwSpider()
+        self.deep_mind = True
    
     def initOcwLinks(self):
         r = requests.get('http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/')
@@ -41,7 +44,7 @@ class MitSpider(Spider):
                 splits = table.text.strip()[table.text.strip().find('Price') + 6 :].strip().split('\n')
                 if splits[0] == 'Course Has No Materials':
                     continue
-                return splits[1] + ' (' + splits[0] + ')'
+                return 'textbook:' + splits[1] + ' (' + splits[0] + ')' + ' '
         return ''
 
     def getMitCourseLink(self, links, course_num):
@@ -81,6 +84,9 @@ class MitSpider(Spider):
                     if line[0 : 2] == '6.':
                         course_num = line.strip()[0 : line.strip().find(" ")]
                         textbook = self.getTextBook(course_num)
+                        if textbook == '' and self.deep_mind and self.ocw_links.get(course_num, '') != '':
+                            textbook = self.ocw_spider.getTextBook(self.ocw_links[course_num], course_num)
+ 
                         title = line.strip()[line.strip().find(" ") + 1 : ]
                         if course_num.find(',') != -1:
                             course_num = line.strip()[0 : line.strip().find(" ", line.strip().find(" ") + 1)]
@@ -89,8 +95,13 @@ class MitSpider(Spider):
                     else:
                         print course_num + " " + title + " " + link                     
                         remark = ''
+                        if self.deep_mind and self.ocw_links.get(course_num, '') != '':
+                            remark = self.ocw_spider.getDescription(self.ocw_spider.getDescriptionApiUrl(self.ocw_links[course_num]))
+                            if remark.find('description:') != -1:
+                                remark = remark[0 : remark.find('description:')]
+
                         if textbook != '':
-                            remark += 'textbook:' + textbook + ' '
+                            remark += textbook
                         remark += 'description:' + line.strip() + ' '
                         self.count = self.count + 1
                         self.write_db(f, course_num, title, link, remark)
@@ -98,7 +109,7 @@ class MitSpider(Spider):
     def doWork(self):
         #mit
         #"""
-        print 'get ocw course links'
+        print 'init ocw course links'
         self.initOcwLinks()
 
         print "downloading mit course info"
