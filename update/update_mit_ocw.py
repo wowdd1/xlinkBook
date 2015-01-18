@@ -8,7 +8,6 @@ from spider import *
 import time
 
 class MitOcwSpider(Spider):
-    video_audio_dict = {}
 
     def __init__(self):
         Spider.__init__(self)    
@@ -16,31 +15,6 @@ class MitOcwSpider(Spider):
         self.url = "http://ocw.mit.edu"
     #ocw
     #"""
-    
-    def initDict(self, url, dict_arg):
-        r = requests.get(url)
-        soup = BeautifulSoup(r.text)
-        course_num = ''
-        link = ''
-        i = 0
-        for a in soup.find_all("a", class_="preview"):
-            i = i + 1
-            if i == 1:
-                course_num = a.string.replace("\n", "").strip()
-                link = self.url + str(a["href"])             
-                dict_arg[course_num] = link
-            if i >= 3:
-                i = 0
-                course_num = ''
-                link = ''
-    def initVideoDice(self):
-        print 'init video dict'
-        self.initDict('http://ocw.mit.edu/courses/audio-video-courses/', self.video_audio_dict)
-
-    def existViewOrAudio(self, course_num):
-        if self.video_audio_dict.get(course_num, '') != '':
-            return True
-        return False
 
     def getTextBookFormHtml(self, html):
         soup = BeautifulSoup(html)
@@ -62,7 +36,7 @@ class MitOcwSpider(Spider):
     def getDescription(self, url):
         r = requests.get(url)
         jobj = json.loads(r.text)
-        return 'level:' + jobj['level'] + ' instructors:' + jobj['instructors'] + ' description:' + re.sub(r'[\x00-\x1f]', '', jobj['description'].replace('\n', ''))
+        return 'level:' + jobj['level'] + ' instructors:' + jobj['instructors'] + ' features:' + jobj['features'] + ' description:' + re.sub(r'[\x00-\x1f]', '', jobj['description'].replace('\n', ''))
  
     def getDescriptionApiUrl(self, url):
         return url + '/index.json?' + str(time.time()).replace('.', '')
@@ -91,8 +65,6 @@ class MitOcwSpider(Spider):
                 course_num = a.string.replace("\n", "").strip()
                 link = self.url + str(a["href"])
                 description = ''
-                if self.existViewOrAudio(course_num):
-                    description += 'video:yes '
                 book = self.getTextBook(link, course_num)
                 if book != '':
                     description += book
@@ -121,8 +93,6 @@ class MitOcwSpider(Spider):
             print "no need upgrade\n"
     
     def doWork(self):
-        self.initVideoDice()
-
         print "downloading ocw course info"
         #r = requests.get("http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/")
         r = requests.get("http://ocw.mit.edu/courses/find-by-department")
@@ -141,3 +111,6 @@ class MitOcwSpider(Spider):
 def main(argv):    
     start = MitOcwSpider();
     start.doWork()
+
+if __name__ == '__main__':
+    main(sys.argv)

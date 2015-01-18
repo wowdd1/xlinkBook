@@ -28,7 +28,7 @@ utils = Utils()
 line_max_len_list = [0, 0, 0]
 line_id_max_len_list = [0, 0, 0]
 
-keyword_list = ['project:', 'university:', 'available:', 'level:', 'video:', 'instructors:', 'description:', 'textbook:']
+keyword_list = ['prereq:', 'project:', 'university:', 'available:', 'level:', 'features:', 'instructors:', 'description:', 'textbook:']
 
 
 def usage():

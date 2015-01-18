@@ -58,6 +58,10 @@ class MitSpider(Spider):
                 return link["href"]
         return ""
         
+    def clearHtmlTag(self, html):
+        while(html.find('<') != -1 and html.find('>') != -1):
+            html = html.replace(html[html.find('<') : html.find('>') + 1], '')
+        return html
     
     def processMitData(self, html, f):
         if self.need_update_subject(self.subject) == False:
@@ -71,19 +75,48 @@ class MitSpider(Spider):
                and False == link["href"].startswith("/ent/cgi-bin") and False == link["href"].startswith("javascript:") \
                and False == link["href"].startswith("m"):
                 course_links.append(link)
-        content = []
         course_num = ""
         title = ""
         link = ""
         textbook = ''
+        prereq = ''
+        instructors = ''
         for line in html.split("\n"):
-            if line.strip().find('<h3>') != -1 or (line.strip().startswith('<br>') and (line.strip()[len(line.strip()) - 1 : ] == '.' or line.strip()[len(line.strip()) - 7 : ] == 'limited')):
+
+            if (line.strip().startswith('<br>') and self.clearHtmlTag(line.strip())[1 : 2] == '.') or \
+                line.find('Prereq:') != -1:
+                if line.find('Prereq:') != -1:
+                    prereq = self.clearHtmlTag(line).lower() + ' '
+                if line.strip().startswith('<') and self.clearHtmlTag(line.strip())[1 : 2] == '.':
+                    instructors = 'instructors:' + self.clearHtmlTag(line.strip()[0 : line.strip().find('</')]) + ' '
+
+            if line.strip().find('<h3>') != -1 or \
+                (line.strip().startswith('<br>') and (line.strip()[len(line.strip()) - 1 : ] == '.' or line.strip()[len(line.strip()) - 7 : ] == 'limited')):
                 line = line[line.find('>', 3) + 1 : ]
                 if line.find('</h3>') == -1:
                     #print line
                     if line[0 : 2] == '6.':
+                        if course_num != '':
+                            print course_num + " " + title + " " + link                     
+
+                            if instructors != '' and remark.find('instructors:') == -1:
+                                remark = instructors + ' ' + remark
+
+                            self.count = self.count + 1
+                            self.write_db(f, course_num, title, link, remark)
+                            remark = ''
+                            course_num = ""
+                            title = ""
+                            link = ""
+                            textbook = ''
+                            pereq = ''
+                            instructors = ''
+
                         course_num = line.strip()[0 : line.strip().find(" ")]
-                        textbook = self.getTextBook(course_num)
+                        textbook = ''
+                        if self.deep_mind:
+                            textbook = self.getTextBook(course_num)
+
                         if textbook == '' and self.deep_mind and self.ocw_links.get(course_num, '') != '':
                             textbook = self.ocw_spider.getTextBook(self.ocw_links[course_num], course_num)
  
@@ -93,7 +126,6 @@ class MitSpider(Spider):
                             title = line.strip()[line.strip().find(" ", line.strip().find(" ") + 1) + 1 : ]
                         link = self.getMitCourseLink(course_links, course_num.strip())
                     else:
-                        print course_num + " " + title + " " + link                     
                         remark = ''
                         if self.deep_mind and self.ocw_links.get(course_num, '') != '':
                             remark = self.ocw_spider.getDescription(self.ocw_spider.getDescriptionApiUrl(self.ocw_links[course_num]))
@@ -102,10 +134,14 @@ class MitSpider(Spider):
 
                         if textbook != '':
                             remark += textbook
-                        remark += 'description:' + line.strip() + ' '
-                        self.count = self.count + 1
-                        self.write_db(f, course_num, title, link, remark)
-    
+                        if prereq != '':
+                            remark += prereq
+
+                        remark += 'description:' + line.strip() + ' ' 
+        if course_num != '':
+            self.count = self.count + 1
+            self.write_db(f, course_num, title, link, remark)
+
     def doWork(self):
         #mit
         #"""
