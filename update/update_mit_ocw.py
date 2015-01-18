@@ -9,7 +9,6 @@ import time
 
 class MitOcwSpider(Spider):
     video_audio_dict = {}
-    online_book_dict = {}
 
     def __init__(self):
         Spider.__init__(self)    
@@ -40,17 +39,12 @@ class MitOcwSpider(Spider):
             return True
         return False
 
-    def existOnlineBook(self, course_num):
-        if self.online_book_dict.get(course_num, '') != '':
-            return True
-        return False
-
     def getTextBookFormHtml(self, html):
         soup = BeautifulSoup(html)
         result = ''
         for p in soup.find_all('p'):
             if p.text.lower().find('isbn:') != -1:
-                result += p.text.strip()[0 : p.text.strip().lower().find('isbn:') - 1].replace('\n', '').strip() + ' ' 
+                result += 'textbook:' + p.text.strip()[0 : p.text.strip().lower().find('isbn:') - 1].replace('\n', '').strip() + ' ' 
         return result
 
     def getTextBook(self, url, course_num):
@@ -94,11 +88,9 @@ class MitOcwSpider(Spider):
                 description = ''
                 if self.existViewOrAudio(course_num):
                     description += 'video:yes '
-                if self.existOnlineBook(course_num):
-                    description += 'onlinebook:yes '
                 book = self.getTextBook(link, course_num)
                 if book != '':
-                    description += 'textbook:' + book
+                    description += book
 
                 description +=  self.getDescription(link + '/index.json?' + str(time.time()).replace('.', ''))
                 
@@ -126,7 +118,6 @@ class MitOcwSpider(Spider):
     def doWork(self):
         print 'init video and book dict' 
         self.initDict('http://ocw.mit.edu/courses/audio-video-courses/', self.video_audio_dict)
-        self.initDict('http://ocw.mit.edu/courses/online-textbooks/', self.online_book_dict)
 
         print "downloading ocw course info"
         #r = requests.get("http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/")
