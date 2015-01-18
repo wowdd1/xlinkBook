@@ -153,7 +153,7 @@ def update_cell_len(index):
 def next_pos(text, start):
     min_end = len(text)
     for k in keyword_list:
-        end = text.find(k, start + 2)
+        end = text.lower().find(k, start + 2)
         if end != -1 and end < min_end:
             min_end = end
 

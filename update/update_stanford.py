@@ -1,83 +1,61 @@
 #!/usr/bin/env python
-    
+
 #author: wowdd1
 #mail: developergf@gmail.com
-#data: 2014.12.07
-    
+#data: 2015.01.03
+
 from spider import *
 
-class StanfordSpider(Spider):
-    course_num_list = []
-
+class StanfordExploreSpider(Spider):
+    include_unoffered_courses = False
+    
     def __init__(self):
         Spider.__init__(self)
         self.school = "stanford"
         self.subject = "eecs"
-    
-    def isInCourseNumList(self, course_num):
-        for item in self.course_num_list:
-            if item == course_num:
-                return True
-        self.course_num_list.append(course_num)
-        return False
-    
-    def processStanfordDate(self, f, html):
-        if self.need_update_subject(self.subject) == False:
-            return
-        soup = BeautifulSoup(html)
-        th_set = soup.find_all("th")
-        td_set_all = soup.find_all("td")
-        td_set = []
-        del th_set[0:5]
-    
-        i = 0
-        for td in td_set_all:
-            i = i + 1
-            if i == 1:
-                td_set.append(td.string)
-            if i == 4:
-                i = 0
-    
-        for index in range(0,len(th_set)):
-            link = th_set[index].prettify()
-            link = link[link.find("http"):link.find("EDU") + 3]
-            title = th_set[index].string + " " + td_set[index]
-            if self.isInCourseNumList(th_set[index].string) == True:
-                continue
-            self.count = self.count + 1
-            self.write_db(f, th_set[index].string, td_set[index], link)
-    
-    def doWork(self):
-        #stanford
-        #"""
-        print "downloading stanford course info"
 
-        file_name = self.get_file_name("eecs/" + "cs.stanford", self.school)
+
+    def processData(self, subject, url):
+        if self.need_update_subject(subject) == False:
+            return
+        print "processing " + subject + " " + url
+
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text); 
+        course_num_list = []
+        course_name_list = []
+        course_description_list = []
+        course_instructors_list = []
+
+        file_name = self.get_file_name(subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
+        self.count = 0
 
-        url = "http://cs.stanford.edu/courses/schedules/2014-2015.autumn.php"
-        r = requests.get(url)
-        #print r.status_code
-        print "processing html and write data to file..."
-        self.processStanfordDate(f, r.text)
-    
-        url = "http://cs.stanford.edu/courses/schedules/2014-2015.winter.php"
-        r = requests.get(url)
-        #print r.status_code
-        self.processStanfordDate(f, r.text)
-    
-        url = "http://cs.stanford.edu/courses/schedules/2014-2015.spring.php"
-        r = requests.get(url)
-        #print r.status_code
-        self.processStanfordDate(f, r.text)
-    
-        url = "http://cs.stanford.edu/courses/schedules/2013-2014.summer.php"
-        r = requests.get(url)
-        #print r.status_code
-        self.processStanfordDate(f, r.text)
-    
-    
+        for span in soup.find_all("span", attrs={"class": "courseNumber"}):
+            course_num_list.append(span.text[0:len(span.text) - 1].replace(' ', ''))
+
+        for span in soup.find_all("span", attrs={"class": "courseTitle"}):
+            course_name_list.append(span.text.strip())
+
+        for div in soup.find_all("div", attrs={"class": "courseDescription"}):
+            course_description_list.append(div.text.strip()) 
+        i = 0
+        for div in soup.find_all("div", attrs={"class": "courseAttributes"}):
+            i += 1
+            if i % 2 == 0:
+                if div.text.strip().lower().find('instructors:') == -1:
+                    course_instructors_list.append('')
+                    i -= 1
+                    continue
+                course_instructors_list.append(div.text.strip().replace('\n', '').strip())
+
+        for i in range(0, len(course_num_list)):
+            print course_num_list[i] + " " + course_name_list[i]
+            description = course_instructors_list[i] + ' description:' + course_description_list[i] + ' '
+            self.write_db(f, course_num_list[i], course_name_list[i], "https://explorecourses.stanford.edu/search?q=" + course_num_list[i], description)
+            self.count += 1
+
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
             self.do_upgrade_db(file_name)
@@ -85,8 +63,23 @@ class StanfordSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
-        #"""
-    
-    
-start = StanfordSpider()
-start.doWork() 
+
+    def doWork(self):
+        r = requests.get("https://explorecourses.stanford.edu/browse")
+        soup = BeautifulSoup(r.text);
+        for li in soup.find_all("li"):
+            subject = ""
+            if li.a.text.find("(") != -1:
+                subject = li.a.text[0: li.a.text.find("(")].strip()
+            else:
+                subject = li.a.text.strip()
+            
+            url = "https://explorecourses.stanford.edu/" + str(li.a["href"]).replace("&filter-term-Winter=on", "").replace("search", "print") + "&descriptions=on"
+            if self.include_unoffered_courses == True:
+                url += "&filter-term-Winter=off&filter-term-Autumn=off&filter-term-Summer=off&filter-term-Spring=off"
+            else:
+                url += "&filter-term-Autumn=on&filter-term-Summer=on&filter-term-Spring=on&filter-term-Winter=on"
+            self.processData(subject, url)
+
+start = StanfordExploreSpider()
+start.doWork()
