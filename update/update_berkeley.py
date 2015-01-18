@@ -43,6 +43,7 @@ class TableHandler(HTMLParser):
 
         if self.valid_course_num(data):
             if self.found_first_valid_num:
+                #print self.last_content
                 self.rows.append(self.last_content)
                
             if data[0 : 2] == 'CS': 
