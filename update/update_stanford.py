@@ -13,7 +13,20 @@ class StanfordExploreSpider(Spider):
         Spider.__init__(self)
         self.school = "stanford"
         self.subject = "eecs"
+        self.deep_mind = False
 
+    def getRealUrl(self, course_num):
+        test_url = 'http://' + course_num + '.stanford.edu'
+        backup_url = "https://explorecourses.stanford.edu/search?q=" + course_num
+        try:
+            r = requests.get(test_url)
+        except Exception , e:
+            return backup_url
+        
+        if r.status_code == 200:
+            return test_url
+        else:
+            return backup_url 
 
     def processData(self, subject, url):
         if self.need_update_subject(subject) == False:
@@ -53,7 +66,11 @@ class StanfordExploreSpider(Spider):
         for i in range(0, len(course_num_list)):
             print course_num_list[i] + " " + course_name_list[i]
             description = course_instructors_list[i] + ' description:' + course_description_list[i] + ' '
-            self.write_db(f, course_num_list[i], course_name_list[i], "https://explorecourses.stanford.edu/search?q=" + course_num_list[i], description)
+            url = 'http://' + course_num_list[i] + '.stanford.edu'
+            if self.deep_mind:
+                url = self.getRealUrl(course_num_list[i])
+
+            self.write_db(f, course_num_list[i], course_name_list[i], url, description)
             self.count += 1
 
         self.close_db(f)

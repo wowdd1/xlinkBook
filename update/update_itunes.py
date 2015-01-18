@@ -13,6 +13,7 @@ class ItunesSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = 'itunes'
+        self.deep_mind = True
 
     def itunesPdfParser(self, data):
         outfile = data+'.txt'
@@ -93,7 +94,9 @@ class ItunesSpider(Spider):
                 print str(jobj['results'][0]['collectionId']) + ' ' + jobj['results'][0]['collectionName'] + ' ' + jobj['results'][0]['collectionViewUrl']
                 self.count += 1
                 url = jobj['results'][0]['collectionViewUrl']
-                description = self.getDescription(url)
+                description = ''
+                if self.deep_mind:
+                    description = self.getDescription(url)
                 self.write_db(f, str(jobj['results'][0]['collectionId']), jobj['results'][0]['collectionName'], url, description)
 
         self.close_db(f)

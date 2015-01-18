@@ -27,6 +27,7 @@ class Spider:
     subject = None
     url = None
     count = None
+    deep_mind = None
 
     def __init__(self):
         self.google = "https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q="
@@ -39,6 +40,7 @@ class Spider:
         self.subject = None
         self.url = None
         self.count = 0
+        self.deep_mind = False
 
     def doWork(self):
         return

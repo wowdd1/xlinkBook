@@ -63,6 +63,7 @@ class BerkeleySpider(Spider):
         Spider.__init__(self)
         self.school = "berkeley"
         self.subject = "eecs"
+        self.deep_mind = True
    
     def getLink(self, url):
         r = requests.get(url)
@@ -149,7 +150,9 @@ class BerkeleySpider(Spider):
             url = self.genUrl(row[0: row.find(" ")])
             print row 
             self.count = self.count + 1
-            self.write_db(f, row[0:row.find(" ")], row[row.find(" "):], self.getRealUrl(url))
+            if self.deep_mind:
+                url = self.getRealUrl(url)
+            self.write_db(f, row[0:row.find(" ")], row[row.find(" "):], url)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
