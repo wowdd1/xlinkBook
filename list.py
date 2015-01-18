@@ -28,6 +28,9 @@ utils = Utils()
 line_max_len_list = [0, 0, 0]
 line_id_max_len_list = [0, 0, 0]
 
+keyword_list = ['project:', 'university:', 'available:', 'level:', 'video:', 'instructors:', 'description:', 'textbook:']
+
+
 def usage():
     print 'usage:'
     print '\t-h,--help: print help message.'
@@ -51,7 +54,6 @@ def print_keyword(file_name):
     os.system(cmd)
 
 def color_keyword(text):
-    keyword_list = ['project:', 'university:', 'available:', 'level:', 'video:', 'instructors:', 'description:', 'textbook:']
     result = text
     for k in keyword_list:
         if (color_index - 1) % 2 == 0:
@@ -92,19 +94,17 @@ def print_with_color(text):
 
 def print_table_head(col, id_name='id', title='title'):
     if output_with_describe == True:
-        title = "describe"
+        title = "detail"
     table_head_mid = ''
     for i_i in range(0, col):
         update_cell_len(i_i)
-        space = ''
         table_head_mid += '|'
-        for sp in range(0, course_num_len - len(id_name)):
-            space += ' '
-        table_head_mid += id_name + space + '|'
-        space = ''
-        for sp in range(0, course_name_len - len(title)):
-            space += " "
-        table_head_mid = table_head_mid + title + space
+        space_1 = get_space(0, course_num_len - len(id_name))
+        space_2 = get_space(0, course_name_len - len(title))
+        if len(space_1) % 2 == 0 and len(space_2) % 2 == 0:
+            table_head_mid += space_1[0 : len(space_1) / 2] + id_name + space_1[len(space_1) / 2 :] + '|' + space_2[0 : len(space_2) / 2] + title + space_2[len(space_2) / 2 :]
+        else:
+            table_head_mid += id_name + space_1 + '|' + title + space_2
 
     table_head_mid += '|'
     print_table_separator(col)
@@ -150,13 +150,30 @@ def update_cell_len(index):
         course_num_len = line_id_max_len_list[0]
     course_name_len = cell_len - course_num_len - 1
 
+def next_pos(text, start):
+    min_end = len(text)
+    for k in keyword_list:
+        end = text.find(k, start + 2)
+        if end != -1 and end < min_end:
+            min_end = end
+
+    if min_end != len(text):
+        min_end -= 1
+        if min_end - start > course_name_len:
+            return start + course_name_len
+        else:
+            return min_end
+
+    if (len(text) - start) < course_name_len:
+        return start + len(text) - start
+    else:
+        return start + course_name_len
 
 def build_lines(list_all):
     id_title_lines = copy.deepcopy(list_all)
     describe_lines = []
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
-
     for i in range(0, len(list_all)):
         update_cell_len(i)
 
@@ -170,12 +187,17 @@ def build_lines(list_all):
         for j in range(0, len(list_all[i])):
             id_title_lines[i][j] = align_id_title(list_all[i][j])
             describe = utils.str_block_width(list_all[i][j].get_describe())
+            start = 0
+            end = 0
             if describe > course_name_len and output_with_describe == True:
                 for l in range(0, len(describe_lines)):
-                    if l * course_name_len > describe:
+                    if end >= describe:
                         describe_lines[l][i][j] = align_describe("")
                         continue
-                    describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[l * course_name_len : (l + 1) * course_name_len])
+                    end = next_pos(list_all[i][j].get_describe(), start) 
+                    #describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[l * course_name_len : (l + 1) * course_name_len])
+                    describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
+                    start = end
             else:
                 describe_lines[0][i][j] = align_describe(list_all[i][j].get_describe())
                 for l in range(1, len(describe_lines)):
