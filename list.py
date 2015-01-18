@@ -16,7 +16,7 @@ filter_keyword = ""
 column_num = "2"
 
 custom_cell_len = 0
-custom_cell_row = 2
+custom_cell_row = 5
 cell_len=89  #  cell_len >= course_num_len + 1 + course_name_len + 3
 course_name_len=70
 course_num_len=10
