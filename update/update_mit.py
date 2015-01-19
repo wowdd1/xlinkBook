@@ -8,29 +8,16 @@ from update_mit_ocw import MitOcwSpider
 
 class MitSpider(Spider):
     ocw_links = {}
+    course_num_regex = re.compile(r'[0-9]+\.[0-9]+[a-z]*')
  
     def __init__(self):
         Spider.__init__(self)    
         self.school = "mit"
-        self.subject = "eecs"
         self.ocw_spider = MitOcwSpider()
         self.deep_mind = True
    
-    def initOcwLinks(self):
-        r = requests.get('http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/')
-        soup = BeautifulSoup(r.text)
-        i = 0
-        course_num = ''
-        link = ''
-        for a in soup.find_all("a", class_="preview"):
-            i = i + 1
-            if i == 1:
-                course_num = a.string.replace("\n", "").strip()
-                link = 'http://ocw.mit.edu' + str(a["href"])
-                if self.ocw_links.get(course_num, '') == '':
-                    self.ocw_links[course_num] = link
-            if i >= 3:
-                i = 0
+    def initOcwLinks(self, subject):
+        self.ocw_links = self.ocw_spider.getOcwLinks(subject)
 
     def getTextBook(self, course_num):
         terms = ['2014SP', '2013SP', '2012SP']
@@ -63,9 +50,7 @@ class MitSpider(Spider):
             html = html.replace(html[html.find('<') : html.find('>') + 1], '')
         return html
     
-    def processMitData(self, html, f):
-        if self.need_update_subject(self.subject) == False:
-            return
+    def processMitData(self, html, f, course_code):
         #print html
         soup = BeautifulSoup(html);
         links_all = soup.find_all("a")
@@ -86,7 +71,14 @@ class MitSpider(Spider):
             if (line.strip().startswith('<br>') and self.clearHtmlTag(line.strip())[1 : 2] == '.') or \
                 line.find('Prereq:') != -1:
                 if line.find('Prereq:') != -1:
-                    prereq = self.clearHtmlTag(line).lower() + ' '
+                    all_prereq = self.course_num_regex.findall(line.lower())
+                    all_prereq = list(set(all_prereq))
+                    for p in all_prereq:
+                        prereq += p + ' '
+                    if len(all_prereq) > 0:
+                        prereq = 'prereq:' + prereq
+                    #print course_num + '---->' + prereq
+                        
                 if line.strip().startswith('<') and self.clearHtmlTag(line.strip())[1 : 2] == '.':
                     instructors = 'instructors:' + self.clearHtmlTag(line.strip()[0 : line.strip().find('</')]) + ' '
 
@@ -95,21 +87,21 @@ class MitSpider(Spider):
                 line = line[line.find('>', 3) + 1 : ]
                 if line.find('</h3>') == -1:
                     #print line
-                    if line[0 : 2] == '6.':
+                    if line[0 : line.find('.')] == course_code:
                         if course_num != '':
                             print course_num + " " + title + " " + link                     
 
                             if instructors != '' and remark.find('instructors:') == -1:
                                 remark = instructors + ' ' + remark
 
-                            self.count = self.count + 1
+                            self.count += 1
                             self.write_db(f, course_num, title, link, remark)
                             remark = ''
                             course_num = ""
                             title = ""
                             link = ""
                             textbook = ''
-                            pereq = ''
+                            prereq = ''
                             instructors = ''
 
                         course_num = line.strip()[0 : line.strip().find(" ")]
@@ -145,34 +137,51 @@ class MitSpider(Spider):
     def doWork(self):
         #mit
         #"""
-        print 'init ocw course links'
-        self.initOcwLinks()
+        r = requests.get('http://student.mit.edu/catalog/index.cgi')
+        soup = BeautifulSoup(r.text);
+        for a in soup.find_all('a'):
+            if a['href'].find('http') == -1 and a['href'][0 : 1] == 'm' and a['href'][0 : 4] != 'mail':
+                subject = a.text
+                if subject.find('-') != -1:
+                    subject = subject[subject.find('-') + 1 : ]
+                if subject.find('(') != -1:
+                    subject = subject[0 : subject.find('(')]
+                subject = subject.strip()
+                if self.need_update_subject(subject) == False:
+                    continue 
+        
+                print 'init ocw course links'
+                self.initOcwLinks(subject)
 
-        print "downloading mit course info"
-        file_name = self.get_file_name(self.subject, self.school)
-        file_lines = self.countFileLineNum(file_name)
-        f = self.open_db(file_name + ".tmp")
-        self.count = 0
- 
-        r_a = requests.get("http://student.mit.edu/catalog/m6a.html")
-        r_b = requests.get("http://student.mit.edu/catalog/m6b.html")
-        r_c = requests.get("http://student.mit.edu/catalog/m6c.html")
-    
-    
-        print "processing html and write data to file..."
-        self.processMitData(r_a.text, f)
-        self.processMitData(r_b.text, f)
-        self.processMitData(r_c.text, f)
+
+                print "downloading mit course info"
+                file_name = self.get_file_name(subject, self.school)
+                file_lines = self.countFileLineNum(file_name)
+                f = self.open_db(file_name + ".tmp")
+                self.count = 0
+                print 'processing ' + a['href'] 
+                r = requests.get("http://student.mit.edu/catalog/" + a['href'])
+                print "processing html and write data to file..."
+                course_code = a['href'][1 : a['href'].find('.html') - 1]
+                #print 'course_code: ' + course_code
+                self.processMitData(r.text, f, course_code)
+
+                soup = BeautifulSoup(r.text);
+                regex = re.compile(a['href'][0 : a['href'].find('.html') - 1] + '[b-z].html')
+                for link in sorted(list(set(regex.findall(r.text)))):
+                    print 'processing ' + link
+                    r = requests.get("http://student.mit.edu/catalog/" + link)
+                    self.processMitData(r.text, f, course_code) 
      
     
-        self.close_db(f)
-        if file_lines != self.count and self.count > 0:
-            self.do_upgrade_db(file_name)
-            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
-        else:
-            self.cancel_upgrade(file_name)
-            print "no need upgrade\n"
-        #"""
+                self.close_db(f)
+                if file_lines != self.count and self.count > 0:
+                    self.do_upgrade_db(file_name)
+                    print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+                else:
+                    self.cancel_upgrade(file_name)
+                    print "no need upgrade\n"
+            #"""
    
 start = MitSpider()
 start.doWork() 

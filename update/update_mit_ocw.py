@@ -37,6 +37,26 @@ class MitOcwSpider(Spider):
         r = requests.get(url)
         jobj = json.loads(r.text)
         return 'level:' + jobj['level'] + ' instructors:' + jobj['instructors'] + ' features:' + jobj['features'] + ' description:' + re.sub(r'[\x00-\x1f]', '', jobj['description'].replace('\n', ''))
+
+    def getOcwLinks(selfi, subject):
+        ocw_links = {}
+        url = ('http://ocw.mit.edu/courses/' + subject.strip().replace(' ', '-')).replace(',', '').lower()
+        print 'getOcwLinks in MitOcwSpider, url:' + url
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        i = 0
+        course_num = ''
+        link = ''
+        for a in soup.find_all("a", class_="preview"):
+            i = i + 1
+            if i == 1:
+                course_num = a.string.replace("\n", "").strip()
+                link = 'http://ocw.mit.edu' + str(a["href"])
+                if ocw_links.get(course_num, '') == '':
+                    ocw_links[course_num] = link
+            if i >= 3:
+                i = 0
+        return ocw_links
  
     def getDescriptionApiUrl(self, url):
         return url + '/index.json?' + str(time.time()).replace('.', '')

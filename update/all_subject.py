@@ -52,6 +52,8 @@ need_update_subject_list = [
     "eecs",
     "163-ocw",
     "mathematics",
+    #"physics",
+    #"biology-life-sciences",
     "statistics-data-analysis"
 ]
 def print_all_subject():

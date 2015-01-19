@@ -52,11 +52,14 @@ class Spider:
                 match_list.append(k)
             elif subject.find('/') == -1 and subject.lower().strip().find(k.lower()) != -1:
                 match_list.append(k)
-    
         result = subject
         if len(match_list) > 1:
             max_len = 0
             for key in match_list:
+                if key.lower() == subject[0: subject.find(' ')].lower().strip():
+                    result = subject_dict[key]
+                    break
+
                 if len(key) > max_len:
                     max_len = len(key)
                     result = subject_dict[key]
