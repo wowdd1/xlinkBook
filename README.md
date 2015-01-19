@@ -146,20 +146,20 @@ ex:
 
 browse course in browser: 
 
-    run ./goto.py -s "course number"
+    run ./goto.py -c "course number"
 
 ex: 
 
-     ./goto.py -s "6.001"
-     ./goto.py -s "E-100" -e yaohoo
+     ./goto.py -c "6.001"
+     ./goto.py -c "E-100" -e yaohoo
 
 browse course lecture at local(only suport ocw itunes course now):
 
-    run ./goto.py -p "course number"
+    run ./show_lecture.py -c "course number"
 
 ex:
 
-    ./goto.py -p 6.S096
+    ./show_lecture.py -c 6.S096
 
 the output looks like this:
 
