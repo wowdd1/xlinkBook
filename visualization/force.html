@@ -13,15 +13,29 @@
       pointer-events: none;
       font: 10px sans-serif;
     }
-
+    #chart {
+        width:1000px; /*设定宽度*/
+        text-align:left; /*文字左对齐*/
+        float:left; /*浮动居左*/
+        clear:left; /*不允许左侧存在浮动*/
+        overflow:hidden; /*超出宽度部分隐藏*/
+    }
+    #remark {
+        width:400px;
+        text-align:left;
+        font:12px Tahoma;
+        float:right; /*浮动居右*/
+        clear:right; /*不允许右侧存在浮动*/
+        overflow:hidden
+    }
     </style>
   </head>
   <body>
     <div id="chart"></div>
 <script>
 
-var width = 1700,
-    height = 1600,
+var width = 1000,
+    height = 800,
     fill = d3.scale.category20();
 
 var svg = d3.select("body").append("svg")
@@ -30,7 +44,7 @@ var svg = d3.select("body").append("svg")
 
 var force = d3.layout.force()
     .gravity(.05)
-    .distance(100)
+    .distance(400)
     .charge(-100)
     .size([width, height]);
 
@@ -72,7 +86,15 @@ d3.json("force.json", function(json) {
   });
 });
 
-</script>
+window.onload = function setFont() {
 
+    document.frames['remarkframe'].document.body.style.fontSize = 12 + 'px';           
+    document.frames['remarkframe'].document.body.style.fontFamily = 'sans-serif';           
+}
+
+</script>
+<div id='remark'>
+<iframe id='remarkframe' src="remark.html" target="_blank" frameBorder="0" width="400" scrolling="yes" height="800"></iframe>
+</div>
   </body>
 </html>
