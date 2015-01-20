@@ -8,7 +8,7 @@ import json
 from bs4 import BeautifulSoup;
 
 keyword = ''
-cell_width = 100
+cell_width = 80
 
 def usage(argv0):
     print ' usage:'
@@ -38,6 +38,10 @@ def printTable(keyword):
         parser.setMaxCellWidth(cell_width)
         parser.feed(table.prettify().replace('Video', ''))
         parser.tables[0].align["Name"] = "l"
+        parser.tables[0].align["Description"] = "l"
+        #print parser.tables[0].field_names
+        #parser.tables[0].sortby = parser.tables[0].field_names[3]
+        #parser.tables[0].reversesort = True
         print parser.tables[0]
     else:
         print 'not suport ' + keyword
