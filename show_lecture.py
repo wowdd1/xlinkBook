@@ -28,9 +28,12 @@ def printTable(keyword):
         if r.status_code == 404:
             print 'page not found'
             return
-        table = prettytable.from_html(r.text)[2]
-        table.align['TOPICS'] = 'l'
-        print table
+        #table = prettytable.from_html(r.text)[2]
+        for table in prettytable.from_html(r.text):
+            if table.field_names[0] == 'Field 1':
+                continue
+            table.align['TOPICS'] = 'l'
+            print table
     elif url.find('itunes.apple.com') != -1:
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
