@@ -27,9 +27,9 @@ class HarvardSpider(Spider):
                 pre = ""
                 for word in words:
                     pre += word[0 : 1]
-                return pre + "-" + course_num
+                return pre + course_num
             else:
-                return subject + "-" + course_num
+                return subject + course_num
         return title
 
     def getHarvardCourse(self, subject, url):
@@ -44,29 +44,42 @@ class HarvardSpider(Spider):
         self.count = 0 
     
         print "\n\nprocessing " + subject + " html and write data to file..."
-        for node in soup.find_all("strong"):
-            text = ""
-            link = ""
-            if node.string == None:
-                if node.a != None and node.a.string != None:
-                    text = node.a.string.replace("\n", "")
-                    link = node.a["href"]
-                else:
-                    if node.a != None:
-                        link = node.a["href"]
-                    text = node.prettify()
-                    if text.find("href=") > 0 :
-                        text = text[text.find(">", 8) + 1 : text.find("<", text.find(">", 8)) - 1]
-                    else:
-                        text = text[text.find(">", 2) + 1 : text.find("<", 8) - 1]
-                    text = text.replace("\n", "").strip()
-            else:
-                text = node.string.replace("\n", "")
-    
-            self.count = self.count + 1
-            #print text
+        for p in soup.find_all("p"):
+            if p != None:
+                prereq = ''
+                instructors = ''
+                course_num = ''
+                title = ''
+                description = ''
+                term = ''
+                link = ''
+                if p.strong != None and p.strong.a != None:
+                    link = p.strong.a['href']
+                for line in p.text.split('\n'):
+                    if line.strip() != '' and line.startswith('Copyright') == False and line.startswith('.') == False and\
+                        line.startswith('Catalog Number') == False:
+                        line = line.replace("\n", '')
+                        if line.find(subject) != -1 and line.find(subject) < 5:
+                            course_num = self.formatCourseNum(subject, line)
+                            title = line[line.find(".") + 2:].replace("]", "")
+                            continue
+                        if line.startswith('Half course'):
+                            term = 'term:' + line + ' '
+                            continue
+                        if line.startswith('Prerequisite'):
+                            prereq = 'prereq:' + line.replace("Prerequisite:", '').strip() + ' '
+                            continue
+                        if (len(line.strip()) > 40 and line.find('(' + subject + ')') == -1) or line.startswith('Note:'):
+                            description = 'description:' + line + ' '
+                            continue
+                        instructors = 'instructors: ' + line + ' ' 
 
-            self.write_db(f, self.formatCourseNum(subject, text), text[text.find(".") + 2:].replace("]", ""), link)
+
+                description = instructors + prereq + term + description
+                print course_num + ' ' + title + ' ' + link
+                self.count = self.count + 1
+                self.write_db(f, course_num, title, link, description)                      
+
         if self.count == 0:
             print subject + " can not get the data, check the html and python code"
         self.close_db(f)
