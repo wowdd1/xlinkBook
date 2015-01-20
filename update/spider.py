@@ -116,7 +116,7 @@ class Spider:
         self.create_dir_by_file_name(file_name)
     
         try:
-            f = open(file_name, "a")
+            f = open(file_name, "w")
         except IOError, err:
             print str(err)
         return f
