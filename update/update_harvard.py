@@ -9,7 +9,8 @@ from spider import *
 
 class HarvardSpider(Spider):    
     #harvard
-    
+    course_dice = {}
+ 
     def __init__(self):
         Spider.__init__(self)
         self.school = "harvard"
@@ -59,6 +60,7 @@ class HarvardSpider(Spider):
                     if line.strip() != '' and line.startswith('Copyright') == False and line.startswith('.') == False and\
                         line.startswith('Catalog Number') == False:
                         line = line.replace("\n", '')
+                        print line
                         if line.find(subject) != -1 and line.find(subject) < 5:
                             course_num = self.formatCourseNum(subject, line)
                             title = line[line.find(".") + 2:].replace("]", "")
@@ -76,9 +78,38 @@ class HarvardSpider(Spider):
 
 
                 description = instructors + prereq + term + description
+                if course_num == '':
+                    continue
+                self.course_dice[course_num] = title
                 print course_num + ' ' + title + ' ' + link
-                self.count = self.count + 1
+                self.count += 1
                 self.write_db(f, course_num, title, link, description)                      
+
+        for node in soup.find_all("strong"):
+            text = ""
+            link = ""
+            if node.string == None:
+                if node.a != None and node.a.string != None:
+                    text = node.a.string.replace("\n", "")
+                    link = node.a["href"]
+                else:
+                    if node.a != None:
+                        link = node.a["href"]
+                    text = node.prettify()
+                    if text.find("href=") > 0 :
+                        text = text[text.find(">", 8) + 1 : text.find("<", text.find(">", 8)) - 1]
+                    else:
+                        text = text[text.find(">", 2) + 1 : text.find("<", 8) - 1]
+                    text = text.replace("\n", "").strip()
+            else:
+                text = node.string.replace("\n", "")
+
+            course_num = self.formatCourseNum(subject, text) 
+            if self.course_dice.get(course_num, '') == '':
+                title = text[text.find(".") + 2:].replace("]", "")
+                print course_num + ' ' + title + ' ' + link
+                self.count += 1
+                self.write_db(f, course_num, title, link)
 
         if self.count == 0:
             print subject + " can not get the data, check the html and python code"
