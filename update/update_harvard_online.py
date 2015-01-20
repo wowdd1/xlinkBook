@@ -12,6 +12,7 @@ class HarvardOnlineSpider(Spider):
        Spider.__init__(self)
        self. school = "harvard-online"
        self.url = "http://www.extension.harvard.edu/courses"
+       self.deep_mind = True
     #harvard online
     #"""
     
@@ -25,6 +26,28 @@ class HarvardOnlineSpider(Spider):
             if span.a.string.lower().find("Course website".lower()) != -1 :
                 return str(span.a["href"])
         return url
+
+    def getMoreInfo(self, url):
+        website = url
+        description = ''
+        instructors = ''
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        span = soup.find("span", class_ = "syllabi-bullet-hide")
+   
+        if span != None and span.a != None:
+            if span.a.string.lower().find("Course website".lower()) != -1 :
+                website = str(span.a["href"])
+
+        div = soup.find('div', class_='field field-course-detail field-course-credits')
+        if div != None:
+            description = "description:" + div.text.replace("\n", '').strip() + ' '
+
+        for a in soup.find_all('a'):
+            if a.attrs.get('href', '') != '' and a['href'].startswith('/about-us/faculty-directory'):
+                instructors = "instructors:"+ a.text + ' ' + 'http://www.extension.harvard.edu' + a['href'] + ' '
+        description = instructors + description
+        return website, description
     
     def getHarvardOnlineCourse(self, subject, url):
         if self.need_update_subject(subject) == False:
@@ -41,6 +64,7 @@ class HarvardOnlineSpider(Spider):
         course_num = ""
         title = ""
         link = ""
+        description = ''
         print "processing html and write data to file..."
         if len(soup.find_all("li", class_ = "views-row")) > 0:
             for li in soup.find_all("li", class_ = "views-row"):
@@ -51,9 +75,11 @@ class HarvardOnlineSpider(Spider):
                 course_num = course_num[course_num.find("E-"):]
                 title = li.a.string.strip()
                 link = "http://www.extension.harvard.edu" + str(li.a["href"]).strip()
-                #link = getHarvardOnlineLink(link)
+                if self.deep_mind:
+                    link, description = self.getMoreInfo(link)
                 count = count + 1
-                self.write_db(f, course_num, title, link)
+                print course_num + " " + title + ' ' + link + ' ' + description
+                self.write_db(f, course_num, title, link, description)
         else:
             for li in soup.find_all("li"):
                 if li.attrs.has_key("class"):
@@ -62,12 +88,13 @@ class HarvardOnlineSpider(Spider):
                             if item.find("E-") != -1:
                                 course_num = item.strip()
                                 course_num = course_num[course_num.find("E-"):]
-                        #print course_num + " " + li.a.string
                         count = count + 1
                         title = li.a.string.strip()
                         link = "http://www.extension.harvard.edu" + str(li.a["href"]).strip()
-                        #link = getHarvardOnlineLink(link)
-                        self. write_db(f, course_num, title, link)
+                        if self.deep_mind:
+                            link, description = self.getMoreInfo(link)
+                        print course_num + " " + title + ' ' + link + ' ' + description
+                        self. write_db(f, course_num, title, link, description)
         self.close_db(f)
         if file_lines != count and count > 0:
             self.do_upgrade_db(file_name)
