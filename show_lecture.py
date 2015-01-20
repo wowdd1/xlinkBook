@@ -6,6 +6,7 @@ import getopt
 import requests
 import json
 from bs4 import BeautifulSoup;
+import prettytable
 
 keyword = ''
 cell_width = 80
