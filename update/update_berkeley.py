@@ -32,7 +32,7 @@ class TableHandler(HTMLParser):
 
         self.active = None
     def valid_course_num(self, text):
-        if text.find(' ') == -1 and text != '&' and text != 'unknown' and text != 'Neural' and text != 'Mechatronics' and text != 'Cryptography':
+        if text.find(' ') == -1 and text != '&' and text != 'Previous' and text != 'unknown' and text != 'Neural' and text != 'Mechatronics' and text != 'Cryptography':
             return True
         return False
 
@@ -107,15 +107,18 @@ class BerkeleySpider(Spider):
 
         for i in range(len(sorted_keys) - 1, -1 , -1):
             test_url = link_dict[sorted_keys[i]]
-            r = requests.get(test_url)
-            if r.status_code == 200:
-                soup = BeautifulSoup(r.text)
-                for a in soup.find_all('a'):
-                    if a.text.strip() == url:
-                        #print test_url + ' not match'
-                        break
-                #print 'match ' + test_url
-                return test_url
+            try:
+                r = requests.get(test_url)
+                if r.status_code == 200:
+                    soup = BeautifulSoup(r.text)
+                    for a in soup.find_all('a'):
+                        if a.text.strip() == url:
+                            #print test_url + ' not match'
+                            break
+                    #print 'match ' + test_url
+                    return test_url
+            except Exception , e:
+                print e
         if len(sorted_keys) > 0:
             return link_dict[sorted_keys[len(sorted_keys) - 1]]
         else:
