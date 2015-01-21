@@ -7,8 +7,11 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.converter import XMLConverter, HTMLConverter, TextConverter
 from pdfminer.layout import LAParams
 from cStringIO import StringIO
+sys.path.append("..")
+from utils import Utils
 
 class ItunesSpider(Spider):
+    utils = Utils()
 
     def __init__(self):
         Spider.__init__(self)
@@ -76,7 +79,24 @@ class ItunesSpider(Spider):
             description += 'description:' + div.text.strip().replace('\n', '')[div.text.strip().replace('\n', '').find(' ') :].strip() + ' '
             
         return description
- 
+    def convertBerkeleyTitle(self, title):
+        if title.find("Computer Science ") == -1 and title.find("Electrical Engineering ") == -1:
+            return title
+        if title.find("Computer Science ") != -1:
+            title = title.replace('Computer Science ', 'CS')
+
+        if title.find("Electrical Engineering ") != -1:
+            title = title.replace('Electrical Engineering ', 'EE')        
+
+        if title.find(",") != -1:
+            title = title[0 : title.find(",")]
+        if title.find("|") != -1:
+            title = title[0 : title.find("|")]
+        if title.find("/") != -1:
+            title = title[0 : title.find("/")]
+        
+        return title + ' ' + self.utils.getRecord(title, path="../db/eecs/").get_title().strip()
+
     def processData(self, subject, courses, school):
         print 'processing ' + subject + ' of ' + school
         file_name = self.get_file_name(subject + "/itunes/" + subject, school)
@@ -92,12 +112,15 @@ class ItunesSpider(Spider):
             jobj = json.loads(r.text)
             if len(jobj['results']) > 0:
                 print str(jobj['results'][0]['collectionId']) + ' ' + jobj['results'][0]['collectionName'] + ' ' + jobj['results'][0]['collectionViewUrl']
-                self.count += 1
                 url = jobj['results'][0]['collectionViewUrl']
                 description = ''
                 if self.deep_mind:
                     description = self.getDescription(url)
-                self.write_db(f, str(jobj['results'][0]['collectionId']), jobj['results'][0]['collectionName'], url, description)
+                title = jobj['results'][0]['collectionName']
+                if school.lower().find('berkeley') != -1:
+                    title = self.convertBerkeleyTitle(title)
+                self.count += 1
+                self.write_db(f, str(jobj['results'][0]['collectionId']), title, url, description)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:

@@ -126,7 +126,7 @@ class Utils:
     yahoo = "https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p="
 
     search_engin_list = [google, baidu, bing, yahoo]
-
+    default_path = os.getcwd() + "/db/" + default_subject + "/"
     def validEngin(self, engin):
         for item in self.search_engin_list:
             if item.lower().find(engin.lower()) != -1:
@@ -134,7 +134,24 @@ class Utils:
         print "invalided search engin: " + engin
         return False
 
-    def getUrl(self, keyword, use_subject='', engin=''):
+    def getRecord(self, keyword, use_subject='', path=default_path):
+        subject = default_subject;
+        if use_subject != "":
+            subject = use_subject
+        print 'searching %s'%keyword + " in " + subject
+
+        for file_name in self.find_file_by_pattern(".*", path):
+            f = open(file_name)
+            for line in f.readlines():
+                record = Record(line)
+                if record.get_id().lower().strip() == keyword.lower().strip():
+                    print "found " + line.replace("|","")
+                    return record
+        print "no record found in " + subject +" db"
+        return Record('')
+
+
+    def getUrl(self, keyword, use_subject='', engin='', path=default_path):
         urls = []
         url = ""
         subject = default_subject;
@@ -142,13 +159,12 @@ class Utils:
             subject = use_subject
         print 'searching %s'%keyword + " in " + subject
 
-        for file_name in self.find_file_by_pattern(".*", os.getcwd() + "/db/" + subject + "/"):
+        for file_name in self.find_file_by_pattern(".*", path):
             f = open(file_name)
             for line in f.readlines():
                 record = Record(line)
                 if record.get_id().lower().strip() == keyword.lower().strip():
                     print "found " + line.replace("|","")
-                    record = Record(line)
                     title = record.get_title().strip()
                     if engin != "" and self.validEngin(engin) == True:
                        for item in search_engin_list:
