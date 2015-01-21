@@ -183,25 +183,19 @@ def build_lines(list_all):
             for l in range(0, len(describe_lines)):
                 describe_lines[l][i].append(align_describe(""))
 
-
         for j in range(0, len(list_all[i])):
             id_title_lines[i][j] = align_id_title(list_all[i][j])
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
-            if describe > course_name_len and output_with_describe == True:
+            if output_with_describe == True:
                 for l in range(0, len(describe_lines)):
                     if end >= describe:
                         describe_lines[l][i][j] = align_describe("")
                         continue
                     end = next_pos(list_all[i][j].get_describe(), start) 
-                    #describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[l * course_name_len : (l + 1) * course_name_len])
                     describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
-            else:
-                describe_lines[0][i][j] = align_describe(list_all[i][j].get_describe())
-                for l in range(1, len(describe_lines)):
-                    describe_lines[l][i][j] = align_describe("")
 
     return id_title_lines, describe_lines
 
