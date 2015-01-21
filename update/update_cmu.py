@@ -49,7 +49,7 @@ class CMUSpider(Spider):
                 course_num = tr.td.a.text 
                 print course_num + " " + title
                 self.count += 1
-                self.write_db(f, dept + "-" + course_num, title, url, self.getDescription(url))
+                self.write_db(f, dept + course_num, title, url, self.getDescription(url))
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
