@@ -152,7 +152,11 @@ class Spider:
     
         f.write(course_num.strip() + " | " + course_name.replace("|","") + " | " + url  + " | " + describe + "\n")
     
-    
+    def get_storage_format(self,course_num, course_name, url, describe=""):
+        if url == "":
+            url = self.google + course_num + " " + course_name    
+        return course_num.strip() + " | " + course_name.replace("|","") + " | " + url  + " | " + describe
+
     def countFileLineNum(self, file_name):
         if os.path.exists(file_name):
             line_count = len(open(file_name,'rU').readlines())

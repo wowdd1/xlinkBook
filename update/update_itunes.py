@@ -9,6 +9,7 @@ from pdfminer.layout import LAParams
 from cStringIO import StringIO
 sys.path.append("..")
 from utils import Utils
+from record import Record
 
 class ItunesSpider(Spider):
     utils = Utils()
@@ -79,15 +80,24 @@ class ItunesSpider(Spider):
             description += 'description:' + div.text.strip().replace('\n', '')[div.text.strip().replace('\n', '').find(' ') :].strip() + ' '
             
         return description
+
+    def getTerm(self, title):
+        term = ''
+        if title.find("Fall") != -1:
+            term = title[title.find("Fall") : ].replace('UC Berkeley', '').replace('|', '').replace(' ', '')
+        if title.find("Spring") != -1:
+            term = title[title.find("Spring") : ].replace('UC Berkeley', '').replace('|', '').replace(' ', '')
+        return term
+
     def convertBerkeleyTitle(self, title):
         if title.find("Computer Science ") == -1 and title.find("Electrical Engineering ") == -1:
-            return title
+            return title, self.getTerm(title), ""
         if title.find("Computer Science ") != -1:
             title = title.replace('Computer Science ', 'CS')
 
+        term = self.getTerm(title)
         if title.find("Electrical Engineering ") != -1:
             title = title.replace('Electrical Engineering ', 'EE')        
-
         if title.find(",") != -1:
             title = title[0 : title.find(",")]
         if title.find("|") != -1:
@@ -95,7 +105,7 @@ class ItunesSpider(Spider):
         if title.find("/") != -1:
             title = title[0 : title.find("/")]
         
-        return title + ' ' + self.utils.getRecord(title, path="../db/eecs/").get_title().strip()
+        return title, term, self.utils.getRecord(title, path="../db/eecs/").get_title().strip()
 
     def processData(self, subject, courses, school):
         print 'processing ' + subject + ' of ' + school
@@ -106,6 +116,7 @@ class ItunesSpider(Spider):
             return
         f = self.open_db(file_name + ".tmp")      
         self.count = 0
+        course_dict = {}
 
         for course in courses:
             r = requests.get("https://itunes.apple.com/search?term=" + course)
@@ -118,9 +129,19 @@ class ItunesSpider(Spider):
                     description = self.getDescription(url)
                 title = jobj['results'][0]['collectionName']
                 if school.lower().find('berkeley') != -1:
-                    title = self.convertBerkeleyTitle(title)
+                    course_num, term, title = self.convertBerkeleyTitle(title)
+                    record = self.get_storage_format(str(jobj['results'][0]['collectionId']), course_num + ' ' + title + ' ' + term, url, description)
+                    course_dict[course_num + str(jobj['results'][0]['collectionId']) + term] = Record(record)
+                    for k, record in [(k,course_dict[k]) for k in sorted(course_dict.keys())]:
+                        print k
+                else:
+                    self.count += 1
+                    self.write_db(f, str(jobj['results'][0]['collectionId']), title, url, description)
+
+        if school.lower().find('berkeley') != -1:
+            for k, record in [(k,course_dict[k]) for k in sorted(course_dict.keys())]:
                 self.count += 1
-                self.write_db(f, str(jobj['results'][0]['collectionId']), title, url, description)
+                self.write_db(f, record.get_id().strip(), record.get_title().strip(), record.get_url().strip(), record.get_describe().strip())
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
