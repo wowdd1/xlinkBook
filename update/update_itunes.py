@@ -132,16 +132,19 @@ class ItunesSpider(Spider):
                     course_num, term, title = self.convertBerkeleyTitle(title)
                     record = self.get_storage_format(str(jobj['results'][0]['collectionId']), course_num + ' ' + title + ' ' + term, url, description)
                     course_dict[course_num + str(jobj['results'][0]['collectionId']) + term] = Record(record)
-                    for k, record in [(k,course_dict[k]) for k in sorted(course_dict.keys())]:
-                        print k
                 else:
-                    self.count += 1
-                    self.write_db(f, str(jobj['results'][0]['collectionId']), title, url, description)
+                    course_dict[str(jobj['results'][0]['collectionId'])] = Record(self.get_storage_format(str(jobj['results'][0]['collectionId']), title, url, description))
+                    for item in sorted(course_dict.items(), key=lambda course_dict:course_dict[1].get_title().strip()):
+                        print item[1].get_title().strip()
 
         if school.lower().find('berkeley') != -1:
             for k, record in [(k,course_dict[k]) for k in sorted(course_dict.keys())]:
                 self.count += 1
                 self.write_db(f, record.get_id().strip(), record.get_title().strip(), record.get_url().strip(), record.get_describe().strip())
+        else:
+            for item in sorted(course_dict.items(), key=lambda course_dict:course_dict[1].get_title().strip()):
+                self.count += 1
+                self.write_db(f, item[1].get_id().strip(), item[1].get_title().strip(), item[1].get_url().strip(), item[1].get_describe().strip())
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
