@@ -146,7 +146,7 @@ ex:
 
 browse course in browser: 
 
-    run ./goto.py -c "course number"
+    run ./goto.py -c "course number" or ./goto.py "course number"
 
 ex: 
 
@@ -155,7 +155,7 @@ ex:
 
 browse course lecture at local(only suport ocw itunes course now):
 
-    run ./show_lecture.py -c "course number"
+    run ./show_lecture.py -c "course number" or ./show_lecture.py "course number"
 
 ex:
 

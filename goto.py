@@ -41,6 +41,8 @@ def main(argv):
     global keyword, engin, use_subject
     try:
         opts, args = getopt.getopt(argv[1:], 'hc:e:u:', ["help","course","engin","use"])
+        if len(args) == 1:
+            keyword = args[0]
     except getopt.GetoptError, err:
         print str(err)
         usage(argv[0])

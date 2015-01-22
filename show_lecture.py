@@ -54,7 +54,9 @@ def printTable(keyword):
 def main(argv):
     global keyword, cell_width
     try:
-        opts, cmd_args = getopt.getopt(argv[1:], 'hc:w:', ["help","course", "width"])
+        opts, args = getopt.getopt(argv[1:], 'hc:w:', ["help","course", "width"])
+        if len(args) == 1:
+            keyword = args[0]
     except getopt.GetoptError, err:
         print str(err)
         usage(argv[0])
