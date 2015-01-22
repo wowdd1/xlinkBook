@@ -132,6 +132,7 @@ class GithubSpider(Spider):
         r = self.requestWithAuth(url)
         repos = ""
         jobj = json.loads(r.text)
+        repo_dict = {}
 
         for repo in jobj:
             str_repo = repo['name'] + "("
@@ -143,7 +144,18 @@ class GithubSpider(Spider):
                 str_repo += " watchers:" + str(repo['watchers'])
             if repo["language"] != None:
                  str_repo += " lang:" + str(repo["language"])
-            repos += (str_repo.strip() + ") ")
+            if repo['stargazers_count'] != None:
+                repo_dict[repo.get("stargazers_count", 0)] = str_repo.strip() + ") "
+            else:
+                repo_dict[0] = str_repo.strip() + ") "
+        print sorted(repo_dict.keys(), reverse=True)
+        i = 0
+        for k, repo in [(k,repo_dict[k]) for k in sorted(repo_dict.keys(), reverse=True)]:
+            i += 1
+            if i == 1:
+                repos += "toprepo:" + repo + ' '
+            else:
+                repos += "project:" + repo
 
         print repos + "\n"
         return repos 
