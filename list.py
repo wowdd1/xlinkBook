@@ -416,10 +416,10 @@ def main(argv):
         elif o in ('-w', '--width'):
             custom_cell_len = int(a) 
         elif o in ('-r', '--row'):
-            if int(a) > 2 and int(a) < 30:
+            if int(a) > 0 and int(a) < 30:
                 custom_cell_row = int(a)
             else:
-                print 'the row must between 2 and 30'
+                print 'the row must between 0 and 30'
     if source == "":
         print "you must input the input file or dir"
         usage()
