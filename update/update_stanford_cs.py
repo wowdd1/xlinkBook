@@ -54,7 +54,7 @@ class StanfordSpider(Spider):
         #"""
         print "downloading stanford course info"
 
-        file_name = self.get_file_name("eecs/" + "cs.stanford", self.school)
+        file_name = self.get_file_name("eecs/" + "cs", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
