@@ -74,10 +74,15 @@ class ItunesSpider(Spider):
                 if line.strip()[0 : 2] == 'by':
                     description = 'instructors:' + line.strip()[2 : ].strip() + ' '
                     break
+        
+        span = soup.find('span', class_="rating-count")
+        if span != None:
+            description += " ratings:" + span.text[0 : span.text.find(" ")] + ' '
 
         div = soup.find('div', class_="product-review")
         if div != None:
             description += 'description:' + div.text.strip().replace('\n', '')[div.text.strip().replace('\n', '').find(' ') :].strip() + ' '
+            
             
         return description
 
