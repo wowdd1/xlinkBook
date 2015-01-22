@@ -21,13 +21,14 @@ class StanfordSpider(Spider):
         self.course_num_list.append(course_num)
         return False
     
-    def processStanfordDate(self, f, html):
-        if self.need_update_subject(self.subject) == False:
-            return
-        soup = BeautifulSoup(html)
+    def processStanfordDate(self, f, url):
+        print 'processing ' + url
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
         th_set = soup.find_all("th")
         td_set_all = soup.find_all("td")
         td_set = []
+        td_set_2 = []
         del th_set[0:5]
     
         i = 0
@@ -35,17 +36,18 @@ class StanfordSpider(Spider):
             i = i + 1
             if i == 1:
                 td_set.append(td.string)
+            if i == 2:
+                td_set_2.append(td.string)
             if i == 4:
                 i = 0
     
         for index in range(0,len(th_set)):
             link = th_set[index].prettify()
             link = link[link.find("http"):link.find("EDU") + 3]
-            title = th_set[index].string + " " + td_set[index]
             if self.isInCourseNumList(th_set[index].string) == True:
                 continue
-            self.count = self.count + 1
-            self.write_db(f, th_set[index].string, td_set[index], link)
+            self.count += 1
+            self.write_db(f, th_set[index].string.upper(), td_set[index], link, 'instructors:' + td_set_2[index])
     
     def doWork(self):
         #stanford
@@ -55,28 +57,14 @@ class StanfordSpider(Spider):
         file_name = self.get_file_name("eecs/" + "cs.stanford", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
-
-        url = "http://cs.stanford.edu/courses/schedules/2014-2015.autumn.php"
-        r = requests.get(url)
-        #print r.status_code
+        self.count = 0
+ 
+        r = requests.get('http://www-cs.stanford.edu/courses')
+        soup = BeautifulSoup(r.text)
         print "processing html and write data to file..."
-        self.processStanfordDate(f, r.text)
-    
-        url = "http://cs.stanford.edu/courses/schedules/2014-2015.winter.php"
-        r = requests.get(url)
-        #print r.status_code
-        self.processStanfordDate(f, r.text)
-    
-        url = "http://cs.stanford.edu/courses/schedules/2014-2015.spring.php"
-        r = requests.get(url)
-        #print r.status_code
-        self.processStanfordDate(f, r.text)
-    
-        url = "http://cs.stanford.edu/courses/schedules/2013-2014.summer.php"
-        r = requests.get(url)
-        #print r.status_code
-        self.processStanfordDate(f, r.text)
-    
+        for a in soup.find_all('a'):
+            if a.attrs.has_key('href') and a['href'].find('http://cs.stanford.edu/courses/schedules/') != -1:
+                self.processStanfordDate(f, a['href'])
     
         self.close_db(f)
         if file_lines != self.count and self.count > 0:

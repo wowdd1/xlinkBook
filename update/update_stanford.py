@@ -13,7 +13,7 @@ class StanfordExploreSpider(Spider):
         Spider.__init__(self)
         self.school = "stanford"
         self.subject = "eecs"
-        self.deep_mind = False
+        self.deep_mind = True
 
     def getRealUrl(self, course_num):
         test_url = 'http://' + course_num + '.stanford.edu'
@@ -49,7 +49,7 @@ class StanfordExploreSpider(Spider):
             course_num_list.append(span.text[0:len(span.text) - 1].replace(' ', ''))
 
         for span in soup.find_all("span", attrs={"class": "courseTitle"}):
-            course_name_list.append(span.text.strip())
+            course_name_list.append(span.text.strip().strip())
 
         for div in soup.find_all("div", attrs={"class": "courseDescription"}):
             course_description_list.append(div.text.strip()) 
@@ -61,11 +61,11 @@ class StanfordExploreSpider(Spider):
                     course_instructors_list.append('')
                     i -= 1
                     continue
-                course_instructors_list.append(div.text.strip().replace('\n', '').strip())
+                course_instructors_list.append(div.text.strip().replace('\n', '').replace('Instructors: ;', '').strip())
 
         for i in range(0, len(course_num_list)):
             print course_num_list[i] + " " + course_name_list[i]
-            description = course_instructors_list[i] + ' description:' + course_description_list[i] + ' '
+            description = "instructors:" + course_instructors_list[i] + ' description:' + course_description_list[i] + ' '
             url = 'http://' + course_num_list[i] + '.stanford.edu'
             if self.deep_mind:
                 url = self.getRealUrl(course_num_list[i])
