@@ -178,10 +178,10 @@ the output looks like this:
     |  10  |      Course Recap, Interviews, Advanced Topics: Grab Bag  Perspective      | Due: Second code review; Assignment 4 (final project) |
     +------+----------------------------------------------------------------------------+-------------------------------------------------------+
 
-find the faculty:
+find the instructor:
 
-    ./find_faculty.py "faculty name"
+    ./find_instructor "faculty name"
 
 ex:
     
-    ./find_faculty.py "Andrew Ng"
+    ./find_instructor "Andrew Ng"
