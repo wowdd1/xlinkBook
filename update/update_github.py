@@ -90,7 +90,7 @@ class GithubSpider(Spider):
                     print data
                     description = ""
                     if item['description'] != None:
-                        description = item['description'] + " (author:" + item['owner']['login'] + " stars:" + str(item["stargazers_count"]) + " forks:" + str(item['forks_count']) + " watchers:" + str(item['watchers']) + ")"
+                        description = 'author:' + item['owner']['login'] + ' description:' + item['description'] + " (stars:" + str(item["stargazers_count"]) + " forks:" + str(item['forks_count']) + " watchers:" + str(item['watchers']) + ")"
                     self.write_db(f, str(item["stargazers_count"]) + "-" + str(item['forks_count']), item["name"], item['html_url'], description)
                     self.count = self.count + 1
         return total_size
