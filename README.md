@@ -177,3 +177,11 @@ the output looks like this:
     |  9   |              Visualization: OpenGL, Makefiles, Large Projects              |                 Due: First code review                |
     |  10  |      Course Recap, Interviews, Advanced Topics: Grab Bag  Perspective      | Due: Second code review; Assignment 4 (final project) |
     +------+----------------------------------------------------------------------------+-------------------------------------------------------+
+
+find the faculty:
+
+    ./find_faculty.py "faculty name"
+
+ex:
+    
+    ./find_faculty.py "Andrew Ng"
