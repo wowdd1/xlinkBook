@@ -6,14 +6,12 @@
     <style>
 
     .link {
-        fill: none;
-        stroke: #666;
-        stroke-width: 1.5px;
+      stroke: #ccc;
     }
 
     .node text {
-        pointer-events: none;
-        font: 10px sans-serif;
+      pointer-events: none;
+      font: 10px sans-serif;
     }
     #chart {
         width:1000px; /*设定宽度*/
@@ -30,20 +28,6 @@
         clear:right; /*不允许右侧存在浮动*/
         overflow:hidden
     }
-
-    circle {
-      fill: #ccc;
-      stroke: #333;
-      stroke-width: 1.5px;
-    }
-
-
-    text {
-        font: 10px sans-serif;
-        pointer-events: none;
-        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
-    }
-
     </style>
   </head>
   <body>
@@ -60,8 +44,8 @@ var svg = d3.select("body").append("svg")
 
 var force = d3.layout.force()
     .gravity(.05)
-    .distance(240)
-    .charge(-300)
+    .distance(400)
+    .charge(-100)
     .size([width, height]);
 
 d3.json("force.json", function(json) {
@@ -70,25 +54,10 @@ d3.json("force.json", function(json) {
       .links(json.links)
       .start();
 
-// Per-type markers, as they don't inherit styles.
-svg.append("defs").selectAll("marker")
-    .data(["arrow"])
-  .enter().append("marker")
-    .attr("id", function(d) { return d; })
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 15)
-    .attr("refY", -1.5)
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
-    .attr("orient", "auto")
-  .append("path")
-    .attr("d", "M0,-5L10,0L0,5");
-
-  var path = svg.selectAll("path")
+  var link = svg.selectAll(".link")
       .data(json.links)
-    .enter().append("path")
-      .attr("class", "link")
-      .attr("marker-end", function(d) { return "url(#arrow)"; });;
+    .enter().append("line")
+      .attr("class", "link");
 
   var color = d3.scale.category20();
 
@@ -99,7 +68,8 @@ svg.append("defs").selectAll("marker")
       .call(force.drag);
 
   node.append("circle")
-      .attr("r", 6)
+      .attr("r", 8)
+      .style("fill", function(d) { return color(d.id == "me" ? 1 : 2); });
 
   node.append("text")
       .attr("dx", 12)
@@ -107,18 +77,13 @@ svg.append("defs").selectAll("marker")
       .text(function(d) { return d.id });
 
   force.on("tick", function() {
-      path.attr("d", linkArc);
-      node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
   });
-
-  function linkArc(d) {
-      var dx = d.target.x - d.source.x,
-          dy = d.target.y - d.source.y,
-          dr = Math.sqrt(dx * dx + dy * dy);
-          //dr = '0' //line arrow
-      return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
-  }
-
 });
 
 window.onload = function setFont() {
