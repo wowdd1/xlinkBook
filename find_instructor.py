@@ -14,7 +14,8 @@ faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
                 'http://www.eecs.berkeley.edu/Faculty/Lists/EE/list.shtml',\
                 'http://www.eecs.berkeley.edu/Faculty/Lists/CS/list.shtml',\
                 'http://www.seas.harvard.edu/electrical-engineering/people',\
-                'http://www.seas.harvard.edu/computer-science/people']
+                'http://www.seas.harvard.edu/computer-science/people',\
+                'http://www.math.princeton.edu/directory/faculty']
 def usage(argv0):
     print ' usage:'
     print '-h,--help: print help message.'
@@ -43,6 +44,13 @@ def getCmuFacultyUrl(keyword):
                     return a['href']
                     
     return ''
+def getPrincetonFacultyUrl(url):
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    for a in soup.find_all('a'):
+        if a.text.startswith('http://www.math.princeton.edu'):
+            return a['href']
+    return url
 
 def search(keyword):
     for url in faculty_list:
@@ -57,6 +65,8 @@ def search(keyword):
                         link = 'http://www.eecs.berkeley.edu' + a['href']
                     elif url.find('eecs.mit') != -1:
                         link = getMitFacultyUrl(a['href'])
+                    elif url.find('princeton') != -1:
+                        link = getPrincetonFacultyUrl('http://www.math.princeton.edu' + a['href'])
                     else:
                         link = a['href']
                     print 'found ' + a.text + ' ' + link
