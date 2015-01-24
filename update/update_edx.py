@@ -73,7 +73,7 @@ class EdxSpider(Spider):
                     description += 'available:no '
                 else:
                     description += 'available:yes '
-                description += 'university:' + item["schools"][0].strip() + ' '
+                description += 'university:' + item["schools"][0].strip() + ' description:start time ' + item["start"] 
                 self.write_db(f, item["code"].strip(), title, item["url"], description)
     
         self.close_db(f)
