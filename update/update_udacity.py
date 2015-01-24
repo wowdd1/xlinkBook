@@ -39,7 +39,7 @@ class UdacitySpider(Spider):
                 remark = ""
                 instructors = 'instructors:'
                 project = ''
-                if course['starter'] == True:
+                if course['available'] == True:
                     remark = "available:yes "
                 else:
                     remark = "available:no "
