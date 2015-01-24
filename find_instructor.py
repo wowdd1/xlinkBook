@@ -4,6 +4,7 @@ import webbrowser
 import getopt
 import sys
 import requests
+from bs4 import BeautifulSoup
 
 keyword = ''
 
@@ -17,12 +18,33 @@ def usage(argv0):
     print ' usage:'
     print '-h,--help: print help message.'
 
+def getMitFacultyUrl(url):
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    for a in soup.find_all('a'):
+        if a.text == 'Personal Website':
+            return a['href']
+    return url
 
 def search(keyword):
     for url in faculty_list:
         print 'searching ' + url
         r = requests.get(url)
         if r.text.lower().find(keyword.lower()) != -1:
+            soup = BeautifulSoup(r.text)
+            for a in soup.find_all('a'):
+                if a.attrs.has_key("href") and a.text.lower().strip() == keyword.lower().strip():
+                    link = ''
+                    if url.find('berkeley') != -1:
+                        link = 'http://www.eecs.berkeley.edu' + a['href']
+                    elif url.find('eecs.mit') != -1:
+                        link = getMitFacultyUrl(a['href'])
+                    else:
+                        link = a['href']
+                    print 'found ' + a.text + ' ' + link
+                    webbrowser.open(link)
+                    return
+
             webbrowser.open(url)
             return
 
