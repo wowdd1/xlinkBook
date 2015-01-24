@@ -4,3 +4,6 @@
 [submodule "download/youtube-dl"]
 	path = download/youtube-dl
 	url = git@github.com:rg3/youtube-dl.git
+[submodule "paper/scholar.py"]
+	path = paper/scholar.py
+	url = git@github.com:ckreibich/scholar.py.git
