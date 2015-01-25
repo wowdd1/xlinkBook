@@ -5,8 +5,10 @@
 #data: 2014.12.07
     
 from spider import *
+sys.path.append("..")
+from record import CourseRecord
 
-class StanfordSpider(Spider):
+class StanfordCSSpider(Spider):
     course_num_list = []
 
     def __init__(self):
@@ -48,7 +50,28 @@ class StanfordSpider(Spider):
                 continue
             self.count += 1
             self.write_db(f, th_set[index].string.upper(), td_set[index], link, 'instructors:' + td_set_2[index])
+
+    def getRecordsDict(self):
+        records_dict = {}
+        f = open(self.get_file_name("eecs/" + "cs", self.school), 'rU')
+        for line in f.readlines():
+            record = CourseRecord(line)
+            records_dict[record.get_id().strip()] = record
+
+        return records_dict 
+
     
+   
+    def getCsCourseLinks(self):
+        links = []
+        r = requests.get('http://www-cs.stanford.edu/courses')
+        soup = BeautifulSoup(r.text)
+        for a in soup.find_all('a'):
+            if a.attrs.has_key('href') and a['href'].find('http://cs.stanford.edu/courses/schedules/') != -1:
+                links.append(a['href'])
+
+        return links
+
     def doWork(self):
         #stanford
         #"""
@@ -59,12 +82,9 @@ class StanfordSpider(Spider):
         f = self.open_db(file_name + ".tmp")
         self.count = 0
  
-        r = requests.get('http://www-cs.stanford.edu/courses')
-        soup = BeautifulSoup(r.text)
         print "processing html and write data to file..."
-        for a in soup.find_all('a'):
-            if a.attrs.has_key('href') and a['href'].find('http://cs.stanford.edu/courses/schedules/') != -1:
-                self.processStanfordDate(f, a['href'])
+        for url in self.getCsCourseLinks():
+            self.processStanfordDate(f, url)
     
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
@@ -75,6 +95,10 @@ class StanfordSpider(Spider):
             print "no need upgrade\n"
         #"""
     
-    
-start = StanfordSpider()
-start.doWork() 
+def main(argv):
+    start = StanfordCSSpider()
+    start.doWork()
+
+if __name__ == '__main__':
+    main(sys.argv)
+

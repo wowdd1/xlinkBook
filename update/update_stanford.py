@@ -5,8 +5,9 @@
 #data: 2015.01.03
 
 from spider import *
+from update_stanford_cs import StanfordCSSpider
 
-class StanfordExploreSpider(Spider):
+class StanfordSpider(Spider):
     include_unoffered_courses = False
     
     def __init__(self):
@@ -14,6 +15,7 @@ class StanfordExploreSpider(Spider):
         self.school = "stanford"
         self.subject = "eecs"
         self.deep_mind = True
+        self.records_dict = StanfordCSSpider().getRecordsDict()
 
     def getRealUrl(self, course_num):
         test_url = 'http://' + course_num + '.stanford.edu'
@@ -65,10 +67,17 @@ class StanfordExploreSpider(Spider):
 
         for i in range(0, len(course_num_list)):
             print course_num_list[i] + " " + course_name_list[i]
-            description = "instructors:" + course_instructors_list[i] + ' description:' + course_description_list[i] + ' '
-            url = 'http://' + course_num_list[i] + '.stanford.edu'
-            if self.deep_mind:
-                url = self.getRealUrl(course_num_list[i])
+            if subject == 'Computer Science' and self.records_dict.get(course_num_list[i], '') != '' \
+                       and self.records_dict.get(course_num_list[i]).get_instructors().find('none listed') == -1:
+                description = "instructors:" + self.records_dict.get(course_num_list[i]).get_instructors().strip() + ' '
+                url = self.records_dict.get(course_num_list[i]).get_url().strip()
+            else:
+                description = "instructors:" + course_instructors_list[i] + ' '
+                url = 'http://' + course_num_list[i] + '.stanford.edu'
+                if self.deep_mind:
+                    url = self.getRealUrl(course_num_list[i])
+
+            description += 'description:' + course_description_list[i] + ' '
 
             self.write_db(f, course_num_list[i], course_name_list[i], url, description)
             self.count += 1
@@ -98,5 +107,5 @@ class StanfordExploreSpider(Spider):
                 url += "&filter-term-Autumn=on&filter-term-Summer=on&filter-term-Spring=on&filter-term-Winter=on"
             self.processData(subject, url)
 
-start = StanfordExploreSpider()
+start = StanfordSpider()
 start.doWork()
