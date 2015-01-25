@@ -52,6 +52,17 @@ def getPrincetonFacultyUrl(url):
             return a['href']
     return url
 
+def match(text, keyword):
+    if text.lower().strip() == keyword.lower().strip():
+        print text + ' match ' + keyword
+        return True
+    for word in text.strip().split(' '):
+        if word == keyword.strip():
+            print 'found word ' + word + ' in ' + text 
+            return True
+
+    return False
+
 def search(keyword):
     for url in faculty_list:
         print 'searching ' + url
@@ -59,7 +70,7 @@ def search(keyword):
         if r.text.lower().find(keyword.lower()) != -1:
             soup = BeautifulSoup(r.text)
             for a in soup.find_all('a'):
-                if a.attrs.has_key("href") and a.text.lower().strip() == keyword.lower().strip():
+                if a.attrs.has_key("href") and match(a.text, keyword):
                     link = ''
                     if url.find('berkeley') != -1:
                         link = 'http://www.eecs.berkeley.edu' + a['href']
@@ -73,8 +84,6 @@ def search(keyword):
                     webbrowser.open(link)
                     return
 
-            webbrowser.open(url)
-            return
     cmu_url = getCmuFacultyUrl(keyword)
     if cmu_url != '':
         webbrowser.open(cmu_url)
