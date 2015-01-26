@@ -279,3 +279,8 @@ class Utils:
 
     def str_block_width(self, val):
         return sum(itermap(self.char_block_width, itermap(ord, regex.sub("", val))))
+
+    def clearHtmlTag(self, html):
+        while(html.find('<') != -1 and html.find('>') != -1):
+            html = html.replace(html[html.find('<') : html.find('>') + 1], '')
+        return html

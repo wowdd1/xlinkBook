@@ -5,6 +5,8 @@
 #data: 2014.12.07
 from spider import *
 from update_mit_ocw import MitOcwSpider
+sys.path.append("..")
+from utils import Utils
 
 class MitSpider(Spider):
     ocw_links = {}
@@ -44,17 +46,13 @@ class MitSpider(Spider):
             if link.attrs.has_key("href") and link["href"].find(course_num) != -1 and link["href"].find("editcookie.cgi") == -1:
                 return link["href"]
         return ""
-        
-    def clearHtmlTag(self, html):
-        while(html.find('<') != -1 and html.find('>') != -1):
-            html = html.replace(html[html.find('<') : html.find('>') + 1], '')
-        return html
     
     def processMitData(self, html, f, course_code):
         #print html
         soup = BeautifulSoup(html);
         links_all = soup.find_all("a")
         course_links = []
+        utils = Utils()
         for link in links_all:
             if link.attrs.has_key("href") and False == link["href"].startswith("editcookie.cgi") \
                and False == link["href"].startswith("/ent/cgi-bin") and False == link["href"].startswith("javascript:") \
@@ -68,7 +66,7 @@ class MitSpider(Spider):
         instructors = ''
         for line in html.split("\n"):
 
-            if (line.strip().startswith('<br>') and self.clearHtmlTag(line.strip())[1 : 2] == '.') or \
+            if (line.strip().startswith('<br>') and utils.clearHtmlTag(line.strip())[1 : 2] == '.') or \
                 line.find('Prereq:') != -1:
                 if line.find('Prereq:') != -1:
                     all_prereq = self.course_num_regex.findall(line.lower())
@@ -79,8 +77,8 @@ class MitSpider(Spider):
                         prereq = 'prereq:' + prereq
                     #print course_num + '---->' + prereq
                         
-                if line.strip().startswith('<') and self.clearHtmlTag(line.strip())[1 : 2] == '.':
-                    instructors = 'instructors:' + self.clearHtmlTag(line.strip()[0 : line.strip().find('</')]) + ' '
+                if line.strip().startswith('<') and utils.clearHtmlTag(line.strip())[1 : 2] == '.':
+                    instructors = 'instructors:' + utils.clearHtmlTag(line.strip()[0 : line.strip().find('</')]) + ' '
 
             if line.strip().find('<h3>') != -1 or \
                 (line.strip().startswith('<br>') and (line.strip()[len(line.strip()) - 1 : ] == '.' or line.strip()[len(line.strip()) - 7 : ] == 'limited')):
