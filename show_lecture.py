@@ -55,6 +55,14 @@ def printCourseTable(course):
         print 'not suport ' + course
         return
 
+def getMediaUrl(url):
+    r = requests.get(url)
+    #print r.text
+    media_url = r.text[r.text.find('>http') + 1 : r.text.find('</', r.text.find('>http'))]
+    print 'the media url is:' 
+    print '    ' + media_url
+    return media_url
+
 def showLecture(course, lecture):
     utils = Utils()
     url = utils.getUrl(course)
@@ -68,9 +76,9 @@ def showLecture(course, lecture):
                 pos = tr.prettify().find('https://itunes.apple.com')
                 start = tr.prettify().find('i=', pos) + 2
                 end = tr.prettify().find('&', pos)
-                print 'open ' + tr.prettify()[pos : end]
-                webbrowser.open('https://itunes.apple.com/WebObjects/DZR.woa/wa/downloadTrack/ext.mp4?id=' + tr.prettify()[start : end].strip() + '&pv=1')
+                webbrowser.open(getMediaUrl('https://itunes.apple.com/WebObjects/DZR.woa/wa/downloadTrack/ext.mp4?id=' + tr.prettify()[start : end].strip()))
                 return
+
         print 'not found'
         
 
