@@ -15,6 +15,7 @@ faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
                 'http://www.eecs.berkeley.edu/Faculty/Lists/CS/list.shtml',\
                 'http://www.seas.harvard.edu/electrical-engineering/people',\
                 'http://www.seas.harvard.edu/computer-science/people',\
+                'https://www.cs.princeton.edu/people/faculty',\
                 'http://www.math.princeton.edu/directory/faculty']
 def usage(argv0):
     print ' usage:'
@@ -44,13 +45,13 @@ def getCmuFacultyUrl(keyword):
                     return a['href']
                     
     return ''
-def getPrincetonFacultyUrl(url):
-    r = requests.get(url)
+def getPrincetonFacultyUrl(base_url, href):
+    r = requests.get(base_url + href)
     soup = BeautifulSoup(r.text)
     for a in soup.find_all('a'):
-        if a.text.startswith('http://www.math.princeton.edu'):
+        if a.text.startswith(base_url):
             return a['href']
-    return url
+    return base_url + href
 
 def match(text, keyword):
     if text.lower().strip() == keyword.lower().strip():
@@ -76,8 +77,10 @@ def search(keyword):
                         link = 'http://www.eecs.berkeley.edu' + a['href']
                     elif url.find('eecs.mit') != -1:
                         link = getMitFacultyUrl(a['href'])
-                    elif url.find('princeton') != -1:
-                        link = getPrincetonFacultyUrl('http://www.math.princeton.edu' + a['href'])
+                    elif url.find('cs.princeton') != -1:
+                        link = getPrincetonFacultyUrl('http://www.cs.princeton.edu', a['href'])
+                    elif url.find('math.princeton') != -1:
+                        link = getPrincetonFacultyUrl('http://www.math.princeton.edu', a['href'])
                     else:
                         link = a['href']
                     print 'found ' + a.text + ' ' + link
