@@ -9,6 +9,7 @@ class PrincetonSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = "princeton"
+        self.deep_mind = True
 
     def isInCourseNumList(self, course_num):
         for item in self.course_num_list:
@@ -16,6 +17,31 @@ class PrincetonSpider(Spider):
                 return True
         self.course_num_list.append(course_num)
         return False
+
+    def formatInstructors(self, text):
+        text = text.strip().replace('\n', ' ')
+        while (text.find('  ') != -1):
+            text = text.replace('  ', ' ')
+        return text
+
+    def getMoreInfo(self, url):
+        description = ''
+        instructors = 'instructors:'
+        link = ''
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        div_timetable = soup.find('div', id='timetable')
+        div_dec = soup.find('div', id='descr')
+        
+        for a in soup.find_all('a'):
+            if a.attrs.has_key("href") and a['href'].startswith('/course-offerings/dirinfo.xml'):
+                instructors += self.formatInstructors(a.text) + ' '
+            if a.text.startswith('http://www'):
+                link = a.text
+        if link == '':
+            link = url
+        description = instructors + 'description:' + div_dec.text.replace('\n', '').strip()
+        return link, description
 
     def processData(self, f, subject_code, subject, term):
         url = "http://registrar.princeton.edu/course-offerings/search_results.xml?term=" + term + "&subject=" + subject_code
@@ -26,6 +52,7 @@ class PrincetonSpider(Spider):
             i = 0
             course_num = ""
             course_title = ""
+            description = ''
             link = ""
             for td in tr.children:
                 if str(td).strip() != "":
@@ -33,14 +60,19 @@ class PrincetonSpider(Spider):
                     if i == 2 and td.a.text.find(subject_code) != -1:
                         link = "http://registrar.princeton.edu/course-offerings/" + td.a["href"]
                         course_num = td.a.text.replace("\n", "").strip().replace("  ", "")
-                        course_num = course_num[course_num.find(subject_code) : course_num.find(" ", course_num.find(subject_code))]
+                        if course_num.find(" ", course_num.find(subject_code)) != -1:
+                            course_num = course_num[course_num.find(subject_code) : course_num.find(" ", course_num.find(subject_code))]
+                        else:
+                            course_num = course_num[course_num.find(subject_code) : ]
+                        if self.deep_mind:
+                            link, description = self.getMoreInfo(link)
                     elif i == 3 and course_num != "":
                         if self.isInCourseNumList(course_num) == True:
                             continue
 
                         course_title = str(td)[str(td).find(">") + 1 : str(td).find("<", + 2)].strip().replace("&amp;", "")
                         print course_num + " " + course_title
-                        self.write_db(f, course_num, course_title, link)
+                        self.write_db(f, course_num, course_title, link, description)
                         self.count += 1
                     elif i >= 4:
                         course_num = ""
