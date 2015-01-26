@@ -171,7 +171,7 @@ class Utils:
                            if item.lower().find(engin.lower()) != -1:
                                urls.append(item + title)
                     else:
-                        urls.append(record.get_url().strip().lower())
+                        urls.append(record.get_url().strip())
 
             f.close()
 
