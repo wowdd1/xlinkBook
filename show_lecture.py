@@ -7,20 +7,24 @@ import requests
 import json
 from bs4 import BeautifulSoup;
 import prettytable
+import webbrowser
 
-keyword = ''
+course = ''
+lecture = ''
 cell_width = 80
 
 def usage(argv0):
     print ' usage:'
     print '-h,--help: print help message.'
+    print '-c,--course: the course.'
+    print '-l,--lecture: the lecture id of the course.'
     print '-w, --width: the max width of table cell'
 
-def printTable(keyword):
-    if keyword == '':
+def printCourseTable(course):
+    if course == '':
         return
     utils = Utils()
-    url = utils.getUrl(keyword)
+    url = utils.getUrl(course)
     if url == '':
         return
     if url.find('ocw.mit.edu') != -1:
@@ -48,15 +52,34 @@ def printTable(keyword):
         #parser.tables[0].reversesort = True
         print parser.tables[0]
     else:
-        print 'not suport ' + keyword
+        print 'not suport ' + course
         return
 
+def showLecture(course, lecture):
+    utils = Utils()
+    url = utils.getUrl(course)
+    if url == '':
+        return
+    if url.find('itunes.apple.com') != -1:
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        for tr in soup.find_all('tr', attrs={"kind": "movie"}):
+            if tr.td != None and tr.td.text.strip() == lecture:
+                pos = tr.prettify().find('https://itunes.apple.com')
+                start = tr.prettify().find('i=', pos) + 2
+                end = tr.prettify().find('&', pos)
+                print 'open ' + tr.prettify()[pos : end]
+                webbrowser.open('https://itunes.apple.com/WebObjects/DZR.woa/wa/downloadTrack/ext.mp4?id=' + tr.prettify()[start : end].strip() + '&pv=1')
+                return
+        print 'not found'
+        
+
 def main(argv):
-    global keyword, cell_width
+    global course, lecture, cell_width
     try:
-        opts, args = getopt.getopt(argv[1:], 'hc:w:', ["help","course", "width"])
+        opts, args = getopt.getopt(argv[1:], 'hc:l:w:', ["help","course", "lecture", "width"])
         if len(args) == 1:
-            keyword = args[0]
+            course = args[0]
     except getopt.GetoptError, err:
         print str(err)
         usage(argv[0])
@@ -65,12 +88,16 @@ def main(argv):
         if o in ('-h', '--help'):
             usage(argv[0])
         elif o in ('-c', '--course'):
-            keyword = a
+            course = str(a)
+        elif o in ('-l', '--lecture'):
+            lecture = str(a)            
         elif o in ('-w', '--width'):
             cell_width = int(a)
 
-    
-    printTable(keyword)
+    if course != '' and lecture != '':
+        showLecture(course, lecture)
+    else: 
+        printCourseTable(course)
 
 if __name__ == '__main__':
     main(sys.argv)

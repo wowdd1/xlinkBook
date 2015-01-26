@@ -161,6 +161,8 @@ ex:
 
     ./show_lecture.py -c 6.S096
 
+    ./show_lecture.py -c 585700718 -l 1  (-l option only suport itunes course)
+
 the output looks like this:
 
     +------+----------------------------------------------------------------------------+-------------------------------------------------------+
