@@ -155,13 +155,19 @@ ex:
 
 browse course lecture at local(only suport ocw itunes course now):
 
-    run ./show_lecture.py -c "course number" or ./show_lecture.py "course number"
+    run ./show_lecture.py -c "course number" or ./show_lecture.py "course number"  
+
+for coursera, please use:
+  
+ ./coursera.py -u 'username' -p 'password' coursename
 
 ex:
 
     ./show_lecture.py -c 6.S096
 
     ./show_lecture.py -c 585700718 -l 1  (-l option only suport itunes course)
+   
+    ./coursera.py -u 'username' -p 'password' algo-007
 
 the output looks like this:
 
