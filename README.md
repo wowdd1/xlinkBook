@@ -182,8 +182,9 @@ the output looks like this:
 
 find the instructor:
 
-    ./find_instructor "faculty name"
+    ./find_instructor "faculty name" or  ./find_instructor.py -n 'name' -u 'school'
 
 ex:
     
     ./find_instructor "Andrew Ng"
+    ./find_instructor.py -n 'Nicholas Bambos' -u 'stanford'

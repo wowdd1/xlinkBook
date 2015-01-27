@@ -7,7 +7,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-keyword = ''
 
 faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
                 'http://cs.stanford.edu/faculty',
@@ -20,6 +19,8 @@ faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
 def usage(argv0):
     print ' usage:'
     print '-h,--help: print help message.'
+    print '-n,--name: the faculty name'
+    print '-u,--university: the university name'
 
 def getMitFacultyUrl(url):
     r = requests.get(url)
@@ -53,6 +54,21 @@ def getPrincetonFacultyUrl(base_url, href):
             return a['href']
     return base_url + href
 
+def getStanfordFacultyUrl(keyword):
+    post_data = {'search':keyword,\
+                 'filters':"open",\
+                 'affilfilter':"stanford:faculty*",\
+                 'btnG':"Search"}
+    r = requests.post('https://stanfordwho.stanford.edu/SWApp/Search.do', post_data)
+    soup = BeautifulSoup(r.text)
+    for dd in soup.find_all('dd', class_='public'):
+        if dd.a != None and dd.a.text.strip().startswith('http'):
+            print 'found ' + dd.a['href']
+            return dd.a['href']
+    return ''
+    
+    
+
 def match(text, keyword):
     if text.lower().strip() == keyword.lower().strip():
         print text + ' match ' + keyword
@@ -64,7 +80,7 @@ def match(text, keyword):
 
     return False
 
-def search(keyword):
+def searchList(keyword):
     for url in faculty_list:
         print 'searching ' + url
         r = requests.get(url)
@@ -87,19 +103,27 @@ def search(keyword):
                     webbrowser.open(link)
                     return
 
-    cmu_url = getCmuFacultyUrl(keyword)
-    if cmu_url != '':
-        webbrowser.open(cmu_url)
-        return
     print 'not found'
 
+def search(keyword, school):
+    if school.lower() == 'stanford':
+        stanford_url = getStanfordFacultyUrl(keyword)
+        if stanford_url != '':
+            webbrowser.open(stanford_url)
+            return
+    elif school.lower() == 'cmu':
+        cmu_url = getCmuFacultyUrl(keyword)
+        if cmu_url != '':
+            webbrowser.open(cmu_url)
+            return
 
-
+    print 'not found'
 
 def main(argv):
-    global keyword
+    keyword = ''
+    school = ''
     try:
-        opts, args = getopt.getopt(argv[1:], 'h', ["help"])
+        opts, args = getopt.getopt(argv[1:], 'hn:u:', ["help", "name", "university"])
         if len(args) == 1:
             keyword = args[0]
     except getopt.GetoptError, err:
@@ -109,8 +133,15 @@ def main(argv):
     for o, a in opts:
         if o in ('-h', '--help'):
             usage(argv[0])
-    if keyword != '':
-        search(keyword)
+        if o in ('-n', '--name'):
+            keyword = a    
+        if o in ('-u', '--university'):
+            school = a
+
+    if keyword != '' and school != '':
+        search(keyword, school)
+    elif keyword != '':
+        searchList(keyword)
 
 if __name__ == '__main__':
     main(sys.argv)
