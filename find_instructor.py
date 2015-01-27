@@ -10,8 +10,7 @@ import json
 
 faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
                 'http://cs.stanford.edu/faculty',
-                'http://www.eecs.berkeley.edu/Faculty/Lists/EE/list.shtml',\
-                'http://www.eecs.berkeley.edu/Faculty/Lists/CS/list.shtml',\
+                'http://www.eecs.berkeley.edu/Faculty/Lists/list.shtml',\
                 'http://www.seas.harvard.edu/electrical-engineering/people',\
                 'http://www.seas.harvard.edu/computer-science/people',\
                 'https://www.cs.princeton.edu/people/faculty',\
