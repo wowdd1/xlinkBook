@@ -57,7 +57,44 @@ class TableHandler(HTMLParser):
 
 
 class BerkeleySpider(Spider):
-    
+    video_lecture_list = {\
+        'CS10' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iAq0HYSJAcbgbjjSIafuHJF',\
+        'CS149' : 'https://www.youtube.com/playlist?list=PL62BE418C34C3B2BD',\
+        'CS162' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iD9V_LiNxDf_itUWO5BMl_6',\
+        'CS164' : 'https://www.youtube.com/playlist?list=PL3A16CFC42CA6EF4F',\
+        'CS169' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iAS_kCeleydK6mDc0kCbdhU',\
+        'CS170' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iBapEvcNwRuTJVt6BPpcMaJ',\
+        'CS184' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iBifi0GQVF1R9M_QBWw3xgG',\
+        'CS188' : 'https://www.youtube.com/playlist?list=PLF1A9D9034225FC92',\
+        'CS194' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iB_5Q8G8kW5idSwNmXypmQE',\
+        'CS61A' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iC9x0nmh5OZyxljQU6pUWWk',\
+        'CS61B' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd',\
+        'CS61C' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iDHtKXLFJbDG-i6L9oDr5X9',\
+        'CS61CL' : 'https://itunes.apple.com/us/podcast/computer-science-61cl-001/id354819035?mt=2&ign-mpt=uo%3D4',\
+        'CS70' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iDze6fOp3qofgyjJVUioedA',\
+        'CS98' : 'https://itunes.apple.com/us/podcast/computer-science-98-198-032/id913301637?mt=2&uo=4',\
+        'CSC149' : 'https://www.youtube.com/playlist?list=PL62BE418C34C3B2BD',\
+        'EE40' : 'https://www.youtube.com/playlist?list=PL627AE6688C09001E',\
+        'EE100' : 'https://www.youtube.com/playlist?list=PL62BE418C34C3B2BD',\
+        'EE105' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iApSM93gWkcSauu8gRoH7It',\
+        'EE119' : 'https://itunes.apple.com/us/podcast/electrical-engineering-119/id354821527?mt=2&ign-mpt=uo%3D4',\
+        'EE130' : 'https://itunes.apple.com/us/podcast/electrical-engineering-130/id557805531?mt=2&ign-mpt=uo%3D4',\
+        'EE127' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iDuLMumekQlMWrPDm08V0co',\
+        'EE130' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iDy-rACIy-kh40XJJDp3Y0X',\
+        'EE140' : 'https://www.youtube.com/playlist?list=PL-XXv-cvA_iD7dvgmsm7lQTxvjbjBNh4I',\
+        'EE141' : 'https://www.youtube.com/playlist?list=PLD4C75518947B4347',\
+        'EE149' : 'https://www.youtube.com/playlist?list=PL62BE418C34C3B2BD',\
+        'EE20N' : 'https://itunes.apple.com/us/podcast/electrical-engineering-20n/id354821504?mt=2&ign-mpt=uo%3D4',\
+        'EE227A' : 'https://itunes.apple.com/us/podcast/electrical-engineering-227a/id498403557?mt=2&ign-mpt=uo%3D4',\
+        'EE240' : 'https://www.youtube.com/playlist?list=PLFB77B9910B9FD20E',\
+        'EE241' : 'https://itunes.apple.com/us/podcast/electrical-engineering-241/id354820903?mt=2&ign-mpt=uo%3D4',\
+        'EE247' : 'https://itunes.apple.com/us/podcast/electrical-engineering-247/id354821202?mt=2&ign-mpt=uo%3D4',\
+        'EE290C' : 'https://itunes.apple.com/us/podcast/electrical-engineering-290c/id438303607?mt=2&ign-mpt=uo%3D4',\
+        'EE290F' : 'https://www.youtube.com/playlist?list=PL04A2692F8E5B9D2B',\
+        'EE40' : 'https://itunes.apple.com/us/podcast/electrical-engineering-40/id391534824?mt=2&ign-mpt=uo%3D4',\
+        'EEC245' : 'https://www.youtube.com/playlist?list=PL8A24132C07C45F61',\
+        'EEW290C' : 'https://www.youtube.com/playlist?list=PL81E2F15D026EEA81'\
+    }   
 
     def __init__(self):
         Spider.__init__(self)
@@ -155,7 +192,10 @@ class BerkeleySpider(Spider):
             self.count = self.count + 1
             if self.deep_mind:
                 url = self.getRealUrl(url)
-            self.write_db(f, row[0:row.find(" ")], row[row.find(" "):], url)
+            description = ''
+            if self.video_lecture_list.get(row[0:row.find(" ")] , '') != '':
+                description = 'features:Video lectures' + ' '
+            self.write_db(f, row[0:row.find(" ")], row[row.find(" "):], url, description)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
