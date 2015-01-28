@@ -6,6 +6,7 @@
     
 from spider import *
 from update_stanford import StanfordSpider
+from update_stanford_online import StanfordOnlineSpider
 sys.path.append("..")
 from record import CourseRecord
 
@@ -17,8 +18,11 @@ class StanfordCSSpider(Spider):
         self.school = "stanford"
         self.subject = "eecs"
         stanfordSpider = StanfordSpider()
+        stanfordOnlineSpider = StanfordOnlineSpider()
+
         self.video_lecture_list = stanfordSpider.getVideoLectureList()
         self.description_dict = stanfordSpider.getDescriptionDict('Computer Science')
+        self.course_name_dict = stanfordOnlineSpider.getCourseNameDict()
     
     def isInCourseNumList(self, course_num):
         for item in self.course_num_list:
@@ -26,7 +30,12 @@ class StanfordCSSpider(Spider):
                 return True
         self.course_num_list.append(course_num)
         return False
-    
+   
+    def formatCourseTitle(self, title):
+        if title.find('(') != -1:
+            title = title[0 : title.find('(')]
+        return title.strip()
+ 
     def processStanfordDate(self, f, url):
         print 'processing ' + url
         r = requests.get(url)
@@ -56,7 +65,7 @@ class StanfordCSSpider(Spider):
             course_id = th_set[index].string.upper()
             description = ''
             description += 'instructors:' + td_set_2[index] + ' '
-            if self.video_lecture_list.get(course_id, '') != '':
+            if self.video_lecture_list.get(course_id, '') != '' or self.course_name_dict.get(self.formatCourseTitle(td_set[index]), '') != '':
                 description += 'features:Video lectures' + ' '
             if self.description_dict.get(course_id, '') != '':
                 description += 'description:' + self.description_dict[course_id] + ' '

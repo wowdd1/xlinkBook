@@ -5,6 +5,7 @@
 #data: 2015.01.03
 
 from spider import *
+from update_stanford_online import StanfordOnlineSpider
 sys.path.append("..")
 from record import CourseRecord
 
@@ -16,7 +17,7 @@ class StanfordSpider(Spider):
         'CS101' : 'https://class.coursera.org/cs101-selfservice',\
         'CS106A' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-866adcae1111',\
         'CS106B' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=11f4f422-5670-4b4c-889c-008262e09e4e',\
-        'CS107' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=2d712634-2bf1-4b55-9a3a-ca9d470755ee',\
+        #'CS107' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=2d712634-2bf1-4b55-9a3a-ca9d470755ee',\
         'CS143' : 'https://class.coursera.org/compilers-2012-002',\
         'CS145' : 'https://class.coursera.org/db',\
         'CS147' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=HCI',\
@@ -37,6 +38,7 @@ class StanfordSpider(Spider):
         'CS334A' : 'https://www.youtube.com/playlist?list=PL3940DD956CDF0622',\
         'CS545' : 'https://mvideos.stanford.edu/graduate#/SeminarDetail/Winter/2015/CS/545',\
         'CS547' : 'http://scpd.stanford.edu/free-learning/webinars/human-computer-interaction-seminar-series-2013/stanford-seminar-jure-leskovec',\
+        'CS55N' : 'https://www.coursera.org/course/security',\
         'EE184' : 'http://www.youtube.com/playlist?list=PL9D558D49CA734A02',\
         'EE203' : 'https://mvideos.stanford.edu/graduate#/SeminarDetail/Winter/2015/EE/203',\
         'EE261' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=84d174c2-d74f-493d-92ae-c3f45c0ee091',\
@@ -52,6 +54,8 @@ class StanfordSpider(Spider):
         self.school = "stanford"
         self.subject = "eecs"
         self.deep_mind = True
+        stanfordOnlineSpider = StanfordOnlineSpider()
+        self.course_name_dict = stanfordOnlineSpider.getCourseNameDict()
 
     def getRealUrl(self, course_num):
         test_url = 'http://' + course_num + '.stanford.edu'
@@ -75,6 +79,11 @@ class StanfordSpider(Spider):
 
     def getVideoLectureList(self):
         return self.video_lecture_list
+
+    def formatCourseTitle(self, title):
+        if title.find('(') != -1:
+            title = title[0 : title.find('(')]
+        return title.strip()
 
     def processData(self, subject, url):
         if self.need_update_subject(subject) == False:
@@ -124,7 +133,7 @@ class StanfordSpider(Spider):
                 url = 'http://' + course_num_list[i] + '.stanford.edu'
                 if self.deep_mind:
                     url = self.getRealUrl(course_num_list[i])
-            if self.video_lecture_list.get(course_num_list[i], '') != '':
+            if self.video_lecture_list.get(course_num_list[i], '') != '' or self.course_name_dict.get(self.formatCourseTitle(course_name_list[i]), '') != '':
                 description +='features:Video lectures' + ' ' 
             description += 'description:' + course_description_list[i] + ' '
 
