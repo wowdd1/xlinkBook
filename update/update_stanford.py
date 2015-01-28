@@ -10,7 +10,7 @@ sys.path.append("..")
 from record import CourseRecord
 
 class StanfordSpider(Spider):
-    include_unoffered_courses = False
+    include_unoffered_courses = True
     
     video_lecture_list = {\
         'CS1U' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=PracticalUnix',\
