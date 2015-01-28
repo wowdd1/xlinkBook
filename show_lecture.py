@@ -60,7 +60,7 @@ def getMediaUrl(url):
     #print r.text
     media_url = r.text[r.text.find('>http') + 1 : r.text.find('</', r.text.find('>http'))]
     print 'the media url is:' 
-    print '    ' + media_url
+    print media_url
     return media_url
 
 def showLecture(course, lecture):
