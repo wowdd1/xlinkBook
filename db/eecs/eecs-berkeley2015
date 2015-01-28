@@ -1,6 +1,6 @@
 CS10 |  The Beauty and Joy of Computing  | http://www-inst.eecs.berkeley.edu/~cs10/fa14 | features:Video lectures 
 CS123 |  ISG Test Class  | http://www-inst.eecs.berkeley.edu/~cs123/sp14 | 
-CS149 |  Introduction to Embedded Systems  | http://www-inst.eecs.berkeley.edu/~cs149/fa13 | features:Video lectures 
+CS149 |  Introduction to Embedded Systems  | http://www-inst.eecs.berkeley.edu/~cs149/fa13 | 
 CS150 |  Components and Design Techniques for Digital System...  | http://www-inst.eecs.berkeley.edu/~cs150/fa13 | 
 CS152 |  Computer Architecture and Engineering  | http://www-inst.eecs.berkeley.edu/~cs152/sp14 | 
 CS160 |  User Interface Design and Development  | http://www-inst.eecs.berkeley.edu/~cs160/sp14 | 
@@ -15,11 +15,11 @@ CS174 |  Combinatorics and Discrete Probability  | http://www-inst.eecs.berkeley
 CS176 |  Algorithms for Computational Biology  | http://www-inst.eecs.berkeley.edu/~cs176/fa14 | 
 CS182 |  Neural Basis of Thought and Language  | http://www-inst.eecs.berkeley.edu/~cs182/sp08 | 
 CS184 |  Foundations of Computer Graphics  | http://www-inst.eecs.berkeley.edu/~cs184/fa14 | features:Video lectures 
-CS186 |  Introduction to Database Systems  | http://www-inst.eecs.berkeley.edu/~cs186/sp14 | 
+CS186 |  Introduction to Database Systems  | http://www-inst.eecs.berkeley.edu/~cs186/sp14 | features:Video lectures 
 CS188 |  Introduction to Artificial Intelligence  | http://www-inst.eecs.berkeley.edu/~cs188/fa14 | features:Video lectures 
 CS191 |  Quantum Information Science and Technology  | http://www-inst.eecs.berkeley.edu/~cs191/fa14 | 
 CS194 |  CS 194 Seminar Home Pages  | http://www-inst.eecs.berkeley.edu/~cs194/archives.html | features:Video lectures 
-CS195 |  Social Implications of Computer Technology  | http://www-inst.eecs.berkeley.edu/~cs195/fa13 | 
+CS195 |  Social Implications of Computer Technology  | http://www-inst.eecs.berkeley.edu/~cs195/fa13 | features:Video lectures 
 CS198 |  CS98/198 Directed Group Studies for Advanced Undergraduates  | http://www-inst.eecs.berkeley.edu/~cs198/archives.html | 
 CS199 |  Independent Study  | http://www-inst.eecs.berkeley.edu/~cs199/archives.html | 
 CS234 |  unknown  | http://www-inst.eecs.berkeley.edu/~cs234/archives.html | 
@@ -53,7 +53,7 @@ CS286B |  Implementation of Data Base Systems  | http://www-inst.eecs.berkeley.e
 CS287 |  Advanced Robotics  | http://www-inst.eecs.berkeley.edu/~cs287/fa13 | 
 CS288 |  Natural Language Processing  | http://www-inst.eecs.berkeley.edu/~cs288/sp11 | 
 CS289 |  Knowledge Representation and Reasoning  | http://www-inst.eecs.berkeley.edu/~cs289/fa01 | 
-CS294 |  CS 294 Seminar Home Pages  | http://www-inst.eecs.berkeley.edu/~cs294/archives.html | 
+CS294 |  CS 294 Seminar Home Pages  | http://www-inst.eecs.berkeley.edu/~cs294/archives.html | features:Video lectures 
 CS297 |  Field Studies in Computer Science  | http://www-inst.eecs.berkeley.edu/~cs297/fa13 | 
 CS298 |  CS 298 Seminar Home Pages  | http://www-inst.eecs.berkeley.edu/~cs298/archives.html | 
 CS299 |  Individual Research  | http://www-inst.eecs.berkeley.edu/~cs299/archives.html | 
@@ -81,7 +81,7 @@ CS61C |  Machine Structures  | http://www-inst.eecs.berkeley.edu/~cs61c/fa14 | f
 CS61CL |  Machine Structures (UCWise section)  | http://www-inst.eecs.berkeley.edu/~cs61cl/fa09 | features:Video lectures 
 CS70 |  Discrete Mathematics and Probability Theory  | http://www-inst.eecs.berkeley.edu/~cs70/sp15 | features:Video lectures 
 CS84 |  Interactive Choreography in 3D Tele-Immersive Spaces  | http://www-inst.eecs.berkeley.edu/~cs84/fa07 | 
-CS98 |  CS98/198 Directed Group Studies for Advanced Undergraduates  | http://www-inst.eecs.berkeley.edu/~cs98/archives.html | features:Video lectures 
+CS98 |  CS98/198 Directed Group Studies for Advanced Undergraduates  | http://www-inst.eecs.berkeley.edu/~cs98/archives.html | 
 CS9A |  Matlab for Programmers  | http://www-inst.eecs.berkeley.edu/~cs9a/archives.html | 
 CS9B |  Pascal for Programmers (Self Paced)  | http://www-inst.eecs.berkeley.edu/~cs9b/archives.html | 
 CS9C |  C for Programmers  | http://www-inst.eecs.berkeley.edu/~cs9c/archives.html | 
@@ -129,7 +129,7 @@ EE118 |  Introduction to Optical Engineering  | http://www-inst.eecs.berkeley.ed
 EE119 |  Introduction to Optical Engineering  | http://www-inst.eecs.berkeley.edu/~ee119/fa12 | features:Video lectures 
 EE121 |  Introduction to Digital Communication Systems  | http://www-inst.eecs.berkeley.edu/~ee121/fa13 | 
 EE122 |  Introduction to Communication Networks  | http://www-inst.eecs.berkeley.edu/~ee122/sp14 | 
-EE123 |  Digital Signal Processing  | http://www-inst.eecs.berkeley.edu/~ee123/sp14 | 
+EE123 |  Digital Signal Processing  | http://www-inst.eecs.berkeley.edu/~ee123/sp15 | features:Video lectures 
 EE125 |  Introduction to Robotics  | http://www-inst.eecs.berkeley.edu/~ee125/fa13 | 
 EE126 |  Probability and Random Processes  | http://www-inst.eecs.berkeley.edu/~ee126/sp14 | 
 EE128 |  Feedback Control Systems  | http://www-inst.eecs.berkeley.edu/~ee128/sp15 | 
@@ -140,20 +140,20 @@ EE137A |  Introduction to Electric Power Systems  | http://www-inst.eecs.berkele
 EE140 |  Linear Integrated Circuits  | http://www-inst.eecs.berkeley.edu/~ee140/fa14 | features:Video lectures 
 EE141 |  Introduction to Digital Integrated Circuits  | http://www-inst.eecs.berkeley.edu/~ee141/fa14 | features:Video lectures 
 EE142 |  Integrated Circuits for Communications  | http://www-inst.eecs.berkeley.edu/~ee142/fa13 | 
-EE143 |  Microfabrication Technology  | http://www-inst.eecs.berkeley.edu/~ee143/fa14 | 
+EE143 |  Microfabrication Technology  | http://www-inst.eecs.berkeley.edu/~ee143/fa14 | features:Video lectures 
 EE144 |  Fundamental Algorithms for Systems Modeling, Analys...  | http://www-inst.eecs.berkeley.edu/~ee144/fa13 | 
 EE145A |  (renamed to EE145L)  | http://www-inst.eecs.berkeley.edu/~ee145a/archives.html | 
 EE145B |  Medical Imaging Signals and Systems  | http://www-inst.eecs.berkeley.edu/~ee145b/fa13 | 
 EE145L |  Introductory Electronic Transducers Laboratory  | http://www-inst.eecs.berkeley.edu/~ee145l/fa13 | 
 EE145M |  Intro Microcomputer Interfacing Lab  | http://www-inst.eecs.berkeley.edu/~ee145m/sp11 | 
 EE147 |  Introduction to Microelectromechanical Systems  | http://www-inst.eecs.berkeley.edu/~ee147/fa13 | 
-EE149 |  Introduction to Embedded Systems  | http://www-inst.eecs.berkeley.edu/~ee149/fa13 | features:Video lectures 
+EE149 |  Introduction to Embedded Systems  | http://www-inst.eecs.berkeley.edu/~ee149/fa13 | 
 EE192 |  Mechatronics  | http://www-inst.eecs.berkeley.edu/~ee192/sp15 | 
 EE194 |  EE 194 Seminar Home Pages  | http://www-inst.eecs.berkeley.edu/~ee194/archives.html | 
 EE197 |  Field Study  | http://www-inst.eecs.berkeley.edu/~ee197/archives.html | 
 EE198 |  EE 198 Seminar Home Pages  | http://www-inst.eecs.berkeley.edu/~ee198/archives.html | 
 EE199 |  Supervised Independent Study  | http://www-inst.eecs.berkeley.edu/~ee199/fa13 | 
-EE20 |  Structure and Interpretation of Systems and Signals  | http://www-inst.eecs.berkeley.edu/~ee20/fa13 | 
+EE20 |  Structure and Interpretation of Systems and Signals  | http://www-inst.eecs.berkeley.edu/~ee20/fa14 | 
 EE201 |  Strategic Computing and Communications Technology  | http://www-inst.eecs.berkeley.edu/~ee201/fa04 | 
 EE210 |  Applied Electromagnetic Theory  | http://www-inst.eecs.berkeley.edu/~ee210/sp11 | 
 EE210B |  Applied Electromagnetic Theory  | http://www-inst.eecs.berkeley.edu/~ee210b/archives.html | 
@@ -179,8 +179,8 @@ EE225C |  VLSI Signal Processing  | http://www-inst.eecs.berkeley.edu/~ee225c/sp
 EE225D |  Audio Signal Processing  | http://www-inst.eecs.berkeley.edu/~ee225d/sp07 | 
 EE226 |  unknown  | http://www-inst.eecs.berkeley.edu/~ee226/archives.html | 
 EE226A |  Random Processes in Systems  | http://www-inst.eecs.berkeley.edu/~ee226a/fa13 | 
-EE227A |  Introduction to Convex Optimization  | http://www-inst.eecs.berkeley.edu/~ee227a/fa13 | features:Video lectures 
-EE227BT |  Convex Optimization  | http://www-inst.eecs.berkeley.edu/~ee227bt/archives.html | 
+EE227A |  Introduction to Convex Optimization  | http://www-inst.eecs.berkeley.edu/~ee227a/fa13 | 
+EE227BT |  Convex Optimization  | http://www-inst.eecs.berkeley.edu/~ee227bt/archives.html | features:Video lectures 
 EE228A |  High Speed Communications Networks  | http://www-inst.eecs.berkeley.edu/~ee228a/sp14 | 
 EE229 |  Information Theory and Coding  | http://www-inst.eecs.berkeley.edu/~ee229/sp06 | 
 EE229A |  Information Theory and Coding  | http://www-inst.eecs.berkeley.edu/~ee229a/archives.html | 
@@ -216,7 +216,7 @@ EE290B |  Advanced Topics in Solid State Devices  | http://www-inst.eecs.berkele
 EE290C |  Advanced Topics in Circuit Design  | http://www-inst.eecs.berkeley.edu/~ee290c/fa14 | features:Video lectures 
 EE290D |  Advanced Topics in Semiconductor Technology  | http://www-inst.eecs.berkeley.edu/~ee290d/fa13 | 
 EE290E |  Advanced Topics in Electromagnetics and Plasmas  | http://www-inst.eecs.berkeley.edu/~ee290e/sp08 | 
-EE290F |  Advanced Topics  | http://www-inst.eecs.berkeley.edu/~ee290f/fa14 | features:Video lectures 
+EE290F |  Advanced Topics  | http://www-inst.eecs.berkeley.edu/~ee290f/fa14 | 
 EE290G |  (renamed to EE245)  | http://www-inst.eecs.berkeley.edu/~ee290g/archives.html | 
 EE290H |  Semiconductor Manufacturing  | http://www-inst.eecs.berkeley.edu/~ee290h/fa05 | 
 EE290I |  Advanced Topics in Wireless Communication  | http://www-inst.eecs.berkeley.edu/~ee290i/sp97 | 
@@ -238,7 +238,7 @@ EE299 |  Individual Research  | http://www-inst.eecs.berkeley.edu/~ee299/archive
 EE301 |  Teaching Techniques for Electrical Engineering  | http://www-inst.eecs.berkeley.edu/~ee301/fa13 | 
 EE375 |  Also: SUBRAMANIAN, V  | http://www-inst.eecs.berkeley.edu/~ee375/archives.html | 
 EE40 |  Introduction to Microelectronic Circuits  | http://www-inst.eecs.berkeley.edu/~ee40/fa14 | features:Video lectures 
-EE42 |  Introduction to Digital Electronics  | http://www-inst.eecs.berkeley.edu/~ee42/fa13 | 
+EE42 |  Introduction to Digital Electronics  | http://www-inst.eecs.berkeley.edu/~ee42/fa13 | features:Video lectures 
 EE43 |  Introductory Electronics Lab  | http://www-inst.eecs.berkeley.edu/~ee43/fa13 | 
 EE84 |  Hands-on Ham Radio  | http://www-inst.eecs.berkeley.edu/~ee84/archives.html | 
 EE97 |  Field Study  | http://www-inst.eecs.berkeley.edu/~ee97/archives.html | 
@@ -265,4 +265,4 @@ EEW242 |  Advanced Integrated Circuits for Communications (MAS-IC)  | http://www
 EEW244 |  Fundamental Algorithms for System Modeling, Analysis, and Optimization (MAS-IC)  | http://www-inst.eecs.berkeley.edu/~eew244/sp13 | 
 EEW245 |  Introduction to MEMS Design (MAS-IC)  | http://www-inst.eecs.berkeley.edu/~eew245/sp13 | 
 EEW247 |  Analysis and Design of VLSI Analog-Digital Interface Integrated Circuits (MAS-IC)  | http://www-inst.eecs.berkeley.edu/~eew247/sp13 | 
-EEW290C |  Advanced Topics in Circuit Design (MAS-IC)  | http://www-inst.eecs.berkeley.edu/~eew290c/sp13 | features:Video lectures 
+EEW290C |  Advanced Topics in Circuit Design (MAS-IC)  | http://www-inst.eecs.berkeley.edu/~eew290c/sp13 | 
