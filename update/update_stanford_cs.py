@@ -58,7 +58,7 @@ class StanfordCSSpider(Spider):
         for index in range(0,len(th_set)):
             link = th_set[index].prettify()
             link = link[link.find("http"):link.find("EDU") + 3]
-            if self.isInCourseNumList(th_set[index].string) == True:
+            if self.isInCourseNumList(th_set[index].string):
                 continue
             course_id = th_set[index].string.upper()
             description = ''

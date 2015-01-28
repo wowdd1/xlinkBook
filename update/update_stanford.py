@@ -8,6 +8,7 @@ from spider import *
 from update_stanford_online import StanfordOnlineSpider
 sys.path.append("..")
 from record import CourseRecord
+import time
 
 class StanfordSpider(Spider):
     include_unoffered_courses = True
@@ -54,6 +55,7 @@ class StanfordSpider(Spider):
         self.school = "stanford"
         self.subject = "eecs"
         self.deep_mind = True
+        self.course_dict = {}
         stanfordOnlineSpider = StanfordOnlineSpider()
         self.course_name_dict = stanfordOnlineSpider.getCourseNameDict()
 
@@ -85,9 +87,14 @@ class StanfordSpider(Spider):
             title = title[0 : title.find('(')]
         return title.strip()
 
-    def processData(self, subject, url):
-        if self.need_update_subject(subject) == False:
-            return
+    def isCourseProcessed(self, course_num):
+        if self.course_dict.get(course_num, '') != '':
+            return True
+        else:
+            self.course_dict[course_num] = 'record'
+            return False
+
+    def processData(self, f, subject, url):
         print "processing " + subject + " " + url
 
         from update_stanford_cs import StanfordCSSpider
@@ -98,11 +105,6 @@ class StanfordSpider(Spider):
         course_name_list = []
         course_description_list = []
         course_instructors_list = []
-
-        file_name = self.get_file_name(subject, self.school)
-        file_lines = self.countFileLineNum(file_name)
-        f = self.open_db(file_name + ".tmp")
-        self.count = 0
 
         for span in soup.find_all("span", attrs={"class": "courseNumber"}):
             course_num_list.append(span.text[0:len(span.text) - 1].replace(' ', ''))
@@ -121,8 +123,12 @@ class StanfordSpider(Spider):
                     i -= 1
                     continue
                 course_instructors_list.append(div.text.strip().replace('\n', '').replace('Instructors: ;', '').strip())
-
+        if len(course_num_list) - len(course_instructors_list) == 1:
+            course_instructors_list.append('')
         for i in range(0, len(course_num_list)):
+            if self.isCourseProcessed(course_num_list[i]):
+                continue
+
             print course_num_list[i] + " " + course_name_list[i]
             if subject == 'Computer Science' and self.records_dict.get(course_num_list[i], '') != '' \
                        and self.records_dict.get(course_num_list[i]).get_instructors().find('none listed') == -1:
@@ -137,33 +143,49 @@ class StanfordSpider(Spider):
                 description +='features:Video lectures' + ' ' 
             description += 'description:' + course_description_list[i] + ' '
 
-            self.write_db(f, course_num_list[i], course_name_list[i], url, description)
-            self.count += 1
+            self.course_dict[course_num_list[i]] = CourseRecord(self.get_storage_format(course_num_list[i], course_name_list[i], url, description))
 
-        self.close_db(f)
-        if file_lines != self.count and self.count > 0:
-            self.do_upgrade_db(file_name)
-            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
-        else:
-            self.cancel_upgrade(file_name)
-            print "no need upgrade\n"
 
     def doWork(self):
         r = requests.get("https://explorecourses.stanford.edu/browse")
         soup = BeautifulSoup(r.text);
+        year = int(time.strftime('%Y',time.localtime(time.time())))
+        year_args = ['&academicYear=' + str(year -2) + str(year -1), '&academicYear=' + str(year -1) + str(year)]
         for li in soup.find_all("li"):
             subject = ""
             if li.a.text.find("(") != -1:
                 subject = li.a.text[0: li.a.text.find("(")].strip()
             else:
                 subject = li.a.text.strip()
-            
-            url = "https://explorecourses.stanford.edu/" + str(li.a["href"]).replace("&filter-term-Winter=on", "").replace("search", "print") + "&descriptions=on"
+            if self.need_update_subject(subject) == False:
+                continue
+
+            url = "https://explorecourses.stanford.edu/" + str(li.a["href"]).replace("&filter-term-Winter=on", "").replace('&academicYear=', '').replace("search", "print") + "&descriptions=on"
             if self.include_unoffered_courses == True:
                 url += "&filter-term-Winter=off&filter-term-Autumn=off&filter-term-Summer=off&filter-term-Spring=off"
             else:
                 url += "&filter-term-Autumn=on&filter-term-Summer=on&filter-term-Spring=on&filter-term-Winter=on"
-            self.processData(subject, url)
+            
+            self.course_dict = {}
+            file_name = self.get_file_name(subject, self.school)
+            file_lines = self.countFileLineNum(file_name)
+            f = self.open_db(file_name + ".tmp")
+            self.count = 0
+
+            for year_arg in year_args:
+                self.processData(f, subject, url + year_arg)
+
+            for k, record in [(k,self.course_dict[k]) for k in sorted(self.course_dict.keys())]:
+                self.write_db(f, k, record.get_title().strip(), record.get_url().strip(), record.get_describe().strip())
+                self.count += 1 
+
+            self.close_db(f)
+            if file_lines != self.count and self.count > 0:
+                self.do_upgrade_db(file_name)
+                print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+            else:
+                self.cancel_upgrade(file_name)
+                print "no need upgrade\n"
 
 def main(argv):
     start = StanfordSpider()
