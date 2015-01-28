@@ -5,6 +5,7 @@
 #data: 2014.12.07
     
 from spider import *
+from update_stanford import StanfordSpider
 sys.path.append("..")
 from record import CourseRecord
 
@@ -15,6 +16,9 @@ class StanfordCSSpider(Spider):
         Spider.__init__(self)
         self.school = "stanford"
         self.subject = "eecs"
+        stanfordSpider = StanfordSpider()
+        self.video_lecture_list = stanfordSpider.getVideoLectureList()
+        self.description_dict = stanfordSpider.getDescriptionDict('Computer Science')
     
     def isInCourseNumList(self, course_num):
         for item in self.course_num_list:
@@ -49,7 +53,14 @@ class StanfordCSSpider(Spider):
             if self.isInCourseNumList(th_set[index].string) == True:
                 continue
             self.count += 1
-            self.write_db(f, th_set[index].string.upper(), td_set[index], link, 'instructors:' + td_set_2[index])
+            course_id = th_set[index].string.upper()
+            description = ''
+            description += 'instructors:' + td_set_2[index] + ' '
+            if self.video_lecture_list.get(course_id, '') != '':
+                description += 'features:Video lectures' + ' '
+            if self.description_dict.get(course_id, '') != '':
+                description += 'description:' + self.description_dict[course_id] + ' '
+            self.write_db(f, th_set[index].string.upper(), td_set[index], link, description)
 
     def getRecordsDict(self):
         records_dict = {}
@@ -64,7 +75,7 @@ class StanfordCSSpider(Spider):
    
     def getCsCourseLinks(self):
         links = []
-        r = requests.get('http://www-cs.stanford.edu/courses')
+        r = requests.get('http://cs.stanford.edu/courses')
         soup = BeautifulSoup(r.text)
         for a in soup.find_all('a'):
             if a.attrs.has_key('href') and a['href'].find('http://cs.stanford.edu/courses/schedules/') != -1:

@@ -5,7 +5,8 @@
 #data: 2015.01.03
 
 from spider import *
-from update_stanford_cs import StanfordCSSpider
+sys.path.append("..")
+from record import CourseRecord
 
 class StanfordSpider(Spider):
     include_unoffered_courses = False
@@ -20,6 +21,7 @@ class StanfordSpider(Spider):
         'CS145' : 'https://class.coursera.org/db',\
         'CS147' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=HCI',\
         'CS154' : 'https://class.coursera.org/automata-002',\
+        'CS157' : 'https://class.coursera.org/intrologic-005',\
         'CS161' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=IntroToAlgorithms',\
         'CS183B' : 'https://class.coursera.org/startup-001',\
         'CS193G' : 'https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=384233322#ls=1',\
@@ -50,7 +52,6 @@ class StanfordSpider(Spider):
         self.school = "stanford"
         self.subject = "eecs"
         self.deep_mind = True
-        self.records_dict = StanfordCSSpider().getRecordsDict()
 
     def getRealUrl(self, course_num):
         test_url = 'http://' + course_num + '.stanford.edu'
@@ -65,11 +66,23 @@ class StanfordSpider(Spider):
         else:
             return backup_url 
 
+    def getDescriptionDict(self, subject):
+        results = {}
+        for line in open(self.get_file_name(subject, self.school),'rU').readlines():
+            record = CourseRecord(line)
+            results[record.get_id().strip()] = record.get_description().strip()
+        return results
+
+    def getVideoLectureList(self):
+        return self.video_lecture_list
+
     def processData(self, subject, url):
         if self.need_update_subject(subject) == False:
             return
         print "processing " + subject + " " + url
 
+        from update_stanford_cs import StanfordCSSpider
+        self.records_dict = StanfordCSSpider().getRecordsDict()
         r = requests.get(url)
         soup = BeautifulSoup(r.text); 
         course_num_list = []
@@ -143,5 +156,9 @@ class StanfordSpider(Spider):
                 url += "&filter-term-Autumn=on&filter-term-Summer=on&filter-term-Spring=on&filter-term-Winter=on"
             self.processData(subject, url)
 
-start = StanfordSpider()
-start.doWork()
+def main(argv):
+    start = StanfordSpider()
+    start.doWork()
+
+if __name__ == '__main__':
+    main(sys.argv)
