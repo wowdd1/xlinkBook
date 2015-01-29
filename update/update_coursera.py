@@ -85,6 +85,8 @@ class CourseraSpider(Spider):
         jobj = json.loads(r.text)
 
         file_name = self.get_file_name(subject.strip(), self.school)
+        if file_name.find('/eecs/') != -1:
+            file_name = file_name.replace('/eecs/', '/eecs/' + self.school + '/')
         print "subject " + subject.strip() + " ----> " + file_name
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
