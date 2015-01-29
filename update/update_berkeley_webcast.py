@@ -89,7 +89,7 @@ class BerkeleyWebcastSpider(Spider):
                     if key == 'semester':
                         webcast.set_semester(value.strip())
                     elif key == 'videoId':
-                        webcast.set_videoId(value)
+                        webcast.set_videoId('https://itunes.apple.com/us/podcast/id' + value)
                     elif key == 'audioId':
                         webcast.set_audioId(value)
                     elif key == 'title':
@@ -106,7 +106,7 @@ class BerkeleyWebcastSpider(Spider):
                     elif key == 'dept':
                         webcast.set_dept(value.strip())
                     elif key == 'youTube':
-                        webcast.set_youTube(value)
+                        webcast.set_youTube('https://www.youtube.com/view_play_list?p=' + value)
                 if webcast.get_dept() == "Computer Science" or webcast.get_dept() == "Electrical Engineering":
                     webcast.set_title(webcast.get_title().replace('Computer Science ', 'CS').replace('Electrical Engineering ', 'EE'))
                     if webcast_dict.get(webcast.get_title(), '') != '':

@@ -171,7 +171,8 @@ class BerkeleySpider(Spider):
             if webcast_dict.get(key , '') != '':
                 if course_dict.get(key , '') != '' and course_dict[key].get_prereq() != None:
                     description = 'prereq:' + course_dict[key].get_prereq() + ' '
-                description = 'instructors:' + webcast_dict[key].get_lecturer() + ' features:Video lectures ' + description +  'term:' + webcast_dict[key].get_semester() \
+                description = 'instructors:' + webcast_dict[key].get_lecturer() + ' videourl:' + webcast_dict[key].get_youTube() + " " \
+                               + description +  'term:' + webcast_dict[key].get_semester() \
                                + ' description:' + webcast_dict[key].get_descr()
             elif course_dict.get(key , '') != '':
                 if course_dict[key].get_instructors() != None:

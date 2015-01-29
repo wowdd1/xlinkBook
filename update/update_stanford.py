@@ -11,7 +11,7 @@ from record import CourseRecord
 import time
 
 class StanfordSpider(Spider):
-    include_unoffered_courses = True
+    include_unoffered_courses = False
     
     video_lecture_list = {\
         'CS1U' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=PracticalUnix',\
@@ -140,7 +140,10 @@ class StanfordSpider(Spider):
                 if self.deep_mind:
                     url = self.getRealUrl(course_num_list[i])
             if self.video_lecture_list.get(course_num_list[i], '') != '' or self.course_name_dict.get(self.formatCourseTitle(course_name_list[i]), '') != '':
-                description +='features:Video lectures' + ' ' 
+                if self.course_name_dict.get(self.formatCourseTitle(course_name_list[i]), '') != '':
+                    description +='videourl:' + self.course_name_dict[self.formatCourseTitle(course_name_list[i])] + ' ' 
+                else:
+                    description +='videourl:' + self.video_lecture_list[course_num_list[i]] + ' ' 
             description += 'description:' + course_description_list[i] + ' '
 
             self.course_dict[course_num_list[i]] = CourseRecord(self.get_storage_format(course_num_list[i], course_name_list[i], url, description))
@@ -150,7 +153,8 @@ class StanfordSpider(Spider):
         r = requests.get("https://explorecourses.stanford.edu/browse")
         soup = BeautifulSoup(r.text);
         year = int(time.strftime('%Y',time.localtime(time.time())))
-        year_args = ['&academicYear=' + str(year -2) + str(year -1), '&academicYear=' + str(year -1) + str(year)]
+        #year_args = ['&academicYear=' + str(year -2) + str(year -1), '&academicYear=' + str(year -1) + str(year)]
+        year_args = ['&academicYear=' + str(year -1) + str(year)]
         for li in soup.find_all("li"):
             subject = ""
             if li.a.text.find("(") != -1:
