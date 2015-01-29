@@ -79,8 +79,10 @@ def match(text, keyword):
 
     return False
 
-def searchList(keyword):
+def searchList(keyword, school=''):
     for url in faculty_list:
+        if school != '' and url.find(school) == -1:
+            continue
         print 'searching ' + url
         r = requests.get(url)
         if r.text.lower().find(keyword.lower()) != -1:
@@ -115,8 +117,8 @@ def search(keyword, school):
         if cmu_url != '':
             webbrowser.open(cmu_url)
             return
-
-    print 'not found'
+    else:
+        searchList(keyword, school)
 
 def main(argv):
     keyword = ''
