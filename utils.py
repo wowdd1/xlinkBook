@@ -134,6 +134,12 @@ class Utils:
         print "invalided search engin: " + engin
         return False
 
+    def shortFileName(self, file_name):
+        pos = 0
+        while (file_name.find('/', pos) != -1):
+            pos = file_name.find('/', pos) + 1
+        return file_name[pos : ]
+
     def getRecord(self, keyword, use_subject='', path=default_path):
         subject = default_subject;
         if use_subject != "":
@@ -145,7 +151,7 @@ class Utils:
             for line in f.readlines():
                 record = Record(line)
                 if record.get_id().lower().strip() == keyword.lower().strip():
-                    print "found " + line.replace("|","")
+                    print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
                     return record
         print "no record found in " + subject +" db"
         return Record('')
@@ -164,7 +170,7 @@ class Utils:
             for line in f.readlines():
                 record = Record(line)
                 if record.get_id().lower().strip() == keyword.lower().strip():
-                    print "found " + line.replace("|","")
+                    print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
                     title = record.get_title().strip()
                     if engin != "" and self.validEngin(engin) == True:
                        for item in search_engin_list:
