@@ -5,6 +5,8 @@
 #data: 2014.12.07
     
 from spider import *
+sys.path.append("..")
+from record import CourseRecord
 
 class BerkeleyCatalogSpider(Spider):
     
@@ -15,39 +17,45 @@ class BerkeleyCatalogSpider(Spider):
         self.subject = "eecs"
     
     
-    def processBerkeleyData(self, f, url, prefix):
+    def processBerkeleyData(self, course_dict, url, prefix):
         if self.need_update_subject(self.subject) == False:
             return
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
         pre_line = ""
         for p in soup.find_all('p'):
-            if p.b != None and pre_line != p.b.text[0: p.b.text.find(".")]:
-                pre_line = p.b.text[0: p.b.text.find(".")]
-                course_num = prefix + p.b.text[0: p.b.text.find(".")]
-                course_name = p.b.text[p.b.text.find(".") + 1 : p.b.text.find(".", p.b.text.find(".") + 1)].strip()
-                print course_num + " " + course_name
-                self.count = self.count + 1
-                self.write_db(f, course_num, course_name, "")
+            try:
+                if p.b != None and pre_line != p.b.text[0: p.b.text.find(".")]:
+                    pre_line = p.b.text[0: p.b.text.find(".")]
+                    course_num = prefix + p.b.text[0: p.b.text.find(".")]
+                    course_name = p.b.text[p.b.text.find(".") + 1 : p.b.text.find(".", p.b.text.find(".") + 1)].strip()
+                    #print course_num + " " + course_name
+                    instructors = ''
+                    description = ''
+                    prereq = ''
+                    all_line = p.text.strip().split('\n')
+                    for i in range(0, len(all_line)):
+                        if i != 0 and len(all_line[i]) > 90 and all_line[i].startswith('Prerequisites:') == False:
+                            description = 'description:' + all_line[i] + ' '
+                        if all_line[i].startswith('Prerequisites:'):
+                            prereq = 'prereq:' + all_line[i].replace('Prerequisites:', '').replace('.','').strip() + ' '
+                        if i == len(all_line) - 1 and all_line[i].startswith('(') == False and len(all_line[i]) < 90:
+                            instructors = 'instructors:' + all_line[i] + ' '
+                    if instructors != '':
+                        description = instructors + description
+                    if prereq != '':
+                        description = prereq + description
+                    course_dict[course_num] = CourseRecord(self.get_storage_format(course_num, course_name, '', description)) 
+            except Exception , e:
+                print e
     
-    def doWork(self):
+    def getCourseDict(self):
         #berkeley
         print "downloading berkeley catalog course info"
-        file_name = self.get_file_name(self.subject + "/" + "eecs-catalog", self.school)
-        file_lines = self.countFileLineNum(file_name)
-        f = self.open_db(file_name + ".tmp")
-        self.count = 0
+        course_dict = {}
+        self.processBerkeleyData(course_dict, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Electrical+Engineering&p_dept_cd=EL+ENG&p_path=l", "EE")
+        self.processBerkeleyData(course_dict, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Computer+Science&p_dept_cd=COMPSCI&p_path=l", "CS")
+      
+        return course_dict
 
-        self.processBerkeleyData(f, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Electrical+Engineering&p_dept_cd=EL+ENG&p_path=l", "EE")
-        self.processBerkeleyData(f, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Computer+Science&p_dept_cd=COMPSCI&p_path=l", "CS")
 
-        self.close_db(f)
-        if file_lines != self.count and self.count > 0:
-            self.do_upgrade_db(file_name)
-            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
-        else:
-            self.cancel_upgrade(file_name)
-            print "no need upgrade\n"
-
-start = BerkeleyCatalogSpider();
-start.doWork() 

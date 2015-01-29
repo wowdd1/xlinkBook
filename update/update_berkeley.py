@@ -6,6 +6,7 @@
     
 from spider import *
 from update_berkeley_webcast import BerkeleyWebcastSpider
+from update_berkeley_catalog import BerkeleyCatalogSpider
 
 py3k = sys.version_info[0] >= 3
 if py3k:
@@ -65,7 +66,7 @@ class BerkeleySpider(Spider):
         self.subject = "eecs"
         self.deep_mind = True
         self.berkeleyWebcastSpider = BerkeleyWebcastSpider()
-   
+        self.berkeleyCatalogSpider = BerkeleyCatalogSpider()
     def getLink(self, url):
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
@@ -97,7 +98,12 @@ class BerkeleySpider(Spider):
         return 'http://www-inst.eecs.berkeley.edu/~' + course_num.lower() + '/archives.html'    
 
     def getRealUrl(self, url):
-        r = requests.get(url)
+        r = None
+        try:
+            r = requests.get(url)
+        except Exception , e:
+            print e
+            return url
         soup = BeautifulSoup(r.text)
         link_dict = {}
         for a in soup.find_all('a'):
@@ -152,6 +158,8 @@ class BerkeleySpider(Spider):
         '''
         print 'get webcast info...'
         webcast_dict = self.berkeleyWebcastSpider.getWebcastDict()
+        print 'get course dict from catalog...'
+        course_dict = self.berkeleyCatalogSpider.getCourseDict()
         for row in parser.rows:
             url = self.genUrl(row[0: row.find(" ")])
             print row 
@@ -159,9 +167,20 @@ class BerkeleySpider(Spider):
             if self.deep_mind:
                 url = self.getRealUrl(url)
             description = ''
-            if webcast_dict.get(row[0:row.find(" ")] , '') != '':
-                description = 'features:Video lectures' + ' '
-            self.write_db(f, row[0:row.find(" ")], row[row.find(" "):], url, description)
+            key = row[0:row.find(" ")]
+            if webcast_dict.get(key , '') != '':
+                if course_dict.get(key , '') != '' and course_dict[key].get_prereq() != None:
+                    description = 'prereq:' + course_dict[key].get_prereq() + ' '
+                description = 'instructors:' + webcast_dict[key].get_lecturer() + ' features:Video lectures ' + description +  'term:' + webcast_dict[key].get_semester() \
+                               + ' description:' + webcast_dict[key].get_descr()
+            elif course_dict.get(key , '') != '':
+                if course_dict[key].get_instructors() != None:
+                    description += 'instructors:' + course_dict[key].get_instructors() + ' '
+                if course_dict[key].get_prereq() != None:
+                    description += 'prereq:' + course_dict[key].get_prereq() + ' '
+                if course_dict[key].get_description() != None:
+                    description += 'description:' + course_dict[key].get_description()
+            self.write_db(f, row[0:row.find(" ")], row[row.find(" "):].strip(), url, description)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
