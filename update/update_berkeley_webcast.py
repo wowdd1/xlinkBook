@@ -75,7 +75,7 @@ class BerkeleyWebcastSpider(Spider):
                 return True
         return False
 
-    def getWebcastDict(self):
+    def getWebcastDict(self, subject_list):
         r = requests.get('http://webcast.berkeley.edu/itunesu_podcasts.js')
         pos = r.text.find('itu_courses = [')
         webcast_dict = {}
@@ -107,13 +107,14 @@ class BerkeleyWebcastSpider(Spider):
                         webcast.set_dept(value.strip())
                     elif key == 'youTube':
                         webcast.set_youTube('https://www.youtube.com/view_play_list?p=' + value)
-                if webcast.get_dept() == "Computer Science" or webcast.get_dept() == "Electrical Engineering":
-                    webcast.set_title(webcast.get_title().replace('Computer Science ', 'CS').replace('Electrical Engineering ', 'EE'))
-                    if webcast_dict.get(webcast.get_title(), '') != '':
-                        if self.compareTerm(webcast_dict[webcast.get_title()].get_semester(), webcast.get_semester()):
+                for subject in subject_list:
+                    if webcast.get_dept() == subject:
+                        webcast.set_title(webcast.get_title().replace('Computer Science ', 'CS').replace('Electrical Engineering ', 'EE'))
+                        if webcast_dict.get(webcast.get_title(), '') != '':
+                            if self.compareTerm(webcast_dict[webcast.get_title()].get_semester(), webcast.get_semester()):
+                                webcast_dict[webcast.get_title()] = webcast
+                        else:
                             webcast_dict[webcast.get_title()] = webcast
-                    else:
-                        webcast_dict[webcast.get_title()] = webcast
 
         return webcast_dict
         '''

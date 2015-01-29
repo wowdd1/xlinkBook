@@ -49,12 +49,15 @@ class BerkeleyCatalogSpider(Spider):
             except Exception , e:
                 print e
     
-    def getCourseDict(self):
+    def getCourseDict(self, subject_list):
         #berkeley
         print "downloading berkeley catalog course info"
         course_dict = {}
-        self.processBerkeleyData(course_dict, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Electrical+Engineering&p_dept_cd=EL+ENG&p_path=l", "EE")
-        self.processBerkeleyData(course_dict, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Computer+Science&p_dept_cd=COMPSCI&p_path=l", "CS")
+        for subject in subject_list:
+            if subject == 'Computer Science':
+                self.processBerkeleyData(course_dict, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Computer+Science&p_dept_cd=COMPSCI&p_path=l", "CS")
+            if subject == 'Electrical Engineering':
+                self.processBerkeleyData(course_dict, "http://general-catalog.berkeley.edu/catalog/gcc_list_crse_req?p_dept_name=Electrical+Engineering&p_dept_cd=EL+ENG&p_path=l", "EE")
       
         return course_dict
 

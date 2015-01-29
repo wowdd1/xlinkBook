@@ -157,9 +157,9 @@ class BerkeleySpider(Spider):
     
         '''
         print 'get webcast info...'
-        webcast_dict = self.berkeleyWebcastSpider.getWebcastDict()
+        webcast_dict = self.berkeleyWebcastSpider.getWebcastDict(['Computer Science', 'Electrical Engineering'])
         print 'get course dict from catalog...'
-        course_dict = self.berkeleyCatalogSpider.getCourseDict()
+        course_dict = self.berkeleyCatalogSpider.getCourseDict(['Computer Science', 'Electrical Engineering'])
         for row in parser.rows:
             url = self.genUrl(row[0: row.find(" ")])
             print row 
