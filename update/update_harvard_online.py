@@ -5,6 +5,8 @@
 #data: 2014.12.07
     
 from spider import *
+sys.path.append("..")
+from record import CourseRecord
     
 class HarvardOnlineSpider(Spider):
 
@@ -49,7 +51,7 @@ class HarvardOnlineSpider(Spider):
         description = instructors + description
         return website, description
     
-    def getHarvardOnlineCourse(self, subject, url):
+    def getHarvardOnlineCourse(self, subject, url, course_dict=None):
         if self.need_update_subject(subject) == False:
             return
         print "processing " + subject + " url " + url
@@ -72,29 +74,36 @@ class HarvardOnlineSpider(Spider):
                     course_num = li.span.span.string
                 else:
                     course_num = li.prettify().split("\n")[1].strip()
-                course_num = course_num[course_num.find("E-"):]
+                course_num = course_num.replace(' E-', '').strip()
                 title = li.a.string.strip()
                 link = "http://www.extension.harvard.edu" + str(li.a["href"]).strip()
                 if self.deep_mind:
                     link, description = self.getMoreInfo(link)
                 count = count + 1
-                print course_num + " " + title + ' ' + link + ' ' + description
+                print course_num + " " + title + ' ' + link
                 self.write_db(f, course_num, title, link, description)
+                if course_dict != None:
+                    if course_num.startswith('CSCI'):
+                        course_num = course_num.replace('CSCI', 'CS')
+                    course_dict[course_num] = CourseRecord(self.get_storage_format(course_num, title, link, description))
         else:
             for li in soup.find_all("li"):
                 if li.attrs.has_key("class"):
                     if li.prettify().find("E-") != -1 and str(li.a["href"]).startswith("/courses"):
                         for item in li.prettify().split("\n"):
                             if item.find("E-") != -1:
-                                course_num = item.strip()
-                                course_num = course_num[course_num.find("E-"):]
+                                course_num = item.replace(' E-', '').strip()
                         count = count + 1
                         title = li.a.string.strip()
                         link = "http://www.extension.harvard.edu" + str(li.a["href"]).strip()
                         if self.deep_mind:
                             link, description = self.getMoreInfo(link)
-                        print course_num + " " + title + ' ' + link + ' ' + description
+                        print course_num + " " + title + ' ' + link 
                         self. write_db(f, course_num, title, link, description)
+                        if course_dict != None:
+                            if course_num.startswith('E-'):
+                                course_num = course_num.replace('CSCI', 'CS')
+                            course_dict[course_num] = CourseRecord(self.get_storage_format(course_num, title, link, description))
         self.close_db(f)
         if file_lines != count and count > 0:
             self.do_upgrade_db(file_name)
@@ -102,8 +111,17 @@ class HarvardOnlineSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
-    
-    
+
+    def getCourseDict(self, subject):
+        course_dict = {}
+        r = requests.get(self.url)
+        soup = BeautifulSoup(r.text)
+
+        for li in soup.find_all("li", class_ = "is-more-items"):
+            if li.a.string.lower() == subject.lower():
+                self.getHarvardOnlineCourse(li.a.string, "http://www.extension.harvard.edu" + str(li.a["href"]), course_dict)
+        return course_dict
+
     def doWork(self):
         print "downloading harvard online course info"
         #r = requests.get("http://www.extension.harvard.edu/courses/subject/computer-science")
@@ -113,6 +131,11 @@ class HarvardOnlineSpider(Spider):
     
         for li in soup.find_all("li", class_ = "is-more-items"):
             self.getHarvardOnlineCourse(li.a.string, "http://www.extension.harvard.edu" + str(li.a["href"]))
-        
-start = HarvardOnlineSpider()
-start.doWork() 
+
+def main(argv):
+    start = HarvardOnlineSpider()
+    start.doWork()
+
+if __name__ == '__main__':
+    main(sys.argv)
+ 

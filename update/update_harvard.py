@@ -5,16 +5,17 @@
 #data: 2014.12.07
     
 from spider import *
-
+from update_harvard_online import HarvardOnlineSpider
 
 class HarvardSpider(Spider):    
     #harvard
-    course_dice = {}
+    course_dict = {}
  
     def __init__(self):
         Spider.__init__(self)
         self.school = "harvard"
         self.url = "http://www.registrar.fas.harvard.edu"
+        self.harvardOnlineSpider = HarvardOnlineSpider()
 
     def formatCourseNum(self, subject, oldTitle):
         title = oldTitle[0 : oldTitle.find(".")]
@@ -43,7 +44,8 @@ class HarvardSpider(Spider):
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0 
-    
+        online_course_dict = self.harvardOnlineSpider.getCourseDict(subject) 
+        print len(online_course_dict)
         print "\n\nprocessing " + subject + " html and write data to file..."
         for p in soup.find_all("p"):
             if p != None:
@@ -60,7 +62,7 @@ class HarvardSpider(Spider):
                     if line.strip() != '' and line.startswith('Copyright') == False and line.startswith('.') == False and\
                         line.startswith('Catalog Number') == False:
                         line = line.replace("\n", '')
-                        print line
+                        #print line
                         if line.find(subject) != -1 and line.find(subject) < 5:
                             course_num = self.formatCourseNum(subject, line)
                             title = line[line.find(".") + 2:].replace("]", "")
@@ -80,14 +82,19 @@ class HarvardSpider(Spider):
                 description = instructors + prereq + term + description
                 if course_num == '':
                     continue
-                self.course_dice[course_num] = title
-                print course_num + ' ' + title + ' ' + link
+                self.course_dict[course_num] = title
                 self.count += 1
+                if online_course_dict.get(course_num, '') != '':
+                    description = 'features:Video lectures ' + description
+                    if online_course_dict[course_num].get_url() != '':
+                        link = online_course_dict[course_num].get_url()
+                print course_num + ' ' + title + ' ' + link
                 self.write_db(f, course_num, title, link, description)                      
 
         for node in soup.find_all("strong"):
             text = ""
             link = ""
+            description = ''
             if node.string == None:
                 if node.a != None and node.a.string != None:
                     text = node.a.string.replace("\n", "")
@@ -105,11 +112,15 @@ class HarvardSpider(Spider):
                 text = node.string.replace("\n", "")
 
             course_num = self.formatCourseNum(subject, text) 
-            if self.course_dice.get(course_num, '') == '':
+            if self.course_dict.get(course_num, '') == '':
                 title = text[text.find(".") + 2:].replace("]", "")
-                print course_num + ' ' + title + ' ' + link
                 self.count += 1
-                self.write_db(f, course_num, title, link)
+                if online_course_dict.get(course_num, '') != '':
+                    description = 'features:Video lectures ' + online_course_dict[course_num].get_description()
+                    if online_course_dict[course_num].get_url() != '':
+                        link = online_course_dict[course_num].get_url()
+                print course_num + ' ' + title + ' ' + link
+                self.write_db(f, course_num, title, link, description)
 
         if self.count == 0:
             print subject + " can not get the data, check the html and python code"
