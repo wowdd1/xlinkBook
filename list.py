@@ -231,7 +231,7 @@ def print_list(file_name):
             filter_result = []
             for line in all_lines:
                 record = Record(line)
-                data = record.get_id() + record.get_title() + record.get_describe()
+                data = record.get_id() + record.get_title() #+ record.get_describe()
                 if data.lower().find(filter_keyword.lower()) != -1:
                     filter_result.append(line)
             all_lines = filter_result[:]
