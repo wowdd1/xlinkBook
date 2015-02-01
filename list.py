@@ -125,10 +125,8 @@ def print_table_separator(col):
     print table_separator
 
 def get_space(start, end):
-    space = ""
-    for j in range(start, end):
-        space += " "
-    return space
+    return (end - start) * " "
+
 def get_id_and_title(record):
     return record.get_id() + "|" + record.get_title()
 
