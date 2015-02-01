@@ -102,7 +102,9 @@ def print_table_head(col, id_name='id', title='title'):
         space_1 = get_space(0, course_num_len - len(id_name))
         space_2 = get_space(0, course_name_len - len(title))
         if len(space_1) % 2 == 0 and len(space_2) % 2 == 0:
-            table_head_mid += space_1[0 : len(space_1) / 2] + id_name + space_1[len(space_1) / 2 :] + '|' + space_2[0 : len(space_2) / 2] + title + space_2[len(space_2) / 2 :]
+            space_1 = space_1[0 : len(space_1) / 2]
+            space_2 = space_2[len(space_2) / 2 :]
+            table_head_mid += space_1 + id_name + space_1 + '|' + space_2 + title + space_2
         else:
             table_head_mid += id_name + space_1 + '|' + title + space_2
 
