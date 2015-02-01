@@ -55,6 +55,9 @@ class TableHandler(HTMLParser):
         #print data.strip()
         if data[0: 4] == 'Last':
             return
+        if data.startswith('Previous') or data.startswith('non-EECS'):
+            return
+
         self.last_content += data + ' '
 
 
