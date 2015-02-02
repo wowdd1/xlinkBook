@@ -14,6 +14,7 @@ faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
                 'http://www.seas.harvard.edu/electrical-engineering/people',\
                 'http://www.seas.harvard.edu/computer-science/people',\
                 'https://www.cs.princeton.edu/people/faculty',\
+                'http://www.cms.caltech.edu/people',\
                 'http://www.math.princeton.edu/directory/faculty']
 def usage(argv0):
     print ' usage:'
@@ -66,7 +67,13 @@ def getStanfordFacultyUrl(keyword):
             return dd.a['href']
     return ''
     
-    
+def getCaltechFacultyUrl(url):
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    for a in soup.find_all('a'):
+        if a.text == 'Personal Page':
+            return a['href']
+    return url
 
 def match(text, keyword):
     if text.lower().strip() == keyword.lower().strip():
@@ -96,6 +103,8 @@ def searchList(keyword, school=''):
                         link = getMitFacultyUrl(a['href'])
                     elif url.find('cs.princeton') != -1:
                         link = getPrincetonFacultyUrl('http://www.cs.princeton.edu', a['href'])
+                    elif url.find('caltech') != -1:
+                        link = getCaltechFacultyUrl('http://www.cms.caltech.edu' + a['href'])
                     elif url.find('math.princeton') != -1:
                         link = getPrincetonFacultyUrl('http://www.math.princeton.edu', a['href'])
                     else:
