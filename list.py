@@ -218,6 +218,12 @@ def reset_max_len_list():
     line_max_len_list = [0, 0, 0]
     line_id_max_len_list = [0, 0, 0]
 
+def includeDesc(keyword):
+    for k in keyword_list:
+        if keyword.find(k) != -1:
+            return True
+    return False
+
 def print_list(file_name):
     current = 0
     old_line = ""
@@ -231,7 +237,9 @@ def print_list(file_name):
             filter_result = []
             for line in all_lines:
                 record = Record(line)
-                data = record.get_id() + record.get_title() + record.get_describe()
+                data = record.get_id() + record.get_title() 
+                if includeDesc(filter_keyword):
+                    data += record.get_describe()
                 if data.lower().find(filter_keyword.lower()) != -1:
                     filter_result.append(line)
             all_lines = filter_result[:]
