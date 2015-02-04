@@ -20,9 +20,13 @@ class YoutubeSpider(Spider):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):
             if a.attrs.get('href', '') != '' and a['href'].startswith('/playlist?list='):
-                key = a.text
+                key = a.text.strip()
                 if key.find('|') != -1:
                     key = key[key.find('|') + 1 :].strip() 
+                if key.startswith('Computer Science '):
+                    key = key.replace('Computer Science ', 'CS')
+                if key.startswith('Electrical Engineering '):
+                    key = key.replace('Electrical Engineering ', 'EE')
                 self.courses[key] = 'https://www.youtube.com' + a['href']
 
     def getLoadMoreHref(self, html):
@@ -57,7 +61,14 @@ class YoutubeSpider(Spider):
         for k, v in [(k,self.courses[k]) for k in sorted(self.courses.keys())]:
             print k + ' ' + v
             self.count += 1
-            self.write_db(f, 'pl-' + user + '-' + str(self.count), k, v, 'videourl:' + v)
+            video_id = 'pl-' + user + '-' + str(self.count)
+            if k.startswith('MIT'):
+                k = k[4:]
+                if k[0 : k.find(' ')].find('.') != -1:
+                    video_id = 'pl-' + user + '-' + k[0 : k.find(' ')]
+                    k = k[k.find(' ') : ].strip()
+
+            self.write_db(f, video_id, k, v, 'videourl:' + v)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
@@ -72,5 +83,10 @@ class YoutubeSpider(Spider):
             self.getPlaylist(user, url)
 
 
-start = YoutubeSpider()
-start.doWork()
+def main(argv):
+    start = YoutubeSpider()
+    start.doWork()
+
+if __name__ == '__main__':
+    main(sys.argv)
+
