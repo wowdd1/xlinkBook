@@ -400,7 +400,7 @@ def adjust_cell_len():
     if column_num == '2':
         custom_cell_len = cell_len + (cell_len / 14)
     elif column_num == '3':
-        custom_cell_len = int(cell_len * (2 / 3.0))
+        custom_cell_len = int(cell_len * (2 / 3.0) + 7)
     elif column_num == '1':
         custom_cell_len = cell_len * 2
 
