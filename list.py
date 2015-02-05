@@ -99,14 +99,22 @@ def print_table_head(col, id_name='id', title='title'):
     for i_i in range(0, col):
         update_cell_len(i_i)
         table_head_mid += '|'
-        space_1 = get_space(0, course_num_len - len(id_name))
-        space_2 = get_space(0, course_name_len - len(title))
-        if len(space_1) % 2 == 0 and len(space_2) % 2 == 0:
-            space_1 = space_1[0 : len(space_1) / 2]
-            space_2 = space_2[len(space_2) / 2 :]
+        len_1 = course_num_len - len(id_name)
+        len_2 = course_name_len - len(title)
+        space_1 = get_space(0, len_1)[0 : len_1 / 2]
+        space_2 = get_space(0, len_2)[0 : len_2 / 2]
+        if len_1 % 2 == 0 and len_2 % 2 == 0:
             table_head_mid += space_1 + id_name + space_1 + '|' + space_2 + title + space_2
         else:
-            table_head_mid += id_name + space_1 + '|' + title + space_2
+            if len_1 % 2 == 0:
+                table_head_mid += space_1 + id_name + space_1
+            else:
+                table_head_mid += space_1 + id_name + space_1 + ' '
+
+            if len_2 % 2 == 0:
+                table_head_mid += '|' + space_2 + title + space_2
+            else: 
+                table_head_mid += '|' + space_2 + title + space_2 + ' '
 
     table_head_mid += '|'
     print_table_separator(col)
