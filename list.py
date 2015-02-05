@@ -209,8 +209,10 @@ def get_line(lines, start, end, j):
 
 def get_space_cell(num):
     result = ""
-    for i in range(0, num):
-        result += get_space(0, course_num_len) + "|" + get_space(0, course_name_len)
+    for i in range(1, num + 1):
+        result += get_space(0, line_id_max_len_list[i]) + "|" + get_space(0, cell_len - line_id_max_len_list[i] - 1)
+        if num > 1 and i != num:
+            result += '|'
 
     return result
 def reset_max_len_list():
