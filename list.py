@@ -395,6 +395,14 @@ def print_dir(dir_name):
         else:
             print_dir(full_path)
 
+def adjust_cell_len():
+    global custom_cell_len
+    if column_num == '2':
+        custom_cell_len = cell_len + (cell_len / 14)
+    elif column_num == '3':
+        custom_cell_len = int(cell_len * (2 / 3.0))
+    elif column_num == '1':
+        custom_cell_len = cell_len * 2
 
 def main(argv):
     global source
@@ -420,16 +428,14 @@ def main(argv):
             source = a
         elif o in ('-c', '--column_num'):
             column_num = a
+            adjust_cell_len()
         elif o in ('-f', '--filter'):
             filter_keyword = str(a).strip()
         elif o in ('-s', '--style'):
             output_with_color = True
         elif o in ('-d', '--describe'):
             output_with_describe = True
-            if column_num == '2':
-                custom_cell_len = cell_len + (cell_len / 14)
-            elif column_num == '1':
-                custom_cell_len = cell_len * 2
+            adjust_cell_len()
             output_with_color = True
         elif o in ('-w', '--width'):
             custom_cell_len = int(a) 
