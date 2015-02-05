@@ -16,44 +16,6 @@ usage:
 
 keyword or regexp: the keyword for filter course
 
-keyword suggest(to list keyword, please run ./list.py -k filename):
-
-     1	 205 cs
-     2	  54 and
-     3	  38 computer
-     4	  35 in
-     5	  31 a
-     6	  21 systems
-     7	  20 b
-     8	  18 topics
-     9	  17 to
-    10	  17 project
-    11	  15 programming
-    12	  13 for
-    13	  13 algorithms
-    14	  12 of
-    15	  12 introduction
-    16	  11 advanced
-    17	  10 software
-    18	  10 music
-    19	  10 computing
-    20	   9 the
-    21	   9 science
-    22	   9 n
-    23	   9 human
-    24	   9 design
-    25	   9 computational
-    26	   8 vision
-    27	   8 research
-    28	   8 interaction
-    29	   8 data
-    30	   7 c
-    31	   7 biomedin
-    32	   7 analysis
-    33	   6 x
-    34	   6 w
-    35	   6 theory
-    36	   6 seminar
 
 eg: 
 
@@ -152,6 +114,15 @@ ex:
 
      ./goto.py -c "6.001"
      ./goto.py -c "E-100" -e yaohoo
+
+display one course info:
+
+    ./about_course.py 'course number'
+
+ex:
+
+     ./about_course.py '6.001'
+
 
 browse course lecture at local(only suport ocw itunes course now):
 
