@@ -12,6 +12,14 @@ class Record():
         self.line = line
         if line == "":
             self.line = self.default_line
+        self.file_path = ''
+
+    def set_path(self, path):
+        self.file_path = path
+
+    def get_path(self):
+        return self.file_path
+
     def get_default_line(self):
         return self.default_line
 

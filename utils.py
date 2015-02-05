@@ -150,6 +150,7 @@ class Utils:
             f = open(file_name)
             for line in f.readlines():
                 record = Record(line)
+                record.set_path(file_name)
                 if record.get_id().lower().strip() == keyword.lower().strip():
                     print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
                     return record
