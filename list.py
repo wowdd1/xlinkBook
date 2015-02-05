@@ -6,6 +6,7 @@
 
 import getopt
 import time
+import re
 import os,sys
 from record import Record
 from utils import Utils
@@ -250,7 +251,7 @@ def print_list(file_name):
                 data = record.get_id() + record.get_title() 
                 if includeDesc(filter_keyword):
                     data += record.get_describe()
-                if data.lower().find(filter_keyword.lower()) != -1:
+                if data.lower().find(filter_keyword.lower()) != -1 or re.match(filter_keyword, data) != None:
                     filter_result.append(line)
             all_lines = filter_result[:]
         if len(all_lines) == 0:
