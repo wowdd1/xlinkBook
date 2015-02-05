@@ -405,15 +405,14 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:', ["help", "keyword", "input=", "column=", "filter=", "style", "describe", "width", "row"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
         sys.exit(2)
 
-    global column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row
     for o, a in opts:
         if o in ('-h', '--help'):
             usage()
