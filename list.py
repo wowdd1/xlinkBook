@@ -218,9 +218,11 @@ def get_line(lines, start, end, j):
 
     return result
 
-def get_space_cell(num):
+def get_space_cell(num, column_num):
     result = ""
-    for i in range(1, num + 1):
+    start = column_num - num
+    end = start + num
+    for i in range(start, end):
         result += get_space(0, line_id_max_len_list[i]) + "|" + get_space(0, cell_len - line_id_max_len_list[i] - 1)
         if num > 1 and i != num:
             result += '|'
@@ -343,9 +345,9 @@ def print_list(file_name):
                 last = len(id_title_lines[0]) - 1
                 content = ""
                 if len(id_title_lines[0]) == len(id_title_lines[1]):
-                    content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1) + "|"
+                    content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1, 3) + "|"
                 else:
-                    content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2) + "|"
+                    content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2, 3) + "|"
 
                 if output_with_color == True:
                     print_with_color(content)
@@ -354,9 +356,9 @@ def print_list(file_name):
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         if len(id_title_lines[0]) == len(id_title_lines[1]):
-                            print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1) + "|"
+                            print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + "|"
                         else:
-                            print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2) + "|"
+                            print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + "|"
 
             print_table_separator(3)
         elif column_num == "2":
@@ -372,14 +374,14 @@ def print_list(file_name):
                         print get_line(describe_lines[l], 0, 2, i)
             if len(id_title_lines[0]) > len(id_title_lines[1]):
                 last = len(id_title_lines[0]) - 1
-                content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1) + "|"
+                content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1, 2) + "|"
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
-                        print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1) + "|"
+                        print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + "|"
 
             print_table_separator(2)
         elif column_num == '1':
