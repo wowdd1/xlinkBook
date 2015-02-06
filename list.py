@@ -24,6 +24,7 @@ course_num_len=10
 color_index=0
 output_with_color = False
 output_with_describe = False
+top_row = 0
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -43,6 +44,7 @@ def usage():
     print '\t-d,--describe: output the describe of the item'
     print '\t-w,--width: the width of cell'
     print '\t-r,--row: the rows of the describe'
+    print '\t-t,--top: the top number rows for display'
     os.system("cat README.md")
 
 def print_keyword(file_name):
@@ -265,18 +267,34 @@ def print_list(file_name):
             list_all.append([])
             list_all.append([])
             list_all.append([])
-            line_half = line_count / 3
+            if top_row > 0:
+                if top_row % 3 == 0:
+                    line_half = top_row / 3
+                else:
+                    if (top_row + 1) % 3 == 0:
+                        line_half = (top_row + 1) / 3
+                    else:
+                        line_half = (top_row + 2) / 3
+            else:
+                line_half = line_count / 3
         elif column_num == "2":
             list_all.append([])
             list_all.append([])
-            line_half = line_count / 2
+            if top_row > 0:
+                if top_row % 2 == 0:
+                    line_half = top_row / 2
+                else:
+                    line_half = (top_row + 1) / 2
+            else:
+                line_half = line_count / 2
         elif column_num == "1":
             list_all.append([])
-         
+        
         for line in all_lines:
+            current += 1
+
             line = utils.to_unicode(line)
             record = Record(line.replace("\n", ""))
-            current += 1
             if column_num == "3":
                 if current <= line_half + (line_count % 3):
                     update_max_len(record, 1)
@@ -299,6 +317,8 @@ def print_list(file_name):
                 update_max_len(record, 1)
                 list_all[0].append(record)
 
+            if top_row > 0 and current >= top_row:
+                break
 
         if column_num == "3":
             if len(list_all[0]) - len(list_all[1]) == 2:
@@ -406,9 +426,9 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -444,6 +464,9 @@ def main(argv):
                 custom_cell_row = int(a)
             else:
                 print 'the row must between 0 and 30'
+        elif o in ('-t', '--top'):
+            top_row = int(a)
+
     if source == "":
         print "you must input the input file or dir"
         usage()

@@ -14,6 +14,8 @@ usage:
 
 -r: the rows of the description
 
+-t: the top rows for display
+
 keyword or regexp: the keyword for filter course
 
 
