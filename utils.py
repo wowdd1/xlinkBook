@@ -140,12 +140,12 @@ class Utils:
             pos = file_name.find('/', pos) + 1
         return file_name[pos : ]
 
-    def getRecord(self, keyword, use_subject='', path=default_path):
+    def getRecord(self, keyword, use_subject='', path=default_path, return_all=False):
         subject = default_subject;
         if use_subject != "":
             subject = use_subject
         print 'searching %s'%keyword + " in " + subject
-
+        record_list = []
         for file_name in self.find_file_by_pattern(".*", path):
             f = open(file_name)
             for line in f.readlines():
@@ -153,9 +153,19 @@ class Utils:
                 record.set_path(file_name)
                 if record.get_id().lower().strip() == keyword.lower().strip():
                     print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
-                    return record
-        print "no record found in " + subject +" db"
-        return Record('')
+                    if return_all:
+                        record_list.append(record)
+                    else:
+                        return record
+        if return_all:
+            if len(record_list) > 0:
+                return record_list
+            else:
+                print "no record found in " + subject +" db"
+                return record_list.append(Record(''))
+        else:
+            print "no record found in " + subject +" db"
+            return Record('')
 
 
     def getUrl(self, keyword, use_subject='', engin='', path=default_path):

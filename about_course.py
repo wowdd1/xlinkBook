@@ -13,9 +13,10 @@ def usage():
 
 def print_course(course_num):
     util = Utils()
-    record = util.getRecord(course_num)
-    if record.get_id().strip() != '':
-        os.system("./list.py -i " + record.get_path() + " -c 1 -f '^" + course_num + "' -d -r 10")
+    record_list = util.getRecord(course_num, return_all=True)
+    for record in record_list: 
+        if record.get_id().strip() != '':
+            os.system("./list.py -i " + record.get_path() + " -c 1 -f '^" + course_num + "' -d -r 10")
 
 def main(argv):
     try:
