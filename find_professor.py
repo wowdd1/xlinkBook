@@ -17,6 +17,10 @@ faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
                 'http://www.cms.caltech.edu/people',\
                 'http://www.ece.cornell.edu/ece/people/faculty.cfm',\
                 'http://www.cs.cornell.edu/people/faculty',\
+                'http://www.cs.ucla.edu/people/faculty',\
+                'http://www.ee.ucla.edu/people/faculty/regular-faculty-1',\
+                'http://www.ee.ucla.edu/people/faculty/Adjunct%20Faculty',\
+                'http://www.ee.ucla.edu/people/faculty/emeriti-faculty',\
                 'http://www.math.princeton.edu/directory/faculty']
 def usage(argv0):
     print ' usage:'
