@@ -15,6 +15,8 @@ faculty_list = ['http://www.eecs.mit.edu/people/faculty-advisors',\
                 'http://www.seas.harvard.edu/computer-science/people',\
                 'https://www.cs.princeton.edu/people/faculty',\
                 'http://www.cms.caltech.edu/people',\
+                'http://www.ece.cornell.edu/ece/people/faculty.cfm',\
+                'http://www.cs.cornell.edu/people/faculty',\
                 'http://www.math.princeton.edu/directory/faculty']
 def usage(argv0):
     print ' usage:'
@@ -107,6 +109,8 @@ def searchList(keyword, school=''):
                         link = getCaltechFacultyUrl('http://www.cms.caltech.edu' + a['href'])
                     elif url.find('math.princeton') != -1:
                         link = getPrincetonFacultyUrl('http://www.math.princeton.edu', a['href'])
+                    elif url.find('ece.cornell') != -1:
+                        link = 'http://www.ece.cornell.edu/ece/people/' + a['href']
                     else:
                         link = a['href']
                     print 'found ' + a.text + ' ' + link

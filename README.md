@@ -161,9 +161,9 @@ the output looks like this:
 
 find the instructor:
 
-    ./find_instructor "faculty name" or  ./find_instructor.py -n 'name' -u 'school'
+    ./find_professor "faculty name" or  ./find_professor.py -n 'name' -u 'school'
 
 ex:
     
-    ./find_instructor "Andrew Ng"
-    ./find_instructor.py -n 'Nicholas Bambos' -u 'stanford'
+    ./find_professor "Andrew Ng"
+    ./find_professor.py -n 'Nicholas Bambos' -u 'stanford'
