@@ -33,6 +33,7 @@ class StanfordSpider(Spider):
         'CS227B' : 'https://class.coursera.org/ggp-002',\
         'CS228' : 'https://class.coursera.org/pgm-003',\
         'CS229' : 'https://class.coursera.org/ml-004',\
+        'CS229T' : 'https://www.youtube.com/channel/UC4OWDcPB1peiBXDfCSZ3h-w/playlists',\
         'CS246' : 'https://class.coursera.org/mmds-001',\
         'CS255' : 'https://class.coursera.org/crypto-008',\
         'CS264' : 'https://www.youtube.com/playlist?list=PLEGCF-WLh2RL8jsZpaf2tLHa5LotFEt5b',\
@@ -85,6 +86,8 @@ class StanfordSpider(Spider):
     def formatCourseTitle(self, title):
         if title.find('(') != -1:
             title = title[0 : title.find('(')]
+        if title.find(':') != -1:
+            title = title[0 : title.find(':')]
         return title.strip()
 
     def isCourseProcessed(self, course_num):
