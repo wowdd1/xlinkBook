@@ -42,27 +42,37 @@ class Record():
     def get_describe(self):
         return self.line[self.get_pos(3) + 1 : ]
 
+class Tag():
+    def __init__(self):
+        self.tag_videourl = 'videourl:'
+        self.tag_author = 'author:'
+        self.tag_ratings = 'ratings:'
+        self.tag_term = 'term:'
+        self.tag_prereq = 'prereq:'
+        self.tag_toprepo = 'toprepo:'
+        self.tag_project = 'project:'
+        self.tag_university = 'university:'
+        self.tag_available = 'available:'
+        self.tag_level = 'level:'
+        self.tag_features = 'features:'
+        self.tag_instructors = 'instructors:'
+        self.tag_description = 'description:'
+        self.tag_textbook = 'textbook:'
+
+        self.tag_list = [self.tag_videourl, self.tag_author, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
+                         self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook]
+
 class CourseRecord(Record):
-    tag_prereq = 'prereq:'
-    tag_project = 'project:'
-    tag_university = 'university:'
-    tag_available = 'available:'
-    tag_level = 'level:'
-    tag_features = 'features:'
-    tag_instructors = 'instructors:'
-    tag_description = 'description:'
-    tag_textbook = 'textbook:'
-    
-    tag_list = [tag_prereq, tag_project, tag_university, tag_available, tag_level, tag_features, tag_instructors, tag_description, tag_textbook]
 
     describe = ''
     def __init__(self, line):
         Record.__init__(self, line)
         self.describe = self.get_describe()
+        self.tag = Tag()
 
     def next_tag_pos(self, pos, max_pos):
         min_pos = 1000
-        for t in self.tag_list:
+        for t in self.tag.tag_list:
             next_pos = self.describe.lower().find(t, pos + 1)
             if next_pos != -1:
                 if max_pos:
@@ -87,31 +97,35 @@ class CourseRecord(Record):
         return None
 
     def get_prereq(self):
-        return self.get_tag_content(self.tag_prereq)
+        return self.get_tag_content(self.tag.tag_prereq)
 
     def get_project(self):
-        return self.get_tag_content(self.tag_project)
+        return self.get_tag_content(self.tag.tag_project)
 
     def get_university(self):
-        return self.get_tag_content(self.tag_university)
+        return self.get_tag_content(self.tag.tag_university)
 
     def get_available(self):
-        return self.get_tag_content(self.tag_available)
+        return self.get_tag_content(self.tag.tag_available)
 
     def get_level(self):
-        return self.get_tag_content(self.tag_level)
+        return self.get_tag_content(self.tag.tag_level)
 
     def get_features(self):
-        return self.get_tag_content(self.tag_features)
+        return self.get_tag_content(self.tag.tag_features)
+
+    def get_videourl(self):
+        return self.get_tag_content(self.tag.tag_videourl)
+
     def get_instructors(self):
-        return self.get_tag_content(self.tag_instructors)
+        return self.get_tag_content(self.tag.tag_instructors)
     def get_description(self):
-        return self.get_tag_content(self.tag_description)
+        return self.get_tag_content(self.tag.tag_description)
 
     def get_textbook(self):
-        content = self.get_tag_content(self.tag_textbook, True)
+        content = self.get_tag_content(self.tag.tag_textbook, True)
         if content != None:
-            return content.replace(self.tag_textbook, '')
+            return content.replace(self.tag.tag_textbook, '')
         return content
 
 

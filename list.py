@@ -8,7 +8,7 @@ import getopt
 import time
 import re
 import os,sys
-from record import Record
+from record import Record, Tag
 from utils import Utils
 import copy
 
@@ -30,7 +30,8 @@ utils = Utils()
 line_max_len_list = [0, 0, 0]
 line_id_max_len_list = [0, 0, 0]
 
-keyword_list = ['videourl:', 'author:', 'ratings:', 'term:', 'prereq:', 'toprepo:', 'project:', 'university:', 'available:', 'level:', 'features:', 'instructors:', 'description:', 'textbook:']
+tag = Tag()
+keyword_list = tag.tag_list
 
 
 def usage():
