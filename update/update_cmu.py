@@ -13,10 +13,19 @@ class CMUSpider(Spider):
     def getDescription(self, url):
         r = requests.get(url)
         soup = BeautifulSoup(r.text);
+        description = ''
+        for div in soup.find_all('div', class_='col-md-6'):
+            if div != None and div.text.find('None') == -1 and div.text.find('Prerequisites') != -1:
+                description += 'prereq:' + div.text.replace("\n","").replace('Prerequisites', '').strip() + ' '
+                break
+        ul = soup.find('ul', class_='list-unstyled instructor')
+        if ul != None and ul.li != None:
+            description += 'instructors:' + ul.li.text + ' '
+        
         div = soup.find("div", id="course-detail-description")
         if div != None:
-            return div.text.replace("\n","")
-        return ""
+            description += 'description:' + div.text.replace("\n","").replace('Description:', '').strip()
+        return description
 
     def processData(self, semester, dept):
         print "processing " + self.dept_dict[dept] + " " + semester + " data"
