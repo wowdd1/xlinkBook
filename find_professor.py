@@ -45,7 +45,7 @@ def getCmuFacultyUrl(keyword):
     soup = BeautifulSoup(jobj[1]['data'])
     for a in soup.find_all('a'):
         if a.attrs.has_key("href") and a['href'].find('www.cs.cmu.edu/directory') != -1:
-            r = requests.get('http://' + a['href'][2 : ])
+            r = requests.get(a['href'])
             soup = BeautifulSoup(r.text)
             for a in soup.find_all('a'):
                 if a.text.startswith('http://'):
