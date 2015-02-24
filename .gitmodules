@@ -7,3 +7,9 @@
 [submodule "paper/scholar.py"]
 	path = paper/scholar.py
 	url = git@github.com:ckreibich/scholar.py.git
+[submodule "external/datasciencemasters/go"]
+	path = external/datasciencemasters/go
+	url = git@github.com:datasciencemasters/go.git
+[submodule "external/datasciencemasters/data"]
+	path = external/datasciencemasters/data
+	url = git@github.com:datasciencemasters/data.git
