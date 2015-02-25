@@ -19,7 +19,7 @@ subject_dict = {\
     "163-OCW" : "163-ocw",\
     "Youtube" : "youtube",\
     "Design" : "design",\
-    "Economics" : "economics-finance",\
+    "Economics" : "economics",\
     "Finance" : "economics-finance",\
     "Education" : "education",\
     "Electronics" : "eecs",\
@@ -51,9 +51,10 @@ subject_dict = {\
 
 need_update_subject_list = [
     "eecs",
+    "mathematics",
+    #'economics',
     "163-ocw",
     "youtube",
-    "mathematics",
     #"physics",
     #"biology-life-sciences",
     "statistics-data-analysis"
