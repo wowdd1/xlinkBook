@@ -61,11 +61,11 @@ class YoutubeSpider(Spider):
         for k, v in [(k,self.courses[k]) for k in sorted(self.courses.keys())]:
             print k + ' ' + v
             self.count += 1
-            video_id = 'pl-' + user + '-' + str(self.count)
+            video_id = user + '-' + str(self.count)
             if k.startswith('MIT'):
                 k = k[4:]
                 if k[0 : k.find(' ')].find('.') != -1:
-                    video_id = 'pl-' + user + '-' + k[0 : k.find(' ')]
+                    video_id = user + '-' + k[0 : k.find(' ')]
                     k = k[k.find(' ') : ].strip()
 
             self.write_db(f, video_id, k, v, 'videourl:' + v)
