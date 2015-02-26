@@ -14,14 +14,15 @@ class CMUSpider(Spider):
         r = requests.get(url)
         soup = BeautifulSoup(r.text);
         description = ''
-        for div in soup.find_all('div', class_='col-md-6'):
-            if div != None and div.text.find('None') == -1 and div.text.find('Prerequisites') != -1:
-                description += 'prereq:' + div.text.replace("\n","").replace('Prerequisites', '').strip() + ' '
-                break
         ul = soup.find('ul', class_='list-unstyled instructor')
         if ul != None and ul.li != None:
             description += 'instructors:' + ul.li.text + ' '
         
+        for div in soup.find_all('div', class_='col-md-6'):
+            if div != None and div.text.find('None') == -1 and div.text.find('Prerequisites') != -1:
+                description += 'prereq:' + div.text.replace("\n","").replace('Prerequisites', '').strip() + ' '
+                break
+
         div = soup.find("div", id="course-detail-description")
         if div != None:
             description += 'description:' + div.text.replace("\n","").replace('Description:', '').strip()
