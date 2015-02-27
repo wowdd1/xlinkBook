@@ -41,8 +41,8 @@ subject_dict = {\
     "Medicine" : "medicine",\
     "Music" : "music",\
     "Philanthropy" : "philanthropy",\
-    "Philosophy" : "philosophy-ethics",\
-    "Ethics" : "philosophy-ethics",\
+    "Philosophy" : "philosophy",\
+    "Ethics" : "ethics",\
     "Physics" : "physics",\
     "Social Sciences" : "social-sciences",\
     "Science" : "science",\
@@ -50,14 +50,16 @@ subject_dict = {\
     "Data Analysis" : "statistics-data-analysis"}
 
 need_update_subject_list = [
-    "eecs",
-    "mathematics",
+    'eecs',
+    'mathematics',
     #'economics',
-    "163-ocw",
-    "youtube",
-    #"physics",
-    #"biology-life-sciences",
-    "statistics-data-analysis"
+    '163-ocw',
+    'youtube',
+    #'physics',
+    #'biology-life-sciences',
+    #'literature',
+    #'philosophy',
+    'statistics-data-analysis'
 ]
 def print_all_subject():
     for (k, v) in subject_dict.items():
