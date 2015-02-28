@@ -126,7 +126,6 @@ class Utils:
     yahoo = "https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p="
 
     search_engin_list = [google, baidu, bing, yahoo]
-    default_path = os.getcwd() + "/db/" + default_subject + "/"
     def validEngin(self, engin):
         for item in self.search_engin_list:
             if item.lower().find(engin.lower()) != -1:
@@ -140,10 +139,13 @@ class Utils:
             pos = file_name.find('/', pos) + 1
         return file_name[pos : ]
 
-    def getRecord(self, keyword, use_subject='', path=default_path, return_all=False):
+    def getRecord(self, keyword, use_subject='', path='', return_all=False):
         subject = default_subject;
         if use_subject != "":
             subject = use_subject
+        if path == '':
+            path = self.getPath(subject)
+
         print 'searching %s'%keyword + " in " + subject
         record_list = []
         for file_name in self.find_file_by_pattern(".*", path):
@@ -167,8 +169,10 @@ class Utils:
             print "no record found in " + subject +" db"
             return Record('')
 
+    def getPath(self, subject):
+        return os.getcwd() + "/db/" + subject + "/"
 
-    def getUrl(self, keyword, use_subject='', engin='', path=default_path):
+    def getUrl(self, keyword, use_subject='', engin=''):
         urls = []
         url = ""
         subject = default_subject;
@@ -176,7 +180,7 @@ class Utils:
             subject = use_subject
         print 'searching %s'%keyword + " in " + subject
 
-        for file_name in self.find_file_by_pattern(".*", path):
+        for file_name in self.find_file_by_pattern(".*", self.getPath(subject)):
             f = open(file_name)
             for line in f.readlines():
                 record = Record(line)
