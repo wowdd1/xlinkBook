@@ -96,7 +96,7 @@ def print_with_color(text):
         utils.print_colorful("darkcyan", True, text)
     color_index += 1
 
-def print_table_head(col, id_name='id', title='title'):
+def print_table_head(col, id_name='id', title='topic'):
     if output_with_describe == True:
         title = "detail"
     table_head_mid = ''
