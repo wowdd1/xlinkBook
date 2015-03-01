@@ -23,7 +23,10 @@ class CMUSpider(Spider):
         description = ''
         ul = soup.find('ul', class_='list-unstyled instructor')
         if ul != None and ul.li != None:
-            description += 'instructors:' + ul.li.text + ' '
+            instructors = ul.text.replace('\n', '').strip()
+            while instructors.find('  ') != -1:
+                instructors = instructors.replace('  ', ' ')
+            description += 'instructors:' + instructors + ' '
         
         for div in soup.find_all('div', class_='col-md-6'):
             if div != None and div.text.find('None') == -1 and div.text.find('Prerequisites') != -1:
