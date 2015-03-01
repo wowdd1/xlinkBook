@@ -50,7 +50,18 @@ def getCmuFacultyUrl(keyword):
             for a in soup.find_all('a'):
                 if a.text.startswith('http://'):
                     return a['href']
-                    
+    post_data = {'u_menu_code' : '02',\
+                 'search_category':"01",\
+                 'search_keyword': keyword,\
+                 'x':"12",\
+                 'y':"8",\
+                 'name':"n"
+                }
+    r = requests.post('http://www.ri.cmu.edu/ri_search_result.html', post_data)
+    soup = BeautifulSoup(r.text)
+    url = soup.find('a', class_='hidden_link')
+    if url != None:
+        return 'http://www.ri.cmu.edu/' + url['href']
     return ''
 def getPrincetonFacultyUrl(base_url, href):
     r = requests.get(base_url + href)
