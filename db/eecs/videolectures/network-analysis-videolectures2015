@@ -1,265 +1,265 @@
 vl-28-1 | Research at Twitter | http://videolectures.net/solomon_kolcz_twitter/ | instructors:Aleksander Kołcz
-vl-28-2 | Calculus on Graphs | http://videolectures.net/complexnetworks2012_friedman_calculus/ | instructors:Joel Friedman
-vl-28-3 | Structure and Dynamics in Complex Networks | http://videolectures.net/eccs07_newman_sdc/ | instructors:Mark Newman
-vl-28-4 | Classification and Clustering in Large Complex Networks | http://videolectures.net/solomon_eliassi_rad_classification/ | instructors:Tina Eliassi-Rad
-vl-28-5 | Network topology as a source of information | http://videolectures.net/solomon_przulj_topology/ | instructors:Nataša Pržulj
-vl-28-6 | Link analysis with pajek | http://videolectures.net/acai05_kejzar_lasn/ | instructors:Nataša Kejžar
-vl-28-7 | Complex Networks: Overview and Perspectives | http://videolectures.net/complexnetworks2012_barthelemy_networks/ | instructors:Marc Barthélémy
-vl-28-8 | Predicting Positive and Negative Links in Online Social Networks | http://videolectures.net/www2010_leskovec_ppn/ | instructors:Jure Leskovec
-vl-28-9 | Introduction to Network Analysis | http://videolectures.net/akom08_grobelnik_ina/ | instructors:Marko Grobelnik, Dunja Mladenić
-vl-28-10 | Measuring User Influence on Twitter: The Million Follower Fallacy | http://videolectures.net/icwsm2010_cha_mui/ | instructors:Meeyoung Cha
-vl-28-11 | Your Brain on Facebook: Neuropsychological Associations with Social Versus other Media | http://videolectures.net/icwsm2010_counts_ybf/ | instructors:Scott Counts
-vl-28-12 | Empirical Comparison of Algorithms for Network Community Detection | http://videolectures.net/www2010_leskovec_eca/ | instructors:Jure Leskovec
-vl-28-13 | Microscopic Evolution of Social Networks | http://videolectures.net/kdd08_leskovec_mesn/ | instructors:Jure Leskovec
-vl-28-14 | Prijatelji in sovražniki: Socialna omrežja s pozitivnimi in negativnimi povezavami | http://videolectures.net/fmf_leskovec_socialna_omrezja/ | instructors:Jure Leskovec
-vl-28-15 | Diffusion and Cascading Behaviour in Networks | http://videolectures.net/mmdss07_leskovec_dcbn/ | instructors:Jure Leskovec
-vl-28-16 | Emergent Networks as Distributed Reputation System | http://videolectures.net/eccs07_hales_end/ | instructors:David Hales
-vl-28-17 | Bayesian nonparametric models for bipartite graphs | http://videolectures.net/nips2012_caron_graphs/ | instructors:François Caron
-vl-28-18 | Communicability in Complex Networks | http://videolectures.net/complexnetworks2012_estrada_communicability/ | instructors:Ernesto Estrada
-vl-28-19 | The Structure of Information Pathways in a Social Communication Network | http://videolectures.net/kdd08_kleinberg_sipscn/ | instructors:Jon Kleinberg
-vl-28-20 | Semantic role frames graph-based multidocument summarization | http://videolectures.net/sikdd2011_canhasi_multidocument/ | instructors:Ercan Canhasi
-vl-28-21 | Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment | http://videolectures.net/icwsm2010_sprenger_pet/ | instructors:Timm O. Sprenger
-vl-28-22 | The Wisdom in Tweetonomies: Acquiring Latent Conceptual Structures from Social Awareness Streams | http://videolectures.net/www2010_wagner_twt/ | instructors:Claudia Wagner
-vl-28-23 | Scalable Collaborative Filtering Algorithms for Mining Social Networks | http://videolectures.net/bsciw08_chang_scfamsn/ | instructors:Edward Chang
-vl-28-24 | Temporal Graphs for Dynamic Network Analysis | http://videolectures.net/complexnetworks2012_musolesi_temporal_graphs/ | instructors:Mirco Musolesi
-vl-28-25 | Cost-effective Outbreak Detection in Networks | http://videolectures.net/solomon_leskovec_ceod/ | instructors:Jure Leskovec
-vl-28-26 | Identifying the Influential Bloggers | http://videolectures.net/wsdm08_agarwal_iib/ | instructors:Nitin Agarwal
-vl-28-27 | Networks through a Quantum Lens | http://videolectures.net/complexnetworks2012_severini_quantum_lens/ | instructors:Simone Severini
-vl-28-28 | Geometry, Connectedness, and Dynamics | http://videolectures.net/complexnetworks2012_costa_geometry/ | instructors:Luciano da Fontoura Costa
-vl-28-29 | The Emergence of Conventions in Online Social Networks | http://videolectures.net/icwsm2012_kooti_networks/ | instructors:Farshad Kooti
-vl-28-30 | Models and Algorithms for Dynamic Networks | http://videolectures.net/complexnetworks2012_higham_dynamic_networks/ | instructors:Desmond J. Higham
-vl-28-31 | Modeling real-world networks using Kronecker multiplication | http://videolectures.net/solomon_leskovec_mrw/ | instructors:Jure Leskovec
-vl-28-32 | Weighted Graphs and Disconnected Components | http://videolectures.net/kdd08_mcglohon_wgdc/ | instructors:Mary McGlohon
-vl-28-33 | Supervised Learning of Graph Structure | http://videolectures.net/simbad2011_rossi_structure/ | instructors:Luca Rossi
-vl-28-34 | Governance in Social Media: A Case Study of the Wikipedia Promotion Process | http://videolectures.net/icwsm2010_leskovec_gsm/ | instructors:Jure Leskovec
-vl-28-35 | Influence of the network topology on epidemic spreading | http://videolectures.net/solomon_kocarev_epidemic_spreading/ | instructors:Ljupčo Kocarev
-vl-28-36 | Models for Protein-Protein Interaction Networks: What Do Age and (Large) Degree Tell Us? | http://videolectures.net/complexnetworks2012_reinert_protein_interaction/ | instructors:Gesine Reinert
-vl-28-37 | Walks on Networks | http://videolectures.net/complexnetworks2012_wilson_walks/ | instructors:Richard Wilson
-vl-28-38 | SCAN: A Structural Clustering Algorithm for Networks | http://videolectures.net/kdd07_xu_scan/ | instructors:Xiaowei Xu
-vl-28-39 | Community structure in graphs | http://videolectures.net/ephdcs08_fortunato_csig/ | instructors:Santo Fortunato
-vl-28-40 | Link Analysis and Text Mining : Current State of the Art and Applications for Counter Terrorism | http://videolectures.net/mmdss07_feldman_latm/ | instructors:Ronen Feldman
-vl-28-41 | An Introduction to Network Theory and Spatial Networks | http://videolectures.net/sscs06_barnett_intsn/ | instructors:Lionel Barnett
-vl-28-42 | Network of Networks and the Climate System | http://videolectures.net/kolokviji_kurths_dynamical_systems/ | instructors:Jürgen Kurths
-vl-28-43 | Social Media and Personal Media | http://videolectures.net/s3mr2010_boll_smpm/ | instructors:Susanne Boll
-vl-28-44 | Social Influence Analysis in Large-scale Networks | http://videolectures.net/kdd09_tang_sia/ | instructors:Jie Tang
-vl-28-45 | NADINE - New tools and Algorithms for DIrected NEtwork analysis | http://videolectures.net/searchcomputing2012_shepelyansky_nadine/ | instructors:Dima Shepelyansky
-vl-28-46 | Scalable Modeling of Real Graphs using Kronecker Multiplication | http://videolectures.net/icml07_leskovec_smrg/ | instructors:Jure Leskovec
-vl-28-47 | Link prediction via matrix factorization | http://videolectures.net/ecmlpkdd2011_elkan_factorization/ | instructors:Charles Elkan
-vl-28-48 | Can the Ambiance of a Place be Determined by the User Profiles of the People Who Visit It? | http://videolectures.net/icwsm2011_gosling_ambiance/ | instructors:Sam Gosling
-vl-28-49 | Learning Scale Free Networks by Reweighted L1 regularization | http://videolectures.net/aistats2011_liu_learning/ | instructors:Qiang Liu
-vl-28-50 | A Social Network Based Approach to Personalized Recommendation of Participatory Media Content | http://videolectures.net/icwsm08_seth_snba/ | instructors:Aaditeshwar Seth
-vl-28-51 | From Tweets to Polls: Linking Text Sentiment to Public Opinion Time Series | http://videolectures.net/icwsm2010_oconnor_ftp/ | instructors:Brendan O'Connor
-vl-28-52 | Time Varying Graphical Models: Reverse Engineering and Analyzing Rewiring Networks | http://videolectures.net/nips09_xing_tvgmrearn/ | instructors:Eric P. Xing
-vl-28-53 | Detecting weak but hierarchically-structured patterns in networks | http://videolectures.net/aistats2010_singh_dwbh/ | instructors:Aarti Singh
-vl-28-54 | Thermodynamic Depth of Networks | http://videolectures.net/complexnetworks2012_escolano_thermodynamic_depth/ | instructors:Francisco Escolano
-vl-28-55 | Identifying graph-structured activation patterns in networks | http://videolectures.net/nips2010_sharpnack_igs/ | instructors:James Sharpnack
-vl-28-56 | A Framework For Community Identification in Dynamic Social Networks | http://videolectures.net/kdd07_tantipathananandh_cidsn/ | instructors:Chayant Tantipathananandh
-vl-28-57 | Socio-Spatial Properties of Online Location-Based Social Networks | http://videolectures.net/icwsm2011_scellato_spatial/ | instructors:Salvatore Scellato
-vl-28-58 | On Social networks with an overview of graph drawing with demo of a system Pajek | http://videolectures.net/cov05_batagelj_snogd/ | instructors:Vladimir Batagelj
-vl-28-59 | Powering the Next Generation Media Search on the Web | http://videolectures.net/s3mr2010_van_zwol_pngm/ | instructors:Roelof Van Zwol
-vl-28-60 | Assessing Linked Data Mappings using Network Measures | http://videolectures.net/eswc2012_gueret_network_measures/ | instructors:Christophe Guéret
-vl-28-61 | One Graph is Worth a Thousand Logs: Uncovering Hidden Structures in Massive System Event Logs | http://videolectures.net/ecmlpkdd09_barash_gwtluhsmsel/ | instructors:Gilad Barash
-vl-28-62 | Learning to Infer Social Ties in Large Network | http://videolectures.net/ecmlpkdd2011_tang_learning/ | instructors:Wenbin Tang
-vl-28-63 | Peer and Authority Pressure in Information-Propagation Models | http://videolectures.net/ecmlpkdd2011_terzi_peer/ | instructors:Evimaria Terzi
-vl-28-64 | Cost-effective Outbreak Detection in Networks | http://videolectures.net/kdd07_leskovec_ceod/ | instructors:Jure Leskovec
-vl-28-65 | New complex networks for social systems | http://videolectures.net/cvss08_hermann_ncnfss/ | instructors:Hans Hermann
-vl-28-66 | Relational Learning with One Network: An Asymptotic Analysis | http://videolectures.net/aistats2011_xiang_network/ | instructors:Rongjing Xiang
-vl-28-67 | Controlled and uncontrolled environments in social networking websites and linguistic rules for multilingual websites | http://videolectures.net/w3cworkshop2011_pacella_websites/ | instructors:Chiara Pacella
-vl-28-68 | Finding a Team of Experts in Social Networks | http://videolectures.net/kdd09_lappas_fatoe/ | instructors:Theodoros Lappas
-vl-28-69 | Extracting Semantic Networks from Text via Relational Clustering | http://videolectures.net/ecmlpkdd08_kok_esnft/ | instructors:Stanley Kok, Pedro Domingos
-vl-28-70 | Exploring Semantic Social Networks using Virtual Reality | http://videolectures.net/iswc08_halpin_essn/ | instructors:Harry Reeves Halpin
-vl-28-71 | Can matrix coherence be efficiently and accurately estimated? | http://videolectures.net/aistats2011_talwalkar_matrix/ | instructors:Ameet Talwalkar
-vl-28-72 | Weighted Graphs and Disconnected Components: Patterns and a Generator | http://videolectures.net/cmulls08_mcglohon_wgdc/ | instructors:Mary McGlohon
-vl-28-73 | Representing, Querying and Transforming Social Networks with RDF/SPARQL | http://videolectures.net/eswc09_martin_rqat/ | instructors:Mauro San Martin
-vl-28-74 | Opinion Spam and Analysis | http://videolectures.net/wsdm08_jindal_osa/ | instructors:Nitin Jindal
-vl-28-75 | Boosting statistical network inference by incorporating prior knowledge from multiple sources | http://videolectures.net/mlsb2012_praveen_boosting/ | instructors:Paurush Praveen
-vl-28-76 | A Social Identity Approach to Identify Familiar Strangers in a Social Network | http://videolectures.net/icwsm09_agarwal_siaifs/ | instructors:Nitin Agarwal
-vl-28-77 | Dynamic networks at the edge of chaos | http://videolectures.net/ephdcs08_gil_dnateoc/ | instructors:Santiago Gil
-vl-28-78 | Gene Regulatory Network Inference: In Silico Hypotheses and Experimental Validation | http://videolectures.net/pmnp07_wild_grni/ | instructors:David Wild
-vl-28-79 | Integrating literature-constrained and data-driven inference of signalling networks | http://videolectures.net/mlsb2012_eduati_integrating/ | instructors:Federica Eduati
-vl-28-80 | The Effect of User Features on Churn in Social Networks | http://videolectures.net/acmwebsci2011_karnstedt_churn/ | instructors:Marcel Karnstedt
-vl-28-81 | Transfer Learning for Collaborative Filtering via a Rating-Matrix Generative Model | http://videolectures.net/icml09_li_tlcfvrmgm/ | instructors:Bin Li
-vl-28-82 | A Large-Scale Study of MySpace: Observations and Implications for Online Social Networks | http://videolectures.net/icwsm08_caverlee_lssm/ | instructors:James Caverlee
-vl-28-83 | Discriminative Network Models of Schizophrenia | http://videolectures.net/nips09_cecchi_dnms/ | instructors:Guillermo A. Cecchi
-vl-28-84 | Fluctuation scaling in complex systems: Taylor's law and beyond | http://videolectures.net/ephdcs08_kertesz_fsics/ | instructors:János Kertész
-vl-28-85 | Induction of Node Label Controlled Graph Grammar Rules | http://videolectures.net/mlg08_blockeel_inl/ | instructors:Hendrik Blockeel
-vl-28-86 | A Shapley value Approach for Influence Attribution | http://videolectures.net/ecmlpkdd2011_papapetrou_shapley/ | instructors:Panagiotis Papapetrou
-vl-28-87 | Information Contagion: an Empirical Study of the Spread of News on Digg and Twitter Social Networks | http://videolectures.net/icwsm2010_lerman_ice/ | instructors:Kristina Lerman
-vl-28-88 | Parallel Structural Graph Clustering | http://videolectures.net/ecmlpkdd2011_seeland_clustering/ | instructors:Madeleine Seeland
-vl-28-89 | A Community-Based Pseudolikelihood Approach for Relationship Labeling in Social Networks | http://videolectures.net/ecmlpkdd2011_wan_community/ | instructors:Huaiyu Wan
-vl-28-90 | iLink: Search and Routing in Social Networks - Part 1 | http://videolectures.net/kdd07_davitz_ilink/ | instructors:Jeffrey Davitz
-vl-28-91 | Connectivity Structure of Bipartite Graphs via the KNC-Plot | http://videolectures.net/wsdm08_vee_csbg/ | instructors:Erik Vee
-vl-28-92 | 'Lies, Damn Lies, and Statistics': A Critical Assessment of Preferential Attachment-type Network Models of the Internet | http://videolectures.net/eccs07_willinger_ldl/ | instructors:Walter Willinger
-vl-28-93 | VideoLectures.net case study | http://videolectures.net/taoiw09_grcar_videolectures/ | instructors:Miha Grčar, Peter Keše
-vl-28-94 | DB-CSC: A density-based approach for subspace clustering in graphs with feature vectors | http://videolectures.net/ecmlpkdd2011_gunnemann_vectors/ | instructors:Stephan Günnemann
-vl-28-95 | Keystones in Ecological Webs | http://videolectures.net/complexnetworks2012_jordan_ecological_webs/ | instructors:Ferenc Jordán
-vl-28-96 | Inference and Learning with Networked Data | http://videolectures.net/mmdss07_provost_ilwn/ | instructors:Foster Provost
-vl-28-97 | How Does the Data Sampling Strategy Impact the Discovery of Information Diffusion in Social Media? | http://videolectures.net/icwsm2010_dechoudhury_hdd/ | instructors:Munmun De Choudhury
-vl-28-98 | An Algorithm to find OverlappingCommunity Structure in Networks | http://videolectures.net/ecml07_gregory_afo/ | instructors:Steve Gregory
-vl-28-99 | Validating inferred gene networks using ODE models of regulation dynamics | http://videolectures.net/licsb08_erguler_vig/ | instructors:Michael Stumpf
-vl-28-100 | Unsupervised Prediction of Citation Influences | http://videolectures.net/icml07_dietz_upc/ | instructors:Laura Dietz
-vl-28-101 | Mixed Cumulative Distribution Networks | http://videolectures.net/aistats2011_silva_cumulative/ | instructors:Ricardo Silva
-vl-28-102 | Learning Spectral Graph Transformations for Link Prediction | http://videolectures.net/icml09_kunegis_lsgtlp/ | instructors:Jérôme Kunegis
-vl-28-103 | Network Regression with Predictive Clustering Trees | http://videolectures.net/ecmlpkdd2011_stojanova_ceci_regression/ | instructors:Daniela Stojanova, Michelangelo Ceci
-vl-28-104 | Efficient and Decentralized PageRank Approximation in a P2P Web Search Network | http://videolectures.net/fws06_parreira_edpap/ | instructors:Josiane Parreira
-vl-28-105 | Social Networks from the Perspective of Physics | http://videolectures.net/eccs07_kertesz_snp/ | instructors:János Kertész
-vl-28-106 | An Event-based Framework for Characterizing the Evolutionary Behavior of Interaction Graphs | http://videolectures.net/kdd07_asur_aebf/ | instructors:Sitaram Asur
-vl-28-107 | The computational limitations of balanced networks | http://videolectures.net/eccs08_vreeswijk_tclobn/ | instructors:Carl van Vreeswijk
-vl-28-108 | Competing to Share Expertise: the Taskcn Knowledge Sharing Community | http://videolectures.net/icwsm08_yang_cse/ | instructors:Jiang Yang, Lada Adamic, Mark Ackerman
-vl-28-109 | Towards Social Causality: An Analysis of Interpersonal Relations in Online Blogs and Forums | http://videolectures.net/icwsm2010_girju_tsc/ | instructors:Roxana Girju
-vl-28-110 | Fully Coupled Systems with Activator-Inhibitor States Linked within Homophilic Dynamically Evolving Networks | http://videolectures.net/complexnetworks2012_grindrod_evolving_networks/ | instructors:Peter Grindrod
-vl-28-111 | Photo Tagging Over Time: A Longitudinal Study of the Role of Attention, Network Density, and Motivations | http://videolectures.net/icwsm2010_russo_tot/ | instructors:Paul Russo
-vl-28-112 | Sequential Influence Models in Social Networks | http://videolectures.net/icwsm2010_suri_sim/ | instructors:Siddharth Suri
-vl-28-113 | Towards a physics of society | http://videolectures.net/eccs08_fortunato_tapos/ | instructors:Santo Fortunato
-vl-28-114 | Dynamic Visualization of Internet Topology Evolution | http://videolectures.net/eccs07_brandes_dvi/ | instructors:Ulrik Brandes
-vl-28-115 | Battling Networks of Rival Social Movements | http://videolectures.net/fdv07_doreian_bnr/ | instructors:Patrick Doreian
-vl-28-116 | Morphological Operators for Flooding, Leveling and Filtering Images Using Graphs | http://videolectures.net/gbr07_meyer_moff/ | instructors:Fernand Meyer
-vl-28-117 | COSNet: a Cost Sensitive Neural Network for Semi-supervised Learning in Graphs | http://videolectures.net/ecmlpkdd2011_frasca_cosnet/ | instructors:Marco Frasca
-vl-28-118 | A Partial Correlation-Based Algorithm for Causal Structure Discovery with Continuous Variables | http://videolectures.net/ida07_pellet_apcba/ | instructors:Jean-Philippe Pellet
-vl-28-119 | On Compressing Social Networks | http://videolectures.net/kdd09_kumar_ocsn/ | instructors:Ravi Kumar
-vl-28-120 | Visualizations of slovenian scientific community | http://videolectures.net/sikdd2011_karlovcec_community/ | instructors:Mario Karlovčec
-vl-28-121 | Unifying Guilt-by-Association Approaches: Theorems and Fast Algorithms | http://videolectures.net/ecmlpkdd2011_koutra_approaches/ | instructors:Danai Koutra
-vl-28-122 | Flash Floods and Ripples: The Spread of Media Content through the Blogosphere | http://videolectures.net/icwsm09_cha_ffr/ | instructors:Meeyoung Cha
-vl-28-123 | One Tag to bind them all: Measuring Term Abstractness in Social Metadata | http://videolectures.net/eswc2011_benz_tag/ | instructors:Dominik Benz, Denny Vrandečić
-vl-28-124 | CourseRank: A Closed-Community Social System through the Magnifying Glass | http://videolectures.net/icwsm09_koutrika_crccss/ | instructors:Koutrika Georgia
-vl-28-125 | Analyzing Patterns of User Content Generation in Online Social Networks | http://videolectures.net/kdd09_guo_apou/ | instructors:Lei Guo
-vl-28-126 | Learning Bidirectional Similarity for Collaborative Filtering | http://videolectures.net/ecmlpkdd08_cao_lbsf/ | instructors:Bin Cao, Qiang Yang,
+vl-28-2 | Structure and Dynamics in Complex Networks | http://videolectures.net/eccs07_newman_sdc/ | instructors:Mark Newman
+vl-28-3 | Link analysis with pajek | http://videolectures.net/acai05_kejzar_lasn/ | instructors:Nataša Kejžar
+vl-28-4 | Introduction to Network Analysis | http://videolectures.net/akom08_grobelnik_ina/ | instructors:Marko Grobelnik, Dunja Mladenić
+vl-28-5 | Diffusion and Cascading Behaviour in Networks | http://videolectures.net/mmdss07_leskovec_dcbn/ | instructors:Jure Leskovec
+vl-28-6 | Microscopic Evolution of Social Networks | http://videolectures.net/kdd08_leskovec_mesn/ | instructors:Jure Leskovec
+vl-28-7 | Classification and Clustering in Large Complex Networks | http://videolectures.net/solomon_eliassi_rad_classification/ | instructors:Tina Eliassi-Rad
+vl-28-8 | Emergent Networks as Distributed Reputation System | http://videolectures.net/eccs07_hales_end/ | instructors:David Hales
+vl-28-9 | Predicting Positive and Negative Links in Online Social Networks | http://videolectures.net/www2010_leskovec_ppn/ | instructors:Jure Leskovec
+vl-28-10 | Cost-effective Outbreak Detection in Networks | http://videolectures.net/solomon_leskovec_ceod/ | instructors:Jure Leskovec
+vl-28-11 | Calculus on Graphs | http://videolectures.net/complexnetworks2012_friedman_calculus/ | instructors:Joel Friedman
+vl-28-12 | Measuring User Influence on Twitter: The Million Follower Fallacy | http://videolectures.net/icwsm2010_cha_mui/ | instructors:Meeyoung Cha
+vl-28-13 | Modeling real-world networks using Kronecker multiplication | http://videolectures.net/solomon_leskovec_mrw/ | instructors:Jure Leskovec
+vl-28-14 | Empirical Comparison of Algorithms for Network Community Detection | http://videolectures.net/www2010_leskovec_eca/ | instructors:Jure Leskovec
+vl-28-15 | Your Brain on Facebook: Neuropsychological Associations with Social Versus other Media | http://videolectures.net/icwsm2010_counts_ybf/ | instructors:Scott Counts
+vl-28-16 | Identifying the Influential Bloggers | http://videolectures.net/wsdm08_agarwal_iib/ | instructors:Nitin Agarwal
+vl-28-17 | The Structure of Information Pathways in a Social Communication Network | http://videolectures.net/kdd08_kleinberg_sipscn/ | instructors:Jon Kleinberg
+vl-28-18 | Scalable Collaborative Filtering Algorithms for Mining Social Networks | http://videolectures.net/bsciw08_chang_scfamsn/ | instructors:Edward Chang
+vl-28-19 | Weighted Graphs and Disconnected Components | http://videolectures.net/kdd08_mcglohon_wgdc/ | instructors:Mary McGlohon
+vl-28-20 | Prijatelji in sovražniki: Socialna omrežja s pozitivnimi in negativnimi povezavami | http://videolectures.net/fmf_leskovec_socialna_omrezja/ | instructors:Jure Leskovec
+vl-28-21 | SCAN: A Structural Clustering Algorithm for Networks | http://videolectures.net/kdd07_xu_scan/ | instructors:Xiaowei Xu
+vl-28-22 | An Introduction to Network Theory and Spatial Networks | http://videolectures.net/sscs06_barnett_intsn/ | instructors:Lionel Barnett
+vl-28-23 | Link Analysis and Text Mining : Current State of the Art and Applications for Counter Terrorism | http://videolectures.net/mmdss07_feldman_latm/ | instructors:Ronen Feldman
+vl-28-24 | The Wisdom in Tweetonomies: Acquiring Latent Conceptual Structures from Social Awareness Streams | http://videolectures.net/www2010_wagner_twt/ | instructors:Claudia Wagner
+vl-28-25 | Network topology as a source of information | http://videolectures.net/solomon_przulj_topology/ | instructors:Nataša Pržulj
+vl-28-26 | Complex Networks: Overview and Perspectives | http://videolectures.net/complexnetworks2012_barthelemy_networks/ | instructors:Marc Barthélémy
+vl-28-27 | Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment | http://videolectures.net/icwsm2010_sprenger_pet/ | instructors:Timm O. Sprenger
+vl-28-28 | Community structure in graphs | http://videolectures.net/ephdcs08_fortunato_csig/ | instructors:Santo Fortunato
+vl-28-29 | Scalable Modeling of Real Graphs using Kronecker Multiplication | http://videolectures.net/icml07_leskovec_smrg/ | instructors:Jure Leskovec
+vl-28-30 | Governance in Social Media: A Case Study of the Wikipedia Promotion Process | http://videolectures.net/icwsm2010_leskovec_gsm/ | instructors:Jure Leskovec
+vl-28-31 | Semantic role frames graph-based multidocument summarization | http://videolectures.net/sikdd2011_canhasi_multidocument/ | instructors:Ercan Canhasi
+vl-28-32 | A Social Network Based Approach to Personalized Recommendation of Participatory Media Content | http://videolectures.net/icwsm08_seth_snba/ | instructors:Aaditeshwar Seth
+vl-28-33 | Social Influence Analysis in Large-scale Networks | http://videolectures.net/kdd09_tang_sia/ | instructors:Jie Tang
+vl-28-34 | A Framework For Community Identification in Dynamic Social Networks | http://videolectures.net/kdd07_tantipathananandh_cidsn/ | instructors:Chayant Tantipathananandh
+vl-28-35 | On Social networks with an overview of graph drawing with demo of a system Pajek | http://videolectures.net/cov05_batagelj_snogd/ | instructors:Vladimir Batagelj
+vl-28-36 | Social Media and Personal Media | http://videolectures.net/s3mr2010_boll_smpm/ | instructors:Susanne Boll
+vl-28-37 | Communicability in Complex Networks | http://videolectures.net/complexnetworks2012_estrada_communicability/ | instructors:Ernesto Estrada
+vl-28-38 | Cost-effective Outbreak Detection in Networks | http://videolectures.net/kdd07_leskovec_ceod/ | instructors:Jure Leskovec
+vl-28-39 | Temporal Graphs for Dynamic Network Analysis | http://videolectures.net/complexnetworks2012_musolesi_temporal_graphs/ | instructors:Mirco Musolesi
+vl-28-40 | Supervised Learning of Graph Structure | http://videolectures.net/simbad2011_rossi_structure/ | instructors:Luca Rossi
+vl-28-41 | Bayesian nonparametric models for bipartite graphs | http://videolectures.net/nips2012_caron_graphs/ | instructors:François Caron
+vl-28-42 | Networks through a Quantum Lens | http://videolectures.net/complexnetworks2012_severini_quantum_lens/ | instructors:Simone Severini
+vl-28-43 | Geometry, Connectedness, and Dynamics | http://videolectures.net/complexnetworks2012_costa_geometry/ | instructors:Luciano da Fontoura Costa
+vl-28-44 | Time Varying Graphical Models: Reverse Engineering and Analyzing Rewiring Networks | http://videolectures.net/nips09_xing_tvgmrearn/ | instructors:Eric P. Xing
+vl-28-45 | The Emergence of Conventions in Online Social Networks | http://videolectures.net/icwsm2012_kooti_networks/ | instructors:Farshad Kooti
+vl-28-46 | Models and Algorithms for Dynamic Networks | http://videolectures.net/complexnetworks2012_higham_dynamic_networks/ | instructors:Desmond J. Higham
+vl-28-47 | New complex networks for social systems | http://videolectures.net/cvss08_hermann_ncnfss/ | instructors:Hans Hermann
+vl-28-48 | From Tweets to Polls: Linking Text Sentiment to Public Opinion Time Series | http://videolectures.net/icwsm2010_oconnor_ftp/ | instructors:Brendan O'Connor
+vl-28-49 | Gene Regulatory Network Inference: In Silico Hypotheses and Experimental Validation | http://videolectures.net/pmnp07_wild_grni/ | instructors:David Wild
+vl-28-50 | Opinion Spam and Analysis | http://videolectures.net/wsdm08_jindal_osa/ | instructors:Nitin Jindal
+vl-28-51 | Detecting weak but hierarchically-structured patterns in networks | http://videolectures.net/aistats2010_singh_dwbh/ | instructors:Aarti Singh
+vl-28-52 | Extracting Semantic Networks from Text via Relational Clustering | http://videolectures.net/ecmlpkdd08_kok_esnft/ | instructors:Stanley Kok, Pedro Domingos
+vl-28-53 | iLink: Search and Routing in Social Networks - Part 1 | http://videolectures.net/kdd07_davitz_ilink/ | instructors:Jeffrey Davitz
+vl-28-54 | Exploring Semantic Social Networks using Virtual Reality | http://videolectures.net/iswc08_halpin_essn/ | instructors:Harry Reeves Halpin
+vl-28-55 | One Graph is Worth a Thousand Logs: Uncovering Hidden Structures in Massive System Event Logs | http://videolectures.net/ecmlpkdd09_barash_gwtluhsmsel/ | instructors:Gilad Barash
+vl-28-56 | 'Lies, Damn Lies, and Statistics': A Critical Assessment of Preferential Attachment-type Network Models of the Internet | http://videolectures.net/eccs07_willinger_ldl/ | instructors:Walter Willinger
+vl-28-57 | A Large-Scale Study of MySpace: Observations and Implications for Online Social Networks | http://videolectures.net/icwsm08_caverlee_lssm/ | instructors:James Caverlee
+vl-28-58 | Powering the Next Generation Media Search on the Web | http://videolectures.net/s3mr2010_van_zwol_pngm/ | instructors:Roelof Van Zwol
+vl-28-59 | Efficient and Decentralized PageRank Approximation in a P2P Web Search Network | http://videolectures.net/fws06_parreira_edpap/ | instructors:Josiane Parreira
+vl-28-60 | Unsupervised Prediction of Citation Influences | http://videolectures.net/icml07_dietz_upc/ | instructors:Laura Dietz
+vl-28-61 | Weighted Graphs and Disconnected Components: Patterns and a Generator | http://videolectures.net/cmulls08_mcglohon_wgdc/ | instructors:Mary McGlohon
+vl-28-62 | Dynamic networks at the edge of chaos | http://videolectures.net/ephdcs08_gil_dnateoc/ | instructors:Santiago Gil
+vl-28-63 | Connectivity Structure of Bipartite Graphs via the KNC-Plot | http://videolectures.net/wsdm08_vee_csbg/ | instructors:Erik Vee
+vl-28-64 | Models for Protein-Protein Interaction Networks: What Do Age and (Large) Degree Tell Us? | http://videolectures.net/complexnetworks2012_reinert_protein_interaction/ | instructors:Gesine Reinert
+vl-28-65 | Learning Scale Free Networks by Reweighted L1 regularization | http://videolectures.net/aistats2011_liu_learning/ | instructors:Qiang Liu
+vl-28-66 | Inference and Learning with Networked Data | http://videolectures.net/mmdss07_provost_ilwn/ | instructors:Foster Provost
+vl-28-67 | Induction of Node Label Controlled Graph Grammar Rules | http://videolectures.net/mlg08_blockeel_inl/ | instructors:Hendrik Blockeel
+vl-28-68 | Walks on Networks | http://videolectures.net/complexnetworks2012_wilson_walks/ | instructors:Richard Wilson
+vl-28-69 | Identifying graph-structured activation patterns in networks | http://videolectures.net/nips2010_sharpnack_igs/ | instructors:James Sharpnack
+vl-28-70 | Finding a Team of Experts in Social Networks | http://videolectures.net/kdd09_lappas_fatoe/ | instructors:Theodoros Lappas
+vl-28-71 | Fluctuation scaling in complex systems: Taylor's law and beyond | http://videolectures.net/ephdcs08_kertesz_fsics/ | instructors:János Kertész
+vl-28-72 | An Algorithm to find OverlappingCommunity Structure in Networks | http://videolectures.net/ecml07_gregory_afo/ | instructors:Steve Gregory
+vl-28-73 | An Event-based Framework for Characterizing the Evolutionary Behavior of Interaction Graphs | http://videolectures.net/kdd07_asur_aebf/ | instructors:Sitaram Asur
+vl-28-74 | Representing, Querying and Transforming Social Networks with RDF/SPARQL | http://videolectures.net/eswc09_martin_rqat/ | instructors:Mauro San Martin
+vl-28-75 | Social Networks from the Perspective of Physics | http://videolectures.net/eccs07_kertesz_snp/ | instructors:János Kertész
+vl-28-76 | Can the Ambiance of a Place be Determined by the User Profiles of the People Who Visit It? | http://videolectures.net/icwsm2011_gosling_ambiance/ | instructors:Sam Gosling
+vl-28-77 | Validating inferred gene networks using ODE models of regulation dynamics | http://videolectures.net/licsb08_erguler_vig/ | instructors:Michael Stumpf
+vl-28-78 | A Social Identity Approach to Identify Familiar Strangers in a Social Network | http://videolectures.net/icwsm09_agarwal_siaifs/ | instructors:Nitin Agarwal
+vl-28-79 | Link prediction via matrix factorization | http://videolectures.net/ecmlpkdd2011_elkan_factorization/ | instructors:Charles Elkan
+vl-28-80 | Morphological Operators for Flooding, Leveling and Filtering Images Using Graphs | http://videolectures.net/gbr07_meyer_moff/ | instructors:Fernand Meyer
+vl-28-81 | VideoLectures.net case study | http://videolectures.net/taoiw09_grcar_videolectures/ | instructors:Miha Grčar, Peter Keše
+vl-28-82 | Dynamic Visualization of Internet Topology Evolution | http://videolectures.net/eccs07_brandes_dvi/ | instructors:Ulrik Brandes
+vl-28-83 | Transfer Learning for Collaborative Filtering via a Rating-Matrix Generative Model | http://videolectures.net/icml09_li_tlcfvrmgm/ | instructors:Bin Li
+vl-28-84 | A Partial Correlation-Based Algorithm for Causal Structure Discovery with Continuous Variables | http://videolectures.net/ida07_pellet_apcba/ | instructors:Jean-Philippe Pellet
+vl-28-85 | Competing to Share Expertise: the Taskcn Knowledge Sharing Community | http://videolectures.net/icwsm08_yang_cse/ | instructors:Jiang Yang, Lada Adamic, Mark Ackerman
+vl-28-86 | Battling Networks of Rival Social Movements | http://videolectures.net/fdv07_doreian_bnr/ | instructors:Patrick Doreian
+vl-28-87 | Socio-Spatial Properties of Online Location-Based Social Networks | http://videolectures.net/icwsm2011_scellato_spatial/ | instructors:Salvatore Scellato
+vl-28-88 | The computational limitations of balanced networks | http://videolectures.net/eccs08_vreeswijk_tclobn/ | instructors:Carl van Vreeswijk
+vl-28-89 | Using Rank Propagation and Probabilistic Counting for Link-based Spam Detection | http://videolectures.net/fws06_castillo_urppc/ | instructors:Carlos Castillo
+vl-28-90 | Discriminative Network Models of Schizophrenia | http://videolectures.net/nips09_cecchi_dnms/ | instructors:Guillermo A. Cecchi
+vl-28-91 | Generating Graphs with Predefined k-Core Structure | http://videolectures.net/eccs07_gaertler_ggp/ | instructors:Marco Gaertler
+vl-28-92 | Towards a physics of society | http://videolectures.net/eccs08_fortunato_tapos/ | instructors:Santo Fortunato
+vl-28-93 | Mining Networks through Visual Analytics: | http://videolectures.net/mmdss07_melancon_mntv/ | instructors:Guy Melancon
+vl-28-94 | Simulating Dynamic ATM Network Effects using Cellular Automata | http://videolectures.net/eccs07_amor_sda/ | instructors:Soufian Ben Amor
+vl-28-95 | Learning Spectral Graph Transformations for Link Prediction | http://videolectures.net/icml09_kunegis_lsgtlp/ | instructors:Jérôme Kunegis
+vl-28-96 | Relational Learning with One Network: An Asymptotic Analysis | http://videolectures.net/aistats2011_xiang_network/ | instructors:Rongjing Xiang
+vl-28-97 | Structure and tie strengths in a mobile communication network | http://videolectures.net/mlg08_saramaki_sts/ | instructors:Jari Saramaki
+vl-28-98 | Information Contagion: an Empirical Study of the Spread of News on Digg and Twitter Social Networks | http://videolectures.net/icwsm2010_lerman_ice/ | instructors:Kristina Lerman
+vl-28-99 | Combining near-optimal feature selection with gSpan | http://videolectures.net/mlg08_thoma_cnofs/ | instructors:Marisa Thoma
+vl-28-100 | Learning Bidirectional Similarity for Collaborative Filtering | http://videolectures.net/ecmlpkdd08_cao_lbsf/ | instructors:Bin Cao, Qiang Yang,
    
     et al.
-vl-28-127 | Influence and Passivity in Social Media | http://videolectures.net/ecmlpkdd2011_romero_influence/ | instructors:Daniel M. Romero
-vl-28-128 | Structure and tie strengths in a mobile communication network | http://videolectures.net/mlg08_saramaki_sts/ | instructors:Jari Saramaki
-vl-28-129 | Identifying interactions in the time and frequency domains in local and global networks | http://videolectures.net/licsb2010_zou_iit/ | instructors:Cunlu Zou
-vl-28-130 | Predicting Discussions on the Social Semantic Web | http://videolectures.net/eswc2011_rowe_predicting/ | instructors:Matthew Rowe, Denny Vrandečić
-vl-28-131 | Graph Evolution via Social Diffusion Processes | http://videolectures.net/ecmlpkdd2011_ding_graph/ | instructors:Chris Ding
-vl-28-132 | Combining near-optimal feature selection with gSpan | http://videolectures.net/mlg08_thoma_cnofs/ | instructors:Marisa Thoma
-vl-28-133 | Learning Temporal Sequence of Biological Networks | http://videolectures.net/mlcb08_song_ltsbn/ | instructors:Le Song
-vl-28-134 | Generating Graphs with Predefined k-Core Structure | http://videolectures.net/eccs07_gaertler_ggp/ | instructors:Marco Gaertler
-vl-28-135 | Mining Research Topic-related Influence between Academia and Industry | http://videolectures.net/ecmlpkdd2011_tang_mining/ | instructors:Wenbin Tang
-vl-28-136 | Collective Wisdom: Information Growth in Wikis and Blogs | http://videolectures.net/bsciw08_das_cwigwb/ | instructors:Malik Magdon-Ismail, Sanmay Das
-vl-28-137 | Mining Networks through Visual Analytics: | http://videolectures.net/mmdss07_melancon_mntv/ | instructors:Guy Melancon
-vl-28-138 | Simulating Dynamic ATM Network Effects using Cellular Automata | http://videolectures.net/eccs07_amor_sda/ | instructors:Soufian Ben Amor
-vl-28-139 | Finding Representative Nodes in Probabilistic Graphs | http://videolectures.net/ecmlpkdd09_langohr_frnpg/ | instructors:Laura Langohr
-vl-28-140 | Improved Software Fault Detection with Graph Mining | http://videolectures.net/mlg08_eichinger_isfd/ | instructors:Frank Eichinger
-vl-28-141 | Using Rank Propagation and Probabilistic Counting for Link-based Spam Detection | http://videolectures.net/fws06_castillo_urppc/ | instructors:Carlos Castillo
-vl-28-142 | Symmetry in Graphs | http://videolectures.net/fmf07_pisanski_sgr/ | instructors:Tomaž Pisanski
-vl-28-143 | Dynamics of Information and Evaluation on Social Networks | http://videolectures.net/eccs08_nowak_doiaeosn/ | instructors:Andrzej Nowak
-vl-28-144 | Speeding up Algorithms on Compressed Web Graphs | http://videolectures.net/wsdm09_karande_suacwg/ | instructors:Chinmay D. Karande
-vl-28-145 | Preferential Behavior in Online Groups | http://videolectures.net/wsdm08_novak_pbog/ | instructors:Jasmine Novak
-vl-28-146 | Group formation: Fragmentation transitions in network coevolution dynamics | http://videolectures.net/cvss08_miguel_gfftnc/ | instructors:Maxi San Miguel
-vl-28-147 | Mining Edge-Weighted Call Graphs to Localise Software Bugs | http://videolectures.net/ecmlpkdd08_eichinger_mewc/ | instructors:Frank Eichinger, Klemens Böhm, Matthias Huber
-vl-28-148 | User Browsing Graph: Structure, Evolution and Application | http://videolectures.net/wsdm09_liu_ubgsea/ | instructors:Yiqun Liu, Yijiang Jin,
+vl-28-101 | Controlled and uncontrolled environments in social networking websites and linguistic rules for multilingual websites | http://videolectures.net/w3cworkshop2011_pacella_websites/ | instructors:Chiara Pacella
+vl-28-102 | NADINE - New tools and Algorithms for DIrected NEtwork analysis | http://videolectures.net/searchcomputing2012_shepelyansky_nadine/ | instructors:Dima Shepelyansky
+vl-28-103 | Learning to Infer Social Ties in Large Network | http://videolectures.net/ecmlpkdd2011_tang_learning/ | instructors:Wenbin Tang
+vl-28-104 | Peer and Authority Pressure in Information-Propagation Models | http://videolectures.net/ecmlpkdd2011_terzi_peer/ | instructors:Evimaria Terzi
+vl-28-105 | Can matrix coherence be efficiently and accurately estimated? | http://videolectures.net/aistats2011_talwalkar_matrix/ | instructors:Ameet Talwalkar
+vl-28-106 | Learning Temporal Sequence of Biological Networks | http://videolectures.net/mlcb08_song_ltsbn/ | instructors:Le Song
+vl-28-107 | Information Dynamics in a Networked World | http://videolectures.net/solomon_adamic_idnw/ | instructors:Lada Adamic
+vl-28-108 | Preferential Behavior in Online Groups | http://videolectures.net/wsdm08_novak_pbog/ | instructors:Jasmine Novak
+vl-28-109 | Improved Software Fault Detection with Graph Mining | http://videolectures.net/mlg08_eichinger_isfd/ | instructors:Frank Eichinger
+vl-28-110 | Flash Floods and Ripples: The Spread of Media Content through the Blogosphere | http://videolectures.net/icwsm09_cha_ffr/ | instructors:Meeyoung Cha
+vl-28-111 | How Does the Data Sampling Strategy Impact the Discovery of Information Diffusion in Social Media? | http://videolectures.net/icwsm2010_dechoudhury_hdd/ | instructors:Munmun De Choudhury
+vl-28-112 | Collective Wisdom: Information Growth in Wikis and Blogs | http://videolectures.net/bsciw08_das_cwigwb/ | instructors:Malik Magdon-Ismail, Sanmay Das
+vl-28-113 | Thermodynamic Depth of Networks | http://videolectures.net/complexnetworks2012_escolano_thermodynamic_depth/ | instructors:Francisco Escolano
+vl-28-114 | CourseRank: A Closed-Community Social System through the Magnifying Glass | http://videolectures.net/icwsm09_koutrika_crccss/ | instructors:Koutrika Georgia
+vl-28-115 | On Compressing Social Networks | http://videolectures.net/kdd09_kumar_ocsn/ | instructors:Ravi Kumar
+vl-28-116 | Influence of the network topology on epidemic spreading | http://videolectures.net/solomon_kocarev_epidemic_spreading/ | instructors:Ljupčo Kocarev
+vl-28-117 | An Efficient Sampling Scheme For Comparison of Large Graphs | http://videolectures.net/mlg07_borgwardt_aess/ | instructors:Karsten Michael Borgwardt
+vl-28-118 | Symmetry in Graphs | http://videolectures.net/fmf07_pisanski_sgr/ | instructors:Tomaž Pisanski
+vl-28-119 | Dynamics of Information and Evaluation on Social Networks | http://videolectures.net/eccs08_nowak_doiaeosn/ | instructors:Andrzej Nowak
+vl-28-120 | An overview of trust and trust building in networks | http://videolectures.net/antwerpen04_blomqvist_ottbn/ | instructors:Kirsimarja Blomqvist
+vl-28-121 | Analyzing Patterns of User Content Generation in Online Social Networks | http://videolectures.net/kdd09_guo_apou/ | instructors:Lei Guo
+vl-28-122 | Theoretical analysis of Link Analysis Ranking | http://videolectures.net/fws06_tsaparas_talar/ | instructors:Panayiotis Tsaparas
+vl-28-123 | Towards Social Causality: An Analysis of Interpersonal Relations in Online Blogs and Forums | http://videolectures.net/icwsm2010_girju_tsc/ | instructors:Roxana Girju
+vl-28-124 | Photo Tagging Over Time: A Longitudinal Study of the Role of Attention, Network Density, and Motivations | http://videolectures.net/icwsm2010_russo_tot/ | instructors:Paul Russo
+vl-28-125 | Recovering Temporally Rewiring Networks: A model-based approach | http://videolectures.net/icml07_guo_rtr/ | instructors:Fan Guo
+vl-28-126 | Speeding up Algorithms on Compressed Web Graphs | http://videolectures.net/wsdm09_karande_suacwg/ | instructors:Chinmay D. Karande
+vl-28-127 | The Effect of User Features on Churn in Social Networks | http://videolectures.net/acmwebsci2011_karnstedt_churn/ | instructors:Marcel Karnstedt
+vl-28-128 | Group formation: Fragmentation transitions in network coevolution dynamics | http://videolectures.net/cvss08_miguel_gfftnc/ | instructors:Maxi San Miguel
+vl-28-129 | Sequential Influence Models in Social Networks | http://videolectures.net/icwsm2010_suri_sim/ | instructors:Siddharth Suri
+vl-28-130 | Mining Edge-Weighted Call Graphs to Localise Software Bugs | http://videolectures.net/ecmlpkdd08_eichinger_mewc/ | instructors:Frank Eichinger, Klemens Böhm, Matthias Huber
+vl-28-131 | iLink: Search and Routing in Social Networks - Part 2 | http://videolectures.net/kdd07_basu_ilink/ | instructors:Sugato Basu
+vl-28-132 | Assessing Linked Data Mappings using Network Measures | http://videolectures.net/eswc2012_gueret_network_measures/ | instructors:Christophe Guéret
+vl-28-133 | Directed, Overlapping Clusters in Social Networks | http://videolectures.net/eccs07_pollner_doc/ | instructors:Péter Pollner
+vl-28-134 | Finding Representative Nodes in Probabilistic Graphs | http://videolectures.net/ecmlpkdd09_langohr_frnpg/ | instructors:Laura Langohr
+vl-28-135 | Modeling social networks on large scale | http://videolectures.net/eccs08_kertesz_msnols/ | instructors:János Kertész
+vl-28-136 | Identifying interactions in the time and frequency domains in local and global networks | http://videolectures.net/licsb2010_zou_iit/ | instructors:Cunlu Zou
+vl-28-137 | Network Structure of Folksonomies | http://videolectures.net/eccs07_servedio_nsf/ | instructors:Vito D. P. Servedio
+vl-28-138 | User Browsing Graph: Structure, Evolution and Application | http://videolectures.net/wsdm09_liu_ubgsea/ | instructors:Yiqun Liu, Yijiang Jin,
    
     et al.
-vl-28-149 | Mining Graph Evolution Rules | http://videolectures.net/ecmlpkdd09_berlingerio_mger/ | instructors:Francesco Bonchi
-vl-28-150 | An Efficient Sampling Scheme For Comparison of Large Graphs | http://videolectures.net/mlg07_borgwardt_aess/ | instructors:Karsten Michael Borgwardt
-vl-28-151 | StepGreen.org: Increasing Energy Saving Behaviors via Social Networks | http://videolectures.net/icwsm2010_mankoff_ies/ | instructors:Jennifer Mankoff
-vl-28-152 | Modeling social networks on large scale | http://videolectures.net/eccs08_kertesz_msnols/ | instructors:János Kertész
-vl-28-153 | Information Dynamics in a Networked World | http://videolectures.net/solomon_adamic_idnw/ | instructors:Lada Adamic
-vl-28-154 | Less is More: Sampling the Neighborhood Graph Makes SALSA Better and Faster | http://videolectures.net/wsdm09_najork_sng/ | instructors:Marc Najork, Sreenivas Gollapudi, Rina Panigrahy
-vl-28-155 | SocialSensor - Sensing User Generated Input for Improved Media Discovery and Experience | http://videolectures.net/searchcomputing2012_kompatsiaris_media/ | instructors:Yiannis Kompatsiaris
-vl-28-156 | Probabilistic and Logical Inference for Network Mining | http://videolectures.net/ecmlpkdd09_raedt_plinm/ | instructors:Luc De Raedt
-vl-28-157 | MC4: A Tempering Algorithm for Large-sample Network Inference | http://videolectures.net/prib2010_barker_mtal/ | instructors:Daniel James Barker
-vl-28-158 | Community Structure and Information Flow in Usenet: Improving analysis with a thread ownership model | http://videolectures.net/icwsm09_mcglohon_csifu/ | instructors:Mary McGlohon
-vl-28-159 | An overview of trust and trust building in networks | http://videolectures.net/antwerpen04_blomqvist_ottbn/ | instructors:Kirsimarja Blomqvist
-vl-28-160 | Directed, Overlapping Clusters in Social Networks | http://videolectures.net/eccs07_pollner_doc/ | instructors:Péter Pollner
-vl-28-161 | Theoretical analysis of Link Analysis Ranking | http://videolectures.net/fws06_tsaparas_talar/ | instructors:Panayiotis Tsaparas
-vl-28-162 | What are they blogging about? Personality, topic and motivation in blogs | http://videolectures.net/icwsm09_gill_watba/ | instructors:Alastair J. Gill
-vl-28-163 | iLink: Search and Routing in Social Networks - Part 2 | http://videolectures.net/kdd07_basu_ilink/ | instructors:Sugato Basu
-vl-28-164 | Recovering Temporally Rewiring Networks: A model-based approach | http://videolectures.net/icml07_guo_rtr/ | instructors:Fan Guo
-vl-28-165 | Social Networks and Multimedia Semantics | http://videolectures.net/ssms08_mika_snms/ | instructors:Peter Mika
-vl-28-166 | Space Planning for Online Community | http://videolectures.net/icwsm08_fisher_apoc/ | instructors:Danyel Fisher, Tammara Combs Turner, Marc Smith
-vl-28-167 | BLEWS: Using Blogs to Provide Context for News Articles | http://videolectures.net/icwsm08_gamon_blews/ | instructors:Michael Gamon, Sumit Basu,
+vl-28-139 | A Shapley value Approach for Influence Attribution | http://videolectures.net/ecmlpkdd2011_papapetrou_shapley/ | instructors:Panagiotis Papapetrou
+vl-28-140 | Mixed Cumulative Distribution Networks | http://videolectures.net/aistats2011_silva_cumulative/ | instructors:Ricardo Silva
+vl-28-141 | A Community-Based Pseudolikelihood Approach for Relationship Labeling in Social Networks | http://videolectures.net/ecmlpkdd2011_wan_community/ | instructors:Huaiyu Wan
+vl-28-142 | Network of Networks and the Climate System | http://videolectures.net/kolokviji_kurths_dynamical_systems/ | instructors:Jürgen Kurths
+vl-28-143 | Space Planning for Online Community | http://videolectures.net/icwsm08_fisher_apoc/ | instructors:Danyel Fisher, Tammara Combs Turner, Marc Smith
+vl-28-144 | Less is More: Sampling the Neighborhood Graph Makes SALSA Better and Faster | http://videolectures.net/wsdm09_najork_sng/ | instructors:Marc Najork, Sreenivas Gollapudi, Rina Panigrahy
+vl-28-145 | BLEWS: Using Blogs to Provide Context for News Articles | http://videolectures.net/icwsm08_gamon_blews/ | instructors:Michael Gamon, Sumit Basu,
    
     et al.
-vl-28-168 | What Elements of an Online Social Networking Profile Predict Target-Rater Agreement in Personality? | http://videolectures.net/icwsm08_evans_weosn/ | instructors:David  Evans, Sam Gosling, Anthony Carroll
-vl-28-169 | Network Structure of Folksonomies | http://videolectures.net/eccs07_servedio_nsf/ | instructors:Vito D. P. Servedio
-vl-28-170 | The dangers of time-aggregation: A little knowledge is a dangerous thing:  and sampling in social systems | http://videolectures.net/cvss08_johnson_tdota/ | instructors:Neil F. Johnson
-vl-28-171 | Personal Information Management vs. Resource Sharing: Towards a Model of Information Behavior in Social Tagging Systems | http://videolectures.net/icwsm09_wolff_pimrs/ | instructors:Christian Wolff
-vl-28-172 | The Directed Closure Process in Information Networks with an Analysis of Link Formation on Twitter | http://videolectures.net/icwsm2010_romero_dcp/ | instructors:Daniel M. Romero
-vl-28-173 | Multiscale Topic Tomography | http://videolectures.net/kdd07_nallapati_mtt/ | instructors:Ramesh Nallapati
-vl-28-174 | How should the 21st century democracy be organised? Studying online communities to answer it | http://videolectures.net/cvss08_fenizio_hst21cbo/ | instructors:Pietro Speroni di Fenizio
-vl-28-175 | Self-mapping Networks | http://videolectures.net/eccs07_canright_smn/ | instructors:Geoffrey Canright
-vl-28-176 | Mining Social Networks Using Heat Diffusion Processes for Marketing Candidates Selection | http://videolectures.net/cikm08_lyu_msnuhd/ | instructors:Michael R. Lyu
-vl-28-177 | Collaboration Over Time: Characterizing and Modeling Network Evolution. | http://videolectures.net/wsdm08_huang_cot/ | instructors:Jian Huang
-vl-28-178 | Research 1: Extracting Relations in Social Networks from Web using Similarity between Collective Contexts | http://videolectures.net/iswc06_mori_ersnw/ | instructors:Junichiro Mori
-vl-28-179 | Connecting the dots: A multi-pivot approach to data exploration | http://videolectures.net/iswc2011_popov_multipivot/ | instructors:Igor Popov
-vl-28-180 | Learning from Network Traffic: Computing Kernels over Connection Content | http://videolectures.net/nips05_laskov_ckocc/ | instructors:Pavel Laskov
-vl-28-181 | Adaptive networks - The intriguing interplay of dynamics ON and OF networks | http://videolectures.net/cvss08_gross_antii/ | instructors:Thilo Gross
-vl-28-182 | Learning Patterns in the Dynamics of Biological Networks | http://videolectures.net/kdd09_you_lpitd/ | instructors:Chang hun You
-vl-28-183 | Overview of network analysis | http://videolectures.net/is02_ferligoj_ona/ | instructors:Anuška Ferligoj
-vl-28-184 | Visual Analysis of Controversy in User-generated Encyclopedias | http://videolectures.net/eccs07_brandes_vac/ | instructors:Ulrik Brandes
-vl-28-185 | Learning a Distance Metric for Structured Network Prediction | http://videolectures.net/lce06_andrews_ladm/ | instructors:Stuart Andrews
-vl-28-186 | Dynamical properties of evolving networks | http://videolectures.net/ephdcs08_louzoun_dpoen/ | instructors:Yoram Louzoun
-vl-28-187 | Topographic Analysis of an Empirical Human Sexual Network | http://videolectures.net/eccs07_canright_tae/ | instructors:Geoffrey Canright
-vl-28-188 | Trust and Design in Social Systems | http://videolectures.net/cikm08_milic_tadiss/ | instructors:Nataša Milić-Frayling
-vl-28-189 | Tweeting from the Town Square: Measuring Geographic Local Networks | http://videolectures.net/icwsm2010_yardi_tts/ | instructors:Sarita Yardi
-vl-28-190 | Information Networks: State of the Art | http://videolectures.net/ecmlpkdd09_kotter_insa/ | instructors:Tobias Kötter
-vl-28-191 | Randomness and Complexity in Networks | http://videolectures.net/eccs07_evans_rcn/ | instructors:Tim Evans
-vl-28-192 | Linked - But how? | http://videolectures.net/eccs07_hoser_lbh/ | instructors:Bettina Hoser
-vl-28-193 | 6S: Collaborative Web search via an adaptive peer network | http://videolectures.net/eccs07_menczer_scw/ | instructors:Filippo Menczer
-vl-28-194 | Socioeconomic Networks with Long-range Interactions | http://videolectures.net/eccs07_carvalho_snl/ | instructors:Rui Carvalho
-vl-28-195 | Sidelines: An Algorithm for Increasing Diversity in News and Opinion Aggregators | http://videolectures.net/icwsm09_munson_safidno/ | instructors:Sean A. Munson
-vl-28-196 | Within-Network Classification Using Local Structure Similarity | http://videolectures.net/ecmlpkdd09_desrosiers_wncu/ | instructors:Christian Desrosiers
-vl-28-197 | Emergent Opinion Dynamics on Endogenous Networks | http://videolectures.net/eccs07_gulyas_eod/ | instructors:László Gulyás
-vl-28-198 | Estimating Corpus Size via Queries | http://videolectures.net/fws06_tomkins_ecsvq/ | instructors:Andrew Tomkins
-vl-28-199 | Measuring the Effects of Preprocessing Decisions and Network Forces in Dynamic Network Analysis | http://videolectures.net/kdd09_scripps_mteop/ | instructors:Jerry Scripps
-vl-28-200 | Research 1: Modeling Social Attitudes on the Web | http://videolectures.net/iswc06_nickles_msaw/ | instructors:Matthias Nickles
+vl-28-146 | What Elements of an Online Social Networking Profile Predict Target-Rater Agreement in Personality? | http://videolectures.net/icwsm08_evans_weosn/ | instructors:David  Evans, Sam Gosling, Anthony Carroll
+vl-28-147 | Parallel Structural Graph Clustering | http://videolectures.net/ecmlpkdd2011_seeland_clustering/ | instructors:Madeleine Seeland
+vl-28-148 | DB-CSC: A density-based approach for subspace clustering in graphs with feature vectors | http://videolectures.net/ecmlpkdd2011_gunnemann_vectors/ | instructors:Stephan Günnemann
+vl-28-149 | Multiscale Topic Tomography | http://videolectures.net/kdd07_nallapati_mtt/ | instructors:Ramesh Nallapati
+vl-28-150 | Mining Graph Evolution Rules | http://videolectures.net/ecmlpkdd09_berlingerio_mger/ | instructors:Francesco Bonchi
+vl-28-151 | The dangers of time-aggregation: A little knowledge is a dangerous thing:  and sampling in social systems | http://videolectures.net/cvss08_johnson_tdota/ | instructors:Neil F. Johnson
+vl-28-152 | Probabilistic and Logical Inference for Network Mining | http://videolectures.net/ecmlpkdd09_raedt_plinm/ | instructors:Luc De Raedt
+vl-28-153 | Community Structure and Information Flow in Usenet: Improving analysis with a thread ownership model | http://videolectures.net/icwsm09_mcglohon_csifu/ | instructors:Mary McGlohon
+vl-28-154 | Social Networks and Multimedia Semantics | http://videolectures.net/ssms08_mika_snms/ | instructors:Peter Mika
+vl-28-155 | Self-mapping Networks | http://videolectures.net/eccs07_canright_smn/ | instructors:Geoffrey Canright
+vl-28-156 | Research 1: Extracting Relations in Social Networks from Web using Similarity between Collective Contexts | http://videolectures.net/iswc06_mori_ersnw/ | instructors:Junichiro Mori
+vl-28-157 | What are they blogging about? Personality, topic and motivation in blogs | http://videolectures.net/icwsm09_gill_watba/ | instructors:Alastair J. Gill
+vl-28-158 | Network Regression with Predictive Clustering Trees | http://videolectures.net/ecmlpkdd2011_stojanova_ceci_regression/ | instructors:Daniela Stojanova, Michelangelo Ceci
+vl-28-159 | One Tag to bind them all: Measuring Term Abstractness in Social Metadata | http://videolectures.net/eswc2011_benz_tag/ | instructors:Dominik Benz, Denny Vrandečić
+vl-28-160 | Learning from Network Traffic: Computing Kernels over Connection Content | http://videolectures.net/nips05_laskov_ckocc/ | instructors:Pavel Laskov
+vl-28-161 | Predicting Discussions on the Social Semantic Web | http://videolectures.net/eswc2011_rowe_predicting/ | instructors:Matthew Rowe, Denny Vrandečić
+vl-28-162 | StepGreen.org: Increasing Energy Saving Behaviors via Social Networks | http://videolectures.net/icwsm2010_mankoff_ies/ | instructors:Jennifer Mankoff
+vl-28-163 | How should the 21st century democracy be organised? Studying online communities to answer it | http://videolectures.net/cvss08_fenizio_hst21cbo/ | instructors:Pietro Speroni di Fenizio
+vl-28-164 | Boosting statistical network inference by incorporating prior knowledge from multiple sources | http://videolectures.net/mlsb2012_praveen_boosting/ | instructors:Paurush Praveen
+vl-28-165 | Personal Information Management vs. Resource Sharing: Towards a Model of Information Behavior in Social Tagging Systems | http://videolectures.net/icwsm09_wolff_pimrs/ | instructors:Christian Wolff
+vl-28-166 | Visualizations of slovenian scientific community | http://videolectures.net/sikdd2011_karlovcec_community/ | instructors:Mario Karlovčec
+vl-28-167 | Keystones in Ecological Webs | http://videolectures.net/complexnetworks2012_jordan_ecological_webs/ | instructors:Ferenc Jordán
+vl-28-168 | COSNet: a Cost Sensitive Neural Network for Semi-supervised Learning in Graphs | http://videolectures.net/ecmlpkdd2011_frasca_cosnet/ | instructors:Marco Frasca
+vl-28-169 | Collaboration Over Time: Characterizing and Modeling Network Evolution. | http://videolectures.net/wsdm08_huang_cot/ | instructors:Jian Huang
+vl-28-170 | Integrating literature-constrained and data-driven inference of signalling networks | http://videolectures.net/mlsb2012_eduati_integrating/ | instructors:Federica Eduati
+vl-28-171 | Influence and Passivity in Social Media | http://videolectures.net/ecmlpkdd2011_romero_influence/ | instructors:Daniel M. Romero
+vl-28-172 | Unifying Guilt-by-Association Approaches: Theorems and Fast Algorithms | http://videolectures.net/ecmlpkdd2011_koutra_approaches/ | instructors:Danai Koutra
+vl-28-173 | Graph Evolution via Social Diffusion Processes | http://videolectures.net/ecmlpkdd2011_ding_graph/ | instructors:Chris Ding
+vl-28-174 | Mining Research Topic-related Influence between Academia and Industry | http://videolectures.net/ecmlpkdd2011_tang_mining/ | instructors:Wenbin Tang
+vl-28-175 | Mining Social Networks Using Heat Diffusion Processes for Marketing Candidates Selection | http://videolectures.net/cikm08_lyu_msnuhd/ | instructors:Michael R. Lyu
+vl-28-176 | Overview of network analysis | http://videolectures.net/is02_ferligoj_ona/ | instructors:Anuška Ferligoj
+vl-28-177 | MC4: A Tempering Algorithm for Large-sample Network Inference | http://videolectures.net/prib2010_barker_mtal/ | instructors:Daniel James Barker
+vl-28-178 | Fully Coupled Systems with Activator-Inhibitor States Linked within Homophilic Dynamically Evolving Networks | http://videolectures.net/complexnetworks2012_grindrod_evolving_networks/ | instructors:Peter Grindrod
+vl-28-179 | Learning a Distance Metric for Structured Network Prediction | http://videolectures.net/lce06_andrews_ladm/ | instructors:Stuart Andrews
+vl-28-180 | Adaptive networks - The intriguing interplay of dynamics ON and OF networks | http://videolectures.net/cvss08_gross_antii/ | instructors:Thilo Gross
+vl-28-181 | The Directed Closure Process in Information Networks with an Analysis of Link Formation on Twitter | http://videolectures.net/icwsm2010_romero_dcp/ | instructors:Daniel M. Romero
+vl-28-182 | Visual Analysis of Controversy in User-generated Encyclopedias | http://videolectures.net/eccs07_brandes_vac/ | instructors:Ulrik Brandes
+vl-28-183 | Topographic Analysis of an Empirical Human Sexual Network | http://videolectures.net/eccs07_canright_tae/ | instructors:Geoffrey Canright
+vl-28-184 | Learning Patterns in the Dynamics of Biological Networks | http://videolectures.net/kdd09_you_lpitd/ | instructors:Chang hun You
+vl-28-185 | Dynamical properties of evolving networks | http://videolectures.net/ephdcs08_louzoun_dpoen/ | instructors:Yoram Louzoun
+vl-28-186 | Trust and Design in Social Systems | http://videolectures.net/cikm08_milic_tadiss/ | instructors:Nataša Milić-Frayling
+vl-28-187 | Randomness and Complexity in Networks | http://videolectures.net/eccs07_evans_rcn/ | instructors:Tim Evans
+vl-28-188 | Linked - But how? | http://videolectures.net/eccs07_hoser_lbh/ | instructors:Bettina Hoser
+vl-28-189 | 6S: Collaborative Web search via an adaptive peer network | http://videolectures.net/eccs07_menczer_scw/ | instructors:Filippo Menczer
+vl-28-190 | Socioeconomic Networks with Long-range Interactions | http://videolectures.net/eccs07_carvalho_snl/ | instructors:Rui Carvalho
+vl-28-191 | SocialSensor - Sensing User Generated Input for Improved Media Discovery and Experience | http://videolectures.net/searchcomputing2012_kompatsiaris_media/ | instructors:Yiannis Kompatsiaris
+vl-28-192 | Estimating Corpus Size via Queries | http://videolectures.net/fws06_tomkins_ecsvq/ | instructors:Andrew Tomkins
+vl-28-193 | Emergent Opinion Dynamics on Endogenous Networks | http://videolectures.net/eccs07_gulyas_eod/ | instructors:László Gulyás
+vl-28-194 | Connecting the dots: A multi-pivot approach to data exploration | http://videolectures.net/iswc2011_popov_multipivot/ | instructors:Igor Popov
+vl-28-195 | Tweeting from the Town Square: Measuring Geographic Local Networks | http://videolectures.net/icwsm2010_yardi_tts/ | instructors:Sarita Yardi
+vl-28-196 | Information Networks: State of the Art | http://videolectures.net/ecmlpkdd09_kotter_insa/ | instructors:Tobias Kötter
+vl-28-197 | Research 1: Modeling Social Attitudes on the Web | http://videolectures.net/iswc06_nickles_msaw/ | instructors:Matthias Nickles
+vl-28-198 | Sidelines: An Algorithm for Increasing Diversity in News and Opinion Aggregators | http://videolectures.net/icwsm09_munson_safidno/ | instructors:Sean A. Munson
+vl-28-199 | Within-Network Classification Using Local Structure Similarity | http://videolectures.net/ecmlpkdd09_desrosiers_wncu/ | instructors:Christian Desrosiers
+vl-28-200 | Measuring the Effects of Preprocessing Decisions and Network Forces in Dynamic Network Analysis | http://videolectures.net/kdd09_scripps_mteop/ | instructors:Jerry Scripps
 vl-28-201 | Use and Reuse of Shared Lists as a Social Content Type | http://videolectures.net/chi08_geyer_urs/ | instructors:Werner Geyer
 vl-28-202 | PhD Thesis Defense: Dynamics of large networks | http://videolectures.net/sep08_leskovec_tdef/ | instructors:Jure Leskovec
 vl-28-203 | Dynamics of Large Networks | http://videolectures.net/kdd09_leskovec_dln/ | instructors:Jure Leskovec
 vl-28-204 | Dynamics of Real-world Networks | http://videolectures.net/thesis_leskovec_drn/ | instructors:Jure Leskovec
-vl-28-205 | Learning Networks of Heterogeneous Influence | http://videolectures.net/machine_du_networks/ | instructors:Nan Du
-vl-28-206 | Distributed Dual Averaging In Networks | http://videolectures.net/nips2010_duchi_dda/ | instructors:John Duchi
-vl-28-207 | Scalable Inference of Overlapping Communities | http://videolectures.net/machine_gopalan_overlapping/ | instructors:Prem Gopalan
-vl-28-208 | Content as basis for Social Connectness …as basis for better User Experience | http://videolectures.net/coinplanetdataschool2011_negretto_catch/ | instructors:Ugo Negretto
-vl-28-209 | Learning concept graphs from text with stick-breaking priors | http://videolectures.net/nips2010_chambers_lcg/ | instructors:America Chambers
-vl-28-210 | Getting lost in space: Large sample analysis of the resistance distance | http://videolectures.net/nips2010_hein_gls/ | instructors:Matthias Hein
-vl-28-211 | Exploring City Structure from Georeferenced Photos Using Graph Centrality Measures | http://videolectures.net/ecmlpkdd2011_vrotsou_graph/ | instructors:Katerina Vrotsou
+vl-28-205 | Distributed Dual Averaging In Networks | http://videolectures.net/nips2010_duchi_dda/ | instructors:John Duchi
+vl-28-206 | Learning Networks of Heterogeneous Influence | http://videolectures.net/machine_du_networks/ | instructors:Nan Du
+vl-28-207 | Content as basis for Social Connectness …as basis for better User Experience | http://videolectures.net/coinplanetdataschool2011_negretto_catch/ | instructors:Ugo Negretto
+vl-28-208 | Learning concept graphs from text with stick-breaking priors | http://videolectures.net/nips2010_chambers_lcg/ | instructors:America Chambers
+vl-28-209 | Getting lost in space: Large sample analysis of the resistance distance | http://videolectures.net/nips2010_hein_gls/ | instructors:Matthias Hein
+vl-28-210 | Exploring City Structure from Georeferenced Photos Using Graph Centrality Measures | http://videolectures.net/ecmlpkdd2011_vrotsou_graph/ | instructors:Katerina Vrotsou
+vl-28-211 | Scalable Inference of Overlapping Communities | http://videolectures.net/machine_gopalan_overlapping/ | instructors:Prem Gopalan
 vl-28-212 | See the Tree Through the Lines: The Shazoo Algorithm | http://videolectures.net/nips2011_vitale_shazzo/ | instructors:Fabio Vitale
 vl-28-213 | Discussion on Social Workspace | http://videolectures.net/cikm08_debate_dosw/ | instructors:Susan Feldman, Ed H. Chi,
    
     et al.
 vl-28-214 | Challenges in Social Network Data: Processes, Privacy and Paradoxes | http://videolectures.net/kdd07_kleinberg_cisnd/ | instructors:Jon Kleinberg
-vl-28-215 | Rhythms of Information Flow through Networks | http://videolectures.net/eswc2011_leskovec_flow/ | instructors:Jure Leskovec, Elena Simperl
-vl-28-216 | Analyzing Text and Social Network Data with Probabilistic Models | http://videolectures.net/ecmlpkdd2012_smyth_probabilistic_models/ | instructors:Padhraic Smyth
-vl-28-217 | Large Networks, Clusters and Kronecker Products | http://videolectures.net/ilpmlgsrl09_leskovec_lnckp/ | instructors:Jure Leskovec
-vl-28-218 | Influence and Correlation in Social Networks | http://videolectures.net/mlg08_mahdian_icsn/ | instructors:Mohammad Mahdian
-vl-28-219 | Human Dynamics: From Human Mobility to Predictability | http://videolectures.net/ecmlpkdd2011_barabasi_human/ | instructors:Albert-László Barabási
-vl-28-220 | Online Social Networks: Modeling and Mining | http://videolectures.net/waw09_kumar_osnmm/ | instructors:Ravi Kumar
+vl-28-215 | Large Networks, Clusters and Kronecker Products | http://videolectures.net/ilpmlgsrl09_leskovec_lnckp/ | instructors:Jure Leskovec
+vl-28-216 | Rhythms of Information Flow through Networks | http://videolectures.net/eswc2011_leskovec_flow/ | instructors:Jure Leskovec, Elena Simperl
+vl-28-217 | Influence and Correlation in Social Networks | http://videolectures.net/mlg08_mahdian_icsn/ | instructors:Mohammad Mahdian
+vl-28-218 | Analyzing Text and Social Network Data with Probabilistic Models | http://videolectures.net/ecmlpkdd2012_smyth_probabilistic_models/ | instructors:Padhraic Smyth
+vl-28-219 | Online Social Networks: Modeling and Mining | http://videolectures.net/waw09_kumar_osnmm/ | instructors:Ravi Kumar
+vl-28-220 | Human Dynamics: From Human Mobility to Predictability | http://videolectures.net/ecmlpkdd2011_barabasi_human/ | instructors:Albert-László Barabási
 vl-28-221 | Building A Nervous System for Society: The ‘New Deal on Data’ and how to make Health, Financial, Logistics, and Transportation Systems Work | http://videolectures.net/iswc2011_pentland_building/ | instructors:Alex (Sandy) Pentland
-vl-28-222 | Trends in Facebook Messages | http://videolectures.net/icwsm2011_seligstein_trends/ | instructors:Joel Seligstein
+vl-28-222 | Reconstructing networks from experimental and natural genetic perturbations | http://videolectures.net/licsb2010_markowetz_rne/ | instructors:Florian Markowetz
 vl-28-223 | Network Topology Uncovers Function, Disease, and Phylogeny | http://videolectures.net/prib2010_przulj_ntuf/ | instructors:Nataša Pržulj
-vl-28-224 | Reconstructing networks from experimental and natural genetic perturbations | http://videolectures.net/licsb2010_markowetz_rne/ | instructors:Florian Markowetz
-vl-28-225 | Behavioral Experiments in Strategic Networks | http://videolectures.net/icwsm2010_kearns_bes/ | instructors:Michael Kearns
+vl-28-224 | Collective Semantics: Collective Intelligence & the Semantic Web - Information Retrieval vs. Knowledge Retrieval: A social network perspective | http://videolectures.net/eswc08_hoser_cs/ | instructors:Bettina Hoser
+vl-28-225 | Trends in Facebook Messages | http://videolectures.net/icwsm2011_seligstein_trends/ | instructors:Joel Seligstein
 vl-28-226 | Planetary-Scale Views on a Large Instant-Messaging Network | http://videolectures.net/ecmlpkdd09_leskovec_it/ | instructors:Jure Leskovec
 vl-28-227 | Robustness of Social Networks | http://videolectures.net/ccss09_herrmann_rosn/ | instructors:Hans J. Herrmann
-vl-28-228 | Collective Semantics: Collective Intelligence & the Semantic Web - Information Retrieval vs. Knowledge Retrieval: A social network perspective | http://videolectures.net/eswc08_hoser_cs/ | instructors:Bettina Hoser
-vl-28-229 | Designing Online Communities from Theory | http://videolectures.net/icwsm2010_kraut_doc/ | instructors:Bob Kraut
+vl-28-228 | Behavioral Experiments in Strategic Networks | http://videolectures.net/icwsm2010_kearns_bes/ | instructors:Michael Kearns
+vl-28-229 | Social dimension of social media | http://videolectures.net/icwsm08_smith_sdsm/ | instructors:Marc Smith
 vl-28-230 | Scalable Link Mining and Analysis on Information Networks | http://videolectures.net/ilpmlgsrl09_yu_slmain/ | instructors:Philip S. Yu
 vl-28-231 | Inference for Networks | http://videolectures.net/mlss09us_bickel_in/ | instructors:Peter J. Bickel
-vl-28-232 | From Disasters to WoW: Using Web Science to understand and enable 21st century multidimensional networks | http://videolectures.net/eswc2010_contractor_fdtw/ | instructors:Noshir Contractor
+vl-28-232 | Designing Online Communities from Theory | http://videolectures.net/icwsm2010_kraut_doc/ | instructors:Bob Kraut
 vl-28-233 | Networking Genes And Drugs: Understanding Gene Function And Drug Mode Of Action From Large-Scale Experimental Data | http://videolectures.net/mlsb09_di_bernardo_ngad/ | instructors:Diego di Bernardo
-vl-28-234 | Social dimension of social media | http://videolectures.net/icwsm08_smith_sdsm/ | instructors:Marc Smith
+vl-28-234 | From Disasters to WoW: Using Web Science to understand and enable 21st century multidimensional networks | http://videolectures.net/eswc2010_contractor_fdtw/ | instructors:Noshir Contractor
 vl-28-235 | Examining Online and Offline Communication Processes in Online Dating and Social Network Sites | http://videolectures.net/icwsm2010_ellison_ris/ | instructors:Nicole B. Ellison
 vl-28-236 | Mechanisms of Systemic Risk: Contagion, Reinforcement, Redistribution | http://videolectures.net/ccss09_schweitzer_mosr/ | instructors:Frank Schweitzer
 vl-28-237 | The Role of Tie Strength in the Cohesion of the Society: A Tribute to Mark Granovetter | http://videolectures.net/ccss09_kertesz_trots/ | instructors:János Kertész
-vl-28-238 | Graph Theory | http://videolectures.net/netadis2013_monasson_graph_theory/ | instructors:Rémi Monasson
-vl-28-239 | Random Matrices | http://videolectures.net/netadis2013_vivo_random_matrices/ | instructors:Pierpaolo Vivo
-vl-28-240 | Mining Large Graphs: Laws and Tools | http://videolectures.net/ecml07_leskovec_mlg/ | instructors:Jure Leskovec
-vl-28-241 | Modeling Social and Information Networks: Opportunities for Machine Learning | http://videolectures.net/icml09_leskovec_msain/ | instructors:Jure Leskovec
-vl-28-242 | Graph Mining Techniques for Social Media Analysis | http://videolectures.net/icwsm08_mcglohon_gmtsma/ | instructors:Mary McGlohon
-vl-28-243 | Finance | http://videolectures.net/netadis2013_bouchaud_finance/ | instructors:Jean-Philippe Bouchaud
-vl-28-244 | Disordered Systems, Statics | http://videolectures.net/netadis2013_leuzzi_disordered_systems/ | instructors:Luca Leuzzi
-vl-28-245 | Statistical modelling of sequences | http://videolectures.net/netadis2013_weigt_statistical_modelling/ | instructors:Martin Weigt
-vl-28-246 | Reinforcement Learning | http://videolectures.net/netadis2013_munos_reinforcement_learning/ | instructors:Rémi Munos
-vl-28-247 | Introduction to causal discovery: A Bayesian Networks approach | http://videolectures.net/ecmlpkdd2011_tsamardinos_discovery/ | instructors:Ioannis Tsamardinos
-vl-28-248 | Disordered systems, Dynamics | http://videolectures.net/netadis2013_roudi_disordered_dynamics/ | instructors:Yasser Roudi
-vl-28-249 | Understanding and Managing Cascades on Large Graphs | http://videolectures.net/ecmlpkdd2012_prakash_large_graphs/ | instructors:B. Aditya Prakash
-vl-28-250 | Citizen Sensor Data Mining, Social Media Analytics and Development Centric Web Applications | http://videolectures.net/www2011_sheth_velmurugan_csd/ | instructors:Amit Sheth, Selvam Velmurugan
-vl-28-251 | Mining Complex Entities from Heterogeneous Information Networks | http://videolectures.net/ecmlpkdd2011_ciravegna_varga_networks/ | instructors:Fabio Ciravegna, Andrea Varga
-vl-28-252 | Synaptic Plasticity | http://videolectures.net/netadis2013_van_rossum_synaptic_plasticity/ | instructors:Mark van Rossum
-vl-28-253 | Neural Coding | http://videolectures.net/netadis2013_hertz_neural_coding/ | instructors:John Hertz
-vl-28-254 | Using Social Network Analysis, Geotemporal Reasoning and RDFS++ Reasoning for Business Intelligence | http://videolectures.net/iswc07_aasman_usn/ | instructors:Jans Aasman
-vl-28-255 | Media Stream | http://videolectures.net/coinplanetdataschool2011_fortuna_stream/ | instructors:Blaž Fortuna
-vl-28-256 | Discovering and Tracking User Communities | http://videolectures.net/ecml07_spiliopoulou_dtu/ | instructors:Myra Spiliopoulou
+vl-28-238 | Mining Large Graphs: Laws and Tools | http://videolectures.net/ecml07_leskovec_mlg/ | instructors:Jure Leskovec
+vl-28-239 | Graph Mining Techniques for Social Media Analysis | http://videolectures.net/icwsm08_mcglohon_gmtsma/ | instructors:Mary McGlohon
+vl-28-240 | Modeling Social and Information Networks: Opportunities for Machine Learning | http://videolectures.net/icml09_leskovec_msain/ | instructors:Jure Leskovec
+vl-28-241 | Graph Theory | http://videolectures.net/netadis2013_monasson_graph_theory/ | instructors:Rémi Monasson
+vl-28-242 | Random Matrices | http://videolectures.net/netadis2013_vivo_random_matrices/ | instructors:Pierpaolo Vivo
+vl-28-243 | Introduction to causal discovery: A Bayesian Networks approach | http://videolectures.net/ecmlpkdd2011_tsamardinos_discovery/ | instructors:Ioannis Tsamardinos
+vl-28-244 | Citizen Sensor Data Mining, Social Media Analytics and Development Centric Web Applications | http://videolectures.net/www2011_sheth_velmurugan_csd/ | instructors:Amit Sheth, Selvam Velmurugan
+vl-28-245 | Using Social Network Analysis, Geotemporal Reasoning and RDFS++ Reasoning for Business Intelligence | http://videolectures.net/iswc07_aasman_usn/ | instructors:Jans Aasman
+vl-28-246 | Finance | http://videolectures.net/netadis2013_bouchaud_finance/ | instructors:Jean-Philippe Bouchaud
+vl-28-247 | Disordered Systems, Statics | http://videolectures.net/netadis2013_leuzzi_disordered_systems/ | instructors:Luca Leuzzi
+vl-28-248 | Understanding and Managing Cascades on Large Graphs | http://videolectures.net/ecmlpkdd2012_prakash_large_graphs/ | instructors:B. Aditya Prakash
+vl-28-249 | Statistical modelling of sequences | http://videolectures.net/netadis2013_weigt_statistical_modelling/ | instructors:Martin Weigt
+vl-28-250 | Mining Complex Entities from Heterogeneous Information Networks | http://videolectures.net/ecmlpkdd2011_ciravegna_varga_networks/ | instructors:Fabio Ciravegna, Andrea Varga
+vl-28-251 | Reinforcement Learning | http://videolectures.net/netadis2013_munos_reinforcement_learning/ | instructors:Rémi Munos
+vl-28-252 | Disordered systems, Dynamics | http://videolectures.net/netadis2013_roudi_disordered_dynamics/ | instructors:Yasser Roudi
+vl-28-253 | Discovering and Tracking User Communities | http://videolectures.net/ecml07_spiliopoulou_dtu/ | instructors:Myra Spiliopoulou
+vl-28-254 | Synaptic Plasticity | http://videolectures.net/netadis2013_van_rossum_synaptic_plasticity/ | instructors:Mark van Rossum
+vl-28-255 | Neural Coding | http://videolectures.net/netadis2013_hertz_neural_coding/ | instructors:John Hertz
+vl-28-256 | Media Stream | http://videolectures.net/coinplanetdataschool2011_fortuna_stream/ | instructors:Blaž Fortuna
 vl-28-257 | Discovering and Tracking User Communities | http://videolectures.net/ecml07_paliouras_dtu/ | instructors:Georgios Paliouras

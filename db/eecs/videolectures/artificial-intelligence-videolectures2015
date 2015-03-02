@@ -1,378 +1,378 @@
-vl-136-1 | Baseline Methods for Automated Fictional Ideation | http://videolectures.net/iccc2014_llano_fictional_ideation/ | instructors:Maria Teresa Llano
-vl-136-2 | Poetry generation system with an emotional personality | http://videolectures.net/iccc2014_misztal_poetry_generation/ | instructors:Joanna Misztal
-vl-136-3 | Towards Social Media Mining: Twitterobservatory | http://videolectures.net/sikdd2014_novalija_media_mining/ | instructors:Inna Novalija
+vl-136-1 | 15. CB2: Child Robot with Biomimetic Body | http://videolectures.net/aaai08_noda_crbb/ | instructors:Tomoyuki Noda, Shuhei Ikemoto,
+   
+    et al.
+vl-136-2 | Baseline Methods for Automated Fictional Ideation | http://videolectures.net/iccc2014_llano_fictional_ideation/ | instructors:Maria Teresa Llano
+vl-136-3 | Learning Deep Boltzmann Machines | http://videolectures.net/nipsworkshops09_salakhutdinov_ldbm/ | instructors:Ruslan Salakhutdinov
 vl-136-4 | Introduction to Computational Creativity | http://videolectures.net/ascc2013_veale_creativity/ | instructors:Tony Veale
-vl-136-5 | Mining Demand And Supply Data With Methods Of Economic Statistics | http://videolectures.net/sikdd2014_hajdinjak_supply_data/ | instructors:Melita Hajdinjak
-vl-136-6 | TweetViz: Twitter Data Visualization | http://videolectures.net/sikdd2014_dimitrovski_data_visualization/ | instructors:Ivica Dimitrovski
-vl-136-7 | Complex Event Detection And Prediction In Traffic | http://videolectures.net/sikdd2014_kazic_event_detection/ | instructors:Blaž Kažič
-vl-136-8 | A System For Large Scale Data Exploration and Organization | http://videolectures.net/sikdd2014_rei_large_scale/ | instructors:Luis Rei
-vl-136-9 | A High-Performance Multithreaded Approach For Clustering A Stream Of Documents | http://videolectures.net/sikdd2014_brank_stream_documents/ | instructors:Janez Brank
-vl-136-10 | The Social Impact of Self-Regulation on the Evolution of Simple and Complex Creative Ideas | http://videolectures.net/iccc2014_gabora_creative_ideas/ | instructors:Liane Gabora
-vl-136-11 | Pemuisi: A constraint satisfaction-based generator of topical Indonesian poetry | http://videolectures.net/iccc2014_manurung_indonesian_poetry/ | instructors:Ruli Manurung
-vl-136-12 | Algorithm For Classification Of Textual Documents Represented By Tandem Analysis | http://videolectures.net/sikdd2014_dobsa_textual_documents/ | instructors:Jasminka Dobša
-vl-136-13 | Consistency And Completeness Of Multiword Expressions During Translation | http://videolectures.net/sikdd2014_zdravkova_multiword_expressions/ | instructors:Katerina Zdravkova
-vl-136-14 | Automatic Detection of Irony and Humour in Twitter | http://videolectures.net/iccc2014_barbieri_automatic_detection/ | instructors:Francesco Barbieri
-vl-136-15 | A Musical Composition Application Based on a Multiagent System to Assist Novice Composers | http://videolectures.net/iccc2014_navarro_musical_composition/ | instructors:Maria Navarro
-vl-136-16 | The Origin of Computable Numbers: A Tale of Two Classics | http://videolectures.net/aaai2012_papadimitriou_computable_numbers/ | instructors:Christos H. Papadimitriou
-vl-136-17 | 15. CB2: Child Robot with Biomimetic Body | http://videolectures.net/aaai08_noda_crbb/ | instructors:Tomoyuki Noda, Shuhei Ikemoto,
+vl-136-5 | Poetry generation system with an emotional personality | http://videolectures.net/iccc2014_misztal_poetry_generation/ | instructors:Joanna Misztal
+vl-136-6 | Artificial Intelligence and Human Thinking | http://videolectures.net/ijcai2011_kowalski_artificial/ | instructors:Robert Kowalski
+vl-136-7 | The Origin of Computable Numbers: A Tale of Two Classics | http://videolectures.net/aaai2012_papadimitriou_computable_numbers/ | instructors:Christos H. Papadimitriou
+vl-136-8 | Connecting the Dots Between News Articles | http://videolectures.net/kdd2010_shahaf_cdb/ | instructors:Dafna Shahaf
+vl-136-9 | 6. BigDog | http://videolectures.net/aaai08_raibert_bigdog/ | instructors:Marc Raibert, Gabe Nelson,
    
     et al.
-vl-136-18 | Artificial Intelligence and Human Thinking | http://videolectures.net/ijcai2011_kowalski_artificial/ | instructors:Robert Kowalski
-vl-136-19 | Text mining for Creative Cross-Domain Knowledge Discovery | http://videolectures.net/ascc2013_lavrac_discovery/ | instructors:Nada Lavrač, Bojan Cestnik
-vl-136-20 | Group Decision Making and Leveraging of Interests | http://videolectures.net/single_rajkovic_decision/ | instructors:Vladislav Rajkovič
-vl-136-21 | On the Creativity of Negation: The Case of Negative Sarcasm | http://videolectures.net/ascc2013_giora_sarcasm/ | instructors:Rachel Giora
-vl-136-22 | Discovering popular events from tweets | http://videolectures.net/sikdd2013_moraru_tweets_events/ | instructors:Alexandra Moraru
-vl-136-23 | Learning Deep Boltzmann Machines | http://videolectures.net/nipsworkshops09_salakhutdinov_ldbm/ | instructors:Ruslan Salakhutdinov
-vl-136-24 | Parameter Estimation for the Latent Dirichlet Allocation | http://videolectures.net/sikdd2013_speh_dirichlet_allocation/ | instructors:Jaka Špeh
-vl-136-25 | Guiding Principles of Building Creative Systems | http://videolectures.net/ascc2013_colton_systems/ | instructors:Simon Colton
-vl-136-26 | Philosophical Issues | http://videolectures.net/ascc2013_colton_issues/ | instructors:Simon Colton
-vl-136-27 | Applying NLP for building domain ontology: fashion collection | http://videolectures.net/sikdd2013_novalija_fashion_collection/ | instructors:Inna Novalija
-vl-136-28 | Government Transparency Through Technology | http://videolectures.net/sikdd2014_kovacic_government_transparency/ | instructors:Matej Kovačič
-vl-136-29 | Coming Good and Breaking Bad: Generating Transformative Character Arcs For Use in Compelling Stories | http://videolectures.net/iccc2014_veale_compelling_stories/ | instructors:Tony Veale
-vl-136-30 | Computational Creativity: A Philosophical Approach, and an Approach to Philosophy | http://videolectures.net/iccc2014_mcgregor_philosophical_approach/ | instructors:Stephen McGregor
-vl-136-31 | Creativity in Conceptual Spaces | http://videolectures.net/iccc2014_chella_conceptual_spaces/ | instructors:Antonio Chella
-vl-136-32 | Computational Creativity in Literary Artifacts: Narrative and Poetry | http://videolectures.net/ascc2013_gervas_poetry/ | instructors:Pablo Gervás
-vl-136-33 | Computational Creativity in Music and Music Cognition | http://videolectures.net/ascc2013_wiggins_music/ | instructors:Geraint Wiggins
-vl-136-34 | Revisiting the Dream | http://videolectures.net/aaai2012_kautz_presidential/ | instructors:Henry Kautz
-vl-136-35 | Building an Automated Painter | http://videolectures.net/ascc2013_colton_painter/ | instructors:Simon Colton
-vl-136-36 | Ludus Ex Machina: Building A 3D Game Designer That Competes Alongside Humans | http://videolectures.net/iccc2014_cook_game_designer/ | instructors:Michael Cook
-vl-136-37 | Usage of the Kalman filter for data cleaning of sensor data | http://videolectures.net/sikdd2013_kenda_kalman_filter/ | instructors:Klemen Kenda
-vl-136-38 | The FloWr Framework: Automated Flowchart Construction, Optimisation and Alteration for Creative Systems | http://videolectures.net/iccc2014_charnley_creative_systems/ | instructors:John Charnley
-vl-136-39 | Knowledge Discovery of Artistic Influences: A Metric Learning Approach | http://videolectures.net/iccc2014_elgammal_metric_learning/ | instructors:Ahmed Elgammal
-vl-136-40 | Creativity in Story Generation From the Ground Up: Non-deterministic Simulation driven by Narrative | http://videolectures.net/iccc2014_leon_story_generation/ | instructors:Carlos León
-vl-136-41 | Duolingo: Translating the Web with Millions of People | http://videolectures.net/aaai2012_von_ahn_duolingo/ | instructors:Luis von Ahn
-vl-136-42 | Connecting the Dots Between News Articles | http://videolectures.net/kdd2010_shahaf_cdb/ | instructors:Dafna Shahaf
-vl-136-43 | Creativity as a Web Service | http://videolectures.net/ascc2013_veale_web/ | instructors:Tony Veale
-vl-136-44 | Computational Approaches to Conceptual Blending | http://videolectures.net/ascc2013_cardoso_blending/ | instructors:Amilcar Cardoso
-vl-136-45 | Artificial Intelligence Handling Text Data | http://videolectures.net/is2012_mladenic_grobelnik_text_data/ | instructors:Dunja Mladenić, Marko Grobelnik
-vl-136-46 | Stoletnica Turinga, računalniškega Einsteina | http://videolectures.net/kolokviji_gams_turing/ | instructors:Matjaž Gams
-vl-136-47 | Can a Computationally Creative System Create Itself? Creative Artefacts and Creative Processes | http://videolectures.net/iccc2014_odonoghue_creative_processes/ | instructors:Diarmuid P. O’Donoghue
-vl-136-48 | Using online networks to analyse the value of electronic music | http://videolectures.net/iccc2014_jordanous_electronic_music/ | instructors:Anna Jordanous
-vl-136-49 | Finding Seeds of Future Discoveries in Current Literature | http://videolectures.net/ktsymposium2013_urbancic_seeds/ | instructors:Tanja Urbančič
-vl-136-50 | Online Variational Inference for the Hierarchical Dirichlet Process | http://videolectures.net/aistats2011_wang_online/ | instructors:Chong Wang
-vl-136-51 | Towards the What-If Machine | http://videolectures.net/ktsymposium2013_colton_towards/ | instructors:Simon Colton
-vl-136-52 | The Officer Is Taller Than You, Who Race Yourself! Using Document Specific Word Associations in Poetry Generation | http://videolectures.net/iccc2014_toivanen_poetry_generation/ | instructors:Jukka M. Toivanen
-vl-136-53 | What is intelligence? Modelling And Designing Cognitive Behaviour | http://videolectures.net/snnsymposium2010_cristianini_wii/ | instructors:Nello Cristianini
-vl-136-54 | What to expect when you’re expecting: The role of unexpectedness in computationally evaluating creativity | http://videolectures.net/iccc2014_grace_evaluating_creativity/ | instructors:Kazjon Grace
-vl-136-55 | Computational Game Creativity | http://videolectures.net/iccc2014_liapis_game_creativity/ | instructors:Antonios Liapis
-vl-136-56 | Umetna inteligenca | http://videolectures.net/ugriznimo_znanost_umetna_inteligenca/ | instructors:Jana Krivec, Ivan Bratko,
+vl-136-10 | 37. STARMAC: Stanford Testbed of Autonomous Rotorcraft for Multi-Agent Control | http://videolectures.net/aaai08_hoffmann_starmac/ | instructors:Gabriel Hoffmann, Steven Waslander,
    
     et al.
-vl-136-57 | Evaluating Quality in Creative Systems | http://videolectures.net/ascc2013_ritchie_systems/ | instructors:Graeme Ritchie
-vl-136-58 | Inductive Rule Learning in a Nutshell | http://videolectures.net/ktsymposium2013_fuernkranz_rule_learning/ | instructors:Johannes Fürnkranz
-vl-136-59 | 6. BigDog | http://videolectures.net/aaai08_raibert_bigdog/ | instructors:Marc Raibert, Gabe Nelson,
+vl-136-11 | 3. Bio-inspired Flying Robots | http://videolectures.net/aaai08_hauert_bifr/ | instructors:Sabine Hauert
+vl-136-12 | Group Decision Making and Leveraging of Interests | http://videolectures.net/single_rajkovic_decision/ | instructors:Vladislav Rajkovič
+vl-136-13 | 2. Digital Analysis of Van Gogh Paintings | http://videolectures.net/aaai08_maaten_davgp/ | instructors:Laurens van der Maaten, Eric Postma
+vl-136-14 | Learning techniques in Planning | http://videolectures.net/mlss06au_kambhampati_ltp/ | instructors:Rao Kambhampati
+vl-136-15 | Learning for Control from Multiple Demonstrations | http://videolectures.net/icml08_coates_lcmd/ | instructors:Adam Coates
+vl-136-16 | Revisiting the Dream | http://videolectures.net/aaai2012_kautz_presidential/ | instructors:Henry Kautz
+vl-136-17 | Artificial Business Intelligence: Scaling Beyond the Real World with Cyc and LarKC | http://videolectures.net/active09_witbrock_abi/ | instructors:Michael Witbrock
+vl-136-18 | Constrained Approximate Maximum Entropy Learning of Markov Random Fields | http://videolectures.net/uai08_ganapathi_camel/ | instructors:Varun Ganapathi
+vl-136-19 | 34. Social Referencing with Leonardo | http://videolectures.net/aaai08_berlin_srl/ | instructors:Matt Berlin, Cynthia Breazeal, Andrea Thomaz
+vl-136-20 | Online Variational Inference for the Hierarchical Dirichlet Process | http://videolectures.net/aistats2011_wang_online/ | instructors:Chong Wang
+vl-136-21 | What is intelligence? Modelling And Designing Cognitive Behaviour | http://videolectures.net/snnsymposium2010_cristianini_wii/ | instructors:Nello Cristianini
+vl-136-22 | 39. Casey's Quest: Transfer Learning for Adversarial Environments | http://videolectures.net/ijcai09_moore_cqtlfae/ | instructors:Kalyan Gupta, Matthew Molineaux, Philip Moore
+vl-136-23 | Duolingo: Translating the Web with Millions of People | http://videolectures.net/aaai2012_von_ahn_duolingo/ | instructors:Luis von Ahn
+vl-136-24 | Umetna inteligenca | http://videolectures.net/ugriznimo_znanost_umetna_inteligenca/ | instructors:Jana Krivec, Ivan Bratko,
    
     et al.
-vl-136-60 | 37. STARMAC: Stanford Testbed of Autonomous Rotorcraft for Multi-Agent Control | http://videolectures.net/aaai08_hoffmann_starmac/ | instructors:Gabriel Hoffmann, Steven Waslander,
+vl-136-25 | 17. Bodies In Motion: Dynamic Motion Capture | http://videolectures.net/ijcai09_byers_bim/ | instructors:Odest Chadwicke Jenkins, Leonid Sigal,
    
     et al.
-vl-136-61 | 3. Bio-inspired Flying Robots | http://videolectures.net/aaai08_hauert_bifr/ | instructors:Sabine Hauert
-vl-136-62 | From Isolation to Involvement: Adapting Machine Creativity Software to Support Human-Computer Co-Creation | http://videolectures.net/iccc2014_kantosalo_machine_creativity/ | instructors:Anna Kantosalo
-vl-136-63 | Poetic Machine: Computational Creativity for Automatic Poetry Generation in Bengali | http://videolectures.net/iccc2014_gamback_poetic_machine/ | instructors:Björn Gambäck
-vl-136-64 | Non-Conformant Harmonization: The Real Book in the Style of Take 6 | http://videolectures.net/iccc2014_pachet_real_book/ | instructors:François Pachet
-vl-136-65 | Artificial Business Intelligence: Scaling Beyond the Real World with Cyc and LarKC | http://videolectures.net/active09_witbrock_abi/ | instructors:Michael Witbrock
-vl-136-66 | Call centre knowledge acquisition and decision support prototype | http://videolectures.net/sikdd2013_herga_support_prototype/ | instructors:Zala Herga
-vl-136-67 | Stepping Back to Progress Forwards: Setting Standards for Meta-Evaluation of Computational Creativity | http://videolectures.net/iccc2014_jordanous_stepping_back/ | instructors:Anna Jordanous
-vl-136-68 | Reading and Writing as a Creative Cycle: The Need for a Computational Model | http://videolectures.net/iccc2014_gervas_computational_model/ | instructors:Pablo Gervás
-vl-136-69 | 2. Digital Analysis of Van Gogh Paintings | http://videolectures.net/aaai08_maaten_davgp/ | instructors:Laurens van der Maaten, Eric Postma
-vl-136-70 | (i)DiversiNews a stream-based, on-line service for diversified news | http://videolectures.net/sikdd2013_trampus_bercic_diversified_news/ | instructors:Mitja Trampuš, Jan Berčič
-vl-136-71 | 39. Casey's Quest: Transfer Learning for Adversarial Environments | http://videolectures.net/ijcai09_moore_cqtlfae/ | instructors:Kalyan Gupta, Matthew Molineaux, Philip Moore
-vl-136-72 | Learning for Control from Multiple Demonstrations | http://videolectures.net/icml08_coates_lcmd/ | instructors:Adam Coates
-vl-136-73 | Optimal Innovation and Creative Interpretations of Literal and Non-Literal Language | http://videolectures.net/ascc2013_giora_language/ | instructors:Rachel Giora
-vl-136-74 | Sensor-based single-user activity recognition | http://videolectures.net/sikdd2013_kazic_activity_recognition/ | instructors:Blaž Kažič
-vl-136-75 | Sleep Musicalization | http://videolectures.net/ktsymposium2013_toivonen_sleep/ | instructors:Hannu Toivonen
-vl-136-76 | Musical Motif Discovery in Non-musical Media | http://videolectures.net/iccc2014_ventura_musical_discovery/ | instructors:Dan Ventura
-vl-136-77 | COINVENT: Towards a Computational Concept Invention Theory | http://videolectures.net/iccc2014_schorlemmer_invention_theory/ | instructors:Marco Schorlemmer
-vl-136-78 | Computational Creativity: Past, Present and Prosecco | http://videolectures.net/ktsymposium2013_veale_prosecco/ | instructors:Tony Veale
-vl-136-79 | Constrained Approximate Maximum Entropy Learning of Markov Random Fields | http://videolectures.net/uai08_ganapathi_camel/ | instructors:Varun Ganapathi
-vl-136-80 | 34. Social Referencing with Leonardo | http://videolectures.net/aaai08_berlin_srl/ | instructors:Matt Berlin, Cynthia Breazeal, Andrea Thomaz
-vl-136-81 | An Integrated Machine Learning Approach to Stroke Prediction | http://videolectures.net/kdd2010_lee_imla/ | instructors:Honglak Lee
-vl-136-82 | 17. Bodies In Motion: Dynamic Motion Capture | http://videolectures.net/ijcai09_byers_bim/ | instructors:Odest Chadwicke Jenkins, Leonid Sigal,
+vl-136-26 | Discovering popular events from tweets | http://videolectures.net/sikdd2013_moraru_tweets_events/ | instructors:Alexandra Moraru
+vl-136-27 | Parameter Estimation for the Latent Dirichlet Allocation | http://videolectures.net/sikdd2013_speh_dirichlet_allocation/ | instructors:Jaka Špeh
+vl-136-28 | Applying NLP for building domain ontology: fashion collection | http://videolectures.net/sikdd2013_novalija_fashion_collection/ | instructors:Inna Novalija
+vl-136-29 | A Unified Approach to Deduction and Induction | http://videolectures.net/mlss02_sharma_uadi/ | instructors:Arun Sharma
+vl-136-30 | Stoletnica Turinga, računalniškega Einsteina | http://videolectures.net/kolokviji_gams_turing/ | instructors:Matjaž Gams
+vl-136-31 | 5. Applying Case-Based Reasoning to Texas Hold'em Poker | http://videolectures.net/ijcai09_rubin_acbrthp/ | instructors:Ian Watson, Jonathan Rubin
+vl-136-32 | STAIR: The STanford Artificial Intelligence Robot Project | http://videolectures.net/ijcai09_ng_stair/ | instructors:Andrew Ng
+vl-136-33 | Text mining for Creative Cross-Domain Knowledge Discovery | http://videolectures.net/ascc2013_lavrac_discovery/ | instructors:Nada Lavrač, Bojan Cestnik
+vl-136-34 | The Social Impact of Self-Regulation on the Evolution of Simple and Complex Creative Ideas | http://videolectures.net/iccc2014_gabora_creative_ideas/ | instructors:Liane Gabora
+vl-136-35 | On the Creativity of Negation: The Case of Negative Sarcasm | http://videolectures.net/ascc2013_giora_sarcasm/ | instructors:Rachel Giora
+vl-136-36 | Artificial Intelligence Handling Text Data | http://videolectures.net/is2012_mladenic_grobelnik_text_data/ | instructors:Dunja Mladenić, Marko Grobelnik
+vl-136-37 | Towards Social Media Mining: Twitterobservatory | http://videolectures.net/sikdd2014_novalija_media_mining/ | instructors:Inna Novalija
+vl-136-38 | Pemuisi: A constraint satisfaction-based generator of topical Indonesian poetry | http://videolectures.net/iccc2014_manurung_indonesian_poetry/ | instructors:Ruli Manurung
+vl-136-39 | An Integrated Machine Learning Approach to Stroke Prediction | http://videolectures.net/kdd2010_lee_imla/ | instructors:Honglak Lee
+vl-136-40 | 1. Galactic Arms Race (GAR): Automatic Content Generation In a Multiplayer Online Video Game | http://videolectures.net/ijcai09_hastings_gar/ | instructors:Kenneth O. Stanley, Ratan Kumar Guha, Erin J. Hastings
+vl-136-41 | A Polynomial-time Nash Equilibrium Algorithm for Repeated Stochastic Games | http://videolectures.net/uai08_munoz_aptnea/ | instructors:Enrique Munoz de Cote
+vl-136-42 | 14. Tele-Immersive Dance: A Human/Computer Creative Environment | http://videolectures.net/aaai08_sheppard_tid/ | instructors:Renata Sheppard, Klara Nahrstedt,
    
     et al.
-vl-136-83 | Automated Daily Production of Evolutionary Audio Visual Art - An Experimental Practice | http://videolectures.net/iccc2014_unemi_experimental_practice/ | instructors:Tatsuo Unemi
-vl-136-84 | Nehovah: A Neologism Creator Nomen Ipsum | http://videolectures.net/iccc2014_ventura_nomen_ipsum/ | instructors:Dan Ventura
-vl-136-85 | Feature Selection for Support Vector Regression Using Probabilistic Prediction | http://videolectures.net/kdd2010_yang_fssv/ | instructors:Jian-Bo Yang
-vl-136-86 | Learning techniques in Planning | http://videolectures.net/mlss06au_kambhampati_ltp/ | instructors:Rao Kambhampati
-vl-136-87 | Creating and Using AI: Cyc and LarKC for Tourism, Language, Biology and Medicine | http://videolectures.net/aibootcamp2011_witbrock_cucl/ | instructors:Michael Witbrock
-vl-136-88 | 5. Applying Case-Based Reasoning to Texas Hold'em Poker | http://videolectures.net/ijcai09_rubin_acbrthp/ | instructors:Ian Watson, Jonathan Rubin
-vl-136-89 | STAIR: The STanford Artificial Intelligence Robot Project | http://videolectures.net/ijcai09_ng_stair/ | instructors:Andrew Ng
-vl-136-90 | Artificial Creative Systems: Multi-agent Simulations of Social Creativity | http://videolectures.net/ascc2013_saunders_systems/ | instructors:Rob Saunders
-vl-136-91 | Adapting a Generic Platform for Poetry Generation to Produce Spanish Poems | http://videolectures.net/iccc2014_oliveira_spanish_poems/ | instructors:Hugo Gonçalo Oliveira
-vl-136-92 | Descriptive modeling in social sciences | http://videolectures.net/ktsymposium2013_gamberger_modeling/ | instructors:Dragan Gamberger
-vl-136-93 | 1. Galactic Arms Race (GAR): Automatic Content Generation In a Multiplayer Online Video Game | http://videolectures.net/ijcai09_hastings_gar/ | instructors:Kenneth O. Stanley, Ratan Kumar Guha, Erin J. Hastings
-vl-136-94 | Markov Decision Processes with Ordinal Rewards: Reference Point-Based Preferences | http://videolectures.net/icaps2011_weng_preferences/ | instructors:Paul Weng
-vl-136-95 | Ensemble Monte-Carlo Planning: An Empirical Study | http://videolectures.net/icaps2011_fern_ensemble/ | instructors:Alan Fern
-vl-136-96 | Automatic Polytime Reductions of NP Problems into a Fragment of STRIPS | http://videolectures.net/icaps2011_machado_polytime/ | instructors:Alejandro Machado
-vl-136-97 | Algorithms for Solving the Multiagent Simple Temporal Problem | http://videolectures.net/icaps2010_boerkoel_asmstp/ | instructors:James C. Boerkoel Jr.
-vl-136-98 | Heuristic Search for Generalized Stochastic Shortest Path MDPs | http://videolectures.net/icaps2011_kolobov_heuristic/ | instructors:Andrey Kolobov
-vl-136-99 | Is it Time for Computational Creativity to Grow Up and start being Irresponsible? | http://videolectures.net/iccc2014_johnson_computational_creativity/ | instructors:Colin G. Johnson
-vl-136-100 | Can a New Theory of the Neocortex Lead to Truly Intelligent Machines? | http://videolectures.net/mitworld_hawkins_neocortex/ | 
-vl-136-101 | A Polynomial-time Nash Equilibrium Algorithm for Repeated Stochastic Games | http://videolectures.net/uai08_munoz_aptnea/ | instructors:Enrique Munoz de Cote
-vl-136-102 | Reasoning about Context in Ambient Intelligence Environments | http://videolectures.net/solomon_antoniou_reasoning/ | instructors:Grigoris Antoniou
-vl-136-103 | A Unified Approach to Deduction and Induction | http://videolectures.net/mlss02_sharma_uadi/ | instructors:Arun Sharma
-vl-136-104 | 14. Tele-Immersive Dance: A Human/Computer Creative Environment | http://videolectures.net/aaai08_sheppard_tid/ | instructors:Renata Sheppard, Klara Nahrstedt,
+vl-136-43 | Guiding Principles of Building Creative Systems | http://videolectures.net/ascc2013_colton_systems/ | instructors:Simon Colton
+vl-136-44 | Philosophical Issues | http://videolectures.net/ascc2013_colton_issues/ | instructors:Simon Colton
+vl-136-45 | Feature Selection for Support Vector Regression Using Probabilistic Prediction | http://videolectures.net/kdd2010_yang_fssv/ | instructors:Jian-Bo Yang
+vl-136-46 | 16. Game-Based Learning | http://videolectures.net/aaai08_byers_gbl/ | instructors:Daniel Byers, Michael Lapping-Carr,
    
     et al.
-vl-136-105 | Online Multiscale Dynamic Topic Models | http://videolectures.net/kdd2010_iwata_omdtm/ | instructors:Tomoharu Iwata
-vl-136-106 | Learning Inadmissible Heuristics during Search | http://videolectures.net/icaps2011_thayer_inadmissible/ | instructors:Jordan T. Thayer
-vl-136-107 | 8. AIspace: Tools for Learning Artificial Intelligence | http://videolectures.net/ijcai09_knoll_tlai/ | instructors:Holger H. Hoos, Cristina Conati,
+vl-136-47 | Automatic Detection of Irony and Humour in Twitter | http://videolectures.net/iccc2014_barbieri_automatic_detection/ | instructors:Francesco Barbieri
+vl-136-48 | Ground Facts, Rules and Probabilistic Inference for Cyc | http://videolectures.net/ida07_witbrock_gf/ | instructors:Michael Witbrock
+vl-136-49 | Mining Demand And Supply Data With Methods Of Economic Statistics | http://videolectures.net/sikdd2014_hajdinjak_supply_data/ | instructors:Melita Hajdinjak
+vl-136-50 | Creating and Using AI: Cyc and LarKC for Tourism, Language, Biology and Medicine | http://videolectures.net/aibootcamp2011_witbrock_cucl/ | instructors:Michael Witbrock
+vl-136-51 | Usage of the Kalman filter for data cleaning of sensor data | http://videolectures.net/sikdd2013_kenda_kalman_filter/ | instructors:Klemen Kenda
+vl-136-52 | 8. AIspace: Tools for Learning Artificial Intelligence | http://videolectures.net/ijcai09_knoll_tlai/ | instructors:Holger H. Hoos, Cristina Conati,
    
     et al.
-vl-136-108 | 16. Game-Based Learning | http://videolectures.net/aaai08_byers_gbl/ | instructors:Daniel Byers, Michael Lapping-Carr,
+vl-136-53 | 30. Imitating a RoboCup Soccer Player Using Case-Based Reasoning | http://videolectures.net/aaai08_floyd_ircs/ | instructors:Michael Floyd, Babak Esfandiari
+vl-136-54 | Computational Creativity in Music and Music Cognition | http://videolectures.net/ascc2013_wiggins_music/ | instructors:Geraint Wiggins
+vl-136-55 | Computational Creativity in Literary Artifacts: Narrative and Poetry | http://videolectures.net/ascc2013_gervas_poetry/ | instructors:Pablo Gervás
+vl-136-56 | Semantic Graphs Derived from Triplets with Application in Document Summarization | http://videolectures.net/sikdd08_rusu_sgdt/ | instructors:Delia Rusu
+vl-136-57 | TweetViz: Twitter Data Visualization | http://videolectures.net/sikdd2014_dimitrovski_data_visualization/ | instructors:Ivica Dimitrovski
+vl-136-58 | Complex Event Detection And Prediction In Traffic | http://videolectures.net/sikdd2014_kazic_event_detection/ | instructors:Blaž Kažič
+vl-136-59 | Algorithms for Solving the Multiagent Simple Temporal Problem | http://videolectures.net/icaps2010_boerkoel_asmstp/ | instructors:James C. Boerkoel Jr.
+vl-136-60 | Building an Automated Painter | http://videolectures.net/ascc2013_colton_painter/ | instructors:Simon Colton
+vl-136-61 | Interview with David Hardoon | http://videolectures.net/mbc07_hardoon_inw/ | instructors:David R. Hardoon
+vl-136-62 | Convergent Message-Passing Algorithms for Inference over General Graphs with Convex Free Energies | http://videolectures.net/uai08_hazan_cmpa/ | instructors:Tamir Hazan
+vl-136-63 | A Musical Composition Application Based on a Multiagent System to Assist Novice Composers | http://videolectures.net/iccc2014_navarro_musical_composition/ | instructors:Maria Navarro
+vl-136-64 | Splash Belief Propagation: Efficient Parallelization Through Asynchronous Scheduling | http://videolectures.net/nipsworkshops09_gonzalez_sbpe/ | instructors:Joseph Gonzalez
+vl-136-65 | Online Multiscale Dynamic Topic Models | http://videolectures.net/kdd2010_iwata_omdtm/ | instructors:Tomoharu Iwata
+vl-136-66 | A System For Large Scale Data Exploration and Organization | http://videolectures.net/sikdd2014_rei_large_scale/ | instructors:Luis Rei
+vl-136-67 | Markov Decision Processes with Ordinal Rewards: Reference Point-Based Preferences | http://videolectures.net/icaps2011_weng_preferences/ | instructors:Paul Weng
+vl-136-68 | Ensemble Monte-Carlo Planning: An Empirical Study | http://videolectures.net/icaps2011_fern_ensemble/ | instructors:Alan Fern
+vl-136-69 | Automatic Polytime Reductions of NP Problems into a Fragment of STRIPS | http://videolectures.net/icaps2011_machado_polytime/ | instructors:Alejandro Machado
+vl-136-70 | 10. DARPA LAGR Program: Learning Applied to Long-Range Vision using a Collision-Free Navigation Platform | http://videolectures.net/aaai08_sermanet_plalrv/ | instructors:Pierre Sermanet, Raia Hadsell,
    
     et al.
-vl-136-109 | Socially enhanced Services Computing | http://videolectures.net/kolokviji_dustdar_sesc/ | instructors:Schahram Dustdar
-vl-136-110 | Alan Turing and the Development of Artificial Intelligence | http://videolectures.net/is2012_gams_science_einstein/ | instructors:Matjaž Gams
-vl-136-111 | Sample-Based Planning for Continuous Action Markov Decision Processes | http://videolectures.net/icaps2011_mansley_markov/ | instructors:Chris Mansley
-vl-136-112 | Splash Belief Propagation: Efficient Parallelization Through Asynchronous Scheduling | http://videolectures.net/nipsworkshops09_gonzalez_sbpe/ | instructors:Joseph Gonzalez
-vl-136-113 | Scaling Up Multiagent Planning: A Best-Response Approach | http://videolectures.net/icaps2011_jonsson_planning/ | instructors:Anders Jonsson
-vl-136-114 | Closing the Gap: Improved Bounds on Optimal POMDP Solutions | http://videolectures.net/icaps2011_poupart_solutions/ | instructors:Pascal Poupart
-vl-136-115 | Assessing Progress in Building Autonomously Creative Systems | http://videolectures.net/iccc2014_colton_creative_systems/ | instructors:Simon Colton
-vl-136-116 | Autonomously Managing Competing Objectives to Improve the Creation and Curation of Artifacts | http://videolectures.net/iccc2014_ventura_competing_objectives/ | instructors:Dan Ventura
-vl-136-117 | Medical Coding Classification by Leveraging Inter-Code Relationships | http://videolectures.net/kdd2010_yan_mccl/ | instructors:Yan Yan
-vl-136-118 | Kloniranje obnašanja | http://videolectures.net/solomon_tavcar_gams_kloniranje/ | instructors:Aleš Tavčar, Matjaž Gams
-vl-136-119 | A conditional game for comparing approximations | http://videolectures.net/aistats2011_eaton_game/ | instructors:Frederik Eaton
-vl-136-120 | Detekcija sumljivega obnašanja potnikov | http://videolectures.net/solomon_kaluza_dsop/ | instructors:Boštjan Kaluža
-vl-136-121 | 30. Imitating a RoboCup Soccer Player Using Case-Based Reasoning | http://videolectures.net/aaai08_floyd_ircs/ | instructors:Michael Floyd, Babak Esfandiari
-vl-136-122 | Semantic Graphs Derived from Triplets with Application in Document Summarization | http://videolectures.net/sikdd08_rusu_sgdt/ | instructors:Delia Rusu
-vl-136-123 | Ground Facts, Rules and Probabilistic Inference for Cyc | http://videolectures.net/ida07_witbrock_gf/ | instructors:Michael Witbrock
-vl-136-124 | Calculating distance measure for clustering in multi-relational settings | http://videolectures.net/sikdd2013_niaksu_multirelational_settings/ | instructors:Olegas Niaksu
-vl-136-125 | A Complete Algorithm for Generating Landmarks | http://videolectures.net/icaps2011_bonet_landmarks/ | instructors:Blai Bonet
-vl-136-126 | Searching for Plans with Carefully Designed Probes | http://videolectures.net/icaps2011_lipovetzky_designed/ | instructors:Nir Lipovetzky
-vl-136-127 | Business Process Mining and Formalization | http://videolectures.net/coinactivess2010_grobelnik_bpm/ | instructors:Marko Grobelnik
-vl-136-128 | Semantic Relation Extraction With Kernels Over Typed Dependency Trees | http://videolectures.net/kdd2010_reichartz_sre/ | instructors:Frank Reichartz
-vl-136-129 | 16. CogSketch: Open-Domain Sketch Understanding for Research and Education | http://videolectures.net/ijcai09_lockwood_csodsure/ | instructors:Kenneth Forbus, Jon Wetzel,
+vl-136-71 | 27. Smart Classroom | http://videolectures.net/aaai08_goyal_scl/ | instructors:Saurabh Goya, Chaitanya Mutyala,
    
     et al.
-vl-136-130 | Convergent Message-Passing Algorithms for Inference over General Graphs with Convex Free Energies | http://videolectures.net/uai08_hazan_cmpa/ | instructors:Tamir Hazan
-vl-136-131 | 15. How to Cook as Perfect Love Story | http://videolectures.net/ijcai09_cordier_hcpls/ | instructors:Amélie Cordier
-vl-136-132 | Robot Trajectory Optimization Using Approximate Inference | http://videolectures.net/icml09_toussaint_rto/ | instructors:Marc Toussaint
-vl-136-133 | Interview with David Hardoon | http://videolectures.net/mbc07_hardoon_inw/ | instructors:David R. Hardoon
-vl-136-134 | Empirically Grounding the Evaluation of Creative Systems: An Interaction Design Approach | http://videolectures.net/iccc2014_bown_design_approach/ | instructors:Oliver Bown
-vl-136-135 | 10. DARPA LAGR Program: Learning Applied to Long-Range Vision using a Collision-Free Navigation Platform | http://videolectures.net/aaai08_sermanet_plalrv/ | instructors:Pierre Sermanet, Raia Hadsell,
+vl-136-72 | Finding Seeds of Future Discoveries in Current Literature | http://videolectures.net/ktsymposium2013_urbancic_seeds/ | instructors:Tanja Urbančič
+vl-136-73 | 16. CogSketch: Open-Domain Sketch Understanding for Research and Education | http://videolectures.net/ijcai09_lockwood_csodsure/ | instructors:Kenneth Forbus, Jon Wetzel,
    
     et al.
-vl-136-136 | 27. Smart Classroom | http://videolectures.net/aaai08_goyal_scl/ | instructors:Saurabh Goya, Chaitanya Mutyala,
+vl-136-74 | Heuristic Search for Generalized Stochastic Shortest Path MDPs | http://videolectures.net/icaps2011_kolobov_heuristic/ | instructors:Andrey Kolobov
+vl-136-75 | Data Quality | http://videolectures.net/ida07_lenz_dq/ | instructors:Hans-Joachim Lenz
+vl-136-76 | 15. How to Cook as Perfect Love Story | http://videolectures.net/ijcai09_cordier_hcpls/ | instructors:Amélie Cordier
+vl-136-77 | Towards the What-If Machine | http://videolectures.net/ktsymposium2013_colton_towards/ | instructors:Simon Colton
+vl-136-78 | Medical Coding Classification by Leveraging Inter-Code Relationships | http://videolectures.net/kdd2010_yan_mccl/ | instructors:Yan Yan
+vl-136-79 | Socially enhanced Services Computing | http://videolectures.net/kolokviji_dustdar_sesc/ | instructors:Schahram Dustdar
+vl-136-80 | Reasoning about Context in Ambient Intelligence Environments | http://videolectures.net/solomon_antoniou_reasoning/ | instructors:Grigoris Antoniou
+vl-136-81 | Robot Trajectory Optimization Using Approximate Inference | http://videolectures.net/icml09_toussaint_rto/ | instructors:Marc Toussaint
+vl-136-82 | A High-Performance Multithreaded Approach For Clustering A Stream Of Documents | http://videolectures.net/sikdd2014_brank_stream_documents/ | instructors:Janez Brank
+vl-136-83 | 36. CBR Noir | http://videolectures.net/aaai08_wilson_cbr/ | instructors:David Wilson
+vl-136-84 | Creativity as a Web Service | http://videolectures.net/ascc2013_veale_web/ | instructors:Tony Veale
+vl-136-85 | Computational Approaches to Conceptual Blending | http://videolectures.net/ascc2013_cardoso_blending/ | instructors:Amilcar Cardoso
+vl-136-86 | Learning Inadmissible Heuristics during Search | http://videolectures.net/icaps2011_thayer_inadmissible/ | instructors:Jordan T. Thayer
+vl-136-87 | Strategy Selection in Influence Diagrams using Imprecise Probabilities | http://videolectures.net/uai08_de_campos_ssid/ | instructors:Cassio P. de Campos
+vl-136-88 | Umetna inteligenca v mnogih oblikah | http://videolectures.net/rtk07_lustrek_uivmo/ | instructors:Mitja Luštrek
+vl-136-89 | Tightening LP Relaxations for MAP using Message Passing | http://videolectures.net/uai08_sontag_tlpr/ | instructors:David Sontag
+vl-136-90 | Detekcija sumljivega obnašanja potnikov | http://videolectures.net/solomon_kaluza_dsop/ | instructors:Boštjan Kaluža
+vl-136-91 | Can diagrammatic reasoning be automated | http://videolectures.net/solomon_jamnik_cdra/ | instructors:Mateja Jamnik
+vl-136-92 | Inductive Rule Learning in a Nutshell | http://videolectures.net/ktsymposium2013_fuernkranz_rule_learning/ | instructors:Johannes Fürnkranz
+vl-136-93 | Sample-Based Planning for Continuous Action Markov Decision Processes | http://videolectures.net/icaps2011_mansley_markov/ | instructors:Chris Mansley
+vl-136-94 | Scaling Up Multiagent Planning: A Best-Response Approach | http://videolectures.net/icaps2011_jonsson_planning/ | instructors:Anders Jonsson
+vl-136-95 | Closing the Gap: Improved Bounds on Optimal POMDP Solutions | http://videolectures.net/icaps2011_poupart_solutions/ | instructors:Pascal Poupart
+vl-136-96 | Business Process Mining and Formalization | http://videolectures.net/coinactivess2010_grobelnik_bpm/ | instructors:Marko Grobelnik
+vl-136-97 | 7. Motion Synthesis and Control Learning for (Un)Knotting Deformable Linear Objects | http://videolectures.net/ijcai09_prabhakaran_mscludlo/ | instructors:Sandhya Prabhakaran
+vl-136-98 | Semantic Relation Extraction With Kernels Over Typed Dependency Trees | http://videolectures.net/kdd2010_reichartz_sre/ | instructors:Frank Reichartz
+vl-136-99 | A conditional game for comparing approximations | http://videolectures.net/aistats2011_eaton_game/ | instructors:Frederik Eaton
+vl-136-100 | 28. Virtual Humans Research Project | http://videolectures.net/aaai08_kenny_vhr/ | instructors:Patrick Kenny, Jonathan Gratch, Bill Swartout
+vl-136-101 | 11. Copycat Hand for All | http://videolectures.net/ijcai09_tomida_cha/ | instructors:Kiyoshi Hoshino, Takanobu Tanimoto, Motomasa Tomida
+vl-136-102 | Trajectory Prediction: Learning to Map Situations to Robot Trajectories | http://videolectures.net/icml09_jetchev_tpl/ | instructors:Nikolay Jetchev
+vl-136-103 | 29. WiiGesture | http://videolectures.net/ijcai09_delp_wiig/ | instructors:Michael Delp
+vl-136-104 | Conceptual Framework for Collaborative Design and Operations | http://videolectures.net/fiw05_butala_cfcdo/ | instructors:Peter Butala
+vl-136-105 | Algorithm For Classification Of Textual Documents Represented By Tandem Analysis | http://videolectures.net/sikdd2014_dobsa_textual_documents/ | instructors:Jasminka Dobša
+vl-136-106 | Consistency And Completeness Of Multiword Expressions During Translation | http://videolectures.net/sikdd2014_zdravkova_multiword_expressions/ | instructors:Katerina Zdravkova
+vl-136-107 | Coming Good and Breaking Bad: Generating Transformative Character Arcs For Use in Compelling Stories | http://videolectures.net/iccc2014_veale_compelling_stories/ | instructors:Tony Veale
+vl-136-108 | Computational Creativity: A Philosophical Approach, and an Approach to Philosophy | http://videolectures.net/iccc2014_mcgregor_philosophical_approach/ | instructors:Stephen McGregor
+vl-136-109 | Planning under Uncertainty Using Distributions over Posteriors | http://videolectures.net/nipsworkshops09_roy_puuudop/ | instructors:Nicholas Roy
+vl-136-110 | A Complete Algorithm for Generating Landmarks | http://videolectures.net/icaps2011_bonet_landmarks/ | instructors:Blai Bonet
+vl-136-111 | Call centre knowledge acquisition and decision support prototype | http://videolectures.net/sikdd2013_herga_support_prototype/ | instructors:Zala Herga
+vl-136-112 | Exploitation and Exploration in a Performance based Contextual Advertising System | http://videolectures.net/kdd2010_zhang_eepb/ | instructors:Ruofei Zhang
+vl-136-113 | Searching for Plans with Carefully Designed Probes | http://videolectures.net/icaps2011_lipovetzky_designed/ | instructors:Nir Lipovetzky
+vl-136-114 | Creativity in Conceptual Spaces | http://videolectures.net/iccc2014_chella_conceptual_spaces/ | instructors:Antonio Chella
+vl-136-115 | Panel: Priors, Deep Architectures and NLP: YOU ARE DOING EVERYTHING WRONG!! | http://videolectures.net/icml08_weston_pda/ | instructors:Jason Weston
+vl-136-116 | Mass Estimation and Its Applications | http://videolectures.net/kdd2010_ting_mea/ | instructors:Kai Ming Ting
+vl-136-117 | 9. CALO Workflow Recognition and Proactive Assistance | http://videolectures.net/aaai08_bui_wrpa/ | instructors:Hung H. Bui, Federico Cesari,
    
     et al.
-vl-136-137 | Exploitation and Exploration in a Performance based Contextual Advertising System | http://videolectures.net/kdd2010_zhang_eepb/ | instructors:Ruofei Zhang
-vl-136-138 | Računalniško podprto evidentiranje in sestavljanje fragmentov stenskih poslikav | http://videolectures.net/solomon_filipic_evidentiranje/ | instructors:Bogdan Filipič
-vl-136-139 | Planning and Acting in Incomplete Domains | http://videolectures.net/icaps2011_bryce_domains/ | instructors:Daniel Bryce
-vl-136-140 | Effective Heuristics and Belief Tracking for Planning with Incomplete Information | http://videolectures.net/icaps2011_albore_effective/ | instructors:Alexandre Albore
-vl-136-141 | Mass Estimation and Its Applications | http://videolectures.net/kdd2010_ting_mea/ | instructors:Kai Ming Ting
-vl-136-142 | When Abstractions Met Landmarks | http://videolectures.net/icaps2010_domshlak_landmarks/ | instructors:Carmel Domshlak
-vl-136-143 | Transfer Metric Learning by Learning Task Relationships | http://videolectures.net/kdd2010_zhang_tmlltr/ | instructors:Yu Zhang
-vl-136-144 | Trajectory Prediction: Learning to Map Situations to Robot Trajectories | http://videolectures.net/icml09_jetchev_tpl/ | instructors:Nikolay Jetchev
-vl-136-145 | Learning to Combine Discriminative Classifiers | http://videolectures.net/kdd2010_lee_lcd/ | instructors:Chi-Hoon Lee
-vl-136-146 | 7. Motion Synthesis and Control Learning for (Un)Knotting Deformable Linear Objects | http://videolectures.net/ijcai09_prabhakaran_mscludlo/ | instructors:Sandhya Prabhakaran
-vl-136-147 | Planning under Uncertainty Using Distributions over Posteriors | http://videolectures.net/nipsworkshops09_roy_puuudop/ | instructors:Nicholas Roy
-vl-136-148 | Multi-Label Learning by Exploiting Label Dependency | http://videolectures.net/kdd2010_zhang_mlle/ | instructors:Min-Ling Zhang
-vl-136-149 | 11. Copycat Hand for All | http://videolectures.net/ijcai09_tomida_cha/ | instructors:Kiyoshi Hoshino, Takanobu Tanimoto, Motomasa Tomida
-vl-136-150 | Strategy Selection in Influence Diagrams using Imprecise Probabilities | http://videolectures.net/uai08_de_campos_ssid/ | instructors:Cassio P. de Campos
-vl-136-151 | 29. WiiGesture | http://videolectures.net/ijcai09_delp_wiig/ | instructors:Michael Delp
-vl-136-152 | The Minimal Seed Set Problem | http://videolectures.net/icaps2011_gefen_seed/ | instructors:Avitan Gefen
-vl-136-153 | 36. CBR Noir | http://videolectures.net/aaai08_wilson_cbr/ | instructors:David Wilson
-vl-136-154 | Learning with Cost Intervals | http://videolectures.net/kdd2010_liu_lci/ | instructors:Xu-Ying Liu
-vl-136-155 | Data Quality | http://videolectures.net/ida07_lenz_dq/ | instructors:Hans-Joachim Lenz
-vl-136-156 | Deterministic Competition | http://videolectures.net/icaps2011_linares_lopez_competition/ | instructors:Carlos Linares López
-vl-136-157 | Tightening LP Relaxations for MAP using Message Passing | http://videolectures.net/uai08_sontag_tlpr/ | instructors:David Sontag
-vl-136-158 | Discovery of Significant Emerging Trends | http://videolectures.net/kdd2010_ungar_dset/ | instructors:Lyle Ungar
-vl-136-159 | Efficient Policy Construction for MDPs Represented in Probabilistic PDDL | http://videolectures.net/icaps2011_lesner_probabilistic/ | instructors:Boris Lesner
-vl-136-160 | Multi-Task Learning for Boosting with Application to Web Search Ranking | http://videolectures.net/kdd2010_vadrevu_mtlbaw/ | instructors:Srinivas Vadrevu
-vl-136-161 | Personalized Query Auto-Completion for News Search | http://videolectures.net/sikdd2013_dali_news_search/ | instructors:Lorand Dali
-vl-136-162 | Semi-automatic rule construction for semantic linking of relation arguments | http://videolectures.net/sikdd2013_starc_relation_arguments/ | instructors:Janez Starc
-vl-136-163 | 28. Virtual Humans Research Project | http://videolectures.net/aaai08_kenny_vhr/ | instructors:Patrick Kenny, Jonathan Gratch, Bill Swartout
-vl-136-164 | Supervised Ranking of Syntactic Configurations for Finding Targets of Sentiment Expressions | http://videolectures.net/icwsm09_kessler_srsc/ | instructors:Jason Kessler
-vl-136-165 | Tropical Cyclone Event Sequence Similarity Search via Dimensionality Reduction and Metric Learning | http://videolectures.net/kdd2010_ho_tces/ | instructors:Shen-Shyang Ho
-vl-136-166 | 23. Using Entropy to Distinguish Shape versus Text in Hand-Drawn Diagrams | http://videolectures.net/ijcai09_bhat_uedsvthdd/ | instructors:Tracy Hammond, Akshay Bhat
-vl-136-167 | Umetna inteligenca v mnogih oblikah | http://videolectures.net/rtk07_lustrek_uivmo/ | instructors:Mitja Luštrek
-vl-136-168 | An Effective Approach to Realizing Planning Programs | http://videolectures.net/icaps2011_gerevini_planning/ | instructors:Alfonso E. Gerevini
-vl-136-169 | Model Building Experiences using Garp3: Problems, Patterns and Debugging | http://videolectures.net/qr09_liem_mbe/ | instructors:Jochem Liem
-vl-136-170 | A Model of Runaway Evolution of Creative Domains | http://videolectures.net/iccc2014_bown_creative_domains/ | instructors:Oliver Bown
-vl-136-171 | Parameter Space Interaction from a Creative Systems Perspective | http://videolectures.net/iccc2014_tubb_systems_perspective/ | instructors:Robert Tubb
-vl-136-172 | Event processing in asset management | http://videolectures.net/sikdd2013_kenda_asset_management/ | instructors:Klemen Kenda
-vl-136-173 | Assessing the Ecological Impacts of Agriculture Intensification Through Qualitative Reasoning | http://videolectures.net/qr09_salles_aei/ | instructors:Paulo Salles
-vl-136-174 | Can diagrammatic reasoning be automated | http://videolectures.net/solomon_jamnik_cdra/ | instructors:Mateja Jamnik
-vl-136-175 | Panel: Priors, Deep Architectures and NLP: YOU ARE DOING EVERYTHING WRONG!! | http://videolectures.net/icml08_weston_pda/ | instructors:Jason Weston
-vl-136-176 | On Utility Of Gene Set Signatures In Gene Expression-Based Class Prediction | http://videolectures.net/mlsb09_mramor_ouogss/ | instructors:Minca Mramor
-vl-136-177 | The Topic-Perspective Model for Social Tagging Systems | http://videolectures.net/kdd2010_lu_tpmsts/ | instructors:Caimei Lu
-vl-136-178 | 9. CALO Workflow Recognition and Proactive Assistance | http://videolectures.net/aaai08_bui_wrpa/ | instructors:Hung H. Bui, Federico Cesari,
+vl-136-118 | Supervised Ranking of Syntactic Configurations for Finding Targets of Sentiment Expressions | http://videolectures.net/icwsm09_kessler_srsc/ | instructors:Jason Kessler
+vl-136-119 | 23. Using Entropy to Distinguish Shape versus Text in Hand-Drawn Diagrams | http://videolectures.net/ijcai09_bhat_uedsvthdd/ | instructors:Tracy Hammond, Akshay Bhat
+vl-136-120 | Evaluating Quality in Creative Systems | http://videolectures.net/ascc2013_ritchie_systems/ | instructors:Graeme Ritchie
+vl-136-121 | When Abstractions Met Landmarks | http://videolectures.net/icaps2010_domshlak_landmarks/ | instructors:Carmel Domshlak
+vl-136-122 | Transfer Metric Learning by Learning Task Relationships | http://videolectures.net/kdd2010_zhang_tmlltr/ | instructors:Yu Zhang
+vl-136-123 | Learning and Solving Many-Player Games through a Cluster-Based Representation | http://videolectures.net/uai08_ficici_lsmpg/ | instructors:Sevan G. Ficici
+vl-136-124 | Kloniranje obnašanja | http://videolectures.net/solomon_tavcar_gams_kloniranje/ | instructors:Aleš Tavčar, Matjaž Gams
+vl-136-125 | Sleep Musicalization | http://videolectures.net/ktsymposium2013_toivonen_sleep/ | instructors:Hannu Toivonen
+vl-136-126 | Ludus Ex Machina: Building A 3D Game Designer That Competes Alongside Humans | http://videolectures.net/iccc2014_cook_game_designer/ | instructors:Michael Cook
+vl-136-127 | Learning to Combine Discriminative Classifiers | http://videolectures.net/kdd2010_lee_lcd/ | instructors:Chi-Hoon Lee
+vl-136-128 | (i)DiversiNews a stream-based, on-line service for diversified news | http://videolectures.net/sikdd2013_trampus_bercic_diversified_news/ | instructors:Mitja Trampuš, Jan Berčič
+vl-136-129 | 33. Kato, the Geocaching Robot | http://videolectures.net/aaai08_sokolsky_kgr/ | instructors:Michael Sokolsky, Michael Bowling, James Neufeld
+vl-136-130 | Model Building Experiences using Garp3: Problems, Patterns and Debugging | http://videolectures.net/qr09_liem_mbe/ | instructors:Jochem Liem
+vl-136-131 | Multi-Label Learning by Exploiting Label Dependency | http://videolectures.net/kdd2010_zhang_mlle/ | instructors:Min-Ling Zhang
+vl-136-132 | Computational Creativity: Past, Present and Prosecco | http://videolectures.net/ktsymposium2013_veale_prosecco/ | instructors:Tony Veale
+vl-136-133 | Sensor-based single-user activity recognition | http://videolectures.net/sikdd2013_kazic_activity_recognition/ | instructors:Blaž Kažič
+vl-136-134 | Identifying Cover Songs Using Normalized Compression Distance | http://videolectures.net/icml08_ahonen_ics/ | instructors:Teppo E. Ahonen
+vl-136-135 | Knowledge Discovery of Artistic Influences: A Metric Learning Approach | http://videolectures.net/iccc2014_elgammal_metric_learning/ | instructors:Ahmed Elgammal
+vl-136-136 | The FloWr Framework: Automated Flowchart Construction, Optimisation and Alteration for Creative Systems | http://videolectures.net/iccc2014_charnley_creative_systems/ | instructors:John Charnley
+vl-136-137 | Assessing the Ecological Impacts of Agriculture Intensification Through Qualitative Reasoning | http://videolectures.net/qr09_salles_aei/ | instructors:Paulo Salles
+vl-136-138 | Learning with Cost Intervals | http://videolectures.net/kdd2010_liu_lci/ | instructors:Xu-Ying Liu
+vl-136-139 | Discovery of Significant Emerging Trends | http://videolectures.net/kdd2010_ungar_dset/ | instructors:Lyle Ungar
+vl-136-140 | State estimation and prediction based on dynamic spike train decoding: noise, adaptation, and multisensory integration | http://videolectures.net/aispds08_meir_sep/ | instructors:Ron Meir
+vl-136-141 | Planning and Acting in Incomplete Domains | http://videolectures.net/icaps2011_bryce_domains/ | instructors:Daniel Bryce
+vl-136-142 | Creativity in Story Generation From the Ground Up: Non-deterministic Simulation driven by Narrative | http://videolectures.net/iccc2014_leon_story_generation/ | instructors:Carlos León
+vl-136-143 | On Utility Of Gene Set Signatures In Gene Expression-Based Class Prediction | http://videolectures.net/mlsb09_mramor_ouogss/ | instructors:Minca Mramor
+vl-136-144 | 8. CALO Integrated Task Learning | http://videolectures.net/aaai08_haines_itl/ | instructors:Will Haines, Aaron Spaulding
+vl-136-145 | Multi-Task Learning for Boosting with Application to Web Search Ranking | http://videolectures.net/kdd2010_vadrevu_mtlbaw/ | instructors:Srinivas Vadrevu
+vl-136-146 | Effective Heuristics and Belief Tracking for Planning with Incomplete Information | http://videolectures.net/icaps2011_albore_effective/ | instructors:Alexandre Albore
+vl-136-147 | Can a New Theory of the Neocortex Lead to Truly Intelligent Machines? | http://videolectures.net/mitworld_hawkins_neocortex/ | 
+vl-136-148 | Alan Turing and the Development of Artificial Intelligence | http://videolectures.net/is2012_gams_science_einstein/ | instructors:Matjaž Gams
+vl-136-149 | Tropical Cyclone Event Sequence Similarity Search via Dimensionality Reduction and Metric Learning | http://videolectures.net/kdd2010_ho_tces/ | instructors:Shen-Shyang Ho
+vl-136-150 | Optimal Innovation and Creative Interpretations of Literal and Non-Literal Language | http://videolectures.net/ascc2013_giora_language/ | instructors:Rachel Giora
+vl-136-151 | Računalniško podprto evidentiranje in sestavljanje fragmentov stenskih poslikav | http://videolectures.net/solomon_filipic_evidentiranje/ | instructors:Bogdan Filipič
+vl-136-152 | 12. Understanding Agent Behaviors in Game Environments | http://videolectures.net/aaai08_dixit_uabge/ | instructors:Priyesh N. Dixit, G. Michael Youngblood
+vl-136-153 | 25. Two Generations of Robots for Human-Robot Interaction Research | http://videolectures.net/aaai08_sidner_tgr/ | instructors:Candace L. Sidner, Charles Rich, Christopher Lee
+vl-136-154 | The Minimal Seed Set Problem | http://videolectures.net/icaps2011_gefen_seed/ | instructors:Avitan Gefen
+vl-136-155 | Deterministic Competition | http://videolectures.net/icaps2011_linares_lopez_competition/ | instructors:Carlos Linares López
+vl-136-156 | 17. Hands-Free Human-Robot Interaction | http://videolectures.net/aaai08_koenig_hfhri/ | instructors:Nathan Koenig, Matthew Loper,
    
     et al.
-vl-136-179 | Contingent Planning as AND/OR Forward Search with Disjunctive Representation | http://videolectures.net/icaps2011_to_contingent/ | instructors:Son Thanh To
-vl-136-180 | Learning and Solving Many-Player Games through a Cluster-Based Representation | http://videolectures.net/uai08_ficici_lsmpg/ | instructors:Sevan G. Ficici
-vl-136-181 | Conceptual Framework for Collaborative Design and Operations | http://videolectures.net/fiw05_butala_cfcdo/ | instructors:Peter Butala
-vl-136-182 | Unifying Dependent Clustering and Disparate Clustering for Non-homogeneous Data | http://videolectures.net/kdd2010_hossain_udcd/ | instructors:M. Shahriar Hossain
-vl-136-183 | Advances in subgroup discovery for biomedical research | http://videolectures.net/ktsymposium2013_lavrac_advances/ | instructors:Nada Lavrač
-vl-136-184 | Web Scale Reasoning and the LarKC Project (Review and Progress) | http://videolectures.net/coinactivess2010_witbrock_lkc/ | instructors:Michael Witbrock
-vl-136-185 | 33. Kato, the Geocaching Robot | http://videolectures.net/aaai08_sokolsky_kgr/ | instructors:Michael Sokolsky, Michael Bowling, James Neufeld
-vl-136-186 | Identifying Cover Songs Using Normalized Compression Distance | http://videolectures.net/icml08_ahonen_ics/ | instructors:Teppo E. Ahonen
-vl-136-187 | Growing a Tree in the Forest: Constructing Folksonomies by Integrating Structured Metadata | http://videolectures.net/kdd2010_plangprasopchok_gtf/ | instructors:Anon Plangprasopchok
-vl-136-188 | State estimation and prediction based on dynamic spike train decoding: noise, adaptation, and multisensory integration | http://videolectures.net/aispds08_meir_sep/ | instructors:Ron Meir
-vl-136-189 | Learning Competition | http://videolectures.net/icaps2011_celorrio_competition/ | instructors:Sergio Jiménez Celorrio
-vl-136-190 | Uncertainty Competition | http://videolectures.net/icaps2011_sanner_competition/ | instructors:Scott Sanner
-vl-136-191 | A Polynomial All Outcome Determinization for Probabilistic Planning | http://videolectures.net/icaps2011_keller_polynomial/ | instructors:Thomas Keller
-vl-136-192 | 8. CALO Integrated Task Learning | http://videolectures.net/aaai08_haines_itl/ | instructors:Will Haines, Aaron Spaulding
-vl-136-193 | 24. News at Seven: The Future of the Future | http://videolectures.net/ijcai09_gandy_nasfof/ | instructors:Kristian J. Hammond, Nathan D. Nichols, Lisa Gandy
-vl-136-194 | 12. Understanding Agent Behaviors in Game Environments | http://videolectures.net/aaai08_dixit_uabge/ | instructors:Priyesh N. Dixit, G. Michael Youngblood
-vl-136-195 | 25. Two Generations of Robots for Human-Robot Interaction Research | http://videolectures.net/aaai08_sidner_tgr/ | instructors:Candace L. Sidner, Charles Rich, Christopher Lee
-vl-136-196 | 25. Penso BCI System | http://videolectures.net/ijcai09_peters_pbcis/ | instructors:Payam Aghaeipour, Rafael A. Calvo, Dorian Peters
-vl-136-197 | Influence-based Policy Abstraction for Weakly-coupled DEC-POMDPs | http://videolectures.net/icaps2010_witwicki_ibpa/ | instructors:Stefan Witwicki
-vl-136-198 | 17. Hands-Free Human-Robot Interaction | http://videolectures.net/aaai08_koenig_hfhri/ | instructors:Nathan Koenig, Matthew Loper,
+vl-136-157 | 23. The Sounds of Speech | http://videolectures.net/aaai08_rubin_tss/ | instructors:John Rubin
+vl-136-158 | Efficient Policy Construction for MDPs Represented in Probabilistic PDDL | http://videolectures.net/icaps2011_lesner_probabilistic/ | instructors:Boris Lesner
+vl-136-159 | 24. Narratoria, an Authoring Suite for Digital Interactive Narrative | http://videolectures.net/aaai08_velsen_nas/ | instructors:Martin van Velsen
+vl-136-160 | The Topic-Perspective Model for Social Tagging Systems | http://videolectures.net/kdd2010_lu_tpmsts/ | instructors:Caimei Lu
+vl-136-161 | Descriptive modeling in social sciences | http://videolectures.net/ktsymposium2013_gamberger_modeling/ | instructors:Dragan Gamberger
+vl-136-162 | Can a Computationally Creative System Create Itself? Creative Artefacts and Creative Processes | http://videolectures.net/iccc2014_odonoghue_creative_processes/ | instructors:Diarmuid P. O’Donoghue
+vl-136-163 | Using online networks to analyse the value of electronic music | http://videolectures.net/iccc2014_jordanous_electronic_music/ | instructors:Anna Jordanous
+vl-136-164 | Unifying Dependent Clustering and Disparate Clustering for Non-homogeneous Data | http://videolectures.net/kdd2010_hossain_udcd/ | instructors:M. Shahriar Hossain
+vl-136-165 | 24. News at Seven: The Future of the Future | http://videolectures.net/ijcai09_gandy_nasfof/ | instructors:Kristian J. Hammond, Nathan D. Nichols, Lisa Gandy
+vl-136-166 | 25. Penso BCI System | http://videolectures.net/ijcai09_peters_pbcis/ | instructors:Payam Aghaeipour, Rafael A. Calvo, Dorian Peters
+vl-136-167 | An Effective Approach to Realizing Planning Programs | http://videolectures.net/icaps2011_gerevini_planning/ | instructors:Alfonso E. Gerevini
+vl-136-168 | Web Scale Reasoning and the LarKC Project (Review and Progress) | http://videolectures.net/coinactivess2010_witbrock_lkc/ | instructors:Michael Witbrock
+vl-136-169 | Growing a Tree in the Forest: Constructing Folksonomies by Integrating Structured Metadata | http://videolectures.net/kdd2010_plangprasopchok_gtf/ | instructors:Anon Plangprasopchok
+vl-136-170 | Artificial Creative Systems: Multi-agent Simulations of Social Creativity | http://videolectures.net/ascc2013_saunders_systems/ | instructors:Rob Saunders
+vl-136-171 | The Officer Is Taller Than You, Who Race Yourself! Using Document Specific Word Associations in Poetry Generation | http://videolectures.net/iccc2014_toivanen_poetry_generation/ | instructors:Jukka M. Toivanen
+vl-136-172 | Contingent Planning as AND/OR Forward Search with Disjunctive Representation | http://videolectures.net/icaps2011_to_contingent/ | instructors:Son Thanh To
+vl-136-173 | Government Transparency Through Technology | http://videolectures.net/sikdd2014_kovacic_government_transparency/ | instructors:Matej Kovačič
+vl-136-174 | What to expect when you’re expecting: The role of unexpectedness in computationally evaluating creativity | http://videolectures.net/iccc2014_grace_evaluating_creativity/ | instructors:Kazjon Grace
+vl-136-175 | Computational Game Creativity | http://videolectures.net/iccc2014_liapis_game_creativity/ | instructors:Antonios Liapis
+vl-136-176 | 28. Improving Offensive Performance Through Opponent Modeling | http://videolectures.net/ijcai09_laviers_ioptom/ | instructors:Gita Sukthankar, Kennard R. Laviers
+vl-136-177 | From Isolation to Involvement: Adapting Machine Creativity Software to Support Human-Computer Co-Creation | http://videolectures.net/iccc2014_kantosalo_machine_creativity/ | instructors:Anna Kantosalo
+vl-136-178 | Poetic Machine: Computational Creativity for Automatic Poetry Generation in Bengali | http://videolectures.net/iccc2014_gamback_poetic_machine/ | instructors:Björn Gambäck
+vl-136-179 | Non-Conformant Harmonization: The Real Book in the Style of Take 6 | http://videolectures.net/iccc2014_pachet_real_book/ | instructors:François Pachet
+vl-136-180 | Learning Competition | http://videolectures.net/icaps2011_celorrio_competition/ | instructors:Sergio Jiménez Celorrio
+vl-136-181 | 32. The Tactical Language and Culture Training System | http://videolectures.net/aaai08_valente_tlct/ | instructors:Andre Valente, W. Lewis Johnson, James Reilly
+vl-136-182 | Uncertainty Competition | http://videolectures.net/icaps2011_sanner_competition/ | instructors:Scott Sanner
+vl-136-183 | Influence-based Policy Abstraction for Weakly-coupled DEC-POMDPs | http://videolectures.net/icaps2010_witwicki_ibpa/ | instructors:Stefan Witwicki
+vl-136-184 | A Polynomial All Outcome Determinization for Probabilistic Planning | http://videolectures.net/icaps2011_keller_polynomial/ | instructors:Thomas Keller
+vl-136-185 | Reading and Writing as a Creative Cycle: The Need for a Computational Model | http://videolectures.net/iccc2014_gervas_computational_model/ | instructors:Pablo Gervás
+vl-136-186 | Stepping Back to Progress Forwards: Setting Standards for Meta-Evaluation of Computational Creativity | http://videolectures.net/iccc2014_jordanous_stepping_back/ | instructors:Anna Jordanous
+vl-136-187 | 2. EDGE: Enhanced Device for Geospatial Exploration | http://videolectures.net/ijcai09_batarseh_edge/ | instructors:Feras Batarseh
+vl-136-188 | Artificial Companions | http://videolectures.net/mlmi04ch_willks_ac/ | instructors:Yorick Willks
+vl-136-189 | 11. Automatically Generated Convex Regions for Agent Navigation in Virtual Worlds | http://videolectures.net/aaai08_hale_agcr/ | instructors:D. Hunter Hale, G. Michael Youngblood
+vl-136-190 | Calculating distance measure for clustering in multi-relational settings | http://videolectures.net/sikdd2013_niaksu_multirelational_settings/ | instructors:Olegas Niaksu
+vl-136-191 | 22. Konabot | http://videolectures.net/aaai08_bendersky_kon/ | instructors:Diego Ariel Bendersky, Andrea Roxana Katz,
    
     et al.
-vl-136-199 | 23. The Sounds of Speech | http://videolectures.net/aaai08_rubin_tss/ | instructors:John Rubin
-vl-136-200 | 24. Narratoria, an Authoring Suite for Digital Interactive Narrative | http://videolectures.net/aaai08_velsen_nas/ | instructors:Martin van Velsen
-vl-136-201 | Directed Search for Generalized Plans Using Classical Planners | http://videolectures.net/icaps2011_srivastava_planners/ | instructors:Siddharth Srivastava
-vl-136-202 | 28. Improving Offensive Performance Through Opponent Modeling | http://videolectures.net/ijcai09_laviers_ioptom/ | instructors:Gita Sukthankar, Kennard R. Laviers
-vl-136-203 | Computing Applicability Conditions for Plans with Loops | http://videolectures.net/icaps2010_srivastava_cacpl/ | instructors:Siddharth Srivastava
-vl-136-204 | Recitation 4: State Machines | http://videolectures.net/mit601s201_pugh_rec04/ | instructors:Kendra Pugh
-vl-136-205 | 2. EDGE: Enhanced Device for Geospatial Exploration | http://videolectures.net/ijcai09_batarseh_edge/ | instructors:Feras Batarseh
-vl-136-206 | 32. The Tactical Language and Culture Training System | http://videolectures.net/aaai08_valente_tlct/ | instructors:Andre Valente, W. Lewis Johnson, James Reilly
-vl-136-207 | 33. Conversational Virtual Role Players | http://videolectures.net/ijcai09_harris_cvrp/ | instructors:Prasan Samtani, Joel Harris
-vl-136-208 | 11. Automatically Generated Convex Regions for Agent Navigation in Virtual Worlds | http://videolectures.net/aaai08_hale_agcr/ | instructors:D. Hunter Hale, G. Michael Youngblood
-vl-136-209 | 22. Konabot | http://videolectures.net/aaai08_bendersky_kon/ | instructors:Diego Ariel Bendersky, Andrea Roxana Katz,
+vl-136-192 | COINVENT: Towards a Computational Concept Invention Theory | http://videolectures.net/iccc2014_schorlemmer_invention_theory/ | instructors:Marco Schorlemmer
+vl-136-193 | Musical Motif Discovery in Non-musical Media | http://videolectures.net/iccc2014_ventura_musical_discovery/ | instructors:Dan Ventura
+vl-136-194 | 33. Conversational Virtual Role Players | http://videolectures.net/ijcai09_harris_cvrp/ | instructors:Prasan Samtani, Joel Harris
+vl-136-195 | Identifying Dynamic Sequential Plans | http://videolectures.net/uai08_voutsadakis_idsp/ | instructors:George Voutsadakis
+vl-136-196 | Computing Applicability Conditions for Plans with Loops | http://videolectures.net/icaps2010_srivastava_cacpl/ | instructors:Siddharth Srivastava
+vl-136-197 | Directed Search for Generalized Plans Using Classical Planners | http://videolectures.net/icaps2011_srivastava_planners/ | instructors:Siddharth Srivastava
+vl-136-198 | Nehovah: A Neologism Creator Nomen Ipsum | http://videolectures.net/iccc2014_ventura_nomen_ipsum/ | instructors:Dan Ventura
+vl-136-199 | Automated Daily Production of Evolutionary Audio Visual Art - An Experimental Practice | http://videolectures.net/iccc2014_unemi_experimental_practice/ | instructors:Tatsuo Unemi
+vl-136-200 | 14. A Plan-Based Machinima Creation System | http://videolectures.net/ijcai09_dominguez_pbmcs/ | instructors:Mike Dominguez
+vl-136-201 | Adapting a Generic Platform for Poetry Generation to Produce Spanish Poems | http://videolectures.net/iccc2014_oliveira_spanish_poems/ | instructors:Hugo Gonçalo Oliveira
+vl-136-202 | 4. The Secure Wireless Agent Testbed | http://videolectures.net/aaai08_sultanik_tswat/ | instructors:Evan Sultanik, Michael Sausa,
    
     et al.
-vl-136-210 | 14. A Plan-Based Machinima Creation System | http://videolectures.net/ijcai09_dominguez_pbmcs/ | instructors:Mike Dominguez
-vl-136-211 | Identifying Dynamic Sequential Plans | http://videolectures.net/uai08_voutsadakis_idsp/ | instructors:George Voutsadakis
-vl-136-212 | Artificial Companions | http://videolectures.net/mlmi04ch_willks_ac/ | instructors:Yorick Willks
-vl-136-213 | Dyna(k): A Multi-Step Dyna Planning | http://videolectures.net/icml09_yao_dmsdp/ | instructors:Hengshuai Yao
-vl-136-214 | 4. The Secure Wireless Agent Testbed | http://videolectures.net/aaai08_sultanik_tswat/ | instructors:Evan Sultanik, Michael Sausa,
-   
-    et al.
-vl-136-215 | 1. Westworld: A Domain for Automatically Generated Narratives | http://videolectures.net/aaai08_dominguez_wwdagn/ | instructors:Mike Dominguez, Arnav Jhala
-vl-136-216 | Cargo Intelligence | http://videolectures.net/ict08fr_jermol_ci/ | instructors:Mitja Jermol
-vl-136-217 | WP13 Cargo Intelligence | http://videolectures.net/ekom08_jermol_wci/ | instructors:Mitja Jermol
-vl-136-218 | Building Artistic Computer Colleagues with an Enactive Model of Creativity | http://videolectures.net/iccc2014_davis_artistic_computer/ | instructors:Nicholas Davis
-vl-136-219 | Social Mexica: A computer model for social norms in narratives | http://videolectures.net/iccc2014_guerrero_roman_social_mexica/ | instructors:Iván Guerrero Román
+vl-136-203 | Dyna(k): A Multi-Step Dyna Planning | http://videolectures.net/icml09_yao_dmsdp/ | instructors:Hengshuai Yao
+vl-136-204 | Semi-automatic rule construction for semantic linking of relation arguments | http://videolectures.net/sikdd2013_starc_relation_arguments/ | instructors:Janez Starc
+vl-136-205 | Personalized Query Auto-Completion for News Search | http://videolectures.net/sikdd2013_dali_news_search/ | instructors:Lorand Dali
+vl-136-206 | Is it Time for Computational Creativity to Grow Up and start being Irresponsible? | http://videolectures.net/iccc2014_johnson_computational_creativity/ | instructors:Colin G. Johnson
+vl-136-207 | 1. Westworld: A Domain for Automatically Generated Narratives | http://videolectures.net/aaai08_dominguez_wwdagn/ | instructors:Mike Dominguez, Arnav Jhala
+vl-136-208 | Event processing in asset management | http://videolectures.net/sikdd2013_kenda_asset_management/ | instructors:Klemen Kenda
+vl-136-209 | Advances in subgroup discovery for biomedical research | http://videolectures.net/ktsymposium2013_lavrac_advances/ | instructors:Nada Lavrač
+vl-136-210 | Autonomously Managing Competing Objectives to Improve the Creation and Curation of Artifacts | http://videolectures.net/iccc2014_ventura_competing_objectives/ | instructors:Dan Ventura
+vl-136-211 | Assessing Progress in Building Autonomously Creative Systems | http://videolectures.net/iccc2014_colton_creative_systems/ | instructors:Simon Colton
+vl-136-212 | Cargo Intelligence | http://videolectures.net/ict08fr_jermol_ci/ | instructors:Mitja Jermol
+vl-136-213 | Recitation 4: State Machines | http://videolectures.net/mit601s201_pugh_rec04/ | instructors:Kendra Pugh
+vl-136-214 | Empirically Grounding the Evaluation of Creative Systems: An Interaction Design Approach | http://videolectures.net/iccc2014_bown_design_approach/ | instructors:Oliver Bown
+vl-136-215 | WP13 Cargo Intelligence | http://videolectures.net/ekom08_jermol_wci/ | instructors:Mitja Jermol
+vl-136-216 | Parameter Space Interaction from a Creative Systems Perspective | http://videolectures.net/iccc2014_tubb_systems_perspective/ | instructors:Robert Tubb
+vl-136-217 | A Model of Runaway Evolution of Creative Domains | http://videolectures.net/iccc2014_bown_creative_domains/ | instructors:Oliver Bown
+vl-136-218 | Social Mexica: A computer model for social norms in narratives | http://videolectures.net/iccc2014_guerrero_roman_social_mexica/ | instructors:Iván Guerrero Román
+vl-136-219 | Building Artistic Computer Colleagues with an Enactive Model of Creativity | http://videolectures.net/iccc2014_davis_artistic_computer/ | instructors:Nicholas Davis
 vl-136-220 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_vardi_big_questions/ | instructors:Moshe Y. Vardi
-vl-136-221 | Opening | http://videolectures.net/ascc2013_toivonen_veale_opening/ | instructors:Hannu Toivonen, Tony Veale
-vl-136-222 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_penrose_big_questions/ | instructors:Roger Penrose
-vl-136-223 | A Brief Introduction to Search in AI | http://videolectures.net/aaai2010_thayer_bis/ | instructors:Jordan T. Thayer, Wheeler Ruml
+vl-136-221 | A Brief Introduction to Search in AI | http://videolectures.net/aaai2010_thayer_bis/ | instructors:Jordan T. Thayer, Wheeler Ruml
+vl-136-222 | The Qualitative Learner of Action and Perception, QLAP | http://videolectures.net/aaai2010_mugan_qlap/ | instructors:Jonathan Mugan, Benjamin Kuipers
+vl-136-223 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_penrose_big_questions/ | instructors:Roger Penrose
 vl-136-224 | Welcome and Opening | http://videolectures.net/aaai2012_hoffmann_selman_opening/ | instructors:Bart Selman, Joerg Hoffmann
-vl-136-225 | The Qualitative Learner of Action and Perception, QLAP | http://videolectures.net/aaai2010_mugan_qlap/ | instructors:Jonathan Mugan, Benjamin Kuipers
-vl-136-226 | Welcome and opening remarks | http://videolectures.net/iccc2014_welcome_opening/ | instructors:Nada Lavrač, Simon Colton, Dan Ventura
-vl-136-227 | Panel session on Computational Creativity and the Arts | http://videolectures.net/iccc2014_panel_session/ | instructors:Simon Colton, Mitu Khandaker-Kokoris,
-   
-    et al.
-vl-136-228 | IJCAI-JAIR Best Paper Prize | http://videolectures.net/aaai2012_zilberstein_best_paper/ | instructors:Shlomo Zilberstein
-vl-136-229 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_abramsky_big_questions/ | instructors:Samson Abramsky
+vl-136-225 | Case-based Imitation: A Sequel | http://videolectures.net/aaai2010_floyd_cbi/ | instructors:Michael W. Floyd, Babak Esfandiari
+vl-136-226 | IJCAI-JAIR Best Paper Prize | http://videolectures.net/aaai2012_zilberstein_best_paper/ | instructors:Shlomo Zilberstein
+vl-136-227 | Opening | http://videolectures.net/ascc2013_toivonen_veale_opening/ | instructors:Hannu Toivonen, Tony Veale
+vl-136-228 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_abramsky_big_questions/ | instructors:Samson Abramsky
+vl-136-229 | Automatic Construction of Efficient Multiple Battery Usage Policies | http://videolectures.net/icaps2011_magazzeni_automatic/ | instructors:Daniele Magazzeni
 vl-136-230 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_meyer_big_questions/ | instructors:Bertrand Meyer
-vl-136-231 | Closing remarks | http://videolectures.net/ascc2013_toivonen_cardoso_wiggins_closing/ | instructors:Hannu Toivonen, Amilcar Cardoso, Geraint Wiggins
-vl-136-232 | Case-based Imitation: A Sequel | http://videolectures.net/aaai2010_floyd_cbi/ | instructors:Michael W. Floyd, Babak Esfandiari
+vl-136-231 | Opening Ceremony IJCAI 2009 | http://videolectures.net/ijcai09_kitano_opening/ | instructors:Karen Zita Haigh, Richard Doyle,
+   
+    et al.
+vl-136-232 | Computing All-Pairs Shortest Paths by Leveraging Low Treewidth | http://videolectures.net/icaps2011_planken_computing/ | instructors:Léon Planken
 vl-136-233 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_davis_big_questions/ | instructors:Martin Davis
-vl-136-234 | IAAI Welcome, Robert S. Engelmore Award, Deployed Application Award Announcements | http://videolectures.net/aaai2012_fromherz_leake_award/ | instructors:David B. Leake, Markus P.J. Fromherz
+vl-136-234 | Trade-Offs in Sampling-Based Adversarial Planning | http://videolectures.net/icaps2011_ramanujan_sampling/ | instructors:Raghuram Ramanujan
 vl-136-235 | Turing Fellowships and Scholars Award Ceremony | http://videolectures.net/turing100_cooper_award_ceremony/ | instructors:Barry Cooper
-vl-136-236 | Automatic Construction of Efficient Multiple Battery Usage Policies | http://videolectures.net/icaps2011_magazzeni_automatic/ | instructors:Daniele Magazzeni
-vl-136-237 | Computing All-Pairs Shortest Paths by Leveraging Low Treewidth | http://videolectures.net/icaps2011_planken_computing/ | instructors:Léon Planken
-vl-136-238 | Trade-Offs in Sampling-Based Adversarial Planning | http://videolectures.net/icaps2011_ramanujan_sampling/ | instructors:Raghuram Ramanujan
-vl-136-239 | Conference opening | http://videolectures.net/turing100_cooper_furber_opening/ | instructors:Barry Cooper, Stephen Furber
-vl-136-240 | Intelligent Systems | http://videolectures.net/is2011_bohanec_intelligent/ | instructors:Marko Bohanec
-vl-136-241 | Social Machines + Knowledge Turning: A Big Question in Computation, Intelligence and Life | http://videolectures.net/turing100_goble_big_questions/ | instructors:Carole Goble
-vl-136-242 | Opening Ceremony IJCAI 2009 | http://videolectures.net/ijcai09_kitano_opening/ | instructors:Karen Zita Haigh, Richard Doyle,
+vl-136-236 | IAAI Welcome, Robert S. Engelmore Award, Deployed Application Award Announcements | http://videolectures.net/aaai2012_fromherz_leake_award/ | instructors:David B. Leake, Markus P.J. Fromherz
+vl-136-237 | Intelligent Systems | http://videolectures.net/is2011_bohanec_intelligent/ | instructors:Marko Bohanec
+vl-136-238 | Conference opening | http://videolectures.net/turing100_cooper_furber_opening/ | instructors:Barry Cooper, Stephen Furber
+vl-136-239 | IJCAI 2009 Industry Day Panel | http://videolectures.net/ijcai09_industry_panel/ | instructors:David Ferucci, Chris Welty,
    
     et al.
-vl-136-243 | Special Awards Presentations | http://videolectures.net/aaai2012_horvitz_veloso_special_awards/ | instructors:Anthony G. Cohn, Manuela M. Veloso, Eric Horvitz
-vl-136-244 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_meinhardt_big_questions/ | instructors:Hans Meinhardt
-vl-136-245 | Opening address | http://videolectures.net/ktsymposium2013_lavrac_opening/ | instructors:Nada Lavrač
-vl-136-246 | Agent-Based Discovery of Navigation Meshes | http://videolectures.net/aaai2010_hale_abd/ | instructors:D. Hunter Hale, G. Michael Youngblood
-vl-136-247 | A Novel Transition Based Encoding Scheme for Planning as Satisfiability | http://videolectures.net/aaai2010_huang_ant/ | instructors:Ruoyun Huang
-vl-136-248 | Opening | http://videolectures.net/ijcai2011_walsh_opening/ | instructors:Toby Walsh
-vl-136-249 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_ellis_big_questions/ | instructors:George Ellis
-vl-136-250 | Welcome | http://videolectures.net/aistats2010_welcome_aistats/ | instructors:Neil D. Lawrence, Yee Whye Teh
-vl-136-251 | IJCAI 2009 Industry Day Panel | http://videolectures.net/ijcai09_industry_panel/ | instructors:David Ferucci, Chris Welty,
+vl-136-240 | Social Machines + Knowledge Turning: A Big Question in Computation, Intelligence and Life | http://videolectures.net/turing100_goble_big_questions/ | instructors:Carole Goble
+vl-136-241 | Agent-Based Discovery of Navigation Meshes | http://videolectures.net/aaai2010_hale_abd/ | instructors:D. Hunter Hale, G. Michael Youngblood
+vl-136-242 | A Novel Transition Based Encoding Scheme for Planning as Satisfiability | http://videolectures.net/aaai2010_huang_ant/ | instructors:Ruoyun Huang
+vl-136-243 | Welcome | http://videolectures.net/aistats2010_welcome_aistats/ | instructors:Neil D. Lawrence, Yee Whye Teh
+vl-136-244 | Special Awards Presentations | http://videolectures.net/aaai2012_horvitz_veloso_special_awards/ | instructors:Anthony G. Cohn, Manuela M. Veloso, Eric Horvitz
+vl-136-245 | Closing remarks | http://videolectures.net/ascc2013_toivonen_cardoso_wiggins_closing/ | instructors:Hannu Toivonen, Amilcar Cardoso, Geraint Wiggins
+vl-136-246 | Introduction to BehaviorShop | http://videolectures.net/aaai2010_youngblood_ibs/ | instructors:G. Michael Youngblood
+vl-136-247 | Opening | http://videolectures.net/ijcai2011_walsh_opening/ | instructors:Toby Walsh
+vl-136-248 | Welcome and opening remarks | http://videolectures.net/iccc2014_welcome_opening/ | instructors:Nada Lavrač, Simon Colton, Dan Ventura
+vl-136-249 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_meinhardt_big_questions/ | instructors:Hans Meinhardt
+vl-136-250 | Panel session on Computational Creativity and the Arts | http://videolectures.net/iccc2014_panel_session/ | instructors:Simon Colton, Mitu Khandaker-Kokoris,
    
     et al.
-vl-136-252 | Introduction to BehaviorShop | http://videolectures.net/aaai2010_youngblood_ibs/ | instructors:G. Michael Youngblood
+vl-136-251 | The Big Questions in Computation, Intelligence and Life | http://videolectures.net/turing100_ellis_big_questions/ | instructors:George Ellis
+vl-136-252 | Opening address | http://videolectures.net/ktsymposium2013_lavrac_opening/ | instructors:Nada Lavrač
 vl-136-253 | Welcome and Opening | http://videolectures.net/is2012_mladenic_opening/ | instructors:Dunja Mladenić
-vl-136-254 | Welcome by director of JSI | http://videolectures.net/ktsymposium2013_lenarcic_welcome/ | instructors:Jadran Lenarčič
-vl-136-255 | 100 Years of Alan Turing and 20 Years of SLAIS | http://videolectures.net/is2012_mladenic_turing_slais/ | instructors:Dunja Mladenić
-vl-136-256 | Automatically Labeling Facts in a Never-Ending Language Learning system | http://videolectures.net/sikdd2014_hruschka_labeling_facts/ | instructors:Estevam R. Hruschka
-vl-136-257 | How to Grow a Mind: Statistics, Structure and Abstraction | http://videolectures.net/aaai2012_tenenbaum_grow_mind/ | instructors:Joshua B. Tenenbaum
-vl-136-258 | How to Grow a Mind: Statistics, Structure and Abstraction | http://videolectures.net/nips2010_tenenbaum_hgm/ | instructors:Joshua B. Tenenbaum
+vl-136-254 | 100 Years of Alan Turing and 20 Years of SLAIS | http://videolectures.net/is2012_mladenic_turing_slais/ | instructors:Dunja Mladenić
+vl-136-255 | Welcome by director of JSI | http://videolectures.net/ktsymposium2013_lenarcic_welcome/ | instructors:Jadran Lenarčič
+vl-136-256 | How to Grow a Mind: Statistics, Structure and Abstraction | http://videolectures.net/aaai2012_tenenbaum_grow_mind/ | instructors:Joshua B. Tenenbaum
+vl-136-257 | How to Grow a Mind: Statistics, Structure and Abstraction | http://videolectures.net/nips2010_tenenbaum_hgm/ | instructors:Joshua B. Tenenbaum
+vl-136-258 | Cancer: A Computational Disease that AI Can Cure | http://videolectures.net/aaai2010_tenenbaum_cac/ | instructors:Jay M. Tenenbaum
 vl-136-259 | The Problem of Modelling the Mathematical Mind | http://videolectures.net/turing100_penrose_mathematical_mind/ | instructors:Roger Penrose
-vl-136-260 | Solving Optimization Problems in Industry: An Arms Race | http://videolectures.net/ppsn2014_baeck_arms_race/ | instructors:Thomas Bäck
-vl-136-261 | Cancer: A Computational Disease that AI Can Cure | http://videolectures.net/aaai2010_tenenbaum_cac/ | instructors:Jay M. Tenenbaum
-vl-136-262 | In Vivo Veritas: Towards the Evolution of Things | http://videolectures.net/ppsn2014_eiben_vivo_veritas/ | instructors:A. E. (Gusz) Eiben
-vl-136-263 | Playing with Cases: Rendering Expressive Music Performance with Case-Based  Reasoning | http://videolectures.net/aaai2011_mantaras_cases/ | instructors:Ramon López de Mántaras
-vl-136-264 | Grounded Language Learning | http://videolectures.net/aaai2013_mooney_language_learning/ | instructors:Raymond J. Mooney
-vl-136-265 | The Reconstruction of Turing's "Paper Machine" | http://videolectures.net/turing100_kasparov_friedel_paper_machine/ | instructors:Garry Kasparov, Frederic Friedel
-vl-136-266 | Building a Mind for Life | http://videolectures.net/aaai2013_hunter_building_mind/ | instructors:Lawrence Hunter
-vl-136-267 | Open Information Extraction at Web Scale | http://videolectures.net/ijcai2011_etzioni_webscale/ | instructors:Oren Etzioni
-vl-136-268 | Can Computers Understand Their Own Programs? | http://videolectures.net/turing100_hoare_computers/ | instructors:Charles Antony Richard Hoare
-vl-136-269 | Some Computational Aspects of Robot Kinematic Redundancy | http://videolectures.net/ppsn2014_lenarcic_kinematic_redundancy/ | instructors:Jadran Lenarčič
-vl-136-270 | Poker AI: Algorithms for Creating Game-Theoretic Strategies for Large Incomplete-Information Games | http://videolectures.net/aaai2013_sandholm_poker_ai/ | instructors:Tuomas Sandholm
-vl-136-271 | Homo heuristicus: Why biased minds make better inferences | http://videolectures.net/ijcai2011_gigerenzer_heuristicus/ | instructors:Gerd Gigerenzer
-vl-136-272 | Learning to Behave by Reading | http://videolectures.net/aaai2012_barzilay_learning/ | instructors:Regina Barzilay
-vl-136-273 | Non-photorealistic Rendering Getting Physical | http://videolectures.net/iccc2014_deussen_getting_physical/ | instructors:Oliver Deussen
-vl-136-274 | Navigating Internet´s Course | http://videolectures.net/turing100_cerf_navigating_internet/ | instructors:Vinton G. Cerf
-vl-136-275 | Adventures in Scheduling: Some Trends in Operations Research | http://videolectures.net/ijcai2011_trick_scheduling/ | instructors:Michael Trick
-vl-136-276 | Active Inference and Uncertainty | http://videolectures.net/uai2011_friston_active/ | instructors:Karl Friston
-vl-136-277 | Modeling human behaviour in virtual humans | http://videolectures.net/cogsys2012_marsella_behaviour/ | instructors:Stacy Marsella
-vl-136-278 | Building Watson: An Overview of DeepQA for the  Jeopardy! Challenge | http://videolectures.net/aaai2011_ferrucci_building/ | instructors:David Ferrucci
-vl-136-279 | STAIR: The STanford Artificial Intelligence Robot project | http://videolectures.net/icml08_ng_stair/ | instructors:Andrew Ng, Andrew McCallum
-vl-136-280 | Intelligent Tutoring Systems: New Challenges and Directions | http://videolectures.net/ijcai09_conati_its/ | instructors:Cristina Conati, Luigia Carlucci Aiello
-vl-136-281 | Automating Biology Using Robot Scientists | http://videolectures.net/aaai2012_king_robot_scientists/ | instructors:Ross D. King
-vl-136-282 | An Open-World Iterative Methodology for the Development and Evaluation of Semantically-Enabled Applications | http://videolectures.net/aaai2013_fox_semantically_enabled_applications/ | instructors:Peter Fox
-vl-136-283 | Constraint Programming and Artificial Intelligence: Challenges, Applications and Opportunities | http://videolectures.net/aaai2010_osullivan_cpa/ | instructors:Barry O'Sullivan
-vl-136-284 | Fighting the Tuberculosis Pandemic Using Machine Learning | http://videolectures.net/aaai2013_bennett_fighting_tuberculosis/ | instructors:Kristin P. Bennett
-vl-136-285 | Telling Stories at Internet Scale | http://videolectures.net/aaai2013_birnbaum_telling_stories/ | instructors:Larry Birnbaum
-vl-136-286 | Beyond Jeopardy! The Future of Watson | http://videolectures.net/turing100_ferrucci_beyond_jeopardy/ | instructors:David Ferrucci
-vl-136-287 | Turing's Humanoid Thinking Machines | http://videolectures.net/turing100_brooks_humanoid_machines/ | instructors:Rodney A. Brooks
-vl-136-288 | The Challenges of Data Cooperatives: Collaboration, Competition, Controversy? | http://videolectures.net/sikdd2013_hsuan_data_cooperatives/ | instructors:Abraham B. Hsuan
-vl-136-289 | Sparse modeling: some unifying theory and “topic-imaging” | http://videolectures.net/aistats2011_yu_modeling/ | instructors:Bin Yu
-vl-136-290 | Computer-Aided Algorithm Design: Automated Tuning, Configuration, Selection and Beyond | http://videolectures.net/icaps2010_hoos_design/ | instructors:Holger H. Hoos
-vl-136-291 | Spoken Dialog Systems as an Application of Planning under Uncertainty | http://videolectures.net/icaps2011_williams_uncertainty/ | instructors:Jason D. Williams
-vl-136-292 | Computer Science as a Natural Science | http://videolectures.net/turing100_valiant_computer_science/ | instructors:Leslie Valiant
-vl-136-293 | Semantic Construction Grammar - a meaning-centric approach to NL Understanding | http://videolectures.net/xlike_kickoff2012_witbrock_grammar/ | instructors:Michael Witbrock
-vl-136-294 | On the Nature of Causation in Digital Computer Systems | http://videolectures.net/turing100_ellis_computer_systems/ | instructors:George Ellis
-vl-136-295 | HaloBook and Progress Towards Digital Aristotle | http://videolectures.net/aaai2011_gunning_halobook/ | instructors:David Gunning
-vl-136-296 | Behavior Imaging and the Study of Autism | http://videolectures.net/uai2011_rehg_behavior/ | instructors:James M. Rehg
-vl-136-297 | Towards a Smarter Web | http://videolectures.net/ijcai2011_hall_smarterweb/ | instructors:Wendy Hall
-vl-136-298 | The Games Computers (and People) Play Revisited | http://videolectures.net/ijcai2011_schaeffer_games/ | instructors:Jonathan Schaeffer
-vl-136-299 | Turing´s Pilot ACE: Why Not Important? | http://videolectures.net/turing100_brooks_pilot_ace/ | instructors:Frederick P. Brooks, Jr.
-vl-136-300 | Planning applications - where the real challenges are | http://videolectures.net/icaps2011_koehler_applications/ | instructors:Jana Koehler
-vl-136-301 | Last-Mile Disaster Preparedness and Recovery | http://videolectures.net/icaps2011_van_hentenryck_disaster/ | instructors:Pascal Van Hentenryck
-vl-136-302 | Building AI: Our Shared Enterprise | http://videolectures.net/aaai2012_minton_ai/ | instructors:Steven Minton
+vl-136-260 | Automatically Labeling Facts in a Never-Ending Language Learning system | http://videolectures.net/sikdd2014_hruschka_labeling_facts/ | instructors:Estevam R. Hruschka
+vl-136-261 | Playing with Cases: Rendering Expressive Music Performance with Case-Based  Reasoning | http://videolectures.net/aaai2011_mantaras_cases/ | instructors:Ramon López de Mántaras
+vl-136-262 | The Reconstruction of Turing's "Paper Machine" | http://videolectures.net/turing100_kasparov_friedel_paper_machine/ | instructors:Garry Kasparov, Frederic Friedel
+vl-136-263 | Open Information Extraction at Web Scale | http://videolectures.net/ijcai2011_etzioni_webscale/ | instructors:Oren Etzioni
+vl-136-264 | STAIR: The STanford Artificial Intelligence Robot project | http://videolectures.net/icml08_ng_stair/ | instructors:Andrew Ng, Andrew McCallum
+vl-136-265 | Homo heuristicus: Why biased minds make better inferences | http://videolectures.net/ijcai2011_gigerenzer_heuristicus/ | instructors:Gerd Gigerenzer
+vl-136-266 | Intelligent Tutoring Systems: New Challenges and Directions | http://videolectures.net/ijcai09_conati_its/ | instructors:Cristina Conati, Luigia Carlucci Aiello
+vl-136-267 | Can Computers Understand Their Own Programs? | http://videolectures.net/turing100_hoare_computers/ | instructors:Charles Antony Richard Hoare
+vl-136-268 | Adventures in Scheduling: Some Trends in Operations Research | http://videolectures.net/ijcai2011_trick_scheduling/ | instructors:Michael Trick
+vl-136-269 | Grounded Language Learning | http://videolectures.net/aaai2013_mooney_language_learning/ | instructors:Raymond J. Mooney
+vl-136-270 | Active Inference and Uncertainty | http://videolectures.net/uai2011_friston_active/ | instructors:Karl Friston
+vl-136-271 | Learning to Behave by Reading | http://videolectures.net/aaai2012_barzilay_learning/ | instructors:Regina Barzilay
+vl-136-272 | Navigating Internet´s Course | http://videolectures.net/turing100_cerf_navigating_internet/ | instructors:Vinton G. Cerf
+vl-136-273 | Building Watson: An Overview of DeepQA for the  Jeopardy! Challenge | http://videolectures.net/aaai2011_ferrucci_building/ | instructors:David Ferrucci
+vl-136-274 | Modeling human behaviour in virtual humans | http://videolectures.net/cogsys2012_marsella_behaviour/ | instructors:Stacy Marsella
+vl-136-275 | Constraint Programming and Artificial Intelligence: Challenges, Applications and Opportunities | http://videolectures.net/aaai2010_osullivan_cpa/ | instructors:Barry O'Sullivan
+vl-136-276 | Building a Mind for Life | http://videolectures.net/aaai2013_hunter_building_mind/ | instructors:Lawrence Hunter
+vl-136-277 | Computer-Aided Algorithm Design: Automated Tuning, Configuration, Selection and Beyond | http://videolectures.net/icaps2010_hoos_design/ | instructors:Holger H. Hoos
+vl-136-278 | Poker AI: Algorithms for Creating Game-Theoretic Strategies for Large Incomplete-Information Games | http://videolectures.net/aaai2013_sandholm_poker_ai/ | instructors:Tuomas Sandholm
+vl-136-279 | Automating Biology Using Robot Scientists | http://videolectures.net/aaai2012_king_robot_scientists/ | instructors:Ross D. King
+vl-136-280 | Sparse modeling: some unifying theory and “topic-imaging” | http://videolectures.net/aistats2011_yu_modeling/ | instructors:Bin Yu
+vl-136-281 | Concentration Inequalities | http://videolectures.net/uai08_lugosi_ci/ | instructors:Gabor Lugosi
+vl-136-282 | Spoken Dialog Systems as an Application of Planning under Uncertainty | http://videolectures.net/icaps2011_williams_uncertainty/ | instructors:Jason D. Williams
+vl-136-283 | Beyond Jeopardy! The Future of Watson | http://videolectures.net/turing100_ferrucci_beyond_jeopardy/ | instructors:David Ferrucci
+vl-136-284 | Solving Optimization Problems in Industry: An Arms Race | http://videolectures.net/ppsn2014_baeck_arms_race/ | instructors:Thomas Bäck
+vl-136-285 | Turing's Humanoid Thinking Machines | http://videolectures.net/turing100_brooks_humanoid_machines/ | instructors:Rodney A. Brooks
+vl-136-286 | Behavior Imaging and the Study of Autism | http://videolectures.net/uai2011_rehg_behavior/ | instructors:James M. Rehg
+vl-136-287 | HaloBook and Progress Towards Digital Aristotle | http://videolectures.net/aaai2011_gunning_halobook/ | instructors:David Gunning
+vl-136-288 | Scaling AI Through Multi-Agent Organizations | http://videolectures.net/ijcai09_lesser_saitmao/ | instructors:Victor Lesser
+vl-136-289 | Embodied Language Games for Autonomous Robots | http://videolectures.net/ijcai09_steels_elgar/ | instructors:Luc Steels, Ramon López de Mántaras
+vl-136-290 | Towards a Smarter Web | http://videolectures.net/ijcai2011_hall_smarterweb/ | instructors:Wendy Hall
+vl-136-291 | The Games Computers (and People) Play Revisited | http://videolectures.net/ijcai2011_schaeffer_games/ | instructors:Jonathan Schaeffer
+vl-136-292 | Semantic Construction Grammar - a meaning-centric approach to NL Understanding | http://videolectures.net/xlike_kickoff2012_witbrock_grammar/ | instructors:Michael Witbrock
+vl-136-293 | In Vivo Veritas: Towards the Evolution of Things | http://videolectures.net/ppsn2014_eiben_vivo_veritas/ | instructors:A. E. (Gusz) Eiben
+vl-136-294 | Human Computation | http://videolectures.net/iaai09_vonahn_hc/ | instructors:Luis von Ahn
+vl-136-295 | Planning applications - where the real challenges are | http://videolectures.net/icaps2011_koehler_applications/ | instructors:Jana Koehler
+vl-136-296 | Intelligent Interaction with the Real World | http://videolectures.net/aaai2010_pack_kaelbling_iiw/ | instructors:Leslie Pack Kaelbling
+vl-136-297 | Are We There Yet? | http://videolectures.net/ecmlpkdd09_christianini_awty/ | instructors:Nello Cristianini
+vl-136-298 | A Road Map for Motor Skill Learning | http://videolectures.net/ecmlpkdd09_peters_rmmsl/ | instructors:Jan Peters
+vl-136-299 | Last-Mile Disaster Preparedness and Recovery | http://videolectures.net/icaps2011_van_hentenryck_disaster/ | instructors:Pascal Van Hentenryck
+vl-136-300 | Computer Science as a Natural Science | http://videolectures.net/turing100_valiant_computer_science/ | instructors:Leslie Valiant
+vl-136-301 | On the Nature of Causation in Digital Computer Systems | http://videolectures.net/turing100_ellis_computer_systems/ | instructors:George Ellis
+vl-136-302 | The Rat Vibrissal Array as a Model Sensorimotor System | http://videolectures.net/nips09_hartmann_rva/ | instructors:Mitra Hartmann
 vl-136-303 | Towards Artificial Systems: What Can We Learn from Human Perception? | http://videolectures.net/aaai2011_buelthoff_towards/ | instructors:Heinrich H. Bülthoff
-vl-136-304 | Intelligent Interaction with the Real World | http://videolectures.net/aaai2010_pack_kaelbling_iiw/ | instructors:Leslie Pack Kaelbling
-vl-136-305 | Concentration Inequalities | http://videolectures.net/uai08_lugosi_ci/ | instructors:Gabor Lugosi
-vl-136-306 | Tackling Climate Change: Unfinished Business from the Last “Winter” | http://videolectures.net/iswc2012_musen_climate_change/ | instructors:Mark A. Musen
-vl-136-307 | Scaling AI Through Multi-Agent Organizations | http://videolectures.net/ijcai09_lesser_saitmao/ | instructors:Victor Lesser
-vl-136-308 | Embodied Language Games for Autonomous Robots | http://videolectures.net/ijcai09_steels_elgar/ | instructors:Luc Steels, Ramon López de Mántaras
-vl-136-309 | Human Computation | http://videolectures.net/iaai09_vonahn_hc/ | instructors:Luis von Ahn
-vl-136-310 | Are We There Yet? | http://videolectures.net/ecmlpkdd09_christianini_awty/ | instructors:Nello Cristianini
-vl-136-311 | Four Decades of Artificial Intelligence in Slovenia | http://videolectures.net/is2012_bratko_ai_slovenia/ | instructors:Ivan Bratko
-vl-136-312 | A Road Map for Motor Skill Learning | http://videolectures.net/ecmlpkdd09_peters_rmmsl/ | instructors:Jan Peters
-vl-136-313 | Alan Turing and the Development of Artificial Intelligence | http://videolectures.net/is2012_muggleton_ai_developement/ | instructors:Stephen Muggleton
-vl-136-314 | The Rat Vibrissal Array as a Model Sensorimotor System | http://videolectures.net/nips09_hartmann_rva/ | instructors:Mitra Hartmann
-vl-136-315 | Empirical Game-Theoretic Analysis and the Behavior of Software Agents | http://videolectures.net/icaps2011_wellman_game/ | instructors:Michael P. Wellman
-vl-136-316 | From Automated Verification to Automated Design | http://videolectures.net/icaps2010_vardi_design/ | instructors:Moshe Y. Vardi
-vl-136-317 | The Child's Machine vs. the World's Brain | http://videolectures.net/is2012_sammut_child_machine/ | instructors:Claude Sammut
-vl-136-318 | Weighted Deductionas an Abstraction Level for AI | http://videolectures.net/ilpmlgsrl09_eisner_wdal/ | instructors:Jason Eisner
-vl-136-319 | Many Faces of Text Processing | http://videolectures.net/wims2011_grobelnik_processing/ | instructors:Marko Grobelnik
-vl-136-320 | Incentive Engineering in the Internet Age | http://videolectures.net/aaai2010_parkes_iei/ | instructors:David C. Parkes
-vl-136-321 | Challenges for AI in Computational Sustainability | http://videolectures.net/aaai2010_gomes_cai/ | instructors:Carla P. Gomes
-vl-136-322 | Human Factors in the World of Digital Computing and Digital Information | http://videolectures.net/is2012_milic_frayling_human_factors/ | instructors:Nataša Milić-Frayling
+vl-136-304 | Turing´s Pilot ACE: Why Not Important? | http://videolectures.net/turing100_brooks_pilot_ace/ | instructors:Frederick P. Brooks, Jr.
+vl-136-305 | Weighted Deductionas an Abstraction Level for AI | http://videolectures.net/ilpmlgsrl09_eisner_wdal/ | instructors:Jason Eisner
+vl-136-306 | An Open-World Iterative Methodology for the Development and Evaluation of Semantically-Enabled Applications | http://videolectures.net/aaai2013_fox_semantically_enabled_applications/ | instructors:Peter Fox
+vl-136-307 | Building AI: Our Shared Enterprise | http://videolectures.net/aaai2012_minton_ai/ | instructors:Steven Minton
+vl-136-308 | Fighting the Tuberculosis Pandemic Using Machine Learning | http://videolectures.net/aaai2013_bennett_fighting_tuberculosis/ | instructors:Kristin P. Bennett
+vl-136-309 | From Automated Verification to Automated Design | http://videolectures.net/icaps2010_vardi_design/ | instructors:Moshe Y. Vardi
+vl-136-310 | Telling Stories at Internet Scale | http://videolectures.net/aaai2013_birnbaum_telling_stories/ | instructors:Larry Birnbaum
+vl-136-311 | Non-photorealistic Rendering Getting Physical | http://videolectures.net/iccc2014_deussen_getting_physical/ | instructors:Oliver Deussen
+vl-136-312 | The Challenges of Data Cooperatives: Collaboration, Competition, Controversy? | http://videolectures.net/sikdd2013_hsuan_data_cooperatives/ | instructors:Abraham B. Hsuan
+vl-136-313 | Empirical Game-Theoretic Analysis and the Behavior of Software Agents | http://videolectures.net/icaps2011_wellman_game/ | instructors:Michael P. Wellman
+vl-136-314 | Tackling Climate Change: Unfinished Business from the Last “Winter” | http://videolectures.net/iswc2012_musen_climate_change/ | instructors:Mark A. Musen
+vl-136-315 | Some Computational Aspects of Robot Kinematic Redundancy | http://videolectures.net/ppsn2014_lenarcic_kinematic_redundancy/ | instructors:Jadran Lenarčič
+vl-136-316 | Four Decades of Artificial Intelligence in Slovenia | http://videolectures.net/is2012_bratko_ai_slovenia/ | instructors:Ivan Bratko
+vl-136-317 | Incentive Engineering in the Internet Age | http://videolectures.net/aaai2010_parkes_iei/ | instructors:David C. Parkes
+vl-136-318 | Alan Turing and the Development of Artificial Intelligence | http://videolectures.net/is2012_muggleton_ai_developement/ | instructors:Stephen Muggleton
+vl-136-319 | Challenges for AI in Computational Sustainability | http://videolectures.net/aaai2010_gomes_cai/ | instructors:Carla P. Gomes
+vl-136-320 | Many Faces of Text Processing | http://videolectures.net/wims2011_grobelnik_processing/ | instructors:Marko Grobelnik
+vl-136-321 | The Child's Machine vs. the World's Brain | http://videolectures.net/is2012_sammut_child_machine/ | instructors:Claude Sammut
+vl-136-322 | A New Paradigm of Geriatric Care Empowered by Applied AI | http://videolectures.net/aaai2010_alwan_apg/ | instructors:Majd Alwan
 vl-136-323 | Reasoning with LarKC | http://videolectures.net/coinplanetdataschool2011_witbrock_larkc/ | instructors:Michael Witbrock
 vl-136-324 | Using Combinatory Categorial Grammars for Probabilistic Plan Recognition and Planning | http://videolectures.net/is2011_geib_robotics/ | instructors:Christopher W. Geib
-vl-136-325 | A New Paradigm of Geriatric Care Empowered by Applied AI | http://videolectures.net/aaai2010_alwan_apg/ | instructors:Majd Alwan
-vl-136-326 | Computational Creativity Tutorial | http://videolectures.net/iccc2014_wiggins_creativity_tutorial/ | instructors:Geraint Wiggins
-vl-136-327 | Computational Creativity Tutorial | http://videolectures.net/iccc2014_veale_creativity_tutorial/ | instructors:Tony Veale
-vl-136-328 | Combining Logic and Probability: Languages, Algorithms and Applications | http://videolectures.net/uai2011_domingos_kersting_combining/ | instructors:Pedro Domingos, Kristian Kersting
+vl-136-325 | Human Factors in the World of Digital Computing and Digital Information | http://videolectures.net/is2012_milic_frayling_human_factors/ | instructors:Nataša Milić-Frayling
+vl-136-326 | Intelligent Agents | http://videolectures.net/ssll09_lloyd_inta/ | instructors:John Lloyd
+vl-136-327 | Combining Logic and Probability: Languages, Algorithms and Applications | http://videolectures.net/uai2011_domingos_kersting_combining/ | instructors:Pedro Domingos, Kristian Kersting
+vl-136-328 | Artificial Intelligence Planning | http://videolectures.net/ssll09_rintanen_aip/ | instructors:Jussi Rintanen
 vl-136-329 | Optimization in Multi-Agent Systems | http://videolectures.net/ijcai2011_t3_optimization/ | instructors:Jesús Cerquides, Alessandro Farinelli,
    
     et al.
-vl-136-330 | Intelligent Agents | http://videolectures.net/ssll09_lloyd_inta/ | instructors:John Lloyd
-vl-136-331 | Causal inference: from effects of interventions to learning and inference with partial observability. | http://videolectures.net/uai2011_shpitser_causal/ | instructors:Ilya Shpitser
-vl-136-332 | Artificial Intelligence Planning | http://videolectures.net/ssll09_rintanen_aip/ | instructors:Jussi Rintanen
-vl-136-333 | Knowledge Representation and Reasoning | http://videolectures.net/ssll09_pagnucco_krr/ | instructors:Maurice Pagnucco
-vl-136-334 | Landmarks in Heuristic-Search Planning | http://videolectures.net/icaps2010_sanner_lhsp/ | instructors:Silvia Richter, Erez Karpas
-vl-136-335 | Introduction to Planning Domain Modeling in RDDL | http://videolectures.net/icaps2011_sanner_rddl/ | instructors:Scott Sanner
-vl-136-336 | Universal Artificial Intelligence | http://videolectures.net/ssll09_hutter_uai/ | instructors:Marcus Hutter
-vl-136-337 | Introduction To Statistical Machine Learning | http://videolectures.net/ssll09_hutter_isml/ | instructors:Marcus Hutter
-vl-136-338 | Search and Games | http://videolectures.net/ssll09_botea_sag/ | instructors:Adi Botea
+vl-136-330 | Knowledge Representation and Reasoning | http://videolectures.net/ssll09_pagnucco_krr/ | instructors:Maurice Pagnucco
+vl-136-331 | Computational Creativity Tutorial | http://videolectures.net/iccc2014_wiggins_creativity_tutorial/ | instructors:Geraint Wiggins
+vl-136-332 | Causal inference: from effects of interventions to learning and inference with partial observability. | http://videolectures.net/uai2011_shpitser_causal/ | instructors:Ilya Shpitser
+vl-136-333 | Landmarks in Heuristic-Search Planning | http://videolectures.net/icaps2010_sanner_lhsp/ | instructors:Silvia Richter, Erez Karpas
+vl-136-334 | Universal Artificial Intelligence | http://videolectures.net/ssll09_hutter_uai/ | instructors:Marcus Hutter
+vl-136-335 | Introduction To Statistical Machine Learning | http://videolectures.net/ssll09_hutter_isml/ | instructors:Marcus Hutter
+vl-136-336 | Introduction to Planning Domain Modeling in RDDL | http://videolectures.net/icaps2011_sanner_rddl/ | instructors:Scott Sanner
+vl-136-337 | Search and Games | http://videolectures.net/ssll09_botea_sag/ | instructors:Adi Botea
+vl-136-338 | Computational Creativity Tutorial | http://videolectures.net/iccc2014_veale_creativity_tutorial/ | instructors:Tony Veale
 vl-136-339 | Planning and Scheduling for Traffic Control | http://videolectures.net/icaps2010_sanner_trafficcontrol/ | instructors:Scott Sanner
 vl-136-340 | Translation-based approaches to conformant and contingent planning | http://videolectures.net/icaps2011_palacios_albore_planning/ | instructors:Héctor Palacios, Alexandre Albore

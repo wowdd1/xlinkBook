@@ -1,99 +1,99 @@
 vl-69-1 | Personal Robots | http://videolectures.net/mitworld_breazeal_pr/ | instructors:Cynthia Breazeal
-vl-69-2 | Iterative Path Integral Method for Nonlinear Stochastic Optimal Control | http://videolectures.net/cyberstat2012_satoh_optimal_control/ | instructors:Satoshi Satoh
-vl-69-3 | Augmented-SVM: Automatic space partitioning for combining multiple non-linear dynamics | http://videolectures.net/nips2012_shukla_automatic/ | instructors:Ashwini Shukla
-vl-69-4 | Free Energy and Relative Entropy Dualities: Connections to Path Integral Control and Applications to Robotics | http://videolectures.net/cyberstat2012_theodorou_free_energy/ | instructors:Evangelos Theodorou
-vl-69-5 | Data-Driven Scene Understanding from 3D Models | http://videolectures.net/bmvc2012_satkin_scene_understanding/ | instructors:Scott Satkin
-vl-69-6 | RoboEarth: Connecting robots world-wide | http://videolectures.net/cogsys2012_sandee_robots/ | instructors:Heico Sandee
-vl-69-7 | Artificial intelligence: An instance of Aibo ingenuity | http://videolectures.net/aaai07_littman_ai/ | instructors:Michael Littman
-vl-69-8 | Autonomous UAV capabilities | http://videolectures.net/aaai07_doherty_auc/ | instructors:Patrick Doherty, Piotr Rudol
-vl-69-9 | From linearly-solvable optimal control to trajectory optimization, and (hopefully) back | http://videolectures.net/cyberstat2012_todorov_optimal_control/ | instructors:Emanuel Todorov
-vl-69-10 | Building Very Small Mobile Micro-Robots | http://videolectures.net/mitworld_donald_bvsmmr/ | instructors:Bruce R. Donald
-vl-69-11 | Autonomous UAV search and rescue | http://videolectures.net/aaai07_doherty_ausr/ | instructors:Patrick Doherty
-vl-69-12 | Robot Swarm localization using trilateration | http://videolectures.net/aaai07_maxim_rslu/ | instructors:Paul Maxim, William Spears
-vl-69-13 | 34. The Stanford Autonomous Helicopter | http://videolectures.net/ijcai09_coates_sah/ | instructors:Pieter Abbeel, Adam Coates, Andrew Ng
-vl-69-14 | Morphogenesis: Shaping swarms of intelligent robots | http://videolectures.net/aaai07_christensen_mssir/ | instructors:Anders Lyhne Christensen, Rehan O'Grady, Marco Dorigo
-vl-69-15 | Cognitive Robotic Surgery: Participation to EUROSURGE | http://videolectures.net/cogsys2012_fiorini_surgery/ | instructors:Paolo Fiorini
-vl-69-16 | 27. Robots to the Rescue: Mixed-initiative human-robot teaming for disaster response | http://videolectures.net/ijcai09_breazeal_robots/ | instructors:Jonathan Williams, Sophie Wang,
+vl-69-2 | Artificial intelligence: An instance of Aibo ingenuity | http://videolectures.net/aaai07_littman_ai/ | instructors:Michael Littman
+vl-69-3 | Autonomous UAV capabilities | http://videolectures.net/aaai07_doherty_auc/ | instructors:Patrick Doherty, Piotr Rudol
+vl-69-4 | Autonomous UAV search and rescue | http://videolectures.net/aaai07_doherty_ausr/ | instructors:Patrick Doherty
+vl-69-5 | Robot Swarm localization using trilateration | http://videolectures.net/aaai07_maxim_rslu/ | instructors:Paul Maxim, William Spears
+vl-69-6 | Morphogenesis: Shaping swarms of intelligent robots | http://videolectures.net/aaai07_christensen_mssir/ | instructors:Anders Lyhne Christensen, Rehan O'Grady, Marco Dorigo
+vl-69-7 | Iterative Path Integral Method for Nonlinear Stochastic Optimal Control | http://videolectures.net/cyberstat2012_satoh_optimal_control/ | instructors:Satoshi Satoh
+vl-69-8 | 34. The Stanford Autonomous Helicopter | http://videolectures.net/ijcai09_coates_sah/ | instructors:Pieter Abbeel, Adam Coates, Andrew Ng
+vl-69-9 | 27. Robots to the Rescue: Mixed-initiative human-robot teaming for disaster response | http://videolectures.net/ijcai09_breazeal_robots/ | instructors:Jonathan Williams, Sophie Wang,
    
     et al.
-vl-69-17 | Controlling Humanoid Robots by Means of Genetic Programming | http://videolectures.net/ecmlpkdd09_iba_chrmgp/ | instructors:Hitoshi Iba
-vl-69-18 | Robotics and Mechatronics - From Space to Surgery and the Virtual World | http://videolectures.net/dnevi_hirzingerram_ram/ | instructors:Gerd Hirzinger
-vl-69-19 | Lecture 1: Course Overview | http://videolectures.net/stanfordcs223aw08_khatib_lec01/ | instructors:Oussama Khatib
-vl-69-20 | SAPHARI - Safe and Autonomous Physical Human-Aware Robot Interaction | http://videolectures.net/cogsys2012_de_luca_autonomous/ | instructors:Alessandro De Luca
-vl-69-21 | Generalizations of the Theory of Linearly Solvable MDPs | http://videolectures.net/cyberstat2012_dvijotham_linearly_solvable_mdp/ | instructors:Krishnamurthy Dvijotham
-vl-69-22 | 37. Robotic Secrets Revealed, Episode 001 | http://videolectures.net/ijcai09_harrison_rsr/ | instructors:J. Gregory Trafton, Magdalena D. Bugajska,
+vl-69-10 | Augmented-SVM: Automatic space partitioning for combining multiple non-linear dynamics | http://videolectures.net/nips2012_shukla_automatic/ | instructors:Ashwini Shukla
+vl-69-11 | Controlling Humanoid Robots by Means of Genetic Programming | http://videolectures.net/ecmlpkdd09_iba_chrmgp/ | instructors:Hitoshi Iba
+vl-69-12 | Free Energy and Relative Entropy Dualities: Connections to Path Integral Control and Applications to Robotics | http://videolectures.net/cyberstat2012_theodorou_free_energy/ | instructors:Evangelos Theodorou
+vl-69-13 | Robotics and Mechatronics - From Space to Surgery and the Virtual World | http://videolectures.net/dnevi_hirzingerram_ram/ | instructors:Gerd Hirzinger
+vl-69-14 | RoboEarth: Connecting robots world-wide | http://videolectures.net/cogsys2012_sandee_robots/ | instructors:Heico Sandee
+vl-69-15 | Data-Driven Scene Understanding from 3D Models | http://videolectures.net/bmvc2012_satkin_scene_understanding/ | instructors:Scott Satkin
+vl-69-16 | How to say "No" to a robot | http://videolectures.net/aaai07_zender_htsn/ | instructors:Hendrik Zender, Patric Jensfelt, Oscar Martinez Mozos
+vl-69-17 | Lecture 1: Course Overview | http://videolectures.net/stanfordcs223aw08_khatib_lec01/ | instructors:Oussama Khatib
+vl-69-18 | NERO 2.0: Neuro Evolving Robotic Operatives | http://videolectures.net/aaai07_karpov_nero/ | instructors:Igor Karpov, Thomas Nelson
+vl-69-19 | Leonardo: Goal assistance with divergent beliefs | http://videolectures.net/aaai07_gray_lga/ | instructors:Jesse Gray, Matt Berlin, Cynthia Breazeal
+vl-69-20 | 37. Robotic Secrets Revealed, Episode 001 | http://videolectures.net/ijcai09_harrison_rsr/ | instructors:J. Gregory Trafton, Magdalena D. Bugajska,
    
     et al.
-vl-69-23 | How to say "No" to a robot | http://videolectures.net/aaai07_zender_htsn/ | instructors:Hendrik Zender, Patric Jensfelt, Oscar Martinez Mozos
-vl-69-24 | Sociable Robots | http://videolectures.net/mitworld_gellerman_breazeal_turkle_sr/ | instructors:Cynthia Breazeal, Sherry Turkle, Bruce Gellerman
-vl-69-25 | ALIZ-E - Adaptive Strategies for Sustainable Long-Term Social Interaction | http://videolectures.net/cogsys2012_belpaeme_strategies/ | instructors:Tony Belpaeme
-vl-69-26 | NERO 2.0: Neuro Evolving Robotic Operatives | http://videolectures.net/aaai07_karpov_nero/ | instructors:Igor Karpov, Thomas Nelson
-vl-69-27 | Probabilistic inference methods in robotics-filling the gap between high-level reasoning and low-level motion control | http://videolectures.net/psm08_toussaint_pim/ | instructors:Marc Toussaint
-vl-69-28 | Leonardo: Goal assistance with divergent beliefs | http://videolectures.net/aaai07_gray_lga/ | instructors:Jesse Gray, Matt Berlin, Cynthia Breazeal
-vl-69-29 | Direct Policy Ranking with Robot Data Streams | http://videolectures.net/ecmlpkdd2011_akrour_robot/ | instructors:Riad Akrour
-vl-69-30 | Collective Cognitive Robots | http://videolectures.net/cogsys2012_schmickl_cognitive/ | instructors:Thomas Schmickl
-vl-69-31 | 10. Multi-Camera People Tracking Presented by a Humanoid | http://videolectures.net/ijcai09_kim_mcptph/ | instructors:Kyungnam (Ken) Kim
+vl-69-21 | Probabilistic inference methods in robotics-filling the gap between high-level reasoning and low-level motion control | http://videolectures.net/psm08_toussaint_pim/ | instructors:Marc Toussaint
+vl-69-22 | From linearly-solvable optimal control to trajectory optimization, and (hopefully) back | http://videolectures.net/cyberstat2012_todorov_optimal_control/ | instructors:Emanuel Todorov
+vl-69-23 | Cognitive Robotic Surgery: Participation to EUROSURGE | http://videolectures.net/cogsys2012_fiorini_surgery/ | instructors:Paolo Fiorini
+vl-69-24 | Two-on-two robot soccer | http://videolectures.net/aaai07_li_totrs/ | instructors:Keyong Li, Oliver Purwin, Raffaello D'Andrea
+vl-69-25 | Science, Technology, and Applications of Swarm Robotics | http://videolectures.net/eccs07_floreano_sta/ | instructors:Dario Floreano
+vl-69-26 | Distributive Adaptive Control: A Real-world Cognitive Architecture applied to Robots, Spaces and Avatares | http://videolectures.net/eccs07_verschure_dac/ | instructors:Paul Verschure
+vl-69-27 | The Centibots 100 Robot Project | http://videolectures.net/aaai07_ortiz_dcrp/ | instructors:Charlie Ortiz, Regis Vincent
+vl-69-28 | SAPHARI - Safe and Autonomous Physical Human-Aware Robot Interaction | http://videolectures.net/cogsys2012_de_luca_autonomous/ | instructors:Alessandro De Luca
+vl-69-29 | 10. Multi-Camera People Tracking Presented by a Humanoid | http://videolectures.net/ijcai09_kim_mcptph/ | instructors:Kyungnam (Ken) Kim
+vl-69-30 | Parallel Manipulators in Biomechanics and Robotics | http://videolectures.net/kolokviji_castelli_pmbr/ | instructors:Vincenzo Parenti Castelli
+vl-69-31 | Map Building without Localization by Dimensionality Reduction Techniques | http://videolectures.net/icml07_yairi_bwlc/ | instructors:Takehisa Yairi
 vl-69-32 | Approximate Inference Control | http://videolectures.net/nipsworkshops09_toussaint_aic/ | instructors:Marc Toussaint
-vl-69-33 | Science, Technology, and Applications of Swarm Robotics | http://videolectures.net/eccs07_floreano_sta/ | instructors:Dario Floreano
-vl-69-34 | Two-on-two robot soccer | http://videolectures.net/aaai07_li_totrs/ | instructors:Keyong Li, Oliver Purwin, Raffaello D'Andrea
-vl-69-35 | Lecture 2: Spatial Descriptions | http://videolectures.net/stanfordcs223aw08_khatib_lec02/ | instructors:Oussama Khatib
-vl-69-36 | Distributive Adaptive Control: A Real-world Cognitive Architecture applied to Robots, Spaces and Avatares | http://videolectures.net/eccs07_verschure_dac/ | instructors:Paul Verschure
-vl-69-37 | 4. The Autonomous City Explorer | http://videolectures.net/ijcai09_bauer_acep/ | instructors:Martin Buss, Kolja Kühnlenz,
+vl-69-33 | 4. The Autonomous City Explorer | http://videolectures.net/ijcai09_bauer_acep/ | instructors:Martin Buss, Kolja Kühnlenz,
    
     et al.
-vl-69-38 | Exploratory Learning of Grasp Affordances | http://videolectures.net/rss2010_piater_elg/ | instructors:Justus H. Piater
-vl-69-39 | Robotsko učenje in planiranje potiskanja predmetov | http://videolectures.net/solomon_troha_ruppp/ | instructors:Miha Troha
-vl-69-40 | Poster Spotlights | http://videolectures.net/nipsworkshops09_various_ps/ | instructors:Brenna D. Argall, Bertrand Douillard,
+vl-69-34 | Lecture 2: Spatial Descriptions | http://videolectures.net/stanfordcs223aw08_khatib_lec02/ | instructors:Oussama Khatib
+vl-69-35 | Multimodal Interactive Robot Agent (MIRA robot head) | http://videolectures.net/aaai07_murray_mira/ | instructors:John Murray, Chris Rowan,
    
     et al.
-vl-69-41 | The Centibots 100 Robot Project | http://videolectures.net/aaai07_ortiz_dcrp/ | instructors:Charlie Ortiz, Regis Vincent
-vl-69-42 | The humour project - Human Behavioral Modeling for Enhancing learning by Optimizing Human-Robot Interaction | http://videolectures.net/cogsys2012_sanguineti_optimizing/ | instructors:Vittorio Sanguineti
-vl-69-43 | Robot Trajectory Optimization Using Approximate Inference | http://videolectures.net/icml09_toussaint_rto/ | instructors:Marc Toussaint
-vl-69-44 | Active Sequential Estimation of Object Dynamics with Tactile Sensory Feedback | http://videolectures.net/rss2010_ting_ase/ | instructors:Jo-Anne Ting
-vl-69-45 | Optimized Information Gatheringin Robotics and Sensor Networks | http://videolectures.net/rraa09_krause_oifrsn/ | instructors:Andreas Krause
-vl-69-46 | Goal-Leaders: Goal-directed, Adaptive Builder Robots | http://videolectures.net/cogsys2012_pezzulo_builder/ | instructors:Giovanni Pezzulo
-vl-69-47 | IntellAct (2011-14): Intelligent observation and execution of Actions and manipulations | http://videolectures.net/cogsys2012_krueger_intelligent/ | instructors:Norbert Krüger
-vl-69-48 | XPERIENCE - Robots Bootstrapped through Learning from Experience | http://videolectures.net/cogsys2012_dillmann_bootstrapped/ | instructors:Rüdiger Dillmann
-vl-69-49 | Parallel Manipulators in Biomechanics and Robotics | http://videolectures.net/kolokviji_castelli_pmbr/ | instructors:Vincenzo Parenti Castelli
-vl-69-50 | Map Building without Localization by Dimensionality Reduction Techniques | http://videolectures.net/icml07_yairi_bwlc/ | instructors:Takehisa Yairi
-vl-69-51 | European Clearing House for Open Robotics Development | http://videolectures.net/cogsys2012_roehrbein_development/ | instructors:Florian Röhrbein
-vl-69-52 | Domain Adaptation for Mobile Robot Navigation | http://videolectures.net/nipsworkshops09_bradley_damr/ | instructors:David Bradley
-vl-69-53 | Lecture 14: PD Control | http://videolectures.net/stanfordcs223aw08_khatib_lec14/ | instructors:Oussama Khatib
-vl-69-54 | Trajectory Prediction: Learning to Map Situations to Robot Trajectories | http://videolectures.net/icml09_jetchev_tpl/ | instructors:Nikolay Jetchev
+vl-69-36 | Sociable Robots | http://videolectures.net/mitworld_gellerman_breazeal_turkle_sr/ | instructors:Cynthia Breazeal, Sherry Turkle, Bruce Gellerman
+vl-69-37 | Humanoids for autonomous operations | http://videolectures.net/aaai07_stoica_haop/ | instructors:Adrian Stoica
+vl-69-38 | Motion planning of multiple agents in virtual environments | http://videolectures.net/aaai07_li_mpma/ | instructors:Yi Li, Kamal Gupta
+vl-69-39 | Poster Spotlights | http://videolectures.net/nipsworkshops09_various_ps/ | instructors:Brenna D. Argall, Bertrand Douillard,
+   
+    et al.
+vl-69-40 | Direct Policy Ranking with Robot Data Streams | http://videolectures.net/ecmlpkdd2011_akrour_robot/ | instructors:Riad Akrour
+vl-69-41 | Robot Trajectory Optimization Using Approximate Inference | http://videolectures.net/icml09_toussaint_rto/ | instructors:Marc Toussaint
+vl-69-42 | ALIZ-E - Adaptive Strategies for Sustainable Long-Term Social Interaction | http://videolectures.net/cogsys2012_belpaeme_strategies/ | instructors:Tony Belpaeme
+vl-69-43 | Generalizations of the Theory of Linearly Solvable MDPs | http://videolectures.net/cyberstat2012_dvijotham_linearly_solvable_mdp/ | instructors:Krishnamurthy Dvijotham
+vl-69-44 | Optimized Information Gatheringin Robotics and Sensor Networks | http://videolectures.net/rraa09_krause_oifrsn/ | instructors:Andreas Krause
+vl-69-45 | Exploratory Learning of Grasp Affordances | http://videolectures.net/rss2010_piater_elg/ | instructors:Justus H. Piater
+vl-69-46 | Building Very Small Mobile Micro-Robots | http://videolectures.net/mitworld_donald_bvsmmr/ | instructors:Bruce R. Donald
+vl-69-47 | Trajectory Prediction: Learning to Map Situations to Robot Trajectories | http://videolectures.net/icml09_jetchev_tpl/ | instructors:Nikolay Jetchev
+vl-69-48 | Robotsko učenje in planiranje potiskanja predmetov | http://videolectures.net/solomon_troha_ruppp/ | instructors:Miha Troha
+vl-69-49 | Function Approximation for Imitation Learning in Humanoid Robots | http://videolectures.net/rraa09_rao_fail/ | instructors:Rajesh P. N. Rao
+vl-69-50 | Domain Adaptation for Mobile Robot Navigation | http://videolectures.net/nipsworkshops09_bradley_damr/ | instructors:David Bradley
+vl-69-51 | Collective Cognitive Robots | http://videolectures.net/cogsys2012_schmickl_cognitive/ | instructors:Thomas Schmickl
+vl-69-52 | Lecture 14: PD Control | http://videolectures.net/stanfordcs223aw08_khatib_lec14/ | instructors:Oussama Khatib
+vl-69-53 | A service robot named Markovito | http://videolectures.net/aaai07_aviles_srm/ | instructors:Elva Corona-Xelhuantzi, Hector Aviles,
+   
+    et al.
+vl-69-54 | Active Sequential Estimation of Object Dynamics with Tactile Sensory Feedback | http://videolectures.net/rss2010_ting_ase/ | instructors:Jo-Anne Ting
 vl-69-55 | Lecture 13: Control - Overview | http://videolectures.net/stanfordcs223aw08_khatib_lec13/ | instructors:Oussama Khatib
-vl-69-56 | GeRT - Generalising Robot Manipulation Tasks | http://videolectures.net/cogsys2012_borst_manipulation/ | instructors:Christoph Borst
-vl-69-57 | Planning Problems for Social Robots | http://videolectures.net/icaps2011_tipaldi_robots/ | instructors:Gian Diego Tipaldi
-vl-69-58 | Multimodal Interactive Robot Agent (MIRA robot head) | http://videolectures.net/aaai07_murray_mira/ | instructors:John Murray, Chris Rowan,
+vl-69-56 | Autonomous robot cleaning crew | http://videolectures.net/aaai07_vannoy_arcc/ | instructors:John Vannoy, Jing Xiao
+vl-69-57 | Patient-Cooperative Rehabilitation Robotics in Zurich | http://videolectures.net/medicon07_riener_pcrz/ | instructors:Robert Riener
+vl-69-58 | The Role of Function Approximation for both Regression and Classifiction in Robotics | http://videolectures.net/rraa09_roy_trfa/ | instructors:Nicholas Roy
+vl-69-59 | 9. The Dinochrome Brigade | http://videolectures.net/ijcai09_maxim_db/ | instructors:Paul Maxim, William Spears
+vl-69-60 | 36. Little Robot Goes Missing | http://videolectures.net/ijcai09_szepesvari_lrgm/ | instructors:Csaba Szepesvári, Reka Szepesvari, Eszter Szepesvari
+vl-69-61 | The humour project - Human Behavioral Modeling for Enhancing learning by Optimizing Human-Robot Interaction | http://videolectures.net/cogsys2012_sanguineti_optimizing/ | instructors:Vittorio Sanguineti
+vl-69-62 | Architecture for humananoid robots: emulation of biological processes | http://videolectures.net/kolokviji_cheng_ebp/ | instructors:Gordon Cheng
+vl-69-63 | Planning Problems for Social Robots | http://videolectures.net/icaps2011_tipaldi_robots/ | instructors:Gian Diego Tipaldi
+vl-69-64 | Goal-Leaders: Goal-directed, Adaptive Builder Robots | http://videolectures.net/cogsys2012_pezzulo_builder/ | instructors:Giovanni Pezzulo
+vl-69-65 | XPERIENCE - Robots Bootstrapped through Learning from Experience | http://videolectures.net/cogsys2012_dillmann_bootstrapped/ | instructors:Rüdiger Dillmann
+vl-69-66 | IntellAct (2011-14): Intelligent observation and execution of Actions and manipulations | http://videolectures.net/cogsys2012_krueger_intelligent/ | instructors:Norbert Krüger
+vl-69-67 | European Clearing House for Open Robotics Development | http://videolectures.net/cogsys2012_roehrbein_development/ | instructors:Florian Röhrbein
+vl-69-68 | 13. Toward Interactive Learning of Container and Non-Container Objects | http://videolectures.net/ijcai09_griffith_tilcnco/ | instructors:Alexander Stoytchev, Matthew Miller,
    
     et al.
-vl-69-59 | NIFTi - Natural Human-Robot Cooperation in Dynamic Environments | http://videolectures.net/cogsys2012_kruijff_dynamic/ | instructors:Geert-Jan M. Kruijff
-vl-69-60 | Function Approximation for Imitation Learning in Humanoid Robots | http://videolectures.net/rraa09_rao_fail/ | instructors:Rajesh P. N. Rao
-vl-69-61 | Motion planning of multiple agents in virtual environments | http://videolectures.net/aaai07_li_mpma/ | instructors:Yi Li, Kamal Gupta
-vl-69-62 | Humanoids for autonomous operations | http://videolectures.net/aaai07_stoica_haop/ | instructors:Adrian Stoica
-vl-69-63 | Robotics in Space Exploration | http://videolectures.net/mitworld_brooks_rse/ | instructors:Rodney A. Brooks
-vl-69-64 | The Role of Function Approximation for both Regression and Classifiction in Robotics | http://videolectures.net/rraa09_roy_trfa/ | instructors:Nicholas Roy
-vl-69-65 | 9. The Dinochrome Brigade | http://videolectures.net/ijcai09_maxim_db/ | instructors:Paul Maxim, William Spears
-vl-69-66 | 36. Little Robot Goes Missing | http://videolectures.net/ijcai09_szepesvari_lrgm/ | instructors:Csaba Szepesvári, Reka Szepesvari, Eszter Szepesvari
-vl-69-67 | A service robot named Markovito | http://videolectures.net/aaai07_aviles_srm/ | instructors:Elva Corona-Xelhuantzi, Hector Aviles,
-   
-    et al.
-vl-69-68 | Autonomous robot cleaning crew | http://videolectures.net/aaai07_vannoy_arcc/ | instructors:John Vannoy, Jing Xiao
-vl-69-69 | Dependability of Autonomous Robots | http://videolectures.net/is2012_steinbauer_autonomous_robots/ | instructors:Gerald Steinbauer
-vl-69-70 | Patient-Cooperative Rehabilitation Robotics in Zurich | http://videolectures.net/medicon07_riener_pcrz/ | instructors:Robert Riener
-vl-69-71 | 13. Toward Interactive Learning of Container and Non-Container Objects | http://videolectures.net/ijcai09_griffith_tilcnco/ | instructors:Alexander Stoytchev, Matthew Miller,
-   
-    et al.
-vl-69-72 | RADHAR - Robotic Adaptation to Humans Adapting to Robots | http://videolectures.net/cogsys2012_demeester_adaptation/ | instructors:Eric Demeester
-vl-69-73 | Lecture 9: Intro - Guest Lecturer: Gregory Hager | http://videolectures.net/stanfordcs223aw08_hager_lec09/ | instructors:Oussama Khatib
-vl-69-74 | Architecture for humananoid robots: emulation of biological processes | http://videolectures.net/kolokviji_cheng_ebp/ | instructors:Gordon Cheng
-vl-69-75 | Lecture 16: Compliance | http://videolectures.net/stanfordcs223aw08_khatib_lec16/ | instructors:Oussama Khatib
+vl-69-69 | GeRT - Generalising Robot Manipulation Tasks | http://videolectures.net/cogsys2012_borst_manipulation/ | instructors:Christoph Borst
+vl-69-70 | NIFTi - Natural Human-Robot Cooperation in Dynamic Environments | http://videolectures.net/cogsys2012_kruijff_dynamic/ | instructors:Geert-Jan M. Kruijff
+vl-69-71 | Robotics in Space Exploration | http://videolectures.net/mitworld_brooks_rse/ | instructors:Rodney A. Brooks
+vl-69-72 | Lecture 9: Intro - Guest Lecturer: Gregory Hager | http://videolectures.net/stanfordcs223aw08_hager_lec09/ | instructors:Oussama Khatib
+vl-69-73 | Lecture 16: Compliance | http://videolectures.net/stanfordcs223aw08_khatib_lec16/ | instructors:Oussama Khatib
+vl-69-74 | Robotika in nevrorehabilitacija | http://videolectures.net/zv_ung_bajd_rin/ | instructors:Tadej Bajd
+vl-69-75 | Lecture 10: Guest Lecturer: Krasimir Kolarov | http://videolectures.net/stanfordcs223aw08_kolarov_lec10/ | instructors:Krasimir Kolarov
 vl-69-76 | Načrtovanje vodenja robotskih manipulatorjev | http://videolectures.net/kolokviji_zlajpah_nvrm/ | instructors:Leon Žlajpah
-vl-69-77 | Lecture 10: Guest Lecturer: Krasimir Kolarov | http://videolectures.net/stanfordcs223aw08_kolarov_lec10/ | instructors:Krasimir Kolarov
-vl-69-78 | Robotika in nevrorehabilitacija | http://videolectures.net/zv_ung_bajd_rin/ | instructors:Tadej Bajd
-vl-69-79 | From elementary sensorimotoric operations to demanding manipulation tasks on humanoid robots | http://videolectures.net/dnevi_dillmann_robots/ | instructors:Rüdiger Dillmann
-vl-69-80 | One Class formula - Human Robot interaction | http://videolectures.net/basys04_quinghua_ocfhr/ | instructors:Wang Quinghua
+vl-69-77 | One Class formula - Human Robot interaction | http://videolectures.net/basys04_quinghua_ocfhr/ | instructors:Wang Quinghua
+vl-69-78 | Power agents at the Mars Desert Research Station | http://videolectures.net/aaai07_clancey_pamd/ | instructors:Bill Clancey
+vl-69-79 | RADHAR - Robotic Adaptation to Humans Adapting to Robots | http://videolectures.net/cogsys2012_demeester_adaptation/ | instructors:Eric Demeester
+vl-69-80 | Dependability of Autonomous Robots | http://videolectures.net/is2012_steinbauer_autonomous_robots/ | instructors:Gerald Steinbauer
 vl-69-81 | Conversations with robots | http://videolectures.net/translingeu2010_flickinger_cwr/ | instructors:Dan Flickinger
-vl-69-82 | Power agents at the Mars Desert Research Station | http://videolectures.net/aaai07_clancey_pamd/ | instructors:Bill Clancey
+vl-69-82 | From elementary sensorimotoric operations to demanding manipulation tasks on humanoid robots | http://videolectures.net/dnevi_dillmann_robots/ | instructors:Rüdiger Dillmann
 vl-69-83 | Mode Estimation of Autonomous Systems | http://videolectures.net/nipsworkshops09_williams_meas/ | instructors:Brian Williams
 vl-69-84 | Sme-Service Networks For Cooperative Operation Of Robot Installations | http://videolectures.net/basys04_horst_ssnco/ | instructors:Peter ter Horst
 vl-69-85 | Avtomatika, robotika in biokibernetika | http://videolectures.net/promogram_igor_mekjavic_slo/ | instructors:Igor B. Mekjavič, Jadran Lenarčič,
@@ -103,31 +103,31 @@ vl-69-86 | Automatics, robotics and biocybernetics | http://videolectures.net/pr
    
     et al.
 vl-69-87 | EU-funded research in Cognitive Systems and Robotics: From FP7 towards Horizon 2020 | http://videolectures.net/cogsys2012_kral_horizon/ | instructors:Libor Kral
-vl-69-88 | Robotics | http://videolectures.net/is2011_gams_robotics/ | instructors:Andrej Gams
-vl-69-89 | Planning to Perceive: Exploiting Mobility for Robust Object Detection | http://videolectures.net/icaps2011_velez_exploiting/ | instructors:Javier Velez
-vl-69-90 | Robotics | http://videolectures.net/is2012_gams_robotics/ | instructors:Andrej Gams
-vl-69-91 | Reactive Teaming for Game Characters | http://videolectures.net/aaai2010_heckel_rtgc/ | instructors:Frederick W. P. Heckel, G. Michael Youngblood
-vl-69-92 | Panel Discussion | http://videolectures.net/rraa09_panel_discussion/ | instructors:Christian Plagemann, Dieter Fox,
+vl-69-88 | Panel Discussion | http://videolectures.net/rraa09_panel_discussion/ | instructors:Christian Plagemann, Dieter Fox,
    
     et al.
-vl-69-93 | Solving Optimization Problems in Industry: An Arms Race | http://videolectures.net/ppsn2014_baeck_arms_race/ | instructors:Thomas Bäck
-vl-69-94 | Machine Learning for Robotics | http://videolectures.net/ecmlpkdd2012_abbeel_learning_robotics/ | instructors:Pieter Abbeel
-vl-69-95 | In Vivo Veritas: Towards the Evolution of Things | http://videolectures.net/ppsn2014_eiben_vivo_veritas/ | instructors:A. E. (Gusz) Eiben
-vl-69-96 | Some Computational Aspects of Robot Kinematic Redundancy | http://videolectures.net/ppsn2014_lenarcic_kinematic_redundancy/ | instructors:Jadran Lenarčič
-vl-69-97 | STAIR: The STanford Artificial Intelligence Robot project | http://videolectures.net/icml08_ng_stair/ | instructors:Andrew Ng, Andrew McCallum
-vl-69-98 | Automating Biology Using Robot Scientists | http://videolectures.net/aaai2012_king_robot_scientists/ | instructors:Ross D. King
-vl-69-99 | Learning About Sensorimotor Data | http://videolectures.net/nips2011_sutton_data/ | instructors:Richard S. Sutton
-vl-69-100 | Reinforcement Learning, Apprenticeship Learning and Robotic Control | http://videolectures.net/icml09_ng_itrlrc/ | instructors:Andrew Ng
+vl-69-89 | Reactive Teaming for Game Characters | http://videolectures.net/aaai2010_heckel_rtgc/ | instructors:Frederick W. P. Heckel, G. Michael Youngblood
+vl-69-90 | Planning to Perceive: Exploiting Mobility for Robust Object Detection | http://videolectures.net/icaps2011_velez_exploiting/ | instructors:Javier Velez
+vl-69-91 | Robotics | http://videolectures.net/is2011_gams_robotics/ | instructors:Andrej Gams
+vl-69-92 | Robotics | http://videolectures.net/is2012_gams_robotics/ | instructors:Andrej Gams
+vl-69-93 | Machine Learning for Robotics | http://videolectures.net/ecmlpkdd2012_abbeel_learning_robotics/ | instructors:Pieter Abbeel
+vl-69-94 | STAIR: The STanford Artificial Intelligence Robot project | http://videolectures.net/icml08_ng_stair/ | instructors:Andrew Ng, Andrew McCallum
+vl-69-95 | Reinforcement Learning, Apprenticeship Learning and Robotic Control | http://videolectures.net/icml09_ng_itrlrc/ | instructors:Andrew Ng
+vl-69-96 | Learning About Sensorimotor Data | http://videolectures.net/nips2011_sutton_data/ | instructors:Richard S. Sutton
+vl-69-97 | Automating Biology Using Robot Scientists | http://videolectures.net/aaai2012_king_robot_scientists/ | instructors:Ross D. King
+vl-69-98 | Robots with Biological Brains: Issues and Consequences | http://videolectures.net/icannga2011_warwick_rbbi/ | instructors:Kevin Warwick
+vl-69-99 | Systems with General Intelligence: A New Perspective | http://videolectures.net/aaai2010_thielscher_sgi/ | instructors:Michael Thielscher
+vl-69-100 | Solving Optimization Problems in Industry: An Arms Race | http://videolectures.net/ppsn2014_baeck_arms_race/ | instructors:Thomas Bäck
 vl-69-101 | Turing's Humanoid Thinking Machines | http://videolectures.net/turing100_brooks_humanoid_machines/ | instructors:Rodney A. Brooks
-vl-69-102 | Robots with Biological Brains: Issues and Consequences | http://videolectures.net/icannga2011_warwick_rbbi/ | instructors:Kevin Warwick
+vl-69-102 | In Vivo Veritas: Towards the Evolution of Things | http://videolectures.net/ppsn2014_eiben_vivo_veritas/ | instructors:A. E. (Gusz) Eiben
 vl-69-103 | Registration and Recognition for Robotics | http://videolectures.net/aaai2011_konolige_registration/ | instructors:Kurt Konolige
-vl-69-104 | Systems with General Intelligence: A New Perspective | http://videolectures.net/aaai2010_thielscher_sgi/ | instructors:Michael Thielscher
+vl-69-104 | Intelligent Interaction with the Real World | http://videolectures.net/aaai2010_pack_kaelbling_iiw/ | instructors:Leslie Pack Kaelbling
 vl-69-105 | Cognitive Developmental Robotics as Embodied Cognitive Systems | http://videolectures.net/cogsys2012_asada_cognitive/ | instructors:Minoru Asada
-vl-69-106 | Building AI: Our Shared Enterprise | http://videolectures.net/aaai2012_minton_ai/ | instructors:Steven Minton
-vl-69-107 | Intelligent Interaction with the Real World | http://videolectures.net/aaai2010_pack_kaelbling_iiw/ | instructors:Leslie Pack Kaelbling
-vl-69-108 | Sun, Surf and Automation: A Decade of Field Robotics in Australia | http://videolectures.net/ijcai2011_durrant_whyte_automation/ | instructors:Hugh Durrant-Whyte
-vl-69-109 | Autonomous discovery of abstract concepts by a robot | http://videolectures.net/icannga2011_bratko_adac/ | instructors:Ivan Bratko
-vl-69-110 | The Child's Machine vs. the World's Brain | http://videolectures.net/is2012_sammut_child_machine/ | instructors:Claude Sammut
-vl-69-111 | Robotic Agents for Disaster Response Robotics | http://videolectures.net/icaps2010_nardi_robotics/ | instructors:Daniele Nardi
+vl-69-106 | Sun, Surf and Automation: A Decade of Field Robotics in Australia | http://videolectures.net/ijcai2011_durrant_whyte_automation/ | instructors:Hugh Durrant-Whyte
+vl-69-107 | Building AI: Our Shared Enterprise | http://videolectures.net/aaai2012_minton_ai/ | instructors:Steven Minton
+vl-69-108 | Autonomous discovery of abstract concepts by a robot | http://videolectures.net/icannga2011_bratko_adac/ | instructors:Ivan Bratko
+vl-69-109 | Robotic Agents for Disaster Response Robotics | http://videolectures.net/icaps2010_nardi_robotics/ | instructors:Daniele Nardi
+vl-69-110 | Some Computational Aspects of Robot Kinematic Redundancy | http://videolectures.net/ppsn2014_lenarcic_kinematic_redundancy/ | instructors:Jadran Lenarčič
+vl-69-111 | The Child's Machine vs. the World's Brain | http://videolectures.net/is2012_sammut_child_machine/ | instructors:Claude Sammut
 vl-69-112 | Using Combinatory Categorial Grammars for Probabilistic Plan Recognition and Planning | http://videolectures.net/is2011_geib_robotics/ | instructors:Christopher W. Geib
 vl-69-113 | Open Source Solutions for Motion Planning | http://videolectures.net/icaps2011_chitta_planning/ | instructors:Sachin Chitta

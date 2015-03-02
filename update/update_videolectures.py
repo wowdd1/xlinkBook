@@ -47,7 +47,7 @@ class VideolecturesSpider(Spider):
         urls_list = []
 
         for page in range(1, max_page + 1):
-            r = requests.get('http://videolectures.net/site/ajax/drilldown/?t=evt&p=' + str(page) + '&cid=13&w=5')
+            r = requests.get('http://videolectures.net/site/ajax/drilldown/?o=top&t=evt&p=' + str(page) + '&cid=13&w=5')
             soup = BeautifulSoup(r.text)
             for a in soup.find_all('a'):
                 if a.attrs.has_key('lang'):
@@ -89,7 +89,7 @@ class VideolecturesSpider(Spider):
             max_page = self.findLastPage(soup)
 
             for page in range(1, max_page + 1):
-                r = requests.get('http://videolectures.net/site/ajax/drilldown/?t=' + self.type_map.get(s) + '&p=' + str(page) + '&cid=' + self.subject_cid_map.get(subject) + '&w=5')
+                r = requests.get('http://videolectures.net/site/ajax/drilldown/?o=top&t=' + self.type_map.get(s) + '&p=' + str(page) + '&cid=' + self.subject_cid_map.get(subject) + '&w=5')
                 soup = BeautifulSoup(r.text)
                 for div in soup.find_all('div', class_='lec_thumb'):
                     instructors = ''
@@ -113,7 +113,7 @@ class VideolecturesSpider(Spider):
             print "no need upgrade\n"
  
     def doWork(self):
-        #self.processEventData('event')
+        self.processEventData('event')
         for subject in self.subject_cid_map.keys():
             self.processData(subject)
 

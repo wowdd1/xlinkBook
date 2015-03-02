@@ -1,102 +1,102 @@
-vl-163-1 | Dynamics of Web: Analysis and Implications from Search Perspective | http://videolectures.net/russir2012_sengor_altingovde_kanhabua_web/ | instructors:Ismail Sengor Altingovde, Nattiya Kanhabua
+vl-163-1 | Triplify - Light-weight Linked Data Publication from Relational Databases | http://videolectures.net/www09_auer_tlwldp/ | instructors:Sören Auer, Sebastian Dietzold,
+   
+    et al.
 vl-163-2 | Ranking From Pairs and Triplets: Information Quality, Evaluation Methods and Query Complexity | http://videolectures.net/wsdm2011_radinsky_rfp/ | instructors:Kira Radinsky
-vl-163-3 | Triplify - Light-weight Linked Data Publication from Relational Databases | http://videolectures.net/www09_auer_tlwldp/ | instructors:Sören Auer, Sebastian Dietzold,
-   
-    et al.
+vl-163-3 | Entropy of Search Logs: How Hard is Search? With Personalization? With Backoff? | http://videolectures.net/wsdm08_mei_esl/ | instructors:Qiaozhu Mei
 vl-163-4 | TwitterSearch: A Comparison of Microblog Search and Web Search | http://videolectures.net/wsdm2011_teevan_tsc/ | instructors:Jaime Teevan
-vl-163-5 | Linked Data-based Concept Recommendation: Comparison of Different Methods in Open Innovation Scenario | http://videolectures.net/eswc2012_damljanovic_innovation/ | instructors:Danica Damljanović
-vl-163-6 | Searching and evaluating information on the Web - an (experimental) psychological perspective | http://videolectures.net/web_kammerer_information/ | instructors:Yvonne Kammerer
-vl-163-7 | Distributed Web Search | http://videolectures.net/essir2011_baeza_yates_distributed/ | instructors:Ricardo Baeza-Yates
+vl-163-5 | Releasing Search Queries and Clicks Privately | http://videolectures.net/www09_korolova_rsqcp/ | instructors:Aleksandra Korolova, Krishnaram Kenthapadi,
+   
+    et al.
+vl-163-6 | Linked Data-based Concept Recommendation: Comparison of Different Methods in Open Innovation Scenario | http://videolectures.net/eswc2012_damljanovic_innovation/ | instructors:Danica Damljanović
+vl-163-7 | Dynamics of Web: Analysis and Implications from Search Perspective | http://videolectures.net/russir2012_sengor_altingovde_kanhabua_web/ | instructors:Ismail Sengor Altingovde, Nattiya Kanhabua
 vl-163-8 | Local is Global: Effective Multilingual Web Strategies | http://videolectures.net/w3cworkshop2011_hurst_strategies/ | instructors:Sophie Hurst
-vl-163-9 | Dynamic Ranked Retrieval | http://videolectures.net/wsdm2011_joachims_drr/ | instructors:Thorsten Joachims
-vl-163-10 | Entropy of Search Logs: How Hard is Search? With Personalization? With Backoff? | http://videolectures.net/wsdm08_mei_esl/ | instructors:Qiaozhu Mei
-vl-163-11 | Identifying Task-based Sessions in Search Engine Query Logs | http://videolectures.net/wsdm2011_tolomei_itb/ | instructors:Gabriele Tolomei
-vl-163-12 | Product customization as Linked Data | http://videolectures.net/eswc2012_chevalier_servant_product_customization/ | instructors:Edouard Chevalier, François-Paul Servant
-vl-163-13 | Personalizing Web Search using Long Term Browsing History | http://videolectures.net/wsdm2011_matthijs_pws/ | instructors:Nicolaas Matthijs
-vl-163-14 | Releasing Search Queries and Clicks Privately | http://videolectures.net/www09_korolova_rsqcp/ | instructors:Aleksandra Korolova, Krishnaram Kenthapadi,
+vl-163-9 | Searching and evaluating information on the Web - an (experimental) psychological perspective | http://videolectures.net/web_kammerer_information/ | instructors:Yvonne Kammerer
+vl-163-10 | Distributed Web Search | http://videolectures.net/essir2011_baeza_yates_distributed/ | instructors:Ricardo Baeza-Yates
+vl-163-11 | The "Real World" Web Search Problem | http://videolectures.net/mmdss07_glover_trw/ | instructors:Eric Glover
+vl-163-12 | Connectivity Structure of Bipartite Graphs via the KNC-Plot | http://videolectures.net/wsdm08_vee_csbg/ | instructors:Erik Vee
+vl-163-13 | Ranking Mechanisms in Twitter-Like Forums | http://videolectures.net/wsdm2010_sarma_rmit/ | instructors:Atish Das Sarma
+vl-163-14 | Dynamic Ranked Retrieval | http://videolectures.net/wsdm2011_joachims_drr/ | instructors:Thorsten Joachims
+vl-163-15 | An Experimental Comparison of Click Position-Bias Models | http://videolectures.net/wsdm08_craswell_eccp/ | instructors:Nick Craswell
+vl-163-16 | Identifying Task-based Sessions in Search Engine Query Logs | http://videolectures.net/wsdm2011_tolomei_itb/ | instructors:Gabriele Tolomei
+vl-163-17 | A New Visual Search Interface for Web Browsing | http://videolectures.net/wsdm09_xu_nvsi/ | instructors:Songhua Xu, Tao Jin, Francis C.M. Lau
+vl-163-18 | An Empirical Analysis of Sponsored Search Performance in Search Engine Advertising | http://videolectures.net/wsdm08_ghose_eassps/ | instructors:Anindya Ghose
+vl-163-19 | Socially enhanced Services Computing | http://videolectures.net/kolokviji_dustdar_sesc/ | instructors:Schahram Dustdar
+vl-163-20 | Personalizing Web Search using Long Term Browsing History | http://videolectures.net/wsdm2011_matthijs_pws/ | instructors:Nicolaas Matthijs
+vl-163-21 | Analysis of Long Queries in a Large Scale Search Log | http://videolectures.net/wscd09_bendersky_alqlssl/ | instructors:Michael Bendersky, Bruce Croft
+vl-163-22 | Nascent Best Practices of Multilingual SEO | http://videolectures.net/w3cworkshop2011_lucardi_seo/ | instructors:Gustavo Lucardi
+vl-163-23 | Disorder Inequality: A Combinatorial Approach to Nearest Neighbor Search | http://videolectures.net/wsdm08_lifshits_dic/ | instructors:Yury Lifshits
+vl-163-24 | Query Reformulation Using Anchor Text | http://videolectures.net/wsdm2010_dang_qrua/ | instructors:Van Dang
+vl-163-25 | Personal Name Classification in Web Queries | http://videolectures.net/wsdm08_shen_pncwq/ | instructors:Dou Shen
+vl-163-26 | Query by Document | http://videolectures.net/wsdm09_yang_qbd/ | instructors:David Yin Yang, Nilesh Bansal,
    
     et al.
-vl-163-15 | Socially enhanced Services Computing | http://videolectures.net/kolokviji_dustdar_sesc/ | instructors:Schahram Dustdar
-vl-163-16 | An Introduction to Web Science: Observing the Online World to Study the Offline World | http://videolectures.net/russir2012_weber_world/ | instructors:Ingmar Weber
-vl-163-17 | Ranking Mechanisms in Twitter-Like Forums | http://videolectures.net/wsdm2010_sarma_rmit/ | instructors:Atish Das Sarma
-vl-163-18 | Nascent Best Practices of Multilingual SEO | http://videolectures.net/w3cworkshop2011_lucardi_seo/ | instructors:Gustavo Lucardi
-vl-163-19 | Quality-Biased Ranking of Web Documents | http://videolectures.net/wsdm2011_bendersky_qbr/ | instructors:Michael Bendersky
-vl-163-20 | Understanding and Predicting Personal Navigation | http://videolectures.net/wsdm2011_teevan_upp/ | instructors:Jaime Teevan
-vl-163-21 | A Comparative Analysis of Cascade Measures for Novelty and Diversity | http://videolectures.net/wsdm2011_craswell_cac/ | instructors:Nick Craswell
-vl-163-22 | Efficient Indexing of Repeated n-Grams | http://videolectures.net/wsdm2011_huston_eir/ | instructors:Samuel Huston
-vl-163-23 | Aemoo: exploratory search based on knowledge patterns over the Semantic Web | http://videolectures.net/iswc2011_nuzzolese_semantic/ | instructors:Andrea Giovanni Nuzzolese
-vl-163-24 | Optimizing Two-Dimensional Search Results Presentation | http://videolectures.net/wsdm2011_chierichetti_otd/ | instructors:Flavio Chierichetti
-vl-163-25 | Connectivity Structure of Bipartite Graphs via the KNC-Plot | http://videolectures.net/wsdm08_vee_csbg/ | instructors:Erik Vee
-vl-163-26 | The "Real World" Web Search Problem | http://videolectures.net/mmdss07_glover_trw/ | instructors:Eric Glover
-vl-163-27 | A New Visual Search Interface for Web Browsing | http://videolectures.net/wsdm09_xu_nvsi/ | instructors:Songhua Xu, Tao Jin, Francis C.M. Lau
-vl-163-28 | Query Reformulation Using Anchor Text | http://videolectures.net/wsdm2010_dang_qrua/ | instructors:Van Dang
-vl-163-29 | Who Uses Web Search for What? And How? | http://videolectures.net/wsdm2011_weber_wuw/ | instructors:Ingmar Weber
-vl-163-30 | So.cl: An Interest Network for Informal Learning | http://videolectures.net/icwsm2012_farnham_network/ | instructors:Shelly D. Farnham
-vl-163-31 | Result Enrichment in Commerce Search using Browse Trails | http://videolectures.net/wsdm2011_panigrahi_rec/ | instructors:Debmalya Panigrahi
-vl-163-32 | Modeling Web Searcher Behavior and Interactions | http://videolectures.net/russir09_agichtein_mubi/ | instructors:Eugene Agichtein
-vl-163-33 | Detecting Duplicate Web Documents using Clickthrough Data | http://videolectures.net/wsdm2011_radlinski_duc/ | instructors:Filip Radlinski
-vl-163-34 | Analysis of Long Queries in a Large Scale Search Log | http://videolectures.net/wscd09_bendersky_alqlssl/ | instructors:Michael Bendersky, Bruce Croft
-vl-163-35 | An Experimental Comparison of Click Position-Bias Models | http://videolectures.net/wsdm08_craswell_eccp/ | instructors:Nick Craswell
-vl-163-36 | An Empirical Analysis of Sponsored Search Performance in Search Engine Advertising | http://videolectures.net/wsdm08_ghose_eassps/ | instructors:Anindya Ghose
-vl-163-37 | Query by Document | http://videolectures.net/wsdm09_yang_qbd/ | instructors:David Yin Yang, Nilesh Bansal,
+vl-163-27 | SoftRank: Optimising Non-Smooth Rank Metrics | http://videolectures.net/wsdm08_taylor_srons/ | instructors:Michael Taylor
+vl-163-28 | Query Suggestions for Mobile Search: Understanding Usage Patterns | http://videolectures.net/chi08_kamvar_qsm/ | instructors:Maryam Kamvar
+vl-163-29 | XML Compression and Search | http://videolectures.net/fws06_ferragina_xcs/ | instructors:Paolo Ferragina
+vl-163-30 | Social Web Search | http://videolectures.net/eccs07_menczer_sws/ | instructors:Filippo Menczer
+vl-163-31 | On learning regular expressions and patterns via membership and correction queries | http://videolectures.net/icgi08_kinber_olre/ | instructors:Efim Kinber
+vl-163-32 | Binary Action Search for Learning Continuous-Action Control Policies | http://videolectures.net/icml09_pazis_bas/ | instructors:Jason Pazis
+vl-163-33 | Modeling Web Searcher Behavior and Interactions | http://videolectures.net/russir09_agichtein_mubi/ | instructors:Eugene Agichtein
+vl-163-34 | Quality-Biased Ranking of Web Documents | http://videolectures.net/wsdm2011_bendersky_qbr/ | instructors:Michael Bendersky
+vl-163-35 | Can All Tags Be Used for Search? | http://videolectures.net/cikm08_bischoff_catbu/ | instructors:Kerstin Bischoff
+vl-163-36 | Understanding and Predicting Personal Navigation | http://videolectures.net/wsdm2011_teevan_upp/ | instructors:Jaime Teevan
+vl-163-37 | Product customization as Linked Data | http://videolectures.net/eswc2012_chevalier_servant_product_customization/ | instructors:Edouard Chevalier, François-Paul Servant
+vl-163-38 | Topic of the Day at Yandex Blog Search: How it Works | http://videolectures.net/russir08_volnukhin_tdybs/ | instructors:Anton Volnukhin, Andrei Mishchenko
+vl-163-39 | A Comparative Analysis of Cascade Measures for Novelty and Diversity | http://videolectures.net/wsdm2011_craswell_cac/ | instructors:Nick Craswell
+vl-163-40 | Efficient Indexing of Repeated n-Grams | http://videolectures.net/wsdm2011_huston_eir/ | instructors:Samuel Huston
+vl-163-41 | Document Representation and Query Expansion Models for Blog Recommendation | http://videolectures.net/icwsm08_arguello_drqe/ | instructors:Jaime Arguello, Jonathan Elsas,
    
     et al.
-vl-163-38 | Binary Action Search for Learning Continuous-Action Control Policies | http://videolectures.net/icml09_pazis_bas/ | instructors:Jason Pazis
-vl-163-39 | Learning to Disambiguate Search Queries from Short Sessions | http://videolectures.net/ecmlpkdd09_mihalkova_ldsqss/ | instructors:Lilyana Mihalkova
-vl-163-40 | Learning Concept Importance Using a Weighted Dependence Model | http://videolectures.net/wsdm2010_bendersky_lci/ | instructors:Michael Bendersky
-vl-163-41 | Batch Query Processing for Web Search Engines | http://videolectures.net/wsdm2011_ding_pvs/ | instructors:Shuai Ding
-vl-163-42 | Disorder Inequality: A Combinatorial Approach to Nearest Neighbor Search | http://videolectures.net/wsdm08_lifshits_dic/ | instructors:Yury Lifshits
-vl-163-43 | On learning regular expressions and patterns via membership and correction queries | http://videolectures.net/icgi08_kinber_olre/ | instructors:Efim Kinber
-vl-163-44 | Personal Name Classification in Web Queries | http://videolectures.net/wsdm08_shen_pncwq/ | instructors:Dou Shen
-vl-163-45 | Can All Tags Be Used for Search? | http://videolectures.net/cikm08_bischoff_catbu/ | instructors:Kerstin Bischoff
-vl-163-46 | Query Suggestions for Mobile Search: Understanding Usage Patterns | http://videolectures.net/chi08_kamvar_qsm/ | instructors:Maryam Kamvar
-vl-163-47 | SoftRank: Optimising Non-Smooth Rank Metrics | http://videolectures.net/wsdm08_taylor_srons/ | instructors:Michael Taylor
-vl-163-48 | Intentional Query Suggestion: Making User Goals More Explicit During Search | http://videolectures.net/wscd09_kroll_iqs/ | instructors:Markus Strohmaier, Mark Kröll, Christian Körner
-vl-163-49 | Towards Recency Ranking in Web Search | http://videolectures.net/wsdm2010_dong_trr/ | instructors:Anlei Dong
-vl-163-50 | Query Suggestions Using Query-Flow Graphs | http://videolectures.net/wscd09_castillo_qsqf/ | instructors:Paolo Boldi, Francesco Bonchi,
+vl-163-42 | Intentional Query Suggestion: Making User Goals More Explicit During Search | http://videolectures.net/wscd09_kroll_iqs/ | instructors:Markus Strohmaier, Mark Kröll, Christian Körner
+vl-163-43 | Query Suggestions Using Query-Flow Graphs | http://videolectures.net/wscd09_castillo_qsqf/ | instructors:Paolo Boldi, Francesco Bonchi,
    
     et al.
-vl-163-51 | Topic of the Day at Yandex Blog Search: How it Works | http://videolectures.net/russir08_volnukhin_tdybs/ | instructors:Anton Volnukhin, Andrei Mishchenko
-vl-163-52 | What Can Search Tell Us? A Human-Centered Perspective | http://videolectures.net/searchcomputing2012_jaimes_search/ | instructors:Alejandro Jaimes
-vl-163-53 | KMV-Peer: A Robust and Adaptive Peer-Selection Algorithm | http://videolectures.net/wsdm2011_mass_kmv/ | instructors:Yosi Mass
-vl-163-54 | Social Web Search | http://videolectures.net/eccs07_menczer_sws/ | instructors:Filippo Menczer
-vl-163-55 | Document Representation and Query Expansion Models for Blog Recommendation | http://videolectures.net/icwsm08_arguello_drqe/ | instructors:Jaime Arguello, Jonathan Elsas,
-   
-    et al.
-vl-163-56 | XML Compression and Search | http://videolectures.net/fws06_ferragina_xcs/ | instructors:Paolo Ferragina
-vl-163-57 | Leveraging Temporal Dynamics of Document Content in Relevance Ranking | http://videolectures.net/wsdm2010_elsas_ltd/ | instructors:Jonathan Elsas
-vl-163-58 | Mobile Social Search is a new frontier in search and problem solving | http://videolectures.net/searchcomputing2012_jain_mobile/ | instructors:Ramesh Jain
-vl-163-59 | Precomputing Search Features for Fast and Accurate Query Classification | http://videolectures.net/wsdm2010_konig_psf/ | instructors:Arnd Christian König
-vl-163-60 | Efficient Multiple-Click Models in Web Search | http://videolectures.net/wsdm09_guo_emcmws/ | instructors:Fan Guo, Chao Liu, Yi-Min Wang
-vl-163-61 | Changing the world of web search | http://videolectures.net/eccs08_raghavan_cwws/ | instructors:Prabhakar Raghavan
-vl-163-62 | Enterprise and Desktop search (EDS) | http://videolectures.net/russir09_dimitriev_serdyukov_chernov_eads/ | instructors:Pavel Dmitriev, Pavel Serdyukov, Sergey Chernov
-vl-163-63 | Are Clickthrough Data Adequate for Learning Web Search Rankings? | http://videolectures.net/cikm08_dou_acdaflwsr/ | instructors:Zhicheng Dou
-vl-163-64 | The Future of Web Search | http://videolectures.net/chorusfc09_speck_fws/ | instructors:Hendrik Speck
-vl-163-65 | Close Up . PC report, local organization report, WSDM 2009 | http://videolectures.net/wsdm08_broder_cupr/ | instructors:Andrei Broder
-vl-163-66 | Comparative Analysis of Clicks and Judgments for IR Evaluation | http://videolectures.net/wscd09_kamps_cacjire/ | instructors:Jaap Kamps, Marijn Koolen, Andrew Trotman
-vl-163-67 | Toward Next Generation Search: Business, Product, Science, Infrastructure, and Talent | http://videolectures.net/cikm08_chang_tngsb/ | instructors:William Chang
+vl-163-44 | Learning to Disambiguate Search Queries from Short Sessions | http://videolectures.net/ecmlpkdd09_mihalkova_ldsqss/ | instructors:Lilyana Mihalkova
+vl-163-45 | Aemoo: exploratory search based on knowledge patterns over the Semantic Web | http://videolectures.net/iswc2011_nuzzolese_semantic/ | instructors:Andrea Giovanni Nuzzolese
+vl-163-46 | Learning Concept Importance Using a Weighted Dependence Model | http://videolectures.net/wsdm2010_bendersky_lci/ | instructors:Michael Bendersky
+vl-163-47 | Towards Recency Ranking in Web Search | http://videolectures.net/wsdm2010_dong_trr/ | instructors:Anlei Dong
+vl-163-48 | Who Uses Web Search for What? And How? | http://videolectures.net/wsdm2011_weber_wuw/ | instructors:Ingmar Weber
+vl-163-49 | Result Enrichment in Commerce Search using Browse Trails | http://videolectures.net/wsdm2011_panigrahi_rec/ | instructors:Debmalya Panigrahi
+vl-163-50 | Detecting Duplicate Web Documents using Clickthrough Data | http://videolectures.net/wsdm2011_radlinski_duc/ | instructors:Filip Radlinski
+vl-163-51 | Optimizing Two-Dimensional Search Results Presentation | http://videolectures.net/wsdm2011_chierichetti_otd/ | instructors:Flavio Chierichetti
+vl-163-52 | Efficient Multiple-Click Models in Web Search | http://videolectures.net/wsdm09_guo_emcmws/ | instructors:Fan Guo, Chao Liu, Yi-Min Wang
+vl-163-53 | Leveraging Temporal Dynamics of Document Content in Relevance Ranking | http://videolectures.net/wsdm2010_elsas_ltd/ | instructors:Jonathan Elsas
+vl-163-54 | Changing the world of web search | http://videolectures.net/eccs08_raghavan_cwws/ | instructors:Prabhakar Raghavan
+vl-163-55 | Precomputing Search Features for Fast and Accurate Query Classification | http://videolectures.net/wsdm2010_konig_psf/ | instructors:Arnd Christian König
+vl-163-56 | Batch Query Processing for Web Search Engines | http://videolectures.net/wsdm2011_ding_pvs/ | instructors:Shuai Ding
+vl-163-57 | So.cl: An Interest Network for Informal Learning | http://videolectures.net/icwsm2012_farnham_network/ | instructors:Shelly D. Farnham
+vl-163-58 | KMV-Peer: A Robust and Adaptive Peer-Selection Algorithm | http://videolectures.net/wsdm2011_mass_kmv/ | instructors:Yosi Mass
+vl-163-59 | Are Clickthrough Data Adequate for Learning Web Search Rankings? | http://videolectures.net/cikm08_dou_acdaflwsr/ | instructors:Zhicheng Dou
+vl-163-60 | Close Up . PC report, local organization report, WSDM 2009 | http://videolectures.net/wsdm08_broder_cupr/ | instructors:Andrei Broder
+vl-163-61 | An Introduction to Web Science: Observing the Online World to Study the Offline World | http://videolectures.net/russir2012_weber_world/ | instructors:Ingmar Weber
+vl-163-62 | The Future of Web Search | http://videolectures.net/chorusfc09_speck_fws/ | instructors:Hendrik Speck
+vl-163-63 | Enterprise and Desktop search (EDS) | http://videolectures.net/russir09_dimitriev_serdyukov_chernov_eads/ | instructors:Pavel Dmitriev, Pavel Serdyukov, Sergey Chernov
+vl-163-64 | Comparative Analysis of Clicks and Judgments for IR Evaluation | http://videolectures.net/wscd09_kamps_cacjire/ | instructors:Jaap Kamps, Marijn Koolen, Andrew Trotman
+vl-163-65 | Image Search "Live" | http://videolectures.net/fws06_craswell_is/ | instructors:Nick Craswell
+vl-163-66 | Toward Next Generation Search: Business, Product, Science, Infrastructure, and Talent | http://videolectures.net/cikm08_chang_tngsb/ | instructors:William Chang
+vl-163-67 | What Can Search Tell Us? A Human-Centered Perspective | http://videolectures.net/searchcomputing2012_jaimes_search/ | instructors:Alejandro Jaimes
 vl-163-68 | Wikipedia Pages as Entry Points for Book Search | http://videolectures.net/wsdm09_koolen_wpepbs/ | instructors:Marijn Koolen, Gabriella Kazai, Nick Craswell
-vl-163-69 | Image Search "Live" | http://videolectures.net/fws06_craswell_is/ | instructors:Nick Craswell
-vl-163-70 | Is Wikipedia Link Structure Different? | http://videolectures.net/wsdm09_koolen_iwlsd/ | instructors:Jaap Kamps, Marijn Koolen
-vl-163-71 | Making the Web searchable | http://videolectures.net/iswc08_mika_mtws/ | instructors:Peter Mika
-vl-163-72 | Prerequisites for a successful enterprise search project | http://videolectures.net/searchcomputing2012_hawking_search/ | instructors:David Hawking
-vl-163-73 | A new tool to improve the filtering options in advanced searching | http://videolectures.net/www09_morenotorres_ntifo/ | instructors:Fernando Moreno-Torres
-vl-163-74 | Towards Web-scale content search: the SAPIR approach | http://videolectures.net/chorusfc09_zezula_tws/ | instructors:Pavel Zezula, Fausto Rabitti
-vl-163-75 | Mining the Web 2.0 to Improve Search | http://videolectures.net/ict08fr_baeza_yates_mwis/ | instructors:Ricardo Baeza-Yates
-vl-163-76 | Searching the Web with Low Space Approximations | http://videolectures.net/fws06_benczur_swlsa/ | instructors:Andras Benczur
-vl-163-77 | Feature LDA: a Supervised Topic Model for Automatic Detection of Web API Documentations from the Web | http://videolectures.net/semantic_lin_feature_lda/ | instructors:Chenghua Lin
-vl-163-78 | InFeRno - an Intelligent Framework for Recognizing Pornographic Web Pages | http://videolectures.net/ecmlpkdd2011_karavarsamis_intelligent/ | instructors:Sotiris Karavarsamis
-vl-163-79 | Entity Disambiguation using Relations extracted from Wikipedia | http://videolectures.net/akbc2010_pilz_edrw/ | instructors:Anja Pilz
-vl-163-80 | Beyond Search - Computational Intelligence for the Web - Introduction | http://videolectures.net/bsciw08_schwaighofer_intro/ | instructors:Anton Schwaighofer
+vl-163-69 | Mobile Social Search is a new frontier in search and problem solving | http://videolectures.net/searchcomputing2012_jain_mobile/ | instructors:Ramesh Jain
+vl-163-70 | Making the Web searchable | http://videolectures.net/iswc08_mika_mtws/ | instructors:Peter Mika
+vl-163-71 | Is Wikipedia Link Structure Different? | http://videolectures.net/wsdm09_koolen_iwlsd/ | instructors:Jaap Kamps, Marijn Koolen
+vl-163-72 | A new tool to improve the filtering options in advanced searching | http://videolectures.net/www09_morenotorres_ntifo/ | instructors:Fernando Moreno-Torres
+vl-163-73 | Towards Web-scale content search: the SAPIR approach | http://videolectures.net/chorusfc09_zezula_tws/ | instructors:Pavel Zezula, Fausto Rabitti
+vl-163-74 | Mining the Web 2.0 to Improve Search | http://videolectures.net/ict08fr_baeza_yates_mwis/ | instructors:Ricardo Baeza-Yates
+vl-163-75 | Searching the Web with Low Space Approximations | http://videolectures.net/fws06_benczur_swlsa/ | instructors:Andras Benczur
+vl-163-76 | Prerequisites for a successful enterprise search project | http://videolectures.net/searchcomputing2012_hawking_search/ | instructors:David Hawking
+vl-163-77 | InFeRno - an Intelligent Framework for Recognizing Pornographic Web Pages | http://videolectures.net/ecmlpkdd2011_karavarsamis_intelligent/ | instructors:Sotiris Karavarsamis
+vl-163-78 | Entity Disambiguation using Relations extracted from Wikipedia | http://videolectures.net/akbc2010_pilz_edrw/ | instructors:Anja Pilz
+vl-163-79 | Beyond Search - Computational Intelligence for the Web - Introduction | http://videolectures.net/bsciw08_schwaighofer_intro/ | instructors:Anton Schwaighofer
+vl-163-80 | Feature LDA: a Supervised Topic Model for Automatic Detection of Web API Documentations from the Web | http://videolectures.net/semantic_lin_feature_lda/ | instructors:Chenghua Lin
 vl-163-81 | Welcome and Introduction to WSDM 2009 | http://videolectures.net/wsdm09_baezayates_intro/ | instructors:Ricardo Baeza-Yates
 vl-163-82 | WSDM 2009 Program Committee Report | http://videolectures.net/wsdm09_boldi_pcreport/ | instructors:Paolo Boldi
 vl-163-83 | WSDM 2009 Closing Talk | http://videolectures.net/wsdm09_baezayates_closing/ | instructors:Ricardo Baeza-Yates
 vl-163-84 | Web Search - From The Noun to The Verb | http://videolectures.net/iswc2014_raghavan_web_search/ | instructors:Prabhakar Raghavan, Peter Mika
 vl-163-85 | Unsolved Problems in Search (and how we might approac them) | http://videolectures.net/cikm08_croft_upis/ | instructors:Bruce Croft
-vl-163-86 | Social Information Discovery | http://videolectures.net/edm2011_smyth_discovery/ | instructors:Bary Smyth
-vl-163-87 | Present, Personalized and Precise: Defining Search for Web 3.0 | http://videolectures.net/iswc09_spivack_ppap/ | instructors:Nova Spivack
+vl-163-86 | Present, Personalized and Precise: Defining Search for Web 3.0 | http://videolectures.net/iswc09_spivack_ppap/ | instructors:Nova Spivack
+vl-163-87 | Mining Queries | http://videolectures.net/ecml07_baeza_yates_mwq/ | instructors:Ricardo Baeza-Yates
 vl-163-88 | Improving Search with Semantic Technologies: Current Research Directions | http://videolectures.net/estc08_zaragoza_isst/ | instructors:Hugo Zaragoza
 vl-163-89 | Privacy in Web Search Query Log Mining | http://videolectures.net/ecmlpkdd09_jones_pwsqlm/ | instructors:Rosie Jones
-vl-163-90 | Mining Queries | http://videolectures.net/ecml07_baeza_yates_mwq/ | instructors:Ricardo Baeza-Yates
-vl-163-91 | Making Things Findable | http://videolectures.net/wims2011_mika_findable/ | instructors:Peter Mika
-vl-163-92 | Correlator: things we did, things we should do, and things we don't know how to | http://videolectures.net/semsearch09_zaragoza_twd/ | instructors:Hugo Zaragoza
+vl-163-90 | Social Information Discovery | http://videolectures.net/edm2011_smyth_discovery/ | instructors:Bary Smyth
+vl-163-91 | Correlator: things we did, things we should do, and things we don't know how to | http://videolectures.net/semsearch09_zaragoza_twd/ | instructors:Hugo Zaragoza
+vl-163-92 | Making Things Findable | http://videolectures.net/wims2011_mika_findable/ | instructors:Peter Mika

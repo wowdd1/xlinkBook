@@ -1,146 +1,146 @@
 vl-37-1 | Interview with Françoise Fogelman Soulié | http://videolectures.net/mmdss07_soulie_int/ | instructors:Davor Orlič, Françoise Fogelman Soulié
-vl-37-2 | Text Annotation using Background Knowledge | http://videolectures.net/single_rusu_text_annotation/ | instructors:Delia Rusu
-vl-37-3 | Text Classification | http://videolectures.net/mlas06_cohen_tc/ | instructors:William Cohen
-vl-37-4 | Information Retrieval and Text Mining | http://videolectures.net/mlss04_hofmann_irtm/ | instructors:Thomas Hofmann
-vl-37-5 | Automatic Discovery of Patterns in News Content | http://videolectures.net/workshops2012_cristianini_news_content/ | instructors:Nello Cristianini
-vl-37-6 | Latent Semantic Variable Models | http://videolectures.net/slsfs05_hofmann_lsvm/ | instructors:Thomas Hofmann
-vl-37-7 | Artificial Intelligence Handling Text Data | http://videolectures.net/is2012_mladenic_grobelnik_text_data/ | instructors:Dunja Mladenić, Marko Grobelnik
-vl-37-8 | Analyzing and Linking Big Data with Stratosphere | http://videolectures.net/dataforum2012_tzoumas_big_data/ | instructors:Kostas Tzoumas
-vl-37-9 | Never-Ending Language Learning (NELL) | http://videolectures.net/nipsworkshops2013_taludkar_language_learning/ | instructors:Partha Pratim Talukdar
-vl-37-10 | Semantic role frames graph-based multidocument summarization | http://videolectures.net/sikdd2011_canhasi_multidocument/ | instructors:Ercan Canhasi
-vl-37-11 | A Holistic Lexicon-Based Approach to Opinion Mining | http://videolectures.net/wsdm08_liu_hlbaom/ | instructors:Bing Liu
-vl-37-12 | Cross Language Text Classification via Multi-view Subspace Learning | http://videolectures.net/nipsworkshops2012_guo_subspace_learning/ | instructors:Yuhong Guo
-vl-37-13 | Information Retrieval and Text Mining | http://videolectures.net/mlss06au_hofmann_irtm/ | instructors:Thomas Hofmann
-vl-37-14 | Active, Semi-Supervised Learning for Textual Information Access | http://videolectures.net/iiia06_krithara_asslt/ | instructors:Anastasia Krithara
-vl-37-15 | Explanation of SVM's behaviour in text classification | http://videolectures.net/solomon_colas_esvm/ | instructors:Fabrice Colas
-vl-37-16 | Quick over of Machine Reading Approaches | http://videolectures.net/nipsworkshops2013_hruschka_machine_reading/ | instructors:Estevam R. Hruschka
-vl-37-17 | Automated Text Summarization using MEAD: Experience with the IMF Staff Reports | http://videolectures.net/iiia06_liu_eisr/ | instructors:Shuhua Liu
-vl-37-18 | Link Analysis and Text Mining : Current State of the Art and Applications for Counter Terrorism | http://videolectures.net/mmdss07_feldman_latm/ | instructors:Ronen Feldman
-vl-37-19 | Semi-supervised Learning for Text Classification | http://videolectures.net/mlss07_krithara_ssl/ | instructors:Anastasia Krithara
-vl-37-20 | Fast approximate text document clustering using Compressive Sampling | http://videolectures.net/ecmlpkdd2011_park_fast/ | instructors:Laurence A. F. Park
-vl-37-21 | Grammatical Inference | http://videolectures.net/bootcamp2010_higuera_gi/ | instructors:Colin de la Higuera
-vl-37-22 | Ontogen Software Demo | http://videolectures.net/mmdss07_fortuna_osd/ | instructors:Blaž Fortuna
-vl-37-23 | Text mining | http://videolectures.net/acai05_grobelnik_tm/ | instructors:Marko Grobelnik
-vl-37-24 | Visual Divisive Hierarchical Clustering Using k-Means | http://videolectures.net/is2012_perovsek_hierarchical_clustering/ | instructors:Matic Perovšek
-vl-37-25 | Personalized Web Search Engine for Mobile Devices | http://videolectures.net/iiia06_varma_tedbc/ | instructors:Vasudeva Varma
-vl-37-26 | Java library for support of text mining and retrieval | http://videolectures.net/basys04_bednar_jlstm/ | instructors:Peter Bednar
-vl-37-27 | Fifty ways to detect a ghostwriter | http://videolectures.net/sikdd2011_zdravkova_ghostwriter/ | instructors:Katerina Zdravkova
-vl-37-28 | OpinionMiner: A Novel Machine Learning System for Web Opinion Mining and Extraction | http://videolectures.net/kdd09_srihari_omnmlswome/ | instructors:Rohini K Srihari
-vl-37-29 | Structured Learning for Mapping Natural Language to Spatial Calculi Models | http://videolectures.net/nipsworkshops2013_kordjamshidi_calculi_models/ | instructors:Parisa Kordjamshidi
+vl-37-2 | Text Classification | http://videolectures.net/mlas06_cohen_tc/ | instructors:William Cohen
+vl-37-3 | Information Retrieval and Text Mining | http://videolectures.net/mlss04_hofmann_irtm/ | instructors:Thomas Hofmann
+vl-37-4 | Latent Semantic Variable Models | http://videolectures.net/slsfs05_hofmann_lsvm/ | instructors:Thomas Hofmann
+vl-37-5 | Text Annotation using Background Knowledge | http://videolectures.net/single_rusu_text_annotation/ | instructors:Delia Rusu
+vl-37-6 | Information Retrieval and Text Mining | http://videolectures.net/mlss06au_hofmann_irtm/ | instructors:Thomas Hofmann
+vl-37-7 | A Holistic Lexicon-Based Approach to Opinion Mining | http://videolectures.net/wsdm08_liu_hlbaom/ | instructors:Bing Liu
+vl-37-8 | Active, Semi-Supervised Learning for Textual Information Access | http://videolectures.net/iiia06_krithara_asslt/ | instructors:Anastasia Krithara
+vl-37-9 | Explanation of SVM's behaviour in text classification | http://videolectures.net/solomon_colas_esvm/ | instructors:Fabrice Colas
+vl-37-10 | Automatic Discovery of Patterns in News Content | http://videolectures.net/workshops2012_cristianini_news_content/ | instructors:Nello Cristianini
+vl-37-11 | Automated Text Summarization using MEAD: Experience with the IMF Staff Reports | http://videolectures.net/iiia06_liu_eisr/ | instructors:Shuhua Liu
+vl-37-12 | Link Analysis and Text Mining : Current State of the Art and Applications for Counter Terrorism | http://videolectures.net/mmdss07_feldman_latm/ | instructors:Ronen Feldman
+vl-37-13 | Semi-supervised Learning for Text Classification | http://videolectures.net/mlss07_krithara_ssl/ | instructors:Anastasia Krithara
+vl-37-14 | Text mining | http://videolectures.net/acai05_grobelnik_tm/ | instructors:Marko Grobelnik
+vl-37-15 | Personalized Web Search Engine for Mobile Devices | http://videolectures.net/iiia06_varma_tedbc/ | instructors:Vasudeva Varma
+vl-37-16 | Java library for support of text mining and retrieval | http://videolectures.net/basys04_bednar_jlstm/ | instructors:Peter Bednar
+vl-37-17 | Ontogen Software Demo | http://videolectures.net/mmdss07_fortuna_osd/ | instructors:Blaž Fortuna
+vl-37-18 | Predictive methods for Text mining | http://videolectures.net/mlss06tw_zhang_pmtm/ | instructors:Tong Zhang
+vl-37-19 | Semantic role frames graph-based multidocument summarization | http://videolectures.net/sikdd2011_canhasi_multidocument/ | instructors:Ercan Canhasi
+vl-37-20 | The emotional content of large-scale texts: The happiness of bloggers, song lyrics, and presidents | http://videolectures.net/cvss08_dodds_tecolst/ | instructors:Peter S. Dodds
+vl-37-21 | Analyzing and Linking Big Data with Stratosphere | http://videolectures.net/dataforum2012_tzoumas_big_data/ | instructors:Kostas Tzoumas
+vl-37-22 | Generative Latent Space Models for Text and Image | http://videolectures.net/mlas06_xing_glsmt/ | instructors:Eric P. Xing
+vl-37-23 | Artificial Intelligence Handling Text Data | http://videolectures.net/is2012_mladenic_grobelnik_text_data/ | instructors:Dunja Mladenić, Marko Grobelnik
+vl-37-24 | Automatic Labeling of Multinomial Topic Models | http://videolectures.net/kdd07_mei_alm/ | instructors:Qiaozhu Mei
+vl-37-25 | Text Mining for Ontology Learning | http://videolectures.net/training06_grobelnik_tmol/ | instructors:Marko Grobelnik, Dunja Mladenić
+vl-37-26 | OpinionMiner: A Novel Machine Learning System for Web Opinion Mining and Extraction | http://videolectures.net/kdd09_srihari_omnmlswome/ | instructors:Rohini K Srihari
+vl-37-27 | Grammatical Inference | http://videolectures.net/bootcamp2010_higuera_gi/ | instructors:Colin de la Higuera
+vl-37-28 | Does SVM Really Scale Up to Large Bag of Words Feature Spaces? | http://videolectures.net/ida07_colas_dsvmrs/ | instructors:Fabrice Colas
+vl-37-29 | Extracting Key Terms From Noisy and Multitheme Documents | http://videolectures.net/www09_grineva_ektnmd/ | instructors:Maria Grineva, Maxim Grinev, Dmitry Lizorkin
 vl-37-30 | PLSI: The True Fisher Kernel and Beyond | http://videolectures.net/ecmlpkdd09_eckard_plsitfkb/ | instructors:Emmanuel Eckard
-vl-37-31 | Predictive methods for Text mining | http://videolectures.net/mlss06tw_zhang_pmtm/ | instructors:Tong Zhang
-vl-37-32 | Semantic Text Processing | http://videolectures.net/xlike_kickoff2012_grobelnik_fortuna_rupnik_text/ | instructors:Marko Grobelnik, Blaž Fortuna, Jan Rupnik
-vl-37-33 | The emotional content of large-scale texts: The happiness of bloggers, song lyrics, and presidents | http://videolectures.net/cvss08_dodds_tecolst/ | instructors:Peter S. Dodds
-vl-37-34 | Extracting Key Terms From Noisy and Multitheme Documents | http://videolectures.net/www09_grineva_ektnmd/ | instructors:Maria Grineva, Maxim Grinev, Dmitry Lizorkin
-vl-37-35 | WIKImage: Correlated image and text datasets | http://videolectures.net/sikdd2011_pracner_wikimage/ | instructors:Doni Pracner
-vl-37-36 | Interactive alignment of Parallel Texts – a cross browser experience | http://videolectures.net/w3cworkshop2011_brelstaff_interactive/ | instructors:Gavin Brelstaff
-vl-37-37 | Exploring history through newspaper archives | http://videolectures.net/sikdd2011_skrbec_archives/ | instructors:Jasna Škrbec
-vl-37-38 | Automatic Labeling of Multinomial Topic Models | http://videolectures.net/kdd07_mei_alm/ | instructors:Qiaozhu Mei
-vl-37-39 | Generative Latent Space Models for Text and Image | http://videolectures.net/mlas06_xing_glsmt/ | instructors:Eric P. Xing
-vl-37-40 | Text Mining for Ontology Learning | http://videolectures.net/training06_grobelnik_tmol/ | instructors:Marko Grobelnik, Dunja Mladenić
-vl-37-41 | International Sentiment Analysis for News and Blogs | http://videolectures.net/icwsm08_bautin_isanb/ | instructors:Mikhail Bautin, Lohit Vijayarenu, Steven Skiena
-vl-37-42 | Does SVM Really Scale Up to Large Bag of Words Feature Spaces? | http://videolectures.net/ida07_colas_dsvmrs/ | instructors:Fabrice Colas
-vl-37-43 | Accounting for Burstiness in Topic Models | http://videolectures.net/icml09_doyle_abtm/ | instructors:Gabriel Doyle
-vl-37-44 | A Concept-based Model for Enhancing Text Categorization | http://videolectures.net/kdd07_shehata_acbm/ | instructors:Shady Shehata
-vl-37-45 | Topic Models Conditioned on Arbitrary Features with Dirichlet-multinomial Regression | http://videolectures.net/uai08_mccallum_tmcaf/ | instructors:Andrew McCallum
-vl-37-46 | Active Learning for Biomedical Citation Screening | http://videolectures.net/kdd2010_wallace_albc/ | instructors:Byron C. Wallace
-vl-37-47 | What should be extracted from text | http://videolectures.net/nipsworkshops2013_trampus_from_text/ | instructors:Mitja Trampuš
-vl-37-48 | Knowledge Extraction from Archaeological Texts | http://videolectures.net/nipsworkshops2013_re_archaeological_texts/ | instructors:Christopher Ré
-vl-37-49 | Knowledge Extraction From Business Texts | http://videolectures.net/nipsworkshops2013_hodson_business_texts/ | instructors:James Hodson
-vl-37-50 | Information Retrieval from Clinical Reports | http://videolectures.net/nipsworkshops2013_oleynik_clinical_reports/ | instructors:Michel Oleynik
-vl-37-51 | System for extracting data (facts) from large amount of unstructured documents | http://videolectures.net/bootcamp07_bradesko_sfe/ | instructors:Luka Bradeško
-vl-37-52 | Semantic Graphs Derived from Triplets with Application in Document Summarization | http://videolectures.net/sikdd08_rusu_sgdt/ | instructors:Delia Rusu
-vl-37-53 | Extracting Semantic Networks from Text via Relational Clustering | http://videolectures.net/ecmlpkdd08_kok_esnft/ | instructors:Stanley Kok, Pedro Domingos
-vl-37-54 | Ontologies and Machine Learning | http://videolectures.net/mmdss07_grobelnik_oml/ | instructors:Marko Grobelnik, Blaž Fortuna
-vl-37-55 | BoltzRank: Learning to Maximize Expected Ranking Gain | http://videolectures.net/icml09_volkovs_blmerg/ | instructors:Maksims Volkovs
-vl-37-56 | Opinion Spam and Analysis | http://videolectures.net/wsdm08_jindal_osa/ | instructors:Nitin Jindal
-vl-37-57 | Biomedical text mining | http://videolectures.net/translingeu2010_ananiadou_bmtm/ | instructors:Sophia Ananiadou
-vl-37-58 | Using linguistic information as features for text categorization | http://videolectures.net/mmdss07_raez_uli/ | instructors:Arturo Montejo Ráez
-vl-37-59 | Real-time Population of Knowledge Bases: Opportunities and Challenges | http://videolectures.net/akbcwekex2012_nakashole_knowledge_bases/ | instructors:Ndapandula Nakashole
-vl-37-60 | Exploiting Physico-Chemical Properties in String-Kernels | http://videolectures.net/nipsworkshops09_toussaint_epcp/ | instructors:Nora Toussaint
-vl-37-61 | Diversifying Search Results | http://videolectures.net/wsdm09_ieong_dsr/ | instructors:Rakesh Agrawal, Sreenivas Gollapudi,
+vl-37-31 | A Concept-based Model for Enhancing Text Categorization | http://videolectures.net/kdd07_shehata_acbm/ | instructors:Shady Shehata
+vl-37-32 | System for extracting data (facts) from large amount of unstructured documents | http://videolectures.net/bootcamp07_bradesko_sfe/ | instructors:Luka Bradeško
+vl-37-33 | International Sentiment Analysis for News and Blogs | http://videolectures.net/icwsm08_bautin_isanb/ | instructors:Mikhail Bautin, Lohit Vijayarenu, Steven Skiena
+vl-37-34 | Ontologies and Machine Learning | http://videolectures.net/mmdss07_grobelnik_oml/ | instructors:Marko Grobelnik, Blaž Fortuna
+vl-37-35 | Topic Models Conditioned on Arbitrary Features with Dirichlet-multinomial Regression | http://videolectures.net/uai08_mccallum_tmcaf/ | instructors:Andrew McCallum
+vl-37-36 | Fast approximate text document clustering using Compressive Sampling | http://videolectures.net/ecmlpkdd2011_park_fast/ | instructors:Laurence A. F. Park
+vl-37-37 | Using linguistic information as features for text categorization | http://videolectures.net/mmdss07_raez_uli/ | instructors:Arturo Montejo Ráez
+vl-37-38 | Opinion Spam and Analysis | http://videolectures.net/wsdm08_jindal_osa/ | instructors:Nitin Jindal
+vl-37-39 | Extracting Semantic Networks from Text via Relational Clustering | http://videolectures.net/ecmlpkdd08_kok_esnft/ | instructors:Stanley Kok, Pedro Domingos
+vl-37-40 | Semantic Graphs Derived from Triplets with Application in Document Summarization | http://videolectures.net/sikdd08_rusu_sgdt/ | instructors:Delia Rusu
+vl-37-41 | Accounting for Burstiness in Topic Models | http://videolectures.net/icml09_doyle_abtm/ | instructors:Gabriel Doyle
+vl-37-42 | Mixtures of Hierarchical Topics with Pachinko Allo cation | http://videolectures.net/icml07_mimno_moht/ | instructors:David Mimno
+vl-37-43 | Text Mining for Ontology Learning | http://videolectures.net/sab04_grobelnik_tmol/ | instructors:Marko Grobelnik, Dunja Mladenić
+vl-37-44 | Cross Language Text Classification via Multi-view Subspace Learning | http://videolectures.net/nipsworkshops2012_guo_subspace_learning/ | instructors:Yuhong Guo
+vl-37-45 | Fifty ways to detect a ghostwriter | http://videolectures.net/sikdd2011_zdravkova_ghostwriter/ | instructors:Katerina Zdravkova
+vl-37-46 | BoltzRank: Learning to Maximize Expected Ranking Gain | http://videolectures.net/icml09_volkovs_blmerg/ | instructors:Maksims Volkovs
+vl-37-47 | On TREC Blog Track | http://videolectures.net/icwsm08_soboroff_trec/ | instructors:Ian Soboroff, Iadh Ounis, Craig Macdonald
+vl-37-48 | Incrementally learning an Incremental parser | http://videolectures.net/mlcs07_seginer_ili/ | instructors:Yoav Seginer
+vl-37-49 | Interactive alignment of Parallel Texts – a cross browser experience | http://videolectures.net/w3cworkshop2011_brelstaff_interactive/ | instructors:Gavin Brelstaff
+vl-37-50 | Diversifying Search Results | http://videolectures.net/wsdm09_ieong_dsr/ | instructors:Rakesh Agrawal, Sreenivas Gollapudi,
    
     et al.
-vl-37-62 | Named Entity Mining from Click-Through Data Using Weakly Supervised Latent Dirichlet Allocation | http://videolectures.net/kdd09_yang_nemctduwslda/ | instructors:Shuang-Hong Yang, Gu Xu
-vl-37-63 | Pseudo-Label Generation for Multi-Label Text Classification | http://videolectures.net/cidu2011_khan_classification/ | instructors:Latifur Khan
-vl-37-64 | Text Mining and Light Weight Semantics | http://videolectures.net/active09_grobelnik_tmlws/ | instructors:Marko Grobelnik
-vl-37-65 | Mixtures of Hierarchical Topics with Pachinko Allo cation | http://videolectures.net/icml07_mimno_moht/ | instructors:David Mimno
-vl-37-66 | Collectively Representing Semi-Structured Data from the Web | http://videolectures.net/akbcwekex2012_dalvi_semi_structured_data/ | instructors:Bhavana Dalvi
-vl-37-67 | Analysis and prediction of bug duplicates in KDE bug tracking system | http://videolectures.net/sikdd2011_leban_duplicates/ | instructors:Gregor Leban
-vl-37-68 | On TREC Blog Track | http://videolectures.net/icwsm08_soboroff_trec/ | instructors:Ian Soboroff, Iadh Ounis, Craig Macdonald
-vl-37-69 | Latent Topic Models for Hypertext | http://videolectures.net/uai08_gruber_ltm/ | instructors:Amit Gruber
-vl-37-70 | Text Mining for Ontology Learning | http://videolectures.net/sab04_grobelnik_tmol/ | instructors:Marko Grobelnik, Dunja Mladenić
-vl-37-71 | Creative Knowledge Discovery by Literature Outlier Detection | http://videolectures.net/ecmlpkdd09_petric_ckdlod/ | instructors:Ingrid Petrič
-vl-37-72 | High-coverage extraction of semantic assertions from text | http://videolectures.net/sikdd2011_mladenic_assertions/ | instructors:Dunja Mladenić
-vl-37-73 | Incrementally learning an Incremental parser | http://videolectures.net/mlcs07_seginer_ili/ | instructors:Yoav Seginer
-vl-37-74 | Query by Document | http://videolectures.net/wsdm09_yang_qbd/ | instructors:David Yin Yang, Nilesh Bansal,
+vl-37-51 | Latent Topic Models for Hypertext | http://videolectures.net/uai08_gruber_ltm/ | instructors:Amit Gruber
+vl-37-52 | Active Learning for Biomedical Citation Screening | http://videolectures.net/kdd2010_wallace_albc/ | instructors:Byron C. Wallace
+vl-37-53 | Semantic Text Processing | http://videolectures.net/xlike_kickoff2012_grobelnik_fortuna_rupnik_text/ | instructors:Marko Grobelnik, Blaž Fortuna, Jan Rupnik
+vl-37-54 | Named Entity Mining from Click-Through Data Using Weakly Supervised Latent Dirichlet Allocation | http://videolectures.net/kdd09_yang_nemctduwslda/ | instructors:Shuang-Hong Yang, Gu Xu
+vl-37-55 | Learning Textual Entailment from Examples | http://videolectures.net/pcw06_zanzotto_ltee/ | instructors:Fabio Massimo Zanzotto
+vl-37-56 | WIKImage: Correlated image and text datasets | http://videolectures.net/sikdd2011_pracner_wikimage/ | instructors:Doni Pracner
+vl-37-57 | Exploiting Physico-Chemical Properties in String-Kernels | http://videolectures.net/nipsworkshops09_toussaint_epcp/ | instructors:Nora Toussaint
+vl-37-58 | Text Categorization | http://videolectures.net/mlss05au_patrick_tc/ | instructors:Jon David Patrick
+vl-37-59 | Biomedical text mining | http://videolectures.net/translingeu2010_ananiadou_bmtm/ | instructors:Sophia Ananiadou
+vl-37-60 | Exploring history through newspaper archives | http://videolectures.net/sikdd2011_skrbec_archives/ | instructors:Jasna Škrbec
+vl-37-61 | Text Mining and Light Weight Semantics | http://videolectures.net/active09_grobelnik_tmlws/ | instructors:Marko Grobelnik
+vl-37-62 | Recovering Implicit Thread Structure in Newsgroup Style Conversations | http://videolectures.net/icwsm08_wang_rits/ | instructors:Yi-Chia Wang, Mahesh Joshi,
    
     et al.
-vl-37-75 | Analyzing Word Frequencies in Large Text Corpora using Inter-arrival Times and Bootstrapping | http://videolectures.net/ecmlpkdd2011_lijffijt_bootstrapping/ | instructors:Jefrey Lijffijt
-vl-37-76 | Recovering Implicit Thread Structure in Newsgroup Style Conversations | http://videolectures.net/icwsm08_wang_rits/ | instructors:Yi-Chia Wang, Mahesh Joshi,
+vl-37-63 | Latent Semantic Grammar Induction | http://videolectures.net/mlcs07_olney_lsg/ | instructors:Andrew Olney
+vl-37-64 | Query by Document | http://videolectures.net/wsdm09_yang_qbd/ | instructors:David Yin Yang, Nilesh Bansal,
    
     et al.
-vl-37-77 | Scalable Detection of Sentiment-Based Contradictions | http://videolectures.net/diversiweb2011_tsytsarau_sds/ | instructors:Mikalai Tsytsarau
-vl-37-78 | Latent Space Domain Transfer between High Dimensional Overlapping Distributions | http://videolectures.net/www09_xie_lsdt/ | instructors:Sihong Xie, Wei Fan,
+vl-37-65 | Similarity Analysis by Data Compression | http://videolectures.net/psm08_grunwald_sad/ | instructors:Peter Grünwald, Petri Myllymäki
+vl-37-66 | Creative Knowledge Discovery by Literature Outlier Detection | http://videolectures.net/ecmlpkdd09_petric_ckdlod/ | instructors:Ingrid Petrič
+vl-37-67 | Visual Divisive Hierarchical Clustering Using k-Means | http://videolectures.net/is2012_perovsek_hierarchical_clustering/ | instructors:Matic Perovšek
+vl-37-68 | Dynamic hybrid clustering of bioinformatics by incorporating text mining and citation analysis | http://videolectures.net/kdd07_janssens_dhc/ | instructors:Frizo Janssens
+vl-37-69 | Recognizing Textual Entailment with LCC´s GROUNDHOG System | http://videolectures.net/pcw06_hickl_rtelg/ | instructors:Andrew Hickl
+vl-37-70 | Industry 3: How Co-Occurrence can Complement Semantics? | http://videolectures.net/iswc06_popov_hoccs/ | instructors:Atanas Kiryakov, Borislav Popov
+vl-37-71 | Text Garden | http://videolectures.net/stw07_grobelnik_tg/ | instructors:Marko Grobelnik
+vl-37-72 | Latent Space Domain Transfer between High Dimensional Overlapping Distributions | http://videolectures.net/www09_xie_lsdt/ | instructors:Sihong Xie, Wei Fan,
    
     et al.
-vl-37-79 | Supervised Ranking of Syntactic Configurations for Finding Targets of Sentiment Expressions | http://videolectures.net/icwsm09_kessler_srsc/ | instructors:Jason Kessler
-vl-37-80 | Learning Textual Entailment from Examples | http://videolectures.net/pcw06_zanzotto_ltee/ | instructors:Fabio Massimo Zanzotto
-vl-37-81 | Similarity Analysis by Data Compression | http://videolectures.net/psm08_grunwald_sad/ | instructors:Peter Grünwald, Petri Myllymäki
-vl-37-82 | Latent Semantic Grammar Induction | http://videolectures.net/mlcs07_olney_lsg/ | instructors:Andrew Olney
-vl-37-83 | Text Categorization | http://videolectures.net/mlss05au_patrick_tc/ | instructors:Jon David Patrick
-vl-37-84 | Transfer Learning With Adaptive Regularizers | http://videolectures.net/ecmlpkdd2011_kloft_regularizers/ | instructors:Marius Kloft
-vl-37-85 | The Wisdom of the Crowds to Assist Never Ending Learning Tasks through Conversing Learning | http://videolectures.net/nipsworkshops2013_hruschka_learning_tasks/ | instructors:Estevam R. Hruschka
-vl-37-86 | Acquisition of Lexical Knowledge from N Grams | http://videolectures.net/clspss09_sekine_lnl/ | instructors:Satoshi Sekine
-vl-37-87 | Efficient Methods for Topic Model Inference on Streaming Document Collections | http://videolectures.net/kdd09_mimno_emft/ | instructors:David Mimno
-vl-37-88 | Dynamic hybrid clustering of bioinformatics by incorporating text mining and citation analysis | http://videolectures.net/kdd07_janssens_dhc/ | instructors:Frizo Janssens
-vl-37-89 | MiTexCube: MicroTextCluster Cube for Online Analysis of Text Cells | http://videolectures.net/cidu2011_zhang_mitexcube/ | instructors:Duo Zhang
-vl-37-90 | Collection Fusion | http://videolectures.net/clspss09_yarowsky_collfusion/ | instructors:David Yarowsky
-vl-37-91 | Quality-Aware Collaborative Question Answering: Methods and Evaluation | http://videolectures.net/wsdm09_lim_qcqa/ | instructors:Maggy Anastasia Suryanto, Ee-Peng Lim,
+vl-37-73 | Supervised Ranking of Syntactic Configurations for Finding Targets of Sentiment Expressions | http://videolectures.net/icwsm09_kessler_srsc/ | instructors:Jason Kessler
+vl-37-74 | Quality-Aware Collaborative Question Answering: Methods and Evaluation | http://videolectures.net/wsdm09_lim_qcqa/ | instructors:Maggy Anastasia Suryanto, Ee-Peng Lim,
    
     et al.
-vl-37-92 | Exploring the space of coding matrix classifiers for hierarchical multiclass text categorization | http://videolectures.net/sikdd2011_brank_hierarchical/ | instructors:Janez Brank
-vl-37-93 | Human-Machine Cooperation: User Corrections for AKBC | http://videolectures.net/akbcwekex2012_wick_human_machine/ | instructors:Michael L. Wick
-vl-37-94 | Recognizing Textual Entailment with LCC´s GROUNDHOG System | http://videolectures.net/pcw06_hickl_rtelg/ | instructors:Andrew Hickl
-vl-37-95 | The META-NET Language White Paper Series: Overview and Key Results | http://videolectures.net/metaforum2012_sandford_pedersen_language/ | instructors:Bolette Sandford Pedersen
-vl-37-96 | Industry 3: How Co-Occurrence can Complement Semantics? | http://videolectures.net/iswc06_popov_hoccs/ | instructors:Atanas Kiryakov, Borislav Popov
-vl-37-97 | Learning languages from bounded resources: the case of the DFA and the balls of strings | http://videolectures.net/icgi08_higuera_llbr/ | instructors:Colin de la Higuera
-vl-37-98 | What are they blogging about? Personality, topic and motivation in blogs | http://videolectures.net/icwsm09_gill_watba/ | instructors:Alastair J. Gill
-vl-37-99 | Text Garden | http://videolectures.net/stw07_grobelnik_tg/ | instructors:Marko Grobelnik
-vl-37-100 | Connections between the Lines: Augmenting Social Networks with Text | http://videolectures.net/kdd09_chang_cbtl/ | instructors:Jonathan Chang
-vl-37-101 | Characterizing and Understanding the Impact of Temporal Evolution on Document Classification | http://videolectures.net/wsdm08_meira_jr_cuite/ | instructors:Wagner Meira Jr.
-vl-37-102 | Towards Combining Web Classification and Web Information Extraction: A Case Study | http://videolectures.net/kdd09_luo_tcwcwiecs/ | instructors:Ping Luo
-vl-37-103 | Can We Learn a Template-Independent Wrapper for News Article Extraction from a Single Training Site? | http://videolectures.net/kdd09_wang_cwltiwnaests/ | instructors:Junfeng Wang
-vl-37-104 | Multiscale Topic Tomography | http://videolectures.net/kdd07_nallapati_mtt/ | instructors:Ramesh Nallapati
-vl-37-105 | Finding Text Reuse on the Web | http://videolectures.net/wsdm09_bendersky_ftr/ | instructors:Michael Bendersky, Bruce Croft
-vl-37-106 | Extracting Discriminative Concepts for Domain Adaptation in Text Mining | http://videolectures.net/kdd09_chen_edcf/ | instructors:Bo Chen
-vl-37-107 | Gidoc | http://videolectures.net/icml2010_ferrer_gidoc/ | instructors:Jesus Andres-Ferrer
-vl-37-108 | Joint Mining of Biological Text and Images: Case Studies | http://videolectures.net/mlas06_murphy_cs/ | instructors:Robert Murphy
-vl-37-109 | Robust Textual Inference Using Diverse Knowledge Sources | http://videolectures.net/pcw05_raina_rtiud/ | instructors:Rajat Raina
-vl-37-110 | Structured Correspondence Topic Models for Mining Captioned Figures in Biological Literature | http://videolectures.net/kdd09_ahmed_sctm/ | instructors:Amr Ahmed
-vl-37-111 | The WikiPedia | http://videolectures.net/stw07_holozan_w/ | instructors:Peter Holozan
-vl-37-112 | Name-Ethnicity Classification from Open Sources | http://videolectures.net/kdd09_male_nec/ | instructors:Swapna Male
-vl-37-113 | Learning Hierarchical Multi-Category Text Classification Models | http://videolectures.net/icml05_rousu_lhmct/ | instructors:Juho Rousu
-vl-37-114 | Leveraging Higher Order Dependencies Between Features for Text Classification | http://videolectures.net/ecmlpkdd09_pottenger_lhodbftc/ | instructors:William M. Pottenger
-vl-37-115 | Mining Peculiar Compositions of Frequent Substrings from Sparse Text Data Using Background Texts | http://videolectures.net/ecmlpkdd09_ikeda_mpcfsstdubt/ | instructors:Daisuke Ikeda
-vl-37-116 | Integrated Network Construction Using Event Based Text Mining | http://videolectures.net/mlsb09_saeys_incu/ | instructors:Yvan Saeys
-vl-37-117 | Towards a Universal Marketplace over the Web: Statistical Multi-label Classification of Service Provider Forms with Simulated Annealing | http://videolectures.net/kdd09_ozonat_tumwsmlcspfsa/ | instructors:Kivanc Ozonat
-vl-37-118 | The use of machine translation tools for cross-lingual text-mining | http://videolectures.net/icml05_fortuna_tuo/ | instructors:Blaž Fortuna
-vl-37-119 | Text Mining in Biological Texts | http://videolectures.net/mlss07_klinger_tmi/ | instructors:Roman Klinger
-vl-37-120 | "BisoNet" Generation Using Textual Data | http://videolectures.net/ecmlpkdd09_segond_bngutd/ | instructors:Marc Segond
-vl-37-121 | Text mining for semantically enabled social browsing | http://videolectures.net/psm08_ferlez_tms/ | instructors:Jure Ferlež
-vl-37-122 | Filtering Multi-Lingual Terrorist Content with Graph-Theoretic Classifi-cation Tools | http://videolectures.net/mmdss07_last_fmlt/ | instructors:Mark Last
-vl-37-123 | Combinatory Hybrid Elementary Analysis of Text | http://videolectures.net/pcw06_atwell_cheat/ | instructors:Eric Atwell
-vl-37-124 | Sparsity analsysis of term weighting schemes and application to text classification | http://videolectures.net/slsfs05_brank_satws/ | instructors:Janez Brank
-vl-37-125 | Koliko lahko z računalnikom razumemo besedilo? | http://videolectures.net/rtk09_grobelnik_rrb/ | instructors:Marko Grobelnik, Mitja Jermol
-vl-37-126 | Novelty Detection in Patient Histories: Experiments with Measures Based on Text Compression | http://videolectures.net/ida07_edsberg_ndiph/ | instructors:Ole Edsberg
-vl-37-127 | Information Genealogy: Uncovering the Flow of Ideas in Non-Hyperlinked Document Databases | http://videolectures.net/kdd07_shaparenko_ig/ | instructors:Benyah Shaparenko
-vl-37-128 | Recognition and Disambiguation of geographical references in text | http://videolectures.net/mmdss07_steinberger_rdgr/ | instructors:Ralf Steinberger
-vl-37-129 | Upping the Baseline for High-Precision Text Classifiers | http://videolectures.net/kdd07_kolcz_utbfhp/ | instructors:Aleksander Kołcz
-vl-37-130 | Text Categorisation Using Document Profiling | http://videolectures.net/ecml03_pfahringer_tcudp/ | instructors:Bernhard Pfahringer
-vl-37-131 | Textual inference data set | http://videolectures.net/pcw06_bos_tid/ | instructors:Johan Bos
-vl-37-132 | What Syntax can Contribute in Entailment Task | http://videolectures.net/pcw05_dolan_wscce/ | instructors:Bill Dolan
-vl-37-133 | Classical Aproach Interpretation | http://videolectures.net/pcw06_dagan_cai/ | instructors:Ido Dagan
+vl-37-75 | Efficient Methods for Topic Model Inference on Streaming Document Collections | http://videolectures.net/kdd09_mimno_emft/ | instructors:David Mimno
+vl-37-76 | Learning languages from bounded resources: the case of the DFA and the balls of strings | http://videolectures.net/icgi08_higuera_llbr/ | instructors:Colin de la Higuera
+vl-37-77 | Characterizing and Understanding the Impact of Temporal Evolution on Document Classification | http://videolectures.net/wsdm08_meira_jr_cuite/ | instructors:Wagner Meira Jr.
+vl-37-78 | Multiscale Topic Tomography | http://videolectures.net/kdd07_nallapati_mtt/ | instructors:Ramesh Nallapati
+vl-37-79 | Joint Mining of Biological Text and Images: Case Studies | http://videolectures.net/mlas06_murphy_cs/ | instructors:Robert Murphy
+vl-37-80 | Analysis and prediction of bug duplicates in KDE bug tracking system | http://videolectures.net/sikdd2011_leban_duplicates/ | instructors:Gregor Leban
+vl-37-81 | Acquisition of Lexical Knowledge from N Grams | http://videolectures.net/clspss09_sekine_lnl/ | instructors:Satoshi Sekine
+vl-37-82 | Robust Textual Inference Using Diverse Knowledge Sources | http://videolectures.net/pcw05_raina_rtiud/ | instructors:Rajat Raina
+vl-37-83 | What are they blogging about? Personality, topic and motivation in blogs | http://videolectures.net/icwsm09_gill_watba/ | instructors:Alastair J. Gill
+vl-37-84 | Real-time Population of Knowledge Bases: Opportunities and Challenges | http://videolectures.net/akbcwekex2012_nakashole_knowledge_bases/ | instructors:Ndapandula Nakashole
+vl-37-85 | Collection Fusion | http://videolectures.net/clspss09_yarowsky_collfusion/ | instructors:David Yarowsky
+vl-37-86 | High-coverage extraction of semantic assertions from text | http://videolectures.net/sikdd2011_mladenic_assertions/ | instructors:Dunja Mladenić
+vl-37-87 | Scalable Detection of Sentiment-Based Contradictions | http://videolectures.net/diversiweb2011_tsytsarau_sds/ | instructors:Mikalai Tsytsarau
+vl-37-88 | The WikiPedia | http://videolectures.net/stw07_holozan_w/ | instructors:Peter Holozan
+vl-37-89 | Learning Hierarchical Multi-Category Text Classification Models | http://videolectures.net/icml05_rousu_lhmct/ | instructors:Juho Rousu
+vl-37-90 | Pseudo-Label Generation for Multi-Label Text Classification | http://videolectures.net/cidu2011_khan_classification/ | instructors:Latifur Khan
+vl-37-91 | Connections between the Lines: Augmenting Social Networks with Text | http://videolectures.net/kdd09_chang_cbtl/ | instructors:Jonathan Chang
+vl-37-92 | The use of machine translation tools for cross-lingual text-mining | http://videolectures.net/icml05_fortuna_tuo/ | instructors:Blaž Fortuna
+vl-37-93 | Finding Text Reuse on the Web | http://videolectures.net/wsdm09_bendersky_ftr/ | instructors:Michael Bendersky, Bruce Croft
+vl-37-94 | Collectively Representing Semi-Structured Data from the Web | http://videolectures.net/akbcwekex2012_dalvi_semi_structured_data/ | instructors:Bhavana Dalvi
+vl-37-95 | Analyzing Word Frequencies in Large Text Corpora using Inter-arrival Times and Bootstrapping | http://videolectures.net/ecmlpkdd2011_lijffijt_bootstrapping/ | instructors:Jefrey Lijffijt
+vl-37-96 | Towards Combining Web Classification and Web Information Extraction: A Case Study | http://videolectures.net/kdd09_luo_tcwcwiecs/ | instructors:Ping Luo
+vl-37-97 | Can We Learn a Template-Independent Wrapper for News Article Extraction from a Single Training Site? | http://videolectures.net/kdd09_wang_cwltiwnaests/ | instructors:Junfeng Wang
+vl-37-98 | Text Mining in Biological Texts | http://videolectures.net/mlss07_klinger_tmi/ | instructors:Roman Klinger
+vl-37-99 | Extracting Discriminative Concepts for Domain Adaptation in Text Mining | http://videolectures.net/kdd09_chen_edcf/ | instructors:Bo Chen
+vl-37-100 | Transfer Learning With Adaptive Regularizers | http://videolectures.net/ecmlpkdd2011_kloft_regularizers/ | instructors:Marius Kloft
+vl-37-101 | Structured Correspondence Topic Models for Mining Captioned Figures in Biological Literature | http://videolectures.net/kdd09_ahmed_sctm/ | instructors:Amr Ahmed
+vl-37-102 | Exploring the space of coding matrix classifiers for hierarchical multiclass text categorization | http://videolectures.net/sikdd2011_brank_hierarchical/ | instructors:Janez Brank
+vl-37-103 | Name-Ethnicity Classification from Open Sources | http://videolectures.net/kdd09_male_nec/ | instructors:Swapna Male
+vl-37-104 | Gidoc | http://videolectures.net/icml2010_ferrer_gidoc/ | instructors:Jesus Andres-Ferrer
+vl-37-105 | Leveraging Higher Order Dependencies Between Features for Text Classification | http://videolectures.net/ecmlpkdd09_pottenger_lhodbftc/ | instructors:William M. Pottenger
+vl-37-106 | Mining Peculiar Compositions of Frequent Substrings from Sparse Text Data Using Background Texts | http://videolectures.net/ecmlpkdd09_ikeda_mpcfsstdubt/ | instructors:Daisuke Ikeda
+vl-37-107 | Text mining for semantically enabled social browsing | http://videolectures.net/psm08_ferlez_tms/ | instructors:Jure Ferlež
+vl-37-108 | Integrated Network Construction Using Event Based Text Mining | http://videolectures.net/mlsb09_saeys_incu/ | instructors:Yvan Saeys
+vl-37-109 | Towards a Universal Marketplace over the Web: Statistical Multi-label Classification of Service Provider Forms with Simulated Annealing | http://videolectures.net/kdd09_ozonat_tumwsmlcspfsa/ | instructors:Kivanc Ozonat
+vl-37-110 | Combinatory Hybrid Elementary Analysis of Text | http://videolectures.net/pcw06_atwell_cheat/ | instructors:Eric Atwell
+vl-37-111 | Sparsity analsysis of term weighting schemes and application to text classification | http://videolectures.net/slsfs05_brank_satws/ | instructors:Janez Brank
+vl-37-112 | Filtering Multi-Lingual Terrorist Content with Graph-Theoretic Classifi-cation Tools | http://videolectures.net/mmdss07_last_fmlt/ | instructors:Mark Last
+vl-37-113 | Never-Ending Language Learning (NELL) | http://videolectures.net/nipsworkshops2013_taludkar_language_learning/ | instructors:Partha Pratim Talukdar
+vl-37-114 | MiTexCube: MicroTextCluster Cube for Online Analysis of Text Cells | http://videolectures.net/cidu2011_zhang_mitexcube/ | instructors:Duo Zhang
+vl-37-115 | "BisoNet" Generation Using Textual Data | http://videolectures.net/ecmlpkdd09_segond_bngutd/ | instructors:Marc Segond
+vl-37-116 | Human-Machine Cooperation: User Corrections for AKBC | http://videolectures.net/akbcwekex2012_wick_human_machine/ | instructors:Michael L. Wick
+vl-37-117 | Novelty Detection in Patient Histories: Experiments with Measures Based on Text Compression | http://videolectures.net/ida07_edsberg_ndiph/ | instructors:Ole Edsberg
+vl-37-118 | The META-NET Language White Paper Series: Overview and Key Results | http://videolectures.net/metaforum2012_sandford_pedersen_language/ | instructors:Bolette Sandford Pedersen
+vl-37-119 | Information Genealogy: Uncovering the Flow of Ideas in Non-Hyperlinked Document Databases | http://videolectures.net/kdd07_shaparenko_ig/ | instructors:Benyah Shaparenko
+vl-37-120 | Upping the Baseline for High-Precision Text Classifiers | http://videolectures.net/kdd07_kolcz_utbfhp/ | instructors:Aleksander Kołcz
+vl-37-121 | Koliko lahko z računalnikom razumemo besedilo? | http://videolectures.net/rtk09_grobelnik_rrb/ | instructors:Marko Grobelnik, Mitja Jermol
+vl-37-122 | Recognition and Disambiguation of geographical references in text | http://videolectures.net/mmdss07_steinberger_rdgr/ | instructors:Ralf Steinberger
+vl-37-123 | Quick over of Machine Reading Approaches | http://videolectures.net/nipsworkshops2013_hruschka_machine_reading/ | instructors:Estevam R. Hruschka
+vl-37-124 | Text Categorisation Using Document Profiling | http://videolectures.net/ecml03_pfahringer_tcudp/ | instructors:Bernhard Pfahringer
+vl-37-125 | Textual inference data set | http://videolectures.net/pcw06_bos_tid/ | instructors:Johan Bos
+vl-37-126 | What Syntax can Contribute in Entailment Task | http://videolectures.net/pcw05_dolan_wscce/ | instructors:Bill Dolan
+vl-37-127 | Structured Learning for Mapping Natural Language to Spatial Calculi Models | http://videolectures.net/nipsworkshops2013_kordjamshidi_calculi_models/ | instructors:Parisa Kordjamshidi
+vl-37-128 | Classical Aproach Interpretation | http://videolectures.net/pcw06_dagan_cai/ | instructors:Ido Dagan
+vl-37-129 | Knowledge Extraction From Business Texts | http://videolectures.net/nipsworkshops2013_hodson_business_texts/ | instructors:James Hodson
+vl-37-130 | What should be extracted from text | http://videolectures.net/nipsworkshops2013_trampus_from_text/ | instructors:Mitja Trampuš
+vl-37-131 | Knowledge Extraction from Archaeological Texts | http://videolectures.net/nipsworkshops2013_re_archaeological_texts/ | instructors:Christopher Ré
+vl-37-132 | Information Retrieval from Clinical Reports | http://videolectures.net/nipsworkshops2013_oleynik_clinical_reports/ | instructors:Michel Oleynik
+vl-37-133 | The Wisdom of the Crowds to Assist Never Ending Learning Tasks through Conversing Learning | http://videolectures.net/nipsworkshops2013_hruschka_learning_tasks/ | instructors:Estevam R. Hruschka
 vl-37-134 | Semantic Construction Grammars | http://videolectures.net/nipsworkshops2013_witbrock_construction_grammars/ | instructors:Michael Witbrock
 vl-37-135 | Učenje povzemanja besedil s pretvorbo v semantično mrežo | http://videolectures.net/single_leskovec_diploma/ | instructors:Jure Leskovec
 vl-37-136 | Introduction to the Machine Learning over Text & Images - Autumn School by Eric Xing | http://videolectures.net/mlas06_xing_imlot/ | instructors:Eric P. Xing
@@ -148,22 +148,22 @@ vl-37-137 | Encoding prior knowledge in text processing | http://videolectures.n
 vl-37-138 | Synergies in learning words and their referents | http://videolectures.net/nips2010_johnson_slw/ | instructors:Mark Johnson
 vl-37-139 | TRUMIT: A Tool to Support Large-Scale Mining of Text Association Rules | http://videolectures.net/ecmlpkdd2011_tsatsaronis_mining/ | instructors:George Tsatsaronis
 vl-37-140 | Protecting Sensitive Topics in Text Documents with PROTEXTOR | http://videolectures.net/ecmlpkdd09_cumby_pst/ | instructors:Chad Cumby
-vl-37-141 | Large Scale Learning at Twitter | http://videolectures.net/eswc2012_kolcz_twitter/ | instructors:Aleksander Kołcz, Marko Grobelnik
-vl-37-142 | Challenges in Building Large-Scale Information Retrieval Systems | http://videolectures.net/wsdm09_dean_cblirs/ | instructors:Jeffrey Dean
+vl-37-141 | Challenges in Building Large-Scale Information Retrieval Systems | http://videolectures.net/wsdm09_dean_cblirs/ | instructors:Jeffrey Dean
+vl-37-142 | Large Scale Learning at Twitter | http://videolectures.net/eswc2012_kolcz_twitter/ | instructors:Aleksander Kołcz, Marko Grobelnik
 vl-37-143 | Never Ending Language Learning | http://videolectures.net/akbcwekex2012_mitchell_language_learning/ | instructors:Tom Mitchell
 vl-37-144 | Analyzing Text and Social Network Data with Probabilistic Models | http://videolectures.net/ecmlpkdd2012_smyth_probabilistic_models/ | instructors:Padhraic Smyth
 vl-37-145 | Open Information Extraction from the Web | http://videolectures.net/akbcwekex2012_etzioni_information_extraction/ | instructors:Oren Etzioni
 vl-37-146 | Low-Pass Semantic | http://videolectures.net/metaforum2012_pereira_semantic/ | instructors:Fernando C. N. Pereira
-vl-37-147 | Fast rates for the multi-armed bandit | http://videolectures.net/nipsworkshops2013_bubeck_fast_rates/ | instructors:Sébastien Bubeck
-vl-37-148 | Guidelines for Multilingual Linked Data | http://videolectures.net/wims2013_gomez_perez_multilingual_linked_data/ | instructors:Asunción Gómez-Pérez
-vl-37-149 | Low-Pass Semantics | http://videolectures.net/akbcwekex2012_pereira_semantics/ | instructors:Fernando C. N. Pereira
-vl-37-150 | Knowledge Base Construction with Epistemological Databases | http://videolectures.net/akbcwekex2012_mccallum_base_construction/ | instructors:Andrew McCallum
-vl-37-151 | Europe Media Monitor (EMM) System | http://videolectures.net/wapa2010_goot_emms/ | instructors:Erik van der Goot
-vl-37-152 | Building and Using Knowledge Bases | http://videolectures.net/akbcwekex2012_staab_knowledge_bases/ | instructors:Steffen Staab
-vl-37-153 | Organizing Harvested Knowledge | http://videolectures.net/akbcwekex2012_hovy_harvested_knowledge/ | instructors:Eduard Hovy
-vl-37-154 | Domain-Centric Information Extraction | http://videolectures.net/akbcwekex2012_dalvi_information_extraction/ | instructors:Nilesh Dalvi
+vl-37-147 | Europe Media Monitor (EMM) System | http://videolectures.net/wapa2010_goot_emms/ | instructors:Erik van der Goot
+vl-37-148 | Low-Pass Semantics | http://videolectures.net/akbcwekex2012_pereira_semantics/ | instructors:Fernando C. N. Pereira
+vl-37-149 | Knowledge Base Construction with Epistemological Databases | http://videolectures.net/akbcwekex2012_mccallum_base_construction/ | instructors:Andrew McCallum
+vl-37-150 | Getting at the Semantics of Texts | http://videolectures.net/estc08_uszkoreit_gst/ | instructors:Hans Uszkoreit
+vl-37-151 | Building and Using Knowledge Bases | http://videolectures.net/akbcwekex2012_staab_knowledge_bases/ | instructors:Steffen Staab
+vl-37-152 | Organizing Harvested Knowledge | http://videolectures.net/akbcwekex2012_hovy_harvested_knowledge/ | instructors:Eduard Hovy
+vl-37-153 | Domain-Centric Information Extraction | http://videolectures.net/akbcwekex2012_dalvi_information_extraction/ | instructors:Nilesh Dalvi
+vl-37-154 | Guidelines for Multilingual Linked Data | http://videolectures.net/wims2013_gomez_perez_multilingual_linked_data/ | instructors:Asunción Gómez-Pérez
 vl-37-155 | Many Faces of Text Processing | http://videolectures.net/wims2011_grobelnik_processing/ | instructors:Marko Grobelnik
-vl-37-156 | Getting at the Semantics of Texts | http://videolectures.net/estc08_uszkoreit_gst/ | instructors:Hans Uszkoreit
+vl-37-156 | Fast rates for the multi-armed bandit | http://videolectures.net/nipsworkshops2013_bubeck_fast_rates/ | instructors:Sébastien Bubeck
 vl-37-157 | Follow the leader if you can, Hedge if you must | http://videolectures.net/nipsworkshops2013_van_erven_hedge/ | instructors:Tim van Erven
 vl-37-158 | Text Mining and Link Analysis for Web and Semantic Web | http://videolectures.net/kdd07_grobelnik_tmala/ | instructors:Marko Grobelnik, Dunja Mladenić, Blaž Fortuna
 vl-37-159 | Text and web data mining | http://videolectures.net/ess07_grobelnik_twdmI/ | instructors:Marko Grobelnik

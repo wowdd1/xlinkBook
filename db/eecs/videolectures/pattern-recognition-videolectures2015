@@ -1,99 +1,99 @@
 vl-395-1 | Automating Quantitative Narrative Analysis of News Data | http://videolectures.net/wapa2011_sudhahar_quantitative/ | instructors:Saatviga Sudhahar
-vl-395-2 | Fast Euclidean Minimum Spanning Tree: Algorithm, Analysis, and Applications | http://videolectures.net/kdd2010_march_fem/ | instructors:William March
-vl-395-3 | On the Usefulness of Similarity based Projection Spaces for Transfer Learning | http://videolectures.net/simbad2011_morvant_transfer/ | instructors:Emilie Morvant
-vl-395-4 | Regularization Paths and Coordinate Descent | http://videolectures.net/kdd08_hastie_rpcd/ | instructors:Trevor Hastie
-vl-395-5 | Efficient Optimization For Low-Rank Integrated Bilinear Classifiers | http://videolectures.net/eccv2012_kobayashi_optimization/ | instructors:Takumi Kobayashi, Michal Irani, Andrea Vedaldi
-vl-395-6 | Pattern Recognition in Computer Vision | http://videolectures.net/aop09_farinella_pricv/ | instructors:Giovanni Maria Farinella
-vl-395-7 | Document Clustering via Dirichlet Process Mixture Model with Feature Selection | http://videolectures.net/kdd2010_yu_dcd/ | instructors:Guan Yu
-vl-395-8 | Unsupervised Feature Selection for Multi-Cluster Data | http://videolectures.net/kdd2010_cai_ufsm/ | instructors:Deng Cai
-vl-395-9 | Pattern Recognition for Neuroimaging Toolbox | http://videolectures.net/workshops2012_mourao_miranda_neuroimaging/ | instructors:Janaina Mourao-Miranda
-vl-395-10 | Discovering Frequent Patterns in Sensitive Data | http://videolectures.net/kdd2010_thakurta_dfp/ | instructors:Abhradeep Guha Thakurta
-vl-395-11 | An algorithm for recovering camouflage errors on moving people | http://videolectures.net/ssspr2010_conte_aar/ | instructors:Donatello Conte
-vl-395-12 | An Integrated Machine Learning Approach to Stroke Prediction | http://videolectures.net/kdd2010_lee_imla/ | instructors:Honglak Lee
-vl-395-13 | Pattern Analysis over Graphs, and Bioinformatics Applications | http://videolectures.net/aop09_vert_paog/ | instructors:Jean-Philippe Vert
+vl-395-2 | Regularization Paths and Coordinate Descent | http://videolectures.net/kdd08_hastie_rpcd/ | instructors:Trevor Hastie
+vl-395-3 | Fast Euclidean Minimum Spanning Tree: Algorithm, Analysis, and Applications | http://videolectures.net/kdd2010_march_fem/ | instructors:William March
+vl-395-4 | Pattern Recognition in Computer Vision | http://videolectures.net/aop09_farinella_pricv/ | instructors:Giovanni Maria Farinella
+vl-395-5 | On the Usefulness of Similarity based Projection Spaces for Transfer Learning | http://videolectures.net/simbad2011_morvant_transfer/ | instructors:Emilie Morvant
+vl-395-6 | Document Clustering via Dirichlet Process Mixture Model with Feature Selection | http://videolectures.net/kdd2010_yu_dcd/ | instructors:Guan Yu
+vl-395-7 | Unsupervised Feature Selection for Multi-Cluster Data | http://videolectures.net/kdd2010_cai_ufsm/ | instructors:Deng Cai
+vl-395-8 | Discovering Frequent Patterns in Sensitive Data | http://videolectures.net/kdd2010_thakurta_dfp/ | instructors:Abhradeep Guha Thakurta
+vl-395-9 | Efficient Optimization For Low-Rank Integrated Bilinear Classifiers | http://videolectures.net/eccv2012_kobayashi_optimization/ | instructors:Takumi Kobayashi, Michal Irani, Andrea Vedaldi
+vl-395-10 | An algorithm for recovering camouflage errors on moving people | http://videolectures.net/ssspr2010_conte_aar/ | instructors:Donatello Conte
+vl-395-11 | An Integrated Machine Learning Approach to Stroke Prediction | http://videolectures.net/kdd2010_lee_imla/ | instructors:Honglak Lee
+vl-395-12 | Pattern Analysis over Graphs, and Bioinformatics Applications | http://videolectures.net/aop09_vert_paog/ | instructors:Jean-Philippe Vert
+vl-395-13 | Pattern Recognition for Neuroimaging Toolbox | http://videolectures.net/workshops2012_mourao_miranda_neuroimaging/ | instructors:Janaina Mourao-Miranda
 vl-395-14 | Unsupervised Transfer Classification: Application to Text Categorization | http://videolectures.net/kdd2010_yang_utlatc/ | instructors:Tianbao Yang
 vl-395-15 | Grafting-Light: Fast, Incremental Feature Selection and Structure Learning of Markov Random Fields | http://videolectures.net/kdd2010_zhu_glfi/ | instructors:Jun Zhu
-vl-395-16 | Thermodynamic Depth of Networks | http://videolectures.net/complexnetworks2012_escolano_thermodynamic_depth/ | instructors:Francisco Escolano
-vl-395-17 | Online Multiscale Dynamic Topic Models | http://videolectures.net/kdd2010_iwata_omdtm/ | instructors:Tomoharu Iwata
-vl-395-18 | Compressed Fisher Linear Discriminant Analysis: Classification of Randomly Projected Data | http://videolectures.net/kdd2010_durrant_cfl/ | instructors:Robert J. Durrant
-vl-395-19 | Kernel Fusion of Multiple Histogram Descriptors for Robust Face recognition | http://videolectures.net/ssspr2010_kittler_kfm/ | instructors:Josef Kittler
-vl-395-20 | Designing Efficient Cascaded Classifiers: Tradeoff between Accuracy and Cost | http://videolectures.net/kdd2010_krishnapuram_decc/ | instructors:Balaji Krishnapuram
-vl-395-21 | Reconstructing Patterns of Information Diffusion from Incomplete Observations | http://videolectures.net/nips2011_chierichetti_observations/ | instructors:Flavio Chierichetti
-vl-395-22 | Large Linear Classification When Data Cannot Fit In Memory | http://videolectures.net/kdd2010_yu_llcw/ | instructors:Hsiang-Fu Yu
-vl-395-23 | Redefining Class Definitions using Constraint-Based Clustering: An Application to Remote Sensing of the Earth's Surface | http://videolectures.net/kdd2010_preston_rcdu/ | instructors:Dan R. Preston
-vl-395-24 | Identifying Good Patterns for Relation Extraction | http://videolectures.net/is2012_starc_relation_extraction/ | instructors:Janez Starc
-vl-395-25 | Bayesian Adaptation for Statistical Machine Translation | http://videolectures.net/ssspr2010_sanchis_trilles_basm/ | instructors:German Sanchis-Trilles
-vl-395-26 | Graph Similarity, I-Divergences and Entropic Manifold Alignment | http://videolectures.net/ssspr2010_escolano_gsi/ | instructors:Francisco Escolano
-vl-395-27 | Extracting Temporal Signatures for Comprehending Systems Biology Models | http://videolectures.net/kdd2010_sundaravaradan_ets/ | instructors:Naren Sundaravaradan
-vl-395-28 | Spherical Embedding and Classification | http://videolectures.net/ssspr2010_wilson_sec/ | instructors:Richard Wilson
-vl-395-29 | Mass Estimation and Its Applications | http://videolectures.net/kdd2010_ting_mea/ | instructors:Kai Ming Ting
-vl-395-30 | Learning to Combine Discriminative Classifiers | http://videolectures.net/kdd2010_lee_lcd/ | instructors:Chi-Hoon Lee
-vl-395-31 | GLS-SOD: A Generalized Local Statistical Approach for Spatial Outlier Detection | http://videolectures.net/kdd2010_chen_glssod/ | instructors:Feng Chen
-vl-395-32 | Language Detection and Tracking in Multilingual Documents Using Weak Estimators | http://videolectures.net/ssspr2010_stensby_ldtm/ | instructors:Aleksander M. Stensby
-vl-395-33 | Non-parametric Mixtures Models for Clustering | http://videolectures.net/ssspr2010_bucak_npm/ | instructors:Serhat Selcuk Bucak
+vl-395-16 | Online Multiscale Dynamic Topic Models | http://videolectures.net/kdd2010_iwata_omdtm/ | instructors:Tomoharu Iwata
+vl-395-17 | Compressed Fisher Linear Discriminant Analysis: Classification of Randomly Projected Data | http://videolectures.net/kdd2010_durrant_cfl/ | instructors:Robert J. Durrant
+vl-395-18 | Kernel Fusion of Multiple Histogram Descriptors for Robust Face recognition | http://videolectures.net/ssspr2010_kittler_kfm/ | instructors:Josef Kittler
+vl-395-19 | Designing Efficient Cascaded Classifiers: Tradeoff between Accuracy and Cost | http://videolectures.net/kdd2010_krishnapuram_decc/ | instructors:Balaji Krishnapuram
+vl-395-20 | Large Linear Classification When Data Cannot Fit In Memory | http://videolectures.net/kdd2010_yu_llcw/ | instructors:Hsiang-Fu Yu
+vl-395-21 | Redefining Class Definitions using Constraint-Based Clustering: An Application to Remote Sensing of the Earth's Surface | http://videolectures.net/kdd2010_preston_rcdu/ | instructors:Dan R. Preston
+vl-395-22 | Bayesian Adaptation for Statistical Machine Translation | http://videolectures.net/ssspr2010_sanchis_trilles_basm/ | instructors:German Sanchis-Trilles
+vl-395-23 | Graph Similarity, I-Divergences and Entropic Manifold Alignment | http://videolectures.net/ssspr2010_escolano_gsi/ | instructors:Francisco Escolano
+vl-395-24 | Thermodynamic Depth of Networks | http://videolectures.net/complexnetworks2012_escolano_thermodynamic_depth/ | instructors:Francisco Escolano
+vl-395-25 | Reconstructing Patterns of Information Diffusion from Incomplete Observations | http://videolectures.net/nips2011_chierichetti_observations/ | instructors:Flavio Chierichetti
+vl-395-26 | Extracting Temporal Signatures for Comprehending Systems Biology Models | http://videolectures.net/kdd2010_sundaravaradan_ets/ | instructors:Naren Sundaravaradan
+vl-395-27 | Spherical Embedding and Classification | http://videolectures.net/ssspr2010_wilson_sec/ | instructors:Richard Wilson
+vl-395-28 | Mass Estimation and Its Applications | http://videolectures.net/kdd2010_ting_mea/ | instructors:Kai Ming Ting
+vl-395-29 | Learning to Combine Discriminative Classifiers | http://videolectures.net/kdd2010_lee_lcd/ | instructors:Chi-Hoon Lee
+vl-395-30 | GLS-SOD: A Generalized Local Statistical Approach for Spatial Outlier Detection | http://videolectures.net/kdd2010_chen_glssod/ | instructors:Feng Chen
+vl-395-31 | Language Detection and Tracking in Multilingual Documents Using Weak Estimators | http://videolectures.net/ssspr2010_stensby_ldtm/ | instructors:Aleksander M. Stensby
+vl-395-32 | Non-parametric Mixtures Models for Clustering | http://videolectures.net/ssspr2010_bucak_npm/ | instructors:Serhat Selcuk Bucak
+vl-395-33 | Poster Spotlights 2 | http://videolectures.net/smls09_posters2_spotlights/ | 
 vl-395-34 | Similarity Word-Sequence Kernels for Sentence Clustering | http://videolectures.net/ssspr2010_andres_ferrer_swsk/ | instructors:Jesus Andres-Ferrer
 vl-395-35 | A Probabilistic Approach to Spectral Unmixing | http://videolectures.net/ssspr2010_huynh_pas/ | instructors:Cong Phuoc Huynh
-vl-395-36 | Tropical Cyclone Event Sequence Similarity Search via Dimensionality Reduction and Metric Learning | http://videolectures.net/kdd2010_ho_tces/ | instructors:Shen-Shyang Ho
-vl-395-37 | The Dissimilarity Representation as a Tool for Three-way Data Classification: a 2D Measure | http://videolectures.net/ssspr2010_porro_munoz_drt/ | instructors:Diana Porro Munoz
+vl-395-36 | The Dissimilarity Representation as a Tool for Three-way Data Classification: a 2D Measure | http://videolectures.net/ssspr2010_porro_munoz_drt/ | instructors:Diana Porro Munoz
+vl-395-37 | Tropical Cyclone Event Sequence Similarity Search via Dimensionality Reduction and Metric Learning | http://videolectures.net/kdd2010_ho_tces/ | instructors:Shen-Shyang Ho
 vl-395-38 | Modeling Relational Events via Latent Classes | http://videolectures.net/kdd2010_dubois_mrel/ | instructors:Christopher DuBois
-vl-395-39 | Automating News Content Analysis: An Application to Gender Bias and Readability | http://videolectures.net/wapa2010_ali_anca/ | instructors:Omar Ali
-vl-395-40 | Analysis of the Multi-Dimensional Scale Saliency Algorithm and its Application to Texture Categorization | http://videolectures.net/ssspr2010_escolano_amd/ | instructors:Francisco Escolano
-vl-395-41 | A Structured Learning Approach to Attributed Graph Embedding | http://videolectures.net/ssspr2010_robles_kelly_sla/ | instructors:Antonio Robles-Kelly
-vl-395-42 | Graph Embedding using an Edge-Based Wave Kernel | http://videolectures.net/ssspr2010_hancock_geu/ | instructors:Edwin Hancock
-vl-395-43 | A New Spectral Bound on the Clique Number of Graphs | http://videolectures.net/ssspr2010_rota_bulo_sbcn/ | instructors:Samuel Rota Bulo
-vl-395-44 | Efficient ORC Post-processing Combining Language, Hypothesis and Error Models | http://videolectures.net/ssspr2010_perez_cortes_eocr/ | instructors:Juan-Carlos Perez-Cortes
-vl-395-45 | Entropy-based Variational Scheme for Fast Bayes Learning of Gaussian Mixture | http://videolectures.net/ssspr2010_escolano_ebv/ | instructors:Francisco Escolano
-vl-395-46 | A Hierarchical Information Theoretic Technique for the Discovery of Non Linear Alternative Clusterings | http://videolectures.net/kdd2010_bailey_hitt/ | instructors:James Bailey
-vl-395-47 | BioSnowball: Automated Population of Wikis | http://videolectures.net/kdd2010_nie_bsap/ | instructors:Zaiqing Nie
-vl-395-48 | A Modular Approach to Training Cascades of Boosted Ensembles | http://videolectures.net/ssspr2010_susnjak_mat/ | instructors:Teo Susnjak
-vl-395-49 | Poster Spotlights 2 | http://videolectures.net/smls09_posters2_spotlights/ | 
+vl-395-39 | Analysis of the Multi-Dimensional Scale Saliency Algorithm and its Application to Texture Categorization | http://videolectures.net/ssspr2010_escolano_amd/ | instructors:Francisco Escolano
+vl-395-40 | Automating News Content Analysis: An Application to Gender Bias and Readability | http://videolectures.net/wapa2010_ali_anca/ | instructors:Omar Ali
+vl-395-41 | Identifying Good Patterns for Relation Extraction | http://videolectures.net/is2012_starc_relation_extraction/ | instructors:Janez Starc
+vl-395-42 | A Structured Learning Approach to Attributed Graph Embedding | http://videolectures.net/ssspr2010_robles_kelly_sla/ | instructors:Antonio Robles-Kelly
+vl-395-43 | Graph Embedding using an Edge-Based Wave Kernel | http://videolectures.net/ssspr2010_hancock_geu/ | instructors:Edwin Hancock
+vl-395-44 | A New Spectral Bound on the Clique Number of Graphs | http://videolectures.net/ssspr2010_rota_bulo_sbcn/ | instructors:Samuel Rota Bulo
+vl-395-45 | Efficient ORC Post-processing Combining Language, Hypothesis and Error Models | http://videolectures.net/ssspr2010_perez_cortes_eocr/ | instructors:Juan-Carlos Perez-Cortes
+vl-395-46 | Entropy-based Variational Scheme for Fast Bayes Learning of Gaussian Mixture | http://videolectures.net/ssspr2010_escolano_ebv/ | instructors:Francisco Escolano
+vl-395-47 | A Hierarchical Information Theoretic Technique for the Discovery of Non Linear Alternative Clusterings | http://videolectures.net/kdd2010_bailey_hitt/ | instructors:James Bailey
+vl-395-48 | BioSnowball: Automated Population of Wikis | http://videolectures.net/kdd2010_nie_bsap/ | instructors:Zaiqing Nie
+vl-395-49 | A Modular Approach to Training Cascades of Boosted Ensembles | http://videolectures.net/ssspr2010_susnjak_mat/ | instructors:Teo Susnjak
 vl-395-50 | Generative Models for Relational Structures | http://videolectures.net/ssspr2010_hancock_gmr/ | instructors:Edwin Hancock
 vl-395-51 | Dissimilarity-based Classification of MRIs for Early Diagnosis of Dementia | http://videolectures.net/ssspr2010_loog_dbc/ | instructors:Marco Loog
-vl-395-52 | Resource-Aware On-Line RFID Localization Using Proximity Data | http://videolectures.net/ecmlpkdd2011_scholz_rfid/ | instructors:Christoph Scholz
-vl-395-53 | Interactive image retrieval using smoothed nearest neighbor estimates | http://videolectures.net/ssspr2010_ferri_iir/ | instructors:Francesc J. Ferri
-vl-395-54 | Nonlinear Mappings for Generative Kernels on Latent Variable Models | http://videolectures.net/ssspr2010_bicego_nmg/ | instructors:Manuele Bicego
-vl-395-55 | Regularising the Ricci Flow Embedding | http://videolectures.net/ssspr2010_xu_rrf/ | instructors:Weiping Xu
-vl-395-56 | A Game-Theoretic Approach to Robust Inlier Selection | http://videolectures.net/ssspr2010_torsello_gtaris/ | instructors:Andrea Torsello
-vl-395-57 | Rejection threshold estimation for an unknown language model in an OCR task | http://videolectures.net/ssspr2010_perez_cortes_rteu/ | instructors:Juan-Carlos Perez-Cortes
-vl-395-58 | Combination of Dichotomizers for Maximizing the Partial Area under the ROC Curve | http://videolectures.net/ssspr2010_tortorella_cdm/ | instructors:Francesco Tortorella
-vl-395-59 | Localized Projection Learning | http://videolectures.net/ssspr2010_tsuji_lpl/ | instructors:Kazuki Tsuji
-vl-395-60 | Class-Specific Error Bounds for Ensemble Classifiers | http://videolectures.net/kdd2010_prenger_cseb/ | instructors:Ryan J. Prenger
-vl-395-61 | Mixture Models for Learning Low-dimensional Roles in High-dimensional Data | http://videolectures.net/kdd2010_somaiya_mml/ | instructors:Manas Somaiya
-vl-395-62 | Ihara Coeficients: A Flexible Tool for Higher Order Learning | http://videolectures.net/ssspr2010_hancock_icft/ | instructors:Edwin Hancock
+vl-395-52 | Interactive image retrieval using smoothed nearest neighbor estimates | http://videolectures.net/ssspr2010_ferri_iir/ | instructors:Francesc J. Ferri
+vl-395-53 | Nonlinear Mappings for Generative Kernels on Latent Variable Models | http://videolectures.net/ssspr2010_bicego_nmg/ | instructors:Manuele Bicego
+vl-395-54 | Regularising the Ricci Flow Embedding | http://videolectures.net/ssspr2010_xu_rrf/ | instructors:Weiping Xu
+vl-395-55 | A Game-Theoretic Approach to Robust Inlier Selection | http://videolectures.net/ssspr2010_torsello_gtaris/ | instructors:Andrea Torsello
+vl-395-56 | Rejection threshold estimation for an unknown language model in an OCR task | http://videolectures.net/ssspr2010_perez_cortes_rteu/ | instructors:Juan-Carlos Perez-Cortes
+vl-395-57 | Combination of Dichotomizers for Maximizing the Partial Area under the ROC Curve | http://videolectures.net/ssspr2010_tortorella_cdm/ | instructors:Francesco Tortorella
+vl-395-58 | Class-Specific Error Bounds for Ensemble Classifiers | http://videolectures.net/kdd2010_prenger_cseb/ | instructors:Ryan J. Prenger
+vl-395-59 | Mixture Models for Learning Low-dimensional Roles in High-dimensional Data | http://videolectures.net/kdd2010_somaiya_mml/ | instructors:Manas Somaiya
+vl-395-60 | Ihara Coeficients: A Flexible Tool for Higher Order Learning | http://videolectures.net/ssspr2010_hancock_icft/ | instructors:Edwin Hancock
+vl-395-61 | Localized Projection Learning | http://videolectures.net/ssspr2010_tsuji_lpl/ | instructors:Kazuki Tsuji
+vl-395-62 | Resource-Aware On-Line RFID Localization Using Proximity Data | http://videolectures.net/ecmlpkdd2011_scholz_rfid/ | instructors:Christoph Scholz
 vl-395-63 | SFFS-MR: A Floating Search Strategy for GRNs Inference | http://videolectures.net/prib2010_martins_sfss/ | instructors:David C. Martins
 vl-395-64 | An Empirical Comparison of Kernel-Based and Dissimilarity-Based Feature Spaces | http://videolectures.net/ssspr2010_kim_eck/ | instructors:Sang-Woon Kim
 vl-395-65 | Non-Euclidean Dissimilarities: Causes and Informativeness | http://videolectures.net/ssspr2010_loog_ned/ | instructors:Marco Loog
-vl-395-66 | A new editing scheme based on fast two-strings median computation applied to OCR | http://videolectures.net/ssspr2010_rico_juan_esocr/ | instructors:Juan Ramon Rico-Juan
-vl-395-67 | Combining Elimination Rules in Tree-Based Nearest Neighbour Search Algorithms | http://videolectures.net/ssspr2010_oncina_cer/ | instructors:Jose Oncina
-vl-395-68 | A Game-Theoretic Approach to the Enforcement of Global Consistency in Multi-View Feature Matching | http://videolectures.net/ssspr2010_torsello_mvfm/ | instructors:Andrea Torsello
-vl-395-69 | Introduction and Overview of the SIMBAD Project | http://videolectures.net/ssspr2010_pelillo_ios/ | instructors:Marcello Pelillo
-vl-395-70 | A Generative Score Space for Statistical Dialog Characterization in social Signalling | http://videolectures.net/ssspr2010_cristani_gsss/ | instructors:Marco Cristani
-vl-395-71 | Constellations and the Graph Embedding using Quantum Commute Times | http://videolectures.net/gbr07_emms_geuqct/ | instructors:David Emms
+vl-395-66 | Constellations and the Graph Embedding using Quantum Commute Times | http://videolectures.net/gbr07_emms_geuqct/ | instructors:David Emms
+vl-395-67 | A new editing scheme based on fast two-strings median computation applied to OCR | http://videolectures.net/ssspr2010_rico_juan_esocr/ | instructors:Juan Ramon Rico-Juan
+vl-395-68 | Combining Elimination Rules in Tree-Based Nearest Neighbour Search Algorithms | http://videolectures.net/ssspr2010_oncina_cer/ | instructors:Jose Oncina
+vl-395-69 | A Game-Theoretic Approach to the Enforcement of Global Consistency in Multi-View Feature Matching | http://videolectures.net/ssspr2010_torsello_mvfm/ | instructors:Andrea Torsello
+vl-395-70 | Introduction and Overview of the SIMBAD Project | http://videolectures.net/ssspr2010_pelillo_ios/ | instructors:Marcello Pelillo
+vl-395-71 | A Generative Score Space for Statistical Dialog Characterization in social Signalling | http://videolectures.net/ssspr2010_cristani_gsss/ | instructors:Marco Cristani
 vl-395-72 | An Efficient Iris and Eye Corners Extraction Method | http://videolectures.net/ssspr2010_erdogmus_eie/ | instructors:Nesli Erdogmus
 vl-395-73 | Learning Graph Quantization | http://videolectures.net/ssspr2010_srinivasan_lgq/ | instructors:Shankar Deepak Srinivasan
-vl-395-74 | Opening | http://videolectures.net/simbad2011_pelillo_opening/ | instructors:Marcello Pelillo
-vl-395-75 | High-dimensional Spectral Feature Selection for 3D Object Recognition based on Reeb Graphs | http://videolectures.net/ssspr2010_escolano_hds/ | instructors:Francisco Escolano
+vl-395-74 | High-dimensional Spectral Feature Selection for 3D Object Recognition based on Reeb Graphs | http://videolectures.net/ssspr2010_escolano_hds/ | instructors:Francisco Escolano
+vl-395-75 | Who needs Patterns? | http://videolectures.net/aop07_cristianini_wnd/ | instructors:Nello Cristianini
 vl-395-76 | Semi-Supervised Clustering using Heterogeneous Dissimilarities | http://videolectures.net/ssspr2010_merino_acera_ssc/ | instructors:Manuel Martin-Merino Acera
 vl-395-77 | Dissimilarity-based Multiple Instance Learning | http://videolectures.net/ssspr2010_sorensen_dbm/ | instructors:Lauge Sorensen
 vl-395-78 | On Consensus Clustering Validation | http://videolectures.net/ssspr2010_duarte_ccv/ | instructors:Joao Manuel Maia Duarte
-vl-395-79 | Mining Exemplars for Object Recognition using Affinity Propagation | http://videolectures.net/ssspr2010_hancock_meo/ | instructors:Edwin Hancock
-vl-395-80 | Pairwise Probabilistic Clustering Using Evidence Accumulation | http://videolectures.net/ssspr2010_rota_bulo_ppc/ | instructors:Samuel Rota Bulo
-vl-395-81 | Scale and Rotation Invariant Detection of Singular Patterns in Vector Flow Fields | http://videolectures.net/ssspr2010_liu_srv/ | instructors:Wei Liu
-vl-395-82 | Who needs Patterns? | http://videolectures.net/aop07_cristianini_wnd/ | instructors:Nello Cristianini
+vl-395-79 | Opening | http://videolectures.net/simbad2011_pelillo_opening/ | instructors:Marcello Pelillo
+vl-395-80 | Mining Exemplars for Object Recognition using Affinity Propagation | http://videolectures.net/ssspr2010_hancock_meo/ | instructors:Edwin Hancock
+vl-395-81 | Pairwise Probabilistic Clustering Using Evidence Accumulation | http://videolectures.net/ssspr2010_rota_bulo_ppc/ | instructors:Samuel Rota Bulo
+vl-395-82 | Scale and Rotation Invariant Detection of Singular Patterns in Vector Flow Fields | http://videolectures.net/ssspr2010_liu_srv/ | instructors:Wei Liu
 vl-395-83 | Maximum a Posteriori Based Kernel Classifier Trained by Linear Programming | http://videolectures.net/ssspr2010_hermani_mpbk/ | instructors:Nopriadi Hermani
 vl-395-84 | Exploring the Performance Limit of Cluster Ensemble Techniques | http://videolectures.net/ssspr2010_jiang_epl/ | instructors:Xiaoyi Jiang
 vl-395-85 | On Feature Combination for Music Classification | http://videolectures.net/ssspr2010_fu_fcm/ | instructors:Zhouyu Fu
 vl-395-86 | Discussion | http://videolectures.net/ssspr2010_panel2_discussion/ | instructors:Manuel Martin-Merino Acera, Joao Manuel Maia Duarte,
    
     et al.
-vl-395-87 | Discussion | http://videolectures.net/ssspr2010_panel1_discussion/ | instructors:Shankar Deepak Srinivasan, Francisco Escolano,
+vl-395-87 | What is the Complexity of a Network? The Heat Flow-Thermodynamic Depth Approach | http://videolectures.net/ssspr2010_escolano_wcn/ | instructors:Francisco Escolano
+vl-395-88 | Discussion | http://videolectures.net/ssspr2010_panel1_discussion/ | instructors:Shankar Deepak Srinivasan, Francisco Escolano,
    
     et al.
-vl-395-88 | What is the Complexity of a Network? The Heat Flow-Thermodynamic Depth Approach | http://videolectures.net/ssspr2010_escolano_wcn/ | instructors:Francisco Escolano
 vl-395-89 | Information Theoretical Kernels for Generative Embeddings Based on Hidden Markov Models | http://videolectures.net/ssspr2010_bicego_itk/ | instructors:Manuele Bicego
-vl-395-90 | A Causal Extraction Scheme in Top-down Pyramids for Large Images Segmentation | http://videolectures.net/ssspr2010_goffe_ces/ | instructors:Romain Goffe
-vl-395-91 | Fast Population Game Dynamics for Dominant Sets and Other Quadratic Optimization Problems | http://videolectures.net/ssspr2010_rota_bulo_fpg/ | instructors:Samuel Rota Bulo
-vl-395-92 | Discovering Patterns in Flows: A Privacy Preserving Approach with the ACSM | http://videolectures.net/ecmlpkdd09_jacquemont_dpfa/ | instructors:Stephanie Jacquemont
+vl-395-90 | Discovering Patterns in Flows: A Privacy Preserving Approach with the ACSM | http://videolectures.net/ecmlpkdd09_jacquemont_dpfa/ | instructors:Stephanie Jacquemont
+vl-395-91 | A Causal Extraction Scheme in Top-down Pyramids for Large Images Segmentation | http://videolectures.net/ssspr2010_goffe_ces/ | instructors:Romain Goffe
+vl-395-92 | Fast Population Game Dynamics for Dominant Sets and Other Quadratic Optimization Problems | http://videolectures.net/ssspr2010_rota_bulo_fpg/ | instructors:Samuel Rota Bulo
 vl-395-93 | A Game Theoretic Approach To Jointly Learn Shape Categories and Contextual Similarities | http://videolectures.net/ssspr2010_torsello_gta/ | instructors:Andrea Torsello
 vl-395-94 | Dynamic Linear Combination of Two-class Classifiers | http://videolectures.net/ssspr2010_tronci_dlc/ | instructors:Roberto Tronci
 vl-395-95 | Complete Search Space Exploration for SITG Inside Probability | http://videolectures.net/ssspr2010_gasco_css/ | instructors:Guillem Gasco
@@ -104,7 +104,7 @@ vl-395-99 | Classification on Riemannian Manifolds | http://videolectures.net/ss
 vl-395-100 | Patterns in Complex Networks via Spectral Analysis | http://videolectures.net/ssspr2010_estrada_pcn/ | instructors:Ernesto Estrada
 vl-395-101 | From Low-level Sensors to High-level Intelligence: Activity Recognition Links the Knowledge Food Chain | http://videolectures.net/ijcai09_yang_fllshli/ | instructors:Qiang Yang
 vl-395-102 | Towards an Understanding of Olfactory Computation | http://videolectures.net/nips2011_laurent_diversity/ | instructors:Gilles Laurent
-vl-395-103 | Support Constraints Machines | http://videolectures.net/simbad2011_gori_constraints/ | instructors:Marco Gori
-vl-395-104 | Image Structure and Syntax for Recognition | http://videolectures.net/ssspr2010_ahuja_iss/ | instructors:Narendra Ahuja
+vl-395-103 | Image Structure and Syntax for Recognition | http://videolectures.net/ssspr2010_ahuja_iss/ | instructors:Narendra Ahuja
+vl-395-104 | Support Constraints Machines | http://videolectures.net/simbad2011_gori_constraints/ | instructors:Marco Gori
 vl-395-105 | Automatic quantification of subtle cellular phenotypes in microscopy-based high-throughput experiments | http://videolectures.net/mlsb2010_ljosa_aqs/ | instructors:Vebjorn Ljosa
 vl-395-106 | Temporal Pattern Mining in Symbolic Time Point and Time Interval Data | http://videolectures.net/kdd2010_moerchen_tpm/ | instructors:Fabian Moerchen
