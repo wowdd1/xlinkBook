@@ -1,0 +1,127 @@
+vl-232-1 | An Overview of Deep Learning and Its Challenges for Technical Computing | http://videolectures.net/tcmm2014_taylor_deep_learning/ | instructors:Graham Taylor
+vl-232-2 | Theano: a Fast Python Library for Modelling and Training | http://videolectures.net/tcmm2014_lamblin_theano_python_library/ | instructors:Pascal Lamblin
+vl-232-3 | Deep Support Vector Machines | http://videolectures.net/roks2013_wiering_vector/ | instructors:Marco Wiering
+vl-232-4 | Optimization: Theory and Algorithms | http://videolectures.net/mlss2012_vanderbei_theory_algorithms/ | instructors:Robert Vanderbei
+vl-232-5 | A Stochastic Gradient Method with an Exponential Convergence Rate for Finite Training Sets | http://videolectures.net/nips2012_le_roux_gradient_method/ | instructors:Nicolas Le Roux
+vl-232-6 | Near-Optimal MAP Inference for Determinantal Point Processes | http://videolectures.net/nips2012_gillenwater_processes/ | instructors:Jennifer A. Gillenwater
+vl-232-7 | Subspace Learning | http://videolectures.net/roks2013_rudi_subspace/ | instructors:Alessandro Rudi
+vl-232-8 | Graphical Models via Generalized Linear Models | http://videolectures.net/nips2012_yang_models/ | instructors:Eunho Yang
+vl-232-9 | Output Kernel Learning Methods | http://videolectures.net/roks2013_dinuzzo_output/ | instructors:Francesco Dinuzzo
+vl-232-10 | Structured Low-Rank Approximation as Optimization on a Grassmann Manifold | http://videolectures.net/roks2013_usevich_grassmann_manifold/ | instructors:Konstantin Usevich
+vl-232-11 | Robust Near-Separable Nonnegative Matrix Factorization Using Linear Optimization | http://videolectures.net/roks2013_gillis_optimization/ | instructors:Nicolas Gillis
+vl-232-12 | Learning with Marginalized Corrupted Features | http://videolectures.net/roks2013_maaten_features/ | instructors:Laurens van der Maaten
+vl-232-13 | Privacy Aware Learning | http://videolectures.net/nips2012_duchi_learning/ | instructors:John Duchi
+vl-232-14 | A Genetic Algorithm for Text Classification Rule Induction | http://videolectures.net/ecmlpkdd08_pietramala_agaf/ | instructors:Adriana Pietramala, Veronica L. Policicchio,
+   
+    et al.
+vl-232-15 | Convergence Rates of Inexact Proximal-Gradient Methods for Convex Optimization | http://videolectures.net/nips2011_schmidt_convex/ | instructors:Mark Schmidt
+vl-232-16 | Provable Matrix Completion using Alternating Minimization | http://videolectures.net/nipsworkshops2012_netrapalli_minimization/ | instructors:Praneeth Netrapalli
+vl-232-17 | MapReduce/Bigtable for Distributed Optimization | http://videolectures.net/nipsworkshops2010_petrov_mrb/ | instructors:Slav Petrov
+vl-232-18 | Feature Selection via Detecting Ineffective Features | http://videolectures.net/roks2013_brabanter_feature/ | instructors:Kris De Brabanter
+vl-232-19 | The Graph-guided Group Lasso | http://videolectures.net/roks2013_wang_graph/ | instructors:Zi Wang
+vl-232-20 | An efficient approach to stochastic optimal control | http://videolectures.net/aispds08_kappen_easop/ | instructors:Bert Kappen
+vl-232-21 | Lecture 18: Duality Theory I | http://videolectures.net/mit15084s04_freund_lec18/ | instructors:Robert M. Freund
+vl-232-22 | On Convergence Rate of Concave-Convex Procedure | http://videolectures.net/nipsworkshops2012_yen_procedure/ | instructors:Ian E.H. Yen
+vl-232-23 | Fast first-order methods for convex optimization with line search | http://videolectures.net/nipsworkshops2011_scheinberg_convexoptimization/ | instructors:Katya Scheinberg
+vl-232-24 | Scalable Structured Low Rank Matrix Optimization Problems | http://videolectures.net/roks2013_signoretto_optimization/ | instructors:Marco Signoretto
+vl-232-25 | Stochastic Dual Coordinate Ascent Methods for Regularized Loss Minimization | http://videolectures.net/nipsworkshops2012_shalev_shwartz_minimization/ | instructors:Shai Shalev-Shwartz
+vl-232-26 | Approximating Concavely Parameterized Optimization Problems | http://videolectures.net/nips2012_laue_optimization_problems/ | instructors:Sören Laue
+vl-232-27 | Surrogate-based Constrained Multi-Objective Optimization | http://videolectures.net/mla09_forrester_sbcmoo/ | instructors:Alexander Forrester
+vl-232-28 | Fast Algorithms for Informed Source Separation | http://videolectures.net/roks2013_lefevre_methods/ | instructors:Augustin Lefèvre
+vl-232-29 | The First-Order View of Boosting Methods: Computational Complexity and Connections to Regularization | http://videolectures.net/roks2013_grigas_lasso/ | instructors:Paul Grigas
+vl-232-30 | Kernel Based Identification of Systems with Multiple Outputs Using Nuclear Norm Regularization | http://videolectures.net/roks2013_falck_identification/ | instructors:Tillmann Falck
+vl-232-31 | Super-Linear Convergence of Dual Augmented Lagrangian Algorithm for Sparse Learning | http://videolectures.net/nipsworkshops09_tomioka_slc/ | instructors:Ryota Tomioka
+vl-232-32 | A Stochastic Memoizer for Sequence Data | http://videolectures.net/icml09_wood_sms/ | instructors:Frank Wood
+vl-232-33 | Making Gradient Descent Optimal for Strongly Convex Stochastic Optimization | http://videolectures.net/nipsworkshops2011_shamir_convex/ | instructors:Ohad Samir
+vl-232-34 | Path coding penalties for directed acyclic graphs | http://videolectures.net/nipsworkshops2011_mairal_penalties/ | instructors:Julien Mairal
+vl-232-35 | Stochastic optimization with non-i.id. noise | http://videolectures.net/nipsworkshops2011_agarwal_noise/ | instructors:Alekh Agarwal
+vl-232-36 | A Quasi-Newton Approach to Nonsmooth Convex Optimization | http://videolectures.net/icml08_yu_aqna/ | instructors:Jin Yu
+vl-232-37 | Lecture 23: Semidefinite Optimization I | http://videolectures.net/mit15084s04_freund_lec23/ | instructors:Robert M. Freund
+vl-232-38 | Convergence rates of nested accelerated inexact proximal methods | http://videolectures.net/nipsworkshops2012_villa_methods/ | instructors:Silvia Villa
+vl-232-39 | Stochastic Search Methods | http://videolectures.net/acai05_filipic_ssm/ | instructors:Bogdan Filipič
+vl-232-40 | Stochastic Search Using the Natural Gradient | http://videolectures.net/icml09_sun_ssu/ | instructors:Sun Yi
+vl-232-41 | Fixed-Size Pegasos for Large Scale Pinball Loss SVM | http://videolectures.net/roks2013_jumutc_pegasos/ | instructors:Vilen Jumutc
+vl-232-42 | Augmenting Dual Decomposition for MAP Inference | http://videolectures.net/nipsworkshops2010_martins_add/ | instructors:André F. T. Martins
+vl-232-43 | Optimization Algorithms in Support Vector Machines | http://videolectures.net/mlss09us_wright_oasvm/ | instructors:Stephen J. Wright
+vl-232-44 | Steppest descent analysis for unregularized linear prediction with strictly convex penalties | http://videolectures.net/nipsworkshops2011_telgarsky_penalties/ | instructors:Matus Telgarsky
+vl-232-45 | Information-theoretic lower bounds on the oracle complexity of sparse convex optimization | http://videolectures.net/nipsworkshops2010_agarwal_itl/ | instructors:Alekh Agarwal
+vl-232-46 | One-Pass Approximate k-Means Optimization | http://videolectures.net/icml09_monteleoni_opakmo/ | instructors:Claire Monteleoni
+vl-232-47 | Hierarchical POMDP Controller Optimization by Likelihood Maximization | http://videolectures.net/uai08_toussaint_hpco/ | instructors:Marc Toussaint
+vl-232-48 | Surrogate-Based Optimization at ONERA: Some Recent Examples | http://videolectures.net/mla09_meunier_sbo/ | instructors:Mickaël Meunier
+vl-232-49 | Beyond the regret minimization barrier: an optimal algorithm for stochastic strongly-convex optimization | http://videolectures.net/colt2011_kale_optimization/ | instructors:Satyen Kale
+vl-232-50 | LaRank, SGD-QN - Fast Optimizers for Linear SVM | http://videolectures.net/icml08_bordes_lrsq/ | instructors:Antoine Bordes
+vl-232-51 | Stochastic Methods for L1 Regularized Loss Minimization | http://videolectures.net/icml09_tewari_smrl/ | instructors:Ambuj Tewari
+vl-232-52 | Approximate Inference Control | http://videolectures.net/nipsworkshops09_toussaint_aic/ | instructors:Marc Toussaint
+vl-232-53 | Cross-Lingual Document Retrieval through Hub Languages | http://videolectures.net/nipsworkshops2012_rupnik_hub_languages/ | instructors:Jan Rupnik
+vl-232-54 | An Incremental Subgradient Algorithm for Approximate MAP Estimation in Graphical Models | http://videolectures.net/nipsworkshops2010_jancsary_isa/ | instructors:Jeremy Jancsary
+vl-232-55 | On the Complexity of Bandit and Derivative-Free Stochastic Convex Optimization | http://videolectures.net/nipsworkshops2012_shamir_optimization/ | instructors:Ohad Shamir
+vl-232-56 | Greedy Function Optimization in Learning to Rank | http://videolectures.net/russir09_karpovich_gfollr/ | instructors:Pavel Karpovich
+vl-232-57 | A Finite-Time Analysis of Multi-armed Bandits Problems with Kullback-Leibler Divergences | http://videolectures.net/colt2011_maillard_analysis/ | instructors:Odalric-Ambrym Maillard
+vl-232-58 | Diskriminative Sequence Labeling by Z-score Optimization | http://videolectures.net/ecml07_ricci_dsl/ | instructors:Elisa Ricci
+vl-232-59 | Information evolution of optimal learning | http://videolectures.net/aispds08_belavkin_ieol/ | instructors:Roman V. Belavkin
+vl-232-60 | Optimizing Debt Collections Using Constrained Reinforcement Learning | http://videolectures.net/kdd2010_abe_odcucrl/ | instructors:Naoki Abe
+vl-232-61 | Optimization Algorithms for Identification and Genotyping of Copy Number Polymorphisms in Human Populations | http://videolectures.net/prib2010_ruffalo_oaig/ | instructors:Matthew Ruffalo
+vl-232-62 | Second Order Optimization of Kernel Parameters | http://videolectures.net/lkasok08_chapelle_soook/ | instructors:Francis R. Bach
+vl-232-63 | Predicting the Outcome of a Game | http://videolectures.net/eccs07_wolpert_pog/ | instructors:David Wolpert
+vl-232-64 | Melody Characterization by a Fuzzy Rule System | http://videolectures.net/icml08_rizo_mcb/ | instructors:David Rizo Valero
+vl-232-65 | Tree Based Ensemble Models Regularization by Convex Optimization | http://videolectures.net/nipsworkshops09_cornelusse_tbe/ | instructors:Bertrand Cornelusse
+vl-232-66 | Improved Regret Guarantees for Online Smooth Convex Optimization with Bandit Feedback | http://videolectures.net/aistats2011_saha_guarantees/ | instructors:Ankan Saha
+vl-232-67 | Apprenticeship Learning Using Linear Programming | http://videolectures.net/icml08_syed_alu/ | instructors:Umar Syed
+vl-232-68 | Modified Belief Propagation: an Algorithm for Optimization Problems | http://videolectures.net/oiml05_mourik_aop/ | instructors:Jort van Mourik
+vl-232-69 | Message-Passing Algorithms for GMRFs and Non-Linear Optimization | http://videolectures.net/abi07_johnson_mpa/ | instructors:Jason K. Johnson
+vl-232-70 | An LP View of the M-Best MAP Problem | http://videolectures.net/nips09_fromer_lvm/ | instructors:Menachem Fromer
+vl-232-71 | Finite horizon exploration for path integral control problems | http://videolectures.net/otee06_kappen_fhepi/ | instructors:Bert Kappen
+vl-232-72 | Model Compression: Bagging your Cake and Eating it too (part 1) | http://videolectures.net/eml07_decoste_mco/ | instructors:Dennis DeCoste
+vl-232-73 | Stochastic Models of User-Contributory Web Sites | http://videolectures.net/icwsm09_hogg_smucws/ | instructors:Tad Hogg
+vl-232-74 | Perspective on the Goals and Complexities of Inclusive Design | http://videolectures.net/nips09_zolyomi_perkins_pgc/ | instructors:Annuska Perkins
+vl-232-75 | Welcome | http://videolectures.net/tcmm2014_signoretto_welcome/ | instructors:Marco Signoretto
+vl-232-76 | Online Learning for Latent Dirichlet Allocation | http://videolectures.net/nips2010_hoffman_oll/ | instructors:Matt Hoffman
+vl-232-77 | Welcome to ROKS 2013 | http://videolectures.net/roks2013_suykens_welcome/ | instructors:Johan Suykens
+vl-232-78 | A Convex Formulation for Learning Scale-Free Networks via Submodular Relaxation | http://videolectures.net/machine_defazio_scale_free_networks/ | instructors:Aaron Defazio
+vl-232-79 | Sparse Estimation with Structured Dictionaries | http://videolectures.net/nips2011_wipf_estimation/ | instructors:David P Wipf
+vl-232-80 | A quasi-Newton proximal splitting method | http://videolectures.net/machine_fadili_splitting_method/ | instructors:Jalal Fadili
+vl-232-81 | Scaled Gradients on Grassmann Manifolds for Matrix Completion | http://videolectures.net/machine_ngo_matrix_completion/ | instructors:Thanh Ngo
+vl-232-82 | Factoring nonnegative matrices with linear programs | http://videolectures.net/machine_bittorf_nonnegative_matrices/ | instructors:Victor Bittorf
+vl-232-83 | Closing | http://videolectures.net/roks2013_suykens_closing/ | instructors:Johan Suykens
+vl-232-84 | Non-Asymptotic Analysis of Stochastic Approximation Algorithms for Machine Learning | http://videolectures.net/nips2011_bach_machine/ | instructors:Francis R. Bach
+vl-232-85 | Selecting Diverse Features via Spectral Regularization | http://videolectures.net/machine_das_spectral/ | instructors:Abhimanyu Das
+vl-232-86 | Efficient AUC Optimization for classification | http://videolectures.net/ecml07_calders_eauc/ | instructors:Toon Calders
+vl-232-87 | Alternating Direction Method of Multipliers | http://videolectures.net/nipsworkshops2011_boyd_multipliers/ | instructors:Stephen P. Boyd
+vl-232-88 | Julia: A Fresh Approach to Technical Computing | http://videolectures.net/tcmm2014_karpinski_julia_technical_computing/ | instructors:Stefan Karpinski
+vl-232-89 | Deep-er Kernels | http://videolectures.net/roks2013_shawe_taylor_kernels/ | instructors:John Shawe-Taylor
+vl-232-90 | Beyond Stochastic Gradient Descent | http://videolectures.net/roks2013_bach_optimization/ | instructors:Francis R. Bach
+vl-232-91 | Tools and Techniques for Sparse Optimization and Beyond | http://videolectures.net/tcmm2014_van_den_berg_sparse_optimization/ | instructors:Ewout van den Berg
+vl-232-92 | The Parameter Server | http://videolectures.net/nipsworkshops2012_smola_parameter_server/ | instructors:Alexander J. Smola
+vl-232-93 | Multi-task Learning | http://videolectures.net/roks2013_pontil_learning/ | instructors:Massimiliano Pontil
+vl-232-94 | Primal-Dual Subgradient Methods for Huge-Scale Problems | http://videolectures.net/roks2013_nesterov_methods/ | instructors:Yurii Nesterov
+vl-232-95 | Large Scale Analysis of Bioimages Using Python | http://videolectures.net/tcmm2014_coelho_bioimages_python/ | instructors:Luis Pedro Coelho
+vl-232-96 | Submodularity and Discrete Convexity | http://videolectures.net/nipsworkshops2012_fujishige_submodularity/ | instructors:Satoru Fujishige
+vl-232-97 | Connections between the Lasso and Support Vector Machines | http://videolectures.net/roks2013_jaggi_connections/ | instructors:Martin Jaggi
+vl-232-98 | Exotic Numeric Types in Julia for Fun and Profit | http://videolectures.net/tcmm2014_karpinski_julia_exotic_numeric_types/ | instructors:Stefan Karpinski
+vl-232-99 | Domain Specific Languages for Convex Optimization | http://videolectures.net/roks2013_boyd_language/ | instructors:Stephen P. Boyd
+vl-232-100 | From Kernels to Causality | http://videolectures.net/roks2013_schoelkopf_kernel/ | instructors:Bernhard Schölkopf
+vl-232-101 | Learning from Weakly Labeled Data | http://videolectures.net/roks2013_kwok_data/ | instructors:James Kwok
+vl-232-102 | Semidefinite Optimization and Convex Algebraic Geometry | http://videolectures.net/nipsworkshops2012_parrilo_geometry/ | instructors:Pablo A. Parrilo
+vl-232-103 | Dynamic ℓ1 Reconstruction | http://videolectures.net/roks2013_romberg_reconstruction/ | instructors:Justin Romberg
+vl-232-104 | Living on the Edge - Phase Transitions in Random Convex Programs | http://videolectures.net/roks2013_tropp_optimization/ | instructors:Joel Tropp
+vl-232-105 | Minimum Error Entropy Principle for Learning | http://videolectures.net/roks2013_zhou_learning/ | instructors:Ding-Xuan Zhou
+vl-232-106 | Lock-Free Approaches to Parallelizing Stochastic Gradient Descent | http://videolectures.net/nipsworkshops2011_recht_lockfree/ | instructors:Benjamin Recht
+vl-232-107 | Smart Cities: How Data Mining and Optimization Can Shape Future Cities | http://videolectures.net/ecmlpkdd2011_verscheure_smart/ | instructors:Olivier Verscheure
+vl-232-108 | Sharp analysis of low-rank kernel matrix approximations | http://videolectures.net/nipsworkshops2012_bach_analysis/ | instructors:Francis R. Bach
+vl-232-109 | Computational and Statistical Tradeoffs via Convex Relaxation | http://videolectures.net/nipsworkshops2012_chandrasekaran_convex_relaxation/ | instructors:Venkat Chandrasekaran
+vl-232-110 | Limited-memory quasi-Newton and Hessianfree Newton methods for non-smooth optimization | http://videolectures.net/nipsworkshops2010_schmidt_lmq/ | instructors:Mark Schmidt
+vl-232-111 | Highly dimensional problems in Computational Advertising | http://videolectures.net/ecmlpkdd2011_broder_highly/ | instructors:Andrei Broder
+vl-232-112 | Using Interior Point Methods for Optimization in Training Very Large Scale Support Vector Machines | http://videolectures.net/icml09_gondzio_ituipm/ | instructors:Jacek Gondzio
+vl-232-113 | On Recent Trends in Extremely Large-Scale Convex Optimization | http://videolectures.net/nipsworkshops09_nemirovksi_rte/ | instructors:Arkadi Nemirovski
+vl-232-114 | Efficiency of Quasi-Newton Methods on Strictly Positive Functions | http://videolectures.net/nipsworkshops2010_nesterov_eqn/ | instructors:Yurii Nesterov
+vl-232-115 | Bandit Algorithms for Online Linear Optimization | http://videolectures.net/icml09_cesa_bianchi_itbaolo/ | instructors:Nicolò Cesa-Bianchi
+vl-232-116 | What cannot be learned with Bethe Approximations | http://videolectures.net/nipsworkshops2012_globerson_bethe_approximations/ | instructors:Amir Globerson
+vl-232-117 | Self-Organizing Maps to Enhance Local Performance of Multi Objective Opimization | http://videolectures.net/mla09_pediroda_som/ | instructors:Valentino Pediroda
+vl-232-118 | Surrogate Assisted Optimization Methods: Recent Developments and Challenges | http://videolectures.net/mla09_ray_saom/ | instructors:Tapabrata Ray
+vl-232-119 | Mixing sum-product and max-product type updates to tighten tree-reweighted upper bounds for the log-partiton function | http://videolectures.net/nipsworkshops2010_hazan_msp/ | instructors:Tamir Hazan
+vl-232-120 | Bounding the Gaussian Process Information Gain: Applications to PAC-Bayes and GP Bandit Optimization | http://videolectures.net/pacbayesian_seeger_gpig/ | instructors:Matthias W. Seeger
+vl-232-121 | Getting Started with Julia | http://videolectures.net/tcmm2014_bezanson_julia/ | instructors:Jeffrey Bezanson
+vl-232-122 | Computing in Parallel With Python and Visualizing the Results | http://videolectures.net/tcmm2014_coelho_computing_with_python/ | instructors:Luis Pedro Coelho
+vl-232-123 | Pylearn2: Using Theano for Deep Learning | http://videolectures.net/tcmm2014_lamblin_pylearn2/ | instructors:Pascal Lamblin
+vl-232-124 | Convex Optimization in Python with CVXPY | http://videolectures.net/tcmm2014_diamond_cvxpy_convex_optimization/ | instructors:Steven Diamond
+vl-232-125 | Convex Optimization | http://videolectures.net/mlss2011_vandenberghe_convex/ | instructors:Lieven Vandenberghe

@@ -12,7 +12,6 @@ class VideolecturesSpider(Spider):
                          'Keynote' : 'vkn',\
                          'Interview' : 'viv',\
                          'Other' : '__'}
-
         self.subject_cid_map = {'Machine Learning' : '16',\
                                 'Data Mining' : '36',\
                                 'Computer Vision' : '71',\
@@ -26,8 +25,8 @@ class VideolecturesSpider(Spider):
                                 'Artificial Intelligence' : '136',\
                                 'Big Data' : '602',\
                                 'Semantic Web' : '27',\
-                                'Web Search' : '163'}
-
+                                'Web Search' : '163',\
+                                'Optimization Methods' : '232'}
     def findLastPage(self, soup):
         max_page = 1
         for a in soup.find_all('a'):
@@ -83,6 +82,7 @@ class VideolecturesSpider(Spider):
         f = self.open_db(file_name + ".tmp")
         self.count = 0
  
+        print 'processing ' + subject
         for s in self.type_map.keys():
             r = requests.get('http://videolectures.net/site/ajax/drilldown/?t=' + self.type_map.get(s) + '&cid=' + self.subject_cid_map.get(subject) + '&w=5')
             soup = BeautifulSoup(r.text)
