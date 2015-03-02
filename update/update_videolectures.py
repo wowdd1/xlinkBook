@@ -7,17 +7,41 @@ class VideolecturesSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = 'videolectures'
+        self.type_map = {'Lecture ' : 'vl',\
+                         'Tutorial' : 'vtt',\
+                         'Keynote' : 'vkn',\
+                         'Interview' : 'viv',\
+                         'Other' : '__'}
 
-    def processData(self, subject):
-        r = requests.get('http://videolectures.net/site/ajax/drilldown/?t=evt&cid=13&w=5')
-        soup = BeautifulSoup(r.text)
+        self.subject_cid_map = {'Machine Learning' : '16',\
+                                'Data Mining' : '36',\
+                                'Computer Vision' : '71',\
+                                'Network Analysis' : '28',\
+                                'Data Visualisation' : '41',\
+                                'Natural Language Processing' : '144',\
+                                'Pattern Recognition' : '395',\
+                                'Text Mining' : '37',\
+                                'Web Mining' : '127',\
+                                'Robotics' : '69',\
+                                'Artificial Intelligence' : '136',\
+                                'Big Data' : '602',\
+                                'Semantic Web' : '27',\
+                                'Web Search' : '163'}
+
+    def findLastPage(self, soup):
         max_page = 1
         for a in soup.find_all('a'):
             if a.text == ' Last ':
                 max_page = int(a['href'][a['href'].find('(') + 1 : a['href'].find(')')])
                 break
+        return max_page
 
-        file_name = self.get_file_name(subject, self.school)
+    def processEventData(self, subject):
+        r = requests.get('http://videolectures.net/site/ajax/drilldown/?t=evt&cid=13&w=5')
+        soup = BeautifulSoup(r.text)
+        max_page = self.findLastPage(soup)
+
+        file_name = self.get_file_name('eecs/' + self.school + '/' + subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -52,9 +76,46 @@ class VideolecturesSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
-        
+
+    def processData(self, subject):
+        file_name = self.get_file_name('eecs/' + self.school + '/' + subject, self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+ 
+        for s in self.type_map.keys():
+            r = requests.get('http://videolectures.net/site/ajax/drilldown/?t=' + self.type_map.get(s) + '&cid=' + self.subject_cid_map.get(subject) + '&w=5')
+            soup = BeautifulSoup(r.text)
+            max_page = self.findLastPage(soup)
+
+            for page in range(1, max_page + 1):
+                r = requests.get('http://videolectures.net/site/ajax/drilldown/?t=' + self.type_map.get(s) + '&p=' + str(page) + '&cid=' + self.subject_cid_map.get(subject) + '&w=5')
+                soup = BeautifulSoup(r.text)
+                for div in soup.find_all('div', class_='lec_thumb'):
+                    instructors = ''
+                    title = div.a.span.span.text.strip()        
+                    url = 'http://videolectures.net' + div.a['href']
+                    soup1 = BeautifulSoup(div.prettify())
+                    div = soup1.find('div', class_='author')
+                    if div != None and div.span != None:
+                        instructors = 'instructors:' + div.span.text.strip()
+                    self.count += 1
+                    vl_num = 'vl-' + str(self.subject_cid_map.get(subject)) + '-' + str(self.count)
+                    print vl_num + ' ' + title
+                    self.write_db(f, vl_num, title, url, instructors)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+ 
     def doWork(self):
-        self.processData('eecs-event')
+        #self.processEventData('event')
+        for subject in self.subject_cid_map.keys():
+            self.processData(subject)
 
 
 start = VideolecturesSpider()

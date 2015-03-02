@@ -1,0 +1,178 @@
+vl-127-1 | Boilerplate Detection Using Shallow Text Features | http://videolectures.net/wsdm2010_kohlschutter_bdu/ | instructors:Christian Kohlschütter
+vl-127-2 | Truth Discovery with Multiple Conflicting Information Providers on the Web | http://videolectures.net/kdd07_yin_tdwmci/ | instructors:Xiaoxin Yin
+vl-127-3 | Link analysis with pajek | http://videolectures.net/acai05_kejzar_lasn/ | instructors:Nataša Kejžar
+vl-127-4 | Web Data Mining | http://videolectures.net/russir2010_baeza_yates_wdm/ | instructors:Ricardo Baeza-Yates
+vl-127-5 | Dynamics of Web: Analysis and Implications from Search Perspective | http://videolectures.net/russir2012_sengor_altingovde_kanhabua_web/ | instructors:Ismail Sengor Altingovde, Nattiya Kanhabua
+vl-127-6 | Mining Diverse Views from Related Articles | http://videolectures.net/diversiweb2011_pochampally_mdv/ | instructors:Ravali Pochampally
+vl-127-7 | Computational advertising: business models, technologies and issues (CoAd) | http://videolectures.net/russir09_shanahan_cabmtai/ | instructors:James G. Shanahan
+vl-127-8 | Understanding Temporal Query Dynamics | http://videolectures.net/wsdm2011_svore_utq/ | instructors:Krysta M. Svore
+vl-127-9 | Identifying the Influential Bloggers | http://videolectures.net/wsdm08_agarwal_iib/ | instructors:Nitin Agarwal
+vl-127-10 | DBpedia - A Linked Data Hub and Data Source for Web Applications and Enterprises | http://videolectures.net/www09_kobilarov_dbpldh/ | instructors:Georgi Kobilarov, Sören Auer, Jens Lehmann
+vl-127-11 | Large-Scale Behavioral Targeting | http://videolectures.net/kdd09_chen_lsbt/ | instructors:Ye Chen
+vl-127-12 | Classiﬁcation of social network sites based on network indexes and communication patterns | http://videolectures.net/socialweb2011_toriumi_classification/ | instructors:Fujio Toriumi
+vl-127-13 | Recommender Systems with Social Regularization | http://videolectures.net/wsdm2011_lyu_rss/ | instructors:Michael R. Lyu
+vl-127-14 | Machine Learning for the Web: A Unified View | http://videolectures.net/bsciw08_domingos_mlwuv/ | instructors:Pedro Domingos
+vl-127-15 | Link Analysis and Text Mining : Current State of the Art and Applications for Counter Terrorism | http://videolectures.net/mmdss07_feldman_latm/ | instructors:Ronen Feldman
+vl-127-16 | How Optimized Environmental Sensing Helps Address Information Overload on the Web | http://videolectures.net/ijcai09_guestrin_iow/ | instructors:Carlos Guestrin, Tom Mitchell
+vl-127-17 | You Are What You Tweet: Analyzing Twitter for Public Health | http://videolectures.net/icwsm2011_paul_health/ | instructors:Michael J. Paul
+vl-127-18 | ShareIt: Mining SocialMedia Activities for Detecting Events | http://videolectures.net/s3mr2011_troncy_shareit/ | instructors:Raphaël Troncy
+vl-127-19 | Efficient Online Ad Serving in a Display Advertising Meta-Exchange | http://videolectures.net/wsdm2011_lang_dam/ | instructors:Kevin J. Lang
+vl-127-20 | Hide the Stack: Toward Usable Linked Data | http://videolectures.net/eswc2011_sah_dadzie_stack/ | instructors:Aba-Sah Dadzie
+vl-127-21 | Web mining | http://videolectures.net/acai05_mladenic_wm/ | instructors:Dunja Mladenić
+vl-127-22 | A Generalized Co-HITS Algorithm and Its Application to Bipartite Graphs | http://videolectures.net/kdd09_deng_gchaiabg/ | instructors:Hongbo Deng
+vl-127-23 | Security Applications of Web mining | http://videolectures.net/mmdss07_wennerberg_saw/ | instructors:Pinar Oezden Wennerberg
+vl-127-24 | Scalable Knowledge Harvesting with High Precision and High Recall | http://videolectures.net/wsdm2011_nakashole_skh/ | instructors:Ndapandula Nakashole
+vl-127-25 | Patterns of Temporal Variation in Online Media | http://videolectures.net/wsdm2011_yang_tvo/ | instructors:Jaewon Yang
+vl-127-26 | Rated Aspect Summarization of Short Comments | http://videolectures.net/www09_lu_rassc/ | instructors:Yue Lu, ChengXiang Zhai, Neel Sundaresan
+vl-127-27 | A Case Study of Behavior-driven Conjoint Analysis on Yahoo! Front Page Today Module | http://videolectures.net/kdd09_guo_csbdcayfptm/ | instructors:Lei Guo
+vl-127-28 | Flocks, Herds, and Stories temporal coherence and the long tail | http://videolectures.net/acmwebsci2011_bernstein_coherence/ | instructors:Mark Bernstein
+vl-127-29 | Web Spam Detection | http://videolectures.net/mmdss07_sydow_wsd/ | instructors:Marcin Sydow, Carlos Castillo
+vl-127-30 | Too Many Links in the Horizon; What is Next? Linked Views and Linked History | http://videolectures.net/iswc2011_liarou_links/ | instructors:Erietta Liarou
+vl-127-31 | Translating Webpages into Bidphrases for Advertising | http://videolectures.net/wsdm2010_pang_agobp/ | instructors:Bo Pang
+vl-127-32 | User Grouping Behavior in Online Forums | http://videolectures.net/kdd09_shi_ugbof/ | instructors:Xiaolin Shi
+vl-127-33 | Life Mining | http://videolectures.net/searchcomputing2012_rijke_life/ | instructors:Maarten de Rijke
+vl-127-34 | Mining Social Images with Distance Metric Learning for Automated Image Tagging | http://videolectures.net/wsdm2011_hoi_msi/ | instructors:Steven C. H. Hoi
+vl-127-35 | On the Convexity of Latent Social Network Inference | http://videolectures.net/nips2010_myers_cls/ | instructors:Seth A. Myers
+vl-127-36 | Integrating Linked Data and Services with Linked Data Services | http://videolectures.net/eswc2011_speiser_services/ | instructors:Sebastian Speiser, Jens Lehmann
+vl-127-37 | Linked Data Metrics for Flexible Expert Search on the open Web | http://videolectures.net/eswc2011_stankovic_metrics/ | instructors:Milan Stankovic, Jens Lehmann
+vl-127-38 | Socially enhanced Services Computing | http://videolectures.net/kolokviji_dustdar_sesc/ | instructors:Schahram Dustdar
+vl-127-39 | Is data sharing the privilege of a few? Bringing Linked Data to those without the Web | http://videolectures.net/iswc2011_schlobach_web/ | instructors:Stefan Schlobach
+vl-127-40 | An Introduction to Web Science: Observing the Online World to Study the Offline World | http://videolectures.net/russir2012_weber_world/ | instructors:Ingmar Weber
+vl-127-41 | Approximate subgraph matching | http://videolectures.net/diversiweb2011_trampus_asm/ | instructors:Mitja Trampuš
+vl-127-42 | Unbiased Offline Evaluation of Contextual-bandit-based News Article Recommendation Algorithms | http://videolectures.net/wsdm2011_li_uoe/ | instructors:Lihong Li
+vl-127-43 | Expressing Opinion Diversity | http://videolectures.net/diversiweb2011_rusu_eod/ | instructors:Delia Rusu
+vl-127-44 | An Integrated Socio-Tehnical Crowdsourcing Platform for Accelerating Returns in eScience | http://videolectures.net/iswc2011_demartini_platform/ | instructors:Gianluca Demartini
+vl-127-45 | Zero-Knowledge Query Planning for an Iterator Implementation of Link Traversal Based Query Execution | http://videolectures.net/eswc2011_hartig_zero/ | instructors:Olaf Hartig, Andreas Harth
+vl-127-46 | Measuring the Similarity between Implicit Semantic Relations from the Web | http://videolectures.net/www09_bollegala_mtsisr/ | instructors:Danushka Bollegala, Yutaka Matsuo, Mitsuru Ishizuka
+vl-127-47 | Scalable Graph Clustering Using Stochastic Flows: Applications to Community Discovery | http://videolectures.net/kdd09_satuluri_sgcusfacd/ | instructors:Venu Satuluri
+vl-127-48 | Learning to Link with Wikipedia | http://videolectures.net/cikm08_milne_ltlww/ | instructors:David Milne
+vl-127-49 | SmartMiner: A New Framework for Mining Large Scale Web Usage Data | http://videolectures.net/www09_alibayir_sm/ | instructors:Murat Ali Bayir, Ismail Hakki Toroslu,
+   
+    et al.
+vl-127-50 | Tag Suggestr: Automatic Photo Tag Expansion using Visual Information for Photo Sharing Websites | http://videolectures.net/samt08_sevil_apte/ | instructors:Sare Gül Sevil
+vl-127-51 | Mixture Models and Collaborative Filtering Algorithms | http://videolectures.net/fws06_dubhashi_mmcfa/ | instructors:Devdatt Dubhashi
+vl-127-52 | Data Mining Based User Modeling Systems for Web Personalization Applied to People with Disabilities | http://videolectures.net/nips09_arbelaitz_dmb/ | instructors:Olatz Arbelaitz
+vl-127-53 | Opening of the 1st International Workshop on Knowledge Diversity on the Web | http://videolectures.net/diversiweb2011_madalli_opening/ | instructors:Devika P. Madalli
+vl-127-54 | Recommending information sources to information seekers in Twitter | http://videolectures.net/socialweb2011_armentano_recommending/ | instructors:Marcelo G. Armentano
+vl-127-55 | A framework for a multilingual contextual and behavioral online advertising network: a case study | http://videolectures.net/sikdd2011_kosir_multilingual/ | instructors:Domen Košir
+vl-127-56 | A Novel Lexicalized HMM-Based Learning Framework for Web Opinion Mining | http://videolectures.net/icml09_jin_nlhmmblfwom/ | instructors:Wei Jin
+vl-127-57 | A Novel Click Model and Its Applications to Online Advertising | http://videolectures.net/wsdm2010_chen_ancm/ | instructors:Weizhu Chen
+vl-127-58 | User logs processing using machine learning techniques | http://videolectures.net/mmdss07_artieres_ulpum/ | instructors:Thierry Artières
+vl-127-59 | Crowdsourcing for Relevance Evaluation | http://videolectures.net/cikm08_rose_cfre/ | instructors:Daniel E. Rose
+vl-127-60 | iLink: Search and Routing in Social Networks - Part 1 | http://videolectures.net/kdd07_davitz_ilink/ | instructors:Jeffrey Davitz
+vl-127-61 | 'Lies, Damn Lies, and Statistics': A Critical Assessment of Preferential Attachment-type Network Models of the Internet | http://videolectures.net/eccs07_willinger_ldl/ | instructors:Walter Willinger
+vl-127-62 | A New Visual Search Interface for Web Browsing | http://videolectures.net/wsdm09_xu_nvsi/ | instructors:Songhua Xu, Tao Jin, Francis C.M. Lau
+vl-127-63 | Using Graded-Relevance Metrics for Evaluating Community QA Answer Selection | http://videolectures.net/wsdm2011_sakai_ugr/ | instructors:Tetsuya Sakai
+vl-127-64 | Applications of Query Mining | http://videolectures.net/fws06_yates_aqm/ | instructors:Ricardo Baeza-Yates
+vl-127-65 | SIHJoin: Querying Remote and Local Linked Data | http://videolectures.net/eswc2011_ladwig_quering/ | instructors:Günter Ladwig
+vl-127-66 | Efficient and Decentralized PageRank Approximation in a P2P Web Search Network | http://videolectures.net/fws06_parreira_edpap/ | instructors:Josiane Parreira
+vl-127-67 | Dynamic Relationship and Event Discovery | http://videolectures.net/wsdm2011_sarma_dre/ | instructors:Anish Das Sarma
+vl-127-68 | Website Privacy Preservation for Query Log Publishing | http://videolectures.net/mmdss07_poblete_wpp/ | instructors:Barbara Poblete
+vl-127-69 | Internals of an Aggregated Web News Feed | http://videolectures.net/is2012_trampus_aggregated_web/ | instructors:Mitja Trampuš
+vl-127-70 | Extracting Meta Statements from the Blogosphere | http://videolectures.net/icwsm2011_mesquita_blogosphere/ | instructors:Filipe Mesquita
+vl-127-71 | An architecture for context-aware adaptive data stream mining | http://videolectures.net/ecml07_mohamed_acac/ | instructors:Mohamed Medhat Gaber
+vl-127-72 | Feedback Effects between Similarity and Social Influence in Online Communities | http://videolectures.net/kdd08_crandall_fessioc/ | instructors:David J. Crandall
+vl-127-73 | Entity Discovery and Assignment for Opinion Mining Applications | http://videolectures.net/kdd09_liu_edaoma/ | instructors:Bing Liu
+vl-127-74 | An Experimental Comparison of Click Position-Bias Models | http://videolectures.net/wsdm08_craswell_eccp/ | instructors:Nick Craswell
+vl-127-75 | Customizing the multilingual customer experience – deliver targeted online information based on geography, user preferences, channel and visitor demographics | http://videolectures.net/w3cworkshop2011_truscott_experience/ | instructors:Ian Truscott
+vl-127-76 | Improving Ad Relevance in Sponsored Search | http://videolectures.net/wsdm2010_hillard_iars/ | instructors:Dustin Hillard
+vl-127-77 | Overview of Spinn3r.com and the Spinn3r dataset | http://videolectures.net/icwsm09_burton_spinn3r/ | instructors:Kevin Burton
+vl-127-78 | A Scalable Pattern Mining Approach to Web Graph Compression with Communities | http://videolectures.net/wsdm08_buehrer_spma/ | instructors:Greg Buehrer
+vl-127-79 | User Modeling Combining Access Logs, Page Content and Semantics | http://videolectures.net/www2011_fortuna_umc/ | instructors:Blaž Fortuna
+vl-127-80 | Ranking Web Sites with Real User Traffic | http://videolectures.net/wsdm08_meiss_rws/ | instructors:Mark Meiss
+vl-127-81 | Efficient and Decentralized Page Rank Approximation in P2P Networks with Malicious Agents | http://videolectures.net/eccs07_donato_edp/ | instructors:Debora Donato
+vl-127-82 | Current Approaches to Personalized Web Search | http://videolectures.net/fws06_chirita_capws/ | instructors:Paul-Alexandre Chirita
+vl-127-83 | Flash Floods and Ripples: The Spread of Media Content through the Blogosphere | http://videolectures.net/icwsm09_cha_ffr/ | instructors:Meeyoung Cha
+vl-127-84 | Gauging the Internet Doctor: Ranking Medical Facts based on Community Knowledge | http://videolectures.net/datamining2011_vydiswaran_gauging/ | instructors:V.G.Vinod Vydiswaran
+vl-127-85 | Internet Advertising and Optimal Auction Design | http://videolectures.net/bsciw08_schwarz_iaoad/ | instructors:Michael Schwarz
+vl-127-86 | Personalized Click Prediction in Sponsored Search | http://videolectures.net/wsdm2010_cheng_pcpis/ | instructors:Haibin Cheng
+vl-127-87 | CourseRank: A Closed-Community Social System through the Magnifying Glass | http://videolectures.net/icwsm09_koutrika_crccss/ | instructors:Koutrika Georgia
+vl-127-88 | Optimizing Web Traffic via the Media Scheduling Problem | http://videolectures.net/kdd09_backstrom_owtvmsp/ | instructors:Lars Backstrom
+vl-127-89 | Introduction: Making Linked Data Work | http://videolectures.net/stisemanticsummit2011_domingue_linkedata/ | instructors:John Domingue
+vl-127-90 | Content Based Recommendation and Summarization in the Blogosphere | http://videolectures.net/icwsm09_hassan_cbrsb/ | instructors:Ahmed Hassan
+vl-127-91 | Recovering Implicit Thread Structure in Newsgroup Style Conversations | http://videolectures.net/icwsm08_wang_rits/ | instructors:Yi-Chia Wang, Mahesh Joshi,
+   
+    et al.
+vl-127-92 | Collective Wisdom: Information Growth in Wikis and Blogs | http://videolectures.net/bsciw08_das_cwigwb/ | instructors:Malik Magdon-Ismail, Sanmay Das
+vl-127-93 | Spontaneous Inference of Personality Traits from Online Profiles | http://videolectures.net/icwsm08_stecher_sipt/ | instructors:Kristin Stecher, Scott Counts
+vl-127-94 | Mining Social Networks for Personalized Email Prioritization | http://videolectures.net/kdd09_yoo_msnfp/ | instructors:Shinjae Yoo
+vl-127-95 | Graph Fibrations, graph isomorphism and PageRank | http://videolectures.net/fws06_boldi_gfgip/ | instructors:Paolo Boldi
+vl-127-96 | A Viewpoint-based Approach for Interaction Graph Analysis | http://videolectures.net/kdd09_asur_vbaiga/ | instructors:Sitaram Asur
+vl-127-97 | Using Rank Propagation and Probabilistic Counting for Link-based Spam Detection | http://videolectures.net/fws06_castillo_urppc/ | instructors:Carlos Castillo
+vl-127-98 | On Ranking Controversies in Wikipedia: Models and Evaluation | http://videolectures.net/wsdm08_lim_orcw/ | instructors:Ee-Peng Lim, Ba-Quy Vuong
+vl-127-99 | Speeding up Algorithms on Compressed Web Graphs | http://videolectures.net/wsdm09_karande_suacwg/ | instructors:Chinmay D. Karande
+vl-127-100 | Webpage Understanding: an Integrated Approach | http://videolectures.net/kdd07_zhu_wu/ | instructors:Jun Zhu
+vl-127-101 | Preferential Behavior in Online Groups | http://videolectures.net/wsdm08_novak_pbog/ | instructors:Jasmine Novak
+vl-127-102 | Mining the Web to Facilitate Fast and Accurate Approximate Match | http://videolectures.net/www09_xin_mtw/ | instructors:Surajit Chaudhuri, Venkatesh Ganti, Dong Xin
+vl-127-103 | Automating News Content Analysis: An Application to Gender Bias and Readability | http://videolectures.net/wapa2010_ali_anca/ | instructors:Omar Ali
+vl-127-104 | Exploring Social Tagging Graph for Web Object Classification | http://videolectures.net/kdd09_yin_estgwoc/ | instructors:Zhijun Yin
+vl-127-105 | Mining Named Entities with Temporally Correlated Bursts from Multilingual Web News Streams | http://videolectures.net/wsdm2011_kotov_mne/ | instructors:Alexander Kotov
+vl-127-106 | Large Scale Ranking Problem: some theoretical and algorithmic issues | http://videolectures.net/mlss06tw_zhang_stai/ | instructors:Tong Zhang
+vl-127-107 | Analyzing the potential of Microblogs for spatio-temporal popularity estimation of music artists | http://videolectures.net/socialweb2011_schedl_analyzing/ | instructors:Markus Schedl
+vl-127-108 | Mining Rich Session Context to Improve Web Search | http://videolectures.net/kdd09_zhu_mrciws/ | instructors:Guangyu Zhu
+vl-127-109 | TraSer Open Source solution for Tracking and Tracing | http://videolectures.net/ict08_wortmann_toss/ | instructors:Hans Wortmann
+vl-127-110 | PSkip: Estimating relevance ranking quality from web search clickthrough data | http://videolectures.net/kdd09_wang_pserrqwscd/ | instructors:Kuansan Wang
+vl-127-111 | Theoretical analysis of Link Analysis Ranking | http://videolectures.net/fws06_tsaparas_talar/ | instructors:Panayiotis Tsaparas
+vl-127-112 | What are they blogging about? Personality, topic and motivation in blogs | http://videolectures.net/icwsm09_gill_watba/ | instructors:Alastair J. Gill
+vl-127-113 | Space Planning for Online Community | http://videolectures.net/icwsm08_fisher_apoc/ | instructors:Danyel Fisher, Tammara Combs Turner, Marc Smith
+vl-127-114 | Web mining for natural language engineering tasks | http://videolectures.net/fws06_rosso_wmnle/ | instructors:Paolo Rosso
+vl-127-115 | BLEWS: Using Blogs to Provide Context for News Articles | http://videolectures.net/icwsm08_gamon_blews/ | instructors:Michael Gamon, Sumit Basu,
+   
+    et al.
+vl-127-116 | Adaptive Weighing Designs for Keyword Value Computation | http://videolectures.net/wsdm2010_zervas_awdf/ | instructors:Georgios Zervas
+vl-127-117 | Challenges in Crowd-sourcing | http://videolectures.net/w3cworkshop2011_nes_challenges/ | instructors:Pal Nes
+vl-127-118 | Generating Social Network Features for Link-based Classification | http://videolectures.net/ecml07_karamon_gsn/ | instructors:Jun Karamon
+vl-127-119 | The Directed Closure Process in Information Networks with an Analysis of Link Formation on Twitter | http://videolectures.net/icwsm2010_romero_dcp/ | instructors:Daniel M. Romero
+vl-127-120 | Turning Down the Noise in the Blogosphere | http://videolectures.net/kdd09_veda_tdnb/ | instructors:Gaurav Veda
+vl-127-121 | Joint Training for Open-domain Extraction on the Web: Exploiting Overlap when Supervision is Limited | http://videolectures.net/wsdm2011_gupta_jto/ | instructors:Rahul Gupta
+vl-127-122 | Boosting Performance of Web Search Engines Using Query Logs | http://videolectures.net/fws06_silvestri_bpwse/ | instructors:Fabrizio Silvestri
+vl-127-123 | Yahoo! Research Overview | http://videolectures.net/training06_yates_yro/ | instructors:Ricardo Baeza-Yates
+vl-127-124 | Efficient Lazy Algorithms for Minimal-Interval Semantics | http://videolectures.net/fws06_vigna_elami/ | instructors:Sebastiano Vigna
+vl-127-125 | Visual Analyses on Linked Data – An Opportunity for both Fields | http://videolectures.net/stisemanticsummit2011_granitzer_analyses/ | instructors:Michael Granitzer
+vl-127-126 | Large Human Communication Networks: Patterns and a Utility-Driven Generator | http://videolectures.net/kdd09_du_lhcnpudg/ | instructors:Nan Du
+vl-127-127 | Human dynamics revealed through Web analytics | http://videolectures.net/cvss08_ramasco_hdrtwa/ | instructors:José Javier Ramasco
+vl-127-128 | Catching the Drift: Learning Broad Matches from Clickthrough Data | http://videolectures.net/kdd09_gupta_cdlbmcd/ | instructors:Sonal Gupta
+vl-127-129 | Predicting Bounce Rates in Sponsored Search Advertisements | http://videolectures.net/kdd09_sculley_pbrssa/ | instructors:D. Sculley
+vl-127-130 | The Blogosphere at a glance: Content-based structures made simple | http://videolectures.net/socialweb2011_gornerup_blogosphere/ | instructors:Olof Görnerup
+vl-127-131 | Filtering Multi-Lingual Terrorist Content with Graph-Theoretic Classifi-cation Tools | http://videolectures.net/mmdss07_last_fmlt/ | instructors:Mark Last
+vl-127-132 | Mining Broad Latent Query Aspects from Search Sessions | http://videolectures.net/kdd09_punera_mblqass/ | instructors:Kunal Punera
+vl-127-133 | Towards Adaptive Web Mining: Histograms and Contexts in Text Data Clustering | http://videolectures.net/ida07_klopotek_tawm/ | instructors:Mieczyslaw A. Klopotek
+vl-127-134 | Efficient and Effective Link Analysis with Precomputed SALSA Maps | http://videolectures.net/cikm08_najork_eaela/ | instructors:Marc Najork
+vl-127-135 | Mobile Search on Ubiquitous Collaborative Annotations of Space | http://videolectures.net/fws06_cherubini_msuca/ | instructors:Mauro Cherubini
+vl-127-136 | Research 17: Mining Information for Instance Unification | http://videolectures.net/iswc06_aswani_miiu/ | instructors:Niraj Aswani
+vl-127-137 | Entity Disambiguation using Relations extracted from Wikipedia | http://videolectures.net/akbc2010_pilz_edrw/ | instructors:Anja Pilz
+vl-127-138 | Mining the Web for Meaning | http://videolectures.net/ecmlpkdd2011_turney_10years/ | instructors:Peter D. Turney
+vl-127-139 | Opening of the 1st International Workshop on Knowledge Diversity on the Web | http://videolectures.net/diversiweb2011_simperl_opening/ | instructors:Elena Simperl
+vl-127-140 | Celebrity Watch: Browsing News Content by Exploiting Social Intelligence | http://videolectures.net/ecmlpkdd2011_flaounas_browsing/ | instructors:Ilias Flaounas
+vl-127-141 | Introduction: Managing Data @ Web Scale | http://videolectures.net/stisemanticsummit2011_brodie_managing/ | instructors:Michael L. Brodie
+vl-127-142 | Discussion | http://videolectures.net/socialweb2011_gavalda_discussion/ | instructors:Ricard Gavalda
+vl-127-143 | Poster session promo clip | http://videolectures.net/chorusfc09_poster_promo/ | 
+vl-127-144 | Semantic Technology for online, broadcast and print media | http://videolectures.net/wims2014_rayfield_semantic_technology/ | instructors:Jem Rayfield
+vl-127-145 | BIG DATA - from Hype to Reality | http://videolectures.net/wims2014_benjamins_big_data/ | instructors:Richard Benjamins
+vl-127-146 | Social recommender systems: a graphical model based approach | http://videolectures.net/socialweb2011_gael_social/ | instructors:Jurgen Van Gael
+vl-127-147 | Android App discovery: Supporting users through the app discovery funnel | http://videolectures.net/socialweb2011_mehta_android/ | instructors:Bhaskar Mehta
+vl-127-148 | Guidelines for Multilingual Linked Data | http://videolectures.net/wims2013_gomez_perez_multilingual_linked_data/ | instructors:Asunción Gómez-Pérez
+vl-127-149 | Machine Reading at Web Scale | http://videolectures.net/wsdm08_etzioni_mrws/ | instructors:Oren Etzioni
+vl-127-150 | Harvesting, Searching, and Ranking Knowledge from the Web | http://videolectures.net/wsdm09_weikum_hsrnw/ | instructors:Gerhard Weikum
+vl-127-151 | Meme-tracking, Diffusion, and the Flow of On-Line Information | http://videolectures.net/icwsm09_kleinberg_mtdfoi/ | instructors:Jon Kleinberg
+vl-127-152 | Scalable Link Mining and Analysis on Information Networks | http://videolectures.net/ilpmlgsrl09_yu_slmain/ | instructors:Philip S. Yu
+vl-127-153 | Building Structured Web Databases: A Midterm Report from the Cimple Project | http://videolectures.net/akbc2010_doan_bswd/ | instructors:AnHai Doan
+vl-127-154 | Mining the Web 2.0 for Better Search | http://videolectures.net/www09_baezayates_mtwbs/ | instructors:Ricardo Baeza-Yates
+vl-127-155 | ProbLog and its Application to Link Mining in Biological Networks | http://videolectures.net/mlg07_de_raedt_paia/ | instructors:Luc De Raedt
+vl-127-156 | Mining Queries | http://videolectures.net/ecml07_baeza_yates_mwq/ | instructors:Ricardo Baeza-Yates
+vl-127-157 | Can you parametrize happiness | http://videolectures.net/webstart08_nabergoj_cyph/ | instructors:Andrej Nabergoj
+vl-127-158 | Reasoning with LarKC | http://videolectures.net/coinplanetdataschool2011_witbrock_larkc/ | instructors:Michael Witbrock
+vl-127-159 | eBay Research | http://videolectures.net/ecmlpkdd09_sundaresan_it/ | instructors:Neel Sundaresan
+vl-127-160 | Data trails reconstruction at the community level in the Web of data | http://videolectures.net/soks2010_chavalarias_dtr/ | instructors:David Chavalarias
+vl-127-161 | Text Mining and Link Analysis for Web and Semantic Web | http://videolectures.net/kdd07_grobelnik_tmala/ | instructors:Marko Grobelnik, Dunja Mladenić, Blaž Fortuna
+vl-127-162 | Mining Heterogeneous Information Networks | http://videolectures.net/kdd2010_han_mhin/ | instructors:Jiawei Han
+vl-127-163 | Web Mining | http://videolectures.net/ijcai2011_t16_mining/ | instructors:Ricardo Baeza-Yates, Aris Gionis
+vl-127-164 | Mining Complex Entities from Heterogeneous Information Networks | http://videolectures.net/ecmlpkdd2011_ciravegna_varga_networks/ | instructors:Fabio Ciravegna, Andrea Varga
+vl-127-165 | Web mining | http://videolectures.net/ecmlpkdd2010_baeza_yates_wm/ | instructors:Ricardo Baeza-Yates
+vl-127-166 | Latent Variable Models for Document Analysis | http://videolectures.net/mlss08au_buntine_docm/ | instructors:Wray Buntine
+vl-127-167 | Planning, Running, and Analyzing Controlled Experiments on the Web | http://videolectures.net/kdd09_kohavi_longbotham_pracew/ | instructors:Ron Kohavi, Roger Longbotham
+vl-127-168 | Publishing and Consuming Linked Sensor Data | http://videolectures.net/coinplanetdataschool2011_calbimonte_data/ | instructors:Jean-Paul Calbimonte
+vl-127-169 | Advances in Mining the Web | http://videolectures.net/kdd09_zaiane_mobasher_spiliopoulou_nasraoui_aimtw/ | instructors:Myra Spiliopoulou, Osmar R. Zaïane,
+   
+    et al.
+vl-127-170 | Media Stream | http://videolectures.net/coinplanetdataschool2011_fortuna_stream/ | instructors:Blaž Fortuna

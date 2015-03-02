@@ -1,0 +1,485 @@
+vl-71-1 | Sliding Shapes for 3D Object Detection in Depth Images | http://videolectures.net/eccv2014_song_depth_images/ | instructors:Shuran Song
+vl-71-2 | Visualizing and Understanding Convolutional Networks | http://videolectures.net/eccv2014_zeiler_convolutional_networks/ | instructors:Matthew Zeiler
+vl-71-3 | 30Hz Object Detection with DPM V5 | http://videolectures.net/eccv2014_forsyth_object_detection/ | instructors:David Forsyth
+vl-71-4 | PanoContext: A Whole-room 3D Context Model for Panoramic Scene Understanding | http://videolectures.net/eccv2014_zhang_panoramic_scene/ | instructors:Yinda Zhang
+vl-71-5 | Large-Scale Object Classification using Label Relation Graphs | http://videolectures.net/eccv2014_deng_relation_graphs/ | instructors:Jia Deng
+vl-71-6 | LSD-SLAM: Large-Scale Direct Monocular SLAM | http://videolectures.net/eccv2014_engel_monocular_slam/ | instructors:Jakob Engel
+vl-71-7 | Face detection without bells and whistles | http://videolectures.net/eccv2014_mathias_face_detection/ | instructors:Markus Mathias
+vl-71-8 | Tracking Interacting Objects Optimally Using Integer Programming | http://videolectures.net/eccv2014_wang_interacting_objects/ | instructors:Xinchao Wang
+vl-71-9 | Part-Based R-CNNs for Fine-Grained Category Detection | http://videolectures.net/eccv2014_zhang_category_detection/ | instructors:Ning Zhang
+vl-71-10 | Visual Tracking by Sampling Tree-Structured Graphical Models | http://videolectures.net/eccv2014_hong_graphical_models/ | instructors:Seunghoon Hong
+vl-71-11 | Knowing a Good HOG Filter When You See It: Efficient Selection of Filters for Detection | http://videolectures.net/eccv2014_ahmed_efficient_selection/ | instructors:Ejaz Ahmed
+vl-71-12 | Blind Deblurring Using Internal Patch Recurrence | http://videolectures.net/eccv2014_michaeli_blind_deblurring/ | instructors:Tomer Michaeli
+vl-71-13 | Reconstructing the World’s Museums | http://videolectures.net/eccv2012_xiao_museums/ | instructors:Jianxiong Xiao, Jean Ponce, Tomas Pajdla
+vl-71-14 | Rolling Guidance Filter | http://videolectures.net/eccv2014_jia_guidance_filter/ | instructors:Jiaya Jia
+vl-71-15 | Coarse-to-Fine Auto-encoder Networks (CFAN) for Real-time Face Alignment | http://videolectures.net/eccv2014_zhang_face_alignment/ | instructors:Jie Zhang
+vl-71-16 | Integrating Context and Occlusion for Car Detection by Hierarchical And-Or Model | http://videolectures.net/eccv2014_li_car_detection/ | instructors:Bo Li
+vl-71-17 | Linking People in Videos with “Their” Names Using Coreference Resolution | http://videolectures.net/eccv2014_ramanathan_linking_people/ | instructors:Vignesh Ramanathan
+vl-71-18 | Pose Machines: Articulated Pose Estimation via Inference Machines | http://videolectures.net/eccv2014_ramakrishna_pose_machines/ | instructors:Varun Ramakrishna
+vl-71-19 | Scene Chronology | http://videolectures.net/eccv2014_matzen_scene_chronology/ | instructors:Kevin Matzen
+vl-71-20 | Bayesian Nonparametric Intrinsic Image Decomposition | http://videolectures.net/eccv2014_chang_image_decomposition/ | instructors:Jason Chang
+vl-71-21 | A Closer Look at Context: From Coxels to the Contextual Emergence of Object Saliency | http://videolectures.net/eccv2014_mairon_object_saliency/ | instructors:Rotem Mairon
+vl-71-22 | From Manifold to Manifold: Geometry-Aware Dimensionality Reduction for SPD Matrices | http://videolectures.net/eccv2014_salzmann_dimensionality_reduction/ | instructors:Mathieu Salzmann
+vl-71-23 | Photo-Sequencing | http://videolectures.net/eccv2012_basha_photo/ | instructors:Tali Basha, Bernt Schiele, David Forsyth
+vl-71-24 | Globally Optimal Inlier Set Maximization With Unknown Rotation and Focal Length | http://videolectures.net/eccv2014_bazin_focal_lenght/ | instructors:Jean-Charles Bazin
+vl-71-25 | Learning Latent Constituents for Recognition of Group Activities in Video | http://videolectures.net/eccv2014_antic_group_activities/ | instructors:Borislav Antic
+vl-71-26 | Convexity Shape Prior for Segmentation | http://videolectures.net/eccv2014_gorelick_shape_prior/ | instructors:Lena Gorelick
+vl-71-27 | Geodesic Object Proposals | http://videolectures.net/eccv2014_kraehenbuehl_object_proposals/ | instructors:Philipp Krähenbühl
+vl-71-28 | Depth-of-Field and Coded Aperture Imaging on XSlit Lens | http://videolectures.net/eccv2014_yu_coded_aperture/ | instructors:Jingyi Yu
+vl-71-29 | On Image Contours of Projective Shapes | http://videolectures.net/eccv2014_ponce_image_contours/ | instructors:Jean Ponce
+vl-71-30 | Video Pop-up: Monocular 3D Reconstruction of Dynamic Scenes | http://videolectures.net/eccv2014_russell_dynamic_scenes/ | instructors:Chris Russell
+vl-71-31 | Detection and Tracking of Occluded People | http://videolectures.net/bmvc2012_tang_occluded_people/ | instructors:Siyu Tang
+vl-71-32 | Unfolding an Indoor Origami World | http://videolectures.net/eccv2014_ford_fouhey_origami_world/ | instructors:David Ford Fouhey
+vl-71-33 | Microsoft COCO: Common Objects in Context | http://videolectures.net/eccv2014_lin_common_objects/ | instructors:Tsung-Yi Lin
+vl-71-34 | Progressive Mode-Seeking on Graphs for Sparse Feature Matching | http://videolectures.net/eccv2014_liu_feature_matching/ | instructors:Lingqiao Liu
+vl-71-35 | Programmable Automotive Headlights | http://videolectures.net/eccv2014_tamburo_automotive_headlights/ | instructors:Robert Tamburo
+vl-71-36 | Focusing Human Attention on the "Right" Visual Data | http://videolectures.net/icme2012_grauman_visual_data/ | instructors:Kristen Grauman
+vl-71-37 | Modeling Mutual Context of Object and Human Pose in Human-Object Interaction Activities | http://videolectures.net/cvpr2010_fei_fei_mmco/ | instructors:Fei-Fei Li
+vl-71-38 | Dense Semi-rigid Scene Flow Estimation from RGBD Images | http://videolectures.net/eccv2014_quiroga_flow_estimation/ | instructors:Julián Quiroga
+vl-71-39 | Pseudo-Bound Optimization for Binary Energies | http://videolectures.net/eccv2014_tang_binary_energies/ | instructors:Meng Tang
+vl-71-40 | Refraction Wiggles for Measuring Fluid Depth and Velocity from Video | http://videolectures.net/eccv2014_xue_fluid_depth/ | instructors:Tianfan Xue
+vl-71-41 | Match Selection and Refinement for Highly Accurate Two-View Structure from Motion | http://videolectures.net/eccv2014_liu_match_selection/ | instructors:Zhe Liu
+vl-71-42 | Generative Models for Visual Objects and Object Recognition via Bayesian Inference | http://videolectures.net/mlas06_li_gmvoo/ | instructors:Fei-Fei Li
+vl-71-43 | Crisp Boundary Detection Using Pointwise Mutual Information | http://videolectures.net/eccv2014_isola_mutual_information/ | instructors:Phillip Isola
+vl-71-44 | Fisher Vector Faces in the Wild | http://videolectures.net/bmvc2013_simonyan_vector_faces/ | instructors:Karen Simonyan
+vl-71-45 | Detecting Text in Natural Scenes with Stroke Width Transform | http://videolectures.net/cvpr2010_epshtein_dtns/ | instructors:Boris Epshtein
+vl-71-46 | On Detection of Multiple Object Instances using Hough Transforms | http://videolectures.net/cvpr2010_barinova_odmo/ | instructors:Olga Barinova
+vl-71-47 | A tutorial on deep and unsupervised feature learning for activity recognition | http://videolectures.net/gesturerecognition2011_taylor_tutorial/ | instructors:Graham Taylor
+vl-71-48 | Activity Forecasting | http://videolectures.net/eccv2012_kitani_forecasting/ | instructors:Kris M. Kitani, Michael J. Black, Ivan Laptev
+vl-71-49 | Action Recognition with Exemplar Based 2.5D Graph Matching | http://videolectures.net/eccv2012_yao_action/ | instructors:Bangpeng Yao, Michael J. Black, Ivan Laptev
+vl-71-50 | Spatio-Temporal Convolutional Sparse Auto-Encoder for Sequence Classification | http://videolectures.net/bmvc2012_baccouche_sequence_classification/ | instructors:Moez Baccouche
+vl-71-51 | Latent Hough Transform for Object Detection | http://videolectures.net/eccv2012_razavi_object/ | instructors:Nima Razavi, Antonio Torralba, Stefan Carlsson
+vl-71-52 | Diverse M-Best Solutions in Markov Random Fields | http://videolectures.net/eccv2012_batra_markov/ | instructors:Dhruv Batra, Ramin Zabih, Laurent Itti
+vl-71-53 | Computer Vision | http://videolectures.net/mlss04_blake_cv/ | instructors:Andrew Blake
+vl-71-54 | Deciphering the Face | http://videolectures.net/gesturerecognition2011_martinez_deciphering/ | instructors:Aleix M. Martinez
+vl-71-55 | Grouplet: A Structured Image Representation for Recognizing Human and Object Interactions | http://videolectures.net/cvpr2010_yao_gsir/ | instructors:Bangpeng Yao
+vl-71-56 | Cascade Object Detection with Deformable Part Models | http://videolectures.net/cvpr2010_girshick_codd/ | instructors:Ross B. Girshick
+vl-71-57 | Joint Object Class Sequencing and Trajectory Triangulation (JOST) | http://videolectures.net/eccv2014_zheng_trajectory_triangulation/ | instructors:Enliang Zheng
+vl-71-58 | The Future of Image Search | http://videolectures.net/kdd08_malik_fis/ | instructors:Jitendra Malik
+vl-71-59 | Detecting Actions, Poses, and Objects with Relational Phraselets | http://videolectures.net/eccv2012_ramanan_actions/ | instructors:Deva Ramanan, Michael J. Black, Ivan Laptev
+vl-71-60 | Incremental Line-based 3D Reconstruction using Geometric Constraints | http://videolectures.net/bmvc2013_hofer_geometric_constraints/ | instructors:Manuel Hofer
+vl-71-61 | Constrained Semi-Supervised Learning using Attributes and Comparative Attributes | http://videolectures.net/eccv2012_shrivastava_attributes/ | instructors:Abhinav Shrivastava, Antonio Torralba, Stefan Carlsson
+vl-71-62 | A Unified Framework for Multi-Target Tracking and Collective Activity Recognition | http://videolectures.net/eccv2012_choi_recognition/ | instructors:Wongun Choi, Michael J. Black, Ivan Laptev
+vl-71-63 | Attributes for classifier feedback | http://videolectures.net/eccv2012_parikh_attributes/ | instructors:Devi Parikh, Antonio Torralba, Stefan Carlsson
+vl-71-64 | Filter-based Mean-Field Inference for Random Fields with Higher Order Terms and Product Label-Spaces | http://videolectures.net/eccv2012_vineet_filter/ | instructors:Vibhav Vineet, Ramin Zabih, Laurent Itti
+vl-71-65 | Exact Acceleration of Linear Object Detectors | http://videolectures.net/eccv2012_dubout_detectors/ | instructors:Charles Dubout, Antonio Torralba, Stefan Carlsson
+vl-71-66 | A Novel Approach for Efficient SVM Classification with Histogram Intersection Kernel | http://videolectures.net/bmvc2013_sharma_novel_approach/ | instructors:Gaurav Sharma
+vl-71-67 | Semantic Segmentation with Second-Order Pooling | http://videolectures.net/eccv2012_carreira_semantic/ | instructors:João Carreira, Tinne Tuytelaars, Serge J. Belongie
+vl-71-68 | Sparse-Coded Features for Image Retrieval | http://videolectures.net/bmvc2013_ge_image_retrieval/ | instructors:Tiezheng Ge
+vl-71-69 | Functional Maps: A Flexible Representation of Maps (with Applications) | http://videolectures.net/solomon_ovsjanikov_maps/ | instructors:Maks Ovsjanikov
+vl-71-70 | Monocular 3D Pose Estimation and Tracking by Detection | http://videolectures.net/cvpr2010_andriluka_m3de/ | instructors:Mykhaylo Andriluka
+vl-71-71 | Leafsnap: A Computer Vision System for Automatic Plant Species Identification | http://videolectures.net/eccv2012_kumar_vision/ | instructors:Neeraj Kumar, Michal Irani, Andrea Vedaldi
+vl-71-72 | Aggregating local descriptors into a compact image representation | http://videolectures.net/cvpr2010_jegou_ald/ | instructors:Hervé Jégou
+vl-71-73 | Large-Scale Object Recognition Systems | http://videolectures.net/etvc08_schmid_lsors/ | instructors:Cordelia Schmid
+vl-71-74 | Food Recognition Using Statistics of Pairwise Local Features | http://videolectures.net/cvpr2010_yang_frus/ | instructors:Shulin (Lynn) Yang
+vl-71-75 | Geometry-Aware Analysis of High-Dimensional Visual Information Sets | http://videolectures.net/acmmm2010_kokiopoulou_gaa/ | instructors:Effrosyni Kokiopoulou
+vl-71-76 | Streaming Hierarchical Video Segmentation | http://videolectures.net/eccv2012_corso_video/ | instructors:Jason Corso, Bernt Schiele, David Forsyth
+vl-71-77 | Visual Event Recognition in Videos by Learning from Web Data | http://videolectures.net/cvpr2010_duan_verv/ | instructors:Lixin Duan
+vl-71-78 | Indoor Segmentation and Support Inference from RGBD Images | http://videolectures.net/eccv2012_silberman_images/ | instructors:Nathan Silberman, Aude Oliva, Silvio Savarese
+vl-71-79 | Reflectance and Natural Illumination from a Single Image | http://videolectures.net/eccv2012_lombardi_image/ | instructors:Stephen Lombardi, Bernt Schiele, David Forsyth
+vl-71-80 | Metric Learning for Large Scale Image Classification: Generalizing to New Classes at Near-Zero Cost | http://videolectures.net/eccv2012_mensink_learning/ | instructors:Thomas Mensink, Michal Irani, Andrea Vedaldi
+vl-71-81 | What can the world tell us about an image? | http://videolectures.net/bmvc09_efros_wcw/ | instructors:Alexei Efros
+vl-71-82 | Tom-vs-Pete Classifiers and Identity-Preserving Alignment for Face Verification | http://videolectures.net/bmvc2012_berg_face_verification/ | instructors:Thomas Berg
+vl-71-83 | Machine learning and kernel methods for computer vision | http://videolectures.net/etvc08_bach_mlakm/ | instructors:Francis R. Bach
+vl-71-84 | Latent SVMs for Human Detection with a Locally Affine Deformation Field | http://videolectures.net/bmvc2012_ladicky_deformation_field/ | instructors:L’ubor Ladický
+vl-71-85 | Spacetime Forests with Complementary Features for Dynamic Scene Recognition | http://videolectures.net/bmvc2013_feichtenhofer_scene_recognition/ | instructors:Christoph Feichtenhofer
+vl-71-86 | Data-Driven Scene Understanding from 3D Models | http://videolectures.net/bmvc2012_satkin_scene_understanding/ | instructors:Scott Satkin
+vl-71-87 | “Clustering by Composition” for Unsupervised Discovery of Image Categories | http://videolectures.net/eccv2012_faktor_image/ | instructors:Alon Faktor, Tinne Tuytelaars, Serge J. Belongie
+vl-71-88 | Real-time texture boundary detection from ridges in the standard deviation space | http://videolectures.net/bmvc09_hidayat_rttbd/ | instructors:Ray Hidayat
+vl-71-89 | Object-Graphs for Context-Aware Category Discovery | http://videolectures.net/cvpr2010_lee_ogca/ | instructors:Yong Jae Lee
+vl-71-90 | Enhancing Exemplar SVMs using Part Level Transfer Regularization | http://videolectures.net/bmvc2012_aytar_transfer_regularization/ | instructors:Yusuf Aytar
+vl-71-91 | Recent Advances in Digital Processing of Images and Audio | http://videolectures.net/mitworld_malvar_radp/ | instructors:Henrique S. Malvar
+vl-71-92 | Face Recognition Based on Image Sets | http://videolectures.net/cvpr2010_cevikalp_frbi/ | instructors:Hakan Cevikalp
+vl-71-93 | Global and Efficient Self-Similarity for Object Classification and Detection | http://videolectures.net/cvpr2010_deselaers_gess/ | instructors:Thomas Deselaers
+vl-71-94 | Spline Fusion: A continuous-time representation for visual-inertial fusion with application to rolling shutter cameras | http://videolectures.net/bmvc2013_lovegrove_spline_fusion/ | instructors:Steven Lovegrove
+vl-71-95 | A QCQP Approach to Triangulation | http://videolectures.net/eccv2012_aholt_triangulation/ | instructors:Chris Aholt, Jean Ponce, Tomas Pajdla
+vl-71-96 | Contour People: A Parameterized Model of 2D Articulated Human Shape | http://videolectures.net/cvpr2010_freifeld_m2da/ | instructors:Oren Freifeld
+vl-71-97 | Unsupervised Object Discovery and Segmentation in Videos | http://videolectures.net/bmvc2013_schulter_object_discovery/ | instructors:Samuel Schulter
+vl-71-98 | Segmentation Propagation in ImageNet | http://videolectures.net/eccv2012_guillaumin_segmentation/ | instructors:Matthieu Guillaumin, Tinne Tuytelaars, Serge J. Belongie
+vl-71-99 | Continuous Markov Random Fields for Robust Stereo Estimation | http://videolectures.net/eccv2012_yamaguchi_stereo/ | instructors:Koichiro Yamaguchi, Ramin Zabih, Laurent Itti
+vl-71-100 | Metric Regression Forests for Human Pose Estimation | http://videolectures.net/bmvc2013_pons_moll_regression/ | instructors:Gerard Pons-Moll
+vl-71-101 | Multi-view Pictorial Structures for 3D Human Pose Estimation | http://videolectures.net/bmvc2013_amin_pictorial_structures/ | instructors:Sikandar Amin
+vl-71-102 | Pattern Recognition in Computer Vision | http://videolectures.net/aop09_farinella_pricv/ | instructors:Giovanni Maria Farinella
+vl-71-103 | Patch Complexity, Finite Pixel Correlations and Optimal Denoising | http://videolectures.net/eccv2012_levin_denoising/ | instructors:Anat Levin, Ramin Zabih, Laurent Itti
+vl-71-104 | Tracking the Invisible: Learning Where the Object Might Be | http://videolectures.net/cvpr2010_grabner_tti/ | instructors:Helmut Grabner
+vl-71-105 | What's going on? Discovering Spatio-Temporal Dependencies in Dynamic Scenes | http://videolectures.net/cvpr2010_kuettel_wgo/ | instructors:Daniel Küttel
+vl-71-106 | People Watching: Human Actions as a Cue for Single View Geometry | http://videolectures.net/eccv2012_fouhey_geometry/ | instructors:David Fouhey, Aude Oliva, Silvio Savarese
+vl-71-107 | Anomaly Detection in Crowded Scenes | http://videolectures.net/cvpr2010_mahadevan_adcs/ | instructors:Vijay Mahadevan
+vl-71-108 | Facial expression recognition and emotion recognition from speech | http://videolectures.net/mlss06tw_datcu_ferer/ | instructors:Dragos Datcu
+vl-71-109 | Incremental Light Bundle Adjustment | http://videolectures.net/bmvc2012_indelman_bundle_adjustment/ | instructors:Vadim Indelman
+vl-71-110 | Visual Tracking Decomposition | http://videolectures.net/cvpr2010_kwon_vtd/ | instructors:Junseok Kwon
+vl-71-111 | PMBP: PatchMatch Belief Propagation for Correspondence Field Estimation | http://videolectures.net/bmvc2012_besse_belief_propagation/ | instructors:Frederic Besse
+vl-71-112 | Do We Need More Training Data or Better Models for Object Detection? | http://videolectures.net/bmvc2012_fowlkes_object_detection/ | instructors:Charless C. Fowlkes
+vl-71-113 | Machine Learning in Vision | http://videolectures.net/bootcamp07_triggs_mlv/ | instructors:Bill Triggs
+vl-71-114 | Cross-View Action Recognition via a Transferable Dictionary Pair | http://videolectures.net/bmvc2012_zheng_transferable_dictionary/ | instructors:Jingjing Zheng
+vl-71-115 | Shape Sharing for Object Segmentation | http://videolectures.net/eccv2012_kim_shape/ | instructors:Jaechul Kim, Tinne Tuytelaars, Serge J. Belongie
+vl-71-116 | Applications to Machine Vision | http://videolectures.net/epsrcws08_blake_amv/ | instructors:Andrew Blake
+vl-71-117 | Context-Aware Saliency Detection | http://videolectures.net/cvpr2010_zelnik_manor_casd/ | instructors:Lihi Zelnik-Manor
+vl-71-118 | Evaluating Superpixels in Video: Metrics Beyond Figure-Ground Segmentation | http://videolectures.net/bmvc2013_neubert_superpixles/ | instructors:Peer Neubert
+vl-71-119 | Multimodal semi-supervised learning for image classification | http://videolectures.net/cvpr2010_guillaumin_mssl/ | instructors:Matthieu Guillaumin
+vl-71-120 | Multi-view Body Part Recognition with Random Forests | http://videolectures.net/bmvc2013_burenius_part_recognition/ | instructors:Magnus Burenius
+vl-71-121 | 3D Morphable Model Construction for Robust Ear and Face Recognition | http://videolectures.net/cvpr2010_bustard_3dmm/ | instructors:John David Bustard
+vl-71-122 | Good Regions to Deblur | http://videolectures.net/eccv2012_hu_deblur/ | instructors:Zhe Hu, Ramin Zabih, Laurent Itti
+vl-71-123 | Diagnosing Error in Object Detectors | http://videolectures.net/eccv2012_hoiem_detectors/ | instructors:Derek Hoiem, Antonio Torralba, Stefan Carlsson
+vl-71-124 | Multiple View Object Cosegmentation using Appearance and Stereo Cues | http://videolectures.net/eccv2012_kowdle_stereo/ | instructors:Adarsh Kowdle, Aude Oliva, Silvio Savarese
+vl-71-125 | Evaluation of local spatio-temporal features for action recognition | http://videolectures.net/bmvc09_klaser_elst/ | instructors:Alexander Klaser
+vl-71-126 | Supervised Translation-Invariant Sparse Coding | http://videolectures.net/cvpr2010_yang_stis/ | instructors:Jianchao (John) Yang
+vl-71-127 | A Generative Perspective on MRFs in Low-Level Vision | http://videolectures.net/cvpr2010_schmidt_gpmrf/ | instructors:Uwe Schmidt
+vl-71-128 | Perception Preserving Projections | http://videolectures.net/bmvc2013_zhang_preserving_projections/ | instructors:Chao Zhang
+vl-71-129 | Lecture 29: Applications in signal and image processing: compression | http://videolectures.net/mit18085f07_strang_lec29/ | instructors:Gilbert Strang
+vl-71-130 | Computational Photography: Epsilon to Coded Imaging | http://videolectures.net/etvc08_raskar_cpetci/ | instructors:Ramesh Raskar
+vl-71-131 | Image Retrieval for Image-Based Localization Revisited | http://videolectures.net/bmvc2012_sattler_image_retrieval/ | instructors:Torsten Sattler
+vl-71-132 | Motion Detail Preserving Optical Flow Estimation | http://videolectures.net/cvpr2010_xu_mdpo/ | instructors:Li Xu
+vl-71-133 | Incremental Surface Extraction from Sparse Structure-from-Motion Point Clouds | http://videolectures.net/bmvc2013_hoppe_point_clouds/ | instructors:Christof Hoppe
+vl-71-134 | Multiple kernel learning for multiple sources | http://videolectures.net/lms08_bach_mklms/ | instructors:Francis R. Bach
+vl-71-135 | Unsupervised Detection and Segmentation of Identical Objects | http://videolectures.net/cvpr2010_cho_udas/ | instructors:Minsu Cho
+vl-71-136 | Depth Extraction from Video Using Non-parametric Sampling | http://videolectures.net/eccv2012_karsch_sampling/ | instructors:Kevin Karsch, Aude Oliva, Silvio Savarese
+vl-71-137 | Efficient Dense 3D Rigid-Body Motion Segmentation in RGB-D Video | http://videolectures.net/bmvc2013_stueckler_efficient_dense/ | instructors:Jörg Stückler
+vl-71-138 | Computational models of vision | http://videolectures.net/mlss2010_ullman_cmov/ | instructors:Shimon Ullman
+vl-71-139 | Scalable Video Compression | http://videolectures.net/icme2012_taubman_video_compression/ | instructors:David S Taubman
+vl-71-140 | A Globally Optimal Data-Driven Approach for Image Distortion Estimation | http://videolectures.net/cvpr2010_tian_godd/ | instructors:Yuandong Tian
+vl-71-141 | Bundled Depth-Map Merging for Multi-View Stereo | http://videolectures.net/cvpr2010_li_bdmm/ | instructors:Jianguo Li
+vl-71-142 | Motion Capture of Hands in Action using Discriminative Salient Points | http://videolectures.net/eccv2012_ballan_motion/ | instructors:Luca Ballan, Bernt Schiele, David Forsyth
+vl-71-143 | A Three-Layered Approach to Facade Parsing | http://videolectures.net/eccv2012_martinovic_parsing/ | instructors:Anđelo Martinović, Tinne Tuytelaars, Serge J. Belongie
+vl-71-144 | Change Detection in Dynamic Scenes using Local Adaptive Transform | http://videolectures.net/bmvc2013_shah_change_detection/ | instructors:Shishir K. Shah
+vl-71-145 | Generic Cuts: An Efficient Algorithm for Optimal Inference in Higher Order MRF-MAP | http://videolectures.net/eccv2012_arora_algorithm/ | instructors:Chetan Arora, Ramin Zabih, Laurent Itti
+vl-71-146 | Low-Complexity Single-Image Super-Resolution based on Nonnegative Neighbor Embedding | http://videolectures.net/bmvc2012_bevilacqua_neighbor_embedding/ | instructors:Marco Bevilacqua
+vl-71-147 | Using Richer Models for Articulated Pose Estimation of Footballers | http://videolectures.net/bmvc2012_kazemi_pose_estimation/ | instructors:Vahid Kazemi
+vl-71-148 | Large Scale Visual Geo-Localization of Images in Mountainous Terrain | http://videolectures.net/eccv2012_baatz_images/ | instructors:Georges Baatz, Michal Irani, Andrea Vedaldi
+vl-71-149 | A Videography Analysis Framework for Video Retrieval and Summarization | http://videolectures.net/bmvc2012_fu_video_retrieval/ | instructors:Yun Fu
+vl-71-150 | Learning Beautiful (and Ugly) Attributes | http://videolectures.net/bmvc2013_marchesotti_learning_attributes/ | instructors:Luca Marchesotti
+vl-71-151 | Transitive Re-identification | http://videolectures.net/bmvc2013_brand_transitive/ | instructors:Yulia Brand
+vl-71-152 | Common Visual Pattern Discovery via Spatially Coherent Correspondences | http://videolectures.net/cvpr2010_liu_cvpd/ | instructors:Hairong Liu
+vl-71-153 | Learning structured models for recognizing human actions | http://videolectures.net/gesturerecognition2011_mori_learning/ | instructors:Greg Mori
+vl-71-154 | Layered Object Detection for Multi-Class Segmentation | http://videolectures.net/cvpr2010_hallman_lodm/ | instructors:Sam Hallman
+vl-71-155 | Image Segmentation using Dual Distribution Matching | http://videolectures.net/bmvc2012_taniai_distribution_matching/ | instructors:Tatsunori Taniai
+vl-71-156 | On the design of robust classifiers for computer vision | http://videolectures.net/cvpr2010_masnadi_shirazi_drc/ | instructors:Hamed Masnadi-Shirazi
+vl-71-157 | A Naturalistic Open Source Movie for Optical Flow Evaluation | http://videolectures.net/eccv2012_butler_optical/ | instructors:Daniel J. Butler, Bernt Schiele, David Forsyth
+vl-71-158 | Beyond the line of sight: labeling the underlying surfaces | http://videolectures.net/eccv2012_guo_labeling/ | instructors:Ruiqi Guo, Aude Oliva, Silvio Savarese
+vl-71-159 | Enhancing Action Recognition by Cross-Domain Dictionary Learning | http://videolectures.net/bmvc2013_zhu_dictionary_learning/ | instructors:Fan Zhu
+vl-71-160 | Label Embedding for Text Recognition | http://videolectures.net/bmvc2013_rodriguez_text_recognition/ | instructors:José A. Rodriguez
+vl-71-161 | Graph Based Shapes Representation and Recognition | http://videolectures.net/gbr07_qureshi_gbsr/ | instructors:Rashid Jalal Qureshi
+vl-71-162 | Improved Initialisation and Gaussian Mixture Pairwise Terms for Dense Random Fields with Mean-field Inference | http://videolectures.net/bmvc2012_vineet_mean_field/ | instructors:Vibhav Vineet
+vl-71-163 | Cost-Sensitive Top-Down/Bottom-Up Inference for Multiscale Activity Recognition | http://videolectures.net/eccv2012_amer_recognition/ | instructors:Mohamed Amer, Michael J. Black, Ivan Laptev
+vl-71-164 | RASL: Robust Alignment by Sparse and Low-rank Decomposition for Linearly Correlated Images | http://videolectures.net/cvpr2010_wright_rasl/ | instructors:John Wright
+vl-71-165 | Solving Person Re-identification in Non-overlapping Camera using Efficient Gibbs Sampling | http://videolectures.net/bmvc2013_englebienne_gibbs_sampling/ | instructors:Gwenn Englebienne
+vl-71-166 | Dense, Auto-Calibrating Visual Odometry from a Downward-Looking Camera | http://videolectures.net/bmvc2013_zienkiewicz_visual_odometry/ | instructors:Jacek Zienkiewicz
+vl-71-167 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights11a/ | instructors:Xiaobai Liu, Mikel Rodriguez,
+   
+    et al.
+vl-71-168 | Transfer Learning by Ranking for Weakly Supervised Object Annotation | http://videolectures.net/bmvc2012_shi_object_annotation/ | instructors:Zhiyuan Shi
+vl-71-169 | A New Texture Descriptor Using Multifractal Analysis in Multi-orientation Wavelet Pyramid | http://videolectures.net/cvpr2010_ji_ntdu/ | instructors:Hui Ji
+vl-71-170 | Dense Active Appearance Models Using a Bounded Diameter Minimum Spanning Tree | http://videolectures.net/bmvc2012_anderson_spanning_tree/ | instructors:Robert Anderson
+vl-71-171 | Dependent Hierarchical Beta Process for Image Interpolation and Denoising | http://videolectures.net/aistats2011_zhou_dependent/ | instructors:Mingyuan Zhou
+vl-71-172 | Unsupervised Discovery of Facial Events | http://videolectures.net/cvpr2010_de_la_torre_udfe/ | instructors:Fernando de la Torre
+vl-71-173 | Self-calibrating Photometric Stereo | http://videolectures.net/cvpr2010_matsushita_scps/ | instructors:Yasuyuki Matsushita
+vl-71-174 | Deformable 3D Reconstruction with an Object Database | http://videolectures.net/bmvc2012_alcantarilla_deformable_deconstruction/ | instructors:Pablo Alcantarilla
+vl-71-175 | Non-uniform Deblurring for Shaken Images | http://videolectures.net/cvpr2010_whyte_ndsp/ | instructors:Oliver Whyte
+vl-71-176 | Explaining Human Multiple Object Tracking as Resource-Constrained Approximate Inference in a Dynamic Probabilistic Model | http://videolectures.net/nips09_vul_ehmo/ | instructors:Edward Vul
+vl-71-177 | Kako računalniki vidijo - računalniški vid in njegova uporaba v praksi | http://videolectures.net/rtk2010_kristan_rvnup/ | instructors:Matej Kristan
+vl-71-178 | Stereo Vision for Obstacle Detection: a Graph-Based Approach | http://videolectures.net/gbr07_limongiello_svfob/ | instructors:Alessandro Limongiello
+vl-71-179 | Combination of paths for interactive segmentation | http://videolectures.net/bmvc2013_mille_interactive_segmentation/ | instructors:Julien Mille
+vl-71-180 | Efficient Shape Matching using Vector Extrapolation | http://videolectures.net/bmvc2013_rodola_vector_extrapolation/ | instructors:Emanuele Rodolà
+vl-71-181 | Stixmentation - Probabilistic Stixel based Traffic Scene Labeling | http://videolectures.net/bmvc2012_erbs_stixmentation/ | instructors:Friedrich Erbs
+vl-71-182 | Dynamical Binary Latent Variable Models for 3D Human Pose Tracking | http://videolectures.net/cvpr2010_taylor_dblv/ | instructors:Graham Taylor
+vl-71-183 | MoT - Mixture of Trees Probabilistic Graphical Model for Video Segmentation | http://videolectures.net/bmvc2012_budvytis_video_segmentation/ | instructors:Ignas Budvytis
+vl-71-184 | A Constant-Time Efficient Stereo SLAM System | http://videolectures.net/bmvc09_mei_ctess/ | instructors:Christopher Mei
+vl-71-185 | High Order Entropy Coding - From Conventional Video Coding to Distributed | http://videolectures.net/icme2012_zeng_entropy_coding/ | instructors:Wenjun (Kevin) Zeng
+vl-71-186 | Advances in Phonetics-based Sub-Unit Modeling for Transcription, Alignment and Sign Language Recognition | http://videolectures.net/gesturerecognition2011_vogler_advances/ | instructors:Christian Vogler
+vl-71-187 | What Helps Where - And Why? Semantic Relatedness for Knowledge Transfer | http://videolectures.net/cvpr2010_rohrbach_whw/ | instructors:Marcus Rohrbach
+vl-71-188 | Estimating Camera Pose from a Single Urban Ground-View Omnidirectional Image and a 2D Building Outline Map | http://videolectures.net/cvpr2010_cham_ecps/ | instructors:Tat-Jen Cham
+vl-71-189 | Measuring Visual Saliency by Site Entropy Rate | http://videolectures.net/cvpr2010_wang_mvs/ | instructors:Yizhou Wang
+vl-71-190 | Tiered Scene Labeling with Dynamic Programming | http://videolectures.net/cvpr2010_veksler_tsld/ | instructors:Olga Veksler
+vl-71-191 | Building Reconstruction using Manhattan-World Grammars | http://videolectures.net/cvpr2010_vanegas_brum/ | instructors:Carlos A. Vanegas
+vl-71-192 | Polynomial Shape from Shading | http://videolectures.net/cvpr2010_ecker_psfs/ | instructors:Ady Ecker
+vl-71-193 | Recovering Shape and Motion from Video Sequences | http://videolectures.net/etvc08_fua_rsamfv/ | instructors:Pascal Fua
+vl-71-194 | A Novel Riemannian Framework for Shape Analysis of 3D Objects | http://videolectures.net/cvpr2010_kurtek_nrfs/ | instructors:Sebastian Kurtek
+vl-71-195 | Qualitative Spatial Relationships for Image Interpretation by using Semantic Graph | http://videolectures.net/gbr07_deruyver_qsr/ | instructors:Aline Deruyver
+vl-71-196 | PRISM: PRincipled Implicit Shape Model | http://videolectures.net/bmvc09_lehmann_prism/ | instructors:Alain Lehmann
+vl-71-197 | A Novel Trilateral Filter based Adaptive Support Weight Method for Stereo Matching | http://videolectures.net/bmvc2013_chen_stereo_matching/ | instructors:Dongming Chen
+vl-71-198 | Scalable Learning in Computer Vision | http://videolectures.net/nipsworkshops09_coates_slcv/ | instructors:Adam Coates
+vl-71-199 | Using linking features in learning non-parametric part models | http://videolectures.net/eccv2012_karlinsky_models/ | instructors:Leonid Karlinsky, Antonio Torralba, Stefan Carlsson
+vl-71-200 | Object Recognition by Discriminative Combinations of Line Segments and Ellipses | http://videolectures.net/cvpr2010_chia_ordc/ | instructors:Alex Chia
+vl-71-201 | Rectifying rolling shutter video from hand-held devices | http://videolectures.net/cvpr2010_forssen_rrsv/ | instructors:Per-Erik Forssen
+vl-71-202 | Piecewise Planar and Non-Planar Stereo for Urban Scene Reconstruction | http://videolectures.net/cvpr2010_gallup_ppns/ | instructors:David Gallup
+vl-71-203 | Deformable Tracking of Textured Curvilinear Objects | http://videolectures.net/bmvc2012_padoy_curvilinear_objects/ | instructors:Nicolas Padoy
+vl-71-204 | The chains model for detecting parts by their context | http://videolectures.net/cvpr2010_karlinsky_cmdp/ | instructors:Leonid Karlinsky
+vl-71-205 | Automatic Image Annotation Using Group Sparsity | http://videolectures.net/cvpr2010_zhang_aiau/ | instructors:Shaoting Zhang
+vl-71-206 | Close-Range Human Detection and Tracking for Head-Mounted Cameras | http://videolectures.net/bmvc2012_mitzel_human_detection/ | instructors:Dennis Mitzel
+vl-71-207 | From activity to language: learning to recognise the meaning of motion | http://videolectures.net/gesturerecognition2011_bowden_activity/ | instructors:Richard Bowden
+vl-71-208 | Action class detection and recognition | http://videolectures.net/mcvc08_laptev_acdr/ | instructors:Ivan Laptev
+vl-71-209 | Learning shared representations for object recognition | http://videolectures.net/oh06_torralba_lsror/ | instructors:Antonio Torralba
+vl-71-210 | Unifying Subspace and Distance Metric Learning with Bhattacharyya Coefficient for Image Classification | http://videolectures.net/etvc08_metaxas_usadm/ | instructors:Dimitris N. Metaxas
+vl-71-211 | Towards Semantic Embedding in Visual Vocabulary | http://videolectures.net/cvpr2010_ji_tsev/ | instructors:Rongrong Ji
+vl-71-212 | A Theory of Plenoptic Multiplexing | http://videolectures.net/cvpr2010_ihrke_wetzstein_tpm/ | instructors:Ivo Ihrke, Gordon Wetzstein
+vl-71-213 | Non-Rigid Structure from Locally-Rigid Motion | http://videolectures.net/cvpr2010_taylor_nrsl/ | instructors:Jonathan Taylor
+vl-71-214 | Depth from Diffusion | http://videolectures.net/cvpr2010_zhou_dfd/ | instructors:Changyin Zhou
+vl-71-215 | Combining Appearance and Structure from Motion Features for Road Scene Understanding | http://videolectures.net/bmvc09_sturgess_casf/ | instructors:Paul Sturgess
+vl-71-216 | Computational Intelligence and Games for at Home Rehabilitation | http://videolectures.net/solomon_borghese_computational_intelligence/ | instructors:N. Alberto Borghese
+vl-71-217 | Constant-Working-Space Algorithms for Image Processing | http://videolectures.net/etvc08_asano_cwsaf/ | instructors:Tetsuo Asano
+vl-71-218 | Object Recognition and Segmentation by Association | http://videolectures.net/cmulls08_malisiewicz_orsa/ | instructors:Tomasz Malisiewicz
+vl-71-219 | Manifold Blurring Mean Shift Algorithms for Manifold Denoising | http://videolectures.net/cvpr2010_carreira_perpinan_mbms/ | instructors:Miguel Á. Carreira-Perpiñán
+vl-71-220 | Fast Non-uniform Deblurring using Constrained Camera Pose Subspace | http://videolectures.net/bmvc2012_hu_pose_subspace/ | instructors:Zhe Hu
+vl-71-221 | Frequency-Space Decomposition and Acquisition of Light Transport under Spatially Varying Illumination | http://videolectures.net/eccv2012_ramamoorthi_decomposition/ | instructors:Ravi Ramamoorthi, Bernt Schiele, David Forsyth
+vl-71-222 | An Object Co-occurrence Assisted Hierarchical Model for Scene Understanding | http://videolectures.net/bmvc2012_li_scene_understanding/ | instructors:Xin Li
+vl-71-223 | Energy-based models & Learning for Invariant Image Recognition | http://videolectures.net/mlss05us_lecun_ebmli/ | instructors:Yann LeCun
+vl-71-224 | Automated Character Annotation in Multimedia | http://videolectures.net/mcvc08_zisserman_acam/ | instructors:Andrew Zisserman
+vl-71-225 | Learning discriminative space-time actions from weakly labelled videos | http://videolectures.net/bmvc2012_sapienza_labelled_videos/ | instructors:Michael Sapienza
+vl-71-226 | Automatic and Efficient Long Term Arm and Hand Tracking for Continuous Sign Language TV Broadcasts | http://videolectures.net/bmvc2012_pfister_sign_language/ | instructors:Tomas Pfister
+vl-71-227 | Combining Discriminative and Generative Methods for 3D Deformable Surface and Articulated Pose Reconstruction | http://videolectures.net/cvpr2010_salzmann_cdgm/ | instructors:Mathieu Salzmann
+vl-71-228 | Learning Deformable Models | http://videolectures.net/mlss09us_amit_ldm/ | instructors:Yali Amit
+vl-71-229 | Multiple Target Localisation at over 100 FPS | http://videolectures.net/bmvc09_taylor_mtl/ | instructors:Simon Taylor
+vl-71-230 | Segmentation of Building Facades Using Procedural Shape Priors | http://videolectures.net/cvpr2010_teboul_sbfu/ | instructors:Olivier Teboul
+vl-71-231 | Adaptive Feature Selection in Image Segmentation | http://videolectures.net/lmcv04_roth_afsis/ | instructors:Volker Roth
+vl-71-232 | Modeling and Visualizing Tonality in North Indian Classical Music | http://videolectures.net/mbc07_chordia_mvt/ | instructors:Parag Chordia
+vl-71-233 | Projective Kalman Filter: Multiocular Tracking of 3D Locations Towards Scene Understanding | http://videolectures.net/mlmi04uk_canton_mt3lt/ | instructors:Cristian Ferrer Canton
+vl-71-234 | Relatively-Paired Space Analysis | http://videolectures.net/bmvc2013_kuang_space_analysis/ | instructors:Zhanghui Kuang
+vl-71-235 | Life = Experiences (Events) + Vision | http://videolectures.net/acmmm2010_jain_taa/ | instructors:Ramesh Jain
+vl-71-236 | Designing Frameworks for Automatic Affect Prediction and Classification in Dimensional Space | http://videolectures.net/gesturerecognition2011_pantic_designing/ | instructors:Maja Pantic
+vl-71-237 | Active Matching: Efficient Guided Search for Image Correspondence | http://videolectures.net/rss2010_davison_ameg/ | instructors:Andrew Davison
+vl-71-238 | Domain Adaptation for Upper Body Pose Tracking in Signed TV Broadcasts | http://videolectures.net/bmvc2013_pfister_pose_tracking/ | instructors:Tomas Pfister
+vl-71-239 | On the completeness of coding with image features | http://videolectures.net/bmvc09_dickscheid_ccif/ | instructors:Timo Dickscheid
+vl-71-240 | Hybrid Multi-view Reconstruction by Jump-Diffusion | http://videolectures.net/cvpr2010_lafarge_hmvr/ | instructors:Florent Lafarge
+vl-71-241 | Reading Between The Lines: Object Localization Using Implicit Cues from Image Tags | http://videolectures.net/cvpr2010_hwang_rbtl/ | instructors:Sung Ju Hwang
+vl-71-242 | Knowledge Extraction from Aerodynamic Design Data and its Application to 3D Turbine Blade Geometries | http://videolectures.net/mla09_graening_kefad/ | instructors:Lars Graening
+vl-71-243 | Analysis of Light Transport in Scattering Media | http://videolectures.net/cvpr2010_mukaigawa_aolt/ | instructors:Yasuhiro Mukaigawa
+vl-71-244 | Automatic Annotation of Images using Ensembles of Trees for  Hierarchical Multi-label Classification | http://videolectures.net/solomon_dimitrovski_aai/ | instructors:Ivica Dimitrovski
+vl-71-245 | Segmentation-robust Representations, Matching, and Modeling for Sign Language Recognition | http://videolectures.net/gesturerecognition2011_sarkar_segmentation/ | instructors:Sudeep Sarkar
+vl-71-246 | Computing Homology Group Generators of Images Using Irregular Graph Pyramids | http://videolectures.net/gbr07_peltier_chgg/ | instructors:Samuel Peltier
+vl-71-247 | Multi-View Structure Computation without Explicitly Estimating Motion | http://videolectures.net/cvpr2010_li_mvsc/ | instructors:Hongdong  Li
+vl-71-248 | Let the Shape Speak - Discriminative Face Alignment using Conjugate Priors | http://videolectures.net/bmvc2012_martins_conjugate_priors/ | instructors:Pedro Martins
+vl-71-249 | Large Scale Scene Matching for Graphics and Vision | http://videolectures.net/cmulls09_hays_lssm/ | instructors:James Hays
+vl-71-250 | Rectilinear Parsing of Architecture in Urban Environment | http://videolectures.net/cvpr2010_zhao_rpau/ | instructors:Peng Zhao
+vl-71-251 | Beyond Active Noun Tagging: Modeling Contextual Interactions for Multi-Class Active Learning | http://videolectures.net/cvpr2010_siddiquie_bant/ | instructors:Behjat Siddiquie
+vl-71-252 | Certified Mesh Generation | http://videolectures.net/etvc08_boissonnat_cmg/ | instructors:Jean-Daniel Boissonnat
+vl-71-253 | Hierarchical preconditioners for image processing applications | http://videolectures.net/nipsworkshops2010_szeliski_hpi/ | instructors:Rick Szeliski
+vl-71-254 | Collaboratively Regularized Nearest Points for Set Based Recognition | http://videolectures.net/bmvc2013_wu_nearest_points/ | instructors:Yang Wu
+vl-71-255 | Probabilistic Temporal Inference on Reconstructed 3D Scenes | http://videolectures.net/cvpr2010_schindler_pti/ | instructors:Grant Schindler
+vl-71-256 | Active Visual Search | http://videolectures.net/rss2010_tsotsos_avs/ | instructors:John K. Tsotsos
+vl-71-257 | Axial Light Field for Curved Mirrors: Reflect Your Perspective, Widen Your View | http://videolectures.net/cvpr2010_taguchi_alfc/ | instructors:Yuichi Taguchi
+vl-71-258 | Motion segmentation by a model-based clustering approach of incomplete trajectories | http://videolectures.net/ecmlpkdd2011_karavasilis_trajectories/ | instructors:Vasileios Karavasilis
+vl-71-259 | 10. Multi-Camera People Tracking Presented by a Humanoid | http://videolectures.net/ijcai09_kim_mcptph/ | instructors:Kyungnam (Ken) Kim
+vl-71-260 | Online-Batch Strongly Convex Multi Kernel Learning | http://videolectures.net/cvpr2010_orabona_obsc/ | instructors:Francesco Orabona
+vl-71-261 | Visual Categorization with Bags of Keypoints | http://videolectures.net/lmcv04_dance_vcbk/ | instructors:Christopher Dance
+vl-71-262 | Interest Seam Image | http://videolectures.net/cvpr2010_hua_isi/ | instructors:Gang Hua
+vl-71-263 | 3D Visibility and Lines in Space | http://videolectures.net/etvc08_lazard_3valis/ | instructors:Sylvain Lazard
+vl-71-264 | Vision and Hodge Theory | http://videolectures.net/mlss09us_smale_vht/ | instructors:Stephen Smale
+vl-71-265 | Learning to combine foveal glimpses with a third-order Boltzmann machine | http://videolectures.net/nips2010_larochelle_lcf/ | instructors:Hugo Larochelle
+vl-71-266 | Dynamical Pose Filtering for Mixtures of Gaussian Processes | http://videolectures.net/bmvc2012_fergie_pose_filtering/ | instructors:Martin Fergie
+vl-71-267 | Shape modelling via higher-order active contours and phase fields | http://videolectures.net/mcvc08_jermyn_smho/ | instructors:Ian Jermyn
+vl-71-268 | Mining visual actions from movies | http://videolectures.net/bmvc09_gaidon_mva/ | instructors:Adrien Gaidon
+vl-71-269 | Quantification of Cytoskeletal Protein Localization from High-Content Images | http://videolectures.net/prib2010_zhu_qcpl/ | instructors:Shiwen Zhu
+vl-71-270 | Development of a new 3D transverse laser profiling system for the automatic measurement of road cracks | http://videolectures.net/surf08_laurent_doan3t/ | instructors:John Laurent
+vl-71-271 | Introduction to Multimedia Digital Libraries | http://videolectures.net/dmss06_wang_imdl/ | instructors:James Wang
+vl-71-272 | Fast Segmentation via Randomized Hashing | http://videolectures.net/bmvc09_taylor_fsrh/ | instructors:Camillo J. Taylor
+vl-71-273 | Object Separation In X-Ray Image Sets | http://videolectures.net/cvpr2010_heitz_osxr/ | instructors:Geremy Heitz
+vl-71-274 | Tag Suggestr: Automatic Photo Tag Expansion using Visual Information for Photo Sharing Websites | http://videolectures.net/samt08_sevil_apte/ | instructors:Sare Gül Sevil
+vl-71-275 | Consensus of Ambiguity: Theory of Active Learning for Biomedical Image Analysis Applications | http://videolectures.net/prib2010_doyle_cata/ | instructors:Scott Doyle
+vl-71-276 | Using Cloud Shadows to Infer Scene Structure and Camera Calibration | http://videolectures.net/cvpr2010_jacobs_ucsi/ | instructors:Nathan Jacobs
+vl-71-277 | Procedural Modeling of Architectures: Towards Large Scale Visual Reconstruction | http://videolectures.net/etvc08_paragios_pmoa/ | instructors:Nikos Paragios
+vl-71-278 | Category-Specific Object Recognition and Segmentation Using a Skeletal Shape Model | http://videolectures.net/bmvc09_trinh_csor/ | instructors:Nhon Trinh
+vl-71-279 | Minimum length in the tangent bundle as a model for curve completion | http://videolectures.net/cvpr2010_ben_yosef_mltb/ | instructors:Guy Ben-Yosef
+vl-71-280 | 101 Visual object classes - Introduction | http://videolectures.net/pcw05_zisserman_1voci/ | instructors:Andrew Zisserman
+vl-71-281 | Disambiguating Visual Relations Using Loop Constraints | http://videolectures.net/cvpr2010_zach_dvru/ | instructors:Christopher Zach
+vl-71-282 | Estimation of Location Uncertainty for Scale Invariant Features Points | http://videolectures.net/bmvc09_zeisl_elus/ | instructors:Bernhard Zeisl
+vl-71-283 | Exploiting Dissimilarity Representations for Person Re-Identification | http://videolectures.net/simbad2011_satta_dissimilarity/ | instructors:Riccardo Satta
+vl-71-284 | Augmenting the Generalized Hough Transform to Enable the Mining of Petroglyphs | http://videolectures.net/kdd09_zhu_aghtemp/ | instructors:Qiang Zhu
+vl-71-285 | Transductive Learning and Computer Vision | http://videolectures.net/wehys08_audibert_tlcv/ | instructors:Jean Yves Audibert
+vl-71-286 | Data Spectroscopy: Learning Mixture Models using Eigenspaces of Convolution Operators | http://videolectures.net/icml08_belkin_dslmm/ | instructors:Mikhail Belkin
+vl-71-287 | Extracting Gait Spatiotemporal Properties from Parkinson's Disease Patients | http://videolectures.net/nips09_sama_egs/ | instructors:Albert Sama
+vl-71-288 | Robust Matching and Recognition using Context-Dependent Kernels | http://videolectures.net/icml08_sahbi_rmr/ | instructors:Hichem Sahbi
+vl-71-289 | The Complete Rank Transform: A Tool for Accurate and Morphologically  Invariant Matching of Structures | http://videolectures.net/bmvc2013_demetz_rank_transform/ | instructors:Oliver Demetz
+vl-71-290 | Learning generative texture models with extended Fields-of-Experts | http://videolectures.net/bmvc09_heess_lgtm/ | instructors:Nicolas Heess
+vl-71-291 | Learning Visual Distance Function for Object Identification from one Example | http://videolectures.net/lce06_jurie_lvdfo/ | instructors:Frederic Jurie
+vl-71-292 | Learning Full Pairwise Affinities for Spectral Segmentation | http://videolectures.net/cvpr2010_hoon_kim_lfpa/ | instructors:Tae Hoon Kim
+vl-71-293 | Hierarchical Annotation of Medical Images | http://videolectures.net/sikdd08_dimitrovski_hami/ | instructors:Ivica Dimitrovski
+vl-71-294 | Locally Analytic Schemes for Diffusion Filtering of Images | http://videolectures.net/acs07_welk_las/ | instructors:Martin Welk
+vl-71-295 | The Automatic Design of Feature Spaces for Local Image Descriptors using an Ensemble of Non-linear Feature Extractors | http://videolectures.net/cvpr2010_carneiro_adfs/ | instructors:Gustavo Carneiro
+vl-71-296 | Improved Geometric Verification for Large Scale Landmark Image Collections | http://videolectures.net/bmvc2012_tighe_image_collections/ | instructors:Joseph Tighe
+vl-71-297 | Graph-Based Perceptual Segmentation of Stereo Vision 3D Images at Multiple Abstraction Levels | http://videolectures.net/gbr07_moreno_gbps/ | instructors:Rodrigo Moreno
+vl-71-298 | Specularity and Shadow Interpolation via Robust Polynomial Texture Maps | http://videolectures.net/bmvc09_hajari_ssi/ | instructors:Nasim Hajari
+vl-71-299 | Sub-grid and Spot Detection in DNA Microarray Images using Optimal Multi-level Thresholding | http://videolectures.net/prib2010_rueda_ssdm/ | instructors:Luis Rueda
+vl-71-300 | Image Classification for Age-related Macular Degeneration Screening using Hierarchical Image Decompositions and Graph Mining | http://videolectures.net/ecmlpkdd2011_ahmad_hijazi_classification/ | instructors:Mohd Hanafi Ahmad Hijazi
+vl-71-301 | Homogeneity-based Feature Extraction for Classification of Early-stage Alzheimer’s disease from Functional Magnetic Resonance Images | http://videolectures.net/datamining2011_plant_based/ | instructors:Claudia Plant
+vl-71-302 | Real Projective Plane Mapping for Detection of Orthogonal Vanishing Points | http://videolectures.net/bmvc2013_dubska_plane_mapping/ | instructors:Markéta Dubská
+vl-71-303 | 3D-assisted Facial Texture Super-Resolution | http://videolectures.net/bmvc09_mortazavian_3dft/ | instructors:Pouria Mortazavian
+vl-71-304 | Feature extraction & content description II | http://videolectures.net/dmss06_naphade_fecdi/ | instructors:Milind Naphade
+vl-71-305 | Learning a Region-based Scene Segmentation Model | http://videolectures.net/nipsworkshops09_kumar_lrbssm/ | instructors:Pawan Kumar Mudigonda
+vl-71-306 | Consistent Structured Estimation for Weighted Bipartite Matching | http://videolectures.net/aml08_caetano_csewbm/ | instructors:Tibério Caetano, James Petterson, Julian McAuley
+vl-71-307 | 18. Situated Interaction | http://videolectures.net/ijcai09_bohus_si/ | instructors:Eric Horvitz, Dan Bohus
+vl-71-308 | Object Identification by Statistical Methods | http://videolectures.net/solomon_lenz_oism/ | instructors:Hans-Joachim Lenz
+vl-71-309 | Clustering of Visual Data using Ant-inspired Methods | http://videolectures.net/samt08_janjusevic_cvd/ | instructors:Tijana Janjusevic
+vl-71-310 | Better appearance models for pictorial structures | http://videolectures.net/bmvc09_eichner_bamp/ | instructors:Marcin Eichner
+vl-71-311 | Multimodal Processing and Multimedia Understanding: Image Retrieval Using Eye Movements | http://videolectures.net/mcvc08_stentiford_mpmu/ | instructors:Fred Stentiford
+vl-71-312 | Bilateral Symmetry Detection via Symmetry-Growing | http://videolectures.net/bmvc09_cho_bsds/ | instructors:Minsu Cho
+vl-71-313 | Visual object recognition | http://videolectures.net/psm08_williams_vor/ | instructors:Chris Williams
+vl-71-314 | Automatic pedestrian tracking using discrete choice models and image correlation techniques | http://videolectures.net/mlmi04ch_antonini_aptud/ | instructors:Gianluca Antonini
+vl-71-315 | Image Classification Using Marginalized Kernels for Graphs | http://videolectures.net/gbr07_aldea_ic/ | instructors:Emanuel Aldea
+vl-71-316 | Proximate Sensing: Inferring What-Is-Where From Georeferenced Photo Collections | http://videolectures.net/cvpr2010_newsam_fgpc/ | instructors:Shawn Newsam
+vl-71-317 | Grouping Using Factor Graphs: an Approach for Finding Text with a Camera Phone | http://videolectures.net/gbr07_shen_gufg/ | instructors:Huiying Shen
+vl-71-318 | A Probabilistic Approach to Spectral Unmixing | http://videolectures.net/ssspr2010_huynh_pas/ | instructors:Cong Phuoc Huynh
+vl-71-319 | 3D head pose estimation from multiple distant views | http://videolectures.net/bmvc09_zabulis_3dhp/ | instructors:Xenophon Zabulis
+vl-71-320 | Multi-view synchronization of human actions and dynamic scenes | http://videolectures.net/bmvc09_dexter_mvsh/ | instructors:Emilie Dexter
+vl-71-321 | Color Image Segmentation: Kernel Do the Feature Space | http://videolectures.net/ecml03_lee_kfs/ | instructors:Jianguo Lee
+vl-71-322 | Multiframe Motion Segmentation via Penalized MAP Estimation and Linear Programming | http://videolectures.net/bmvc09_hu_mms/ | instructors:Han Hu
+vl-71-323 | Graph-based Methods for Retinal Mosaicing and Vascular Characterization | http://videolectures.net/gbr07_perez_gbrmr/ | instructors:M. Elena Martinez-Perez
+vl-71-324 | Separation of the Retinal Vascular Graph in Arteries and Veins | http://videolectures.net/gbr07_rothaus_sotrv/ | instructors:Kai Rothaus
+vl-71-325 | Multi-View Geometry of the Refractive Plane | http://videolectures.net/bmvc09_chari_mvgrp/ | instructors:Visesh Chari
+vl-71-326 | Autonomous Geometric Precision Error Estimation in Low-level Computer Vision Tasks | http://videolectures.net/icml08_paisley_agpee/ | instructors:John Paisley
+vl-71-327 | Stationary Features and Folded Hierarchies for Efficient Object Detection | http://videolectures.net/eml07_geman_sff/ | instructors:Donald Geman
+vl-71-328 | Toward Learning Mixture-of-Parts Pictorial Structures | http://videolectures.net/icml07_fern_tlm/ | instructors:Alan Fern
+vl-71-329 | Visual Categorization with Bags of Keypoints | http://videolectures.net/lmcv04_williams_vcbk/ | instructors:Chris Williams
+vl-71-330 | Increasing Depth Resolution of Electron Microscopy of Neural Circuits using Sparse Tomographic Reconstruction | http://videolectures.net/cvpr2010_chklovskii_idre/ | instructors:Dmitri Chklovskii
+vl-71-331 | Recognising Animals | http://videolectures.net/mcvc08_hanbury_ran/ | instructors:Allan Hanbury
+vl-71-332 | Gait Representation Using Flow Fields | http://videolectures.net/bmvc09_bashir_gruff/ | instructors:Khalid Bashir
+vl-71-333 | Detecting Motifs Under Uniform Scaling | http://videolectures.net/kdd07_yankov_dmuu/ | instructors:Dragomir Yankov
+vl-71-334 | S-SEER: A Multimodal Office Activity Recognition System with Selective Perception | http://videolectures.net/mlmi04ch_oliver_moars/ | instructors:Nuria Oliver
+vl-71-335 | Using computer vision in a rehabilitation method of a human hand | http://videolectures.net/medicon07_katrasnik_ucv/ | instructors:Jaka Katrasnik
+vl-71-336 | Research 17: Integrating and Querying Parallel Leaf Shape Descriptions | http://videolectures.net/iswc06_wang_iqpls/ | instructors:Shenghui Wang
+vl-71-337 | Discussion | http://videolectures.net/gesturerecognition2011_guyon_discussion/ | instructors:Isabelle Guyon
+vl-71-338 | Probabilistic account for multi-view stereo | http://videolectures.net/lmcv04_fransens_pamvs/ | instructors:Rik Fransens
+vl-71-339 | TecnoVision-ROBIN: benchmarking object retrieval algorithms | http://videolectures.net/lmcv04_jurie_bora/ | instructors:Frederic Jurie
+vl-71-340 | Learning Sprites | http://videolectures.net/lmcv04_williams_ls/ | instructors:Chris Williams
+vl-71-341 | The UoS LAVA group Approach to Generic Image Categorisation | http://videolectures.net/pcw05_farquhar_ulgag/ | instructors:Jason Farquhar
+vl-71-342 | Constructing visual models with a latent space approach | http://videolectures.net/slsfs05_monay_cvmls/ | instructors:Florent Monay
+vl-71-343 | Scene Text Recognition using Higher Order Language Priors | http://videolectures.net/bmvc2012_mishra_scene_text_recognition/ | instructors:Anand Mishra
+vl-71-344 | ECCV 2016 announcement | http://videolectures.net/eccv2014_gevers_eccv2016/ | instructors:Theo Gevers
+vl-71-345 | Opening & Awards | http://videolectures.net/eccv2014_pajdla_pollefeyes_opening/ | instructors:Tomas Pajdla, Marc Pollefeys
+vl-71-346 | ImageNet Classification with Deep Convolutional Neural Networks | http://videolectures.net/machine_krizhevsky_imagenet_classification/ | instructors:Alex Krizhevsky
+vl-71-347 | Closing | http://videolectures.net/eccv2014_pollefeys_closing/ | instructors:Marc Pollefeys, Luc Van Gool
+vl-71-348 | 3D Object Detection and Viewpoint Estimation with a Deformable 3D Cuboid Model | http://videolectures.net/machine_fidler_object_detection/ | instructors:Sanja Fidler
+vl-71-349 | Kernel Descriptors for Visual Recognition | http://videolectures.net/nips2010_bo_kdvr/ | instructors:Liefeng Bo
+vl-71-350 | Regression Based Pose Estimation with Automatic Occlusion Detection and Rectification | http://videolectures.net/icme2012_radwan_pose_estimation/ | instructors:Ibrahim Ismail Radwan
+vl-71-351 | Opening | http://videolectures.net/eccv2012_opening/ | instructors:Alberto Del Bimbo, Roberto Cipolla,
+   
+    et al.
+vl-71-352 | Learning To Count Objects in Images | http://videolectures.net/nips2010_lempitsky_lco/ | instructors:Victor Lempitsky
+vl-71-353 | A Coherent Framework for Photo-Quality Assessment and Enhancement based on Visual Aesthetics | http://videolectures.net/acmmm2010_bhattacharya_cfp/ | instructors:Subhabrata Bhattacharya
+vl-71-354 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights1a/ | instructors:Shai Bagon, Chang Huang,
+   
+    et al.
+vl-71-355 | QoS-driven and Fair Downlink Scheduling for Video Streaming over LTE Networks with Deadline and Hard Hand-off | http://videolectures.net/icme2012_chen_video_streaming/ | instructors:Chang Wen Chen
+vl-71-356 | Traffic Reduction for Multiple Users in Multi‐View Video Streaming | http://videolectures.net/icme2012_fujihashi_traffic_reduction/ | instructors:Takuya Fujihashi
+vl-71-357 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights4a/ | instructors:Senjian An, Gabriel Takacs,
+   
+    et al.
+vl-71-358 | Analyzing 3D Objects in Cluttered Images | http://videolectures.net/machine_hejrati_analyzing_objects/ | instructors:Mohsen Hejrati
+vl-71-359 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights6a/ | instructors:Hongsheng Li, David Stavens,
+   
+    et al.
+vl-71-360 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights8a/ | instructors:Stefan Hinterstoisser, Wang-Meng Zuo,
+   
+    et al.
+vl-71-361 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights10/ | instructors:Hyung Il Koo, Varun Gulshan,
+   
+    et al.
+vl-71-362 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights8/ | instructors:Simon Baker, Yu-Wing Tai,
+   
+    et al.
+vl-71-363 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights9/ | instructors:Hongjun Jia, Dijia Wu,
+   
+    et al.
+vl-71-364 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights5a/ | instructors:Guoying Zhao, Charles Bibby,
+   
+    et al.
+vl-71-365 | Epitome driven 3-D Diffusion Tensor image segmentation: on extracting specific structures | http://videolectures.net/nips2010_motwani_edd/ | instructors:Kamiya Motwani
+vl-71-366 | Hierarchical spike coding of sound | http://videolectures.net/machine_karklin_sound/ | instructors:Yan Karklin
+vl-71-367 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights1/ | instructors:Taeg Sang Cho, Konstantinos Derpanis,
+   
+    et al.
+vl-71-368 | A Cognitive Approach for Effective Coding and Transmission of 3D Video | http://videolectures.net/acmmm2010_milani_cae/ | instructors:Simone Milani
+vl-71-369 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights7/ | instructors:Alastair Moore, Juyong Zhang,
+   
+    et al.
+vl-71-370 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights9a/ | instructors:Ye Ning, Ritwik Kumar,
+   
+    et al.
+vl-71-371 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights4/ | instructors:Xianghua Ying, Paolo Favaro,
+   
+    et al.
+vl-71-372 | Searching for objects driven by context | http://videolectures.net/machine_alexe_searching_objects/ | instructors:Bogdan Alexe
+vl-71-373 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights7a/ | instructors:Vasu Parameswaran, Konstantinos Derpanis,
+   
+    et al.
+vl-71-374 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights11/ | instructors:Gang Wang, Aleix M. Martinez,
+   
+    et al.
+vl-71-375 | Saliency-Cognizant Error Concealment In Loss-Corrupted Streaming Video | http://videolectures.net/icme2012_hadizadeh_streaming/ | instructors:Hadi Hadizadeh
+vl-71-376 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights10a/ | instructors:Lei Zhang, Ajay Joshi,
+   
+    et al.
+vl-71-377 | A Unified Estimation-Theoretic Framework For Error-Resilient Scalable Video Coding | http://videolectures.net/icme2012_han_video_coding/ | instructors:Jingning Han
+vl-71-378 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights3a/ | instructors:Juan Carlos Niebles, Gerard Pons-Moll,
+   
+    et al.
+vl-71-379 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights2/ | instructors:Dong Guo, Li Zhang,
+   
+    et al.
+vl-71-380 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights6/ | instructors:Qingxiong Yang, Sing Bing Kang,
+   
+    et al.
+vl-71-381 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights2a/ | instructors:Stefanie Wuhrer, Yun Zeng,
+   
+    et al.
+vl-71-382 | Layered image motion with explicit occlusions, temporal consistency, and depth ordering | http://videolectures.net/nips2010_sun_lim/ | instructors:Deqing Sun
+vl-71-383 | Poster Spotlights | http://videolectures.net/cvpr2010_spotlights3/ | instructors:Lei Zhang, Nathan Manor,
+   
+    et al.
+vl-71-384 | Facial Expression Detection using Filtered Local Binary Pattern Features with ECOC Classifiers and Platt Scaling | http://videolectures.net/wapa2010_smith_fedf/ | instructors:Raymond Smith
+vl-71-385 | Opening remarks | http://videolectures.net/nipsworkshops2011_harmeling_opening/ | instructors:Stefan Harmeling
+vl-71-386 | A Fast and Performance-Maintained Transcoding Method based on Background Modeling for Surveillance Video | http://videolectures.net/icme2012_zhang_transcoding/ | instructors:Xianguo Zhang
+vl-71-387 | MIME: A Framework for Interactive Visual Pattern Mining | http://videolectures.net/ecmlpkdd2011_moens_interactive/ | instructors:Sandy Moens
+vl-71-388 | Towards On-the-fly Large Scale Video Search | http://videolectures.net/bmvc2013_zisserman_video_search/ | instructors:Andrew Zisserman
+vl-71-389 | A Tour of Modern "Image Processing" | http://videolectures.net/nipsworkshops2010_milanfar_tmi/ | instructors:Peyman Milanfar
+vl-71-390 | Monocular SLAM and Real-Time Scene Perception | http://videolectures.net/bmvc2012_davison_scene_perception/ | instructors:Andrew Davison
+vl-71-391 | Suspicious Coincidences in the Brain | http://videolectures.net/nips2012_sejnowski_brain/ | instructors:Terrence J. Sejnowski
+vl-71-392 | Latent Variable Models for Content-Based Image Retrieval and Structure Prediction | http://videolectures.net/bmvc2012_quattoni_structure_prediction/ | instructors:Ariadna Quattoni
+vl-71-393 | The quest for a theory of vision: from the level framework (revised) to the invariances of the ventral stream | http://videolectures.net/eccv2012_poggio_stream/ | instructors:Tomaso A. Poggio, Pietro Perona
+vl-71-394 | Factor Graphs for Fast and Scalable 3D Reconstruction and Mapping | http://videolectures.net/bmvc2013_dellaert_factor_graphs/ | instructors:Frank Dellaert
+vl-71-395 | Compressive Sensing for Computer Vision: Hype vs Hope | http://videolectures.net/bmvc09_chellappa_cscv/ | instructors:Rama Chellappa
+vl-71-396 | Visual Crowd Surveillance is Like Hydrodynamics | http://videolectures.net/acmmm2010_shah_vcs/ | instructors:Mubarak Shah
+vl-71-397 | Deep Learning with Multiplicative Interactions | http://videolectures.net/nips09_hinton_dlmi/ | instructors:Geoffrey E. Hinton
+vl-71-398 | Superresolution imaging - from equations to mobile applications | http://videolectures.net/nipsworkshops2011_sroubek_mobile/ | instructors:Filip Šroubek
+vl-71-399 | Visual Tracking in the 21st Century | http://videolectures.net/bmvc2012_matas_visual_tracking/ | instructors:Jiri Matas
+vl-71-400 | Old and New algorithm for Blind Deconvolution | http://videolectures.net/nipsworkshops2011_weiss_deconvolution/ | instructors:Yair Weiss
+vl-71-401 | The Light Field Camera: Extended Depth of Field, Aliasing and Superresolution | http://videolectures.net/nipsworkshops2011_favaro_superresolution/ | instructors:Paolo Favaro
+vl-71-402 | If Only We Had Tracked Something Like This Before | http://videolectures.net/bmvc2013_browstow_something/ | instructors:Gabriel Brostow
+vl-71-403 | Real-time Image Enhancement Using Edge-Optimized a-trous Wavelets | http://videolectures.net/nipsworkshops2011_lensch_wavelets/ | instructors:Hendrik Lensch
+vl-71-404 | The Future of Natural User Interface | http://videolectures.net/icme2012_guo_user_interface/ | instructors:Baining Guo
+vl-71-405 | Learning and Inference in Low-Level Vision | http://videolectures.net/nips09_weiss_lil/ | instructors:Yair Weiss
+vl-71-406 | Mask-based Light Field Capture and Display | http://videolectures.net/nipsworkshops2010_lanman_mbl/ | instructors:Douglas Lanman
+vl-71-407 | Modeling the Digital Camera Pipeline: From RAW to sRGB and Back | http://videolectures.net/nipsworkshops2011_brown_pipeline/ | instructors:Michael S. Brown
+vl-71-408 | 2D and 3D Multiscale Geometric Transforms | http://videolectures.net/nipsworkshops2011_starck_transforms/ | instructors:Jean-Luc Starck
+vl-71-409 | Energy Minimization with Label costs and Applications in Multi-Model Fitting | http://videolectures.net/nipsworkshops2010_boykov_eml/ | instructors:Yuri Boykov
+vl-71-410 | From Image Restoration to Compressive Sampling in Computational Photography. A Bayesian Perspective. | http://videolectures.net/nipsworkshops2011_molina_restoration/ | instructors:Rafael Molina
+vl-71-411 | Mobile Multimedia Meet Cloud: Challenges and Future Directions | http://videolectures.net/icme2012_chen_mobile_multimedia/ | instructors:Chang Wen Chen
+vl-71-412 | Learning Graph Matching | http://videolectures.net/mlg07_smola_lgm/ | instructors:Alexander J. Smola
+vl-71-413 | Toward Transparent Telepresence | http://videolectures.net/icme2012_fuchs_telepresence/ | instructors:Henry Fuchs
+vl-71-414 | People In Motion: Pose, Action and Communication | http://videolectures.net/bmvc2012_sclaroff_communication/ | instructors:Stan Sclaroff
+vl-71-415 | Optimized Corner and Object Detection: a Completely Non Unified Approach | http://videolectures.net/bmvc2013_rosten_optimized_corner/ | instructors:Edward Rosten
+vl-71-416 | Denoising of Natural Images: Optimality and Fundamental Lower Bounds | http://videolectures.net/nipsworkshops2010_nadler_dni/ | instructors:Boaz Nadler
+vl-71-417 | Dark flash photography | http://videolectures.net/nipsworkshops2010_fergus_dfp/ | instructors:Rob Fergus
+vl-71-418 | Efficient Regression for Computational Photography: from Color Management to Omnidirectional Superresolution | http://videolectures.net/nipsworkshops2011_gupta_omnidirectional/ | instructors:Maya Gupta
+vl-71-419 | From Injective Hilbert Space Embeddings to Deconvolution | http://videolectures.net/nipsworkshops2010_schoelkopf_ihs/ | instructors:Bernhard Schölkopf
+vl-71-420 | Probabilistic models for understanding images | http://videolectures.net/icml08_winn_pmui/ | instructors:John Winn
+vl-71-421 | Codes for Sampling Images over Time and Space | http://videolectures.net/nipsworkshops2010_freeman_csi/ | instructors:William T. Freeman
+vl-71-422 | Support Constraints Machines | http://videolectures.net/simbad2011_gori_constraints/ | instructors:Marco Gori
+vl-71-423 | Generative and Discriminative Image Models | http://videolectures.net/nipsworkshops09_winn_gdim/ | instructors:John Winn
+vl-71-424 | Facial Image Analysis using Directional Statistics and Shape-from Shading | http://videolectures.net/wapa2010_hancock_fiad/ | instructors:Edwin Hancock
+vl-71-425 | Where's What? - Towards Semantic Mapping of Urban Environments | http://videolectures.net/nipsworkshops09_posner_wwts/ | instructors:Ingmar Posner
+vl-71-426 | Exploring human object-vision with hi-res fMRI and information-based analysis | http://videolectures.net/fmri06_kriegeskorte_ehovr/ | instructors:Nikolaus Kriegeskorte
+vl-71-427 | Image Registration for Medical Diagnosis and Intervention | http://videolectures.net/medicon07_viergever_irfmd/ | instructors:Max A. Viergever
+vl-71-428 | Optimizing the Blur-Noise Tradeoff with Multiple-Photo Capture | http://videolectures.net/nipsworkshops2010_hasinoff_obn/ | instructors:Samuel Hasinoff
+vl-71-429 | Deep Learning for Machine Vision | http://videolectures.net/bmvc2013_coates_machine_vision/ | instructors:Adam Coates
+vl-71-430 | MAP inference in Discrete Models | http://videolectures.net/bmvc2012_kohli_discrete_models/ | instructors:Pushmeet Kohli
+vl-71-431 | Understanding Visual Scenes | http://videolectures.net/nips09_torralba_uvs/ | instructors:Antonio Torralba
+vl-71-432 | Learning in Computer Vision | http://videolectures.net/mlss08au_lucey_linv/ | instructors:Simon Lucey
+vl-71-433 | Computer vision | http://videolectures.net/ssll09_hartley_covi/ | instructors:Richard Hartley
+vl-71-434 | Topics in image and video processing | http://videolectures.net/mlss07_blake_tiivp/ | instructors:Andrew Blake
+vl-71-435 | Submodularity in Machine Learning and Vision | http://videolectures.net/bmvc2013_krause_machine_learning/ | instructors:Andreas Krause
+vl-71-436 | Large-scale and larger-scale image search | http://videolectures.net/bmvc2012_jegou_image_search/ | instructors:Hervé Jégou
+vl-71-437 | Computer Vision | http://videolectures.net/mlss09uk_blake_cv/ | instructors:Andrew Blake
+vl-71-438 | Vision-Based Control, Control-Based Vision, and the Information Knot That Ties Them | http://videolectures.net/nips2010_soatto_vbc/ | instructors:Stefano Soatto
+vl-71-439 | Feature extraction & content description I | http://videolectures.net/dmss06_sebe_fecd/ | instructors:Nicu Sebe
+vl-71-440 | Learning to see people | http://videolectures.net/snnsymposium2010_gavrila_ltsp/ | instructors:Dariu Gavrila
+vl-71-441 | A buyer's guide to continious optimization | http://videolectures.net/bmvc09_fitzgibbon_bgco/ | instructors:Andrew Fitzgibbon

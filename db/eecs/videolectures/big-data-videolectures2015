@@ -1,0 +1,240 @@
+vl-602-1 | Research at Twitter | http://videolectures.net/solomon_kolcz_twitter/ | instructors:Aleksander Kołcz
+vl-602-2 | Big Data Clustering | http://videolectures.net/single_jain_bigdata/ | instructors:Anil K. Jain
+vl-602-3 | User Interests Identification on Twitter Using a Hierarchical Knowledge Base | http://videolectures.net/eswc2014_sheth_user/ | instructors:Amit Sheth
+vl-602-4 | Linked Data and Open Government Data as part of the business strategy of Wolters Kluwer Deutschland | http://videolectures.net/dataforum2014_lindemann_dirschl_data/ | instructors:Christian Lindemann, Christian Dirschl
+vl-602-5 | Data and Analytics for the Presidential Elections | http://videolectures.net/solomon_ghani_presidential_elections/ | instructors:Rayid Ghani
+vl-602-6 | Open PHACTS: A Data Platform for Drug Discovery | http://videolectures.net/dataforum2014_groth_data_platform/ | instructors:Paul Groth
+vl-602-7 | Vista TV - Online TV Statistics and Dynamic Joint Recommendations | http://videolectures.net/dataforum2014_bernstein_online_tv/ | instructors:Abraham Bernstein
+vl-602-8 | City Data Pipeline – A report about experiences from using Open Data to gather indicators of city performance | http://videolectures.net/dataforum2014_polleres_open_data/ | instructors:Axel Polleres
+vl-602-9 | Addressing risks and opportunities engendered by big data: The BYTE project | http://videolectures.net/dataforum2014_wadhwa_big_data/ | instructors:Kush Wadhwa
+vl-602-10 | Detecting Incorrect Numerical Data in DBpedia | http://videolectures.net/eswc2014_paulheim_numerical_data/ | instructors:Heiko Paulheim
+vl-602-11 | City SDK – Smart City Services bases on Open Source Linked Open Data API’s | http://videolectures.net/dataforum2014_kresin_open_data/ | instructors:Frank Kresin
+vl-602-12 | Dedalo: looking for Clusters Explanations in a Labyrinth of Linked Data | http://videolectures.net/eswc2014_tiddi_dedalo/ | instructors:Ilaria Tiddi
+vl-602-13 | An overview of the Horizon 2020 Work Programme 2014-2015 (LEIT-ICT) | http://videolectures.net/dataforum2014_barbato_work_programme/ | instructors:Francesco Barbato
+vl-602-14 | Plan-Based Semantic Enrichment of Event Streams | http://videolectures.net/eswc2014_teymourian_event_streams/ | instructors:Kia Teymourian
+vl-602-15 | Making a "black box" transparent: role of the open data in the building sector | http://videolectures.net/dataforum2014_petrichenko_black_box/ | instructors:Ksenia Petrichenko
+vl-602-16 | Trusty URIs: Verifiable, Immutable, and Permanent Digital Artifacts for Linked Data | http://videolectures.net/eswc2014_kuhn_linked_data/ | instructors:Tobias Kuhn
+vl-602-17 | Predicting parking occupancy in a sensor-enabled smart city | http://videolectures.net/dataforum2014_tsetsos_parking_occupancy/ | instructors:Vassileios Tsetsos
+vl-602-18 | A Scalable Approach for Efficiently Generating Structured Dataset Topic Profiles | http://videolectures.net/eswc2014_fetahu_topic_profiles/ | instructors:Besnik Fetahu
+vl-602-19 | Identifying change patterns of concept attributes in ontology evolution | http://videolectures.net/eswc2014_dos_reis_patterns/ | instructors:Julio Cesar Dos Reis
+vl-602-20 | KI2NA - Using Linked Data for the Intelligent society | http://videolectures.net/dataforum2014_decker_mccauley_data/ | instructors:Stefan Decker, Anthony McCauley
+vl-602-21 | Eccenca European Data Innovator Award | http://videolectures.net/dataforum2014_eccenca_award/ | instructors:Johann Mittheisz, Hans-Christian Brockmann,
+   
+    et al.
+vl-602-22 | A Comparison of Knowledge Extraction Tools for the Semantic Web | http://videolectures.net/eswc2013_gangemi_web/ | instructors:Aldo Gangemi, Harald Sack
+vl-602-23 | A Multilingual semantic wiki based on Attempto Controlled English and Grammatical Framework | http://videolectures.net/eswc2013_kaljurand_semantic/ | instructors:Kaarel Kaljurand, Jens Lehmann
+vl-602-24 | Scaling Parallel Rule-based Reasoning | http://videolectures.net/eswc2014_peters_rule_based/ | instructors:Martin Peters
+vl-602-25 | The Community Trademark | http://videolectures.net/dataforum2014_magnusdottir_services/ | instructors:Gudrun Magnusdottir
+vl-602-26 | Survey on Common Strategies of Vocabulary Reuse in Linked Open Data Modeling | http://videolectures.net/eswc2014_schaible_open_data/ | instructors:Johann Schaible
+vl-602-27 | Deriving Value from Big Data for Enterprise Performance Management | http://videolectures.net/dataforum2014_eichin_big_data/ | instructors:Rüdiger Eichin
+vl-602-28 | From Carbon to Diamonds: Business cases of data value | http://videolectures.net/dataforum2014_vassiliadis_data_value/ | instructors:Dimitris Vassiliadis
+vl-602-29 | A Support Framework for Argumentative Discussions Management in the Web | http://videolectures.net/eswc2013_villata_framework/ | instructors:Serena Villata, Harald Sack
+vl-602-30 | Generating Synthetic RDF Data with Connected Blank Nodes for Benchmarking | http://videolectures.net/eswc2014_lantzaki_blank_nodes/ | instructors:Christina Lantzaki
+vl-602-31 | SentiCircles for Contextual and Conceptual Semantic Sentiment analysis of Twitter | http://videolectures.net/eswc2014_saif_senticircles/ | instructors:Hassan Saif
+vl-602-32 | These are your rights: A Natural Language Processing Approach to Automated RDF Licenses Generation | http://videolectures.net/eswc2014_villata_rights/ | instructors:Serena Villata
+vl-602-33 | TeraLab, A Secure Big Data Platform: Description And Use Cases | http://videolectures.net/dataforum2014_cotton_big_data/ | instructors:Franck Cotton
+vl-602-34 | A Probabilistic Approach for Integrating Heterogeneous Knowledge Sources | http://videolectures.net/eswc2014_dutta_knowledge_sources/ | instructors:Arnab Dutta
+vl-602-35 | NL-Graphs: A Hybrid Approach toward Interactively Querying Semantic Data | http://videolectures.net/eswc2014_mazumdar_hybrid/ | instructors:Suvodeep Mazumdar
+vl-602-36 | Elastic and scalable processing of Linked Stream Data in the Cloud | http://videolectures.net/iswc2013_le_phuoc_data_cloud/ | instructors:Danh Le Phuoc
+vl-602-37 | Hafslund Sesam - an archive on semantics | http://videolectures.net/eswc2013_garshol_hafslund_sesam/ | instructors:Lars Marius Garshol
+vl-602-38 | NLP data cleansing based on Linguistic Ontology constraints | http://videolectures.net/eswc2014_kontokostas_nlp/ | instructors:Dimitris Kontokostas
+vl-602-39 | conTEXT -- Lightweight Text Analytics using Linked Data | http://videolectures.net/eswc2014_khalili_context/ | instructors:Ali Khalili
+vl-602-40 | Hybrid Acquisition of Temporal Scopes for RDF Data | http://videolectures.net/eswc2014_rula_temporal_scopes/ | instructors:Anisa Rula
+vl-602-41 | Good Law from Open Data | http://videolectures.net/dataforum2013_sheridan_good_law/ | instructors:John Sheridan
+vl-602-42 | Broadening the Scope of Nanopublications | http://videolectures.net/eswc2013_kuhn_scope/ | instructors:Tobias Kuhn, Fabien Gandon
+vl-602-43 | Towards Interoperable Visualization Applications Over Linked Data | http://videolectures.net/dataforum2013_atemezing_visualization_applications/ | instructors:Ghislain Auguste Atemezing
+vl-602-44 | Identifying diachronic topic-based research communities by clustering shared research trajectories | http://videolectures.net/eswc2014_osborne_identifying/ | instructors:Francesco Osborne
+vl-602-45 | How to Best Find a Partner? An Evaluation of Editing Approaches to Construct R2RML Mapping | http://videolectures.net/eswc2014_pinkel_partner/ | instructors:Christoph Pinkel
+vl-602-46 | Interoperability Solutions | http://videolectures.net/dataforum2014_magnusdottir_interoperability/ | instructors:Gudrun Magnusdottir
+vl-602-47 | Data protection frameworks fit for 'Big Data' | http://videolectures.net/dataforum2014_cullen_data_protection/ | instructors:Peter Cullen
+vl-602-48 | Semantic Multimedia Information Retrieval Based on Contextual Descriptions | http://videolectures.net/eswc2013_steinmetz_semantic/ | instructors:Nadine Steinmetz, Jens Lehmann
+vl-602-49 | Accepting the XBRL Challenge with Linked Data for Financial Data Integration | http://videolectures.net/eswc2014_kaempgen_xbrl/ | instructors:Benedikt Kämpgen
+vl-602-50 | HiBISCuS: Hypergraph-Based Source Selection for SPARQL Endpoint Federation | http://videolectures.net/eswc2014_saleem_endpoint_federation/ | instructors:Muhammad Saleem
+vl-602-51 | The usability of Description Logics: Understanding the cognitive difficulties presented by Description Logics | http://videolectures.net/eswc2014_warren_usability/ | instructors:Paul Warren
+vl-602-52 | Constructing a Focused Taxonomy from a Document Collection | http://videolectures.net/eswc2013_divoli_taxonomy/ | instructors:Anna Divoli, Harald Sack
+vl-602-53 | Collaborating on Interoperability to Achieve a Single Market | http://videolectures.net/dataforum2014_eichin_single_market/ | instructors:Rüdiger Eichin
+vl-602-54 | The RETHINK big Project NEEDS YOU. | http://videolectures.net/dataforum2014_cristal_the_rethink/ | instructors:Adrián Cristal
+vl-602-55 | Error-Tolerant RDF Subgraph Matching for Adaptive Presentation of Linked Data on Mobile | http://videolectures.net/eswc2014_costabello_linked_data/ | instructors:Luca Costabello
+vl-602-56 | Concept-Level Sentiment Analysis Challenge: presentation of tasks | http://videolectures.net/eswc2014_reforgiato_concept/ | instructors:Diego Reforgiato Recupero
+vl-602-57 | Collaborating on Interoperability to Achieve a Single Market | http://videolectures.net/dataforum2014_hummel_single_market/ | instructors:Jochen Hummel
+vl-602-58 | Ontology-Based Data Access Using Rewriting, OWL 2 RL Systems and Repairing | http://videolectures.net/eswc2014_stoilos_data_access/ | instructors:Giorgos Stoilos
+vl-602-59 | The CLOCK Data-Aware Eviction Approach | http://videolectures.net/eswc2014_gao_eviction_approach/ | instructors:Shen Gao
+vl-602-60 | Leveraging Distributed Human Computation and Consensus Partition for Entity Coreference | http://videolectures.net/eswc2014_gong_entity_coreference/ | instructors:Saisai Gong
+vl-602-61 | Bio2RDF Release 2: Improved coverage, interoperability and provenance of Life Science Linked Data | http://videolectures.net/eswc2013_dumontier_data/ | instructors:Michel Dumontier, Olaf Hartig
+vl-602-62 | Practical PostgreSQL | http://videolectures.net/dataforum2013_riggs_postgreSQL/ | instructors:Simon Riggs
+vl-602-63 | Towards Evaluating Interactive Ontology Matching Tools | http://videolectures.net/eswc2013_ritze_interactive_ontology/ | instructors:Dominique Ritze
+vl-602-64 | Observing Linked Data Dynamics | http://videolectures.net/eswc2013_kaefer_data/ | instructors:Tobias Käfer, Olaf Hartig
+vl-602-65 | Instance-based ontological knowledge acquisition | http://videolectures.net/eswc2013_zhao_knowledge/ | instructors:Lihua Zhao, Laura Hollink
+vl-602-66 | Combining a co-occurrence-based and a semantic measure for entity linking | http://videolectures.net/eswc2013_fetahu_entity_linking/ | instructors:Besnik Fetahu
+vl-602-67 | Providing Alternative Declarative Descriptions for Entity Sets using Parallel Concept Lattices | http://videolectures.net/eswc2014_scheglmann_alternative/ | instructors:Stefan Scheglmann
+vl-602-68 | RDSZ: An approach for lossless RDF stream compression | http://videolectures.net/eswc2014_garcia_stream_compression/ | instructors:Norberto Fernández García
+vl-602-69 | Linked Open Dataenabled Recommender Systems Challenge: presentation of tasks | http://videolectures.net/eswc2014_di_noia_linked/ | instructors:Tommaso Di Noia
+vl-602-70 | Generating and Summarizing Explanations for Linked Data | http://videolectures.net/eswc2014_hasan_linked_data/ | instructors:Rakebul Hasan
+vl-602-71 | WaterFowl: a Compact, Self-indexed and Inference-enabled immutable RDF Store | http://videolectures.net/eswc2014_cure_water_fowl/ | instructors:Olivier Curé
+vl-602-72 | DataConf: A full client-side Web mashup for scientific conferences | http://videolectures.net/eswc2013_medini_dataconf/ | instructors:Lionel Médini, Florian Bâcle,
+   
+    et al.
+vl-602-73 | Collaborating on Interoperability to Achieve a Single Market | http://videolectures.net/dataforum2014_nagy_rothengass_single_market/ | instructors:Márta Nagy-Rothengass
+vl-602-74 | Towards Competency Question-driven Ontology Authoring | http://videolectures.net/eswc2014_ren_competency/ | instructors:Yuan Ren
+vl-602-75 | A Framework for Iterative Signing of Graph Data on the Web | http://videolectures.net/eswc2014_kasten_graph_data/ | instructors:Andreas Kasten
+vl-602-76 | SPARQL Query Verbalization for Explaining Semantic Search Engine Queries | http://videolectures.net/eswc2014_ell_search_engine/ | instructors:Basil Ell
+vl-602-77 | Big, Linked and Open Data in Greece: Current Status and New Directions | http://videolectures.net/dataforum2014_ioannidis_open_data/ | instructors:Yannis Ioannidis
+vl-602-78 | A Unified Approach for Aligning Taxonomies and Debugging Taxonomies and their Alignments | http://videolectures.net/eswc2013_ivanova_aligning_taxonomies/ | instructors:Valentina Ivanova
+vl-602-79 | No Size Fits All - Running the Star Schema Benchmark with SPARQL and RDF Aggregate Views | http://videolectures.net/eswc2013_kaempgen_views/ | instructors:Benedikt Kämpgen, Axel Polleres
+vl-602-80 | Advanced Exploration of Public Procurement Data in Linked Data Paragigm | http://videolectures.net/dataforum2014_wecel_linked_data/ | instructors:Krzysztof Wecel
+vl-602-81 | Personalized Concept - based Search and Exploration on the Web of Data using Results Categorization | http://videolectures.net/eswc2013_wade_results_categorization/ | instructors:Vincent Wade
+vl-602-82 | Object Property Matching utilizing the Overlap between Imported Ontologies | http://videolectures.net/eswc2014_zapilko_object/ | instructors:Benjamin Zapilko
+vl-602-83 | Using Semantic and Domain-based Information in CLIR Systems | http://videolectures.net/eswc2014_dragoni_semantic/ | instructors:Mauro Dragoni
+vl-602-84 | Towards Portable Shopping Histories: Using GoodRelations to Expose Ownership Information to ECommerce Sites | http://videolectures.net/eswc2014_hepp_towards/ | instructors:Martin Hepp
+vl-602-85 | COLIBRI: Unsupervised Link Discovery Through Knowledge Base Repair | http://videolectures.net/eswc2014_sherif_colibri/ | instructors:Mohamed Ahmed Sherif
+vl-602-86 | Pay-as-you-go Approximate Join Top-k Processing for the Web of Data | http://videolectures.net/eswc2014_wagner_web_of_data/ | instructors:Andreas Wagner
+vl-602-87 | Optimising Linked Data Queries in the Presence of Co-reference | http://videolectures.net/eswc2014_wang_linked_data/ | instructors:Xin Wang
+vl-602-88 | Semantics – Interoperability – Integration A multi-faceted problem | http://videolectures.net/dataforum2014_kotsiopoulos_semantics/ | instructors:Ioannis Kotsiopoulos
+vl-602-89 | Using BMEcat Catalogs as a Lever for Product Master Data on the Semantic Web | http://videolectures.net/eswc2013_stolz_bmecat/ | instructors:Alex Stolz
+vl-602-90 | SNARC: A Semantic Social News Aggregator | http://videolectures.net/eswc2013_assaf_snarc/ | instructors:Ahmad Assaf
+vl-602-91 | Synonym Analysis for Predicate Expansion | http://videolectures.net/eswc2013_abedjan_synonym/ | instructors:Ziawasch Abedjan, Laura Hollink
+vl-602-92 | Representation and Querying of Valid Time of Triples in Linked Geospatial Data | http://videolectures.net/eswc2013_bereta_geospatial_data/ | instructors:Konstantina Bereta
+vl-602-93 | NERITS - A Machine Translation Mashup System Using Wikimeta and Linked Open Data | http://videolectures.net/eswc2013_nebhi_nertis/ | instructors:Kamel Nebhi
+vl-602-94 | Opening the Black Box of Ontology Matching | http://videolectures.net/eswc2013_todorov_ontology_matching/ | instructors:Konstantin Todorov
+vl-602-95 | Graph-based Ontology Classi | http://videolectures.net/eswc2013_santarelli_ontology_classication/ | instructors:Valerio Santarelli
+vl-602-96 | Linked USDL: A Vocabulary for Web-scale Service Trading | http://videolectures.net/eswc2014_pedrinaci_service_trading/ | instructors:Carlos Pedrinaci
+vl-602-97 | PCS2OWL: A Generic Approach for Deriving Web Ontologies from Product Classification Systems | http://videolectures.net/eswc2014_hepp_generic/ | instructors:Martin Hepp
+vl-602-98 | The Wisdom of the Audience: An Empirical Study of Social Semantics in Twitter Streams | http://videolectures.net/eswc2013_wagner_twitter/ | instructors:Claudia Wagner, Fabien Gandon
+vl-602-99 | When to Reach for the Cloud: Using Parallel Hardware for Link Discovery | http://videolectures.net/eswc2013_ngonga_ngomo_cloud/ | instructors:Axel-Cyrille Ngonga Ngomo, Axel Polleres
+vl-602-100 | Locking for Concurrent Transactions on Ontologies | http://videolectures.net/eswc2013_scheglmann_concurrent_transactions/ | instructors:Stefan Scheglmann
+vl-602-101 | Publishing bibliographic records on the Web of data: opportunities for the BnF | http://videolectures.net/eswc2013_simon_di_mascio_french_library/ | instructors:Agnès Simon, Adrien Di Mascio
+vl-602-102 | Scalable End-user Access to Big Data | http://videolectures.net/dataforum2013_haase_user_access/ | instructors:Peter Haase
+vl-602-103 | An Ontology Design Pattern for Cartographic Map Scaling | http://videolectures.net/eswc2013_carral_scheider_map_scaling/ | instructors:David Carral, Simon Scheider
+vl-602-104 | COALA – Correlation Aware Active Learning of Link Specifications | http://videolectures.net/eswc2013_ngonga_ngomo_link/ | instructors:Axel-Cyrille Ngonga Ngomo, Marko Grobelnik
+vl-602-105 | Predicting the Understandability of OWL Inferences | http://videolectures.net/eswc2013_power_owl_inferences/ | instructors:Richard Power
+vl-602-106 | Access Control for HTTP Operations on Linked Data | http://videolectures.net/eswc2013_costabello_data/ | instructors:Luca Costabello, Olaf Hartig
+vl-602-107 | RDFS with Attribute Equations via SPARQL Rewriting | http://videolectures.net/eswc2013_bischof_sparql_rewriting/ | instructors:Stefan Bischof
+vl-602-108 | Facilitating Human Intervention in Coreference Resolution with Comparative Entity Summaries | http://videolectures.net/eswc2014_cheng_entity_summaries/ | instructors:Gong Cheng
+vl-602-109 | Predicting Severity of Road Traffic Congestion using Semantic Web Technologies | http://videolectures.net/eswc2014_lecue_predicting/ | instructors:Freddy Lecue
+vl-602-110 | Logical Linked Data Compression | http://videolectures.net/eswc2013_joshi_data/ | instructors:Amit Krishna Joshi, Laura Hollink
+vl-602-111 | Linked Data Case Study Reportnet | http://videolectures.net/dataforum2013_roug_reportnet/ | instructors:Søren Roug
+vl-602-112 | Collecting Links between Entities Ranked by Human Association Strengths | http://videolectures.net/eswc2013_hees_khamis_collecting_links/ | instructors:Jörn Hees, Mohamed Khamis
+vl-602-113 | Automatic expansion of DBpedia exploiting Wikipedia cross-language information | http://videolectures.net/eswc2013_palmero_aprosio_expansion/ | instructors:Alessio Palmero Aprosio, Harald Sack
+vl-602-114 | Big Data In Ireland: Linked Data and beyond | http://videolectures.net/dataforum2013_decker_linked_data/ | instructors:Stefan Decker
+vl-602-115 | Detecting SPARQL Query Templates for Data Prefetching | http://videolectures.net/eswc2013_lorey_data/ | instructors:Johannes Lorey, Laura Hollink
+vl-602-116 | Lightweight Spatial Conjunctive Query Answering using Keywords | http://videolectures.net/eswc2013_schneider_conjunctive_query/ | instructors:Patrik Schneider
+vl-602-117 | Matware: Constructing and Exploiting Domain Specific Warehouses by Aggregating Semantic | http://videolectures.net/eswc2014_tzitzikas_matware/ | instructors:Yannis Tzitzikas
+vl-602-118 | Seven Commandments for Benchmarking Semantic Flow Processing Systems | http://videolectures.net/eswc2013_scharrenbach_systems/ | instructors:Thomas Scharrenbach, Axel Polleres
+vl-602-119 | Transductive Inference for Class Membership Propagation in Web Ontologies | http://videolectures.net/eswc2013_minervini_class/ | instructors:Pasquale Minervini, Marko Grobelnik
+vl-602-120 | A one-stop shop for Open Government Data: publicdata.eu | http://videolectures.net/dataforum2013_van_der_waal_villum_government_data/ | instructors:Christian Villum, Sander van der Waal
+vl-602-121 | Easygo: An Event-Centered Social Network | http://videolectures.net/eswc2013_szekely_easygo/ | instructors:Pedro Szekely
+vl-602-122 | Photo Odyssey: Creating Photography Itineraries in Realtime | http://videolectures.net/eswc2013_szekely_photo_odyssey/ | instructors:Pedro Szekely
+vl-602-123 | A Systematic Investigation of Explicit and Implicit Schema Information on the Linked Open Data Cloud | http://videolectures.net/eswc2013_gottron_cloud/ | instructors:Thomas Gottron, Olaf Hartig
+vl-602-124 | A Session-based Approach for Aligning Large Ontologies | http://videolectures.net/eswc2013_lambrix_large_ontologies/ | instructors:Patrick Lambrix
+vl-602-125 | Delivering on Standards for Government Linked Data - A W3C Working Group Report | http://videolectures.net/dataforum2013_hyland_standards/ | instructors:Bernadette Hyland
+vl-602-126 | Connecting the Smithsonian American Art Museum to the Linked Data Cloud | http://videolectures.net/eswc2013_szekely_smithsonian_art/ | instructors:Pedro Szekely
+vl-602-127 | Measuring the Topical Specificity of Online Communities | http://videolectures.net/eswc2013_rowe_measuring/ | instructors:Matthew Rowe, Fabien Gandon
+vl-602-128 | Data interoperability across sectors and borders - INSPIRE and beyond | http://videolectures.net/dataforum2013_lutz_data_interoperability/ | instructors:Michael Lutz
+vl-602-129 | Semantic Publishing Challenge: presentation of tasks | http://videolectures.net/eswc2014_di_iorio_lange_semantic/ | instructors:Angelo Di Iorio, Christoph Lange
+vl-602-130 | Evaluating citation functions in CiTO: cognitive issues | http://videolectures.net/eswc2014_nuzzolese_evaluating/ | instructors:Andrea Giovanni Nuzzolese
+vl-602-131 | Seeding Structured Data by Default via Open Source Library Systems | http://videolectures.net/eswc2014_scott_seeding/ | instructors:Dan Scott
+vl-602-132 | Cooking Assistance Mashup with Biologeek | http://videolectures.net/eswc2013_belaunde_biologeek/ | instructors:Mariano Belaunde
+vl-602-133 | MINI: Mashup for Identifying Noisy Infrastructure | http://videolectures.net/eswc2013_schulz_noisy_infrastructure/ | instructors:Axel Schulz
+vl-602-134 | Irish Open Data Reuse Exemplars | http://videolectures.net/dataforum2013_byrne_irish_open_data/ | instructors:Dominic Byrne
+vl-602-135 | Guiding the Evolution of a Multilingual Ontology in a Concrete Setting | http://videolectures.net/eswc2013_dragoni_multilingual_ontology/ | instructors:Mauro Dragoni
+vl-602-136 | Perplexity of Index Models over Evolving Linked Data | http://videolectures.net/eswc2014_gottron_linked_data/ | instructors:Thomas Gottron
+vl-602-137 | Closing of EDF2013 | http://videolectures.net/dataforum2013_general_chairs_closing/ | instructors:Elena Simperl, Michael Hausenblas, Márta Nagy-Rothengass
+vl-602-138 | Linked Data Reuse in the Language Services Industry | http://videolectures.net/dataforum2013_lewis_linked_data/ | instructors:David Lewis
+vl-602-139 | Twindex Fuorisalone | http://videolectures.net/eswc2013_della_valle_twindex_fuorisalone/ | instructors:Emanuele Della Valle
+vl-602-140 | Distributed Keyword Search over RDF via MapReduce | http://videolectures.net/eswc2014_de_virgilio_keyword_search/ | instructors:Roberto De Virgilio
+vl-602-141 | Opening Ceremony | http://videolectures.net/eswc2014_presutti_opening/ | instructors:Valentina Presutti
+vl-602-142 | Big Graph Data Panel | http://videolectures.net/iswc2012_big_graph_data/ | instructors:Frank van Harmelen, Tim Berners-Lee,
+   
+    et al.
+vl-602-143 | Opening | http://videolectures.net/dataforum2014_viola_opening/ | instructors:Roberto Viola
+vl-602-144 | One-minute madness: EU Projects presentations | http://videolectures.net/eswc2014_one_minute_madness/ | instructors:Amit Sheth, Gaëlle Lortal,
+   
+    et al.
+vl-602-145 | Making (Big) Data | http://videolectures.net/dataforum2014_nagy_rothengass_data/ | instructors:Márta Nagy-Rothengass
+vl-602-146 | Opening | http://videolectures.net/dataforum2014_koubarakis_opening/ | instructors:Manolis Koubarakis
+vl-602-147 | Welcome | http://videolectures.net/dataforum2014_kroes_welcome/ | instructors:Neelie Kroes
+vl-602-148 | Closing and Award Ceremony | http://videolectures.net/eswc2014_closing_ceremony/ | instructors:Valentina Presutti, Anna Lisa Gentile,
+   
+    et al.
+vl-602-149 | Closing of EDF2014 | http://videolectures.net/dataforum2014_closing_edf_2014/ | instructors:Giuseppe Abbamonte, Márta Nagy-Rothengass,
+   
+    et al.
+vl-602-150 | Welcome | http://videolectures.net/dataforum2014_mitsotakis_welcome/ | instructors:Kyriakos Mitsotakis
+vl-602-151 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_erling_panel/ | instructors:Orri Erling
+vl-602-152 | Welcome | http://videolectures.net/dataforum2014_christofilopoulou_welcome/ | instructors:Paraskevi (Evy) Christofilopoulou
+vl-602-153 | Executive Panel on Big Data | http://videolectures.net/dataforum2014_panel_big_data/ | instructors:Sören Auer, Josef Urban,
+   
+    et al.
+vl-602-154 | EDF2013 Executive Panel on Big Data | http://videolectures.net/dataforum2013_panel_big_data/ | instructors:Dieter Fensel, Richard Benjamins,
+   
+    et al.
+vl-602-155 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_davies_panel/ | instructors:John Davies
+vl-602-156 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_alani_panel/ | instructors:Harith Alani
+vl-602-157 | European Data Innovator Award | http://videolectures.net/dataforum2013_brockmann_viola_gorriz_award/ | instructors:Michael Gorriz, Hans-Christian Brockmann, Roberto Viola
+vl-602-158 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_floridi_panel/ | instructors:Luciano Floridi
+vl-602-159 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_gomez_perez_panel/ | instructors:José Manuel Gómez-Pérez
+vl-602-160 | Closing and Award Ceremony | http://videolectures.net/eswc2013_closing_ceremony/ | instructors:Philipp Cimiano, Valentina Presutti,
+   
+    et al.
+vl-602-161 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_grobelnik_panel/ | instructors:Marko Grobelnik
+vl-602-162 | Opening | http://videolectures.net/dataforum2014_kaltenbock_opening/ | instructors:Martin Kaltenböck
+vl-602-163 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_gangemi_panel/ | instructors:Aldo Gangemi
+vl-602-164 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_semantic_panel/ | instructors:Marko Grobelnik, Manfred Hauswirth,
+   
+    et al.
+vl-602-165 | Panel Language Technology (LT): Unlocking the Data Treasure Chest | http://videolectures.net/dataforum2013_panel_language_technology/ | instructors:Gudrun Magnusdottir, Hans Uszkoreit, Hans-Ulrich von Freyberg
+vl-602-166 | Opening by General Chairs | http://videolectures.net/dataforum2013_general_chairs_opening/ | instructors:Elena Simperl, Michael Hausenblas, Márta Nagy-Rothengass
+vl-602-167 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_esther_vidal_panel/ | instructors:Maria Esther Vidal
+vl-602-168 | Welcome Address by General Chair and Local Representative | http://videolectures.net/eswc2013_cimiano_scharffe_welcome/ | instructors:Philipp Cimiano, François Scharffe
+vl-602-169 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_panel_data_protection/ | instructors:Valentina Presutti, Harith Alani,
+   
+    et al.
+vl-602-170 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_presutti_panel/ | instructors:Valentina Presutti
+vl-602-171 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_casanovas_panel/ | instructors:Casanovas Romeu Pompeu
+vl-602-172 | Welcome | http://videolectures.net/dataforum2014_vasilakos_welcome/ | instructors:Christos Vasilakos
+vl-602-173 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_karger_panel/ | instructors:David R. Karger
+vl-602-174 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_hauswirth_panel/ | instructors:Manfred Hauswirth
+vl-602-175 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_staab_panel/ | instructors:Steffen Staab
+vl-602-176 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_gandon_panel/ | instructors:Fabien Gandon
+vl-602-177 | Video message | http://videolectures.net/dataforum2013_kroes_video_message/ | instructors:Neelie Kroes
+vl-602-178 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_motta_panel/ | instructors:Enrico Motta
+vl-602-179 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_viegas_panel/ | instructors:Evelyne Viegas
+vl-602-180 | Welcome speech | http://videolectures.net/dataforum2013_viola_welcome_speech/ | instructors:Roberto Viola
+vl-602-181 | Best Practise Panel | http://videolectures.net/dataforum2013_panel_best_practise/ | instructors:Sandra Collins, Richard Benjamins,
+   
+    et al.
+vl-602-182 | Welcome speech | http://videolectures.net/dataforum2013_ferguson_welcome_speech/ | instructors:Mark Ferguson
+vl-602-183 | Welcome speech | http://videolectures.net/dataforum2013_shatter_welcome_speech/ | instructors:Alan Shatter
+vl-602-184 | PlanetData Training Curriculum | http://videolectures.net/planetdata_training_curriculum/ | 
+vl-602-185 | On the Computational and Statistical Interface and "BIG DATA" | http://videolectures.net/colt2014_jordan_bigdata/ | instructors:Michael I. Jordan
+vl-602-186 | Big-Data Tutorial | http://videolectures.net/eswc2012_grobelnik_big_data/ | instructors:Marko Grobelnik
+vl-602-187 | Machine Learning with Knowledge Graphs | http://videolectures.net/eswc2014_tresp_machine_learning/ | instructors:Volker Tresp
+vl-602-188 | Programming the Semantic Web | http://videolectures.net/eswc2014_staab_semantic_web/ | instructors:Steffen Staab, Fabien Gandon
+vl-602-189 | Semantic Technology for online, broadcast and print media | http://videolectures.net/wims2014_rayfield_semantic_technology/ | instructors:Jem Rayfield
+vl-602-190 | BIG DATA - from Hype to Reality | http://videolectures.net/wims2014_benjamins_big_data/ | instructors:Richard Benjamins
+vl-602-191 | The Value of Big Data - From Data-Driven Enterprises to a Data-driven Economy | http://videolectures.net/dataforum2014_wrobel_big_data/ | instructors:Stefan Wrobel
+vl-602-192 | Light at the End of the Tunnel | http://videolectures.net/iswc2013_guha_tunnel/ | instructors:Ramanathan V. Guha
+vl-602-193 | A Semantic Web for End Users | http://videolectures.net/eswc2013_karger_semantic/ | instructors:David R. Karger, Philipp Cimiano
+vl-602-194 | Siemens: Big Data in industrial applications | http://videolectures.net/dataforum2013_kress_big_data/ | instructors:Gerhard Kress
+vl-602-195 | Big data: a new world of opportunities for software services | http://videolectures.net/dataforum2013_marguerite_nessi/ | instructors:Julie Marguerite
+vl-602-196 | Probe Data Analytics and Processing for Traffic Information, Traffic Planning and Traffic Management | http://videolectures.net/dataforum2014_schaefer_traffic_planning/ | instructors:Ralf-Peter Schaefer
+vl-602-197 | Coordination, Semantics, and Autonomy | http://videolectures.net/eswc2014_floridi_semantics_autonomy/ | instructors:Luciano Floridi, Valentina Presutti
+vl-602-198 | Modern Nonparametric Statistics on Modern Big Data | http://videolectures.net/nipsworkshops2012_gray_statistics/ | instructors:Alexander Gray
+vl-602-199 | It's a Dynamic World - Ubiquitous Streams and the Linked Data Web | http://videolectures.net/eswc2013_hauswirth_data/ | instructors:Manfred Hauswirth, Oscar Corcho
+vl-602-200 | From Old to New Economy | http://videolectures.net/dataforum2013_gorriz_economy/ | instructors:Michael Gorriz
+vl-602-201 | What does it mean to be semantic? On the effective use of semantics in the Semantic Web | http://videolectures.net/eswc2013_motta_semantic/ | instructors:Enrico Motta, Valentina Presutti
+vl-602-202 | Big Data –  Big opportunities –  Big risks? And what about Europe? | http://videolectures.net/dataforum2013_benjamins_big_data_big_opportunities/ | instructors:Richard Benjamins
+vl-602-203 | Towards a European open data infrastructure | http://videolectures.net/dataforum2013_beyer_katzenberger_open_data/ | instructors:Malte Beyer-Katzenberger
+vl-602-204 | The Data Economy: an opportunity for Greece | http://videolectures.net/dataforum2014_routzouni_data_economy/ | instructors:Nancy Routzouni
+vl-602-205 | Semantic Big Data in Australia - from Dingoes to Drysdale | http://videolectures.net/iswc2013_hunter_semantic_big_data/ | instructors:Jane Hunter
+vl-602-206 | Talk of Eccenca European Data Innovator Award Winner | http://videolectures.net/dataforum2014_mittheisz_award_winner/ | instructors:Johann Mittheisz
+vl-602-207 | From Near to Maturity - Making Big Data relevant to Business | http://videolectures.net/dataforum2013_obrien_big_data_business/ | instructors:Daragh O'Brien
+vl-602-208 | Big Data from an Audio Visual Archive perspective | http://videolectures.net/dataforum2013_thompson_audio_visual_archive/ | instructors:Bill Thompson
+vl-602-209 | We need to understand our data | http://videolectures.net/dataforum2013_tungland_understand_data/ | instructors:Knut Sebastian Tungland
+vl-602-210 | The Power of Open Data | http://videolectures.net/dataforum2013_bauer_open_data/ | instructors:Florian Bauer
+vl-602-211 | Emerging DaaS business models: A case study | http://videolectures.net/dataforum2013_gislason_daas_business/ | instructors:Hjalmar Gislason
+vl-602-212 | The European Data Value Chain stakeholder platform | http://videolectures.net/dataforum2013_barbato_stakeholder_platform/ | instructors:Francesco Barbato
+vl-602-213 | The EU Data Value Chain | http://videolectures.net/dataforum2013_beyer_katzenberger_data_value_chain/ | instructors:Malte Beyer-Katzenberger
+vl-602-214 | Futurium - the virtual lab to co-create futures and policy ideas | http://videolectures.net/dataforum2013_bertolo_futurium/ | instructors:Stefano Bertolo
+vl-602-215 | Linking multi-media archive content into the wider context of the nation’s cultural data | http://videolectures.net/dataforum2013_dooley_cultural_data/ | instructors:Bríd Dooley
+vl-602-216 | Online Knowledge Resource for European Buildings | http://videolectures.net/dataforum2013_staniaszek_knowledge_resource/ | instructors:Dan Staniaszek

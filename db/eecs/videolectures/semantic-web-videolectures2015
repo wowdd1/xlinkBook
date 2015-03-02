@@ -1,0 +1,1264 @@
+vl-27-1 | Lantzaki, C., Yannakis, T., Tzitzikas, Y., Analyti, A. Generating Synthetic RDF Data with Connected Blank Nodes for Benchmarking. Video Journal of Semantic Data Management Abstracts Issue 1, Volume 3 (2014) | http://videolectures.net/semantic_lantzaki_video_journal/ | instructors:Christina Lantzaki
+vl-27-2 | Kuhn, T., Dumontier, M., Trusty URIs: Verifiable, Immutable, and Permanent Digital Artifacts for Linked Data. Video Journal of Semantic Data Management Abstracts Issue 1, Volume 3 (2014) | http://videolectures.net/semantic_kuhn_video_journal/ | instructors:Tobias Kuhn
+vl-27-3 | Elbedweihy, K., Mazumdar, S., Wrigley, S., Ciravegna, F. NL-Graphs: A Hybrid Approach toward Interactively Querying Semantic Data. . Video Journal of Semantic Data Management Abstracts Issue 1, Volume 3 (2014) | http://videolectures.net/semantic_mazumdar_video_journal/ | instructors:Suvodeep Mazumdar
+vl-27-4 | Interview with Tom Gruber | http://videolectures.net/iswc06_gruber_itg/ | instructors:Davor Orlič, Tom Gruber
+vl-27-5 | Interview with Marja Riitta Koivunen | http://videolectures.net/iswc06_koivunen_imrk/ | instructors:Marja Riitta Koivunen
+vl-27-6 | Intervju z Markom Grobelnikom | http://videolectures.net/eswc06_grobelnik_int/ | instructors:Marko Grobelnik
+vl-27-7 | Querying Datasets on the Web with High Availability | http://videolectures.net/iswc2014_verborgh_querying_datasets/ | instructors:Ruben Verborgh
+vl-27-8 | Updating RDFS ABoxes and TBoxes in SPARQL | http://videolectures.net/iswc2014_ahmeti_rdfs_aboxes_tboxes/ | instructors:Albin Ahmeti
+vl-27-9 | OBDA: Query Rewriting or Materialization? In Practice, Both! | http://videolectures.net/iswc2014_sequeda_query_rewriting/ | instructors:Juan F. Sequeda
+vl-27-10 | Mining the Web of Linked Data with RapidMiner | http://videolectures.net/iswc2014_paulheim_rapidminer/ | instructors:Heiko Paulheim
+vl-27-11 | Extending Tables with Data from over a Million Websites | http://videolectures.net/iswc2014_bizer_extending_tables/ | instructors:Christian Bizer
+vl-27-12 | Explass: Exploring Associations between Entities via Top-K Ontological Patterns and Facets | http://videolectures.net/iswc2014_cheng_explass/ | instructors:Gong Cheng
+vl-27-13 | AGDISTIS - Graph-Based Disambiguation of Named Entities using Linked Data  (Best Research Paper nominee) | http://videolectures.net/iswc2014_ngonga_ngomo_agdistis/ | instructors:Axel-Cyrille Ngonga Ngomo
+vl-27-14 | CAMO: Integration of Linked Open Data for Multimedia Metadata Enrichment | http://videolectures.net/iswc2014_qu_camo/ | instructors:Yuzhong Qu
+vl-27-15 | Pushing the Boundaries of Tractable Ontology Reasoning | http://videolectures.net/iswc2014_carral_boundaries/ | instructors:David Carral
+vl-27-16 | Semano: Semantic Annotation Framework for NaturalLanguage Resources | http://videolectures.net/iswc2014_nikitina_annotation/ | instructors:Nadeschda Nikitina
+vl-27-17 | M-ATOLL: A Framework for the lexicalization of ontologies in multiple languages | http://videolectures.net/iswc2014_walter_framework/ | instructors:Sebastian Walter
+vl-27-18 | On Publishing Chinese Linked Open Schema | http://videolectures.net/iswc2014_wang_linked_open_schema/ | instructors:Haofen Wang
+vl-27-19 | Diversified Stress Testing of RDF Data Management Systems | http://videolectures.net/iswc2014_aluc_rdf_data_management/ | instructors:Güneş Aluç
+vl-27-20 | Adoption of Linked Data Best Practices in Different Topical Domains | http://videolectures.net/iswc2014_bizer_topical_domains/ | instructors:Christian Bizer
+vl-27-21 | Noisy Type Assertion Detection in Semantic Datasets | http://videolectures.net/iswc2014_zhu_noisy_type_assertion/ | instructors:Man Zhu
+vl-27-22 | Fast Modularisation and Atomic Decomposition of Ontologies using Axiom Dependency Hypergraphs | http://videolectures.net/iswc2014_martin_recuerda_hypergraphs/ | instructors:Francisco Martín-Recuerda
+vl-27-23 | Linked Biomedical Dataspace: Lessons Learned integrating Data for Drug Discovery | http://videolectures.net/iswc2014_hasnain_biomedical_dataspace/ | instructors:Ali Hasnain
+vl-27-24 | Crowdsourcing Linked Data Quality Assessment | http://videolectures.net/iswc2013_acosta_quality_assessment/ | instructors:Maribel Acosta
+vl-27-25 | Introducing Wikidata to the Linked Data Web | http://videolectures.net/iswc2014_guenther_wikidata/ | instructors:Michael Günther
+vl-27-26 | Dynamic Provenance for SPARQL Updates | http://videolectures.net/iswc2014_halpin_dynamic_provenance/ | instructors:Harry Reeves Halpin
+vl-27-27 | You ain't from around here, are you? Message authoring guidance in social media | http://videolectures.net/iswc2014_mendes_message_authoring_guidance/ | instructors:Pablo N. Mendes
+vl-27-28 | Simplified OWL Ontology Editing: Is WebProtégé Enough? | http://videolectures.net/iswc2013_horridge_webprotege/ | instructors:Matthew Horridge
+vl-27-29 | SAKey: Scalable Almost Key discovery in RDF data | http://videolectures.net/iswc2014_symeonidou_sakey/ | instructors:Danai Symeonidou
+vl-27-30 | Web-Scale Extension of RDF Knowledge Bases from Templated Websites | http://videolectures.net/iswc2014_usbeck_web_scale_extension/ | instructors:Ricardo Usbeck
+vl-27-31 | Crowd Truth: Machine-Human Computation Framework for Harnessing Disagreement in Gathering Annotated Data | http://videolectures.net/iswc2014_aroyo_crowd_truth/ | instructors:Lora Aroyo
+vl-27-32 | HELIOS - Execution Optimization for Link Discovery | http://videolectures.net/iswc2014_ngonga_ngomo_helios/ | instructors:Axel-Cyrille Ngonga Ngomo
+vl-27-33 | Ontology Search: An Empirical Evaluation | http://videolectures.net/iswc2014_sahar_butt_ontology_factorized/ | instructors:Anila Sahar Butt
+vl-27-34 | Ensemble Learning for Named Entity Recognition | http://videolectures.net/iswc2014_speck_learning/ | instructors:René Speck
+vl-27-35 | User Interests Identification on Twitter Using a Hierarchical Knowledge Base | http://videolectures.net/eswc2014_sheth_user/ | instructors:Amit Sheth
+vl-27-36 | SYRql: A Dataflow Language for Large Scale Processing of RDF Data | http://videolectures.net/iswc2014_maali_dataflow_language/ | instructors:Fadi Maali
+vl-27-37 | Sempala: Interactive SPARQL Query Processing on Hadoop | http://videolectures.net/iswc2014_schaetzle_sempala/ | instructors:Alexander Schätzle
+vl-27-38 | A Cross-Platform Benchmark Framework for Mobile Semantic Web Reasoning Engines | http://videolectures.net/iswc2014_van_woensel_semantic_web/ | instructors:William Van Woensel
+vl-27-39 | SHELDON: Semantic Holistic framEwork for LinkeD ONtology data | http://videolectures.net/iswc2014_reforgiato_recupero_sheldon/ | instructors:Diego Reforgiato Recupero
+vl-27-40 | Expressive and Scalable Query-based Faceted Search over SPARQL Endpoints | http://videolectures.net/iswc2014_ferre_faceted_search/ | instructors:Sébastien Ferré
+vl-27-41 | Answering SPARQL Queries over Databases under OWL 2 QL Entailment Regime | http://videolectures.net/iswc2014_kontchakov_sparql_queries/ | instructors:Roman Kontchakov
+vl-27-42 | Querying Factorized Probabilistic Triple Databases | http://videolectures.net/iswc2014_krompass_querying_factorized/ | instructors:Denis Krompaß
+vl-27-43 | Enabling Live Exploration on The Graph of Things | http://videolectures.net/iswc2014_le_phuoc_live_exploration/ | instructors:Danh Le Phuoc
+vl-27-44 | Analyzing Schema.org | http://videolectures.net/iswc2014_patel_schneider_analyzing_schema/ | instructors:Peter F. Patel-Schneider
+vl-27-45 | The WebDataCommons Microdata, RDFa and Microformat Dataset Series | http://videolectures.net/iswc2014_meusel_webdatacommons_microdata/ | instructors:Robert Meusel
+vl-27-46 | Towards Efficient and Effective Semantic Table Interpretation | http://videolectures.net/iswc2014_zhang_semantic/ | instructors:Ziqi Zhang
+vl-27-47 | DIVE into the Event-Based Browsing of Linked Historical Media | http://videolectures.net/iswc2014_de_boer_dive/ | instructors:Victor de Boer
+vl-27-48 | How Semantic Technologies Can Enhance Data Access at Siemens Energy | http://videolectures.net/iswc2014_kharlamov_solomakhina_semantic_technology/ | instructors:Evgeny Kharlamov, Nina Solomakhina
+vl-27-49 | Semantic Traffic Diagnosis with STAR-CITY: Architecture and Lessons Learned from Deployment in Dublin, Bologna, Miami and Rio | http://videolectures.net/iswc2014_lecue_semantic_traffic_diagnosis/ | instructors:Freddy Lecue
+vl-27-50 | Semantic Patterns for Sentiment Analysis of Twitter | http://videolectures.net/iswc2014_saif_sentiment_analysis/ | instructors:Hassan Saif
+vl-27-51 | Abstraction Refinement for Ontology Materialization | http://videolectures.net/iswc2014_kien_tran_ontology/ | instructors:Trung-Kien Tran
+vl-27-52 | Col-Graph: Towards Writable and Scalable Linked Open Data | http://videolectures.net/iswc2014_ibanez_col_graph/ | instructors:Luis-Daniel Ibáñez
+vl-27-53 | A Power Consumption Benchmark for Reasoners on Mobile Devices | http://videolectures.net/iswc2014_patton_mobile_devices/ | instructors:Evan W. Patton
+vl-27-54 | Toward the Web of Functions: Interoperable High-Order Functions in SPARQL | http://videolectures.net/iswc2014_atzori_web_of_functions/ | instructors:Maurizio Atzori
+vl-27-55 | LOD Laundromat: A Uniform Way of Publishing Other People’s Dirty Data | http://videolectures.net/iswc2014_beek_lod_laundromat/ | instructors:Wouter Beek
+vl-27-56 | Adapting Semantic Sensor Networks for Smart Building Analytics | http://videolectures.net/iswc2014_lecue_adapting_semantic_sensor_networks/ | instructors:Freddy Lecue
+vl-27-57 | Structural Properties as Proxy for Semantic Relevance in RDF Graph Sampling | http://videolectures.net/iswc2014_rietveld_structural_properties/ | instructors:Laurens Rietveld
+vl-27-58 | Goal-Directed Tracing of Inferences in EL Ontologies | http://videolectures.net/iswc2014_klinov_interences/ | instructors:Pavel Klinov
+vl-27-59 | Drug-Target Interaction Prediction Using Semantic Similarity and Edge Partition | http://videolectures.net/iswc2014_vidal_drug_target_interaction/ | instructors:Maria Esther Vidal
+vl-27-60 | Discovery and Visual Analysis of Linked Data for Humans | http://videolectures.net/iswc2014_sabol_discovery_and_visual_analysis/ | instructors:Vedran Sabol
+vl-27-61 | Schema-Agnostic Query Rewriting in SPARQL 1.1 | http://videolectures.net/iswc2014_rudolph_schema_agnostic_query/ | instructors:Sebastian Rudolph
+vl-27-62 | Linkify: Enhanced Reading Experience by Augmenting Text Using Linked Open Data | http://videolectures.net/iswc2014_yamada_linkify/ | instructors:Ikuya Yamada
+vl-27-63 | Stretching the Life of Twitter Classifiers with Time-Stamped Semantic Graphs | http://videolectures.net/iswc2014_cano_semantic_graphs/ | instructors:Amparo Elizabeth Cano Besave
+vl-27-64 | Detecting Incorrect Numerical Data in DBpedia | http://videolectures.net/eswc2014_paulheim_numerical_data/ | instructors:Heiko Paulheim
+vl-27-65 | Dedalo: looking for Clusters Explanations in a Labyrinth of Linked Data | http://videolectures.net/eswc2014_tiddi_dedalo/ | instructors:Ilaria Tiddi
+vl-27-66 | Plan-Based Semantic Enrichment of Event Streams | http://videolectures.net/eswc2014_teymourian_event_streams/ | instructors:Kia Teymourian
+vl-27-67 | Real-time RDF extraction from unstructured data streams | http://videolectures.net/iswc2013_ngonga_ngomo_data_streams/ | instructors:Axel-Cyrille Ngonga Ngomo
+vl-27-68 | Efficient RDF Interchange (ERI) Format for RDF Data Streams | http://videolectures.net/iswc2014_llaves_rdf_data_streams/ | instructors:Alejandro Llaves
+vl-27-69 | Scientific Lenses to Support Multiple Views over Linked Chemistry Data | http://videolectures.net/iswc2014_gray_scientific_lenses/ | instructors:Alasdair J. G. Gray
+vl-27-70 | Dutch Ships and Sailors Linked Data Cloud | http://videolectures.net/iswc2014_de_boer_linked_data_cloud/ | instructors:Victor de Boer
+vl-27-71 | Strategies for Executing Federated Queries in SPARQL1.1 | http://videolectures.net/iswc2014_buil_aranda_federated_queries/ | instructors:Carlos Buil-Aranda
+vl-27-72 | Transferring Semantic Categories with Vertex Kernels: Recommendations with Semantic SVD++ | http://videolectures.net/iswc2014_rowe_transferring_semantic_categories/ | instructors:Matthew Rowe
+vl-27-73 | Conference v2.0: An Uncertain Version of the OAEI Conference Benchmark | http://videolectures.net/iswc2014_cheatham_conference_benchmark/ | instructors:Michelle Cheatham
+vl-27-74 | Detecting and Correcting Conservativity Principle Violations in Ontology-to-Ontology Mappings | http://videolectures.net/iswc2014_solimando_ontology_to_ontology/ | instructors:Alessandro Solimando
+vl-27-75 | Querying Heterogeneous Personal Information On The Go | http://videolectures.net/iswc2014_le_phuoc_personal_information/ | instructors:Danh Le Phuoc
+vl-27-76 | kyrie2: Query Rewriting under Extensional Constraints in ELHIO | http://videolectures.net/iswc2014_mora_kyrie2/ | instructors:José Mora
+vl-27-77 | An approach to information integration based on the AMN formalism | http://videolectures.net/iswc2012_manukyan_amn_formalism/ | instructors:Manuk Manukyan
+vl-27-78 | Trusty URIs: Verifiable, Immutable, and Permanent Digital Artifacts for Linked Data | http://videolectures.net/eswc2014_kuhn_linked_data/ | instructors:Tobias Kuhn
+vl-27-79 | Big Data Public Private Forum (BIG) initiative | http://videolectures.net/dataforum2012_lama_sanchez_big_data/ | instructors:Nuria de Lama Sanchez
+vl-27-80 | A Scalable Approach for Efficiently Generating Structured Dataset Topic Profiles | http://videolectures.net/eswc2014_fetahu_topic_profiles/ | instructors:Besnik Fetahu
+vl-27-81 | Identifying change patterns of concept attributes in ontology evolution | http://videolectures.net/eswc2014_dos_reis_patterns/ | instructors:Julio Cesar Dos Reis
+vl-27-82 | The Web Browser Personalization with the Client Side Triplestore | http://videolectures.net/iswc2014_uchida_web_browser_personalization/ | instructors:Hitoshi Uchida
+vl-27-83 | Holistic and Compact Selectivity Estimation for Hybrid Queries over RDF Graphs | http://videolectures.net/iswc2014_lecue_holistic_and_compact/ | instructors:Freddy Lecue
+vl-27-84 | Effective computation of maximal sound approximations of Description Logic ontologies | http://videolectures.net/iswc2014_santarelli_ontologies/ | instructors:Valerio Santarelli
+vl-27-85 | Towards Annotating Potential Incoherences in BioPortal Mappings | http://videolectures.net/iswc2014_faria_bioportal_mappings/ | instructors:Daniel Faria
+vl-27-86 | EPCIS Event based Traceability in Pharmceutical Supply Chains via Automated Generation of Linked Pedigrees | http://videolectures.net/iswc2014_solanki_epcis_event/ | instructors:Monika Solanki
+vl-27-87 | The Web Browser Personalization with the Client Side Triplestore | http://videolectures.net/iswc2014_uchida_web_browser_personalization/ | instructors:Hitoshi Uchida
+vl-27-88 | POWERSET - Natural Language and the Semantic Web | http://videolectures.net/iswc07_pell_nlpsw/ | instructors:Barney Pell
+vl-27-89 | Closing and Award Ceremony | http://videolectures.net/eswc2012_closing_award_ceremony/ | instructors:Barry Norton, Brigitte Endres-Niggemeyer,
+   
+    et al.
+vl-27-90 | A Comparison of Knowledge Extraction Tools for the Semantic Web | http://videolectures.net/eswc2013_gangemi_web/ | instructors:Aldo Gangemi, Harald Sack
+vl-27-91 | On the Status of Experimental Research on the Semantic Web | http://videolectures.net/iswc2013_schuhmacher_semantic_web/ | instructors:Michael Schuhmacher
+vl-27-92 | Type Inference on Noisy RDF Data | http://videolectures.net/iswc2013_paulheim_rdf_data/ | instructors:Heiko Paulheim
+vl-27-93 | A Multilingual semantic wiki based on Attempto Controlled English and Grammatical Framework | http://videolectures.net/eswc2013_kaljurand_semantic/ | instructors:Kaarel Kaljurand, Jens Lehmann
+vl-27-94 | Scaling Parallel Rule-based Reasoning | http://videolectures.net/eswc2014_peters_rule_based/ | instructors:Martin Peters
+vl-27-95 | Generating Possible Interpretations for Statistics from Linked Open Data | http://videolectures.net/eswc2012_paulheim_linked_data/ | instructors:Heiko Paulheim
+vl-27-96 | Knowledge Graph Identification | http://videolectures.net/iswc2013_pujara_graph_identification/ | instructors:Jay Pujara
+vl-27-97 | Linking Smart Cities Datasets with Human Computation - the case of UrbanMatch | http://videolectures.net/iswc2012_celino_urbanmatch/ | instructors:Irene Celino
+vl-27-98 | Data Mining Vs. Semantic Web | http://videolectures.net/solomon_milutinovic_dmv/ | instructors:Veljko Milutinović
+vl-27-99 | Exploiting Information Extraction, Reasoning and Machine Learning for Relation Prediction | http://videolectures.net/eswc2012_jiang_relation_prediction/ | instructors:Xueyan Jiang
+vl-27-100 | A New Kind of Science | http://videolectures.net/mitworld_wolfram_anko/ | instructors:Stephen Wolfram
+vl-27-101 | Siemens │ Semantic Technologies for Advanced Medical Image and Information Search | http://videolectures.net/estc08_wennerberg_stami/ | instructors:Pinar Wennerberg
+vl-27-102 | Survey on Common Strategies of Vocabulary Reuse in Linked Open Data Modeling | http://videolectures.net/eswc2014_schaible_open_data/ | instructors:Johann Schaible
+vl-27-103 | A Support Framework for Argumentative Discussions Management in the Web | http://videolectures.net/eswc2013_villata_framework/ | instructors:Serena Villata, Harald Sack
+vl-27-104 | LODifier: Generating Linked Data from Unstructured Text | http://videolectures.net/eswc2012_augenstein_lodifier/ | instructors:Isabelle Augenstein
+vl-27-105 | Detecting Errors in Numerical Linked Data using Cross-Checked Outlier Detection | http://videolectures.net/iswc2014_fleischhacker_detecting_errors/ | instructors:Daniel Fleischhacker
+vl-27-106 | Knowledge-driven Activity Recognition and Segmentation Using Context Connections | http://videolectures.net/iswc2014_kontopoulos_knowledge_driven_activity/ | instructors:Efstratios Kontopoulos
+vl-27-107 | Linked Open Data Driven Game Generation | http://videolectures.net/iswc2014_warren_game_generation/ | instructors:Rob Warren
+vl-27-108 | Semantic-Based Process Analysis | http://videolectures.net/iswc2014_dragoni_process_analysis/ | instructors:Mauro Dragoni
+vl-27-109 | A Use Case in Semantic Modelling and Ranking for the Sensor Web | http://videolectures.net/iswc2014_cabral_use_case_semantic_modelling/ | instructors:Liliana Cabral
+vl-27-110 | On the Semantics of SPARQL Queries with Optional Matching under Entailment Regimes | http://videolectures.net/iswc2014_kostylev_sparql_queries/ | instructors:Egor V. Kostylev
+vl-27-111 | A Study on the Atomic Decomposition of Ontologies | http://videolectures.net/iswc2014_horridge_ontologies/ | instructors:Matthew Horridge
+vl-27-112 | Generating Synthetic RDF Data with Connected Blank Nodes for Benchmarking | http://videolectures.net/eswc2014_lantzaki_blank_nodes/ | instructors:Christina Lantzaki
+vl-27-113 | TRM - Learning Dependencies between Text and Structure with Topical Relational Models | http://videolectures.net/iswc2013_studer_relational_models/ | instructors:Rudi Studer
+vl-27-114 | A Graph-Based Approach to Learn Semantic Descriptions of Data Sources | http://videolectures.net/iswc2013_knoblock_data_sources/ | instructors:Craig A. Knoblock
+vl-27-115 | Integrating NLP using Linked Data | http://videolectures.net/iswc2013_hellmann_linked_data/ | instructors:Sebastian Hellmann
+vl-27-116 | Requirements Analysis Tool: A Tool for Automatically Analyzing Software Requirements Documents | http://videolectures.net/iswc08_verma_rattfaasrd/ | instructors:Kunal Verma
+vl-27-117 | Re - use of Media Fragments in the TV Newsroom | http://videolectures.net/mediamixer_media_fricke/ | instructors:Rolf Fricke
+vl-27-118 | SentiCircles for Contextual and Conceptual Semantic Sentiment analysis of Twitter | http://videolectures.net/eswc2014_saif_senticircles/ | instructors:Hassan Saif
+vl-27-119 | These are your rights: A Natural Language Processing Approach to Automated RDF Licenses Generation | http://videolectures.net/eswc2014_villata_rights/ | instructors:Serena Villata
+vl-27-120 | Using the past to explain the present: interlinking current affairs with archives via the Semantic Web | http://videolectures.net/iswc2013_raimond_semantic_web/ | instructors:Yves Raimond
+vl-27-121 | What is Media Mixing? | http://videolectures.net/wmpa2014_nixon_what_is_mediamixing/ | instructors:Lyndon Nixon
+vl-27-122 | NL-Graphs: A Hybrid Approach toward Interactively Querying Semantic Data | http://videolectures.net/eswc2014_mazumdar_hybrid/ | instructors:Suvodeep Mazumdar
+vl-27-123 | A Probabilistic Approach for Integrating Heterogeneous Knowledge Sources | http://videolectures.net/eswc2014_dutta_knowledge_sources/ | instructors:Arnab Dutta
+vl-27-124 | On Future Internet, Cloud Computing and Semantics - You Name It | http://videolectures.net/active09_zwegers_ficc/ | instructors:Arian Zwegers
+vl-27-125 | Semantic Sentiment Analysis of Twitter | http://videolectures.net/iswc2012_saif_sentiment_analysis/ | instructors:Hassan Saif
+vl-27-126 | Elastic and scalable processing of Linked Stream Data in the Cloud | http://videolectures.net/iswc2013_le_phuoc_data_cloud/ | instructors:Danh Le Phuoc
+vl-27-127 | Hafslund Sesam - an archive on semantics | http://videolectures.net/eswc2013_garshol_hafslund_sesam/ | instructors:Lars Marius Garshol
+vl-27-128 | OpenTox - the creation of a Semantic Web for Toxicology | http://videolectures.net/solomon_hardy_semantic/ | instructors:Barry Hardy
+vl-27-129 | Real-time Urban Monitoring in Dublin using Semantic and Stream Technologies | http://videolectures.net/iswc2013_kotoulas_stream_technologies/ | instructors:Spyros Kotoulas
+vl-27-130 | The Semantic Web in 2022 | http://videolectures.net/iswc2012_berners_lee_semantic_web/ | instructors:Tim Berners-Lee
+vl-27-131 | Hybrid Acquisition of Temporal Scopes for RDF Data | http://videolectures.net/eswc2014_rula_temporal_scopes/ | instructors:Anisa Rula
+vl-27-132 | conTEXT -- Lightweight Text Analytics using Linked Data | http://videolectures.net/eswc2014_khalili_context/ | instructors:Ali Khalili
+vl-27-133 | NLP data cleansing based on Linguistic Ontology constraints | http://videolectures.net/eswc2014_kontokostas_nlp/ | instructors:Dimitris Kontokostas
+vl-27-134 | Machine Learning and Knowledge Discovery for Semantic Web | http://videolectures.net/single_mladenic_semanticweb/ | instructors:Dunja Mladenić
+vl-27-135 | Discovering Missing Semantic Relations between Entities in Wikipedia | http://videolectures.net/iswc2013_wang_semantic_relations/ | instructors:Zhichun Wang
+vl-27-136 | A snapshot of the OWL Web | http://videolectures.net/iswc2013_matentzoglu_owl_web/ | instructors:Nicolas Matentzoglu
+vl-27-137 | Bringing Math to LOD: A Semantic Publishing Platform Prototype for Scientific Collections in Mathematics | http://videolectures.net/iswc2013_zhiltsov_scientific_collections/ | instructors:Nikita Zhiltsov
+vl-27-138 | Broadening the Scope of Nanopublications | http://videolectures.net/eswc2013_kuhn_scope/ | instructors:Tobias Kuhn, Fabien Gandon
+vl-27-139 | How to Best Find a Partner? An Evaluation of Editing Approaches to Construct R2RML Mapping | http://videolectures.net/eswc2014_pinkel_partner/ | instructors:Christoph Pinkel
+vl-27-140 | Identifying diachronic topic-based research communities by clustering shared research trajectories | http://videolectures.net/eswc2014_osborne_identifying/ | instructors:Francesco Osborne
+vl-27-141 | Semantic Multimedia Information Retrieval Based on Contextual Descriptions | http://videolectures.net/eswc2013_steinmetz_semantic/ | instructors:Nadine Steinmetz, Jens Lehmann
+vl-27-142 | Semantic role frames graph-based multidocument summarization | http://videolectures.net/sikdd2011_canhasi_multidocument/ | instructors:Ercan Canhasi
+vl-27-143 | Accepting the XBRL Challenge with Linked Data for Financial Data Integration | http://videolectures.net/eswc2014_kaempgen_xbrl/ | instructors:Benedikt Kämpgen
+vl-27-144 | HiBISCuS: Hypergraph-Based Source Selection for SPARQL Endpoint Federation | http://videolectures.net/eswc2014_saleem_endpoint_federation/ | instructors:Muhammad Saleem
+vl-27-145 | The usability of Description Logics: Understanding the cognitive difficulties presented by Description Logics | http://videolectures.net/eswc2014_warren_usability/ | instructors:Paul Warren
+vl-27-146 | Constructing a Focused Taxonomy from a Document Collection | http://videolectures.net/eswc2013_divoli_taxonomy/ | instructors:Anna Divoli, Harald Sack
+vl-27-147 | MediaMixer – why we do need innovative multimedia solutions? | http://videolectures.net/innovationday2014_nixon_multimedia_solutions/ | instructors:Lyndon Nixon
+vl-27-148 | What will the Semantic Web Look Like 10 Years From Now? | http://videolectures.net/iswc2012_hendler_semantic_web/ | instructors:Jim Hendler
+vl-27-149 | Triplify - Light-weight Linked Data Publication from Relational Databases | http://videolectures.net/www09_auer_tlwldp/ | instructors:Sören Auer, Sebastian Dietzold,
+   
+    et al.
+vl-27-150 | Sensor Web, Semantic Sensor Networks | http://videolectures.net/wsn2010_moraru_sws/ | instructors:Alexandra Moraru
+vl-27-151 | When History Matters - Assessing Reliability for the Reuse of Scientific Workflows | http://videolectures.net/iswc2013_gomez_perez_scientific_workflows/ | instructors:José Manuel Gómez-Pérez
+vl-27-152 | Media Mixing for e-Learning: VideoLectures Mashup | http://videolectures.net/mediamixer_zdolsek_videolectures_mashup/ | instructors:Tanja Zdolšek
+vl-27-153 | Concept-Level Sentiment Analysis Challenge: presentation of tasks | http://videolectures.net/eswc2014_reforgiato_concept/ | instructors:Diego Reforgiato Recupero
+vl-27-154 | Error-Tolerant RDF Subgraph Matching for Adaptive Presentation of Linked Data on Mobile | http://videolectures.net/eswc2014_costabello_linked_data/ | instructors:Luca Costabello
+vl-27-155 | Beyond the Semantic Web | http://videolectures.net/bsciw08_lenat_bsw/ | instructors:Doug Lenat
+vl-27-156 | Text Mining and Link Analysis for Web and Semantic Web | http://videolectures.net/aibootcamp2011_grobelnik_tmla/ | instructors:Marko Grobelnik
+vl-27-157 | Extension of the Semantic Sensor Network Ontology for Wireless Sensor Network: The Stimulus-WSNnode-Communication Pattern | http://videolectures.net/iswc2012_bendadouche_communication_pattern/ | instructors:Rimel Bendadouche
+vl-27-158 | Opening up audiovisual archives for media professionals and researchers | http://videolectures.net/wmpa2014_tuytelaars_audiovisual_archives/ | instructors:Tinne Tuytelaars
+vl-27-159 | Deployment of RDFa, Microdata, and Microformats on the Web – A Quantitative Analysis | http://videolectures.net/iswc2013_meusel_quantitative_analysis/ | instructors:Robert Meusel
+vl-27-160 | The Semantic Web | http://videolectures.net/mitworld_lee_sw/ | instructors:Tim Berners-Lee
+vl-27-161 | Semantic Rule Filtering for Web-Scale Relation Extraction | http://videolectures.net/iswc2013_moro_krause_relation_extraction/ | instructors:Andrea Moro, Sebastian Krause
+vl-27-162 | A decision procedure for SHOIQ with transitive closure of roles | http://videolectures.net/iswc2013_le_duc_shoiq/ | instructors:Chan Le Duc
+vl-27-163 | CROWDMAP: Crowdsourcing Ontology Alignment with Microtasks | http://videolectures.net/iswc2012_sarasua_crowdmap/ | instructors:Cristina Sarasua
+vl-27-164 | Integrating Object-Oriented and Ontological Representations: A Case Study in Java and OWL | http://videolectures.net/iswc08_parsia_iooor/ | instructors:Bijan Parsia
+vl-27-165 | Ontology-Based Data Access Using Rewriting, OWL 2 RL Systems and Repairing | http://videolectures.net/eswc2014_stoilos_data_access/ | instructors:Giorgos Stoilos
+vl-27-166 | Leveraging Distributed Human Computation and Consensus Partition for Entity Coreference | http://videolectures.net/eswc2014_gong_entity_coreference/ | instructors:Saisai Gong
+vl-27-167 | Leveraging Distributed Human Computation and Consensus Partition for Entity Coreference | http://videolectures.net/eswc2014_gong_entity_coreference/ | instructors:Saisai Gong
+vl-27-168 | Graph Kernels for RDF data | http://videolectures.net/eswc2012_rettinger_rdf_data/ | instructors:Achim Rettinger
+vl-27-169 | SKOS: Past, Present, Future - and a little bit of history, architecture and engineering | http://videolectures.net/eswc2010_bechhofer_sppf/ | instructors:Sean Bechhofer
+vl-27-170 | Bio2RDF Release 2: Improved coverage, interoperability and provenance of Life Science Linked Data | http://videolectures.net/eswc2013_dumontier_data/ | instructors:Michel Dumontier, Olaf Hartig
+vl-27-171 | Statistical Knowledge Patterns: Identifying Synonymous Relations in Large Linked Datasets | http://videolectures.net/iswc2013_gentile_linked_datasets/ | instructors:Anna Lisa Gentile
+vl-27-172 | Observing Linked Data Dynamics | http://videolectures.net/eswc2013_kaefer_data/ | instructors:Tobias Käfer, Olaf Hartig
+vl-27-173 | Towards Evaluating Interactive Ontology Matching Tools | http://videolectures.net/eswc2013_ritze_interactive_ontology/ | instructors:Dominique Ritze
+vl-27-174 | Combining a co-occurrence-based and a semantic measure for entity linking | http://videolectures.net/eswc2013_fetahu_entity_linking/ | instructors:Besnik Fetahu
+vl-27-175 | Instance-based ontological knowledge acquisition | http://videolectures.net/eswc2013_zhao_knowledge/ | instructors:Lihua Zhao, Laura Hollink
+vl-27-176 | Semantic Web Challenge & Billion Triple Challenge | http://videolectures.net/iswc08_swcbtc/ | instructors:Dean Allemang, Jürgen Angele,
+   
+    et al.
+vl-27-177 | Ontology-based Information Extraction for Business Intelligence | http://videolectures.net/iswc07_funk_obie/ | instructors:Adam Funk
+vl-27-178 | WaterFowl: a Compact, Self-indexed and Inference-enabled immutable RDF Store | http://videolectures.net/eswc2014_cure_water_fowl/ | instructors:Olivier Curé
+vl-27-179 | Providing Alternative Declarative Descriptions for Entity Sets using Parallel Concept Lattices | http://videolectures.net/eswc2014_scheglmann_alternative/ | instructors:Stefan Scheglmann
+vl-27-180 | Generating and Summarizing Explanations for Linked Data | http://videolectures.net/eswc2014_hasan_linked_data/ | instructors:Rakebul Hasan
+vl-27-181 | Linked Open Dataenabled Recommender Systems Challenge: presentation of tasks | http://videolectures.net/eswc2014_di_noia_linked/ | instructors:Tommaso Di Noia
+vl-27-182 | RDSZ: An approach for lossless RDF stream compression | http://videolectures.net/eswc2014_garcia_stream_compression/ | instructors:Norberto Fernández García
+vl-27-183 | EUCLID - EdUcational Curriculum for the usage of Linked Data | http://videolectures.net/dataforum2012_simperl_euclid/ | instructors:Elena Simperl
+vl-27-184 | Cross-language Semantic Retrieval and Linking of E-gov Services | http://videolectures.net/iswc2013_palmonari_semantic_retrieval/ | instructors:Matteo Palmonari
+vl-27-185 | DataConf: A full client-side Web mashup for scientific conferences | http://videolectures.net/eswc2013_medini_dataconf/ | instructors:Lionel Médini, Florian Bâcle,
+   
+    et al.
+vl-27-186 | Ontology construction from text | http://videolectures.net/sep08_fortuna_oct/ | instructors:Blaž Fortuna
+vl-27-187 | ORCHID - Reduction-Ratio-Optimal Computation of Geo-Spatial Distances for Link Discovery | http://videolectures.net/iswc2013_ngonga_ngomo_orchid/ | instructors:Axel-Cyrille Ngonga Ngomo
+vl-27-188 | Linked Stream Data Processing Engines: Facts and Figures | http://videolectures.net/iswc2012_le_phuoc_processing_engines/ | instructors:Danh Le Phuoc
+vl-27-189 | Media production from academia to industry | http://videolectures.net/innovationday2014_samec_media_production/ | instructors:Marko Samec
+vl-27-190 | Semantic Processing of Sensor Event Stream by Using External Knowledge Bases | http://videolectures.net/iswc2012_teymourian_knowledge_bases/ | instructors:Kia Teymourian
+vl-27-191 | Supporting Collaborative Ontology Development in Protege | http://videolectures.net/iswc08_tudarache_scodp/ | instructors:Tania Tudorache
+vl-27-192 | Strabon: A Semantic Geospatial DBMS | http://videolectures.net/iswc2012_kyzirakos_strabon/ | instructors:Kostis Kyzirakos
+vl-27-193 | OWL | http://videolectures.net/koml04_harmelen_o/ | instructors:Frank van Harmelen
+vl-27-194 | Towards Competency Question-driven Ontology Authoring | http://videolectures.net/eswc2014_ren_competency/ | instructors:Yuan Ren
+vl-27-195 | SPARQL Query Verbalization for Explaining Semantic Search Engine Queries | http://videolectures.net/eswc2014_ell_search_engine/ | instructors:Basil Ell
+vl-27-196 | A Framework for Iterative Signing of Graph Data on the Web | http://videolectures.net/eswc2014_kasten_graph_data/ | instructors:Andreas Kasten
+vl-27-197 | What Helps Where - And Why? Semantic Relatedness for Knowledge Transfer | http://videolectures.net/cvpr2010_rohrbach_whw/ | instructors:Marcus Rohrbach
+vl-27-198 | Qualitative Spatial Relationships for Image Interpretation by using Semantic Graph | http://videolectures.net/gbr07_deruyver_qsr/ | instructors:Aline Deruyver
+vl-27-199 | Semantic Technologies: Origins, Linked Data and Beyond | http://videolectures.net/aibootcamp2011_norton_stol/ | instructors:Barry Norton
+vl-27-200 | QuerioCity: A Linked Data Platform for Urban Information Management | http://videolectures.net/iswc2012_kotoulas_queriocity/ | instructors:Spyros Kotoulas
+vl-27-201 | A Unified Approach for Aligning Taxonomies and Debugging Taxonomies and their Alignments | http://videolectures.net/eswc2013_ivanova_aligning_taxonomies/ | instructors:Valentina Ivanova
+vl-27-202 | No Size Fits All - Running the Star Schema Benchmark with SPARQL and RDF Aggregate Views | http://videolectures.net/eswc2013_kaempgen_views/ | instructors:Benedikt Kämpgen, Axel Polleres
+vl-27-203 | dipLODocus[RDF]: Short and Long-Tail RDF Analytics for Massive Webs of Data | http://videolectures.net/iswc2011_wylot_data/ | instructors:Marcin Wylot
+vl-27-204 | Cascading Map-Side Joins over HBase for Scalable Join Processing | http://videolectures.net/iswc2012_schaetzle_join_processing/ | instructors:Alexander Schätzle
+vl-27-205 | QB4OLAP: A New Vocabulary for OLAP Cubes on the SemanticWeb? | http://videolectures.net/iswc2012_etcheverry_olap_cubes/ | instructors:Lorena Etcheverry
+vl-27-206 | Using the OWLIM triplestore to power BBC‘s 2010 World Cup site | http://videolectures.net/estc2010_dimitrov_utopwc/ | instructors:Marin Dimitrov
+vl-27-207 | Personalized Concept - based Search and Exploration on the Web of Data using Results Categorization | http://videolectures.net/eswc2013_wade_results_categorization/ | instructors:Vincent Wade
+vl-27-208 | Towards Portable Shopping Histories: Using GoodRelations to Expose Ownership Information to ECommerce Sites | http://videolectures.net/eswc2014_hepp_towards/ | instructors:Martin Hepp
+vl-27-209 | Object Property Matching utilizing the Overlap between Imported Ontologies | http://videolectures.net/eswc2014_zapilko_object/ | instructors:Benjamin Zapilko
+vl-27-210 | Pay-as-you-go Approximate Join Top-k Processing for the Web of Data | http://videolectures.net/eswc2014_wagner_web_of_data/ | instructors:Andreas Wagner
+vl-27-211 | Using Semantic and Domain-based Information in CLIR Systems | http://videolectures.net/eswc2014_dragoni_semantic/ | instructors:Mauro Dragoni
+vl-27-212 | Optimising Linked Data Queries in the Presence of Co-reference | http://videolectures.net/eswc2014_wang_linked_data/ | instructors:Xin Wang
+vl-27-213 | COLIBRI: Unsupervised Link Discovery Through Knowledge Base Repair | http://videolectures.net/eswc2014_sherif_colibri/ | instructors:Mohamed Ahmed Sherif
+vl-27-214 | Building blocks for semantic search engines: Ranking and compact indexing in entity-relation graphs | http://videolectures.net/iiia06_chakrabarti_rcier/ | instructors:Soumen Chakrabarti
+vl-27-215 | The role of SKOS in a Web of Data - some business use cases | http://videolectures.net/estc2010_blumauer_drswd/ | instructors:Andreas Blumauer
+vl-27-216 | Semantics and optimization of the SPARQL 1.1 federation extension | http://videolectures.net/eswc2011_corcho_extension/ | instructors:Oscar Corcho, Maria Esther Vidal
+vl-27-217 | Using BMEcat Catalogs as a Lever for Product Master Data on the Semantic Web | http://videolectures.net/eswc2013_stolz_bmecat/ | instructors:Alex Stolz
+vl-27-218 | SNARC: A Semantic Social News Aggregator | http://videolectures.net/eswc2013_assaf_snarc/ | instructors:Ahmad Assaf
+vl-27-219 | Synonym Analysis for Predicate Expansion | http://videolectures.net/eswc2013_abedjan_synonym/ | instructors:Ziawasch Abedjan, Laura Hollink
+vl-27-220 | Can Social Bookmarks Improve Web Search? | http://videolectures.net/wsdm08_heymann_csbiws/ | instructors:Paul Heymann
+vl-27-221 | Towards Semantic Embedding in Visual Vocabulary | http://videolectures.net/cvpr2010_ji_tsev/ | instructors:Rongrong Ji
+vl-27-222 | Media Mixing in the broadcast TV industry | http://videolectures.net/wmpa2014_heidkamp_tchegloff_media_mixing/ | instructors:Bettina Heidkamp-Tchegloff
+vl-27-223 | Media fragmentation and annotation technologies | http://videolectures.net/wmpa2014_mezaris_media_fragmentation/ | instructors:Vasileios Mezaris
+vl-27-224 | Representation and Querying of Valid Time of Triples in Linked Geospatial Data | http://videolectures.net/eswc2013_bereta_geospatial_data/ | instructors:Konstantina Bereta
+vl-27-225 | Opening the Black Box of Ontology Matching | http://videolectures.net/eswc2013_todorov_ontology_matching/ | instructors:Konstantin Todorov
+vl-27-226 | NERITS - A Machine Translation Mashup System Using Wikimeta and Linked Open Data | http://videolectures.net/eswc2013_nebhi_nertis/ | instructors:Kamel Nebhi
+vl-27-227 | SRBench: A Streaming RDF/SPARQL Benchmark | http://videolectures.net/iswc2012_calbimonte_srbench/ | instructors:Jean-Paul Calbimonte
+vl-27-228 | SoKNOS - Using Semantic Technologies in Disaster Management Software | http://videolectures.net/eswc2011_probst_soknos/ | instructors:Florian Probst
+vl-27-229 | POWLA: Modeling Linguistic Corpora in OWL/DL | http://videolectures.net/eswc2012_chiarcos_powla/ | instructors:Christian Chiarcos
+vl-27-230 | TELIX: An RDF-based Model for Linguistic Annotation | http://videolectures.net/eswc2012_rubiera_azcona_telix/ | instructors:Emilio Rubiera Azcona
+vl-27-231 | Graph-based Ontology Classi | http://videolectures.net/eswc2013_santarelli_ontology_classication/ | instructors:Valerio Santarelli
+vl-27-232 | Laconic and Precise Justifications in OWL | http://videolectures.net/iswc08_horridge_lpjowl/ | instructors:Matthew Horridge
+vl-27-233 | Wheat or chaff - Practically feasible inferactive ontology revision | http://videolectures.net/iswc2011_nikitina_revision/ | instructors:Nadeschda Nikitina
+vl-27-234 | Semantic management of your media fragments rights | http://videolectures.net/mediamixer_garcia_media_fragments/ | instructors:Roberto García
+vl-27-235 | PCS2OWL: A Generic Approach for Deriving Web Ontologies from Product Classification Systems | http://videolectures.net/eswc2014_hepp_generic/ | instructors:Martin Hepp
+vl-27-236 | Linked USDL: A Vocabulary for Web-scale Service Trading | http://videolectures.net/eswc2014_pedrinaci_service_trading/ | instructors:Carlos Pedrinaci
+vl-27-237 | Semantic multimedia remixing | http://videolectures.net/wmpa2014_huet_troncy_semantic_multimedia/ | instructors:Benoit Huet, Raphaël Troncy
+vl-27-238 | Collective Semantics: Collective Intelligence & the Semantic Web - Semantically enriching folksonomies with flor | http://videolectures.net/eswc08_angelton_cs/ | instructors:Sofia Angeletou
+vl-27-239 | RDF Ontology (Re-)Engineering through Large-scale Data Mining | http://videolectures.net/iswc2011_bohm_ontology/ | instructors:Christoph Bohm
+vl-27-240 | Semantic MediaWiki | http://videolectures.net/coinactivess2010_dengler_sm/ | instructors:Frank Dengler
+vl-27-241 | The Wisdom of the Audience: An Empirical Study of Social Semantics in Twitter Streams | http://videolectures.net/eswc2013_wagner_twitter/ | instructors:Claudia Wagner, Fabien Gandon
+vl-27-242 | When to Reach for the Cloud: Using Parallel Hardware for Link Discovery | http://videolectures.net/eswc2013_ngonga_ngomo_cloud/ | instructors:Axel-Cyrille Ngonga Ngomo, Axel Polleres
+vl-27-243 | Rapidly Integrating Services into the Linked Data Cloud | http://videolectures.net/iswc2012_taheriyan_data_cloud/ | instructors:Mohsen Taheriyan
+vl-27-244 | The Linked Sensor Middleware - Connecting the real world and the Semantic Web | http://videolectures.net/iswc2011_phuoc_web/ | instructors:Danh Le Phuoc
+vl-27-245 | Social listening of City Scale Events using the Streaming Linked Data Framework | http://videolectures.net/iswc2013_della_valle_data_framework/ | instructors:Emanuele Della Valle
+vl-27-246 | Semantics Visualization for Fostering Search Result Comprehension | http://videolectures.net/eswc2012_stab_fostering_search/ | instructors:Christian Stab
+vl-27-247 | Research 16: Tree-structured Conditional Random Fields for Semantic Annotation | http://videolectures.net/iswc06_tang_tscrf/ | instructors:Jie Tang
+vl-27-248 | Dynamic Sensor Registration and Semantic Processing for ad-hoc MOBile Environments (SemMOB) | http://videolectures.net/iswc2012_anantharam_mobile_environments/ | instructors:Pramod Anantharam
+vl-27-249 | Multilingual and Cross-lingual Ontology matching and its Application to Financial Accounting Standards | http://videolectures.net/iswc2011_hollink_standards/ | instructors:Laura Hollink
+vl-27-250 | The Role of Semantic Web in Web 2.0: Partner or Follower? | http://videolectures.net/iswc06_panel_rsw/ | instructors:Tim Berners-Lee, Tom Gruber,
+   
+    et al.
+vl-27-251 | Geographica: A Benchmark for Geospatial RDF Stores | http://videolectures.net/iswc2013_garbis_geographica/ | instructors:George Garbis
+vl-27-252 | Pattern Based Knowledge Base Enrichment | http://videolectures.net/iswc2013_buehmann_base_enrichment/ | instructors:Lorenz Bühmann
+vl-27-253 | Semantic Web Service Systems - Part 1 | http://videolectures.net/eswc06_cabral_swss1/ | instructors:Liliana Cabral
+vl-27-254 | Integrating Linked Metadata Repositories into the Web of Data | http://videolectures.net/iswc2012_shukair_metadata_repositories/ | instructors:Gofran Shukair
+vl-27-255 | Tagging Human Knowledge | http://videolectures.net/wsdm2010_heymann_thn/ | instructors:Paul Heymann
+vl-27-256 | Building a Web of Needs | http://videolectures.net/iswc2011_kleedorfer_needs/ | instructors:Florian Kleedorfer
+vl-27-257 | Publishing bibliographic records on the Web of data: opportunities for the BnF | http://videolectures.net/eswc2013_simon_di_mascio_french_library/ | instructors:Agnès Simon, Adrien Di Mascio
+vl-27-258 | Locking for Concurrent Transactions on Ontologies | http://videolectures.net/eswc2013_scheglmann_concurrent_transactions/ | instructors:Stefan Scheglmann
+vl-27-259 | Formal and Informal knowledge representation | http://videolectures.net/akom08_krotzsch_fik/ | instructors:Markus Krötzsch
+vl-27-260 | Introduction and Overview to the Semantic Web | http://videolectures.net/iswc07_hendler_ios/ | instructors:James A. Hendler
+vl-27-261 | Service-oriented architectures | http://videolectures.net/sws09_hench_soar/ | instructors:Graham Hench
+vl-27-262 | Context as a non-ontological determinant of semantics | http://videolectures.net/samt08_santini_cnod/ | instructors:Simone Santini
+vl-27-263 | fLDA: Matrix Factorization through Latent Dirichlet Allocation | http://videolectures.net/wsdm2010_chen_fmftl/ | instructors:Bee-Chung Chen
+vl-27-264 | Semantic Scraping: How to beat Sindice in 2 days for $20 | http://videolectures.net/eswc2012_wulf_scraping/ | instructors:Joshua Wulf
+vl-27-265 | A semantic geographical catalogue for semantic search | http://videolectures.net/eswc2011_farazi_catalogue/ | instructors:Feroz Farazi, Lyndon Nixon
+vl-27-266 | Understanding an Ontology through Divergent Exploration | http://videolectures.net/eswc2011_kozaki_exploration/ | instructors:Kouji Kozaki
+vl-27-267 | Applied Temporal RDF: Efﬁcient Temporal Querying of RDF Data with SPARQL | http://videolectures.net/eswc09_tappolet_atre/ | instructors:Jonas Tappolet
+vl-27-268 | Pairwise Interaction Tensor Factorization for Personalized Tag Recommendation | http://videolectures.net/wsdm2010_rendle_pit/ | instructors:Steffen Rendle
+vl-27-269 | Toward Data-driven Programming for RESTful Linked Data | http://videolectures.net/iswc2012_stadtmueller_linked_data/ | instructors:Steffen Stadtmüller
+vl-27-270 | Ontologies and Linked Data | http://videolectures.net/stisemanticsummit2011_studer_ontologies/ | instructors:Rudi Studer
+vl-27-271 | An Ontology Design Pattern for Cartographic Map Scaling | http://videolectures.net/eswc2013_carral_scheider_map_scaling/ | instructors:David Carral, Simon Scheider
+vl-27-272 | The Expressive Power of SPARQL | http://videolectures.net/iswc08_angles_epsparql/ | instructors:Renzo Angles
+vl-27-273 | Multiagent Systems: Past, Present, and Future | http://videolectures.net/rease_wooldridge_ppf/ | instructors:Mike Wooldridge
+vl-27-274 | Product customization as Linked Data | http://videolectures.net/eswc2012_chevalier_servant_product_customization/ | instructors:Edouard Chevalier, François-Paul Servant
+vl-27-275 | Towards an automatic creation of localized versions of DBpedia | http://videolectures.net/iswc2013_palmero_aprosio_dbpedia/ | instructors:Alessio Palmero Aprosio
+vl-27-276 | On the Diversity and Availability of Temporal Information in Linked Open Data | http://videolectures.net/iswc2012_rula_linked_data/ | instructors:Anisa Rula
+vl-27-277 | RDFS with Attribute Equations via SPARQL Rewriting | http://videolectures.net/eswc2013_bischof_sparql_rewriting/ | instructors:Stefan Bischof
+vl-27-278 | Access Control for HTTP Operations on Linked Data | http://videolectures.net/eswc2013_costabello_data/ | instructors:Luca Costabello, Olaf Hartig
+vl-27-279 | COALA – Correlation Aware Active Learning of Link Specifications | http://videolectures.net/eswc2013_ngonga_ngomo_link/ | instructors:Axel-Cyrille Ngonga Ngomo, Marko Grobelnik
+vl-27-280 | Predicting the Understandability of OWL Inferences | http://videolectures.net/eswc2013_power_owl_inferences/ | instructors:Richard Power
+vl-27-281 | Predicting Severity of Road Traffic Congestion using Semantic Web Technologies | http://videolectures.net/eswc2014_lecue_predicting/ | instructors:Freddy Lecue
+vl-27-282 | Facilitating Human Intervention in Coreference Resolution with Comparative Entity Summaries | http://videolectures.net/eswc2014_cheng_entity_summaries/ | instructors:Gong Cheng
+vl-27-283 | Semantic Wikis: Fusing the two strands of the Semantic Web | http://videolectures.net/iswc08_greaves_swfttsotsw/ | instructors:Mark Greaves
+vl-27-284 | The Semantic Product Memory: An Interactive Black Box for Smart Objects | http://videolectures.net/eswc2010_wahlster_tspm/ | instructors:Wolfgang Wahlster
+vl-27-285 | DRI – constructing the modern multimedia repository | http://videolectures.net/innovationday2014_frost_multimedia_repository/ | instructors:Dermot Frost
+vl-27-286 | Logical Linked Data Compression | http://videolectures.net/eswc2013_joshi_data/ | instructors:Amit Krishna Joshi, Laura Hollink
+vl-27-287 | On Correctness in RDF stream processor benchmarking | http://videolectures.net/iswc2013_dellaglio_processor_benchmarking/ | instructors:Daniele Dell’Aglio
+vl-27-288 | QueryPIE: Backward reasoning for OWL Horst over very large knowlege bases | http://videolectures.net/iswc2011_urbani_reasoning/ | instructors:Jacopo Urbani
+vl-27-289 | Research 7: Web Service Composition via Generic Procedures & Customizing User Preferences | http://videolectures.net/iswc06_sohrabi_wsc/ | instructors:Shirin Sohrabi Araghi
+vl-27-290 | Meta-Metadata: An extensible semantic architecture for multimedia metadata definition, extraction and presentation | http://videolectures.net/samt08_webb_mmd/ | instructors:Andrew Webb
+vl-27-291 | Collecting Links between Entities Ranked by Human Association Strengths | http://videolectures.net/eswc2013_hees_khamis_collecting_links/ | instructors:Jörn Hees, Mohamed Khamis
+vl-27-292 | Webstreams processing and other semantic technologies for Reputational Risk Measurement and Management in Banks | http://videolectures.net/firstworkshop2012_aprile_banks/ | instructors:Giorgio Aprile
+vl-27-293 | @who’s talking about #music? | http://videolectures.net/eswc2012_markou_music/ | instructors:George Markou
+vl-27-294 | Assessing Linked Data Mappings using Network Measures | http://videolectures.net/eswc2012_gueret_network_measures/ | instructors:Christophe Guéret
+vl-27-295 | Distinguishing Between Instances and Classes in the Wikipedia Taxonomy | http://videolectures.net/eswc08_zirn_dbi/ | instructors:Cäcilia Zirn
+vl-27-296 | Characterising Emergent Semantics in Twitter Lists | http://videolectures.net/eswc2012_garcia_silva_semantics_twitter/ | instructors:Andrés García-Silva
+vl-27-297 | Is data sharing the privilege of a few? Bringing Linked Data to those without the Web | http://videolectures.net/iswc2011_schlobach_web/ | instructors:Stefan Schlobach
+vl-27-298 | Clustering the Tagged Web | http://videolectures.net/wsdm09_ramage_ctw/ | instructors:Daniel Ramage, Paul Heymann,
+   
+    et al.
+vl-27-299 | Automatic expansion of DBpedia exploiting Wikipedia cross-language information | http://videolectures.net/eswc2013_palmero_aprosio_expansion/ | instructors:Alessio Palmero Aprosio, Harald Sack
+vl-27-300 | Semantic Web Methods, Tools and Applications | http://videolectures.net/rease_vrandecic_swmta/ | instructors:Denny Vrandečić, Peter Haase
+vl-27-301 | Combining SAWSDL, OWL-DL and UDDI for Semantically Enhanced Web Service Discovery | http://videolectures.net/eswc08_kourtesis_cs/ | instructors:Dimitrios Kourtesis
+vl-27-302 | Text Mining for Ontology Learning | http://videolectures.net/training06_grobelnik_tmol/ | instructors:Marko Grobelnik, Dunja Mladenić
+vl-27-303 | Domain-Independent Quality Measures for Crowd Truth Disagreement | http://videolectures.net/iswc2013_aroyo_crowd_truth/ | instructors:Lora Aroyo
+vl-27-304 | Cyc Representing, Acquiring and Using Knowledge | http://videolectures.net/solomon_witbrock_cyc/ | instructors:Michael Witbrock
+vl-27-305 | A Clustering-based Approach to Ontology Alignment | http://videolectures.net/iswc2011_fokoue_ontology/ | instructors:Achille Fokoue
+vl-27-306 | A Concept-based Model for Enhancing Text Categorization | http://videolectures.net/kdd07_shehata_acbm/ | instructors:Shady Shehata
+vl-27-307 | Web service technologies | http://videolectures.net/sws09_kopecky_wste/ | instructors:Jacek Kopecký
+vl-27-308 | Provenance for SPARQL queries | http://videolectures.net/iswc2012_viegas_damasio_sparql_queries/ | instructors:Carlos Viegas Damásio
+vl-27-309 | Why the Semantic Web Has Never Got Too Much of a Meaning and How to Put It There | http://videolectures.net/iswc2011_novacek_meaning/ | instructors:Vit Novacek
+vl-27-310 | Detecting SPARQL Query Templates for Data Prefetching | http://videolectures.net/eswc2013_lorey_data/ | instructors:Johannes Lorey, Laura Hollink
+vl-27-311 | Lightweight Spatial Conjunctive Query Answering using Keywords | http://videolectures.net/eswc2013_schneider_conjunctive_query/ | instructors:Patrik Schneider
+vl-27-312 | Using Relationships Between Ontologies To Enhance Ontology Search | http://videolectures.net/eswc2012_allocca_ontology/ | instructors:Carlo Allocca
+vl-27-313 | Functional Composition of Sensor Web APIs | http://videolectures.net/iswc2012_verborgh_web_apis/ | instructors:Ruben Verborgh
+vl-27-314 | Learning relational bayesian classifiers from RDF data | http://videolectures.net/iswc2011_lin_rdfdata/ | instructors:Harris Lin
+vl-27-315 | Practical RDF Schema reasoning with annotated Semantic Web data | http://videolectures.net/iswc2011_ferreira_practical/ | instructors:Filipe Ferreira
+vl-27-316 | Learning from the History of Distributed Query Processing - A Heretic View on Linked Data Management | http://videolectures.net/iswc2012_gropengiesser_data_management/ | instructors:Francis Gropengießer
+vl-27-317 | The European Way to Cloud Computing Leadership | http://videolectures.net/classconference2012_ducatel_leadership/ | instructors:Ken Ducatel
+vl-27-318 | Matware: Constructing and Exploiting Domain Specific Warehouses by Aggregating Semantic | http://videolectures.net/eswc2014_tzitzikas_matware/ | instructors:Yannis Tzitzikas
+vl-27-319 | Linked Data: Now what? | http://videolectures.net/eswc2010_fensel_ldnw/ | instructors:Dieter Fensel
+vl-27-320 | Tagging with Queries: How and Why? | http://videolectures.net/wsdm09_antonellis_twq/ | instructors:Ioannis Antonellis, Hector Garcia-Molina, Jawed Karim
+vl-27-321 | Wanderlust: Extracting Semantic Relations from Natural Language Text Using Dependency Grammar Patterns | http://videolectures.net/semsearch09_akbik_wesr/ | instructors:Alan Akbik, Jürgen Broß
+vl-27-322 | Seven Commandments for Benchmarking Semantic Flow Processing Systems | http://videolectures.net/eswc2013_scharrenbach_systems/ | instructors:Thomas Scharrenbach, Axel Polleres
+vl-27-323 | Exposing Real World Information for the Web of Things | http://videolectures.net/www2011_moraru_erw/ | instructors:Alexandra Moraru
+vl-27-324 | Semantic Graphs Derived from Triplets with Application in Document Summarization | http://videolectures.net/sikdd08_rusu_sgdt/ | instructors:Delia Rusu
+vl-27-325 | Ground Facts, Rules and Probabilistic Inference for Cyc | http://videolectures.net/ida07_witbrock_gf/ | instructors:Michael Witbrock
+vl-27-326 | Deluxe Media | http://videolectures.net/innovationday2014_bentcheva_deluxe_media/ | instructors:Elitza Bantcheva
+vl-27-327 | Measuring the Similarity between Implicit Semantic Relations from the Web | http://videolectures.net/www09_bollegala_mtsisr/ | instructors:Danushka Bollegala, Yutaka Matsuo, Mitsuru Ishizuka
+vl-27-328 | Ontologies and Machine Learning | http://videolectures.net/mmdss07_grobelnik_oml/ | instructors:Marko Grobelnik, Blaž Fortuna
+vl-27-329 | Formal Verication of Data Provenance Records | http://videolectures.net/iswc2012_klarman_provenance_records/ | instructors:Szymon Klarman
+vl-27-330 | Scalable Nonmonotonic Reasoning over RDF Data Using MapReduce | http://videolectures.net/iswc2012_kotoulas_mapreduce/ | instructors:Spyros Kotoulas
+vl-27-331 | Semantic Technology: Applications in Industry | http://videolectures.net/aibootcamp2011_davies_norton_stai/ | instructors:John Davies, Barry Norton
+vl-27-332 | Transductive Inference for Class Membership Propagation in Web Ontologies | http://videolectures.net/eswc2013_minervini_class/ | instructors:Pasquale Minervini, Marko Grobelnik
+vl-27-333 | OntoNaviERP: Ontology-supported Navigation in ERP Software Documentation | http://videolectures.net/iswc08_hepp_oosniesd/ | instructors:Martin Hepp
+vl-27-334 | Automatic Identiﬁcation of Ontology Versions Using Machine Learning Techniques | http://videolectures.net/eswc2011_allocca_automatic/ | instructors:Carlo Allocca
+vl-27-335 | Representing, Querying and Transforming Social Networks with RDF/SPARQL | http://videolectures.net/eswc09_martin_rqat/ | instructors:Mauro San Martin
+vl-27-336 | Small Worlds with a Difference: New Gatekeepers and the Filtering of Political Information on Twitter | http://videolectures.net/acmwebsci2011_juergens_gatekeepers/ | instructors:Pascal Jürgens
+vl-27-337 | Web services in geospatial semantic web | http://videolectures.net/sws09_maue_wsigsw/ | instructors:Patrick Maue
+vl-27-338 | The Design and Implementation of Minimal RDFS Backward Reasoning in 4store | http://videolectures.net/eswc2011_salvadores_reasoning/ | instructors:Manuel Salvadores
+vl-27-339 | Reasoning on crowd-sourced semantic annotations to facilitate cataloguing of 3D artefacts in the cultural heritage domain | http://videolectures.net/iswc2013_hunter_cataloguing_artefacts/ | instructors:Jane Hunter
+vl-27-340 | Photo Odyssey: Creating Photography Itineraries in Realtime | http://videolectures.net/eswc2013_szekely_photo_odyssey/ | instructors:Pedro Szekely
+vl-27-341 | Easygo: An Event-Centered Social Network | http://videolectures.net/eswc2013_szekely_easygo/ | instructors:Pedro Szekely
+vl-27-342 | A Systematic Investigation of Explicit and Implicit Schema Information on the Linked Open Data Cloud | http://videolectures.net/eswc2013_gottron_cloud/ | instructors:Thomas Gottron, Olaf Hartig
+vl-27-343 | Extracting Semantic Relations from Query Logs | http://videolectures.net/kdd07_baeza_yates_esr/ | instructors:Ricardo Baeza-Yates
+vl-27-344 | Ontology Design | http://videolectures.net/rease_gangemi_od/ | instructors:Aldo Gangemi
+vl-27-345 | Web Service Modeling Ontology (WSMO) | http://videolectures.net/sws09_steinmetz_wsmo/ | instructors:Nathalie Steinmetz
+vl-27-346 | Knowledge Management in the Petroleum Industry | http://videolectures.net/eswc06_norheim_kmpi/ | instructors:David Norheim
+vl-27-347 | Triplet Extraction from Sentences | http://videolectures.net/sikdd08_dali_tes/ | instructors:Lorand Dali
+vl-27-348 | A Core Ontology for Business Process Analysis | http://videolectures.net/eswc08_pedrinaci_co/ | instructors:Carlos Pedrinaci
+vl-27-349 | A Tableau Algorithm for Handling Inconsistency in OWL | http://videolectures.net/eswc09_zhou_ataf/ | instructors:Liping Zhou
+vl-27-350 | Decomposition and Modular Structure of BioPortal Ontologies | http://videolectures.net/iswc2011_vescovo_klinov_structure/ | instructors:Chiara Del Vescovo, Pavel Klinov
+vl-27-351 | Aemoo: exploratory search based on knowledge patterns over the Semantic Web | http://videolectures.net/iswc2011_nuzzolese_semantic/ | instructors:Andrea Giovanni Nuzzolese
+vl-27-352 | Discovering Simple Mappings Between Relational Database Schemas and Ontologies | http://videolectures.net/iswc07_yuzhong_dsmb/ | instructors:Yuzhong Qu
+vl-27-353 | Contrasting Controlled Vocabulary and Tagging: Do Experts Choose the Right Names to Label the Wrong Things? | http://videolectures.net/wsdm09_heymann_ccvt/ | instructors:Paul Heymann, Hector Garcia-Molina
+vl-27-354 | Trentino government linked open geo-data: a case study | http://videolectures.net/iswc2012_shvaiko_trentino_government/ | instructors:Pavel Shvaiko
+vl-27-355 | Evaluating Similarity Measures for Emergent Semantics of Social Tagging | http://videolectures.net/www09_markines_esst/ | instructors:Benjamin Markines, Ciro Cattuto,
+   
+    et al.
+vl-27-356 | A Session-based Approach for Aligning Large Ontologies | http://videolectures.net/eswc2013_lambrix_large_ontologies/ | instructors:Patrick Lambrix
+vl-27-357 | Towards an Ontology of Science | http://videolectures.net/solomon_soldatova_taos/ | instructors:Larisa Soldatova
+vl-27-358 | Semantic technologies for describing measurement data in databases | http://videolectures.net/eswc2011_noyer_measurement/ | instructors:Ulf Noyer
+vl-27-359 | Using Pseudo Feedback to Improve Cross-Lingual Ontology Mapping | http://videolectures.net/eswc2011_fu_mapping/ | instructors:Bo Fu, Jens Wissmann
+vl-27-360 | Effective and Efficient Entity Search in RDF data | http://videolectures.net/iswc2011_mika_entity/ | instructors:Peter Mika
+vl-27-361 | Extending logic programs with description logic expressions for the semantic wec | http://videolectures.net/iswc2011_shen_logic/ | instructors:Yi Dong Shen
+vl-27-362 | Empirical Study of Logic-Based Modules: Cheap Is Cheerful | http://videolectures.net/iswc2013_del_vescovo_logic_based_modules/ | instructors:Chiara Del Vescovo
+vl-27-363 | Real-time Population of Knowledge Bases: Opportunities and Challenges | http://videolectures.net/akbcwekex2012_nakashole_knowledge_bases/ | instructors:Ndapandula Nakashole
+vl-27-364 | Tracking the Progress of Multimedia Semantics - from MPEG-7 to Web 3.0 | http://videolectures.net/samt08_hunter_tpms/ | instructors:Jane Hunter
+vl-27-365 | Connecting the Smithsonian American Art Museum to the Linked Data Cloud | http://videolectures.net/eswc2013_szekely_smithsonian_art/ | instructors:Pedro Szekely
+vl-27-366 | Building a linked data based content discovery service for the RTÉ Archives | http://videolectures.net/wmpa2014_collins_dooley_building_a_linked_data/ | instructors:Sandra Collins, Bríd Dooley
+vl-27-367 | FedBench: A Benchmark Suite for Federated Semantic Data Query Processing | http://videolectures.net/iswc2011_schmidt_data/ | instructors:Michael Schmidt
+vl-27-368 | Link Discovery with Guaranteed Reduction Ratio in Ane Spaces with Minkowski Measures | http://videolectures.net/iswc2012_ngonga_ngomo_minkowski_measures/ | instructors:Axel-Cyrille Ngonga Ngomo
+vl-27-369 | Deriving Semantic Sensor Metadata from Raw Measurements | http://videolectures.net/iswc2012_calbimonte_raw_measurements/ | instructors:Jean-Paul Calbimonte
+vl-27-370 | On blank nodes | http://videolectures.net/iswc2011_mallea_nodes/ | instructors:Alejandro Mallea
+vl-27-371 | Universal Access to Human Knowledge (Or Public Access to Digital Materials) | http://videolectures.net/iswc07_kahle_uahk/ | instructors:Brewster Kahle
+vl-27-372 | Benchmarking Linked Open Data technology | http://videolectures.net/dataforum2012_boncz_benchmarking/ | instructors:Peter Boncz
+vl-27-373 | Matching Patient Records to Clinical Trials Using Ontologies | http://videolectures.net/iswc07_cumc_mpr/ | instructors:Chintan Patel
+vl-27-374 | Peer-to-Peer Tagged Media: Advances and Perspectives | http://videolectures.net/pmiw09_ebroul_ptpaap/ | instructors:Ebroul Izquierdo
+vl-27-375 | An Ontology Design Pattern for Spatial Data Quality Characterization in the Semantic Sensor Web | http://videolectures.net/iswc2012_degbelo_sensor_web/ | instructors:Auriol Degbelo
+vl-27-376 | Green-Thumb Camera: LOD Application for Field IT | http://videolectures.net/eswc2012_kawamura_green_thumb/ | instructors:Takahiro Kawamura
+vl-27-377 | Wiki-based conceptual modeling: an experience with the Public Administration | http://videolectures.net/iswc2011_ghidini_administration/ | instructors:Chiara Ghidini
+vl-27-378 | An Ontology Design Pattern for Representing Relevance in OWL | http://videolectures.net/iswc07_gomez_odp/ | instructors:Juan Gómez-Romero
+vl-27-379 | Property-based Typing for RDF-Access | http://videolectures.net/iswc2012_groener_rdf_access/ | instructors:Gerd Gröner
+vl-27-380 | Benchmarking Federated SPARQL Query Engines: Are Existing Testbeds Enough? | http://videolectures.net/iswc2012_vidal_query_engines/ | instructors:Maria Esther Vidal
+vl-27-381 | Unsupervised Learning of Data Linking Configuration | http://videolectures.net/eswc2012_nikolov_data_linking/ | instructors:Andriy Nikolov
+vl-27-382 | Research 12: A Software Engineering Approach to Design and Development of Semantic Web Service Applications | http://videolectures.net/iswc06_dellavalle_seadd/ | instructors:Emanuele Della Valle
+vl-27-383 | EIAW: Towards a Business-friendly Data Warehouse Using Semantic Web Technologies | http://videolectures.net/iswc07_xie_tbd/ | instructors:Guotong Xie
+vl-27-384 | Link prediction for annotation graph datasets using graph summarization | http://videolectures.net/iswc2011_thor_graph/ | instructors:Andreas Thor
+vl-27-385 | A Native and Adaptive Approach for Unified Processing of Linked Streams and Linked Data | http://videolectures.net/iswc2011_phuoc_native/ | instructors:Danh Le Phuoc
+vl-27-386 | VideoLectures.net case study | http://videolectures.net/taoiw09_grcar_videolectures/ | instructors:Miha Grčar, Peter Keše
+vl-27-387 | An XML Schema and a Topic Map Ontology for Formalization of Background Knowledge in Data Mining | http://videolectures.net/eswc2010_hazucha_axsa/ | instructors:Andrej Hazucha
+vl-27-388 | Workshop on Semantic Business Process Management - Organization Structure Description for the Needs of Semantic Business Process Management | http://videolectures.net/eswc08_pedrinaci_sb/ | instructors:Carlos Pedrinaci
+vl-27-389 | Automatic Techniques for Extracting Semantic Data (from text and media) | http://videolectures.net/iswc07_ciravegna_ate/ | instructors:Fabio Ciravegna
+vl-27-390 | Robust Runtime Optimization and Skew-Resistant Execution of Analytical SPARQL Queries on Pig | http://videolectures.net/iswc2012_kotoulas_analytical_sparql/ | instructors:Spyros Kotoulas
+vl-27-391 | ReduCE: A Reduced Coulomb Energy Network Method for Approximate Classiﬁcation | http://videolectures.net/eswc09_fanizzi_rarce/ | instructors:Nicola Fanizzi
+vl-27-392 | Commonsense Inference in Dynamic Spatial Systems “Phenomenal and Reasoning Requirements” | http://videolectures.net/qr09_bhatt_cid/ | instructors:Mehul Bhatt
+vl-27-393 | Ontology-based Interpretation of Keywords for Semantic Search | http://videolectures.net/iswc07_tran_obi/ | instructors:Thanh Tran
+vl-27-394 | Using Fuzzy DLs to Enhance Semantic Image Analysis | http://videolectures.net/samt08_dasiopoulou_ufdl/ | instructors:Stamatia Dasiopoulou
+vl-27-395 | An Experimental Comparison of RDF Data Management Approaches in a SPARQL Benchmark Scenario | http://videolectures.net/iswc08_schmidt_ecrdf/ | instructors:Michael Schmidt
+vl-27-396 | An Efficient Bit Vector Approach to Semantics-based Machine Perception in Resource-Constrained Devices | http://videolectures.net/iswc2012_henson_constrained_devices/ | instructors:Cory Henson
+vl-27-397 | PlayGround - Automated tailored content for children | http://videolectures.net/eswc2012_vander_sande_playground/ | instructors:Miel Vander Sande
+vl-27-398 | Evaluating the Stability and Credibility of Ontology Matching Methods | http://videolectures.net/eswc2011_ji_ontology/ | instructors:Qiu Ji, Jens Wissmann
+vl-27-399 | FRED as an Event Extraction Tool | http://videolectures.net/iswc2013_gangemi_event_extraction/ | instructors:Aldo Gangemi
+vl-27-400 | Extractivism: Extracting activist events from news articles using existing NLP tools and services | http://videolectures.net/iswc2013_ploeger_extractivism/ | instructors:Thomas Ploeger
+vl-27-401 | Measuring the Topical Specificity of Online Communities | http://videolectures.net/eswc2013_rowe_measuring/ | instructors:Matthew Rowe, Fabien Gandon
+vl-27-402 | Semantic Modeling, Translation and Matching of QoS | http://videolectures.net/sikdd08_fortuna_smtm/ | instructors:Carolina Fortuna
+vl-27-403 | Collectively Representing Semi-Structured Data from the Web | http://videolectures.net/akbcwekex2012_dalvi_semi_structured_data/ | instructors:Bhavana Dalvi
+vl-27-404 | BOTTARI: Location based Social Media Analysis with Semantic Web | http://videolectures.net/iswc2011_valle_bottari/ | instructors:Emanuele Della Valle
+vl-27-405 | DBpedia SPARQL Benchmark – Performance Assessment with Real Queries on Real Data | http://videolectures.net/iswc2011_morsey_real/ | instructors:Mohamed Morsey
+vl-27-406 | The uncertainty enabled model web (UncertWeb) | http://videolectures.net/envip2010_pebesma_tuem/ | instructors:Edzer Pebesma
+vl-27-407 | Evaluating citation functions in CiTO: cognitive issues | http://videolectures.net/eswc2014_nuzzolese_evaluating/ | instructors:Andrea Giovanni Nuzzolese
+vl-27-408 | Semantic Publishing Challenge: presentation of tasks | http://videolectures.net/eswc2014_di_iorio_lange_semantic/ | instructors:Angelo Di Iorio, Christoph Lange
+vl-27-409 | Seeding Structured Data by Default via Open Source Library Systems | http://videolectures.net/eswc2014_scott_seeding/ | instructors:Dan Scott
+vl-27-410 | TAO, the way to semantic SOA: methodology and tools | http://videolectures.net/taoiw09_amardeilh_soa/ | instructors:Florence Amardeilh
+vl-27-411 | Working with ontologies | http://videolectures.net/gate06_bontcheva_wo/ | instructors:Kalina Bontcheva
+vl-27-412 | Semantic Matching using the UMLS | http://videolectures.net/eswc09_shamdasanis_smutu/ | instructors:Jetendr Shamdasani
+vl-27-413 | A cognitive support framework for ontology mapping | http://videolectures.net/iswc07_falconer_csf/ | instructors:Sean Falconer
+vl-27-414 | Semantic Network Analysis of Ontologies - Part 1 | http://videolectures.net/eswc06_gerd_snao1/ | instructors:Gerd Stumme
+vl-27-415 | Semantic text features from small world graphs | http://videolectures.net/slsfs05_leskovec_stfsw/ | instructors:Jure Leskovec
+vl-27-416 | Discovering and Using Groups to Improve Personalized Search | http://videolectures.net/wsdm09_teevan_dugips/ | instructors:Jaime Teevan, Meredith Ringel Morris, Steve Bush
+vl-27-417 | Using TREC for cross-comparison between classic IR and ontology-based search models at a Web scale | http://videolectures.net/semseach09_fernandez_utcc/ | instructors:Miriam Fernández, Vanessa Lopez,
+   
+    et al.
+vl-27-418 | Moddeling and analysis of user behavior in online communities | http://videolectures.net/iswc2011_rowe_communities/ | instructors:Matthew Rowe
+vl-27-419 | WP2: Learning Web-service Domain Ontologies | http://videolectures.net/tao08_grcar_lwsdo/ | instructors:Miha Grčar
+vl-27-420 | Text Mining for Ontology Learning | http://videolectures.net/sab04_grobelnik_tmol/ | instructors:Marko Grobelnik, Dunja Mladenić
+vl-27-421 | A Self-Organizing Map for Relation Extraction from Wikipedia using Structured Data Representations | http://videolectures.net/iiia06_blohm_somre/ | instructors:Sebastian Blohm
+vl-27-422 | A truly Read-Write Web for machines as the next generation Web? | http://videolectures.net/iswc2012_coppens_next_web/ | instructors:Sam Coppens
+vl-27-423 | Results of the first Worldwide Evaluation of Semantic Technologies | http://videolectures.net/estc2010_nixon_rfwest/ | instructors:Lyndon Nixon
+vl-27-424 | Seevl - mining music connections to bring context and discovery to the music you like | http://videolectures.net/iswc2011_sacco_seevl/ | instructors:Owen Sacco
+vl-27-425 | Semantični splet - več kot le hype! | http://videolectures.net/kp07_grobelnik_spvkh/ | instructors:Marko Grobelnik
+vl-27-426 | Content preservation in the multimedia era | http://videolectures.net/wmpa2014_niederee_content_preservation/ | instructors:Claudia Niederée
+vl-27-427 | Semantic technologies for copyright management | http://videolectures.net/wmpa2014_garcia_semantic_technologies/ | instructors:Roberto García
+vl-27-428 | Automatic Identification of Best Answers in Online Enquiry Communities | http://videolectures.net/eswc2012_burel_online_enquiry/ | instructors:Grégoire Burel
+vl-27-429 | FedX: Optimization Techniques for Federated Query Processing on Linked Data | http://videolectures.net/iswc2011_schwarte_fedx/ | instructors:Andreas Schwarte
+vl-27-430 | Research 8: Extending faceted navigation for RDF data | http://videolectures.net/iswc06_oren_efnrd/ | instructors:Eyal Oren
+vl-27-431 | Privacy-Aware and Scalable Content Dissemination in Distributed Social Network | http://videolectures.net/iswc2011_kapanipathi_dissemination/ | instructors:Pavan Kapanipathi
+vl-27-432 | RDF123: from Spreadsheets to RDF | http://videolectures.net/iswc08_han_rdf/ | instructors:Lushan Han
+vl-27-433 | High-coverage extraction of semantic assertions from text | http://videolectures.net/sikdd2011_mladenic_assertions/ | instructors:Dunja Mladenić
+vl-27-434 | Community-Driven Ontology Matching | http://videolectures.net/eswc06_zhdanova_cdom/ | instructors:Anna V. Zhdanova
+vl-27-435 | Photo Tagging Over Time: A Longitudinal Study of the Role of Attention, Network Density, and Motivations | http://videolectures.net/icwsm2010_russo_tot/ | instructors:Paul Russo
+vl-27-436 | OntoTouch | http://videolectures.net/eswc2012_hammar_ockeloen_ontotouch/ | instructors:Karl Hammar, Niels Ockeloen
+vl-27-437 | An Interface-Based Ontology Modularization Framework for Knowledge Encapsulation | http://videolectures.net/iswc08_ensan_ibomf/ | instructors:Faezeh Ensan
+vl-27-438 | OWL: An Ontology Language for the Semantic Web | http://videolectures.net/rease_bechhofer_olsw/ | instructors:Sean Bechhofer
+vl-27-439 | RDFS Reasoning on Massively Parallel Hardware | http://videolectures.net/iswc2012_heino_parallel_hardware/ | instructors:Norman Heino
+vl-27-440 | MINI: Mashup for Identifying Noisy Infrastructure | http://videolectures.net/eswc2013_schulz_noisy_infrastructure/ | instructors:Axel Schulz
+vl-27-441 | Cooking Assistance Mashup with Biologeek | http://videolectures.net/eswc2013_belaunde_biologeek/ | instructors:Mariano Belaunde
+vl-27-442 | Uniting "a priori" and "a posteriori" knowledge: A research framework | http://videolectures.net/ijcai09_witbrock_uapapk/ | instructors:Michael Witbrock
+vl-27-443 | Probabilistic Dyadic Data Analysis with Local and Global Consistency | http://videolectures.net/icml09_raykar_pdd/ | instructors:Vikas Raykar
+vl-27-444 | Extending functional dependency to detect abnormal data in rdf graphs | http://videolectures.net/iswc2011_yu_rdfgraphs/ | instructors:Yang Yu
+vl-27-445 | A case study on automated risk assessment of ships using newspaper-based event extraction | http://videolectures.net/iswc2013_van_hage_event_extraction/ | instructors:Willem Robert van Hage
+vl-27-446 | PortDial - Language Resources for Portable Multilingual Spoken Dialogue Systems | http://videolectures.net/dataforum2012_karanikas_portdial/ | instructors:Aris Karanikas
+vl-27-447 | NSPARQL: A Navigational Language for RDF | http://videolectures.net/iswc08_perez_nsparql/ | instructors:Jorge Pérez
+vl-27-448 | Leveraging the semantic of tweets for adoptive faceted search on Twiter | http://videolectures.net/iswc2011_abel_twitter/ | instructors:Fabian Abel
+vl-27-449 | Ontologies: Theory, methods and tools | http://videolectures.net/rease_perez_tmt/ | instructors:Asunción Gómez-Pérez
+vl-27-450 | Research 7: Causal link matrix and AI planning: A model for Web service composition | http://videolectures.net/iswc06_lecue_clm/ | instructors:Freddy Lecue
+vl-27-451 | An Implementation of a Semantic, Web-Based Virtual Machine Laboratory Prototyping Environment | http://videolectures.net/iswc2011_salonen_prototyping/ | instructors:Jaakko Salonen
+vl-27-452 | Cyc: Knowledge Begets Knowledge | http://videolectures.net/sssw05_witbrock_kbk/ | instructors:Michael Witbrock
+vl-27-453 | A Framework for Acquiring Semantic Sensor Descriptions | http://videolectures.net/iswc2012_bradesko_sensor_descriptions/ | instructors:Luka Bradeško
+vl-27-454 | SPLODGE: Systematic Generation of SPARQL Benchmark Queries for Linked Open Data | http://videolectures.net/iswc2012_goerlitz_splodge/ | instructors:Olaf Görlitz
+vl-27-455 | Algebras of ontology alignment relations | http://videolectures.net/iswc08_euzenat_aoar/ | instructors:Jérôme Euzenat
+vl-27-456 | DogOnt – Ontology Modeling for Intelligent Domotic Environments | http://videolectures.net/iswc08_bonino_domide/ | instructors:Dario Bonino
+vl-27-457 | FactForge: Data Service and the Value of Inferred Knowledge | http://videolectures.net/dataforum2012_damova_factforge/ | instructors:Mariana Damova
+vl-27-458 | Fusepool - Fusing and pooling information for product/service development and research | http://videolectures.net/dataforum2012_kaschesky_fusepool/ | instructors:Michael Kaschesky
+vl-27-459 | Abstract Access Control Model for Dynamic RDF Datasets | http://videolectures.net/dataforum2012_fundulaki_rdf_datasets/ | instructors:Irini Fundulaki
+vl-27-460 | Social-media blog tagging: Metadata or “just more content” ? | http://videolectures.net/solomon_berendt_tan/ | instructors:Bettina Berendt
+vl-27-461 | One Tag to bind them all: Measuring Term Abstractness in Social Metadata | http://videolectures.net/eswc2011_benz_tag/ | instructors:Dominik Benz, Denny Vrandečić
+vl-27-462 | Semantic Interoperability | http://videolectures.net/iswc07_euzenat_si/ | instructors:Jérôme Euzenat, Natasha Noy
+vl-27-463 | Semantic VideoLectures.NET: Media fragments and learning materials re-use | http://videolectures.net/wmpa2014_cerle_semantic_videolectures/ | instructors:Gaber Cerle
+vl-27-464 | Alignment based trust for resource finding in semantic P2P networks | http://videolectures.net/iswc2011_atencia_semantic/ | instructors:Manuel Atencia
+vl-27-465 | Using Partial Reference Alignments to Align Ontologies | http://videolectures.net/eswc09_lambrix_upra/ | instructors:Patrick Lambrix
+vl-27-466 | Linked Data: Now what? | http://videolectures.net/eswc2010_auer_ldnw/ | instructors:Sören Auer
+vl-27-467 | ELP: Tractable Rules for OWL 2 | http://videolectures.net/iswc08_krotzsch_elptr/ | instructors:Markus Krötzsch
+vl-27-468 | Effectively Interpreting Keyword Queries on RDF Databases with a Rear View | http://videolectures.net/iswc2011_anyanwu_queries/ | instructors:Kemafor Anyanwu
+vl-27-469 | Hands on Semantic Web | http://videolectures.net/active09_vrandecic_hsw/ | instructors:Denny Vrandečić
+vl-27-470 | SPARK: Adapting Keyword Query to Semantic Search | http://videolectures.net/iswc07_zhou_akqss/ | instructors:Qi Zhou
+vl-27-471 | Semantic Web in Asia: Example Use Cases | http://videolectures.net/iswc08_lee_swiauc/ | instructors:Tony Lee
+vl-27-472 | Using LOD to share clean energy data and knowledge | http://videolectures.net/dataforum2012_bauer_lod/ | instructors:Florian Bauer
+vl-27-473 | Representing Supply Chain Events on the Web of Data | http://videolectures.net/iswc2013_solanki_chain_events/ | instructors:Monika Solanki
+vl-27-474 | Workshop on semantic search - Concept Search: Semantics Enabled Syntactic Search | http://videolectures.net/eswc08_kharkevich_wss/ | instructors:Uladzimir Kharkevich
+vl-27-475 | Modeling semantic plausibility and the influence of visual context during on-line sentence comprehension | http://videolectures.net/mlcs07_crocker_msp/ | instructors:Matthew Crocker
+vl-27-476 | Is Semantic Web technology ready for Healthcare? | http://videolectures.net/eswc06_wroe_swtrh/ | instructors:Chris Wroe
+vl-27-477 | Semantic Overlay Networks for P2P Web Search | http://videolectures.net/fws06_vazirgiannis_sonpw/ | instructors:Michalis Vazirgiannis
+vl-27-478 | Data Integration using Semantic Technology: a Use Case | http://videolectures.net/eswc06_angele_uc/ | instructors:Jürgen Angele
+vl-27-479 | Ontologies, semantic web and VE | http://videolectures.net/ess07_obitko_oswve/ | instructors:Marek Obitko
+vl-27-480 | Learning to Disambiguate Search Queries from Short Sessions | http://videolectures.net/ecmlpkdd09_mihalkova_ldsqss/ | instructors:Lilyana Mihalkova
+vl-27-481 | Grr: Generating Random RDF | http://videolectures.net/eswc2011_blum_generating/ | instructors:Daniel Blum
+vl-27-482 | Watermarking for ontologies | http://videolectures.net/iswc2011_suchanek_watermarking/ | instructors:Fabian M. Suchanek
+vl-27-483 | Web Service Modelling Toolkit (WSMT) | http://videolectures.net/rease_kerrigan_wsmt/ | instructors:Mick Kerrigan
+vl-27-484 | Is the Web a Web of Documents or Things? | http://videolectures.net/ijcai09_wang_itwwdt/ | instructors:Xiaoshu Wang
+vl-27-485 | SchemEX -- Web-Scale Indexed Schema Extraction of Linked Open Data | http://videolectures.net/iswc2011_scherp_data/ | instructors:Ansgar Scherp
+vl-27-486 | Collective Wisdom: Information Growth in Wikis and Blogs | http://videolectures.net/bsciw08_das_cwigwb/ | instructors:Malik Magdon-Ismail, Sanmay Das
+vl-27-487 | Hybrid Reasoning with Simple Forest Logic Programs | http://videolectures.net/eswc09_feier_hrws/ | instructors:Cristina Feier
+vl-27-488 | Learning Concept Mappings from Instance Similarity | http://videolectures.net/iswc08_wang_lcm/ | instructors:Shenghui Wang
+vl-27-489 | DBpedia: A Nucleus for a Web of Open Data | http://videolectures.net/iswc07_soeren_nwo/ | instructors:Sören Auer
+vl-27-490 | A novel aproach to visualizing and navigation ontologies | http://videolectures.net/iswc2011_motta_navigating/ | instructors:Enrico Motta
+vl-27-491 | Automatically Generating Data Linkages Using a Domain-Independent Candidate Selection Approach | http://videolectures.net/iswc2011_song_linkages/ | instructors:Dezhao Song
+vl-27-492 | Planning to Learn with a Knowledge Discovery Ontology | http://videolectures.net/solomon_zakova_plkdo/ | instructors:Monika Žakova
+vl-27-493 | Biological Names and Taxonomies on the Semantic Web -- Managing the Change in Scientific Conception | http://videolectures.net/eswc2011_tuominen_biological/ | instructors:Jouni Tuominen
+vl-27-494 | Industry 1: Semantic Solutions: Generating Business Value from Semantic Web Technologies | http://videolectures.net/iswc06_stuart_gbvsw/ | instructors:Tony Stuart
+vl-27-495 | Extracting semantic user networks from informal communication exchances social web | http://videolectures.net/iswc2011_mazumdar_socialweb/ | instructors:Suvodeep Mazumdar
+vl-27-496 | Semantic web technology Roadmap | http://videolectures.net/eswc06_cuel_swtr/ | instructors:Roberta Cuel
+vl-27-497 | Guiding the Evolution of a Multilingual Ontology in a Concrete Setting | http://videolectures.net/eswc2013_dragoni_multilingual_ontology/ | instructors:Mauro Dragoni
+vl-27-498 | Project Helping Nikos | http://videolectures.net/eswc2012_stavrakantonakis_daniel_nikos/ | instructors:Joshua Jeeson Daniel, Ioannis Stavrakantonakis
+vl-27-499 | Ontology-based Controlled Natural Language Editor Using CFG with Lexical Dependency | http://videolectures.net/iswc07_namgoong_obcnl/ | instructors:Hyun Namgoong
+vl-27-500 | Linking Data Across Universities: an integrated video lectures dataset | http://videolectures.net/iswc2011_fernandez_videolectures/ | instructors:Miriam Fernández
+vl-27-501 | Semantic Network Analysis of Ontologies - Part 2 | http://videolectures.net/eswc06_hoser_snao2/ | instructors:Bettina Hoser
+vl-27-502 | Neighborhood-based Tag Prediction | http://videolectures.net/eswc09_budura_nbtp/ | instructors:Adriana Budura
+vl-27-503 | Development of NeuroElectroMagnetic Ontologies (NEMO): A Framework for Mining Brain Wave Ontologies | http://videolectures.net/kdd07_dou_donem/ | instructors:Dejing Dou
+vl-27-504 | Semantic Web-based E-commerce | http://videolectures.net/dec08_hepp_webecomm/ | instructors:Martin Hepp
+vl-27-505 | In-Use 1: OntoWiki - A Tool for Social, Semantic Collaboration | http://videolectures.net/iswc06_auer_otssc/ | instructors:Sören Auer
+vl-27-506 | Efficient Semantic Web Service Discovery in Centralized and P2P Environments | http://videolectures.net/iswc08_skoutas_eswsd/ | instructors:Dimitrios Skoutas
+vl-27-507 | Mining Semantic Descriptions of Bioinformatics Web Services from the Literature | http://videolectures.net/eswc09_nenadic_msdob/ | instructors:Goran Nenadic
+vl-27-508 | Semantic Web Technology for Agent Communication Protocols | http://videolectures.net/eswc08_berges_smw/ | instructors:Idoia Berges
+vl-27-509 | Combining a DL Reasoner and a Rule Engine for Improving Entailment-Based OWL Reasoning | http://videolectures.net/iswc08_meditskos_cdlrre/ | instructors:Georgios Meditskos
+vl-27-510 | On Compressing the Textual Web | http://videolectures.net/wsdm2010_ferragina_octt/ | instructors:Paolo Ferragina
+vl-27-511 | Bringing the IPTC News Architecture into the Semantic Web | http://videolectures.net/iswc08_troncy_biptc/ | instructors:Raphaël Troncy
+vl-27-512 | The Watson plugin for the Neon toolkit | http://videolectures.net/iswc07_daquin_watson/ | instructors:Mathieu d’Aquin
+vl-27-513 | Cyc-Gate pipeline | http://videolectures.net/larkceaw09_fortuna_bradesko_cgp/ | instructors:Luka Bradeško, Blaž Fortuna
+vl-27-514 | Playence | http://videolectures.net/estc2010_arroyo_play/ | instructors:Sinuhe Arroyo
+vl-27-515 | SIM-DL_A: A Novel Semantic Similarity Measure for Description Logics Reducing Inter-Concept to  Inter-Instance Similarity | http://videolectures.net/eswc09_janowicz_sdaanss/ | instructors:Krzysztof Janowicz
+vl-27-516 | An architecture for semantic navigation and reasoning with patient data - experiences of the Health-e-Child project | http://videolectures.net/iswc08_hauer_asnrwpdehep/ | instructors:Tamás Hauer
+vl-27-517 | Local closed world semantics: Grounded circumscription for OWL | http://videolectures.net/iswc2011_sengupta_semantics/ | instructors:Kunal Sengupta
+vl-27-518 | Ontology Languages for the Semantic Web | http://videolectures.net/rease_bechhofer_olsw1/ | instructors:Sean Bechhofer
+vl-27-519 | Anytime Query Answering in RDF through Evolutionary Algorithms | http://videolectures.net/iswc08_oren_aqa/ | instructors:Eyal Oren
+vl-27-520 | Collecting Community-Based Mappings in an Ontology Repository | http://videolectures.net/iswc08_fridman_noy_ccbm/ | instructors:Natasha Noy
+vl-27-521 | Workshop: Improving the recruitment process through ontology-based querying | http://videolectures.net/iswc06_wache_irpto/ | instructors:Holger Wache
+vl-27-522 | Ontology Engineering Methodologies | http://videolectures.net/rease_perez_oem/ | instructors:Asunción Gómez-Pérez
+vl-27-523 | MLW-LT, the Semantic Web, and Linked Open Data | http://videolectures.net/w3cworkshop2012_lefrancois_data/ | instructors:Maxime Lefrançois
+vl-27-524 | Perplexity of Index Models over Evolving Linked Data | http://videolectures.net/eswc2014_gottron_linked_data/ | instructors:Thomas Gottron
+vl-27-525 | Linked Data and Life Sciences | http://videolectures.net/stisemanticsummit2011_adana_montes_sciences/ | instructors:José Francisco Aldana Montes
+vl-27-526 | The cognitive complexity of OWL justifications | http://videolectures.net/iswc2011_horridge_justifications/ | instructors:Matthew Horridge
+vl-27-527 | Visualizing ontologies: a case study | http://videolectures.net/iswc2011_howse_visualizing/ | instructors:John Howse
+vl-27-528 | Semantic Reasoning: A Path To New Possibilities of Personalization | http://videolectures.net/eswc08_blanco_sr/ | instructors:Yolanda Blanco-Fernández
+vl-27-529 | Multimedia Ontologies for Reasoning and Analysis | http://videolectures.net/ssms08_moeller_mora/ | instructors:Ralf Möller
+vl-27-530 | Closing the discovery gap in environmental information resources using semantic annotations: the TaToo Approach | http://videolectures.net/envip2010_avellino_cdge/ | instructors:Giuseppe Avellino
+vl-27-531 | Idea Navigation: Structured Browsing for Unstructured Text | http://videolectures.net/chi08_zelevinsky_ins/ | instructors:Vladimir Zelevinsky, Robin Stewart
+vl-27-532 | Corpora, evaluation tools | http://videolectures.net/gate06_bontcheva_cet/ | instructors:Kalina Bontcheva
+vl-27-533 | Learning to Distinguish Valid Textual Entailments | http://videolectures.net/pcw06_marneffe_ldvte/ | instructors:Marie-Catherine de Marneffe
+vl-27-534 | Semantic Web and Multimedia | http://videolectures.net/ssms08_staab_swm/ | instructors:Steffen Staab
+vl-27-535 | Pinview: Implicit Feedback in Content-Based Image Retrieval | http://videolectures.net/wapa2010_hussain_pifc/ | instructors:Zakria Hussain
+vl-27-536 | SCMS - Semantifying Content Management Systems | http://videolectures.net/iswc2011_ngonga_ngomo_scms/ | instructors:Axel-Cyrille Ngonga Ngomo
+vl-27-537 | Concurrent classification of EL ontologies | http://videolectures.net/iswc2011_kazakov_classification/ | instructors:Yevgeny Kazakov
+vl-27-538 | Repairing ontologies for incomplete reasoners | http://videolectures.net/iswc2011_stoilos_reasoners/ | instructors:Giorgos Stoilos
+vl-27-539 | Leveraging Community-built Knowledge for Type Coercion in Question Answering | http://videolectures.net/iswc2011_kalyanpur_leveraging/ | instructors:Aditya Kalyanpur
+vl-27-540 | Getting the Meaning Right: A Complementary Distributional Layer for the Web Semantics | http://videolectures.net/iswc2011_novacek_semantics/ | instructors:Vit Novacek
+vl-27-541 | Workshop on semantic search - Microsearch: An Interface for Semantic Search | http://videolectures.net/eswc08_mika_wss/ | instructors:Peter Mika
+vl-27-542 | Research 15: Automatic Annotation of Web Services based on Workflow Definitions | http://videolectures.net/iswc06_belhajjame_aawsb/ | instructors:Khalid Belhajjame
+vl-27-543 | Towards an Agent-based Approach for Veriﬁcation of OWL-S Process Models | http://videolectures.net/eswc09_solanki_taaba/ | instructors:Monika Solanki
+vl-27-544 | Continuous RDF Query Processing over DHTs | http://videolectures.net/iswc07_liarou_crdf/ | instructors:Erietta Liarou
+vl-27-545 | The Semantic Web and Human Inference: A Lesson from Cognitive Science | http://videolectures.net/iswc07_yamauchi_swh/ | instructors:Takashi Yamauchi
+vl-27-546 | Research 13: Crawling and Indexing Semantic Web Data | http://videolectures.net/iswc06_harth_ciswd/ | instructors:Andreas Harth
+vl-27-547 | Linked Enterprise Data, business scenarios | http://videolectures.net/estc2010_djalil_mezaour_ldbs/ | instructors:Amar-Djalil Mezaour
+vl-27-548 | Big Data: experience of running the LOD warehouse of some 18 bn triples | http://videolectures.net/estc2010_errling_bdeor/ | instructors:Orri Errling
+vl-27-549 | Enabling open data interoperability - The case for the Core Business Vocabulary | http://videolectures.net/dataforum2012_archer_interoperability/ | instructors:Phil Archer
+vl-27-550 | Research 4: ONTOCOM: A Cost Estimation Model for Ontology Engineering | http://videolectures.net/iswc06_simperl_cemoe/ | instructors:Elena Simperl
+vl-27-551 | Industry 2: Integrating Enterprise Data with Semantic Technologies | http://videolectures.net/iswc06_stephens_iedst/ | instructors:Susie Stephens
+vl-27-552 | An annotated hierarchies model of syntactic categories | http://videolectures.net/mlcs07_savova_ahm/ | instructors:Virginia Savova
+vl-27-553 | In-Use 2: Semantic Desktop 2.0: The Gnowsis Experience | http://videolectures.net/iswc06_sauermann_ge/ | instructors:Leo Sauermann
+vl-27-554 | Ontology Engineering | http://videolectures.net/rease_figueroa_oe/ | instructors:Mari Carmen Suarez Figueroa
+vl-27-555 | The Sensor Web: New Opportunities for Media-Mixing | http://videolectures.net/wmpa2014_oconnor_the_sensor_web/ | instructors:Noel E. O'Connor
+vl-27-556 | Commercially empowered Linked Open Data Ecosystems in Research – The CODE Approach | http://videolectures.net/dataforum2012_lindstaedt_code/ | instructors:Stefanie Lindstaedt
+vl-27-557 | Using Semantic Web Technologies to Build a Community-driven Knowledge Curation Platform for the Skeletal Dysplasia Domain | http://videolectures.net/iswc2011_groza_dysplasia/ | instructors:Tudor Groza
+vl-27-558 | An Empirical Study of Vocabulary Relatedness and Its application to Recommender Systems | http://videolectures.net/iswc2011_cheng_study/ | instructors:Gong Cheng
+vl-27-559 | Human-Machine Cooperation: User Corrections for AKBC | http://videolectures.net/akbcwekex2012_wick_human_machine/ | instructors:Michael L. Wick
+vl-27-560 | Research 8: Fresnel: A Browser-Independent Presentation Vocabulary for RDF | http://videolectures.net/iswc06_pietriga_bipvr/ | instructors:Emmanuel Pietriga
+vl-27-561 | Enhancing Decision Making within the Life Sciences through the use of Semantic Technologies | http://videolectures.net/estc09_stephens_edmst/ | instructors:Susie Stephens
+vl-27-562 | Vigitermes Project: a pharmaceutical knowledge base grounded on semantic technologies | http://videolectures.net/taoiw09_amardeilh_vigitermes/ | instructors:Florence Amardeilh
+vl-27-563 | Semantic Technology in Business Systems: Status and Prospects | http://videolectures.net/active09_davies_stbssp/ | instructors:John Davies
+vl-27-564 | Sindice.com: Weaving the Open Linked Data | http://videolectures.net/iswc07_oren_wold/ | instructors:Eyal Oren
+vl-27-565 | Enabling ne-grained HTTP caching of SPARQL query results | http://videolectures.net/iswc2011_todd_williams_results/ | instructors:Gregory Todd Williams
+vl-27-566 | Funding the Semantic Web : A cross-continental assessment and outlook | http://videolectures.net/iswc06_panel_fts/ | instructors:Mark Greaves, Todd Hughes,
+   
+    et al.
+vl-27-567 | Semantic Web and Ontology Management | http://videolectures.net/training06_studer_swom/ | instructors:Rudi Studer
+vl-27-568 | First order logic for learning user models in the semantic web: why do we need it? | http://videolectures.net/um05_jacquenet_wni/ | instructors:François Jacquenet
+vl-27-569 | Real-time processing on intensive web streams | http://videolectures.net/eswc2010_grobelnik_rtpoiw/ | instructors:Marko Grobelnik
+vl-27-570 | Ontology Engineering | http://videolectures.net/rease_perez_oe/ | instructors:Asunción Gómez-Pérez
+vl-27-571 | A Semantic Ecosystem for the Promotion of Conferences | http://videolectures.net/eswc2012_wiljes_khalili_semantic_ecosystem/ | instructors:Cord Wiljes, Ali Khalili
+vl-27-572 | Inspecting regularities in ontology design using clustering | http://videolectures.net/iswc2011_mikroyannidi_clustering/ | instructors:Eleni Mikroyannidi
+vl-27-573 | Evaluating long-term use of the Gnowsis Semantic Desktop for PIM | http://videolectures.net/iswc08_sauermann_eltu/ | instructors:Leo Sauermann
+vl-27-574 | OWL: an Ontology Language for the Web | http://videolectures.net/rease_bechhofer_olw/ | instructors:Sean Bechhofer
+vl-27-575 | Industry 3: How Co-Occurrence can Complement Semantics? | http://videolectures.net/iswc06_popov_hoccs/ | instructors:Atanas Kiryakov, Borislav Popov
+vl-27-576 | Industry 3: Knowledge Representation in Practice: Project Halo and the Semantic Web | http://videolectures.net/iswc06_greaves_phsw/ | instructors:Mark Greaves
+vl-27-577 | Workshop on Semantic Business Process Management - A Toolkit for Business Process Owners to Capture Early System Requirements | http://videolectures.net/eswc08_decreus_sb/ | instructors:Ken Decreus
+vl-27-578 | Querying OWL 2 QL and non-monotonic rules | http://videolectures.net/iswc2011_knorr_rules/ | instructors:Matthias Knorr
+vl-27-579 | Controlled Natural Language Ontologies in the Enterprise | http://videolectures.net/estc2010_moran_cnloe/ | instructors:Christopher Moran
+vl-27-580 | Ontology Learning - Knowledge Discovery and the Semantic Web | http://videolectures.net/koml04_grobelnik_olkds/ | instructors:Marko Grobelnik, Dunja Mladenić
+vl-27-581 | Precomputing Search Features for Fast and Accurate Query Classification | http://videolectures.net/wsdm2010_konig_psf/ | instructors:Arnd Christian König
+vl-27-582 | Semantic Search: Reconciling Expressive Querying and Exploratory Search | http://videolectures.net/iswc2011_ferre_semantic/ | instructors:Sébastien Ferré
+vl-27-583 | A Pattern Science for the Semantic Web | http://videolectures.net/eswc2010_gangemi_apsftsw/ | instructors:Aldo Gangemi
+vl-27-584 | Research 8: A Browser for Heterogeneous Semantic Web Repositories | http://videolectures.net/iswc06_hildebrand_bhswr/ | instructors:Michiel Hildebrand
+vl-27-585 | LarKC the Large Knowledge Collider | http://videolectures.net/larkcag09_vanharmelen_llkc/ | instructors:Frank van Harmelen
+vl-27-586 | LogMap: Logic-based and Scalable Ontology Matching | http://videolectures.net/iswc2011_jimenez_ruiz_ontology/ | instructors:Ernesto Jimenez-Ruiz
+vl-27-587 | Industry 2: Deploying Enterprise Level, Ontology-Driven Faceted Search | http://videolectures.net/iswc06_hodgson_delod/ | instructors:Ralph Hodgson
+vl-27-588 | The Web Changes Everything: Understanding the Dynamics of Web Content | http://videolectures.net/wsdm09_adar_wceudwc/ | instructors:Eytan Adar, Jaime Teevan,
+   
+    et al.
+vl-27-589 | I Tag, You Tag: Translating Tags for Advanced User Models | http://videolectures.net/wsdm2010_wetzker_ityt/ | instructors:Robert Wetzker
+vl-27-590 | Internet of Services | http://videolectures.net/iswc08_sure_ios/ | instructors:York Sure
+vl-27-591 | A Semantic Model for the Authorisation of Context-Aware Content Adaptation | http://videolectures.net/samt08_rodriguez_doncel_smac/ | instructors:Víctor Rodríguez Doncel
+vl-27-592 | Principles of Benchmarking and Application in the VO Context | http://videolectures.net/paris04_graser_pbac/ | instructors:Falk Graser
+vl-27-593 | An Efficient Ontology-Based Expert Peering System | http://videolectures.net/gbr07_alpcan_aeobeps/ | instructors:Tansu Alpcan
+vl-27-594 | Web mining for natural language engineering tasks | http://videolectures.net/fws06_rosso_wmnle/ | instructors:Paolo Rosso
+vl-27-595 | emotion3D KG | http://videolectures.net/estc2010_wilson_e3d/ | instructors:Tom Wilson
+vl-27-596 | Encyclopedic Knowledge Patterns from Wikipedia Links | http://videolectures.net/iswc2011_presutti_gangemi_encyclopedic/ | instructors:Valentina Presutti, Aldo Gangemi
+vl-27-597 | Interleaving Human-Machine Knowledge and Computation | http://videolectures.net/iswc2012_bernstein_knowledge_computation/ | instructors:Abraham Bernstein
+vl-27-598 | Network Structure of Folksonomies | http://videolectures.net/eccs07_servedio_nsf/ | instructors:Vito D. P. Servedio
+vl-27-599 | Semantic Web Services: Web Service Modelling Ontology and IRS-III | http://videolectures.net/rease_domingue_wsmoi/ | instructors:John Domingue
+vl-27-600 | Web services retrieval | http://videolectures.net/sws09_plebani_wsr/ | instructors:Pierluigi Plebani
+vl-27-601 | Improving Categorisation in Social Media using Hyperlinks to Structured Data Sources | http://videolectures.net/eswc2011_kinsella_improving/ | instructors:Sheila Kinsella
+vl-27-602 | BookSampo - Lessons Learned in Creating a Semantic Portal for Fiction Literature | http://videolectures.net/iswc2011_makela_booksampo/ | instructors:Eetu Mäkelä
+vl-27-603 | Natural Languages and Ontology Learning | http://videolectures.net/rease_basili_nlol/ | instructors:Roberto Basili
+vl-27-604 | Matrixware │ Semantic Supercomputing: Intelligence Paired with Brute Force | http://videolectures.net/estc08_weber_mss/ | instructors:Francisco Eduardo De Sousa Webber
+vl-27-605 | Formalisation of Science: Ontology Based Projects in Aberystwyth University | http://videolectures.net/solomon_soldatova_ofs/ | instructors:Larisa Soldatova
+vl-27-606 | Service-Based Infrastructure for User-Oriented Environmental Information Delivery | http://videolectures.net/envip2010_wanner_sbiu/ | instructors:Leo Wanner
+vl-27-607 | DeFacto - Deep Fact Validation | http://videolectures.net/iswc2012_gerber_defacto/ | instructors:Daniel Gerber
+vl-27-608 | Research 12: IRS-III: A Broker for Semantic Web Services based Applications | http://videolectures.net/iswc06_cabral_bswsb/ | instructors:Liliana Cabral
+vl-27-609 | Semantic Grounding of Tag Relatedness in Social Bookmarking Systems | http://videolectures.net/iswc08_cattuto_sgtr/ | instructors:Ciro Cattuto
+vl-27-610 | Verification of the OWL-Time Ontology | http://videolectures.net/iswc2011_gruninger_ontology/ | instructors:Michael Grüninger
+vl-27-611 | Personal Information Management vs. Resource Sharing: Towards a Model of Information Behavior in Social Tagging Systems | http://videolectures.net/icwsm09_wolff_pimrs/ | instructors:Christian Wolff
+vl-27-612 | 2014: Semantic Technologies in Large Distributed Organisations | http://videolectures.net/rw08_ciravegna_stldo/ | instructors:Fabio Ciravegna
+vl-27-613 | Semantic Laboratory Notebook: Managing biomedical research notes and experimental data | http://videolectures.net/eswc06_polonsky_mbrne/ | instructors:Alexander Polonsky
+vl-27-614 | Labels in the Web of Data | http://videolectures.net/iswc2011_ell_labels/ | instructors:Basil Ell
+vl-27-615 | Semantic Web Service Systems - Part 2 | http://videolectures.net/eswc06_kerrigan_swss2/ | instructors:Mick Kerrigan
+vl-27-616 | Survey on Governance of User-generated Content in Web Communities | http://videolectures.net/acmwebsci2011_schwagereit_governance/ | instructors:Felix Schwagereit
+vl-27-617 | Collective Semantics: Collective Intelligence & the Semantic Web - Enriching Ontological User Profiles with Tagging History for Multi-Domain Recommendations | http://videolectures.net/eswc08_contador_cs/ | instructors:Ivan Contador
+vl-27-618 | Linked Open Data | http://videolectures.net/estc2010_auer_lod/ | instructors:Sören Auer
+vl-27-619 | Semantic web Languages | http://videolectures.net/sws09_roman_swl/ | instructors:Dumitru Roman
+vl-27-620 | Contextual Intelligence for Mobile Services through Semantic Web Technology | http://videolectures.net/eswc06_paolucci_cimst/ | instructors:Massimo Paolucci
+vl-27-621 | Semantic Annotations for Sensor Open Data | http://videolectures.net/iswc2012_emaldi_open_data/ | instructors:Mikel Emaldi
+vl-27-622 | Semantic technologies: an introduction | http://videolectures.net/taoiw09_pariente_semintro/ | instructors:Tomás Pariente Lobo
+vl-27-623 | Linking Semantic Desktop Data to the Web of Data | http://videolectures.net/iswc2011_dragan_linking/ | instructors:Laura Dragan
+vl-27-624 | Semantic Web Services Applications | http://videolectures.net/rease_domingue_swsa/ | instructors:John Domingue
+vl-27-625 | Semantics, Semantic Web | http://videolectures.net/sws09_toma_ssw/ | instructors:Ioan Toma
+vl-27-626 | Collective Semantics: Collective Intelligence & the Semantic Web - Use of multiple background ontologies in ontology matching | http://videolectures.net/eswc08_aleksovski_cs/ | instructors:Zharko Aleksovski
+vl-27-627 | The MetaLex Document Server - Legal Documents as Versioned Linked Data | http://videolectures.net/iswc2011_hoekstra_metalex/ | instructors:Rinke Hoekstra
+vl-27-628 | An Ontology Design Pattern for Referential Qualities | http://videolectures.net/iswc2011_ortmann_ontology/ | instructors:Jens Ortmann
+vl-27-629 | strukt - A Pattern System for Integrating Individual and Organizational Knowledge Work | http://videolectures.net/iswc2011_scherp_strukt/ | instructors:Ansgar Scherp
+vl-27-630 | Bootstrapping Ontology Evolution with Multimedia Information Extraction | http://videolectures.net/iiia06_paliouras_boemi/ | instructors:Georgios Paliouras
+vl-27-631 | Lela - the semantic travel guide you write | http://videolectures.net/estc2010_miron_ltsgyw/ | instructors:Dia Miron
+vl-27-632 | Twindex Fuorisalone | http://videolectures.net/eswc2013_della_valle_twindex_fuorisalone/ | instructors:Emanuele Della Valle
+vl-27-633 | Querying Semantically Enriched Sensor Observations | http://videolectures.net/eswc2011_calbimonte_observations/ | instructors:Jean-Paul Calbimonte
+vl-27-634 | Beyond String Search: Fast and Accurate Retrieval of Entities and Dependencies | http://videolectures.net/ecml07_zaragoza_bss/ | instructors:Hugo Zaragoza
+vl-27-635 | Ciuvo | http://videolectures.net/estc2010_brunthaler_ciu/ | instructors:Martin Brunthaler
+vl-27-636 | Semantic Web Services | http://videolectures.net/rease_domingue_sws1/ | instructors:John Domingue
+vl-27-637 | RELIN: Relatedness and Informativeness-based Centrality for Entity Summarization | http://videolectures.net/iswc2011_cheng_relin/ | instructors:Gong Cheng
+vl-27-638 | Annotation for the Semantic Web | http://videolectures.net/eswc06_handschuh_asw/ | instructors:Siegfried Handschuh
+vl-27-639 | Building semantic applications | http://videolectures.net/training06_warren_bsa/ | instructors:Paul Warren
+vl-27-640 | In-Use 1: Semantic web technology for expert knowledge sharing and discovery | http://videolectures.net/iswc06_kraines_swtek/ | instructors:Steven Kraines
+vl-27-641 | Semantic Grid: A love match? or A marriage of convenience? | http://videolectures.net/rease_goble_lmmc/ | instructors:Carole Goble
+vl-27-642 | How to "Make a Bridge to the New Town" using OntoAccess | http://videolectures.net/iswc2011_hert_ontoaccess/ | instructors:Matthias Hert
+vl-27-643 | A Semantic Portal for Next Generation Monitoring Systems | http://videolectures.net/iswc2011_patton_semantic/ | instructors:Evan W. Patton
+vl-27-644 | An autosuggest service based on lod backlinks | http://videolectures.net/iswc2011_papadakis_service/ | instructors:Ioannis Papadakis
+vl-27-645 | Research 6: Ontology Query Answering on Databases | http://videolectures.net/iswc06_ma_oqad/ | instructors:Li Ma
+vl-27-646 | Mind Your Metadata: Exploiting Semantics for Configuration, Adaptation, and Provenance in Scientific Workflows | http://videolectures.net/iswc2011_szekely_workflows/ | instructors:Pedro Szekely
+vl-27-647 | Research 5: Ontology-driven Information Extraction with OntoSyphon | http://videolectures.net/iswc06_mcdowell_odieo/ | instructors:Luke McDowell
+vl-27-648 | Ontology Management | http://videolectures.net/sssw05_studer_om/ | instructors:Rudi Studer
+vl-27-649 | Research 1: Extracting Relations in Social Networks from Web using Similarity between Collective Contexts | http://videolectures.net/iswc06_mori_ersnw/ | instructors:Junichiro Mori
+vl-27-650 | Semantic Web Services | http://videolectures.net/rease_domingue_sws/ | instructors:John Domingue
+vl-27-651 | KOIOS: Utilizing Semantic Search for Easy-Access and Visualization of Structured Environmental Data | http://videolectures.net/iswc2011_tran_koios/ | instructors:Thanh Tran
+vl-27-652 | Publishing in the digital age | http://videolectures.net/estc2010_hladky_tsn/ | instructors:Daniel Hladky
+vl-27-653 | Monetizing the Semantic Web | http://videolectures.net/stisemanticsummit2011_vrandecic_monetizing/ | instructors:Denny Vrandečić
+vl-27-654 | Modeling Ontology Evaluation | http://videolectures.net/eswc06_gangemi_moe/ | instructors:Aldo Gangemi
+vl-27-655 | Collective Semantics: Collective Intelligence & the Semantic Web - From Web 2.0 to Semantic Web - A Semi-Automated Approach | http://videolectures.net/eswc08_hess_cs/ | instructors:Andreas Hess
+vl-27-656 | Supporting Environmental Information Systems and Services Realization with the Geo-Spatial and Streaming Dimensions of the Semantic Web | http://videolectures.net/envip2010_valle_seis/ | instructors:Emanuele Della Valle
+vl-27-657 | Connecting the dots: A multi-pivot approach to data exploration | http://videolectures.net/iswc2011_popov_multipivot/ | instructors:Igor Popov
+vl-27-658 | (Semantic) Structure in Structured Document Retrieval | http://videolectures.net/fws06_zwol_ssdr/ | instructors:Roelof Van Zwol
+vl-27-659 | Semantic Web Services Approaches and Technologies | http://videolectures.net/rease_domingue_swsat/ | instructors:John Domingue
+vl-27-660 | In-Use 4: Active Semantic Electronic Medical Record | http://videolectures.net/iswc06_lathem_asemr/ | instructors:Jonathan Lathem, Amit Sheth
+vl-27-661 | Use of Ontology for production of access systems on Legislation Jurisprudence and Comments | http://videolectures.net/eswc06_delahousse_uopas/ | instructors:Jean Delahousse
+vl-27-662 | Calais - the media and the semantic web | http://videolectures.net/ssms08_pridor_cmsw/ | instructors:Barak Pridor
+vl-27-663 | Fundamental Research Challenges Generated by the Semantic Web | http://videolectures.net/rease_harmelen_frcgs/ | instructors:Frank van Harmelen
+vl-27-664 | Play.fm Gmbh | http://videolectures.net/estc09_buchstaetter_pfg/ | instructors:Thomas Buchstätter
+vl-27-665 | SOA4All Lightweight Business Process Modelling and Execution Suite | http://videolectures.net/estc2010_prunes_lbpm/ | instructors:Elies Prunes
+vl-27-666 | Scalable Grounded Conjunctive Query Evaluation over Large and Expressive Knowledge Bases | http://videolectures.net/iswc08_fokoue_scqe/ | instructors:Achille Fokoue
+vl-27-667 | Human Language technology for the Semantic Web | http://videolectures.net/sssw05_buitelaar_hltsw/ | instructors:Paul Buitelaar
+vl-27-668 | Research 17: A Method for Learning Part-Whole Relations | http://videolectures.net/iswc06_hage_mlwr/ | instructors:Willem van Hage
+vl-27-669 | Workshop on Semantic Business Process Management - Semantic business process validation | http://videolectures.net/eswc08_hoffman_sb/ | instructors:Joerg Hoffmann
+vl-27-670 | Web datasets integration with RDF-AI | http://videolectures.net/ijcai09_scharffe_wdiwrdf/ | instructors:François Scharffe
+vl-27-671 | Dinamic Assembly of personalised Learning Content on the Semantic web | http://videolectures.net/eswc06_jovanovic_daplc/ | instructors:Jelena Jovanovic
+vl-27-672 | Large scale annotation efforts | http://videolectures.net/translingeu2010_calzolari_resources/ | instructors:Nicoletta Calzolari
+vl-27-673 | Efficient Lazy Algorithms for Minimal-Interval Semantics | http://videolectures.net/fws06_vigna_elami/ | instructors:Sebastiano Vigna
+vl-27-674 | Semantics through Collective Intelligence | http://videolectures.net/ict08fr_staab_stci/ | instructors:Steffen Staab
+vl-27-675 | Semantic Annotation in the Alvis Project | http://videolectures.net/iiia06_nedellec_saap/ | instructors:Claire Nédellec
+vl-27-676 | Generating resource profiles bx exploiting the context of social annotations | http://videolectures.net/iswc2011_abel_social/ | instructors:Fabian Abel
+vl-27-677 | Approaching Textual Entailment with LFG and FrameNet Frames | http://videolectures.net/pcw06_burchardt_atelf/ | instructors:Aljoscha Burchardt
+vl-27-678 | Introduction to the ACTIVE Knowledge Workspace SDK | http://videolectures.net/active09_dolinsek_iak/ | instructors:Igor Dolinšek
+vl-27-679 | The architecture of LarKC | http://videolectures.net/larkceaw09_bishop_arch/ | instructors:Barry Bishop
+vl-27-680 | Research 16: A Relaxed Approach to RDF Querying | http://videolectures.net/iswc06_wood_rarq/ | instructors:Peter Wood
+vl-27-681 | Ontology Mapping and Alignment | http://videolectures.net/rease_noy_oma/ | instructors:Natasha Noy
+vl-27-682 | Linked Open Data | http://videolectures.net/estc2010_davies_lod/ | instructors:John Davies
+vl-27-683 | Semantics in digital content: From multimedia to emerging 3D Media | http://videolectures.net/ict08fr_spagnuolo_sdc/ | instructors:Michela Spagnuolo
+vl-27-684 | Web Content Mining with Human Language Technologies: Coreference resolution on RDF Graphs generated from Information Extraction: first results | http://videolectures.net/iswc06_yatskevich_fr/ | instructors:Mikalai Yatskevich
+vl-27-685 | Introduction to the LarKC Architecture | http://videolectures.net/eswc2010_kotoulas_iotl/ | instructors:Spyros Kotoulas
+vl-27-686 | Web User Behavior Characterization: Techniques, Applications And Research Directions | http://videolectures.net/is02_ballocca_tard/ | instructors:Giovanni Ballocca
+vl-27-687 | Linked Open Data | http://videolectures.net/estc2010_pottecher_lod/ | instructors:Diana Pottecher
+vl-27-688 | Semantic Web Applications | http://videolectures.net/rease_erdman_swa/ | instructors:Michael Erdman
+vl-27-689 | CEFRIEL │ Service Finder: Realizing Web Sevice Discovery at Web Scale | http://videolectures.net/estc08_valle_rsf/ | instructors:Emanuele Della Valle
+vl-27-690 | Managing Collaboration Projects using Semantic Email | http://videolectures.net/semseach09_albakour_mcpse/ | instructors:M-Dyaa Albakour, Rob Blackwell,
+   
+    et al.
+vl-27-691 | Linked Open Data | http://videolectures.net/estc2010_wurzer_lod/ | instructors:Jörg Wurzer
+vl-27-692 | Text mining for semantically enabled social browsing | http://videolectures.net/psm08_ferlez_tms/ | instructors:Jure Ferlež
+vl-27-693 | Ontology Validation and Evaluation | http://videolectures.net/rease_gangemi_ove1/ | instructors:Aldo Gangemi
+vl-27-694 | Towards Trust for Semantic Web Annotations | http://videolectures.net/iswc06_woerndl_ttfs/ | instructors:Wolfgang Woerndl
+vl-27-695 | Semantic Web: Next Generation Web Services and Knowledge Management | http://videolectures.net/koml04_haase_ngwsk/ | instructors:Peter Haase
+vl-27-696 | Semantic Desktop and Social Semantic Collaboration: Open Constitution Based Knowledge Communities in the Semantic Web | http://videolectures.net/iswc06_groenouwe_ocb/ | instructors:Chide Groenouwe
+vl-27-697 | Industry 1: Managing Richly Connected Information | http://videolectures.net/iswc06_mehra_mrci/ | instructors:Pankaj Mehra
+vl-27-698 | Comparing ontology distances: preliminary results | http://videolectures.net/iswc08_david_cod/ | instructors:Jérôme David
+vl-27-699 | How Service Choreography Statistics Reduce the Ontology Mapping Problem | http://videolectures.net/iswc07_besana_hscs/ | instructors:Paolo Besana
+vl-27-700 | SP3 & Semantic Web Services | http://videolectures.net/cgm09_komazec_sp3sws/ | instructors:Srdjan Komazec
+vl-27-701 | Tellilink Corporation | http://videolectures.net/estc09_moran_tc/ | instructors:Christopher Moran
+vl-27-702 | Semantics 2014 | http://videolectures.net/rw08_brodie_sem/ | instructors:Michael L. Brodie
+vl-27-703 | Interactive Ontology-based User Knovledge | http://videolectures.net/eswc06_dimitrova_iobuk/ | instructors:Vanja Dimitrova
+vl-27-704 | A Process Catalog for Workflow Generation | http://videolectures.net/iswc08_wolverton_apcfwg/ | instructors:Michael Wolverton
+vl-27-705 | Semantic Desktop and Social Semantic Collaboration: Introduction | http://videolectures.net/iswc06_decker_int/ | instructors:Stefan Decker, Leo Sauermann
+vl-27-706 | Instance Based Clustering of Semantic Web Resources | http://videolectures.net/eswc08_grimnes_ibc/ | instructors:Gunnar AAstrand Grimnes
+vl-27-707 | Spectralmind | http://videolectures.net/estc09_waldherr_spc/ | instructors:Johann Waldherr
+vl-27-708 | Formal Model for Semantic-Driven Service Execution | http://videolectures.net/iswc08_vitvar_fmfsd/ | instructors:Tomas Vitvar
+vl-27-709 | Semantic Web Services as Foundation for Enterprise Interoperability | http://videolectures.net/ice08_komazec_sws/ | instructors:Srdjan Komazec
+vl-27-710 | Research 4: A Survey of the Web Ontology Landscape | http://videolectures.net/iswc06_wang_swol/ | instructors:Taowei Wang
+vl-27-711 | Architecture Proposal | http://videolectures.net/koml04_traphoner_ap/ | instructors:Ralph Traphoner
+vl-27-712 | Metadata Extraction: Human Language technology and the Semantic Web - Part 1 | http://videolectures.net/koml04_cunningham_hltsw1/ | instructors:Hamish Cunningham
+vl-27-713 | Distributed Keyword Search over RDF via MapReduce | http://videolectures.net/eswc2014_de_virgilio_keyword_search/ | instructors:Roberto De Virgilio
+vl-27-714 | Distributed Loosely - Controlled and Evolving Ontology Engineering | http://videolectures.net/porto05_pinto_dlceo/ | instructors:Helena Sofia Pinto
+vl-27-715 | Ontology Modeling | http://videolectures.net/rease_paslaru_om/ | instructors:Elena Paslaru
+vl-27-716 | Ontology Matching and Alignment | http://videolectures.net/rease_zaihrayeu_oma/ | instructors:Ilya Zaihrayeu
+vl-27-717 | Research 5: Ontology-Driven Automatic Entity Disambiguation in Unstructured Text | http://videolectures.net/iswc06_meza_odaed/ | instructors:Boanerges Aleman-Meza
+vl-27-718 | A System of Ontologies and Services for Hypermedia Authoring on the Web | http://videolectures.net/samt08_machi_sos/ | instructors:Alberto Machì
+vl-27-719 | Semantic Email as a Communication Medium for the Social Semantic Desktop | http://videolectures.net/eswc08_scerri_mss/ | instructors:Simon Scerri
+vl-27-720 | Identfying Potentiallcy Important Conepts and Relations in an Ontology | http://videolectures.net/iswc08_wu_ipicro/ | instructors:Gang Wu
+vl-27-721 | Cyc: Knowledge Begets Knowledge | http://videolectures.net/training06_witbrock_kbk/ | instructors:Michael Witbrock
+vl-27-722 | NeOn │ Lifecycle Support for Networked Ontologies A Case Study in the Pharmaceutical Domain | http://videolectures.net/estc08_aquin_neon/ | instructors:Mathieu d’Aquin
+vl-27-723 | Recipes for Semantic Web Dog Food - The ESWC and ISWC Metadata Projects | http://videolectures.net/iswc07_health_rsw/ | instructors:Tom Heath, Knud Moller
+vl-27-724 | Ontologies and Natural Language: Enriching an Ontology with Multilingual Information | http://videolectures.net/eswc08_espinoza_onl/ | instructors:Mauricio Espinoza
+vl-27-725 | Creating and Using Organisational Semantic Webs in Large Networked Organisations | http://videolectures.net/iswc08_chapman_cauoswilno/ | instructors:Sam Chapman
+vl-27-726 | Research 3: Formal Model for Ontology Mapping Creation | http://videolectures.net/iswc06_mocan_fmomc/ | instructors:Adrian Mocan
+vl-27-727 | Service Web 3.0 | http://videolectures.net/rease_fensel_sw3/ | instructors:Dieter Fensel
+vl-27-728 | Workshop: OntoCAT: An Ontology Consumer Analysis Tool and Its Use on Product Services Categorization Standards | http://videolectures.net/iswc06_cross_ocati/ | instructors:Valerie Cross
+vl-27-729 | A Functional Semantic Architecture | http://videolectures.net/eswc08_gerber_fsa/ | instructors:Aurona Gerber
+vl-27-730 | In-Use 3: Towards Semantic Interoperability in a Clinical Trials Management System | http://videolectures.net/iswc06_shankar_tsict/ | instructors:Ravi Shankar
+vl-27-731 | Semantic Web(s) and Language Technology | http://videolectures.net/eswc06_declerck_swlt/ | instructors:Thierry Declerck
+vl-27-732 | Metadata Generation and Applications | http://videolectures.net/sms05_bontcheva_mga/ | instructors:Kalina Bontcheva
+vl-27-733 | Semantic Desktop and Social Semantic Collaboration: SemDAV: A File Exchange Protocol for the Semantic Desktop | http://videolectures.net/iswc06_schandl_saf/ | instructors:Bernhard Schandl
+vl-27-734 | Conceptual Situation Spaces for Semantic Situation-Driven Processes | http://videolectures.net/eswc08_dietze_css/ | instructors:Stefan Dietze
+vl-27-735 | Automating Document Annotation using Human Language Technologies and Machine Learning | http://videolectures.net/rease_ciravegna_adauh1/ | instructors:Fabio Ciravegna
+vl-27-736 | Semantic Desktop and Social Semantic Collaboration: A Case Study in Engineering a Knowledge Base for an Intelligent Personal Assistant | http://videolectures.net/iswc06_chaundry_acs/ | instructors:Vinay Chaudhri
+vl-27-737 | Lightning Talks | http://videolectures.net/iswc08_staab_lt/ | 
+vl-27-738 | Automating Document Annotation using HLT and ML | http://videolectures.net/rease_ciravegna_adauh/ | instructors:Fabio Ciravegna
+vl-27-739 | Linked Open Data | http://videolectures.net/estc2010_dimitrov_lod/ | instructors:Marin Dimitrov
+vl-27-740 | Collective Semantics: Collective Intelligence & the Semantic Web - Flickring Our World | http://videolectures.net/eswc08_gomes_cs/ | instructors:Paulo Gomes
+vl-27-741 | Research 11: PowerMap: Mapping the Real Semantic Web on the Fly | http://videolectures.net/iswc06_lopez_pmm/ | instructors:Vanessa Lopez
+vl-27-742 | Nonparametric Relational Learning with Applications to Decision Support and Bioinformatics and with a Perspective for the Semantic Web | http://videolectures.net/ecml07_tresp_nrl/ | instructors:Volker Tresp
+vl-27-743 | Research 16: On How to Perform a Gold Standard Based Evaluation of Ontology Learning | http://videolectures.net/iswc06_dellschaft_hpgsb/ | instructors:Klaas Dellschaft
+vl-27-744 | Roadmap for sem techn for 2014:three selected trends | http://videolectures.net/rw08_svatek_tst/ | instructors:Vojtech Svatek
+vl-27-745 | Semantic execution environments | http://videolectures.net/sws09_norton_sexe/ | instructors:Barry Norton
+vl-27-746 | SOA4All Platform | http://videolectures.net/estc2010_duke_sap/ | instructors:Alistair Duke
+vl-27-747 | Semantic Web @ BBN | http://videolectures.net/iswc08_dean_swb/ | instructors:Mike Dean
+vl-27-748 | A Collaborative Semantic Web Layer to Enhance Legacy Systems | http://videolectures.net/iswc07_gangemi_cswl/ | instructors:Aldo Gangemi
+vl-27-749 | Annomation | http://videolectures.net/estc2010_lambert_annom/ | instructors:David Lambert
+vl-27-750 | Characterizing Semantic Web Applications | http://videolectures.net/rease_motta_cswa/ | instructors:Enrico Motta
+vl-27-751 | Ontology Matching and Alignment | http://videolectures.net/rease_euzenat_oma1/ | instructors:Jérôme Euzenat
+vl-27-752 | The Semantic Web: Challenges and Applications | http://videolectures.net/rease_benjamins_ca/ | instructors:Richard Benjamins
+vl-27-753 | Satisficing Ontology Mapping | http://videolectures.net/rease_staab_som/ | instructors:Steffen Staab
+vl-27-754 | Semantic Technologies for Enterprise: Semantic Open Innovation (A Success Story) | http://videolectures.net/ict08fr_contreras_ste/ | instructors:Jesús Contreras
+vl-27-755 | Making Value Out of Semantic Web Data | http://videolectures.net/iswc07_nixon_mvo/ | instructors:Lyndon Nixon
+vl-27-756 | Industry 3: Semantic Web @ W3C: Activities, Recommendations and State of Adoption | http://videolectures.net/iswc06_herman_arsa/ | instructors:Ivan Herman
+vl-27-757 | Semantic 2008-2014 | http://videolectures.net/rw08_mladenic_semantic/ | instructors:Dunja Mladenić
+vl-27-758 | Knowledge Hives | http://videolectures.net/estc09_kruk_kh/ | instructors:Sebastian Ryszard Kruk
+vl-27-759 | Research 1: Innovation Detection based on User-Interest Ontology of Blog Community | http://videolectures.net/iswc06_nakatsuji_idbui/ | instructors:Makoto Nakatsuji
+vl-27-760 | Welcome to the ACTIVE kick off meeting | http://videolectures.net/akom08_warren_welcome/ | instructors:Paul Warren, Ralph Fiergolla
+vl-27-761 | Putting Ontology Alignment in Context: Usage Scenarios, Deployment and Evaluation in a Library Case | http://videolectures.net/eswc08_isaac_po/ | instructors:Antoine Isaac
+vl-27-762 | Semantic Authoring and Annotation: Specifying the Collaborative Tagging System | http://videolectures.net/iswc06_mesnage_scts/ | instructors:Cedric Mesnage
+vl-27-763 | Semantic Desktop and Social Semantic Collaboration: # An Overview of Information Management and Knowledge Work Studies: Lessons for the Semantic Desktop | http://videolectures.net/iswc06_oren_aoi/ | instructors:Eyal Oren
+vl-27-764 | Semantic Authoring and Annotation: Cross-media Document Annotation and Enrichment | http://videolectures.net/iswc06_ciravegna_cmdae/ | instructors:Fabio Ciravegna
+vl-27-765 | Workshop: GRDF | http://videolectures.net/iswc06_alam_g/ | instructors:Ashrafaul Alam
+vl-27-766 | Flexible Interfaces for Semantically Annotated Multimedia | http://videolectures.net/ssms08_hardman_fisam/ | instructors:Lynda Hardman
+vl-27-767 | Building semantic applications | http://videolectures.net/sssw05_warren_bsa/ | instructors:Paul Warren
+vl-27-768 | Semantic Authoring and Annotation: The Dynamics and Semantics of Collaborative Tagging | http://videolectures.net/iswc06_halpin_dsct/ | instructors:Harry Reeves Halpin
+vl-27-769 | Research 11: Block Matching for Ontologies | http://videolectures.net/iswc06_wei_bmo/ | instructors:Wei Hu
+vl-27-770 | ShareAlike Your data: Self-referential usage policies for the semantic web | http://videolectures.net/iswc2011_kroetzsch_data/ | instructors:Markus Krötzsch
+vl-27-771 | Research 12: RS2D: Fast Adaptive Search for Semantic Web - Services in Unstructured P2P Networks | http://videolectures.net/iswc06_klusch_fassw/ | instructors:Matthias Klusch
+vl-27-772 | A few inportant aspects for 2014 | http://videolectures.net/rw08_studer_aspect/ | instructors:Rudi Studer
+vl-27-773 | Semantic Sitemaps: Efficient and Flexible Access to Datasets on the Semantic Web | http://videolectures.net/eswc08_cyganiak_ss/ | instructors:Richard Cyganiak
+vl-27-774 | Research 4: Ranking Ontologies with AKTiveRank | http://videolectures.net/iswc06_brewster_roa/ | instructors:Christopher Brewster
+vl-27-775 | Ontology Matching and Alignment | http://videolectures.net/rease_euzenat_oma/ | instructors:Jérôme Euzenat
+vl-27-776 | Making the Web Searchable | http://videolectures.net/rease_mika_mws/ | instructors:Peter Mika
+vl-27-777 | 5+ years from now - research prespective | http://videolectures.net/rw08_grobelnik_rpersp/ | instructors:Marko Grobelnik
+vl-27-778 | Semantic Authoring and Annotation: A Semi-Automatic Semantic Annotation and Authoring Tool for a Library Help Desk Service | http://videolectures.net/iswc06_hyvonen_sasaa/ | instructors:Eero Hyvonen
+vl-27-779 | Towards enabling intelligent media servicers for a better world | http://videolectures.net/rw08_nixon_tbw/ | instructors:Lyndon Nixon
+vl-27-780 | Mobilizy | http://videolectures.net/estc2010_lechner_mob/ | instructors:Martin Lechner
+vl-27-781 | Research 5: A Framework for Schema-Driven Relationship Discovery from Unstructured text | http://videolectures.net/iswc06_ramakrishnan_fsdrd/ | instructors:Cartic Ramakrishnan
+vl-27-782 | xOperator - Interconnecting the Semantic Web and Instant Messaging Networks | http://videolectures.net/eswc08_dietzold_xo/ | instructors:Sebastian Dietzold
+vl-27-783 | The Semantic Web: How to bring technology to the market | http://videolectures.net/rease_benjamins_hbtm/ | instructors:Richard Benjamins
+vl-27-784 | A Research Program for the Semantic Web | http://videolectures.net/rease_motta_rpsw/ | instructors:Enrico Motta
+vl-27-785 | Semantic Desktop and Social Semantic Collaboration: Promiscuous Semantic Federation: Semantic Desktops meet Web 2.0 | http://videolectures.net/iswc06_park_psf/ | instructors:Jack Park
+vl-27-786 | Workshop: Spatial Integration of Semantic Web Services: the e-Merges Approach | http://videolectures.net/iswc06_tanasescu_ma/ | instructors:Vlad Tanasescu
+vl-27-787 | SemanticWeb from an industry perspective | http://videolectures.net/iswc08_angele_swfip/ | instructors:Jürgen Angele
+vl-27-788 | Semantic Desktop and Social Semantic Collaboration: Application Design and Interoperability for Managing Personal Information in the Semantic Desktop | http://videolectures.net/iswc06_cruz_ada/ | instructors:Isabel Cruz
+vl-27-789 | Making More Wikipedians: Facilitating Semantics Reuse for Wikipedia Authoring | http://videolectures.net/iswc07_fu_mmw/ | instructors:Linyun Fu
+vl-27-790 | Integrated Access to Biological Data: a Use Case | http://videolectures.net/eswc06_llorente_uc/ | instructors:Ainhoa Llorente
+vl-27-791 | Empiric Merging of Ontologies - A Proposal of Universal Uncertainty Representation Framework | http://videolectures.net/eswc06_novacek_emopu/ | instructors:Vit Novacek
+vl-27-792 | Semantics in digital content: Open discussion 02 | http://videolectures.net/ict08fr_debate_sdcod/ | instructors:Michela Spagnuolo, Pedro Santos,
+   
+    et al.
+vl-27-793 | Term Dependence on the Semantic Web | http://videolectures.net/iswc08_cheng_tdosw/ | instructors:Gong Cheng
+vl-27-794 | Automatic Extraction from Hierarchical Relations From Text | http://videolectures.net/eswc06_tablan_aehrt/ | instructors:Valentin Tablan
+vl-27-795 | Ontology Validation and Evaluation | http://videolectures.net/rease_gangemi_ove/ | instructors:Aldo Gangemi
+vl-27-796 | Research 13: Using Ontologies for Extracting Product Features from Web Pages | http://videolectures.net/iswc06_holzinger_uoepf/ | instructors:Wolfgang Holzinger
+vl-27-797 | Emerging Sciences of the Internet: Some New Opportunities | http://videolectures.net/rease_brachman_sno/ | instructors:Ronald J. Brachman
+vl-27-798 | Semantic Web@5 - Current Status and Future Promise of the Semantic Web | http://videolectures.net/rease_hendler_swcsf/ | instructors:James A. Hendler, Ora Lassila
+vl-27-799 | Semantic Desktop and Social Semantic Collaboration: The Beagle++ Toolbox: Towards an Extendable Desktop Search Architecture | http://videolectures.net/iswc06_costache_dbt/ | instructors:Stefania Costache
+vl-27-800 | Towards a Social Web | http://videolectures.net/rease_baumann_tsw1/ | instructors:Stephan Baumann
+vl-27-801 | K-Space: Bridging the semantic gap | http://videolectures.net/ict08fr_stewart_bsg/ | instructors:Craig Stewart
+vl-27-802 | Roadmapping workshop "Semantics 2014" | http://videolectures.net/rw08_berrueta_rws/ | instructors:Diego Berrueta
+vl-27-803 | Semantic Desktop and Social Semantic Collaboration: Supporting Mobile Service Interaction through Semantic Service Description Annotation and Automatic Interface Generation | http://videolectures.net/iswc06_paolucci_sms/ | instructors:Massimo Paolucci
+vl-27-804 | Lexical Semantics in the Age of the Semantic Web | http://videolectures.net/is02_buitelaar_lsasw/ | instructors:Paul Buitelaar
+vl-27-805 | Research 10: On the Semantics of Linking and Importing in Modular Ontologies | http://videolectures.net/iswc06_bao_iim/ | instructors:Jie Bao
+vl-27-806 | Human Language Technology for the Semantic Web | http://videolectures.net/training06_cunningham_hltsw1/ | instructors:Hamish Cunningham
+vl-27-807 | Benchmark Suites for Improving the RDF(S) Importers and Exporters of Ontology Development Tools | http://videolectures.net/eswc06_castro_bsiri/ | instructors:Raúl García-Castro
+vl-27-808 | The URI Lifecycle in Semantic Web Architecture | http://videolectures.net/ijcai09_booth_ulswa/ | instructors:David Booth
+vl-27-809 | Expected plugins for the new version of NeOn toolkit | http://videolectures.net/iswc07_hasse_plugins/ | instructors:Peter Haase
+vl-27-810 | Semantics for visual resources: Use Cases from E-Culture | http://videolectures.net/rease_schreiber_ucc/ | instructors:Guus Schreiber
+vl-27-811 | Making Semantic Web Real | http://videolectures.net/iswc06_handschuh_mswr/ | instructors:Siegfried Handschuh
+vl-27-812 | Metadata Extraction: Human Language technology and the Semantic Web | http://videolectures.net/training06_cunningham_hltsw/ | instructors:Hamish Cunningham
+vl-27-813 | Semantic Web and Ontology Management Technology | http://videolectures.net/training06_ehrig_swomt/ | instructors:Marc Ehrig
+vl-27-814 | In-Use 2: Information Integration via an End-to-End Distributed Semantic Web System | http://videolectures.net/iswc06_dimitrov_iivee/ | instructors:Dimitre Dimitrov
+vl-27-815 | Aiding the Data Integration in Medicinal Settings by Means of Semantic Technologies | http://videolectures.net/rease_laera_adims/ | instructors:Loredana Laera, Vit Novacek, Siegfried Handschuh
+vl-27-816 | Semantic Desktop and Social Semantic Collaboration: PIMO Population and Semantic Annotation for the Gnowsis Semantic Desktop | http://videolectures.net/iswc06_fernandez_garcia_/ | instructors:Norberto Fernández García
+vl-27-817 | HealthFinland - Finnish Health Information on the Semantic Web | http://videolectures.net/iswc07_tkk_fhi/ | instructors:Eero Hyvonen
+vl-27-818 | HLT and ML for the Semantic Web | http://videolectures.net/rease_ciravegna_hsw/ | instructors:Fabio Ciravegna
+vl-27-819 | In-Use 4: Construction and Use of Role-ontology for Task-based Service Navigation System | http://videolectures.net/iswc06_fukazawa_curot/ | instructors:Yusuke Fukazawa
+vl-27-820 | Semantic Authoring and Annotation: A Browser-based Tool for Collaborative Distributed Annotation for the Semantic Web | http://videolectures.net/iswc06_valkeapaa_bbtcd/ | instructors:Onni Valkeapää
+vl-27-821 | FO(ID) as an Extension of DL with Rules | http://videolectures.net/eswc09_vennekens_faaeod/ | instructors:Joost Vennekens
+vl-27-822 | Semantic Technologies for Enterprise: Adding Value to RTD | http://videolectures.net/ict08fr_benjamins_ste/ | instructors:Richard Benjamins
+vl-27-823 | WWW Challenges - Publishing, Searching, and Browsing on the Web | http://videolectures.net/solomon_frayling_wcpsb/ | instructors:Nataša Milić-Frayling
+vl-27-824 | News Agency needs: XML News | http://videolectures.net/eswc06_guerillot_xn/ | instructors:Stephane Guerillot
+vl-27-825 | Identity and Reference for the Global Giant Graph | http://videolectures.net/ijcai09_bouquet_irggg/ | instructors:Paolo Bouquet
+vl-27-826 | Tags and Dependencies: An integrated View of Document Annotation | http://videolectures.net/iswc06_sack_tad/ | instructors:Harald Sack
+vl-27-827 | Using the Web to Reduce Data Sparseness in Pattern-based Information | http://videolectures.net/ecml07_blohm_uwr/ | 
+vl-27-828 | BulTreeBank | http://videolectures.net/training06_simov_b/ | instructors:Kiril Ivanov Simov
+vl-27-829 | In-Use 4: A Mixed Initiative Semantic Web Framework for Process Composition | http://videolectures.net/iswc06_rao_miswf/ | instructors:Jinghai Rao
+vl-27-830 | Strategy and Experiences in "100GET" | http://videolectures.net/estc09_pascotto_sae/ | instructors:Riccardo Pascotto
+vl-27-831 | Research 15: Provenance Explorer – Tailored Provenance Views Using Semantic Inferencing | http://videolectures.net/iswc06_cheung_petpv/ | instructors:Kwok Cheung
+vl-27-832 | Semantic Authoring and Annotation: Using WEESA to Semantically Annotate Cocoon Web Applications | http://videolectures.net/iswc06_reif_uwsac/ | instructors:Gerald Reif
+vl-27-833 | Semantic Desktop and Social Semantic Collaboration: Spontaneous Collaboration via Browsing of Semantic Data on Mobile Devices | http://videolectures.net/iswc06_khushraj_scv/ | instructors:Deepali Khushraj
+vl-27-834 | Semantic Web and Ontology Management Technology | http://videolectures.net/koml04_ehrig_swomt/ | instructors:Marc Ehrig
+vl-27-835 | On Storage Policies for Semantic Web Repositories that Support Versioning | http://videolectures.net/eswc08_tzitzikas_sp/ | instructors:Yannis Tzitzikas
+vl-27-836 | An Infrastructure for Acquiring High Quality Semantic Metadata | http://videolectures.net/eswc06_lei_iahqs/ | instructors:Yuangui Lei
+vl-27-837 | Coping with Semantic Uncertainty with VENSES | http://videolectures.net/pcw06_delmonte_csuv/ | instructors:Rodolfo Delmonte
+vl-27-838 | Matching Hierarchical Classifications with Attributes | http://videolectures.net/eswc06_paolo_mhca/ | instructors:Paolo Bouquet
+vl-27-839 | FdForward | http://videolectures.net/estc09_burm_ff/ | instructors:Lucien Burm
+vl-27-840 | Metadata Extraction: Human Language technology and the Semantic Web part 7 | http://videolectures.net/koml04_bontcheva_hltsw7/ | instructors:Kalina Bontcheva
+vl-27-841 | Context Sensitivity in Knowledge Rich Systems: Part 2, Defining context | http://videolectures.net/iswc06_hitzler_csk/ | instructors:Pascal Hitzler
+vl-27-842 | Linked Open Data | http://videolectures.net/estc2010_hladky_lod/ | instructors:Daniel Hladky
+vl-27-843 | Why and how is this a related document? | http://videolectures.net/psm08_berendt_whr/ | instructors:Bettina Berendt
+vl-27-844 | Human Language Technology for the Semantic Web | http://videolectures.net/sab04_cunningham_hltsw/ | instructors:Hamish Cunningham
+vl-27-845 | Research 15: Semantic Metadata Generation for Large Scientific Workflows | http://videolectures.net/iswc06_kim_smgls/ | instructors:Jihie Kim
+vl-27-846 | Metadata Extraction: Human Language technology and the Semantic Web - Part 5 | http://videolectures.net/koml04_bontcheva_hltsw5/ | instructors:Kalina Bontcheva
+vl-27-847 | Metadata Extraction: Human Language technology and the Semantic Web - Part 4 | http://videolectures.net/koml04_bontcheva_hltsw4/ | instructors:Kalina Bontcheva
+vl-27-848 | Quaero | http://videolectures.net/training06_linden_q/ | instructors:Pieter van der Linden
+vl-27-849 | Towards a Social Web?! | http://videolectures.net/rease_baumann_tsw/ | instructors:Stephan Baumann
+vl-27-850 | Semantic Authoring and Annotation: Semantic Authoring by Tagging with Annotea Social Bookmarks and Topics | http://videolectures.net/iswc06_koivunen_satas/ | instructors:Marja Riitta Koivunen
+vl-27-851 | My Experiment | http://videolectures.net/eswc09_roure_myexp/ | instructors:David De Roure
+vl-27-852 | Software AG | http://videolectures.net/eswc06_gessman_s/ | instructors:Michael Gessman
+vl-27-853 | K-Space prize posters | http://videolectures.net/samt08_declerck_kspp/ | instructors:Thierry Declerck
+vl-27-854 | Semantic Desktop and Social Semantic Collaboration: Semantic Clipboard - Semantically Enriched Data Exchange Between Desktop Applications | http://videolectures.net/iswc06_reif_ses/ | instructors:Gerald Reif
+vl-27-855 | In-Use 3: Semantically-Enabled Large-Scale Science Data Repositories | http://videolectures.net/iswc06_fox_selss/ | instructors:Peter Fox
+vl-27-856 | Semantic Solutions for Enterprises | http://videolectures.net/rease_benjamins_sse/ | instructors:Richard Benjamins
+vl-27-857 | Introduction of SEKT partner - Intelligent Software Components S. A., Spain | http://videolectures.net/koml04_benjamins_ispis/ | instructors:Richard Benjamins
+vl-27-858 | In-Use 3: Enabling an Onlince Community for Sharing Oral Medicine Cases Using Semantice Web Technologies | http://videolectures.net/iswc06_gustafsson_eocso/ | instructors:Marie Gustafsson
+vl-27-859 | Debate about presentations | http://videolectures.net/iswc06_debate_savv/ | instructors:Siegfried Handschuh, Harald Sack, Wolfgang Waldhanser
+vl-27-860 | Introduction of SEKT partner - Ontoprise GmbH Intelligente Lösungen für das Wissensmanagement, Germany | http://videolectures.net/koml04_schnurr_ispog/ | instructors:Hans-Peter Schnurr
+vl-27-861 | Identity and Reference on the Semantic Web | http://videolectures.net/rease_bouquet_irsw/ | instructors:Paolo Bouquet
+vl-27-862 | Workshop: Enhancing Data and Processes Integration and Interoperability in Emergency Situations: a SWS based Emergency Management System | http://videolectures.net/iswc06_gutierrez_sbems/ | instructors:Leticia Gutierrez
+vl-27-863 | Closing Cerimony - Awards, Next Year's Presentation | http://videolectures.net/iswc06_closing_ses/ | instructors:Amit Gruber, Isabel Cruz,
+   
+    et al.
+vl-27-864 | In-Use 1: NEWS: bringing Semantic Web Technologies into News Agencies | http://videolectures.net/iswc06_fernandez_bswti/ | instructors:Luis Sanchez-Fernandez
+vl-27-865 | Putting the Open in Linked *Open* Data - Licensing, Sharing and Reuse | http://videolectures.net/estc2010_pollock_pollsr/ | instructors:Rufus Pollock
+vl-27-866 | Semantic Desktop and Social Semantic Collaboration: Method of Retrieving a Web Browsing Experience Using Semantic Periods | http://videolectures.net/iswc06_morita_mor/ | instructors:Tetsushi Morita
+vl-27-867 | Unknown title | http://videolectures.net/koml04_poblet_ut/ | instructors:Marta Poblet
+vl-27-868 | Semantic Annotated La Tex | http://videolectures.net/iswc06_handschuh_sal/ | instructors:Siegfried Handschuh
+vl-27-869 | Workshop: Discussions on elements of a Geo Working Group charter | http://videolectures.net/iswc06_lieberman_degwg/ | instructors:Josh Lieberman
+vl-27-870 | KonneXSALT: First Steps towards a Semantic Claim Federation Infrastructure | http://videolectures.net/eswc08_groza_kfs/ | instructors:Tudor Groza
+vl-27-871 | iServe - Services Marketplace | http://videolectures.net/estc2010_lambert_issm/ | instructors:David Lambert
+vl-27-872 | Introduction to workpackages - WP2 | http://videolectures.net/koml04_bontcheva_iww/ | instructors:Kalina Bontcheva
+vl-27-873 | Metadata Extraction: Human Language technology and the Semantic Web - Part 3 | http://videolectures.net/koml04_tablan_hltsw3/ | instructors:Valentin Tablan
+vl-27-874 | SALT: Weaving the claim web | http://videolectures.net/iswc07_groza_wcw/ | instructors:Tudor Groza
+vl-27-875 | Metadata Extraction: Human Language technology and the Semantic Web - Part 6 | http://videolectures.net/koml04_maynard_hltsw6/ | instructors:Diana Maynard
+vl-27-876 | Unknown title | http://videolectures.net/koml04_pompeu_ut/ | instructors:Casanovas Romeu Pompeu
+vl-27-877 | Unknown title | http://videolectures.net/koml04_bosser_ut/ | instructors:Tom Bösser
+vl-27-878 | Semantics in digital content: Open discussion 01 | http://videolectures.net/ict08fr_debate_sdc/ | instructors:Thierry Declerck, Yannis Orthopoulos,
+   
+    et al.
+vl-27-879 | Introduction to workpackages - WP4, WP5, WP6 | http://videolectures.net/koml04_harmelen_iwwww/ | instructors:Frank van Harmelen
+vl-27-880 | Introduction to workpackages - WP3 | http://videolectures.net/koml04_studer_iww/ | instructors:Rudi Studer
+vl-27-881 | Knowledge Access | http://videolectures.net/sssw05_davies_ka/ | instructors:John Davies
+vl-27-882 | In-Use 2: Explaining Conclusions from Diverse Knowledge Sources | http://videolectures.net/iswc06_murdock_ecdks/ | instructors:J. William Murdock
+vl-27-883 | Introduction to workpackages - WP1 | http://videolectures.net/koml04_grobelnik_iww/ | instructors:Marko Grobelnik
+vl-27-884 | Introduction to workpackages - WP4 | http://videolectures.net/koml04_bruijn_iww/ | instructors:Jos de Bruijn
+vl-27-885 | Introduction to workpackages - WP13 | http://videolectures.net/koml04_davies_iww/ | instructors:John Davies
+vl-27-886 | Poster Minute Madness | http://videolectures.net/iswc2014_poster_minute_madness/ | instructors:Matthew Horridge
+vl-27-887 | Closing and Prize Announcements | http://videolectures.net/iswc2014_goble_closing_announcements/ | instructors:Carole Goble
+vl-27-888 | The Protégé OWL Plugin: An Open Development Environment for Semantic Web Applications | http://videolectures.net/iswc2014_musen_swsa_award/ | instructors:Mark A. Musen
+vl-27-889 | Opening and 10 years award presentation | http://videolectures.net/iswc2014_goble_bernstein_opening_award/ | instructors:Carole Goble, Abraham Bernstein
+vl-27-890 | Opening Ceremony | http://videolectures.net/eswc2014_presutti_opening/ | instructors:Valentina Presutti
+vl-27-891 | Announcements and LinkedUp competition Prize annoucements | http://videolectures.net/iswc2014_dietze_lauruhn_linkedup_prize/ | instructors:Carole Goble, Stefan Dietze, Michael Lauruhn
+vl-27-892 | LinkedUp Madness | http://videolectures.net/iswc2014_linkedup_madness/ | 
+vl-27-893 | One-minute madness: EU Projects presentations | http://videolectures.net/eswc2014_one_minute_madness/ | instructors:Amit Sheth, Gaëlle Lortal,
+   
+    et al.
+vl-27-894 | Closing and Award Ceremony | http://videolectures.net/eswc2014_closing_ceremony/ | instructors:Valentina Presutti, Anna Lisa Gentile,
+   
+    et al.
+vl-27-895 | Fragmenting your Media Assets meaningfully – media analysis for fragment detection and extraction | http://videolectures.net/mediamixer_mezaris_media_assets/ | instructors:Vasileios Mezaris
+vl-27-896 | Opening and Introduction | http://videolectures.net/eswc2014_domingue_opening/ | instructors:John Domingue
+vl-27-897 | Semantic Aquarium | http://videolectures.net/eswc2014_abbassene_semantic_aquarium/ | instructors:Ali Abbassene
+vl-27-898 | Keep Fit(a Bit) in Kalamaki: First web based* attempt to make Kalamaki a "Smart City" | http://videolectures.net/eswc2014_kaerle_vagliano_smart_city/ | instructors:Elias Kärle, Iacopo Vagliano
+vl-27-899 | ISWC 2012 Closing and Awards | http://videolectures.net/iswc2012_bernstein_closing_awards/ | instructors:Abraham Bernstein, Andreas Harth,
+   
+    et al.
+vl-27-900 | Discovering Concept Coverings in Aligning Ontologies of Linked Data | http://videolectures.net/semantic_parundekar_aligning_ontologies/ | instructors:Rahul Parundekar
+vl-27-901 | What is MediaMixing? – making media more valuable for its owner and more useful for its consumer | http://videolectures.net/mediamixer_nixon_mediamixing/ | instructors:Lyndon Nixon
+vl-27-902 | Closing Ceremony | http://videolectures.net/iswc2013_welty_closing_ceremony/ | instructors:Chris Welty, Harith Alani,
+   
+    et al.
+vl-27-903 | Opening | http://videolectures.net/iswc2013_welty_opening/ | instructors:Chris Welty
+vl-27-904 | FIT-8BIT: An Activity Music Assistant | http://videolectures.net/eswc2014_bignotti_music_assistant/ | instructors:Enrico Bignotti
+vl-27-905 | Syrtaki | http://videolectures.net/eswc2014_gonzalez_blanco_syrtaki/ | instructors:Elena Gonzalez-Blanco García
+vl-27-906 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_erling_panel/ | instructors:Orri Erling
+vl-27-907 | The Accelerator: Case study | http://videolectures.net/innovationday2014_huurnink_multimedia_innovation/ | instructors:Bouke Huurnink
+vl-27-908 | On the Diversity and Availability of Temporal Information in Linked Open Data | http://videolectures.net/semantic_palmonari_linked_open_data/ | instructors:Matteo Palmonari
+vl-27-909 | Linked Data: Now what? | http://videolectures.net/eswc2010_heath_ldnw/ | instructors:Tom Heath
+vl-27-910 | Exploring the Effects of Climate Change on Marine Species using Linked Data | http://videolectures.net/eswc2014_mitchell_gupta_climate_change/ | instructors:Brian Mitchell, Prashant Gupta
+vl-27-911 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_davies_panel/ | instructors:John Davies
+vl-27-912 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_alani_panel/ | instructors:Harith Alani
+vl-27-913 | An OWL 2 Far? | http://videolectures.net/iswc08_panel_schneider_owl/ | instructors:Stefan Decker, Michel Dumontier,
+   
+    et al.
+vl-27-914 | Opening of 9th Extended Semantic Web Conference | http://videolectures.net/eswc2012_simperl_opening/ | instructors:Elena Simperl
+vl-27-915 | Describing Media Assets – media fragment specification and description | http://videolectures.net/mediamixer_troncy_media/ | instructors:Raphaël Troncy
+vl-27-916 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_floridi_panel/ | instructors:Luciano Floridi
+vl-27-917 | Closing and Award Ceremony | http://videolectures.net/eswc2013_closing_ceremony/ | instructors:Philipp Cimiano, Valentina Presutti,
+   
+    et al.
+vl-27-918 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_gomez_perez_panel/ | instructors:José Manuel Gómez-Pérez
+vl-27-919 | Semantic Web a Concise Introduction | http://videolectures.net/pintro05_studer_swci/ | instructors:Rudi Studer
+vl-27-920 | Digital Media, Publishing and Semantic Architecture | http://videolectures.net/innovationday2014_everett_multimedia_technology/ | instructors:Julian Everett
+vl-27-921 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_grobelnik_panel/ | instructors:Marko Grobelnik
+vl-27-922 | A Formal Semantics for Weighted Ontology Mappings | http://videolectures.net/semantic_serafini_ontology_mappings/ | instructors:Luciano Serafini
+vl-27-923 | Semantic Web Death Match 2011: Industry vs. Academia vs. Standards | http://videolectures.net/iswc2011_panel/ | instructors:Michael Hausenblas, Martin Hepp,
+   
+    et al.
+vl-27-924 | Early multimedia technology adopters panel | http://videolectures.net/innovationday2014_panel_multimedia_technology/ | instructors:Lyndon Nixon, Julian Everett,
+   
+    et al.
+vl-27-925 | Always Learning | http://videolectures.net/innovationday2014_solomon_multimedia_innovation/ | instructors:Madi Solomon
+vl-27-926 | A System for Aligning Taxonomies and Debugging Taxonomies and Their Alignments | http://videolectures.net/semantic_ivanova_taxonomies/ | instructors:Valentina Ivanova, Patrick Lambrix
+vl-27-927 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_gangemi_panel/ | instructors:Aldo Gangemi
+vl-27-928 | Opening | http://videolectures.net/eswc2013_domingue_opening/ | instructors:John Domingue
+vl-27-929 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_semantic_panel/ | instructors:Marko Grobelnik, Manfred Hauswirth,
+   
+    et al.
+vl-27-930 | Suggesting Mappings from Relational Databases to Ontologies | http://videolectures.net/eswc2013_harkous_databases/ | instructors:Hamza Harkous
+vl-27-931 | SPARQL Feature Detection | http://videolectures.net/eswc2013_blair_sparql/ | instructors:Robert D. Blair
+vl-27-932 | Market Sensing Using a Graph Database | http://videolectures.net/semantic_shan_market_sensing/ | instructors:Amar Shan
+vl-27-933 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_esther_vidal_panel/ | instructors:Maria Esther Vidal
+vl-27-934 | Feature LDA: a Supervised Topic Model for Automatic Detection of Web API Documentations from the Web | http://videolectures.net/semantic_lin_feature_lda/ | instructors:Chenghua Lin
+vl-27-935 | Welcome Address by General Chair and Local Representative | http://videolectures.net/eswc2013_cimiano_scharffe_welcome/ | instructors:Philipp Cimiano, François Scharffe
+vl-27-936 | Formal Verification of Data Provenance Records | http://videolectures.net/semantic_klarman_provenance_records/ | instructors:Szymon Klarman
+vl-27-937 | Google: “Get the best summary” | http://videolectures.net/semantic_thalhammer_knuth_google/ | instructors:Andreas Thalhammer, Magnus Knuth
+vl-27-938 | MORE: Modular Classification of OWL 2 Ontologies | http://videolectures.net/semantic_armas_more/ | instructors:Ana Armas
+vl-27-939 | Applying SemanticWeb Technologies for Diagnosing Road Traffic Congestions | http://videolectures.net/semantic_lecue_road_congestions/ | instructors:Freddy Lecue
+vl-27-940 | Personal Tours at the British Museum | http://videolectures.net/eswc2014_schouten_personal_tours/ | instructors:Kim Schouten
+vl-27-941 | ourSpaces - Design and Deployment of a Semantic Virtual Research Environment | http://videolectures.net/semantic_pignotti_virtual_environment/ | instructors:Edoardo Pignotti
+vl-27-942 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_panel_data_protection/ | instructors:Valentina Presutti, Harith Alani,
+   
+    et al.
+vl-27-943 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_presutti_panel/ | instructors:Valentina Presutti
+vl-27-944 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_casanovas_panel/ | instructors:Casanovas Romeu Pompeu
+vl-27-945 | GiveMeFive | http://videolectures.net/eswc2013_krier_givemefive/ | instructors:Laura Krier
+vl-27-946 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_karger_panel/ | instructors:David R. Karger
+vl-27-947 | Opening | http://videolectures.net/eswc2012_domingue_opening/ | instructors:John Domingue
+vl-27-948 | Implementation of Media Fragment Retrieval for TV Archives & Lessons Learned | http://videolectures.net/innovationday2014_fricke_multimedia_technology/ | instructors:Rolf Fricke
+vl-27-949 | 7-Year Award Ceremony at ESWC 2011 | http://videolectures.net/eswc2011_antoniou_shvaiko_award/ | instructors:Pavel Shvaiko, Grigoris Antoniou
+vl-27-950 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_hauswirth_panel/ | instructors:Manfred Hauswirth
+vl-27-951 | Darwin's music | http://videolectures.net/eswc2013_krishna_koduri_philipp_darwin_music/ | instructors:Gopala Krishna Koduri, Patrick Philipp
+vl-27-952 | E-Government Core Vocabularies and federation of national semantic assets repositories: the European Commission approach. | http://videolectures.net/eswc2011_panel_approach/ | instructors:Jim Hendler, Jens Lehmann,
+   
+    et al.
+vl-27-953 | How Incomplete Is Your Semantic Web Reasoner? | http://videolectures.net/aaai2010_stoilos_hiw/ | instructors:Giorgos Stoilos
+vl-27-954 | Introduction to Semantic Search 2010 | http://videolectures.net/www2010_tran_intro/ | instructors:Duc Thanh Tran
+vl-27-955 | Conftrotter | http://videolectures.net/eswc2013_de_nies_conftrotter/ | instructors:Tom de Nies
+vl-27-956 | Rapidly Integrating Services into the Linked Data Cloud | http://videolectures.net/semantic_taheriyan_data_cloud/ | instructors:Mohsen Taheriyan
+vl-27-957 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_staab_panel/ | instructors:Steffen Staab
+vl-27-958 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_gandon_panel/ | instructors:Fabien Gandon
+vl-27-959 | It's never black and white | http://videolectures.net/eswc2013_colpaert_black/ | instructors:Pieter Colpaert
+vl-27-960 | Linked Data: Now what? | http://videolectures.net/eswc2010_debate_ldnw/ | instructors:Dieter Fensel, Tom Heath,
+   
+    et al.
+vl-27-961 | Semantic Technologies for User Generated Content Copyright Management | http://videolectures.net/innovationday2014_garcia_multimedia_technology/ | instructors:Roberto García
+vl-27-962 | Prodigy or Sociopath: The Adolescent Semantic Web | http://videolectures.net/iswc07_schreiber_asw/ | instructors:Dieter Fensel, James A. Hendler,
+   
+    et al.
+vl-27-963 | Linked Data: Now what? | http://videolectures.net/eswc2010_gangemi_ldnw/ | instructors:Aldo Gangemi
+vl-27-964 | Active Promotional video | http://videolectures.net/sep2010_active_promo/ | 
+vl-27-965 | Arabic Sentimental Lexicon Creation and Finding Related Entities | http://videolectures.net/eswc2014_saad_sentimental_lexicon/ | instructors:Malik Saad
+vl-27-966 | Panel: Semantic Technologies for Big Data analaytics: Challenges and opportunities | http://videolectures.net/eswc2013_motta_panel/ | instructors:Enrico Motta
+vl-27-967 | Link Discovery with Guaranteed Reduction Ratio in Ane Spaces with Minkowski Measures | http://videolectures.net/semantic_ngonga_ngomo_minkowski_measures/ | instructors:Axel-Cyrille Ngonga Ngomo
+vl-27-968 | Letting Users Search the Linked Data | http://videolectures.net/eswc2013_collina_linked_data/ | instructors:Matteo Collina
+vl-27-969 | PCKS: Commandments for Benchmarking Semantic Flow Processing Systems | http://videolectures.net/semantic_scharrenbach_dellavalle_pcks/ | instructors:Thomas Scharrenbach, Emanuele Della Valle
+vl-27-970 | Combined Structured and Keyword-Based Search in Textually Enriched Entity-Relationship Graphs | http://videolectures.net/akbc2010_magatti_cskbs/ | instructors:Davide Magatti
+vl-27-971 | Semantic Web: What will happen in next 10 years? | http://videolectures.net/wims2011_schallhart_semantic/ | instructors:Christian Schallhart, James A. Hendler,
+   
+    et al.
+vl-27-972 | Panel on Data Protection and Security on the Web | http://videolectures.net/eswc2014_viegas_panel/ | instructors:Evelyne Viegas
+vl-27-973 | Wrap up | http://videolectures.net/innovationday2014_nixon_willox_wrap_up/ | instructors:Lyndon Nixon, David Willox
+vl-27-974 | Closing | http://videolectures.net/eswc2013_domingue_closing/ | instructors:John Domingue
+vl-27-975 | Linked Open Data: Discussion | http://videolectures.net/estc2010_panel_lod/ | instructors:Daniel Hladky, Diana Pottecher,
+   
+    et al.
+vl-27-976 | Linked Data: Now what? | http://videolectures.net/eswc2010_contractor_ldnw/ | instructors:Noshir Contractor
+vl-27-977 | MetaData Retrieval: A Software Prototype for the Annotation of Maps with Social Metadata | http://videolectures.net/ecmlpkdd2011_meo_social/ | instructors:Rosa Meo
+vl-27-978 | Taking Semantic Technologies to a Broader Market | http://videolectures.net/estc09_brodie_greaves_tstbm/ | instructors:Michael L. Brodie, Mark Greaves
+vl-27-979 | Awards, Best papers, ESWC 2010 and closing | http://videolectures.net/eswc09_closing_awcl/ | instructors:Fabio Ciravegna
+vl-27-980 | Award ceremony and closing | http://videolectures.net/eswc2012_domingue_ceremony_closing/ | instructors:John Domingue
+vl-27-981 | Introduction to the 3rd Annual European Semantic Web Conference | http://videolectures.net/eswc06_dsg_intro/ | instructors:John Domingue, Marko Grobelnik, York Sure
+vl-27-982 | Results of EDF2012 Hackathon | http://videolectures.net/dataforum2012_hackathon_results/ | instructors:Wernher Behrendt, Andreas Harth
+vl-27-983 | Commercializing New Technology | http://videolectures.net/estc08_panel_cnt/ | instructors:Michael Scherz, Thomas Friedrich,
+   
+    et al.
+vl-27-984 | Semantic Technology: Encouraging Industrial Uptake | http://videolectures.net/estc08_panel_steiu/ | instructors:Richard Benjamins, Peter F Brown,
+   
+    et al.
+vl-27-985 | Enterprise Collaboration and Business Networks | http://videolectures.net/icwsm2012_griffin_panel/ | instructors:Keith Griffin
+vl-27-986 | ProbaMap: a scalable tool for discovering probabilistic mappings between taxonomies | http://videolectures.net/akbc2010_tournaire_prma/ | instructors:Remi Tournaire
+vl-27-987 | Introduction to LOD workshop | http://videolectures.net/estc2010_auer_intro/ | instructors:Sören Auer
+vl-27-988 | STI Summit Summary | http://videolectures.net/stisemanticsummit2011_domingue_discussion/ | 
+vl-27-989 | Introduction to Innovation Seed Camp | http://videolectures.net/estc2010_schwetz_intro/ | instructors:Hannes A. Schwetz
+vl-27-990 | Semantic Authoring and Annotation: Welcoming and Introduction | http://videolectures.net/iswc06_handschuh_wi/ | instructors:Siegfried Handschuh
+vl-27-991 | Welcome to the LarKC Early Adopters Workshop | http://videolectures.net/larkceaw09_harmelen_welcome/ | instructors:Frank van Harmelen
+vl-27-992 | Demo Papers I | http://videolectures.net/eswc08_various_dp1/ | 
+vl-27-993 | Demo Papers II | http://videolectures.net/eswc08_various2_dp2/ | 
+vl-27-994 | Final discussion and wrap-up | http://videolectures.net/ijcai09_bouquet_closing/ | instructors:Paolo Bouquet
+vl-27-995 | Exhibition recommendation using British Museum data and Event Registry | http://videolectures.net/eswc2014_kosmerlj_clarke_exhibition_recommendation/ | instructors:Aljaž Košmerlj, Peter Clarke
+vl-27-996 | PlanetData Training Curriculum | http://videolectures.net/planetdata_training_curriculum/ | 
+vl-27-997 | Empowering fishing business using linked data: A visualization of current fish population and fishing legislation around the world | http://videolectures.net/eswc2014_ekaputra_linked_data/ | instructors:Fajar J. Ekaputra
+vl-27-998 | Web Search - From The Noun to The Verb | http://videolectures.net/iswc2014_raghavan_web_search/ | instructors:Prabhakar Raghavan, Peter Mika
+vl-27-999 | Machine Learning with Knowledge Graphs | http://videolectures.net/eswc2014_tresp_machine_learning/ | instructors:Volker Tresp
+vl-27-1000 | Programming the Semantic Web | http://videolectures.net/eswc2014_staab_semantic_web/ | instructors:Steffen Staab, Fabien Gandon
+vl-27-1001 | The Semantic Web in an Age of Open Data | http://videolectures.net/iswc2014_shadbolt_open_data/ | instructors:Nigel Shadbolt, Axel Polleres
+vl-27-1002 | Semantic Technology for online, broadcast and print media | http://videolectures.net/wims2014_rayfield_semantic_technology/ | instructors:Jem Rayfield
+vl-27-1003 | "To be or to do?": The Semantics for Smart Cities and Communities | http://videolectures.net/iswc2014_traverso_semantics/ | instructors:Paolo Traverso, Craig A. Knoblock
+vl-27-1004 | BIG DATA - from Hype to Reality | http://videolectures.net/wims2014_benjamins_big_data/ | instructors:Richard Benjamins
+vl-27-1005 | Semantic Challenges in Getting Work Done | http://videolectures.net/iswc2014_gil_semantic_challenges/ | instructors:Yolanda Gil, Carole Goble
+vl-27-1006 | "Why the Semantic Web will never work" | http://videolectures.net/eswc2011_hendler_work/ | instructors:Jim Hendler, Grigoris Antoniou
+vl-27-1007 | Light at the End of the Tunnel | http://videolectures.net/iswc2013_guha_tunnel/ | instructors:Ramanathan V. Guha
+vl-27-1008 | A Semantic Web for End Users | http://videolectures.net/eswc2013_karger_semantic/ | instructors:David R. Karger, Philipp Cimiano
+vl-27-1009 | Grounded Language Learning | http://videolectures.net/aaai2013_mooney_language_learning/ | instructors:Raymond J. Mooney
+vl-27-1010 | Never Ending Language Learning | http://videolectures.net/akbcwekex2012_mitchell_language_learning/ | instructors:Tom Mitchell
+vl-27-1011 | Coordination, Semantics, and Autonomy | http://videolectures.net/eswc2014_floridi_semantics_autonomy/ | instructors:Luciano Floridi, Valentina Presutti
+vl-27-1012 | Inside the mind of Watson | http://videolectures.net/eswc2012_welty_watson/ | instructors:Chris Welty
+vl-27-1013 | 10 Years of Semantic Web research: Searching for universal patterns | http://videolectures.net/iswc2011_van_harmelen_universal/ | instructors:Frank van Harmelen
+vl-27-1014 | Programming the Semantic Web | http://videolectures.net/eswc2013_staab_semantic_web/ | instructors:Steffen Staab
+vl-27-1015 | Building a Mind for Life | http://videolectures.net/aaai2013_hunter_building_mind/ | instructors:Lawrence Hunter
+vl-27-1016 | Dealing with structured and unstructured data at Facebook | http://videolectures.net/eswc2011_backstrom_facebook/ | instructors:Lars Backstrom, Marko Grobelnik
+vl-27-1017 | Poker AI: Algorithms for Creating Game-Theoretic Strategies for Large Incomplete-Information Games | http://videolectures.net/aaai2013_sandholm_poker_ai/ | instructors:Tuomas Sandholm
+vl-27-1018 | It's a Dynamic World - Ubiquitous Streams and the Linked Data Web | http://videolectures.net/eswc2013_hauswirth_data/ | instructors:Manfred Hauswirth, Oscar Corcho
+vl-27-1019 | Where the Social Web Meets the Semantic Web | http://videolectures.net/iswc06_gruber_wswms/ | instructors:Tom Gruber
+vl-27-1020 | What does it mean to be semantic? On the effective use of semantics in the Semantic Web | http://videolectures.net/eswc2013_motta_semantic/ | instructors:Enrico Motta, Valentina Presutti
+vl-27-1021 | Ontologies and Databases | http://videolectures.net/eswc2012_franconi_ontologies_databases/ | instructors:Enrico Franconi
+vl-27-1022 | Open Information Extraction from the Web | http://videolectures.net/akbcwekex2012_etzioni_information_extraction/ | instructors:Oren Etzioni
+vl-27-1023 | How to Represent Text? ...from Characters to Logic | http://videolectures.net/eswc2013_grobelnik_represent_text/ | instructors:Marko Grobelnik
+vl-27-1024 | An Open-World Iterative Methodology for the Development and Evaluation of Semantically-Enabled Applications | http://videolectures.net/aaai2013_fox_semantically_enabled_applications/ | instructors:Peter Fox
+vl-27-1025 | Musubi: A Decentralized Mobile Social Web | http://videolectures.net/eswc2012_lam_musubi/ | instructors:Monica S. Lam, Axel Polleres
+vl-27-1026 | An Introduction to The Semantic Web: A Knowledge Modelling Perspective | http://videolectures.net/eswc2014_domingue_semantic_web/ | instructors:John Domingue
+vl-27-1027 | Knowledge Engineering and the Web | http://videolectures.net/eswc2014_schreiber_knowledge_engineering/ | instructors:Guus Schreiber
+vl-27-1028 | Fighting the Tuberculosis Pandemic Using Machine Learning | http://videolectures.net/aaai2013_bennett_fighting_tuberculosis/ | instructors:Kristin P. Bennett
+vl-27-1029 | Physical Cyber Social Computing: An early 21st century approach to Computing for Human Experience | http://videolectures.net/wims2013_sheth_physical_cyber_social_computing/ | instructors:Amit Sheth
+vl-27-1030 | Telling Stories at Internet Scale | http://videolectures.net/aaai2013_birnbaum_telling_stories/ | instructors:Larry Birnbaum
+vl-27-1031 | Low-Pass Semantic | http://videolectures.net/metaforum2012_pereira_semantic/ | instructors:Fernando C. N. Pereira
+vl-27-1032 | Contextual Synchronization on Social Collaboration | http://videolectures.net/wims2013_jung_social_collaboration/ | instructors:Jason J. Jung
+vl-27-1033 | Populating the Semantic Web by Macro-Reading Internet Text | http://videolectures.net/iswc09_mitchell_ptsw/ | instructors:Tom Mitchell
+vl-27-1034 | Semantic Big Data in Australia - from Dingoes to Drysdale | http://videolectures.net/iswc2013_hunter_semantic_big_data/ | instructors:Jane Hunter
+vl-27-1035 | For a Few Triples More | http://videolectures.net/iswc2011_weikum_triples/ | instructors:Gerhard Weikum
+vl-27-1036 | New Audiences for Ontologies: Dealing with Complexity in Business Processes | http://videolectures.net/eswc2012_van_grondelle_complexity_business/ | instructors:Jeroen van Grondelle, Philipp Cimiano
+vl-27-1037 | Semantic Web/LD at a Crossroads: Into the Garbage Can or to Theory? | http://videolectures.net/eswc2012_bernstein_semantic_crossroads/ | instructors:Abraham Bernstein, Philipp Cimiano
+vl-27-1038 | Conflicting Cultures of Knowledge? Revisiting the Two Cultures | http://videolectures.net/eswc2014_oldman_conflicting_cultures/ | instructors:Dominic Oldman
+vl-27-1039 | Freebase: An Open, Writable Database of the World’s Information | http://videolectures.net/iswc08_giannandrea_fowdw/ | instructors:John Giannandrea
+vl-27-1040 | Building the world's largest semantic research database - from scratch! | http://videolectures.net/estc2010_henning_bwlsrd/ | instructors:Victor Henning
+vl-27-1041 | How I was right even when I was wrong | http://videolectures.net/iswc07_welty_hiwr/ | instructors:Chris Welty
+vl-27-1042 | Progress in Open-World, Integrative, Transparent, Collaborative Science Data Platforms | http://videolectures.net/iswc2013_fox_data_platforms/ | instructors:Peter Fox
+vl-27-1043 | Guidelines for Multilingual Linked Data | http://videolectures.net/wims2013_gomez_perez_multilingual_linked_data/ | instructors:Asunción Gómez-Pérez
+vl-27-1044 | From Mining the Web to Inventing the New Sciences Underlying the Internet | http://videolectures.net/kdd07_fayyad_fmtw/ | instructors:Usama Fayyad
+vl-27-1045 | No Tube. This is future TV. | http://videolectures.net/eswc2012_aroyo_future_tv/ | instructors:Lora Aroyo
+vl-27-1046 | From Linked Data to Networked Knowledge | http://videolectures.net/eswc2013_decker_networked_knowledge/ | instructors:Stefan Decker
+vl-27-1047 | Building A Nervous System for Society: The ‘New Deal on Data’ and how to make Health, Financial, Logistics, and Transportation Systems Work | http://videolectures.net/iswc2011_pentland_building/ | instructors:Alex (Sandy) Pentland
+vl-27-1048 | BLOGIC or Now What's in a Link? | http://videolectures.net/iswc09_hayes_blogic/ | instructors:Pat Hayes
+vl-27-1049 | Real-time Emergency Response Using Semantic Web Technology | http://videolectures.net/iswc2012_van_leeuwen_emergency_response/ | instructors:Bart van Leeuwen
+vl-27-1050 | Improving the Impact and Takeup of Semantic Web Research | http://videolectures.net/eswc2012_domingue_simperl_semantic_web/ | instructors:John Domingue, Elena Simperl
+vl-27-1051 | Low-Pass Semantics | http://videolectures.net/akbcwekex2012_pereira_semantics/ | instructors:Fernando C. N. Pereira
+vl-27-1052 | Processing Linked Data at Warp Speed | http://videolectures.net/eswc2014_bernstein_processing_linked_data/ | instructors:Abraham Bernstein
+vl-27-1053 | Knowledge Base Construction with Epistemological Databases | http://videolectures.net/akbcwekex2012_mccallum_base_construction/ | instructors:Andrew McCallum
+vl-27-1054 | Driving Innovation with Open Data and Interoperability | http://videolectures.net/iswc2012_holm_interoperability/ | instructors:Jeanne M. Holm
+vl-27-1055 | Building and Using Knowledge Bases | http://videolectures.net/akbcwekex2012_staab_knowledge_bases/ | instructors:Steffen Staab
+vl-27-1056 | Emergent Semantics | http://videolectures.net/soks2010_cudre_mauroux_emse/ | instructors:Philippe Cudré-Mauroux
+vl-27-1057 | Tackling Climate Change: Unfinished Business from the Last “Winter” | http://videolectures.net/iswc2012_musen_climate_change/ | instructors:Mark A. Musen
+vl-27-1058 | SESAME - Sesame SEmantic SmArt Metering: Enablers for Energy Efficiency | http://videolectures.net/estc2010_fensel_sssm/ | instructors:Anna Fensel
+vl-27-1059 | Organizing Harvested Knowledge | http://videolectures.net/akbcwekex2012_hovy_harvested_knowledge/ | instructors:Eduard Hovy
+vl-27-1060 | Language Technologies for Better Internet Services | http://videolectures.net/metaforum2011_hofmann_services/ | instructors:Thomas Hofmann
+vl-27-1061 | Domain-Centric Information Extraction | http://videolectures.net/akbcwekex2012_dalvi_information_extraction/ | instructors:Nilesh Dalvi
+vl-27-1062 | IBM Watson Project | http://videolectures.net/eswc2011_welty_watson/ | instructors:Chris Welty, Marko Grobelnik
+vl-27-1063 | Preserving Linked Data: Challenges and Opportunities | http://videolectures.net/eswc2013_christophides_linked_data/ | instructors:Vassilis Christophides
+vl-27-1064 | Linked Data at The New York Times: The First 161 Years | http://videolectures.net/iswc2012_sandhaus_linked_data/ | instructors:Evan Sandhaus
+vl-27-1065 | Computational Knowledge, Science and WolframAlpha | http://videolectures.net/iaai09_wolfram_ckswa/ | instructors:Stephen Wolfram
+vl-27-1066 | Global Media Monitoring | http://videolectures.net/eswc2014_grobelnik_media_monitoring/ | instructors:Marko Grobelnik
+vl-27-1067 | Foundations of RDF Databases | http://videolectures.net/eswc08_gutierrez_frdf/ | instructors:Claudio Gutierrez
+vl-27-1068 | Creating Knowledge Out of Interlinked Data | http://videolectures.net/wims2011_auer_interlinked/ | instructors:Sören Auer
+vl-27-1069 | Services, Semantics and Linked Data | http://videolectures.net/eswc2012_domingue_semantics/ | instructors:John Domingue
+vl-27-1070 | Where's What? - Towards Semantic Mapping of Urban Environments | http://videolectures.net/nipsworkshops09_posner_wwts/ | instructors:Ingmar Posner
+vl-27-1071 | Self-organization in Distributed Semantic Repositories | http://videolectures.net/soks2010_teymourian_sodsr/ | instructors:Kia Teymourian
+vl-27-1072 | Present, Personalized and Precise: Defining Search for Web 3.0 | http://videolectures.net/iswc09_spivack_ppap/ | instructors:Nova Spivack
+vl-27-1073 | Quantity vs. quality on the consumer web | http://videolectures.net/eswc2011_tori_consumer/ | instructors:Andraž Tori, Marko Grobelnik
+vl-27-1074 | Managing the Information of a City | http://videolectures.net/eswc2012_kotoulas_information/ | instructors:Spyros Kotoulas
+vl-27-1075 | Learning to Reason Knowledge Acquisition in Cyc | http://videolectures.net/psm08_witbrock_lrk/ | instructors:Michael Witbrock
+vl-27-1076 | Multimedia Semantic Web | http://videolectures.net/iswc08_jain_msw/ | instructors:Ramesh Jain
+vl-27-1077 | Introduction to the uRiKA Graphical Database System | http://videolectures.net/iswc2012_mizell_urika_system/ | instructors:David Mizell
+vl-27-1078 | Many Faces of Text Processing | http://videolectures.net/wims2011_grobelnik_processing/ | instructors:Marko Grobelnik
+vl-27-1079 | Extracting semantic from crowds | http://videolectures.net/sssc2011_strohmaier_crowds/ | instructors:Markus Strohmaier
+vl-27-1080 | Testing Times for the Contact Centre and Semantics | http://videolectures.net/estc2010_baker_ttfcc/ | instructors:Christopher Baker
+vl-27-1081 | Message in a Bottle or: How can the Semantic Web Community be more convincing? | http://videolectures.net/iswc08_decker_mib/ | instructors:Stefan Decker
+vl-27-1082 | Getting at the Semantics of Texts | http://videolectures.net/estc08_uszkoreit_gst/ | instructors:Hans Uszkoreit
+vl-27-1083 | Listening to the pulse of our cities during City Scale Events | http://videolectures.net/iswc2013_della_valle_scale_events/ | instructors:Emanuele Della Valle
+vl-27-1084 | Garlik: Semantic Technology for the Consumer | http://videolectures.net/eswc08_shadbolt_gst/ | instructors:Nigel Shadbolt
+vl-27-1085 | Semantic Technology for Web Media Analytics | http://videolectures.net/estc2010_wong_stwma/ | instructors:Mark Wong
+vl-27-1086 | Where Does It Break? Or: Why the Semantic Web is Not Just 'Research as Usual' | http://videolectures.net/eswc06_harmelen_wswnj/ | instructors:Frank van Harmelen
+vl-27-1087 | Usability and the Semantic Web | http://videolectures.net/eswc06_jameson_usw/ | instructors:Anthony Jameson
+vl-27-1088 | The Information Spring | http://videolectures.net/eswc2013_ohara_information_spring/ | instructors:Kieron O'Hara
+vl-27-1089 | Making Things Findable | http://videolectures.net/wims2011_mika_findable/ | instructors:Peter Mika
+vl-27-1090 | The Semantic Web 10th Year Update | http://videolectures.net/wims2011_hendler_update/ | instructors:James A. Hendler
+vl-27-1091 | The Pirated "I" or How Privacy Can't Exist on a Lawless Semantic Web | http://videolectures.net/eswc2011_hsuan_privacy/ | instructors:Abraham B. Hsuan, Marko Grobelnik
+vl-27-1092 | KiWi - A platform for building Semantic Social Media Applications | http://videolectures.net/estc2010_schaffert_pfbsm/ | instructors:Sebastian Schaffert
+vl-27-1093 | The Growing Semantic Web | http://videolectures.net/ecmlpkdd09_greaves_gsw/ | instructors:Mark Greaves
+vl-27-1094 | eBay Research | http://videolectures.net/ecmlpkdd09_sundaresan_it/ | instructors:Neel Sundaresan
+vl-27-1095 | Semantic Technologies for Search and Online Media | http://videolectures.net/estc2010_mika_stsom/ | instructors:Peter Mika
+vl-27-1096 | The Semantic Web and Networked Governance: Promise and Challenges | http://videolectures.net/iswc06_fountain_pc/ | instructors:Jane Fountain
+vl-27-1097 | The Semantic Web: Suppliers and Customers | http://videolectures.net/iswc06_studer_sc/ | instructors:Rudi Studer
+vl-27-1098 | Internet of Services | http://videolectures.net/estc08_terzidis_ios/ | instructors:Orestis Terzidis, Jasmin Franz
+vl-27-1099 | Social Semantic Collaboration with the Desktop | http://videolectures.net/soks2010_handschuh_ssc/ | instructors:Siegfried Handschuh
+vl-27-1100 | Zemanta | http://videolectures.net/ecmlpkdd09_tori_it/ | instructors:Andraž Tori
+vl-27-1101 | Building and using ontologies | http://videolectures.net/eswc2013_simperl_ontologies/ | instructors:Elena Simperl
+vl-27-1102 | How to Publish Linked Data on the Web | http://videolectures.net/iswc08_heath_hpldw/ | instructors:Tom Heath, Michael Hausenblas,
+   
+    et al.
+vl-27-1103 | The Web of Things | http://videolectures.net/iswc2013_grobelnik_fortuna_web_things/ | instructors:Marko Grobelnik, Carolina Fortuna
+vl-27-1104 | Introduction to the Semantic Web | http://videolectures.net/iswc08_hendler_ittsw/ | instructors:Jim Hendler, Sean Bechhofer,
+   
+    et al.
+vl-27-1105 | A short Tutorial on Semantic Web | http://videolectures.net/training06_sure_stsw/ | instructors:York Sure
+vl-27-1106 | CEP - Complex Event Processing | http://videolectures.net/coinplanetdataschool2011_stuehmer_cep/ | instructors:Roland Stühmer
+vl-27-1107 | Providing Linked Data | http://videolectures.net/eswc2014_acosta_linked_data/ | instructors:Maribel Acosta
+vl-27-1108 | Introduction to Big Data Analytics | http://videolectures.net/eswc2013_grobelnik_big_data/ | instructors:Marko Grobelnik
+vl-27-1109 | Natural Language Processing for the Semantic Web | http://videolectures.net/eswc2014_augenstein_natural_language_processing/ | instructors:Isabelle Augenstein
+vl-27-1110 | Creating and using ontologies | http://videolectures.net/eswc2012_simperl_ontologies/ | instructors:Elena Simperl
+vl-27-1111 | Building and Using Ontologies | http://videolectures.net/eswc2014_simperl_ontologies/ | instructors:Elena Simperl
+vl-27-1112 | Social Semantic Web and Crowdsourcing | http://videolectures.net/eswc2014_simperl_semantic_web/ | instructors:Elena Simperl
+vl-27-1113 | Introduction of the tutorial topics and presenters  Microtask crowdsourcing fundamentals | http://videolectures.net/iswc2013_simperl_students_microtask_crowdsourcing/ | instructors:Elena Simperl, Maribel Acosta, Gianluca Demartini
+vl-27-1114 | Amazon Mechanical Turk | http://videolectures.net/eswc2014_acosta_mechanical_turk/ | instructors:Maribel Acosta
+vl-27-1115 | Text Mining and Link Analysis for Web and Semantic Web | http://videolectures.net/kdd07_grobelnik_tmala/ | instructors:Marko Grobelnik, Dunja Mladenić, Blaž Fortuna
+vl-27-1116 | The Web of Things | http://videolectures.net/www2011_grobelnik_fortuna_wot/ | instructors:Marko Grobelnik, Carolina Fortuna
+vl-27-1117 | Semantic Web Languages and Standards | http://videolectures.net/eswc2012_hogan_semantic_web/ | instructors:Aidan Hogan
+vl-27-1118 | Semantic Data Mining | http://videolectures.net/ecmlpkdd2011_lavrac_vavpetic_mining/ | instructors:Nada Lavrač, Anže Vavpetič,
+   
+    et al.
+vl-27-1119 | Ontology design and reasoning | http://videolectures.net/sssc2011_simperl_ontology/ | instructors:Elena Simperl
+vl-27-1120 | Free Semantic Content: Using OpenCyc in Semantic Web Applications | http://videolectures.net/iswc08_witbrock_fsc/ | instructors:Michael Witbrock, Blaž Fortuna, Marko Grobelnik
+vl-27-1121 | RDF Schema | http://videolectures.net/sssc2011_norton_rdf/ | instructors:Barry Norton
+vl-27-1122 | Reasoning for Ontology Engineering and Usage | http://videolectures.net/iswc08_moller_itsr/ | instructors:Ralf Möller, Anni-Yasmin Turhan,
+   
+    et al.
+vl-27-1123 | Fundamentals of Linked Data: Main Standards and Technology Components, Motivating Application Scenario | http://videolectures.net/eswc2014_norton_linked_data/ | instructors:Barry Norton
+vl-27-1124 | An Introduction to OWL | http://videolectures.net/iswc07_bechhofer_iowl/ | instructors:Sean Bechhofer
+vl-27-1125 | Semantic Wikis - Semantic MediaWiki | http://videolectures.net/eswc08_vrandecic_sw/ | instructors:Denny Vrandečić
+vl-27-1126 | Learning from the Masters: Understanding Ontologies found on the Web | http://videolectures.net/iswc06_parsia_uofw/ | instructors:Bijan Parsia
+vl-27-1127 | Semantic Knowledge Bases from Web Sources | http://videolectures.net/ijcai2011_t5_semantic/ | instructors:Hady W. Lauw, Ralf Schenkel,
+   
+    et al.
+vl-27-1128 | Realizing a Semantic Web Application | http://videolectures.net/iswc08_dellaValle_rswa/ | instructors:Emanuele Della Valle
+vl-27-1129 | Linked Data and APIs | http://videolectures.net/coinplanetdataschool2011_ladwig_data/ | instructors:Günter Ladwig
+vl-27-1130 | Semantic Web Usage Mining – Overview and Case Studies | http://videolectures.net/solomon_berendt_twum/ | instructors:Bettina Berendt
+vl-27-1131 | Ontology Engineering Methodologies | http://videolectures.net/iswc07_perez_oem/ | instructors:Asunción Gómez-Pérez
+vl-27-1132 | Introduction to Linked Data: Background Technologies and Standards, Motivating Application Scenario | http://videolectures.net/eswc2013_hogan_mcginnis_linked_data/ | instructors:Aidan Hogan, Jarred McGinnis
+vl-27-1133 | Providing Linked Data | http://videolectures.net/eswc2013_norton_acosta_linked_data/ | instructors:Barry Norton, Maribel Acosta
+vl-27-1134 | Querying Linked Data | http://videolectures.net/eswc2013_hogan_linked_data/ | instructors:Aidan Hogan
+vl-27-1135 | Querying Linked Data: SPARQL 101 | http://videolectures.net/eswc2014_fundulaki_sparql/ | instructors:Irini Fundulaki
+vl-27-1136 | Semantic Wikis - IkeWiki - A Semantic Wiki for Collaborative Knowledge Management | http://videolectures.net/eswc08_schaffert_sw/ | instructors:Sebastian Schaffert
+vl-27-1137 | Semantic technology empowering real world outcomes in biomedical research and clinical practices | http://videolectures.net/wims2013_sheth_semantic_technology/ | instructors:Amit Sheth
+vl-27-1138 | Semantic Wikis - Introduction to semantic wikis | http://videolectures.net/eswc08_dolog_sw/ | instructors:Peter Dolog
+vl-27-1139 | Building (Production) Semantic Applications | http://videolectures.net/eswc2012_norton_semantic_applications/ | instructors:Barry Norton
+vl-27-1140 | Evaluating Ontology Matching Tools | http://videolectures.net/eswc2011_meilicke_evaluatingtools/ | instructors:Christian Meilicke
+vl-27-1141 | Semantic Web for Health Care and Life Sciences | http://videolectures.net/iswc08_prudhommeaux_swhcls/ | instructors:Eric Prud’hommeaux, Chimezie Ogbuji,
+   
+    et al.
+vl-27-1142 | Semantic Web Services | http://videolectures.net/iswc07_domingue_sws/ | instructors:John Domingue
+vl-27-1143 | RDFa - Bridging the Web of Documents and the Web of Data | http://videolectures.net/iswc08_hausenblas_bwdwd/ | instructors:Michael Hausenblas
+vl-27-1144 | Learning from the Masters: Understanding Ontologies found on the Web | http://videolectures.net/iswc06_grau_uofwi/ | instructors:Bernardo Cuenca Grau
+vl-27-1145 | Linked data and services | http://videolectures.net/sssc2011_norton_vrandecic_linkeddata/ | instructors:Barry Norton, Denny Vrandečić
+vl-27-1146 | Linked Data and APIs | http://videolectures.net/coinplanetdataschool2011_stadtmueller_data/ | instructors:Steffen Stadtmüller
+vl-27-1147 | Ontology Engineering Design Patterns | http://videolectures.net/iswc07_gangemi_oedp/ | instructors:Aldo Gangemi
+vl-27-1148 | Book of the Dead Project: A New Approach to Digital Editions of Ancient Manuscripts Using CIDOC-CRM, FRBRoo and RDFa | http://videolectures.net/eswc2014_norton_digital_editions/ | instructors:Barry Norton
+vl-27-1149 | A short Tutorial on Semantic Web | http://videolectures.net/solomon_sure_stsw/ | instructors:York Sure, Andreas Hotho
+vl-27-1150 | Semantic Technologies: Motivation and Standards | http://videolectures.net/eswc2012_norton_semantic_data/ | instructors:Barry Norton
+vl-27-1151 | Social Semantics | http://videolectures.net/eswc2012_rowe_social_semantics/ | instructors:Matthew Rowe
+vl-27-1152 | The Web of Data for E-Commerce in One Day: A Hands-on Introduction to the GoodRelations Ontology, RDFa, and Yahoo! SearchMonkey | http://videolectures.net/eswc09_hepp_hausenblass_wdec/ | instructors:Martin Hepp, Michael Hausenblas
+vl-27-1153 | Ontology-based Data Access | http://videolectures.net/iswc07_lembo_oda/ | instructors:Domenico Lembo
+vl-27-1154 | Invited Tutorial: An Introduction to the Semantic Web | http://videolectures.net/iswc07_ciravegna_swt/ | instructors:Fabio Ciravegna
+vl-27-1155 | Semantic Web Applications | http://videolectures.net/iswc07_motta_swa/ | instructors:Enrico Motta
+vl-27-1156 | Semantic Web Rules with Ontologies, and their E-Services Applications | http://videolectures.net/iswc06_grosof_swrot/ | instructors:Benjamin Grosof
+vl-27-1157 | Linked Open Data | http://videolectures.net/eswc2012_brickley_vrandecic_linked_data/ | instructors:Dan Brickley, Denny Vrandečić
+vl-27-1158 | A Semantic Multimedia Web: Create, Annotate, Present and Share your Media | http://videolectures.net/iswc08_troncy_asmw/ | instructors:Raphaël Troncy
+vl-27-1159 | Evaluating Ontology Engineering Tools | http://videolectures.net/eswc2011_garcia_castro_evaluatingtools/ | instructors:Raúl García-Castro
+vl-27-1160 | Web Service Modelling Ontology | http://videolectures.net/iswc07_domingue_wsmo/ | instructors:John Domingue
+vl-27-1161 | Introduction to the SEALS Platform | http://videolectures.net/eswc2011_garcia_castro_seals/ | instructors:Raúl García-Castro
+vl-27-1162 | Learning from the Masters: Understanding Ontologies found on the Web - Part 7 | http://videolectures.net/iswc06_sattler_uofw7/ | instructors:Uli Sattler
+vl-27-1163 | Evaluation Description Definition | http://videolectures.net/eswc2011_schneider_evaluation/ | instructors:Michael Schneider
+vl-27-1164 | Ontology Engineering and Plug-in Development with the NeOn Toolkit - Ontology Lifecycle and Methodology | http://videolectures.net/eswc08_lewen_oep/ | instructors:Holger Lewen
+vl-27-1165 | What Semantic Web researchers need to know about Machine Learning? | http://videolectures.net/iswc07_fortuna_wsw/ | instructors:Blaž Fortuna
+vl-27-1166 | SAWSDL | http://videolectures.net/iswc07_martin_saw/ | instructors:David Martin
+vl-27-1167 | Ontology-based Data Access | http://videolectures.net/iswc07_calvanese_oda/ | instructors:Diego Calvanese
+vl-27-1168 | Evaluating Semantic Web Services Tools | http://videolectures.net/eswc2011_cabral_evaluatingtools/ | instructors:Liliana Cabral
+vl-27-1169 | Transitioning legacy applications to ontologies: Hands-on tutorial - Transitioning Relational Databases to Ontologies | http://videolectures.net/eswc08_cebrah_tla/ | instructors:Farid Cebrah
+vl-27-1170 | OWL-S | http://videolectures.net/iswc07_martin_owls/ | instructors:David Martin
+vl-27-1171 | Semantic Annotation of Clinical Studies for Knowledge-Driven Drug Development | http://videolectures.net/estc08_popov_azsa/ | instructors:Borislav Popov, Vassil Momtchev
+vl-27-1172 | Evaluating Storage and Reasoning Systems | http://videolectures.net/eswc2011_yatskevich_evaluatingstorage/ | instructors:Mikalai Yatskevich
+vl-27-1173 | Business Applications and Markets for Semantic Technologies | http://videolectures.net/estc08_davis_bamst/ | instructors:Mills Davis, Luca Scagliarini,
+   
+    et al.
+vl-27-1174 | Transitioning legacy applications to ontologies: Hands-on tutorial - Learning Domain Ontologies | http://videolectures.net/eswc08_grcar_tla/ | instructors:Miha Grčar
+vl-27-1175 | Ontology Engineering and Plug-in Development with the NeOn Toolkit - Introduction | http://videolectures.net/eswc08_haase_oep/ | instructors:Peter Haase
+vl-27-1176 | What Semantic Web researchers need to know about Machine Learning? | http://videolectures.net/iswc07_mladenic_wsw/ | instructors:Dunja Mladenić
+vl-27-1177 | Semantic Web Technologies Meet Pharmaceutical Data | http://videolectures.net/estc08_ashworth_swtpdi/ | instructors:Phil Ashworth
+vl-27-1178 | Connecting tools to the SEALS Platform | http://videolectures.net/eswc2011_esteban_gutierrez_connectingtools/ | instructors:Miguel Esteban Gutiérrez
+vl-27-1179 | Context Sensitivity in Knowledge Rich Systems | http://videolectures.net/iswc06_witbrock_cskrs/ | instructors:Michael Witbrock
+vl-27-1180 | Repositories Management | http://videolectures.net/eswc2011_schneider_repositories/ | instructors:Michael Schneider
+vl-27-1181 | Context Sensitivity in Knowledge Rich Systems | http://videolectures.net/iswc06_grobelnik_cskrs/ | instructors:Marko Grobelnik
+vl-27-1182 | Dynamics of Networked Ontologies. | http://videolectures.net/nmr06_hitzler_dno/ | instructors:Pascal Hitzler
+vl-27-1183 | Context Sensitivity in Knowledge Rich Systems | http://videolectures.net/iswc06_mozetic_cskrs/ | instructors:Igor Mozetič
+vl-27-1184 | Context sensitivity for networked ontologies | http://videolectures.net/nmr06_mozetic_csf/ | instructors:Igor Mozetič
+vl-27-1185 | Digging into the SEALS Platform | http://videolectures.net/eswc2011_esteban_gutierrez_digging/ | instructors:Miguel Esteban Gutiérrez
+vl-27-1186 | Ontology Engineering and Plug-in Development with the NeOn Toolkit | http://videolectures.net/eswc08_haase_oep2/ | instructors:Peter Haase
+vl-27-1187 | Transitioning legacy applications to ontologies: Hands-on tutorial | http://videolectures.net/eswc08_pan_tla/ | instructors:Jeff Z. Pan
+vl-27-1188 | Transitioning legacy applications to ontologies: Hands-on tutorial - Heterogeneous Knowledge repositories for storing legacy content: requirements, scalability, and applicability | http://videolectures.net/eswc08_ilchev_tla/ | instructors:Atanas Ilchev
