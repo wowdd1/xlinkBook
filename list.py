@@ -299,10 +299,15 @@ def print_list(file_name):
             line = utils.to_unicode(line)
             record = Record(line.replace("\n", ""))
             if column_num == "3":
-                if current <= line_half + (line_count % 3):
+                top = line_half + (line_count % 3)
+                top2 = 2 * line_half + (line_count % 3)
+                if top_row > 0:
+                    top = line_half
+                    top2 = 2 * line_half
+                if current <= top:
                     update_max_len(record, 1)
                     list_all[0].append(record)
-                elif current <= 2 * line_half + (line_count % 3):
+                elif current <= top2:
                     update_max_len(record, 2)
                     list_all[1].append(record)
                 else:
@@ -310,7 +315,10 @@ def print_list(file_name):
                     list_all[2].append(record)
 
             elif column_num == "2":
-                if current <= line_half + (line_count % 2):
+                top = line_half + (line_count % 2)
+                if top_row > 0:
+                    top = line_half
+                if current <= top:
                     update_max_len(record, 1)
                     list_all[0].append(record)
                 else:
@@ -344,22 +352,23 @@ def print_list(file_name):
 
             if len(id_title_lines[0]) > len(id_title_lines[2]):
                 last = len(id_title_lines[0]) - 1
-                content = ""
-                if len(id_title_lines[0]) == len(id_title_lines[1]):
-                    content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1, 3) + "|"
-                else:
-                    content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2, 3) + "|"
+                for last in range(len(id_title_lines[2]), len(id_title_lines[0])):
+                    content = ""
+                    if len(id_title_lines[0]) == len(id_title_lines[1]):
+                        content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1, 3) + "|"
+                    else:
+                        content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2, 3) + "|"
 
-                if output_with_color == True:
-                    print_with_color(content)
-                else:
-                    print content
-                if output_with_describe == True:
-                    for l in range(0, len(describe_lines)):
-                        if len(id_title_lines[0]) == len(id_title_lines[1]):
-                            print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + "|"
-                        else:
-                            print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + "|"
+                    if output_with_color == True:
+                        print_with_color(content)
+                    else:
+                        print content
+                    if output_with_describe == True:
+                        for l in range(0, len(describe_lines)):
+                            if len(id_title_lines[0]) == len(id_title_lines[1]):
+                                print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + "|"
+                            else:
+                                print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + "|"
 
             print_table_separator(3)
         elif column_num == "2":
