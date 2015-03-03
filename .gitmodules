@@ -13,3 +13,6 @@
 [submodule "external/datasciencemasters/data"]
 	path = external/datasciencemasters/data
 	url = git@github.com:datasciencemasters/data.git
+[submodule "external/awesome-machine-learning"]
+	path = external/awesome-machine-learning
+	url = git@github.com:josephmisiti/awesome-machine-learning.git
