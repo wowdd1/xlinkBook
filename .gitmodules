@@ -16,3 +16,6 @@
 [submodule "external/awesome-machine-learning"]
 	path = external/awesome-machine-learning
 	url = git@github.com:josephmisiti/awesome-machine-learning.git
+[submodule "external/awesome-awesomeness"]
+	path = external/awesome-awesomeness
+	url = git@github.com:bayandin/awesome-awesomeness.git
