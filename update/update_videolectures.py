@@ -125,6 +125,27 @@ class VideolecturesSpider(Spider):
 
         return result.strip()
 
+    def getNameAndDescription(self, url):
+        name = ''
+        homepage = ''
+        desc = ''
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        span_name = soup.find('span', class_='auth_name')
+        span_desc = soup.find("span", id="auth_desc_edit")
+
+        if span_name != None and span_name.a != None:
+            name = span_name.a.text.replace('  ',' ').strip()
+            homepage = span_name.a['href']
+            desc += 'homepage:' + homepage + ' '
+
+        if span_desc != None:
+            desc += 'description:' + span_desc.text.replace('\n', ' ').strip()
+
+        return name, desc
+            
+         
+        
     def processUserData(self):
         print 'processing user data'
         file_name = self.get_file_name('eecs/' + self.school + '/user', self.school)
@@ -150,19 +171,25 @@ class VideolecturesSpider(Spider):
                         vl_id = str(tr.text[video_pos + 6 : views_pos].strip()) + '-' + str(self.count)
                     else:
                         vl_id = str(tr.text[video_pos + 5 : views_pos].strip()) + '-' + str(self.count)
-                    desc = 'description:' + tr.text[views_pos + 5 :]
+                    desc = 'organization:' + tr.text[views_pos + 5 :]
 
                     if views_pos == -1:
                         vl_id = '0' + '-' + str(self.count)
-                        desc = 'description:' + tr.text[video_pos + 5 :]
+                        desc = 'organization:' + tr.text[video_pos + 5 :]
                     print vl_id + ' ' + title
                     user_dict[vl_id] = Record(self.get_storage_format(vl_id, title, url, desc))
         self.count = 0
         for item in sorted(user_dict.items(), key=lambda user_dict:int(user_dict[1].get_id()[0 : user_dict[1].get_id().find('-')].strip()), reverse=True):
             self.count += 1
+            name = ''
+            desc = ''
+            if self.count <= 100 and item[1].get_url().strip().startswith('http'):
+                name, desc = self.getNameAndDescription(item[1].get_url().strip()) 
             uid = 'vl-' + item[1].get_id()[0 : item[1].get_id().find('-')] + '-' + str(self.count)
-            #print uid + ' ' + item[1].get_title()
-            self.write_db(f, uid, item[1].get_title().strip(), item[1].get_url().strip(), item[1].get_describe().strip())
+            if name == '':
+                name = item[1].get_title().strip()
+            #print uid + ' ' + name
+            self.write_db(f, uid, name, item[1].get_url().strip(), item[1].get_describe().strip() + ' ' + desc)
             
                  
         self.close_db(f)
