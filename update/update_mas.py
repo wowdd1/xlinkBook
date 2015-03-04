@@ -16,6 +16,7 @@ class MicrosoftAcademicSearchSpider(Spider):
         for li in soup.find_all('li'):
             if li.a != None and li.a.attrs.has_key("entitytype"):
                 if li.a['entitytype'] == '1' or li.a['entitytype'] == '2':
+                #if li.a['entitytype'] == '3' or li.a['entitytype'] == '4':
                     entitytype_dict[li.a['entitytype']] = li.a.text.strip().lower()
 
         for li in soup.find_all('li'):
