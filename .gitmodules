@@ -19,3 +19,9 @@
 [submodule "external/awesome-awesomeness"]
 	path = external/awesome-awesomeness
 	url = git@github.com:bayandin/awesome-awesomeness.git
+[submodule "paper/nipspreview"]
+	path = paper/nipspreview
+	url = git@github.com:karpathy/nipspreview.git
+[submodule "paper/scholaroctopus"]
+	path = paper/scholaroctopus
+	url = git@github.com:karpathy/scholaroctopus.git
