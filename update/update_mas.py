@@ -5,7 +5,7 @@ from spider import *
 class MicrosoftAcademicSearchSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
-        self.school = 'microsoftacademic'
+        self.school = 'mas'
         self.base_url = 'http://academic.research.microsoft.com'
 
     def processSubType(self, subject, url):
