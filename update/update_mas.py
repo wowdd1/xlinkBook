@@ -51,7 +51,7 @@ class MicrosoftAcademicSearchSpider(Spider):
                             if div != None:
                                 desc = 'organization:' + div.a.text.strip()
                             self.count += 1
-                            r_id = 'msas-' + str(top_domain_id) + '-' + str(sub_domain_id) + '-' +str(self.count)
+                            r_id = 'mas-' + entitytype_dict.get(entitytype)[0 : 1].lower() + '-' + str(top_domain_id) + '-' + str(sub_domain_id) + '-' +str(self.count)
                             print r_id + ' ' + title
                             self.write_db(f, r_id, title, url, desc)
                     else:
@@ -59,7 +59,7 @@ class MicrosoftAcademicSearchSpider(Spider):
                             title = td.a.text
                             url = self.base_url + td.a['href']
                             self.count += 1
-                            r_id = 'msas-' + str(top_domain_id) + '-' + str(sub_domain_id) + '-' + str(self.count)
+                            r_id = 'mas-' + entitytype_dict.get(entitytype)[0 : 1].lower() + '-' + str(top_domain_id) + '-' + str(sub_domain_id) + '-' + str(self.count)
                             print r_id + ' ' + title
                             self.write_db(f, r_id, title, url, desc)
 

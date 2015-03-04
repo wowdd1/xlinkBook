@@ -1,100 +1,100 @@
-msas-2-24-1 | Simon Peyton-Jones | http://academic.research.microsoft.com/Author/1104679/simon-peyton-jones | organization:Microsoft
-msas-2-24-2 | Philip Wadler | http://academic.research.microsoft.com/Author/2289155/philip-wadler | organization:University of Edinburgh
-msas-2-24-3 | Luca Cardelli | http://academic.research.microsoft.com/Author/1661217/luca-cardelli | organization:Microsoft
-msas-2-24-4 | Thomas W. Reps | http://academic.research.microsoft.com/Author/316437/thomas-w-reps | organization:University of Wisconsin Madison
-msas-2-24-5 | Ken Kennedy | http://academic.research.microsoft.com/Author/1177448/ken-kennedy | organization:Rice University
-msas-2-24-6 | Matthias Felleisen | http://academic.research.microsoft.com/Author/1410373/matthias-felleisen | organization:Northeastern University
-msas-2-24-7 | Craig Chambers | http://academic.research.microsoft.com/Author/2164557/craig-chambers | organization:Google Inc.
-msas-2-24-8 | Benjamin Pierce | http://academic.research.microsoft.com/Author/59016/benjamin-pierce | organization:University of Pennsylvania
-msas-2-24-9 | Paul Hudak | http://academic.research.microsoft.com/Author/675414/paul-hudak | organization:Yale University
-msas-2-24-10 | Martín Abadi | http://academic.research.microsoft.com/Author/2085504/mart-n-abadi | organization:Microsoft
-msas-2-24-11 | James R. Larus | http://academic.research.microsoft.com/Author/13102/james-r-larus | organization:École Polytechnique Fédérale de Lausanne
-msas-2-24-12 | Robert Harper | http://academic.research.microsoft.com/Author/724681/robert-harper | organization:Carnegie Mellon University
-msas-2-24-13 | Guy L. Steele | http://academic.research.microsoft.com/Author/159279/guy-l-steele | organization:Oracle Corporation
-msas-2-24-14 | Barbara Liskov | http://academic.research.microsoft.com/Author/1717780/barbara-liskov | organization:Massachusetts Institute of Technology
-msas-2-24-15 | Andrew W. Appel | http://academic.research.microsoft.com/Author/584767/andrew-w-appel | organization:Princeton University
-msas-2-24-16 | Alex Aiken | http://academic.research.microsoft.com/Author/6826573/alex-aiken | organization:Stanford University
-msas-2-24-17 | Laurie Hendren | http://academic.research.microsoft.com/Author/1180678/laurie-hendren | organization:McGill University
-msas-2-24-18 | Xavier Leroy | http://academic.research.microsoft.com/Author/117780/xavier-leroy | organization:The French National Institute for Research in Computer Science and Control
-msas-2-24-19 | Monica S. Lam (林倩玲) | http://academic.research.microsoft.com/Author/2298592/monica-s-lam | organization:Stanford University
-msas-2-24-20 | Manuel V. Hermenegildo | http://academic.research.microsoft.com/Author/2451913/manuel-v-hermenegildo | organization:Madrid Institute for Advanced Studies (IMDEA)
-msas-2-24-21 | Pascal Van Hentenryck | http://academic.research.microsoft.com/Author/1121828/pascal-van-hentenryck | organization:Brown University
-msas-2-24-22 | Barbara G. Ryder | http://academic.research.microsoft.com/Author/1425548/barbara-g-ryder | organization:Virginia Polytechnic Institute and State University
-msas-2-24-23 | Martin C. Rinard | http://academic.research.microsoft.com/Author/1786377/martin-c-rinard | organization:Massachusetts Institute of Technology
-msas-2-24-24 | Mitchell Wand | http://academic.research.microsoft.com/Author/2022583/mitchell-wand | organization:Northeastern University
-msas-2-24-25 | Mooly Sagiv | http://academic.research.microsoft.com/Author/73601/mooly-sagiv | organization:Tel Aviv University
-msas-2-24-26 | John C. Mitchell | http://academic.research.microsoft.com/Author/1448643/john-c-mitchell | organization:Stanford University
-msas-2-24-27 | Peter Stuckey | http://academic.research.microsoft.com/Author/2482099/peter-stuckey | organization:University of Melbourne
-msas-2-24-28 | Olivier Danvy | http://academic.research.microsoft.com/Author/1719540/olivier-danvy | organization:Aarhus University
-msas-2-24-29 | Saumya Debray | http://academic.research.microsoft.com/Author/703624/saumya-debray | organization:University of Arizona
-msas-2-24-30 | Keith Cooper | http://academic.research.microsoft.com/Author/964413/keith-cooper | organization:Rice University
-msas-2-24-31 | Zhong Shao (邵中) | http://academic.research.microsoft.com/Author/1779754/zhong-shao | organization:Yale University
-msas-2-24-32 | Gregor Kiczales | http://academic.research.microsoft.com/Author/840008/gregor-kiczales | organization:University of British Columbia
-msas-2-24-33 | Leslie Lamport | http://academic.research.microsoft.com/Author/1817419/leslie-lamport | organization:Microsoft
-msas-2-24-34 | Jens Palsberg | http://academic.research.microsoft.com/Author/829169/jens-palsberg | organization:University of California Los Angeles
-msas-2-24-35 | Cormac Flanagan | http://academic.research.microsoft.com/Author/1541218/cormac-flanagan | organization:University of California Santa Cruz
-msas-2-24-36 | David Ungar | http://academic.research.microsoft.com/Author/294194/david-ungar | organization:IBM
-msas-2-24-37 | Martin Odersky | http://academic.research.microsoft.com/Author/1477294/martin-odersky | organization:École Polytechnique Fédérale de Lausanne
-msas-2-24-38 | Greg Morrisett | http://academic.research.microsoft.com/Author/468915/greg-morrisett | organization:Harvard University
-msas-2-24-39 | Charles Consel | http://academic.research.microsoft.com/Author/509373/charles-consel | organization:The French National Institute for Research in Computer Science and Control
-msas-2-24-40 | J. Eliot B. Moss | http://academic.research.microsoft.com/Author/202324/j-eliot-b-moss | organization:University of Massachusetts
-msas-2-24-41 | David Grove | http://academic.research.microsoft.com/Author/412265/david-grove | organization:IBM
-msas-2-24-42 | Michael Hanus | http://academic.research.microsoft.com/Author/1535343/michael-hanus | organization:Christian Albrechts University of Kiel
-msas-2-24-43 | Kim Marriott | http://academic.research.microsoft.com/Author/1701188/kim-marriott | organization:Monash University
-msas-2-24-44 | Neil D. Jones | http://academic.research.microsoft.com/Author/1812222/neil-d-jones | organization:University of Copenhagen
-msas-2-24-45 | Daniel Friedman | http://academic.research.microsoft.com/Author/1208807/daniel-friedman | organization:University of California Santa Cruz
-msas-2-24-46 | Niklaus Emil Wirth | http://academic.research.microsoft.com/Author/135948/niklaus-emil-wirth | organization:Swiss Federal Institute of Technology Zurich
-msas-2-24-47 | Jeffrey D. Ullman | http://academic.research.microsoft.com/Author/2037349/jeffrey-d-ullman | organization:Stanford University
-msas-2-24-48 | Kathryn S. McKinley | http://academic.research.microsoft.com/Author/12171300/kathryn-s-mckinley | organization:University of Texas Austin
-msas-2-24-49 | Jan Vitek | http://academic.research.microsoft.com/Author/1174682/jan-vitek | organization:Northeastern University
-msas-2-24-50 | Akinori Yonezawa (米澤明憲) | http://academic.research.microsoft.com/Author/228514/akinori-yonezawa | organization:University of Tokyo
-msas-2-24-51 | Erik Meijer | http://academic.research.microsoft.com/Author/1218043/erik-meijer | organization:Microsoft
-msas-2-24-52 | John Hennessy | http://academic.research.microsoft.com/Author/350528/john-hennessy | organization:Stanford University
-msas-2-24-53 | Daniel Bobrow | http://academic.research.microsoft.com/Author/134990/daniel-bobrow | organization:Palo Alto Research Center
-msas-2-24-54 | Mads Tofte | http://academic.research.microsoft.com/Author/62057/mads-tofte | organization:IT University of Copenhagen
-msas-2-24-55 | Maurice Bruynooghe | http://academic.research.microsoft.com/Author/1375375/maurice-bruynooghe | organization:Catholic University of Leuven
-msas-2-24-56 | Michael Leuschel | http://academic.research.microsoft.com/Author/1206064/michael-leuschel | organization:Heinrich Heine University Düsseldorf
-msas-2-24-57 | Karl Crary | http://academic.research.microsoft.com/Author/446600/karl-crary | organization:Carnegie Mellon University
-msas-2-24-58 | Patrick Cousot | http://academic.research.microsoft.com/Author/1140524/patrick-cousot | organization:École Normale Supérieure Paris
-msas-2-24-59 | Susan Horwitz | http://academic.research.microsoft.com/Author/2344131/susan-horwitz | organization:University of Wisconsin Madison
-msas-2-24-60 | K. Rustan M. Leino | http://academic.research.microsoft.com/Author/2442863/k-rustan-m-leino | organization:Microsoft
-msas-2-24-61 | Jong-Deok Choi | http://academic.research.microsoft.com/Author/96953/jong-deok-choi | organization:Microsoft
-msas-2-24-62 | Alfred V. Aho | http://academic.research.microsoft.com/Author/549257/alfred-v-aho | organization:Columbia University
-msas-2-24-63 | Oscar Nierstrasz | http://academic.research.microsoft.com/Author/289435/oscar-nierstrasz | organization:Universität Bern
-msas-2-24-64 | Frank Pfenning | http://academic.research.microsoft.com/Author/1502129/frank-pfenning | organization:Carnegie Mellon University
-msas-2-24-65 | Michael W. Hicks | http://academic.research.microsoft.com/Author/1538907/michael-w-hicks | organization:University of Maryland
-msas-2-24-66 | Matthew Flatt | http://academic.research.microsoft.com/Author/261631/matthew-flatt | organization:University of Utah
-msas-2-24-67 | John H. Reppy | http://academic.research.microsoft.com/Author/1316344/john-h-reppy | organization:University of Chicago
-msas-2-24-68 | Ron Cytron | http://academic.research.microsoft.com/Author/9915/ron-cytron | organization:Washington University in St. Louis
-msas-2-24-69 | Mark P. Jones | http://academic.research.microsoft.com/Author/324373/mark-p-jones | organization:Rice University
-msas-2-24-70 | Krzysztof R. Apt | http://academic.research.microsoft.com/Author/1437789/krzysztof-r-apt | organization:Centrum Voor Wiskunde en Informatica
-msas-2-24-71 | Michael Hind | http://academic.research.microsoft.com/Author/1917535/michael-hind | organization:IBM
-msas-2-24-72 | John Launchbury | http://academic.research.microsoft.com/Author/1938083/john-launchbury | organization:Oregon Health & Science University
-msas-2-24-73 | Robin Milner | http://academic.research.microsoft.com/Author/771199/robin-milner | organization:University of Cambridge
-msas-2-24-74 | James A. Gosling | http://academic.research.microsoft.com/Author/662093/james-a-gosling | organization:University of Cambridge
-msas-2-24-75 | Ralf Hinze | http://academic.research.microsoft.com/Author/156360/ralf-hinze | organization:University of Oxford
-msas-2-24-76 | Flemming Nielson | http://academic.research.microsoft.com/Author/2348993/flemming-nielson | organization:Technical University of Denmark
-msas-2-24-77 | Oege De Moor | http://academic.research.microsoft.com/Author/426170/oege-de-moor | organization:University of Oxford
-msas-2-24-78 | Mary Lou Soffa | http://academic.research.microsoft.com/Author/753069/mary-lou-soffa | organization:University of Virginia
-msas-2-24-79 | Stephanie Weirich | http://academic.research.microsoft.com/Author/1246001/stephanie-weirich | organization:University of Pennsylvania
-msas-2-24-80 | Toby Walsh | http://academic.research.microsoft.com/Author/683700/toby-walsh | organization:University of New South Wales
-msas-2-24-81 | Ben Zorn | http://academic.research.microsoft.com/Author/804592/ben-zorn | organization:Microsoft
-msas-2-24-82 | Saman P. Amarasinghe | http://academic.research.microsoft.com/Author/1920643/saman-p-amarasinghe | organization:Massachusetts Institute of Technology
-msas-2-24-83 | Rajiv Gupta | http://academic.research.microsoft.com/Author/385346/rajiv-gupta | organization:University of California Riverside
-msas-2-24-84 | Susan L. Graham | http://academic.research.microsoft.com/Author/1398955/susan-l-graham | organization:University of California Berkeley
-msas-2-24-85 | Vijay A. Saraswat | http://academic.research.microsoft.com/Author/1017968/vijay-a-saraswat | organization:IBM
-msas-2-24-86 | Frank Tip | http://academic.research.microsoft.com/Author/1126212/frank-tip | organization:IBM
-msas-2-24-87 | Michael J. Maher | http://academic.research.microsoft.com/Author/1023040/michael-j-maher | organization:University of New South Wales
-msas-2-24-88 | John C. Reynolds | http://academic.research.microsoft.com/Author/535814/john-c-reynolds | organization:Carnegie Mellon University
-msas-2-24-89 | Yinyu Ye (叶荫宇) | http://academic.research.microsoft.com/Author/84417/yinyu-ye | organization:Stanford University
-msas-2-24-90 | Masakazu Kojima (小島政和) | http://academic.research.microsoft.com/Author/1713938/masakazu-kojima | organization:Tokyo Institute of Technology
-msas-2-24-91 | Urs Holzle (Urs Hölzle) | http://academic.research.microsoft.com/Author/1933781/urs-holzle | organization:Google Inc.
-msas-2-24-92 | Brad Calder | http://academic.research.microsoft.com/Author/2300751/brad-calder | organization:University of California San Diego
-msas-2-24-93 | Charles Antony Richard Hoare (C.A.R. Hoare) | http://academic.research.microsoft.com/Author/2542366/charles-antony-richard-hoare | organization:Microsoft
-msas-2-24-94 | Sophia Drossopoulou | http://academic.research.microsoft.com/Author/946648/sophia-drossopoulou | organization:Imperial College London
-msas-2-24-95 | Gary T. Leavens | http://academic.research.microsoft.com/Author/60393/gary-t-leavens | organization:University of Central Florida
-msas-2-24-96 | John Hughes | http://academic.research.microsoft.com/Author/1886388/john-hughes | organization:Chalmers University of Technology
-msas-2-24-97 | Vivek Sarkar | http://academic.research.microsoft.com/Author/2009228/vivek-sarkar | organization:Rice University
-msas-2-24-98 | Robby Findler | http://academic.research.microsoft.com/Author/23026345/robby-findler | organization:Northwestern University
-msas-2-24-99 | David Scott Warren | http://academic.research.microsoft.com/Author/163602/david-scott-warren | organization:Stony Brook University
-msas-2-24-100 | Shriram Krishnamurthi | http://academic.research.microsoft.com/Author/1068779/shriram-krishnamurthi | organization:Brown University
+mas-a-2-24-1 | Simon Peyton-Jones | http://academic.research.microsoft.com/Author/1104679/simon-peyton-jones | organization:Microsoft
+mas-a-2-24-2 | Philip Wadler | http://academic.research.microsoft.com/Author/2289155/philip-wadler | organization:University of Edinburgh
+mas-a-2-24-3 | Luca Cardelli | http://academic.research.microsoft.com/Author/1661217/luca-cardelli | organization:Microsoft
+mas-a-2-24-4 | Thomas W. Reps | http://academic.research.microsoft.com/Author/316437/thomas-w-reps | organization:University of Wisconsin Madison
+mas-a-2-24-5 | Ken Kennedy | http://academic.research.microsoft.com/Author/1177448/ken-kennedy | organization:Rice University
+mas-a-2-24-6 | Matthias Felleisen | http://academic.research.microsoft.com/Author/1410373/matthias-felleisen | organization:Northeastern University
+mas-a-2-24-7 | Craig Chambers | http://academic.research.microsoft.com/Author/2164557/craig-chambers | organization:Google Inc.
+mas-a-2-24-8 | Benjamin Pierce | http://academic.research.microsoft.com/Author/59016/benjamin-pierce | organization:University of Pennsylvania
+mas-a-2-24-9 | Paul Hudak | http://academic.research.microsoft.com/Author/675414/paul-hudak | organization:Yale University
+mas-a-2-24-10 | Martín Abadi | http://academic.research.microsoft.com/Author/2085504/mart-n-abadi | organization:Microsoft
+mas-a-2-24-11 | James R. Larus | http://academic.research.microsoft.com/Author/13102/james-r-larus | organization:École Polytechnique Fédérale de Lausanne
+mas-a-2-24-12 | Robert Harper | http://academic.research.microsoft.com/Author/724681/robert-harper | organization:Carnegie Mellon University
+mas-a-2-24-13 | Guy L. Steele | http://academic.research.microsoft.com/Author/159279/guy-l-steele | organization:Oracle Corporation
+mas-a-2-24-14 | Barbara Liskov | http://academic.research.microsoft.com/Author/1717780/barbara-liskov | organization:Massachusetts Institute of Technology
+mas-a-2-24-15 | Andrew W. Appel | http://academic.research.microsoft.com/Author/584767/andrew-w-appel | organization:Princeton University
+mas-a-2-24-16 | Alex Aiken | http://academic.research.microsoft.com/Author/6826573/alex-aiken | organization:Stanford University
+mas-a-2-24-17 | Laurie Hendren | http://academic.research.microsoft.com/Author/1180678/laurie-hendren | organization:McGill University
+mas-a-2-24-18 | Xavier Leroy | http://academic.research.microsoft.com/Author/117780/xavier-leroy | organization:The French National Institute for Research in Computer Science and Control
+mas-a-2-24-19 | Monica S. Lam (林倩玲) | http://academic.research.microsoft.com/Author/2298592/monica-s-lam | organization:Stanford University
+mas-a-2-24-20 | Manuel V. Hermenegildo | http://academic.research.microsoft.com/Author/2451913/manuel-v-hermenegildo | organization:Madrid Institute for Advanced Studies (IMDEA)
+mas-a-2-24-21 | Pascal Van Hentenryck | http://academic.research.microsoft.com/Author/1121828/pascal-van-hentenryck | organization:Brown University
+mas-a-2-24-22 | Barbara G. Ryder | http://academic.research.microsoft.com/Author/1425548/barbara-g-ryder | organization:Virginia Polytechnic Institute and State University
+mas-a-2-24-23 | Martin C. Rinard | http://academic.research.microsoft.com/Author/1786377/martin-c-rinard | organization:Massachusetts Institute of Technology
+mas-a-2-24-24 | Mitchell Wand | http://academic.research.microsoft.com/Author/2022583/mitchell-wand | organization:Northeastern University
+mas-a-2-24-25 | Mooly Sagiv | http://academic.research.microsoft.com/Author/73601/mooly-sagiv | organization:Tel Aviv University
+mas-a-2-24-26 | John C. Mitchell | http://academic.research.microsoft.com/Author/1448643/john-c-mitchell | organization:Stanford University
+mas-a-2-24-27 | Peter Stuckey | http://academic.research.microsoft.com/Author/2482099/peter-stuckey | organization:University of Melbourne
+mas-a-2-24-28 | Olivier Danvy | http://academic.research.microsoft.com/Author/1719540/olivier-danvy | organization:Aarhus University
+mas-a-2-24-29 | Saumya Debray | http://academic.research.microsoft.com/Author/703624/saumya-debray | organization:University of Arizona
+mas-a-2-24-30 | Keith Cooper | http://academic.research.microsoft.com/Author/964413/keith-cooper | organization:Rice University
+mas-a-2-24-31 | Zhong Shao (邵中) | http://academic.research.microsoft.com/Author/1779754/zhong-shao | organization:Yale University
+mas-a-2-24-32 | Gregor Kiczales | http://academic.research.microsoft.com/Author/840008/gregor-kiczales | organization:University of British Columbia
+mas-a-2-24-33 | Leslie Lamport | http://academic.research.microsoft.com/Author/1817419/leslie-lamport | organization:Microsoft
+mas-a-2-24-34 | Jens Palsberg | http://academic.research.microsoft.com/Author/829169/jens-palsberg | organization:University of California Los Angeles
+mas-a-2-24-35 | Cormac Flanagan | http://academic.research.microsoft.com/Author/1541218/cormac-flanagan | organization:University of California Santa Cruz
+mas-a-2-24-36 | David Ungar | http://academic.research.microsoft.com/Author/294194/david-ungar | organization:IBM
+mas-a-2-24-37 | Martin Odersky | http://academic.research.microsoft.com/Author/1477294/martin-odersky | organization:École Polytechnique Fédérale de Lausanne
+mas-a-2-24-38 | Greg Morrisett | http://academic.research.microsoft.com/Author/468915/greg-morrisett | organization:Harvard University
+mas-a-2-24-39 | Charles Consel | http://academic.research.microsoft.com/Author/509373/charles-consel | organization:The French National Institute for Research in Computer Science and Control
+mas-a-2-24-40 | J. Eliot B. Moss | http://academic.research.microsoft.com/Author/202324/j-eliot-b-moss | organization:University of Massachusetts
+mas-a-2-24-41 | David Grove | http://academic.research.microsoft.com/Author/412265/david-grove | organization:IBM
+mas-a-2-24-42 | Michael Hanus | http://academic.research.microsoft.com/Author/1535343/michael-hanus | organization:Christian Albrechts University of Kiel
+mas-a-2-24-43 | Kim Marriott | http://academic.research.microsoft.com/Author/1701188/kim-marriott | organization:Monash University
+mas-a-2-24-44 | Neil D. Jones | http://academic.research.microsoft.com/Author/1812222/neil-d-jones | organization:University of Copenhagen
+mas-a-2-24-45 | Daniel Friedman | http://academic.research.microsoft.com/Author/1208807/daniel-friedman | organization:University of California Santa Cruz
+mas-a-2-24-46 | Niklaus Emil Wirth | http://academic.research.microsoft.com/Author/135948/niklaus-emil-wirth | organization:Swiss Federal Institute of Technology Zurich
+mas-a-2-24-47 | Jeffrey D. Ullman | http://academic.research.microsoft.com/Author/2037349/jeffrey-d-ullman | organization:Stanford University
+mas-a-2-24-48 | Kathryn S. McKinley | http://academic.research.microsoft.com/Author/12171300/kathryn-s-mckinley | organization:University of Texas Austin
+mas-a-2-24-49 | Jan Vitek | http://academic.research.microsoft.com/Author/1174682/jan-vitek | organization:Northeastern University
+mas-a-2-24-50 | Akinori Yonezawa (米澤明憲) | http://academic.research.microsoft.com/Author/228514/akinori-yonezawa | organization:University of Tokyo
+mas-a-2-24-51 | Erik Meijer | http://academic.research.microsoft.com/Author/1218043/erik-meijer | organization:Microsoft
+mas-a-2-24-52 | John Hennessy | http://academic.research.microsoft.com/Author/350528/john-hennessy | organization:Stanford University
+mas-a-2-24-53 | Daniel Bobrow | http://academic.research.microsoft.com/Author/134990/daniel-bobrow | organization:Palo Alto Research Center
+mas-a-2-24-54 | Mads Tofte | http://academic.research.microsoft.com/Author/62057/mads-tofte | organization:IT University of Copenhagen
+mas-a-2-24-55 | Maurice Bruynooghe | http://academic.research.microsoft.com/Author/1375375/maurice-bruynooghe | organization:Catholic University of Leuven
+mas-a-2-24-56 | Michael Leuschel | http://academic.research.microsoft.com/Author/1206064/michael-leuschel | organization:Heinrich Heine University Düsseldorf
+mas-a-2-24-57 | Karl Crary | http://academic.research.microsoft.com/Author/446600/karl-crary | organization:Carnegie Mellon University
+mas-a-2-24-58 | Patrick Cousot | http://academic.research.microsoft.com/Author/1140524/patrick-cousot | organization:École Normale Supérieure Paris
+mas-a-2-24-59 | Susan Horwitz | http://academic.research.microsoft.com/Author/2344131/susan-horwitz | organization:University of Wisconsin Madison
+mas-a-2-24-60 | K. Rustan M. Leino | http://academic.research.microsoft.com/Author/2442863/k-rustan-m-leino | organization:Microsoft
+mas-a-2-24-61 | Jong-Deok Choi | http://academic.research.microsoft.com/Author/96953/jong-deok-choi | organization:Microsoft
+mas-a-2-24-62 | Alfred V. Aho | http://academic.research.microsoft.com/Author/549257/alfred-v-aho | organization:Columbia University
+mas-a-2-24-63 | Oscar Nierstrasz | http://academic.research.microsoft.com/Author/289435/oscar-nierstrasz | organization:Universität Bern
+mas-a-2-24-64 | Frank Pfenning | http://academic.research.microsoft.com/Author/1502129/frank-pfenning | organization:Carnegie Mellon University
+mas-a-2-24-65 | Michael W. Hicks | http://academic.research.microsoft.com/Author/1538907/michael-w-hicks | organization:University of Maryland
+mas-a-2-24-66 | Matthew Flatt | http://academic.research.microsoft.com/Author/261631/matthew-flatt | organization:University of Utah
+mas-a-2-24-67 | John H. Reppy | http://academic.research.microsoft.com/Author/1316344/john-h-reppy | organization:University of Chicago
+mas-a-2-24-68 | Ron Cytron | http://academic.research.microsoft.com/Author/9915/ron-cytron | organization:Washington University in St. Louis
+mas-a-2-24-69 | Mark P. Jones | http://academic.research.microsoft.com/Author/324373/mark-p-jones | organization:Rice University
+mas-a-2-24-70 | Krzysztof R. Apt | http://academic.research.microsoft.com/Author/1437789/krzysztof-r-apt | organization:Centrum Voor Wiskunde en Informatica
+mas-a-2-24-71 | Michael Hind | http://academic.research.microsoft.com/Author/1917535/michael-hind | organization:IBM
+mas-a-2-24-72 | John Launchbury | http://academic.research.microsoft.com/Author/1938083/john-launchbury | organization:Oregon Health & Science University
+mas-a-2-24-73 | Robin Milner | http://academic.research.microsoft.com/Author/771199/robin-milner | organization:University of Cambridge
+mas-a-2-24-74 | James A. Gosling | http://academic.research.microsoft.com/Author/662093/james-a-gosling | organization:University of Cambridge
+mas-a-2-24-75 | Ralf Hinze | http://academic.research.microsoft.com/Author/156360/ralf-hinze | organization:University of Oxford
+mas-a-2-24-76 | Flemming Nielson | http://academic.research.microsoft.com/Author/2348993/flemming-nielson | organization:Technical University of Denmark
+mas-a-2-24-77 | Oege De Moor | http://academic.research.microsoft.com/Author/426170/oege-de-moor | organization:University of Oxford
+mas-a-2-24-78 | Mary Lou Soffa | http://academic.research.microsoft.com/Author/753069/mary-lou-soffa | organization:University of Virginia
+mas-a-2-24-79 | Stephanie Weirich | http://academic.research.microsoft.com/Author/1246001/stephanie-weirich | organization:University of Pennsylvania
+mas-a-2-24-80 | Toby Walsh | http://academic.research.microsoft.com/Author/683700/toby-walsh | organization:University of New South Wales
+mas-a-2-24-81 | Ben Zorn | http://academic.research.microsoft.com/Author/804592/ben-zorn | organization:Microsoft
+mas-a-2-24-82 | Saman P. Amarasinghe | http://academic.research.microsoft.com/Author/1920643/saman-p-amarasinghe | organization:Massachusetts Institute of Technology
+mas-a-2-24-83 | Rajiv Gupta | http://academic.research.microsoft.com/Author/385346/rajiv-gupta | organization:University of California Riverside
+mas-a-2-24-84 | Susan L. Graham | http://academic.research.microsoft.com/Author/1398955/susan-l-graham | organization:University of California Berkeley
+mas-a-2-24-85 | Vijay A. Saraswat | http://academic.research.microsoft.com/Author/1017968/vijay-a-saraswat | organization:IBM
+mas-a-2-24-86 | Frank Tip | http://academic.research.microsoft.com/Author/1126212/frank-tip | organization:IBM
+mas-a-2-24-87 | Michael J. Maher | http://academic.research.microsoft.com/Author/1023040/michael-j-maher | organization:University of New South Wales
+mas-a-2-24-88 | John C. Reynolds | http://academic.research.microsoft.com/Author/535814/john-c-reynolds | organization:Carnegie Mellon University
+mas-a-2-24-89 | Yinyu Ye (叶荫宇) | http://academic.research.microsoft.com/Author/84417/yinyu-ye | organization:Stanford University
+mas-a-2-24-90 | Masakazu Kojima (小島政和) | http://academic.research.microsoft.com/Author/1713938/masakazu-kojima | organization:Tokyo Institute of Technology
+mas-a-2-24-91 | Urs Holzle (Urs Hölzle) | http://academic.research.microsoft.com/Author/1933781/urs-holzle | organization:Google Inc.
+mas-a-2-24-92 | Brad Calder | http://academic.research.microsoft.com/Author/2300751/brad-calder | organization:University of California San Diego
+mas-a-2-24-93 | Charles Antony Richard Hoare (C.A.R. Hoare) | http://academic.research.microsoft.com/Author/2542366/charles-antony-richard-hoare | organization:Microsoft
+mas-a-2-24-94 | Sophia Drossopoulou | http://academic.research.microsoft.com/Author/946648/sophia-drossopoulou | organization:Imperial College London
+mas-a-2-24-95 | Gary T. Leavens | http://academic.research.microsoft.com/Author/60393/gary-t-leavens | organization:University of Central Florida
+mas-a-2-24-96 | John Hughes | http://academic.research.microsoft.com/Author/1886388/john-hughes | organization:Chalmers University of Technology
+mas-a-2-24-97 | Vivek Sarkar | http://academic.research.microsoft.com/Author/2009228/vivek-sarkar | organization:Rice University
+mas-a-2-24-98 | Robby Findler | http://academic.research.microsoft.com/Author/23026345/robby-findler | organization:Northwestern University
+mas-a-2-24-99 | David Scott Warren | http://academic.research.microsoft.com/Author/163602/david-scott-warren | organization:Stony Brook University
+mas-a-2-24-100 | Shriram Krishnamurthi | http://academic.research.microsoft.com/Author/1068779/shriram-krishnamurthi | organization:Brown University

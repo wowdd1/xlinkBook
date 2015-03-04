@@ -1,100 +1,100 @@
-msas-2-16-1 | Learning internal representations by error propagation (1986) | http://academic.research.microsoft.com/Publication/1250862/learning-internal-representations-by-error-propagation | 
-msas-2-16-2 | Chord: A scalable peer-to-peer lookup service for internet applications (2001) | http://academic.research.microsoft.com/Publication/42079/chord-a-scalable-peer-to-peer-lookup-service-for-internet-applications | 
-msas-2-16-3 | A scalable content-addressable network (2001) | http://academic.research.microsoft.com/Publication/113308/a-scalable-content-addressable-network | 
-msas-2-16-4 | The Anatomy of the Grid: Enabling Scalable Virtual Organizations (2001) | http://academic.research.microsoft.com/Publication/80040/the-anatomy-of-the-grid-enabling-scalable-virtual-organizations | 
-msas-2-16-5 | Time, clocks, and the ordering of events in a distributed system (1978) | http://academic.research.microsoft.com/Publication/775212/time-clocks-and-the-ordering-of-events-in-a-distributed-system | 
-msas-2-16-6 | The grid: blueprint for a new computing infrastructure (1998) | http://academic.research.microsoft.com/Publication/1318525/the-grid-blueprint-for-a-new-computing-infrastructure | 
-msas-2-16-7 | Numerical Recipes in Fortran 90: The Art of Parallel Scientific Computing (1996) | http://academic.research.microsoft.com/Publication/3471254/numerical-recipes-in-fortran-90-the-art-of-parallel-scientific-computing | 
-msas-2-16-8 | Pastry: Scalable, distributed object location and routing for large-scale peer-to-peer systems (2001) | http://academic.research.microsoft.com/Publication/133905/pastry-scalable-distributed-object-location-and-routing-for-large-scale-peer-to-peer-systems | 
-msas-2-16-9 | Globus: A metacomputing infrastructure toolkit (1997) | http://academic.research.microsoft.com/Publication/1395683/globus-a-metacomputing-infrastructure-toolkit | 
-msas-2-16-10 | Pastry: Scalable, Decentralized Object Location, and Routing for Large-Scale Peer-to-Peer Systems (2001) | http://academic.research.microsoft.com/Publication/98945/pastry-scalable-decentralized-object-location-and-routing-for-large-scale-peer-to-peer-systems | 
-msas-2-16-11 | Distributed Algorithms (1996) | http://academic.research.microsoft.com/Publication/695123/distributed-algorithms | 
-msas-2-16-12 | Impossibility of Distributed Consensus with One Faulty Process (1983) | http://academic.research.microsoft.com/Publication/565199/impossibility-of-distributed-consensus-with-one-faulty-process | 
-msas-2-16-13 | The Physiology of the Grid An Open Grid Services Architecture for Distributed Systems Integration (2002) | http://academic.research.microsoft.com/Publication/15289/the-physiology-of-the-grid-an-open-grid-services-architecture-for-distributed-systems-integration | 
-msas-2-16-14 | The Vision of Autonomic Computing (2003) | http://academic.research.microsoft.com/Publication/846714/the-vision-of-autonomic-computing | 
-msas-2-16-15 | The grid: blueprint for a future computing infrastructure (1999) | http://academic.research.microsoft.com/Publication/1354379/the-grid-blueprint-for-a-future-computing-infrastructure | 
-msas-2-16-16 | The Anatomy of the Grid: Enabling Scalable Virtual Organizations (1999) | http://academic.research.microsoft.com/Publication/3856016/the-anatomy-of-the-grid-enabling-scalable-virtual-organizations | 
-msas-2-16-17 | The Byzantine Generals Problem (1982) | http://academic.research.microsoft.com/Publication/39296/the-byzantine-generals-problem | 
-msas-2-16-18 | Xen and the art of virtualization (2003) | http://academic.research.microsoft.com/Publication/574140/xen-and-the-art-of-virtualization | 
-msas-2-16-19 | A Measurement Study of Peer-to-Peer File Sharing Systems (2002) | http://academic.research.microsoft.com/Publication/123922/a-measurement-study-of-peer-to-peer-file-sharing-systems | 
-msas-2-16-20 | Myrinet: A Gigabit-per-Second Local Area Network (1995) | http://academic.research.microsoft.com/Publication/176691/myrinet-a-gigabit-per-second-local-area-network | 
-msas-2-16-21 | MapReduce: Simplied Data Processing on Large Clusters (2004) | http://academic.research.microsoft.com/Publication/1812573/mapreduce-simplied-data-processing-on-large-clusters | 
-msas-2-16-22 | Condor - A Hunter of Idle Workstations (1988) | http://academic.research.microsoft.com/Publication/607345/condor-a-hunter-of-idle-workstations | 
-msas-2-16-23 | Unreliable failure detectors for reliable distributed systems (1996) | http://academic.research.microsoft.com/Publication/37748/unreliable-failure-detectors-for-reliable-distributed-systems | 
-msas-2-16-24 | Tapestry: An Infrastructure for Fault-tolerant Wide-area Location and Routing (2001) | http://academic.research.microsoft.com/Publication/84242/tapestry-an-infrastructure-for-fault-tolerant-wide-area-location-and-routing | 
-msas-2-16-25 | A bridging model for parallel computation (1990) | http://academic.research.microsoft.com/Publication/772042/a-bridging-model-for-parallel-computation | 
-msas-2-16-26 | The SPLASH2 programs: characterization and methodological considerations (1995) | http://academic.research.microsoft.com/Publication/354032/the-splash2-programs-characterization-and-methodological-considerations | 
-msas-2-16-27 | OceanStore: an architecture for global-scale persistent storage (2000) | http://academic.research.microsoft.com/Publication/37695/oceanstore-an-architecture-for-global-scale-persistent-storage | 
-msas-2-16-28 | Chord: a scalable peer-to-peer lookup protocol for internet applications (2003) | http://academic.research.microsoft.com/Publication/765687/chord-a-scalable-peer-to-peer-lookup-protocol-for-internet-applications | 
-msas-2-16-29 | Globus: A Metacomputing Infrastructure Toolkit (1996) | http://academic.research.microsoft.com/Publication/324474/globus-a-metacomputing-infrastructure-toolkit | 
-msas-2-16-30 | Distributed snapshots: determining global states of distributed systems (1985) | http://academic.research.microsoft.com/Publication/803548/distributed-snapshots-determining-global-states-of-distributed-systems | 
-msas-2-16-31 | The Sybil Attack (2002) | http://academic.research.microsoft.com/Publication/74721/the-sybil-attack | 
-msas-2-16-32 | A logic of authentication (1990) | http://academic.research.microsoft.com/Publication/803552/a-logic-of-authentication | 
-msas-2-16-33 | Implementing Remote Procedure Calls (1984) | http://academic.research.microsoft.com/Publication/31779/implementing-remote-procedure-calls | 
-msas-2-16-34 | Deadlock-Free Message Routing in Multiprocessor Interconnection Networks (1987) | http://academic.research.microsoft.com/Publication/716152/deadlock-free-message-routing-in-multiprocessor-interconnection-networks | 
-msas-2-16-35 | The Eigentrust algorithm for reputation management in P2P networks (2003) | http://academic.research.microsoft.com/Publication/45284/the-eigentrust-algorithm-for-reputation-management-in-p2p-networks | 
-msas-2-16-36 | Active messages: a mechanism for integrated communication and computation (1992) | http://academic.research.microsoft.com/Publication/281795/active-messages-a-mechanism-for-integrated-communication-and-computation | 
-msas-2-16-37 | Freenet: A Distributed Anonymous Information Storage and Retrieval System (2000) | http://academic.research.microsoft.com/Publication/185896/freenet-a-distributed-anonymous-information-storage-and-retrieval-system | 
-msas-2-16-38 | A case for redundant arrays of inexpensive disks (RAID) (1988) | http://academic.research.microsoft.com/Publication/667354/a-case-for-redundant-arrays-of-inexpensive-disks-raid | 
-msas-2-16-39 | End-to-end arguments in system design (1984) | http://academic.research.microsoft.com/Publication/1498/end-to-end-arguments-in-system-design | 
-msas-2-16-40 | How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs (1979) | http://academic.research.microsoft.com/Publication/715621/how-to-make-a-multiprocessor-computer-that-correctly-executes-multiprocess-programs | 
-msas-2-16-41 | Wide-area cooperative storage with CFS (2001) | http://academic.research.microsoft.com/Publication/124388/wide-area-cooperative-storage-with-cfs | 
-msas-2-16-42 | The Click modular router (2000) | http://academic.research.microsoft.com/Publication/122657/the-click-modular-router | 
-msas-2-16-43 | MPI: A Message-Passing Interface Standard (1994) | http://academic.research.microsoft.com/Publication/3091/mpi-a-message-passing-interface-standard | 
-msas-2-16-44 | Using MPI: Portable Parallel Programming with the Message-Passing Interface (1999) | http://academic.research.microsoft.com/Publication/1370099/using-mpi-portable-parallel-programming-with-the-message-passing-interface | 
-msas-2-16-45 | The Google file system (2003) | http://academic.research.microsoft.com/Publication/573926/the-google-file-system | 
-msas-2-16-46 | Scale and performance in a distributed file system (1988) | http://academic.research.microsoft.com/Publication/803529/scale-and-performance-in-a-distributed-file-system | 
-msas-2-16-47 | The Physiology of Grid: Open Grid Services Architecture for Distributed Systems Integration (2003) | http://academic.research.microsoft.com/Publication/3941110/the-physiology-of-grid-open-grid-services-architecture-for-distributed-systems-integration | 
-msas-2-16-48 | Memory Coherence in Shared Virtual Memory Systems (1989) | http://academic.research.microsoft.com/Publication/19144/memory-coherence-in-shared-virtual-memory-systems | 
-msas-2-16-49 | A fast and high quality multilevel scheme for partitioning irregulargraphs (1999) | http://academic.research.microsoft.com/Publication/1318048/a-fast-and-high-quality-multilevel-scheme-for-partitioning-irregulargraphs | 
-msas-2-16-50 | System Structure for Software Fault Tolerance (1975) | http://academic.research.microsoft.com/Publication/765946/system-structure-for-software-fault-tolerance | 
-msas-2-16-51 | Sorting Networks and Their Applications (1968) | http://academic.research.microsoft.com/Publication/586510/sorting-networks-and-their-applications | 
-msas-2-16-52 | Free Riding on Gnutella (2000) | http://academic.research.microsoft.com/Publication/199762/free-riding-on-gnutella | 
-msas-2-16-53 | Linearizability: a correctness condition for concurrent objects (1990) | http://academic.research.microsoft.com/Publication/857045/linearizability-a-correctness-condition-for-concurrent-objects | 
-msas-2-16-54 | Search and replication in unstructured peer-to-peer networks (2002) | http://academic.research.microsoft.com/Publication/5503/search-and-replication-in-unstructured-peer-to-peer-networks | 
-msas-2-16-55 | Disconnected Operation in the Coda File System (1992) | http://academic.research.microsoft.com/Publication/267521/disconnected-operation-in-the-coda-file-system | 
-msas-2-16-56 | Grid Information Services for Distributed Resource Sharing (2001) | http://academic.research.microsoft.com/Publication/114684/grid-information-services-for-distributed-resource-sharing | 
-msas-2-16-57 | Self-stabilizing systems in spite of distributed control (1974) | http://academic.research.microsoft.com/Publication/775440/self-stabilizing-systems-in-spite-of-distributed-control | 
-msas-2-16-58 | Design and evaluation of a wide-area event notification service (2001) | http://academic.research.microsoft.com/Publication/103595/design-and-evaluation-of-a-wide-area-event-notification-service | 
-msas-2-16-59 | A High-Performance, Portable Implementation of the MPI Message Passing Interface Standard (1996) | http://academic.research.microsoft.com/Publication/709747/a-high-performance-portable-implementation-of-the-mpi-message-passing-interface-standard | 
-msas-2-16-60 | Mibench: a free, commercially representative embedded benchmark suite (2001) | http://academic.research.microsoft.com/Publication/1281978/mibench-a-free-commercially-representative-embedded-benchmark-suite | 
-msas-2-16-61 | Virtual Time (1983) | http://academic.research.microsoft.com/Publication/531656/virtual-time | 
-msas-2-16-62 | Linda in context (1989) | http://academic.research.microsoft.com/Publication/774364/linda-in-context | 
-msas-2-16-63 | Impossibility of distributed consensus with one faulty process (1982) | http://academic.research.microsoft.com/Publication/3211960/impossibility-of-distributed-consensus-with-one-faulty-process | 
-msas-2-16-64 | Operating System Concepts (2003) | http://academic.research.microsoft.com/Publication/3522611/operating-system-concepts | 
-msas-2-16-65 | The network weather service: a distributed resource performance forecasting service for metacomputing (1999) | http://academic.research.microsoft.com/Publication/1950639/the-network-weather-service-a-distributed-resource-performance-forecasting-service-for | 
-msas-2-16-66 | The grid 2: blueprint for a new computing infrastructure (2004) | http://academic.research.microsoft.com/Publication/1396173/the-grid-2-blueprint-for-a-new-computing-infrastructure | 
-msas-2-16-67 | Interconnection networks - an engineering approach (1997) | http://academic.research.microsoft.com/Publication/1309397/interconnection-networks-an-engineering-approach | 
-msas-2-16-68 | The many faces of publish/subscribe (2003) | http://academic.research.microsoft.com/Publication/133212/the-many-faces-of-publish-subscribe | 
-msas-2-16-69 | PVM: A Framework for Parallel Distributed Computing (1990) | http://academic.research.microsoft.com/Publication/393494/pvm-a-framework-for-parallel-distributed-computing | 
-msas-2-16-70 | Implementing fault-tolerant services using the state machine approach: a tutorial (1990) | http://academic.research.microsoft.com/Publication/48163/implementing-fault-tolerant-services-using-the-state-machine-approach-a-tutorial | 
-msas-2-16-71 | High performance compilers for parallel computing (1996) | http://academic.research.microsoft.com/Publication/694568/high-performance-compilers-for-parallel-computing | 
-msas-2-16-72 | Social structure and organizations (1965) | http://academic.research.microsoft.com/Publication/2035355/social-structure-and-organizations | 
-msas-2-16-73 | Introduction to parallel algorithms and architectures: arrays trees hypercubes (1992) | http://academic.research.microsoft.com/Publication/1376344/introduction-to-parallel-algorithms-and-architectures-arrays-trees-hypercubes | 
-msas-2-16-74 | A set of level 3 basic linear algebra subprograms (1990) | http://academic.research.microsoft.com/Publication/804808/a-set-of-level-3-basic-linear-algebra-subprograms | 
-msas-2-16-75 | A Security Architecture for Computational Grids (1998) | http://academic.research.microsoft.com/Publication/213076/a-security-architecture-for-computational-grids | 
-msas-2-16-76 | LogP: towards a realistic model of parallel computation (1993) | http://academic.research.microsoft.com/Publication/3416/logp-towards-a-realistic-model-of-parallel-computation | 
-msas-2-16-77 | Storage Management and Caching in PAST, A Large-scale, Persistent Peer-to-peer Storage Utility (2001) | http://academic.research.microsoft.com/Publication/134900/storage-management-and-caching-in-past-a-large-scale-persistent-peer-to-peer-storage-utility | 
-msas-2-16-78 | Reaching Agreement in the Presence of Faults (1980) | http://academic.research.microsoft.com/Publication/788106/reaching-agreement-in-the-presence-of-faults | 
-msas-2-16-79 | Modern Operating Systems (1992) | http://academic.research.microsoft.com/Publication/695235/modern-operating-systems | 
-msas-2-16-80 | Wait-free synchronization (1991) | http://academic.research.microsoft.com/Publication/857143/wait-free-synchronization | 
-msas-2-16-81 | Memory consistency and event ordering in scalable shared-memory multiprocessors (1990) | http://academic.research.microsoft.com/Publication/29999/memory-consistency-and-event-ordering-in-scalable-shared-memory-multiprocessors | 
-msas-2-16-82 | Tapestry: A Resilient Global-scale Overlay for Service Deployment (2004) | http://academic.research.microsoft.com/Publication/23779/tapestry-a-resilient-global-scale-overlay-for-service-deployment | 
-msas-2-16-83 | A Survey of Wormhole Routing Techniques in Direct Networks (1993) | http://academic.research.microsoft.com/Publication/846717/a-survey-of-wormhole-routing-techniques-in-direct-networks | 
-msas-2-16-84 | A data locality optimizing algorithm (1991) | http://academic.research.microsoft.com/Publication/564372/a-data-locality-optimizing-algorithm | 
-msas-2-16-85 | Multicast routing in datagram internetworks and extended LANs (1990) | http://academic.research.microsoft.com/Publication/803417/multicast-routing-in-datagram-internetworks-and-extended-lans | 
-msas-2-16-86 | Epidemic algorithms for replicated database maintenance (1987) | http://academic.research.microsoft.com/Publication/564769/epidemic-algorithms-for-replicated-database-maintenance | 
-msas-2-16-87 | Lightweight causal and atomic group multicast (1991) | http://academic.research.microsoft.com/Publication/803364/lightweight-causal-and-atomic-group-multicast | 
-msas-2-16-88 | Transactional Memory: Architectural Support for Lock-Free Data Structures (1993) | http://academic.research.microsoft.com/Publication/349252/transactional-memory-architectural-support-for-lock-free-data-structures | 
-msas-2-16-89 | Virtual Time and Global States of Distributed Systems (1988) | http://academic.research.microsoft.com/Publication/291288/virtual-time-and-global-states-of-distributed-systems | 
-msas-2-16-90 | The small-world phenomenon: an algorithm perspective (2000) | http://academic.research.microsoft.com/Publication/576471/the-small-world-phenomenon-an-algorithm-perspective | 
-msas-2-16-91 | Introduction to parallel algorithms and architectures: arrays (1993) | http://academic.research.microsoft.com/Publication/1268493/introduction-to-parallel-algorithms-and-architectures-arrays | 
-msas-2-16-92 | Grid Services for Distributed System Integration (2002) | http://academic.research.microsoft.com/Publication/847645/grid-services-for-distributed-system-integration | 
-msas-2-16-93 | The cosmic cube (1985) | http://academic.research.microsoft.com/Publication/775086/the-cosmic-cube | 
-msas-2-16-94 | Distributed systems: concepts and design (2000) | http://academic.research.microsoft.com/Publication/1344764/distributed-systems-concepts-and-design | 
-msas-2-16-95 | A hierarchical O(N log N) force-calculation algorithm (1986) | http://academic.research.microsoft.com/Publication/2578333/a-hierarchical-o-n-log-n-force-calculation-algorithm | 
-msas-2-16-96 | Virtual-Channel Flow Control (1992) | http://academic.research.microsoft.com/Publication/805580/virtual-channel-flow-control | 
-msas-2-16-97 | I-TCP: Indirect TCP for Mobile Hosts (1995) | http://academic.research.microsoft.com/Publication/607394/i-tcp-indirect-tcp-for-mobile-hosts | 
-msas-2-16-98 | The Stanford Dash Multiprocessor (1992) | http://academic.research.microsoft.com/Publication/848440/the-stanford-dash-multiprocessor | 
-msas-2-16-99 | The Stanford FLASH multiprocessor (1994) | http://academic.research.microsoft.com/Publication/213792/the-stanford-flash-multiprocessor | 
-msas-2-16-100 | Weighted voting for replicated data (1979) | http://academic.research.microsoft.com/Publication/425279/weighted-voting-for-replicated-data | 
+mas-p-2-16-1 | Learning internal representations by error propagation (1986) | http://academic.research.microsoft.com/Publication/1250862/learning-internal-representations-by-error-propagation | 
+mas-p-2-16-2 | Chord: A scalable peer-to-peer lookup service for internet applications (2001) | http://academic.research.microsoft.com/Publication/42079/chord-a-scalable-peer-to-peer-lookup-service-for-internet-applications | 
+mas-p-2-16-3 | A scalable content-addressable network (2001) | http://academic.research.microsoft.com/Publication/113308/a-scalable-content-addressable-network | 
+mas-p-2-16-4 | The Anatomy of the Grid: Enabling Scalable Virtual Organizations (2001) | http://academic.research.microsoft.com/Publication/80040/the-anatomy-of-the-grid-enabling-scalable-virtual-organizations | 
+mas-p-2-16-5 | Time, clocks, and the ordering of events in a distributed system (1978) | http://academic.research.microsoft.com/Publication/775212/time-clocks-and-the-ordering-of-events-in-a-distributed-system | 
+mas-p-2-16-6 | The grid: blueprint for a new computing infrastructure (1998) | http://academic.research.microsoft.com/Publication/1318525/the-grid-blueprint-for-a-new-computing-infrastructure | 
+mas-p-2-16-7 | Numerical Recipes in Fortran 90: The Art of Parallel Scientific Computing (1996) | http://academic.research.microsoft.com/Publication/3471254/numerical-recipes-in-fortran-90-the-art-of-parallel-scientific-computing | 
+mas-p-2-16-8 | Pastry: Scalable, distributed object location and routing for large-scale peer-to-peer systems (2001) | http://academic.research.microsoft.com/Publication/133905/pastry-scalable-distributed-object-location-and-routing-for-large-scale-peer-to-peer-systems | 
+mas-p-2-16-9 | Globus: A metacomputing infrastructure toolkit (1997) | http://academic.research.microsoft.com/Publication/1395683/globus-a-metacomputing-infrastructure-toolkit | 
+mas-p-2-16-10 | Pastry: Scalable, Decentralized Object Location, and Routing for Large-Scale Peer-to-Peer Systems (2001) | http://academic.research.microsoft.com/Publication/98945/pastry-scalable-decentralized-object-location-and-routing-for-large-scale-peer-to-peer-systems | 
+mas-p-2-16-11 | Distributed Algorithms (1996) | http://academic.research.microsoft.com/Publication/695123/distributed-algorithms | 
+mas-p-2-16-12 | Impossibility of Distributed Consensus with One Faulty Process (1983) | http://academic.research.microsoft.com/Publication/565199/impossibility-of-distributed-consensus-with-one-faulty-process | 
+mas-p-2-16-13 | The Physiology of the Grid An Open Grid Services Architecture for Distributed Systems Integration (2002) | http://academic.research.microsoft.com/Publication/15289/the-physiology-of-the-grid-an-open-grid-services-architecture-for-distributed-systems-integration | 
+mas-p-2-16-14 | The Vision of Autonomic Computing (2003) | http://academic.research.microsoft.com/Publication/846714/the-vision-of-autonomic-computing | 
+mas-p-2-16-15 | The grid: blueprint for a future computing infrastructure (1999) | http://academic.research.microsoft.com/Publication/1354379/the-grid-blueprint-for-a-future-computing-infrastructure | 
+mas-p-2-16-16 | The Anatomy of the Grid: Enabling Scalable Virtual Organizations (1999) | http://academic.research.microsoft.com/Publication/3856016/the-anatomy-of-the-grid-enabling-scalable-virtual-organizations | 
+mas-p-2-16-17 | The Byzantine Generals Problem (1982) | http://academic.research.microsoft.com/Publication/39296/the-byzantine-generals-problem | 
+mas-p-2-16-18 | Xen and the art of virtualization (2003) | http://academic.research.microsoft.com/Publication/574140/xen-and-the-art-of-virtualization | 
+mas-p-2-16-19 | A Measurement Study of Peer-to-Peer File Sharing Systems (2002) | http://academic.research.microsoft.com/Publication/123922/a-measurement-study-of-peer-to-peer-file-sharing-systems | 
+mas-p-2-16-20 | Myrinet: A Gigabit-per-Second Local Area Network (1995) | http://academic.research.microsoft.com/Publication/176691/myrinet-a-gigabit-per-second-local-area-network | 
+mas-p-2-16-21 | MapReduce: Simplied Data Processing on Large Clusters (2004) | http://academic.research.microsoft.com/Publication/1812573/mapreduce-simplied-data-processing-on-large-clusters | 
+mas-p-2-16-22 | Condor - A Hunter of Idle Workstations (1988) | http://academic.research.microsoft.com/Publication/607345/condor-a-hunter-of-idle-workstations | 
+mas-p-2-16-23 | Unreliable failure detectors for reliable distributed systems (1996) | http://academic.research.microsoft.com/Publication/37748/unreliable-failure-detectors-for-reliable-distributed-systems | 
+mas-p-2-16-24 | Tapestry: An Infrastructure for Fault-tolerant Wide-area Location and Routing (2001) | http://academic.research.microsoft.com/Publication/84242/tapestry-an-infrastructure-for-fault-tolerant-wide-area-location-and-routing | 
+mas-p-2-16-25 | A bridging model for parallel computation (1990) | http://academic.research.microsoft.com/Publication/772042/a-bridging-model-for-parallel-computation | 
+mas-p-2-16-26 | The SPLASH2 programs: characterization and methodological considerations (1995) | http://academic.research.microsoft.com/Publication/354032/the-splash2-programs-characterization-and-methodological-considerations | 
+mas-p-2-16-27 | OceanStore: an architecture for global-scale persistent storage (2000) | http://academic.research.microsoft.com/Publication/37695/oceanstore-an-architecture-for-global-scale-persistent-storage | 
+mas-p-2-16-28 | Chord: a scalable peer-to-peer lookup protocol for internet applications (2003) | http://academic.research.microsoft.com/Publication/765687/chord-a-scalable-peer-to-peer-lookup-protocol-for-internet-applications | 
+mas-p-2-16-29 | Globus: A Metacomputing Infrastructure Toolkit (1996) | http://academic.research.microsoft.com/Publication/324474/globus-a-metacomputing-infrastructure-toolkit | 
+mas-p-2-16-30 | Distributed snapshots: determining global states of distributed systems (1985) | http://academic.research.microsoft.com/Publication/803548/distributed-snapshots-determining-global-states-of-distributed-systems | 
+mas-p-2-16-31 | The Sybil Attack (2002) | http://academic.research.microsoft.com/Publication/74721/the-sybil-attack | 
+mas-p-2-16-32 | A logic of authentication (1990) | http://academic.research.microsoft.com/Publication/803552/a-logic-of-authentication | 
+mas-p-2-16-33 | Implementing Remote Procedure Calls (1984) | http://academic.research.microsoft.com/Publication/31779/implementing-remote-procedure-calls | 
+mas-p-2-16-34 | Deadlock-Free Message Routing in Multiprocessor Interconnection Networks (1987) | http://academic.research.microsoft.com/Publication/716152/deadlock-free-message-routing-in-multiprocessor-interconnection-networks | 
+mas-p-2-16-35 | The Eigentrust algorithm for reputation management in P2P networks (2003) | http://academic.research.microsoft.com/Publication/45284/the-eigentrust-algorithm-for-reputation-management-in-p2p-networks | 
+mas-p-2-16-36 | Active messages: a mechanism for integrated communication and computation (1992) | http://academic.research.microsoft.com/Publication/281795/active-messages-a-mechanism-for-integrated-communication-and-computation | 
+mas-p-2-16-37 | Freenet: A Distributed Anonymous Information Storage and Retrieval System (2000) | http://academic.research.microsoft.com/Publication/185896/freenet-a-distributed-anonymous-information-storage-and-retrieval-system | 
+mas-p-2-16-38 | A case for redundant arrays of inexpensive disks (RAID) (1988) | http://academic.research.microsoft.com/Publication/667354/a-case-for-redundant-arrays-of-inexpensive-disks-raid | 
+mas-p-2-16-39 | End-to-end arguments in system design (1984) | http://academic.research.microsoft.com/Publication/1498/end-to-end-arguments-in-system-design | 
+mas-p-2-16-40 | How to Make a Multiprocessor Computer That Correctly Executes Multiprocess Programs (1979) | http://academic.research.microsoft.com/Publication/715621/how-to-make-a-multiprocessor-computer-that-correctly-executes-multiprocess-programs | 
+mas-p-2-16-41 | Wide-area cooperative storage with CFS (2001) | http://academic.research.microsoft.com/Publication/124388/wide-area-cooperative-storage-with-cfs | 
+mas-p-2-16-42 | The Click modular router (2000) | http://academic.research.microsoft.com/Publication/122657/the-click-modular-router | 
+mas-p-2-16-43 | MPI: A Message-Passing Interface Standard (1994) | http://academic.research.microsoft.com/Publication/3091/mpi-a-message-passing-interface-standard | 
+mas-p-2-16-44 | Using MPI: Portable Parallel Programming with the Message-Passing Interface (1999) | http://academic.research.microsoft.com/Publication/1370099/using-mpi-portable-parallel-programming-with-the-message-passing-interface | 
+mas-p-2-16-45 | The Google file system (2003) | http://academic.research.microsoft.com/Publication/573926/the-google-file-system | 
+mas-p-2-16-46 | Scale and performance in a distributed file system (1988) | http://academic.research.microsoft.com/Publication/803529/scale-and-performance-in-a-distributed-file-system | 
+mas-p-2-16-47 | The Physiology of Grid: Open Grid Services Architecture for Distributed Systems Integration (2003) | http://academic.research.microsoft.com/Publication/3941110/the-physiology-of-grid-open-grid-services-architecture-for-distributed-systems-integration | 
+mas-p-2-16-48 | Memory Coherence in Shared Virtual Memory Systems (1989) | http://academic.research.microsoft.com/Publication/19144/memory-coherence-in-shared-virtual-memory-systems | 
+mas-p-2-16-49 | A fast and high quality multilevel scheme for partitioning irregulargraphs (1999) | http://academic.research.microsoft.com/Publication/1318048/a-fast-and-high-quality-multilevel-scheme-for-partitioning-irregulargraphs | 
+mas-p-2-16-50 | System Structure for Software Fault Tolerance (1975) | http://academic.research.microsoft.com/Publication/765946/system-structure-for-software-fault-tolerance | 
+mas-p-2-16-51 | Sorting Networks and Their Applications (1968) | http://academic.research.microsoft.com/Publication/586510/sorting-networks-and-their-applications | 
+mas-p-2-16-52 | Free Riding on Gnutella (2000) | http://academic.research.microsoft.com/Publication/199762/free-riding-on-gnutella | 
+mas-p-2-16-53 | Linearizability: a correctness condition for concurrent objects (1990) | http://academic.research.microsoft.com/Publication/857045/linearizability-a-correctness-condition-for-concurrent-objects | 
+mas-p-2-16-54 | Search and replication in unstructured peer-to-peer networks (2002) | http://academic.research.microsoft.com/Publication/5503/search-and-replication-in-unstructured-peer-to-peer-networks | 
+mas-p-2-16-55 | Disconnected Operation in the Coda File System (1992) | http://academic.research.microsoft.com/Publication/267521/disconnected-operation-in-the-coda-file-system | 
+mas-p-2-16-56 | Grid Information Services for Distributed Resource Sharing (2001) | http://academic.research.microsoft.com/Publication/114684/grid-information-services-for-distributed-resource-sharing | 
+mas-p-2-16-57 | Self-stabilizing systems in spite of distributed control (1974) | http://academic.research.microsoft.com/Publication/775440/self-stabilizing-systems-in-spite-of-distributed-control | 
+mas-p-2-16-58 | Design and evaluation of a wide-area event notification service (2001) | http://academic.research.microsoft.com/Publication/103595/design-and-evaluation-of-a-wide-area-event-notification-service | 
+mas-p-2-16-59 | A High-Performance, Portable Implementation of the MPI Message Passing Interface Standard (1996) | http://academic.research.microsoft.com/Publication/709747/a-high-performance-portable-implementation-of-the-mpi-message-passing-interface-standard | 
+mas-p-2-16-60 | Mibench: a free, commercially representative embedded benchmark suite (2001) | http://academic.research.microsoft.com/Publication/1281978/mibench-a-free-commercially-representative-embedded-benchmark-suite | 
+mas-p-2-16-61 | Virtual Time (1983) | http://academic.research.microsoft.com/Publication/531656/virtual-time | 
+mas-p-2-16-62 | Linda in context (1989) | http://academic.research.microsoft.com/Publication/774364/linda-in-context | 
+mas-p-2-16-63 | Impossibility of distributed consensus with one faulty process (1982) | http://academic.research.microsoft.com/Publication/3211960/impossibility-of-distributed-consensus-with-one-faulty-process | 
+mas-p-2-16-64 | Operating System Concepts (2003) | http://academic.research.microsoft.com/Publication/3522611/operating-system-concepts | 
+mas-p-2-16-65 | The network weather service: a distributed resource performance forecasting service for metacomputing (1999) | http://academic.research.microsoft.com/Publication/1950639/the-network-weather-service-a-distributed-resource-performance-forecasting-service-for | 
+mas-p-2-16-66 | The grid 2: blueprint for a new computing infrastructure (2004) | http://academic.research.microsoft.com/Publication/1396173/the-grid-2-blueprint-for-a-new-computing-infrastructure | 
+mas-p-2-16-67 | Interconnection networks - an engineering approach (1997) | http://academic.research.microsoft.com/Publication/1309397/interconnection-networks-an-engineering-approach | 
+mas-p-2-16-68 | The many faces of publish/subscribe (2003) | http://academic.research.microsoft.com/Publication/133212/the-many-faces-of-publish-subscribe | 
+mas-p-2-16-69 | PVM: A Framework for Parallel Distributed Computing (1990) | http://academic.research.microsoft.com/Publication/393494/pvm-a-framework-for-parallel-distributed-computing | 
+mas-p-2-16-70 | Implementing fault-tolerant services using the state machine approach: a tutorial (1990) | http://academic.research.microsoft.com/Publication/48163/implementing-fault-tolerant-services-using-the-state-machine-approach-a-tutorial | 
+mas-p-2-16-71 | High performance compilers for parallel computing (1996) | http://academic.research.microsoft.com/Publication/694568/high-performance-compilers-for-parallel-computing | 
+mas-p-2-16-72 | Social structure and organizations (1965) | http://academic.research.microsoft.com/Publication/2035355/social-structure-and-organizations | 
+mas-p-2-16-73 | Introduction to parallel algorithms and architectures: arrays trees hypercubes (1992) | http://academic.research.microsoft.com/Publication/1376344/introduction-to-parallel-algorithms-and-architectures-arrays-trees-hypercubes | 
+mas-p-2-16-74 | A set of level 3 basic linear algebra subprograms (1990) | http://academic.research.microsoft.com/Publication/804808/a-set-of-level-3-basic-linear-algebra-subprograms | 
+mas-p-2-16-75 | A Security Architecture for Computational Grids (1998) | http://academic.research.microsoft.com/Publication/213076/a-security-architecture-for-computational-grids | 
+mas-p-2-16-76 | LogP: towards a realistic model of parallel computation (1993) | http://academic.research.microsoft.com/Publication/3416/logp-towards-a-realistic-model-of-parallel-computation | 
+mas-p-2-16-77 | Storage Management and Caching in PAST, A Large-scale, Persistent Peer-to-peer Storage Utility (2001) | http://academic.research.microsoft.com/Publication/134900/storage-management-and-caching-in-past-a-large-scale-persistent-peer-to-peer-storage-utility | 
+mas-p-2-16-78 | Reaching Agreement in the Presence of Faults (1980) | http://academic.research.microsoft.com/Publication/788106/reaching-agreement-in-the-presence-of-faults | 
+mas-p-2-16-79 | Modern Operating Systems (1992) | http://academic.research.microsoft.com/Publication/695235/modern-operating-systems | 
+mas-p-2-16-80 | Wait-free synchronization (1991) | http://academic.research.microsoft.com/Publication/857143/wait-free-synchronization | 
+mas-p-2-16-81 | Memory consistency and event ordering in scalable shared-memory multiprocessors (1990) | http://academic.research.microsoft.com/Publication/29999/memory-consistency-and-event-ordering-in-scalable-shared-memory-multiprocessors | 
+mas-p-2-16-82 | Tapestry: A Resilient Global-scale Overlay for Service Deployment (2004) | http://academic.research.microsoft.com/Publication/23779/tapestry-a-resilient-global-scale-overlay-for-service-deployment | 
+mas-p-2-16-83 | A Survey of Wormhole Routing Techniques in Direct Networks (1993) | http://academic.research.microsoft.com/Publication/846717/a-survey-of-wormhole-routing-techniques-in-direct-networks | 
+mas-p-2-16-84 | A data locality optimizing algorithm (1991) | http://academic.research.microsoft.com/Publication/564372/a-data-locality-optimizing-algorithm | 
+mas-p-2-16-85 | Multicast routing in datagram internetworks and extended LANs (1990) | http://academic.research.microsoft.com/Publication/803417/multicast-routing-in-datagram-internetworks-and-extended-lans | 
+mas-p-2-16-86 | Epidemic algorithms for replicated database maintenance (1987) | http://academic.research.microsoft.com/Publication/564769/epidemic-algorithms-for-replicated-database-maintenance | 
+mas-p-2-16-87 | Lightweight causal and atomic group multicast (1991) | http://academic.research.microsoft.com/Publication/803364/lightweight-causal-and-atomic-group-multicast | 
+mas-p-2-16-88 | Transactional Memory: Architectural Support for Lock-Free Data Structures (1993) | http://academic.research.microsoft.com/Publication/349252/transactional-memory-architectural-support-for-lock-free-data-structures | 
+mas-p-2-16-89 | Virtual Time and Global States of Distributed Systems (1988) | http://academic.research.microsoft.com/Publication/291288/virtual-time-and-global-states-of-distributed-systems | 
+mas-p-2-16-90 | The small-world phenomenon: an algorithm perspective (2000) | http://academic.research.microsoft.com/Publication/576471/the-small-world-phenomenon-an-algorithm-perspective | 
+mas-p-2-16-91 | Introduction to parallel algorithms and architectures: arrays (1993) | http://academic.research.microsoft.com/Publication/1268493/introduction-to-parallel-algorithms-and-architectures-arrays | 
+mas-p-2-16-92 | Grid Services for Distributed System Integration (2002) | http://academic.research.microsoft.com/Publication/847645/grid-services-for-distributed-system-integration | 
+mas-p-2-16-93 | The cosmic cube (1985) | http://academic.research.microsoft.com/Publication/775086/the-cosmic-cube | 
+mas-p-2-16-94 | Distributed systems: concepts and design (2000) | http://academic.research.microsoft.com/Publication/1344764/distributed-systems-concepts-and-design | 
+mas-p-2-16-95 | A hierarchical O(N log N) force-calculation algorithm (1986) | http://academic.research.microsoft.com/Publication/2578333/a-hierarchical-o-n-log-n-force-calculation-algorithm | 
+mas-p-2-16-96 | Virtual-Channel Flow Control (1992) | http://academic.research.microsoft.com/Publication/805580/virtual-channel-flow-control | 
+mas-p-2-16-97 | I-TCP: Indirect TCP for Mobile Hosts (1995) | http://academic.research.microsoft.com/Publication/607394/i-tcp-indirect-tcp-for-mobile-hosts | 
+mas-p-2-16-98 | The Stanford Dash Multiprocessor (1992) | http://academic.research.microsoft.com/Publication/848440/the-stanford-dash-multiprocessor | 
+mas-p-2-16-99 | The Stanford FLASH multiprocessor (1994) | http://academic.research.microsoft.com/Publication/213792/the-stanford-flash-multiprocessor | 
+mas-p-2-16-100 | Weighted voting for replicated data (1979) | http://academic.research.microsoft.com/Publication/425279/weighted-voting-for-replicated-data | 
