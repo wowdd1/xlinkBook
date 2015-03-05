@@ -14,7 +14,8 @@ class YoutubeSpider(Spider):
                 'berkeley': 'https://www.youtube.com/user/UCBerkeley/playlists',\
                 'cmu': 'https://www.youtube.com/user/CarnegieMellonU/playlists?view=1&sort=dd',\
                 'harvard': 'https://www.youtube.com/user/harvard/playlists',\
-                'caltech': 'https://www.youtube.com/user/caltech/playlists'}
+                'caltech': 'https://www.youtube.com/user/caltech/playlists',\
+                'udacity' : 'https://www.youtube.com/user/Udacity/playlists?view=1&sort=dd'}
 
     def getCourse(self, html):
         soup = BeautifulSoup(html)
