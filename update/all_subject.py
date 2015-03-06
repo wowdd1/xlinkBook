@@ -16,6 +16,7 @@ subject_dict = {\
     "Communication" : "communication",\
     "Computer Science" : "eecs",\
     "EECS" : "eecs",\
+    "Programming" : "eecs",\
     "163-OCW" : "163-ocw",\
     "Youtube" : "youtube",\
     "Design" : "design",\
