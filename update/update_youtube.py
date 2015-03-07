@@ -15,18 +15,19 @@ class YoutubeSpider(Spider):
                 'cmu': 'https://www.youtube.com/user/CarnegieMellonU/playlists?view=1&sort=dd',\
                 'harvard': 'https://www.youtube.com/user/harvard/playlists',\
                 'caltech': 'https://www.youtube.com/user/caltech/playlists',\
-                'udacity' : 'https://www.youtube.com/user/Udacity/playlists?view=1&sort=dd'}
+                'udacity' : 'https://www.youtube.com/user/Udacity/playlists?view=1&sort=dd',\
+                'nptel' : 'https://www.youtube.com/user/nptelhrd/playlists'}
 
-    def getCourse(self, html):
+    def getCourse(self, html, user):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):
             if a.attrs.get('href', '') != '' and a['href'].startswith('/playlist?list='):
                 key = a.text.strip()
                 if key.find('|') != -1:
                     key = key[key.find('|') + 1 :].strip() 
-                if key.startswith('Computer Science '):
+                if user == 'berkeley' and key.startswith('Computer Science '):
                     key = key.replace('Computer Science ', 'CS')
-                if key.startswith('Electrical Engineering '):
+                if user == 'berkeley' and key.startswith('Electrical Engineering '):
                     key = key.replace('Electrical Engineering ', 'EE')
                 self.courses[key] = 'https://www.youtube.com' + a['href']
 
@@ -42,7 +43,7 @@ class YoutubeSpider(Spider):
     def getPlaylist(self, user, url):
         self.courses = {}
         r = requests.get(url)
-        self.getCourse(r.text)
+        self.getCourse(r.text, user)
 
         load_more_href = self.getLoadMoreHref(r.text)
 
@@ -52,7 +53,7 @@ class YoutubeSpider(Spider):
             jobj = json.loads(r.text)
             load_more_href = self.getLoadMoreHref(jobj['load_more_widget_html'].strip())
 
-            self.getCourse(jobj['content_html'])
+            self.getCourse(jobj['content_html'], user)
 
 
         file_name = self.get_file_name(self.school + '/' + user, self.school)
@@ -60,7 +61,6 @@ class YoutubeSpider(Spider):
         f = self.open_db(file_name + ".tmp")
         self.count = 0
         for k, v in [(k,self.courses[k]) for k in sorted(self.courses.keys())]:
-            print k + ' ' + v
             self.count += 1
             video_id = user + '-' + str(self.count)
             if k.startswith('MIT'):
@@ -69,6 +69,7 @@ class YoutubeSpider(Spider):
                     video_id = user + '-' + k[0 : k.find(' ')]
                     k = k[k.find(' ') : ].strip()
 
+            print k + ' ' + v
             self.write_db(f, video_id, k, v, 'videourl:' + v)
 
         self.close_db(f)
