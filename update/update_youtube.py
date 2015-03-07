@@ -18,6 +18,11 @@ class YoutubeSpider(Spider):
                 'udacity' : 'https://www.youtube.com/user/Udacity/playlists?view=1&sort=dd',\
                 'cambridge' : 'https://www.youtube.com/user/CambridgeUniversity/playlists?sort=dd&view=1',\
                 'oxford' : 'https://www.youtube.com/user/oxford/playlists?sort=dd&view=1',\
+                'ucla' : 'https://www.youtube.com/user/UCLA/playlists',\
+                'texas' : 'https://www.youtube.com/user/utaustintexas/playlists',\
+                'imperialcollegelondon' : 'https://www.youtube.com/user/imperialcollegevideo/playlists',\
+                'toronto' : 'https://www.youtube.com/user/universitytoronto/playlists',\
+                'uns' : 'https://www.youtube.com/user/NUScast/playlists',\
                 'nptel' : 'https://www.youtube.com/user/nptelhrd/playlists'}
 
     def getCourse(self, html, user):
