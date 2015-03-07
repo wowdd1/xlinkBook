@@ -17,6 +17,7 @@ class YoutubeSpider(Spider):
                 'caltech': 'https://www.youtube.com/user/caltech/playlists',\
                 'udacity' : 'https://www.youtube.com/user/Udacity/playlists?view=1&sort=dd',\
                 'cambridge' : 'https://www.youtube.com/user/CambridgeUniversity/playlists?sort=dd&view=1',\
+                'oxford' : 'https://www.youtube.com/user/oxford/playlists?sort=dd&view=1',\
                 'nptel' : 'https://www.youtube.com/user/nptelhrd/playlists'}
 
     def getCourse(self, html, user):
