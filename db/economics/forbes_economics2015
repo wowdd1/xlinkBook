@@ -1,0 +1,1826 @@
+ # | 1 Bill Gates  | | description:net worth:$79.2B age:59 Microsoft United States
+ # | 2 Carlos Slim Helu  | | description:net worth:$77.1B age:75 telecom Mexico
+ # | 3 Warren Buffett  | | description:net worth:$72.7B age:84 Berkshire Hathaway United States
+ # | 4 Amancio Ortega  | | description:net worth:$64.5B age:78 Zara Spain
+ # | 5 Larry Ellison  | | description:net worth:$54.3B age:70 Oracle United States
+ # | 6 Charles Koch  | | description:net worth:$42.9B age:79 diversified United States
+ # | 6 David Koch  | | description:net worth:$42.9B age:74 diversified United States
+ # | 8 Christy Walton  | | description:net worth:$41.7B age:60 Wal-Mart United States
+ # | 9 Jim Walton  | | description:net worth:$40.6B age:67 Wal-Mart United States
+ # | 10 Liliane Bettencourt  | | description:net worth:$40.1B age:92 L'Oreal France
+ # | 11 Alice Walton  | | description:net worth:$39.4B age:65 Wal-Mart United States
+ # | 12 S. Robson Walton  | | description:net worth:$39.1B age:71 Wal-Mart United States
+ # | 13 Bernard Arnault  | | description:net worth:$37.2B age:66 LVMH France
+ # | 14 Michael Bloomberg  | | description:net worth:$35.5B age:73 Bloomberg LP United States
+ # | 15 Jeff Bezos  | | description:net worth:$34.8B age:51 Amazon.com United States
+ # | 16 Mark Zuckerberg  | | description:net worth:$33.4B age:30 Facebook United States
+ # | 17 Li Ka-shing  | | description:net worth:$33.3B age:86 diversified Hong Kong
+ # | 18 Sheldon Adelson  | | description:net worth:$31.4B age:81 casinos United States
+ # | 19 Larry Page  | | description:net worth:$29.7B age:41 Google United States
+ # | 20 Sergey Brin  | | description:net worth:$29.2B age:41 Google United States
+ # | 21 Georg Schaeffler  | | description:net worth:$26.9B age:50 ball bearings Germany
+ # | 22 Forrest Mars, Jr.  | | description:net worth:$26.6B age:83 candy United States
+ # | 22 Jacqueline Mars  | | description:net worth:$26.6B age:75 candy United States
+ # | 22 John Mars  | | description:net worth:$26.6B age:78 candy United States
+ # | 25 David Thomson  | | description:net worth:$25.5B age:57 media Canada
+ # | 26 Jorge Paulo Lemann  | | description:net worth:$25B age:75 beer Brazil
+ # | 27 Lee Shau Kee  | | description:net worth:$24.8B age:87 real estate Hong Kong
+ # | 28 Stefan Persson  | | description:net worth:$24.5B age:67 H&M Sweden
+ # | 29 George Soros  | | description:net worth:$24.2B age:84 hedge funds United States
+ # | 29 Wang Jianlin  | | description:net worth:$24.2B age:60 real estate China
+ # | 31 Carl Icahn  | | description:net worth:$23.5B age:79 investments United States
+ # | 32 Maria Franca Fissolo  | | description:net worth:$23.4B age:97 Nutella, chocolates Italy
+ # | 33 Jack Ma  | | description:net worth:$22.7B age:50 e-commerce China
+ # | 34 Prince Alwaleed Bin Talal Alsaud  | | description:net worth:$22.6B age:60 investments Saudi Arabia
+ # | 35 Steve Ballmer  | | description:net worth:$21.5B age:58 Microsoft United States
+ # | 35 Phil Knight  | | description:net worth:$21.5B age:77 Nike United States
+ # | 37 Beate Heister & Karl Albrecht Jr.  | | description:net worth:$21.3B age:- supermarkets Germany
+ # | 38 Li Hejun  | | description:net worth:$21.1B age:47 solar power equipment China
+ # | 39 Mukesh Ambani  | | description:net worth:$21B age:57 petrochemicals, oil & gas India
+ # | 40 Leonardo Del Vecchio  | | description:net worth:$20.4B age:79 eyeglasses Italy
+ # | 41 Len Blavatnik  | | description:net worth:$20.2B age:57 diversified United States
+ # | 41 Tadashi Yanai  | | description:net worth:$20.2B age:66 retail Japan
+ # | 43 Charles Ergen  | | description:net worth:$20.1B age:62 Dish Network United States
+ # | 44 Dilip Shanghvi  | | description:net worth:$20B age:59 pharmaceuticals India
+ # | 45 Laurene Powell Jobs  | | description:net worth:$19.5B age:51 Apple, Disney United States
+ # | 46 Dieter Schwarz  | | description:net worth:$19.4B age:75 retail Germany
+ # | 47 Michael Dell  | | description:net worth:$19.2B age:50 Dell United States
+ # | 48 Azim Premji  | | description:net worth:$19.1B age:69 software India
+ # | 49 Theo Albrecht, Jr.  | | description:net worth:$19B age:64 Aldi, Trader Joe's Germany
+ # | 50 Michael Otto  | | description:net worth:$18.1B age:71 retail, real estate Germany
+ # | 51 Paul Allen  | | description:net worth:$17.5B age:62 Microsoft, investments United States
+ # | 52 Joseph Safra  | | description:net worth:$17.3B age:76 banking Brazil
+ # | 53 Anne Cox Chambers  | | description:net worth:$17B age:95 media United States
+ # | 54 Susanne Klatten  | | description:net worth:$16.8B age:52 BMW, pharmaceuticals Germany
+ # | 55 Pallonji Mistry  | | description:net worth:$16.3B age:85 construction Ireland
+ # | 56 Ma Huateng  | | description:net worth:$16.1B age:43 internet media China
+ # | 57 Patrick Drahi  | | description:net worth:$16B age:51 Telecom France
+ # | 58 Thomas & Raymond Kwok  | | description:net worth:$15.9B age:- real estate Hong Kong
+ # | 59 Stefan Quandt  | | description:net worth:$15.6B age:48 BMW Germany
+ # | 60 Ray Dalio  | | description:net worth:$15.4B age:65 hedge funds United States
+ # | 60 Vladimir Potanin  | | description:net worth:$15.4B age:54 metals Russia
+ # | 62 Serge Dassault  | | description:net worth:$15.3B age:89 aviation France
+ # | 62 Robin Li  | | description:net worth:$15.3B age:46 internet search China
+ # | 64 Donald Bren  | | description:net worth:$15.2B age:82 real estate United States
+ # | 65 Francois Pinault  | | description:net worth:$14.9B age:78 retail France
+ # | 66 Shiv Nadar  | | description:net worth:$14.8B age:69 information technology India
+ # | 67 Aliko Dangote  | | description:net worth:$14.7B age:57 cement, sugar, flour Nigeria
+ # | 68 Mikhail Fridman  | | description:net worth:$14.6B age:50 oil, banking, telecom Russia
+ # | 69 Hinduja Brothers  | | description:net worth:$14.5B age:- diversified United Kingdom
+ # | 69 Ronald Perelman  | | description:net worth:$14.5B age:72 leveraged buyouts United States
+ # | 71 Cheng Yu-tung  | | description:net worth:$14.4B age:89 diversified Hong Kong
+ # | 71 Alisher Usmanov  | | description:net worth:$14.4B age:61 steel & mining, telecom, investments Russia
+ # | 73 Henry Sy  | | description:net worth:$14.2B age:90 diversified Philippines
+ # | 73 Viktor Vekselberg  | | description:net worth:$14.2B age:57 metals, energy Russia
+ # | 75 Masayoshi Son  | | description:net worth:$14.1B age:57 internet, telecom Japan
+ # | 76 James Simons  | | description:net worth:$14B age:76 hedge funds United States
+ # | 77 German Larrea Mota Velasco  | | description:net worth:$13.9B age:61 mining Mexico
+ # | 77 Rupert Murdoch  | | description:net worth:$13.9B age:83 media United States
+ # | 77 Johanna Quandt  | | description:net worth:$13.9B age:88 BMW Germany
+ # | 80 David & Simon Reuben  | | description:net worth:$13.7B age:72 investments, real estate United Kingdom
+ # | 81 Dhanin Chearavanont  | | description:net worth:$13.6B age:75 food Thailand
+ # | 82 Iris Fontbona  | | description:net worth:$13.5B age:72 mining Chile
+ # | 82 Lui Che Woo  | | description:net worth:$13.5B age:85 casinos Hong Kong
+ # | 82 Lakshmi Mittal  | | description:net worth:$13.5B age:64 steel India
+ # | 85 Abigail Johnson  | | description:net worth:$13.4B age:53 money management United States
+ # | 85 Luis Carlos Sarmiento  | | description:net worth:$13.4B age:82 banking Colombia
+ # | 87 Lei Jun  | | description:net worth:$13.2B age:45 smartphones China
+ # | 87 Charoen Sirivadhanabhakdi  | | description:net worth:$13.2B age:70 beverages Thailand
+ # | 89 Alexey Mordashov  | | description:net worth:$13B age:49 steel, investments Russia
+ # | 89 Marcel Herrmann Telles  | | description:net worth:$13B age:65 beer Brazil
+ # | 91 Gerald Cavendish Grosvenor  | | description:net worth:$12.6B age:63 real estate United Kingdom
+ # | 92 Hans Rausing  | | description:net worth:$12.5B age:88 packaging Sweden
+ # | 92 Jack Taylor  | | description:net worth:$12.5B age:92 Enterprise Rent-A-Car United States
+ # | 94 Charles Butt  | | description:net worth:$12.3B age:77 supermarkets United States
+ # | 94 Gina Rinehart  | | description:net worth:$12.3B age:61 mining Australia
+ # | 96 Vagit Alekperov  | | description:net worth:$12.2B age:64 Lukoil Russia
+ # | 96 Harold Hamm  | | description:net worth:$12.2B age:69 oil & gas United States
+ # | 96 Patrick Soon-Shiong  | | description:net worth:$12.2B age:63 pharmaceuticals United States
+ # | 99 Stefano Pessina  | | description:net worth:$12.1B age:73 drugstores Italy
+ # | 100 Richard Kinder  | | description:net worth:$12B age:70 pipelines United States
+ # | 100 Elon Musk  | | description:net worth:$12B age:43 Tesla Motors United States
+ # | 100 Stephen Schwarzman  | | description:net worth:$12B age:68 investments United States
+ # | 103 Klaus-Michael Kuehne  | | description:net worth:$11.9B age:77 shipping Germany
+ # | 104 Philip Anschutz  | | description:net worth:$11.8B age:75 investments United States
+ # | 105 Andrew Beal  | | description:net worth:$11.7B age:62 banks, real estate United States
+ # | 105 Leonid Mikhelson  | | description:net worth:$11.7B age:59 gas, chemicals Russia
+ # | 107 Charlene de Carvalho-Heineken  | | description:net worth:$11.6B age:60 Heineken Netherlands
+ # | 107 Vladimir Lisin  | | description:net worth:$11.6B age:58 steel, transport Russia
+ # | 109 Steve Cohen  | | description:net worth:$11.4B age:59 hedge funds United States
+ # | 110 Robert Kuok  | | description:net worth:$11.3B age:91 diversified Malaysia
+ # | 110 Lee Kun-Hee  | | description:net worth:$11.3B age:73 electronics/insurance South Korea
+ # | 110 Carlos Alberto Sicupira  | | description:net worth:$11.3B age:67 beer Brazil
+ # | 113 John Paulson  | | description:net worth:$11.2B age:59 hedge funds United States
+ # | 114 Joseph Lau  | | description:net worth:$10.9B age:63 real estate Hong Kong
+ # | 114 Thomas Peterffy  | | description:net worth:$10.9B age:70 discount brokerage United States
+ # | 116 Mohammed Al Amoudi  | | description:net worth:$10.8B age:68 oil, diversified Saudi Arabia
+ # | 116 Dietrich Mateschitz  | | description:net worth:$10.8B age:70 Red Bull Austria
+ # | 118 Hank & Doug Meijer  | | description:net worth:$10.7B age:- supermarkets United States
+ # | 118 Gennady Timchenko  | | description:net worth:$10.7B age:62 oil & gas Russia
+ # | 120 John Fredriksen  | | description:net worth:$10.5B age:70 shipping Cyprus
+ # | 121 Alberto Bailleres Gonzalez  | | description:net worth:$10.4B age:83 mining Mexico
+ # | 121 Massimiliana Landini Aleotti  | | description:net worth:$10.4B age:72 pharmaceuticals Italy
+ # | 121 David Tepper  | | description:net worth:$10.4B age:57 hedge funds United States
+ # | 124 Zong Qinghou  | | description:net worth:$10.3B age:69 beverages China
+ # | 125 Pierre Castel  | | description:net worth:$9.9B age:88 wine France
+ # | 125 He Xiangjian  | | description:net worth:$9.9B age:72 home appliances China
+ # | 125 Mikhail Prokhorov  | | description:net worth:$9.9B age:49 investments Russia
+ # | 125 Wang Wenyin  | | description:net worth:$9.9B age:47 mining, copper products China
+ # | 129 Ananda Krishnan  | | description:net worth:$9.7B age:76 telecom Malaysia
+ # | 129 Kjeld Kirk Kristiansen  | | description:net worth:$9.7B age:67 Lego Denmark
+ # | 131 Robert & Philip Ng  | | description:net worth:$9.6B age:- real estate Singapore
+ # | 131 Galen Weston  | | description:net worth:$9.6B age:74 retail Canada
+ # | 133 German Khan  | | description:net worth:$9.5B age:53 banking, telecom, retail Russia
+ # | 133 Alain Wertheimer  | | description:net worth:$9.5B age:66 Chanel France
+ # | 133 Gerard Wertheimer  | | description:net worth:$9.5B age:64 Chanel France
+ # | 136 Xavier Niel  | | description:net worth:$9.3B age:47 internet, telecom France
+ # | 137 Roman Abramovich  | | description:net worth:$9.1B age:48 steel, investments Russia
+ # | 137 Leonard Lauder  | | description:net worth:$9.1B age:81 Estee Lauder United States
+ # | 137 Andrey Melnichenko  | | description:net worth:$9.1B age:43 coal, fertilizers Russia
+ # | 137 Hasso Plattner  | | description:net worth:$9.1B age:71 software Germany
+ # | 137 Eric Schmidt  | | description:net worth:$9.1B age:59 Google United States
+ # | 142 Kumar Birla  | | description:net worth:$9B age:47 commodities India
+ # | 142 R. Budi Hartono  | | description:net worth:$9B age:74 banking, tobacco Indonesia
+ # | 142 George Kaiser  | | description:net worth:$9B age:72 oil & gas, banking United States
+ # | 142 John Menard, Jr.  | | description:net worth:$9B age:75 retail United States
+ # | 142 Samuel Newhouse, Jr.  | | description:net worth:$9B age:87 media United States
+ # | 147 Tsai Eng-Meng  | | description:net worth:$8.9B age:58 food, beverages Taiwan
+ # | 147 Wei Jianjun  | | description:net worth:$8.9B age:51 automobiles China
+ # | 149 Ernesto Bertarelli  | | description:net worth:$8.8B age:49 biotech, investments Switzerland
+ # | 149 Carrie Perrodo  | | description:net worth:$8.8B age:64 Inherited France
+ # | 151 Michael Hartono  | | description:net worth:$8.7B age:75 tobacco, banking Indonesia
+ # | 151 Hiroshi Mikitani  | | description:net worth:$8.7B age:50 online retailing Japan
+ # | 153 Pan Sutong  | | description:net worth:$8.6B age:52 real estate Hong Kong
+ # | 153 Klaus Tschira  | | description:net worth:$8.6B age:74 software Germany
+ # | 153 Peter Woo  | | description:net worth:$8.6B age:69 real estate Hong Kong
+ # | 156 Jim Kennedy  | | description:net worth:$8.5B age:67 media United States
+ # | 156 Eyal Ofer  | | description:net worth:$8.5B age:64 real estate, shipping Israel
+ # | 156 Blair Parry-Okeden  | | description:net worth:$8.5B age:64 media United States
+ # | 156 Dmitry Rybolovlev  | | description:net worth:$8.5B age:48 fertilizer Russia
+ # | 160 Petr Kellner  | | description:net worth:$8.4B age:50 banking, insurance Czech Republic
+ # | 160 Margarita Louis-Dreyfus  | | description:net worth:$8.4B age:51 commodities Switzerland
+ # | 162 Sergei Galitsky  | | description:net worth:$8.3B age:47 retail Russia
+ # | 162 John Malone  | | description:net worth:$8.3B age:74 cable television United States
+ # | 162 Donald Newhouse  | | description:net worth:$8.3B age:85 media United States
+ # | 165 Joao Roberto Marinho  | | description:net worth:$8.2B age:61 media Brazil
+ # | 165 Jose Roberto Marinho  | | description:net worth:$8.2B age:59 media Brazil
+ # | 165 Roberto Irineu Marinho  | | description:net worth:$8.2B age:67 media Brazil
+ # | 168 Pierre Omidyar  | | description:net worth:$8B age:47 Ebay United States
+ # | 168 Ricardo Salinas Pliego  | | description:net worth:$8B age:59 retail, media Mexico
+ # | 170 Gianluigi & Rafaela Aponte  | | description:net worth:$7.9B age:- shipping Switzerland
+ # | 170 Dustin Moskovitz  | | description:net worth:$7.9B age:30 Facebook United States
+ # | 172 August von Finck  | | description:net worth:$7.7B age:84 investments Germany
+ # | 172 Leslie Wexner  | | description:net worth:$7.7B age:77 retail United States
+ # | 174 Giorgio Armani  | | description:net worth:$7.6B age:80 fashion Italy
+ # | 174 Thomas Frist, Jr.  | | description:net worth:$7.6B age:76 health care United States
+ # | 174 Takemitsu Takizaki  | | description:net worth:$7.6B age:69 sensors Japan
+ # | 177 James Goodnight  | | description:net worth:$7.5B age:72 software United States
+ # | 177 Jim Pattison  | | description:net worth:$7.5B age:86 diversified Canada
+ # | 179 Silvio Berlusconi  | | description:net worth:$7.4B age:78 media Italy
+ # | 179 David Duffield  | | description:net worth:$7.4B age:74 business software United States
+ # | 179 Edward Johnson, III.  | | description:net worth:$7.4B age:84 money management United States
+ # | 179 Liu Qiangdong  | | description:net worth:$7.4B age:40 e-commerce China
+ # | 179 Johann Rupert  | | description:net worth:$7.4B age:64 luxury goods South Africa
+ # | 184 Alexei Kuzmichev  | | description:net worth:$7.3B age:52 banking, telecom, retail Russia
+ # | 185 Eli Broad  | | description:net worth:$7.2B age:81 investments United States
+ # | 185 Charles Cadogan  | | description:net worth:$7.2B age:77 real estate United Kingdom
+ # | 185 Dietmar Hopp  | | description:net worth:$7.2B age:74 software Germany
+ # | 185 Uday Kotak  | | description:net worth:$7.2B age:55 banking India
+ # | 185 Jay Y. Lee  | | description:net worth:$7.2B age:46 electronics/tourism South Korea
+ # | 185 Suh Kyung-Bae  | | description:net worth:$7.2B age:52 cosmetics South Korea
+ # | 191 Micky Arison  | | description:net worth:$7.1B age:65 Carnival Cruises United States
+ # | 191 Emmanuel Besnier  | | description:net worth:$7.1B age:44 cheese France
+ # | 193 Walter Kwok  | | description:net worth:$7B age:64 real estate Hong Kong
+ # | 193 Ralph Lauren  | | description:net worth:$7B age:75 Ralph Lauren United States
+ # | 195 David Geffen  | | description:net worth:$6.9B age:72 entertainment United States
+ # | 195 Graeme Hart  | | description:net worth:$6.9B age:59 investments New Zealand
+ # | 195 Gordon Moore  | | description:net worth:$6.9B age:86 Intel United States
+ # | 195 Wang Jing  | | description:net worth:$6.9B age:42 telecom services China
+ # | 199 Goh Cheng Liang  | | description:net worth:$6.8B age:- paints Singapore
+ # | 199 Denis O'Brien  | | description:net worth:$6.8B age:56 telecom Ireland
+ # | 201 Rinat Akhmetov  | | description:net worth:$6.7B age:48 steel, coal Ukraine
+ # | 201 Vincent Bollore  | | description:net worth:$6.7B age:62 investments France
+ # | 201 Jean-Claude Decaux  | | description:net worth:$6.7B age:77 advertising France
+ # | 201 Eva Gonda de Rivera  | | description:net worth:$6.7B age:- beverages Mexico
+ # | 201 Nicky Oppenheimer  | | description:net worth:$6.7B age:69 diamonds South Africa
+ # | 201 Maria-Elisabeth Schaeffler  | | description:net worth:$6.7B age:73 ball bearings Germany
+ # | 201 Reinhold Wuerth  | | description:net worth:$6.7B age:79 fasteners Germany
+ # | 208 Gautam Adani  | | description:net worth:$6.6B age:52 commodities, infrastructure India
+ # | 208 William Ding  | | description:net worth:$6.6B age:43 online games China
+ # | 208 Johann Graf  | | description:net worth:$6.6B age:68 gambling Austria
+ # | 208 Charles Johnson  | | description:net worth:$6.6B age:82 money management United States
+ # | 208 Jan Koum  | | description:net worth:$6.6B age:39 WhatsApp United States
+ # | 208 Liu Yongxing  | | description:net worth:$6.6B age:66 agribusiness China
+ # | 208 Sunil Mittal  | | description:net worth:$6.6B age:57 telecom India
+ # | 208 Cyrus Poonawalla  | | description:net worth:$6.6B age:73 vaccines India
+ # | 216 Carl Cook  | | description:net worth:$6.5B age:52 medical devices United States
+ # | 216 Ken Griffin  | | description:net worth:$6.5B age:46 hedge funds United States
+ # | 216 James Irving  | | description:net worth:$6.5B age:86 diversified Canada
+ # | 216 Stephen Ross  | | description:net worth:$6.5B age:74 real estate United States
+ # | 220 Abdulla bin Ahmad Al Ghurair  | | description:net worth:$6.4B age:- diversified United Arab Emirates
+ # | 220 Richard LeFrak  | | description:net worth:$6.4B age:69 real estate United States
+ # | 220 Melker Schorling  | | description:net worth:$6.4B age:67 investments Sweden
+ # | 220 Charles Schwab  | | description:net worth:$6.4B age:77 discount brokerage United States
+ # | 220 Heinz Hermann Thiele  | | description:net worth:$6.4B age:73 brakes Germany
+ # | 225 Stanley Kroenke  | | description:net worth:$6.3B age:67 sports, real estate United States
+ # | 225 Sandra Ortega Mera  | | description:net worth:$6.3B age:46 Zara Spain
+ # | 225 Sumner Redstone  | | description:net worth:$6.3B age:91 Media United States
+ # | 225 Nassef Sawiris  | | description:net worth:$6.3B age:54 construction Egypt
+ # | 225 Christoffel Wiese  | | description:net worth:$6.3B age:73 retailing South Africa
+ # | 230 Majid Al Futtaim  | | description:net worth:$6.2B age:- real estate, retail United Arab Emirates
+ # | 230 Dannine Avara  | | description:net worth:$6.2B age:51 pipelines United States
+ # | 230 Oleg Deripaska  | | description:net worth:$6.2B age:47 aluminum, utilities Russia
+ # | 230 Scott Duncan  | | description:net worth:$6.2B age:32 pipelines United States
+ # | 230 Curt Engelhorn  | | description:net worth:$6.2B age:88 pharmaceuticals Germany
+ # | 230 Milane Frantz  | | description:net worth:$6.2B age:45 pipelines United States
+ # | 230 Hui Ka Yan  | | description:net worth:$6.2B age:56 real estate China
+ # | 230 Rupert Johnson, Jr.  | | description:net worth:$6.2B age:73 money management United States
+ # | 230 Michael Kadoorie  | | description:net worth:$6.2B age:73 diversified Hong Kong
+ # | 230 Kelcy Warren  | | description:net worth:$6.2B age:59 pipelines United States
+ # | 240 Chan Laiwa  | | description:net worth:$6.1B age:74 real estate China
+ # | 240 Terry Gou  | | description:net worth:$6.1B age:64 electronics Taiwan
+ # | 240 Willi & Isolde Liebherr  | | description:net worth:$6.1B age:- construction Switzerland
+ # | 240 Ira Rennert  | | description:net worth:$6.1B age:80 investments United States
+ # | 240 Randa Williams  | | description:net worth:$6.1B age:53 pipelines United States
+ # | 240 Hansjoerg Wyss  | | description:net worth:$6.1B age:80 medical devices Switzerland
+ # | 246 David Green  | | description:net worth:$6B age:73 retail United States
+ # | 246 Augusto & Giorgio Perfetti  | | description:net worth:$6B age:- candy Italy
+ # | 248 Jin Sook & Do Won Chang  | | description:net worth:$5.9B age:60 fashion retail United States
+ # | 248 Bruce Halle  | | description:net worth:$5.9B age:84 tires United States
+ # | 248 Lu Zhiqiang  | | description:net worth:$5.9B age:62 diversified China
+ # | 248 Bruno Schroder  | | description:net worth:$5.9B age:82 banking United Kingdom
+ # | 248 Joseph Tsai  | | description:net worth:$5.9B age:51 e-commerce Canada
+ # | 248 Dennis Washington  | | description:net worth:$5.9B age:80 construction, mining United States
+ # | 254 John Gokongwei, Jr.  | | description:net worth:$5.8B age:87 diversified Philippines
+ # | 254 Desh Bandhu Gupta  | | description:net worth:$5.8B age:77 pharmaceuticals India
+ # | 254 Pauline MacMillan Keinath  | | description:net worth:$5.8B age:81 Cargill United States
+ # | 254 Loretta Robinson  | | description:net worth:$5.8B age:75 cable tv Canada
+ # | 254 Zhang Zhidong  | | description:net worth:$5.8B age:43 internet media China
+ # | 259 Chung Mong-Koo  | | description:net worth:$5.7B age:76 motor vehicles South Korea
+ # | 259 Richard DeVos  | | description:net worth:$5.7B age:89 Amway United States
+ # | 259 Guo Guangchang  | | description:net worth:$5.7B age:48 diversified China
+ # | 259 Lin Yu-lin  | | description:net worth:$5.7B age:79 real estate Taiwan
+ # | 259 Andrei Skoch  | | description:net worth:$5.7B age:49 steel Russia
+ # | 259 Juan-Miguel Villar Mir  | | description:net worth:$5.7B age:83 construction Spain
+ # | 265 Maria Asuncion Aramburuzabala  | | description:net worth:$5.6B age:51 beer, investments Mexico
+ # | 265 Ray Lee Hunt  | | description:net worth:$5.6B age:72 oil, real estate United States
+ # | 265 Ann Walton Kroenke  | | description:net worth:$5.6B age:66 Wal-Mart United States
+ # | 265 Quek Leng Chan  | | description:net worth:$5.6B age:73 banking, real estate Malaysia
+ # | 265 Keiichiro Takahara  | | description:net worth:$5.6B age:83 diapers Japan
+ # | 265 Stef Wertheimer  | | description:net worth:$5.6B age:88 tools Israel
+ # | 271 Arthur Irving  | | description:net worth:$5.5B age:85 oil Canada
+ # | 271 Herbert Kohler, Jr.  | | description:net worth:$5.5B age:76 plumbing fixtures United States
+ # | 271 Anders Holch Povlsen  | | description:net worth:$5.5B age:42 retail Denmark
+ # | 271 Jorn Rausing  | | description:net worth:$5.5B age:55 inherited Sweden
+ # | 271 Thomas Schmidheiny  | | description:net worth:$5.5B age:69 cement Switzerland
+ # | 271 Cho Yaw Wee  | | description:net worth:$5.5B age:86 banking Singapore
+ # | 277 Hui Wing Mau  | | description:net worth:$5.4B age:64 real estate Hong Kong
+ # | 277 Joe Lewis  | | description:net worth:$5.4B age:78 investments United Kingdom
+ # | 277 Juan Roig  | | description:net worth:$5.4B age:65 supermarkets Spain
+ # | 277 Robert Rowling  | | description:net worth:$5.4B age:61 investments United States
+ # | 277 Teh Hong Piow  | | description:net worth:$5.4B age:84 banking Malaysia
+ # | 277 Harry Triguboff  | | description:net worth:$5.4B age:82 property Australia
+ # | 283 Leon Black  | | description:net worth:$5.3B age:63 private equity United States
+ # | 283 Carlos and Alejandro Bulgheroni  | | description:net worth:$5.3B age:- oil and gas Argentina
+ # | 283 Garrett Camp  | | description:net worth:$5.3B age:36 car service Canada
+ # | 283 Leonid Fedun  | | description:net worth:$5.3B age:58 Lukoil Russia
+ # | 283 Savitri Jindal  | | description:net worth:$5.3B age:64 steel India
+ # | 283 Antonia Johnson  | | description:net worth:$5.3B age:71 diversified Sweden
+ # | 283 Travis Kalanick  | | description:net worth:$5.3B age:38 car service United States
+ # | 283 Leonard Stern  | | description:net worth:$5.3B age:76 real estate United States
+ # | 291 David & Frederick Barclay  | | description:net worth:$5.2B age:81 media, retail United Kingdom
+ # | 291 Vivien Chen  | | description:net worth:$5.2B age:56 real estate Hong Kong
+ # | 291 Bidzina Ivanishvili  | | description:net worth:$5.2B age:59 investments Georgia
+ # | 291 Micky Jagtiani  | | description:net worth:$5.2B age:63 retail India
+ # | 291 Henry Kravis  | | description:net worth:$5.2B age:71 private equity United States
+ # | 291 James Packer  | | description:net worth:$5.2B age:47 casinos Australia
+ # | 291 Enrique Razon, Jr.  | | description:net worth:$5.2B age:55 ports Philippines
+ # | 291 Odd Reitan  | | description:net worth:$5.2B age:63 retail, real estate Norway
+ # | 291 George Roberts  | | description:net worth:$5.2B age:71 private equity United States
+ # | 291 Paolo & Gianfelice Mario Rocca  | | description:net worth:$5.2B age:- pipe manufacturing Italy
+ # | 301 Pyotr Aven  | | description:net worth:$5.1B age:59 banking, telecom Russia
+ # | 301 Ivan Glasenberg  | | description:net worth:$5.1B age:58 mining Switzerland
+ # | 301 Philip & Cristina Green  | | description:net worth:$5.1B age:62 retail United Kingdom
+ # | 301 Lu Guanqiu  | | description:net worth:$5.1B age:70 diversified China
+ # | 301 Arnon Milchan  | | description:net worth:$5.1B age:70 movie making Israel
+ # | 301 Dan Olsson  | | description:net worth:$5.1B age:68 diversified Sweden
+ # | 301 Finn Rausing  | | description:net worth:$5.1B age:60 inherited Sweden
+ # | 301 Kirsten Rausing  | | description:net worth:$5.1B age:62 packaging Sweden
+ # | 309 Laurence Graff  | | description:net worth:$5B age:76 diamond jewelry United Kingdom
+ # | 309 Pansy Ho  | | description:net worth:$5B age:52 casinos Hong Kong
+ # | 309 Bertil Hult  | | description:net worth:$5B age:74 education Sweden
+ # | 309 Karl-Heinz Kipp  | | description:net worth:$5B age:91 retail Germany
+ # | 309 Bruce Kovner  | | description:net worth:$5B age:70 hedge funds United States
+ # | 309 George Lucas  | | description:net worth:$5B age:70 Star Wars United States
+ # | 309 David Sun  | | description:net worth:$5B age:63 computer hardware United States
+ # | 309 John Tu  | | description:net worth:$5B age:74 computer hardware United States
+ # | 309 Yang Huiyan  | | description:net worth:$5B age:33 real estate China
+ # | 318 Michael Ashley  | | description:net worth:$4.9B age:50 sports retailing United Kingdom
+ # | 318 James Dyson  | | description:net worth:$4.9B age:67 vacuums United Kingdom
+ # | 318 Albert Frere  | | description:net worth:$4.9B age:89 investments Belgium
+ # | 318 Jeffery Hildebrand  | | description:net worth:$4.9B age:56 oil United States
+ # | 318 Kwee brothers  | | description:net worth:$4.9B age:70 real estate Singapore
+ # | 318 Liang Wengen  | | description:net worth:$4.9B age:58 construction equipment China
+ # | 318 Frank Lowy  | | description:net worth:$4.9B age:84 shopping malls Australia
+ # | 318 Frederik Paulsen  | | description:net worth:$4.9B age:64 health care Sweden
+ # | 318 Sam Zell  | | description:net worth:$4.9B age:73 real estate, private equity United States
+ # | 318 Daniel Ziff  | | description:net worth:$4.9B age:43 investments United States
+ # | 318 Dirk Ziff  | | description:net worth:$4.9B age:50 investments United States
+ # | 318 Robert Ziff  | | description:net worth:$4.9B age:48 investments United States
+ # | 330 Isak Andic  | | description:net worth:$4.8B age:61 clothing retail Spain
+ # | 330 Richard Branson  | | description:net worth:$4.8B age:64 Virgin United Kingdom
+ # | 330 Adi Godrej  | | description:net worth:$4.8B age:72 consumer goods India
+ # | 330 Jamshyd Godrej  | | description:net worth:$4.8B age:66 consumer goods India
+ # | 330 Michael & Marian Ilitch  | | description:net worth:$4.8B age:85 pizza United States
+ # | 330 Ted Lerner  | | description:net worth:$4.8B age:89 real estate United States
+ # | 330 Idan Ofer  | | description:net worth:$4.8B age:59 drilling, shipping Israel
+ # | 330 Emanuele (Lino) Saputo  | | description:net worth:$4.8B age:78 cheese Canada
+ # | 330 Eduardo Saverin  | | description:net worth:$4.8B age:32 Facebook Brazil
+ # | 330 Andrew Tan  | | description:net worth:$4.8B age:62 diversified Philippines
+ # | 330 Zhou Jianping  | | description:net worth:$4.8B age:54 apparel China
+ # | 341 Phillip Frost  | | description:net worth:$4.7B age:78 pharmaceuticals United States
+ # | 341 Daniel Gilbert  | | description:net worth:$4.7B age:53 Quicken Loans United States
+ # | 341 Gong Hongjia  | | description:net worth:$4.7B age:50 investments Hong Kong
+ # | 341 Stein Erik Hagen  | | description:net worth:$4.7B age:58 retail Norway
+ # | 341 Reid Hoffman  | | description:net worth:$4.7B age:47 LinkedIn United States
+ # | 341 Nancy Walton Laurie  | | description:net worth:$4.7B age:63 Wal-Mart United States
+ # | 341 Liu Yonghao  | | description:net worth:$4.7B age:63 agribusiness China
+ # | 341 Sri Prakash Lohia  | | description:net worth:$4.7B age:62 polyester Indonesia
+ # | 341 Whitney MacMillan  | | description:net worth:$4.7B age:86 Cargill United States
+ # | 341 John A. Sobrato  | | description:net worth:$4.7B age:75 real estate United States
+ # | 341 Tong Jinquan  | | description:net worth:$4.7B age:60 real estate China
+ # | 352 Dona Bertarelli  | | description:net worth:$4.6B age:47 biotech Switzerland
+ # | 352 Heinrich Deichmann  | | description:net worth:$4.6B age:52 Footwear Germany
+ # | 352 Paul Tudor Jones, II.  | | description:net worth:$4.6B age:60 hedge funds United States
+ # | 352 Randal Kirk  | | description:net worth:$4.6B age:61 pharmaceuticals United States
+ # | 352 Lee Shin Cheng  | | description:net worth:$4.6B age:76 palm oil, real estate Malaysia
+ # | 352 Ludwig Merckle  | | description:net worth:$4.6B age:50 pharmaceuticals Germany
+ # | 352 Sergei Popov  | | description:net worth:$4.6B age:43 banking Russia
+ # | 352 Mark Shoen  | | description:net worth:$4.6B age:63 U-Haul United States
+ # | 360 Alexander Abramov  | | description:net worth:$4.5B age:56 steel, mining Russia
+ # | 360 Pierre Bellon  | | description:net worth:$4.5B age:85 food services France
+ # | 360 Kunio Busujima  | | description:net worth:$4.5B age:89 gaming Japan
+ # | 360 Michael Herz  | | description:net worth:$4.5B age:71 coffee Germany
+ # | 360 Wolfgang Herz  | | description:net worth:$4.5B age:64 coffee Germany
+ # | 360 Elizabeth Holmes  | | description:net worth:$4.5B age:31 blood testing United States
+ # | 360 Shahid Khan  | | description:net worth:$4.5B age:64 auto parts United States
+ # | 360 Richard Li  | | description:net worth:$4.5B age:48 telecoms Hong Kong
+ # | 360 Shashi & Ravi Ruia  | | description:net worth:$4.5B age:- diversified India
+ # | 369 Americo Amorim  | | description:net worth:$4.4B age:80 energy, investments Portugal
+ # | 369 Shari Arison  | | description:net worth:$4.4B age:57 Carnival Cruises Israel
+ # | 369 Abilio dos Santos Diniz  | | description:net worth:$4.4B age:78 retail Brazil
+ # | 369 Guenther Fielmann  | | description:net worth:$4.4B age:75 optometry Germany
+ # | 369 Filaret Galchev  | | description:net worth:$4.4B age:51 construction materials Russia
+ # | 369 Ian & Richard Livingstone  | | description:net worth:$4.4B age:- real estate United Kingdom
+ # | 369 Horst Paulmann  | | description:net worth:$4.4B age:80 retail Chile
+ # | 369 Alejandro Santo Domingo  | | description:net worth:$4.4B age:38 beer United States
+ # | 369 Andres Santo Domingo  | | description:net worth:$4.4B age:36 beer United States
+ # | 369 Lucio Tan  | | description:net worth:$4.4B age:80 diversified Philippines
+ # | 369 George Ty  | | description:net worth:$4.4B age:82 banking Philippines
+ # | 369 Murat Ulker  | | description:net worth:$4.4B age:55 food manufacturing Turkey
+ # | 381 Jeronimo Arango  | | description:net worth:$4.3B age:89 retail Mexico
+ # | 381 Anthony Bamford  | | description:net worth:$4.3B age:69 construction equipment United Kingdom
+ # | 381 Charles Dolan  | | description:net worth:$4.3B age:88 cable television United States
+ # | 381 Tamara Gustavson  | | description:net worth:$4.3B age:53 self storage United States
+ # | 381 Zarakh Iliev  | | description:net worth:$4.3B age:48 real estate Russia
+ # | 381 Robert Kraft  | | description:net worth:$4.3B age:73 New England Patriots United States
+ # | 381 Luo Jye  | | description:net worth:$4.3B age:89 tires Taiwan
+ # | 381 God Nisanov  | | description:net worth:$4.3B age:42 real estate Russia
+ # | 381 Karen Pritzker  | | description:net worth:$4.3B age:57 hotels, investments United States
+ # | 381 Trevor Rees-Jones  | | description:net worth:$4.3B age:63 oil & gas United States
+ # | 381 Chairul Tanjung  | | description:net worth:$4.3B age:52 diversified Indonesia
+ # | 381 Lottie Tham  | | description:net worth:$4.3B age:65 H&M Sweden
+ # | 393 Mike Adenuga  | | description:net worth:$4.2B age:61 telcom, oil Nigeria
+ # | 393 Subhash Chandra  | | description:net worth:$4.2B age:64 media India
+ # | 393 Gustaf Douglas  | | description:net worth:$4.2B age:77 security Sweden
+ # | 393 Han Chang-Woo  | | description:net worth:$4.2B age:84 pachinko parlors Japan
+ # | 393 Jerry Jones  | | description:net worth:$4.2B age:72 Dallas Cowboys United States
+ # | 393 Kirk Kerkorian  | | description:net worth:$4.2B age:97 casinos, investments United States
+ # | 393 Lin Rong San  | | description:net worth:$4.2B age:75 real estate Taiwan
+ # | 393 Stewart and Lynda Resnick  | | description:net worth:$4.2B age:- agriculture, water United States
+ # | 393 Wang Wei  | | description:net worth:$4.2B age:44 package delivery service China
+ # | 393 Karl Wlaschek  | | description:net worth:$4.2B age:97 retail Austria
+ # | 393 Aloys Wobben  | | description:net worth:$4.2B age:63 wind turbines Germany
+ # | 393 Zhang Jindong  | | description:net worth:$4.2B age:51 appliance retailer China
+ # | 405 Prince Sultan bin Mohammed bin Saud Al Kabeer  | | description:net worth:$4.1B age:61 dairy farms Saudi Arabia
+ # | 405 Benu Gopal Bangur  | | description:net worth:$4.1B age:83 cement India
+ # | 405 Patrizio Bertelli  | | description:net worth:$4.1B age:69 luxury goods Italy
+ # | 405 David Consunji  | | description:net worth:$4.1B age:93 construction Philippines
+ # | 405 Frits Goldschmeding  | | description:net worth:$4.1B age:81 temp agency Netherlands
+ # | 405 Martha Ingram  | | description:net worth:$4.1B age:79 book distribution, transportation United States
+ # | 405 Barry Lam  | | description:net worth:$4.1B age:65 computers Taiwan
+ # | 405 John Morris  | | description:net worth:$4.1B age:66 sporting goods retail United States
+ # | 405 Miuccia Prada  | | description:net worth:$4.1B age:65 Prada Italy
+ # | 405 Mark Scheinberg  | | description:net worth:$4.1B age:41 online gambling Canada
+ # | 405 David Shaw  | | description:net worth:$4.1B age:63 hedge funds United States
+ # | 405 Donald Trump  | | description:net worth:$4.1B age:68 television, real estate United States
+ # | 405 Zhang Shiping  | | description:net worth:$4.1B age:68 aluminum products China
+ # | 418 Anil Ambani  | | description:net worth:$4B age:55 diversified India
+ # | 418 Samvel Karapetyan  | | description:net worth:$4B age:49 development Russia
+ # | 418 Jan Kulczyk  | | description:net worth:$4B age:65 telecom, oil, beer Poland
+ # | 418 Tom & Judy Love  | | description:net worth:$4B age:77 retail & gas stations United States
+ # | 418 Mohamed Mansour  | | description:net worth:$4B age:67 diversified Egypt
+ # | 418 Mitchell Rales  | | description:net worth:$4B age:58 manufacturing, investments United States
+ # | 418 Wolfgang Reimann  | | description:net worth:$4B age:62 consumer goods Germany
+ # | 418 Matthias Reimann-Andersen  | | description:net worth:$4B age:49 consumer goods Germany
+ # | 418 Stefan Reimann-Andersen  | | description:net worth:$4B age:51 consumer goods Germany
+ # | 418 Renate Reimann-Haas  | | description:net worth:$4B age:63 consumer goods Germany
+ # | 418 J. Christopher Reyes  | | description:net worth:$4B age:61 food distribution United States
+ # | 418 Jude Reyes  | | description:net worth:$4B age:59 food distribution United States
+ # | 418 Edward Roski, Jr.  | | description:net worth:$4B age:76 real estate United States
+ # | 418 Reinhold Schmieding  | | description:net worth:$4B age:60 medical devices United States
+ # | 418 Jerry Speyer  | | description:net worth:$4B age:74 real estate United States
+ # | 418 Friede Springer  | | description:net worth:$4B age:72 publishing Germany
+ # | 418 Sun Guangxin  | | description:net worth:$4B age:52 diversified China
+ # | 435 Riley Bechtel  | | description:net worth:$3.9B age:62 engineering, construction United States
+ # | 435 Stephen Bechtel, Jr.  | | description:net worth:$3.9B age:89 engineering, construction United States
+ # | 435 Ralph Dommermuth  | | description:net worth:$3.9B age:51 internet service provider Germany
+ # | 435 Bernard Ecclestone  | | description:net worth:$3.9B age:84 Formula One United Kingdom
+ # | 435 Nathan Kirsh  | | description:net worth:$3.9B age:83 retail, real estate Swaziland
+ # | 435 Vikram Lal  | | description:net worth:$3.9B age:73 motorcycles India
+ # | 435 Lars Larsen  | | description:net worth:$3.9B age:66 retail Denmark
+ # | 435 Ronald Lauder  | | description:net worth:$3.9B age:71 Estee Lauder United States
+ # | 435 George Lindemann  | | description:net worth:$3.9B age:78 investments United States
+ # | 435 Niels Peter Louis-Hansen  | | description:net worth:$3.9B age:67 medical devices Denmark
+ # | 435 Pankaj Patel  | | description:net worth:$3.9B age:61 pharmaceuticals India
+ # | 435 Bernard (Barry) Sherman  | | description:net worth:$3.9B age:73 pharmaceuticals Canada
+ # | 435 Shi Yuzhu  | | description:net worth:$3.9B age:52 online games, investments China
+ # | 435 Jeffrey Skoll  | | description:net worth:$3.9B age:50 Ebay United States
+ # | 435 Frederick Smith  | | description:net worth:$3.9B age:70 FedEx United States
+ # | 435 Andreas von Bechtolsheim  | | description:net worth:$3.9B age:59 Google Germany
+ # | 435 Wang Chuanfu  | | description:net worth:$3.9B age:49 batteries, autos China
+ # | 452 Chung Eui-Sun  | | description:net worth:$3.8B age:44 logistics South Korea
+ # | 452 Israel Englander  | | description:net worth:$3.8B age:66 hedge funds United States
+ # | 452 Dmitry Kamenshchik  | | description:net worth:$3.8B age:46 airport Russia
+ # | 452 Bernard Marcus  | | description:net worth:$3.8B age:85 Home Depot United States
+ # | 452 Brijmohan Lall Munjal  | | description:net worth:$3.8B age:91 motorcycles India
+ # | 452 Daniel Och  | | description:net worth:$3.8B age:54 hedge funds United States
+ # | 452 Terrence Pegula  | | description:net worth:$3.8B age:64 natural gas United States
+ # | 452 Isaac Perlmutter  | | description:net worth:$3.8B age:72 Marvel comics United States
+ # | 452 Krit Ratanarak  | | description:net worth:$3.8B age:68 media, real estate Thailand
+ # | 452 Samuel Yin  | | description:net worth:$3.8B age:64 diversified Taiwan
+ # | 462 Vanich Chaiyawan  | | description:net worth:$3.7B age:83 insurance, beverages Thailand
+ # | 462 Francis Choi  | | description:net worth:$3.7B age:68 real estate Hong Kong
+ # | 462 Leon G. Cooperman  | | description:net worth:$3.7B age:71 hedge funds United States
+ # | 462 Antonio Del Valle Ruiz  | | description:net worth:$3.7B age:76 chemicals Mexico
+ # | 462 Francisco Ivens de Sa Dias Branco  | | description:net worth:$3.7B age:80 food production Brazil
+ # | 462 Traudl Engelhorn  | | description:net worth:$3.7B age:- pharmaceuticals/medical equipment Germany
+ # | 462 Ursula Engelhorn  | | description:net worth:$3.7B age:- pharmaceuticals/medical equipment Germany
+ # | 462 Huang Wei  | | description:net worth:$3.7B age:55 real estate China
+ # | 462 James Jannard  | | description:net worth:$3.7B age:65 sunglasses United States
+ # | 462 Fredrik Lundberg  | | description:net worth:$3.7B age:63 real estate, investments Sweden
+ # | 462 Gwendolyn Sontheim Meyer  | | description:net worth:$3.7B age:53 Cargill United States
+ # | 462 Akira Mori  | | description:net worth:$3.7B age:78 real estate Japan
+ # | 462 Theo Mueller  | | description:net worth:$3.7B age:75 dairy Germany
+ # | 462 H. Ross Perot, Sr.  | | description:net worth:$3.7B age:84 computer services, real estate United States
+ # | 462 Steven Rales  | | description:net worth:$3.7B age:63 manufacturing United States
+ # | 462 John Sall  | | description:net worth:$3.7B age:66 software United States
+ # | 462 Lynn Schusterman  | | description:net worth:$3.7B age:76 oil & gas, investments United States
+ # | 462 Ronda Stryker  | | description:net worth:$3.7B age:60 medical equipment United States
+ # | 462 Steven Udvar-Hazy  | | description:net worth:$3.7B age:69 aircraft leasing United States
+ # | 481 Martin & Olivier Bouygues  | | description:net worth:$3.6B age:- construction, media France
+ # | 481 Gustavo Cisneros  | | description:net worth:$3.6B age:69 media Venezuela
+ # | 481 Jim Davis  | | description:net worth:$3.6B age:71 New Balance United States
+ # | 481 Archie Aldis Emmerson  | | description:net worth:$3.6B age:85 timberland, lumber mills United States
+ # | 481 John Gandel  | | description:net worth:$3.6B age:80 shopping malls Australia
+ # | 481 Diane Hendricks  | | description:net worth:$3.6B age:68 roofing United States
+ # | 481 Antti Herlin  | | description:net worth:$3.6B age:58 elevators, escalators Finland
+ # | 481 Jeremy Jacobs, Sr.  | | description:net worth:$3.6B age:75 sports concessions United States
+ # | 481 Elizabeth Mohn  | | description:net worth:$3.6B age:74 media Germany
+ # | 481 Igor Olenicoff  | | description:net worth:$3.6B age:72 real estate United States
+ # | 481 Anthony Pratt  | | description:net worth:$3.6B age:54 manufacturing Australia
+ # | 481 Qiu Guanghe  | | description:net worth:$3.6B age:63 apparel retail China
+ # | 481 Walter Scott, Jr.  | | description:net worth:$3.6B age:83 utilities, telecom United States
+ # | 481 Sheldon Solow  | | description:net worth:$3.6B age:86 real estate United States
+ # | 481 Steven Spielberg  | | description:net worth:$3.6B age:68 Movies United States
+ # | 481 Yitzhak Tshuva  | | description:net worth:$3.6B age:66 real estate Israel
+ # | 497 Mohammed Al Issa  | | description:net worth:$3.5B age:90 investments Saudi Arabia
+ # | 497 Rahel Blocher  | | description:net worth:$3.5B age:39 chemicals Switzerland
+ # | 497 Chey Tae-Won  | | description:net worth:$3.5B age:54 computer services/telecoms South Korea
+ # | 497 Edward DeBartolo, Jr.  | | description:net worth:$3.5B age:68 shopping centers United States
+ # | 497 Andrei Guriev  | | description:net worth:$3.5B age:54 fertilizers Russia
+ # | 497 Ingvar Kamprad  | | description:net worth:$3.5B age:88 Ikea Sweden
+ # | 497 Iskander Makhmudov  | | description:net worth:$3.5B age:51 mining, metals, machinery Russia
+ # | 497 Alain Merieux  | | description:net worth:$3.5B age:77 pharmaceuticals France
+ # | 497 Pan Zhengmin  | | description:net worth:$3.5B age:45 electronics China
+ # | 497 Michael Platt  | | description:net worth:$3.5B age:46 hedge Fund United Kingdom
+ # | 497 Viktor Rashnikov  | | description:net worth:$3.5B age:66 steel Russia
+ # | 497 Haim Saban  | | description:net worth:$3.5B age:70 TV network, investments United States
+ # | 497 Beny Steinmetz  | | description:net worth:$3.5B age:58 mining, diamonds, real estate Israel
+ # | 497 Martin Viessmann  | | description:net worth:$3.5B age:61 heating equipment Germany
+ # | 497 Zhang Changhong  | | description:net worth:$3.5B age:57 finance information service China
+ # | 512 Brian Acton  | | description:net worth:$3.4B age:43 WhatsApp United States
+ # | 512 Saif Al Ghurair  | | description:net worth:$3.4B age:- diversified United Arab Emirates
+ # | 512 Marc Benioff  | | description:net worth:$3.4B age:50 business software United States
+ # | 512 John Doerr  | | description:net worth:$3.4B age:63 venture capital United States
+ # | 512 Walter Faria  | | description:net worth:$3.4B age:59 beer Brazil
+ # | 512 David Filo  | | description:net worth:$3.4B age:48 Yahoo United States
+ # | 512 Christa Gelpke  | | description:net worth:$3.4B age:- pharmaceuticals Germany
+ # | 512 Masatoshi Ito  | | description:net worth:$3.4B age:90 retail Japan
+ # | 512 Erich Kellerhals  | | description:net worth:$3.4B age:76 electronics retailer Germany
+ # | 512 Suleiman Kerimov  | | description:net worth:$3.4B age:48 investments Russia
+ # | 512 Mangal Prabhat Lodha  | | description:net worth:$3.4B age:59 real estate India
+ # | 512 Magdalena Martullo-Blocher  | | description:net worth:$3.4B age:46 chemicals Switzerland
+ # | 512 Clayton Mathile  | | description:net worth:$3.4B age:74 pet food United States
+ # | 512 Anthony Pritzker  | | description:net worth:$3.4B age:54 hotels, investments United States
+ # | 512 Jay Robert (J.B.) Pritzker  | | description:net worth:$3.4B age:50 hotels, investments United States
+ # | 512 Julian Robertson, Jr.  | | description:net worth:$3.4B age:83 hedge funds United States
+ # | 512 Kushal Pal Singh  | | description:net worth:$3.4B age:83 real estate India
+ # | 512 Chee Chen Tung  | | description:net worth:$3.4B age:73 shipping Hong Kong
+ # | 512 Wu Yajun  | | description:net worth:$3.4B age:51 real estate China
+ # | 512 Steve Wynn  | | description:net worth:$3.4B age:73 casinos, hotels United States
+ # | 512 Zhang Xin  | | description:net worth:$3.4B age:49 real estate China
+ # | 533 Heinz-Georg Baus  | | description:net worth:$3.4B age:81 home improvement stores Germany
+ # | 534 Austen Cargill, II.  | | description:net worth:$3.3B age:64 Cargill United States
+ # | 534 James Cargill, II.  | | description:net worth:$3.3B age:65 Cargill United States
+ # | 534 Isabel dos Santos  | | description:net worth:$3.3B age:41 investments Angola
+ # | 534 Juan Carlos Escotet  | | description:net worth:$3.3B age:55 banking Venezuela
+ # | 534 Dan Friedkin  | | description:net worth:$3.3B age:50 Toyota dealerships United States
+ # | 534 Jiang Bin  | | description:net worth:$3.3B age:48 acoustic components China
+ # | 534 Daryl Katz  | | description:net worth:$3.3B age:53 pharmacies Canada
+ # | 534 Peter Kellogg  | | description:net worth:$3.3B age:72 investments United States
+ # | 534 Li Zhongchu  | | description:net worth:$3.3B age:51 software China
+ # | 534 Marianne Liebmann  | | description:net worth:$3.3B age:61 Cargill United States
+ # | 534 Najib Mikati  | | description:net worth:$3.3B age:59 telecom Lebanon
+ # | 534 Taha Mikati  | | description:net worth:$3.3B age:70 telecom Lebanon
+ # | 534 Masahiro Miki  | | description:net worth:$3.3B age:59 retail Japan
+ # | 534 Shigenobu Nagamori  | | description:net worth:$3.3B age:70 motors Japan
+ # | 534 Axel Oberwelland  | | description:net worth:$3.3B age:48 candy Germany
+ # | 534 Pang Kang  | | description:net worth:$3.3B age:59 soy sauce maker China
+ # | 534 Michael Pieper  | | description:net worth:$3.3B age:69 kitchen appliances Switzerland
+ # | 534 Leandro Rizzuto  | | description:net worth:$3.3B age:76 consumer products United States
+ # | 534 Teddy Sagi  | | description:net worth:$3.3B age:43 gambling software Israel
+ # | 534 Stephan Schmidheiny  | | description:net worth:$3.3B age:67 investments Switzerland
+ # | 534 Harry Stine  | | description:net worth:$3.3B age:73 agriculture United States
+ # | 534 Andreas Struengmann  | | description:net worth:$3.3B age:65 pharmaceuticals Germany
+ # | 534 Thomas Struengmann  | | description:net worth:$3.3B age:65 pharmaceuticals Germany
+ # | 557 Abdulla Al Futtaim  | | description:net worth:$3.2B age:- auto dealers, investments United Arab Emirates
+ # | 557 Bubba Cathy  | | description:net worth:$3.2B age:60 Chick-Fil-A United States
+ # | 557 Dan Cathy  | | description:net worth:$3.2B age:62 Chick-Fil-A United States
+ # | 557 Jason Chang  | | description:net worth:$3.2B age:70 electronics Singapore
+ # | 557 Dagmar Dolby  | | description:net worth:$3.2B age:73 Dolby Laboratories United States
+ # | 557 Doris Fisher  | | description:net worth:$3.2B age:83 Gap United States
+ # | 557 Tom Gores  | | description:net worth:$3.2B age:50 private equity United States
+ # | 557 Jia Yueting  | | description:net worth:$3.2B age:42 online video China
+ # | 557 Mary Alice Dorrance Malone  | | description:net worth:$3.2B age:65 Campbell Soup United States
+ # | 557 Yuri Milner  | | description:net worth:$3.2B age:53 Facebook Russia
+ # | 557 Kerr Neilson  | | description:net worth:$3.2B age:65 investment Australia
+ # | 557 Thomas Pritzker  | | description:net worth:$3.2B age:64 hotels, investments United States
+ # | 557 Robert Rich, Jr.  | | description:net worth:$3.2B age:74 frozen foods United States
+ # | 557 Renzo Rosso  | | description:net worth:$3.2B age:59 Diesel jeans Italy
+ # | 557 Zygmunt Solorz-Zak  | | description:net worth:$3.2B age:58 TV broadcasting Poland
+ # | 557 Jeff Sutton  | | description:net worth:$3.2B age:55 real estate United States
+ # | 557 Joan Tisch  | | description:net worth:$3.2B age:89 diversified United States
+ # | 557 Roger Wang  | | description:net worth:$3.2B age:66 retail United States
+ # | 557 Wang Wenxue  | | description:net worth:$3.2B age:47 real estate China
+ # | 557 Zhu Xingliang  | | description:net worth:$3.2B age:55 construction China
+ # | 577 Emilio Azcarraga Jean  | | description:net worth:$3.1B age:47 media Mexico
+ # | 577 John Catsimatidis  | | description:net worth:$3.1B age:66 oil, real estate, supermarkets United States
+ # | 577 Jean Pierre Cayard  | | description:net worth:$3.1B age:72 Spirits France
+ # | 577 Ray Davis  | | description:net worth:$3.1B age:73 pipelines United States
+ # | 577 Stanley Druckenmiller  | | description:net worth:$3.1B age:61 hedge funds United States
+ # | 577 Jaime Gilinski Bacal  | | description:net worth:$3.1B age:57 banking Colombia
+ # | 577 Erivan Haub  | | description:net worth:$3.1B age:82 retail Germany
+ # | 577 Amos Hostetter, Jr.  | | description:net worth:$3.1B age:78 cable television United States
+ # | 577 Huang Rulun  | | description:net worth:$3.1B age:63 real estate China
+ # | 577 Johan Johannson  | | description:net worth:$3.1B age:48 grocery wholesaling Norway
+ # | 577 H. Fisk Johnson  | | description:net worth:$3.1B age:56 cleaning products United States
+ # | 577 Imogene Powers Johnson  | | description:net worth:$3.1B age:85 cleaning products United States
+ # | 577 S. Curtis Johnson  | | description:net worth:$3.1B age:59 cleaning products United States
+ # | 577 Helen Johnson-Leipold  | | description:net worth:$3.1B age:58 cleaning products United States
+ # | 577 Winnie Johnson-Marquart  | | description:net worth:$3.1B age:55 cleaning products United States
+ # | 577 John Kapoor  | | description:net worth:$3.1B age:71 healthcare United States
+ # | 577 David Murdock  | | description:net worth:$3.1B age:91 Dole, real estate United States
+ # | 577 Jorge Perez  | | description:net worth:$3.1B age:65 condos United States
+ # | 577 Kevin Plank  | | description:net worth:$3.1B age:42 Under Armour United States
+ # | 577 Issad Rebrab  | | description:net worth:$3.1B age:71 food Algeria
+ # | 577 Naguib Sawiris  | | description:net worth:$3.1B age:60 telecom Egypt
+ # | 577 Alexander Svetakov  | | description:net worth:$3.1B age:47 banking, real estate Russia
+ # | 577 Tang Yiu  | | description:net worth:$3.1B age:81 retail Hong Kong
+ # | 577 Alfred Taubman  | | description:net worth:$3.1B age:91 real estate United States
+ # | 577 Yu Yong  | | description:net worth:$3.1B age:54 mining investments China
+ # | 577 Eddie & Sol Zakay  | | description:net worth:$3.1B age:64 real estate United Kingdom
+ # | 603 Neil Bluhm  | | description:net worth:$3B age:77 real estate United States
+ # | 603 Richard Chandler  | | description:net worth:$3B age:56 investments New Zealand
+ # | 603 Andrew & Peggy Cherng  | | description:net worth:$3B age:- restaurants United States
+ # | 603 Mark Cuban  | | description:net worth:$3B age:56 online media United States
+ # | 603 Aloysio de Andrade Faria  | | description:net worth:$3B age:94 banking Brazil
+ # | 603 Jeff Greene  | | description:net worth:$3B age:60 real estate, investments United States
+ # | 603 Indu Jain  | | description:net worth:$3B age:78 media India
+ # | 603 Min Kao  | | description:net worth:$3B age:66 navigation equipment United States
+ # | 603 Igor Kesaev  | | description:net worth:$3B age:48 tobacco distribution, retail Russia
+ # | 603 William Koch  | | description:net worth:$3B age:74 oil, investments United States
+ # | 603 James Leprino  | | description:net worth:$3B age:77 cheese United States
+ # | 603 Sudhir & Samir Mehta  | | description:net worth:$3B age:- diversified India
+ # | 603 Karl-Johan Persson  | | description:net worth:$3B age:39 H&M Sweden
+ # | 603 Tom Persson  | | description:net worth:$3B age:30 H&M Sweden
+ # | 603 David Rockefeller, Sr.  | | description:net worth:$3B age:99 oil, banking United States
+ # | 603 Wilbur Ross, Jr.  | | description:net worth:$3B age:77 investments United States
+ # | 603 Stephen Rubin  | | description:net worth:$3B age:77 sports apparel United Kingdom
+ # | 603 Shaul Shani  | | description:net worth:$3B age:60 technology Israel
+ # | 603 Charlotte Soderstrom  | | description:net worth:$3B age:38 H&M Sweden
+ # | 603 Daniel Tsai  | | description:net worth:$3B age:58 finance Taiwan
+ # | 603 Richard Tsai  | | description:net worth:$3B age:57 finance Taiwan
+ # | 603 Hans Peter Wild  | | description:net worth:$3B age:73 Wild Flavors GmbH Germany
+ # | 603 Oprah Winfrey  | | description:net worth:$3B age:61 Television United States
+ # | 603 Ye Chenghai  | | description:net worth:$3B age:71 pharmaceuticals Hong Kong
+ # | 603 Yeoh Tiong Lay  | | description:net worth:$3B age:85 construction, real estate Malaysia
+ # | 628 Syed Mokhtar AlBukhary  | | description:net worth:$2.9B age:63 diversified Malaysia
+ # | 628 Carlo Benetton  | | description:net worth:$2.9B age:71 clothing, investments Italy
+ # | 628 Gilberto Benetton  | | description:net worth:$2.9B age:73 clothing, investments Italy
+ # | 628 Giuliana Benetton  | | description:net worth:$2.9B age:77 clothing, investments Italy
+ # | 628 Luciano Benetton  | | description:net worth:$2.9B age:79 clothing, investments Italy
+ # | 628 David Cheriton  | | description:net worth:$2.9B age:63 Google Canada
+ # | 628 William Conway, Jr.  | | description:net worth:$2.9B age:65 private equity United States
+ # | 628 Daniel D'Aniello  | | description:net worth:$2.9B age:68 private equity United States
+ # | 628 Jack Dangermond  | | description:net worth:$2.9B age:69 mapping software United States
+ # | 628 Giuseppe De'Longhi  | | description:net worth:$2.9B age:75 coffee makers Italy
+ # | 628 Andre Esteves  | | description:net worth:$2.9B age:46 banking Brazil
+ # | 628 John Fisher  | | description:net worth:$2.9B age:53 Gap United States
+ # | 628 Rosa Anna Magno Garavoglia  | | description:net worth:$2.9B age:- spirits Italy
+ # | 628 Guenter Herz & Family  | | description:net worth:$2.9B age:74 coffee Germany
+ # | 628 Daniela Herz  | | description:net worth:$2.9B age:61 coffee Germany
+ # | 628 Kim Beom-su  | | description:net worth:$2.9B age:48 mobile chat service South Korea
+ # | 628 Edward Lampert  | | description:net worth:$2.9B age:52 Sears United States
+ # | 628 Samuel Tak Lee  | | description:net worth:$2.9B age:75 real estate Hong Kong
+ # | 628 Edwin Leong  | | description:net worth:$2.9B age:63 real estate Hong Kong
+ # | 628 Youssef Mansour  | | description:net worth:$2.9B age:69 diversified Egypt
+ # | 628 Sergio Mantegazza  | | description:net worth:$2.9B age:87 travel Switzerland
+ # | 628 Kalanithi Maran  | | description:net worth:$2.9B age:49 media India
+ # | 628 Siegfried Meister  | | description:net worth:$2.9B age:76 appliances Germany
+ # | 628 Dirk Rossmann  | | description:net worth:$2.9B age:68 drugstore chain Germany
+ # | 628 David Rubenstein  | | description:net worth:$2.9B age:65 private equity United States
+ # | 628 Michael & Rainer Schmidt-Ruthenbeck  | | description:net worth:$2.9B age:- retail Germany
+ # | 628 Richard Schulze  | | description:net worth:$2.9B age:74 Best Buy United States
+ # | 628 Shin Chang-Jae  | | description:net worth:$2.9B age:61 insurance South Korea
+ # | 628 Herbert Simon  | | description:net worth:$2.9B age:80 real estate United States
+ # | 628 Warren Stephens  | | description:net worth:$2.9B age:58 investment banking United States
+ # | 628 Donald Sterling  | | description:net worth:$2.9B age:79 real estate United States
+ # | 628 Wang Wenjing  | | description:net worth:$2.9B age:50 enterprise software China
+ # | 628 John Whittaker  | | description:net worth:$2.9B age:72 real estate United Kingdom
+ # | 628 Evan Williams  | | description:net worth:$2.9B age:42 Twitter United States
+ # | 628 Xue Xiangdong  | | description:net worth:$2.9B age:56 software China
+ # | 663 Yvonne Bauer  | | description:net worth:$2.8B age:37 media Germany
+ # | 663 Chen Fashu  | | description:net worth:$2.8B age:54 mining, hypermarkets China
+ # | 663 John Paul DeJoria  | | description:net worth:$2.8B age:71 hair products, tequila United States
+ # | 663 Judy Faulkner  | | description:net worth:$2.8B age:71 health IT United States
+ # | 663 Ken Fisher  | | description:net worth:$2.8B age:64 money management United States
+ # | 663 Lindsay Fox  | | description:net worth:$2.8B age:77 transport Australia
+ # | 663 Andreas Halvorsen  | | description:net worth:$2.8B age:53 hedge funds Norway
+ # | 663 Peter Hargreaves  | | description:net worth:$2.8B age:68 financial services United Kingdom
+ # | 663 Jimmy Haslam  | | description:net worth:$2.8B age:61 retail United States
+ # | 663 Hortensia Herrero  | | description:net worth:$2.8B age:64 supermarkets Spain
+ # | 663 Huang Shih Tsai  | | description:net worth:$2.8B age:63 real estate Hong Kong
+ # | 663 Hui Lin Chit  | | description:net worth:$2.8B age:61 hygiene products China
+ # | 663 Saleh Kamel  | | description:net worth:$2.8B age:73 diversified Saudi Arabia
+ # | 663 Law Kar Po  | | description:net worth:$2.8B age:67 real estate Hong Kong
+ # | 663 Ma Jianrong  | | description:net worth:$2.8B age:51 textiles, apparel China
+ # | 663 Wolfgang Marguerre  | | description:net worth:$2.8B age:74 pharmaceuticals Germany
+ # | 663 Bernardo Matte  | | description:net worth:$2.8B age:59 paper Chile
+ # | 663 Eliodoro Matte  | | description:net worth:$2.8B age:69 paper Chile
+ # | 663 Patricia Matte  | | description:net worth:$2.8B age:71 paper Chile
+ # | 663 Martin Naughton  | | description:net worth:$2.8B age:75 heating equipment Ireland
+ # | 663 Prasert Prasarttong-Osoth  | | description:net worth:$2.8B age:81 hospitals Thailand
+ # | 663 Qi Shi  | | description:net worth:$2.8B age:45 internet portal China
+ # | 663 Richard Rainwater  | | description:net worth:$2.8B age:70 real estate, energy, insurance United States
+ # | 663 Vivek Chaand Sehgal  | | description:net worth:$2.8B age:58 auto parts Australia
+ # | 663 Sze Man Bok  | | description:net worth:$2.8B age:65 hygiene products China
+ # | 663 Vladimir Yevtushenkov  | | description:net worth:$2.8B age:66 telecom Russia
+ # | 663 Michael Ying  | | description:net worth:$2.8B age:65 retail Hong Kong
+ # | 690 Robert Bass  | | description:net worth:$2.7B age:67 oil, investments United States
+ # | 690 Stephen Bisciotti  | | description:net worth:$2.7B age:54 outsourcing, football United States
+ # | 690 George Bishop  | | description:net worth:$2.7B age:78 oil & gas United States
+ # | 690 Bernard Broermann  | | description:net worth:$2.7B age:71 healthcare Germany
+ # | 690 Eva Maria Bucher-Haefner  | | description:net worth:$2.7B age:58 Computer Associates Switzerland
+ # | 690 Hubert Burda  | | description:net worth:$2.7B age:75 publishing Germany
+ # | 690 Jack Dorsey  | | description:net worth:$2.7B age:38 Twitter United States
+ # | 690 Charles Dunstone  | | description:net worth:$2.7B age:51 mobile phones United Kingdom
+ # | 690 Philippe Foriel-Destezet  | | description:net worth:$2.7B age:79 employment agency France
+ # | 690 Martin Haefner  | | description:net worth:$2.7B age:61 technology, investments Switzerland
+ # | 690 Otto Happel  | | description:net worth:$2.7B age:67 engineering Germany
+ # | 690 Joshua Harris  | | description:net worth:$2.7B age:50 private equity United States
+ # | 690 Heidi Horten  | | description:net worth:$2.7B age:74 retail Austria
+ # | 690 Hanni Toosbuy Kasprzak  | | description:net worth:$2.7B age:57 shoes Denmark
+ # | 690 Liu Zhongtian  | | description:net worth:$2.7B age:51 aluminum products China
+ # | 690 Friedhelm Loh  | | description:net worth:$2.7B age:68 manufacturing Germany
+ # | 690 Ronald McAulay  | | description:net worth:$2.7B age:78 diversified Hong Kong
+ # | 690 Lorenzo Mendoza  | | description:net worth:$2.7B age:49 beverages Venezuela
+ # | 690 Husnu Ozyegin  | | description:net worth:$2.7B age:70 finance, diversified Turkey
+ # | 690 A. Jerrold Perenchio  | | description:net worth:$2.7B age:84 television, Univision United States
+ # | 690 Michael Rubin  | | description:net worth:$2.7B age:42 online retailing United States
+ # | 690 Tony Tan Caktiong  | | description:net worth:$2.7B age:62 fast food Philippines
+ # | 690 Wang Yusuo  | | description:net worth:$2.7B age:50 natural gas distribution China
+ # | 690 Christoph Zeller  | | description:net worth:$2.7B age:- dental implants Germany
+ # | 714 John Arnold  | | description:net worth:$2.6B age:41 hedge funds United States
+ # | 714 Semahat Sevim Arsel  | | description:net worth:$2.6B age:86 diversified Turkey
+ # | 714 Carl Bennet  | | description:net worth:$2.6B age:63 investments Sweden
+ # | 714 David Bonderman  | | description:net worth:$2.6B age:72 private equity United States
+ # | 714 Ron Burkle  | | description:net worth:$2.6B age:62 supermarkets, investments United States
+ # | 714 John Caudwell  | | description:net worth:$2.6B age:62 mobile phones United Kingdom
+ # | 714 Bharat Desai  | | description:net worth:$2.6B age:62 Outsourcing United States
+ # | 714 John Dorrance, III.  | | description:net worth:$2.6B age:71 Campbell Soup Ireland
+ # | 714 H. Wayne Huizenga  | | description:net worth:$2.6B age:77 investments United States
+ # | 714 Baba Kalyani  | | description:net worth:$2.6B age:66 engineering India
+ # | 714 Leng Beng Kwek  | | description:net worth:$2.6B age:74 real estate Singapore
+ # | 714 Kenneth Langone  | | description:net worth:$2.6B age:79 investments United States
+ # | 714 Michel Leclercq  | | description:net worth:$2.6B age:75 sporting goods France
+ # | 714 Michael Moritz  | | description:net worth:$2.6B age:60 venture capital United States
+ # | 714 Rajan Raheja  | | description:net worth:$2.6B age:60 diversified India
+ # | 714 Mochtar Riady  | | description:net worth:$2.6B age:85 diversified Indonesia
+ # | 714 Patrick Ryan  | | description:net worth:$2.6B age:77 insurance United States
+ # | 714 Bernard Saul, II.  | | description:net worth:$2.6B age:82 banking, real estate United States
+ # | 714 Vichai Srivaddhanaprabha  | | description:net worth:$2.6B age:57 duty-free Thailand
+ # | 714 Michael Stoschek  | | description:net worth:$2.6B age:67 autoparts Germany
+ # | 714 Bulat Utemuratov  | | description:net worth:$2.6B age:57 mining, banking, hotels Kazakhstan
+ # | 714 William Wrigley, Jr.  | | description:net worth:$2.6B age:51 chewing gum United States
+ # | 714 Mortimer Zuckerman  | | description:net worth:$2.6B age:77 real estate, media United States
+ # | 737 William Ackman  | | description:net worth:$2.5B age:48 hedge funds United States
+ # | 737 Andrej Babis  | | description:net worth:$2.5B age:60 agriculture Czech Republic
+ # | 737 Rahul Bajaj  | | description:net worth:$2.5B age:76 motorcycles India
+ # | 737 Marie Besnier Beauvalot  | | description:net worth:$2.5B age:34 cheese France
+ # | 737 Jean-Michel Besnier  | | description:net worth:$2.5B age:47 cheese France
+ # | 737 Arthur Blank  | | description:net worth:$2.5B age:72 Home Depot United States
+ # | 737 Alain Bouchard  | | description:net worth:$2.5B age:66 retail Canada
+ # | 737 Karen Johnson Boyd  | | description:net worth:$2.5B age:90 cleaning products United States
+ # | 737 Peter Buck  | | description:net worth:$2.5B age:84 Subway sandwich shops United States
+ # | 737 Clive Calder  | | description:net worth:$2.5B age:68 record label United Kingdom
+ # | 737 Silas Chou  | | description:net worth:$2.5B age:68 apparel Hong Kong
+ # | 737 Denise Coates  | | description:net worth:$2.5B age:47 online gambling United Kingdom
+ # | 737 Jose Luis Cutrale  | | description:net worth:$2.5B age:68 orange juice Brazil
+ # | 737 Fred DeLuca  | | description:net worth:$2.5B age:67 Subway sandwich shops United States
+ # | 737 Tilman Fertitta  | | description:net worth:$2.5B age:57 restaurants, casinos United States
+ # | 737 Alexandre Grendene Bartelle  | | description:net worth:$2.5B age:65 shoes Brazil
+ # | 737 Henry Hillman  | | description:net worth:$2.5B age:96 investments United States
+ # | 737 B. Wayne Hughes  | | description:net worth:$2.5B age:81 self storage United States
+ # | 737 Mustafa Rahmi Koc  | | description:net worth:$2.5B age:84 diversified Turkey
+ # | 737 Daniel Loeb  | | description:net worth:$2.5B age:53 hedge funds United States
+ # | 737 Lu Xiangyang  | | description:net worth:$2.5B age:52 automobiles, batteries China
+ # | 737 Alexander Mamut  | | description:net worth:$2.5B age:55 investments Russia
+ # | 737 Thomas Meyer  | | description:net worth:$2.5B age:- apparel retailer Switzerland
+ # | 737 Michael Milken  | | description:net worth:$2.5B age:68 investments United States
+ # | 737 Robert Miller  | | description:net worth:$2.5B age:69 electronics components Canada
+ # | 737 Ermirio Pereira de Moraes  | | description:net worth:$2.5B age:82 diversified Brazil
+ # | 737 Maria Helena Moraes Scripilliti  | | description:net worth:$2.5B age:84 diversified Brazil
+ # | 737 Yoshiko Mori  | | description:net worth:$2.5B age:74 real estate Japan
+ # | 737 Alexander Nesis  | | description:net worth:$2.5B age:52 metals, banking, fertilizers Russia
+ # | 737 Philip Niarchos  | | description:net worth:$2.5B age:61 art collection Greece
+ # | 737 Stefan Olsson  | | description:net worth:$2.5B age:66 diversified Sweden
+ # | 737 Sean Parker  | | description:net worth:$2.5B age:35 Facebook United States
+ # | 737 Mary & Douglas Perkins  | | description:net worth:$2.5B age:- retail United Kingdom
+ # | 737 Sebastian Pinera  | | description:net worth:$2.5B age:65 investments Chile
+ # | 737 Jean (Gigi) Pritzker  | | description:net worth:$2.5B age:53 hotels, investments United States
+ # | 737 Penny Pritzker  | | description:net worth:$2.5B age:55 hotels, investments United States
+ # | 737 Marc Rowan  | | description:net worth:$2.5B age:53 private equity United States
+ # | 737 Ferit Faik Sahenk  | | description:net worth:$2.5B age:50 banking, media Turkey
+ # | 737 Alvaro Saieh Bendeck  | | description:net worth:$2.5B age:65 banking Chile
+ # | 737 Carlos Sanchez  | | description:net worth:$2.5B age:53 generic drugs Brazil
+ # | 737 Howard Schultz  | | description:net worth:$2.5B age:61 Starbucks United States
+ # | 737 Romesh T. Wadhwani  | | description:net worth:$2.5B age:67 software United States
+ # | 737 Dean White  | | description:net worth:$2.5B age:91 billboards, hotels United States
+ # | 737 M.A. Yusuff Ali  | | description:net worth:$2.5B age:59 retail India
+ # | 781 Guenther Lehmann  | | description:net worth:$2.5B age:- drug stores Germany
+ # | 782 Chang Yun Chung  | | description:net worth:$2.4B age:96 shipping Singapore
+ # | 782 Jean Coutu  | | description:net worth:$2.4B age:87 pharmacies Canada
+ # | 782 Ashwin Dani  | | description:net worth:$2.4B age:72 paints India
+ # | 782 Edson de Godoy Bueno  | | description:net worth:$2.4B age:71 hospitals, health care Brazil
+ # | 782 James Dinan  | | description:net worth:$2.4B age:55 hedge funds United States
+ # | 782 Tom Golisano  | | description:net worth:$2.4B age:73 payroll services United States
+ # | 782 Mikhail Gutseriev  | | description:net worth:$2.4B age:57 oil, real estate Russia
+ # | 782 Carlos Hank Rhon  | | description:net worth:$2.4B age:67 banking Mexico
+ # | 782 Timothy Headington  | | description:net worth:$2.4B age:64 oil & gas, investments United States
+ # | 782 Ingeburg Herz  | | description:net worth:$2.4B age:93 coffee Germany
+ # | 782 Spiro Latsis  | | description:net worth:$2.4B age:68 banking, shipping Greece
+ # | 782 Patrick Lee  | | description:net worth:$2.4B age:73 paper Hong Kong
+ # | 782 Li Shufu  | | description:net worth:$2.4B age:51 automobiles China
+ # | 782 Robert McNair  | | description:net worth:$2.4B age:78 energy, sports United States
+ # | 782 Erwin Franz Mueller  | | description:net worth:$2.4B age:82 drug stores Germany
+ # | 782 Rishad Naoroji  | | description:net worth:$2.4B age:63 consumer goods India
+ # | 782 Ravi Pillai  | | description:net worth:$2.4B age:61 construction India
+ # | 782 Alexander Ponomarenko  | | description:net worth:$2.4B age:50 port Russia
+ # | 782 Henry Samueli  | | description:net worth:$2.4B age:60 semiconductors United States
+ # | 782 Alexandra Schorghuber  | | description:net worth:$2.4B age:56 real estate Germany
+ # | 782 Alexander Skorobogatko  | | description:net worth:$2.4B age:47 port Russia
+ # | 782 Maria Luisa Solari Falabella  | | description:net worth:$2.4B age:74 retail Chile
+ # | 782 Lawrence Stroll  | | description:net worth:$2.4B age:55 retail Canada
+ # | 782 Sarik Tara  | | description:net worth:$2.4B age:84 construction Turkey
+ # | 782 Glen Taylor  | | description:net worth:$2.4B age:73 printing United States
+ # | 782 Ty Warner  | | description:net worth:$2.4B age:70 real estate, plush toys United States
+ # | 782 Arne Wilhelmsen  | | description:net worth:$2.4B age:84 cruise ships Norway
+ # | 782 Nicholas Woodman  | | description:net worth:$2.4B age:39 video cameras United States
+ # | 810 John Arrillaga  | | description:net worth:$2.3B age:77 real estate United States
+ # | 810 Koos Bekker  | | description:net worth:$2.3B age:62 media, investments South Africa
+ # | 810 Othman Benjelloun  | | description:net worth:$2.3B age:82 banking, insurance Morocco
+ # | 810 Charles Bronfman  | | description:net worth:$2.3B age:83 liquor Canada
+ # | 810 Chen Jinxia  | | description:net worth:$2.3B age:46 investments China
+ # | 810 Lucio and Susan Co  | | description:net worth:$2.3B age:60 Retailing Philippines
+ # | 810 Kuldip Singh & Gurbachan Singh Dhingra  | | description:net worth:$2.3B age:- paints India
+ # | 810 Barry Diller  | | description:net worth:$2.3B age:73 online media United States
+ # | 810 Bennett Dorrance  | | description:net worth:$2.3B age:69 Campbell Soup United States
+ # | 810 Robert Duggan  | | description:net worth:$2.3B age:70 pharmaceuticals United States
+ # | 810 Fong Yun Wah  | | description:net worth:$2.3B age:90 real estate Hong Kong
+ # | 810 Bernd Freier  | | description:net worth:$2.3B age:58 retail Germany
+ # | 810 Bill Gross  | | description:net worth:$2.3B age:70 investments United States
+ # | 810 Don Hankey  | | description:net worth:$2.3B age:71 auto loans United States
+ # | 810 Bahaa Hariri  | | description:net worth:$2.3B age:48 real estate, investments, logistics Lebanon
+ # | 810 Johnelle Hunt  | | description:net worth:$2.3B age:83 trucking United States
+ # | 810 Huo Qinghua  | | description:net worth:$2.3B age:53 coal China
+ # | 810 Vyacheslav Kantor  | | description:net worth:$2.3B age:61 fertilizer, real estate Russia
+ # | 810 Ke Xiping  | | description:net worth:$2.3B age:54 investments China
+ # | 810 Alicia Koplowitz  | | description:net worth:$2.3B age:60 construction, investments Spain
+ # | 810 Miguel Krigsner  | | description:net worth:$2.3B age:65 cosmetics Brazil
+ # | 810 Raj Kumar & Kishin RK  | | description:net worth:$2.3B age:60 real estate Singapore
+ # | 810 Khoon Hong Kuok  | | description:net worth:$2.3B age:65 palm oil Singapore
+ # | 810 Stephen Mandel, Jr.  | | description:net worth:$2.3B age:58 hedge funds United States
+ # | 810 Yasseen Mansour  | | description:net worth:$2.3B age:53 diversified Egypt
+ # | 810 Maja Oeri  | | description:net worth:$2.3B age:60 Roche Holding Switzerland
+ # | 810 Richard Peery  | | description:net worth:$2.3B age:76 real estate United States
+ # | 810 P.V. Ramprasad Reddy  | | description:net worth:$2.3B age:56 pharmaceuticals India
+ # | 810 Gary Rollins  | | description:net worth:$2.3B age:70 pest control United States
+ # | 810 Randall Rollins  | | description:net worth:$2.3B age:83 pest control United States
+ # | 810 Thomas Siebel  | | description:net worth:$2.3B age:62 business software United States
+ # | 810 Malvinder & Shivinder Singh  | | description:net worth:$2.3B age:- healthcare India
+ # | 810 Peter Sondakh  | | description:net worth:$2.3B age:63 investments Indonesia
+ # | 810 Song Zuowen  | | description:net worth:$2.3B age:67 aluminum, diversified China
+ # | 810 Clemmie Spangler, Jr.  | | description:net worth:$2.3B age:82 investments United States
+ # | 810 Tsai Hong-tu  | | description:net worth:$2.3B age:62 finance Taiwan
+ # | 810 Wang Changtian  | | description:net worth:$2.3B age:49 TV, movie production China
+ # | 847 Bernardo Caprotti  | | description:net worth:$2.2B age:89 grocery stores Italy
+ # | 847 Tatiana Casiraghi  | | description:net worth:$2.2B age:31 beer United States
+ # | 847 Michel Chalhoub  | | description:net worth:$2.2B age:83 retail France
+ # | 847 Chu Lam Yiu  | | description:net worth:$2.2B age:45 flavorings Hong Kong
+ # | 847 James Coulter  | | description:net worth:$2.2B age:55 private equity United States
+ # | 847 Edgar de Picciotto  | | description:net worth:$2.2B age:85 private banking Switzerland
+ # | 847 Rafael Del Pino y Calvo-Sotelo  | | description:net worth:$2.2B age:56 construction Spain
+ # | 847 John Farber  | | description:net worth:$2.2B age:89 chemicals United States
+ # | 847 Andrew Forrest  | | description:net worth:$2.2B age:53 mining Australia
+ # | 847 Fu Liquan  | | description:net worth:$2.2B age:47 surveillance equipment China
+ # | 847 Victor Fung  | | description:net worth:$2.2B age:69 trading company United States
+ # | 847 William Fung  | | description:net worth:$2.2B age:66 sourcing Hong Kong
+ # | 847 Mitchell Goldhar  | | description:net worth:$2.2B age:53 real estate Canada
+ # | 847 Hoang Kieu  | | description:net worth:$2.2B age:70 pharmaceuticals United States
+ # | 847 Alijan Ibragimov  | | description:net worth:$2.2B age:61 mining, metals Kazakhstan
+ # | 847 Erman Ilicak  | | description:net worth:$2.2B age:47 construction Turkey
+ # | 847 Michael Jaharis  | | description:net worth:$2.2B age:86 pharmaceuticals United States
+ # | 847 Suna Kirac  | | description:net worth:$2.2B age:73 diversified Turkey
+ # | 847 Manuel Lao Hernandez  | | description:net worth:$2.2B age:70 gambling Spain
+ # | 847 Louis Le Duff  | | description:net worth:$2.2B age:68 bakeries France
+ # | 847 Lee Boo-Jin  | | description:net worth:$2.2B age:44 computer services/tourism South Korea
+ # | 847 Lee Jay-Hyun  | | description:net worth:$2.2B age:54 food products/entertainment South Korea
+ # | 847 Douglas Leone  | | description:net worth:$2.2B age:57 venture capital United States
+ # | 847 Herbert Louis  | | description:net worth:$2.2B age:86 cleaning products United States
+ # | 847 Josephine Louis  | | description:net worth:$2.2B age:84 cleaning products United States
+ # | 847 Alexander Machkevich  | | description:net worth:$2.2B age:61 mining, metals Israel
+ # | 847 Joe Mansueto  | | description:net worth:$2.2B age:58 investment research United States
+ # | 847 Drayton McLane, Jr.  | | description:net worth:$2.2B age:78 Wal-Mart, logistics United States
+ # | 847 Hans Melchers  | | description:net worth:$2.2B age:76 chemicals, investments Netherlands
+ # | 847 C. Dean Metropoulos  | | description:net worth:$2.2B age:68 investments United States
+ # | 847 Patrice Motsepe  | | description:net worth:$2.2B age:53 mining South Africa
+ # | 847 Daniel Pritzker  | | description:net worth:$2.2B age:56 hotels, investments United States
+ # | 847 John Pritzker  | | description:net worth:$2.2B age:62 hotels, investments United States
+ # | 847 Chandru Raheja  | | description:net worth:$2.2B age:74 real estate India
+ # | 847 Helena Revoredo  | | description:net worth:$2.2B age:68 insurance Spain
+ # | 847 Larry Robbins  | | description:net worth:$2.2B age:45 hedge funds United States
+ # | 847 Filiz Sahenk  | | description:net worth:$2.2B age:48 bank, media Turkey
+ # | 847 Julio Mario Santo Domingo, III.  | | description:net worth:$2.2B age:29 beer United States
+ # | 847 Fayez Sarofim  | | description:net worth:$2.2B age:86 money management United States
+ # | 847 Gil Shwed  | | description:net worth:$2.2B age:47 software Israel
+ # | 847 Peter Spuhler  | | description:net worth:$2.2B age:55 manufacturing Switzerland
+ # | 847 Pat Stryker  | | description:net worth:$2.2B age:58 medical equipment United States
+ # | 847 Peter Thiel  | | description:net worth:$2.2B age:47 Facebook United States
+ # | 847 Clemens Toennies  | | description:net worth:$2.2B age:58 meat processing Germany
+ # | 847 Ted Turner  | | description:net worth:$2.2B age:76 cable television United States
+ # | 847 Chip Wilson  | | description:net worth:$2.2B age:58 Lululemon Canada
+ # | 847 Anita Zucker  | | description:net worth:$2.2B age:63 chemicals United States
+ # | 894 S. Daniel Abraham  | | description:net worth:$2.1B age:90 Slim-Fast United States
+ # | 894 Sulaiman Al Rajhi  | | description:net worth:$2.1B age:87 banking Saudi Arabia
+ # | 894 Ron Baron  | | description:net worth:$2.1B age:71 money management United States
+ # | 894 Jim Breyer  | | description:net worth:$2.1B age:53 venture capital United States
+ # | 894 John Brown  | | description:net worth:$2.1B age:80 medical equipment United States
+ # | 894 Cai Kui  | | description:net worth:$2.1B age:52 real estate China
+ # | 894 Jose and Francisco Jose Calderon Rojas  | | description:net worth:$2.1B age:60 beverages Mexico
+ # | 894 Francesco Gaetano Caltagirone  | | description:net worth:$2.1B age:71 cement, diversified Italy
+ # | 894 Chase Coleman, III.  | | description:net worth:$2.1B age:39 hedge fund United States
+ # | 894 Ennio Doris  | | description:net worth:$2.1B age:74 financial services Italy
+ # | 894 Feng Hailiang  | | description:net worth:$2.1B age:54 copper processing, real estate China
+ # | 894 Gerald Ford  | | description:net worth:$2.1B age:70 banking United States
+ # | 894 James France  | | description:net worth:$2.1B age:70 Nascar, racing United States
+ # | 894 Jean Claude Gandur  | | description:net worth:$2.1B age:66 oil trading, exploration Switzerland
+ # | 894 Gordon Getty  | | description:net worth:$2.1B age:81 Getty Oil United States
+ # | 894 Sam Goi  | | description:net worth:$2.1B age:66 frozen foods Singapore
+ # | 894 Alec Gores  | | description:net worth:$2.1B age:61 private equity United States
+ # | 894 Noam Gottesman  | | description:net worth:$2.1B age:53 hedge funds United States
+ # | 894 Esther Grether  | | description:net worth:$2.1B age:79 art collection, Swatch Switzerland
+ # | 894 Susan Hirt Hagen  | | description:net worth:$2.1B age:79 insurance United States
+ # | 894 Rakesh Jhunjhunwala  | | description:net worth:$2.1B age:54 investments India
+ # | 894 Bruce Karsh  | | description:net worth:$2.1B age:59 private equity United States
+ # | 894 Brad Kelley  | | description:net worth:$2.1B age:58 tobacco United States
+ # | 894 Habil Khorakiwala  | | description:net worth:$2.1B age:72 pharmaceuticals India
+ # | 894 Timur Kulibaev  | | description:net worth:$2.1B age:48 banking Kazakhstan
+ # | 894 Dinara Kulibaeva  | | description:net worth:$2.1B age:47 banking Kazakhstan
+ # | 894 Marc Ladreit de Lacharriere  | | description:net worth:$2.1B age:74 finance France
+ # | 894 Christos Lazari  | | description:net worth:$2.1B age:68 real estate United Kingdom
+ # | 894 Lee Seo-Hyun  | | description:net worth:$2.1B age:41 computer services/tourism South Korea
+ # | 894 Rodney Lewis  | | description:net worth:$2.1B age:61 natural gas United States
+ # | 894 Li Liufa  | | description:net worth:$2.1B age:57 steel, diversified China
+ # | 894 Liang Xinjun  | | description:net worth:$2.1B age:47 diversified China
+ # | 894 Igor Makarov  | | description:net worth:$2.1B age:52 gas Russia
+ # | 894 Howard Marks  | | description:net worth:$2.1B age:68 private equity United States
+ # | 894 Daniel Mate  | | description:net worth:$2.1B age:51 mining, commodities Spain
+ # | 894 Aristotelis Mistakidis  | | description:net worth:$2.1B age:53 mining, commodities Greece
+ # | 894 Fernando Roberto Moreira Salles  | | description:net worth:$2.1B age:68 banking, minerals Brazil
+ # | 894 Joao Moreira Salles  | | description:net worth:$2.1B age:53 banking, minerals Brazil
+ # | 894 Walther Moreira Salles Junior  | | description:net worth:$2.1B age:58 banking, minerals Brazil
+ # | 894 Pedro Moreira Salles  | | description:net worth:$2.1B age:55 banking, minerals Brazil
+ # | 894 Farhad Moshiri  | | description:net worth:$2.1B age:59 diversified United Kingdom
+ # | 894 N.R. Narayana Murthy  | | description:net worth:$2.1B age:68 software services India
+ # | 894 Jonathan Nelson  | | description:net worth:$2.1B age:58 private equity United States
+ # | 894 Julio Ponce  | | description:net worth:$2.1B age:69 fertilizer Chile
+ # | 894 Carlos Rodriguez-Pastor  | | description:net worth:$2.1B age:55 finance Peru
+ # | 894 Stephen Saad  | | description:net worth:$2.1B age:50 pharmaceuticals South Africa
+ # | 894 Shen Guojun  | | description:net worth:$2.1B age:52 retail China
+ # | 894 Helmut Sohmen  | | description:net worth:$2.1B age:75 shipping Austria
+ # | 894 Sun Piaoyang  | | description:net worth:$2.1B age:56 pharmaceuticals China
+ # | 894 Tsai Cheng-da  | | description:net worth:$2.1B age:- finance Taiwan
+ # | 894 T.Y. Tsai  | | description:net worth:$2.1B age:- finance Taiwan
+ # | 894 Wim Van Der Leegte  | | description:net worth:$2.1B age:67 manufacturing Netherlands
+ # | 894 Wei Ing-Chou  | | description:net worth:$2.1B age:62 food, beverages Taiwan
+ # | 894 Russ Weiner  | | description:net worth:$2.1B age:45 energy drinks United States
+ # | 894 Xiao Wenge  | | description:net worth:$2.1B age:48 entertainment China
+ # | 949 Mohamed Al Fayed  | | description:net worth:$2B age:86 retail, investments Egypt
+ # | 949 Folorunsho Alakija  | | description:net worth:$2B age:64 oil Nigeria
+ # | 949 Vasily Anisimov  | | description:net worth:$2B age:63 metals, real estate Russia
+ # | 949 Carlos Ardila Lulle  | | description:net worth:$2B age:84 soft drinks, diversified Colombia
+ # | 949 George Argyros  | | description:net worth:$2B age:78 real estate, investments United States
+ # | 949 Edward Bass  | | description:net worth:$2B age:70 oil, investments United States
+ # | 949 Lee Bass  | | description:net worth:$2B age:58 oil, investments United States
+ # | 949 Vladimir Bogdanov  | | description:net worth:$2B age:63 oil Russia
+ # | 949 Rossana Camargo de Arruda Botelho  | | description:net worth:$2B age:65 construction Brazil
+ # | 949 Pierre Chen  | | description:net worth:$2B age:57 art, electronics Taiwan
+ # | 949 Patokh Chodiev  | | description:net worth:$2B age:62 mining, metals Belgium
+ # | 949 Belmiro de Azevedo  | | description:net worth:$2B age:76 retail Portugal
+ # | 949 Glenn Dubin  | | description:net worth:$2B age:57 hedge funds United States
+ # | 949 Robert Fisher  | | description:net worth:$2B age:61 Gap United States
+ # | 949 William Fisher  | | description:net worth:$2B age:57 Gap United States
+ # | 949 Fiona Geminder  | | description:net worth:$2B age:50 packaging Australia
+ # | 949 David Hains  | | description:net worth:$2B age:84 finance Australia
+ # | 949 Lawrence Ho  | | description:net worth:$2B age:38 casinos Hong Kong
+ # | 949 Stanley Hubbard  | | description:net worth:$2B age:81 DirecTV United States
+ # | 949 Manuel Jove  | | description:net worth:$2B age:73 real estate Spain
+ # | 949 Bachtiar Karim  | | description:net worth:$2B age:58 manufacturing Indonesia
+ # | 949 Andrei Kozitsyn  | | description:net worth:$2B age:54 metals Russia
+ # | 949 Kwon Hyuk-Bin  | | description:net worth:$2B age:42 online games South Korea
+ # | 949 Lee Joong-Keun  | | description:net worth:$2B age:74 construction South Korea
+ # | 949 Thomas Lee  | | description:net worth:$2B age:70 leveraged buyouts United States
+ # | 949 Peter Lim  | | description:net worth:$2B age:61 investments Singapore
+ # | 949 Hans Georg Naeder  | | description:net worth:$2B age:53 prosthetics Germany
+ # | 949 Renata de Camargo Nascimento  | | description:net worth:$2B age:64 construction Brazil
+ # | 949 Or Wai Sheun  | | description:net worth:$2B age:63 real estate Hong Kong
+ # | 949 Florentino Perez  | | description:net worth:$2B age:68 construction Spain
+ # | 949 Ajay Piramal  | | description:net worth:$2B age:59 pharmaceuticals India
+ # | 949 Regina de Camargo Pires Oliveira Dias  | | description:net worth:$2B age:61 construction Brazil
+ # | 949 Forrest Preston  | | description:net worth:$2B age:81 health care United States
+ # | 949 Nicolas Puech  | | description:net worth:$2B age:72 Hermes France
+ # | 949 Chanchai Ruayrungruang  | | description:net worth:$2B age:61 real estate China
+ # | 949 Phillip Ruffin  | | description:net worth:$2B age:79 casinos, real estate United States
+ # | 949 Shao Genhuo  | | description:net worth:$2B age:49 agribusiness China
+ # | 949 Michal Solowow  | | description:net worth:$2B age:52 investments Poland
+ # | 949 Jon Stryker  | | description:net worth:$2B age:56 medical equipment United States
+ # | 949 Torbjorn Tornqvist  | | description:net worth:$2B age:61 oil trading Sweden
+ # | 949 Tse Ping  | | description:net worth:$2B age:63 pharmaceuticals China
+ # | 949 Sunny Varkey  | | description:net worth:$2B age:57 education India
+ # | 949 Sandro Veronesi  | | description:net worth:$2B age:55 fashion retailer Italy
+ # | 949 Georg von Opel  | | description:net worth:$2B age:48 real estate/investments Germany
+ # | 949 Ronald Wanek  | | description:net worth:$2B age:73 furniture United States
+ # | 949 Wei Yin-Chun  | | description:net worth:$2B age:58 food, beverages Taiwan
+ # | 949 Wei Yin-Heng  | | description:net worth:$2B age:56 food, beverages Taiwan
+ # | 949 Wei Ying-Chiao  | | description:net worth:$2B age:60 food, beverages Taiwan
+ # | 949 Meg Whitman  | | description:net worth:$2B age:58 Ebay United States
+ # | 949 Elaine Wynn  | | description:net worth:$2B age:71 casinos, hotels United States
+ # | 949 Jerry Yang  | | description:net worth:$2B age:46 Yahoo United States
+ # | 1000 Lam Kong  | | description:net worth:$1.95B age:50 pharmaceuticals China
+ # | 1000 Liang Yunchao  | | description:net worth:$1.95B age:46 nutrition supplements China
+ # | 1000 Liu Baolin  | | description:net worth:$1.95B age:61 pharmacies, drug distribution China
+ # | 1000 Stewart Rahr  | | description:net worth:$1.95B age:69 drug distribution United States
+ # | 1000 Yasumitsu Shigeta  | | description:net worth:$1.95B age:50 mobile telecom Japan
+ # | 1000 Sun Xishuang  | | description:net worth:$1.95B age:61 real estate China
+ # | 1006 Juan Abello  | | description:net worth:$1.9B age:73 investments Spain
+ # | 1006 Aras Agalarov  | | description:net worth:$1.9B age:59 real estate Russia
+ # | 1006 Tom Benson  | | description:net worth:$1.9B age:87 New Orleans Saints United States
+ # | 1006 Nathan Blecharczyk  | | description:net worth:$1.9B age:31 Airbnb United States
+ # | 1006 Jurgen Blickle  | | description:net worth:$1.9B age:68 auto parts Germany
+ # | 1006 Norman Braman  | | description:net worth:$1.9B age:82 art, car dealerships United States
+ # | 1006 Gary Burrell  | | description:net worth:$1.9B age:77 navigation equipment United States
+ # | 1006 Brian Chesky  | | description:net worth:$1.9B age:33 Airbnb United States
+ # | 1006 Christopher Cline  | | description:net worth:$1.9B age:57 coal United States
+ # | 1006 Scott Cook  | | description:net worth:$1.9B age:62 software United States
+ # | 1006 Mark Coombs  | | description:net worth:$1.9B age:54 finance United Kingdom
+ # | 1006 David Einhorn  | | description:net worth:$1.9B age:46 hedge funds United States
+ # | 1006 Eduardo Eurnekian  | | description:net worth:$1.9B age:82 airports, investments Argentina
+ # | 1006 Carlo Fidani  | | description:net worth:$1.9B age:60 real estate Canada
+ # | 1006 Bernard Fraisse  | | description:net worth:$1.9B age:58 pharmaceuticals France
+ # | 1006 Joe Gebbia  | | description:net worth:$1.9B age:33 Airbnb United States
+ # | 1006 Jonathan Gray  | | description:net worth:$1.9B age:45 investments United States
+ # | 1006 Joseph Grendys  | | description:net worth:$1.9B age:53 Meat Processing United States
+ # | 1006 Bill Haslam  | | description:net worth:$1.9B age:56 truck stops United States
+ # | 1006 Michael Hintze  | | description:net worth:$1.9B age:61 investment Australia
+ # | 1006 Hamilton James  | | description:net worth:$1.9B age:63 investments United States
+ # | 1006 King Pak Fu  | | description:net worth:$1.9B age:45 real estate Hong Kong
+ # | 1006 Friedrich Knapp  | | description:net worth:$1.9B age:63 retail Germany
+ # | 1006 Guy Laliberte  | | description:net worth:$1.9B age:55 Cirque du Soleil Canada
+ # | 1006 Marc Lasry  | | description:net worth:$1.9B age:54 hedge funds United States
+ # | 1006 Manuel Moroun  | | description:net worth:$1.9B age:87 transportation United States
+ # | 1006 Vadim Moshkovich  | | description:net worth:$1.9B age:47 agriculture, land Russia
+ # | 1006 Madeleine Olsson Ericksson  | | description:net worth:$1.9B age:70 diversified Sweden
+ # | 1006 Neal Patterson  | | description:net worth:$1.9B age:65 health IT United States
+ # | 1006 Nelson Peltz  | | description:net worth:$1.9B age:72 investments United States
+ # | 1006 Theodore Rachmat  | | description:net worth:$1.9B age:71 diversified Indonesia
+ # | 1006 Clayton Riddell  | | description:net worth:$1.9B age:77 oil & gas Canada
+ # | 1006 Kjell Inge Rokke  | | description:net worth:$1.9B age:56 shipping, seafood Norway
+ # | 1006 Daniel Roullier  | | description:net worth:$1.9B age:78 animal feed France
+ # | 1006 Kavitark Ram Shriram  | | description:net worth:$1.9B age:58 venture capital, Google United States
+ # | 1006 Paul Singer  | | description:net worth:$1.9B age:70 hedge funds United States
+ # | 1006 Heloise Waislitz  | | description:net worth:$1.9B age:52 packaging Australia
+ # | 1006 Mark Walter  | | description:net worth:$1.9B age:54 finance United States
+ # | 1044 Che Fengsheng  | | description:net worth:$1.85B age:52 pharmaceuticals China
+ # | 1044 Murali Divi  | | description:net worth:$1.85B age:63 pharmaceuticals India
+ # | 1044 Senapathy Gopalakrishnan  | | description:net worth:$1.85B age:59 software services India
+ # | 1044 Lin Tianfu  | | description:net worth:$1.85B age:52 retail Hong Kong
+ # | 1044 Mario Moretti Polegato  | | description:net worth:$1.85B age:62 shoes Italy
+ # | 1044 David Nahmad  | | description:net worth:$1.85B age:67 art Monaco
+ # | 1044 Tor Peterson  | | description:net worth:$1.85B age:50 commodities United States
+ # | 1044 Ruan Shuilong  | | description:net worth:$1.85B age:79 chemicals China
+ # | 1044 Wu Guangming  | | description:net worth:$1.85B age:53 medical equipment China
+ # | 1044 Amy Wyss  | | description:net worth:$1.85B age:44 medical devices United States
+ # | 1054 Bill Adderley  | | description:net worth:$1.8B age:67 home furnishings United Kingdom
+ # | 1054 Anil Agarwal  | | description:net worth:$1.8B age:61 mining, metals India
+ # | 1054 Abdullah Al Rajhi  | | description:net worth:$1.8B age:- banking Saudi Arabia
+ # | 1054 Chang Yung Fa  | | description:net worth:$1.8B age:87 transportation Taiwan
+ # | 1054 Ciputra  | | description:net worth:$1.8B age:83 real estate Indonesia
+ # | 1054 Robert Coyiuto, Jr.  | | description:net worth:$1.8B age:62 power Philippines
+ # | 1054 John de Mol  | | description:net worth:$1.8B age:59 TV Netherlands
+ # | 1054 N. Murray Edwards  | | description:net worth:$1.8B age:55 oil & gas Canada
+ # | 1054 Richard Elman  | | description:net worth:$1.8B age:75 commodities United Kingdom
+ # | 1054 Fang Wei  | | description:net worth:$1.8B age:41 steel China
+ # | 1054 Kenneth Feld  | | description:net worth:$1.8B age:66 circus, live entertainment United States
+ # | 1054 Alexander Frolov  | | description:net worth:$1.8B age:50 mining, steel Russia
+ # | 1054 Anne Gittinger  | | description:net worth:$1.8B age:79 Nordstrom department stores United States
+ # | 1054 David Gottesman  | | description:net worth:$1.8B age:88 investments United States
+ # | 1054 Yusuf Hamied  | | description:net worth:$1.8B age:78 pharmaceuticals India
+ # | 1054 Lutz Mario Helmig  | | description:net worth:$1.8B age:68 medical facilities Germany
+ # | 1054 Roberto Hernandez Ramirez  | | description:net worth:$1.8B age:72 banking Mexico
+ # | 1054 Kim Jung-Ju  | | description:net worth:$1.8B age:47 online games South Korea
+ # | 1054 Vladimir Kim  | | description:net worth:$1.8B age:54 mining Kazakhstan
+ # | 1054 Stephen Lansdown  | | description:net worth:$1.8B age:62 financial services Guernsey
+ # | 1054 Li Shuirong  | | description:net worth:$1.8B age:58 petrochemicals China
+ # | 1054 Lin Xiucheng  | | description:net worth:$1.8B age:59 electronics China
+ # | 1054 Jeffrey Lorberbaum  | | description:net worth:$1.8B age:60 flooring United States
+ # | 1054 Brandt Louie  | | description:net worth:$1.8B age:71 drug store chain Canada
+ # | 1054 Catherine Lozick  | | description:net worth:$1.8B age:70 Manufacturing United States
+ # | 1054 Craig McCaw  | | description:net worth:$1.8B age:65 telecom United States
+ # | 1054 Billy Joe (Red) McCombs  | | description:net worth:$1.8B age:87 real estate, oil, cars United States
+ # | 1054 Nirav Modi  | | description:net worth:$1.8B age:44 diamond jewelry India
+ # | 1054 Jorge Moll Filho  | | description:net worth:$1.8B age:70 hospitals Brazil
+ # | 1054 Marius Nacht  | | description:net worth:$1.8B age:49 software Israel
+ # | 1054 Bruce Nordstrom  | | description:net worth:$1.8B age:81 department stores United States
+ # | 1054 Bob Parsons  | | description:net worth:$1.8B age:64 web hosting United States
+ # | 1054 Robert Pera  | | description:net worth:$1.8B age:36 technology United States
+ # | 1054 Peter Peterson  | | description:net worth:$1.8B age:88 investments United States
+ # | 1054 Alberto Prada  | | description:net worth:$1.8B age:- Prada Italy
+ # | 1054 Marina Prada  | | description:net worth:$1.8B age:- Prada Italy
+ # | 1054 Jennifer Pritzker  | | description:net worth:$1.8B age:63 hotels, investments United States
+ # | 1054 Linda Pritzker  | | description:net worth:$1.8B age:61 hotels, investments United States
+ # | 1054 James Ratcliffe  | | description:net worth:$1.8B age:62 chemicals United Kingdom
+ # | 1054 Luigi Rovati  | | description:net worth:$1.8B age:86 pharmaceuticals Italy
+ # | 1054 Onsi Sawiris  | | description:net worth:$1.8B age:85 construction, telecom Egypt
+ # | 1054 Thomas Secunda  | | description:net worth:$1.8B age:60 Bloomberg LP United States
+ # | 1054 Shen Ya  | | description:net worth:$1.8B age:44 online apparel retail China
+ # | 1054 Alexandre Soares dos Santos  | | description:net worth:$1.8B age:80 retail Portugal
+ # | 1054 Sylvia Stroher  | | description:net worth:$1.8B age:59 cosmetics Germany
+ # | 1054 Sukanto Tanoto  | | description:net worth:$1.8B age:65 diversified Indonesia
+ # | 1054 Peter Unger  | | description:net worth:$1.8B age:70 auto repair Germany
+ # | 1054 Radovan Vitek  | | description:net worth:$1.8B age:43 real estate Czech Republic
+ # | 1054 David Walentas  | | description:net worth:$1.8B age:76 real estate United States
+ # | 1054 Wang Qingtao  | | description:net worth:$1.8B age:53 steel smelting China
+ # | 1054 Zhang Li  | | description:net worth:$1.8B age:62 real estate China
+ # | 1105 Ali Ibrahim Agaoglu  | | description:net worth:$1.75B age:61 construction Turkey
+ # | 1105 Cai Dongqing  | | description:net worth:$1.75B age:45 animation China
+ # | 1105 Cao Longxiang  | | description:net worth:$1.75B age:57 pharmaceuticals China
+ # | 1105 Diego Della Valle  | | description:net worth:$1.75B age:61 shoes Italy
+ # | 1105 Dermot Desmond  | | description:net worth:$1.75B age:64 finance Ireland
+ # | 1105 James Irsay  | | description:net worth:$1.75B age:55 Indianapolis Colts United States
+ # | 1105 Li Sze Lim  | | description:net worth:$1.75B age:58 real estate Hong Kong
+ # | 1105 Nandan Nilekani  | | description:net worth:$1.75B age:59 software services India
+ # | 1105 H. Ross Perot, Jr.  | | description:net worth:$1.75B age:56 computer services, real estate United States
+ # | 1105 Yuri Shefler  | | description:net worth:$1.75B age:47 alcohol Russia
+ # | 1105 Tahir  | | description:net worth:$1.75B age:62 diversified Indonesia
+ # | 1105 Takao Yasuda  | | description:net worth:$1.75B age:65 retail Japan
+ # | 1105 Richard Yuengling, Jr.  | | description:net worth:$1.75B age:71 beer United States
+ # | 1118 Aziz Akhannouch  | | description:net worth:$1.7B age:54 petroleum, diversified Morocco
+ # | 1118 Louis Bacon  | | description:net worth:$1.7B age:56 hedge funds United States
+ # | 1118 Mikhail Balakin  | | description:net worth:$1.7B age:53 construction Russia
+ # | 1118 Sid Bass  | | description:net worth:$1.7B age:72 oil, investments United States
+ # | 1118 Aldo Bensadoun  | | description:net worth:$1.7B age:76 shoes Canada
+ # | 1118 Rainer Blickle  | | description:net worth:$1.7B age:- auto parts Germany
+ # | 1118 Jaime Botin  | | description:net worth:$1.7B age:78 banking Spain
+ # | 1118 Nikolai Buinov  | | description:net worth:$1.7B age:47 oil & gas Russia
+ # | 1118 Chen Bang  | | description:net worth:$1.7B age:49 hospitals China
+ # | 1118 Dulce Pugliese de Godoy Bueno  | | description:net worth:$1.7B age:67 hospitals, health care Brazil
+ # | 1118 Ana Lucia de Mattos Barretto Villela  | | description:net worth:$1.7B age:41 banking Brazil
+ # | 1118 Richard Desmond  | | description:net worth:$1.7B age:63 publishing United Kingdom
+ # | 1118 Alfredo Egydio Arruda Villela Filho  | | description:net worth:$1.7B age:45 banking Brazil
+ # | 1118 Mario Gabelli  | | description:net worth:$1.7B age:72 money management United States
+ # | 1118 Stelios Haji-Ioannou  | | description:net worth:$1.7B age:48 EasyJet Cyprus
+ # | 1118 Christoph Henkel  | | description:net worth:$1.7B age:- consumer goods Germany
+ # | 1118 Huang Hongyun  | | description:net worth:$1.7B age:48 real estate China
+ # | 1118 W. Herbert Hunt  | | description:net worth:$1.7B age:86 oil United States
+ # | 1118 Irwin Jacobs  | | description:net worth:$1.7B age:81 semiconductors United States
+ # | 1118 Ravi Jaipuria  | | description:net worth:$1.7B age:60 soft drinks India
+ # | 1118 Joe Jamail, Jr.  | | description:net worth:$1.7B age:89 lawsuits United States
+ # | 1118 Jiang Rensheng  | | description:net worth:$1.7B age:61 vaccine production China
+ # | 1118 Jiang Wei  | | description:net worth:$1.7B age:53 pharmaceuticals China
+ # | 1118 Jiang Zhaobai  | | description:net worth:$1.7B age:51 real estate China
+ # | 1118 Jim Justice, II.  | | description:net worth:$1.7B age:63 coal United States
+ # | 1118 Anton Kathrein, Jr.  | | description:net worth:$1.7B age:30 antennas Germany
+ # | 1118 Vinod Khosla  | | description:net worth:$1.7B age:60 venture capital United States
+ # | 1118 Karel Komarek  | | description:net worth:$1.7B age:45 oil and gas Czech Republic
+ # | 1118 Angela Leong  | | description:net worth:$1.7B age:53 casinos Hong Kong
+ # | 1118 Lin Li  | | description:net worth:$1.7B age:51 investments China
+ # | 1118 Vincent Lo  | | description:net worth:$1.7B age:66 real estate Hong Kong
+ # | 1118 Tom Morris  | | description:net worth:$1.7B age:60 Retail United Kingdom
+ # | 1118 Henry Nicholas, III.  | | description:net worth:$1.7B age:55 semiconductors United States
+ # | 1118 Ahsen Ozokur  | | description:net worth:$1.7B age:64 food manufacturing Turkey
+ # | 1118 Ranjan Pai  | | description:net worth:$1.7B age:42 education India
+ # | 1118 Lirio Parisotto  | | description:net worth:$1.7B age:61 investments Brazil
+ # | 1118 Murdaya Poo  | | description:net worth:$1.7B age:74 diversified Indonesia
+ # | 1118 Alexander Samwer  | | description:net worth:$1.7B age:40 Rocket Internet Germany
+ # | 1118 Marc Samwer  | | description:net worth:$1.7B age:44 tech startups Germany
+ # | 1118 Oliver Samwer  | | description:net worth:$1.7B age:41 tech startups Germany
+ # | 1118 Karl Scheufele, III.  | | description:net worth:$1.7B age:76 jewelry Switzerland
+ # | 1118 Dieter Schnabel  | | description:net worth:$1.7B age:69 chemicals Germany
+ # | 1118 Gerald Schwartz  | | description:net worth:$1.7B age:73 finance Canada
+ # | 1118 B.R. Shetty  | | description:net worth:$1.7B age:73 healthcare India
+ # | 1118 Thaksin Shinawatra  | | description:net worth:$1.7B age:65 investments Thailand
+ # | 1118 Martua Sitorus  | | description:net worth:$1.7B age:55 palm oil Indonesia
+ # | 1118 Dan Snyder  | | description:net worth:$1.7B age:50 Washington Redskins United States
+ # | 1118 Mark Stevens  | | description:net worth:$1.7B age:55 venture capital United States
+ # | 1118 Torsten Toeller  | | description:net worth:$1.7B age:48 pet food Germany
+ # | 1118 Robert Toennies  | | description:net worth:$1.7B age:- meat processing Germany
+ # | 1118 Thongma Vijitpongpun  | | description:net worth:$1.7B age:56 real estate Thailand
+ # | 1118 Vincent Viola  | | description:net worth:$1.7B age:59 electronic trading United States
+ # | 1118 Pham Nhat Vuong  | | description:net worth:$1.7B age:46 real estate Vietnam
+ # | 1118 Ian Wood  | | description:net worth:$1.7B age:72 energy services United Kingdom
+ # | 1118 Jon Yarbrough  | | description:net worth:$1.7B age:57 video games United States
+ # | 1173 Elisabeth Badinter  | | description:net worth:$1.65B age:71 advertising France
+ # | 1173 Domenico Dolce  | | description:net worth:$1.65B age:56 Dolce & Gabbana Italy
+ # | 1173 Stefano Gabbana  | | description:net worth:$1.65B age:52 Dolce & Gabbana Italy
+ # | 1173 Hans-Werner Hector  | | description:net worth:$1.65B age:75 SAP Germany
+ # | 1173 Huang Zhenda  | | description:net worth:$1.65B age:67 construction China
+ # | 1173 Keeree Kanjanapas  | | description:net worth:$1.65B age:65 transportation Thailand
+ # | 1173 Koo Bon-Moo  | | description:net worth:$1.65B age:70 electronics/chemicals/household products South Korea
+ # | 1173 Eric Lefkofsky  | | description:net worth:$1.65B age:45 Groupon United States
+ # | 1173 Oon Kuin Lim  | | description:net worth:$1.65B age:71 oil trading Singapore
+ # | 1173 Akio Nitori  | | description:net worth:$1.65B age:71 retail Japan
+ # | 1173 Sudthida Ratanarak  | | description:net worth:$1.65B age:- media, real estate Thailand
+ # | 1173 J. Joe Ricketts  | | description:net worth:$1.65B age:73 TD Ameritrade United States
+ # | 1173 Shen Wenrong  | | description:net worth:$1.65B age:69 steel production China
+ # | 1173 Tsai Ming-Kai  | | description:net worth:$1.65B age:64 semiconductors Taiwan
+ # | 1173 Tseng Shin-Yi  | | description:net worth:$1.65B age:87 petrochemicals Taiwan
+ # | 1173 Zhou Chengjian  | | description:net worth:$1.65B age:49 apparel retail China
+ # | 1173 Zhou Yahui  | | description:net worth:$1.65B age:38 online games China
+ # | 1190 Leslie Alexander  | | description:net worth:$1.6B age:71 Houston Rockets United States
+ # | 1190 Igor Altushkin  | | description:net worth:$1.6B age:44 metals Russia
+ # | 1190 Naruatsu Baba  | | description:net worth:$1.6B age:37 smartphone game maker Japan
+ # | 1190 Alex Beard  | | description:net worth:$1.6B age:47 mining, commodities United Kingdom
+ # | 1190 David Booth  | | description:net worth:$1.6B age:69 mutual funds United States
+ # | 1190 Julio Bozano  | | description:net worth:$1.6B age:79 banking Brazil
+ # | 1190 Eduardo Carmignac  | | description:net worth:$1.6B age:67 asset management France
+ # | 1190 Sarah Chaney  | | description:net worth:$1.6B age:61 Cargill United States
+ # | 1190 Alexandra Daitch  | | description:net worth:$1.6B age:52 Cargill United States
+ # | 1190 Venugopal Dhoot  | | description:net worth:$1.6B age:63 electronics India
+ # | 1190 Gabriel Escarrer  | | description:net worth:$1.6B age:80 hotels Spain
+ # | 1190 Fu Meicheng  | | description:net worth:$1.6B age:57 TV shows, movies China
+ # | 1190 Dan Gertler  | | description:net worth:$1.6B age:41 mining Israel
+ # | 1190 John Henry  | | description:net worth:$1.6B age:65 sports United States
+ # | 1190 Alan Howard  | | description:net worth:$1.6B age:51 hedge funds United Kingdom
+ # | 1190 Stephen Jarislowsky  | | description:net worth:$1.6B age:89 money management Canada
+ # | 1190 Danil Khachaturov  | | description:net worth:$1.6B age:43 insurance, banking, real estate Russia
+ # | 1190 Wolfgang Leitner  | | description:net worth:$1.6B age:61 engineering Austria
+ # | 1190 Liao Long-Shing  | | description:net worth:$1.6B age:- petrochemicals Taiwan
+ # | 1190 Suhon Lin  | | description:net worth:$1.6B age:87 petrochemicals Taiwan
+ # | 1190 Robert Miller  | | description:net worth:$1.6B age:81 retail United Kingdom
+ # | 1190 Boris Mints  | | description:net worth:$1.6B age:56 real estate Russia
+ # | 1190 Phillip Ragon  | | description:net worth:$1.6B age:65 health IT United States
+ # | 1190 Thomas Steyer  | | description:net worth:$1.6B age:57 hedge funds United States
+ # | 1190 Lucy Stitzer  | | description:net worth:$1.6B age:55 Cargill United States
+ # | 1190 Katherine Tanner  | | description:net worth:$1.6B age:59 Cargill United States
+ # | 1190 Wichai Thongtang  | | description:net worth:$1.6B age:68 investments Thailand
+ # | 1190 Tian Ming  | | description:net worth:$1.6B age:61 measuring instruments China
+ # | 1190 Joop van den Ende  | | description:net worth:$1.6B age:73 TV Netherlands
+ # | 1190 Manuel Villar  | | description:net worth:$1.6B age:65 Real estate Philippines
+ # | 1190 Jitendra Virwani  | | description:net worth:$1.6B age:49 real estate India
+ # | 1190 Allan Wong  | | description:net worth:$1.6B age:65 electronics Hong Kong
+ # | 1190 Simon Xie  | | description:net worth:$1.6B age:45 online payment service China
+ # | 1190 Gavril Yushvaev  | | description:net worth:$1.6B age:57 precious metals, real estate Russia
+ # | 1190 Zan Shengda  | | description:net worth:$1.6B age:51 diversified China
+ # | 1190 Zhang Hongwei  | | description:net worth:$1.6B age:60 oil, banking China
+ # | 1226 Roberto Angelini Rossi  | | description:net worth:$1.55B age:66 forestry, mining Chile
+ # | 1226 Ana Maria Brescia Cafferata  | | description:net worth:$1.55B age:90 mining, banking Peru
+ # | 1226 Rosa Brescia Cafferata  | | description:net worth:$1.55B age:88 mining, fisheries Peru
+ # | 1226 Vivek Chand Burman  | | description:net worth:$1.55B age:77 consumer goods India
+ # | 1226 Bruce Cheng  | | description:net worth:$1.55B age:79 electronics Taiwan
+ # | 1226 Pollyanna Chu  | | description:net worth:$1.55B age:57 financial services Hong Kong
+ # | 1226 James Clark  | | description:net worth:$1.55B age:70 Netscape, investments United States
+ # | 1226 Du Jiangtao  | | description:net worth:$1.55B age:45 chemicals China
+ # | 1226 Reinold Geiger  | | description:net worth:$1.55B age:67 beauty products Austria
+ # | 1226 Goh Peng Ooi  | | description:net worth:$1.55B age:60 software Malaysia
+ # | 1226 Allan Gray  | | description:net worth:$1.55B age:77 investing South Africa
+ # | 1226 Richard Hayne  | | description:net worth:$1.55B age:67 Urban Outfitters United States
+ # | 1226 Huang Li  | | description:net worth:$1.55B age:51 infrared imaging systems China
+ # | 1226 Huang Qisen  | | description:net worth:$1.55B age:50 real estate China
+ # | 1226 Lee Hwa-Kyung  | | description:net worth:$1.55B age:59 snack foods South Korea
+ # | 1226 Lin Jianhua  | | description:net worth:$1.55B age:52 solar China
+ # | 1226 Liu Xuejing  | | description:net worth:$1.55B age:64 copper, poultry China
+ # | 1226 Gary Michelson  | | description:net worth:$1.55B age:66 medical patents United States
+ # | 1226 Gregorio Perez Companc  | | description:net worth:$1.55B age:79 oil and gas Argentina
+ # | 1226 Shin Dong-Bin  | | description:net worth:$1.55B age:60 retailing South Korea
+ # | 1226 Sit Kwong Lam  | | description:net worth:$1.55B age:47 oil, transportation Hong Kong
+ # | 1226 Ronald Southern  | | description:net worth:$1.55B age:84 structures, utilities Canada
+ # | 1226 Petter Stordalen  | | description:net worth:$1.55B age:52 hotels Norway
+ # | 1226 Wu Yiling  | | description:net worth:$1.55B age:65 pharmaceuticals China
+ # | 1250 Lina Maria Aguiar  | | description:net worth:$1.5B age:77 banking inheritance Brazil
+ # | 1250 Sergio Lins Andrade  | | description:net worth:$1.5B age:67 construction Brazil
+ # | 1250 Michael Ashcroft  | | description:net worth:$1.5B age:69 security United Kingdom
+ # | 1250 Nicolas Berggruen  | | description:net worth:$1.5B age:53 investments United States
+ # | 1250 Alberto Bombassei  | | description:net worth:$1.5B age:74 automotive brakes Italy
+ # | 1250 Josef Boquoi  | | description:net worth:$1.5B age:81 frozen foods Germany
+ # | 1250 Timothy Boyle  | | description:net worth:$1.5B age:65 Columbia Sportswear United States
+ # | 1250 Cho Tak Wong  | | description:net worth:$1.5B age:68 auto parts Hong Kong
+ # | 1250 Kommer Damen  | | description:net worth:$1.5B age:70 shipbuilding Netherlands
+ # | 1250 Benjamin de Rothschild  | | description:net worth:$1.5B age:51 banking Switzerland
+ # | 1250 Darwin Deason  | | description:net worth:$1.5B age:74 Xerox United States
+ # | 1250 Maria Del Pino y Calvo-Sotelo  | | description:net worth:$1.5B age:58 construction Spain
+ # | 1250 Fritz Draexlmaier  | | description:net worth:$1.5B age:- auto parts Germany
+ # | 1250 Alexander Dzhaparidze  | | description:net worth:$1.5B age:59 oil services Russia
+ # | 1250 Frank Fertitta, III.  | | description:net worth:$1.5B age:53 casinos, Ultimate Fighting Championship United States
+ # | 1250 Lorenzo Fertitta  | | description:net worth:$1.5B age:46 casinos, Ultimate Fighting Championship United States
+ # | 1250 Martha Ford  | | description:net worth:$1.5B age:89 Ford Motor United States
+ # | 1250 Paul Foster  | | description:net worth:$1.5B age:57 oil refining United States
+ # | 1250 Walter Frey  | | description:net worth:$1.5B age:71 Emil Frey Group Switzerland
+ # | 1250 Jayme Garfinkel  | | description:net worth:$1.5B age:69 insurance Brazil
+ # | 1250 Geng Jianming  | | description:net worth:$1.5B age:52 real estate China
+ # | 1250 Rolf Gerling  | | description:net worth:$1.5B age:60 insurance Germany
+ # | 1250 Peter Gilgan  | | description:net worth:$1.5B age:64 homebuilding Canada
+ # | 1250 Christopher Goldsbury  | | description:net worth:$1.5B age:72 salsa United States
+ # | 1250 David Harding  | | description:net worth:$1.5B age:53 finance United Kingdom
+ # | 1250 Saad Hariri  | | description:net worth:$1.5B age:44 construction, investments Lebanon
+ # | 1250 Jonathan Harmsworth  | | description:net worth:$1.5B age:47 publishing United Kingdom
+ # | 1250 Devendra Jain  | | description:net worth:$1.5B age:86 chemicals India
+ # | 1250 George Joseph  | | description:net worth:$1.5B age:93 insurance United States
+ # | 1250 Seth Klarman  | | description:net worth:$1.5B age:57 investments United States
+ # | 1250 Schulenberg Klaus-Peter  | | description:net worth:$1.5B age:- ticketing service Germany
+ # | 1250 Li Li  | | description:net worth:$1.5B age:51 pharmaceuticals China
+ # | 1250 Scott Lin  | | description:net worth:$1.5B age:- optical components Taiwan
+ # | 1250 Gary Magness  | | description:net worth:$1.5B age:61 cable, investments United States
+ # | 1250 Alfred Mann  | | description:net worth:$1.5B age:89 medical devices United States
+ # | 1250 Marie-Jeanne Meyer  | | description:net worth:$1.5B age:73 commodities France
+ # | 1250 Lachhman Das Mittal  | | description:net worth:$1.5B age:84 tractors India
+ # | 1250 Arturo Moreno  | | description:net worth:$1.5B age:68 billboards United States
+ # | 1250 Mofatraj Munot  | | description:net worth:$1.5B age:70 real estate India
+ # | 1250 Bobby Murphy  | | description:net worth:$1.5B age:26 Snapchat United States
+ # | 1250 Ezra Nahmad  | | description:net worth:$1.5B age:69 art Monaco
+ # | 1250 Nan Cunhui  | | description:net worth:$1.5B age:51 electrical power equipment China
+ # | 1250 Jay Paul  | | description:net worth:$1.5B age:67 real estate United States
+ # | 1250 Stanley Perron  | | description:net worth:$1.5B age:92 property, retail Australia
+ # | 1250 Victor Pinchuk  | | description:net worth:$1.5B age:54 steel pipes, diversified Ukraine
+ # | 1250 Purnomo Prawiro  | | description:net worth:$1.5B age:68 taxis Indonesia
+ # | 1250 Nicholas Pritzker, II.  | | description:net worth:$1.5B age:71 hotels, investments United States
+ # | 1250 Antony Ressler  | | description:net worth:$1.5B age:53 finance United States
+ # | 1250 Monique Roosmale Nepveu  | | description:net worth:$1.5B age:75 commodities France
+ # | 1250 Rodney Sacks  | | description:net worth:$1.5B age:65 energy drinks United States
+ # | 1250 Ralph Sonnenberg  | | description:net worth:$1.5B age:80 blinds Netherlands
+ # | 1250 Evan Spiegel  | | description:net worth:$1.5B age:24 Snapchat United States
+ # | 1250 Edward Stack  | | description:net worth:$1.5B age:60 Dick's Sporting Goods United States
+ # | 1250 Sun Hongbin  | | description:net worth:$1.5B age:52 real estate United States
+ # | 1250 Sun Shoukuan  | | description:net worth:$1.5B age:65 chemicals China
+ # | 1250 Henry Swieca  | | description:net worth:$1.5B age:57 hedge funds United States
+ # | 1250 Katsumi Tada  | | description:net worth:$1.5B age:69 real estate Japan
+ # | 1250 Jim Thompson  | | description:net worth:$1.5B age:75 logistics United States
+ # | 1250 Todd Wagner  | | description:net worth:$1.5B age:54 online media United States
+ # | 1250 Wang Junmin  | | description:net worth:$1.5B age:46 pharmaceuticals China
+ # | 1250 Xiong Xuqiang  | | description:net worth:$1.5B age:58 real estate Hong Kong
+ # | 1250 Zhu Gongshan  | | description:net worth:$1.5B age:57 solar panel materials China
+ # | 1312 Anu Aga  | | description:net worth:$1.45B age:72 engineering India
+ # | 1312 Cao Kejian  | | description:net worth:$1.45B age:52 air compressors China
+ # | 1312 Chao Teng-Hsiung  | | description:net worth:$1.45B age:71 real estate Taiwan
+ # | 1312 Chen Yung-Tai  | | description:net worth:$1.45B age:79 real estate Taiwan
+ # | 1312 Bulent Eczacibasi  | | description:net worth:$1.45B age:65 pharmaceuticals, diversified Turkey
+ # | 1312 Max Michel Suberville  | | description:net worth:$1.45B age:82 beverages Mexico
+ # | 1312 Robert Mouawad  | | description:net worth:$1.45B age:70 fine jewelry Lebanon
+ # | 1312 Qiu Jianping  | | description:net worth:$1.45B age:53 hand tools China
+ # | 1312 Wilma Tisch  | | description:net worth:$1.45B age:87 diversified United States
+ # | 1312 Kenny Troutt  | | description:net worth:$1.45B age:67 telecommunications United States
+ # | 1312 Wei Shaojun  | | description:net worth:$1.45B age:52 real estate China
+ # | 1312 Wong Kwong Yu  | | description:net worth:$1.45B age:45 retail China
+ # | 1324 Radhe Shyam Agarwal  | | description:net worth:$1.4B age:70 consumer goods India
+ # | 1324 Farkhad Akhmedov  | | description:net worth:$1.4B age:59 natural gas Russia
+ # | 1324 Abdul Majeed Alhokair  | | description:net worth:$1.4B age:45 retailing, real estate Saudi Arabia
+ # | 1324 Fawaz Alhokair  | | description:net worth:$1.4B age:49 retail, shopping malls Saudi Arabia
+ # | 1324 Salman Alhokair  | | description:net worth:$1.4B age:48 retailing, shopping malls Saudi Arabia
+ # | 1324 Herbert Allen, Jr.  | | description:net worth:$1.4B age:75 investment banking United States
+ # | 1324 Edmund Ansin  | | description:net worth:$1.4B age:79 television United States
+ # | 1324 Carol Jenkins Barnett  | | description:net worth:$1.4B age:58 Publix supermarkets United States
+ # | 1324 Thomas Bruch  | | description:net worth:$1.4B age:64 food retailing Germany
+ # | 1324 Anand Burman  | | description:net worth:$1.4B age:62 consumer goods India
+ # | 1324 Ahmet Calik  | | description:net worth:$1.4B age:57 energy, media, banking Turkey
+ # | 1324 Benedicta Chamberlain  | | description:net worth:$1.4B age:71 alcohol United Kingdom
+ # | 1324 Chen Jianhua  | | description:net worth:$1.4B age:44 chemicals China
+ # | 1324 Alfred James Clark  | | description:net worth:$1.4B age:87 construction United States
+ # | 1324 Alberto Cortina  | | description:net worth:$1.4B age:69 investments Spain
+ # | 1324 Claude Dauphin  | | description:net worth:$1.4B age:64 commodities France
+ # | 1324 Faruk Eczacibasi  | | description:net worth:$1.4B age:60 pharmaceuticals, diversified Turkey
+ # | 1324 Clement Fayat  | | description:net worth:$1.4B age:83 construction France
+ # | 1324 J. Christopher Flowers  | | description:net worth:$1.4B age:57 investments United States
+ # | 1324 Alan Gerry  | | description:net worth:$1.4B age:85 cable television United States
+ # | 1324 Radhe Shyam Goenka  | | description:net worth:$1.4B age:69 consumer goods India
+ # | 1324 Sanjiv Goenka  | | description:net worth:$1.4B age:54 diversified India
+ # | 1324 Ryan Graves  | | description:net worth:$1.4B age:31 car service United States
+ # | 1324 Alfredo Harp Helu  | | description:net worth:$1.4B age:70 banking Mexico
+ # | 1324 William Heinecke  | | description:net worth:$1.4B age:66 hotels Thailand
+ # | 1324 Hong Ra-Hee  | | description:net worth:$1.4B age:69 Samsung South Korea
+ # | 1324 Stewart Horejsi  | | description:net worth:$1.4B age:77 Berkshire Hathaway United States
+ # | 1324 Kenji Kasahara  | | description:net worth:$1.4B age:39 social networking website Japan
+ # | 1324 Pyotr Kondrashev  | | description:net worth:$1.4B age:65 fertilizers Russia
+ # | 1324 Thomas Lau  | | description:net worth:$1.4B age:61 Real Estate Hong Kong
+ # | 1324 Jane Lauder  | | description:net worth:$1.4B age:42 cosmetics United States
+ # | 1324 Aerin Lauder Zinterhofer  | | description:net worth:$1.4B age:45 cosmetics United States
+ # | 1324 Lee Man Tat  | | description:net worth:$1.4B age:86 food Hong Kong
+ # | 1324 Lee Myung-Hee  | | description:net worth:$1.4B age:71 retailing South Korea
+ # | 1324 Lei Jufang  | | description:net worth:$1.4B age:62 pharmaceuticals China
+ # | 1324 Liu Changqing  | | description:net worth:$1.4B age:62 manufacturing China
+ # | 1324 Kenneth Lo  | | description:net worth:$1.4B age:76 Textiles United Kingdom
+ # | 1324 Anatoly Lomakin  | | description:net worth:$1.4B age:62 fertilizers Russia
+ # | 1324 Ana Maria Marcondes Penido Sant'Anna  | | description:net worth:$1.4B age:59 toll roads Brazil
+ # | 1324 Rubens Ometto Silveira Mello  | | description:net worth:$1.4B age:65 sugar, ethanol Brazil
+ # | 1324 Surang Prempree  | | description:net worth:$1.4B age:72 media Thailand
+ # | 1324 Michael Price  | | description:net worth:$1.4B age:62 investments United States
+ # | 1324 Nevaldo Rocha  | | description:net worth:$1.4B age:85 retail Brazil
+ # | 1324 Arkady Rotenberg  | | description:net worth:$1.4B age:63 construction, pipes, banking Russia
+ # | 1324 Jeff Rothschild  | | description:net worth:$1.4B age:60 Facebook United States
+ # | 1324 Antonio Luiz Seabra  | | description:net worth:$1.4B age:72 cosmetics Brazil
+ # | 1324 Charles Simonyi  | | description:net worth:$1.4B age:67 Microsoft United States
+ # | 1324 Thomas Straumann  | | description:net worth:$1.4B age:51 dental implants Switzerland
+ # | 1324 Frank Stronach  | | description:net worth:$1.4B age:82 auto parts Canada
+ # | 1324 Hary Tanoesoedibjo  | | description:net worth:$1.4B age:49 media Indonesia
+ # | 1324 Wang Xing  | | description:net worth:$1.4B age:- e-commerce China
+ # | 1324 Charlotte Colket Weber  | | description:net worth:$1.4B age:72 Campbell Soup United States
+ # | 1324 Wen Yibo  | | description:net worth:$1.4B age:49 wastewater treatment China
+ # | 1324 Xiu Laigui  | | description:net worth:$1.4B age:60 pharmaceuticals China
+ # | 1324 Yang Kai  | | description:net worth:$1.4B age:58 dairy products China
+ # | 1324 Yang Zhimao  | | description:net worth:$1.4B age:52 utilities, real estate China
+ # | 1324 Ye Cheng  | | description:net worth:$1.4B age:53 diversified China
+ # | 1324 William Young  | | description:net worth:$1.4B age:74 Plastics United States
+ # | 1324 Charles Zegar  | | description:net worth:$1.4B age:67 Bloomberg LP United States
+ # | 1324 Zhang Guiping  | | description:net worth:$1.4B age:63 real estate China
+ # | 1324 Zhang Zhirong  | | description:net worth:$1.4B age:46 shipbuilding Hong Kong
+ # | 1324 Ahmet Nazif Zorlu  | | description:net worth:$1.4B age:70 diversified Turkey
+ # | 1386 Somphote Ahunai  | | description:net worth:$1.35B age:47 energy Thailand
+ # | 1386 Paolo Bulgari  | | description:net worth:$1.35B age:77 luxury goods Italy
+ # | 1386 Steve Case  | | description:net worth:$1.35B age:56 AOL United States
+ # | 1386 Kiat Chiaravanont  | | description:net worth:$1.35B age:- food Thailand
+ # | 1386 Ding Shizhong  | | description:net worth:$1.35B age:44 sports apparel China
+ # | 1386 Asok Kumar Hiranandani  | | description:net worth:$1.35B age:60 real estate Singapore
+ # | 1386 Douglas Hsu  | | description:net worth:$1.35B age:72 diversified Taiwan
+ # | 1386 Kei Hoi Pang  | | description:net worth:$1.35B age:49 real estate China
+ # | 1386 Li Yihai  | | description:net worth:$1.35B age:52 pharmaceuticals China
+ # | 1386 Lin Bin  | | description:net worth:$1.35B age:47 smartphones China
+ # | 1386 Pier Luigi Loro Piana  | | description:net worth:$1.35B age:63 fashion Italy
+ # | 1386 Ma Xingtian  | | description:net worth:$1.35B age:45 pharmaceuticals China
+ # | 1386 Harsh Mariwala  | | description:net worth:$1.35B age:63 consumer goods India
+ # | 1386 Brian Roberts  | | description:net worth:$1.35B age:55 Comcast United States
+ # | 1386 Hilton Schlosberg  | | description:net worth:$1.35B age:62 Monster energy drinks United Kingdom
+ # | 1386 Shao Zhongyi  | | description:net worth:$1.35B age:46 soybean trading China
+ # | 1386 Shin Dong-Joo  | | description:net worth:$1.35B age:61 retailing South Korea
+ # | 1386 Sun Shangchuan & wife  | | description:net worth:$1.35B age:51 electronics components China
+ # | 1386 Sun Weijie  | | description:net worth:$1.35B age:51 oilfield equipment China
+ # | 1386 Joyce Raley Teel  | | description:net worth:$1.35B age:84 supermarkets United States
+ # | 1386 Tiong Hiew King  | | description:net worth:$1.35B age:79 timber/media Malaysia
+ # | 1386 Mustafa Latif Topbas  | | description:net worth:$1.35B age:70 food manufacturing, retail Turkey
+ # | 1386 Hamdi Ulukaya  | | description:net worth:$1.35B age:43 Chobani yogurt Turkey
+ # | 1386 Wei Qi  | | description:net worth:$1.35B age:60 chemicals China
+ # | 1386 Wen Jianping  | | description:net worth:$1.35B age:53 sewage treatment China
+ # | 1386 Dan Wilks  | | description:net worth:$1.35B age:58 natural gas United States
+ # | 1386 Farris Wilks  | | description:net worth:$1.35B age:63 natural gas United States
+ # | 1386 Xu Jingren  | | description:net worth:$1.35B age:70 pharmaceuticals China
+ # | 1386 Zhu Yicai  | | description:net worth:$1.35B age:50 meat products, retailing China
+ # | 1415 Alberto Alcocer  | | description:net worth:$1.3B age:72 investments Spain
+ # | 1415 Patricia Angelini Rossi  | | description:net worth:$1.3B age:60 forestry, mining Chile
+ # | 1415 Mori Arkin  | | description:net worth:$1.3B age:62 pharmaceuticals Israel
+ # | 1415 Mehmet Aydinlar  | | description:net worth:$1.3B age:58 hospitals Turkey
+ # | 1415 Eduardo Belmont Anderson  | | description:net worth:$1.3B age:69 cosmetics Peru
+ # | 1415 Aneel Bhusri  | | description:net worth:$1.3B age:49 business software United States
+ # | 1415 Thor Bjorgolfsson  | | description:net worth:$1.3B age:47 investments Iceland
+ # | 1415 Miriam Blocher  | | description:net worth:$1.3B age:40 chemicals Switzerland
+ # | 1415 Oleg Boyko  | | description:net worth:$1.3B age:50 entertaiment, retail, real estate Russia
+ # | 1415 Nicola Bulgari  | | description:net worth:$1.3B age:74 luxury goods Italy
+ # | 1415 Miloud Chaabi  | | description:net worth:$1.3B age:86 diversified Morocco
+ # | 1415 Binod Chaudhary  | | description:net worth:$1.3B age:59 diversified Nepal
+ # | 1415 Chen Jinsong  | | description:net worth:$1.3B age:51 real estate Hong Kong
+ # | 1415 Jacques D'Amours  | | description:net worth:$1.3B age:58 retail Canada
+ # | 1415 Maria Ines de Lafuente Lacroze  | | description:net worth:$1.3B age:70 cement firm Argentina
+ # | 1415 Andrea Della Valle  | | description:net worth:$1.3B age:49 shoes Italy
+ # | 1415 Sanford Diller  | | description:net worth:$1.3B age:87 real estate United States
+ # | 1415 Ding Shijia  | | description:net worth:$1.3B age:51 sportswear China
+ # | 1415 Bergit Douglas  | | description:net worth:$1.3B age:68 consumer goods Germany
+ # | 1415 John Edson  | | description:net worth:$1.3B age:82 leisure craft United States
+ # | 1415 Stephen Feinberg  | | description:net worth:$1.3B age:54 private equity United States
+ # | 1415 Sameer Gehlaut  | | description:net worth:$1.3B age:41 finance India
+ # | 1415 Harsh Goenka  | | description:net worth:$1.3B age:57 diversified India
+ # | 1415 Gu Wei  | | description:net worth:$1.3B age:50 consumer electronics China
+ # | 1415 Mubariz Gurbanoglu  | | description:net worth:$1.3B age:46 shipping Turkey
+ # | 1415 Polys Haji-Ioannou  | | description:net worth:$1.3B age:56 EasyJet Cyprus
+ # | 1415 Donald Hall  | | description:net worth:$1.3B age:86 Hallmark United States
+ # | 1415 Achmad Hamami  | | description:net worth:$1.3B age:84 heavy equipment Indonesia
+ # | 1415 Gerry Harvey  | | description:net worth:$1.3B age:75 retail Australia
+ # | 1415 Hu Kaijun  | | description:net worth:$1.3B age:53 pharmaceuticals China
+ # | 1415 Huang Wen Tsai  | | description:net worth:$1.3B age:61 real estate China
+ # | 1415 B. Wayne Hughes, Jr.  | | description:net worth:$1.3B age:54 storage facilities United States
+ # | 1415 Billy Kan  | | description:net worth:$1.3B age:63 energy Hong Kong
+ # | 1415 Sidney Kimmel  | | description:net worth:$1.3B age:87 retail United States
+ # | 1415 Michael Klein  | | description:net worth:$1.3B age:64 retail Brazil
+ # | 1415 Jim Koch  | | description:net worth:$1.3B age:65 beer United States
+ # | 1415 Ihor Kolomoyskyy  | | description:net worth:$1.3B age:52 banking, investments Ukraine
+ # | 1415 Koo Bon-Neung  | | description:net worth:$1.3B age:65 electronics South Korea
+ # | 1415 Andrei Kosogov  | | description:net worth:$1.3B age:53 oil, telecom, banking Russia
+ # | 1415 Michael Krasny  | | description:net worth:$1.3B age:61 retail United States
+ # | 1415 James Leininger  | | description:net worth:$1.3B age:69 medical products United States
+ # | 1415 Liang Guangwei  | | description:net worth:$1.3B age:51 batteries, mini motors China
+ # | 1415 William Macaulay  | | description:net worth:$1.3B age:69 energy investments United States
+ # | 1415 Yusaku Maezawa  | | description:net worth:$1.3B age:39 online retail Japan
+ # | 1415 Coucke Marc  | | description:net worth:$1.3B age:50 pharmaceuticals Belgium
+ # | 1415 Dmitry Mazepin  | | description:net worth:$1.3B age:46 chemicals Russia
+ # | 1415 Miao Shouliang  | | description:net worth:$1.3B age:60 real estate, diversified China
+ # | 1415 Massimo Moratti  | | description:net worth:$1.3B age:69 oil Italy
+ # | 1415 Charles Munger  | | description:net worth:$1.3B age:91 Berkshire Hathaway United States
+ # | 1415 Gabe Newell  | | description:net worth:$1.3B age:52 videogames United States
+ # | 1415 Ni Zhaoxing  | | description:net worth:$1.3B age:59 real estate China
+ # | 1415 Alfred Oetker  | | description:net worth:$1.3B age:48 consumer goods Germany
+ # | 1415 August Oetker  | | description:net worth:$1.3B age:70 consumer goods Germany
+ # | 1415 Carl Ferdinand Oetker  | | description:net worth:$1.3B age:42 consumer goods Germany
+ # | 1415 Christian Oetker  | | description:net worth:$1.3B age:66 consumer goods Germany
+ # | 1415 Julia Oetker  | | description:net worth:$1.3B age:36 consumer goods Germany
+ # | 1415 Richard Oetker  | | description:net worth:$1.3B age:64 consumer goods Germany
+ # | 1415 Park Hyeon-Joo  | | description:net worth:$1.3B age:56 asset management South Korea
+ # | 1415 Roger Penske  | | description:net worth:$1.3B age:78 cars United States
+ # | 1415 Jose Isaac Peres & wife  | | description:net worth:$1.3B age:74 shopping malls Brazil
+ # | 1415 Markus Persson  | | description:net worth:$1.3B age:35 Minecraft Sweden
+ # | 1415 Erika Pohl-Stroher  | | description:net worth:$1.3B age:96 hair products Germany
+ # | 1415 Que Wenbin  | | description:net worth:$1.3B age:51 pharmaceuticals China
+ # | 1415 Jerry Reinsdorf  | | description:net worth:$1.3B age:79 sports teams United States
+ # | 1415 Lily Safra  | | description:net worth:$1.3B age:77 banking Monaco
+ # | 1415 Thomas Sandell  | | description:net worth:$1.3B age:54 hedge funds Sweden
+ # | 1415 Eddy Kusnadi Sariaatmadja  | | description:net worth:$1.3B age:61 media, tech Thailand
+ # | 1415 Leonard Schleifer  | | description:net worth:$1.3B age:62 pharmaceuticals United States
+ # | 1415 Rosely Schweizer  | | description:net worth:$1.3B age:74 consumer goods Germany
+ # | 1415 Shuai Fangwen  | | description:net worth:$1.3B age:48 pharmaceuticals China
+ # | 1415 Evgeny (Eugene) Shvidler  | | description:net worth:$1.3B age:50 oil & gas, investments United States
+ # | 1415 Jasminder Singh  | | description:net worth:$1.3B age:64 Hotels United Kingdom
+ # | 1415 Peter Sperling  | | description:net worth:$1.3B age:55 education United States
+ # | 1415 Michael Steinhardt  | | description:net worth:$1.3B age:74 finance United States
+ # | 1415 Alain Taravella  | | description:net worth:$1.3B age:67 real estate France
+ # | 1415 Surin Upatkoon  | | description:net worth:$1.3B age:65 telecoms/lotteries/insurance Thailand
+ # | 1415 Wang Laichun  | | description:net worth:$1.3B age:47 electronics components China
+ # | 1415 Wang Laisheng  | | description:net worth:$1.3B age:50 electronics components China
+ # | 1415 Gjert Wilhelmsen  | | description:net worth:$1.3B age:89 cruise ships Norway
+ # | 1415 Wong Luen Hei  | | description:net worth:$1.3B age:53 home building materials China
+ # | 1415 Horst Wortmann  | | description:net worth:$1.3B age:73 footwear Germany
+ # | 1415 Albert Yeung  | | description:net worth:$1.3B age:71 real estate, retail Hong Kong
+ # | 1415 Zhou Guohui  | | description:net worth:$1.3B age:50 logistics China
+ # | 1415 Zhou Hongyi  | | description:net worth:$1.3B age:44 security software China
+ # | 1415 Zhu Chongyun  | | description:net worth:$1.3B age:- apparel retailer China
+ # | 1500 Fawzi Al-Kharafi  | | description:net worth:$1.25B age:- diversified Kuwait
+ # | 1500 Jassim Al-Kharafi  | | description:net worth:$1.25B age:- diversfied Kuwait
+ # | 1500 Mohannad Al-Kharafi  | | description:net worth:$1.25B age:- diversified Kuwait
+ # | 1500 Alexei Ananyev  | | description:net worth:$1.25B age:50 banking, IT, real estate Russia
+ # | 1500 Dmitry Ananyev  | | description:net worth:$1.25B age:46 banking, IT, real estate Russia
+ # | 1500 Henadiy Boholyubov  | | description:net worth:$1.25B age:53 banking, investments Ukraine
+ # | 1500 Richard Chang  | | description:net worth:$1.25B age:68 real estate, electronics Taiwan
+ # | 1500 Chong Ngen Choo  | | description:net worth:$1.25B age:61 hotels Singapore
+ # | 1500 Turgay Ciner  | | description:net worth:$1.25B age:59 diversified Turkey
+ # | 1500 Leszek Czarnecki  | | description:net worth:$1.25B age:53 finance Poland
+ # | 1500 Mohammed Dewji  | | description:net worth:$1.25B age:39 diversified Tanzania
+ # | 1500 K. Dinesh  | | description:net worth:$1.25B age:60 software services India
+ # | 1500 Gao Dekang  | | description:net worth:$1.25B age:63 apparel China
+ # | 1500 Daniel Hirschfeld  | | description:net worth:$1.25B age:73 apparel retailer United States
+ # | 1500 Hong Xiaobo  | | description:net worth:$1.25B age:43 e-commerce China
+ # | 1500 Wee Meng Koh  | | description:net worth:$1.25B age:51 real estate, hotels Singapore
+ # | 1500 Lin Ming-Hsiung  | | description:net worth:$1.25B age:65 retail Taiwan
+ # | 1500 Gian Marco Moratti  | | description:net worth:$1.25B age:78 oil Italy
+ # | 1500 Vikas Oberoi  | | description:net worth:$1.25B age:44 real estate India
+ # | 1500 Kazuo Okada  | | description:net worth:$1.25B age:72 casinos Japan
+ # | 1500 Horst Julius Pudwill  | | description:net worth:$1.25B age:70 manufacturing Germany
+ # | 1500 Deniz Sahenk  | | description:net worth:$1.25B age:69 bank, media Turkey
+ # | 1500 Alexander Spanos  | | description:net worth:$1.25B age:91 real estate United States
+ # | 1500 Danny Tan Chee Sing  | | description:net worth:$1.25B age:59 real estate Malaysia
+ # | 1500 Nikolai Tsvetkov  | | description:net worth:$1.25B age:54 banking Russia
+ # | 1500 John Tyson  | | description:net worth:$1.25B age:61 food processing United States
+ # | 1500 Rufino Vigil Gonzalez  | | description:net worth:$1.25B age:66 steel Mexico
+ # | 1500 Wan Lianbu  | | description:net worth:$1.25B age:49 fertilizers China
+ # | 1500 Wang Xicheng  | | description:net worth:$1.25B age:66 tires China
+ # | 1500 Gordon Wu  | | description:net worth:$1.25B age:80 real estate Hong Kong
+ # | 1500 Xiao Fen  | | description:net worth:$1.25B age:52 consumer electronics China
+ # | 1500 Yang Yuanqing  | | description:net worth:$1.25B age:50 computers China
+ # | 1500 Yi Zheng  | | description:net worth:$1.25B age:44 software China
+ # | 1533 Lia Maria Aguiar  | | description:net worth:$1.2B age:77 banking inheritance Brazil
+ # | 1533 Len Ainsworth  | | description:net worth:$1.2B age:91 betting machines Australia
+ # | 1533 Mohammed Al Barwani  | | description:net worth:$1.2B age:63 oil Oman
+ # | 1533 Maurice Alter  | | description:net worth:$1.2B age:89 real estate Australia
+ # | 1533 Joao Alves de Queiroz Filho  | | description:net worth:$1.2B age:62 consumer goods Brazil
+ # | 1533 An Kang  | | description:net worth:$1.2B age:66 pharmaceuticals China
+ # | 1533 Ayman Asfari  | | description:net worth:$1.2B age:56 oil services United Kingdom
+ # | 1533 Alan Auerbach  | | description:net worth:$1.2B age:45 biotechnology United States
+ # | 1533 William F. Austin  | | description:net worth:$1.2B age:73 hearing aids United States
+ # | 1533 Mehmet Rustu Basaran  | | description:net worth:$1.2B age:68 bank, gas Turkey
+ # | 1533 Anne Beaufour  | | description:net worth:$1.2B age:51 pharmaceuticals France
+ # | 1533 Henri Beaufour  | | description:net worth:$1.2B age:49 pharmaceuticals France
+ # | 1533 Albert Berner  | | description:net worth:$1.2B age:79 fasteners Germany
+ # | 1533 O. Francis Biondi  | | description:net worth:$1.2B age:50 hedge fund United States
+ # | 1533 Chang Pyung-Soon  | | description:net worth:$1.2B age:64 educational products & services South Korea
+ # | 1533 Chen Tianqiao  | | description:net worth:$1.2B age:42 online games China
+ # | 1533 Tony Chen  | | description:net worth:$1.2B age:46 optical components Taiwan
+ # | 1533 Richard Chilton Jr  | | description:net worth:$1.2B age:56 hedge funds United States
+ # | 1533 Hasmukh Chudgar  | | description:net worth:$1.2B age:81 pharmaceuticals India
+ # | 1533 John Coates  | | description:net worth:$1.2B age:45 online gambling United Kingdom
+ # | 1533 Luigi Cremonini  | | description:net worth:$1.2B age:75 meat processing Italy
+ # | 1533 Mark Dixon  | | description:net worth:$1.2B age:56 office real estate United Kingdom
+ # | 1533 Gary Fegel  | | description:net worth:$1.2B age:41 commodities trading Switzerland
+ # | 1533 Gleb Fetisov  | | description:net worth:$1.2B age:48 telecom, finance Russia
+ # | 1533 Valentin Gapontsev  | | description:net worth:$1.2B age:76 lasers Russia
+ # | 1533 Serge Godin  | | description:net worth:$1.2B age:65 Information Technology Canada
+ # | 1533 Vladimir Gruzdev  | | description:net worth:$1.2B age:48 investments Russia
+ # | 1533 Mehmet Nazif Gunal  | | description:net worth:$1.2B age:67 tourism, construction Turkey
+ # | 1533 Vinod Gupta  | | description:net worth:$1.2B age:69 electrical equipment India
+ # | 1533 Clelia Haji-Ioannou  | | description:net worth:$1.2B age:47 EasyJet Cyprus
+ # | 1533 Ilkka Herlin  | | description:net worth:$1.2B age:56 elevators, escalators Finland
+ # | 1533 Brian Higgins  | | description:net worth:$1.2B age:50 Hedge fund United States
+ # | 1533 J. Tomilson Hill  | | description:net worth:$1.2B age:66 investments United States
+ # | 1533 Drew Houston  | | description:net worth:$1.2B age:31 Dropbox United States
+ # | 1533 Jiang Ning  | | description:net worth:$1.2B age:41 telecom China
+ # | 1533 Ronald Joyce  | | description:net worth:$1.2B age:84 restaurants Canada
+ # | 1533 Alexander Karp  | | description:net worth:$1.2B age:47 software firm United States
+ # | 1533 Sergei Katsiev  | | description:net worth:$1.2B age:57 retail, wholesale Russia
+ # | 1533 Lev Kvetnoi  | | description:net worth:$1.2B age:49 cement, airport Russia
+ # | 1533 Lev Leviev  | | description:net worth:$1.2B age:59 diamonds Israel
+ # | 1533 Li Tan  | | description:net worth:$1.2B age:50 pharmaceuticals China
+ # | 1533 Liu Yiqian  | | description:net worth:$1.2B age:51 investments China
+ # | 1533 Jose Llado Fernandez-Urrutia  | | description:net worth:$1.2B age:80 construction Spain
+ # | 1533 Aloke Lohia  | | description:net worth:$1.2B age:56 petrochemicals India
+ # | 1533 Ma Hong  | | description:net worth:$1.2B age:47 apparel retailer China
+ # | 1533 Rudolf Maag  | | description:net worth:$1.2B age:69 medical devices Switzerland
+ # | 1533 Maggie Magerko  | | description:net worth:$1.2B age:49 building materials United States
+ # | 1533 Anand Mahindra  | | description:net worth:$1.2B age:59 automobiles India
+ # | 1533 Jean-Charles Naouri  | | description:net worth:$1.2B age:66 supermarkets, sporting goods France
+ # | 1533 Pierre Papillaud  | | description:net worth:$1.2B age:79 water France
+ # | 1533 David Penaloza Alanis  | | description:net worth:$1.2B age:41 toll roads Mexico
+ # | 1533 Qin Yinglin  | | description:net worth:$1.2B age:49 poultry China
+ # | 1533 Vito Rodriguez Rodriguez  | | description:net worth:$1.2B age:76 processed milk Peru
+ # | 1533 Fernando Roig  | | description:net worth:$1.2B age:67 supermarkets Spain
+ # | 1533 Alexander Rovt  | | description:net worth:$1.2B age:62 fertilizer, real estate United States
+ # | 1533 Alan Rydge  | | description:net worth:$1.2B age:62 entertainment Australia
+ # | 1533 Jacques Saade  | | description:net worth:$1.2B age:78 shipping France
+ # | 1533 Seo Jung-Jin  | | description:net worth:$1.2B age:57 biotechnology South Korea
+ # | 1533 Ron Sim  | | description:net worth:$1.2B age:56 retail Singapore
+ # | 1533 Edwin Soeryadjaya  | | description:net worth:$1.2B age:66 coal, investments Indonesia
+ # | 1533 Robert Stiller  | | description:net worth:$1.2B age:71 coffee United States
+ # | 1533 Sun Deliang  | | description:net worth:$1.2B age:42 software China
+ # | 1533 Vincent Tan  | | description:net worth:$1.2B age:63 diversified Malaysia
+ # | 1533 Tang Hsiang-chien  | | description:net worth:$1.2B age:92 textiles/electronics Hong Kong
+ # | 1533 Mehmet Sinan Tara  | | description:net worth:$1.2B age:56 construction Turkey
+ # | 1533 Wang Jinshu  | | description:net worth:$1.2B age:58 chemicals China
+ # | 1533 Wang Wei  | | description:net worth:$1.2B age:43 computer hardware China
+ # | 1533 Wang Zhenghua  | | description:net worth:$1.2B age:70 budget airline China
+ # | 1533 Wong Man Li  | | description:net worth:$1.2B age:50 furniture Hong Kong
+ # | 1533 Jacky Xu  | | description:net worth:$1.2B age:- apparel St. Kitts and Nevis
+ # | 1533 Luis Enrique Yarur Rey  | | description:net worth:$1.2B age:64 banking Chile
+ # | 1533 Zheng Yuewen  | | description:net worth:$1.2B age:53 investments China
+ # | 1605 Shishir Bajaj  | | description:net worth:$1.15B age:67 consumer goods India
+ # | 1605 Charles Brandes  | | description:net worth:$1.15B age:72 money management United States
+ # | 1605 Jean Burelle  | | description:net worth:$1.15B age:76 automotive systems France
+ # | 1605 Laurent Burelle  | | description:net worth:$1.15B age:65 automotive systems France
+ # | 1605 Cho Yang-Rai  | | description:net worth:$1.15B age:77 tire manufacturing South Korea
+ # | 1605 Chung Mong-Joon  | | description:net worth:$1.15B age:63 shipbuilding/industrial machines South Korea
+ # | 1605 Chung Yong-Jin  | | description:net worth:$1.15B age:46 retailing South Korea
+ # | 1605 Jack Cowin  | | description:net worth:$1.15B age:72 fast food Australia
+ # | 1605 Robert Ell  | | description:net worth:$1.15B age:70 property Australia
+ # | 1605 Abhay Firodia  | | description:net worth:$1.15B age:70 automobiles India
+ # | 1605 Niklas Herlin  | | description:net worth:$1.15B age:51 elevators, escalators Finland
+ # | 1605 Huang Chulong  | | description:net worth:$1.15B age:- real estate China
+ # | 1605 Clifford Illig  | | description:net worth:$1.15B age:64 health care United States
+ # | 1605 Mehmet Emin Karamehmet  | | description:net worth:$1.15B age:70 telecom, diversified Turkey
+ # | 1605 Kim Taek-Jin  | | description:net worth:$1.15B age:47 online games South Korea
+ # | 1605 Li Yongjun  | | description:net worth:$1.15B age:48 food China
+ # | 1605 Liu Dianbo  | | description:net worth:$1.15B age:50 pharmaceuticals China
+ # | 1605 Liu Shaoxi  | | description:net worth:$1.15B age:51 real estate China
+ # | 1605 Itamar Locks  | | description:net worth:$1.15B age:60 agribusiness Brazil
+ # | 1605 Blairo Maggi  | | description:net worth:$1.15B age:58 agribusiness Brazil
+ # | 1605 Lucia Maggi  | | description:net worth:$1.15B age:83 agribusiness Brazil
+ # | 1605 Gilles Martin  | | description:net worth:$1.15B age:51 laboratory services France
+ # | 1605 Ioan Niculae  | | description:net worth:$1.15B age:60 agriculture Romania
+ # | 1605 G.V. Prasad  | | description:net worth:$1.15B age:54 pharmaceuticals India
+ # | 1605 Satish Reddy  | | description:net worth:$1.15B age:47 pharmaceuticals India
+ # | 1605 Remo Ruffini  | | description:net worth:$1.15B age:53 winter jackets Italy
+ # | 1605 Airat Shaimiev  | | description:net worth:$1.15B age:53 refinery, chemicals Russia
+ # | 1605 S.D. Shibulal  | | description:net worth:$1.15B age:60 software services India
+ # | 1605 V.G. Siddhartha  | | description:net worth:$1.15B age:55 retail India
+ # | 1605 Kerry Stokes  | | description:net worth:$1.15B age:74 media, mining Australia
+ # | 1605 Yan Zhi  | | description:net worth:$1.15B age:42 real estate China
+ # | 1605 Zhou Mingjie  | | description:net worth:$1.15B age:57 lighting installations China
+ # | 1605 Zhu Jiman  | | description:net worth:$1.15B age:50 pharmaceuticals China
+ # | 1638 Roman Avdeev  | | description:net worth:$1.1B age:47 banking, development Russia
+ # | 1638 Thomas Bailey  | | description:net worth:$1.1B age:78 finance United States
+ # | 1638 William Berkley  | | description:net worth:$1.1B age:68 insurance United States
+ # | 1638 Maurizio Billi  | | description:net worth:$1.1B age:- Generic drugs Brazil
+ # | 1638 Alexei Bogachev  | | description:net worth:$1.1B age:44 retail, banking Russia
+ # | 1638 Horst Brandstaetter  | | description:net worth:$1.1B age:81 toys Germany
+ # | 1638 Mike Cannon-Brookes  | | description:net worth:$1.1B age:35 business software Australia
+ # | 1638 Chey Ki-Won  | | description:net worth:$1.1B age:50 computer services South Korea
+ # | 1638 Chu Mang Yee  | | description:net worth:$1.1B age:55 real estate China
+ # | 1638 Hubert d'Ornano  | | description:net worth:$1.1B age:88 cosmetics France
+ # | 1638 Jim Davis  | | description:net worth:$1.1B age:54 staffing & recruiting firm United States
+ # | 1638 Jeanine Dick  | | description:net worth:$1.1B age:78 animal pharmaceuticals France
+ # | 1638 Beda Diethelm  | | description:net worth:$1.1B age:74 hearing aids Switzerland
+ # | 1638 Husain Djojonegoro  | | description:net worth:$1.1B age:65 consumer goods Indonesia
+ # | 1638 Shlomo Eliahu  | | description:net worth:$1.1B age:79 insurance Israel
+ # | 1638 Henry Engelhardt  | | description:net worth:$1.1B age:57 insurance United States
+ # | 1638 Fan Zhaoxia  | | description:net worth:$1.1B age:47 photovoltaic equipment China
+ # | 1638 Scott Farquhar  | | description:net worth:$1.1B age:35 software Australia
+ # | 1638 Soichiro Fukutake  | | description:net worth:$1.1B age:69 education Japan
+ # | 1638 Barbara Carlson Gage  | | description:net worth:$1.1B age:72 hotels, travel United States
+ # | 1638 Don Gao  | | description:net worth:$1.1B age:50 power tools China
+ # | 1638 Konstantin Grigorishin  | | description:net worth:$1.1B age:49 power engineering Russia
+ # | 1638 Jeffrey Gundlach  | | description:net worth:$1.1B age:56 investments United States
+ # | 1638 Suat Gunsel  | | description:net worth:$1.1B age:62 real estate, education Cyprus
+ # | 1638 Guo Wengui  | | description:net worth:$1.1B age:- real estate China
+ # | 1638 Yuri Gushchin  | | description:net worth:$1.1B age:70 candy, real estate Russia
+ # | 1638 Dorrance Hamilton  | | description:net worth:$1.1B age:86 Campbell Soup United States
+ # | 1638 Ayman Hariri  | | description:net worth:$1.1B age:36 construction, investments Lebanon
+ # | 1638 Fahd Hariri  | | description:net worth:$1.1B age:34 construction, investments Lebanon
+ # | 1638 Ilona Herlin  | | description:net worth:$1.1B age:50 elevators, escalators Finland
+ # | 1638 Niranjan Hiranandani  | | description:net worth:$1.1B age:65 real estate India
+ # | 1638 Surendra Hiranandani  | | description:net worth:$1.1B age:60 real estate India
+ # | 1638 Jon Huntsman  | | description:net worth:$1.1B age:77 chemicals United States
+ # | 1638 Mohammed Ibrahim  | | description:net worth:$1.1B age:68 communications United Kingdom
+ # | 1638 Hal Jackman  | | description:net worth:$1.1B age:82 insurance, investments Canada
+ # | 1638 Raghuvinder Kataria  | | description:net worth:$1.1B age:65 diversified United Kingdom
+ # | 1638 Yuriy Kosiuk  | | description:net worth:$1.1B age:46 agriculture Ukraine
+ # | 1638 Lee Ho-Jin  | | description:net worth:$1.1B age:52 petrochemicals / finance / media / electronics South Korea
+ # | 1638 Liang Zhaoxian  | | description:net worth:$1.1B age:50 appliances China
+ # | 1638 Liu Ming Hui  | | description:net worth:$1.1B age:52 natural gas distribution China
+ # | 1638 Lou Zhongfu  | | description:net worth:$1.1B age:61 real estate China
+ # | 1638 Jeffrey Lurie  | | description:net worth:$1.1B age:63 Philadelphia Eagles United States
+ # | 1638 Alexander Lutsenko  | | description:net worth:$1.1B age:52 agribusiness Russia
+ # | 1638 Edir Macedo  | | description:net worth:$1.1B age:70 broadcasting Brazil
+ # | 1638 Ziyad Manasir  | | description:net worth:$1.1B age:49 construction Russia
+ # | 1638 Kishore Mariwala  | | description:net worth:$1.1B age:80 consumer goods India
+ # | 1638 Nikolai Maximov  | | description:net worth:$1.1B age:57 investments Russia
+ # | 1638 Jacques Merceron-Vicat  | | description:net worth:$1.1B age:76 cement France
+ # | 1638 Azad Moopen  | | description:net worth:$1.1B age:61 healthcare India
+ # | 1638 John Morgridge  | | description:net worth:$1.1B age:81 computer hardware United States
+ # | 1638 Marilyn Carlson Nelson  | | description:net worth:$1.1B age:75 hotels, travel United States
+ # | 1638 Carolus Nolet, Sr.  | | description:net worth:$1.1B age:74 Ketel One vodka Netherlands
+ # | 1638 Ou Zonghong  | | description:net worth:$1.1B age:45 real estate China
+ # | 1638 Marli Pissollo  | | description:net worth:$1.1B age:60 agribusiness Brazil
+ # | 1638 Andrei Rappoport  | | description:net worth:$1.1B age:51 investments Russia
+ # | 1638 Alberto Roemmers  | | description:net worth:$1.1B age:88 pharmaceuticals Argentina
+ # | 1638 Sudhir Ruparelia  | | description:net worth:$1.1B age:59 real estate Uganda
+ # | 1638 David Sainsbury  | | description:net worth:$1.1B age:74 retail United Kingdom
+ # | 1638 Radik Shaimiev  | | description:net worth:$1.1B age:50 refinery, chemical Russia
+ # | 1638 E. Joe Shoen  | | description:net worth:$1.1B age:66 U-Haul United States
+ # | 1638 Sanjay Singal  | | description:net worth:$1.1B age:55 steel India
+ # | 1638 Bruno Steinhoff  | | description:net worth:$1.1B age:77 furniture Germany
+ # | 1638 Rustem Sulteev  | | description:net worth:$1.1B age:61 refinery, chemicals Russia
+ # | 1638 Sun Qinghuan  | | description:net worth:$1.1B age:41 lighting China
+ # | 1638 Djoko Susanto  | | description:net worth:$1.1B age:65 retail Indonesia
+ # | 1638 Yoshikazu Tanaka  | | description:net worth:$1.1B age:38 online social network Japan
+ # | 1638 Roustam Tariko  | | description:net worth:$1.1B age:52 banking Russia
+ # | 1638 Tu Jianhua  | | description:net worth:$1.1B age:51 motorcycles, real estate China
+ # | 1638 Kenneth Tuchman  | | description:net worth:$1.1B age:55 outsourcing United States
+ # | 1638 Lang Walker  | | description:net worth:$1.1B age:69 property Australia
+ # | 1638 Wang Yongping  | | description:net worth:$1.1B age:44 telecom services China
+ # | 1638 Yang Keng  | | description:net worth:$1.1B age:54 real estate China
+ # | 1638 Zhong Sheng Jian  | | description:net worth:$1.1B age:57 real estate Singapore
+ # | 1711 Lau Cho Kun  | | description:net worth:$1.08B age:79 palm oil/real estate Malaysia
+ # | 1712 Bassam Alghanim  | | description:net worth:$1.05B age:63 diversified Kuwait
+ # | 1712 Kutayba Alghanim  | | description:net worth:$1.05B age:69 diversified Kuwait
+ # | 1712 Achal Bakeri  | | description:net worth:$1.05B age:55 air coolers India
+ # | 1712 Amit Burman  | | description:net worth:$1.05B age:45 consumer goods India
+ # | 1712 Cheng Xue  | | description:net worth:$1.05B age:45 soy sauce maker China
+ # | 1712 Chu Jinfu  | | description:net worth:$1.05B age:57 electrical power equipment China
+ # | 1712 Thian Poh Chua  | | description:net worth:$1.05B age:66 real estate Singapore
+ # | 1712 Brunello Cucinelli  | | description:net worth:$1.05B age:61 cashmere sweaters Italy
+ # | 1712 Dai Deming  | | description:net worth:$1.05B age:- auto distribution China
+ # | 1712 Gustavo Denegri  | | description:net worth:$1.05B age:79 medical tests Italy
+ # | 1712 T.S. Kalyanaraman  | | description:net worth:$1.05B age:67 jewelry India
+ # | 1712 Mustafa Vehbi Koc  | | description:net worth:$1.05B age:54 diversified Turkey
+ # | 1712 Liu Zhenguo  | | description:net worth:$1.05B age:50 sewage treatment China
+ # | 1712 Dariusz Milek  | | description:net worth:$1.05B age:47 real estate, retail Poland
+ # | 1712 Jorge Rodriguez Rodriguez  | | description:net worth:$1.05B age:69 processed milk Peru
+ # | 1712 Sevket Sabanci  | | description:net worth:$1.05B age:78 diversified Turkey
+ # | 1712 K. Rai Sahi  | | description:net worth:$1.05B age:68 real estate Canada
+ # | 1712 Yoshiyuki Sankai  | | description:net worth:$1.05B age:56 robotics Japan
+ # | 1712 Samih Sawiris  | | description:net worth:$1.05B age:58 real estate, hotels Egypt
+ # | 1712 Albert Shigaboutdinov  | | description:net worth:$1.05B age:60 refinery, chemicals Russia
+ # | 1712 Pavel Tykac  | | description:net worth:$1.05B age:50 coal mine Czech Republic
+ # | 1712 Alexander Vik  | | description:net worth:$1.05B age:60 investments Norway
+ # | 1712 Wang Qinghui  | | description:net worth:$1.05B age:46 telecom services China
+ # | 1712 Wang Zhongjun  | | description:net worth:$1.05B age:54 film production China
+ # | 1712 Wu Chung-Yi  | | description:net worth:$1.05B age:56 auto parts Taiwan
+ # | 1712 Xia Shudong  | | description:net worth:$1.05B age:42 IT service China
+ # | 1712 Yu Awu  | | description:net worth:$1.05B age:73 jewelry China
+ # | 1712 Yu Peidi  | | description:net worth:$1.05B age:55 real estate Hong Kong
+ # | 1712 Zhou Yaoting  | | description:net worth:$1.05B age:72 conglomerate China
+ # | 1741 Antti Aarnio-Wihuri  | | description:net worth:$1B age:- Diversified Finland
+ # | 1741 Mohed Altrad  | | description:net worth:$1B age:67 scaffolding, cement mixers France
+ # | 1741 Rostam Azizi  | | description:net worth:$1B age:50 telecom, investments Tanzania
+ # | 1741 Elena Baturina  | | description:net worth:$1B age:52 construction Russia
+ # | 1741 Sara Blakely  | | description:net worth:$1B age:44 Spanx United States
+ # | 1741 Tory Burch  | | description:net worth:$1B age:48 fashion United States
+ # | 1741 Sidharth Burman  | | description:net worth:$1B age:70 consumer goods India
+ # | 1741 Fred Chang  | | description:net worth:$1B age:58 online retailing United States
+ # | 1741 Leon Charney  | | description:net worth:$1B age:73 real estate United States
+ # | 1741 Cheung Yan  | | description:net worth:$1B age:58 paper China
+ # | 1741 Chin Jong Hwa  | | description:net worth:$1B age:56 auto parts Taiwan
+ # | 1741 Robert Citrone  | | description:net worth:$1B age:50 hedge fund United States
+ # | 1741 Cui Lijie  | | description:net worth:$1B age:- gambling Hong Kong
+ # | 1741 Chris Dawson  | | description:net worth:$1B age:63 home goods retail United Kingdom
+ # | 1741 Aydin Dogan  | | description:net worth:$1B age:78 media Turkey
+ # | 1741 Charles Edelstenne  | | description:net worth:$1B age:77 Dassault France
+ # | 1741 Maria de Lourdes Egydio Villela  | | description:net worth:$1B age:- banking Brazil
+ # | 1741 Paul Fireman  | | description:net worth:$1B age:71 Reebok United States
+ # | 1741 Ken Grossman  | | description:net worth:$1B age:- beer United States
+ # | 1741 Frank Hasenfratz  | | description:net worth:$1B age:80 auto parts Canada
+ # | 1741 Reed Hastings  | | description:net worth:$1B age:54 Netflix United States
+ # | 1741 Huang Bingwen  | | description:net worth:$1B age:61 printing Australia
+ # | 1741 Daisy Igel  | | description:net worth:$1B age:87 gas, petrochemicals Brazil
+ # | 1741 Ray Irani  | | description:net worth:$1B age:80 Oil United States
+ # | 1741 Summerfield Johnston, Jr.  | | description:net worth:$1B age:82 Coca-Cola United States
+ # | 1741 Michael Jordan  | | description:net worth:$1B age:52 sports team United States
+ # | 1741 Morris Kahn  | | description:net worth:$1B age:85 software Israel
+ # | 1741 Thomas Kaplan  | | description:net worth:$1B age:52 investments United States
+ # | 1741 Eugene Kaspersky  | | description:net worth:$1B age:49 software Russia
+ # | 1741 Ryan Kavanaugh  | | description:net worth:$1B age:40 movies United States
+ # | 1741 Solomon Lew  | | description:net worth:$1B age:69 retail Australia
+ # | 1741 Li Fuchao  | | description:net worth:$1B age:57 auto parts China
+ # | 1741 Liu Ming Chung  | | description:net worth:$1B age:52 paper manufacturing Brazil
+ # | 1741 Lo Siu Yu  | | description:net worth:$1B age:45 conglomerate Hong Kong
+ # | 1741 Mario Lopez Estrada  | | description:net worth:$1B age:- telecom Guatemala
+ # | 1741 Low Tuck Kwong  | | description:net worth:$1B age:66 coal Indonesia
+ # | 1741 Lu Yonghua  | | description:net worth:$1B age:51 electronics China
+ # | 1741 Lv Dalong  | | description:net worth:$1B age:52 telecom services China
+ # | 1741 Michael Lynch  | | description:net worth:$1B age:50 software United Kingdom
+ # | 1741 Cargill MacMillan, III.  | | description:net worth:$1B age:55 Cargill United States
+ # | 1741 John MacMillan  | | description:net worth:$1B age:65 Cargill United States
+ # | 1741 Martha MacMillan  | | description:net worth:$1B age:63 Cargill United States
+ # | 1741 William MacMillan  | | description:net worth:$1B age:60 Cargill United States
+ # | 1741 John Martin  | | description:net worth:$1B age:63 pharmaceuticals United States
+ # | 1741 Kiran Mazumdar-Shaw  | | description:net worth:$1B age:61 biotechnology India
+ # | 1741 David McMurtry  | | description:net worth:$1B age:74 Manufacturing United Kingdom
+ # | 1741 P.N.C. Menon  | | description:net worth:$1B age:66 real estate Oman
+ # | 1741 Trond Mohn  | | description:net worth:$1B age:71 cargo pumps Norway
+ # | 1741 Zelimkhan Mutsoev  | | description:net worth:$1B age:55 fertilizers, real estate Russia
+ # | 1741 Nerijus Numavicius  | | description:net worth:$1B age:47 retail, pharmacy Lithuania
+ # | 1741 Hong Leong Oei  | | description:net worth:$1B age:66 investments Singapore
+ # | 1741 Jonathan Oringer  | | description:net worth:$1B age:40 stock photos United States
+ # | 1741 Femi Otedola  | | description:net worth:$1B age:52 gas stations Nigeria
+ # | 1741 J. Michael Pearson  | | description:net worth:$1B age:55 pharmaceuticals Canada
+ # | 1741 Robert Piccinini  | | description:net worth:$1B age:73 supermarkets United States
+ # | 1741 Andreas Pohl  | | description:net worth:$1B age:50 mutual funds Germany
+ # | 1741 Reinfried Pohl, Jr.  | | description:net worth:$1B age:55 mutual funds Germany
+ # | 1741 Abdulsamad Rabiu  | | description:net worth:$1B age:55 cement, sugar, flour Nigeria
+ # | 1741 Andrea Reimann-Ciardelli  | | description:net worth:$1B age:58 consumer goods United States
+ # | 1741 Ren Zhengfei  | | description:net worth:$1B age:71 telecom equipment China
+ # | 1741 Hugo Ribeiro  | | description:net worth:$1B age:- agribusiness Brazil
+ # | 1741 Steven Roth  | | description:net worth:$1B age:73 real estate United States
+ # | 1741 Subhash Runwal  | | description:net worth:$1B age:71 real estate India
+ # | 1741 Suzan Sabanci Dincer  | | description:net worth:$1B age:50 diversified Turkey
+ # | 1741 Serra Sabanci  | | description:net worth:$1B age:39 diversified Turkey
+ # | 1741 Nobutada Saji  | | description:net worth:$1B age:69 beverages Japan
+ # | 1741 Sheryl Sandberg  | | description:net worth:$1B age:45 Facebook United States
+ # | 1741 Monika Schoeller  | | description:net worth:$1B age:76 publishing Germany
+ # | 1741 Bhadresh Shah  | | description:net worth:$1B age:63 engineering India
+ # | 1741 Neil Shen  | | description:net worth:$1B age:46 venture capital investing Hong Kong
+ # | 1741 Leonid Simanovsky  | | description:net worth:$1B age:65 investments Russia
+ # | 1741 Benny Subianto  | | description:net worth:$1B age:72 coal, investments Indonesia
+ # | 1741 Harjo Sutanto  | | description:net worth:$1B age:88 consumer goods Indonesia
+ # | 1741 Ion Tiriac  | | description:net worth:$1B age:75 banking, insurance Romania
+ # | 1741 Murat Vargi  | | description:net worth:$1B age:67 telecom Turkey
+ # | 1741 Stefan von Holtzbrinck  | | description:net worth:$1B age:51 publishing Germany
+ # | 1741 Wang Haipeng  | | description:net worth:$1B age:43 paper & related products China
+ # | 1741 Wang Jianfeng  | | description:net worth:$1B age:45 auto parts China
+ # | 1741 Wang Wenliang  | | description:net worth:$1B age:60 ship maintenance China
+ # | 1741 Wang Yong  | | description:net worth:$1B age:64 food sweeteners China
+ # | 1741 V. Prem Watsa  | | description:net worth:$1B age:64 insurance, investments Canada
+ # | 1741 Sanford Weill  | | description:net worth:$1B age:81 Citigroup United States
+ # | 1741 Thomas Wu  | | description:net worth:$1B age:- finance Taiwan
+ # | 1741 Fatma Yazici  | | description:net worth:$1B age:41 Diversified Turkey
+ # | 1741 You Xiaoping  | | description:net worth:$1B age:57 chemicals, spandex China
+ # | 1741 Yuan Yafei  | | description:net worth:$1B age:51 retailing, investments China

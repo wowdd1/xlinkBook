@@ -245,6 +245,8 @@ def print_list(file_name):
     old_line = ""
     old_line_2 = ""
     color_index = 0
+    filter_keyword_2 = ''
+    global top_row
     if os.path.exists(file_name):
 
         f = open(file_name,'rU')
@@ -254,14 +256,19 @@ def print_list(file_name):
             for line in all_lines:
                 record = Record(line)
                 data = record.get_id() + record.get_title() 
+                keyword = filter_keyword
                 if includeDesc(filter_keyword):
                     data += record.get_describe()
-                if data.lower().find(filter_keyword.lower()) != -1 or re.match(filter_keyword, data) != None:
+                    keyword = filter_keyword[filter_keyword.find(':') + 1 :].strip()
+
+                if data.lower().find(keyword.lower()) != -1 or re.match(keyword, data) != None:
                     filter_result.append(line)
             all_lines = filter_result[:]
         if len(all_lines) == 0:
             return  
         line_count = len(all_lines)
+        if top_row > 0 and top_row > line_count:
+            top_row = line_count
         list_all = []
         reset_max_len_list()
  
