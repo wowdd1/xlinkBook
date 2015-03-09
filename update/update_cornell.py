@@ -18,15 +18,26 @@ class CornellSpider(Spider):
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
-
-        for a in soup.find_all('a'):
-            if a.attrs.has_key('href') and a['href'] .startswith('http://courses.cornell.edu/preview_course_nopop.php'):
+        url = ''
+        for div in soup.find_all('div', class_='cs-course'):
+            a = div.h2.a
+            if a != None:
+                url = a['href']
                 course_num = a.text[0 : a.text.find(':')].replace(' ', '').strip()
                 title = a.text[a.text.find(':') + 1 :].strip()
-                link = a['href']
-                print course_num + ' ' + title + ' ' + link
-                self.count += 1
-                self.write_db(f, course_num, title, link)
+                sp = BeautifulSoup(div.prettify())
+                course_semesters = sp.find('ul', class_='cs-course-semesters')
+                if course_semesters != None:
+                    for a in sp.find_all('a'):
+                        url = a['href']
+            else:
+                course_num = div.h2.text[0 : div.h2.text.find(':')].replace(' ', '').strip()
+                title = div.h2.text[div.h2.text.find(':') + 1 :].strip()
+
+            print course_num + ' ' + title 
+            self.count += 1
+            self.write_db(f, course_num, title, url)
+
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
