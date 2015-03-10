@@ -46,6 +46,7 @@ def usage():
     print '\t-w,--width: the width of cell'
     print '\t-r,--row: the rows of the describe'
     print '\t-t,--top: the top number rows for display'
+    print '\t-t,--level: the max search level that the file is in'
     os.system("cat README.md")
 
 def print_keyword(file_name):
@@ -422,8 +423,11 @@ def print_list(file_name):
             else:
                 print "\nTotal " + str(current) + " records, File: " + file_name + "\n\n"
             
-
+current_level = 1
+level = 100
 def print_dir(dir_name):
+    global current_level
+    current_level += 1
     cur_list = os.listdir(dir_name)
     for item in cur_list:
         if item.startswith("."):
@@ -433,6 +437,9 @@ def print_dir(dir_name):
         if os.path.isfile(full_path):
             print_list(full_path)
         else:
+            if current_level >= level + 1:
+                continue
+            current_level = 1
             print_dir(full_path)
 
 def adjust_cell_len():
@@ -445,9 +452,9 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -485,6 +492,8 @@ def main(argv):
                 print 'the row must between 0 and 30'
         elif o in ('-t', '--top'):
             top_row = int(a)
+        elif o in ('-l', '--level'):
+            level = int(a)
 
     if source == "":
         print "you must input the input file or dir"
