@@ -25,3 +25,12 @@
 [submodule "paper/scholaroctopus"]
 	path = paper/scholaroctopus
 	url = git@github.com:karpathy/scholaroctopus.git
+[submodule "paper/cvpr2013papers"]
+	path = paper/cvpr2013papers
+	url = https://github.com/colincsl/cvpr2013papers.git
+[submodule "paper/iccv2013papers"]
+	path = paper/iccv2013papers
+	url = https://github.com/colincsl/iccv2013papers.git
+[submodule "paper/icml2013preview"]
+	path = paper/icml2013preview
+	url = https://github.com/benhamner/icml2013preview.git
