@@ -38,8 +38,16 @@ class CMUSpider(Spider):
             description += 'description:' + div.text.replace("\n","").replace('Description:', '').strip()
         return description
 
-    def processData(self, semester_list, dept):
-        file_name = self.get_file_name("eecs/cmu/" + self.dept_dict[dept], self.school)
+    def processData(self, semester_list, dept, subject):
+        if self.need_update_subject(subject) == False:
+            return
+
+        file_name = ''
+        if subject == 'eecs':
+            file_name = self.get_file_name(subject + "/cmu/" + self.dept_dict[dept], self.school)
+        else:
+            file_name = self.get_file_name(subject, self.school)
+
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -99,8 +107,10 @@ class CMUSpider(Spider):
     def doWork(self):
         self.getDept()
         for dept in self.dept_dict.keys():
-            if dept == "CB" or dept == "CS" or dept == "HCI" or dept == "ISR" or dept == "LTI" or dept == "MLG" or dept == "ROB":
-                self.processData(self.semester_list, dept)
+            if dept == "CB" or dept == "CS" or dept == "HCI" or dept == "ISR" or dept == "LTI" or dept == "MLG" or dept == "ROB" or dept == 'ECE':
+                self.processData(self.semester_list, dept, 'eecs')
+            else:
+                self.processData(self.semester_list, dept, self.dept_dict[dept])
 
 
 start = CMUSpider();
