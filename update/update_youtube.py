@@ -23,6 +23,7 @@ class YoutubeSpider(Spider):
                 'imperialcollegelondon' : 'https://www.youtube.com/user/imperialcollegevideo/playlists',\
                 'toronto' : 'https://www.youtube.com/user/universitytoronto/playlists',\
                 'uns' : 'https://www.youtube.com/user/NUScast/playlists',\
+                'unsw' : 'https://www.youtube.com/user/UNSWelearning/playlists?sort=dd&view=1',\
                 'nptel' : 'https://www.youtube.com/user/nptelhrd/playlists'}
 
     def getCourse(self, html, user):
