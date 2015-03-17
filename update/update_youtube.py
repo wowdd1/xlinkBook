@@ -11,6 +11,7 @@ class YoutubeSpider(Spider):
         self.playlist_urls = {\
                 'mit': 'https://www.youtube.com/user/MIT/playlists',\
                 'stanford': 'https://www.youtube.com/user/StanfordUniversity/playlists',\
+                'stanfordonline' : 'https://www.youtube.com/user/stanfordonline/playlists',\
                 'berkeley': 'https://www.youtube.com/user/UCBerkeley/playlists',\
                 'cmu': 'https://www.youtube.com/user/CarnegieMellonU/playlists?view=1&sort=dd',\
                 'harvard': 'https://www.youtube.com/user/harvard/playlists',\
