@@ -12,44 +12,6 @@ import time
 
 class StanfordSpider(Spider):
     include_unoffered_courses = False
-    
-    video_lecture_list = {\
-        'CS1U' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=PracticalUnix',\
-        'CS101' : 'https://class.coursera.org/cs101-selfservice',\
-        'CS106A' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-866adcae1111',\
-        'CS106B' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=11f4f422-5670-4b4c-889c-008262e09e4e',\
-        #'CS107' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=2d712634-2bf1-4b55-9a3a-ca9d470755ee',\
-        'CS143' : 'https://class.coursera.org/compilers-2012-002',\
-        'CS145' : 'https://class.coursera.org/db',\
-        'CS147' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=HCI',\
-        'CS154' : 'https://class.coursera.org/automata-002',\
-        'CS157' : 'https://class.coursera.org/intrologic-005',\
-        'CS161' : 'http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=IntroToAlgorithms',\
-        'CS183B' : 'https://class.coursera.org/startup-001',\
-        'CS193G' : 'https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=384233322#ls=1',\
-        'CS193P' : 'https://www.youtube.com/playlist?list=PLCCE29F69A864766F',\
-        'CS223A' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=86cc8662-f6e4-43c3-a1be-b30d1d179743',\
-        'CS224N' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=63480b48-8819-4efd-8412-263f1a472f5a',\
-        'CS227B' : 'https://class.coursera.org/ggp-002',\
-        'CS228' : 'https://class.coursera.org/pgm-003',\
-        'CS229' : 'https://class.coursera.org/ml-004',\
-        'CS229T' : 'https://www.youtube.com/channel/UC4OWDcPB1peiBXDfCSZ3h-w/playlists',\
-        'CS246' : 'https://class.coursera.org/mmds-001',\
-        'CS255' : 'https://class.coursera.org/crypto-008',\
-        'CS264' : 'https://www.youtube.com/playlist?list=PLEGCF-WLh2RL8jsZpaf2tLHa5LotFEt5b',\
-        'CS334A' : 'https://www.youtube.com/playlist?list=PL3940DD956CDF0622',\
-        'CS545' : 'https://mvideos.stanford.edu/graduate#/SeminarDetail/Winter/2015/CS/545',\
-        'CS547' : 'http://scpd.stanford.edu/free-learning/webinars/human-computer-interaction-seminar-series-2013/stanford-seminar-jure-leskovec',\
-        'CS55N' : 'https://www.coursera.org/course/security',\
-        'EE184' : 'http://www.youtube.com/playlist?list=PL9D558D49CA734A02',\
-        'EE203' : 'https://mvideos.stanford.edu/graduate#/SeminarDetail/Winter/2015/EE/203',\
-        'EE261' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=84d174c2-d74f-493d-92ae-c3f45c0ee091',\
-        'EE263' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=17005383-19c6-49ed-9497-2ba8bfcfe5f6',\
-        'EE363' : 'http://www.youtube.com/playlist?list=PL06960BA52D0DB32B',\
-        'EE364A' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=2db7ced4-39d1-4fdb-90e8-364129597c87',\
-        'EE364B' : 'http://see.stanford.edu/see/courseinfo.aspx?coll=523bbab2-dcc1-4b5a-b78f-4c9dc8c7cf7a',\
-        'EE380' : 'https://www.youtube.com/playlist?list=PLpGHT1n4-mAuFqpRnQIbOakzLWMBd4M6G'\
-    }
  
     def __init__(self):
         Spider.__init__(self)
@@ -79,9 +41,6 @@ class StanfordSpider(Spider):
             record = CourseRecord(line)
             results[record.get_id().strip()] = record.get_description().strip()
         return results
-
-    def getVideoLectureList(self):
-        return self.video_lecture_list
 
     def formatCourseTitle(self, title):
         if title.find('(') != -1:
@@ -142,11 +101,9 @@ class StanfordSpider(Spider):
                 url = 'http://' + course_num_list[i] + '.stanford.edu'
                 if self.deep_mind:
                     url = self.getRealUrl(course_num_list[i])
-            if self.video_lecture_list.get(course_num_list[i], '') != '' or self.course_name_dict.get(self.formatCourseTitle(course_name_list[i]), '') != '':
-                if self.course_name_dict.get(self.formatCourseTitle(course_name_list[i]), '') != '':
-                    description +='videourl:' + self.course_name_dict[self.formatCourseTitle(course_name_list[i])] + ' ' 
-                else:
-                    description +='videourl:' + self.video_lecture_list[course_num_list[i]] + ' ' 
+            if self.course_name_dict.get(self.formatCourseTitle(course_name_list[i]), '') != '':
+                description +='videourl:' + self.course_name_dict[self.formatCourseTitle(course_name_list[i])] + ' ' 
+
             description += 'description:' + course_description_list[i] + ' '
 
             self.course_dict[course_num_list[i]] = CourseRecord(self.get_storage_format(course_num_list[i], course_name_list[i], url, description))
