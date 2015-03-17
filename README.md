@@ -29,6 +29,8 @@ eg:
     
     ./list.py -i db/eecs/ -c 1 -f 'data' -s -d -w 130
 
+    /list.py -i db/eecs/ -f 'data' -l 1
+
 the output would looks like this:
 
     +-----------+----------------------------------+---------+------------+---------+---------------------------+
@@ -115,7 +117,8 @@ browse course in browser:
 ex: 
 
      ./goto.py -c "6.001"
-     ./goto.py -c "E-100" -e yaohoo
+     ./goto.py -c "E-100" -e 'yaohoo'
+     ./goto.py -c '6.001' -e 'youtube'
 
 display one course info:
 

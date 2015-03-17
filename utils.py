@@ -120,14 +120,14 @@ class Utils:
         'white': '1;37',
     }
 
-    google = "https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q="
-    baidu = "http://www.baidu.com/s?word="
-    bing = "http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq="
-    yahoo = "https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p="
+    search_engin_dict = {'google' : 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=',\
+                         'baidu' : 'http://www.baidu.com/s?word=',\
+                         'bing' : 'http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq=',\
+                         'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
+                         'youtube' : 'https://www.youtube.com/results?search_query='}
 
-    search_engin_list = [google, baidu, bing, yahoo]
     def validEngin(self, engin):
-        for item in self.search_engin_list:
+        for item in self.search_engin_dict.keys():
             if item.lower().find(engin.lower()) != -1:
                 return True
         print "invalided search engin: " + engin
@@ -172,6 +172,18 @@ class Utils:
     def getPath(self, subject):
         return os.getcwd() + "/db/" + subject + "/"
 
+    def getEnginUrl(self, engin):
+        for item in self.search_engin_dict.values():
+            if item.lower().find(engin.lower()) != -1:
+                return item
+        return ''
+
+    def isEnginUrl(self, url):
+        for key in self.search_engin_dict.keys():
+            if url.find(key) != -1:
+                return True
+        return False
+
     def getUrl(self, keyword, use_subject='', engin=''):
         urls = []
         url = ""
@@ -188,9 +200,7 @@ class Utils:
                     print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
                     title = record.get_title().strip()
                     if engin != "" and self.validEngin(engin) == True:
-                       for item in search_engin_list:
-                           if item.lower().find(engin.lower()) != -1:
-                               urls.append(item + title)
+                        urls.append(self.getEnginUrl(engin.lower()) + title)
                     else:
                         urls.append(record.get_url().strip())
 
@@ -199,8 +209,7 @@ class Utils:
 
         if len(urls) > 1:
             for u in urls:
-                if u.find("google.com") == -1 and u.find("baidu.com") == -1 \
-                  and u.find("bing.com") == -1 and u.find("yahoo.com") == -1:
+                if self.isEnginUrl(u) == False:
                     url = u
                     break
                 if url == "":

@@ -20,6 +20,7 @@ def usage(argv0):
     print '-c, --course: the keyword for search the web'
     print '-e, --engin: what search for search include: google baidu bing yahoo'
     print '-u, --use: seach in what subject'
+    print '-y, --youtube: search video in youtube'
     print "subject include:"
     print_all_subject()
     print 'ex: ' + argv0 + ' -s "cs199" -u eecs'
@@ -33,7 +34,12 @@ def openBrowser(url):
 
 def search(keyword, engin):
     utils = Utils()
-    url = utils.getUrl(keyword, use_subject, engin) 
+    record = utils.getRecord(keyword, use_subject)
+    url = record.get_url().strip()
+
+    if engin != '':
+        url = utils.getEnginUrl(engin) + record.get_title().strip()
+
     if url != '':
         openBrowser(url)
 
