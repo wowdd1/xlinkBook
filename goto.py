@@ -39,6 +39,8 @@ def search(keyword, engin):
 
     if engin != '':
         url = utils.getEnginUrl(engin) + record.get_title().strip()
+        if engin == 'youtube':
+            url += ' playlist'
 
     if url != '':
         openBrowser(url)

@@ -121,10 +121,13 @@ class Utils:
     }
 
     search_engin_dict = {'google' : 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=',\
+                         'googlevideo' : 'https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q=',\
                          'baidu' : 'http://www.baidu.com/s?word=',\
                          'bing' : 'http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq=',\
                          'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
-                         'youtube' : 'https://www.youtube.com/results?search_query='}
+                         'youtube' : 'https://www.youtube.com/results?search_query=',\
+                         'youku' : 'http://www.soku.com/search_playlist/q_',\
+                         'tudou' : 'http://www.soku.com/t/npsearch/'}
 
     def validEngin(self, engin):
         for item in self.search_engin_dict.keys():
@@ -176,9 +179,18 @@ class Utils:
         for item in self.search_engin_dict.values():
             if item.lower().find(engin.lower()) != -1:
                 return item
+            if engin == 'googlevideo' and item.lower().find('google.com.hk/videohp') != -1:
+                return item
+            if engin == 'youku' and item.lower().find('soku.com/search') != -1:
+                return item
+            if engin == 'tudou' and item.lower().find('soku.com/t') != -1:
+                return item
         return ''
 
     def isEnginUrl(self, url):
+        if url.find('soku.com') != -1 or url.find('google.com.hk/videohp') != -1:
+            return True
+
         for key in self.search_engin_dict.keys():
             if url.find(key) != -1:
                 return True
