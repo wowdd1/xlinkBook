@@ -137,39 +137,6 @@ ex:
      ./about_course.py '6.001'
 
 
-browse course lecture at local(only suport ocw itunes course now):
-
-    run ./show_lecture.py -c "course number" or ./show_lecture.py "course number"  
-
-for coursera, please use:
-  
- ./coursera.py -u 'username' -p 'password' coursename
-
-ex:
-
-    ./show_lecture.py -c 6.S096
-
-    ./show_lecture.py -c 585700718 -l 1  (-l option only suport itunes course)
-   
-    ./coursera.py -u 'username' -p 'password' algo-007
-
-the output looks like this:
-
-    +------+----------------------------------------------------------------------------+-------------------------------------------------------+
-    | LEC# |                               LECTURETOPICS                                |                        KEYDATES                       |
-    +------+----------------------------------------------------------------------------+-------------------------------------------------------+
-    |  1   |              Introduction to C: Welcome to the Memory Jungle               |                                                       |
-    |  2   |       Subtleties of C: Data Structures and Floating-Point Arithmetic       |                 Released: Assignment 1                |
-    |  3   |             Guest Lectures: Assembly;  Secure Programming in C             |                                                       |
-    |  4   |               Style and Structure: Transition from C to C++                |                   Due: Assignment 1                   |
-    |  5   |             Object-Oriented C++: Abstraction, Inheritance, STL             |                 Released: Assignment 2                |
-    |  6   |                Design Patterns: Higher-Level Program Design                |                                                       |
-    |  7   | Introduction to Projects: Unit Testing, Third-Party Libraries, Code Review |         Released: Assignment 4 (final project)        |
-    |  8   |           Project Environments: Iterators, N-Body Problem, Setup           |                   Due: Assignment 3                   |
-    |  9   |              Visualization: OpenGL, Makefiles, Large Projects              |                 Due: First code review                |
-    |  10  |      Course Recap, Interviews, Advanced Topics: Grab Bag  Perspective      | Due: Second code review; Assignment 4 (final project) |
-    +------+----------------------------------------------------------------------------+-------------------------------------------------------+
-
 find the instructor:
 
     ./find_professor "faculty name"
