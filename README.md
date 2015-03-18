@@ -108,15 +108,6 @@ upgrade db:
 
     run ./upgrade_db.py
 
-gen bookmark:
-
-
-    run ./gen_bookmark.py  -b -f "keyword"
-
-ex:  
-
-    ./gen_bookmark.py  -b -f "computer"
-
 
 browse course in browser: 
 
