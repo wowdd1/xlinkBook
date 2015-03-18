@@ -241,6 +241,48 @@ def includeDesc(keyword):
             return True
     return False
 
+def containLogicalOperators(keyword):
+    if keyword.find('#or') != -1 or keyword.find('#and') != -1 or keyword.find('#not') != -1:
+        return True
+    return False
+
+def match(keyword, data):
+    if data.lower().find(keyword.strip().lower()) != -1 or re.match(keyword.strip(), data) != None:
+        return True
+    return False
+    
+def filter(keyword, data):
+    if containLogicalOperators(keyword):
+        conditions = []
+        if keyword.find('#not') != -1:
+            conditions = keyword.split('#not')
+            for con in conditions:
+                if con.strip() == '':
+                    continue
+                if match(con, data):
+                    return False
+
+        if keyword.find('#and') != -1:
+            conditions = keyword.split('#and')
+            for con in conditions:
+                if con.strip() == '':
+                    continue
+                if match(con, data) == False:
+                    return False
+
+        if keyword.find('#or') != -1:
+            conditions = keyword.split('#or')
+            for con in conditions:
+                if con.strip() == '':
+                    continue
+                if match(con, data):
+                    return True
+        
+    if data.lower().find(keyword.lower()) != -1 or re.match(keyword, data) != None:
+        return True
+    return False
+    
+
 def print_list(file_name):
     current = 0
     old_line = ""
@@ -262,7 +304,7 @@ def print_list(file_name):
                     data += record.get_describe()
                     keyword = filter_keyword[filter_keyword.find(':') + 1 :].strip()
 
-                if data.lower().find(keyword.lower()) != -1 or re.match(keyword, data) != None:
+                if filter(keyword.lower(), data):
                     filter_result.append(line)
             all_lines = filter_result[:]
         if len(all_lines) == 0:
