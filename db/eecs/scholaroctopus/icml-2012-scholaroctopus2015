@@ -1,0 +1,243 @@
+icml-2012-1 | A Bayesian Approach to Approximate Joint Diagonalization of Square Matrices | http://icml.cc/2012/papers/357.pdf | author:Mingjun Zhong, Mark Girolami
+icml-2012-2 | A Binary Classification Framework for Two-Stage Multiple Kernel Learning | http://icml.cc/2012/papers/645.pdf | author:Abhishek Kumar, Alexandru Niculescu-Mizil, Koray Kavukcuoglu, Hal Daume III
+icml-2012-3 | A Combinatorial Algebraic Approach for the Identifiability of Low-Rank Matrix Completion | http://icml.cc/2012/papers/510.pdf | author:Franz Király, Ryota Tomioka
+icml-2012-4 | A Complete Analysis of the l_1,p Group-Lasso | http://icml.cc/2012/papers/110.pdf | author:Julia Vogt, Volker Roth
+icml-2012-5 | A Convex Feature Learning Formulation for Latent Task Structure Discovery | http://icml.cc/2012/papers/90.pdf | author:Pratik Jawanpuria, J. Saketha Nath
+icml-2012-6 | A Dantzig Selector Approach to Temporal Difference Learning | http://icml.cc/2012/papers/703.pdf | author:Matthieu Geist, Bruno Scherrer, Alessandro Lazaric, Mohammad Ghavamzadeh
+icml-2012-7 | A Generalized Loop Correction Method for Approximate Inference in Graphical Models | http://icml.cc/2012/papers/304.pdf | author:Siamak Ravanbakhsh, Chun-Nam Yu, Russell Greiner
+icml-2012-8 | A Generative Process for Contractive Auto-Encoders | http://icml.cc/2012/papers/910.pdf | author:Salah Rifai, Yann Dauphin, Pascal Vincent, Yoshua Bengio
+icml-2012-9 | A Graphical Model Formulation of Collaborative Filtering Neighbourhood Methods with Fast Maximum Entropy Training | http://icml.cc/2012/papers/158.pdf | author:Aaron Defazio, Tiberio Caetano
+icml-2012-10 | A Hierarchical Dirichlet Process Model with Multiple Levels of Clustering for Human EEG Seizure Modeling | http://icml.cc/2012/papers/49.pdf | author:Drausin Wulsin, Shane Jensen, Brian Litt
+icml-2012-11 | A Hybrid Algorithm for Convex Semidefinite Optimization | http://icml.cc/2012/papers/109.pdf | author:Soeren Laue
+icml-2012-12 | A Joint Model of Language and Perception for Grounded Attribute Learning | http://icml.cc/2012/papers/822.pdf | author:Cynthia Matuszek, Nicholas FitzGerald, Luke Zettlemoyer, Liefeng Bo, Dieter Fox
+icml-2012-13 | A Proximal-Gradient Homotopy Method for the L1-Regularized Least-Squares Problem | http://icml.cc/2012/papers/447.pdf | author:Lin Xiao, Tong Zhang
+icml-2012-14 | A Simple Algorithm for Semi-supervised Learning with Improved Generalization Error Bound | http://icml.cc/2012/papers/616.pdf | author:Ming Ji, Tianbao Yang, Binbin Lin, Rong Jin, Jiawei Han
+icml-2012-15 | A Split-Merge Framework for Comparing Clusterings | http://icml.cc/2012/papers/559.pdf | author:Qiaoliang Xiang, Qi Mao, Kian Ming Chai, Hai Leong Chieu, Ivor Tsang, Zhenddong Zhao
+icml-2012-16 | A Topic Model for Melodic Sequences | http://icml.cc/2012/papers/585.pdf | author:Athina Spiliopoulou, Amos Storkey
+icml-2012-17 | A Unified Robust Classification Model | http://icml.cc/2012/papers/87.pdf | author:Akiko Takeda, Hiroyuki  Mitsugi, Takafumi  Kanamori
+icml-2012-18 | A convex relaxation for weakly supervised classifiers | http://icml.cc/2012/papers/641.pdf | author:Armand Joulin, Francis Bach
+icml-2012-19 | A fast and simple algorithm for training neural probabilistic language models | http://icml.cc/2012/papers/855.pdf | author:Andriy Mnih, Yee Whye Teh
+icml-2012-20 | AOSO-LogitBoost: Adaptive One-Vs-One LogitBoost for Multi-Class Problem | http://icml.cc/2012/papers/569.pdf | author:Peng Sun, Mark Reid, Jie Zhou
+icml-2012-21 | Active Learning for Matching Problems | http://icml.cc/2012/papers/197.pdf | author:Laurent Charlin, Rich Zemel, Craig Boutilier
+icml-2012-22 | Adaptive Canonical Correlation Analysis Based On Matrix Manifolds | http://icml.cc/2012/papers/565.pdf | author:Florian Yger, Maxime Berar, Gilles Gasso, Alain Rakotomamonjy
+icml-2012-23 | Adaptive Regularization for Similarity Measures | http://icml.cc/2012/papers/245.pdf | author:Koby Crammer, Gal Chechik
+icml-2012-24 | Agglomerative Bregman Clustering | http://icml.cc/2012/papers/758.pdf | author:Matus Telgarsky, Sanjoy Dasgupta
+icml-2012-25 | Agnostic System Identification for Model-Based Reinforcement Learning | http://icml.cc/2012/papers/833.pdf | author:Stephane Ross, Drew Bagnell
+icml-2012-26 | An Efficient Approach to Sparse Linear Discriminant Analysis | http://icml.cc/2012/papers/591.pdf | author:Luis Francisco Sánchez Merchante, Yves Grandvalet, Gérrad Govaert
+icml-2012-27 | An Infinite Latent Attribute Model for Network Data | http://icml.cc/2012/papers/785.pdf | author:Konstantina Palla, David A. Knowles, Zoubin Ghahramani
+icml-2012-28 | An Iterative Locally Linear Embedding Algorithm | http://icml.cc/2012/papers/811.pdf | author:Deguang Kong, Chris H.Q. Ding
+icml-2012-29 | An Online Boosting Algorithm with Theoretical Justifications | http://icml.cc/2012/papers/538.pdf | author:Shang-Tse Chen, Hsuan-Tien Lin, Chi-Jen Lu
+icml-2012-30 | An adaptive algorithm for finite stochastic partial monitoring | http://icml.cc/2012/papers/846.pdf | author:Gabor Bartok, Navid Zolghadr, Csaba Szepesvari
+icml-2012-31 | Analysis of Kernel Mean Matching under Covariate Shift | http://icml.cc/2012/papers/330.pdf | author:Yaoliang Yu, Csaba Szepesvari
+icml-2012-32 | Anytime Marginal MAP Inference | http://icml.cc/2012/papers/728.pdf | author:Denis Maua, Cassio De Campos
+icml-2012-33 | Apprenticeship Learning for Model Parameters of Partially Observable Environments | http://icml.cc/2012/papers/747.pdf | author:Takaki Makino, Johane Takeuchi
+icml-2012-34 | Approximate Dynamic Programming By Minimizing Distributionally Robust Bounds | http://icml.cc/2012/papers/283.pdf | author:Marek Petrik
+icml-2012-35 | Approximate Modified Policy Iteration | http://icml.cc/2012/papers/608.pdf | author:Bruno Scherrer, Victor Gabillon, Mohammad Ghavamzadeh, Matthieu Geist
+icml-2012-36 | Approximate Principal Direction Trees | http://icml.cc/2012/papers/348.pdf | author:Mark McCartin-Lim, Andrew McGregor, Rui Wang
+icml-2012-37 | Artist Agent: A Reinforcement Learning Approach to Automatic Stroke Generation in Oriental Ink Painting | http://icml.cc/2012/papers/101.pdf | author:Ning Xie, Hirotaka Hachiya, Masashi Sugiyama
+icml-2012-38 | Batch Active Learning via Coordinated Matching | http://icml.cc/2012/papers/607.pdf | author:Javad Azimi, Alan Fern, Xiaoli Zhang-Fern, Glencora  Borradaile, Brent  Heeringa
+icml-2012-39 | Bayesian Conditional Cointegration | http://icml.cc/2012/papers/570.pdf | author:Chris Bracegirdle, David Barber
+icml-2012-40 | Bayesian Efficient Multiple Kernel Learning | http://icml.cc/2012/papers/5.pdf | author:Mehmet Gönen
+icml-2012-41 | Bayesian Nonexhaustive Learning for Online Discovery and Modeling of Emerging Classes | http://icml.cc/2012/papers/81.pdf | author:Murat Dundar, Ferit  Akova, Alan Qi, Bartek Rajwa
+icml-2012-42 | Bayesian Optimal Active Search and Surveying | http://icml.cc/2012/papers/618.pdf | author:Roman Garnett, Yamuna Krishnamurthy, Xuehan Xiong, Jeff Schneider, Richard Mann
+icml-2012-43 | Bayesian Posterior Sampling via Stochastic Gradient Fisher Scoring | http://icml.cc/2012/papers/782.pdf | author:Sungjin Ahn, Anoop Korattikara, Max Welling
+icml-2012-44 | Bayesian Watermark Attacks | http://icml.cc/2012/papers/371.pdf | author:Ivo Shterev, David Dunson
+icml-2012-45 | Bounded Planning in Passive POMDPs | http://icml.cc/2012/papers/864.pdf | author:Roy Fox, Naftali Tishby
+icml-2012-46 | Building high-level features using large scale unsupervised learning | http://icml.cc/2012/papers/73.pdf | author:Quoc Le, Marc'Aurelio Ranzato, Rajat Monga, Matthieu Devin, Greg Corrado, Kai Chen, Jeff Dean, Andrew Ng
+icml-2012-47 | Canonical Trends: Detecting Trend Setters in Web Data | http://icml.cc/2012/papers/623.pdf | author:Felix Biessmann, Jens-Michalis Papaioannou, Mikio Braun, Andreas Harth
+icml-2012-48 | Capturing topical content with frequency and exclusivity | http://icml.cc/2012/papers/113.pdf | author:Jonathan Bischof, Edoardo  Airoldi
+icml-2012-49 | Clustering by Low-Rank Doubly Stochastic Matrix Decomposition | http://icml.cc/2012/papers/445.pdf | author:Zhirong Yang, Erkki Oja
+icml-2012-50 | Clustering to Maximize the Ratio of Split to Diameter | http://icml.cc/2012/papers/130.pdf | author:Jiabing Wang, Jiaye Chen
+icml-2012-51 | Clustering using Max-norm Constrained Optimization | http://icml.cc/2012/papers/278.pdf | author:Ali Jalali, Nathan Srebro
+icml-2012-52 | Collaborative Topic Regression with Social Matrix Factorization for Recommendation Systems | http://icml.cc/2012/papers/407.pdf | author:Sanjay Purushotham, Yan Liu
+icml-2012-53 | Communications Inspired Linear Discriminant Analysis | http://icml.cc/2012/papers/482.pdf | author:Minhua Chen, William Carson, Miguel Rodrigues, Lawrence Carin, Robert Calderbank
+icml-2012-54 | Compact Hyperplane Hashing with Bilinear Functions | http://icml.cc/2012/papers/16.pdf | author:Wei Liu, Jun Wang, Yadong Mu, Sanjiv Kumar, Shih-Fu Chang
+icml-2012-55 | Comparison-Based Learning with Rank Nets | http://icml.cc/2012/papers/455.pdf | author:Amin Karbasi, Stratis Ioannidis, laurent Massoulie
+icml-2012-56 | Complexity Analysis of the Lasso Regularization Path | http://icml.cc/2012/papers/202.pdf | author:Julien Mairal, Bin Yu
+icml-2012-57 | Compositional Planning Using Optimal Option Models | http://icml.cc/2012/papers/564.pdf | author:David Silver, Kamil Ciosek
+icml-2012-58 | Conditional Sparse Coding and Grouped Multivariate Regression | http://icml.cc/2012/papers/738.pdf | author:Min Xu, John Lafferty
+icml-2012-59 | Conditional mean embeddings as regressors | http://icml.cc/2012/papers/898.pdf | author:Steffen Grunewalder, Guy Lever, Arthur Gretton, Luca Baldassarre, Sam Patterson, Massi Pontil
+icml-2012-60 | Consistent Covariance Selection From Data With Missing Values | http://icml.cc/2012/papers/313.pdf | author:Mladen Kolar, eric xing
+icml-2012-61 | Consistent Multilabel Ranking through Univariate Losses | http://icml.cc/2012/papers/661.pdf | author:Krzysztof Dembczyński, Wojciech Kotłowski, Eyke Huellermeier
+icml-2012-62 | Continuous Inverse Optimal Control with Locally Optimal Examples | http://icml.cc/2012/papers/43.pdf | author:Sergey Levine, Vladlen Koltun
+icml-2012-63 | Convergence Rates for Differentially Private Statistical Estimation | http://icml.cc/2012/papers/663.pdf | author:Kamalika Chaudhuri, Daniel Hsu
+icml-2012-64 | Convergence Rates of Biased Stochastic Optimization for Learning Sparse Ising Models | http://icml.cc/2012/papers/154.pdf | author:Jean Honorio
+icml-2012-65 | Convergence of the EM Algorithm for Gaussian Mixtures with Unbalanced Mixing Coefficients | http://icml.cc/2012/papers/814.pdf | author:Iftekhar Naim, Daniel Gildea
+icml-2012-66 | Conversational Speech Transcription Using Context-Dependent Deep Neural Networks | http://icml.cc/2012/papers/943.pdf | author:Dong Yu, Frank Seide, Gang Li
+icml-2012-67 | Convex Multitask Learning with Flexible Task Clusters | http://icml.cc/2012/papers/45.pdf | author:Wenliang Zhong, James Kwok
+icml-2012-68 | Copula Mixture Model for Dependency-seeking Clustering | http://icml.cc/2012/papers/486.pdf | author:Melanie Rey, Volker Roth
+icml-2012-69 | Copula-based Kernel Dependency Measures | http://icml.cc/2012/papers/417.pdf | author:Barnabas Poczos, Zoubin Ghahramani, Jeff Schneider
+icml-2012-70 | Cross Language Text Classification via Subspace Co-regularized Multi-view Learning | http://icml.cc/2012/papers/789.pdf | author:Yuhong Guo, Min Xiao
+icml-2012-71 | Cross-Domain Multitask Learning with Latent Probit Models | http://icml.cc/2012/papers/727.pdf | author:Shaobo Han, Xuejun Liao, Lawrence Carin
+icml-2012-72 | Data-driven Web Design | http://icml.cc/2012/papers/944.pdf | author:Ranjitha Kumar, Jerry Talton, Salman Ahmad, Scott Klemmer
+icml-2012-73 | Decoupling Exploration and Exploitation in Multi-Armed Bandits | http://icml.cc/2012/papers/230.pdf | author:Orly Avner, Shie Mannor, Ohad Shamir
+icml-2012-74 | Deep Lambertian Networks | http://icml.cc/2012/papers/791.pdf | author:Yichuan Tang, Ruslan Salakhutdinov, Geoffrey Hinton
+icml-2012-75 | Deep Mixtures of Factor Analysers | http://icml.cc/2012/papers/284.pdf | author:Yichuan Tang, Ruslan Salakhutdinov, Geoffrey Hinton
+icml-2012-76 | Demand-Driven Clustering in Relational Domains for Predicting Adverse Drug Events | http://icml.cc/2012/papers/644.pdf | author:Jesse Davis, Vitor Santos Costa, Elizabeth Berg, David Page, Peggy Peissig, Michael Caldwell
+icml-2012-77 | Dependent Hierarchical Normalized Random Measures for Dynamic Topic Modeling | http://icml.cc/2012/papers/476.pdf | author:Changyou Chen, Nan Ding, Wray Buntine
+icml-2012-78 | Dimensionality Reduction by Local Discriminative Gaussians | http://icml.cc/2012/papers/317.pdf | author:Nathan Parrish, Maya Gupta
+icml-2012-79 | Dirichlet Process with Mixed Random Measures: A Nonparametric Topic Model for Labeled Data | http://icml.cc/2012/papers/387.pdf | author:Dongwoo Kim, Suin Kim, Alice Oh
+icml-2012-80 | Discovering Support and Affiliated Features from Very High Dimensions | http://icml.cc/2012/papers/726.pdf | author:Yiteng Zhai, Mingkui Tan, Ivor Tsang, Yew Soon Ong
+icml-2012-81 | Discriminative Probabilistic Prototype Learning | http://icml.cc/2012/papers/389.pdf | author:Edwin Bonilla, Antonio Robles-Kelly
+icml-2012-82 | Distributed Parameter Estimation via Pseudo-likelihood | http://icml.cc/2012/papers/742.pdf | author:Qiang Liu, Alexander Ihler
+icml-2012-83 | Distributed Tree Kernels | http://icml.cc/2012/papers/111.pdf | author:Fabio Massimo Zanzotto, Lorenzo Dell'Arciprete
+icml-2012-84 | Efficient Active Algorithms for Hierarchical Clustering | http://icml.cc/2012/papers/473.pdf | author:Akshay Krishnamurthy, Sivaraman Balakrishnan, Min Xu, Aarti Singh
+icml-2012-85 | Efficient Decomposed Learning for Structured Prediction | http://icml.cc/2012/papers/122.pdf | author:Rajhans Samdani, Dan Roth
+icml-2012-86 | Efficient Euclidean Projections onto the Intersection of Norm Balls | http://icml.cc/2012/papers/250.pdf | author:Adams Wei Yu, Hao Su, Li Fei-Fei
+icml-2012-87 | Efficient Structured Prediction with Latent Variables for General Graphical Models | http://icml.cc/2012/papers/507.pdf | author:Alexander Schwing, Tamir Hazan, Marc Pollefeys, Raquel Urtasun
+icml-2012-88 | Efficient and Practical Stochastic Subgradient Descent for Nuclear Norm Regularization | http://icml.cc/2012/papers/617.pdf | author:Haim Avron, Satyen Kale, Shiva Kasiviswanathan, Vikas Sindhwani
+icml-2012-89 | Ensemble Methods for Convex Regression with Applications to Geometric Programming Based Circuit Design | http://icml.cc/2012/papers/210.pdf | author:Lauren Hannah, David Dunson
+icml-2012-90 | Estimating the Hessian by Back-propagating Curvature | http://icml.cc/2012/papers/866.pdf | author:James Martens, Ilya Sutskever, Kevin Swersky
+icml-2012-91 | Estimation of Simultaneously Sparse and Low Rank Matrices | http://icml.cc/2012/papers/674.pdf | author:Pierre-André Savalle, Emile Richard, Nicolas Vayatis
+icml-2012-92 | Evaluating Bayesian and L1 Approaches for Sparse Unsupervised Learning | http://icml.cc/2012/papers/405.pdf | author:Shakir Mohamed, Katherine Heller, Zoubin Ghahramani
+icml-2012-93 | Exact Maximum Margin Structure Learning of Bayesian Networks | http://icml.cc/2012/papers/558.pdf | author:Robert Peharz, Franz Pernkopf
+icml-2012-94 | Exact Soft Confidence-Weighted Learning | http://icml.cc/2012/papers/86.pdf | author:Steven C.H. Hoi, Jialei Wang, Peilin Zhao
+icml-2012-95 | Exemplar-SVMs for Visual Ob ject Detection, Label Transfer and Image Retrieval | http://icml.cc/2012/papers/946.pdf | author:Tomasz Malisiewicz, Abhinav Shrivastava, Abhinav Gupta, Alexei Efros
+icml-2012-96 | Exponential Regret Bounds for Gaussian Process Bandits with Deterministic Observations | http://icml.cc/2012/papers/853.pdf | author:Nando de Freitas, Alex Smola, Masrour Zoghi
+icml-2012-97 | Factorized Asymptotic Bayesian Hidden Markov Models | http://icml.cc/2012/papers/426.pdf | author:Ryohei Fujimaki, Kohei Hayashi
+icml-2012-98 | Fast Bounded Online Gradient Descent Algorithms for Scalable Kernel-Based Online Learning | http://icml.cc/2012/papers/108.pdf | author:Steven C.H. Hoi, Jialei Wang, Peilin Zhao, Rong Jin, Pengcheng Wu
+icml-2012-99 | Fast Computation of Subpath Kernel for Trees | http://icml.cc/2012/papers/217.pdf | author:Daisuke Kimura, Hisashi Kashima
+icml-2012-100 | Fast Prediction of New Feature Utility | http://icml.cc/2012/papers/425.pdf | author:Hoyt Koepke, Mikhail Bilenko
+icml-2012-101 | Fast Training of Nonlinear Embedding Algorithms | http://icml.cc/2012/papers/199.pdf | author:Max Vladymyrov, Miguel Carreira-Perpinan
+icml-2012-102 | Fast approximation of matrix coherence and statistical leverage | http://icml.cc/2012/papers/80.pdf | author:Michael Mahoney, Petros Drineas, Malik Magdon-Ismail, David Woodruff
+icml-2012-103 | Fast classification using sparse decision DAGs | http://icml.cc/2012/papers/501.pdf | author:Robert Busa-Fekete, Djalel Benbouzid, Balazs Kegl
+icml-2012-104 | Feature Selection via Probabilistic Outputs | http://icml.cc/2012/papers/868.pdf | author:Andrea Danyluk, Nicholas Arnosti
+icml-2012-105 | Finding Botnets Using Minimal Graph Clusterings | http://icml.cc/2012/papers/451.pdf | author:Peter Haider, Tobias Scheffer
+icml-2012-106 | Flexible Modeling of Latent Task Structures in Multitask Learning | http://icml.cc/2012/papers/573.pdf | author:Alexandre Passos, Piyush Rai, Jacques Wainer, Hal Daume III
+icml-2012-107 | Gap Filling in the Plant Kingdom—Trait Prediction Using Hierarchical Probabilistic Matrix Factorization | http://icml.cc/2012/papers/652.pdf | author:Hanhuai Shan, Jens Kattge, Peter Reich, Arindam Banerjee, Franziska Schrodt, Markus Reichstein
+icml-2012-108 | Gaussian Process Quantile Regression using Expectation Propagation | http://icml.cc/2012/papers/830.pdf | author:Alexis Boukouvalas, Remi Barillec, Dan Cornford
+icml-2012-109 | Gaussian Process Regression Networks | http://icml.cc/2012/papers/329.pdf | author:Andrew Wilson, David A. Knowles, Zoubin Ghahramani
+icml-2012-110 | Greedy Algorithms for Sparse Reinforcement Learning | http://icml.cc/2012/papers/701.pdf | author:Christopher Painter-Wakefield, Ronald Parr
+icml-2012-111 | Group Sparse Additive Models | http://icml.cc/2012/papers/463.pdf | author:Junming Yin, Xi Chen, eric xing
+icml-2012-112 | Groupwise Constrained Reconstruction for Subspace Clustering | http://icml.cc/2012/papers/214.pdf | author:Ruijiang Li, Bin Li, Cheng Jin, Xiangyang Xue
+icml-2012-113 | Hierarchical Exploration for Accelerating Contextual Bandits | http://icml.cc/2012/papers/933.pdf | author:Yisong Yue, Sue Ann Hong, Carlos Guestrin
+icml-2012-114 | High Dimensional Semiparametric Gaussian Copula Graphical Models | http://icml.cc/2012/papers/707.pdf | author:Han Liu, Fang Han, Ming Yuan, John Lafferty, Larry Wasserman
+icml-2012-115 | High-Dimensional Covariance Decomposition into Sparse Markov and Independence Domains | http://icml.cc/2012/papers/902.pdf | author:Majid Janzamin, Animashree Anandkumar
+icml-2012-116 | How To Grade a Test Without Knowing the Answers — A Bayesian Graphical Model for Adaptive Crowdsourcing and Aptitude Testing | http://icml.cc/2012/papers/597.pdf | author:Yoram Bachrach, Thore Graepel, Tom Minka, John Guiver
+icml-2012-117 | Hybrid Batch Bayesian Optimization | http://icml.cc/2012/papers/614.pdf | author:Javad Azimi, Ali Jalali, Xiaoli Zhang-Fern
+icml-2012-118 | Hypothesis testing using pairwise distances and associated kernels | http://icml.cc/2012/papers/575.pdf | author:Dino Sejdinovic, Arthur Gretton, Bharath Sriperumbudur, Kenji Fukumizu
+icml-2012-119 | Improved Estimation in Time Varying Models | http://icml.cc/2012/papers/850.pdf | author:Doina Precup, Philip Bachman
+icml-2012-120 | Improved Information Gain Estimates for Decision Tree Induction | http://icml.cc/2012/papers/177.pdf | author:Sebastian Nowozin
+icml-2012-121 | Improved Nystrom Low-rank Decomposition with Priors | http://icml.cc/2012/papers/188.pdf | author:Kai Zhang, Liang Lan, Jun Liu, andreas Rauber
+icml-2012-122 | Incorporating Causal Prior Knowledge as Path-Constraints in Bayesian Networks and Maximal Ancestral Graphs | http://icml.cc/2012/papers/875.pdf | author:Giorgos Borboudakis, Ioannis Tsamardinos
+icml-2012-123 | Incorporating Domain Knowledge in Matching Problems via Harmonic Analysis | http://icml.cc/2012/papers/639.pdf | author:Deepti Pachauri, Maxwell Collins, Vikas SIngh
+icml-2012-124 | Inferring Latent Structure From Mixed Real and Categorical Relational Data | http://icml.cc/2012/papers/554.pdf | author:Esther Salazar, Lawrence Carin
+icml-2012-125 | Infinite Tucker Decomposition: Nonparametric Bayesian Models for Multiway Data Analysis | http://icml.cc/2012/papers/543.pdf | author:Zenglin Xu, Feng Yan, Alan Qi
+icml-2012-126 | Influence Maximization in Continuous Time Diffusion Networks | http://icml.cc/2012/papers/189.pdf | author:Manuel Gomez Rodriguez, Bernhard Schölkopf
+icml-2012-127 | Information-Theoretical Learning of Discriminative Clusters for Unsupervised Domain Adaptation | http://icml.cc/2012/papers/566.pdf | author:Yuan Shi, Fei Sha
+icml-2012-128 | Information-theoretic Semi-supervised Metric Learning via Entropy Regularization | http://icml.cc/2012/papers/74.pdf | author:Gang Niu, Bo Dai, Makoto Yamada, Masashi Sugiyama
+icml-2012-129 | Is margin preserved after random projection? | http://icml.cc/2012/papers/327.pdf | author:Qinfeng Shi, Chunhua Shen, Rhys Hill, Anton van den Hengel
+icml-2012-130 | Isoelastic Agents and Wealth Updates in Machine Learning Markets | http://icml.cc/2012/papers/886.pdf | author:Amos Storkey, Jono Millin, Krzysztof Geras
+icml-2012-131 | Joint Optimization and Variable Selection of High-dimensional Gaussian Processes | http://icml.cc/2012/papers/714.pdf | author:Bo Chen, Rui Castro, Andreas Krause
+icml-2012-132 | LPQP for MAP: Putting LP Solvers to Better Use | http://icml.cc/2012/papers/418.pdf | author:Patrick Pletscher, Sharon Wulff
+icml-2012-133 | Large Scale Variational Bayesian Inference for Structured Scale Mixture Models | http://icml.cc/2012/papers/773.pdf | author:Young Jun Ko, Matthias Seeger
+icml-2012-134 | Large-Scale Feature Learning With Spike-and-Slab Sparse Coding | http://icml.cc/2012/papers/718.pdf | author:Ian Goodfellow, Aaron Courville, Yoshua Bengio
+icml-2012-135 | Latent Collaborative Retrieval | http://icml.cc/2012/papers/12.pdf | author:Jason Weston, Chong Wang, Ron Weiss, Adam Berenzweig
+icml-2012-136 | Latent Multi-group Membership Graph Model | http://icml.cc/2012/papers/839.pdf | author:Myunghwan Kim, Jure Leskovec
+icml-2012-137 | Learning Efficient Structured Sparse Models | http://icml.cc/2012/papers/332.pdf | author:Alex Bronstein, Pablo Sprechmann, Guillermo Sapiro
+icml-2012-138 | Learning Force Control Policies for Compliant Robotic Manipulation | http://icml.cc/2012/papers/642.pdf | author:Mrinal Kalakrishnan, Ludovic Righetti, Peter Pastor, Stefan Schaal
+icml-2012-139 | Learning Invariant Representations with Local Transformations | http://icml.cc/2012/papers/659.pdf | author:Kihyuk Sohn, Honglak Lee
+icml-2012-140 | Learning Object Arrangements in 3D Scenes using Human Context | http://icml.cc/2012/papers/760.pdf | author:Yun Jiang, Marcus Lim, Ashutosh Saxena
+icml-2012-141 | Learning Parameterized Skills | http://icml.cc/2012/papers/826.pdf | author:Bruno Da Silva, George Konidaris, Andrew Barto
+icml-2012-142 | Learning Task Grouping and Overlap in Multi-task Learning | http://icml.cc/2012/papers/690.pdf | author:Abhishek Kumar, Hal Daume III
+icml-2012-143 | Learning the Central Events and Participants in Unlabeled Text | http://icml.cc/2012/papers/945.pdf | author:Nathanael Chambers, Dan Jurafsky
+icml-2012-144 | Learning the Dependence Graph of Time Series with Latent Factors | http://icml.cc/2012/papers/277.pdf | author:Ali Jalali, Sujay Sanghavi
+icml-2012-145 | Learning the Experts for Online Sequence Prediction | http://icml.cc/2012/papers/471.pdf | author:Elad Eban, Aharon Birnbaum, Shai Shalev-Shwartz, Amir Globerson
+icml-2012-146 | Learning to Identify Regular Expressions that Describe Email Campaigns | http://icml.cc/2012/papers/252.pdf | author:Paul Prasse, Christoph Sawade, Niels Landwehr, Tobias Scheffer
+icml-2012-147 | Learning to Label Aerial Images from Noisy Data | http://icml.cc/2012/papers/318.pdf | author:Volodymyr Mnih, Geoffrey Hinton
+icml-2012-148 | Learning with Augmented Features for Heterogeneous Domain Adaptation | http://icml.cc/2012/papers/373.pdf | author:Lixin Duan, Dong Xu, Ivor Tsang
+icml-2012-149 | Levy Measure Decompositions for the Beta and Gamma Processes | http://icml.cc/2012/papers/69.pdf | author:Yingjian Wang, Lawrence Carin
+icml-2012-150 | Lightning Does Not Strike Twice: Robust MDPs with Coupled Uncertainty | http://icml.cc/2012/papers/215.pdf | author:Shie Mannor, Ofir Mebel, Huan Xu
+icml-2012-151 | Linear Off-Policy Actor-Critic | http://icml.cc/2012/papers/268.pdf | author:Thomas Degris, Martha White, Richard Sutton
+icml-2012-152 | Linear Regression with Limited Observation | http://icml.cc/2012/papers/433.pdf | author:Elad Hazan, Tomer Koren
+icml-2012-153 | Local Loss Optimization in Operator Models: A New Insight into Spectral Learning | http://icml.cc/2012/papers/922.pdf | author:Borja Balle, Ariadna Quattoni, Xavier Carreras
+icml-2012-154 | Lognormal and Gamma Mixed Negative Binomial Regression | http://icml.cc/2012/papers/665.pdf | author:Mingyuan Zhou, Lingbo Li, David Dunson, Lawrence Carin
+icml-2012-155 | Machine Learning that Matters | http://icml.cc/2012/papers/298.pdf | author:Kiri Wagstaff
+icml-2012-156 | Making Gradient Descent Optimal for Strongly Convex Stochastic Optimization | http://icml.cc/2012/papers/261.pdf | author:Alexander Rakhlin, Ohad Shamir, Karthik Sridharan
+icml-2012-157 | Manifold Relevance Determination | http://icml.cc/2012/papers/94.pdf | author:Andreas Damianou, Carl Ek, Michalis Titsias, Neil Lawrence
+icml-2012-158 | Marginalized Denoising Autoencoders for Domain Adaptation | http://icml.cc/2012/papers/416.pdf | author:Minmin Chen, Zhixiang Xu, Kilian Weinberger, Fei Sha
+icml-2012-159 | Max-Margin Nonparametric Latent Feature Models for Link Prediction | http://icml.cc/2012/papers/374.pdf | author:Jun Zhu
+icml-2012-160 | Maximum Margin Output Coding | http://icml.cc/2012/papers/778.pdf | author:Yi Zhang, Jeff Schneider
+icml-2012-161 | Minimizing The Misclassification Error Rate Using a Surrogate Convex Loss | http://icml.cc/2012/papers/917.pdf | author:Shai Ben-David, David Loker, Nathan Srebro, Karthik Sridharan
+icml-2012-162 | Modeling Images using Transformed Indian Buffet Processes | http://icml.cc/2012/papers/750.pdf | author:KE ZHAI, Yuening Hu, Jordan Boyd-Graber, Sinead Williamson
+icml-2012-163 | Modeling Latent Variable Uncertainty for Loss-based Learning | http://icml.cc/2012/papers/274.pdf | author:M. Pawan Kumar, Ben Packer, Daphne Koller
+icml-2012-164 | Modeling Temporal Dependencies in High-Dimensional Sequences: Application to Polyphonic Music Generation and Transcription | http://icml.cc/2012/papers/590.pdf | author:Nicolas Boulanger-Lewandowski, Yoshua Bengio, Pascal Vincent
+icml-2012-165 | Modelling transition dynamics in MDPs with RKHS embeddings | http://icml.cc/2012/papers/301.pdf | author:Steffen Grunewalder, Guy Lever, Luca Baldassarre, Massi Pontil, Arthur Gretton
+icml-2012-166 | Monte Carlo Bayesian Reinforcement Learning | http://icml.cc/2012/papers/582.pdf | author:Yi Wang, Kok Sung Won, David Hsu, Wee Sun Lee
+icml-2012-167 | Multi-level Lasso for Sparse Multi-task Regression | http://icml.cc/2012/papers/207.pdf | author:Aurelie Lozano, Grzegorz Swirszcz
+icml-2012-168 | Multiple Kernel Learning from Noisy Labels by Stochastic Programming | http://icml.cc/2012/papers/127.pdf | author:Tianbao Yang, Mehrdad Mahdavi, Rong Jin, Lijun Zhang, Yang Zhou, 
+icml-2012-169 | Near-Optimal BRL using Optimistic Local Transitions | http://icml.cc/2012/papers/76.pdf | author:Mauricio Araya, Olivier Buffet, Vincent Thomas
+icml-2012-170 | No-Regret Learning in Extensive-Form Games with Imperfect Recall | http://icml.cc/2012/papers/58.pdf | author:Marc Lanctot, Richard Gibson, Neil Burch, Michael Bowling
+icml-2012-171 | Nonparametric Link Prediction in Dynamic Networks | http://icml.cc/2012/papers/828.pdf | author:Purnamrita Sarkar, Deepayan Chakrabarti, Michael Jordan
+icml-2012-172 | Nonparametric variational inference | http://icml.cc/2012/papers/360.pdf | author:Samuel Gershman, Matt Hoffman, David Blei
+icml-2012-173 | On Local Regret | http://icml.cc/2012/papers/803.pdf | author:Michael Bowling, Martin Zinkevich
+icml-2012-174 | On causal and anticausal learning | http://icml.cc/2012/papers/625.pdf | author:Bernhard Schoelkopf, Dominik Janzing, Jonas Peters, Eleni Sgouritsa, Kun Zhang, Joris Mooij
+icml-2012-175 | On multi-view feature learning | http://icml.cc/2012/papers/105.pdf | author:Roland Memisevic
+icml-2012-176 | On the Difficulty of Nearest Neighbor Search | http://icml.cc/2012/papers/580.pdf | author:Junfeng He, Sanjiv Kumar, Shih-Fu Chang
+icml-2012-177 | On the Equivalence between Herding and Conditional Gradient Algorithms | http://icml.cc/2012/papers/683.pdf | author:Francis Bach, Simon Lacoste-Julien, Guillaume Obozinski
+icml-2012-178 | On the Partition Function and Random Maximum A-Posteriori Perturbations | http://icml.cc/2012/papers/528.pdf | author:Tamir Hazan, Tommi Jaakkola
+icml-2012-179 | On the Sample Complexity of Reinforcement Learning with a Generative Model | http://icml.cc/2012/papers/638.pdf | author:Mohammad Gheshlaghi Azar, Remi Munos, Bert Kappen
+icml-2012-180 | On the Size of the Online Kernel Sparsification Dictionary | http://icml.cc/2012/papers/194.pdf | author:Yi Sun, Faustino Gomez, Juergen Schmidhuber
+icml-2012-181 | On-Line Portfolio Selection with Moving Average Reversion | http://icml.cc/2012/papers/168.pdf | author:Bin Li, Steven C.H. Hoi
+icml-2012-182 | Online Alternating Direction Method | http://icml.cc/2012/papers/577.pdf | author:Huahua Wang, Arindam Banerjee
+icml-2012-183 | Online Bandit Learning against an Adaptive Adversary: from Regret to Policy Regret | http://icml.cc/2012/papers/749.pdf | author:Ofer Dekel, Ambuj Tewari, Raman Arora
+icml-2012-184 | Online Structured Prediction via Coactive Learning | http://icml.cc/2012/papers/717.pdf | author:Pannaga Shivaswamy, Thorsten Joachims
+icml-2012-185 | Optimizing F-measure: A Tale of Two Approaches | http://icml.cc/2012/papers/175.pdf | author:Ye Nan, Kian Ming Chai, Wee Sun Lee, Hai Leong Chieu
+icml-2012-186 | Output Space Search for Structured Prediction | http://icml.cc/2012/papers/587.pdf | author:Janardhan Rao Doppa, Alan Fern, Prasad Tadepalli
+icml-2012-187 | PAC Subset Selection in Stochastic Multi-armed Bandits | http://icml.cc/2012/papers/359.pdf | author:Shivaram Kalyanakrishnan, Ambuj Tewari, Peter Auer, Peter Stone
+icml-2012-188 | PAC-Bayesian Generalization Bound on Confusion Matrix for Multi-Class Classification | http://icml.cc/2012/papers/434.pdf | author:Emilie Morvant, Sokol Koço, Liva Ralaivola
+icml-2012-189 | Parallelizing Exploration-Exploitation Tradeoffs with Gaussian Process Bandit Optimization | http://icml.cc/2012/papers/602.pdf | author:Thomas Desautels, Andreas Krause, Joel Burdick
+icml-2012-190 | Path Integral Policy Improvement with Covariance Matrix Adaptation | http://icml.cc/2012/papers/171.pdf | author:Freek Stulp, Olivier Sigaud
+icml-2012-191 | Plug-in martingales for testing exchangeability on-line | http://icml.cc/2012/papers/808.pdf | author:Valentina Fedorova, Alex Gammerman, Ilia Nouretdinov, Volodya Vovk
+icml-2012-192 | Poisoning Attacks against Support Vector Machines | http://icml.cc/2012/papers/880.pdf | author:Battista Biggio, Blaine Nelson, Pavel Laskov
+icml-2012-193 | Policy Gradients with Variance Related Risk Criteria | http://icml.cc/2012/papers/489.pdf | author:Dotan Di Castro, Aviv Tamar, Shie Mannor
+icml-2012-194 | Predicting Consumer Behavior in Commerce Search | http://icml.cc/2012/papers/863.pdf | author:Or Sheffet, Nina Mishra, Samuel Ieong
+icml-2012-195 | Predicting accurate probabilities with a ranking loss | http://icml.cc/2012/papers/372.pdf | author:Aditya Menon, Xiaoqian Jiang, Shankar Vembu, Charles Elkan, Lucila Ohno-Machado
+icml-2012-196 | Projection-free Online Learning | http://icml.cc/2012/papers/292.pdf | author:Elad Hazan, Satyen Kale
+icml-2012-197 | Quasi-Newton Methods: A New Direction | http://icml.cc/2012/papers/25.pdf | author:Philipp Hennig, Martin Kiefel
+icml-2012-198 | Regularizers versus Losses for Nonlinear Dimensionality Reduction: A Factored View with New Convex Relaxations | http://icml.cc/2012/papers/899.pdf | author:James Neufeld, Yaoliang Yu, Xinhua Zhang, Ryan Kiros, Dale Schuurmans
+icml-2012-199 | Residual Components Analysis | http://icml.cc/2012/papers/114.pdf | author:Alfredo Kalaitzis, Neil Lawrence
+icml-2012-200 | Rethinking Collapsed Variational Bayes Inference for LDA | http://icml.cc/2012/papers/530.pdf | author:Issei Sato, Hiroshi Nakagawa
+icml-2012-201 | Revisiting k-means: New Algorithms via Bayesian Nonparametrics | http://icml.cc/2012/papers/291.pdf | author:Brian Kulis, Michael Jordan
+icml-2012-202 | Robust Classification with Adiabatic Quantum Optimization | http://icml.cc/2012/papers/461.pdf | author:Vasil Denchev, Nan Ding, SVN Vishwanathan, Hartmut Neven
+icml-2012-203 | Robust Multiple Manifold Structure Learning | http://icml.cc/2012/papers/191.pdf | author:Dian Gong, Xuemei Zhao, Gerard Medioni
+icml-2012-204 | Robust PCA in High-dimension: A Deterministic Approach | http://icml.cc/2012/papers/136.pdf | author:Jiashi Feng, Huan Xu, Shuicheng Yan
+icml-2012-205 | Safe Exploration in Markov Decision Processes | http://icml.cc/2012/papers/838.pdf | author:Teodor Mihai Moldovan, Pieter Abbeel
+icml-2012-206 | Scaling Up Coordinate Descent Algorithms for Large ℓ_1 Regularization Problems | http://icml.cc/2012/papers/705.pdf | author:Chad Scherrer, Mahantesh Halappanavar, Ambuj Tewari, David Haglin
+icml-2012-207 | Scene parsing with Multiscale Feature Learning, Purity Trees, and Optimal Covers | http://icml.cc/2012/papers/319.pdf | author:Clément  Farabet, Camille Couprie, Laurent Najman, Yann LeCun
+icml-2012-208 | Semi-Supervised Collective Classification via Hybrid Label Regularization | http://icml.cc/2012/papers/513.pdf | author:Luke McDowell, David Aha
+icml-2012-209 | Semi-Supervised Learning of Class Balance under Class-Prior Change by Distribution Matching | http://icml.cc/2012/papers/437.pdf | author:Marthinus Du Plessis, Masashi Sugiyama
+icml-2012-210 | Sequential Nonparametric Regression | http://icml.cc/2012/papers/781.pdf | author:Haijie Gu, John Lafferty
+icml-2012-211 | Shortest path distance in random k-nearest neighbor graphs | http://icml.cc/2012/papers/545.pdf | author:Morteza Alamgir, Ulrike von Luxburg
+icml-2012-212 | Similarity Learning for Provably Accurate Sparse Linear Classification | http://icml.cc/2012/papers/919.pdf | author:Aurélien Bellet, Amaury Habrard, Marc Sebban
+icml-2012-213 | Small-sample brain mapping: sparse recovery on spatially correlated designs with randomization and clustering | http://icml.cc/2012/papers/688.pdf | author:Gael Varoquaux, Alexandre Gramfort, Bertrand Thirion
+icml-2012-214 | Smoothness and Structure Learning by Proxy | http://icml.cc/2012/papers/819.pdf | author:Benjamin Yackley, Terran Lane
+icml-2012-215 | Sparse Additive Functional and Kernel CCA | http://icml.cc/2012/papers/478.pdf | author:Sivaraman Balakrishnan, Kriti Puniyani, John Lafferty
+icml-2012-216 | Sparse Support Vector Infinite Push | http://icml.cc/2012/papers/664.pdf | author:Alain Rakotomamonjy
+icml-2012-217 | Sparse stochastic inference for latent Dirichlet allocation | http://icml.cc/2012/papers/784.pdf | author:David Mimno, Matt Hoffman, David Blei
+icml-2012-218 | Sparse-GEV: Sparse Latent Space Model for Multivariate Extreme Value Time Serie Modeling | http://icml.cc/2012/papers/404.pdf | author:Yan Liu, Taha Bahadori, Hongfei Li
+icml-2012-219 | Stability of matrix factorization for collaborative filtering | http://icml.cc/2012/papers/233.pdf | author:Yu-Xiang Wang, Huan Xu
+icml-2012-220 | State-Space Inference for Non-Linear Latent Force Models with Application to Satellite Orbit Prediction | http://icml.cc/2012/papers/477.pdf | author:Jouni Hartikainen, Mari Seppänen, Simo Särkkä
+icml-2012-221 | Statistical linear estimation with penalized estimators: an application to reinforcement learning | http://icml.cc/2012/papers/759.pdf | author:Bernardo Avila Pires, Csaba Szepesvari
+icml-2012-222 | Stochastic Smoothing for Nonsmooth Minimizations: Accelerating SGD by Exploiting Structure | http://icml.cc/2012/papers/30.pdf | author:Hua Ouyang, Alexander Gray
+icml-2012-223 | Structured Learning from Partial Annotations | http://icml.cc/2012/papers/753.pdf | author:Xinghua Lou, Fred Hamprecht
+icml-2012-224 | Subgraph Matching Kernels for Attributed Graphs | http://icml.cc/2012/papers/542.pdf | author:Nils Kriege, Petra Mutzel
+icml-2012-225 | Submodular Inference of Diffusion Networks from Multiple Trees | http://icml.cc/2012/papers/281.pdf | author:Manuel Gomez Rodriguez, Bernhard Schölkopf
+icml-2012-226 | The Big Data Bootstrap | http://icml.cc/2012/papers/861.pdf | author:Ariel Kleiner, Ameet Talwalkar, Purnamrita Sarkar, Michael Jordan
+icml-2012-227 | The Convexity and Design of Composite Multiclass Losses | http://icml.cc/2012/papers/367.pdf | author:Mark Reid, Robert Williamson, Peng Sun
+icml-2012-228 | The Greedy Miser: Learning under Test-time Budgets | http://icml.cc/2012/papers/592.pdf | author:Zhixiang Xu, Kilian Weinberger, Olivier Chapelle
+icml-2012-229 | The Kernelized Stochastic Batch Perceptron | http://icml.cc/2012/papers/493.pdf | author:Andrew Cotter, Shai Shalev-Shwartz, Nathan Srebro
+icml-2012-230 | The Landmark Selection Method for Multiple Output Prediction | http://icml.cc/2012/papers/525.pdf | author:Krishnakumar Balasubramanian, Guy Lebanon
+icml-2012-231 | The Most Persistent Soft-Clique in a Set of Sampled Graphs | http://icml.cc/2012/papers/323.pdf | author:Novi Quadrianto, Chao Chen, Christoph Lampert
+icml-2012-232 | The Nonparametric Metadata Dependent Relational Model | http://icml.cc/2012/papers/771.pdf | author:Dae Il Kim, Michael Hughes, Erik Sudderth
+icml-2012-233 | Tighter Variational Representations of f-Divergences via Restriction to Probability Measures | http://icml.cc/2012/papers/361.pdf | author:Avraham Ruderman, Mark Reid, Darío García-García, James Petterson
+icml-2012-234 | Total Variation and Euler's Elastica for Supervised Learning | http://icml.cc/2012/papers/229.pdf | author:Tong Lin, Hanlin Xue, Ling Wang, Hongbin Zha
+icml-2012-235 | Training Restricted Boltzmann Machines on Word Observations | http://icml.cc/2012/papers/364.pdf | author:George Dahl, Ryan Adams, Hugo Larochelle
+icml-2012-236 | TrueLabel + Confusions: A Spectrum of Probabilistic Models in Analyzing Multiple Ratings | http://icml.cc/2012/papers/123.pdf | author:Chao Liu, Yi-Min Wang
+icml-2012-237 | Two Manifold Problems with Applications to Nonlinear System Identification | http://icml.cc/2012/papers/338.pdf | author:Byron Boots, Geoff Gordon
+icml-2012-238 | Unachievable Region in Precision-Recall Space and Its Effect on Empirical Evaluation | http://icml.cc/2012/papers/349.pdf | author:Kendrick Boyd, Jesse Davis, David Page, Vitor Santos Costa
+icml-2012-239 | Using CCA to improve CCA: A new spectral method for estimating vector models of words | http://icml.cc/2012/papers/763.pdf | author:Paramveer Dhillon, Jordan Rodu, Dean Foster, Lyle Ungar
+icml-2012-240 | Utilizing Static Analysis and Code Generation to Accelerate Neural Networks | http://icml.cc/2012/papers/903.pdf | author:Lawrence McAfee, Kunle Olukotun
+icml-2012-241 | Variance Function Estimation in High-dimensions | http://icml.cc/2012/papers/722.pdf | author:Mladen Kolar, James Sharpnack
+icml-2012-242 | Variational Bayesian Inference with Stochastic Search | http://icml.cc/2012/papers/687.pdf | author:John Paisley, David Blei, Michael Jordan
+icml-2012-243 | Variational Inference in Non-negative Factorial Hidden Markov Models for Efficient Audio Source Separation | http://icml.cc/2012/papers/924.pdf | author:Gautham Mysore, Maneesh Sahani

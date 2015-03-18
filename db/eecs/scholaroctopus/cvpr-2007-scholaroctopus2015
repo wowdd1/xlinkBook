@@ -1,0 +1,90 @@
+cvpr-2007-1 | 3D Occlusion Inference from Silhouette Cues | http://www.cs.unc.edu/%7Emarc/pubs/GuanCVPR07subm.pdf | author:Li Guan, Jean-Sebastien Franco, and Marc Pollefeys
+cvpr-2007-2 | 3D Probabilistic Feature Point Model for Object Detection and Recognition | http://gravis.cs.unibas.ch/publications/2007/CVPR07_Romdhani.pdf | author:Sami Romdhani and Thomas Vetter
+cvpr-2007-3 | A Benchmark for the Comparison of 3-D Motion Segmentation Algorithms | http://www.cis.jhu.edu/~rvidal/publications/cvpr07-benchmark.pdf | author:Roberto Tron and Rene Vidal
+cvpr-2007-4 | A Multi-Scale Tikhonov Regularization Scheme for Implicit Surface Modelling | http://appsrv.cse.cuhk.edu.hk/%7Ejkzhu/pdfs/jk_cvpr07_tr.pdf | author:Jianke Zhu, Steven C.H. Hoi, and Michael R. Lyu
+cvpr-2007-5 | A Nonparametric Treatment for Location/Segmentation Based Visual Tracking | http://www.cs.jhu.edu/~lelu/publication/CVPR07_LuHage_nonparametrictracking.pdf | author:Le Lu and Gregory Hager
+cvpr-2007-6 | A Practical Algorithm for Linfty Triangulation with Outliers | http://users.rsise.anu.edu.au/~hongdong/Linfty_CameraReady_ver3.9.pdf | author:Hongdong Li
+cvpr-2007-7 | A Topological Approach to Hierarchical Segmentation using Mean Shift  | http://people.csail.mit.edu/sparis/publi/2007/cvpr/Paris_07_A_Topogical_Approach.pdf | author:Sylvain Paris and Fredo Durand
+cvpr-2007-8 | A contextual dissimilarity measure for accurate and efficient image search | http://lear.inrialpes.fr/pubs/2007/JHS07/jegou_cdm.pdf | author:Herve Jegou, Hedi Harzallah, and Cordelia Schmid
+cvpr-2007-9 | Accurate Object Detection with Deformable Shape Models Learnt from Images | http://lear.inrialpes.fr/pubs/2007/FJS07/FJS07.pdf | author:Vittorio Ferrari, Frederic Jurie, and Cordelia Schmid
+cvpr-2007-10 | Accurate Object Localization with Shape Masks | http://lear.inrialpes.fr/pubs/2007/MS07a/MarszalekSchmid-CVPR07-ShapeMasks.pdf | author:Marcin Marszalek and Cordelia Schmid
+cvpr-2007-11 | Approximate Nearest Subspace Search with Applications to Pattern Recognition  | http://www.wisdom.weizmann.ac.il/%7Evision/ANS/BHZM_CVPR2007.pdf | author:Ronen Basri, Tal Hassner, and Lihi Zelnik-Manor
+cvpr-2007-12 | Artificial Complex Cells via the Tropical Semiring | http://www.cs.tau.ac.il/~wolf/papers/maxplus.pdf | author:Lior Wolf and Moshe Guttmann
+cvpr-2007-13 | Autocalibration via Rank-Constrained Estimation of the Absolute Quadric | http://vision.ucsd.edu/kriegman-grp/papers/cvpr07d.pdf | author:Manmohan Chandraker, Sameer Agarwal, Fredrik Kahl, David Nister, and David Kriegman
+cvpr-2007-14 | Beyond Local Appearance: Category Recognition from Pairwise Interactions of Simple Features | http://www.cs.cmu.edu/%7Erahuls/pub/cvpr2007-shape-rahuls.pdf | author:Marius Leordeanu, Martial Hebert, and Rahul Sukthankar
+cvpr-2007-15 | Bottom-up Recognition and Parsing of the Human Body | http://www.cis.upenn.edu/%7Ejshi/papers/A2553.pdf | author:Praveen Srinivasan and Jianbo Shi
+cvpr-2007-16 | Classifying Video with Kernel Dynamic Textures | http://www.svcl.ucsd.edu/publications/conference/2007/cvpr07/cvpr07_kdytex.pdf | author:Antoni Chan and Nuno Vasconcelos
+cvpr-2007-17 | Composite Models of Objects and Scenes for Category Recognition | http://www.cs.cornell.edu/~crandall/papers/composite07cvpr.pdf | author:David Crandall and Daniel Huttenlocher
+cvpr-2007-18 | Consistent Temporal Variations in Many Outdoor Scenes | http://www.cse.wustl.edu/~jacobsn/papers/cvpr_2007/jacobs2007amos.pdf | author:Nathan Jacobs, Nathaniel Roman, and Robert Pless
+cvpr-2007-19 | Contextual Identity Recognition in Personal Photo Albums | http://robotics.stanford.edu/~drago/Papers/cvpr2007.pdf | author:Dragomir Anguelov, Kuang-Chih Lee, Salih Burak Gokturk, and Baris Sumengen
+cvpr-2007-20 | Detailed Human Shape and Pose from Images | http://www.cs.brown.edu/%7Ealb/papers/balan07imscape.pdf | author:Alexandru Balan, Leonid Sigal, Michael Black, James Davis, and Horst Haussecker
+cvpr-2007-21 | Detecting specular surfaces on natural images | http://www.vision.caltech.edu/savarese/delpozo_savarese_cvpr07.pdf | author:Andrey DelPozo and Silvio Savarese
+cvpr-2007-22 | Detector Ensemble | http://www.ece.northwestern.edu/%7Esda690/Ensemble_CVPR07.pdf | author:Shengyang Dai, Ming Yang, Ying Wu, and Aggelos Katsaggelos
+cvpr-2007-23 | Differential Camera Tracking through Linearizing the Local Appearance Manifold | http://www.cs.unc.edu/%7Emarc/pubs/HuaCVPR07.pdf | author:Hua Yang, Marc Pollefeys, Greg Welch, Jan-Michael Frahm, and Adrian Ilie
+cvpr-2007-24 | Discriminant Interest Points are Stable | http://www.svcl.ucsd.edu/publications/conference/2007/cvpr07/cvpr2007_discsalstability.pdf | author:Dashan Gao and Nuno Vasconcelos
+cvpr-2007-25 | Efficient Belief Propagation for Vision Using Linear Constraint Nodes | http://www.cs.cmu.edu/%7Ebpotetz/Publications/bpotetz_ConstraintNodes_cvpr07.pdf | author:Brian Potetz
+cvpr-2007-26 | Efficient MRF Deformation Model for Non-Rigid Image Matching | http://cmp.felk.cvut.cz/~shekhovt/publications/Shekhovtsov-TR-2006-08.pdf | author:Alexander Shekhovtsov, Ivan Kovtun, and Vaclav Hlavac
+cvpr-2007-27 | Efficient new-view synthesis using pairwise dictionary priors | http://www.robots.ox.ac.uk/~vgg/publications/papers/woodford07.pdf | author:Oliver Woodford, Ian Reid, and Andrew Fitzgibbon
+cvpr-2007-28 | Element Rearrangement for Tensor-Based Subspace Learning | http://www.ee.columbia.edu/ln/dvmm/publications/07/tensor_cvpr07.pdf | author:Shuicheng Yan, Dong Xu, Stephen Lin, Thomas Huang, and Shih-Fu Chang
+cvpr-2007-29 | Face Recognition Using Kernel Ridge Regression | http://impca.cs.curtin.edu.au/pubs/2007/conferences/an_liu_venkatesh_cvpr07.pdf | author:Senjian An, Wanquan Liu, and Svetha Venkatesh
+cvpr-2007-30 | Fast Keypoint Recognition in Ten Lines of Code | http://cvlab.epfl.ch/publications/publications/2007/OzuysalFL07.pdf | author:Mustafa Ozuysal, Pascal Fua, and Vincent Lepetit
+cvpr-2007-31 | Fast, Approximately Optimal Solutions for Single and Dynamic MRFs | http://www.csd.uoc.gr/%7Etziritas/papers/CVPR07_FastPD.pdf | author:Nikos Komodakis, Georgios Tziritas, and Nikos Paragios
+cvpr-2007-32 | Flash Cut: Foreground Extraction with Flash and No-flash Image Pairs | http://research.microsoft.com/~jiansun/papers/Flashcut_CVPR07.pdf | author:Jian Sun, Sing Bing Kang, Zongben Xu, Xiaoou Tang, and Heung-Yeung Shum
+cvpr-2007-33 | Flexible Object Models for Category-Level 3D Object Recognition | http://lear.inrialpes.fr/pubs/2007/KSP07/akash_cvpr.pdf | author:Akash Kushal, Cordelia Schmid, and Jean Ponce
+cvpr-2007-34 | Harmony in Motion | http://www.ee.technion.ac.il/%7Eyoav/publications/Zohar_CVPR.pdf | author:Zohar Barzelay and Yoav Schechner
+cvpr-2007-35 | Hierarchical Learning of Curves; Application to Guidewire Localization in Fluoroscopy | http://cs-people.bu.edu/athitsos/publications/barbu_cvpr2007.pdf | author:Adrian Barbu, Vassilis Athitsos, Bogdan Georgescu, Stefan Boehm, Peter Durlak, and Dorin Comaniciu
+cvpr-2007-36 | Illumination Multiplexing within Fundamental Limits | http://www.ee.technion.ac.il/%7Eyoav/publications/Netanel_CVPR.pdf | author:Netanel Ratner and Yoav Y. Schechner
+cvpr-2007-37 | Image Matching via Salient Region Correspondences | http://www.cis.upenn.edu/%7Ejshi/papers/cosaliency_toshev_shi_daniilidis_2007.pdf | author:Alexander Toshev, Jianbo Shi, and Kostas Daniilidis
+cvpr-2007-38 | Image Segmentation by Probabilistic Bottom-Up Aggregation and Cue Integration | http://www.wisdom.weizmann.ac.il/~alpertsh/paper/AlpertGBB07.pdf | author:Sharon Alpert, Meirav Galun, Ronen Basri, and Achi Brandt
+cvpr-2007-39 | Improved Video Registration using Non-Distinctive Local Image Features | http://web.engr.oregonstate.edu/~afern/papers/register-cvpr07.pdf | author:Robin Hess and Alan Fern
+cvpr-2007-40 | In situ Evaluation of Tracking Algorithms using Time Reversed Chains | http://www.umiacs.umd.edu/~aswch/paper/insitu.pdf | author:Hao Wu, Aswin Sankaranarayanan, and Rama Chellappa
+cvpr-2007-41 | Incremental Linear Discriminant Analysis Using Sufficient Spanning Set Approximations | http://svr-www.eng.cam.ac.uk/%7Etkk22/doc/cvpr07_ilda_final.pdf | author:Tae-Kyun Kim, Shu-Fai Wong, Bjorn Stenger, Josef Kittler, and Roberto Cipolla
+cvpr-2007-42 | Inferring Grammar-based Structure Models from 3D Microscopy Data  | http://vision.cs.arizona.edu/schlecht/research/3d_microscopy/pubs/schlecht-2007.pdf | author:Joseph Schlecht, Kobus Barnard, Ekaterina Spriggs, and Barry Pryor
+cvpr-2007-43 | Inferring Temporal Order of Images From 3D Structure  | http://www-static.cc.gatech.edu/%7Ephlosoft/files/schindler07cvpr.pdf | author:Grant Schindler, Frank Dellaert, and Sing Bing Kang
+cvpr-2007-44 | Large scale vision based navigation without an accurate global reconstruction | http://www.zemris.fer.hr/~ssegvic/pubs/cvpr07www.pdf | author:Sinisa Segvic, Anthony Remazeilles, Albert Diosi, and Francois Chaumette
+cvpr-2007-45 | Latent-Dynamic Discriminative Models for Continuous Gesture Recognition | http://groups.csail.mit.edu/vision/vip/papers/morency_cvpr07.pdf | author:Louis-Philippe Morency, Ariadna Quattoni, and Trevor Darrell
+cvpr-2007-46 | Layered Depth Panorama  | http://grail.cs.washington.edu/projects/ldp/ldp_cvpr07.pdf | author:Ke Colin Zheng, Sing Bing Kang, Michael Cohen, and Richard Szeliski
+cvpr-2007-47 | Learning Gaussian Conditional Random Fields for Low-Level Vision | http://www.cs.ucf.edu/%7Emtappen/pubs/cvpr07-gcrf.pdf | author:Marshall Tappen, Ce Liu, William Freeman, and Edward Adelson
+cvpr-2007-48 | Learning Motion Categories using both Semantic and Structural Information | http://svr-www.eng.cam.ac.uk/~tkk22/doc/cvpr07_plsaism_final.pdf | author:Shu-Fai Wong, Tae-Kyun Kim, and Roberto Cipolla
+cvpr-2007-49 | Learning Visual Representations using Images with Captions | http://people.csail.mit.edu/trevor/CVPR_07_camera_6.pdf | author:Ariadna Quattoni, Michael Colllins, and Trevor Darrell
+cvpr-2007-50 | Learning Visual Similarity Measures for Comparing Never Seen Objects | http://lear.inrialpes.fr/pubs/2007/NJ07/NJ07.pdf | author:Eric Nowak and Frederic Jurie
+cvpr-2007-51 | Learning to Detect A Salient Object | http://research.microsoft.com/~jiansun/papers/SalientDetection_CVPR07.pdf | author:Tie Liu, Jian Sun, Nan-Ning Zheng, Xiaoou Tang, and Heung-Yeung Shum
+cvpr-2007-52 | Leveraging temporal, contextual and ordering constraints for recognizing complex activities in video | http://vision.ucsd.edu/kriegman-grp/papers/cvpr07b.pdf | author:Benjamin Laxton, Jongwoo Lim, and David Kriegman
+cvpr-2007-53 | Mapping Natural Image Patches by Explicit and Implicit Manifolds | http://www.stat.ucla.edu/~sczhu/papers/Conf_2007/Manifold_CVPR07.pdf | author:Shi Kent and Zhu Song-Chun
+cvpr-2007-54 | Microphone Arrays as Generalized Cameras for Integrated Audio Visual Processing  | http://www.umiacs.umd.edu/%7Eramani/pubs/odonovan_cvpr_2523.pdf | author:Adam O'Donovan, Ramani Duraiswami, and Jan Neumann
+cvpr-2007-55 | Model-Guided Segmentation of 3D Neuroradiological Image Using Statistical Surface Wavelet Model | http://www.comp.nus.edu.sg/~tants/Paper/CVPR07-segmentation.pdf | author:Yang Li, Tiow-Seng Tan, Ihar Volkau, and Wieslaw Nowinski
+cvpr-2007-56 | Modeling Appearances with Low-Rank SVM | http://www.cs.tau.ac.il/~wolf/papers/lrsvm.pdf | author:Lior Wolf, Hueihan Jhuang, and Tamir Hazan
+cvpr-2007-57 | Multiple View Image Reconstruction: A Harmonic Approach | http://www.cs.umd.edu/~domke/papers/2007cvpr.pdf | author:Justin Domke and Yiannis Aloimonos
+cvpr-2007-58 | On Stable Evolution of Parametric Curves | http://www.ee.iitb.ac.in/uma/~krishnan/krishnan_curve07.pdf | author:Srikrishnan V, Subhasis Chaudhuri, Sumantra Dutta, and Daniel Sevcovic
+cvpr-2007-59 | Optimal Step Nonrigid ICP Algorithms For Surface Registration | http://gravis.cs.unibas.ch/publications/2007/CVPR07_Amberg.pdf | author:Brian Amberg, Sami Romdhani, and Thomas Vetter
+cvpr-2007-60 | Optimized Color Sampling for Robust Matting | http://research.microsoft.com/~cohen/RobustMattingCVPRFinal.pdf | author:Jue Wang and Michael Cohen
+cvpr-2007-61 | Physics-Based Person Tracking Using Simplified Lower-Body Dynamics | http://www.cs.toronto.edu/%7Efleet/research/Papers/DynamicPeople.pdf | author:Marcus A. Brubaker, David J. Fleet, and Aaron Hertzmann
+cvpr-2007-62 | Progressive Finite Newton Approach To Real-time Nonrigid Surface Detection | http://appsrv.cse.cuhk.edu.hk/%7Ejkzhu/pdfs/jk_cvpr07_pfn.pdf | author:Jianke Zhu and Michael R. Lyu
+cvpr-2007-63 | Projective Factorization of Multiple Rigid-Body Motions | http://www.cis.jhu.edu/~rvidal/publications/cvpr07-multibody.pdf | author:Ting Li, Vinutha Kallem, Dheeraj Singaraju, and Rene Vidal
+cvpr-2007-64 | Pyramid Match Hashing: Sub-Linear Time Indexing Over Partial Correspondences | http://www.cs.utexas.edu/~grauman/papers/grauman_darrell_cvpr2007.pdf | author:Kristen Grauman and Trevor Darrell
+cvpr-2007-65 | Real-Time Plane-Sweeping Stereo with Multiple Sweeping Directions | http://www.cs.unc.edu/%7Emarc/pubs/GallupCVPR07.pdf | author:David Gallup, Jan-Michael Frahm, Philippos Mordohai, Qingxiong Yang, and Marc Pollefeys
+cvpr-2007-66 | Recognizing objects by piecing together the Segmentation Puzzle | http://www.cis.upenn.edu/%7Ejshi/papers/cvpr07_final.pdf | author:Timothee Cour and Jianbo Shi
+cvpr-2007-67 | Region Classification with Markov Field Aspect Models | http://lear.inrialpes.fr/pubs/2007/VT07/verbeek07cvpr.pdf | author:Jakob Verbeek and Bill Triggs
+cvpr-2007-68 | Resolving the Generalized Bas-Relief Ambiguity by Entropy Minimization | http://vision.ucsd.edu/kriegman-grp/papers/cvpr07a.pdf | author:Neil Alldrin, Satya Mallick, and David Kriegman
+cvpr-2007-69 | Robust Metric Reconstruction from Challenging Video Sequences | http://www.cad.zju.edu.cn/home/gfzhang/papers/zhang_cvpr2007.pdf | author:Guofeng Zhang, Xueying Qin, Wei Hua, Tien-Tsin Wong, Pheng-Ann Heng, and Hujun Bao
+cvpr-2007-70 | Segmenting Motions of Different Types by Unsupervised Manifold Clustering | http://www.cis.jhu.edu/~rvidal/publications/cvpr07-LLMC.pdf | author:Alvina Goh and Rene Vidal Vidal
+cvpr-2007-71 | Semantic Hierarchies for Visual Object Recognition | http://lear.inrialpes.fr/pubs/2007/MS07/MarszalekSchmid-CVPR07-SemanticHierarchies.pdf | author:Marcin Marszalek and Cordelia Schmid
+cvpr-2007-72 | Sensor noise modeling using the Skellam distribution: Application to the color edge detection | http://rcv.kaist.ac.kr/~scv/bbs/data/publication/CVPR07Hwang_SkellamNoiseModeling.pdf | author:Hwang Youngbae, Kim Jun-Sik, and Kweon In-So
+cvpr-2007-73 | ShadowCuts: Photometric Stereo with Shadows | http://vision.ucsd.edu/kriegman-grp/papers/cvpr07c.pdf | author:Manmohan Chandraker, Sameer Agarwal, and David Kriegman
+cvpr-2007-74 | Simultaneous Covariance Driven Correspondence (CDC) and Transformation Estimation | http://www.cs.rpi.edu/~sofka/pdfs/sofka-cvpr07.pdf | author:Michal Sofka, Gehua Yang, and Charles Stewart
+cvpr-2007-75 | Single Image Motion Deblurring Using Transparency | http://www.cse.cuhk.edu.hk/%7Eleojia/all_final_papers/motion_deblur_cvpr07.pdf | author:Jiaya Jia
+cvpr-2007-76 | Skin Detail Analysis for Face Recognition | http://gravis.cs.unibas.ch/publications/2007/CVPR07_Pierrard.pdf | author:Jean-Sebastien Pierrard and Thomas Vetter
+cvpr-2007-77 | Soft Edge Smoothness Prior for Alpha Channel Super Resolution | http://www.ece.northwestern.edu/%7Esda690/softcut_CVPR07.pdf | author:Shengyang Dai, Mei Han, Wei Xu, Ying Wu, and Yihong Gong
+cvpr-2007-78 | Solving Large Scale Binary Quadratic Problems: Spectral Methods vs. Semidefinite Programming | http://www.maths.lth.se/matematiklth/personal/fredrik/olsson_cvpr07.pdf | author:Carl Olsson, Anders Eriksson, and Fredrik Kahl
+cvpr-2007-79 | Spectral Matting  | http://people.csail.mit.edu/alevin/papers/spectral-matting-levin-etal-cvpr07.pdf | author:Anat Levin, Alex Rav Acha, and Dani Lischinski
+cvpr-2007-80 | Statistics of Infrared Images  | http://www.dgp.toronto.edu/~nmorris/IR/irpaper-final.pdf | author:Nigel Morris, Shai Avidan, Wojciech Matusik, and Hanspeter Pfister
+cvpr-2007-81 | Topology Preserving Log-Unbiased Nonlinear Image Registration: Theory and Implementation  | http://www.math.ucla.edu/~yanovsky/papers/CVPR2007.pdf | author:Igor Yanovsky, Paul Thompson, Stanley Osher, and Alex Leow
+cvpr-2007-82 | Towards Automatic Photometric Correction of Casually Illuminated Documents | http://dmn.netlab.uky.edu/~landon/papers/landon_yl_ws_cvpr_07.pdf | author:George V. Landon, Yun Lin, and W. Brent Seales
+cvpr-2007-83 | Tracking as Repeated Figure/Ground Segmentation  | http://ttic.uchicago.edu/~xren/publication/xren_cvpr07_tracking.pdf | author:Xiaofeng Ren and Jitendra Malik
+cvpr-2007-84 | Transfer Learning in Sign language  | http://www.ryanmwhite.com/research/farhadi2007cvpr.pdf | author:Ali Farhadi, David Forsyth, and Ryan White
+cvpr-2007-85 | Unsupervised learning of invariant feature hierarchies with application to object recognition | http://yann.lecun.com/exdb/publis/pdf/ranzato-cvpr-07.pdf | author:Marc'Aurelio Ranzato, Fu-Jie Huang, Y-Lan Boureau, and Yann LeCun
+cvpr-2007-86 | Using Geometry Invariants for Camera Response Function Estimation | http://www.ee.columbia.edu/ln/dvmm/publications/07/cvpr07_TTNG_final.pdf | author:Tian-Tsong Ng, Shih-Fu Chang, and Mao-Pei Tsui
+cvpr-2007-87 | Utilizing Variational Optimization to Learn Markov Random Fields | http://www.cs.ucf.edu/%7Emtappen/pubs/cvpr07-tappen-mrf-learning.pdf | author:Marshall Tappen
+cvpr-2007-88 | Variational Distance-Dependent Image Restoration | http://www.ee.technion.ac.il/%7Eyoav/publications/KaftoryCVPR.pdf | author:Ran Kaftory, Yoav Schechner, and Yehoshua Zeevi
+cvpr-2007-89 | Viewpoint-Coded Structured Light | http://www1.cs.columbia.edu/~ravir/cvpr07.pdf | author:Mark Young, Erik Beeson, James Davis, Szymon Rusinkiewicz, and Ravi Ramamoorthi
+cvpr-2007-90 | What makes a good model of natural images ? | http://www.cs.huji.ac.il/%7Eyweiss/foe-final.pdf | author:Yair Weiss and Bill Freeman

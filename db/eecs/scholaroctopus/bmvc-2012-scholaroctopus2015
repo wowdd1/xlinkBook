@@ -1,0 +1,132 @@
+bmvc-2012-1 | 6D Relocalisation for RGBD Cameras Using Synthetic View Regression | http://www.bmva.org/bmvc/2012/BMVC/paper113/paper113.pdf | author:Andrew Gee, Walterio Mayol-cuevas
+bmvc-2012-2 | A Closed Form Solution for the Self-Calibration of Heterogeneous Sensors | http://www.bmva.org/bmvc/2012/BMVC/paper025/paper025.pdf | author:Marco Crocco, Alessio Del Bue, Igor Barros Barbosa, Vittorio Murino
+bmvc-2012-3 | A Multi-layer Composite Model for Human Pose Estimation | http://www.bmva.org/bmvc/2012/BMVC/paper116/paper116.pdf | author:Kun Duan, Dhruv Batra, David Crandall
+bmvc-2012-4 | A Phase Field Method for Tomographic Reconstruction from Limited Data | http://www.bmva.org/bmvc/2012/BMVC/paper120/paper120.pdf | author:Russell J. Hewett, Ian Jermyn, Michael Heath, Farzad Kamalabadi
+bmvc-2012-5 | A Training-free Classification Framework for Textures, Writers, and Materials | http://www.bmva.org/bmvc/2012/BMVC/paper093/paper093.pdf | author:Radu Timofte, Luc Van Gool
+bmvc-2012-6 | A Videography Analysis Framework for Video Retrieval and Summarization | http://www.bmva.org/bmvc/2012/BMVC/paper126/paper126.pdf | author:Kang Li, Sangmin Oh, A.g. Amitha Perera, Yun Fu
+bmvc-2012-7 | A local Rayleigh model with spatial scale selection for ultrasound image segmentation | http://www.bmva.org/bmvc/2012/BMVC/paper084/paper084.pdf | author:Djamal Boukerroui
+bmvc-2012-8 | A method for improving consistency in photometric databases | http://www.bmva.org/bmvc/2012/BMVC/paper059/paper059.pdf | author:Felipe Hernández-rodríguez, Mario Castelán
+bmvc-2012-9 | Adaptive hierarchical contexts for object recognition with conditional mixture of trees | http://www.bmva.org/bmvc/2012/BMVC/paper121/paper121.pdf | author:Billy Peralta, Pablo Espinace, Alvaro Soto
+bmvc-2012-10 | An Assessment of Visual Discomfort Caused by Motion-in-Depth in Stereoscopic 3D Video | http://www.bmva.org/bmvc/2012/BMVC/paper065/paper065.pdf | author:Sang-hyun Cho, Hang-bong Kang
+bmvc-2012-11 | An Evaluation of Local Shape Descriptors in Probabilistic Volumetric Scenes | http://www.bmva.org/bmvc/2012/BMVC/paper046/paper046.pdf | author:Maria Restrepo, Joseph Mundy
+bmvc-2012-12 | An Object Co-occurrence Assisted Hierarchical Model for Scene Understanding | http://www.bmva.org/bmvc/2012/BMVC/paper081/paper081.pdf | author:Xin Li, Yuhong Guo
+bmvc-2012-13 | Automatic and Efficient Long Term Arm and Hand Tracking for Continuous Sign Language TV Broadcasts | http://www.bmva.org/bmvc/2012/BMVC/paper004/paper004.pdf | author:Tomas Pfister, James Charles, Mark Everingham, Andrew Zisserman
+bmvc-2012-14 | BiCov: a novel image representation for person re-identification and face verification | http://www.bmva.org/bmvc/2012/BMVC/paper057/paper057.pdf | author:Bingpeng Ma, Yu Su, Frederic Jurie
+bmvc-2012-15 | Binary Pattern Analysis for 3D Facial Action Unit Detection | http://www.bmva.org/bmvc/2012/BMVC/paper119/paper119.pdf | author:Georgia Sandbach, Stefanos Zafeiriou, Maja Pantic
+bmvc-2012-16 | Binocular projection of a random scene | http://www.bmva.org/bmvc/2012/BMVC/paper090/paper090.pdf | author:Miles Hansard
+bmvc-2012-17 | Close-Range Human Detection and Tracking for Head-Mounted Cameras | http://www.bmva.org/bmvc/2012/BMVC/paper008/paper008.pdf | author:Dennis Mitzel, Bastian Leibe
+bmvc-2012-18 | Comparing Visual Feature Coding for Learning Disjoint Camera Dependencies | http://www.bmva.org/bmvc/2012/BMVC/paper094/paper094.pdf | author:Xiatian Zhu, Shaogang Gong, Chen Change Loy
+bmvc-2012-19 | Context Aware Keypoint Extraction for Robust Image Representation | http://www.bmva.org/bmvc/2012/BMVC/paper100/paper100.pdf | author:Pedro Martins, Paulo Carvalho, Carlo Gatta
+bmvc-2012-20 | Contour-HOG: A Stub Feature based Level Set Method for Learning Object Contour | http://www.bmva.org/bmvc/2012/BMVC/paper015/paper015.pdf | author:Zhi Yang, Yu Kong, Yun Fu
+bmvc-2012-21 | Corner Matching Refinement for Monocular Pose Estimation | http://www.bmva.org/bmvc/2012/BMVC/paper038/paper038.pdf | author:Dinesh Gamage, Tom Drummond
+bmvc-2012-22 | Cross-View Action Recognition via a Transferable Dictionary Pair | http://www.bmva.org/bmvc/2012/BMVC/paper125/paper125.pdf | author:Jingjing Zheng, Zhuolin Jiang, Jonathon Phillips, Rama Chellappa
+bmvc-2012-23 | Curvature Based Robust Descriptors | http://www.bmva.org/bmvc/2012/BMVC/paper041/paper041.pdf | author:Farlin Mohideen, Ranga Rodrigo
+bmvc-2012-24 | Data-Driven Scene Understanding from 3D Models | http://www.bmva.org/bmvc/2012/BMVC/paper128/paper128.pdf | author:Scott Satkin, Jason Lin, Martial Hebert
+bmvc-2012-25 | Deformable 3D Reconstruction with an Object Database | http://www.bmva.org/bmvc/2012/BMVC/paper133/paper133.pdf | author:Pablo Alcantarilla, Adrien Bartoli
+bmvc-2012-26 | Deformable Tracking of Textured Curvilinear Objects | http://www.bmva.org/bmvc/2012/BMVC/paper005/paper005.pdf | author:Nicolas Padoy, Gregory Hager
+bmvc-2012-27 | Dense Active Appearance Models Using a Bounded Diameter Minimum Spanning Tree | http://www.bmva.org/bmvc/2012/BMVC/paper131/paper131.pdf | author:Robert Anderson, Bjorn Stenger, Roberto Cipolla
+bmvc-2012-28 | Depiction Inviariant Object Matching | http://www.bmva.org/bmvc/2012/BMVC/paper056/paper056.pdf | author:Anupriya Balikai, Peter Hall
+bmvc-2012-29 | Depth Correction for Depth Camera From Planarity | http://www.bmva.org/bmvc/2012/BMVC/paper043/paper043.pdf | author:Amira Belhedi, Adrien Bartoli, Vincent Gay-bellile, Steve Bourgeois, Patrick Sayd, Kamel Hamrouni
+bmvc-2012-30 | Detecting planes and estimating their orientation from a single image | http://www.bmva.org/bmvc/2012/BMVC/paper031/paper031.pdf | author:Osian Haines, Andrew Calway
+bmvc-2012-31 | Detection and Tracking of Occluded People | http://www.bmva.org/bmvc/2012/BMVC/paper009/paper009.pdf | author:Siyu Tang, Mykhaylo Andriluka, Bernt Schiele
+bmvc-2012-32 | Discriminative Hough Forests for Object Detection | http://www.bmva.org/bmvc/2012/BMVC/paper040/paper040.pdf | author:Paul Wohlhart, Samuel Schulter, Martin Köstinger, Peter Roth, Horst Bischof
+bmvc-2012-33 | Divergence-Based One-Class Classification Using Gaussian Processes | http://www.bmva.org/bmvc/2012/BMVC/paper050/paper050.pdf | author:Paul Bodesheim, Erik Rodner, Alexander Freytag, Joachim Denzler
+bmvc-2012-34 | Do We Need More Training Data or Better Models for Object Detection? | http://www.bmva.org/bmvc/2012/BMVC/paper080/paper080.pdf | author:Xiangxin Zhu, Carl Vondrick, Deva Ramanan, Charless Fowlkes
+bmvc-2012-35 | Doo-Sabin Surface Models with Biomechanical Constraints for Kalman Filter Based Endocardial Wall Tracking in 3D+T Echocardiography | http://www.bmva.org/bmvc/2012/BMVC/paper033/paper033.pdf | author:Engin Dikici, Fredrik Orderud, Gabriel Kiss, Anders Thorstensen, Hans Torp
+bmvc-2012-36 | Dynamical Pose Filtering for Mixtures of Gaussian Processes | http://www.bmva.org/bmvc/2012/BMVC/paper007/paper007.pdf | author:Martin Fergie, Aphrodite Galata
+bmvc-2012-37 | Efficient Exemplar Word Spotting | http://www.bmva.org/bmvc/2012/BMVC/paper067/paper067.pdf | author:Jon Almazán, Albert Gordo, Alicia Fornés, Ernest Valveny
+bmvc-2012-38 | Efficient Kernels Couple Visual Words Through Categorical Opponency | http://www.bmva.org/bmvc/2012/BMVC/paper082/paper082.pdf | author:Ioannis Alexiou, Anil Bharath
+bmvc-2012-39 | Efficient Learning-based Image Enhancement: Application to Super-resolution and Compression Artifact Removal | http://www.bmva.org/bmvc/2012/BMVC/paper014/paper014.pdf | author:Younghee Kwon, Kwang In Kim, Jin Kim, Christian Theobalt
+bmvc-2012-40 | Efficient Point Feature Tracking based on Self-aware Distance Transform | http://www.bmva.org/bmvc/2012/BMVC/paper032/paper032.pdf | author:Min-gyu Park, Kuk-jin Yoon
+bmvc-2012-41 | Efficient and Scalable Depthmap Fusion | http://www.bmva.org/bmvc/2012/BMVC/paper034/paper034.pdf | author:Enliang Zheng, Enrique Dunn, Rahul Raguram, Jan-michael Frahm
+bmvc-2012-42 | Enhancing Exemplar SVMs using Part Level Transfer Regularization | http://www.bmva.org/bmvc/2012/BMVC/paper079/paper079.pdf | author:Yusuf Aytar, Andrew Zisserman
+bmvc-2012-43 | Exemplar Driven Character Recognition in the Wild | http://www.bmva.org/bmvc/2012/BMVC/paper013/paper013.pdf | author:Karthik Sheshadri, Santosh Divvala
+bmvc-2012-44 | Exemplar-Based Colour Constancy | http://www.bmva.org/bmvc/2012/BMVC/paper026/paper026.pdf | author:Hamid Reza Vaezi Joze, Mark Drew
+bmvc-2012-45 | Exploiting relationship between attributes for improved face verification | http://www.bmva.org/bmvc/2012/BMVC/paper027/paper027.pdf | author:Fengyi Song, Xiaoyang Tan, Songcan Chen
+bmvc-2012-46 | Face Alignment Using a Ranking Model based on Regression Trees | http://www.bmva.org/bmvc/2012/BMVC/paper118/paper118.pdf | author:Hua Gao, Hazim Ekenel, Rainer Stiefelhagen
+bmvc-2012-47 | Face Recognition using Local Quantized Patterns | http://www.bmva.org/bmvc/2012/BMVC/paper099/paper099.pdf | author:Sibt Ul Hussain, Thibault Napoléon, Frederic Jurie
+bmvc-2012-48 | Fast Line Description for Line-based SLAM | http://www.bmva.org/bmvc/2012/BMVC/paper083/paper083.pdf | author:Keisuke Hirose, Hideo Saito
+bmvc-2012-49 | Fast Non-uniform Deblurring using Constrained Camera Pose Subspace | http://www.bmva.org/bmvc/2012/BMVC/paper136/paper136.pdf | author:Zhe Hu, Ming-hsuan Yang
+bmvc-2012-50 | Fast Pedestrian Detection by Cascaded Random Forest with Dominant Orientation Templates | http://www.bmva.org/bmvc/2012/BMVC/paper058/paper058.pdf | author:Danhang Tang, Yang Liu, Tae-kyun Kim
+bmvc-2012-51 | Fast and Robust Surface Normal Integration by a Discrete Eikonal Equation | http://www.bmva.org/bmvc/2012/BMVC/paper106/paper106.pdf | author:Silvano Galliani, Michael Breuss, Yong Chul Ju
+bmvc-2012-52 | Feature Mining for Localised Crowd Counting | http://www.bmva.org/bmvc/2012/BMVC/paper021/paper021.pdf | author:Ke Chen, Chen Change Loy, Shaogang Gong, Tony Xiang
+bmvc-2012-53 | Finding Groups of Duplicate Images In Very Large Dataset | http://www.bmva.org/bmvc/2012/BMVC/paper105/paper105.pdf | author:Winn Voravuthikunchai, Bruno Cremilleux, Frederic Jurie
+bmvc-2012-54 | Fine-Grained Categorization for 3D Scene Understanding | http://www.bmva.org/bmvc/2012/BMVC/paper036/paper036.pdf | author:Michael Stark, Jonathan Krause, Bojan Pepik, David Meger, James Little, Bernt Schiele, Daphne Koller
+bmvc-2012-55 | Fixing the Locally Optimized RANSAC | http://www.bmva.org/bmvc/2012/BMVC/paper095/paper095.pdf | author:Karel Lebeda, Ji?í Matas, Ondrej Chum
+bmvc-2012-56 | Fusing Structured Light Consistency and Helmholtz Normals for 3D Reconstruction | http://www.bmva.org/bmvc/2012/BMVC/paper108/paper108.pdf | author:Michael Weinmann, Roland Ruiters, Aljosa Osep, Christopher Schwartz, Reinhard Klein
+bmvc-2012-57 | Genetic Programming-Evolved Spatio-Temporal Descriptor for Human Action Recognition | http://www.bmva.org/bmvc/2012/BMVC/paper018/paper018.pdf | author:Li Liu, Ling Shao, Peter Rockett
+bmvc-2012-58 | Gesture-based Object Recognition using Histograms of Guiding Strokes | http://www.bmva.org/bmvc/2012/BMVC/paper044/paper044.pdf | author:Amir Sadeghipour, Louis-philippe Morency, Stefan Kopp
+bmvc-2012-59 | GlandVision: A Novel Polar Space Random Field Model for Glandular Biological Structure Detection | http://www.bmva.org/bmvc/2012/BMVC/paper042/paper042.pdf | author:Hao Fu, Guoping Qiu, Mohammad Ilyas, Jie Shu
+bmvc-2012-60 | Gradient Edge Map Features for Frontal Face Recognition under Extreme Illumination Changes | http://www.bmva.org/bmvc/2012/BMVC/paper012/paper012.pdf | author:Ognjen Arandjelovi?
+bmvc-2012-61 | Hash-Based Support Vector Machines Approximation for Large Scale Prediction | http://www.bmva.org/bmvc/2012/BMVC/paper086/paper086.pdf | author:Saloua Litayem, Alexis Joly, Nozha Boujemaa
+bmvc-2012-62 | Hierarchical Sparse Spectral Clustering For Image Set Classification | http://www.bmva.org/bmvc/2012/BMVC/paper051/paper051.pdf | author:Arif Mahmood, Ajmal Mian
+bmvc-2012-63 | Higher-order Co-occurrence Features based on Discriminative Co-clusters for Image Classification | http://www.bmva.org/bmvc/2012/BMVC/paper064/paper064.pdf | author:Takumi Kobayashi
+bmvc-2012-64 | Image Classification by Hierarchical Spatial Pooling with Partial Least Squares Analysis | http://www.bmva.org/bmvc/2012/BMVC/paper102/paper102.pdf | author:Jun Zhu, Weijia Zou, Xiaokang Yang, Rui Zhang, Quan Zhou, Wenju Zhang
+bmvc-2012-65 | Image Priors for Image Deblurring with Uncertain Blur | http://www.bmva.org/bmvc/2012/BMVC/paper114/paper114.pdf | author:Daniele Perrone, Avinash  Ravichandran, René Vidal, Paolo Favaro
+bmvc-2012-66 | Image Retrieval for Image-Based Localization Revisited | http://www.bmva.org/bmvc/2012/BMVC/paper076/paper076.pdf | author:Torsten Sattler, Tobias Weyand, Bastian Leibe, Leif Kobbelt
+bmvc-2012-67 | Image Segmentation using Dual Distribution Matching | http://www.bmva.org/bmvc/2012/BMVC/paper074/paper074.pdf | author:Tatsunori Taniai, Viet-quoc Pham, Keita Takahashi, Takeshi Naemura
+bmvc-2012-68 | Image Text Detection Using a Bandlet-Based Edge Detector and Stroke Width Transform | http://www.bmva.org/bmvc/2012/BMVC/paper063/paper063.pdf | author:Ali Mosleh, Nizar Bouguila, A. Ben Hamza
+bmvc-2012-69 | Improved Geometric Verification for Large Scale Landmark Image Collections | http://www.bmva.org/bmvc/2012/BMVC/paper077/paper077.pdf | author:Rahul Raguram, Joseph Tighe, Jan-michael Frahm
+bmvc-2012-70 | Improved Initialization and Gaussian Mixture Pairwise Terms for Dense Random Fields with Mean-field Inference | http://www.bmva.org/bmvc/2012/BMVC/paper073/paper073.pdf | author:Vibhav Vineet, Jonathan Warrell, Paul Sturgess, Philip Torr
+bmvc-2012-71 | Improvements in Joint Domain-Range Modeling for Background Subtraction | http://www.bmva.org/bmvc/2012/BMVC/paper115/paper115.pdf | author:Manjunath Narayana, Allen Hanson, Erik  Learned-miller
+bmvc-2012-72 | Incremental Light Bundle Adjustment | http://www.bmva.org/bmvc/2012/BMVC/paper134/paper134.pdf | author:Vadim Indelman, Richard Roberts, Chris Beall, Frank Dellaert
+bmvc-2012-73 | Indoor Scene Recognition using Task and Saliency-driven Feature Pooling | http://www.bmva.org/bmvc/2012/BMVC/paper098/paper098.pdf | author:Marco Fornoni, Barbara Caputo
+bmvc-2012-74 | Latent SVMs for Human Detection with a Locally Affine Deformation Field | http://www.bmva.org/bmvc/2012/BMVC/paper010/paper010.pdf | author:Lubor Ladický, Philip Torr, Andrew Zisserman
+bmvc-2012-75 | Learning Discriminative Chamfer Regularization | http://www.bmva.org/bmvc/2012/BMVC/paper020/paper020.pdf | author:Pradeep Yarlagadda, Angela Eigenstetter, Björn Ommer
+bmvc-2012-76 | Learning Edge-Specific Kernel Functions For Pairwise Graph Matching | http://www.bmva.org/bmvc/2012/BMVC/paper017/paper017.pdf | author:Michael Donoser, Martin Urschler, Horst Bischof
+bmvc-2012-77 | Learning discriminative space-time actions from weakly labelled videos | http://www.bmva.org/bmvc/2012/BMVC/paper123/paper123.pdf | author:Michael Sapienza, Fabio Cuzzolin, Philip Torr
+bmvc-2012-78 | Learning geometrical transforms between multi camera views using Canonical Correlation Analysis | http://www.bmva.org/bmvc/2012/BMVC/paper047/paper047.pdf | author:Christian Conrad, Rudolf Mester
+bmvc-2012-79 | Learning to rank images using semantic and aesthetic labels | http://www.bmva.org/bmvc/2012/BMVC/paper110/paper110.pdf | author:Naila Murray, Luca Marchesotti, Florent Perronnin
+bmvc-2012-80 | Let the Shape Speak - Discriminative Face Alignment using Conjugate Priors | http://www.bmva.org/bmvc/2012/BMVC/paper130/paper130.pdf | author:Pedro Martins, Rui Caseiro, João Henriques, Jorge Batista
+bmvc-2012-81 | Leveraging over prior knowledge for online learning of visual categories | http://www.bmva.org/bmvc/2012/BMVC/paper087/paper087.pdf | author:Tatiana Tommasi, Francesco Orabona, Mohsen Kaboli, Barbara Caputo
+bmvc-2012-82 | Local Shape Representation in 3D: from Weighted Spherical Harmonics to Spherical Wavelet | http://www.bmva.org/bmvc/2012/BMVC/paper122/paper122.pdf | author:Cheng-jin Du, John G. Ferguson, Philip T. Hawkins, Len R. Stephens, Till Bretschneider
+bmvc-2012-83 | Low-Complexity Single-Image Super-Resolution based on Nonnegative Neighbor Embedding | http://www.bmva.org/bmvc/2012/BMVC/paper135/paper135.pdf | author:Marco Bevilacqua, Aline Roumy, Christine Guillemot, Marie-line Alberi Morel
+bmvc-2012-84 | MCMC Supervision for People Re-identification in Nonoverlapping Cameras | http://www.bmva.org/bmvc/2012/BMVC/paper066/paper066.pdf | author:Boris Meden, Frédéric Lerasle, Patrick Sayd
+bmvc-2012-85 | Manifold-enhanced Segmentation through Random Walks on Linear Subspace Priors | http://www.bmva.org/bmvc/2012/BMVC/paper052/paper052.pdf | author:Pierre-yves Baudin, Noura Azzabou, Pierre Carlier, Nikos Paragios
+bmvc-2012-86 | MaxFlow Revisited: An Empirical Comparison of Maxflow Algorithms for Dense Vision Problems | http://www.bmva.org/bmvc/2012/BMVC/paper061/paper061.pdf | author:Tanmay Verma, Dhruv Batra
+bmvc-2012-87 | Metric Learning from Poses for Temporal Clustering of Human Motion | http://www.bmva.org/bmvc/2012/BMVC/paper049/paper049.pdf | author:Adolfo López-méndez, Juergen Gall, Josep Casas, Luc Van Gool
+bmvc-2012-88 | MoT - Mixture of Trees Probabilistic Graphical Model for Video Segmentation | http://www.bmva.org/bmvc/2012/BMVC/paper072/paper072.pdf | author:Ignas Budvytis, Vijay Badrinarayanan, Roberto Cipolla
+bmvc-2012-89 | Motion Models that Only Work Sometimes | http://www.bmva.org/bmvc/2012/BMVC/paper055/paper055.pdf | author:Cristina Garcia Cifuentes, Marc Sturzel, Frederic Jurie, Gabriel Brostow
+bmvc-2012-90 | Moving Volume KinectFusion | http://www.bmva.org/bmvc/2012/BMVC/paper112/paper112.pdf | author:Henry Roth, Marsette Vona
+bmvc-2012-91 | Multi-camera Pedestrian Detection with Multi-view Bayesian Network Model | http://www.bmva.org/bmvc/2012/BMVC/paper069/paper069.pdf | author:Peixi Peng, Yonghong Tian, Yaowei Wang, Tiejun Huang
+bmvc-2012-92 | Multi-step flow fusion: towards accurate and dense correspondences in long video shots | http://www.bmva.org/bmvc/2012/BMVC/paper107/paper107.pdf | author:Tomas Crivelli, Pierre-henri Conze, Philippe Robert, Matthieu Fradet, Patrick  Perez
+bmvc-2012-93 | Multiple queries for large scale specific object retrieval | http://www.bmva.org/bmvc/2012/BMVC/paper092/paper092.pdf | author:Relja Arandjelovic, Andrew Zisserman
+bmvc-2012-94 | Non-parametric synthesis of laminar volumetric textures from a 2D sample | http://www.bmva.org/bmvc/2012/BMVC/paper054/paper054.pdf | author:Radu Urs, Jean-pierre Da Costa, Jean-marc Leyssale, Geerard Vignoles, Christian Germain
+bmvc-2012-95 | Object Instance Sharing by Enhanced Bounding Box Correspondence | http://www.bmva.org/bmvc/2012/BMVC/paper060/paper060.pdf | author:Santosh Divvala, Alexei Efros, Martial Hebert, Martial Hebert
+bmvc-2012-96 | Object Matching Using Boundary Descriptors | http://www.bmva.org/bmvc/2012/BMVC/paper085/paper085.pdf | author:Ognjen Arandjelovi?
+bmvc-2012-97 | On Cross-Spectral Stereo Matching using Dense Gradient Features | http://www.bmva.org/bmvc/2012/BMVC/paper103/paper103.pdf | author:Peter Pinggera, Toby Breckon, Horst Bischof
+bmvc-2012-98 | One-sided Radial-Fundamental Matrix Estimation | http://www.bmva.org/bmvc/2012/BMVC/paper096/paper096.pdf | author:José Henrique Brito, Christopher Zach, Kevin Koeser, Manuel Ferreira, Marc Pollefeys
+bmvc-2012-99 | Online Bayesian Non-parametrics for Social Group Detection | http://www.bmva.org/bmvc/2012/BMVC/paper111/paper111.pdf | author:Matteo Zanotto, Loris Bazzani, Marco Cristani, Vittorio Murino
+bmvc-2012-100 | Online Feedback for Structure-from-Motion Image Acquisition | http://www.bmva.org/bmvc/2012/BMVC/paper070/paper070.pdf | author:Christof Hoppe, Manfred Klopschitz, Markus Rumpler, Andreas Wendel, Stefan Kluckner, Horst Bischof, Gerhard Reitmayr
+bmvc-2012-101 | PMBP: PatchMatch Belief Propagation for Correspondence Field Estimation | http://www.bmva.org/bmvc/2012/BMVC/paper132/paper132.pdf | author:Frederic Besse, Carsten Rother, Andrew Fitzgibbon, Jan Kautz
+bmvc-2012-102 | Person Re-identification by Attributes | http://www.bmva.org/bmvc/2012/BMVC/paper024/paper024.pdf | author:Ryan Layne, Tim Hospedales, Shaogang Gong
+bmvc-2012-103 | Person-Specific Subspace Analysis for Unconstrained Familiar Face Identification | http://www.bmva.org/bmvc/2012/BMVC/paper101/paper101.pdf | author:Giovani Chiachia, Nicolas Pinto, William Schwartz, Anderson Rocha, Alexandre Falcão, David Cox
+bmvc-2012-104 | Prime Shapes in Natural Images | http://www.bmva.org/bmvc/2012/BMVC/paper045/paper045.pdf | author:Qi Wu, Peter Hall
+bmvc-2012-105 | Prioritizing the Propagation of Identity Beliefs for Multi-object Tracking | http://www.bmva.org/bmvc/2012/BMVC/paper117/paper117.pdf | author:Amit  Kumar K.c., Christophe De Vleeschouwer
+bmvc-2012-106 | Probabilistic Correspondence Matching using Random Walk with Restart | http://www.bmva.org/bmvc/2012/BMVC/paper037/paper037.pdf | author:Changjae Oh, Bumsub Ham, Kwanghoon Sohn
+bmvc-2012-107 | Racing Bib Numbers Recognition | http://www.bmva.org/bmvc/2012/BMVC/paper019/paper019.pdf | author:Idan Ben-ami, Tali Basha, Shai Avidan
+bmvc-2012-108 | Real-time Learning and Detection of 3D Texture-less Objects: A Scalable Approach | http://www.bmva.org/bmvc/2012/BMVC/paper023/paper023.pdf | author:Dima Damen, Pished Bunnun, Andrew Calway, Walterio Mayol-cuevas
+bmvc-2012-109 | Recognizing activities with cluster-trees of tracklets | http://www.bmva.org/bmvc/2012/BMVC/paper030/paper030.pdf | author:Adrien Gaidon, Zaid Harchaoui, Cordelia Schmid
+bmvc-2012-110 | Recovery of Slice Rotations with the Stack Alignment Transform in Cardiac MR Series | http://www.bmva.org/bmvc/2012/BMVC/paper035/paper035.pdf | author:Constantine Zakkaroff, Aleksandra Radjenovic, John Greenwood, Derek Magee
+bmvc-2012-111 | Resolution-Aware 3D Morphable Model | http://www.bmva.org/bmvc/2012/BMVC/paper109/paper109.pdf | author:Guosheng Hu, Chi Ho Chan, Josef Kittler, Bill Christmas
+bmvc-2012-112 | Scalable Cascade Inference for Semantic Image Segmentation | http://www.bmva.org/bmvc/2012/BMVC/paper062/paper062.pdf | author:Paul Sturgess, Lubor Ladický, Nigel Crook, Philip Torr
+bmvc-2012-113 | Scene Text Recognition using Higher Order Language Priors | http://www.bmva.org/bmvc/2012/BMVC/paper127/paper127.pdf | author:Anand Mishra, Karteek Alahari, Cv Jawahar
+bmvc-2012-114 | Shape from Shading for Rough Surfaces: Analysis of the Oren-Nayar Model | http://www.bmva.org/bmvc/2012/BMVC/paper104/paper104.pdf | author:Yong Chul Ju, Michael Breuss, Andres Bruhn, Silvano Galliani
+bmvc-2012-115 | Single Image Segmentation with Estimated Depth | http://www.bmva.org/bmvc/2012/BMVC/paper028/paper028.pdf | author:Ryo Yonetani, Akisato Kimura, Hitoshi Sakano, Ken Fukuchi
+bmvc-2012-116 | Sparsity Potentials for Detecting Objects with the Hough Transform | http://www.bmva.org/bmvc/2012/BMVC/paper011/paper011.pdf | author:Nima Razavi, Nima Sedaghat Alvar, Juergen Gall, Luc Van Gool
+bmvc-2012-117 | Spatial orientations of visual word pairs to improve Bag-of-Visual-Words model | http://www.bmva.org/bmvc/2012/BMVC/paper089/paper089.pdf | author:Rahat Khan, Cecile Barat, Damien Muselet, Christophe Ducottet
+bmvc-2012-118 | Spatio-Temporal Convolutional Sparse Auto-Encoder for Sequence Classification | http://www.bmva.org/bmvc/2012/BMVC/paper124/paper124.pdf | author:Moez Baccouche, Franck Mamalet, Christian Wolf, Christophe Garcia, Atilla Baskurt
+bmvc-2012-119 | Stixmentation - Probabilistic Stixel based Traffic Scene Labeling | http://www.bmva.org/bmvc/2012/BMVC/paper071/paper071.pdf | author:Friedrich Erbs, Beate Schwarz, Uwe Franke
+bmvc-2012-120 | Structured Learning for Multiple Object Tracking | http://www.bmva.org/bmvc/2012/BMVC/paper048/paper048.pdf | author:Wang Yan, Xiaoye Han, Vladimir Pavlovic
+bmvc-2012-121 | Super-Resolution from Corneal Images | http://www.bmva.org/bmvc/2012/BMVC/paper022/paper022.pdf | author:Christian Nitschke, Atsushi Nakazawa
+bmvc-2012-122 | Teaching Stereo Perception to YOUR Robot | http://www.bmva.org/bmvc/2012/BMVC/paper029/paper029.pdf | author:Marcus Wallenberg, Per-erik Forssén
+bmvc-2012-123 | Through-the-Lens Synchronisation for Heterogeneous Camera Networks | http://www.bmva.org/bmvc/2012/BMVC/paper097/paper097.pdf | author:Evren Imre, Adrian Hilton
+bmvc-2012-124 | Tom-vs-Pete Classifiers and Identity-Preserving Alignment for Face Verification | http://www.bmva.org/bmvc/2012/BMVC/paper129/paper129.pdf | author:Thomas Berg, Peter Belhumeur
+bmvc-2012-125 | Towards Longer Long-Range Motion Trajectories | http://www.bmva.org/bmvc/2012/BMVC/paper053/paper053.pdf | author:Michael Rubinstein, Ce Liu
+bmvc-2012-126 | Transductive Kernel Map Learning and Its Application Image Annotation | http://www.bmva.org/bmvc/2012/BMVC/paper068/paper068.pdf | author:Phong Vo, Hichem Sahbi
+bmvc-2012-127 | Transfer Learning by Ranking for Weakly Supervised Object Annotation | http://www.bmva.org/bmvc/2012/BMVC/paper078/paper078.pdf | author:Zhiyuan Shi, Parthipan Siva, Tony Xiang
+bmvc-2012-128 | Unsupervised Feature Selection Via Hypergraph Embedding | http://www.bmva.org/bmvc/2012/BMVC/paper039/paper039.pdf | author:Zhihong Zhang, Peng Ren, Edwin Hancock
+bmvc-2012-129 | Unsupervised Texture Segmentation using Active Contours and Local Distributions of Gaussian Markov Random Field Parameters | http://www.bmva.org/bmvc/2012/BMVC/paper088/paper088.pdf | author:Chathurika Dharmagunawardhana, Sasan Mahmoodi, Michael  Bennet, Mahesan Niranjan
+bmvc-2012-130 | Using Richer Models for Articulated Pose Estimation of Footballers | http://www.bmva.org/bmvc/2012/BMVC/paper006/paper006.pdf | author:Vahid Kazemi, Josephine Sullivan
+bmvc-2012-131 | Virtual Line Descriptor and Semi-Local Graph Matching Method for Reliable Feature Correspondence | http://www.bmva.org/bmvc/2012/BMVC/paper016/paper016.pdf | author:Zhe Liu, Renaud Marlet
+bmvc-2012-132 | Visual words assignment on a graph via minimal mutual information loss | http://www.bmva.org/bmvc/2012/BMVC/paper091/paper091.pdf | author:Yanjun Qian, Yue Deng, Qionghai Dai, Yipeng Li, Guihua Er

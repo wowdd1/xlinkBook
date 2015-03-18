@@ -1,0 +1,116 @@
+bmvc-2010-1 | "How old are you?" : Age Estimation with Tensors of Binary Gaussian Receptive Maps | http://www.bmva.org/bmvc/2010/conference/paper6/paper6.pdf | author:John Ruiz Hernandez, James Crowley, Augustin Lux
+bmvc-2010-2 | A 2D+t Feature-preserving Non-local Means Filter for Image Denoising and Improved Detection of Small and Weak Particles | http://www.bmva.org/bmvc/2010/conference/paper14/paper14.pdf | author:Lei Yang, Richard Parton, Graeme Ball, Zhen Qiu, Alan Greenaway, Ilan Davis, Weiping Lu
+bmvc-2010-3 | A Linear Approach of 3D Face Shape and Texture Recovery using a 3D Morphable Model | http://www.bmva.org/bmvc/2010/conference/paper75/paper75.pdf | author:Oswald Aldrian, William Smith
+bmvc-2010-4 | A Novel Framework for Tracking In-vitro Cells in Time-lapse Phase Contrast Data | http://www.bmva.org/bmvc/2010/conference/paper69/paper69.pdf | author:Ketheesan Thirusittampalam, Julius Hossain, Ovidiu Ghita, Paul Whelan
+bmvc-2010-5 | A Wavelet Based Local Descriptor for Human Action Recognition | http://www.bmva.org/bmvc/2010/conference/paper72/paper72.pdf | author:Ling Shao, Ruoyun Gao
+bmvc-2010-6 | A general boosting-based framework for active object recognition | http://www.bmva.org/bmvc/2010/conference/paper46/paper46.pdf | author:Zhaoyin Jia, Yao-Jen Chang, Tsuhan Chen
+bmvc-2010-7 | A principled approach to remove false alarms by modelling the context of a face detector | http://www.bmva.org/bmvc/2010/conference/paper17/paper17.pdf | author:Cosmin Atanasoaei, Christopher McCool, Sebastien Marcel
+bmvc-2010-8 | Accounting for the Relative Importance of Objects in Image Retrieval | http://www.bmva.org/bmvc/2010/conference/paper58/paper58.pdf | author:Sung Ju Hwang, Kristen Grauman
+bmvc-2010-9 | Accurate and Efficient Face Recognition from Video | http://www.bmva.org/bmvc/2010/conference/paper64/paper64.pdf | author:Ognjen Arandjelovic
+bmvc-2010-10 | Action Detection in Crowd | http://www.bmva.org/bmvc/2010/conference/paper9/paper9.pdf | author:Parthipan Siva, Tao Xiang
+bmvc-2010-11 | Active 3D Segmentation through Fixation of Previously Unseen Objects | http://www.bmva.org/bmvc/2010/conference/paper119/paper119.pdf | author:Mårten Björkman, Danica Kragic
+bmvc-2010-12 | Additive Update Predictors in Active Appearance Models | http://www.bmva.org/bmvc/2010/conference/paper91/paper91.pdf | author:Philip Tresadern, Patrick Sauer, Tim Cootes
+bmvc-2010-13 | Automatic Facial Expression Recognition using Bags of Motion Words | http://www.bmva.org/bmvc/2010/conference/paper13/paper13.pdf | author:Liefei Xu, Philippos Mordohai
+bmvc-2010-14 | Automatic annotation of unique locations from video and text | http://www.bmva.org/bmvc/2010/conference/paper115/paper115.pdf | author:Chris Engels, Koen Deschacht, Jan Hendrik Becker, Tinne Tuytelaars, Sien Moens, Luc Van Gool
+bmvc-2010-15 | Back to the Future: Learning Shape Models from 3D CAD Data | http://www.bmva.org/bmvc/2010/conference/paper106/paper106.pdf | author:Michael Stark, Michael Goesele, Bernt Schiele
+bmvc-2010-16 | Background Modelling on Tensor Field for Foreground Segmentation | http://www.bmva.org/bmvc/2010/conference/paper96/paper96.pdf | author:Rui Caseiro, Jorge Batista, Pedro Martins
+bmvc-2010-17 | Background subtraction adapted to PTZ cameras by keypoint density estimation | http://www.bmva.org/bmvc/2010/conference/paper34/paper34.pdf | author:Constant Guillot, Maxime Taron, Patrick Sayd, Quoc Cuong Pham, Christophe Tilmant, Jean-Marc Lavest
+bmvc-2010-18 | BetaSAC: A New Conditional Sampling For RANSAC | http://www.bmva.org/bmvc/2010/conference/paper42/paper42.pdf | author:Antoine Méler, Marion Decrouez, James Crowley
+bmvc-2010-19 | Calibration of Non-Overlapping Cameras - Application to Vision-Based Robotics | http://www.bmva.org/bmvc/2010/conference/paper10/paper10.pdf | author:Pierre Lébraly, Eric Royer, Omar Ait-Aider, Michel Dhome
+bmvc-2010-20 | Camera Calibration and Scene Modeling from Arbitrary Parallelograms Imposing the Multiview Constraints | http://www.bmva.org/bmvc/2010/conference/paper92/paper92.pdf | author:Jae-Hean Kim, Bon-Ki  Koo
+bmvc-2010-21 | Catadioptric camera model with conic mirror | http://www.bmva.org/bmvc/2010/conference/paper114/paper114.pdf | author:Gonzalo López-Nicolás, Carlos Sagüés
+bmvc-2010-22 | Classifying Textile Designs using Region Graphs | http://www.bmva.org/bmvc/2010/conference/paper93/paper93.pdf | author:Wei  Jia, Stephen McKenna, Annette Ward, Keith Edwards
+bmvc-2010-23 | Clustered Pose and Nonlinear Appearance Models for Human Pose Estimation | http://www.bmva.org/bmvc/2010/conference/paper12/paper12.pdf | author:Sam Johnson, Mark Everingham
+bmvc-2010-24 | Context-based additive logistic model for facial keypoint localization | http://www.bmva.org/bmvc/2010/conference/paper28/paper28.pdf | author:Peng Li, Jonathan Warrell, Jania Aghajanian, Simon Prince
+bmvc-2010-25 | Cross-View Gait Recognition Using Correlation Strength | http://www.bmva.org/bmvc/2010/conference/paper109/paper109.pdf | author:Khalid Bashir, Tao Xiang, Shaogang Gong
+bmvc-2010-26 | Depth Estimation and Inpainting with an Unconstrainted Camera | http://www.bmva.org/bmvc/2010/conference/paper84/paper84.pdf | author:Arnav Bhavsar, Rajagopalan Ambasamudram
+bmvc-2010-27 | Detection of Curves with Unknown Endpoints using Minimal Path Techniques | http://www.bmva.org/bmvc/2010/conference/paper62/paper62.pdf | author:Vivek  Kaul, Yichang Tsai, Anthony Yezzi
+bmvc-2010-28 | Deterministic Sample Consensus with Multiple Match Hypotheses | http://www.bmva.org/bmvc/2010/conference/paper111/paper111.pdf | author:Paul McIlroy, Edward Rosten, Simon Taylor, Tom Drummond
+bmvc-2010-29 | Diffusion-based Regularisation Strategies for Variational Level Set Segmentation | http://www.bmva.org/bmvc/2010/conference/paper19/paper19.pdf | author:Maximilian Baust, Darko Zikic, Nassir Navab
+bmvc-2010-30 | Discriminative Topics Modelling for Action Feature Selection and Recognition | http://www.bmva.org/bmvc/2010/conference/paper8/paper8.pdf | author:Matteo Bregonzio, Jian Li, Shaogang Gong, Tao Xiang
+bmvc-2010-31 | Efficient image retrieval for 3D structures | http://www.bmva.org/bmvc/2010/conference/paper30/paper30.pdf | author:Relja Arandjelovic, Andrew Zisserman
+bmvc-2010-32 | Electoral College and Direct Popular Vote for Multi-Candidate Election | http://www.bmva.org/bmvc/2010/conference/paper100/paper100.pdf | author:Liang Chen
+bmvc-2010-33 | Embedding Visual Words into Concept Space for Action and Scene Recognition | http://www.bmva.org/bmvc/2010/conference/paper15/paper15.pdf | author:Behrouz Saghafi Khadem, Elahe Farahzadeh, Deepu Rajan, Andrzej Sluzek
+bmvc-2010-34 | Epipolar Constraints for Multiscale Matching | http://www.bmva.org/bmvc/2010/conference/paper48/paper48.pdf | author:Bill Triggs, Pashmina Bendale
+bmvc-2010-35 | Evaluation of dimensionality reduction methods for image auto-annotation | http://www.bmva.org/bmvc/2010/conference/paper94/paper94.pdf | author:Hideki Nakayama, Tatsuya Harada, Yasuo Kuniyoshi
+bmvc-2010-36 | FAST: Fast Adaptive Silhouette Area based Template Matching | http://www.bmva.org/bmvc/2010/conference/paper39/paper39.pdf | author:Daniel Mohr, Gabriel Zachmann
+bmvc-2010-37 | Face Alignment Through 2.5D Active Appearance Models | http://www.bmva.org/bmvc/2010/conference/paper99/paper99.pdf | author:Pedro Martins, Jorge Batista, Rui Caseiro
+bmvc-2010-38 | Feature Sets and Dimensionality Reduction for Visual Object Detection | http://www.bmva.org/bmvc/2010/conference/paper112/paper112.pdf | author:Sibt-ul Hussain, Bill Triggs
+bmvc-2010-39 | Generalized Descriptor Compression for Storage and Matching | http://www.bmva.org/bmvc/2010/conference/paper23/paper23.pdf | author:Matthew Johnson
+bmvc-2010-40 | Generalized RBF feature maps for Efficient Detection | http://www.bmva.org/bmvc/2010/conference/paper2/paper2.pdf | author:Sreekanth Vempati, Andrea Vedaldi, Andrew Zisserman, C. V. Jawahar
+bmvc-2010-41 | Graph-based Analysis of Textured Images for Hierarchical Segmentation | http://www.bmva.org/bmvc/2010/conference/paper74/paper74.pdf | author:Raffaele Gaetano, Giuseppe Scarpa, Tamas Sziranyi
+bmvc-2010-42 | High Five: Recognising human interactions in TV shows | http://www.bmva.org/bmvc/2010/conference/paper50/paper50.pdf | author:Alonso Patron, Marcin Marszalek, Andrew Zisserman, Ian Reid
+bmvc-2010-43 | Histogram of Body Poses and Spectral Regression Discriminant Analysis for Human Action Categorization | http://www.bmva.org/bmvc/2010/conference/paper88/paper88.pdf | author:Ling Shao, Xiuli Chen
+bmvc-2010-44 | Histogram of Oriented Cameras - A New Descriptor for Visual SLAM in Dynamic Environments | http://www.bmva.org/bmvc/2010/conference/paper76/paper76.pdf | author:Katrin  Pirker
+bmvc-2010-45 | Image Topic Discovery with Saliency Detection | http://www.bmva.org/bmvc/2010/conference/paper33/paper33.pdf | author:Zhidong Li, Yang Wang, Jing Chen, Jie  Xu, John Larid
+bmvc-2010-46 | Image-based walkthroughs from incremental and partial scene reconstructions | http://www.bmva.org/bmvc/2010/conference/paper116/paper116.pdf | author:Kumar Srijan, Syed Ahsan, Sudipta Sinha, C. V. Jawahar
+bmvc-2010-47 | Implicit Shape Kernel for Discriminative Learning of the Hough Transform Detector | http://www.bmva.org/bmvc/2010/conference/paper105/paper105.pdf | author:Yimeng Zhang, Tsuhan Chen
+bmvc-2010-48 | Improved 3D Model Search for Facial Feature Location and Pose Estimation in 2D images | http://www.bmva.org/bmvc/2010/conference/paper81/paper81.pdf | author:Angela Caunce, Chris Taylor, Tim Cootes
+bmvc-2010-49 | Improved Landmark Localization in Medical Images Using Dense Matching of Graphical Models | http://www.bmva.org/bmvc/2010/conference/paper37/paper37.pdf | author:Vaclav Potesil, Timor Kadir, Guenther Platsch, Mike Brady
+bmvc-2010-50 | Improving Bag-of-Features Action Recognition with Non-Local Cues | http://www.bmva.org/bmvc/2010/conference/paper95/paper95.pdf | author:Muhammad Muneeb Ullah, Sobhan Naderi Parizi, Ivan Laptev
+bmvc-2010-51 | Improving object classification using semantic attributes | http://www.bmva.org/bmvc/2010/conference/paper26/paper26.pdf | author:Yu Su, Moray Allan, Frédéric Jurie
+bmvc-2010-52 | Incremental Model Selection for Detection and Tracking of Planar Surfaces | http://www.bmva.org/bmvc/2010/conference/paper87/paper87.pdf | author:Johann Prankl, Michael Zillich, Bastian Leibe, Markus Vincze
+bmvc-2010-53 | Inferring Image Transformation and Structure from Motion-Blurred Images | http://www.bmva.org/bmvc/2010/conference/paper73/paper73.pdf | author:Paramanand Chandramouli, Rajagopalan Ambasamudram
+bmvc-2010-54 | Insect Species Recognition using Sparse Representation | http://www.bmva.org/bmvc/2010/conference/paper108/paper108.pdf | author:An Lu, Xin Hou, Chen Lin, Cheng-Lin Liu
+bmvc-2010-55 | Isotropic Granularity-tunable gradients partition (IGGP) descriptors for human detection | http://www.bmva.org/bmvc/2010/conference/paper63/paper63.pdf | author:Yazhou Liu, Janne Heikkila
+bmvc-2010-56 | Iterative Hyperplane Merging: A Framework for Manifold Learning | http://www.bmva.org/bmvc/2010/conference/paper18/paper18.pdf | author:Harry Strange, Reyer Zwiggelaar
+bmvc-2010-57 | Joint Modeling of Algorithm Behavior and Image Quality for Algorithm Performance Prediction | http://www.bmva.org/bmvc/2010/conference/paper31/paper31.pdf | author:Apurva Gala, Shishir Shah
+bmvc-2010-58 | Joint Optimisation for Object Class Segmentation and Dense Stereo Reconstruction | http://www.bmva.org/bmvc/2010/conference/paper104/paper104.pdf | author:Ľubor Ladický, Paul Sturgess, Christopher Russell, Sunando  Sengupta, Yalin Bastanlar, William Clocksin, Philip Torr
+bmvc-2010-59 | Label propagation in complex video sequences using semi-supervised learning | http://www.bmva.org/bmvc/2010/conference/paper27/paper27.pdf | author:Ignas Budvytis, Vijay Badrinarayanan, Roberto Cipolla
+bmvc-2010-60 | Large-scale Dictionary Learning For Local Coordinate Coding | http://www.bmva.org/bmvc/2010/conference/paper36/paper36.pdf | author:Bo Xie, Mingli Song, Dacheng Tao
+bmvc-2010-61 | Learning Directional Local Pairwise Bases with Sparse Coding | http://www.bmva.org/bmvc/2010/conference/paper32/paper32.pdf | author:Nobuyuki Morioka, Shin'ichi Satoh
+bmvc-2010-62 | Live Feature Clustering in Video Using Appearance and 3D Geometry | http://www.bmva.org/bmvc/2010/conference/paper41/paper41.pdf | author:Adrien Angeli, Andrew Davison
+bmvc-2010-63 | Local Gaussian Processes for Pose Recognition from Noisy Inputs | http://www.bmva.org/bmvc/2010/conference/paper98/paper98.pdf | author:Martin Fergie, Aphrodite Galata
+bmvc-2010-64 | Localized fusion of Shape and Appearance features for 3D Human Pose Estimation | http://www.bmva.org/bmvc/2010/conference/paper51/paper51.pdf | author:Suman Sedai, Mohammed  Bennamoun, Du Huynh
+bmvc-2010-65 | Making a Shallow Network Deep: Growing a Tree from Decision Regions of a Boosting Classifier | http://www.bmva.org/bmvc/2010/conference/paper57/paper57.pdf | author:Tae-Kyun Kim, Ignas Budvytis, Roberto Cipolla
+bmvc-2010-66 | Manifold Alignment via Corresponding Projections | http://www.bmva.org/bmvc/2010/conference/paper3/paper3.pdf | author:Deming Zhai, Bo Li, Hong Chang, Shiguang Shan, Xilin Chen, Wen Gao
+bmvc-2010-67 | Manifold Learning for Multi-Modal Image Registration | http://www.bmva.org/bmvc/2010/conference/paper82/paper82.pdf | author:Christian Wachinger, Nassir Navab
+bmvc-2010-68 | Manifold Learning for ToF-based Human Body Tracking and Activity Recognition | http://www.bmva.org/bmvc/2010/conference/paper80/paper80.pdf | author:Loren Schwarz, Diana Mateus, Victor Castaneda, Nassir Navab
+bmvc-2010-69 | Mean-Shift Visual Tracking with NP-Windows Density Estimates | http://www.bmva.org/bmvc/2010/conference/paper103/paper103.pdf | author:Ian Reid, Chuan Zhao
+bmvc-2010-70 | Motion Coherent Tracking with Multi-label MRF optimization | http://www.bmva.org/bmvc/2010/conference/paper56/paper56.pdf | author:David Tsai, Matthew Flagg, James Rehg
+bmvc-2010-71 | Moving Camera Registration for Multiple Camera Setups in Dynamic Scenes | http://www.bmva.org/bmvc/2010/conference/paper38/paper38.pdf | author:Evren Imre, Jean-Yves Guillemaut, Adrian Hilton
+bmvc-2010-72 | Multi-Scale Depth from Slope with Weights | http://www.bmva.org/bmvc/2010/conference/paper40/paper40.pdf | author:Rafael Saracchini, Jorge Stolfi, Helena Leitao, Gary Atkinson, Melvyn Smith
+bmvc-2010-73 | Multi-View Planning for Simultaneous Coverage and Accuracy Optimisation | http://www.bmva.org/bmvc/2010/conference/paper118/paper118.pdf | author:Christoph Munkelt, Andreas Breitbarth, Gunther Notni, Joachim Denzler
+bmvc-2010-74 | Multi-class Boosting for Early Classification of Sequences | http://www.bmva.org/bmvc/2010/conference/paper24/paper24.pdf | author:Katsuhiko Ishiguro, Hiroshi Sawada, Hitoshi Sakano
+bmvc-2010-75 | Multiscale Keypoint Analysis based on Complex Wavelets | http://www.bmva.org/bmvc/2010/conference/paper49/paper49.pdf | author:Pashmina Bendale, Bill Triggs, Nick Kingsbury
+bmvc-2010-76 | Multiview video depth estimation using spacial-temporal consistency | http://www.bmva.org/bmvc/2010/conference/paper67/paper67.pdf | author:Mingjin Yang, Xun Cao, Qionghai Dai
+bmvc-2010-77 | Object Detection with Geometrical Context Feedback Loop | http://www.bmva.org/bmvc/2010/conference/paper59/paper59.pdf | author:Sun Min, Yingze Bao, Silvio Savarese
+bmvc-2010-78 | Object Recognition using 3D SIFT in Complex CT Volumes | http://www.bmva.org/bmvc/2010/conference/paper11/paper11.pdf | author:Gregory Flitton, Toby Breckon, Najla Megherbi Bouallagu
+bmvc-2010-79 | On-line Adaption of Class-specific Codebooks for Instance Tracking | http://www.bmva.org/bmvc/2010/conference/paper55/paper55.pdf | author:Juergen Gall, Nima Razavi, Luc Van Gool
+bmvc-2010-80 | Pairwise Macropixel Comparison Can Work at Least as Well as Advanced Holistic Algorithms for Face Recognition | http://www.bmva.org/bmvc/2010/conference/paper5/paper5.pdf | author:Liang Chen
+bmvc-2010-81 | Parameter Tuning by Pairwise Preferences | http://www.bmva.org/bmvc/2010/conference/paper4/paper4.pdf | author:Pavel Kisilev, Daniel Freedman
+bmvc-2010-82 | Patch-Cuts: A Graph-Based Image Segmentation Method Using Patch Features and Spatial Relations | http://www.bmva.org/bmvc/2010/conference/paper29/paper29.pdf | author:Gerd Brunner, Deepak  Chittajallu, Uday  Kurkure, Ioannis Kakadiaris
+bmvc-2010-83 | Person Identification using Shadow Analysis | http://www.bmva.org/bmvc/2010/conference/paper35/paper35.pdf | author:Yumi Iwashita, Adrian Stoica, Ryo Kurazume
+bmvc-2010-84 | Person Re-Identification by Support Vector Ranking | http://www.bmva.org/bmvc/2010/conference/paper21/paper21.pdf | author:Bryan Prosser, Wei-Shi Zheng, Shaogang Gong, Tao Xiang
+bmvc-2010-85 | Pose and Expression-Invariant 3D Face Recognition using Elastic Radial Curves | http://www.bmva.org/bmvc/2010/conference/paper90/paper90.pdf | author:Hassen Drira, Boulbaba Benamor, Mohamed Daoudi, Anuj Srivastava
+bmvc-2010-86 | Probabilistic Latent Sequential Motifs: Discovering temporal activity patterns in video scenes | http://www.bmva.org/bmvc/2010/conference/paper117/paper117.pdf | author:Jagannadan Varadarajan, Remi Emonet, Jean-Marc Odobez
+bmvc-2010-87 | Real-time Action Recognition by Spatiotemporal Semantic and Structural Forest | http://www.bmva.org/bmvc/2010/conference/paper52/paper52.pdf | author:Tsz-Ho Yu, Tae-Kyun Kim, Roberto Cipolla
+bmvc-2010-88 | Recognition from Appearance Subspaces Across Image Sets of Variable Scale | http://www.bmva.org/bmvc/2010/conference/paper79/paper79.pdf | author:Ognjen Arandjelovic
+bmvc-2010-89 | Recognizing human actions in still images: a study of bag-of-features and part-based representations | http://www.bmva.org/bmvc/2010/conference/paper97/paper97.pdf | author:Vincent Delaitre, Ivan Laptev, Josef Sivic
+bmvc-2010-90 | Reducing mismatching under time-pressure by reasoning about visibility and occlusion | http://www.bmva.org/bmvc/2010/conference/paper54/paper54.pdf | author:Somkiat Wangsiripitak, David Murray
+bmvc-2010-91 | Revisiting Horn and Schunck: Interpretation as Gauss-Newton Optimisation | http://www.bmva.org/bmvc/2010/conference/paper113/paper113.pdf | author:Darko Zikic, Ali Kamen, Nassir Navab
+bmvc-2010-92 | Robust 3D Face Recognition by Using Shape Filtering | http://www.bmva.org/bmvc/2010/conference/paper65/paper65.pdf | author:Liang Cai, Feipeng Da
+bmvc-2010-93 | Robust Camera Calibration using Inaccurate Targets | http://www.bmva.org/bmvc/2010/conference/paper16/paper16.pdf | author:Andrea Albarelli, Emanuele Rodolà, Andrea Torsello
+bmvc-2010-94 | Robust Texture Recognition Using Credal Classifiers | http://www.bmva.org/bmvc/2010/conference/paper78/paper78.pdf | author:Giorgio Corani, Alessandro Giusti, Davide Migliore, Juergen Schmidhuber
+bmvc-2010-95 | SLP: A Zero-Contact Non-Invasive Method for Pulmonary Function Testing | http://www.bmva.org/bmvc/2010/conference/paper85/paper85.pdf | author:Willem de Boer, Joan Lasenby, Jonathan Cameron, Rich Wareham, Shiraz Ahmad, Charlotte Roach, Ward Hills, Richard Iles
+bmvc-2010-96 | Saliency Segmentation based on Learning and Graph Cut Refinement | http://www.bmva.org/bmvc/2010/conference/paper110/paper110.pdf | author:Paria Mehrani, Olga Veksler
+bmvc-2010-97 | Segmentation using Deformable Spatial Priors with Application to Clothing | http://www.bmva.org/bmvc/2010/conference/paper83/paper83.pdf | author:Basela Hasan, David Hogg
+bmvc-2010-98 | Simple, Fast and Accurate Estimation of the Fundamental Matrix Using the Extended Eight-Point Schemes | http://www.bmva.org/bmvc/2010/conference/paper7/paper7.pdf | author:Mohammed Fathy, Ashraf Hussein, Mohammed Tolba
+bmvc-2010-99 | Skeleton Extraction via Anisotropic Heat Flow | http://www.bmva.org/bmvc/2010/conference/paper61/paper61.pdf | author:Cem Direkoglu, Rozenn Dahyot, Michael Manzke
+bmvc-2010-100 | Skin Color Weighted Disparity Competition for Hand Segmentation from Stereo Camera | http://www.bmva.org/bmvc/2010/conference/paper66/paper66.pdf | author:Qi Wang, Xilin Chen, Wen Gao
+bmvc-2010-101 | Sparse Sparse Bundle Adjustment | http://www.bmva.org/bmvc/2010/conference/paper102/paper102.pdf | author:Kurt Konolige
+bmvc-2010-102 | Stratified Generalized Procrustes Analysis | http://www.bmva.org/bmvc/2010/conference/paper70/paper70.pdf | author:Adrien Bartoli, Daniel Pizarro, Marco Loog
+bmvc-2010-103 | StyP-Boost: A Bilinear Boosting Algorithm for Learning Style-Parameterized Classifiers | http://www.bmva.org/bmvc/2010/conference/paper60/paper60.pdf | author:Jonathan Warrell, Philip Torr, Simon Prince
+bmvc-2010-104 | TV-Based Multi-Label Image Segmentation with Label Cost Prior | http://www.bmva.org/bmvc/2010/conference/paper101/paper101.pdf | author:Jing Yuan, Yuri Boykov
+bmvc-2010-105 | The Fastest Pedestrian Detector in the West | http://www.bmva.org/bmvc/2010/conference/paper68/paper68.pdf | author:Piotr Dollar, Serge Belongie, Pietro Perona
+bmvc-2010-106 | Three-step image rectification | http://www.bmva.org/bmvc/2010/conference/paper89/paper89.pdf | author:Pascal Monasse, Jean-Michel Morel, Zhongwei Tang
+bmvc-2010-107 | Toward Robust Action Retrieval in Video | http://www.bmva.org/bmvc/2010/conference/paper44/paper44.pdf | author:Samy Bakheet, Ayoub Al-Hamadi, Bernd Michaelis, Usama  Sayed
+bmvc-2010-108 | Toward robust estimation of specular flow | http://www.bmva.org/bmvc/2010/conference/paper22/paper22.pdf | author:Yair Adato, Todd Zickler, Ohad Ben-Shahar
+bmvc-2010-109 | Towards On-Line Intensity-Based Surface Recovery from Monocular Images | http://www.bmva.org/bmvc/2010/conference/paper77/paper77.pdf | author:Oliver Ruepp, Darius Burschka, Robert Bauernschmitt
+bmvc-2010-110 | Trans Media Relevance Feedback for Image Autoannotation | http://www.bmva.org/bmvc/2010/conference/paper20/paper20.pdf | author:Thomas Mensink, Jakob Verbeek, Gabriela Csurka
+bmvc-2010-111 | Tripartite Graph Models for Multi Modal Image Retrieval | http://www.bmva.org/bmvc/2010/conference/paper86/paper86.pdf | author:Chandrika Pulla, C. V. Jawahar
+bmvc-2010-112 | Unifying Planar and Point Mapping in Monocular SLAM | http://www.bmva.org/bmvc/2010/conference/paper43/paper43.pdf | author:Jose Martinez-Carranza, Andrew Calway
+bmvc-2010-113 | Using Context to Create Semantic 3D Models of Indoor Environments | http://www.bmva.org/bmvc/2010/conference/paper45/paper45.pdf | author:Xuehan Xiong, Daniel Huber
+bmvc-2010-114 | Vision-Based Behavior Prediction in Urban Traffic Environments by Scene Categorization | http://www.bmva.org/bmvc/2010/conference/paper71/paper71.pdf | author:Martin Heracles, Fernando Martinelli, Jannik Fritsch
+bmvc-2010-115 | Weakly Supervised Object Recognition and Localization with Invariant High Order Features | http://www.bmva.org/bmvc/2010/conference/paper47/paper47.pdf | author:Yimeng Zhang, Tsuhan Chen
+bmvc-2010-116 | Weighted Local Bundle Adjustment and Application to Odometry and Visual SLAM Fusion | http://www.bmva.org/bmvc/2010/conference/paper25/paper25.pdf | author:Alexandre Eudes, Sylvie Naudet-Collette, Maxime Lhuillier, Michel Dhome

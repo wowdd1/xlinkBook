@@ -1,0 +1,152 @@
+icml-2011-1 | A Co-training Approach for Multi-view Spectral Clustering | http://www.icml-2011.org/papers/272_icmlpaper.pdf | author:Abhishek Kumar, Hal Daume III, University of Maryland
+icml-2011-2 | A Coherent Interpretation of AUC as a Measure of Aggregated Classification Performance | http://www.icml-2011.org/papers/385_icmlpaper.pdf | author:Peter Flach, Jose Hernandez-Orallo, Cčsar Ferri
+icml-2011-3 | A Graph-based Framework for Multi-Task Multi-View Learning | http://www.icml-2011.org/papers/38_icmlpaper.pdf | author:Jingrui He, Rick Lawrence
+icml-2011-4 | A New Bayesian Rating System for Team Competitions | http://www.icml-2011.org/papers/371_icmlpaper.pdf | author:Sergey Nikolenko, Alexander Sirotkin
+icml-2011-5 | A PAC-Bayes Sample-compression Approach to Kernel Methods | http://www.icml-2011.org/papers/218_icmlpaper.pdf | author:Pascal Germain, Alexandre Lacoste, Francois Laviolette, Mario Marchand, Sara Shanian
+icml-2011-6 | A Spectral Algorithm for Latent Tree Graphical Models | http://www.icml-2011.org/papers/545_icmlpaper.pdf | author:Ankur Parikh, Le Song, Eric  Xing
+icml-2011-7 | A Three-Way Model for Collective Learning on Multi-Relational Data | http://www.icml-2011.org/papers/438_icmlpaper.pdf | author:Maximilian Nickel, Volker Tresp, Hans-Peter Kriegel
+icml-2011-8 | A Unified Probabilistic Model for Global and Local Unsupervised Feature Selection | http://www.icml-2011.org/papers/546_icmlpaper.pdf | author:Yue Guan, Jennifer Dy, Michael Jordan
+icml-2011-9 | ABC-EP: Expectation Propagation for Likelihood-free Bayesian Computation | http://www.icml-2011.org/papers/217_icmlpaper.pdf | author:Simon Barthelmé, Nicolas Chopin
+icml-2011-10 | Access to Unlabeled Data can Speed up Prediction Time | http://www.icml-2011.org/papers/378_icmlpaper.pdf | author:Ruth Urner, Shai Shalev-Shwartz, Shai Ben-David
+icml-2011-11 | Active Learning from Crowds | http://www.icml-2011.org/papers/596_icmlpaper.pdf | author:Yan Yan, Romer Rosales, Glenn Fung, Jennifer Dy
+icml-2011-12 | Adaptive Kernel Approximation for Large-Scale Non-Linear SVM Prediction | http://www.icml-2011.org/papers/283_icmlpaper.pdf | author:Michele Cossalter, Rong Yan, Lu Zheng
+icml-2011-13 | Adaptively Learning the Crowd Kernel | http://www.icml-2011.org/papers/395_icmlpaper.pdf | author:Omer Tamuz, Ce Liu, Serge Belongie, Ohad Shamir, Adam Kalai
+icml-2011-14 | An Augmented Lagrangian Approach to Constrained MAP Inference | http://www.icml-2011.org/papers/150_icmlpaper.pdf | author:Andre Martins, Mario Figueiredo, pedro Aguiar, Noah Smith, Eric  Xing
+icml-2011-15 | Apprenticeship Learning About Multiple Intentions | http://www.icml-2011.org/papers/478_icmlpaper.pdf | author:Monica Babes, Vukosi Marivate, Michael  Littman, Kaushik Subramanian
+icml-2011-16 | Approximate Dynamic Programming for Storage Problems | http://www.icml-2011.org/papers/235_icmlpaper.pdf | author:Lauren Hannah, David Dunson
+icml-2011-17 | Approximating Correlated Equilibria using Relaxations on the Marginal Polytope | http://www.icml-2011.org/papers/594_icmlpaper.pdf | author:Hetunandan Kamisetty, Eric  Xing, Christopher Langmead
+icml-2011-18 | Approximation Bounds for Inference using Cooperative Cuts | http://www.icml-2011.org/papers/358_icmlpaper.pdf | author:Stefanie Jegelka, Jeff Bilmes
+icml-2011-19 | Automatic Feature Decomposition for Single View Co-training | http://www.icml-2011.org/papers/498_icmlpaper.pdf | author:Minmin Chen, Kilian Weinberger, Yixin Chen
+icml-2011-20 | BCDNPKL: Scalable Non-Parametric Kernel Learning Using Block Coordinate Descent | http://www.icml-2011.org/papers/176_icmlpaper.pdf | author:En-Liang Hu, Bo Wang, SongCan Chen
+icml-2011-21 | Bayesian CCA via Group Sparsity | http://www.icml-2011.org/papers/318_icmlpaper.pdf | author:Seppo Virtanen, Arto Klami, Samuel Kaski
+icml-2011-22 | Bayesian Learning via Stochastic Gradient Langevin Dynamics | http://www.icml-2011.org/papers/398_icmlpaper.pdf | author:Max Welling, Yee Whye Teh
+icml-2011-23 | Beam Search based MAP Estimates for the Indian Buffet Process | http://www.icml-2011.org/papers/401_icmlpaper.pdf | author:Piyush Rai, Hal Daume III, University of Maryland
+icml-2011-24 | Beat the Mean Bandit | http://www.icml-2011.org/papers/200_icmlpaper.pdf | author:Yisong Yue, Thorsten  Joachims
+icml-2011-25 | Better Algorithms for Selective Sampling | http://www.icml-2011.org/papers/306_icmlpaper.pdf | author:Francesco Orabona, Nicolň Cesa-Bianchi
+icml-2011-26 | Bipartite Ranking through Minimization of Univariate Loss | http://www.icml-2011.org/papers/567_icmlpaper.pdf | author:Wojciech Kotlowski, Krzysztof Dembczynski, Eyke Huellermeier
+icml-2011-27 | Boosting on a Budget: Sampling for Feature-Efficient Prediction | http://www.icml-2011.org/papers/348_icmlpaper.pdf | author:Lev Reyzin
+icml-2011-28 | Bounding the Partition Function using Holder's Inequality | http://www.icml-2011.org/papers/459_icmlpaper.pdf | author:Qiang Liu, Alexander Ihler, University of California
+icml-2011-29 | Brier Curves: a New Cost-Based Visualisation of Classifier Performance | http://www.icml-2011.org/papers/366_icmlpaper.pdf | author:Jose Hernandez-Orallo, Peter Flach, Cčsar Ferri
+icml-2011-30 | Bundle Selling by Online Estimation of Valuation Functions | http://www.icml-2011.org/papers/582_icmlpaper.pdf | author:Daniel Vainsencher, Ofer Dekel, Shie Mannor
+icml-2011-31 | Cauchy Graph Embedding | http://www.icml-2011.org/papers/353_icmlpaper.pdf | author:Dijun Luo, Chris Ding, Feiping Nie, Heng Huang
+icml-2011-32 | Classification-based Policy Iteration with a Critic | http://www.icml-2011.org/papers/541_icmlpaper.pdf | author:Victor Gabillon, Alessandro Lazaric, Mohammad Ghavamzadeh, Bruno Scherrer
+icml-2011-33 | Clustering Partially Observed Graphs via Convex Optimization | http://www.icml-2011.org/papers/516_icmlpaper.pdf | author:Ali Jalali, Yudong Chen, Sujay Sanghavi, Huan Xu
+icml-2011-34 | Clustering by Left-Stochastic Matrix Factorization | http://www.icml-2011.org/papers/426_icmlpaper.pdf | author:Raman Arora, Maya Gupta, Amol Kapila, Maryam Fazel
+icml-2011-35 | Clusterpath: an Algorithm for Clustering using Convex Fusion Penalties | http://www.icml-2011.org/papers/419_icmlpaper.pdf | author:Toby Hocking, Jean-Philippe Vert, Francis Bach, Armand Joulin
+icml-2011-36 | Computational Rationalization: The Inverse Equilibrium Problem | http://www.icml-2011.org/papers/599_icmlpaper.pdf | author:Kevin Waugh, Brian Ziebart, Drew Bagnell
+icml-2011-37 | Conjugate Markov Decision Processes | http://www.icml-2011.org/papers/134_icmlpaper.pdf | author:Philip Thomas, Andrew Barto
+icml-2011-38 | Contractive Auto-Encoders: Explicit Invariance During Feature Extraction | http://www.icml-2011.org/papers/455_icmlpaper.pdf | author:Salah RIFAI, Pascal Vincent, Xavier Muller, Xavier Glorot, Yoshua Bengio
+icml-2011-39 | Convex Max-Product over Compact Sets for Protein Folding | http://www.icml-2011.org/papers/413_icmlpaper.pdf | author:Jian Peng, Tamir Hazan, David  McAllester, Raquel Urtasun
+icml-2011-40 | Domain Adaptation for Large-Scale Sentiment Classification: A Deep Learning Approach | http://www.icml-2011.org/papers/342_icmlpaper.pdf | author:Xavier Glorot, Antoine Bordes, Yoshua Bengio
+icml-2011-41 | Doubly Robust Policy Evaluation and Learning | http://www.icml-2011.org/papers/554_icmlpaper.pdf | author:Miroslav Dudik, John  Langford, Lihong Li
+icml-2011-42 | Dynamic Egocentric Models for Citation Networks | http://www.icml-2011.org/papers/464_icmlpaper.pdf | author:Duy Vu, Arthur Asuncion, David Hunter, Padhraic Smyth
+icml-2011-43 | Dynamic Tree Block Coordinate Ascent | http://www.icml-2011.org/papers/108_icmlpaper.pdf | author:Daniel Tarlow, Dhruv Batra, Pushmeet Kohli, Vladimir Kolmogorov
+icml-2011-44 | Efficient Rule Ensemble Learning using Hierarchical Kernels | http://www.icml-2011.org/papers/143_icmlpaper.pdf | author:Pratik Jawanpuria, Saketha Nath Jagarlapudi, Ganesh Ramakrishnan
+icml-2011-45 | Efficient Sparse Modeling with Automatic Feature Grouping | http://www.icml-2011.org/papers/9_icmlpaper.pdf | author:Wenliang Zhong, James Kwok
+icml-2011-46 | Eigenvalue Sensitive Feature Selection | http://www.icml-2011.org/papers/83_icmlpaper.pdf | author:Yi Jiang, Jiangtao Ren
+icml-2011-47 | Enhanced Gradient and Adaptive Learning Rate for Training Restricted Boltzmann Machines | http://www.icml-2011.org/papers/98_icmlpaper.pdf | author:KyungHyun Cho, Tapani Raiko, Alexander Ilin
+icml-2011-48 | Estimating the Bayes Point Using Linear Knapsack Problems | http://www.icml-2011.org/papers/208_icmlpaper.pdf | author:Brian Potetz
+icml-2011-49 | Fast Global Alignment Kernels | http://www.icml-2011.org/papers/489_icmlpaper.pdf | author:Marco Cuturi
+icml-2011-50 | Fast Newton-type Methods for Total Variation Regularization | http://www.icml-2011.org/papers/226_icmlpaper.pdf | author:Álvaro Barbero, Suvrit Sra
+icml-2011-51 | Finite-Sample Analysis of Lasso-TD | http://www.icml-2011.org/papers/601_icmlpaper.pdf | author:Mohammad Ghavamzadeh, Alessandro Lazaric, Remi Munos, Matthew Hoffman
+icml-2011-52 | From PAC-Bayes Bounds to Quadratic Programs for Majority Votes | http://www.icml-2011.org/papers/379_icmlpaper.pdf | author:Jean-Francis Roy, Francois Laviolette, Mario Marchand
+icml-2011-53 | Functional Regularized Least Squares Classi cation with Operator-valued Kernels | http://www.icml-2011.org/papers/509_icmlpaper.pdf | author:Hachem Kadri, Asma Rabaoui, philippe Preux, Emmanuel Duflos, Alain Rakotomamonjy
+icml-2011-54 | Generalized Boosting Algorithms for Convex Optimization | http://www.icml-2011.org/papers/626_icmlpaper.pdf | author:Alexander Grubb, Drew Bagnell
+icml-2011-55 | Generalized Value Functions for Large Action Sets | http://www.icml-2011.org/papers/609_icmlpaper.pdf | author:Jason Pazis, Ron Parr
+icml-2011-56 | Generating Text with Recurrent Neural Networks | http://www.icml-2011.org/papers/524_icmlpaper.pdf | author:Ilya Sutskever, James Martens, Geoffrey Hinton
+icml-2011-57 | GoDec: Randomized Low-rank & Sparse Matrix Decomposition in Noisy Case | http://www.icml-2011.org/papers/41_icmlpaper.pdf | author:Tianyi Zhou, Dacheng Tao, University of Technology
+icml-2011-58 | Hashing with Graphs | http://www.icml-2011.org/papers/6_icmlpaper.pdf | author:Wei Liu, Jun Wang, Sanjiv Kumar, Shih-Fu Chang
+icml-2011-59 | Hierarchical Classification via Orthogonal Transfer | http://www.icml-2011.org/papers/437_icmlpaper.pdf | author:Lin Xiao, Dengyong Zhou, Mingrui Wu
+icml-2011-60 | Implementing regularization implicitly via approximate eigenvector computation | http://www.icml-2011.org/papers/120_icmlpaper.pdf | author:Michael Mahoney, Lorenzo Orecchia
+icml-2011-61 | Incremental Basis Construction from Temporal Difference Error | http://www.icml-2011.org/papers/330_icmlpaper.pdf | author:Yi Sun, Faustino Gomez, Mark Ring, Jürgen Schmidhuber
+icml-2011-62 | Inference of Inversion Transduction Grammars | http://www.icml-2011.org/papers/175_icmlpaper.pdf | author:Alexander Clark
+icml-2011-63 | Infinite Dynamic Bayesian Networks | http://www.icml-2011.org/papers/483_icmlpaper.pdf | author:Finale Doshi, David Wingate, Josh Tenenbaum, Nicholas Roy
+icml-2011-64 | Infinite SVM: a Dirichlet Process Mixture of Large-margin Kernel Machines | http://www.icml-2011.org/papers/374_icmlpaper.pdf | author:Jun Zhu, Ning Chen, Eric  Xing
+icml-2011-65 | Integrating Partial Model Knowledge in Model Free RL Algorithms | http://www.icml-2011.org/papers/222_icmlpaper.pdf | author:Aviv Tamar, Dotan Di Castro, Ron Meir
+icml-2011-66 | Large Scale Text Classification using Semi-supervised Multinomial Naive Bayes | http://www.icml-2011.org/papers/93_icmlpaper.pdf | author:Jiang Su, Jelber Sayyad Shirab, Stan Matwin
+icml-2011-67 | Large-Scale Convex Minimization with a Low-Rank Constraint | http://www.icml-2011.org/papers/232_icmlpaper.pdf | author:Shai Shalev-Shwartz, Alon Gonen, Ohad Shamir
+icml-2011-68 | Large-Scale Learning of Embeddings with Reconstruction Sampling | http://www.icml-2011.org/papers/491_icmlpaper.pdf | author:Yann Dauphin, Xavier Glorot, Yoshua Bengio
+icml-2011-69 | Learning Deep Energy Models | http://www.icml-2011.org/papers/557_icmlpaper.pdf | author:Jiquan Ngiam, Zhenghao Chen, pang Wei Koh, Andrew  Ng
+icml-2011-70 | Learning Discriminative Fisher Kernels | http://www.icml-2011.org/papers/178_icmlpaper.pdf | author:Laurens Van der Maaten
+icml-2011-71 | Learning Linear Functions with Quadratic and Linear Multiplicative Updates | http://www.icml-2011.org/papers/339_icmlpaper.pdf | author:Tom Bylander
+icml-2011-72 | Learning Mallows Models with Pairwise Preferences | http://www.icml-2011.org/papers/135_icmlpaper.pdf | author:Tyler Lu, Craig Boutilier
+icml-2011-73 | Learning Multi-View Neighborhood Preserving Projections | http://www.icml-2011.org/papers/304_icmlpaper.pdf | author:Novi Quadrianto, Christoph Lampert
+icml-2011-74 | Learning Output Kernels with Block Coordinate Descent | http://www.icml-2011.org/papers/54_icmlpaper.pdf | author:Francesco Dinuzzo, Cheng Soon Ong, Peter Gehler, Gianluigi Pillonetto
+icml-2011-75 | Learning Recurrent Neural Networks with Hessian-Free Optimization | http://www.icml-2011.org/papers/532_icmlpaper.pdf | author:James Martens, Ilya Sutskever
+icml-2011-76 | Learning Scoring Functions with Order-Preserving Losses and Standardized Supervision | http://www.icml-2011.org/papers/447_icmlpaper.pdf | author:David Buffoni, Clément Calauzenes, Patrick Gallinari, Nicolas Usunier
+icml-2011-77 | Learning attentional policies for tracking and recognition in video with deep networks | http://www.icml-2011.org/papers/490_icmlpaper.pdf | author:Loris Bazzani, Nando Freitas, Hugo Larochelle, Vittorio Murino, Jo-Anne Ting
+icml-2011-78 | Learning from Multiple Outlooks | http://www.icml-2011.org/papers/275_icmlpaper.pdf | author:Maayan Harel, Shie Mannor
+icml-2011-79 | Learning with Whom to Share in Multi-task Feature Learning | http://www.icml-2011.org/papers/344_icmlpaper.pdf | author:Zhuoliang Kang, Kristen Grauman, Fei  Sha
+icml-2011-80 | Linear Regression under Fixed-Rank Constraints: A Riemannian Approach | http://www.icml-2011.org/papers/350_icmlpaper.pdf | author:Gilles Meyer, Silvčre Bonnabel, Rodolphe Sepulchre, University of Ličge
+icml-2011-81 | Locally Linear Support Vector Machines | http://www.icml-2011.org/papers/508_icmlpaper.pdf | author:Lubor Ladicky, Philip Torr
+icml-2011-82 | Manifold Identification of Dual Averaging Methods for Regularized Stochastic Online Learning | http://www.icml-2011.org/papers/569_icmlpaper.pdf | author:Sangkyun Lee, Stephen Wright
+icml-2011-83 | Mapping kernels for trees | http://www.icml-2011.org/papers/503_icmlpaper.pdf | author:Kilho Shin, Marco Cuturi, Tetsuji Kuboyama
+icml-2011-84 | Max-margin Learning for Lower Linear Envelope Potentials in Binary Markov Random Fields | http://www.icml-2011.org/papers/171_icmlpaper.pdf | author:Stephen Gould
+icml-2011-85 | Mean-Variance Optimization in Markov Decision Processes | http://www.icml-2011.org/papers/156_icmlpaper.pdf | author:Shie Mannor, John Tsitsiklis
+icml-2011-86 | Message Passing Algorithms for the Dirichlet Diffusion Tree | http://www.icml-2011.org/papers/410_icmlpaper.pdf | author:David Knowles, Jurgen Van Gael, Zoubin Ghahramani
+icml-2011-87 | Minimal Loss Hashing for Compact Binary Codes | http://www.icml-2011.org/papers/246_icmlpaper.pdf | author:Mohammad Norouzi, David Fleet
+icml-2011-88 | Minimax Learning Rates for Bipartite Ranking and Plug-in Rules | http://www.icml-2011.org/papers/312_icmlpaper.pdf | author:Sylvain Robbiano, Stéphan Clémençon
+icml-2011-89 | Minimum Probability Flow Learning | http://www.icml-2011.org/papers/480_icmlpaper.pdf | author:Jascha Sohl-Dickstein, Peter Battaglino, Michael DeWeese
+icml-2011-90 | Multi-Label Classification on Tree- and DAG-Structured Hierarchies | http://www.icml-2011.org/papers/10_icmlpaper.pdf | author:Wei Bi, James Kwok
+icml-2011-91 | Multiclass Boosting with Hinge Loss based on Output Coding | http://www.icml-2011.org/papers/356_icmlpaper.pdf | author:Tianshi Gao, Daphne Koller
+icml-2011-92 | Multiclass Classification with Bandit Feedback using Adaptive Regularization | http://www.icml-2011.org/papers/211_icmlpaper.pdf | author:Koby Crammer, Claudio Gentile
+icml-2011-93 | Multimodal Deep Learning | http://www.icml-2011.org/papers/399_icmlpaper.pdf | author:Jiquan Ngiam, Aditya Khosla, Mingyu Kim, Juhan Nam, Honglak Lee, Andrew  Ng
+icml-2011-94 | Multiple Instance Learning with Manifold Bags | http://www.icml-2011.org/papers/74_icmlpaper.pdf | author:Boris Babenko, Nakul Verma, Piotr Dollar, Serge Belongie
+icml-2011-95 | Noisy matrix decomposition via convex relaxation: Optimal rates in high dimensions | http://www.icml-2011.org/papers/572_icmlpaper.pdf | author:Alekh Agarwal, Sahand Negahban, Martin Wainwright
+icml-2011-96 | On Autoencoders and Score Matching for Energy Based Models | http://www.icml-2011.org/papers/622_icmlpaper.pdf | author:Kevin Swersky, Marc'Aurelio Ranzato, David Buchman, Benjamin Marlin, Nando Freitas
+icml-2011-97 | On Bayesian PCA: Automatic Dimensionality Selection and Analytic Solution | http://www.icml-2011.org/papers/337_icmlpaper.pdf | author:Shinichi Nakajima, Masashi Sugiyama, Derin Babacan
+icml-2011-98 | On Information-Maximization Clustering: Tuning Parameter Selection and Analytic Solution | http://www.icml-2011.org/papers/61_icmlpaper.pdf | author:Masashi Sugiyama, Makoto Yamada, Manabu Kimura, Hirotaka Hachiya
+icml-2011-99 | On Random Weights and Unsupervised Feature Learning | http://www.icml-2011.org/papers/551_icmlpaper.pdf | author:Andrew Saxe, pang Wei Koh, Zhenghao Chen, Maneesh Bhand, Bipin Suresh, Andrew  Ng
+icml-2011-100 | On optimization methods for deep learning | http://www.icml-2011.org/papers/210_icmlpaper.pdf | author:Quoc Le, Jiquan Ngiam, Adam Coates, Abhik Lahiri, Bobby Prochnow, Andrew  Ng
+icml-2011-101 | On the Integration of Topic Modeling and Dictionary Learning | http://www.icml-2011.org/papers/375_icmlpaper.pdf | author:Lingbo Li, Mingyuan Zhou, Guillermo Sapiro, Lawrence Carin
+icml-2011-102 | On the Necessity of Irrelevant Variables | http://www.icml-2011.org/papers/216_icmlpaper.pdf | author:Dave Helmbold, Phil Long
+icml-2011-103 | On the Robustness of Kernel Density M-Estimators | http://www.icml-2011.org/papers/400_icmlpaper.pdf | author:JooSeuk Kim, Clayton Scott
+icml-2011-104 | On the Use of Variational Inference for Learning Discrete Graphical Models | http://www.icml-2011.org/papers/518_icmlpaper.pdf | author:Eunho Yang, Pradeep Ravikumar
+icml-2011-105 | On tracking portfolios with certainty equivalents on a generalization of Markowitz model: the Fool, the Wise and the Adaptive | http://www.icml-2011.org/papers/63_icmlpaper.pdf | author:Richard Nock, Brice Magdalou, Eric Briys, Frank Nielsen
+icml-2011-106 | Online AUC Maximization | http://www.icml-2011.org/papers/198_icmlpaper.pdf | author:Peilin Zhao, Steven Hoi, Rong Jin, Tianbao Yang
+icml-2011-107 | Online Discovery of Feature Dependencies | http://www.icml-2011.org/papers/473_icmlpaper.pdf | author:Alborz Geramifard, Finale Doshi, Joshua Redding, Nicholas Roy, Jonathan How
+icml-2011-108 | Online Submodular Minimization for Combinatorial Structures | http://www.icml-2011.org/papers/237_icmlpaper.pdf | author:Stefanie Jegelka, Jeff Bilmes
+icml-2011-109 | OptiML: An Implicitly Parallel Domain-Specific Language for Machine Learning | http://www.icml-2011.org/papers/373_icmlpaper.pdf | author:Arvind Sujeeth, HyoukJoong Lee, Kevin Brown, Tiark Rompf, Hassan Chafi, Michael Wu, Anand Atreya, Martin Odersky, Kunle Olukotun
+icml-2011-110 | Optimal Distributed Online Prediction | http://www.icml-2011.org/papers/404_icmlpaper.pdf | author:Ofer Dekel, Ran Gilad-Bachrach, Ohad Shamir, Lin Xiao
+icml-2011-111 | PILCO: A Model-Based and Data-Efficient Approach to Policy Search | http://www.icml-2011.org/papers/323_icmlpaper.pdf | author:Marc Deisenroth, Carl Rasmussen
+icml-2011-112 | Parallel Coordinate Descent for L1-Regularized Loss Minimization | http://www.icml-2011.org/papers/231_icmlpaper.pdf | author:Joseph Bradley, Aapo Kyrola, Daniel Bickson, Carlos Guestrin
+icml-2011-113 | Parsing Natural Scenes and Natural Language with Recursive Neural Networks | http://www.icml-2011.org/papers/125_icmlpaper.pdf | author:Richard Socher, Cliff Chiung-Yu Lin, Andrew  Ng, Chris Manning
+icml-2011-114 | Piecewise Bounds for Estimating Bernoulli-Logistic Latent Gaussian Models | http://www.icml-2011.org/papers/376_icmlpaper.pdf | author:Benjamin Marlin, Mohammad Khan, Kevin  Murphy
+icml-2011-115 | Predicting Legislative Roll Calls from Text | http://www.icml-2011.org/papers/333_icmlpaper.pdf | author:Sean Gerrish, David  Blei
+icml-2011-116 | Preserving Personalized Pagerank in Subgraphs | http://www.icml-2011.org/papers/434_icmlpaper.pdf | author:Andrea Vattani, Deepayan Chakrabarti, Maxim Gurevich
+icml-2011-117 | Probabilistic Matrix Addition | http://www.icml-2011.org/papers/531_icmlpaper.pdf | author:Amrudin  Agovic, Arindam Banerjee, Snigdhansu  Chatterje
+icml-2011-118 | Pruning nearest neighbor cluster trees | http://www.icml-2011.org/papers/195_icmlpaper.pdf | author:Samory Kpotufe, Ulrike von Luxburg
+icml-2011-119 | Relational Active Learning for Joint Collective Classification Models | http://www.icml-2011.org/papers/264_icmlpaper.pdf | author:Ankit Kuwadekar, Jennifer  Neville
+icml-2011-120 | Risk-Based Generalizations of f-divergences | http://www.icml-2011.org/papers/288_icmlpaper.pdf | author:Darío García-García, Ulrike von Luxburg, Raúl Santos-Rodríguez
+icml-2011-121 | Robust Matrix Completion and Corrupted Columns | http://www.icml-2011.org/papers/469_icmlpaper.pdf | author:Yudong Chen, Huan Xu, Constantine Caramanis, Sujay Sanghavi, Dept. of Electrical and Computer Engineering
+icml-2011-122 | SampleRank: Training Factor Graphs with Atomic Gradients | http://www.icml-2011.org/papers/428_icmlpaper.pdf | author:Michael Wick, Khashayar Rohanimanesh, Kedar Bellare, Aron Culotta, Andrew McCallum
+icml-2011-123 | Semi-supervised Penalized Output Kernel Regression for Link Prediction | http://www.icml-2011.org/papers/367_icmlpaper.pdf | author:Céline Brouard, Florence D'Alche-Buc, Marie Szafranski
+icml-2011-124 | Simultaneous Learning and Covering with Adversarial Noise | http://www.icml-2011.org/papers/261_icmlpaper.pdf | author:Andrew Guillory, Jeff Bilmes
+icml-2011-125 | Size-constrained Submodular Minimization through Minimum Norm Base | http://www.icml-2011.org/papers/506_icmlpaper.pdf | author:Kiyohito Nagano, Yoshinobu Kawahara, Kazuyuki Aihara
+icml-2011-126 | Sparse Additive Generative Models of Text | http://www.icml-2011.org/papers/534_icmlpaper.pdf | author:Jacob Eisenstein, Amr Ahmed, Eric  Xing
+icml-2011-127 | Speeding-Up Hoeffding-Based Regression Trees With Options | http://www.icml-2011.org/papers/349_icmlpaper.pdf | author:Elena Ikonomovska, Joăo  Gama, Bernard Zenko, Saso Dzeroski
+icml-2011-128 | Stochastic Low-Rank Kernel Learning for Regression | http://www.icml-2011.org/papers/505_icmlpaper.pdf | author:Pierre Machart, Thomas Peel, Sandrine Anthoine, Liva Ralaivola, Hervé Glotin
+icml-2011-129 | Structure Learning in Ergodic Factored MDPs without Knowledge of the Transition Function's In-Degree | http://www.icml-2011.org/papers/418_icmlpaper.pdf | author:Doran Chakraborty, Peter Stone
+icml-2011-130 | Submodular meets Spectral: Greedy Algorithms for Subset Selection, Sparse Approximation and Dictionary Selection | http://www.icml-2011.org/papers/542_icmlpaper.pdf | author:Abhimanyu Das, David Kempe
+icml-2011-131 | Suboptimal Solution Path Algorithm for Support Vector Machine | http://www.icml-2011.org/papers/326_icmlpaper.pdf | author:Masayuki Karasuyama, Ichiro Takeuchi
+icml-2011-132 | Support Vector Machines as Probabilistic Models | http://www.icml-2011.org/papers/386_icmlpaper.pdf | author:Vojtech Franc, Alexander Zien, Bernhard Schölkopf
+icml-2011-133 | Surrogate losses and regret bounds for cost-sensitive classification with example-dependent costs | http://www.icml-2011.org/papers/138_icmlpaper.pdf | author:Clayton Scott
+icml-2011-134 | Task Space Retrieval Using Inverse Feedback Control | http://www.icml-2011.org/papers/314_icmlpaper.pdf | author:Nikolay Jetchev, Marc Toussaint
+icml-2011-135 | The Constrained Weight Space SVM: Learning with Ranked Features | http://www.icml-2011.org/papers/465_icmlpaper.pdf | author:Kevin Small, Byron Wallace, Carla Brodley, Thomas Trikalinos
+icml-2011-136 | The Hierarchical Beta Process for Convolutional Factor Analysis and Deep Learning | http://www.icml-2011.org/papers/251_icmlpaper.pdf | author:Bo Chen, Gungor Polatkan, Guillermo Sapiro, David Dunson, Lawrence Carin
+icml-2011-137 | The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization | http://www.icml-2011.org/papers/485_icmlpaper.pdf | author:Adam Coates, Andrew  Ng
+icml-2011-138 | The Infinite Regionalized Policy Representation | http://www.icml-2011.org/papers/427_icmlpaper.pdf | author:Miao Liu, Xuejun Liao, Lawrence Carin
+icml-2011-139 | Time Series Clustering: Complex is Simpler! | http://www.icml-2011.org/papers/159_icmlpaper.pdf | author:Lei Li, B. Aditya Prakash
+icml-2011-140 | Topic Modeling with Nonparametric Markov Tree | http://www.icml-2011.org/papers/262_icmlpaper.pdf | author:Haojun Chen, David Dunson, Lawrence Carin
+icml-2011-141 | Towards Making Unlabeled Data Never Hurt | http://www.icml-2011.org/papers/548_icmlpaper.pdf | author:Yu-Feng Li, Zhi-Hua Zhou
+icml-2011-142 | Tree preserving embedding | http://www.icml-2011.org/papers/421_icmlpaper.pdf | author:Albert Shieh, Tatsunori Hashimoto, Edo Airoldi
+icml-2011-143 | Tree-Structured Infinite Sparse Factor Model | http://www.icml-2011.org/papers/432_icmlpaper.pdf | author:XianXing Zhang, David Dunson, Lawrence Carin
+icml-2011-144 | Ultra-Fast Optimization Algorithm for Sparse Multi Kernel Learning | http://www.icml-2011.org/papers/205_icmlpaper.pdf | author:Francesco Orabona, Luo Jie
+icml-2011-145 | Uncovering the Temporal Dynamics of Diffusion Networks | http://www.icml-2011.org/papers/354_icmlpaper.pdf | author:Manuel Gomez Rodriguez, David Balduzzi, Bernhard Schölkopf
+icml-2011-146 | Unimodal Bandits | http://www.icml-2011.org/papers/50_icmlpaper.pdf | author:Jia Yuan Yu, Shie Mannor
+icml-2011-147 | Unsupervised Models of Images by Spike-and-Slab RBMs | http://www.icml-2011.org/papers/591_icmlpaper.pdf | author:Aarron Courville, James Bergstra, Yoshua Bengio
+icml-2011-148 | Variational Heteroscedastic Gaussian Process Regression | http://www.icml-2011.org/papers/456_icmlpaper.pdf | author:Miguel Lazaro-Gredilla, Michalis Titsias
+icml-2011-149 | Variational Inference for Policy Search in changing situations | http://www.icml-2011.org/papers/441_icmlpaper.pdf | author:Gerhard Neumann
+icml-2011-150 | Variational Inference for Stick-Breaking Beta Process Priors | http://www.icml-2011.org/papers/475_icmlpaper.pdf | author:John Paisley, Lawrence Carin, David  Blei
+icml-2011-151 | Vector-valued Manifold Regularization | http://www.icml-2011.org/papers/60_icmlpaper.pdf | author:Ha Quang Minh, Vikas Sindhwani
+icml-2011-152 | k-DPPs: Fixed-Size Determinantal Point Processes | http://www.icml-2011.org/papers/611_icmlpaper.pdf | author:Alex Kulesza, Ben  Taskar
