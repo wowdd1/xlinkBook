@@ -122,10 +122,13 @@ class Utils:
 
     search_engin_dict = {'google' : 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=',\
                          'googlevideo' : 'https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q=',\
+                         'scholar' : 'https://scholar.google.com/scholar?hl=en&q=',\
                          'baidu' : 'http://www.baidu.com/s?word=',\
                          'bing' : 'http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq=',\
+                         'academic' : 'http://academic.research.microsoft.com/Search?query=',\
                          'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
                          'youtube' : 'https://www.youtube.com/results?search_query=',\
+                         'aminer' : 'http://aminer.org/search/',\
                          'youku' : 'http://www.soku.com/search_playlist/q_',\
                          'tudou' : 'http://www.soku.com/t/npsearch/'}
 
