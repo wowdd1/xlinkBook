@@ -301,8 +301,9 @@ def print_list(file_name):
                 data = record.get_id() + record.get_title() 
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
-                    data += record.get_describe()
-                    keyword = filter_keyword[filter_keyword.find(':') + 1 :].strip()
+                    data = record.get_describe()
+                    if filter_keyword.startswith('description:'):
+                        keyword = filter_keyword[filter_keyword.find(':') + 1 :].strip()
 
                 if filter(keyword.lower(), data):
                     filter_result.append(line)

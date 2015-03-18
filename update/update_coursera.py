@@ -11,6 +11,7 @@ class CourseraSpider(Spider):
     sessions = []
     universities = []
     instructors = []
+    course_specialization = {}
 
     def __init__(self):
         Spider.__init__(self)    
@@ -34,6 +35,13 @@ class CourseraSpider(Spider):
 
         url = "https://api.coursera.org/api/catalog.v1/instructors?fields=fullName,title,department,website,websiteTwitter,websiteFacebook,websiteLinkedin,websiteGplus,shortName" 
         self.loopJobj(url, self.instructors)
+
+    def initCourseSpecialization(self):
+        r = requests.get('https://www.coursera.org/maestro/api/specialization/list?currency=USD')
+        jobj = json.loads(r.text)
+        for specialization in jobj:
+            for course in specialization['topics']:
+                self.course_specialization[str(course['id'])] = specialization['name']
 
     def getInstructorName(self, instructorIds):
         name = ""
@@ -107,6 +115,9 @@ class CourseraSpider(Spider):
             remark += 'university:' + self.getUniversitieName(courseObj['links']['universities']) + ' '
             if self.getInstructorName(courseObj['links'].get('instructors', '')) != '':
                 remark += "instructors:" + self.getInstructorName(courseObj['links'].get('instructors',"")) + ' '
+            if self.course_specialization.get(str(courseObj['id']), '') != '':
+                remark += 'specialization:' + self.course_specialization[str(courseObj['id'])] + ' '
+
             title = courseObj['name'].strip()
             print session_id + " " + title + " " + url
             remark += 'description:' + self.delZh(courseObj['shortDescription'])
@@ -126,6 +137,7 @@ class CourseraSpider(Spider):
     
         print "loading data..."
         self.initList()
+        self.initCourseSpecialization()
 
         r = requests.get("https://api.coursera.org/api/catalog.v1/categories") 
         jobj = json.loads(r.text)

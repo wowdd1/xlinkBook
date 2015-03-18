@@ -62,10 +62,11 @@ class Tag():
         self.tag_homepage = 'homepage:'
         self.tag_organization = 'organization:'
         self.tag_platform = 'platform:'
+        self.tag_specialization = 'specialization:'
 
         self.tag_list = [self.tag_videourl, self.tag_author, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform]
+                         self.tag_organization, self.tag_platform, self.tag_specialization]
 
 class CourseRecord(Record):
 

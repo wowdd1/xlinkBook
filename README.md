@@ -2,9 +2,17 @@ usage:
 
     ./list.py -i filename or dirname -c column_num -f 'keyword or regexp' -s -d -w 100 -r 5
 
+-i: file name or dir name
+
 -c: column_num, from 1 to 3
 
--f: filename or dirname
+-f: filter keyword
+    
+    if you input -f 'description:xxxxxx', it will search the whole description that contain xxxxxx,
+    
+    if you input other keyword, like -f 'instructors:someone', it will search only the instructors field that contain instructors:someone,
+    
+    otherwise, it will search only in title that contain keyword
 
 -s: output with color
 
