@@ -140,6 +140,7 @@ class Utils:
                          'github' : 'https://github.com/search?q=',\
                          'googlecode' : 'https://code.google.com/hosting/search?q=',\
                          'sourceforge' : 'http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q=',\
+                         'mooc-list' : 'https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q=',\
                          'class-central' : 'https://www.class-central.com/search?q=',\
                          'guokr' : 'http://mooc.guokr.com/search/course/?wd=',\
                          'aminer' : 'http://aminer.org/search/',\
@@ -201,6 +202,8 @@ class Utils:
             if engin == 'youku' and item.lower().find('soku.com/search') != -1:
                 return item
             if engin == 'tudou' and item.lower().find('soku.com/t') != -1:
+                return item
+            if engin == 'mooc-list' and item.lower().find('google.com/cse') != -1:
                 return item
         return ''
 

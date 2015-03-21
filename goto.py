@@ -30,7 +30,7 @@ def usage(argv0):
 
 def get_all_engins():
     utils = Utils()
-    return ' , '.join(utils.search_engin_dict.keys())
+    return '  '.join(utils.search_engin_dict.keys())
 
 def openBrowser(url):
     if url == "":
