@@ -112,12 +112,14 @@ upgrade db:
 browse course in browser: 
 
     run ./goto.py -c "course number" or ./goto.py "course number"
+        ./goto.py -q 'keyword'
 
 ex: 
 
      ./goto.py -c "6.001"
      ./goto.py -c "E-100" -e 'yaohoo'
      ./goto.py -c '6.001' -e 'youtube'
+     ./goto.py -q 'data mining'
 
 display one course info:
 

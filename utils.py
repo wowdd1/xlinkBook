@@ -128,6 +128,15 @@ class Utils:
                          'academic' : 'http://academic.research.microsoft.com/Search?query=',\
                          'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
                          'youtube' : 'https://www.youtube.com/results?search_query=',\
+                         'coursera' : 'https://www.coursera.org/courses?query=',\
+                         'edx' : 'https://www.edx.org/course?search_query=',\
+                         'videolectures' : 'http://videolectures.net/site/search/?q=',\
+                         'udemy' : 'https://www.udemy.com/courses/search/?ref=home&q=',\
+                         'github' : 'https://github.com/search?q=',\
+                         'googlecode' : 'https://code.google.com/hosting/search?q=',\
+                         'sourceforge' : 'http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q=',\
+                         'class-central' : 'https://www.class-central.com/search?q=',\
+                         'guokr' : 'http://mooc.guokr.com/search/course/?wd=',\
                          'aminer' : 'http://aminer.org/search/',\
                          'youku' : 'http://www.soku.com/search_playlist/q_',\
                          'tudou' : 'http://www.soku.com/t/npsearch/'}

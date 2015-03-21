@@ -63,5 +63,4 @@ need_update_subject_list = [
     'statistics-data-analysis'
 ]
 def print_all_subject():
-    for (k, v) in subject_dict.items():
-        print v
+    print ' , '.join(subject_dict.values())
