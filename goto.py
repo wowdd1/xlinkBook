@@ -12,7 +12,7 @@ from update.all_subject import print_all_subject
 
 engin = ""
 keyword = ""
-use_subject = ""
+use_subject = u""
 search_keyword = False
 
 def usage(argv0):
@@ -50,8 +50,6 @@ def search(keyword, engin, search_keyword = False):
 
     if engin != '':
         url = utils.getEnginUrl(engin) + search_keywork
-        if engin == 'youtube':
-            url += ' playlist'
 
     if url != '':
         openBrowser(url)

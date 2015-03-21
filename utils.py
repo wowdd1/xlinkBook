@@ -126,6 +126,11 @@ class Utils:
                          'baidu' : 'http://www.baidu.com/s?word=',\
                          'bing' : 'http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq=',\
                          'academic' : 'http://academic.research.microsoft.com/Search?query=',\
+                         'xueshu' : 'http://xueshu.baidu.com/s?wd=',\
+                         'dblp' : 'http://dblp.uni-trier.de/search?q=',\
+                         'citeseerx' : 'http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q=',\
+                         'springer' : 'http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText=',\
+                         'dblife' : 'http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query=',\
                          'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
                          'youtube' : 'https://www.youtube.com/results?search_query=',\
                          'coursera' : 'https://www.coursera.org/courses?query=',\
