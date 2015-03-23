@@ -147,6 +147,13 @@ class Utils:
                          'youku' : 'http://www.soku.com/search_playlist/q_',\
                          'tudou' : 'http://www.soku.com/t/npsearch/'}
 
+
+    def removeDoubleSpace(self, text):
+        text = text.replace('\n','')
+        while (text.find('  ') != -1):
+            text = text.replace('  ', ' ')
+        return text
+
     def validEngin(self, engin):
         for item in self.search_engin_dict.keys():
             if item.lower().find(engin.lower()) != -1:
