@@ -24,7 +24,7 @@ class ScholarOctopusSpider(Spider):
             file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + key, self.school.lower())
             file_lines = self.countFileLineNum(file_name)
             if file_lines == len(v):
-                print school + ' no need upgrade\n'
+                print self.school + ' no need upgrade\n'
                 return
             f = self.open_db(file_name + ".tmp")
             self.count = 0
