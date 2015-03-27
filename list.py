@@ -278,9 +278,7 @@ def filter(keyword, data):
                 if match(con, data):
                     return True
         
-    if data.lower().find(keyword.lower()) != -1 or re.match(keyword, data) != None:
-        return True
-    return False
+    return match(keyword, data)
     
 
 def print_list(file_name):
@@ -305,7 +303,7 @@ def print_list(file_name):
                     if filter_keyword.startswith('description:'):
                         keyword = filter_keyword[filter_keyword.find(':') + 1 :].strip()
 
-                if filter(keyword.lower(), data):
+                if filter(keyword, data):
                     filter_result.append(line)
             all_lines = filter_result[:]
         if len(all_lines) == 0:
