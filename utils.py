@@ -140,9 +140,12 @@ class Utils:
                          'github' : 'https://github.com/search?q=',\
                          'googlecode' : 'https://code.google.com/hosting/search?q=',\
                          'sourceforge' : 'http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q=',\
+                         'coursetalk' : 'http://www.coursetalk.com/search?q=',\
                          'mooc-list' : 'https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q=',\
                          'class-central' : 'https://www.class-central.com/search?q=',\
                          'guokr' : 'http://mooc.guokr.com/search/course/?wd=',\
+                         'coursegraph' : 'http://coursegraph.com/search_results/',\
+                         'moozhi' : 'http://www.moozhi.com/search/course?keywords=',\
                          'aminer' : 'http://aminer.org/search/',\
                          'youku' : 'http://www.soku.com/search_playlist/q_',\
                          'tudou' : 'http://www.soku.com/t/npsearch/'}
