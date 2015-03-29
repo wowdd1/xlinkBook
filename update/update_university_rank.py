@@ -129,10 +129,36 @@ class UniversityRankSpider(Spider):
                 self.cancel_upgrade(file_name)
                 print "no need upgrade\n"
 
+    def processUsnewsData(self):
+        self.school = 'usnews'
+        sub_list = ['biology-biochemistry', 'computer-science', 'economics-business', 'engineering', 'mathematics', 'neuroscience-behavior',\
+                    'physics', 'psychiatry-psychology']
+        for sub in sub_list:
+            r = requests.get('http://www.usnews.com/education/best-global-universities/search?region=&subject=' + sub + '&name=')
+            soup = BeautifulSoup(r.text)
+            file_name = self.get_file_name(self.subject + '/' + self.school + '/' + sub, self.school)
+            file_lines = self.countFileLineNum(file_name)
+            f = self.open_db(file_name + ".tmp")
+            self.count = 0
+            print 'processing ' + sub
+            for h2 in soup.find_all('h2', class_='h-taut'):
+               print h2.a.text
+               self.count += 1
+               self.write_db(f, self.school + '-' + sub + '-' + str(self.count), h2.a.text, h2.a['href'])
+
+            self.close_db(f)
+            if file_lines != self.count and self.count > 0:
+                self.do_upgrade_db(file_name)
+                print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+            else:
+                self.cancel_upgrade(file_name)
+                print "no need upgrade\n"
+
     def doWork(self):
         self.processQSData()
         self.processTimesHigherEducationData()
         self.processARWUData()
+        self.processUsnewsData()
 
 
 start = UniversityRankSpider()
