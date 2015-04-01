@@ -34,3 +34,6 @@
 [submodule "paper/icml2013preview"]
 	path = paper/icml2013preview
 	url = https://github.com/benhamner/icml2013preview.git
+[submodule "external/Qix"]
+	path = external/Qix
+	url = https://github.com/ty4z2008/Qix.git
