@@ -356,3 +356,24 @@ class Utils:
         while(html.find('<') != -1 and html.find('>') != -1):
             html = html.replace(html[html.find('<') : html.find('>') + 1], '')
         return html
+
+    def reflection_call(self, module, cls, method, cls_arg=None, method_arg=None):
+        __import__(module)
+        m = sys.modules[module]
+        for str in dir(m):
+            if str == cls:
+                att=getattr(m,str)
+                obj = None
+                if cls_arg != None:
+                    obj = att(cls_arg)
+                else:
+                    obj = att()
+                for att2 in dir(att):
+                    if att2 == method:
+                        func = getattr(obj, att2)
+                        if method_arg != None:
+                            return apply(func, method_arg)    
+                        else:
+                            return apply(func)
+
+

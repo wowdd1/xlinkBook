@@ -102,8 +102,23 @@ class CourseRecord(Record):
 
         return None
 
+    def get_videourl(self):
+        return self.get_tag_content(self.tag.tag_videourl)
+
+    def get_author(self):
+        return self.get_tag_content(self.tag.tag_author)
+
+    def get_ratings(self):
+        return self.get_tag_content(self.tag.tag_ratings)
+
+    def get_term(self):
+        return self.get_tag_content(self.tag.tag_term)
+
     def get_prereq(self):
         return self.get_tag_content(self.tag.tag_prereq)
+
+    def get_toprepo(self):
+        return self.get_tag_content(self.tag.tag_toprepo)
 
     def get_project(self):
         return self.get_tag_content(self.tag.tag_project)
@@ -120,11 +135,9 @@ class CourseRecord(Record):
     def get_features(self):
         return self.get_tag_content(self.tag.tag_features)
 
-    def get_videourl(self):
-        return self.get_tag_content(self.tag.tag_videourl)
-
     def get_instructors(self):
         return self.get_tag_content(self.tag.tag_instructors)
+
     def get_description(self):
         return self.get_tag_content(self.tag.tag_description)
 
@@ -133,6 +146,22 @@ class CourseRecord(Record):
         if content != None:
             return content.replace(self.tag.tag_textbook, '')
         return content
+
+    def get_paper(self):
+        return self.get_tag_content(self.tag.tag_paper)
+
+    def get_homepage(self):
+        return self.get_tag_content(self.tag.tag_homepage)
+
+    def get_organization(self):
+        return self.get_tag_content(self.tag.tag_organization)
+
+    def get_platform(self):
+        return self.get_tag_content(self.tag.tag_platform)
+
+    def get_specialization(self):
+        return self.get_tag_content(self.tag.tag_specialization)
+
 
 
 '''

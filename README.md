@@ -8,9 +8,7 @@ usage:
 
 -f: filter keyword
     
-    if you input -f 'description:xxxxxx', it will search the whole description that contain xxxxxx,
-    
-    if you input other keyword, like -f 'instructors:someone', it will search only the instructors field that contain instructors:someone,
+    if you input keyword, like -f 'instructors:someone', it will search only the instructors field that contain someone,
     
     otherwise, it will search only in title that contain keyword
 
