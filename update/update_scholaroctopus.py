@@ -71,6 +71,8 @@ class ScholarOctopusSpider(Spider):
 
                 i = 0
                 for dl in soup.find_all('dl'):
+                    if dl.parent.name == 'dl':
+                        continue
                     soup1 = BeautifulSoup(dl.prettify())
                     paper_obj = {}
                     for dt in soup1.find_all('dt'):
@@ -83,12 +85,14 @@ class ScholarOctopusSpider(Spider):
                         paper_obj['authors'] = ''
                         #print dt.text[0 : dt.text.find('(')].strip()
                         if dt.text.find('(') != -1 :
-                            paper_obj['title'] = dt.text[0 : dt.text.find('(')].strip()
+                            paper_obj['title'] = self.util.removeDoubleSpace(dt.text[0 : dt.text.find('(')].replace('\n','')).strip()
                         else:
                             paper_obj['title'] = self.util.removeDoubleSpace(dt.text.replace('\n',''))
                         soup2 = BeautifulSoup(dt.prettify())
                         for a in soup2.find_all('a'):
                             paper_obj[a.text.strip().lower()] = a['href']
+                        if paper_obj.get('pdf','') == '':
+                            paper_obj['pdf'] = 'https://scholar.google.com/scholar?hl=en&q=' + paper_obj['title']
                         paper_list.append(paper_obj)
 
                     if len(soup1.find_all('dd')) != len(soup1.find_all('dt')):
@@ -108,12 +112,10 @@ class ScholarOctopusSpider(Spider):
                         paper_list[i]['authors'] = author_list
                         #print paper_list[i]['authors']
                         i += 1
-                
+                #print len(paper_list) 
                 self.doWork(paper_list)
 
 
 start = ScholarOctopusSpider()
 start.doWork()
-start.doWork2()
-start.doWork2()
 start.doWork2()
