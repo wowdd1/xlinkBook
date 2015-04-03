@@ -149,7 +149,32 @@ class ScholarOctopusSpider(Spider):
                     #print paper_obj['title']
         self.doWork(paper_list)
 
+    def getIcmlPaper(self):
+        r = requests.get('http://machinelearning.wustl.edu/mlpapers/venues')
+        paper_list = []
+        text = r.text[r.text.find('<a href="./venue') :]
+        links = text.split('</a>')
+        for a in links:
+            if a.find('ICML') != -1:
+                url, title = a[a.find('./') : ].split('">')
+                url = 'http://machinelearning.wustl.edu/mlpapers' + url[1 :]
+                conference, year = title[title.find('(') + 1 : title.find(')')].split('-')
+                conference = conference.lower()
+                year = '20' + year
+                if int(year) >2007:
+                    continue
+                r = requests.get(url)
+                sp = BeautifulSoup(r.text)
+                for a in sp.find_all('a'):
+                    if a['href'].startswith('../papers'):
+                        paper_obj = self.initPaperObj(conference, year)
+                        paper_obj['pdf'] = 'http://machinelearning.wustl.edu/mlpapers' + a['href'][2:].replace('/papers/', '/paper_files/') + '.pdf'
+                        paper_obj['title'] = a.text.replace('\n', '')
+                        paper_list.append(paper_obj)
+        self.doWork(paper_list)
+
 start = ScholarOctopusSpider()
 start.doWork()
 start.getCvPaper()
 start.getNipsPaper()
+start.getIcmlPaper()
