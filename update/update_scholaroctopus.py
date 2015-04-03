@@ -47,7 +47,18 @@ class ScholarOctopusSpider(Spider):
                 self.cancel_upgrade(file_name)
                 print "no need upgrade\n"
 
-    def doWork2(self):
+    def initPaperObj(self, conference, year):
+        paper_obj = {}
+        paper_obj['conference'] = conference
+        paper_obj['x'] = 0.34087790145304875
+        paper_obj['y'] = 0.25455838359147459
+        paper_obj['year'] = year
+        paper_obj['pdf'] = ''
+        paper_obj['authors'] = ''
+        paper_obj['title'] = ''
+        return paper_obj
+
+    def getCvPaper(self):
         conference = ''
         year = ''
         r = requests.get('http://cvpapers.com')
@@ -76,13 +87,7 @@ class ScholarOctopusSpider(Spider):
                     soup1 = BeautifulSoup(dl.prettify())
                     paper_obj = {}
                     for dt in soup1.find_all('dt'):
-                        paper_obj = {}
-                        paper_obj['conference'] = conference
-                        paper_obj['x'] = 0.34087790145304875
-                        paper_obj['y'] = 0.25455838359147459
-                        paper_obj['year'] = year
-                        paper_obj['pdf'] = ''
-                        paper_obj['authors'] = ''
+                        paper_obj = self.initPaperObj(conference, year)
                         #print dt.text[0 : dt.text.find('(')].strip()
                         if dt.text.find('(') != -1 :
                             paper_obj['title'] = self.util.removeDoubleSpace(dt.text[0 : dt.text.find('(')].replace('\n','')).strip()
@@ -115,7 +120,36 @@ class ScholarOctopusSpider(Spider):
                 #print len(paper_list) 
                 self.doWork(paper_list)
 
+    def getNipsPaper(self):
+        r = requests.get('http://papers.nips.cc/')
+        soup = BeautifulSoup(r.text)
+        paper_list = []
+        for li in soup.find_all('li'):
+            if li.a.text == 'Books':
+                continue
+            title = li.a.text[li.a.text.find('(') : ].replace('(', '').replace(')', '').strip().split(' ')
+            conference = title[0]
+            year = title[1]
+            if int(year) > 2006:
+                print 'process ' + ' '.join(title)
+                r = requests.get('http://papers.nips.cc' + li.a['href'])
+                sp = BeautifulSoup(r.text)
+                for li in sp.find_all('li'):
+                    if li.a.text == 'Books':
+                        continue
+                    sp2 = BeautifulSoup(li.prettify())
+                    paper_obj = self.initPaperObj(conference, year)
+                    author_list = []
+                    for a in sp2.find_all('a', class_='author'):
+                        author_list.append(a.text.strip())
+                    paper_obj['authors'] = author_list
+                    paper_obj['title'] = li.a.text
+                    paper_obj['pdf'] = 'http://papers.nips.cc' + li.a['href'] + '.pdf'
+                    paper_list.append(paper_obj)
+                    #print paper_obj['title']
+        self.doWork(paper_list)
 
 start = ScholarOctopusSpider()
 start.doWork()
-start.doWork2()
+start.getCvPaper()
+start.getNipsPaper()
