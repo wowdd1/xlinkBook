@@ -130,7 +130,7 @@ class ScholarOctopusSpider(Spider):
             title = li.a.text[li.a.text.find('(') : ].replace('(', '').replace(')', '').strip().split(' ')
             conference = title[0]
             year = title[1]
-            if int(year) > 2006:
+            if int(year) > 1999:
                 print 'process ' + ' '.join(title)
                 r = requests.get('http://papers.nips.cc' + li.a['href'])
                 sp = BeautifulSoup(r.text)
