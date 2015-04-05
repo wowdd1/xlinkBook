@@ -6,6 +6,7 @@ class MicrosoftAcademicSearchSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = 'mas'
+        self.subject = 'rank'
         self.base_url = 'http://academic.research.microsoft.com'
 
     def processSubType(self, subject, url):
@@ -15,8 +16,8 @@ class MicrosoftAcademicSearchSpider(Spider):
         entitytype_dict = {}
         for li in soup.find_all('li'):
             if li.a != None and li.a.attrs.has_key("entitytype"):
-                if li.a['entitytype'] == '1' or li.a['entitytype'] == '2':
-                #if li.a['entitytype'] == '3' or li.a['entitytype'] == '4':
+                #if li.a['entitytype'] == '1' or li.a['entitytype'] == '2':
+                if li.a['entitytype'] == '3' or li.a['entitytype'] == '4':
                     entitytype_dict[li.a['entitytype']] = li.a.text.strip().lower()
 
         for li in soup.find_all('li'):
@@ -27,7 +28,7 @@ class MicrosoftAcademicSearchSpider(Spider):
                 top_domain_id = arg_list[0][arg_list[0].find('=') + 1 : ]
                 sub_domain_id = arg_list[1][arg_list[1].find('=') + 1 : ]
                 for entitytype in entitytype_dict.keys():
-                    file_name = self.get_file_name(subject + '/' + self.school + '/'+ li.a.text.lower() + '-' + entitytype_dict.get(entitytype), self.school)
+                    file_name = self.get_file_name(self.subject + '/' + self.school + '/'+ li.a.text.lower() + '-' + entitytype_dict.get(entitytype), self.school)
                     file_lines = self.countFileLineNum(file_name)
                     f = self.open_db(file_name + ".tmp")
                     self.count = 0
@@ -76,7 +77,7 @@ class MicrosoftAcademicSearchSpider(Spider):
         url = self.base_url + '/RankList?entitytype=7&topDomainID=' + top_domain_id + '&subDomainID=0&last=0&start=1&end=100' 
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
-        file_name = self.get_file_name(subject + '/' + self.school + '/'+ subject + '-organizations', self.school)
+        file_name = self.get_file_name(self.subject + '/' + self.school + '/'+ subject + '-organizations', self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
