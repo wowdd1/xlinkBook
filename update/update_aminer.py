@@ -23,8 +23,27 @@ class AminerSpider(Spider):
                 print conf['conf_name'] + ' ' + year
                 for paper in papers['papers']:
                     print paper['title']
+                    isBest = ''
+                    if paper['isBest']:
+                        isBest = "best paper"
+                    year = str(paper['year'])
+                    rank = 'ratings:' + str(paper['rank'])
+                    citation = ''
+                    if paper['n_citation'] > 0:
+                        citation = str(paper['n_citation']) + ' citation'
+                    authors = []
+                    if paper.get('authors', '') != '':
+                        for obj in paper['authors']:
+                            if obj.get('name', '') != '':
+                                authors.append(str(obj['name']))
+                        authors = ', '.join(authors)           
+                    else:
+                        authors = ''
+                    authors = 'author:' + authors
+ 
+                    desc = 'description:' + year + ' ' + isBest + ' ' + citation + ' ' + rank + ' ' + authors
                     self.count += 1
-                    self.write_db(f, conf['conf_name'] + '-bp-' + str(self.count), paper['title'], '')
+                    self.write_db(f, conf['conf_name'] + '-bp-' + str(self.count), paper['title'], ''.join(paper['url']), desc)
 
             self.close_db(f)
             if file_lines != self.count and self.count > 0:
@@ -56,10 +75,10 @@ class AminerSpider(Spider):
             print "no need upgrade\n"
 
     def doWork(self):
-        self.processBestResearcher('Social Network')
-        self.processBestResearcher('Data Mining')
-        self.processBestResearcher('Machine Learning')
-        self.processBestResearcher('Deep Learning')
+        #self.processBestResearcher('Social Network')
+        #self.processBestResearcher('Data Mining')
+        #self.processBestResearcher('Machine Learning')
+        #self.processBestResearcher('Deep Learning')
         self.processBestpaper()
 
 
