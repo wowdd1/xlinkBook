@@ -14,7 +14,7 @@ class AminerSpider(Spider):
         r = requests.get('http://api2.aminer.org/api/bestpaper/best_vs_topcited?')
         jobj = json.loads(r.text)
         for conf in jobj:
-            file_name = self.get_file_name(self.subject + '/' + self.school + '/' + conf['conf_name'], self.school)
+            file_name = self.get_file_name(self.subject + '/' + self.school + '/' + conf['conf_name'].replace('/','-').lower() + '-ccf-' + conf['values'][0].lower(), self.school)
             file_lines = self.countFileLineNum(file_name)
             f = self.open_db(file_name + ".tmp")
             self.count = 0
@@ -43,7 +43,7 @@ class AminerSpider(Spider):
  
                     desc = 'description:' + year + ' ' + isBest + ' ' + citation + ' ' + rank + ' ' + authors
                     self.count += 1
-                    self.write_db(f, conf['conf_name'] + '-bp-' + str(self.count), paper['title'], ''.join(paper['url']), desc)
+                    self.write_db(f, conf['conf_name'].lower() + '-bp-' + str(self.count), paper['title'], ''.join(paper['url']), desc)
 
             self.close_db(f)
             if file_lines != self.count and self.count > 0:
