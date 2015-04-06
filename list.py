@@ -241,6 +241,17 @@ def includeDesc(keyword):
             return True
     return False
 
+def getKeywordAndData(filter_keyword, line):
+    data = ''
+    for k in keyword_list:
+        if filter_keyword.find(k) != -1:
+            filter_keyword = filter_keyword.replace(k,'')
+            da = utils.reflection_call('record', 'CourseRecord', 'get_' + k[0 : len(k) - 1], line)
+            if da != None:
+                data += da + ' '
+    
+    return filter_keyword, data
+
 def containLogicalOperators(keyword):
     if keyword.find('#or') != -1 or keyword.find('#and') != -1 or keyword.find('#not') != -1:
         return True
@@ -269,6 +280,7 @@ def filter(keyword, data):
                     continue
                 if match(con, data) == False:
                     return False
+            return True
 
         if keyword.find('#or') != -1:
             conditions = keyword.split('#or')
@@ -299,13 +311,7 @@ def print_list(file_name):
                 data = record.get_id() + record.get_title() 
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
-                    method = filter_keyword[0 : filter_keyword.find(':')].strip()
-                    data = utils.reflection_call('record', 'CourseRecord', 'get_' + method, line)
-                    if data == None:
-                        data = ''
-                    #data = record.get_describe()
-                    #if filter_keyword.startswith('description:'):
-                    keyword = filter_keyword[filter_keyword.find(':') + 1 :].strip()
+                    keyword, data = getKeywordAndData(filter_keyword, line)
 
                 if filter(keyword, data):
                     filter_result.append(line)
