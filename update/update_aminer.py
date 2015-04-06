@@ -141,11 +141,11 @@ class AminerSpider(Spider):
                 print "no need upgrade\n"
 
     def doWork(self):
-        #self.processBestResearcher('Social Network')
-        #self.processBestResearcher('Data Mining')
-        #self.processBestResearcher('Machine Learning')
-        #self.processBestResearcher('Deep Learning')
-        #self.processBestpaper()
+        self.processBestResearcher('Social Network')
+        self.processBestResearcher('Data Mining')
+        self.processBestResearcher('Machine Learning')
+        self.processBestResearcher('Deep Learning')
+        self.processBestpaper()
         self.processOrg()
         self.processConf()
 
