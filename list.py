@@ -508,7 +508,8 @@ def get_lines_from_dir(dir_name):
             if current_level >= level + 1:
                 continue
             current_level = 1
-            print_dir(full_path)
+            for line in get_lines_from_dir(full_path):
+                all_lines.append(line)
     return all_lines
 
 def print_dir(dir_name):
