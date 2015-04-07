@@ -24,6 +24,7 @@ course_num_len=10
 color_index=0
 output_with_color = False
 output_with_describe = False
+merger_result = False
 top_row = 0
 
 utils = Utils()
@@ -47,6 +48,7 @@ def usage():
     print '\t-r,--row: the rows of the describe'
     print '\t-t,--top: the top number rows for display'
     print '\t-t,--level: the max search level that the file is in'
+    print '\t-m,--merger: merger the results'
     os.system("cat README.md")
 
 def print_keyword(file_name):
@@ -293,22 +295,16 @@ def filter(keyword, data):
     return match(keyword, data)
     
 
-def print_list(file_name):
-    current = 0
-    old_line = ""
-    old_line_2 = ""
-    color_index = 0
-    filter_keyword_2 = ''
-    global top_row
+def getLines(file_name):
+    all_lines = []
     if os.path.exists(file_name):
-
         f = open(file_name,'rU')
         all_lines = f.readlines()
         if filter_keyword != "":
             filter_result = []
             for line in all_lines:
                 record = Record(line)
-                data = record.get_id() + record.get_title() 
+                data = record.get_id() + record.get_title()
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
                     keyword, data = getKeywordAndData(filter_keyword, line)
@@ -316,8 +312,21 @@ def print_list(file_name):
                 if filter(keyword, data):
                     filter_result.append(line)
             all_lines = filter_result[:]
-        if len(all_lines) == 0:
-            return  
+    return all_lines
+
+def print_list(file_name, lines = None):
+    current = 0
+    old_line = ""
+    old_line_2 = ""
+    color_index = 0
+    filter_keyword_2 = ''
+    global top_row
+    if file_name != '':
+        all_lines = getLines(file_name)
+    else:
+        all_lines = lines
+
+    if len(all_lines) > 0:
         line_count = len(all_lines)
         if top_row > 0 and top_row > line_count:
             top_row = line_count
@@ -469,13 +478,39 @@ def print_list(file_name):
             print_table_separator(1)
 
         if current > 0:
+            message = ''
             if filter_keyword != "":
-                print "\nTotal " + str(current) + " records cotain " + filter_keyword + ", File: " + file_name + "\n\n"
+                message = "\nTotal " + str(current) + " records cotain " + filter_keyword
             else:
-                print "\nTotal " + str(current) + " records, File: " + file_name + "\n\n"
+                message = "\nTotal " + str(current) + " records"
+            if file_name != '':
+                message += ", File: " + file_name + "\n\n"
+            else:
+                message += "\n\n"
+            print message
             
 current_level = 1
 level = 100
+def get_lines_from_dir(dir_name):
+    global current_level
+    current_level += 1
+    cur_list = os.listdir(dir_name)
+    all_lines = []
+    for item in cur_list:
+        if item.startswith("."):
+            continue
+
+        full_path = os.path.join(dir_name, item)
+        if os.path.isfile(full_path):
+            for line in getLines(full_path):
+                all_lines.append(line)
+        else:
+            if current_level >= level + 1:
+                continue
+            current_level = 1
+            print_dir(full_path)
+    return all_lines
+
 def print_dir(dir_name):
     global current_level
     current_level += 1
@@ -503,9 +538,9 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:m', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -545,6 +580,8 @@ def main(argv):
             top_row = int(a)
         elif o in ('-l', '--level'):
             level = int(a)
+        elif o in ('-m', '--merger'):
+            merger_result = True
 
     if source == "":
         print "you must input the input file or dir"
@@ -558,6 +595,8 @@ def main(argv):
 
     if os.path.isfile(source):
         print_list(source)
+    elif merger_result:
+        print_list('', get_lines_from_dir(source))
     else:
         print_dir(source)
 

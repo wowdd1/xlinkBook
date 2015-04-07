@@ -22,6 +22,8 @@ usage:
 
 -t: the top rows for display
 
+-m: merger the results
+
 keyword or regexp: the keyword for filter course
 
 
