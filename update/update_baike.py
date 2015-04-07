@@ -32,7 +32,7 @@ class BaikeSpider(Spider):
                         pos_2 = line.find(" ", pos_1 + 1)
                         pos_3 = line.find(" ", pos_2 + 1)
                         print line[0 : pos_1] + " " + line[pos_1 + 1 : pos_3] + " " + line[pos_3 + 1 :]
-                        self.write_db(f, line[0 : pos_1], line[pos_1 + 1 : pos_3], "", line[pos_3 + 1 :])
+                        self.write_db(f, line[0 : pos_1], line[pos_1 + 1 : pos_3], "", 'description:' + line[pos_3 + 1 :])
                         self.count += 1
 
         self.close_db(f)
@@ -68,7 +68,7 @@ class BaikeSpider(Spider):
                         continue
                     if i == 3:
                         print year + " " + title + " " + link
-                        remark = line
+                        remark = 'description:' + line
                         self.count += 1
                         self.write_db(f, year, title.strip(), link, remark)
                         i = 0
