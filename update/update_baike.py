@@ -10,13 +10,14 @@ class BaikeSpider(Spider):
 
     def __init__(self):
         Spider.__init__(self)
-        self.school = "bake"
+        self.subject = 'rank'
+        self.school = "baike"
 
 
     def processBaikeData(self, url):
         r = requests.get(url)
         soup = BeautifulSoup(r.text);
-        file_name = self.get_file_name("eecs/programmer", self.school)
+        file_name = self.get_file_name(self.subject + "/programmer", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -44,7 +45,7 @@ class BaikeSpider(Spider):
 
     def processWikiTuringData(self, url):
 
-        file_name = self.get_file_name("eecs/Turing-Award", self.school)
+        file_name = self.get_file_name(self.subject + "/Turing-Award", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -83,7 +84,7 @@ class BaikeSpider(Spider):
 
     def processWikiPioneerData(self, url):
 
-        file_name = self.get_file_name("eecs/Computer-Pioneer-Award", self.school)
+        file_name = self.get_file_name(self.subject + "/Computer-Pioneer-Award", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
