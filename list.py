@@ -314,17 +314,13 @@ def getLines(file_name):
             all_lines = filter_result[:]
     return all_lines
 
-def print_list(file_name, lines = None):
+def print_list(all_lines, file_name = ''):
     current = 0
     old_line = ""
     old_line_2 = ""
     color_index = 0
     filter_keyword_2 = ''
     global top_row
-    if file_name != '':
-        all_lines = getLines(file_name)
-    else:
-        all_lines = lines
 
     if len(all_lines) > 0:
         line_count = len(all_lines)
@@ -522,7 +518,7 @@ def print_dir(dir_name):
 
         full_path = os.path.join(dir_name, item)
         if os.path.isfile(full_path):
-            print_list(full_path)
+            print_list(getLines(full_path), full_path)
         else:
             if current_level >= level + 1:
                 continue
@@ -595,9 +591,9 @@ def main(argv):
         return
 
     if os.path.isfile(source):
-        print_list(source)
+        print_list(getLines(source), source)
     elif merger_result:
-        print_list('', get_lines_from_dir(source))
+        print_list(get_lines_from_dir(source))
     else:
         print_dir(source)
 
