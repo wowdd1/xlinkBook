@@ -21,7 +21,8 @@ subject_dict = {\
     "Rank" : 'rank',\
     "Design" : "design",\
     "Economics" : "economics",\
-    "Finance" : "economics-finance",\
+    "Finance" : "economics",\
+    "Financial" : "economics",\
     "Education" : "education",\
     "Electronics" : "eecs",\
     "Electrical Engineering" : "eecs",\
@@ -53,6 +54,7 @@ subject_dict = {\
 need_update_subject_list = [
     'eecs',
     'mathematics',
+    #'business-management',
     #'economics',
     'youtube',
     'rank',
