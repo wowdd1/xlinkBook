@@ -139,4 +139,3 @@ ex:
     ./find_professor "Andrew Ng"
 
 
-QQ Group: 416863042
