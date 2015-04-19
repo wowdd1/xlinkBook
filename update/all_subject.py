@@ -55,7 +55,7 @@ need_update_subject_list = [
     'eecs',
     'mathematics',
     #'business-management',
-    #'economics',
+    'economics',
     'youtube',
     'rank',
     #'physics',
