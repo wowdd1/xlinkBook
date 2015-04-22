@@ -41,7 +41,7 @@ class GithubSpider(Spider):
 
     result = ""
     request_times = 0
-    token = "42c2199b0157b68e837c20fe27a86dc3d6662e83"
+    token = 'be56c99875079d3119702e8dbe00405165d41f40'
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -223,9 +223,10 @@ class GithubSpider(Spider):
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
-
-        print "get spark data..."
-        self.processGithubData("spark", 350, 100)
+        keywords = ['spark', 'machine learning', 'deep leanrning']
+        for keyword in keywords:
+            print "get " + keyword + " data..."
+            self.processGithubData(keyword, 350, 100)
         print "get user data..."
         self.processGithubiUserData("", 500, 100)
         self.processGithubiUserData("china", 500, 100)
