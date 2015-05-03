@@ -34,6 +34,9 @@ line_id_max_len_list = [0, 0, 0]
 tag = Tag()
 keyword_list = tag.tag_list
 
+plus = '+'
+subtraction = '-'
+vertical = '|'
 
 def usage():
     print 'usage:'
@@ -49,7 +52,35 @@ def usage():
     print '\t-t,--top: the top number rows for display'
     print '\t-t,--level: the max search level that the file is in'
     print '\t-m,--merger: merger the results'
+    print '\t-b,--border: border style'
     os.system("cat README.md")
+
+
+def border_style_one():
+    global plus, subtraction, vertical
+    plus = ' '
+    subtraction = ' '
+    vertical = ' '
+
+def border_style_two():
+    global plus, subtraction, vertical
+    plus = '+'
+    subtraction = '-'
+    vertical = '|'
+
+def border_style_three():
+    global plus, subtraction, vertical
+    plus = ' '
+    subtraction = '.'
+    vertical = '.'
+
+def chanage_border(style):
+    if style == '1':
+        border_style_one()
+    elif style == '2':
+        border_style_two()
+    elif style == '3':
+        border_style_three()
 
 def print_keyword(file_name):
     cmd = '\
@@ -80,16 +111,16 @@ def align_id_title(record):
 
     if len(course_num) < course_num_len:
         space = get_space(0, course_num_len - len(course_num))
-        return course_num + space + "|"+ course_name
+        return course_num + space + vertical + course_name
     else:
-        return course_num + "|" + course_name
+        return course_num + vertical + course_name
 
 def align_describe(describe):
     if utils.str_block_width(describe) > course_name_len - 1 and output_with_describe == False:
         describe = describe[0 : course_name_len - 3 ] + "..."
     else:
         describe += get_space(0, course_name_len - utils.str_block_width(describe))
-    return get_space(0, course_num_len) + "|" + describe
+    return get_space(0, course_num_len) + vertical + describe
 
 def print_with_color(text):
     global color_index
@@ -105,13 +136,13 @@ def print_table_head(col, id_name='id', title='topic'):
     table_head_mid = ''
     for i_i in range(0, col):
         update_cell_len(i_i)
-        table_head_mid += '|'
+        table_head_mid += vertical
         len_1 = course_num_len - len(id_name)
         len_2 = course_name_len - len(title)
         space_1 = get_space(0, len_1)[0 : len_1 / 2]
         space_2 = get_space(0, len_2)[0 : len_2 / 2]
         if len_1 % 2 == 0 and len_2 % 2 == 0:
-            table_head_mid += space_1 + id_name + space_1 + '|' + space_2 + title + space_2
+            table_head_mid += space_1 + id_name + space_1 + vertical + space_2 + title + space_2
         else:
             if len_1 % 2 == 0:
                 table_head_mid += space_1 + id_name + space_1
@@ -119,11 +150,11 @@ def print_table_head(col, id_name='id', title='topic'):
                 table_head_mid += space_1 + id_name + space_1 + ' '
 
             if len_2 % 2 == 0:
-                table_head_mid += '|' + space_2 + title + space_2
+                table_head_mid += vertical + space_2 + title + space_2
             else: 
-                table_head_mid += '|' + space_2 + title + space_2 + ' '
+                table_head_mid += vertical + space_2 + title + space_2 + ' '
 
-    table_head_mid += '|'
+    table_head_mid += vertical
     print_table_separator(col)
     print table_head_mid
     print_table_separator(col)
@@ -132,20 +163,20 @@ def print_table_separator(col):
     table_separator = ''
     for i_i in range(0, col):
         update_cell_len(i_i)
-        table_separator += "+"
+        table_separator += plus
         for sp in range(0, course_num_len):
-            table_separator += "-"
-        table_separator += "+"
+            table_separator += subtraction
+        table_separator += plus
         for sp in range(0, course_name_len):
-            table_separator += "-"
-    table_separator += "+"
+            table_separator += subtraction
+    table_separator += plus
     print table_separator
 
 def get_space(start, end):
     return (end - start) * " "
 
 def get_id_and_title(record):
-    return record.get_id() + "|" + record.get_title()
+    return record.get_id() + vertical + record.get_title()
 
 def update_max_len(record, col):
     if utils.str_block_width(get_id_and_title(record)) > line_max_len_list[col - 1]:
@@ -216,9 +247,9 @@ def build_lines(list_all):
 
 
 def get_line(lines, start, end, j):
-    result = "|"
+    result = vertical
     for i in range(start, end):
-        result += color_keyword(lines[i][j])+ "|"
+        result += color_keyword(lines[i][j]) + vertical
 
     return result
 
@@ -227,9 +258,9 @@ def get_space_cell(num, column_num):
     start = column_num - num
     end = start + num
     for i in range(start, end):
-        result += get_space(0, line_id_max_len_list[i]) + "|" + get_space(0, cell_len - line_id_max_len_list[i] - 1)
+        result += get_space(0, line_id_max_len_list[i]) + vertical + get_space(0, cell_len - line_id_max_len_list[i] - 1)
         if num > 1 and i != num:
-            result += '|'
+            result += vertical
 
     return result
 def reset_max_len_list():
@@ -419,9 +450,9 @@ def print_list(all_lines, file_name = ''):
                 for last in range(len(id_title_lines[2]), len(id_title_lines[0])):
                     content = ""
                     if len(id_title_lines[0]) == len(id_title_lines[1]):
-                        content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1, 3) + "|"
+                        content = get_line(id_title_lines, 0, 2, last) + get_space_cell(1, 3) + vertical
                     else:
-                        content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2, 3) + "|"
+                        content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2, 3) + vertical
 
                     if output_with_color == True:
                         print_with_color(content)
@@ -430,9 +461,9 @@ def print_list(all_lines, file_name = ''):
                     if output_with_describe == True:
                         for l in range(0, len(describe_lines)):
                             if len(id_title_lines[0]) == len(id_title_lines[1]):
-                                print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + "|"
+                                print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical
                             else:
-                                print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + "|"
+                                print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical
 
             print_table_separator(3)
         elif column_num == "2":
@@ -448,14 +479,14 @@ def print_list(all_lines, file_name = ''):
                         print get_line(describe_lines[l], 0, 2, i)
             if len(id_title_lines[0]) > len(id_title_lines[1]):
                 last = len(id_title_lines[0]) - 1
-                content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1, 2) + "|"
+                content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1, 2) + vertical
                 if output_with_color == True:
                     print_with_color(content)
                 else:
                     print content
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
-                        print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + "|"
+                        print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
 
             print_table_separator(2)
         elif column_num == '1':
@@ -537,7 +568,7 @@ def adjust_cell_len():
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:m', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:mb:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -579,6 +610,8 @@ def main(argv):
             level = int(a)
         elif o in ('-m', '--merger'):
             merger_result = True
+        elif o in ('-b', '--border'):
+            chanage_border(a)
 
     if source == "":
         print "you must input the input file or dir"
