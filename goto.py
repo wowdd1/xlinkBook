@@ -14,6 +14,7 @@ engin = ""
 keyword = ""
 use_subject = u""
 search_keyword = False
+search_video = False
 
 def usage(argv0):
     print ' usage:'
@@ -22,10 +23,10 @@ def usage(argv0):
     print '-q, --query: the query keyword for search on the web'
     print '-e, --engin: what search for search include: google baidu bing yahoo'
     print '-u, --use: seach in what subject'
-    print '-y, --youtube: search video in youtube'
+    print '-v, --video: search video'
     print "\nsubject include:"
     print_all_subject()
-    print '\nex: ' + argv0 + ' -s "cs199" -u eecs'
+    print '\nex: ' + argv0 + ' -c "cs199" -u eecs'
     print '\nthe suported engin:\n' + get_all_engins()
 
 def get_all_engins():
@@ -41,23 +42,31 @@ def openBrowser(url):
 
 def search(keyword, engin, search_keyword = False):
     url = ''
-    search_keywork = keyword
-    utils = Utils()
     if search_keyword == False:
         record = utils.getRecord(keyword, use_subject)
         url = record.get_url().strip()
-        search_keywork = record.get_title().strip()
+        keyword = record.get_title().strip()
 
+    if search_video:
+        engin_list = ['youtube', 'coursera', 'edx', 'googlevideo', 'youku', 'tudou', 'videolectures']
+        for e in engin_list:
+            openWeb(e, keyword)
+    else:
+        openWeb(engin, keyword)
+def openWeb(engin, keyword):
+    if engin.lower() == 'edx':
+        keyword = keyword.replace(' ', '+')
+    utils = Utils()
     if engin != '':
-        url = utils.getEnginUrl(engin) + search_keywork
+        url = utils.getEnginUrl(engin) + keyword
 
     if url != '':
         openBrowser(url)
 
 def main(argv):
-    global keyword, engin, use_subject, search_keyword
+    global keyword, engin, use_subject, search_keyword, search_video
     try:
-        opts, args = getopt.getopt(argv[1:], 'hc:e:u:q:', ["help","course","engin","use", 'query'])
+        opts, args = getopt.getopt(argv[1:], 'hc:e:u:q:v', ["help","course","engin","use", 'query', 'video'])
         if len(args) == 1:
             keyword = args[0]
     except getopt.GetoptError, err:
@@ -76,6 +85,8 @@ def main(argv):
             engin = a
         elif o in ('-u', '--use'):
             use_subject = str(a)
+        elif o in ('-v', '--video'):
+            search_video = True
            
     if keyword != "":
         search(keyword, engin, search_keyword) 
