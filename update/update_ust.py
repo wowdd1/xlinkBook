@@ -68,6 +68,7 @@ class UstSpider(Spider):
             courses = {}
             for s in ['UG', 'PG']:
                 url = 'http://publish.ust.hk/SISCourseCat/' + 'Show' + s + 'CourseList.aspx?Subject=' + code + '&WebSite=Production'
+                print url
                 r = requests.get(url)
                 soup = BeautifulSoup(r.text)
                 title = ''
@@ -78,17 +79,15 @@ class UstSpider(Spider):
                     if text.find('  ') != -1 and text.startswith(code):
                         data = text.split('  ')
                         course_num = data[0].replace(' ', '')
-                        if courses.get(course_num, '') != '':
-                            title = ''
-                            continue
                         courses[course_num] = data[1]
                         
                     if text.startswith(code):
                         title = courses[course_num]
-                    elif title != '':
+                    elif title != '' and courses[course_num] != 'done':
                         print course_num + ' ' + title
                         self.count += 1
                         self.write_db(f, course_num, title, '', 'description:' + text)
+                        courses[course_num] = 'done'
 
             self.close_db(f)
             if file_lines != self.count and self.count > 0:
