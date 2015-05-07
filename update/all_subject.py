@@ -24,7 +24,7 @@ subject_dict = {\
     "Finance" : "economics",\
     "Financial" : "economics",\
     "Education" : "education",\
-    "Electronics" : "eecs",\
+    "Electronic" : "eecs",\
     "Electrical Engineering" : "eecs",\
     "Energy" : "energy-earth-sciences",\
     "Earth Sciences" : "energy-earth-sciences",\
