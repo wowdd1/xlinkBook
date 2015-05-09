@@ -79,7 +79,7 @@ class UstSpider(Spider):
                     if text.find('  ') != -1 and text.startswith(code):
                         data = text.split('  ')
                         course_num = data[0].replace(' ', '')
-                        courses[course_num] = data[1]
+                        courses[course_num] = data[1].strip()
                         
                     if text.startswith(code):
                         title = courses[course_num]
