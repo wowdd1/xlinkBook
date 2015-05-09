@@ -4,6 +4,7 @@
 default_subject = "eecs"
 
 subject_dict = {\
+    'Accounting' : 'economics',\
     "Architecture" : "architecture",\
     "Art" : "art-culture",\
     "Culture" : "art-culture",\
@@ -16,8 +17,8 @@ subject_dict = {\
     "Communication" : "communication",\
     "Computer Science" : "eecs",\
     "EECS" : "eecs",\
+    'Economic Analysis & Policy' : 'economics',\
     "Programming" : "eecs",\
-    "Youtube" : "youtube",\
     "Rank" : 'rank',\
     "Design" : "design",\
     "Economics" : "economics",\
@@ -32,20 +33,26 @@ subject_dict = {\
     "Environmental Studies" : "environmental-studies",\
     "Ethics" : "ethics",\
     "Food" : "food-nutrition",\
+    'GSB General & Interdisciplinary' : 'economics',\
     "Nutrition" : "food-nutrition",\
     "Health" : "health-safety",\
     "Safety" : "health-safety",\
     "History" : "history",\
     "Humanities" : "humanities",\
+    "Human Resource Management" : 'economics',\
     "Law" : "law",\
     "Literature" : "literature",\
     "Math" : "mathematics",\
+    'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "music",\
     "Philanthropy" : "philanthropy",\
     "Philosophy" : "philosophy",\
     "Ethics" : "ethics",\
+    'Operations Information & Technology' : 'economics',\
+    'Organizational Behavior' : 'economics',\
     "Physics" : "physics",\
+    'Strategic Management' : 'economics',\
     "Social Sciences" : "social-sciences",\
     "Science" : "science",\
     "Statistics" : "statistics-data-analysis",\
@@ -56,7 +63,6 @@ need_update_subject_list = [
     'mathematics',
     #'business-management',
     'economics',
-    'youtube',
     'rank',
     #'physics',
     #'biology-life-sciences',

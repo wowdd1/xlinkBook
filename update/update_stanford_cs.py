@@ -20,7 +20,6 @@ class StanfordCSSpider(Spider):
         stanfordSpider = StanfordSpider()
         stanfordOnlineSpider = StanfordOnlineSpider()
 
-        self.video_lecture_list = stanfordSpider.getVideoLectureList()
         self.description_dict = stanfordSpider.getDescriptionDict('Computer Science')
         self.course_name_dict = stanfordOnlineSpider.getCourseNameDict()
     
@@ -63,26 +62,14 @@ class StanfordCSSpider(Spider):
             course_id = th_set[index].string.upper()
             description = ''
             description += 'instructors:' + td_set_2[index] + ' '
-            if self.video_lecture_list.get(course_id, '') != '' or self.course_name_dict.get(self.formatCourseTitle(td_set[index]), '') != '':
+            if self.course_name_dict.get(self.formatCourseTitle(td_set[index]), '') != '':
                 if self.course_name_dict.get(self.formatCourseTitle(td_set[index]), '') != '':
                     description += 'videourl:' + self.course_name_dict[self.formatCourseTitle(td_set[index])] + ' '
-                else:
-                    description += 'videourl:' + self.video_lecture_list[course_id] + ' '
 
             if self.description_dict.get(course_id, '') != '':
                 description += 'description:' + self.description_dict[course_id] + ' '
             course_dict[th_set[index].string.upper()] = CourseRecord(self.get_storage_format(th_set[index].string.upper(), td_set[index], link, description))
 
-    def getRecordsDict(self):
-        records_dict = {}
-        f = open(self.get_file_name("eecs/" + "cs", self.school), 'rU')
-        for line in f.readlines():
-            record = CourseRecord(line)
-            records_dict[record.get_id().strip()] = record
-
-        return records_dict 
-
-    
    
     def getCsCourseLinks(self):
         links = []

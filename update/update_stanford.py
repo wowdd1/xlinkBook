@@ -60,7 +60,6 @@ class StanfordSpider(Spider):
         print "processing " + subject + " " + url
 
         from update_stanford_cs import StanfordCSSpider
-        self.records_dict = StanfordCSSpider().getRecordsDict()
         r = requests.get(url)
         soup = BeautifulSoup(r.text); 
         course_num_list = []
@@ -92,15 +91,10 @@ class StanfordSpider(Spider):
                 continue
 
             print course_num_list[i] + " " + course_name_list[i]
-            if subject == 'Computer Science' and self.records_dict.get(course_num_list[i], '') != '' \
-                       and self.records_dict.get(course_num_list[i]).get_instructors().find('none listed') == -1:
-                description = "instructors:" + self.records_dict.get(course_num_list[i]).get_instructors().strip() + ' '
-                url = self.records_dict.get(course_num_list[i]).get_url().strip()
-            else:
-                description = "instructors:" + course_instructors_list[i] + ' '
-                url = 'http://' + course_num_list[i] + '.stanford.edu'
-                if self.deep_mind:
-                    url = self.getRealUrl(course_num_list[i])
+            description = "instructors:" + course_instructors_list[i] + ' '
+            url = 'http://' + course_num_list[i] + '.stanford.edu'
+            if self.deep_mind:
+                url = self.getRealUrl(course_num_list[i])
             if self.course_name_dict.get(self.formatCourseTitle(course_name_list[i]), '') != '':
                 description +='videourl:' + self.course_name_dict[self.formatCourseTitle(course_name_list[i])] + ' ' 
 
