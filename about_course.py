@@ -27,7 +27,7 @@ def main(argv):
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hc:u:', ["help", "course", "use"])
         if len(args) == 1:
-            print_course(args[0])
+            course = str(args[0])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -42,6 +42,7 @@ def main(argv):
         elif o in ('-u', '--use'):
             use_subject = str(a)
 
-        print_course(course, use_subject)
+    print_course(course, use_subject)
+
 if __name__ == '__main__':
     main(sys.argv)
