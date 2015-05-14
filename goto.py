@@ -43,6 +43,7 @@ def openBrowser(url):
 def search(keyword, engin, search_keyword = False):
     url = ''
     if search_keyword == False:
+        utils = Utils()
         record = utils.getRecord(keyword, use_subject)
         url = record.get_url().strip()
         keyword = record.get_title().strip()
@@ -50,10 +51,10 @@ def search(keyword, engin, search_keyword = False):
     if search_video:
         engin_list = ['youtube', 'coursera', 'edx', 'googlevideo', 'youku', 'tudou', 'videolectures']
         for e in engin_list:
-            openWeb(e, keyword)
+            openWeb(e, keyword, url)
     else:
-        openWeb(engin, keyword)
-def openWeb(engin, keyword):
+        openWeb(engin, keyword, url)
+def openWeb(engin, keyword, url):
     if engin.lower() == 'edx':
         keyword = keyword.replace(' ', '+')
     utils = Utils()
