@@ -74,6 +74,12 @@ def border_style_three():
     subtraction = '.'
     vertical = '.'
 
+def border_style_custom(style):
+    global plus, subtraction, vertical
+    plus = ' '
+    subtraction = style
+    vertical = style
+
 def chanage_border(style):
     if style == '1':
         border_style_one()
@@ -81,6 +87,8 @@ def chanage_border(style):
         border_style_two()
     elif style == '3':
         border_style_three()
+    else:
+        border_style_custom(style)
 
 def print_keyword(file_name):
     cmd = '\
