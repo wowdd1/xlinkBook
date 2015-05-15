@@ -19,7 +19,7 @@ def print_course(course_num, subject):
         return
     for record in record_list: 
         if record.get_id().strip() != '':
-            os.system("./list.py -i " + record.get_path() + " -c 1 -f '^" + course_num + "' -d -r 10")
+            os.system("./list.py -i " + record.get_path() + " -c 1 -f '^" + course_num + "' -d -r 10 -b 3")
 
 def main(argv):
     use_subject = ''
