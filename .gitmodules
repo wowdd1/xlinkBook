@@ -37,3 +37,6 @@
 [submodule "external/Qix"]
 	path = external/Qix
 	url = https://github.com/ty4z2008/Qix.git
+[submodule "external/Big-Data-Resources"]
+	path = external/Big-Data-Resources
+	url = https://github.com/Flowerowl/Big-Data-Resources.git
