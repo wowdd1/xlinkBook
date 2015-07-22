@@ -104,7 +104,7 @@ class CMUSpider(Spider):
             value = str(child)[str(child).find(">") + 1 : str(child).find("(")].replace("&amp;", "").replace("\n", "").strip()
             self.dept_dict[key] = value
 
-    def doWork(self):
+    def getSOCData(self):
         self.getDept()
         for dept in self.dept_dict.keys():
             if dept == "CB" or dept == "CS" or dept == "HCI" or dept == "ISR" or dept == "LTI" or dept == "MLG" or dept == "ROB" or dept == 'ECE':
@@ -112,6 +112,44 @@ class CMUSpider(Spider):
             else:
                 self.processData(self.semester_list, dept, self.dept_dict[dept])
 
+    def getRoboticsCourse(self, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        file_name = self.get_file_name("eecs/cmu/robotics-institute", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for li in soup.find_all("li", attrs={"class": "sub_title2"}):
+            text = li.text
+            course_number = ""
+            course_name = ""
+            url = ""
+            if li.text.find("\n") != -1:
+                text = li.text[0 : li.text.find("\n")].strip()
+            course_number = text.split(":")[0].strip()
+            course_name = text.split(":")[1].strip()
+            if li.prettify().find("http") != -1:
+                soup2 = BeautifulSoup(li.prettify())
+                for a in soup2.find_all("a"):
+                    if (a.attrs.has_key("href")):
+                        url = a["href"]
+                    
+            print course_number + " " + course_name + " " + url
+            self.count = self.count + 1
+            self.write_db(f, course_number, course_name, url)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+    def doWork(self):
+        self.getSOCData()
+        self.getRoboticsCourse("https://www.ri.cmu.edu/ri_static_content.html?menu_id=276#");
 
 start = CMUSpider();
 start.doWork()
