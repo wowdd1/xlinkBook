@@ -1,0 +1,73 @@
+W96-0101 | Using Word Class for Part-of-speech Disambiguation | http://www.aclweb.org/anthology/D/D96/W96-0101.pdf | author:Evelyne Tzoukermann; Dragomir R. Radev
+W96-0102 | MBT: A Memory-Based Part of Speech Tagger-Generator | http://www.aclweb.org/anthology/D/D96/W96-0102.pdf | author:Walter Daelemans; Jakob Zavrel; Peter Berck; Steven Gillis
+W96-0103 | Hierarchical Clustering of Words and Application to NLP Tasks | http://www.aclweb.org/anthology/D/D96/W96-0103.pdf | author:Akira Ushioda
+W96-0104 | Learning Similarity-based Word Sense Disambiguation from Sparse Data | http://www.aclweb.org/anthology/D/D96/W96-0104.pdf | author:Yael Karov; Shimon Edelman
+W96-0105 | Selective Sampling of Effective Example Sentence Sets for Word Sense Disambiguation | http://www.aclweb.org/anthology/D/D96/W96-0105.pdf | author:Atsushi Fujii; Kentaro Inui; Takenobu Tokunaga; Hozumi Tanaka
+W96-0106 | Relating Turing's Formula and Zipf's Law | http://www.aclweb.org/anthology/D/D96/W96-0106.pdf | author:Christer Samuelsson
+W96-0107 | Automatic Extraction of Word Sequence Correspondences in Parallel Corpora | http://www.aclweb.org/anthology/D/D96/W96-0107.pdf | author:Mihoko Kitamura; Yuji Matsumoto
+W96-0108 | A Statistical Approach to Automatic OCR Error Correction in Context | http://www.aclweb.org/anthology/D/D96/W96-0108.pdf | author:Xiang Tong; David A. Evans
+W96-0109 | Exploiting Text Structure for Topic Identification | http://www.aclweb.org/anthology/D/D96/W96-0109.pdf | author:Tadashi Nomoto; Yuji Matsumoto
+W96-0110 | Statistical Models for Deep-structure Disambiguation | http://www.aclweb.org/anthology/D/D96/W96-0110.pdf | author:Tung-Hui Chiang; Ken-Yih Su
+W96-0111 | Two Questions about Data-Oriented Parsing | http://www.aclweb.org/anthology/D/D96/W96-0111.pdf | author:Rens Bod
+W96-0112 | A Probabilistic Disambiguation Method Based on Psycholinguistic Principles | http://www.aclweb.org/anthology/D/D96/W96-0112.pdf | author:Hang Li
+W96-0113 | A Re-estimation Method for Stochastic Language Modeling from Ambiguous Observations | http://www.aclweb.org/anthology/D/D96/W96-0113.pdf | author:Mikio Yamamoto
+W96-0114 | Towards Automatic Grammar Acquisition from a Bracketed Corpus | http://www.aclweb.org/anthology/D/D96/W96-0114.pdf | author:Thanaruk Theeramunkong; Manabu Okumara
+W96-0201 | A Geometric Approach to Mapping Bitext Correspondence | http://www.aclweb.org/anthology/D/D96/W96-0201.pdf | author:I. Dan Melamed
+W96-0202 | Parsing Chinese With an Almost-Context-Free Grammar | http://www.aclweb.org/anthology/D/D96/W96-0202.pdf | author:Xuanyin Xia; Dekai Wu
+W96-0203 | Unsupervised Learning of Syntactic Knowledge: Methods and Measures | http://www.aclweb.org/anthology/D/D96/W96-0203.pdf | author:R. Basili; A. Marziali; M.T. Pazienza; P. Velardi
+W96-0204 | Modeling Conversational Speech for Speech Recognition | http://www.aclweb.org/anthology/D/D96/W96-0204.pdf | author:Marie Meteer; Rukmini Iyer
+W96-0205 | Automatic Extraction of New Words from Japanese Texts using Generalized Forward-Backward Search | http://www.aclweb.org/anthology/D/D96/W96-0205.pdf | author:Masaaki Nagata
+W96-0206 | Better Language Models with Model Merging | http://www.aclweb.org/anthology/D/D96/W96-0206.pdf | author:Thorsten Brants
+W96-0207 | Combining Hand-crafted Rules and Unsupervised Learning in Constraint-based Morphological Disambiguation | http://www.aclweb.org/anthology/D/D96/W96-0207.pdf | author:Kemal Oflazer; Gokhan Tur
+W96-0208 | Comparative Experiments on Disambiguating Word Senses: An Illustration of the Role of Bias in Machine Learning | http://www.aclweb.org/anthology/D/D96/W96-0208.pdf | author:Raymond J. Mooney
+W96-0209 | Apportioning Development Effort in a Probabilistic LR Parsing System Through Evaluation | http://www.aclweb.org/anthology/D/D96/W96-0209.pdf | author:John Carroll; Ted Briscoe
+W96-0210 | The Measure of a Model | http://www.aclweb.org/anthology/D/D96/W96-0210.pdf | author:Rebecca Bruce; Janyce Wiebe; Ted Pedersen
+W96-0211 | Automating Feature Set Selection for Case-Based Learning of Linguistic Knowledge | http://www.aclweb.org/anthology/D/D96/W96-0211.pdf | author:Claire Cardie
+W96-0212 | Figures of Merit for Best-First Probabilistic Chart Parsing | http://www.aclweb.org/anthology/D/D96/W96-0212.pdf | author:Sharon A. Caraballo; Eugene Charniak
+W96-0213 | A Maximum Entropy Model for Part-Of-Speech Tagging | http://www.aclweb.org/anthology/D/D96/W96-0213.pdf | author:Adwait Ratnaparkhi
+W96-0214 | Efficient Algorithms for Parsing the DOP Model | http://www.aclweb.org/anthology/D/D96/W96-0214.pdf | author:Joshua Goodman
+W96-0301 | Breadth and Depth of Semantic Lexicons - Notes on the Workshop | http://www.aclweb.org/anthology/D/D96/W96-0301.pdf | author:Evelyne Viegas
+W96-0302 | How language Structures Concepts - an Outline | http://www.aclweb.org/anthology/D/D96/W96-0302.pdf | author:Leonard Talmy
+W96-0303 | Controlling the Application of Lexical Rules | http://www.aclweb.org/anthology/D/D96/W96-0303.pdf | author:Ted Briscoe; Ann Copestake
+W96-0304 | Using Lexical Semantic Techniques to Classify Free-Responses | http://www.aclweb.org/anthology/D/D96/W96-0304.pdf | author:Jill Burstein; Randy Kaplan; Susanne Wolff; Chi Lu
+W96-0305 | Acquisition of Computational-Semantic Lexicons from Machine Readable Lexical Resources | http://www.aclweb.org/anthology/D/D96/W96-0305.pdf | author:Jason J.S. Chang; J.N. Chen
+W96-0306 | Acquisition of Semantic Lexicons: Using Word Sense Disambiguation to Improve Precision | http://www.aclweb.org/anthology/D/D96/W96-0306.pdf | author:Bonnie J. Dorr; Doug Jones
+W96-0307 | The Lexical Semantics of English Count and Mass Nouns | http://www.aclweb.org/anthology/D/D96/W96-0307.pdf | author:Brendan S. Gillon
+W96-0308 | Lexical Rules is Italicized | http://www.aclweb.org/anthology/D/D96/W96-0308.pdf | author:Stephen Helmreich; David Farwell
+W96-0309 | Qualia Structure and the Compositional Interpretation of Compounds | http://www.aclweb.org/anthology/D/D96/W96-0309.pdf | author:Michael Johnston; Federica Busa
+W96-0310 | Lexical Rules for Deverbal Adjectives | http://www.aclweb.org/anthology/D/D96/W96-0310.pdf | author:Victor Raskin; Sergei Nirenburg
+W96-0311 | Morphological Productivity in the Lexicon | http://www.aclweb.org/anthology/D/D96/W96-0311.pdf | author:Onur T. Sehitoglu; H. Cem Bozsahin
+W96-0401 | The HealthDoc Sentence Planner | http://www.aclweb.org/anthology/D/D96/W96-0401.pdf | author:Leo Wanner; Eduard Hovy
+W96-0402 | Learning Micro-Planning Rules for Preventive Expressions | http://www.aclweb.org/anthology/D/D96/W96-0402.pdf | author:Keith Vander Linden; Barbara Di Eugenio
+W96-0403 | Paraphrasing and Aggregating Argumentative Texts Using Text Structure | http://www.aclweb.org/anthology/D/D96/W96-0403.pdf | author:Xiaorong Huang; Armin Fiedler
+W96-0404 | Approximate Generation from Non-Hierarchical Representations | http://www.aclweb.org/anthology/D/D96/W96-0404.pdf | author:Nicolas Nicolov; Chris Mellish; Graeme Ritchie
+W96-0405 | Input Specification in the WAG Sentence Generation System | http://www.aclweb.org/anthology/D/D96/W96-0405.pdf | author:Michael O'Donnell
+W96-0406 | PostGraphe: A System for the Generation of Statistical Graphics and Text | http://www.aclweb.org/anthology/D/D96/W96-0406.pdf | author:Massimo Fasciano; Guy Lapalme
+W96-0407 | Generating Patent Claims from Interactive Input | http://www.aclweb.org/anthology/D/D96/W96-0407.pdf | author:Svetlana Sheremetyeva; Sergei Nirenburg; Irene Nirenburg
+W96-0408 | Considering the Effects of Second Language Learning on Generation | http://www.aclweb.org/anthology/D/D96/W96-0408.pdf | author:Kathleen F. McCoy; Christopher A. Penpington
+W96-0409 | Tactical Generation in a Free Constituent Order Language | http://www.aclweb.org/anthology/D/D96/W96-0409.pdf | author:Dilek Zeynep Hakkani; Kemal Oflazer; Ilyas Cicekli
+W96-0410 | Paying Heed to Collocations | http://www.aclweb.org/anthology/D/D96/W96-0410.pdf | author:Matthew Stone; Christine Doran
+W96-0411 | Best-First Surface Realization | http://www.aclweb.org/anthology/D/D96/W96-0411.pdf | author:Stephan Busemann
+W96-0412 | An Evaluation of Anaphor Generation in Chinese | http://www.aclweb.org/anthology/D/D96/W96-0412.pdf | author:Ching-Long Yeh
+W96-0413 | An Algorithm for Generating Quantifiers | http://www.aclweb.org/anthology/D/D96/W96-0413.pdf | author:Norman Creaney
+W96-0414 | A Study'of some Lexical Differences between French and Englisfi Instructions in a Multilingual Generation Framework | http://www.aclweb.org/anthology/D/D96/W96-0414.pdf | author:Farid Cerbah
+W96-0415 | A generative perspecl:ive on verbs and their readings | http://www.aclweb.org/anthology/D/D96/W96-0415.pdf | author:Manffed Stede
+W96-0416 | Sources of Flexibility in Dynamic Hypertext Generation | http://www.aclweb.org/anthology/D/D96/W96-0416.pdf | author:Alistair Knott; Chris Mellish; Jon Oberlander; Mick O'Donnell
+W96-0417 | Strategies for Comparison in Encyclopmdia Descriptions | http://www.aclweb.org/anthology/D/D96/W96-0417.pdf | author:Maria Milosavljevic; Robert Dale
+W96-0418 | Matchmaking: dialogue modelling and speech generation meet | http://www.aclweb.org/anthology/D/D96/W96-0418.pdf | author:Brigitte Grote
+W96-0419 | Author Index | http://www.aclweb.org/anthology/D/D96/W96-0419.pdf | author:
+W96-0501 | An Overview of SURGE: a Reusable Comprehensive Syntactic Realization Component | http://www.aclweb.org/anthology/D/D96/W96-0501.pdf | author:Michael Elhadad; Jacques Robin
+W96-0502 | SPLAT: A sentence-plan authoring tool | http://www.aclweb.org/anthology/D/D96/W96-0502.pdf | author:Bruce Jakeway; Chrysanne DiMarco
+W96-0503 | The ModelExplainer | http://www.aclweb.org/anthology/D/D96/W96-0503.pdf | author:Benoit Lavoie; Owen Rambow; Ehud Reiter
+W96-0504 | DRAFTER | http://www.aclweb.org/anthology/D/D96/W96-0504.pdf | author:Cécile Paris; Keith Vander Linden
+W96-0505 | Multilingual generation of administrative forms | http://www.aclweb.org/anthology/D/D96/W96-0505.pdf | author:Richard Power; Nico Cavallotto
+W96-0506 | PICARD: The Next Generator | http://www.aclweb.org/anthology/D/D96/W96-0506.pdf | author:Stephen Beale; Sergei Nirenburg
+W96-0507 | Overview of AlethGen | http://www.aclweb.org/anthology/D/D96/W96-0507.pdf | author:José Coch
+W96-0508 | On Lexical Aggregation and Ordering | http://www.aclweb.org/anthology/D/D96/W96-0508.pdf | author:Hercules Dalianis; Eduard Hovy
+W96-0509 | Generating 'Distributed' Referring Expressions: an Initial Report | http://www.aclweb.org/anthology/D/D96/W96-0509.pdf | author:Barbara Di Eugenio; Johanna D. Moore
+W96-0510 | Summarization: an Application for NL Generation | http://www.aclweb.org/anthology/D/D96/W96-0510.pdf | author:Beryl Hoffman
+W96-0511 | Implementing an Integration of the Systemic Flowchart Model of Dialogue and Rhetorical Structure Theory | http://www.aclweb.org/anthology/D/D96/W96-0511.pdf | author:Yuen Q. Lin; Robin P. Fawcett
+W96-0512 | An Architecture For Distributed Natural Language Summarization | http://www.aclweb.org/anthology/D/D96/W96-0512.pdf | author:Dragomir R. Radev
+W96-0513 | Multilinguality and Reversibility in Computational Semantic Lexicons | http://www.aclweb.org/anthology/D/D96/W96-0513.pdf | author:Evelyne Viegas; Stephen Beale
+W96-0514 | The Computation of the Informational Status of Discourse Entities | http://www.aclweb.org/anthology/D/D96/W96-0514.pdf | author:Soenke Ziesche
+W96-0515 | Author Index | http://www.aclweb.org/anthology/D/D96/W96-0515.pdf | author:

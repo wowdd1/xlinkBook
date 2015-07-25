@@ -1,0 +1,109 @@
+S12-1001 | Casting Implicit Role Linking as an Anaphora Resolution Task | http://www.aclweb.org/anthology/S/S12/S12-1001.pdf | author:Carina Silberer; Anette Frank
+S12-1002 | Adaptive Clustering for Coreference Resolution with Deterministic Rules and Web-Based Language Models | http://www.aclweb.org/anthology/S/S12/S12-1002.pdf | author:Razvan Bunescu
+S12-1003 | Measuring Semantic Relatedness using Multilingual Representations | http://www.aclweb.org/anthology/S/S12/S12-1003.pdf | author:Samer Hassan; Carmen Banea; Rada Mihalcea
+S12-1004 | Towards Building a Multilingual Semantic Network: Identifying Interlingual Links in Wikipedia | http://www.aclweb.org/anthology/S/S12/S12-1004.pdf | author:Bharath Dandala; Rada Mihalcea; Razvan Bunescu
+S12-1005 | Sentence Clustering via Projection over Term Clusters | http://www.aclweb.org/anthology/S/S12/S12-1005.pdf | author:Lili Kotlerman; Ido Dagan; Maya Gorodetsky; Ezra Daya
+S12-1006 | The Use of Granularity in Rhetorical Relation Prediction | http://www.aclweb.org/anthology/S/S12/S12-1006.pdf | author:Blake Howald; Martha Abramson
+S12-1007 | "Could you make me a favour and do coffee, please?": Implications for Automatic Error Correction in English and Dutch | http://www.aclweb.org/anthology/S/S12/S12-1007.pdf | author:Sophia Katrenko
+S12-1008 | Detecting Text Reuse with Modified and Weighted N-grams | http://www.aclweb.org/anthology/S/S12/S12-1008.pdf | author:Rao Muhammad Adeel Nawab; Mark Stevenson; Paul Clough
+S12-1009 | Statistical Thesaurus Construction for a Morphologically Rich Language | http://www.aclweb.org/anthology/S/S12/S12-1009.pdf | author:Chaya Liebeskind; Ido Dagan; Jonathan Schler
+S12-1010 | Sorting out the Most Confusing English Phrasal Verbs | http://www.aclweb.org/anthology/S/S12/S12-1010.pdf | author:Yuancheng Tu; Dan Roth
+S12-1011 | Learning Semantics and Selectional Preference of Adjective-Noun Pairs | http://www.aclweb.org/anthology/S/S12/S12-1011.pdf | author:Karl Moritz Hermann; Chris Dyer; Phil Blunsom; Stephen Pulman
+S12-1012 | Identifying hypernyms in distributional semantic spaces | http://www.aclweb.org/anthology/S/S12/S12-1012.pdf | author:Alessandro Lenci; Giulia Benotto
+S12-1013 | Towards a Flexible Semantics: Colour Terms in Collaborative Reference Tasks | http://www.aclweb.org/anthology/S/S12/S12-1013.pdf | author:Bert Baumgaertner; Raquel Fernandez; Matthew Stone
+S12-1014 | Unsupervised Disambiguation of Image Captions | http://www.aclweb.org/anthology/S/S12/S12-1014.pdf | author:Wesley May; Sanja Fidler; Afsaneh Fazly; Sven Dickinson; Suzanne Stevenson
+S12-1015 | Lexical semantic typologies from bilingual corpora â A framework | http://www.aclweb.org/anthology/S/S12/S12-1015.pdf | author:Steffen Eger
+S12-1016 | Non-atomic Classification to Improve a Semantic Role Labeler for a Low-resource Language | http://www.aclweb.org/anthology/S/S12/S12-1016.pdf | author:Richard Johansson
+S12-1017 | Combining resources for MWE-token classification | http://www.aclweb.org/anthology/S/S12/S12-1017.pdf | author:Richard Fothergill; Timothy Baldwin
+S12-1018 | Annotating Preferences in Negotiation Dialogues | http://www.aclweb.org/anthology/S/S12/S12-1018.pdf | author:Anais Cadilhac; Nicholas Asher; Farah Benamara
+S12-1019 | Selecting Corpus-Semantic Models for Neurolinguistic Decoding | http://www.aclweb.org/anthology/S/S12/S12-1019.pdf | author:Brian Murphy; Partha Talukdar; Tom Mitchell
+S12-1020 | Simple and Phrasal Implicatives | http://www.aclweb.org/anthology/S/S12/S12-1020.pdf | author:Lauri Karttunen
+S12-1021 | An Unsupervised Ranking Model for Noun-Noun Compositionality | http://www.aclweb.org/anthology/S/S12/S12-1021.pdf | author:Karl Moritz Hermann; Phil Blunsom; Stephen Pulman
+S12-1022 | Expanding the Range of Tractable Scope-Underspecified Semantic Representations | http://www.aclweb.org/anthology/S/S12/S12-1022.pdf | author:Mehdi Manshadi; James Allen
+S12-1023 | Regular polysemy: A distributional model | http://www.aclweb.org/anthology/S/S12/S12-1023.pdf | author:Gemma Boleda; Sebastian Padó; Jason Utt
+S12-1024 | Extracting a Semantic Lexicon of French Adjectives from a Large Lexicographic Dictionary | http://www.aclweb.org/anthology/S/S12/S12-1024.pdf | author:Selja Seppälä; Lucie Barque; Alexis Nasr
+S12-1025 | Modelling selectional preferences in a lexical hierarchy | http://www.aclweb.org/anthology/S/S12/S12-1025.pdf | author:Diarmuid Ó Sèaghdha; Anna Korhonen
+S12-1026 | Unsupervised Induction of a Syntax-Semantics Lexicon Using Iterative Refinement | http://www.aclweb.org/anthology/S/S12/S12-1026.pdf | author:Hagen Fürstenau; Owen Rambow
+S12-1027 | An Evaluation of Graded Sense Disambiguation using Word Sense Induction | http://www.aclweb.org/anthology/S/S12/S12-1027.pdf | author:David Jurgens
+S12-1028 | Ensemble-based Semantic Lexicon Induction for Semantic Tagging | http://www.aclweb.org/anthology/S/S12/S12-1028.pdf | author:Ashequl Qadir; Ellen Riloff
+S12-1029 | An Exact Dual Decomposition Algorithm for Shallow Semantic Parsing with Constraints | http://www.aclweb.org/anthology/S/S12/S12-1029.pdf | author:Dipanjan Das; Andrè F. T. Martins; Noah A. Smith
+S12-1030 | Aligning Predicate Argument Structures in Monolingual Comparable Texts: A New Corpus for a New Task | http://www.aclweb.org/anthology/S/S12/S12-1030.pdf | author:Michael Roth; Anette Frank
+S12-1031 | The Effects of Semantic Annotations on Precision Parse Ranking | http://www.aclweb.org/anthology/S/S12/S12-1031.pdf | author:Andrew MacKinlay; Rebecca Dridan; Diana McCarthy; Timothy Baldwin
+S12-1032 | A Probabilistic Lexical Model for Ranking Textual Inferences | http://www.aclweb.org/anthology/S/S12/S12-1032.pdf | author:Eyal Shnarch; Ido Dagan; Jacob Goldberger
+S12-1033 | #Emotional Tweets | http://www.aclweb.org/anthology/S/S12/S12-1033.pdf | author:Saif Mohammad
+S12-1034 | Monolingual Distributional Similarity for Text-to-Text Generation | http://www.aclweb.org/anthology/S/S12/S12-1034.pdf | author:Juri Ganitkevitch; Benjamin Van Durme; Chris Callison-Burch
+S12-1035 | *SEM 2012 Shared Task: Resolving the Scope and Focus of Negation | http://www.aclweb.org/anthology/S/S12/S12-1035.pdf | author:Roser Morante; Eduardo Blanco
+S12-1036 | UABCoRAL: A Preliminary study for Resolving the Scope of Negation | http://www.aclweb.org/anthology/S/S12/S12-1036.pdf | author:Binod Gyawali; Thamar Solorio
+S12-1037 | UCM-I: A Rule-based Syntactic Approach for Resolving the Scope of Negation | http://www.aclweb.org/anthology/S/S12/S12-1037.pdf | author:Jorge Carrillo de Albornoz; Laura Plaza; Alberto Dìaz; Miguel Ballesteros
+S12-1038 | UCM-2: a Rule-Based Approach to Infer the Scope of Negation via Dependency Parsing | http://www.aclweb.org/anthology/S/S12/S12-1038.pdf | author:Miguel Ballesteros; Alberto Dìaz; Virginia Francisco; Pablo Gervás; Jorge Carrillo de Albornoz; Laura Plaza
+S12-1039 | UConcordia: CLaC Negation Focus Detection at *Sem 2012 | http://www.aclweb.org/anthology/S/S12/S12-1039.pdf | author:Sabine Rosenberg; Sabine Bergler
+S12-1040 | UGroningen: Negation detection with Discourse Representation Structures | http://www.aclweb.org/anthology/S/S12/S12-1040.pdf | author:Valerio Basile; Johan Bos; Kilian Evang; Noortje Venhuizen
+S12-1041 | UiO1: Constituent-Based Discriminative Ranking for Negation Resolution | http://www.aclweb.org/anthology/S/S12/S12-1041.pdf | author:Jonathon Read; Erik Velldal; Lilja Øvrelid; Stephan Oepen
+S12-1042 | UiO 2: Sequence-labeling Negation Using Dependency Features | http://www.aclweb.org/anthology/S/S12/S12-1042.pdf | author:Emanuele Lapponi; Erik Velldal; Lilja Øvrelid; Jonathon Read
+S12-1043 | UMichigan: A Conditional Random Field Model for Resolving the Scope of Negation | http://www.aclweb.org/anthology/S/S12/S12-1043.pdf | author:Amjad Abu Jbara; Dragomir Radev
+S12-1044 | UWashington: Negation Resolution using Machine Learning Methods | http://www.aclweb.org/anthology/S/S12/S12-1044.pdf | author:James Paul White
+S12-1045 | FBK: Exploiting Phrasal and Contextual Clues for Negation Scope Detection | http://www.aclweb.org/anthology/S/S12/S12-1045.pdf | author:Md. Faisal Mahbub Chowdhury
+S12-1046 | SemEval-2012 Task 1: English Lexical Simplification | http://www.aclweb.org/anthology/S/S12/S12-1046.pdf | author:Lucia Specia; Sujay Kumar Jauhar; Rada Mihalcea
+S12-1047 | SemEval-2012 Task 2: Measuring Degrees of Relational Similarity | http://www.aclweb.org/anthology/S/S12/S12-1047.pdf | author:David Jurgens; Saif Mohammad; Peter Turney; Keith Holyoak
+S12-1048 | SemEval-2012 Task 3: Spatial Role Labeling | http://www.aclweb.org/anthology/S/S12/S12-1048.pdf | author:parisa kordjamshidi; steven bethard; Marie-Francine Moens
+S12-1049 | SemEval-2012 Task 4: Evaluating Chinese Word Similarity | http://www.aclweb.org/anthology/S/S12/S12-1049.pdf | author:Peng Jin; Yunfang Wu
+S12-1050 | SemEval-2012 Task 5: Chinese Semantic Dependency Parsing | http://www.aclweb.org/anthology/S/S12/S12-1050.pdf | author:Wanxiang Che; Meishan Zhang; Yanqiu Shao; Ting Liu
+S12-1051 | SemEval-2012 Task 6: A Pilot on Semantic Textual Similarity | http://www.aclweb.org/anthology/S/S12/S12-1051.pdf | author:Eneko Agirre; Daniel Cer; Mona Diab; Aitor Gonzalez-Agirre
+S12-1052 | SemEval-2012 Task 7: Choice of Plausible Alternatives: An Evaluation of Commonsense Causal Reasoning | http://www.aclweb.org/anthology/S/S12/S12-1052.pdf | author:Andrew Gordon; Zornitsa Kozareva; Melissa Roemmele
+S12-1053 | Semeval-2012 Task 8: Cross-lingual Textual Entailment for Content Synchronization | http://www.aclweb.org/anthology/S/S12/S12-1053.pdf | author:Matteo Negri; Alessandro Marchetti; Yashar Mehdad; Luisa Bentivogli; Danilo Giampiccolo
+S12-1054 | EMNLP@CPH: Is frequency all there is to simplicity? | http://www.aclweb.org/anthology/S/S12/S12-1054.pdf | author:Anders Johannsen; Hèctor Martìnez; Sigrid Klerke; Anders Søgaard
+S12-1055 | UTD: Determining Relational Similarity Using Lexical Patterns | http://www.aclweb.org/anthology/S/S12/S12-1055.pdf | author:Bryan Rink; Sanda Harabagiu
+S12-1056 | UTD-SpRL: A Joint Approach to Spatial Role Labeling | http://www.aclweb.org/anthology/S/S12/S12-1056.pdf | author:Kirk Roberts; Sanda Harabagiu
+S12-1057 | MIXCD: System Description for Evaluating Chinese Word Similarity at SemEval-2012 | http://www.aclweb.org/anthology/S/S12/S12-1057.pdf | author:Yingjie Zhang; Bin Li; Xinyu Dai; Jiajun Chen
+S12-1058 | Zhijun Wu: Chinese Semantic Dependency Parsing with Third-Order Features | http://www.aclweb.org/anthology/S/S12/S12-1058.pdf | author:Zhijun Wu; Xuan Wang; Xinxin Li
+S12-1059 | UKP: Computing Semantic Textual Similarity by Combining Multiple Content Similarity Measures | http://www.aclweb.org/anthology/S/S12/S12-1059.pdf | author:Daniel Bär; Chris Biemann; Iryna Gurevych; Torsten Zesch
+S12-1060 | TakeLab: Systems for Measuring Semantic Text Similarity | http://www.aclweb.org/anthology/S/S12/S12-1060.pdf | author:Frane Šarić; Goran Glavaš; Mladen Karan; Jan Šnajder; Bojana Dalbelo Bašić
+S12-1061 | Soft Cardinality: A Parameterized Similarity Function for Text Comparison | http://www.aclweb.org/anthology/S/S12/S12-1061.pdf | author:Sergio Jimenez; Claudia Becerra; Alexander Gelbukh
+S12-1062 | UNED: Improving Text Similarity Measures without Human Assessments | http://www.aclweb.org/anthology/S/S12/S12-1062.pdf | author:Enrique Amigó; Jesus Gimenez; Julio Gonzalo; Felisa Verdejo
+S12-1063 | UTDHLT: COPACETIC System for Choosing Plausible Alternatives | http://www.aclweb.org/anthology/S/S12/S12-1063.pdf | author:Travis Goodwin; Bryan Rink; Kirk Roberts; Sanda Harabagiu
+S12-1064 | HDU: Cross-lingual Textual Entailment with SMT Features | http://www.aclweb.org/anthology/S/S12/S12-1064.pdf | author:Katharina Wäschle; Sascha Fendrich
+S12-1065 | UAlacant: Using Online Machine Translation for Cross-Lingual Textual Entailment | http://www.aclweb.org/anthology/S/S12/S12-1065.pdf | author:Miquel Esplà-Gomis; Felipe Sánchez-Martìnez; Mikel L. Forcada
+S12-1066 | UOW-SHEF: SimpLex – Lexical Simplicity Ranking based on Contextual and Psycholinguistic Features | http://www.aclweb.org/anthology/S/S12/S12-1066.pdf | author:Sujay Kumar Jauhar; Lucia Specia
+S12-1067 | SB: mmSystem - Using Decompositional Semantics for Lexical Simplification | http://www.aclweb.org/anthology/S/S12/S12-1067.pdf | author:Marilisa Amoia; Massimo Romanelli
+S12-1068 | ANNLOR: A Naïve Notation-system for Lexical Outputs Ranking | http://www.aclweb.org/anthology/S/S12/S12-1068.pdf | author:Anne-Laure Ligozat; Cyril Grouin; Anne Garcia-Fernandez; Delphine Bernhard
+S12-1069 | UNT-SimpRank: Systems for Lexical Simplification Ranking | http://www.aclweb.org/anthology/S/S12/S12-1069.pdf | author:Ravi Sinha
+S12-1070 | Duluth : Measuring Degrees of Relational Similarity with the Gloss Vector Measure of Semantic Relatedness | http://www.aclweb.org/anthology/S/S12/S12-1070.pdf | author:Ted Pedersen
+S12-1071 | BUAP: A First Approximation to Relational Similarity Measuring | http://www.aclweb.org/anthology/S/S12/S12-1071.pdf | author:Mireya Tovar; J. Alejandro Reyes; Azucena Montes; Darnes Vilariño; David Pinto; Saul León
+S12-1072 | Zhou qiaoli: A divide-and-conquer strategy for semantic dependency parsing | http://www.aclweb.org/anthology/S/S12/S12-1072.pdf | author:zhou qiaoli; zhang ling; liu fei; cai dongfeng; zhang guiping
+S12-1073 | ICT:A System Combination for Chinese Semantic Dependency Parsing | http://www.aclweb.org/anthology/S/S12/S12-1073.pdf | author:Hao Xiong; Qun Liu
+S12-1074 | NJU-Parser: Achievements on Semantic Dependency Parsing | http://www.aclweb.org/anthology/S/S12/S12-1074.pdf | author:Guangchao Tang; Bin Li; Shuaishuai Xu; Xinyu Dai; Jiajun Chen
+S12-1075 | PolyUCOMP: Combining Semantic Vectors with Skip bigrams for Semantic Textual Similarity | http://www.aclweb.org/anthology/S/S12/S12-1075.pdf | author:Jian Xu; Qin Lu; Zhengzhong Liu
+S12-1076 | ETS: Discriminative Edit Models for Paraphrase Scoring | http://www.aclweb.org/anthology/S/S12/S12-1076.pdf | author:Michael Heilman; Nitin Madnani
+S12-1077 | Sbdlrhmn: A Rule-based Human Interpretation System for Semantic Textual Similarity Task | http://www.aclweb.org/anthology/S/S12/S12-1077.pdf | author:Samir AbdelRahman; Catherine Blake
+S12-1078 | LIMSI: Learning Semantic Similarity by Selecting Random Word Subsets | http://www.aclweb.org/anthology/S/S12/S12-1078.pdf | author:Artem Sokolov
+S12-1079 | ATA-Sem: Chunk-based Determination of Semantic Text Similarity | http://www.aclweb.org/anthology/S/S12/S12-1079.pdf | author:Demetrios Glinos
+S12-1080 | IRIT: Textual Similarity Combining Conceptual Similarity with an N-Gram Comparison Method | http://www.aclweb.org/anthology/S/S12/S12-1080.pdf | author:Davide Buscaldi; Ronan Tournier; Nathalie Aussenac-Gilles; Josiane Mothe
+S12-1081 | DSS: Text Similarity Using Lexical Alignments of Form, Distributional Semantics and Grammatical Relations | http://www.aclweb.org/anthology/S/S12/S12-1081.pdf | author:Diana McCarthy; Spandana Gella; Siva Reddy
+S12-1082 | DeepPurple: Estimating Sentence Semantic Similarity using N-gram Regression Models and Web Snippets | http://www.aclweb.org/anthology/S/S12/S12-1082.pdf | author:NIkos Malandrakis; Elias Iosif; Alexandros Potamianos
+S12-1083 | JU_CSE_NLP: Multi-grade Classification of Semantic Similarity between Text Pairs | http://www.aclweb.org/anthology/S/S12/S12-1083.pdf | author:Snehasis Neogi; Partha Pakray; Sivaji Bandyopadhyay; Alexander Gelbukh
+S12-1084 | Tiantianzhu7:System Description of Semantic Textual Similarity (STS) in the SemEval-2012 (Task 6) | http://www.aclweb.org/anthology/S/S12/S12-1084.pdf | author:Zhu Tiantian; Lan Man
+S12-1085 | sranjans : Semantic Textual Similarity using Maximal Weighted Bipartite Graph Matching | http://www.aclweb.org/anthology/S/S12/S12-1085.pdf | author:Sumit Bhagwani; Shrutiranjan Satapathy; Harish Karnick
+S12-1086 | Weiwei: A Simple Unsupervised Latent Semantics based Approach for Sentence Similarity | http://www.aclweb.org/anthology/S/S12/S12-1086.pdf | author:Weiwei Guo; Mona Diab
+S12-1087 | UNIBA: Distributional Semantics for Textual Similarity | http://www.aclweb.org/anthology/S/S12/S12-1087.pdf | author:Annalina Caputo; Pierpaolo Basile; Giovanni Semeraro
+S12-1088 | UNITOR: Combining Semantic Text Similarity functions through SV Regression | http://www.aclweb.org/anthology/S/S12/S12-1088.pdf | author:Danilo Croce; Paolo Annesi; Valerio Storch; Roberto Basili
+S12-1089 | Saarland: Vector-based models of semantic textual similarity | http://www.aclweb.org/anthology/S/S12/S12-1089.pdf | author:Georgiana Dinu; Stefan Thater
+S12-1090 | UMCC_DLSI: Multidimensional Lexical-Semantic Textual Similarity | http://www.aclweb.org/anthology/S/S12/S12-1090.pdf | author:Antonio Fernández; Yoan Gutièrrez; Hèctor Dávila; Alexander Chávez; Andy González; Rainel Estrada; Yenier Castañeda; Sonia Vázquez; Andrès Montoyo; Rafael Muñoz
+S12-1091 | SRIUBC: Simple Similarity Features for Semantic Textual Similarity | http://www.aclweb.org/anthology/S/S12/S12-1091.pdf | author:Eric Yeh; Eneko Agirre
+S12-1092 | FBK: Machine Translation Evaluation and Word Similarity metrics for Semantic Textual Similarity | http://www.aclweb.org/anthology/S/S12/S12-1092.pdf | author:Josè Guilherme Camargo de Souza; Matteo Negri; Yashar Mehdad
+S12-1093 | FCC: Three Approaches for Semantic Textual Similarity | http://www.aclweb.org/anthology/S/S12/S12-1093.pdf | author:Maya Carrillo; Darnes Vilariño; David Pinto; Mireya Tovar; Saul León; Esteban Castillo
+S12-1094 | UNT: A Supervised Synergistic Approach to Semantic Text Similarity | http://www.aclweb.org/anthology/S/S12/S12-1094.pdf | author:Carmen Banea; Samer Hassan; Michael Mohler; Rada Mihalcea
+S12-1095 | DERI&UPM: Pushing Corpus Based Relatedness to Similarity: Shared Task System Description | http://www.aclweb.org/anthology/S/S12/S12-1095.pdf | author:Nitish Aggarwal; Kartik Asooja; Paul Buitelaar
+S12-1096 | Stanford: Probabilistic Edit Distance Metrics for STS | http://www.aclweb.org/anthology/S/S12/S12-1096.pdf | author:Mengqiu Wang; Daniel Cer
+S12-1097 | University_Of_Sheffield: Two Approaches to Semantic Text Similarity | http://www.aclweb.org/anthology/S/S12/S12-1097.pdf | author:Sam Biggins; Shaabi Mohammed; Sam Oakley; Luke Stringer; Mark Stevenson; Judita Preiss
+S12-1098 | janardhan: Semantic Textual Similarity using Universal Networking Language graph matching | http://www.aclweb.org/anthology/S/S12/S12-1098.pdf | author:Janardhan Singh; Arindam Bhattacharya; Pushpak Bhattacharyya
+S12-1099 | SAGAN: An approach to Semantic Textual Similarity based on Textual Entailment | http://www.aclweb.org/anthology/S/S12/S12-1099.pdf | author:Julio Castillo; Paula Estrella
+S12-1100 | UOW: Semantically Informed Text Similarity | http://www.aclweb.org/anthology/S/S12/S12-1100.pdf | author:Miguel Rios; Wilker Aziz; Lucia Specia
+S12-1101 | Penn: Using Word Similarities to better Estimate Sentence Similarity | http://www.aclweb.org/anthology/S/S12/S12-1101.pdf | author:Sneha Jha; Hansen A. Schwartz; Lyle Ungar
+S12-1102 | Soft Cardinality + ML: Learning Adaptive Similarity Functions for Cross-lingual Textual Entailment | http://www.aclweb.org/anthology/S/S12/S12-1102.pdf | author:Sergio Jimenez; Claudia Becerra; Alexander Gelbukh
+S12-1103 | JU_CSE_NLP: Language Independent Cross-lingual Textual Entailment System | http://www.aclweb.org/anthology/S/S12/S12-1103.pdf | author:Snehasis Neogi; Partha Pakray; Sivaji Bandyopadhyay; Alexander Gelbukh
+S12-1104 | CELI: An Experiment with Cross Language Textual Entailment | http://www.aclweb.org/anthology/S/S12/S12-1104.pdf | author:Milen Kouylekov; Luca Dini; Alessio Bosca; Marco Trevisan
+S12-1105 | FBK: Cross-Lingual Textual Entailment Without Translation | http://www.aclweb.org/anthology/S/S12/S12-1105.pdf | author:Yashar Mehdad; Matteo Negri; Jose Guilherme C. de Souza
+S12-1106 | BUAP: Lexical and Semantic Similarity for Cross-lingual Textual Entailment | http://www.aclweb.org/anthology/S/S12/S12-1106.pdf | author:Darnes Vilariño; David Pinto; Mireya Tovar; Saul León; Esteban Castillo
+S12-1107 | DirRelCond3: Detecting Textual Entailment Across Languages With Conditions On Directional Text Relatedness Scores | http://www.aclweb.org/anthology/S/S12/S12-1107.pdf | author:Alpar Perini
+S12-1108 | ICT: A Translation based Method for Cross-lingual Textual Entailment | http://www.aclweb.org/anthology/S/S12/S12-1108.pdf | author:Fandong Meng; Hao Xiong; Qun Liu
+S12-1109 | SAGAN: A Machine Translation Approach for Cross-Lingual Textual Entailment | http://www.aclweb.org/anthology/S/S12/S12-1109.pdf | author:Julio Castillo; Marina Cardenas

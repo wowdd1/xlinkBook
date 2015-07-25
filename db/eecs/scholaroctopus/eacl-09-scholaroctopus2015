@@ -1,0 +1,128 @@
+E09-1001 | Invited Talk: Slacker Semantics: Why Superficiality, Dependency and Avoidance of Commitment can be the Right Way to Go | http://www.aclweb.org/anthology/E/E09/E09-1001.pdf | author:Ann Copestake
+E09-1002 | Invited Talk: NLP and the Humanities: The Revival of an Old Liaison | http://www.aclweb.org/anthology/E/E09/E09-1002.pdf | author:Francisca de Jong
+E09-1003 | On the Use of Comparable Corpora to Improve SMT performance | http://www.aclweb.org/anthology/E/E09/E09-1003.pdf | author:Sadaf Abdul-Rauf; Holger Schwenk
+E09-1004 | Contextual Phrase-Level Polarity Analysis Using Lexical Affect Scoring and Syntactic N-Grams | http://www.aclweb.org/anthology/E/E09/E09-1004.pdf | author:Apoorv Agarwal; Fadi Biadsy; Kathleen Mckeown
+E09-1005 | Personalizing PageRank for Word Sense Disambiguation | http://www.aclweb.org/anthology/E/E09/E09-1005.pdf | author:Eneko Agirre; Aitor Soroa
+E09-1006 | Supervised Domain Adaption for WSD | http://www.aclweb.org/anthology/E/E09/E09-1006.pdf | author:Eneko Agirre; Oier Lopez de Lacalle
+E09-1007 | Clique-Based Clustering for Improving Named Entity Recognition Systems | http://www.aclweb.org/anthology/E/E09/E09-1007.pdf | author:Julien Ah-Pine; Guillaume Jacquet
+E09-1008 | Correcting Automatic Translations through Collaborations between MT and Monolingual Target-\-Lan\-gua\-ge Users | http://www.aclweb.org/anthology/E/E09/E09-1008.pdf | author:Joshua Albrecht; Rebecca Hwa; G. Elisabeta Marai
+E09-1009 | Incremental Parsing with Parallel Multiple Context-Free Grammars | http://www.aclweb.org/anthology/E/E09/E09-1009.pdf | author:Krasimir Angelov
+E09-1010 | Data-Driven Semantic Analysis for Multilingual WSD and Lexical Selection in Translation | http://www.aclweb.org/anthology/E/E09/E09-1010.pdf | author:Marianna Apidianaki
+E09-1011 | Syntactic Phrase Reordering for English-to-Arabic Statistical Machine Translation | http://www.aclweb.org/anthology/E/E09/E09-1011.pdf | author:Ibrahim Badr; Rabih Zbib; James Glass
+E09-1012 | Incremental Parsing Models for Dialog Task Structure | http://www.aclweb.org/anthology/E/E09/E09-1012.pdf | author:Srinivas Bangalore; Amanda Stent
+E09-1013 | Bayesian Word Sense Induction | http://www.aclweb.org/anthology/E/E09/E09-1013.pdf | author:Samuel Brody; Mirella Lapata
+E09-1014 | Human Evaluation of a German Surface Realisation Ranker | http://www.aclweb.org/anthology/E/E09/E09-1014.pdf | author:Aoife Cahill; Martin Forst
+E09-1015 | Large-Coverage Root Lexicon Extraction for Hindi | http://www.aclweb.org/anthology/E/E09/E09-1015.pdf | author:Cohan Sujay Carlos; Monojit Choudhury; Sandipan Dandapat
+E09-1016 | Lexical Morphology in Machine Translation: A Feasibility Study | http://www.aclweb.org/anthology/E/E09/E09-1016.pdf | author:Bruno Cartoni
+E09-1017 | Predicting the Fluency of Text with Shallow Structural Features: Case Studies of Machine Translation and Human-Written Text | http://www.aclweb.org/anthology/E/E09/E09-1017.pdf | author:Jieun Chae; Ani Nenkova
+E09-1018 | EM Works for Pronoun Anaphora Resolution | http://www.aclweb.org/anthology/E/E09/E09-1018.pdf | author:Eugene Charniak; Micha Elsner
+E09-1019 | Web Augmentation of Language Models for Continuous Speech Recognition of SMS Text Messages | http://www.aclweb.org/anthology/E/E09/E09-1019.pdf | author:Mathias Creutz; Sami Virpioja; Anna Kovaleva
+E09-1020 | An Alignment Algorithm Using Belief Propagation and a Structure-Based Distortion Model | http://www.aclweb.org/anthology/E/E09/E09-1020.pdf | author:Fabien Cromierès; Sadao Kurohashi
+E09-1021 | Translation and Extension of Concepts Across Languages | http://www.aclweb.org/anthology/E/E09/E09-1021.pdf | author:Dmitry Davidov; Ari Rappoport
+E09-1022 | Learning to Interpret Utterances Using Dialogue History | http://www.aclweb.org/anthology/E/E09/E09-1022.pdf | author:David DeVault; Matthew Stone
+E09-1023 | Correcting Dependency Annotation Errors | http://www.aclweb.org/anthology/E/E09/E09-1023.pdf | author:Markus Dickinson
+E09-1024 | Re-Ranking Models for Spoken Language Understanding | http://www.aclweb.org/anthology/E/E09/E09-1024.pdf | author:Marco Dinarelli; Alessandro Moschitti; Giuseppe Riccardi
+E09-1025 | Inference Rules and their Application to Recognizing Textual Entailment | http://www.aclweb.org/anthology/E/E09/E09-1025.pdf | author:Georgiana Dinu; Rui Wang
+E09-1026 | Semi-Supervised Semantic Role Labeling | http://www.aclweb.org/anthology/E/E09/E09-1026.pdf | author:Hagen Fürstenau; Mirella Lapata
+E09-1027 | Cognitively Motivated Features for Readability Assessment | http://www.aclweb.org/anthology/E/E09/E09-1027.pdf | author:Lijun Feng; Noémie Elhadad; Matt Huenerfauth
+E09-1028 | Effects of Word Confusion Networks on Voice Search | http://www.aclweb.org/anthology/E/E09/E09-1028.pdf | author:Junlan Feng; Srinivas Bangalore
+E09-1029 | Company-Oriented Extractive Summarization of Financial News | http://www.aclweb.org/anthology/E/E09/E09-1029.pdf | author:Katja Filippova; Mihai Surdeanu; Massimiliano Ciaramita; Hugo Zaragoza
+E09-1030 | Reconstructing False Start Errors in Spontaneous Speech Text | http://www.aclweb.org/anthology/E/E09/E09-1030.pdf | author:Erin Fitzgerald; Keith Hall; Frederick Jelinek
+E09-1031 | TBL-Improved Non-Deterministic Segmentation and POS Tagging for a Chinese Parser | http://www.aclweb.org/anthology/E/E09/E09-1031.pdf | author:Martin Forst; Ji Fang
+E09-1032 | Who is “You”? Combining Linguistic and Gaze Features to Resolve Second-Person References in Dialogue | http://www.aclweb.org/anthology/E/E09/E09-1032.pdf | author:Matthew Frampton; Raquel Fernández; Patrick Ehlen; Mario Christoudias; Trevor Darrell; Stanley Peters
+E09-1033 | Rich Bitext Projection Features for Parse Reranking | http://www.aclweb.org/anthology/E/E09/E09-1033.pdf | author:Alexander Fraser; Renjing Wang; Hinrich Schütze
+E09-1034 | Parsing Mildly Non-Projective Dependency Structures | http://www.aclweb.org/anthology/E/E09/E09-1034.pdf | author:Carlos Gómez-Rodríguez; David Weir; John Carroll
+E09-1035 | Structural, Transitive and Latent Models for Biographic Fact Extraction | http://www.aclweb.org/anthology/E/E09/E09-1035.pdf | author:Nikesh Garera; David Yarowsky
+E09-1036 | Semitic Morphological Analysis and Generation Using Finite State Transducers with Feature Structures | http://www.aclweb.org/anthology/E/E09/E09-1036.pdf | author:Michael Gasser
+E09-1037 | Cube Summing, Approximate Inference with Non-Local Features, and Dynamic Programming without Semirings | http://www.aclweb.org/anthology/E/E09/E09-1037.pdf | author:Kevin Gimpel; Noah A. Smith
+E09-1038 | Enhancing Unlexicalized Parsing Performance Using a Wide Coverage Lexicon, Fuzzy Tag-Set Mapping, and EM-HMM-Based Lexical Probabilities | http://www.aclweb.org/anthology/E/E09/E09-1038.pdf | author:Yoav Goldberg; Reut Tsarfaty; Meni Adler; Michael Elhadad
+E09-1039 | Person Identification from Text and Speech Genre Samples | http://www.aclweb.org/anthology/E/E09/E09-1039.pdf | author:Jade Goldstein-Stewart; Ransom Winder; Roberta Sabin
+E09-1040 | End-to-End Evaluation in Simultaneous Translation | http://www.aclweb.org/anthology/E/E09/E09-1040.pdf | author:Olivier Hamon; Christian Fügen; Djamel Mostefa; Victoria Arranz; Muntsin Kolss; Alex Waibel; Khalid Choukri
+E09-1041 | Learning-Based Named Entity Recognition for Morphologically-Rich, Resource-Scarce Languages | http://www.aclweb.org/anthology/E/E09/E09-1041.pdf | author:Kazi Saidul Hasan; Md. Altaf ur Rahman; Vincent Ng
+E09-1042 | Weakly Supervised Part-of-Speech Tagging for Morphologically-Rich, Resource-Scarce Languages | http://www.aclweb.org/anthology/E/E09/E09-1042.pdf | author:Kazi Saidul Hasan; Vincent Ng
+E09-1043 | Improving Mid-Range Re-Ordering Using Templates of Factors | http://www.aclweb.org/anthology/E/E09/E09-1043.pdf | author:Hieu Hoang; Philipp Koehn
+E09-1044 | Rule Filtering by Pattern for Efficient Hierarchical Translation | http://www.aclweb.org/anthology/E/E09/E09-1044.pdf | author:Gonzalo Iglesias; Adrià de Gispert; Eduardo R. Banga; William Byrne
+E09-1045 | An Empirical Study on Class-Based Word Sense Disambiguation | http://www.aclweb.org/anthology/E/E09/E09-1045.pdf | author:Rubén Izquierdo; Armando Suárez; German Rigau
+E09-1046 | Generating a Non-English Subjectivity Lexicon: Relations That Matter | http://www.aclweb.org/anthology/E/E09/E09-1046.pdf | author:Valentin Jijkoun; Katja Hofmann
+E09-1047 | Parsing Coordinations | http://www.aclweb.org/anthology/E/E09/E09-1047.pdf | author:Sandra Kübler; Erhard Hinrichs; Wolfgang Maier; Eva Klett
+E09-1048 | Automatic Single-Document Key Fact Extraction from Newswire Articles | http://www.aclweb.org/anthology/E/E09/E09-1048.pdf | author:Itamar Kastner; Christof Monz
+E09-1049 | N-Gram-Based Statistical Machine Translation versus Syntax Augmented Machine Translation: Comparison and System Combination | http://www.aclweb.org/anthology/E/E09/E09-1049.pdf | author:Maxim Khalilov; José A. R. Fonollosa
+E09-1050 | Lightly Supervised Transliteration for Machine Translation | http://www.aclweb.org/anthology/E/E09/E09-1050.pdf | author:Amit Kirschenbaum; Shuly Wintner
+E09-1051 | Optimization in Coreference Resolution is not Needed: A Nearly-Optimal Algorithm with Intensional Constraints | http://www.aclweb.org/anthology/E/E09/E09-1051.pdf | author:Manfred Klenner; Étienne Ailloud
+E09-1052 | A Logic of Semantic Representations for Shallow Parsing | http://www.aclweb.org/anthology/E/E09/E09-1052.pdf | author:Alexander Koller; Alex Lascarides
+E09-1053 | Dependency Trees and the Strong Generative Capacity of CCG | http://www.aclweb.org/anthology/E/E09/E09-1053.pdf | author:Alexander Koller; Marco Kuhlmann
+E09-1054 | Lattice Parsing to Integrate Speech Recognition and Rule-Based Machine Translation | http://www.aclweb.org/anthology/E/E09/E09-1054.pdf | author:Selçuk Köprü; Adnan Yazıcı
+E09-1055 | Treebank Grammar Techniques for Non-Projective Dependency Parsing | http://www.aclweb.org/anthology/E/E09/E09-1055.pdf | author:Marco Kuhlmann; Giorgio Satta
+E09-1056 | Improvements in Analogical Learning: Application to Translating Multi-Terms of the Medical Domain | http://www.aclweb.org/anthology/E/E09/E09-1056.pdf | author:Philippe Langlais; François Yvon; Pierre Zweigenbaum
+E09-1057 | Language-Independent Bilingual Terminology Extraction from a Multilingual Parallel Corpus | http://www.aclweb.org/anthology/E/E09/E09-1057.pdf | author:Els Lefever; Lieve Macken; Veronique Hoste
+E09-1058 | User Simulations for Context-Sensitive Speech Recognition in Spoken Dialogue Systems | http://www.aclweb.org/anthology/E/E09/E09-1058.pdf | author:Oliver Lemon; Ioannis Konstas
+E09-1059 | Sentiment Summarization: Evaluating and Learning User Preferences | http://www.aclweb.org/anthology/E/E09/E09-1059.pdf | author:Kevin Lerman; Sasha Blair-Goldensohn; Ryan McDonald
+E09-1060 | Correcting a POS-Tagged Corpus Using Three Complementary Methods | http://www.aclweb.org/anthology/E/E09/E09-1060.pdf | author:Hrafn Loftsson
+E09-1061 | Translation as Weighted Deduction | http://www.aclweb.org/anthology/E/E09/E09-1061.pdf | author:Adam Lopez
+E09-1062 | Performance Confidence Estimation for Automatic Summarization | http://www.aclweb.org/anthology/E/E09/E09-1062.pdf | author:Annie Louis; Ani Nenkova
+E09-1063 | Bilingually Motivated Domain-Adapted Word Segmentation for Statistical Machine Translation | http://www.aclweb.org/anthology/E/E09/E09-1063.pdf | author:Yanjun Ma; Andy Way
+E09-1064 | Evaluating the Inferential Utility of Lexical-Semantic Resources | http://www.aclweb.org/anthology/E/E09/E09-1064.pdf | author:Shachar Mirkin; Ido Dagan; Eyal Shnarch
+E09-1065 | Text-to-Text Semantic Similarity for Automatic Short Answer Grading | http://www.aclweb.org/anthology/E/E09/E09-1065.pdf | author:Michael Mohler; Rada Mihalcea
+E09-1066 | Syntactic and Semantic Kernels for Short Text Pair Categorization | http://www.aclweb.org/anthology/E/E09/E09-1066.pdf | author:Alessandro Moschitti
+E09-1067 | Discovering Global Patterns in Linguistic Networks through Spectral Analysis: A Case Study of the Consonant Inventories | http://www.aclweb.org/anthology/E/E09/E09-1067.pdf | author:Animesh Mukherjee; Monojit Choudhury; Ravi Kannan
+E09-1068 | Using Cycles and Quasi-Cycles to Disambiguate Dictionary Glosses | http://www.aclweb.org/anthology/E/E09/E09-1068.pdf | author:Roberto Navigli
+E09-1069 | Deterministic Shift-Reduce Parsing for Unification-Based Grammars by Using Default Unification | http://www.aclweb.org/anthology/E/E09/E09-1069.pdf | author:Takashi Ninomiya; Takuya Matsuzaki; Nobuyuki Shimizu; Hiroshi Nakagawa
+E09-1070 | Analysing Wikipedia and Gold-Standard Corpora for NER Training | http://www.aclweb.org/anthology/E/E09/E09-1070.pdf | author:Joel Nothman; Tara Murphy; James R. Curran
+E09-1071 | Using Lexical and Relational Similarity to Classify Semantic Relations | http://www.aclweb.org/anthology/E/E09/E09-1071.pdf | author:Diarmuid Ó Séaghdha; Ann Copestake
+E09-1072 | Empirical Evaluations of Animacy Annotation | http://www.aclweb.org/anthology/E/E09/E09-1072.pdf | author:Lilja Øvrelid
+E09-1073 | Outclassing Wikipedia in Open-Domain Information Extraction: Weakly-Supervised Acquisition of Attributes over Conceptual Hierarchies | http://www.aclweb.org/anthology/E/E09/E09-1073.pdf | author:Marius Paşca
+E09-1074 | Predicting Strong Associations on the Basis of Corpus Data | http://www.aclweb.org/anthology/E/E09/E09-1074.pdf | author:Yves Peirsman; Dirk Geeraerts
+E09-1075 | Measuring Frame Relatedness | http://www.aclweb.org/anthology/E/E09/E09-1075.pdf | author:Marco Pennacchiotti; Michael Wirth
+E09-1076 | Flexible Answer Typing with Discriminative Preference Ranking | http://www.aclweb.org/anthology/E/E09/E09-1076.pdf | author:Christopher Pinchak; Dekang Lin; Davood Rafiei
+E09-1077 | Semi-Supervised Polarity Lexicon Induction | http://www.aclweb.org/anthology/E/E09/E09-1077.pdf | author:Delip Rao; Deepak Ravichandran
+E09-1078 | Natural Language Generation as Planning Under Uncertainty for Spoken Dialogue Systems | http://www.aclweb.org/anthology/E/E09/E09-1078.pdf | author:Verena Rieser; Oliver Lemon
+E09-1079 | Tagging Urdu Text with Parts of Speech: A Tagger Comparison | http://www.aclweb.org/anthology/E/E09/E09-1079.pdf | author:Hassan Sajjad; Helmut Schmid
+E09-1080 | Unsupervised Methods for Head Assignments | http://www.aclweb.org/anthology/E/E09/E09-1080.pdf | author:Federico Sangati; Willem Zuidema
+E09-1081 | A General, Abstract Model of Incremental Dialogue Processing | http://www.aclweb.org/anthology/E/E09/E09-1081.pdf | author:David Schlangen; Gabriel Skantze
+E09-1082 | Word Lattices for Multi-Source Translation | http://www.aclweb.org/anthology/E/E09/E09-1082.pdf | author:Josh Schroeder; Trevor Cohn; Philipp Koehn
+E09-1083 | Frequency Matters: Pitch Accents and Information Status | http://www.aclweb.org/anthology/E/E09/E09-1083.pdf | author:Katrin Schweitzer; Michael Walsh; Bernd Möbius; Arndt Riester; Antje Schweitzer; Hinrich Schütze
+E09-1084 | Using Non-Lexical Features to Identify Effective Indexing Terms for Biomedical Illustrations | http://www.aclweb.org/anthology/E/E09/E09-1084.pdf | author:Matthew Simpson; Dina Demner-Fushman; Charles Sneiderman; Sameer K. Antani; George R. Thoma
+E09-1085 | Incremental Dialogue Processing in a Micro-Domain | http://www.aclweb.org/anthology/E/E09/E09-1085.pdf | author:Gabriel Skantze; David Schlangen
+E09-1086 | Unsupervised Recognition of Literal and Non-Literal Use of Idiomatic Expressions | http://www.aclweb.org/anthology/E/E09/E09-1086.pdf | author:Caroline Sporleder; Linlin Li
+E09-1087 | Semi-Supervised Training for the Averaged Perceptron POS Tagger | http://www.aclweb.org/anthology/E/E09/E09-1087.pdf | author:Drahomíra “johanka” Spoustová; Jan Hajič; Jan Raab; Miroslav Spousta
+E09-1088 | Sequential Labeling with Latent Variables: An Exact Inference Algorithm and its Efficient Approximation | http://www.aclweb.org/anthology/E/E09/E09-1088.pdf | author:Xu Sun; Jun'ichi Tsujii
+E09-1089 | Text Summarization Model Based on Maximum Coverage Problem and its Variant | http://www.aclweb.org/anthology/E/E09/E09-1089.pdf | author:Hiroya Takamura; Manabu Okumura
+E09-1090 | Fast Full Parsing by Linear-Chain Conditional Random Fields | http://www.aclweb.org/anthology/E/E09/E09-1090.pdf | author:Yoshimasa Tsuruoka; Jun'ichi Tsujii; Sophia Ananiadou
+E09-1091 | MINT: A Method for Effective and Scalable Mining of Named Entity Transliterations from Large Comparable Corpora | http://www.aclweb.org/anthology/E/E09/E09-1091.pdf | author:Raghavendra Udupa; K Saravanan; A Kumaran; Jagadeesh Jagarlamudi
+E09-1092 | Deriving Generalized Knowledge from Corpora Using WordNet Abstraction | http://www.aclweb.org/anthology/E/E09/E09-1092.pdf | author:Benjamin Van Durme; Phillip Michalak; Lenhart Schubert
+E09-1093 | Learning Efficient Parsing | http://www.aclweb.org/anthology/E/E09/E09-1093.pdf | author:Gertjan van Noord
+E09-1094 | A Robust and Extensible Exemplar-Based Model of Thematic Fit | http://www.aclweb.org/anthology/E/E09/E09-1094.pdf | author:Bram Vandekerckhove; Dominiek Sandra; Walter Daelemans
+E09-1095 | Growing Finely-Discriminating Taxonomies from Seeds of Varying Quality and Size | http://www.aclweb.org/anthology/E/E09/E09-1095.pdf | author:Tony Veale; Guofu Li; Yanfen Hao
+E09-1096 | Feature-Based Method for Document Alignment in Comparable News Corpora | http://www.aclweb.org/anthology/E/E09/E09-1096.pdf | author:Thuy Vu; Ai Ti Aw; Min Zhang
+E09-1097 | Improving Grammaticality in Statistical Sentence Generation: Introducing a Dependency Spanning Tree Algorithm with an Argument Satisfaction Model | http://www.aclweb.org/anthology/E/E09/E09-1097.pdf | author:Stephen Wan; Mark Dras; Robert Dale; Cécile Paris
+E09-1098 | Co-Dispersion: A Windowless Approach to Lexical Association | http://www.aclweb.org/anthology/E/E09/E09-1098.pdf | author:Justin Washtell
+E09-1099 | Language ID in the Context of Harvesting Language Data off the Web | http://www.aclweb.org/anthology/E/E09/E09-1099.pdf | author:Fei Xia; William Lewis; Hoifung Poon
+E09-1100 | Character-Level Dependencies in Chinese: Usefulness and Learning | http://www.aclweb.org/anthology/E/E09/E09-1100.pdf | author:Hai Zhao
+E09-2001 | Frolog: an Accommodating Text-Adventure Game | http://www.aclweb.org/anthology/E/E09/E09-2001.pdf | author:Luciana Benotti
+E09-2002 | CBSEAS, a Summarization System – Integration of Opinion Mining Techniques to Summarize Blogs | http://www.aclweb.org/anthology/E/E09/E09-2002.pdf | author:Aurélien Bossard; Michel Généreux; Thierry Poibeau
+E09-2003 | Grammatical Framework Web Service | http://www.aclweb.org/anthology/E/E09/E09-2003.pdf | author:Björn Bringert; Krasimir Angelov; Aarne Ranta
+E09-2004 | Gossip Galore – A Self-Learning Agent for Exchanging Pop Trivia | http://www.aclweb.org/anthology/E/E09/E09-2004.pdf | author:Xiwen Cheng; Peter Adolphs; Feiyu Xu; Hans Uszkoreit; Hong Li
+E09-2005 | An Open-Source Natural Language Generator for OWL Ontologies and its Use in Protege and Second Life | http://www.aclweb.org/anthology/E/E09/E09-2005.pdf | author:Dimitrios Galanis; George Karakatsiotis; Gerasimos Lampouras; Ion Androutsopoulos
+E09-2006 | eHumanities Desktop - An Online System for Corpus Management and Analysis in Support of Computing in the Humanities | http://www.aclweb.org/anthology/E/E09/E09-2006.pdf | author:Rüdiger Gleim; Ulli Waltinger; Alexandra Ernst; Alexander Mehler; Tobias Feith; Dietmar Esch
+E09-2007 | A Comparison of Clausal Coordinate Ellipsis in Estonian and German: Remarkably Similar Elision Rules Allow a Language-Independent Ellipsis-Generation Module | http://www.aclweb.org/anthology/E/E09/E09-2007.pdf | author:Karin Harbusch; Mare Koit; Haldur Õim
+E09-2008 | Foma: a Finite-State Compiler and Library | http://www.aclweb.org/anthology/E/E09/E09-2008.pdf | author:Mans Hulden
+E09-2009 | The Software Architecture for the First Challenge on Generating Instructions in Virtual Environments | http://www.aclweb.org/anthology/E/E09/E09-2009.pdf | author:Alexander Koller; Donna Byron; Justine Cassell; Robert Dale; Johanna Moore; Jon Oberlander; Kristina Striegnitz
+E09-2010 | Adaptive Natural Language Interaction | http://www.aclweb.org/anthology/E/E09/E09-2010.pdf | author:Stasinos Konstantopoulos; Athanasios Tegos; Dimitrios Bilidas; Ion Androutsopoulos; Gerasimos Lampouras; Colin Matheson; Olivier Deroo; Prodromos Malakasiotis
+E09-2011 | Parsing, Projecting & Prototypes: Repurposing Linguistic Data on the Web | http://www.aclweb.org/anthology/E/E09/E09-2011.pdf | author:William Lewis; Fei Xia
+E09-2012 | A Tool for Multi-Word Expression Extraction in Modern Greek Using Syntactic Parsing | http://www.aclweb.org/anthology/E/E09/E09-2012.pdf | author:Athina Michou; Violeta Seretan
+E09-2013 | Matching Readers' Preferences and Reading Skills with Appropriate Web Texts | http://www.aclweb.org/anthology/E/E09/E09-2013.pdf | author:Eleni Miltsakaki
+E09-2014 | A Text-Based Search Interface for Multimedia Dialectics | http://www.aclweb.org/anthology/E/E09/E09-2014.pdf | author:Katerina Pastra; Eirini Balta
+E09-2015 | Grammar Development in GF | http://www.aclweb.org/anthology/E/E09/E09-2015.pdf | author:Aarne Ranta; Krasimir Angelov; Björn Bringert
+E09-2016 | Three BioNLP Tools Powered by a Biological Lexicon | http://www.aclweb.org/anthology/E/E09/E09-2016.pdf | author:Yutaka Sasaki; Paul Thompson; John McNaught; Sophia Ananiadou
+E09-2017 | A Mobile Health and Fitness Companion Demonstrator | http://www.aclweb.org/anthology/E/E09/E09-2017.pdf | author:Olov Stahl; Björn Gambäck; Markku Turunen; Jaakko Hakulinen
+E09-3001 | Modelling Early Language Acquisition Skills: Towards a General Statistical Learning Mechanism | http://www.aclweb.org/anthology/E/E09/E09-3001.pdf | author:Guillaume Aimetti
+E09-3002 | A Memory-Based Approach to the Treatment of Serial Verb Construction in Combinatory Categorial Grammar | http://www.aclweb.org/anthology/E/E09/E09-3002.pdf | author:Prachya Boonkwan
+E09-3003 | Combining a Statistical Language Model with Logistic Regression to Predict the Lexical and Syntactic Difficulty of Texts for FFL | http://www.aclweb.org/anthology/E/E09/E09-3003.pdf | author:Thomas François
+E09-3004 | Finding Word Substitutions Using a Distributional Similarity Baseline and Immediate Context Overlap | http://www.aclweb.org/anthology/E/E09/E09-3004.pdf | author:Aurelie Herbelot
+E09-3005 | Structural Correspondence Learning for Parse Disambiguation | http://www.aclweb.org/anthology/E/E09/E09-3005.pdf | author:Barbara Plank
+E09-3006 | A Chain-starting Classifier of Definite NPs in Spanish | http://www.aclweb.org/anthology/E/E09/E09-3006.pdf | author:Marta Recasens
+E09-3007 | Speech Emotion Recognition With TGI+.2 Classifier | http://www.aclweb.org/anthology/E/E09/E09-3007.pdf | author:Julia Sidorova
+E09-3008 | A Comparison of Merging Strategies for Translation of German Compounds | http://www.aclweb.org/anthology/E/E09/E09-3008.pdf | author:Sara Stymne
+E09-3009 | A Generalized Vector Space Model for Text Retrieval Based on Semantic Relatedness | http://www.aclweb.org/anthology/E/E09/E09-3009.pdf | author:George Tsatsaronis; Vicky Panagiotopoulou
+E09-3010 | Aligning Medical Domain Ontologies for Clinical Query Extraction | http://www.aclweb.org/anthology/E/E09/E09-3010.pdf | author:Pinar Wennerberg
+E09-3011 | Extraction of Definitions Using Grammar-Enhanced Machine Learning | http://www.aclweb.org/anthology/E/E09/E09-3011.pdf | author:Eline Westerhout

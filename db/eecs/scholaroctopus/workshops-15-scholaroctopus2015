@@ -1,0 +1,589 @@
+W15-0101 | Leveraging a Semantically Annotated Corpus to Disambiguate Prepositional Phrase Attachment | http://www.aclweb.org/anthology/W/W15/W15-0101.pdf | author:Guy Emerson; Ann Copestake
+W15-0102 | Prepositional Phrase Attachment Problem Revisited: how Verbnet can Help | http://www.aclweb.org/anthology/W/W15/W15-0102.pdf | author:Daniel Bailey; Yuliya Lierler; Benjamin Susman
+W15-0103 | From Adjective Glosses to Attribute Concepts: Learning Different Aspects That an Adjective Can Describe | http://www.aclweb.org/anthology/W/W15/W15-0103.pdf | author:Omid Bakhshandh; James Allen
+W15-0104 | Exploiting Fine-grained Syntactic Transfer Features to Predict the Compositionality of German Particle Verbs | http://www.aclweb.org/anthology/W/W15/W15-0104.pdf | author:Stefan Bott; Sabine Schulte im Walde
+W15-0105 | Multilingual Reliability and "Semantic" Structure of Continuous Word Spaces | http://www.aclweb.org/anthology/W/W15/W15-0105.pdf | author:Maximilian Köper; Christian Scheible; Sabine Schulte im Walde
+W15-0106 | Clarifying Intentions in Dialogue: A Corpus Study | http://www.aclweb.org/anthology/W/W15/W15-0106.pdf | author:Julian J. Schlöder; Raquel Fernandez
+W15-0107 | From distributional semantics to feature norms: grounding semantic models in human perceptual data | http://www.aclweb.org/anthology/W/W15/W15-0107.pdf | author:Luana Fagarasan; Eva Maria Vecchi; Stephen Clark
+W15-0108 | Obtaining a Better Understanding of Distributional Models of German Derivational Morphology | http://www.aclweb.org/anthology/W/W15/W15-0108.pdf | author:Max Kisselew; Sebastian Padó; Alexis Palmer; Jan Šnajder
+W15-0109 | Semantic Complexity of Quantifiers and Their Distribution in Corpora | http://www.aclweb.org/anthology/W/W15/W15-0109.pdf | author:Jakub Szymanik; Camilo Thorne
+W15-0110 | Sound-based distributional models | http://www.aclweb.org/anthology/W/W15/W15-0110.pdf | author:Alessandro Lopopolo; Emiel van Miltenburg
+W15-0111 | Alignment of Eye Movements and Spoken Language for Semantic Image Understanding | http://www.aclweb.org/anthology/W/W15/W15-0111.pdf | author:Preethi Vaidyanathan; Emily Prud’hommeaux; Cecilia O. Alm; Jeff B. Pelz; Anne R. Haake
+W15-0112 | From a Distance: Using Cross-lingual Word Alignments for Noun Compound Bracketing | http://www.aclweb.org/anthology/W/W15/W15-0112.pdf | author:Patrick Ziering; Lonneke van der Plas
+W15-0113 | Unsupervised Learning of Coherent and General Semantic Classes for Entity Aggregates | http://www.aclweb.org/anthology/W/W15/W15-0113.pdf | author:Henry Anaya-Sánchez; Anselmo Peñas
+W15-0114 | Crowdsourced Word Sense Annotations and Difficult Words and Examples | http://www.aclweb.org/anthology/W/W15/W15-0114.pdf | author:Oier Lopez de Lacalle; Eneko Agirre
+W15-0115 | Curse or Boon? Presence of Subjunctive Mood in Opinionated Text | http://www.aclweb.org/anthology/W/W15/W15-0115.pdf | author:Sapna Negi; Paul Buitelaar
+W15-0116 | Hierarchical Statistical Semantic Realization for Minimal Recursion Semantics | http://www.aclweb.org/anthology/W/W15/W15-0116.pdf | author:Matic Horvat; Ann Copestake; Bill Byrne
+W15-0117 | Uniform Surprisal at the Level of Discourse Relations: Negation Markers and Discourse Connective Omission | http://www.aclweb.org/anthology/W/W15/W15-0117.pdf | author:Fatemeh Torabi Asr; Vera Demberg
+W15-0118 | Efficiency in Ambiguity: Two Models of Probabilistic Semantics for Natural Language | http://www.aclweb.org/anthology/W/W15/W15-0118.pdf | author:Daoud Clarke; Bill Keller
+W15-0119 | On the Proper Treatment of Quantifiers in Probabilistic Logic Semantics | http://www.aclweb.org/anthology/W/W15/W15-0119.pdf | author:Islam Beltagy; Katrin Erk
+W15-0120 | Mr Darcy and Mr Toad, gentlemen: distributional names and their kinds | http://www.aclweb.org/anthology/W/W15/W15-0120.pdf | author:Aurélie Herbelot
+W15-0121 | Feeling is Understanding: From Affective to Semantic Spaces | http://www.aclweb.org/anthology/W/W15/W15-0121.pdf | author:Elias Iosif; Alexandros Potamianos
+W15-0122 | Automatic Noun Compound Interpretation using Deep Neural Networks and Word Embeddings | http://www.aclweb.org/anthology/W/W15/W15-0122.pdf | author:Corina Dima; Erhard Hinrichs
+W15-0123 | Integrating Non-Linguistic Events into Discourse Structure | http://www.aclweb.org/anthology/W/W15/W15-0123.pdf | author:Julie Hunter; Nicholas Asher; Alex Lascarides
+W15-0124 | A Discriminative Model for Perceptually-Grounded Incremental Reference Resolution | http://www.aclweb.org/anthology/W/W15/W15-0124.pdf | author:Casey Kennington; Livia Dia; David Schlangen
+W15-0125 | Incremental Semantics for Dialogue Processing: Requirements, and a Comparison of Two Approaches | http://www.aclweb.org/anthology/W/W15/W15-0125.pdf | author:Julian Hough; Casey Kennington; David Schlangen; Jonathan Ginzburg
+W15-0126 | Semantic Dependency Graph Parsing Using Tree Approximations | http://www.aclweb.org/anthology/W/W15/W15-0126.pdf | author:Željko Agić; Alexander Koller; Stephan Oepen
+W15-0127 | Semantic construction with graph grammars | http://www.aclweb.org/anthology/W/W15/W15-0127.pdf | author:Alexander Koller
+W15-0128 | Layers of Interpretation: On Grammar and Compositionality | http://www.aclweb.org/anthology/W/W15/W15-0128.pdf | author:Emily M. Bender; Dan Flickinger; Stephan Oepen; Woodley Packard; Ann Copestake
+W15-0129 | Pragmatic Rejection | http://www.aclweb.org/anthology/W/W15/W15-0129.pdf | author:Julian J. Schlöder; Raquel Fernandez
+W15-0130 | Feedback in Conversation as Incremental Semantic Update | http://www.aclweb.org/anthology/W/W15/W15-0130.pdf | author:Arash Eshghi; Christine Howes; Eleni Gregoromichelaki; Julian Hough; Matthew Purver
+W15-0131 | Dynamics of Public Commitments in Dialogue | http://www.aclweb.org/anthology/W/W15/W15-0131.pdf | author:Antoine Venant; Nicholas Asher
+W15-0132 | Simple Interval Temporal Logic for Natural Language Assertion Descriptions | http://www.aclweb.org/anthology/W/W15/W15-0132.pdf | author:Reyadh Alluhaibi
+W15-0133 | How hard is this query? Measuring the Semantic Complexity of Schema-agnostic Queries | http://www.aclweb.org/anthology/W/W15/W15-0133.pdf | author:Andre Freitas; Juliano Efson Sales; Siegfried Handschuh; Edward Curry
+W15-0201 | On the Principles of Semantic Annotation | http://www.aclweb.org/anthology/W/W15/W15-0201.pdf | author:Harry Bunt
+W15-0202 | Using a unified taxonomy to annotate discourse markers in speech and writing | http://www.aclweb.org/anthology/W/W15/W15-0202.pdf | author:Ludivine Crible; Sandrine Zufferey
+W15-0203 | Creating and retrieving tense and aspect annotation with GraphAnno, a lightweight tool for multi-level annotation | http://www.aclweb.org/anthology/W/W15/W15-0203.pdf | author:Volker Gast; Lennart Bierkandt; Christoph Rzymski
+W15-0204 | The Semantics of Image Annotation | http://www.aclweb.org/anthology/W/W15/W15-0204.pdf | author:Julia Bosque-Gil; James Pustejosvsky
+W15-0205 | Factors Influencing the Implicitation of Discourse Relations across Languages | http://www.aclweb.org/anthology/W/W15/W15-0205.pdf | author:Jet Hoek; Sandrine Zufferey
+W15-0206 | Instrument subjects without Instrument role | http://www.aclweb.org/anthology/W/W15/W15-0206.pdf | author:Elisabetta Jezek; Rossella Varvara
+W15-0207 | The Annotation of Measure Expressions in ISO Standards | http://www.aclweb.org/anthology/W/W15/W15-0207.pdf | author:Kiyong Lee
+W15-0208 | A Flexible Tool for Manual Word Sense Annotation | http://www.aclweb.org/anthology/W/W15/W15-0208.pdf | author:Steven Neale; Joao Silva; Antonio Branco
+W15-0209 | Annotating Attribution Relations across Languages and Genres | http://www.aclweb.org/anthology/W/W15/W15-0209.pdf | author:Silvia Pareti
+W15-0210 | Semantic Relations in Discourse: The Current State of ISO 24617-8 | http://www.aclweb.org/anthology/W/W15/W15-0210.pdf | author:Rashmi Prasad; Harry Bunt
+W15-0211 | Analysis of Temporal Expressions Annotated in Clinical Notes | http://www.aclweb.org/anthology/W/W15/W15-0211.pdf | author:Hegler Tissot; Angus Roberts; Leon Derczynski; Genevieve Gorrell; Marcus Didonet Del Fabro
+W15-0212 | Rapid FrameNet annotation of spoken conversation transcripts | http://www.aclweb.org/anthology/W/W15/W15-0212.pdf | author:Jeremy Trione; Frederic Bechet; Benoit Favre; Alexis Nasr
+W15-0301 | Towards a Unified Approach to Modality Annotation in Portuguese | http://www.aclweb.org/anthology/W/W15/W15-0301.pdf | author:Luciana Beatrix Ávila; Amália Mendes; Iris Hendrickx
+W15-0302 |  A hedging annotation scheme focused on epistemic phrases for informal language | http://www.aclweb.org/anthology/W/W15/W15-0302.pdf | author:Liliana Mamani Sanchez; Carl Vogel
+W15-0303 | Annotating modals with GraphAnno, a configurable lightweight tool for multi-level annotation | http://www.aclweb.org/anthology/W/W15/W15-0303.pdf | author:Volker Gast; Lennart Bierkandt; Christoph Rzymski
+W15-0401 | Extending OWL Ontologies by Cartesian Types to Represent N-ary Relations in Natural Language | http://www.aclweb.org/anthology/W/W15/W15-0401.pdf | author:Hans-Ulrich Krieger; Christian Willms
+W15-0402 | Ontology Authoring Inspired By Dialogue | http://www.aclweb.org/anthology/W/W15/W15-0402.pdf | author:Artemis Parvizi; Yuan Ren; Markel Vigo; Kees van Deemter; Chris Mellish; Jeff Z. Pan; Robert Stevens; Caroline Jay
+W15-0403 | Parsing Software Requirements with an Ontology-based Semantic Role Labeler | http://www.aclweb.org/anthology/W/W15/W15-0403.pdf | author:Michael Roth; Ewan Klein
+W15-0404 | Using Ontologies to Model Polysemy in Lexical Resources | http://www.aclweb.org/anthology/W/W15/W15-0404.pdf | author:Fahad Khan; Francesca Frontini
+W15-0405 | Modelling time and space in Brazilian culture | http://www.aclweb.org/anthology/W/W15/W15-0405.pdf | author:Daniel Couto-Vale; Rodrigo de Oliveira
+W15-0406 | Trimming a consistent OWL knowledge base, relying on linguistic evidence | http://www.aclweb.org/anthology/W/W15/W15-0406.pdf | author:Julien Corman; Nathalie Aussenac-Gilles; Laure Vieu
+W15-0407 | When is Lying the Right Choice? | http://www.aclweb.org/anthology/W/W15/W15-0407.pdf | author:Federico Cerutti; Artemis Parvizi; Alice Toniolo; Dave Braines; Geeth R. de Mel; Timothy J. Norman; Nir Oren; Jeff Z. Pan; Gavin Pearson; Stephen D. Pipes; Paul Sullivan
+W15-0501 | Linking the Thoughts: Analysis of Argumentation Structures in Scientific Publications | http://www.aclweb.org/anthology/W/W15/W15-0501.pdf | author:Christian Kirschner; Judith Eckle-Kohler; Iryna Gurevych
+W15-0502 | Identifying Argumentation Schemes in Genetics Research Articles | http://www.aclweb.org/anthology/W/W15/W15-0502.pdf | author:Nancy Green
+W15-0503 | Extracting Argument and Domain Words for Identifying Argument Components in Texts | http://www.aclweb.org/anthology/W/W15/W15-0503.pdf | author:Huy Nguyen; Diane Litman
+W15-0504 | Towards relation based Argumentation Mining | http://www.aclweb.org/anthology/W/W15/W15-0504.pdf | author:Lucas Carstens; Francesca Toni
+W15-0505 | A Shared Task on Argumentation Mining in Newspaper Editorials | http://www.aclweb.org/anthology/W/W15/W15-0505.pdf | author:Johannes Kiesel; Khalid Al Khatib; Matthias Hagen; Benno Stein
+W15-0506 | Conditional Random Fields for Identifying Appropriate Types of Support for Propositions in Online User Comments | http://www.aclweb.org/anthology/W/W15/W15-0506.pdf | author:Joonsuk Park; Arzoo Katiyar; Bishan Yang
+W15-0507 | A Computational Approach for Generating Toulmin Model Argumentation | http://www.aclweb.org/anthology/W/W15/W15-0507.pdf | author:Paul Reisert; Naoya Inoue; Naoaki Okazaki; Kentaro Inui
+W15-0508 | Argument Extraction from News | http://www.aclweb.org/anthology/W/W15/W15-0508.pdf | author:Christos Sardianos; Ioannis Manousos Katakis; Georgios Petasis; Vangelis Karkaletsis
+W15-0509 | From Argumentation Mining to Stance Classification | http://www.aclweb.org/anthology/W/W15/W15-0509.pdf | author:Parinaz Sobhani; Diana Inkpen; Stan Matwin
+W15-0510 | Argument Discovery and Extraction with the Argument Workbench | http://www.aclweb.org/anthology/W/W15/W15-0510.pdf | author:Adam Wyner; Wim Peters; David Price
+W15-0511 | Automatic Claim Negation: Why, How and When | http://www.aclweb.org/anthology/W/W15/W15-0511.pdf | author:Yonatan Bilu; Daniel Hershcovich; Noam Slonim
+W15-0512 | Learning Sentence Ordering for Opinion Generation of Debate | http://www.aclweb.org/anthology/W/W15/W15-0512.pdf | author:Toshihiko Yanase; Toshinori Miyoshi; Kohsuke Yanai; Misa Sato; Makoto Iwayama; Yoshiki Niwa; Paul Reisert; Kentaro Inui
+W15-0513 | Towards Detecting Counter-considerations in Text | http://www.aclweb.org/anthology/W/W15/W15-0513.pdf | author:Andreas Peldszus; Manfred Stede
+W15-0514 | Identifying Prominent Arguments in Online Debates Using Semantic Textual Similarity | http://www.aclweb.org/anthology/W/W15/W15-0514.pdf | author:Filip Boltužić; Jan Šnajder
+W15-0515 | And That's A Fact: Distinguishing Factual and Emotional Argumentation in Online Dialogue | http://www.aclweb.org/anthology/W/W15/W15-0515.pdf | author:Shereen Oraby; Lena Reed; Ryan Compton; Ellen Riloff; Marilyn Walker; Steve Whittaker
+W15-0516 | Combining Argument Mining Techniques | http://www.aclweb.org/anthology/W/W15/W15-0516.pdf | author:John Lawrence; Chris Reed
+W15-0601 | Candidate evaluation strategies for improved difficulty prediction of language tests | http://www.aclweb.org/anthology/W/W15/W15-0601.pdf | author:Lisa Beinborn; Torsten Zesch; Iryna Gurevych
+W15-0602 | Feature selection for automated speech scoring | http://www.aclweb.org/anthology/W/W15/W15-0602.pdf | author:Anastassia Loukina; Klaus Zechner; Lei Chen; Michael Heilman
+W15-0603 | Incorporating Coherence of Topics as a Criterion in Automatic Response-to-Text Assessment of the Organization of Writing | http://www.aclweb.org/anthology/W/W15/W15-0603.pdf | author:Zahra Rahimi; Diane Litman; Elaine Wang; Richard Correnti
+W15-0604 | Automatic morphological analysis of learner Hungarian | http://www.aclweb.org/anthology/W/W15/W15-0604.pdf | author:Scott Ledbetter; Markus Dickinson
+W15-0605 | Automated Scoring of Picture-based Story Narration | http://www.aclweb.org/anthology/W/W15/W15-0605.pdf | author:Swapna Somasundaran; Chong Min Lee; Martin Chodorow; Xinhao Wang
+W15-0606 | Measuring Feature Diversity in Native Language Identification | http://www.aclweb.org/anthology/W/W15/W15-0606.pdf | author:Shervin Malmasi; Aoife Cahill
+W15-0607 | Automated Evaluation of Scientific Writing: AESW Shared Task Proposal | http://www.aclweb.org/anthology/W/W15/W15-0607.pdf | author:Vidas Daudaravicius
+W15-0608 | Scoring Persuasive Essays Using Opinions and their Targets | http://www.aclweb.org/anthology/W/W15/W15-0608.pdf | author:Noura Farra; Swapna Somasundaran; Jill Burstein
+W15-0609 | Towards Automatic Description of Knowledge Components | http://www.aclweb.org/anthology/W/W15/W15-0609.pdf | author:Cyril Goutte; Guillaume Durand; Serge Leger
+W15-0610 | The Impact of Training Data on Automated Short Answer Scoring Performance | http://www.aclweb.org/anthology/W/W15/W15-0610.pdf | author:Michael Heilman; Nitin Madnani
+W15-0611 | Interpreting Questions with a Log-Linear Ranking Model in a Virtual Patient Dialogue System | http://www.aclweb.org/anthology/W/W15/W15-0611.pdf | author:Evan Jaffe; Michael White; William Schuler; Eric Fosler-Lussier; Alex Rosenfeld; Douglas Danforth
+W15-0612 | Identifying Patterns For Short Answer Scoring Using Graph-based Lexico-Semantic Text Matching | http://www.aclweb.org/anthology/W/W15/W15-0612.pdf | author:Lakshmi Ramachandran; Jian Cheng; Peter Foltz
+W15-0613 | Lark Trills for Language Drills: Text-to-speech technology for language learners | http://www.aclweb.org/anthology/W/W15/W15-0613.pdf | author:Elena Volodina; Dijana Pijetlovic
+W15-0614 | The Jinan Chinese Learner Corpus | http://www.aclweb.org/anthology/W/W15/W15-0614.pdf | author:Maolin Wang; Shervin Malmasi; Mingxuan Huang
+W15-0615 | Reducing Annotation Efforts in Supervised Short Answer Scoring | http://www.aclweb.org/anthology/W/W15/W15-0615.pdf | author:Torsten Zesch; Michael Heilman; Aoife Cahill
+W15-0616 | Annotation and Classification of Argumentative Writing Revisions | http://www.aclweb.org/anthology/W/W15/W15-0616.pdf | author:Fan Zhang; Diane Litman
+W15-0617 | Embarrassed or Awkward? Ranking Emotion Synonyms for ESL Learners' Appropriate Wording | http://www.aclweb.org/anthology/W/W15/W15-0617.pdf | author:Wei-Fan Chen; MeiHua Chen; Lun-Wei Ku
+W15-0618 | RevUP: Automatic Gap-Fill Question Generation from Educational Texts | http://www.aclweb.org/anthology/W/W15/W15-0618.pdf | author:Girish Kumar; Rafael Banchs; Luis Fernando D'Haro
+W15-0619 | Preliminary Experiments on Crowdsourced Evaluation of Feedback Granularity | http://www.aclweb.org/anthology/W/W15/W15-0619.pdf | author:Nitin Madnani; Martin Chodorow; Aoife Cahill; Melissa Lopez; Yoko Futagi; Yigal Attali
+W15-0620 | Oracle and Human Baselines for Native Language Identification | http://www.aclweb.org/anthology/W/W15/W15-0620.pdf | author:Shervin Malmasi; Joel Tetreault; Mark Dras
+W15-0621 | Using PEGWriting to Support the Writing Motivation and Writing Quality of Eighth-Grade Students: A Quasi-Experimental Study | http://www.aclweb.org/anthology/W/W15/W15-0621.pdf | author:Joshua Wilson; Trish Martin
+W15-0622 | Towards Creating Pedagogic Views from Encyclopedic Resources | http://www.aclweb.org/anthology/W/W15/W15-0622.pdf | author:Ditty Mathew; Dhivya Eswaran; Sutanu Chakraborti
+W15-0623 | Judging the Quality of Automatically Generated Gap-fill Question using Active Learning | http://www.aclweb.org/anthology/W/W15/W15-0623.pdf | author:Nobal Bikram Niraula; Vasile Rus
+W15-0624 | Generating Reference Texts for Short Answer Scoring Using Graph-based Summarization | http://www.aclweb.org/anthology/W/W15/W15-0624.pdf | author:Lakshmi Ramachandran; Peter Foltz
+W15-0625 | Evaluating the performance of Automated Text Scoring systems | http://www.aclweb.org/anthology/W/W15/W15-0625.pdf | author:Helen Yannakoudakis; Ronan Cummins
+W15-0626 | Task-Independent Features for Automated Essay Grading | http://www.aclweb.org/anthology/W/W15/W15-0626.pdf | author:Torsten Zesch; Michael Wojatzki; Dirk Scholten-Akoun
+W15-0627 | Using Learner Data to Improve Error Correction in Adjective–Noun Combinations | http://www.aclweb.org/anthology/W/W15/W15-0627.pdf | author:Ekaterina Kochmar; Ted Briscoe
+W15-0628 | Using NLP to Support Scalable Assessment of Short Free Text Responses | http://www.aclweb.org/anthology/W/W15/W15-0628.pdf | author:Alistair Willis
+W15-0629 | Automatically Scoring Freshman Writing: A Preliminary Investigation | http://www.aclweb.org/anthology/W/W15/W15-0629.pdf | author:Courtney Napoles; Chris Callison-Burch
+W15-0701 | Tools for Digital Humanities: Enabling Access to the Old Occitan Romance of Flamenca | http://www.aclweb.org/anthology/W/W15/W15-0701.pdf | author:Olga Scrivner; Sandra Kübler
+W15-0702 | RhymeDesign: A Tool for Analyzing Sonic Devices in Poetry | http://www.aclweb.org/anthology/W/W15/W15-0702.pdf | author:Nina McCurdy; Vivek Srikumar; Miriah Meyer
+W15-0703 | Rhetorical Figure Detection: the Case of Chiasmus | http://www.aclweb.org/anthology/W/W15/W15-0703.pdf | author:Marie Dubremetz; Joakim Nivre
+W15-0704 | Validating Literary Theories Using Automatic Social Network Extraction | http://www.aclweb.org/anthology/W/W15/W15-0704.pdf | author:Prashant Jayannavar; Apoorv Agarwal; Melody Ju; Owen Rambow
+W15-0705 | GutenTag: an NLP-driven Tool for Digital Humanities Research in the Project Gutenberg Corpus | http://www.aclweb.org/anthology/W/W15/W15-0705.pdf | author:Julian Brooke; Adam Hammond; Graeme Hirst
+W15-0706 | A Pilot Experiment on Exploiting Translations for Literary Studies on Kafka's "Verwandlung" | http://www.aclweb.org/anthology/W/W15/W15-0706.pdf | author:Fabienne Cap; Ina Rösiger; Jonas Kuhn
+W15-0707 | Identifying Literary Texts with Bigrams | http://www.aclweb.org/anthology/W/W15/W15-0707.pdf | author:Andreas van Cranenburgh; Corina Koolen
+W15-0708 | Visualizing Poetry with SPARSAR – Visual Maps from Poetic Content | http://www.aclweb.org/anthology/W/W15/W15-0708.pdf | author:Rodolfo Delmonte
+W15-0709 | Towards a better understanding of Burrows's Delta in literary authorship attribution | http://www.aclweb.org/anthology/W/W15/W15-0709.pdf | author:Stefan Evert; Thomas Proisl; Thorsten Vitt; Christof Schöch; Fotis Jannidis; Steffen Pielström
+W15-0710 | Gender-Based Vocation Identification in Swedish 19th Century Prose Fiction using Linguistic Patterns, NER and CRF Learning | http://www.aclweb.org/anthology/W/W15/W15-0710.pdf | author:Dimitrios Kokkinakis; Ann Ighe; Mats Malm
+W15-0711 | Rule-based Coreference Resolution in German Historic Novels | http://www.aclweb.org/anthology/W/W15/W15-0711.pdf | author:Markus Krug; Frank Puppe; Fotis Jannidis; Luisa Macharowsky; Isabella Reger; Lukas Weimar
+W15-0712 | A computational linguistic approach to Spanish Golden Age Sonnets: metrical and semantic aspects | http://www.aclweb.org/anthology/W/W15/W15-0712.pdf | author:Borja Navarro
+W15-0713 | AUTOMATED TRANSLATION OF A LITERARY WORK: A PILOT STUDY | http://www.aclweb.org/anthology/W/W15/W15-0713.pdf | author:Laurent Besacier; Lane Schwartz
+W15-0714 | Translating Literary Text between Related Languages using SMT | http://www.aclweb.org/anthology/W/W15/W15-0714.pdf | author:Antonio Toral; Andy Way
+W15-0801 | Translating Granularity of Event Slots into Features for Event Coreference Resolution. | http://www.aclweb.org/anthology/W/W15/W15-0801.pdf | author:Agata Cybulska; Piek Vossen
+W15-0802 | Word Sense Disambiguation via PropStore and OntoNotes for Event Mention Detection | http://www.aclweb.org/anthology/W/W15/W15-0802.pdf | author:Nicolas R Fauceglia; Yiu-Chang Lin; Xuezhe Ma; Eduard Hovy
+W15-0803 | Opposition Relations among Verb Frames | http://www.aclweb.org/anthology/W/W15/W15-0803.pdf | author:Anna Feltracco; Elisabetta Jezek; Bernardo Magnini
+W15-0804 | Encoding event structure in Urdu/Hindi VerbNet | http://www.aclweb.org/anthology/W/W15/W15-0804.pdf | author:Annette Hautli-Janisz; Tracy Holloway King; Gilian Ramchand
+W15-0805 | Using Topic Modeling and Similarity Thresholds to Detect Events | http://www.aclweb.org/anthology/W/W15/W15-0805.pdf | author:Nathan Keane; Connie Yee; Liang Zhou
+W15-0806 | Detecting Causally Embedded Structures Using an Evolutionary Algorithm | http://www.aclweb.org/anthology/W/W15/W15-0806.pdf | author:Chen Li; Roxana Girju
+W15-0807 | Evaluation Algorithms for Event Nugget Detection : A Pilot Study | http://www.aclweb.org/anthology/W/W15/W15-0807.pdf | author:Zhengzhong Liu; Teruko Mitamura; Eduard Hovy
+W15-0808 | Event analysis for information extraction from business-based technical documents | http://www.aclweb.org/anthology/W/W15/W15-0808.pdf | author:Bell Manrique-Losada; Carlos Mario Zapata Jaramillo
+W15-0809 | Event Nugget Annotation: Processes and Issues | http://www.aclweb.org/anthology/W/W15/W15-0809.pdf | author:Teruko Mitamura; Yukari Yamakawa; Susan Holm; Zhiyi Song; Ann Bies; Seth Kulick; Stephanie Strassel
+W15-0810 | Game-Changing Event Definition and Detection in an eSports Corpus | http://www.aclweb.org/anthology/W/W15/W15-0810.pdf | author:Emily Olshefski
+W15-0811 | Identifying Various Kinds of Event Mentions in K-Parser Output | http://www.aclweb.org/anthology/W/W15/W15-0811.pdf | author:Arpit Sharma; Nguyen Vo; Somak Aditya; Chitta Baral
+W15-0812 | From Light to Rich ERE: Annotation of Entities, Relations, and Events | http://www.aclweb.org/anthology/W/W15/W15-0812.pdf | author:Zhiyi Song; Ann Bies; Stephanie Strassel; Tom Riese; Justin Mott; Joe Ellis; Jonathan Wright; Seth Kulick; Neville Ryant; Xiaoyi Ma
+W15-0813 | Classification and Acquisition of Contradictory Event Pairs using Crowdsourcing | http://www.aclweb.org/anthology/W/W15/W15-0813.pdf | author:Yu Takabatake; Hajime Morita; Daisuke Kawahara; Sadao Kurohashi; Ryuichiro Higashinaka; Yoshihiro Matsuo
+W15-0814 | Semantic Interoperability for Cross-lingual and cross-document Event Detection | http://www.aclweb.org/anthology/W/W15/W15-0814.pdf | author:Piek Vossen; Egoitz Laparra; German Rigau; Itziar Aldabe
+W15-0815 | Modeling and Characterizing Social Media Topics Using the Gamma Distribution | http://www.aclweb.org/anthology/W/W15/W15-0815.pdf | author:Connie Yee; Nathan Keane; Liang Zhou
+W15-0901 | A Method of Accounting Bigrams in Topic Models | http://www.aclweb.org/anthology/W/W15/W15-0901.pdf | author:Michael Nokel; Natalia Loukachevitch
+W15-0902 | Multiword Expression Identification with Recurring Tree Fragments and Association Measures | http://www.aclweb.org/anthology/W/W15/W15-0902.pdf | author:Federico Sangati; Andreas van Cranenburgh
+W15-0903 | How to Account for Idiomatic German Support Verb Constructions in Statistical Machine Translation | http://www.aclweb.org/anthology/W/W15/W15-0903.pdf | author:Fabienne Cap; Manju Nirmal; Marion Weller; Sabine Schulte im Walde
+W15-0904 | A Multiword Expression Data Set: Annotating Non-Compositionality and Conventionalization for English Noun Compounds | http://www.aclweb.org/anthology/W/W15/W15-0904.pdf | author:Meghdad Farahmand; Aaron Smith; Joakim Nivre
+W15-0905 | Modeling the Statistical Idiosyncrasy of Multiword Expressions | http://www.aclweb.org/anthology/W/W15/W15-0905.pdf | author:Meghdad Farahmand; Joakim Nivre
+W15-0906 | Clustering-based Approach to Multiword Expression Extraction and Ranking | http://www.aclweb.org/anthology/W/W15/W15-0906.pdf | author:Elena Tutubalina
+W15-0907 | How Constructions Mean | http://www.aclweb.org/anthology/W/W15/W15-0907.pdf | author:Paul Kay; Laura A. Michaelis
+W15-0908 | Never-Ending Multiword Expressions Learning | http://www.aclweb.org/anthology/W/W15/W15-0908.pdf | author:Alexandre Rondon; Helena Caseli; Carlos Ramisch
+W15-0909 | The Impact of Multiword Expression Compositionality on Machine Translation Evaluation | http://www.aclweb.org/anthology/W/W15/W15-0909.pdf | author:Bahar Salehi; Nitika Mathur; Paul Cook; Timothy Baldwin
+W15-0910 | The Bare Necessities: Increasing Lexical Coverage for Multi-Word Domain Terms with Less Lexical Data | http://www.aclweb.org/anthology/W/W15/W15-0910.pdf | author:Branimir Boguraev; Esme Manandise; Benjamin Segal
+W15-0911 | Phrase translation using a bilingual dictionary and n-gram data: A case study from Vietnamese to English | http://www.aclweb.org/anthology/W/W15/W15-0911.pdf | author:Khang Nhut Lam; Feras Al Tarouti; Jugal Kalita
+W15-0912 | Annotation and Extraction of Multiword Expressions in Turkish Treebanks | http://www.aclweb.org/anthology/W/W15/W15-0912.pdf | author:Gülşen Eryiğit; Kübra ADALI; Dilara Torunoğlu-Selamet; Umut Sulubacak; Tuğba Pamay
+W15-0913 | Event Categorization beyond Verb Senses | http://www.aclweb.org/anthology/W/W15/W15-0913.pdf | author:Aron Marvel; Jean-Pierre Koenig
+W15-0914 | Muddying The Multiword Expression Waters: How Cognitive Demand Affects Multiword Expression Production | http://www.aclweb.org/anthology/W/W15/W15-0914.pdf | author:Adam Goodkind; Andrew Rosenberg
+W15-0915 | Building a Lexicon of Formulaic Language for Language Learners | http://www.aclweb.org/anthology/W/W15/W15-0915.pdf | author:Julian Brooke; Adam Hammond; David Jacob; Vivian Tsang; Graeme Hirst; Fraser Shein
+W15-1001 | Harmonizing word alignments and syntactic structures for extracting phrasal translation equivalents | http://www.aclweb.org/anthology/W/W15/W15-1001.pdf | author:Dun Deng; Nianwen Xue; Shiman Guo
+W15-1002 | Non-projective Dependency-based Pre-Reordering with Recurrent Neural Network for Machine Translation | http://www.aclweb.org/anthology/W/W15/W15-1002.pdf | author:Antonio Valerio Miceli Barone; Giuseppe Attardi
+W15-1003 | Translating Negation: Induction, Search And Model Errors | http://www.aclweb.org/anthology/W/W15/W15-1003.pdf | author:Federico Fancellu; Bonnie Webber
+W15-1004 | SMT error analysis and mapping to syntactic, semantic and structural fixes | http://www.aclweb.org/anthology/W/W15/W15-1004.pdf | author:Nora Aranberri
+W15-1005 | Unsupervised False Friend Disambiguation Using Contextual Word Clusters and Parallel Word Alignments | http://www.aclweb.org/anthology/W/W15/W15-1005.pdf | author:Maryam Aminian; Mahmoud Ghoneim; Mona Diab
+W15-1006 | METEOR-WSD: Improved Sense Matching in MT Evaluation | http://www.aclweb.org/anthology/W/W15/W15-1006.pdf | author:Marianna Apidianaki; Benjamin Marie
+W15-1007 | Analyzing English-Spanish Named-Entity enhanced Machine Translation | http://www.aclweb.org/anthology/W/W15/W15-1007.pdf | author:Mikel Artetxe; Eneko Agirre; Iñaki Alegria; Gorka Labaka
+W15-1008 | Predicting Prepositions for SMT | http://www.aclweb.org/anthology/W/W15/W15-1008.pdf | author:Marion Weller; Alexander Fraser; Sabine Schulte im Walde
+W15-1009 | Translation reranking using source phrase dependency features | http://www.aclweb.org/anthology/W/W15/W15-1009.pdf | author:Antonio Valerio Miceli Barone
+W15-1010 | Semantics-based pretranslation for SMT using fuzzy matches | http://www.aclweb.org/anthology/W/W15/W15-1010.pdf | author:Tom Vanallemeersch; Vincent Vandeghinste
+W15-1011 | What Matters Most in Morphologically Segmented SMT Models? | http://www.aclweb.org/anthology/W/W15/W15-1011.pdf | author:Mohammad Salameh; Colin Cherry; Grzegorz Kondrak
+W15-1012 | Improving Chinese-English PropBank Alignment | http://www.aclweb.org/anthology/W/W15/W15-1012.pdf | author:Shumin Wu; Martha Palmer
+W15-1101 | Predictions for self-priming from incremental updating models unifying comprehension and production | http://www.aclweb.org/anthology/W/W15/W15-1101.pdf | author:Cassandra L. Jacobs
+W15-1102 | Pragmatic Alignment on Social Support Type in Health Forum Conversations | http://www.aclweb.org/anthology/W/W15/W15-1102.pdf | author:Yafei Wang; John Yen; David Reitter
+W15-1103 | Audience size and contextual effects on information density in Twitter conversations | http://www.aclweb.org/anthology/W/W15/W15-1103.pdf | author:Gabriel Doyle; Michael Frank
+W15-1104 | Centre Stage: How Social Network Position Shapes Linguistic Coordination | http://www.aclweb.org/anthology/W/W15/W15-1104.pdf | author:Bill Noble; Raquel Fernandez
+W15-1105 | Fusion of Compositional Network-based and Lexical Function Distributional Semantic Models | http://www.aclweb.org/anthology/W/W15/W15-1105.pdf | author:Spiros Georgiladakis; Elias Iosif; Alexandros Potamianos
+W15-1106 | Verb polysemy and frequency effects in thematic fit modeling | http://www.aclweb.org/anthology/W/W15/W15-1106.pdf | author:Clayton Greenberg; Vera Demberg; Asad Sayeed
+W15-1107 | An Evaluation and Comparison of Linguistic Alignment Measures | http://www.aclweb.org/anthology/W/W15/W15-1107.pdf | author:Yang Xu; David Reitter
+W15-1108 | Utility-based evaluation metrics for models of language acquisition: A look at speech segmentation | http://www.aclweb.org/anthology/W/W15/W15-1108.pdf | author:Lawrence Phillips; Lisa Pearl
+W15-1109 | Evidence of syntactic working memory usage in MEG data | http://www.aclweb.org/anthology/W/W15/W15-1109.pdf | author:Marten van Schijndel; Brian Murphy; William Schuler
+W15-1110 | Modeling fMRI time courses with linguistic structure at various grain sizes | http://www.aclweb.org/anthology/W/W15/W15-1110.pdf | author:John Hale; David Lutz; Wen-Ming Luh; Jonathan Brennan
+W15-1201 | From ADHD to SAD: Analyzing the Language of Mental Health on Twitter through Self-Reported Diagnoses | http://www.aclweb.org/anthology/W/W15/W15-1201.pdf | author:Glen Coppersmith; Mark Dredze; Craig Harman; Kristy Hollingshead
+W15-1202 | Quantifying the Language of Schizophrenia in Social Media | http://www.aclweb.org/anthology/W/W15/W15-1202.pdf | author:Margaret Mitchell; Kristy Hollingshead; Glen Coppersmith
+W15-1203 | The role of personality, age, and gender in tweeting about mental illness | http://www.aclweb.org/anthology/W/W15/W15-1203.pdf | author:Daniel Preoţiuc-Pietro; Johannes Eichstaedt; Gregory Park; Maarten Sap; Laura Smith; Victoria Tobolsky; H. Andrew Schwartz; Lyle Ungar
+W15-1204 | CLPsych 2015 Shared Task: Depression and PTSD on Twitter | http://www.aclweb.org/anthology/W/W15/W15-1204.pdf | author:Glen Coppersmith; Mark Dredze; Craig Harman; Kristy Hollingshead; Margaret Mitchell
+W15-1205 | Mental Illness Detection at the World Well-Being Project for the CLPsych 2015 Shared Task | http://www.aclweb.org/anthology/W/W15/W15-1205.pdf | author:Daniel Preoţiuc-Pietro; Maarten Sap; H. Andrew Schwartz; Lyle Ungar
+W15-1206 | Screening Twitter Users for Depression and PTSD with Lexical Decision Lists | http://www.aclweb.org/anthology/W/W15/W15-1206.pdf | author:Ted Pedersen
+W15-1207 | The University of Maryland CLPsych 2015 Shared Task System | http://www.aclweb.org/anthology/W/W15/W15-1207.pdf | author:Philip Resnik; William Armstrong; Leonardo Claudino; Thang Nguyen
+W15-1208 | Computational cognitive modeling of inflectional verb morphology in Spanish-speakers for the characterization and diagnosis of Alzheimer's Disease | http://www.aclweb.org/anthology/W/W15/W15-1208.pdf | author:M. Dolores del Castillo; J. Ignacio Serrano; Jesús Oliva
+W15-1209 | Recursive Neural Networks for Coding Therapist and Patient Behavior in Motivational Interviewing | http://www.aclweb.org/anthology/W/W15/W15-1209.pdf | author:Michael Tanana; Kevin Hallgren; Zac Imel; David Atkins; Padhraic Smyth; Vivek Srikumar
+W15-1210 | Putting Feelings into Words: Cross-Linguistic Markers of the Referential Process | http://www.aclweb.org/anthology/W/W15/W15-1210.pdf | author:Sean Murphy; Bernard Maskit; Wilma Bucci
+W15-1211 | Towards Developing an Annotation Scheme for Depressive Disorder Symptoms: A Preliminary Study using Twitter Data | http://www.aclweb.org/anthology/W/W15/W15-1211.pdf | author:Danielle Mowery; Craig Bryan; Mike Conway
+W15-1212 | Beyond LDA: Exploring Supervised Topic Modeling for Depression-Related Language in Twitter | http://www.aclweb.org/anthology/W/W15/W15-1212.pdf | author:Philip Resnik; William Armstrong; Leonardo Claudino; Thang Nguyen; Viet-An Nguyen; Jordan Boyd-Graber
+W15-1213 | Automated morphological analysis of clinical language samples | http://www.aclweb.org/anthology/W/W15/W15-1213.pdf | author:Kyle Gorman; Steven Bedrick; Geza Kiss; Eric Morley; Rosemary Ingham; Metrah Mohammed; Katina Papadakis; Jan van Santen
+W15-1214 | Similarity Measures for Quantifying Restrictive and Repetitive Behavior in Conversations of Autistic Children | http://www.aclweb.org/anthology/W/W15/W15-1214.pdf | author:Masoud Rouhizadeh; Richard Sproat; Jan van Santen
+W15-1215 | Practical issues in developing semantic frameworks for the analysis of verbal fluency data: A Norwegian data case study | http://www.aclweb.org/anthology/W/W15/W15-1215.pdf | author:Mark Rosenstein; Peter Foltz; Anja Vaskinn; Brita Elvevåg
+W15-1216 | A Computer Program for Tracking the Evolution of a Psychotherapy Treatment | http://www.aclweb.org/anthology/W/W15/W15-1216.pdf | author:Bernard Maskit; Wilma Bucci; Sean Murphy
+W15-1306 | Limits of Natural Logic | http://www.aclweb.org/anthology/W/W15/W15-1306.pdf | author:Lauri Karttunen
+W15-1301 | Translating Negation: A Manual Error Analysis | http://www.aclweb.org/anthology/W/W15/W15-1301.pdf | author:Federico Fancellu; Bonnie Webber
+W15-1302 | Filled Pauses in User-generated Content are Words with Extra-propositional Meaning | http://www.aclweb.org/anthology/W/W15/W15-1302.pdf | author:Ines Rehbein
+W15-1303 | A Compositional Interpretation of Biomedical Event Factuality | http://www.aclweb.org/anthology/W/W15/W15-1303.pdf | author:Halil Kilicoglu; Graciela Rosemblat; Michael Cairelli; Thomas Rindflesch
+W15-1304 | Committed Belief Tagging on the Factbank and LU Corpora: A Comparative Study | http://www.aclweb.org/anthology/W/W15/W15-1304.pdf | author:Gregory Werner; Vinodkumar Prabhakaran; Mona Diab; Owen Rambow
+W15-1305 | Extending NegEx with Kernel Methods for Negation Detection in Clinical Text | http://www.aclweb.org/anthology/W/W15/W15-1305.pdf | author:Chaitanya Shivade; Marie-Catherine de Marneffe; Eric Fosler-Lussier; Albert M. Lai
+W15-1401 | Effects of Situational Factors on Metaphor Detection in an Online Discussion Forum | http://www.aclweb.org/anthology/W/W15/W15-1401.pdf | author:Hyeju Jang; Miaomiao Wen; Carolyn Rose
+W15-1402 | Supervised Word-Level Metaphor Detection: Experiments with Concreteness and Reweighting of Examples | http://www.aclweb.org/anthology/W/W15/W15-1402.pdf | author:Beata Beigman Klebanov; Chee Wee Leong; Michael Flor
+W15-1403 | Modeling the interaction between sensory and affective meanings for detecting metaphor | http://www.aclweb.org/anthology/W/W15/W15-1403.pdf | author:Andrew Gargett; John Barnden
+W15-1404 | Exploring Sensorial Features for Metaphor Identification | http://www.aclweb.org/anthology/W/W15/W15-1404.pdf | author:Serra Sinem Tekiroglu; Gözde Özbal; Carlo Strapparava
+W15-1405 | MetaNet: Deep semantic automatic metaphor analysis | http://www.aclweb.org/anthology/W/W15/W15-1405.pdf | author:Ellen Dodge; Jisup Hong; Elise Stickles
+W15-1406 | High-Precision Abductive Mapping of Multilingual Metaphors | http://www.aclweb.org/anthology/W/W15/W15-1406.pdf | author:Jonathan Gordon; Jerry Hobbs; Jonathan May; Fabrizio Morbini
+W15-1407 | A Corpus of Rich Metaphor Annotation | http://www.aclweb.org/anthology/W/W15/W15-1407.pdf | author:Jonathan Gordon; Jerry Hobbs; Jonathan May; Michael Mohler; Fabrizio Morbini; Bryan Rink; Marc Tomlinson; Suzanne Wertheim
+W15-1408 | Understanding Cultural Conflicts using Metaphors and Sociolinguistic Measures of Influence | http://www.aclweb.org/anthology/W/W15/W15-1408.pdf | author:Samira Shaikh; Tomek Strzalkowski; Sarah Taylor; John Lien; Ting Liu; George Aaron Broadwell; Laurie Feldman; Boris Yamrom; Kit Cho; Yuliya Peshkova
+W15-1409 | Chinese CogBank: Where to See the Cognitive Features of Chinese Words | http://www.aclweb.org/anthology/W/W15/W15-1409.pdf | author:Bin Li; Xiaopeng Bai; Siqi Yin; Jie Xu
+W15-1410 | Fighting Words and Antagonistic Worlds | http://www.aclweb.org/anthology/W/W15/W15-1410.pdf | author:Tony Veale
+W15-1501 | A Simple Word Embedding Model for Lexical Substitution | http://www.aclweb.org/anthology/W/W15/W15-1501.pdf | author:Oren Melamud; Omer Levy; Ido Dagan
+W15-1502 | Unsupervised Text Normalization Using Distributed Representations of Words and Phrases | http://www.aclweb.org/anthology/W/W15/W15-1502.pdf | author:Vivek Kumar Rangarajan Sridhar
+W15-1503 | A Multi-classifier Approach to support Coreference Resolution in a Vector Space Model | http://www.aclweb.org/anthology/W/W15/W15-1503.pdf | author:Ana Zelaia; Olatz Arregi; Basilio Sierra
+W15-1504 | Neural context embeddings for automatic discovery of word senses | http://www.aclweb.org/anthology/W/W15/W15-1504.pdf | author:Mikael Kågebäck; Fredrik Johansson; Richard Johansson; Devdatt Dubhashi
+W15-1505 | Distributional Representations of Words for Short Text Classification | http://www.aclweb.org/anthology/W/W15/W15-1505.pdf | author:Chenglong Ma; Weiqun Xu; Peijia Li; Yonghong Yan
+W15-1506 | Relation Extraction: Perspective from Convolutional Neural Networks | http://www.aclweb.org/anthology/W/W15/W15-1506.pdf | author:Thien Huu Nguyen; Ralph Grishman
+W15-1507 | Distributional Semantic Concept Models for Entity Relation Discovery | http://www.aclweb.org/anthology/W/W15/W15-1507.pdf | author:Jay Urbain; Glenn Bushee; George Kowalski
+W15-1508 | A Deep Architecture for Non-Projective Dependency Parsing | http://www.aclweb.org/anthology/W/W15/W15-1508.pdf | author:Erick Fonseca; Sandra Aluísio
+W15-1509 | Short Text Clustering via Convolutional Neural Networks | http://www.aclweb.org/anthology/W/W15/W15-1509.pdf | author:jiaming xu; peng wang; guanhua tian; bo xu; jun zhao; fangyuan wang; hongwei hao
+W15-1510 | A Word-Embedding-based Sense Index for Regular Polysemy Representation | http://www.aclweb.org/anthology/W/W15/W15-1510.pdf | author:Marco Del Tredici; Núria Bel
+W15-1511 | Simple Semi-Supervised POS Tagging | http://www.aclweb.org/anthology/W/W15/W15-1511.pdf | author:Karl Stratos; Michael Collins
+W15-1512 | Learning Distributed Representations for Multilingual Text Sequences | http://www.aclweb.org/anthology/W/W15/W15-1512.pdf | author:Hieu Pham; Thang Luong; Christopher Manning
+W15-1513 | Combining Distributed Vector Representations for Words | http://www.aclweb.org/anthology/W/W15/W15-1513.pdf | author:Justin Garten; Kenji Sagae; Volkan Ustun; Morteza Dehghani
+W15-1514 | Dependency Link Embeddings: Continuous Representations of Syntactic Substructures | http://www.aclweb.org/anthology/W/W15/W15-1514.pdf | author:Mohit Bansal
+W15-1515 | DeepNL: a Deep Learning NLP pipeline | http://www.aclweb.org/anthology/W/W15/W15-1515.pdf | author:Giuseppe Attardi
+W15-1516 | A Vector Space Approach for Aspect Based Sentiment Analysis | http://www.aclweb.org/anthology/W/W15/W15-1516.pdf | author:Abdulaziz Alghunaim; Mitra Mohtarami; Scott Cyphers; Jim Glass
+W15-1517 | Word Embeddings vs Word Types for Sequence Labeling: the Curious Case of CV Parsing | http://www.aclweb.org/anthology/W/W15/W15-1517.pdf | author:Melanie Tosik; Carsten Lygteskov Hansen; Gerard Goossen; Mihai Rotaru
+W15-1518 | Morpho-syntactic Regularities in Continuous Word Representations: A multilingual study. | http://www.aclweb.org/anthology/W/W15/W15-1518.pdf | author:Garrett Nicolai; Colin Cherry; Grzegorz Kondrak
+W15-1519 | Towards Combined Matrix and Tensor Factorization for Universal Schema Relation Extraction | http://www.aclweb.org/anthology/W/W15/W15-1519.pdf | author:Sameer Singh; Tim Rocktäschel; Sebastian Riedel
+W15-1520 | Neural word embeddings with multiplicative feature interactions for tensor-based compositions | http://www.aclweb.org/anthology/W/W15/W15-1520.pdf | author:Joo-Kyung Kim; Marie-Catherine de Marneffe; Eric Fosler-Lussier
+W15-1521 | Bilingual Word Representations with Monolingual Quality in Mind | http://www.aclweb.org/anthology/W/W15/W15-1521.pdf | author:Thang Luong; Hieu Pham; Christopher D. Manning
+W15-1522 | Distributed Word Representations Improve NER for e-Commerce | http://www.aclweb.org/anthology/W/W15/W15-1522.pdf | author:Mahesh Joshi; Ethan Hart; Mirko Vogel; Jean-David Ruvini
+W15-1523 | Semantic Information Extraction for Improved Word Embeddings | http://www.aclweb.org/anthology/W/W15/W15-1523.pdf | author:Jiaqiang Chen; Gerard de Melo
+W15-1524 | Named Entity Recognition for Arabic Social Media | http://www.aclweb.org/anthology/W/W15/W15-1524.pdf | author:Ayah Zirikly; Mona Diab
+W15-1525 | Vector Space Models for Scientific Document Summarization | http://www.aclweb.org/anthology/W/W15/W15-1525.pdf | author:John Conroy; Sashka Davis
+W15-1526 | Unsupervised Topic Modeling for Short Texts Using Distributed Representations of Words | http://www.aclweb.org/anthology/W/W15/W15-1526.pdf | author:Vivek Kumar Rangarajan Sridhar
+W15-1527 | Estimating User Location in Social Media with Stacked Denoising Auto-encoders | http://www.aclweb.org/anthology/W/W15/W15-1527.pdf | author:Ji Liu; Diana Inkpen
+W15-1601 | Scaling Semantic Frame Annotation | http://www.aclweb.org/anthology/W/W15/W15-1601.pdf | author:Nancy Chang; Praveen Paritosh; David Huynh; Collin Baker
+W15-1602 | An Analytic and Empirical Evaluation of Return-on-Investment-Based Active Learning | http://www.aclweb.org/anthology/W/W15/W15-1602.pdf | author:Robbie Haertel; Eric Ringger; Kevin Seppi; Paul Felt
+W15-1603 | Annotating genericity: a survey, a scheme, and a corpus | http://www.aclweb.org/anthology/W/W15/W15-1603.pdf | author:Annemarie Friedrich; Alexis Palmer; Melissa Peate Sørensen; Manfred Pinkal
+W15-1604 | Design and Annotation of the First Italian Corpus for Text Simplification | http://www.aclweb.org/anthology/W/W15/W15-1604.pdf | author:Dominique Brunato; Felice Dell'Orletta; Giulia Venturi; Simonetta Montemagni
+W15-1605 | On the Discoursive Structure of Computer Graphics Research Papers | http://www.aclweb.org/anthology/W/W15/W15-1605.pdf | author:Beatriz Fisas; Horacio Saggion; Francesco Ronzano
+W15-1606 | Semantic Annotation of Japanese Functional Expressions and its Impact on Factuality Analysis | http://www.aclweb.org/anthology/W/W15/W15-1606.pdf | author:Yudai Kamioka; Kazuya Narita; Junta Mizuno; Miwa Kanno; Kentaro Inui
+W15-1607 | A Qualitative Analysis of a Corpus of Opinion Summaries based on Aspects | http://www.aclweb.org/anthology/W/W15/W15-1607.pdf | author:Roque Lopez; Thiago Pardo; Lucas Avanço; Pedro Filho; Alessandro Bokan; Paula Cardoso; Márcio Dias; Fernando Nóbrega; Marco Cabezudo; Jackson Souza; Andressa Zacarias; Eloize Seno; Ariani Di Felippo
+W15-1608 | Developing Language-tagged Corpora for Code-switching Tweets | http://www.aclweb.org/anthology/W/W15/W15-1608.pdf | author:Suraj Maharjan; Elizabeth Blair; Steven Bethard; Thamar Solorio
+W15-1609 | Annotating Geographical Entities on Microblog Text | http://www.aclweb.org/anthology/W/W15/W15-1609.pdf | author:Koji Matsuda; Akira Sasaki; Naoaki Okazaki; Kentaro Inui
+W15-1610 | The Annotation Process of the ITU Web Treebank | http://www.aclweb.org/anthology/W/W15/W15-1610.pdf | author:Tuğba Pamay; Umut Sulubacak; Dilara Torunoğlu-Selamet; Gülşen Eryiğit
+W15-1611 | Part of Speech Annotation of Intermediate Versions in the Keystroke Logged Translation Corpus | http://www.aclweb.org/anthology/W/W15/W15-1611.pdf | author:Tatiana Serbina; Paula Niemietz; Matthias Fricke; Philipp Meisen; Stella Neumann
+W15-1612 | A Hierarchy with, of, and for Preposition Supersenses | http://www.aclweb.org/anthology/W/W15/W15-1612.pdf | author:Nathan Schneider; Vivek Srikumar; Jena D. Hwang; Martha Palmer
+W15-1613 | Bilingual English-Czech Valency Lexicon Linked to a Parallel Corpus | http://www.aclweb.org/anthology/W/W15/W15-1613.pdf | author:Zdenka Uresova; Ondřej Dušek; Eva Fucikova; Jan Hajic; Jana Sindlerova
+W15-1614 | Correction Annotation for Non-Native Arabic Texts: Guidelines and Corpus | http://www.aclweb.org/anthology/W/W15/W15-1614.pdf | author:Wajdi Zaghouani; Nizar Habash; Houda Bouamor; Alla Rozovskaya; Behrang Mohit; Abeer Heider; Kemal Oflazer
+W15-1615 | Balancing the Existing and the New in the Context of Annotating Non-Canonical Language | http://www.aclweb.org/anthology/W/W15/W15-1615.pdf | author:Ann Bies
+W15-1616 | Parsing Learner Text: to Shoehorn or not to Shoehorn | http://www.aclweb.org/anthology/W/W15/W15-1616.pdf | author:Aoife Cahill
+W15-1617 | Non-canonical language is not harder to annotate than canonical language | http://www.aclweb.org/anthology/W/W15/W15-1617.pdf | author:Barbara Plank; Héctor Martínez Alonso; Anders Søgaard
+W15-1618 | What Iâve learned about annotating informal text (and why you shouldnât take my word for it) | http://www.aclweb.org/anthology/W/W15/W15-1618.pdf | author:Nathan Schneider
+W15-1619 | On Grammaticality in the Syntactic Annotation of Learner Language | http://www.aclweb.org/anthology/W/W15/W15-1619.pdf | author:Markus Dickinson; Marwa Ragheb
+W15-1620 | Across Languages and Genres: Creating a Universal Annotation Scheme for Textual Relations | http://www.aclweb.org/anthology/W/W15/W15-1620.pdf | author:Ekaterina Lapshinova-Koltunski; Anna Nedoluzhko; Kerstin Anna Kunz
+W15-1621 | Annotating the Implicit Content of Sluices | http://www.aclweb.org/anthology/W/W15/W15-1621.pdf | author:Pranav Anand; Jim McCloskey
+W15-1622 | Annotating Causal Language Using Corpus Lexicography of Constructions | http://www.aclweb.org/anthology/W/W15/W15-1622.pdf | author:Jesse Dunietz; Lori Levin; Jaime Carbonell
+W15-1701 | Location Name Disambiguation Exploiting Spatial Proximity and Temporal Consistency | http://www.aclweb.org/anthology/W/W15/W15-1701.pdf | author:Takashi Awamura; Daisuke Kawahara; Eiji ARAMAKI; Tomohide Shibata; Sadao Kurohashi
+W15-1702 | Paraphrase Identification and Semantic Similarity in Twitter with Simple Features | http://www.aclweb.org/anthology/W/W15/W15-1702.pdf | author:Ngoc Phuoc An Vo; Simone Magnolini; Octavian Popescu
+W15-1703 | A Language Detection System for Short Chats in Mobile Games | http://www.aclweb.org/anthology/W/W15/W15-1703.pdf | author:Pidong Wang; Nikhil Bojja; Shivasankari Kannan
+W15-1704 | Long Nights, Rainy Days, and Misspent Youth: Automatically Extracting and Categorizing Occasions Associated with Consumer Products. | http://www.aclweb.org/anthology/W/W15/W15-1704.pdf | author:David Bracewell
+W15-1705 | A Deep Learning and Knowledge Transfer Based Architecture for Social Media User Characteristic Determination | http://www.aclweb.org/anthology/W/W15/W15-1705.pdf | author:Matthew Riemer; Sophia Krasikov; Harini Srinivasan
+W15-1801 | How Much Information Does a Human Translator Add to the Original? | http://www.aclweb.org/anthology/W/W15/W15-1801.pdf | author:Kevin Knight
+W15-1802 | Modeling Socio-Emotional Humanoid Agent | http://www.aclweb.org/anthology/W/W15/W15-1802.pdf | author:Catherine Pelachaud
+W15-1803 | Embedding Probabilistic Logic for Machine Reading | http://www.aclweb.org/anthology/W/W15/W15-1803.pdf | author:Sebastian Riedel
+W15-1804 | Defining the Eukalyptus forest â the Koala treebank of Swedish | http://www.aclweb.org/anthology/W/W15/W15-1804.pdf | author:Yvonne Adesam; Gerlof Bouma; Richard Johansson
+W15-1805 | A case study on supervised classification of Swedish pseudo-coordination | http://www.aclweb.org/anthology/W/W15/W15-1805.pdf | author:Malin Ahlberg; Peter Andersson; Markus Forsberg; Nina Tahmasebi
+W15-1806 | Supersense tagging for Danish | http://www.aclweb.org/anthology/W/W15/W15-1806.pdf | author:HÃ©ctor MartÃ­nez Alonso; Anders Johannsen; Sussi Olsen; Sanni Nimb; Nicolai Hartvig SÃ¸rensen; Anna Braasch; Anders SÃ¸gaard; Bolette Sandford Pedersen
+W15-1807 | CG-3 - Beyond Classical Constraint Grammar | http://www.aclweb.org/anthology/W/W15/W15-1807.pdf | author:Eckhard Bick; Tino Didriksen
+W15-1808 | Automatic Lemmatisation of Lithuanian MWEs | http://www.aclweb.org/anthology/W/W15/W15-1808.pdf | author:LoÃ¯c Boizou; Jolanta KovalevskaitÄ; Erika RimkutÄ
+W15-1809 | Linguistically Motivated Question Classification | http://www.aclweb.org/anthology/W/W15/W15-1809.pdf | author:Alexandr Chernov; Volha Petukhova; Dietrich Klakow
+W15-1810 | Resolving Spatial References using Crowdsourced Geographical Data | http://www.aclweb.org/anthology/W/W15/W15-1810.pdf | author:Jana GÃ¶tze; Johan Boye
+W15-1811 | Combining Relational and Distributional Knowledge for Word Sense Disambiguation | http://www.aclweb.org/anthology/W/W15/W15-1811.pdf | author:Richard Johansson; Luis Nieto PiÃ±a
+W15-1812 | Talebob - an Interactive Speech Trainer for Danish | http://www.aclweb.org/anthology/W/W15/W15-1812.pdf | author:Peter Juel Henrichsen
+W15-1813 | The Effect of Author Set Size in Authorship Attribution for Lithuanian | http://www.aclweb.org/anthology/W/W15/W15-1813.pdf | author:Jurgita KapoÄiÅ«tÄ-DzikienÄ; Ligita Å arkutÄ; Andrius Utka
+W15-1814 | Looking hard: Eye tracking for detecting grammaticality of automatically compressed sentences | http://www.aclweb.org/anthology/W/W15/W15-1814.pdf | author:Sigrid Klerke; HÃ©ctor MartÃ­nez Alonso; Anders SÃ¸gaard
+W15-1815 | Towards the Classification of the Finnish Internet Parsebank: Detecting Translations and Informality | http://www.aclweb.org/anthology/W/W15/W15-1815.pdf | author:Veronika Laippala; Jenna Kanerva; Anna MissilÃ¤; Sampo Pyysalo; Tapio Salakoski; Filip Ginter
+W15-1816 | Improving cross-domain dependency parsing with dependency-derived clusters | http://www.aclweb.org/anthology/W/W15/W15-1816.pdf | author:Jostein Lien; Erik Velldal; Lilja Ãvrelid
+W15-1817 | An Optimal Quadratic Approach to Monolingual Paraphrase Alignment | http://www.aclweb.org/anthology/W/W15/W15-1817.pdf | author:Mihai Lintean; Vasile Rus
+W15-1818 | Sentence Compression For Automatic Subtitling | http://www.aclweb.org/anthology/W/W15/W15-1818.pdf | author:Juhani Luotolahti; Filip Ginter
+W15-1819 | Topic Models: Accounting Component Structure of Bigrams | http://www.aclweb.org/anthology/W/W15/W15-1819.pdf | author:Michael Nokel; Natalia Loukachevitch
+W15-1820 | Improving Verb Phrase Extraction from Historical Text by use of Verb Valency Frames | http://www.aclweb.org/anthology/W/W15/W15-1820.pdf | author:Eva Pettersson; Joakim Nivre
+W15-1821 | Universal Dependencies for Finnish | http://www.aclweb.org/anthology/W/W15/W15-1821.pdf | author:Sampo Pyysalo; Jenna Kanerva; Anna MissilÃ¤; Veronika Laippala; Filip Ginter
+W15-1822 | Automatic word stress annotation of Russian unrestricted text | http://www.aclweb.org/anthology/W/W15/W15-1822.pdf | author:Robert Reynolds; Francis Tyers
+W15-1823 | Self Organizing Maps for the Visual Analysis of Pitch Contours | http://www.aclweb.org/anthology/W/W15/W15-1823.pdf | author:Dominik Sacha; Yuki Asano; Christian Rohrdantz; Felix Hamborg; Daniel Keim; Bettina Braun; Miriam Butt
+W15-1824 | Improving the Cross-Lingual Projection of Syntactic Dependencies | http://www.aclweb.org/anthology/W/W15/W15-1824.pdf | author:JÃ¶rg Tiedemann
+W15-1825 | Assessing the Performance of Automatic Speech Recognition Systems When Used by Native and Non-Native Speakers of Three Major Languages in Dictation Workflows | http://www.aclweb.org/anthology/W/W15/W15-1825.pdf | author:JuliÃ¡n Zapata; Andreas SÃ¸eborg Kirkedal
+W15-1826 | Inferring the location of authors from words in their texts | http://www.aclweb.org/anthology/W/W15/W15-1826.pdf | author:Max Berggren; Jussi Karlgren; Robert Ãstling; Mikael Parkvall
+W15-1827 | Automatic conversion of colloquial Finnish to standard Finnish | http://www.aclweb.org/anthology/W/W15/W15-1827.pdf | author:Inari Listenmaa; Francis M. Tyers
+W15-1828 | Automatic Thematic Classification of the Titles of the Seimas Votes | http://www.aclweb.org/anthology/W/W15/W15-1828.pdf | author:Vytautas MickeviÄius; Tomas KrilaviÄius; Vaidas MorkeviÄius; AuÅ¡ra MackutÄ-VaroneckienÄ;
+W15-1829 | Sentiment analysis on conversational texts | http://www.aclweb.org/anthology/W/W15/W15-1829.pdf | author:Birgitta Ojamaa; PÃ¤ivi Kristiina Jokinen; Kadri Muischenk
+W15-1830 | Adapting word2vec to Named Entity Recognition | http://www.aclweb.org/anthology/W/W15/W15-1830.pdf | author:Scharolta Katharina SienÄnik
+W15-1831 | Active learning for sense annotation | http://www.aclweb.org/anthology/W/W15/W15-1831.pdf | author:HÃ©ctor MartÃ­nez Alonso; Barbara Plank; Anders Johannsen; Anders SÃ¸gaard
+W15-1832 | Uncovering Noun-Noun Compound Relations by Gamification | http://www.aclweb.org/anthology/W/W15/W15-1832.pdf | author:Johan Bos; Malvina Nissim
+W15-1833 | A multivariate model for classifying texts' readability | http://www.aclweb.org/anthology/W/W15/W15-1833.pdf | author:Katarina Heimann MÃ¼hlenbock; Sofie Johansson Kokkinakis; Caroline Liberg; Ãsa af Geijerstam; Jenny Wiksten Folkeryd; Arne JÃ¶nsson; Erik Kanebrant; Johan Falkenjack
+W15-1834 | Enriching the Swedish Sign Language Corpus with Part of Speech Tags Using Joint Bayesian Word Alignment and Annotation Transfer | http://www.aclweb.org/anthology/W/W15/W15-1834.pdf | author:Robert Ãstling; Carl BÃ¶rstell; Lars Wallin
+W15-1835 | Using Positional Suffix Trees to Perform Agile Tree Kernel Calculation | http://www.aclweb.org/anthology/W/W15/W15-1835.pdf | author:Gustavo Henrique Paetzold
+W15-1836 | Helping Swedish words come to their senses: word-sense disambiguation based on sense associations from the SALDO lexicon | http://www.aclweb.org/anthology/W/W15/W15-1836.pdf | author:IldikÃ³ PilÃ¡n
+W15-1837 | Using sub-word n-gram models for dealing with OOV in large vocabulary speech recognition for Latvian | http://www.aclweb.org/anthology/W/W15/W15-1837.pdf | author:Askars Salimbajevs; Jevgenijs Strigins
+W15-1838 | Analysing Inconsistencies and Errors in PoS Tagging in two Icelandic Gold Standards | http://www.aclweb.org/anthology/W/W15/W15-1838.pdf | author:SteinÃ¾Ã³r SteingrÃ­msson; SigrÃºn HelgadÃ³ttir; EirÃ­kur RÃ¶gnvaldsson
+W15-1839 | From digital library to n-grams: NB N-gram | http://www.aclweb.org/anthology/W/W15/W15-1839.pdf | author:Magnus Breder Birkenes; Lars G. Johnsen; Arne Martinus Lindstad; Johanne Ostad
+W15-1840 | The Corpus of American Norwegian Speech (CANS) | http://www.aclweb.org/anthology/W/W15/W15-1840.pdf | author:Janne Bondi Johannessen
+W15-1841 | Open-Domain Semantic Parsing with Boxer | http://www.aclweb.org/anthology/W/W15/W15-1841.pdf | author:Johan Bos
+W15-1842 | Extracting Semantic Frames using hfst-pmatch | http://www.aclweb.org/anthology/W/W15/W15-1842.pdf | author:Sam Hardwick; Miikka Silfverberg; Krister LindÃ©n
+W15-1843 | discoursegraphs: A graph-based merging tool and converter for multilayer annotated corpora | http://www.aclweb.org/anthology/W/W15/W15-1843.pdf | author:Arne Neumann
+W15-1844 | OmorfiâFree and open source morphological lexical database for Finnish | http://www.aclweb.org/anthology/W/W15/W15-1844.pdf | author:Tommi A. Pirinen
+W15-1845 | A Tool for Automatic Simplification of Swedish Texts | http://www.aclweb.org/anthology/W/W15/W15-1845.pdf | author:Evelina Rennes; Arne JÃ¶nsson
+W15-1901 | Misspellings in Responses to Listening Comprehension Questions: Prospects for Scoring based on Phonetic Normalization | http://www.aclweb.org/anthology/W/W15/W15-1901.pdf | author:Heike Da Silva Cardoso; Magdalena Wolska
+W15-1902 | Taking the Danish Speech Trainer from CALL to ICALL | http://www.aclweb.org/anthology/W/W15/W15-1902.pdf | author:Peter Juel Henrichsen
+W15-1903 | Using Shallow Syntactic Features to Measure Influences of L1 and Proficiency Level in EFL Writings | http://www.aclweb.org/anthology/W/W15/W15-1903.pdf | author:Andrea Horbach; Jonathan Poitz; Alexis Palmer
+W15-1904 | Semi-automated typical error annotation for learner English essays: integrating frameworks | http://www.aclweb.org/anthology/W/W15/W15-1904.pdf | author:Andrey Kutuzov; Elizaveta Kuzmenko
+W15-1905 | Short Answer Grading: When Sorting Helps and When it Doesnât | http://www.aclweb.org/anthology/W/W15/W15-1905.pdf | author:Ulrike Pado; Cornelia Kiefer
+W15-1906 | Oahpa! Ãpi! Opiq! Developing free online programs for learning Estonian and VÃµro | http://www.aclweb.org/anthology/W/W15/W15-1906.pdf | author:Heli Uibo; Jaak Pruulmann-Vengerfeldt; Jack Rueter; Sulev Iva
+W15-2001 | Here be dragons? The perils and promises of inter-resource lexical-semantic mapping | http://www.aclweb.org/anthology/W/W15/W15-2001.pdf | author:Lars Borin; Luis Nieto PiÃ±a; Richard Johansson
+W15-2002 | Polysemy, underspecification, and aspects â Questions of lumping or splitting in the construction of Swedish FrameNet | http://www.aclweb.org/anthology/W/W15/W15-2002.pdf | author:Karin Friberg Heppin; Dana DannÃ©lls
+W15-2003 | Determining the most frequent senses using Russian linguistic ontology RuThes | http://www.aclweb.org/anthology/W/W15/W15-2003.pdf | author:Natalia Loukachevitch; Ilia Chetviorkin
+W15-2004 | Extraction of lethal events from Wikipedia and a semantic repository | http://www.aclweb.org/anthology/W/W15/W15-2004.pdf | author:Magnus Norrby; Pierre Nugues
+W15-2005 | Coarse-grained sense annotation of Danish across textual domains | http://www.aclweb.org/anthology/W/W15/W15-2005.pdf | author:Sussi Olsen; Bolette S. Pedersen; HÃ©ctor MartÃ­nez Alonso; Anders Johannsen
+W15-2101 | Invited Talk: The Case for Universal Dependencies | http://www.aclweb.org/anthology/W/W15/W15-2101.pdf | author:Christopher Manning
+W15-2102 | Invited Talk: Lexicon Embedded Syntax | http://www.aclweb.org/anthology/W/W15/W15-2102.pdf | author:Alain Polguère
+W15-2103 | Converting an English-Swedish Parallel Treebank to Universal Dependencies | http://www.aclweb.org/anthology/W/W15/W15-2103.pdf | author:Lars Ahrenberg
+W15-2104 | Targeted Paraphrasing on Deep Syntactic Layer for MT Evaluation | http://www.aclweb.org/anthology/W/W15/W15-2104.pdf | author:Petra Barančíková; Rudolf Rosa
+W15-2105 | Universal and Language-specific Dependency Relations for Analysing Romanian | http://www.aclweb.org/anthology/W/W15/W15-2105.pdf | author:Verginica Barbu Mititelu; Cătălina Mărănduc; Elena Irimia
+W15-2106 | Emotion and Inner State Adverbials in Russian | http://www.aclweb.org/anthology/W/W15/W15-2106.pdf | author:Olga Boguslavskaya; Igor Boguslavsky
+W15-2107 | Towards a multi-layered dependency annotation of Finnish | http://www.aclweb.org/anthology/W/W15/W15-2107.pdf | author:Alicia Burga; Simon Mille; Anton Granvik; Leo Wanner
+W15-2108 | A Bayesian Model for Generative Transition-based Dependency Parsing | http://www.aclweb.org/anthology/W/W15/W15-2108.pdf | author:Jan Buys; Phil Blunsom
+W15-2109 | On the relation between verb full valency and synonymy | http://www.aclweb.org/anthology/W/W15/W15-2109.pdf | author:Radek Čech; Ján Mačutek; Michaela Koščová
+W15-2110 | Classifying Syntactic Categories in the Chinese Dependency Network | http://www.aclweb.org/anthology/W/W15/W15-2110.pdf | author:Xinying Chen; Haitao Liu; Kim Gerdes
+W15-2111 | Using Parallel Texts and Lexicons for Verbal Word Sense Disambiguation | http://www.aclweb.org/anthology/W/W15/W15-2111.pdf | author:Ondřej Dušek; Eva Fučíková; Jan Hajič; Martin Popel; Jana Šindlerová; Zdeňka Urešová
+W15-2112 | Quantifying Word Order Freedom in Dependency Corpora | http://www.aclweb.org/anthology/W/W15/W15-2112.pdf | author:Richard Futrell; Kyle Mahowald; Edward Gibson
+W15-2113 | Non-constituent coordination and other coordinative constructions as Dependency Graphs | http://www.aclweb.org/anthology/W/W15/W15-2113.pdf | author:Kim Gerdes; Sylvain Kahane
+W15-2114 | The Dependency Status of Function Words: Auxiliaries | http://www.aclweb.org/anthology/W/W15/W15-2114.pdf | author:Thomas Groß; Timothy Osborne
+W15-2115 | Diachronic Trends in Word Order Freedom and Dependency Length in Dependency-Annotated Corpora of Latin and Ancient Greek | http://www.aclweb.org/anthology/W/W15/W15-2115.pdf | author:Kristina Gulordava; Paola Merlo
+W15-2116 | Reconstructions of Deletions in a Dependency-based Description of Czech: Selected Issues | http://www.aclweb.org/anthology/W/W15/W15-2116.pdf | author:Eva Hajičová; Marie Mikulová; Jarmila Panevová
+W15-2117 | Non-projectivity and processing constraints: Insights from Hindi | http://www.aclweb.org/anthology/W/W15/W15-2117.pdf | author:Samar Husain; Shravan Vasishth
+W15-2118 | From mutual dependency to multiple dimensions: remarks on the DG analysis of "functional heads" in Hungarian | http://www.aclweb.org/anthology/W/W15/W15-2118.pdf | author:András Imrényi
+W15-2119 | Mean Hierarchical Distance Augmenting Mean Dependency Distance | http://www.aclweb.org/anthology/W/W15/W15-2119.pdf | author:Yingqi Jing; Haitao Liu
+W15-2120 | Towards Cross-language Application of Dependency Grammar | http://www.aclweb.org/anthology/W/W15/W15-2120.pdf | author:Timo Järvinen; Elisabeth Bertol; Septina Larasati; Monica-Mihaela Rizea; Maria Ruiz Santabalbina; Milan Souček
+W15-2121 | Dependency-based analyses for function words – Introducing the polygraphic approach | http://www.aclweb.org/anthology/W/W15/W15-2121.pdf | author:Sylvain Kahane; Nicolas Mazziotta
+W15-2122 | At the Lexicon-Grammar Interface: The Case of Complex Predicates in the Functional Generative Description | http://www.aclweb.org/anthology/W/W15/W15-2122.pdf | author:Václava Kettnerová; Markéta Lopatková
+W15-2123 | Enhancing FreeLing Rule-Based Dependency Grammars with Subcategorization Frames | http://www.aclweb.org/anthology/W/W15/W15-2123.pdf | author:Marina Lloberes; Irene Castellón; Lluís Padró
+W15-2124 | Towards Universal Web Parsebanks | http://www.aclweb.org/anthology/W/W15/W15-2124.pdf | author:Juhani Luotolahti; Jenna Kanerva; Veronika Laippala; Sampo Pyysalo; Filip Ginter
+W15-2125 | Evaluation of Two-level Dependency Representations of Argument Structure in Long-Distance Dependencies | http://www.aclweb.org/anthology/W/W15/W15-2125.pdf | author:Paola Merlo
+W15-2126 | The Subjectival Surface-Syntactic Relation in Serbian | http://www.aclweb.org/anthology/W/W15/W15-2126.pdf | author:Jasmina Milićević
+W15-2127 | A Historical Overview of the Status of Function Words in Dependency Grammar | http://www.aclweb.org/anthology/W/W15/W15-2127.pdf | author:Timothy Osborne; Daniel Maxwell
+W15-2128 | Diagnostics for Constituents: Dependency, Constituency, and the Status of Function Words | http://www.aclweb.org/anthology/W/W15/W15-2128.pdf | author:Timothy Osborne
+W15-2129 | A DG Account of the Descriptive and Resultative de-Constructions in Chinese | http://www.aclweb.org/anthology/W/W15/W15-2129.pdf | author:Timothy Osborne; Shudong Ma
+W15-2130 | A Survey of Ellipsis in Chinese | http://www.aclweb.org/anthology/W/W15/W15-2130.pdf | author:Timothy Osborne; Junying Liang
+W15-2131 | Multi-source Cross-lingual Delexicalized Parser Transfer: Prague or Stanford? | http://www.aclweb.org/anthology/W/W15/W15-2131.pdf | author:Rudolf Rosa
+W15-2132 | Secondary Connectives in the Prague Dependency Treebank | http://www.aclweb.org/anthology/W/W15/W15-2132.pdf | author:Magdaléna Rysová; Kateřina Rysová
+W15-2133 | ParsPer: A Dependency Parser for Persian | http://www.aclweb.org/anthology/W/W15/W15-2133.pdf | author:Mojgan Seraji; Bernd Bohnet; Joakim Nivre
+W15-2134 | Does Universal Dependencies need a parsing representation? An investigation of English | http://www.aclweb.org/anthology/W/W15/W15-2134.pdf | author:Natalia Silveira; Christopher Manning
+W15-2135 | Catena Operations for Unified Dependency Analysis | http://www.aclweb.org/anthology/W/W15/W15-2135.pdf | author:Kiril Simov; Petya Osenova
+W15-2136 | Zero Alignment of Verb Arguments in a Parallel Treebank | http://www.aclweb.org/anthology/W/W15/W15-2136.pdf | author:Jana Šindlerová; Eva Fučíková; Zdeňka Urešová
+W15-2137 | Cross-Lingual Dependency Parsing with Universal Dependencies and Predicted PoS Labels | http://www.aclweb.org/anthology/W/W15/W15-2137.pdf | author:Jörg Tiedemann
+W15-2138 | Exploring Confidence-based Self-training for Multilingual Dependency Parsing in an Under-Resourced Language Scenario | http://www.aclweb.org/anthology/W/W15/W15-2138.pdf | author:Juntao Yu; Bernd Bohnet
+W15-2201 | Domain Adaptation for Dependency Parsing via Self-Training | http://www.aclweb.org/anthology/W/W15/W15-2201.pdf | author:Juntao Yu; Mohab Elkaref; Bernd Bohnet
+W15-2202 | Combining Active Learning and Partial Annotation for Domain Adaptation of a Japanese Dependency Parser | http://www.aclweb.org/anthology/W/W15/W15-2202.pdf | author:Daniel Flannery; Shinsuke Mori
+W15-2203 | Incorporating Complementary Annotation to a CCGbank for Improving Derivations for Japanese | http://www.aclweb.org/anthology/W/W15/W15-2203.pdf | author:Sumire Uematsu; Yusuke Miyao
+W15-2204 | Dependency Parsing with Graph Rewriting | http://www.aclweb.org/anthology/W/W15/W15-2204.pdf | author:Bruno Guillaume; Guy Perrier
+W15-2205 | Semantic Parsing for Textual Entailment | http://www.aclweb.org/anthology/W/W15/W15-2205.pdf | author:Elisabeth Lien; Milen Kouylekov
+W15-2206 | A Framework for Procedural Text Understanding | http://www.aclweb.org/anthology/W/W15/W15-2206.pdf | author:Hirokuni Maeta; Tetsuro Sasada; Shinsuke Mori
+W15-2207 | Suitability of ParTes Test Suite for Parsing Evaluation | http://www.aclweb.org/anthology/W/W15/W15-2207.pdf | author:Marina Lloberes; Irene Castellón; Lluís Padró
+W15-2208 | Coordination-Aware Dependency Parsing (Preliminary Report) | http://www.aclweb.org/anthology/W/W15/W15-2208.pdf | author:Akifumi Yoshimoto; Kazuo Hara; Masashi Shimbo; Yuji Matsumoto
+W15-2209 | MSTParser Model Interpolation for Multi-Source Delexicalized Transfer | http://www.aclweb.org/anthology/W/W15/W15-2209.pdf | author:Rudolf Rosa; ZdenÄk Žabokrtský
+W15-2210 | Non-Deterministic Oracles for Unrestricted Non-Projective Transition-Based Dependency Parsing | http://www.aclweb.org/anthology/W/W15/W15-2210.pdf | author:Anders Björkelund; Joakim Nivre
+W15-2211 | Enhancing the Inside-Outside Recursive Neural Network Reranker for Dependency Parsing | http://www.aclweb.org/anthology/W/W15/W15-2211.pdf | author:Phong Le
+W15-2212 | Maximising Spanning Subtree Scores for Parsing Tree Approximations of Semantic Dependency Digraphs | http://www.aclweb.org/anthology/W/W15/W15-2212.pdf | author:Natalie Schluter
+W15-2213 | CKY Parsing with Independence Constraints | http://www.aclweb.org/anthology/W/W15/W15-2213.pdf | author:Joseph Irwin; Yuji Matsumoto
+W15-2214 | Dependency Parsing with Compression Rules | http://www.aclweb.org/anthology/W/W15/W15-2214.pdf | author:Pablo Gamallo
+W15-2215 | Stacking or Supertagging for Dependency Parsing – Whatâs the Difference? | http://www.aclweb.org/anthology/W/W15/W15-2215.pdf | author:Agnieszka Faleńska; Anders Björkelund; Özlem Çetinoğlu; Wolfgang Seeker
+W15-2301 | A Refined Notion of Memory Usage for Minimalist Parsing | http://www.aclweb.org/anthology/W/W15/W15-2301.pdf | author:Thomas Graf; Brigitta Fodor; James Monette; Gianpaul Rachiele; Aunika Warren; Chong Zhang
+W15-2302 | Abstract Categorial Parsing as Linear Logic Programming | http://www.aclweb.org/anthology/W/W15/W15-2302.pdf | author:Philippe de Groote
+W15-2303 | Topology of Language Classes | http://www.aclweb.org/anthology/W/W15/W15-2303.pdf | author:Sean A. Fulop; David Kephart
+W15-2304 | Individuation Criteria, Dot-types and Copredication: A View from Modern Type Theories | http://www.aclweb.org/anthology/W/W15/W15-2304.pdf | author:Stergios Chatzikyriakidis; Zhaohui Luo
+W15-2305 | Lexical Semantics and Model Theory: Together at Last? | http://www.aclweb.org/anthology/W/W15/W15-2305.pdf | author:András Kornai; Marcus Kracht
+W15-2306 | A Frobenius Model of Information Structure in Categorical Compositional Distributional Semantics | http://www.aclweb.org/anthology/W/W15/W15-2306.pdf | author:Dimitri Kartsaklis; Mehrnoosh Sadrzadeh
+W15-2307 | A Synopsis of Morphoid Type Theory | http://www.aclweb.org/anthology/W/W15/W15-2307.pdf | author:David McAllester
+W15-2308 | General Perspective on Distributionally Learnable Classes | http://www.aclweb.org/anthology/W/W15/W15-2308.pdf | author:Ryo Yoshinaka
+W15-2309 | Canonical Context-Free Grammars and Strong Learning: Two Approaches | http://www.aclweb.org/anthology/W/W15/W15-2309.pdf | author:Alexander Clark
+W15-2310 | Output Strictly Local Functions | http://www.aclweb.org/anthology/W/W15/W15-2310.pdf | author:Jane Chandlee; Rémi Eyraud; Jeffrey Heinz
+W15-2311 | How to Choose Successful Losers in Error-Driven Phonotactic Learning | http://www.aclweb.org/anthology/W/W15/W15-2311.pdf | author:Giorgio Magri; René Kager
+W15-2312 | A Concatenation Operation to Derive Autosegmental Graphs | http://www.aclweb.org/anthology/W/W15/W15-2312.pdf | author:Adam Jardine; Jeffrey Heinz
+W15-2313 | Syntactic Polygraphs. A Formalism Extending Both Constituency and Dependency | http://www.aclweb.org/anthology/W/W15/W15-2313.pdf | author:Sylvain Kahane; Nicolas Mazziotta
+W15-3101 | Sequential Annotation and Chunking of Chinese Discourse Structure | http://www.aclweb.org/anthology/W/W15/W15-3101.pdf | author:Frances Yung; Kevin Duh; Yuji Matsumoto
+W15-3102 | Create a Manual Chinese Word Segmentation Dataset Using Crowdsourcing Method | http://www.aclweb.org/anthology/W/W15/W15-3102.pdf | author:Shichang Wang; Chu-Ren Huang; Yao Yao; Angel Chan
+W15-3103 | Chinese Named Entity Recognition with Graph-based Semi-supervised Learning Model | http://www.aclweb.org/anthology/W/W15/W15-3103.pdf | author:Aaron Li-Feng Han; Xiaodong Zeng; Derek F. Wong; Lidia S. Chao
+W15-3104 | Sentence selection for automatic scoring of Mandarin proficiency | http://www.aclweb.org/anthology/W/W15/W15-3104.pdf | author:Jiahong Yuan; Xiaoying Xu; Wei Lai; Weiping Ye; Xinru Zhao; Mark Liberman
+W15-3105 | ACBiMA: Advanced Chinese Bi-Character Word Morphological Analyzer | http://www.aclweb.org/anthology/W/W15/W15-3105.pdf | author:Ting-Hao Huang; Yun-Nung Chen; Lingpeng Kong
+W15-3106 | Introduction to SIGHAN 2015 Bake-off for Chinese Spelling Check | http://www.aclweb.org/anthology/W/W15/W15-3106.pdf | author:Yuen-Hsien Tseng; Lung-Hao Lee; Li-Ping Chang; Hsin-Hsi Chen
+W15-3107 | HANSpeller++: A Unified Framework for Chinese Spelling Correction | http://www.aclweb.org/anthology/W/W15/W15-3107.pdf | author:Shuiyuan Zhang; Jinhua Xiong; Jianpeng Hou; Qiao Zhang; Xueqi Cheng
+W15-3108 | Word Vector/Conditional Random Field-based Chinese Spelling Error Detection for SIGHAN-2015 Evaluation | http://www.aclweb.org/anthology/W/W15/W15-3108.pdf | author:Yih-Ru Wang; Yuan-Fu Liao
+W15-3109 | Introduction to a Proofreading Tool for Chinese Spelling Check Task of SIGHAN-8 | http://www.aclweb.org/anthology/W/W15/W15-3109.pdf | author:Tao-Hsing Chang; Hsueh-Chih Chen; Cheng-Han Yang
+W15-3110 | Overview of Topic-based Chinese Message Polarity Classification in SIGHAN 2015 | http://www.aclweb.org/anthology/W/W15/W15-3110.pdf | author:Xiangwen Liao; Binyang Li; Liheng Xu
+W15-3111 | A Joint Model for Chinese Microblog Sentiment Analysis | http://www.aclweb.org/anthology/W/W15/W15-3111.pdf | author:Yuhui Cao; Zhao Chen; Ruifeng Xu; Tao Chen; Lin Gui
+W15-3112 | Learning Salient Samples and Distributed Representations for Topic-Based Chinese Message Polarity Classification | http://www.aclweb.org/anthology/W/W15/W15-3112.pdf | author:Xin Kang; Yunong Wu; Zhifei Zhang
+W15-3113 | An combined sentiment classification system for SIGHAN-8 | http://www.aclweb.org/anthology/W/W15/W15-3113.pdf | author:Qiuchi Li; Qiyu Zhi; Miao Li
+W15-3114 | Linguistic Knowledge-driven Approach to Chinese Comparative Elements Extraction | http://www.aclweb.org/anthology/W/W15/W15-3114.pdf | author:MinJun Park; Yulin Yuan
+W15-3115 | A CRF Method of Identifying Prepositional Phrases in Chinese Patent Texts | http://www.aclweb.org/anthology/W/W15/W15-3115.pdf | author:Hongzheng Li; Yaohong Jin
+W15-3116 | Emotion in Code-switching Texts: Corpus Construction and Analysis | http://www.aclweb.org/anthology/W/W15/W15-3116.pdf | author:Sophia Lee; Zhongqing Wang
+W15-3117 | Chinese in the Grammatical Framework: Grammar, Translation, and Other Applications Anonymous | http://www.aclweb.org/anthology/W/W15/W15-3117.pdf | author:Aarne Ranta; Tian Yan; Haiyan Qiao
+W15-3118 | KWB: An Automated Quick News System for Chinese Readers | http://www.aclweb.org/anthology/W/W15/W15-3118.pdf | author:Yiqi Bai; Wenjing Yang; Hao Zhang; Jingwen Wang; Ming Jia; Roland Tong; Jie Wang
+W15-3119 | Chinese Semantic Role Labeling using High-quality Syntactic Knowledge | http://www.aclweb.org/anthology/W/W15/W15-3119.pdf | author:Gongye Jin; Daisuke Kawahara; Sadao Kurohashi
+W15-3120 | Chinese Spelling Check System Based on N-gram Model | http://www.aclweb.org/anthology/W/W15/W15-3120.pdf | author:Weijian Xie; Peijie Huang; Xinrui Zhang; Kaiduo Hong; Qiang Huang; Bingzhou Chen; Lei Huang
+W15-3121 | NTOU Chinese Spelling Check System in Sighan-8 Bake-off | http://www.aclweb.org/anthology/W/W15/W15-3121.pdf | author:Wei-Cheng Chu; Chuan-Jie Lin
+W15-3122 | Topic-Based Chinese Message Sentiment Analysis: A Multilayered Analysis System | http://www.aclweb.org/anthology/W/W15/W15-3122.pdf | author:hongjie li; zhongqian sun; wei yang
+W15-3123 | Rule-Based Weibo Messages Sentiment Polarity Classification towards Given Topics | http://www.aclweb.org/anthology/W/W15/W15-3123.pdf | author:Hongzhao Zhou; Yonglin Teng; Min Hou; Wei He; Hongtao Zhu; Xiaolin Zhu; Yanfei Mu
+W15-3124 | Topic-Based Chinese Message Polarity Classification System at SIGHAN8-Task2 | http://www.aclweb.org/anthology/W/W15/W15-3124.pdf | author:Chun Liao; Chong Feng; Sen Yang; Heyan Huang
+W15-3125 | CT-SPA: Text sentiment polarity prediction model using semi-automatically expanded sentiment lexicon | http://www.aclweb.org/anthology/W/W15/W15-3125.pdf | author:Tao-Hsing Chang; Ming-Jhih Lin; Chun-Hsien Chen; Shao-Yu Wang
+W15-3126 | Chinese Microblogs Sentiment Classification using Maximum Entropy | http://www.aclweb.org/anthology/W/W15/W15-3126.pdf | author:Dashu Ye; Peijie Huang; Kaiduo Hong; Zhuoying Tang; Weijian Xie; Guilong Zhou
+W15-3127 | NDMSCS: A Topic-Based Chinese Microblog Polarity Classification System | http://www.aclweb.org/anthology/W/W15/W15-3127.pdf | author:Yang Wang; Yaqi Wang; Shi Feng; Daling Wang; Yifei Zhang
+W15-3128 | NEUDM: A System for Topic-Based Message Polarity Classification | http://www.aclweb.org/anthology/W/W15/W15-3128.pdf | author:Yaqi Wang; Shi Feng; Daling Wang; Yifei Zhang
+W15-3201 | Classifying Arab Names Geographically | http://www.aclweb.org/anthology/W/W15/W15-3201.pdf | author:Hamdy Mubarak; Kareem Darwish
+W15-3202 | Deep Learning Models for Sentiment Analysis in Arabic | http://www.aclweb.org/anthology/W/W15/W15-3202.pdf | author:Ahmad Al Sallab; Hazem Hajj; Gilbert Badaro; Ramy Baly; Wassim El Hajj; Khaled Bashir Shaban
+W15-3203 | A Light Lexicon-based Mobile Application for Sentiment Mining of Arabic Tweets | http://www.aclweb.org/anthology/W/W15/W15-3203.pdf | author:Gilbert Badaro; Ramy Baly; Rana Akel; Linda Fayad; Jeffrey Khairallah; Hazem Hajj; Khaled Shaban; Wassim El-Hajj
+W15-3204 | The Second QALB Shared Task on Automatic Text Correction for Arabic | http://www.aclweb.org/anthology/W/W15/W15-3204.pdf | author:Alla Rozovskaya; Houda Bouamor; Nizar Habash; Wajdi Zaghouani; Ossama Obeid; Behrang Mohit
+W15-3205 | Natural Language Processing for Dialectical Arabic: A Survey | http://www.aclweb.org/anthology/W/W15/W15-3205.pdf | author:Abdulhadi Shoufan; Sumaya Alameri
+W15-3206 | DIWAN: A Dialectal Word Annotation Tool for Arabic | http://www.aclweb.org/anthology/W/W15/W15-3206.pdf | author:Faisal Al-Shargi; Owen Rambow
+W15-3207 | POS-tagging of Tunisian Dialect Using Standard Arabic Resources and Tools | http://www.aclweb.org/anthology/W/W15/W15-3207.pdf | author:Ahmed Hamdi; Alexis Nasr; Nizar Habash; Nuria Gala
+W15-3208 | A Conventional Orthography for Algerian Arabic | http://www.aclweb.org/anthology/W/W15/W15-3208.pdf | author:Houda Saadane; Nizar Habash
+W15-3209 | A Pilot Study on Arabic Multi-Genre Corpus Diacritization | http://www.aclweb.org/anthology/W/W15/W15-3209.pdf | author:Houda Bouamor; Wajdi Zaghouani; Mona Diab; Ossama Obeid; Kemal Oflazer; Mahmoud Ghoneim; Abdelati Hawwari
+W15-3210 | Annotating Targets of Opinions in Arabic using Crowdsourcing | http://www.aclweb.org/anthology/W/W15/W15-3210.pdf | author:Noura Farra; Kathy McKeown; Nizar Habash
+W15-3211 | Best Practices for Crowdsourcing Dialectal Arabic Speech Transcription | http://www.aclweb.org/anthology/W/W15/W15-3211.pdf | author:Samantha Wray; Hamdy Mubarak; Ahmed Ali
+W15-3212 | Joint Arabic Segmentation and Part-Of-Speech Tagging | http://www.aclweb.org/anthology/W/W15/W15-3212.pdf | author:Shabib AlGahtani; John McNaught
+W15-3213 | Multi-Reference Evaluation for Dialectal Speech Recognition System: A Study for Egyptian ASR | http://www.aclweb.org/anthology/W/W15/W15-3213.pdf | author:Ahmed Ali; Walid Magdy; Steve Renals
+W15-3214 | Arib$@$QALB-2015 Shared Task: A Hybrid Cascade Model for Arabic Spelling Error Detection and Correction | http://www.aclweb.org/anthology/W/W15/W15-3214.pdf | author:Nouf AlShenaifi; Rehab AlNefie; Maha Al-Yahya; Hend Al-Khalifa
+W15-3215 | CUFE$@$QALB-2015 Shared Task: Arabic Error Correction System | http://www.aclweb.org/anthology/W/W15/W15-3215.pdf | author:Michael Nawar
+W15-3216 | GWU-HASP-2015$@$QALB-2015 Shared Task: Priming Spelling Candidates with Probability | http://www.aclweb.org/anthology/W/W15/W15-3216.pdf | author:Mohammed Attia; Mohamed Al-Badrashiny; Mona Diab
+W15-3217 | QCMUQ$@$QALB-2015 Shared Task: Combining Character level MT and Error-tolerant Finite-State Recognition for Arabic Spelling Correction | http://www.aclweb.org/anthology/W/W15/W15-3217.pdf | author:Houda Bouamor; Hassan Sajjad; Nadir Durrani; Kemal Oflazer
+W15-3218 | QCRI$@$QALB-2015 Shared Task: Correction of Arabic Text for Native and Non-Native Speakersâ Errors | http://www.aclweb.org/anthology/W/W15/W15-3218.pdf | author:Hamdy Mubarak; Kareem Darwish; Ahmed Abdelali
+W15-3219 | SAHSOH$@$QALB-2015 Shared Task: A Rule-Based Correction Method of Common Arabic Native and Non-Native Speakersâ Errors | http://www.aclweb.org/anthology/W/W15/W15-3219.pdf | author:Wajdi Zaghouani; Taha Zerrouki; Amar Balla
+W15-3220 | TECHLIMED$@$QALB-Shared Task 2015: a hybrid Arabic Error Correction System | http://www.aclweb.org/anthology/W/W15/W15-3220.pdf | author:Djamel MOSTEFA; Jaber ABUALASAL; Omar ASBAYOU; Mahmoud GZAWI; Ramzi Abbès
+W15-3221 | UMMU$@$QALB-2015 Shared Task: Character and Word level SMT pipeline for Automatic Error Correction of Arabic Text | http://www.aclweb.org/anthology/W/W15/W15-3221.pdf | author:Fethi Bougares; Houda Bouamor
+W15-3222 | Robust Part-of-speech Tagging of Arabic Text | http://www.aclweb.org/anthology/W/W15/W15-3222.pdf | author:Hanan Aldarmaki; Mona Diab
+W15-3223 | Answer Selection in Arabic Community Question Answering: A Feature-Rich Approach | http://www.aclweb.org/anthology/W/W15/W15-3223.pdf | author:Yonatan Belinkov; Alberto Barrón-Cedeño; Hamdy Mubarak
+W15-3224 | EDRAK: Entity-Centric Data Resource for Arabic Knowledge | http://www.aclweb.org/anthology/W/W15/W15-3224.pdf | author:Mohamed H. Gad-elrab; Mohamed Amir Yosef; Gerhard Weikum
+W15-3301 | Grammar Engineering for a Customer: a Case Study with Five Languages | http://www.aclweb.org/anthology/W/W15/W15-3301.pdf | author:Aarne Ranta; Christina Unger; Daniel Vidal Hussey
+W15-3302 | Building an HPSG-based Indonesian Resource Grammar (INDRA) | http://www.aclweb.org/anthology/W/W15/W15-3302.pdf | author:David Moeljadi; Francis Bond; Sanghoun Song
+W15-3303 | An HPSG-based Shared-Grammar for the Chinese Languages: ZHONG [] | http://www.aclweb.org/anthology/W/W15/W15-3303.pdf | author:Zhenzhen Fan; Sanghoun Song; Francis Bond
+W15-3304 | Parsing Chinese with a Generalized Categorial Grammar | http://www.aclweb.org/anthology/W/W15/W15-3304.pdf | author:Manjuan Duan; William Schuler
+W15-3305 | Orthography Engineering in Grammatical Framework | http://www.aclweb.org/anthology/W/W15/W15-3305.pdf | author:Krasimir Angelov
+W15-3306 | A Cloud-Based Editor for Multilingual Grammars | http://www.aclweb.org/anthology/W/W15/W15-3306.pdf | author:Thomas Hallgren; Ramona Enache; Aarne Ranta
+W15-3307 | Formalising the Swedish Constructicon in Grammatical Framework | http://www.aclweb.org/anthology/W/W15/W15-3307.pdf | author:Normunds Gruzitis; Dana Dannells; Benjamin Lyngfelt; Aarne Ranta
+W15-3308 | Representing Honorifics via Individual Constraints | http://www.aclweb.org/anthology/W/W15/W15-3308.pdf | author:Sanghoun Song
+W15-3309 | Resumption and Extraction in an Implemented HPSG of Hausa | http://www.aclweb.org/anthology/W/W15/W15-3309.pdf | author:Berthold Crysmann
+W15-3401 | Augmented Comparative Corpora and Monitoring Corpus in Chinese: LIVAC and Sketch Search Engine Compared | http://www.aclweb.org/anthology/W/W15/W15-3401.pdf | author:Benjamin K. Tsou
+W15-3402 | A Factory of Comparable Corpora from Wikipedia | http://www.aclweb.org/anthology/W/W15/W15-3402.pdf | author:Alberto Barrón-Cedeño; Cristina España-Bonet; Josu Boldoba; Lluís Màrquez
+W15-3403 | Knowledge-lean projection of coreference chains across languages | http://www.aclweb.org/anthology/W/W15/W15-3403.pdf | author:Yulia Grishina; Manfred Stede
+W15-3404 | Projective methods for mining missing translations in DBpedia | http://www.aclweb.org/anthology/W/W15/W15-3404.pdf | author:Laurent Jakubina; Phillippe Langlais
+W15-3405 | Attempting to Bypass Alignment from Comparable Corpora via Pivot Language | http://www.aclweb.org/anthology/W/W15/W15-3405.pdf | author:Alexis Linard; Béatrice Daille; Emmanuel Morin
+W15-3406 | Application of a Corpus to Identify Gaps between English Learners and Native Speakers | http://www.aclweb.org/anthology/W/W15/W15-3406.pdf | author:Katsunori Kotani; Takehiko Yoshimi
+W15-3407 | A Generative Model for Extracting Parallel Fragments from Comparable Documents | http://www.aclweb.org/anthology/W/W15/W15-3407.pdf | author:Somayeh Bakhshaei; Shahram Khadivi; Reza Safabakhsh
+W15-3408 | Evaluating Features for Identifying Japanese-Chinese Bilingual Synonymous Technical Terms from Patent Families | http://www.aclweb.org/anthology/W/W15/W15-3408.pdf | author:Zi Long; Takehito Utsuro; Tomoharu Mitsuhashi; Mikio Yamamoto
+W15-3409 | Extracting Bilingual Lexica from Comparable Corpora Using Self-Organizing Maps | http://www.aclweb.org/anthology/W/W15/W15-3409.pdf | author:Hyeong-Won Seo; Minah Cheon; Jae-Hoon Kim
+W15-3410 | Obtaining SMT dictionaries for related languages | http://www.aclweb.org/anthology/W/W15/W15-3410.pdf | author:Miguel Rios; Serge Sharoff
+W15-3411 | BUCC Shared Task: Cross-Language Document Similarity | http://www.aclweb.org/anthology/W/W15/W15-3411.pdf | author:Serge Sharoff; Pierre Zweigenbaum; Reinhard Rapp
+W15-3412 | AUT Document Alignment Framework for BUCC Workshop Shared Task | http://www.aclweb.org/anthology/W/W15/W15-3412.pdf | author:Atefeh Zafarian; Amir Pouya Agha Sadeghi; Fatemeh Azadi; Sonia Ghiasifard; Zeinab Ali Panahloo; Somayeh Bakhshaei; Seyyed Mohammad Mohammadzadeh Ziabary
+W15-3413 | LINA: Identifying Comparable Documents from Wikipedia | http://www.aclweb.org/anthology/W/W15/W15-3413.pdf | author:Emmanuel Morin; Amir Hazem; Florian Boudin; Elizaveta Loginova-Clouet
+W15-3501 | Round trips with meaning stopovers | http://www.aclweb.org/anthology/W/W15/W15-3501.pdf | author:Alastair Butler
+W15-3502 | Conceptual Annotations Preserve Structure Across Translations: A French-English Case Study | http://www.aclweb.org/anthology/W/W15/W15-3502.pdf | author:Elior Sulem; Omri Abend; Ari Rappoport
+W15-3503 | Integrating Case Frame into Japanese to Chinese Hierarchical Phrase-based Translation Model | http://www.aclweb.org/anthology/W/W15/W15-3503.pdf | author:Jinan Xu; Jiangming Liu; Yufeng Chen; Yujie Zhang; Fang Ming; Shaotong Li
+W15-3504 | A Discriminative Model for Semantics-to-String Translation | http://www.aclweb.org/anthology/W/W15/W15-3504.pdf | author:Aleš Tamchyna; Chris Quirk; Michel Galley
+W15-3601 | Keywords, phrases, clauses and sentences: topicality, indicativeness and informativeness at scales | http://www.aclweb.org/anthology/W/W15/W15-3601.pdf | author:Min-Yen Kan
+W15-3602 | Technical Term Extraction Using Measures of Neology | http://www.aclweb.org/anthology/W/W15/W15-3602.pdf | author:Christopher Norman; Akiko Aizawa
+W15-3603 | Counting What Counts: Decompounding for Keyphrase Extraction | http://www.aclweb.org/anthology/W/W15/W15-3603.pdf | author:Nicolai Erbs; Pedro Bispo Santos; Torsten Zesch; Iryna Gurevych
+W15-3604 | The Web as an Implicit Training Set: Application to Noun Compounds Syntax and Semantics | http://www.aclweb.org/anthology/W/W15/W15-3604.pdf | author:Preslav Nakov
+W15-3605 | Reducing Over-generation Errors for Automatic Keyphrase Extraction using Integer Linear Programming | http://www.aclweb.org/anthology/W/W15/W15-3605.pdf | author:Florian Boudin
+W15-3606 | TwittDict: Extracting Social Oriented Keyphrase Semantics from Twitter | http://www.aclweb.org/anthology/W/W15/W15-3606.pdf | author:Suppawong Tuarob; Wanghuan Chu; Dong Chen; Conrad Tucker
+W15-3607 | Identification and Classification of Emotional Key Phrases from Psychological Texts | http://www.aclweb.org/anthology/W/W15/W15-3607.pdf | author:Apurba Paul; Dipankar Das
+W15-3701 | Catching the Red Priest: Using Historical Editions of Encyclopaedia Britannica to Track the Evolution of Reputations | http://www.aclweb.org/anthology/W/W15/W15-3701.pdf | author:Yen-Fu Luo; Anna Rumshisky; Mikhail Gronas
+W15-3702 | Five Centuries of Monarchy in Korea: Mining the Text of the Annals of the Joseon Dynasty | http://www.aclweb.org/anthology/W/W15/W15-3702.pdf | author:JinYeong Bak; Alice Oh
+W15-3703 | Analyzing Sentiment in Classical Chinese Poetry | http://www.aclweb.org/anthology/W/W15/W15-3703.pdf | author:Yufang Hou; Anette Frank
+W15-3704 | Measuring the Structural and Conceptual Similarity of Folktales using Plot Graphs | http://www.aclweb.org/anthology/W/W15/W15-3704.pdf | author:Victoria Anugrah Lestari; Ruli Manurung
+W15-3705 | Towards Annotating Narrative Segments | http://www.aclweb.org/anthology/W/W15/W15-3705.pdf | author:Nils Reiter
+W15-3706 | Ranking Relevant Verb Phrases Extracted from Historical Text | http://www.aclweb.org/anthology/W/W15/W15-3706.pdf | author:Eva Pettersson; Beáta Megyesi; Joakim Nivre
+W15-3707 | Ranking election issues through the lens of social media | http://www.aclweb.org/anthology/W/W15/W15-3707.pdf | author:Stephen Wan; Cécile Paris
+W15-3708 | Word Embeddings Pointing the Way for Late Antiquity | http://www.aclweb.org/anthology/W/W15/W15-3708.pdf | author:Johannes Bjerva; Raf Praet
+W15-3709 | Enriching Interlinear Text using Automatically Constructed Annotators | http://www.aclweb.org/anthology/W/W15/W15-3709.pdf | author:Ryan Georgi; Fei Xia; William Lewis
+W15-3710 | Automatic interlinear glossing as two-level sequence classification | http://www.aclweb.org/anthology/W/W15/W15-3710.pdf | author:Tanja Samardzic; Robert Schikowski; Sabine Stoll
+W15-3711 | Enriching Digitized Medieval Manuscripts: Linking Image, Text and Lexical Knowledge | http://www.aclweb.org/anthology/W/W15/W15-3711.pdf | author:Aitor Arronte Alvarez
+W15-3712 | A preliminary study on similarity-preserving digital book identifiers | http://www.aclweb.org/anthology/W/W15/W15-3712.pdf | author:Klemo Vladimir; Marin Silic; Nenad Romic; Goran Delac; Sinisa Srbljic
+W15-3713 | When Translation Requires Interpretation: Collaborative Computer–Assisted Translation of Ancient Texts | http://www.aclweb.org/anthology/W/W15/W15-3713.pdf | author:Andrea Bellandi; Davide Albanesi; Giulia Benotto; Emiliano Giovannetti; Gianfranco Di Segni
+W15-3714 | Integrating Query Performance Prediction in Term Scoring for Diachronic Thesaurus | http://www.aclweb.org/anthology/W/W15/W15-3714.pdf | author:Chaya Liebeskind; Ido Dagan
+W15-3715 | Minoan linguistic resources: The Linear A Digital Corpus | http://www.aclweb.org/anthology/W/W15/W15-3715.pdf | author:Tommaso Petrolito; Ruggero Petrolito; Francesco Perono Cacciafoco; Gregoire Winterstein
+W15-3716 | Lexicon-assisted tagging and lemmatization in Latin: A comparison of six taggers and two lemmatization models | http://www.aclweb.org/anthology/W/W15/W15-3716.pdf | author:Tim vor der Brück; Steffen Eger; Alexander Mehler
+W15-3801 | Complex Event Extraction using DRUM | http://www.aclweb.org/anthology/W/W15/W15-3801.pdf | author:James Allen; Will de Beaumont; Lucian Galescu; Choh Man Teng
+W15-3802 | Making the most of limited training data using distant supervision | http://www.aclweb.org/anthology/W/W15/W15-3802.pdf | author:Roland Roller; Mark Stevenson
+W15-3803 | An extended dependency graph for relation extraction in biomedical texts | http://www.aclweb.org/anthology/W/W15/W15-3803.pdf | author:Yifan Peng; Samir Gupta; Cathy Wu; Vijay Shanker
+W15-3804 | Event Extraction in pieces:Tackling the partial event identification problem on unseen corpora | http://www.aclweb.org/anthology/W/W15/W15-3804.pdf | author:Chrysoula Zerva; Sophia Ananiadou
+W15-3805 | Extracting Biological Pathway Models From NLP Event Representations | http://www.aclweb.org/anthology/W/W15/W15-3805.pdf | author:Michael Spranger; Sucheendra Palaniappan; Samik Ghosh
+W15-3806 | Shallow Training is cheap but is it good enough? Experiments with Medical Fact Coding | http://www.aclweb.org/anthology/W/W15/W15-3806.pdf | author:Ramesh Nallapati; Radu Florian
+W15-3807 | Stacked Generalization for Medical Concept Extraction from Clinical Notes | http://www.aclweb.org/anthology/W/W15/W15-3807.pdf | author:Youngjun Kim; Ellen Riloff
+W15-3808 | Extracting Disease-Symptom Relationships by Learning Syntactic Patterns from Dependency Graphs | http://www.aclweb.org/anthology/W/W15/W15-3808.pdf | author:Mohsen Hassan; Olfa Makkaoui; Adrien Coulet; Yannick Toussain
+W15-3809 | Extracting Time Expressions from Clinical Text | http://www.aclweb.org/anthology/W/W15/W15-3809.pdf | author:Timothy Miller; Steven Bethard; Dmitriy Dligach; Chen Lin; Guergana Savova
+W15-3810 | Exploiting Task-Oriented Resources to Learn Word Embeddings for Clinical Abbreviation Expansion | http://www.aclweb.org/anthology/W/W15/W15-3810.pdf | author:Yue Liu; Tao Ge; Kusum Mathews; Heng Ji; Deborah McGuinness
+W15-3811 | Semantic Type Classification of Common Words in Biomedical Noun Phrases | http://www.aclweb.org/anthology/W/W15/W15-3811.pdf | author:Amy Siu; Gerhard Weikum
+W15-3812 | CoMAGD: Annotation of Gene-Depression Relations | http://www.aclweb.org/anthology/W/W15/W15-3812.pdf | author:Rize Jin; Jinseon You; Jin-Woo Chung; Hee-Jin Lee; Maria Wolters; Jong Park
+W15-3813 | Lexical Characteristics Analysis of Chinese Clinical Documents | http://www.aclweb.org/anthology/W/W15/W15-3813.pdf | author:Meizhi Ju; Haomin Li; Huilong Duan
+W15-3814 | Using word embedding for bio-event extraction | http://www.aclweb.org/anthology/W/W15/W15-3814.pdf | author:Chen Li; Runqing Song; Maria Liakata; Andreas Vlachos; Stephanie Seneff; Xiangrong Zhang
+W15-3815 | Measuring the readability of medical research journal abstracts | http://www.aclweb.org/anthology/W/W15/W15-3815.pdf | author:Samuel J. Severance; K. Bretonnel Cohen
+W15-3816 | Translating Electronic Health Record Notes from English to Spanish: A Preliminary Study | http://www.aclweb.org/anthology/W/W15/W15-3816.pdf | author:Weisong Liu; Shu Cai
+W15-3817 | Automatic Detection of Answers to Research Questions from Medline Abstracts | http://www.aclweb.org/anthology/W/W15/W15-3817.pdf | author:Abdulaziz Alamri; Mark Stevenson
+W15-3818 | A preliminary study on automatic identification of patient smoking status in unstructured electronic health records | http://www.aclweb.org/anthology/W/W15/W15-3818.pdf | author:Jitendra Jonnagaddala; Hong-Jie Dai; Pradeep Ray; Siaw-Teng Liaw
+W15-3819 | Restoring the intended structure of Hungarian ophthalmology documents | http://www.aclweb.org/anthology/W/W15/W15-3819.pdf | author:Borbála Siklósi; Attila Novák
+W15-3820 | Evaluating distributed word representations for capturing semantics of biomedical concepts | http://www.aclweb.org/anthology/W/W15/W15-3820.pdf | author:MUNEEB TH; Sunil Sahu; Ashish Anand
+W15-3821 | Investigating Public Health Surveillance using Twitter | http://www.aclweb.org/anthology/W/W15/W15-3821.pdf | author:Antonio Jimeno Yepes; Andrew MacKinlay; Bo Han
+W15-3822 | Clinical Abbreviation Disambiguation Using Neural Word Embeddings | http://www.aclweb.org/anthology/W/W15/W15-3822.pdf | author:yonghui wu; Jun Xu; Yaoyun Zhang; Hua Xu
+W15-3823 | Representing Clinical Diagnostic Criteria in Quality Data Model Using Natural Language Processing | http://www.aclweb.org/anthology/W/W15/W15-3823.pdf | author:Na Hong; Dingcheng Li; Yue Yu; Hongfang Liu; Christopher G. Chute; Guoqian Jiang
+W15-3901 | Whitepaper of NEWS 2015 Shared Task on Machine Transliteration | http://www.aclweb.org/anthology/W/W15/W15-3901.pdf | author:Min Zhang; Haizhou Li; Rafael E. Banchs; A. Kumaran
+W15-3902 | Report of NEWS 2015 Machine Transliteration Shared Task | http://www.aclweb.org/anthology/W/W15/W15-3902.pdf | author:Rafael E. Banchs; Min Zhang; Xiangyu Duan; Haizhou Li; A. Kumaran
+W15-3903 | How do you spell that? A journey through word representations | http://www.aclweb.org/anthology/W/W15/W15-3903.pdf | author:Greg Kondrak
+W15-3904 | Boosting Named Entity Recognition with Neural Character Embeddings | http://www.aclweb.org/anthology/W/W15/W15-3904.pdf | author:Cicero dos Santos; Victor Guimarães
+W15-3905 | Regularity and Flexibility in English-Chinese Name Transliteration | http://www.aclweb.org/anthology/W/W15/W15-3905.pdf | author:Oi Yee Kwong
+W15-3906 | HAREM and Klue: how to put two tagsets for named entities annotation together | http://www.aclweb.org/anthology/W/W15/W15-3906.pdf | author:Livy Real; Alexandre Rademaker
+W15-3907 | Semi-supervised Learning for Vietnamese Named Entity Recognition using Online Conditional Random Fields | http://www.aclweb.org/anthology/W/W15/W15-3907.pdf | author:Quang Hong Pham; Minh-Le Nguyen; Binh Thanh Nguyen; Nguyen Viet Cuong
+W15-3908 | Boosting English-Chinese Machine Transliteration via High Quality Alignment and Multilingual Resources | http://www.aclweb.org/anthology/W/W15/W15-3908.pdf | author:Yan Shao; Jörg Tiedemann; Joakim Nivre
+W15-3909 | Neural Network Transduction Models in Transliteration Generation | http://www.aclweb.org/anthology/W/W15/W15-3909.pdf | author:Andrew Finch; Lemao Liu; Xiaolin Wang; Eiichiro Sumita
+W15-3910 | A Hybrid Transliteration Model for Chinese/English Named Entities âBJTU-NLP Report for the 5th Named Entities Workshop | http://www.aclweb.org/anthology/W/W15/W15-3910.pdf | author:Dandan Wang; Xiaohui Yang; Jinan Xu; Yufeng Chen; Nan Wang; Bojia Liu; Jian Yang; Yujie Zhang
+W15-3911 | Multiple System Combination for Transliteration | http://www.aclweb.org/anthology/W/W15/W15-3911.pdf | author:Garrett Nicolai; Bradley Hauer; Mohammad Salameh; Adam St Arnaud; Ying Xu; Lei Yao; Grzegorz Kondrak
+W15-3912 | Data representation methods and use of mined corpora for Indian language transliteration | http://www.aclweb.org/anthology/W/W15/W15-3912.pdf | author:Anoop Kunchukuttan; Pushpak Bhattacharyya
+W15-3913 | NCU IISR English-Korean and English-Chinese Named Entity Transliteration Using Different Grapheme Segmentation Approaches | http://www.aclweb.org/anthology/W/W15/W15-3913.pdf | author:Yu-Chun Wang; Chun-Kai Wu; Richard Tzong-Han Tsai
+W15-4001 | Learning Embeddings for Transitive Verb Disambiguation by Implicit Tensor Factorization | http://www.aclweb.org/anthology/W/W15/W15-4001.pdf | author:Kazuma Hashimoto; Yoshimasa Tsuruoka
+W15-4002 | Recursive Neural Networks Can Learn Logical Semantics | http://www.aclweb.org/anthology/W/W15/W15-4002.pdf | author:Samuel R. Bowman; Christopher Potts; Christopher D. Manning
+W15-4003 | Concept Extensions as the Basis for Vector-Space Semantics: Combining Distributional and Ontological Information about Entities | http://www.aclweb.org/anthology/W/W15/W15-4003.pdf | author:Jackie Chi Kit Cheung
+W15-4004 | Joint Semantic Relevance Learning with Text Data and Graph Knowledge | http://www.aclweb.org/anthology/W/W15/W15-4004.pdf | author:Dongxu Zhang; Bin Yuan; Dong Wang; Rong Liu
+W15-4005 | Exploring the effect of semantic similarity for Phrase-based Machine Translation | http://www.aclweb.org/anthology/W/W15/W15-4005.pdf | author:Kunal Sachdeva; Dipti Sharma
+W15-4006 | Incremental Adaptation Strategies for Neural Network Language Models | http://www.aclweb.org/anthology/W/W15/W15-4006.pdf | author:Alex Ter-Sarkisov; Holger Schwenk; Fethi Bougares; Loïc Barrault
+W15-4007 | Observed versus latent features for knowledge base and text inference | http://www.aclweb.org/anthology/W/W15/W15-4007.pdf | author:Kristina Toutanova; Danqi Chen
+W15-4101 | Bootstrapping a hybrid deep MT system | http://www.aclweb.org/anthology/W/W15/W15-4101.pdf | author:João Silva; João Rodrigues; Luís Gomes; António Branco
+W15-4102 | Multi-system machine translation using online APIs for English-Latvian | http://www.aclweb.org/anthology/W/W15/W15-4102.pdf | author:Matīss Rikters
+W15-4103 | What a Transfer-Based System Brings to the Combination with PBMT | http://www.aclweb.org/anthology/W/W15/W15-4103.pdf | author:Aleš Tamchyna; Ondrej Bojar
+W15-4104 | Establishing sentential structure via realignments from small parallel corpora | http://www.aclweb.org/anthology/W/W15/W15-4104.pdf | author:George Tambouratzis; Vassiliki Pouli
+W15-4105 | Passive and Pervasive Use of Bilingual Dictionary in Statistical Machine Translation | http://www.aclweb.org/anthology/W/W15/W15-4105.pdf | author:Liling Tan
+W15-4106 | Automated Simultaneous Interpretation: Hints of a Cognitive Framework for Machine Translation | http://www.aclweb.org/anthology/W/W15/W15-4106.pdf | author:Rafael E. Banchs
+W15-4107 | A fuzzier approach to machine translation evaluation: A pilot study on post-editing productivity and automated metrics in commercial settings | http://www.aclweb.org/anthology/W/W15/W15-4107.pdf | author:Carla Parra Escartín; Manuel Arcedillo
+W15-4108 | A Methodology for Bilingual Lexicon Extraction from Comparable Corpora | http://www.aclweb.org/anthology/W/W15/W15-4108.pdf | author:Reinhard Rapp
+W15-4109 | Ongoing Study for Enhancing Chinese-Spanish Translation with Morphology Strategies | http://www.aclweb.org/anthology/W/W15/W15-4109.pdf | author:Marta R. Costa-jussà
+W15-4110 | Baidu Translate: Research and Products | http://www.aclweb.org/anthology/W/W15/W15-4110.pdf | author:Zhongjun He
+W15-4111 | On Improving the Human Translation Process by Using MT Technologies under a Cognitive Framework | http://www.aclweb.org/anthology/W/W15/W15-4111.pdf | author:Geng Xinhui
+W15-4112 | Towards a shared task for shallow semantics-based translation (in an industrial setting) | http://www.aclweb.org/anthology/W/W15/W15-4112.pdf | author:Kurt Eberle
+W15-4201 | From DBpedia and WordNet hierarchies to LinkedIn and Twitter | http://www.aclweb.org/anthology/W/W15/W15-4201.pdf | author:Aonghus McGovern; Alexander O'Connor; Vincent Wade
+W15-4202 | A Linked Data Model for Multimodal Sentiment and Emotion Analysis | http://www.aclweb.org/anthology/W/W15/W15-4202.pdf | author:J. Fernando Sánchez-Rada; Carlos A. Iglesias; Ronald Gil
+W15-4203 | Seeing is Correcting: curating lexical resources using social interfaces | http://www.aclweb.org/anthology/W/W15/W15-4203.pdf | author:Livy Real; Fabricio Chalub; Valeria dePaiva; Claudia Freitas; Alexandre Rademaker
+W15-4204 | Sar-graphs: A Linked Linguistic Knowledge Resource Connecting Facts with Language | http://www.aclweb.org/anthology/W/W15/W15-4204.pdf | author:Sebastian Krause; Leonhard Hennig; Aleksandra Gabryszak; Feiyu Xu; Hans Uszkoreit
+W15-4205 | Reconciling Heterogeneous Descriptions of Language Resources | http://www.aclweb.org/anthology/W/W15/W15-4205.pdf | author:John Philip McCrae; Philipp Cimiano; Victor Rodriguez-Doncel; Daniel Vila Suero; Jorge Gracia; Luca Matteis; Roberto Navigli; Andrejs Abele; Gabriela Vulcu; Paul Buitelaar
+W15-4206 | RDF Representation of Licenses for Language Resources | http://www.aclweb.org/anthology/W/W15/W15-4206.pdf | author:Víctor Rodriguez-Doncel; Penny Labropoulou
+W15-4207 | Linking Four Heterogeneous Language Resources as Linked Data | http://www.aclweb.org/anthology/W/W15/W15-4207.pdf | author:Benjamin Siemoneit; John Philip McCrae; Philipp Cimiano
+W15-4208 | EVALution 1.0: an Evolving Semantic Dataset for Training and Evaluation of Distributional Semantic Models | http://www.aclweb.org/anthology/W/W15/W15-4208.pdf | author:Enrico Santus; Frances Yung; Alessandro Lenci; Chu-Ren Huang
+W15-4209 | Linguistic Linked Data in Chinese: The Case of Chinese Wordnet | http://www.aclweb.org/anthology/W/W15/W15-4209.pdf | author:Chih-Yao LEE; Shu-Kai HSIEH
+W15-4301 | Minority Language Twitter: Part-of-Speech Tagging and Analysis of Irish Tweets | http://www.aclweb.org/anthology/W/W15/W15-4301.pdf | author:Teresa Lynn; Kevin Scannell; Eimear Maguire
+W15-4302 | Challenges of studying and processing dialects in social media | http://www.aclweb.org/anthology/W/W15/W15-4302.pdf | author:Anna Jørgensen; Dirk Hovy; Anders Søgaard
+W15-4303 | Toward Tweets Normalization Using Maximum Entropy | http://www.aclweb.org/anthology/W/W15/W15-4303.pdf | author:Mohammad Arshi Saloot; Norisma Idris; Liyana Shuib; Ram Gopal Raj; AiTi Aw
+W15-4304 | Five Shades of Noise: Analyzing Machine Translation Errors in User-Generated Text | http://www.aclweb.org/anthology/W/W15/W15-4304.pdf | author:Marlies van der Wees; Arianna Bisazza; Christof Monz
+W15-4305 | A Normalizer for UGC in Brazilian Portuguese | http://www.aclweb.org/anthology/W/W15/W15-4305.pdf | author:Magali Sanches Duran; Maria das Graças Volpe Nunes; Lucas Avanço
+W15-4306 | USFD: Twitter NER with Drift Compensation and Linked Data | http://www.aclweb.org/anthology/W/W15/W15-4306.pdf | author:Leon Derczynski; Isabelle Augenstein; Kalina Bontcheva
+W15-4307 | NRC: Infused Phrase Vectors for Named Entity Recognition in Twitter | http://www.aclweb.org/anthology/W/W15/W15-4307.pdf | author:Colin Cherry; Hongyu Guo; Chengbi Dai
+W15-4308 | IITP: Multiobjective Differential Evolution based Twitter Named Entity Recognition | http://www.aclweb.org/anthology/W/W15/W15-4308.pdf | author:Md Shad Akhtar; Utpal Kumar Sikdar; Asif Ekbal
+W15-4309 | Data Adaptation for Named Entity Recognition on Tweets with Features-Rich CRF | http://www.aclweb.org/anthology/W/W15/W15-4309.pdf | author:Tian Tian; Marco Dinarelli; Isabelle Tellier
+W15-4310 | Hallym: Named Entity Recognition on Twitter with Word Representation | http://www.aclweb.org/anthology/W/W15/W15-4310.pdf | author:Eun-Suk Yang; Yu-Seop Kim
+W15-4311 | IHS_RD: Lexical Normalization for English Tweets | http://www.aclweb.org/anthology/W/W15/W15-4311.pdf | author:Dmitry Supranovich; Viachaslau Patsepnia
+W15-4312 | Bekli:A Simple Approach to Twitter Text Normalization. | http://www.aclweb.org/anthology/W/W15/W15-4312.pdf | author:Russell Beckley
+W15-4313 | NCSU-SAS-Ning: Candidate Generation and Feature Engineering for Supervised Lexical Normalization | http://www.aclweb.org/anthology/W/W15/W15-4313.pdf | author:Ning Jin
+W15-4314 | DCU-ADAPT: Learning Edit Operations for Microblog Normalisation with the Generalised Perceptron | http://www.aclweb.org/anthology/W/W15/W15-4314.pdf | author:Joachim Wagner; Jennifer Foster
+W15-4315 | LYSGROUP: Adapting a Spanish microtext normalization system to English. | http://www.aclweb.org/anthology/W/W15/W15-4315.pdf | author:Yerai Doval Mosquera; Jesús Vilares; Carlos Gómez-Rodríguez
+W15-4316 | IITP: Hybrid Approach for Text Normalization in Twitter | http://www.aclweb.org/anthology/W/W15/W15-4316.pdf | author:Md Shad Akhtar; Utpal Kumar Sikdar; Asif Ekbal
+W15-4317 | NCSU_SAS_WOOKHEE: A Deep Contextual Long-Short Term Memory Model for Text Normalization | http://www.aclweb.org/anthology/W/W15/W15-4317.pdf | author:Wookhee Min; Bradford Mott
+W15-4318 | USZEGED: Correction Type-sensitive Normalization of English Tweets Using Efficiently Indexed n-gram Statistics | http://www.aclweb.org/anthology/W/W15/W15-4318.pdf | author:Gábor Berend; Ervin Tasnádi
+W15-4319 | Shared Tasks of the 2015 Workshop on Noisy User-generated Text: Twitter Lexical Normalization and Named Entity Recognition | http://www.aclweb.org/anthology/W/W15/W15-4319.pdf | author:Timothy Baldwin; Marie-Catherine de Marneffe; Bo Han; Young-Bum Kim; Alan Ritter; Wei Xu
+W15-4320 | Enhancing Named Entity Recognition in Twitter Messages Using Entity Linking | http://www.aclweb.org/anthology/W/W15/W15-4320.pdf | author:Ikuya Yamada; Hideaki Takeda; Yoshiyasu Takefuji
+W15-4321 | Improving Twitter Named Entity Recognition using Word Representations | http://www.aclweb.org/anthology/W/W15/W15-4321.pdf | author:Zhiqiang Toh; Bin Chen; Jian Su
+W15-4322 | Multimedia Lab $@$ ACL WNUT NER Shared Task: Named Entity Recognition for Twitter Microposts using Distributed Word Representations | http://www.aclweb.org/anthology/W/W15/W15-4322.pdf | author:Fréderic Godin; Baptist Vandersmissen; Wesley De Neve; Rik Van de Walle
+W15-4323 | NCSU_SAS_SAM: Deep Encoding and Reconstruction for Normalization of Noisy Text | http://www.aclweb.org/anthology/W/W15/W15-4323.pdf | author:Samuel Leeman-Munk; James Lester; James Cox
+W15-4401 | Overview of the NLP-TEA 2015 Shared Task for Chinese Grammatical Error Diagnosis | http://www.aclweb.org/anthology/W/W15/W15-4401.pdf | author:Lung-Hao Lee; Liang-Chih Yu; Li-Ping Chang
+W15-4402 | Chinese Grammatical Error Diagnosis by Conditional Random Fields | http://www.aclweb.org/anthology/W/W15/W15-4402.pdf | author:Wu Shih-Hung; Po-Lin Chen; Liang-Pu Chen; Ping-Che Yang; Ren-Dar Yang
+W15-4403 | NTOU Chinese Grammar Checker for CGED Shared Task | http://www.aclweb.org/anthology/W/W15/W15-4403.pdf | author:Chuan-Jie Lin; Shao-Heng Chen
+W15-4404 | Collocation Assistant for Learners of Japanese as a Second Language | http://www.aclweb.org/anthology/W/W15/W15-4404.pdf | author:Lis Pereira; Yuji Matsumoto
+W15-4405 | Semi-automatic Generation of Multiple-Choice Tests from Mentions of Semantic Relations | http://www.aclweb.org/anthology/W/W15/W15-4405.pdf | author:Renlong Ai; Sebastian Krause; Walter Kasper; Feiyu Xu; Hans Uszkoreit
+W15-4406 | Interactive Second Language Learning from News Websites | http://www.aclweb.org/anthology/W/W15/W15-4406.pdf | author:Tao Chen; Naijia Zheng; Yue Zhao; Muthu Kumar Chandrasekaran; Min-Yen Kan
+W15-4407 | Bilingual Keyword Extraction and its Educational Application | http://www.aclweb.org/anthology/W/W15/W15-4407.pdf | author:Chung-Chi Huang; Mei-Hua Chen; Ping-Che Yang
+W15-4408 | Annotating Entailment Relations for Shortanswer Questions | http://www.aclweb.org/anthology/W/W15/W15-4408.pdf | author:Simon Ostermann; Andrea Horbach; Manfred Pinkal
+W15-4409 | An Automated Scoring Tool for Korean Supply-type Items Based on Semi-Supervised Learning | http://www.aclweb.org/anthology/W/W15/W15-4409.pdf | author:Minah Cheon; Hyeong-Won Seo; Jae-Hoon Kim; Eun-Hee Noh; Kyung-Hee Sung; EunYong Lim
+W15-4410 | A System for Generating Multiple Choice Questions: With a Novel Approach for Sentence Selection | http://www.aclweb.org/anthology/W/W15/W15-4410.pdf | author:Mukta Majumder; Sujan Kumar Saha
+W15-4411 | The "News Web Easy” news service as a resource for teaching and learning Japanese: An assessment of the comprehension difficulty of Japanese sentence-end expressions | http://www.aclweb.org/anthology/W/W15/W15-4411.pdf | author:Hideki Tanaka; Tadashi Kumano; Isao Goto
+W15-4412 | Grammatical Error Correction Considering Multi-word Expressions | http://www.aclweb.org/anthology/W/W15/W15-4412.pdf | author:Tomoya Mizumoto; Masato Mita; Yuji Matsumoto
+W15-4413 | Salinlahi III: An Intelligent Tutoring System for Filipino Heritage Language Learners | http://www.aclweb.org/anthology/W/W15/W15-4413.pdf | author:Ralph Vincent Regalado; Michael Louie Boñon; Nadine Chua; Rene Rose Piñera; Shannen Rose Dela Cruz
+W15-4414 | Using Finite State Transducers for Helping Foreign Language Learning | http://www.aclweb.org/anthology/W/W15/W15-4414.pdf | author:Hasan Kaya; Gülşen Eryiğit
+W15-4415 | Chinese Grammatical Error Diagnosis Using Ensemble Learning | http://www.aclweb.org/anthology/W/W15/W15-4415.pdf | author:Yang Xiang; Xiaolong Wang; Wenying Han; Qinghua Hong
+W15-4416 | Condition Random Fields-based Grammatical Error Detection for Chinese as Second Language | http://www.aclweb.org/anthology/W/W15/W15-4416.pdf | author:Jui-Feng Yeh; Chan Kun Yeh; Kai-Hsiang Yu; Ya-Ting Li; Wan-Ling Tsai
+W15-4417 | Improving Chinese Grammatical Error Correction with Corpus Augmentation and Hierarchical Phrase-based Statistical Machine Translation | http://www.aclweb.org/anthology/W/W15/W15-4417.pdf | author:Yinchen Zhao; Mamoru Komachi; Hiroshi Ishikawa
+W15-4418 | Chinese Grammatical Error Diagnosis System Based on Hybrid Model | http://www.aclweb.org/anthology/W/W15/W15-4418.pdf | author:Xiupeng Wu; Peijie Huang; Jundong Wang; Qingwen Guo; Yuhong Xu; Chuping Chen
+W15-4501 | Interactions between Narrative Schemas and Document Categories | http://www.aclweb.org/anthology/W/W15/W15-4501.pdf | author:Dan Simonson; Anthony Davis
+W15-4502 | Improving Event Detection with Abstract Meaning Representation | http://www.aclweb.org/anthology/W/W15/W15-4502.pdf | author:Xiang Li; Thien Huu Nguyen; Kai Cao; Ralph Grishman
+W15-4503 | News clustering approach based on discourse text structure | http://www.aclweb.org/anthology/W/W15/W15-4503.pdf | author:Tatyana Makhalova; Dmitry Ilvovsky; Boris Galitsky
+W15-4504 | To Do or Not to Do: the Role of Agendas for Action in Analyzing News Coverage of Violent Conflict | http://www.aclweb.org/anthology/W/W15/W15-4504.pdf | author:Katsiaryna Stalpouskaya; Christian Baden
+W15-4505 | MediaMeter: A Global Monitor for Online News Coverage | http://www.aclweb.org/anthology/W/W15/W15-4505.pdf | author:Tadashi Nomoto
+W15-4506 | Expanding the horizons: adding a new language to the news personalization system | http://www.aclweb.org/anthology/W/W15/W15-4506.pdf | author:Andrey Fedorovsky; Maxim Ionov; Varvara Litvinova; Tatyana Olenina; Darya Trofimova
+W15-4507 | Storylines for structuring massive streams of news | http://www.aclweb.org/anthology/W/W15/W15-4507.pdf | author:Piek Vossen; Tommaso Caselli; Yiota Kontzopoulou
+W15-4508 | From TimeLines to StoryLines: A preliminary proposal for evaluating narratives | http://www.aclweb.org/anthology/W/W15/W15-4508.pdf | author:Egoitz Laparra; Itziar Aldabe; German Rigau
+W15-4509 | Cross-Document Non-Fiction Narrative Alignment | http://www.aclweb.org/anthology/W/W15/W15-4509.pdf | author:Ben Miller; Jennifer Olive; Shakthidhar Gopavaram; Ayush Shrestha

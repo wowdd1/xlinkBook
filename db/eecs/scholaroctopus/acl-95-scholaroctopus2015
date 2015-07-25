@@ -1,0 +1,56 @@
+P95-1001 | Learning Phonological Rule Probabilities from Speech Corpora with Exploratory Computational Phonology | http://www.aclweb.org/anthology/P/P95/P95-1001.pdf | author:Gary Tajchman; Daniel Jurafsky; Eric Fosler
+P95-1002 | Automatic Induction of Finite State Transducers for Simple Phonological Rules | http://www.aclweb.org/anthology/P/P95/P95-1002.pdf | author:Daniel Gildea; Daniel Jurafsky
+P95-1003 | The Replace Operator | http://www.aclweb.org/anthology/P/P95/P95-1003.pdf | author:Lauri Karttunen
+P95-1004 | A Morphographemic Model for Error Correction in Nonconcatenative Strings | http://www.aclweb.org/anthology/P/P95/P95-1004.pdf | author:Tanya Bowden; George Anton Kiraz
+P95-1005 | Discourse Processing of Dialogues with Multiple Threads | http://www.aclweb.org/anthology/P/P95/P95-1005.pdf | author:Carolyn Penstein Rose; Barbara Di Eugenio; Lori S. Levin; Carol Van Ess-Dykema
+P95-1006 | Robust Parsing Based on Discourse Information: Completing partial parses of ill-formed sentences on the basis of discourse information | http://www.aclweb.org/anthology/P/P95/P95-1006.pdf | author:Tetsuya Nasukawa
+P95-1007 | Corpus Statistics Meet the Noun Compound: Some Empirical Results | http://www.aclweb.org/anthology/P/P95/P95-1007.pdf | author:Mark Lauer
+P95-1008 | DATR Theories and DATR Models | http://www.aclweb.org/anthology/P/P95/P95-1008.pdf | author:Bill Keller
+P95-1009 | User-Defined Nonmonotonicity in Unification-Based Formalisms | http://www.aclweb.org/anthology/P/P95/P95-1009.pdf | author:Lena Stromback
+P95-1010 | Features and Agreement | http://www.aclweb.org/anthology/P/P95/P95-1010.pdf | author:Sam Bayer; Mark Johnson
+P95-1011 | Encoding Lexicalized Tree Adjoining Grammars with a Nonmonotonic Inheritance Hierarchy | http://www.aclweb.org/anthology/P/P95/P95-1011.pdf | author:Roger Evans; Gerald Gazdar; David Weir
+P95-1012 | Compiling HPSG type constraints into definite clause programs | http://www.aclweb.org/anthology/P/P95/P95-1012.pdf | author:Thilo Gotz; Walt Detmar Meurers
+P95-1013 | Compilation of HPSG to TAG | http://www.aclweb.org/anthology/P/P95/P95-1013.pdf | author:Robert Kasper; Bernd Kiefer; Klaus Netter
+P95-1014 | Memoization of Coroutined Constraints | http://www.aclweb.org/anthology/P/P95/P95-1014.pdf | author:Mark Johnson; Jochen Dorre
+P95-1015 | Combining Multiple Knowledge Sources for Discourse Segmentation | http://www.aclweb.org/anthology/P/P95/P95-1015.pdf | author:Diane J. Litman; Rebecca J. Passonneau
+P95-1016 | Utilizing Statistical Dialogue Act Processing in Verbrnobil | http://www.aclweb.org/anthology/P/P95/P95-1016.pdf | author:Norbert Reithinger; Elisabeth Maier
+P95-1017 | Evaluating Automated and Manual Acquisition of Anaphora Resolution Strategies | http://www.aclweb.org/anthology/P/P95/P95-1017.pdf | author:Chinatsu Aone; Scott William
+P95-1018 | Investigating Cue Selection and Placement in Tutorial Discourse | http://www.aclweb.org/anthology/P/P95/P95-1018.pdf | author:Megan Moser; Johanna D. Moore
+P95-1019 | Response Generation in Collaborative Negotiation | http://www.aclweb.org/anthology/P/P95/P95-1019.pdf | author:Jennifer Chu-Carroll; Sandra Carberry
+P95-1020 | A Uniform Treatment of Pragmatic Inferences in Simple and Complex Utterances and Sequences of Utterances | http://www.aclweb.org/anthology/P/P95/P95-1020.pdf | author:Daniel Marcu; Graeme Hirst
+P95-1021 | D-Tree Grammars | http://www.aclweb.org/anthology/P/P95/P95-1021.pdf | author:Owen Rambow; K. Vijay-Shanker; David Weir
+P95-1022 | The intersection of Finite State Automata and Definite Clause Grammars | http://www.aclweb.org/anthology/P/P95/P95-1022.pdf | author:Gertjan van Noord
+P95-1023 | TAL Recognition in O(M(n2)) Time | http://www.aclweb.org/anthology/P/P95/P95-1023.pdf | author:Sanguthevar Rajasekaran; Shibu Yooseph 
+P95-1024 | Extraposition via Complex Domain Formation | http://www.aclweb.org/anthology/P/P95/P95-1024.pdf | author:Andreas Kathol; Carl Pollard
+P95-1025 | Statistical Sense Disambiguation with Relatively Small Corpora Using Dictionary Definitions | http://www.aclweb.org/anthology/P/P95/P95-1025.pdf | author:Alpha K. Luk
+P95-1026 | UNSUPERVISED WORD SENSE DISAMBIGUATION RIVALING SUPERVISED METHODS | http://www.aclweb.org/anthology/P/P95/P95-1026.pdf | author:David Yarowsky
+P95-1027 | A Quantitative Evaluation of Linguistic Tests for the Automatic Prediction of Semantic Markedness | http://www.aclweb.org/anthology/P/P95/P95-1027.pdf | author:Vasileios Hatzivassiloglou; Kathleen McKeown
+P95-1028 | Quantifier Scope and Constituency | http://www.aclweb.org/anthology/P/P95/P95-1028.pdf | author:Jong C. Park
+P95-1029 | Using Higher-Order Logic Programming for Semantic Interpretation of Coordinate Constructs | http://www.aclweb.org/anthology/P/P95/P95-1029.pdf | author:Seth Kulick
+P95-1030 | New Techniques for Context Modeling | http://www.aclweb.org/anthology/P/P95/P95-1030.pdf | author:Eric Sven Ristad; Robert G. Thomas
+P95-1031 | Bayesian Grammar Induction for Language Modeling | http://www.aclweb.org/anthology/P/P95/P95-1031.pdf | author:Stanley F. Chen
+P95-1032 | A Pattern Matching Method for Finding Noun and Proper Noun Translations from Noisy Parallel Corpora | http://www.aclweb.org/anthology/P/P95/P95-1032.pdf | author:Pascale Pung
+P95-1033 | An Algorithm for Simultaneously Bracketing Parallel Texts by Aligning Words | http://www.aclweb.org/anthology/P/P95/P95-1033.pdf | author:Dekai Wu
+P95-1034 | Two-Level, Many-Paths Generation | http://www.aclweb.org/anthology/P/P95/P95-1034.pdf | author:Kevin Knight; Vasileios Hatzivassiloglou
+P95-1035 | An Efficient Generation Algorithm for Lexicalist MT | http://www.aclweb.org/anthology/P/P95/P95-1035.pdf | author:Victor Poznanski; John L. Beaven; Pete Whitelock
+P95-1036 | Some Novel Applications of Explanation-Based Learning to Parsing Lexicalized Tree-Adjoining Grammars | http://www.aclweb.org/anthology/P/P95/P95-1036.pdf | author:B. Srinivas; Aravind K. Joshi
+P95-1037 | Statistical Decision-Tree Models for Parsing | http://www.aclweb.org/anthology/P/P95/P95-1037.pdf | author:David M. Magerman
+P95-1038 | Evaluation of Semantic Clusters | http://www.aclweb.org/anthology/P/P95/P95-1038.pdf | author:Rajeev Agarwal
+P95-1039 | Tagset Reduction Without Information Loss | http://www.aclweb.org/anthology/P/P95/P95-1039.pdf | author:Thorsten Brants
+P95-1040 | The Effect of Pitch Accenting on Pronoun Referent Resolution | http://www.aclweb.org/anthology/P/P95/P95-1040.pdf | author:Janet Cahn
+P95-1041 | Sense Disambiguation Using Semantic Relations and Adjacency Information | http://www.aclweb.org/anthology/P/P95/P95-1041.pdf | author:Anil S. Chakravarthy
+P95-1042 | CONSTRAINT-BASED EVENT RECOGNITION FOR INFORMATION EXTRACTION | http://www.aclweb.org/anthology/P/P95/P95-1042.pdf | author:Jeremy Crowe
+P95-1043 | From route descriptions to sketches: a model for a text-to-image translator | http://www.aclweb.org/anthology/P/P95/P95-1043.pdf | author:Lidia Praczak
+P95-1044 | A Computational Framework for Composition in Multiple Linguistic Domains | http://www.aclweb.org/anthology/P/P95/P95-1044.pdf | author:Elvan Gocmen
+P95-1045 | Polyphony and Argumentative Semantics | http://www.aclweb.org/anthology/P/P95/P95-1045.pdf | author:Jean-Michel Grandchamp
+P95-1046 | Knowledge-based Automatic Topic Identification | http://www.aclweb.org/anthology/P/P95/P95-1046.pdf | author:Chin-Yew Lin
+P95-1047 | Acquiring a Lexicon from Unsegmented Speech | http://www.aclweb.org/anthology/P/P95/P95-1047.pdf | author:Carl de Marcken
+P95-1048 | Semantic Information Preprocessing for Natural Language Interfaces to Databases | http://www.aclweb.org/anthology/P/P95/P95-1048.pdf | author:Milan Mosny; Simon Fraser
+P95-1049 | Mapping Scrambled Korean Sentences into English Using Synchronous TAGs | http://www.aclweb.org/anthology/P/P95/P95-1049.pdf | author:Hyun S. Park
+P95-1050 | Identifying Word Translations in Non-Parallel Texts | http://www.aclweb.org/anthology/P/P95/P95-1050.pdf | author:Reinhard Rapp
+P95-1051 | Towards a Cognitively Plausible Model for Quantification | http://www.aclweb.org/anthology/P/P95/P95-1051.pdf | author:Walid S. Saba
+P95-1052 | Aspect and Discourse Structure: Is a Neutral Viewpoint Required? | http://www.aclweb.org/anthology/P/P95/P95-1052.pdf | author:Frank Schilder
+P95-1053 | Conciseness through Aggregation in Text Generation | http://www.aclweb.org/anthology/P/P95/P95-1053.pdf | author:James Shaw
+P95-1054 | Quantifying lexical influence: Giving direction to context | http://www.aclweb.org/anthology/P/P95/P95-1054.pdf | author:V Kripasundar
+P95-1055 | Acquisition of a Lexicon from Semantic Representations of Sentences | http://www.aclweb.org/anthology/P/P95/P95-1055.pdf | author:Cynthia A. Thompson
+P95-1056 | A Minimalist Head-Corner Parser | http://www.aclweb.org/anthology/P/P95/P95-1056.pdf | author:Mettina Veenstra vakgroep

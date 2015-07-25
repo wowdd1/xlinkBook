@@ -1,0 +1,65 @@
+P02-1001 | Parameter Estimation for Probabilistic Finite-State Transducers | http://www.aclweb.org/anthology/P/P02/P02-1001.pdf | author:Jason Eisner
+P02-1002 | Sequential Conditional Generalized Iterative Scaling | http://www.aclweb.org/anthology/P/P02/P02-1002.pdf | author:Joshua Goodman
+P02-1003 | Generation as Dependency Parsing | http://www.aclweb.org/anthology/P/P02/P02-1003.pdf | author:Alexander Koller; Kristina Striegnitz
+P02-1004 | Machine-learned contexts for linguistic operations in German sentence realization | http://www.aclweb.org/anthology/P/P02/P02-1004.pdf | author:Michael Gamon; Eric Ringger; Simon Corston-Oliver; Robert Moore
+P02-1005 | Performance Issues and Error Analysis in an Open-Domain Question Answering System | http://www.aclweb.org/anthology/P/P02/P02-1005.pdf | author:Dan Moldovan; Marius Pasca; Sanda Harabagiu; Mihai Surdeanu
+P02-1006 | Learning surface text patterns for a Question Answering System | http://www.aclweb.org/anthology/P/P02/P02-1006.pdf | author:Deepak Ravichandran; Eduard Hovy
+P02-1007 | OT Syntax -- Decidability of Generation-based Optimization | http://www.aclweb.org/anthology/P/P02/P02-1007.pdf | author:Jonas Kuhn
+P02-1008 | Phonological Comprehension and the Compilation of Optimality Theory | http://www.aclweb.org/anthology/P/P02/P02-1008.pdf | author:Jason Eisner
+P02-1009 | Generalized Encoding of Description Spaces and its Application to Typed Feature Structures | http://www.aclweb.org/anthology/P/P02/P02-1009.pdf | author:Gerald Penn
+P02-1010 | Ellipsis Resolution with Underspecified Scope | http://www.aclweb.org/anthology/P/P02/P02-1010.pdf | author:Michael Schiehlen
+P02-1011 | Resolving Pronominal Reference to Abstract Entities | http://www.aclweb.org/anthology/P/P02/P02-1011.pdf | author:Donna K. Byron
+P02-1012 | Pronominalization in Generated Discourse and Dialogue | http://www.aclweb.org/anthology/P/P02/P02-1012.pdf | author:Charles B. Callaway; James L. Lester
+P02-1013 | Generating Minimal Definite Descriptions | http://www.aclweb.org/anthology/P/P02/P02-1013.pdf | author:Claire Gardent
+P02-1014 | Improving Machine Learning Approaches to Coreference Resolution | http://www.aclweb.org/anthology/P/P02/P02-1014.pdf | author:Vincent Ng; Claire Cardie
+P02-1015 | Parsing non-recursive CFGs | http://www.aclweb.org/anthology/P/P02/P02-1015.pdf | author:Mark-Jan Nederhof; Giorgio Satta
+P02-1016 | Active Learning for Statistical Natural Language Parsing | http://www.aclweb.org/anthology/P/P02/P02-1016.pdf | author:Min  Tang; Xiaoqiang Luo; Salim  Roukos
+P02-1017 | A Generative Constituent-Context Model for Improved Grammar Induction | http://www.aclweb.org/anthology/P/P02/P02-1017.pdf | author:Dan Klein; Christopher D. Manning
+P02-1018 | A Simple Pattern-matching Algorithm for Recovering Empty Nodes and their Antecedents | http://www.aclweb.org/anthology/P/P02/P02-1018.pdf | author:Mark Johnson
+P02-1019 | Pronunciation Modeling for Improved Spelling Correction | http://www.aclweb.org/anthology/P/P02/P02-1019.pdf | author:Kristina Toutanova; Robert Moore
+P02-1020 | Measuring Text Reuse | http://www.aclweb.org/anthology/P/P02/P02-1020.pdf | author:Paul Clough; Robert  Gaizauskas; Scott S.L. Piao; Yorick  Wilks
+P02-1021 | Semi-Supervised Maximum Entropy Based Approach to Acronym and Abbreviation Normalization in Medical Texts | http://www.aclweb.org/anthology/P/P02/P02-1021.pdf | author:Serguei Pakhomov
+P02-1022 | GATE: an Architecture for Development of Robust HLT applications | http://www.aclweb.org/anthology/P/P02/P02-1022.pdf | author:Hamish Cunningham; Diana Maynard; Kalina Bontcheva; Valentin Tablan
+P02-1023 | Improving Language Model Size Reduction using Better Pruning Criteria | http://www.aclweb.org/anthology/P/P02/P02-1023.pdf | author:Jianfeng Gao; Min Zhang
+P02-1024 | Exploring Asymmetric Clustering for Statistical Language Modeling | http://www.aclweb.org/anthology/P/P02/P02-1024.pdf | author:Jianfeng Gao; Joshua Goodman; Guihong Cao; Hang Li
+P02-1025 | A Study on Richer Syntactic Dependencies for Structured Language Modeling | http://www.aclweb.org/anthology/P/P02/P02-1025.pdf | author:Peng Xu; Ciprian Chelba; Frederick Jelinek
+P02-1026 | Entropy Rate Constancy in Text | http://www.aclweb.org/anthology/P/P02/P02-1026.pdf | author:Dmitriy Genzel; Eugene Charniak
+P02-1027 | A Multilingual Paradigm for Automatic Verb Classification | http://www.aclweb.org/anthology/P/P02/P02-1027.pdf | author:Paola Merlo; Suzanne Stevenson; Vivian Tsang; Gianluca Allaria
+P02-1028 | Verb Paraphrase based on Case Frame Alignment | http://www.aclweb.org/anthology/P/P02/P02-1028.pdf | author:Nobuhiro Kaji; Daisuke Kawahara; Sadao Kurohashi; Satoshi Sato
+P02-1029 | Inducing German Semantic Verb Classes from Purely Syntactic Subcategorisation Information | http://www.aclweb.org/anthology/P/P02/P02-1029.pdf | author:Sabine Schulte im Walde; Chris Brew
+P02-1030 | Scaling Context Space | http://www.aclweb.org/anthology/P/P02/P02-1030.pdf | author:James Curran; Marc Moens
+P02-1031 | The Necessity of Parsing for Predicate Argument Recognition | http://www.aclweb.org/anthology/P/P02/P02-1031.pdf | author:Daniel Gildea; Martha Palmer
+P02-1032 | The Descent of Hierarchy, and Selection in Relational Semantics | http://www.aclweb.org/anthology/P/P02/P02-1032.pdf | author:Barbara Rosario; Marti  Hearst; Charles Fillmore
+P02-1033 | An Unsupervised Method for Word Sense Tagging using Parallel Corpora | http://www.aclweb.org/anthology/P/P02/P02-1033.pdf | author:Mona Diab; Philip Resnik
+P02-1034 | New Ranking Algorithms for Parsing and Tagging: Kernels over Discrete Structures, and the Voted Perceptron | http://www.aclweb.org/anthology/P/P02/P02-1034.pdf | author:Michael Collins; Nigel Duffy
+P02-1035 | Parsing the Wall Street Journal using a Lexical-Functional Grammar and Discriminative Estimation Techniques | http://www.aclweb.org/anthology/P/P02/P02-1035.pdf | author:Stefan Riezler; Tracy H. King; Ronald M. Kaplan; Richard Crouch; John T. III Maxwell; Mark Johnson
+P02-1036 | Dynamic programming for parsing and estimation of stochastic unification-based grammars | http://www.aclweb.org/anthology/P/P02/P02-1036.pdf | author:Stuart Geman; Mark Johnson
+P02-1037 | Markov Parsing: Lattice Rescoring with a Statistical Parser | http://www.aclweb.org/anthology/P/P02/P02-1037.pdf | author:Brian Roark
+P02-1038 | Discriminative Training and Maximum Entropy Models for Statistical Machine Translation | http://www.aclweb.org/anthology/P/P02/P02-1038.pdf | author:Franz Josef Och; Hermann  Ney
+P02-1039 | A Decoder for Syntax-based Statistical MT | http://www.aclweb.org/anthology/P/P02/P02-1039.pdf | author:Kenji Yamada; Kevin Knight
+P02-1040 | Bleu: a Method for Automatic Evaluation of Machine Translation | http://www.aclweb.org/anthology/P/P02/P02-1040.pdf | author:Kishore Papineni; Salim Roukos; Todd Ward; Wei-Jing Zhu
+P02-1041 | Coupling CCG and Hybrid Logic Dependency Semantics | http://www.aclweb.org/anthology/P/P02/P02-1041.pdf | author:Jason Baldridge; Geert-Jan Kruijff
+P02-1042 | Building Deep Dependency Structures using a Wide-Coverage CCG Parser | http://www.aclweb.org/anthology/P/P02/P02-1042.pdf | author:Stephen Clark; Julia Hockenmaier; Mark Steedman
+P02-1043 | Generative Models for Statistical Parsing with Combinatory Categorial Grammar | http://www.aclweb.org/anthology/P/P02/P02-1043.pdf | author:Julia Hockenmaier; Mark Steedman
+P02-1044 | Word Translation Disambiguation Using Bilingual Bootstrapping | http://www.aclweb.org/anthology/P/P02/P02-1044.pdf | author:Cong Li; Hang Li
+P02-1045 | Applying Co-Training to Reference Resolution | http://www.aclweb.org/anthology/P/P02/P02-1045.pdf | author:Christoph Mueller; Stefan Rapp; Michael Strube
+P02-1046 | Bootstrapping | http://www.aclweb.org/anthology/P/P02/P02-1046.pdf | author:Steven Abney
+P02-1047 | An Unsupervised Approach to Recognizing Discourse Relations | http://www.aclweb.org/anthology/P/P02/P02-1047.pdf | author:Daniel Marcu; Abdessamad Echihabi
+P02-1048 | MATCH: An Architecture for Multimodal Dialogue Systems | http://www.aclweb.org/anthology/P/P02/P02-1048.pdf | author:Michael Johnston; SrinivasBangalore; Gunaranjan Vasireddy; Amanda Stent; Patrick Ehlen; Marilyn  Walker; Steve Whittaker; Preetam Maloor
+P02-1049 | What's the Trouble: Automatically Identifying Problematic Dialogues in DARPA Communicator Dialogue Systems | http://www.aclweb.org/anthology/P/P02/P02-1049.pdf | author:Helen Wright Hastie; Rashmi Prasad; Marilyn Walker
+P02-1050 | Evaluating Translational Correspondence using Annotation Projection | http://www.aclweb.org/anthology/P/P02/P02-1050.pdf | author:Rebecca Hwa; Philip Resnik; Amy Weinberg; Okan Kolak
+P02-1051 | Translating Named Entities Using Monolingual and Bilingual Resources | http://www.aclweb.org/anthology/P/P02/P02-1051.pdf | author:Yaser Al-Onaizan; Kevin Knight
+P02-1052 | Using Similarity Scoring to Improve the Bilingual Dictionary for Sub-sentential Alignment | http://www.aclweb.org/anthology/P/P02/P02-1052.pdf | author:Katharina Probst; Ralf Brown
+P02-1053 | Thumbs Up or Thumbs Down? Semantic Orientation Applied to Unsupervised Classification of Reviews | http://www.aclweb.org/anthology/P/P02/P02-1053.pdf | author:Peter Turney
+P02-1054 | Is It the Right Answer? Exploiting Web Redundancy for Answer Validation | http://www.aclweb.org/anthology/P/P02/P02-1054.pdf | author:Bernardo Magnini; Matteo Negri; Roberto Prevete; Hristo Tanev
+P02-1055 | Shallow Parsing on the Basis of Words Only: A Case Study | http://www.aclweb.org/anthology/P/P02/P02-1055.pdf | author:Antal van den Bosch; Sabine Buchholz
+P02-1056 | An Integrated Archictecture for Shallow and Deep Processing | http://www.aclweb.org/anthology/P/P02/P02-1056.pdf | author:Berthold Crysmann; Anette Frank; Kiefer Bernd; Stefan Mueller; Guenter Neumann; Jakub Piskorski; Ulrich Schaefer; Melanie Siegel; Hans Uszkoreit; Feiyu Xu; Markus Becker; Hans-Ulrich Krieger
+P02-1057 | A Noisy-Channel Model for Document Compression | http://www.aclweb.org/anthology/P/P02/P02-1057.pdf | author:Hal Daume III; Daniel Marcu
+P02-1058 | From Single to Multi-document Summarization | http://www.aclweb.org/anthology/P/P02/P02-1058.pdf | author:Chin-Yew Lin; Eduard Hovy
+P02-1059 | Supervised Ranking in Open-Domain Text Summarization | http://www.aclweb.org/anthology/P/P02/P02-1059.pdf | author:Tadashi Nomoto; Yuji Matsumoto
+P02-1060 | Named Entity Recognition using an HMM-based Chunk Tagger | http://www.aclweb.org/anthology/P/P02/P02-1060.pdf | author:GuoDong Zhou; Jian Su
+P02-1061 | Teaching a Weaker Classifier: Named Entity Recognition on Upper Case Text | http://www.aclweb.org/anthology/P/P02/P02-1061.pdf | author:Hai Leong Chieu; Hwee Tou Ng
+P02-1062 | Ranking Algorithms for Named Entity Extraction: Boosting and the VotedPerceptron | http://www.aclweb.org/anthology/P/P02/P02-1062.pdf | author:Michael Collins
+P02-1063 | Revision Learning and its Application to Part-of-Speech Tagging | http://www.aclweb.org/anthology/P/P02/P02-1063.pdf | author:Tetsuji Nakagawa; Taku Kudo; Yuji Matsumoto
+P02-1064 | An Empirical Study of Active Learning with Support Vector Machines forJapanese Word Segmentation | http://www.aclweb.org/anthology/P/P02/P02-1064.pdf | author:Manabu Sassano
+P02-1065 | Memory-Based Learning of Morphology with Stochastic Transducers | http://www.aclweb.org/anthology/P/P02/P02-1065.pdf | author:Alexander Clark

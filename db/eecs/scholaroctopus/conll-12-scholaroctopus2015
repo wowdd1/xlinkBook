@@ -1,0 +1,155 @@
+D12-1001 | Syntactic Transfer Using a Bilingual Lexicon | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1001.pdf | author:Greg Durrett; Adam Pauls; Dan Klein
+D12-1002 | Regularized Interlingual Projections: Evaluation on Multilingual Transliteration | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1002.pdf | author:Jagadeesh Jagarlamudi; Hal Daume III
+D12-1003 | Bilingual Lexicon Extraction from Comparable Corpora Using Label Propagation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1003.pdf | author:Akihiro Tamura; Taro Watanabe; Eiichiro Sumita
+D12-1004 | Lexical Differences in Autobiographical Narratives from Schizophrenic Patients and Healthy Controls | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1004.pdf | author:Kai Hong; Christian G. Kohler; Mary E. March; Amber A. Parker; Ani Nenkova
+D12-1005 | Streaming Analysis of Discourse Participants | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1005.pdf | author:Benjamin Van Durme
+D12-1006 | Detecting Subgroups in Online Discussions by Modeling Positive and Negative Relations among Participants | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1006.pdf | author:Ahmed Hassan; Amjad Abu-Jbara; Dragomir Radev
+D12-1007 | Generative Goal-Driven User Simulation for Dialog Management | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1007.pdf | author:Aciel Eshky; Ben Allison; Mark Steedman
+D12-1008 | Optimising Incremental Dialogue Decisions Using Information Density for Interactive Systems | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1008.pdf | author:Nina Dethlefs; Helen Hastie; Verena Rieser; Oliver Lemon
+D12-1009 | Mixed Membership Markov Models for Unsupervised Conversation Modeling | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1009.pdf | author:Michael J. Paul
+D12-1010 | An Entity-Topic Model for Entity Linking | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1010.pdf | author:Xianpei Han; Le Sun
+D12-1011 | Linking Named Entities to Any Database | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1011.pdf | author:Avirup Sil; Ernest Cronin; Penghai Nie; Yinfei Yang; Ana-Maria Popescu; Alexander Yates
+D12-1012 | Towards Efficient Named-Entity Rule Induction for Customizability | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1012.pdf | author:Ajay Nagesh; Ganesh Ramakrishnan; Laura Chiticariu; Rajasekar Krishnamurthy; Ankush Dharkar; Pushpak Bhattacharyya
+D12-1013 | Active Learning for Imbalanced Sentiment Classification | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1013.pdf | author:Shoushan Li; Shengfeng Ju; Guodong Zhou; Xiaojun Li
+D12-1014 | A Weakly Supervised Model for Sentence-Level Semantic Orientation Analysis with Multiple Experts | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1014.pdf | author:Lizhen Qu; Rainer Gemulla; Gerhard Weikum
+D12-1015 | Collocation Polarity Disambiguation Using Web-based Pseudo Contexts | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1015.pdf | author:Yanyan Zhao; Bing Qin; Ting Liu
+D12-1016 | Aligning Predicates across Monolingual Comparable Texts using Graph-based Clustering | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1016.pdf | author:Michael Roth; Anette Frank
+D12-1017 | Local and Global Context for Supervised and Unsupervised Metonymy Resolution | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1017.pdf | author:Vivi Nastase; Alex Judea; Katja Markert; Michael Strube
+D12-1018 | Learning Verb Inference Rules from Linguistically-Motivated Evidence | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1018.pdf | author:Hila Weisman; Jonathan Berant; Idan Szpektor; Ido Dagan
+D12-1019 | Spectral Dependency Parsing with Latent Variables | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1019.pdf | author:Paramveer Dhillon; Jordan Rodu; Michael Collins; Dean Foster; Lyle Ungar
+D12-1020 | A Phrase-Discovering Topic Model Using Hierarchical Pitman-Yor Processes | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1020.pdf | author:Robert Lindsey; William Headden; Michael Stipicevic
+D12-1021 | A Bayesian Model for Learning SCFGs with Discontiguous Rules | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1021.pdf | author:Abby Levenberg; Chris Dyer; Phil Blunsom
+D12-1022 | Multiple Aspect Summarization Using Integer Linear Programming | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1022.pdf | author:Kristian Woodsend; Mirella Lapata
+D12-1023 | Minimal Dependency Length in Realization Ranking | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1023.pdf | author:Michael White; Rajakrishnan Rajkumar
+D12-1024 | Framework of Automatic Text Summarization Using Reinforcement Learning | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1024.pdf | author:Seonggi Ryang; Takeshi Abekawa
+D12-1025 | Large Scale Decipherment for Out-of-Domain Machine Translation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1025.pdf | author:Qing Dou; Kevin Knight
+D12-1026 | N-gram-based Tense Models for Statistical Machine Translation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1026.pdf | author:Zhengxian Gong; Min Zhang; Chew Lim Tan; Guodong Zhou
+D12-1027 | Source Language Adaptation for Resource-Poor Machine Translation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1027.pdf | author:Pidong Wang; Preslav Nakov; Hwee Tou Ng
+D12-1028 | Exploiting Reducibility in Unsupervised Dependency Parsing | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1028.pdf | author:David MareÄek; ZdenÄk Å½abokrtskÃ½
+D12-1029 | Improving Transition-Based Dependency Parsing with Buffer Transitions | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1029.pdf | author:Daniel FernÃ¡ndez-GonzÃ¡lez; Carlos GÃ³mez-RodrÃ¬guez
+D12-1030 | Generalized Higher-Order Dependency Parsing with Cube Pruning | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1030.pdf | author:Hao Zhang; Ryan McDonald
+D12-1031 | Universal Grapheme-to-Phoneme Prediction Over Latin Alphabets | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1031.pdf | author:Young-Bum Kim; Benjamin Snyder
+D12-1032 | Name Phylogeny: A Generative Model of String Variation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1032.pdf | author:Nicholas Andrews; Jason Eisner; Mark Dredze
+D12-1033 | Syntactic Surprisal Affects Spoken Word Duration in Conversational Contexts | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1033.pdf | author:Vera Demberg; Asad Sayeed; Philip Gorinski; Nikolaos Engonopoulos
+D12-1034 | Why Question Answering using Sentiment Analysis and Word Classes | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1034.pdf | author:Jong-Hoon Oh; Kentaro Torisawa; Chikara Hashimoto; Takuya Kawada; Stijn De Saeger; Jun'ichi Kazama; Yiou Wang
+D12-1035 | Natural Language Questions for the Web of Data | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1035.pdf | author:Mohamed Yahya; Klaus Berberich; Shady Elbassuoni; Maya Ramanath; Volker Tresp; Gerhard Weikum
+D12-1036 | Answering Opinion Questions on Products by Exploiting Hierarchical Organization of Consumer Reviews | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1036.pdf | author:Jianxing Yu; Zheng-Jun Zha; Tat-Seng Chua
+D12-1037 | Locally Training the Log-Linear Model for SMT | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1037.pdf | author:Lemao Liu; Hailong Cao; Taro Watanabe; Tiejun Zhao; Mo Yu; Conghui Zhu
+D12-1038 | Iterative Annotation Transformation with Predict-Self Reestimation for Chinese Word Segmentation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1038.pdf | author:Wenbin Jiang; Fandong Meng; Qun Liu; Yajuan LÃ¼
+D12-1039 | Automatically Constructing a Normalisation Dictionary for Microblogs | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1039.pdf | author:Bo Han; Paul Cook; Timothy Baldwin
+D12-1040 | Unsupervised PCFG Induction for Grounded Language Learning with Highly Ambiguous Supervision | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1040.pdf | author:Joohyun Kim; Raymond Mooney
+D12-1041 | Forced Derivation Tree based Model Training to Statistical Machine Translation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1041.pdf | author:Nan Duan; Mu Li; Ming Zhou
+D12-1042 | Multi-instance Multi-label Learning for Relation Extraction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1042.pdf | author:Mihai Surdeanu; Julie Tibshirani; Ramesh Nallapati; Christopher D. Manning
+D12-1043 | An ``AI readability'' Formula for French as a Foreign Language | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1043.pdf | author:Thomas FranÃ§ois; CÃ©drick Fairon
+D12-1044 | Dynamic Programming for Higher Order Parsing of Gap-Minding Trees | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1044.pdf | author:Emily Pitler; Sampath Kannan; Mitchell Marcus
+D12-1045 | Joint Entity and Event Coreference Resolution across Documents | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1045.pdf | author:Heeyoung Lee; Marta Recasens; Angel Chang; Mihai Surdeanu; Dan Jurafsky
+D12-1046 | Joint Chinese Word Segmentation, POS Tagging and Parsing | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1046.pdf | author:Xian Qian; Yang Liu
+D12-1047 | Translation Model Based Cross-Lingual Language Model Adaptation: from Word Models to Phrase Models | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1047.pdf | author:Shixiang Lu; Wei Wei; Xiaoyin Fu; Bo Xu
+D12-1048 | Open Language Learning for Information Extraction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1048.pdf | author:Mausam; Michael Schmitz; Stephen Soderland; Robert Bart; Oren Etzioni
+D12-1049 | Modelling Sequential Text with an Adaptive Topic Model | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1049.pdf | author:Lan Du; Wray Buntine; Huidong Jin
+D12-1050 | A Comparison of Vector-based Representations for Semantic Composition | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1050.pdf | author:William Blacoe; Mirella Lapata
+D12-1051 | Exploiting Chunk-level Features to Improve Phrase Chunking | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1051.pdf | author:Junsheng Zhou; Weiguang Qu; Fen Zhang
+D12-1052 | A Beam-Search Decoder for Grammatical Error Correction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1052.pdf | author:Daniel Dahlmeier; Hwee Tou Ng
+D12-1053 | A Statistical Relational Learning Approach to Identifying Evidence Based Medicine Categories | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1053.pdf | author:Mathias Verbeke; Vincent Van Asch; Roser Morante; Paolo Frasconi; Walter Daelemans; Luc De Raedt
+D12-1054 | Lyrics, Music, and Emotions | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1054.pdf | author:Rada Mihalcea; Carlo Strapparava
+D12-1055 | Assessment of ESL Learners' Syntactic Competence Based on Similarity Measures | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1055.pdf | author:Su-Youn Yoon; Suma Bhat
+D12-1056 | A Unified Approach to Transliteration-based Text Input with Online Spelling Correction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1056.pdf | author:Hisami Suzuki; Jianfeng Gao
+D12-1057 | Excitatory or Inhibitory: A New Semantic Orientation Extracts Contradiction and Causality from the Web | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1057.pdf | author:Chikara Hashimoto; Kentaro Torisawa; Stijn De Saeger; Jong-Hoon Oh; Jun'ichi Kazama
+D12-1058 | Enlarging Paraphrase Collections through Generalization and Instantiation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1058.pdf | author:Atsushi Fujita; Pierre Isabelle; Roland Kuhn
+D12-1059 | Concurrent Acquisition of Word Meaning and Lexical Categories | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1059.pdf | author:Afra Alishahi; Grzegorz Chrupala
+D12-1060 | Do Neighbours Help? An Exploration of Graph-based Algorithms for Cross-domain Sentiment Classification | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1060.pdf | author:Natalia Ponomareva; Mike Thelwall
+D12-1061 | Learning Lexicon Models from Search Logs for Query Expansion | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1061.pdf | author:Jianfeng Gao; Shasha Xie; Xiaodong He; Alnur Ali
+D12-1062 | Joint Inference for Event Timeline Construction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1062.pdf | author:Quang Do; Wei Lu; Dan Roth
+D12-1063 | Three Dependency-and-Boundary Models for Grammar Induction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1063.pdf | author:Valentin I. Spitkovsky; Hiyan Alshawi; Daniel Jurafsky
+D12-1064 | Exploring Adaptor Grammars for Native Language Identification | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1064.pdf | author:Sze-Meng Jojo Wong; Mark Dras; Mark Johnson
+D12-1065 | Discovering Diverse and Salient Threads in Document Collections | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1065.pdf | author:Jennifer Gillenwater; Alex Kulesza; Ben Taskar
+D12-1066 | Generalizing Sub-sentential Paraphrase Acquisition across Original Signal Type of Text Pairs | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1066.pdf | author:AurÃ©lien Max; Houda Bouamor; Anne Vilnat
+D12-1067 | Parse, Price and Cutâ-Delayed Column and Row Generation for Graph Based Parsers | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1067.pdf | author:Sebastian Riedel; David Smith; Andrew McCallum
+D12-1068 | Domain Adaptation for Coreference Resolution: An Adaptive Ensemble Approach | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1068.pdf | author:Jian Bo Yang; Qi Mao; Qiao Liang Xiang; Ivor Wai-Hung Tsang; Kian Ming Adam Chai; Hai Leong Chieu
+D12-1069 | Weakly Supervised Training of Semantic Parsers | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1069.pdf | author:Jayant Krishnamurthy; Tom Mitchell
+D12-1070 | Cross-Lingual Language Modeling with Syntactic Reordering for Low-Resource Speech Recognition | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1070.pdf | author:Ping Xu; Pascale Fung
+D12-1071 | Resolving Complex Cases of Definite Pronouns: The Winograd Schema Challenge | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1071.pdf | author:Altaf Rahman; Vincent Ng
+D12-1072 | A Sequence Labelling Approach to Quote Attribution | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1072.pdf | author:Timothy O'Keefe; Silvia Pareti; James R. Curran; Irena Koprinska; Matthew Honnibal
+D12-1073 | SSHLDA: A Semi-Supervised Hierarchical Topic Model | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1073.pdf | author:Xian-Ling Mao; Zhao-Yan Ming; Tat-Seng Chua; Si Li; Hongfei Yan; Xiaoming Li
+D12-1074 | Improving NLP through Marginalization of Hidden Syntactic Structure | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1074.pdf | author:Jason Naradowsky; Sebastian Riedel; David Smith
+D12-1075 | Type-Supervised Hidden Markov Models for Part-of-Speech Tagging with Incomplete Tag Dictionaries | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1075.pdf | author:Dan Garrette; Jason Baldridge
+D12-1076 | Explore Person Specific Evidence in Web Person Name Disambiguation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1076.pdf | author:Liwei Chen; Yansong Feng; Lei Zou; Dongyan Zhao
+D12-1077 | Inducing a Discriminative Parser to Optimize Machine Translation Reordering | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1077.pdf | author:Graham Neubig; Taro Watanabe; Shinsuke Mori
+D12-1078 | Re-training Monolingual Parser Bilingually for Syntactic SMT | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1078.pdf | author:Shujie Liu; Chi-Ho Li; Mu Li; Ming Zhou
+D12-1079 | Transforming Trees to Improve Syntactic Convergence | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1079.pdf | author:David Burkett; Dan Klein
+D12-1080 | Learning Constraints for Consistent Timeline Extraction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1080.pdf | author:David McClosky; Christopher D. Manning
+D12-1081 | Identifying Constant and Unique Relations by using Time-Series Text | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1081.pdf | author:Yohei Takaku; Nobuhiro Kaji; Naoki Yoshinaga; Masashi Toyoda
+D12-1082 | No Noun Phrase Left Behind: Detecting and Typing Unlinkable Entities | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1082.pdf | author:Thomas Lin; Mausam; Oren Etzioni
+D12-1083 | A Novel Discriminative Framework for Sentence-Level Discourse Analysis | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1083.pdf | author:Shafiq Joty; Giuseppe Carenini; Raymond Ng
+D12-1084 | Using Discourse Information for Paraphrase Extraction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1084.pdf | author:Michaela Regneri; Rui Wang
+D12-1085 | Generating Non-Projective Word Order in Statistical Linearization | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1085.pdf | author:Bernd Bohnet; Anders BjÃ¶rkelund; Jonas Kuhn; Wolfgang Seeker; Sina Zarriess
+D12-1086 | Learning Syntactic Categories Using Paradigmatic Representations of Word Context | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1086.pdf | author:Mehmet Ali Yatbaz; Enis Sert; Deniz Yuret
+D12-1087 | Exploring Topic Coherence over Many Models and Many Topics | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1087.pdf | author:Keith Stevens; Philip Kegelmeyer; David Andrzejewski; David Buttler
+D12-1088 | Entropy-based Pruning for Phrase-based Machine Translation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1088.pdf | author:Wang Ling; JoÃ£o GraÃ§a; Isabel Trancoso; Alan Black
+D12-1089 | A Systematic Comparison of Phrase Table Pruning Techniques | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1089.pdf | author:Richard Zens; Daisy Stanton; Peng Xu
+D12-1090 | Probabilistic Finite State Machines for Regression-based MT Evaluation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1090.pdf | author:Mengqiu Wang; Christopher D. Manning
+D12-1091 | An Empirical Investigation of Statistical Significance in NLP | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1091.pdf | author:Taylor Berg-Kirkpatrick; David Burkett; Dan Klein
+D12-1092 | Employing Compositional Semantics and Discourse Consistency in Chinese Event Extraction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1092.pdf | author:Peifeng Li; Guodong Zhou; Qiaoming Zhu; Libin Hou
+D12-1093 | Reading The Web with Learned Syntactic-Semantic Inference Rules | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1093.pdf | author:Ni Lao; Amarnag Subramanya; Fernando Pereira; William W. Cohen
+D12-1094 | Ensemble Semantics for Large-scale Unsupervised Relation Extraction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1094.pdf | author:Bonan Min; Shuming Shi; Ralph Grishman; Chin-Yew Lin
+D12-1095 | Forest Reranking through Subtree Ranking | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1095.pdf | author:Richard Farkas; Helmut Schmid
+D12-1096 | Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1096.pdf | author:Jonathan K. Kummerfeld; David Hall; James R. Curran; Dan Klein
+D12-1097 | Extending Machine Translation Evaluation Metrics with Lexical Cohesion to Document Level | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1097.pdf | author:Billy T. M. Wong; Chunyu Kit
+D12-1098 | Fast Large-Scale Approximate Graph Construction for NLP | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1098.pdf | author:Amit Goyal; Hal Daume III; Raul Guerra
+D12-1099 | Building a Lightweight Semantic Model for Unsupervised Information Extraction on Short Listings | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1099.pdf | author:Doo Soon Kim; Kunal Verma; Peter Yeh
+D12-1100 | Sketch Algorithms for Estimating Point Queries in NLP | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1100.pdf | author:Amit Goyal; Hal Daume III; Graham Cormode
+D12-1101 | Monte Carlo MCMC: Efficient Inference by Approximate Sampling | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1101.pdf | author:Sameer Singh; Michael Wick; Andrew McCallum
+D12-1102 | On Amortizing Inference Cost for Structured Prediction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1102.pdf | author:Vivek Srikumar; Gourab Kundu; Dan Roth
+D12-1103 | Exact Sampling and Decoding in High-Order Hidden Markov Models | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1103.pdf | author:Simon Carter; Marc Dymetman; Guillaume Bouchard
+D12-1104 | PATTY: A Taxonomy of Relational Patterns with Semantic Types | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1104.pdf | author:Ndapandula Nakashole; Gerhard Weikum; Fabian Suchanek
+D12-1105 | Training Factored PCFGs with Expectation Propagation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1105.pdf | author:David Hall; Dan Klein
+D12-1106 | A Coherence Model Based on Syntactic Patterns | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1106.pdf | author:Annie Louis; Ani Nenkova
+D12-1107 | Language Model Rest Costs and Space-Efficient Storage | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1107.pdf | author:Kenneth Heafield; Philipp Koehn; Alon Lavie
+D12-1108 | Document-Wide Decoding for Phrase-Based Statistical Machine Translation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1108.pdf | author:Christian Hardmeier; Joakim Nivre; JÃ¶rg Tiedemann
+D12-1109 | Left-to-Right Tree-to-String Decoding with Prediction | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1109.pdf | author:Yang Feng; Yang Liu; Qun Liu; Trevor Cohn
+D12-1110 | Semantic Compositionality through Recursive Matrix-Vector Spaces | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1110.pdf | author:Richard Socher; Brody Huval; Christopher D. Manning; Andrew Y. Ng
+D12-1111 | Polarity Inducing Latent Semantic Analysis | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1111.pdf | author:Wen-tau Yih; Geoffrey Zweig; John Platt
+D12-1112 | First Order vs. Higher Order Modification in Distributional Semantics | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1112.pdf | author:Gemma Boleda; Eva Maria Vecchi; Miquel Cornudella; Louise McNally
+D12-1113 | Learning-based Multi-Sieve Co-reference Resolution with Knowledge | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1113.pdf | author:Lev Ratinov; Dan Roth
+D12-1114 | Joint Learning for Coreference Resolution with Markov Logic | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1114.pdf | author:Yang Song; Jing Jiang; Wayne Xin Zhao; Sujian Li; Houfeng Wang
+D12-1115 | Resolving "This-issue" Anaphora | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1115.pdf | author:Varada Kolhatkar; Graeme Hirst
+D12-1116 | Entity based Q&A Retrieval | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1116.pdf | author:Amit Singh
+D12-1117 | Constructing Task-Specific Taxonomies for Document Collection Browsing | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1117.pdf | author:Hui Yang
+D12-1118 | Besting the Quiz Master: Crowdsourcing Incremental Classification Games | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1118.pdf | author:Jordan Boyd-Graber; Brianna Satinoff; He He; Hal Daume III
+D12-1119 | Multi-Domain Learning: When Do Domains Matter? | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1119.pdf | author:Mahesh Joshi; Mark Dredze; William W. Cohen; Carolyn Rose
+D12-1120 | Biased Representation Learning for Domain Adaptation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1120.pdf | author:Fei Huang; Alexander Yates
+D12-1121 | Unambiguity Regularization for Unsupervised Learning of Probabilistic Grammars | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1121.pdf | author:Kewei Tu; Vasant Honavar
+D12-1122 | Extracting Opinion Expressions with semi-Markov Conditional Random Fields | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1122.pdf | author:Bishan Yang; Claire Cardie
+D12-1123 | Opinion Target Extraction Using Word-Based Translation Model | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1123.pdf | author:Kang Liu; Liheng Xu; Jun Zhao
+D12-1124 | Word Salad: Relating Food Prices and Descriptions | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1124.pdf | author:Victor Chahuneau; Kevin Gimpel; Bryan R. Routledge; Lily Scherlis; Noah A. Smith
+D12-1125 | Learning to Map into a Universal POS Tagset | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1125.pdf | author:Yuan Zhang; Roi Reichart; Regina Barzilay; Amir Globerson
+D12-1126 | Part-of-Speech Tagging for Chinese-English Mixed Texts with Dynamic Features | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1126.pdf | author:Jiayi Zhao; Xipeng Qiu; Shu Zhang; Feng Ji; Xuanjing Huang
+D12-1127 | Wiki-ly Supervised Part-of-Speech Tagging | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1127.pdf | author:Shen Li; JoÃ£o GraÃ§a; Ben Taskar
+D12-1128 | Joining Forces Pays Off: Multilingual Joint Word Sense Disambiguation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1128.pdf | author:Roberto Navigli; Simone Paolo Ponzetto
+D12-1129 | A New Minimally-Supervised Framework for Domain Word Sense Disambiguation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1129.pdf | author:Stefano Faralli; Roberto Navigli
+D12-1130 | Grounded Models of Semantic Representation | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1130.pdf | author:Carina Silberer; Mirella Lapata
+D12-1131 | Improved Parsing and POS Tagging Using Inter-Sentence Consistency Constraints | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1131.pdf | author:Alexander Rush; Roi Reichart; Michael Collins; Amir Globerson
+D12-1132 | Unified Dependency Parsing of Chinese Morphological and Syntactic Structures | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1132.pdf | author:Zhongguo Li; Guodong Zhou
+D12-1133 | A Transition-Based System for Joint Part-of-Speech Tagging and Labeled Non-Projective Dependency Parsing | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1133.pdf | author:Bernd Bohnet; Joakim Nivre
+D12-1134 | Identifying Event-related Bursts via Social Media Activities | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1134.pdf | author:Xin Zhao; Baihan Shu; Jing Jiang; Yang Song; Hongfei Yan; Xiaoming Li
+D12-1135 | User Demographics and Language in an Implicit Social Network | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1135.pdf | author:Katja Filippova
+D12-1136 | Revisiting the Predictability of Language: Response Completion in Social Media | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1136.pdf | author:Bo Pang; Sujith Ravi
+D12-1137 | Supervised Text-based Geolocation Using Language Models on an Adaptive Grid | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1137.pdf | author:Stephen Roller; Michael Speriosu; Sarat Rallapalli; Benjamin Wing; Jason Baldridge
+D12-1138 | A Discriminative Model for Query Spelling Correction with Latent Structural SVM | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1138.pdf | author:Huizhong Duan; Yanen Li; ChengXiang Zhai; Dan Roth
+D12-1139 | Characterizing Stylistic Elements in Syntactic Structure | http://www.aclweb.org/anthology/K/K12/../../D/D12/D12-1139.pdf | author:Song Feng; Ritwik Banerjee; Yejin Choi
+W12-4501 | CoNLL-2012 Shared Task: Modeling Multilingual Unrestricted Coreference in OntoNotes | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4501.pdf | author:Sameer Pradhan; Alessandro Moschitti; Nianwen Xue; Olga Uryupina; Yuchen Zhang
+W12-4502 | Latent Structure Perceptron with Feature Induction for Unrestricted Coreference Resolution | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4502.pdf | author:Eraldo Fernandes; CÃ¬cero dos Santos; Ruy MilidiÃº
+W12-4503 | Data-driven Multilingual Coreference Resolution using Resolver Stacking | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4503.pdf | author:Anders BjÃ¶rkelund; RichÃ¡rd Farkas
+W12-4504 | Combining the Best of Two Worlds: A Hybrid Approach to Multilingual Coreference Resolution | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4504.pdf | author:Chen Chen; Vincent Ng
+W12-4505 | Using Syntactic Dependencies to Solve Coreferences | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4505.pdf | author:Marcus Stamborg; Dennis Medved; Peter Exner; Pierre Nugues
+W12-4506 | ICT: System Description for CoNLL-2012 | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4506.pdf | author:Hao Xiong; Qun Liu
+W12-4507 | A Mixed Deterministic Model for Coreference Resolution | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4507.pdf | author:Bo Yuan; Qingcai Chen; Yang Xiang; Xiaolong Wang; Liping Ge; Zengjian Liu; Meng Liao; Xianbo Si
+W12-4508 | Simple Maximum Entropy Models for Multilingual Coreference Resolution | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4508.pdf | author:Xinxin Li; Xuan Wang; Xingwei Liao
+W12-4509 | UBIU for Multilingual Coreference Resolution in OntoNotes | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4509.pdf | author:Desislava Zhekova; Sandra KÃ¼bler; Joshua Bonner; Marwa Ragheb; Yu-Yin Hsu
+W12-4510 | Chinese Coreference Resolution via Ordered Filtering | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4510.pdf | author:Xiaotian Zhang; Chunyang Wu; Hai Zhao
+W12-4511 | A Multigraph Model for Coreference Resolution | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4511.pdf | author:Sebastian Martschat; Jie Cai; Samuel Broscheit; Ãva MÃºjdricza-Maydt; Michael Strube
+W12-4512 | Incorporating Rule-based and Statistic-based Techniques for Coreference Resolution | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4512.pdf | author:Ruifeng Xu; Jun Xu; Jie Liu; Chengxiang Liu; Chengtian Zou; Lin Gui; Yanzhen Zheng; Peng Qu
+W12-4513 | Illinois-Coref: The UI System in the CoNLL-2012 Shared Task | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4513.pdf | author:Kai-Wei Chang; Rajhans Samdani; Alla Rozovskaya; Mark Sammons; Dan Roth
+W12-4514 | System paper for CoNLL-2012 shared task: Hybrid Rule-based Algorithm for Coreference Resolution. | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4514.pdf | author:Heming Shou; Hai Zhao
+W12-4515 | BART goes multilingual: The UniTN / Essex submission to the CoNLL-2012 Shared Task | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4515.pdf | author:Olga Uryupina; Alessandro Moschitti; Massimo Poesio
+W12-4516 | Learning to Model Multilingual Unrestricted Coreference in OntoNotes | http://www.aclweb.org/anthology/K/K12/../../W/W12/W12-4516.pdf | author:Baoli Li

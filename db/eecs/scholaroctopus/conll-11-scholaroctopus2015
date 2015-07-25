@@ -1,0 +1,51 @@
+W11-0301 | Modeling Syntactic Context Improves Morphological Segmentation | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0301.pdf | author:Yoong Keok Lee; Aria Haghighi; Regina Barzilay
+W11-0302 | The Effect of Automatic Tokenization, Vocalization, Stemming, and {POS} Tagging on {A}rabic Dependency Parsing | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0302.pdf | author:Emad Mohamed
+W11-0303 | Punctuation: Making a Point in Unsupervised Dependency Parsing | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0303.pdf | author:Valentin I. Spitkovsky; Hiyan Alshawi; Daniel Jurafsky
+W11-0304 | Modeling Infant Word Segmentation | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0304.pdf | author:Constantine Lignos
+W11-0305 | Word Segmentation as General Chunking | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0305.pdf | author:Daniel Hewlett; Paul Cohen
+W11-0306 | (Invited talk) Computational Linguistics for Studying Language in People: Principles, Applications and Research Problems | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0306.pdf | author:Bruce Hayes
+W11-0307 | Search-based Structured Prediction applied to Biomedical Event Extraction | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0307.pdf | author:Andreas Vlachos; Mark Craven
+W11-0308 | Using Sequence Kernels to identify Opinion Entities in Urdu | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0308.pdf | author:Smruthi Mukund; Debanjan Ghosh; Rohini Srihari
+W11-0309 | Subword and Spatiotemporal Models for Identifying Actionable Information in {H}aitian {K}reyol | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0309.pdf | author:Robert Munro
+W11-0310 | Gender Attribution: Tracing Stylometric Evidence Beyond Topic and Genre | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0310.pdf | author:Ruchita Sarawgi; Kailash Gajulapalli; Yejin Choi
+W11-0311 | Improving the Impact of Subjectivity Word Sense Disambiguation on Contextual Opinion Analysis | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0311.pdf | author:Cem Akkaya; Janyce Wiebe; Alexander Conrad; Rada Mihalcea
+W11-0312 | Effects of Meaning-Preserving Corrections on Language Learning | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0312.pdf | author:Dana Angluin; Leonor Becerra-Bonache
+W11-0313 | Assessing Benefit from Feature Feedback in Active Learning for Text Classification | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0313.pdf | author:Shilpa Arora; Eric Nyberg
+W11-0314 | ULISSE: an Unsupervised Algorithm for Detecting Reliable Dependency Parses | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0314.pdf | author:Felice Dell'Orletta; Giulia Venturi; Simonetta Montemagni
+W11-0315 | Language Models as Representations for Weakly Supervised NLP Tasks | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0315.pdf | author:Fei Huang; Alexander Yates; Arun Ahuja; Doug Downey
+W11-0316 | Automatic Keyphrase Extraction by Bridging Vocabulary Gap | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0316.pdf | author:Zhiyuan Liu; Xinxiong Chen; Yabin Zheng; Maosong Sun
+W11-0317 | Using Second-order Vectors in a Knowledge-based Method for Acronym Disambiguation | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0317.pdf | author:Bridget T. McInnes; Ted Pedersen; Ying Liu; Serguei V. Pakhomov; Genevieve B. Melton
+W11-0318 | Using the Mutual k-Nearest Neighbor Graphs for Semi-supervised Classification on Natural Language Data | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0318.pdf | author:Kohei Ozaki; Masashi Shimbo; Mamoru Komachi; Yuji Matsumoto
+W11-0319 | Automatically Building Training Examples for Entity Extraction | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0319.pdf | author:Marco Pennacchiotti; Patrick Pantel
+W11-0320 | Probabilistic Word Alignment under the $L_0$-norm | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0320.pdf | author:Thomas Schoenemann
+W11-0321 | Authorship Attribution with Latent Dirichlet Allocation | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0321.pdf | author:Yanir Seroussi; Ingrid Zukerman; Fabian Bohnert
+W11-0322 | Evaluating a Semantic Network Automatically Constructed from Lexical Co-occurrence on a Word Sense Disambiguation Task | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0322.pdf | author:Sean Szumlanski; Fernando Gomez
+W11-0323 | Filling the Gap: Semi-Supervised Learning for Opinion Detection Across Domains | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0323.pdf | author:Ning Yu; Sandra KÃ¼bler
+W11-0324 | A Normalized-Cut Alignment Model for Mapping Hierarchical Semantic Structures onto Spoken Documents | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0324.pdf | author:Xiaodan Zhu
+W11-0325 | (Invited talk) Bayesian Tools for Natural Language Learning | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0325.pdf | author:Yee Whye Teh
+W11-0326 | Composing Simple Image Descriptions using Web-scale N-grams | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0326.pdf | author:Siming Li; Girish Kulkarni; Tamara L. Berg; Alexander C. Berg; Yejin Choi
+W11-0327 | Adapting Text instead of the Model: An Open Domain Approach | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0327.pdf | author:Gourab Kundu; Dan Roth
+W11-0328 | Learning with Lookahead: Can History-Based Models Rival Globally Optimized Models? | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0328.pdf | author:Yoshimasa Tsuruoka; Yusuke Miyao; Jun'ichi Kazama
+W11-0329 | Learning Discriminative Projections for Text Similarity Measures | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-0329.pdf | author:Wen-tau Yih; Kristina Toutanova; John C. Platt; Christopher Meek
+W11-1901 | CoNLL-2011 Shared Task: Modeling Unrestricted Coreference in OntoNotes | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1901.pdf | author:Sameer Pradhan; Lance Ramshaw; Mitchell Marcus; Martha Palmer; Ralph Weischedel; Nianwen Xue
+W11-1902 | Stanfordâs Multi-Pass Sieve Coreference Resolution System at the CoNLL-2011 Shared Task | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1902.pdf | author:Heeyoung Lee; Yves Peirsman; Angel Chang; Nathanael Chambers; Mihai Surdeanu; Dan Jurafsky
+W11-1903 | RelaxCor Participation in CoNLL Shared Task on Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1903.pdf | author:Emili Sapena; LluÃ¬s PadrÃ³; Jordi Turmo
+W11-1904 | Inference Protocols for Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1904.pdf | author:Kai-Wei Chang; Rajhans Samdani; Alla Rozovskaya; Nick Rizzolo; Mark Sammons; Dan Roth
+W11-1905 | Exploring Lexicalized Features for Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1905.pdf | author:Anders BjÃ¶rkelund; Pierre Nugues
+W11-1906 | Rule and Tree Ensembles for Unrestricted Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1906.pdf | author:Cicero Nogueira dos Santos; Davi Lopes Carvalho
+W11-1907 | Unrestricted Coreference Resolution via Global Hypergraph Partitioning | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1907.pdf | author:Jie Cai; Eva Mujdricza-Maydt; Michael Strube
+W11-1908 | Multi-metric optimization for coreference: The UniTN / IITP / Essex submission to the 2011 CONLL Shared Task | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1908.pdf | author:Olga Uryupina; Sriparna Saha; Asif Ekbal; Massimo Poesio
+W11-1909 | Combining Syntactic and Semantic Features by SVM for Unrestricted Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1909.pdf | author:Huiwei Zhou; Yao Li; Degen Huang; Yan Zhang; Chunlong Wu; Yuansheng Yang
+W11-1910 | Supervised Coreference Resolution with SUCRE | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1910.pdf | author:Hamidreza Kobdani; Hinrich Schuetze
+W11-1911 | ETS: An Error Tolerable System for Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1911.pdf | author:Hao Xiong; Linfeng Song; Fandong Meng; Yang Liu; Qun Liu; Yajuan Lv
+W11-1912 | An Incremental Model for Coreference Resolution with Restrictive Antecedent Accessibility | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1912.pdf | author:Manfred Klenner; Don Tuggener
+W11-1913 | Narrative Schema as World Knowledge for Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1913.pdf | author:Joseph Irwin; Mamoru Komachi; Yuji Matsumoto
+W11-1914 | Hybrid Approach for Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1914.pdf | author:Sobha Lalitha Devi; Pattabhi Rao; Vijay Sundar Ram R; M. C S; A. A
+W11-1915 | Poly-co: a multilayer perceptron approach for coreference detection | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1915.pdf | author:Eric Charton; Michel Gagnon
+W11-1916 | Mention Detection: Heuristics for the OntoNotes annotations | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1916.pdf | author:Jonathan K Kummerfeld; Mohit Bansal; David Burkett; Dan Klein
+W11-1917 | Coreference Resolution with Loose Transitivity Constraints | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1917.pdf | author:Xinxin Li; Xuan Wang; Shuhan Qi
+W11-1918 | UBIU: A Robust System for Resolving Unrestricted Coreference | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1918.pdf | author:Desislava Zhekova; Sandra KÃ¼bler
+W11-1919 | A Machine Learning-Based Coreference Detection System for OntoNotes | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1919.pdf | author:Yaqin Yang; Nianwen Xue; Peter Anick
+W11-1920 | Reconciling OntoNotes: Unrestricted Coreference Resolution in OntoNotes with Reconcile. | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1920.pdf | author:Veselin Stoyanov; Uday Babbar; Pracheer Gupta; Claire Cardie
+W11-1921 | Coreference Resolution System using Maximum Entropy Classifier | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1921.pdf | author:Weipeng Chen; Muyu Zhang; Bing Qin
+W11-1922 | Link Type Based Pre-Cluster Pair Model for Coreference Resolution | http://www.aclweb.org/anthology/K/K11/../../W/W11/W11-1922.pdf | author:Yang Song; Houfeng Wang; Jing Jiang

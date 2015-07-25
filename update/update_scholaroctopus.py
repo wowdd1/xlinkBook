@@ -173,8 +173,64 @@ class ScholarOctopusSpider(Spider):
                         paper_list.append(paper_obj)
         self.doWork(paper_list)
 
+    def getNlpPaper(self):
+        r = requests.get('http://www.aclweb.org/anthology/')
+        soup = BeautifulSoup(r.text)
+        th_list = []
+        td_list = []
+        for th in soup.find_all('th'):
+            th_list.append(th.text.replace(":", ""))
+        for td in soup.find_all('td'):
+            td_list.append(td.prettify())
+
+        print len(th_list)
+        print len(td_list)
+        for i in range(0, len(th_list)):
+            if th_list[i] == "In Progress":
+                continue
+            print th_list[i]
+            soup2 = BeautifulSoup(td_list[i])
+                    
+            for a in soup2.find_all('a'):
+                if a['href'][1 : 2] == "/":
+                    file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + th_list[i] + "-" + a.text.strip(), self.school.lower())
+                    file_lines = self.countFileLineNum(file_name)
+                    f = self.open_db(file_name + ".tmp")
+                    self.count = 0
+
+                    print a.text.strip() + " " + a['href']
+                    base_url = 'http://www.aclweb.org/anthology/' + a['href']
+                    r = requests.get(base_url)
+                    soup3 = BeautifulSoup(r.text)
+                    if 'CoNLL' == th_list[i]:
+                        for li in soup3.find_all('li'):
+                            if li.a != None and li.i != None and li.b != None:
+                                print li.a.text + ' ' + li.i.text + ' ' + li.b.text
+                                self.writeNlpLine(f, li.a.text, li.i.text.replace('\n', ''), li.b.text.replace('\n', ''), base_url + li.a['href'])
+                                self.count = self.count + 1
+                    else:
+                        for p in soup3.find_all('p'):
+                            if p.a != None and p.i != None and p.b != None:
+                                print p.a.text + ' ' + p.i.text + ' ' + p.b.text
+                                self.writeNlpLine(f, p.a.text, p.i.text.replace('\n', ''), p.b.text.replace('\n', ''), base_url + p.a['href'])
+                                self.count = self.count + 1
+
+                    self.close_db(f)
+                    if file_lines != self.count and self.count > 0:
+                        self.do_upgrade_db(file_name)
+                        print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+                    else:
+                        self.cancel_upgrade(file_name)
+                        print "no need upgrade\n"
+
+            #print '------'
+
+    def writeNlpLine(self, f, paper_id, title, author, url):
+        self.write_db(f, paper_id, title, url, "author:" + author)
+
 start = ScholarOctopusSpider()
 start.doWork()
 start.getCvPaper()
 start.getNipsPaper()
 start.getIcmlPaper()
+start.getNlpPaper()

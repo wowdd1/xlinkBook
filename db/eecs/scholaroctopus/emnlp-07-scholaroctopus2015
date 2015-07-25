@@ -1,0 +1,131 @@
+D07-1001 | Modelling Compression with Discourse Constraints | http://www.aclweb.org/anthology/D/D07/D07-1001.pdf | author:James Clarke; Mirella Lapata
+D07-1002 | Using Semantic Roles to Improve Question Answering | http://www.aclweb.org/anthology/D/D07/D07-1002.pdf | author:Dan Shen; Mirella Lapata
+D07-1003 | What is the Jeopardy Model? A Quasi-Synchronous Grammar for QA | http://www.aclweb.org/anthology/D/D07/D07-1003.pdf | author:Mengqiu Wang; Noah A. Smith; Teruko Mitamura
+D07-1004 | Learning Unsupervised SVM Classifier for Answer Selection in Web Question Answering | http://www.aclweb.org/anthology/D/D07/D07-1004.pdf | author:Youzheng Wu; Ruiqiang Zhang; Xinhui Hu; Hideki Kashioka
+D07-1005 | Improving Word Alignment with Bridge Languages | http://www.aclweb.org/anthology/D/D07/D07-1005.pdf | author:Shankar Kumar; Franz J. Och; Wolfgang Macherey
+D07-1006 | Getting the Structure Right for Word Alignment: LEAF | http://www.aclweb.org/anthology/D/D07/D07-1006.pdf | author:Alexander Fraser; Daniel Marcu
+D07-1007 | Improving Statistical Machine Translation Using Word Sense Disambiguation | http://www.aclweb.org/anthology/D/D07/D07-1007.pdf | author:Marine Carpuat; Dekai Wu
+D07-1008 | Large Margin Synchronous Generation and its Application to Sentence Compression | http://www.aclweb.org/anthology/D/D07/D07-1008.pdf | author:Trevor Cohn; Mirella Lapata
+D07-1009 | Incremental Text Structuring with Online Hierarchical Ranking | http://www.aclweb.org/anthology/D/D07/D07-1009.pdf | author:Erdong Chen; Benjamin Snyder; Regina Barzilay
+D07-1010 | Automatically Identifying the Arguments of Discourse Connectives | http://www.aclweb.org/anthology/D/D07/D07-1010.pdf | author:Ben Wellner; James Pustejovsky
+D07-1011 | Incremental Generation of Plural Descriptions: Similarity and Partitioning | http://www.aclweb.org/anthology/D/D07/D07-1011.pdf | author:Albert Gatt; Kees van Deemter
+D07-1012 | A Comparative Evaluation of Deep and Shallow Approaches to the Automatic Detection of Common Grammatical Errors | http://www.aclweb.org/anthology/D/D07/D07-1012.pdf | author:Joachim Wagner; Jennifer Foster; Josef van Genabith
+D07-1013 | Characterizing the Errors of Data-Driven Dependency Parsing Models | http://www.aclweb.org/anthology/D/D07/D07-1013.pdf | author:Ryan McDonald; Joakim Nivre
+D07-1014 | Probabilistic Models of Nonprojective Dependency Trees | http://www.aclweb.org/anthology/D/D07/D07-1014.pdf | author:David A. Smith; Noah A. Smith
+D07-1015 | Structured Prediction Models via the Matrix-Tree Theorem | http://www.aclweb.org/anthology/D/D07/D07-1015.pdf | author:Terry Koo; Amir Globerson; Xavier Carreras; Michael Collins
+D07-1016 | Using Foreign Inclusion Detection to Improve Parsing Performance | http://www.aclweb.org/anthology/D/D07/D07-1016.pdf | author:Beatrice Alex; Amit Dubey; Frank Keller
+D07-1017 | LEDIR: An Unsupervised Algorithm for Learning Directionality of Inference Rules | http://www.aclweb.org/anthology/D/D07/D07-1017.pdf | author:Rahul Bhagat; Patrick Pantel; Eduard Hovy
+D07-1018 | Modelling Polysemy in Adjective Classes by Multi-Label Classification | http://www.aclweb.org/anthology/D/D07/D07-1018.pdf | author:Gemma Boleda; Sabine Schulte im Walde; Toni Badia
+D07-1019 | Improving Query Spelling Correction Using Web Search Results | http://www.aclweb.org/anthology/D/D07/D07-1019.pdf | author:Qing Chen; Mu Li; Ming Zhou
+D07-1020 | Towards Robust Unsupervised Personal Name Disambiguation | http://www.aclweb.org/anthology/D/D07/D07-1020.pdf | author:Ying Chen; James Martin
+D07-1021 | Compressing Trigram Language Models With Golomb Coding | http://www.aclweb.org/anthology/D/D07/D07-1021.pdf | author:Kenneth Church; Ted Hart; Jianfeng Gao
+D07-1022 | Joint Morphological and Syntactic Disambiguation | http://www.aclweb.org/anthology/D/D07/D07-1022.pdf | author:Shay B. Cohen; Noah A. Smith
+D07-1023 | Unsupervised Part-of-Speech Acquisition for Resource-Scarce Languages | http://www.aclweb.org/anthology/D/D07/D07-1023.pdf | author:Sajib Dasgupta; Vincent Ng
+D07-1024 | Semi-Supervised Classification for Extracting Protein Interaction Sentences using Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1024.pdf | author:Gunes Erkan; Arzucan Ozgur; Dragomir R. Radev
+D07-1025 | A Sequence Alignment Model Based on the Averaged Perceptron | http://www.aclweb.org/anthology/D/D07/D07-1025.pdf | author:Dayne Freitag; Shahram Khadivi
+D07-1026 | Instance Based Lexical Entailment for Ontology Population | http://www.aclweb.org/anthology/D/D07/D07-1026.pdf | author:Claudio Giuliano; Alfio Gliozzo
+D07-1027 | Recovering Non-Local Dependencies for Chinese | http://www.aclweb.org/anthology/D/D07/D07-1027.pdf | author:Yuqing Guo; Haifeng Wang; Josef van Genabith
+D07-1028 | Exploiting Multi-Word Units in History-Based Probabilistic Generation | http://www.aclweb.org/anthology/D/D07/D07-1028.pdf | author:Deirdre Hogan; Conor Cafferkey; Aoife Cahill; Josef van Genabith
+D07-1029 | Hierarchical System Combination for Machine Translation | http://www.aclweb.org/anthology/D/D07/D07-1029.pdf | author:Fei Huang; Kishore Papineni
+D07-1030 | Using RBMT Systems to Produce Bilingual Corpus for SMT | http://www.aclweb.org/anthology/D/D07/D07-1030.pdf | author:Xiaoguang Hu; Haifeng Wang; Hua Wu
+D07-1031 | Why Doesn’t EM Find Good HMM POS-Taggers? | http://www.aclweb.org/anthology/D/D07/D07-1031.pdf | author:Mark Johnson
+D07-1032 | Probabilistic Coordination Disambiguation in a Fully-Lexicalized Japanese Parser | http://www.aclweb.org/anthology/D/D07/D07-1032.pdf | author:Daisuke Kawahara; Sadao Kurohashi
+D07-1033 | A New Perceptron Algorithm for Sequence Labeling with Non-Local Features | http://www.aclweb.org/anthology/D/D07/D07-1033.pdf | author:Jun’ichi Kazama; Kentaro Torisawa
+D07-1034 | Extending a Thesaurus in the Pan-Chinese Context | http://www.aclweb.org/anthology/D/D07/D07-1034.pdf | author:Oi Yee Kwong; Benjamin K. Tsou
+D07-1035 | Low-Quality Product Review Detection in Opinion Summarization | http://www.aclweb.org/anthology/D/D07/D07-1035.pdf | author:Jingjing Liu; Yunbo Cao; Chin-Yew Lin; Yalou Huang; Ming Zhou
+D07-1036 | Improving Statistical Machine Translation Performance by Training Data Selection and Optimization | http://www.aclweb.org/anthology/D/D07/D07-1036.pdf | author:Yajuan Lu; Jin Huang; Qun Liu
+D07-1037 | Topic Segmentation with Hybrid Document Indexing | http://www.aclweb.org/anthology/D/D07/D07-1037.pdf | author:Irina Matveeva; Gina-Anne Levow
+D07-1038 | Syntactic Re-Alignment Models for Machine Translation | http://www.aclweb.org/anthology/D/D07/D07-1038.pdf | author:Jonathan May; Kevin Knight
+D07-1039 | Detecting Compositionality of Verb-Object Combinations using Selectional Preferences | http://www.aclweb.org/anthology/D/D07/D07-1039.pdf | author:Diana McCarthy; Sriram Venkatapathy; Aravind Joshi
+D07-1040 | Explorations in Automatic Book Summarization | http://www.aclweb.org/anthology/D/D07/D07-1040.pdf | author:Rada Mihalcea; Hakan Ceylan
+D07-1041 | Part-of-Speech Tagging for Middle English through Alignment and Projection of Parallel Diachronic Texts | http://www.aclweb.org/anthology/D/D07/D07-1041.pdf | author:Taesun Moon; Jason Baldridge
+D07-1042 | Flexible, Corpus-Based Modelling of Human Plausibility Judgements | http://www.aclweb.org/anthology/D/D07/D07-1042.pdf | author:Sebastian Padó; Ulrike Padó; Katrin Erk
+D07-1043 | V-Measure: A Conditional Entropy-Based External Cluster Evaluation Measure | http://www.aclweb.org/anthology/D/D07/D07-1043.pdf | author:Andrew Rosenberg; Julia Hirschberg
+D07-1044 | Bayesian Document Generative Model with Explicit Multiple Topics | http://www.aclweb.org/anthology/D/D07/D07-1044.pdf | author:Issei Sato; Hiroshi Nakagawa
+D07-1045 | Smooth Bilingual $N$-Gram Translation | http://www.aclweb.org/anthology/D/D07/D07-1045.pdf | author:Holger Schwenk; Marta R. Costa-jussa; Jose A. R. Fonollosa
+D07-1046 | Morphological Disambiguation of Hebrew: A Case Study in Classifier Combination | http://www.aclweb.org/anthology/D/D07/D07-1046.pdf | author:Danny Shacham; Shuly Wintner
+D07-1047 | Enhancing Single-Document Summarization by Combining RankNet and Third-Party Sources | http://www.aclweb.org/anthology/D/D07/D07-1047.pdf | author:Krysta Svore; Lucy Vanderwende; Christopher Burges
+D07-1048 | Automatic Identification of Important Segments and Expressions for Mining of Business-Oriented Conversations at Contact Centers | http://www.aclweb.org/anthology/D/D07/D07-1048.pdf | author:Hironori Takeuchi; L Venkata Subramaniam; Tetsuya Nasukawa; Shourya Roy
+D07-1049 | Smoothed Bloom Filter Language Models: Tera-Scale LMs on the Cheap | http://www.aclweb.org/anthology/D/D07/D07-1049.pdf | author:David Talbot; Miles Osborne
+D07-1050 | Word Sense Disambiguation Incorporating Lexical and Structural Semantic Information | http://www.aclweb.org/anthology/D/D07/D07-1050.pdf | author:Takaaki Tanaka; Francis Bond; Timothy Baldwin; Sanae Fujita; Chikara Hashimoto
+D07-1051 | An Approach to Text Corpus Construction which Cuts Annotation Costs and Maintains Reusability of Annotated Data | http://www.aclweb.org/anthology/D/D07/D07-1051.pdf | author:Katrin Tomanek; Joachim Wermter; Udo Hahn
+D07-1052 | Antecedent Selection Techniques for High-Recall Coreference Resolution | http://www.aclweb.org/anthology/D/D07/D07-1052.pdf | author:Yannick Versley
+D07-1053 | Methods to Integrate a Language Model with Semantic Information for a Word Prediction Component | http://www.aclweb.org/anthology/D/D07/D07-1053.pdf | author:Tonio Wandmacher; Jean-Yves Antoine
+D07-1054 | Bilingual Cluster Based Models for Statistical Machine Translation | http://www.aclweb.org/anthology/D/D07/D07-1054.pdf | author:Hirofumi Yamamoto; Eiichiro Sumita
+D07-1055 | A Systematic Comparison of Training Criteria for Statistical Machine Translation | http://www.aclweb.org/anthology/D/D07/D07-1055.pdf | author:Richard Zens; Sasa Hasan; Hermann Ney
+D07-1056 | Phrase Reordering Model Integrating Syntactic Knowledge for SMT | http://www.aclweb.org/anthology/D/D07/D07-1056.pdf | author:Dongdong Zhang; Mu Li; Chi-Ho Li; Ming Zhou
+D07-1057 | Identification and Resolution of Chinese Zero Pronouns: A Machine Learning Approach | http://www.aclweb.org/anthology/D/D07/D07-1057.pdf | author:Shanheng Zhao; Hwee Tou Ng
+D07-1058 | Parsimonious Data-Oriented Parsing | http://www.aclweb.org/anthology/D/D07/D07-1058.pdf | author:Willem Zuidema
+D07-1059 | Generating Lexical Analogies Using Dependency Relations | http://www.aclweb.org/anthology/D/D07/D07-1059.pdf | author:Andy Chiu; Pascal Poupart; Chrysanne DiMarco
+D07-1060 | Cross-Lingual Distributional Profiles of Concepts for Measuring Semantic Distance | http://www.aclweb.org/anthology/D/D07/D07-1060.pdf | author:Saif Mohammad; Iryna Gurevych; Graeme Hirst; Torsten Zesch
+D07-1061 | Lexical Semantic Relatedness with Random Graph Walks | http://www.aclweb.org/anthology/D/D07/D07-1061.pdf | author:Thad Hughes; Daniel Ramage
+D07-1062 | Experimental Evaluation of LTAG-Based Features for Semantic Role Labeling | http://www.aclweb.org/anthology/D/D07/D07-1062.pdf | author:Yudong Liu; Anoop Sarkar
+D07-1063 | Japanese Dependency Analysis Using the Ancestor-Descendant Relation | http://www.aclweb.org/anthology/D/D07/D07-1063.pdf | author:Akihiro Tamura; Hiroya Takamura; Manabu Okumura
+D07-1064 | A Discriminative Learning Model for Coordinate Conjunctions | http://www.aclweb.org/anthology/D/D07/D07-1064.pdf | author:Masashi Shimbo; Kazuo Hara
+D07-1065 | Recovery of Empty Nodes in Parse Structures | http://www.aclweb.org/anthology/D/D07/D07-1065.pdf | author:Denis Filimonov; Mary Harper
+D07-1066 | Treebank Annotation Schemes and Parser Evaluation for German | http://www.aclweb.org/anthology/D/D07/D07-1066.pdf | author:Ines Rehbein; Josef van Genabith
+D07-1067 | Semi-Markov Models for Sequence Segmentation | http://www.aclweb.org/anthology/D/D07/D07-1067.pdf | author:Qinfeng Shi; Yasemin Altun; Alex Smola; S.V.N. Vishwanathan
+D07-1068 | A Graph-Based Approach to Named Entity Categorization in Wikipedia Using Conditional Random Fields | http://www.aclweb.org/anthology/D/D07/D07-1068.pdf | author:Yotaro Watanabe; Masayuki Asahara; Yuji Matsumoto
+D07-1069 | MavenRank: Identifying Influential Members of the US Senate Using Lexical Centrality | http://www.aclweb.org/anthology/D/D07/D07-1069.pdf | author:Anthony Fader; Dragomir R. Radev; Michael H. Crespin; Burt L. Monroe; Kevin M. Quinn; Michael Colaresi
+D07-1070 | Bootstrapping Feature-Rich Dependency Parsers with Entropic Priors | http://www.aclweb.org/anthology/D/D07/D07-1070.pdf | author:David A. Smith; Jason Eisner
+D07-1071 | Online Learning of Relaxed CCG Grammars for Parsing to Logical Form | http://www.aclweb.org/anthology/D/D07/D07-1071.pdf | author:Luke Zettlemoyer; Michael Collins
+D07-1072 | The Infinite PCFG Using Hierarchical Dirichlet Processes | http://www.aclweb.org/anthology/D/D07/D07-1072.pdf | author:Percy Liang; Slav Petrov; Michael Jordan; Dan Klein
+D07-1073 | Exploiting Wikipedia as External Knowledge for Named Entity Recognition | http://www.aclweb.org/anthology/D/D07/D07-1073.pdf | author:Jun’ichi Kazama; Kentaro Torisawa
+D07-1074 | Large-Scale Named Entity Disambiguation Based on Wikipedia Data | http://www.aclweb.org/anthology/D/D07/D07-1074.pdf | author:Silviu Cucerzan
+D07-1075 | Effective Information Extraction with Semantic Affinity Patterns and Relevant Regions | http://www.aclweb.org/anthology/D/D07/D07-1075.pdf | author:Siddharth Patwardhan; Ellen Riloff
+D07-1076 | Tree Kernel-Based Relation Extraction with Context-Sensitive Structured Parse Tree Information | http://www.aclweb.org/anthology/D/D07/D07-1076.pdf | author:GuoDong Zhou; Min Zhang; DongHong Ji; QiaoMing Zhu
+D07-1077 | Chinese Syntactic Reordering for Statistical Machine Translation | http://www.aclweb.org/anthology/D/D07/D07-1077.pdf | author:Chao Wang; Michael Collins; Philipp Koehn
+D07-1078 | Binarizing Syntax Trees to Improve Syntax-Based Machine Translation Accuracy | http://www.aclweb.org/anthology/D/D07/D07-1078.pdf | author:Wei Wang; Kevin Knight; Daniel Marcu
+D07-1079 | What Can Syntax-Based MT Learn from Phrase-Based MT? | http://www.aclweb.org/anthology/D/D07/D07-1079.pdf | author:Steve DeNeefe; Kevin Knight; Wei Wang; Daniel Marcu
+D07-1080 | Online Large-Margin Training for Statistical Machine Translation | http://www.aclweb.org/anthology/D/D07/D07-1080.pdf | author:Taro Watanabe; Jun Suzuki; Hajime Tsukada; Hideki Isozaki
+D07-1081 | Scalable Term Selection for Text Categorization | http://www.aclweb.org/anthology/D/D07/D07-1081.pdf | author:Jingyang Li; Maosong Sun
+D07-1082 | Active Learning for Word Sense Disambiguation with Methods for Addressing the Class Imbalance Problem | http://www.aclweb.org/anthology/D/D07/D07-1082.pdf | author:Jingbo Zhu; Eduard Hovy
+D07-1083 | Semi-Supervised Structured Output Learning Based on a Hybrid Generative and Discriminative Approach | http://www.aclweb.org/anthology/D/D07/D07-1083.pdf | author:Jun Suzuki; Akinori Fujino; Hideki Isozaki
+D07-1084 | Finding Good Sequential Model Structures using Output Transformations | http://www.aclweb.org/anthology/D/D07/D07-1084.pdf | author:Edward Loper
+D07-1085 | A Statistical Language Modeling Approach to Lattice-Based Spoken Document Retrieval | http://www.aclweb.org/anthology/D/D07/D07-1085.pdf | author:Tee Kiah Chia; Haizhou Li; Hwee Tou Ng
+D07-1086 | Learning Noun Phrase Query Segmentation | http://www.aclweb.org/anthology/D/D07/D07-1086.pdf | author:Shane Bergsma; Qin Iris Wang
+D07-1087 | Bootstrapping Information Extraction from Field Books | http://www.aclweb.org/anthology/D/D07/D07-1087.pdf | author:Sander Canisius; Caroline Sporleder
+D07-1088 | Extracting Data Records from Unstructured Biomedical Full Text | http://www.aclweb.org/anthology/D/D07/D07-1088.pdf | author:Donghui Feng; Gully Burns; Eduard Hovy
+D07-1089 | Multiple Alignment of Citation Sentences with Conditional Random Fields and Posterior Decoding | http://www.aclweb.org/anthology/D/D07/D07-1089.pdf | author:Ariel Schwartz; Anna Divoli; Marti Hearst
+D07-1090 | Large Language Models in Machine Translation | http://www.aclweb.org/anthology/D/D07/D07-1090.pdf | author:Thorsten Brants; Ashok C. Popat; Peng Xu; Franz J. Och; Jeffrey Dean
+D07-1091 | Factored Translation Models | http://www.aclweb.org/anthology/D/D07/D07-1091.pdf | author:Philipp Koehn; Hieu Hoang
+D07-1092 | Translating Unknown Words by Analogical Learning | http://www.aclweb.org/anthology/D/D07/D07-1092.pdf | author:Philippe Langlais; Alexandre Patry
+D07-1093 | A Probabilistic Approach to Diachronic Phonology | http://www.aclweb.org/anthology/D/D07/D07-1093.pdf | author:Alexandre Bouchard; Percy Liang; Thomas Griffiths; Dan Klein
+D07-1094 | Learning Structured Models for Phone Recognition | http://www.aclweb.org/anthology/D/D07/D07-1094.pdf | author:Slav Petrov; Adam Pauls; Dan Klein
+D07-1095 | Inducing Search Keys for Name Filtering | http://www.aclweb.org/anthology/D/D07/D07-1095.pdf | author:L. Karl Branting
+D07-1096 | The CoNLL 2007 Shared Task on Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1096.pdf | author:Joakim Nivre; Johan Hall; Sandra Kübler; Ryan McDonald; Jens Nilsson; Sebastian Riedel; Deniz Yuret
+D07-1097 | Single Malt or Blended? A Study in Multilingual Parser Optimization | http://www.aclweb.org/anthology/D/D07/D07-1097.pdf | author:Johan Hall; Jens Nilsson; Joakim Nivre; Gülsen Eryigit; Beáta Megyesi; Mattias Nilsson; Markus Saers
+D07-1098 | Probabilistic Parsing Action Models for Multi-Lingual Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1098.pdf | author:Xiangyu Duan; Jun Zhao; Bo Xu
+D07-1099 | Fast and Robust Multilingual Dependency Parsing with a Generative Latent Variable Model | http://www.aclweb.org/anthology/D/D07/D07-1099.pdf | author:Ivan Titov; James Henderson
+D07-1100 | Multilingual Dependency Parsing Using Global Features | http://www.aclweb.org/anthology/D/D07/D07-1100.pdf | author:Tetsuji Nakagawa
+D07-1101 | Experiments with a Higher-Order Projective Dependency Parser | http://www.aclweb.org/anthology/D/D07/D07-1101.pdf | author:Xavier Carreras
+D07-1102 | Log-Linear Models of Non-Projective Trees, $k$-best MST Parsing and Tree-Ranking | http://www.aclweb.org/anthology/D/D07/D07-1102.pdf | author:Keith Hall; Jiri Havelka; David A. Smith
+D07-1103 | Improving Translation Quality by Discarding Most of the Phrasetable | http://www.aclweb.org/anthology/D/D07/D07-1103.pdf | author:Howard Johnson; Joel Martin; George Foster; Roland Kuhn
+D07-1104 | Hierarchical Phrase-Based Translation with Suffix Arrays | http://www.aclweb.org/anthology/D/D07/D07-1104.pdf | author:Adam Lopez
+D07-1105 | An Empirical Study on Computing Consensus Translations from Multiple Machine Translation Systems | http://www.aclweb.org/anthology/D/D07/D07-1105.pdf | author:Wolfgang Macherey; Franz J. Och
+D07-1106 | Learning to Find English to Chinese Transliterations on the Web | http://www.aclweb.org/anthology/D/D07/D07-1106.pdf | author:Jian-Cheng Wu; Jason S. Chang
+D07-1107 | Learning to Merge Word Senses | http://www.aclweb.org/anthology/D/D07/D07-1107.pdf | author:Rion Snow; Sushant Prakash; Daniel Jurafsky; Andrew Y. Ng
+D07-1108 | Improving Word Sense Disambiguation Using Topic Features | http://www.aclweb.org/anthology/D/D07/D07-1108.pdf | author:Junfu Cai; Wee Sun Lee; Yee Whye Teh
+D07-1109 | A Topic Model for Word Sense Disambiguation | http://www.aclweb.org/anthology/D/D07/D07-1109.pdf | author:Jordan Boyd-Graber; David Blei; Xiaojin Zhu
+D07-1110 | Validation and Evaluation of Automatically Acquired Multiword Expressions for Grammar Engineering | http://www.aclweb.org/anthology/D/D07/D07-1110.pdf | author:Aline Villavicencio; Valia Kordoni; Yi Zhang; Marco Idiart; Carlos Ramisch
+D07-1111 | Dependency Parsing and Domain Adaptation with LR Models and Parser Ensembles | http://www.aclweb.org/anthology/D/D07/D07-1111.pdf | author:Kenji Sagae; Jun’ichi Tsujii
+D07-1112 | Frustratingly Hard Domain Adaptation for Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1112.pdf | author:Mark Dredze; John Blitzer; Partha Pratim Talukdar; Kuzman Ganchev; João Graca; Fernando Pereira
+D07-1113 | Crystal: Analyzing Predictive Opinions on the Web | http://www.aclweb.org/anthology/D/D07/D07-1113.pdf | author:Soo-Min Kim; Eduard Hovy
+D07-1114 | Extracting Aspect-Evaluation and Aspect-Of Relations in Opinion Mining | http://www.aclweb.org/anthology/D/D07/D07-1114.pdf | author:Nozomi Kobayashi; Kentaro Inui; Yuji Matsumoto
+D07-1115 | Building Lexicon for Sentiment Analysis from Massive Collection of HTML Documents | http://www.aclweb.org/anthology/D/D07/D07-1115.pdf | author:Nobuhiro Kaji; Masaru Kitsuregawa
+D07-1116 | Determining Case in Arabic: Learning Complex Linguistic Behavior Requires Complex Linguistic Features | http://www.aclweb.org/anthology/D/D07/D07-1116.pdf | author:Nizar Habash; Ryan Gabbard; Owen Rambow; Seth Kulick; Mitch Marcus
+D07-1117 | Mandarin Part-of-Speech Tagging and Discriminative Reranking | http://www.aclweb.org/anthology/D/D07/D07-1117.pdf | author:Zhongqiang Huang; Mary Harper; Wen Wang
+D07-1118 | Building Domain-Specific Taggers without Annotated (Domain) Data | http://www.aclweb.org/anthology/D/D07/D07-1118.pdf | author:John Miller; Manabu Torii; K. Vijay-Shanker
+D07-1119 | Multilingual Dependency Parsing and Domain Adaptation using DeSR | http://www.aclweb.org/anthology/D/D07/D07-1119.pdf | author:Giuseppe Attardi; Felice Dell’Orletta; Maria Simi; Atanas Chanev; Massimiliano Ciaramita
+D07-1120 | Hybrid Ways to Improve Domain Independence in an ML Dependency Parser | http://www.aclweb.org/anthology/D/D07/D07-1120.pdf | author:Eckhard Bick
+D07-1121 | A Constraint Satisfaction Approach to Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1121.pdf | author:Sander Canisius; Erik Tjong Kim Sang
+D07-1122 | A Two-Stage Parser for Multilingual Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1122.pdf | author:Wenliang Chen; Yujie Zhang; Hitoshi Isahara
+D07-1123 | Incremental Dependency Parsing Using Online Learning | http://www.aclweb.org/anthology/D/D07/D07-1123.pdf | author:Richard Johansson; Pierre Nugues
+D07-1124 | Online Learning for Deterministic Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1124.pdf | author:Prashanth Reddy Mannem
+D07-1125 | Covington Variations | http://www.aclweb.org/anthology/D/D07/D07-1125.pdf | author:Svetoslav Marinov
+D07-1126 | A Multilingual Dependency Analysis System Using Online Passive-Aggressive Learning | http://www.aclweb.org/anthology/D/D07/D07-1126.pdf | author:Le-Minh Nguyen; Akira Shimazu; Phuong-Thai Nguyen; Xuan-Hieu Phan
+D07-1127 | Global Learning of Labeled Dependency Trees | http://www.aclweb.org/anthology/D/D07/D07-1127.pdf | author:Michael Schiehlen; Kristina Spranger
+D07-1128 | Pro3Gres Parser in the CoNLL Domain Adaptation Shared Task | http://www.aclweb.org/anthology/D/D07/D07-1128.pdf | author:Gerold Schneider; Kaarel Kaljurand; Fabio Rinaldi; Tobias Kuhn
+D07-1129 | Structural Correspondence Learning for Dependency Parsing | http://www.aclweb.org/anthology/D/D07/D07-1129.pdf | author:Nobuyuki Shimizu; Hiroshi Nakagawa
+D07-1130 | Adapting the RASP System for the CoNLL07 Domain-Adaptation Task | http://www.aclweb.org/anthology/D/D07/D07-1130.pdf | author:Rebecca Watson; Ted Briscoe
+D07-1131 | Multilingual Deterministic Dependency Parsing Framework using Modified Finite Newton Method Support Vector Machines | http://www.aclweb.org/anthology/D/D07/D07-1131.pdf | author:Yu-Chieh Wu; Jie-Chi Yang; Yue-Shi Lee

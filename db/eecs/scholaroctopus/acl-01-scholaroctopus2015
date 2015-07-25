@@ -1,0 +1,70 @@
+P01-1001 | Invited Talk: Interpreting the Human Genome Sequence, Using Stochastic Grammars | http://www.aclweb.org/anthology/P/P01/P01-1001.pdf | author:Richard Durbin
+P01-1002 | Invited Talk: Processing Broadcast Audio for Information Access | http://www.aclweb.org/anthology/P/P01/P01-1002.pdf | author:Jean-Luc Gauvain; Lori Lamel; Gilles Adda; Martine Adda-Decker; Claude Barras; Langzhou Chen; Yannick de Kercadio
+P01-1003 | Improvement of a Whole Sentence Maximum Entropy Language Model Using Grammatical Features | http://www.aclweb.org/anthology/P/P01/P01-1003.pdf | author:Fredy A. Amaya; José Miguel Benedí
+P01-1004 | Low-cost, High-performance Translation Retrieval: Dumber is Better | http://www.aclweb.org/anthology/P/P01/P01-1004.pdf | author:Timothy Baldwin
+P01-1005 | Scaling to Very Very Large Corpora for Natural Language Disambiguation | http://www.aclweb.org/anthology/P/P01/P01-1005.pdf | author:Michele Banko; Eric Brill
+P01-1006 | Evaluation Tool for Rule-based Anaphora Resolution Methods | http://www.aclweb.org/anthology/P/P01/P01-1006.pdf | author:Catalina Barbu; Ruslan Mitkov
+P01-1007 | Guided Parsing of Range Concatenation Languages | http://www.aclweb.org/anthology/P/P01/P01-1007.pdf | author:François Barthélemy; Pierre Boullier; Philippe Deschamp; Éric Villemonte de la Clergerie
+P01-1008 | Extracting Paraphrases from a Parallel Corpus | http://www.aclweb.org/anthology/P/P01/P01-1008.pdf | author:Regina Barzilay; Kathleen R. McKeown
+P01-1009 | Alternative Phrases and Natural Language Information Retrieval | http://www.aclweb.org/anthology/P/P01/P01-1009.pdf | author:Gann Bierner
+P01-1010 | What is the Minimal Set of Fragments that Achieves Maximal Parse Accuracy? | http://www.aclweb.org/anthology/P/P01/P01-1010.pdf | author:Rens Bod
+P01-1011 | Underspecified Beta Reduction | http://www.aclweb.org/anthology/P/P01/P01-1011.pdf | author:Manuel Bodirsky; Katrin Erk; Alexander Koller; Joachim Niehren
+P01-1012 | Detecting Problematic Turns in Human-Machine Interactions: Rule-induction Versus Memory-based Learning Approaches | http://www.aclweb.org/anthology/P/P01/P01-1012.pdf | author:Antal van den Bosch; Emiel Krahmer; Marc Swerts
+P01-1013 | Chinese Text Segmentation With MBDP-1: Making the Most of Training Corpora | http://www.aclweb.org/anthology/P/P01/P01-1013.pdf | author:Michael R. Brent; Xiaopeng Tao
+P01-1014 | Towards Automatic Classification of Discourse Elements in Essays | http://www.aclweb.org/anthology/P/P01/P01-1014.pdf | author:Jill Burstein; Daniel Marcu; Slava Andreyev; Martin Chodorow
+P01-1015 | From RAGS to RICHES: Exploiting the Potential of a Flexible Generation Architecture | http://www.aclweb.org/anthology/P/P01/P01-1015.pdf | author:Lynne Cahill; John Carroll; Roger Evans; Daniel Paiva; Richard Power; Donia Scott; Kees van Deemter
+P01-1016 | Non-Verbal Cues for Discourse Structure | http://www.aclweb.org/anthology/P/P01/P01-1016.pdf | author:Justine Cassell; Yukiko Nakano; Timothy W. Bickmore; Candace L. Sidner; Charles Rich
+P01-1017 | Immediate-Head Parsing for Language Models | http://www.aclweb.org/anthology/P/P01/P01-1017.pdf | author:Eugene Charniak
+P01-1018 | Constraints on Strong Generative Power | http://www.aclweb.org/anthology/P/P01/P01-1018.pdf | author:David Chiang
+P01-1019 | An Algebra for Semantic Construction in Constraint-based Grammars | http://www.aclweb.org/anthology/P/P01/P01-1019.pdf | author:Ann Copestake; Alex Lascarides; Dan Flickinger
+P01-1020 | A Machine Learning Approach to the Automatic Evaluation of Machine Translation | http://www.aclweb.org/anthology/P/P01/P01-1020.pdf | author:Simon Corston-Oliver; Michael Gamon; Chris Brockett
+P01-1021 | Grammars for Local and Long Dependencies | http://www.aclweb.org/anthology/P/P01/P01-1021.pdf | author:Alexander Dikovsky
+P01-1022 | Practical Issues in Compiling Typed Unification Grammars for Speech Recognition | http://www.aclweb.org/anthology/P/P01/P01-1022.pdf | author:John Dowding; Beth Ann Hockey; Jean Mark Gawron; Christopher Culy
+P01-1023 | Empirically Estimating Order Constraints for Content Planning in Generation | http://www.aclweb.org/anthology/P/P01/P01-1023.pdf | author:Pablo A. Duboue; Kathleen R. McKeown
+P01-1024 | Topological Dependency Trees: A Constraint-Based Account of Linear Precedence | http://www.aclweb.org/anthology/P/P01/P01-1024.pdf | author:Denys Duchier; Ralph Debusmann
+P01-1025 | Methods for the Qualitative Evaluation of Lexical Association Measures | http://www.aclweb.org/anthology/P/P01/P01-1025.pdf | author:Stefan Evert; Brigitte Krenn
+P01-1026 | Organizing Encyclopedic Knowledge based on the Web and its Application to Question Answering | http://www.aclweb.org/anthology/P/P01/P01-1026.pdf | author:Atsushi Fujii; Tetsuya Ishikawa
+P01-1027 | Refined Lexicon Models for Statistical Machine Translation using a Maximum Entropy Approach | http://www.aclweb.org/anthology/P/P01/P01-1027.pdf | author:Ismael García-Varea; Franz J. Och; Hermann Ney; Francisco Casacuberta
+P01-1028 | Generating with a Grammar Based on Tree Descriptions: a Constraint-Based Approach | http://www.aclweb.org/anthology/P/P01/P01-1028.pdf | author:Claire Gardent; Stefan Thater
+P01-1029 | Word Order in German: A Formal Dependency Grammar Using a Topological Hierarchy | http://www.aclweb.org/anthology/P/P01/P01-1029.pdf | author:Kim Gerdes; Sylvain Kahane
+P01-1030 | Fast Decoding and Optimal Decoding for Machine Translation | http://www.aclweb.org/anthology/P/P01/P01-1030.pdf | author:Ulrich Germann; Michael Jahr; Kevin Knight; Daniel Marcu; Kenji Yamada
+P01-1031 | Resolving Ellipsis in Clarification | http://www.aclweb.org/anthology/P/P01/P01-1031.pdf | author:Jonathan Ginzburg; Robin Cooper
+P01-1032 | Mapping Lexical Entries in a Verbs Database to WordNet Senses | http://www.aclweb.org/anthology/P/P01/P01-1032.pdf | author:Rebecca Green; Lisa Pearl; Bonnie J. Dorr; Philip Resnik
+P01-1033 | Towards Abstract Categorial Grammars | http://www.aclweb.org/anthology/P/P01/P01-1033.pdf | author:Philippe de Groote
+P01-1034 | XML-Based Data Preparation for Robust Deep Parsing | http://www.aclweb.org/anthology/P/P01/P01-1034.pdf | author:Claire Grover; Alex Lascarides
+P01-1035 | Serial Combination of Rules and Statistics: A Case Study in Czech Tagging | http://www.aclweb.org/anthology/P/P01/P01-1035.pdf | author:Jan Hajic; Pavel Krbec; Pavel Kveton; Karel Oliva; Vladimir Petkevic
+P01-1036 | Topic-focus and Salience | http://www.aclweb.org/anthology/P/P01/P01-1036.pdf | author:Eva Hajicová; Petr Sgall
+P01-1037 | The Role of Lexico-Semantic Feedback in Open-Domain Textual Question-Answering | http://www.aclweb.org/anthology/P/P01/P01-1037.pdf | author:Sanda Harabagiu; Dan Moldovan; Marius Pasca; Rada Mihalcea; Mihai Surdeanu; Razvan Bunsecu; Roxana Girju; Vasile Rus; Paul Morarescu
+P01-1038 | Generation of VP Ellipsis: A Corpus-Based Approach | http://www.aclweb.org/anthology/P/P01/P01-1038.pdf | author:Daniel Hardt; Owen Rambow
+P01-1039 | Information Extraction from Voicemail | http://www.aclweb.org/anthology/P/P01/P01-1039.pdf | author:Jing Huang; Geoffrey Zweig; Mukund Padmanabhan
+P01-1040 | A Common Framework for Syntactic Annotation | http://www.aclweb.org/anthology/P/P01/P01-1040.pdf | author:Nancy Ide; Laurent Romary
+P01-1041 | Japanese Named Entity Recognition based on a Simple Rule Generator and Decision Tree Learning | http://www.aclweb.org/anthology/P/P01/P01-1041.pdf | author:Hideki Isozaki
+P01-1042 | Joint and Conditional Estimation of Tagging and Parsing Models | http://www.aclweb.org/anthology/P/P01/P01-1042.pdf | author:Mark Johnson
+P01-1043 | A Language Independent Shallow-Parser Compiler | http://www.aclweb.org/anthology/P/P01/P01-1043.pdf | author:Alexandra Kinyon
+P01-1044 | Parsing with Treebank Grammars: Empirical Bounds, Theoretical Models, and the Structure of the Penn Treebank | http://www.aclweb.org/anthology/P/P01/P01-1044.pdf | author:Dan Klein; Christopher D. Manning
+P01-1045 | From Chunks to Function-Argument Structure: A Similarity-Based Approach | http://www.aclweb.org/anthology/P/P01/P01-1045.pdf | author:Sandra Kübler; Erhard W. Hinrichs
+P01-1046 | Evaluating Smoothing Algorithms against Plausibility Judgements | http://www.aclweb.org/anthology/P/P01/P01-1046.pdf | author:Maria Lapata; Frank Keller; Scott McDonald
+P01-1047 | Extending Lambek Grammars: a Logical Account of Minimalist Grammars | http://www.aclweb.org/anthology/P/P01/P01-1047.pdf | author:Alain Lecomte; Christian Retoré
+P01-1048 | Predicting User Reactions to System Error | http://www.aclweb.org/anthology/P/P01/P01-1048.pdf | author:Diane Litman; Julia Hirschberg; Marc Swerts
+P01-1049 | Building Semantic Perceptron Net for Topic Spotting | http://www.aclweb.org/anthology/P/P01/P01-1049.pdf | author:Jimin Liu; Tat-Seng Chua
+P01-1050 | Towards a Unified Approach to Memory- and Statistical-Based Machine Translation | http://www.aclweb.org/anthology/P/P01/P01-1050.pdf | author:Daniel Marcu
+P01-1051 | Error Profiling: Toward a Model of English Acquisition for Deaf Learners | http://www.aclweb.org/anthology/P/P01/P01-1051.pdf | author:Lisa N. Michaud; Kathleen F. McCoy
+P01-1052 | Logic Form Transformation of WordNet and its Applicability to Question Answering | http://www.aclweb.org/anthology/P/P01/P01-1052.pdf | author:Dan Moldovan; Vasile Rus
+P01-1053 | Automatic Detection of Syllable Boundaries Combining the Advantages of Treebank and Bracketed Corpora Training | http://www.aclweb.org/anthology/P/P01/P01-1053.pdf | author:Karin Müller
+P01-1054 | Tractability and Structural Closures in Attribute Logic Type Signatures | http://www.aclweb.org/anthology/P/P01/P01-1054.pdf | author:Gerald Penn
+P01-1055 | Using Machine Learning to Maintain Rule-based Named-Entity Recognition and Classification Systems | http://www.aclweb.org/anthology/P/P01/P01-1055.pdf | author:Georgios Petasis; Frantz Vichot; Francis Wolinski; Georgios Paliouras; Vangelis Karkaletsis; Constantine D. Spyropoulos
+P01-1056 | Evaluating a Trainable Sentence Planner for a Spoken Dialogue System | http://www.aclweb.org/anthology/P/P01/P01-1056.pdf | author:Owen Rambow; Monica Rogati; Marilyn A. Walker
+P01-1057 | Using a Randomised Controlled Clinical Trial to Evaluate an NLG System | http://www.aclweb.org/anthology/P/P01/P01-1057.pdf | author:Ehud Reiter; Roma Robertson; A. Scott Lennox; Liesl Osman
+P01-1058 | Evaluating CETEMPúblico, a Free Resource for Portuguese | http://www.aclweb.org/anthology/P/P01/P01-1058.pdf | author:Diana Santos; Paulo Rocha
+P01-1059 | Producing Biographical Summaries: Combining Linguistic Knowledge with Corpus Statistics | http://www.aclweb.org/anthology/P/P01/P01-1059.pdf | author:Barry Schiffman; Inderjeet Mani; Kristian Concepcion
+P01-1060 | Parse Forest Computation of Expected Governors | http://www.aclweb.org/anthology/P/P01/P01-1060.pdf | author:Helmut Schmid; Mats Rooth
+P01-1061 | Computational Properties of Environment-based Disambiguation | http://www.aclweb.org/anthology/P/P01/P01-1061.pdf | author:William Schuler
+P01-1062 | Incremental Construction of Compact Acyclic NFAs | http://www.aclweb.org/anthology/P/P01/P01-1062.pdf | author:Kyriakos N. Sgarbas; Nikos D. Fakotakis; George K. Kokkinakis
+P01-1063 | A Bayesian Model For Morpheme and Paradigm Identification | http://www.aclweb.org/anthology/P/P01/P01-1063.pdf | author:Matthew G. Snover; Michael R. Brent
+P01-1064 | A Statistical Model for Domain-Independent Text Segmentation | http://www.aclweb.org/anthology/P/P01/P01-1064.pdf | author:Masao Utiyama; Hitoshi Isahara
+P01-1065 | A Generic Approach to Parallel Chart Parsing with an Application to LinGO | http://www.aclweb.org/anthology/P/P01/P01-1065.pdf | author:Marcel P. Van Lohuizen
+P01-1066 | Quantitative and Qualitative Evaluation of Darpa Communicator Spoken Dialogue Systems | http://www.aclweb.org/anthology/P/P01/P01-1066.pdf | author:Marilyn A. Walker; Rebecca Passonneau; Julie E. Boland
+P01-1067 | A Syntax-based Statistical Translation Model | http://www.aclweb.org/anthology/P/P01/P01-1067.pdf | author:Kenji Yamada; Kevin Knight
+P01-1068 | Multi-Class Composite N-gram Language Model for Spoken Language Processing Using Multiple Word Clusters | http://www.aclweb.org/anthology/P/P01/P01-1068.pdf | author:Hirofumi Yamamoto; Shuntaro Isogai; Yoshinori Sagisaka
+P01-1069 | Text Chunking using Regularized Winnow | http://www.aclweb.org/anthology/P/P01/P01-1069.pdf | author:Tong Zhang; Fred Damerau; David Johnson
+P01-1070 | Using Machine Learning Techniques to Interpret WH-questions | http://www.aclweb.org/anthology/P/P01/P01-1070.pdf | author:Ingrid Zukerman; Eric Horvitz

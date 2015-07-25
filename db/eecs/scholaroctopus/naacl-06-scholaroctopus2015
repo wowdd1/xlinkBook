@@ -1,0 +1,140 @@
+N06-1001 | Capitalizing Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-1001.pdf | author:Wei Wang; Kevin Knight; Daniel Marcu
+N06-1002 | Do we need phrases? Challenging the conventional wisdom in Statistical Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-1002.pdf | author:Chris Quirk; Arul Menezes
+N06-1003 | Improved Statistical Machine Translation Using Paraphrases | http://www.aclweb.org/anthology/N/N06/N06-1003.pdf | author:Chris Callison-Burch; Philipp Koehn; Miles Osborne
+N06-1004 | Segment Choice Models: Feature-Rich Models for Global Distortion in Statistical Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-1004.pdf | author:Roland Kuhn; Denis Yuen; Michel Simard; Patrick Paul; George Foster; Eric Joanis; Howard Johnson
+N06-1005 | Effectively Using Syntax for Recognizing False Entailment | http://www.aclweb.org/anthology/N/N06/N06-1005.pdf | author:Rion Snow; Lucy Vanderwende; Arul Menezes
+N06-1006 | Learning to recognize features of valid textual entailments | http://www.aclweb.org/anthology/N/N06/N06-1006.pdf | author:Bill MacCartney; Trond Grenager; Marie-Catherine de Marneffe; Daniel Cer; Christopher D. Manning
+N06-1007 | Acquisition of Verb Entailment from Text | http://www.aclweb.org/anthology/N/N06/N06-1007.pdf | author:Viktor Pekar
+N06-1008 | Acquiring Inference Rules with Temporal Constraints by Using Japanese Coordinated Sentences and Noun-Verb Co-occurrences | http://www.aclweb.org/anthology/N/N06/N06-1008.pdf | author:Kentaro Torisawa
+N06-1009 | Role of Local Context in Automatic Deidentification of Ungrammatical, Fragmented Text | http://www.aclweb.org/anthology/N/N06/N06-1009.pdf | author:Tawanda Sibanda; Ozlem Uzuner; Ozlem Uzuner
+N06-1010 | Exploiting Domain Structure for Named Entity Recognition | http://www.aclweb.org/anthology/N/N06/N06-1010.pdf | author:Jing Jiang; ChengXiang Zhai
+N06-1011 | Named Entity Transliteration and Discovery from Multilingual Comparable Corpora | http://www.aclweb.org/anthology/N/N06/N06-1011.pdf | author:Alexandre Klementiev; Dan Roth
+N06-1012 | Reducing Weight Undertraining in Structured Discriminative Learning | http://www.aclweb.org/anthology/N/N06/N06-1012.pdf | author:Charles Sutton; Michael Sindelar; Andrew McCallum
+N06-1013 | A Maximum Entropy Approach to Combining Word Alignments | http://www.aclweb.org/anthology/N/N06/N06-1013.pdf | author:Necip Fazil Ayan; Bonnie J. Dorr
+N06-1014 | Alignment by Agreement | http://www.aclweb.org/anthology/N/N06/N06-1014.pdf | author:Percy Liang; Ben Taskar; Dan Klein
+N06-1015 | Word Alignment via Quadratic Assignment | http://www.aclweb.org/anthology/N/N06/N06-1015.pdf | author:Simon Lacoste-Julien; Ben Taskar; Dan Klein; Michael I. Jordan
+N06-1016 | An Empirical Study of the Behavior of Active Learning for Word Sense Disambiguation | http://www.aclweb.org/anthology/N/N06/N06-1016.pdf | author:Jinying Chen; Andrew Schein; Lyle Ungar; Martha Palmer
+N06-1017 | Unknown word sense detection as outlier detection | http://www.aclweb.org/anthology/N/N06/N06-1017.pdf | author:Katrin Erk
+N06-1018 | Understanding Temporal Expressions in Emails | http://www.aclweb.org/anthology/N/N06/N06-1018.pdf | author:Benjamin Han; Donna Gates; Lori Levin
+N06-1019 | Partial Training for a Lexicalized-Grammar Parser | http://www.aclweb.org/anthology/N/N06/N06-1019.pdf | author:Stephen Clark; James Curran
+N06-1020 | Effective Self-Training for Parsing | http://www.aclweb.org/anthology/N/N06/N06-1020.pdf | author:David McClosky; Eugene Charniak; Mark Johnson
+N06-1021 | Multilingual Dependency Parsing using Bayes Point Machines | http://www.aclweb.org/anthology/N/N06/N06-1021.pdf | author:Simon Corston-Oliver; Anthony Aue; Kevin Duh; Eric Ringger
+N06-1022 | Multilevel Coarse-to-Fine PCFG Parsing | http://www.aclweb.org/anthology/N/N06/N06-1022.pdf | author:Eugene Charniak; Mark Johnson; Micha Elsner; Joseph Austerweil; David Ellis; Isaac Haxton; Catherine Hill; R. Shrivaths; Jeremy Moore; Michael Pozar; Theresa Vu
+N06-1023 | A Fully-Lexicalized Probabilistic Model for Japanese Syntactic and Case Structure Analysis | http://www.aclweb.org/anthology/N/N06/N06-1023.pdf | author:Daisuke Kawahara; Sadao Kurohashi
+N06-1024 | Fully Parsing the Penn Treebank | http://www.aclweb.org/anthology/N/N06/N06-1024.pdf | author:Ryan Gabbard; Seth Kulick; Mitchell Marcus
+N06-1025 | Exploiting Semantic Role Labeling, WordNet and Wikipedia for Coreference Resolution | http://www.aclweb.org/anthology/N/N06/N06-1025.pdf | author:Simone Paolo Ponzetto; Michael Strube
+N06-1026 | Identifying and Analyzing Judgment Opinions | http://www.aclweb.org/anthology/N/N06/N06-1026.pdf | author:Soo-Min Kim; Eduard Hovy
+N06-1027 | Learning to Detect Conversation Focus of Threaded Discussions | http://www.aclweb.org/anthology/N/N06/N06-1027.pdf | author:Donghui Feng; Erin Shaw; Jihie Kim; Eduard Hovy
+N06-1028 | Towards Automatic Scoring of Non-Native Spontaneous Speech | http://www.aclweb.org/anthology/N/N06/N06-1028.pdf | author:Klaus Zechner; Isaac Bejar
+N06-1029 | Unsupervised and Semi-supervised Learning of Tone and Pitch Accent | http://www.aclweb.org/anthology/N/N06/N06-1029.pdf | author:Gina-Anne Levow
+N06-1030 | Learning Pronunciation Dictionaries: Language Complexity and Word Selection Strategies | http://www.aclweb.org/anthology/N/N06/N06-1030.pdf | author:John Kominek; Alan W Black
+N06-1031 | Relabeling Syntax Trees to Improve Syntax-Based Machine Translation Quality | http://www.aclweb.org/anthology/N/N06/N06-1031.pdf | author:Bryant Huang; Kevin Knight
+N06-1032 | Grammatical Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-1032.pdf | author:Stefan Riezler; John T. Maxwell III
+N06-1033 | Synchronous Binarization for Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-1033.pdf | author:Hao Zhang; Liang Huang; Daniel Gildea; Kevin Knight
+N06-1034 | Modelling User Satisfaction and Student Learning in a Spoken Dialogue Tutoring System with Generic, Tutoring, and User Affect Parameters | http://www.aclweb.org/anthology/N/N06/N06-1034.pdf | author:Kate Forbes-Riley; Diane Litman
+N06-1035 | Comparing the Utility of State Features in Spoken Dialogue Using Reinforcement Learning | http://www.aclweb.org/anthology/N/N06/N06-1035.pdf | author:Joel Tetreault; Diane Litman
+N06-1036 | Backoff Model Training using Partially Observed Data: Application to Dialog Act Tagging | http://www.aclweb.org/anthology/N/N06/N06-1036.pdf | author:Gang Ji; Jeff Bilmes
+N06-1037 | Exploring Syntactic Features for Relation Extraction using a Convolution Tree Kernel | http://www.aclweb.org/anthology/N/N06/N06-1037.pdf | author:Min Zhang; Jie Zhang; Jian Su
+N06-1038 | Integrating Probabilistic Extraction Models and Data Mining to Discover Relations and Patterns in Text | http://www.aclweb.org/anthology/N/N06/N06-1038.pdf | author:Aron Culotta; Andrew McCallum; Jonathan Betz
+N06-1039 | Preemptive Information Extraction using Unrestricted Relation Discovery | http://www.aclweb.org/anthology/N/N06/N06-1039.pdf | author:Yusuke Shinyama; Satoshi Sekine
+N06-1040 | Probabilistic Context-Free Grammar Induction Based on Structural Zeros | http://www.aclweb.org/anthology/N/N06/N06-1040.pdf | author:Mehryar Mohri; Brian Roark
+N06-1041 | Prototype-Driven Learning for Sequence Models | http://www.aclweb.org/anthology/N/N06/N06-1041.pdf | author:Aria Haghighi; Dan Klein
+N06-1042 | Learning Morphological Disambiguation Rules for Turkish | http://www.aclweb.org/anthology/N/N06/N06-1042.pdf | author:Deniz Yuret; Ferhan Ture
+N06-1043 | Cross-Entropy and Estimation of Probabilistic Context-Free Grammars | http://www.aclweb.org/anthology/N/N06/N06-1043.pdf | author:Anna Corazza; Giorgio Satta
+N06-1044 | Estimation of Consistent Probabilistic Context-free Grammars | http://www.aclweb.org/anthology/N/N06/N06-1044.pdf | author:Mark-Jan Nederhof; Giorgio Satta
+N06-1045 | A Better N-Best List: Practical Determinization of Weighted Finite Tree Automata | http://www.aclweb.org/anthology/N/N06/N06-1045.pdf | author:Jonathan May; Kevin Knight
+N06-1046 | Aggregation via Set Partitioning for Natural Language Generation | http://www.aclweb.org/anthology/N/N06/N06-1046.pdf | author:Regina Barzilay; Mirella Lapata
+N06-1047 | Incorporating Speaker and Discourse Features into Speech Summarization | http://www.aclweb.org/anthology/N/N06/N06-1047.pdf | author:Gabriel Murray; Steve Renals; Jean Carletta; Johanna Moore
+N06-1048 | Nuggeteer: Automatic Nugget-Based Evaluation using Descriptions and Judgements | http://www.aclweb.org/anthology/N/N06/N06-1048.pdf | author:Gregory Marton; Alexey Radul
+N06-1049 | Will Pyramids Built of Nuggets Topple Over? | http://www.aclweb.org/anthology/N/N06/N06-1049.pdf | author:Jimmy Lin; Dina Demner-Fushman
+N06-1050 | Creating a Test Collection for Citation-based IR Experiments | http://www.aclweb.org/anthology/N/N06/N06-1050.pdf | author:Anna Ritchie; Simone Teufel; Stephen Robertson
+N06-1051 | A Machine Learning based Approach to Evaluating Retrieval Systems | http://www.aclweb.org/anthology/N/N06/N06-1051.pdf | author:Huyen-Trang Vu; Patrick Gallinari
+N06-1052 | Language Model Information Retrieval with Document Expansion | http://www.aclweb.org/anthology/N/N06/N06-1052.pdf | author:Tao Tao; Xuanhui Wang; Qiaozhu Mei; ChengXiang Zhai
+N06-1053 | Towards Spoken-Document Retrieval for the Internet: Lattice Indexing For Large-Scale Web-Search Architectures | http://www.aclweb.org/anthology/N/N06/N06-1053.pdf | author:Zheng-Yu Zhou; Peng Yu; Ciprian Chelba; Frank Seide
+N06-1054 | A fast finite-state relaxation method for enforcing global constraints on sequence decoding | http://www.aclweb.org/anthology/N/N06/N06-1054.pdf | author:Roy Tromble; Jason Eisner
+N06-1055 | Semantic role labeling of nominalized predicates in Chinese | http://www.aclweb.org/anthology/N/N06/N06-1055.pdf | author:Nianwen Xue
+N06-1056 | Learning for Semantic Parsing with Statistical Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-1056.pdf | author:Yuk Wah Wong; Raymond Mooney
+N06-1057 | ParaEval: Using Paraphrases to Evaluate Summaries Automatically | http://www.aclweb.org/anthology/N/N06/N06-1057.pdf | author:Liang Zhou; Chin-Yew Lin; Dragos Stefan Munteanu; Eduard Hovy
+N06-1058 | Paraphrasing for Automatic Evaluation | http://www.aclweb.org/anthology/N/N06/N06-1058.pdf | author:David Kauchak; Regina Barzilay
+N06-1059 | An Information-Theoretic Approach to Automatic Evaluation of Summaries | http://www.aclweb.org/anthology/N/N06/N06-1059.pdf | author:Chin-Yew Lin; Guihong Cao; Jianfeng Gao; Jian-Yun Nie
+N06-1060 | Cross Linguistic Name Matching in English and Arabic | http://www.aclweb.org/anthology/N/N06/N06-1060.pdf | author:Andrew Freeman; Sherri Condon; Christopher Ackerman
+N06-1061 | Language Model-Based Document Clustering Using Random Walks | http://www.aclweb.org/anthology/N/N06/N06-1061.pdf | author:Gunes Erkan
+N06-1062 | Unlimited vocabulary speech recognition for agglutinative languages | http://www.aclweb.org/anthology/N/N06/N06-1062.pdf | author:Mikko Kurimo; Antti Puurula; Ebru Arisoy; Vesa Siivola; Teemu Hirsimäki; Janne Pylkkönen; Tanel Alumäe; Murat Saraclar
+N06-2001 | Factored Neural Language Models | http://www.aclweb.org/anthology/N/N06/N06-2001.pdf | author:Andrei Alexandrescu; Katrin Kirchhoff
+N06-2002 | The MILE Corpus for Less Commonly Taught Languages | http://www.aclweb.org/anthology/N/N06/N06-2002.pdf | author:Alison Alvarez; Lori Levin; Robert Frederking; Simon Fung; Donna Gates; Jeff Good
+N06-2003 | Museli: A Multi-Source Evidence Integration Approach to Topic Segmentation of Spontaneous Dialogue | http://www.aclweb.org/anthology/N/N06/N06-2003.pdf | author:Jaime Arguello; Carolyn Rose
+N06-2004 | Measuring Semantic Relatedness Using People and WordNet | http://www.aclweb.org/anthology/N/N06/N06-2004.pdf | author:Beata Beigman Klebanov
+N06-2005 | Thai Grapheme-Based Speech Recognition | http://www.aclweb.org/anthology/N/N06/N06-2005.pdf | author:Paisarn Charoenpornsawat; Sanjika Hewavitharana; Tanja Schultz
+N06-2006 | Class Model Adaptation for Speech Summarisation | http://www.aclweb.org/anthology/N/N06/N06-2006.pdf | author:Pierre Chatain; Edward Whittaker; Joanna Mrozinski; Sadaoki Furui
+N06-2007 | Semi-supervised Relation Extraction with Label Propagation | http://www.aclweb.org/anthology/N/N06/N06-2007.pdf | author:Jinxiu Chen; Donghong Ji; Chew Lim Tan; Zhengyu Niu
+N06-2008 | Temporal Classification of Text and Automatic Document Dating | http://www.aclweb.org/anthology/N/N06/N06-2008.pdf | author:Angelo Dalli
+N06-2009 | Answering the question you wish they had asked: The impact of paraphrasing for Question Answering | http://www.aclweb.org/anthology/N/N06/N06-2009.pdf | author:Pablo Duboue; Jennifer Chu-Carroll
+N06-2010 | Gesture Improves Coreference Resolution | http://www.aclweb.org/anthology/N/N06/N06-2010.pdf | author:Jacob Eisenstein; Randall Davis
+N06-2011 | Spectral Clustering for Example Based Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-2011.pdf | author:Rashmi Gangadharaiah; Ralf Brown; Jaime Carbonell
+N06-2012 | A Finite-State Model of Georgian Verbal Morphology | http://www.aclweb.org/anthology/N/N06/N06-2012.pdf | author:Olga Gurevich
+N06-2013 | Arabic Preprocessing Schemes for Statistical Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-2013.pdf | author:Nizar Habash; Fatiha Sadat
+N06-2014 | Agreement/Disagreement Classification: Exploiting Unlabeled Data using Contrast Classifiers | http://www.aclweb.org/anthology/N/N06/N06-2014.pdf | author:Sangyun Hahn; Richard Ladner; Mari Ostendorf
+N06-2015 | OntoNotes: The 90\% Solution | http://www.aclweb.org/anthology/N/N06/N06-2015.pdf | author:Eduard Hovy; Mitchell Marcus; Martha Palmer; Lance Ramshaw; Ralph Weischedel
+N06-2016 | Investigating Cross-Language Speech Retrieval for a Spontaneous Conversational Speech Collection | http://www.aclweb.org/anthology/N/N06/N06-2016.pdf | author:Diana Inkpen; Muath Alzghool; Gareth Jones; Douglas Oard
+N06-2017 | Evaluating Centering for Sentence Ordering in Two New Domains | http://www.aclweb.org/anthology/N/N06/N06-2017.pdf | author:Nikiforos Karamanis
+N06-2018 | MMR-based Active Machine Learning for Bio Named Entity Recognition | http://www.aclweb.org/anthology/N/N06/N06-2018.pdf | author:Seokhwan Kim; Yu Song; Kyungduk Kim; Jeong-Won Cha; Gary Geunbae Lee
+N06-2019 | Early Deletion of Fillers In Processing Conversational Speech | http://www.aclweb.org/anthology/N/N06/N06-2019.pdf | author:Matthew Lease; Mark Johnson
+N06-2020 | Evaluation of Utility of LSA for Word Sense Discrimination | http://www.aclweb.org/anthology/N/N06/N06-2020.pdf | author:Esther Levin; Mehrbod Sharifi; Jerry Ball
+N06-2021 | Initial Study on Automatic Identification of Speaker Role in Broadcast News Speech | http://www.aclweb.org/anthology/N/N06/N06-2021.pdf | author:Yang Liu
+N06-2022 | Automatic Recognition of Personality in Conversation | http://www.aclweb.org/anthology/N/N06/N06-2022.pdf | author:François Mairesse; Marilyn Walker
+N06-2023 | Summarizing Speech Without Text Using Hidden Markov Models | http://www.aclweb.org/anthology/N/N06/N06-2023.pdf | author:Sameer Maskey; Julia Hirschberg
+N06-2024 | NER Systems that Suit User’s Preferences: Adjusting the Recall-Precision Trade-off for Entity Extraction | http://www.aclweb.org/anthology/N/N06/N06-2024.pdf | author:Einat Minkov; Richard Wang; Anthony Tomasic; William Cohen
+N06-2025 | Syntactic Kernels for Natural Language Learning: the Semantic Role Labeling Case | http://www.aclweb.org/anthology/N/N06/N06-2025.pdf | author:Alessandro Moschitti
+N06-2026 | Accurate Parsing of the Proposition Bank | http://www.aclweb.org/anthology/N/N06/N06-2026.pdf | author:Gabriele Musillo; Paola Merlo
+N06-2027 | Using Semantic Authoring for Blissymbols Communication Boards | http://www.aclweb.org/anthology/N/N06/N06-2027.pdf | author:Yael Netzer; Michael Elhadad
+N06-2028 | Extracting Salient Keywords from Instructional Videos Using Joint Text, Audio and Visual Cues | http://www.aclweb.org/anthology/N/N06/N06-2028.pdf | author:Youngja Park; Ying Li
+N06-2029 | Exploiting Variant Corpora for Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-2029.pdf | author:Michael Paul; Eiichiro Sumita
+N06-2030 | Quantitative Methods for Classifying Writing Systems | http://www.aclweb.org/anthology/N/N06/N06-2030.pdf | author:Gerald Penn; Travis Choma
+N06-2031 | Computational Modelling of Structural Priming in Dialogue | http://www.aclweb.org/anthology/N/N06/N06-2031.pdf | author:David Reitter; Frank Keller; Johanna D. Moore
+N06-2032 | Story Segmentation of Broadcast News in English, Mandarin and Arabic | http://www.aclweb.org/anthology/N/N06/N06-2032.pdf | author:Andrew Rosenberg; Julia Hirschberg
+N06-2033 | Parser Combination by Reparsing | http://www.aclweb.org/anthology/N/N06/N06-2033.pdf | author:Kenji Sagae; Alon Lavie
+N06-2034 | Using Phrasal Patterns to Identify Discourse Relations | http://www.aclweb.org/anthology/N/N06/N06-2034.pdf | author:Manami Saito; Kazuhide Yamamoto; Satoshi Sekine
+N06-2035 | Weblog Classification for Fast Splog Filtering: A URL Language Model Segmentation Approach | http://www.aclweb.org/anthology/N/N06/N06-2035.pdf | author:Franco Salvetti; Nicolas Nicolov
+N06-2036 | Word Domain Disambiguation via Word Sense Disambiguation | http://www.aclweb.org/anthology/N/N06/N06-2036.pdf | author:Antonio Sanfilippo; Stephen Tratz; Michelle Gregory
+N06-2037 | Selecting relevant text subsets from web-data for building topic specific language models | http://www.aclweb.org/anthology/N/N06/N06-2037.pdf | author:Abhinav Sethy; Panayiotis Georgiou; Shrikanth Narayanan
+N06-2038 | A Comparison of Tagging Strategies for Statistical Information Extraction | http://www.aclweb.org/anthology/N/N06/N06-2038.pdf | author:Christian Siefkes
+N06-2039 | Unsupervised Induction of Modern Standard Arabic Verb Classes | http://www.aclweb.org/anthology/N/N06/N06-2039.pdf | author:Neal Snider; Mona Diab
+N06-2040 | Sentence Planning for Realtime Navigational Instruction | http://www.aclweb.org/anthology/N/N06/N06-2040.pdf | author:Laura Stoia; Donna Byron; Darla Shockley; Eric Fosler-Lussier
+N06-2041 | Using the Web to Disambiguate Acronyms | http://www.aclweb.org/anthology/N/N06/N06-2041.pdf | author:Eiichiro Sumita; Fumiaki Sugaya
+N06-2042 | Word Pronunciation Disambiguation using the Web | http://www.aclweb.org/anthology/N/N06/N06-2042.pdf | author:Eiichiro Sumita; Fumiaki Sugaya
+N06-2043 | Illuminating Trouble Tickets with Sublanguage Theory | http://www.aclweb.org/anthology/N/N06/N06-2043.pdf | author:Svetlana Symonenko; Steven Rowe; Elizabeth D. Liddy
+N06-2044 | Evolving optimal inspectable strategies for spoken dialogue systems | http://www.aclweb.org/anthology/N/N06/N06-2044.pdf | author:Dave Toney; Johanna Moore; Oliver Lemon
+N06-2045 | Lycos Retriever: An Information Fusion Engine | http://www.aclweb.org/anthology/N/N06/N06-2045.pdf | author:Brian Ulicny
+N06-2046 | Improved Affinity Graph Based Multi-Document Summarization | http://www.aclweb.org/anthology/N/N06/N06-2046.pdf | author:Xiaojun Wan; Jianwu Yang
+N06-2047 | A Maximum Entropy Framework that Integrates Word Dependencies and Grammatical Relations for Reading Comprehension | http://www.aclweb.org/anthology/N/N06/N06-2047.pdf | author:Kui Xu; Helen Meng; Fuliang Weng
+N06-2048 | BioEx: A Novel User-Interface that Accesses Images from Abstract Sentences | http://www.aclweb.org/anthology/N/N06/N06-2048.pdf | author:Hong Yu; Minsuk Lee
+N06-2049 | Subword-based Tagging by Conditional Random Fields for Chinese Word Segmentation | http://www.aclweb.org/anthology/N/N06/N06-2049.pdf | author:Ruiqiang Zhang; Genichiro Kikui; Eiichiro Sumita
+N06-2050 | Comparing the roles of textual, acoustic and spoken-language features on spontaneous-conversation summarization | http://www.aclweb.org/anthology/N/N06/N06-2050.pdf | author:Xiaodan Zhu; Gerald Penn
+N06-2051 | Bridging the Inflection Morphology Gap for Arabic Statistical Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-2051.pdf | author:Andreas Zollmann; Ashish Venugopal; Stephan Vogel
+N06-3001 | Incorporating Gesture and Gaze into Multimodal Models of Human-to-Human Communication | http://www.aclweb.org/anthology/N/N06/N06-3001.pdf | author:Lei Chen
+N06-3002 | Semantic Back-Pointers from Gesture | http://www.aclweb.org/anthology/N/N06/N06-3002.pdf | author:Jacob Eisenstein
+N06-3003 | Can the Internet help improve Machine Translation? | http://www.aclweb.org/anthology/N/N06/N06-3003.pdf | author:Ariadna Font Llitjós
+N06-3004 | Efficient Algorithms for Richer Formalisms: Parsing and Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-3004.pdf | author:Liang Huang
+N06-3005 | Identifying Perspectives at the Document and Sentence Levels Using Statistical Models | http://www.aclweb.org/anthology/N/N06/N06-3005.pdf | author:Wei-Hao Lin
+N06-3006 | Detecting Emotion in Speech: Experiments in Three Domains | http://www.aclweb.org/anthology/N/N06/N06-3006.pdf | author:Jackson Liscombe
+N06-3007 | Document Representation and Multilevel Measures of Document Similarity | http://www.aclweb.org/anthology/N/N06/N06-3007.pdf | author:Irina Matveeva
+N06-3008 | Logical investigations on the adequacy of certain feature-based theories of natural language | http://www.aclweb.org/anthology/N/N06/N06-3008.pdf | author:Anders S gaard
+N06-3009 | A Hybrid Approach to Biomedical Named Entity Recognition and Semantic Role Labeling | http://www.aclweb.org/anthology/N/N06/N06-3009.pdf | author:Richard Tzong-Han Tsai
+N06-3010 | Supporting Multiple Information-Seeking Strategies in a Single System Framework | http://www.aclweb.org/anthology/N/N06/N06-3010.pdf | author:Xiaojun Yuan
+N06-4001 | InfoMagnets: Making Sense of Corpus Data | http://www.aclweb.org/anthology/N/N06/N06-4001.pdf | author:Jaime Arguello; Carolyn Rosé
+N06-4002 | From Pipedreams to Products, and Promise! | http://www.aclweb.org/anthology/N/N06/N06-4002.pdf | author:Janet M. Baker; Patri J. Pugliese
+N06-4003 | SmartNotes: Implicit Labeling of Meeting Data through User Note-Taking and Browsing | http://www.aclweb.org/anthology/N/N06/N06-4003.pdf | author:Satanjeev Banerjee; Alexander I. Rudnicky
+N06-4004 | MTTK: An Alignment Toolkit for Statistical Machine Translation | http://www.aclweb.org/anthology/N/N06/N06-4004.pdf | author:Yonggang Deng; William Byrne
+N06-4005 | AquaLog: An ontology-driven Question Answering System to interface the Semantic Web | http://www.aclweb.org/anthology/N/N06/N06-4005.pdf | author:Vanessa Lopez Garcia; Enrico Motta; Victoria Uren
+N06-4006 | Knowtator: A Protégé plug-in for annotated corpus construction | http://www.aclweb.org/anthology/N/N06/N06-4006.pdf | author:Philip V. Ogren
+N06-4007 | Automatic Cluster Stopping with Criterion Functions and the Gap Statistic | http://www.aclweb.org/anthology/N/N06/N06-4007.pdf | author:Ted Pedersen; Anagha Kulkarni
+N06-4008 | Automating the Creation of Interactive Glyph-supplemented Scatterplots for Visualizing Algorithm Results | http://www.aclweb.org/anthology/N/N06/N06-4008.pdf | author:Dinoj Surendran
+N06-4009 | SconeEdit: A Text-guided Domain Knowledge Editor | http://www.aclweb.org/anthology/N/N06/N06-4009.pdf | author:Alicia Tribble; Benjamin Lambert; Scott E. Fahlman
+N06-4010 | Factoid Question Answering with Web, Mobile and Speech Interfaces | http://www.aclweb.org/anthology/N/N06/N06-4010.pdf | author:E.W.D. Whittaker; J. Mrozinski; S. Furui
+N06-4011 | Automated Quality Monitoring for Call Centers using Speech and NLP Technologies | http://www.aclweb.org/anthology/N/N06/N06-4011.pdf | author:G. Zweig; O. Siohan; G. Saon; B. Ramabhadran; D. Povey; L. Mangu; B. Kingsbury
+N06-5001 | What‘s in a Name: Current Methods, Applications, and Evaluation in Multilingual Name Search and Matching | http://www.aclweb.org/anthology/N/N06/N06-5001.pdf | author:Sherri Condon; Keith Miller
+N06-5002 | Beyond EM: Bayesian Techniques for Human Language Technology Researchers | http://www.aclweb.org/anthology/N/N06/N06-5002.pdf | author:Hal Daume III
+N06-5003 | Graph-based Algorithms for Natural Language Processing and Information Retrieval | http://www.aclweb.org/anthology/N/N06/N06-5003.pdf | author:Rada Mihalcea; Dragomir Radev
+N06-5004 | Automatic Spoken Document Processing for Retrieval and Browsing | http://www.aclweb.org/anthology/N/N06/N06-5004.pdf | author:Ciprian Chelba; T. J. Hazen
+N06-5005 | Tutorial on Inductive Semi-supervised Learning Methods: with Applicability to Natural Language Processing | http://www.aclweb.org/anthology/N/N06/N06-5005.pdf | author:Anoop Sarkar; Gholamreza Haffari
+N06-5006 | Automatic Semantic Role Labeling | http://www.aclweb.org/anthology/N/N06/N06-5006.pdf | author:Scott Wen-tau Yih; Kristina Toutanova

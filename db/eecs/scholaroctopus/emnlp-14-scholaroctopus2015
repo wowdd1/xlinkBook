@@ -1,0 +1,226 @@
+D14-1001 | Invited Talk: IBM Cognitive Computing - An NLP Renaissance! | http://www.aclweb.org/anthology/D/D14D14-1001.pdf | author:Salim Roukos
+D14-1002 | Modeling Interestingness with Deep Neural Networks | http://www.aclweb.org/anthology/D/D14D14-1002.pdf | author:Jianfeng Gao; Patrick Pantel; Michael Gamon; Xiaodong He; Li Deng
+D14-1003 | Translation Modeling with Bidirectional Recurrent Neural Networks | http://www.aclweb.org/anthology/D/D14D14-1003.pdf | author:Martin Sundermeyer; Tamer Alkhouli; Joern Wuebker; Hermann Ney
+D14-1004 | A Neural Network Approach to Selectional Preference Acquisition | http://www.aclweb.org/anthology/D/D14D14-1004.pdf | author:Tim Van de Cruys
+D14-1005 | Learning Image Embeddings using Convolutional Neural Networks for Improved Multi-Modal Semantics | http://www.aclweb.org/anthology/D/D14D14-1005.pdf | author:Douwe Kiela; Léon Bottou
+D14-1006 | Identifying Argumentative Discourse Structures in Persuasive Essays | http://www.aclweb.org/anthology/D/D14D14-1006.pdf | author:Christian Stab; Iryna Gurevych
+D14-1007 | Policy Learning for Domain Selection in an Extensible Multi-domain Spoken Dialogue System | http://www.aclweb.org/anthology/D/D14D14-1007.pdf | author:Zhuoran Wang; Hongliang Chen; Guanchun Wang; Hao Tian; Hua Wu; Haifeng Wang
+D14-1008 | A Constituent-Based Approach to Argument Labeling with Joint Inference in Discourse Parsing | http://www.aclweb.org/anthology/D/D14D14-1008.pdf | author:Fang Kong; Hwee Tou Ng; Guodong Zhou
+D14-1009 | Strongly Incremental Repair Detection | http://www.aclweb.org/anthology/D/D14D14-1009.pdf | author:Julian Hough; Matthew Purver
+D14-1010 | Semi-Supervised Chinese Word Segmentation Using Partial-Label Learning With Conditional Random Fields | http://www.aclweb.org/anthology/D/D14D14-1010.pdf | author:Fan Yang; Paul Vozila
+D14-1011 | Accurate Word Segmentation and POS Tagging for Japanese Microblogs: Corpus Annotation and Joint Modeling with Lexical Normalization | http://www.aclweb.org/anthology/D/D14D14-1011.pdf | author:Nobuhiro Kaji; Masaru Kitsuregawa
+D14-1012 | Revisiting Embedding Features for Simple Semi-supervised Learning | http://www.aclweb.org/anthology/D/D14D14-1012.pdf | author:Jiang Guo; Wanxiang Che; Haifeng Wang; Ting Liu
+D14-1013 | Combining Punctuation and Disfluency Prediction: An Empirical Study | http://www.aclweb.org/anthology/D/D14D14-1013.pdf | author:Xuancong Wang; Khe Chai Sim; Hwee Tou Ng
+D14-1014 | Submodularity for Data Selection in Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1014.pdf | author:Katrin Kirchhoff; Jeff Bilmes
+D14-1015 | Improve Statistical Machine Translation with Context-Sensitive Bilingual Semantic Embedding Model | http://www.aclweb.org/anthology/D/D14D14-1015.pdf | author:Haiyang Wu; Daxiang Dong; Xiaoguang Hu; Dianhai Yu; Wei He; Hua Wu; Haifeng Wang; Ting Liu
+D14-1016 | Transformation from Discontinuous to Continuous Word Alignment Improves Translation Quality | http://www.aclweb.org/anthology/D/D14D14-1016.pdf | author:Zhongjun He; Hua Wu; Haifeng Wang; Ting Liu
+D14-1017 | Unsupervised Word Alignment Using Frequency Constraint in Posterior Regularized EM | http://www.aclweb.org/anthology/D/D14D14-1017.pdf | author:Hidetaka Kamigaito; Taro Watanabe; Hiroya Takamura; Manabu Okumura
+D14-1018 | Asymmetric Features Of Human Generated Translation | http://www.aclweb.org/anthology/D/D14D14-1018.pdf | author:Sauleh Eetemadi; Kristina Toutanova
+D14-1019 | Syntax-Augmented Machine Translation using Syntax-Label Clustering | http://www.aclweb.org/anthology/D/D14D14-1019.pdf | author:Hideya MINO; Taro WATANABE; Eiichiro SUMITA
+D14-1020 | Testing for Significance of Increased Correlation with Human Judgment | http://www.aclweb.org/anthology/D/D14D14-1020.pdf | author:Yvette Graham; Timothy Baldwin
+D14-1021 | Syntactic SMT Using a Discriminative Text Generation Model | http://www.aclweb.org/anthology/D/D14D14-1021.pdf | author:Yue Zhang; Kai Song; Linfeng Song; Jingbo Zhu; Qun Liu
+D14-1022 | Learning Hierarchical Translation Spans | http://www.aclweb.org/anthology/D/D14D14-1022.pdf | author:jingyi zhang; Masao Utiyama; Eiichiro Sumita; Hai Zhao
+D14-1023 | Neural Network Based Bilingual Language Model Growing for Statistical Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1023.pdf | author:Rui Wang; Hai Zhao; Bao-Liang Lu; Masao Utiyama; Eiichiro Sumita
+D14-1024 | Better Statistical Machine Translation through Linguistic Treatment of Phrasal Verbs | http://www.aclweb.org/anthology/D/D14D14-1024.pdf | author:Kostadin Cholakov; Valia Kordoni
+D14-1025 | Fitting Sentence Level Translation Evaluation with Many Dense Features | http://www.aclweb.org/anthology/D/D14D14-1025.pdf | author:Miloš Stanojević; Khalil Sima'an
+D14-1026 | A Human Judgement Corpus and a Metric for Arabic MT Evaluation | http://www.aclweb.org/anthology/D/D14D14-1026.pdf | author:Houda Bouamor; Hanan Alshikhabobakr; Behrang Mohit; Kemal Oflazer
+D14-1027 | Learning to Differentiate Better from Worse Translations | http://www.aclweb.org/anthology/D/D14D14-1027.pdf | author:Francisco Guzmán; Shafiq Joty; Lluís Màrquez; Alessandro Moschitti; Preslav Nakov; Massimo Nicosia
+D14-1028 | Two Improvements to Left-to-Right Decoding for Hierarchical Phrase-based Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1028.pdf | author:Maryam Siahbani; Anoop Sarkar
+D14-1029 | Reordering Model for Forest-to-String Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1029.pdf | author:Martin Cmejrek
+D14-1030 | Aligning context-based statistical models of language with brain activity during reading | http://www.aclweb.org/anthology/D/D14D14-1030.pdf | author:Leila Wehbe; Ashish Vaswani; Kevin Knight; Tom Mitchell
+D14-1031 | A Cognitive Model of Semantic Network Learning | http://www.aclweb.org/anthology/D/D14D14-1031.pdf | author:Aida Nematzadeh; Afsaneh Fazly; Suzanne Stevenson
+D14-1032 | Learning Abstract Concept Embeddings from Multi-Modal Data: Since You Probably Can't See What I Mean | http://www.aclweb.org/anthology/D/D14D14-1032.pdf | author:Felix Hill; Anna Korhonen
+D14-1033 | Go Climb a Dependency Tree and Correct the Grammatical Errors | http://www.aclweb.org/anthology/D/D14D14-1033.pdf | author:Longkai Zhang; Houfeng WANG
+D14-1034 | An Unsupervised Model for Instance Level Subcategorization Acquisition | http://www.aclweb.org/anthology/D/D14D14-1034.pdf | author:Simon Baker; Roi Reichart; Anna Korhonen
+D14-1035 | Parsing low-resource languages using Gibbs sampling for PCFGs with latent annotations | http://www.aclweb.org/anthology/D/D14D14-1035.pdf | author:Liang Sun; Jason Mielens; Jason Baldridge
+D14-1036 | Incremental Semantic Role Labeling with Tree Adjoining Grammar | http://www.aclweb.org/anthology/D/D14D14-1036.pdf | author:Ioannis Konstas; Frank Keller; Vera Demberg; Mirella Lapata
+D14-1037 | A Graph-based Approach for Contextual Text Normalization | http://www.aclweb.org/anthology/D/D14D14-1037.pdf | author:Cagil Sonmez; Arzucan Ozgur
+D14-1038 | ReNoun: Fact Extraction for Nominal Attributes | http://www.aclweb.org/anthology/D/D14D14-1038.pdf | author:Mohamed Yahya; Steven Whang; Rahul Gupta; Alon Halevy
+D14-1039 | Hierarchical Discriminative Classification for Text-Based Geolocation | http://www.aclweb.org/anthology/D/D14D14-1039.pdf | author:Benjamin Wing; Jason Baldridge
+D14-1040 | Probabilistic Models of Cross-Lingual Semantic Similarity in Context Based on Latent Cross-Lingual Concepts Induced from Comparable Data | http://www.aclweb.org/anthology/D/D14D14-1040.pdf | author:Ivan Vulić; Marie-Francine Moens
+D14-1041 | Multi-Predicate Semantic Role Labeling | http://www.aclweb.org/anthology/D/D14D14-1041.pdf | author:Haitong Yang; Chengqing Zong
+D14-1042 | Werdy: Recognition and Disambiguation of Verbs and Verb Phrases with Syntactic and Semantic Pruning | http://www.aclweb.org/anthology/D/D14D14-1042.pdf | author:Luciano Del Corro; Rainer Gemulla; Gerhard Weikum
+D14-1043 | Multi-Resolution Language Grounding with Weak Supervision | http://www.aclweb.org/anthology/D/D14D14-1043.pdf | author:R. Koncel-Kedziorski; Hannaneh Hajishirzi; Ali Farhadi
+D14-1044 | Incorporating Vector Space Similarity in Random Walk Inference over Knowledge Bases | http://www.aclweb.org/anthology/D/D14D14-1044.pdf | author:Matt Gardner; Partha Talukdar; Jayant Krishnamurthy; Tom Mitchell
+D14-1045 | Composition of Word Representations Improves Semantic Role Labelling | http://www.aclweb.org/anthology/D/D14D14-1045.pdf | author:Michael Roth; Kristian Woodsend
+D14-1046 | Automatic Domain Assignment for Word Sense Alignment | http://www.aclweb.org/anthology/D/D14D14-1046.pdf | author:Tommaso Caselli; Carlo Strapparava
+D14-1047 | Nothing like Good Old Frequency: Studying Context Filters for Distributional Thesauri | http://www.aclweb.org/anthology/D/D14D14-1047.pdf | author:Muntsa Padró; Marco Idiart; Aline Villavicencio; Carlos Ramisch
+D14-1048 | Aligning English Strings with Abstract Meaning Representation Graphs | http://www.aclweb.org/anthology/D/D14D14-1048.pdf | author:Nima Pourdamghani; Yang Gao; Ulf Hermjakob; Kevin Knight
+D14-1049 | A Shortest-path Method for Arc-factored Semantic Role Labeling | http://www.aclweb.org/anthology/D/D14D14-1049.pdf | author:Xavier Lluís; Xavier Carreras; Lluís Màrquez
+D14-1050 | Semantic Kernels for Semantic Parsing | http://www.aclweb.org/anthology/D/D14D14-1050.pdf | author:Iman Saleh; Alessandro Moschitti; Preslav Nakov; Lluís Màrquez; Shafiq Joty
+D14-1051 | An I-vector Based Approach to Compact Multi-Granularity Topic Spaces Representation of Textual Documents | http://www.aclweb.org/anthology/D/D14D14-1051.pdf | author:Mohamed Morchid; Mohamed Bouallegue; Richard Dufour; Georges Linares; Driss Matrouf; Renato de Mori
+D14-1052 | Explaining the Stars: Weighted Multiple-Instance Learning for Aspect-Based Sentiment Analysis | http://www.aclweb.org/anthology/D/D14D14-1052.pdf | author:Nikolaos Pappas; Andrei Popescu-Belis
+D14-1053 | Sentiment Analysis on the People's Daily | http://www.aclweb.org/anthology/D/D14D14-1053.pdf | author:Jiwei Li; Eduard Hovy
+D14-1054 | A Joint Segmentation and Classification Framework for Sentiment Analysis | http://www.aclweb.org/anthology/D/D14D14-1054.pdf | author:Duyu Tang; Furu Wei; Bing Qin; Li Dong; Ting Liu; Ming Zhou
+D14-1055 | Positive Unlabeled Learning for Deceptive Reviews Detection | http://www.aclweb.org/anthology/D/D14D14-1055.pdf | author:yafeng ren; donghong ji; hongbin zhang
+D14-1056 | Resolving Shell Nouns | http://www.aclweb.org/anthology/D/D14D14-1056.pdf | author:Varada Kolhatkar; Graeme Hirst
+D14-1057 | A Comparison of Selectional Preference Models for Automatic Verb Classification | http://www.aclweb.org/anthology/D/D14D14-1057.pdf | author:Will Roberts; Markus Egg
+D14-1058 | Learning to Solve Arithmetic Word Problems with Verb Categorization | http://www.aclweb.org/anthology/D/D14D14-1058.pdf | author:Mohammad Javad Hosseini; Hannaneh Hajishirzi; Oren Etzioni; Nate Kushman
+D14-1059 | NaturalLI: Natural Logic Inference for Common Sense Reasoning | http://www.aclweb.org/anthology/D/D14D14-1059.pdf | author:Gabor Angeli; Christopher D. Manning
+D14-1060 | Modeling Term Translation for Document-informed Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1060.pdf | author:Fandong Meng; Deyi Xiong; Wenbin Jiang; Qun Liu
+D14-1061 | Beyond Parallel Data: Joint Word Alignment and Decipherment Improves Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1061.pdf | author:Qing Dou; Ashish Vaswani; Kevin Knight
+D14-1062 | Latent Domain Phrase-based Models for Adaptation | http://www.aclweb.org/anthology/D/D14D14-1062.pdf | author:Cuong Hoang; Khalil Sima'an
+D14-1063 | Translation Rules with Right-Hand Side Lattices | http://www.aclweb.org/anthology/D/D14D14-1063.pdf | author:Fabien Cromieres; Sadao Kurohashi
+D14-1064 | Learning to Translate: A Query-Specific Combination Approach for Cross-Lingual Information Retrieval | http://www.aclweb.org/anthology/D/D14D14-1064.pdf | author:Ferhan Ture; Elizabeth Boschee
+D14-1065 | Semantic-Based Multilingual Document Clustering via Tensor Modeling | http://www.aclweb.org/anthology/D/D14D14-1065.pdf | author:Salvatore Romeo; Andrea Tagarelli; Dino Ienco
+D14-1066 | Lexical Substitution for the Medical Domain | http://www.aclweb.org/anthology/D/D14D14-1066.pdf | author:Martin Riedl; Michael Glass; Alfio Gliozzo
+D14-1067 | Question Answering with Subgraph Embeddings | http://www.aclweb.org/anthology/D/D14D14-1067.pdf | author:Antoine Bordes; Sumit Chopra; Jason Weston
+D14-1068 | Correcting Keyboard Layout Errors and Homoglyphs in Queries | http://www.aclweb.org/anthology/D/D14D14-1068.pdf | author:Derek Barnes; Mahesh Joshi; Hassan Sawaf
+D14-1069 | Non-linear Mapping for Improved Identification of 1300+ Languages | http://www.aclweb.org/anthology/D/D14D14-1069.pdf | author:Ralf Brown
+D14-1070 | A Neural Network for Factoid Question Answering over Paragraphs | http://www.aclweb.org/anthology/D/D14D14-1070.pdf | author:Mohit Iyyer; Jordan Boyd-Graber; Leonardo Claudino; Richard Socher; Hal Daumé III
+D14-1071 | Joint Relational Embeddings for Knowledge-based Question Answering | http://www.aclweb.org/anthology/D/D14D14-1071.pdf | author:Min-Chul Yang; Nan Duan; Ming Zhou; Hae-Chang Rim
+D14-1072 | Adding High-Precision Links to Wikipedia | http://www.aclweb.org/anthology/D/D14D14-1072.pdf | author:Thanapon Noraset; Chandra Bhagavatula; Doug Downey
+D14-1073 | Finding Good Enough: A Task-Based Evaluation of Query Biased Summarization for Cross-Language Information Retrieval | http://www.aclweb.org/anthology/D/D14D14-1073.pdf | author:Jennifer Williams; Sharon Tam; Wade Shen
+D14-1074 | Chinese Poetry Generation with Recurrent Neural Networks | http://www.aclweb.org/anthology/D/D14D14-1074.pdf | author:Xingxing Zhang; Mirella Lapata
+D14-1075 | Fear the REAPER: A System for Automatic Multi-Document Summarization with Reinforcement Learning | http://www.aclweb.org/anthology/D/D14D14-1075.pdf | author:Cody Rioux; Sadid A. Hasan; Yllias Chali
+D14-1076 | Improving Multi-documents Summarization by Sentence Compression based on Expanded Constituent Parse Trees | http://www.aclweb.org/anthology/D/D14D14-1076.pdf | author:Chen Li; Yang Liu; Fei Liu; Lin Zhao; Fuliang Weng
+D14-1077 | Analyzing Stemming Approaches for Turkish Multi-Document Summarization | http://www.aclweb.org/anthology/D/D14D14-1077.pdf | author:Muhammed Yavuz NuzumlalÄ±; Arzucan Özgür
+D14-1078 | Invited Talk: Learning from Rational Behavior | http://www.aclweb.org/anthology/D/D14D14-1078.pdf | author:Thorsten Joachims
+D14-1079 | Evaluating Neural Word Representations in Tensor-Based Compositional Settings | http://www.aclweb.org/anthology/D/D14D14-1079.pdf | author:Dmitrijs Milajevs; Dimitri Kartsaklis; Mehrnoosh Sadrzadeh; Matthew Purver
+D14-1080 | Opinion Mining with Deep Recurrent Neural Networks | http://www.aclweb.org/anthology/D/D14D14-1080.pdf | author:Ozan Irsoy; Claire Cardie
+D14-1081 | The Inside-Outside Recursive Neural Network model for Dependency Parsing | http://www.aclweb.org/anthology/D/D14D14-1081.pdf | author:Phong Le; Willem Zuidema
+D14-1082 | A Fast and Accurate Dependency Parser using Neural Networks | http://www.aclweb.org/anthology/D/D14D14-1082.pdf | author:Danqi Chen; Christopher Manning
+D14-1083 | Why are You Taking this Stance? Identifying and Classifying Reasons in Ideological Debates | http://www.aclweb.org/anthology/D/D14D14-1083.pdf | author:Kazi Saidul Hasan; Vincent Ng
+D14-1084 | Chinese Zero Pronoun Resolution: An Unsupervised Probabilistic Model Rivaling Supervised Resolvers | http://www.aclweb.org/anthology/D/D14D14-1084.pdf | author:Chen Chen; Vincent Ng
+D14-1085 | Unsupervised Sentence Enhancement for Automatic Summarization | http://www.aclweb.org/anthology/D/D14D14-1085.pdf | author:Jackie Chi Kit Cheung; Gerald Penn
+D14-1086 | ReferItGame: Referring to Objects in Photographs of Natural Scenes | http://www.aclweb.org/anthology/D/D14D14-1086.pdf | author:Sahar Kazemzadeh; Vicente Ordonez; Mark Matten; Tamara Berg
+D14-1087 | Unsupervised Template Mining for Semantic Category Understanding | http://www.aclweb.org/anthology/D/D14D14-1087.pdf | author:Lei Shi; Shuming Shi; Chin-Yew Lin; Yi-Dong Shen; Yong Rui
+D14-1088 | Taxonomy Construction Using Syntactic Contextual Evidence | http://www.aclweb.org/anthology/D/D14D14-1088.pdf | author:Tuan Luu Anh; Jung-jae Kim; See Kiong Ng
+D14-1089 | Analysing recall loss in named entity slot filling | http://www.aclweb.org/anthology/D/D14D14-1089.pdf | author:Glen Pink; Joel Nothman; James R. Curran
+D14-1090 | Relieving the Computational Bottleneck: Joint Inference for Event Extraction with High-Dimensional Features | http://www.aclweb.org/anthology/D/D14D14-1090.pdf | author:Deepak Venugopal; Chen Chen; Vibhav Gogate; Vincent Ng
+D14-1091 | Syllable weight encodes mostly the same information for English word segmentation as dictionary stress | http://www.aclweb.org/anthology/D/D14D14-1091.pdf | author:John K Pate; Mark Johnson
+D14-1092 | A Joint Model for Unsupervised Chinese Word Segmentation | http://www.aclweb.org/anthology/D/D14D14-1092.pdf | author:Miaohong Chen; Baobao Chang; Wenzhe Pei
+D14-1093 | Domain Adaptation for CRF-based Chinese Word Segmentation using Free Annotations | http://www.aclweb.org/anthology/D/D14D14-1093.pdf | author:Yijia Liu; Yue Zhang; Wanxiang Che; Ting Liu; Fan Wu
+D14-1094 | Balanced Korean Word Spacing with Structural SVM | http://www.aclweb.org/anthology/D/D14D14-1094.pdf | author:Changki Lee; Edward Choi; Hyunki Kim
+D14-1095 | Morphological Segmentation for Keyword Spotting | http://www.aclweb.org/anthology/D/D14D14-1095.pdf | author:Karthik Narasimhan; Damianos Karakos; Richard Schwartz; Stavros Tsakalidis; Regina Barzilay
+D14-1096 | What Can We Get From 1000 Tokens? A Case Study of Multilingual POS Tagging For Resource-Poor Languages | http://www.aclweb.org/anthology/D/D14D14-1096.pdf | author:Long Duong; Trevor Cohn; Karin Verspoor; Steven Bird; Paul Cook
+D14-1097 | An Experimental Comparison of Active Learning Strategies for Partially Labeled Sequences | http://www.aclweb.org/anthology/D/D14D14-1097.pdf | author:Diego Marcheggiani; Thierry Artières
+D14-1098 | Language Modeling with Functional Head Constraint for Code Switching Speech Recognition | http://www.aclweb.org/anthology/D/D14D14-1098.pdf | author:Ying LI; Pascale Fung
+D14-1099 | A Polynomial-Time Dynamic Oracle for Non-Projective Dependency Parsing | http://www.aclweb.org/anthology/D/D14D14-1099.pdf | author:Carlos Gómez-Rodríguez; Francesco Sartorio; Giorgio Satta
+D14-1100 | Ambiguity Resolution for Vt-N Structures in Chinese | http://www.aclweb.org/anthology/D/D14D14-1100.pdf | author:Yu-Ming Hsieh; Jason S. Chang; Keh-Jiann Chen
+D14-1101 | Neural Networks Leverage Corpus-wide Information for Part-of-speech Tagging | http://www.aclweb.org/anthology/D/D14D14-1101.pdf | author:Yuta Tsuboi
+D14-1102 | System Combination for Grammatical Error Correction | http://www.aclweb.org/anthology/D/D14D14-1102.pdf | author:Raymond Hendy Susanto; Peter Phandi; Hwee Tou Ng
+D14-1103 | Dependency parsing with latent refinements of part-of-speech tags | http://www.aclweb.org/anthology/D/D14D14-1103.pdf | author:Thomas Mueller; Richárd Farkas; Alex Judea; Helmut Schmid; hinrich schuetze
+D14-1104 | Importance weighting and unsupervised domain adaptation of POS taggers: a negative result | http://www.aclweb.org/anthology/D/D14D14-1104.pdf | author:Barbara Plank; Anders Johannsen; Anders Søgaard
+D14-1105 | POS Tagging of English-Hindi Code-Mixed Social Media Content | http://www.aclweb.org/anthology/D/D14D14-1105.pdf | author:Yogarshi Vyas; Spandana Gella; Jatin Sharma; Kalika Bali; Monojit Choudhury
+D14-1106 | Data Driven Grammatical Error Detection in Transcripts of Children's Speech | http://www.aclweb.org/anthology/D/D14D14-1106.pdf | author:Eric Morley; Anna Eva Hallin; Brian Roark
+D14-1107 | A* CCG Parsing with a Supertag-factored Model | http://www.aclweb.org/anthology/D/D14D14-1107.pdf | author:Mike Lewis; Mark Steedman
+D14-1108 | A Dependency Parser for Tweets | http://www.aclweb.org/anthology/D/D14D14-1108.pdf | author:Lingpeng Kong; Nathan Schneider; Swabha Swayamdipta; Archna Bhatia; Chris Dyer; Noah A. Smith
+D14-1109 | Greed is Good if Randomized: New Inference for Dependency Parsing | http://www.aclweb.org/anthology/D/D14D14-1109.pdf | author:Yuan Zhang; Tao Lei; Regina Barzilay; Tommi Jaakkola
+D14-1110 | A Unified Model for Word Sense Representation and Disambiguation | http://www.aclweb.org/anthology/D/D14D14-1110.pdf | author:Xinxiong Chen; Zhiyuan Liu; Maosong Sun
+D14-1111 | Reducing Dimensions of Tensors in Type-Driven Distributional Semantics | http://www.aclweb.org/anthology/D/D14D14-1111.pdf | author:Tamara Polajnar; Luana Fagarasan; Stephen Clark
+D14-1112 | An Etymological Approach to Cross-Language Orthographic Similarity. Application on Romanian | http://www.aclweb.org/anthology/D/D14D14-1112.pdf | author:Alina Maria Ciobanu; Liviu P. Dinu
+D14-1113 | Efficient Non-parametric Estimation of Multiple Embeddings per Word in Vector Space | http://www.aclweb.org/anthology/D/D14D14-1113.pdf | author:Arvind Neelakantan; Jeevan Shankar; Alexandre Passos; Andrew McCallum
+D14-1114 | Tailor knowledge graph for query understanding: linking intent topics by propagation | http://www.aclweb.org/anthology/D/D14D14-1114.pdf | author:Shi Zhao; Yan Zhang
+D14-1115 | Queries as a Source of Lexicalized Commonsense Knowledge | http://www.aclweb.org/anthology/D/D14D14-1115.pdf | author:Marius Pasca
+D14-1116 | Question Answering over Linked Data Using First-order Logic | http://www.aclweb.org/anthology/D/D14D14-1116.pdf | author:Shizhu He; Kang Liu; Yuanzhe Zhang; Liheng Xu; Jun Zhao
+D14-1117 | Knowledge Graph and Corpus Driven Segmentation and Answer Inference for Telegraphic Entity-seeking Queries | http://www.aclweb.org/anthology/D/D14D14-1117.pdf | author:Mandar Joshi; Uma Sawant; Soumen Chakrabarti
+D14-1118 | A Regularized Competition Model for Question Difficulty Estimation in Community Question Answering Services | http://www.aclweb.org/anthology/D/D14D14-1118.pdf | author:Quan Wang; Jing Liu; Bin Wang; Li Guo
+D14-1119 | Vote Prediction on Comments in Social Polls | http://www.aclweb.org/anthology/D/D14D14-1119.pdf | author:Isaac Persing; Vincent Ng
+D14-1120 | Exploiting Social Relations and Sentiment for Stock Prediction | http://www.aclweb.org/anthology/D/D14D14-1120.pdf | author:Jianfeng Si; Arjun Mukherjee; Bing Liu; Sinno Jialin Pan; Qing Li; Huayi Li
+D14-1121 | Developing Age and Gender Predictive Lexica over Social Media | http://www.aclweb.org/anthology/D/D14D14-1121.pdf | author:Maarten Sap; Gregory Park; Johannes Eichstaedt; Margaret Kern; David Stillwell; Michal Kosinski; Lyle Ungar; Hansen Andrew Schwartz
+D14-1122 | Dependency Parsing for Weibo: An Efficient Probabilistic Logic Programming Approach | http://www.aclweb.org/anthology/D/D14D14-1122.pdf | author:William Yang Wang; Lingpeng Kong; Kathryn Mazaitis; William W Cohen
+D14-1123 | Exploiting Community Emotion for Microblog Event Detection | http://www.aclweb.org/anthology/D/D14D14-1123.pdf | author:Gaoyan Ou; Wei Chen; Tengjiao Wang; Zhongyu Wei; Binyang LI; Dongqing Yang; Kam-Fai Wong
+D14-1124 | Detecting Disagreement in Conversations using Pseudo-Monologic Rhetorical Structure | http://www.aclweb.org/anthology/D/D14D14-1124.pdf | author:Kelsey Allen; Giuseppe Carenini; Raymond Ng
+D14-1125 | +/-EffectWordNet: Sense-level Lexicon Acquisition for Opinion Inference | http://www.aclweb.org/anthology/D/D14D14-1125.pdf | author:Yoonjung Choi; Janyce Wiebe
+D14-1126 | A Sentiment-aligned Topic Model for Product Aspect Rating Prediction | http://www.aclweb.org/anthology/D/D14D14-1126.pdf | author:Hao Wang; Martin Ester
+D14-1127 | Learning Emotion Indicators from Tweets: Hashtags, Hashtag Patterns, and Phrases | http://www.aclweb.org/anthology/D/D14D14-1127.pdf | author:Ashequl Qadir; Ellen Riloff
+D14-1128 | Fine-Grained Contextual Predictions for Hard Sentiment Words | http://www.aclweb.org/anthology/D/D14D14-1128.pdf | author:Sebastian Ebert; Hinrich Schütze
+D14-1129 | An Iterative Link-based Method for Parallel Web Page Mining | http://www.aclweb.org/anthology/D/D14D14-1129.pdf | author:Le Liu; Yu Hong; Jun Lu; Jun Lang; Heng Ji; Jianmin Yao
+D14-1130 | Human Effort and Machine Learnability in Computer Aided Translation | http://www.aclweb.org/anthology/D/D14D14-1130.pdf | author:Spence Green; Sida I. Wang; Jason Chuang; Jeffrey Heer; Sebastian Schuster; Christopher D. Manning
+D14-1131 | Exact Decoding for Phrase-Based Statistical Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1131.pdf | author:Wilker Aziz; Marc Dymetman; Lucia Specia
+D14-1132 | Large-scale Expected BLEU Training of Phrase-based Reordering Models | http://www.aclweb.org/anthology/D/D14D14-1132.pdf | author:Michael Auli; Michel Galley; Jianfeng Gao
+D14-1133 | Confidence-based Rewriting of Machine Translation Output | http://www.aclweb.org/anthology/D/D14D14-1133.pdf | author:Benjamin Marie; Aurélien Max
+D14-1134 | Learning Compact Lexicons for CCG Semantic Parsing | http://www.aclweb.org/anthology/D/D14D14-1134.pdf | author:Yoav Artzi; Dipanjan Das; Slav Petrov
+D14-1135 | Morpho-syntactic Lexical Generalization for CCG Semantic Parsing | http://www.aclweb.org/anthology/D/D14D14-1135.pdf | author:Adrienne Wang; Tom Kwiatkowski; Luke Zettlemoyer
+D14-1136 | Semantic Parsing Using Content and Context: A Case Study from Requirements Elicitation | http://www.aclweb.org/anthology/D/D14D14-1136.pdf | author:Reut Tsarfaty; Ilia Pogrebezky; Guy Weiss; Yaarit Natan; Smadar Szekely; David Harel
+D14-1137 | Semantic Parsing with Relaxed Hybrid Trees | http://www.aclweb.org/anthology/D/D14D14-1137.pdf | author:Wei Lu
+D14-1138 | Low-dimensional Embeddings for Interpretable Anchor-based Topic Inference | http://www.aclweb.org/anthology/D/D14D14-1138.pdf | author:David Mimno; Moontae Lee
+D14-1139 | Weakly-Supervised Learning with Cost-Augmented Contrastive Estimation | http://www.aclweb.org/anthology/D/D14D14-1139.pdf | author:Kevin Gimpel; Mohit Bansal
+D14-1140 | Donât Until the Final Verb Wait: Reinforcement Learning for Simultaneous Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1140.pdf | author:Alvin Grissom II; He He; Jordan Boyd-Graber; John Morgan; Hal Daumé III
+D14-1141 | PCFG Induction for Unsupervised Parsing and Language Modelling | http://www.aclweb.org/anthology/D/D14D14-1141.pdf | author:James Scicluna; Colin de la Higuera
+D14-1142 | Can characters reveal your native language? A language-independent approach to native language identification | http://www.aclweb.org/anthology/D/D14D14-1142.pdf | author:Radu Tudor Ionescu; Marius Popescu; Aoife Cahill
+D14-1143 | Formalizing Word Sampling for Vocabulary Prediction as Graph-based Active Learning | http://www.aclweb.org/anthology/D/D14D14-1143.pdf | author:Yo Ehara; Yusuke Miyao; Hidekazu Oiwa; Issei Sato; Hiroshi Nakagawa
+D14-1144 | Language Transfer Hypotheses with Linear SVM Weights | http://www.aclweb.org/anthology/D/D14D14-1144.pdf | author:Shervin Malmasi; Mark Dras
+D14-1145 | Predicting Dialect Variation in Immigrant Contexts Using Light Verb Constructions | http://www.aclweb.org/anthology/D/D14D14-1145.pdf | author:A. Seza Dogruoz; Preslav Nakov
+D14-1146 | Device-Dependent Readability for Improved Text Understanding | http://www.aclweb.org/anthology/D/D14D14-1146.pdf | author:A-Yeong Kim; Hyun-Je Song; Seong-Bae Park; Sang-Jo Lee
+D14-1147 | Predicting Chinese Abbreviations with Minimum Semantic Unit and Global Constraints | http://www.aclweb.org/anthology/D/D14D14-1147.pdf | author:Longkai Zhang; li li; Houfeng WANG; Xu Sun
+D14-1148 | Using Structured Events to Predict Stock Price Movement: An Empirical Investigation | http://www.aclweb.org/anthology/D/D14D14-1148.pdf | author:Xiao Ding; Yue Zhang; Ting Liu; Junwen Duan
+D14-1149 | Extracting Clusters of Specialist Terms from Unstructured Text | http://www.aclweb.org/anthology/D/D14D14-1149.pdf | author:Aaron Gerow
+D14-1150 | Citation-Enhanced Keyphrase Extraction from Research Papers: A Supervised Approach | http://www.aclweb.org/anthology/D/D14D14-1150.pdf | author:Cornelia Caragea; Florin Adrian Bulgarov; Andreea Godea; Sujatha Das Gollapalli
+D14-1151 | Using Mined Coreference Chains as a Resource for a Semantic Task | http://www.aclweb.org/anthology/D/D14D14-1151.pdf | author:Heike Adel; Hinrich Schütze
+D14-1152 | Financial Keyword Expansion via Continuous Word Vector Representations | http://www.aclweb.org/anthology/D/D14D14-1152.pdf | author:Ming-Feng Tsai; Chuan-Ju Wang
+D14-1153 | Intrinsic Plagiarism Detection using N-gram Classes | http://www.aclweb.org/anthology/D/D14D14-1153.pdf | author:Imene Bensalem; Paolo Rosso; Salim Chikhi
+D14-1154 | Verifiably Effective Arabic Dialect Identification | http://www.aclweb.org/anthology/D/D14D14-1154.pdf | author:Kareem Darwish; Hassan Sajjad; Hamdy Mubarak
+D14-1155 | Keystroke Patterns as Prosody in Digital Writings: A Case Study with Deceptive Reviews and Essays | http://www.aclweb.org/anthology/D/D14D14-1155.pdf | author:Ritwik Banerjee; Song Feng; Jun Seok Kang; Yejin Choi
+D14-1156 | Leveraging Effective Query Modeling Techniques for Speech Recognition and Summarization | http://www.aclweb.org/anthology/D/D14D14-1156.pdf | author:Kuan-Yu Chen; Shih-Hung Liu; Berlin Chen; Ea-Ee Jan; Hsin-Min Wang; Wen-Lian Hsu; Hsin-Hsi Chen
+D14-1157 | Staying on Topic: An Indicator of Power in Political Debates | http://www.aclweb.org/anthology/D/D14D14-1157.pdf | author:Vinodkumar Prabhakaran; Ashima Arora; Owen Rambow
+D14-1158 | Language Modeling with Power Low Rank Ensembles | http://www.aclweb.org/anthology/D/D14D14-1158.pdf | author:Ankur P. Parikh; Avneesh Saluja; Chris Dyer; Eric Xing
+D14-1159 | Modeling Biological Processes for Reading Comprehension | http://www.aclweb.org/anthology/D/D14D14-1159.pdf | author:Jonathan Berant; Vivek Srikumar; Pei-Chun Chen; Abby Vander Linden; Brittany Harding; Brad Huang; Peter Clark; Christopher D. Manning
+D14-1160 | Sensicon: An Automatically Constructed Sensorial Lexicon | http://www.aclweb.org/anthology/D/D14D14-1160.pdf | author:Serra Sinem Tekiroglu; Gözde Özbal; Carlo Strapparava
+D14-1161 | Word Semantic Representations using Bayesian Probabilistic Tensor Factorization | http://www.aclweb.org/anthology/D/D14D14-1161.pdf | author:Jingwei Zhang; Jeremy Salwen; Michael Glass; Alfio Gliozzo
+D14-1162 | Glove: Global Vectors for Word Representation | http://www.aclweb.org/anthology/D/D14D14-1162.pdf | author:Jeffrey Pennington; Richard Socher; Christopher Manning
+D14-1163 | Jointly Learning Word Representations and Composition Functions Using Predicate-Argument Structures | http://www.aclweb.org/anthology/D/D14D14-1163.pdf | author:Kazuma Hashimoto; Pontus Stenetorp; Makoto Miwa; Yoshimasa Tsuruoka
+D14-1164 | Combining Distant and Partial Supervision for Relation Extraction | http://www.aclweb.org/anthology/D/D14D14-1164.pdf | author:Gabor Angeli; Julie Tibshirani; Jean Wu; Christopher D. Manning
+D14-1165 | Typed Tensor Decomposition of Knowledge Bases for Relation Extraction | http://www.aclweb.org/anthology/D/D14D14-1165.pdf | author:Kai-Wei Chang; Wen-tau Yih; Bishan Yang; Christopher Meek
+D14-1166 | A convex relaxation for weakly supervised relation extraction | http://www.aclweb.org/anthology/D/D14D14-1166.pdf | author:Edouard Grave
+D14-1167 | Knowledge Graph and Text Jointly Embedding | http://www.aclweb.org/anthology/D/D14D14-1167.pdf | author:Zhen Wang; Jianwen Zhang; Jianlin Feng; Zheng Chen
+D14-1168 | Abstractive Summarization of Product Reviews Using Discourse Structure | http://www.aclweb.org/anthology/D/D14D14-1168.pdf | author:Shima Gerani; Yashar Mehdad; Giuseppe Carenini; Raymond T. Ng; Bita Nejat
+D14-1169 | Clustering Aspect-related Phrases by Leveraging Sentiment Distribution Consistency | http://www.aclweb.org/anthology/D/D14D14-1169.pdf | author:Li Zhao; Minlie Huang; Haiqiang Chen; Junjun Cheng; Xiaoyan Zhu
+D14-1170 | Automatic Generation of Related Work Sections in Scientific Papers: An Optimization Approach | http://www.aclweb.org/anthology/D/D14D14-1170.pdf | author:Yue Hu; Xiaojun Wan
+D14-1171 | Fast and Accurate Misspelling Correction in Large Corpora | http://www.aclweb.org/anthology/D/D14D14-1171.pdf | author:Octavian Popescu; Ngoc Phuoc An Vo
+D14-1172 | Assessing the Impact of Translation Errors on Machine Translation Quality with Mixed-effects Models | http://www.aclweb.org/anthology/D/D14D14-1172.pdf | author:Marcello Federico; Matteo Negri; Luisa Bentivogli; Marco Turchi
+D14-1173 | Refining Word Segmentation Using a Manually Aligned Corpus for Statistical Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1173.pdf | author:Xiaolin Wang; Masao Utiyama; Andrew Finch; Eiichiro Sumita
+D14-1174 | Improving Pivot-Based Statistical Machine Translation by Pivoting the Co-occurrence Count of Phrase Pairs | http://www.aclweb.org/anthology/D/D14D14-1174.pdf | author:Xiaoning Zhu; Zhongjun He; Hua Wu; Conghui Zhu; Haifeng Wang; Tiejun Zhao
+D14-1175 | Word Translation Prediction for Morphologically Rich Languages with Bilingual Neural Networks | http://www.aclweb.org/anthology/D/D14D14-1175.pdf | author:Ke M. Tran; Arianna Bisazza; Christof Monz
+D14-1176 | Dependency-Based Bilingual Language Models for Reordering in Statistical Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1176.pdf | author:Ekaterina Garmash; Christof Monz
+D14-1177 | Combining String and Context Similarity for Bilingual Term Alignment from Comparable Corpora | http://www.aclweb.org/anthology/D/D14D14-1177.pdf | author:Georgios Kontonatsios; Ioannis Korkontzelos; Jun'ichi Tsujii; Sophia Ananiadou
+D14-1178 | Random Manhattan Integer Indexing: Incremental L1 Normed Vector Space Construction | http://www.aclweb.org/anthology/D/D14D14-1178.pdf | author:Behrang Q. Zadeh; Siegfried Handschuh
+D14-1179 | Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1179.pdf | author:Kyunghyun Cho; Bart van Merrienboer; Caglar Gulcehre; Dzmitry Bahdanau; Fethi Bougares; Holger Schwenk; Yoshua Bengio
+D14-1180 | Type-based MCMC for Sampling Tree Fragments from Forests | http://www.aclweb.org/anthology/D/D14D14-1180.pdf | author:Xiaochang Peng; Daniel Gildea
+D14-1181 | Convolutional Neural Networks for Sentence Classification | http://www.aclweb.org/anthology/D/D14D14-1181.pdf | author:Yoon Kim
+D14-1182 | Sometimes Average is Best: The Importance of Averaging for Prediction using MCMC Inference in Topic Modeling | http://www.aclweb.org/anthology/D/D14D14-1182.pdf | author:Viet-An Nguyen; Jordan Boyd-Graber; Philip Resnik
+D14-1183 | Large-scale Reordering Model for Statistical Machine Translation using Dual Multinomial Logistic Regression | http://www.aclweb.org/anthology/D/D14D14-1183.pdf | author:Abdullah Alrajeh; Mahesan Niranjan
+D14-1184 | Improved Decipherment of Homophonic Ciphers | http://www.aclweb.org/anthology/D/D14D14-1184.pdf | author:Malte Nuhn; Julian Schamper; Hermann Ney
+D14-1185 | Cipher Type Detection | http://www.aclweb.org/anthology/D/D14D14-1185.pdf | author:Malte Nuhn; Kevin Knight
+D14-1186 | Joint Learning of Chinese Words, Terms and Keywords | http://www.aclweb.org/anthology/D/D14D14-1186.pdf | author:Ziqiang Cao; Sujian Li; Heng Ji
+D14-1187 | Cross-Lingual Part-of-Speech Tagging through Ambiguous Learning | http://www.aclweb.org/anthology/D/D14D14-1187.pdf | author:Guillaume Wisniewski; Nicolas Pécheux; Souhir Gahbiche-Braham; François Yvon
+D14-1188 | Comparing Representations of Semantic Roles for String-To-Tree Decoding | http://www.aclweb.org/anthology/D/D14D14-1188.pdf | author:Marzieh Bazrafshan; Daniel Gildea
+D14-1189 | Detecting Non-compositional MWE Components using Wiktionary | http://www.aclweb.org/anthology/D/D14D14-1189.pdf | author:Bahar Salehi; Paul Cook; Timothy Baldwin
+D14-1190 | Joint Emotion Analysis via Multi-task Gaussian Processes | http://www.aclweb.org/anthology/D/D14D14-1190.pdf | author:Daniel Beck; Trevor Cohn; Lucia Specia
+D14-1191 | Detecting Latent Ideology in Expert Text: Evidence From Academic Papers in Economics | http://www.aclweb.org/anthology/D/D14D14-1191.pdf | author:Zubin Jelveh; Bruce Kogut; Suresh Naidu
+D14-1192 | A Model of Individual Differences in Gaze Control During Reading | http://www.aclweb.org/anthology/D/D14D14-1192.pdf | author:Niels Landwehr; Sebastian Arzt; Tobias Scheffer; Reinhold Kliegl
+D14-1193 | Muli-label Text Categorization with Hidden Components | http://www.aclweb.org/anthology/D/D14D14-1193.pdf | author:li li; Longkai Zhang; Houfeng WANG
+D14-1194 | #TagSpace: Semantic Embeddings from Hashtags | http://www.aclweb.org/anthology/D/D14D14-1194.pdf | author:Jason Weston; Sumit Chopra; Keith Adams
+D14-1195 | Joint Decoding of Tree Transduction Models for Sentence Compression | http://www.aclweb.org/anthology/D/D14D14-1195.pdf | author:Jin-ge Yao; Xiaojun Wan; Jianguo Xiao
+D14-1196 | Dependency-based Discourse Parser for Single-Document Summarization | http://www.aclweb.org/anthology/D/D14D14-1196.pdf | author:Yasuhisa Yoshida; Jun Suzuki; Tsutomu Hirao; Masaaki Nagata
+D14-1197 | Improving Word Alignment using Word Similarity | http://www.aclweb.org/anthology/D/D14D14-1197.pdf | author:Theerawat Songyot; David Chiang
+D14-1198 | Constructing Information Networks Using One Single Model | http://www.aclweb.org/anthology/D/D14D14-1198.pdf | author:Qi Li; Heng Ji; Yu HONG; Sujian Li
+D14-1199 | Event Role Extraction using Domain-Relevant Word Representations | http://www.aclweb.org/anthology/D/D14D14-1199.pdf | author:Emanuela Boros; Romaric Besançon; Olivier Ferret; Brigitte Grau
+D14-1200 | Modeling Joint Entity and Relation Extraction with Table Representation | http://www.aclweb.org/anthology/D/D14D14-1200.pdf | author:Makoto Miwa; Yutaka Sasaki
+D14-1201 | ZORE: A Syntax-based System for Chinese Open Relation Extraction | http://www.aclweb.org/anthology/D/D14D14-1201.pdf | author:Likun Qiu; Yue Zhang
+D14-1202 | Coarse-grained Candidate Generation and Fine-grained Re-ranking for Chinese Abbreviation Prediction | http://www.aclweb.org/anthology/D/D14D14-1202.pdf | author:Longkai Zhang; Houfeng WANG; Xu Sun
+D14-1203 | Type-Aware Distantly Supervised Relation Extraction with Linked Arguments | http://www.aclweb.org/anthology/D/D14D14-1203.pdf | author:Mitchell Koch; John Gilmer; Stephen Soderland; Daniel S. Weld
+D14-1204 | Automatic Inference of the Tense of Chinese Events Using Implicit Linguistic Information | http://www.aclweb.org/anthology/D/D14D14-1204.pdf | author:Yuchen Zhang; Nianwen Xue
+D14-1205 | Joint Inference for Knowledge Base Population | http://www.aclweb.org/anthology/D/D14D14-1205.pdf | author:Liwei Chen; Yansong Feng; Jinghui Mo; Songfang Huang; Dongyan Zhao
+D14-1206 | Combining Visual and Textual Features for Information Extraction from Online Flyers | http://www.aclweb.org/anthology/D/D14D14-1206.pdf | author:Emilia Apostolova; Noriko Tomuro
+D14-1207 | CTPs: Contextual Temporal Profiles for Time Scoping Facts using State Change Detection | http://www.aclweb.org/anthology/D/D14D14-1207.pdf | author:Derry Tanti Wijaya; Ndapandula Nakashole; Tom M. Mitchell
+D14-1208 | Noisy Or-based model for Relation Extraction using Distant Supervision | http://www.aclweb.org/anthology/D/D14D14-1208.pdf | author:Ajay Nagesh; Gholamreza Haffari; Ganesh Ramakrishnan
+D14-1209 | Search-Aware Tuning for Machine Translation | http://www.aclweb.org/anthology/D/D14D14-1209.pdf | author:Lemao Liu; Liang Huang
+D14-1210 | Latent-Variable Synchronous CFGs for Hierarchical Translation | http://www.aclweb.org/anthology/D/D14D14-1210.pdf | author:Avneesh Saluja; Chris Dyer; Shay B. Cohen
+D14-1211 | Gender and Power: How Gender and Gender Environment Affect Manifestations of Power | http://www.aclweb.org/anthology/D/D14D14-1211.pdf | author:Vinodkumar Prabhakaran; Emily E. Reid; Owen Rambow
+D14-1212 | Online topic model for Twitter considering dynamics of user interests and topic trends | http://www.aclweb.org/anthology/D/D14D14-1212.pdf | author:Kentaro Sasaki; Tomohiro Yoshikawa; Takeshi Furuhashi
+D14-1213 | Self-disclosure topic model for classifying and analyzing Twitter conversations | http://www.aclweb.org/anthology/D/D14D14-1213.pdf | author:JinYeong Bak; Chin-Yew Lin; Alice Oh
+D14-1214 | Major Life Event Extraction from Twitter based on Congratulations/Condolences Speech Acts | http://www.aclweb.org/anthology/D/D14D14-1214.pdf | author:Jiwei Li; Alan Ritter; Claire Cardie; Eduard Hovy
+D14-1215 | Brighter than Gold: Figurative Language in User Generated Comparisons | http://www.aclweb.org/anthology/D/D14D14-1215.pdf | author:Vlad Niculae; Cristian Danescu-Niculescu-Mizil
+D14-1216 | Classifying Idiomatic and Literal Expressions Using Topic Models and Intensity of Emotions | http://www.aclweb.org/anthology/D/D14D14-1216.pdf | author:Jing Peng; Anna Feldman; Ekaterina Vylomova
+D14-1217 | Learning Spatial Knowledge for Text to 3D Scene Generation | http://www.aclweb.org/anthology/D/D14D14-1217.pdf | author:Angel Chang; Manolis Savva; Christopher D. Manning
+D14-1218 | A Model of Coherence Based on Distributed Sentence Representation | http://www.aclweb.org/anthology/D/D14D14-1218.pdf | author:Jiwei Li; Eduard Hovy
+D14-1219 | Discriminative Reranking of Discourse Parses Using Tree Kernels | http://www.aclweb.org/anthology/D/D14D14-1219.pdf | author:Shafiq Joty; Alessandro Moschitti
+D14-1220 | Recursive Deep Models for Discourse Parsing | http://www.aclweb.org/anthology/D/D14D14-1220.pdf | author:Jiwei Li; Rumeng Li; Eduard Hovy
+D14-1221 | Recall Error Analysis for Coreference Resolution | http://www.aclweb.org/anthology/D/D14D14-1221.pdf | author:Sebastian Martschat; Michael Strube
+D14-1222 | A Rule-Based System for Unrestricted Bridging Resolution: Recognizing Bridging Anaphora and Finding Links to Antecedents | http://www.aclweb.org/anthology/D/D14D14-1222.pdf | author:Yufang Hou; Katja Markert; Michael Strube
+D14-1223 | Resolving Referring Expressions in Conversational Dialogs for Natural User Interfaces | http://www.aclweb.org/anthology/D/D14D14-1223.pdf | author:Asli Celikyilmaz; Zhaleh Feizollahi; Dilek Hakkani-Tur; Ruhi Sarikaya
+D14-1224 | Building Chinese Discourse Corpus with Connective-driven Dependency Tree Structure | http://www.aclweb.org/anthology/D/D14D14-1224.pdf | author:Yancui Li; wenhe feng; jing sun; Fang Kong; Guodong Zhou
+D14-1225 | Prune-and-Score: Learning for Greedy Coreference Resolution | http://www.aclweb.org/anthology/D/D14D14-1225.pdf | author:Chao Ma; Janardhan Rao Doppa; J. Walker Orr; Prashanth Mannem; Xiaoli Fern; Tom Dietterich; Prasad Tadepalli
+D14-1226 | Summarizing Online Forum Discussions – Can Dialog Acts of Individual Messages Help? | http://www.aclweb.org/anthology/D/D14D14-1226.pdf | author:Sumit Bhatia; Prakhar Biyani; Prasenjit Mitra

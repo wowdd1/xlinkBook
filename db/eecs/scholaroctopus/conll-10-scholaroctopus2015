@@ -1,0 +1,50 @@
+W10-2901 | Improvements in Unsupervised Co-Occurrence Based Parsing | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2901.pdf | author:Christian HÃ¤nig
+W10-2902 | Viterbi Training Improves Unsupervised Dependency Parsing | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2902.pdf | author:Valentin I. Spitkovsky; Hiyan Alshawi; Daniel Jurafsky; Christopher D. Manning
+W10-2903 | Driving Semantic Parsing from the Worldâs Response | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2903.pdf | author:James Clarke; Dan Goldwasser; Ming-Wei Chang; Dan Roth
+W10-2904 | Efficient, Correct, Unsupervised Learning for Context-Sensitive Languages | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2904.pdf | author:Alexander Clark
+W10-2905 | Identifying Patterns for Unsupervised Grammar Induction | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2905.pdf | author:JesÃºs SantamarÃ­a; Lourdes Araujo
+W10-2906 | Learning Better Monolingual Models with Unannotated Bilingual Text | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2906.pdf | author:David Burkett; Slav Petrov; John Blitzer; Dan Klein
+W10-2907 | (Invited Talk) Clueless: Explorations in Unsupervised, Knowledge-Lean Extraction of Lexical-Semantic Information | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2907.pdf | author:Lillian Lee
+W10-2908 | (Invited Talk) Bayesian Hidden Markov Models and Extensions | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2908.pdf | author:Zoubin Ghahramani
+W10-2909 | Improved Unsupervised POS Induction Using Intrinsic Clustering Quality and a Zipfian Constraint | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2909.pdf | author:Roi Reichart; Raanan Fattal; Ari Rappoport
+W10-2910 | Syntactic and Semantic Structure for Opinion Expression Detection | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2910.pdf | author:Richard Johansson; Alessandro Moschitti
+W10-2911 | Type Level Clustering Evaluation: New Measures and a POS Induction Case Study | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2911.pdf | author:Roi Reichart; Omri Abend; Ari Rappoport
+W10-2912 | Recession Segmentation: Simpler Online Word Segmentation Using Limited Resources | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2912.pdf | author:Constantine Lignos; Charles Yang
+W10-2913 | Computing Optimal Alignments for the IBM-3 Translation Model | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2913.pdf | author:Thomas Schoenemann
+W10-2914 | Semi-Supervised Recognition of Sarcasm in Twitter and Amazon | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2914.pdf | author:Dmitry Davidov; Oren Tsur; Ari Rappoport
+W10-2915 | Learning Probabilistic Synchronous CFGs for Phrase-Based Translation | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2915.pdf | author:Markos Mylonakis; Khalil Simaâan
+W10-2916 | A Semi-Supervised Batch-Mode Active Learning Strategy for Improved Statistical Machine Translation | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2916.pdf | author:Sankaranarayanan Ananthakrishnan; Rohit Prasad; David Stallard; Prem Natarajan
+W10-2917 | Improving Word Alignment by Semi-Supervised Ensemble | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2917.pdf | author:Shujian Huang; Kangxi Li; Xinyu Dai; Jiajun Chen
+W10-2918 | A Comparative Study of Bayesian Models for Unsupervised Sentiment Detection | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2918.pdf | author:Chenghua Lin; Yulan He; Richard Everson
+W10-2919 | A Hybrid Approach to Emotional Sentence Polarity and Intensity Classification | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2919.pdf | author:Jorge Carrillo de Albornoz; Laura Plaza; Pablo GervÃ¡s
+W10-2920 | Cross-Caption Coreference Resolution for Automatic Image Understanding | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2920.pdf | author:Micah Hodosh; Peter Young; Cyrus Rashtchian; Julia Hockenmaier
+W10-2921 | Improved Natural Language Learning via Variance-Regularization Support Vector Machines | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2921.pdf | author:Shane Bergsma; Dekang Lin; Dale Schuurmans
+W10-2922 | Online Entropy-Based Model of Lexical Category Acquisition | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2922.pdf | author:Grzegorz ChrupaÅa; Afra Alishahi
+W10-2923 | Tagging and Linking Web Forum Posts | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2923.pdf | author:Su Nam Kim; Li Wang; Timothy Baldwin
+W10-2924 | Joint Entity and Relation Extraction Using Card-Pyramid Parsing | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2924.pdf | author:Rohit J. Kate; Raymond Mooney
+W10-2925 | Distributed Asynchronous Online Learning for Natural Language Processing | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2925.pdf | author:Kevin Gimpel; Dipanjan Das; Noah A. Smith
+W10-2926 | On Reverse Feature Engineering of Syntactic Tree Kernels | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2926.pdf | author:Daniele Pighin; Alessandro Moschitti
+W10-2927 | Inspecting the Structural Biases of Dependency Parsing Algorithms | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-2927.pdf | author:Yoav Goldberg; Michael Elhadad
+W10-3001 | The CoNLL-2010 Shared Task: Learning to Detect Hedges and their Scope in Natural Language Text | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3001.pdf | author:RichÃ¡rd Farkas; Veronika Vincze; GyÃ¶rgy MÃ³ra; JÃ¡nos Csirik; GyÃ¶rgy Szarvas
+W10-3002 | A Cascade Method for Detecting Hedges and their Scope in Natural Language Text | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3002.pdf | author:Buzhou Tang; Xiaolong Wang; Xuan Wang; Bo Yuan; Shixi Fan
+W10-3003 | Detecting Speculative Language Using Syntactic Dependencies and Logistic Regression | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3003.pdf | author:Andreas Vlachos; Mark Craven
+W10-3004 | A Hedgehop over a Max-Margin Framework Using Hedge Cues | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3004.pdf | author:Maria Georgescul
+W10-3005 | Detecting Hedge Cues and their Scopes with Average Perceptron | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3005.pdf | author:Feng Ji; Xipeng Qiu; Xuanjing Huang
+W10-3006 | Memory-Based Resolution of In-Sentence Scopes of Hedge Cues | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3006.pdf | author:Roser Morante; Vincent Van Asch; Walter Daelemans
+W10-3007 | Resolving Speculation: MaxEnt Cue Classification and Dependency-Based Scope Rules | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3007.pdf | author:Erik Velldal; Lilja Ãvrelid; Stephan Oepen
+W10-3008 | Combining Manual Rules and Supervised Learning for Hedge Cue and Scope Detection | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3008.pdf | author:Marek Rei; Ted Briscoe
+W10-3009 | Hedge Detection Using the RelHunter Approach | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3009.pdf | author:Eraldo Fernandes; Carlos Crestana; Ruy MilidiÃº
+W10-3010 | A High-Precision Approach to Detecting Hedges and their Scopes | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3010.pdf | author:Halil Kilicoglu; Sabine Bergler
+W10-3011 | Exploiting Rich Features for Detecting Hedges and their Scope | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3011.pdf | author:Xinxin Li; Jianping Shen; Xiang Gao; Xuan Wang
+W10-3012 | Uncertainty Detection as Approximate Max-Margin Sequence Labelling | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3012.pdf | author:Oscar TÃ¤ckstrÃ¶m; Sumithra Velupillai; Martin Hassel; Gunnar Eriksson; Hercules Dalianis; Jussi Karlgren
+W10-3013 | Hedge Detection and Scope Finding by Sequence Labeling with Procedural Feature Selection | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3013.pdf | author:Shaodian Zhang; Hai Zhao; Guodong Zhou; Bao-Liang Lu
+W10-3014 | Learning to Detect Hedges and their Scope Using CRF | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3014.pdf | author:Qi Zhao; Chengjie Sun; Bingquan Liu; Yong Cheng
+W10-3015 | Exploiting Multi-Features to Detect Hedges and their Scope in Biomedical Texts | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3015.pdf | author:Huiwei Zhou; Xiaoyan Li; Degen Huang; Zezhong Li; Yuansheng Yang
+W10-3016 | A Lucene and Maximum Entropy Model Based Hedge Detection System | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3016.pdf | author:Lin Chen; Barbara Di Eugenio
+W10-3017 | HedgeHunter: A System for Hedge Detection and Uncertainty Classification | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3017.pdf | author:David Clausen
+W10-3018 | Exploiting CCG Structures with Tree Kernels for Speculation Detection | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3018.pdf | author:Liliana Mamani SÃ¡nchez; Baoli Li; Carl Vogel
+W10-3019 | Uncertainty Learning Using SVMs and CRFs | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3019.pdf | author:Vinodkumar Prabhakaran
+W10-3020 | Features for Detecting Hedge Cues | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3020.pdf | author:Nobuyuki Shimizu; Hiroshi Nakagawa
+W10-3021 | A Simple Ensemble Method for Hedge Identification | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3021.pdf | author:Ferenc Szidarovszky; IllÃ©s Solt; Domonkos Tikk
+W10-3022 | A Baseline Approach for Detecting Sentences Containing Uncertainty | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3022.pdf | author:Erik Tjong Kim Sang
+W10-3023 | Hedge Classification with Syntactic Dependency Features Based on an Ensemble Classifier | http://www.aclweb.org/anthology/K/K10../../W/W10/W10-3023.pdf | author:Yi Zheng; Qifeng Dai; Qiming Luo; Enhong Chen
