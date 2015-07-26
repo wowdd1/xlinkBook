@@ -179,7 +179,14 @@ class ScholarOctopusSpider(Spider):
         th_list = []
         td_list = []
         for th in soup.find_all('th'):
-            th_list.append(th.text.replace(":", ""))
+            th_text = th.text
+            if th_text.find(":") != -1:
+                th_text = th_text.replace(":", "")
+            if th_text.find("*") != -1:
+                th_text = th_text.replace("*", "")
+            if th_text.find("/") != -1:
+                th_text = th_text.replace("/", "-")
+            th_list.append(th_text)
         for td in soup.find_all('td'):
             td_list.append(td.prettify())
 
