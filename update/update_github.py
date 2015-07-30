@@ -41,7 +41,7 @@ class GithubSpider(Spider):
 
     result = ""
     request_times = 0
-    token = '2193754a92b5e1d9bbd2e3c3bbb7186fa3fd0b1f'
+    token = '533fb8ad0fffcce80371c5e48ab6921a8131eae7'
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
