@@ -41,7 +41,7 @@ class GithubSpider(Spider):
 
     result = ""
     request_times = 0
-    token = 'bb0f665abd582ba2904fb762afdf8eadb9324b89'
+    token = ''
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -70,7 +70,7 @@ class GithubSpider(Spider):
             print "wait 60s..."
             time.sleep(60) 
 
-    def processPageData(self, f, file_name, lang, url):
+    def processPageData(self, f, file_name, lang, url, name_contain=''):
         #self.checkRequestTimes()
         #print "url: " + url
         r = self.requestWithAuth(url)
@@ -86,6 +86,9 @@ class GithubSpider(Spider):
                 return
             if k == "items":
                 for item in v:
+                    if name_contain != "" and item["name"].find(name_contain) == -1:
+                        continue
+
                     data = str(item['stargazers_count']) + " " + item["name"] + " " + item['html_url']
                     print data
                     description = ""
@@ -95,7 +98,7 @@ class GithubSpider(Spider):
                     self.count = self.count + 1
         return total_size
 
-    def processGithubData(self, lang, large_than_stars, per_page):
+    def processGithubData(self, lang, large_than_stars, per_page, name_contain=''):
         file_name = self.get_file_name("eecs/github/" + lang, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
@@ -105,7 +108,7 @@ class GithubSpider(Spider):
 
         print "processing " + lang + " url: " + url
 
-        total_size = self.processPageData(f, file_name, lang, url)
+        total_size = self.processPageData(f, file_name, lang, url, name_contain)
         if total_size > 1000:
             total_size = 1000
         while total_size > (page *per_page):
@@ -225,9 +228,14 @@ class GithubSpider(Spider):
             print self.result + " is not be updated"
         
         keywords = ['awesome', 'spark', 'machine learning', 'deep learning', 'android']
+        star = 300
+        per_page = 100
         for keyword in keywords:
             print "get " + keyword + " data..."
-            self.processGithubData(keyword, 300, 100)
+            if keyword == "awesome":
+                self.processGithubData(keyword, star, per_page, keyword)
+            else:
+                self.processGithubData(keyword, star, per_page)
         
         print "get user data..."
         self.processGithubiUserData("", 500, 100)
