@@ -34,12 +34,36 @@
 [submodule "paper/icml2013preview"]
 	path = paper/icml2013preview
 	url = https://github.com/benhamner/icml2013preview.git
-[submodule "external/Qix"]
-	path = external/Qix
-	url = https://github.com/ty4z2008/Qix.git
 [submodule "external/Big-Data-Resources"]
 	path = external/Big-Data-Resources
 	url = https://github.com/Flowerowl/Big-Data-Resources.git
 [submodule "external/awesome-deep-learning"]
 	path = external/awesome-deep-learning
 	url = https://github.com/ChristosChristofidis/awesome-deep-learning.git
+[submodule "external/awesome"]
+	path = external/awesome
+	url = https://github.com/sindresorhus/awesome
+[submodule "external/awesome-courses"]
+	path = external/awesome-courses
+	url = https://github.com/prakhar1989/awesome-courses
+[submodule "external/awesome-public-datasets"]
+	path = external/awesome-public-datasets
+	url = https://github.com/caesar0301/awesome-public-datasets
+[submodule "external/awesome-bigdata"]
+	path = external/awesome-bigdata
+	url = https://github.com/onurakpolat/awesome-bigdata
+[submodule "external/awesome-datascience"]
+	path = external/awesome-datascience
+	url = https://github.com/okulbilisim/awesome-datascience
+[submodule "external/awesome-artificial-intelligence"]
+	path = external/awesome-artificial-intelligence
+	url = https://github.com/owainlewis/awesome-artificial-intelligence
+[submodule "external/awesome-algorithms"]
+	path = external/awesome-algorithms
+	url = https://github.com/tayllan/awesome-algorithms
+[submodule "external/awesome-talks"]
+	path = external/awesome-talks
+	url = https://github.com/JanVanRyswyck/awesome-talks
+[submodule "external/awesome-computer-vision"]
+	path = external/awesome-computer-vision
+	url = https://github.com/jbhuang0604/awesome-computer-vision
