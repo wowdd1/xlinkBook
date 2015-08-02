@@ -41,7 +41,7 @@ class GithubSpider(Spider):
 
     result = ""
     request_times = 0
-    token = ''
+    token = 'bb0f665abd582ba2904fb762afdf8eadb9324b89'
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -218,7 +218,6 @@ class GithubSpider(Spider):
             print "no need upgrade\n"
 
     def doWork(self):
-        ###
         for lang in self.lang_list:
             self.processGithubData(lang, 500, 100)
 
