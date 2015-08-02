@@ -27,8 +27,8 @@ class MergersAndAcquisitionsSpider(Spider):
             #print table
             soup = BeautifulSoup(table.prettify())
             count = 0
-            desc = ''
             title = ''
+            desc = 'description:'
             file_name = self.get_file_name('economics/' + key, self.school)
             file_lines = self.countFileLineNum(file_name)
             f = self.open_db(file_name + ".tmp")
@@ -45,7 +45,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = ''
+                        desc = 'description:'
                         print '----------------------------------'
                     if count != 1 and count != 8:
                         if count == 2:
@@ -61,7 +61,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = ''
+                        desc = 'description:'
                         print '----------------------------------'
                     if count != 1 and count != 9 and count != 10:
                         if count == 2:
@@ -79,7 +79,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = ''
+                        desc = 'description:'
                         print '----------------------------------'
                     if count != 1 and count != 7:
                         if count == 2:
@@ -95,7 +95,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = ''
+                        desc = 'description:'
                         print '----------------------------------'
                     if count != 1 and count != 7 and count != 8:
                         if count == 2:
@@ -111,7 +111,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = ''
+                        desc = 'description:'
                         print '----------------------------------'
                     if count != 6:
                         if count == 1:
@@ -127,7 +127,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = ''
+                        desc = 'description:'
                         print '----------------------------------'
                     if count != 1 and count != 8:
                         if count == 2:
@@ -143,7 +143,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = ''
+                        desc = 'description:'
                         print '----------------------------------'
                     if count != 1 and count != 8:
                         if count == 2:

@@ -103,8 +103,8 @@ class GithubSpider(Spider):
         url = self.getUrl(lang, page, str(large_than_stars), str(per_page))
         self.count = 0
 
-        print "processing " + lang
- 
+        print "processing " + lang + " url: " + url
+
         total_size = self.processPageData(f, file_name, lang, url)
         if total_size > 1000:
             total_size = 1000
@@ -223,10 +223,10 @@ class GithubSpider(Spider):
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
-        keywords = ['spark', 'machine learning', 'deep leanrning', 'android']
+        keywords = ['spark', 'machine learning', 'deep learning', 'android']
         for keyword in keywords:
             print "get " + keyword + " data..."
-            self.processGithubData(keyword, 350, 100)
+            self.processGithubData(keyword, 300, 100)
         
         print "get user data..."
         self.processGithubiUserData("", 500, 100)
