@@ -41,7 +41,7 @@ class GithubSpider(Spider):
 
     result = ""
     request_times = 0
-    token = '533fb8ad0fffcce80371c5e48ab6921a8131eae7'
+    token = ''
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -218,12 +218,14 @@ class GithubSpider(Spider):
             print "no need upgrade\n"
 
     def doWork(self):
+        ###
         for lang in self.lang_list:
             self.processGithubData(lang, 500, 100)
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
-        keywords = ['spark', 'machine learning', 'deep learning', 'android']
+        
+        keywords = ['awesome', 'spark', 'machine learning', 'deep learning', 'android']
         for keyword in keywords:
             print "get " + keyword + " data..."
             self.processGithubData(keyword, 300, 100)
