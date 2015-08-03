@@ -227,7 +227,7 @@ class GithubSpider(Spider):
         if len(self.result) > 1:
             print self.result + " is not be updated"
 
-        keywords = ['awesome', 'spark', 'machine learning', 'deep learning', 'android']
+        keywords = ['awesome', 'nlp', 'spark', 'machine learning', 'deep learning', 'android']
         star = 300
         per_page = 100
         for keyword in keywords:
