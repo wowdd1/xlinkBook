@@ -67,3 +67,6 @@
 [submodule "external/awesome-computer-vision"]
 	path = external/awesome-computer-vision
 	url = https://github.com/jbhuang0604/awesome-computer-vision
+[submodule "external/Qix"]
+	path = external/Qix
+	url = https://github.com/ty4z2008/Qix.git
