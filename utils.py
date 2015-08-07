@@ -147,6 +147,7 @@ class Utils:
                          'coursegraph' : 'http://coursegraph.com/search_results/',\
                          'moozhi' : 'http://www.moozhi.com/search/course?keywords=',\
                          'aminer' : 'http://aminer.org/search/',\
+                         'chaoxing' : 'http://video.chaoxing.com/s?order=0&type=all&sw=',\
                          'youku' : 'http://www.soku.com/search_playlist/q_',\
                          'tudou' : 'http://www.soku.com/t/npsearch/'}
 

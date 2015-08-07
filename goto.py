@@ -49,7 +49,7 @@ def search(keyword, engin, search_keyword = False):
         keyword = record.get_title().strip()
 
     if search_video:
-        engin_list = ['youtube', 'coursera', 'edx', 'googlevideo', 'youku', 'tudou', 'videolectures']
+        engin_list = ['youtube', 'coursera', 'edx', 'googlevideo', 'chaoxing', 'youku', 'tudou', 'videolectures']
         for e in engin_list:
             openWeb(e, keyword, url)
     else:
