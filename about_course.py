@@ -5,7 +5,6 @@ import sys
 import getopt
 from utils import Utils
 
-
 def usage():
     print 'usage:'
     print '\t-h,--help: print help message.'
@@ -17,9 +16,20 @@ def print_course(course_num, subject):
     record_list = util.getRecord(course_num, use_subject=subject, return_all=True)
     if record_list == None:
         return
+    course_name = ''
     for record in record_list: 
         if record.get_id().strip() != '':
+            course_name = record.get_title()
             os.system("./list.py -i " + record.get_path() + " -c 1 -f '^" + course_num + "' -d -r 10 -b 3")
+    similarity_courses(course_name)
+
+def similarity_courses(courseName):
+    os.chdir("analysis/sentence2vec")
+    
+    os.popen('python ./demo.py -c "' + courseName + '"')
+
+    #subprocess.Popen(["/usr/bin/python", os.getcwd() + "/analysis/sentence2vec/demo.py"])
+    
 
 def main(argv):
     use_subject = ''

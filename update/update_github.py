@@ -17,7 +17,6 @@ class GithubSpider(Spider):
         "CSS",
         "D",
         "Dart",
-        "Emacs Lisp",
         "Erlang",
         "F#",
         "Go",

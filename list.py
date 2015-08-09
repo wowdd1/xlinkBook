@@ -481,7 +481,10 @@ def print_list(all_lines, file_name = ''):
                 if output_with_color == True:
                     print_with_color(content)
                 else:
-                    print content
+                    try:
+                       print content
+                    except:
+                        temp = 1
                 if output_with_describe == True:    
                     for l in range(0, len(describe_lines)):
                         print get_line(describe_lines[l], 0, 2, i)
@@ -505,7 +508,10 @@ def print_list(all_lines, file_name = ''):
                 if output_with_color == True:
                     print_with_color(content)
                 else:
-                    print content
+                    try:
+                        print content
+                    except:
+                        temp = 1
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         print get_line(describe_lines[l], 0, 1, i)
