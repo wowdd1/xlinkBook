@@ -8,8 +8,10 @@ subject_dict = {\
     "Architecture" : "architecture",\
     "Art" : "art-culture",\
     "Culture" : "art-culture",\
+    "brain" : "brain-and-cognitive-sciences",\
     "Biology" : "biology-life-sciences",\
     "Biological" : "biology-life-sciences",\
+    "Cognitive Sciences" : "brain-and-cognitive-sciences",\
     "Life Sciences" : "biology-life-sciences",\
     "Business" : "business-management",\
     "Management" : "business-management",\
@@ -41,13 +43,15 @@ subject_dict = {\
     "Humanities" : "humanities",\
     "Human Resource Management" : 'economics',\
     "Law" : "law",\
+    "Linguistic" : "linguistics-and-philosophy",\
     "Literature" : "literature",\
     "Math" : "mathematics",\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "music",\
-    "Philanthropy" : "philanthropy",\
-    "Philosophy" : "philosophy",\
+    "Philanthropy" : "linguistics-and-philosophy",\
+    "Philosophy" : "linguistics-and-philosophy",\
+    "Psychology" : "psychology",\
     "Ethics" : "ethics",\
     'Operations Information & Technology' : 'economics',\
     'Organizational Behavior' : 'economics',\
@@ -63,12 +67,15 @@ need_update_subject_list = [
     'mathematics',
     #'business-management',
     'economics',
-    'rank',
+    #'rank',
     #'physics',
+    #'brain',
     #'biology-life-sciences',
     #'literature',
-    #'philosophy',
+    #'linguistics-and-philosophy',
+    #"psychology",
     'statistics-data-analysis'
 ]
+
 def print_all_subject():
     print ' , '.join(subject_dict.values())
