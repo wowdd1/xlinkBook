@@ -68,6 +68,6 @@ for i in range(0, len(model.sents)):
 logging.info("similarity data:")
 for k, v in [(k,result[k]) for k in sorted(result.keys(), reverse = True)]:
     #print float(k)
-    if (float(k) > 0.8 and float(k) < 1):
+    if (float(k) > 0.5506 and float(k) < 1):
         #print k + " " + v
         logging.info("      " + v)
