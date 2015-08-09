@@ -8,7 +8,7 @@ subject_dict = {\
     "Architecture" : "architecture",\
     "Art" : "art-culture",\
     "Culture" : "art-culture",\
-    "brain" : "brain-and-cognitive-sciences",\
+    "Brain" : "brain-and-cognitive-sciences",\
     "Biology" : "biology-life-sciences",\
     "Biological" : "biology-life-sciences",\
     "Cognitive Sciences" : "brain-and-cognitive-sciences",\
@@ -49,6 +49,7 @@ subject_dict = {\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "music",\
+    "Neurobiology" : "brain-and-cognitive-sciences",\
     "Philanthropy" : "linguistics-and-philosophy",\
     "Philosophy" : "linguistics-and-philosophy",\
     "Psychology" : "psychology",\
@@ -56,6 +57,7 @@ subject_dict = {\
     'Operations Information & Technology' : 'economics',\
     'Organizational Behavior' : 'economics',\
     "Physics" : "physics",\
+    "Physical" : "physics",\
     'Strategic Management' : 'economics',\
     "Social Sciences" : "social-sciences",\
     "Science" : "science",\
@@ -69,7 +71,7 @@ need_update_subject_list = [
     'economics',
     #'rank',
     #'physics',
-    #'brain',
+    #'brain-and-cognitive-sciences',
     #'biology-life-sciences',
     #'literature',
     #'linguistics-and-philosophy',
