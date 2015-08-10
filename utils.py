@@ -123,6 +123,7 @@ class Utils:
     search_engin_dict = {'google' : 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=',\
                          'googlevideo' : 'https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q=',\
                          'scholar' : 'https://scholar.google.com/scholar?hl=en&q=',\
+                         'arxiv' : 'http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1',\
                          'baidu' : 'http://www.baidu.com/s?word=',\
                          'bing' : 'http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq=',\
                          'academic' : 'http://academic.research.microsoft.com/Search?query=',\

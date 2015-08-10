@@ -54,12 +54,15 @@ def search(keyword, engin, search_keyword = False):
             openWeb(e, keyword, url)
     else:
         openWeb(engin, keyword, url)
+
 def openWeb(engin, keyword, url):
     if engin.lower() == 'edx':
         keyword = keyword.replace(' ', '+')
     utils = Utils()
     if engin != '':
         url = utils.getEnginUrl(engin) + keyword
+    if engin == "arxiv":
+        url = url.replace("$", keyword)
 
     if url != '':
         openBrowser(url)
