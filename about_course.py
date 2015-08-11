@@ -26,7 +26,7 @@ def print_course(course_num, subject):
 def similarity_courses(courseName):
     os.chdir("analysis/sentence2vec")
     
-    os.popen('python ./demo.py -c "' + courseName + '"')
+    os.popen('python ./similarity.py -c "' + courseName + '"')
 
     #subprocess.Popen(["/usr/bin/python", os.getcwd() + "/analysis/sentence2vec/demo.py"])
     
