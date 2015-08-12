@@ -7,6 +7,7 @@ subject_dict = {\
     'Accounting' : 'economics',\
     "Architecture" : "architecture",\
     "Art" : "art-culture",\
+    "Anthropology" : "anthropology",\
     "Culture" : "art-culture",\
     "Brain" : "brain-and-cognitive-sciences",\
     "Biology" : "biology-life-sciences",\
@@ -65,6 +66,7 @@ subject_dict = {\
     "Data Analysis" : "statistics-data-analysis"}
 
 need_update_subject_list = [
+    #'anthropology',
     'eecs',
     'mathematics',
     #'business-management',
