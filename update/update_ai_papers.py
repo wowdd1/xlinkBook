@@ -5,10 +5,10 @@ from spider import *
 sys.path.append("..")
 from utils import Utils
 
-class ScholarOctopusSpider(Spider):
+class AiPapersSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
-        self.school = 'ScholarOctopus'
+        self.school = 'aipapers'
         self.util = Utils()
 
     def doWork(self, jobj=None):
@@ -26,7 +26,7 @@ class ScholarOctopusSpider(Spider):
         for key, v in sorted([(k,paper_dict[k]) for k in sorted(paper_dict.keys())]):
             #print key + ' paper:' + str(len(paper_dict[key]))
             print 'processing ' + key
-            file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + key, self.school.lower())
+            file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + key, "scholaroctopus")
             file_lines = self.countFileLineNum(file_name)
             if file_lines == len(v):
                 continue
@@ -200,7 +200,7 @@ class ScholarOctopusSpider(Spider):
                     
             for a in soup2.find_all('a'):
                 if a['href'][1 : 2] == "/":
-                    file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + th_list[i] + "-" + a.text.strip(), self.school.lower())
+                    file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + th_list[i] + "-" + a.text.strip(), "scholaroctopus")
                     file_lines = self.countFileLineNum(file_name)
                     f = self.open_db(file_name + ".tmp")
                     self.count = 0
@@ -235,7 +235,7 @@ class ScholarOctopusSpider(Spider):
     def writeNlpLine(self, f, paper_id, title, author, url):
         self.write_db(f, paper_id, title, url, "author:" + author)
 
-start = ScholarOctopusSpider()
+start = AiPapersSpider()
 start.doWork()
 start.getCvPaper()
 start.getNipsPaper()
