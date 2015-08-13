@@ -107,8 +107,10 @@ class StanfordSpider(Spider):
         r = requests.get("https://explorecourses.stanford.edu/browse")
         soup = BeautifulSoup(r.text);
         year = int(time.strftime('%Y',time.localtime(time.time())))
+        td = soup.find('td', attrs={"class": "selected"})
         #year_args = ['&academicYear=' + str(year -2) + str(year -1), '&academicYear=' + str(year -1) + str(year)]
-        year_args = ['&academicYear=' + str(year -1) + str(year)]
+        #year_args = ['&academicYear=' + str(year -1) + str(year)]
+        year_args = ['&academicYear=' + td.text.replace("-", "").strip()]
         for li in soup.find_all("li"):
             subject = ""
             if li.a.text.find("(") != -1:
