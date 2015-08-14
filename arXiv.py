@@ -16,6 +16,17 @@ This is free software.  Feel free to do what you want
 with it, but please play nice with the arXiv API!
 """
 '''
+prefix	explanation
+ti	Title
+au	Author
+abs	Abstract
+co	Comment
+jr	Journal Reference
+cat	Subject Category
+rn	Report Number
+id	Id (use id_list instead)
+all	All of the above
+
 Subject Abbreviation	Description
 stat.AP	Statistics - Applications
 stat.CO	Statistics - Computation
