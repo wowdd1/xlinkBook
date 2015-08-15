@@ -39,6 +39,11 @@ class MitOcwSpider(Spider):
         return 'level:' + jobj['level'] + ' instructors:' + jobj['instructors'].replace('Prof.','').strip() + \
                   ' term:' + jobj['sem'] + ' features:' + jobj['features'] + ' description:' + re.sub(r'[\x00-\x1f]', '', jobj['description'].replace('\n', ''))
 
+    def getDescription2(self, url):
+        r = requests.get(url)
+        jobj = json.loads(r.text)
+        return 'level:' + jobj['level'] + ' features:' + jobj['features']
+
     def getOcwLinks(selfi, subject):
         ocw_links = {}
         url = ('http://ocw.mit.edu/courses/' + subject.strip().replace(' ', '-')).replace(',', '').lower()
