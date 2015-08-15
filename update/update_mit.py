@@ -22,7 +22,7 @@ class MitSpider(Spider):
         self.ocw_links = self.ocw_spider.getOcwLinks(subject)
 
     def getTextBook(self, course_num):
-        terms = ['2014SP', '2013SP', '2012SP']
+        terms = ['2015SP', '2014SP', '2013SP']
         for term in terms:
             r = requests.get('http://eduapps.mit.edu/textbook/books.html?Term=' + term + '&Subject=' + course_num)
             if r.status_code == 200:
@@ -47,7 +47,7 @@ class MitSpider(Spider):
                 return link["href"]
         return ""
     
-    def processMitData(self, html, f, course_code):
+    def processStudentCatalog(self, html, f, course_code):
         #print html
         soup = BeautifulSoup(html);
         links_all = soup.find_all("a")
@@ -132,11 +132,11 @@ class MitSpider(Spider):
             self.count = self.count + 1
             self.write_db(f, course_num, title, link, remark)
 
-    def doWork(self):
+    def studentCatalog(self):
         #mit
         #"""
         r = requests.get('http://student.mit.edu/catalog/index.cgi')
-        soup = BeautifulSoup(r.text);
+        soup = BeautifulSoup(r.text)
         for a in soup.find_all('a'):
             if a['href'].find('http') == -1 and a['href'][0 : 1] == 'm' and a['href'][0 : 4] != 'mail':
                 subject = a.text
@@ -162,14 +162,14 @@ class MitSpider(Spider):
                 print "processing html and write data to file..."
                 course_code = a['href'][1 : a['href'].find('.html') - 1]
                 #print 'course_code: ' + course_code
-                self.processMitData(r.text, f, course_code)
+                self.processStudentCatalog(r.text, f, course_code)
 
                 soup = BeautifulSoup(r.text);
                 regex = re.compile(a['href'][0 : a['href'].find('.html') - 1] + '[b-z].html')
                 for link in sorted(list(set(regex.findall(r.text)))):
                     print 'processing ' + link
                     r = requests.get("http://student.mit.edu/catalog/" + link)
-                    self.processMitData(r.text, f, course_code) 
+                    self.processStudentCatalog(r.text, f, course_code) 
      
     
                 self.close_db(f)
@@ -180,6 +180,101 @@ class MitSpider(Spider):
                     self.cancel_upgrade(file_name)
                     print "no need upgrade\n"
             #"""
-   
+
+    def processBulletinCatalog(self, url, subject):
+        print 'process ' + subject
+        self.initOcwLinks(subject)
+        file_name = self.get_file_name(subject, self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+        r = requests.get(url)
+        utils = Utils()
+        soup = BeautifulSoup(r.text)
+        for div in soup.find_all('div', class_="courseblock"):
+            sp = BeautifulSoup(div.prettify())
+            h4 = sp.find('h4', class_='courseblocktitle')
+            p1 = sp.find('p', class_='courseblockextra')
+            p2 = sp.find('p', class_='courseblockdesc')
+            p3 = sp.find('p', class_='courseblockinstructors seemore')
+            text = h4.text.replace('\n', '').replace('[J]', '').strip()
+            course_num = text[0 : text.find(' ')]
+            title = text[text.find(' ') + 1 : ].strip()
+            textbook = ''
+            if self.deep_mind:
+                textbook = self.getTextBook(course_num)
+
+            if textbook == '' and self.deep_mind and self.ocw_links.get(course_num, '') != '':
+                textbook = self.ocw_spider.getTextBook(self.ocw_links[course_num], course_num)
+
+            link = self.getMitCourseLink([], course_num)
+            preq = ''
+            same_subject = ''
+            desc = ''
+            instructors = ''
+            remark = ''
+            units = ''
+            if p1 != None:
+                sp_1 = BeautifulSoup(p1.prettify())
+                span = sp_1.find('span', class_='courseblockprereq')
+                if span != None:
+                    preq = utils.removeDoubleSpace(span.text.replace('\n', '').replace(',','').replace(';','').strip().lower())
+                span = sp_1.find('span', class_='courseblockcluster')
+                if span != None:
+                    same_subject = utils.removeDoubleSpace(span.text.replace('\n', '').strip())
+                span = sp_1.find('span', class_='courseblockterms')
+                if span != None:
+                    term = utils.removeDoubleSpace(span.text.replace('\n', '').strip())
+                span = sp_1.find('span', class_='courseblockhours')
+                if span != None:
+                    units = utils.removeDoubleSpace(span.text.replace('\n', '').strip())
+
+            if p2 != None:
+                desc = utils.removeDoubleSpace(p2.text.replace('\n', '').strip())
+            if p3 != None:
+                instructors = utils.removeDoubleSpace(p3.text.replace('\n', '').strip())
+
+            if self.deep_mind and self.ocw_links.get(course_num, '') != '':
+                remark = self.ocw_spider.getDescription2(self.ocw_spider.getDescriptionApiUrl(self.ocw_links[course_num])) + ' '
+
+            if preq != '':
+                remark += preq.replace(': ', ':') + ' '
+            if instructors != '':
+                remark += 'instructors:' + instructors + ' '
+            if term != '':
+                remark += 'term:' + term + ' '
+            if textbook != '':
+                remark += '' + textbook + ' '
+            if desc != '':
+                remark += 'description:' + desc + ' ' + same_subject + ' ' + units
+            print text 
+            self.count += 1
+            self.write_db(f, course_num, title, link, remark)
+            #print remark
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+    def bulletinCatalog(self):
+        r = requests.get('http://catalog.mit.edu/subjects/#bycoursenumbertext')
+        soup = BeautifulSoup(r.text)
+        div = soup.find('div', class_='notinpdf')
+        soup = BeautifulSoup(div.prettify())
+        for a in soup.find_all('a', class_='sitemaplink'):
+            subject = a.text.replace('Course', '').strip()
+            subject = subject[3 :].strip()
+            if subject[0 : 1] == "/":
+                subject = subject[2 :].strip()
+            if self.need_update_subject(subject) == False:
+                continue
+            self.processBulletinCatalog("http://catalog.mit.edu" + a['href'], subject)
+    def doWork(self):
+        #self.studentCatalog()
+        self.bulletinCatalog()
+
 start = MitSpider()
 start.doWork() 
