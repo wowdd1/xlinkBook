@@ -27,11 +27,11 @@ class BpCsSpider(Spider):
             
             year = ''
             line = ''
-            conference = ''
+            conf = ''
             for td in sp.find_all('td'):
                 if (td.text.strip() == 'Microsoft Research'):
                     break
-                if td.a != None and td.a.attrs.has_key('name'):
+                if td.a != None and td.a.attrs.has_key('name') and False == td.a.attrs.has_key('href'):
                     conference = td.a.text.strip()
                     conference = conference[0 : conference.find('(')].strip().lower()
                     continue
@@ -39,7 +39,10 @@ class BpCsSpider(Spider):
                 text = utils.removeDoubleSpace(td.text.replace('; et al.', '')).strip()
                 if (len(text) == 4):
                     if len(line.strip()) > 4:
-                        self.writeLines(f, line, conference + '-' + year)
+                        if conf == '':
+                            conf = conference
+                        self.writeLines(f, line, conf + '-' + year)
+                        conf = conference
                         line = ''
                         line += text + '|'
                     else:
@@ -57,7 +60,7 @@ class BpCsSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def writeLines(self, f, line, id):
+    def writeLines(self, f, line, number):
         count = 0
         title = ''
         for item in line.split('|'):
@@ -67,11 +70,11 @@ class BpCsSpider(Spider):
             if count == 1:
                 continue
             if count % 2 == 0 and len(item) > 0:
-                print id + ' ' + item
+                print number + ' ' + item
                 title = item
             else:
                 print item
                 self.count += 1
-                self.write_db(f, id, title, '', 'author:' + item)
+                self.write_db(f, number, title, '', 'author:' + item)
 start = BpCsSpider()
 start.doWork()
