@@ -19,6 +19,7 @@ class BpCsSpider(Spider):
         file_name = self.get_file_name("eecs/best_cs_paper", "")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
+        self.count = 0
 
         for table in soup.find_all('table'):
             sp = BeautifulSoup(table.prettify())
