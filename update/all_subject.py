@@ -12,7 +12,7 @@ subject_dict = {\
     "Brain" : "brain-and-cognitive-sciences",\
     "Biology" : "biology-life-sciences",\
     "Biological" : "biology-life-sciences",\
-    "Cognitive Sciences" : "brain-and-cognitive-sciences",\
+    "Cognitive Science" : "brain-and-cognitive-sciences",\
     "Life Sciences" : "biology-life-sciences",\
     "Business" : "business-management",\
     "Management" : "business-management",\
