@@ -461,9 +461,7 @@ class GithubSpider(Spider):
                 return
             if k == "items":
                 for item in v:
-                    if name_contain != "" and item["name"].find(name_contain) == -1:
-                        continue
-                    if lang == 'awesome' and item["name"].find(lang) == -1:
+                    if name_contain != '' and item["name"].find(name_contain) == -1:
                         continue
                     data = str(item['stargazers_count']) + " " + item["name"] + " " + item['html_url']
                     print data
@@ -490,7 +488,7 @@ class GithubSpider(Spider):
         while total_size > (page *per_page):
             #print "total size:" + str(total_size) + " request page 2"
             page += 1
-            self.processPageData(f, file_name, lang, self.getUrl(lang, page, str(large_than_stars), str(per_page)))
+            self.processPageData(f, file_name, lang, self.getUrl(lang, page, str(large_than_stars), str(per_page)), name_contain)
      
         self.close_db(f)
         if self.count > 0:
@@ -608,7 +606,7 @@ class GithubSpider(Spider):
         for keyword in keywords:
             print "get " + keyword + " data..."
             if keyword == "awesome":
-                self.processGithubData(keyword, star, per_page, keyword)
+                self.processGithubData(keyword, 100, per_page, keyword)
             else:
                 self.processGithubData(keyword, star, per_page)
         print "get user data..."
