@@ -139,6 +139,7 @@ class Utils:
                          'videolectures' : 'http://videolectures.net/site/search/?q=',\
                          'udemy' : 'https://www.udemy.com/courses/search/?ref=home&q=',\
                          'github' : 'https://github.com/search?q=',\
+                         'awesome' : 'https://github.com/search?q=awesome ',\
                          'googlecode' : 'https://code.google.com/hosting/search?q=',\
                          'sourceforge' : 'http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q=',\
                          'coursetalk' : 'http://www.coursetalk.com/search?q=',\
