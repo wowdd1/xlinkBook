@@ -356,6 +356,10 @@ class Utils:
 
     def clearHtmlTag(self, html):
         while(html.find('<') != -1 and html.find('>') != -1):
+            start = html.find('<')
+            end = html.find('>')
+            if start > end:
+                break
             html = html.replace(html[html.find('<') : html.find('>') + 1], '')
         return html
 
