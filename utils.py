@@ -137,6 +137,15 @@ class Utils:
                          'coursera' : 'https://www.coursera.org/courses?query=',\
                          'edx' : 'https://www.edx.org/course?search_query=',\
                          'videolectures' : 'http://videolectures.net/site/search/?q=',\
+                         'frontiersin' : 'http://www.frontiersin.org/SearchData.aspx?sq=',\
+                         'plosone' : 'http://www.plosone.org/search/simple?from=globalSimpleSearch&filterJournals=PLoSONE&query=',\
+                         'scirp' : 'http://www.scirp.org/journal/Articles.aspx?searchField=All&page=1&searchCode=',\
+                         'oalib' : 'http://www.oalib.com/search;jsessionid=0C979878FC00CECAA48E851318C327DB.tomcat1?kw=',\
+                         'philpapers' : 'http://philpapers.org/s/',\
+                         'macropus' : 'http://git.macropus.org/hubmed/?term=',\
+                         'citeulike' : 'http://www.citeulike.org/search/all?q=',\
+                         'inspirehep' : 'http://inspirehep.net/search?ln=en&ln=en&of=hb&action_search=Search&sf=earliestdate&so=d&rm=&rg=25&sc=0&p=',\
+                         'hindawi' : 'http://www.hindawi.com/search/all/',\
                          'udemy' : 'https://www.udemy.com/courses/search/?ref=home&q=',\
                          'github' : 'https://github.com/search?q=',\
                          'awesome' : 'https://github.com/search?q=awesome ',\
