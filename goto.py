@@ -63,6 +63,8 @@ def openWeb(engin, keyword, url):
         url = utils.getEnginUrl(engin) + keyword
     if engin == "arxiv":
         url = url.replace("$", keyword)
+    if engin == "doaj":
+        url = url.replace('$', keyword)
 
     if url != '':
         openBrowser(url)
