@@ -500,7 +500,7 @@ class GithubSpider(Spider):
             print "no need upgrade\n"
 
     def getUserUrl(self, location, followers, page, per_page):
-        if location == "":
+        if location == "all":
             return "https://api.github.com/search/users?page=" + str(page) + "&per_page=" + per_page + "&q=followers:>" + followers
         else:
             return "https://api.github.com/search/users?page=" + str(page) + "&per_page=" + per_page + "&q=followers:>" + followers + "+location:" + location
@@ -572,7 +572,7 @@ class GithubSpider(Spider):
 
     def processGithubiUserData(self, location, followers, per_page):
         #self.checkRequestTimes()
-        file_name = self.get_file_name("eecs/github/" + location, self.school + "-user")
+        file_name = self.get_file_name("rank/" + location, self.school + "-user")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -614,7 +614,7 @@ class GithubSpider(Spider):
                 self.processGithubData(keyword, star, per_page)
         
         print "get user data..."
-        self.processGithubiUserData("", 500, 100)
+        self.processGithubiUserData("all", 500, 100)
         self.processGithubiUserData("china", 500, 100)
 start = GithubSpider()
 start.doWork()
