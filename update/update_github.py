@@ -463,7 +463,8 @@ class GithubSpider(Spider):
                 for item in v:
                     if name_contain != "" and item["name"].find(name_contain) == -1:
                         continue
-
+                    if lang == 'awesome' and item["name"].find(lang) == -1:
+                        continue
                     data = str(item['stargazers_count']) + " " + item["name"] + " " + item['html_url']
                     print data
                     description = ""
@@ -598,13 +599,11 @@ class GithubSpider(Spider):
     def doWork(self):
         star = 300
         per_page = 100
-
         for lang in self.lang_list:
             self.processGithubData(lang, star, per_page)
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
-
         keywords = ['awesome', 'computer vision', 'nlp', 'nltk', 'spark', 'machine learning', 'deep learning', 'android']
         for keyword in keywords:
             print "get " + keyword + " data..."
@@ -612,7 +611,6 @@ class GithubSpider(Spider):
                 self.processGithubData(keyword, star, per_page, keyword)
             else:
                 self.processGithubData(keyword, star, per_page)
-        
         print "get user data..."
         self.processGithubiUserData("all", 500, 100)
         self.processGithubiUserData("china", 500, 100)
