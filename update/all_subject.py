@@ -51,7 +51,7 @@ subject_dict = {\
     "Medicine" : "medicine",\
     "Music" : "music",\
     "Neurobiology" : "biology-life-sciences",\
-    "Neuro Science" : "biology-life-sciences",\
+    "Neuroscience" : "biology-life-sciences",\
     "Philanthropy" : "linguistics-and-philosophy",\
     "Philosophy" : "linguistics-and-philosophy",\
     "Psychology" : "psychology",\
