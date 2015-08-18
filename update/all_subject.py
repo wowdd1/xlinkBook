@@ -50,7 +50,8 @@ subject_dict = {\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "music",\
-    "Neurobiology" : "brain-and-cognitive-sciences",\
+    "Neurobiology" : "biology-life-sciences",\
+    "Neuro Science" : "biology-life-sciences",\
     "Philanthropy" : "linguistics-and-philosophy",\
     "Philosophy" : "linguistics-and-philosophy",\
     "Psychology" : "psychology",\
