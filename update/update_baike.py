@@ -61,13 +61,15 @@ class BaikeSpider(Spider):
                 remark = ""
                 for line in tr.text.strip().split("\n"):
                     i += 1
+                    #print '---' + str(i) + " " + line
                     if i == 1:
                         year = line
                         continue
-                    if i == 2 or len(line) < 50:
+                    if len(line) < 50:
                         title += " " + line
                         continue
-                    if i == 3:
+                    if line.startswith("For") or len(line) > 50:
+                        #if i != 3:
                         print year + " " + title + " " + link
                         remark = 'description:' + line
                         self.count += 1
