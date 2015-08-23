@@ -73,3 +73,6 @@
 [submodule "download/metacourse"]
 	path = download/metacourse
 	url = https://github.com/ouyangzhiping/metacourse.git
+[submodule "paper/researchlei"]
+	path = paper/researchlei
+	url = https://github.com/karpathy/researchlei.git
