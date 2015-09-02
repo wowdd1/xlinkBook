@@ -1,0 +1,119 @@
+jmlr-v13-1 | Distance Metric Learning with Eigenvalue Optimization | http://www.jmlr.org/papers/v13/ying12a.html | author:Yiming Ying, Peng Li
+jmlr-v13-2 | Conditional Likelihood Maximisation: A Unifying Framework for Information Theoretic Feature Selection | http://www.jmlr.org/papers/v13/brown12a.html | author:Gavin Brown, Adam Pocock, Ming-Jie Zhao, Mikel Luján
+jmlr-v13-3 | Plug-in Approach to Active Learning | http://www.jmlr.org/papers/v13/minsker12a.html | author:Stanislav Minsker
+jmlr-v13-4 | Refinement of Operator-valued Reproducing Kernels | http://www.jmlr.org/papers/v13/zhang12a.html | author:Haizhang Zhang, Yuesheng Xu, Qinghui Zhang
+jmlr-v13-5 | An Active Learning Algorithm for Ranking from Pairwise Preferences with an Almost Optimal Query Complexity | http://www.jmlr.org/papers/v13/ailon12a.html | author:Nir Ailon
+jmlr-v13-6 | Optimal Distributed Online Prediction Using Mini-Batches | http://www.jmlr.org/papers/v13/dekel12a.html | author:Ofer Dekel, Ran Gilad-Bachrach, Ohad Shamir, Lin Xiao
+jmlr-v13-7 | Active Clustering of Biological Sequences | http://www.jmlr.org/papers/v13/voevodski12a.html | author:Konstantin Voevodski, Maria-Florina Balcan, Heiko Röglin, Shang-Hua Teng, Yu Xia
+jmlr-v13-8 | Multi Kernel Learning with Online-Batch Optimization | http://www.jmlr.org/papers/v13/orabona12a.html | author:Francesco Orabona, Luo Jie, Barbara Caputo
+jmlr-v13-9 | Active Learning via Perfect Selective Classification | http://www.jmlr.org/papers/v13/el-yaniv12a.html | author:Ran El-Yaniv, Yair Wiener
+jmlr-v13-10 | Random Search for Hyper-Parameter Optimization | http://www.jmlr.org/papers/v13/bergstra12a.html | author:James Bergstra, Yoshua Bengio
+jmlr-v13-11 | Noise-Contrastive Estimation of Unnormalized Statistical Models, with Applications to Natural Image Statistics | http://www.jmlr.org/papers/v13/gutmann12a.html | author:Michael U. Gutmann, Aapo Hyvärinen
+jmlr-v13-12 | Bounding the Probability of Error for High Precision Optical Character Recognition | http://www.jmlr.org/papers/v13/huang12a.html | author:Gary B. Huang, Andrew Kae, Carl Doersch, Erik Learned-Miller
+jmlr-v13-13 | Minimax-Optimal Rates For Sparse Additive Models Over Kernel Classes Via Convex Programming | http://www.jmlr.org/papers/v13/raskutti12a.html | author:Garvesh Raskutti, Martin J. Wainwright, Bin Yu
+jmlr-v13-14 | Online Learning in the Embedded Manifold of Low-rank Matrices | http://www.jmlr.org/papers/v13/shalit12a.html | author:Uri Shalit, Daphna Weinshall, Gal Chechik
+jmlr-v13-15 | Multi-Assignment Clustering for Boolean Data | http://www.jmlr.org/papers/v13/frank12a.html | author:Mario Frank, Andreas P. Streich, David Basin, Joachim M. Buhmann
+jmlr-v13-16 | Eliminating Spammers and Ranking Annotators for Crowdsourced Labeling Tasks | http://www.jmlr.org/papers/v13/raykar12a.html | author:Vikas C. Raykar, Shipeng Yu
+jmlr-v13-17 | Metric and Kernel Learning Using a Linear Transformation | http://www.jmlr.org/papers/v13/jain12a.html | author:Prateek Jain, Brian Kulis, Jason V. Davis, Inderjit S. Dhillon
+jmlr-v13-18 | MULTIBOOST: A Multi-purpose Boosting Package | http://www.jmlr.org/papers/v13/benbouzid12a.html | author:Djalel Benbouzid, Róbert Busa-Fekete, Norman Casagrande, François-David Collin, Balázs Kégl
+jmlr-v13-19 | ML-Flex: A Flexible Toolbox for Performing Classification Analyses In Parallel | http://www.jmlr.org/papers/v13/piccolo12a.html | author:Stephen R. Piccolo, Lewis J. Frey
+jmlr-v13-20 | A Primal-Dual Convergence Analysis of Boosting | http://www.jmlr.org/papers/v13/telgarsky12a.html | author:Matus Telgarsky
+jmlr-v13-21 | Non-Sparse Multiple Kernel Fisher Discriminant Analysis | http://www.jmlr.org/papers/v13/yan12a.html | author:Fei Yan, Josef Kittler, Krystian Mikolajczyk, Atif Tahir
+jmlr-v13-22 | Learning Algorithms for the Classification Restricted Boltzmann Machine | http://www.jmlr.org/papers/v13/larochelle12a.html | author:Hugo Larochelle, Michael Mandel, Razvan Pascanu, Yoshua Bengio
+jmlr-v13-23 | Structured Sparsity and Generalization | http://www.jmlr.org/papers/v13/maurer12a.html | author:Andreas Maurer, Massimiliano Pontil
+jmlr-v13-24 | A Case Study on Meta-Generalising: A Gaussian Processes Approach | http://www.jmlr.org/papers/v13/skolidis12a.html | author:Grigorios Skolidis, Guido Sanguinetti
+jmlr-v13-25 | A Kernel Two-Sample Test | http://www.jmlr.org/papers/v13/gretton12a.html | author:Arthur Gretton, Karsten M. Borgwardt, Malte J. Rasch, Bernhard Schölkopf, Alexander Smola
+jmlr-v13-26 | GPLP: A Local and Parallel Computation Toolbox for Gaussian Process Regression | http://www.jmlr.org/papers/v13/park12a.html | author:Chiwoo Park, Jianhua Z. Huang, Yu Ding
+jmlr-v13-27 | Exact Covariance Thresholding into Connected Components for Large-Scale Graphical Lasso | http://www.jmlr.org/papers/v13/mazumder12a.html | author:Rahul Mazumder,  Trevor Hastie
+jmlr-v13-28 | Algorithms for Learning Kernels Based on Centered Alignment | http://www.jmlr.org/papers/v13/cortes12a.html | author:Corinna Cortes, Mehryar Mohri, Afshin Rostamizadeh
+jmlr-v13-29 | Causal Bounds and Observable Constraints for Non-deterministic Models | http://www.jmlr.org/papers/v13/ramsahai12a.html | author:Roland R. Ramsahai
+jmlr-v13-30 | NIMFA : A Python Library for Nonnegative Matrix Factorization | http://www.jmlr.org/papers/v13/zitnik12a.html | author:Marinka Žitnik, Blaž Zupan
+jmlr-v13-31 | Algebraic Geometric Comparison of Probability Distributions | http://www.jmlr.org/papers/v13/kiraly12a.html | author:Franz J. Király, Paul von Bünau, Frank C. Meinecke, Duncan A.J. Blythe, Klaus-Robert Müller
+jmlr-v13-32 | Stability of Density-Based Clustering | http://www.jmlr.org/papers/v13/rinaldo12a.html | author:Alessandro Rinaldo, Aarti Singh, Rebecca Nugent, Larry Wasserman
+jmlr-v13-33 | Mal-ID: Automatic Malware Detection Using Common Segment Analysis and Meta-Features | http://www.jmlr.org/papers/v13/tahan12a.html | author:Gil Tahan, Lior Rokach, Yuval Shahar
+jmlr-v13-34 | Sampling Methods for the Nyström Method | http://www.jmlr.org/papers/v13/kumar12a.html | author:Sanjiv Kumar, Mehryar Mohri, Ameet Talwalkar
+jmlr-v13-35 | Positive Semidefinite Metric Learning Using Boosting-like Algorithms | http://www.jmlr.org/papers/v13/shen12a.html | author:Chunhua Shen, Junae Kim, Lei Wang, Anton van den Hengel
+jmlr-v13-36 | Consistent Model Selection Criteria on High Dimensions | http://www.jmlr.org/papers/v13/kim12a.html | author:Yongdai Kim, Sunghoon Kwon, Hosik Choi
+jmlr-v13-37 | The huge Package for High-dimensional Undirected Graph Estimation in R | http://www.jmlr.org/papers/v13/zhao12a.html | author:Tuo Zhao, Han Liu, Kathryn Roeder, John Lafferty, Larry Wasserman
+jmlr-v13-38 | Analysis of a Random Forests Model | http://www.jmlr.org/papers/v13/biau12a.html | author:Gérard Biau
+jmlr-v13-39 | Towards Integrative Causal Analysis of Heterogeneous Data Sets and Studies | http://www.jmlr.org/papers/v13/tsamardinos12a.html | author:Ioannis Tsamardinos, Sofia Triantafillou, Vincenzo Lagani
+jmlr-v13-40 | Hope and Fear for Discriminative Training of Statistical Translation Models | http://www.jmlr.org/papers/v13/chiang12a.html | author:David Chiang
+jmlr-v13-41 | A Multi-Stage Framework for Dantzig Selector and LASSO | http://www.jmlr.org/papers/v13/liu12a.html | author:Ji Liu, Peter Wonka, Jieping Ye
+jmlr-v13-42 | A Geometric Approach to Sample Compression | http://www.jmlr.org/papers/v13/rubinstein12a.html | author:Benjamin I.P. Rubinstein, J. Hyam Rubinstein
+jmlr-v13-43 | Minimax Manifold Estimation | http://www.jmlr.org/papers/v13/genovese12a.html | author:Christopher Genovese, Marco Perone-Pacifico, Isabella Verdinelli, Larry Wasserman
+jmlr-v13-44 | Query Strategies for Evading Convex-Inducing Classifiers | http://www.jmlr.org/papers/v13/nelson12a.html | author:Blaine Nelson, Benjamin I. P. Rubinstein, Ling Huang, Anthony D. Joseph, Steven J. Lee, Satish Rao, J. D. Tygar
+jmlr-v13-45 | Transfer in Reinforcement Learning via Shared Features | http://www.jmlr.org/papers/v13/konidaris12a.html | author:George Konidaris, Ilya Scheidwasser, Andrew Barto
+jmlr-v13-46 | On Ranking and Generalization Bounds | http://www.jmlr.org/papers/v13/rejchel12a.html | author:Wojciech Rejchel
+jmlr-v13-47 | Feature Selection via Dependence Maximization | http://www.jmlr.org/papers/v13/song12a.html | author:Le Song, Alex Smola, Arthur Gretton, Justin Bedo, Karsten Borgwardt
+jmlr-v13-48 | Structured Sparsity via Alternating Direction Methods | http://www.jmlr.org/papers/v13/qin12a.html | author:Zhiwei Qin, Donald Goldfarb
+jmlr-v13-49 | Activized Learning: Transforming Passive to Active with Improved Label Complexity | http://www.jmlr.org/papers/v13/hanneke12a.html | author:Steve Hanneke
+jmlr-v13-50 | A Model of the Perception of Facial Expressions of Emotion by Humans: Research Overview and Perspectives | http://www.jmlr.org/papers/v13/martinez12a.html | author:Aleix Martinez, Shichuan Du
+jmlr-v13-51 | A Unifying Probabilistic Perspective for Spectral Dimensionality Reduction: Insights and New Models | http://www.jmlr.org/papers/v13/lawrence12a.html | author:Neil D. Lawrence
+jmlr-v13-52 | Mixability is Bayes Risk Curvature Relative to Log Loss | http://www.jmlr.org/papers/v13/vanerven12a.html | author:Tim van Erven, Mark D. Reid, Robert C. Williamson
+jmlr-v13-53 | Restricted Strong Convexity and Weighted Matrix Completion: Optimal Bounds with Noise | http://www.jmlr.org/papers/v13/negahban12a.html | author:Sahand Negahban, Martin J. Wainwright
+jmlr-v13-54 | glm-ie: Generalised Linear Models Inference & Estimation Toolbox | http://www.jmlr.org/papers/v13/nickisch12a.html | author:Hannes Nickisch
+jmlr-v13-55 | Manifold Identification in Dual Averaging for Regularized Stochastic Online Learning | http://www.jmlr.org/papers/v13/lee12a.html | author:Sangkyun Lee, Stephen J. Wright
+jmlr-v13-56 | Variational Multinomial Logit Gaussian Process | http://www.jmlr.org/papers/v13/chai12a.html | author:Kian Ming A. Chai
+jmlr-v13-57 | Entropy Search for Information-Efficient Global Optimization | http://www.jmlr.org/papers/v13/hennig12a.html | author:Philipp Hennig, Christian J. Schuler
+jmlr-v13-58 | Estimation and Selection via Absolute Penalized Convex Minimization And Its Multistage Adaptive Applications | http://www.jmlr.org/papers/v13/huang12b.html | author:Jian Huang, Cun-Hui Zhang
+jmlr-v13-59 | Regularization Techniques for Learning with Matrices | http://www.jmlr.org/papers/v13/kakade12a.html | author:Sham M. Kakade, Shai Shalev-Shwartz, Ambuj Tewari
+jmlr-v13-60 | Confidence-Weighted Linear Classification for Text Categorization | http://www.jmlr.org/papers/v13/crammer12a.html | author:Koby Crammer, Mark Dredze, Fernando Pereira
+jmlr-v13-61 | Integrating a Partial Model into Model Free Reinforcement Learning | http://www.jmlr.org/papers/v13/tamar12a.html | author:Aviv Tamar, Dotan Di Castro, Ron Meir
+jmlr-v13-62 | Jstacs: A Java Framework for Statistical Analysis and Classification of Biological Sequences | http://www.jmlr.org/papers/v13/grau12a.html | author:Jan Grau, Jens Keilwagen, André Gohr, Berit Haldemann, Stefan Posch, Ivo Grosse
+jmlr-v13-63 | Variable Selection in High-dimensional Varying-coefficient Models with Global Optimality | http://www.jmlr.org/papers/v13/xue12a.html | author:Lan Xue, Annie Qu
+jmlr-v13-64 | An Improved GLMNET for L1-regularized Logistic Regression | http://www.jmlr.org/papers/v13/yuan12a.html | author:Guo-Xun Yuan, Chia-Hua Ho, Chih-Jen Lin
+jmlr-v13-65 | EP-GIG Priors and Applications in Bayesian Sparse Learning | http://www.jmlr.org/papers/v13/zhang12b.html | author:Zhihua Zhang, Shusen Wang, Dehua Liu, Michael I. Jordan
+jmlr-v13-66 | Pattern for Python | http://www.jmlr.org/papers/v13/desmedt12a.html | author:Tom De Smedt, Walter Daelemans
+jmlr-v13-67 | Optimistic Bayesian Sampling in Contextual-Bandit Problems | http://www.jmlr.org/papers/v13/may12a.html | author:Benedict C. May, Nathan Korda, Anthony Lee, David S. Leslie
+jmlr-v13-68 | A Comparison of the Lasso and  Marginal Regression | http://www.jmlr.org/papers/v13/genovese12b.html | author:Christopher R. Genovese, Jiashun Jin, Larry Wasserman, Zhigang Yao
+jmlr-v13-69 | On the Necessity of Irrelevant Variables | http://www.jmlr.org/papers/v13/helmbold12a.html | author:David P. Helmbold, Philip M. Long
+jmlr-v13-70 | DEAP: Evolutionary Algorithms Made Easy | http://www.jmlr.org/papers/v13/fortin12a.html | author:Félix-Antoine Fortin, François-Michel De Rainville, Marc-André Gardner, Marc Parizeau, Christian Gagné
+jmlr-v13-71 | An Introduction to Artificial Prediction Markets for Classification | http://www.jmlr.org/papers/v13/barbu12a.html | author:Adrian Barbu, Nathan Lay
+jmlr-v13-72 | Sign Language Recognition using Sub-Units | http://www.jmlr.org/papers/v13/cooper12a.html | author:Helen Cooper, Eng-Jon Ong, Nicolas Pugeault, Richard Bowden
+jmlr-v13-73 | A Topic Modeling Toolbox Using Belief Propagation | http://www.jmlr.org/papers/v13/zeng12a.html | author:Jia Zeng
+jmlr-v13-74 | MedLDA: Maximum Margin Supervised Topic Models | http://www.jmlr.org/papers/v13/zhu12a.html | author:Jun Zhu, Amr Ahmed, Eric P. Xing
+jmlr-v13-75 | Pairwise Support Vector Machines and their Application to Large Scale Problems | http://www.jmlr.org/papers/v13/brunner12a.html | author:Carl Brunner, Andreas Fischer, Klaus Luig, Thorsten Thies
+jmlr-v13-76 | High-Dimensional Gaussian Graphical Model Selection: Walk Summability and Local Separation Criterion | http://www.jmlr.org/papers/v13/anandkumar12a.html | author:Animashree Anandkumar, Vincent Y.F. Tan, Furong Huang, Alan S. Willsky
+jmlr-v13-77 | A Local Spectral Method for Graphs: With Applications to Improving Graph Partitions and Exploring Data Graphs Locally | http://www.jmlr.org/papers/v13/mahoney12a.html | author:Michael W. Mahoney, Lorenzo Orecchia, Nisheeth K. Vishnoi
+jmlr-v13-78 | Multi-Target Regression with Rule Ensembles | http://www.jmlr.org/papers/v13/aho12a.html | author:Timo Aho, Bernard Ženko, Sašo Džeroski, Tapio Elomaa
+jmlr-v13-79 | Characterization and Greedy Learning of Interventional Markov Equivalence Classes of Directed Acyclic Graphs | http://www.jmlr.org/papers/v13/hauser12a.html | author:Alain Hauser, Peter Bühlmann
+jmlr-v13-80 | On the Convergence Rate of lp-Norm Multiple Kernel Learning | http://www.jmlr.org/papers/v13/kloft12a.html | author:Marius Kloft, Gilles Blanchard
+jmlr-v13-81 | Trading Regret for Efficiency: Online Convex Optimization with Long Term Constraints | http://www.jmlr.org/papers/v13/mahdavi12a.html | author:Mehrdad Mahdavi, Rong Jin, Tianbao Yang
+jmlr-v13-82 | Robust Kernel Density Estimation | http://www.jmlr.org/papers/v13/kim12b.html | author:JooSeuk Kim, Clayton D. Scott
+jmlr-v13-83 | Nonparametric Guidance of Autoencoder Representations using Label Information | http://www.jmlr.org/papers/v13/snoek12a.html | author:Jasper Snoek, Ryan P. Adams, Hugo Larochelle
+jmlr-v13-84 | Finding Recurrent Patterns from Continuous Sign Language Sentences for Automated Extraction of Signs | http://www.jmlr.org/papers/v13/nayak12a.html | author:Sunita Nayak, Kester Duncan, Sudeep Sarkar, Barbara Loeding
+jmlr-v13-85 | Static Prediction Games for Adversarial Learning Problems | http://www.jmlr.org/papers/v13/brueckner12a.html | author:Michael Brückner, Christian Kanzow, Tobias Scheffer
+jmlr-v13-86 | Selective Sampling and Active Learning from Single and Multiple Teachers | http://www.jmlr.org/papers/v13/dekel12b.html | author:Ofer Dekel, Claudio Gentile, Karthik Sridharan
+jmlr-v13-87 | PREA: Personalized Recommendation Algorithms Toolkit | http://www.jmlr.org/papers/v13/lee12b.html | author:Joonseok Lee, Mingxuan Sun, Guy Lebanon
+jmlr-v13-88 | Coherence Functions with Applications in Large-Margin Classification Methods | http://www.jmlr.org/papers/v13/zhang12c.html | author:Zhihua Zhang, Dehua Liu, Guang Dai, Michael I. Jordan
+jmlr-v13-89 | Linear Regression With Random Projections | http://www.jmlr.org/papers/v13/maillard12a.html | author:Odalric-Ambrym Maillard, Rémi Munos
+jmlr-v13-90 | Multi-task Regression using Minimal Penalties | http://www.jmlr.org/papers/v13/solnon12a.html | author:Matthieu Solnon, Sylvain Arlot, Francis Bach
+jmlr-v13-91 | A Unified View of Performance Metrics: Translating Threshold Choice into Expected Classification Loss | http://www.jmlr.org/papers/v13/hernandez-orallo12a.html | author:José Hernández-Orallo, Peter Flach, Cèsar Ferri
+jmlr-v13-92 | Local and Global Scaling Reduce Hubs in Space | http://www.jmlr.org/papers/v13/schnitzer12a.html | author:Dominik Schnitzer, Arthur Flexer, Markus Schedl, Gerhard Widmer
+jmlr-v13-93 | Online Submodular Minimization | http://www.jmlr.org/papers/v13/hazan12a.html | author:Elad Hazan, Satyen Kale
+jmlr-v13-94 | Efficient Methods for Robust Classification Under Uncertainty in Kernel Matrices | http://www.jmlr.org/papers/v13/ben-tal12a.html | author:Aharon Ben-Tal, Sahely Bhadra, Chiranjib Bhattacharyya, Arkadi Nemirovski
+jmlr-v13-95 | Facilitating Score and Causal Inference Trees for Large Observational Studies | http://www.jmlr.org/papers/v13/su12a.html | author:Xiaogang Su, Joseph Kang, Juanjuan Fan, Richard A. Levine, Xin Yan
+jmlr-v13-96 | Oger: Modular Learning Architectures For Large-Scale Sequential Processing | http://www.jmlr.org/papers/v13/verstraeten12a.html | author:David Verstraeten, Benjamin Schrauwen, Sander Dieleman, Philemon Brakel, Pieter Buteneers, Dejan Pecevski
+jmlr-v13-97 | Multi-Instance Learning with Any Hypothesis Class | http://www.jmlr.org/papers/v13/sabato12a.html | author:Sivan Sabato, Naftali Tishby
+jmlr-v13-98 | Finite-Sample Analysis of Least-Squares Policy Iteration | http://www.jmlr.org/papers/v13/lazaric12a.html | author:Alessandro Lazaric, Mohammad Ghavamzadeh, Rémi Munos
+jmlr-v13-99 | Discriminative Hierarchical Part-based Models for Human Parsing and Action Recognition | http://www.jmlr.org/papers/v13/wang12a.html | author:Yang Wang, Duan Tran, Zicheng Liao, David Forsyth
+jmlr-v13-100 | Breaking the Curse of Kernelization: Budgeted Stochastic Gradient Descent for Large-Scale SVM Training | http://www.jmlr.org/papers/v13/wang12b.html | author:Zhuang Wang, Koby Crammer, Slobodan Vucetic
+jmlr-v13-101 | Bayesian Mixed-Effects Inference on Classification Performance in Hierarchical Data Sets | http://www.jmlr.org/papers/v13/brodersen12a.html | author:Kay H. Brodersen, Christoph Mathys, Justin R. Chumbley, Jean Daunizeau, Cheng Soon Ong, Joachim M. Buhmann, Klaas E. Stephan
+jmlr-v13-102 | Quantum Set Intersection and its Application to Associative Memory | http://www.jmlr.org/papers/v13/salman12a.html | author:Tamer Salman, Yoram Baram
+jmlr-v13-103 | Dynamic Policy Programming | http://www.jmlr.org/papers/v13/azar12a.html | author:Mohammad Gheshlaghi Azar, Vicenç Gómez, Hilbert J. Kappen
+jmlr-v13-104 | Sally: A Tool for Embedding Strings in Vector Spaces | http://www.jmlr.org/papers/v13/rieck12a.html | author:Konrad Rieck, Christian Wressnegger, Alexander Bikadorov
+jmlr-v13-105 | Linear Fitted-Q Iteration with Multiple Reward Functions | http://www.jmlr.org/papers/v13/lizotte12a.html | author:Daniel J. Lizotte, Michael Bowling, Susan A. Murphy
+jmlr-v13-106 | Human Gesture Recognition on Product Manifolds | http://www.jmlr.org/papers/v13/lui12a.html | author:Yui Man Lui
+jmlr-v13-107 | Large-scale Linear Support Vector Regression | http://www.jmlr.org/papers/v13/ho12a.html | author:Chia-Hua Ho, Chih-Jen Lin
+jmlr-v13-108 | Sparse and Unique Nonnegative Matrix Factorization Through Data Preprocessing | http://www.jmlr.org/papers/v13/gillis12a.html | author:Nicolas Gillis
+jmlr-v13-109 | Learning Linear Cyclic Causal Models with Latent Variables | http://www.jmlr.org/papers/v13/hyttinen12a.html | author:Antti Hyttinen, Frederick Eberhardt, Patrik O. Hoyer
+jmlr-v13-110 | Iterative Reweighted Algorithms for Matrix Rank Minimization | http://www.jmlr.org/papers/v13/mohan12a.html | author:Karthik Mohan, Maryam Fazel
+jmlr-v13-111 | Fast Approximation of Matrix Coherence and Statistical Leverage | http://www.jmlr.org/papers/v13/drineas12a.html | author:Petros Drineas, Malik Magdon-Ismail, Michael W. Mahoney, David P. Woodruff
+jmlr-v13-112 | PAC-Bayes Bounds with Data Dependent Priors | http://www.jmlr.org/papers/v13/parrado12a.html | author:Emilio Parrado-Hernández, Amiran Ambroladze, John Shawe-Taylor, Shiliang Sun
+jmlr-v13-113 | DARWIN: A Framework for Machine Learning and Computer Vision Research and Development | http://www.jmlr.org/papers/v13/gould12a.html | author:Stephen Gould
+jmlr-v13-114 | Regularized Bundle Methods for Convex and Non-Convex Risks | http://www.jmlr.org/papers/v13/do12a.html | author:Trinh Minh Tri Do, Thierry Artières
+jmlr-v13-115 | Learning Symbolic Representations of Hybrid Dynamical Systems | http://www.jmlr.org/papers/v13/ly12a.html | author:Daniel L. Ly, Hod Lipson
+jmlr-v13-116 | SVDFeature: A Toolkit for Feature-based Collaborative Filtering | http://www.jmlr.org/papers/v13/chen12a.html | author:Tianqi Chen, Weinan Zhang, Qiuxia Lu, Kailong Chen, Zhao Zheng, Yong Yu
+jmlr-v13-117 | Smoothing Multivariate Performance Measures | http://www.jmlr.org/papers/v13/zhang12d.html | author:Xinhua Zhang, Ankan Saha, S.V.N. Vishwanathan
+jmlr-v13-118 | Security Analysis of Online Centroid Anomaly Detection | http://www.jmlr.org/papers/v13/kloft12b.html | author:Marius Kloft, Pavel Laskov
+jmlr-v13-119 | Exploration in Relational Domains for Model-based Reinforcement Learning | http://www.jmlr.org/papers/v13/lang12a.html | author:Tobias Lang, Marc Toussaint, Kristian Kersting

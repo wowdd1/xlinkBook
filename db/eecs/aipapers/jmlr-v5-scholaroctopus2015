@@ -1,0 +1,63 @@
+jmlr-v5-1 | Learning Rates for Q-learning | http://www.jmlr.org/papers/v5/evendar03a.html | author:Eyal Even Dar, Yishay Mansour
+jmlr-v5-2 | Learning the Kernel Matrix with Semidefinite Programming | http://www.jmlr.org/papers/v5/lanckriet04a.html | author:Gert R.G. Lanckriet, Nello Cristianini, Peter Bartlett, Laurent El
+  Ghaoui, Michael I. Jordan
+jmlr-v5-3 | Dimensionality Reduction for Supervised Learning with Reproducing Kernel  Hilbert Spaces | http://www.jmlr.org/papers/v5/fukumizu04a.html | author:Kenji Fukumizu, Francis R. Bach, Michael I. Jordan
+jmlr-v5-4 | In Defense of One-Vs-All Classification | http://www.jmlr.org/papers/v5/rifkin04a.html | author:Ryan Rifkin, Aldebaro Klautau
+jmlr-v5-5 | Lossless Online Bayesian Bagging | http://www.jmlr.org/papers/v5/lee04a.html | author:Herbert K. H. Lee, Merlise A. Clyde
+jmlr-v5-6 | Subgroup Discovery with CN2-SD | http://www.jmlr.org/papers/v5/lavrac04a.html | author:Nada Lavrač, Branko Kavšek, Peter Flach, Ljupčo
+  Todorovski
+jmlr-v5-7 | Generalization Error Bounds for Threshold Decision Lists | http://www.jmlr.org/papers/v5/anthony04a.html | author:Martin Anthony
+jmlr-v5-8 | On the Importance of Small Coordinate Projections | http://www.jmlr.org/papers/v5/mendelson04a.html | author:Shahar Mendelson, Petra Philips
+jmlr-v5-9 | Weather Data Mining Using Independent Component Analysis | http://www.jmlr.org/papers/v5/basak04a.html | author:Jayanta Basak, Anant Sudarshan, Deepak Trivedi, M. S.
+  Santhanam
+jmlr-v5-10 | Online Choice of Active Learning Algorithms | http://www.jmlr.org/papers/v5/baram04a.html | author:Yoram Baram, Ran El Yaniv, Kobi Luz
+jmlr-v5-11 | A Compression Approach to Support Vector Model Selection | http://www.jmlr.org/papers/v5/luxburg04a.html | author:Ulrike von Luxburg, Olivier Bousquet, Bernhard
+  Schölkopf
+jmlr-v5-12 | A Geometric Approach to Multi-Criterion Reinforcement Learning | http://www.jmlr.org/papers/v5/mannor04a.html | author:Shie Mannor, Nahum Shimkin
+jmlr-v5-13 | RCV1: A New Benchmark Collection for Text Categorization Research | http://www.jmlr.org/papers/v5/lewis04a.html | author:David D. Lewis, Yiming Yang, Tony G. Rose, Fan Li
+jmlr-v5-14 | Distributional Scaling: An Algorithm for Structure-Preserving Embedding of  Metric and Nonmetric Spaces | http://www.jmlr.org/papers/v5/quist04a.html | author:Michael Quist, Golan Yona
+jmlr-v5-15 | Learning Ensembles from Bites: A Scalable and Accurate Approach | http://www.jmlr.org/papers/v5/chawla04a.html | author:Nitesh V. Chawla, Lawrence O. Hall, Kevin W. Bowyer, W. Philip
+  Kegelmeyer
+jmlr-v5-16 | Robust Principal Component Analysis with Adaptive Selection for Tuning  Parameters | http://www.jmlr.org/papers/v5/higuchi04a.html | author:Isao Higuchi, Shinto Eguchi
+jmlr-v5-17 | PAC-learnability of Probabilistic Deterministic Finite State Automata | http://www.jmlr.org/papers/v5/clark04a.html | author:Alexander Clark, Franck Thollard
+jmlr-v5-18 | Sources of Success for Boosted Wrapper Induction | http://www.jmlr.org/papers/v5/kauchak04a.html | author:David Kauchak, Joseph Smarr, Charles Elkan
+jmlr-v5-19 | Computable Shell Decomposition Bounds | http://www.jmlr.org/papers/v5/langford04a.html | author:John Langford, David McAllester
+jmlr-v5-20 | Exact Bayesian Structure Discovery in Bayesian Networks | http://www.jmlr.org/papers/v5/koivisto04a.html | author:Mikko Koivisto, Kismat Sood
+jmlr-v5-21 | A Universal Well-Calibrated Algorithm for On-line Classification | http://www.jmlr.org/papers/v5/vovk04a.html | author:Vladimir Vovk
+jmlr-v5-22 | New Techniques for Disambiguation in Natural Language and Their Application  to Biological Text | http://www.jmlr.org/papers/v5/ginter04a.html | author:Filip Ginter, Jorma Boberg, Jouni Järvinen, Tapio
+  Salakoski
+jmlr-v5-23 | The Sample Complexity of Exploration in the Multi-Armed Bandit Problem | http://www.jmlr.org/papers/v5/mannor04b.html | author:Shie Mannor, John N. Tsitsiklis
+jmlr-v5-24 | Preference Elicitation and Query Learning | http://www.jmlr.org/papers/v5/blum04a.html | author:Avrim Blum, Jeffrey Jackson, Tuomas Sandholm, Martin
+  Zinkevich
+jmlr-v5-25 | Distance-Based Classification with Lipschitz Functions | http://www.jmlr.org/papers/v5/luxburg04b.html | author:Ulrike von Luxburg, Olivier Bousquet
+jmlr-v5-26 | Hierarchical Latent Class Models for Cluster Analysis | http://www.jmlr.org/papers/v5/zhang04a.html | author:Nevin L. Zhang
+jmlr-v5-27 | Bias-Variance Analysis of Support Vector Machines for the Development of SVM-Based Ensemble Methods | http://www.jmlr.org/papers/v5/valentini04a.html | author:Giorgio Valentini, Thomas G. Dietterich
+jmlr-v5-28 | A Fast Algorithm for Joint Diagonalization with Non-orthogonal Transformations and its Application to Blind Source Separation | http://www.jmlr.org/papers/v5/ziehe04a.html | author:Andreas Ziehe, Pavel Laskov, Guido Nolte, Klaus-Robert Müller
+jmlr-v5-29 | Feature Discovery in Non-Metric Pairwise Data | http://www.jmlr.org/papers/v5/laub04a.html | author:Julian Laub, Klaus-Robert Müller
+jmlr-v5-30 | Probability Product Kernels | http://www.jmlr.org/papers/v5/jebara04a.html | author:Tony Jebara, Risi Kondor, Andrew Howard
+jmlr-v5-31 | Feature Selection for Unsupervised Learning | http://www.jmlr.org/papers/v5/dy04a.html | author:Jennifer G. Dy, Carla E. Brodley
+jmlr-v5-32 | Some Dichotomy Theorems for Neural Learning Problems | http://www.jmlr.org/papers/v5/schmitt04a.html | author:Michael Schmitt
+jmlr-v5-33 | Image Categorization by Learning and Reasoning with Regions | http://www.jmlr.org/papers/v5/chen04a.html | author: Yixin Chen, James Z. Wang
+jmlr-v5-34 | Boosting as a Regularized Path to a Maximum Margin Classifier | http://www.jmlr.org/papers/v5/rosset04a.html | author: Saharon Rosset, Ji Zhu, Trevor Hastie
+jmlr-v5-35 | Probability Estimates for Multi-class Classification by Pairwise Coupling | http://www.jmlr.org/papers/v5/wu04a.html | author: Ting-Fan Wu, Chih-Jen Lin, Ruby C. Weng
+jmlr-v5-36 | On Robustness Properties of Convex Risk Minimization Methods for Pattern Recognition | http://www.jmlr.org/papers/v5/christmann04a.html | author: Andreas Christmann, Ingo Steinwart
+jmlr-v5-37 | Rational Kernels: Theory and Algorithms | http://www.jmlr.org/papers/v5/cortes04a.html | author: Corinna Cortes, Patrick Haffner, Mehryar Mohri
+jmlr-v5-38 | Reinforcement Learning with Factored States and Actions | http://www.jmlr.org/papers/v5/sallans04a.html | author:Brian Sallans, Geoffrey E. Hinton
+jmlr-v5-39 | No Unbiased Estimator of the Variance of K-Fold Cross-Validation | http://www.jmlr.org/papers/v5/grandvalet04a.html | author:Yoshua Bengio, Yves Grandvalet
+jmlr-v5-40 | Selective Rademacher Penalization and Reduced Error Pruning of Decision Trees | http://www.jmlr.org/papers/v5/kaariainen04a.html | author:Matti Kääriäinen, Tuomo Malinen, Tapio Elomaa
+jmlr-v5-41 | Knowledge-Based Kernel Approximation | http://www.jmlr.org/papers/v5/mangasarian04a.html | author:Olvi L. Mangasarian, Jude W. Shavlik, Edward W. Wild
+jmlr-v5-42 | Support Vector Machine Soft Margin Classifiers: Error Analysis | http://www.jmlr.org/papers/v5/chen04b.html | author:Di-Rong Chen, Qiang Wu, Yiming Ying, Ding-Xuan Zhou
+jmlr-v5-43 | Model Averaging for Prediction with Discrete Bayesian Networks | http://www.jmlr.org/papers/v5/dash04a.html | author:Denver Dash, Gregory F. Cooper
+jmlr-v5-44 | Efficient Feature Selection via Analysis of Relevance and Redundancy | http://www.jmlr.org/papers/v5/yu04a.html | author:Lei Yu, Huan Liu
+jmlr-v5-45 | Statistical Analysis of Some Multi-Category Large Margin Classification Methods | http://www.jmlr.org/papers/v5/zhang04b.html | author:Tong Zhang
+jmlr-v5-46 | The Minimum Error Minimax Probability Machine | http://www.jmlr.org/papers/v5/huang04a.html | author:Kaizhu Huang, Haiqin Yang, Irwin King, Michael R. Lyu, Laiwan Chan
+jmlr-v5-47 | Large-Sample Learning of Bayesian Networks is NP-Hard | http://www.jmlr.org/papers/v5/chickering04a.html | author:David Maxwell Chickering, David Heckerman, Christopher Meek
+jmlr-v5-48 | Randomized Variable Elimination | http://www.jmlr.org/papers/v5/stracuzzi04a.html | author:David J. Stracuzzi, Paul E. Utgoff
+jmlr-v5-49 | Some Properties of Regularized Kernel Methods | http://www.jmlr.org/papers/v5/devito04a.html | author:Ernesto De Vito, Lorenzo Rosasco, Andrea Caponnetto, Michele Piana, Alessandro Verri
+jmlr-v5-50 | The Entire Regularization Path for the Support Vector Machine | http://www.jmlr.org/papers/v5/hastie04a.html | author:Trevor Hastie, Saharon Rosset, Robert Tibshirani, Ji Zhu
+jmlr-v5-51 | Second Order Cone Programming Formulations for Feature Selection | http://www.jmlr.org/papers/v5/bhattacharyya04a.html | author:Chiranjib Bhattacharyya
+jmlr-v5-52 | Fast String Kernels using Inexact Matching for Protein Sequences | http://www.jmlr.org/papers/v5/leslie04a.html | author:Christina Leslie, Rui Kuang
+jmlr-v5-53 | Non-negative Matrix Factorization with Sparseness Constraints | http://www.jmlr.org/papers/v5/hoyer04a.html | author:Patrik O. Hoyer
+jmlr-v5-54 | Variance Reduction Techniques for Gradient Estimates in Reinforcement Learning | http://www.jmlr.org/papers/v5/greensmith04a.html | author:Evan Greensmith, Peter L. Bartlett, Jonathan Baxter
+jmlr-v5-55 | Fast Binary Feature Selection with Conditional Mutual Information | http://www.jmlr.org/papers/v5//fleuret04a.html | author:François Fleuret
+jmlr-v5-56 | The Dynamics of AdaBoost: Cyclic Behavior and Convergence of Margins | http://www.jmlr.org/papers/v5/rudin04a.html | author:Cynthia Rudin, Ingrid Daubechies, Robert E. Schapire

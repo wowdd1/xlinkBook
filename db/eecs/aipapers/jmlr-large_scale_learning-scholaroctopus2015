@@ -1,0 +1,8 @@
+jmlr-large_scale_learning-1 | A Parameter-Free Classification Method for Large Scale Learning | http://www.jmlr.org/papers/v10/boulle09a.html | author:Marc Boullé
+jmlr-large_scale_learning-2 | SGD-QN: Careful Quasi-Newton Stochastic Gradient Descent | http://www.jmlr.org/papers/v10/bordes09a.html | author:Antoine Bordes, Léon Bottou, Patrick Gallinari
+jmlr-large_scale_learning-3 | Hybrid MPI/OpenMP Parallel Linear Support Vector Machine Training | http://www.jmlr.org/papers/v10/woodsend09a.html | author:Kristian Woodsend, Jacek Gondzio
+jmlr-large_scale_learning-4 | Optimized Cutting Plane Algorithm for Large-Scale Risk Minimization | http://www.jmlr.org/papers/v10/franc09a.html | author:Vojtěch Franc, Sören Sonnenburg
+jmlr-large_scale_learning-5 | Hash Kernels for Structured Data | http://www.jmlr.org/papers/v10/shi09a.html | author:Qinfeng Shi, James Petterson, Gideon Dror, John Langford, Alex Smola, S.V.N. Vishwanathan
+jmlr-large_scale_learning-6 | A Streaming Parallel Decision Tree Algorithm | http://www.jmlr.org/papers/v11/ben-haim10a.html | author:Yael Ben-Haim, Elad Tom-Tov
+jmlr-large_scale_learning-7 | Large Scale Online Learning of Image Similarity Through Ranking | http://www.jmlr.org/papers/v11/chechik10a.html | author:Gal Chechik, Varun Sharma, Uri Shalit, Samy Bengio
+jmlr-large_scale_learning-8 | Erratum: SGDQN is Less Careful than Expected | http://www.jmlr.org/papers/v11/bordes10a.html | author:Antoine Bordes, Léon Bottou, Patrick Gallinari, Jonathan Chang, S. Alex Smith

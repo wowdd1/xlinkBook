@@ -1,0 +1,120 @@
+jmlr-v4-1 | On Nearest-Neighbor Error-Correcting Output Codes with Application to All-Pairs Multiclass Support Vector Machines | http://www.jmlr.org/papers/v4/klautau03a.html | author:
+Aldebaro Klautau, Nikola Jevtić, Alon Orlitsky
+jmlr-v4-2 | FINkNN: A Fuzzy Interval Number k-Nearest Neighbor Classifier for Prediction of Sugar Production from Populations of Samples | http://www.jmlr.org/papers/v4/petridis03a.html | author:
+Vassilios Petridis, Vassilis G. Kaburlasos
+jmlr-v4-3 | Designing Committees of Models through Deliberate Weighting of Data Points | http://www.jmlr.org/papers/v4/christensen03a.html | author:
+Stefan W. Christensen, Ian Sinclair, Philippa A. S. Reed
+jmlr-v4-4 | The em Algorithm for Kernel Matrix Completion with Auxiliary Data | http://www.jmlr.org/papers/v4/tsuda03a.html | author:
+Koji Tsuda, Shotaro Akaho, Kiyoshi Asai
+jmlr-v4-5 | Task Clustering and Gating for Bayesian Multitask Learning | http://www.jmlr.org/papers/v4/bakker03a.html | author:
+Bart Bakker, Tom Heskes
+jmlr-v4-6 | Optimally-Smooth Adaptive Boosting and Application to Agnostic Learning | http://www.jmlr.org/papers/v4/gavinsky03a.html | author:
+Dmitry Gavinsky
+jmlr-v4-7 | Think Globally, Fit Locally: Unsupervised Learning of Low Dimensional Manifolds | http://www.jmlr.org/papers/v4/saul03a.html | author:
+Lawrence K. Saul, Sam T. Roweis
+jmlr-v4-8 | On the Proper Learning of Axis-Parallel Concepts | http://www.jmlr.org/papers/v4/bshouty03a.html | author:
+Nader H. Bshouty, Lynn Burroughs
+jmlr-v4-9 | Bottom-Up Relational Learning of Pattern Matching Rules for Information Extraction | http://www.jmlr.org/papers/v4/califf03a.html | author:
+Mary Elaine Califf, Raymond J. Mooney
+jmlr-v4-10 | Tree Induction vs. Logistic Regression: A Learning-Curve Analysis | http://www.jmlr.org/papers/v4/perlich03a.html | author:
+Claudia Perlich, Foster Provost, Jeffrey S. Simonoff
+jmlr-v4-11 | Learning Probabilistic Models: An Expected Utility Maximization Approach | http://www.jmlr.org/papers/v4/friedman03a.html | author:
+Craig Friedman, Sven Sandow
+jmlr-v4-12 | Introduction to the Special Issue on the Fusion of Domain Knowledge with Data for Decision Support | http://www.jmlr.org/papers/volume4/dybowski03a/dybowski03a.pdf | author:
+Richard Dybowski, Kathryn B. Laskey, James W. Myers, Simon Parsons
+jmlr-v4-13 | Combining Knowledge from Different Sources in Causal Probabilistic Models | http://www.jmlr.org/papers/v4/druzdzel03a.html | author:
+Marek J. Druzdzel, Francisco J. Díez
+jmlr-v4-14 | Preference Elicitation via Theory Refinement | http://www.jmlr.org/papers/v4/haddawy03a.html | author:
+Peter Haddawy, Vu Ha, Angelo Restificar, Benjamin Geisler, John Miyamoto
+jmlr-v4-15 | Fusion of Domain Knowledge with Data for Structural Learning in Object Oriented Domains | http://www.jmlr.org/papers/v4/langseth03a.html | author:
+Helge Langseth, Thomas D. Nielsen
+jmlr-v4-16 | An Empirical Study of the Use of Relevance Information in Inductive Logic Programming | http://www.jmlr.org/papers/v4/srinivasan03a.html | author:
+Ashwin Srinivasan, Ross D. King, Michael E. Bain
+jmlr-v4-17 | Learning Behavior-Selection by Emotions and Cognition in a Multi-Goal Robot Task | http://www.jmlr.org/papers/v4/gadanho03a.html | author:
+Sandra Clara Gadanho
+jmlr-v4-18 | Introduction to the Special Issue on Inductive Logic Programming | http://www.jmlr.org/papers/volume4/cussens03a/cussens03a.pdf | author:
+James Cussens, Alan M. Frisch
+jmlr-v4-19 | ILP: A Short Look Back and a Longer Look Forward | http://www.jmlr.org/papers/v4/page03a.html | author:
+David Page, Ashwin Srinivasan
+jmlr-v4-20 | Relational Learning as Search in a Critical Region | http://www.jmlr.org/papers/v4/botta03a.html | author:
+Marco Botta, Attilio Giordana, Lorenza Saitta, Michèle Sebag
+jmlr-v4-21 | Query Transformations for Improving the Efficiency of ILP Systems | http://www.jmlr.org/papers/v4/costa03a.html | author:
+Vítor Santos Costa, Ashwin Srinivasan, Rui Camacho, Hendrik Blockeel, Bart Demoen, Gerda Janssens, Jan Struyf, Henk Vandecasteele, Wim Van Laer
+jmlr-v4-22 | Learning Semantic Lexicons from a Part-of-Speech and Semantically Tagged Corpus Using Inductive Logic Programming | http://www.jmlr.org/papers/v4/claveau03a.html | author:
+Vincent Claveau, Pascale Sébillot, Cécile Fabre, Pierrette Bouillon
+jmlr-v4-23 | On Inclusion-Driven Learning of Bayesian Networks | http://www.jmlr.org/papers/v4/castelo03a.html | author:
+Robert Castelo, Tomás Kocka
+jmlr-v4-24 | The Principled Design of Large-Scale Recursive Neural Network Architectures--DAG-RNNs and the Protein Structure Prediction Problem | http://www.jmlr.org/papers/v4/baldi03a.html | author:
+Pierre Baldi, Gianluca Pollastri
+jmlr-v4-25 | Inducing Grammars from Sparse Data Sets: A Survey of Algorithms and Results | http://www.jmlr.org/papers/v4/cicchello03a.html | author:
+Orlando Cicchello, Stefan C. Kremer
+jmlr-v4-26 | Smooth Boosting and Learning with Malicious Noise | http://www.jmlr.org/papers/v4/servedio03a.html | author:
+Rocco A. Servedio
+jmlr-v4-27 | Speedup Learning for Repair-based Search by Identifying Redundant Steps | http://www.jmlr.org/papers/v4/markovitch03a.html | author:
+Shaul Markovitch, Asaf Shatil
+jmlr-v4-28 | Comparing Bayes Model Averaging and Stacking When Model Approximation Error Cannot be Ignored | http://www.jmlr.org/papers/v4/clarke03a.html | author:
+Bertrand Clarke
+jmlr-v4-29 | Greedy Algorithms for Classification -- Consistency, Convergence Rates, and Adaptivity | http://www.jmlr.org/papers/v4/mannor03a.html | author:
+Shie Mannor, Ron Meir, Tong Zhang
+jmlr-v4-30 | Tree-Structured Neural Decoding | http://www.jmlr.org/papers/v4/davignon03a.html | author:
+Christian d'Avignon, Donald Geman
+jmlr-v4-31 | Introduction to the Special Issue on Learning Theory | http://www.jmlr.org/papers/volume4/herbrich03a/herbrich03a.pdf | author:
+Ralf Herbrich, Thore Graepel
+jmlr-v4-32 | On the Performance of Kernel Classes | http://www.jmlr.org/papers/v4/mendelson03a.html | author:
+Shahar Mendelson
+jmlr-v4-33 | Path Kernels and Multiplicative Updates | http://www.jmlr.org/papers/v4/takimoto03a.html | author:
+Eiji Takimoto, Manfred K. Warmuth
+jmlr-v4-34 | Tracking Linear-threshold Concepts with Winnow | http://www.jmlr.org/papers/v4/mesterharm03a.html | author:
+Chris Mesterharm
+jmlr-v4-35 | Generalization Error Bounds for Bayesian Mixture Algorithms | http://www.jmlr.org/papers/v4/meir03a.html | author:
+Ron Meir, Tong Zhang
+jmlr-v4-36 | On the Rate of Convergence of Regularized Boosting Classifiers | http://www.jmlr.org/papers/v4/blanchard03a.html | author:
+Gilles Blanchard, Gábor Lugosi, Nicolas Vayatis
+jmlr-v4-37 | Concentration Inequalities for the Missing Mass and for Histogram Rule Error | http://www.jmlr.org/papers/v4/mcallester03a.html | author:
+David McAllester, Luis Ortiz
+jmlr-v4-38 | Learning over Sets using Kernel Principal Angles | http://www.jmlr.org/papers/v4/wolf03a.html | author:
+Lior Wolf, Amnon Shashua
+jmlr-v4-39 | An Efficient Boosting Algorithm for Combining Preferences | http://www.jmlr.org/papers/v4/freund03a.html | author:
+Yoav Freund, Raj Iyer, Robert E. Schapire, Yoram Singer
+jmlr-v4-40 | Optimality of Universal Bayesian Sequence Prediction for General Loss and Alphabet | http://www.jmlr.org/papers/v4/hutter03a.html | author:
+Marcus Hutter
+jmlr-v4-41 | A Unified Framework for Model-based Clustering | http://www.jmlr.org/papers/v4/zhong03a.html | author:
+Shi Zhong, Joydeep Ghosh
+jmlr-v4-42 | Nash Q-Learning for General-Sum Stochastic Games | http://www.jmlr.org/papers/v4/hu03a.html | author:
+Junling Hu, Michael P. Wellman
+jmlr-v4-43 | Sparseness of Support Vector Machines | http://www.jmlr.org/papers/v4/steinwart03a.html | author:
+Ingo Steinwart
+jmlr-v4-44 | Least-Squares Policy Iteration | http://www.jmlr.org/papers/v4/lagoudakis03a.html | author:
+Michail G. Lagoudakis, Ronald Parr
+jmlr-v4-45 | An Approximate Analytical Approach to Resampling Averages | http://www.jmlr.org/papers/v4/malzahn03a.html | author:
+Dörthe Malzahn, Manfred Opper
+jmlr-v4-46 | Introduction to Special Issue on Independent Components Analysis | http://www.jmlr.org/papers/volume4/lee03a/lee03a.pdf | author:
+Te-Won Lee, Jean-François Cardoso, Erkki Oja, Shun-ichi Amari
+jmlr-v4-47 | Dependence, Correlation and  Gaussianity in Independent Component Analysis | http://www.jmlr.org/papers/v4/cardoso03a.html | author:
+Jean-François Cardoso
+jmlr-v4-48 | Beyond Independent Components: Trees and Clusters | http://www.jmlr.org/papers/v4/bach03a.html | author:
+Francis R. Bach, Michael I. Jordan
+jmlr-v4-49 | Energy-Based Models for Sparse Overcomplete Representations | http://www.jmlr.org/papers/v4/teh03a.html | author:
+Yee Whye Teh, Max Welling, Simon Osindero, Geoffrey E. Hinton
+jmlr-v4-50 | Blind Source Separation via Generalized Eigenvalue Decomposition | http://www.jmlr.org/papers/v4/parra03a.html | author:
+Lucas Parra, Paul Sajda
+jmlr-v4-51 | ICA Using Spacings Estimates of Entropy | http://www.jmlr.org/papers/v4/learned-miller03a.html | author:
+Erik G. Learned-Miller, John W. Fisher III
+jmlr-v4-52 | MISEP -- Linear and Nonlinear ICA Based on Mutual Information | http://www.jmlr.org/papers/v4/almeida03a.html | author:
+Luís B. Almeida
+jmlr-v4-53 | Blind Separation of Post-nonlinear Mixtures using Linearizing Transformations and Temporal Decorrelation | http://www.jmlr.org/papers/v4/ziehe03a.html | author:
+Andreas Ziehe, Motoaki Kawanabe, Stefan Harmeling, Klaus-Robert Müller
+jmlr-v4-54 | A Multiscale Framework For Blind Separation of Linearly Mixed Signals | http://www.jmlr.org/papers/v4/kisilev03a.html | author:
+Pavel Kisilev, Michael Zibulevsky, Yehoshua Y. Zeevi
+jmlr-v4-55 | A Maximum Likelihood Approach to Single-channel Source Separation | http://www.jmlr.org/papers/v4/jang03a.html | author:
+Gil-Jin Jang, Te-Won Lee
+jmlr-v4-56 | Statistical Dynamics of On-line Independent Component Analysis | http://www.jmlr.org/papers/v4/basalyga03a.html | author:
+Gleb Basalyga, Magnus Rattray
+jmlr-v4-57 | Blind Source Recovery: A Framework in the State Space | http://www.jmlr.org/papers/v4/waheed03a.html | author:
+Khurram Waheed, Fathi M. Salem
+jmlr-v4-58 | Overlearning in Marginal Distribution-Based ICA: Analysis and Solutions | http://www.jmlr.org/papers/v4/sarela03a.html | author:
+Jaakko Särelä, Ricardo Vigário
+jmlr-v4-59 | ICA for Watermarking Digital Images | http://www.jmlr.org/papers/v4/bounkong03a.html | author:
+Stéphane Bounkong, Borémi Toch, David Saad, David Lowe
+jmlr-v4-60 | A Generative Model for Separating Illumination and Reflectance from Images | http://www.jmlr.org/papers/v4/stainvas03a.html | author:
+Inna Stainvas, David Lowe

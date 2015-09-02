@@ -235,9 +235,53 @@ class AiPapersSpider(Spider):
     def writeNlpLine(self, f, paper_id, title, author, url):
         self.write_db(f, paper_id, title, url, "author:" + author)
 
+    def getJMLRPaper(self):
+        r = requests.get("http://jmlr.csail.mit.edu/papers/")
+        soup = BeautifulSoup(r.text)
+        for p in soup.find_all('p'):
+            if p.a != None and p.a.font != None:
+                topic = p.a['href']
+                url = "http://jmlr.csail.mit.edu/papers/" + p.a['href']
+                if topic.find('/') != -1:
+                    topic = topic[topic.find('/') + 1 : topic.find('.')]
+                self.getJMLRPapers(url, topic)
+    def getJMLRPapers(self, url, topic):
+        print topic
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        file_name = self.get_file_name("eecs/" + self.school.lower() + '/jmlr'  + "-" + topic, "scholaroctopus")
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for dl in soup.find_all('dl'):
+            title = dl.dt.text.strip().replace("\n", "")
+            if title.find('(') != -1:
+                title = title[0 : title.find('(')].strip()
+            authors = dl.dd.b.text
+            link = dl.dd.a['href'].strip()
+            if link[0 : 4] != "http":
+                if link[0 : 1] != '/':
+                    link = url + '/' + link
+                else:
+                    link = url[0 : url.find('/')] + link
+            print title
+            print authors
+            #print link
+            self.count += 1
+            self.write_db(f, 'jmlr-' + topic + '-' + str(self.count), title, link, "author:" + authors)
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
 start = AiPapersSpider()
 start.doWork()
 start.getCvPaper()
 start.getNipsPaper()
 start.getIcmlPaper()
 start.getNlpPaper()
+start.getJMLRPaper()
