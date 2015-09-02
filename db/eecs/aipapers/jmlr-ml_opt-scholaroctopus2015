@@ -1,0 +1,18 @@
+jmlr-ml_opt-1 | The Interplay of Optimization and Machine Learning Research | http://www.jmlr.org/papers/v7/MLOPT-intro06a.html | author:Kristin P. Bennett, Emilio Parrado-Hernández
+jmlr-ml_opt-2 | Second Order Cone Programming Approaches for Handling Missing and Uncertain Data | http://www.jmlr.org/papers/v7/shivaswamy06a.html | author:Pannagadatta K. Shivaswamy, Chiranjib Bhattacharyya, Alexander J. Smola
+jmlr-ml_opt-3 | Ensemble Pruning Via Semi-definite Programming | http://www.jmlr.org/papers/v7/zhang06a.html | author:Yi Zhang, Samuel Burer, W. Nick Street
+jmlr-ml_opt-4 | Linear Programs for Hypotheses Selection in Probabilistic Inference Models | http://www.jmlr.org/papers/v7/bergkvist06a.html | author:Anders Bergkvist, Peter Damaschke,  Marcel Lüthi
+jmlr-ml_opt-5 | Bayesian Network Learning with Parameter Constraints | http://www.jmlr.org/papers/v7/niculescu06a.html | author:Radu Stefan Niculescu, Tom M. Mitchell, R. Bharat Rao
+jmlr-ml_opt-6 | Learning Sparse Representations by Non-Negative Matrix Factorization and Sequential Cone Programming | http://www.jmlr.org/papers/v7/heiler06a.html | author:Matthias Heiler, Christoph Schnörr
+jmlr-ml_opt-7 | Fast SDP Relaxations of Graph Cut Clustering, Transduction, and Other Combinatorial Problems | http://www.jmlr.org/papers/v7/debie06a.html | author:Tijl De Bie, Nello Cristianini
+jmlr-ml_opt-8 | An Efficient Implementation of an Active Set Method for SVMs | http://www.jmlr.org/papers/v7/scheinberg06a.html | author:Katya Scheinberg
+jmlr-ml_opt-9 | Maximum-Gain Working Set Selection for SVMs | http://www.jmlr.org/papers/v7/glasmachers06a.html | author:Tobias Glasmachers, Christian Igel
+jmlr-ml_opt-10 | Parallel Software for Training Large Scale Support Vector Machines on Multiprocessor Systems | http://www.jmlr.org/papers/v7/zanni06a.html | author:Luca Zanni, Thomas Serafini, Gaetano Zanghirati
+jmlr-ml_opt-11 | Incremental Support Vector Learning: Analysis, Implementation and Applications | http://www.jmlr.org/papers/v7/laskov06a.html | author:Pavel Laskov, Christian Gehl, Stefan Krüger, Klaus-Robert Müller
+jmlr-ml_opt-12 | Building Support Vector Machines with Reduced Classifier Complexity | http://www.jmlr.org/papers/v7/keerthi06a.html | author:S. Sathiya Keerthi, Olivier Chapelle, Dennis DeCoste
+jmlr-ml_opt-13 | Exact 1-Norm Support Vector Machines Via Unconstrained Convex Differentiable Minimization | http://www.jmlr.org/papers/v7/mangasarian06a.html | author:Olvi L. Mangasarian
+jmlr-ml_opt-14 | Linear Programming Relaxations and Belief Propagation -- An Empirical Study | http://www.jmlr.org/papers/v7/yanover06a.html | author:Chen Yanover, Talya Meltzer, Yair Weiss
+jmlr-ml_opt-15 | Large Scale Multiple Kernel Learning | http://www.jmlr.org/papers/v7/sonnenburg06a.html | author:Sören Sonnenburg, Gunnar Rätsch, Christin Schäfer, Bernhard Schölkopf
+jmlr-ml_opt-16 | Efficient Learning of Label Ranking by Soft Projections onto Polyhedra | http://www.jmlr.org/papers/v7/shalev-shwartz06a.html | author:Shai Shalev-Shwartz, Yoram Singer
+jmlr-ml_opt-17 | Kernel-Based Learning of Hierarchical Multilabel Classification Models | http://www.jmlr.org/papers/v7/rousu06a.html | author:Juho Rousu, Craig Saunders, Sandor Szedmak, John Shawe-Taylor
+jmlr-ml_opt-18 | Structured Prediction, Dual Extragradient and Bregman Projections | http://www.jmlr.org/papers/v7/taskar06a.html | author:Ben Taskar, Simon Lacoste-Julien, Michael I. Jordan

@@ -1,0 +1,91 @@
+jmlr-v8-1 | Nonlinear Boosting Projections for Ensemble Construction | http://www.jmlr.org/papers/v8/garcia-pedrajas07a.html | author:Nicolás García-Pedrajas, César García-Osorio, Colin Fyfe
+jmlr-v8-2 | Multi-Task Learning for Classification with Dirichlet Process Priors | http://www.jmlr.org/papers/v8/xue07a.html | author:Ya Xue, Xuejun Liao, Lawrence Carin, Balaji Krishnapuram
+jmlr-v8-3 | A Unified Continuous Optimization Framework for Center-Based Clustering Methods | http://www.jmlr.org/papers/v8/teboulle07a.html | author:Marc Teboulle
+jmlr-v8-4 | Minimax Regret Classifier for Imprecise Class Distributions | http://www.jmlr.org/papers/v8/alaiz-rodriguez07a.html | author:Rocío Alaiz-Rodríguez, Alicia Guerrero-Curieses, Jesús Cid-Sueiro
+jmlr-v8-5 | Distances between Data Sets Based on Summary Statistics | http://www.jmlr.org/papers/v8/tatti07a.html | author:Nikolaj Tatti
+jmlr-v8-6 | Building Blocks for Variational Bayesian Learning of Latent Variable Models | http://www.jmlr.org/papers/v8/raiko07a.html | author:Tapani Raiko, Harri Valpola, Markus Harva, Juha Karhunen
+jmlr-v8-7 | A Probabilistic Analysis of EM for Mixtures of Separated, Spherical Gaussians | http://www.jmlr.org/papers/v8/dasgupta07a.html | author:Sanjoy Dasgupta, Leonard Schulman
+jmlr-v8-8 | Noise Tolerant Variants of the Perceptron Algorithm | http://www.jmlr.org/papers/v8/khardon07a.html | author:Roni Khardon, Gabriel Wachman
+jmlr-v8-9 | Learnability of Gaussians with Flexible Variances | http://www.jmlr.org/papers/v8/ying07a.html | author:Yiming Ying, Ding-Xuan Zhou
+jmlr-v8-10 | Separating Models of Learning from Correlated and Uncorrelated Data | http://www.jmlr.org/papers/v8/elbaz07a.html | author:Ariel Elbaz, Homin K. Lee, Rocco A. Servedio, Andrew Wan
+jmlr-v8-11 | Comments on the "Core Vector Machines: Fast SVM Training on Very Large Data Sets" | http://www.jmlr.org/papers/v8/loosli07a.html | author:Gaëlle Loosli, Stéphane Canu
+jmlr-v8-12 | General Polynomial Time Decomposition Algorithms | http://www.jmlr.org/papers/v8/list07a.html | author:Nikolas List, Hans Ulrich Simon
+jmlr-v8-13 | Dynamics and Generalization Ability of LVQ Algorithms | http://www.jmlr.org/papers/v8/biehl07a.html | author:Michael Biehl, Anarta Ghosh, Barbara Hammer
+jmlr-v8-14 | Statistical Consistency of Kernel Canonical Correlation Analysis | http://www.jmlr.org/papers/v8/fukumizu07a.html | author:Kenji Fukumizu, Francis R. Bach, Arthur Gretton
+jmlr-v8-15 | Learning Equivariant Functions with Matrix Valued Kernels | http://www.jmlr.org/papers/v8/reisert07a.html | author:Marco Reisert, Hans Burkhardt
+jmlr-v8-16 | Boosted Classification Trees and Class Probability/Quantile Estimation | http://www.jmlr.org/papers/v8/mease07a.html | author:David Mease, Abraham J. Wyner, Andreas Buja
+jmlr-v8-17 | Value Regularization and Fenchel Duality | http://www.jmlr.org/papers/v8/rifkin07a.html | author:Ryan M. Rifkin, Ross A. Lippert
+jmlr-v8-18 | Integrating Naïve Bayes and FOIL | http://www.jmlr.org/papers/v8/landwehr07a.html | author:Niels Landwehr, Kristian Kersting, Luc De Raedt
+jmlr-v8-19 | A Stochastic Algorithm for Feature Selection in Pattern Recognition | http://www.jmlr.org/papers/v8/gadat07a.html | author:Sébastien Gadat, Laurent Younes
+jmlr-v8-20 | Learning Horn Expressions with LOGAN-H | http://www.jmlr.org/papers/v8/arias07a.html | author:Marta Arias, Roni Khardon, Jérôme Maloberti
+jmlr-v8-21 | Consistent Feature Selection for Pattern Recognition in Polynomial Time | http://www.jmlr.org/papers/v8/nilsson07a.html | author:Roland Nilsson, José M. Peña, Johan Björkegren, Jesper Tegnér
+jmlr-v8-22 | Estimating High-Dimensional Directed Acyclic Graphs with the PC-Algorithm | http://www.jmlr.org/papers/v8/kalisch07a.html | author:Markus Kalisch, Peter Bühlmann
+jmlr-v8-23 | Margin Trees for High-dimensional Classification | http://www.jmlr.org/papers/v8/tibshirani07a.html | author:Robert Tibshirani, Trevor Hastie
+jmlr-v8-24 | Relational Dependency Networks | http://www.jmlr.org/papers/v8/neville07a.html | author:Jennifer Neville, David Jensen
+jmlr-v8-25 | Dynamic Conditional Random Fields: Factorized Probabilistic Models for Labeling and Segmenting Sequence Data | http://www.jmlr.org/papers/v8/sutton07a.html | author:Charles Sutton, Andrew McCallum, Khashayar Rohanimanesh
+jmlr-v8-26 | The Pyramid Match Kernel: Efficient Learning with Sets of Features | http://www.jmlr.org/papers/v8/grauman07a.html | author:Kristen Grauman, Trevor Darrell
+jmlr-v8-27 | Infinitely Imbalanced Logistic Regression | http://www.jmlr.org/papers/v8/owen07a.html | author:Art B. Owen
+jmlr-v8-28 | Sparseness vs Estimating Conditional Probabilities: Some Asymptotic Results | http://www.jmlr.org/papers/v8/bartlett07a.html | author:Peter L. Bartlett, Ambuj Tewari
+jmlr-v8-29 | Concave Learners for Rankboost | http://www.jmlr.org/papers/v8/melnik07a.html | author:Ofer Melnik, Yehuda Vardi, Cun-Hui Zhang
+jmlr-v8-30 | Gini Support Vector Machine: Quadratic Entropy Based Robust Multi-Class Probability Regression | http://www.jmlr.org/papers/v8/chakrabartty07a.html | author:Shantanu Chakrabartty, Gert Cauwenberghs
+jmlr-v8-31 | Preventing Over-Fitting during Model Selection via Bayesian Regularisation of the Hyper-Parameters | http://www.jmlr.org/papers/v8/cawley07a.html | author:Gavin C. Cawley, Nicola L. C. Talbot
+jmlr-v8-32 | Combining PAC-Bayesian and Generic Chaining Bounds | http://www.jmlr.org/papers/v8/audibert07a.html | author:Jean-Yves Audibert, Olivier Bousquet
+jmlr-v8-33 | Anytime Learning of Decision Trees | http://www.jmlr.org/papers/v8/esmeir07a.html | author:Saher Esmeir, Shaul Markovitch
+jmlr-v8-34 | Classification in Networked Data: A Toolkit and a Univariate Case Study | http://www.jmlr.org/papers/v8/macskassy07a.html | author:Sofus A. Macskassy, Foster Provost
+jmlr-v8-35 | Covariate Shift Adaptation by Importance Weighted Cross Validation | http://www.jmlr.org/papers/v8/sugiyama07a.html | author:Masashi Sugiyama, Matthias Krauledat, Klaus-Robert Müller
+jmlr-v8-36 | On the Consistency of Multiclass Classification Methods | http://www.jmlr.org/papers/v8/tewari07a.html | author:Ambuj Tewari, Peter L. Bartlett
+jmlr-v8-37 | Dimensionality Reduction of Multimodal Labeled Data by Local Fisher Discriminant Analysis | http://www.jmlr.org/papers/v8/sugiyama07b.html | author:Masashi Sugiyama
+jmlr-v8-38 | Undercomplete Blind Subspace Deconvolution | http://www.jmlr.org/papers/v8/szabo07a.html | author:Zoltán Szabó, Barnabás Póczos, András Lőrincz
+jmlr-v8-39 | Bilinear Discriminant Component Analysis | http://www.jmlr.org/papers/v8/dyrholm07a.html | author:Mads Dyrholm, Christoforos Christoforou, Lucas C. Parra
+jmlr-v8-40 | Loop Corrections for Approximate Inference on Factor Graphs | http://www.jmlr.org/papers/v8/mooij07a.html | author:Joris M. Mooij, Hilbert J. Kappen
+jmlr-v8-41 | Penalized Model-Based Clustering with Application to Variable Selection | http://www.jmlr.org/papers/v8/pan07a.html | author:Wei Pan, Xiaotong Shen
+jmlr-v8-42 | Local Discriminant Wavelet Packet Coordinates for Face Recognition | http://www.jmlr.org/papers/v8/liu07a.html | author:Chao-Chun Liu, Dao-Qing Dai, Hong Yan
+jmlr-v8-43 | Synergistic Face Detection and Pose Estimation with Energy-Based Models | http://www.jmlr.org/papers/v8/osadchy07a.html | author:Margarita Osadchy, Yann Le Cun, Matthew L. Miller
+jmlr-v8-44 | Maximum Entropy Density Estimation with Generalized Regularization and an Application to Species Distribution Modeling | http://www.jmlr.org/papers/v8/dudik07a.html | author:Miroslav Dudík, Steven J. Phillips, Robert E. Schapire
+jmlr-v8-45 | Measuring Differentiability:  Unmasking Pseudonymous Authors | http://www.jmlr.org/papers/v8/koppel07a.html | author:Moshe Koppel, Jonathan Schler, Elisheva Bonchek-Dokow
+jmlr-v8-46 | Bayesian Quadratic Discriminant Analysis | http://www.jmlr.org/papers/v8/srivastava07a.html | author:Santosh Srivastava, Maya R. Gupta, Béla A. Frigyik
+jmlr-v8-47 | From External to Internal Regret | http://www.jmlr.org/papers/v8/blum07a.html | author:Avrim Blum, Yishay Mansour
+jmlr-v8-48 | Graph Laplacians and their Convergence on Random Neighborhood Graphs | http://www.jmlr.org/papers/v8/hein07a.html | author:Matthias Hein, Jean-Yves Audibert, Ulrike von Luxburg
+jmlr-v8-49 | Generalization Error Bounds in Semi-supervised Classification Under the Cluster Assumption | http://www.jmlr.org/papers/v8/rigollet07a.html | author:Philippe Rigollet
+jmlr-v8-50 | Learning to Classify Ordinal Data: The Data Replication Method | http://www.jmlr.org/papers/v8/cardoso07a.html | author:Jaime S. Cardoso, Joaquim F. Pinto da Costa
+jmlr-v8-51 | Attribute-Efficient and Non-adaptive Learning of Parities and DNF Expressions | http://www.jmlr.org/papers/v8/feldman07a.html | author:Vitaly Feldman
+jmlr-v8-52 | PAC-Bayes Risk Bounds for Stochastic Averages and Majority Votes of Sample-Compressed Classifiers | http://www.jmlr.org/papers/v8/laviolette07a.html | author:François Laviolette, Mario Marchand
+jmlr-v8-53 | On the Effectiveness of Laplacian Normalization for Graph Semi-supervised Learning | http://www.jmlr.org/papers/v8/johnson07a.html | author:Rie Johnson, Tong Zhang
+jmlr-v8-54 | An Interior-Point Method for Large-Scale l1-Regularized Logistic Regression | http://www.jmlr.org/papers/v8/koh07a.html | author:Kwangmoo Koh, Seung-Jean Kim, Stephen Boyd
+jmlr-v8-55 | Multi-class Protein Classification Using Adaptive Codes | http://www.jmlr.org/papers/v8/melvin07a.html | author:Iain Melvin, Eugene Ie, Jason Weston, William Stafford Noble, Christina Leslie
+jmlr-v8-56 | Spherical-Homoscedastic Distributions: The Equivalency of Spherical and Normal Distributions in Classification | http://www.jmlr.org/papers/v8/hamsici07a.html | author:Onur C. Hamsici, Aleix M. Martinez
+jmlr-v8-57 | Handling Missing Values when Applying Classification Models | http://www.jmlr.org/papers/v8/saar-tsechansky07a.html | author:Maytal Saar-Tsechansky, Foster Provost
+jmlr-v8-58 | Compression-Based Averaging of Selective Naive Bayes Classifiers | http://www.jmlr.org/papers/v8/boulle07a.html | author:Marc Boullé
+jmlr-v8-59 | A Nonparametric Statistical Approach to Clustering via Mode Identification | http://www.jmlr.org/papers/v8/li07a.html | author:Jia Li, Surajit Ray, Bruce G. Lindsay
+jmlr-v8-60 | Polynomial Identification in the Limit of Substitutable Context-free Languages | http://www.jmlr.org/papers/v8/clark07a.html | author:Alexander Clark, Rémi Eyraud
+jmlr-v8-61 | Structure and Majority Classes in Decision Tree Learning | http://www.jmlr.org/papers/v8/hickey07a.html | author:Ray J. Hickey
+jmlr-v8-62 | Characterizing the Function Space for Bayesian Kernel Models | http://www.jmlr.org/papers/v8/pillai07a.html | author:Natesh S. Pillai, Qiang Wu, Feng Liang, Sayan Mukherjee, Robert L. Wolpert
+jmlr-v8-63 | "Ideal Parent" Structure Learning for Continuous Variable Bayesian Networks | http://www.jmlr.org/papers/v8/elidan07a.html | author:Gal Elidan, Iftach Nachman, Nir Friedman
+jmlr-v8-64 | Behavioral Shaping for Geometric Concepts | http://www.jmlr.org/papers/v8/chhabra07a.html | author:Manu Chhabra, Robert A. Jacobs, Daniel Štefankovič
+jmlr-v8-65 | Large Margin Semi-supervised Learning | http://www.jmlr.org/papers/v8/wang07a.html | author:Junhui Wang, Xiaotong Shen
+jmlr-v8-66 | Fast Iterative Kernel Principal Component Analysis | http://www.jmlr.org/papers/v8/guenter07a.html | author:Simon Günter, Nicol N. Schraudolph, S. V. N. Vishwanathan
+jmlr-v8-67 | A Generalized Maximum Entropy Approach to Bregman Co-clustering and Matrix Approximation | http://www.jmlr.org/papers/v8/banerjee07a.html | author:Arindam Banerjee, Inderjit Dhillon, Joydeep Ghosh, Srujana Merugu, Dharmendra S. Modha
+jmlr-v8-68 | Truncating the Loop Series Expansion for Belief Propagation | http://www.jmlr.org/papers/v8/gomez07a.html | author:Vicenç Gómez, Joris M. Mooij, Hilbert J. Kappen
+jmlr-v8-69 | Very Fast Online Learning of Highly Non Linear Problems | http://www.jmlr.org/papers/v8/chariatis07a.html | author:Aggelos Chariatis
+jmlr-v8-70 | Unlabeled Compression Schemes for Maximum Classes | http://www.jmlr.org/papers/v8/kuzmin07a.html | author:Dima Kuzmin, Manfred K. Warmuth
+jmlr-v8-71 | Refinable Kernels | http://www.jmlr.org/papers/v8/xu07a.html | author:Yuesheng Xu, Haizhang Zhang
+jmlr-v8-72 | A Complete Characterization of a Family of Solutions to a Generalized Fisher Criterion | http://www.jmlr.org/papers/v8/loog07a.html | author:Marco Loog
+jmlr-v8-73 | Transfer Learning via Inter-Task Mappings for Temporal Difference Learning | http://www.jmlr.org/papers/v8/taylor07a.html | author:Matthew E. Taylor, Peter Stone, Yaxin Liu
+jmlr-v8-74 | Proto-value Functions: A Laplacian Framework for Learning Representation and Control in Markov Decision Processes | http://www.jmlr.org/papers/v8/mahadevan07a.html | author:Sridhar Mahadevan, Mauro Maggioni
+jmlr-v8-75 | Online Learning of Multiple Tasks with a Shared Loss | http://www.jmlr.org/papers/v8/dekel07a.html | author:Ofer Dekel, Philip M. Long, Yoram Singer
+jmlr-v8-76 | Euclidean Embedding of Co-occurrence Data | http://www.jmlr.org/papers/v8/globerson07a.html | author:Amir Globerson, Gal Chechik, Fernando Pereira, Naftali Tishby
+jmlr-v8-77 | Harnessing the Expertise of 70,000 Human Editors: Knowledge-Based Feature Generation for Text Categorization | http://www.jmlr.org/papers/v8/gabrilovich07a.html | author:Evgeniy Gabrilovich, Shaul Markovitch
+jmlr-v8-78 | AdaBoost is Consistent | http://www.jmlr.org/papers/v8/bartlett07b.html | author:Peter L. Bartlett, Mikhail Traskin
+jmlr-v8-79 | The On-Line Shortest Path Problem Under Partial Monitoring | http://www.jmlr.org/papers/v8/gyoergy07a.html | author:András György, Tamás Linder, Gábor Lugosi, György Ottucsák
+jmlr-v8-80 | The Locally Weighted Bag of Words Framework for Document Representation | http://www.jmlr.org/papers/v8/lebanon07a.html | author:Guy Lebanon, Yi Mao, Joshua Dillon
+jmlr-v8-81 | The Need for Open Source Software in Machine Learning | http://www.jmlr.org/papers/v8/sonnenburg07a.html | author:Sören Sonnenburg, Mikio L. Braun, Cheng Soon Ong, Samy Bengio, Leon Bottou, Geoffrey Holmes, Yann LeCun, Klaus-Robert Müller, Fernando Pereira, Carl Edward Rasmussen, Gunnar Rätsch, Bernhard Schölkopf, Alexander Smola, Pascal Vincent, Jason Weston, Robert Williamson
+jmlr-v8-82 | On the Representer Theorem and Equivalent Degrees of Freedom of SVR | http://www.jmlr.org/papers/v8/dinuzzo07a.html | author:Francesco Dinuzzo, Marta Neve, Giuseppe De Nicolao, Ugo Pietro Gianazza
+jmlr-v8-83 | Nonlinear Estimators and Tail Bounds for Dimension Reduction in l1 Using Cauchy Random Projections | http://www.jmlr.org/papers/v8/li07b.html | author:Ping Li, Trevor J. Hastie, Kenneth W. Church
+jmlr-v8-84 | Revised Loss Bounds for the Set Covering Machine and Sample-Compression Loss Bounds for Imbalanced Data | http://www.jmlr.org/papers/v8/hussain07a.html | author:Zakria Hussain, François Laviolette, Mario Marchand, John Shawe-Taylor, Spencer Charles Brubaker, Matthew D. Mullin
+jmlr-v8-85 | VC Theory of Large Margin Multi-Category Classifiers | http://www.jmlr.org/papers/v8/guermeur07a.html | author:Yann Guermeur
+jmlr-v8-86 | Learning in Environments with Unknown Dynamics: Towards more Robust Concept Learners | http://www.jmlr.org/papers/v8/nunez07a.html | author:Marlon Núñez, Raúl Fidalgo, Rafael Morales
+jmlr-v8-87 | Hierarchical Average Reward Reinforcement Learning | http://www.jmlr.org/papers/v8/ghavamzadeh07a.html | author:Mohammad Ghavamzadeh, Sridhar Mahadevan
+jmlr-v8-88 | Ranking the Best Instances | http://www.jmlr.org/papers/v8/clemencon07a.html | author:Stéphan Clémençon, Nicolas Vayatis
+jmlr-v8-89 | Stagewise Lasso | http://www.jmlr.org/papers/v8/zhao07a.html | author:Peng Zhao, Bin Yu
+jmlr-v8-90 | A New Probabilistic Approach in Rank Regression with Optimal Bayesian Partitioning | http://www.jmlr.org/papers/v8/hue07a.html | author:Carine Hue, Marc Boullé
+jmlr-v8-91 | Dynamic Weighted Majority: An Ensemble Method for Drifting Concepts | http://www.jmlr.org/papers/v8/kolter07a.html | author:J. Zico Kolter, Marcus A. Maloof

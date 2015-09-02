@@ -1,0 +1,11 @@
+jmlr-kernel01-1 | Introduction to the Special Issue on Kernel Methods | http://www.jmlr.org/papers/volume2/cristianini01a/cristianini01a.pdf | author:Nello Cristianini, John Shawe-Taylor, Robert C. Williamson
+jmlr-kernel01-2 | Kernel Partial Least Squares Regression in Reproducing Kernel Hilbert Space | http://www.jmlr.org/papers/v2/rosipal01a.html | author:Roman Rosipal, Leonard J. Trejo
+jmlr-kernel01-3 | Support Vector Clustering | http://www.jmlr.org/papers/v2/horn01a.html | author:Asa Ben-Hur, David Horn, Hava T. Siegelmann, Vladimir Vapnik
+jmlr-kernel01-4 | One-Class SVMs for Document Classification | http://www.jmlr.org/papers/v2/manevitz01a.html | author:Larry M. Manevitz, Malik Yousef
+jmlr-kernel01-5 | Uniform Object Generation for Optimizing One-class Classifiers | http://www.jmlr.org/papers/v2/tax01a.html | author:David M.J. Tax, Robert P.W. Duin
+jmlr-kernel01-6 | A Generalized Kernel Approach to Dissimilarity-based Classification | http://www.jmlr.org/papers/v2/pekalska01a.html | author:Elzbieta Pekalska, Pavel Paclík, Robert P.W. Duin
+jmlr-kernel01-7 | A New Approximate Maximal Margin Classification Algorithm | http://www.jmlr.org/papers/v2/gentile01a.html | author:Claudio Gentile
+jmlr-kernel01-8 | Efficient SVM Training Using Low-Rank Kernel Representations | http://www.jmlr.org/papers/v2/fine01a.html | author:Shai Fine, Katya Scheinberg
+jmlr-kernel01-9 | On the Algorithmic Implementation of Multiclass Kernel-based Vector Machines | http://www.jmlr.org/papers/v2/crammer01a.html | author:Koby Crammer, Yoram Singer
+jmlr-kernel01-10 | Exact Simplification of Support Vector Solutions | http://www.jmlr.org/papers/v2/downs01a.html | author:Tom Downs, Kevin E. Gates, Annette Masters
+jmlr-kernel01-11 | Classes of Kernels for Machine Learning: A Statistics Perspective | http://www.jmlr.org/papers/v2/genton01a.html | author:Marc G. Genton

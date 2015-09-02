@@ -1,0 +1,31 @@
+jmlr-v2-1 | On the Size of Convex Hulls of Small Sets | http://jmlr.csail.mit.edu/papers/v2/mendelson01a.html | author:Shahar Mendelson
+jmlr-v2-2 | Graph-Based Hierarchical Conceptual Clustering | http://jmlr.csail.mit.edu/papers/v2/jonyer01a.html | author:Istvan Jonyer, Diane J. Cook, Lawrence B. Holder
+jmlr-v2-3 | Support Vector Machine Active Learning with Applications to Text Classification | http://jmlr.csail.mit.edu/papers/v2/tong01a.html | author:Simon Tong, Daphne Koller
+jmlr-v2-4 | On the Influence of the Kernel on the Consistency of Support Vector Machines | http://jmlr.csail.mit.edu/papers/v2/steinwart01a.html | author:Ingo Steinwart
+jmlr-v2-5 | Introduction to the Special Issue on Kernel Methods | http://www.jmlr.org/papers/volume2/cristianini01a/cristianini01a.pdf | author:Nello Cristianini, John Shawe-Taylor, Robert C. Williamson
+jmlr-v2-6 | Kernel Partial Least Squares Regression in Reproducing Kernel Hilbert Space | http://jmlr.csail.mit.edu/papers/v2/rosipal01a.html | author:Roman Rosipal, Leonard J. Trejo
+jmlr-v2-7 | Support Vector Clustering | http://jmlr.csail.mit.edu/papers/v2/horn01a.html | author:Asa Ben-Hur, David Horn, Hava T. Siegelmann, Vladimir Vapnik
+jmlr-v2-8 | One-Class SVMs for Document Classification | http://jmlr.csail.mit.edu/papers/v2/manevitz01a.html | author:Larry M. Manevitz, Malik Yousef
+jmlr-v2-9 | Uniform Object Generation for Optimizing One-class Classifiers | http://jmlr.csail.mit.edu/papers/v2/tax01a.html | author:David M.J. Tax, Robert P.W. Duin
+jmlr-v2-10 | A Generalized Kernel Approach to Dissimilarity-based Classification | http://jmlr.csail.mit.edu/papers/v2/pekalska01a.html | author:Elzbieta Pekalska, Pavel Paclik, Robert P.W. Duin
+jmlr-v2-11 | A New Approximate Maximal Margin Classification Algorithm | http://jmlr.csail.mit.edu/papers/v2/gentile01a.html | author:Claudio Gentile
+jmlr-v2-12 | Efficient SVM Training Using Low-Rank Kernel Representations | http://jmlr.csail.mit.edu/papers/v2/fine01a.html | author:Shai Fine, Katya Scheinberg
+jmlr-v2-13 | On the Algorithmic Implementation of Multiclass Kernel-based Vector Machines | http://jmlr.csail.mit.edu/papers/v2/crammer01a.html | author:Koby Crammer, Yoram Singer
+jmlr-v2-14 | Exact Simplification of Support Vector Solutions | http://jmlr.csail.mit.edu/papers/v2/downs01a.html | author:Tom Downs, Kevin E. Gates, Annette Masters
+jmlr-v2-15 | Classes of Kernels for Machine Learning: A Statistics Perspective | http://jmlr.csail.mit.edu/papers/v2/genton01a.html | author:Marc G. Genton
+jmlr-v2-16 | Recommender Systems Using Linear Classifiers | http://jmlr.csail.mit.edu/papers/v2/zhang02a.html | author:Tong Zhang, Vijay S. Iyengar
+jmlr-v2-17 | Machine Learning with Data Dependent Hypothesis Classes | http://jmlr.csail.mit.edu/papers/v2/cannon02a.html | author:Adam Cannon, J. Mark Ettinger, Don Hush, Clint Scovel
+jmlr-v2-18 | On Using Extended Statistical Queries to Avoid Membership Queries | http://jmlr.csail.mit.edu/papers/v2/bshouty02a.html | author:Nader H. Bshouty, Vitaly Feldman
+jmlr-v2-19 | The Learning-Curve Sampling Method Applied to Model-Based Clustering | http://jmlr.csail.mit.edu/papers/v2/meek02a.html | author:Christopher Meek, Bo Thiesson, David Heckerman
+jmlr-v2-20 | Text Classification using String Kernels | http://jmlr.csail.mit.edu/papers/v2/lodhi02a.html | author:Huma Lodhi, Craig Saunders, John Shawe-Taylor, Nello Cristianini, Chris Watkins
+jmlr-v2-21 | Learning Equivalence Classes of Bayesian-Network Structures | http://jmlr.csail.mit.edu/papers/v2/chickering02a.html | author:David Maxwell Chickering
+jmlr-v2-22 | Stability and Generalization | http://jmlr.csail.mit.edu/papers/v2/bousquet02a.html | author:Olivier Bousquet, André Elisseeff
+jmlr-v2-23 | Covering Number Bounds of Certain Regularized Linear Function Classes | http://jmlr.csail.mit.edu/papers/v2/zhang02b.html | author:Tong Zhang
+jmlr-v2-24 | Introduction to Special Issue on Machine Learning Approaches to Shallow Parsing | http://jmlr.csail.mit.edu/papers/v2/hammerton02a.html | author:James Hammerton, Miles Osborne, Susan Armstrong, Walter Daelemans
+jmlr-v2-25 | Memory-Based Shallow Parsing | http://jmlr.csail.mit.edu/papers/v2/tks02a.html | author:Erik F. Tjong Kim Sang
+jmlr-v2-26 | Shallow Parsing using Specialized HMMs | http://jmlr.csail.mit.edu/papers/v2/molina02a.html | author:Antonio Molina, Ferran Pla
+jmlr-v2-27 | Text Chunking based on a Generalization of Winnow | http://jmlr.csail.mit.edu/papers/v2/zhang02c.html | author:Tong Zhang, Fred Damerau, David Johnson
+jmlr-v2-28 | Shallow Parsing with PoS Taggers and Linguistic Features | http://jmlr.csail.mit.edu/papers/v2/megyesi02a.html | author:Beáta Megyesi
+jmlr-v2-29 | Learning Rules and Their Exceptions | http://jmlr.csail.mit.edu/papers/v2/dejean02a.html | author:Hervé Déjean
+jmlr-v2-30 | Shallow Parsing using Noisy and Non-Stationary Training Material | http://jmlr.csail.mit.edu/papers/v2/osborne02a.html | author:Miles Osborne
+jmlr-v2-31 | Round Robin Classification | http://jmlr.csail.mit.edu/papers/v2/fuernkranz02a.html | author:Johannes Fürnkranz

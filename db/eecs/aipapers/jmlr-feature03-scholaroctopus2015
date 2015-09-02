@@ -1,0 +1,15 @@
+jmlr-feature03-1 | An Introduction to Variable and Feature Selection | http://www.jmlr.org/papers/v3/guyon03a.html | author:Isabelle Guyon, André Elisseeff
+jmlr-feature03-2 | Distributional Word Clusters vs. Words for Text Categorization | http://www.jmlr.org/papers/v3/bekkerman03a.html | author:Ron Bekkerman, Ran El-Yaniv, Naftali Tishby, Yoad Winter
+jmlr-feature03-3 | Extensions to Metric Based Model Selection | http://www.jmlr.org/papers/v3/bengio03b.html | author:Yoshua Bengio, Nicolas Chapados
+jmlr-feature03-4 | Dimensionality Reduction via Sparse Support Vector Machines | http://www.jmlr.org/papers/v3/bi03a.html | author:Jinbo Bi, Kristin Bennett, Mark Embrechts, Curt Breneman, Minghu Song
+jmlr-feature03-5 | Benefitting from the Variables that Variable Selection Discards | http://www.jmlr.org/papers/v3/caruana03a.html | author:Rich Caruana, Virginia R. de Sa
+jmlr-feature03-6 | A Divisive Information Theoretic Feature Clustering Algorithm for Text Classification | http://www.jmlr.org/papers/v3/dhillon03a.html | author:Inderjit S. Dhillon, Subramanyam Mallela, Rahul Kumar
+jmlr-feature03-7 | An Extensive Empirical Study of Feature Selection Metrics for Text Classification | http://www.jmlr.org/papers/v3/forman03a.html | author:George Forman
+jmlr-feature03-8 | Sufficient Dimensionality Reduction | http://www.jmlr.org/papers/v3/globerson03a.html | author:Amir Globerson, Naftali Tishby
+jmlr-feature03-9 | Grafting: Fast, Incremental Feature Selection by Gradient Descent in Function Space | http://www.jmlr.org/papers/v3/perkins03a.html | author:Simon Perkins, Kevin Lacker, James Theiler
+jmlr-feature03-10 | Variable Selection Using SVM based Criteria | http://www.jmlr.org/papers/v3/rakotomamonjy03a.html | author:Alain Rakotomamonjy
+jmlr-feature03-11 | Overfitting in Making Comparisons Between Variable Selection Methods | http://www.jmlr.org/papers/v3/reunanen03a.html | author:Juha Reunanen
+jmlr-feature03-12 | MLPs | http://www.jmlr.org/papers/v3/rivals03a.html | author:Isabelle Rivals, Léon Personnaz
+jmlr-feature03-13 | Ranking a Random Feature for Variable and Feature Selection | http://www.jmlr.org/papers/v3/stoppiglia03a.html | author:Hervé Stoppiglia, Gérard Dreyfus, Rémi Dubois, Yacine Oussar
+jmlr-feature03-14 | Feature Extraction by Non Parametric Mutual Information Maximization | http://www.jmlr.org/papers/v3/torkkola03a.html | author:Kari Torkkola
+jmlr-feature03-15 | Use of the Zero Norm with Linear Models and Kernel Methods | http://www.jmlr.org/papers/v3/weston03a.html | author:Jason Weston, André Elisseeff, Bernhard Schölkopf, Mike Tipping
