@@ -285,3 +285,10 @@ start.getNipsPaper()
 start.getIcmlPaper()
 start.getNlpPaper()
 start.getJMLRPaper()
+
+#TODO
+#IJCAI http://ijcai.org/
+#ijrr http://www.ijrr.org/
+#RSS http://www.roboticsproceedings.org/
+#ICRA http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639
+#IROS http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000393
