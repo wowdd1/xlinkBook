@@ -1,0 +1,60 @@
+RSS-VIII-1 | Estimating Human Dynamics On-the-fly Using Monocular Video For Pose Estimation | http://www.roboticsproceedings.org/rss08/p01.pdf | author:Priyanshu Agarwal, Suren Kumar, Julian Ryde, Jason Corso, Venkat Krovi
+RSS-VIII-2 | Fast Weighted Exponential Product Rules for Robust General Multi-Robot Data Fusion | http://www.roboticsproceedings.org/rss08/p02.pdf | author:Nisar Ahmed, Jonathan Schoenberg, Mark  Campbell
+RSS-VIII-3 | State Estimation for Legged Robots - Consistent Fusion of Leg Kinematics and IMU | http://www.roboticsproceedings.org/rss08/p03.pdf | author:Michael Bloesch, Marco Hutter, Mark Hoepflinger, Stefan Leutenegger, Christian Gehring, C. David Remy, Roland Siegwart
+RSS-VIII-4 | Extrinsic Calibration from Per-Sensor Egomotion | http://www.roboticsproceedings.org/rss08/p04.pdf | author:Jonathan Brookshire, Seth Teller
+RSS-VIII-5 | Colour-Consistent Structure-from-Motion Models using Underwater Imagery | http://www.roboticsproceedings.org/rss08/p05.pdf | author:Mitch Bryson, Matthew Johnson-Roberson, Oscar Pizarro, Stefan Williams
+RSS-VIII-6 | M-Width: Stability and Accuracy of Haptic Rendering of Virtual Mass | http://www.roboticsproceedings.org/rss08/p06.pdf | author:Nick Colonnese, Allison Okamura
+RSS-VIII-7 | Contextual Sequence Prediction with Application to Control Library Optimization | http://www.roboticsproceedings.org/rss08/p07.pdf | author:Debadeepta Dey, Tian Yu Liu, Martial Hebert, J. Andrew Bagnell
+RSS-VIII-8 | Physics-Based Grasp Planning Through Clutter | http://www.roboticsproceedings.org/rss08/p08.pdf | author:Mehmet Dogar, Kaijen Hsiao, Matei Ciocarlie, Siddhartha Srinivasa
+RSS-VIII-9 | FFT-based Terrain Segmentation for Underwater Mapping | http://www.roboticsproceedings.org/rss08/p09.pdf | author:Bertrand Douillard, Navid Nourani-Vatani, Matthew Johnson-Roberson, Stefan Williams, Chris Roman, Oscar Pizarro, Ian  Vaughn, Gabrielle Inglis
+RSS-VIII-10 | Formalizing Assistive Teleoperation | http://www.roboticsproceedings.org/rss08/p10.pdf | author:Anca Dragan, Siddhartha Srinivasa
+RSS-VIII-11 | Reducing Conservativeness in Safety Guarantees by Learning Disturbances Online: Iterated Guaranteed Safe Online Learning | http://www.roboticsproceedings.org/rss08/p11.pdf | author:Jeremy Gillula, Claire Tomlin
+RSS-VIII-12 | What's in the Bag: A Distributed Approach to 3D Shape Duplication with Modular Robots | http://www.roboticsproceedings.org/rss08/p12.pdf | author:Kyle Gilpin, Daniela Rus
+RSS-VIII-13 | An Object-Based Approach to Map Human Hand Synergies onto Robotic Hands with Dissimilar Kinematics | http://www.roboticsproceedings.org/rss08/p13.pdf | author:Guido Gioioso, Gionata Salvietti, Monica Malvezzi, Domenico Prattichizzo
+RSS-VIII-14 | What Types of Interactions do Bio-Inspired Robot Swarms and Flocks Afford a Human? | http://www.roboticsproceedings.org/rss08/p14.pdf | author:Michael Goodrich, Sean Kerman, Brian Pendleton, P.B. Sujit
+RSS-VIII-15 | Real-Time Inverse Dynamics Learning for Musculoskeletal Robots based on Echo State Gaussian Process Regression | http://www.roboticsproceedings.org/rss08/p15.pdf | author:Christoph Hartmann, Joschka Boedecker, Oliver Obst, Shuhei Ikemoto, Minoru Asada
+RSS-VIII-16 | Recognition, Prediction, and Planning for Assisted Teleoperation of Freeform Tasks | http://www.roboticsproceedings.org/rss08/p16.pdf | author:Kris Hauser
+RSS-VIII-17 | Hybrid Operational Space Control for Compliant Legged Systems | http://www.roboticsproceedings.org/rss08/p17.pdf | author:Marco Hutter, Mark Hoepflinger, Christian Gehring, Michael Bloesch, C. David Remy, Roland Siegwart
+RSS-VIII-18 | Modeling and Prediction of Pedestrian Behavior based on the Sub-goal Concept | http://www.roboticsproceedings.org/rss08/p18.pdf | author:Tetsushi Ikeda, Yoshihiro Chigodo, Daniel Rea, Francesco Zanlungo, Masahiro Shiomi, Takayuki Kanda
+RSS-VIII-19 | Asymptotically-optimal Path Planning on Manifolds | http://www.roboticsproceedings.org/rss08/p19.pdf | author:Leonard Jaillet, Josep Porta
+RSS-VIII-20 | Minimal Coordinate Formulation of Contact Dynamics in Operational Space | http://www.roboticsproceedings.org/rss08/p20.pdf | author:Abhinandan Jain, Cory Crean, Calvin Kuo, Hubertus Von Bremen, Steven Myint
+RSS-VIII-21 | Nonparametric Bayesian Models for Unsupervised Scene Analysis and Reconstruction | http://www.roboticsproceedings.org/rss08/p21.pdf | author:Dominik Joho, Gian Diego Tipaldi, Nikolas Engelhard, Cyrill Stachniss, Wolfram Burgard
+RSS-VIII-22 | Distributed Approximation of Joint Measurement Distributions Using Mixtures of Gaussians | http://www.roboticsproceedings.org/rss08/p22.pdf | author:Brian Julian, Stephen Smith, Daniela Rus
+RSS-VIII-23 | Robust Object Grasping using Force Compliant Motion Primitives | http://www.roboticsproceedings.org/rss08/p23.pdf | author:Moslem Kazemi, Jean-Sebastien Valois, J. Andrew Bagnell, Nancy Pollard
+RSS-VIII-24 | Multi-stage micro rockets for robotic insects | http://www.roboticsproceedings.org/rss08/p24.pdf | author:Mirko Kovac, Maria Bendana, Rohit Krishnan, Jessica Burton, Michael Smith, Robert Wood
+RSS-VIII-25 | Feature-Based Prediction of Trajectories for Socially Compliant Navigation | http://www.roboticsproceedings.org/rss08/p25.pdf | author:Markus Kuderer, Henrik Kretzschmar, Christoph Sprunk, Wolfram Burgard
+RSS-VIII-26 | Variational Bayesian Optimization for Runtime Risk-Sensitive Control | http://www.roboticsproceedings.org/rss08/p26.pdf | author:Scott Kuindersma, Roderic Grupen, Andrew Barto
+RSS-VIII-27 | Time-Optimal Trajectory Generation for Path Following with Bounded Acceleration and Velocity | http://www.roboticsproceedings.org/rss08/p27.pdf | author:Tobias Kunz, Mike Stilman
+RSS-VIII-28 | Towards A Swarm of Agile Micro Quadrotors | http://www.roboticsproceedings.org/rss08/p28.pdf | author:Aleksandr Kushleyev, Vijay Kumar, Daniel Mellinger
+RSS-VIII-29 | CompAct Arm™: a Compliant Manipulator with Intrinsic Variable Physical Damping  | http://www.roboticsproceedings.org/rss08/p29.pdf | author:Matteo Laffranchi, Nikos Tsagarakis, Darwin Caldwell
+RSS-VIII-30 | Robust Loop Closing Over Time | http://www.roboticsproceedings.org/rss08/p30.pdf | author:Yasir Latif, Cesar Cadena Lerma, José Neira
+RSS-VIII-31 | Optimization-Based Estimator Design for Vision-Aided Inertial Navigation | http://www.roboticsproceedings.org/rss08/p31.pdf | author:Mingyang Li, Anastasios Mourikis
+RSS-VIII-32 | Practical Route Planning Under Delay Uncertainty: Stochastic Shortest Path Queries | http://www.roboticsproceedings.org/rss08/p32.pdf | author:Sejoon Lim, Christian Sommer, Evdokia Nikolova, Daniela Rus
+RSS-VIII-33 | A Distributable and Computation-flexible Assignment Algorithm: From Local Task Swapping to Global Optimality | http://www.roboticsproceedings.org/rss08/p33.pdf | author:Lantao Liu, Dylan Shell
+RSS-VIII-34 | The Banana Distribution is Gaussian: A Localization Study with Exponential Coordinates | http://www.roboticsproceedings.org/rss08/p34.pdf | author:Andrew Long, Kevin Wolfe, Michael Mashner, Gregory Chirikjian
+RSS-VIII-35 | Recognition and Pose Estimation of Rigid Transparent Objects with a Kinect Sensor  | http://www.roboticsproceedings.org/rss08/p35.pdf | author:Ilya Lysenkov, victor Eruhimov, Gary Bradski
+RSS-VIII-36 | Towards Persistent Localization and Mapping with a Continuous Appearance-based Topology | http://www.roboticsproceedings.org/rss08/p36.pdf | author:William Maddern, Michael Milford, Gordon Wyeth
+RSS-VIII-37 | Robust Navigation Execution by Planning in Belief Space | http://www.roboticsproceedings.org/rss08/p37.pdf | author:Bhaskara Marthi
+RSS-VIII-38 | Visual Route Recognition with a Handful of Bits | http://www.roboticsproceedings.org/rss08/p38.pdf | author:Michael Milford
+RSS-VIII-39 | Exploiting Passive Dynamics with Variable Stiffness Actuation in Robot Brachiation | http://www.roboticsproceedings.org/rss08/p39.pdf | author:Jun Nakanishi, Sethu Vijayakumar
+RSS-VIII-40 | Inference on networks of mixtures for robust robot mapping | http://www.roboticsproceedings.org/rss08/p40.pdf | author:Edwin Olson, Pratik Agarwal
+RSS-VIII-41 | Turning-rate Selective Control : A New Method for Independent Control of Stress-engineered MEMS Microrobots | http://www.roboticsproceedings.org/rss08/p41.pdf | author:Igor Paprotny, Christopher Levey, Paul Wright, Bruce Donald
+RSS-VIII-42 | Affine trajectory deformation for redundant manipulators | http://www.roboticsproceedings.org/rss08/p42.pdf | author:Quang-Cuong Pham, Yoshihiko Nakamura
+RSS-VIII-43 | E-Graphs: Bootstrapping Planning with Experience Graphs | http://www.roboticsproceedings.org/rss08/p43.pdf | author:Michael Phillips, Benjamin Cohen, Sachin Chitta, Maxim Likhachev
+RSS-VIII-44 | Walking and running on yielding and fluidizing ground | http://www.roboticsproceedings.org/rss08/p44.pdf | author:Feifei Qian, Tingnan Zhang, chen Li, Aaron Hoover, Pierangelo Masarati, Paul Birkmeyer, Andrew Pullin, Ronald Fearing, Dan Goldman
+RSS-VIII-45 | On Stochastic Optimal Control and Reinforcement Learning by Approximate Inference | http://www.roboticsproceedings.org/rss08/p45.pdf | author:Konrad Rawlik, Marc Toussaint, Sethu Vijayakumar
+RSS-VIII-46 | Failure anticipation in pursuit-evasion | http://www.roboticsproceedings.org/rss08/p46.pdf | author:Cyril Robin, Simon Lacroix
+RSS-VIII-47 | Tendon-Driven Variable Impedance Control Using Reinforcement Learning | http://www.roboticsproceedings.org/rss08/p47.pdf | author:Eric Rombokas, Mark Malhotra, Evangelos Theodorou, Yoky Matsuoka , Emo Todorov
+RSS-VIII-48 | Guaranteeing High-Level Behaviors while Exploring Partially Known Maps | http://www.roboticsproceedings.org/rss08/p48.pdf | author:Shahar Sarid, Bingxin Xu, Hadas Kress-Gazit
+RSS-VIII-49 | Development of a Testbed for Robotic Neuromuscular Controllers | http://www.roboticsproceedings.org/rss08/p49.pdf | author:Alexander Schepelmann, Hartmut Geyer, Michael Taylor
+RSS-VIII-50 | Experiments with Balancing on Irregular Terrains using the Dreamer Mobile Humanoid Robot | http://www.roboticsproceedings.org/rss08/p50.pdf | author:Luis Sentis, Josh Petersen, Roland Philippsen
+RSS-VIII-51 | Parsing Indoor Scenes Using RGB-D Imagery | http://www.roboticsproceedings.org/rss08/p51.pdf | author:Camillo Taylor, Anthony Cowley
+RSS-VIII-52 | Toward Information Theoretic Human-Robot Dialog | http://www.roboticsproceedings.org/rss08/p52.pdf | author:Stefanie Tellex, Pratiksha Thaker, Robin Deits, Thomas Kollar, Nicholas Roy
+RSS-VIII-53 | Efficiently finding optimal winding-constrained loops in the plane | http://www.roboticsproceedings.org/rss08/p53.pdf | author:Paul Vernaza, Venkatraman Narayanan, Maxim Likhachev
+RSS-VIII-54 | On the Structure of Nonlinearities in Pose Graph SLAM | http://www.roboticsproceedings.org/rss08/p54.pdf | author:Heng Wang, Gibson Hu, Shoudong Huang, Gamini Dissanayake
+RSS-VIII-55 | Probabilistic Modeling of Human Movements for Intention Inference | http://www.roboticsproceedings.org/rss08/p55.pdf | author:Zhikun Wang, Marc Deisenroth, Heni Ben Amor, David Vogt, Bernhard Schölkopf, Jan Peters
+RSS-VIII-56 | Optimization of Temporal Dynamics for Adaptive Human-Robot Interaction in Assembly Manufacturing | http://www.roboticsproceedings.org/rss08/p56.pdf | author:Ronald Wilcox, Stefanos Nikolaidis, Julie Shah
+RSS-VIII-57 | Optimal Control with Weighted Average Costs and Temporal Logic Specifications | http://www.roboticsproceedings.org/rss08/p57.pdf | author:Eric Wolff, Ufuk Topcu, Richard Murray
+RSS-VIII-58 | Probabilistic Temporal Logic for Motion Planning with Resource Threshold Constraints | http://www.roboticsproceedings.org/rss08/p58.pdf | author:Chanyeol Yoo, Robert Fitch, Salah Sukkarieh
+RSS-VIII-59 | Hierarchical Motion Planning in Topological Representations | http://www.roboticsproceedings.org/rss08/p59.pdf | author:Dmitry Zarubin, Vladimir Ivan, Marc Toussaint, Taku Komura, Sethu Vijayakumar
+RSS-VIII-60 | Rigidity Maintenance Control for Multi-Robot Systems | http://www.roboticsproceedings.org/rss08/p60.pdf | author:Daniel Zelazo, Antonio Franchi, Frank Allgöwer, Heinrich Bülthoff, Paolo Robuffo Giordano

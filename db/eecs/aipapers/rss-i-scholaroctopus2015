@@ -1,0 +1,48 @@
+RSS-I-1 | Interacting Markov Random Fields for Simultaneous Terrain Modeling and Obstacle Detection | http://www.roboticsproceedings.org/rss01/p01.pdf | author:Carl Wellington, Aaron Courville, Anthony Stentz
+RSS-I-2 | Active Learning For Outdoor Obstacle Detection | http://www.roboticsproceedings.org/rss01/p02.pdf | author:Cristian Dima, Martial Hebert
+RSS-I-3 | Dynamic Maps for Long-Term Operation of Mobile Service Robots | http://www.roboticsproceedings.org/rss01/p03.pdf | author:Peter Biber, Tom Duckett
+RSS-I-4 | Star-shaped Roadmaps - A Deterministic SamplingApproach for Complete Motion Planning | http://www.roboticsproceedings.org/rss01/p04.pdf | author:Gokul Varadhan, Dinesh Manocha
+RSS-I-5 | Complete Path Planning for Planar Closed ChainsAmong Point Obstacles | http://www.roboticsproceedings.org/rss01/p05.pdf | author:G.F. Liu, J.C. Trinkle
+RSS-I-6 | Vision-based Distributed Coordination and Flocking ofMulti-agent Systems | http://www.roboticsproceedings.org/rss01/p06.pdf | author:Nima Moshtagh, Ali Jadbabaie, Kostas Daniilidis
+RSS-I-7 | Formation Stabilization of Multiple Agents UsingDecentralized Navigation Functions | http://www.roboticsproceedings.org/rss01/p07.pdf | author:Herbert G. Tanner, Amit Kumar
+RSS-I-8 | Visually Navigating the RMS Titanic with SLAMInformation Filters | http://www.roboticsproceedings.org/rss01/p08.pdf | author:Ryan Eustice, Hanumant Singh, John Leonard, Matthew Walter, Robert Ballard
+RSS-I-9 | Information Gain-based ExplorationUsing Rao-Blackwellized Particle Filters | http://www.roboticsproceedings.org/rss01/p09.pdf | author:Cyrill Stachniss, Giorgio Grisetti, Wolfram Burgard
+RSS-I-10 | Performance Bounds for Cooperative Simultaneous Localizationand Mapping (C-SLAM) | http://www.roboticsproceedings.org/rss01/p10.pdf | author:Anastasios I. Mourikis, Stergios I. Roumeliotis
+RSS-I-11 | Efficient Exploration With Latent Structure | http://www.roboticsproceedings.org/rss01/p11.pdf | author:Bethany R. Leffler, Michael L. Littman, Alexander L. Strehl, Thomas J. Walsh
+RSS-I-12 | A polynomial-time algorithm to design push plansfor sensorless parts sorting | http://www.roboticsproceedings.org/rss01/p13.pdf | author:Mark de Berg, Xavier Goaoc, A. Frank van der Stappen
+RSS-I-13 | Effcient Motion Planning Based on Disassembly | http://www.roboticsproceedings.org/rss01/p14.pdf | author:Yuandong Yang, Oliver Brock
+RSS-I-14 | Toward Optimal Configuration Space Sampling | http://www.roboticsproceedings.org/rss01/p15.pdf | author:Brendan Burns, Oliver Brock
+RSS-I-15 | Natural Gait Generation Techniques forPrincipally Kinematic Mechanical Systems | http://www.roboticsproceedings.org/rss01/p16.pdf | author:Elie Shammas, Howie Choset, Alfred Rizzi
+RSS-I-16 | A Two-Point Boundary-Value Approach forPlanning Manipulation Tasks | http://www.roboticsproceedings.org/rss01/p17.pdf | author:Peng Song, Vijay Kumar, Jong-Shi Pang
+RSS-I-17 | Dynamic Task Assignment in Robot Swarms | http://www.roboticsproceedings.org/rss01/p18.pdf | author:James McLurkin, Daniel Yamins
+RSS-I-18 | Microrobotic Streak Seeding For Protein CrystalGrowth | http://www.roboticsproceedings.org/rss01/p19.pdf | author:Atanas Georgiev, Peter K. Allen, Ting Song, Andrew Laine, William Edstrom, John Hunt
+RSS-I-19 | Single Actuator Control Analysisof a Planar 3DOF Hopping Robot | http://www.roboticsproceedings.org/rss01/p20.pdf | author:Nicholas Cherouvim, Evangelos Papadopoulos
+RSS-I-20 | Modeling Complex Contacts Involving DeformableObjects for Haptic and Graphic Rendering | http://www.roboticsproceedings.org/rss01/p21.pdf | author:Qi Luo, Jing Xiao
+RSS-I-21 | Three Dimensional Stochastic Reconfigurationof Modular Robots | http://www.roboticsproceedings.org/rss01/p22.pdf | author:Paul White, Victor Zykov, Josh Bongard, Hod Lipson
+RSS-I-22 | On Correlating Sonar Images | http://www.roboticsproceedings.org/rss01/p23.pdf | author:Richard J. Rikoski, J. Tory Cobb, Daniel C. Brown
+RSS-I-23 | Square Root SAM | http://www.roboticsproceedings.org/rss01/p24.pdf | author:Frank Dellaert
+RSS-I-24 | Topological Mapping with Multiple VisualManifolds | http://www.roboticsproceedings.org/rss01/p25.pdf | author:Greg Grudic, Jane Mulligan
+RSS-I-25 | Scaling hard vertical surfaces with compliantmicrospine arrays | http://www.roboticsproceedings.org/rss01/p26.pdf | author:Alan T. Asbeck, Sangbae Kim, William R. Provancher, Michele Lanzetta
+RSS-I-26 | Multi-robot Simultaneous Localization and Mappingusing Particle Filters | http://www.roboticsproceedings.org/rss01/p27.pdf | author:Andrew Howard
+RSS-I-27 | Data driven MCMC for Appearance-basedTopological Mapping | http://www.roboticsproceedings.org/rss01/p28.pdf | author:Ananth Ranganathan, Frank Dellaert
+RSS-I-28 | Robot Planning in Partially ObservableContinuous Domains | http://www.roboticsproceedings.org/rss01/p29.pdf | author:Josep M. Porta, Matthijs T. J. Spaan, Nikos Vlassis
+RSS-I-29 | Path Planning for Deformable Robots inComplex Environments | http://www.roboticsproceedings.org/rss01/p30.pdf | author:Russell Gayle, Paul Segars, Ming C. Lin, Dinesh Manocha
+RSS-I-30 | Motion Planning in the Presence of Drift,Underactuation and Discrete System Changes | http://www.roboticsproceedings.org/rss01/p31.pdf | author:Andrew M. Ladd, Lydia E. Kavraki
+RSS-I-31 | BioCD : An efficient algorithm for self-collisionand distance computation between highly articulatedmolecular models | http://www.roboticsproceedings.org/rss01/p32.pdf | author:Vicente Ruiz de Angulo, Juan Cortés, Thierry Siméon
+RSS-I-32 | An RRT-Based Algorithm for Testing andValidating Multi-Robot Controllers | http://www.roboticsproceedings.org/rss01/p33.pdf | author:Jongwoo Kim, Joel M. Esposito, Vijay Kumar
+RSS-I-33 | Roadmap Based Pursuit-Evasion and CollisionAvoidance | http://www.roboticsproceedings.org/rss01/p34.pdf | author:Volkan Isler, Dengfeng Sun, Shankar Sastry
+RSS-I-34 | Single-Cluster Spectral Graph Partitioningfor Robotics Applications | http://www.roboticsproceedings.org/rss01/p35.pdf | author:Edwin Olson, Matthew Walter, Seth Teller, John Leonard
+RSS-I-35 | Adaptive Road Following using Self-SupervisedLearning and Reverse Optical Flow | http://www.roboticsproceedings.org/rss01/p36.pdf | author:David Lieb, Andrew Lookingbill, Sebastian Thrun
+RSS-I-36 | Optimal Sensing Strategies for Mobile Robot Formations:Resource-Constrained Localization | http://www.roboticsproceedings.org/rss01/p37.pdf | author:Anastasios I. Mourikis, Stergios I. Roumeliotis
+RSS-I-37 | Discriminative Training of Kalman Filters | http://www.roboticsproceedings.org/rss01/p38.pdf | author:Pieter Abbeel, Adam Coates, Michael Montemerlo, Andrew Y. Ng, Sebastian Thrun
+RSS-I-38 | Time Complexity of Sensor-Based Vehicle Routing | http://www.roboticsproceedings.org/rss01/p39.pdf | author:Vikrant Sharma, Michael Savchenko, Emilio Frazzoli, Petros G. Voulgaris
+RSS-I-39 | The Stability of Point-mass Hopperswith Varying Morphology and Minimal Feedback | http://www.roboticsproceedings.org/rss01/p40.pdf | author:Justin Seipel
+RSS-I-40 | Optimal design of robots | http://www.roboticsproceedings.org/rss01/p41.pdf | author:Jean-Pierre Merlet
+RSS-I-41 | Biologically Inspired Miniature Water Strider Robot | http://www.roboticsproceedings.org/rss01/p42.pdf | author:Steve H. Suhr, Yun Seong Song, Sang Jun Lee, Metin Sitti
+RSS-I-42 | Micro and Nanorobotic Assembly UsingDielectrophoresis | http://www.roboticsproceedings.org/rss01/p43.pdf | author:Arunkumar Subramanian, Barmeshwar Vikramaditya, Lixin Dong, Dominik Bell, Bradley J. Nelson
+RSS-I-43 | Blind Swarms for Coverage in 2-D | http://www.roboticsproceedings.org/rss01/p44.pdf | author:Vin de Silva, Robert Ghrist, Abubakr Muhammad
+RSS-I-44 | Auction-Based Multi-Robot Routing | http://www.roboticsproceedings.org/rss01/p45.pdf | author:Michail G. Lagoudakis, Evangelos Markakis, David Kempe, Pinar Keskinocak, Anton Kleywegt, Sven Koenig, Craig Tovey, Adam Meyerson, Sonal Jain
+RSS-I-45 | Shape, Motion, and Parameter Estimation ofFlexible Space Structures using Laser Rangefinders | http://www.roboticsproceedings.org/rss01/p46.pdf | author:Matthew D. Lichter, Steven Dubowsky, Hiroshi Ueno, Shinji Mitani
+RSS-I-46 | Model-Based Error Correction for FlexibleRobotic Surgical Instruments | http://www.roboticsproceedings.org/rss01/p47.pdf | author:Ryan A. Beasley, Robert D. Howe
+RSS-I-47 | Data Structure for Efficient Processing in 3-D | http://www.roboticsproceedings.org/rss01/p48.pdf | author:Jean-François Lalonde, Nicolas Vandapel, Martial Hebert
+RSS-I-48 | σMCL: Monte-Carlo Localization for MobileRobots with Stereo Vision | http://www.roboticsproceedings.org/rss01/p49.pdf | author:Pantelis Elinas, James J. Little

@@ -1,0 +1,39 @@
+RSS-V-1 | Cooperative manipulation and transportation with aerial robots | http://www.roboticsproceedings.org/rss05/p1.pdf | author:N. Michael, J. Fink and V. Kumar
+RSS-V-2 | Learning of 2D grasping strategies from box-based 3D object approximations | http://www.roboticsproceedings.org/rss05/p2.pdf | author:S. Geidenstam, K. Huebner, D. Banksell and D. Kragic
+RSS-V-3 | LQR-trees: Feedback motion planning on sparse randomized trees | http://www.roboticsproceedings.org/rss05/p3.pdf | author:R. Tedrake
+RSS-V-4 | Human motion database with a binary tree and node transition graphs | http://www.roboticsproceedings.org/rss05/p4.pdf | author:K. Yamane, Y. Yamaguchi and Y. Nakamura
+RSS-V-5 | Explicit parametrizations of the configuration spaces of anthropomorphic multi-linkage systems | http://www.roboticsproceedings.org/rss05/p5.pdf | author:L. Han and L. Rudolph
+RSS-V-6 | Approximating displacement with the body velocity integral | http://www.roboticsproceedings.org/rss05/p6.pdf | author:R. L. Hatton and H. Choset
+RSS-V-7 | Tactile texture recognition with a 3-axial force MEMS integrated artificial finger | http://www.roboticsproceedings.org/rss05/p7.pdf | author:F. de Boissieu, C. Godin, B. Guilhamat, D. David, C. Serviere and D. Baudois
+RSS-V-8 | On the complexity of the set of three-finger caging grasps of convex polygons | http://www.roboticsproceedings.org/rss05/p8.pdf | author:M. Vahedi and A. Frank van der Stappen
+RSS-V-9 | On the consistency of multi-robot cooperative localization | http://www.roboticsproceedings.org/rss05/p9.pdf | author:G. P. Huang, N. Trawny, A. I. Mourikis and S. I. Roumeliotis
+RSS-V-10 | Inner sphere trees for proximity and penetration queries | http://www.roboticsproceedings.org/rss05/p10.pdf | author:R. Weller and G. Zachmann
+RSS-V-11 | Using the distribution theory to simultaneously calibrate the sensors of a mobile robot | http://www.roboticsproceedings.org/rss05/p11.pdf | author:A. Martinelli
+RSS-V-12 | Planning motion in environments with similar obstacles | http://www.roboticsproceedings.org/rss05/p12.pdf | author:J.-M. Lien and Y. Lu
+RSS-V-13 | Robust visual homing with landmark angles | http://www.roboticsproceedings.org/rss05/p13.pdf | author:J. Lim and N. Barnes
+RSS-V-14 | Rut detection and following for autonomous ground vehicles | http://www.roboticsproceedings.org/rss05/p14.pdf | author:C. Ordonez, O. Y. Chuy Jr. and E. G. Collins Jr.
+RSS-V-15 | Unsupervised discovery of object classes from range data using latent Dirichlet allocation | http://www.roboticsproceedings.org/rss05/p15.pdf | author:F. Endres, C. Plagemann, C. Stachniss and W. Burgard
+RSS-V-16 | Towards cyclic fabrication systems for modular robotics and rapid manufacturing | http://www.roboticsproceedings.org/rss05/p16.pdf | author:M. Moses, H. Yamaguchi and G. S. Chirikjian
+RSS-V-17 | Setpoint regulation for stochastically interacting robots | http://www.roboticsproceedings.org/rss05/p17.pdf | author:N. Napp, S. Burden and E. Klavins
+RSS-V-18 | Centralized path planning for multiple robots: Optimal decoupling into sequential plans | http://www.roboticsproceedings.org/rss05/p18.pdf | author:J. van den Berg, J. Snoeyink, M. Lin and D. Manocha
+RSS-V-19 | Accurate rough terrain estimation with space-carving kernels | http://www.roboticsproceedings.org/rss05/p19.pdf | author:R. Hadsell, J. A. Bagnell, D. Huber and M. Hebert
+RSS-V-20 | View-based maps | http://www.roboticsproceedings.org/rss05/p20.pdf | author:K. Konolige, J. Bowman, J. D. Chen, P. Mihelich, M. Calonder, V. Lepetit and P. Fua
+RSS-V-21 | Generalized-ICP | http://www.roboticsproceedings.org/rss05/p21.pdf | author:A. Segal, D. Haehnel and S. Thrun
+RSS-V-22 | 3D laser scan classification using web data and domain adaptation | http://www.roboticsproceedings.org/rss05/p22.pdf | author:K. Lai and D. Fox
+RSS-V-23 | Adaptive relative bundle adjustment | http://www.roboticsproceedings.org/rss05/p23.pdf | author:G. Sibley, C. Mei, I. Reid and P. Newman
+RSS-V-24 | Underwater human-robot interaction via biological motion identification | http://www.roboticsproceedings.org/rss05/p24.pdf | author:J. Sattar and G. Dudek
+RSS-V-25 | Robustness of the Unscented Kalman filter for state and parameter estimation in an elastic transmission | http://www.roboticsproceedings.org/rss05/p25.pdf | author:E. Naerum, H. Hawkeye King and B. Hannaford
+RSS-V-26 | POMDPs for robotic tasks with mixed observability | http://www.roboticsproceedings.org/rss05/p26.pdf | author:S. C. W. Ong, S. W. Png, D. Hsu and W. S. Lee
+RSS-V-27 | Policy search via the signed derivative | http://www.roboticsproceedings.org/rss05/p27.pdf | author:J. Z. Kolter and A. Y. Ng
+RSS-V-28 | Non-parametric learning to aid path planning over slopes | http://www.roboticsproceedings.org/rss05/p28.pdf | author:S. Karumanchi, T. Allen, T. Bailey and S. Scheding
+RSS-V-29 | Learning GP-BayesFilters via Gaussian process latent variable models | http://www.roboticsproceedings.org/rss05/p29.pdf | author:J. Ko and D. Fox
+RSS-V-30 | 3D relative pose estimation from six distances | http://www.roboticsproceedings.org/rss05/p30.pdf | author:N. Trawny, X. S. Zhou and S. I. Roumeliotis
+RSS-V-31 | An Ab-initio tree-based exploration to enhance sampling of low-energy protein conformations | http://www.roboticsproceedings.org/rss05/p31.pdf | author:A. Shehu
+RSS-V-32 | Cellular muscle actuators with variable resonant frequencies | http://www.roboticsproceedings.org/rss05/p32.pdf | author:T. W. Secord and H. H. Asada
+RSS-V-33 | Positioning unmanned aerial vehicles as communication relays for surveillance tasks | http://www.roboticsproceedings.org/rss05/p33.pdf | author:O. Burdakov, P. Doherty, K. Holmberg, J. Kvarnstrom and P.-M. Olsson
+RSS-V-34 | Efficient, guaranteed search with multi-agent teams | http://www.roboticsproceedings.org/rss05/p34.pdf | author:G. Hollinger, S. Singh and A. Kehagias
+RSS-V-35 | Time-extended multi-robot coordination for domains with intra-path constraints | http://www.roboticsproceedings.org/rss05/p35.pdf | author:E. G. Jones, M. B. Dias and A. Stentz
+RSS-V-36 | Bridging the gap between passivity and transparency | http://www.roboticsproceedings.org/rss05/p36.pdf | author:M. Franken, S. Stramigioli, R. Reilink, C. Secchi and A. Macchelli
+RSS-V-37 | Feedback control for steering needles through 3D deformable tissue using helical paths | http://www.roboticsproceedings.org/rss05/p37.pdf | author:K. Hauser, R. Alterovitz, N. Chentanez, A. Okamura and K. Goldberg
+RSS-V-38 | Large scale graph-based SLAM using aerial images as prior information | http://www.roboticsproceedings.org/rss05/p38.pdf | author:R. Kummerle, B. Steder, C. Dornhege, A. Kleiner, G. Grisetti and W. Burgard
+RSS-V-39 | Highly scalable appearance-only SLAM - FAB-MAP 2.0 | http://www.roboticsproceedings.org/rss05/p39.pdf | author:M. Cummins and P. Newman
