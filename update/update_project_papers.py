@@ -13,6 +13,24 @@ class ProjectPaperSpider(Spider):
 
     def doWork(self):
         self.getWastonPapers()
+        #self.getRoboBrainPapers()
+
+    def getRoboBrainPapers(self):
+        r = requests.get("http://robobrain.me/#/about")
+        soup = BeautifulSoup(r.text)
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "robotbrain", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        print r.text
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
 
     def getWastonPapers(self):
@@ -26,7 +44,7 @@ class ProjectPaperSpider(Spider):
         for div in soup.find_all("div", class_="publication"):
             link = ""
             authors = ""
-            organization = ""
+            journal = ""
             title = div.h4.text.strip()
             if div.h4.a != None:
                 link = div.h4.a['href']
@@ -38,13 +56,13 @@ class ProjectPaperSpider(Spider):
                 if count == 1:
                     authors = "author:" + data + " "
                 if count == 2:
-                    organization = "organization:" + data
+                    journal = "journal:" + data
             print title
             print authors
-            print organization
+            print journal
             print link
             self.count += 1
-            self.write_db(f, "waston-paper-" + str(self.count), title, link, authors + organization)
+            self.write_db(f, "waston-paper-" + str(self.count), title, link, authors + journal)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
