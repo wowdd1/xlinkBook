@@ -79,6 +79,7 @@ need_update_subject_list = [
     #'literature',
     #'linguistics-and-philosophy',
     #"psychology",
+    #'chemistry',
     'statistics-data-analysis'
 ]
 
