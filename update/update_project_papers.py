@@ -14,6 +14,36 @@ class ProjectPaperSpider(Spider):
     def doWork(self):
         self.getWastonPapers()
         #self.getRoboBrainPapers()
+        self.getSTAIRPapers()
+
+    def getSTAIRPapers(self):
+        r = requests.get("http://stair.stanford.edu/papers.php")
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "STAIRP", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for li in soup.find_all("li"):
+            title = ""
+            link = ""
+            if li.span == None:
+                continue
+            title = li.span.text
+                
+            if li.a != None:
+                link = li.a['href']
+            self.count += 1
+            self.write_db(f, "STAIRP-paper-" + str(self.count), title, link)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getRoboBrainPapers(self):
         r = requests.get("http://robobrain.me/#/about")
