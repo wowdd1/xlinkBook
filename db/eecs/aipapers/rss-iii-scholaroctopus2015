@@ -1,0 +1,41 @@
+RSS-III-1 | Semantic Modeling of Places using Objects | http://www.roboticsproceedings.org/rss03/p01.pdf | author:Ananth Ranganathan and Frank Dellaert
+RSS-III-2 | Design of a Bio-inspired Dynamical Vertical Climbing Robot | http://www.roboticsproceedings.org/rss03/p02.pdf | author:Jonathan Clark, Daniel Goldman, Pei-Chun Lin, Goran Lynch, Tao Chen, Haldun Komsuoglu, Robert Full, and Daniel Koditschek
+RSS-III-3 | Online Learning for Offroad Robots: Spatial Label Propagation to Learn Long-Range Traversability | http://www.roboticsproceedings.org/rss03/p03.pdf | author:Raia Hadsell, Pierre Sermanet, Jan Ben, Ayse Erkan, Jeff Han, Urs Muller, and Yann LeCun
+RSS-III-4 | Composition of Vector Fields for Multi-Robot Manipulation via Caging | http://www.roboticsproceedings.org/rss03/p04.pdf | author:Jonathan Fink, Nathan Michael, and Vijay Kumar
+RSS-III-5 | Closed Loop Control of a Gravity-assisted Underactuated Robot Arm with Application to Aircraft Wing- | http://www.roboticsproceedings.org/rss03/p05.pdf | author:Binayak Roy and Harry Asada
+RSS-III-6 | Predicting Partial Paths from Planning Problem Parameters | http://www.roboticsproceedings.org/rss03/p06.pdf | author:Sarah Finney, Leslie Kaelbling, and Tomas Lozano-Perez
+RSS-III-7 | Emergent Task Allocation for Mobile Robots | http://www.roboticsproceedings.org/rss03/p07.pdf | author:Nuzhet Atay and Burchan Bayazit
+RSS-III-8 | Passivity-Based Switching Control for Stabilization of Wheeled Mobile Robots | http://www.roboticsproceedings.org/rss03/p08.pdf | author:Dongjun Lee
+RSS-III-9 | A Tree Parameterization for Efficiently Computing Maximum Likelihood Maps using Gradient Descent | http://www.roboticsproceedings.org/rss03/p09.pdf | author:Giorgio Grisetti, Cyrill Stachniss, Slawomir Grzonka, and Wolfram Burgard
+RSS-III-10 | Spatially-Adaptive Learning Rates for Online Incremental SLAM | http://www.roboticsproceedings.org/rss03/p10.pdf | author:Edwin Olson, John Leonard, and Seth Teller
+RSS-III-11 | Adaptive Non-Stationary Kernel Regression for Terrain Modeling | http://www.roboticsproceedings.org/rss03/p11.pdf | author:Tobias Lang, Christian Plagemann, and Wolfram Burgard
+RSS-III-12 | Fishbone Model for Belt Object Deformation | http://www.roboticsproceedings.org/rss03/p12.pdf | author:Hidefumi Wakamatsu, Eiji Arai, and Shinichi Hirai
+RSS-III-13 | Context and Feature Sensitive Re-sampling from Discrete Surface Measurements | http://www.roboticsproceedings.org/rss03/p13.pdf | author:Dave Cole and Paul Newman
+RSS-III-14 | Simultaneous Localisation and Mapping in Dynamic Environments (SLAMIDE) with Reversible Data Associa | http://www.roboticsproceedings.org/rss03/p14.pdf | author:Charles Bibby and Ian Reid
+RSS-III-15 | Sliding mode formation tracking control of a tractor and trailer-car system | http://www.roboticsproceedings.org/rss03/p15.pdf | author:Fabio Morbidi and Domenico Prattichizzo
+RSS-III-16 | Map-Based Precision Vehicle Localization in Urban Environments | http://www.roboticsproceedings.org/rss03/p16.pdf | author:Jesse Levinson, Michael Montemerlo, and Sebastian Thrun
+RSS-III-17 | Dense Mapping for Range Sensors: Efficient Algorithms and Sparse Representations | http://www.roboticsproceedings.org/rss03/p17.pdf | author:Manuel Yguel, Christopher Tay Meng Keat, Christophe Braillon, Christian Laugier, and Olivier Aycard
+RSS-III-18 | Gaussian Beam Processes: A Nonparametric Bayesian Measurement Model for Range Finders | http://www.roboticsproceedings.org/rss03/p18.pdf | author:Christian Plagemann, Kristian Kersting, Patrick Pfaff, and Wolfram Burgard
+RSS-III-19 | Vision-Aided Inertial Navigation for Precise Planetary Landing: Analysis and Experiments | http://www.roboticsproceedings.org/rss03/p19.pdf | author:Anastasios Mourikis, Nikolas Trawny, Stergios Roumeliotis, Andrew Johnson, and Larry Matthies
+RSS-III-20 | Optimal Kinodynamic Motion Planning for 2D Reconfiguration of Self-Reconfigurable Robots | http://www.roboticsproceedings.org/rss03/p20.pdf | author:John Reif and Sam Slee
+RSS-III-21 | A Discrete Geometric Optimal Control Framework for Systems with Symmetries | http://www.roboticsproceedings.org/rss03/p21.pdf | author:Marin Kobilarov, Mathieu Desbrun, Jerrold Marsden, and Gaurav Sukhatme
+RSS-III-22 | BS-SLAM: Shaping the World | http://www.roboticsproceedings.org/rss03/p22.pdf | author:Luis Pedraza, Gamini Dissanayake, Jaime Valls Miro, Diego Rodriguez-Losada, and Fernando Matia
+RSS-III-23 | An Implicit Time-Stepping Method for Multibody Systems with Intermittent Contact | http://www.roboticsproceedings.org/rss03/p23.pdf | author:Nilanjan Chakraborty, Stephen Berard, Srinivas Akella, and Jeff Trinkle
+RSS-III-24 | Synthesis of Constrained nR Planar Robots to Reach Five Task Positions | http://www.roboticsproceedings.org/rss03/p24.pdf | author:Gim Song Soh and J. Michael McCarthy
+RSS-III-25 | Automatic Scheduling for Parallel Forward Dynamics Computation of Open Kinematic Chains | http://www.roboticsproceedings.org/rss03/p25.pdf | author:Katsu Yamane and Yoshihiko Nakamura
+RSS-III-26 | CRF-Matching: Conditional Random Fields for Feature-Based Scan Matching | http://www.roboticsproceedings.org/rss03/p26.pdf | author:Fabio Ramos, Dieter Fox, and Hugh Durrant-Whyte
+RSS-III-27 | Control of Many Agents Using Few Instructions | http://www.roboticsproceedings.org/rss03/p27.pdf | author:Timothy Bretl
+RSS-III-28 | Safety Evaluation of Physical Human-Robot Interaction via Crash-Testing | http://www.roboticsproceedings.org/rss03/p28.pdf | author:Sami Haddadin, Alin Albu-Schäffer, and Gerd Hirzinger
+RSS-III-29 | Dimensionality Reduction Using Automatic Supervision for Vision-Based Terrain Learning | http://www.roboticsproceedings.org/rss03/p29.pdf | author:Anelia Angelova, Larry Matthies, Daniel Helmick, and Pietro Perona
+RSS-III-30 | The Stochastic Motion Roadmap: A Sampling Framework for Planning with Markov Motion Uncertainty | http://www.roboticsproceedings.org/rss03/p30.pdf | author:Ron Alterovitz, Thierry Simeon, and Ken Goldberg
+RSS-III-31 | A Fundamental Tradeoff between Performance and Sensitivity within Haptic Rendering | http://www.roboticsproceedings.org/rss03/p31.pdf | author:Paul Griffiths, Brent Gillespie, and Jim Freudenberg
+RSS-III-32 | Motion Strategies for Surveillance | http://www.roboticsproceedings.org/rss03/p32.pdf | author:Sourabh Bhattacharya, Salvatore Candido, and Seth Hutchinson
+RSS-III-33 | Learning omnidirectional path following using dimensionality reduction | http://www.roboticsproceedings.org/rss03/p33.pdf | author:J. Zico Kolter and Andrew Ng
+RSS-III-34 | A Fast and Practical Algorithm for Generalized Penetration Depth Computation | http://www.roboticsproceedings.org/rss03/p34.pdf | author:Liangjun Zhang, Young J. Kim, and Dinesh Manocha
+RSS-III-35 | Planning and Control of Meso-scale Manipulation Tasks with Uncertainties | http://www.roboticsproceedings.org/rss03/p35.pdf | author:Peng Cheng, David Cappelleri, Bogdan Gavrea, and Vijay Kumar
+RSS-III-36 | Data Association in O(n) for Divide and Conquer SLAM | http://www.roboticsproceedings.org/rss03/p36.pdf | author:Lina María Paz, José Guivant, Juan D. Tardós, and José Neira
+RSS-III-37 | An experimental study of exploiting multipath fading for robot communications | http://www.roboticsproceedings.org/rss03/p37.pdf | author:Magnus Lindhé, Karl Henrik Johansson, and Antonio Bicchi
+RSS-III-38 | Mapping Large Loops with a Single Hand-Held Camera | http://www.roboticsproceedings.org/rss03/p38.pdf | author:Laura A. Clemente, Andrew Davison, Ian Reid, José Neira, and Juan D. Tardós
+RSS-III-39 | Dynamic Coverage Verification in Mobile Sensor Networks Via Switched Higher Order Laplacians | http://www.roboticsproceedings.org/rss03/p39.pdf | author:Abubakr Muhammad and Ali Jadbabaie
+RSS-III-40 | Discrete Search Leading Continuous Exploration for Kinodynamic Motion Planning | http://www.roboticsproceedings.org/rss03/p40.pdf | author:Erion Plaku, Lydia Kavraki, and Moshe Vardi
+RSS-III-41 | Active Policy Learning for Robot Planning and Exploration under Uncertainty | http://www.roboticsproceedings.org/rss03/p41.pdf | author:Ruben Martinez-Cantin, Nando de Freitas, Arnaud Doucet, and Jose Castellanos

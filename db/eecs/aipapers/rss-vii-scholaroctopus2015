@@ -1,0 +1,45 @@
+RSS-VII-1 | Unmanned Aircraft Collision Avoidance using Continuous-State POMDPs | http://www.roboticsproceedings.org/rss07/p01.pdf | author:Haoyu Bai, David Hsu,  Mykel Kochenderfer, Wee Sun Lee
+RSS-VII-2 | Identification and Representation of Homotopy Classes of Trajectories for Search-based Path Planning in 3D | http://www.roboticsproceedings.org/rss07/p02.pdf | author:Subhrajit Bhattacharya, Maxim Likhachev, Vijay Kumar
+RSS-VII-3 | Controlling Wild Bodies Using Linear Temporal Logic | http://www.roboticsproceedings.org/rss07/p03.pdf | author:Leonardo Bobadilla, Oscar Sanchez, Justin Czarnowski, Katrina Gossman, Steven LaValle
+RSS-VII-4 | Exploiting Variable Stiffness in Explosive Movement Tasks | http://www.roboticsproceedings.org/rss07/p04.pdf | author:David Braun, Matthew Howard, Sethu Vijayakumar
+RSS-VII-5 | Automatic Calibration of Multiple Coplanar Sensors | http://www.roboticsproceedings.org/rss07/p05.pdf | author:Jonathan Brookshire, Seth Teller
+RSS-VII-6 | A Linear Approximation for Graph-based Simultaneous Localization and Mapping | http://www.roboticsproceedings.org/rss07/p06.pdf | author:Luca Carlone, Rosario Aragues, Jose Castellanos, Basilio Bona
+RSS-VII-7 | The Motion Grammar: Linguistic Perception, Planning, and Control | http://www.roboticsproceedings.org/rss07/p07.pdf | author:Neil Dantam, Mike Stilman
+RSS-VII-8 | Learning to Control a Low-Cost Manipulator using Data-Efficient Reinforcement Learning | http://www.roboticsproceedings.org/rss07/p08.pdf | author:Marc Deisenroth, Carl Rasmussen, Dieter Fox
+RSS-VII-9 | A Framework for Push-Grasping in Clutter | http://www.roboticsproceedings.org/rss07/p09.pdf | author:Mehmet Dogar, Siddhartha Srinivasa
+RSS-VII-10 | Infinite-Horizon Model Predictive Control for Periodic Tasks with Contacts | http://www.roboticsproceedings.org/rss07/p10.pdf | author:Tom Erez, Yuval Tassa,  Emanuel Todorov
+RSS-VII-11 | An Art Gallery Approach to Ensuring that Landmarks are Distinguishable | http://www.roboticsproceedings.org/rss07/p11.pdf | author:Lawrence Erickson, Steven LaValle
+RSS-VII-12 | Global Optimization of Robotic Grasps | http://www.roboticsproceedings.org/rss07/p12.pdf | author:Carlos Rosales Gallegos, Josep Porta, Lluis Ros
+RSS-VII-13 | Bilateral Teleoperation of Groups of UAVs with Decentralized Connectivity Maintenance | http://www.roboticsproceedings.org/rss07/p13.pdf | author:Paolo Robuffo Giordano, Antonio Franchi,  Cristian Secchi,  Heinrich Bülthoff
+RSS-VII-14 | An Interaction Design Framework for Social Robots | http://www.roboticsproceedings.org/rss07/p14.pdf | author:Dylan Glas, Satoru Satake, Takayuki Kanda, Norihiro Hagita
+RSS-VII-15 | Monte Carlo Pose Estimation with Quaternion Kernels and the Bingham Distribution | http://www.roboticsproceedings.org/rss07/p15.pdf | author:Jared Glover, Radu Rusu, Gary Bradski
+RSS-VII-16 | Model-Based Proprioceptive State Estimation for Spring-Mass Running | http://www.roboticsproceedings.org/rss07/p16.pdf | author:Ozlem Gur, Uluc Saranli
+RSS-VII-17 | Kinematic Cartography for Locomotion at Low Reynolds Numbers | http://www.roboticsproceedings.org/rss07/p17.pdf | author:Ross Hatton, Howie Choset
+RSS-VII-18 | Friendly Patrolling: A Model of Natural Encounters | http://www.roboticsproceedings.org/rss07/p18.pdf | author:Kotaro Hayashi, Masahiro Shiomi, Takayuki Kanda, Norihiro Hagita
+RSS-VII-19 | Understanding Slip Perception of Soft Fingertips by Modeling and Simulating Stick-Slip Phenomenon | http://www.roboticsproceedings.org/rss07/p19.pdf | author:Van Ho, Shinichi  Hirai
+RSS-VII-20 | Probabilistic Analysis of Correctness of High-Level Robot Behavior with Sensor Error | http://www.roboticsproceedings.org/rss07/p20.pdf | author:Benjamin Johnson, Hadas Kress-Gazit
+RSS-VII-21 | Real-time prioritized kinematic control under inequality constraints for redundant manipulators | http://www.roboticsproceedings.org/rss07/p21.pdf | author:Oussama Kanoun
+RSS-VII-22 | Cross-Entropy Randomized Motion Planning | http://www.roboticsproceedings.org/rss07/p22.pdf | author:Marin Kobilarov
+RSS-VII-23 | Global Motion Planning under Uncertain Motion, Sensing, and Environment Map | http://www.roboticsproceedings.org/rss07/p23.pdf | author:Hanna  Kurniawati, Tirthankar Bandyopadhyay, Nicholas Patrikalakis
+RSS-VII-24 | Designing Petri Net Supervisors from LTL Specifications | http://www.roboticsproceedings.org/rss07/p24.pdf | author:Bruno Lacerda, Pedro Lima
+RSS-VII-25 | Construction of Cubic Structures with Quadrotor Teams | http://www.roboticsproceedings.org/rss07/p25.pdf | author:Quentin Lindsey, Daniel Mellinger, Vijay Kumar
+RSS-VII-26 | Multi-Level Partitioning and Distribution of the Assignment Problem for Large-Scale Multi-Robot Task Allocation | http://www.roboticsproceedings.org/rss07/p26.pdf | author:Lantao Liu, Dylan Shell
+RSS-VII-27 | Comparing Heads-up, Hands-free Operation of Ground Robots to Teleoperation | http://www.roboticsproceedings.org/rss07/p27.pdf | author:Matthew Marge, Aaron Powers,  Jonathan Brookshire, Trevor Jay, Odest Jenkins, Christopher Geyer
+RSS-VII-28 | Distributed Robot Ensemble Control for Deployment to Multiple Sites | http://www.roboticsproceedings.org/rss07/p28.pdf | author:T. William Mather, M. Ani Hsieh
+RSS-VII-29 | A Serial Approach to Handling High-Dimensional Measurements in the Sigma-Point Kalman Filter | http://www.roboticsproceedings.org/rss07/p29.pdf | author:Colin McManus, Timothy Barfoot
+RSS-VII-30 | Visual Segmentation of Simple Objects for Robots | http://www.roboticsproceedings.org/rss07/p30.pdf | author:Ajay Mishra, Yiannis Aloimonos
+RSS-VII-31 | Operational Space Control of Constrained and Underactuated Systems | http://www.roboticsproceedings.org/rss07/p31.pdf | author:Michael Mistry, Ludovic Righetti
+RSS-VII-32 | Collision-Free and Curvature-Continuous Path Smoothing In Cluttered Environments | http://www.roboticsproceedings.org/rss07/p32.pdf | author:Jia Pan, Liangjun Zhang, Dinesh Manocha
+RSS-VII-33 | Motion Planning Under Uncertainty In Highly Deformable Environments | http://www.roboticsproceedings.org/rss07/p33.pdf | author:Sachin Patil, Jur van den Berg, Ron Alterovitz
+RSS-VII-34 | Load Balancing for Mobility-on-Demand Systems | http://www.roboticsproceedings.org/rss07/p34.pdf | author:Marco Pavone, Stephen Smith, Emilio Frazzoli, Daniela Rus
+RSS-VII-35 | TERMES: An Autonomous Robotic System for Three-Dimensional Collective Construction | http://www.roboticsproceedings.org/rss07/p35.pdf | author:Kirstin Petersen, Radhika Nagpal,  Justin Werfel
+RSS-VII-36 | Fast Trajectory Correction for Nonholonomic Mobile Robots using Affine Transformations | http://www.roboticsproceedings.org/rss07/p36.pdf | author:Quang-Cuong Pham 
+RSS-VII-37 | From Caging to Grasping | http://www.roboticsproceedings.org/rss07/p37.pdf | author:Alberto Rodriguez, Matt Mason, Steve Ferry
+RSS-VII-38 | An Analytic Motion Planning Solution for the Snakeboard | http://www.roboticsproceedings.org/rss07/p38.pdf | author:Elie Shammas, Mauricio de Oliveira
+RSS-VII-39 | Spatial Formation Model for Initiating Conversation | http://www.roboticsproceedings.org/rss07/p39.pdf | author:Chao Shi, Michihiro Shimada, Takayuki Kanda,  Hiroshi Ishiguro, Norihiro Hagita
+RSS-VII-40 | Coupled Dynamical System Based Hand-Arm Grasp Planning under Real-Time Perturbations | http://www.roboticsproceedings.org/rss07/p40.pdf | author:Ashwini Shukla,Aude Billard
+RSS-VII-41 | Finite-Time Regional Verification of Stochastic Nonlinear Systems | http://www.roboticsproceedings.org/rss07/p41.pdf | author:Jacob Steinhardt, Russ Tedrake
+RSS-VII-42 | Tracking-Based Semi-Supervised Learning | http://www.roboticsproceedings.org/rss07/p42.pdf | author:Alex Teichman, Sebastian Thrun
+RSS-VII-43 | Sliding Manipulation of Rigid Bodies on a Controlled 6-DoF Plate | http://www.roboticsproceedings.org/rss07/p43.pdf | author:Tom Vose, Paul Umbanhowar, Kevin Lynch 
+RSS-VII-44 | Lying Pose Recognition for Elderly Fall Detection | http://www.roboticsproceedings.org/rss07/p44.pdf | author:Simin Wang, Salim Zabir, Bastian Leibe
+RSS-VII-45 | Assisted Teleoperation Strategies for Aggressively Controlling a Robot Arm with 2D Input | http://www.roboticsproceedings.org/rss07/p45.pdf | author:Erkang You, Kris Hauser

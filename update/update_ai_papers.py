@@ -277,7 +277,57 @@ class AiPapersSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
+    '''
+    def getIJCAIPaper(self):
+        r = requests.get("http://ijcai.org/Past%20Proceedings/index.html")
+        soup = BeautifulSoup(r.text)
+        for a in soup.find_all('a'):
+            url = "http://ijcai.org/Past%20Proceedings/" + a['href']
+            self.getIJCAIPapers(url, a.text[0 : a.text.find("/")])
+    def getIJCAIPapers(self, url, topic):
+        print url
+        r = requests.get(url)
+        print r.text
+        for line in r.text.spilt("\n"):
+            if line.find("p>") != -1:
+                print line
+    '''
 
+    def getRSSPaper(self):
+        r = requests.get("http://www.roboticsproceedings.org/")
+        soup = BeautifulSoup(r.text)
+        topic = ""
+        for li in soup.find_all("li"):
+            if li.attrs.has_key("class"):
+                if li["class"][0] == "label" and li.text.startswith("RSS"):
+                    topic = li.text.replace(" ", "-")
+                if li["class"][0] == "menu" and li.a != None and li.a["href"].find("index") != -1 and li.text.startswith("Content"):
+                    self.getRSSPapers("http://www.roboticsproceedings.org/" + li.a["href"], topic)
+
+    def getRSSPapers(self, url, topic):
+        file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + topic, "scholaroctopus")
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        for tr in soup.find_all("tr"):
+            if tr.td != None and tr.td.a != None and tr.td.i != None:
+                title = tr.td.a.text.replace("\n", '')
+                authors = tr.td.i.text
+                link = url.replace("index.html", tr.td.a["href"].replace(".html", ".pdf"))
+                print title
+                self.count += 1
+                self.write_db(f, topic + "-" + str(self.count), title, link, "author:" + authors)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 start = AiPapersSpider()
 start.doWork()
 start.getCvPaper()
@@ -285,10 +335,11 @@ start.getNipsPaper()
 start.getIcmlPaper()
 start.getNlpPaper()
 start.getJMLRPaper()
+#start.getIJCAIPaper()
+start.getRSSPaper()
 
 #TODO
 #IJCAI http://ijcai.org/
 #ijrr http://www.ijrr.org/
-#RSS http://www.roboticsproceedings.org/
 #ICRA http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639
 #IROS http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000393
