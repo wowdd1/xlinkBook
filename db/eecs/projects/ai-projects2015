@@ -1,0 +1,41 @@
+ai-project-2 | aHuman Project | https://en.wikipedia.org/wiki/AHuman_Project | description:a project to replicate human brain architecture and computation principles to create personality within a computer having different set of actuators.
+ai-project-3 | Blue Brain Project | https://en.wikipedia.org/wiki/Blue_Brain_Project | description:an attempt to create a synthetic brain by reverse-engineering the mammalian brain down to the molecular level.
+ai-project-4 | Google Brain A deep learning project part of Google X attempting to mimic human-level intelligence. | https://en.wikipedia.org/wiki/Google_Brain | 
+ai-project-5 | NuPIC | https://en.wikipedia.org/wiki/Numenta#The_NuPIC_Open_Source_Project | description:an open source implementation by Numenta of its cortical learning algorithm.
+ai-project-6 | 4CAPS | https://en.wikipedia.org/wiki/4CAPS | description:developed at Carnegie Mellon University under Marcel A. Just
+ai-project-7 | ACT-R | https://en.wikipedia.org/wiki/ACT-R | description:developed at Carnegie Mellon University under John R. Anderson.
+ai-project-8 | AIXI | https://en.wikipedia.org/wiki/AIXI | description:Universal Artificial Intelligence developed by Marcus Hutter at IDSIA and ANU.
+ai-project-9 | CALO | https://en.wikipedia.org/wiki/CALO | description:a DARPA-funded, 25-institution effort to integrate many artificial intelligence approaches (natural language processing, speech recognition, machine vision, probabilistic logic, planning, reasoning, many forms of machine learning) into an AI assistant that learns to help manage your office environment.
+ai-project-10 | CHREST | https://en.wikipedia.org/wiki/CHREST | description:developed under Fernand Gobet at Brunel University and Peter C. Lane at the University of Hertfordshire.
+ai-project-11 | CLARION the cognitive architecture | https://en.wikipedia.org/wiki/CLARION_(cognitive_architecture) | description:developed under Ron Sun at Rensselaer Polytechnic Institute and University of Missouri.
+ai-project-12 | CoJACK | https://en.wikipedia.org/wiki/JACK_Intelligent_Agents | description:an ACT-R inspired extension to the JACK multi-agent system that adds a cognitive architecture to the agents for eliciting more realistic (human-like) behaviors in virtual environments.
+ai-project-13 | Copycat | https://en.wikipedia.org/wiki/Copycat_(software) | description:by Douglas Hofstadter and Melanie Mitchell at the Indiana University.
+ai-project-14 | DUAL | https://en.wikipedia.org/wiki/DUAL_(cognitive_architecture) | description:developed at the New Bulgarian University under Boicho Kokinov.
+ai-project-15 | EPIC | https://en.wikipedia.org/wiki/University_of_Michigan | description:developed under David E. Kieras and David E. Meyer at the University of Michigan.
+ai-project-16 | The H-Cogaff architecture | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=ai-project-16 The H-Cogaff architecture | description:which is a special case of the CogAff schema; see Taylor & Sayda, and Sloman refs below.
+ai-project-17 | FORR developed by Susan L. Epstein at The City University of New York. | https://en.wikipedia.org/wiki/FORR | 
+ai-project-18 | IDA and LIDA | https://en.wikipedia.org/wiki/LIDA_(cognitive_architecture) | description:implementing Global Workspace Theory, developed under Stan Franklin at the University of Memphis.
+ai-project-19 | OpenCog Prime | https://en.wikipedia.org/wiki/OpenCog | description:developed using the OpenCog Framework.
+ai-project-20 | PreAct | https://en.wikipedia.org/w/index.php?title=PreAct&action=edit&redlink=1 | description:developed at ASI.
+ai-project-21 | Procedural Reasoning System (PRS) | https://en.wikipedia.org/wiki/Procedural_Reasoning_System | description:developed by Michael Georgeff and Amy L. Lansky at SRI International.
+ai-project-22 | Psi-Theory developed under Dietrich Dörner at the Otto-Friedrich University in Bamberg | https://en.wikipedia.org/wiki/Psi-Theory | description:Germany.
+ai-project-23 | R-CAST | https://en.wikipedia.org/wiki/R-CAST | description:developed at the Pennsylvania State University.
+ai-project-24 | Soar | https://en.wikipedia.org/wiki/Soar_(cognitive_architecture) | description:developed under Allen Newell and John Laird at Carnegie Mellon University and the University of Michigan.
+ai-project-25 | Society of mind and its successor the Emotion machine proposed by Marvin Minsky. | https://en.wikipedia.org/wiki/Society_of_mind | 
+ai-project-26 | Subsumption architectures | https://en.wikipedia.org/wiki/Subsumption_architecture | description:developed e.g. by Rodney Brooks (though it could be argued whether they are cognitive).
+ai-project-27 | Chinook | https://en.wikipedia.org/wiki/Chinook_(draughts_player) | description:a computer program that plays English draughts; the first to win the world champion title in the competition against humans.
+ai-project-28 | Deep Blue | https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer) | description:a chess-playing computer developed by IBM which beat Garry Kasparov in 1997.
+ai-project-29 | Stockfish AI | https://en.wikipedia.org/wiki/Stockfish_(chess) | description:an open source chess engine currently ranked the highest in many computer chess rankings.
+ai-project-30 | FreeHAL | https://en.wikipedia.org/wiki/FreeHAL | description:a self-learning conversation simulator (chatterbot) which uses semantic nets to organize its knowledge to imitate a very close human behavior within conversations.
+ai-project-31 | TD-Gammon | https://en.wikipedia.org/wiki/TD-Gammon | description:a program that learned to play world-class backgammon partly by playing against itself (temporal difference learning with neural networks).
+ai-project-32 | Braina | https://en.wikipedia.org/wiki/Braina | description:an intelligent personal assistant application with a voice interface for Windows OS.
+ai-project-33 | Cyc | https://en.wikipedia.org/wiki/Cyc | description:an attempt to assemble an ontology and database of everyday knowledge, enabling human-like reasoning.
+ai-project-34 | Eurisko | https://en.wikipedia.org/wiki/Eurisko | description:a language by Douglas Lenat for solving problems which consists of heuristics, including some for how to use and change its heuristics.
+ai-project-35 | Google Now | https://en.wikipedia.org/wiki/Google_Now | description:an intelligent personal assistant with a voice interface in Google's Android and Apple Inc.'s iOS, as well as Google Chrome web browser on personal computers.
+ai-project-36 | Microsoft Cortana | https://en.wikipedia.org/wiki/Microsoft_Cortana | description:an intelligent personal assistant with a voice interface in Microsoft's Windows Phone 8.1.
+ai-project-37 | Mycin | https://en.wikipedia.org/wiki/Mycin | description:an early medical expert system.
+ai-project-38 | Open Mind Common Sense | https://en.wikipedia.org/wiki/Open_Mind_Common_Sense | description:a project based at the MIT Media Lab to build a large common sense knowledge base from online contributions.
+ai-project-39 | P.A.N. | https://en.wikipedia.org/wiki/P.A.N. | description:a publicly available text analyzer.
+ai-project-40 | Siri | https://en.wikipedia.org/wiki/Siri | description:an intelligent personal assistant and knowledge navigator with a voice-interface in Apple Inc.'s iOS.
+ai-project-41 | SNePS | https://en.wikipedia.org/wiki/SNePS | description:a simultaneously a logic-based, frame-based, and network-based knowledge representation, reasoning, and acting system.
+ai-project-42 | Watson | https://en.wikipedia.org/wiki/Watson_(computer) | description:a question answering system developed by IBM. Has played the Jeopardy! game show.

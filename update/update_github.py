@@ -602,7 +602,7 @@ class GithubSpider(Spider):
 
         if len(self.result) > 1:
             print self.result + " is not be updated"
-        keywords = ['awesome', 'computer vision', 'nlp', 'nltk', 'spark', 'machine learning', 'deep learning', 'android']
+        keywords = ['awesome', 'computer vision', 'nlp', 'artificial intelligence', 'spark', 'machine learning', 'deep learning', 'android']
         for keyword in keywords:
             print "get " + keyword + " data..."
             if keyword == "awesome":
