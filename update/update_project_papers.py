@@ -15,6 +15,58 @@ class ProjectPaperSpider(Spider):
         self.getWastonPapers()
         #self.getRoboBrainPapers()
         self.getSTAIRPapers()
+        self.getSTARTPapers()
+    def getSTARTPapers(self):
+        r = requests.get("http://start.mit.edu/publications.php")
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "START", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+       
+        link = ""
+        title = ""
+        journal = ""
+        author = ""
+        for td in soup.find_all("td"):
+            if td.a != None and td.strong == None and td.a["href"] != "index.php":
+                print ""
+                if td.a["href"].find("http") == -1:
+                    link = "http://start.mit.edu/" + td.a["href"]
+                else:
+                    link = td.a["href"]
+                print link
+            else:
+                if td.strong != None:
+                    if td.em != None:
+                        journal = "journal:" + td.em.text + " "
+                        print journal
+                    if td.strong != None:
+                        title = td.strong.text
+                        print title
+                else:
+                    if td.em != None:
+                        title = td.em.text
+                        print title
+                if td.text.find(".") != -1:
+                    author = "author:" + td.text[0 : td.text.find(".")] + " "
+                    print author
+                    print ""
+                    self.count += 1
+                    self.write_db(f, "start-paper-" + str(self.count), title, link, author + journal)
+                    title = ""
+                    link = ""
+                    author = ""
+                    journal = ""
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getSTAIRPapers(self):
         r = requests.get("http://stair.stanford.edu/papers.php")
