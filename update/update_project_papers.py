@@ -18,6 +18,32 @@ class ProjectPaperSpider(Spider):
         self.getSparkPapers()
         self.getHadoopPapers()
         #self.getRoboBrainPapers()
+        self.getMobileEyePapers()
+
+    def getMobileEyePapers(self):
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "MobileEye", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for i in range(1, 3):
+            r = requests.get("http://www.mobileye.com/technology/mobileye-research/page/" + str(i))
+            soup = BeautifulSoup(r.text)
+
+            for div in soup.find_all("div", class_="ContentItemText"):
+                title = div.h2.text.strip()
+                link = div.h2.a['href']
+                author = "author:" + div.p.text.strip()
+                print title
+                self.count += 1
+                self.write_db(f, "mobileeye-paper-" + str(self.count), title, link, author)
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getHadoopPapers(self):
         r = requests.get("http://wiki.apache.org/hadoop/Papers")
