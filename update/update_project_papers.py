@@ -13,9 +13,63 @@ class ProjectPaperSpider(Spider):
 
     def doWork(self):
         self.getWastonPapers()
-        #self.getRoboBrainPapers()
         self.getSTAIRPapers()
         self.getSTARTPapers()
+        self.getSparkPapers()
+        self.getHadoopPapers()
+        #self.getRoboBrainPapers()
+
+    def getHadoopPapers(self):
+        r = requests.get("http://wiki.apache.org/hadoop/Papers")
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "hadoop", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for li in soup.find_all("li"):
+            if li.p != None:
+                print li.p.a.text
+                self.count += 1
+                self.write_db(f, "hadoop-paper-" + str(self.count), li.p.a.text, li.p.a["href"])
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+    def getSparkPapers(self):
+        r = requests.get("http://spark.apache.org/documentation.html")
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "spark", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for li in soup.find_all("li"):
+            if li.a != None and li.a["href"].find("pdf") != -1 and li.em != None:
+                title = li.a.text
+                author =  "author:" + li.prettify()[li.prettify().find('</a>') + 7: li.prettify().find('<em>')].strip() + " "
+                journal = "journal:" + li.em.text
+                print title
+                self.count += 1
+                self.write_db(f, "spark-paper-" + str(self.count), title , li.a["href"], author + journal)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+
+
     def getSTARTPapers(self):
         r = requests.get("http://start.mit.edu/publications.php")
         soup = BeautifulSoup(r.text)
