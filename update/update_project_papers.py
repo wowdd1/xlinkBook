@@ -19,6 +19,47 @@ class ProjectPaperSpider(Spider):
         self.getHadoopPapers()
         #self.getRoboBrainPapers()
         self.getMobileEyePapers()
+        self.getAutonomousDrivingPapers()
+
+    def getAutonomousDrivingPapers(self):
+        r = requests.get("http://driving.stanford.edu/papers.html")
+        soup = BeautifulSoup(r.text)
+        title = ""
+        author = ""
+        journal = ""
+        desc = ""
+        url = ""
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "AutonomousDriving", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+        for p in soup.find_all("p"):
+            if p.span != None:
+                sp = BeautifulSoup(p.prettify())
+                title = sp.find('span', class_='papertitle').text.strip()
+                author = "author:" + self.utils.removeDoubleSpace(sp.find('span', class_='authors').text.strip().replace('\n', '')) + " "
+                journal = "journal:" + sp.find('span', class_='meeting').text.strip()
+                journal += " " + sp.find('span', class_='year').text.strip() + " "
+                desc = "description:" +  self.utils.removeDoubleSpace(sp.find('span', class_='summary').text.strip().replace('\n', ''))
+            if p.a != None and p.a['href'].find(".pdf") != -1:
+                if p.a['href'].startswith('http'):
+                    url = p.a['href']
+                else:
+                    url = 'http://driving.stanford.edu/' + p.a['href']
+                self.count += 1
+                self.write_db(f, "autonomousdriving-paper-" + str(self.count), title, url, author + journal + desc)
+                title = ""
+                author = ""
+                journal = ""
+                desc = ""
+                url = "" 
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getMobileEyePapers(self):
         file_name = self.get_file_name("eecs/" + self.school + "/" + "MobileEye", self.school)
