@@ -606,6 +606,8 @@ class GithubSpider(Spider):
                 "aws" : "https://github.com/aws",\
                 "donet" : "https://github.com/dotnet",\
                 "awslabs" : "https://github.com/awslabs",\
+                "linkedin" : "https://github.com/linkedin",\
+                "square" : "https://github.com/square",\
                 }
         for k in data:
 
