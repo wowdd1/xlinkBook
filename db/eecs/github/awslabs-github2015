@@ -1,0 +1,142 @@
+awslabs-github-2128-1 | s2n | https://github.com/awslabs/s2n | description:s2n : an implementation of the TLS/SSL protocols
+awslabs-github-259-2 | emr-bootstrap-actions | https://github.com/awslabs/emr-bootstrap-actions | description:This repository hold the Amazon Elastic MapReduce sample bootstrap actions
+awslabs-github-165-3 | machine-learning-samples | https://github.com/awslabs/machine-learning-samples | description:Sample applications built using Amazon Machine Learning.
+awslabs-github-164-4 | amazon-kinesis-connectors | https://github.com/awslabs/amazon-kinesis-connectors | description:Updated Aug 26, 2015
+awslabs-github-160-5 | railsconf2013-tech-demo | https://github.com/awslabs/railsconf2013-tech-demo | description:Seahorse is a way to describe your API
+awslabs-github-152-6 | dynamodb-document-js-sdk | https://github.com/awslabs/dynamodb-document-js-sdk | description:DynamoDB Document SDK in Javascript
+awslabs-github-137-7 | amazon-kinesis-client | https://github.com/awslabs/amazon-kinesis-client | description:Client library for Amazon Kinesis
+awslabs-github-128-8 | aws-sdk-ios-samples | https://github.com/awslabs/aws-sdk-ios-samples | description:Updated Jul 14, 2015
+awslabs-github-126-9 | aws-codedeploy-samples | https://github.com/awslabs/aws-codedeploy-samples | description:Samples and template scenarios for AWS CodeDeploy
+awslabs-github-123-10 | aws-sdk-android-samples | https://github.com/awslabs/aws-sdk-android-samples | description:Updated Aug 3, 2015
+awslabs-github-113-11 | eb-py-flask-signup | https://github.com/awslabs/eb-py-flask-signup | description:Updated Nov 6, 2014
+awslabs-github-111-12 | amazon-redshift-utils | https://github.com/awslabs/amazon-redshift-utils | description:The Amazon Redshift Column Encoding Utility will apply optimal Column Encoding to existing Tables on an Amazon Redshift Database cluster
+awslabs-github-107-13 | dynamodb-geo | https://github.com/awslabs/dynamodb-geo | description:Updated Apr 16, 2015
+awslabs-github-103-14 | dynamodb-transactions | https://github.com/awslabs/dynamodb-transactions | description:Updated Jul 16, 2015
+awslabs-github-96-15 | ecs-mesos-scheduler-driver | https://github.com/awslabs/ecs-mesos-scheduler-driver | description:Amazon ECS Scheduler Driver
+awslabs-github-94-16 | aws-lambda-redshift-loader | https://github.com/awslabs/aws-lambda-redshift-loader | description:Amazon Redshift Database Loader implemented in AWS Lambda
+awslabs-github-92-17 | cfncluster | https://github.com/awslabs/cfncluster | description:CfnCluster is a framework that deploys and maintains HPC clusters on AWS.
+awslabs-github-89-18 | route53-infima | https://github.com/awslabs/route53-infima | description:Library for managing service-level fault isolation using Amazon Route 53.
+awslabs-github-87-19 | aws-apigateway-swagger-importer | https://github.com/awslabs/aws-apigateway-swagger-importer | description:Tools to work with Amazon API Gateway and Swagger
+awslabs-github-85-20 | dynamodb-titan-storage-backend | https://github.com/awslabs/dynamodb-titan-storage-backend | description:The Amazon DynamoDB Storage Backend for Titan
+awslabs-github-79-21 | amazon-kinesis-client-python | https://github.com/awslabs/amazon-kinesis-client-python | description:Amazon Kinesis Client Library for Python
+awslabs-github-78-22 | kinesis-storm-spout | https://github.com/awslabs/kinesis-storm-spout | description:Kinesis spout for Storm
+awslabs-github-75-23 | aws-sdk-cpp | https://github.com/awslabs/aws-sdk-cpp | description:AWS SDK for C++
+awslabs-github-74-24 | opsworks-example-cookbooks | https://github.com/awslabs/opsworks-example-cookbooks | description:AWS OpsWorks cookbooks used with the sample applications
+awslabs-github-72-25 | amazon-kinesis-data-visualization-sample | https://github.com/awslabs/amazon-kinesis-data-visualization-sample | description:Amazon Kinesis Data Visualization Sample Application
+awslabs-github-66-26 | aws-fluent-plugin-kinesis | https://github.com/awslabs/aws-fluent-plugin-kinesis | description:Fluent Plugin for Amazon Kinesis
+awslabs-github-62-27 | aws-big-data-blog | https://github.com/awslabs/aws-big-data-blog | description:Updated Aug 19, 2015
+awslabs-github-61-28 | amazon-kinesis-aggregators | https://github.com/awslabs/amazon-kinesis-aggregators | description:Amazon Kinesis Aggregators provides a simple way to create real time aggregations of data on Amazon Kinesis.
+awslabs-github-61-29 | dynamodb-cross-region-library | https://github.com/awslabs/dynamodb-cross-region-library | description:A library to facilitate cross-region replication with Amazon DynamoDB Streams.
+awslabs-github-59-30 | aws-codedeploy-plugin | https://github.com/awslabs/aws-codedeploy-plugin | description:Jenkins plugin for AWS CodeDeploy
+awslabs-github-57-31 | cloudwatch-logs-subscription-consumer | https://github.com/awslabs/cloudwatch-logs-subscription-consumer | description:A specialized Amazon Kinesis stream reader (based on the Amazon Kinesis Connector Library) that can help you deliver data from Amazon CloudWatch Logs to any other system in near real-time using a CloudWatch Logs Subscription Filter.
+awslabs-github-50-32 | aws-java-sample | https://github.com/awslabs/aws-java-sample | description:Sample project to demonstrate usage of the AWS SDK for Java
+awslabs-github-49-33 | amazon-kinesis-scaling-utils | https://github.com/awslabs/amazon-kinesis-scaling-utils | description:The Kinesis Scaling Utility is designed to give you the ability to scale Amazon Kinesis Streams in the same way that you scale EC2 Auto Scaling groups – up or down by a count or as a percentage of the total fleet. You can also simply scale to an exact number of Shards. There is no requirement for you to manage the allocation of the keyspace to S…
+awslabs-github-46-34 | amazon-kinesis-client-ruby | https://github.com/awslabs/amazon-kinesis-client-ruby | description:A Ruby interface for the Amazon Kinesis Client Library. Allows developers to easily create robust application to process Amazon Kinesis streams in Ruby.
+awslabs-github-46-35 | aws-nodejs-sample | https://github.com/awslabs/aws-nodejs-sample | description:Sample project to demonstrate usage of the AWS SDK for Node.js
+awslabs-github-43-36 | eb-demo-php-simple-app | https://github.com/awslabs/eb-demo-php-simple-app | description:Updated Aug 19, 2014
+awslabs-github-41-37 | aws-sdk-arduino | https://github.com/awslabs/aws-sdk-arduino | description:An experimental SDK for working with AWS Services on Arduino-compatible devices. Currently has support for DynamoDB and Kinesis.
+awslabs-github-39-38 | aws-sdk-xamarin | https://github.com/awslabs/aws-sdk-xamarin | description:AWS Mobile SDK for Xamarin (Beta)
+awslabs-github-39-39 | aws-flow-ruby-samples | https://github.com/awslabs/aws-flow-ruby-samples | description:Updated Aug 6, 2015
+awslabs-github-39-40 | aws-php-sample | https://github.com/awslabs/aws-php-sample | description:Sample project to demonstrate usage of the AWS SDK for PHP
+awslabs-github-37-41 | amazon-kinesis-client-nodejs | https://github.com/awslabs/amazon-kinesis-client-nodejs | description:Amazon Kinesis Client Library for Node.js
+awslabs-github-36-42 | kinesis-poster-worker | https://github.com/awslabs/kinesis-poster-worker | description:Simple multi-threaded Kinesis Poster and Worker Python examples
+awslabs-github-35-43 | eb-node-express-signup | https://github.com/awslabs/eb-node-express-signup | description:Updated May 19, 2015
+awslabs-github-34-44 | reinvent2014-scalable-site-management | https://github.com/awslabs/reinvent2014-scalable-site-management | description:Updated Aug 6, 2015
+awslabs-github-33-45 | aws-sdk-java-resources | https://github.com/awslabs/aws-sdk-java-resources | description:An object-oriented approach to managing your AWS resources
+awslabs-github-32-46 | aws-cfn-custom-resource-examples | https://github.com/awslabs/aws-cfn-custom-resource-examples | description:Updated Nov 21, 2013
+awslabs-github-32-47 | aws-tvm-identity | https://github.com/awslabs/aws-tvm-identity | description:Token Vending Machine for Identity Registration
+awslabs-github-31-48 | emr-sample-apps | https://github.com/awslabs/emr-sample-apps | description:Amazon Elastic MapReduce code samples
+awslabs-github-30-49 | java-meme-generator-sample | https://github.com/awslabs/java-meme-generator-sample | description:Sample code for a java application that uses Elastic Beanstalk, S3, DynamoDB, and SQS to create a meme generation website and processing pipeline. For a demonstration of the application in action, see this talk from AWS re:Invent 2012: http://www.youtube.com/watch?v=YeRNErD81VA
+awslabs-github-29-50 | aws-python-sample | https://github.com/awslabs/aws-python-sample | description:Sample project to demonstrate usage of the AWS SDK for Python
+awslabs-github-28-51 | aws-quickstart | https://github.com/awslabs/aws-quickstart | description:Official repository for AWS Quick Start
+awslabs-github-27-52 | amediamanager | https://github.com/awslabs/amediamanager | description:Updated Jun 1, 2015
+awslabs-github-27-53 | aws-tvm-anonymous | https://github.com/awslabs/aws-tvm-anonymous | description:Token Vending Machine for Anonymous Registration
+awslabs-github-26-54 | aws-sdk-php-resources | https://github.com/awslabs/aws-sdk-php-resources | description:A resource-oriented interface for interacting with AWS services from PHP.
+awslabs-github-26-55 | aws-dynamodb-mars-json-demo | https://github.com/awslabs/aws-dynamodb-mars-json-demo | description:Updated Oct 27, 2014
+awslabs-github-26-56 | amazon-kinesis-producer | https://github.com/awslabs/amazon-kinesis-producer | description:Amazon Kinesis Producer Library
+awslabs-github-25-57 | aws-hangouts | https://github.com/awslabs/aws-hangouts | description:Updated Feb 13, 2014
+awslabs-github-25-58 | aws-dynamodb-encryption-java | https://github.com/awslabs/aws-dynamodb-encryption-java | description:Amazon DynamoDB Encryption Client for Java
+awslabs-github-24-59 | opsworks-elasticsearch-cookbook | https://github.com/awslabs/opsworks-elasticsearch-cookbook | description:AWS OpsWorks Elasticsearch sample cookbook
+awslabs-github-23-60 | reinvent2013-js-blog-demo | https://github.com/awslabs/reinvent2013-js-blog-demo | description:Demo blogging application using the AWS SDK for JavaScript in the browser
+awslabs-github-23-61 | kinesis-log4j-appender | https://github.com/awslabs/kinesis-log4j-appender | description:Log4J Appender for writing data into a Kinesis Stream
+awslabs-github-22-62 | aws-spot-labs | https://github.com/awslabs/aws-spot-labs | description:Collection of tools and code examples to demonstrate best practices in using AWS Spot
+awslabs-github-22-63 | aws-arch-backoff-simulator | https://github.com/awslabs/aws-arch-backoff-simulator | description:Simulator for AWS architecture blog (http://www.awsarchitectureblog.com/ ) about jitter and backoff.
+awslabs-github-21-64 | cloudsearchable | https://github.com/awslabs/cloudsearchable | description:An ActiveRecord-style ORM query interface for AWS CloudSearch.
+awslabs-github-21-65 | mqtt-kinesis-bridge | https://github.com/awslabs/mqtt-kinesis-bridge | description:Simple MQTT to Kinesis bridge Python example
+awslabs-github-19-66 | amazon-sqs-java-messaging-lib | https://github.com/awslabs/amazon-sqs-java-messaging-lib | description:This Amazon SQS Java Messaging Library holds the Java Message Service compatible classes, that are used for communicating with Amazon Simple Queue Service.
+awslabs-github-19-67 | aws-ruby-sample | https://github.com/awslabs/aws-ruby-sample | description:Sample project to demonstrate usage of the AWS SDK for Ruby
+awslabs-github-17-68 | aws-appstream-sdk-java | https://github.com/awslabs/aws-appstream-sdk-java | description:Amazon AppStream SDK for Java
+awslabs-github-16-69 | aws-ant-tasks | https://github.com/awslabs/aws-ant-tasks | description:Updated May 29, 2015
+awslabs-github-16-70 | opsworks-demo-php-simple-app | https://github.com/awslabs/opsworks-demo-php-simple-app | description:A simple PHP sample application for running on AWS OpsWorks
+awslabs-github-15-71 | service-discovery-ecs-consul | https://github.com/awslabs/service-discovery-ecs-consul | description:This repository provides the assets referred to in the blog post "Service Discovery via Consul with Amazon ECS"
+awslabs-github-15-72 | reinvent2013-mobile-photo-share | https://github.com/awslabs/reinvent2013-mobile-photo-share | description:Updated Nov 9, 2013
+awslabs-github-15-73 | cognito-sample-nodejs | https://github.com/awslabs/cognito-sample-nodejs | description:Amazon Cognito Sample App for Node.js
+awslabs-github-14-74 | aws-sdk-unity-samples | https://github.com/awslabs/aws-sdk-unity-samples | description:This repository has samples that demonstrate various aspects of the AWS Mobile SDK for Unity, you can get the SDK source on Github (https://github.com/aws/aws-sdk-unity)
+awslabs-github-14-75 | dynamodb-tictactoe-example-app | https://github.com/awslabs/dynamodb-tictactoe-example-app | description:Updated Oct 13, 2014
+awslabs-github-14-76 | eb-docker-nginx-proxy | https://github.com/awslabs/eb-docker-nginx-proxy | description:Updated Mar 23, 2015
+awslabs-github-13-77 | aws-device-farm-jenkins-plugin | https://github.com/awslabs/aws-device-farm-jenkins-plugin | description:Jenkins plugin for AWS Device Farm.
+awslabs-github-13-78 | eb-py-flask-signup-worker | https://github.com/awslabs/eb-py-flask-signup-worker | description:Updated Dec 10, 2013
+awslabs-github-13-79 | aws-codepipeline-plugin-for-jenkins | https://github.com/awslabs/aws-codepipeline-plugin-for-jenkins | description:Use this plugin to integrate your Jenkins project with a pipeline in AWS CodePipeline. For more information and step-by-step directions on how to install and configure this plugin, follow the Four Stage Pipeline Tutorial. http://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-4.html
+awslabs-github-12-80 | awscli-cookbook | https://github.com/awslabs/awscli-cookbook | description:Installs the AWS Command Line Interface tools and provides a set of LWRPs for use within chef cookbooks.
+awslabs-github-12-81 | aws-device-farm-sample-app-for-android | https://github.com/awslabs/aws-device-farm-sample-app-for-android | description:Updated Sep 2, 2015
+awslabs-github-12-82 | opsworks-demo-php-photo-share-app | https://github.com/awslabs/opsworks-demo-php-photo-share-app | description:A sample PHP application for running on AWS OpsWorks
+awslabs-github-12-83 | todo-sample-app | https://github.com/awslabs/todo-sample-app | description:Sample Ruby on Rails application demonstrating integration with AWS services.
+awslabs-github-12-84 | logstash-input-dynamodb | https://github.com/awslabs/logstash-input-dynamodb | description:This input plugin for Logstash scans a specified DynamoDB table and then reads changes to a DynamoDB table from the associated DynamoDB Stream.This gem is a Logstash plugin required to be installed on top of the Logstash core pipeline. This gem is not a stand-alone program.
+awslabs-github-11-85 | ecs-cloudwatch-logs | https://github.com/awslabs/ecs-cloudwatch-logs | description:This repository provides the assets referred to in the blog post on using Amazon ECS and Amazon CloudWatch logs.
+awslabs-github-9-86 | aws-training-demo | https://github.com/awslabs/aws-training-demo | description:AWS Technical Trainers Demos
+awslabs-github-9-87 | amazon-cognito-developer-authentication-sample | https://github.com/awslabs/amazon-cognito-developer-authentication-sample | description:Updated May 15, 2015
+awslabs-github-9-88 | amazon-kinesis-learning | https://github.com/awslabs/amazon-kinesis-learning | description:Learning Amazon Kinesis Development
+awslabs-github-8-89 | aws-js-s3-explorer | https://github.com/awslabs/aws-js-s3-explorer | description:AWS JavaScript S3 Explorer is a JavaScript application that uses AWS's JavaScript SDK and S3 APIs to make the contents of an S3 bucket easy to browse via a web browser.
+awslabs-github-8-90 | dynamodb-streams-kinesis-adapter | https://github.com/awslabs/dynamodb-streams-kinesis-adapter | description:The Amazon DynamoDB Streams Adapter implements the Amazon Kinesis interface so that your application can use KCL to consume and process data from a DynamoDB stream.
+awslabs-github-8-91 | lambda-ecs-worker-pattern | https://github.com/awslabs/lambda-ecs-worker-pattern | description:This example code illustrates how to extend AWS Lambda functionality using Amazon SQS and the Amazon EC2 Container Service (ECS).
+awslabs-github-8-92 | aws-dynamodb-examples | https://github.com/awslabs/aws-dynamodb-examples | description:DynamoDB Examples
+awslabs-github-8-93 | eb-docker-virtual-hosting | https://github.com/awslabs/eb-docker-virtual-hosting | description:Updated Mar 23, 2015
+awslabs-github-7-94 | aws-auto-scaling-console-sample | https://github.com/awslabs/aws-auto-scaling-console-sample | description:Sample project to demonstrate usage of the AWS SDK for .NET and the Toolkit for Visual Studio
+awslabs-github-7-95 | eb-docker-multiple-ports | https://github.com/awslabs/eb-docker-multiple-ports | description:Updated Mar 24, 2015
+awslabs-github-7-96 | opsworks-first-cookbook | https://github.com/awslabs/opsworks-first-cookbook | description:AWS OpsWorks cookbook used to demonstrate simple recipes to get started
+awslabs-github-7-97 | amazon-kinesis-client-net | https://github.com/awslabs/amazon-kinesis-client-net | description:This package provides an interface to the Amazon Kinesis Client Library (KCL) MultiLangDaemon for the .NET Framework.
+awslabs-github-7-98 | aws-mobile-self-paced-labs-samples | https://github.com/awslabs/aws-mobile-self-paced-labs-samples | description:Updated Feb 5, 2015
+awslabs-github-7-99 | dynamodb-import-export-tool | https://github.com/awslabs/dynamodb-import-export-tool | description:Exports DynamoDB items via parallel scan into a blocking queue, then consumes the queue and import DynamoDB items into a replica table using asynchronous writes.
+awslabs-github-6-100 | opsworks-demo-rails-photo-share-app | https://github.com/awslabs/opsworks-demo-rails-photo-share-app | description:A sample Rails application for running on AWS OpsWorks
+awslabs-github-6-101 | ecs-demo-php-simple-app | https://github.com/awslabs/ecs-demo-php-simple-app | description:A simple PHP sample application http://aws.amazon.com/ecs
+awslabs-github-6-102 | py-flask-signup-docker | https://github.com/awslabs/py-flask-signup-docker | description:Sample Python application to show the capabilities of EC2 Container Service.
+awslabs-github-6-103 | aws-sdk-js-sample-video-transcoder | https://github.com/awslabs/aws-sdk-js-sample-video-transcoder | description:A sample cross-platform video transcoder application built using the AWS SDK for JavaScript.
+awslabs-github-6-104 | todo-app-railsconf | https://github.com/awslabs/todo-app-railsconf | description:Another iteration of the "Todo" sample app for our lab at RailsConf 2015.
+awslabs-github-5-105 | aws-hal-client-java | https://github.com/awslabs/aws-hal-client-java | description:Java client for the Hypertext Application Language
+awslabs-github-5-106 | opsworks-capistrano | https://github.com/awslabs/opsworks-capistrano | description:This repository has examples of using Capistrano with instances managed by AWS OpsWorks.
+awslabs-github-5-107 | api-gateway-secure-pet-store | https://github.com/awslabs/api-gateway-secure-pet-store | description:Amazon API Gateway sample using Amazon Cognito credentials through AWS Lambda
+awslabs-github-5-108 | aws-elasticache-cluster-client-memcached-for-php | https://github.com/awslabs/aws-elasticache-cluster-client-memcached-for-php | description:Amazon ElastiCache Cluster Client is an enhanced PHP library to connect to ElastiCache clusters. This client library has been built upon libmemcached and is released under the Apache License.
+awslabs-github-5-109 | eb-wif-sample | https://github.com/awslabs/eb-wif-sample | description:Updated Jun 11, 2014
+awslabs-github-5-110 | opsworks-cloudwatch-logs-cookbooks | https://github.com/awslabs/opsworks-cloudwatch-logs-cookbooks | description:Updated Jul 15, 2014
+awslabs-github-5-111 | eb-node-express-sample | https://github.com/awslabs/eb-node-express-sample | description:Sample Express application for AWS Elastic Beanstalk
+awslabs-github-4-112 | data-pipeline-samples | https://github.com/awslabs/data-pipeline-samples | description:This repository hosts sample pipelines
+awslabs-github-4-113 | aws-apigateway-sdk-java | https://github.com/awslabs/aws-apigateway-sdk-java | description:Updated Jul 9, 2015
+awslabs-github-4-114 | logstash-output-cloudwatchlogs | https://github.com/awslabs/logstash-output-cloudwatchlogs | description:A logstash plugin that allows to send logs to AWS CloudWatch Logs service.
+awslabs-github-4-115 | aws-flow-ruby-opsworks-helloworld | https://github.com/awslabs/aws-flow-ruby-opsworks-helloworld | description:Updated Sep 2, 2014
+awslabs-github-4-116 | elasticache-cluster-config-net | https://github.com/awslabs/elasticache-cluster-config-net | description:A configuration object for Enyim's MemcachedClient that enables the use of Amazon ElastiCache's Auto Discovery feature
+awslabs-github-4-117 | aws-device-farm-appium-tests-for-sample-app | https://github.com/awslabs/aws-device-farm-appium-tests-for-sample-app | description:Updated Aug 27, 2015
+awslabs-github-4-118 | eb-node-express | https://github.com/awslabs/eb-node-express | description:Updated Jul 22, 2013
+awslabs-github-4-119 | eb-python-flask | https://github.com/awslabs/eb-python-flask | description:Updated Jul 28, 2015
+awslabs-github-3-120 | todo-sample-app-cookbooks | https://github.com/awslabs/todo-sample-app-cookbooks | description:Custom AWS OpsWorks cookbooks associated with the todo-sample-app.
+awslabs-github-3-121 | ec2-udev-scripts | https://github.com/awslabs/ec2-udev-scripts | description:Updated Apr 15, 2015
+awslabs-github-3-122 | create-thumbnails-lambda | https://github.com/awslabs/create-thumbnails-lambda | description:Updated Jul 15, 2015
+awslabs-github-3-123 | aws-codepipeline-custom-job-worker | https://github.com/awslabs/aws-codepipeline-custom-job-worker | description:Use this sample to help you develop your own job worker when creating a custom action for AWS CodePipeline. For more information, see Create a Custom Action for a Pipeline. http://docs.aws.amazon.com/codepipeline/latest/userguide/how-to-create-custom-action.html
+awslabs-github-3-124 | aws-scala-sdk | https://github.com/awslabs/aws-scala-sdk | description:It's like the AWS SDK for Java, but more Scala-y
+awslabs-github-2-125 | aws-model-validators | https://github.com/awslabs/aws-model-validators | description:Tools for validating the AWS service JSON model files.
+awslabs-github-2-126 | aws-mobile-sample-wif | https://github.com/awslabs/aws-mobile-sample-wif | description:Updated May 16, 2015
+awslabs-github-2-127 | aws-support-examples | https://github.com/awslabs/aws-support-examples | description:Updated May 2, 2013
+awslabs-github-2-128 | cfncluster-cookbook | https://github.com/awslabs/cfncluster-cookbook | description:Updated Jul 10, 2015
+awslabs-github-2-129 | amazon-cognito-streams-sample | https://github.com/awslabs/amazon-cognito-streams-sample | description:Sample demonstrating consuming Amazon Cognito Streams
+awslabs-github-2-130 | amazon-appstream-sample-entitlement-service | https://github.com/awslabs/amazon-appstream-sample-entitlement-service | description:Reference implementation of the Amazon AppStream entitlement service, designed to help customers get up and running quickly with session management, cognito integration, and web UI.
+awslabs-github-2-131 | opsworks-attribute-customization | https://github.com/awslabs/opsworks-attribute-customization | description:AWS OpsWorks attribute customization example
+awslabs-github-2-132 | aws-sdk-net-samples | https://github.com/awslabs/aws-sdk-net-samples | description:Updated Aug 27, 2015
+awslabs-github-1-133 | aws-elasticache-cluster-client-libmemcached | https://github.com/awslabs/aws-elasticache-cluster-client-libmemcached | description:Libmemcached library support for Amazon ElastiCache Memcached Cluster gor PHP. The client is available at https://github.com/awslabs/aws-elasticache-cluster-client-memcached-for-php.
+awslabs-github-1-134 | aws-device-farm-calabash-tests-for-sample-app | https://github.com/awslabs/aws-device-farm-calabash-tests-for-sample-app | description:Updated Aug 27, 2015
+awslabs-github-1-135 | AWSCodePipeline-Jenkins-AWSCodeDeploy_Windows | https://github.com/awslabs/AWSCodePipeline-Jenkins-AWSCodeDeploy_Windows | description:Use this sample when creating a four-stage pipeline in AWS CodePipeline while following the Four Stage Pipeline Tutorial. http://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-4.html
+awslabs-github-1-136 | aws-codepipeline-s3-aws-codedeploy_linux | https://github.com/awslabs/aws-codepipeline-s3-aws-codedeploy_linux | description:Use this sample when creating a simple pipeline in AWS CodePipeline while following the Simple Pipeline Walkthrough tutorial. http://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-w.html
+awslabs-github-1-137 | AWSCodePipeline-S3-AWSCodeDeploy_Windows | https://github.com/awslabs/AWSCodePipeline-S3-AWSCodeDeploy_Windows | description:Use this sample when creating a simple pipeline in AWS CodePipeline while following the Simple Pipeline Walkthrough tutorial. http://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-w.html
+awslabs-github-1-138 | eb-oscon-2013 | https://github.com/awslabs/eb-oscon-2013 | description:Updated Jul 22, 2013
+awslabs-github-0-139 | amazon-appstream-net | https://github.com/awslabs/amazon-appstream-net | description:Amazon AppStream.Net is a set of bindings to the native Amazon AppStream API. The server side bindings are Windows-only, while the client side bindings are portable and can currently be used on Windows, OSX, Android and iOS.
+awslabs-github-0-140 | dynamodb-online-index-violation-detector | https://github.com/awslabs/dynamodb-online-index-violation-detector | description:A tool for Amazon DynamoDB to find violations on an online GSI's hash key and range key.
+awslabs-github-0-141 | aws-codepipeline-jenkins-aws-codedeploy_linux | https://github.com/awslabs/aws-codepipeline-jenkins-aws-codedeploy_linux | description:Use this sample when creating a four-stage pipeline in AWS CodePipeline while following the Four Stage Pipeline Tutorial. http://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-4.html
+awslabs-github-0-142 | aws-demo-php-simple-app | https://github.com/awslabs/aws-demo-php-simple-app | description:Application used for demonstration purposes for AWS Blogs.

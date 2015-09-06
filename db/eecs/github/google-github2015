@@ -1,0 +1,565 @@
+google-github-18783-1 | material-design-icons | https://github.com/google/material-design-icons | description:Material Design icons by Google
+google-github-14277-2 | material-design-lite | https://github.com/google/material-design-lite | description:Material Design Lite Components in HTML/CSS/JS
+google-github-10886-3 | web-starter-kit | https://github.com/google/web-starter-kit | description:Google Web Starter Kit
+google-github-7840-4 | iosched | https://github.com/google/iosched | description:The Google I/O 2014 Android App
+google-github-7455-5 | deepdream | https://github.com/google/deepdream | description:Updated Sep 1, 2015
+google-github-6132-6 | cayley | https://github.com/google/cayley | description:An open-source graph database
+google-github-5738-7 | traceur-compiler | https://github.com/google/traceur-compiler | description:Traceur is a JavaScript.next-to-JavaScript-of-today compiler
+google-github-4870-8 | protobuf | https://github.com/google/protobuf | description:Protocol Buffers - Google's data interchange format
+google-github-4667-9 | guava | https://github.com/google/guava | description:Google Core Libraries for Java 6+
+google-github-4536-10 | fonts | https://github.com/google/fonts | description:Font files available from Google Fonts
+google-github-4400-11 | physical-web | https://github.com/google/physical-web | description:The Physical Web: walk up and use anything
+google-github-4074-12 | WebFundamentals | https://github.com/google/WebFundamentals | description:Best practices for modern web development
+google-github-3791-13 | flatbuffers | https://github.com/google/flatbuffers | description:Memory Efficient Serialization Library
+google-github-3380-14 | gumbo-parser | https://github.com/google/gumbo-parser | description:An HTML5 parsing library in pure C99
+google-github-3350-15 | leveldb | https://github.com/google/leveldb | description:LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.
+google-github-3287-16 | google-api-nodejs-client | https://github.com/google/google-api-nodejs-client | description:Google's officially supported Node.js client library for accessing Google APIs, it comes with OAuth 2.0 support.
+google-github-3196-17 | gxui | https://github.com/google/gxui | description:An experimental Go cross platform UI library.
+google-github-3146-18 | j2objc | https://github.com/google/j2objc | description:A Java to iOS Objective-C translation tool and runtime.
+google-github-2850-19 | cadvisor | https://github.com/google/cadvisor | description:Analyzes resource usage and performance characteristics of running containers.
+google-github-2840-20 | lmctfy | https://github.com/google/lmctfy | description:lmctfy is the open source version of Google’s container stack, which provides Linux application containers.
+google-github-2807-21 | google-api-php-client | https://github.com/google/google-api-php-client | description:A PHP client library for accessing Google APIs
+google-github-2656-22 | yapf | https://github.com/google/yapf | description:A formatter for Python files
+google-github-2350-23 | end-to-end | https://github.com/google/end-to-end | description:End-To-End is a Chrome extension that helps you encrypt, decrypt, digital sign, and verify signed messages within the browser using OpenPGP.
+google-github-2159-24 | liquidfun | https://github.com/google/liquidfun | description:2D physics engine for games
+google-github-2154-25 | guice | https://github.com/google/guice | description:Guice (pronounced 'juice') is a lightweight dependency injection framework for Java 6 and above, brought to you by Google.
+google-github-2034-26 | tracing-framework | https://github.com/google/tracing-framework | description:Web Tracing Framework libraries and extensions.
+google-github-1952-27 | roboto | https://github.com/google/roboto | description:The Roboto family of fonts
+google-github-1744-28 | ExoPlayer | https://github.com/google/ExoPlayer | description:An extensible media player for Android
+google-github-1730-29 | lovefield | https://github.com/google/lovefield | description:A cross-browser, SQL-like, relational query engine for Web in pure JavaScript.
+google-github-1705-30 | auto | https://github.com/google/auto | description:A collection of source code generators for Java.
+google-github-1634-31 | nogotofail | https://github.com/google/nogotofail | description:An on-path blackbox network traffic security testing tool
+google-github-1621-32 | closure-compiler | https://github.com/google/closure-compiler | description:A JavaScript checker and optimizer.
+google-github-1560-33 | ios-webkit-debug-proxy | https://github.com/google/ios-webkit-debug-proxy | description:A DevTools proxy (WebKit Remote Debugging Protocol) for iOS devices (Safari Remote Web Inspector).
+google-github-1430-34 | gson | https://github.com/google/gson | description:Automatically exported from code.google.com/p/google-gson
+google-github-1413-35 | incremental-dom | https://github.com/google/incremental-dom | description:Updated Sep 6, 2015
+google-github-1312-36 | pyringe | https://github.com/google/pyringe | description:Debugger capable of attaching to and injecting code into python processes.
+google-github-1311-37 | eddystone | https://github.com/google/eddystone | description:Specification for Eddystone, an open beacon format from Google
+google-github-1250-38 | go-github | https://github.com/google/go-github | description:Go library for accessing the GitHub API
+google-github-1181-39 | binnavi | https://github.com/google/binnavi | description:BinNavi is a binary analysis IDE that allows to inspect, navigate, edit and annotate control flow graphs and call graphs of disassembled code.
+google-github-1138-40 | novm | https://github.com/google/novm | description:Experimental KVM-based VMM, written in Go.
+google-github-1094-41 | lisp-koans | https://github.com/google/lisp-koans | description:Common Lisp Koans is a language learning exercise in the same vein as the ruby koans, python koans and others. It is a port of the prior koans with some modifications to highlight lisp-specific features. Structured as ordered groups of broken unit tests, the project guides the learner progressively through many Common Lisp language features.
+google-github-1094-42 | closure-library | https://github.com/google/closure-library | description:Google's common JavaScript library
+google-github-998-43 | styleguide | https://github.com/google/styleguide | description:Style guides for Google-originated open-source projects
+google-github-984-44 | blockly | https://github.com/google/blockly | description:The web-based visual programming editor.
+google-github-980-45 | google-api-ruby-client | https://github.com/google/google-api-ruby-client | description:Updated Sep 4, 2015
+google-github-802-46 | jimfs | https://github.com/google/jimfs | description:An in-memory file system for Java 7+
+google-github-748-47 | grr | https://github.com/google/grr | description:GRR Rapid Response: remote live forensics for incident response
+google-github-732-48 | or-tools | https://github.com/google/or-tools | description:Google's Operations Research tools
+google-github-728-49 | mr4c | https://github.com/google/mr4c | description:Updated Feb 18, 2015
+google-github-728-50 | grafika | https://github.com/google/grafika | description:Grafika test app
+google-github-717-51 | enjarify | https://github.com/google/enjarify | description:Updated Sep 2, 2015
+google-github-698-52 | battery-historian | https://github.com/google/battery-historian | description:Battery Historian is a tool to analyze battery consumers using Android "bugreport" files.
+google-github-690-53 | stenographer | https://github.com/google/stenographer | description:Stenographer is a packet capture solution which aims to quickly spool all packets to disk, then provide simple, fast access to subsets of those packets. Discussion/announcements at stenographer@googlegroups.com
+google-github-670-54 | google-authenticator | https://github.com/google/google-authenticator | description:Open source version of Google Authenticator (except the Android app)
+google-github-668-55 | firing-range | https://github.com/google/firing-range | description:Updated Jul 20, 2015
+google-github-662-56 | error-prone | https://github.com/google/error-prone | description:Catch common Java mistakes as compile-time errors
+google-github-636-57 | snappy | https://github.com/google/snappy | description:A fast compressor/decompressor
+google-github-635-58 | jsaction | https://github.com/google/jsaction | description:Updated Aug 26, 2015
+google-github-579-59 | google-api-python-client | https://github.com/google/google-api-python-client | description:Updated Sep 4, 2015
+google-github-567-60 | santa-tracker-android | https://github.com/google/santa-tracker-android | description:Updated Mar 30, 2015
+google-github-555-61 | upb | https://github.com/google/upb | description:small, fast parsers for the 21st century
+google-github-550-62 | open-location-code | https://github.com/google/open-location-code | description:Open Location Codes are short, generated codes that can be used like street addresses, for places where street addresses don't exist.
+google-github-528-63 | recki-ct | https://github.com/google/recki-ct | description:Updated Dec 22, 2014
+google-github-521-64 | recaptcha | https://github.com/google/recaptcha | description:reCAPTCHA is a free service to protect your website from spam and abuse.
+google-github-494-65 | code-prettify | https://github.com/google/code-prettify | description:Automatically exported from code.google.com/p/google-code-prettify
+google-github-476-66 | hesokuri | https://github.com/google/hesokuri | description:Distributed Git repo synchronization tool.
+google-github-465-67 | re2 | https://github.com/google/re2 | description:RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library.
+google-github-458-68 | module-server | https://github.com/google/module-server | description:module-server
+google-github-457-69 | trace-viewer | https://github.com/google/trace-viewer | description:Updated Sep 3, 2015
+google-github-450-70 | btree | https://github.com/google/btree | description:Updated Jun 29, 2015
+google-github-445-71 | pinject | https://github.com/google/pinject | description:A pythonic dependency injection library.
+google-github-445-72 | mathfu | https://github.com/google/mathfu | description:C++ math library developed primarily for games focused on simplicity and efficiency.
+google-github-432-73 | santa | https://github.com/google/santa | description:A binary whitelisting/blacklisting system for Mac OS X
+google-github-425-74 | rowhammer-test | https://github.com/google/rowhammer-test | description:Test DRAM for bit flips caused by the rowhammer problem
+google-github-416-75 | truth | https://github.com/google/truth | description:Assertion/Proposition framework for Java unit tests (very alpha, and subject to change)
+google-github-403-76 | benchmark | https://github.com/google/benchmark | description:A microbenchmark support library
+google-github-400-77 | jsonnet | https://github.com/google/jsonnet | description:Jsonnet - The data templating language
+google-github-400-78 | santa-tracker-web | https://github.com/google/santa-tracker-web | description:Ho Ho Ho
+google-github-398-79 | CausalImpact | https://github.com/google/CausalImpact | description:An R package for causal inference in time series
+google-github-396-80 | latency-benchmark | https://github.com/google/latency-benchmark | description:Tests web browser input latency and jank
+google-github-387-81 | vim-maktaba | https://github.com/google/vim-maktaba | description:Consistent Vimscript
+google-github-373-82 | uribeacon | https://github.com/google/uribeacon | description:The Web Uri Open Beacon for the Internet of Things
+google-github-370-83 | rekall | https://github.com/google/rekall | description:Rekall Memory Forensic Framework
+google-github-354-84 | google-api-go-client | https://github.com/google/google-api-go-client | description:Auto-generated Google APIs for Go
+google-github-330-85 | kythe | https://github.com/google/kythe | description:Kythe is a pluggable, (mostly) language-agnostic ecosystem for building tools that work with code.
+google-github-328-86 | glog | https://github.com/google/glog | description:C++ implementation of the Google logging module
+google-github-320-87 | gopacket | https://github.com/google/gopacket | description:Provides packet processing capabilities for Go
+google-github-320-88 | codeworld | https://github.com/google/codeworld | description:Educational computer programming environment using Haskell
+google-github-316-89 | codesearch | https://github.com/google/codesearch | description:Fast, indexed regexp search over large file trees
+google-github-297-90 | google-apps-script-samples | https://github.com/google/google-apps-script-samples | description:Sample code for Google Apps Script, a cloud-based scripting service for Google Apps
+google-github-296-91 | pienoon | https://github.com/google/pienoon | description:Multiplayer party game where you can throw pies at your friends.
+google-github-289-92 | shaka-player | https://github.com/google/shaka-player | description:JavaScript player library / DASH client / MSE-EME player
+google-github-284-93 | snappy-start | https://github.com/google/snappy-start | description:Tool for launching a Linux process from a snapshot
+google-github-274-94 | re2j | https://github.com/google/re2j | description:linear time regular expression matching in Java
+google-github-274-95 | pepper.js | https://github.com/google/pepper.js | description:Pepper applications as Native Client or JavaScript
+google-github-273-96 | gcm | https://github.com/google/gcm | description:Google Cloud Messaging - client libraries and sample implementations
+google-github-265-97 | kratu | https://github.com/google/kratu | description:Updated Feb 7, 2014
+google-github-257-98 | macops | https://github.com/google/macops | description:Utilities, tools, and scripts for managing and tracking a fleet of Macintoshes in a corporate environment
+google-github-256-99 | googleapis | https://github.com/google/googleapis | description:Updated Aug 20, 2015
+google-github-238-100 | oauth2client | https://github.com/google/oauth2client | description:This is a Python library for accessing resources protected by OAuth 2.0.
+google-github-235-101 | timesketch | https://github.com/google/timesketch | description:Collaborative forensics timeline analysis
+google-github-233-102 | google-http-java-client | https://github.com/google/google-http-java-client | description:Google HTTP Client Library for Java
+google-github-227-103 | google-api-java-client | https://github.com/google/google-api-java-client | description:Google APIs Client Library for Java
+google-github-219-104 | skicka | https://github.com/google/skicka | description:Command-line utility for working with Google Drive. Join the mailing list at https://groups.google.com/forum/#!forum/skicka-users.
+google-github-217-105 | google-api-ruby-client-samples | https://github.com/google/google-api-ruby-client-samples | description:Samples for the Google API Ruby Client
+google-github-215-106 | patchfield | https://github.com/google/patchfield | description:Audio infrastructure for Android
+google-github-204-107 | nsjail | https://github.com/google/nsjail | description:A light-weight process isolation tool, making use of Linux namespaces and seccomp-bpf syscall filters
+google-github-202-108 | souper | https://github.com/google/souper | description:A superoptimizer for LLVM IR
+google-github-202-109 | fplutil | https://github.com/google/fplutil | description:fplutil is a set of small libraries and tools that can be useful when developing applications for Android and other platforms.
+google-github-201-110 | go-querystring | https://github.com/google/go-querystring | description:go-querystring is Go library for encoding structs into URL query parameters.
+google-github-187-111 | compile-testing | https://github.com/google/compile-testing | description:Testing tools for javac and annotation processors
+google-github-186-112 | VoltAir | https://github.com/google/VoltAir | description:Updated Jul 16, 2014
+google-github-182-113 | gofuzz | https://github.com/google/gofuzz | description:Fuzz testing for go.
+google-github-181-114 | fruit | https://github.com/google/fruit | description:Fruit, a dependency injection framework for C++
+google-github-173-115 | zopfli | https://github.com/google/zopfli | description:Zopfli Compression Algorithm is a compression library programmed in C to perform very good, but slow, deflate or zlib compression.
+google-github-172-116 | googletest | https://github.com/google/googletest | description:Google Test
+google-github-170-117 | vroom | https://github.com/google/vroom | description:Launch vim tests
+google-github-165-118 | google-java-format | https://github.com/google/google-java-format | description:Updated Aug 31, 2015
+google-github-164-119 | keyczar | https://github.com/google/keyczar | description:Easy-to-use crypto toolkit
+google-github-164-120 | python-adb | https://github.com/google/python-adb | description:Python ADB + Fastboot implementation
+google-github-162-121 | closure-templates | https://github.com/google/closure-templates | description:A client- and server-side templating system that helps you dynamically build reusable HTML and UI elements
+google-github-161-122 | google-api-javascript-client | https://github.com/google/google-api-javascript-client | description:Google APIs Client Library for JavaScript
+google-github-160-123 | paco | https://github.com/google/paco | description:This is the Paco behavioral science mobile research platform
+google-github-156-124 | instant-hangouts | https://github.com/google/instant-hangouts | description:Easily add Google+ Hangouts to any web page.
+google-github-153-125 | certificate-transparency | https://github.com/google/certificate-transparency | description:Auditing for TLS certificates.
+google-github-153-126 | kati | https://github.com/google/kati | description:Updated Sep 4, 2015
+google-github-151-127 | signet | https://github.com/google/signet | description:Signet is an OAuth 1.0 / OAuth 2.0 implementation.
+google-github-146-128 | namebench | https://github.com/google/namebench | description:namebench
+google-github-145-129 | google-authenticator-android | https://github.com/google/google-authenticator-android | description:Google Authenticator Android app. Opensource version.
+google-github-144-130 | vim-codefmt | https://github.com/google/vim-codefmt | description:Updated Sep 2, 2015
+google-github-139-131 | gwteventbinder | https://github.com/google/gwteventbinder | description:Making GWT EventBus easy
+google-github-138-132 | radioreceiver | https://github.com/google/radioreceiver | description:An application to listen to broadcast stereo FM and AM radio from your Chrome browser or your ChromeBook computer using a $15 USB digital TV tuner.
+google-github-136-133 | classp | https://github.com/google/classp | description:Classp -- a classier way to parse
+google-github-135-134 | rappor | https://github.com/google/rappor | description:RAPPOR: Privacy-Preserving Reporting Algorithms
+google-github-130-135 | gwtmockito | https://github.com/google/gwtmockito | description:Better GWT unit testing
+google-github-127-136 | blockly-games | https://github.com/google/blockly-games | description:Games for tomorrow's programmers.
+google-github-127-137 | martian | https://github.com/google/martian | description:MartianProxy is an HTTP proxy designed for use in E2E testing.
+google-github-127-138 | google-api-cpp-client | https://github.com/google/google-api-cpp-client | description:The core C++ SK for using Google APIs
+google-github-126-139 | u2f-ref-code | https://github.com/google/u2f-ref-code | description:U2F reference implementations
+google-github-125-140 | github-issue-mover | https://github.com/google/github-issue-mover | description:Making it easy to migrate issues between repos.
+google-github-123-141 | vim-colorscheme-primary | https://github.com/google/vim-colorscheme-primary | description:Primary, a Vim color scheme based on Google's colors
+google-github-121-142 | FreeBuilder | https://github.com/google/FreeBuilder | description:Automatic generation of the Builder pattern for Java 1.6+
+google-github-117-143 | transitfeed | https://github.com/google/transitfeed | description:A Python library for reading, validating, and writing transit schedule information in the GTFS format.
+google-github-116-144 | honggfuzz | https://github.com/google/honggfuzz | description:A general-purpose, easy-to-use fuzzer with interesting analysis options. Supports feedback-driven fuzzing based on code coverage
+google-github-113-145 | autoparse | https://github.com/google/autoparse | description:A dynamically generated parsing system using JSON Schema.
+google-github-111-146 | UIforETW | https://github.com/google/UIforETW | description:User interface for recording and managing ETW traces
+google-github-110-147 | capsicum-linux | https://github.com/google/capsicum-linux | description:Linux kernel with Capsicum support
+google-github-110-148 | brotli | https://github.com/google/brotli | description:Brotli compression format
+google-github-110-149 | gdata-python-client | https://github.com/google/gdata-python-client | description:Updated Aug 13, 2015
+google-github-108-150 | quiver-dart | https://github.com/google/quiver-dart | description:A set of utility libraries for Dart
+google-github-108-151 | beacon-platform | https://github.com/google/beacon-platform | description:Code samples for Google's beacon platform
+google-github-107-152 | password-alert | https://github.com/google/password-alert | description:A Chrome Extension to help protect against phishing attacks.
+google-github-106-153 | hat-backup | https://github.com/google/hat-backup | description:Backend-agnostic snapshotting backup system
+google-github-105-154 | pulldown-cmark | https://github.com/google/pulldown-cmark | description:Updated Aug 17, 2015
+google-github-104-155 | data-layer-helper | https://github.com/google/data-layer-helper | description:JavaScript library for working with dataLayer message queues.
+google-github-102-156 | spatial-media | https://github.com/google/spatial-media | description:Updated Sep 2, 2015
+google-github-101-157 | personfinder | https://github.com/google/personfinder | description:Person Finder is a searchable missing person database written in Python and hosted on App Engine.
+google-github-100-158 | google-oauth-java-client | https://github.com/google/google-oauth-java-client | description:Google OAuth Client Library for Java
+google-github-99-159 | woff2 | https://github.com/google/woff2 | description:Updated Aug 27, 2015
+google-github-98-160 | adb-sync | https://github.com/google/adb-sync | description:Updated May 27, 2015
+google-github-98-161 | caja | https://github.com/google/caja | description:Caja is a tool for safely embedding third party HTML, CSS and JavaScript in your website.
+google-github-97-162 | shaderc | https://github.com/google/shaderc | description:A collection of tools, libraries and tests for shader compilation.
+google-github-95-163 | tsviewdb | https://github.com/google/tsviewdb | description:High-performance storage and graphing web service for time-series of time-series.
+google-github-94-164 | googletv-android-samples | https://github.com/google/googletv-android-samples | description:Source for many GoogleTV Example applications.
+google-github-92-165 | double-conversion | https://github.com/google/double-conversion | description:Efficient binary-decimal and decimal-binary conversion routines for IEEE doubles.
+google-github-92-166 | openrtb | https://github.com/google/openrtb | description:OpenRTB model for Java and other languages via protobuf; Helper OpenRTB libraries for Java including JSON serialization
+google-github-90-167 | simian | https://github.com/google/simian | description:Simian is an enterprise-class Mac OS X software deployment solution hosted on Google App Engine, built atop the Munki open-source project.
+google-github-89-168 | mtail | https://github.com/google/mtail | description:extract whitebox monitoring data from application logs for collection in a timeseries database
+google-github-87-169 | clojure-turtle | https://github.com/google/clojure-turtle | description:A Clojure library that implements the Logo programming language in a Clojure context
+google-github-86-170 | mozc | https://github.com/google/mozc | description:Mozc - a Japanese Input Method Editor designed for multi-platform
+google-github-85-171 | google-api-java-client-samples | https://github.com/google/google-api-java-client-samples | description:Updated Aug 21, 2015
+google-github-81-172 | xsecurelock | https://github.com/google/xsecurelock | description:X11 screen lock utility with security in mind
+google-github-81-173 | stagehand | https://github.com/google/stagehand | description:Dart project generator - web apps, console apps, servers, and more.
+google-github-81-174 | concatenate.js | https://github.com/google/concatenate.js | description:Updated Jun 13, 2013
+google-github-80-175 | google-api-dotnet-client | https://github.com/google/google-api-dotnet-client | description:Google APIs Client Library for .NET
+google-github-75-176 | search-samples | https://github.com/google/search-samples | description:Updated Jul 8, 2015
+google-github-72-177 | grr-doc | https://github.com/google/grr-doc | description:Documentation for the GRR Rapid Reponse framework
+google-github-72-178 | vimdoc | https://github.com/google/vimdoc | description:Helpfile generation for vim
+google-github-72-179 | palette.js | https://github.com/google/palette.js | description:Script for generating colour palettes for use with graphs, charts and cartography.
+google-github-71-180 | ringdroid | https://github.com/google/ringdroid | description:Updated Jun 24, 2015
+google-github-70-181 | vector_math.dart | https://github.com/google/vector_math.dart | description:vector_math
+google-github-68-182 | url_diff | https://github.com/google/url_diff | description:Updated Jan 12, 2015
+google-github-67-183 | primarysources | https://github.com/google/primarysources | description:Updated Aug 20, 2015
+google-github-65-184 | edash-packager | https://github.com/google/edash-packager | description:A media packaging SDK intended for C++ programmers writing MPEG-DASH packaging applications with Widevine DRM and Common Encryption support.
+google-github-65-185 | ohmu | https://github.com/google/ohmu | description:Compiler intermediate language for static analysis.
+google-github-64-186 | openrtb-doubleclick | https://github.com/google/openrtb-doubleclick | description:Utilities for DoubleClick Ad Exchange, including OpenRTB mapping, DoubleClick cryptography, metadata and validation
+google-github-64-187 | kasan | https://github.com/google/kasan | description:AddressSanitizer for Linux kernel, a fast memory error detector
+google-github-63-188 | grinder.dart | https://github.com/google/grinder.dart | description:Dart workflows, automated.
+google-github-62-189 | web-starter-kit-extras | https://github.com/google/web-starter-kit-extras | description:Optional additions to Web Starter Kit
+google-github-61-190 | dart-tagtree | https://github.com/google/dart-tagtree | description:A React-like UI framework in Dart
+google-github-61-191 | charted | https://github.com/google/charted | description:Visualization toolkit for Dart language
+google-github-60-192 | K2 | https://github.com/google/K2 | description:The home of the future K2 crypto library, a successor to KeyCzar.
+google-github-60-193 | chromeos-filesystems | https://github.com/google/chromeos-filesystems | description:Additional file system providers for Chrome OS
+google-github-59-194 | caliper | https://github.com/google/caliper | description:Automatically exported from code.google.com/p/caliper
+google-github-58-195 | shipshape | https://github.com/google/shipshape | description:Updated Jul 27, 2015
+google-github-58-196 | LiquidFunPaint | https://github.com/google/LiquidFunPaint | description:Updated Jul 16, 2014
+google-github-57-197 | py-gfm | https://github.com/google/py-gfm | description:Github-Flavored Markdown for Python-Markdown
+google-github-56-198 | cauliflowervest | https://github.com/google/cauliflowervest | description:App Engine-based escrow solution for enterprise management of disk encryption technologies for OS X (FileVault 2), Windows (BitLocker), and Linux (LUKS).
+google-github-55-199 | closure-stylesheets | https://github.com/google/closure-stylesheets | description:Updated Jul 1, 2015
+google-github-53-200 | google-visualization-issues | https://github.com/google/google-visualization-issues | description:Updated May 9, 2015
+google-github-52-201 | pytypedecl | https://github.com/google/pytypedecl | description:Updated Feb 11, 2015
+google-github-50-202 | sagetv | https://github.com/google/sagetv | description:Updated Sep 5, 2015
+google-github-50-203 | earthengine-api | https://github.com/google/earthengine-api | description:Python and JavaScript bindings for calling the Earth Engine API.
+google-github-50-204 | sanitizers | https://github.com/google/sanitizers | description:AddressSanitizer, ThreadSanitizer, MemorySanitizer
+google-github-48-205 | canvas-5-polyfill | https://github.com/google/canvas-5-polyfill | description:HTML 5 Canvas Polyfill
+google-github-47-206 | autofdo | https://github.com/google/autofdo | description:AutoFDO
+google-github-47-207 | Refaster | https://github.com/google/Refaster | description:Updated Sep 4, 2014
+google-github-47-208 | blueprint | https://github.com/google/blueprint | description:Updated Aug 26, 2015
+google-github-46-209 | vpn-reverse-tether | https://github.com/google/vpn-reverse-tether | description:VPN-based USB "reverse tether"
+google-github-46-210 | syzygy | https://github.com/google/syzygy | description:Syzygy Transformation Toolchain
+google-github-46-211 | mysql-tools | https://github.com/google/mysql-tools | description:Updated Apr 22, 2015
+google-github-46-212 | streamy-dart | https://github.com/google/streamy-dart | description:Updated Sep 1, 2015
+google-github-45-213 | anvil-build | https://github.com/google/anvil-build | description:A parallel build system and content pipeline
+google-github-44-214 | cronutils | https://github.com/google/cronutils | description:utilities to assist running batch processing jobs
+google-github-44-215 | gae-secure-scaffold-python | https://github.com/google/gae-secure-scaffold-python | description:Updated Apr 6, 2015
+google-github-44-216 | deepboost | https://github.com/google/deepboost | description:Updated Jun 18, 2015
+google-github-40-217 | git-appraise | https://github.com/google/git-appraise | description:Distributed code review system for Git repos
+google-github-39-218 | thread-weaver | https://github.com/google/thread-weaver | description:A Java framework for testing multithreaded code.
+google-github-39-219 | memcache-collections | https://github.com/google/memcache-collections | description:Concurrent, distributed data structures on top of memcache
+google-github-39-220 | cups-connector | https://github.com/google/cups-connector | description:GCP CUPS Connector
+google-github-39-221 | pindrop | https://github.com/google/pindrop | description:C++ cross-platform game audio library
+google-github-39-222 | paramgmt | https://github.com/google/paramgmt | description:A parallel SSH-based remote machine management system
+google-github-39-223 | pytrie | https://github.com/google/pytrie | description:Python library implementing a trie data structure.
+google-github-39-224 | encrypted-bigquery-client | https://github.com/google/encrypted-bigquery-client | description:Updated Apr 17, 2015
+google-github-39-225 | google-auth-library-nodejs | https://github.com/google/google-auth-library-nodejs | description:Google Auth Library for Node.js
+google-github-39-226 | domaintest | https://github.com/google/domaintest | description:Domain Test service for new TLDs.
+google-github-39-227 | omaha | https://github.com/google/omaha | description:Google Update for Windows
+google-github-38-228 | turing-doodle | https://github.com/google/turing-doodle | description:Updated Sep 10, 2014
+google-github-38-229 | devtoolsExtended | https://github.com/google/devtoolsExtended | description:devtoolsExtended: Extended Chrome Devtools in a Chrome Extension
+google-github-37-230 | REAPER | https://github.com/google/REAPER | description:Updated Mar 4, 2015
+google-github-35-231 | gjstest | https://github.com/google/gjstest | description:A fast javascript unit testing framework that runs on the V8 engine.
+google-github-35-232 | gfw-deployments | https://github.com/google/gfw-deployments | description:Scripts and tools created by the Google For Work Team. (Contributions Encouraged!)
+google-github-34-233 | ggrc-core | https://github.com/google/ggrc-core | description:GGRC Core
+google-github-34-234 | wicked-good-xpath | https://github.com/google/wicked-good-xpath | description:Automatically exported from code.google.com/p/wicked-good-xpath
+google-github-34-235 | rich-test-results | https://github.com/google/rich-test-results | description:Understand a test failure
+google-github-33-236 | ktsan | https://github.com/google/ktsan | description:KernelThreadSanitizer, a fast data race detector for the Linux kernel
+google-github-33-237 | motive | https://github.com/google/motive | description:A cross-platform, memory efficient, and performant animation system written in C++
+google-github-32-238 | gtfs-realtime-bindings | https://github.com/google/gtfs-realtime-bindings | description:Language bindings generated from the GTFS-realtime protocol buffer spec for popular languages.
+google-github-32-239 | embed-dart-vm | https://github.com/google/embed-dart-vm | description:Updated Sep 20, 2012
+google-github-31-240 | qpp | https://github.com/google/qpp | description:Querypoint Debugging Prototype
+google-github-31-241 | android-gradle-dsl | https://github.com/google/android-gradle-dsl | description:Updated Aug 27, 2015
+google-github-31-242 | google-drive-shell-extension | https://github.com/google/google-drive-shell-extension | description:Google Drive Shell Extension is a Shell Namespace Extension for Microsoft Windows. It creates a virtual folder on My Computer that allows the user to interact with his Google Drive account transparently through Windows Explorer.
+google-github-31-243 | google-toolbox-for-mac | https://github.com/google/google-toolbox-for-mac | description:Google Toolbox for Mac
+google-github-30-244 | sre_yield | https://github.com/google/sre_yield | description:Python module to generate regular all expression matches
+google-github-30-245 | maps-for-work-samples | https://github.com/google/maps-for-work-samples | description:Updated Apr 8, 2015
+google-github-30-246 | vim-ft-go | https://github.com/google/vim-ft-go | description:Updated Jun 2, 2015
+google-github-30-247 | symboliclink-testing-tools | https://github.com/google/symboliclink-testing-tools | description:Updated Aug 26, 2015
+google-github-30-248 | supersonic | https://github.com/google/supersonic | description:Supersonic is an ultra-fast, column oriented query engine library written in C++
+google-github-29-249 | securemessage | https://github.com/google/securemessage | description:Updated Mar 12, 2015
+google-github-29-250 | google-auth-library-java | https://github.com/google/google-auth-library-java | description:Updated Sep 4, 2015
+google-github-29-251 | vim-glaive | https://github.com/google/vim-glaive | description:Updated Jul 12, 2015
+google-github-29-252 | gipfeli | https://github.com/google/gipfeli | description:Updated Apr 17, 2015
+google-github-29-253 | protobuf-gradle-plugin | https://github.com/google/protobuf-gradle-plugin | description:Protobuf Plugin for Gradle
+google-github-29-254 | ruby-openid-apps-discovery | https://github.com/google/ruby-openid-apps-discovery | description:Updated Jan 26, 2012
+google-github-29-255 | gdata-java-client | https://github.com/google/gdata-java-client | description:Automatically exported from code.google.com/p/gdata-java-client
+google-github-28-256 | vim-syncopate | https://github.com/google/vim-syncopate | description:Make it easy to share beautiful code. DISCLAIMER: This is not an official Google product.
+google-github-28-257 | favcolor-android | https://github.com/google/favcolor-android | description:Updated Jan 31, 2014
+google-github-28-258 | crush-tools | https://github.com/google/crush-tools | description:Automatically exported from code.google.com/p/crush-tools
+google-github-28-259 | redgrep | https://github.com/google/redgrep | description:♥ Janusz Brzozowski
+google-github-28-260 | systemjs | https://github.com/google/systemjs | description:A minimal System loader
+google-github-27-261 | CallBuilder | https://github.com/google/CallBuilder | description:Make a Java builder by defining one function.
+google-github-26-262 | google-auth-library-ruby | https://github.com/google/google-auth-library-ruby | description:Google Auth Library for Ruby
+google-github-26-263 | pyrios | https://github.com/google/pyrios | description:Updated Oct 22, 2014
+google-github-26-264 | libcxx | https://github.com/google/libcxx | description:libc++; cloned from http://llvm.org/git/libcxx.git
+google-github-25-265 | irrduino | https://github.com/google/irrduino | description:Irrduino is an Arduino-based irrigation control system.
+google-github-25-266 | certificate-transparency-rfcs | https://github.com/google/certificate-transparency-rfcs | description:Certificate Transparency RFC
+google-github-25-267 | identity-toolkit-go-client | https://github.com/google/identity-toolkit-go-client | description:Google identity Toolkit client library for Go
+google-github-25-268 | picview-for-android | https://github.com/google/picview-for-android | description:Updated Nov 20, 2014
+google-github-25-269 | network-mapper | https://github.com/google/network-mapper | description:Updated Dec 12, 2013
+google-github-25-270 | todo-tracks | https://github.com/google/todo-tracks | description:Web dashboard for tracking the TODOs in a Git repo
+google-github-25-271 | cap-library | https://github.com/google/cap-library | description:Common Alerting Protocol Library
+google-github-24-272 | gfw-toolkit | https://github.com/google/gfw-toolkit | description:Enterprise command-line scripts and samples for Google Apps Admin SDK.
+google-github-23-273 | cluster-scheduler-simulator | https://github.com/google/cluster-scheduler-simulator | description:Automatically exported from code.google.com/p/cluster-scheduler-simulator
+google-github-23-274 | extra-keyboards-for-chrome-os | https://github.com/google/extra-keyboards-for-chrome-os | description:Updated Aug 1, 2015
+google-github-23-275 | dart-collab | https://github.com/google/dart-collab | description:An operational transform library for Dart
+google-github-23-276 | go-tpm | https://github.com/google/go-tpm | description:Updated Jul 23, 2015
+google-github-22-277 | webdriver.dart | https://github.com/google/webdriver.dart | description:Dart WebDriver client
+google-github-22-278 | acai | https://github.com/google/acai | description:Testing library for JUnit4 and Guice.
+google-github-22-279 | MOE | https://github.com/google/MOE | description:Make Opensource Easy - tools for synchronizing repositories
+google-github-22-280 | GL-Shader-Validator | https://github.com/google/GL-Shader-Validator | description:Updated Apr 16, 2013
+google-github-22-281 | html-quiz | https://github.com/google/html-quiz | description:A stand-alone, HTML+JavaScript quiz script.
+google-github-21-282 | ansicolor-dart | https://github.com/google/ansicolor-dart | description:Updated Sep 21, 2013
+google-github-21-283 | cluster-insight | https://github.com/google/cluster-insight | description:Updated Sep 1, 2015
+google-github-21-284 | contentbox | https://github.com/google/contentbox | description:Distribution of social and virtual content with an open and collaborative educational environment, available to communities around the world in one place, with a standard format and quality
+google-github-21-285 | libkml | https://github.com/google/libkml | description:Reference implementation of OGC KML 2.2
+google-github-21-286 | page-timer | https://github.com/google/page-timer | description:A time-tracking Chrome extension
+google-github-20-287 | identity-toolkit-java-client | https://github.com/google/identity-toolkit-java-client | description:Google Identity Toolkit client library for Java
+google-github-20-288 | gemmlowp | https://github.com/google/gemmlowp | description:Updated Sep 4, 2015
+google-github-20-289 | allocation-instrumenter | https://github.com/google/allocation-instrumenter | description:A Java agent that rewrites bytecode to instrument allocation sites
+google-github-20-290 | tern-closure | https://github.com/google/tern-closure | description:A Tern plugin adding Closure support.
+google-github-20-291 | vogon | https://github.com/google/vogon | description:Scalable customization of video campaigns
+google-github-19-292 | compare-codecs | https://github.com/google/compare-codecs | description:Updated Jun 23, 2015
+google-github-19-293 | gsa-admin-toolkit | https://github.com/google/gsa-admin-toolkit | description:Tools for common Google Search Appliance (GSA) administrative tasks
+google-github-19-294 | uri.dart | https://github.com/google/uri.dart | description:Utilities for working with URIs in Dart
+google-github-19-295 | dpy | https://github.com/google/dpy | description:Python Inversion of Control
+google-github-19-296 | simple-pedometer | https://github.com/google/simple-pedometer | description:Updated Oct 21, 2014
+google-github-19-297 | go-webdav | https://github.com/google/go-webdav | description:Updated Oct 30, 2014
+google-github-18-298 | sensei | https://github.com/google/sensei | description:Logistic regression engine for medium-sized data
+google-github-18-299 | hyou | https://github.com/google/hyou | description:Hyou - Pythonic Interface to manipulate Google Spreadsheet
+google-github-18-300 | protorpc | https://github.com/google/protorpc | description:Updated Jul 23, 2015
+google-github-18-301 | capsicum-test | https://github.com/google/capsicum-test | description:Test suite for Capsicum
+google-github-17-302 | google.github.io | https://github.com/google/google.github.io | description:Updated Feb 27, 2013
+google-github-17-303 | pytype | https://github.com/google/pytype | description:Updated Sep 4, 2015
+google-github-17-304 | badwolf | https://github.com/google/badwolf | description:Temporal graph store abstraction layer.
+google-github-17-305 | chrome-language-immersion | https://github.com/google/chrome-language-immersion | description:Experience a new language while you browse the web.
+google-github-17-306 | google-drive-proxy | https://github.com/google/google-drive-proxy | description:Google Drive Proxy is a Windows service that provides a simpler interface to the Google Drive API for other applications. It transparently handles authentication, synchronization and managing a cache of downloaded files.
+google-github-16-307 | angular_node_bind.dart | https://github.com/google/angular_node_bind.dart | description:Utilities to allow Angular templates to use Node.bind()
+google-github-16-308 | gtest-parallel | https://github.com/google/gtest-parallel | description:Run gtest test suites in parallel.
+google-github-16-309 | identity-toolkit-php-client | https://github.com/google/identity-toolkit-php-client | description:Google Identity Toolkit client library for PHP
+google-github-16-310 | xpaf | https://github.com/google/xpaf | description:Updated Jul 14, 2015
+google-github-16-311 | googlemock | https://github.com/google/googlemock | description:Google Mock
+google-github-16-312 | test_runner.dart | https://github.com/google/test_runner.dart | description:This is a Test Runner for the Dart programming language.
+google-github-16-313 | apitools | https://github.com/google/apitools | description:Updated Sep 5, 2015
+google-github-16-314 | self-hosted-rss-to-email | https://github.com/google/self-hosted-rss-to-email | description:Updated Oct 4, 2013
+google-github-15-315 | google-auth-library-php | https://github.com/google/google-auth-library-php | description:Google Auth Library for PHP
+google-github-15-316 | wwgc | https://github.com/google/wwgc | description:viewer profile generator for "Works with Google Cardboard"
+google-github-15-317 | pageloader | https://github.com/google/pageloader | description:A framework for creating page objects for in-browser or WebDriver tests.
+google-github-15-318 | appengine_xblock_runtime | https://github.com/google/appengine_xblock_runtime | description:Updated Feb 21, 2014
+google-github-15-319 | navc | https://github.com/google/navc | description:C code indexer using language semantic from clang
+google-github-15-320 | closure-linter | https://github.com/google/closure-linter | description:Automatically exported from code.google.com/p/closure-linter
+google-github-15-321 | google-api-objectivec-client | https://github.com/google/google-api-objectivec-client | description:Google APIs Client Library for Objective-C
+google-github-15-322 | webview-local-server | https://github.com/google/webview-local-server | description:Updated Feb 2, 2015
+google-github-14-323 | infact | https://github.com/google/infact | description:Provides a lightweight interpreter and factory for dynamically creating C++ objects at runtime.
+google-github-14-324 | rekall-profiles | https://github.com/google/rekall-profiles | description:Public Profile Repository for Rekall Memory Forensic.
+google-github-14-325 | realtime-help | https://github.com/google/realtime-help | description:Updated Apr 10, 2014
+google-github-14-326 | gofountain | https://github.com/google/gofountain | description:Updated Jul 30, 2014
+google-github-14-327 | CSP-Validator | https://github.com/google/CSP-Validator | description:CSP-Validator
+google-github-14-328 | vim-codefmtlib | https://github.com/google/vim-codefmtlib | description:Updated Mar 21, 2015
+google-github-13-329 | googleapps-password-generator | https://github.com/google/googleapps-password-generator | description:Updated Mar 26, 2014
+google-github-13-330 | sensor-data-collection-library | https://github.com/google/sensor-data-collection-library | description:Updated Oct 21, 2014
+google-github-13-331 | account-provisioning-for-google-apps | https://github.com/google/account-provisioning-for-google-apps | description:Updated Jun 20, 2015
+google-github-13-332 | glassbox | https://github.com/google/glassbox | description:Updated Aug 3, 2014
+google-github-13-333 | pull-request-mailer | https://github.com/google/pull-request-mailer | description:Sends a GitHub pull request as a patch series via email
+google-github-13-334 | carfac | https://github.com/google/carfac | description:Cascade of Asymmetric Resonators with Fast-Acting Compression cochlear model.
+google-github-13-335 | ebola-tools | https://github.com/google/ebola-tools | description:Updated Sep 30, 2014
+google-github-13-336 | nsscache | https://github.com/google/nsscache | description:asynchronously synchronise local NSS databases with remote directory services
+google-github-12-337 | box2d.dart | https://github.com/google/box2d.dart | description:A Dart port of Java's Box2D libraries.
+google-github-12-338 | gmail-oauth2-tools | https://github.com/google/gmail-oauth2-tools | description:Tools and sample code for authenticating to Gmail with OAuth2
+google-github-12-339 | files.dart | https://github.com/google/files.dart | description:A filesystem API with implementations for multiple environments
+google-github-12-340 | identity-toolkit-node-client | https://github.com/google/identity-toolkit-node-client | description:Google Identity Toolkit client library for Node.js
+google-github-12-341 | apis-client-generator | https://github.com/google/apis-client-generator | description:The Google APIs Client Generator is a tool for generating client libraries for APIs based on the Google API Discovery format. It is based on the same core technology Google uses to publish their API libraries. Current support is for C++, C#/.NET, Dart, Java, Java/GWT, and PHP.
+google-github-12-342 | testimony | https://github.com/google/testimony | description:Updated Apr 10, 2015
+google-github-12-343 | codemirror.dart | https://github.com/google/codemirror.dart | description:A Dart wrapper around the CodeMirror text editor.
+google-github-12-344 | FakeMaker | https://github.com/google/FakeMaker | description:Devtool ext. to create DOM 'fake' for JS benchmarks
+google-github-12-345 | crx2app | https://github.com/google/crx2app | description:Updated Jul 11, 2013
+google-github-12-346 | serialization.dart | https://github.com/google/serialization.dart | description:A serialization library for Dart.
+google-github-11-347 | ldpush | https://github.com/google/ldpush | description:A cross-vendor network device configuration distribution tool
+google-github-11-348 | google-api-dotnet-client-samples | https://github.com/google/google-api-dotnet-client-samples | description:Samples of using the Google APIs Client Library for .NET
+google-github-11-349 | tuneup.dart | https://github.com/google/tuneup.dart | description:A command-line tool to manipulate and inspect your Dart projects.
+google-github-11-350 | catnip | https://github.com/google/catnip | description:Catnip Sandbox
+google-github-11-351 | firmata.py | https://github.com/google/firmata.py | description:Updated Mar 27, 2013
+google-github-11-352 | dart-sync-webdriver | https://github.com/google/dart-sync-webdriver | description:WebDriver API for Dart
+google-github-11-353 | file-system-stress-testing | https://github.com/google/file-system-stress-testing | description:A tool that can be used to stress test POSIX filesystems.
+google-github-11-354 | libpam-policycache | https://github.com/google/libpam-policycache | description:Password caching module with advanced policies for PAM.
+google-github-11-355 | packetdrill | https://github.com/google/packetdrill | description:The official Google release of packetdrill
+google-github-11-356 | forcefield | https://github.com/google/forcefield | description:Keep email out of your inbox when you're not at work.
+google-github-10-357 | coursebuilder_xblock_module | https://github.com/google/coursebuilder_xblock_module | description:Updated Apr 27, 2015
+google-github-10-358 | ipaddr-py | https://github.com/google/ipaddr-py | description:Google's Python IP address manipulation library
+google-github-10-359 | midi-dump-tools | https://github.com/google/midi-dump-tools | description:A collection of tools that dump MIDI to a variety of formats
+google-github-10-360 | aff4 | https://github.com/google/aff4 | description:The Advanced Forensic File Format
+google-github-10-361 | java-thread-sanitizer | https://github.com/google/java-thread-sanitizer | description:Updated Sep 1, 2014
+google-github-10-362 | built_collection.dart | https://github.com/google/built_collection.dart | description:Immutable Dart collections via the builder pattern.
+google-github-10-363 | heartbleed-burp-extension | https://github.com/google/heartbleed-burp-extension | description:Updated May 6, 2014
+google-github-10-364 | TouchTime | https://github.com/google/TouchTime | description:Tells the time through vibration patterns on an Android smartwatch.
+google-github-10-365 | dart-sync-socket | https://github.com/google/dart-sync-socket | description:A Dart VM Native Extension and supporting Dart libraries that provide synchronous socket and HTTP client support.
+google-github-10-366 | identity-toolkit-python-client | https://github.com/google/identity-toolkit-python-client | description:Google Identity Toolkit client library for Python
+google-github-10-367 | recaptcha-java | https://github.com/google/recaptcha-java | description:Updated Feb 19, 2015
+google-github-9-368 | jacs | https://github.com/google/jacs | description:Updated Aug 27, 2015
+google-github-9-369 | dart-json_diff | https://github.com/google/dart-json_diff | description:Updated May 5, 2015
+google-github-9-370 | universal-dash-transmuxer | https://github.com/google/universal-dash-transmuxer | description:Updated Jun 16, 2015
+google-github-9-371 | lab_device_proxy | https://github.com/google/lab_device_proxy | description:Executes adb and idevice commands on a remote host.
+google-github-9-372 | open-vcdiff | https://github.com/google/open-vcdiff | description:An encoder/decoder for the VCDIFF (RFC3284) format
+google-github-9-373 | cloud-cup | https://github.com/google/cloud-cup | description:Updated Mar 2, 2015
+google-github-9-374 | ashier | https://github.com/google/ashier | description:Automating Terminal Interactions with Templates
+google-github-9-375 | wiberg-minimization | https://github.com/google/wiberg-minimization | description:Updated Sep 10, 2013
+google-github-9-376 | comid | https://github.com/google/comid | description:CodeMirror in Dart
+google-github-9-377 | python-gflags | https://github.com/google/python-gflags | description:Automatically exported from code.google.com/p/python-gflags
+google-github-9-378 | dart-gif-encoder | https://github.com/google/dart-gif-encoder | description:Updated Aug 10, 2014
+google-github-8-379 | traceout | https://github.com/google/traceout | description:Updated Mar 21, 2015
+google-github-8-380 | hashing-demo | https://github.com/google/hashing-demo | description:Sample implementation of a proposed C++ hashing framework
+google-github-8-381 | google-visualization-java | https://github.com/google/google-visualization-java | description:Automatically exported from code.google.com/p/google-visualization-java
+google-github-8-382 | epr | https://github.com/google/epr | description:Updated Jun 11, 2015
+google-github-8-383 | googleapps-message-recall | https://github.com/google/googleapps-message-recall | description:Updated May 19, 2014
+google-github-8-384 | libnss-cache | https://github.com/google/libnss-cache | description:a NSS module for reading directory service information for Linux hosts from an indexed, local disk cache
+google-github-8-385 | cloud-cup-android | https://github.com/google/cloud-cup-android | description:Firebase Android client of the a multi device game
+google-github-7-386 | godata | https://github.com/google/godata | description:Updated Jun 5, 2015
+google-github-7-387 | gtm-http-fetcher | https://github.com/google/gtm-http-fetcher | description:Google Toolbox for Mac - HTTP Fetcher
+google-github-7-388 | episodes.dart | https://github.com/google/episodes.dart | description:A framework for timing performance of web apps.
+google-github-7-389 | google-visualization-python | https://github.com/google/google-visualization-python | description:Automatically exported from code.google.com/p/google-visualization-python
+google-github-7-390 | mockable_filesystem.dart | https://github.com/google/mockable_filesystem.dart | description:Utility library that can be used to write code that can in turn be tested with mocked files and directories.
+google-github-7-391 | rct-automation | https://github.com/google/rct-automation | description:Radio automation software (not an official google product)
+google-github-7-392 | linear-book-scanner | https://github.com/google/linear-book-scanner | description:Updated Sep 5, 2014
+google-github-7-393 | generator-goro | https://github.com/google/generator-goro | description:Updated Aug 25, 2015
+google-github-7-394 | ChannelPlate | https://github.com/google/ChannelPlate | description:JavaScript library for postMessage over MessageChannel
+google-github-7-395 | gtm-oauth2 | https://github.com/google/gtm-oauth2 | description:Google Toolbox for Mac - OAuth 2 Controllers
+google-github-7-396 | elfling | https://github.com/google/elfling | description:Updated Nov 29, 2014
+google-github-7-397 | coursebuilder-android-container-module | https://github.com/google/coursebuilder-android-container-module | description:Updated May 7, 2015
+google-github-7-398 | inject.dart | https://github.com/google/inject.dart | description:Common dependency injection related classes
+google-github-7-399 | dart-shapeshift | https://github.com/google/dart-shapeshift | description:Updated Jun 26, 2015
+google-github-7-400 | googlecrisismap | https://github.com/google/googlecrisismap | description:Create, publish, and share maps by combining layers from anywhere on the web.
+google-github-7-401 | coursebuilder-releases | https://github.com/google/coursebuilder-releases | description:Updated Aug 6, 2015
+google-github-7-402 | python_portpicker | https://github.com/google/python_portpicker | description:A module to find available network ports for testing.
+google-github-6-403 | farmhash | https://github.com/google/farmhash | description:Automatically exported from code.google.com/p/farmhash
+google-github-6-404 | cityhash | https://github.com/google/cityhash | description:Automatically exported from code.google.com/p/cityhash
+google-github-6-405 | gojiraw | https://github.com/google/gojiraw | description:GO JIffy-fast RAW-draw
+google-github-6-406 | web_notifications.dart | https://github.com/google/web_notifications.dart | description:Updated Jun 4, 2015
+google-github-6-407 | prerender-test | https://github.com/google/prerender-test | description:Updated Jun 18, 2013
+google-github-6-408 | gdata-objectivec-client | https://github.com/google/gdata-objectivec-client | description:Google Data APIs Objective-C Client Library
+google-github-6-409 | chaps-linux | https://github.com/google/chaps-linux | description:PKCS#11 Implementation for Linux
+google-github-6-410 | gmailsnooze | https://github.com/google/gmailsnooze | description:Updated Mar 12, 2015
+google-github-5-411 | pixelcycle-sample-app | https://github.com/google/pixelcycle-sample-app | description:Updated Nov 26, 2013
+google-github-5-412 | jscin | https://github.com/google/jscin | description:Automatically exported from code.google.com/p/jscin
+google-github-5-413 | error-prone-javac | https://github.com/google/error-prone-javac | description:A mirror of the OpenJDK langtools repository
+google-github-5-414 | zarathustra | https://github.com/google/zarathustra | description:Updated Dec 17, 2014
+google-github-5-415 | shlex | https://github.com/google/shlex | description:Automatically exported from code.google.com/p/go-shlex
+google-github-5-416 | capirca | https://github.com/google/capirca | description:Multi-platform ACL generation system
+google-github-5-417 | google-apputils | https://github.com/google/google-apputils | description:Automatically exported from code.google.com/p/google-apputils-python
+google-github-5-418 | arrow-logo | https://github.com/google/arrow-logo | description:Updated Aug 14, 2015
+google-github-5-419 | capsicum-man-pages | https://github.com/google/capsicum-man-pages | description:Man page updates for Capsicum on Linux
+google-github-5-420 | gae-channel-api.dart | https://github.com/google/gae-channel-api.dart | description:App Engine Channel API for Dart
+google-github-5-421 | gtfs-realtime-bindings-php | https://github.com/google/gtfs-realtime-bindings-php | description:Updated Feb 27, 2015
+google-github-5-422 | gwt-charts | https://github.com/google/gwt-charts | description:Automatically exported from code.google.com/p/gwt-charts
+google-github-5-423 | hilbert | https://github.com/google/hilbert | description:Golang package for mapping values to and from a Hilbert Curve.
+google-github-5-424 | vim-coverage | https://github.com/google/vim-coverage | description:Updated Jul 12, 2015
+google-github-5-425 | vim-ft-vroom | https://github.com/google/vim-ft-vroom | description:Updated Nov 24, 2014
+google-github-5-426 | ct-hackday-schwag | https://github.com/google/ct-hackday-schwag | description:May 7th, 2014 Certificate Transparency Hack Day
+google-github-5-427 | watchpresenter | https://github.com/google/watchpresenter | description:Pass your slides on Google Drive using your phone or watch
+google-github-4-428 | kir-holiday-lights | https://github.com/google/kir-holiday-lights | description:Updated Dec 19, 2014
+google-github-4-429 | transit | https://github.com/google/transit | description:Updated Aug 17, 2015
+google-github-4-430 | szl | https://github.com/google/szl | description:A compiler and runtime for the Sawzall language
+google-github-4-431 | coursebuilder-resources | https://github.com/google/coursebuilder-resources | description:Updated Jul 8, 2015
+google-github-4-432 | gitkit-ruby | https://github.com/google/gitkit-ruby | description:Created Jan 27, 2012
+google-github-4-433 | autopiper | https://github.com/google/autopiper | description:Updated Jan 13, 2015
+google-github-4-434 | calendar-connectors | https://github.com/google/calendar-connectors | description:Automatically exported from code.google.com/p/google-calendar-connectors
+google-github-4-435 | spherical-harmonics | https://github.com/google/spherical-harmonics | description:Spherical harmonics library
+google-github-4-436 | dart-doc_coverage | https://github.com/google/dart-doc_coverage | description:Updated May 6, 2015
+google-github-4-437 | favcolor-server | https://github.com/google/favcolor-server | description:Updated Jan 30, 2014
+google-github-4-438 | cluster-data | https://github.com/google/cluster-data | description:Migrated from code.google.com/p/googleclusterdata
+google-github-4-439 | open-gantry | https://github.com/google/open-gantry | description:Updated Nov 15, 2013
+google-github-4-440 | rust-multihash | https://github.com/google/rust-multihash | description:Updated Apr 22, 2015
+google-github-4-441 | orderedcode | https://github.com/google/orderedcode | description:Updated Jul 6, 2015
+google-github-4-442 | picasa-app-demo | https://github.com/google/picasa-app-demo | description:Updated Nov 20, 2014
+google-github-3-443 | py-ast-utils | https://github.com/google/py-ast-utils | description:Updated Sep 26, 2014
+google-github-3-444 | textfsm | https://github.com/google/textfsm | description:Python module for parsing semi-structured text into python tables.
+google-github-3-445 | appengine-codiad | https://github.com/google/appengine-codiad | description:Codiad on Google App Engine
+google-github-3-446 | gtm-oauth | https://github.com/google/gtm-oauth | description:Google Toolbox for Mac - OAuth Controllers
+google-github-3-447 | voter-info-tool | https://github.com/google/voter-info-tool | description:Automatically exported from code.google.com/p/voter-info-tool
+google-github-3-448 | nixysa | https://github.com/google/nixysa | description:Automatically exported from code.google.com/p/nixysa
+google-github-3-449 | enum_class.dart | https://github.com/google/enum_class.dart | description:Updated Aug 26, 2015
+google-github-3-450 | AppSpeedIndex | https://github.com/google/AppSpeedIndex | description:Updated Dec 4, 2014
+google-github-3-451 | osdetector-gradle-plugin | https://github.com/google/osdetector-gradle-plugin | description:A Gradle plugin that detects the OS name and architecture, providing a uniform classifier to be used in the names of native artifacts.
+google-github-3-452 | oss-bench | https://github.com/google/oss-bench | description:Updated May 7, 2014
+google-github-3-453 | depan | https://github.com/google/depan | description:Automatically exported from code.google.com/p/google-depan
+google-github-3-454 | NLSdata | https://github.com/google/NLSdata | description:Updated Jul 19, 2014
+google-github-3-455 | quiver-log | https://github.com/google/quiver-log | description:Logging utility for dart modeled on log4j/logback
+google-github-3-456 | glmmplus | https://github.com/google/glmmplus | description:Updated Aug 4, 2014
+google-github-3-457 | wheelbarrow | https://github.com/google/wheelbarrow | description:Updated May 27, 2014
+google-github-3-458 | nfc-smart-tag | https://github.com/google/nfc-smart-tag | description:Automatically exported from code.google.com/p/nfc-smart-tag
+google-github-3-459 | coursebuilder-lti-module | https://github.com/google/coursebuilder-lti-module | description:Updated Oct 13, 2014
+google-github-3-460 | pywebsocket | https://github.com/google/pywebsocket | description:WebSocket server and extension for Apache HTTP Server for testing
+google-github-3-461 | virtualdesktops-extension | https://github.com/google/virtualdesktops-extension | description:Updated Aug 7, 2015
+google-github-3-462 | testRunner | https://github.com/google/testRunner | description:testRunner
+google-github-3-463 | coursebuilder-core | https://github.com/google/coursebuilder-core | description:Updated Aug 6, 2015
+google-github-2-464 | zimu | https://github.com/google/zimu | description:Updated Oct 2, 2013
+google-github-2-465 | go-glicko2 | https://github.com/google/go-glicko2 | description:Updated Aug 25, 2014
+google-github-2-466 | music-synthesizer-for-android | https://github.com/google/music-synthesizer-for-android | description:Automatically exported from code.google.com/p/music-synthesizer-for-android
+google-github-2-467 | dart-glfw | https://github.com/google/dart-glfw | description:Updated Aug 19, 2015
+google-github-2-468 | ideal | https://github.com/google/ideal | description:Experimental metaprogramming framework
+google-github-2-469 | identity-toolkit-ruby-client | https://github.com/google/identity-toolkit-ruby-client | description:Google Identity Toolkit client library for Ruby
+google-github-2-470 | cwd_jmp | https://github.com/google/cwd_jmp | description:Updated Mar 7, 2015
+google-github-2-471 | favcolor-ios | https://github.com/google/favcolor-ios | description:Updated Jan 23, 2014
+google-github-2-472 | binplist | https://github.com/google/binplist | description:Binary property list (plist) parser
+google-github-2-473 | refr | https://github.com/google/refr | description:A framework for building reranking models.
+google-github-2-474 | pkcs11test | https://github.com/google/pkcs11test | description:PKCS#11 Test Suite
+google-github-2-475 | gtm-session-fetcher | https://github.com/google/gtm-session-fetcher | description:Google Toolbox for Mac - Session Fetcher
+google-github-2-476 | go-shlex | https://github.com/google/go-shlex | description:Updated Dec 17, 2014
+google-github-2-477 | chrome-opt-out-extension | https://github.com/google/chrome-opt-out-extension | description:DEPRECATED: Keep My Opt-Outs. Replaced by Protect My Choices.
+google-github-2-478 | gaps-support-tool | https://github.com/google/gaps-support-tool | description:Support tool for Google Apps Password Sync (GAPS)
+google-github-2-479 | dart-emacs-plugin-unsupported | https://github.com/google/dart-emacs-plugin-unsupported | description:Unsupported
+google-github-2-480 | easy-gwt-mock | https://github.com/google/easy-gwt-mock | description:An EasyMock-like Mocking Framework for Google Web Toolkit
+google-github-2-481 | mysql | https://github.com/google/mysql | description:Updated Jan 5, 2015
+google-github-2-482 | perf_api.dart | https://github.com/google/perf_api.dart | description:Updated Aug 7, 2014
+google-github-2-483 | puppeteer | https://github.com/google/puppeteer | description:Automatically exported from code.google.com/p/puppeteer
+google-github-2-484 | bocado | https://github.com/google/bocado | description:Updated Dec 12, 2014
+google-github-2-485 | cpython-pt | https://github.com/google/cpython-pt | description:Fork from python/cpython
+google-github-2-486 | async-pkg-dart | https://github.com/google/async-pkg-dart | description:Libraries for working with asynchronous computations in Dart
+google-github-1-487 | built_value.dart | https://github.com/google/built_value.dart | description:Updated Jul 15, 2015
+google-github-1-488 | ferret | https://github.com/google/ferret | description:Updated Aug 28, 2015
+google-github-1-489 | favcolor-findidp | https://github.com/google/favcolor-findidp | description:Updated Mar 10, 2014
+google-github-1-490 | cncmicroscope-cad | https://github.com/google/cncmicroscope-cad | description:CNC MIcroscope CAD files. This is not an official Google product (experimental or otherwise), it is just code that happens to be owned by Google.”
+google-github-1-491 | safevarargs | https://github.com/google/safevarargs | description:Updated Jun 29, 2013
+google-github-1-492 | sirius | https://github.com/google/sirius | description:sirius
+google-github-1-493 | reportlatency | https://github.com/google/reportlatency | description:Automatically exported from code.google.com/p/reportlatency
+google-github-1-494 | android-testing-support-library | https://github.com/google/android-testing-support-library | description:Updated Aug 21, 2015
+google-github-1-495 | vim-ft-bzl | https://github.com/google/vim-ft-bzl | description:Updated Aug 11, 2015
+google-github-1-496 | ggrc-test | https://github.com/google/ggrc-test | description:Updated Jul 1, 2015
+google-github-1-497 | course-builder | https://github.com/google/course-builder | description:Updated Feb 4, 2014
+google-github-1-498 | coursebuilder-learning-analytics | https://github.com/google/coursebuilder-learning-analytics | description:Updated Jul 24, 2014
+google-github-1-499 | consumer-surveys | https://github.com/google/consumer-surveys | description:Updated Aug 31, 2015
+google-github-1-500 | objectfilter | https://github.com/google/objectfilter | description:Automatically exported from code.google.com/p/objectfilter
+google-github-1-501 | network-visualizer-x | https://github.com/google/network-visualizer-x | description:Updated Feb 21, 2015
+google-github-1-502 | appengine-phabricator | https://github.com/google/appengine-phabricator | description:Image for running Phabricator on App Engine
+google-github-1-503 | binexport | https://github.com/google/binexport | description:Updated Sep 2, 2015
+google-github-1-504 | jenkins-flaky-test-report | https://github.com/google/jenkins-flaky-test-report | description:Updated Jul 9, 2014
+google-github-1-505 | service_worker.dart | https://github.com/google/service_worker.dart | description:An implementation of service workers in Dart
+google-github-1-506 | pubsubhubbub | https://github.com/google/pubsubhubbub | description:Updated Sep 29, 2014
+google-github-1-507 | built_json.dart | https://github.com/google/built_json.dart | description:Updated Jul 15, 2015
+google-github-1-508 | cloud-reporting | https://github.com/google/cloud-reporting | description:Updated Sep 3, 2015
+google-github-1-509 | codename-mvsv | https://github.com/google/codename-mvsv | description:Automatically exported from code.google.com/p/codename-mvsv
+google-github-1-510 | ytstatistics-demo | https://github.com/google/ytstatistics-demo | description:Automatically exported from code.google.com/p/ytstatistics-demo
+google-github-1-511 | blkcgroup | https://github.com/google/blkcgroup | description:Automatically exported from code.google.com/p/blkcgroup
+google-github-1-512 | android-studio-check | https://github.com/google/android-studio-check | description:Updated Aug 4, 2015
+google-github-1-513 | rfmt | https://github.com/google/rfmt | description:R source code formatter (not an official Google product)
+google-github-1-514 | python-atfork | https://github.com/google/python-atfork | description:Updated Mar 21, 2015
+google-github-1-515 | dart-gl | https://github.com/google/dart-gl | description:Updated Aug 19, 2015
+google-github-0-516 | ghilbert | https://github.com/google/ghilbert | description:Automatically exported from code.google.com/p/ghilbert
+google-github-0-517 | gdal-autotest2 | https://github.com/google/gdal-autotest2 | description:Updated Apr 16, 2014
+google-github-0-518 | photo-sphere | https://github.com/google/photo-sphere | description:Updated May 16, 2014
+google-github-0-519 | organ-donor-app | https://github.com/google/organ-donor-app | description:Updated Sep 4, 2015
+google-github-0-520 | citizen-x | https://github.com/google/citizen-x | description:Updated Feb 21, 2015
+google-github-0-521 | squires | https://github.com/google/squires | description:Automatically exported from code.google.com/p/squires
+google-github-0-522 | stagehand-server-shelf | https://github.com/google/stagehand-server-shelf | description:Updated May 6, 2015
+google-github-0-523 | jsontoken-tmp | https://github.com/google/jsontoken-tmp | description:Updated Jan 5, 2015
+google-github-0-524 | YouCompleteSubl | https://github.com/google/YouCompleteSubl | description:Updated Mar 26, 2014
+google-github-0-525 | windowtester | https://github.com/google/windowtester | description:Automatically exported from code.google.com/p/windowtester
+google-github-0-526 | stagehand-web-simple | https://github.com/google/stagehand-web-simple | description:Updated May 6, 2015
+google-github-0-527 | coursebuilder-hello-world-module | https://github.com/google/coursebuilder-hello-world-module | description:Updated Apr 17, 2015
+google-github-0-528 | cncmicroscope-code | https://github.com/google/cncmicroscope-code | description:Updated Jun 15, 2015
+google-github-0-529 | stagehand-web-polymer | https://github.com/google/stagehand-web-polymer | description:Updated May 6, 2015
+google-github-0-530 | test-repo | https://github.com/google/test-repo | description:Updated Sep 1, 2015
+google-github-0-531 | Chrome.Docs | https://github.com/google/Chrome.Docs | description:Temporary documentation for developer features in the Chrome beta, canary, and dev channels.
+google-github-0-532 | calenviroscreen | https://github.com/google/calenviroscreen | description:Updated Jun 24, 2015
+google-github-0-533 | stagehand-web-angular | https://github.com/google/stagehand-web-angular | description:Updated May 6, 2015
+google-github-0-534 | stagehand-web-full | https://github.com/google/stagehand-web-full | description:Updated May 6, 2015
+google-github-0-535 | stagehand-package-simple | https://github.com/google/stagehand-package-simple | description:Updated May 6, 2015
+google-github-0-536 | stagehand-server-appengine | https://github.com/google/stagehand-server-appengine | description:Updated May 6, 2015
+google-github-0-537 | tritious | https://github.com/google/tritious | description:Updated Apr 3, 2015
+google-github-0-538 | java-sourcetools | https://github.com/google/java-sourcetools | description:Automatically exported from code.google.com/p/java-sourcetools
+google-github-0-539 | older-mirrored-patches | https://github.com/google/older-mirrored-patches | description:Google's older mirrored patches and tarballs that used to live at http://code.google.com/opensource/patches.html
+google-github-0-540 | digitalassetlinks | https://github.com/google/digitalassetlinks | description:Updated Sep 2, 2015
+google-github-0-541 | wear-screeninfo | https://github.com/google/wear-screeninfo | description:Updated Aug 4, 2015
+google-github-0-542 | wear-displaylock | https://github.com/google/wear-displaylock | description:Updated Aug 4, 2015
+google-github-0-543 | wear-sensors | https://github.com/google/wear-sensors | description:Updated Aug 4, 2015
+google-github-0-544 | o3dtoydefense | https://github.com/google/o3dtoydefense | description:Automatically exported from code.google.com/p/o3dtoydefense
+google-github-0-545 | io-captions-gadget | https://github.com/google/io-captions-gadget | description:Automatically exported from code.google.com/p/io-captions-gadget
+google-github-0-546 | kv-s3105c | https://github.com/google/kv-s3105c | description:Updated Sep 3, 2014
+google-github-0-547 | gin | https://github.com/google/gin | description:Updated Aug 26, 2014
+google-github-0-548 | beta-binomial-fitting | https://github.com/google/beta-binomial-fitting | description:Updated Sep 11, 2013
+google-github-0-549 | rysim | https://github.com/google/rysim | description:RySim is a set of implementations of a simple SEIR simulation system
+google-github-0-550 | reboot-somalia | https://github.com/google/reboot-somalia | description:Updated Feb 21, 2015
+google-github-0-551 | stagehand-console-full | https://github.com/google/stagehand-console-full | description:Updated May 6, 2015
+google-github-0-552 | stagehand-console-simple | https://github.com/google/stagehand-console-simple | description:A stagehand template for a simple console application.
+google-github-0-553 | py-html-contextual-escaping | https://github.com/google/py-html-contextual-escaping | description:Automatically exported from code.google.com/p/py-html-contextual-escaping
+google-github-0-554 | json-sans-eval | https://github.com/google/json-sans-eval | description:Automatically exported from code.google.com/p/json-sans-eval
+google-github-0-555 | typed-data-pkg-dart | https://github.com/google/typed-data-pkg-dart | description:Updated Sep 18, 2014
+google-github-0-556 | dotty | https://github.com/google/dotty | description:Updated Aug 25, 2015
+google-github-0-557 | openhtf | https://github.com/google/openhtf | description:Updated Sep 5, 2015
+google-github-0-558 | git-phabricator-mirror | https://github.com/google/git-phabricator-mirror | description:Mirror source code metadata between git-notes and Phabricator
+google-github-0-559 | play-work | https://github.com/google/play-work | description:Updated Sep 2, 2015
+google-github-0-560 | font-rs | https://github.com/google/font-rs | description:Updated Aug 6, 2015
+google-github-0-561 | simplecfg | https://github.com/google/simplecfg | description:Simple CFG module for ExtendJ
+google-github-0-562 | webkit_inspection_protocol.dart | https://github.com/google/webkit_inspection_protocol.dart | description:A client for the Webkit Inspection Protocol (WIP).
+google-github-0-563 | deliberate | https://github.com/google/deliberate | description:Updated Feb 22, 2015
+google-github-0-564 | librato.dart | https://github.com/google/librato.dart | description:A Dart library to upload metrics data to librato.com.
+google-github-0-565 | MOE-py | https://github.com/google/MOE-py | description:A system for synchronizing repositories

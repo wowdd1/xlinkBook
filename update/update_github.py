@@ -5,6 +5,9 @@
 #data: 2014.12.07
 
 from spider import *
+sys.path.append("..")
+from utils import Utils
+from record import Record
 
 class GithubSpider(Spider):
     lang_list = [
@@ -594,6 +597,59 @@ class GithubSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
+    def getBigCompanyProjects(self):
+        data = {"google" : "https://github.com/google",\
+                "microsoft" : "https://github.com/Microsoft",\
+                "yahoo" : "https://github.com/yahoo",\
+                "facebook" : "https://github.com/facebook",\
+                "twitter" : "https://github.com/twitter",\
+                "aws" : "https://github.com/aws",\
+                "donet" : "https://github.com/dotnet",\
+                "awslabs" : "https://github.com/awslabs",\
+                }
+        for k in data:
+
+            file_name = self.get_file_name("eecs/github/" + k, self.school)
+            file_lines = self.countFileLineNum(file_name)
+            f = self.open_db(file_name + ".tmp")
+            self.count = 0
+
+            print data[k]
+            r = self.requestWithAuth(data[k])
+            soup = BeautifulSoup(r.text)
+            pages = 1
+            for a in soup.find_all('a'):
+                if a['href'].find('page=') != -1 and a.text != "Next":
+                    pages = int(a.text)
+            print pages
+            project_dict = {}
+            for i in range(1, pages + 1):
+                print data[k] + "?page=" + str(i)
+                r = self.requestWithAuth(data[k] + "?page=" + str(i))
+                soup = BeautifulSoup(r.text) 
+                for div in soup.find_all('div', class_="repo-list-item public source"):
+                    stats = div.div.a.text.strip().replace(',', '')
+                    title =  div.h3.a.text.strip()
+                    desc = "description:" + div.p.text.strip().replace('\n', '')
+                    self.count += 1
+                    id = k + '-github-' + stats + "-" + str(self.count) 
+                    record = record = self.get_storage_format(stats, title, "https://github.com" + div.h3.a['href'], desc)
+                    project_dict[id] = Record(record)
+            self.count = 0
+            for item in sorted(project_dict.items(), key=lambda project_dict:int(project_dict[1].get_id().strip()), reverse=True):
+                print item[1].get_id() + " " + item[1].get_title()
+                self.count += 1
+                id = k + '-github-' + item[1].get_id().strip() + "-" + str(self.count)
+                self.write_db(f, id, item[1].get_title().strip(), item[1].get_url().strip(), item[1].get_describe().strip())
+
+            self.close_db(f)
+            if self.count > 0:
+                self.do_upgrade_db(file_name)
+                print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+            else:
+                self.cancel_upgrade(file_name)
+                print "no need upgrade\n"
+
     def doWork(self):
         star = 300
         per_page = 100
@@ -612,5 +668,7 @@ class GithubSpider(Spider):
         print "get user data..."
         self.processGithubiUserData("all", 500, 100)
         self.processGithubiUserData("china", 500, 100)
+
+        self.getBigCompanyProjects()
 start = GithubSpider()
 start.doWork()

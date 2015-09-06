@@ -1,0 +1,20 @@
+donet-github-8289-1 | corefx | https://github.com/dotnet/corefx | description:This repo contains the .NET Core foundational libraries, called CoreFX. It includes classes for collections, file systems, console, XML, async and many others.
+donet-github-5129-2 | coreclr | https://github.com/dotnet/coreclr | description:This repo contains the .NET Core runtime, called CoreCLR, and the base library, called mscorlib. It includes the garbage collector, JIT compiler, base .NET data types and many low-level classes.
+donet-github-3195-3 | roslyn | https://github.com/dotnet/roslyn | description:The .NET Compiler Platform ("Roslyn") provides open-source C# and Visual Basic compilers with rich code analysis APIs.
+donet-github-1113-4 | orleans | https://github.com/dotnet/orleans | description:Orleans - Distributed Virtual Actor Model
+donet-github-834-5 | home | https://github.com/dotnet/home | description:This is the hub for all the projects that are part of the .NET Foundation. MD files in the projects folder feed the content on the .NET Foundation website
+donet-github-818-6 | llilc | https://github.com/dotnet/llilc | description:This repo contains LLILC, an LLVM based compiler for .NET Core. It includes a set of cross-platform .NET code generation tools that enables compilation of MSIL byte code to LLVM supported platforms.
+donet-github-631-7 | core | https://github.com/dotnet/core | description:Home repository for .NET Core
+donet-github-504-8 | wcf | https://github.com/dotnet/wcf | description:This repo contains the client-oriented WCF libraries that enable applications built on .NET Core to communicate with WCF services.
+donet-github-444-9 | codeformatter | https://github.com/dotnet/codeformatter | description:Tool that uses Roslyn to automatically rewrite the source to follow our coding styles
+donet-github-365-10 | buildtools | https://github.com/dotnet/buildtools | description:Build tools that are necessary for building the .NET Core projects
+donet-github-103-11 | corefxlab | https://github.com/dotnet/corefxlab | description:This repo is for experimentation and exploring new ideas that may or may not make it into the main corefx repo.
+donet-github-75-12 | corefx-progress | https://github.com/dotnet/corefx-progress | description:We'll use this repo to allow folks to track the progress we're making toward open sourcing all the libraries.
+donet-github-56-13 | apireviews | https://github.com/dotnet/apireviews | description:This repository contains the notes and API differences that we reviewed.
+donet-github-20-14 | roslyn-analyzers | https://github.com/dotnet/roslyn-analyzers | description:Updated Sep 4, 2015
+donet-github-17-15 | dotnet.github.io | https://github.com/dotnet/dotnet.github.io | description:The source for the dotnet.github.io site
+donet-github-17-16 | dotnet-ci | https://github.com/dotnet/dotnet-ci | description:Repository containing scripting for the dotnet-ci Jenkins instance.
+donet-github-16-17 | swag | https://github.com/dotnet/swag | description:Artwork used to create .NET Foundation swag (T-Shirts, Mugs etc)
+donet-github-14-18 | core-docs | https://github.com/dotnet/core-docs | description:.NET Core documentation (work in progress).
+donet-github-2-19 | corefx-testdata | https://github.com/dotnet/corefx-testdata | description:Test assets that are required by the corefx repository, and referenced as nuget packages.
+donet-github-2-20 | port-to-core | https://github.com/dotnet/port-to-core | description:This repo contains portability analysis reports.

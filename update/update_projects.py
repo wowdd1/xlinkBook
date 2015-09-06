@@ -13,6 +13,30 @@ class ProjectsSpider(Spider):
        self.getDARPAProjects() 
        self.getDARPAOpenProjects()
        self.getAIProjects()
+       self.getDotNetFoundationProjects()
+
+    def getDotNetFoundationProjects(self):
+        r = requests.get("http://www.dotnetfoundation.org/projects")
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "DotNetFoundation", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for td in soup.find_all("td", class_="project-cell"):
+            link = "http://www.dotnetfoundation.org" + td.div.span.a['href']
+            title = td.text.strip()
+            self.count += 1
+            self.write_db(f, 'DotNetFoundation-project-' + str(self.count), title, link, '')
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getAIProjects(self):
         r = requests.get("https://en.wikipedia.org/wiki/List_of_artificial_intelligence_projects")
