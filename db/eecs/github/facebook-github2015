@@ -1,0 +1,132 @@
+facebook-github-27367-1 | react | https://github.com/facebook/react | description:A declarative, efficient, and flexible JavaScript library for building user interfaces.
+facebook-github-17228-2 | react-native | https://github.com/facebook/react-native | description:A framework for building native apps with React.
+facebook-github-12519-3 | hhvm | https://github.com/facebook/hhvm | description:A virtual machine designed for executing programs written in Hack and PHP.
+facebook-github-12507-4 | pop | https://github.com/facebook/pop | description:An extensible iOS and OS X animation library, useful for physics-based interactions.
+facebook-github-8267-5 | immutable-js | https://github.com/facebook/immutable-js | description:Immutable persistent data collections for Javascript which increase efficiency and simplicity.
+facebook-github-7997-6 | flux | https://github.com/facebook/flux | description:Application Architecture for Building User Interfaces
+facebook-github-5922-7 | fresco | https://github.com/facebook/fresco | description:An Android library for managing images and the memory they use.
+facebook-github-5598-8 | Shimmer | https://github.com/facebook/Shimmer | description:An easy way to add a simple, shimmering effect to any view in an iOS app.
+facebook-github-5592-9 | AsyncDisplayKit | https://github.com/facebook/AsyncDisplayKit | description:Smooth asynchronous user interfaces for iOS apps.
+facebook-github-5265-10 | folly | https://github.com/facebook/folly | description:An open-source C++ library developed and used at Facebook.
+facebook-github-5239-11 | flow | https://github.com/facebook/flow | description:Adds static typing to JavaScript to improve developer productivity and code quality.
+facebook-github-5012-12 | facebook-ios-sdk | https://github.com/facebook/facebook-ios-sdk | description:Used to integrate iOS apps with Facebook Platform.
+facebook-github-4993-13 | osquery | https://github.com/facebook/osquery | description:SQL powered operating system instrumentation, monitoring, and analytics.
+facebook-github-4776-14 | xctool | https://github.com/facebook/xctool | description:A replacement for Apple's xcodebuild that makes it easier to build and test iOS or OSX apps.
+facebook-github-4031-15 | relay | https://github.com/facebook/relay | description:Relay is a JavaScript framework for building data-driven React applications.
+facebook-github-4030-16 | infer | https://github.com/facebook/infer | description:A static analyzer for Java, C and Objective-C
+facebook-github-4000-17 | rocksdb | https://github.com/facebook/rocksdb | description:A library that provides an embeddable, persistent key-value store for fast storage.
+facebook-github-3854-18 | KVOController | https://github.com/facebook/KVOController | description:Simple, modern, thread-safe key-value observing for iOS and OS X.
+facebook-github-3795-19 | presto | https://github.com/facebook/presto | description:Distributed SQL query engine for running interactive analytic queries against big data sources.
+facebook-github-3775-20 | Tweaks | https://github.com/facebook/Tweaks | description:An easy way to fine-tune, and adjust parameters for iOS apps in development.
+facebook-github-3705-21 | chisel | https://github.com/facebook/chisel | description:Chisel is a collection of LLDB commands to assist debugging iOS apps.
+facebook-github-3430-22 | facebook-android-sdk | https://github.com/facebook/facebook-android-sdk | description:Used to integrate Android apps with Facebook Platform.
+facebook-github-3177-23 | stetho | https://github.com/facebook/stetho | description:Stetho is a debug bridge for Android applications, enabling the powerful Chrome Developer Tools and much more.
+facebook-github-3109-24 | proxygen | https://github.com/facebook/proxygen | description:A collection of C++ HTTP libraries including an easy to use HTTP server.
+facebook-github-3022-25 | watchman | https://github.com/facebook/watchman | description:Watches files and records, or triggers actions, when they change.
+facebook-github-2879-26 | jest | https://github.com/facebook/jest | description:Painless JavaScript Unit Testing built on top of the Jasmine test framework.
+facebook-github-2855-27 | origami | https://github.com/facebook/origami | description:A Quartz Composer framework that enables interactive design prototyping without programming.
+facebook-github-2852-28 | css-layout | https://github.com/facebook/css-layout | description:Reimplementation of CSS layout using pure JavaScript
+facebook-github-2669-29 | nuclide | https://github.com/facebook/nuclide | description:An open IDE for web and native mobile development, built on top of Atom
+facebook-github-2503-30 | augmented-traffic-control | https://github.com/facebook/augmented-traffic-control | description:Augmented Traffic Control: A tool to simulate network conditions
+facebook-github-2482-31 | PathPicker | https://github.com/facebook/PathPicker | description:PathPicker accepts a wide range of input -- output from git commands, grep results, searches -- pretty much anything. After parsing the input, PathPicker presents you with a nice UI to select which files you're interested in. After that you can open them in your favorite editor or execute arbitrary commands.
+facebook-github-2473-32 | rebound | https://github.com/facebook/rebound | description:A Java library that models spring dynamics and adds real world physics to your app.
+facebook-github-2326-33 | componentkit | https://github.com/facebook/componentkit | description:A React-inspired view framework for iOS.
+facebook-github-1842-34 | Haxl | https://github.com/facebook/Haxl | description:A Haskell library that simplifies access to remote data, such as databases or web-based services.
+facebook-github-1666-35 | buck | https://github.com/facebook/buck | description:A build system that encourages the creation of small, reusable modules.
+facebook-github-1647-36 | fb-flo | https://github.com/facebook/fb-flo | description:A Chrome extension that lets you modify running apps without reloading them.
+facebook-github-1458-37 | pfff | https://github.com/facebook/pfff | description:Tools for code analysis, visualizations, or style-preserving source transformation.
+facebook-github-1418-38 | ios-snapshot-test-case | https://github.com/facebook/ios-snapshot-test-case | description:Snapshot view unit tests for iOS
+facebook-github-1400-39 | fixed-data-table | https://github.com/facebook/fixed-data-table | description:A React table component designed to allow presenting thousands of rows of data.
+facebook-github-1387-40 | graphql | https://github.com/facebook/graphql | description:GraphQL is a query language and execution engine tied to any backend service.
+facebook-github-1375-41 | conceal | https://github.com/facebook/conceal | description:Conceal provides easy Android APIs for performing fast encryption and authentication of data.
+facebook-github-1370-42 | react-devtools | https://github.com/facebook/react-devtools | description:An extension that allows inspection of React component hierarchy in Chrome Developer Tools.
+facebook-github-1266-43 | regenerator | https://github.com/facebook/regenerator | description:Source transformer enabling ECMAScript 6 generator functions in JavaScript-of-today.
+facebook-github-1239-44 | flashcache | https://github.com/facebook/flashcache | description:A general purpose, write-back block cache for Linux.
+facebook-github-1213-45 | mcrouter | https://github.com/facebook/mcrouter | description:Mcrouter is a memcached protocol router for scaling memcached deployments.
+facebook-github-1191-46 | libphenom | https://github.com/facebook/libphenom | description:An eventing framework for building high performance and high scalability systems in C.
+facebook-github-1171-47 | wdt | https://github.com/facebook/wdt | description:Warp speed Data Transfer (WDT) is an embeddedable library (and command line tool) aiming to transfer data between 2 systems as fast as possible over multiple TCP paths.
+facebook-github-1023-48 | xhp-lib | https://github.com/facebook/xhp-lib | description:Class libraries for XHP. XHP is a PHP5 extension and HHVM feature that augments the syntax of the language such that XML document fragments become valid PHP expressions.
+facebook-github-1000-49 | shimmer-android | https://github.com/facebook/shimmer-android | description:An easy, flexible way to add a shimmering effect to any view in an Android app.
+facebook-github-975-50 | device-year-class | https://github.com/facebook/device-year-class | description:A library that analyzes an Android device's specifications and calculates which year the device would be considered "high end”.
+facebook-github-899-51 | php-webdriver | https://github.com/facebook/php-webdriver | description:A php client for webdriver.
+facebook-github-860-52 | network-connection-class | https://github.com/facebook/network-connection-class | description:Listen to current network traffic in the app and categorize the quality of the network.
+facebook-github-839-53 | facebook-php-sdk-v4 | https://github.com/facebook/facebook-php-sdk-v4 | description:The Facebook SDK for PHP provides a native interface to the Graph API and Facebook Login. https://developers.facebook.com/docs/php
+facebook-github-828-54 | fishhook | https://github.com/facebook/fishhook | description:A library that enables dynamically rebinding symbols in Mach-O binaries running on iOS.
+facebook-github-798-55 | planout | https://github.com/facebook/planout | description:PlanOut is a library and interpreter for designing online experiments.
+facebook-github-730-56 | rebound-js | https://github.com/facebook/rebound-js | description:Spring dynamics in JavaScript.
+facebook-github-727-57 | fbcunn | https://github.com/facebook/fbcunn | description:Facebook's extensions to torch/cunn.
+facebook-github-655-58 | codemod | https://github.com/facebook/codemod | description:Codemod is a tool/library to assist you with large-scale codebase refactors that can be partially automated but still require human oversight and occasional intervention. Codemod was developed at Facebook and released as open source.
+facebook-github-652-59 | fb-adb | https://github.com/facebook/fb-adb | description:A better shell for Android devices
+facebook-github-592-60 | iTorch | https://github.com/facebook/iTorch | description:IPython kernel for Torch with visualization and plotting
+facebook-github-536-61 | fbthrift | https://github.com/facebook/fbthrift | description:Facebook's branch of Apache Thrift, including a new C++ server.
+facebook-github-528-62 | flint | https://github.com/facebook/flint | description:An open-source lint program for C++ developed by, and used at Facebook.
+facebook-github-409-63 | swift | https://github.com/facebook/swift | description:An annotation-based Java library for creating Thrift serializable types and services.
+facebook-github-389-64 | warp | https://github.com/facebook/warp | description:A fast preprocessor for C and C++
+facebook-github-379-65 | fatal | https://github.com/facebook/fatal | description:Fatal is a library for fast prototyping software in modern C++. It provides facilities heavily based on template meta-programming, while keeping most of the complexity under-the-hood, to enhance the expressive power of C++.
+facebook-github-368-66 | jstransform | https://github.com/facebook/jstransform | description:A simple utility for pluggable JS syntax transforms using the esprima parser.
+facebook-github-360-67 | nifty | https://github.com/facebook/nifty | description:Thrift on Netty
+facebook-github-326-68 | shortcuts-for-framer | https://github.com/facebook/shortcuts-for-framer | description:A collection of useful functions to make mobile prototyping with Framer easier.
+facebook-github-306-69 | jcommon | https://github.com/facebook/jcommon | description:concurrency, collections, zookeeper, stats/analytics, config, testing, etc
+facebook-github-305-70 | FBFetchedResultsController | https://github.com/facebook/FBFetchedResultsController | description:A drop-in replacement for NSFetchedResultsController built to work around the fact that NSFetchedResultsController does not work with parent/child contexts.
+facebook-github-298-71 | proguard | https://github.com/facebook/proguard | description:A faster fork of ProGuard. Based off of ProGuard 4.11 (http://sourceforge.net/p/proguard/code/ci/proguard4.11/tree/)
+facebook-github-294-72 | fblualib | https://github.com/facebook/fblualib | description:Facebook libraries and utilities for Lua
+facebook-github-267-73 | mysql-5.6 | https://github.com/facebook/mysql-5.6 | description:Facebook's branch of the Oracle MySQL v5.6 database
+facebook-github-267-74 | liblogfaf | https://github.com/facebook/liblogfaf | description:A library that logs messages using non-blocking UDP datagrams.
+facebook-github-244-75 | linkbench | https://github.com/facebook/linkbench | description:Facebook Graph Benchmark
+facebook-github-239-76 | pyaib | https://github.com/facebook/pyaib | description:An easy to use Python Framework (that uses gevent) for writing IRC Bots.
+facebook-github-237-77 | open-graph-protocol | https://github.com/facebook/open-graph-protocol | description:Updated Jul 28, 2015
+facebook-github-221-78 | hack-codegen | https://github.com/facebook/hack-codegen | description:Library to programatically generate Hack code and write it to signed files
+facebook-github-209-79 | jsx | https://github.com/facebook/jsx | description:The JSX specification is a XML-like syntax extension to ECMAScript.
+facebook-github-188-80 | emitter | https://github.com/facebook/emitter | description:A JS EventEmitter foundation for evented code
+facebook-github-188-81 | pyre2 | https://github.com/facebook/pyre2 | description:Python wrapper for RE2
+facebook-github-183-82 | atosl | https://github.com/facebook/atosl | description:A partial replacement for Apple's atos tool for converting addresses within a binary file to symbols.
+facebook-github-169-83 | sparts | https://github.com/facebook/sparts | description:Prototype python services with as little code as possible
+facebook-github-169-84 | chef-utils | https://github.com/facebook/chef-utils | description:Utilities related to Chef
+facebook-github-161-85 | facebook-clang-plugins | https://github.com/facebook/facebook-clang-plugins | description:Plugins to clang-analyzer and clang-frontend
+facebook-github-152-86 | fbjs | https://github.com/facebook/fbjs | description:A collection of utility libraries used by other Facebook JS projects.
+facebook-github-150-87 | Stack-RNN | https://github.com/facebook/Stack-RNN | description:This is the code used for the paper "Inferring algorithmic patterns with a stack augmented recurrent network", by Armand Joulin and Tomas Mikolov.
+facebook-github-146-88 | jscodeshift | https://github.com/facebook/jscodeshift | description:A JavaScript codemod toolkit.
+facebook-github-138-89 | eyescream | https://github.com/facebook/eyescream | description:natural image generation using ConvNets
+facebook-github-138-90 | FBMock | https://github.com/facebook/FBMock | description:PHP Mocks Framework
+facebook-github-135-91 | instruments-without-delay | https://github.com/facebook/instruments-without-delay | description:Changes Apple's Instruments tool to remove the 1 second delay in UIAHost.performTaskWithPathArgumentsTimeout
+facebook-github-130-92 | fboss | https://github.com/facebook/fboss | description:Facebook Open Switching System Software for controlling network switches.
+facebook-github-123-93 | puewue-frontend | https://github.com/facebook/puewue-frontend | description:The front-end to a simple application that displays Facebook's datacenter power consumption and other information.
+facebook-github-120-94 | thpp | https://github.com/facebook/thpp | description:TH++, C++ interface to the torch7 TH library
+facebook-github-118-95 | facebook-php-ads-sdk | https://github.com/facebook/facebook-php-ads-sdk | description:An SDK built to facilitate application development for Facebook Ads API.
+facebook-github-115-96 | facebook-python-ads-sdk | https://github.com/facebook/facebook-python-ads-sdk | description:An SDK built to facilitate application development for Facebook Ads API.
+facebook-github-103-97 | fbcuda | https://github.com/facebook/fbcuda | description:Facebook's CUDA extensions.
+facebook-github-102-98 | fbnn | https://github.com/facebook/fbnn | description:Facebook's extensions to torch/nn.
+facebook-github-102-99 | ThreatExchange | https://github.com/facebook/ThreatExchange | description:Share threat information with vetted partners
+facebook-github-102-100 | IT-CPE | https://github.com/facebook/IT-CPE | description:Facebook's IT - Client Platform Engineering tools. Some of the tools we have written to help manage our fleet of client systems.
+facebook-github-98-101 | vim-flow | https://github.com/facebook/vim-flow | description:A vim plugin for Flow
+facebook-github-97-102 | react-native-fbsdk | https://github.com/facebook/react-native-fbsdk | description:A wrapper around the iOS Facebook SDK for React Native apps. Provides access to login, sharing, graph requests, etc.
+facebook-github-94-103 | react-native-applinks | https://github.com/facebook/react-native-applinks | description:AppLinks support for React Native.
+facebook-github-88-104 | node-haste | https://github.com/facebook/node-haste | description:A dependency management system for static resources for node.js.
+facebook-github-88-105 | puewue-backend | https://github.com/facebook/puewue-backend | description:The back-end to a simple application that displays Facebook's datacenter power consumption and other information.
+facebook-github-85-106 | openbmc | https://github.com/facebook/openbmc | description:OpenBMC is an open software framework to build a complete Linux image for a Board Management Controller (BMC).
+facebook-github-75-107 | fbpca | https://github.com/facebook/fbpca | description:Fast Randomized PCA/SVD
+facebook-github-71-108 | ds2 | https://github.com/facebook/ds2 | description:Debug server for lldb.
+facebook-github-71-109 | clang-as-ios-dylib | https://github.com/facebook/clang-as-ios-dylib | description:A workaround to build iOS dynamic libraries from Xcode.
+facebook-github-64-110 | taste-tester | https://github.com/facebook/taste-tester | description:Software to manage a chef-zero instance and use it to test changes on production servers.
+facebook-github-59-111 | hive-dwrf | https://github.com/facebook/hive-dwrf | description:DWRF file format for Hive
+facebook-github-59-112 | grocery-delivery | https://github.com/facebook/grocery-delivery | description:The Grocery Delivery utility for managing cookbook uploads to distributed Chef backends.
+facebook-github-58-113 | SCRNNs | https://github.com/facebook/SCRNNs | description:This is a self contained software accompanying the paper titled: Learning Longer Memory in Recurrent Neural Networks: http://arxiv.org/abs/1412.7753.
+facebook-github-57-114 | hblog | https://github.com/facebook/hblog | description:A log parser for clusters
+facebook-github-46-115 | pose-aligned-deep-networks | https://github.com/facebook/pose-aligned-deep-networks | description:Pose Aligned Networks for Deep Attribute Modeling matlab code used for the publication here: http://arxiv.org/abs/1311.5591
+facebook-github-44-116 | gnlpy | https://github.com/facebook/gnlpy | description:A generic netlink library for python.
+facebook-github-43-117 | C3D | https://github.com/facebook/C3D | description:C3D is a modified version of BVLC caffe to support 3D ConvNets.
+facebook-github-34-118 | wangle | https://github.com/facebook/wangle | description:Wangle provides a full featured, high performance C++ futures implementation.Going forward, Wangle will also provide a set of common client/server abstractions for building services in a consistent, modular, and composable way.
+facebook-github-28-119 | dfuse | https://github.com/facebook/dfuse | description:dfuse is a binding for the fuse filesystem library written in D.
+facebook-github-27-120 | tac_plus | https://github.com/facebook/tac_plus | description:A Tacacs+ Daemon tested on Linux (CentOS) to run AAA via TACACS+ Protocol via IPv4 and IPv6.
+facebook-github-23-121 | caf8teen | https://github.com/facebook/caf8teen | description:Updated Mar 5, 2014
+facebook-github-21-122 | fbtorch | https://github.com/facebook/fbtorch | description:Facebook's extensions to torch/torch7. This is a preliminary release.
+facebook-github-21-123 | NAMAS | https://github.com/facebook/NAMAS | description:Neural Attention Model for Abstractive Summarization
+facebook-github-19-124 | CParser | https://github.com/facebook/CParser | description:A compact C preprocessor and declaration parser written in pure Lua
+facebook-github-18-125 | squangle | https://github.com/facebook/squangle | description:SQuangLe is a C++ API for accessing MySQL servers
+facebook-github-17-126 | between-meals | https://github.com/facebook/between-meals | description:A library to provide calculations between Chef diffs.
+facebook-github-14-127 | android-jsc | https://github.com/facebook/android-jsc | description:Scripts for building JSC for Android
+facebook-github-14-128 | bistro | https://github.com/facebook/bistro | description:Bistro is a flexible distributed scheduler, a high-performance framework supporting multiple paradigms while retaining ease of configuration, management, and monitoring.
+facebook-github-13-129 | Recipes-for-AutoPkg | https://github.com/facebook/Recipes-for-AutoPkg | description:Collection of AutoPkg recipes authored at Facebook.
+facebook-github-13-130 | facebook-oss-pom | https://github.com/facebook/facebook-oss-pom | description:Base POM for facebook open source projects deployed to oss.sonatype.org
+facebook-github-7-131 | libafdt | https://github.com/facebook/libafdt | description:LIBrary for Asynchronous File Descriptor Transfer
+facebook-github-2-132 | fb-homebrew-tap | https://github.com/facebook/fb-homebrew-tap | description:a Homebrew tap for software maintained by Facebook
