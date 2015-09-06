@@ -1,0 +1,71 @@
+linkedin-github-2719-1 | hopscotch | https://github.com/linkedin/hopscotch | description:A framework to make it easy for developers to add product tours to their pages.
+linkedin-github-1973-2 | dustjs | https://github.com/linkedin/dustjs | description:Asynchronous Javascript templating for the browser and server
+linkedin-github-1003-3 | pinot | https://github.com/linkedin/pinot | description:A realtime distributed OLAP datastore
+linkedin-github-938-4 | rest.li | https://github.com/linkedin/rest.li | description:Rest.li is a REST+JSON framework for building robust, scalable service architectures using dynamic discovery and simple asynchronous APIs.
+linkedin-github-792-5 | indextank-engine | https://github.com/linkedin/indextank-engine | description:Indexing engine for IndexTank
+linkedin-github-768-6 | LIExposeController | https://github.com/linkedin/LIExposeController | description:Expose style navigation for iOS apps
+linkedin-github-765-7 | databus | https://github.com/linkedin/databus | description:Source-agnostic distributed change data capture system
+linkedin-github-592-8 | camus | https://github.com/linkedin/camus | description:LinkedIn's Kafka to HDFS pipeline.
+linkedin-github-574-9 | datafu | https://github.com/linkedin/datafu | description:Hadoop library for large-scale data processing, now an Apache Incubator project
+linkedin-github-479-10 | cleo | https://github.com/linkedin/cleo | description:A flexible, partial, out-of-order and real-time typeahead search library
+linkedin-github-467-11 | sensei | https://github.com/linkedin/sensei | description:distributed realtime searchable database
+linkedin-github-447-12 | inject | https://github.com/linkedin/inject | description:AMD and CJS dependency management in the browser
+linkedin-github-416-13 | Hakawai | https://github.com/linkedin/Hakawai | description:A powerful, extensible UITextView.
+linkedin-github-395-14 | Selene | https://github.com/linkedin/Selene | description:iOS library which schedules the execution of tasks on a background fetch
+linkedin-github-386-15 | indextank-service | https://github.com/linkedin/indextank-service | description:The API, BackOffice, Storefront, and Nebulizer for IndexTank
+linkedin-github-326-16 | parseq | https://github.com/linkedin/parseq | description:Asynchronous Java made easier
+linkedin-github-297-17 | ml-ease | https://github.com/linkedin/ml-ease | description:ADMM based large scale logistic regression
+linkedin-github-276-18 | venus.js | https://github.com/linkedin/venus.js | description:where bugs go to die
+linkedin-github-257-19 | FeatureFu | https://github.com/linkedin/FeatureFu | description:Updated Apr 23, 2015
+linkedin-github-190-20 | Fiber | https://github.com/linkedin/Fiber | description:Lightweight JavaScript prototypal inheritance model
+linkedin-github-186-21 | Cubert | https://github.com/linkedin/Cubert | description:Updated Aug 24, 2015
+linkedin-github-185-22 | qark | https://github.com/linkedin/qark | description:Updated Aug 17, 2015
+linkedin-github-158-23 | white-elephant | https://github.com/linkedin/white-elephant | description:Hadoop log aggregator and dashboard
+linkedin-github-158-24 | helix | https://github.com/linkedin/helix | description:Building distributed systems made easy.
+linkedin-github-156-25 | gobblin | https://github.com/linkedin/gobblin | description:Universal data ingestion framework for Hadoop.
+linkedin-github-133-26 | JTune | https://github.com/linkedin/JTune | description:A high precision Java CMS optimizer
+linkedin-github-110-27 | naarad | https://github.com/linkedin/naarad | description:Naarad is a highly configurable system analysis tool that parses and plots timeseries data for better visual correlation. Naarad was built to help in performance analysis and investigations.
+linkedin-github-106-28 | dustjs-helpers | https://github.com/linkedin/dustjs-helpers | description:Helpers for dustjs-linkedin
+linkedin-github-99-29 | archetype | https://github.com/linkedin/archetype | description:Archetype is a Compass/Sass based framework for authoring configurable, composable UI components and patterns.
+linkedin-github-92-30 | Burrow | https://github.com/linkedin/Burrow | description:Kafka Consumer Lag Checking
+linkedin-github-79-31 | Isaac | https://github.com/linkedin/Isaac | description:This library parses data from JSON objects into NSObject models without needing to write parsing code for each model.
+linkedin-github-76-32 | Zopkio | https://github.com/linkedin/Zopkio | description:A Functional and Performance Test Framework for Distributed Systems
+linkedin-github-75-33 | sepia | https://github.com/linkedin/sepia | description:Sepia is a VCR-like module for node.js that records HTTP interactions, then plays them back exactly like the first time they were invoked
+linkedin-github-74-34 | Backbone.TableView | https://github.com/linkedin/Backbone.TableView | description:Backbone View to render collections as tables
+linkedin-github-70-35 | api-get-started | https://github.com/linkedin/api-get-started | description:LinkedIn REST API Getting Started Tutorial
+linkedin-github-65-36 | goavro | https://github.com/linkedin/goavro | description:Updated Sep 2, 2015
+linkedin-github-60-37 | pyexchange | https://github.com/linkedin/pyexchange | description:Python wrapper for Microsoft Exchange
+linkedin-github-55-38 | linkedin-utils | https://github.com/linkedin/linkedin-utils | description:Base utilities shared by all linkedin open source projects
+linkedin-github-54-39 | linkedin-zookeeper | https://github.com/linkedin/linkedin-zookeeper | description:This project provides utilities and wrappers around ZooKeeper
+linkedin-github-50-40 | sysops-api | https://github.com/linkedin/sysops-api | description:sysops-api is a framework designed to provide visability from tens of thousands of machines in seconds.
+linkedin-github-44-41 | linkedin-gradle-plugin-for-apache-hadoop | https://github.com/linkedin/linkedin-gradle-plugin-for-apache-hadoop | description:Updated Sep 4, 2015
+linkedin-github-36-42 | rest.li-api-hub | https://github.com/linkedin/rest.li-api-hub | description:API Hub is a web UI for browsing and searching a catalog of Rest.li APIs.
+linkedin-github-32-43 | Spyglass | https://github.com/linkedin/Spyglass | description:A library for mentions on Android
+linkedin-github-30-44 | gradle-plugins | https://github.com/linkedin/gradle-plugins | description:This project contains a set of useful gradle plugins
+linkedin-github-30-45 | RookBoom | https://github.com/linkedin/RookBoom | description:A web application for creating meetings.
+linkedin-github-27-46 | mobster | https://github.com/linkedin/mobster | description:Mobster is a tool that can help you get deeper understanding into the performance of mobile web applications on real mobile devices
+linkedin-github-24-47 | play-testng-plugin | https://github.com/linkedin/play-testng-plugin | description:TestNG runner for the Play Framework 2.2.0
+linkedin-github-22-48 | vagrant-autodns | https://github.com/linkedin/vagrant-autodns | description:Vagrant plugin for automagically managing guest DNS
+linkedin-github-21-49 | lafayette | https://github.com/linkedin/lafayette | description:Lafayette is a system to store various email abuse reports sent in ARF.
+linkedin-github-21-50 | python-avro-json-serializer | https://github.com/linkedin/python-avro-json-serializer | description:Serializes data into a JSON format using AVRO schema.
+linkedin-github-20-51 | dmarc-msys | https://github.com/linkedin/dmarc-msys | description:This set of scripts in Lua implements DMARC policy checking and reporting for the Message Systems MTA products, a popular extendable commercial MTA.
+linkedin-github-20-52 | linkedin.github.com | https://github.com/linkedin/linkedin.github.com | description:Listing of all our public GitHub projects.
+linkedin-github-20-53 | talkin | https://github.com/linkedin/talkin | description:TalkIn is an interface providing safe and easy unidirectional cross-document communication.
+linkedin-github-20-54 | sin | https://github.com/linkedin/sin | description:Updated Jan 19, 2012
+linkedin-github-19-55 | atscppapi | https://github.com/linkedin/atscppapi | description:This library provides wrappers around the existing Apache Traffic Server API which will vastly simplify the process of writing Apache Traffic Server plugins.
+linkedin-github-17-56 | datacl | https://github.com/linkedin/datacl | description:A collection of efficient utilities for a data scientist.
+linkedin-github-17-57 | insframe | https://github.com/linkedin/insframe | description:Central hub for distributing web apps to multiple browsers on multiple environments
+linkedin-github-15-58 | dustjs-filters-secure | https://github.com/linkedin/dustjs-filters-secure | description:extend dustjs-linkedin to enhance the filters methods
+linkedin-github-13-59 | glu-scripts-contrib | https://github.com/linkedin/glu-scripts-contrib | description:This project contains glu scripts that have been contributed by the community
+linkedin-github-12-60 | bowser | https://github.com/linkedin/bowser | description:Extensible language parser with Python-like syntax. Written in Java and antlr.
+linkedin-github-10-61 | Idiomatic-JSLint | https://github.com/linkedin/Idiomatic-JSLint | description:Updated May 30, 2013
+linkedin-github-8-62 | adfullssl | https://github.com/linkedin/adfullssl | description:AdFullSsl is a tool that can automatically detect SSL non-compliant ads and fix them
+linkedin-github-8-63 | simoorg | https://github.com/linkedin/simoorg | description:Simoorg
+linkedin-github-5-64 | rest.li-sbt-plugin | https://github.com/linkedin/rest.li-sbt-plugin | description:rest.li-sbt-plugin
+linkedin-github-4-65 | MTBT | https://github.com/linkedin/MTBT | description:Updated Jan 16, 2015
+linkedin-github-3-66 | inject-bower | https://github.com/linkedin/inject-bower | description:Please use linkedin/inject
+linkedin-github-2-67 | rest.li-skeleton.g8 | https://github.com/linkedin/rest.li-skeleton.g8 | description:Rest.li tool for generating skeleton rest.li projects.
+linkedin-github-1-68 | play-parseq | https://github.com/linkedin/play-parseq | description:Updated Sep 1, 2015
+linkedin-github-0-69 | naarad-examples | https://github.com/linkedin/naarad-examples | description:Example logs and configs for naarad
+linkedin-github-0-70 | html5-presentation | https://github.com/linkedin/html5-presentation | description:Code for the "Building a Performant HTML5 App" presentation at http://www.meetup.com/SF-Web-Performance-Group/events/71651452/
+linkedin-github-0-71 | xcdistribute | https://github.com/linkedin/xcdistribute | description:Updated Jan 31, 2014
