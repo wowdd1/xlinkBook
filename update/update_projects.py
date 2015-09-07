@@ -18,6 +18,40 @@ class ProjectsSpider(Spider):
        self.getDotNetFoundationProjects()
 
        self.getMicrosoftResearch()
+       self.getAICProjects()
+    def getAICProjects(self):
+        r = requests.get('http://www.ai.sri.com/project_list/mode=All&sort=titleAsc')
+        soup = BeautifulSoup(r.text)
+        pages = 0
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "AIC", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for a in soup.find_all('a'):
+            if a.text.strip() == 'End':
+                pages = int(a['href'][len(a['href']) - 1 : ])
+
+        for page in range(0, pages + 1):
+            r2 = requests.get('http://www.ai.sri.com/project_list/mode=All&sort=titleAsc&page=' + str(page))
+            soup2 = BeautifulSoup(r2.text)
+            for td in soup2.find_all('td', class_='project'):
+                if td.h2 != None:
+                    title = td.h2.a.text
+                    desc = "description:" + self.utils.removeDoubleSpace(td.p.text.replace('\n',''))
+                    print title
+                    self.count += 1
+                    self.write_db(f, 'aic-project-' + str(self.count), title, 'http://www.ai.sri.com' + td.h2.a['href'], desc)
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+
     def getMicrosoftResearch(self):
         file_name = self.get_file_name("eecs/" + self.school + "/" + "microsoft-research", self.school)
         file_lines = self.countFileLineNum(file_name)
