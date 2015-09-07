@@ -2,12 +2,14 @@
 
 
 from spider import *
+sys.path.append("..")
+from utils import Utils
 
 class ProjectsSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = "projects"
-
+        self.utils = Utils()
 
     def doWork(self):
        self.getDARPAProjects() 
@@ -15,6 +17,33 @@ class ProjectsSpider(Spider):
        self.getAIProjects()
        self.getDotNetFoundationProjects()
 
+       self.getMicrosoftResearch()
+    def getMicrosoftResearch(self):
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "microsoft-research", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+        for page in range(1, 13):
+            r = requests.get("http://research.microsoft.com/apps/catalog/default.aspx?p=" + str(page) + "&sb=no&ps=100&t=projects&sf=&s=&r=&vr=&ra=")
+            soup = BeautifulSoup(r.text)
+            for div in soup.find_all('div', class_='l'):
+                sp = BeautifulSoup(div.prettify())
+                name_div = sp.find('div', class_='name')
+                desc_div = sp.find('div', class_='desc')
+                title = name_div.a.text.strip()
+                desc = "description:" + self.utils.removeDoubleSpace(desc_div.text.strip().replace('\n', ''))
+                print title
+                self.count += 1
+                self.write_db(f, 'ms-research-' + str(self.count), title, 'http://research.microsoft.com' + name_div.a['href'], desc)
+               
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+        
     def getDotNetFoundationProjects(self):
         r = requests.get("http://www.dotnetfoundation.org/projects")
         soup = BeautifulSoup(r.text)
