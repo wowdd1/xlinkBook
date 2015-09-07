@@ -21,6 +21,30 @@ class ProjectPaperSpider(Spider):
         self.getMobileEyePapers()
         self.getAutonomousDrivingPapers()
 
+        self.getCALOPapers()
+    def getCALOPapers(self):
+        r = requests.get('http://www.ai.sri.com/pubs/search.php?project=179')
+        soup = BeautifulSoup(r.text)
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "CALO", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for li in soup.find_all('li'):
+            title = li.p.strong.text.strip()
+            link = 'http://www.ai.sri.com' + li.p.a['href']
+            print title
+            self.count += 1
+            self.write_db(f, 'calo-' + str(self.count), title, link)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def getAutonomousDrivingPapers(self):
         r = requests.get("http://driving.stanford.edu/papers.html")
         soup = BeautifulSoup(r.text)
