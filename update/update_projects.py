@@ -19,6 +19,7 @@ class ProjectsSpider(Spider):
 
        self.getMicrosoftResearch()
        self.getAICProjects()
+       self.getDARPAWikiProjects()
     def getAICProjects(self):
         r = requests.get('http://www.ai.sri.com/project_list/mode=All&sort=titleAsc')
         soup = BeautifulSoup(r.text)
@@ -92,6 +93,47 @@ class ProjectsSpider(Spider):
             title = td.text.strip()
             self.count += 1
             self.write_db(f, 'DotNetFoundation-project-' + str(self.count), title, link, '')
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+    def getDARPAWikiProjects(self):
+        r = requests.get("https://en.wikipedia.org/wiki/DARPA")
+        soup = BeautifulSoup(r.text)
+        start = False
+        end = False
+
+        file_name = self.get_file_name("projects/" + "DARPA-WIKI", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for li in soup.find_all("li"):
+            if li.a != None:
+                if li.a.text == "4MM":
+                    start = True
+                if li.a.text == "Project Vela":
+                    end = True
+            if start:
+                title = li.text.strip()
+                desc = ""
+                link = ""
+                if li.a != None:
+                    link = "https://en.wikipedia.org" + li.a['href']
+                if title.find(':') != -1:
+                    desc = "description:" + title[title.find(':') + 1 :].strip()
+                    title = title[0 : title.find(':')]
+                print title
+                self.count += 1
+                self.write_db(f, "darpa-wiki-project-" + str(self.count), title, link, desc)
+
+            if end:
+                break
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
