@@ -12,6 +12,7 @@ class ProjectsSpider(Spider):
         self.utils = Utils()
 
     def doWork(self):
+       '''
        self.getDARPAProjects() 
        self.getDARPAOpenProjects()
        self.getAIProjects()
@@ -20,6 +21,38 @@ class ProjectsSpider(Spider):
        self.getMicrosoftResearch()
        self.getAICProjects()
        self.getDARPAWikiProjects()
+       '''
+       self.getSRIProject()
+    def getSRIProject(self):
+        r = requests.get("http://www.sri.com/work/projects")
+        soup = BeautifulSoup(r.text)
+        for a in soup.find_all('a'):
+            if a['href'].startswith('/work/projects/'):
+                if a.parent != None and a.parent.prettify().startswith('<span'):
+                    subject = a.text.replace(' ', '-')
+                    file_name = self.get_file_name(self.school + "/SRI/" + subject, self.school)
+                    file_lines = self.countFileLineNum(file_name)
+                    f = self.open_db(file_name + ".tmp")
+                    self.count = 0
+                    r2 = requests.get('http://www.sri.com' + a['href'])
+                    soup2 = BeautifulSoup(r2.text)
+                    for div in soup2.find_all('div', class_='events_inner'):
+                        soup3 = BeautifulSoup(div.prettify())
+                        title = soup3.find('div', class_='events_inner_title').text.strip()
+                        link = 'http://www.sri.com' + soup3.find('div', class_='events_inner_title').a['href']
+                        desc = 'description:' + soup3.find('div', class_='events_inner_teaser').text.strip()
+                        print title
+                        self.count += 1
+                        self.write_db(f, 'sri-project-' + str(self.count), title, link, desc)
+                    self.close_db(f)
+                    if file_lines != self.count and self.count > 0:
+                        self.do_upgrade_db(file_name)
+                        print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+                    else:
+                        self.cancel_upgrade(file_name)
+                        print "no need upgrade\n"    
+
+
     def getAICProjects(self):
         r = requests.get('http://www.ai.sri.com/project_list/mode=All&sort=titleAsc')
         soup = BeautifulSoup(r.text)
