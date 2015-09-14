@@ -10,10 +10,10 @@ subject_dict = {\
     "Anthropology" : "anthropology",\
     "Culture" : "art-culture",\
     "Brain" : "brain-and-cognitive-sciences",\
-    "Biology" : "biology-life-sciences",\
-    "Biological" : "biology-life-sciences",\
+    "Biology" : "neuroscience",\
+    "Biological" : "neuroscience",\
     "Cognitive Science" : "brain-and-cognitive-sciences",\
-    "Life Sciences" : "biology-life-sciences",\
+    "Life Sciences" : "neuroscience",\
     "Business" : "business-management",\
     "Management" : "business-management",\
     "Chemistry" : "chemistry",\
@@ -50,8 +50,8 @@ subject_dict = {\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "music",\
-    "Neurobiology" : "biology-life-sciences",\
-    "Neuroscience" : "biology-life-sciences",\
+    "Neurobiology" : "neuroscience",\
+    "Neuroscience" : "neuroscience",\
     "Philanthropy" : "linguistics-and-philosophy",\
     "Philosophy" : "linguistics-and-philosophy",\
     "Psychology" : "psychology",\
@@ -75,7 +75,7 @@ need_update_subject_list = [
     #'rank',
     #'physics',
     #'brain-and-cognitive-sciences',
-    #'biology-life-sciences',
+    #'neuroscience',
     #'literature',
     #'linguistics-and-philosophy',
     #"psychology",
