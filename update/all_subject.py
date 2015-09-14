@@ -9,10 +9,10 @@ subject_dict = {\
     "Art" : "art-culture",\
     "Anthropology" : "anthropology",\
     "Culture" : "art-culture",\
-    "Brain" : "brain-and-cognitive-sciences",\
+    "Brain" : "cognitive-science",\
     "Biology" : "neuroscience",\
     "Biological" : "neuroscience",\
-    "Cognitive Science" : "brain-and-cognitive-sciences",\
+    "Cognitive Science" : "cognitive-science",\
     "Life Sciences" : "neuroscience",\
     "Business" : "business-management",\
     "Management" : "business-management",\
@@ -74,7 +74,7 @@ need_update_subject_list = [
     'economics',
     #'rank',
     #'physics',
-    #'brain-and-cognitive-sciences',
+    #'cognitive-science',
     #'neuroscience',
     #'literature',
     #'linguistics-and-philosophy',
