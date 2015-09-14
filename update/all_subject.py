@@ -44,7 +44,7 @@ subject_dict = {\
     "Humanities" : "humanities",\
     "Human Resource Management" : 'economics',\
     "Law" : "law",\
-    "Linguistic" : "linguistics-and-philosophy",\
+    "Linguistic" : "linguistic",\
     "Literature" : "literature",\
     "Math" : "mathematics",\
     'Marketing' : 'economics',\
@@ -52,8 +52,8 @@ subject_dict = {\
     "Music" : "music",\
     "Neurobiology" : "neuroscience",\
     "Neuroscience" : "neuroscience",\
-    "Philanthropy" : "linguistics-and-philosophy",\
-    "Philosophy" : "linguistics-and-philosophy",\
+    "Philanthropy" : "philosophy",\
+    "Philosophy" : "philosophy",\
     "Psychology" : "psychology",\
     "Ethics" : "ethics",\
     'Operations Information & Technology' : 'economics',\
@@ -77,7 +77,8 @@ need_update_subject_list = [
     #'cognitive-science',
     #'neuroscience',
     #'literature',
-    #'linguistics-and-philosophy',
+    #'linguistic',
+    #'philosophy',
     #"psychology",
     #'chemistry',
     'statistics-data-analysis'
