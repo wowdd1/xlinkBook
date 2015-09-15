@@ -16,12 +16,49 @@ class ProjectsSpider(Spider):
        self.getDARPAOpenProjects()
        self.getAIProjects()
        self.getDotNetFoundationProjects()
-
        self.getMicrosoftResearch()
        self.getAICProjects()
        self.getDARPAWikiProjects()
        self.getSRIProject()
        self.getOpenSourceRobotProjects()      
+       self.getMitMediaProjects()
+
+    def getMitMediaProjects(self):
+        r = requests.get('https://www.media.mit.edu/research/groups-projects')
+        soup = BeautifulSoup(r.text)
+        for span in soup.find_all('span', class_='field-content'):
+            if span.a != None and span.a.text.startswith('more') == False:
+                subject = span.a.text.strip().lower().replace(' ', '-')
+                print subject
+                file_name = self.get_file_name("projects/MIT-MEDIA-LAB/" + subject, self.school)
+                file_lines = self.countFileLineNum(file_name)
+                f = self.open_db(file_name + ".tmp")
+                self.count = 0
+ 
+                r = requests.get('https://www.media.mit.edu' + span.a['href'])
+                sp = BeautifulSoup(r.text)
+                for li in sp.find_all('li'):
+                    if li.div != None and li.div.h2 != None:
+                        link = ''
+                        title = ''
+                        desc = ''
+                        sp1 = BeautifulSoup(li.div.prettify())
+                        for a in sp1.find_all('a'):
+                            if a.text.strip() == 'view site':
+                                link = a['href']
+                        title = li.div.h2.text.strip()
+                        print title
+                        desc = 'description:' + self.utils.removeDoubleSpace(li.div.div.text.strip().replace('\n', ''))
+                        self.count += 1
+                        self.write_db(f, "mit-media-" + subject + '-' + str(self.count), title, link, desc)
+                self.close_db(f)
+                if file_lines != self.count and self.count > 0:
+                    self.do_upgrade_db(file_name)
+                    print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+                else:
+                    self.cancel_upgrade(file_name)
+                    print "no need upgrade\n"
+
     def getOpenSourceRobotProjects(self):
         r = requests.get('https://en.wikipedia.org/wiki/Open-source_robotics')
         soup = BeautifulSoup(r.text)
