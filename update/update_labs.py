@@ -13,6 +13,32 @@ class LabsSpider(Spider):
 
     def doWork(self):
        self.getCSAILLabs()
+       self.getMitMediaLabs()
+
+    def getMitMediaLabs(self):
+        r = requests.get('https://www.media.mit.edu/research/groups-projects')
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name(self.school + "/" + "MIT-MEDIA-LAB", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+        for span in soup.find_all('span', class_='field-content'):
+            if span.a != None and span.a.text.startswith('more') == False:
+                title = span.a.text
+                link = 'https://www.media.mit.edu' + span.a['href']
+                print title
+                self.count += 1
+                self.write_db(f, 'mit-media-lab-' + str(self.count), title, link)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def getCSAILLabs(self):
         file_name = self.get_file_name(self.school + "/" + "CSAIL", self.school)
         file_lines = self.countFileLineNum(file_name)
