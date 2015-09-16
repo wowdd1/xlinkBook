@@ -17,8 +17,11 @@ class UniversityRankSpider(Spider):
         for div in soup.find_all('div', class_='link'):
             sp = BeautifulSoup(div.prettify())
             for li in sp.find_all('li'):
-                print li.text.strip()
-                r = requests.get(base_url + li.a['href'])
+                print li.text.strip() + " " + li.a['href']
+                url = li.a['href']
+                if url.startswith('http') == False:
+                    url = base_url + url
+                r = requests.get(url)
                 if r.text.find('flat_file') != -1:
                     sub = li.a['href'].strip()
                     while sub.find('/') != -1:
