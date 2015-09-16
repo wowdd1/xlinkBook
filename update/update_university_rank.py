@@ -55,32 +55,24 @@ class UniversityRankSpider(Spider):
 
     def processTimesHigherEducationData(self):
         self.school = 'TimesHigherEducation'
-        year = int(time.strftime('%Y',time.localtime(time.time())))
-        last_year = year - 1
-        base_url = 'http://www.timeshighereducation.co.uk/world-university-rankings/' + str(last_year) + '-' + str(year)[2 :] 
-        r = requests.get(base_url + '/world-ranking')
+        r = requests.get('https://www.timeshighereducation.co.uk/world-university-rankings/')
         soup = BeautifulSoup(r.text)
-        select = None
-        for sel in soup.find_all('select', class_='ranking-filter'):
-            if sel.attrs.has_key('name') and sel['name'] == 'subject':
-                select = sel
+        for li in soup.find_all('li'):
+            if li.h3 != None:
+                subject = li.h3.a.text.lower().strip().replace(' ', '-')
+                r = requests.get(li.a['href'])
+                sp = BeautifulSoup(r.text)
 
-        soup = BeautifulSoup(select.prettify())
-        for option in soup.find_all('option'):
-            if option.attrs.has_key('value') and option['value'] != '':
-                r = requests.get(base_url + '/subject-ranking/subject/' + option['value'])
-                soup = BeautifulSoup(r.text)
-                print option['value']
-                file_name = self.get_file_name(self.subject + '/' + self.school + '/' + option['value'], self.school)
+                file_name = self.get_file_name(self.subject + '/' + self.school + '/' + subject, self.school)
                 file_lines = self.countFileLineNum(file_name)
                 f = self.open_db(file_name + ".tmp")
                 self.count = 0
 
-                for td in soup.find_all('td', class_='uni'):
-                    self.count += 1
-                    title = td.text.strip()
-                    print title
-                    self.write_db(f, 'the' + '-' + option['value'] + '-' + str(self.count), title, '')
+                for a in sp.find_all('a', class_='wur-table-link'):
+                    if a.span != None and a.div != None:
+                        print a.span.text
+                        self.count += 1
+                        self.write_db(f, 'the-' + subject + str(self.count), a.span.text, 'https://www.timeshighereducation.co.uk' + a['href'])
 
                 self.close_db(f)
                 if file_lines != self.count and self.count > 0:
@@ -89,6 +81,7 @@ class UniversityRankSpider(Spider):
                 else:
                     self.cancel_upgrade(file_name)
                     print "no need upgrade\n"
+
 
 
     def processARWUData(self):
@@ -125,7 +118,7 @@ class UniversityRankSpider(Spider):
                 self.write_db(f, self.school + '-' + s + '-' + str(self.count), title, '')
 
             self.close_db(f)
-            if file_lines != self.count and self.count > 0:
+            if self.count > 0:
                 self.do_upgrade_db(file_name)
                 print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
             else:
@@ -150,7 +143,7 @@ class UniversityRankSpider(Spider):
                self.write_db(f, self.school + '-' + sub + '-' + str(self.count), h2.a.text, h2.a['href'])
 
             self.close_db(f)
-            if file_lines != self.count and self.count > 0:
+            if self.count > 0:
                 self.do_upgrade_db(file_name)
                 print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
             else:
