@@ -113,7 +113,7 @@ need_update_subject_list = [
 def print_all_subject():
     print ' , '.join(subject_dict.values())
 
-
+# reference subjects #
 ''' harvard
 Introductory Notes
 Dramatic Arts
@@ -253,3 +253,234 @@ STS  Science, Technology, and Society
 WGS  Women's and Gender Studies
 '''
 
+''' stanford
+Graduate School of Business
+Accounting (ACCT)
+Economic Analysis & Policy (MGTECON)
+Finance (FINANCE)
+GSB General & Interdisciplinary (GSBGEN)
+Human Resource Management (HRMGT)
+Marketing (MKTG)
+Operations Information & Technology (OIT)
+Organizational Behavior (OB)
+Political Economics (POLECON)
+Strategic Management (STRAMGT)
+School of Earth, Energy and Environmental Sciences
+Earth, Energy, and Environmental Sciences (EARTH)
+Earth Systems (EARTHSYS)
+Earth, Energy, & Environmental Sciences (EEES)
+Energy Resources Engineering (ENERGY)
+Environment and Resources (ENVRES)
+Earth System Science (ESS)
+Geological Sciences (GS)
+Geophysics (GEOPHYS)
+Woods Institute for the Environment (ENVRINST)
+School of Education
+Education (EDUC)
+School of Engineering
+Aeronautics & Astronautics (AA)
+Bioengineering (BIOE)
+Chemical Engineering (CHEMENG)
+Civil & Environmental Engineering (CEE)
+Computational & Mathematical Engineering (CME)
+Computer Science (CS)
+Design Institute (DESINST)
+Electrical Engineering (EE)
+Engineering (ENGR)
+Management Science & Engineering (MS&E)
+Materials Science & Engineer (MATSCI)
+Mechanical Engineering (ME)
+Scientific Computing & Comput'l Math (SCCM)
+School of Humanities & Sciences
+African & African American Studies (AFRICAAM)
+African & Middle Eastern Languages (AMELANG)
+African Studies (AFRICAST)
+American Studies (AMSTUD)
+Anthropology (ANTHRO)
+Applied Physics (APPPHYS)
+Arabic Language (ARABLANG)
+Archaeology (ARCHLGY)
+Archaeology (ARCHLGY)
+Art History (ARTHIST)
+Arts Institute (ARTSINST)
+Art Studio (ARTSTUDI)
+Asian American Studies (ASNAMST)
+Asian Languages (ASNLANG)
+Astronomy (ASTRNMY)
+Biology (BIO)
+Biology/Hopkins Marine (BIOHOPK)
+Biophysics (BIOPHYS)
+Catalan Language Courses (CATLANG)
+Chemistry (CHEM)
+Chicana/o-Latina/o Studies (CHILATST)
+Chinese General (CHINGEN)
+Chinese Language (CHINLANG)
+Chinese Literature (CHINLIT)
+Classics (CLASSICS)
+Communication (COMM)
+Comparative Literature (COMPLIT)
+Comparative Studies in Race & Ethnicity (CSRE)
+Dance (DANCE)
+Division of Literatures, Cultures, & Languages (DLCL)
+Drama (TAPS)
+East Asian Studies (EASTASN)
+Economics (ECON)
+English (ENGLISH)
+English for Foreign Students (EFSLANG)
+Ethics in Society (ETHICSOC)
+Feminist, Gender and Sexuality Studies (FEMGEN)
+Film Production (FILMPROD)
+Film Studies (FILMSTUD)
+French Language (FRENLANG)
+French Studies (FRENCH)
+German Language (GERLANG)
+German Studies (GERMAN)
+Global Studies (GLOBAL)
+History (HISTORY)
+History & Philosophy of Science (HPS)
+Human Biology (HUMBIO)
+Humanities & Sciences (HUMSCI)
+Iberian & Latin American Cultures (ILAC)
+Institute for International Studies (FSI) (IIS)
+International Policy Studies (IPS)
+International Relations (INTNLREL)
+Italian Language (ITALLANG)
+Italian Studies (ITALIAN)
+Japanese General (JAPANGEN)
+Japanese Language (JAPANLNG)
+Japanese Literature (JAPANLIT)
+Jewish Studies (JEWISHST)
+Korean General (KORGEN)
+Korean Language (KORLANG)
+Korean Literature (KORLIT)
+Latin American Studies (LATINAM)
+Linguistics (LINGUIST)
+Mathematical & Computational Science (MCS)
+Mathematics (MATH)
+Medieval Studies (MEDVLST)
+Modern Thought & Literature (MTL)
+Music (MUSIC)
+Native American Studies (NATIVEAM)
+Philosophy (PHIL)
+Physics (PHYSICS)
+Political Science (POLISCI)
+Portuguese Language (PORTLANG)
+Psychology (PSYCH)
+Public Policy (PUBLPOL)
+Religious Studies (RELIGST)
+Russian, East European, & Eurasian Studies (REES)
+Science, Technology, & Society (STS)
+Slavic Language (SLAVLANG)
+Slavic Studies (SLAVIC)
+Sociology (SOC)
+Spanish Language (SPANLANG)
+Spanish, Portuguese, & Catalan Literature (ILAC)
+Special Language Program (SPECLANG)
+Stanford in Washington (SIW)
+Statistics (STATS)
+Symbolic Systems (SYMSYS)
+Theater and Performance Studies (TAPS)
+Tibetan Language (TIBETLNG)
+Urban Studies (URBANST)
+Law School
+Law (LAW)
+Law, Nonprofessional (LAWGEN)
+School of Medicine
+Anesthesia (ANES)
+Biochemistry (BIOC)
+Biomedical Informatics (BIOMEDIN)
+Biosciences Interdisciplinary (BIOS)
+Cancer Biology (CBIO)
+Cardiothoracic Surgery (CTS)
+Chemical & Systems Biology (CSB)
+Community Health and Prevention Research (CHPR)
+Comparative Medicine (COMPMED)
+Dermatology (DERM)
+Developmental Biology (DBIO)
+Family and Community Medicine (FAMMED)
+Genetics (GENE)
+Health Research & Policy (HRP)
+Immunology (IMMUNOL)
+Medicine (MED)
+Medicine Interdisciplinary (INDE)
+Microbiology & Immunology (MI)
+Molecular & Cellular Physiology (MCP)
+Neurobiology (NBIO)
+Neurology & Neurological Sciences (NENS)
+Neurosciences Program (NEPR)
+Neurosurgery (NSUR)
+Obstetrics & Gynecology (OBGYN)
+Ophthalmology (OPHT)
+Orthopedic Surgery (ORTHO)
+Otolaryngology (OTOHNS)
+Pathology (PATH)
+Pediatrics (PEDS)
+Psychiatry (PSYC)
+Radiation Oncology (RADO)
+Radiology (RAD)
+School of Medicine General (SOMGEN)
+Stem Cell Biology and Regenerative Medicine (STEMREM)
+Structural Biology (SBIO)
+Surgery (SURG)
+Urology (UROL)
+Office of Vice Provost for Undergraduate Education
+Education as Self-Fashioning (ESF)
+Immersion in the Arts (ITALIC)
+Leadership Intensive (LEAD)
+Oral Communications (ORALCOMM)
+Overseas Studies General (OSPGEN)
+Overseas Studies in Australia (OSPAUSTL)
+Overseas Studies in Barcelona (CASB) (OSPBARCL)
+Overseas Studies in Beijing (OSPBEIJ)
+Overseas Studies in Berlin (OSPBER)
+Overseas Studies in Cape Town (OSPCPTWN)
+Overseas Studies in Florence (OSPFLOR)
+Overseas Studies in Istanbul (OSPISTAN)
+Overseas Studies in Kyoto (OSPKYOTO)
+Overseas Studies in Kyoto (KCJS) (OSPKYOCT)
+Overseas Studies in Madrid (OSPMADRD)
+Overseas Studies in Oxford (OSPOXFRD)
+Overseas Studies in Paris (OSPPARIS)
+Overseas Studies in Santiago (OSPSANTG)
+ROTC Air Force (ROTCAF)
+ROTC Army (ROTCARMY)
+ROTC Navy (ROTCNAVY)
+Structured Liberal Education (SLE)
+Thinking Matters (THINK)
+Undergraduate Advising and Research (UAR)
+Writing & Rhetoric, Program in (PWR)
+Office of Vice Provost for Teaching and Learning
+Teaching and Learning (VPTL)
+Athletics, Physical Education, and Recreation
+Athletics, Club Sports, Martial Arts (ATHLETIC)
+Outdoor Education (OUTDOOR)
+Physical Education (PE)
+Wellness Education (WELLNESS)
+Stanford Continuing Studies
+Master of Liberal Arts (MLA)
+Undergraduate General Education Requirements
+WAY-A-II: Aesthetic and Interpretive Inquiry
+WAY-AQR: Applied Quantitative Reasoning
+WAY-CE: Creative Expression
+WAY-ED: Engaging Diversity
+WAY-ER: Ethical Reasoning
+WAY-FR: Formal Reasoning
+WAY-SI: Social Inquiry
+WAY-SMA: Scientific Method and Analysis
+DB-EngrAppSci: Engineering and Applied Sciences
+DB-Hum: Humanities
+DB-Math: Mathematics
+DB-NatSci: Natural Sciences
+DB-SocSci: Social Sciences
+EC-AmerCul: American Cultures
+EC-GlobalCom: Global Community
+EC-Gender: Gender Studies
+EC-EthicReas: Ethical Reasoning
+EC-EthicReas: Ethical Reasoning
+More Course Lists
+Introductory Seminars
+Arts Intensive Program
+Community Global Health
+Service Learning Courses (certified by Haas Center)
+Design Institute
+'''
