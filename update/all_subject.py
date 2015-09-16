@@ -112,3 +112,144 @@ need_update_subject_list = [
 
 def print_all_subject():
     print ' , '.join(subject_dict.values())
+
+
+''' harvard
+Introductory Notes
+Dramatic Arts
+Middle Eastern Studies
+General Education
+Earth and Planetary Sciences
+Mind, Brain, and Behavior
+Graduate Seminars in General Education and in Undergraduate Education
+East Asian Languages and Civilizations
+Molecular and Cellular Biology
+Core Curriculum
+Economics
+Music
+Freshman Seminars and House Seminars
+Education
+Near Eastern Languages and Civilizations
+African and African American Studies
+Engineering Sciences
+Neurobiology
+African Studies
+English
+Oceanography
+American Studies
+Environmental Science and Public Policy
+Organismic and Evolutionary Biology
+Anthropology
+Ethnicity, Migration, Rights
+Philosophy
+Applied Computation
+Ethnic Studies
+Physical Sciences
+Applied Mathematics
+European Studies
+Physics
+Applied Physics
+Expository Writing
+Political Economy and Government
+Archaeology
+Film and Visual Studies
+Psychology
+Architecture, Landscape Architecture and Urban Planning
+Folklore and Mythology
+Public Policy
+Arts and Humanities
+Germanic Languages and Literatures
+The Study of Religion
+Asian Studies Programs
+Global Health and Health Policy
+Romance Languages and Literatures
+Astronomy
+Government
+ROTC
+Biological Sciences in Dental Medicine
+Health Policy
+Russia, Eastern Europe, and Central Asia
+Biological Sciences in Public Health
+History
+Slavic Languages and Literatures
+Biomedical Engineering
+History and Literature
+Social Policy
+Biophysics
+History of American Civilization
+Social Studies
+Biostatistics
+History of Art and Architecture
+Sociology
+Business Studies
+History of Science
+South Asian Studies
+Celtic Languages and Literatures
+Human Evolutionary Biology
+Special Concentrations
+Chemical and Physical Biology
+Inner Asian and Altaic Studies
+Statistics
+Chemical Biology
+Latin American and Iberian Studies
+Stem Cell and Regenerative Biology
+Chemical Physics
+Life Sciences
+Systems Biology
+Chemistry and Chemical Biology
+Linguistics
+Ukrainian Studies
+The Classics
+Mathematics
+Visual and Environmental Studies
+Comparative Literature
+Medical Sciences
+Women, Gender, and Sexuality
+Computer Science
+Medieval Studies
+'''
+
+''' MIT
+Course 1  Civil and Environmental Engineering
+Course 2  Mechanical Engineering
+Course 3  Materials Science and Engineering
+Course 4  Architecture
+Course 5  Chemistry
+Course 6  Electrical Engineering and Computer Science
+Course 7  Biology
+Course 8  Physics
+Course 9  Brain and Cognitive Sciences
+Course 10  Chemical Engineering
+Course 11  Urban Studies and Planning
+Course 12  Earth, Atmospheric, and Planetary Sciences
+Course 14  Economics
+Course 15  Management
+Course 16  Aeronautics and Astronautics
+Course 17  Political Science
+Course 18  Mathematics
+Course 20  Biological Engineering
+Course 21  Humanities
+Course 21A  Anthropology
+Course 21H  History
+Course 21G  Global Studies and Languages
+Course 21L  Literature
+Course 21M  Music and Theater Arts
+Course 21W  Comparative Media Studies / Writing
+Course 22  Nuclear Science and Engineering
+Course 24  Linguistics and Philosophy
+AS  Aerospace Studies
+CC  Concourse
+CMS/W  Comparative Media Studies / Writing
+CSB  Computational and Systems Biology
+EC  Edgerton Center
+ESG  Experimental Study Group
+ESD  Engineering Systems
+HST  Health Sciences and Technology
+MAS  Media Arts and Sciences
+MS  Military Science
+NS  Naval Science
+SP  Special Programs
+STS  Science, Technology, and Society
+WGS  Women's and Gender Studies
+'''
+
