@@ -93,10 +93,10 @@ subject_dict = {\
 
 need_update_subject_list = [
     #'anthropology',
-    #'eecs',
-    #'mathematics',
+    'eecs',
+    'mathematics',
     #'business-management',
-    #'economics',
+    'economics',
     #'rank',
     #'physics',
     #'cognitive-science',
@@ -106,7 +106,7 @@ need_update_subject_list = [
     #'philosophy',
     #"psychology",
     #'chemistry',
-    'others',
+    #'others',
     'statistics-data-analysis'
 ]
 
