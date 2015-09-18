@@ -12,8 +12,32 @@ class LabsSpider(Spider):
         self.utils = Utils()
 
     def doWork(self):
-       self.getCSAILLabs()
-       self.getMitMediaLabs()
+        self.getCSAILLabs()
+        self.getMitMediaLabs()
+        self.getSocialRobotLabs()
+    def getSocialRobotLabs(self):
+        r = requests.get('https://en.wikipedia.org/wiki/Social_robot')
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name(self.school + "/" + "Social-robot-labs", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for a in soup.find_all('a', class_='external text'):
+            print a.text    
+            self.count += 1
+            self.write_db(f, 'social-robot-lab-' + str(self.count), a.text, a['href'])
+            if a.text.startswith('Department'):
+                break
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getMitMediaLabs(self):
         r = requests.get('https://www.media.mit.edu/research/groups-projects')
