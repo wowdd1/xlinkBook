@@ -22,6 +22,7 @@ class ProjectsSpider(Spider):
         self.getSRIProject()
         self.getOpenSourceRobotProjects()      
         self.getMitMediaProjects()
+
         self.getSocialRobotProjects()
     def getSocialRobotProjects(self):
         r = requests.get('https://en.wikipedia.org/wiki/Social_robot')
@@ -48,6 +49,10 @@ class ProjectsSpider(Spider):
                  self.write_db(f, 'social-robot-project-' + str(self.count), a.text, link)
              if end:
                  break
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'jibo', 'https://www.jibo.com/')
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'buddy', 'https://www.indiegogo.com/projects/buddy-your-family-s-companion-robot#/story')
         self.count += 1
         self.write_db(f, 'social-robot-project-' + str(self.count), 'kismet','https://en.wikipedia.org/wiki/Kismet_(robot)')
         self.count += 1
