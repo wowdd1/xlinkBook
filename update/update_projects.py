@@ -12,16 +12,54 @@ class ProjectsSpider(Spider):
         self.utils = Utils()
 
     def doWork(self):
-       self.getDARPAProjects() 
-       self.getDARPAOpenProjects()
-       self.getAIProjects()
-       self.getDotNetFoundationProjects()
-       self.getMicrosoftResearch()
-       self.getAICProjects()
-       self.getDARPAWikiProjects()
-       self.getSRIProject()
-       self.getOpenSourceRobotProjects()      
-       self.getMitMediaProjects()
+        self.getDARPAProjects() 
+        self.getDARPAOpenProjects()
+        self.getAIProjects()
+        self.getDotNetFoundationProjects()
+        self.getMicrosoftResearch()
+        self.getAICProjects()
+        self.getDARPAWikiProjects()
+        self.getSRIProject()
+        self.getOpenSourceRobotProjects()      
+        self.getMitMediaProjects()
+        self.getSocialRobotProjects()
+    def getSocialRobotProjects(self):
+        r = requests.get('https://en.wikipedia.org/wiki/Social_robot')
+        soup = BeautifulSoup(r.text)
+        start = False
+        end = False
+
+        file_name = self.get_file_name("projects/SOCIAL-ROBOT", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for a in soup.find_all('a'):
+             if a.text.startswith('iCat'):
+                 start = True
+             if a.text.startswith('Haapie'):
+                 end = True
+             if start:
+                 print a.text
+                 self.count += 1
+                 link = a['href']
+                 if link.startswith('http') == False:
+                     link = 'https://en.wikipedia.org' + link
+                 self.write_db(f, 'social-robot-project-' + str(self.count), a.text, link)
+             if end:
+                 break
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'kismet','https://en.wikipedia.org/wiki/Kismet_(robot)')
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'joe robot', 'https://en.wikipedia.org/wiki/Joe_Robot')
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getMitMediaProjects(self):
         r = requests.get('https://www.media.mit.edu/research/groups-projects')
