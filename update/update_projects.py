@@ -22,7 +22,6 @@ class ProjectsSpider(Spider):
         self.getSRIProject()
         self.getOpenSourceRobotProjects()      
         self.getMitMediaProjects()
-
         self.getSocialRobotProjects()
     def getSocialRobotProjects(self):
         r = requests.get('https://en.wikipedia.org/wiki/Social_robot')
@@ -50,11 +49,25 @@ class ProjectsSpider(Spider):
              if end:
                  break
         self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'kismet','https://en.wikipedia.org/wiki/Kismet_(robot)')
+        self.count += 1
         self.write_db(f, 'social-robot-project-' + str(self.count), 'jibo', 'https://www.jibo.com/')
         self.count += 1
-        self.write_db(f, 'social-robot-project-' + str(self.count), 'buddy', 'https://www.indiegogo.com/projects/buddy-your-family-s-companion-robot#/story')
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'pepper', 'https://www.aldebaran.com/en/a-robots/who-is-pepper')
         self.count += 1
-        self.write_db(f, 'social-robot-project-' + str(self.count), 'kismet','https://en.wikipedia.org/wiki/Kismet_(robot)')
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'NAO', 'https://www.aldebaran.com/en/humanoid-robot/nao-robot')
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'AIBO', 'https://en.wikipedia.org/wiki/AIBO')
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'furby', 'http://www.hasbro.com/en-us/brands/furby')
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'PaPeRo', 'https://en.wikipedia.org/wiki/PaPeRo')
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'kibo', 'http://kibo-robo.jp/en/')
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'rapiro', 'http://www.rapiro.com/') 
+        self.count += 1
+        self.write_db(f, 'social-robot-project-' + str(self.count), 'buddy', 'https://www.indiegogo.com/projects/buddy-your-family-s-companion-robot#/story')
         self.count += 1
         self.write_db(f, 'social-robot-project-' + str(self.count), 'joe robot', 'https://en.wikipedia.org/wiki/Joe_Robot')
 
