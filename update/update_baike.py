@@ -181,12 +181,42 @@ class BaikeSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
+
+    def processTop100Scientific(self, url):
+        file_name = self.get_file_name(self.subject + "/top100-scientific", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        for tr in soup.find_all('tr'):
+            if tr.td.text.isnumeric():
+                count = 0
+                desc = ""
+                title = ""
+                for line in tr.prettify().split('\n'):
+                    count += 1
+                    if count == 6:
+                        title = line.strip()
+                    if count == 9:
+                        desc = 'description:' + line.strip()
+                print title
+                self.count += 1
+                self.write_db(f, 'top100-scientific-' + str(self.count), title, '', desc)
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+        
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
         self.processBaikeData("http://www.baike.com/wiki/IT%E4%B8%9A%E6%9C%80%E5%85%B7%E5%BD%B1%E5%93%8D%E5%8A%9B%E7%9A%84284%E4%BD%8D%E7%A8%8B%E5%BA%8F%E5%91%98")
         self.processComputerScienceData('http://web.cs.ucla.edu/~palsberg/h-number.html')
-
+        self.processTop100Scientific('http://www.adherents.com/people/100_scientists.html#')
 
 
 start = BaikeSpider()
