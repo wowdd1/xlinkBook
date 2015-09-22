@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
 from spider import *
+sys.path.append("..")
+from utils import Utils
 
 class PrincetonSpider(Spider):
     termDict = {}
@@ -10,6 +12,7 @@ class PrincetonSpider(Spider):
         Spider.__init__(self)
         self.school = "princeton"
         self.deep_mind = True
+        self.utils = Utils()
 
     def isInCourseNumList(self, course_num):
         for item in self.course_num_list:
@@ -70,7 +73,7 @@ class PrincetonSpider(Spider):
                         if self.isInCourseNumList(course_num) == True:
                             continue
 
-                        course_title = str(td)[str(td).find(">") + 1 : str(td).find("<", + 2)].strip().replace("&amp;", "")
+                        course_title = self.utils.removeDoubleSpace(str(td)[str(td).find(">") + 1 : str(td).find("<", + 2)].strip().replace("&amp;", ""))
                         print course_num + " " + course_title
                         self.write_db(f, course_num, course_title, link, description)
                         self.count += 1
