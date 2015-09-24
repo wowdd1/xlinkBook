@@ -137,6 +137,7 @@ class Utils:
                          'coursera' : 'https://www.coursera.org/courses?query=',\
                          'edx' : 'https://www.edx.org/course?search_query=',\
                          'videolectures' : 'http://videolectures.net/site/search/?q=',\
+                         'ted' : 'http://www.ted.com/search?q=',\
                          'doaj' : 'https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp',\
                          'frontiersin' : 'http://www.frontiersin.org/SearchData.aspx?sq=',\
                          'plos' : 'https://www.plos.org/?submit=Go&s=',\
