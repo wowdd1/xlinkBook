@@ -161,6 +161,8 @@ class Utils:
                          'moozhi' : 'http://www.moozhi.com/search/course?keywords=',\
                          'aminer' : 'http://aminer.org/search/',\
                          'chaoxing' : 'http://video.chaoxing.com/s?order=0&type=all&sw=',\
+                         'sina' : 'http://open.sina.com.cn/search/',\
+                         '163' : 'http://c.open.163.com/search/search.htm?query=',\
                          'youku' : 'http://www.soku.com/search_playlist/q_',\
                          'tudou' : 'http://www.soku.com/t/npsearch/'}
 
