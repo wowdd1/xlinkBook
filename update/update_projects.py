@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8 -*- 
 
 from spider import *
 sys.path.append("..")
@@ -23,6 +23,73 @@ class ProjectsSpider(Spider):
         self.getOpenSourceRobotProjects()      
         self.getMitMediaProjects()
         self.getSocialRobotProjects()
+        self.getSpeechRecognitionprojects()
+
+    def getSpeechRecognitionprojects(self):
+        r = requests.get('https://en.wikipedia.org/wiki/List_of_speech_recognition_software')
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name("eecs/projects/speech-recognition", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+        
+        for tr in soup.find_all('tr'):
+            if tr.td != None and tr.td.div == None:
+                title = tr.td.text.strip()
+                url = ''
+                if tr.td.a != None:
+                    if tr.td.a['href'].startswith('http') == False:
+                        url = "https://en.wikipedia.org" + tr.td.a['href']
+                    else:
+                        url = tr.td.a['href']
+                if title.startswith('This') or title.startswith('Application'):
+                    continue;
+                if title.find('\n') != -1:
+                   
+                    title = title[0 : title.find('\n')].strip()
+                self.count += 1
+                self.write_db(f, "sr-projects-" + str(self.count), title, url)
+                print title
+                if title.startswith('Windows'):
+                    break;
+        for li in soup.find_all('li'):
+            if li.a != None and li.a.span != None:
+                continue
+            title = li.text.strip().replace('\n', '')
+            url = ''
+            if li.a != None:
+                if li.a['href'].startswith('http') == False:
+                    url = "https://en.wikipedia.org" + li.a['href']
+                else:
+                    url = li.a['href']
+            if title.find("—") != -1:
+                title = title[0 : title.find("—")].strip()
+            if title.find(" – ") != -1:
+                title = title[0 : title.find(" – ")].strip()
+            if title.find(" - ") != -1:
+                title = title[0 : title.find(" - ")].strip()
+            if title.find("(") != -1:
+                title = title[0 : title.find("(")].strip()
+            if title.find("[") != -1:
+                title = title[0 : title.find("[")].strip()
+            if len(title) > 20:
+                title = title[0 : 25] + "..."
+            print title
+            self.count += 1
+            self.write_db(f, "sr-projects-" + str(self.count), title, url)
+            if title.startswith('Yap Speech'):
+                break
+            title = ''
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def getSocialRobotProjects(self):
         r = requests.get('https://en.wikipedia.org/wiki/Social_robot')
         soup = BeautifulSoup(r.text)
