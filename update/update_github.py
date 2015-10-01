@@ -608,7 +608,8 @@ class GithubSpider(Spider):
                 "awslabs" : "https://github.com/awslabs",\
                 "linkedin" : "https://github.com/linkedin",\
                 "square" : "https://github.com/square",\
-                "google-cloud-platform" : "https://github.com/GoogleCloudPlatform"}
+                "google-cloud-platform" : "https://github.com/GoogleCloudPlatform",\
+                "baidu" : "https://github.com/Baidu"}
         for k in data:
 
             file_name = self.get_file_name("eecs/github/" + k, self.school)
