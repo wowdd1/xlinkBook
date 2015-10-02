@@ -124,7 +124,8 @@ class Utils:
                          'googlevideo' : 'https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q=',\
                          'scholar' : 'https://scholar.google.com/scholar?hl=en&q=',\
                          'arxiv' : 'http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1',\
-                         'gen.lib' : "http://gen.lib.rus.ec/search.php?lg_topic=libgen&open=0&view=simple&phrase=1&column=def&req=",\
+                         'gen.lib' : 'http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req=',\
+                         'wowebook' : 'http://www.wowebook.co/?s=',\
                          'pmc' : "http://www.ncbi.nlm.nih.gov/pmc/?term=",\
                          'pubmed' : "http://www.ncbi.nlm.nih.gov/pubmed/?term=",\
                          'baidu' : 'http://www.baidu.com/s?word=',\
