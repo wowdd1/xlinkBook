@@ -124,6 +124,9 @@ class Utils:
                          'googlevideo' : 'https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q=',\
                          'scholar' : 'https://scholar.google.com/scholar?hl=en&q=',\
                          'arxiv' : 'http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1',\
+                         'gen.lib' : "http://gen.lib.rus.ec/search.php?lg_topic=libgen&open=0&view=simple&phrase=1&column=def&req=",\
+                         'pmc' : "http://www.ncbi.nlm.nih.gov/pmc/?term=",\
+                         'pubmed' : "http://www.ncbi.nlm.nih.gov/pubmed/?term=",\
                          'baidu' : 'http://www.baidu.com/s?word=',\
                          'bing' : 'http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq=',\
                          'academic' : 'http://academic.research.microsoft.com/Search?query=',\
@@ -144,6 +147,7 @@ class Utils:
                          'plosone' : 'http://www.plosone.org/search/simple?from=globalSimpleSearch&filterJournals=PLoSONE&query=',\
                          'scirp' : 'http://www.scirp.org/journal/Articles.aspx?searchField=All&page=1&searchCode=',\
                          'oalib' : 'http://www.oalib.com/search;jsessionid=0C979878FC00CECAA48E851318C327DB.tomcat1?kw=',\
+                         'nature' : 'http://www.nature.com/search?journal=nature%2Cnews&q=',\
                          'philpapers' : 'http://philpapers.org/s/',\
                          'macropus' : 'http://git.macropus.org/hubmed/?term=',\
                          'citeulike' : 'http://www.citeulike.org/search/all?q=',\
