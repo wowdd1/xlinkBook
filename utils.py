@@ -125,6 +125,8 @@ class Utils:
                          'scholar' : 'https://scholar.google.com/scholar?hl=en&q=',\
                          'arxiv' : 'http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1',\
                          'gen.lib' : 'http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req=',\
+                         'nap' : 'http://www.nap.edu/search/?term=',\
+                         'hathitrust' : 'http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1=',\
                          'wowebook' : 'http://www.wowebook.co/?s=',\
                          'pmc' : "http://www.ncbi.nlm.nih.gov/pmc/?term=",\
                          'pubmed' : "http://www.ncbi.nlm.nih.gov/pubmed/?term=",\
