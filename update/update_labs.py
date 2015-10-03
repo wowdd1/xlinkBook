@@ -15,6 +15,36 @@ class LabsSpider(Spider):
         self.getCSAILLabs()
         self.getMitMediaLabs()
         self.getSocialRobotLabs()
+        self.getBerkeleyEECSLabs()
+
+    def getBerkeleyEECSLabs(self):
+        r = requests.get('http://www.eecs.berkeley.edu/Research/Areas/Centers/')
+        soup = BeautifulSoup(r.text)
+        start = False
+
+        file_name = self.get_file_name(self.school + "/" + "berkeley-eecs-labs", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for li in soup.find_all('li'):
+            if li.a != None and li.a['href'].startswith('http'):
+                
+                title = li.a.text.strip()
+                if title.startswith('Algorithms'):
+                    start = True
+                if start:
+                    self.count += 1
+                    self.write_db(f, 'berkeley-eecs-lab-' + str(self.count), title, li.a['href'], 'description:' + self.utils.removeDoubleSpace(li.p.text.strip().replace('\n', '')))
+                    print title
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def getSocialRobotLabs(self):
         r = requests.get('https://en.wikipedia.org/wiki/Social_robot')
         soup = BeautifulSoup(r.text)
