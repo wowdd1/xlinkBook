@@ -1,0 +1,26 @@
+amplab-github-1603-1 | tachyon | https://github.com/amplab/tachyon | description:Memory Centric Reliable Distributed Storage
+amplab-github-982-2 | shark | https://github.com/amplab/shark | description:Development in Shark has been ended.
+amplab-github-230-3 | keystone | https://github.com/amplab/keystone | description:Simplifying robust end-to-end machine learning on Apache Spark.
+amplab-github-228-4 | graphx | https://github.com/amplab/graphx | description:Former GraphX development repository. GraphX has been merged into Apache Spark; please submit pull requests there.
+amplab-github-222-5 | docker-scripts | https://github.com/amplab/docker-scripts | description:Dockerfiles and scripts for Spark and Shark Docker images
+amplab-github-140-6 | MLI | https://github.com/amplab/MLI | description:An API for Distributed Machine Learning
+amplab-github-125-7 | carat | https://github.com/amplab/carat | description:Carat: Collaborative Energy Debugging
+amplab-github-120-8 | datascience-sp14 | https://github.com/amplab/datascience-sp14 | description:Repository for data science course Spring 14
+amplab-github-103-9 | training | https://github.com/amplab/training | description:Training materials for Strata, AMP Camp, etc
+amplab-github-102-10 | spark-indexedrdd | https://github.com/amplab/spark-indexedrdd | description:An efficient updatable key-value store for Apache Spark
+amplab-github-90-11 | snap | https://github.com/amplab/snap | description:Scalable Nucleotide Alignment Program -- a fast and accurate read aligner for high-throughput sequencing data
+amplab-github-65-12 | benchmark | https://github.com/amplab/benchmark | description:Large scale query engine benchmark
+amplab-github-37-13 | ml-matrix | https://github.com/amplab/ml-matrix | description:Distributed Matrix Library
+amplab-github-36-14 | velox-modelserver | https://github.com/amplab/velox-modelserver | description:Updated Jun 8, 2015
+amplab-github-28-15 | smash | https://github.com/amplab/smash | description:Benchmarking toolkit for variant calling
+amplab-github-24-16 | ampcrowd | https://github.com/amplab/ampcrowd | description:A RESTful web service that runs microtasks across multiple crowds, provides quality control techniques, and is easily extensible.
+amplab-github-23-17 | training-scripts | https://github.com/amplab/training-scripts | description:Scripts to launch cluster used for Strata
+amplab-github-21-18 | succinct | https://github.com/amplab/succinct | description:Java/Scala Implementation of Succinct.
+amplab-github-12-19 | ampcamp | https://github.com/amplab/ampcamp | description:scripts used for ampcamp
+amplab-github-12-20 | spark-ec2 | https://github.com/amplab/spark-ec2 | description:Scripts used to setup a Spark cluster on EC2
+amplab-github-5-21 | pull-star | https://github.com/amplab/pull-star | description:Pull-Star Transformations for RegEx queries
+amplab-github-3-22 | mlsys | https://github.com/amplab/mlsys | description:An open source survey of the emerging systems for large-scale machine learning.
+amplab-github-3-23 | Buggypedia | https://github.com/amplab/Buggypedia | description:Updated Mar 1, 2012
+amplab-github-1-24 | ampcrowd-client-py | https://github.com/amplab/ampcrowd-client-py | description:A python client for using the AMPCrowd service
+amplab-github-1-25 | siren-release | https://github.com/amplab/siren-release | description:Public version of the SiRen project
+amplab-github-1-26 | sparse-covariance-inverse | https://github.com/amplab/sparse-covariance-inverse | description:Created Apr 5, 2012
