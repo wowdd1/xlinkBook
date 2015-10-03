@@ -253,6 +253,52 @@ STS  Science, Technology, and Society
 WGS  Women's and Gender Studies
 '''
 
+'''  mit research
+aeronautics and astronautics
+architecture
+anthropology
+arts
+astronomy
+biology/bioengineering
+business and management
+cancer
+chemistry/chemical engineering
+civil and environmental engineering
+cognitive science
+comparative media
+computer science
+earth, atmospheric and planetary sciences
+economics
+education
+electrical engineering
+energy
+entrepreneurship and invention
+global languages
+history
+humanities
+international studies
+libraries
+linguistics
+media arts and sciences
+materials science and engineering
+mathematics
+mechanical engineering
+medical sciences
+music
+nanoscience and nanotechnology
+neuroscience
+nuclear science and engineering
+oceanography and ocean engineering
+physics
+philosophy
+political science
+robotics and artificial intelligence
+social sciences
+transportation
+urban studies and planning
+writing
+'''
+
 ''' stanford
 Graduate School of Business
 Accounting (ACCT)
