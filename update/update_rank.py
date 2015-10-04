@@ -321,6 +321,38 @@ class BaikeSpider(Spider):
             else:
                 self.cancel_upgrade(file_name)
                 print "no need upgrade\n"
+
+    def processMacArthur(self, url):
+        utils = Utils()
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name(self.subject + "/macArthur-all-fellows", '')
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for table in soup.find_all('table', class_='multicol'):
+            sp = BeautifulSoup(table.prettify())
+            for li in sp.find_all('li'):
+                url = ''
+                if li.a != None:
+                    url = 'https://en.wikipedia.org' + li.a['href']
+                data = utils.removeDoubleSpace(li.text.strip().replace('\n', ''))
+                title = data[0 : data.find(',')].strip()
+                desc = "description:" + data[data.find(',') + 1 :].strip()
+                print title
+                self.count += 1
+                self.write_db(f, 'macArthur-fellow-' + str(self.count), title, url, desc)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
@@ -330,5 +362,6 @@ class BaikeSpider(Spider):
         self.processLeaderOfCountry('https://zh.wikipedia.org/wiki/%E5%90%84%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%88%97%E8%A1%A8')
         self.processTR35()
         self.processOldTR35()
+        self.processMacArthur('https://en.wikipedia.org/wiki/MacArthur_Fellows_Program')
 start = BaikeSpider()
 start.doWork()
