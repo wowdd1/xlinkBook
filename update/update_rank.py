@@ -248,6 +248,79 @@ class BaikeSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
+    def processOldTR35(self):
+        r = requests.get('http://www2.technologyreview.com/tr35/?year=1999')
+        soup = BeautifulSoup(r.text)
+        ul = soup.find('ul', class_='years')
+        soup = BeautifulSoup(ul.prettify())
+        for li in soup.find_all('li'):
+            year = li.a.text.strip()
+            if year == '2013':
+                continue
+
+            file_name = self.get_file_name(self.subject + "/mit-tr35/tr35-" + year + "#", '')
+            file_name = file_name[0 : file_name.find('#')]
+            file_lines = self.countFileLineNum(file_name)
+            f = self.open_db(file_name + ".tmp")
+            self.count = 0
+
+            r2 = requests.get('http://www2.technologyreview.com/' + li.a['href'])
+            sp = BeautifulSoup(r2.text)
+            for div in sp.find_all('div', class_='item'):
+                data = div.text.strip().replace('\t', '').split('\n')
+                index = 0
+                title = ''
+                desc = 'description:'
+                for d in data:
+                    if d == '':
+                        continue
+                    index += 1
+                    if index == 1:
+                        title = d
+                    else:
+                        desc += d + ' '
+                print title 
+                print desc
+                self.count += 1
+                self.write_db(f, 'tr35-' + year + '-' + str(self.count), title, 'http://www2.technologyreview.com/' + div.a['href'], desc)
+            self.close_db(f)
+            if file_lines != self.count and self.count > 0:
+                self.do_upgrade_db(file_name)
+                print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+            else:
+                self.cancel_upgrade(file_name)
+                print "no need upgrade\n"
+
+    def processTR35(self):
+        utils = Utils()
+        for i in range(0, 3):
+            year = str(2013 + i)
+            r = requests.get('http://www.technologyreview.com/lists/innovators-under-35/' + year)
+            soup = BeautifulSoup(r.text)
+            ul = soup.find('ul', class_='people')
+            soup = BeautifulSoup(ul.prettify())
+
+            file_name = self.get_file_name(self.subject + "/mit-tr35/tr35-" + year + "#", '')
+            file_name = file_name[0 : file_name.find('#')]
+            file_lines = self.countFileLineNum(file_name)
+            f = self.open_db(file_name + ".tmp")
+            self.count = 0
+
+            for li in soup.find_all('li'):
+                data = utils.removeDoubleSpace(li.text.strip().replace('\t', '').replace('\n', ''))
+                title = data[0 : data.find(',')].strip()
+                desc = 'description:' + data[data.find(',') + 1 :].strip() 
+                print title
+                print desc
+                self.count += 1
+                self.write_db(f, 'tr35-' + year + '-' + str(self.count), title, 'http://www.technologyreview.com/' + li.a['href'], desc)
+            self.close_db(f)
+            if file_lines != self.count and self.count > 0:
+                self.do_upgrade_db(file_name)
+                print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+            else:
+                self.cancel_upgrade(file_name)
+                print "no need upgrade\n"
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
@@ -255,6 +328,7 @@ class BaikeSpider(Spider):
         self.processComputerScienceData('http://web.cs.ucla.edu/~palsberg/h-number.html')
         self.processTop100Scientific('http://www.adherents.com/people/100_scientists.html#')
         self.processLeaderOfCountry('https://zh.wikipedia.org/wiki/%E5%90%84%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%88%97%E8%A1%A8')
-
+        self.processTR35()
+        self.processOldTR35()
 start = BaikeSpider()
 start.doWork()
