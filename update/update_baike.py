@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8 -*-
 #author: wowdd1
 #mail: developergf@gmail.com
 #data: 2014.12.07
@@ -211,13 +211,50 @@ class BaikeSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
         
+    def processLeaderOfCountry(self, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        start = False
+        file_name = self.get_file_name(self.subject + "/head-of-country", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+        for tr in soup.find_all('tr'):
+            textList = tr.text.split('\n')
+            title = ''
+            index = 0
+            country = ''
+            for text in textList:
+                if text == '中国':
+                    start = True
+                if text == '通用名称':
+                    title = ''
+                    break
+                index += 1
+                if index == 2:
+                    country = text.strip()
+                if index == 3 or index == 2:
+                    continue
+                title += text.strip() + ' '
+            if start and title != '':
+                print title.strip()
+                self.count += 1
+                self.write_db(f, "head-of-country-" + str(self.count), country, '', 'description:' + title.strip())
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
         self.processBaikeData("http://www.baike.com/wiki/IT%E4%B8%9A%E6%9C%80%E5%85%B7%E5%BD%B1%E5%93%8D%E5%8A%9B%E7%9A%84284%E4%BD%8D%E7%A8%8B%E5%BA%8F%E5%91%98")
         self.processComputerScienceData('http://web.cs.ucla.edu/~palsberg/h-number.html')
         self.processTop100Scientific('http://www.adherents.com/people/100_scientists.html#')
-
+        self.processLeaderOfCountry('https://zh.wikipedia.org/wiki/%E5%90%84%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%88%97%E8%A1%A8')
 
 start = BaikeSpider()
 start.doWork()
