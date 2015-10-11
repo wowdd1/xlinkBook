@@ -377,6 +377,31 @@ class BaikeSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
+
+    def processTopArtists(self, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name(self.subject + "/top-artists-from-20th-century", '')
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for tr in soup.find_all('tr'):
+            if tr.a != None and tr.a.strong != None and tr.p != None:
+                title = tr.a.text
+                print title
+                self.count += 1
+                self.write_db(f, "artists-" + str(self.count), title, tr.a['href'])
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
@@ -388,5 +413,6 @@ class BaikeSpider(Spider):
         self.processOldTR35()
         self.processMacArthur('https://en.wikipedia.org/wiki/MacArthur_Fellows_Program')
         self.processTopVc('http://www.leiphone.com/news/201406/0725-annie-angel.html')
+        self.processTopArtists('http://artscenetoday.com/artist_resources/times-top-200-artists/')
 start = BaikeSpider()
 start.doWork()
