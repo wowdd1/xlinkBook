@@ -402,6 +402,40 @@ class BaikeSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
+
+    def startupSpeakers(self):
+        r = requests.get('http://www.startupschool.org/past/')
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name(self.subject + "/startup-speaker", '')
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for p in soup.find_all('p'):
+            if p.a != None and p.a.b != None:
+                print p.text
+                url = "http:" + p.a['href']
+                self.count += 1
+                self.write_db(f, "startup-speaker-" + str(self.count), p.text.strip(), url)
+        r = requests.get('http://www.startupschool.org/speakers/')
+        soup = BeautifulSoup(r.text)
+        for p in soup.find_all('p'):
+            if p.strong != None and p.a != None:
+                print p.strong.text
+                url = "http:" + p.a['href']
+                self.count += 1
+                self.write_db(f, "startup-speaker-" + str(self.count), p.strong.text.strip(), url)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
@@ -414,5 +448,6 @@ class BaikeSpider(Spider):
         self.processMacArthur('https://en.wikipedia.org/wiki/MacArthur_Fellows_Program')
         self.processTopVc('http://www.leiphone.com/news/201406/0725-annie-angel.html')
         self.processTopArtists('http://artscenetoday.com/artist_resources/times-top-200-artists/')
+        self.startupSpeakers()
 start = BaikeSpider()
 start.doWork()
