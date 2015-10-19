@@ -434,8 +434,30 @@ class BaikeSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
+    def processBloomberg(self, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        file_name = self.get_file_name(self.subject + "/bloomberg", '')
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
 
+        for p in soup.find_all('p'):
+            if p.b != None:
+                title = p.text[p.text.find('.') + 1 : p.text.find('-')].strip()
+                desc = 'description:' + p.text[p.text.find('-') + 1 :] .strip()
+                print title
+                #print desc
+                self.count += 1
+                self.write_db(f, 'bloomberg-' + str(self.count), title, '', desc)
 
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
@@ -449,5 +471,6 @@ class BaikeSpider(Spider):
         self.processTopVc('http://www.leiphone.com/news/201406/0725-annie-angel.html')
         self.processTopArtists('http://artscenetoday.com/artist_resources/times-top-200-artists/')
         self.startupSpeakers()
+        self.processBloomberg('http://www.livemint.com/Politics/TGX2iczPnC5ofl2WKQR7FN/Narendra-Modi-in-Bloomberg-Markets-50-Most-Influential-list.html')
 start = BaikeSpider()
 start.doWork()
