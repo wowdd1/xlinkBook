@@ -111,7 +111,7 @@ need_update_subject_list = [
 ]
 
 def print_all_subject():
-    print ' , '.join(subject_dict.values())
+    print ', '.join(subject_dict.values())
 
 # reference subjects #
 ''' harvard
