@@ -76,7 +76,7 @@ subject_dict = {\
     "Global Studies and Languages" : "education",\
     "Music and Theater Arts" : "art",\
     "Nuclear Science and Engineering" : "engineering",\
-    "Media Arts and Sciences" : "others",\
+    "Media Arts and Sciences" : "eecs",\
     "Aerospace Studies" : "others",\
     "Comparative Media Studies" : "others",\
     "Computational and Systems Biology" : "others",\
