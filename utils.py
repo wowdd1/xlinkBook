@@ -139,6 +139,9 @@ class Utils:
                          'citeseerx' : 'http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q=',\
                          'springer' : 'http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText=',\
                          'dblife' : 'http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query=',\
+                         'appft.uspto' : 'http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1=',\
+                         'patft.uspto' : 'http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1=',\
+                         'patents.google' : 'https://patents.google.com/?q=',\
                          'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
                          'youtube' : 'https://www.youtube.com/results?search_query=',\
                          'coursera' : 'https://www.coursera.org/courses?query=',\
