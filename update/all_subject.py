@@ -98,7 +98,7 @@ need_update_subject_list = [
     #'business-management',
     'economics',
     #'rank',
-    #'physics',
+    'physics',
     #'cognitive-science',
     #'neuroscience',
     #'literature',
