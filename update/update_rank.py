@@ -458,6 +458,32 @@ class BaikeSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
+
+    def processWatermanAward(self, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name(self.subject + "/waterman-award", '')
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for dl in soup.find_all('dl'):
+            year = dl.dt.text
+            title = dl.dd.a.text
+            url = 'https://en.wikipedia.org' + dl.dd.a['href']
+            print year + ' ' + title
+            self.count += 1
+            self.write_db(f, 'waterman-award-' + str(year), title, url)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def doWork(self):
         self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
@@ -472,5 +498,6 @@ class BaikeSpider(Spider):
         self.processTopArtists('http://artscenetoday.com/artist_resources/times-top-200-artists/')
         self.startupSpeakers()
         self.processBloomberg('http://www.livemint.com/Politics/TGX2iczPnC5ofl2WKQR7FN/Narendra-Modi-in-Bloomberg-Markets-50-Most-Influential-list.html')
+        self.processWatermanAward('https://en.wikipedia.org/wiki/Alan_T._Waterman_Award')
 start = BaikeSpider()
 start.doWork()
