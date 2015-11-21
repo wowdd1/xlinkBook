@@ -610,7 +610,9 @@ class GithubSpider(Spider):
                 "square" : "https://github.com/square",\
                 "google-cloud-platform" : "https://github.com/GoogleCloudPlatform",\
                 "baidu" : "https://github.com/Baidu",\
-                "amplab" : "https://github.com/amplab"}
+                "amplab" : "https://github.com/amplab",\
+                'OculusVR' : 'https://github.com/OculusVR/',\
+                'OSVR' : 'https://github.com/OSVR/'}
         for k in data:
 
             file_name = self.get_file_name("eecs/github/" + k, self.school)
@@ -672,7 +674,7 @@ class GithubSpider(Spider):
         print "get user data..."
         self.processGithubiUserData("all", 500, 100)
         self.processGithubiUserData("china", 500, 100)
- 
+
         self.getBigCompanyProjects()
 start = GithubSpider()
 start.doWork()

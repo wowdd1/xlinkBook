@@ -1,0 +1,31 @@
+OSVR-github-64-1 | OSVR-Core | https://github.com/OSVR/OSVR-Core | description:The core libraries, applications, and plugins of the OSVR software platform.
+OSVR-github-23-2 | OSVR-HDK | https://github.com/OSVR/OSVR-HDK | description:OSVR HDK production files
+OSVR-github-20-3 | OSVR-Unity | https://github.com/OSVR/OSVR-Unity | description:Package for authoring OSVR experiences with Unity.
+OSVR-github-16-4 | OSVR-Unreal | https://github.com/OSVR/OSVR-Unreal | description:OSVR plugin for Unreal Engine
+OSVR-github-10-5 | OSVR-Oculus-Rift | https://github.com/OSVR/OSVR-Oculus-Rift | description:Oculus Rift tracking plugin for OSVR.
+OSVR-github-8-6 | SteamVR-OSVR | https://github.com/OSVR/SteamVR-OSVR | description:An OSVR plugin for SteamVR, providing SteamVR support for OSVR HMDs.
+OSVR-github-6-7 | distortionizer | https://github.com/OSVR/distortionizer | description:Tool for determining distortion parameters of arbitrary HMDs, and a corresponding set of shaders to correct that distortion.
+OSVR-github-5-8 | Managed-OSVR | https://github.com/OSVR/Managed-OSVR | description:OSVR .NET/CLR bindings
+OSVR-github-4-9 | OSVR-Tracker-Viewer | https://github.com/OSVR/OSVR-Tracker-Viewer | description:Utility for viewing OSVR tracking data, using OpenSceneGraph.
+OSVR-github-4-10 | OSVR-General | https://github.com/OSVR/OSVR-General | description:Catch-all project for issues and information not specific to a single repo
+OSVR-github-4-11 | Homebrew-OSVR | https://github.com/OSVR/Homebrew-OSVR | description:Mac OS X Homebrew tap for OSVR
+OSVR-github-4-12 | OSVR-Android-Build | https://github.com/OSVR/OSVR-Android-Build | description:Repo with submodules for building OSVR for Android
+OSVR-github-4-13 | OSVR-Leap-Motion | https://github.com/OSVR/OSVR-Leap-Motion | description:OSVR Leap Motion plugin
+OSVR-github-4-14 | OSVR-Specs-and-Proposals | https://github.com/OSVR/OSVR-Specs-and-Proposals | description:Plugin schemas in development
+OSVR-github-3-15 | OSVR-Unity-Palace-Demo | https://github.com/OSVR/OSVR-Unity-Palace-Demo | description:A simple example OSVR Unity 4 project.
+OSVR-github-2-16 | OSVR-SMI | https://github.com/OSVR/OSVR-SMI | description:SMI eye-tracker plugin
+OSVR-github-2-17 | OSVR-AndroidServerLauncher | https://github.com/OSVR/OSVR-AndroidServerLauncher | description:Updated Oct 16, 2015
+OSVR-github-1-18 | OSVR-JSON-Editor | https://github.com/OSVR/OSVR-JSON-Editor | description:Browser-based tool for editing OSVR JSON files, based on JSON Schema.
+OSVR-github-1-19 | OSVR-Nod | https://github.com/OSVR/OSVR-Nod | description:OSVR plugin for Nod Ring devices
+OSVR-github-1-20 | OSVR-JSON-Schemas | https://github.com/OSVR/OSVR-JSON-Schemas | description:JSON Schemas related to OSVR interfaces.
+OSVR-github-1-21 | OSVR-win-installer | https://github.com/OSVR/OSVR-win-installer | description:Basic windows installer
+OSVR-github-1-22 | OSVR-user-settings | https://github.com/OSVR/OSVR-user-settings | description:Utility to help users set up their configuration parameters
+OSVR-github-1-23 | OSVR-Android-Plugins | https://github.com/OSVR/OSVR-Android-Plugins | description:Source for Android-specific plugins
+OSVR-github-1-24 | OSVR-Android-Samples | https://github.com/OSVR/OSVR-Android-Samples | description:Temporary home for OSVR Android samples.
+OSVR-github-1-25 | OSVR-Boxstarter | https://github.com/OSVR/OSVR-Boxstarter | description:Boxstarter self-installer scripts to prepare user, developer, or CI environments using Chocolatey.
+OSVR-github-1-26 | libfunctionality | https://github.com/OSVR/libfunctionality | description:A minimal library for dynamically-loaded or statically-linked functionality modules.
+OSVR-github-1-27 | OSVR-Android-SDK | https://github.com/OSVR/OSVR-Android-SDK | description:Android SDK for OSVR - link goes to latest build download
+OSVR-github-1-28 | UIforETWbins | https://github.com/OSVR/UIforETWbins | description:Repo of binaries from the google/UIforETW project - link goes to source
+OSVR-github-0-29 | OSVR-Compatibility-Aggregator | https://github.com/OSVR/OSVR-Compatibility-Aggregator | description:Ruby gem for retrieving and using JSON metadata related to OSVR.
+OSVR-github-0-30 | OSVR-HDK-Windows-Drivers | https://github.com/OSVR/OSVR-HDK-Windows-Drivers | description:Drivers and related code/data for improving the hardware experience for the HDK on Windows
+OSVR-github-0-31 | OSVR-Vuzix | https://github.com/OSVR/OSVR-Vuzix | description:OSVR plugin to support Vuzix HMDs
