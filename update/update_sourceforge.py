@@ -14,7 +14,7 @@ class SourceforgeSpider(Spider):
 
     def processSourceforgeData(self, name, v):
         print "processing " + name
-        file_name = self.get_file_name("eecs/sourceforge/" + name, self.school)
+        file_name = self.get_file_name("eecs/projects/sourceforge/" + name, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
