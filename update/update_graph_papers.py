@@ -19,7 +19,7 @@ class GraphPapersSpider(Spider):
         paper_list = []
         i = 0
 
-        file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + conference + year, '')
+        file_name = self.get_file_name("eecs/papers/" + self.school.lower() + '/' + conference + year, '')
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
