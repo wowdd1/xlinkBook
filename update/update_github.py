@@ -476,7 +476,7 @@ class GithubSpider(Spider):
         return total_size
 
     def processGithubData(self, lang, large_than_stars, per_page, name_contain=''):
-        file_name = self.get_file_name("eecs/github/" + lang, self.school)
+        file_name = self.get_file_name("eecs/projects/github/" + lang, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         page = 1
@@ -615,7 +615,7 @@ class GithubSpider(Spider):
                 'OSVR' : 'https://github.com/OSVR/'}
         for k in data:
 
-            file_name = self.get_file_name("eecs/github/" + k, self.school)
+            file_name = self.get_file_name("eecs/projects/github/" + k, self.school)
             file_lines = self.countFileLineNum(file_name)
             f = self.open_db(file_name + ".tmp")
             self.count = 0
