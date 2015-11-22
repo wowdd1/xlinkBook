@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-list_all = {"", "微软", "谷歌", "facebook"}
+list_all = {"", "微软", "谷歌", "facebook", "darpa"}
 
 for a in list_all:
     for i in range(0, 5):
