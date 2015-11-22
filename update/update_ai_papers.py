@@ -26,7 +26,7 @@ class AiPapersSpider(Spider):
         for key, v in sorted([(k,paper_dict[k]) for k in sorted(paper_dict.keys())]):
             #print key + ' paper:' + str(len(paper_dict[key]))
             print 'processing ' + key
-            file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + key, "scholaroctopus")
+            file_name = self.get_file_name("eecs/papers/" + self.school.lower() + '/' + key, "scholaroctopus")
             file_lines = self.countFileLineNum(file_name)
             if file_lines == len(v):
                 continue
@@ -200,7 +200,7 @@ class AiPapersSpider(Spider):
                     
             for a in soup2.find_all('a'):
                 if a['href'][1 : 2] == "/":
-                    file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + th_list[i] + "-" + a.text.strip(), "scholaroctopus")
+                    file_name = self.get_file_name("eecs/papers/" + self.school.lower() + '/' + th_list[i] + "-" + a.text.strip(), "scholaroctopus")
                     file_lines = self.countFileLineNum(file_name)
                     f = self.open_db(file_name + ".tmp")
                     self.count = 0
@@ -249,7 +249,7 @@ class AiPapersSpider(Spider):
         print topic
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
-        file_name = self.get_file_name("eecs/" + self.school.lower() + '/jmlr'  + "-" + topic, "scholaroctopus")
+        file_name = self.get_file_name("eecs/papers/" + self.school.lower() + '/jmlr'  + "-" + topic, "scholaroctopus")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -305,7 +305,7 @@ class AiPapersSpider(Spider):
                     self.getRSSPapers("http://www.roboticsproceedings.org/" + li.a["href"], topic)
 
     def getRSSPapers(self, url, topic):
-        file_name = self.get_file_name("eecs/" + self.school.lower() + '/' + topic, "scholaroctopus")
+        file_name = self.get_file_name("eecs/papers/" + self.school.lower() + '/' + topic, "scholaroctopus")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
