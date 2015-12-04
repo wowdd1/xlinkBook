@@ -1,0 +1,16 @@
+apple-github-15104-1 | swift | https://github.com/apple/swift | description:The Swift Programming Language
+apple-github-1607-2 | swift-package-manager | https://github.com/apple/swift-package-manager | description:The Package Manager for the Swift Programming Language
+apple-github-1192-3 | swift-evolution | https://github.com/apple/swift-evolution | description:Updated Dec 4, 2015
+apple-github-912-4 | swift-corelibs-foundation | https://github.com/apple/swift-corelibs-foundation | description:The Foundation Project, providing core utilities, internationalization, and OS independence
+apple-github-370-5 | swift-corelibs-libdispatch | https://github.com/apple/swift-corelibs-libdispatch | description:The libdispatch Project, (a.k.a. Grand Central Dispatch), for concurrency on multicore hardware
+apple-github-254-6 | swift-llvm | https://github.com/apple/swift-llvm | description:Updated Dec 4, 2015
+apple-github-249-7 | swift-corelibs-xctest | https://github.com/apple/swift-corelibs-xctest | description:The XCTest Project, A Swift core library for providing unit test support
+apple-github-227-8 | swift-3-api-guidelines-review | https://github.com/apple/swift-3-api-guidelines-review | description:Updated Dec 3, 2015
+apple-github-214-9 | swift-clang | https://github.com/apple/swift-clang | description:Updated Dec 4, 2015
+apple-github-193-10 | swift-lldb | https://github.com/apple/swift-lldb | description:This is the version of LLDB that supports the Swift programming language & REPL.
+apple-github-185-11 | swift-cmark | https://github.com/apple/swift-cmark | description:CommonMark parsing and rendering library and program in C
+apple-github-178-12 | swift-llbuild | https://github.com/apple/swift-llbuild | description:A low-level build system, used by the Swift Package Manager
+apple-github-81-13 | example-package-dealer | https://github.com/apple/example-package-dealer | description:Example package for use with the Swift Package Manager
+apple-github-75-14 | example-package-playingcard | https://github.com/apple/example-package-playingcard | description:Example package for use with the Swift Package Manager
+apple-github-75-15 | example-package-fisheryates | https://github.com/apple/example-package-fisheryates | description:Example package for use with the Swift Package Manager
+apple-github-68-16 | example-package-deckofplayingcards | https://github.com/apple/example-package-deckofplayingcards | description:Example package for use with the Swift Package Manager
