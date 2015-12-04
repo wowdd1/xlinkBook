@@ -600,6 +600,7 @@ class GithubSpider(Spider):
     def getBigCompanyProjects(self):
         data = {"google" : "https://github.com/google",\
                 "microsoft" : "https://github.com/Microsoft",\
+                "apple" : "https://github.com/apple/",\
                 "yahoo" : "https://github.com/yahoo",\
                 "facebook" : "https://github.com/facebook",\
                 "twitter" : "https://github.com/twitter",\
@@ -613,6 +614,7 @@ class GithubSpider(Spider):
                 "amplab" : "https://github.com/amplab",\
                 'OculusVR' : 'https://github.com/OculusVR/',\
                 'OSVR' : 'https://github.com/OSVR/'}
+
         for k in data:
 
             file_name = self.get_file_name("eecs/projects/github/" + k, self.school)
@@ -674,7 +676,7 @@ class GithubSpider(Spider):
         print "get user data..."
         self.processGithubiUserData("all", 500, 100)
         self.processGithubiUserData("china", 500, 100)
-
+ 
         self.getBigCompanyProjects()
 start = GithubSpider()
 start.doWork()
