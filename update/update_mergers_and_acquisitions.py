@@ -29,7 +29,7 @@ class MergersAndAcquisitionsSpider(Spider):
             count = 0
             title = ''
             desc = 'description:'
-            file_name = self.get_file_name('economics/' + key, self.school)
+            file_name = self.get_file_name('economics/mergers-and-acquisitions/' + key, self.school)
             file_lines = self.countFileLineNum(file_name)
             f = self.open_db(file_name + ".tmp")
             self.count = 0
