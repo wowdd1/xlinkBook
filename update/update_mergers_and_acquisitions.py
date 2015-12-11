@@ -34,12 +34,13 @@ class MergersAndAcquisitionsSpider(Spider):
             f = self.open_db(file_name + ".tmp")
             self.count = 0
             item_id = key + '-merger-'
-
+            rows = soup.find_all('tr')
+            print len(rows)
             for td in soup.find_all('td'):
                 count += 1
 
                 if key == 'google':
-                    if count > 8:
+                    if count > 8 or (count == 8 and self.count == len(rows) - 2):
                         print title
                         count = 1
                         self.count += 1
@@ -55,7 +56,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         else:
                             desc += td.text.strip() + ' '
                 if key == 'facebook':
-                    if count > 10:
+                    if count > 10 or (count == 10 and self.count == len(rows) - 2):
                         count = 1
                         print title
                         self.count += 1
@@ -73,7 +74,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         else:
                             desc += td.text.strip() + ' '
                 if key == 'microsoft':
-                    if count > 7:
+                    if count > 7 or (count == 7 and self.count == len(rows) - 2):
                         count = 1
                         print title
                         self.count += 1
@@ -89,7 +90,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         else:
                             desc += td.text.strip() + ' '
                 if key == 'apple':
-                    if count > 8:
+                    if count > 8 or (count == 8 and self.count == len(rows) - 2):
                         print title
                         count = 1
                         self.count += 1
@@ -105,7 +106,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         else:
                             desc += td.text.strip() + ' '
                 if key == 'ibm':
-                    if count > 6:
+                    if count > 6 or (count == 6 and self.count == len(rows) - 2):
                         print title
                         count = 1
                         self.count += 1
@@ -121,7 +122,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         else:
                             desc += td.text.strip().replace('\n','') + ' '
                 if key == 'yahoo':
-                    if count > 8:
+                    if count > 8 or (count == 8 and self.count == len(rows) - 2):
                         count = 1
                         print title
                         self.count += 1
@@ -137,7 +138,7 @@ class MergersAndAcquisitionsSpider(Spider):
                         else:
                             desc += td.text.strip() + ' '
                 if key == 'twitter':
-                    if count > 8:
+                    if count > 8 or (count == 8 and self.count == len(rows) - 2):
                         count = 1
                         print title
                         self.count += 1
