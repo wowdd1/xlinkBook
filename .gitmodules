@@ -76,3 +76,6 @@
 [submodule "paper/researchlei"]
 	path = paper/researchlei
 	url = https://github.com/karpathy/researchlei.git
+[submodule "paper/arxiv-sanity-preserver"]
+	path = paper/arxiv-sanity-preserver
+	url = https://github.com/karpathy/arxiv-sanity-preserver.git
