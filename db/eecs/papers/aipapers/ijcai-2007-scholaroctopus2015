@@ -1,0 +1,480 @@
+ijcai-2007-1 | Preface / vi | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-477.pdf | 
+ijcai-2007-2 | IJCAI-07 Conference Organization / vii | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-478.pdf | 
+ijcai-2007-3 | IJCAI-07 Awards and Distinguished Papers / xii | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-479.pdf | 
+ijcai-2007-4 | IJCAI-07 Keynote and Invited Speakers / xiii | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-480.pdf | 
+ijcai-2007-5 | IJCAI Organization / xv | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-483.pdf | 
+ijcai-2007-6 | Past IJCAI Conferences / xvii | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-484.pdf | 
+ijcai-2007-7 | IJCAI-07 Reviewers / xviii | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-485.pdf | 
+ijcai-2007-8 | Cooperating Reasoning Processes: More than Just the Sum of Their Parts | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-001.pdf | 
+ijcai-2007-9 | Learning and Multiagent Reasoning for Autonomous Agents | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-002.pdf | 
+ijcai-2007-10 | The Logic Behind Weighted CSP | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-003.pdf | 
+ijcai-2007-11 | QCSP Made Practical by Virtue of Restricted Quantification | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-004.pdf | 
+ijcai-2007-12 | Learning Implied Global Constraints | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-005.pdf | 
+ijcai-2007-13 | Query-Driven Constraint Acquisition | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-006.pdf | 
+ijcai-2007-14 | A General Framework for Scheduling in a Stochastic Environment | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-007.pdf | 
+ijcai-2007-15 | New Constraint Programming Approaches for the Computation of Leximin-Optimal Solutions in Constraint Networks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-008.pdf | 
+ijcai-2007-16 | Optimal Soft Arc Consistency | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-009.pdf | 
+ijcai-2007-17 | Quantified Constraint Satisfaction Problems: From Relaxations to Explanations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-010.pdf | 
+ijcai-2007-18 | The Design of ESSENCE: A Constraint Language for Specifying Combinatorial Problems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-011.pdf | 
+ijcai-2007-19 | Conditional Constraint Satisfaction: Logical Foundations and Complexity | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-012.pdf | 
+ijcai-2007-20 | Generalized Interval Projection: A New Technique for Consistent Domain Extension | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-013.pdf | 
+ijcai-2007-21 | Techniques for Efficient Interactive Configuration of Distribution Networks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-014.pdf | 
+ijcai-2007-22 | Distance Constraints in Constraint Satisfaction | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-015.pdf | 
+ijcai-2007-23 | Dynamic Heuristics for Backtrack Search on Tree-Decomposition of CSPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-016.pdf | 
+ijcai-2007-24 | Symmetric Component Caching | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-017.pdf | 
+ijcai-2007-25 | A Study of Residual Supports in Arc Consistency | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-018.pdf | 
+ijcai-2007-26 | Nogood Recording from Restarts | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-019.pdf | 
+ijcai-2007-27 | Arc Consistency during Search | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-020.pdf | 
+ijcai-2007-28 | Probabilistic Consistency Boosts MAC and SAC | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-021.pdf | 
+ijcai-2007-29 | Constraint and Variable Ordering Heuristics for Compiling Configuration Problems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-022.pdf | 
+ijcai-2007-30 | A Theoretical Framework for Learning Bayesian Networks with Parameter Inequality Constraints | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-023.pdf | 
+ijcai-2007-31 | Grounding for Model Expansion in k-Guarded Formulas with Inductive Definitions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-024.pdf | 
+ijcai-2007-32 | PC-DPOP: A New Partial Centralization Algorithm for Distributed Optimization | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-025.pdf | 
+ijcai-2007-33 | A Dynamic Approach for MPE and Weighted MAX-SAT | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-026.pdf | 
+ijcai-2007-34 | Backtracking Procedures for Hypertree, HyperSpread and Connected Hypertree Decomposition of CSPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-027.pdf | 
+ijcai-2007-35 | A Call Admission Control Scheme Using NeuroEvolution Algorithm in Cellular Networks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-028.pdf | 
+ijcai-2007-36 | Fast Algorithm for Connected Row Convex Constraints | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-029.pdf | 
+ijcai-2007-37 | Conflict Directed Backjumping for Max-CSPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-030.pdf | 
+ijcai-2007-38 | The Mathematical Morpho-Logical View on Reasoning about Space | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-031.pdf | 
+ijcai-2007-39 | An Information-Theoretic Analysis of Memory Bounds in a Distributed Resource Allocation Mechanism | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-032.pdf | 
+ijcai-2007-40 | A Description Logic of Change | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-033.pdf | 
+ijcai-2007-41 | From Generic Knowledge to Specific Reasoning for Medical Image Interpretation Using Graph based Representations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-034.pdf | 
+ijcai-2007-42 | Completing Description Logic Knowledge Bases Using Formal Concept Analysis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-035.pdf | 
+ijcai-2007-43 | Non-monotonic Temporal Logics for Goal Specification | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-036.pdf | 
+ijcai-2007-44 | Using the Probabilistic Logic Programming Language P-log for Causal and Counterfactual Reasoning and Non-Naive Conditioning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-037.pdf | 
+ijcai-2007-45 | Context-Driven Predictions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-038.pdf | 
+ijcai-2007-46 | Entailment Semantics for Rules with Priorities | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-039.pdf | 
+ijcai-2007-47 | Higher-Order Potentialities and their Reducers: A Philosophical Foundation Unifying Dynamic Modeling Methods | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-040.pdf | 
+ijcai-2007-48 | Contextual Default Reasoning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-041.pdf | 
+ijcai-2007-49 | EQL-Lite: Effective First-Order Query Processing in Description Logics | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-042.pdf | 
+ijcai-2007-50 | A Lattice-Based Approach to Computing Warranted Beliefs in Skeptical Argumentation Frameworks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-043.pdf | 
+ijcai-2007-51 | A Framework for Decentralized Qualitative Model-Based Diagnosis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-044.pdf | 
+ijcai-2007-52 | Exploiting Independence in a Decentralised and Incremental Approach of Diagnosis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-045.pdf | 
+ijcai-2007-53 | A Logical Framework for Modularity of Ontologies | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-046.pdf | 
+ijcai-2007-54 | Embedding Non-Ground Logic Programs into Autoepistemic Logic for Knowledge-Base Combination | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-047.pdf | 
+ijcai-2007-55 | Modeling When Connections Are the Problem | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-048.pdf | 
+ijcai-2007-56 | Tractable Temporal Reasoning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-049.pdf | 
+ijcai-2007-57 | Chronicle Recognition Improvement Using Temporal Focusing and Hierarchization | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-050.pdf | 
+ijcai-2007-58 | Complexity Results for Checking Equivalence of Stratified Logic Programs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-051.pdf | 
+ijcai-2007-59 | On Reversing Actions: Algorithms and Complexity | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-052.pdf | 
+ijcai-2007-60 | Fault-Model-Based Test Generation for Embedded Software | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-053.pdf | 
+ijcai-2007-61 | Semantic Precision and Recall for Ontology Alignment Evaluation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-054.pdf | 
+ijcai-2007-62 | Operator Component Matrix Model for IMP Program Diagnosis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-055.pdf | 
+ijcai-2007-63 | On Valued Negation Normal Form Formulas | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-056.pdf | 
+ijcai-2007-64 | A Logic Program Characterization of Causal Theories | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-057.pdf | 
+ijcai-2007-65 | A New Perspective on Stable Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-058.pdf | 
+ijcai-2007-66 | Conflict-Based Diagnosis: Adding Uncertainty to Model-based Diagnosis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-059.pdf | 
+ijcai-2007-67 | Conflict-Driven Answer Set Solving | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-060.pdf | 
+ijcai-2007-68 | Ranking Alternatives on the Basis of Generic Constraints and Examples — A Possibilistic Approach | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-061.pdf | 
+ijcai-2007-69 | Conjunctive Query Answering for the Description Logic SHIQ | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-062.pdf | 
+ijcai-2007-70 | A Dual-Pathway Neural Network Model of Control Relinquishment in Motor Skill Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-063.pdf | 
+ijcai-2007-71 | Some Effects of a Reduced Relational Vocabulary on the Whodunit Problem | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-064.pdf | 
+ijcai-2007-72 | Counting Complexity of Propositional Abduction | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-065.pdf | 
+ijcai-2007-73 | Extracting Chatbot Knowledge from Online Discussion Forums | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-066.pdf | 
+ijcai-2007-74 | Improving Author Coreference by Resource-Bounded Information Gathering from the Web | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-067.pdf | 
+ijcai-2007-75 | Combining Topological and Directional Information for Spatial Reasoning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-068.pdf | 
+ijcai-2007-76 | From Answer Set Logic Programming to Circumscription via Logic of GK | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-069.pdf | 
+ijcai-2007-77 | Incremental Learning of Perceptual Categories for Open-Domain Sketch Recognition | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-070.pdf | 
+ijcai-2007-78 | Conservative Extensions in Expressive Description Logics | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-071.pdf | 
+ijcai-2007-79 | Towards a Computational Model of Melody Identification in Polyphonic Music | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-072.pdf | 
+ijcai-2007-80 | Modelling Well-Structured Argumentation Lines | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-073.pdf | 
+ijcai-2007-81 | Abstract Interpretation of Programs for Model-Based Debugging | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-074.pdf | 
+ijcai-2007-82 | A Faithful Integration of Description Logics with Logic Programming | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-075.pdf | 
+ijcai-2007-83 | Evaluating a Decision-Theoretic Approach to Tailored Example Selection | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-076.pdf | 
+ijcai-2007-84 | ExpectationFailure as a Basis for Agent-Based Model Diagnosis and Mixed InitiativeModel Adaptation during Anomalous Plan Execution | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-077.pdf | 
+ijcai-2007-85 | Consistency Checking of Basic Cardinal Constraints over Connected Regions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-078.pdf | 
+ijcai-2007-86 | Probabilistic Go Theories | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-079.pdf | 
+ijcai-2007-87 | Surprise as Shortcut for Anticipation: Clustering Mental States in Reasoning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-080.pdf | 
+ijcai-2007-88 | Automated Benchmark Model Generators for Model-Based Diagnostic Inference | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-081.pdf | 
+ijcai-2007-89 | Automated Heart Wall Motion Abnormality Detection from Ultrasound Images Using Bayesian Networks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-082.pdf | 
+ijcai-2007-90 | Qualitative Spatial and Temporal Reasoning: Efficient Algorithms for Everyone | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-083.pdf | 
+ijcai-2007-91 | Diagnosability Testing with Satisfiability Algorithms | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-084.pdf | 
+ijcai-2007-92 | Diagnosers and Diagnosability of Succinct Transition Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-085.pdf | 
+ijcai-2007-93 | Is the Turing Test Good Enough? The Fallacy of Resource-Unbounded Intelligence | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-086.pdf | 
+ijcai-2007-94 | OSS: A Semantic Similarity Function based on Hierarchical Ontologies | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-087.pdf | 
+ijcai-2007-95 | Description Logics with Approximate Definitions - Precise Modeling of Vague Concepts | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-088.pdf | 
+ijcai-2007-96 | A Size-Based Qualitative Approach to the Representation of Spatial Granularity | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-089.pdf | 
+ijcai-2007-97 | Qualitative Temporal Reasoning about Vague Events | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-090.pdf | 
+ijcai-2007-98 | Scalable Diagnosability Checking of Event-Driven Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-091.pdf | 
+ijcai-2007-99 | Hierarchical Diagnosis of Multiple Faults | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-092.pdf | 
+ijcai-2007-100 | Detection of Cognitive States from fMRI Data Using Machine Learning Techniques | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-093.pdf | 
+ijcai-2007-101 | Model-Based Optimization of Testing through Reduction of Stimuli | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-094.pdf | 
+ijcai-2007-102 | A General Framework for Reasoning about Inconsistency | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-095.pdf | 
+ijcai-2007-103 | Appearance Based Recognition Methodology for Recognising Fingerspelling Alphabets | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-096.pdf | 
+ijcai-2007-104 | Resource Constraints on Computation and Communication in the Brain | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-097.pdf | 
+ijcai-2007-105 | An Experience on Reputation Models Interoperability Based on a Functional Ontology | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-098.pdf | 
+ijcai-2007-106 | A Labeling Approach to the Computation of Credulous Acceptance in Argumentation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-099.pdf | 
+ijcai-2007-107 | A Convengent Solution to Tensor Subspace Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-100.pdf | 
+ijcai-2007-108 | All Common Subsequences | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-101.pdf | 
+ijcai-2007-109 | Representations for Action Selection Learning from Real-Time Observation of Task Experts | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-102.pdf | 
+ijcai-2007-110 | Epistemic Reasoning in Logic Programs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-103.pdf | 
+ijcai-2007-111 | Keep the Decision Tree and Estimate the Class Probabilities Using its Decision Boundary | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-104.pdf | 
+ijcai-2007-112 | Updates for Nonlinear Discriminants | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-105.pdf | 
+ijcai-2007-113 | A Fully Connectionist Model Generator for Covered First-Order Logic Programs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-106.pdf | 
+ijcai-2007-114 | General Game Learning Using Knowledge Transfer | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-107.pdf | 
+ijcai-2007-115 | Learning by Analogy: A Classification Rule for Binary and Nominal Data | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-108.pdf | 
+ijcai-2007-116 | Interactive Clustering of Text Collections According to a User-Specified Criterion | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-109.pdf | 
+ijcai-2007-117 | Heuristic Selection of Actions in Multiagent Reinforcement Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-110.pdf | 
+ijcai-2007-118 | Unsupervised Discretization Using Kernel Density Estimation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-111.pdf | 
+ijcai-2007-119 | Case-Based Multilabel Ranking | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-112.pdf | 
+ijcai-2007-120 | Exploiting Known Taxonomies in Learning Overlapping Concepts | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-113.pdf | 
+ijcai-2007-121 | Locality Sensitive Discriminant Analysis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-114.pdf | 
+ijcai-2007-122 | Learning and Transferring Action Schemas | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-115.pdf | 
+ijcai-2007-123 | Online Learning and Exploiting Relational Models in Reinforcement Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-116.pdf | 
+ijcai-2007-124 | Permanents, Transport Polytopes and Positive Definite Kernels on Histograms | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-117.pdf | 
+ijcai-2007-125 | Utile Distinctions for Relational Reinforcement Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-118.pdf | 
+ijcai-2007-126 | Boosting Kernel Discriminant Analysis and Its Application on Tissue Classification of Gene Expression Data | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-119.pdf | 
+ijcai-2007-127 | Case Base Mining for Adaptation Knowledge Acquisition | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-120.pdf | 
+ijcai-2007-128 | Learning Classifiers When the Training Data Is Not IID | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-121.pdf | 
+ijcai-2007-129 | Kernel Carpentry for Online Regression Using Randomly Varying Coefficient Model | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-122.pdf | 
+ijcai-2007-130 | Occam’s Razor Just Got Sharper | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-123.pdf | 
+ijcai-2007-131 | Sequence Labelling in Structured Domains with Hierarchical Recurrent Neural Networks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-124.pdf | 
+ijcai-2007-132 | Predicting and Preventing Coordination Problems in Cooperative Q-learning Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-125.pdf | 
+ijcai-2007-133 | Feature Selection and Kernel Design via Linear Programming | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-126.pdf | 
+ijcai-2007-134 | Learning Restart Strategies | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-127.pdf | 
+ijcai-2007-135 | Incremental Construction of Structured Hidden Markov Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-128.pdf | 
+ijcai-2007-136 | On Mining Closed Sets in Multi-Relational Data | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-129.pdf | 
+ijcai-2007-137 | Improving Embeddings by Flexible Exploitation of Side Information | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-130.pdf | 
+ijcai-2007-138 | State Similarity Based Approach for Improving Performance in RL | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-131.pdf | 
+ijcai-2007-139 | Optimistic Active-Learning Using Mutual Information | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-132.pdf | 
+ijcai-2007-140 | Continuous Time Associative Bandit Problems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-133.pdf | 
+ijcai-2007-141 | Maximum Margin Coresets for Active and Noise Tolerant Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-134.pdf | 
+ijcai-2007-142 | Real Boosting a la Carte with an Application to Boosting Oblique Decision Tree | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-135.pdf | 
+ijcai-2007-143 | Self-Adjusting Ring Modules (SARMs) for Flexible Gait Pattern Generation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-136.pdf | 
+ijcai-2007-144 | Analogical Learning in a Turn-Based Strategy Game | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-137.pdf | 
+ijcai-2007-145 | Constructing New and Better Evaluation Measures for Machine Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-138.pdf | 
+ijcai-2007-146 | Improving Anytime Point-Based Value Iteration Using Principled Point Selections | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-139.pdf | 
+ijcai-2007-147 | A Three-Stage Neural Model for Attribute Based Classification and Indexing of Fly Ashes | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-140.pdf | 
+ijcai-2007-148 | Selective Supervision: Guiding Supervised Learning with Decision-Theoretic Active Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-141.pdf | 
+ijcai-2007-149 | Exploiting Sensorimotor Coordination for Learning to Recognize Objects | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-142.pdf | 
+ijcai-2007-150 | Avoidance of Model Re-Induction in SVM-Based Feature Selection for Text Categorization | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-143.pdf | 
+ijcai-2007-151 | Building Portable Options: Skill Transfer in Reinforcement Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-144.pdf | 
+ijcai-2007-152 | Marginalized Multi-Instance Kernels | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-145.pdf | 
+ijcai-2007-153 | r-grams: Relational Grams | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-146.pdf | 
+ijcai-2007-154 | Generalized Additive Bayesian Network Classifiers | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-147.pdf | 
+ijcai-2007-155 | Generalizing the Bias Term of Support Vector Machines | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-148.pdf | 
+ijcai-2007-156 | Robust Object Tracking with a Case-Base Updating Strategy | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-149.pdf | 
+ijcai-2007-157 | Explanation-Based Feature Construction | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-150.pdf | 
+ijcai-2007-158 | Protein Quaternary Fold Recognition Using Conditional Graphical Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-151.pdf | 
+ijcai-2007-159 | Automatic Gait Optimization with Gaussian Process Regression | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-152.pdf | 
+ijcai-2007-160 | Recursive Random Fields | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-153.pdf | 
+ijcai-2007-161 | Prediction of Probability of Survival in Critically Ill Patients Optimizing the Area under the ROC Curve | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-154.pdf | 
+ijcai-2007-162 | The Ins and Outs of Critiquing | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-155.pdf | 
+ijcai-2007-163 | Learning from Partial Observations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-156.pdf | 
+ijcai-2007-164 | Relevance Estimation and Value Calibration of Evolutionary Algorithm Parameters | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-157.pdf | 
+ijcai-2007-165 | Local Search for Balanced Submodular Clusterings | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-158.pdf | 
+ijcai-2007-166 | Kernel Matrix Evaluation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-159.pdf | 
+ijcai-2007-167 | Neighborhood MinMax Projections | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-160.pdf | 
+ijcai-2007-168 | Case-based Learning from Proactive Communication | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-161.pdf | 
+ijcai-2007-169 | Learning to Count by Think Aloud Imitation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-162.pdf | 
+ijcai-2007-170 | A Tighter Error Bound for Decision Tree Learning Using PAC Learnability | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-163.pdf | 
+ijcai-2007-171 | Kernel Conjugate Gradient for Fast Kernel Machines | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-164.pdf | 
+ijcai-2007-172 | Deictic Option Schemas | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-165.pdf | 
+ijcai-2007-173 | Acquiring a Robust Case Base for the Robot Soccer Domain | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-166.pdf | 
+ijcai-2007-174 | QuantMiner: A Genetic Algorithm for Mining Quantitative Association Rules | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-167.pdf | 
+ijcai-2007-175 | Transfer Learning in Real-Time Strategy Games Using Hybrid CBR/RL | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-168.pdf | 
+ijcai-2007-176 | Parametric Kernels for Sequence Data Analysis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-169.pdf | 
+ijcai-2007-177 | Reinforcement Learning of Local Shape in the Game of Go | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-170.pdf | 
+ijcai-2007-178 | Semi-Supervised Gaussian Process Classifiers | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-171.pdf | 
+ijcai-2007-179 | An Experts Algorithm for Transfer Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-172.pdf | 
+ijcai-2007-180 | Direct Code Access in Self-Organizing Neural Networks for Reinforcement Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-173.pdf | 
+ijcai-2007-181 | Grounding Abstractions in Predictive State Representations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-174.pdf | 
+ijcai-2007-182 | Metric Properties of Structured Data Visualizations through Generative Probabilistic Modeling | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-175.pdf | 
+ijcai-2007-183 | Ensembles of Partially Trained SVMs with Multiplicative Updates | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-176.pdf | 
+ijcai-2007-184 | First Order Decision Diagrams for Relational MDPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-177.pdf | 
+ijcai-2007-185 | Self-Adaptive Neural Networks Based on a Poisson Approach for Knowledge Discovery | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-178.pdf | 
+ijcai-2007-186 | Dynamics of Temporal Difference Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-179.pdf | 
+ijcai-2007-187 | Machine Learning for On-Line Hardware Reconfiguration | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-180.pdf | 
+ijcai-2007-188 | A Primitive Based Generative Model to Infer Timing Information in Unpartitioned Handwriting Data | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-181.pdf | 
+ijcai-2007-189 | A Subspace Kernel for Nonlinear Feature Extraction | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-182.pdf | 
+ijcai-2007-190 | Understanding Drawings by Compositional Analogy | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-183.pdf | 
+ijcai-2007-191 | A Scalable Kernel-Based Algorithm for Semi-Supervised Metric Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-184.pdf | 
+ijcai-2007-192 | Managing Domain Knowledge and Multiple Models with Boosting | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-185.pdf | 
+ijcai-2007-193 | Concept Sampling: Towards Systematic Selection in Large-Scale Mixed Concepts in Machine Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-186.pdf | 
+ijcai-2007-194 | Searching for Interacting Features | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-187.pdf | 
+ijcai-2007-195 | Learning User Clicks in Web Search | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-188.pdf | 
+ijcai-2007-196 | An Empirical Study of the Noise Impact on Cost-Sensitive Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-189.pdf | 
+ijcai-2007-197 | On the Logic of Normative Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-190.pdf | 
+ijcai-2007-198 | Quantified Coalition Logic | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-191.pdf | 
+ijcai-2007-199 | An Axiomatic Approach to Personalized Ranking Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-192.pdf | 
+ijcai-2007-200 | Market Based Resource Allocation with Incomplete Information | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-193.pdf | 
+ijcai-2007-201 | A Game-Theoretic Analysis of Strictly Competitive Multiagent Scenarios | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-194.pdf | 
+ijcai-2007-202 | Spiteful Bidding in Sealed-Bid Auctions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-195.pdf | 
+ijcai-2007-203 | Multi-Dimensional Bid Improvement Algorithm for Simultaneous Auctions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-196.pdf | 
+ijcai-2007-204 | Bidding Languages and Winner Determination for Mixed Multi-unit Combinatorial Auctions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-197.pdf | 
+ijcai-2007-205 | Coalitional Bargaining with Agent Type Uncertainty | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-198.pdf | 
+ijcai-2007-206 | Iterated Weaker-than-Weak Dominance | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-199.pdf | 
+ijcai-2007-207 | Reaching Envy-Free States in Distributed Negotiation Settings | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-200.pdf | 
+ijcai-2007-208 | Privacy and Artificial Agents, or, Is Google Reading My Email? | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-201.pdf | 
+ijcai-2007-209 | Incremental Mechanism Design | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-202.pdf | 
+ijcai-2007-210 | Learning Policies for Embodied Virtual Agents through Demonstration | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-203.pdf | 
+ijcai-2007-211 | Sharing the Road: Autonomous Vehicles Meet Human Drivers | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-204.pdf | 
+ijcai-2007-212 | Communicating Effectively in Resource-Constrained Multi-Agent Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-205.pdf | 
+ijcai-2007-213 | Holonic Multiagent Multilevel Simulation: Application to Real-Time Pedestrian Simulation in Urban Environment | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-206.pdf | 
+ijcai-2007-214 | Coordination to Avoid Starvation of Bottleneck Agents in a Large Network System | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-207.pdf | 
+ijcai-2007-215 | Sellers Competing for Buyers in Online Markets: Reserve Prices, Shill Bids, and Auction Fees | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-208.pdf | 
+ijcai-2007-216 | Complexity of Pure Equilibria in Bayesian Games | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-209.pdf | 
+ijcai-2007-217 | Characterizing Solution Concepts in Games Using Knowledge-Based Programs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-210.pdf | 
+ijcai-2007-218 | Hybrid Elections Broaden Complexity-Theoretic Resistance to Control | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-211.pdf | 
+ijcai-2007-219 | Truthful Risk-Managed Combinatorial Auctions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-212.pdf | 
+ijcai-2007-220 | Adaptation of Organizational Models for Multi-Agent Systems Based on Max Flow Networks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-213.pdf | 
+ijcai-2007-221 | Collaborative Inductive Logic Programming for Path Planning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-214.pdf | 
+ijcai-2007-222 | Mechanism Design with Partial Revelation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-215.pdf | 
+ijcai-2007-223 | Augmented Experiment: Participatory Design with Multiagent Simulation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-216.pdf | 
+ijcai-2007-224 | Multi-issue Negotiation Protocol for Agents: Exploring Nonlinear Utility Spaces | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-217.pdf | 
+ijcai-2007-225 | A Model for Collective Strategy Diffusion in Agent Social Law Evolution | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-218.pdf | 
+ijcai-2007-226 | Sequential Bundle-Bid Single-Sale Auction Algorithms for Decentralized Control | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-219.pdf | 
+ijcai-2007-227 | Vote and Aggregation in Combinatorial Domains with Structured Preferences | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-220.pdf | 
+ijcai-2007-228 | Winner Determination in Sequential Majority Voting | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-221.pdf | 
+ijcai-2007-229 | RoxyBot-06: An (SAA)2 TAC Travel Agent | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-222.pdf | 
+ijcai-2007-230 | Automatic Verification of Knowledge and Time with NuSMV | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-223.pdf | 
+ijcai-2007-231 | An Energy-Efficient, Multi-Agent Sensor Network for Detecting Diffuse Events | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-224.pdf | 
+ijcai-2007-232 | A Multi-Agent Medical System for Indian Rural Infant and Child Care | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-225.pdf | 
+ijcai-2007-233 | Infeasibility Certificates and the Complexity of the Core in Coalitional Games | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-226.pdf | 
+ijcai-2007-234 | Providing a Recommended Trading Agent to a Population: A Novel Approach | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-227.pdf | 
+ijcai-2007-235 | Enhancing MAS Cooperative Search Through Coalition Partitioning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-228.pdf | 
+ijcai-2007-236 | Multipotential Games | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-229.pdf | 
+ijcai-2007-237 | Multi-Agent System that Attains Longevity via Death | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-230.pdf | 
+ijcai-2007-238 | Argumentation Based Contract Monitoring in Uncertain Domains | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-231.pdf | 
+ijcai-2007-239 | Dynamic Verification of Trust in Distributed Open Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-232.pdf | 
+ijcai-2007-240 | Quality Guarantees on k-Optimal Solutions for Distributed Constraint Optimization Problems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-233.pdf | 
+ijcai-2007-241 | MB-DPOP: A New Memory-Bounded Algorithm for Distributed Optimization | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-234.pdf | 
+ijcai-2007-242 | DiPRA: Distributed Practical Reasoning Architecture | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-235.pdf | 
+ijcai-2007-243 | Incompleteness and Incomparability in Preference Aggregation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-236.pdf | 
+ijcai-2007-244 | Gossip-Based Aggregation of Trust in Decentralized Reputation Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-237.pdf | 
+ijcai-2007-245 | Multi-Winner Elections: Complexity of Manipulation, Control and Winner-Determination | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-238.pdf | 
+ijcai-2007-246 | Opponent Modeling in Scrabble | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-239.pdf | 
+ijcai-2007-247 | Routing Mediators | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-240.pdf | 
+ijcai-2007-248 | An Efficient Protocol for Negotiation over Multiple Indivisible Resources | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-241.pdf | 
+ijcai-2007-249 | Automated Design of Multistage Mechanisms | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-242.pdf | 
+ijcai-2007-250 | Emergence of Norms through Social Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-243.pdf | 
+ijcai-2007-251 | Information-Based Agency | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-244.pdf | 
+ijcai-2007-252 | Formalizing Communication Protocols for Multiagent Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-245.pdf | 
+ijcai-2007-253 | Control of Agent Swarms Using Generalized Centroidal Cyclic Pursuit Laws | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-246.pdf | 
+ijcai-2007-254 | On Modeling Multiagent Task Scheduling as a Distributed Constraint Optimization Problem | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-247.pdf | 
+ijcai-2007-255 | Emotions as Durative Dynamic State for Action Selection | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-248.pdf | 
+ijcai-2007-256 | Generating Bayes-Nash Equilibria to Design Autonomous Trading Agents | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-249.pdf | 
+ijcai-2007-257 | Formal Trust Model for Multiagent Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-250.pdf | 
+ijcai-2007-258 | Towards Runtime Behavior Adaptation for Embodied Characters | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-251.pdf | 
+ijcai-2007-259 | Using Focal Point Learning to Improve Tactic Coordination in Human-Machine Interactions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-252.pdf | 
+ijcai-2007-260 | Phonetic Models for Generating Spelling Variants | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-253.pdf | 
+ijcai-2007-261 | Sequence Prediction Exploiting Similary Information | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-254.pdf | 
+ijcai-2007-262 | Supervised Latent Semantic Indexing Using Adaptive Sprinkling | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-255.pdf | 
+ijcai-2007-263 | A Ranking Approach to Pronoun Resolution | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-256.pdf | 
+ijcai-2007-264 | Word Sense Disambiguation through Sememe Labeling | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-257.pdf | 
+ijcai-2007-265 | Case-Based Techniques Used for Dialogue Understanding and Planning in a Human-Robot Dialogue System | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-258.pdf | 
+ijcai-2007-266 | Computing Semantic Relatedness Using Wikipedia-based Explicit Semantic Analysis | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-259.pdf | 
+ijcai-2007-267 | On Natural Language Processing and Plan Recognition | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-260.pdf | 
+ijcai-2007-268 | Using Ontologies and the Web to Learn Lexical Semantics | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-261.pdf | 
+ijcai-2007-269 | Unsupervised Anomaly Detection | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-262.pdf | 
+ijcai-2007-270 | Named Entity Translation with Web Mining and Transliteration | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-263.pdf | 
+ijcai-2007-271 | Optimizing Classifier Performance in Word Sense Disambiguation by Redefining Sense Classes | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-264.pdf | 
+ijcai-2007-272 | Learning from the Report-writing Behavior of Individuals | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-265.pdf | 
+ijcai-2007-273 | SegGen: A Genetic Algorithm for Linear Text Segmentation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-266.pdf | 
+ijcai-2007-274 | Cluster-Based Selection of Statistical Answering Strategies | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-267.pdf | 
+ijcai-2007-275 | Automatically Selecting Answer Templates to Respond to Customer Emails | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-268.pdf | 
+ijcai-2007-276 | A Predictive Approach to Help-Desk Response Generation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-269.pdf | 
+ijcai-2007-277 | Efficient HPSG Parsing with Supertagging and CFG-Filtering | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-270.pdf | 
+ijcai-2007-278 | A Flexible Unsupervised PP-Attachment Method Using Semantic Information | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-271.pdf | 
+ijcai-2007-279 | Graph Connectivity Measures for Unsupervised Word Sense Disambiguation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-272.pdf | 
+ijcai-2007-280 | Shallow Semantics for Coreference Resolution | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-273.pdf | 
+ijcai-2007-281 | Subtree Mining for Question Classification Problem | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-274.pdf | 
+ijcai-2007-282 | Natural Language Query Recommendation in Conversation Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-275.pdf | 
+ijcai-2007-283 | A Dual-layer CRFs Based Joint Decoding Method for Cascaded Segmentation and Labeling Tasks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-276.pdf | 
+ijcai-2007-284 | Database-Text Alignment via Structured Multilabel Classification | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-277.pdf | 
+ijcai-2007-285 | Dances with Words | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-278.pdf | 
+ijcai-2007-286 | Word Sense Disambiguation with Spreading Activation Networks Generated from Thesauri | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-279.pdf | 
+ijcai-2007-287 | Morphological Annotation of a Large Spontaneous Speech Corpus in Japanese | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-280.pdf | 
+ijcai-2007-288 | Speaker-Invariant Features for Automatic Speech Recognition | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-281.pdf | 
+ijcai-2007-289 | Correlation Clustering for Crosslingual Link Detection | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-282.pdf | 
+ijcai-2007-290 | A Hybrid Ontology Directed Feedback Selection Algorithm for Supporting Creative Problem Solving Dialogues | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-283.pdf | 
+ijcai-2007-291 | Simple Training of Dependency Parsers via Structured Boosting | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-284.pdf | 
+ijcai-2007-292 | One Class per Named Entity: Exploiting Unlabeled Text for Named Entity Recognition | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-285.pdf | 
+ijcai-2007-293 | A Privacy-Sensitive Approach to Modeling Multi-Person Conversations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-286.pdf | 
+ijcai-2007-294 | Multi-Document Summarization by Maximizing Informative Content-Words | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-287.pdf | 
+ijcai-2007-295 | Ambiguous Part-of-Speech Tagging for Improving Accuracy and Domain Portability of Syntactic Parsers | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-288.pdf | 
+ijcai-2007-296 | Automatic Acquisition of Context-Specific Lexical Paraphrases | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-289.pdf | 
+ijcai-2007-297 | Learning Question Paraphrases for QA from Encarta Logs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-290.pdf | 
+ijcai-2007-298 | Detecting Stochastically Scheduled Activities in Video | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-291.pdf | 
+ijcai-2007-299 | A Heuristic Search Approach to Planning with Temporally Extended Preferences | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-292.pdf | 
+ijcai-2007-300 | Waiting and Relocation Strategies in Online Stochastic Vehicle Routing | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-293.pdf | 
+ijcai-2007-301 | Coalitions in Action Logic | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-294.pdf | 
+ijcai-2007-302 | Fast Planning with Iterative Macros | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-295.pdf | 
+ijcai-2007-303 | Planning for Gene Regulatory Network Intervention | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-296.pdf | 
+ijcai-2007-304 | Long-Distance Mutual Exclusion for Propositional Planning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-297.pdf | 
+ijcai-2007-305 | Towards an Integration of Golog and Planning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-298.pdf | 
+ijcai-2007-306 | When is Temporal Planning Really Temporal? | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-299.pdf | 
+ijcai-2007-307 | Topological Value Iteration Algorithm for Markov Decision Processes | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-300.pdf | 
+ijcai-2007-308 | Automatic Synthesis of New Behaviors from a Library of Available Behaviors | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-301.pdf | 
+ijcai-2007-309 | Planning with Goal Utility Dependencies | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-302.pdf | 
+ijcai-2007-310 | A Decision-Theoretic Model of Assistance | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-303.pdf | 
+ijcai-2007-311 | Transferring Learned Control-Knowledge between Planners | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-304.pdf | 
+ijcai-2007-312 | Decidable Reasoning in a Modified Situation Calculus | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-305.pdf | 
+ijcai-2007-313 | Reducing Accidental Complexity in Planning Problems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-306.pdf | 
+ijcai-2007-314 | Planning via Petri Net Unfolding | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-307.pdf | 
+ijcai-2007-315 | Detecting Changes in Unlabeled Data Streams Using Martingale | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-308.pdf | 
+ijcai-2007-316 | SAT Encodings of State-Space Reachability Problems in Numeric Domains | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-309.pdf | 
+ijcai-2007-317 | Constraint Partitioning for Solving Planning Problems with Trajectory Constraints and Goal Preferences | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-310.pdf | 
+ijcai-2007-318 | Observation Reduction for Strong Plans | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-311.pdf | 
+ijcai-2007-319 | The Role of Macros in Tractable Planning over Causal Graphs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-312.pdf | 
+ijcai-2007-320 | Factored Planning Using Decomposition Trees | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-313.pdf | 
+ijcai-2007-321 | Property Persistence in the Situation Calculus | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-314.pdf | 
+ijcai-2007-322 | Fast (Incremental) Algorithms for Useful Classes of Simple Temporal Problems with Preferences | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-315.pdf | 
+ijcai-2007-323 | Handling Alternative Activities in Resource-Constrained Project Scheduling Problems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-316.pdf | 
+ijcai-2007-324 | Planning for Temporally Extended Goals as Propositional Satisfiability | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-317.pdf | 
+ijcai-2007-325 | A Hybridized Planner for Stochastic Domains | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-318.pdf | 
+ijcai-2007-326 | Performance Analysis of Online Anticipatory Algorithms for Large Multistage Stochastic Integer Programs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-319.pdf | 
+ijcai-2007-327 | Generalizing Temporal Controllability | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-320.pdf | 
+ijcai-2007-328 | An Extension to Conformant Planning Using Logic Programming | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-321.pdf | 
+ijcai-2007-329 | Average-Reward Decentralized Markov Decision Processes | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-322.pdf | 
+ijcai-2007-330 | Graph Decomposition for Efficient Multi-Robot Path Planning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-323.pdf | 
+ijcai-2007-331 | Memory-Bounded Dynamic Programming for DEC-POMDPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-324.pdf | 
+ijcai-2007-332 | Domain Independent Approaches for Finding Diverse Plans | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-325.pdf | 
+ijcai-2007-333 | Planning under Risk and Knightian Uncertainty | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-326.pdf | 
+ijcai-2007-334 | Progression of Situation Calculus Action Theories with Incomplete Information | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-327.pdf | 
+ijcai-2007-335 | Relational Knowledge with Predictive State Representations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-328.pdf | 
+ijcai-2007-336 | Discriminative Learning of Beam-Search Heuristics for Planning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-329.pdf | 
+ijcai-2007-337 | Using Learned Policies in Heuristic-Search Planning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-330.pdf | 
+ijcai-2007-338 | Effective Control Knowledge Transfer through Learning Skill and Representation Hierarchies | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-331.pdf | 
+ijcai-2007-339 | Image Modeling Using Tree Structured Conditional Random Fields | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-332.pdf | 
+ijcai-2007-340 | Visually Tracking Football Games Based on TV Broadcasts | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-333.pdf | 
+ijcai-2007-341 | Mediating between Qualitative and Quantitative Representations for Task-Orientated Human-Robot Interaction | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-334.pdf | 
+ijcai-2007-342 | Fast Image Alignment Using Anytime Algorithms | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-335.pdf | 
+ijcai-2007-343 | Learning to Walk through Imitation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-336.pdf | 
+ijcai-2007-344 | Dealing with Perception Errors in Multi-Robot System Coordination | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-337.pdf | 
+ijcai-2007-345 | Team Programming in Golog under Partial Observability | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-338.pdf | 
+ijcai-2007-346 | A New Approach for Stereo Matching in Autonomous Mobile Robot Applications | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-339.pdf | 
+ijcai-2007-347 | Voronoi Random Fields: Extracting Topological Structure of Indoor Environments via Place Labeling | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-340.pdf | 
+ijcai-2007-348 | Peripheral-Foveal Vision for Real-time Object Recognition and Tracking in Video | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-341.pdf | 
+ijcai-2007-349 | Structure Inference for Bayesian Multisensory Perception and Tracking | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-342.pdf | 
+ijcai-2007-350 | Fast Incremental Square Root Information Smoothing | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-343.pdf | 
+ijcai-2007-351 | Optimal Multi-Sensor Based Multi Target Detection by Moving Sensors to the Maximal Clique in a Covering Graph | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-344.pdf | 
+ijcai-2007-352 | Bayesian Tensor Inference for Sketch-Based Facial Photo Hallucination | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-345.pdf | 
+ijcai-2007-353 | Topological Mapping through Distributed, Passive Sensors | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-346.pdf | 
+ijcai-2007-354 | A Distributed Architecture for Symbolic Data Fusion | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-347.pdf | 
+ijcai-2007-355 | Inferring Long-term User Properties Based on Users' Location History | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-348.pdf | 
+ijcai-2007-356 | Co-Localization from Labeled and Unlabeled Data Using Graph Laplacian | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-349.pdf | 
+ijcai-2007-357 | Feature Based Occupancy Grid Maps for Sonar Based Safe-Mapping | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-350.pdf | 
+ijcai-2007-358 | Probabilistic Mobile Manipulation in Dynamic Environments, with Application to Opening Doors | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-351.pdf | 
+ijcai-2007-359 | Efficient Failure Detection on Mobile Robots Using Particle Filters with Gaussian Process Proposals | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-352.pdf | 
+ijcai-2007-360 | Loopy SAM | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-353.pdf | 
+ijcai-2007-361 | Depth Estimation Using Monocular and Stereo Cues | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-354.pdf | 
+ijcai-2007-362 | Efficient Planning of Informative Paths for Multiple Robots | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-355.pdf | 
+ijcai-2007-363 | Color Learning on a Mobile Robot: Towards Full Autonomy under Changing Illumination | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-356.pdf | 
+ijcai-2007-364 | Online Speed Adaptation Using Supervised Learning for High-Speed, Off-Road Autonomous Driving | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-357.pdf | 
+ijcai-2007-365 | Instace-Based AMN Classification for Improved Object Recognition in 2D and 3D Laser Range Data | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-358.pdf | 
+ijcai-2007-366 | MESH-Based Active Monte Carlo Recognition (MESH-AMCR) | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-359.pdf | 
+ijcai-2007-367 | Common Sense Based Joint Training of Human Activity Recognizers | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-360.pdf | 
+ijcai-2007-368 | Using a Mobile Robot for Cognitive Mapping | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-361.pdf | 
+ijcai-2007-369 | AWA* — A Window Constrained Anytime Heuristic Search Algorithm | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-362.pdf | 
+ijcai-2007-370 | GUNSAT: A Greedy Local Search Algorithm for Unsatisfiability | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-363.pdf | 
+ijcai-2007-371 | Symmetry Breaking in Quantified Boolean Formulae | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-364.pdf | 
+ijcai-2007-372 | Computational Aspects of Analyzing Social Network Dynamics | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-365.pdf | 
+ijcai-2007-373 | A Machine Learning Approach for Statistical Software Testing | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-366.pdf | 
+ijcai-2007-374 | Web Page Clustering Using Heuristic Search in the Web Graph | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-367.pdf | 
+ijcai-2007-375 | Information-Theoretic Approaches to Branching in Search | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-368.pdf | 
+ijcai-2007-376 | From Sampling to Model Counting | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-369.pdf | 
+ijcai-2007-377 | Boosting a Complete Technique to Find MSS and MUS Thanks to a Local Search Oracle | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-370.pdf | 
+ijcai-2007-378 | Characterizing the NP-PSPACE Gap in the Satisfiability Problem for Modal Logic | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-371.pdf | 
+ijcai-2007-379 | Improving LRTA*(k) | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-372.pdf | 
+ijcai-2007-380 | The Effect of Restarts on the Efficiency of Clause Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-373.pdf | 
+ijcai-2007-381 | Recent Progress in Heuristic Search: A Case Study of the Four-Peg Towers of Hanoi Problem | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-374.pdf | 
+ijcai-2007-382 | Adaptive Genetic Algorithm with Mutation and Crossover Matrices | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-375.pdf | 
+ijcai-2007-383 | Exploiting Inference Rules to Compute Lower Bounds for MAX-SAT Solving | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-376.pdf | 
+ijcai-2007-384 | A Multiobjective Frontier Search Algorithm | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-377.pdf | 
+ijcai-2007-385 | A Comparison of Time-Space Schemes for Graphical Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-378.pdf | 
+ijcai-2007-386 | State Space Search for Risk-Averse Agents | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-379.pdf | 
+ijcai-2007-387 | Building Structure into Local Search for SAT | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-380.pdf | 
+ijcai-2007-388 | Near-Optimal Anytime Coalition Structure Generation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-381.pdf | 
+ijcai-2007-389 | Real-Time Heuristic Search with a Priority Queue | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-382.pdf | 
+ijcai-2007-390 | Best-First Utility-Guided Search | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-383.pdf | 
+ijcai-2007-391 | Dynamic Weighting A* Search-Based MAP Algorithm for Bayesian Networks | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-384.pdf | 
+ijcai-2007-392 | The Fringe-Saving A* Search Algorithm - A Feasibility Study | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-385.pdf | 
+ijcai-2007-393 | Using Graph Algebra to Optimize Neighborhood for Isometric Mapping | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-386.pdf | 
+ijcai-2007-394 | Lambda Depth-First Proof Number Search and Its Application to Go | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-387.pdf | 
+ijcai-2007-395 | Edge Partitioning in External-Memory Graph Search | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-388.pdf | 
+ijcai-2007-396 | Solving POMDPs Using Quadratically Constrained Linear Programs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-389.pdf | 
+ijcai-2007-397 | On the Compilation of Stratified Belief Bases under Linear and Possibilistic Logic Policies | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-390.pdf | 
+ijcai-2007-398 | Efficient and Robust Independence-Based Markov Network Structure Discovery | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-391.pdf | 
+ijcai-2007-399 | Using Linear Programming for Bayesian Exploration in Markov Decision Processes | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-392.pdf | 
+ijcai-2007-400 | Compiling Bayesian Networks Using Variable Elimination | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-393.pdf | 
+ijcai-2007-401 | Representing Kriegspiel States with Metapositions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-394.pdf | 
+ijcai-2007-402 | A Conceptual Graph Approach for the Generation of Referring Expressions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-395.pdf | 
+ijcai-2007-403 | ProbLog: A Probabilistic Prolog and Its Application in Link Discovery | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-396.pdf | 
+ijcai-2007-404 | Belief Change Based on Global Minimisation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-397.pdf | 
+ijcai-2007-405 | The Value of Observation for Monitoring Dynamic Systems | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-398.pdf | 
+ijcai-2007-406 | WiFi-SLAM Using Gaussian Process Latent Variable Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-399.pdf | 
+ijcai-2007-407 | Revisiting Output Coding for Sequential Supervised Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-400.pdf | 
+ijcai-2007-408 | Graph-Based Semi-Supervised Learning as a Generative Model | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-401.pdf | 
+ijcai-2007-409 | An Action Description Language for Iterated Belief Change | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-402.pdf | 
+ijcai-2007-410 | Using a Hierarchical Bayesian Model to Handle High Cardinality Attributes with Relevant Interactions in a Classification Problem | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-403.pdf | 
+ijcai-2007-411 | A Factor Graph Model for Software Bug Finding | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-404.pdf | 
+ijcai-2007-412 | Belief Update Revisited | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-405.pdf | 
+ijcai-2007-413 | Dynamically Weighted Hidden Markov Model for Spam Deobfuscation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-406.pdf | 
+ijcai-2007-414 | Training Conditional Random Fields Using Virtual Evidence Boosting | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-407.pdf | 
+ijcai-2007-415 | A Fast Analytical Algorithm for Solving Markov Decision Processes with Real-Valued Resources | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-408.pdf | 
+ijcai-2007-416 | Hierarchical Heuristic Forward Search in Stochastic Domains | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-409.pdf | 
+ijcai-2007-417 | Compiling Bayesian Networks by Symbolic Probability Calculation Based on Zero-Suppressed BDDs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-410.pdf | 
+ijcai-2007-418 | Efficiently Exploiting Symmetries in Real Time Dynamic Programming | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-411.pdf | 
+ijcai-2007-419 | Hierarchical Multi-channel Hidden Semi Markov Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-412.pdf | 
+ijcai-2007-420 | Iterated Belief Contraction from First Principles | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-413.pdf | 
+ijcai-2007-421 | An Analysis of Laplacian Methods for Value Function Approximation in MDPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-414.pdf | 
+ijcai-2007-422 | Global/Local Dynamic Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-415.pdf | 
+ijcai-2007-423 | Bayesian Inverse Reinforcement Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-416.pdf | 
+ijcai-2007-424 | AEMS: An Anytime Online Search Algorithm for Approximate Policy Refinement in Large POMDPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-417.pdf | 
+ijcai-2007-425 | Efficient Bayesian Task-Level Transfer Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-418.pdf | 
+ijcai-2007-426 | Inside-Outside Probability Computation for Belief Propagation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-419.pdf | 
+ijcai-2007-427 | Logical Circuit Filtering | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-420.pdf | 
+ijcai-2007-428 | Forward Search Value Iteration for POMDPs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-421.pdf | 
+ijcai-2007-429 | Dynamic Interactions between Goals and Beliefs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-422.pdf | 
+ijcai-2007-430 | Inferring Complex Agent Motions from Partial Trajectory Observations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-423.pdf | 
+ijcai-2007-431 | Towards Efficient Computation of Error Bounded Solutions in POMDPs: Expected Value Approximation and Dynamic Disjunctive Beliefs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-424.pdf | 
+ijcai-2007-432 | Distributed Data Mining: Why Do More Than Aggregating Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-425.pdf | 
+ijcai-2007-433 | Stable Biclustering of Gene Expression Data with Nonnegative Matrix Factorizations | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-426.pdf | 
+ijcai-2007-434 | Determining Expert Profiles (With an Application to Expert Finding) | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-427.pdf | 
+ijcai-2007-435 | Learning “Forgiving” Hash Functions: Algorithms and Large Scale Tests | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-428.pdf | 
+ijcai-2007-436 | Open Information Extraction from the Web | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-429.pdf | 
+ijcai-2007-437 | Trust Based Recommender System for Semantic Web | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-430.pdf | 
+ijcai-2007-438 | Identifying Expressions of Opinion in Context | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-431.pdf | 
+ijcai-2007-439 | Detect and Track Latent Factors with Online Nonnegative Matrix Factorization | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-432.pdf | 
+ijcai-2007-440 | Learning Semantic Descriptions of Web Information Sources | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-433.pdf | 
+ijcai-2007-441 | An Improved Probabilistic Ant based Clustering for Distributed Databases | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-434.pdf | 
+ijcai-2007-442 | Directed Graph Embedding | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-435.pdf | 
+ijcai-2007-443 | Constructing Career Histories: A Case Study in Disentangling the Threads | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-436.pdf | 
+ijcai-2007-444 | Change of Representation for Statistical Relational Learning | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-437.pdf | 
+ijcai-2007-445 | Pseudo-Aligned Multilingual Corpora | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-438.pdf | 
+ijcai-2007-446 | Locating Complex Named Entities in Web Text | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-439.pdf | 
+ijcai-2007-447 | Models of Searching and Browsing: Languages, Studies, and Application | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-440.pdf | 
+ijcai-2007-448 | An Adaptive Context-Based Algorithm for Term Weighting: Application to Single-Word Question Answering | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-441.pdf | 
+ijcai-2007-449 | Semi-Supervised Learning for Multi-Component Data Classification | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-442.pdf | 
+ijcai-2007-450 | Opinion Sentence Search Engine on Open-Domain Blog | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-443.pdf | 
+ijcai-2007-451 | ItemRank: A Random-Walk Based Scoring Algorithm for Recommender Engines | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-444.pdf | 
+ijcai-2007-452 | An Analysis of the Use of Tags in a Blog Recommender System | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-445.pdf | 
+ijcai-2007-453 | Efficient Calculation of Personalized Document Rankings | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-446.pdf | 
+ijcai-2007-454 | Computation of Initial Modes for K-modes Clustering Algorithm Using Evidence Accumulation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-447.pdf | 
+ijcai-2007-455 | Logistic Regression Models for a Fast CBIR Method Based on Feature Selection | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-448.pdf | 
+ijcai-2007-456 | Collapsed Variational Dirichlet Process Mixture Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-449.pdf | 
+ijcai-2007-457 | Learning to Identify Unexpected Instances in the Test Set | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-450.pdf | 
+ijcai-2007-458 | Feature Mining and Neuro-Fuzzy Inference System for Steganalysis of LSB Matching Stegangoraphy in Grayscale Images | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-451.pdf | 
+ijcai-2007-459 | Improving Activity Discovery with Automatic Neighborhood Estimation | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-452.pdf | 
+ijcai-2007-460 | Extracting Keyphrases to Represent Relations in Social Networks from Web | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-453.pdf | 
+ijcai-2007-461 | Extracting and Visualizing Trust Relationships from Online Auction Feedback Comments | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-454.pdf | 
+ijcai-2007-462 | What You Seek Is What You Get: Extraction of Class Attributes from Query Logs | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-455.pdf | 
+ijcai-2007-463 | Semi-Supervised Learning of Attribute-Value Pairs from Product Descriptions | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-456.pdf | 
+ijcai-2007-464 | A Fusion of Stacking with Dynamic Integration | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-457.pdf | 
+ijcai-2007-465 | Robust Human-Computer Interaction System Guiding a User by Providing Feedback | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-458.pdf | 
+ijcai-2007-466 | Combining Learning and Word Sense Disambiguation for Intelligent User Profiling | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-459.pdf | 
+ijcai-2007-467 | Document Summarization Using Conditional Random Fields | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-460.pdf | 
+ijcai-2007-468 | Real-Time Detection of Task Switches of Desktop Users | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-461.pdf | 
+ijcai-2007-469 | Estimating the Rate of Web Page Updates | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-462.pdf | 
+ijcai-2007-470 | On the Automatic Scoring of Handwritten Essays | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-463.pdf | 
+ijcai-2007-471 | Layout Analysis of Tree-Structured Scene Frames in Comic Images | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-464.pdf | 
+ijcai-2007-472 | Face Recognition via the Overlapping Energy Histogram | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-465.pdf | 
+ijcai-2007-473 | Semantic Indexing of a Competence Map to Support Scientific Collaboration in a Research Community | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-466.pdf | 
+ijcai-2007-474 | Manifold-Ranking Based Topic-Focused Multi-Document Summarization | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-467.pdf | 
+ijcai-2007-475 | Dynamic Mixture Models for Multiple Time-Series | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-468.pdf | 
+ijcai-2007-476 | Automatic Decision of Piano Fingering Based on a Hidden Markov Models | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-469.pdf | 
+ijcai-2007-477 | Exploiting Image Contents in Web Search | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-470.pdf | 
+ijcai-2007-478 | Semantic Smoothing of Document Models for Agglomerative Clustering | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-471.pdf | 
+ijcai-2007-479 | Mining Complex Patterns across Sequences with Gap Requirements | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-472.pdf | 
+ijcai-2007-480 | Index / 2942 | http://ijcai.org/Past%20Proceedings/IJCAI-2007/CONTENT/../PDF/IJCAI07-488.pdf | 

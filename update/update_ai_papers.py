@@ -277,21 +277,47 @@ class AiPapersSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
-    '''
+
     def getIJCAIPaper(self):
+        self.getIJCAIPastPapers()
+
+    def getIJCAIPastPapers(self):
         r = requests.get("http://ijcai.org/Past%20Proceedings/index.html")
         soup = BeautifulSoup(r.text)
         for a in soup.find_all('a'):
             url = "http://ijcai.org/Past%20Proceedings/" + a['href']
-            self.getIJCAIPapers(url, a.text[0 : a.text.find("/")])
-    def getIJCAIPapers(self, url, topic):
+            self.getIJCAIPapers(url, a['href'][0 : a['href'].find("/")], a.text)
+
+    def getIJCAIPapers(self, url, topic, year):
         print url
+        print topic
+        print year
         r = requests.get(url)
-        print r.text
-        for line in r.text.spilt("\n"):
-            if line.find("p>") != -1:
-                print line
-    '''
+        #print r.text
+
+        file_name = self.get_file_name("eecs/papers/" + self.school.lower() + '/' + topic.lower(), "scholaroctopus")
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        soup = BeautifulSoup(r.text)
+        for a in soup.find_all('a'):
+            if a['href'].find('pdf') != -1:
+                title = self.util.removeDoubleSpace(a.text.replace('\n', ''))
+                print title
+                link = 'http://ijcai.org/Past%20Proceedings/' + topic + '/CONTENT/' + a['href']
+                self.count += 1
+                self.write_db(f, topic.lower() + '-' + str(self.count), title, link)
+        #for line in r.text.spilt("\n"):
+        #    if line.find("p>") != -1:
+        #        print line
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
 
     def getRSSPaper(self):
         r = requests.get("http://www.roboticsproceedings.org/")
@@ -335,9 +361,9 @@ start.getNipsPaper()
 start.getIcmlPaper()
 start.getNlpPaper()
 start.getJMLRPaper()
-#start.getIJCAIPaper()
 start.getRSSPaper()
 
+start.getIJCAIPaper()
 #TODO
 #IJCAI http://ijcai.org/
 #ijrr http://www.ijrr.org/
