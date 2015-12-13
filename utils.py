@@ -178,7 +178,9 @@ class Utils:
                          'sina' : 'http://open.sina.com.cn/search/',\
                          '163' : 'http://c.open.163.com/search/search.htm?query=',\
                          'youku' : 'http://www.soku.com/search_playlist/q_',\
-                         'tudou' : 'http://www.soku.com/t/npsearch/'}
+                         'tudou' : 'http://www.soku.com/t/npsearch/',\
+                         'digitaltutors' : 'http://www.digitaltutors.com/11/search.php?searchString=',\
+                         'sec' : 'http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&company='}
 
 
     def removeDoubleSpace(self, text):
