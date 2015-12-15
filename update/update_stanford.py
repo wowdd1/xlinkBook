@@ -61,7 +61,7 @@ class StanfordSpider(Spider):
 
         from update_stanford_cs import StanfordCSSpider
         r = requests.get(url)
-        soup = BeautifulSoup(r.text); 
+        soup = BeautifulSoup(r.text) 
         course_num_list = []
         course_name_list = []
         course_description_list = []
