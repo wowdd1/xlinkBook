@@ -70,6 +70,7 @@ class EdxSpider(Spider):
             if self.matchSubject(subject, item["subjects"]):
                 #for item in json_obj:
                 title = item["l"].strip()
+                print title
                 count = count + 1
                 description = ''
                 if item["availability"] == 'Upcoming' or item["availability"] == 'Starting Soon':
