@@ -72,7 +72,7 @@ class AiPapersSpider(Spider):
             sp1 = BeautifulSoup(li.prettify())
             for a in sp1.find_all('a'):
                 year = a.text.strip()
-                if year.startswith('BMVC'):
+                if a['href'].startswith('http'):
                     continue
 
                 r = requests.get('http://cvpapers.com/' + a['href'])
@@ -362,7 +362,6 @@ start.getIcmlPaper()
 start.getNlpPaper()
 start.getJMLRPaper()
 start.getRSSPaper()
-
 start.getIJCAIPaper()
 #TODO
 #IJCAI http://ijcai.org/
