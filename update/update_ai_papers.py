@@ -354,7 +354,45 @@ class AiPapersSpider(Spider):
         else:
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
+
+    def getCVPR2015Paper(self):
+        r = requests.get('http://www.cv-foundation.org/openaccess/CVPR2015.py')
+        soup = BeautifulSoup(r.text)
+        title_list = []
+        author_list = []
+        link_list = []
+
+        file_name = self.get_file_name("eecs/papers/" + self.school.lower() + '/' + 'cvpr-2015', "scholaroctopus")
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for dt in soup.find_all('dt', class_='ptitle'):
+            title_list.append(dt.text.strip())
+        count = 0
+        for dd in soup.find_all('dd'):
+            if count % 2 == 0:
+                author_list.append(self.util.removeDoubleSpace(dd.text.strip().replace('\n', '')))
+            else:
+                link_list.append("http://www.cv-foundation.org/openaccess/" + dd.a['href'])
+            count += 1
+        for i in range(0, len(title_list)):
+            print i
+            print title_list[i]
+            print author_list[i]
+            print link_list[i]
+            self.count += 1
+            self.write_db(f, 'cvpr-2015-' + str(self.count), title_list[i], link_list[i], "author:" + author_list[i])
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"            
+
 start = AiPapersSpider()
+#start.getCVPR2015Paper()
 start.doWork()
 start.getCvPaper()
 start.getNipsPaper()
