@@ -26,41 +26,41 @@ engineering-book-25 | 高性能网站建设指南 | |
 engineering-book-26 | 高性能网站构建实战 | | 
 engineering-book-27 | web信息架构:设计大型网站 | | 
 engineering-book-28 | 黑客与设计 | | 
-engineering-book-39 | 设计模式之禪 | | 
+engineering-book-29 | 设计模式之禪 | | 
 engineering-book-30 | 线性代数辅导 | | 
 engineering-book-31 | 线性代数 | | 
 engineering-book-32 | 深度探索c++对象模型 | | 
-engineering-book-33 | 深入理解mac & ios操作系统 | | 
-engineering-book-34 | 深入理解计算机系统 | | 
-engineering-book-35 | 数据结构实用教程 | | 
-engineering-book-36 | 交互式计算机图形学 | | 
-engineering-book-37 | OpenGL 编程指南 | | 
-engineering-book-38 | webgl 编程指南 | | 
-engineering-book-39 | OpenGL es 2.0游戏开发 | | 
-engineering-book-40 | OpenGL es 3.0编程指南 | | 
-engineering-book-41 | OpenGL es应用开发实践指南 | | 
-engineering-book-42 | opencv 2计算机视觉编程手册 | | 
-engineering-book-43 | iphone三维程序设计 | | 
-engineering-book-44 | ios开发进阶 | | 
-engineering-book-45 | ios网路高级编程 | | 
-engineering-book-46 | ios图形图像 动画和多媒体编程技术最佳实践 | | 
-engineering-book-47 | effective objective-c 2.0 | | 
-engineering-book-48 | objective-c高级编程 | | 
-engineering-book-49 | 第一行代码android | | 
-engineering-book-50 | c++程序设计现代方法 | | 
-engineering-book-51 | effective c++ | | 
-engineering-book-52 | c++并发编程实战 | | 
-engineering-book-53 | css之禪 | | 
-engineering-book-54 | 锋利的jquery | | 
-engineering-book-55 | javascript高级程序设计 | | 
-engineering-book-56 | javascript设计模式与开发实践 | | 
-engineering-book-57 | javascript DOM编程艺术 | | 
-engineering-book-58 | 深入理解php | | 
-engineering-book-59 | php编程 | | 
-engineering-book-60 | webkit技术内幕 | | 
-engineering-book-61 | tcp/ip详解 | | 
-engineering-book-62 | http权威指南 | | 
-engineering-book-63 | 数据通信与网络 | | 
+engineering-book-33 | 深入理解php | |
+engineering-book-34 | 深入理解mac & ios操作系统 | | 
+engineering-book-35 | 深入理解计算机系统 | |
+engineering-book-36 | webkit技术内幕 | |
+engineering-book-37 | tcp/ip详解 | |
+engineering-book-38 | http权威指南 | |
+engineering-book-39 | 数据通信与网络 |  
+engineering-book-40 | 数据结构实用教程 | | 
+engineering-book-41 | 交互式计算机图形学 | | 
+engineering-book-42 | OpenGL 编程指南 | | 
+engineering-book-43 | webgl 编程指南 | | 
+engineering-book-44 | OpenGL es 2.0游戏开发 | | 
+engineering-book-45 | OpenGL es 3.0编程指南 | | 
+engineering-book-46 | OpenGL es应用开发实践指南 | | 
+engineering-book-47 | opencv 2计算机视觉编程手册 | | 
+engineering-book-48 | iphone三维程序设计 | | 
+engineering-book-49 | ios开发进阶 | | 
+engineering-book-50 | ios网路高级编程 | | 
+engineering-book-51 | ios图形图像 动画和多媒体编程技术最佳实践 | | 
+engineering-book-52 | effective objective-c 2.0 | | 
+engineering-book-53 | objective-c高级编程 | | 
+engineering-book-54 | 第一行代码android | | 
+engineering-book-55 | c++程序设计现代方法 | | 
+engineering-book-56 | effective c++ | | 
+engineering-book-57 | c++并发编程实战 | | 
+engineering-book-58 | css之禪 | | 
+engineering-book-59 | 锋利的jquery | | 
+engineering-book-60 | javascript高级程序设计 | | 
+engineering-book-61 | javascript设计模式与开发实践 | | 
+engineering-book-62 | javascript DOM编程艺术 | | 
+engineering-book-63 | php编程 | | 
 engineering-book-64 | docker技术入门与实战 | | 
 engineering-book-65 | 第一本docker书 | | 
 engineering-book-66 | 深入理解nginx | | 
