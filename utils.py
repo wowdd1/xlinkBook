@@ -128,6 +128,7 @@ class Utils:
                          'amazon' : 'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords=',\
                          'nap' : 'http://www.nap.edu/search/?term=',\
                          'hathitrust' : 'http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1=',\
+                         'daysou' : 'http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q=',\
                          'wowebook' : 'http://www.wowebook.co/?s=',\
                          'pmc' : "http://www.ncbi.nlm.nih.gov/pmc/?term=",\
                          'pubmed' : "http://www.ncbi.nlm.nih.gov/pubmed/?term=",\
