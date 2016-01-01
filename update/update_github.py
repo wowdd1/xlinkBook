@@ -41,6 +41,7 @@ class GithubSpider(Spider):
         "SQL",
         "Swift"]
 
+
     popular_lang_list = [
         "ActionScript",
         "C",
@@ -613,8 +614,9 @@ class GithubSpider(Spider):
                 "baidu" : "https://github.com/Baidu",\
                 "amplab" : "https://github.com/amplab",\
                 'OculusVR' : 'https://github.com/OculusVR/',\
-                'OSVR' : 'https://github.com/OSVR/'}
-
+                'OSVR' : 'https://github.com/OSVR/',\
+                'ValveSoftware' : 'https://github.com/ValveSoftware',\
+                'googlesamples' : 'https://github.com/googlesamples'}
         for k in data:
 
             file_name = self.get_file_name("eecs/projects/github/" + k, self.school)
@@ -674,9 +676,8 @@ class GithubSpider(Spider):
             else:
                 self.processGithubData(keyword, star, per_page)
         print "get user data..."
-        self.processGithubiUserData("all", 500, 100)
-        self.processGithubiUserData("china", 500, 100)
- 
+        #self.processGithubiUserData("all", 500, 100)
+        #self.processGithubiUserData("china", 500, 100)
         self.getBigCompanyProjects()
 start = GithubSpider()
 start.doWork()
