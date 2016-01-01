@@ -43,7 +43,8 @@ class PrincetonSpider(Spider):
                 link = a.text
         if link == '':
             link = url
-        description = instructors + 'description:' + div_dec.text.replace('\n', '').strip()
+        if div_dec != None:
+            description = instructors + 'description:' + div_dec.text.replace('\n', '').strip()
         return link, description
 
     def processData(self, f, subject_code, subject, term):
