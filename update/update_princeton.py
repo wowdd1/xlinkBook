@@ -94,6 +94,8 @@ class PrincetonSpider(Spider):
             key, value = self.getKeyValue(str(option))
             self.termDict[key] = value
         """
+        1164 15-16 Spr
+        1162 15-16 Fall
         1154 14-15 Spr
         1152 14-15 Fall
         1144 13-14 Spr
@@ -107,13 +109,13 @@ class PrincetonSpider(Spider):
                 line = line.strip()
                 subject_code = line[0 : line.find(" ")]
                 subject = line[line.find(" ") + 1 :]
-                file_name = self.get_file_name(subject + "-14-15", self.school)
+                file_name = self.get_file_name(subject + "-15-16", self.school)
                 file_lines = self.countFileLineNum(file_name)
                 f = self.open_db(file_name + ".tmp")
                 self.count = 0
 
-                self.processData(f, subject_code, subject, "1154")
-                self.processData(f, subject_code, subject, "1152")
+                self.processData(f, subject_code, subject, "1164")
+                self.processData(f, subject_code, subject, "1162")
 
                 self.close_db(f)
                 if file_lines != self.count and self.count > 0:
