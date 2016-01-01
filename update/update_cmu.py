@@ -13,7 +13,7 @@ class CMUSpider(Spider):
         Spider.__init__(self)
         self.school = "cmu"
         year = int(time.strftime('%Y',time.localtime(time.time())))
-        self.semester_list.append('M' + str(year)[2:])
+        self.semester_list.append('F' + str(year)[2:])
         self.semester_list.append('S' + str(year)[2:])
         self.semester_list.append('F' + str(year - 1)[2:])
 
