@@ -140,6 +140,8 @@ def print_with_color(text):
     color_index += 1
 
 def print_table_head(col, id_name='id', title='topic'):
+    if subtraction.strip() == '':
+        return
     if output_with_describe == True:
         title = "detail"
     table_head_mid = ''
