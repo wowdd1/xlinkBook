@@ -20,6 +20,7 @@ subject_dict = {\
     "Communication" : "communication",\
     "Computer Science" : "eecs",\
     "EECS" : "eecs",\
+    "Computing" : "eecs",\
     'Economic Analysis & Policy' : 'economics',\
     "Programming" : "eecs",\
     "Rank" : 'rank',\
@@ -30,6 +31,7 @@ subject_dict = {\
     "Education" : "education",\
     "Electronic" : "eecs",\
     "Electrical Engineering" : "eecs",\
+    "Electronic Engineering" : "eecs",\
     "Energy" : "energy-earth-sciences",\
     "Earth Sciences" : "energy-earth-sciences",\
     "Engineering" : "engineering",\
