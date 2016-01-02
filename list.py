@@ -26,6 +26,7 @@ output_with_color = False
 output_with_describe = False
 merger_result = False
 top_row = 0
+old_top_row = 0
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -359,12 +360,14 @@ def print_list(all_lines, file_name = ''):
     old_line_2 = ""
     color_index = 0
     filter_keyword_2 = ''
-    global top_row
+    global top_row, old_top_row
 
     if len(all_lines) > 0:
         line_count = len(all_lines)
         if top_row > 0 and top_row > line_count:
             top_row = line_count
+        else:
+            top_row = old_top_row
         list_all = []
         reset_max_len_list()
  
@@ -580,7 +583,7 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:mb:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border"])
     except getopt.GetoptError, err:
@@ -620,6 +623,7 @@ def main(argv):
                 print 'the row must between 0 and 30'
         elif o in ('-t', '--top'):
             top_row = int(a)
+            old_top_row = int(a)
         elif o in ('-l', '--level'):
             level = int(a)
         elif o in ('-m', '--merger'):
