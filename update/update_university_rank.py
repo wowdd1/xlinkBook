@@ -17,6 +17,8 @@ class UniversityRankSpider(Spider):
         for div in soup.find_all('div', class_='link'):
             sp = BeautifulSoup(div.prettify())
             for li in sp.find_all('li'):
+                if self.need_update_subject(li.text.strip()) == False:
+                    continue
                 print li.text.strip() + " " + li.a['href']
                 url = li.a['href']
                 if url.startswith('http') == False:
@@ -55,34 +57,36 @@ class UniversityRankSpider(Spider):
 
     def processTimesHigherEducationData(self):
         self.school = 'TimesHigherEducation'
-        r = requests.get('https://www.timeshighereducation.co.uk/world-university-rankings/')
-        soup = BeautifulSoup(r.text)
-        for li in soup.find_all('li'):
-            if li.h3 != None:
-                subject = li.h3.a.text.lower().strip().replace(' ', '-')
-                r = requests.get(li.a['href'])
-                sp = BeautifulSoup(r.text)
 
-                file_name = self.get_file_name(self.subject + '/' + self.school + '/' + subject, self.school)
-                file_lines = self.countFileLineNum(file_name)
-                f = self.open_db(file_name + ".tmp")
-                self.count = 0
-
-                for a in sp.find_all('a', class_='wur-table-link'):
-                    if a.span != None and a.div != None:
-                        print a.span.text
-                        self.count += 1
-                        self.write_db(f, 'the-' + subject + str(self.count), a.span.text, 'https://www.timeshighereducation.co.uk' + a['href'])
-
-                self.close_db(f)
-                if file_lines != self.count and self.count > 0:
-                    self.do_upgrade_db(file_name)
-                    print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
-                else:
-                    self.cancel_upgrade(file_name)
-                    print "no need upgrade\n"
+        urlDict = {'Physical sciences' : 'https://www.timeshighereducation.com/sites/default/files/datatables_json/the_wur_datatables-panel_pane_1-bfd5c82ec91d45711402c806f2d8fba3.json',\
+                   'Engineering technology' : 'https://www.timeshighereducation.com/sites/default/files/datatables_json/the_wur_datatables-panel_pane_1-f369c4f4d024fe736b98e1c1933f302c.json',\
+                   'Social sciences' : 'https://www.timeshighereducation.com/sites/default/files/datatables_json/the_wur_datatables-panel_pane_1-105c8bf883b26f5bdb13a6862a77c709.json',\
+                   'Life sciences' : 'https://www.timeshighereducation.com/sites/default/files/datatables_json/the_wur_datatables-panel_pane_1-ada0b99e3056c85b43b74b5bf1dd0688.json',\
+                   'Arts humanities' : 'https://www.timeshighereducation.com/sites/default/files/datatables_json/the_wur_datatables-panel_pane_1-3f868daadcc97eaefecc84c459d9348a.json',\
+                   'Clinical pre-clinical health' : 'https://www.timeshighereducation.com/sites/default/files/datatables_json/the_wur_datatables-panel_pane_1-085f64cf3b9082d99ccbcdd38f980edc.json'}
 
 
+        for subject, url in [(k, urlDict[k]) for k in urlDict.keys()]:
+            print subject
+            r = requests.get(url)
+            jobj = json.loads(r.text)
+            file_name = self.get_file_name(self.subject + '/' + self.school + '/' + subject, self.school)
+            file_lines = self.countFileLineNum(file_name)
+            f = self.open_db(file_name + ".tmp")
+            self.count = 0
+            for obj in jobj['data']:
+                #print obj
+                print obj['rank'] + " " + obj['title']
+                self.count += 1
+                self.write_db(f, 'the-' + subject.lower().replace(' ', '-') + "-" + obj['rank'], obj['title'], 'https://www.timeshighereducation.com' + obj['path'])
+
+            self.close_db(f)
+            if file_lines != self.count and self.count > 0:
+                self.do_upgrade_db(file_name)
+                print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+            else:
+                self.cancel_upgrade(file_name)
+                print "no need upgrade\n"
 
     def processARWUData(self):
         self.school = 'arwu'
@@ -105,6 +109,8 @@ class UniversityRankSpider(Spider):
             
         for s in sub.keys():
             print s
+            #if self.need_update_subject(s) == False:
+            #    continue
             file_name = self.get_file_name(self.subject + '/' + self.school + '/' + s, self.school)
             file_lines = self.countFileLineNum(file_name)
             f = self.open_db(file_name + ".tmp")
@@ -130,6 +136,8 @@ class UniversityRankSpider(Spider):
         sub_list = ['biology-biochemistry', 'computer-science', 'economics-business', 'engineering', 'mathematics', 'neuroscience-behavior',\
                     'physics', 'psychiatry-psychology']
         for sub in sub_list:
+            if self.need_update_subject(sub) == False:
+                continue
             r = requests.get('http://www.usnews.com/education/best-global-universities/search?region=&subject=' + sub + '&name=')
             soup = BeautifulSoup(r.text)
             file_name = self.get_file_name(self.subject + '/' + self.school + '/' + sub, self.school)
