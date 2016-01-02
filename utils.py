@@ -146,6 +146,7 @@ class Utils:
                          'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
                          'youtube' : 'https://www.youtube.com/results?search_query=',\
                          'coursera' : 'https://www.coursera.org/courses?query=',\
+                         'edusalsa' : 'https://edusalsa.com/search?q=',\
                          'edx' : 'https://www.edx.org/course?search_query=',\
                          'videolectures' : 'http://videolectures.net/site/search/?q=',\
                          'ratemyprofessors' : 'http://www.ratemyprofessors.com/search.jsp?query=',\
