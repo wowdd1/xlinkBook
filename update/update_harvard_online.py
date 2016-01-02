@@ -7,7 +7,8 @@
 from spider import *
 sys.path.append("..")
 from record import CourseRecord
-    
+from utils import Utils    
+
 class HarvardOnlineSpider(Spider):
 
     def __init__(self):
@@ -15,6 +16,7 @@ class HarvardOnlineSpider(Spider):
        self. school = "harvard-online"
        self.url = "http://www.extension.harvard.edu/courses"
        self.deep_mind = True
+       self.utils = Utils()
     #harvard online
     #"""
     
@@ -122,6 +124,41 @@ class HarvardOnlineSpider(Spider):
                 self.getHarvardOnlineCourse(li.a.string, "http://www.extension.harvard.edu" + str(li.a["href"]), course_dict)
         return course_dict
 
+    def getHarvardCourse(self, subject, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        code = ''
+
+        file_name = self.get_file_name(subject.lower(), self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for div in soup.find_all('div', class_='view-group'):
+            sp = BeautifulSoup(div.prettify())
+            for div2 in sp.find_all('div'):
+                code = div2.span.text.strip()
+                link = 'http://www.extension.harvard.edu' + div2.a['href']
+                title = self.utils.removeDoubleSpace(div2.text.replace('\n', '')).replace(' E- ', '-E')
+                for t in title[title.find(code.upper()) : ].split(code.upper()):
+                    if t != '':
+                        title = code.upper() + t
+                        course_num = title[0 : title.find(' ')].strip()
+                        if title.find('(') != -1:
+                            title = title[title.find(' ') : title.find('(')].strip()
+                        else:
+                            title = title[title.find(' ') :].strip()
+                        print course_num + ' ' + title
+                        self.count += 1
+                        self.write_db(f, course_num, title, link)
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def doWork(self):
         print "downloading harvard online course info"
         #r = requests.get("http://www.extension.harvard.edu/courses/subject/computer-science")
@@ -129,8 +166,13 @@ class HarvardOnlineSpider(Spider):
         soup = BeautifulSoup(r.text)
     
     
-        for li in soup.find_all("li", class_ = "is-more-items"):
-            self.getHarvardOnlineCourse(li.a.string, "http://www.extension.harvard.edu" + str(li.a["href"]))
+        #for li in soup.find_all("li", class_ = "is-more-items"):
+        #    self.getHarvardOnlineCourse(li.a.string, "http://www.extension.harvard.edu" + str(li.a["href"]))
+        for div in soup.find_all('div', class_='view-content'):
+            print div.a.text
+            if self.need_update_subject(div.a.text) == False:
+                continue
+            self.getHarvardCourse(div.a.text, 'http://www.extension.harvard.edu' + div.a['href'])
 
 def main(argv):
     start = HarvardOnlineSpider()
