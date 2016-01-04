@@ -125,6 +125,12 @@ class Utils:
                          'scholar' : 'https://scholar.google.com/scholar?hl=en&q=',\
                          'arxiv' : 'http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1',\
                          'gen.lib' : 'http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req=',\
+                         'bookzz' : 'http://bookzz.org/s/?q=',\
+                         'booksc' : 'http://booksc.org/s/?q=',\
+                         'booksee' : 'http://en.booksee.org/s/?q=',\
+                         'avxsearch' : 'http://avxsearch.in/?q=',\
+                         'ebookee' : 'http://ebookee.org/search.php?sa=Search&q=',\
+                         'sci-hub' : 'http://scholar.google.com.secure.sci-hub.io/scholar?q=',\
                          'amazon' : 'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords=',\
                          'nap' : 'http://www.nap.edu/search/?term=',\
                          'hathitrust' : 'http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1=',\

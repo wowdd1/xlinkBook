@@ -616,7 +616,9 @@ class GithubSpider(Spider):
                 'OculusVR' : 'https://github.com/OculusVR/',\
                 'OSVR' : 'https://github.com/OSVR/',\
                 'ValveSoftware' : 'https://github.com/ValveSoftware',\
+                'id-Software' : 'https://github.com/id-Software',\
                 'googlesamples' : 'https://github.com/googlesamples'}
+                
         for k in data:
 
             file_name = self.get_file_name("eecs/projects/github/" + k, self.school)
