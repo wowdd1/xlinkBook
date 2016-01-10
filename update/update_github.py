@@ -617,6 +617,9 @@ class GithubSpider(Spider):
                 'OSVR' : 'https://github.com/OSVR/',\
                 'ValveSoftware' : 'https://github.com/ValveSoftware',\
                 'id-Software' : 'https://github.com/id-Software',\
+                'EA-games' : 'https://github.com/electronicarts',\
+                'sony' : 'https://github.com/sony',\
+                'Blizzard' : 'https://github.com/Blizzard',\
                 'googlesamples' : 'https://github.com/googlesamples'}
                 
         for k in data:
