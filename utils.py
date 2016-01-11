@@ -173,6 +173,7 @@ class Utils:
                          'github' : 'https://github.com/search?q=',\
                          'awesome' : 'https://github.com/search?q=awesome ',\
                          'googlecode' : 'https://code.google.com/hosting/search?q=',\
+                         'codeplex' : 'https://www.codeplex.com/site/search?query=',\
                          'sourceforge' : 'http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q=',\
                          'coursetalk' : 'http://www.coursetalk.com/search?q=',\
                          'mooc-list' : 'https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q=',\
