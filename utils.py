@@ -171,6 +171,9 @@ class Utils:
                          'hindawi' : 'http://www.hindawi.com/search/all/',\
                          'udemy' : 'https://www.udemy.com/courses/search/?ref=home&q=',\
                          'github' : 'https://github.com/search?q=',\
+                         'stackoverflow' : 'http://stackoverflow.com/search?q=',\
+                         'mathoverflow' : 'http://mathoverflow.net/search?q=',\
+                         'zhihu' : 'https://www.zhihu.com/search?type=question&q=',\
                          'awesome' : 'https://github.com/search?q=awesome ',\
                          'googlecode' : 'https://code.google.com/hosting/search?q=',\
                          'codeplex' : 'https://www.codeplex.com/site/search?query=',\
