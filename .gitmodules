@@ -79,3 +79,6 @@
 [submodule "paper/arxiv-sanity-preserver"]
 	path = paper/arxiv-sanity-preserver
 	url = https://github.com/karpathy/arxiv-sanity-preserver.git
+[submodule "books/free-programming-books"]
+	path = books/free-programming-books
+	url = https://github.com/vhf/free-programming-books.git
