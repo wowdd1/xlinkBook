@@ -1,0 +1,13 @@
+Blizzard-github-453-1 | api-wow-docs | https://github.com/Blizzard/api-wow-docs | description:Documentation for the World of Warcraft web APIs.
+Blizzard-github-342-2 | d3-api-docs | https://github.com/Blizzard/d3-api-docs | description:API Documentation for the D3 Web API.
+Blizzard-github-261-3 | s2protocol | https://github.com/Blizzard/s2protocol | description:Python library to decode StarCraft II replay protocols
+Blizzard-github-76-4 | qt4 | https://github.com/Blizzard/qt4 | description:Blizzard's additions/modifications to Qt4
+Blizzard-github-69-5 | passport-bnet | https://github.com/Blizzard/passport-bnet | description:Passport Strategy for Battle.net Login
+Blizzard-github-53-6 | api-sc2-docs | https://github.com/Blizzard/api-sc2-docs | description:API Documentation for the Sc2 Web API.
+Blizzard-github-29-7 | FailoverQueue | https://github.com/Blizzard/FailoverQueue | description:A thread-safe queue wrapper that can spill over to on-disk files for later processing.
+Blizzard-github-24-8 | omniauth-bnet | https://github.com/Blizzard/omniauth-bnet | description:Omniauth Strategy for Battle.net Login
+Blizzard-github-19-9 | heroprotocol | https://github.com/Blizzard/heroprotocol | description:Python library to decode Heroes of the Storm replay protocols
+Blizzard-github-10-10 | qt | https://github.com/Blizzard/qt | description:Blizzard's additions/modifications to Qt5
+Blizzard-github-2-11 | premake-blizzard | https://github.com/Blizzard/premake-blizzard | description:The blizzard module for premake
+Blizzard-github-1-12 | qtbase | https://github.com/Blizzard/qtbase | description:Qt5 qtbase submodule with Blizzard's changes
+Blizzard-github-0-13 | qtdeclarative | https://github.com/Blizzard/qtdeclarative | description:Qt5 qtdeclarative submodule with Blizzard's changes
