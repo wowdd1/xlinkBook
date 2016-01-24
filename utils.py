@@ -174,6 +174,7 @@ class Utils:
                          'stackoverflow' : 'http://stackoverflow.com/search?q=',\
                          'mathoverflow' : 'http://mathoverflow.net/search?q=',\
                          'zhihu' : 'https://www.zhihu.com/search?type=question&q=',\
+                         'csdn' : 'http://so.csdn.net/so/search/s.do?ref=toolbar&q=',\
                          'awesome' : 'https://github.com/search?q=awesome ',\
                          'googlecode' : 'https://code.google.com/hosting/search?q=',\
                          'codeplex' : 'https://www.codeplex.com/site/search?query=',\
