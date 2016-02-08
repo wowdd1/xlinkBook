@@ -58,16 +58,14 @@ def search(keyword, engin, search_keyword = False):
 def openWeb(engin, keyword, url):
     if engin.lower() == 'edx':
         keyword = keyword.replace(' ', '+')
-    utils = Utils()
+
     if engin != '':
-        url = utils.getEnginUrl(engin) + keyword
-    if engin == "arxiv":
-        url = url.replace("$", keyword)
-    if engin == "doaj":
-        url = url.replace('$', keyword)
+        utils = Utils()
+        url = utils.getEnginUrlEx(engin, keyword)
 
     if url != '':
         openBrowser(url)
+
 
 def main(argv):
     global keyword, engin, use_subject, search_keyword, search_video

@@ -262,6 +262,17 @@ class Utils:
                 return item
         return ''
 
+    def getEnginUrlEx(self, engin, keyword):
+        url = ''
+        if engin != '':
+            url = self.getEnginUrl(engin) + keyword
+        if engin == "arxiv":
+            url = url.replace("$", keyword)
+        if engin == "doaj":
+            url = url.replace('$', keyword)
+
+        return url
+
     def isEnginUrl(self, url):
         if url.find('soku.com') != -1 or url.find('google.com.hk/videohp') != -1:
             return True

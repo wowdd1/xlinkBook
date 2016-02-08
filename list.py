@@ -40,6 +40,8 @@ subtraction = '-'
 vertical = '|'
 html_style = False
 
+engin = ''
+
 def usage():
     print 'usage:'
     print '\t-h,--help: print help message.'
@@ -52,9 +54,10 @@ def usage():
     print '\t-w,--width: the width of cell'
     print '\t-r,--row: the rows of the describe'
     print '\t-t,--top: the top number rows for display'
-    print '\t-t,--level: the max search level that the file is in'
+    print '\t-l,--level: the max search level that the file is in'
     print '\t-m,--merger: merger the results'
     print '\t-b,--border: border style'
+    print '-e, --engin: what search for search include: google baidu bing yahoo'
     os.system("cat README.md")
 
 
@@ -251,11 +254,15 @@ def build_lines(list_all):
                 describe_lines[l][i].append(align_describe(""))
 
         for j in range(0, len(list_all[i])):
-            if html_style == False:
+            if html_style == False or (list_all[i][j].get_url().strip() == '' and engin == ''):
                 id_title_lines[i][j] = align_id_title(list_all[i][j])
             else:
                 id_title = align_id_title(list_all[i][j])
-                id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + list_all[i][j].get_url() + '">' + id_title[id_title.find('|') + 1 : ] + '</a>'
+                url = list_all[i][j].get_url()
+                title = id_title[id_title.find('|') + 1 : ]
+                if engin != '':
+                    url = utils.getEnginUrlEx(engin, title.strip()) 
+                id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
@@ -274,7 +281,11 @@ def build_lines(list_all):
 def get_line(lines, start, end, j):
     result = vertical
     for i in range(start, end):
-        result += color_keyword(lines[i][j]) + vertical
+        if output_with_color == True:
+            result += color_keyword(lines[i][j]) + vertical
+        else:
+            result += lines[i][j] + vertical
+
 
     return result
 
@@ -492,7 +503,10 @@ def print_list(all_lines, file_name = ''):
                     print content
                 if output_with_describe == True: 
                     for l in range(0, len(describe_lines)):
-                        print get_line(describe_lines[l], 0, 3, i)
+                        if html_style == True:
+                            print gen_html_body(get_line(describe_lines[l], 0, 3, i))
+                        else:
+                            print get_line(describe_lines[l], 0, 3, i)
 
             if len(id_title_lines[0]) > len(id_title_lines[2]):
                 last = len(id_title_lines[0]) - 1
@@ -512,9 +526,15 @@ def print_list(all_lines, file_name = ''):
                     if output_with_describe == True:
                         for l in range(0, len(describe_lines)):
                             if len(id_title_lines[0]) == len(id_title_lines[1]):
-                                print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical
+                                if html_style == True:
+                                    print gen_html_body(get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical)
+                                else:
+                                    print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical
                             else:
-                                print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical
+                                if html_style == True:
+                                    print gen_html_body(get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical)
+                                else:
+                                    print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical
 
             if html_style == False:
                 print_table_separator(3)
@@ -538,7 +558,10 @@ def print_list(all_lines, file_name = ''):
                         temp = 1
                 if output_with_describe == True:    
                     for l in range(0, len(describe_lines)):
-                        print get_line(describe_lines[l], 0, 2, i)
+                        if html_style == True:
+                            print gen_html_body(get_line(describe_lines[l], 0, 2, i))
+                        else:
+                            print get_line(describe_lines[l], 0, 2, i)
             if len(id_title_lines[0]) > len(id_title_lines[1]):
                 last = len(id_title_lines[0]) - 1
                 content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1, 2) + vertical
@@ -575,7 +598,10 @@ def print_list(all_lines, file_name = ''):
                         temp = 1
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
-                        print get_line(describe_lines[l], 0, 1, i)
+                        if html_style == True:
+                            print gen_html_body(get_line(describe_lines[l], 0, 1, i))
+                        else:
+                            print get_line(describe_lines[l], 0, 1, i)
 
             if html_style == False:
                 print_table_separator(1)
@@ -645,9 +671,10 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:mb:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:mb:e:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -675,7 +702,7 @@ def main(argv):
         elif o in ('-d', '--describe'):
             output_with_describe = True
             adjust_cell_len()
-            output_with_color = True
+            #output_with_color = True
         elif o in ('-w', '--width'):
             custom_cell_len = int(a) 
         elif o in ('-r', '--row'):
@@ -692,6 +719,8 @@ def main(argv):
             merger_result = True
         elif o in ('-b', '--border'):
             chanage_border(a)
+        elif o in ('-e', '--engin'):
+            engin = str(a).strip()
 
     if source == "":
         print "you must input the input file or dir"
