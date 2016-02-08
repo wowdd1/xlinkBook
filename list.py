@@ -286,6 +286,8 @@ def gen_html_body(content):
             verticals = ['<tr><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
         elif column_num == "3":
             verticals = ['<tr><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
+        elif column_num == "1":
+            verticals = ['<tr><td>', '</td><td>', '</td></tr>']   
 
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
@@ -555,9 +557,14 @@ def print_list(all_lines, file_name = ''):
             else:
                 print '</table>'
         elif column_num == '1':
-            print_table_head(1)
+            if html_style == False:
+                print_table_head(1)
+            else:
+                print '<table>'
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
+                if html_style == True:
+                    content = gen_html_body(content)
 
                 if output_with_color == True:
                     print_with_color(content)
@@ -570,7 +577,11 @@ def print_list(all_lines, file_name = ''):
                     for l in range(0, len(describe_lines)):
                         print get_line(describe_lines[l], 0, 1, i)
 
-            print_table_separator(1)
+            if html_style == False:
+                print_table_separator(1)
+            else:
+                print '</table>'
+  
 
         if current > 0:
             message = ''
