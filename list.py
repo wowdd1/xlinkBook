@@ -38,6 +38,7 @@ keyword_list = tag.tag_list
 plus = '+'
 subtraction = '-'
 vertical = '|'
+html_style = False
 
 def usage():
     print 'usage:'
@@ -75,6 +76,13 @@ def border_style_three():
     subtraction = '.'
     vertical = '.'
 
+def border_style_four():
+    global plus, subtraction, vertical, html_style
+    plus = '+'
+    subtraction = '-'
+    vertical = '|'
+    html_style = True
+
 def border_style_custom(style):
     global plus, subtraction, vertical
     plus = ' '
@@ -88,6 +96,8 @@ def chanage_border(style):
         border_style_two()
     elif style == '3':
         border_style_three()
+    elif style == '4': #html style
+        border_style_four()
     else:
         border_style_custom(style)
 
@@ -241,7 +251,11 @@ def build_lines(list_all):
                 describe_lines[l][i].append(align_describe(""))
 
         for j in range(0, len(list_all[i])):
-            id_title_lines[i][j] = align_id_title(list_all[i][j])
+            if html_style == False:
+                id_title_lines[i][j] = align_id_title(list_all[i][j])
+            else:
+                id_title = align_id_title(list_all[i][j])
+                id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + list_all[i][j].get_url() + '">' + id_title[id_title.find('|') + 1 : ] + '</a>'
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
@@ -264,6 +278,20 @@ def get_line(lines, start, end, j):
 
     return result
 
+def gen_html_body(content):
+    index = 0
+    if vertical == '|': 
+        verticals = []
+        if column_num == "2":
+            verticals = ['<tr><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
+        elif column_num == "3":
+            verticals = ['<tr><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
+
+        while content.find(vertical) != -1:
+            content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
+            index = index + 1
+
+    return content
 def get_space_cell(num, column_num):
     result = ""
     start = column_num - num
@@ -443,13 +471,19 @@ def print_list(all_lines, file_name = ''):
             if len(list_all[0]) - len(list_all[1]) == 2:
                 list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
                 list_all[0].pop()
-
+        #print list_all
         id_title_lines, describe_lines = build_lines(list_all)
 
+        #print id_title_lines
         if column_num == "3":
-            print_table_head(3)
+            if html_style == False:
+                print_table_head(3)
+            else:
+                print '<table>'
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
+                if html_style == True:
+                    content = gen_html_body(content)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -467,6 +501,8 @@ def print_list(all_lines, file_name = ''):
                     else:
                         content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2, 3) + vertical
 
+                    if html_style == True:
+                        content = gen_html_body(content)
                     if output_with_color == True:
                         print_with_color(content)
                     else:
@@ -478,11 +514,19 @@ def print_list(all_lines, file_name = ''):
                             else:
                                 print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical
 
-            print_table_separator(3)
+            if html_style == False:
+                print_table_separator(3)
+            else:
+                print '</table>'
         elif column_num == "2":
-            print_table_head(2)
+            if html_style == False:
+                print_table_head(2)
+            else:
+                print '<table>'
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
+                if html_style == True:
+                    content = gen_html_body(content)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -496,6 +540,8 @@ def print_list(all_lines, file_name = ''):
             if len(id_title_lines[0]) > len(id_title_lines[1]):
                 last = len(id_title_lines[0]) - 1
                 content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1, 2) + vertical
+                if html_style == True:
+                    content = gen_html_body(content)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -504,7 +550,10 @@ def print_list(all_lines, file_name = ''):
                     for l in range(0, len(describe_lines)):
                         print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
 
-            print_table_separator(2)
+            if html_style == False:
+                print_table_separator(2)
+            else:
+                print '</table>'
         elif column_num == '1':
             print_table_head(1)
             for i in range(0, len(id_title_lines[0])):
