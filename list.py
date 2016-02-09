@@ -263,11 +263,17 @@ def build_lines(list_all):
                 
                 if engin != '' and engin.strip().find(' ') == -1:
                     url = utils.getEnginUrlEx(engin, title.strip()) 
-                id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
+                if url.strip() != '':
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
+                else:
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title
                 
                 if engin != '' and engin.strip().find(' ') != -1:
                     engin_list = engin.strip().split(" ")
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
+                    if url.strip() != '':
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
+                    else:
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
                     for e in engin_list:
                         id_title_lines[i][j] += ' <a href="' + utils.getEnginUrlEx(e, title.strip()) + '" target="_blank"> <font size="2" color="#999966">' + e + '</font></a>'
             describe = utils.str_block_width(list_all[i][j].get_describe())

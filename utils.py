@@ -173,6 +173,7 @@ class Utils:
                          'github' : 'https://github.com/search?q=',\
                          'stackoverflow' : 'http://stackoverflow.com/search?q=',\
                          'mathoverflow' : 'http://mathoverflow.net/search?q=',\
+                         'wikipedia' : 'https://wikipedia.org/wiki/',\
                          'zhihu' : 'https://www.zhihu.com/search?type=question&q=',\
                          'csdn' : 'http://so.csdn.net/so/search/s.do?ref=toolbar&q=',\
                          'awesome' : 'https://github.com/search?q=awesome ',\
