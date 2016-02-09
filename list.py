@@ -269,7 +269,7 @@ def build_lines(list_all):
                     engin_list = engin.strip().split(" ")
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
                     for e in engin_list:
-                        id_title_lines[i][j] += ' <a href="' + utils.getEnginUrlEx(e, title.strip()) + '" target="_blank">' + e + '</a>'
+                        id_title_lines[i][j] += ' <a href="' + utils.getEnginUrlEx(e, title.strip()) + '" target="_blank"> <font size="2" color="#999966">' + e + '</font></a>'
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
