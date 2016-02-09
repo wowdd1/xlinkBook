@@ -260,9 +260,16 @@ def build_lines(list_all):
                 id_title = align_id_title(list_all[i][j])
                 url = list_all[i][j].get_url()
                 title = id_title[id_title.find('|') + 1 : ]
-                if engin != '':
+                
+                if engin != '' and engin.strip().find(' ') == -1:
                     url = utils.getEnginUrlEx(engin, title.strip()) 
                 id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
+                
+                if engin != '' and engin.strip().find(' ') != -1:
+                    engin_list = engin.strip().split(" ")
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
+                    for e in engin_list:
+                        id_title_lines[i][j] += ' <a href="' + utils.getEnginUrlEx(e, title.strip()) + '" target="_blank">' + e + '</a>'
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
