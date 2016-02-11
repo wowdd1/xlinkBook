@@ -5,34 +5,27 @@
 15-826 | Multimedia Databases & Data mining | | 
 10-920 | Grad Reading & Research  | | 
 10-930 | Dissertation Research | | 
-10-708 | Probabilistic Graphical Models  | | 
 15-780 | Graduate Artificial Intelligence  | | 
 15-896 | Truth, Justice and Algorithms | | 
 16-720 | Computer Vision | | 
 16-822 | Geometry-Based Methods in Vision  | | 
 16-824 | Visual Learning & Recognition | | 
-15-896 | Truth, Justice and Algorithms | | 
 03-762 | Systems Neuroscience | | 
 36-759 | Statistical Models of the Brain | | 
 02-710 | Computational Genomics  | | 
 02-717 | Algorithms in Nature | | 
 02-718 | Computational Medicine  | | 
 02-740 | Bioimage Informatics | | 
-10-708 | Probabilistic Graphical Models | | 
-10-708 | Probabilistic Graphical Models  | | 
 11-727 | Computational Semantics for NLP  | | 
 11-741 | Machine Learning for Text Mining  | | 
 11-761 | Language and Statistics | | 
 36-723 | Hidden Markov Models: Theory and Applications | | 
 36-752 | Adv. Probability Overview | | 
-36-759 | Statistical Models of the Brain | | 
 11-755 | Machine Learning for Signal Processing  | | 
 18-755 | Networks in the Real World | | 
 36-707 | Regression Analysis | | 
-36-752 | Adv. Probability Overview  | | 
 36-754 | Adv. Probability | | 
 36-755 | Advanced Statistical Theory I  | | 
-36-759 | Statistical Models of the Brain | | 
 36-715 | Discrete Time Stochastic Processes | | 
 36-716 | Continuous Time Stochastic Processes | | 
 36-720 | Discrete Multivariate Analysis | | 
@@ -49,59 +42,33 @@
 36-770 | Nonparametric Methods | | 
 36-794 | Astrostatistics | | 
 10-725 | Convex Optimization | | 
-10-708 | Probablistic Graphical Models | | 
 10-806 | Foundations of Machine Learning & Data Science | | 
-15-780 | Graduate Artificial Intelligence | | 
 15-857 | Analytical Performance Modeling & Design of Computer Systems  | | 
 15-859 | (M) Randomized Algorithms | | 
 15-887 | Planning, Execution, and Learning | | 
-15-896 | Truth, Justice and Algorithms | | 
-10-725 | Convex Optimization | | 
-10-806 | Foundations of Machine Learning & Data Science | | 
 15-855 | Computational Complexity Theory | | 
-15-857 | Analytical Performance Modeling & Design of Computer Systems  | | 
 15-859 | Special Topics in Theory - check for appropriate topics | | 
 15-859 | (B) Machine Learning Theory | | 
 15-859 | (E) Special Topics in Theory: Advanced Algorithms | | 
-15-896 | Truth, Justice and Algorithms | | 
 16-811 | Mathematical Fundamentals for Robotics | | 
 21-801 | Adv. Topics Discrete Math (Random Graphs) | | 
 02-750 | Automation of Biological Research: Robotics & Machine Learning  | | 
-02-710 | Computational Genomics | | 
-02-717 | Algorithms in Nature | | 
-02-718 | Computational Medicine  | | 
-02-740 | Bioimage Informatics  | | 
-10-708 | Probablistic Graphical Models | | 
-10-725 | Convex Optimization | | 
-16-720 | Computer Vision | | 
-16-822 | Geometry-Based Methods in Vision  | | 
 16-824 | Learning Based Methods in Vision | | 
 15-823 | Advanced Database Topics | | 
-10-708 | Probablistic Graphical Models | | 
 10-710/11-763 | Structured Prediction for Language & Other Discrete Data  | | 
 10-802/11-772 | Analysis of Social Media | | 
 11-711 | Algorithms for NLP | | 
-11-727 | Computational Semantics for NLP | | 
-11-741 | Machine Learning for Text Mining | | 
 11-744 | Experimental Information Retrieval | | 
 11-745 | Advanced Statistical Learning Seminar | | 
-11-761 | Language and Statistics | | 
 11-762 | Language and Statistics II | | 
 11-773 | Text-Driven Forecasting | | 
-02-750 | Automation of Biological Research: Robotics & Machine Learning  | | 
-15-887 | Planning, Execution, and Learning | | 
-16-811 | Mathematical Fundamentals for Robotics | | 
 16-831 | Statistical Techniques in Robotics | | 
 16-899C | Adaptive Control and Reinforcement Learning | | 
 10-704 | Information Processing & Learning | | 
 11-745 | Adv. Statistical Learning Seminar | | 
-11-755 | Machine Learning for Signal Processing  | | 
 15-830 | Computational Methods in Sustainable Energy  | | 
-18-755 | Networks in the Real World | | 
 03-762 | Advanced Cellular Neuroscience | | 
-03-763 | Systems Neuroscience | | 
 15-883 | Computational Models of Neural Systems  | | 
-36-759 | Statistical Models of the Brain | | 
 85-719 | Introduction to Parallel Distributed Processing  | | 
 85-765 | Cognitive Neuroscience (12 units) | | 
 NROSCI 2100 | Cellular & Molecular Neurobiology | | 
@@ -122,7 +89,6 @@ MATH 3375 | Computational Neuroscience | |
 47-744 | Analytical and Structural Marketing Models  | | 
 45-821 | Marketing with Electronic & Social Media  | | 
 45-824 | Database Marketing | | 
-47-800 | Intermediate Microeconomic Analysis | | 
 45-870 | Management of Information Systems | | 
 45-871 | Information Strategy, Systems and Economics  | | 
 47-951 | Seminar in Information Systems I | | 
