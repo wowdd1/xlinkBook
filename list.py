@@ -117,9 +117,15 @@ def color_keyword(text):
     result = text
     for k in keyword_list:
         if (color_index - 1) % 2 == 0:
-            result = result.replace(k, utils.getColorStr('brown', k))
+            if html_style == True:
+                result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
+            else:
+                result = result.replace(k, utils.getColorStr('brown', k))
         else:
-            result = result.replace(k, utils.getColorStr('darkcyan', k))
+            if html_style == True:
+                result = result.replace(k, '<font color="#CCFF66">' + k + '</font>')
+            else:
+                result = result.replace(k, utils.getColorStr('darkcyan', k))
 
     return result
 
@@ -261,14 +267,14 @@ def build_lines(list_all):
                 url = list_all[i][j].get_url()
                 title = id_title[id_title.find('|') + 1 : ]
                 
-                if engin != '' and engin.strip().find(' ') == -1:
-                    url = utils.getEnginUrlEx(engin, title.strip()) 
+                #if engin != '' and engin.strip().find(' ') == -1:
+                #    url = utils.getEnginUrlEx(engin, title.strip()) 
                 if url.strip() != '':
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
-                else:
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title
+                #else:
+                #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title
                 
-                if engin != '' and engin.strip().find(' ') != -1:
+                if engin != '':
                     engin_list = engin.strip().split(" ")
                     if url.strip() != '':
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
@@ -294,10 +300,10 @@ def build_lines(list_all):
 def get_line(lines, start, end, j):
     result = vertical
     for i in range(start, end):
-        if output_with_color == True:
-            result += color_keyword(lines[i][j]) + vertical
-        else:
-            result += lines[i][j] + vertical
+        #if output_with_color == True:
+        result += color_keyword(lines[i][j]) + vertical
+        #else:
+        #    result += lines[i][j] + vertical
 
 
     return result
@@ -416,8 +422,9 @@ def print_list(all_lines, file_name = ''):
     old_line_2 = ""
     color_index = 0
     filter_keyword_2 = ''
-    global top_row, old_top_row
-
+    global top_row, old_top_row, output_with_color
+    if html_style == True:
+        output_with_color = False
     if len(all_lines) > 0:
         line_count = len(all_lines)
         if top_row > 0 and top_row > line_count:
@@ -734,6 +741,7 @@ def main(argv):
             chanage_border(a)
         elif o in ('-e', '--engin'):
             engin = str(a).strip()
+
 
     if source == "":
         print "you must input the input file or dir"

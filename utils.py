@@ -119,83 +119,19 @@ class Utils:
         'cyan': '1;36',
         'white': '1;37',
     }
+    search_engin_dict = {}
 
-    search_engin_dict = {'google' : 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=',\
-                         'googlevideo' : 'https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q=',\
-                         'scholar' : 'https://scholar.google.com/scholar?hl=en&q=',\
-                         'arxiv' : 'http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1',\
-                         'gen.lib' : 'http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req=',\
-                         'bookzz' : 'http://bookzz.org/s/?q=',\
-                         'booksc' : 'http://booksc.org/s/?q=',\
-                         'booksee' : 'http://en.booksee.org/s/?q=',\
-                         'avxsearch' : 'http://avxsearch.in/?q=',\
-                         'ebookee' : 'http://ebookee.org/search.php?sa=Search&q=',\
-                         'sci-hub' : 'http://scholar.google.com.secure.sci-hub.io/scholar?q=',\
-                         'amazon' : 'https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords=',\
-                         'nap' : 'http://www.nap.edu/search/?term=',\
-                         'hathitrust' : 'http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1=',\
-                         'daysou' : 'http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q=',\
-                         'wowebook' : 'http://www.wowebook.co/?s=',\
-                         'pmc' : "http://www.ncbi.nlm.nih.gov/pmc/?term=",\
-                         'pubmed' : "http://www.ncbi.nlm.nih.gov/pubmed/?term=",\
-                         'baidu' : 'http://www.baidu.com/s?word=',\
-                         'bing' : 'http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq=',\
-                         'academic' : 'http://academic.research.microsoft.com/Search?query=',\
-                         'xueshu' : 'http://xueshu.baidu.com/s?wd=',\
-                         'dblp' : 'http://dblp.uni-trier.de/search?q=',\
-                         'citeseerx' : 'http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q=',\
-                         'springer' : 'http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText=',\
-                         'dblife' : 'http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query=',\
-                         'appft.uspto' : 'http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1=',\
-                         'patft.uspto' : 'http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1=',\
-                         'patents.google' : 'https://patents.google.com/?q=',\
-                         'yahoo' : 'https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p=',\
-                         'youtube' : 'https://www.youtube.com/results?search_query=',\
-                         'coursera' : 'https://www.coursera.org/courses?query=',\
-                         'edusalsa' : 'https://edusalsa.com/search?q=',\
-                         'edx' : 'https://www.edx.org/course?search_query=',\
-                         'videolectures' : 'http://videolectures.net/site/search/?q=',\
-                         'ratemyprofessors' : 'http://www.ratemyprofessors.com/search.jsp?query=',\
-                         'ted' : 'http://www.ted.com/search?q=',\
-                         'doaj' : 'https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp',\
-                         'frontiersin' : 'http://www.frontiersin.org/SearchData.aspx?sq=',\
-                         'plos' : 'https://www.plos.org/?submit=Go&s=',\
-                         'plosone' : 'http://www.plosone.org/search/simple?from=globalSimpleSearch&filterJournals=PLoSONE&query=',\
-                         'scirp' : 'http://www.scirp.org/journal/Articles.aspx?searchField=All&page=1&searchCode=',\
-                         'oalib' : 'http://www.oalib.com/search;jsessionid=0C979878FC00CECAA48E851318C327DB.tomcat1?kw=',\
-                         'nature' : 'http://www.nature.com/search?journal=nature%2Cnews&q=',\
-                         'philpapers' : 'http://philpapers.org/s/',\
-                         'macropus' : 'http://git.macropus.org/hubmed/?term=',\
-                         'citeulike' : 'http://www.citeulike.org/search/all?q=',\
-                         'inspirehep' : 'http://inspirehep.net/search?ln=en&ln=en&of=hb&action_search=Search&sf=earliestdate&so=d&rm=&rg=25&sc=0&p=',\
-                         'hindawi' : 'http://www.hindawi.com/search/all/',\
-                         'udemy' : 'https://www.udemy.com/courses/search/?ref=home&q=',\
-                         'github' : 'https://github.com/search?q=',\
-                         'stackoverflow' : 'http://stackoverflow.com/search?q=',\
-                         'mathoverflow' : 'http://mathoverflow.net/search?q=',\
-                         'wikipedia' : 'https://wikipedia.org/wiki/',\
-                         'zhihu' : 'https://www.zhihu.com/search?type=question&q=',\
-                         'csdn' : 'http://so.csdn.net/so/search/s.do?ref=toolbar&q=',\
-                         'awesome' : 'https://github.com/search?q=awesome ',\
-                         'googlecode' : 'https://code.google.com/hosting/search?q=',\
-                         'codeplex' : 'https://www.codeplex.com/site/search?query=',\
-                         'sourceforge' : 'http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q=',\
-                         'coursetalk' : 'http://www.coursetalk.com/search?q=',\
-                         'mooc-list' : 'https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q=',\
-                         'nctu' : 'http://ocw.nctu.edu.tw/course_list_search.php?key=',\
-                         'class-central' : 'https://www.class-central.com/search?q=',\
-                         'guokr' : 'http://mooc.guokr.com/search/course/?wd=',\
-                         'coursegraph' : 'http://coursegraph.com/search_results/',\
-                         'moozhi' : 'http://www.moozhi.com/search/course?keywords=',\
-                         'aminer' : 'http://aminer.org/search/',\
-                         'chaoxing' : 'http://video.chaoxing.com/s?order=0&type=all&sw=',\
-                         'sina' : 'http://open.sina.com.cn/search/',\
-                         '163' : 'http://c.open.163.com/search/search.htm?query=',\
-                         'youku' : 'http://www.soku.com/search_playlist/q_',\
-                         'tudou' : 'http://www.soku.com/t/npsearch/',\
-                         'digitaltutors' : 'http://www.digitaltutors.com/11/search.php?searchString=',\
-                         'sec' : 'http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&company='}
+    def __init__(self):
+        self.loadEngins()
 
+    def loadEngins(self):
+        if os.path.exists('config/engin_list'):
+            f = open('config/engin_list','rU')
+            all_lines = f.readlines()
+            for line in all_lines:
+                record = Record(line)
+                if record.get_title() != '':
+                    self.search_engin_dict[record.get_title().strip()] = record.get_url().strip()
 
     def removeDoubleSpace(self, text):
         text = text.replace('\n','')
