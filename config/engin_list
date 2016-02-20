@@ -1,4 +1,3 @@
-
 engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | 
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | 
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | 
@@ -74,3 +73,4 @@ engin-72 | youku | http://www.soku.com/search_playlist/q_ |
 engin-73 | tudou | http://www.soku.com/t/npsearch/ | 
 engin-74 | digitaltutors | http://www.digitaltutors.com/11/search.php?searchString= | 
 engin-75 | sec | http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&company= | 
+engin-76 | chrome | chrome://bookmarks/#q= |
