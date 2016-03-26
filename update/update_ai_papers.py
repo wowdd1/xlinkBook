@@ -282,11 +282,13 @@ class AiPapersSpider(Spider):
         self.getIJCAIPastPapers()
 
     def getIJCAIPastPapers(self):
-        r = requests.get("http://ijcai.org/Past%20Proceedings/index.html")
+        r = requests.get("http://ijcai.org/Past_Proceedings")
         soup = BeautifulSoup(r.text)
         for a in soup.find_all('a'):
-            url = "http://ijcai.org/Past%20Proceedings/" + a['href']
-            self.getIJCAIPapers(url, a['href'][0 : a['href'].find("/")], a.text)
+            if (a.text == "Proceedings" or a.text.find('vol')) != -1 and a['href'].startswith('http'):
+                year = a['href'].replace('http://ijcai.org/proceedings/', '')
+                topic = 'ijcai-' + year
+                self.getIJCAIPapers(a['href'], topic, year)
 
     def getIJCAIPapers(self, url, topic, year):
         print url
@@ -303,11 +305,10 @@ class AiPapersSpider(Spider):
         soup = BeautifulSoup(r.text)
         for a in soup.find_all('a'):
             if a['href'].find('pdf') != -1:
-                title = self.util.removeDoubleSpace(a.text.replace('\n', ''))
+                title = self.util.removeDoubleSpace(a.text.replace('\n', '')).strip()
                 print title
-                link = 'http://ijcai.org/Past%20Proceedings/' + topic + '/CONTENT/' + a['href']
                 self.count += 1
-                self.write_db(f, topic.lower() + '-' + str(self.count), title, link)
+                self.write_db(f, topic.lower() + '-' + str(self.count), title, a['href'])
         #for line in r.text.spilt("\n"):
         #    if line.find("p>") != -1:
         #        print line
@@ -392,6 +393,7 @@ class AiPapersSpider(Spider):
             print "no need upgrade\n"            
 
 start = AiPapersSpider()
+
 #start.getCVPR2015Paper()
 start.doWork()
 start.getCvPaper()
@@ -401,8 +403,14 @@ start.getNlpPaper()
 start.getJMLRPaper()
 start.getRSSPaper()
 start.getIJCAIPaper()
+
 #TODO
-#IJCAI http://ijcai.org/
+#TPAMI http://dblp.uni-trier.de/db/journals/pami/
+#AI http://dblp.uni-trier.de/db/journals/ai/
+#IJCV http://dblp.uni-trier.de/db/journals/ijcv/
+
+#IJCAI2015 http://ijcai.org/proceedings/2015
 #ijrr http://www.ijrr.org/
 #ICRA http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000639
 #IROS http://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000393
+#ROBIO ...

@@ -1,7 +1,508 @@
-ijcai-2011-1 | Accommodating Human Variability in Human-Robot Teams through Theory of Mind | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=ijcai-2011-1 Accommodating Human Variability in Human-Robot Teams through Theory of Mind | author:Laura Hiatt ,  Anthony Harrison,  Greg Trafton
-ijcai-2011-2 | Aesthetic Guidelines Driven Photography By Robots | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=ijcai-2011-2 Aesthetic Guidelines Driven Photography By Robots | author:Raghudeep Gadde,  Kamalakar Karlapalem
-ijcai-2011-3 | Conics With A Common Axis of Symmetry: Properties and Applications to Camera Calibration | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=ijcai-2011-3 Conics With A Common Axis of Symmetry: Properties and Applications to Camera Calibration | author:Zijian Zhao
-ijcai-2011-4 | Robotic Object Detection: Learning to Improve the Classifiers using Sparse Graphs for Path Planning | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=ijcai-2011-4 Robotic Object Detection: Learning to Improve the Classifiers using Sparse Graphs for Path Planning | author:Zhaoyin Jia ,  Ashutosh Saxena ,  Tsuhan Chen
-ijcai-2011-5 | User-dependent Aspect Model for Collaborative Activity Recognition | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=ijcai-2011-5 User-dependent Aspect Model for Collaborative Activity Recognition | author:Wenchen Zheng,  Qiang Yang
-ijcai-2011-6 | Capturing an Evader in a Polygonal Environment with Obstacles | http://www.cs.umn.edu/~isler/pub/ijcai11.pdf | author:Deepak Bhadauria ,  Volkan Isler
-ijcai-2011-7 | Exploiting Probabilistic Knowledge under Uncertain Sensing for Efficient Robot Behaviour | http://www.cs.bham.ac.uk/~grettonc/ijcai2011.pdf | author:Marc Hanheide ,  Nick Hawes,  Charles Gretton,  Alper Aydemir,  Hendrik Zender,  Andrzej Pronobis,  Jeremy Wyatt,  Moritz Göbelbecker
+ijcai-2011-1 | Preface | http://ijcai.org/Proceedings/11/Papers/002.pdf | 
+ijcai-2011-2 | Conference Organization | http://ijcai.org/Proceedings/11/Papers/003.pdf | 
+ijcai-2011-3 | Program Committee | http://ijcai.org/Proceedings/11/Papers/004.pdf | 
+ijcai-2011-4 | Conference Sponsorship | http://ijcai.org/Proceedings/11/Papers/005.pdf | 
+ijcai-2011-5 | Awards and Distinguished Papers | http://ijcai.org/Proceedings/11/Papers/006.pdf | 
+ijcai-2011-6 | Keynote and Invited Speakers | http://ijcai.org/Proceedings/11/Papers/007.pdf | 
+ijcai-2011-7 | IJCAI Organization | http://ijcai.org/Proceedings/11/Papers/008.pdf | 
+ijcai-2011-8 | Past IJCAI Conferences | http://ijcai.org/Proceedings/11/Papers/009.pdf | 
+ijcai-2011-9 | IJCAI11 Papers | http://ijcai.org/Proceedings/11/Papers/010.pdf | 
+ijcai-2011-10 | Invited Talk and Research Excellence Paper | http://ijcai.org/Proceedings/11/Papers/011.pdf | 
+ijcai-2011-11 | Open Information Extraction: The Second Generation | http://ijcai.org/Proceedings/11/Papers/012.pdf | 
+ijcai-2011-12 | Artificial Intelligence and Human Thinking | http://ijcai.org/Proceedings/11/Papers/013.pdf | 
+ijcai-2011-13 | Agent-Based and Multiagent Systems | http://ijcai.org/Proceedings/11/Papers/014.pdf | 
+ijcai-2011-14 |  | http://ijcai.org/Proceedings/11/Papers/015.pdf | 
+ijcai-2011-15 | Aggregating Dependency Graphs into Voting Agendas in Multi-Issue Elections | http://ijcai.org/Proceedings/11/Papers/015.pdf | 
+ijcai-2011-16 | Using Emotions to Enhance Decision-Making | http://ijcai.org/Proceedings/11/Papers/016.pdf | 
+ijcai-2011-17 | Hustling in Repeated Zero-Sum Games with Imperfect Execution | http://ijcai.org/Proceedings/11/Papers/017.pdf | 
+ijcai-2011-18 | Dynamics of Profit-Sharing Games | http://ijcai.org/Proceedings/11/Papers/018.pdf | 
+ijcai-2011-19 | Optimal Partitions in Additively Separable Hedonic Games | http://ijcai.org/Proceedings/11/Papers/019.pdf | 
+ijcai-2011-20 | Coalitional Voting Manipulation: A Game-Theoretic Perspective | http://ijcai.org/Proceedings/11/Papers/020.pdf | 
+ijcai-2011-21 | Unweighted Coalitional Manipulation under the Borda Rule Is NP-Hard | http://ijcai.org/Proceedings/11/Papers/021.pdf | 
+ijcai-2011-22 | Simulating the Emergence of Grammatical Agreement in Multi-Agent Language Games | http://ijcai.org/Proceedings/11/Papers/022.pdf | 
+ijcai-2011-23 | Approximately Strategy-Proof Voting | http://ijcai.org/Proceedings/11/Papers/023.pdf | 
+ijcai-2011-24 | A General Elicitation-Free Protocol for Allocating Indivisible Goods | http://ijcai.org/Proceedings/11/Papers/024.pdf | 
+ijcai-2011-25 | Group-Strategyproof Irresolute Social Choice Functions | http://ijcai.org/Proceedings/11/Papers/025.pdf | 
+ijcai-2011-26 | On the Fixed-Parameter Tractability of Composition-Consistent Tournament Solutions | http://ijcai.org/Proceedings/11/Papers/026.pdf | 
+ijcai-2011-27 | Social Distance Games | http://ijcai.org/Proceedings/11/Papers/027.pdf | 
+ijcai-2011-28 | Modeling the Emergence and Convergence of Norms | http://ijcai.org/Proceedings/11/Papers/028.pdf | 
+ijcai-2011-29 | Verifying Normative Behaviour via Normative Mechanism Design | http://ijcai.org/Proceedings/11/Papers/029.pdf | 
+ijcai-2011-30 | Alternating Epistemic Mu-Calculus | http://ijcai.org/Proceedings/11/Papers/030.pdf | 
+ijcai-2011-31 | Trust Decision-Making in Multi-Agent Systems | http://ijcai.org/Proceedings/11/Papers/031.pdf | 
+ijcai-2011-32 | Manipulation in Group Argument Evaluation | http://ijcai.org/Proceedings/11/Papers/032.pdf | 
+ijcai-2011-33 | Towards More Expressive Cake Cutting | http://ijcai.org/Proceedings/11/Papers/033.pdf | 
+ijcai-2011-34 | Efficient Mechanisms with Risky Participation | http://ijcai.org/Proceedings/11/Papers/034.pdf | 
+ijcai-2011-35 | Using Incentive Mechanisms for an Adaptive Regulation of Open Multi-Agent Systems | http://ijcai.org/Proceedings/11/Papers/035.pdf | 
+ijcai-2011-36 | AstonCAT-Plus: An Efficient Specialist for the TAC Market Design Tournament | http://ijcai.org/Proceedings/11/Papers/036.pdf | 
+ijcai-2011-37 | A Market Clearing Solution for Social Lending | http://ijcai.org/Proceedings/11/Papers/037.pdf | 
+ijcai-2011-38 | Hypercubewise Preference Aggregation in Multi-Issue Domains | http://ijcai.org/Proceedings/11/Papers/038.pdf | 
+ijcai-2011-39 | Changing One’s Mind: Erase or Rewind? | http://ijcai.org/Proceedings/11/Papers/039.pdf | 
+ijcai-2011-40 | Multi-Agent Soft Constraint Aggregation via Sequential Voting | http://ijcai.org/Proceedings/11/Papers/040.pdf | 
+ijcai-2011-41 | Human-Agent Auction Interactions: Adaptive-Aggressive Agents Dominate | http://ijcai.org/Proceedings/11/Papers/041.pdf | 
+ijcai-2011-42 | Choosing Collectively Optimal Sets of Alternatives Based on the Condorcet Criterion | http://ijcai.org/Proceedings/11/Papers/042.pdf | 
+ijcai-2011-43 | Action Selection via Learning Behavior Patterns in Multi-Robot Systems | http://ijcai.org/Proceedings/11/Papers/043.pdf | 
+ijcai-2011-44 | Assumption-Based Argumentation Dialogues | http://ijcai.org/Proceedings/11/Papers/044.pdf | 
+ijcai-2011-45 | Binary Aggregation with Integrity Constraints | http://ijcai.org/Proceedings/11/Papers/045.pdf | 
+ijcai-2011-46 | Manipulating Boolean Games through Communication | http://ijcai.org/Proceedings/11/Papers/046.pdf | 
+ijcai-2011-47 | On the Complexity of the Core over Coalition Structures | http://ijcai.org/Proceedings/11/Papers/047.pdf | 
+ijcai-2011-48 | Max-Prob: An Unbiased Rational Decision Making Procedure for Multiple-Adversary Environments | http://ijcai.org/Proceedings/11/Papers/048.pdf | 
+ijcai-2011-49 | A Dynamic Logic of Normative Systems | http://ijcai.org/Proceedings/11/Papers/049.pdf | 
+ijcai-2011-50 | Considerate Equilibrium | http://ijcai.org/Proceedings/11/Papers/050.pdf | 
+ijcai-2011-51 | Model Checking Knowledge in Pursuit Evasion Games | http://ijcai.org/Proceedings/11/Papers/051.pdf | 
+ijcai-2011-52 | The Complexity of Safe Manipulation under Scoring Rules | http://ijcai.org/Proceedings/11/Papers/052.pdf | 
+ijcai-2011-53 | Comparing Variants of Strategic Ability | http://ijcai.org/Proceedings/11/Papers/053.pdf | 
+ijcai-2011-54 | Accelerating Best Response Calculation in Large Extensive Games | http://ijcai.org/Proceedings/11/Papers/054.pdf | 
+ijcai-2011-55 | A Mechanism for Dynamic Ride Sharing Based on Parallel Auctions | http://ijcai.org/Proceedings/11/Papers/055.pdf | 
+ijcai-2011-56 | Security Games with Multiple Attacker Resources | http://ijcai.org/Proceedings/11/Papers/056.pdf | 
+ijcai-2011-57 | Budgeted Social Choice: From Consensus to Personalized Decision Making | http://ijcai.org/Proceedings/11/Papers/057.pdf | 
+ijcai-2011-58 | Robust Approximation and Incremental Elicitation in Voting Protocols | http://ijcai.org/Proceedings/11/Papers/058.pdf | 
+ijcai-2011-59 | Push and Swap: Fast Cooperative Path-Finding with Completeness Guarantees | http://ijcai.org/Proceedings/11/Papers/059.pdf | 
+ijcai-2011-60 | Subsidies, Stability, and Restricted Cooperation in Coalitional Games | http://ijcai.org/Proceedings/11/Papers/060.pdf | 
+ijcai-2011-61 | Using Experience to Generate New Regulations | http://ijcai.org/Proceedings/11/Papers/061.pdf | 
+ijcai-2011-62 | Agents, Actions and Goals in Dynamic Environments | http://ijcai.org/Proceedings/11/Papers/062.pdf | 
+ijcai-2011-63 | On the Complexity of Voting Manipulation under Randomized Tie-Breaking | http://ijcai.org/Proceedings/11/Papers/063.pdf | 
+ijcai-2011-64 | Efficient Planning for Factored Infinite-Horizon DEC-POMDPs | http://ijcai.org/Proceedings/11/Papers/064.pdf | 
+ijcai-2011-65 | An Interaction-Oriented Model for Multi-Scale Simulation | http://ijcai.org/Proceedings/11/Papers/065.pdf | 
+ijcai-2011-66 | Minimum Search to Establish Worst-Case Guarantees in Coalition Structure Generation | http://ijcai.org/Proceedings/11/Papers/066.pdf | 
+ijcai-2011-67 | On Combining Decisions from Multiple Expert Imitators for Performance | http://ijcai.org/Proceedings/11/Papers/067.pdf | 
+ijcai-2011-68 | An Empirical Study of Seeding Manipulations and Their Prevention | http://ijcai.org/Proceedings/11/Papers/068.pdf | 
+ijcai-2011-69 | Rigging Tournament Brackets for Weaker Players | http://ijcai.org/Proceedings/11/Papers/069.pdf | 
+ijcai-2011-70 | Learning Where You Are Going and from Whence You Came: h- and g-Cost Learning in Real-Time Heuristic Search | http://ijcai.org/Proceedings/11/Papers/070.pdf | 
+ijcai-2011-71 | Emergence and Stability of Social Conventions in Conflict Situations | http://ijcai.org/Proceedings/11/Papers/071.pdf | 
+ijcai-2011-72 | Approximating Optimal Combinatorial Auctions for Complements Using Restricted Welfare Maximization | http://ijcai.org/Proceedings/11/Papers/072.pdf | 
+ijcai-2011-73 | Generalizing Envy-Freeness toward Group of Agents | http://ijcai.org/Proceedings/11/Papers/073.pdf | 
+ijcai-2011-74 | Concise Characteristic Function Representations in Coalitional Games Based on Agent Types | http://ijcai.org/Proceedings/11/Papers/074.pdf | 
+ijcai-2011-75 | Facing Openness with Socio-Cognitive Trust and Categories | http://ijcai.org/Proceedings/11/Papers/075.pdf | 
+ijcai-2011-76 | Attack Semantics for Abstract Argumentation | http://ijcai.org/Proceedings/11/Papers/076.pdf | 
+ijcai-2011-77 | Dynamic Sanctioning for Robust and Cost-Efficient Norm Compliance | http://ijcai.org/Proceedings/11/Papers/077.pdf | 
+ijcai-2011-78 | Social Instruments for Robust Convention Emergence | http://ijcai.org/Proceedings/11/Papers/078.pdf | 
+ijcai-2011-79 | Reasoning about Preferences in Intelligent Agent Systems | http://ijcai.org/Proceedings/11/Papers/079.pdf | 
+ijcai-2011-80 | Using Gaussian Processes to Optimise Concession in Complex Negotiations against Unknown Opponents | http://ijcai.org/Proceedings/11/Papers/080.pdf | 
+ijcai-2011-81 | Online Planning for Ad Hoc Autonomous Agent Teams | http://ijcai.org/Proceedings/11/Papers/081.pdf | 
+ijcai-2011-82 | A Maximum Likelihood Approach towards Aggregating Partial Orders | http://ijcai.org/Proceedings/11/Papers/082.pdf | 
+ijcai-2011-83 | An Efficient Monte-Carlo Algorithm for Pricing Combinatorial Prediction Markets for Tournaments | http://ijcai.org/Proceedings/11/Papers/083.pdf | 
+ijcai-2011-84 | Improving Resource Allocation Strategy against Human Adversaries in Security Games | http://ijcai.org/Proceedings/11/Papers/084.pdf | 
+ijcai-2011-85 | Continuous Time Planning for Multiagent Teams with Temporal Constraints | http://ijcai.org/Proceedings/11/Papers/085.pdf | 
+ijcai-2011-86 | Mechanism Design for Double Auctions with Temporal Constraints | http://ijcai.org/Proceedings/11/Papers/086.pdf | 
+ijcai-2011-87 | Generalized Reaction Functions for Solving Complex-Task Allocation Problems | http://ijcai.org/Proceedings/11/Papers/087.pdf | 
+ijcai-2011-88 | Multi-Agent Plan Recognition with Partial Team Traces and Plan Libraries | http://ijcai.org/Proceedings/11/Papers/088.pdf | 
+ijcai-2011-89 | The Shapley Value as a Function of the Quota in Weighted Voting Games | http://ijcai.org/Proceedings/11/Papers/089.pdf | 
+ijcai-2011-90 | Constraints, Satisfiability, and Search  | http://ijcai.org/Proceedings/11/Papers/090.pdf | 
+ijcai-2011-91 | Tackling the Partner Units Configuration Problem | http://ijcai.org/Proceedings/11/Papers/091.pdf | 
+ijcai-2011-92 | Depth-Driven Circuit-Level Stochastic Local Search for SAT | http://ijcai.org/Proceedings/11/Papers/092.pdf | 
+ijcai-2011-93 | Tractable Set Constraints | http://ijcai.org/Proceedings/11/Papers/093.pdf | 
+ijcai-2011-94 | Symmetries and Lazy Clause Generation | http://ijcai.org/Proceedings/11/Papers/094.pdf | 
+ijcai-2011-95 | Constraint Satisfaction Problems: Convexity Makes AllDifferent Constraints Tractable | http://ijcai.org/Proceedings/11/Papers/095.pdf | 
+ijcai-2011-96 | Probabilistic Satisfiability: Logic-Based Algorithms and Phase Transition | http://ijcai.org/Proceedings/11/Papers/096.pdf | 
+ijcai-2011-97 | Using Payoff-Similarity to Speed Up Search | http://ijcai.org/Proceedings/11/Papers/097.pdf | 
+ijcai-2011-98 | Kernels for Global Constraints | http://ijcai.org/Proceedings/11/Papers/098.pdf | 
+ijcai-2011-99 | A Uniform Approach for Generating Proofs and Strategies for Both True and False QBF Formulas | http://ijcai.org/Proceedings/11/Papers/099.pdf | 
+ijcai-2011-100 | Generalizing ADOPT and BnB-ADOPT | http://ijcai.org/Proceedings/11/Papers/100.pdf | 
+ijcai-2011-101 | Dynamic SAT with Decision Change Costs: Formalization and Solutions | http://ijcai.org/Proceedings/11/Papers/101.pdf | 
+ijcai-2011-102 | Minimization for Generalized Boolean Formulas | http://ijcai.org/Proceedings/11/Papers/102.pdf | 
+ijcai-2011-103 | Read-Once Resolution for Unsatisfiability-Based Max-SAT Algorithms | http://ijcai.org/Proceedings/11/Papers/103.pdf | 
+ijcai-2011-104 | Real-Time Heuristic Search with Depression Avoidance | http://ijcai.org/Proceedings/11/Papers/104.pdf | 
+ijcai-2011-105 | Evaluations of Hash Distributed A* in Optimal Sequence Alignment | http://ijcai.org/Proceedings/11/Papers/105.pdf | 
+ijcai-2011-106 | A Hybrid Recursive Multi-Way Number Partitioning Algorithm | http://ijcai.org/Proceedings/11/Papers/106.pdf | 
+ijcai-2011-107 | Constraint Programming on Infinite Data Streams | http://ijcai.org/Proceedings/11/Papers/107.pdf | 
+ijcai-2011-108 | Minimum Satisfiability and Its Applications | http://ijcai.org/Proceedings/11/Papers/108.pdf | 
+ijcai-2011-109 | Large Hinge Width on Sparse Random Hypergraphs | http://ijcai.org/Proceedings/11/Papers/109.pdf | 
+ijcai-2011-110 | Real-Time Opponent Modeling in Trick-Taking Card Games | http://ijcai.org/Proceedings/11/Papers/110.pdf | 
+ijcai-2011-111 | Exploiting Short Supports for Generalised Arc Consistency for Arbitrary Constraints | http://ijcai.org/Proceedings/11/Papers/111.pdf | 
+ijcai-2011-112 | The Multi-Inter-Distance Constraint | http://ijcai.org/Proceedings/11/Papers/112.pdf | 
+ijcai-2011-113 | Finite-Length Markov Processes with Constraints | http://ijcai.org/Proceedings/11/Papers/113.pdf | 
+ijcai-2011-114 | A Generalized Arc-Consistency Algorithm for a Class of Counting Constraints | http://ijcai.org/Proceedings/11/Papers/114.pdf | 
+ijcai-2011-115 | Nested Rollout Policy Adaptation for Monte Carlo Tree Search | http://ijcai.org/Proceedings/11/Papers/115.pdf | 
+ijcai-2011-116 | Real-Time Solving of Quantified CSPs Based on Monte-Carlo Game Tree Search | http://ijcai.org/Proceedings/11/Papers/116.pdf | 
+ijcai-2011-117 | The Increasing Cost Tree Search for Optimal Multi-Agent Pathfinding | http://ijcai.org/Proceedings/11/Papers/117.pdf | 
+ijcai-2011-118 | Complete Algorithms for Cooperative Pathfinding Problems | http://ijcai.org/Proceedings/11/Papers/118.pdf | 
+ijcai-2011-119 | Bounded Suboptimal Search: A Direct Approach Using Inadmissible Estimates | http://ijcai.org/Proceedings/11/Papers/119.pdf | 
+ijcai-2011-120 | Rational Deployment of CSP Heuristics | http://ijcai.org/Proceedings/11/Papers/120.pdf | 
+ijcai-2011-121 | Symmetry Breaking via LexLeader Feasibility Checkers | http://ijcai.org/Proceedings/11/Papers/121.pdf | 
+ijcai-2011-122 | Heuristic Algorithms for Balanced Multi-Way Number Partitioning | http://ijcai.org/Proceedings/11/Papers/122.pdf | 
+ijcai-2011-123 | Space Defragmentation Heuristic for 2D and 3D Bin Packing Problems | http://ijcai.org/Proceedings/11/Papers/123.pdf | 
+ijcai-2011-124 | Knowledge Representation, Reasoning, and Logic | http://ijcai.org/Proceedings/11/Papers/124.pdf | 
+ijcai-2011-125 | What Is an Ideal Logic for Reasoning with Inconsistency? | http://ijcai.org/Proceedings/11/Papers/125.pdf | 
+ijcai-2011-126 | Walking the Complexity Lines for Generalized Guarded Existential Rules | http://ijcai.org/Proceedings/11/Papers/126.pdf | 
+ijcai-2011-127 | Query Reasoning on Trees with Types, Interleaving, and Counting | http://ijcai.org/Proceedings/11/Papers/127.pdf | 
+ijcai-2011-128 | First-Order Extension of the FLP Stable Model Semantics via Modified Circumscription | http://ijcai.org/Proceedings/11/Papers/128.pdf | 
+ijcai-2011-129 | A Theory of Meta-Diagnosis: Reasoning about Diagnostic Systems | http://ijcai.org/Proceedings/11/Papers/129.pdf | 
+ijcai-2011-130 | A Computationally-Grounded Semantics for Artifact-Centric Systems and Abstraction Results | http://ijcai.org/Proceedings/11/Papers/130.pdf | 
+ijcai-2011-131 | On Progression and Query Evaluation in First-Order Knowledge Bases with Function Symbols | http://ijcai.org/Proceedings/11/Papers/131.pdf | 
+ijcai-2011-132 | Interval-Based Possibilistic Logic | http://ijcai.org/Proceedings/11/Papers/132.pdf | 
+ijcai-2011-133 | RCC8 Is Polynomial on Networks of Bounded Treewidth | http://ijcai.org/Proceedings/11/Papers/133.pdf | 
+ijcai-2011-134 | On the Complexity ofEL with Defeasible Inclusions | http://ijcai.org/Proceedings/11/Papers/134.pdf | 
+ijcai-2011-135 | Description Logics over Lattices with Multi-Valued Ontologies | http://ijcai.org/Proceedings/11/Papers/135.pdf | 
+ijcai-2011-136 | Finite-Valued Lukasiewicz Modal Logic Is PSPACE-Complete | http://ijcai.org/Proceedings/11/Papers/136.pdf | 
+ijcai-2011-137 | Relating the Semantics of Abstract Dialectical Frameworks and Standard AFs | http://ijcai.org/Proceedings/11/Papers/137.pdf | 
+ijcai-2011-138 | Managed Multi-Context Systems | http://ijcai.org/Proceedings/11/Papers/138.pdf | 
+ijcai-2011-139 | Modeling Attempt and Action Failure in Probabilistic STIT Logic | http://ijcai.org/Proceedings/11/Papers/139.pdf | 
+ijcai-2011-140 | A Practical Automata-Based Technique for Reasoning in Expressive Description Logics | http://ijcai.org/Proceedings/11/Papers/140.pdf | 
+ijcai-2011-141 | Containment of Regular Path Queries under Description Logic Constraints | http://ijcai.org/Proceedings/11/Papers/141.pdf | 
+ijcai-2011-142 | Defeasible Inheritance-Based Description Logics | http://ijcai.org/Proceedings/11/Papers/142.pdf | 
+ijcai-2011-143 | SDD: A New Canonical Representation of Propositional Knowledge Bases | http://ijcai.org/Proceedings/11/Papers/143.pdf | 
+ijcai-2011-144 | Efficient Reasoning in Proper Knowledge Bases with Unknown Individuals | http://ijcai.org/Proceedings/11/Papers/144.pdf | 
+ijcai-2011-145 | Revising by an Inconsistent Set of Formulas | http://ijcai.org/Proceedings/11/Papers/145.pdf | 
+ijcai-2011-146 | Revising Horn Theories | http://ijcai.org/Proceedings/11/Papers/146.pdf | 
+ijcai-2011-147 | Expressiveness of the Interval Logics of Allen’s Relations on the Class of All Linear Orders: Complete Classification | http://ijcai.org/Proceedings/11/Papers/147.pdf | 
+ijcai-2011-148 | Parametric Properties of Ideal Semantics | http://ijcai.org/Proceedings/11/Papers/148.pdf | 
+ijcai-2011-149 | Tangled Modal Logic for Spatial Reasoning | http://ijcai.org/Proceedings/11/Papers/149.pdf | 
+ijcai-2011-150 | Backdoors to Tractable Answer-Set Programming | http://ijcai.org/Proceedings/11/Papers/150.pdf | 
+ijcai-2011-151 | Refutation in Dummett Logic Using a Sign to Express the Truth at the Next Possible World | http://ijcai.org/Proceedings/11/Papers/151.pdf | 
+ijcai-2011-152 | Fixpoints in Temporal Description Logics | http://ijcai.org/Proceedings/11/Papers/152.pdf | 
+ijcai-2011-153 | Succinctness of Epistemic Languages | http://ijcai.org/Proceedings/11/Papers/153.pdf | 
+ijcai-2011-154 | Repairing Incorrect Knowledge with Model Formulation and Metareasoning | http://ijcai.org/Proceedings/11/Papers/154.pdf | 
+ijcai-2011-155 | Reasoning about Typicality in Low Complexity DLs: The Logics EL⊥Tmin and DL-Litec Tmin  | http://ijcai.org/Proceedings/11/Papers/155.pdf | 
+ijcai-2011-156 | Belief Management for High-Level Robot Programs | http://ijcai.org/Proceedings/11/Papers/156.pdf | 
+ijcai-2011-157 | Multidimensional Mereotopology with Betweenness | http://ijcai.org/Proceedings/11/Papers/157.pdf | 
+ijcai-2011-158 | Generalising the Interaction Rules in Probabilistic Logic | http://ijcai.org/Proceedings/11/Papers/158.pdf | 
+ijcai-2011-159 | Generalized Planning: Synthesizing Plans that Work for Multiple Environments | http://ijcai.org/Proceedings/11/Papers/159.pdf | 
+ijcai-2011-160 | Logic Programming for Boolean Networks | http://ijcai.org/Proceedings/11/Papers/160.pdf | 
+ijcai-2011-161 | Discrete-Time Temporal Reasoning with Horn DLRs | http://ijcai.org/Proceedings/11/Papers/161.pdf | 
+ijcai-2011-162 | A Constructive Approach to Independent and Evidence Retaining Belief Revision by General Information Sets | http://ijcai.org/Proceedings/11/Papers/162.pdf | 
+ijcai-2011-163 | A Logic for Causal Inference in Time Series with Discrete and Continuous Variables | http://ijcai.org/Proceedings/11/Papers/163.pdf | 
+ijcai-2011-164 | Belief Base Rationalization for Propositional Merging | http://ijcai.org/Proceedings/11/Papers/164.pdf | 
+ijcai-2011-165 | On the Decidability of Connectedness Constraints in 2D and 3D Euclidean Spaces | http://ijcai.org/Proceedings/11/Papers/165.pdf | 
+ijcai-2011-166 | Extending Decidable Existential Rules by Joining Acyclicity and Guardedness | http://ijcai.org/Proceedings/11/Papers/166.pdf | 
+ijcai-2011-167 | Context-Sensitive Diagnosis of Discrete-Event Systems | http://ijcai.org/Proceedings/11/Papers/167.pdf | 
+ijcai-2011-168 | On the Progression of Knowledge in the Situation Calculus | http://ijcai.org/Proceedings/11/Papers/168.pdf | 
+ijcai-2011-169 | Description Logic TBoxes: Model-Theoretic Characterizations and Rewritability | http://ijcai.org/Proceedings/11/Papers/169.pdf | 
+ijcai-2011-170 | Foundations for Uniform Interpolation and Forgetting in Expressive Description Logics | http://ijcai.org/Proceedings/11/Papers/170.pdf | 
+ijcai-2011-171 | Existential Closures for Knowledge Compilation | http://ijcai.org/Proceedings/11/Papers/171.pdf | 
+ijcai-2011-172 | Lost in Translation: Language Independence in Propositional Logic — Application to Belief Revision and Belief Merging | http://ijcai.org/Proceedings/11/Papers/172.pdf | 
+ijcai-2011-173 | Reasoning about Fuzzy Belief and Common Belief: With Emphasis on Incomparable Beliefs | http://ijcai.org/Proceedings/11/Papers/173.pdf | 
+ijcai-2011-174 | Causal Learnability | http://ijcai.org/Proceedings/11/Papers/174.pdf | 
+ijcai-2011-175 | Revisiting Preferences and Argumentation | http://ijcai.org/Proceedings/11/Papers/175.pdf | 
+ijcai-2011-176 | Reasoning-Supported Interactive Revision of Knowledge Bases | http://ijcai.org/Proceedings/11/Papers/176.pdf | 
+ijcai-2011-177 | Augmenting Tractable Fragments of Abstract Argumentation | http://ijcai.org/Proceedings/11/Papers/177.pdf | 
+ijcai-2011-178 | Query Answering in the Horn Fragments of the Description Logics SHOIQ and SROIQ | http://ijcai.org/Proceedings/11/Papers/178.pdf | 
+ijcai-2011-179 | An Approach to Minimal Belief via Objective Belief | http://ijcai.org/Proceedings/11/Papers/179.pdf | 
+ijcai-2011-180 | An Assertion Retrieval Algebra for Object Queries over Knowledge Bases | http://ijcai.org/Proceedings/11/Papers/180.pdf | 
+ijcai-2011-181 | On the Complexity of Dealing with Inconsistency in Description Logic Ontologies | http://ijcai.org/Proceedings/11/Papers/181.pdf | 
+ijcai-2011-182 | Dishonest Reasoning by Abduction | http://ijcai.org/Proceedings/11/Papers/182.pdf | 
+ijcai-2011-183 | A Logical Formulation for Negotiation among Dishonest Agents | http://ijcai.org/Proceedings/11/Papers/183.pdf | 
+ijcai-2011-184 | Description Logics and Fuzzy Probability | http://ijcai.org/Proceedings/11/Papers/184.pdf | 
+ijcai-2011-185 | Well-Supported Semantics for Description Logic Programs | http://ijcai.org/Proceedings/11/Papers/185.pdf | 
+ijcai-2011-186 | Computing Minimum-Cardinality Diagnoses by Model Relaxation | http://ijcai.org/Proceedings/11/Papers/186.pdf | 
+ijcai-2011-187 | Consequence-Based Reasoning beyond Horn Ontologies | http://ijcai.org/Proceedings/11/Papers/187.pdf | 
+ijcai-2011-188 | Beth Definability in Expressive Description Logics | http://ijcai.org/Proceedings/11/Papers/188.pdf | 
+ijcai-2011-189 | The General Game Playing Description Language Is Universal | http://ijcai.org/Proceedings/11/Papers/189.pdf | 
+ijcai-2011-190 | Relating Carneades with Abstract Argumentation | http://ijcai.org/Proceedings/11/Papers/190.pdf | 
+ijcai-2011-191 | On Qualitative Route Descriptions: Representation and Computational Complexity | http://ijcai.org/Proceedings/11/Papers/191.pdf | 
+ijcai-2011-192 | Translating First-Order Theories into Logic Programs | http://ijcai.org/Proceedings/11/Papers/192.pdf | 
+ijcai-2011-193 | Transitively Relational Partial Meet Horn Contraction | http://ijcai.org/Proceedings/11/Papers/193.pdf | 
+ijcai-2011-194 | Machine Learning | http://ijcai.org/Proceedings/11/Papers/194.pdf | 
+ijcai-2011-195 | Discerning Linkage-Based Algorithms among Hierarchical Clustering Methods | http://ijcai.org/Proceedings/11/Papers/195.pdf | 
+ijcai-2011-196 | A Competitive Strategy for Function Approximation in Q-Learning | http://ijcai.org/Proceedings/11/Papers/196.pdf | 
+ijcai-2011-197 | Multi-Evidence Lifted Message Passing, with Application to PageRank and the Kalman Filter | http://ijcai.org/Proceedings/11/Papers/197.pdf | 
+ijcai-2011-198 | An Efficient Framework for Constructing Generalized Locally-Induced Text Metrics | http://ijcai.org/Proceedings/11/Papers/198.pdf | 
+ijcai-2011-199 | Semi-Supervised Learning from a Translation Model between Data Distributions | http://ijcai.org/Proceedings/11/Papers/199.pdf | 
+ijcai-2011-200 | A Framework for Incorporating General Domain Knowledge into Latent Dirichlet Allocation Using First-Order Logic | http://ijcai.org/Proceedings/11/Papers/200.pdf | 
+ijcai-2011-201 | Improving Performance of Topic Models by Variable Grouping | http://ijcai.org/Proceedings/11/Papers/201.pdf | 
+ijcai-2011-202 | Learning a Distance Metric by Empirical Loss Minimization | http://ijcai.org/Proceedings/11/Papers/202.pdf | 
+ijcai-2011-203 | A Hidden Markov Model Variant for Sequence Classification | http://ijcai.org/Proceedings/11/Papers/203.pdf | 
+ijcai-2011-204 | Approximation-Guided Evolutionary Multi-Objective Optimization | http://ijcai.org/Proceedings/11/Papers/204.pdf | 
+ijcai-2011-205 | Distance Metric Learning under Covariate Shift | http://ijcai.org/Proceedings/11/Papers/205.pdf | 
+ijcai-2011-206 | Using Cases as Heuristics in Reinforcement Learning: A Transfer Learning Application | http://ijcai.org/Proceedings/11/Papers/206.pdf | 
+ijcai-2011-207 | Increasing the Scalability of the Fitting of Generalised Block Models for Social Networks | http://ijcai.org/Proceedings/11/Papers/207.pdf | 
+ijcai-2011-208 | Concept Labeling: Building Text Classifiers with Minimal Supervision | http://ijcai.org/Proceedings/11/Papers/208.pdf | 
+ijcai-2011-209 | Unsupervised Learning of Patterns in Data Streams Using Compression and Edit Distance | http://ijcai.org/Proceedings/11/Papers/209.pdf | 
+ijcai-2011-210 | Flexible, High Performance Convolutional Neural Networks for Image Classification | http://ijcai.org/Proceedings/11/Papers/210.pdf | 
+ijcai-2011-211 | Automatic State Abstraction from Demonstration | http://ijcai.org/Proceedings/11/Papers/211.pdf | 
+ijcai-2011-212 | Generative Structure Learning for Markov Logic Networks Based on Graph of Predicates | http://ijcai.org/Proceedings/11/Papers/212.pdf | 
+ijcai-2011-213 | Learning Decision Rules from Data Streams | http://ijcai.org/Proceedings/11/Papers/213.pdf | 
+ijcai-2011-214 | Constituent Grammatical Evolution | http://ijcai.org/Proceedings/11/Papers/214.pdf | 
+ijcai-2011-215 | Continuous Correlated Beta Processes | http://ijcai.org/Proceedings/11/Papers/215.pdf | 
+ijcai-2011-216 | A Fast Dual Projected Newton Method forl1-Regularized Least Squares | http://ijcai.org/Proceedings/11/Papers/216.pdf | 
+ijcai-2011-217 | Kernel-Based Selective Ensemble Learning for Streams of Trees | http://ijcai.org/Proceedings/11/Papers/217.pdf | 
+ijcai-2011-218 | On Trivial Solution and Scale Transfer Problems in Graph Regularized NMF | http://ijcai.org/Proceedings/11/Papers/218.pdf | 
+ijcai-2011-219 | Joint Feature Selection and Subspace Learning | http://ijcai.org/Proceedings/11/Papers/219.pdf | 
+ijcai-2011-220 | Multi-Label Classification Using Conditional Dependency Networks | http://ijcai.org/Proceedings/11/Papers/220.pdf | 
+ijcai-2011-221 | Extracting Temporal Patterns from Interval-Based Sequences | http://ijcai.org/Proceedings/11/Papers/221.pdf | 
+ijcai-2011-222 | Fast Approximate Nearest-Neighbor Search with k-Nearest Neighbor Graph | http://ijcai.org/Proceedings/11/Papers/222.pdf | 
+ijcai-2011-223 | Gaussianity Measures for Detecting the Direction of Causal Time Series | http://ijcai.org/Proceedings/11/Papers/223.pdf | 
+ijcai-2011-224 | Feature Selection via Joint Embedding Learning and Sparse Regression | http://ijcai.org/Proceedings/11/Papers/224.pdf | 
+ijcai-2011-225 | Heuristic Rule-Based Regression via Dynamic Reduction to Classification | http://ijcai.org/Proceedings/11/Papers/225.pdf | 
+ijcai-2011-226 | Adaptation of a Mixture of Multivariate Bernoulli Distributions | http://ijcai.org/Proceedings/11/Papers/226.pdf | 
+ijcai-2011-227 | Revisiting Numerical Pattern Mining with Formal Concept Analysis | http://ijcai.org/Proceedings/11/Papers/227.pdf | 
+ijcai-2011-228 | Activity Recognition with Finite State Machines | http://ijcai.org/Proceedings/11/Papers/228.pdf | 
+ijcai-2011-229 | Incremental Slow Feature Analysis | http://ijcai.org/Proceedings/11/Papers/229.pdf | 
+ijcai-2011-230 | Learning Hash Functions for Cross-View Similarity Search | http://ijcai.org/Proceedings/11/Papers/230.pdf | 
+ijcai-2011-231 | Modular Community Detection in Networks | http://ijcai.org/Proceedings/11/Papers/231.pdf | 
+ijcai-2011-232 | Probit Classifiers with a Generalized Gaussian Scale Mixture Prior | http://ijcai.org/Proceedings/11/Papers/232.pdf | 
+ijcai-2011-233 | Locality-Constrained Concept Factorization | http://ijcai.org/Proceedings/11/Papers/233.pdf | 
+ijcai-2011-234 | Cluster Indicator Decomposition for Efficient Matrix Factorization | http://ijcai.org/Proceedings/11/Papers/234.pdf | 
+ijcai-2011-235 | Ball Ranking Machine for Content-Based Multimedia Retrieval | http://ijcai.org/Proceedings/11/Papers/235.pdf | 
+ijcai-2011-236 | Combining Supervised and Unsupervised Models via Unconstrained Probabilistic Embedding | http://ijcai.org/Proceedings/11/Papers/236.pdf | 
+ijcai-2011-237 | Agent-Oriented Incremental Team and Activity Recognition | http://ijcai.org/Proceedings/11/Papers/237.pdf | 
+ijcai-2011-238 | Multi-Kernel Gaussian Processes | http://ijcai.org/Proceedings/11/Papers/238.pdf | 
+ijcai-2011-239 | Imitation Learning in Relational Domains: A Functional-Gradient Boosting Approach | http://ijcai.org/Proceedings/11/Papers/239.pdf | 
+ijcai-2011-240 | Positive Unlabeled Leaning for Time Series Classification | http://ijcai.org/Proceedings/11/Papers/240.pdf | 
+ijcai-2011-241 | Distribution-Aware Online Classifiers | http://ijcai.org/Proceedings/11/Papers/241.pdf | 
+ijcai-2011-242 | Robust Principal Component Analysis with Non-Greedy l1-Norm Maximization | http://ijcai.org/Proceedings/11/Papers/242.pdf | 
+ijcai-2011-243 | Biclustering-Driven Ensemble of Bayesian Belief Network Classifiers for Underdetermined Problems | http://ijcai.org/Proceedings/11/Papers/243.pdf | 
+ijcai-2011-244 | Strategy Learning for Autonomous Agents in Smart Grid Markets | http://ijcai.org/Proceedings/11/Papers/244.pdf | 
+ijcai-2011-245 | Q-Error as a Selection Mechanism in Modular Reinforcement-Learning Systems | http://ijcai.org/Proceedings/11/Papers/245.pdf | 
+ijcai-2011-246 | Domain Adaptation with Ensemble of Feature Groups | http://ijcai.org/Proceedings/11/Papers/246.pdf | 
+ijcai-2011-247 | Discovering Deformable Motifs in Continuous Time Series Data | http://ijcai.org/Proceedings/11/Papers/247.pdf | 
+ijcai-2011-248 | A General MCMC Method for Bayesian Inference in Logic-Based Probabilistic Modeling | http://ijcai.org/Proceedings/11/Papers/248.pdf | 
+ijcai-2011-249 | Classification of Emerging Extreme Event Tracks in Multivariate Spatio-Temporal Physical Systems Using Dynamic Network Structures: Application to Hurricane Track Prediction | http://ijcai.org/Proceedings/11/Papers/249.pdf | 
+ijcai-2011-250 | Active Surveying: A Probabilistic Approach for Identifying Key Opinion Leaders | http://ijcai.org/Proceedings/11/Papers/250.pdf | 
+ijcai-2011-251 | Consistency Measures for Feature Selection: A Formal Definition, Relative Sensitivity Comparison, and a Fast Algorithm | http://ijcai.org/Proceedings/11/Papers/251.pdf | 
+ijcai-2011-252 | Active Online Classification via Information Maximization | http://ijcai.org/Proceedings/11/Papers/252.pdf | 
+ijcai-2011-253 | Angular Decomposition | http://ijcai.org/Proceedings/11/Papers/253.pdf | 
+ijcai-2011-254 | Fast Anomaly Detection for Streaming Data | http://ijcai.org/Proceedings/11/Papers/254.pdf | 
+ijcai-2011-255 | Utility-Based Fraud Detection | http://ijcai.org/Proceedings/11/Papers/255.pdf | 
+ijcai-2011-256 | On the Utility of Curricula in Unsupervised Learning of Probabilistic Grammars | http://ijcai.org/Proceedings/11/Papers/256.pdf | 
+ijcai-2011-257 | Learning Driving Behavior by Timed Syntactic Pattern Recognition | http://ijcai.org/Proceedings/11/Papers/257.pdf | 
+ijcai-2011-258 | Bi-Weighting Domain Adaptation for Cross-Language Text Classification | http://ijcai.org/Proceedings/11/Papers/258.pdf | 
+ijcai-2011-259 | Heterogeneous Domain Adaptation Using Manifold Alignment | http://ijcai.org/Proceedings/11/Papers/259.pdf | 
+ijcai-2011-260 | Jointly Learning Data-Dependent Label and Locality-Preserving Projections | http://ijcai.org/Proceedings/11/Papers/260.pdf | 
+ijcai-2011-261 | Fast Nonnegative Matrix Tri-Factorization for Large-Scale Data Co-Clustering | http://ijcai.org/Proceedings/11/Papers/261.pdf | 
+ijcai-2011-262 | Local and Structural Consistency for Multi-Manifold Clustering | http://ijcai.org/Proceedings/11/Papers/262.pdf | 
+ijcai-2011-263 | Bayesian Policy Search with Policy Priors | http://ijcai.org/Proceedings/11/Papers/263.pdf | 
+ijcai-2011-264 | Learning to Rank under Multiple Annotators | http://ijcai.org/Proceedings/11/Papers/264.pdf | 
+ijcai-2011-265 | Similarity-Based Approach for Positive and Unlabeled Learning | http://ijcai.org/Proceedings/11/Papers/265.pdf | 
+ijcai-2011-266 | Dealing with Concept Drift and Class Imbalance in Multi-Label Stream Classification | http://ijcai.org/Proceedings/11/Papers/266.pdf | 
+ijcai-2011-267 | l2,1-Norm Regularized Discriminative Feature Selection for Unsupervised Learning | http://ijcai.org/Proceedings/11/Papers/267.pdf | 
+ijcai-2011-268 | Matrix Co-Factorization on Compressed Sensing | http://ijcai.org/Proceedings/11/Papers/268.pdf | 
+ijcai-2011-269 | Diversity Regularized Machine | http://ijcai.org/Proceedings/11/Papers/269.pdf | 
+ijcai-2011-270 | LIFT: Multi-Label Learning with Label-Specific Features | http://ijcai.org/Proceedings/11/Papers/270.pdf | 
+ijcai-2011-271 | Multi-Kernel Multi-Label Learning with Max-Margin Concept Network | http://ijcai.org/Proceedings/11/Papers/271.pdf | 
+ijcai-2011-272 | Pattern Field Classification with Style Normalized Transformation | http://ijcai.org/Proceedings/11/Papers/272.pdf | 
+ijcai-2011-273 | Multidisciplinary Topics and Applications | http://ijcai.org/Proceedings/11/Papers/273.pdf | 
+ijcai-2011-274 | Finding “Unexplained” Activities in Video | http://ijcai.org/Proceedings/11/Papers/274.pdf | 
+ijcai-2011-275 | Explaining Genetic Knock-Out Effects Using Cost-Based Abduction | http://ijcai.org/Proceedings/11/Papers/275.pdf | 
+ijcai-2011-276 | Just an Artifact: Why Machines Are Perceived as Moral Agents | http://ijcai.org/Proceedings/11/Papers/276.pdf | 
+ijcai-2011-277 | A Hierarchical Architecture for Adaptive Brain-Computer Interfacing | http://ijcai.org/Proceedings/11/Papers/277.pdf | 
+ijcai-2011-278 | A Neural-Symbolic Cognitive Agent for Online Learning and Reasoning | http://ijcai.org/Proceedings/11/Papers/278.pdf | 
+ijcai-2011-279 | Verifying Fault Tolerance and Self-Diagnosability of an Autonomous Underwater Vehicle | http://ijcai.org/Proceedings/11/Papers/279.pdf | 
+ijcai-2011-280 | OCS-14 : You Can Get Occluded in Fourteen Ways | http://ijcai.org/Proceedings/11/Papers/280.pdf | 
+ijcai-2011-281 | Effective and Efficient Microprocessor Design Space Exploration Using Unlabeled Design Configurations | http://ijcai.org/Proceedings/11/Papers/281.pdf | 
+ijcai-2011-282 | Visual Task Inference Using Hidden Markov Models | http://ijcai.org/Proceedings/11/Papers/282.pdf | 
+ijcai-2011-283 | The Role of Intention Recognition in the Evolution of Cooperative Behavior | http://ijcai.org/Proceedings/11/Papers/283.pdf | 
+ijcai-2011-284 | Multi-Select Faceted Navigation Based on Minimum Description Length Principle | http://ijcai.org/Proceedings/11/Papers/284.pdf | 
+ijcai-2011-285 | Modeling Situation Awareness in Human-Like Agents Using Mental Models | http://ijcai.org/Proceedings/11/Papers/285.pdf | 
+ijcai-2011-286 | Generalized Latent Factor Models for Social Network Analysis | http://ijcai.org/Proceedings/11/Papers/286.pdf | 
+ijcai-2011-287 | Modeling Multivariate Spatio-Temporal Remote Sensing Data with Large Gaps | http://ijcai.org/Proceedings/11/Papers/287.pdf | 
+ijcai-2011-288 | On the Role of Domain Knowledge in Analogy-Based Story Generation | http://ijcai.org/Proceedings/11/Papers/288.pdf | 
+ijcai-2011-289 | Using Multiple Models to Understand Data | http://ijcai.org/Proceedings/11/Papers/289.pdf | 
+ijcai-2011-290 | Feature Learning for Activity Recognition in Ubiquitous Computing | http://ijcai.org/Proceedings/11/Papers/290.pdf | 
+ijcai-2011-291 | A Cognitive Agent Model Displaying and Regulating Different Social Response Patterns | http://ijcai.org/Proceedings/11/Papers/291.pdf | 
+ijcai-2011-292 | A Cognitive Agent Model Incorporating Prior and Retrospective Ownership States for Actions | http://ijcai.org/Proceedings/11/Papers/292.pdf | 
+ijcai-2011-293 | Active Graph Reachability Reduction for Network Security and Software Engineering | http://ijcai.org/Proceedings/11/Papers/293.pdf | 
+ijcai-2011-294 | Natural Language Processing | http://ijcai.org/Proceedings/11/Papers/294.pdf | 
+ijcai-2011-295 | Learning Cause Identifiers from Annotator Rationales | http://ijcai.org/Proceedings/11/Papers/295.pdf | 
+ijcai-2011-296 | Learning Bilingual Lexicons Using the Visual Similarity of Labeled Web Images | http://ijcai.org/Proceedings/11/Papers/296.pdf | 
+ijcai-2011-297 | Semantic Relationship Discovery with Wikipedia Structure | http://ijcai.org/Proceedings/11/Papers/297.pdf | 
+ijcai-2011-298 | Short Text Classification Improved by Learning Multi-Granularity Topics | http://ijcai.org/Proceedings/11/Papers/298.pdf | 
+ijcai-2011-299 | Online Latent Structure Training for Language Acquisition | http://ijcai.org/Proceedings/11/Papers/299.pdf | 
+ijcai-2011-300 | Predicting Globally-Coherent Temporal Structures from Texts via Endpoint Inference and Graph Decomposition | http://ijcai.org/Proceedings/11/Papers/300.pdf | 
+ijcai-2011-301 | Learning from Natural Instructions | http://ijcai.org/Proceedings/11/Papers/301.pdf | 
+ijcai-2011-302 | Automatic Discovery of Fuzzy Synsets from Dictionary Definitions | http://ijcai.org/Proceedings/11/Papers/302.pdf | 
+ijcai-2011-303 | Unsupervised Modeling of Dialog Acts in Asynchronous Conversations | http://ijcai.org/Proceedings/11/Papers/303.pdf | 
+ijcai-2011-304 | Improve Tree Kernel-Based Event Pronoun Resolution with Competitive Information | http://ijcai.org/Proceedings/11/Papers/304.pdf | 
+ijcai-2011-305 | Incorporating Reviewer and Product Information for Review Rating Prediction | http://ijcai.org/Proceedings/11/Papers/305.pdf | 
+ijcai-2011-306 | Semi-Supervised Learning for Imbalanced Sentiment Classification | http://ijcai.org/Proceedings/11/Papers/306.pdf | 
+ijcai-2011-307 | Collective Semantic Role Labeling for Tweets with Clustering | http://ijcai.org/Proceedings/11/Papers/307.pdf | 
+ijcai-2011-308 | SMT Versus AI Redux: How Semantic Frames Evaluate MT More Accurately | http://ijcai.org/Proceedings/11/Papers/308.pdf | 
+ijcai-2011-309 | Constraint Optimization Approach to Context Based Word Selection | http://ijcai.org/Proceedings/11/Papers/309.pdf | 
+ijcai-2011-310 | An Approach to Answer Selection in Question-Answering Based on Semantic Relations | http://ijcai.org/Proceedings/11/Papers/310.pdf | 
+ijcai-2011-311 | Learning for Deep Language Understanding | http://ijcai.org/Proceedings/11/Papers/311.pdf | 
+ijcai-2011-312 | Improving Topic Evaluation Using Conceptual Knowledge | http://ijcai.org/Proceedings/11/Papers/312.pdf | 
+ijcai-2011-313 | A Graph-Based Algorithm for Inducing Lexical Taxonomies from Scratch | http://ijcai.org/Proceedings/11/Papers/313.pdf | 
+ijcai-2011-314 | Sample Efficient On-Line Learning of Optimal Dialogue Policies with Kalman Temporal Differences | http://ijcai.org/Proceedings/11/Papers/314.pdf | 
+ijcai-2011-315 | Ensemble-Based Coreference Resolution | http://ijcai.org/Proceedings/11/Papers/315.pdf | 
+ijcai-2011-316 | Unsupervised Lexicon Acquisition for HPSG-Based Relation Extraction | http://ijcai.org/Proceedings/11/Papers/316.pdf | 
+ijcai-2011-317 | Interfacing Virtual Agents with Collaborative Knowledge: Open Domain Question Answering Using Wikipedia-Based Topic Models | http://ijcai.org/Proceedings/11/Papers/317.pdf | 
+ijcai-2011-318 | Affect Sensing in Metaphorical Phenomena and Dramatic Interaction Context | http://ijcai.org/Proceedings/11/Papers/318.pdf | 
+ijcai-2011-319 | Entity Linking with Effective Acronym Expansion, Instance Selection, and Topic Modeling | http://ijcai.org/Proceedings/11/Papers/319.pdf | 
+ijcai-2011-320 | Learning Inter-Related Statistical Query Translation Models for English-Chinese Bi-Directional CLIR | http://ijcai.org/Proceedings/11/Papers/320.pdf | 
+ijcai-2011-321 | Fusion of Multiple Features and Supervised Learning for Chinese OOV Term Detection and POS Guessing | http://ijcai.org/Proceedings/11/Papers/321.pdf | 
+ijcai-2011-322 | Planning and Scheduling | http://ijcai.org/Proceedings/11/Papers/322.pdf | 
+ijcai-2011-323 | DetH*: Approximate Hierarchical Solution of Large Markov Decision Processes | http://ijcai.org/Proceedings/11/Papers/323.pdf | 
+ijcai-2011-324 | Planning under Partial Observability by Classical Replanning: Theory and Experiments | http://ijcai.org/Proceedings/11/Papers/324.pdf | 
+ijcai-2011-325 | Risk-Sensitive Policies for Sustainable Renewable Resource Allocation | http://ijcai.org/Proceedings/11/Papers/325.pdf | 
+ijcai-2011-326 | Simple and Fast Strong Cyclic Planning for Fully-Observable Nondeterministic Planning Problems | http://ijcai.org/Proceedings/11/Papers/326.pdf | 
+ijcai-2011-327 | On the Decidability of HTN Planning with Task Insertion | http://ijcai.org/Proceedings/11/Papers/327.pdf | 
+ijcai-2011-328 | Transfer Learning for Activity Recognition via Sensor Mapping | http://ijcai.org/Proceedings/11/Papers/328.pdf | 
+ijcai-2011-329 | Point-Based Value Iteration for Constrained POMDPs | http://ijcai.org/Proceedings/11/Papers/329.pdf | 
+ijcai-2011-330 | Monitoring the Execution of Partial-Order Plans via Regression | http://ijcai.org/Proceedings/11/Papers/330.pdf | 
+ijcai-2011-331 | Computing Perfect Heuristics in Polynomial Time: On Bisimulation and Merge-and-Shrink Abstraction in Optimal Planning | http://ijcai.org/Proceedings/11/Papers/331.pdf | 
+ijcai-2011-332 | Iterative Flattening Search for the Flexible Job Shop Scheduling Problem | http://ijcai.org/Proceedings/11/Papers/332.pdf | 
+ijcai-2011-333 | Large Neighborhood Search and Adaptive Randomized Decompositions for Flexible Jobshop Scheduling | http://ijcai.org/Proceedings/11/Papers/333.pdf | 
+ijcai-2011-334 | Computing Infinite Plans for LTL Goals Using a Classical Planner | http://ijcai.org/Proceedings/11/Papers/334.pdf | 
+ijcai-2011-335 | Goal Recognition over POMDPs: Inferring the Intention of a POMDP Agent | http://ijcai.org/Proceedings/11/Papers/335.pdf | 
+ijcai-2011-336 | Planning with SAT, Admissible Heuristics and A* | http://ijcai.org/Proceedings/11/Papers/336.pdf | 
+ijcai-2011-337 | Replanning in Domains with Partial Information and Sensing Actions | http://ijcai.org/Proceedings/11/Papers/337.pdf | 
+ijcai-2011-338 | Scaling Up Optimal Heuristic Search in Dec-POMDPs via Incremental Expansion | http://ijcai.org/Proceedings/11/Papers/338.pdf | 
+ijcai-2011-339 | On the Effectiveness of CNF and DNF Representations in Contingent Planning | http://ijcai.org/Proceedings/11/Papers/339.pdf | 
+ijcai-2011-340 | Bounded Intention Planning | http://ijcai.org/Proceedings/11/Papers/340.pdf | 
+ijcai-2011-341 | Probabilistic Goal Markov Decision Processes | http://ijcai.org/Proceedings/11/Papers/341.pdf | 
+ijcai-2011-342 | Robotics and Vision | http://ijcai.org/Proceedings/11/Papers/342.pdf | 
+ijcai-2011-343 | Capturing an Evader in a Polygonal Environment with Obstacles | http://ijcai.org/Proceedings/11/Papers/343.pdf | 
+ijcai-2011-344 | Aesthetic Guideline Driven Photography by Robots | http://ijcai.org/Proceedings/11/Papers/344.pdf | 
+ijcai-2011-345 | Accommodating Human Variability in Human-Robot Teams through Theory of Mind | http://ijcai.org/Proceedings/11/Papers/345.pdf | 
+ijcai-2011-346 | Robotic Object Detection: Learning to Improve the Classifiers Using Sparse Graphs for Path Planning | http://ijcai.org/Proceedings/11/Papers/346.pdf | 
+ijcai-2011-347 | Conics with a Common Axis of Symmetry: Properties and Applications to Camera Calibration | http://ijcai.org/Proceedings/11/Papers/347.pdf | 
+ijcai-2011-348 | User-Dependent Aspect Model for Collaborative Activity Recognition | http://ijcai.org/Proceedings/11/Papers/348.pdf | 
+ijcai-2011-349 | Uncertainty in AI | http://ijcai.org/Proceedings/11/Papers/349.pdf | 
+ijcai-2011-350 | Lifted Relational Kalman Filtering | http://ijcai.org/Proceedings/11/Papers/350.pdf | 
+ijcai-2011-351 | New Complexity Results for MAP in Bayesian Networks | http://ijcai.org/Proceedings/11/Papers/351.pdf | 
+ijcai-2011-352 | Inference with Multinomial Data: Why to Weaken the Prior Strength | http://ijcai.org/Proceedings/11/Papers/352.pdf | 
+ijcai-2011-353 | Motor Simulation via Coupled Internal Models Using Sequential Monte Carlo | http://ijcai.org/Proceedings/11/Papers/353.pdf | 
+ijcai-2011-354 | Resolute Choice in Sequential Decision Problems with Multiple Priors | http://ijcai.org/Proceedings/11/Papers/354.pdf | 
+ijcai-2011-355 | Pairwise Decomposition for Combinatorial Optimization in Graphical Models | http://ijcai.org/Proceedings/11/Papers/355.pdf | 
+ijcai-2011-356 | Randomized Sensing in Adversarial Environments | http://ijcai.org/Proceedings/11/Papers/356.pdf | 
+ijcai-2011-357 | Scalable Multiagent Planning Using Probabilistic Inference | http://ijcai.org/Proceedings/11/Papers/357.pdf | 
+ijcai-2011-358 | A Trust Prediction Approach Capturing Agents’ Dynamic Behavior | http://ijcai.org/Proceedings/11/Papers/358.pdf | 
+ijcai-2011-359 | Log-Linear Description Logics | http://ijcai.org/Proceedings/11/Papers/359.pdf | 
+ijcai-2011-360 | Eliciting Additive Reward Functions for Markov Decision Processes | http://ijcai.org/Proceedings/11/Papers/360.pdf | 
+ijcai-2011-361 | Robust Online Optimization of Reward-Uncertain MDPs | http://ijcai.org/Proceedings/11/Papers/361.pdf | 
+ijcai-2011-362 | Finding (α, ϑ)-Solutions via Sampled SCSPs | http://ijcai.org/Proceedings/11/Papers/362.pdf | 
+ijcai-2011-363 | Lifted Probabilistic Inference by First-Order Knowledge Compilation | http://ijcai.org/Proceedings/11/Papers/363.pdf | 
+ijcai-2011-364 | Learning Optimal Bayesian Networks Using A* Search | http://ijcai.org/Proceedings/11/Papers/364.pdf | 
+ijcai-2011-365 | Bayesian Chain Classifiers for Multidimensional Classification | http://ijcai.org/Proceedings/11/Papers/365.pdf | 
+ijcai-2011-366 | Web and Knowledge-Based Information Systems  | http://ijcai.org/Proceedings/11/Papers/366.pdf | 
+ijcai-2011-367 | CCR — A Content-Collaborative Reciprocal Recommender for Online Dating | http://ijcai.org/Proceedings/11/Papers/367.pdf | 
+ijcai-2011-368 | Relation Adaptation: Learning to Extract Novel Relations with Minimum Supervision | http://ijcai.org/Proceedings/11/Papers/368.pdf | 
+ijcai-2011-369 | Leveraging Unlabeled Data to Scale Blocking for Record Linkage | http://ijcai.org/Proceedings/11/Papers/369.pdf | 
+ijcai-2011-370 | A Convex Formulation of Modularity Maximization for Community Detection | http://ijcai.org/Proceedings/11/Papers/370.pdf | 
+ijcai-2011-371 | What to Ask to an Incomplete Semantic Web Reasoner? | http://ijcai.org/Proceedings/11/Papers/371.pdf | 
+ijcai-2011-372 | The Modular Structure of an Ontology: Atomic Decomposition | http://ijcai.org/Proceedings/11/Papers/372.pdf | 
+ijcai-2011-373 | Fast Algorithm for Affinity Propagation | http://ijcai.org/Proceedings/11/Papers/373.pdf | 
+ijcai-2011-374 | Mining the Web for the “Voice of the Herd” to Track Stock Market Bubbles | http://ijcai.org/Proceedings/11/Papers/374.pdf | 
+ijcai-2011-375 | Relevance Feedback between Web Search and the Semantic Web | http://ijcai.org/Proceedings/11/Papers/375.pdf | 
+ijcai-2011-376 | Finding the Hidden Gems: Recommending Untagged Music | http://ijcai.org/Proceedings/11/Papers/376.pdf | 
+ijcai-2011-377 | Fashion Coordinates Recommender System Using Photographs from Fashion Magazines | http://ijcai.org/Proceedings/11/Papers/377.pdf | 
+ijcai-2011-378 | Mining Longitudinal Network for Predicting Company Value | http://ijcai.org/Proceedings/11/Papers/378.pdf | 
+ijcai-2011-379 | Context Sensitive Topic Models for Author Influence in Document Networks | http://ijcai.org/Proceedings/11/Papers/379.pdf | 
+ijcai-2011-380 | Multi-Perspective Linking of News Articles within a Repository | http://ijcai.org/Proceedings/11/Papers/380.pdf | 
+ijcai-2011-381 | Social Abstract Argumentation | http://ijcai.org/Proceedings/11/Papers/381.pdf | 
+ijcai-2011-382 | here | http://ijcai.org/Proceedings/11/Papers/381-old_version.pdf | 
+ijcai-2011-383 | Cross-Domain Collaborative Filtering over Time | http://ijcai.org/Proceedings/11/Papers/382.pdf | 
+ijcai-2011-384 | Minimally Complete Recommendations | http://ijcai.org/Proceedings/11/Papers/383.pdf | 
+ijcai-2011-385 | User Similarity from Linked Taxonomies: Subjective Assessments of Items | http://ijcai.org/Proceedings/11/Papers/384.pdf | 
+ijcai-2011-386 | LIMES — A Time-Efficient Approach for Large-Scale Link Discovery on the Web of Data | http://ijcai.org/Proceedings/11/Papers/385.pdf | 
+ijcai-2011-387 | Transfer Learning to Predict Missing Ratings via Heterogeneous User Feedbacks | http://ijcai.org/Proceedings/11/Papers/386.pdf | 
+ijcai-2011-388 | Making Better Informed Trust Decisions with Generalized Fact-Finding | http://ijcai.org/Proceedings/11/Papers/387.pdf | 
+ijcai-2011-389 | Short Text Conceptualization Using a Probabilistic Knowledgebase | http://ijcai.org/Proceedings/11/Papers/388.pdf | 
+ijcai-2011-390 | A Wikipedia Based Semantic Graph Model for Topic Tracking in Blogsphere | http://ijcai.org/Proceedings/11/Papers/389.pdf | 
+ijcai-2011-391 | Matching Large Ontologies Based on Reduction Anchors | http://ijcai.org/Proceedings/11/Papers/390.pdf | 
+ijcai-2011-392 | Line Orthogonality in Adjacency Eigenspace with Application to Community Partition | http://ijcai.org/Proceedings/11/Papers/391.pdf | 
+ijcai-2011-393 | Source-Selection-Free Transfer Learning | http://ijcai.org/Proceedings/11/Papers/392.pdf | 
+ijcai-2011-394 | Predicting Epidemic Tendency through Search Behavior Analysis | http://ijcai.org/Proceedings/11/Papers/393.pdf | 
+ijcai-2011-395 | Mining User Dwell Time for Personalized Web Search Re-Ranking | http://ijcai.org/Proceedings/11/Papers/394.pdf | 
+ijcai-2011-396 | Efficient Searching Top-k Semantic Similar Words | http://ijcai.org/Proceedings/11/Papers/395.pdf | 
+ijcai-2011-397 | Recommender Systems from “Words of Few Mouths” | http://ijcai.org/Proceedings/11/Papers/396.pdf | 
+ijcai-2011-398 | Special Track on Integrated and Embedded Artificial Intelligence | http://ijcai.org/Proceedings/11/Papers/397.pdf | 
+ijcai-2011-399 | Integrating Task Planning and Interactive Learning for Robots to Work in Human Environments | http://ijcai.org/Proceedings/11/Papers/398.pdf | 
+ijcai-2011-400 | Plan Recognition in Virtual Laboratories | http://ijcai.org/Proceedings/11/Papers/399.pdf | 
+ijcai-2011-401 | A Comprehensive Approach to On-Board Autonomy Verification and Validation | http://ijcai.org/Proceedings/11/Papers/400.pdf | 
+ijcai-2011-402 | Non-Linear Monte-Carlo Search in Civilization II | http://ijcai.org/Proceedings/11/Papers/401.pdf | 
+ijcai-2011-403 | Buried Utility Pipeline Mapping Based on Multiple Spatial Data Sources: A Bayesian Data Fusion Approach | http://ijcai.org/Proceedings/11/Papers/402.pdf | 
+ijcai-2011-404 | Enhancing Search Results with Semantic Annotation Using Augmented Browsing | http://ijcai.org/Proceedings/11/Papers/403.pdf | 
+ijcai-2011-405 | Simulation-Based Data Mining Solution to the Structure of Water Surrounding Proteins | http://ijcai.org/Proceedings/11/Papers/404.pdf | 
+ijcai-2011-406 | A Natural Language Question Answering System as a Participant in Human Q&A Portals | http://ijcai.org/Proceedings/11/Papers/405.pdf | 
+ijcai-2011-407 | Sketch Recognition Algorithms for Comparing Complex and Unpredictable Shapes | http://ijcai.org/Proceedings/11/Papers/406.pdf | 
+ijcai-2011-408 | Exploiting Probabilistic Knowledge under Uncertain Sensing for Efficient Robot Behaviour | http://ijcai.org/Proceedings/11/Papers/407.pdf | 
+ijcai-2011-409 | Integrated Learning for Goal-Driven Autonomy | http://ijcai.org/Proceedings/11/Papers/408.pdf | 
+ijcai-2011-410 | Learning Compact Visual Descriptor for Low Bit Rate Mobile Landmark Search | http://ijcai.org/Proceedings/11/Papers/409.pdf | 
+ijcai-2011-411 | A New Search Engine Integrating Hierarchical Browsing and Keyword Search | http://ijcai.org/Proceedings/11/Papers/410.pdf | 
+ijcai-2011-412 | Resource-Bounded Crowd-Sourcing of Commonsense Knowledge | http://ijcai.org/Proceedings/11/Papers/411.pdf | 
+ijcai-2011-413 | A Real-Time Opponent Modeling System for Rush Football | http://ijcai.org/Proceedings/11/Papers/412.pdf | 
+ijcai-2011-414 | Coordinating Logistics Operations with Privacy Guarantees | http://ijcai.org/Proceedings/11/Papers/413.pdf | 
+ijcai-2011-415 | Learning to Identify Review Spam | http://ijcai.org/Proceedings/11/Papers/414.pdf | 
+ijcai-2011-416 | A System for Providing Differentiated QoS in Retail Banking | http://ijcai.org/Proceedings/11/Papers/415.pdf | 
+ijcai-2011-417 | Learning 3D Geological Structure from Drill-Rig Sensors for Automated Mining | http://ijcai.org/Proceedings/11/Papers/416.pdf | 
+ijcai-2011-418 | Interest Prediction on Multinomial, Time-Evolving Social Graph | http://ijcai.org/Proceedings/11/Papers/417.pdf | 
+ijcai-2011-419 | An Agent Architecture for Prognostic Reasoning Assistance | http://ijcai.org/Proceedings/11/Papers/418.pdf | 
+ijcai-2011-420 | Extending Computer Assisted Assessment Systems with Natural Language Processing, User Modeling, and Recommendations Based on Human Computer Interaction and Data Mining | http://ijcai.org/Proceedings/11/Papers/419.pdf | 
+ijcai-2011-421 | Integrating Learning into a BDI Agent for Environments with Changing Dynamics | http://ijcai.org/Proceedings/11/Papers/420.pdf | 
+ijcai-2011-422 | Embedding System Dynamics in Agent Based Models for Complex Adaptive Systems | http://ijcai.org/Proceedings/11/Papers/421.pdf | 
+ijcai-2011-423 | Kinship Verification through Transfer Learning | http://ijcai.org/Proceedings/11/Papers/422.pdf | 
+ijcai-2011-424 | Cross-People Mobile-Phone Based Activity Recognition | http://ijcai.org/Proceedings/11/Papers/423.pdf | 
+ijcai-2011-425 | CHIME: An Efficient Error-Tolerant Chinese Pinyin Input Method | http://ijcai.org/Proceedings/11/Papers/424.pdf | 
+ijcai-2011-426 | Best Paper Track  | http://ijcai.org/Proceedings/11/Papers/425.pdf | 
+ijcai-2011-427 | A Geometric View of Conjugate Priors | http://ijcai.org/Proceedings/11/Papers/426.pdf | 
+ijcai-2011-428 | Human-Guided Machine Learning for Fast and Accurate Network Alarm Triage | http://ijcai.org/Proceedings/11/Papers/427.pdf | 
+ijcai-2011-429 | Lower Bounds for Width-Restricted Clause Learning on Formulas of Small Width | http://ijcai.org/Proceedings/11/Papers/428.pdf | 
+ijcai-2011-430 | Community Detection in Social Networks through Community Formation Games | http://ijcai.org/Proceedings/11/Papers/429.pdf | 
+ijcai-2011-431 | An Algorithm for Adapting Cases Represented in ALC | http://ijcai.org/Proceedings/11/Papers/430.pdf | 
+ijcai-2011-432 | Exploring Protein Fragment Assembly Using CLP | http://ijcai.org/Proceedings/11/Papers/431.pdf | 
+ijcai-2011-433 | Translation-Based Constraint Answer Set Solving | http://ijcai.org/Proceedings/11/Papers/432.pdf | 
+ijcai-2011-434 | Incentive Engineering for Boolean Games | http://ijcai.org/Proceedings/11/Papers/433.pdf | 
+ijcai-2011-435 | A Flat Histogram Method for Computing the Density of States of Combinatorial Problems | http://ijcai.org/Proceedings/11/Papers/434.pdf | 
+ijcai-2011-436 | picoTrans: Using Pictures as Input for Machine Translation on Mobile Devices | http://ijcai.org/Proceedings/11/Papers/435.pdf | 
+ijcai-2011-437 | Automatic Construction of Efficient Multiple Battery Usage Policies | http://ijcai.org/Proceedings/11/Papers/436.pdf | 
+ijcai-2011-438 | Finite Model Computation via Answer Set Programming | http://ijcai.org/Proceedings/11/Papers/437.pdf | 
+ijcai-2011-439 | Measuring the Good and the Bad in Inconsistent Information | http://ijcai.org/Proceedings/11/Papers/438.pdf | 
+ijcai-2011-440 | A Correctness Result for Reasoning about One-Dimensional Planning Problems | http://ijcai.org/Proceedings/11/Papers/439.pdf | 
+ijcai-2011-441 | A Transitivity Aware Matrix Factorization Model for Recommendation in Social Networks | http://ijcai.org/Proceedings/11/Papers/440.pdf | 
+ijcai-2011-442 | Reinforcement Learning to Adjust Robot Movements to New Situations | http://ijcai.org/Proceedings/11/Papers/441.pdf | 
+ijcai-2011-443 | The Combined Approach to Ontology-Based Data Access | http://ijcai.org/Proceedings/11/Papers/442.pdf | 
+ijcai-2011-444 | Reasoning and Proofing Services for Semantic Web Agents | http://ijcai.org/Proceedings/11/Papers/443.pdf | 
+ijcai-2011-445 | Efficient Rule-Based Inferencing for OWL EL | http://ijcai.org/Proceedings/11/Papers/444.pdf | 
+ijcai-2011-446 | Flexible Tree Matching | http://ijcai.org/Proceedings/11/Papers/445.pdf | 
+ijcai-2011-447 | Enhancing Case Adaptation with Introspective Reasoning and Web Mining | http://ijcai.org/Proceedings/11/Papers/446.pdf | 
+ijcai-2011-448 | Recommender Systems, Missing Data and Statistical Model Estimation | http://ijcai.org/Proceedings/11/Papers/447.pdf | 
+ijcai-2011-449 | Mind the Eigen-Gap, or How to Accelerate Semi-Supervised Spectral Learning Algorithms | http://ijcai.org/Proceedings/11/Papers/448.pdf | 
+ijcai-2011-450 | Ties Matter: Complexity of Voting Manipulation Revisited | http://ijcai.org/Proceedings/11/Papers/449.pdf | 
+ijcai-2011-451 | An On-Line Algorithm for Semantic Forgetting | http://ijcai.org/Proceedings/11/Papers/450.pdf | 
+ijcai-2011-452 | GUARDS — Innovative Application of Game Theory for National Airport Security | http://ijcai.org/Proceedings/11/Papers/451.pdf | 
+ijcai-2011-453 | Norm Compliance of Rule-Based Cognitive Agents | http://ijcai.org/Proceedings/11/Papers/452.pdf | 
+ijcai-2011-454 | Theoretical Justification of Popular Link Prediction Heuristics | http://ijcai.org/Proceedings/11/Papers/453.pdf | 
+ijcai-2011-455 | Evaluation of Group Profiling Strategies | http://ijcai.org/Proceedings/11/Papers/454.pdf | 
+ijcai-2011-456 | Connecting the Dots between News Articles | http://ijcai.org/Proceedings/11/Papers/455.pdf | 
+ijcai-2011-457 | Learning Linear and Kernel Predictors with the 0–1 Loss Function | http://ijcai.org/Proceedings/11/Papers/456.pdf | 
+ijcai-2011-458 | Adaptive Data Compression for Robot Perception | http://ijcai.org/Proceedings/11/Papers/457.pdf | 
+ijcai-2011-459 | Active Exploration for Robust Object Detection | http://ijcai.org/Proceedings/11/Papers/458.pdf | 
+ijcai-2011-460 | A Framework for Longitudinal Influence Measurement between Communication Content and Social Networks | http://ijcai.org/Proceedings/11/Papers/459.pdf | 
+ijcai-2011-461 | WSABIE: Scaling Up to Large Vocabulary Image Annotation | http://ijcai.org/Proceedings/11/Papers/460.pdf | 
+ijcai-2011-462 | Analysis of Adjective-Noun Word Pair Extraction Methods for Online Review Summarization | http://ijcai.org/Proceedings/11/Papers/461.pdf | 
+ijcai-2011-463 | Large Linear Classification When Data Cannot Fit in Memory | http://ijcai.org/Proceedings/11/Papers/462.pdf | 
+ijcai-2011-464 | Doctoral Consortium | http://ijcai.org/Proceedings/11/Papers/463.pdf | 
+ijcai-2011-465 | Solving the Multiagent Selection and Scheduling Problem | http://ijcai.org/Proceedings/11/Papers/464.pdf | 
+ijcai-2011-466 | Decision Support through Argumentation-Based Practical Reasoning | http://ijcai.org/Proceedings/11/Papers/465.pdf | 
+ijcai-2011-467 | Behaviour Recognition in Smart Homes | http://ijcai.org/Proceedings/11/Papers/466.pdf | 
+ijcai-2011-468 | Statement of Thesis Research: Multi-Robot Sampling Strategies for Large-Scale Oceanographic Experiments | http://ijcai.org/Proceedings/11/Papers/467.pdf | 
+ijcai-2011-469 | Control of Robotic Systems for Safe Interaction with Human Operators | http://ijcai.org/Proceedings/11/Papers/468.pdf | 
+ijcai-2011-470 | Combining Machine Learning and Optimization Techniques to Determine 3-D Structures of Polypeptides | http://ijcai.org/Proceedings/11/Papers/469.pdf | 
+ijcai-2011-471 | An Agent-Oriented Software Engineering Methodology to Develop Adaptive Virtual Organizations | http://ijcai.org/Proceedings/11/Papers/470.pdf | 
+ijcai-2011-472 | Towards Social Problem-Solving with Human Subjects | http://ijcai.org/Proceedings/11/Papers/471.pdf | 
+ijcai-2011-473 | Towards Spatial Methods for Socially Assistive Robotics: Validation with Children with Autism Spectrum Disorders | http://ijcai.org/Proceedings/11/Papers/472.pdf | 
+ijcai-2011-474 | Regret Minimization in Multiplayer Extensive Games | http://ijcai.org/Proceedings/11/Papers/473.pdf | 
+ijcai-2011-475 | Combinatorial Aggregation | http://ijcai.org/Proceedings/11/Papers/474.pdf | 
+ijcai-2011-476 | Combining Spatial and Temporal Aspects of Prediction Problems to Improve Prediction Performance | http://ijcai.org/Proceedings/11/Papers/475.pdf | 
+ijcai-2011-477 | A Decision-Theoretic Academic Advisor: Extended Abstract | http://ijcai.org/Proceedings/11/Papers/476.pdf | 
+ijcai-2011-478 | Belief Revision on Computation Tree Logic | http://ijcai.org/Proceedings/11/Papers/477.pdf | 
+ijcai-2011-479 | Distributed Constraint Optimization Problems Related with Soft Arc Consistency | http://ijcai.org/Proceedings/11/Papers/478.pdf | 
+ijcai-2011-480 | A Trust and Reputation Model for Supply Chain Management | http://ijcai.org/Proceedings/11/Papers/479.pdf | 
+ijcai-2011-481 | Graph Pruning and Symmetry Breaking on Grid Maps | http://ijcai.org/Proceedings/11/Papers/480.pdf | 
+ijcai-2011-482 | Towards Scalable MDP Algorithms | http://ijcai.org/Proceedings/11/Papers/481.pdf | 
+ijcai-2011-483 | Talking about Trust in Heterogeneous Multi-Agent Systems | http://ijcai.org/Proceedings/11/Papers/482.pdf | 
+ijcai-2011-484 | An Analysis of Multiobjective Search Algorithms and Heuristics | http://ijcai.org/Proceedings/11/Papers/483.pdf | 
+ijcai-2011-485 | On Temporal Regulations and Commitment Protocols | http://ijcai.org/Proceedings/11/Papers/484.pdf | 
+ijcai-2011-486 | Contributions to Personalizable Knowledge Integration | http://ijcai.org/Proceedings/11/Papers/485.pdf | 
+ijcai-2011-487 | Decision Making under Uncertainty: Social Choice and Manipulation | http://ijcai.org/Proceedings/11/Papers/486.pdf | 
+ijcai-2011-488 | RDFKB: A Semantic Web Knowledge Base | http://ijcai.org/Proceedings/11/Papers/487.pdf | 
+ijcai-2011-489 | Research Proposal: Cooperation among Self Interested Agents | http://ijcai.org/Proceedings/11/Papers/488.pdf | 
+ijcai-2011-490 | Temporal Defeasible Argumentation in Multi-Agent Planning | http://ijcai.org/Proceedings/11/Papers/489.pdf | 
+ijcai-2011-491 | Human Behavior Analysis from Video Data Using Bag-of-Gestures | http://ijcai.org/Proceedings/11/Papers/490.pdf | 
+ijcai-2011-492 | Multi-Agent Coordination: DCOPs and Beyond | http://ijcai.org/Proceedings/11/Papers/491.pdf | 
+ijcai-2011-493 | Bayesian Abductive Logic Programs: A Probabilistic Logic for Abductive Reasoning | http://ijcai.org/Proceedings/11/Papers/492.pdf | 
+ijcai-2011-494 | From an Agent Logic to an Agent Programming Language for Partially Observable Stochastic Domains | http://ijcai.org/Proceedings/11/Papers/493.pdf | 
+ijcai-2011-495 | Agent-Based Negotiation Teams | http://ijcai.org/Proceedings/11/Papers/494.pdf | 
+ijcai-2011-496 | A Method for Evaluating and Standardizing Ontologies | http://ijcai.org/Proceedings/11/Papers/495.pdf | 
+ijcai-2011-497 | Towards a Model-Centric Cognitive Architecture for Service Robots | http://ijcai.org/Proceedings/11/Papers/496.pdf | 
+ijcai-2011-498 | Sensorimotor Models of Space and Object Geometry | http://ijcai.org/Proceedings/11/Papers/497.pdf | 
+ijcai-2011-499 | Multiagent Hierarchical Learning from Demonstration | http://ijcai.org/Proceedings/11/Papers/498.pdf | 
+ijcai-2011-500 | Heuristic Search under Quality and Time Bounds | http://ijcai.org/Proceedings/11/Papers/499.pdf | 
+ijcai-2011-501 | On the Impact of Belief State Representation in Planning under Uncertainty | http://ijcai.org/Proceedings/11/Papers/500.pdf | 
+ijcai-2011-502 | Autonomous Object Manipulation: A Semantic-Driven Approach | http://ijcai.org/Proceedings/11/Papers/501.pdf | 
+ijcai-2011-503 | Tractable Massively Multi-Agent Pathfinding with Solution Quality and Completeness Guarantees | http://ijcai.org/Proceedings/11/Papers/502.pdf | 
+ijcai-2011-504 | Input Parameter Calibration in Forest Fire Spread Prediction: Taking the Intelligent Way | http://ijcai.org/Proceedings/11/Papers/503.pdf | 
+ijcai-2011-505 | Transfer Learning in Spatial Reasoning Puzzles | http://ijcai.org/Proceedings/11/Papers/504.pdf | 
+ijcai-2011-506 | Trust Mechanisms for Online Systems (Extended Abstract) | http://ijcai.org/Proceedings/11/Papers/505.pdf | 
+ijcai-2011-507 | Mechanism Design for Dynamic Environments: Online Double Auctions | http://ijcai.org/Proceedings/11/Papers/506.pdf | 
+ijcai-2011-508 | Index | http://ijcai.org/Proceedings/11/Papers/507.pdf | 
