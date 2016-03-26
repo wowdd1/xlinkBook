@@ -275,7 +275,7 @@ def build_lines(list_all):
                 #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title
                 
                 if engin != '':
-                    engin_list = engin.strip().split(" ")
+                    engin_list = utils.getEnginList(engin.strip())
                     if url.strip() != '':
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
                     else:

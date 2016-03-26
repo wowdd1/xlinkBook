@@ -131,7 +131,7 @@ class Utils:
             for line in all_lines:
                 record = Record(line)
                 if record.get_title() != '':
-                    self.search_engin_dict[record.get_title().strip()] = record.get_url().strip()
+                    self.search_engin_dict[record.get_title().strip()] = record
 
     def removeDoubleSpace(self, text):
         text = text.replace('\n','')
@@ -186,7 +186,8 @@ class Utils:
         return os.getcwd() + "/db/" + subject + "/"
 
     def getEnginUrl(self, engin):
-        for item in self.search_engin_dict.values():
+        for record in self.search_engin_dict.values():
+            item = record.get_url().strip()
             if item.lower().find(engin.lower()) != -1:
                 return item
             if engin == 'googlevideo' and item.lower().find('google.com.hk/videohp') != -1:
@@ -209,6 +210,20 @@ class Utils:
             url = url.replace('$', keyword)
 
         return url
+    def getEnginList(self, engins):
+        if engins.startswith('description:'):
+            engin_list = []
+            tags = engins[engins.find(':') + 1 :].strip().split(' ')
+            for record in self.search_engin_dict.values():
+                desc = record.get_describe().strip()
+                desc = desc[desc.find(':') + 1 :].strip()
+                for tag in tags:
+                    if desc.find(tag) != -1:
+                        engin_list.append(record.get_title().strip())
+            return engin_list
+        else:
+            return engins.split(' ')
+
 
     def isEnginUrl(self, url):
         if url.find('soku.com') != -1 or url.find('google.com.hk/videohp') != -1:
