@@ -1,78 +1,79 @@
-engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | 
-engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | 
-engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | 
-engin-4 | arxiv | http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1 | 
-engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | 
-engin-6 | bookzz | http://bookzz.org/s/?q= | 
-engin-7 | booksc | http://booksc.org/s/?q= | 
-engin-8 | booksee | http://en.booksee.org/s/?q= | 
-engin-9 | avxsearch | http://avxsearch.in/?q= | 
-engin-10 | ebookee | http://ebookee.org/search.php?sa=Search&q= | 
-engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | 
-engin-12 | amazon | https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | 
-engin-13 | nap | http://www.nap.edu/search/?term= | 
-engin-14 | hathitrust | http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1= | 
-engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | 
-engin-16 | wowebook | http://www.wowebook.co/?s= | 
-engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | 
-engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | 
-engin-19 | baidu | http://www.baidu.com/s?word= | 
-engin-20 | bing | http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq= | 
-engin-21 | academic | http://academic.research.microsoft.com/Search?query= | 
-engin-22 | xueshu | http://xueshu.baidu.com/s?wd= | 
-engin-23 | dblp | http://dblp.uni-trier.de/search?q= | 
-engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q= | 
-engin-25 | springer | http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText= | 
-engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= | 
-engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | 
-engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | 
-engin-29 | patents.google | https://patents.google.com/?q= | 
-engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | 
-engin-31 | youtube | https://www.youtube.com/results?search_query= | 
-engin-32 | coursera | https://www.coursera.org/courses?query= | 
-engin-33 | edusalsa | https://edusalsa.com/search?q= | 
-engin-34 | edx | https://www.edx.org/course?search_query= | 
-engin-35 | videolectures | http://videolectures.net/site/search/?q= | 
-engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | 
-engin-37 | ted | http://www.ted.com/search?q= | 
-engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | 
-engin-39 | frontiersin | http://www.frontiersin.org/SearchData.aspx?sq= | 
-engin-40 | plos | https://www.plos.org/?submit=Go&s= | 
-engin-41 | plosone | http://www.plosone.org/search/simple?from=globalSimpleSearch&filterJournals=PLoSONE&query= | 
-engin-42 | scirp | http://www.scirp.org/journal/Articles.aspx?searchField=All&page=1&searchCode= | 
-engin-43 | oalib | http://www.oalib.com/search;jsessionid=0C979878FC00CECAA48E851318C327DB.tomcat1?kw= | 
-engin-44 | nature | http://www.nature.com/search?journal=nature%2Cnews&q= | 
-engin-45 | philpapers | http://philpapers.org/s/ | 
-engin-46 | macropus | http://git.macropus.org/hubmed/?term= | 
-engin-47 | citeulike | http://www.citeulike.org/search/all?q= | 
-engin-48 | inspirehep | http://inspirehep.net/search?ln=en&ln=en&of=hb&action_search=Search&sf=earliestdate&so=d&rm=&rg=25&sc=0&p= | 
-engin-49 | hindawi | http://www.hindawi.com/search/all/ | 
-engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | 
-engin-51 | github | https://github.com/search?q= | 
-engin-52 | stackoverflow | http://stackoverflow.com/search?q= | 
-engin-53 | mathoverflow | http://mathoverflow.net/search?q= | 
-engin-54 | wikipedia | https://wikipedia.org/wiki/ | 
-engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | 
-engin-56 | csdn | http://so.csdn.net/so/search/s.do?ref=toolbar&q= | 
-engin-57 | awesome | https://github.com/search?q=awesome  | 
-engin-58 | googlecode | https://code.google.com/hosting/search?q= | 
-engin-59 | codeplex | https://www.codeplex.com/site/search?query= | 
-engin-60 | sourceforge | http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q= | 
-engin-61 | coursetalk | http://www.coursetalk.com/search?q= | 
-engin-62 | mooc-list | https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q= | 
-engin-63 | nctu | http://ocw.nctu.edu.tw/course_list_search.php?key= | 
-engin-64 | class-central | https://www.class-central.com/search?q= | 
-engin-65 | guokr | http://mooc.guokr.com/search/course/?wd= | 
-engin-66 | coursegraph | http://coursegraph.com/search_results/ | 
-engin-67 | moozhi | http://www.moozhi.com/search/course?keywords= | 
-engin-68 | aminer | http://aminer.org/search/ | 
-engin-69 | chaoxing | http://video.chaoxing.com/s?order=0&type=all&sw= | 
-engin-70 | sina | http://open.sina.com.cn/search/ | 
-engin-71 | 163 | http://c.open.163.com/search/search.htm?query= | 
-engin-72 | youku | http://www.soku.com/search_playlist/q_ | 
-engin-73 | tudou | http://www.soku.com/t/npsearch/ | 
-engin-74 | digitaltutors | http://www.digitaltutors.com/11/search.php?searchString= | 
-engin-75 | sec | http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&company= | 
-engin-76 | chrome | chrome://bookmarks/#q= |
-engin-77 | apress | https://www.apress.com/catalogsearch/result/?q= |
-engin-78 | oreilly | http://search.oreilly.com/?q= |
+engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | description: all
+engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | description:course talk
+engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | description:paper
+engin-4 | arxiv | http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1 | description:paper
+engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book
+engin-6 | bookzz | http://bookzz.org/s/?q= | description:book
+engin-7 | booksc | http://booksc.org/s/?q= | description:book
+engin-8 | booksee | http://en.booksee.org/s/?q= | description:book
+engin-9 | avxsearch | http://avxsearch.in/?q= | description:book
+engin-10 | ebookee | http://ebookee.org/search.php?sa=Search&q= | description:book
+engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | description:book
+engin-12 | amazon | https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | description:book
+engin-13 | nap | http://www.nap.edu/search/?term= | description:book
+engin-14 | hathitrust | http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1= | description:book
+engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | description:book
+engin-16 | wowebook | http://www.wowebook.co/?s= | description:book
+engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | description:paper
+engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | description:paper
+engin-19 | baidu | http://www.baidu.com/s?word= | description:all
+engin-20 | bing | http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq= | description:all
+engin-21 | academic | http://academic.research.microsoft.com/Search?query= | description:paper
+engin-22 | xueshu | http://xueshu.baidu.com/s?wd= | description:paper
+engin-23 | dblp | http://dblp.uni-trier.de/search?q= | description:paper
+engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q= | description:paper
+engin-25 | springer | http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText= | description:paper
+engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= | description:paper
+engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent
+engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent
+engin-29 | patents.google | https://patents.google.com/?q= | description:patent
+engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:all
+engin-31 | youtube | https://www.youtube.com/results?search_query= | description:course
+engin-32 | coursera | https://www.coursera.org/courses?query= | description:course
+engin-33 | edusalsa | https://edusalsa.com/search?q= | description:course
+engin-34 | edx | https://www.edx.org/course?search_query= | description:course
+engin-35 | videolectures | http://videolectures.net/site/search/?q= | description:talk
+engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | description:people
+engin-37 | ted | http://www.ted.com/search?q= | description:talk
+engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | description:paper
+engin-39 | frontiersin | http://www.frontiersin.org/SearchData.aspx?sq= | description:paper
+engin-40 | plos | https://www.plos.org/?submit=Go&s= | description:paper
+engin-41 | plosone | http://www.plosone.org/search/simple?from=globalSimpleSearch&filterJournals=PLoSONE&query= | description:paper
+engin-42 | scirp | http://www.scirp.org/journal/Articles.aspx?searchField=All&page=1&searchCode= | description:paper
+engin-43 | oalib | http://www.oalib.com/search;jsessionid=0C979878FC00CECAA48E851318C327DB.tomcat1?kw= | description:paper
+engin-44 | nature | http://www.nature.com/search?journal=nature%2Cnews&q= | description:paper
+engin-45 | philpapers | http://philpapers.org/s/ | description:paper
+engin-46 | macropus | http://git.macropus.org/hubmed/?term= | description:paper
+engin-47 | citeulike | http://www.citeulike.org/search/all?q= | description:paper
+engin-48 | inspirehep | http://inspirehep.net/search?ln=en&ln=en&of=hb&action_search=Search&sf=earliestdate&so=d&rm=&rg=25&sc=0&p= | description:paper
+engin-49 | hindawi | http://www.hindawi.com/search/all/ | description:paper
+engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | description:tutorial
+engin-51 | github | https://github.com/search?q= | description:project
+engin-52 | stackoverflow | http://stackoverflow.com/search?q= | description:social
+engin-53 | mathoverflow | http://mathoverflow.net/search?q= | description:social
+engin-54 | wikipedia | https://wikipedia.org/wiki/ | description:wiki
+engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | description:social
+engin-56 | csdn | http://so.csdn.net/so/search/s.do?ref=toolbar&q= | description:social
+engin-57 | awesome | https://github.com/search?q=awesome  | description:project
+engin-58 | googlecode | https://code.google.com/hosting/search?q= | description:project
+engin-59 | codeplex | https://www.codeplex.com/site/search?query= | description:project
+engin-60 | sourceforge | http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q= | description:project
+engin-61 | coursetalk | http://www.coursetalk.com/search?q= | description:course
+engin-62 | mooc-list | https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q= | description:course
+engin-63 | nctu | http://ocw.nctu.edu.tw/course_list_search.php?key= | description:course
+engin-64 | class-central | https://www.class-central.com/search?q= | description:course
+engin-65 | guokr | http://mooc.guokr.com/search/course/?wd= | description:course
+engin-66 | coursegraph | http://coursegraph.com/search_results/ | description:course
+engin-67 | moozhi | http://www.moozhi.com/search/course?keywords= | description:course
+engin-68 | aminer | http://aminer.org/search/ | description:paper
+engin-69 | chaoxing | http://video.chaoxing.com/s?order=0&type=all&sw= | description:course
+engin-70 | sina | http://open.sina.com.cn/search/ | description:course
+engin-71 | 163 | http://c.open.163.com/search/search.htm?query= | description:course
+engin-72 | youku | http://www.soku.com/search_playlist/q_ | description:course
+engin-73 | tudou | http://www.soku.com/t/npsearch/ | description:course
+engin-74 | digitaltutors | http://www.digitaltutors.com/11/search.php?searchString= | description:tutorial
+engin-75 | sec | http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&company= | description:earning
+engin-76 | chrome | chrome://bookmarks/#q= | description:
+engin-77 | apress | https://www.apress.com/catalogsearch/result/?q= | description:book
+engin-78 | oreilly | http://search.oreilly.com/?q= | description: book
+engin-79 | ieeexplore | http://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText= | description: paper
