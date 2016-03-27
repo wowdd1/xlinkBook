@@ -13,7 +13,7 @@ class Record():
         if line == "":
             self.line = self.default_line
         if line.find('|') == -1:
-            self.line = "len-" + str(len(line)) + " | " + line.replace('\n', '') + " | | "
+            self.line =  " | " + line.replace('\n', '') + " | | "
         self.file_path = ''
 
     def set_path(self, path):
