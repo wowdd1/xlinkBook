@@ -7,9 +7,9 @@ import sys
 from bs4 import BeautifulSoup;
 from utils import Utils
 
+utils = Utils()
 def searchAmazon(name):
     print 'searching ' + name
-    utils = Utils()
 
     r = requests.get('http://www.amazon.cn/s/?url=search-alias%3Dstripbooks&field-keywords=' + name)
     soup = BeautifulSoup(r.text)
@@ -36,6 +36,32 @@ def searchAmazon(name):
                     print title
 
 
+def searchISBNDB(name):
+    print 'searching ' + name
+    r = requests.get('http://isbndb.com/search/all?query=' + name)
+    soup = BeautifulSoup(r.text)
+    div = soup.find('div', id='bookResults')
+    print div.ul.li.a.text.strip()
+
+    r = requests.get(div.ul.li.a['href'])
+    soup = BeautifulSoup(r.text)
+    div = soup.find('div', class_='bookSnippetBasic')
+    sp = BeautifulSoup(div.prettify())
+    publish = ''
+    isbn10 = ''
+    isbn13 = ''
+    for d in sp.find_all('div'):
+        text = utils.removeDoubleSpace(d.text)
+        if text.find('Publisher') != -1:
+            publish = text[text.find(':') + 1 :].strip()
+            break
+    
+    isbn10 = publish[publish.find('ISBN10:') + 8 :  publish.find('ISBN10:') + 8 + 10]
+    isbn13 = publish[publish.find('ISBN13:') + 8 :  publish.find('ISBN13:') + 8 + 13]
+    publish = publish[0 : publish.find('ISBN')]
+    print 'publish ' + publish
+    print 'isbn10 ' + isbn10
+    print 'isbn13 ' + isbn13 
 
 def usage(argv0):
     return ''
@@ -57,7 +83,7 @@ def main(argv):
             keyword = a
 
     if keyword != '':
-        searchAmazon(keyword)
+        searchISBNDB(keyword)
 
 if __name__ == '__main__':
     main(sys.argv)
