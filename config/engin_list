@@ -77,3 +77,4 @@ engin-76 | chrome | chrome://bookmarks/#q= | description:
 engin-77 | apress | https://www.apress.com/catalogsearch/result/?q= | description:book
 engin-78 | oreilly | http://search.oreilly.com/?q= | description: book
 engin-79 | ieeexplore | http://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText= | description: paper
+engin-80 | amazon.cn | http://www.amazon.cn/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | description:book
