@@ -16,14 +16,15 @@ def searchAmazon(name):
     div = soup.find('div', class_='a-row a-spacing-small')
     itemid = div.a['href'][div.a['href'].find('dp/') + 3 :]
 
+    print 'itemid: ' + itemid
     print "book:  " + div.a.text
     user_agent = {'User-agent': 'Mozilla/5.0'}
     r = requests.get('http://www.amazon.cn/gp/product-description/ajaxGetProuductDescription.html?asin=' + itemid + '&deviceType=web', headers = user_agent)
 
 
     soup = BeautifulSoup(r.text)
-
-    for div in soup.find_all('div', id='s_content_2'):
+    
+    for div in soup.find_all('div'):
         sp = BeautifulSoup(div.prettify())
         if div.h3 != None:
             for p in sp.find_all('p'):
