@@ -280,8 +280,8 @@ def build_lines(list_all):
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
                     else:
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
-                    for e in engin_list:
-                        id_title_lines[i][j] += ' <a href="' + utils.getEnginUrlEx(e, title.strip()) + '" target="_blank"> <font size="2" color="#999966">' + e + '</font></a>'
+                    id_title_lines[i][j] += utils.getEnginListLinks(engin_list, title.strip())
+
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
@@ -396,6 +396,8 @@ def filter(keyword, data):
         
     return match(keyword, data)
     
+def buildLine(content):
+    return " id | xx" + content + " | | \n"
 
 def getLines(file_name):
     all_lines = []
@@ -758,9 +760,9 @@ def main(argv):
 
     if os.path.isfile(source):
         print_list(getLines(source), source)
-    elif merger_result:
+    elif merger_result and os.path.isdir(source):
         print_list(get_lines_from_dir(source))
-    else:
+    elif os.path.isdir(source):
         print_dir(source)
 
 if __name__ == '__main__':
