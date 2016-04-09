@@ -81,3 +81,4 @@ engin-80 | amazon.cn | http://www.amazon.cn/s/ref=nb_sb_noss?url=search-alias%3D
 engin-81 | informit | http://www.informit.com/search/index.aspx?query= | description:book
 engin-82 | isbndb | http://isbndb.com/search/all?query= | description:book
 engin-83 | loc.gov | https://www.loc.gov/books/?q= | description:book
+engin-84 | textbooksearch | http://textbooksearch.mit.edu/class/ | description:book
