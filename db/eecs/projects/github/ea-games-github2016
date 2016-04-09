@@ -1,4 +1,6 @@
-EA-games-github-808-1 | orbit | https://github.com/electronicarts/orbit | description:Orbit - Build distributed and scalable online services
-EA-games-github-14-2 | ea-async | https://github.com/electronicarts/ea-async | description:EA Async implements async-await methods in the JVM.
-EA-games-github-7-3 | awsudo | https://github.com/electronicarts/awsudo | description:Automated AWS API access using a SAML compliant identity provider
-EA-games-github-3-4 | ea-agent-loader | https://github.com/electronicarts/ea-agent-loader | description:EA Agent Loader is a collection of utilities for java agent developers.
+EA-games-github-1927-1 | EASTL | https://github.com/electronicarts/EASTL | description:EASTL stands for Electronic Arts Standard Template Library. It is an extensive and robust implementation that has an emphasis on high performance.
+EA-games-github-31-2 | ea-async | https://github.com/electronicarts/ea-async | description:EA Async implements async-await methods in the JVM.
+EA-games-github-9-3 | awsudo | https://github.com/electronicarts/awsudo | description:Automated AWS API access using a SAML compliant identity provider
+EA-games-github-8-4 | ea-agent-loader | https://github.com/electronicarts/ea-agent-loader | description:EA Agent Loader is a collection of utilities for java agent developers.
+EA-games-github-6-5 | gatling-aws-maven-plugin | https://github.com/electronicarts/gatling-aws-maven-plugin | description:The Gatling AWS Maven plugin takes the pain out of scaling up your Gatling tests. It runs your load test on a configurable number of EC2 instances, aggregates a single load test report, and uploads the results to S3. All EC2 instances are terminated at the end of the test to ensure you are only paying for what you need.
+EA-games-github-2-6 | orbit | https://github.com/electronicarts/orbit | description:Orbit - Virtual actor framework for building distributed systems
