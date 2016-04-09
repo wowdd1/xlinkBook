@@ -1,184 +1,193 @@
-googlesamples-github-4550-1 | android-UniversalMusicPlayer | https://github.com/googlesamples/android-UniversalMusicPlayer | description:This sample shows how to implement an audio media app that works across multiple form factors and provide a consistent user experience on Android phones, tablets, Auto, Wear and Cast devices
-googlesamples-github-2955-2 | android-topeka | https://github.com/googlesamples/android-topeka | description:A fun to play quiz that showcases material design on Android
-googlesamples-github-1902-3 | android-testing | https://github.com/googlesamples/android-testing | description:A collection of samples demonstrating different frameworks and techniques for automated testing
-googlesamples-github-1166-4 | android-testing-templates | https://github.com/googlesamples/android-testing-templates | description:Updated Jan 22, 2016
-googlesamples-github-883-5 | android-ndk | https://github.com/googlesamples/android-ndk | description:Android NDK samples
-googlesamples-github-715-6 | google-services | https://github.com/googlesamples/google-services | description:A collection of quickstart samples demonstrating the Google APIs for Android and iOS
-googlesamples-github-710-7 | cardboard-java | https://github.com/googlesamples/cardboard-java | description:Google Cardboard
-googlesamples-github-648-8 | easypermissions | https://github.com/googlesamples/easypermissions | description:Simplify Android M system permissions
-googlesamples-github-466-9 | android-vision | https://github.com/googlesamples/android-vision | description:Updated Dec 25, 2015
-googlesamples-github-438-10 | easygoogle | https://github.com/googlesamples/easygoogle | description:Simple wrapper library for Google APIs
-googlesamples-github-438-11 | io2015-codelabs | https://github.com/googlesamples/io2015-codelabs | description:codelabs for Google I/O 2015
-googlesamples-github-436-12 | android-play-location | https://github.com/googlesamples/android-play-location | description:Updated Jan 8, 2016
-googlesamples-github-426-13 | cardboard-unity | https://github.com/googlesamples/cardboard-unity | description:Google Cardboard
-googlesamples-github-353-14 | android-RuntimePermissions | https://github.com/googlesamples/android-RuntimePermissions | description:Updated Jan 20, 2016
-googlesamples-github-326-15 | android-FingerprintDialog | https://github.com/googlesamples/android-FingerprintDialog | description:Updated Jan 12, 2016
-googlesamples-github-314-16 | android-Camera2Basic | https://github.com/googlesamples/android-Camera2Basic | description:Updated Jan 12, 2016
-googlesamples-github-238-17 | androidtv-Leanback | https://github.com/googlesamples/androidtv-Leanback | description:Android TV Leanback Support Library sample app
-googlesamples-github-230-18 | android-XYZTouristAttractions | https://github.com/googlesamples/android-XYZTouristAttractions | description:Updated Jan 12, 2016
-googlesamples-github-216-19 | android-ScreenCapture | https://github.com/googlesamples/android-ScreenCapture | description:Updated Jan 12, 2016
-googlesamples-github-196-20 | android-JobScheduler | https://github.com/googlesamples/android-JobScheduler | description:Updated Jan 12, 2016
-googlesamples-github-173-21 | io2014-codelabs | https://github.com/googlesamples/io2014-codelabs | description:Google I/O 2014 Codelabs
-googlesamples-github-172-22 | android-PdfRendererBasic | https://github.com/googlesamples/android-PdfRendererBasic | description:Updated Jan 12, 2016
-googlesamples-github-172-23 | android-play-places | https://github.com/googlesamples/android-play-places | description:Updated Dec 17, 2015
-googlesamples-github-170-24 | tango-examples-java | https://github.com/googlesamples/tango-examples-java | description:Example projects for Project Tango Java API
-googlesamples-github-169-25 | android-play-publisher-api | https://github.com/googlesamples/android-play-publisher-api | description:Updated Aug 31, 2015
-googlesamples-github-159-26 | android-RecyclerView | https://github.com/googlesamples/android-RecyclerView | description:Updated Jan 12, 2016
-googlesamples-github-158-27 | android-FloatingActionButtonBasic | https://github.com/googlesamples/android-FloatingActionButtonBasic | description:Updated Jan 12, 2016
-googlesamples-github-152-28 | android-Camera2Video | https://github.com/googlesamples/android-Camera2Video | description:Updated Jan 18, 2016
-googlesamples-github-147-29 | android-fit | https://github.com/googlesamples/android-fit | description:Updated Jan 21, 2016
-googlesamples-github-145-30 | android-NavigationDrawer | https://github.com/googlesamples/android-NavigationDrawer | description:Updated Jan 12, 2016
-googlesamples-github-142-31 | android-play-games-in-motion | https://github.com/googlesamples/android-play-games-in-motion | description:Updated Aug 30, 2015
-googlesamples-github-141-32 | apps-script-oauth2 | https://github.com/googlesamples/apps-script-oauth2 | description:Updated Jan 21, 2016
-googlesamples-github-136-33 | android-SwipeRefreshMultipleViews | https://github.com/googlesamples/android-SwipeRefreshMultipleViews | description:Updated Jan 12, 2016
-googlesamples-github-126-34 | tango-examples-c | https://github.com/googlesamples/tango-examples-c | description:JNI example projects for Project Tango C-API
-googlesamples-github-125-35 | android-nearby | https://github.com/googlesamples/android-nearby | description:Samples for Nearby APIs on Android
-googlesamples-github-122-36 | android-ActivitySceneTransitionBasic | https://github.com/googlesamples/android-ActivitySceneTransitionBasic | description:Updated Jan 15, 2016
-googlesamples-github-115-37 | tango-examples-unity | https://github.com/googlesamples/tango-examples-unity | description:Project Tango UnitySDK Example Projects
-googlesamples-github-112-38 | gcm-playground | https://github.com/googlesamples/gcm-playground | description:Updated Jan 12, 2016
-googlesamples-github-111-39 | android-WatchFace | https://github.com/googlesamples/android-WatchFace | description:Updated Jan 12, 2016
-googlesamples-github-110-40 | android-BluetoothChat | https://github.com/googlesamples/android-BluetoothChat | description:Updated Jan 12, 2016
-googlesamples-github-90-41 | android-SwipeRefreshListFragment | https://github.com/googlesamples/android-SwipeRefreshListFragment | description:Updated Jan 12, 2016
-googlesamples-github-89-42 | android-RevealEffectBasic | https://github.com/googlesamples/android-RevealEffectBasic | description:Updated Jan 12, 2016
-googlesamples-github-88-43 | android-CardView | https://github.com/googlesamples/android-CardView | description:Updated Jan 12, 2016
-googlesamples-github-88-44 | android-SlidingTabsBasic | https://github.com/googlesamples/android-SlidingTabsBasic | description:Updated Jan 12, 2016
-googlesamples-github-83-45 | cloud-polymer-go | https://github.com/googlesamples/cloud-polymer-go | description:Sample App Engine application with Go, Cloud Endpoints, and Polymer
-googlesamples-github-83-46 | android-BluetoothLeGatt | https://github.com/googlesamples/android-BluetoothLeGatt | description:Updated Jan 12, 2016
-googlesamples-github-79-47 | android-audio-high-performance | https://github.com/googlesamples/android-audio-high-performance | description:Code samples and documentation for building high performance audio apps on Android
-googlesamples-github-72-48 | android-SlidingTabsColors | https://github.com/googlesamples/android-SlidingTabsColors | description:Updated Jan 12, 2016
-googlesamples-github-71-49 | android-DisplayingBitmaps | https://github.com/googlesamples/android-DisplayingBitmaps | description:Updated Jan 12, 2016
-googlesamples-github-70-50 | android-play-billing | https://github.com/googlesamples/android-play-billing | description:Samples for Google Play In-app Billing
-googlesamples-github-68-51 | android-ConfirmCredential | https://github.com/googlesamples/android-ConfirmCredential | description:Updated Jan 12, 2016
-googlesamples-github-67-52 | android-BasicManagedProfile | https://github.com/googlesamples/android-BasicManagedProfile | description:Updated Jan 12, 2016
-googlesamples-github-66-53 | android-BasicSyncAdapter | https://github.com/googlesamples/android-BasicSyncAdapter | description:Updated Jan 12, 2016
-googlesamples-github-63-54 | android-ElevationDrag | https://github.com/googlesamples/android-ElevationDrag | description:Updated Jan 12, 2016
-googlesamples-github-60-55 | android-MediaBrowserService | https://github.com/googlesamples/android-MediaBrowserService | description:Updated Jan 12, 2016
-googlesamples-github-59-56 | android-Camera2Raw | https://github.com/googlesamples/android-Camera2Raw | description:Updated Jan 12, 2016
-googlesamples-github-58-57 | androidtv-sample-inputs | https://github.com/googlesamples/androidtv-sample-inputs | description:TV Input Framework (TIF) on Android TV sample
-googlesamples-github-58-58 | android-ActionBarCompat-ShareActionProvider | https://github.com/googlesamples/android-ActionBarCompat-ShareActionProvider | description:Updated Jan 12, 2016
-googlesamples-github-57-59 | android-ActiveNotifications | https://github.com/googlesamples/android-ActiveNotifications | description:Updated Jan 12, 2016
-googlesamples-github-56-60 | android-SynchronizedNotifications | https://github.com/googlesamples/android-SynchronizedNotifications | description:Updated Jan 12, 2016
-googlesamples-github-53-61 | android-codelab-watchface | https://github.com/googlesamples/android-codelab-watchface | description:In this codelab you'll learn how to create an analog watch face
-googlesamples-github-51-62 | android-AutoBackupForApps | https://github.com/googlesamples/android-AutoBackupForApps | description:Updated Jan 12, 2016
-googlesamples-github-51-63 | android-credentials | https://github.com/googlesamples/android-credentials | description:Updated Jan 20, 2016
-googlesamples-github-50-64 | android-TextLinkify | https://github.com/googlesamples/android-TextLinkify | description:Updated Jan 12, 2016
-googlesamples-github-49-65 | android-ElevationBasic | https://github.com/googlesamples/android-ElevationBasic | description:Updated Jan 12, 2016
-googlesamples-github-48-66 | android-TextSwitcher | https://github.com/googlesamples/android-TextSwitcher | description:Updated Jan 12, 2016
-googlesamples-github-46-67 | android-testdpc | https://github.com/googlesamples/android-testdpc | description:Updated Nov 5, 2015
-googlesamples-github-45-68 | android-custom-lint-rules | https://github.com/googlesamples/android-custom-lint-rules | description:This sample demonstrates how to create a custom lint checks and corresponding lint tests
-googlesamples-github-45-69 | android-Notifications | https://github.com/googlesamples/android-Notifications | description:Updated Jan 12, 2016
-googlesamples-github-45-70 | android-Geofencing | https://github.com/googlesamples/android-Geofencing | description:Updated Jan 12, 2016
-googlesamples-github-44-71 | android-AppUsageStatistics | https://github.com/googlesamples/android-AppUsageStatistics | description:Updated Jan 12, 2016
-googlesamples-github-43-72 | android-Timer | https://github.com/googlesamples/android-Timer | description:Updated Jan 12, 2016
-googlesamples-github-43-73 | android-MediaRecorder | https://github.com/googlesamples/android-MediaRecorder | description:Updated Jan 12, 2016
-googlesamples-github-42-74 | apps-script-form-notifications-addon | https://github.com/googlesamples/apps-script-form-notifications-addon | description:Updated Sep 17, 2015
-googlesamples-github-41-75 | android-SwipeRefreshLayoutBasic | https://github.com/googlesamples/android-SwipeRefreshLayoutBasic | description:Updated Jan 12, 2016
-googlesamples-github-39-76 | android-NetworkConnect | https://github.com/googlesamples/android-NetworkConnect | description:Updated Jan 12, 2016
-googlesamples-github-38-77 | android-DirectShare | https://github.com/googlesamples/android-DirectShare | description:Updated Jan 12, 2016
-googlesamples-github-38-78 | identity-toolkit-android | https://github.com/googlesamples/identity-toolkit-android | description:Updated Dec 3, 2015
-googlesamples-github-36-79 | android-SpeedTracker | https://github.com/googlesamples/android-SpeedTracker | description:Updated Jan 12, 2016
-googlesamples-github-35-80 | android-AsymmetricFingerprintDialog | https://github.com/googlesamples/android-AsymmetricFingerprintDialog | description:Updated Jan 12, 2016
-googlesamples-github-35-81 | android-RuntimePermissionsBasic | https://github.com/googlesamples/android-RuntimePermissionsBasic | description:Updated Jan 12, 2016
-googlesamples-github-34-82 | android-ClippingBasic | https://github.com/googlesamples/android-ClippingBasic | description:Updated Jan 12, 2016
-googlesamples-github-33-83 | android-SkeletonWearableApp | https://github.com/googlesamples/android-SkeletonWearableApp | description:Updated Jan 12, 2016
-googlesamples-github-32-84 | android-MessagingService | https://github.com/googlesamples/android-MessagingService | description:Updated Jan 12, 2016
-googlesamples-github-32-85 | android-DeviceOwner | https://github.com/googlesamples/android-DeviceOwner | description:Updated Jan 12, 2016
-googlesamples-github-30-86 | apps-script-templates | https://github.com/googlesamples/apps-script-templates | description:This repository contains a number of code templates for Google Apps Script that provide example frameworks for Apps Script projects.
-googlesamples-github-30-87 | android-MediaEffects | https://github.com/googlesamples/android-MediaEffects | description:Updated Jan 12, 2016
-googlesamples-github-30-88 | android-WatchViewStub | https://github.com/googlesamples/android-WatchViewStub | description:Updated Jan 12, 2016
-googlesamples-github-30-89 | android-NfcProvisioning | https://github.com/googlesamples/android-NfcProvisioning | description:Updated Jan 12, 2016
-googlesamples-github-29-90 | web-fundamentals | https://github.com/googlesamples/web-fundamentals | description:Google Web Fundamentals
-googlesamples-github-29-91 | android-LNotifications | https://github.com/googlesamples/android-LNotifications | description:Updated Jan 12, 2016
-googlesamples-github-28-92 | android-CustomNotifications | https://github.com/googlesamples/android-CustomNotifications | description:Updated Jan 12, 2016
-googlesamples-github-28-93 | android-HorizontalPaging | https://github.com/googlesamples/android-HorizontalPaging | description:Updated Jan 12, 2016
-googlesamples-github-28-94 | android-RepeatingAlarm | https://github.com/googlesamples/android-RepeatingAlarm | description:Updated Jan 12, 2016
-googlesamples-github-28-95 | friendlyping | https://github.com/googlesamples/friendlyping | description:Updated Jan 13, 2016
-googlesamples-github-28-96 | android-StorageProvider | https://github.com/googlesamples/android-StorageProvider | description:Updated Jan 12, 2016
-googlesamples-github-27-97 | calendar-sync | https://github.com/googlesamples/calendar-sync | description:A set of samples that demonstrate how to utilize sync tokens and etags in the calendar API to sync resources more efficiently.
-googlesamples-github-26-98 | android-DoneBar | https://github.com/googlesamples/android-DoneBar | description:Updated Jan 12, 2016
-googlesamples-github-26-99 | android-StorageClient | https://github.com/googlesamples/android-StorageClient | description:Updated Jan 12, 2016
-googlesamples-github-26-100 | android-Quiz | https://github.com/googlesamples/android-Quiz | description:Updated Jan 12, 2016
-googlesamples-github-25-101 | android-ActionBarCompat-ListPopupMenu | https://github.com/googlesamples/android-ActionBarCompat-ListPopupMenu | description:Updated Jan 12, 2016
-googlesamples-github-24-102 | android-GridViewPager | https://github.com/googlesamples/android-GridViewPager | description:Updated Jan 12, 2016
-googlesamples-github-23-103 | android-Interpolator | https://github.com/googlesamples/android-Interpolator | description:Updated Jan 12, 2016
-googlesamples-github-22-104 | android-HdrViewfinder | https://github.com/googlesamples/android-HdrViewfinder | description:Updated Jan 12, 2016
-googlesamples-github-22-105 | androidtv-VisualGameController | https://github.com/googlesamples/androidtv-VisualGameController | description:Updated Aug 30, 2015
-googlesamples-github-21-106 | androidtv-GameController | https://github.com/googlesamples/androidtv-GameController | description:Updated Aug 30, 2015
-googlesamples-github-21-107 | android-ActionBarCompat-Basic | https://github.com/googlesamples/android-ActionBarCompat-Basic | description:Updated Jan 12, 2016
-googlesamples-github-20-108 | apps-script-oauth1 | https://github.com/googlesamples/apps-script-oauth1 | description:Updated Jan 11, 2016
-googlesamples-github-20-109 | android-BasicTransition | https://github.com/googlesamples/android-BasicTransition | description:Updated Jan 15, 2016
-googlesamples-github-20-110 | android-FindMyPhone | https://github.com/googlesamples/android-FindMyPhone | description:Updated Jan 12, 2016
-googlesamples-github-20-111 | apps-script-dialog2sidebar | https://github.com/googlesamples/apps-script-dialog2sidebar | description:Updated Aug 11, 2015
-googlesamples-github-20-112 | android-BasicAndroidKeyStore | https://github.com/googlesamples/android-BasicAndroidKeyStore | description:Updated Jan 12, 2016
-googlesamples-github-20-113 | android-BasicContactables | https://github.com/googlesamples/android-BasicContactables | description:Updated Jan 12, 2016
-googlesamples-github-20-114 | android-BeamLargeFiles | https://github.com/googlesamples/android-BeamLargeFiles | description:Updated Jan 12, 2016
-googlesamples-github-19-115 | android-BasicNotifications | https://github.com/googlesamples/android-BasicNotifications | description:Updated Jan 12, 2016
-googlesamples-github-19-116 | google-server-auth-android | https://github.com/googlesamples/google-server-auth-android | description:Demonstrate Google Sign-In with Server Authorization on Android
-googlesamples-github-18-117 | android-google-accounts | https://github.com/googlesamples/android-google-accounts | description:Updated Mar 24, 2015
-googlesamples-github-18-118 | android-BatchStepSensor | https://github.com/googlesamples/android-BatchStepSensor | description:Updated Jan 12, 2016
-googlesamples-github-18-119 | android-BasicNetworking | https://github.com/googlesamples/android-BasicNetworking | description:Updated Jan 12, 2016
-googlesamples-github-18-120 | android-CustomTransition | https://github.com/googlesamples/android-CustomTransition | description:Updated Jan 15, 2016
-googlesamples-github-17-121 | android-BorderlessButtons | https://github.com/googlesamples/android-BorderlessButtons | description:Updated Jan 12, 2016
-googlesamples-github-17-122 | android-BluetoothAdvertisements | https://github.com/googlesamples/android-BluetoothAdvertisements | description:Updated Jan 12, 2016
-googlesamples-github-17-123 | android-RenderScriptIntrinsic | https://github.com/googlesamples/android-RenderScriptIntrinsic | description:Updated Jan 12, 2016
-googlesamples-github-17-124 | android-PermissionRequest | https://github.com/googlesamples/android-PermissionRequest | description:Updated Jan 12, 2016
-googlesamples-github-16-125 | identity-toolkit-java | https://github.com/googlesamples/identity-toolkit-java | description:Updated Dec 21, 2015
-googlesamples-github-16-126 | android-ElizaChat | https://github.com/googlesamples/android-ElizaChat | description:Updated Jan 12, 2016
-googlesamples-github-16-127 | android-DirectorySelection | https://github.com/googlesamples/android-DirectorySelection | description:Updated Jan 12, 2016
-googlesamples-github-15-128 | android-JumpingJack | https://github.com/googlesamples/android-JumpingJack | description:Updated Jan 12, 2016
-googlesamples-github-15-129 | android-RecipeAssistant | https://github.com/googlesamples/android-RecipeAssistant | description:Updated Jan 12, 2016
-googlesamples-github-15-130 | android-MidiSynth | https://github.com/googlesamples/android-MidiSynth | description:Updated Jan 12, 2016
-googlesamples-github-15-131 | android-DrawableTinting | https://github.com/googlesamples/android-DrawableTinting | description:Updated Jan 12, 2016
-googlesamples-github-15-132 | android-WearCompanionLibrary | https://github.com/googlesamples/android-WearCompanionLibrary | description:Updated Nov 7, 2015
-googlesamples-github-15-133 | android-ads | https://github.com/googlesamples/android-ads | description:Updated Dec 15, 2015
-googlesamples-github-14-134 | android-Flashlight | https://github.com/googlesamples/android-Flashlight | description:Updated Jan 12, 2016
-googlesamples-github-14-135 | android-ImmersiveMode | https://github.com/googlesamples/android-ImmersiveMode | description:Updated Jan 12, 2016
-googlesamples-github-14-136 | identity-toolkit-python | https://github.com/googlesamples/identity-toolkit-python | description:Updated Jul 22, 2015
-googlesamples-github-13-137 | android-CardReader | https://github.com/googlesamples/android-CardReader | description:Updated Jan 12, 2016
-googlesamples-github-13-138 | android-wear-xamarin-watchface | https://github.com/googlesamples/android-wear-xamarin-watchface | description:Shows how to create Android Wear Watchfaces with Xamarin
-googlesamples-github-13-139 | attendee-checkin | https://github.com/googlesamples/attendee-checkin | description:Updated Aug 30, 2015
-googlesamples-github-13-140 | ios-nearby | https://github.com/googlesamples/ios-nearby | description:Updated Oct 15, 2015
-googlesamples-github-12-141 | identity-toolkit-node | https://github.com/googlesamples/identity-toolkit-node | description:Updated Nov 4, 2015
-googlesamples-github-12-142 | android-ActionBarCompat-Styled | https://github.com/googlesamples/android-ActionBarCompat-Styled | description:Updated Jan 12, 2016
-googlesamples-github-12-143 | firebase-arduino | https://github.com/googlesamples/firebase-arduino | description:Arduino samples for Firebase.
-googlesamples-github-11-144 | identity-toolkit-php | https://github.com/googlesamples/identity-toolkit-php | description:Updated Jul 1, 2015
-googlesamples-github-11-145 | android-BasicGestureDetect | https://github.com/googlesamples/android-BasicGestureDetect | description:Updated Jan 12, 2016
-googlesamples-github-11-146 | identity-toolkit-go | https://github.com/googlesamples/identity-toolkit-go | description:Identity toolkit sample code for Go
-googlesamples-github-10-147 | android-AppRestrictionEnforcer | https://github.com/googlesamples/android-AppRestrictionEnforcer | description:Updated Jan 12, 2016
-googlesamples-github-10-148 | android-BasicAccessibility | https://github.com/googlesamples/android-BasicAccessibility | description:Updated Jan 12, 2016
-googlesamples-github-10-149 | androidtv-daydream | https://github.com/googlesamples/androidtv-daydream | description:Updated Aug 30, 2015
-googlesamples-github-10-150 | android-CustomChoiceList | https://github.com/googlesamples/android-CustomChoiceList | description:Updated Jan 12, 2016
-googlesamples-github-9-151 | android-BasicMultitouch | https://github.com/googlesamples/android-BasicMultitouch | description:Updated Jan 12, 2016
-googlesamples-github-9-152 | android-MidiScope | https://github.com/googlesamples/android-MidiScope | description:Updated Jan 12, 2016
-googlesamples-github-9-153 | android-AppRestrictionSchema | https://github.com/googlesamples/android-AppRestrictionSchema | description:Updated Jan 12, 2016
-googlesamples-github-9-154 | android-MediaRouter | https://github.com/googlesamples/android-MediaRouter | description:Updated Jan 12, 2016
-googlesamples-github-8-155 | android-DocumentCentricApps | https://github.com/googlesamples/android-DocumentCentricApps | description:Updated Jan 12, 2016
-googlesamples-github-8-156 | android-AdvancedImmersiveMode | https://github.com/googlesamples/android-AdvancedImmersiveMode | description:Updated Jan 12, 2016
-googlesamples-github-8-157 | android-AlwaysOn | https://github.com/googlesamples/android-AlwaysOn | description:Updated Jan 12, 2016
-googlesamples-github-8-158 | android-CardEmulation | https://github.com/googlesamples/android-CardEmulation | description:Updated Jan 12, 2016
-googlesamples-github-8-159 | android-BasicRenderScript | https://github.com/googlesamples/android-BasicRenderScript | description:Updated Jan 12, 2016
-googlesamples-github-8-160 | android-ActivityInstrumentation | https://github.com/googlesamples/android-ActivityInstrumentation | description:Updated Jan 12, 2016
-googlesamples-github-8-161 | identity-toolkit-ios | https://github.com/googlesamples/identity-toolkit-ios | description:Updated Aug 6, 2015
-googlesamples-github-7-162 | android-nearby-cpp | https://github.com/googlesamples/android-nearby-cpp | description:Nearby Connections sample using the Play Games C++ SDK
-googlesamples-github-6-163 | android-WeaveLedToggler | https://github.com/googlesamples/android-WeaveLedToggler | description:Demonstrates basic usage of the Weave API to toggle LEDs on a compatible device.
-googlesamples-github-6-164 | android-BasicMediaDecoder | https://github.com/googlesamples/android-BasicMediaDecoder | description:Updated Jan 12, 2016
-googlesamples-github-6-165 | android-AppRestrictions | https://github.com/googlesamples/android-AppRestrictions | description:Updated Jan 12, 2016
-googlesamples-github-6-166 | android-DataLayer | https://github.com/googlesamples/android-DataLayer | description:Updated Jan 12, 2016
-googlesamples-github-5-167 | android-WclDemoSample | https://github.com/googlesamples/android-WclDemoSample | description:Updated Nov 3, 2015
-googlesamples-github-5-168 | android-AgendaData | https://github.com/googlesamples/android-AgendaData | description:Updated Jan 12, 2016
-googlesamples-github-5-169 | android-play-all | https://github.com/googlesamples/android-play-all | description:Updated Mar 10, 2015
-googlesamples-github-5-170 | android-gcmnetworkmanager | https://github.com/googlesamples/android-gcmnetworkmanager | description:Quickstart sample for the GcmNetworkManager API
-googlesamples-github-4-171 | android-performance | https://github.com/googlesamples/android-performance | description:Updated Feb 27, 2015
-googlesamples-github-4-172 | android-BasicMediaRouter | https://github.com/googlesamples/android-BasicMediaRouter | description:Updated Jan 12, 2016
-googlesamples-github-4-173 | unity-credentials | https://github.com/googlesamples/unity-credentials | description:Unity3d Plugin for Google Smart Lock Credentials API
-googlesamples-github-3-174 | android-DelayedConfirmation | https://github.com/googlesamples/android-DelayedConfirmation | description:Updated Jan 12, 2016
-googlesamples-github-3-175 | identity-toolkit-ruby | https://github.com/googlesamples/identity-toolkit-ruby | description:Updated Aug 31, 2015
-googlesamples-github-3-176 | android-WearSpeakerSample | https://github.com/googlesamples/android-WearSpeakerSample | description:Updated Jan 12, 2016
-googlesamples-github-2-177 | android-RuntimePermissionsWear | https://github.com/googlesamples/android-RuntimePermissionsWear | description:Updated Jan 12, 2016
-googlesamples-github-2-178 | android-BasicImmersiveMode | https://github.com/googlesamples/android-BasicImmersiveMode | description:Updated Jan 12, 2016
-googlesamples-github-2-179 | android-DocumentCentricRelinquishIdentity | https://github.com/googlesamples/android-DocumentCentricRelinquishIdentity | description:Updated Jan 12, 2016
-googlesamples-github-2-180 | Weave-LedFlasher-iOS | https://github.com/googlesamples/Weave-LedFlasher-iOS | description:Updated Dec 4, 2015
-googlesamples-github-1-181 | android-fit-xamarin | https://github.com/googlesamples/android-fit-xamarin | description:Updated Aug 30, 2015
-googlesamples-github-1-182 | weave-ledflasher-web | https://github.com/googlesamples/weave-ledflasher-web | description:Weave LEDFlasher controller for the web
-googlesamples-github-1-183 | identity-toolkit-django | https://github.com/googlesamples/identity-toolkit-django | description:Updated Aug 2, 2015
-googlesamples-github-1-184 | dcp-parser-go | https://github.com/googlesamples/dcp-parser-go | description:Updated Apr 20, 2015
+googlesamples-github-5027-1 | android-UniversalMusicPlayer | https://github.com/googlesamples/android-UniversalMusicPlayer | description:This sample shows how to implement an audio media app that works across multiple form factors and provide a consistent user experience on Android phones, tablets, Auto, Wear and Cast devices
+googlesamples-github-3240-2 | android-topeka | https://github.com/googlesamples/android-topeka | description:A fun to play quiz that showcases material design on Android
+googlesamples-github-3115-3 | android-architecture | https://github.com/googlesamples/android-architecture | description:A collection of samples to discuss and showcase different architectural tools and patterns for Android apps.
+googlesamples-github-2256-4 | android-testing | https://github.com/googlesamples/android-testing | description:A collection of samples demonstrating different frameworks and techniques for automated testing
+googlesamples-github-1284-5 | android-ndk | https://github.com/googlesamples/android-ndk | description:Android NDK samples
+googlesamples-github-1246-6 | android-testing-templates | https://github.com/googlesamples/android-testing-templates | description:Updated Mar 21, 2016
+googlesamples-github-1003-7 | google-services | https://github.com/googlesamples/google-services | description:A collection of quickstart samples demonstrating the Google APIs for Android and iOS
+googlesamples-github-868-8 | cardboard-java | https://github.com/googlesamples/cardboard-java | description:Google Cardboard
+googlesamples-github-760-9 | easypermissions | https://github.com/googlesamples/easypermissions | description:Simplify Android M system permissions
+googlesamples-github-623-10 | cardboard-unity | https://github.com/googlesamples/cardboard-unity | description:Google Cardboard
+googlesamples-github-594-11 | android-vision | https://github.com/googlesamples/android-vision | description:Sample code for the Android Mobile Vision API.
+googlesamples-github-514-12 | android-play-location | https://github.com/googlesamples/android-play-location | description:Updated Jan 8, 2016
+googlesamples-github-459-13 | io2015-codelabs | https://github.com/googlesamples/io2015-codelabs | description:codelabs for Google I/O 2015
+googlesamples-github-449-14 | easygoogle | https://github.com/googlesamples/easygoogle | description:Simple wrapper library for Google APIs
+googlesamples-github-436-15 | android-RuntimePermissions | https://github.com/googlesamples/android-RuntimePermissions | description:Updated Jan 20, 2016
+googlesamples-github-396-16 | android-Camera2Basic | https://github.com/googlesamples/android-Camera2Basic | description:Updated Jan 12, 2016
+googlesamples-github-375-17 | android-FingerprintDialog | https://github.com/googlesamples/android-FingerprintDialog | description:Updated Jan 12, 2016
+googlesamples-github-297-18 | androidtv-Leanback | https://github.com/googlesamples/androidtv-Leanback | description:Android TV Leanback Support Library sample app
+googlesamples-github-243-19 | android-ScreenCapture | https://github.com/googlesamples/android-ScreenCapture | description:Updated Jan 12, 2016
+googlesamples-github-243-20 | android-XYZTouristAttractions | https://github.com/googlesamples/android-XYZTouristAttractions | description:Updated Jan 12, 2016
+googlesamples-github-215-21 | android-JobScheduler | https://github.com/googlesamples/android-JobScheduler | description:Updated Jan 12, 2016
+googlesamples-github-206-22 | android-play-places | https://github.com/googlesamples/android-play-places | description:Updated Mar 23, 2016
+googlesamples-github-203-23 | tango-examples-java | https://github.com/googlesamples/tango-examples-java | description:Example projects for Project Tango Java API
+googlesamples-github-190-24 | android-Camera2Video | https://github.com/googlesamples/android-Camera2Video | description:Updated Jan 18, 2016
+googlesamples-github-186-25 | android-play-publisher-api | https://github.com/googlesamples/android-play-publisher-api | description:Updated Aug 31, 2015
+googlesamples-github-179-26 | android-PdfRendererBasic | https://github.com/googlesamples/android-PdfRendererBasic | description:Updated Jan 12, 2016
+googlesamples-github-176-27 | io2014-codelabs | https://github.com/googlesamples/io2014-codelabs | description:Google I/O 2014 Codelabs
+googlesamples-github-174-28 | android-RecyclerView | https://github.com/googlesamples/android-RecyclerView | description:Updated Jan 12, 2016
+googlesamples-github-169-29 | android-fit | https://github.com/googlesamples/android-fit | description:Updated Mar 8, 2016
+googlesamples-github-169-30 | apps-script-oauth2 | https://github.com/googlesamples/apps-script-oauth2 | description:Updated Jan 21, 2016
+googlesamples-github-168-31 | gcm-playground | https://github.com/googlesamples/gcm-playground | description:Updated Mar 15, 2016
+googlesamples-github-163-32 | android-NavigationDrawer | https://github.com/googlesamples/android-NavigationDrawer | description:Updated Mar 24, 2016
+googlesamples-github-162-33 | android-FloatingActionButtonBasic | https://github.com/googlesamples/android-FloatingActionButtonBasic | description:Updated Jan 12, 2016
+googlesamples-github-151-34 | tango-examples-c | https://github.com/googlesamples/tango-examples-c | description:JNI example projects for Project Tango C-API
+googlesamples-github-148-35 | android-nearby | https://github.com/googlesamples/android-nearby | description:Samples for Nearby APIs on Android
+googlesamples-github-145-36 | android-SwipeRefreshMultipleViews | https://github.com/googlesamples/android-SwipeRefreshMultipleViews | description:Updated Jan 12, 2016
+googlesamples-github-144-37 | tango-examples-unity | https://github.com/googlesamples/tango-examples-unity | description:Project Tango UnitySDK Example Projects
+googlesamples-github-143-38 | android-BluetoothChat | https://github.com/googlesamples/android-BluetoothChat | description:Updated Jan 12, 2016
+googlesamples-github-142-39 | android-play-games-in-motion | https://github.com/googlesamples/android-play-games-in-motion | description:Updated Aug 30, 2015
+googlesamples-github-140-40 | android-ActivitySceneTransitionBasic | https://github.com/googlesamples/android-ActivitySceneTransitionBasic | description:Updated Jan 15, 2016
+googlesamples-github-127-41 | android-WatchFace | https://github.com/googlesamples/android-WatchFace | description:Updated Jan 12, 2016
+googlesamples-github-126-42 | android-play-billing | https://github.com/googlesamples/android-play-billing | description:Samples for Google Play In-app Billing
+googlesamples-github-116-43 | android-audio-high-performance | https://github.com/googlesamples/android-audio-high-performance | description:Code samples and documentation for building high performance audio apps on Android
+googlesamples-github-115-44 | android-BluetoothLeGatt | https://github.com/googlesamples/android-BluetoothLeGatt | description:Updated Mar 21, 2016
+googlesamples-github-109-45 | android-MultiWindowPlayground | https://github.com/googlesamples/android-MultiWindowPlayground | description:Updated Mar 9, 2016
+googlesamples-github-103-46 | android-CardView | https://github.com/googlesamples/android-CardView | description:Updated Jan 12, 2016
+googlesamples-github-98-47 | android-SlidingTabsBasic | https://github.com/googlesamples/android-SlidingTabsBasic | description:Updated Jan 12, 2016
+googlesamples-github-95-48 | android-SwipeRefreshListFragment | https://github.com/googlesamples/android-SwipeRefreshListFragment | description:Updated Jan 12, 2016
+googlesamples-github-93-49 | android-RevealEffectBasic | https://github.com/googlesamples/android-RevealEffectBasic | description:Updated Jan 12, 2016
+googlesamples-github-90-50 | android-ActiveNotifications | https://github.com/googlesamples/android-ActiveNotifications | description:Updated Apr 6, 2016
+googlesamples-github-89-51 | cardboard-ios | https://github.com/googlesamples/cardboard-ios | description:Google Cardboard http://g.co/cardboard
+googlesamples-github-87-52 | cloud-polymer-go | https://github.com/googlesamples/cloud-polymer-go | description:Sample App Engine application with Go, Cloud Endpoints, and Polymer
+googlesamples-github-82-53 | android-DisplayingBitmaps | https://github.com/googlesamples/android-DisplayingBitmaps | description:Updated Jan 12, 2016
+googlesamples-github-81-54 | androidtv-sample-inputs | https://github.com/googlesamples/androidtv-sample-inputs | description:Sample Channel App (TV Input Service) on Android TV using TIF
+googlesamples-github-80-55 | android-SlidingTabsColors | https://github.com/googlesamples/android-SlidingTabsColors | description:Updated Jan 12, 2016
+googlesamples-github-73-56 | android-Camera2Raw | https://github.com/googlesamples/android-Camera2Raw | description:Updated Jan 12, 2016
+googlesamples-github-71-57 | android-ConfirmCredential | https://github.com/googlesamples/android-ConfirmCredential | description:Updated Jan 12, 2016
+googlesamples-github-70-58 | android-BasicSyncAdapter | https://github.com/googlesamples/android-BasicSyncAdapter | description:Updated Jan 12, 2016
+googlesamples-github-70-59 | android-MediaBrowserService | https://github.com/googlesamples/android-MediaBrowserService | description:Updated Apr 6, 2016
+googlesamples-github-69-60 | android-BasicManagedProfile | https://github.com/googlesamples/android-BasicManagedProfile | description:Updated Jan 12, 2016
+googlesamples-github-68-61 | android-ActionBarCompat-ShareActionProvider | https://github.com/googlesamples/android-ActionBarCompat-ShareActionProvider | description:Updated Jan 12, 2016
+googlesamples-github-66-62 | android-ElevationDrag | https://github.com/googlesamples/android-ElevationDrag | description:Updated Jan 12, 2016
+googlesamples-github-61-63 | android-SynchronizedNotifications | https://github.com/googlesamples/android-SynchronizedNotifications | description:Updated Jan 12, 2016
+googlesamples-github-61-64 | android-custom-lint-rules | https://github.com/googlesamples/android-custom-lint-rules | description:This sample demonstrates how to create a custom lint checks and corresponding lint tests
+googlesamples-github-58-65 | android-TextLinkify | https://github.com/googlesamples/android-TextLinkify | description:Updated Jan 12, 2016
+googlesamples-github-57-66 | android-credentials | https://github.com/googlesamples/android-credentials | description:Updated Feb 24, 2016
+googlesamples-github-55-67 | android-Geofencing | https://github.com/googlesamples/android-Geofencing | description:Updated Jan 12, 2016
+googlesamples-github-55-68 | android-MediaRecorder | https://github.com/googlesamples/android-MediaRecorder | description:Updated Mar 23, 2016
+googlesamples-github-54-69 | android-TextSwitcher | https://github.com/googlesamples/android-TextSwitcher | description:Updated Jan 12, 2016
+googlesamples-github-54-70 | friendlyping | https://github.com/googlesamples/friendlyping | description:Updated Feb 24, 2016
+googlesamples-github-54-71 | android-codelab-watchface | https://github.com/googlesamples/android-codelab-watchface | description:In this codelab you'll learn how to create an analog watch face
+googlesamples-github-53-72 | android-MessagingService | https://github.com/googlesamples/android-MessagingService | description:Updated Mar 9, 2016
+googlesamples-github-53-73 | android-AutoBackupForApps | https://github.com/googlesamples/android-AutoBackupForApps | description:Updated Mar 31, 2016
+googlesamples-github-52-74 | apps-script-form-notifications-addon | https://github.com/googlesamples/apps-script-form-notifications-addon | description:Updated Sep 17, 2015
+googlesamples-github-52-75 | android-AppUsageStatistics | https://github.com/googlesamples/android-AppUsageStatistics | description:Updated Jan 12, 2016
+googlesamples-github-50-76 | android-testdpc | https://github.com/googlesamples/android-testdpc | description:Updated Mar 10, 2016
+googlesamples-github-49-77 | android-ElevationBasic | https://github.com/googlesamples/android-ElevationBasic | description:Updated Jan 12, 2016
+googlesamples-github-48-78 | android-Notifications | https://github.com/googlesamples/android-Notifications | description:Updated Jan 12, 2016
+googlesamples-github-45-79 | android-Timer | https://github.com/googlesamples/android-Timer | description:Updated Jan 12, 2016
+googlesamples-github-43-80 | android-SwipeRefreshLayoutBasic | https://github.com/googlesamples/android-SwipeRefreshLayoutBasic | description:Updated Jan 12, 2016
+googlesamples-github-43-81 | android-SpeedTracker | https://github.com/googlesamples/android-SpeedTracker | description:Updated Feb 22, 2016
+googlesamples-github-42-82 | android-NetworkConnect | https://github.com/googlesamples/android-NetworkConnect | description:Updated Jan 12, 2016
+googlesamples-github-42-83 | identity-toolkit-android | https://github.com/googlesamples/identity-toolkit-android | description:Updated Dec 3, 2015
+googlesamples-github-42-84 | android-AsymmetricFingerprintDialog | https://github.com/googlesamples/android-AsymmetricFingerprintDialog | description:Updated Jan 12, 2016
+googlesamples-github-40-85 | android-DirectShare | https://github.com/googlesamples/android-DirectShare | description:Updated Jan 12, 2016
+googlesamples-github-39-86 | android-RuntimePermissionsBasic | https://github.com/googlesamples/android-RuntimePermissionsBasic | description:Updated Jan 12, 2016
+googlesamples-github-39-87 | android-SkeletonWearableApp | https://github.com/googlesamples/android-SkeletonWearableApp | description:Updated Jan 12, 2016
+googlesamples-github-38-88 | android-DocumentCentricApps | https://github.com/googlesamples/android-DocumentCentricApps | description:Updated Jan 12, 2016
+googlesamples-github-37-89 | android-ClippingBasic | https://github.com/googlesamples/android-ClippingBasic | description:Updated Jan 12, 2016
+googlesamples-github-37-90 | android-MediaEffects | https://github.com/googlesamples/android-MediaEffects | description:Updated Jan 12, 2016
+googlesamples-github-36-91 | android-DeviceOwner | https://github.com/googlesamples/android-DeviceOwner | description:Updated Jan 12, 2016
+googlesamples-github-35-92 | apps-script-templates | https://github.com/googlesamples/apps-script-templates | description:This repository contains a number of code templates for Google Apps Script that provide example frameworks for Apps Script projects.
+googlesamples-github-34-93 | firebase-arduino | https://github.com/googlesamples/firebase-arduino | description:Arduino samples for Firebase.
+googlesamples-github-34-94 | android-HorizontalPaging | https://github.com/googlesamples/android-HorizontalPaging | description:Updated Jan 12, 2016
+googlesamples-github-34-95 | android-RepeatingAlarm | https://github.com/googlesamples/android-RepeatingAlarm | description:Updated Jan 12, 2016
+googlesamples-github-33-96 | android-CustomNotifications | https://github.com/googlesamples/android-CustomNotifications | description:Updated Jan 12, 2016
+googlesamples-github-32-97 | android-WatchViewStub | https://github.com/googlesamples/android-WatchViewStub | description:Updated Jan 12, 2016
+googlesamples-github-32-98 | android-NfcProvisioning | https://github.com/googlesamples/android-NfcProvisioning | description:Updated Jan 12, 2016
+googlesamples-github-31-99 | android-StorageProvider | https://github.com/googlesamples/android-StorageProvider | description:Updated Jan 12, 2016
+googlesamples-github-31-100 | android-Interpolator | https://github.com/googlesamples/android-Interpolator | description:Updated Jan 27, 2016
+googlesamples-github-30-101 | android-LNotifications | https://github.com/googlesamples/android-LNotifications | description:Updated Jan 12, 2016
+googlesamples-github-30-102 | android-Quiz | https://github.com/googlesamples/android-Quiz | description:Updated Jan 12, 2016
+googlesamples-github-30-103 | android-WearCompanionLibrary | https://github.com/googlesamples/android-WearCompanionLibrary | description:Updated Mar 31, 2016
+googlesamples-github-29-104 | web-fundamentals | https://github.com/googlesamples/web-fundamentals | description:Google Web Fundamentals
+googlesamples-github-28-105 | android-StorageClient | https://github.com/googlesamples/android-StorageClient | description:Updated Jan 12, 2016
+googlesamples-github-28-106 | android-DoneBar | https://github.com/googlesamples/android-DoneBar | description:Updated Jan 12, 2016
+googlesamples-github-27-107 | android-BasicNotifications | https://github.com/googlesamples/android-BasicNotifications | description:Updated Mar 17, 2016
+googlesamples-github-27-108 | android-CustomTransition | https://github.com/googlesamples/android-CustomTransition | description:Updated Jan 15, 2016
+googlesamples-github-27-109 | android-ActionBarCompat-ListPopupMenu | https://github.com/googlesamples/android-ActionBarCompat-ListPopupMenu | description:Updated Jan 12, 2016
+googlesamples-github-27-110 | android-DirectBoot | https://github.com/googlesamples/android-DirectBoot | description:Updated Mar 9, 2016
+googlesamples-github-27-111 | calendar-sync | https://github.com/googlesamples/calendar-sync | description:A set of samples that demonstrate how to utilize sync tokens and etags in the calendar API to sync resources more efficiently.
+googlesamples-github-26-112 | android-HdrViewfinder | https://github.com/googlesamples/android-HdrViewfinder | description:Updated Jan 12, 2016
+googlesamples-github-26-113 | android-GridViewPager | https://github.com/googlesamples/android-GridViewPager | description:Updated Jan 12, 2016
+googlesamples-github-25-114 | android-FindMyPhone | https://github.com/googlesamples/android-FindMyPhone | description:Updated Jan 12, 2016
+googlesamples-github-25-115 | android-BasicTransition | https://github.com/googlesamples/android-BasicTransition | description:Updated Jan 15, 2016
+googlesamples-github-25-116 | android-BluetoothAdvertisements | https://github.com/googlesamples/android-BluetoothAdvertisements | description:Updated Jan 12, 2016
+googlesamples-github-24-117 | android-ActionBarCompat-Basic | https://github.com/googlesamples/android-ActionBarCompat-Basic | description:Updated Jan 12, 2016
+googlesamples-github-23-118 | android-google-accounts | https://github.com/googlesamples/android-google-accounts | description:Updated Mar 24, 2015
+googlesamples-github-23-119 | androidtv-VisualGameController | https://github.com/googlesamples/androidtv-VisualGameController | description:Updated Aug 30, 2015
+googlesamples-github-23-120 | apps-script-dialog2sidebar | https://github.com/googlesamples/apps-script-dialog2sidebar | description:Updated Aug 11, 2015
+googlesamples-github-22-121 | apps-script-oauth1 | https://github.com/googlesamples/apps-script-oauth1 | description:Updated Jan 11, 2016
+googlesamples-github-21-122 | android-BeamLargeFiles | https://github.com/googlesamples/android-BeamLargeFiles | description:Updated Jan 12, 2016
+googlesamples-github-21-123 | androidtv-GameController | https://github.com/googlesamples/androidtv-GameController | description:Updated Aug 30, 2015
+googlesamples-github-21-124 | android-BasicAndroidKeyStore | https://github.com/googlesamples/android-BasicAndroidKeyStore | description:Updated Jan 12, 2016
+googlesamples-github-21-125 | android-BasicContactables | https://github.com/googlesamples/android-BasicContactables | description:Updated Jan 12, 2016
+googlesamples-github-20-126 | google-server-auth-android | https://github.com/googlesamples/google-server-auth-android | description:Demonstrate Google Sign-In with Server Authorization on Android
+googlesamples-github-20-127 | android-PermissionRequest | https://github.com/googlesamples/android-PermissionRequest | description:Updated Jan 12, 2016
+googlesamples-github-19-128 | android-MidiSynth | https://github.com/googlesamples/android-MidiSynth | description:Updated Jan 12, 2016
+googlesamples-github-19-129 | android-DrawableTinting | https://github.com/googlesamples/android-DrawableTinting | description:Updated Jan 12, 2016
+googlesamples-github-19-130 | android-BatchStepSensor | https://github.com/googlesamples/android-BatchStepSensor | description:Updated Jan 12, 2016
+googlesamples-github-19-131 | android-BasicNetworking | https://github.com/googlesamples/android-BasicNetworking | description:Updated Jan 12, 2016
+googlesamples-github-19-132 | android-DirectorySelection | https://github.com/googlesamples/android-DirectorySelection | description:Updated Jan 12, 2016
+googlesamples-github-19-133 | android-ads | https://github.com/googlesamples/android-ads | description:Updated Mar 14, 2016
+googlesamples-github-19-134 | ios-nearby | https://github.com/googlesamples/ios-nearby | description:Updated Mar 17, 2016
+googlesamples-github-19-135 | android-RenderScriptIntrinsic | https://github.com/googlesamples/android-RenderScriptIntrinsic | description:Updated Jan 12, 2016
+googlesamples-github-19-136 | android-BorderlessButtons | https://github.com/googlesamples/android-BorderlessButtons | description:Updated Jan 12, 2016
+googlesamples-github-18-137 | android-ScopedDirectoryAccess | https://github.com/googlesamples/android-ScopedDirectoryAccess | description:Updated Mar 9, 2016
+googlesamples-github-18-138 | android-ImmersiveMode | https://github.com/googlesamples/android-ImmersiveMode | description:Updated Jan 12, 2016
+googlesamples-github-18-139 | identity-toolkit-java | https://github.com/googlesamples/identity-toolkit-java | description:Updated Dec 21, 2015
+googlesamples-github-16-140 | android-JumpingJack | https://github.com/googlesamples/android-JumpingJack | description:Updated Jan 12, 2016
+googlesamples-github-16-141 | android-ElizaChat | https://github.com/googlesamples/android-ElizaChat | description:Updated Jan 12, 2016
+googlesamples-github-16-142 | attendee-checkin | https://github.com/googlesamples/attendee-checkin | description:Updated Aug 30, 2015
+googlesamples-github-16-143 | android-ActionBarCompat-Styled | https://github.com/googlesamples/android-ActionBarCompat-Styled | description:Updated Jan 12, 2016
+googlesamples-github-15-144 | android-CustomChoiceList | https://github.com/googlesamples/android-CustomChoiceList | description:Updated Jan 12, 2016
+googlesamples-github-15-145 | android-CardReader | https://github.com/googlesamples/android-CardReader | description:Updated Jan 12, 2016
+googlesamples-github-15-146 | android-RecipeAssistant | https://github.com/googlesamples/android-RecipeAssistant | description:Updated Jan 12, 2016
+googlesamples-github-14-147 | unity-jar-resolver | https://github.com/googlesamples/unity-jar-resolver | description:Unity plugin sample for copying play-services*.aar dependencies into a Unity project.
+googlesamples-github-14-148 | android-Flashlight | https://github.com/googlesamples/android-Flashlight | description:Updated Jan 12, 2016
+googlesamples-github-14-149 | identity-toolkit-go | https://github.com/googlesamples/identity-toolkit-go | description:Identity toolkit sample code for Go
+googlesamples-github-14-150 | identity-toolkit-python | https://github.com/googlesamples/identity-toolkit-python | description:Updated Jul 22, 2015
+googlesamples-github-14-151 | android-wear-xamarin-watchface | https://github.com/googlesamples/android-wear-xamarin-watchface | description:Shows how to create Android Wear Watchfaces with Xamarin
+googlesamples-github-13-152 | identity-toolkit-node | https://github.com/googlesamples/identity-toolkit-node | description:Updated Nov 4, 2015
+googlesamples-github-13-153 | android-WeaveLedToggler | https://github.com/googlesamples/android-WeaveLedToggler | description:Demonstrates basic usage of the Weave API to toggle LEDs on a compatible device.
+googlesamples-github-13-154 | android-BasicGestureDetect | https://github.com/googlesamples/android-BasicGestureDetect | description:Updated Jan 12, 2016
+googlesamples-github-13-155 | android-gcmnetworkmanager | https://github.com/googlesamples/android-gcmnetworkmanager | description:Quickstart sample for the GcmNetworkManager API
+googlesamples-github-12-156 | android-BasicMultitouch | https://github.com/googlesamples/android-BasicMultitouch | description:Updated Jan 12, 2016
+googlesamples-github-12-157 | android-BasicRenderScript | https://github.com/googlesamples/android-BasicRenderScript | description:Updated Jan 12, 2016
+googlesamples-github-11-158 | identity-toolkit-php | https://github.com/googlesamples/identity-toolkit-php | description:Updated Mar 5, 2016
+googlesamples-github-11-159 | identity-toolkit-ios | https://github.com/googlesamples/identity-toolkit-ios | description:Updated Aug 6, 2015
+googlesamples-github-11-160 | android-MediaRouter | https://github.com/googlesamples/android-MediaRouter | description:Updated Jan 12, 2016
+googlesamples-github-11-161 | android-MidiScope | https://github.com/googlesamples/android-MidiScope | description:Updated Jan 12, 2016
+googlesamples-github-11-162 | android-BasicAccessibility | https://github.com/googlesamples/android-BasicAccessibility | description:Updated Jan 12, 2016
+googlesamples-github-11-163 | android-ActivityInstrumentation | https://github.com/googlesamples/android-ActivityInstrumentation | description:Updated Jan 12, 2016
+googlesamples-github-10-164 | android-CardEmulation | https://github.com/googlesamples/android-CardEmulation | description:Updated Jan 12, 2016
+googlesamples-github-10-165 | android-AppRestrictionSchema | https://github.com/googlesamples/android-AppRestrictionSchema | description:Updated Jan 12, 2016
+googlesamples-github-10-166 | androidtv-daydream | https://github.com/googlesamples/androidtv-daydream | description:Updated Aug 30, 2015
+googlesamples-github-10-167 | android-AppRestrictionEnforcer | https://github.com/googlesamples/android-AppRestrictionEnforcer | description:Updated Jan 12, 2016
+googlesamples-github-10-168 | android-AdvancedImmersiveMode | https://github.com/googlesamples/android-AdvancedImmersiveMode | description:Updated Jan 12, 2016
+googlesamples-github-8-169 | android-AlwaysOn | https://github.com/googlesamples/android-AlwaysOn | description:Updated Jan 12, 2016
+googlesamples-github-7-170 | android-DataLayer | https://github.com/googlesamples/android-DataLayer | description:Updated Mar 23, 2016
+googlesamples-github-7-171 | android-BasicMediaDecoder | https://github.com/googlesamples/android-BasicMediaDecoder | description:Updated Jan 12, 2016
+googlesamples-github-7-172 | android-BasicMediaRouter | https://github.com/googlesamples/android-BasicMediaRouter | description:Updated Jan 12, 2016
+googlesamples-github-7-173 | android-AppRestrictions | https://github.com/googlesamples/android-AppRestrictions | description:Updated Jan 12, 2016
+googlesamples-github-7-174 | android-nearby-cpp | https://github.com/googlesamples/android-nearby-cpp | description:Nearby Connections sample using the Play Games C++ SDK
+googlesamples-github-6-175 | android-performance | https://github.com/googlesamples/android-performance | description:Updated Feb 27, 2015
+googlesamples-github-6-176 | android-AgendaData | https://github.com/googlesamples/android-AgendaData | description:Updated Jan 12, 2016
+googlesamples-github-6-177 | android-WearSpeakerSample | https://github.com/googlesamples/android-WearSpeakerSample | description:Updated Jan 12, 2016
+googlesamples-github-6-178 | android-WclDemoSample | https://github.com/googlesamples/android-WclDemoSample | description:Updated Nov 3, 2015
+googlesamples-github-5-179 | android-BasicImmersiveMode | https://github.com/googlesamples/android-BasicImmersiveMode | description:Updated Jan 12, 2016
+googlesamples-github-5-180 | android-play-all | https://github.com/googlesamples/android-play-all | description:Updated Mar 10, 2015
+googlesamples-github-4-181 | android-RuntimePermissionsWear | https://github.com/googlesamples/android-RuntimePermissionsWear | description:Updated Jan 12, 2016
+googlesamples-github-3-182 | Weave-LedFlasher-iOS | https://github.com/googlesamples/Weave-LedFlasher-iOS | description:Updated Dec 4, 2015
+googlesamples-github-3-183 | identity-toolkit-ruby | https://github.com/googlesamples/identity-toolkit-ruby | description:Updated Aug 31, 2015
+googlesamples-github-3-184 | unity-credentials | https://github.com/googlesamples/unity-credentials | description:Unity3d Plugin for Google Smart Lock Credentials API
+googlesamples-github-3-185 | android-DelayedConfirmation | https://github.com/googlesamples/android-DelayedConfirmation | description:Updated Jan 12, 2016
+googlesamples-github-3-186 | android-DocumentCentricRelinquishIdentity | https://github.com/googlesamples/android-DocumentCentricRelinquishIdentity | description:Updated Jan 12, 2016
+googlesamples-github-2-187 | weave-ledflasher-web | https://github.com/googlesamples/weave-ledflasher-web | description:Weave LEDFlasher controller for the web
+googlesamples-github-2-188 | brillo-dragonboard-jacksmart | https://github.com/googlesamples/brillo-dragonboard-jacksmart | description:Updated Apr 5, 2016
+googlesamples-github-2-189 | onetwoseven | https://github.com/googlesamples/onetwoseven | description:Programmers debugging web server.
+googlesamples-github-1-190 | android-fit-xamarin | https://github.com/googlesamples/android-fit-xamarin | description:Updated Aug 30, 2015
+googlesamples-github-1-191 | dcp-parser-go | https://github.com/googlesamples/dcp-parser-go | description:Updated Apr 20, 2015
+googlesamples-github-1-192 | identity-toolkit-django | https://github.com/googlesamples/identity-toolkit-django | description:Updated Aug 2, 2015
+googlesamples-github-0-193 | snippets | https://github.com/googlesamples/snippets | description:Hosting for miscellaneous code snippets
