@@ -224,14 +224,24 @@ class Utils:
         else:
             return engins.split(' ')
 
-    def getEnginListLinks(self, engins, topic):
+    def getEnginListLinks(self, engins, topic, id=''):
         if topic == '':
             return ''
         result = ''
+        keyword = topic.strip()
         for engin in engins:
-            result += ' <a href="' + self.getEnginUrlEx(engin, topic.strip()) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
+            if self.searchByID(engin):
+                keyword = id.strip()
+            else:
+                keyword = topic.strip()
+            result += ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
 
         return result
+
+    def searchByID(self, engin):
+        if engin.strip() == 'textbooksearch':
+            return True
+        return False
 
     def isEnginUrl(self, url):
         if url.find('soku.com') != -1 or url.find('google.com.hk/videohp') != -1:
