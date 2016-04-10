@@ -2,14 +2,14 @@ engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | des
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | description:paper star
 engin-4 | arxiv | http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1 | description:paper
-engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book star
+engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book
 engin-6 | bookzz | http://bookzz.org/s/?q= | description:book
 engin-7 | booksc | http://booksc.org/s/?q= | description:book
 engin-8 | booksee | http://en.booksee.org/s/?q= | description:book
 engin-9 | avxsearch | http://avxsearch.in/?q= | description:book
 engin-10 | ebookee | http://ebookee.org/search.php?sa=Search&q= | description:book
 engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | description:book
-engin-12 | amazon | https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | description:book
+engin-12 | amazon | https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | description:book star
 engin-13 | nap | http://www.nap.edu/search/?term= | description:book
 engin-14 | hathitrust | http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1= | description:book
 engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | description:book
