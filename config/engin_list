@@ -1,8 +1,8 @@
-engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | description: all
+engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | description: all star
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | description:course talk
-engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | description:paper
+engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | description:paper star
 engin-4 | arxiv | http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1 | description:paper
-engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book
+engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book star
 engin-6 | bookzz | http://bookzz.org/s/?q= | description:book
 engin-7 | booksc | http://booksc.org/s/?q= | description:book
 engin-8 | booksee | http://en.booksee.org/s/?q= | description:book
@@ -24,15 +24,15 @@ engin-23 | dblp | http://dblp.uni-trier.de/search?q= | description:paper
 engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q= | description:paper
 engin-25 | springer | http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText= | description:paper
 engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= | description:paper
-engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent
+engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent star
 engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent
 engin-29 | patents.google | https://patents.google.com/?q= | description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:all
-engin-31 | youtube | https://www.youtube.com/results?search_query= | description:course
+engin-31 | youtube | https://www.youtube.com/results?search_query= | description:course star
 engin-32 | coursera | https://www.coursera.org/courses?query= | description:course
 engin-33 | edusalsa | https://edusalsa.com/search?q= | description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | description:course
-engin-35 | videolectures | http://videolectures.net/site/search/?q= | description:talk
+engin-35 | videolectures | http://videolectures.net/site/search/?q= | description:talk star
 engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | description:people
 engin-37 | ted | http://www.ted.com/search?q= | description:talk
 engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | description:paper
@@ -48,8 +48,8 @@ engin-47 | citeulike | http://www.citeulike.org/search/all?q= | description:pape
 engin-48 | inspirehep | http://inspirehep.net/search?ln=en&ln=en&of=hb&action_search=Search&sf=earliestdate&so=d&rm=&rg=25&sc=0&p= | description:paper
 engin-49 | hindawi | http://www.hindawi.com/search/all/ | description:paper
 engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | description:tutorial
-engin-51 | github | https://github.com/search?q= | description:project
-engin-52 | stackoverflow | http://stackoverflow.com/search?q= | description:social
+engin-51 | github | https://github.com/search?q= | description:project star
+engin-52 | stackoverflow | http://stackoverflow.com/search?q= | description:social star
 engin-53 | mathoverflow | http://mathoverflow.net/search?q= | description:social
 engin-54 | wikipedia | https://wikipedia.org/wiki/ | description:wiki
 engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | description:social
