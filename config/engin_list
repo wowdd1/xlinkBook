@@ -84,3 +84,5 @@ engin-83 | loc.gov | https://www.loc.gov/books/?q= | description:book
 engin-84 | textbooksearch | http://textbooksearch.mit.edu/class/ | description:book
 engin-85 | cambridge | http://www.cambridge.org/cn/search?iFeelLucky=false&currentTheme=Academic_v1&c=MainSearchBar&query= | description:book
 engin-86 | packtpub | https://www.packtpub.com/all/?search= | description:book
+engin-87 | twitter | https://twitter.com/search?src=typd&q= | description:social
+engin-88 | weibo | http://s.weibo.com/weibo/ | description:social
