@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup;
 from utils import Utils
 
 utils = Utils()
-def searchAmazonCN(name):
+def searchAmazonCN(namei, publish, isbn):
     print 'searching ' + name
 
     r = requests.get('http://www.amazon.cn/s/?url=search-alias%3Dstripbooks&field-keywords=' + name)
@@ -38,7 +38,7 @@ def searchAmazonCN(name):
     for d in soup.find_all('div', class_='a-row a-spacing-small'):
         print d.a.text
 
-def searchAmazon(name):
+def searchAmazon(name, publisher, isbn):
     print 'searching ' + name
     user_agent = {'User-agent': 'Mozilla/5.0'}
     r = requests.get('http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=' + name, headers = user_agent)
@@ -48,6 +48,75 @@ def searchAmazon(name):
     for d in soup.find_all('div', class_='a-row a-spacing-small'):
         print d.a.text
         print ''
+
+    (publish, isbn10, isbn13) = searchISBNDB(name)
+    if (publisher != ''):
+        publish = publisher
+    if isbn != '':
+        isbn10 = isbn
+        isbn13 = isbn
+
+    searchPublish(publish, isbn10, isbn13) 
+
+def searchPublish(publish, isbn10, isbn13):
+    if publish.find('Cambridge University Press') != -1:
+        getCambridgeContents(isbn13)    
+    if publish.find('springer') != -1:
+        getSpringerContents(isbn13)
+    if publish.find('Reilly Media') != -1:
+        getOreillyContents(isbn13)
+    if publish.find('apress') != -1:
+        getApressContents(isbn13)
+
+def getApressContents(isbn):
+    url = 'http://www.apress.com/' + isbn
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    div = None
+
+    for d in soup.find_all('div', class_='tab-content'):
+        if d.h3 != None and d.h3.text.strip() == 'Table of Contents':
+            div = d
+            break
+    sp = BeautifulSoup(div.prettify())
+    for p in sp.find_all('p'):
+        print utils.removeDoubleSpace(p.text.strip()).strip()
+
+def getOreillyContents(isbn):
+    url = utils.getEnginUrlEx('oreilly', isbn)
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    div = soup.find('div', class_='book_text')
+    url =  div.a['href']
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    lis = soup.find_all('li', class_='chapter')
+    for li in lis:
+        if li.h3 != None:
+            print li.h3.text.strip()
+        sp = BeautifulSoup(li.prettify())
+        for li2 in sp.find_all('li', class_='sect1'):
+            print '    ' + li2.h4.text.strip()
+
+def getSpringerContents(isbn):
+    
+    url = 'http://www.springer.com/cn/book/' + isbn
+    r = requests.get(url)
+    print url
+    soup = BeautifulSoup(r.text)
+    for div in soup.find_all('div', class_='main'):
+        print div.p.text
+
+def getCambridgeContents(isbn):
+    url = utils.getEnginUrlEx('Cambridge', isbn)
+    r = requests.get(url)
+    soup = BeautifulSoup(r.text)
+    li = soup.find('li', id='contentsTab')
+    content = li.div.p.prettify().split('<br/>')
+    for c in content:
+        print utils.clearHtmlTag(c.strip()).strip()
+    
+     
 
 def searchISBNDB(name):
     print 'searching ' + name
@@ -75,6 +144,7 @@ def searchISBNDB(name):
     print 'publish ' + publish
     print 'isbn10 ' + isbn10
     print 'isbn13 ' + isbn13 
+    return (publish, isbn10, isbn13)
 
 def usage(argv0):
     return ''
@@ -82,8 +152,10 @@ def usage(argv0):
 def main(argv):
     keyword = ''
     lang_en = ''
+    publish = ''
+    isbn = ''
     try:
-        opts, args = getopt.getopt(argv[1:], 'hn:l:', ["help", "name", "lang"])
+        opts, args = getopt.getopt(argv[1:], 'hn:l:p:i:', ["help", "name", "lang", "publish", "isbn"])
         if len(args) == 1:
             keyword = args[0]
     except getopt.GetoptError, err:
@@ -97,12 +169,16 @@ def main(argv):
             keyword = a
         if o in ('-l', '--lang'):
             lang_en = a
+        if o in ('-p', '--publish'):
+            publish = a
+        if o in ('-i', '--isbn'):
+            isbn = a
 
     if keyword != '':
         if lang_en == 'en':
-            searchAmazon(keyword)
+            searchAmazon(keyword, publish, isbn)
         else:
-            searchAmazonCN(keyword)
+            searchAmazonCN(keyword, publish, isbn)
 
 if __name__ == '__main__':
     main(sys.argv)
