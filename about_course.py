@@ -21,7 +21,7 @@ def print_course(course_num, subject):
         if record.get_id().strip() != '':
             course_name = record.get_title()
             os.system("./list.py -i " + record.get_path() + " -c 1 -f '^" + course_num + "' -d -r 10 -b 3")
-    similarity_courses(course_name)
+    #similarity_courses(course_name)
 
 def similarity_courses(courseName):
     os.chdir("analysis/sentence2vec")
