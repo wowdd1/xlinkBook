@@ -40,14 +40,10 @@ def searchAmazonCN(namei, publish, isbn):
 
 def searchAmazon(name, publisher, isbn):
     print 'searching ' + name
-    user_agent = {'User-agent': 'Mozilla/5.0'}
-    r = requests.get('http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=' + name, headers = user_agent)
-    soup = BeautifulSoup(r.text)
-    div = soup.find('div', class_='a-row a-spacing-small')
-    print ' '
-    for d in soup.find_all('div', class_='a-row a-spacing-small'):
-        print d.a.text
-        print ''
+
+    for book in getAmazonBookList(name):
+        print book
+
 
     (publish, isbn10, isbn13) = searchISBNDB(name)
     if (publisher != ''):
@@ -57,6 +53,17 @@ def searchAmazon(name, publisher, isbn):
         isbn13 = isbn
 
     searchPublish(publish, isbn10, isbn13) 
+
+def getAmazonBookList(name):
+    user_agent = {'User-agent': 'Mozilla/5.0'}
+    r = requests.get('http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=' + name, headers = user_agent)
+    soup = BeautifulSoup(r.text)
+    div = soup.find('div', class_='a-row a-spacing-small')
+    books = []
+    for d in soup.find_all('div', class_='a-row a-spacing-small'):
+        books.append(d.a.text.strip())
+    return books
+
 
 def searchPublish(publish, isbn10, isbn13):
     if publish.find('Cambridge University Press') != -1:

@@ -227,14 +227,14 @@ class Utils:
     def getEnginListLinks(self, engins, topic, id=''):
         if topic == '':
             return ''
-        result = ''
+        result = {}
         keyword = topic.strip()
         for engin in engins:
             if self.searchByID(engin):
                 keyword = id.strip()
             else:
                 keyword = topic.strip()
-            result += ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
+            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
 
         return result
 
