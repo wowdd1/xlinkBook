@@ -8,6 +8,8 @@ import getopt
 import time
 import re
 import os,sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 from record import Record, Tag
 from utils import Utils
 import copy
@@ -523,10 +525,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_color == True:
                     print_with_color(content)
                 else:
-                    try:
-                        print content
-                    except:
-                        temp = 1
+                    print content
                 if output_with_describe == True: 
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
@@ -578,10 +577,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_color == True:
                     print_with_color(content)
                 else:
-                    try:
-                       print content
-                    except:
-                        temp = 1
+                    print content
                 if output_with_describe == True:    
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
@@ -618,10 +614,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_color == True:
                     print_with_color(content)
                 else:
-                    try:
-                        print content
-                    except:
-                        temp = 1
+                    print content
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
