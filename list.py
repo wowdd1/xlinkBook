@@ -29,6 +29,7 @@ output_with_describe = False
 merger_result = False
 top_row = 0
 old_top_row = 0
+max_links_row = 10
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -88,10 +89,10 @@ def border_style_four():
     vertical = '|'
     html_style = True
 
-def border_style_five():
+def border_style_five(row = 1):
     border_style_four()
     global custom_cell_row, output_with_describe
-    custom_cell_row = 1
+    custom_cell_row = row
     output_with_describe = True
 
 def border_style_custom(style):
@@ -262,7 +263,13 @@ def build_lines(list_all):
     if engin != '':
         engin_list = utils.getEnginList(engin.strip())
     if len(engin_list) > 3:
-        border_style_five()
+        row = len(engin_list) / max_links_row
+        if len(engin_list) % max_links_row > 0:
+            row += 1
+        if row == 0:
+            row = 1
+        
+        border_style_five(row)
 
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
@@ -314,7 +321,8 @@ def build_lines(list_all):
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     else:
                         if engin != '':
-                            describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list))
+                            engin_list_dive = engin_list[l * max_links_row : (l+1) * max_links_row]
+                            describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
                             for (k, v) in engin_list_dict.items():
                                 describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
                         else:
