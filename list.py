@@ -82,13 +82,17 @@ def border_style_three():
     vertical = '.'
 
 def border_style_four():
-    global plus, subtraction, vertical, html_style, custom_cell_row, output_with_describe
+    global plus, subtraction, vertical, html_style
     plus = '+'
     subtraction = '-'
     vertical = '|'
     html_style = True
-    #custom_cell_row = 1
-    #output_with_describe = True
+
+def border_style_five():
+    border_style_four()
+    global custom_cell_row, output_with_describe
+    custom_cell_row = 1
+    output_with_describe = True
 
 def border_style_custom(style):
     global plus, subtraction, vertical
@@ -105,6 +109,8 @@ def chanage_border(style):
         border_style_three()
     elif style == '4': #html style
         border_style_four()
+    elif style == '5': #html style
+        border_style_five()
     else:
         border_style_custom(style)
 
@@ -252,6 +258,12 @@ def next_pos(text, start):
 def build_lines(list_all):
     id_title_lines = copy.deepcopy(list_all)
     describe_lines = []
+    engin_list = []
+    if engin != '':
+        engin_list = utils.getEnginList(engin.strip())
+    if len(engin_list) > 3:
+        border_style_five()
+
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
     for i in range(0, len(list_all)):
@@ -264,6 +276,7 @@ def build_lines(list_all):
                 describe_lines[l][i].append(align_describe(""))
 
         for j in range(0, len(list_all[i])):
+            engin_list_dict = {}
             if html_style == False or (list_all[i][j].get_url().strip() == '' and engin == ''):
                 id_title_lines[i][j] = align_id_title(list_all[i][j])
             else:
@@ -280,12 +293,13 @@ def build_lines(list_all):
                 #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title
                 
                 if engin != '':
-                    engin_list = utils.getEnginList(engin.strip())
                     if url.strip() != '':
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
                     else:
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
-                    id_title_lines[i][j] += utils.getEnginListLinks(engin_list, title.strip(), id)
+                    engin_list_dict = utils.getEnginListLinks(engin_list, title.strip(), id)
+                    #for (k, v) in engin_list_dict.items():
+                    #    id_title_lines[i][j] += v
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
@@ -296,8 +310,20 @@ def build_lines(list_all):
                         describe_lines[l][i][j] = align_describe("")
                         continue
                     end = next_pos(list_all[i][j].get_describe(), start) 
-                    describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
+                    if html_style == False:
+                        describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
+                    else:
+                        if engin != '':
+                            describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list))
+                            for (k, v) in engin_list_dict.items():
+                                describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
+                        else:
+                            describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
+            elif engin != '' and html_style:
+                for (k, v) in engin_list_dict.items():
+                    id_title_lines[i][j] += v
+            
 
     return id_title_lines, describe_lines
 

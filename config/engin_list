@@ -24,8 +24,8 @@ engin-23 | dblp | http://dblp.uni-trier.de/search?q= | description:paper
 engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q= | description:paper
 engin-25 | springer | http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText= | description:paper
 engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= | description:paper
-engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent star
-engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent
+engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent
+engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent star
 engin-29 | patents.google | https://patents.google.com/?q= | description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:all
 engin-31 | youtube | https://www.youtube.com/results?search_query= | description:course star
@@ -51,7 +51,7 @@ engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | descripti
 engin-51 | github | https://github.com/search?q= | description:project star
 engin-52 | stackoverflow | http://stackoverflow.com/search?q= | description:social star
 engin-53 | mathoverflow | http://mathoverflow.net/search?q= | description:social
-engin-54 | wikipedia | https://wikipedia.org/wiki/ | description:wiki
+engin-54 | wiki | https://wikipedia.org/wiki/ | description:wiki star
 engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | description:social
 engin-56 | csdn | http://so.csdn.net/so/search/s.do?ref=toolbar&q= | description:social
 engin-57 | awesome | https://github.com/search?q=awesome  | description:project
@@ -84,7 +84,7 @@ engin-83 | loc.gov | https://www.loc.gov/books/?q= | description:book
 engin-84 | textbooksearch | http://textbooksearch.mit.edu/class/ | description:book
 engin-85 | cambridge | http://www.cambridge.org/cn/search?iFeelLucky=false&currentTheme=Academic_v1&c=MainSearchBar&query= | description:book
 engin-86 | packtpub | https://www.packtpub.com/all/?search= | description:book
-engin-87 | twitter | https://twitter.com/search?src=typd&q= | description:social
+engin-87 | twitter | https://twitter.com/search?src=typd&q= | description:social star
 engin-88 | weibo | http://s.weibo.com/weibo/ | description:social
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | description:social
