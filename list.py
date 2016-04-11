@@ -82,11 +82,13 @@ def border_style_three():
     vertical = '.'
 
 def border_style_four():
-    global plus, subtraction, vertical, html_style
+    global plus, subtraction, vertical, html_style, custom_cell_row, output_with_describe
     plus = '+'
     subtraction = '-'
     vertical = '|'
     html_style = True
+    #custom_cell_row = 1
+    #output_with_describe = True
 
 def border_style_custom(style):
     global plus, subtraction, vertical
@@ -595,7 +597,10 @@ def print_list(all_lines, file_name = ''):
                     print content
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
-                        print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
+                        if html_style == True:
+                            print gen_html_body(get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical)
+                        else:
+                            print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
 
             if html_style == False:
                 print_table_separator(2)
