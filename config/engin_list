@@ -89,3 +89,4 @@ engin-88 | weibo | http://s.weibo.com/weibo/ | description:social
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | description:social
 engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | description:paper
+engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | description:social
