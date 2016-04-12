@@ -796,7 +796,10 @@ def main(argv):
         print_dir(source)
     elif source.find('#') != -1:
         split = source.split('#')
-        print_list(get_lines_from_dir('db/' + split[0], split[1]))
+        dirName = split[0]
+        if dirName.startswith('db') == False:
+            dirName = 'db/' + dirName
+        print_list(get_lines_from_dir(dirName, split[1]))
 
 if __name__ == '__main__':
     main(sys.argv)
