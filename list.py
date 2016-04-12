@@ -681,13 +681,15 @@ def print_list(all_lines, file_name = ''):
             
 current_level = 1
 level = 100
-def get_lines_from_dir(dir_name):
+def get_lines_from_dir(dir_name, fileNameFilter = ''):
     global current_level
     current_level += 1
     cur_list = os.listdir(dir_name)
     all_lines = []
     for item in cur_list:
         if item.startswith("."):
+            continue
+        if fileNameFilter != '' and item.find(fileNameFilter) == -1:
             continue
 
         full_path = os.path.join(dir_name, item)
@@ -790,13 +792,15 @@ def main(argv):
     if source.lower().find(".pdf") != -1:
         os.system("open " + source)
         return
-
     if os.path.isfile(source):
         print_list(getLines(source), source)
     elif merger_result and os.path.isdir(source):
         print_list(get_lines_from_dir(source))
     elif os.path.isdir(source):
         print_dir(source)
+    elif merger_result and source.find('#') != -1:
+        split = source.split('#')
+        print_list(get_lines_from_dir(split[0], split[1]))
 
 if __name__ == '__main__':
     main(sys.argv)
