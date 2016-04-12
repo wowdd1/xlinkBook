@@ -37,7 +37,7 @@ engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= 
 engin-37 | ted | http://www.ted.com/search?q= | description:talk
 engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | description:paper
 engin-39 | frontiersin | http://www.frontiersin.org/SearchData.aspx?sq= | description:paper
-engin-40 | plos | https://www.plos.org/?submit=Go&s= | description:paper
+engin-40 | plos.org | https://www.plos.org/?submit=Go&s= | description:paper
 engin-41 | plosone | http://www.plosone.org/search/simple?from=globalSimpleSearch&filterJournals=PLoSONE&query= | description:paper
 engin-42 | scirp | http://www.scirp.org/journal/Articles.aspx?searchField=All&page=1&searchCode= | description:paper
 engin-43 | oalib | http://www.oalib.com/search;jsessionid=0C979878FC00CECAA48E851318C327DB.tomcat1?kw= | description:paper
