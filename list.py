@@ -290,23 +290,19 @@ def build_lines(list_all):
                 id_title = align_id_title(list_all[i][j])
                 url = list_all[i][j].get_url()
                 title = id_title[id_title.find('|') + 1 : ]
+                if html_style and title.find('(') != -1 and title.strip().startswith('(') == False:
+                    title = title[0 : title.find('(')].strip()
                 id = id_title[0 : id_title.find('|')].strip()
                 
-                #if engin != '' and engin.strip().find(' ') == -1:
-                #    url = utils.getEnginUrlEx(engin, title.strip()) 
                 if url.strip() != '':
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
-                #else:
-                #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title
                 
+                if url.strip() != '':
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
+                else:
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
                 if engin != '':
-                    if url.strip() != '':
-                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
-                    else:
-                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
                     engin_list_dict = utils.getEnginListLinks(engin_list, title.strip(), id)
-                    #for (k, v) in engin_list_dict.items():
-                    #    id_title_lines[i][j] += v
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
@@ -320,7 +316,7 @@ def build_lines(list_all):
                     if html_style == False:
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     else:
-                        if engin != '':
+                        if engin != '' and engin_list_dict != '':
                             engin_list_dive = engin_list[l * max_links_row : (l+1) * max_links_row]
                             describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
                             for (k, v) in engin_list_dict.items():
@@ -328,7 +324,7 @@ def build_lines(list_all):
                         else:
                             describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
-            elif engin != '' and html_style:
+            elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
             
@@ -798,7 +794,7 @@ def main(argv):
         print_list(get_lines_from_dir(source))
     elif os.path.isdir(source):
         print_dir(source)
-    elif merger_result and source.find('#') != -1:
+    elif source.find('#') != -1:
         split = source.split('#')
         print_list(get_lines_from_dir('db/' + split[0], split[1]))
 
