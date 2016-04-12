@@ -800,7 +800,7 @@ def main(argv):
         print_dir(source)
     elif merger_result and source.find('#') != -1:
         split = source.split('#')
-        print_list(get_lines_from_dir(split[0], split[1]))
+        print_list(get_lines_from_dir('db/' + split[0], split[1]))
 
 if __name__ == '__main__':
     main(sys.argv)
