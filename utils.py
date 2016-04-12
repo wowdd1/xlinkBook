@@ -211,7 +211,7 @@ class Utils:
 
         return url
     def getEnginList(self, engins):
-        if engins.startswith('description:'):
+        if engins.startswith('description:') or engins.startswith('d:'):
             engin_list = []
             tags = engins[engins.find(':') + 1 :].strip().split(' ')
             for record in self.search_engin_dict.values():
