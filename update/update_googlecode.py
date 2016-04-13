@@ -8,10 +8,6 @@ from spider import *
 
 class GoogleCodeSpider(Spider):
     use_proxy = False
-    proxies = {
-        "http": "http://127.0.0.1:8087",
-        "https": "http://127.0.0.1:8087",
-    }
     base_url = "https://code.google.com/hosting/"
     def __init__(self):
         Spider.__init__(self)
@@ -19,7 +15,7 @@ class GoogleCodeSpider(Spider):
 
     def requestData(self, url):
         if self.use_proxy == True:
-            return requests.get(url, proxies=self.proxies, verify=False)
+            return self.requestWithProxy(url)
         else:
             return requests.get(url)
 
