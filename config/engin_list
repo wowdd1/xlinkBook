@@ -25,7 +25,7 @@ engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424
 engin-25 | springer | http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText= | description:paper
 engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= | description:paper
 engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent
-engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent star
+engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent
 engin-29 | patents.google | https://patents.google.com/?q= | description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:all
 engin-31 | youtube | https://www.youtube.com/results?search_query= | description:course star
@@ -90,3 +90,4 @@ engin-89 | t.qq | http://search.t.qq.com/index.php?k= | description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | description:social
 engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | description:paper
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | description:social
+engin-93 | crunchbase | https://www.crunchbase.com/$/ | description:organization people product event star

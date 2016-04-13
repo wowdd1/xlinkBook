@@ -200,7 +200,7 @@ class Utils:
                 return item
         return ''
 
-    def getEnginUrlEx(self, engin, keyword):
+    def getEnginUrlEx(self, engin, keyword, query=''):
         url = ''
         if engin != '':
             url = self.getEnginUrl(engin) + keyword
@@ -208,6 +208,12 @@ class Utils:
             url = url.replace("$", keyword)
         if engin == "doaj":
             url = url.replace('$', keyword)
+        if engin == "crunchbase" and query.find(':') != -1:
+            url = self.getEnginUrl(engin) + keyword.strip().replace(' ', '-')
+            query = query[query.find(':') + 1 :].strip()
+            if query == 'star':
+                query = 'organization'
+            url = url.replace('$', query)
 
         return url
     def getEnginList(self, engins):
@@ -224,7 +230,7 @@ class Utils:
         else:
             return engins.split(' ')
 
-    def getEnginListLinks(self, engins, topic, id=''):
+    def getEnginListLinks(self, engins, topic, id='', query = ''):
         if topic == '':
             return ''
         result = {}
@@ -234,7 +240,7 @@ class Utils:
                 keyword = id.strip()
             else:
                 keyword = topic.strip()
-            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
+            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
 
         return result
 
