@@ -29,7 +29,7 @@ output_with_describe = False
 merger_result = False
 top_row = 0
 old_top_row = 0
-max_links_row = 10
+max_links_row = 11
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
