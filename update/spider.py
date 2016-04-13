@@ -29,6 +29,12 @@ class Spider:
     count = None
     deep_mind = None
 
+
+    proxies = {
+        "http": "http://127.0.0.1:8087",
+        "https": "http://127.0.0.1:8087",
+    }
+
     def __init__(self):
         self.google = "https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q="
         self.baidu = "http://www.baidu.com/s?word="
@@ -45,6 +51,9 @@ class Spider:
     def doWork(self):
         return
       
+    def requestWithProxy(self, url):
+        return requests.get(url, proxies=self.proxies, verify=False)
+
     def format_subject(self, subject):
         match_list = []
         for (k, v) in subject_dict.items():
