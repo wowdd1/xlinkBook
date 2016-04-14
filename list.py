@@ -291,7 +291,7 @@ def build_lines(list_all):
             row = 1
         
         border_style_five(row)
-
+    title = ''
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
     for i in range(0, len(list_all)):
@@ -364,8 +364,8 @@ def build_lines(list_all):
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
                 count = 0
-                for (k, v) in engin_list_dict.items():
-                    id_title_lines[i][j] += v
+                for e in engin_list:
+                    id_title_lines[i][j] += utils.getEnginHtmlLink(e, title)
                     count += 1
                     if count == 3:
                         break

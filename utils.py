@@ -216,6 +216,10 @@ class Utils:
             url = url.replace('$', query)
 
         return url
+    
+    def getEnginHtmlLink(self, engin, keyword):
+        return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
+
     def getEnginList(self, engins):
         if engins.startswith('description:') or engins.startswith('d:'):
             engin_list = []
@@ -225,7 +229,11 @@ class Utils:
                 desc = desc[desc.find(':') + 1 :].strip()
                 for tag in tags:
                     if desc.find(tag) != -1:
-                        engin_list.append(record.get_title().strip())
+                        engin = record.get_title().strip()
+                        if engin == 'google' or engin == 'scholar' or engin == 'youtube':
+                            engin_list.insert(0, engin)
+                        else:
+                            engin_list.append(record.get_title().strip())
             return engin_list
         else:
             return engins.split(' ')
