@@ -330,24 +330,38 @@ def build_lines(list_all):
             end = 0
             if output_with_describe == True:
                 lij = ''
-                for l in range(0, len(describe_lines)):
-                    if end >= describe:
-                        describe_lines[l][i][j] = align_describe("")
-                        continue
-                    end = next_pos(list_all[i][j].get_describe(), start) 
-                    if html_style == False:
-                        describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
-                    else:
+                script = ''
+                lines = len(describe_lines)
+                linkID = ''
+                for l in range(0, lines):
+
+		    if html_style:
                         if engin != '' and engin_list_dict != '':
-                            engin_list_dive = engin_list[l * max_links_row : (l+1) * max_links_row]
+                            engin_list_dive = []
+                            if (l+1) * max_links_row < len(engin_list):
+                                engin_list_dive = engin_list[l * max_links_row : (l+1) * max_links_row]
+                            else:
+                                engin_list_dive = engin_list[l * max_links_row :]
                             describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
-                            lij = str(l) + str(i) + str(j) 
+                            lij = str(l) + str(i) + str(j)
                             describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
                                                       '<div id=' + lij + ' style="display: none;" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
                             for (k, v) in engin_list_dict.items():
                                 describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
-                        else:
-                            describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
+                            if l == 0:
+                                linkID = 'a' + lij;
+                                script += "setText('" + linkID +"');"
+                            script += "showdiv('" + str(l) + lij[1:]+ "', '" + linkID +"');"
+                            script += "showdiv('row-" + str(j) + '-' + str(l)+ "', '" + linkID +"');"
+
+
+                    if end >= describe:
+                        if html_style == False:
+                            describe_lines[l][i][j] = align_describe("")
+                        continue
+                    end = next_pos(list_all[i][j].get_describe(), start) 
+                    if html_style == False:
+                        describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
                 count = 0
                 for (k, v) in engin_list_dict.items():
@@ -355,13 +369,8 @@ def build_lines(list_all):
                     count += 1
                     if count == 3:
                         break
-                script = ''
-                for l in range(0, int(lij[0 : 1]) + 1):
-                    if l == 0:
-                        script += "setText('" + 'a' + lij +"');"   
-                    script += "showdiv('" + str(l) + lij[1:]+ "', '" + 'a' + lij +"');"
-                    script += "showdiv('row-" + str(j) + '-' + str(l)+ "', '" + 'a' + lij +"');"   
-                id_title_lines[i][j] += utils.genMoreLink('a' + lij, script);
+                if script != '':
+                    id_title_lines[i][j] += utils.genMoreLink(linkID, script);
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
