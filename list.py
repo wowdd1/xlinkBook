@@ -639,7 +639,7 @@ def print_list(all_lines, file_name = ''):
                         for l in range(0, len(describe_lines)):
                             if len(id_title_lines[0]) == len(id_title_lines[1]):
                                 if html_style == True:
-                                    print gen_html_body_v2(get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + verticali, last, l)
+                                    print gen_html_body_v2(get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical, last, l)
                                 else:
                                     print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical
                             else:
