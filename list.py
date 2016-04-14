@@ -45,6 +45,23 @@ html_style = False
 
 engin = ''
 
+script = '<script language="JavaScript" type="text/JavaScript">\
+function showdiv(targetid,objN){\
+      var i = "test";\
+      console.log("text",i);\
+      var target=document.getElementById(targetid);\
+      var clicktext=document.getElementById(objN);\
+            if (target.style.display=="block"){\
+                target.style.display="none";\
+                clicktext.innerText="...";\
+            } else {\
+                target.style.display="block";\
+                clicktext.innerText="less";\
+            }\
+            clicktext.style.color="#999966";\
+}\
+</script>'
+
 def usage():
     print 'usage:'
     print '\t-h,--help: print help message.'
@@ -308,6 +325,7 @@ def build_lines(list_all):
             start = 0
             end = 0
             if output_with_describe == True:
+                lij = ''
                 for l in range(0, len(describe_lines)):
                     if end >= describe:
                         describe_lines[l][i][j] = align_describe("")
@@ -319,11 +337,22 @@ def build_lines(list_all):
                         if engin != '' and engin_list_dict != '':
                             engin_list_dive = engin_list[l * max_links_row : (l+1) * max_links_row]
                             describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
+                            lij = str(l) + str(i) + str(j) 
+                            describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
+                                                      '<div id=' + lij + ' style="display: none;" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
                             for (k, v) in engin_list_dict.items():
                                 describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
                         else:
                             describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
+                count = 0
+                for (k, v) in engin_list_dict.items():
+                    id_title_lines[i][j] += v
+                    count += 1
+                    if count == 3:
+                        break
+                    
+                id_title_lines[i][j] += utils.genMoreLink('a' + lij, "showdiv('" + lij+ "', '" + 'a' + lij +"')");
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
@@ -335,11 +364,7 @@ def build_lines(list_all):
 def get_line(lines, start, end, j):
     result = vertical
     for i in range(start, end):
-        #if output_with_color == True:
         result += color_keyword(lines[i][j]) + vertical
-        #else:
-        #    result += lines[i][j] + vertical
-
 
     return result
 
@@ -549,6 +574,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(3)
             else:
+                print '<head>' + script + '</head>'
                 print '<table>'
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
@@ -601,6 +627,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(2)
             else:
+                print '<head>' + script + '</head>'
                 print '<table>'
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
@@ -640,6 +667,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(1)
             else:
+                print '<head>' + script + '</head>'
                 print '<table>'
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
