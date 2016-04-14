@@ -16,7 +16,7 @@ engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | desc
 engin-16 | wowebook | http://www.wowebook.co/?s= | description:book
 engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | description:paper
 engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | description:paper
-engin-19 | baidu | http://www.baidu.com/s?word= | description:all
+engin-19 | baidu | http://www.baidu.com/s?word= | description:all star
 engin-20 | bing | http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq= | description:all
 engin-21 | academic | http://academic.research.microsoft.com/Search?query= | description:paper
 engin-22 | xueshu | http://xueshu.baidu.com/s?wd= | description:paper
