@@ -64,6 +64,13 @@ function showdiv(targetid,objN){\
                 target.style.display="none";\
             }\
 }\
+function search(inputid,optionid){\
+    var input = document.getElementById(inputid);\
+    var select = document.getElementById(optionid);\
+    console.log("xx",input.value);\
+    console.log("",select.value);\
+    window.open(select.value + input.value);\
+}\
 </script>'
 
 def usage():
@@ -276,6 +283,17 @@ def next_pos(text, start):
         return start + len(text) - start
     else:
         return start + course_name_len
+
+def genEnginOption(selectid):
+
+    option = ''
+    if engin != '':
+        engin_list = utils.getEnginList(engin.strip())
+        option = '<select id="' + selectid +'">'
+        for e in engin_list:
+            option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
+        option += '</select>'
+    return option
 
 def build_lines(list_all):
     id_title_lines = copy.deepcopy(list_all)
@@ -741,6 +759,15 @@ def print_list(all_lines, file_name = ''):
                 message += "\n\n"
             print message
             
+        if html_style:
+            print '<br/>'
+            print '<br/>'
+            print '<br/>'
+            onclick = "search('search_txt', 'select');"
+            print '<input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">' + genEnginOption("select") +\
+                  '<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>'
+            for i in range(0, 5):
+                print '<br/>'
 current_level = 1
 level = 100
 def get_lines_from_dir(dir_name, fileNameFilter = ''):

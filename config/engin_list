@@ -54,12 +54,14 @@ engin-53 | mathoverflow | http://mathoverflow.net/search?q= | description:social
 engin-54 | wiki | https://wikipedia.org/wiki/ | description:wiki star
 engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | description:social
 engin-56 | csdn | http://so.csdn.net/so/search/s.do?ref=toolbar&q= | description:social
-engin-57 | awesome | https://github.com/search?q=awesome  | description:project
 engin-58 | googlecode | https://code.google.com/hosting/search?q= | description:project
 engin-59 | codeplex | https://www.codeplex.com/site/search?query= | description:project
 engin-60 | sourceforge | http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q= | description:project
 engin-61 | coursetalk | http://www.coursetalk.com/search?q= | description:course
 engin-62 | mooc-list | https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q= | description:course
+engin-63 | nctu | http://ocw.nctu.edu.tw/course_list_search.php?key= | description:course
+engin-64 | class-central | https://www.class-central.com/search?q= | description:course
+engin-65 | guokr | http://mooc.guokr.com/search/course/?wd= | description:course
 engin-63 | nctu | http://ocw.nctu.edu.tw/course_list_search.php?key= | description:course
 engin-64 | class-central | https://www.class-central.com/search?q= | description:course
 engin-65 | guokr | http://mooc.guokr.com/search/course/?wd= | description:course
@@ -88,7 +90,7 @@ engin-87 | twitter | https://twitter.com/search?src=typd&q= | description:social
 engin-88 | weibo | http://s.weibo.com/weibo/ | description:social
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | description:social
-engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | description:paper
+engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | description:paper star
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | description:social
 engin-93 | crunchbase | https://www.crunchbase.com/$/ | description:organization people product event star
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | description:organization
