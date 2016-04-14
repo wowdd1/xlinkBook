@@ -29,7 +29,7 @@ output_with_describe = False
 merger_result = False
 top_row = 0
 old_top_row = 0
-max_links_row = 11
+max_links_row = 10
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -351,8 +351,10 @@ def build_lines(list_all):
                     count += 1
                     if count == 3:
                         break
-                    
-                id_title_lines[i][j] += utils.genMoreLink('a' + lij, "showdiv('" + lij+ "', '" + 'a' + lij +"')");
+                script = ''
+                for l in range(0, int(lij[0 : 1]) + 1):
+                    script += "showdiv('" + str(l) + lij[1:]+ "', '" + 'a' + lij +"');"   
+                id_title_lines[i][j] += utils.genMoreLink('a' + lij, script);
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
