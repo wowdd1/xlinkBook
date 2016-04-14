@@ -244,6 +244,10 @@ class Utils:
 
         return result
 
+    def genMoreLink(self, aid, script):
+        #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
+        return ' <font size="2" color="#999966"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">...</font></a></font>'
+
     def searchByID(self, engin):
         if engin.strip() == 'textbooksearch':
             return True
