@@ -96,3 +96,4 @@ engin-95 | douban | https://www.douban.com/search?q= | description:organization 
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | description:book
 engin-97 | w.indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | description:job
 engin-98 | cn.indeed | http://cn.indeed.com/%E5%B7%A5%E4%BD%9C?l=%E6%B7%B1%E5%9C%B3%E5%B8%82&rq=1&fromage=last&q= | description:job
+engin-99 | 51cto | http://www.51cto.com/php/search.php?t=news&ie=utf-8&q= | description:social
