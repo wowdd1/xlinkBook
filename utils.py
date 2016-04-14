@@ -188,8 +188,8 @@ class Utils:
     def getEnginUrl(self, engin):
         for record in self.search_engin_dict.values():
             item = record.get_url().strip()
-            if item.lower().find(engin.lower()) != -1:
-                return item
+            if engin == 'google':
+                return 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q='
             if engin == 'googlevideo' and item.lower().find('google.com.hk/videohp') != -1:
                 return item
             if engin == 'youku' and item.lower().find('soku.com/search') != -1:
@@ -197,6 +197,8 @@ class Utils:
             if engin == 'tudou' and item.lower().find('soku.com/t') != -1:
                 return item
             if engin == 'mooc-list' and item.lower().find('google.com/cse') != -1:
+                return item
+            if item.lower().find(engin.lower()) != -1:
                 return item
         return ''
 
