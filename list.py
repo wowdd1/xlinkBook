@@ -439,6 +439,15 @@ def gen_html_body_v2(content, row, subRow):
 
     return content
 
+def print_search_box():
+    if html_style:
+        print '<br/>'
+        onclick = "search('search_txt', 'select');"
+        print '<div style="width:778px;margin:auto;"><input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
+              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button></div>'
+        for i in range(0, 1):
+            print '<br/>'
+
 
 def get_space_cell(num, column_num):
     result = ""
@@ -624,7 +633,7 @@ def print_list(all_lines, file_name = ''):
                 list_all[0].pop()
         #print list_all
         id_title_lines, describe_lines = build_lines(list_all)
-
+        print_search_box()
         #print id_title_lines
         if column_num == "3":
             if html_style == False:
@@ -759,15 +768,6 @@ def print_list(all_lines, file_name = ''):
                 message += "\n\n"
             print message
             
-        if html_style:
-            print '<br/>'
-            print '<br/>'
-            print '<br/>'
-            onclick = "search('search_txt', 'select');"
-            print '<input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">' + genEnginOption("select") +\
-                  '<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>'
-            for i in range(0, 5):
-                print '<br/>'
 current_level = 1
 level = 100
 def get_lines_from_dir(dir_name, fileNameFilter = ''):
