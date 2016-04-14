@@ -46,19 +46,23 @@ html_style = False
 engin = ''
 
 script = '<script language="JavaScript" type="text/JavaScript">\
+function setText(objN){\
+    var clicktext=document.getElementById(objN);\
+    if (clicktext.innerText == "..."){\
+        clicktext.innerText="less";\
+    } else {\
+	clicktext.innerText="...";\
+    }\
+    clicktext.style.color="#999966";\
+}\
 function showdiv(targetid,objN){\
-      var i = "test";\
-      console.log("text",i);\
       var target=document.getElementById(targetid);\
       var clicktext=document.getElementById(objN);\
-            if (target.style.display=="block"){\
-                target.style.display="none";\
-                clicktext.innerText="...";\
+            if (clicktext.innerText=="less"){\
+                target.style.display="";\
             } else {\
-                target.style.display="block";\
-                clicktext.innerText="less";\
+                target.style.display="none";\
             }\
-            clicktext.style.color="#999966";\
 }\
 </script>'
 
@@ -353,7 +357,10 @@ def build_lines(list_all):
                         break
                 script = ''
                 for l in range(0, int(lij[0 : 1]) + 1):
-                    script += "showdiv('" + str(l) + lij[1:]+ "', '" + 'a' + lij +"');"   
+                    if l == 0:
+                        script += "setText('" + 'a' + lij +"');"   
+                    script += "showdiv('" + str(l) + lij[1:]+ "', '" + 'a' + lij +"');"
+                    script += "showdiv('row-" + str(j) + '-' + str(l)+ "', '" + 'a' + lij +"');"   
                 id_title_lines[i][j] += utils.genMoreLink('a' + lij, script);
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
@@ -386,6 +393,26 @@ def gen_html_body(content):
             index = index + 1
 
     return content
+
+
+def gen_html_body_v2(content, row, subRow):
+    index = 0
+    if vertical == '|':
+        verticals = []
+        if column_num == "2":
+            verticals = ['<tr id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
+        elif column_num == "3":
+            verticals = ['<tr id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
+        elif column_num == "1":
+            verticals = ['<tr id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td></tr>']
+
+        while content.find(vertical) != -1:
+            content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
+            index = index + 1
+
+    return content
+
+
 def get_space_cell(num, column_num):
     result = ""
     start = column_num - num
@@ -589,7 +616,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True: 
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body(get_line(describe_lines[l], 0, 3, i))
+                            print gen_html_body_v2(get_line(describe_lines[l], 0, 3, i), i, l)
                         else:
                             print get_line(describe_lines[l], 0, 3, i)
 
@@ -612,12 +639,12 @@ def print_list(all_lines, file_name = ''):
                         for l in range(0, len(describe_lines)):
                             if len(id_title_lines[0]) == len(id_title_lines[1]):
                                 if html_style == True:
-                                    print gen_html_body(get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical)
+                                    print gen_html_body_v2(get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + verticali, last, l)
                                 else:
                                     print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical
                             else:
                                 if html_style == True:
-                                    print gen_html_body(get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical)
+                                    print gen_html_body_v2(get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical, last, l)
                                 else:
                                     print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical
 
@@ -642,7 +669,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True:    
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body(get_line(describe_lines[l], 0, 2, i))
+                            print gen_html_body_v2(get_line(describe_lines[l], 0, 2, i), i, l)
                         else:
                             print get_line(describe_lines[l], 0, 2, i)
             if len(id_title_lines[0]) > len(id_title_lines[1]):
@@ -657,7 +684,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body(get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical)
+                            print gen_html_body_v2(get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + verticali, last, l)
                         else:
                             print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
 
@@ -683,7 +710,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body(get_line(describe_lines[l], 0, 1, i))
+                            print gen_html_body_v2(get_line(describe_lines[l], 0, 1, i), i, l)
                         else:
                             print get_line(describe_lines[l], 0, 1, i)
 
