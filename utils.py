@@ -240,6 +240,16 @@ class Utils:
         else:
             return engins.split(' ')
 
+    def getAllEnginList(self):
+        engin_list = []
+        for record in self.search_engin_dict.values():
+            engin = record.get_title().strip()
+            if engin == 'google' or engin == 'scholar' or engin == 'youtube':
+                engin_list.insert(0, engin)
+            else:
+                engin_list.append(record.get_title().strip())
+        return engin_list
+
     def getEnginListLinks(self, engins, topic, id='', query = ''):
         if topic == '':
             return ''

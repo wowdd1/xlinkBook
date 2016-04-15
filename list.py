@@ -287,12 +287,19 @@ def next_pos(text, start):
 def genEnginOption(selectid):
 
     option = ''
+    '''
     if engin != '':
         engin_list = utils.getEnginList(engin.strip())
         option = '<select id="' + selectid +'">'
         for e in engin_list:
             option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
         option += '</select>'
+    '''
+    engin_list = utils.getAllEnginList()
+    option = '<select id="' + selectid +'">'
+    for e in engin_list:
+        option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
+    option += '</select>'
     return option
 
 def build_lines(list_all):
