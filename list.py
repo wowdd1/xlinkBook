@@ -72,7 +72,10 @@ function search(inputid,optionid){\
     console.log("",select.value);\
     window.open(select.value + input.value);\
 }\
-</script>'
+</script>\
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">'
 
 def usage():
     print 'usage:'
@@ -649,7 +652,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(3)
             else:
                 print '<head>' + script + '</head>'
-                print '<table>'
+                print '<table class="table">'
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
                 if html_style == True:
@@ -702,7 +705,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(2)
             else:
                 print '<head>' + script + '</head>'
-                print '<table>'
+                print '<table class="table">'
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
                 if html_style == True:
@@ -742,7 +745,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(1)
             else:
                 print '<head>' + script + '</head>'
-                print '<table>'
+                print '<table class="table">'
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
                 if html_style == True:
