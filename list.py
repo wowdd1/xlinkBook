@@ -44,6 +44,7 @@ plus = '+'
 subtraction = '-'
 vertical = '|'
 html_style = False
+css_style_type = 1 # value can be 0 or 1
 
 engin = ''
 
@@ -80,14 +81,15 @@ css_style = '\
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">'
 
-#<style type="text/css">\
-#.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td {\
-#	padding:1px;\
-#	line-height:1.42857143;\
-#	vertical-align:top;\
-#	border-top:0px solid #ddd\
-#}\
-#</style>\
+css_table_overwrite = '\
+<style type="text/css">\
+.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td {\
+	padding:1px;\
+	line-height:1.42857143;\
+	vertical-align:top;\
+	border-top:0px solid #ddd\
+}\
+</style>'
 
 def usage():
     print 'usage:'
@@ -319,9 +321,13 @@ def genEnginOption(selectid):
     return option
 
 def getScript():
+    result = script
     if output_with_style:
-        return script + css_style
-    return script
+        if css_style_type == 0:
+            result = script + css_style
+        elif css_style_type == 1:
+            result = script + css_style + css_table_overwrite
+    return result
 
 def build_lines(list_all):
     id_title_lines = copy.deepcopy(list_all)
@@ -433,16 +439,20 @@ def get_line(lines, start, end, j):
 
     return result
 
-def gen_html_body(content):
+def gen_html_body(content, row=0):
+    style = ''
+    if row % 2 == 0:
+        style = 'active'
+    
     index = 0
     if vertical == '|': 
         verticals = []
         if column_num == "2":
-            verticals = ['<tr><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
         elif column_num == "3":
-            verticals = ['<tr><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
         elif column_num == "1":
-            verticals = ['<tr><td>', '</td><td>', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td>', '</td><td>', '</td></tr>']   
 
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
@@ -452,15 +462,18 @@ def gen_html_body(content):
 
 
 def gen_html_body_v2(content, row, subRow):
+    style = ''
+    if row % 2 == 0:
+        style = 'active'
     index = 0
     if vertical == '|':
         verticals = []
         if column_num == "2":
-            verticals = ['<tr id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
+            verticals = ['<tr class="' + style + '" id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
         elif column_num == "3":
-            verticals = ['<tr id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
+            verticals = ['<tr class="' + style + '" id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
         elif column_num == "1":
-            verticals = ['<tr id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td></tr>']
+            verticals = ['<tr class="' + style + '" id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td></tr>']
 
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
@@ -675,7 +688,7 @@ def print_list(all_lines, file_name = ''):
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
                 if html_style == True:
-                    content = gen_html_body(content)
+                    content = gen_html_body(content, i)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -697,7 +710,7 @@ def print_list(all_lines, file_name = ''):
                         content = get_line(id_title_lines, 0, 1, last) + get_space_cell(2, 3) + vertical
 
                     if html_style == True:
-                        content = gen_html_body(content)
+                        content = gen_html_body(content, last)
                     if output_with_color == True:
                         print_with_color(content)
                     else:
@@ -728,7 +741,7 @@ def print_list(all_lines, file_name = ''):
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
                 if html_style == True:
-                    content = gen_html_body(content)
+                    content = gen_html_body(content, i)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -743,7 +756,7 @@ def print_list(all_lines, file_name = ''):
                 last = len(id_title_lines[0]) - 1
                 content = get_line(id_title_lines, 0, 1, last) + get_space_cell(1, 2) + vertical
                 if html_style == True:
-                    content = gen_html_body(content)
+                    content = gen_html_body(content, last)
                 if output_with_color == True:
                     print_with_color(content)
                 else:
@@ -768,7 +781,7 @@ def print_list(all_lines, file_name = ''):
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
                 if html_style == True:
-                    content = gen_html_body(content)
+                    content = gen_html_body(content, i)
 
                 if output_with_color == True:
                     print_with_color(content)
@@ -851,7 +864,7 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:mb:e:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin"])
