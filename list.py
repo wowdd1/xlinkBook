@@ -78,15 +78,16 @@ function search(inputid,optionid){\
 css_style = '\
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
-<link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">\
-<style type="text/css">\
-.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td {\
-	padding:1px;\
-	line-height:1.42857143;\
-	vertical-align:top;\
-	border-top:0px solid #ddd\
-}\
-</style>'
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">'
+
+#<style type="text/css">\
+#.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td {\
+#	padding:1px;\
+#	line-height:1.42857143;\
+#	vertical-align:top;\
+#	border-top:0px solid #ddd\
+#}\
+#</style>\
 
 def usage():
     print 'usage:'
