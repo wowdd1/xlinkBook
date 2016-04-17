@@ -1,8 +1,8 @@
 engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | description: all star
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | description:paper star
-engin-4 | arxiv | http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1 | description:paper
-engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book
+engin-4 | arxiv | http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1 | description:paper star
+engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book star
 engin-6 | bookzz | http://bookzz.org/s/?q= | description:book
 engin-7 | booksc | http://booksc.org/s/?q= | description:book
 engin-8 | booksee | http://en.booksee.org/s/?q= | description:book
@@ -29,9 +29,9 @@ engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Se
 engin-29 | patents.google | https://patents.google.com/?q= | description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:all
 engin-31 | youtube | https://www.youtube.com/results?search_query= | description:course star
-engin-32 | coursera | https://www.coursera.org/courses?query= | description:course
+engin-32 | coursera | https://www.coursera.org/courses?query= | description:course star
 engin-33 | edusalsa | https://edusalsa.com/search?q= | description:course
-engin-34 | edx | https://www.edx.org/course?search_query= | description:course
+engin-34 | edx | https://www.edx.org/course?search_query= | description:course star
 engin-35 | videolectures | http://videolectures.net/site/search/?q= | description:talk star
 engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | description:people
 engin-37 | ted | http://www.ted.com/search?q= | description:talk
@@ -91,14 +91,15 @@ engin-87 | twitter | https://twitter.com/search?src=typd&q= | description:social
 engin-88 | weibo | http://s.weibo.com/weibo/ | description:social
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | description:social
-engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | description:paper star
+engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | description:paper star
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | description:social
 engin-93 | crunchbase | https://www.crunchbase.com/$/ | description:organization people product event star
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | description:organization
 engin-95 | douban | https://www.douban.com/search?q= | description:organization book people
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | description:book
-engin-97 | w.indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | description:job star
+engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | description:job star
 engin-98 | cn.indeed | http://cn.indeed.com/%E5%B7%A5%E4%BD%9C?l=%E6%B7%B1%E5%9C%B3%E5%B8%82&rq=1&fromage=last&q= | description:job
 engin-99 | 51cto | http://www.51cto.com/php/search.php?t=news&ie=utf-8&q= | description:social
 engin-100 | dangdang | http://search.dangdang.com/?category_path=01.00.00.00.00.00&type=01.00.00.00.00.00&key= | description:book
 engin-101 | vrfavs | http://www.vrfavs.com/search/list?q= | description:social
+engin-102 | reddit | https://www.reddit.com/search?q= | description:social star
