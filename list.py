@@ -30,6 +30,7 @@ merger_result = False
 top_row = 0
 old_top_row = 0
 max_links_row = 10
+default_links_row = 3
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -308,7 +309,7 @@ def build_lines(list_all):
     engin_list = []
     if engin != '':
         engin_list = utils.getEnginList(engin.strip())
-    if len(engin_list) > 3:
+    if len(engin_list) > default_links_row:
         row = len(engin_list) / max_links_row
         if len(engin_list) % max_links_row > 0:
             row += 1
@@ -363,10 +364,11 @@ def build_lines(list_all):
 		    if html_style:
                         if engin != '' and engin_list_dict != '':
                             engin_list_dive = []
-                            if (l+1) * max_links_row < len(engin_list):
-                                engin_list_dive = engin_list[l * max_links_row : (l+1) * max_links_row]
+                            engin_list_sub = engin_list[default_links_row :]
+                            if (l+1) * max_links_row < len(engin_list_sub):
+                                engin_list_dive = engin_list_sub[l * max_links_row : (l+1) * max_links_row]
                             else:
-                                engin_list_dive = engin_list[l * max_links_row :]
+                                engin_list_dive = engin_list_sub[l * max_links_row :]
                             describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
                             lij = str(l) + str(i) + str(j)
                             describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
@@ -727,7 +729,7 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body_v2(get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + verticali, last, l)
+                            print gen_html_body_v2(get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical, last, l)
                         else:
                             print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
 

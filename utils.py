@@ -198,6 +198,12 @@ class Utils:
                 return item
             if engin == 'mooc-list' and item.lower().find('google.com/cse') != -1:
                 return item
+            if engin == 'indeed' and item.lower().find('www.indeed') != -1:
+                return item
+            if engin.strip() == "arxiv-sanity" and item.lower().find('sanity') != -1:
+                return item
+            if engin == "arxiv" and item.lower().find('arxiv.org') != -1:
+                return item
             if item.lower().find(engin.lower()) != -1:
                 return item
         return ''
