@@ -76,8 +76,9 @@ function search(inputid,optionid){\
 }\
 </script>'
 
+#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
 css_style = '\
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
+<link rel="stylesheet" href="http://web.stanford.edu/class/cs231a/assets/css/bootstrap-rev0.min.css">\
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">'
 
@@ -440,9 +441,9 @@ def get_line(lines, start, end, j):
     return result
 
 def gen_html_body(content, row=0):
-    style = ''
+    style = 'info'
     if row % 2 == 0:
-        style = 'active'
+        style = ''
     
     index = 0
     if vertical == '|': 
@@ -462,9 +463,9 @@ def gen_html_body(content, row=0):
 
 
 def gen_html_body_v2(content, row, subRow):
-    style = ''
+    style = 'info'
     if row % 2 == 0:
-        style = 'active'
+        style = ''
     index = 0
     if vertical == '|':
         verticals = []
