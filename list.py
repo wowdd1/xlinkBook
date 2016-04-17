@@ -30,7 +30,7 @@ merger_result = False
 top_row = 0
 old_top_row = 0
 max_links_row = 10
-default_links_row = 3
+default_links_row = 1
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -397,7 +397,7 @@ def build_lines(list_all):
                 for e in engin_list:
                     id_title_lines[i][j] += utils.getEnginHtmlLink(e, title)
                     count += 1
-                    if count == 3:
+                    if count == default_links_row:
                         break
                 if script != '':
                     id_title_lines[i][j] += utils.genMoreLink(linkID, script);
