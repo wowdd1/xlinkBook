@@ -25,6 +25,7 @@ course_name_len=70
 course_num_len=10
 color_index=0
 output_with_color = False
+output_with_style = False
 output_with_describe = False
 merger_result = False
 top_row = 0
@@ -72,7 +73,9 @@ function search(inputid,optionid){\
     console.log("",select.value);\
     window.open(select.value + input.value);\
 }\
-</script>\
+</script>'
+
+css_style = '\
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">\
@@ -313,6 +316,11 @@ def genEnginOption(selectid):
         option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
     option += '</select>'
     return option
+
+def getScript():
+    if output_with_style:
+        return script + css_style
+    return script
 
 def build_lines(list_all):
     id_title_lines = copy.deepcopy(list_all)
@@ -569,9 +577,11 @@ def print_list(all_lines, file_name = ''):
     old_line_2 = ""
     color_index = 0
     filter_keyword_2 = ''
-    global top_row, old_top_row, output_with_color
-    if html_style == True:
+    global top_row, old_top_row, output_with_color, output_with_style
+    if html_style == True and output_with_color:
         output_with_color = False
+        output_with_style = True
+
     if len(all_lines) > 0:
         line_count = len(all_lines)
         if top_row > 0 and top_row > line_count:
@@ -659,7 +669,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(3)
             else:
-                print '<head>' + script + '</head>'
+                print '<head>' + getScript() + '</head>'
                 print '<table class="table">'
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
@@ -712,7 +722,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(2)
             else:
-                print '<head>' + script + '</head>'
+                print '<head>' + getScript() + '</head>'
                 print '<table class="table">'
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
@@ -752,7 +762,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(1)
             else:
-                print '<head>' + script + '</head>'
+                print '<head>' + getScript() + '</head>'
                 print '<table class="table">'
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
