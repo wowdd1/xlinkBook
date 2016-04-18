@@ -104,8 +104,8 @@ engin-100 | dangdang | http://search.dangdang.com/?category_path=01.00.00.00.00.
 engin-101 | vrfavs | http://www.vrfavs.com/search/list?q= | description:social
 engin-102 | reddit | https://www.reddit.com/search?q= | description:social star
 engin-103 | stanford | http://www.stanford.edu/search/?cx=003265255082301896483%3Asq5n7qoyfh8&cof=FORID%3A9&q= | description:people organization course star
-engin-104 | search.mit | http://search.mit.edu/search?client=mithome&site=mit&output=xml_no_dtd&proxystylesheet=mithome&num=15&submit=++search++&access=p&as_q= | description:people course
-engin-105 | berkeley | http://www.berkeley.edu/search?q= | description:people course
+engin-104 | search.mit | http://search.mit.edu/search?client=mithome&site=mit&output=xml_no_dtd&proxystylesheet=mithome&num=15&submit=++search++&access=p&as_q= | description:people course star
+engin-105 | berkeley | http://www.berkeley.edu/search?q= | description:people course star
 engin-106 | harvard | http://www.harvard.edu/searches#gsc.tab=0&gsc.q= | description:people course
 engin-107 | search.ox | https://search.ox.ac.uk/search?access=p&output=xml_no_dtd&ie=UTF-8&client=admin&proxystylesheet=admin&site=default-minus&submit=Search&q= | description:people course
 engin-108 | ethz.ch | https://www.ethz.ch/en/utils/search.ethz_search.html?language=en&pagetype=all&search= | description:people course
