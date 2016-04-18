@@ -88,11 +88,11 @@ engin-84 | textbooksearch | http://textbooksearch.mit.edu/class/ | description:b
 engin-85 | cambridge | http://www.cambridge.org/cn/search?iFeelLucky=false&currentTheme=Academic_v1&c=MainSearchBar&query= | description:book
 engin-86 | packtpub | https://www.packtpub.com/all/?search= | description:book
 engin-87 | twitter | https://twitter.com/search?src=typd&q= | description:social star
-engin-88 | weibo | http://s.weibo.com/weibo/ | description:social
+engin-88 | weibo | http://s.weibo.com/weibo/ | description:social star
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | description:social
-engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | description:social
+engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | description:social star
 engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | description:paper star
-engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | description:social
+engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | description:social star
 engin-93 | crunchbase | https://www.crunchbase.com/$/ | description:organization people product event star
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | description:organization
 engin-95 | douban | https://www.douban.com/search?q= | description:organization book people
@@ -103,7 +103,7 @@ engin-99 | 51cto | http://www.51cto.com/php/search.php?t=news&ie=utf-8&q= | desc
 engin-100 | dangdang | http://search.dangdang.com/?category_path=01.00.00.00.00.00&type=01.00.00.00.00.00&key= | description:book
 engin-101 | vrfavs | http://www.vrfavs.com/search/list?q= | description:social
 engin-102 | reddit | https://www.reddit.com/search?q= | description:social star
-engin-103 | stanford | http://www.stanford.edu/search/?cx=003265255082301896483%3Asq5n7qoyfh8&cof=FORID%3A9&q= | description:people organization course
+engin-103 | stanford | http://www.stanford.edu/search/?cx=003265255082301896483%3Asq5n7qoyfh8&cof=FORID%3A9&q= | description:people organization course star
 engin-104 | search.mit | http://search.mit.edu/search?client=mithome&site=mit&output=xml_no_dtd&proxystylesheet=mithome&num=15&submit=++search++&access=p&as_q= | description:people course
 engin-105 | berkeley | http://www.berkeley.edu/search?q= | description:people course
 engin-106 | harvard | http://www.harvard.edu/searches#gsc.tab=0&gsc.q= | description:people course
