@@ -261,12 +261,18 @@ class Utils:
             return ''
         result = {}
         keyword = topic.strip()
+        engin_display = ''
         for engin in engins:
+            engin_display = engin
+            if engin_display == 'search.mit':
+                engin_display = 'mit'
+            if engin_display == 'sanity':
+                engin_display = 'arxiv-sanity'
             if self.searchByID(engin):
                 keyword = id.strip()
             else:
                 keyword = topic.strip()
-            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
+            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank"> <font size="2" color="#999966">' + engin_display + '</font></a>'
 
         return result
 
