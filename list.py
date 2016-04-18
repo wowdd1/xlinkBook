@@ -44,7 +44,7 @@ plus = '+'
 subtraction = '-'
 vertical = '|'
 html_style = False
-css_style_type = 1 # value can be 0 or 1
+css_style_type = 0 # value can be 0 or 1
 
 engin = ''
 
@@ -77,9 +77,9 @@ function search(inputid,optionid){\
 </script>'
 
 #<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
+#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
 css_style = '\
 <link rel="stylesheet" href="http://web.stanford.edu/class/cs231a/assets/css/bootstrap-rev0.min.css">\
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">'
 
 css_table_overwrite = '\
@@ -396,7 +396,11 @@ def build_lines(list_all):
                                 engin_list_dive = engin_list_sub[l * max_links_row : (l+1) * max_links_row]
                             else:
                                 engin_list_dive = engin_list_sub[l * max_links_row :]
-                            describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
+                            if len(engin_list_dive) == 0:
+                                describe_lines[l][i][j] = align_describe('')
+                            else:
+                                describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
+                             
                             lij = str(l) + str(i) + str(j)
                             describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
                                                       '<div id=' + lij + ' style="display: none;" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
