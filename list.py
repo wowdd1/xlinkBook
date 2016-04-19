@@ -44,7 +44,7 @@ plus = '+'
 subtraction = '-'
 vertical = '|'
 html_style = False
-css_style_type = 0 # value can be 0 or 1
+css_style_type = 2 # value can be 0 or 1
 
 engin = ''
 
@@ -78,7 +78,7 @@ function search(inputid,optionid){\
 
 #<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
 #<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
-css_style = '\
+css_style_0 = '\
 <link rel="stylesheet" href="http://web.stanford.edu/class/cs231a/assets/css/bootstrap-rev0.min.css">\
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">'
 
@@ -91,6 +91,14 @@ css_table_overwrite = '\
 	border-top:0px solid #ddd\
 }\
 </style>'
+
+css_style_1 = css_style_0 + css_table_overwrite
+
+#<link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/bootstrap/css/bootstrap.css">\
+css_style_2 = '\
+<link rel="stylesheet" id="easy_table_style-css" href="http://ai.stanford.edu/wp-content/plugins/easy-table/themes/default/style.css?ver=1.5.3" type="text/css" media="all">\
+<link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/style.css">\
+'
 
 def usage():
     print 'usage:'
@@ -325,9 +333,11 @@ def getScript():
     result = script
     if output_with_style:
         if css_style_type == 0:
-            result = script + css_style
+            result = script + css_style_0
         elif css_style_type == 1:
-            result = script + css_style + css_table_overwrite
+            result = script + css_style_1
+        elif css_style_type == 2:
+            result = script + css_style_2
     return result
 
 def build_lines(list_all):
@@ -495,6 +505,11 @@ def print_search_box():
         for i in range(0, 1):
             print '<br/>'
 
+def print_table_head():
+    if css_style_type == 2:
+        print '<table class="easy-table easy-table-default coursesTable">'
+    else:
+        print '<table class="table">'
 
 def get_space_cell(num, column_num):
     result = ""
@@ -689,7 +704,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(3)
             else:
                 print '<head>' + getScript() + '</head>'
-                print '<table class="table">'
+                print_table_head()
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
                 if html_style == True:
@@ -742,7 +757,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(2)
             else:
                 print '<head>' + getScript() + '</head>'
-                print '<table class="table">'
+                print_table_head()
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
                 if html_style == True:
@@ -782,7 +797,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(1)
             else:
                 print '<head>' + getScript() + '</head>'
-                print '<table class="table">'
+                print_table_head()
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
                 if html_style == True:
