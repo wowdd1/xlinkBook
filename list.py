@@ -44,7 +44,7 @@ plus = '+'
 subtraction = '-'
 vertical = '|'
 html_style = False
-css_style_type = 2 # value can be 0 or 1
+css_style_type = 3 # value can be 0 or 1
 
 engin = ''
 
@@ -99,6 +99,14 @@ css_style_2 = '\
 <link rel="stylesheet" id="easy_table_style-css" href="http://ai.stanford.edu/wp-content/plugins/easy-table/themes/default/style.css?ver=1.5.3" type="text/css" media="all">\
 <link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/style.css">\
 '
+
+css_style_3 = '\
+<link rel="stylesheet" id="easy_table_style-css" href="http://ai.stanford.edu/wp-content/plugins/easy-table/themes/default/style.css?ver=1.5.3" type="text/css" media="all">\
+' + css_table_overwrite
+
+css_style_4 = '\
+<link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/bootstrap/css/bootstrap.css">\
+'  + css_style_2
 
 def usage():
     print 'usage:'
@@ -338,6 +346,10 @@ def getScript():
             result = script + css_style_1
         elif css_style_type == 2:
             result = script + css_style_2
+        elif css_style_type == 3:
+            result = script + css_style_3
+        elif css_style_type == 4:
+            result = script + css_style_4
     return result
 
 def build_lines(list_all):
@@ -506,7 +518,7 @@ def print_search_box():
             print '<br/>'
 
 def print_table_head():
-    if css_style_type == 2:
+    if css_style_type == 2 or css_style_type == 3 or css_style_type == 4:
         print '<table class="easy-table easy-table-default coursesTable">'
     else:
         print '<table class="table">'
