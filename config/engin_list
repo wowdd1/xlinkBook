@@ -109,3 +109,7 @@ engin-105 | berkeley | http://www.berkeley.edu/search?q= | description:people co
 engin-106 | harvard | http://www.harvard.edu/searches#gsc.tab=0&gsc.q= | description:people course
 engin-107 | search.ox | https://search.ox.ac.uk/search?access=p&output=xml_no_dtd&ie=UTF-8&client=admin&proxystylesheet=admin&site=default-minus&submit=Search&q= | description:people course
 engin-108 | ethz.ch | https://www.ethz.ch/en/utils/search.ethz_search.html?language=en&pagetype=all&search= | description:people course
+engin-109 | techtalks | http://techtalks.tv/search/results/?q= | description:talk course star
+engin-110 | plus.google | https://plus.google.com/s/ | description:social
+engin-111 | slashdot | https://slashdot.org/index2.pl?fhfilter= | description:social
+engin-112 | digg | http://digg.com/search?q= | description:social
