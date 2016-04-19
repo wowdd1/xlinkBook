@@ -78,7 +78,9 @@ function search(inputid,optionid){\
 
 #<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
 #<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
-css_style_0 = '\
+
+css_style_0 = ''
+css_style_1 = '\
 <link rel="stylesheet" href="http://web.stanford.edu/class/cs231a/assets/css/bootstrap-rev0.min.css">\
 <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">'
 
@@ -92,21 +94,22 @@ css_table_overwrite = '\
 }\
 </style>'
 
-css_style_1 = css_style_0 + css_table_overwrite
+css_style_2 = css_style_1 + css_table_overwrite
 
 #<link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/bootstrap/css/bootstrap.css">\
-css_style_2 = '\
+css_style_3 = '\
 <link rel="stylesheet" id="easy_table_style-css" href="http://ai.stanford.edu/wp-content/plugins/easy-table/themes/default/style.css?ver=1.5.3" type="text/css" media="all">\
 <link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/style.css">\
 '
 
-css_style_3 = '\
+css_style_4 = '\
 <link rel="stylesheet" id="easy_table_style-css" href="http://ai.stanford.edu/wp-content/plugins/easy-table/themes/default/style.css?ver=1.5.3" type="text/css" media="all">\
 ' + css_table_overwrite
 
-css_style_4 = '\
+
+css_style_5 = '\
 <link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/bootstrap/css/bootstrap.css">\
-'  + css_style_2
+'  + css_style_3
 
 def usage():
     print 'usage:'
@@ -350,6 +353,8 @@ def getScript():
             result = script + css_style_3
         elif css_style_type == 4:
             result = script + css_style_4
+        elif css_style_type == 5:
+            result = script + css_style_5
     return result
 
 def build_lines(list_all):
@@ -517,8 +522,8 @@ def print_search_box():
         for i in range(0, 1):
             print '<br/>'
 
-def print_table_head():
-    if css_style_type == 2 or css_style_type == 3 or css_style_type == 4:
+def print_table_head_with_style():
+    if css_style_type == 3 or css_style_type == 4 or css_style_type == 5:
         print '<table class="easy-table easy-table-default coursesTable">'
     else:
         print '<table class="table">'
@@ -716,7 +721,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(3)
             else:
                 print '<head>' + getScript() + '</head>'
-                print_table_head()
+                print_table_head_with_style()
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
                 if html_style == True:
@@ -769,7 +774,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(2)
             else:
                 print '<head>' + getScript() + '</head>'
-                print_table_head()
+                print_table_head_with_style()
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
                 if html_style == True:
@@ -809,7 +814,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_head(1)
             else:
                 print '<head>' + getScript() + '</head>'
-                print_table_head()
+                print_table_head_with_style()
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
                 if html_style == True:
@@ -896,9 +901,9 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:sdw:r:t:l:mb:e:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin"])
     except getopt.GetoptError, err:
         print str(err)
@@ -924,6 +929,7 @@ def main(argv):
             filter_keyword = str(a).strip()
         elif o in ('-s', '--style'):
             output_with_color = True
+            css_style_type = int(a)
         elif o in ('-d', '--describe'):
             output_with_describe = True
             adjust_cell_len()
