@@ -97,11 +97,11 @@ class AminerSpider(Spider):
                 f = self.open_db(file_name + ".tmp")
                 self.count = 0
 
-                url = 'http://api2.aminer.org/api/ranks/org/list/' + k + '/' + k_type + '/aminerScore/0/50'
+                url = 'http://api.aminer.org/api/rank/org/list/' + k + '/' + k_type + '/aminerScore/0/50'
                 print url
                 r = requests.get(url)
                 jobj = json.loads(r.text)
-                for obj in jobj[1]:
+                for obj in jobj['data']:
                     print obj['org']
                     self.count += 1
                     self.write_db(f, 'org-' + v.lower().replace(' ', '_') + '-' + v_type + str(self.count), obj['org'], '')
@@ -115,7 +115,7 @@ class AminerSpider(Spider):
     def processConf(self):
         for k, v in self.subject_dict.items():
             print v
-            r = requests.get('http://api2.aminer.org/api/nsfc/conf/rank/' + k)
+            r = requests.get('http://api.aminer.org/api/rank/conf/list/' + k)
             jobj = json.loads(r.text)
 
             file_name = self.get_file_name(self.subject + '/' + self.school + '/' + v.lower().replace(' ', '_') + '-conf', self.school)
@@ -141,11 +141,11 @@ class AminerSpider(Spider):
                 print "no need upgrade\n"
 
     def doWork(self):
-        self.processBestResearcher('Social Network')
-        self.processBestResearcher('Data Mining')
-        self.processBestResearcher('Machine Learning')
-        self.processBestResearcher('Deep Learning')
-        self.processBestpaper()
+        #self.processBestResearcher('Social Network')
+        #self.processBestResearcher('Data Mining')
+        #self.processBestResearcher('Machine Learning')
+        #self.processBestResearcher('Deep Learning')
+        #self.processBestpaper()
         self.processOrg()
         self.processConf()
 
