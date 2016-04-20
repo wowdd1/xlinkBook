@@ -115,3 +115,4 @@ engin-111 | slashdot | https://slashdot.org/index2.pl?fhfilter= | description:so
 engin-112 | digg | http://digg.com/search?q= | description:social
 engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | description:wiki
 engin-114 | groups | https://groups.google.com/forum/#!search/ | description:organization social
+engin-115 | cognet | http://search.mit.edu/search?client=mit&site=default_collection&output=xml_no_dtd&proxystylesheet=mit&as_sitesearch=cognet.mit.edu&q= | description:book paper
