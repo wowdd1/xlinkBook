@@ -27,6 +27,7 @@ color_index=0
 output_with_color = False
 output_with_style = False
 output_with_describe = False
+output_navigation_links = False
 merger_result = False
 top_row = 0
 old_top_row = 0
@@ -44,7 +45,7 @@ plus = '+'
 subtraction = '-'
 vertical = '|'
 html_style = False
-css_style_type = 3 # value can be 0 or 1
+css_style_type = 0
 
 engin = ''
 
@@ -74,10 +75,19 @@ function search(inputid,optionid){\
     console.log("",select.value);\
     window.open(select.value + input.value);\
 }\
+function showdiv_2(targetid){\
+      var target=document.getElementById(targetid);\
+            if (target.style.display=="none"){\
+                target.style.display="";\
+            } else {\
+                target.style.display="none";\
+            }\
+}\
+function hidendiv_2(targetid){\
+      var target=document.getElementById(targetid);\
+                target.style.display="none";\
+}\
 </script>'
-
-#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">\
-#<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">\
 
 css_style_0 = ''
 css_style_1 = '\
@@ -96,7 +106,6 @@ css_table_overwrite = '\
 
 css_style_2 = css_style_1 + css_table_overwrite
 
-#<link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/bootstrap/css/bootstrap.css">\
 css_style_3 = '\
 <link rel="stylesheet" id="easy_table_style-css" href="http://ai.stanford.edu/wp-content/plugins/easy-table/themes/default/style.css?ver=1.5.3" type="text/css" media="all">\
 <link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/style.css">\
@@ -110,6 +119,11 @@ css_style_4 = '\
 css_style_5 = '\
 <link rel="stylesheet" type="text/css" media="all" href="http://ai.stanford.edu/wp-content/themes/theme47542/bootstrap/css/bootstrap.css">\
 '  + css_style_3
+
+css_style_6 = '\
+<link href="http://vision.stanford.edu/css/style.css" rel="stylesheet">\
+'
+
 
 def usage():
     print 'usage:'
@@ -126,6 +140,7 @@ def usage():
     print '\t-l,--level: the max search level that the file is in'
     print '\t-m,--merger: merger the results'
     print '\t-b,--border: border style'
+    print '\t-n,--navigation: gen navigation links'
     print '-e, --engin: what search for search include: google baidu bing yahoo'
     os.system("cat README.md")
 
@@ -355,6 +370,8 @@ def getScript():
             result = script + css_style_4
         elif css_style_type == 5:
             result = script + css_style_5
+        elif css_style_type == 6:
+            result = script + css_style_6
     return result
 
 def build_lines(list_all):
@@ -385,6 +402,7 @@ def build_lines(list_all):
 
         for j in range(0, len(list_all[i])):
             engin_list_dict = {}
+            title = ''
             if html_style == False or (list_all[i][j].get_url().strip() == '' and engin == ''):
                 id_title_lines[i][j] = align_id_title(list_all[i][j])
             else:
@@ -430,13 +448,29 @@ def build_lines(list_all):
                              
                             lij = str(l) + str(i) + str(j)
                             describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
-                                                      '<div id=' + lij + ' style="display: none;" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
+                                                      '<div id=div-' + lij + ' style="display: none;" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
                             for (k, v) in engin_list_dict.items():
                                 describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
+                            if l == lines - 1 and output_navigation_links:
+                                navLinks = utils.getNavLinkList()
+                                content = ''
+                                hidenScript = ''
+                                for link2 in navLinks:
+                                    hidenScript += "hidendiv_2('" + 'div-' + link2 + '-' + lij + "');"
+                                if hidenScript != '':
+                                    script += hidenScript
+                                for link in navLinks:
+                                    divID = 'div-' + link + '-' + lij
+                                    content += utils.genLinkWithScript(link + '-' + lij, hidenScript +  "showdiv_2('" + divID + "')", link, '#888888')
+                                describe_lines[l][i][j] += "<div id='div-nav-" + lij + "' style='display: none;' >" + content + " </div>"
+                                script += "showdiv_2('div-nav-" + lij + "');"
+                                for link in navLinks:
+                                    divID = 'div-' + link + '-' + lij
+                                    describe_lines[l][i][j] += utils.getDescDivs(divID, link, title, max_links_row)
                             if l == 0:
                                 linkID = 'a' + lij;
                                 script += "setText('" + linkID +"');"
-                            script += "showdiv('" + str(l) + lij[1:]+ "', '" + linkID +"');"
+                            script += "showdiv('div-" + str(l) + lij[1:]+ "', '" + linkID +"');"
                             script += "showdiv('row-" + str(j) + '-' + str(l)+ "', '" + linkID +"');"
 
 
@@ -455,7 +489,7 @@ def build_lines(list_all):
                     if count == default_links_row:
                         break
                 if script != '':
-                    id_title_lines[i][j] += utils.genMoreLink(linkID, script);
+                    id_title_lines[i][j] += utils.genLinkWithScript(linkID, script, '...');
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
@@ -901,10 +935,10 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:n', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -952,6 +986,8 @@ def main(argv):
             chanage_border(a)
         elif o in ('-e', '--engin'):
             engin = str(a).strip()
+        elif o in ('-n', '--navigation'):
+            output_navigation_links = True
 
 
     if source == "":
