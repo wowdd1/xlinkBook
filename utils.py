@@ -225,8 +225,11 @@ class Utils:
 
         return url
     
-    def getEnginHtmlLink(self, engin, keyword):
-        return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
+    def getEnginHtmlLink(self, engin, keyword, color=''):
+        if color != '':
+            return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="' + color + '">' + engin + '</font></a>'
+        else:
+            return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
 
     def getEnginList(self, engins):
         if engins.startswith('description:') or engins.startswith('d:'):
@@ -276,9 +279,44 @@ class Utils:
 
         return result
 
-    def genMoreLink(self, aid, script):
+    def getDescDivs(self, divid, enginType, keyword, links_per_row):
+        result = "<div id='" + divid + "'" + ' style="display: none;">'
+        engin_list = self.getEnginList('d:' + enginType)
+        #print engin_list
+        remain = len(engin_list)
+        last = 0
+        while remain > 0:
+            #print '---'
+            #print 'remain' + str(remain)
+            #print 'links_per_row' + str(links_per_row)
+            #print 'last' + str(last)
+            if remain > links_per_row:
+                engin_list_dive = engin_list[last : last + links_per_row - 1]
+                remain -= links_per_row
+                last += links_per_row - 1
+                #print remain
+                #print last
+            else:
+                engin_list_dive = engin_list[last : last + remain - 1]
+                remain = 0
+            #print engin_list_dive
+            div = '<div>'
+            for e in engin_list_dive:
+                div += self.getEnginHtmlLink(e, keyword) + ' '
+            div += '</div>'
+            result += div
+        result += "</div>" 
+        return result
+ 
+    def getNavLinkList(self):
+        return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
+
+    def genLinkWithScript(self, aid, script, text, color=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
-        return ' <font size="2" color="#999966"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">...</font></a></font>'
+        if color != '':
+            return ' <font size="2" color="' + color + '"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="' + color + '">' + text + '</font></a></font>'
+        else:
+            return ' <font size="2" color="#999966"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
 
     def searchByID(self, engin):
         if engin.strip() == 'textbooksearch':
