@@ -310,7 +310,7 @@ class Utils:
             #print engin_list_dive
             div = '<div>'
             for e in engin_list_dive:
-                div += self.getEnginHtmlLink(e, keyword) + ' '
+                div += self.getEnginHtmlLink(e, keyword, "#332299") + ' '
             div += '</div>'
             result += div
         result += "</div>" 
