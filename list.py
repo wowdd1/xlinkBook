@@ -32,6 +32,7 @@ merger_result = False
 top_row = 0
 old_top_row = 0
 max_links_row = 10
+max_nav_links_row = 12
 default_links_row = 2
 
 utils = Utils()
@@ -459,10 +460,27 @@ def build_lines(list_all):
                                     hidenScript += "hidendiv_2('" + 'div-' + link2 + '-' + lij + "');"
                                 if hidenScript != '':
                                     script += hidenScript
+                                count = 0
+                                describe_lines[l][i][j] += "<div id='div-nav-" + lij + "' style='display: none;' >"
+                                #print navLinks
                                 for link in navLinks:
                                     divID = 'div-' + link + '-' + lij
                                     content += utils.genLinkWithScript(link + '-' + lij, hidenScript +  "showdiv_2('" + divID + "')", link, '#888888')
-                                describe_lines[l][i][j] += "<div id='div-nav-" + lij + "' style='display: none;' >" + content + " </div>"
+                                    count += 1 
+                                    #print count
+                                    if count >= max_nav_links_row:
+                                        #print count
+                                        content = '<div>' + content + '</div>'
+                                        count = 0
+                                        describe_lines[l][i][j] += content
+                                        #print '+++++1'
+                                        content = '' 
+                                if content != '':
+                                    #print '+++++2'
+                                    describe_lines[l][i][j] += '<div>' + content + '</div>'
+                                    content = ''
+                                describe_lines[l][i][j] += " </div>"
+                                #describe_lines[l][i][j] += "<div id='div-nav-" + lij + "' style='display: none;' >" + content + " </div>"
                                 script += "showdiv_2('div-nav-" + lij + "');"
                                 for link in navLinks:
                                     divID = 'div-' + link + '-' + lij

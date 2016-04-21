@@ -120,6 +120,7 @@ class Utils:
         'white': '1;37',
     }
     search_engin_dict = {}
+    search_engin_type = []
 
     def __init__(self):
         self.loadEngins()
@@ -132,6 +133,13 @@ class Utils:
                 record = Record(line)
                 if record.get_title() != '':
                     self.search_engin_dict[record.get_title().strip()] = record
+        if os.path.exists('config/engin_type'):
+            f = open('config/engin_type','rU')
+            all_lines = f.readlines()
+            for line in all_lines:
+                record = Record(line)
+                if record.get_title() != '':
+                    self.search_engin_type.append(record.get_title().strip())
 
     def removeDoubleSpace(self, text):
         text = text.replace('\n','')
@@ -297,7 +305,7 @@ class Utils:
                 #print remain
                 #print last
             else:
-                engin_list_dive = engin_list[last : last + remain - 1]
+                engin_list_dive = engin_list[last : last + remain]
                 remain = 0
             #print engin_list_dive
             div = '<div>'
@@ -309,7 +317,8 @@ class Utils:
         return result
  
     def getNavLinkList(self):
-        return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
+        return self.search_engin_type
+        #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
 
     def genLinkWithScript(self, aid, script, text, color=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
