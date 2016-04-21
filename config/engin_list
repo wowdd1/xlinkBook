@@ -54,7 +54,7 @@ engin-53 | mathoverflow | http://mathoverflow.net/search?q= | description:social
 engin-54 | wikipedia | https://wikipedia.org/wiki/ | description:wiki star
 engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | description:social
 engin-56 | csdn | http://so.csdn.net/so/search/s.do?ref=toolbar&q= | description:social
-engin-57 | androidxref | http://androidxref.com/6.0.1_r10/search?q= | description:project
+engin-57 | androidxref | http://androidxref.com/6.0.1_r10/search?q= | description:code
 engin-58 | googlecode | https://code.google.com/hosting/search?q= | description:project
 engin-59 | codeplex | https://www.codeplex.com/site/search?query= | description:project
 engin-60 | sourceforge | http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q= | description:project
@@ -117,3 +117,7 @@ engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | description:wiki
 engin-114 | groups | https://groups.google.com/forum/#!search/ | description:organization social
 engin-115 | cognet | http://search.mit.edu/search?client=mit&site=default_collection&output=xml_no_dtd&proxystylesheet=mit&as_sitesearch=cognet.mit.edu&q= | description:book paper
 engin-116 | lagou | http://www.lagou.com/jobs/list_ | description:job
+engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=package:chromium&type=cs&q= | description:code
+engin-118 | searchcode | https://searchcode.com/?q= | description:code
+engin-119 | krugle | http://opensearch.krugle.org/document/search/#query= | description:code
+engin-120 | openhub | https://code.openhub.net/search?s= | description:code
