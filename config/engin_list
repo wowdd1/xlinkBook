@@ -1,7 +1,7 @@
 engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | description: all star
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | description:paper star
-engin-4 | arxiv | http://arxiv.org/find/all/1/ti:+$/0/1/0/all/0/1 | description:paper star
+engin-4 | arxiv | http://search.arxiv.org:8081/?in=grp_cs&query= | description:paper star
 engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | description:book star
 engin-6 | bookzz | http://bookzz.org/s/?q= | description:book
 engin-7 | booksc | http://booksc.org/s/?q= | description:book
@@ -116,3 +116,4 @@ engin-112 | digg | http://digg.com/search?q= | description:social
 engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | description:wiki
 engin-114 | groups | https://groups.google.com/forum/#!search/ | description:organization social
 engin-115 | cognet | http://search.mit.edu/search?client=mit&site=default_collection&output=xml_no_dtd&proxystylesheet=mit&as_sitesearch=cognet.mit.edu&q= | description:book paper
+engin-116 | lagou | http://www.lagou.com/jobs/list_ | description:job
