@@ -506,14 +506,13 @@ def build_lines(list_all):
                                 describe_lines[l][i][j] = align_describe('')
                             else:
                                 describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
-                             
-                            describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
-                                                      '<div id="#div-star" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
-                            for (k, v) in engin_list_dict.items():
-                                describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
-                            engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
-                            describe_lines[l][i][j] = ''
-                            div_content_list.append(engin_content)
+                            if describe_lines[l][i][j].find('#') != -1:
+                                describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
+                                                      '<div id="#div-star-' + str(l) +'" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
+                                for (k, v) in engin_list_dict.items():
+                                    describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
+                                engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
+                                div_content_list.append(engin_content)
 
                             if l == lines - 1 and output_navigation_links:
                                 navLinks = utils.getNavLinkList()
@@ -522,18 +521,22 @@ def build_lines(list_all):
                                 for link2 in navLinks:
                                     hidenScript += 'hidendiv_2("' + '#div-' + link2 + '");'
                                 count = 0
-                                div_content_list.append('<div id="#div-nav">')
+                                count_index = 0
                                 for link in navLinks:
                                     divID = '#div'
                                     content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\");', link, '#888888')
                                     count += 1 
                                     if count >= max_nav_links_row:
-                                        div_content_list.append( "<div>" + content + "</div>")
+                                        div_content_list.append('<div id="#div-nav-' + str(count_index)+ '">')
+                                        div_content_list.append(content)
+                                        div_content_list.append('</div>')
+                                        count_index += 1
                                         count = 0
                                         content = '' 
                                 if content != '':
-                                    div_content_list.append("<div>" + content + "</div>"+ "</div>")
-                                    content = ''
+                                    div_content_list.append('<div id="#div-nav-' + str(count_index)+ '">')
+                                    div_content_list.append(content)
+                                    div_content_list.append('</div>')
                                 for link in navLinks:
                                     divID = '#div-' + link
                                     div_content_list.append(utils.getDescDivs(divID, link, title, max_links_row, 'searchTopic(this,"' + "#topic" + '");', '#323555'))
