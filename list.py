@@ -371,14 +371,6 @@ def next_pos(text, start):
 def genEnginOption(selectid):
 
     option = ''
-    '''
-    if engin != '':
-        engin_list = utils.getEnginList(engin.strip())
-        option = '<select id="' + selectid +'">'
-        for e in engin_list:
-            option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
-        option += '</select>'
-    '''
     engin_list = utils.getAllEnginList()
     option = '<select id="' + selectid +'">'
     for e in engin_list:
@@ -675,6 +667,12 @@ def match(keyword, data):
     if data.lower().find(keyword.strip().lower()) != -1 or re.match(keyword.strip(), data) != None:
         return True
     return False
+
+def isSpaceLine(line):
+    newLine = line.replace(vertical, '').strip()
+    if newLine == '':
+        return True
+    return False
     
 def filter(keyword, data):
     if containLogicalOperators(keyword):
@@ -839,7 +837,9 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True: 
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body_v2(get_line(describe_lines[l], 0, 3, i), i, l)
+                            desc_line = get_line(describe_lines[l], 0, 3, i)
+                            if isSpaceLine(desc_line) == False:
+                                print gen_html_body_v2(desc_line, i, l)
                         else:
                             print get_line(describe_lines[l], 0, 3, i)
 
@@ -862,12 +862,16 @@ def print_list(all_lines, file_name = ''):
                         for l in range(0, len(describe_lines)):
                             if len(id_title_lines[0]) == len(id_title_lines[1]):
                                 if html_style == True:
-                                    print gen_html_body_v2(get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical, last, l)
+                                    desc_line = get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical
+                                    if isSpaceLine(desc_line) == False:
+                                        print gen_html_body_v2(desc_line, last, l)
                                 else:
                                     print get_line(describe_lines[l], 0, 2, last) + get_space_cell(1, 3) + vertical
                             else:
                                 if html_style == True:
-                                    print gen_html_body_v2(get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical, last, l)
+                                    desc_line = get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical
+                                    if isSpaceLine(desc_line) == False:
+                                        print gen_html_body_v2(desc_line, last, l)
                                 else:
                                     print get_line(describe_lines[l], 0, 1, last) + get_space_cell(2, 3) + vertical
 
