@@ -293,6 +293,7 @@ class Utils:
         #print engin_list
         remain = len(engin_list)
         last = 0
+        count = 0
         while remain > 0:
             #print '---'
             #print 'remain' + str(remain)
@@ -308,10 +309,11 @@ class Utils:
                 engin_list_dive = engin_list[last : last + remain]
                 remain = 0
             #print engin_list_dive
-            div = '<div>'
+            div = '<div id="' + divid + '-' + str(count) + '">'
             for e in engin_list_dive:
                 div += self.genLinkWithScript2(scrip, e.strip(), color) + ' '
             div += '</div>'
+            count += 1
             result += div
         result += "</div>" 
         return result
@@ -330,9 +332,9 @@ class Utils:
     def genLinkWithScript2(self, script, text, color=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
         if color != '':
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ';>' + '<font size="2" color="' + color + '">' + text + '</font></a>'
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + '>' + '<font size="2" color="' + color + '">' + text + '</font></a>'
         else:
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ';>' + '<font size="2" color="#999966">' + text + '</font></a>'
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + '>' + '<font size="2" color="#999966">' + text + '</font></a>'
 
     def searchByID(self, engin):
         if engin.strip() == 'textbooksearch':
