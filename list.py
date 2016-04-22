@@ -52,6 +52,7 @@ engin = ''
 
 div_content_list = []
 
+gen_html_done = False
 
 script_head = '<script language="JavaScript" type="text/JavaScript">';
 script = '\
@@ -415,7 +416,7 @@ def getScript():
     print "</head>"
 
 def build_lines(list_all):
-    global div_link_content;
+    global div_link_content, gen_html_done;
     id_title_lines = copy.deepcopy(list_all)
     describe_lines = []
     engin_list = []
@@ -430,7 +431,6 @@ def build_lines(list_all):
         
         border_style_five(row)
     title = ''
-    gen_html_done = False
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
     for i in range(0, len(list_all)):
@@ -470,10 +470,10 @@ def build_lines(list_all):
             end = 0
             if output_with_describe == True:
                 lij = ''
-                script = ''
                 lines = len(describe_lines)
                 linkID = ''
                 content_divID = ''
+                script = ''
                 engin_content = ''
                 nav_link_content = ''
                 nav_links_content = ''
@@ -481,9 +481,23 @@ def build_lines(list_all):
                 for l in range(0, lines):
 
 		    if html_style:
+                        describe_lines[l][i][j] = align_describe('')
                         if engin != '' and engin_list_dict != '':
                             engin_list_dive = []
                             engin_list_sub = engin_list[default_links_row :]
+
+                            lij = str(l) + str(i) + str(j)
+
+                            if l == 0:
+                                linkID = 'a-' + lij;
+                                script += "setText('" + linkID +"');"
+                                content_divID = "div-" + lij
+                                script += "showdiv('" + content_divID + "', '" + linkID +"');"
+                                #script += "showdiv('row-" + str(j) + '-' + str(l)+ "', '" + linkID +"');"
+                                script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '&nbsp;')+ "');"
+                            if gen_html_done:
+                                continue
+
                             if (l+1) * max_links_row < len(engin_list_sub):
                                 engin_list_dive = engin_list_sub[l * max_links_row : (l+1) * max_links_row]
                             else:
@@ -493,25 +507,15 @@ def build_lines(list_all):
                             else:
                                 describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
                              
-                            lij = str(l) + str(i) + str(j)
                             describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
                                                       '<div id="#div-star" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
                             for (k, v) in engin_list_dict.items():
                                 describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
                             engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
-                            if gen_html_done == False:
-                                div_content_list.append(engin_content)
                             describe_lines[l][i][j] = ''
+                            div_content_list.append(engin_content)
 
-                            if l == 0:
-                                linkID = 'a-' + lij;
-                                script += "setText('" + linkID +"');"
-                                content_divID = "div-" + lij
-                                script += "showdiv('" + content_divID + "', '" + linkID +"');"
-                                script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '&nbsp;')+ "');"
-
-                            if l == lines - 1 and output_navigation_links and gen_html_done == False:
-                                gen_html_done = True
+                            if l == lines - 1 and output_navigation_links:
                                 navLinks = utils.getNavLinkList()
                                 content = ''
                                 hidenScript = ''
@@ -520,19 +524,21 @@ def build_lines(list_all):
                                 count = 0
                                 div_content_list.append('<div id="#div-nav">')
                                 for link in navLinks:
-                                    divID = 'div-' + link + '-' + lij
-                                    content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + '#div' + '\");', link, '#888888')
+                                    divID = '#div'
+                                    content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\");', link, '#888888')
                                     count += 1 
                                     if count >= max_nav_links_row:
-                                        div_content_list.append(content)
+                                        div_content_list.append( "<div>" + content + "</div>")
                                         count = 0
                                         content = '' 
                                 if content != '':
-                                    div_content_list.append(content + "</div>")
+                                    div_content_list.append("<div>" + content + "</div>"+ "</div>")
                                     content = ''
                                 for link in navLinks:
                                     divID = '#div-' + link
                                     div_content_list.append(utils.getDescDivs(divID, link, title, max_links_row, 'searchTopic(this,"' + "#topic" + '");', '#323555'))
+                            if l == lines - 1:
+                                gen_html_done = True
 
 
                     if end >= describe:
@@ -552,7 +558,7 @@ def build_lines(list_all):
                 if script != '':
                     id_title_lines[i][j] += utils.genLinkWithScript(linkID, script, '...');
                     id_title_lines[i][j] += "<div id='" + content_divID + "'></div>";
-
+                    #describe_lines[0][i][j] += "<div id='" + content_divID + "'></div>";
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
@@ -577,11 +583,11 @@ def gen_html_body(content, row=0):
     if vertical == '|': 
         verticals = []
         if column_num == "2":
-            verticals = ['<tr class="' + style + '"><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "3":
-            verticals = ['<tr class="' + style + '"><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '"><td>', '</td><td>', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
 
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
