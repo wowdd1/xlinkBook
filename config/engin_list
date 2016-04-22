@@ -121,3 +121,6 @@ engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=
 engin-118 | searchcode | https://searchcode.com/?q= | description:code
 engin-119 | krugle | http://opensearch.krugle.org/document/search/#query= | description:code
 engin-120 | openhub | https://code.openhub.net/search?s= | description:code
+engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | description:ppt
+engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | description:course
+engin-123 | 36kr | http://36kr.com/search/articles/ | description:social

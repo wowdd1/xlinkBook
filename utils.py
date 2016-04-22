@@ -287,8 +287,8 @@ class Utils:
 
         return result
 
-    def getDescDivs(self, divid, enginType, keyword, links_per_row):
-        result = "<div id='" + divid + "'" + ' style="display: none;">'
+    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color):
+        result = '<div id="' + divid + '" style="display: none;">'
         engin_list = self.getEnginList('d:' + enginType)
         #print engin_list
         remain = len(engin_list)
@@ -310,7 +310,7 @@ class Utils:
             #print engin_list_dive
             div = '<div>'
             for e in engin_list_dive:
-                div += self.getEnginHtmlLink(e, keyword, "#332299") + ' '
+                div += self.genLinkWithScript2(scrip, e.strip(), color) + ' '
             div += '</div>'
             result += div
         result += "</div>" 
@@ -323,9 +323,16 @@ class Utils:
     def genLinkWithScript(self, aid, script, text, color=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
         if color != '':
-            return ' <font size="2" color="' + color + '"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="' + color + '">' + text + '</font></a></font>'
+            return ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="' + color + '">' + text + '</font></a></font>'
         else:
-            return ' <font size="2" color="#999966"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
+            return ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
+
+    def genLinkWithScript2(self, script, text, color=''):
+        #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
+        if color != '':
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ';>' + '<font size="2" color="' + color + '">' + text + '</font></a>'
+        else:
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ';>' + '<font size="2" color="#999966">' + text + '</font></a>'
 
     def searchByID(self, engin):
         if engin.strip() == 'textbooksearch':
