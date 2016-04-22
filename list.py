@@ -896,7 +896,9 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True:    
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body_v2(get_line(describe_lines[l], 0, 2, i), i, l)
+                            desc_line = get_line(describe_lines[l], 0, 2, i)
+                            if isSpaceLine(desc_line) == False:
+                                print gen_html_body_v2(desc_line, i, l)
                         else:
                             print get_line(describe_lines[l], 0, 2, i)
             if len(id_title_lines[0]) > len(id_title_lines[1]):
@@ -911,7 +913,9 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body_v2(get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical, last, l)
+                            desc_line = get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
+                            if isSpaceLine(desc_line) == False:
+                                print gen_html_body_v2(desc_line, last, l)
                         else:
                             print get_line(describe_lines[l], 0, 1, last) + get_space_cell(1, 2) + vertical
 
@@ -937,7 +941,9 @@ def print_list(all_lines, file_name = ''):
                 if output_with_describe == True:
                     for l in range(0, len(describe_lines)):
                         if html_style == True:
-                            print gen_html_body_v2(get_line(describe_lines[l], 0, 1, i), i, l)
+                            desc_line = get_line(describe_lines[l], 0, 1, i)
+                            if isSpaceLine(desc_line) == False:
+                                print gen_html_body_v2(desc_line, i, l)
                         else:
                             print get_line(describe_lines[l], 0, 1, i)
 
