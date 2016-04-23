@@ -31,8 +31,9 @@ output_navigation_links = False
 merger_result = False
 top_row = 0
 old_top_row = 0
-max_links_row = 10
-max_nav_links_row = 12
+max_links_row = 9
+max_nav_link_row = 12
+max_nav_links_row = 8
 default_links_row = 2
 
 utils = Utils()
@@ -101,7 +102,7 @@ function navTopic(obj, divID, parentDivID, countIndex){\
         var children = parentDiv.children;\
         for (var j = 0, len = children.length; j < len; j++) {\
             children[j].style.color="#888888";\
-            children[j].style.fontSize="10pt";\
+            children[j].style.fontSize="9pt";\
         }\
     }\
     obj.style.color="#822312";\
@@ -529,9 +530,9 @@ def build_lines(list_all):
                                     for link in navLinks:
                                         nav_div_id = "#div-nav-" + str(count_index)
                                         divID = '#div'
-                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str(len(navLinks) / max_nav_links_row) + ');', link, '#888888')
+                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str(len(navLinks) / max_nav_link_row) + ');', link, '#888888', 9)
                                         count += 1 
-                                        if count >= max_nav_links_row:
+                                        if count >= max_nav_link_row:
                                             div_content_list.append('<div id="' + nav_div_id + '">')
                                             div_content_list.append(content)
                                             div_content_list.append('</div>')
@@ -544,7 +545,7 @@ def build_lines(list_all):
                                         div_content_list.append('</div>')
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_links_row, 'searchTopic(this,"' + "#topic" + '");', '#323555'))
+                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_nav_links_row, 'searchTopic(this,"' + "#topic" + '");', '#822312', 15))
                                 if l == lines - 1:
                                     gen_html_done = True
 

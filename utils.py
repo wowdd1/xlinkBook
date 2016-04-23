@@ -267,7 +267,7 @@ class Utils:
                 engin_list.append(record.get_title().strip())
         return engin_list
 
-    def getEnginListLinks(self, engins, topic, id='', query = ''):
+    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
         if topic == '':
             return ''
         result = {}
@@ -283,11 +283,11 @@ class Utils:
                 keyword = id.strip()
             else:
                 keyword = topic.strip()
-            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank"> <font size="2" color="#999966">' + engin_display + '</font></a>'
+            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + engin_display + '</a>'
 
         return result
 
-    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color):
+    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, fontSize):
         result = '<div id="' + divid + '" style="display: none;">'
         engin_list = self.getEnginList('d:' + enginType)
         #print engin_list
@@ -311,7 +311,7 @@ class Utils:
             #print engin_list_dive
             div = '<div id="' + divid + '-' + str(count) + '">'
             for e in engin_list_dive:
-                div += self.genLinkWithScript2(scrip, e.strip(), color) + ' '
+                div += self.genLinkWithScript2(scrip, e.strip(), color, fontSize) + ' '
             div += '</div>'
             count += 1
             result += div
@@ -329,12 +329,12 @@ class Utils:
         else:
             return ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
 
-    def genLinkWithScript2(self, script, text, color=''):
+    def genLinkWithScript2(self, script, text, color='', fontSize=12):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
         if color != '':
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color:' + color + ' ; font-size: 10pt;">' + text + '</a>'
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + text + '</a>'
         else:
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color: rgb(136, 136, 136);" font-size: 10pt;>' + text + '</a>'
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color: rgb(136, 136, 136);" font-size: ' + str(fontSize) + 'pt;>' + text + '</a>'
 
     def searchByID(self, engin):
         if engin.strip() == 'textbooksearch':
