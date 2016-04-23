@@ -466,7 +466,7 @@ def build_lines(list_all):
                 else:
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
                 if engin != '':
-                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), '#33EE22')
+                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())#, '#33EE22')
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
