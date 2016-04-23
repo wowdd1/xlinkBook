@@ -252,12 +252,12 @@ def color_keyword(text):
     for k in keyword_list:
         if (color_index - 1) % 2 == 0:
             if html_style == True:
-                result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
+                result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
             else:
                 result = result.replace(k, utils.getColorStr('brown', k))
         else:
             if html_style == True:
-                result = result.replace(k, '<font color="#CCFF66">' + k + '</font>')
+                result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
             else:
                 result = result.replace(k, utils.getColorStr('darkcyan', k))
 
@@ -466,7 +466,7 @@ def build_lines(list_all):
                 else:
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
                 if engin != '':
-                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())
+                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), '#33EE22')
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
