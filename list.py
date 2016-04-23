@@ -93,9 +93,19 @@ function searchTopic(obj, topic){\
         }\
     }\
 }\
-function navTopic(obj, divID){\
+function navTopic(obj, divID, parentDivID, countIndex){\
     var targetid = divID + "-" + obj.text;\
     var target=document.getElementById(targetid);\
+    for (var i = 0; i < countIndex + 1; i++) {\
+        var parentDiv = document.getElementById(parentDivID + i.toString());\
+        var children = parentDiv.children;\
+        for (var j = 0, len = children.length; j < len; j++) {\
+            children[j].style.color="#888888";\
+            children[j].style.fontSize="10pt";\
+        }\
+    }\
+    obj.style.color="#822312";\
+    obj.style.fontSize="12pt";\
     if (target.style.display == ""){\
         target.style.display="none";\
     } else {\
@@ -515,19 +525,21 @@ def build_lines(list_all):
                                         hidenScript += 'hidendiv_2("' + '#div-' + link2 + '");'
                                     count = 0
                                     count_index = 0
+                                    nav_div_id = ''
                                     for link in navLinks:
+                                        nav_div_id = "#div-nav-" + str(count_index)
                                         divID = '#div'
-                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\");', link, '#888888')
+                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str(len(navLinks) / max_nav_links_row) + ');', link, '#888888')
                                         count += 1 
                                         if count >= max_nav_links_row:
-                                            div_content_list.append('<div id="#div-nav-' + str(count_index)+ '">')
+                                            div_content_list.append('<div id="' + nav_div_id + '">')
                                             div_content_list.append(content)
                                             div_content_list.append('</div>')
                                             count_index += 1
                                             count = 0
                                             content = '' 
                                     if content != '':
-                                        div_content_list.append('<div id="#div-nav-' + str(count_index)+ '">')
+                                        div_content_list.append('<div id="' + nav_div_id + '">')
                                         div_content_list.append(content)
                                         div_content_list.append('</div>')
                                     for link in navLinks:

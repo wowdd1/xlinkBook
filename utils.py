@@ -332,9 +332,9 @@ class Utils:
     def genLinkWithScript2(self, script, text, color=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
         if color != '':
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + '>' + '<font size="2" color="' + color + '">' + text + '</font></a>'
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color:' + color + ' ; font-size: 10pt;">' + text + '</a>'
         else:
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + '>' + '<font size="2" color="#999966">' + text + '</font></a>'
+            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color: rgb(136, 136, 136);" font-size: 10pt;>' + text + '</a>'
 
     def searchByID(self, engin):
         if engin.strip() == 'textbooksearch':
