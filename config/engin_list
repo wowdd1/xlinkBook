@@ -1,4 +1,4 @@
-engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | description: all star
+engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | description:default webpage star
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | description:paper star
 engin-4 | arxiv | http://search.arxiv.org:8081/?in=grp_cs&query= | description:paper star
@@ -16,8 +16,8 @@ engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | desc
 engin-16 | wowebook | http://www.wowebook.co/?s= | description:book
 engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | description:paper
 engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | description:paper
-engin-19 | baidu | http://www.baidu.com/s?word= | description:all star
-engin-20 | bing | http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq= | description:all
+engin-19 | baidu | http://www.baidu.com/s?word= | description:webpage star
+engin-20 | bing | http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq= | description:webpage
 engin-21 | academic | http://academic.research.microsoft.com/Search?query= | description:paper organization
 engin-22 | xueshu | http://xueshu.baidu.com/s?wd= | description:paper
 engin-23 | dblp | http://dblp.uni-trier.de/search?q= | description:paper
@@ -27,8 +27,8 @@ engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= |
 engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent
 engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent star
 engin-29 | patents.google | https://patents.google.com/?q= | description:patent
-engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:all
-engin-31 | youtube | https://www.youtube.com/results?search_query= | description:course star
+engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:webpage
+engin-31 | youtube | https://www.youtube.com/results?search_query= | description:default course talk star
 engin-32 | coursera | https://www.coursera.org/courses?query= | description:course star
 engin-33 | edusalsa | https://edusalsa.com/search?q= | description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | description:course star
@@ -124,3 +124,10 @@ engin-120 | openhub | https://code.openhub.net/search?s= | description:code
 engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | description:ppt
 engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | description:course
 engin-123 | 36kr | http://36kr.com/search/articles/ | description:social
+engin-124 | quora | https://www.quora.com/search?q= | description:social
+engin-125 | sogou | http://www.sogou.com/web?query= | description:webpage
+engin-126 | 360so | https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q= | description:webpage
+engin-127 | xmarks | http://www.xmarks.com/topic/ | description:website
+engin-128 | alexa | http://www.alexa.com/siteinfo/ | description:website
+engin-129 | sitesearch | http://www.similarsitesearch.com/cn/q.php?URL= | description:website
+engin-130 | similarsites | http://www.similarsites.com/site/ | description:website
