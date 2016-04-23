@@ -204,8 +204,8 @@ def border_style_four():
 def border_style_five(row = 1):
     border_style_four()
     global custom_cell_row, output_with_describe
-    custom_cell_row = row
-    output_with_describe = True
+    #custom_cell_row = row
+    #output_with_describe = True
 
 def border_style_custom(style):
     global plus, subtraction, vertical
@@ -460,7 +460,7 @@ def build_lines(list_all):
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
-            if output_with_describe == True:
+            if output_with_describe or html_style:
                 lij = ''
                 lines = len(describe_lines)
                 linkID = ''
@@ -478,62 +478,63 @@ def build_lines(list_all):
                             engin_list_dive = []
                             engin_list_sub = engin_list[default_links_row :]
 
-                            lij = str(l) + str(i) + str(j)
+                            ijl = str(i) + str(j) + str(l)
 
                             if l == 0:
-                                linkID = 'a-' + lij;
+                                linkID = 'a-' + ijl;
                                 script += "setText('" + linkID +"');"
-                                content_divID = "div-" + lij
+                                content_divID = "div-" + ijl
                                 script += "showdiv('" + content_divID + "', '" + linkID +"');"
-                                #script += "showdiv('row-" + str(j) + '-' + str(l)+ "', '" + linkID +"');"
                                 script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '&nbsp;')+ "');"
-                            if gen_html_done:
-                                continue
+                            if output_with_describe:
+                                script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
+                                script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
+                            if gen_html_done == False:
 
-                            if (l+1) * max_links_row < len(engin_list_sub):
-                                engin_list_dive = engin_list_sub[l * max_links_row : (l+1) * max_links_row]
-                            else:
-                                engin_list_dive = engin_list_sub[l * max_links_row :]
-                            if len(engin_list_dive) == 0:
-                                describe_lines[l][i][j] = align_describe('')
-                            else:
-                                describe_lines[l][i][j] = align_describe('#' + '#'.join(engin_list_dive))
-                            if describe_lines[l][i][j].find('#') != -1:
-                                describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
+                                if (l+1) * max_links_row < len(engin_list_sub):
+                                    engin_list_dive = engin_list_sub[l * max_links_row : (l+1) * max_links_row]
+                                else:
+                                    engin_list_dive = engin_list_sub[l * max_links_row :]
+                                if len(engin_list_dive) == 0:
+                                    describe_lines[l][i][j] = align_describe('')
+                                else:
+                                    describe_lines[l][i][j] = '#' + '#'.join(engin_list_dive)
+                                if describe_lines[l][i][j].find('#') != -1:
+                                    describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
                                                       '<div id="#div-star-' + str(l) +'" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
-                                for (k, v) in engin_list_dict.items():
-                                    describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
-                                engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
-                                div_content_list.append(engin_content)
+                                    for (k, v) in engin_list_dict.items():
+                                        describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
+                                    engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
+                                    div_content_list.append(engin_content)
 
-                            if l == lines - 1 and output_navigation_links:
-                                navLinks = utils.getNavLinkList()
-                                content = ''
-                                hidenScript = ''
-                                for link2 in navLinks:
-                                    hidenScript += 'hidendiv_2("' + '#div-' + link2 + '");'
-                                count = 0
-                                count_index = 0
-                                for link in navLinks:
-                                    divID = '#div'
-                                    content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\");', link, '#888888')
-                                    count += 1 
-                                    if count >= max_nav_links_row:
+                                if l == lines - 1 and output_navigation_links:
+                                    navLinks = utils.getNavLinkList()
+                                    content = ''
+                                    hidenScript = ''
+                                    for link2 in navLinks:
+                                        hidenScript += 'hidendiv_2("' + '#div-' + link2 + '");'
+                                    count = 0
+                                    count_index = 0
+                                    for link in navLinks:
+                                        divID = '#div'
+                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\");', link, '#888888')
+                                        count += 1 
+                                        if count >= max_nav_links_row:
+                                            div_content_list.append('<div id="#div-nav-' + str(count_index)+ '">')
+                                            div_content_list.append(content)
+                                            div_content_list.append('</div>')
+                                            count_index += 1
+                                            count = 0
+                                            content = '' 
+                                    if content != '':
                                         div_content_list.append('<div id="#div-nav-' + str(count_index)+ '">')
                                         div_content_list.append(content)
                                         div_content_list.append('</div>')
-                                        count_index += 1
-                                        count = 0
-                                        content = '' 
-                                if content != '':
-                                    div_content_list.append('<div id="#div-nav-' + str(count_index)+ '">')
-                                    div_content_list.append(content)
-                                    div_content_list.append('</div>')
-                                for link in navLinks:
-                                    divID = '#div-' + link
-                                    div_content_list.append(utils.getDescDivs(divID, link, title, max_links_row, 'searchTopic(this,"' + "#topic" + '");', '#323555'))
-                            if l == lines - 1:
-                                gen_html_done = True
+                                    for link in navLinks:
+                                        divID = '#div-' + link
+                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_links_row, 'searchTopic(this,"' + "#topic" + '");', '#323555'))
+                                if l == lines - 1:
+                                    gen_html_done = True
 
 
                     if end >= describe:
@@ -541,7 +542,7 @@ def build_lines(list_all):
                             describe_lines[l][i][j] = align_describe("")
                         continue
                     end = next_pos(list_all[i][j].get_describe(), start) 
-                    if html_style == False:
+                    if output_with_describe:
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
                 count = 0
@@ -553,7 +554,6 @@ def build_lines(list_all):
                 if script != '':
                     id_title_lines[i][j] += utils.genLinkWithScript(linkID, script, '...');
                     id_title_lines[i][j] += "<div id='" + content_divID + "'></div>";
-                    #describe_lines[0][i][j] += "<div id='" + content_divID + "'></div>";
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
@@ -596,14 +596,16 @@ def gen_html_body_v2(content, row, subRow):
     if row % 2 == 0:
         style = ''
     index = 0
+    tr_id = "tr-" + str(row) + str(subRow)
+    td_div_id = str(row) + str(subRow)
     if vertical == '|':
         verticals = []
         if column_num == "2":
-            verticals = ['<tr class="' + style + '" id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td><td>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none;">', '</div></td></tr>']
         elif column_num == "3":
-            verticals = ['<tr class="' + style + '" id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td><td>', '</td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td><td>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none;">', '</div></td><td>', '</td><td><div id="td-div-2' + td_div_id + '" style="display: none;">', '</div></td></tr>']
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '" id="row-' + str(row) + '-' + str(subRow) +'" style="display: none;"><td>', '</td><td>', '</td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td></tr>']
 
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
