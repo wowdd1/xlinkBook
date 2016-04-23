@@ -559,7 +559,8 @@ def build_lines(list_all):
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
                 count = 0
-                for e in engin_list:
+                
+                for e in utils.getEnginList('d:default'):
                     id_title_lines[i][j] += utils.getEnginHtmlLink(e, title)
                     count += 1
                     if count == default_links_row:
