@@ -156,3 +156,12 @@ ex:
 the output look like this:
 
    ![html table](http://img.my.csdn.net/uploads/201604/24/1461487504_4866.png)
+
+
+
+config:
+
+    add engin type please edit config/engin_type file
+    
+    add search engin please edit config/engin_list file
+
