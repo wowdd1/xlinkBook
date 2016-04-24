@@ -560,14 +560,15 @@ def build_lines(list_all):
                     start = end
                 count = 0
                 
-                for e in utils.getEnginList('d:default'):
-                    id_title_lines[i][j] += utils.getEnginHtmlLink(e, title)
-                    count += 1
-                    if count == default_links_row:
-                        break
-                if script != '':
-                    id_title_lines[i][j] += utils.genLinkWithScript(linkID, script, '...');
-                    id_title_lines[i][j] += "<div id='" + content_divID + "'></div>";
+                if html_style: 
+                    for e in utils.getEnginList('d:default'):
+                        id_title_lines[i][j] += utils.getEnginHtmlLink(e, title)
+                        count += 1
+                        if count == default_links_row:
+                            break
+                    if script != '':
+                        id_title_lines[i][j] += utils.genLinkWithScript(linkID, script, '...');
+                        id_title_lines[i][j] += "<div id='" + content_divID + "'></div>";
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
