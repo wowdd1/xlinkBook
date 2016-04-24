@@ -33,7 +33,7 @@ engin-32 | coursera | https://www.coursera.org/courses?query= | description:cour
 engin-33 | edusalsa | https://edusalsa.com/search?q= | description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | description:course star
 engin-35 | videolectures | http://videolectures.net/site/search/?q= | description:talk star
-engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | description:people
+engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | description:people rank
 engin-37 | ted | http://www.ted.com/search?q= | description:talk
 engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | description:paper
 engin-39 | frontiersin | http://www.frontiersin.org/SearchData.aspx?sq= | description:paper
@@ -94,7 +94,7 @@ engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | des
 engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | description:paper
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | description:social star
 engin-93 | crunchbase | https://www.crunchbase.com/$/ | description:organization people product event star
-engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | description:organization
+engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | description:organization rank
 engin-95 | douban | https://www.douban.com/search?q= | description:organization book people
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | description:book
 engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | description:job
@@ -145,3 +145,6 @@ engin-141 | baike | http://baike.baidu.com/search?pn=0&rn=0&enc=utf8&word= | des
 engin-142 | wenku | http://wenku.baidu.com/search?word= | description:ppt doc
 engin-143 | bitbucket | https://bitbucket.org/repo/all?name= | description:project
 engin-144 | edusalsa | https://edusalsa.com/search?q= | description:course
+engin-145 | coursecycle | https://coursecycle.com/ | description:course rank
+engin-146 | stanfordrank | http://www.stanfordrank.com/search?query= | description:course rank
+engin-147 | treeviews | http://treeviews.io/?query= | description:course rank
