@@ -983,7 +983,7 @@ def print_list(all_lines, file_name = ''):
             
 current_level = 1
 level = 100
-def get_lines_from_dir(dir_name, fileNameFilter = ''):
+def get_lines_from_dir(dir_name, fileNameFilter = '', fileNameNotContain=''):
     global current_level
     current_level += 1
     cur_list = os.listdir(dir_name)
@@ -993,6 +993,9 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
             continue
         if fileNameFilter != '' and item.find(fileNameFilter) == -1:
             continue
+        if fileNameNotContain != "" and item.find(fileNameNotContain) != -1:
+            continue
+            
 
         full_path = os.path.join(dir_name, item)
         if os.path.isfile(full_path):
@@ -1108,7 +1111,10 @@ def main(argv):
         dirName = split[0]
         if dirName.startswith('db') == False:
             dirName = 'db/' + dirName
-        print_list(get_lines_from_dir(dirName, split[1]))
+        if len(split) == 2:
+            print_list(get_lines_from_dir(dirName, split[1]))
+        elif len(split) == 3:
+            print_list(get_lines_from_dir(dirName, split[1], split[2]))
 
 if __name__ == '__main__':
     main(sys.argv)
