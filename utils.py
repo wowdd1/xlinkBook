@@ -136,6 +136,8 @@ class Utils:
             f = open('config/engin_type','rU')
             all_lines = f.readlines()
             for line in all_lines:
+                if line.startswith('#'):
+                    continue
                 record = Record(line)
                 if record.get_title() != '':
                     self.search_engin_type.append(record.get_title().strip())
