@@ -12,7 +12,7 @@ usage:
     
     otherwise, it will search only in title that contain keyword
 
--s: output with color
+-s: output with color or html style
 
 -d: output the description
 
@@ -23,6 +23,10 @@ usage:
 -t: the top rows for display
 
 -m: merger the results
+
+-n: output nav links
+
+-b: broad type, 4 is html type
 
 keyword or regexp: the keyword for filter course
 
@@ -138,4 +142,17 @@ ex:
     
     ./find_professor "Andrew Ng"
 
+gen html table:
+    
+    ./list.py -i "file location" -b "html is 4" -c "column number" -e "search engin" -n -d -s "style" > "some file"
 
+ex:
+
+    ./list.py -i db/eecs/computer-science-stanford2016 -b 4 -c 3 -e "d:star" -n -d > ~/stanford.html 
+    ./list.py -i eecs#stanford -b 4 -c 3 -e "description:star" -n -d -s 4 > ~/stanford.html 
+    ./list.py -i db#eecs#ai -b 4 -c 3 -e "youtube google baidu"  -s 4 > ~/stanford.html 
+    ./list.py -i db/eecs/cmu/ -m -b 4 -c 3 -e "youtube google baidu"  -s 4 > ~/cmu.html 
+
+the output look like this:
+
+   ![html table](http://img.my.csdn.net/uploads/201604/24/1461487504_4866.png)
