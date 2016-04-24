@@ -496,7 +496,7 @@ def build_lines(list_all):
                                 script += "setText('" + linkID +"');"
                                 content_divID = "div-" + ijl
                                 script += "showdiv('" + content_divID + "', '" + linkID +"');"
-                                script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '&nbsp;')+ "');"
+                                script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '%20')+ "');"
                             if output_with_describe:
                                 script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
                                 script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
