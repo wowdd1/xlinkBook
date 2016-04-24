@@ -138,6 +138,6 @@ engin-134 | ebay | http://www.ebay.com/sch/i.html?_nkw= | description:product
 engin-135 | jrsearch | http://jrsearch.jd.com/gs/search?q= | description:product
 engin-136 | kickstarter | https://www.kickstarter.com/discover/advanced?ref=nav_search&term= | description:product
 engin-137 | indiegogo | https://www.indiegogo.com/search#/?q= | description:product
-engin-138 | law-star | http://law1.law-star.com/search?kw= | description:law
-engin-139 | worldlii | http://www.worldlii.org/cgi-bin/sinosrch.cgi?query= | description:law
-engin-140 | law.com | http://www.law.com/search/?query= | description:law
+engin-138 | law-star | http://law1.law-star.com/search?kw= | description:legal
+engin-139 | worldlii | http://www.worldlii.org/cgi-bin/sinosrch.cgi?query= | description:legal
+engin-140 | law.com | http://www.law.com/search/?query= | description:legal
