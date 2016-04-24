@@ -141,3 +141,5 @@ engin-137 | indiegogo | https://www.indiegogo.com/search#/?q= | description:prod
 engin-138 | law-star | http://law1.law-star.com/search?kw= | description:legal
 engin-139 | worldlii | http://www.worldlii.org/cgi-bin/sinosrch.cgi?query= | description:legal
 engin-140 | law.com | http://www.law.com/search/?query= | description:legal
+engin-141 | baike | http://baike.baidu.com/search?pn=0&rn=0&enc=utf8&word= | description:wiki
+engin-142 | wenku | http://wenku.baidu.com/search?word= | description:ppt doc
