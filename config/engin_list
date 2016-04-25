@@ -144,7 +144,7 @@ engin-140 | law.com | http://www.law.com/search/?query= | description:legal
 engin-141 | baike | http://baike.baidu.com/search?pn=0&rn=0&enc=utf8&word= | description:wiki
 engin-142 | wenku | http://wenku.baidu.com/search?word= | description:ppt doc
 engin-143 | bitbucket | https://bitbucket.org/repo/all?name= | description:project
-engin-144 | edusalsa | https://edusalsa.com/search?q= | description:course
+engin-144 | edusalsa | https://edusalsa.com/search?q= | description:course rank
 engin-145 | coursecycle | https://coursecycle.com/ | description:course rank
 engin-146 | stanfordrank | http://www.stanfordrank.com/search?query= | description:course rank
 engin-147 | treeviews | http://treeviews.io/?query= | description:course rank
