@@ -25,7 +25,7 @@ engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424
 engin-25 | springer | http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText= | description:paper
 engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= | description:paper
 engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | description:patent
-engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent star
+engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | description:patent
 engin-29 | patents.google | https://patents.google.com/?q= | description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | description:all
 engin-31 | youtube | https://www.youtube.com/results?search_query= | description:default course talk star
@@ -121,7 +121,7 @@ engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=
 engin-118 | searchcode | https://searchcode.com/?q= | description:code
 engin-119 | krugle | http://opensearch.krugle.org/document/search/#query= | description:code
 engin-120 | openhub | https://code.openhub.net/search?s= | description:code
-engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | description:ppt
+engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | description:ppt star
 engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | description:course
 engin-123 | 36kr | http://36kr.com/search/articles/ | description:social
 engin-124 | quora | https://www.quora.com/search?q= | description:social
@@ -148,3 +148,6 @@ engin-144 | edusalsa | https://edusalsa.com/search?q= | description:course rank
 engin-145 | coursecycle | https://coursecycle.com/ | description:course rank
 engin-146 | stanfordrank | http://www.stanfordrank.com/search?query= | description:course rank
 engin-147 | treeviews | http://treeviews.io/?query= | description:course rank
+engin-148 | cmu.edu | https://web-search.andrew.cmu.edu/search?entqr=3&entsp=a&sort=date%3AD%3AL%3Ad1&output=xml_no_dtd&client=default_frontend&ud=1&oe=UTF-8&ie=UTF-8&proxystylesheet=default_frontend&q= | description:people course
+engin-149 | ucl.ac | https://search2.ucl.ac.uk/s/search.html?collection=website-meta&profile=_website&tab=websites&query= | description:people course
+engin-150 | playlist | https://www.youtube.com/results?search_query=playlist+ | description:default course talk star

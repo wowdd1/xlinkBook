@@ -545,7 +545,8 @@ def build_lines(list_all):
                                         div_content_list.append('</div>')
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_nav_links_row, 'searchTopic(this,"' + "#topic" + '");', '#822312', 15))
+                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_nav_links_row, 'searchTopic(this,"' + "#topic" + '");', '#822312', 15, 
+                                                                '#131612', 12))
                                 if l == lines - 1:
                                     gen_html_done = True
 
