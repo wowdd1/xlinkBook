@@ -285,7 +285,7 @@ class Utils:
 
         return result
 
-    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, fontSize):
+    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, fontSize, color2, fontSize2):
         result = '<div id="' + divid + '" style="display: none;">'
         engin_list = self.getEnginList('d:' + enginType)
         #print engin_list
@@ -308,8 +308,13 @@ class Utils:
                 remain = 0
             #print engin_list_dive
             div = '<div id="' + divid + '-' + str(count) + '">'
+            link_count = 0
             for e in engin_list_dive:
-                div += self.genLinkWithScript2(scrip, e.strip(), color, fontSize) + ' '
+                link_count += 1
+                if link_count % 2 == 0:
+                    div += self.genLinkWithScript2(scrip, e.strip(), color2, fontSize2) + ' '
+                else:
+                    div += self.genLinkWithScript2(scrip, e.strip(), color, fontSize) + ' '
             div += '</div>'
             count += 1
             result += div

@@ -71,6 +71,7 @@ class Tag():
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
                          self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal]
 
+        self.tag_list_short = ["d:"]
 class CourseRecord(Record):
 
     describe = ''
