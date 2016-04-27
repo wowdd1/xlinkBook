@@ -90,7 +90,11 @@ function searchTopic(obj, topic){\
     for(var i=0;i<options.length;i++){\
         if (trimStr(options[i].text) == trimStr(obj.text)) {\
             console.log("xx", options[i].value);\
-            window.open(options[i].value + topic.replace("&nbsp;", " "));\
+            if (trimStr(options[i].text) == "arxiv" || trimStr(options[i].text) == "doaj" || trimStr(options[i].text) == "ust.hk"){\
+                window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")));\
+            } else {\
+                window.open(options[i].value + topic.replace("&nbsp;", " "));\
+            }\
         }\
     }\
 }\

@@ -225,6 +225,8 @@ class Utils:
             url = url.replace("$", keyword)
         if engin == "doaj":
             url = url.replace('$', keyword)
+        if engin == "ust.hk":
+            url = url.replace('$', keyword)
         if engin == "crunchbase" and query.find(':') != -1:
             url = self.getEnginUrl(engin) + keyword.strip().replace(' ', '-')
             query = query[query.find(':') + 1 :].strip()
@@ -250,10 +252,7 @@ class Utils:
                 for tag in tags:
                     if desc.find(tag) != -1:
                         engin = record.get_title().strip()
-                        if engin == 'google' or engin == 'scholar' or engin == 'youtube':
-                            engin_list.insert(0, engin)
-                        else:
-                            engin_list.append(record.get_title().strip())
+                        engin_list.append(record.get_title().strip())
             return engin_list
         else:
             return engins.split(' ')
@@ -299,12 +298,11 @@ class Utils:
             #print 'last' + str(last)
             if remain > links_per_row:
                 engin_list_dive = engin_list[last : last + links_per_row - 1]
-                remain -= links_per_row
                 last += links_per_row - 1
                 #print remain
                 #print last
             else:
-                engin_list_dive = engin_list[last : last + remain]
+                engin_list_dive = engin_list[last : ]
                 remain = 0
             #print engin_list_dive
             div = '<div id="' + divid + '-' + str(count) + '">'
@@ -315,6 +313,7 @@ class Utils:
                     div += self.genLinkWithScript2(scrip, e.strip(), color2, fontSize2) + ' '
                 else:
                     div += self.genLinkWithScript2(scrip, e.strip(), color, fontSize) + ' '
+            remain -= links_per_row
             div += '</div>'
             count += 1
             result += div
