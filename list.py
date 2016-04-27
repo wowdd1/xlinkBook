@@ -521,7 +521,7 @@ def build_lines(list_all):
                                         describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
                                     engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
                                     div_content_list.append(engin_content)
-
+                                describe_lines[l][i][j] = ''
                                 if l == lines - 1 and output_navigation_links:
                                     navLinks = utils.getNavLinkList()
                                     content = ''
