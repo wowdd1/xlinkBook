@@ -30,7 +30,10 @@ class UCLSpider(Spider):
                     print li.a.text
                     text_list = li.a.text.strip().split('-')
                     self.count += 1
-                    self.write_db(f, text_list[0], text_list[1], 'http://www.cs.ucl.ac.uk/' + li.a['href'])
+                    course_id = text_list[0]
+                    if text_list[0].startswith('ENGS') == False:
+                        course_id = 'COMP' + course_id 
+                    self.write_db(f, course_id, text_list[1], 'http://www.cs.ucl.ac.uk/' + li.a['href'])
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
