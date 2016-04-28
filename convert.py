@@ -31,7 +31,10 @@ delete_from_char = ''
 def printLine(line, link=''):
     #line_id = random.randrange(10, 100, 2)
     if link != '' and line.startswith('http') == False:
-        link = source[0 : source.find('com') + 3] + link
+        if source.find('com') != -1:
+            link = source[0 : source.find('com') + 3] + link
+        if source.find('uk') != -1:
+            link = source[0 : source.find('uk') + 3] + link
     if delete_from_char != '' and line.find(delete_from_char) != -1: 
         line = line[0 : line.find(delete_from_char)].strip()
     print prefix + "-" + str(line_id) + " |"  + line.strip() + " | " + link + " |"
