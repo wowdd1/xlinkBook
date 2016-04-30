@@ -161,3 +161,6 @@ engin-157 | imperial | http://google.imperial.ac.uk/search?sr=0&secure=1&client=
 engin-158 | search.cam | http://search.cam.ac.uk/web?query= | description:course people
 engin-159 | caltech.edu | https://www.caltech.edu/search/sites/ | description:course people
 engin-160 | ust.hk | http://www.ust.hk/search/$/?sopt=google | description:course people
+engin-161 | physicsworld | http://physicsworld.com/cws/search?siteCode=phw&query= | description:journal
+engin-162 | wired | http://www.wired.com/?s= | description:journal
+engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | description:journal
