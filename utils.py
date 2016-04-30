@@ -16,6 +16,7 @@ import requests
 import sys
 from bs4 import BeautifulSoup;
 from record import Record
+from record import PriorityRecord
 
 regex = re.compile("\033\[[0-9;]*m")
 py3k = sys.version_info[0] >= 3
@@ -129,7 +130,7 @@ class Utils:
             f = open('config/engin_list','rU')
             all_lines = f.readlines()
             for line in all_lines:
-                record = Record(line)
+                record = PriorityRecord(line)
                 if record.get_title() != '':
                     self.search_engin_dict[record.get_title().strip()] = record
         if os.path.exists('config/engin_type'):
@@ -257,6 +258,10 @@ class Utils:
         else:
             return engins.split(' ')
 
+    def getEnginPriority(self, engin):
+        record = self.search_engin_dict[engin]
+        return record.get_priority()
+
     def getAllEnginList(self):
         engin_list = []
         for record in self.search_engin_dict.values():
@@ -284,7 +289,7 @@ class Utils:
 
         return result
 
-    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, fontSize, color2, fontSize2):
+    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, color2, fontSize):
         result = '<div id="' + divid + '" style="display: none;">'
         engin_list = self.getEnginList('d:' + enginType)
         #print engin_list
@@ -310,15 +315,20 @@ class Utils:
             for e in engin_list_dive:
                 link_count += 1
                 if link_count % 2 == 0:
-                    div += self.genLinkWithScript2(scrip, e.strip(), color2, fontSize2) + ' '
+                    div += self.genLinkWithScript2(scrip, e.strip() , color2, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + ' '
                 else:
-                    div += self.genLinkWithScript2(scrip, e.strip(), color, fontSize) + ' '
+                    div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + ' '
             remain -= links_per_row
             div += '</div>'
             count += 1
             result += div
         result += "</div>" 
         return result
+
+    def priority2fontsize(self, priority, fontSize):
+        priorityInt = int(priority.strip())
+        return fontSize + priorityInt + 1
+        
  
     def getNavLinkList(self):
         return self.search_engin_type

@@ -66,13 +66,17 @@ class Tag():
         self.tag_platform = 'platform:'
         self.tag_specialization = 'specialization:'
         self.tag_journal = "journal:"
+
+        self.tag_priority = "priority:"
        
         self.tag_list = [self.tag_videourl, self.tag_author, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal]
+                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority]
 
         self.tag_list_short = ["d:"]
-class CourseRecord(Record):
+
+
+class WrapRecord(Record):
 
     describe = ''
     def __init__(self, line):
@@ -105,6 +109,20 @@ class CourseRecord(Record):
                 return self.describe[start_pos + len(tag) : ]
 
         return None
+
+
+class PriorityRecord(WrapRecord):
+
+    def __init__(self, line):
+        WrapRecord.__init__(self, line)
+
+    def get_priority(self):
+        return self.get_tag_content(self.tag.tag_priority)
+
+class CourseRecord(WrapRecord):
+
+    def __init__(self, line):
+        WrapRecord.__init__(self, line)
 
     def get_videourl(self):
         return self.get_tag_content(self.tag.tag_videourl)
