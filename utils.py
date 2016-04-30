@@ -326,6 +326,8 @@ class Utils:
         return result
 
     def priority2fontsize(self, priority, fontSize):
+        if priority.strip() == '':
+            return fontSize
         priorityInt = int(priority.strip())
         return fontSize + priorityInt + 1
         
