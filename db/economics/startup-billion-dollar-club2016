@@ -48,14 +48,14 @@ bdc-47 | CloudFlare | CloudFlare | description:Matthew Prince (co-founder) 72 3 
 bdc-48 | Evernote | Evernote | description:Phil Libin (co-founder) 302 5 1000 Redwood City, Calif. 2005 Software competitors:Microsoft, Google
 bdc-49 | Good Technology | Good Technology | description:Christy Wyatt 476 13 1000 Sunnyvale, Calif. 1996 Software competitors:Symantec, MobileIron, Blackberry
 bdc-50 | Eventbrite | Eventbrite | description:Kevin Hartz (co-founder) 200 6 1000 San Francisco, Calif. 2006 Consumer Internet competitors:Ticketmaster, Sosh
-bdc-51 | Tango | Tango | description:Uri Raz (co-founder) 367 5 1000 Mountain View, Calif. 2009 Consumer Internet competitors:Facebook, Kik, Snapchat, Microsoft's Skype, WhatsApp
+bdc-51 | Tango | Tango | description:Eric Setton (co-founder) 367 5 1000 Mountain View, Calif. 2009 Consumer Internet competitors:Facebook, Kik, Snapchat, Microsoft's Skype, WhatsApp
 bdc-52 | Ola Cabs (ANI Technologies) | Ola Cabs (ANI Technologies) | description:Bhavish Aggarwal (co-founder) 677 7 1000 Mumbai, India 2011 Consumer Internet competitors:Uber, TaxiSure, Meru Cabs
 bdc-53 | InsideSales.com | InsideSales.com | description:David Elkington (co-founder) 199 5 1000 Provo, Utah 2004 Software competitors:Lattice Engines, Fliptop
 bdc-54 | Mogujie | Mogujie | description:Qi Chen (co-founder) 200 4 1000 Hangzhou, China 2011 E-Commerce competitors:Meilishuo, Koudai, Taobao
 bdc-55 | Kabam | Kabam | description:Kevin Chou (co-founder) 245 6 1000 San Francisco, Calif. 2006 Entertainment and Games competitors:Supercell, King Digital Entertainment, Zynga
 bdc-56 | Lookout | Lookout | description:Jim Dolce 284 7 1000 San Francisco, Calif. 2007 Software competitors:
 bdc-57 | Razer | Razer | description:Min-Liang Tan (co-founder) 50 3 1000 Carlsbad, Calif. 1998 Hardware competitors:Dell, Logitech, Fitbone, Jawbone
-bdc-58 | AppDynamics | AppDynamics | description:Jyoti Bansal (founder) 177 8 1000 San Francisco, Calif. 2008 Software competitors:Compuware, New Relic
+bdc-58 | AppDynamics | AppDynamics | description:David Wadhwani 177 8 1000 San Francisco, Calif. 2008 Software competitors:Compuware, New Relic
 bdc-59 | Credit Karma | Credit Karma | description:Kenneth Lin (co-founder) 369 4 1000 San Francisco, Calif. 2007 Financial Services competitors:Intuit, Lendingtree, Quizzle, Credit Sesame
 bdc-60 | JustFab | JustFab | description:Adam Goldenberg and Donald Ressler (co-founders) 250 4 1000 El Segundo, Calif. 2010 E-Commerce competitors:Beachmint, Stitch Fix, Gilt Groupe
 bdc-61 | Honest Co. | Honest Co. | description:Brian Lee (co-founder) 122 5 1000 Santa Monica, Calif. 2011 E-Commerce competitors:Procter & Gamble, Seventh Generation
@@ -96,13 +96,13 @@ bdc-95 | Didi Kuaidi | Didi Kuaidi | description:Wei Cheng (founder) 970 6 0 Bei
 bdc-96 | SimpliVity | SimpliVity | description:Doron Kempel (co-founder) 276 5 0 Westborough, Mass. 2009 Software competitors:EMC, NetApp, Nutanix
 bdc-97 | Farfetch | Farfetch | description:Jose Neves (founder) 195 5 0 London, UK 2008 E-Commerce competitors:Moda Operandi, Neiman Marcus, Net-A-Porter
 bdc-98 | Lyft | Lyft | description:John Zimmer (co-founder) 1010 8 0 San Francisco 2012 Consumer Internet competitors:Uber, Sidecar
-bdc-99 | Tanium | Tanium | description:David Hindawi, co-founder 142 3 0 Emeryville, Calif. 2007 Software competitors:International Business Machines, Cisco Systems
+bdc-99 | Tanium | Tanium | description:Orion Hindawi 142 3 0 Emeryville, Calif. 2007 Software competitors:International Business Machines, Cisco Systems
 bdc-100 | Sprinklr | Sprinklr | description:Ragy Thomas (founder) 170 5 0 New York 2009 Software competitors:Hootsuite Media, Brandwatch, Salesforce.com, Sprout Social
 bdc-101 | Avast Software | Avast Software | description:Vincent Steckler 0 3 0 Prague 1988 Software competitors:AVG Technologies, Microsoft, Symantec, McAfee, Trend Micro, and Kaspersky Lab
 bdc-102 | Domo | Domo | description:Josh James, founder 459 4 0 American Fork, Utah 2010 Software competitors:GoodData, Tableau, Oracle, SAP, Microsoft
 bdc-103 | Prosper Marketplace | Prosper Marketplace | description:Aaron Vermut 360 8 0 San Francisco 2005 Financial Services competitors:Lending Club, CircleLending
 bdc-104 | Pluralsight | Pluralsight | description:Aaron Skonnard (co-founder) 169 2 0 Farmington, Utah 2004 Education competitors:Lynda.com
-bdc-105 | Stemcentrx | Stemcentrx | description:Brian Slingerland (co-founder) 0 1 0 South San Francisco, Calif. 2008 Healthcare competitors:OncoMed Pharmaceuticals, Juno Therapeutics
+bdc-105 | Stemcentrx | Stemcentrx | description:Brian Slingerland (co-founder) 0 3 0 South San Francisco, Calif. 2008 Healthcare competitors:OncoMed Pharmaceuticals, Juno Therapeutics
 bdc-106 | Oscar Health Insurance | Oscar Health Insurance | description:Mario Schlosser (co-founder) 320 5 0 New York, NY 2013 Healthcare competitors:Aetna, UnitedHealth
 bdc-107 | Funding Circle | Funding Circle | description:Samir Desai, co-founder 273 6 0 London 2009 Financial Services competitors:OnDeck Capital, CAN Capital, Prosper, Kabbage, Jimubox, Lending Club
 bdc-108 | Quikr | Quikr | description:Pranay Chulet, founder 350 5 0 Mumbai, India 2005 E-Commerce competitors:Rediff LocalAds, Sulekha, Click.in, Olx.in, ClickIndia, HTClassifieds.com
@@ -142,7 +142,7 @@ bdc-141 | Ele.me | Ele.me | description:Zhang Xuhao (founder) 0 5 0 Shanghai, Ch
 bdc-142 | Okta | Okta | description:Todd McKinnon (co-founder) 0 7 0 San Francisco 2009 Software competitors:Centrify Corp., Microsoft Corp. Ping Identity Corp., Salesforce.com Inc.
 bdc-143 | BlaBlaCar | BlaBlaCar | description:Frederic Mazzella (co-founder) 0 6 0 Paris 2006 Consumer Internet competitors:Uber
 bdc-144 | HelloFresh | HelloFresh | description:Dominik Richter (co-founder) 0 6 0 Berlin 2011 Consumer Internet competitors:Blue Apron, Chefday.com, Forage, Plated
-bdc-145 | Mu Sigma | Mu Sigma  | description:Dhiraj Rajaram (founder) 0 4 0 Northbrook, Ill. 2004 Software competitors:Cognizant Technology Solutions, Tata Consultancy Services, Marketics Technologies India, AbsolutData Technologies, Latentview Analytics
+bdc-145 | Mu Sigma | Mu Sigma  | description:Ambiga Dhiraj 0 4 0 Northbrook, Ill. 2004 Software competitors:Cognizant Technology Solutions, Tata Consultancy Services, Marketics Technologies India, AbsolutData Technologies, Latentview Analytics
 bdc-146 | CureVac | CureVac | description:Ingmar Hoerr (co-founder) 0 6 0 Tubingen, Germany 2000 Healthcare competitors:Moderna Therapeutics, BioNTech, Ethris
 bdc-147 | Thumbtack | Thumbtack | description:Marco Zappacosta (founder) 0 6 0 San Francisco 2009 Consumer Internet competitors:TaskRabbit, Zaarly, Redbeacon, and OpenChime
 bdc-148 | AppDirect | AppDirect | description:Daniel Saks and Nicolas Desmarais (co-founders) 0 5 0 San Francisco 2009 Software competitors:Parallels IP Holdings GmbH, Jacracker Inc.
