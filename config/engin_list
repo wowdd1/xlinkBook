@@ -75,7 +75,7 @@ engin-71 | 163 | http://c.open.163.com/search/search.htm?query= | priority:0 des
 engin-72 | youku | http://www.soku.com/search_playlist/q_ | priority:0 description:course
 engin-73 | tudou | http://www.soku.com/t/npsearch/ | priority:0 description:course
 engin-74 | digitaltutors | http://www.digitaltutors.com/11/search.php?searchString= | priority:0 description:tutorial
-engin-75 | sec | http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&company= | priority:0 description:earning
+engin-75 | sec | http://www.sec.gov/cgi-bin/browse-edgar?owner=exclude&action=getcompany&company= | priority:0 description:finance
 engin-76 | chrome | chrome://bookmarks/#q= | priority:0 description:
 engin-77 | apress | https://www.apress.com/catalogsearch/result/?q= | priority:0 description:book
 engin-78 | oreilly | http://search.oreilly.com/?q= | priority:0 description: book
