@@ -1,0 +1,4 @@
+openai-github-1835-1 | gym | https://github.com/openai/gym | description:A toolkit for developing and comparing reinforcement learning algorithms.
+openai-github-20-2 | atari-py | https://github.com/openai/atari-py | description:A packaged and slightly-modified version of https://github.com/bbitmaster/ale_python_interface
+openai-github-12-3 | mujoco-py | https://github.com/openai/mujoco-py | description:MuJoCo Python bindings
+openai-github-9-4 | pachi-py | https://github.com/openai/pachi-py | description:Python wrappers for Pachi. Contains a modified version of the bleeding-edge Pachi source code.

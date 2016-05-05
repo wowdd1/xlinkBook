@@ -221,13 +221,13 @@ class Utils:
     def getEnginUrlEx(self, engin, keyword, query=''):
         url = ''
         if engin != '':
-            url = self.getEnginUrl(engin) + keyword
+            url = self.getEnginUrl(engin) + keyword.strip()
         if engin == "arxiv":
-            url = url.replace("$", keyword)
+            url = url.replace("$", keyword.strip())
         if engin == "doaj":
-            url = url.replace('$', keyword)
+            url = url.replace('$', keyword.strip())
         if engin == "ust.hk":
-            url = url.replace('$', keyword)
+            url = url.replace('$', keyword.strip())
         if engin == "crunchbase" and query.find(':') != -1:
             url = self.getEnginUrl(engin) + keyword.strip().replace(' ', '-')
             query = query[query.find(':') + 1 :].strip()
