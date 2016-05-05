@@ -598,7 +598,7 @@ class GithubSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def getBigCompanyProjects(self):
+    def getOrganizationProjects(self):
         data = {"google" : "https://github.com/google",\
                 "microsoft" : "https://github.com/Microsoft",\
                 "apple" : "https://github.com/apple/",\
@@ -620,6 +620,7 @@ class GithubSpider(Spider):
                 'EA-games' : 'https://github.com/electronicarts',\
                 'sony' : 'https://github.com/sony',\
                 'Blizzard' : 'https://github.com/Blizzard',\
+                'openai' : 'https://github.com/openai',\
                 'googlesamples' : 'https://github.com/googlesamples'}
                 
         for k in data:
@@ -683,6 +684,6 @@ class GithubSpider(Spider):
         print "get user data..."
         #self.processGithubiUserData("all", 500, 100)
         #self.processGithubiUserData("china", 500, 100)
-        self.getBigCompanyProjects()
+        self.getOrganizationProjects()
 start = GithubSpider()
 start.doWork()

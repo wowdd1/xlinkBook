@@ -119,10 +119,10 @@ class PriorityRecord(WrapRecord):
     def get_priority(self):
         return self.get_tag_content(self.tag.tag_priority)
 
-class CourseRecord(WrapRecord):
+class CourseRecord(PriorityRecord):
 
     def __init__(self, line):
-        WrapRecord.__init__(self, line)
+        PriorityRecord.__init__(self, line)
 
     def get_videourl(self):
         return self.get_tag_content(self.tag.tag_videourl)
