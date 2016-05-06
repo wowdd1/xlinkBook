@@ -73,7 +73,7 @@ class StanfordCSSpider(Spider):
    
     def getCsCourseLinks(self):
         links = []
-        r = requests.get('http://cs.stanford.edu/courses')
+        r = requests.get('http://cs.stanford.edu/academics/courses')
         soup = BeautifulSoup(r.text)
         for a in soup.find_all('a'):
             if a.attrs.has_key('href') and a['href'].find('http://cs.stanford.edu/courses/schedules/') != -1:
