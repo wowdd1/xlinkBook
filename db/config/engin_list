@@ -164,3 +164,4 @@ engin-160 | ust.hk | http://www.ust.hk/search/$/?sopt=google | priority:0 descri
 engin-161 | physicsworld | http://physicsworld.com/cws/search?siteCode=phw&query= | priority:0 description:journal
 engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
+engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:8 description:all star

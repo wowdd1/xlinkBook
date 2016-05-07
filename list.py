@@ -79,8 +79,12 @@ function search(inputid,optionid){\
     var input = document.getElementById(inputid);\
     var select = document.getElementById(optionid);\
     console.log("xx",input.value);\
-    console.log("",select.value);\
-    window.open(select.value + input.value);\
+    console.log("",select[select.selectedIndex].text);\
+    if (select[select.selectedIndex].text.slice(0, 1) == "!"){\
+        window.open("http://duckduckgo.com/?q=" + select[select.selectedIndex].text + " " + input.value.replace("&nbsp;", " "));\
+    } else {\
+        window.open(select.value + input.value);\
+    }\
 }\
 function trimStr(str){return str.replace(/(^\s*)|(\s*$)/g,"");}\
 function searchTopic(obj, topic){\
@@ -93,7 +97,13 @@ function searchTopic(obj, topic){\
             if (trimStr(options[i].text) == "arxiv" || trimStr(options[i].text) == "doaj" || trimStr(options[i].text) == "ust.hk"){\
                 window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")));\
             } else {\
-                window.open(options[i].value + topic.replace("&nbsp;", " "));\
+                console.log("xx", obj.text.slice(0, 1));\
+                if (obj.text.slice(0, 1) == "!"){\
+                    console.log("xx", options[i].value + obj.text + topic.replace("&nbsp;", " "));\
+                    window.open("http://duckduckgo.com/?q=" + obj.text + " " + topic.replace("&nbsp;", " "));\
+                } else {\
+                    window.open(options[i].value + topic.replace("&nbsp;", " "));\
+                }\
             }\
         }\
     }\
@@ -519,11 +529,12 @@ def build_lines(list_all):
                                                       '<div id="#div-star-' + str(l) +'" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] + '</div>'
                                     for (k, v) in engin_list_dict.items():
                                         describe_lines[l][i][j] = describe_lines[l][i][j].replace('#' + k.strip(), v)
-                                    engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
-                                    div_content_list.append(engin_content)
+                                    if len(engin_list_dict) > 0:
+                                        engin_content = describe_lines[l][i][j].replace('|', '').strip().replace("'","")
+                                        div_content_list.append(engin_content)
                                 describe_lines[l][i][j] = ''
                                 if l == lines - 1 and output_navigation_links:
-                                    navLinks = utils.getNavLinkList()
+                                    navLinks = utils.getNavLinkList(engin)
                                     content = ''
                                     hidenScript = ''
                                     for link2 in navLinks:
@@ -1092,6 +1103,7 @@ def main(argv):
             chanage_border(a)
         elif o in ('-e', '--engin'):
             engin = str(a).strip()
+            utils.setEnginMode(engin)
         elif o in ('-n', '--navigation'):
             output_navigation_links = True
 

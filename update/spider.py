@@ -35,6 +35,12 @@ class Spider:
         "https": "http://127.0.0.1:8087",
     }
 
+    proxies2 = {
+        "http": "http://127.0.0.1:8787",
+        "https": "http://127.0.0.1:8787",
+    }
+
+
     def __init__(self):
         self.google = "https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q="
         self.baidu = "http://www.baidu.com/s?word="
@@ -53,6 +59,9 @@ class Spider:
       
     def requestWithProxy(self, url):
         return requests.get(url, proxies=self.proxies, verify=False)
+
+    def requestWithProxy2(self, url):
+        return requests.get(url, proxies=self.proxies2, verify=False)
 
     def format_subject(self, subject):
         match_list = []

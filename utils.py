@@ -17,6 +17,7 @@ import sys
 from bs4 import BeautifulSoup;
 from record import Record
 from record import PriorityRecord
+import time
 
 regex = re.compile("\033\[[0-9;]*m")
 py3k = sys.version_info[0] >= 3
@@ -122,19 +123,28 @@ class Utils:
     search_engin_dict = {}
     search_engin_type = []
 
+    ddg_search_engin_dict = {}
+    ddg_search_engin_type = []
+
+    ddg_mode = False
+
     def __init__(self):
         self.loadEngins()
 
+    def setEnginMode(self, engin):
+        if engin.find(':duckduckgo') != -1:
+            self.ddg_mode = True 
+
     def loadEngins(self):
-        if os.path.exists('config/engin_list'):
-            f = open('config/engin_list','rU')
+        if os.path.exists('db/config/engin_list'):
+            f = open('db/config/engin_list','rU')
             all_lines = f.readlines()
             for line in all_lines:
                 record = PriorityRecord(line)
                 if record.get_title() != '':
                     self.search_engin_dict[record.get_title().strip()] = record
-        if os.path.exists('config/engin_type'):
-            f = open('config/engin_type','rU')
+        if os.path.exists('db/config/engin_type'):
+            f = open('db/config/engin_type','rU')
             all_lines = f.readlines()
             for line in all_lines:
                 if line.startswith('#'):
@@ -142,6 +152,24 @@ class Utils:
                 record = Record(line)
                 if record.get_title() != '':
                     self.search_engin_type.append(record.get_title().strip())
+    def loadDDGEngins(self):
+        year = int(time.strftime('%Y',time.localtime(time.time())))
+        if os.path.exists('db/config/engin_list-duckduckgo' + str(year)):
+            f = open('db/config/engin_list-duckduckgo' + str(year),'rU')
+            all_lines = f.readlines()
+            for line in all_lines:
+                record = PriorityRecord(line)
+                if record.get_title() != '':
+                    self.ddg_search_engin_dict[record.get_title().strip()] = record
+        if os.path.exists('db/config/engin_type-duckduckgo' + str(year)):
+            f = open('db/config/engin_type-duckduckgo' + str(year),'rU')
+            all_lines = f.readlines()
+            for line in all_lines:
+                if line.startswith('#'):
+                    continue
+                record = Record(line)
+                if record.get_title() != '':
+                    self.ddg_search_engin_type.append(record.get_title().strip())
 
     def removeDoubleSpace(self, text):
         text = text.replace('\n','')
@@ -247,29 +275,52 @@ class Utils:
         if engins.startswith('description:') or engins.startswith('d:'):
             engin_list = []
             tags = engins[engins.find(':') + 1 :].strip().split(' ')
-            for record in self.search_engin_dict.values():
-                desc = record.get_describe().strip()
-                desc = desc[desc.find(':') + 1 :].strip()
-                for tag in tags:
-                    if desc.find(tag) != -1:
-                        engin = record.get_title().strip()
-                        engin_list.append(record.get_title().strip())
-            return engin_list
+            #print engins
+            if self.ddg_mode:
+                return self.getDDGEnginList(tags)
+            return self.realGetEnginList(tags, self.search_engin_dict.values())
         else:
             return engins.split(' ')
 
+    def realGetEnginList(self, tags, records):
+        engin_list = []
+        for record in records:
+            desc = record.get_describe().strip()
+            desc = desc[desc.find(':') + 1 :].strip()
+            for tag in tags:
+                if desc.find(tag) != -1:
+                    engin = record.get_title().strip()
+                    engin_list.append(record.get_title().strip())
+        return engin_list
+
+    def getDDGEnginList(self, tags):
+        if len(self.ddg_search_engin_type) == 0 or len(self.ddg_search_engin_dict) == 0:
+            self.loadDDGEngins()
+        return self.realGetEnginList(tags, self.ddg_search_engin_dict.values())
+
     def getEnginPriority(self, engin):
-        record = self.search_engin_dict[engin]
+        record = None
+        if self.ddg_mode:
+            record = self.ddg_search_engin_dict[engin]
+        else:
+            record = self.search_engin_dict[engin]
         return record.get_priority()
 
     def getAllEnginList(self):
         engin_list = []
-        for record in self.search_engin_dict.values():
+        records = None
+        if self.ddg_mode:
+            records = self.ddg_search_engin_dict.values()
+        else:
+            records = self.search_engin_dict.values()
+        for record in records:
             engin = record.get_title().strip()
             engin_list.append(record.get_title().strip())
         return engin_list
 
     def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
+        if self.ddg_mode:
+            return self.getDDGEnginListLinks(engins, topic, id, query, color, fontSize)
         if topic == '':
             return ''
         result = {}
@@ -288,6 +339,9 @@ class Utils:
             result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + engin_display + '</a>'
 
         return result
+
+    def getDDGEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
+        return {}
 
     def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, color2, fontSize):
         result = '<div id="' + divid + '" style="display: none;">'
@@ -332,8 +386,13 @@ class Utils:
         return fontSize + priorityInt + 1
         
  
-    def getNavLinkList(self):
-        return self.search_engin_type
+    def getNavLinkList(self, engin):
+        if self.ddg_mode:
+            if len(self.ddg_search_engin_type) == 0 or len(self.ddg_search_engin_dict) == 0:
+                self.loadDDGEngins()
+            return self.ddg_search_engin_type
+        else:
+            return self.search_engin_type
         #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
 
     def genLinkWithScript(self, aid, script, text, color=''):
