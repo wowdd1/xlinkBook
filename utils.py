@@ -356,10 +356,7 @@ class Utils:
             #print 'links_per_row' + str(links_per_row)
             #print 'last' + str(last)
             if remain > links_per_row:
-                engin_list_dive = engin_list[last : last + links_per_row - 1]
-                last += links_per_row - 1
-                #print remain
-                #print last
+                engin_list_dive = engin_list[last : last + links_per_row]
             else:
                 engin_list_dive = engin_list[last : ]
                 remain = 0
@@ -373,6 +370,9 @@ class Utils:
                 else:
                     div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + ' '
             remain -= links_per_row
+            last += links_per_row
+            #print remain
+            #print last
             div += '</div>'
             count += 1
             result += div
