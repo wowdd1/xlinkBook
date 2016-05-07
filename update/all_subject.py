@@ -4,6 +4,7 @@
 default_subject = "eecs"
 
 subject_dict = {\
+    'Config' : 'config',\
     'Accounting' : 'economics',\
     "Architecture" : "architecture",\
     "Art" : "art-culture",\
@@ -94,6 +95,7 @@ subject_dict = {\
     "Women's and Gender Studies" : "others"}
 
 need_update_subject_list = [
+    'config',
     #'anthropology',
     'eecs',
     'mathematics',
