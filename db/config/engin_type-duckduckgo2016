@@ -1,5 +1,5 @@
 #google
-blogs
+#blogs
 #blogs(intl)
 #chakra
 #companies
@@ -76,7 +76,7 @@ blogs
 #tech
 #tech(domains)
 #academic
-#academic(math/cs)
+academic(math/cs)
 #food
 #government
 #health
@@ -131,7 +131,7 @@ blogs
 #online
 #specialty
 #weather
-#books
+books
 #docs
 #games(general)
 #general
@@ -140,7 +140,7 @@ blogs
 #music
 #music(folk)
 #music(lyrics)
-#video
+video
 #audio
 #blogs
 #blogs(intl)
