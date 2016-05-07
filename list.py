@@ -80,8 +80,8 @@ function search(inputid,optionid){\
     var select = document.getElementById(optionid);\
     console.log("xx",input.value);\
     console.log("",select[select.selectedIndex].text);\
-    if (select[select.selectedIndex].text.slice(0, 1) == "!"){\
-        window.open("http://duckduckgo.com/?q=" + select[select.selectedIndex].text + " " + input.value.replace("&nbsp;", " "));\
+    if (select[select.selectedIndex].value.slice(0, 1) == "!"){\
+        window.open("http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " "));\
     } else {\
         window.open(select.value + input.value);\
     }\
@@ -98,9 +98,9 @@ function searchTopic(obj, topic){\
                 window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")));\
             } else {\
                 console.log("xx", obj.text.slice(0, 1));\
-                if (obj.text.slice(0, 1) == "!"){\
-                    console.log("xx", options[i].value + obj.text + topic.replace("&nbsp;", " "));\
-                    window.open("http://duckduckgo.com/?q=" + obj.text + " " + topic.replace("&nbsp;", " "));\
+                if (options[i].value.slice(0, 1) == "!"){\
+                    console.log("xx", options[i].value + topic.replace("&nbsp;", " "));\
+                    window.open("http://duckduckgo.com/?q=" + options[i].value + " " + topic.replace("&nbsp;", " "));\
                 } else {\
                     window.open(options[i].value + topic.replace("&nbsp;", " "));\
                 }\
@@ -1052,7 +1052,7 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:n', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin", "navigation"])
@@ -1103,7 +1103,8 @@ def main(argv):
             chanage_border(a)
         elif o in ('-e', '--engin'):
             engin = str(a).strip()
-            utils.setEnginMode(engin)
+            if utils.setEnginMode(engin):
+                max_nav_links_row = 5
         elif o in ('-n', '--navigation'):
             output_navigation_links = True
 

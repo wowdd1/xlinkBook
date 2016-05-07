@@ -125,6 +125,7 @@ class Utils:
 
     ddg_search_engin_dict = {}
     ddg_search_engin_type = []
+    ddg_search_engin_url_dict = {}
 
     ddg_mode = False
 
@@ -134,6 +135,8 @@ class Utils:
     def setEnginMode(self, engin):
         if engin.find(':duckduckgo') != -1:
             self.ddg_mode = True 
+            return True
+        return False
 
     def loadEngins(self):
         if os.path.exists('db/config/engin_list'):
@@ -160,6 +163,7 @@ class Utils:
             for line in all_lines:
                 record = PriorityRecord(line)
                 if record.get_title() != '':
+                    self.ddg_search_engin_url_dict[record.get_title().strip()] = record.get_url().strip()
                     self.ddg_search_engin_dict[record.get_title().strip()] = record
         if os.path.exists('db/config/engin_type-duckduckgo' + str(year)):
             f = open('db/config/engin_type-duckduckgo' + str(year),'rU')
@@ -178,7 +182,10 @@ class Utils:
         return text
 
     def validEngin(self, engin):
-        for item in self.search_engin_dict.keys():
+        records = self.search_engin_dict.keys()
+        if self.ddg_mode:
+            records = self.ddg_search_engin_dict.keys()
+        for item in records:
             if item.lower().find(engin.lower()) != -1:
                 return True
         print "invalided search engin: " + engin
@@ -224,8 +231,12 @@ class Utils:
         return os.getcwd() + "/db/" + subject + "/"
 
     def getEnginUrl(self, engin):
-        for record in self.search_engin_dict.values():
+        records = self.search_engin_dict.values()
+        if self.ddg_mode:
+            return self.ddg_search_engin_url_dict[engin]
+        for record in records:
             item = record.get_url().strip()
+            #print item  + ' ' + record.get_title()
             if engin == 'google':
                 return 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q='
             if engin == 'googlevideo' and item.lower().find('google.com.hk/videohp') != -1:
@@ -418,7 +429,11 @@ class Utils:
         if url.find('soku.com') != -1 or url.find('google.com.hk/videohp') != -1:
             return True
 
-        for key in self.search_engin_dict.keys():
+        records = self.search_engin_dict.keys()
+        if self.ddg_mode:
+            records = self.ddg_search_engin_dict.keys()
+
+        for key in records:
             if url.find(key) != -1:
                 return True
         return False
