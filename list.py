@@ -112,7 +112,11 @@ function navTopic(obj, divID, parentDivID, countIndex){\
     var targetid = divID + "-" + obj.text;\
     var target=document.getElementById(targetid);\
     for (var i = 0; i < countIndex + 1; i++) {\
+        console.log("xx",parentDivID + i.toString());\
         var parentDiv = document.getElementById(parentDivID + i.toString());\
+        if (parentDiv == null) {\
+            continue;\
+        }\
         var children = parentDiv.children;\
         for (var j = 0, len = children.length; j < len; j++) {\
             children[j].style.color="#888888";\
@@ -653,10 +657,16 @@ def print_search_box():
             print '<br/>'
 
 def print_table_head_with_style():
+    print "<body>"
+    print_search_box()
     if css_style_type == 3 or css_style_type == 4 or css_style_type == 5:
         print '<table class="easy-table easy-table-default coursesTable">'
     else:
         print '<table class="table">'
+
+def print_table_footer():
+    print "</table>"
+    print "</body>"
 
 def get_space_cell(num, column_num):
     result = ""
@@ -850,7 +860,7 @@ def print_list(all_lines, file_name = ''):
                 list_all[0].pop()
         #print list_all
         id_title_lines, describe_lines = build_lines(list_all)
-        print_search_box()
+        #print_search_box()
         #print id_title_lines
         if column_num == "3":
             if html_style == False:
@@ -910,7 +920,8 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_separator(3)
             else:
-                print '</table>'
+                print_table_footer();
+                #print '</table>'
         elif column_num == "2":
             if html_style == False:
                 print_table_head(2)
@@ -954,7 +965,8 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_separator(2)
             else:
-                print '</table>'
+                print_table_footer()
+                #print '</table>'
         elif column_num == '1':
             if html_style == False:
                 print_table_head(1)
@@ -982,7 +994,8 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_separator(1)
             else:
-                print '</table>'
+                print_table_footer()
+                #print '</table>'
   
 
         if current > 0:
