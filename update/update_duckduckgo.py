@@ -52,7 +52,7 @@ class DuckduckgoSpider(Spider):
                 else:
                     print title
                 self.count += 1
-                self.write_db(f, 'ddg-' + k.lower() + '-' + str(self.count), title, t, 'priority:0 description:' + k.lower())
+                self.write_db(f, 'ddg-' + k.lower() + '-' + str(self.count), title.replace("'", ' '), t, 'priority:0 description:' + k.lower())
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:

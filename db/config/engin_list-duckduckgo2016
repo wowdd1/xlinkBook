@@ -18,7 +18,7 @@ ddg-downloads(software)-17 | DD-WRT Wiki | !ddwrt | priority:0 description:downl
 ddg-downloads(software)-18 | Debian Packages | !debpackages | priority:0 description:downloads(software)
 ddg-downloads(software)-19 | DistroWatch | !distro | priority:0 description:downloads(software)
 ddg-downloads(software)-20 | DistroWatch | !distrowatch | priority:0 description:downloads(software)
-ddg-downloads(software)-21 | Doug's AppleScripts for iTunes | !dougscripts | priority:0 description:downloads(software)
+ddg-downloads(software)-21 | Doug s AppleScripts for iTunes | !dougscripts | priority:0 description:downloads(software)
 ddg-downloads(software)-22 | Download.com | !download | priority:0 description:downloads(software)
 ddg-downloads(software)-23 | Download.com | !download | priority:0 description:downloads(software)
 ddg-downloads(software)-24 | Cnet Downloads | !downloadcnet | priority:0 description:downloads(software)
@@ -90,7 +90,7 @@ ddg-languages(erlang)-89 | Hex.pm | !hexpm | priority:0 description:languages(er
 ddg-sysadmin(solaris)-90 | !sunpatch | !sunpatch | priority:0 description:sysadmin(solaris)
 ddg-sysadmin(gentoo)-91 | Gentoo Packages | !emerge | priority:0 description:sysadmin(gentoo)
 ddg-sysadmin(gentoo)-92 | Gentoo Forums | !fgentoo | priority:0 description:sysadmin(gentoo)
-ddg-sysadmin(gentoo)-93 | Gentoo's Bugzilla | !gbugs | priority:0 description:sysadmin(gentoo)
+ddg-sysadmin(gentoo)-93 | Gentoo s Bugzilla | !gbugs | priority:0 description:sysadmin(gentoo)
 ddg-sysadmin(gentoo)-94 | Gentoo Wiki | !gentoo | priority:0 description:sysadmin(gentoo)
 ddg-sysadmin(gentoo)-95 | gentoo wiki | !gentoowiki | priority:0 description:sysadmin(gentoo)
 ddg-sysadmin(gentoo)-96 | gentoo wiki | !gentoowiki | priority:0 description:sysadmin(gentoo)
@@ -207,7 +207,7 @@ ddg-learning(intl)-206 | howbook | !howbook | priority:0 description:learning(in
 ddg-learning(intl)-207 | Jukuu | !jukuu | priority:0 description:learning(intl)
 ddg-learning(intl)-208 | Kanji Damage | !kd | priority:0 description:learning(intl)
 ddg-learning(intl)-209 | Larousse EN - FR translation | !larenfr | priority:0 description:learning(intl)
-ddg-learning(intl)-210 | Whitaker's Latin | !lat | priority:0 description:learning(intl)
+ddg-learning(intl)-210 | Whitaker s Latin | !lat | priority:0 description:learning(intl)
 ddg-learning(intl)-211 | Lifeprint | !lifeprint | priority:0 description:learning(intl)
 ddg-learning(intl)-212 | Linguee | !lingf | priority:0 description:learning(intl)
 ddg-learning(intl)-213 | Lojban.org | !lojban | priority:0 description:learning(intl)
@@ -306,7 +306,7 @@ ddg-specialty-305 | Reason.com | !reason | priority:0 description:specialty
 ddg-specialty-306 | The Register | !register | priority:0 description:specialty
 ddg-specialty-307 | Rock Paper Shotgun | !rockpapershotgun | priority:0 description:specialty
 ddg-specialty-308 | Scientific American | !sa | priority:0 description:specialty
-ddg-specialty-309 | Samaritan's Purse | !samaritans | priority:0 description:specialty
+ddg-specialty-309 | Samaritan s Purse | !samaritans | priority:0 description:specialty
 ddg-specialty-310 | Snopes.com | !snopes | priority:0 description:specialty
 ddg-specialty-311 | t3n | !t3n | priority:0 description:specialty
 ddg-specialty-312 | The Blaze | !theblaze | priority:0 description:specialty
@@ -691,7 +691,7 @@ ddg-tech-690 | ECIA Authorized | !ecia | priority:0 description:tech
 ddg-tech-691 | Elfa Distrelec | !elfa | priority:0 description:tech
 ddg-tech-692 | Farnell DE | !farnde | priority:0 description:tech
 ddg-tech-693 | FiberCables.com | !fibercables | priority:0 description:tech
-ddg-tech-694 | Fry's Electronics | !frys | priority:0 description:tech
+ddg-tech-694 | Fry s Electronics | !frys | priority:0 description:tech
 ddg-tech-695 | Gamestop | !gamestop | priority:0 description:tech
 ddg-tech-696 | Google Store | !gapp | priority:0 description:tech
 ddg-tech-697 | Geizhals | !geizhals | priority:0 description:tech
@@ -949,7 +949,7 @@ ddg-online(marketplace)-948 | Speurders | !speur | priority:0 description:online
 ddg-online(marketplace)-949 | Subito.it | !subito | priority:0 description:online(marketplace)
 ddg-online(marketplace)-950 | Sulit | !sulit | priority:0 description:online(marketplace)
 ddg-online(marketplace)-951 | OLX.co.id | !tb | priority:0 description:online(marketplace)
-ddg-online(marketplace)-952 | This is why I'm broke | !tiwimb | priority:0 description:online(marketplace)
+ddg-online(marketplace)-952 | This is why I m broke | !tiwimb | priority:0 description:online(marketplace)
 ddg-online(marketplace)-953 | Trade Me | !tm | priority:0 description:online(marketplace)
 ddg-online(marketplace)-954 | OLX.co.id | !tokobagus | priority:0 description:online(marketplace)
 ddg-online(marketplace)-955 | Topachat | !topachat | priority:0 description:online(marketplace)
@@ -1127,7 +1127,7 @@ ddg-newspaper-1126 | theguardian.com | !gu | priority:0 description:newspaper
 ddg-newspaper-1127 | The Guardian | !guardian | priority:0 description:newspaper
 ddg-newspaper-1128 | Haaretz | !haaretz | priority:0 description:newspaper
 ddg-newspaper-1129 | Het Laatste Nieuws | !hln | priority:0 description:newspaper
-ddg-newspaper-1130 | L'Humanité | !huma | priority:0 description:newspaper
+ddg-newspaper-1130 | L Humanité | !huma | priority:0 description:newspaper
 ddg-newspaper-1131 | HVG.hu | !hvg | priority:0 description:newspaper
 ddg-newspaper-1132 | The Independent | !independent | priority:0 description:newspaper
 ddg-newspaper-1133 | Kompas | !kompas | priority:0 description:newspaper
@@ -1214,7 +1214,7 @@ ddg-reference-1213 | Basketball-Reference | !bbr | priority:0 description:refere
 ddg-reference-1214 | dict.bing.com.cn | !bce | priority:0 description:reference
 ddg-reference-1215 | Bermuda.io | !bermuda | priority:0 description:reference
 ddg-reference-1216 | Bibliotek.dk | !bibliotek | priority:0 description:reference
-ddg-reference-1217 | Sheldon Brown's Bicycle Technical Info | !bike | priority:0 description:reference
+ddg-reference-1217 | Sheldon Brown s Bicycle Technical Info | !bike | priority:0 description:reference
 ddg-reference-1218 | Biography.com | !biography | priority:0 description:reference
 ddg-reference-1219 | Basketball Reference | !bkr | priority:0 description:reference
 ddg-reference-1220 | Blind Search | !blindsearch | priority:0 description:reference
@@ -1349,7 +1349,7 @@ ddg-reference-1348 | Safari Books Online | !safari | priority:0 description:refe
 ddg-reference-1349 | Sana Clara County Library District | !sccl | priority:0 description:reference
 ddg-reference-1350 | Schimka | !schimka | priority:0 description:reference
 ddg-reference-1351 | de.serchilo.net | !serch | priority:0 description:reference
-ddg-reference-1352 | The Skeptic's Dictionary | !skepdic | priority:0 description:reference
+ddg-reference-1352 | The Skeptic s Dictionary | !skepdic | priority:0 description:reference
 ddg-reference-1353 | Skin Deep Cosmetics Database | !skindeep | priority:0 description:reference
 ddg-reference-1354 | Speaking Latino | !spanslang | priority:0 description:reference
 ddg-reference-1355 | The Southern Poverty Law Center | !splc | priority:0 description:reference
@@ -1551,7 +1551,7 @@ ddg-learning-1550 | Noodle | !noodle | priority:0 description:learning
 ddg-learning-1551 | Open Education Consortium | !oec | priority:0 description:learning
 ddg-learning-1552 | OER Commons | !oer | priority:0 description:learning
 ddg-learning-1553 | Omniglot | !og | priority:0 description:learning
-ddg-learning-1554 | Oxford Learner's American Dictionariy | !olad | priority:0 description:learning
+ddg-learning-1554 | Oxford Learner s American Dictionariy | !olad | priority:0 description:learning
 ddg-learning-1555 | Onestopenglish | !onestopenglish | priority:0 description:learning
 ddg-learning-1556 | Ordnet | !ordnet.dk | priority:0 description:learning
 ddg-learning-1557 | Persée | !persee | priority:0 description:learning
@@ -1622,7 +1622,7 @@ ddg-learning-1621 | WolframAlpha | !wolframalpha | priority:0 description:learni
 ddg-learning-1622 | Word Reference EN-IT | !wrei | priority:0 description:learning
 ddg-learning-1623 | Word Reference IT-EN | !wrie | priority:0 description:learning
 ddg-learning-1624 | wikipedia | !wro | priority:0 description:learning
-ddg-learning-1625 | Webster's Revised Unabridged | !wrud | priority:0 description:learning
+ddg-learning-1625 | Webster s Revised Unabridged | !wrud | priority:0 description:learning
 ddg-learning-1626 | Wikipédia Slovenčina | !wsk | priority:0 description:learning
 ddg-learning-1627 | Wikipedia | !wsr | priority:0 description:learning
 ddg-learning-1628 | Wikitionary | !wt | priority:0 description:learning
@@ -2048,8 +2048,8 @@ ddg-games(offline)-2047 | NetrunnerDB | !nrdb | priority:0 description:games(off
 ddg-games(offline)-2048 | StackExchange RPG | !rpg | priority:0 description:games(offline)
 ddg-games(offline)-2049 | RPGGeek | !rpggeek | priority:0 description:games(offline)
 ddg-games(offline)-2050 | RPG Stack Exchange | !rpgsx | priority:0 description:games(offline)
-ddg-games(offline)-2051 | Sensei's Library | !sensei | priority:0 description:games(offline)
-ddg-games(offline)-2052 | Sensei's Library | !senseislibrary | priority:0 description:games(offline)
+ddg-games(offline)-2051 | Sensei s Library | !sensei | priority:0 description:games(offline)
+ddg-games(offline)-2052 | Sensei s Library | !senseislibrary | priority:0 description:games(offline)
 ddg-games(offline)-2053 | TCGPlayer | !tcgplayer | priority:0 description:games(offline)
 ddg-games(offline)-2054 | ThronesDB | !thdb | priority:0 description:games(offline)
 ddg-games(offline)-2055 | Tric Trac | !trictrac | priority:0 description:games(offline)
@@ -2366,10 +2366,10 @@ ddg-comics-2365 | Explain xkcd | !expxkcd | priority:0 description:comics
 ddg-comics-2366 | Fantagraphics Books | !fantagraphics | priority:0 description:comics
 ddg-comics-2367 | Funnyjunk | !fj | priority:0 description:comics
 ddg-comics-2368 | GoComics | !gocomics | priority:0 description:comics
-ddg-comics-2369 | HEEZA - L'Univers du Cartoon | !heeza | priority:0 description:comics
+ddg-comics-2369 | HEEZA - L Univers du Cartoon | !heeza | priority:0 description:comics
 ddg-comics-2370 | Homestar Runner Wiki | !hrwiki | priority:0 description:comics
 ddg-comics-2371 | izneo | !izneo | priority:0 description:comics
-ddg-comics-2372 | JoJo's Bizarre Encyclopedia | !jojo | priority:0 description:comics
+ddg-comics-2372 | JoJo s Bizarre Encyclopedia | !jojo | priority:0 description:comics
 ddg-comics-2373 | Kissmanga | !kmanga | priority:0 description:comics
 ddg-comics-2374 | !mangafox | !mangafox | priority:0 description:comics
 ddg-comics-2375 | MangaHere | !mangahere | priority:0 description:comics
@@ -2437,7 +2437,7 @@ ddg-programming-2436 | Mozilla Bugzilla | !bmo | priority:0 description:programm
 ddg-programming-2437 | Bountysource | !bountysource | priority:0 description:programming
 ddg-programming-2438 | Bugzilla | !bugzilla | priority:0 description:programming
 ddg-programming-2439 | !c2 | !c2 | priority:0 description:programming
-ddg-programming-2440 | Catalin Stefan's Android Blog | !catalinstefan | priority:0 description:programming
+ddg-programming-2440 | Catalin Stefan s Android Blog | !catalinstefan | priority:0 description:programming
 ddg-programming-2441 | CMake | !cmake | priority:0 description:programming
 ddg-programming-2442 | CyanogenMod Wiki | !cmwiki | priority:0 description:programming
 ddg-programming-2443 | Ohloh code | !co | priority:0 description:programming
@@ -2496,7 +2496,7 @@ ddg-programming-2495 | Froogle | !froogle | priority:0 description:programming
 ddg-programming-2496 | Code: Fireburst Specialized Search | !fssc | priority:0 description:programming
 ddg-programming-2497 | FreeBSD Cross Reference | !fxr | priority:0 description:programming
 ddg-programming-2498 | GiggleBang | !gbang | priority:0 description:programming
-ddg-programming-2499 | Gentoo's Bugzilla | !gbugs | priority:0 description:programming
+ddg-programming-2499 | Gentoo s Bugzilla | !gbugs | priority:0 description:programming
 ddg-programming-2500 | GDB Debugger | !gdb | priority:0 description:programming
 ddg-programming-2501 | Github | !ghcode | priority:0 description:programming
 ddg-programming-2502 | Github User | !ghus | priority:0 description:programming
@@ -2564,8 +2564,8 @@ ddg-programming-2563 | OCamlOscope | !oco | priority:0 description:programming
 ddg-programming-2564 | Ohloh Code | !ohlohcode | priority:0 description:programming
 ddg-programming-2565 | OpenClassrooms | !opc | priority:0 description:programming
 ddg-programming-2566 | OpenRadar | !openradar | priority:0 description:programming
-ddg-programming-2567 | O'Reilly | !oreilly | priority:0 description:programming
-ddg-programming-2568 | O'Reilly | !oreilly | priority:0 description:programming
+ddg-programming-2567 | O Reilly | !oreilly | priority:0 description:programming
+ddg-programming-2568 | O Reilly | !oreilly | priority:0 description:programming
 ddg-programming-2569 | Open Source Initiative | !osi | priority:0 description:programming
 ddg-programming-2570 | OSMC | !osmc | priority:0 description:programming
 ddg-programming-2571 | StackOverflow | !ov | priority:0 description:programming
@@ -3180,7 +3180,7 @@ ddg-movies-3179 | TheMovieDB.org | !tmdb | priority:0 description:movies
 ddg-movies-3180 | Trailer Addict | !trailer | priority:0 description:movies
 ddg-movies-3181 | Trailer Addict | !trailer | priority:0 description:movies
 ddg-movies-3182 | Trailer Addict | !traileraddict | priority:0 description:movies
-ddg-movies-3183 | They Shoot Pictures, Don't They? | !tspdt | priority:0 description:movies
+ddg-movies-3183 | They Shoot Pictures, Don t They? | !tspdt | priority:0 description:movies
 ddg-movies-3184 | uNoGS | !unogs | priority:0 description:movies
 ddg-movies-3185 | Svenska Undertexter | !ut | priority:0 description:movies
 ddg-movies-3186 | Video Detective | !videodetective | priority:0 description:movies
@@ -3222,7 +3222,7 @@ ddg-reference(religion)-3221 | Guinness World Records | !gwr | priority:0 descri
 ddg-reference(religion)-3222 | Hymnary | !hymnary | priority:0 description:reference(religion)
 ddg-reference(religion)-3223 | Iron Chariots Wiki | !ic | priority:0 description:reference(religion)
 ddg-reference(religion)-3224 | Islamqa.com | !islamqa | priority:0 description:reference(religion)
-ddg-reference(religion)-3225 | Jehovah's Witnesses | !jw | priority:0 description:reference(religion)
+ddg-reference(religion)-3225 | Jehovah s Witnesses | !jw | priority:0 description:reference(religion)
 ddg-reference(religion)-3226 | King James Bible Study | !kj | priority:0 description:reference(religion)
 ddg-reference(religion)-3227 | Kuran Ara | !kuran | priority:0 description:reference(religion)
 ddg-reference(religion)-3228 | LDS.org | !lds | priority:0 description:reference(religion)
@@ -3235,11 +3235,11 @@ ddg-reference(religion)-3234 | oremus Bible Browser | !obb | priority:0 descript
 ddg-reference(religion)-3235 | Original Catholic Encyclopedia | !oce | priority:0 description:reference(religion)
 ddg-reference(religion)-3236 | OrthodoxWiki | !orthodoxwiki | priority:0 description:reference(religion)
 ddg-reference(religion)-3237 | Pathfinders Online | !pfonline | priority:0 description:reference(religion)
-ddg-reference(religion)-3238 | The Noble Qur'an | !qur | priority:0 description:reference(religion)
-ddg-reference(religion)-3239 | The Noble Qur'an | !quran | priority:0 description:reference(religion)
+ddg-reference(religion)-3238 | The Noble Qur an | !qur | priority:0 description:reference(religion)
+ddg-reference(religion)-3239 | The Noble Qur an | !quran | priority:0 description:reference(religion)
 ddg-reference(religion)-3240 | Reasonable Faith | !rf | priority:0 description:reference(religion)
 ddg-reference(religion)-3241 | RationalWiki | !rw | priority:0 description:reference(religion)
-ddg-reference(religion)-3242 | Skeptic's Bible | !skepticsbible | priority:0 description:reference(religion)
+ddg-reference(religion)-3242 | Skeptic s Bible | !skepticsbible | priority:0 description:reference(religion)
 ddg-reference(religion)-3243 | Study bible | !studybible | priority:0 description:reference(religion)
 ddg-reference(religion)-3244 | Tanzil | !tanzil | priority:0 description:reference(religion)
 ddg-reference(religion)-3245 | Vatican | !vatican | priority:0 description:reference(religion)
@@ -3536,7 +3536,7 @@ ddg-maps-3535 | Google Maps UK | !mapsuk | priority:0 description:maps
 ddg-maps-3536 | Mapy.cz | !mapy | priority:0 description:maps
 ddg-maps-3537 | Mapa Interactivo de Buenos Aires | !mbs | priority:0 description:maps
 ddg-maps-3538 | Mapa Interactivo de Buenos Aires | !mdbs | priority:0 description:maps
-ddg-maps-3539 | Mum I'm Here | !mih | priority:0 description:maps
+ddg-maps-3539 | Mum I m Here | !mih | priority:0 description:maps
 ddg-maps-3540 | google maps lite | !ml | priority:0 description:maps
 ddg-maps-3541 | MapQuest | !mq | priority:0 description:maps
 ddg-maps-3542 | myZyp.com | !myzyp | priority:0 description:maps
@@ -3604,7 +3604,7 @@ ddg-health-3603 | Leafly | !leafly | priority:0 description:health
 ddg-health-3604 | LIVESTRONG | !livestrong | priority:0 description:health
 ddg-health-3605 | forums.Bodyrecomposition.com | !lyle | priority:0 description:health
 ddg-health-3606 | Mayo Clinic | !mayo | priority:0 description:health
-ddg-health-3607 | Mark's Daily Apple | !mda | priority:0 description:health
+ddg-health-3607 | Mark s Daily Apple | !mda | priority:0 description:health
 ddg-health-3608 | Medbullets | !medb | priority:0 description:health
 ddg-health-3609 | The Free Dictionary | !medical | priority:0 description:health
 ddg-health-3610 | MedlinePlus | !medlineplus | priority:0 description:health
@@ -4153,7 +4153,7 @@ ddg-academic-4152 | Library of Economics and Liberty | !econlib | priority:0 des
 ddg-academic-4153 | Exploits Database by Offensive Security | !edb | priority:0 description:academic
 ddg-academic-4154 | El conjugador | !elconjugador | priority:0 description:academic
 ddg-academic-4155 | Wikipedia | !encyclopedia | priority:0 description:academic
-ddg-academic-4156 | Sonja's English-Esperanto Dictionary | !eneo | priority:0 description:academic
+ddg-academic-4156 | Sonja s English-Esperanto Dictionary | !eneo | priority:0 description:academic
 ddg-academic-4157 | Latdict | !enlat | priority:0 description:academic
 ddg-academic-4158 | EPFL | !epfl | priority:0 description:academic
 ddg-academic-4159 | EPFL Plan | !epflp | priority:0 description:academic
@@ -4185,7 +4185,7 @@ ddg-academic-4184 | hs-fulda.de | !hs-fulda | priority:0 description:academic
 ddg-academic-4185 | Catálogo Iacobus - Universidade de Santiago de Compostela | !iacobus | priority:0 description:academic
 ddg-academic-4186 | Code Suche | !icd | priority:0 description:academic
 ddg-academic-4187 | RePEc IDEAS | !ideas | priority:0 description:academic
-ddg-academic-4188 | Institut d'Estudis Catalans | !iec | priority:0 description:academic
+ddg-academic-4188 | Institut d Estudis Catalans | !iec | priority:0 description:academic
 ddg-academic-4189 | Internet Encyclopedia of Philosophy | !iep | priority:0 description:academic
 ddg-academic-4190 | InspireHEP | !ihep | priority:0 description:academic
 ddg-academic-4191 | Illinois State University | !ilstu | priority:0 description:academic
@@ -4197,7 +4197,7 @@ ddg-academic-4196 | JABA and JEAB articles | !jaba | priority:0 description:acad
 ddg-academic-4197 | JSTOR | !jstor | priority:0 description:academic
 ddg-academic-4198 | Khan Academy | !ka | priority:0 description:academic
 ddg-academic-4199 | Khan Academy | !kaprof | priority:0 description:academic
-ddg-academic-4200 | King's College London | !kcl | priority:0 description:academic
+ddg-academic-4200 | King s College London | !kcl | priority:0 description:academic
 ddg-academic-4201 | Khan Academic | !khan | priority:0 description:academic
 ddg-academic-4202 | http://www.kobv.de/ | !kobv | priority:0 description:academic
 ddg-academic-4203 | KidzSearch | !kzs | priority:0 description:academic
@@ -4231,7 +4231,7 @@ ddg-academic-4230 | networkx | !networkx | priority:0 description:academic
 ddg-academic-4231 | Newport | !newport | priority:0 description:academic
 ddg-academic-4232 | NUsearch | !nusearch | priority:0 description:academic
 ddg-academic-4233 | networkx | !nx | priority:0 description:academic
-ddg-academic-4234 | New Zealand Libraries' Catalogue | !nzlibraries | priority:0 description:academic
+ddg-academic-4234 | New Zealand Libraries  Catalogue | !nzlibraries | priority:0 description:academic
 ddg-academic-4235 | MIT OpenCourseWare | !ocw | priority:0 description:academic
 ddg-academic-4236 | Oxford Dictionary | !od | priority:0 description:academic
 ddg-academic-4237 | OpenBadges | !openbadges | priority:0 description:academic
@@ -4299,7 +4299,7 @@ ddg-academic-4298 | University of Chicago Library Catalog | !uc | priority:0 des
 ddg-academic-4299 | University of Chicago Library Catalog | !uchi | priority:0 description:academic
 ddg-academic-4300 | Universidade Federal do Rio de Janeiro | !ufrj | priority:0 description:academic
 ddg-academic-4301 | Universidad de Granada | !ugr | priority:0 description:academic
-ddg-academic-4302 | Bibliothèques de l'Université Libre de Bruxelles | !ulb | priority:0 description:academic
+ddg-academic-4302 | Bibliothèques de l Université Libre de Bruxelles | !ulb | priority:0 description:academic
 ddg-academic-4303 | University of Maryland | !umd | priority:0 description:academic
 ddg-academic-4304 | University of Michigan | !umich | priority:0 description:academic
 ddg-academic-4305 | University of New England | !une | priority:0 description:academic
@@ -4422,11 +4422,11 @@ ddg-reference(words)-4421 | Dict.org | !dict | priority:0 description:reference(
 ddg-reference(words)-4422 | dict.cc | !dictcc | priority:0 description:reference(words)
 ddg-reference(words)-4423 | The Free Dictionary | !dictionary | priority:0 description:reference(words)
 ddg-reference(words)-4424 | Dictionary | !dictionaryr | priority:0 description:reference(words)
-ddg-reference(words)-4425 | Dict-Na'vi.com | !dictn | priority:0 description:reference(words)
+ddg-reference(words)-4425 | Dict-Na vi.com | !dictn | priority:0 description:reference(words)
 ddg-reference(words)-4426 | DictZone spanyol-magyar | !dictzonespma | priority:0 description:reference(words)
 ddg-reference(words)-4427 | Dirae | !dirae | priority:0 description:reference(words)
 ddg-reference(words)-4428 | Diccionario de la lengua española, 23.ª Edición, RAE | !dle | priority:0 description:reference(words)
-ddg-reference(words)-4429 | Dict-Na'vi.com | !dnde | priority:0 description:reference(words)
+ddg-reference(words)-4429 | Dict-Na vi.com | !dnde | priority:0 description:reference(words)
 ddg-reference(words)-4430 | Diccionario de la Real Academia Española | !drae | priority:0 description:reference(words)
 ddg-reference(words)-4431 | Deutsches Rechtswörterbuch | !drw | priority:0 description:reference(words)
 ddg-reference(words)-4432 | Duden | !duden | priority:0 description:reference(words)
@@ -4479,13 +4479,13 @@ ddg-reference(words)-4478 | Merriam-Webster | !mw | priority:0 description:refer
 ddg-reference(words)-4479 | Merriam-Webster Unabridged | !mwunabridged | priority:0 description:reference(words)
 ddg-reference(words)-4480 | My Etymology | !myetym | priority:0 description:reference(words)
 ddg-reference(words)-4481 | Google Ngram Viewer | !ngram | priority:0 description:reference(words)
-ddg-reference(words)-4482 | Heinle's Newbury House Dictionary of American English | !nhd | priority:0 description:reference(words)
+ddg-reference(words)-4482 | Heinle s Newbury House Dictionary of American English | !nhd | priority:0 description:reference(words)
 ddg-reference(words)-4483 | Norskordbok  UiO | !norsk | priority:0 description:reference(words)
 ddg-reference(words)-4484 | Ninja Words | !nw | priority:0 description:reference(words)
 ddg-reference(words)-4485 | OneLook.com | !o | priority:0 description:reference(words)
 ddg-reference(words)-4486 | Oxford Advanced American Dictionary | !oaad | priority:0 description:reference(words)
 ddg-reference(words)-4487 | Oxford Dictionaries | !oad | priority:0 description:reference(words)
-ddg-reference(words)-4488 | Oxford Advanced Learner's Dictionary | !oald | priority:0 description:reference(words)
+ddg-reference(words)-4488 | Oxford Advanced Learner s Dictionary | !oald | priority:0 description:reference(words)
 ddg-reference(words)-4489 | OED - Oxford English Dictionary | !oed | priority:0 description:reference(words)
 ddg-reference(words)-4490 | OED - Oxford English Dictionary | !oed | priority:0 description:reference(words)
 ddg-reference(words)-4491 | OneLook | !onelook | priority:0 description:reference(words)
@@ -4578,8 +4578,8 @@ ddg-reference(words)-4577 | Verb-o-Matic | !verbomatic | priority:0 description:
 ddg-reference(words)-4578 | visuwords.com | !vis | priority:0 description:reference(words)
 ddg-reference(words)-4579 | Vocabulary.com | !vocab | priority:0 description:reference(words)
 ddg-reference(words)-4580 | Vocabulary | !vocabulary | priority:0 description:reference(words)
-ddg-reference(words)-4581 | Webster's Revised Unabridged Dictionary | !webster | priority:0 description:reference(words)
-ddg-reference(words)-4582 | Webster's Dictionary | !websters | priority:0 description:reference(words)
+ddg-reference(words)-4581 | Webster s Revised Unabridged Dictionary | !webster | priority:0 description:reference(words)
+ddg-reference(words)-4582 | Webster s Dictionary | !websters | priority:0 description:reference(words)
 ddg-reference(words)-4583 | WhatIs.com | !whatis | priority:0 description:reference(words)
 ddg-reference(words)-4584 | Wiktionary | !wikt | priority:0 description:reference(words)
 ddg-reference(words)-4585 | Wiktionary | !wikten | priority:0 description:reference(words)
@@ -4588,7 +4588,7 @@ ddg-reference(words)-4587 | Wiktionary | !wiktionary | priority:0 description:re
 ddg-reference(words)-4588 | Wikizionario, il dizionario libero | !wiktit | priority:0 description:reference(words)
 ddg-reference(words)-4589 | Wikcionário | !wiktpt | priority:0 description:reference(words)
 ddg-reference(words)-4590 | Woordenlijst | !woordenlijst | priority:0 description:reference(words)
-ddg-reference(words)-4591 | Merriam-Webster's Word Central | !wordcentral | priority:0 description:reference(words)
+ddg-reference(words)-4591 | Merriam-Webster s Word Central | !wordcentral | priority:0 description:reference(words)
 ddg-reference(words)-4592 | Word Information | !wordinfo | priority:0 description:reference(words)
 ddg-reference(words)-4593 | WordNet | !wordnet | priority:0 description:reference(words)
 ddg-reference(words)-4594 | Wordnik | !wordnik | priority:0 description:reference(words)
@@ -4657,7 +4657,7 @@ ddg-misc-4656 | Beer Advocate | !ba | priority:0 description:misc
 ddg-misc-4657 | BeerAdvocate | !beer | priority:0 description:misc
 ddg-misc-4658 | Blue Moon Rising | !bmr | priority:0 description:misc
 ddg-misc-4659 | BookMY Show | !bms | priority:0 description:misc
-ddg-misc-4660 | Boys' Life magazine | !boyslife | priority:0 description:misc
+ddg-misc-4660 | Boys  Life magazine | !boyslife | priority:0 description:misc
 ddg-misc-4661 | Brickset | !brickpart | priority:0 description:misc
 ddg-misc-4662 | Brickset | !brickset | priority:0 description:misc
 ddg-misc-4663 | UltimateGuitar.com | !btabs | priority:0 description:misc
@@ -4696,7 +4696,7 @@ ddg-misc-4695 | Food2Fork | !food2fork | priority:0 description:misc
 ddg-misc-4696 | Food Network | !foodnetwork | priority:0 description:misc
 ddg-misc-4697 | FurAffinity | !furaffinity | priority:0 description:misc
 ddg-misc-4698 | Fuck Yeah | !fy | priority:0 description:misc
-ddg-misc-4699 | Gardeners' World | !gardenersworld | priority:0 description:misc
+ddg-misc-4699 | Gardeners  World | !gardenersworld | priority:0 description:misc
 ddg-misc-4700 | German-Bash.org | !gbo | priority:0 description:misc
 ddg-misc-4701 | Geocaching.com | !geocache | priority:0 description:misc
 ddg-misc-4702 | Geocaching.com | !geocaching | priority:0 description:misc
@@ -5185,7 +5185,7 @@ ddg-games(specific)-5184 | libregamewiki | !lgw | priority:0 description:games(s
 ddg-games(specific)-5185 | Liquidpedia | !liquidpedia | priority:0 description:games(specific)
 ddg-games(specific)-5186 | Liquipedia2 | !liquipedia | priority:0 description:games(specific)
 ddg-games(specific)-5187 | LolKing | !lk | priority:0 description:games(specific)
-ddg-games(specific)-5188 | Luigi's Mansion Wiki | !lmwiki | priority:0 description:games(specific)
+ddg-games(specific)-5188 | Luigi s Mansion Wiki | !lmwiki | priority:0 description:games(specific)
 ddg-games(specific)-5189 | LOL counter | !lolcounter | priority:0 description:games(specific)
 ddg-games(specific)-5190 | LolKing | !lolking | priority:0 description:games(specific)
 ddg-games(specific)-5191 | LoL Pro | !lolpro | priority:0 description:games(specific)
@@ -5250,7 +5250,7 @@ ddg-games(specific)-5249 | The RuneScape Wiki | !rswiki | priority:0 description
 ddg-games(specific)-5250 | Runescape Wiki | !runescape | priority:0 description:games(specific)
 ddg-games(specific)-5251 | Sarna | !sarna | priority:0 description:games(specific)
 ddg-games(specific)-5252 | SC2Ranks | !sc2ranks | priority:0 description:games(specific)
-ddg-games(specific)-5253 | Sensei's Library | !senseis | priority:0 description:games(specific)
+ddg-games(specific)-5253 | Sensei s Library | !senseis | priority:0 description:games(specific)
 ddg-games(specific)-5254 | Smite Wiki | !smite | priority:0 description:games(specific)
 ddg-games(specific)-5255 | Sonic News Network | !snn | priority:0 description:games(specific)
 ddg-games(specific)-5256 | Solomid | !solomid | priority:0 description:games(specific)
@@ -5554,8 +5554,8 @@ ddg-food-5553 | Chefkoch.de | !ck | priority:0 description:food
 ddg-food-5554 | Cooks.com | !cook | priority:0 description:food
 ddg-food-5555 | Cookpad | !cookpad | priority:0 description:food
 ddg-food-5556 | Cooks.com | !cooks | priority:0 description:food
-ddg-food-5557 | Cook's Country | !cooksc | priority:0 description:food
-ddg-food-5558 | Cook's Illustrated | !cooksi | priority:0 description:food
+ddg-food-5557 | Cook s Country | !cooksc | priority:0 description:food
+ddg-food-5558 | Cook s Illustrated | !cooksi | priority:0 description:food
 ddg-food-5559 | Betty Crocker | !crocker | priority:0 description:food
 ddg-food-5560 | Delectable | !delectable | priority:0 description:food
 ddg-food-5561 | Eat Tender | !eattender | priority:0 description:food
@@ -5570,7 +5570,7 @@ ddg-food-5569 | !findlunchin | !findlunchin | priority:0 description:food
 ddg-food-5570 | foodnetwork.com | !fn | priority:0 description:food
 ddg-food-5571 | Food.com | !food | priority:0 description:food
 ddg-food-5572 | Food.com | !food | priority:0 description:food
-ddg-food-5573 | Cook's Thesaurus | !foodsubs | priority:0 description:food
+ddg-food-5573 | Cook s Thesaurus | !foodsubs | priority:0 description:food
 ddg-food-5574 | Forkd | !forkd | priority:0 description:food
 ddg-food-5575 | Forkd | !forkd | priority:0 description:food
 ddg-food-5576 | Food Standards Agency - Food Hygiene Ratings | !fsarating | priority:0 description:food
@@ -5607,12 +5607,12 @@ ddg-food-5606 | Allrecipes | !recipes | priority:0 description:food
 ddg-food-5607 | RestoFR | !restofr | priority:0 description:food
 ddg-food-5608 | Serious Eats | !seriouseats | priority:0 description:food
 ddg-food-5609 | Smulweb | !smulweb | priority:0 description:food
-ddg-food-5610 | Taco John's | !tacojohns | priority:0 description:food
+ddg-food-5610 | Taco John s | !tacojohns | priority:0 description:food
 ddg-food-5611 | Tasteline | !tasteline | priority:0 description:food
-ddg-food-5612 | Taco John's | !tj | priority:0 description:food
+ddg-food-5612 | Taco John s | !tj | priority:0 description:food
 ddg-food-5613 | Tudo Gotoso | !tudogostoso | priority:0 description:food
 ddg-food-5614 | Webtender | !webtender | priority:0 description:food
-ddg-food-5615 | The World's Healthiest Foods | !whfoods | priority:0 description:food
+ddg-food-5615 | The World s Healthiest Foods | !whfoods | priority:0 description:food
 ddg-food-5616 | Yelp | !yelp | priority:0 description:food
 ddg-food-5617 | Yelp San Diego | !yelpsd | priority:0 description:food
 ddg-food-5618 | Yummly | !yum | priority:0 description:food
@@ -5648,7 +5648,7 @@ ddg-online(deals)-5647 | Avito | !avito | priority:0 description:online(deals)
 ddg-online(deals)-5648 | Bang good | !banggood | priority:0 description:online(deals)
 ddg-online(deals)-5649 | Shopping-Bargains | !bargain | priority:0 description:online(deals)
 ddg-online(deals)-5650 | Bartelby | !bartlets | priority:0 description:online(deals)
-ddg-online(deals)-5651 | Brad's Deals | !bdeals | priority:0 description:online(deals)
+ddg-online(deals)-5651 | Brad s Deals | !bdeals | priority:0 description:online(deals)
 ddg-online(deals)-5652 | Body & Fit | !bodyfit | priority:0 description:online(deals)
 ddg-online(deals)-5653 | Sunshine Rewards | !cashback | priority:0 description:online(deals)
 ddg-online(deals)-5654 | CeX | !cex | priority:0 description:online(deals)
@@ -5732,7 +5732,7 @@ ddg-law-5731 | Hong Kong Bilingual Laws Information System | !blis | priority:0 
 ddg-law-5732 | CanLII | !canlii | priority:0 description:law
 ddg-law-5733 | Conseil Constitutionnel | !cconst | priority:0 description:law
 ddg-law-5734 | http://www.ecfr.gov/cgi-bin/ECFR | !cfr | priority:0 description:law
-ddg-law-5735 | Charlotte's Law & Fine Prints | !clfp | priority:0 description:law
+ddg-law-5735 | Charlotte s Law & Fine Prints | !clfp | priority:0 description:law
 ddg-law-5736 | Copyright Catalog | !cocatalog | priority:0 description:law
 ddg-law-5737 | Copyright Catalog | !cocatalogn | priority:0 description:law
 ddg-law-5738 | InfoCuria | !curia | priority:0 description:law
@@ -6009,7 +6009,7 @@ ddg-images-6008 | Lumload | !lumload | priority:0 description:images
 ddg-images-6009 | Movie Poster Database | !movposdb | priority:0 description:images
 ddg-images-6010 | Multicolr Search Lab | !multicolr | priority:0 description:images
 ddg-images-6011 | mustachify.me | !mustache | priority:0 description:images
-ddg-images-6012 | Nature's Pic Images | !naturespic | priority:0 description:images
+ddg-images-6012 | Nature s Pic Images | !naturespic | priority:0 description:images
 ddg-images-6013 | The Noun Project | !noun | priority:0 description:images
 ddg-images-6014 | The Noun Project | !np | priority:0 description:images
 ddg-images-6015 | Open Clip Art Library | !oca | priority:0 description:images
@@ -6177,7 +6177,7 @@ ddg-tools(urls)-6176 | Web Archive | !webarchive | priority:0 description:tools(
 ddg-tools(urls)-6177 | Web of Trust | !weboftrust | priority:0 description:tools(urls)
 ddg-tools(urls)-6178 | Webutation | !webutation | priority:0 description:tools(urls)
 ddg-tools(urls)-6179 | WhatCMS | !whatcms | priority:0 description:tools(urls)
-ddg-tools(urls)-6180 | What's My DNS | !wmdns | priority:0 description:tools(urls)
+ddg-tools(urls)-6180 | What s My DNS | !wmdns | priority:0 description:tools(urls)
 ddg-audio-6181 | !abmp3 | !abmp3 | priority:0 description:audio
 ddg-audio-6182 | Gendou Anime Music | !amusic | priority:0 description:audio
 ddg-audio-6183 | BlogTalkRadio | !blogtalkradio | priority:0 description:audio
@@ -6199,8 +6199,8 @@ ddg-audio-6198 | myinstants.com | !instants | priority:0 description:audio
 ddg-audio-6199 | Invisible Agent | !ir | priority:0 description:audio
 ddg-audio-6200 | Ivoox | !ivoox | priority:0 description:audio
 ddg-audio-6201 | knockmp3 | !knockmp3 | priority:0 description:audio
-ddg-audio-6202 | Let's sing it | !lsi | priority:0 description:audio
-ddg-audio-6203 | Et mon cul c'est du tofu ? | !moncul | priority:0 description:audio
+ddg-audio-6202 | Let s sing it | !lsi | priority:0 description:audio
+ddg-audio-6203 | Et mon cul c est du tofu ? | !moncul | priority:0 description:audio
 ddg-audio-6204 | Murfie | !murfie | priority:0 description:audio
 ddg-audio-6205 | MusicWeb International | !mwi | priority:0 description:audio
 ddg-audio-6206 | Netophonix | !neto | priority:0 description:audio
@@ -6237,7 +6237,7 @@ ddg-languages(other)-6236 | charcode.es | !char | priority:0 description:languag
 ddg-languages(other)-6237 | Clojure Docs | !clojure | priority:0 description:languages(other)
 ddg-languages(other)-6238 | Clojure Docs | !clojuredocs | priority:0 description:languages(other)
 ddg-languages(other)-6239 | CMake 3.0 Documentation | !cmake30 | priority:0 description:languages(other)
-ddg-languages(other)-6240 | The Rust community's crate host | !crates | priority:0 description:languages(other)
+ddg-languages(other)-6240 | The Rust community s crate host | !crates | priority:0 description:languages(other)
 ddg-languages(other)-6241 | CTAN.org | !ctan | priority:0 description:languages(other)
 ddg-languages(other)-6242 | Drupal API | !dapi | priority:0 description:languages(other)
 ddg-languages(other)-6243 | Delphi Basics | !delphi | priority:0 description:languages(other)
@@ -6400,7 +6400,7 @@ ddg-google-6399 | Google HU | !ghu | priority:0 description:google
 ddg-google-6400 | Google Images | !gi | priority:0 description:google
 ddg-google-6401 | Google ID | !gid | priority:0 description:google
 ddg-google-6402 | Google IE | !gie | priority:0 description:google
-ddg-google-6403 | Google: I'm Feeling Lucky | !gifl | priority:0 description:google
+ddg-google-6403 | Google: I m Feeling Lucky | !gifl | priority:0 description:google
 ddg-google-6404 | Google IL | !gik | priority:0 description:google
 ddg-google-6405 | Google Images | !gim | priority:0 description:google
 ddg-google-6406 | Google Images | !gimages | priority:0 description:google
@@ -6598,11 +6598,11 @@ ddg-big box/department-6597 | John Lewis | !johnlewis | priority:0 description:b
 ddg-big box/department-6598 | Jula | !jula | priority:0 description:big box/department
 ddg-big box/department-6599 | Jumbo | !jumbo | priority:0 description:big box/department
 ddg-big box/department-6600 | Kmart | !kmart | priority:0 description:big box/department
-ddg-big box/department-6601 | Kohl's | !kohls | priority:0 description:big box/department
+ddg-big box/department-6601 | Kohl s | !kohls | priority:0 description:big box/department
 ddg-big box/department-6602 | L. L. Bean | !llbean | priority:0 description:big box/department
 ddg-big box/department-6603 | Lowes | !lowes | priority:0 description:big box/department
-ddg-big box/department-6604 | Macy's | !macys | priority:0 description:big box/department
-ddg-big box/department-6605 | Macy's | !macys | priority:0 description:big box/department
+ddg-big box/department-6604 | Macy s | !macys | priority:0 description:big box/department
+ddg-big box/department-6605 | Macy s | !macys | priority:0 description:big box/department
 ddg-big box/department-6606 | madeinusa | !madeinusa | priority:0 description:big box/department
 ddg-big box/department-6607 | Marks & Spencer | !mands | priority:0 description:big box/department
 ddg-big box/department-6608 | Meijer | !meijer | priority:0 description:big box/department
@@ -6701,7 +6701,7 @@ ddg-sysadmin-6700 | HowtoForge | !howtoforge | priority:0 description:sysadmin
 ddg-sysadmin-6701 | intodns | !intodns | priority:0 description:sysadmin
 ddg-sysadmin-6702 | WhatIsMyIPAddress.com | !ip | priority:0 description:sysadmin
 ddg-sysadmin-6703 | ipinfo.io | !ipinfo | priority:0 description:sysadmin
-ddg-sysadmin-6704 | L'internet rapide et permanent | !irp | priority:0 description:sysadmin
+ddg-sysadmin-6704 | L internet rapide et permanent | !irp | priority:0 description:sysadmin
 ddg-sysadmin-6705 | DistroWatch | !iso | priority:0 description:sysadmin
 ddg-sysadmin-6706 | DistroWatch | !iso | priority:0 description:sysadmin
 ddg-sysadmin-6707 | Juju Charm Store | !juju | priority:0 description:sysadmin
@@ -7039,7 +7039,7 @@ ddg-tools-7038 | Descriptionari | !desc | priority:0 description:tools
 ddg-tools-7039 | Dicionário Online de Português | !dicio | priority:0 description:tools
 ddg-tools-7040 | Infopédia | !dicpt | priority:0 description:tools
 ddg-tools-7041 | dict.cc | !dictcc | priority:0 description:tools
-ddg-tools-7042 | Institut d'Estudis Catalans | !diec | priority:0 description:tools
+ddg-tools-7042 | Institut d Estudis Catalans | !diec | priority:0 description:tools
 ddg-tools-7043 | Diigo | !diigo | priority:0 description:tools
 ddg-tools-7044 | Dispostable | !dispt | priority:0 description:tools
 ddg-tools-7045 | DokuWiki | !dkwk | priority:0 description:tools
@@ -7227,7 +7227,7 @@ ddg-tools-7226 | TimeAndDate | !td | priority:0 description:tools
 ddg-tools-7227 | Telefonterror | !telefonterror | priority:0 description:tools
 ddg-tools-7228 | The Full Wiki | !thefullwiki | priority:0 description:tools
 ddg-tools-7229 | Open Thesaurus | !thesaurusde | priority:0 description:tools
-ddg-tools-7230 | Google's Timer | !timer | priority:0 description:tools
+ddg-tools-7230 | Google s Timer | !timer | priority:0 description:tools
 ddg-tools-7231 | Timerepubik | !timerep | priority:0 description:tools
 ddg-tools-7232 | Timerepublik | !timerepublik | priority:0 description:tools
 ddg-tools-7233 | Time and Date | !timezone | priority:0 description:tools
