@@ -122,6 +122,7 @@ class Utils:
     }
     search_engin_dict = {}
     search_engin_type = []
+    search_engin_url_dict = {}
 
     ddg_search_engin_dict = {}
     ddg_search_engin_type = []
@@ -145,6 +146,7 @@ class Utils:
             for line in all_lines:
                 record = PriorityRecord(line)
                 if record.get_title() != '':
+                    self.search_engin_url_dict[record.get_title().strip()] = record.get_url().strip()
                     self.search_engin_dict[record.get_title().strip()] = record
         if os.path.exists('db/config/engin_type'):
             f = open('db/config/engin_type','rU')
@@ -231,31 +233,9 @@ class Utils:
         return os.getcwd() + "/db/" + subject + "/"
 
     def getEnginUrl(self, engin):
-        records = self.search_engin_dict.values()
         if self.ddg_mode:
             return self.ddg_search_engin_url_dict[engin]
-        for record in records:
-            item = record.get_url().strip()
-            #print item  + ' ' + record.get_title()
-            if engin == 'google':
-                return 'https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q='
-            if engin == 'googlevideo' and item.lower().find('google.com.hk/videohp') != -1:
-                return item
-            if engin == 'youku' and item.lower().find('soku.com/search') != -1:
-                return item
-            if engin == 'tudou' and item.lower().find('soku.com/t') != -1:
-                return item
-            if engin == 'mooc-list' and item.lower().find('google.com/cse') != -1:
-                return item
-            if engin == 'indeed' and item.lower().find('www.indeed') != -1:
-                return item
-            if engin.strip() == "arxiv-sanity" and item.lower().find('sanity') != -1:
-                return item
-            if engin == "arxiv" and item.lower().find('arxiv.org') != -1:
-                return item
-            if item.lower().find(engin.lower()) != -1:
-                return item
-        return ''
+        return self.search_engin_url_dict[engin]
 
     def getEnginUrlEx(self, engin, keyword, query=''):
         url = ''

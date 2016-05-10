@@ -49,7 +49,7 @@ engin-48 | inspirehep | http://inspirehep.net/search?ln=en&ln=en&of=hb&action_se
 engin-49 | hindawi | http://www.hindawi.com/search/all/ | priority:0 description:paper
 engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | priority:0 description:tutorial
 engin-51 | github | https://github.com/search?q= | priority:8 description:project star
-engin-52 | stackoverflow | http://stackoverflow.com/search?q= | priority:8 description:social star answering
+engin-52 | stackoverflow | http://stackoverflow.com/search?q= | priority:8 description:social answering
 engin-53 | mathoverflow | http://mathoverflow.net/search?q= | priority:0 description:social answering
 engin-54 | wikipedia | https://wikipedia.org/wiki/ | priority:8 description:wiki star
 engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | priority:0 description:social answering
@@ -68,7 +68,7 @@ engin-64 | class-central | https://www.class-central.com/search?q= | priority:0 
 engin-65 | guokr | http://mooc.guokr.com/search/course/?wd= | priority:0 description:course
 engin-66 | coursegraph | http://coursegraph.com/search_results/ | priority:0 description:course
 engin-67 | moozhi | http://www.moozhi.com/search/course?keywords= | priority:0 description:course
-engin-68 | aminer | https://aminer.org/search?t=b&q= | priority:8 description:paper people organization star
+engin-68 | aminer | https://aminer.org/search?t=b&q= | priority:8 description:paper people organization
 engin-69 | chaoxing | http://video.chaoxing.com/s?order=0&type=all&sw= | priority:0 description:course
 engin-70 | sina | http://open.sina.com.cn/search/ | priority:0 description:course
 engin-71 | 163 | http://c.open.163.com/search/search.htm?query= | priority:0 description:course
@@ -88,7 +88,7 @@ engin-84 | textbooksearch | http://textbooksearch.mit.edu/class/ | priority:0 de
 engin-85 | cambridge | http://www.cambridge.org/cn/search?iFeelLucky=false&currentTheme=Academic_v1&c=MainSearchBar&query= | priority:0 description:book
 engin-86 | packtpub | https://www.packtpub.com/all/?search= | priority:0 description:book
 engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 description:social star
-engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social star
+engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people star
 engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | priority:0 description:paper
@@ -164,8 +164,8 @@ engin-160 | ust.hk | http://www.ust.hk/search/$/?sopt=google | priority:0 descri
 engin-161 | physicsworld | http://physicsworld.com/cws/search?siteCode=phw&query= | priority:0 description:journal
 engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
-engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:8 description:hybrid star
-engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:5 description:answering 
+engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:8 description:all
+engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:5 description:all 
 engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:course
 engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:book
 engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course
@@ -179,7 +179,7 @@ engin-175 | engadget | http://www.engadget.com/search/?search-terms= | priority:
 engin-176 | datasciencecentral | http://www.datasciencecentral.com/page/search?q= | priority:0 description:social
 engin-177 | math.stack | http://math.stackexchange.com/search?q= | priority:0 description:social
 engin-178 | kdnuggets | http://www.kdnuggets.com/?s= | priority:0 description:course social
-engin-179 | archive.org | https://archive.org/search.php?query= | priority:0 description:history
+engin-179 | archive.org | https://archive.org/search.php?query= | priority:0 description:all
 engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:course social
 engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization product finance
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
