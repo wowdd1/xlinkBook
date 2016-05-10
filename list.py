@@ -31,7 +31,7 @@ output_navigation_links = False
 merger_result = False
 top_row = 0
 old_top_row = 0
-max_links_row = 9
+max_links_row = 8
 max_nav_link_row = 12
 max_nav_links_row = 8
 default_links_row = 2
@@ -94,7 +94,7 @@ function searchTopic(obj, topic){\
     for(var i=0;i<options.length;i++){\
         if (trimStr(options[i].text) == trimStr(obj.text)) {\
             console.log("xx", options[i].value);\
-            if (trimStr(options[i].text) == "arxiv" || trimStr(options[i].text) == "doaj" || trimStr(options[i].text) == "ust.hk"){\
+            if (options[i].value.indexOf("$") != -1) {\
                 window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")));\
             } else {\
                 console.log("xx", obj.text.slice(0, 1));\
