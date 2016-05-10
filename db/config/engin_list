@@ -1,7 +1,7 @@
 engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | priority:10 description:default all star
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star
-engin-4 | arxiv | http://search.arxiv.org:8081/?in=grp_cs&query= | priority:8 description:paper star
+engin-4 | arxiv | http://search.arxiv.org:8081/?query=$&in=grp_cs | priority:8 description:paper star
 engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book star
 engin-6 | bookzz | http://bookzz.org/s/?q= | priority:0 description:book
 engin-7 | booksc | http://booksc.org/s/?q= | priority:0 description:book
@@ -135,9 +135,9 @@ engin-131 | diigo | https://www.diigo.com/tag/ | priority:0 description:social
 engin-132 | visiontalks | http://www.computervisiontalks.com/?s= | priority:0 description:talk course tutorial
 engin-133 | tabao | https://world.taobao.com/search/search.htm?q= | priority:0 description:product
 engin-134 | ebay | http://www.ebay.com/sch/i.html?_nkw= | priority:0 description:product
-engin-135 | jrsearch | http://jrsearch.jd.com/gs/search?q= | priority:0 description:product
-engin-136 | kickstarter | https://www.kickstarter.com/discover/advanced?ref=nav_search&term= | priority:0 description:product
-engin-137 | indiegogo | https://www.indiegogo.com/search#/?q= | priority:0 description:product
+engin-135 | jrsearch | http://jrsearch.jd.com/gs/search?q= | priority:0 description:product finance
+engin-136 | kickstarter | https://www.kickstarter.com/discover/advanced?ref=nav_search&term= | priority:0 description:product finance
+engin-137 | indiegogo | https://www.indiegogo.com/search#/?q= | priority:0 description:product finance
 engin-138 | law-star | http://law1.law-star.com/search?kw= | priority:0 description:legal
 engin-139 | worldlii | http://www.worldlii.org/cgi-bin/sinosrch.cgi?query= | priority:0 description:legal
 engin-140 | law.com | http://www.law.com/search/?query= | priority:0 description:legal
@@ -164,7 +164,22 @@ engin-160 | ust.hk | http://www.ust.hk/search/$/?sopt=google | priority:0 descri
 engin-161 | physicsworld | http://physicsworld.com/cws/search?siteCode=phw&query= | priority:0 description:journal
 engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
-engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:8 description:all star
-engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:8 description:answering 
-engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:8 description:course
-engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:8 description:book
+engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:8 description:hybrid star
+engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:5 description:answering 
+engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:course
+engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:book
+engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course
+engin-169 | freenode | http://irc.netsplit.de/channels/?net=freenode&chat= | priority:0 description:organization
+engin-170 | meetup | http://www.meetup.com/find/?keywords= | priority:0 description:organization people
+engin-171 | geekpark | http://www.geekpark.net/?q= | priority:0 description:social
+engin-172 | hn.algolia | https://hn.algolia.com/?query= | priority:0 description:social
+engin-173 | infoq | http://www.infoq.com/search.action?queryString= | priority:0 description:social
+engin-174 | huxiu | http://www.huxiu.com/search.html?s= | priority:0 description:social
+engin-175 | engadget | http://www.engadget.com/search/?search-terms= | priority:0 description:product
+engin-176 | datasciencecentral | http://www.datasciencecentral.com/page/search?q= | priority:0 description:social
+engin-177 | math.stack | http://math.stackexchange.com/search?q= | priority:0 description:social
+engin-178 | kdnuggets | http://www.kdnuggets.com/?s= | priority:0 description:course social
+engin-179 | archive.org | https://archive.org/search.php?query= | priority:0 description:history
+engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:course social
+engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization product finance
+engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
