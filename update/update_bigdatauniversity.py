@@ -22,7 +22,8 @@ class BigDataUniversitySpider(Spider):
 
 
         for div in soup.find_all('div', class_='media-body'):
-            title = div.h3.a.text
+            title = div.h3.a.text.strip()
+            print title
             instructors = 'instructors:'
             if div.p != None:
                 instructors += div.p.strong.text

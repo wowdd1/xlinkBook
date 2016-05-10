@@ -1,0 +1,93 @@
+bigdata-1 | Introduction to Data Analysis with Demos | http://bigdatauniversity.com/courses/introduction-to-data-analysis-with-demos/ | instructors:Dr. Murtaza Haider, Polong Lin, Dr. Saeed Aghabozorgi
+bigdata-2 | Scala for Data Science | http://bigdatauniversity.com/courses/scala-data-science/ | instructors:Dr Priya Dev
+bigdata-3 | MapReduce and YARN | http://bigdatauniversity.com/courses/mapreduce-and-yarn/ | instructors:Glen Mules, Joe Byers
+bigdata-4 | SportsHack 2015 – All you need to know while at the hackathon (Nov 27 – 29, 2015) | http://bigdatauniversity.com/courses/sportshack-weekend-2015/ | instructors:Polong Lin
+bigdata-5 | Spark Overview for Scala Analytics | http://bigdatauniversity.com/courses/spark-overview/ | instructors:Jamie Allen
+bigdata-6 | Machine Learning and Scala (BETA) | http://bigdatauniversity.com/courses/machine-learning-and-scala/ | instructors:TBD
+bigdata-7 | Advanced Data Science and Scala (BETA) | http://bigdatauniversity.com/courses/advanced-data-science-and-scala/ | instructors:TBD
+bigdata-8 | Introduction to Scala | http://bigdatauniversity.com/courses/scala-course/ | instructors:Jamie Allen
+bigdata-9 | Data Mining Algorithms (BETA Version) | http://bigdatauniversity.com/courses/data-mining-algorithms/ | instructors:Polong Lin, Saeed Aghabozorgi
+bigdata-10 | Predictive Modeling Fundamentals I | http://bigdatauniversity.com/courses/predictive-modeling/ | instructors:Mikhail Lakirovich, Greg Filla and Armand Ruiz
+bigdata-11 | Exploring and Visualizing the Number of Out-of-School Children Around the World using Python | http://bigdatauniversity.com/courses/exploring-and-visualizing-the-number-of-out-of-school-children-around-the-world/ | instructors:Xu Fei
+bigdata-12 | Business Process Automation with Maximo Workflow (Simulation Module) | http://bigdatauniversity.com/courses/business-process-automation-with-maximo-workflow-simulation-module/ | instructors:David Boggs
+bigdata-13 | Text mining in action: Analyzing Twitter data for Democratic General Elections (BETA Version) | http://bigdatauniversity.com/courses/text-mining-in-action-analyzing-twitter-data-for-democratic-general-elections/ | instructors:Keshev Kulkarni
+bigdata-14 | Inventory Management with Maximo | http://bigdatauniversity.com/courses/inventory-management-with-maximo/ | instructors:Marianne Folino, Craig Kokay, John Pilla
+bigdata-15 | Domains and Lookups with Maximo | http://bigdatauniversity.com/courses/domains-and-lookups-with-maximo/ | instructors:Martin Williams
+bigdata-16 | Asset Configuration with Maximo | http://bigdatauniversity.com/courses/asset-configuration-with-maximo/ | instructors:John Pilla
+bigdata-17 | Security Models for Asset Management | http://bigdatauniversity.com/courses/security-models-for-asset-management/ | instructors:John Pilla
+bigdata-18 | Establishing Inventory Items for Asset Management | http://bigdatauniversity.com/courses/establishing-inventory-items-for-asset-management/ | instructors:David Boggs, Marianne Folino, John Pilla, Martin Williams
+bigdata-19 | Introduction to Asset Management using Maximo | http://bigdatauniversity.com/courses/introduction-to-asset-management-using-maximo/ | instructors:David Boggs, Marianne Folino, John Pilla, Martin Williams
+bigdata-20 | Introduction to OpenRefine | http://bigdatauniversity.com/courses/introduction-to-openrefine/ | instructors:Martin Magdiner
+bigdata-21 | Understanding Maximo 7.6 Asset Management New Features Simulation Module | http://bigdatauniversity.com/courses/understanding-maximo-7-6-asset-management-new-features-simulation-module/ | instructors:David Boggs, Marianne Folino, John Pilla, Martin Williams
+bigdata-22 | Large Scale Analytics with R | http://bigdatauniversity.com/courses/large-scale-analytics-with-r/ | instructors:Saeed Aghabozorgi, Polong Lin, Brandon Mackenzie
+bigdata-23 | Watson Analytics Fundamentals | http://bigdatauniversity.com/courses/watson-analytics-fundamentals/ | instructors:Jackie Ross and Jason Salares
+bigdata-24 | Data Scientist Workbench Tutorial | http://bigdatauniversity.com/courses/data-scientist-workbench-tutorial/ | instructors:Polong Lin
+bigdata-25 | Introduction to Bitcoin | http://bigdatauniversity.com/courses/introduction-to-bitcoin/ | instructors:Travis Patron
+bigdata-26 | Spark Fundamentals II | http://bigdatauniversity.com/courses/spark-fundamentals-ii/ | instructors:James Priebe, Henry Quach
+bigdata-27 | Data Science Methodology | http://bigdatauniversity.com/courses/data-science-methodology/ | instructors:John B. Rollins
+bigdata-28 | Introduction to R | http://bigdatauniversity.com/courses/introduction-to-r/ | instructors:Jonathan Cornelissen - DataCamp
+bigdata-29 | Introduction to Solr | http://bigdatauniversity.com/courses/introduction-to-solr/ | instructors:James Priebe
+bigdata-30 | Spark Fundamentals I | http://bigdatauniversity.com/courses/spark-fundamentals/ | instructors:Henry Quach, Alan Barnes
+bigdata-31 | Introduction to NoSQL and DBaaS | http://bigdatauniversity.com/courses/introduction-to-nosql-and-dbaas/ | instructors:Sharyn Richard
+bigdata-32 | Text Analytics Essentials | http://bigdatauniversity.com/courses/text-analytics-essentials/ | instructors:James Priebe
+bigdata-33 | Hadoop Fundamentals I | http://bigdatauniversity.com/courses/hadoop-course/ | instructors:Warren Pettit, Asma Desai
+bigdata-34 | SQL Access on Hadoop (Big SQL v4) | http://bigdatauniversity.com/courses/sql-access-on-hadoop-big-sql-v4/ | instructors:Henry L. Quach
+bigdata-35 | Using BigSheets for Spreadsheet-like Analytics | http://bigdatauniversity.com/courses/using-bigsheets-for-spreadsheet-like-analytics/ | instructors:Henry L Quach
+bigdata-36 | Big Data Fundamentals | http://bigdatauniversity.com/courses/big-data-fundamentals/ | instructors:Glen Mules
+bigdata-37 | Using HBase for Real-time Access to your Big Data – Version 2 | http://bigdatauniversity.com/courses/using-hbase-for-real-time-access-to-your-big-data-version-2/ | instructors:Henry L Quach
+bigdata-38 | Accessing Hadoop Data Using Hive | http://bigdatauniversity.com/courses/accessing-hadoop-data-using-hive-version-2/ | instructors:Aaron Ritchie
+bigdata-39 | Streams Developer Day | http://bigdatauniversity.com/courses/streams-developer-day/ | instructors:Nicolas Morales, Rafael Coss
+bigdata-40 | Getting Started with IBM BLU Acceleration for Cloud v1 (old version) | http://bigdatauniversity.com/courses/getting-started-with-ibm-blu-acceleration-for-cloud/ | instructors:Raul F. Chong, Grant Hutchison
+bigdata-41 | IBM BLU Acceleration for Cloud for StartUps and Developers v1 (old version | http://bigdatauniversity.com/courses/ibm-blu-acceleration-for-cloud-for-startups-and-developers/ | instructors:Luiz Aoqui, Yashavanthi Renukaswamy, Gene Kligerman, Sarada Chellam, Raul F. Chong, Grant Hutchison, Paul Stanley, Neelam Chaudhari
+bigdata-42 | IBM BLU Acceleration for Cloud for Business Analysts v1 (old version) | http://bigdatauniversity.com/courses/ibm-blu-acceleration-for-cloud-for-business-analysts/ | instructors:Gene Kligerman, Sarada Chellam, Luiz Aoqui, Neelam Chaudhari, Paul Kilroy, Kashif Hafeez, Raul F. Chong
+bigdata-43 | IBM BLU Acceleration for Cloud for Data Scientists v1 (old version) | http://bigdatauniversity.com/courses/ibm-blu-acceleration-cloud-data-scientists-v1-old-version/ | instructors:Grant Hutchison, Raul F. Chong
+bigdata-44 | IBM BLU Acceleration for Cloud for Administrators v1 (old version) | http://bigdatauniversity.com/courses/ibm-blu-acceleration-for-cloud-for-administrators/ | instructors:Grant Hutchison, Luiz Aoqui, Yashavanthi Renukaswamy, Ireneo Escarez, Raul F. Chong
+bigdata-45 | IBM BLU Acceleration for Cloud for Developers: BlueMix | http://bigdatauniversity.com/courses/analytics-on-the-cloud/ | instructors:Luiz Aoqui, Grant Hutchison
+bigdata-46 | Data Mining with R – Let R ‘rattle’ you | http://bigdatauniversity.com/courses/data-mining-with-r-let-r-rattle-you/ | instructors:Dr. Murtaza Haider
+bigdata-47 | Hadoop Developer Day Event | http://bigdatauniversity.com/courses/hadoop-hackathon-onsite-and-live-stream-event/ | instructors:Aaron Ritchie, Warren Pettit, Nicolas Morales, Cindy Saracco, Rafael Coss
+bigdata-48 | Developing Distributed Applications Using ZooKeeper | http://bigdatauniversity.com/courses/developing-distributed-applications-using-zookeeper/ | instructors:Aaron Ritchie and Henry Quach
+bigdata-49 | Introduction to Pig | http://bigdatauniversity.com/courses/introduction-to-pig/ | instructors:Warren Pettit
+bigdata-50 | Introduction to Jaql – v1 (old version) | http://bigdatauniversity.com/courses/414/ | instructors:Glen Mules, Warren Pettit
+bigdata-51 | Using R with Databases | http://bigdatauniversity.com/courses/using-r-with-databases/ | instructors:Grant Hutchison
+bigdata-52 | Introduction to Data Analysis using R | http://bigdatauniversity.com/courses/introduction-to-data-analysis-using-r/ | instructors:Grant Hutchison
+bigdata-53 | Moving Data into Hadoop | http://bigdatauniversity.com/courses/moving-data-into-hadoop/ | instructors:Glen Mules, Warren Pettit
+bigdata-54 | Introduction to MapReduce Programming | http://bigdatauniversity.com/courses/introduction-to-mapreduce-programming/ | instructors:Glen Mules, Warren Pettit
+bigdata-55 | Controlling Hadoop Jobs using Oozie | http://bigdatauniversity.com/courses/controlling-hadoop-jobs-with-oozie/ | instructors:Glen Mules, Warren Pettit
+bigdata-56 | Iniciación a Big Data – Aplicaciones al mundo de los negocios – Bloque II | http://bigdatauniversity.com/courses/iniciacion-a-big-data-aplicaciones-al-mundo-de-los-negocios-bloque-ii/ | instructors:Jorge Ubero
+bigdata-57 | Hadoop and the IBM SmartCloud Enterprise – v1 (OLD version) | http://bigdatauniversity.com/courses/hadoop-and-the-ibm-smartcloud-enterprise/ | instructors:Keith McDonald, Akmal B. Chaudhri, Bradley Steinfeld, Raul F. Chong
+bigdata-58 | Hadoop and the Amazon Cloud – v1 (OLD version) | http://bigdatauniversity.com/courses/hadoop-and-the-amazon-cloud/ | instructors:Keith McDonald, Akmal B. Chaudhri, Leon Katsnelson, Bradley Steinfeld, Raul F. Chong
+bigdata-59 | Big Data Analytics – Demos | http://bigdatauniversity.com/courses/big-data-analytics-demos/ | instructors:Audience:
+bigdata-60 | Hadoop Reporting and Analysis | http://bigdatauniversity.com/courses/hadoop-reporting-and-analysis/ | instructors:Ben Connors (Jaspersoft)
+bigdata-61 | IBM InfoSphere Streams V3.2 Developers Conference | http://bigdatauniversity.com/courses/ibm-infosphere-streams-3-2-developers-conference/ | instructors:Audience:
+bigdata-62 | Streams and the IBM SmartCloud Enterprise v1 (old version) | http://bigdatauniversity.com/courses/streams-and-the-ibm-smartcloud-enterprise/ | instructors:Leons Petrazickis, Anjali Agarwal, Rachit Arora, Raul F. Chong
+bigdata-63 | Stream Computing I | http://bigdatauniversity.com/courses/stream-computing-i/ | instructors:Martin Siegenthaler, Robert Uleman, Anjali Agarwal, Rachit Arora
+bigdata-64 | Text Analytics Essentials – v1 (OLD version) | http://bigdatauniversity.com/courses/text-analytics-essentials-i/ | instructors:Mrudula Madiraju, Jayatheerthan, Rakhi Arora, Shyamala Gowri, Mukund Babbar, Dharmesh Jain
+bigdata-65 | Text Analytics Essentials – Case Study | http://bigdatauniversity.com/courses/text-analytics-essentials-case-study/ | instructors:Gary Robinson
+bigdata-66 | UCSC CMPS290H  Large scale data integration – Text Analytics | http://bigdatauniversity.com/courses/346/ | instructors:Gary Robinson
+bigdata-67 | Big Data Meetup | http://bigdatauniversity.com/courses/big-data-meetup/ | instructors:Audience:
+bigdata-68 | IBM Big Data Developer Day | http://bigdatauniversity.com/courses/ibm-big-data-developer-day/ | instructors:Audience:
+bigdata-69 | ビッグデータ・アーキテクチャー解説 | http://bigdatauniversity.com/courses/big-data-%e3%82%a2%e3%83%bc%e3%82%ad%e3%83%86%e3%82%af%e3%83%81%e3%83%a3%e3%83%bc/ | instructors:Norihiko Nakabayashi
+bigdata-70 | IBM Hadoop ソリューション解説 | http://bigdatauniversity.com/courses/ibm-hadoop-%e3%82%bd%e3%83%aa%e3%83%a5%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e8%a7%a3%e8%aa%ac/ | instructors:Tatsuya Ichishi
+bigdata-71 | ビッグデータのリアルタイム分析 | http://bigdatauniversity.com/courses/%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e3%81%ae%e3%83%aa%e3%82%a2%e3%83%ab%e3%82%bf%e3%82%a4%e3%83%a0%e5%88%86%e6%9e%90/ | instructors:Atshushi Tshuchiya
+bigdata-72 | Netezzaテクノロジーが切り拓くIn-DB アナリティクス | http://bigdatauniversity.com/courses/netezza%e3%83%86%e3%82%af%e3%83%8e%e3%83%ad%e3%82%b8%e3%83%bc%e3%81%8c%e5%88%87%e3%82%8a%e6%8b%93%e3%81%8fin-db-%e3%82%a2%e3%83%8a%e3%83%aa%e3%83%86%e3%82%a3%e3%82%af%e3%82%b9/ | instructors:Shigeki Kojima
+bigdata-73 | 信頼できるビッグデータ活用を実現するには？ | http://bigdatauniversity.com/courses/%e4%bf%a1%e9%a0%bc%e3%81%a7%e3%81%8d%e3%82%8b%e3%83%93%e3%83%83%e3%82%b0%e3%83%87%e3%83%bc%e3%82%bf%e6%b4%bb%e7%94%a8%e3%82%92%e5%ae%9f%e7%8f%be%e3%81%99%e3%82%8b%e3%81%ab%e3%81%af%ef%bc%9f/ | instructors:Kazumi Sejima
+bigdata-74 | SQL Fundamentals | http://bigdatauniversity.com/courses/sql-course/ | instructors:Yashavanthi Renukaswamy, Wagner Crivelini, Liviu Perniu, Priyanka Harish, Raul F. Chong
+bigdata-75 | DB2 Essential Training I | http://bigdatauniversity.com/courses/db2-essential-training-i/ | instructors:Raul F. Chong
+bigdata-76 | DB2 Essential Training II | http://bigdatauniversity.com/courses/db2-essential-training-ii/ | instructors:Raul F. Chong
+bigdata-77 | DB2 Academic Training – 302A Exam preparation | http://bigdatauniversity.com/courses/db2-academic-training-302a-exam-preparation/ | instructors:Yashavanthi Renukaswamy, Wagner Crivelini, Liviu Perniu, Priyanka Harish, Raul F. Chong
+bigdata-78 | DB2 Essential Training I (Spanish/Español) | http://bigdatauniversity.com/courses/db2-essential-training-i-spanishespanol/ | instructors:Raul F. Chong
+bigdata-79 | DB2 Essential Training I (Russian/Pусский) | http://bigdatauniversity.com/courses/db2-essential-training-i-russianp%d1%83%d1%81%d1%81%d0%ba%d0%b8%d0%b9/ | instructors:Raul F. Chong
+bigdata-80 | DB2 Essential Training I (Portuguese/Português) | http://bigdatauniversity.com/courses/db2-essential-training-i-portugueseportugues/ | instructors:Raul F. Chong
+bigdata-81 | DB2: Kurs Podstawowy I | http://bigdatauniversity.com/courses/db2-kurs-podstawowy-i/ | instructors:Raul F. Chong
+bigdata-82 | DB2 Essential Training II (Spanish/Español) | http://bigdatauniversity.com/courses/db2-essential-training-ii-spanishespanol/ | instructors:Raul F. Chong
+bigdata-83 | DB2 Essential Training II (Português) | http://bigdatauniversity.com/courses/db2-essential-training-ii-portugues/ | instructors:Raul F. Chong
+bigdata-84 | Iniciación a Big Data – Aplicaciones al mundo de los negocios – Bloque I | http://bigdatauniversity.com/courses/iniciacion-a-big-data-aplicaciones-al-mundo-de-los-negocios/ | instructors:Jorge Ubero
+bigdata-85 | Java Fundamentals – v1 (OLD version) | http://bigdatauniversity.com/courses/java-fundamentals-preview/ | instructors:SciSpike
+bigdata-86 | Query languages for Hadoop | http://bigdatauniversity.com/courses/query-languages-for-hadoop/ | instructors:Keith McDonald, Scott C. Gray
+bigdata-87 | Creating a course in Big Data University | http://bigdatauniversity.com/courses/creating-a-course-in-big-data-university/ | instructors:Raul F. Chong
+bigdata-88 | Using Bigsheets for Spreadsheet-like Analytics -v1 (Old Version) | http://bigdatauniversity.com/courses/spreadsheet-like-analytics/ | instructors:Cindy Saracco, Anshul Dawra, Xiao Jing XJ Wang
+bigdata-89 | Accessing Hadoop Data Using Hive – v1 (OLD version) | http://bigdatauniversity.com/courses/using-hive-for-data-warehousing/ | instructors:Aaron Ritchie
+bigdata-90 | Using HBase for Real-time Access to Your Big Data – v1 (OLD version) | http://bigdatauniversity.com/courses/using-hbase-for-real-time-access-to-your-big-data/ | instructors:Henry L Quach
+bigdata-91 | Hadoop Fundamentals I – v2 (OLD version) | http://bigdatauniversity.com/courses/hadoop-fundamentals-i-version-2/ | instructors:Keith McDonald, Akmal B. Chaudhri, Bradley Steinfeld, Carlos Renteria
+bigdata-92 | Hadoop Fundamentals I – v1 (OLD version) | http://bigdatauniversity.com/courses/hadoop-fundamentals-i-version-1/ | instructors:Keith McDonald, Akmal B. Chaudhri, Bradley Steinfeld
+bigdata-93 | Data Studio Essential Training I | http://bigdatauniversity.com/courses/data-studio-essential-training-i/ | instructors:Raul F. Chong
