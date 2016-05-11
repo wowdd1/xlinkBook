@@ -17,6 +17,7 @@ import sys
 from bs4 import BeautifulSoup;
 from record import Record
 from record import PriorityRecord
+from record import CourseRecord
 import time
 
 regex = re.compile("\033\[[0-9;]*m")
@@ -236,6 +237,12 @@ class Utils:
         if self.ddg_mode:
             return self.ddg_search_engin_url_dict[engin]
         return self.search_engin_url_dict[engin]
+
+    def getEnginUrlOtherInfo(self, record):
+        r = CourseRecord(record.line)
+        author = r.get_author().strip() 
+        if author != '':
+            return "&user=" + author;
 
     def getEnginUrlEx(self, engin, keyword, query=''):
         url = ''

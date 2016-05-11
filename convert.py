@@ -37,7 +37,7 @@ def customFormat(id, title, link):
     else:
         title = title[title.find(' ') : ].strip()
     '''
-    return [stuff, title, link]
+    return [id, title, link]
 
 
 def format(line, link):

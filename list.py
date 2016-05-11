@@ -87,22 +87,26 @@ function search(inputid,optionid){\
     }\
 }\
 function trimStr(str){return str.replace(/(^\s*)|(\s*$)/g,"");}\
-function searchTopic(obj, topic){\
+function searchTopic(obj, topic, otherInfo){\
     console.log("xx",obj.text);\
     console.log("xx",topic);\
     var options = document.getElementsByTagName("option");\
+    if (otherInfo.indexOf("&user") != -1 && obj.text == "artzub"){\
+    } else{\
+         otherInfo = "";\
+    }\
     for(var i=0;i<options.length;i++){\
         if (trimStr(options[i].text) == trimStr(obj.text)) {\
             console.log("xx", options[i].value);\
             if (options[i].value.indexOf("$") != -1) {\
-                window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")));\
+                window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")) + otherInfo);\
             } else {\
                 console.log("xx", obj.text.slice(0, 1));\
                 if (options[i].value.slice(0, 1) == "!"){\
                     console.log("xx", options[i].value + topic.replace("&nbsp;", " "));\
-                    window.open("http://duckduckgo.com/?q=" + options[i].value + " " + topic.replace("&nbsp;", " "));\
+                    window.open("http://duckduckgo.com/?q=" + options[i].value + " " + topic.replace("&nbsp;", " ") + otherInfo);\
                 } else {\
-                    window.open(options[i].value + topic.replace("&nbsp;", " "));\
+                    window.open(options[i].value + topic.replace("&nbsp;", " ") + otherInfo);\
                 }\
             }\
         }\
@@ -143,9 +147,9 @@ function hidendiv_2(targetid){\
       var target=document.getElementById(targetid);\
                 target.style.display="none";\
 }\
-function appendContent(targetid, topic){\
+function appendContent(targetid, topic, otherInfo){\
     var target=document.getElementById(targetid);\
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic);\
+    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);\
 }'
 script_end = '</script>'
 
@@ -514,7 +518,7 @@ def build_lines(list_all):
                                 script += "setText('" + linkID +"');"
                                 content_divID = "div-" + ijl
                                 script += "showdiv('" + content_divID + "', '" + linkID +"');"
-                                script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '%20')+ "');"
+                                script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '%20')+ "','" + utils.getEnginUrlOtherInfo(list_all[i][j]) + "');"
                             if output_with_describe:
                                 script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
                                 script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
@@ -564,7 +568,7 @@ def build_lines(list_all):
                                         div_content_list.append('</div>')
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_nav_links_row, 'searchTopic(this,"' + "#topic" + '");', '#822312', '#131612', 12))
+                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_nav_links_row, 'searchTopic(this,"' + "#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
                                 if l == lines - 1:
                                     gen_html_done = True
 
