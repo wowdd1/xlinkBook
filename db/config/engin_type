@@ -1,9 +1,11 @@
 all
+social
+product
 website
 paper
 journal
 course
-ppt
+slides
 book
 #image
 #doc
@@ -15,7 +17,6 @@ book
 project
 code
 patent
-social
 event
 people
 organization
@@ -24,7 +25,6 @@ patent
 talk
 tutorial
 finance
-product
 job
 legal
 rank

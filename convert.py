@@ -28,17 +28,34 @@ end = 1000
 line_id = 0
 delete_from_char = ''
 
-def printLine(line, link=''):
-    #line_id = random.randrange(10, 100, 2)
+
+def customFormat(id, title, link):
+    '''
+    stuff = title[0 : title.find(' ')].strip()
+    if len(stuff) > 1:
+        title = '    ' + title[title.find(' ') : ].strip()
+    else:
+        title = title[title.find(' ') : ].strip()
+    '''
+    return [stuff, title, link]
+
+
+def format(line, link):
     if link != '' and line.startswith('http') == False:
         if source.find('com') != -1:
             link = source[0 : source.find('com') + 3] + link
         if source.find('uk') != -1:
             link = source[0 : source.find('uk') + 3] + link
-    if delete_from_char != '' and line.find(delete_from_char) != -1: 
+    if delete_from_char != '' and line.find(delete_from_char) != -1:
         line = line[0 : line.find(delete_from_char)].strip()
-    print prefix + "-" + str(line_id) + " |"  + line.strip() + " | " + link + " |"
 
+    return customFormat(prefix + "-" + str(line_id), line, link)
+
+def printLine(line, link=''):
+    #line_id = random.randrange(10, 100, 2)
+    data = format(line.strip(), link)
+
+    print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def convert(source):
     global start, line_id
