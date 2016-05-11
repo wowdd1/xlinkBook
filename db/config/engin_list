@@ -17,7 +17,7 @@ engin-16 | wowebook | http://www.wowebook.co/?s= | priority:0 description:book
 engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | priority:0 description:paper
 engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | priority:0 description:paper
 engin-19 | baidu | http://www.baidu.com/s?word= | priority:8 description:all star
-engin-20 | bing | http://cn.bing.com/search?q=a+b&go=Submit&qs=n&form=QBLH&pq= | priority:0 description:all
+engin-20 | bing | http://cn.bing.com/search?q= | priority:0 description:all
 engin-21 | academic.r | http://academic.research.microsoft.com/Search?query= | priority:0 description:paper organization people
 engin-22 | xueshu | http://xueshu.baidu.com/s?wd= | priority:0 description:paper
 engin-23 | dblp | http://dblp.uni-trier.de/search?q= | priority:0 description:paper
@@ -121,7 +121,7 @@ engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=
 engin-118 | searchcode | https://searchcode.com/?q= | priority:0 description:code
 engin-119 | krugle | http://opensearch.krugle.org/document/search/#query= | priority:0 description:code
 engin-120 | openhub | https://code.openhub.net/search?s= | priority:0 description:code
-engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | priority:8 description:ppt star
+engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | priority:8 description:slides star
 engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | priority:0 description:course
 engin-123 | 36kr | http://36kr.com/search/articles/ | priority:0 description:social
 engin-124 | quora | https://www.quora.com/search?q= | priority:0 description:social answering
@@ -142,7 +142,7 @@ engin-138 | law-star | http://law1.law-star.com/search?kw= | priority:0 descript
 engin-139 | worldlii | http://www.worldlii.org/cgi-bin/sinosrch.cgi?query= | priority:0 description:legal
 engin-140 | law.com | http://www.law.com/search/?query= | priority:0 description:legal
 engin-141 | baike | http://baike.baidu.com/search?pn=0&rn=0&enc=utf8&word= | priority:0 description:wiki
-engin-142 | wenku | http://wenku.baidu.com/search?word= | priority:0 description:ppt doc
+engin-142 | wenku | http://wenku.baidu.com/search?word= | priority:0 description:slides doc
 engin-143 | bitbucket | https://bitbucket.org/repo/all?name= | priority:0 description:project
 engin-144 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course rank
 engin-145 | coursecycle | https://coursecycle.com/ | priority:0 description:course rank
@@ -183,3 +183,4 @@ engin-179 | archive.org | https://archive.org/search.php?query= | priority:0 des
 engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:course social
 engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization product finance
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
+engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 description:all
