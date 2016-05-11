@@ -240,9 +240,11 @@ class Utils:
 
     def getEnginUrlOtherInfo(self, record):
         r = CourseRecord(record.line)
-        author = r.get_author().strip() 
-        if author != '':
-            return "&user=" + author;
+        if r.get_author() != None:
+            author = r.get_author().strip() 
+            if author != '':
+                return "&user=" + author;
+        return ""
 
     def getEnginUrlEx(self, engin, keyword, query=''):
         url = ''
