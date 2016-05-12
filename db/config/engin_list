@@ -90,7 +90,7 @@ engin-86 | packtpub | https://www.packtpub.com/all/?search= | priority:0 descrip
 engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 description:social star
 engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:social
-engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people star
+engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization star
 engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | priority:0 description:paper
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | priority:8 description:social star
 engin-93 | crunchbase | https://www.crunchbase.com/$/ | priority:8 description:organization people product event star
