@@ -621,8 +621,9 @@ class GithubSpider(Spider):
                 'sony' : 'https://github.com/sony',\
                 'Blizzard' : 'https://github.com/Blizzard',\
                 'openai' : 'https://github.com/openai',\
-                'googlesamples' : 'https://github.com/googlesamples'}
-                
+                'googlesamples' : 'https://github.com/googlesamples',\
+                "dmlc" : "https://github.com/dmlc"}      
+
         for k in data:
 
             file_name = self.get_file_name("eecs/projects/github/" + k, self.school)
