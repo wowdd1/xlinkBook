@@ -185,3 +185,5 @@ engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
 engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 description:all
 engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:project
+engin-185 | codeschool | https://www.codeschool.com/search?query= | priority:0 description:tutorial
+engin-186 | teamtreehouse | https://teamtreehouse.com/library/q: | priority:0 description:tutorial
