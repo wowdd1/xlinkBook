@@ -65,8 +65,8 @@ subject_dict = {\
     "Physical" : "physics",\
     'Strategic Management' : 'economics',\
     "Social Sciences" : "social-sciences",\
-    "Statistics" : "statistics-data-analysis",\
-    "Data Analysis" : "statistics-data-analysis",\
+    "Statistics" : "data-science",\
+    "Data Analysis" : "data-science",\
     "Civil and Environmental Engineering" : "engineering",\
     "Mechanical Engineering" : "engineering",\
     "Materials Science and Engineering" : "engineering",\
@@ -111,7 +111,8 @@ need_update_subject_list = [
     #"psychology",
     #'chemistry',
     #'others',
-    'statistics-data-analysis'
+    #'art-culture',
+    'data-science'
 ]
 
 def print_all_subject():

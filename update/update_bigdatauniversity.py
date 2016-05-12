@@ -7,7 +7,7 @@ class BigDataUniversitySpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = 'BigDataUniversity'
-        self.subject = 'statistics-data-analysis'
+        self.subject = 'data-science'
 
 
     def doWork(self):
@@ -15,7 +15,7 @@ class BigDataUniversitySpider(Spider):
         soup = BeautifulSoup(r.text)
 
 
-        file_name = self.get_file_name('statistics-data-analysis/bigdata', self.school)
+        file_name = self.get_file_name('data-science/bigdata', self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
