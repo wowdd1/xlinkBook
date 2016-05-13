@@ -214,7 +214,7 @@ engin-210 | unrealengine | https://www.unrealengine.com/bingSearch?keyword= | pr
 engin-211 | darpa | http://search.darpa.mil/search?q=$&btnG=Search&client=default_frontend&output=xml_no_dtd&proxystylesheet=default_frontend&sort=date%3AD%3AL%3Ad1&wc=200&wc_mc=1&oe=UTF-8&ie=UTF-8&ud=1&filter=p&getfields=*&exclude_apps=1&site=default_collection | priority:0 description:project project
 engin-212 | nasa | http://nasasearch.nasa.gov/search?utf8=%E2%9C%93&affiliate=nasa&query= | priority:0 description:project
 engin-213 | rand | http://www.rand.org/search.html?query=$&search-submit= | priority:0 description:project
-engin-214 | usa | http://search.usa.gov/search?utf8=%E2%9C%93&affiliate=nrl&query= | priority:0 description:project
+engin-214 | usa.gov | http://search.usa.gov/search?utf8=%E2%9C%93&affiliate=nrl&query= | priority:0 description:project
 engin-215 | cnblogs | http://zzk.cnblogs.com/s?t=b&w= | priority:0 description:blog
 engin-216 | iwencai | http://www.iwencai.com/stockpick/search?tid=stockpick&qs=sl_box_main_ths&w= | priority:0 description:finance
 engin-217 | microjs | http://microjs.com/# | priority:0 description:project
@@ -222,7 +222,7 @@ engin-218 | npmjs | https://www.npmjs.com/search?q= | priority:0 description:pro
 engin-219 | dribbble | https://dribbble.com/search?q= | priority:0 description:design
 engin-220 | scimagojr | http://www.scimagojr.com/journalsearch.php?q=$&tip=jou | priority:0 description:journal rank
 engin-221 | sciencedaily | https://www.sciencedaily.com/search/?keyword= | priority:0 description:journal
-engin-222 | semanticscholar | https://www.semanticscholar.org/search?q=Deep%20Learning&sort=relevance&ae=false | priority:6 description:paper journal people
+engin-222 | semanticscholar | https://www.semanticscholar.org/search?q=Deep%20Learning&sort=relevance&ae=false | priority:6 description:paper people
 engin-223 | scholarpedia | http://www.scholarpedia.org/w/index.php?search=$&button=&title=Special%3ASearch | priority:0 description:wiki
 engin-224 | psychwiki | http://www.psychwiki.com/index.php?title=Special%3ASearch&search=$&go=Go | priority:0 description:wiki
 engin-225 | wiktionary | https://simple.wiktionary.org/w/index.php?search=$&title=Special:Search&fulltext=Search&searchToken=cn7a9gkq43m92nmo9pgi2c2fl | priority:0 description:wiki
@@ -241,3 +241,13 @@ engin-237 | osf.io | https://osf.io/search/?q= | priority:0 description:dataset
 engin-238 | figshare | https://figshare.com/search?q=$&quick=1 | priority:0 description:dataset
 engin-239 | hindawi | http://www.hindawi.com/search/all/ | priority:0 description:journal
 engin-240 | acm | http://dl.acm.org/results.cfm?query=$&Go.x=0&Go.y=0 | priority:0 description:paper 
+engin-241 | espacenet | http://worldwide.espacenet.com/searchResults?ST=singleline&locale=en_EP&submitted=true&DB=&query= | priority:0 description:patent
+engin-242 | dart-europe | http://www.dart-europe.eu/basic-results.php?kw%5B%5D=$&f=n | priority:0 description:paper
+engin-243 | uspto.gov | http://search.uspto.gov/search?query=$&op=Search&affiliate=web-sdmg-uspto.gov | priority:0 description:patent
+engin-244 | netspeak | http://www.netspeak.org/#query= | priority:0 description:dataset
+engin-245 | linggle | http://linggle.com/# | priority:0 description:dataset
+engin-246 | scholar.cnki | http://scholar.cnki.net/result.aspx?q=$&rt=&rl= | priority:0 description:patent paper journal book
+engin-247 | fortune | http://search-app.fortune.com/?q= | priority:0 description:journal
+engin-248 | jpo.go | http://www.jpo.go.jp/search/english_search_results.html?q=$&sa.x=0&sa.y=0&cx=011234856858711762651%3Atvllqmfwrau | priority:0 description:patent
+engin-249 | jingpinke | http://course.jingpinke.com/search?keyword= | priority:0 description:course
+engin-250 | xuezhe | http://xuezhe.cnki.net/Search/Search.aspx?ac=result&sm=0&sv= | priority:0 description:people
