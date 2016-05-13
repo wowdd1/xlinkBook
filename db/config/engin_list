@@ -187,3 +187,25 @@ engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 
 engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:project
 engin-185 | codeschool | https://www.codeschool.com/search?query= | priority:0 description:tutorial
 engin-186 | teamtreehouse | https://teamtreehouse.com/library/q: | priority:0 description:tutorial
+engin-187 | mva | https://mva.microsoft.com/search/SearchResults.aspx#!q= | priority:0 description:tutorial
+engin-188 | alison | https://alison.com/search/result/?q= | priority:0 description:tutorial
+engin-189 | channel9 | https://channel9.msdn.com/Search?term= | priority:6 description:talk
+engin-190 | technet | https://social.technet.microsoft.com/Search/en-US?query=$&ac=4 | priority:0 description:event talk course
+engin-191 | msevents | https://msevents.microsoft.com/cui/SearchDisplay.aspx?culture=en-US&q= | priority:0 description:event talk course
+engin-192 | ibm.com | http://www.ibm.com/Search/?q=$&v=18&en=utf&lang=en&cc=us&sn=dw&dws=dw&hpp=20 | priority:0 description:event develop
+engin-193 | huiyi.csdn | http://huiyi.csdn.net/activity/home?t=$&c=0&s=&a= | priority:0 description:event
+engin-194 | developer.apple | https://developer.apple.com/search/?q=$&type=Videos | priority:0 description:develop
+engin-195 | developers.google | https://developers.google.com/s/results/?q= | priority:0 description:develop
+engin-196 | msdn | https://social.msdn.microsoft.com/Search/en-US?query=$&pgArea=header&emptyWatermark=true&ac=4 | priority:0 description:develop
+engin-197 | developer.nvidia | https://developer.nvidia.com/search/gss/ | priority:0 description:develop
+engin-198 | developers.facebook | https://developers.facebook.com/search/?q= | priority:0 description:develop
+engin-199 | developer.qualcomm | https://developer.qualcomm.com/search?search_api_views_fulltext=$&sort_by=search_api_relevance | priority:0 description:doc
+engin-200 | oracle | https://search.oracle.com/search/search?start=1&search_p_main_operator=all&q= | priority:0 description:develop
+engin-201 | developer.baidu | http://developer.baidu.com/search11?word=$&type=ALL&typeText=%E5%85%A8%E9%83%A8 | priority:0 description:develop
+engin-202 | developer.amazon | https://developer.amazon.com/public/search?query= | priority:0 description:develop
+engin-203 | developer.arm | https://developer.arm.com/search#q= | priority:0 description:develop
+engin-204 | intel | https://software.intel.com/en-us/search/gss/ | priority:0 description:develop
+engin-205 | developer.yahoo | https://developer.yahoo.com/find/?q= | priority:0 description:develop
+engin-206 | developer.mozilla | https://developer.mozilla.org/en-US/search?q=$&topic=html&topic=css&topic=js&topic=api | priority:0 description:develop
+engin-207 | developer.amd | http://developer.amd.com/?s= | priority:0 description:develop
+engin-208 | dev.twitter | https://dev.twitter.com/search/node/$%20language%3Aen | priority:0 description:develop
