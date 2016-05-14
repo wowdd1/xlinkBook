@@ -258,3 +258,8 @@ engin-254 | search.bt | http://search.bt.com/result?p=$&y=Search&pr=dp | priorit
 engin-255 | torrentz | http://www.torrentz.eu/search?q= | priority:0 description:p2p
 engin-256 | kat.cr | https://kat.cr/usearch/ | priority:7 description:p2p
 engin-257 | extratorrent | http://extratorrent.cc/search/?search=$&new=1&x=0&y=0 | priority:0 description:p2p
+engin-258 | ict.cnki | http://dict.cnki.net/dict_result.aspx?searchword= | priority:0 description:tools
+engin-259 | translate.google | http://translate.google.cn/#en/zh-CN/ | priority:0 description:tools
+engin-260 | detexify | http://detexify.kirelabs.org/classify.html?q= | priority:0 description:tools
+engin-261 | youdao | http://dict.youdao.com/search?q=$&ue=utf8&keyfrom=web.index | priority:0 description:tools
+engin-262 | iciba | http://www.iciba.com/ | priority:0 description:tools

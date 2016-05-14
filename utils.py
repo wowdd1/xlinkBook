@@ -198,11 +198,14 @@ class Utils:
     def genReferenceHtml(self, key):
         html = ''
         if self.record_reference.has_key(key):
-            html = '<ul>'
+            html = '<div class="ref"><ol>'
+            count = 0
             for r in self.record_reference[key]:
-                html += '<li>'
-                html += '<a target="_blank" href="' + r.get_url().strip() + '">' + r.get_title().strip() + '</a>'
+                count += 1
+                html += '<li><span>' + str(count) + '.</span>'
+                html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
                 html += '</li>'
+            html += "</ol></div>"
         return html
                 
     def removeDoubleSpace(self, text):

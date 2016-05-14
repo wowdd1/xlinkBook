@@ -176,6 +176,32 @@ function appendContentBox(targetid, boxid){\
 }'
 script_end = '</script>'
 
+
+css_style_base = '\
+<style type="text/css">\
+.ref {\
+   width: 500px;\
+   margin: 5px;\
+}\
+ol {\
+   color: #ccc;\
+   list-style-type: none;\
+}\
+ol li {\
+   position: relative;\
+   font: bold italic 16px/1.5 Helvetica, Verdana, sans-serif;\
+   margin-bottom: 0px;\
+}\
+li p {\
+   font: 13px/1.5 Helvetica, sans-serif;\
+   padding-left: 23px;\
+   color: #555;\
+}\
+span {\
+   position: absolute;\
+}\
+</style>'
+
 css_style_0 = ''
 css_style_1 = '\
 <link rel="stylesheet" href="http://web.stanford.edu/class/cs231a/assets/css/bootstrap-rev0.min.css">\
@@ -450,6 +476,7 @@ def getScript():
     print script
     print script_end
         
+    print css_style_base
     if output_with_style:
         if css_style_type == 0:
             print css_style_0
