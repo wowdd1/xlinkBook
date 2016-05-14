@@ -150,6 +150,12 @@ function hidendiv_2(targetid){\
 function appendContent(targetid, topic, otherInfo){\
     var target=document.getElementById(targetid);\
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);\
+}\
+function appendContentBox(targetid, boxid){\
+    var target=document.getElementById(targetid);\
+    var box=document.getElementById(boxid);\
+    console.log("xx", target);\
+    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value).replace(/#otherInfo/g, "");\
 }'
 script_end = '</script>'
 
@@ -515,10 +521,8 @@ def build_lines(list_all):
 
                             if l == 0:
                                 linkID = 'a-' + ijl;
-                                script += "setText('" + linkID +"');"
                                 content_divID = "div-" + ijl
-                                script += "showdiv('" + content_divID + "', '" + linkID +"');"
-                                script += "appendContent('" + content_divID + "', '" + title.strip().replace(' ', '%20')+ "','" + utils.getEnginUrlOtherInfo(list_all[i][j]) + "');"
+                                script += utils.genMoreEnginScript(linkID, content_divID, title.strip().replace(' ', '%20'), utils.getEnginUrlOtherInfo(list_all[i][j]))
                             if output_with_describe:
                                 script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
                                 script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
@@ -584,14 +588,9 @@ def build_lines(list_all):
                 count = 0
                 
                 if html_style: 
-                    for e in utils.getEnginList('d:default'):
-                        id_title_lines[i][j] += utils.getEnginHtmlLink(e, title)
-                        count += 1
-                        if count == default_links_row:
-                            break
+                    id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
                     if script != '':
-                        id_title_lines[i][j] += utils.genLinkWithScript(linkID, script, '...');
-                        id_title_lines[i][j] += "<div id='" + content_divID + "'></div>";
+                        id_title_lines[i][j] += utils.genMoreEnginHtml(linkID, script, '...', content_divID);
             elif engin != '' and html_style and engin_list_dict != '':
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
@@ -656,7 +655,8 @@ def print_search_box():
         print '<br/>'
         onclick = "search('search_txt', 'select');"
         print '<div style="width:778px;margin:auto;"><input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
-              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button></div>'
+              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>' + utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 
+
         for i in range(0, 1):
             print '<br/>'
 
