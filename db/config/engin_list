@@ -168,7 +168,7 @@ engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:8 description:all
 engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:5 description:all 
 engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:course
 engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:book
-engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset
+engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset p2p
 engin-169 | freenode | http://irc.netsplit.de/channels/?net=freenode&chat= | priority:0 description:organization
 engin-170 | meetup | http://www.meetup.com/find/?keywords= | priority:0 description:organization people
 engin-171 | geekpark | http://www.geekpark.net/?q= | priority:0 description:social
@@ -251,3 +251,10 @@ engin-247 | fortune | http://search-app.fortune.com/?q= | priority:0 description
 engin-248 | jpo.go | http://www.jpo.go.jp/search/english_search_results.html?q=$&sa.x=0&sa.y=0&cx=011234856858711762651%3Atvllqmfwrau | priority:0 description:patent
 engin-249 | jingpinke | http://course.jingpinke.com/search?keyword= | priority:0 description:course
 engin-250 | xuezhe | http://xuezhe.cnki.net/Search/Search.aspx?ac=result&sm=0&sv= | priority:0 description:people
+engin-251 | thepiratebay | https://thepiratebay.org/search/$/0/99/0 | priority:0 description:p2p
+engin-252 | enbtx | http://www.enbtx.com/Search/$/1.html | priority:0 description:p2p
+engin-253 | verycd | http://www.verycd.com/search/entries/ | priority:0 description:p2p
+engin-254 | search.bt | http://search.bt.com/result?p=$&y=Search&pr=dp | priority:0 description:p2p
+engin-255 | torrentz | http://www.torrentz.eu/search?q= | priority:0 description:p2p
+engin-256 | kat.cr | https://kat.cr/usearch/ | priority:7 description:p2p
+engin-257 | extratorrent | http://extratorrent.cc/search/?search=$&new=1&x=0&y=0 | priority:0 description:p2p
