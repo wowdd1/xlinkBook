@@ -131,6 +131,8 @@ class Utils:
 
     ddg_mode = False
 
+    record_reference = {}
+
     def __init__(self):
         self.loadEngins()
 
@@ -178,6 +180,31 @@ class Utils:
                 if record.get_title() != '':
                     self.ddg_search_engin_type.append(record.get_title().strip())
 
+    def loadReference(self, filename):
+        name = 'db/reference/' + filename + '-reference'
+        if os.path.exists(name):
+            f = open(name, 'rU')
+            all_lines = f.readlines()
+            for line in all_lines:
+                if line.startswith('#'):
+                    continue
+                record = Record(line)
+                key = record.get_id().strip()
+                if self.record_reference.has_key(key):
+                    self.record_reference[key].append(record)
+                else:
+                    self.record_reference[key] = [record]
+
+    def genReferenceHtml(self, key):
+        html = ''
+        if self.record_reference.has_key(key):
+            html = '<ul>'
+            for r in self.record_reference[key]:
+                html += '<li>'
+                html += '<a target="_blank" href="' + r.get_url().strip() + '">' + r.get_title().strip() + '</a>'
+                html += '</li>'
+        return html
+                
     def removeDoubleSpace(self, text):
         text = text.replace('\n','')
         while (text.find('  ') != -1):
@@ -415,11 +442,11 @@ class Utils:
             html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
         return html + div
 
-    def genMoreEnginScript(sefl, linkID, content_divID, title, info):
+    def genMoreEnginScript(sefl, linkID, content_divID, id, title, info):
         script = ''
         script += "setText('" + linkID +"');"
         script += "showdiv('" + content_divID + "', '" + linkID +"');"
-        script += "appendContent('" + content_divID + "', '" + title + "','" + info + "');"
+        script += "appendContent('" + content_divID + "','" + id + "', '" + title + "','" + info + "');"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
