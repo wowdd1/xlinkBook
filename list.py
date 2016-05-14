@@ -155,14 +155,18 @@ function appendContent(targetid, id, topic, otherInfo){\
         var referenceDiv = document.getElementById(targetid + "-reference");\
         referenceDiv.innerHTML =reference[id];\
     } else{\
-        var children = target.children;\
-        for (var j = 0, len = children.length; j < len; j++) {\
-            if (children[j].id.indexOf(targetid + "-nav") != -1){\
-                var children2 = children[j].children;\
-                for (var i = 0, len2 = children2.length; i < len2; i++) {\
-                    if (children2[i].text == "reference"){\
-                        children2[i].style.display="none";\
-                    }\
+        hidenReference(targetid);\
+    }\
+}\
+function hidenReference(targetid){\
+    var target=document.getElementById(targetid);\
+    var children = target.children;\
+    for (var j = 0, len = children.length; j < len; j++) {\
+        if (children[j].id.indexOf(targetid + "-nav") != -1){\
+            var children2 = children[j].children;\
+            for (var i = 0, len2 = children2.length; i < len2; i++) {\
+                if (children2[i].text == "reference"){\
+                    children2[i].style.display="none";\
                 }\
             }\
         }\
@@ -173,6 +177,7 @@ function appendContentBox(targetid, boxid){\
     var box=document.getElementById(boxid);\
     console.log("xx", target);\
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value).replace(/#otherInfo/g, "");\
+    hidenReference(targetid);\
 }'
 script_end = '</script>'
 

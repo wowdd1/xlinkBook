@@ -406,9 +406,9 @@ class Utils:
             for e in engin_list_dive:
                 link_count += 1
                 if link_count % 2 == 0:
-                    div += self.genLinkWithScript2(scrip, e.strip() , color2, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + ' '
+                    div += self.genLinkWithScript2(scrip, e.strip() , color2, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
                 else:
-                    div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + ' '
+                    div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
             remain -= links_per_row
             last += links_per_row
             #print remain
