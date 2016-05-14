@@ -52,6 +52,7 @@ css_style_type = 0
 engin = ''
 
 div_content_list = []
+div_reference_dict = {}
 
 gen_html_done = False
 
@@ -147,9 +148,25 @@ function hidendiv_2(targetid){\
       var target=document.getElementById(targetid);\
                 target.style.display="none";\
 }\
-function appendContent(targetid, topic, otherInfo){\
+function appendContent(targetid, id, topic, otherInfo){\
     var target=document.getElementById(targetid);\
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);\
+    if (typeof(reference[id]) != "undefined"){\
+        var referenceDiv = document.getElementById(targetid + "-reference");\
+        referenceDiv.innerHTML =reference[id];\
+    } else{\
+        var children = target.children;\
+        for (var j = 0, len = children.length; j < len; j++) {\
+            if (children[j].id.indexOf(targetid + "-nav") != -1){\
+                var children2 = children[j].children;\
+                for (var i = 0, len2 = children2.length; i < len2; i++) {\
+                    if (children2[i].text == "reference"){\
+                        children2[i].style.display="none";\
+                    }\
+                }\
+            }\
+        }\
+    }\
 }\
 function appendContentBox(targetid, boxid){\
     var target=document.getElementById(targetid);\
@@ -425,7 +442,11 @@ def getScript():
         print "var array = []; "
         for content in div_content_list:
             print "array.push('" + content + "');" 
-        
+    if len(div_reference_dict) > 0:
+        print "var reference = new Array();"
+        for (k, v) in div_reference_dict.items():
+            print 'reference["' + k + '"] = ' + "'" + v + "';"
+
     print script
     print script_end
         
@@ -522,7 +543,12 @@ def build_lines(list_all):
                             if l == 0:
                                 linkID = 'a-' + ijl;
                                 content_divID = "div-" + ijl
-                                script += utils.genMoreEnginScript(linkID, content_divID, title.strip().replace(' ', '%20'), utils.getEnginUrlOtherInfo(list_all[i][j]))
+                                script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), utils.getEnginUrlOtherInfo(list_all[i][j]))
+
+                                refHtml = utils.genReferenceHtml(list_all[i][j].get_id().strip())
+                                if refHtml != '':
+                                    div_reference_dict[list_all[i][j].get_id().strip()] = refHtml
+
                             if output_with_describe:
                                 script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
                                 script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
@@ -779,6 +805,12 @@ def print_list(all_lines, file_name = ''):
     color_index = 0
     filter_keyword_2 = ''
     global top_row, old_top_row, output_with_color, output_with_style
+    if html_style and file_name != '':
+        fn = file_name
+        while fn.find('/') != -1:
+            fn = fn[fn.find('/') + 1 : ].strip()
+        #print 'file:' + fn
+        utils.loadReference(fn)
     if html_style == True and output_with_color:
         output_with_color = False
         output_with_style = True
