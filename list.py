@@ -830,6 +830,12 @@ def getLines(file_name):
             all_lines = filter_result[:]
     return all_lines
 
+def getFileNameFromPath(path):
+    fn = path
+    while fn.find('/') != -1:
+        fn = fn[fn.find('/') + 1 : ].strip()
+    return fn
+
 def print_list(all_lines, file_name = ''):
     current = 0
     old_line = ""
@@ -838,11 +844,7 @@ def print_list(all_lines, file_name = ''):
     filter_keyword_2 = ''
     global top_row, old_top_row, output_with_color, output_with_style
     if html_style and file_name != '':
-        fn = file_name
-        while fn.find('/') != -1:
-            fn = fn[fn.find('/') + 1 : ].strip()
-        #print 'file:' + fn
-        utils.loadReference(fn)
+        utils.loadReference(getFileNameFromPath(fine_name))
     if html_style == True and output_with_color:
         output_with_color = False
         output_with_style = True
@@ -1080,22 +1082,40 @@ def print_list(all_lines, file_name = ''):
             
 current_level = 1
 level = 100
-def get_lines_from_dir(dir_name, fileNameFilter = '', fileNameNotContain=''):
+
+def notIncludeFile(item, fileNameNotContain):
+    if fileNameNotContain == '':
+        return False
+    if fileNameNotContain.find('-') != -1:
+        keywords = fileNameNotContain.split('-')
+        for k in keywords:
+            if item.find(k) != -1:
+                return True
+    elif item.find(fileNameNotContain) != -1:
+        return True
+    return False
+
+def get_lines_from_dir(dir_name, fileNameFilter = ''):
     global current_level
     current_level += 1
     cur_list = os.listdir(dir_name)
     all_lines = []
+    fileNameNotContain = ''
+    if fileNameFilter.find('-') != -1:
+        fileNameNotContain = fileNameFilter[fileNameFilter.find('-') + 1 :]
+        fileNameFilter = fileNameFilter[0 : fileNameFilter.find('-')]
     for item in cur_list:
         if item.startswith("."):
             continue
         if fileNameFilter != '' and item.find(fileNameFilter) == -1:
             continue
-        if fileNameNotContain != "" and item.find(fileNameNotContain) != -1:
+        if fileNameNotContain != "" and notIncludeFile(item, fileNameNotContain):
             continue
             
 
         full_path = os.path.join(dir_name, item)
         if os.path.isfile(full_path):
+            utils.loadReference(getFileNameFromPath(full_path))
             for line in getLines(full_path):
                 all_lines.append(line)
         else:
@@ -1205,15 +1225,13 @@ def main(argv):
         print_list(get_lines_from_dir(source))
     elif os.path.isdir(source):
         print_dir(source)
-    elif source.find('#') != -1:
-        split = source.split('#')
+    elif source.find('+') != -1:
+        split = source.split('+')
         dirName = split[0]
         if dirName.startswith('db') == False:
             dirName = 'db/' + dirName
         if len(split) == 2:
             print_list(get_lines_from_dir(dirName, split[1]))
-        elif len(split) == 3:
-            print_list(get_lines_from_dir(dirName, split[1], split[2]))
 
 if __name__ == '__main__':
     main(sys.argv)
