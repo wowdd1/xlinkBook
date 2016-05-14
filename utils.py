@@ -318,6 +318,16 @@ class Utils:
             engin_list.append(record.get_title().strip())
         return engin_list
 
+    def getDefaultEnginHtml(self, title, default_links_row):
+        count = 0
+        html = ''
+        for e in self.getEnginList('d:default'):
+            html += self.getEnginHtmlLink(e, title)
+            count += 1
+            if count == default_links_row:
+                return html
+        return html
+
     def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
         if self.ddg_mode:
             return self.getDDGEnginListLinks(engins, topic, id, query, color, fontSize)
@@ -395,12 +405,29 @@ class Utils:
             return self.search_engin_type
         #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
 
-    def genLinkWithScript(self, aid, script, text, color=''):
+    def genMoreEnginHtml(self, aid, script, text, content_divID, color=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
+        div = "<div id='" + content_divID + "'></div>";
+        html = ''
         if color != '':
-            return ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="' + color + '">' + text + '</font></a></font>'
+            html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="' + color + '">' + text + '</font></a></font>'
         else:
-            return ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
+            html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
+        return html + div
+
+    def genMoreEnginScript(sefl, linkID, content_divID, title, info):
+        script = ''
+        script += "setText('" + linkID +"');"
+        script += "showdiv('" + content_divID + "', '" + linkID +"');"
+        script += "appendContent('" + content_divID + "', '" + title + "','" + info + "');"
+        return script
+
+    def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
+        script = ''
+        script += "setText('" + linkID +"');"
+        script += "showdiv('" + content_divID + "', '" + linkID +"');"
+        script += "appendContentBox('" + content_divID + "', '" + boxid + "');"
+        return script
 
     def genLinkWithScript2(self, script, text, color='', fontSize=12):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
