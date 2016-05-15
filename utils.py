@@ -218,7 +218,7 @@ class Utils:
                     title = r.get_title().strip().replace(' ', '%20')
                     script = self.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), title, '-')
                     if r.get_url().strip() != '':
-                        html += '<p>' + '<a target="_blank" href="' + r.get_url().strip() + '">' + r.get_title().strip() + '</a`>'
+                        html += '<p>' + self.getReferenceLink(r.get_title().strip(), r.get_url().strip())
                     else:
                         html += '<p>' + r.get_title().strip()
                     html += self.getDefaultEnginHtml(title, default_links_row)
@@ -229,11 +229,20 @@ class Utils:
                         div_reference_dict[r.get_id().strip()] = refHtml
                     html += '</p>'
                 elif r.get_url().strip() != '':
-                    html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
+                    html += '<p>' + self.getReferenceLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
+                    #html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
 
                 html += '</li>'
             html += "</ol></div>"
         return html
+
+    def getReferenceLink(self, title, url):
+        if title.find('<a>') != -1:
+            title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
+        else:
+            title = '<a target="_blank" href="' + url + '">' + title + '</a>'
+        return title
+
                 
     def removeDoubleSpace(self, text):
         text = text.replace('\n','')
