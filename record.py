@@ -120,7 +120,12 @@ class PriorityRecord(WrapRecord):
     def get_priority(self):
         return self.get_tag_content(self.tag.tag_priority)
 
+
 class ReferenceRecord(PriorityRecord):
+    def __init__(self, line):
+        PriorityRecord.__init__(self, line)
+
+class ContentRecord(PriorityRecord):
     def __init__(self, line):
         PriorityRecord.__init__(self, line)
 

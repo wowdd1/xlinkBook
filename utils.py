@@ -19,6 +19,7 @@ from record import Record
 from record import PriorityRecord
 from record import CourseRecord
 from record import ReferenceRecord
+from record import ContentRecord
 import time
 
 regex = re.compile("\033\[[0-9;]*m")
@@ -133,6 +134,7 @@ class Utils:
     ddg_mode = False
 
     record_reference = {}
+    record_content = {}
 
     def __init__(self):
         self.loadEngins()
@@ -181,8 +183,12 @@ class Utils:
                 if record.get_title() != '':
                     self.ddg_search_engin_type.append(record.get_title().strip())
 
+    def loadMetaData(self, filename):
+        self.loadReference(filename)
+        self.loadContent(filename)
+
     def loadReference(self, filename):
-        name = 'db/reference/' + filename + '-reference'
+        name = 'db/metadata/' + filename + '-reference'
         if os.path.exists(name):
             f = open(name, 'rU')
             all_lines = f.readlines()
@@ -190,21 +196,45 @@ class Utils:
                 if line.startswith('#'):
                     continue
                 record = ReferenceRecord(line)
-                key = record.get_parentid().strip()
+                key = record.get_id().strip()
                 if self.record_reference.has_key(key):
                     self.record_reference[key].append(record)
                 else:
                     self.record_reference[key] = [record]
-
+       
         #for (k, v) in self.record_reference.items():
         #    print k
+
+    def loadContent(self, filename):
+        name = 'db/metadata/' + filename + '-content'
+        if os.path.exists(name):
+            f = open(name, 'rU')
+            all_lines = f.readlines()
+            for line in all_lines:
+                if line.startswith('#'):
+                    continue
+                record = ContentRecord(line)
+                key = record.get_parentid().strip()
+                if self.record_content.has_key(key):
+                    self.record_content[key].append(record)
+                else:
+                    self.record_content[key] = [record]
+
+        #for (k, v) in self.record_content.items():
+        #    print k
+
     def genReferenceHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
-        html = ''
-        if self.record_reference.has_key(key):
-            html = '<div class="ref"><ol>'
-            count = 0
-            newIndex = ''
-            for r in self.record_reference[key]:
+        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'reference', '')
+
+    def genContentHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
+        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'content', '')
+
+    def genMetadataHtml(self, key, content_divID, default_links_row, div_dict, dataType, index=''):
+        html = '<div class="ref"><ol>'
+        count = 0
+        newIndex = ''
+        if dataType == 'content' and self.record_content.has_key(key):
+            for r in self.record_content[key]:
                 count += 1
                 if index == '':
                     newIndex = str(count) + '.'
@@ -212,31 +242,40 @@ class Utils:
                     newIndex = index + str(count) + '.'
 
                 html += '<li><span>' + newIndex + '</span>'
-                if self.record_reference.has_key(r.get_id().strip()) or r.get_url().strip() == '':
+                if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
                     content_divID += '-' + str(count)
                     linkID = 'a-' + content_divID[content_divID.find('-') + 1 :] 
                     title = r.get_title().strip().replace(' ', '%20')
                     script = self.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), title, '-')
                     if r.get_url().strip() != '':
-                        html += '<p>' + self.getReferenceLink(r.get_title().strip(), r.get_url().strip())
+                        html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
                     else:
                         html += '<p>' + r.get_title().strip()
                     html += self.getDefaultEnginHtml(title, default_links_row)
                     if script != "":
                         html += self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
-                    refHtml = self.genReferenceHtml(r.get_id().strip(), content_divID + '-child', default_links_row, div_reference_dict, newIndex)
-                    if refHtml != '':
-                        div_reference_dict[r.get_id().strip()] = refHtml
+                    contentHtml = self.genContentHtml(r.get_id().strip(), content_divID + '-child', default_links_row, div_dict, newIndex)
+                    if contentHtml != '':
+                        div_dict[r.get_id().strip()] = contentHtml
                     html += '</p>'
                 elif r.get_url().strip() != '':
-                    html += '<p>' + self.getReferenceLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
+                    html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
                     #html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
 
                 html += '</li>'
-            html += "</ol></div>"
+        elif dataType == 'reference' and self.record_reference.has_key(key):
+            for r in self.record_reference[key]:
+                count += 1
+                html += '<li><span>' + str(count) + '.</span>'
+                html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
+                html += '</li>'
+        else:
+            return ''
+
+        html += "</ol></div>"
         return html
 
-    def getReferenceLink(self, title, url):
+    def genMetadataLink(self, title, url):
         if title.find('<a>') != -1:
             title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
         else:
