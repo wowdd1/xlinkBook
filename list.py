@@ -32,7 +32,7 @@ merger_result = False
 top_row = 0
 old_top_row = 0
 max_links_row = 8
-max_nav_link_row = 12
+max_nav_link_row = 11
 max_nav_links_row = 7
 default_links_row = 2
 
