@@ -27,6 +27,7 @@ start = 0
 end = 1000
 line_id = 0
 delete_from_char = ''
+parentid=''
 
 
 def customFormat(id, title, link):
@@ -36,9 +37,18 @@ def customFormat(id, title, link):
         title = '    ' + title[title.find(' ') : ].strip()
     else:
         title = title[title.find(' ') : ].strip()
+    return [stuff, title, link]
     '''
     return [id, title, link]
-
+def customPrint(data):
+    '''
+    if data[0].find('.') != -1:
+        print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + data[0][0 : data[0].find('.')]
+    else:
+        print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
+        
+    '''
+    print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def format(line, link):
     if link != '' and line.startswith('http') == False:
@@ -54,8 +64,7 @@ def format(line, link):
 def printLine(line, link=''):
     #line_id = random.randrange(10, 100, 2)
     data = format(line.strip(), link)
-
-    print data[0] + " |"  + data[1] + " | " + data[2] + " |"
+    customPrint(data)
 
 def convert(source):
     global start, line_id
@@ -117,9 +126,9 @@ def convert(source):
 
 def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
-    global start, end, custom_contain, delete_from_char
+    global start, end, custom_contain, delete_from_char, parentid
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete"])
+        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
@@ -146,6 +155,8 @@ def main(argv):
             custom_contain = a
         if o in ('-d', '--delete'):
             delete_from_char = a
+        if o in ('-p', "--parent"):
+            parentid = a.strip()
 
     if source == "":
         print "you must input the input file or dir"

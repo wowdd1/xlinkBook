@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup;
 from record import Record
 from record import PriorityRecord
 from record import CourseRecord
+from record import ReferenceRecord
 import time
 
 regex = re.compile("\033\[[0-9;]*m")
@@ -188,22 +189,48 @@ class Utils:
             for line in all_lines:
                 if line.startswith('#'):
                     continue
-                record = Record(line)
-                key = record.get_id().strip()
+                record = ReferenceRecord(line)
+                key = record.get_parentid().strip()
                 if self.record_reference.has_key(key):
                     self.record_reference[key].append(record)
                 else:
                     self.record_reference[key] = [record]
 
-    def genReferenceHtml(self, key):
+        #for (k, v) in self.record_reference.items():
+        #    print k
+    def genReferenceHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
         html = ''
         if self.record_reference.has_key(key):
             html = '<div class="ref"><ol>'
             count = 0
+            newIndex = ''
             for r in self.record_reference[key]:
                 count += 1
-                html += '<li><span>' + str(count) + '.</span>'
-                html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
+                if index == '':
+                    newIndex = str(count) + '.'
+                else:
+                    newIndex = index + str(count) + '.'
+
+                html += '<li><span>' + newIndex + '</span>'
+                if self.record_reference.has_key(r.get_id().strip()) or r.get_url().strip() == '':
+                    content_divID += '-' + str(count)
+                    linkID = 'a-' + content_divID[content_divID.find('-') + 1 :] 
+                    title = r.get_title().strip().replace(' ', '%20')
+                    script = self.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), title, '-')
+                    if r.get_url().strip() != '':
+                        html += '<p>' + '<a target="_blank" href="' + r.get_url().strip() + '">' + r.get_title().strip() + '</a`>'
+                    else:
+                        html += '<p>' + r.get_title().strip()
+                    html += self.getDefaultEnginHtml(title, default_links_row)
+                    if script != "":
+                        html += self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
+                    refHtml = self.genReferenceHtml(r.get_id().strip(), content_divID + '-child', default_links_row, div_reference_dict, newIndex)
+                    if refHtml != '':
+                        div_reference_dict[r.get_id().strip()] = refHtml
+                    html += '</p>'
+                elif r.get_url().strip() != '':
+                    html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
+
                 html += '</li>'
             html += "</ol></div>"
         return html
@@ -435,21 +462,27 @@ class Utils:
             return self.search_engin_type
         #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
 
-    def genMoreEnginHtml(self, aid, script, text, content_divID, color=''):
+    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
-        div = "<div id='" + content_divID + "'></div>";
+        div = '<div id="' + content_divID + '"></div>';
         html = ''
         if color != '':
-            html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="' + color + '">' + text + '</font></a></font>'
+            if doubleQ:
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '";><font color="' + color + '">' + text + '</font></a></font>'
+            else:
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + ';><font color="' + color + '">' + text + '</font></a></font>'
         else:
-            html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"><font color="#999966">' + text + '</font></a></font>'
+            if doubleQ:
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '";><font color="#999966">' + text + '</font></a></font>'
+            else:
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + ';><font color="#999966">' + text + '</font></a></font>'
         return html + div
 
     def genMoreEnginScript(sefl, linkID, content_divID, id, title, info):
         script = ''
         script += "setText('" + linkID +"');"
-        script += "showdiv('" + content_divID + "', '" + linkID +"');"
-        script += "appendContent('" + content_divID + "','" + id + "', '" + title + "','" + info + "');"
+        script += "showdiv('" + content_divID + "','" + linkID +"');"
+        script += "appendContent('" + content_divID + "','" + id + "','" + title + "','" + info + "');"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
