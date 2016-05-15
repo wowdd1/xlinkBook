@@ -48,6 +48,7 @@ def customPrint(data):
         print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
         
     '''
+    #print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
     print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def format(line, link):

@@ -55,6 +55,7 @@ engin = ''
 
 div_content_list = []
 div_reference_dict = {}
+div_content_dict = {}
 
 gen_html_done = False
 
@@ -158,17 +159,23 @@ function appendContent(targetid, id, topic, otherInfo){\
         var referenceDiv = document.getElementById(targetid + "-reference");\
         referenceDiv.innerHTML =reference[id];\
     } else{\
-        hidenReference(targetid);\
+        hidenMetadata(targetid, "reference");\
+    }\
+    if (typeof(content[id]) != "undefined"){\
+        var contentDiv = document.getElementById(targetid + "-content");\
+        contentDiv.innerHTML = content[id];\
+    } else{\
+        hidenMetadata(targetid, "content");\
     }\
 }\
-function hidenReference(targetid){\
+function hidenMetadata(targetid, datatype){\
     var target=document.getElementById(targetid);\
     var children = target.children;\
     for (var j = 0, len = children.length; j < len; j++) {\
         if (children[j].id.indexOf(targetid + "-nav") != -1){\
             var children2 = children[j].children;\
             for (var i = 0, len2 = children2.length; i < len2; i++) {\
-                if (children2[i].text == "reference"){\
+                if (children2[i].text == datatype){\
                     children2[i].style.display="none";\
                 }\
             }\
@@ -180,7 +187,8 @@ function appendContentBox(targetid, boxid){\
     var box=document.getElementById(boxid);\
     console.log("xx", target);\
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace(" ", "&nbsp;")).replace(/#otherInfo/g, "");\
-    hidenReference(targetid);\
+    hidenMetadata(targetid, "content");\
+    hidenMetadata(targetid, "reference");\
 }'
 script_end = '</script>'
 
@@ -472,14 +480,19 @@ def getScript():
     global script
     print "<head>"
     print script_head
+    print "var array = []; "
+    print "var reference = new Array();"
+    print "var content = new Array();"
     if len(div_content_list) > 0:
-        print "var array = []; "
         for content in div_content_list:
             print "array.push('" + content + "');" 
     if len(div_reference_dict) > 0:
-        print "var reference = new Array();"
         for (k, v) in div_reference_dict.items():
             print 'reference["' + k + '"] = ' + "'" + v + "';"
+
+    if len(div_content_dict) > 0:
+        for (k, v) in div_content_dict.items():
+            print 'content["' + k + '"] = ' + "'" + v + "';"
 
     print script
     print script_end
@@ -585,6 +598,10 @@ def build_lines(list_all):
                                 refHtml = utils.genReferenceHtml(list_all[i][j].get_id().strip(), content_divID + '-reference', default_links_row, div_reference_dict)
                                 if refHtml != '':
                                     div_reference_dict[list_all[i][j].get_id().strip()] = refHtml
+
+                                contentHtml = utils.genContentHtml(list_all[i][j].get_id().strip(), content_divID + '-content', default_links_row, div_content_dict)
+                                if contentHtml != '':
+                                    div_content_dict[list_all[i][j].get_id().strip()] = contentHtml
 
                             if output_with_describe:
                                 script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
@@ -848,10 +865,10 @@ def print_list(all_lines, file_name = ''):
     color_index = 0
     filter_keyword_2 = ''
     global top_row, old_top_row, output_with_color, output_with_style
-    if html_style and file_name != '' and verify == '':
-        utils.loadReference(getFileNameFromPath(file_name))
-    if html_style and verify != '':
-        utils.loadReference(getFileNameFromPath(verify))
+    if verify != '':
+        file_name = verify
+    if html_style and file_name != '':
+        utils.loadMetaData(getFileNameFromPath(file_name))
 
     if html_style == True and output_with_color:
         output_with_color = False
@@ -1124,7 +1141,7 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
         full_path = os.path.join(dir_name, item)
         if os.path.isfile(full_path):
             if verify =='':
-                utils.loadReference(getFileNameFromPath(full_path))
+                utils.loadMetadata(getFileNameFromPath(full_path))
             for line in getLines(full_path):
                 all_lines.append(line)
         else:
