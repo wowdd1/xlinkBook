@@ -1,2 +1,8 @@
-CS231N | archive.org video | https://archive.org/details/cs231n-CNNs | 
-CS231N | academictorrents torrents | http://academictorrents.com/details/46c5af9e2075d9af06f280b55b65cf9b44eb9fe7 |
+CS231N-1 | archive.org <a>video</a> | https://archive.org/details/cs231n-CNNs | parentid:CS231N 
+CS231N-2 | academictorrents torrents | http://academictorrents.com/details/46c5af9e2075d9af06f280b55b65cf9b44eb9fe7 | parentid:CS231N
+CS231N-3 | xx | | parentid:CS231N
+CS231N-4 | <a>xx</a> child | http://baidu.com | parentid:CS231N-3
+CS231N-5 | xx child1 | | parentid:CS231N-3
+CS231N-6 | xx child2 | | parentid:CS231N-3
+CS231N-7 | xx child3 | | parentid:CS231N-5
+CS231N-8 | xx child4 | | parentid:CS231N-5
