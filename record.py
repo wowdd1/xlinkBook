@@ -68,10 +68,11 @@ class Tag():
         self.tag_journal = "journal:"
 
         self.tag_priority = "priority:"
+        self.tag_parentid = "parentid:"
        
         self.tag_list = [self.tag_videourl, self.tag_author, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority]
+                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid]
 
         self.tag_list_short = ["d:"]
 
@@ -118,6 +119,14 @@ class PriorityRecord(WrapRecord):
 
     def get_priority(self):
         return self.get_tag_content(self.tag.tag_priority)
+
+class ReferenceRecord(PriorityRecord):
+    def __init__(self, line):
+        PriorityRecord.__init__(self, line)
+
+    def get_parentid(self):
+        return self.get_tag_content(self.tag.tag_parentid)
+
 
 class CourseRecord(PriorityRecord):
 

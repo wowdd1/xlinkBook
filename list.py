@@ -36,6 +36,8 @@ max_nav_link_row = 12
 max_nav_links_row = 7
 default_links_row = 2
 
+verify = ''
+
 utils = Utils()
 line_max_len_list = [0, 0, 0]
 line_id_max_len_list = [0, 0, 0]
@@ -151,6 +153,7 @@ function hidendiv_2(targetid){\
 function appendContent(targetid, id, topic, otherInfo){\
     var target=document.getElementById(targetid);\
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);\
+    console.log("xx", reference[id]);\
     if (typeof(reference[id]) != "undefined"){\
         var referenceDiv = document.getElementById(targetid + "-reference");\
         referenceDiv.innerHTML =reference[id];\
@@ -199,7 +202,7 @@ ol li {\
 }\
 li p {\
    font: 13px/1.5 Helvetica, sans-serif;\
-   padding-left: 23px;\
+   padding-left: 40px;\
    color: #555;\
 }\
 span {\
@@ -514,6 +517,8 @@ def build_lines(list_all):
             row = 1
         
         border_style_five(row)
+    if output_navigation_links:
+        border_style_five() 
     title = ''
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
@@ -566,7 +571,7 @@ def build_lines(list_all):
 
 		    if html_style:
                         describe_lines[l][i][j] = align_describe('')
-                        if engin != '' and engin_list_dict != '':
+                        if (engin != '' and engin_list_dict != '') or output_navigation_links:
                             engin_list_dive = []
                             engin_list_sub = engin_list[default_links_row :]
 
@@ -577,7 +582,7 @@ def build_lines(list_all):
                                 content_divID = "div-" + ijl
                                 script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), utils.getEnginUrlOtherInfo(list_all[i][j]))
 
-                                refHtml = utils.genReferenceHtml(list_all[i][j].get_id().strip())
+                                refHtml = utils.genReferenceHtml(list_all[i][j].get_id().strip(), content_divID + '-reference', default_links_row, div_reference_dict)
                                 if refHtml != '':
                                     div_reference_dict[list_all[i][j].get_id().strip()] = refHtml
 
@@ -843,8 +848,11 @@ def print_list(all_lines, file_name = ''):
     color_index = 0
     filter_keyword_2 = ''
     global top_row, old_top_row, output_with_color, output_with_style
-    if html_style and file_name != '':
-        utils.loadReference(getFileNameFromPath(fine_name))
+    if html_style and file_name != '' and verify == '':
+        utils.loadReference(getFileNameFromPath(file_name))
+    if html_style and verify != '':
+        utils.loadReference(getFileNameFromPath(verify))
+
     if html_style == True and output_with_color:
         output_with_color = False
         output_with_style = True
@@ -1115,7 +1123,8 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
 
         full_path = os.path.join(dir_name, item)
         if os.path.isfile(full_path):
-            utils.loadReference(getFileNameFromPath(full_path))
+            if verify =='':
+                utils.loadReference(getFileNameFromPath(full_path))
             for line in getLines(full_path):
                 all_lines.append(line)
         else:
@@ -1153,10 +1162,10 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:n', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1208,6 +1217,8 @@ def main(argv):
                 max_nav_links_row = 5
         elif o in ('-n', '--navigation'):
             output_navigation_links = True
+        elif o in ('-v', '--verify'):
+            verify = a
 
 
     if source == "":
