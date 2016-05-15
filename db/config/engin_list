@@ -273,3 +273,5 @@ engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 descri
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:0 description:tools
 engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:0 description:tools
 engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:tools
+engin-273 | mail | https://mail.google.com/mail/u/0/#search/ | priority:0 description:tools
+engin-274 | dropbox | https://www.dropbox.com/search/personal?query=$&query_unnormalized=$&last_fq_path= | priority:0 description:tools
