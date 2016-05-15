@@ -179,7 +179,7 @@ function appendContentBox(targetid, boxid){\
     var target=document.getElementById(targetid);\
     var box=document.getElementById(boxid);\
     console.log("xx", target);\
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value).replace(/#otherInfo/g, "");\
+    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace(" ", "&nbsp;")).replace(/#otherInfo/g, "");\
     hidenReference(targetid);\
 }'
 script_end = '</script>'
