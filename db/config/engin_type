@@ -2,7 +2,6 @@ all
 social
 organization
 p2p
-#usenet
 website
 paper
 journal
@@ -28,7 +27,7 @@ art
 business
 finance
 legal
-#dark
+#18+
 rank
 tools
 content
