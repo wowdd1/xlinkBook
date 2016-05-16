@@ -93,7 +93,7 @@ engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:s
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization star
 engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | priority:0 description:paper
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | priority:8 description:social star
-engin-93 | crunchbase | https://www.crunchbase.com/$/ | priority:8 description:organization people product event star
+engin-93 | crunchbase | https://www.crunchbase.com/$/ | priority:8 description:organization people star
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | priority:0 description:organization rank
 engin-95 | douban | https://www.douban.com/search?q= | priority:0 description:organization book people
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | priority:0 description:book
@@ -181,7 +181,7 @@ engin-177 | math.stack | http://math.stackexchange.com/search?q= | priority:0 de
 engin-178 | kdnuggets | http://www.kdnuggets.com/?s= | priority:0 description:course social
 engin-179 | archive.org | https://archive.org/search.php?query= | priority:0 description:all
 engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:course social
-engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization product finance
+engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization finance
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
 engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 description:dark
 engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:project
@@ -280,7 +280,7 @@ engin-276 | voanews | http://www.voanews.com/search/search2.aspx#all|$|0|allzone
 engin-277 | onrad | http://onrad.io/ | priority:0 description:podcast
 engin-278 | ximalaya | http://www.ximalaya.com/search/ | priority:0 description:podcast
 engin-279 | audiosear | https://www.audiosear.ch/search?q= | priority:0 description:podcast
-engin-280 | xiami | http://www.xiami.com/search?key=$&pos=1 | priority:0 description:podcast 
+engin-280 | xiami | http://www.xiami.com/search?key=$&pos=1 | priority:0 description:podcast
 engin-281 | egouz | http://so.egouz.com/cse/search?m=search&c=index&a=init&s=6848981191210338122&typeid=1&siteid=1&q= | priority:0 description:website
 engin-282 | music.163 | http://music.163.com/#/search/m/?%23%2Fdiscover%2Fdjradio=&s= | priority:0 description:podcast
 engin-283 | moonmain | http://so.moonmain.com/plus/search.php?kwtype=0&keyword= | priority:0 description:literature
@@ -291,3 +291,16 @@ engin-287 | artron | http://artso.artron.net/auction/search_auction.php?keyword=
 engin-288 | artnet | http://www.artnet.com/search/artworks/?q= | priority:0 description:art
 engin-289 | freeones | http://www.freeones.com/search/?t=1&q=$&sq= | priority:0 description:dark
 engin-290 | avn.com | http://www.avn.com/search/search.pl?criteria=$&submit.x=0&submit.y=0 | priority:0 description:dark
+engin-291 | pornhub | http://www.pornhub.com/video/search?search= | priority:0 description:dark
+engin-292 | ask.com | http://www.ask.com/web?q= | priority:0 description:all
+engin-293 | xvideos | http://www.xvideos.com/?k= | priority:0 description:dark
+engin-294 | imgur | http://imgur.com/search?q= | priority:0 description:dark
+engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:0 description:art
+engin-296 | vk.com | http://vk.com/search?c%5Bq%5D=$&c%5Bsection%5D=auto | priority:5 description:social
+engin-297 | xhamster | http://xhamster.com/search.php?from=&q=$&qcat=video | priority:0 description:dark
+engin-298 | bongacams | https://en.bongacams.com/?q= | priority:5 description:dark
+engin-299 | jd.com | http://search.jd.com/Search?keyword= | priority:0 description:product
+engin-300 | ebay | http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw= | priority:0 description:product
+engin-301 | taobao | https://world.taobao.com/search/search.htm?_ksTS=1463419179510_20&spm=a21bp.7806943.20151106.1&_input_charset=utf-8&navigator=all&json=on&q= | priority:0 description:product
+engin-302 | alibaba | https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText= | priority:0 description:product
+engin-303 | tmall | https://list.tmall.com/search_product.htm?q= | priority:0 description:product
