@@ -1212,8 +1212,15 @@ def adjust_cell_len():
     elif column_num == '1':
         custom_cell_len = cell_len * 2
 
+def adjust_link_number():
+    global max_nav_link_row
+    if column_num == '1':
+       max_nav_link_row = max_nav_link_row * 2
+    if column_num == '2':
+       max_nav_link_row = (max_nav_link_row - 2) * 2
+    
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin", "navigation", "verify"])
@@ -1237,6 +1244,7 @@ def main(argv):
         elif o in ('-c', '--column_num'):
             column_num = a
             adjust_cell_len()
+            adjust_link_number()
         elif o in ('-f', '--filter'):
             filter_keyword = str(a).strip()
         elif o in ('-s', '--style'):

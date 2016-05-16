@@ -622,7 +622,8 @@ class GithubSpider(Spider):
                 'Blizzard' : 'https://github.com/Blizzard',\
                 'openai' : 'https://github.com/openai',\
                 'googlesamples' : 'https://github.com/googlesamples',\
-                "dmlc" : "https://github.com/dmlc"}      
+                "dmlc" : "https://github.com/dmlc",\
+                'github' : 'https://github.com/github'}
 
         for k in data:
 
@@ -686,5 +687,6 @@ class GithubSpider(Spider):
         #self.processGithubiUserData("all", 500, 100)
         #self.processGithubiUserData("china", 500, 100)
         self.getOrganizationProjects()
+        
 start = GithubSpider()
 start.doWork()
