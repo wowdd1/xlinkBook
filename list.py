@@ -58,6 +58,7 @@ div_reference_dict = {}
 div_content_dict = {}
 
 gen_html_done = False
+search_box_displayed = False
 
 script_head = '<script language="JavaScript" type="text/JavaScript">';
 script = '\
@@ -476,7 +477,13 @@ def genEnginOption(selectid):
     option += '</select>'
     return option
 
+output_script_already = False
+
 def getScript():
+    global output_script_already
+    if output_script_already == True:
+        return
+    output_script_already = True
     global script
     print "<head>"
     print script_head
@@ -522,6 +529,7 @@ def build_lines(list_all):
     engin_list = []
     if engin != '':
         engin_list = utils.getEnginList(engin.strip())
+    #print engin_list
     if len(engin_list) > default_links_row:
         row = len(engin_list) / max_links_row
         if len(engin_list) % max_links_row > 0:
@@ -530,9 +538,10 @@ def build_lines(list_all):
             row = 1
         
         border_style_five(row)
-    if output_navigation_links:
+    if output_navigation_links or len(engin_list) > 0:
         border_style_five() 
     title = ''
+    id = ''
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
     for i in range(0, len(list_all)):
@@ -566,6 +575,7 @@ def build_lines(list_all):
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
                 if engin != '':
                     engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())#, '#33EE22')
+                    #print engin_list_dict
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
@@ -586,7 +596,12 @@ def build_lines(list_all):
                         describe_lines[l][i][j] = align_describe('')
                         if (engin != '' and engin_list_dict != '') or output_navigation_links:
                             engin_list_dive = []
-                            engin_list_sub = engin_list[default_links_row :]
+                            engin_list_sub = []
+                            engin_list_sub = engin_list
+                            #if len(engin_list) > default_links_row:
+                            #    engin_list_sub = engin_list[default_links_row :]
+                            #else:
+                            #    engin_list_sub = engin_list
 
                             ijl = str(i) + str(j) + str(l)
 
@@ -612,6 +627,7 @@ def build_lines(list_all):
                                     engin_list_dive = engin_list_sub[l * max_links_row : (l+1) * max_links_row]
                                 else:
                                     engin_list_dive = engin_list_sub[l * max_links_row :]
+                                #print engin_list_dive
                                 if len(engin_list_dive) == 0:
                                     describe_lines[l][i][j] = align_describe('')
                                 else:
@@ -731,11 +747,19 @@ def gen_html_body_v2(content, row, subRow):
     return content
 
 def print_search_box():
-    if html_style:
+    global search_box_displayed
+    if html_style and search_box_displayed == False:
+        search_box_displayed = True
         print '<br/>'
         onclick = "search('search_txt', 'select');"
-        print '<div style="width:778px;margin:auto;"><input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
-              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>' + utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 
+        
+        out = '<div style="width:778px;margin:auto;"><input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
+              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>'
+        if output_navigation_links:
+               out += utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 
+        else:
+            out += '</div>' 
+        print out
 
         for i in range(0, 1):
             print '<br/>'
@@ -868,7 +892,7 @@ def print_list(all_lines, file_name = ''):
     if verify != '':
         file_name = verify
     if html_style and file_name != '':
-        utils.loadMetaData(getFileNameFromPath(file_name))
+        utils.loadMetadata(getFileNameFromPath(file_name))
 
     if html_style == True and output_with_color:
         output_with_color = False
@@ -1095,14 +1119,24 @@ def print_list(all_lines, file_name = ''):
 
         if current > 0:
             message = ''
+
+            if html_style:
+                message += "<br/>"
+
             if filter_keyword != "":
-                message = "\nTotal " + str(current) + " records cotain " + filter_keyword
+                message += "\nTotal " + str(current) + " records cotain " + filter_keyword
             else:
-                message = "\nTotal " + str(current) + " records"
+                message += "\nTotal " + str(current) + " records"
             if file_name != '':
                 message += ", File: " + file_name + "\n\n"
             else:
                 message += "\n\n"
+
+            if html_style:
+                message += "<br/>"
+                message += "<br/>"
+                message += "<br/>"
+
             print message
             
 current_level = 1

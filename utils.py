@@ -183,7 +183,7 @@ class Utils:
                 if record.get_title() != '':
                     self.ddg_search_engin_type.append(record.get_title().strip())
 
-    def loadMetaData(self, filename):
+    def loadMetadata(self, filename):
         self.loadReference(filename)
         self.loadContent(filename)
 

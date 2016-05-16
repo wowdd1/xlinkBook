@@ -37,17 +37,16 @@ def customFormat(id, title, link):
         title = '    ' + title[title.find(' ') : ].strip()
     else:
         title = title[title.find(' ') : ].strip()
-    return [stuff, title, link]
+    return [stuff, title.replace("'", ' '), link]
     '''
     return [id, title, link]
 def customPrint(data):
     '''
     if data[0].find('.') != -1:
-        print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + data[0][0 : data[0].find('.')]
+        print parentid + '-' + data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid + "-" + data[0][0 : data[0].find('.')]
     else:
-        print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
-        
-    '''
+        print parentid + '-' + data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
+    '''    
     #print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
     print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
