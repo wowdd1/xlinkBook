@@ -14,7 +14,7 @@ def index():
 
     db = request.args.get('db', '')
     if db == '':
-        db = 'eecs'   
+        db = 'eecs/'   
     elif db == '?':
         return listDB()
  
@@ -40,7 +40,7 @@ def index():
 
 
 def genCmd(db, key, column_num, ft, style, describe, width, row, top, level, merger, border, engin, navigation):
-    cmd = "./list.py -i db/" + db + "/" + key + " -b 4"
+    cmd = "./list.py -i db/" + db + key + " -b 4"
     if column_num != '':
         cmd += " -c " + column_num + " "
     if navigation != "false":
