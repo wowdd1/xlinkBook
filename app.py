@@ -18,7 +18,7 @@ def index():
     elif db == '?':
         return listDB()
  
-    if key == '?':
+    if key == '?' and request.args.get('filter', '') == '':
         return listAllFile(db)
     else:
         cmd = genCmd(db, key, 
@@ -34,7 +34,8 @@ def index():
                       request.args.get('border', ''),
                       request.args.get('engin', ''),
                       request.args.get('navigation', 'true')) 
-        print cmd
+        
+        print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
         return html
 
@@ -62,7 +63,7 @@ def genCmd(db, key, column_num, ft, style, describe, width, row, top, level, mer
     if style != '':
         cmd += ' -s ' + style + ' '
 
-    return cmd 
+    return cmd.replace('?', '') 
 
 def listDB():
     return genList(os.listdir('db/'))
