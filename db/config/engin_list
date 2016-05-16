@@ -183,7 +183,7 @@ engin-179 | archive.org | https://archive.org/search.php?query= | priority:0 des
 engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:course social
 engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization finance
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
-engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 description:dark
+engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 description:18+
 engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:project
 engin-185 | codeschool | https://www.codeschool.com/search?query= | priority:0 description:tutorial
 engin-186 | teamtreehouse | https://teamtreehouse.com/library/q: | priority:0 description:tutorial
@@ -289,18 +289,22 @@ engin-285 | ign.com | http://www.ign.com/search?q= | priority:0 description:art
 engin-286 | flickr | https://www.flickr.com/search/?q= | priority:0 description:art
 engin-287 | artron | http://artso.artron.net/auction/search_auction.php?keyword= | priority:0 description:art
 engin-288 | artnet | http://www.artnet.com/search/artworks/?q= | priority:0 description:art
-engin-289 | freeones | http://www.freeones.com/search/?t=1&q=$&sq= | priority:0 description:dark
-engin-290 | avn.com | http://www.avn.com/search/search.pl?criteria=$&submit.x=0&submit.y=0 | priority:0 description:dark
-engin-291 | pornhub | http://www.pornhub.com/video/search?search= | priority:0 description:dark
+engin-289 | freeones | http://www.freeones.com/search/?t=1&q=$&sq= | priority:0 description:18+
+engin-290 | avn.com | http://www.avn.com/search/search.pl?criteria=$&submit.x=0&submit.y=0 | priority:0 description:18+
+engin-291 | pornhub | http://www.pornhub.com/video/search?search= | priority:0 description:18+
 engin-292 | ask.com | http://www.ask.com/web?q= | priority:0 description:all
-engin-293 | xvideos | http://www.xvideos.com/?k= | priority:0 description:dark
-engin-294 | imgur | http://imgur.com/search?q= | priority:0 description:dark
+engin-293 | xvideos | http://www.xvideos.com/?k= | priority:0 description:18+
+engin-294 | imgur | http://imgur.com/search?q= | priority:0 description:18+
 engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:0 description:art
 engin-296 | vk.com | http://vk.com/search?c%5Bq%5D=$&c%5Bsection%5D=auto | priority:5 description:social
-engin-297 | xhamster | http://xhamster.com/search.php?from=&q=$&qcat=video | priority:0 description:dark
-engin-298 | bongacams | https://en.bongacams.com/?q= | priority:5 description:dark
+engin-297 | xhamster | http://xhamster.com/search.php?from=&q=$&qcat=video | priority:0 description:18+
+engin-298 | bongacams | https://en.bongacams.com/?q= | priority:5 description:18+
 engin-299 | jd.com | http://search.jd.com/Search?keyword= | priority:0 description:product
 engin-300 | ebay | http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw= | priority:0 description:product
 engin-301 | taobao | https://world.taobao.com/search/search.htm?_ksTS=1463419179510_20&spm=a21bp.7806943.20151106.1&_input_charset=utf-8&navigator=all&json=on&q= | priority:0 description:product
 engin-302 | alibaba | https://www.alibaba.com/trade/search?fsb=y&IndexArea=product_en&CatId=&SearchText= | priority:0 description:product
 engin-303 | tmall | https://list.tmall.com/search_product.htm?q= | priority:0 description:product
+engin-304 | walmart | http://www.walmart.com/search/?query= | priority:0 description:product
+engin-305 | xnxx | http://www.xnxx.com/?k= | priority:0 description:18+
+engin-306 | twitch | https://www.twitch.tv/search?query= | priority:0 description:art
+engin-307 | yelp | http://www.yelp.com/search?find_desc=$&find_loc=Hong+Kong&ns=1 | priority:0 description:art
