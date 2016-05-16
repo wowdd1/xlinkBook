@@ -25,7 +25,7 @@ def index():
                       request.args.get('column', '3'),
                       request.args.get('filter', ''),
                       request.args.get('style', ''),
-                      request.args.get('describe', ''),
+                      request.args.get('desc', ''),
                       request.args.get('width', ''),
                       request.args.get('row', ''),
                       request.args.get('top', ''),
@@ -40,7 +40,7 @@ def index():
         return html
 
 
-def genCmd(db, key, column_num, ft, style, describe, width, row, top, level, merger, border, engin, navigation):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation):
     cmd = "./list.py -i db/" + db + key + " -b 4"
     if column_num != '':
         cmd += " -c " + column_num + " "
@@ -56,7 +56,7 @@ def genCmd(db, key, column_num, ft, style, describe, width, row, top, level, mer
         cmd += ' -e "' + engin + '" '
     if top != '':
         cmd += ' -t ' + top + ' '
-    if describe == 'true':
+    if desc == 'true':
         cmd += ' -d '
     if row != '':
         cmd += ' -r ' + row + ' '
