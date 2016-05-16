@@ -1,0 +1,65 @@
+github-github-36505-1 | gitignore | https://github.com/github/gitignore | description:A collection of useful .gitignore templates
+github-github-10626-2 | hubot | https://github.com/github/hubot | description:A customizable life embetterment robot.
+github-github-8451-3 | hub | https://github.com/github/hub | description:hub helps you win at git.
+github-github-7968-4 | fetch | https://github.com/github/fetch | description:A window.fetch JavaScript polyfill.
+github-github-3837-5 | linguist | https://github.com/github/linguist | description:Language Savant. If your repository's language is being reported incorrectly, send us a pull request!
+github-github-3542-6 | git-lfs | https://github.com/github/git-lfs | description:Git extension for versioning large files
+github-github-3464-7 | scientist | https://github.com/github/scientist | description:A Ruby library for carefully refactoring critical paths.
+github-github-3242-8 | markup | https://github.com/github/markup | description:The code we use to render README.your_favorite_markup
+github-github-3226-9 | octicons | https://github.com/github/octicons | description:GitHub's icon font
+github-github-3183-10 | swift-style-guide | https://github.com/github/swift-style-guide | description:Style guide & coding conventions for Swift projects
+github-github-3141-11 | hubot-scripts | https://github.com/github/hubot-scripts | description:DEPRECATED, see https://github.com/github/hubot-scripts/issues/1113 for details - optional scripts for hubot, opt in via hubot-scripts.json
+github-github-2459-12 | janky | https://github.com/github/janky | description:Continuous integration server built on top of Jenkins and Hubot
+github-github-2081-13 | gemoji | https://github.com/github/gemoji | description:Emoji images and names.
+github-github-1785-14 | github-services | https://github.com/github/github-services | description:Official GitHub Services Integration - You can set these up in your repository settings screen under Service Hooks
+github-github-1538-15 | objective-c-style-guide | https://github.com/github/objective-c-style-guide | description:Style guide & coding conventions for Objective-C projects
+github-github-1267-16 | dmca | https://github.com/github/dmca | description:Repository with text of DMCA takedown notices as received. GitHub does not endorse or adopt any assertion contained in the following notices. Users identified in the notices are presumed innocent until proven guilty. Additional information about our DMCA policy can be found at
+github-github-1174-17 | developer.github.com | https://github.com/github/developer.github.com | description:GitHub Developer site
+github-github-1145-18 | Rebel | https://github.com/github/Rebel | description:Cocoa framework for improving AppKit
+github-github-1045-19 | time-elements | https://github.com/github/time-elements | description:Web component extensions to the standard <time> element.
+github-github-944-20 | brubeck | https://github.com/github/brubeck | description:A Statsd-compatible metrics aggregator
+github-github-821-21 | pages-gem | https://github.com/github/pages-gem | description:A simple Ruby Gem to bootstrap dependencies for setting up and maintaining a local Jekyll environment in sync with GitHub Pages
+github-github-673-22 | scripts-to-rule-them-all | https://github.com/github/scripts-to-rule-them-all | description:Scripts to Rule Them All
+github-github-671-23 | training-kit | https://github.com/github/training-kit | description:Open source slides, workbook, and cheat sheet courseware for teaching Git and GitHub classes
+github-github-565-24 | choosealicense.com | https://github.com/github/choosealicense.com | description:A site to provide non-judgmental guidance on choosing a license for your open source project
+github-github-483-25 | Archimedes | https://github.com/github/Archimedes | description:Geometry functions for Cocoa and Cocoa Touch
+github-github-440-26 | VisualStudio | https://github.com/github/VisualStudio | description:GitHub Extension for Visual Studio
+github-github-420-27 | email_reply_parser | https://github.com/github/email_reply_parser | description:Small library to parse plain text email content
+github-github-411-28 | maven-plugins | https://github.com/github/maven-plugins | description:Official GitHub Maven Plugins
+github-github-407-29 | roskomnadzor | https://github.com/github/roskomnadzor | description:Text of takedown notices as received. GitHub does not endorse or adopt any assertion contained in the following notices.
+github-github-338-30 | platform-samples | https://github.com/github/platform-samples | description:A public place for all platform sample projects.
+github-github-326-31 | government.github.com | https://github.com/github/government.github.com | description:Gather, curate, and feature stories of public servants and civic hackers using GitHub as part of their open government innovations
+github-github-309-32 | backup-utils | https://github.com/github/backup-utils | description:GitHub Enterprise Backup Utilities
+github-github-299-33 | lfs-test-server | https://github.com/github/lfs-test-server | description:Standalone Git LFS server
+github-github-241-34 | game-off-2012 | https://github.com/github/game-off-2012 | description:The GitHub Game Off 2012 is a game jam / hackathon / coding challenge to create an open source a web-based game
+github-github-205-35 | hoosegow | https://github.com/github/hoosegow | description:Ephemeral Docker jails for running untrusted Ruby code
+github-github-199-36 | mentorships | https://github.com/github/mentorships | description:GitHub Open Source Mentorships
+github-github-171-37 | ccql | https://github.com/github/ccql | description:Multi server MySQL client
+github-github-126-38 | dat-analysis | https://github.com/github/dat-analysis | description:Analyze results from dat-science.
+github-github-123-39 | GitPad | https://github.com/github/GitPad | description:Notepad.exe as Git commit editor
+github-github-111-40 | github-ldap | https://github.com/github/github-ldap | description:LDAP client for humans. Part of GitHub Enterprise.
+github-github-100-41 | game-off-2013 | https://github.com/github/game-off-2013 | description:Updated Aug 10, 2014
+github-github-86-42 | elastomer-client | https://github.com/github/elastomer-client | description:A library for interacting with Elasticsearch
+github-github-82-43 | generator-hubot | https://github.com/github/generator-hubot | description:Hubot generator for Yeoman
+github-github-61-44 | version_sorter | https://github.com/github/version_sorter | description:Fast sorting of version numbers
+github-github-57-45 | training-utils | https://github.com/github/training-utils | description:A series of Bash and ZShell scripts useful when teaching about git and GitHub
+github-github-48-46 | tainted_hash | https://github.com/github/tainted_hash | description:Updated Sep 19, 2014
+github-github-41-47 | include-fragment-element | https://github.com/github/include-fragment-element | description:A Client Side Includes tag
+github-github-39-48 | pages-health-check | https://github.com/github/pages-health-check | description:Checks your GitHub Pages site for common DNS configuration issues
+github-github-38-49 | go-opstocat | https://github.com/github/go-opstocat | description:Updated Feb 3, 2015
+github-github-20-50 | elasticsearch-srv-discovery | https://github.com/github/elasticsearch-srv-discovery | description:Elasticsearch discovery with SRV records
+github-github-14-51 | homebrew-bootstrap | https://github.com/github/homebrew-bootstrap | description:A series of helper scripts to reduce duplication across `script/bootstrap`s.
+github-github-13-52 | ernicorn | https://github.com/github/ernicorn | description:Ruby BERTRPC server based on Unicorn
+github-github-9-53 | testrepo | https://github.com/github/testrepo | description:DON'T DELETE THIS. USED FOR MONITORING AND WHATNOT.
+github-github-8-54 | pong | https://github.com/github/pong | description:Auxiliary repository for external ping checks
+github-github-7-55 | omniauth | https://github.com/github/omniauth | description:OmniAuth is a flexible authentication system utilizing Rack middleware.
+github-github-7-56 | nagios-plugins-github | https://github.com/github/nagios-plugins-github | description:Updated Mar 26, 2014
+github-github-7-57 | game-o | https://github.com/github/game-o | description:O! a Cut.js game
+github-github-5-58 | cas-overlay | https://github.com/github/cas-overlay | description:Maven overlay for local CAS development and testing
+github-github-5-59 | banana_phone | https://github.com/github/banana_phone | description:BananaPhone is RPC for BananaPack
+github-github-4-60 | ohnogit | https://github.com/github/ohnogit | description:For when you have to use git in nodejs.
+github-github-4-61 | GHKeyBrowser | https://github.com/github/GHKeyBrowser | description:GitHub Key Verification Helper
+github-github-2-62 | puppet-aptmirror | https://github.com/github/puppet-aptmirror | description:Mirror of Puppet's APT repo
+github-github-1-63 | eslint-plugin-github | https://github.com/github/eslint-plugin-github | description:Updated May 9, 2016
+github-github-1-64 | git-msysgit | https://github.com/github/git-msysgit | description:GitHub version of msysgit/git
+github-github-1-65 | octotales | https://github.com/github/octotales | description:Updated May 2, 2016
