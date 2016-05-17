@@ -600,18 +600,22 @@ class GithubSpider(Spider):
 
     def getOrganizationProjects(self):
         data = {"google" : "https://github.com/google",\
+                "google-cloud-platform" : "https://github.com/GoogleCloudPlatform",\
+                'googlesamples' : 'https://github.com/googlesamples',\
                 "microsoft" : "https://github.com/Microsoft",\
                 "apple" : "https://github.com/apple/",\
                 "yahoo" : "https://github.com/yahoo",\
                 "facebook" : "https://github.com/facebook",\
                 "twitter" : "https://github.com/twitter",\
                 "aws" : "https://github.com/aws",\
+                "awslabs" : "https://github.com/awslabs",\
+                "amznlabs" : "https://github.com/amznlabs",\
                 "donet" : "https://github.com/dotnet",\
                 "awslabs" : "https://github.com/awslabs",\
                 "linkedin" : "https://github.com/linkedin",\
                 "square" : "https://github.com/square",\
-                "google-cloud-platform" : "https://github.com/GoogleCloudPlatform",\
                 "baidu" : "https://github.com/Baidu",\
+                "dmlc" : "https://github.com/dmlc",\
                 "amplab" : "https://github.com/amplab",\
                 'OculusVR' : 'https://github.com/OculusVR/',\
                 'OSVR' : 'https://github.com/OSVR/',\
@@ -621,8 +625,6 @@ class GithubSpider(Spider):
                 'sony' : 'https://github.com/sony',\
                 'Blizzard' : 'https://github.com/Blizzard',\
                 'openai' : 'https://github.com/openai',\
-                'googlesamples' : 'https://github.com/googlesamples',\
-                "dmlc" : "https://github.com/dmlc",\
                 'github' : 'https://github.com/github'}
 
         for k in data:
