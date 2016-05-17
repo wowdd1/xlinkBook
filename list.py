@@ -37,6 +37,7 @@ max_nav_links_row = 7
 default_links_row = 2
 
 verify = ''
+database = ''
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -335,7 +336,9 @@ def loadFiles(folder, fileType):
     result = ''
     for f in cur_list:
         if f.endswith(fileType):
+            result += script_head
             result += ''.join(open(folder + '/' + f, 'rU').readlines())
+            result += script_end
     return result
 
 def getScript():
@@ -1079,10 +1082,10 @@ def adjust_link_number():
        max_nav_link_row = (max_nav_link_row - 2) * 2
     
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1137,6 +1140,8 @@ def main(argv):
             output_navigation_links = True
         elif o in ('-v', '--verify'):
             verify = a
+        elif o in ('-u', '--use'):
+            database = a
 
 
     if source == "":

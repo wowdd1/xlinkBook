@@ -5,4 +5,4 @@ CS231N-4 | <a>xx</a> child | http://baidu.com | parentid:CS231N-3
 CS231N-5 | xx child1 | | parentid:CS231N-3
 CS231N-6 | xx child2 | | parentid:CS231N-3
 CS231N-7 | xx child3 | | parentid:CS231N-5
-CS231N-8 | xx child4 | | parentid:CS231N-5
+CS231N-8 | xx <a>LTI11390</a> | [LTI11390] | parentid:CS231N-5
