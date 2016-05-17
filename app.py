@@ -43,6 +43,8 @@ def index():
 
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify):
     cmd = "./list.py -i db/" + db + key + " -b 4"
+    if db != '':
+        cmd += ' -u ' + db.replace('/', '') + ' '
     if column_num != '':
         cmd += " -c " + column_num + " "
     if navigation != "false":
@@ -89,6 +91,7 @@ def genList(files, folder='', db=''):
 
     html += '<ol>'
     return html
+
 
 if __name__ == '__main__':
     app.run()

@@ -146,16 +146,16 @@ class Utils:
         return False
 
     def loadEngins(self):
-        if os.path.exists('db/config/engin_list'):
-            f = open('db/config/engin_list','rU')
+        if os.path.exists('db/metadata/engin_list'):
+            f = open('db/metadata/engin_list','rU')
             all_lines = f.readlines()
             for line in all_lines:
                 record = PriorityRecord(line)
                 if record.get_title() != '':
                     self.search_engin_url_dict[record.get_title().strip()] = record.get_url().strip()
                     self.search_engin_dict[record.get_title().strip()] = record
-        if os.path.exists('db/config/engin_type'):
-            f = open('db/config/engin_type','rU')
+        if os.path.exists('db/metadata/engin_type'):
+            f = open('db/metadata/engin_type','rU')
             all_lines = f.readlines()
             for line in all_lines:
                 if line.startswith('#'):
@@ -165,16 +165,16 @@ class Utils:
                     self.search_engin_type.append(record.get_title().strip())
     def loadDDGEngins(self):
         year = int(time.strftime('%Y',time.localtime(time.time())))
-        if os.path.exists('db/config/engin_list-duckduckgo' + str(year)):
-            f = open('db/config/engin_list-duckduckgo' + str(year),'rU')
+        if os.path.exists('db/metadata/engin_list-duckduckgo' + str(year)):
+            f = open('db/metadata/engin_list-duckduckgo' + str(year),'rU')
             all_lines = f.readlines()
             for line in all_lines:
                 record = PriorityRecord(line)
                 if record.get_title() != '':
                     self.ddg_search_engin_url_dict[record.get_title().strip()] = record.get_url().strip()
                     self.ddg_search_engin_dict[record.get_title().strip()] = record
-        if os.path.exists('db/config/engin_type-duckduckgo' + str(year)):
-            f = open('db/config/engin_type-duckduckgo' + str(year),'rU')
+        if os.path.exists('db/metadata/engin_type-duckduckgo' + str(year)):
+            f = open('db/metadata/engin_type-duckduckgo' + str(year),'rU')
             all_lines = f.readlines()
             for line in all_lines:
                 if line.startswith('#'):
@@ -276,6 +276,16 @@ class Utils:
         return html
 
     def genMetadataLink(self, title, url):
+        if url.find('[') != -1:
+            ft = url.replace('[', '').replace(']', '').strip()
+            r = self.getRecord(ft, '','', False, False)
+            key = r.get_path()[r.get_path().find(default_subject) + len(default_subject) + 1 :]
+            url = 'http://localhost:5000?db=' + default_subject + '/&key=' + key + '&filter=' + ft  + '&desc=true'
+            
+        return self.genMetadataLinkEx(title, url)
+
+
+    def genMetadataLinkEx(self, title, url):
         if title.find('<a>') != -1:
             title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
         else:
@@ -305,14 +315,14 @@ class Utils:
             pos = file_name.find('/', pos) + 1
         return file_name[pos : ]
 
-    def getRecord(self, keyword, use_subject='', path='', return_all=False):
+    def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False):
         subject = default_subject;
         if use_subject != "":
             subject = use_subject
         if path == '':
             path = self.getPath(subject)
-
-        print 'searching %s'%keyword + " in " + subject
+        if log:
+            print 'searching %s'%keyword + " in " + subject
         record_list = []
         for file_name in self.find_file_by_pattern(".*", path):
             f = open(file_name)
@@ -320,7 +330,8 @@ class Utils:
                 record = Record(line)
                 record.set_path(file_name)
                 if record.get_id().lower().strip() == keyword.lower().strip():
-                    print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
+                    if log:
+                        print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
                     if return_all:
                         record_list.append(record)
                     else:
@@ -329,10 +340,12 @@ class Utils:
             if len(record_list) > 0:
                 return record_list
             else:
-                print "no record found in " + subject +" db"
+                if log:
+                    print "no record found in " + subject +" db"
                 return record_list.append(Record(''))
         else:
-            print "no record found in " + subject +" db"
+            if log:
+                 print "no record found in " + subject +" db"
             return Record('')
 
     def getPath(self, subject):

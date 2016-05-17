@@ -1,4 +1,3 @@
-<script language="JavaScript" type="text/JavaScript">
 function setText(objN){
     var clicktext=document.getElementById(objN);
     if (clicktext.innerText == "..."){
@@ -129,4 +128,3 @@ function appendContentBox(targetid, boxid){
     hidenMetadata(targetid, "content");
     hidenMetadata(targetid, "reference");
 }
-</script>
