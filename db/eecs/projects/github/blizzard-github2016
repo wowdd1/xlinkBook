@@ -1,14 +1,15 @@
-Blizzard-github-451-1 | api-wow-docs | https://github.com/Blizzard/api-wow-docs | description:Documentation for the World of Warcraft web APIs.
-Blizzard-github-344-2 | d3-api-docs | https://github.com/Blizzard/d3-api-docs | description:API Documentation for the D3 Web API.
-Blizzard-github-273-3 | s2protocol | https://github.com/Blizzard/s2protocol | description:Python library to decode StarCraft II replay protocols
-Blizzard-github-208-4 | heroprotocol | https://github.com/Blizzard/heroprotocol | description:Python library to decode Heroes of the Storm replay protocols
-Blizzard-github-76-5 | qt4 | https://github.com/Blizzard/qt4 | description:Blizzard's additions/modifications to Qt4
-Blizzard-github-71-6 | passport-bnet | https://github.com/Blizzard/passport-bnet | description:Passport Strategy for Battle.net Login
-Blizzard-github-54-7 | api-sc2-docs | https://github.com/Blizzard/api-sc2-docs | description:API Documentation for the Sc2 Web API.
-Blizzard-github-33-8 | FailoverQueue | https://github.com/Blizzard/FailoverQueue | description:A thread-safe queue wrapper that can spill over to on-disk files for later processing.
-Blizzard-github-24-9 | omniauth-bnet | https://github.com/Blizzard/omniauth-bnet | description:Omniauth Strategy for Battle.net Login
-Blizzard-github-12-10 | qt | https://github.com/Blizzard/qt | description:Blizzard's additions/modifications to Qt5
-Blizzard-github-2-11 | premake-blizzard | https://github.com/Blizzard/premake-blizzard | description:The blizzard module for premake
-Blizzard-github-2-12 | qtbase | https://github.com/Blizzard/qtbase | description:Qt5 qtbase submodule with Blizzard's changes
-Blizzard-github-1-13 | qtdeclarative | https://github.com/Blizzard/qtdeclarative | description:Qt5 qtdeclarative submodule with Blizzard's changes
-Blizzard-github-1-14 | clang | https://github.com/Blizzard/clang | description:Fork of official clang git repository located at http://llvm.org/git/clang
+Blizzard-github-454-1 | api-wow-docs | https://github.com/Blizzard/api-wow-docs | author:Blizzard description:Documentation for the World of Warcraft web APIs.
+Blizzard-github-344-2 | d3-api-docs | https://github.com/Blizzard/d3-api-docs | author:Blizzard description:API Documentation for the D3 Web API.
+Blizzard-github-276-3 | s2protocol | https://github.com/Blizzard/s2protocol | author:Blizzard description:Python library to decode StarCraft II replay protocols
+Blizzard-github-216-4 | heroprotocol | https://github.com/Blizzard/heroprotocol | author:Blizzard description:Python library to decode Heroes of the Storm replay protocols
+Blizzard-github-75-5 | qt4 | https://github.com/Blizzard/qt4 | author:Blizzard description:Blizzard's additions/modifications to Qt4
+Blizzard-github-70-6 | passport-bnet | https://github.com/Blizzard/passport-bnet | author:Blizzard description:Passport Strategy for Battle.net Login
+Blizzard-github-55-7 | api-sc2-docs | https://github.com/Blizzard/api-sc2-docs | author:Blizzard description:API Documentation for the Sc2 Web API.
+Blizzard-github-33-8 | FailoverQueue | https://github.com/Blizzard/FailoverQueue | author:Blizzard description:A thread-safe queue wrapper that can spill over to on-disk files for later processing.
+Blizzard-github-26-9 | omniauth-bnet | https://github.com/Blizzard/omniauth-bnet | author:Blizzard description:Omniauth Strategy for Battle.net Login
+Blizzard-github-13-10 | qt | https://github.com/Blizzard/qt | author:Blizzard description:Blizzard's additions/modifications to Qt5
+Blizzard-github-3-11 | qtbase | https://github.com/Blizzard/qtbase | author:Blizzard description:Qt5 qtbase submodule with Blizzard's changes
+Blizzard-github-3-12 | premake-blizzard | https://github.com/Blizzard/premake-blizzard | author:Blizzard description:The blizzard module for premake
+Blizzard-github-2-13 | qtdeclarative | https://github.com/Blizzard/qtdeclarative | author:Blizzard description:Qt5 qtdeclarative submodule with Blizzard's changes
+Blizzard-github-1-14 | clang | https://github.com/Blizzard/clang | author:Blizzard description:Fork of official clang git repository located at http://llvm.org/git/clang
+Blizzard-github-0-15 | premake-autoconf | https://github.com/Blizzard/premake-autoconf | author:Blizzard description:AutoConf tools for Premake

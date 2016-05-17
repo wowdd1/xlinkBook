@@ -1,8 +1,8 @@
-baidu-github-771-1 | sofa-pbrpc | https://github.com/baidu/sofa-pbrpc | description:A light-weight RPC implement of google protobuf RPC framework.
-baidu-github-368-2 | tera | https://github.com/baidu/tera | description:A distributed, elastic, structured database.
-baidu-github-112-3 | galaxy | https://github.com/baidu/galaxy | description:Galaxy is a cluster management system.
-baidu-github-62-4 | ins | https://github.com/baidu/ins | description:iNexus, coordinate large scale services
-baidu-github-32-5 | broc | https://github.com/baidu/broc | description:Updated Mar 2, 2016
-baidu-github-29-6 | common | https://github.com/baidu/common | description:Common library
-baidu-github-10-7 | shuttle | https://github.com/baidu/shuttle | description:A fast computing framework based on Galaxy
-baidu-github-0-8 | baidu.github.io | https://github.com/baidu/baidu.github.io | description:baidu.github.io
+baidu-github-803-1 | sofa-pbrpc | https://github.com/baidu/sofa-pbrpc | author:baidu description:A light-weight RPC implement of google protobuf RPC framework.
+baidu-github-387-2 | tera | https://github.com/baidu/tera | author:baidu description:A distributed, elastic, structured database.
+baidu-github-123-3 | galaxy | https://github.com/baidu/galaxy | author:baidu description:Galaxy is a cluster management system.
+baidu-github-67-4 | ins | https://github.com/baidu/ins | author:baidu description:iNexus, coordinate large scale services
+baidu-github-38-5 | broc | https://github.com/baidu/broc | author:baidu description:Updated Apr 27, 2016
+baidu-github-30-6 | common | https://github.com/baidu/common | author:baidu description:Common library
+baidu-github-13-7 | shuttle | https://github.com/baidu/shuttle | author:baidu description:A fast computing framework based on Galaxy
+baidu-github-0-8 | baidu.github.io | https://github.com/baidu/baidu.github.io | author:baidu description:baidu.github.io

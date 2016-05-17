@@ -660,7 +660,7 @@ class GithubSpider(Spider):
                 print item[1].get_id() + " " + item[1].get_title()
                 self.count += 1
                 id = k + '-github-' + item[1].get_id().strip() + "-" + str(self.count)
-                self.write_db(f, id, item[1].get_title().strip(), item[1].get_url().strip(), item[1].get_describe().strip())
+                self.write_db(f, id, item[1].get_title().strip(), item[1].get_url().strip(), 'author:'+ k + ' ' + item[1].get_describe().strip())
 
             self.close_db(f)
             if self.count > 0:
