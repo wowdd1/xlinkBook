@@ -61,163 +61,7 @@ gen_html_done = False
 search_box_displayed = False
 
 script_head = '<script language="JavaScript" type="text/JavaScript">';
-script = '\
-function setText(objN){\
-    var clicktext=document.getElementById(objN);\
-    if (clicktext.innerText == "..."){\
-        clicktext.innerText="less";\
-    } else {\
-	clicktext.innerText="...";\
-    }\
-    clicktext.style.color="#999966";\
-}\
-function showdiv(targetid,objN){\
-      var target=document.getElementById(targetid);\
-      var clicktext=document.getElementById(objN);\
-            if (clicktext.innerText=="less"){\
-                target.style.display="";\
-            } else {\
-                target.style.display="none";\
-            }\
-}\
-function search(inputid,optionid){\
-    var input = document.getElementById(inputid);\
-    var select = document.getElementById(optionid);\
-    console.log("xx",input.value);\
-    console.log("",select[select.selectedIndex].text);\
-    if (select[select.selectedIndex].value.slice(0, 1) == "!"){\
-        window.open("http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " "));\
-    } else {\
-        window.open(select.value + input.value);\
-    }\
-}\
-function trimStr(str){return str.replace(/(^\s*)|(\s*$)/g,"");}\
-function searchTopic(obj, topic, otherInfo){\
-    console.log("xx",obj.text);\
-    console.log("xx",topic);\
-    var options = document.getElementsByTagName("option");\
-    if (otherInfo.indexOf("&user") != -1 && obj.text == "artzub"){\
-    } else{\
-         otherInfo = "";\
-    }\
-    for(var i=0;i<options.length;i++){\
-        if (trimStr(options[i].text) == trimStr(obj.text)) {\
-            console.log("xx", options[i].value);\
-            if (options[i].value.indexOf("$") != -1) {\
-                window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")) + otherInfo);\
-            } else {\
-                console.log("xx", obj.text.slice(0, 1));\
-                if (options[i].value.slice(0, 1) == "!"){\
-                    console.log("xx", options[i].value + topic.replace("&nbsp;", " "));\
-                    window.open("http://duckduckgo.com/?q=" + options[i].value + " " + topic.replace("&nbsp;", " ") + otherInfo);\
-                } else {\
-                    window.open(options[i].value + topic.replace("&nbsp;", " ") + otherInfo);\
-                }\
-            }\
-        }\
-    }\
-}\
-function navTopic(obj, divID, parentDivID, countIndex){\
-    var targetid = divID + "-" + obj.text;\
-    var target=document.getElementById(targetid);\
-    for (var i = 0; i < countIndex + 1; i++) {\
-        console.log("xx",parentDivID + i.toString());\
-        var parentDiv = document.getElementById(parentDivID + i.toString());\
-        if (parentDiv == null) {\
-            continue;\
-        }\
-        var children = parentDiv.children;\
-        for (var j = 0, len = children.length; j < len; j++) {\
-            children[j].style.color="#888888";\
-            children[j].style.fontSize="9pt";\
-        }\
-    }\
-    obj.style.color="#822312";\
-    obj.style.fontSize="12pt";\
-    if (target.style.display == ""){\
-        target.style.display="none";\
-    } else {\
-        target.style.display="";\
-    }\
-}\
-function showdiv_2(targetid){\
-      var target=document.getElementById(targetid);\
-            if (target.style.display=="none"){\
-                target.style.display="";\
-            } else {\
-                target.style.display="none";\
-            }\
-}\
-function hidendiv_2(targetid){\
-      var target=document.getElementById(targetid);\
-                target.style.display="none";\
-}\
-function appendContent(targetid, id, topic, otherInfo){\
-    var target=document.getElementById(targetid);\
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);\
-    console.log("xx", reference[id]);\
-    if (typeof(reference[id]) != "undefined"){\
-        var referenceDiv = document.getElementById(targetid + "-reference");\
-        referenceDiv.innerHTML =reference[id];\
-    } else{\
-        hidenMetadata(targetid, "reference");\
-    }\
-    if (typeof(content[id]) != "undefined"){\
-        var contentDiv = document.getElementById(targetid + "-content");\
-        contentDiv.innerHTML = content[id];\
-    } else{\
-        hidenMetadata(targetid, "content");\
-    }\
-}\
-function hidenMetadata(targetid, datatype){\
-    var target=document.getElementById(targetid);\
-    var children = target.children;\
-    for (var j = 0, len = children.length; j < len; j++) {\
-        if (children[j].id.indexOf(targetid + "-nav") != -1){\
-            var children2 = children[j].children;\
-            for (var i = 0, len2 = children2.length; i < len2; i++) {\
-                if (children2[i].text == datatype){\
-                    children2[i].style.display="none";\
-                }\
-            }\
-        }\
-    }\
-}\
-function appendContentBox(targetid, boxid){\
-    var target=document.getElementById(targetid);\
-    var box=document.getElementById(boxid);\
-    console.log("xx", target);\
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace(" ", "&nbsp;")).replace(/#otherInfo/g, "");\
-    hidenMetadata(targetid, "content");\
-    hidenMetadata(targetid, "reference");\
-}'
 script_end = '</script>'
-
-
-css_style_base = '\
-<style type="text/css">\
-.ref {\
-   width: 500px;\
-   margin: 5px;\
-}\
-ol {\
-   color: #ccc;\
-   list-style-type: none;\
-}\
-ol li {\
-   position: relative;\
-   font: bold italic 16px/1.5 Helvetica, Verdana, sans-serif;\
-   margin-bottom: 0px;\
-}\
-li p {\
-   font: 13px/1.5 Helvetica, sans-serif;\
-   padding-left: 40px;\
-   color: #555;\
-}\
-span {\
-   position: absolute;\
-}\
-</style>'
 
 css_style_0 = ''
 css_style_1 = '\
@@ -479,6 +323,21 @@ def genEnginOption(selectid):
 
 output_script_already = False
 
+
+def loadJSScript():
+    return loadFiles('web', '.js')
+    
+def loadCSS():
+    return loadFiles('web', '.css')
+
+def loadFiles(folder, fileType):
+    cur_list = os.listdir(folder + '/')
+    result = ''
+    for f in cur_list:
+        if f.endswith(fileType):
+            result += ''.join(open(folder + '/' + f, 'rU').readlines())
+    return result
+
 def getScript():
     global output_script_already
     if output_script_already == True:
@@ -500,11 +359,11 @@ def getScript():
     if len(div_content_dict) > 0:
         for (k, v) in div_content_dict.items():
             print 'content["' + k + '"] = ' + "'" + v + "';"
-
-    print script
     print script_end
-        
-    print css_style_base
+
+    print loadJSScript()
+    print loadCSS()
+
     if output_with_style:
         if css_style_type == 0:
             print css_style_0

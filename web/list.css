@@ -1,0 +1,23 @@
+<style type="text/css">
+.ref {
+   width: 500px;
+   margin: 5px;
+}
+ol {
+   color: #ccc;
+   list-style-type: none;
+}
+ol li {
+   position: relative;
+   font: bold italic 16px/1.5 Helvetica, Verdana, sans-serif;
+   margin-bottom: 0px;
+}
+li p {
+   font: 13px/1.5 Helvetica, sans-serif;
+   padding-left: 40px;
+   color: #555;
+}
+span {
+   position: absolute;
+}
+</style>
