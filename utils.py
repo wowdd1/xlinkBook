@@ -224,10 +224,10 @@ class Utils:
         #    print k
 
     def genReferenceHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
-        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'reference', '')
+        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'reference', index)
 
     def genContentHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
-        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'content', '')
+        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'content', index)
 
     def genMetadataHtml(self, key, content_divID, default_links_row, div_dict, dataType, index=''):
         html = '<div class="ref"><ol>'
