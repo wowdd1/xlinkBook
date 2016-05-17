@@ -1,4 +1,6 @@
-openai-github-1835-1 | gym | https://github.com/openai/gym | description:A toolkit for developing and comparing reinforcement learning algorithms.
-openai-github-20-2 | atari-py | https://github.com/openai/atari-py | description:A packaged and slightly-modified version of https://github.com/bbitmaster/ale_python_interface
-openai-github-12-3 | mujoco-py | https://github.com/openai/mujoco-py | description:MuJoCo Python bindings
-openai-github-9-4 | pachi-py | https://github.com/openai/pachi-py | description:Python wrappers for Pachi. Contains a modified version of the bleeding-edge Pachi source code.
+openai-github-2087-1 | gym | https://github.com/openai/gym | author:openai description:A toolkit for developing and comparing reinforcement learning algorithms.
+openai-github-22-2 | atari-py | https://github.com/openai/atari-py | author:openai description:A packaged and slightly-modified version of https://github.com/bbitmaster/ale_python_interface
+openai-github-16-3 | mujoco-py | https://github.com/openai/mujoco-py | author:openai description:MuJoCo Python bindings
+openai-github-12-4 | pachi-py | https://github.com/openai/pachi-py | author:openai description:Python wrappers for Pachi. Contains a modified version of the bleeding-edge Pachi source code.
+openai-github-8-5 | gym-doom | https://github.com/openai/gym-doom | author:openai description:Doom environment for Gym
+openai-github-5-6 | doom-py | https://github.com/openai/doom-py | author:openai description:ViZDoom Python wrapper

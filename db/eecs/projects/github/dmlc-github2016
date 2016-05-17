@@ -1,25 +1,25 @@
-dmlc-github-3649-1 | mxnet | https://github.com/dmlc/mxnet | description:Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more
-dmlc-github-3275-2 | xgboost | https://github.com/dmlc/xgboost | description:Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Flink and DataFlow
-dmlc-github-1013-3 | cxxnet | https://github.com/dmlc/cxxnet | description:move forward to https://github.com/dmlc/mxnet
-dmlc-github-539-4 | minerva | https://github.com/dmlc/minerva | description:Minerva: a fast and flexible tool for deep learning on multi-GPU. It provides ndarray programming interface, just like Numpy. Python bindings and C++ bindings are both available. The resulting code can be run on CPU or GPU. Multi-GPU support is very easy.
-dmlc-github-483-5 | mshadow | https://github.com/dmlc/mshadow | description:Matrix Shadow:Lightweight CPU/GPU Matrix and Tensor Template Library in C++/CUDA for (Deep) Machine Learning
-dmlc-github-480-6 | parameter_server | https://github.com/dmlc/parameter_server | description:moved to https://github.com/dmlc/ps-lite
-dmlc-github-309-7 | wormhole | https://github.com/dmlc/wormhole | description:Deprecated
-dmlc-github-277-8 | dmlc-core | https://github.com/dmlc/dmlc-core | description:A common bricks library for building scalable and portable distributed machine learning.
-dmlc-github-151-9 | ps-lite | https://github.com/dmlc/ps-lite | description:A lightweight parameter server interface
-dmlc-github-138-10 | rabit | https://github.com/dmlc/rabit | description:Reliable Allreduce and Broadcast Interface for distributed machine learning
-dmlc-github-134-11 | minpy | https://github.com/dmlc/minpy | description:Pure numpy practice with third party operator Integration
-dmlc-github-130-12 | MXNet.jl | https://github.com/dmlc/MXNet.jl | description:MXNet Julia Package - flexible and efficient deep learning in Julia
-dmlc-github-126-13 | mxnet.js | https://github.com/dmlc/mxnet.js | description:MXNetJS: Javascript Package for Deep Learning in Browser (without server)
-dmlc-github-82-14 | difacto | https://github.com/dmlc/difacto | description:Distributed Factorization Machines
-dmlc-github-74-15 | experimental-lda | https://github.com/dmlc/experimental-lda | description:Updated Mar 28, 2016
-dmlc-github-62-16 | mxnet-memonger | https://github.com/dmlc/mxnet-memonger | description:Sublinear memory optimization for deep learning, reduce GPU memory cost to train deeper nets
-dmlc-github-57-17 | mxnet-gtc-tutorial | https://github.com/dmlc/mxnet-gtc-tutorial | description:MXNet Tutorial for NVidia GTC 2016.
-dmlc-github-49-18 | experimental-mf | https://github.com/dmlc/experimental-mf | description:cache-friendly multithread matrix factorization
-dmlc-github-49-19 | mxnet-model-gallery | https://github.com/dmlc/mxnet-model-gallery | description:Pre-trained Models of DMLC Project
-dmlc-github-48-20 | XGBoost.jl | https://github.com/dmlc/XGBoost.jl | description:XGBoost Julia Package
-dmlc-github-17-21 | MXNet.cpp | https://github.com/dmlc/MXNet.cpp | description:CPP wrapper for MXNet interface
-dmlc-github-15-22 | dmlc.github.io | https://github.com/dmlc/dmlc.github.io | description:the homepage http://dmlc.ml
-dmlc-github-6-23 | web-data | https://github.com/dmlc/web-data | description:The repo to host all the web data including images for documents in dmlc projects.
-dmlc-github-4-24 | drat | https://github.com/dmlc/drat | description:Drat Repository for DMLC R packages
-dmlc-github-3-25 | mxnet-examples | https://github.com/dmlc/mxnet-examples | description:MXNet Example
+dmlc-github-3683-1 | mxnet | https://github.com/dmlc/mxnet | author:dmlc description:Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Scala, Go, Javascript and more
+dmlc-github-3303-2 | xgboost | https://github.com/dmlc/xgboost | author:dmlc description:Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Flink and DataFlow
+dmlc-github-1014-3 | cxxnet | https://github.com/dmlc/cxxnet | author:dmlc description:move forward to https://github.com/dmlc/mxnet
+dmlc-github-540-4 | minerva | https://github.com/dmlc/minerva | author:dmlc description:Minerva: a fast and flexible tool for deep learning on multi-GPU. It provides ndarray programming interface, just like Numpy. Python bindings and C++ bindings are both available. The resulting code can be run on CPU or GPU. Multi-GPU support is very easy.
+dmlc-github-484-5 | mshadow | https://github.com/dmlc/mshadow | author:dmlc description:Matrix Shadow:Lightweight CPU/GPU Matrix and Tensor Template Library in C++/CUDA for (Deep) Machine Learning
+dmlc-github-481-6 | parameter_server | https://github.com/dmlc/parameter_server | author:dmlc description:moved to https://github.com/dmlc/ps-lite
+dmlc-github-309-7 | wormhole | https://github.com/dmlc/wormhole | author:dmlc description:Deprecated
+dmlc-github-278-8 | dmlc-core | https://github.com/dmlc/dmlc-core | author:dmlc description:A common bricks library for building scalable and portable distributed machine learning.
+dmlc-github-152-9 | ps-lite | https://github.com/dmlc/ps-lite | author:dmlc description:A lightweight parameter server interface
+dmlc-github-143-10 | rabit | https://github.com/dmlc/rabit | author:dmlc description:Reliable Allreduce and Broadcast Interface for distributed machine learning
+dmlc-github-137-11 | minpy | https://github.com/dmlc/minpy | author:dmlc description:Pure numpy practice with third party operator Integration
+dmlc-github-130-12 | MXNet.jl | https://github.com/dmlc/MXNet.jl | author:dmlc description:MXNet Julia Package - flexible and efficient deep learning in Julia
+dmlc-github-128-13 | mxnet.js | https://github.com/dmlc/mxnet.js | author:dmlc description:MXNetJS: Javascript Package for Deep Learning in Browser (without server)
+dmlc-github-82-14 | difacto | https://github.com/dmlc/difacto | author:dmlc description:Distributed Factorization Machines
+dmlc-github-74-15 | experimental-lda | https://github.com/dmlc/experimental-lda | author:dmlc description:Updated Mar 28, 2016
+dmlc-github-64-16 | mxnet-memonger | https://github.com/dmlc/mxnet-memonger | author:dmlc description:Sublinear memory optimization for deep learning, reduce GPU memory cost to train deeper nets
+dmlc-github-58-17 | mxnet-gtc-tutorial | https://github.com/dmlc/mxnet-gtc-tutorial | author:dmlc description:MXNet Tutorial for NVidia GTC 2016.
+dmlc-github-51-18 | mxnet-model-gallery | https://github.com/dmlc/mxnet-model-gallery | author:dmlc description:Pre-trained Models of DMLC Project
+dmlc-github-49-19 | experimental-mf | https://github.com/dmlc/experimental-mf | author:dmlc description:cache-friendly multithread matrix factorization
+dmlc-github-48-20 | XGBoost.jl | https://github.com/dmlc/XGBoost.jl | author:dmlc description:XGBoost Julia Package
+dmlc-github-18-21 | MXNet.cpp | https://github.com/dmlc/MXNet.cpp | author:dmlc description:CPP wrapper for MXNet interface
+dmlc-github-16-22 | dmlc.github.io | https://github.com/dmlc/dmlc.github.io | author:dmlc description:the homepage http://dmlc.ml
+dmlc-github-6-23 | web-data | https://github.com/dmlc/web-data | author:dmlc description:The repo to host all the web data including images for documents in dmlc projects.
+dmlc-github-4-24 | drat | https://github.com/dmlc/drat | author:dmlc description:Drat Repository for DMLC R packages
+dmlc-github-3-25 | mxnet-examples | https://github.com/dmlc/mxnet-examples | author:dmlc description:MXNet Example

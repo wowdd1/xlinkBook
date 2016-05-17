@@ -1,19 +1,19 @@
-apple-github-28486-1 | swift | https://github.com/apple/swift | description:The Swift Programming Language
-apple-github-3839-2 | swift-package-manager | https://github.com/apple/swift-package-manager | description:The Package Manager for the Swift Programming Language
-apple-github-3390-3 | swift-evolution | https://github.com/apple/swift-evolution | description:This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
-apple-github-1754-4 | swift-corelibs-foundation | https://github.com/apple/swift-corelibs-foundation | description:The Foundation Project, providing core utilities, internationalization, and OS independence
-apple-github-661-5 | swift-corelibs-libdispatch | https://github.com/apple/swift-corelibs-libdispatch | description:The libdispatch Project, (a.k.a. Grand Central Dispatch), for concurrency on multicore hardware
-apple-github-456-6 | swift-corelibs-xctest | https://github.com/apple/swift-corelibs-xctest | description:The XCTest Project, A Swift core library for providing unit test support
-apple-github-420-7 | swift-llvm | https://github.com/apple/swift-llvm | description:Updated Apr 9, 2016
-apple-github-373-8 | swift-3-api-guidelines-review | https://github.com/apple/swift-3-api-guidelines-review | description:Updated Feb 29, 2016
-apple-github-361-9 | swift-clang | https://github.com/apple/swift-clang | description:Updated Apr 9, 2016
-apple-github-305-10 | swift-lldb | https://github.com/apple/swift-lldb | description:This is the version of LLDB that supports the Swift programming language & REPL.
-apple-github-285-11 | swift-llbuild | https://github.com/apple/swift-llbuild | description:A low-level build system, used by the Swift Package Manager
-apple-github-134-12 | example-package-dealer | https://github.com/apple/example-package-dealer | description:Example package for use with the Swift Package Manager
-apple-github-114-13 | example-package-playingcard | https://github.com/apple/example-package-playingcard | description:Example package for use with the Swift Package Manager
-apple-github-113-14 | example-package-fisheryates | https://github.com/apple/example-package-fisheryates | description:Example package for use with the Swift Package Manager
-apple-github-99-15 | example-package-deckofplayingcards | https://github.com/apple/example-package-deckofplayingcards | description:Example package for use with the Swift Package Manager
-apple-github-45-16 | swift-internals | https://github.com/apple/swift-internals | description:Updated Apr 4, 2016
-apple-github-36-17 | cups | https://github.com/apple/cups | description:Official CUPS Sources
-apple-github-31-18 | swift-integration-tests | https://github.com/apple/swift-integration-tests | description:Automated tests for validating the generated Swift snapshots behave correctly
-apple-github-16-19 | swift-compiler-rt | https://github.com/apple/swift-compiler-rt | description:Updated Apr 8, 2016
+apple-github-30355-1 | swift | https://github.com/apple/swift | author:apple description:The Swift Programming Language
+apple-github-4151-2 | swift-evolution | https://github.com/apple/swift-evolution | author:apple description:This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
+apple-github-4065-3 | swift-package-manager | https://github.com/apple/swift-package-manager | author:apple description:The Package Manager for the Swift Programming Language
+apple-github-1863-4 | swift-corelibs-foundation | https://github.com/apple/swift-corelibs-foundation | author:apple description:The Foundation Project, providing core utilities, internationalization, and OS independence
+apple-github-680-5 | swift-corelibs-libdispatch | https://github.com/apple/swift-corelibs-libdispatch | author:apple description:The libdispatch Project, (a.k.a. Grand Central Dispatch), for concurrency on multicore hardware
+apple-github-478-6 | swift-corelibs-xctest | https://github.com/apple/swift-corelibs-xctest | author:apple description:The XCTest Project, A Swift core library for providing unit test support
+apple-github-441-7 | swift-llvm | https://github.com/apple/swift-llvm | author:apple description:Updated May 16, 2016
+apple-github-392-8 | swift-3-api-guidelines-review | https://github.com/apple/swift-3-api-guidelines-review | author:apple description:Updated Feb 29, 2016
+apple-github-373-9 | swift-clang | https://github.com/apple/swift-clang | author:apple description:Updated May 16, 2016
+apple-github-323-10 | swift-lldb | https://github.com/apple/swift-lldb | author:apple description:This is the version of LLDB that supports the Swift programming language & REPL.
+apple-github-304-11 | swift-llbuild | https://github.com/apple/swift-llbuild | author:apple description:A low-level build system, used by the Swift Package Manager
+apple-github-136-12 | example-package-dealer | https://github.com/apple/example-package-dealer | author:apple description:Example package for use with the Swift Package Manager
+apple-github-118-13 | example-package-playingcard | https://github.com/apple/example-package-playingcard | author:apple description:Example package for use with the Swift Package Manager
+apple-github-115-14 | example-package-fisheryates | https://github.com/apple/example-package-fisheryates | author:apple description:Example package for use with the Swift Package Manager
+apple-github-99-15 | example-package-deckofplayingcards | https://github.com/apple/example-package-deckofplayingcards | author:apple description:Example package for use with the Swift Package Manager
+apple-github-55-16 | cups | https://github.com/apple/cups | author:apple description:Official CUPS Sources
+apple-github-52-17 | swift-internals | https://github.com/apple/swift-internals | author:apple description:Updated May 3, 2016
+apple-github-33-18 | swift-integration-tests | https://github.com/apple/swift-integration-tests | author:apple description:Automated tests for validating the generated Swift snapshots behave correctly
+apple-github-23-19 | swift-compiler-rt | https://github.com/apple/swift-compiler-rt | author:apple description:Updated May 16, 2016
