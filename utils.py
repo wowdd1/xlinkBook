@@ -530,7 +530,7 @@ class Utils:
         script = ''
         script += "setText('" + linkID +"');"
         script += "showdiv('" + content_divID + "','" + linkID +"');"
-        script += "appendContent('" + content_divID + "','" + id + "','" + title.replace('"', ' ').replace("'",' ') + "','" + info + "');"
+        script += "appendContent('" + content_divID + "','" + id + "','" + title.replace('"', ' ').replace("'",' ').replace('&', '%20') + "','" + info + "');"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
