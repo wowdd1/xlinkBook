@@ -63,6 +63,8 @@ search_box_displayed = False
 
 script_head = '<script language="JavaScript" type="text/JavaScript">';
 script_end = '</script>'
+css_head = '<style type="text/css">'
+css_end = '</style>'
 
 css_style_0 = ''
 css_style_1 = '\
@@ -326,19 +328,25 @@ output_script_already = False
 
 
 def loadJSScript():
-    return loadFiles('web', '.js')
+    result = ''
+    result += script_head
+    result += loadFiles('web', '.js')
+    result += script_end
+    return result
     
 def loadCSS():
-    return loadFiles('web', '.css')
+    result = ''
+    result += css_head
+    result += loadFiles('web', '.css')
+    result += css_end
+    return result
 
 def loadFiles(folder, fileType):
     cur_list = os.listdir(folder + '/')
     result = ''
     for f in cur_list:
         if f.endswith(fileType):
-            result += script_head
             result += ''.join(open(folder + '/' + f, 'rU').readlines())
-            result += script_end
     return result
 
 def getScript():
