@@ -1,3 +1,10 @@
+
+install:
+
+    git clone git@github.com:wowdd1/xlinkbook.git
+    cd xlinkbook
+    pip install -r requirements.txt
+
 usage:  
 
     ./list.py -i filename or dirname -c column_num -f 'keyword or regexp' -s -d -w 100 -r 5
