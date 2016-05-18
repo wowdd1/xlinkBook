@@ -26,7 +26,6 @@ def getToc(pdfPath):
     return toc
 
 def toOutline(source):
-    print source
     if source.endswith('.pdf') and source.startswith('http') == False:
        for item in getToc(source):
            print item[1]
