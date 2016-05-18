@@ -214,6 +214,8 @@ class Utils:
                 if line.startswith('#'):
                     continue
                 record = ContentRecord(line)
+                if record.get_title().strip() == '':
+                    continue
                 key = record.get_parentid().strip()
                 if self.record_content.has_key(key):
                     self.record_content[key].append(record)
@@ -241,10 +243,15 @@ class Utils:
                     newIndex = str(count) + '.'
                 else:
                     newIndex = index + str(count) + '.'
+                format_index = ''
                 if r.get_id().find('-') != -1:
-                    html += '<li><span>' + r.get_id()[r.get_id().find('-') + 1 :].strip() + '</span>'
+                    format_index = r.get_id()[r.get_id().find('-') + 1 :].strip()
                 else:
-                    html += '<li><span>' + newIndex + '</span>'
+                    format_index = newIndex
+                   
+                html += '<li><span>' + format_index + '</span>'
+                if len(format_index) > 4:
+                    html += '</li><br\><li>'
                 if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
                     content_divID += '-' + str(count)
                     linkID = 'a-' + content_divID[content_divID.find('-') + 1 :] 
