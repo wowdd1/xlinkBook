@@ -421,6 +421,7 @@ class GithubSpider(Spider):
     result = ""
     request_times = 0
     token = ''
+
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -625,7 +626,9 @@ class GithubSpider(Spider):
                 'sony' : 'https://github.com/sony',\
                 'Blizzard' : 'https://github.com/Blizzard',\
                 'openai' : 'https://github.com/openai',\
-                'github' : 'https://github.com/github'}
+                'github' : 'https://github.com/github',\
+                'mozilla' : 'https://github.com/mozilla',\
+                'openstack': 'https://github.com/openstack'}
 
         for k in data:
 
@@ -685,7 +688,7 @@ class GithubSpider(Spider):
                 self.processGithubData(keyword, 100, per_page, keyword)
             else:
                 self.processGithubData(keyword, star, per_page)
-        print "get user data..."
+        #print "get user data..."
         #self.processGithubiUserData("all", 500, 100)
         #self.processGithubiUserData("china", 500, 100)
         self.getOrganizationProjects()

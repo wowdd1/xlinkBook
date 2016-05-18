@@ -1,0 +1,816 @@
+openstack-github-1779-1 | nova | https://github.com/openstack/nova | author:openstack description:OpenStack Compute (Nova)
+openstack-github-1445-2 | openstack | https://github.com/openstack/openstack | author:openstack description:Updated May 18, 2016
+openstack-github-1315-3 | swift | https://github.com/openstack/swift | author:openstack description:OpenStack Object Storage (Swift)
+openstack-github-759-4 | horizon | https://github.com/openstack/horizon | author:openstack description:Horizon is a Django-based project aimed at providing a complete OpenStack Dashboard along with an extensible framework for building new dashboards from reusable components.
+openstack-github-695-5 | neutron | https://github.com/openstack/neutron | author:openstack description:Neutron is a virtual network service for Openstack.
+openstack-github-490-6 | openstack-ansible | https://github.com/openstack/openstack-ansible | author:openstack description:Ansible playbooks for deploying OpenStack.
+openstack-github-365-7 | glance | https://github.com/openstack/glance | author:openstack description:The Glance project provides services for discovering, registering, and retrieving virtual machine images. Glance has a RESTful API that allows querying of VM image metadata as well as retrieval of the actual image.
+openstack-github-336-8 | kolla | https://github.com/openstack/kolla | author:openstack description:Kolla - Deploying OpenStack using Docker
+openstack-github-332-9 | bandit | https://github.com/openstack/bandit | author:openstack description:Python AST-based static analyzer from OpenStack Security Group
+openstack-github-329-10 | python-novaclient | https://github.com/openstack/python-novaclient | author:openstack description:Client library for OpenStack Compute API
+openstack-github-328-11 | openstack-manuals | https://github.com/openstack/openstack-manuals | author:openstack description:Updated May 18, 2016
+openstack-github-286-12 | cinder | https://github.com/openstack/cinder | author:openstack description:Updated May 18, 2016
+openstack-github-279-13 | keystone | https://github.com/openstack/keystone | author:openstack description:Updated May 18, 2016
+openstack-github-265-14 | heat | https://github.com/openstack/heat | author:openstack description:Updated May 17, 2016
+openstack-github-262-15 | packstack | https://github.com/openstack/packstack | author:openstack description:Install utility to deploy openstack on multiple hosts.
+openstack-github-248-16 | tempest | https://github.com/openstack/tempest | author:openstack description:Updated May 17, 2016
+openstack-github-218-17 | python-swiftclient | https://github.com/openstack/python-swiftclient | author:openstack description:Updated May 17, 2016
+openstack-github-214-18 | ceilometer | https://github.com/openstack/ceilometer | author:openstack description:Updated May 17, 2016
+openstack-github-206-19 | heat-templates | https://github.com/openstack/heat-templates | author:openstack description:Updated May 12, 2016
+openstack-github-200-20 | ironic | https://github.com/openstack/ironic | author:openstack description:A service for managing and provisioning Bare Metal servers.
+openstack-github-188-21 | nova-docker | https://github.com/openstack/nova-docker | author:openstack description:Docker driver for OpenStack Nova
+openstack-github-182-22 | sqlalchemy-migrate | https://github.com/openstack/sqlalchemy-migrate | author:openstack description:Database schema migration for SQLAlchemy
+openstack-github-179-23 | magnum | https://github.com/openstack/magnum | author:openstack description:Containers Service for OpenStack
+openstack-github-178-24 | python-keystoneclient | https://github.com/openstack/python-keystoneclient | author:openstack description:Updated May 17, 2016
+openstack-github-169-25 | rally | https://github.com/openstack/rally | author:openstack description:Benchmark System for OpenStack
+openstack-github-164-26 | trove | https://github.com/openstack/trove | author:openstack description:Updated May 18, 2016
+openstack-github-150-27 | python-openstackclient | https://github.com/openstack/python-openstackclient | author:openstack description:Updated May 18, 2016
+openstack-github-150-28 | sahara | https://github.com/openstack/sahara | author:openstack description:Sahara aims to provide users with simple means to provision a Hadoop cluster by specifying several parameters like Hadoop version, cluster topology, nodes hardware details and a few more.
+openstack-github-145-29 | diskimage-builder | https://github.com/openstack/diskimage-builder | author:openstack description:Image building tools for OpenStack
+openstack-github-142-30 | barbican | https://github.com/openstack/barbican | author:openstack description:Barbican is a ReST API designed for the secure storage, provisioning and management of secrets, including in OpenStack environments.
+openstack-github-135-31 | oslo-incubator | https://github.com/openstack/oslo-incubator | author:openstack description:Part of OpenStack's Oslo project. New Oslo APIs go through an incubation phase in this repository before being released as part of a proper Python library.
+openstack-github-130-32 | fuel-main | https://github.com/openstack/fuel-main | author:openstack description:Fuel is the control plane for installing and managing OpenStack. It is capable of doing bare metal provisioning of physical nodes, installing OpenStack on them, and much more.
+openstack-github-130-33 | python-neutronclient | https://github.com/openstack/python-neutronclient | author:openstack description:Python API Library for Neutron
+openstack-github-130-34 | openstack-chef-repo | https://github.com/openstack/openstack-chef-repo | author:openstack description:Example Chef Repo that sets up an OpenStack Deployment
+openstack-github-120-35 | pyghmi | https://github.com/openstack/pyghmi | author:openstack description:A Pure python IPMI library
+openstack-github-109-36 | fuel-library | https://github.com/openstack/fuel-library | author:openstack description:Fuel Library
+openstack-github-107-37 | freezer | https://github.com/openstack/freezer | author:openstack description:OpenStack Swift incremental backup and restore automation tool for file system, MongoDB, MySQL. LVM snapshot and encryption support.
+openstack-github-106-38 | taskflow | https://github.com/openstack/taskflow | author:openstack description:A library to complete workflows/tasks in HA manner
+openstack-github-105-39 | fuel-web | https://github.com/openstack/fuel-web | author:openstack description:Fuel UI
+openstack-github-99-40 | zaqar | https://github.com/openstack/zaqar | author:openstack description:Updated May 17, 2016
+openstack-github-99-41 | python-glanceclient | https://github.com/openstack/python-glanceclient | author:openstack description:Updated May 17, 2016
+openstack-github-97-42 | solum | https://github.com/openstack/solum | author:openstack description:An OpenStack related project designed to make cloud services easier to consume and integrate into your application development process. See: https://wiki.openstack.org/wiki/Solum
+openstack-github-93-43 | designate | https://github.com/openstack/designate | author:openstack description:Updated May 17, 2016
+openstack-github-92-44 | python-openstacksdk | https://github.com/openstack/python-openstacksdk | author:openstack description:Unified SDK for OpenStack. See: https://wiki.openstack.org/wiki/UnifiedSDK
+openstack-github-92-45 | stackalytics | https://github.com/openstack/stackalytics | author:openstack description:OpenStack analytics dashboard
+openstack-github-90-46 | gertty | https://github.com/openstack/gertty | author:openstack description:Console interface to Gerrit Code Review
+openstack-github-89-47 | mistral | https://github.com/openstack/mistral | author:openstack description:Task orchestration service for OpenStack cloud.
+openstack-github-88-48 | oslo.messaging | https://github.com/openstack/oslo.messaging | author:openstack description:Updated May 17, 2016
+openstack-github-87-49 | gnocchi | https://github.com/openstack/gnocchi | author:openstack description:A time series storage and resources index service.
+openstack-github-84-50 | golang-client | https://github.com/openstack/golang-client | author:openstack description:OpenStack API client for golang
+openstack-github-84-51 | cloudkitty | https://github.com/openstack/cloudkitty | author:openstack description:OpenStack Billing and Usage Reporter
+openstack-github-83-52 | murano | https://github.com/openstack/murano | author:openstack description:Updated May 17, 2016
+openstack-github-81-53 | tripleo-incubator | https://github.com/openstack/tripleo-incubator | author:openstack description:The TripleO incubator where unformed things are experimented with.
+openstack-github-80-54 | requirements | https://github.com/openstack/requirements | author:openstack description:Global requirements for OpenStack projects
+openstack-github-80-55 | oslo.config | https://github.com/openstack/oslo.config | author:openstack description:Updated May 17, 2016
+openstack-github-80-56 | osprofiler | https://github.com/openstack/osprofiler | author:openstack description:OpenStack cross service/project profiler
+openstack-github-78-57 | python-cinderclient | https://github.com/openstack/python-cinderclient | author:openstack description:Client library for the Cinder API
+openstack-github-78-58 | puppet-ceph | https://github.com/openstack/puppet-ceph | author:openstack description:Ceph Puppet Module
+openstack-github-78-59 | training-guides | https://github.com/openstack/training-guides | author:openstack description:Community created, open source training guides for OpenStack.
+openstack-github-77-60 | cloudbase-init | https://github.com/openstack/cloudbase-init | author:openstack description:Cross-platform instance initialization
+openstack-github-76-61 | api-site | https://github.com/openstack/api-site | author:openstack description:Updated May 16, 2016
+openstack-github-75-62 | django_openstack_auth | https://github.com/openstack/django_openstack_auth | author:openstack description:A Django authentication backend for use with the OpenStack Keystone Identity backend.
+openstack-github-74-63 | python-heatclient | https://github.com/openstack/python-heatclient | author:openstack description:Updated May 17, 2016
+openstack-github-74-64 | python-jenkins | https://github.com/openstack/python-jenkins | author:openstack description:Python API for managing jobs and nodes in a Jenkins CI instance
+openstack-github-73-65 | requests-mock | https://github.com/openstack/requests-mock | author:openstack description:Mocked responses for the requests library
+openstack-github-72-66 | kuryr | https://github.com/openstack/kuryr | author:openstack description:Docker remote driver for OpenStack Neutron
+openstack-github-72-67 | ospurge | https://github.com/openstack/ospurge | author:openstack description:Cleanup OpenStack project resources.
+openstack-github-71-68 | tooz | https://github.com/openstack/tooz | author:openstack description:Coordinate distributed systems.
+openstack-github-71-69 | ironic-python-agent | https://github.com/openstack/ironic-python-agent | author:openstack description:A python agent for provisioning and deprovisioning Bare Metal servers.
+openstack-github-71-70 | anvil | https://github.com/openstack/anvil | author:openstack description:A set of python scripts and utilities to forge raw openstack into a productive tool!
+openstack-github-69-71 | python-ceilometerclient | https://github.com/openstack/python-ceilometerclient | author:openstack description:Updated May 17, 2016
+openstack-github-69-72 | stevedore | https://github.com/openstack/stevedore | author:openstack description:Manage dynamic plugins for Python applications
+openstack-github-68-73 | stacktach | https://github.com/openstack/stacktach | author:openstack description:Event-based Debugging, Monitoring and Billing solution for OpenStack.
+openstack-github-68-74 | wsme | https://github.com/openstack/wsme | author:openstack description:Web Service Made Easy (WSME) simplify the writing of REST web services by providing simple yet powerful typing which removes the need to directly manipulate the request and the response objects.
+openstack-github-68-75 | operations-guide | https://github.com/openstack/operations-guide | author:openstack description:OpenStack Operations Guide
+openstack-github-67-76 | manila | https://github.com/openstack/manila | author:openstack description:Shared filesystem management project for OpenStack.
+openstack-github-67-77 | ec2-api | https://github.com/openstack/ec2-api | author:openstack description:AWS EC2 and VPC API support in standalone service for OpenStack. At first uses nova's EC2 API for non-VPC functionality. Later it'll be transferred here out of nova.
+openstack-github-67-78 | swift3 | https://github.com/openstack/swift3 | author:openstack description:Swift3 Middleware for OpenStack Swift, allowing access to OpenStack swift via the Amazon S3 API.
+openstack-github-66-79 | octavia | https://github.com/openstack/octavia | author:openstack description:An operator-grade reference implementation for Load Balancing as a Service (LBaaS)
+openstack-github-66-80 | heat-translator | https://github.com/openstack/heat-translator | author:openstack description:Translate non-heat templates to Heat Orchestration Template.
+openstack-github-66-81 | cliff | https://github.com/openstack/cliff | author:openstack description:Command Line Interface Formulation Framework
+openstack-github-65-82 | tripleo-heat-templates | https://github.com/openstack/tripleo-heat-templates | author:openstack description:Heat templates for deploying OpenStack
+openstack-github-65-83 | puppet-keystone | https://github.com/openstack/puppet-keystone | author:openstack description:OpenStack Keystone Puppet Module
+openstack-github-65-84 | fuel-devops | https://github.com/openstack/fuel-devops | author:openstack description:Fuel DevOps tools for managing virtual environments
+openstack-github-64-85 | puppet-nova | https://github.com/openstack/puppet-nova | author:openstack description:OpenStack Nova Puppet Module
+openstack-github-64-86 | tripleo-image-elements | https://github.com/openstack/tripleo-image-elements | author:openstack description:Disk image elements for deployment images of OpenStack
+openstack-github-63-87 | cloudcafe | https://github.com/openstack/cloudcafe | author:openstack description:OpenStack based test automation framework. Based on OpenCAFE engine
+openstack-github-60-88 | python-troveclient | https://github.com/openstack/python-troveclient | author:openstack description:Updated May 17, 2016
+openstack-github-60-89 | murano-apps | https://github.com/openstack/murano-apps | author:openstack description:Updated May 17, 2016
+openstack-github-60-90 | opencafe | https://github.com/openstack/opencafe | author:openstack description:Common Automation Framework Engine. Core driver for CloudCAFE
+openstack-github-60-91 | compass-core | https://github.com/openstack/compass-core | author:openstack description:Automating Distributed System Deployment to Baremetal Resources
+openstack-github-60-92 | trove-integration | https://github.com/openstack/trove-integration | author:openstack description:Updated May 16, 2016
+openstack-github-60-93 | nova-specs | https://github.com/openstack/nova-specs | author:openstack description:Updated May 18, 2016
+openstack-github-59-94 | cookbook-openstack-network | https://github.com/openstack/cookbook-openstack-network | author:openstack description:Chef Cookbook - OpenStack Network
+openstack-github-59-95 | cookbook-openstack-compute | https://github.com/openstack/cookbook-openstack-compute | author:openstack description:Chef Cookbook - OpenStack Compute
+openstack-github-59-96 | congress | https://github.com/openstack/congress | author:openstack description:Congress
+openstack-github-59-97 | tacker | https://github.com/openstack/tacker | author:openstack description:tacker: specifications a servicevm/device life cycle manager. See https://wiki.openstack.org/wiki/ServiceVM
+openstack-github-57-98 | swiftonfile | https://github.com/openstack/swiftonfile | author:openstack description:Swift Object Server implementation that enables objects created using the Swift API to be accessed as files on a POSIX filesystem.
+openstack-github-57-99 | blazar | https://github.com/openstack/blazar | author:openstack description:Reservation Service for OpenStack
+openstack-github-57-100 | oslo.db | https://github.com/openstack/oslo.db | author:openstack description:OpenStack Common DB Code
+openstack-github-57-101 | monasca-api | https://github.com/openstack/monasca-api | author:openstack description:Monasca REST API
+openstack-github-57-102 | puppet-neutron | https://github.com/openstack/puppet-neutron | author:openstack description:OpenStack Neutron Puppet Module
+openstack-github-56-103 | puppet-swift | https://github.com/openstack/puppet-swift | author:openstack description:OpenStack Swift Puppet Module
+openstack-github-56-104 | poppy | https://github.com/openstack/poppy | author:openstack description:A modular, vendor-neutral API, that wraps provisioning instructions for all CDN vendors that support it.
+openstack-github-56-105 | swift-bench | https://github.com/openstack/swift-bench | author:openstack description:Benchmarking tool for OpenStack Swift
+openstack-github-55-106 | gce-api | https://github.com/openstack/gce-api | author:openstack description:Google Compute Engine API support for OpenStack
+openstack-github-55-107 | gerrit-dash-creator | https://github.com/openstack/gerrit-dash-creator | author:openstack description:Client side gerrit dashboard creator from server side definitions
+openstack-github-54-108 | fuel-astute | https://github.com/openstack/fuel-astute | author:openstack description:Fuel orchestrator
+openstack-github-53-109 | neutron-specs | https://github.com/openstack/neutron-specs | author:openstack description:Updated May 18, 2016
+openstack-github-53-110 | puppet-glance | https://github.com/openstack/puppet-glance | author:openstack description:OpenStack Glance Puppet Module
+openstack-github-53-111 | security-doc | https://github.com/openstack/security-doc | author:openstack description:Documentation work from the OpenStack Security Group (OSSG)
+openstack-github-53-112 | monasca-agent | https://github.com/openstack/monasca-agent | author:openstack description:Agent for Monasca
+openstack-github-53-113 | dox | https://github.com/openstack/dox | author:openstack description:Run tests in a docker container
+openstack-github-53-114 | tuskar | https://github.com/openstack/tuskar | author:openstack description:A service for managing OpenStack deployments
+openstack-github-53-115 | cookbook-openstack-common | https://github.com/openstack/cookbook-openstack-common | author:openstack description:Chef Cookbook - common OpenStack configuration
+openstack-github-52-116 | fuel-docs | https://github.com/openstack/fuel-docs | author:openstack description:Fuel Documentation
+openstack-github-52-117 | openstack-doc-tools | https://github.com/openstack/openstack-doc-tools | author:openstack description:Tools used by OpenStack Documentation
+openstack-github-52-118 | cloudroast | https://github.com/openstack/cloudroast | author:openstack description:Automated Test Case Repository for OpenStack. Based on CloudCAFE.
+openstack-github-52-119 | kwapi | https://github.com/openstack/kwapi | author:openstack description:Energy Efficiency Monitoring
+openstack-github-52-120 | sahara-image-elements | https://github.com/openstack/sahara-image-elements | author:openstack description:Disk image elements for Sahara
+openstack-github-52-121 | governance | https://github.com/openstack/governance | author:openstack description:OpenStack Technical Committee Decisions
+openstack-github-51-122 | puppet-cinder | https://github.com/openstack/puppet-cinder | author:openstack description:OpenStack Cinder Puppet Module
+openstack-github-51-123 | dragonflow | https://github.com/openstack/dragonflow | author:openstack description:Dragonflow - SDN based Distributed Virtual Router for OpenStack Neutron
+openstack-github-51-124 | pylockfile | https://github.com/openstack/pylockfile | author:openstack description:Platform-independent file locking module
+openstack-github-51-125 | surveil | https://github.com/openstack/surveil | author:openstack description:Monitoring as a Service for OpenStack
+openstack-github-50-126 | fuel-ostf | https://github.com/openstack/fuel-ostf | author:openstack description:Updated May 17, 2016
+openstack-github-50-127 | cookbook-openstack-object-storage | https://github.com/openstack/cookbook-openstack-object-storage | author:openstack description:Chef Cookbook - OpenStack Object Storage
+openstack-github-50-128 | gantt | https://github.com/openstack/gantt | author:openstack description:Common scheduler for OpenStack.
+openstack-github-50-129 | refstack | https://github.com/openstack/refstack | author:openstack description:Vendor-facing API for registration of interop-compliance
+openstack-github-50-130 | openstack-planet | https://github.com/openstack/openstack-planet | author:openstack description:Config for planet.openstack.org
+openstack-github-49-131 | puppet-horizon | https://github.com/openstack/puppet-horizon | author:openstack description:OpenStack Horizon Puppet Module
+openstack-github-49-132 | murano-dashboard | https://github.com/openstack/murano-dashboard | author:openstack description:Updated May 17, 2016
+openstack-github-49-133 | monasca-vagrant | https://github.com/openstack/monasca-vagrant | author:openstack description:Vagrant test environment for Monasca
+openstack-github-49-134 | nova-solver-scheduler | https://github.com/openstack/nova-solver-scheduler | author:openstack description:Nova scheduler driver for constraints-based scheduling
+openstack-github-49-135 | python-ironicclient | https://github.com/openstack/python-ironicclient | author:openstack description:A python client implementing the Ironic API.
+openstack-github-48-136 | puppet-heat | https://github.com/openstack/puppet-heat | author:openstack description:OpenStack Heat Puppet Module
+openstack-github-48-137 | keystonemiddleware | https://github.com/openstack/keystonemiddleware | author:openstack description:OpenStack Identity (Keystone) Middleware
+openstack-github-48-138 | telemetry-specs | https://github.com/openstack/telemetry-specs | author:openstack description:Updated May 17, 2016
+openstack-github-48-139 | fuel-specs | https://github.com/openstack/fuel-specs | author:openstack description:Fuel designs and specs
+openstack-github-48-140 | glance_store | https://github.com/openstack/glance_store | author:openstack description:Glance stores library
+openstack-github-48-141 | swift-ceph-backend | https://github.com/openstack/swift-ceph-backend | author:openstack description:Ceph backend for Swift
+openstack-github-48-142 | oslo.utils | https://github.com/openstack/oslo.utils | author:openstack description:Updated May 17, 2016
+openstack-github-47-143 | cookbook-openstack-block-storage | https://github.com/openstack/cookbook-openstack-block-storage | author:openstack description:Chef Cookbook - OpenStack Block Storage
+openstack-github-47-144 | magnetodb | https://github.com/openstack/magnetodb | author:openstack description:Key-value database service for OpenStack cloud.
+openstack-github-47-145 | python-saharaclient | https://github.com/openstack/python-saharaclient | author:openstack description:Python bindings and CLI for Sahara.
+openstack-github-47-146 | os-cloud-config | https://github.com/openstack/os-cloud-config | author:openstack description:Configure a cloud
+openstack-github-47-147 | oslo.vmware | https://github.com/openstack/oslo.vmware | author:openstack description:Oslo VMware library for OpenStack projects
+openstack-github-47-148 | python-designateclient | https://github.com/openstack/python-designateclient | author:openstack description:Updated May 17, 2016
+openstack-github-46-149 | tricircle | https://github.com/openstack/tricircle | author:openstack description:Tricircle is a project for OpenStack cascading solution.
+openstack-github-46-150 | monasca-ceilometer | https://github.com/openstack/monasca-ceilometer | author:openstack description:Integration between Monasca and Ceilometer
+openstack-github-46-151 | rack | https://github.com/openstack/rack | author:openstack description:Provides the ability that can control OpenStack as program resource with an application. It enables you to implement a large scale distributed system in a variety of programming languages on OpenStack.
+openstack-github-46-152 | heat-cfntools | https://github.com/openstack/heat-cfntools | author:openstack description:Updated Mar 18, 2016
+openstack-github-46-153 | keystone-specs | https://github.com/openstack/keystone-specs | author:openstack description:Updated May 17, 2016
+openstack-github-46-154 | os-apply-config | https://github.com/openstack/os-apply-config | author:openstack description:Apply configuration from cloud metadata.
+openstack-github-46-155 | os-collect-config | https://github.com/openstack/os-collect-config | author:openstack description:Collect and cache metadata, run hooks on changes.
+openstack-github-46-156 | git-upstream | https://github.com/openstack/git-upstream | author:openstack description:Staying close to latest from OpenStack through git-upstream
+openstack-github-46-157 | puppet-ceilometer | https://github.com/openstack/puppet-ceilometer | author:openstack description:OpenStack Ceilometer Puppet Module
+openstack-github-46-158 | cookbook-openstack-identity | https://github.com/openstack/cookbook-openstack-identity | author:openstack description:Chef Cookbook - OpenStack Identity
+openstack-github-45-159 | tuskar-ui | https://github.com/openstack/tuskar-ui | author:openstack description:The UI component for Tuskar
+openstack-github-45-160 | inception | https://github.com/openstack/inception | author:openstack description:Inception Cloud Project
+openstack-github-45-161 | monitoring-for-openstack | https://github.com/openstack/monitoring-for-openstack | author:openstack description:Updated Jan 25, 2016
+openstack-github-45-162 | cinder-specs | https://github.com/openstack/cinder-specs | author:openstack description:Updated May 17, 2016
+openstack-github-45-163 | sahara-extra | https://github.com/openstack/sahara-extra | author:openstack description:Repo for sahara-related utils.
+openstack-github-45-164 | pycadf | https://github.com/openstack/pycadf | author:openstack description:CADF Python module
+openstack-github-44-165 | cookbook-openstack-image | https://github.com/openstack/cookbook-openstack-image | author:openstack description:Chef Cookbook - OpenStack Image
+openstack-github-44-166 | python-barbicanclient | https://github.com/openstack/python-barbicanclient | author:openstack description:Client library for Barbican API.
+openstack-github-44-167 | doc8 | https://github.com/openstack/doc8 | author:openstack description:Updated Apr 12, 2016
+openstack-github-44-168 | ironic-specs | https://github.com/openstack/ironic-specs | author:openstack description:Updated May 17, 2016
+openstack-github-44-169 | oslo.concurrency | https://github.com/openstack/oslo.concurrency | author:openstack description:OpenStack library for all concurrency-related code
+openstack-github-44-170 | python-zaqarclient | https://github.com/openstack/python-zaqarclient | author:openstack description:Updated May 17, 2016
+openstack-github-43-171 | os-refresh-config | https://github.com/openstack/os-refresh-config | author:openstack description:Restart services and coordinate data migration on Heat config changes.
+openstack-github-43-172 | oslo.i18n | https://github.com/openstack/oslo.i18n | author:openstack description:Internationalization and translation library.
+openstack-github-43-173 | sahara-dashboard | https://github.com/openstack/sahara-dashboard | author:openstack description:Sahara Horizon plugin.
+openstack-github-43-174 | oslotest | https://github.com/openstack/oslotest | author:openstack description:OpenStack test classes
+openstack-github-43-175 | cookbook-openstack-dashboard | https://github.com/openstack/cookbook-openstack-dashboard | author:openstack description:Chef Cookbook - OpenStack Dashboard
+openstack-github-42-176 | neutron-lbaas | https://github.com/openstack/neutron-lbaas | author:openstack description:Load balancing services for OpenStack Neutron.
+openstack-github-42-177 | oslo.middleware | https://github.com/openstack/oslo.middleware | author:openstack description:OpenStack middleware library
+openstack-github-42-178 | puppet-ironic | https://github.com/openstack/puppet-ironic | author:openstack description:OpenStack Ironic Puppet Module
+openstack-github-42-179 | monasca-notification | https://github.com/openstack/monasca-notification | author:openstack description:Notification Engine for Monasca
+openstack-github-42-180 | swift-specs | https://github.com/openstack/swift-specs | author:openstack description:Updated May 5, 2016
+openstack-github-42-181 | powervc-driver | https://github.com/openstack/powervc-driver | author:openstack description:A set of drivers and utilities to integrate PowerVC into OpenStack.
+openstack-github-42-182 | oslo.serialization | https://github.com/openstack/oslo.serialization | author:openstack description:Updated May 12, 2016
+openstack-github-42-183 | monasca-thresh | https://github.com/openstack/monasca-thresh | author:openstack description:Monasca Thresholding Engine
+openstack-github-42-184 | sahara-specs | https://github.com/openstack/sahara-specs | author:openstack description:Updated May 17, 2016
+openstack-github-42-185 | puppet-sahara | https://github.com/openstack/puppet-sahara | author:openstack description:Sahara Puppet Module
+openstack-github-42-186 | python-tuskarclient | https://github.com/openstack/python-tuskarclient | author:openstack description:Python bindings and CLI to Tuskar.
+openstack-github-41-187 | monasca-persister | https://github.com/openstack/monasca-persister | author:openstack description:Monasca Database Persister
+openstack-github-41-188 | puppet-vswitch | https://github.com/openstack/puppet-vswitch | author:openstack description:Puppet provider for virtual switches.
+openstack-github-41-189 | cookbook-openstack-orchestration | https://github.com/openstack/cookbook-openstack-orchestration | author:openstack description:Chef Cookbook - OpenStack Orchestration
+openstack-github-41-190 | oslosphinx | https://github.com/openstack/oslosphinx | author:openstack description:Theme and utilities for Sphinx documentation tool
+openstack-github-41-191 | oslo-specs | https://github.com/openstack/oslo-specs | author:openstack description:Updated May 17, 2016
+openstack-github-41-192 | barbican-specs | https://github.com/openstack/barbican-specs | author:openstack description:Updated May 9, 2016
+openstack-github-41-193 | refstack-client | https://github.com/openstack/refstack-client | author:openstack description:Testing and result upload client for refstack
+openstack-github-41-194 | turbo-hipster | https://github.com/openstack/turbo-hipster | author:openstack description:A generic zuul worker using the gearman protocol.
+openstack-github-41-195 | cookbook-openstack-telemetry | https://github.com/openstack/cookbook-openstack-telemetry | author:openstack description:Chef Cookbook - OpenStack Telemetry
+openstack-github-41-196 | docs-specs | https://github.com/openstack/docs-specs | author:openstack description:Updated May 18, 2016
+openstack-github-41-197 | fuel-qa | https://github.com/openstack/fuel-qa | author:openstack description:Fuel tests
+openstack-github-41-198 | cl-openstack-client | https://github.com/openstack/cl-openstack-client | author:openstack description:Common Lisp OpenStack client libraries
+openstack-github-41-199 | puppet-openstacklib | https://github.com/openstack/puppet-openstacklib | author:openstack description:Module for Common Puppet OpenStack Dependencies
+openstack-github-41-200 | tripleo-specs | https://github.com/openstack/tripleo-specs | author:openstack description:Updated May 13, 2016
+openstack-github-40-201 | dib-utils | https://github.com/openstack/dib-utils | author:openstack description:Pieces of diskimage-builder that are useful without the full project
+openstack-github-40-202 | mistral-extra | https://github.com/openstack/mistral-extra | author:openstack description:Additional tools and examples for Mistral workflow engine.
+openstack-github-40-203 | python-mistralclient | https://github.com/openstack/python-mistralclient | author:openstack description:Python client for Mistral REST API.
+openstack-github-40-204 | neutron-fwaas | https://github.com/openstack/neutron-fwaas | author:openstack description:Firewall services for OpenStack Neutron.
+openstack-github-40-205 | blazar-nova | https://github.com/openstack/blazar-nova | author:openstack description:Specific Nova part of the Climate Reservation Service for OpenStack
+openstack-github-40-206 | murano-agent | https://github.com/openstack/murano-agent | author:openstack description:Updated May 17, 2016
+openstack-github-40-207 | puppet-tempest | https://github.com/openstack/puppet-tempest | author:openstack description:OpenStack Tempest Puppet Module
+openstack-github-40-208 | solum-dashboard | https://github.com/openstack/solum-dashboard | author:openstack description:Horizon plugin for Solum. See: https://wiki.openstack.org/wiki/Solum
+openstack-github-40-209 | python-blazarclient | https://github.com/openstack/python-blazarclient | author:openstack description:Client for OpenStack Climate
+openstack-github-40-210 | puppet-trove | https://github.com/openstack/puppet-trove | author:openstack description:OpenStack Trove Puppet Module
+openstack-github-40-211 | heat-specs | https://github.com/openstack/heat-specs | author:openstack description:Updated May 17, 2016
+openstack-github-40-212 | qa-specs | https://github.com/openstack/qa-specs | author:openstack description:Updated May 12, 2016
+openstack-github-40-213 | monasca-common | https://github.com/openstack/monasca-common | author:openstack description:Monasca common classes
+openstack-github-40-214 | puppet-openstack-specs | https://github.com/openstack/puppet-openstack-specs | author:openstack description:Puppet for OpenStack Design Specifications
+openstack-github-40-215 | openstack-chef-specs | https://github.com/openstack/openstack-chef-specs | author:openstack description:Openstack Chef Blueprint specs
+openstack-github-40-216 | python-tackerclient | https://github.com/openstack/python-tackerclient | author:openstack description:Updated May 17, 2016
+openstack-github-40-217 | monasca-ui | https://github.com/openstack/monasca-ui | author:openstack description:Horizon UI for Monasca
+openstack-github-40-218 | python-opentsdbclient | https://github.com/openstack/python-opentsdbclient | author:openstack description:A simple REST client to communicate with OpenTSDB (needed for Gnocchi to use OpenTSDB as a backend)
+openstack-github-39-219 | sahara-ci-config | https://github.com/openstack/sahara-ci-config | author:openstack description:Sahara-ci 3rd party testing configs (jjb, zuul, etc.)
+openstack-github-39-220 | driverlog | https://github.com/openstack/driverlog | author:openstack description:Vendor drivers for OpenStack
+openstack-github-39-221 | cookbook-openstack-client | https://github.com/openstack/cookbook-openstack-client | author:openstack description:Chef Cookbook - OpenStack client Resources
+openstack-github-39-222 | clouddocs-maven-plugin | https://github.com/openstack/clouddocs-maven-plugin | author:openstack description:Updated May 2, 2016
+openstack-github-39-223 | glance-specs | https://github.com/openstack/glance-specs | author:openstack description:Updated May 17, 2016
+openstack-github-39-224 | designate-specs | https://github.com/openstack/designate-specs | author:openstack description:Updated May 10, 2016
+openstack-github-39-225 | puppet-designate | https://github.com/openstack/puppet-designate | author:openstack description:StackForge Designate Puppet Module
+openstack-github-39-226 | murano-deployment | https://github.com/openstack/murano-deployment | author:openstack description:Updated May 16, 2016
+openstack-github-39-227 | vmtp | https://github.com/openstack/vmtp | author:openstack description:A data path performance tool for OpenStack clouds.
+openstack-github-39-228 | cloudkitty-dashboard | https://github.com/openstack/cloudkitty-dashboard | author:openstack description:CloudKitty Horizon Plugin
+openstack-github-39-229 | puppet-openstack_extras | https://github.com/openstack/puppet-openstack_extras | author:openstack description:Helper classes that utilize the core Puppet Openstack modules
+openstack-github-39-230 | entropy | https://github.com/openstack/entropy | author:openstack description:A framework for Audit/Repair scripts for openstack
+openstack-github-39-231 | python-muranoclient | https://github.com/openstack/python-muranoclient | author:openstack description:Updated May 17, 2016
+openstack-github-38-232 | tacker-specs | https://github.com/openstack/tacker-specs | author:openstack description:Updated May 16, 2016
+openstack-github-38-233 | cookbook-openstack-database | https://github.com/openstack/cookbook-openstack-database | author:openstack description:Chef Cookbook - OpenStack Database as a Service
+openstack-github-38-234 | congress-specs | https://github.com/openstack/congress-specs | author:openstack description:Congress Design Specifications
+openstack-github-38-235 | cookbook-openstack-ops-database | https://github.com/openstack/cookbook-openstack-ops-database | author:openstack description:Chef Cookbook - Support Cookbook for Database
+openstack-github-38-236 | xenapi-os-testing | https://github.com/openstack/xenapi-os-testing | author:openstack description:Scripts to enable running of tempest tests in a nested Xen instance
+openstack-github-38-237 | kite | https://github.com/openstack/kite | author:openstack description:A service for managing and distributing message encryption keys.
+openstack-github-38-238 | oslo.rootwrap | https://github.com/openstack/oslo.rootwrap | author:openstack description:Updated May 9, 2016
+openstack-github-38-239 | zaqar-specs | https://github.com/openstack/zaqar-specs | author:openstack description:Updated May 3, 2016
+openstack-github-38-240 | python-surveilclient | https://github.com/openstack/python-surveilclient | author:openstack description:Updated Oct 17, 2015
+openstack-github-38-241 | python-ganttclient | https://github.com/openstack/python-ganttclient | author:openstack description:Client code for the common scheduler for OpenStack.
+openstack-github-38-242 | compass-adapters | https://github.com/openstack/compass-adapters | author:openstack description:Compass adapter related code and data (chef, cobbler, etc)
+openstack-github-37-243 | mistral-dashboard | https://github.com/openstack/mistral-dashboard | author:openstack description:Mistral Horizon plugin.
+openstack-github-37-244 | puppet-n1k-vsm | https://github.com/openstack/puppet-n1k-vsm | author:openstack description:Foreman Puppet installer for Cisco N1KV Virtual Supervisor Module
+openstack-github-37-245 | python-monascaclient | https://github.com/openstack/python-monascaclient | author:openstack description:Python client for Monasca REST API.
+openstack-github-37-246 | cookbook-openstack-data-processing | https://github.com/openstack/cookbook-openstack-data-processing | author:openstack description:Chef Cookbook - OpenStack Data Processing Service
+openstack-github-37-247 | python-kiteclient | https://github.com/openstack/python-kiteclient | author:openstack description:Python bindings to Kite.
+openstack-github-37-248 | cookbook-openstack-ops-messaging | https://github.com/openstack/cookbook-openstack-ops-messaging | author:openstack description:Chef Cookbook - Support Cookbook for Messaging
+openstack-github-37-249 | compass-web | https://github.com/openstack/compass-web | author:openstack description:A web-based UI consuming the Restful API service provided by Compass
+openstack-github-37-250 | neutron-vpnaas | https://github.com/openstack/neutron-vpnaas | author:openstack description:Virtual private network services for OpenStack Neutron.
+openstack-github-37-251 | xstatic-jquery.bootstrap.wizard | https://github.com/openstack/xstatic-jquery.bootstrap.wizard | author:openstack description:Bootstrap.Wizard jQuery plugin packaged as XStatic.
+openstack-github-37-252 | surveil-specs | https://github.com/openstack/surveil-specs | author:openstack description:Updated Oct 17, 2015
+openstack-github-37-253 | xstatic-angular | https://github.com/openstack/xstatic-angular | author:openstack description:Angular JavaScript library packaged as XStatic.
+openstack-github-37-254 | python-solumclient | https://github.com/openstack/python-solumclient | author:openstack description:Client library to Solum API. See: https://wiki.openstack.org/wiki/Solum
+openstack-github-36-255 | xstatic-jasmine | https://github.com/openstack/xstatic-jasmine | author:openstack description:Jasmine JavaScript library packaged as XStatic.
+openstack-github-36-256 | xstatic-bootstrap-scss | https://github.com/openstack/xstatic-bootstrap-scss | author:openstack description:Bootstrap SCSS library packaged as XStatic.
+openstack-github-36-257 | solum-specs | https://github.com/openstack/solum-specs | author:openstack description:Solum Design Specifications
+openstack-github-36-258 | solum-infra-guestagent | https://github.com/openstack/solum-infra-guestagent | author:openstack description:Guest agent for Solum. See: https://wiki.openstack.org/wiki/Solum
+openstack-github-36-259 | python-magnetodbclient | https://github.com/openstack/python-magnetodbclient | author:openstack description:Python client for MagnetoDB, the key-value database service for OpenStack cloud.
+openstack-github-36-260 | cookbook-openstack-integration-test | https://github.com/openstack/cookbook-openstack-integration-test | author:openstack description:Chef Cookbook - OpenStack Integration Testing
+openstack-github-36-261 | xstatic-bootstrap-datepicker | https://github.com/openstack/xstatic-bootstrap-datepicker | author:openstack description:Bootstrap-Datepicker JavaScript library packaged as XStatic.
+openstack-github-36-262 | xstatic-rickshaw | https://github.com/openstack/xstatic-rickshaw | author:openstack description:Rickshaw JavaScript library packaged as XStatic.
+openstack-github-36-263 | xstatic-jsencrypt | https://github.com/openstack/xstatic-jsencrypt | author:openstack description:JSEncrypt JavaScript library packaged as XStatic.
+openstack-github-36-264 | xstatic-d3 | https://github.com/openstack/xstatic-d3 | author:openstack description:D3 JavaScript library packaged as XStatic.
+openstack-github-36-265 | xstatic-jquery.quicksearch | https://github.com/openstack/xstatic-jquery.quicksearch | author:openstack description:Quicksearch jQuery plugin packaged as XStatic.
+openstack-github-35-266 | python-congressclient | https://github.com/openstack/python-congressclient | author:openstack description:Client for OpenStack Congress
+openstack-github-35-267 | xstatic-angular-cookies | https://github.com/openstack/xstatic-angular-cookies | author:openstack description:Angular-Cookies JavaScript library packaged as XStatic.
+openstack-github-35-268 | xstatic-jquery-migrate | https://github.com/openstack/xstatic-jquery-migrate | author:openstack description:Migrate jQuery plugin packaged as XStatic.
+openstack-github-35-269 | xstatic-jquery.tablesorter | https://github.com/openstack/xstatic-jquery.tablesorter | author:openstack description:Tablesorter jQuery plugin packaged as XStatic.
+openstack-github-35-270 | xstatic-qunit | https://github.com/openstack/xstatic-qunit | author:openstack description:QUnit JavaScript library packaged as XStatic.
+openstack-github-35-271 | xstatic-spin | https://github.com/openstack/xstatic-spin | author:openstack description:Spin JavaScript library packaged as XStatic.
+openstack-github-35-272 | xstatic-angular-mock | https://github.com/openstack/xstatic-angular-mock | author:openstack description:Angular-Mock JavaScript library packaged as XStatic.
+openstack-github-35-273 | xstatic-hogan | https://github.com/openstack/xstatic-hogan | author:openstack description:Hogan JavaScript library packaged as XStatic.
+openstack-github-35-274 | cloud-init | https://github.com/openstack/cloud-init | author:openstack description:Cross-platform instance initialization
+openstack-github-34-275 | openstack-ansible-security | https://github.com/openstack/openstack-ansible-security | author:openstack description:Security Role for OpenStack-Ansible
+openstack-github-33-276 | networking-ovs-dpdk | https://github.com/openstack/networking-ovs-dpdk | author:openstack description:A Collection of Agents and Drivers to support managing DPDK accelerated Open vSwitch with neutron.
+openstack-github-33-277 | vmware-nsx | https://github.com/openstack/vmware-nsx | author:openstack description:A set of Neutron drivers for the VMware NSX.
+openstack-github-33-278 | bifrost | https://github.com/openstack/bifrost | author:openstack description:Ansible roles and playbooks to enable a standalone Ironic install
+openstack-github-33-279 | python-cloudkittyclient | https://github.com/openstack/python-cloudkittyclient | author:openstack description:Python client library for CloudKitty API
+openstack-github-32-280 | networking-ovn | https://github.com/openstack/networking-ovn | author:openstack description:Neutron integration with OVN
+openstack-github-32-281 | group-based-policy | https://github.com/openstack/group-based-policy | author:openstack description:Group Based Policy
+openstack-github-31-282 | networking-odl | https://github.com/openstack/networking-odl | author:openstack description:Neutron drivers for OpenDaylight.
+openstack-github-31-283 | oslo.log | https://github.com/openstack/oslo.log | author:openstack description:Logging library.
+openstack-github-31-284 | fuel-plugins | https://github.com/openstack/fuel-plugins | author:openstack description:Fuel plugins
+openstack-github-30-285 | xstatic-font-awesome | https://github.com/openstack/xstatic-font-awesome | author:openstack description:An icon font for web pages packaged as XStatic.
+openstack-github-30-286 | tosca-parser | https://github.com/openstack/tosca-parser | author:openstack description:Parser for TOSCA Simple Profile in YAML.
+openstack-github-30-287 | api-wg | https://github.com/openstack/api-wg | author:openstack description:API Working Group
+openstack-github-30-288 | fuel-plugin-lma-collector | https://github.com/openstack/fuel-plugin-lma-collector | author:openstack description:Fuel plugin to collect Logging Monitoring and Alerting metrics
+openstack-github-30-289 | os-client-config | https://github.com/openstack/os-client-config | author:openstack description:Unified config handling for client libraries and programs
+openstack-github-30-290 | fuel-plugin-contrail | https://github.com/openstack/fuel-plugin-contrail | author:openstack description:Fuel plugin to allow usage of Сontrail SDN as a networking backend
+openstack-github-29-291 | networking-vsphere | https://github.com/openstack/networking-vsphere | author:openstack description:A set of Neutron drivers and agents to manage vSphere clusters.
+openstack-github-29-292 | xstatic-angular-bootstrap | https://github.com/openstack/xstatic-angular-bootstrap | author:openstack description:Angular Bootstrap JavaScript library packaged as XStatic.
+openstack-github-28-293 | flame | https://github.com/openstack/flame | author:openstack description:Automatic Heat template generation
+openstack-github-28-294 | osops-tools-contrib | https://github.com/openstack/osops-tools-contrib | author:openstack description:Contributed Tools for OpenStack Operators
+openstack-github-28-295 | networking-cisco | https://github.com/openstack/networking-cisco | author:openstack description:Cisco Vendor Code for Neutron
+openstack-github-28-296 | xstatic-angular-sanitize | https://github.com/openstack/xstatic-angular-sanitize | author:openstack description:Angular Sanitize JavaScript library packaged as XStatic.
+openstack-github-28-297 | app-catalog | https://github.com/openstack/app-catalog | author:openstack description:Application catalog for OpenStack
+openstack-github-28-298 | python-fuelclient | https://github.com/openstack/python-fuelclient | author:openstack description:Client for Fuel.
+openstack-github-28-299 | osops-tools-generic | https://github.com/openstack/osops-tools-generic | author:openstack description:Tools and Scripts for OpenStack Operators
+openstack-github-27-300 | watcher | https://github.com/openstack/watcher | author:openstack description:Resource optimization service for OpenStack.
+openstack-github-27-301 | tap-as-a-service | https://github.com/openstack/tap-as-a-service | author:openstack description:Tap-as-a-Service is a project to introduce the functionality of port mirroring in OpenStack Neutron provisioned networks.
+openstack-github-27-302 | ha-guide | https://github.com/openstack/ha-guide | author:openstack description:OpenStack High Availability Guide
+openstack-github-26-303 | namos | https://github.com/openstack/namos | author:openstack description:Device and Service manager
+openstack-github-26-304 | anchor | https://github.com/openstack/anchor | author:openstack description:An Ephemeral PKI system that can act as a trust anchor for OpenStack PKI operations
+openstack-github-26-305 | fuel-plugin-external-zabbix | https://github.com/openstack/fuel-plugin-external-zabbix | author:openstack description:Fuel plugin for external Zabbix integration
+openstack-github-25-306 | python-manilaclient | https://github.com/openstack/python-manilaclient | author:openstack description:Updated May 17, 2016
+openstack-github-25-307 | os-net-config | https://github.com/openstack/os-net-config | author:openstack description:Host network configuration tool
+openstack-github-25-308 | yaql | https://github.com/openstack/yaql | author:openstack description:Yet another query language
+openstack-github-25-309 | tempest-lib | https://github.com/openstack/tempest-lib | author:openstack description:A library to assist in creating functional or integrated test suites for OpenStack projects.
+openstack-github-25-310 | puppet-openstack-integration | https://github.com/openstack/puppet-openstack-integration | author:openstack description:Collection of scripts and manifests for module testing
+openstack-github-24-311 | castellan | https://github.com/openstack/castellan | author:openstack description:Generic Key Manager interface for OpenStack
+openstack-github-24-312 | ec2-driver | https://github.com/openstack/ec2-driver | author:openstack description:Compute driver that uses BOTO API to utilize EC2.
+openstack-github-24-313 | tripleo-puppet-elements | https://github.com/openstack/tripleo-puppet-elements | author:openstack description:Puppet elements for deployment of OpenStack
+openstack-github-24-314 | fuel-plugin-elasticsearch-kibana | https://github.com/openstack/fuel-plugin-elasticsearch-kibana | author:openstack description:Integrate Elasticsearch and Kibana with Fuel
+openstack-github-24-315 | fuel-stats | https://github.com/openstack/fuel-stats | author:openstack description:Updated May 4, 2016
+openstack-github-23-316 | kloudbuster | https://github.com/openstack/kloudbuster | author:openstack description:A tool to load OpenStack clouds end to end in both control plane and data plane.
+openstack-github-23-317 | networking-brocade | https://github.com/openstack/networking-brocade | author:openstack description:Brocade plugins/drivers for ML2 and Service Plugins
+openstack-github-23-318 | python-magnumclient | https://github.com/openstack/python-magnumclient | author:openstack description:Python client for containers service
+openstack-github-22-319 | fuel-plugin-neutron-vpnaas | https://github.com/openstack/fuel-plugin-neutron-vpnaas | author:openstack description:Fuel plugin for VPNaaS for Neutron
+openstack-github-22-320 | cue | https://github.com/openstack/cue | author:openstack description:Message Broker provisioning service for OpenStack.
+openstack-github-22-321 | fuel-dev-tools | https://github.com/openstack/fuel-dev-tools | author:openstack description:Tools that make it easier to develop and work with Fuel.
+openstack-github-22-322 | stacktach-sandbox | https://github.com/openstack/stacktach-sandbox | author:openstack description:DevStack-like environment for StackTach.v3
+openstack-github-22-323 | shaker | https://github.com/openstack/shaker | author:openstack description:Distributed data-plane performance testing tool
+openstack-github-22-324 | merlin | https://github.com/openstack/merlin | author:openstack description:Framework for building UIs for OpenStack projects dealing with complex input data
+openstack-github-22-325 | astara | https://github.com/openstack/astara | author:openstack description:It ties the room together
+openstack-github-22-326 | fuel-plugin-neutron-fwaas | https://github.com/openstack/fuel-plugin-neutron-fwaas | author:openstack description:Fuel plugin for FWaaS for Neutron
+openstack-github-21-327 | senlin | https://github.com/openstack/senlin | author:openstack description:Clustering service for managing homogeneous objects in OpenStack
+openstack-github-21-328 | python-group-based-policy-client | https://github.com/openstack/python-group-based-policy-client | author:openstack description:Client for OpenStack Group Based Policy
+openstack-github-21-329 | networking-ofagent | https://github.com/openstack/networking-ofagent | author:openstack description:Neutron ofagent driver and its agent.
+openstack-github-21-330 | keystoneauth-saml2 | https://github.com/openstack/keystoneauth-saml2 | author:openstack description:Federation authentication plugins for OpenStack clients.
+openstack-github-21-331 | networking-powervm | https://github.com/openstack/networking-powervm | author:openstack description:ML2 compatible PowerVM Shared Ethernet Adapter agent for OpenStack Neutron
+openstack-github-21-332 | nova-powervm | https://github.com/openstack/nova-powervm | author:openstack description:PowerVM virtualization driver for OpenStack Nova
+openstack-github-21-333 | cerberus | https://github.com/openstack/cerberus | author:openstack description:Cerberus security component
+openstack-github-21-334 | steth | https://github.com/openstack/steth | author:openstack description:Networking Debug Tool for OpenStack
+openstack-github-21-335 | fuel-plugin-cinder-netapp | https://github.com/openstack/fuel-plugin-cinder-netapp | author:openstack description:Fuel plugin for Cinder and NetApp integration
+openstack-github-21-336 | python-rackclient | https://github.com/openstack/python-rackclient | author:openstack description:Client library for RACK API
+openstack-github-21-337 | stacktach-winchester | https://github.com/openstack/stacktach-winchester | author:openstack description:An notification event processing library based on persistent streams.
+openstack-github-21-338 | networking-l2gw | https://github.com/openstack/networking-l2gw | author:openstack description:API's and implementations to support L2 Gateways in Neutron.
+openstack-github-21-339 | radar | https://github.com/openstack/radar | author:openstack description:dashboard for ci reporting
+openstack-github-20-340 | puppet-tripleo | https://github.com/openstack/puppet-tripleo | author:openstack description:Lightweight composition layer for Puppet TripleO
+openstack-github-20-341 | stacktach-notigen | https://github.com/openstack/stacktach-notigen | author:openstack description:OpenStack-like notification generator/simulator.
+openstack-github-20-342 | fuel-plugin-influxdb-grafana | https://github.com/openstack/fuel-plugin-influxdb-grafana | author:openstack description:Fuel plugin to manage InfluxDB and Grafana
+openstack-github-20-343 | openstack-specs | https://github.com/openstack/openstack-specs | author:openstack description:OpenStack wide specs, run by the TC
+openstack-github-20-344 | group-based-policy-specs | https://github.com/openstack/group-based-policy-specs | author:openstack description:Group Based Policy Design Specifications
+openstack-github-20-345 | os-brick | https://github.com/openstack/os-brick | author:openstack description:Volume discovery and local storage management lib
+openstack-github-20-346 | syntribos | https://github.com/openstack/syntribos | author:openstack description:Python API security testing tool from OpenStack Security Group
+openstack-github-20-347 | trove-specs | https://github.com/openstack/trove-specs | author:openstack description:Design Specifications for the Trove project
+openstack-github-20-348 | puppet-manila | https://github.com/openstack/puppet-manila | author:openstack description:StackForge Manila Puppet Module
+openstack-github-20-349 | debtcollector | https://github.com/openstack/debtcollector | author:openstack description:A collection of python patterns that help you collect your technical debt in a non-destructive manner
+openstack-github-19-350 | networking-bgpvpn | https://github.com/openstack/networking-bgpvpn | author:openstack description:API's and framework to attach bgp vpn to Neutron networks
+openstack-github-19-351 | networking-midonet | https://github.com/openstack/networking-midonet | author:openstack description:Midonet Neutron Plugin
+openstack-github-19-352 | networking-plumgrid | https://github.com/openstack/networking-plumgrid | author:openstack description:PLUMgrid driver for OpenStack Neutron
+openstack-github-19-353 | group-based-policy-ui | https://github.com/openstack/group-based-policy-ui | author:openstack description:Group Based Policy UI
+openstack-github-19-354 | keystoneauth | https://github.com/openstack/keystoneauth | author:openstack description:OpenStack Identity Authentication Library
+openstack-github-19-355 | xstatic-angular-fileupload | https://github.com/openstack/xstatic-angular-fileupload | author:openstack description:Angular-FileUpload JavaScript library packaged as XStatic.
+openstack-github-19-356 | stacktach-timex | https://github.com/openstack/stacktach-timex | author:openstack description:A time expressions library implementing a mini-language for manipulating datetimes.
+openstack-github-19-357 | python-keystoneclient-kerberos | https://github.com/openstack/python-keystoneclient-kerberos | author:openstack description:Kerberos authentication plugins for OpenStack clients.
+openstack-github-19-358 | fuel-plugin-neutron-lbaas | https://github.com/openstack/fuel-plugin-neutron-lbaas | author:openstack description:Fuel plugin for LBaaS for Neutron
+openstack-github-19-359 | ossa | https://github.com/openstack/ossa | author:openstack description:OpenStack Security Advisories
+openstack-github-19-360 | monasca-statsd | https://github.com/openstack/monasca-statsd | author:openstack description:Python Statsd library for sending statsd messages via the Monasca Agent
+openstack-github-19-361 | puppet-tuskar | https://github.com/openstack/puppet-tuskar | author:openstack description:OpenStack Tuskar Puppet Module
+openstack-github-19-362 | ceilometer-powervm | https://github.com/openstack/ceilometer-powervm | author:openstack description:PowerVM compute agent plugins for OpenStack Ceilometer
+openstack-github-19-363 | ironic-inspector | https://github.com/openstack/ironic-inspector | author:openstack description:Hardware properties discovery daemon for OpenStack Ironic
+openstack-github-19-364 | oslo.context | https://github.com/openstack/oslo.context | author:openstack description:OpenStack Context library
+openstack-github-19-365 | ceilometermiddleware | https://github.com/openstack/ceilometermiddleware | author:openstack description:OpenStack Telemetry (Ceilometer) Middleware
+openstack-github-19-366 | automaton | https://github.com/openstack/automaton | author:openstack description:Friendly state machines for python.
+openstack-github-19-367 | networking-edge-vpn | https://github.com/openstack/networking-edge-vpn | author:openstack description:A framework to create an edge VPN service and bridge Neutron networks to it.
+openstack-github-18-368 | fuel-plugin-external-emc | https://github.com/openstack/fuel-plugin-external-emc | author:openstack description:Fuel plugin for Cinder with EMC integration
+openstack-github-18-369 | stacktach-simport | https://github.com/openstack/stacktach-simport | author:openstack description:Simple import library for Python (not entry-point based)
+openstack-github-18-370 | stacktach-klugman | https://github.com/openstack/stacktach-klugman | author:openstack description:Cmdline tool and client library for StackTach.v3
+openstack-github-18-371 | vitrage | https://github.com/openstack/vitrage | author:openstack description:OpenStack RCA (Root Cause Analysis) Engine
+openstack-github-18-372 | stacktach-quincy | https://github.com/openstack/stacktach-quincy | author:openstack description:REST interface to StackTach.v3
+openstack-github-18-373 | training-labs | https://github.com/openstack/training-labs | author:openstack description:Deploy multi node OpenStack on Virtual Machines.
+openstack-github-18-374 | puppet-murano | https://github.com/openstack/puppet-murano | author:openstack description:StackForge Murano Puppet Module
+openstack-github-18-375 | cognitive | https://github.com/openstack/cognitive | author:openstack description:Machine Learning as a Service
+openstack-github-18-376 | networking-arista | https://github.com/openstack/networking-arista | author:openstack description:Arista drivers for ML2 and L3 Service Plugin
+openstack-github-18-377 | puppet-gnocchi | https://github.com/openstack/puppet-gnocchi | author:openstack description:OpenStack Gnocchi Puppet Module
+openstack-github-18-378 | distil | https://github.com/openstack/distil | author:openstack description:Rating Service for OpenStack
+openstack-github-18-379 | bansho | https://github.com/openstack/bansho | author:openstack description:Web interface for Surveil
+openstack-github-18-380 | puppet-monasca | https://github.com/openstack/puppet-monasca | author:openstack description:StackForge Monasca Puppet Module
+openstack-github-18-381 | stacktach-stackdistiller | https://github.com/openstack/stacktach-stackdistiller | author:openstack description:A data extraction and transformation library for OpenStack notifications.
+openstack-github-18-382 | stacktach-shoebox | https://github.com/openstack/stacktach-shoebox | author:openstack description:Binary data archiving library - supports uploading to object storage.
+openstack-github-18-383 | murano-specs | https://github.com/openstack/murano-specs | author:openstack description:Murano Design Specifications
+openstack-github-18-384 | fuel-agent | https://github.com/openstack/fuel-agent | author:openstack description:Fuel Agent
+openstack-github-18-385 | oslo.policy | https://github.com/openstack/oslo.policy | author:openstack description:Updated May 17, 2016
+openstack-github-18-386 | openstackdocstheme | https://github.com/openstack/openstackdocstheme | author:openstack description:Sphinx theme for RST-sourced documentation published to docs.openstack.org
+openstack-github-18-387 | stacktach-notification-utils | https://github.com/openstack/stacktach-notification-utils | author:openstack description:Utility library for working with Openstack notifications.
+openstack-github-18-388 | stacktach-quince | https://github.com/openstack/stacktach-quince | author:openstack description:Quincy-compliant API implemenation for StackTach.v3. Works with Winchester.
+openstack-github-18-389 | group-based-policy-automation | https://github.com/openstack/group-based-policy-automation | author:openstack description:Group Based Policy Automation
+openstack-github-17-390 | python-cueclient | https://github.com/openstack/python-cueclient | author:openstack description:Updated May 17, 2016
+openstack-github-17-391 | networking-nec | https://github.com/openstack/networking-nec | author:openstack description:Neutron NEC plugins/drivers
+openstack-github-17-392 | fuel-plugin-ha-fencing | https://github.com/openstack/fuel-plugin-ha-fencing | author:openstack description:Fuel plugin for HA fencing for Pacemaker cluster
+openstack-github-17-393 | faafo | https://github.com/openstack/faafo | author:openstack description:First App Application for OpenStack
+openstack-github-17-394 | networking-mlnx | https://github.com/openstack/networking-mlnx | author:openstack description:Mellanox driver and agent for ML2.
+openstack-github-17-395 | app-catalog-ui | https://github.com/openstack/app-catalog-ui | author:openstack description:UI component for application catalog
+openstack-github-17-396 | fuel-plugin-external-glusterfs | https://github.com/openstack/fuel-plugin-external-glusterfs | author:openstack description:Fuel plugin for external GlusterFS for Cinder
+openstack-github-17-397 | compass-specs | https://github.com/openstack/compass-specs | author:openstack description:Compass Specs and Design
+openstack-github-17-398 | designate-msdnsagent | https://github.com/openstack/designate-msdnsagent | author:openstack description:Agent for using Microsoft DNS Server with Designate
+openstack-github-17-399 | networking-hyperv | https://github.com/openstack/networking-hyperv | author:openstack description:Hyper-V L2 Agent and drivers for ML2.
+openstack-github-17-400 | magnetodb-specs | https://github.com/openstack/magnetodb-specs | author:openstack description:Design Specifications for MagnetoDB project
+openstack-github-17-401 | cookbook-openstack-bare-metal | https://github.com/openstack/cookbook-openstack-bare-metal | author:openstack description:Chef Cookbook - OpenStack Bare Metal
+openstack-github-17-402 | defcore | https://github.com/openstack/defcore | author:openstack description:Data and documentation maintained by the DefCore Board Working Group
+openstack-github-17-403 | oslo.versionedobjects | https://github.com/openstack/oslo.versionedobjects | author:openstack description:OpenStack versioned objects library
+openstack-github-16-404 | astara-appliance | https://github.com/openstack/astara-appliance | author:openstack description:The router appliance for Akanda
+openstack-github-16-405 | openstack-ansible-specs | https://github.com/openstack/openstack-ansible-specs | author:openstack description:Design Specifications for os-ansible-deployment
+openstack-github-16-406 | tripleo-common | https://github.com/openstack/tripleo-common | author:openstack description:A Python library for code common for TripleO CLI and Tuskar UI.
+openstack-github-16-407 | terracotta | https://github.com/openstack/terracotta | author:openstack description:Dynamic resource scheduling service for OpenStack cloud.
+openstack-github-16-408 | aodh | https://github.com/openstack/aodh | author:openstack description:OpenStack Telemetry (Ceilometer) Alarming
+openstack-github-16-409 | storlets | https://github.com/openstack/storlets | author:openstack description:Middleware and Compute Engine for an OpenStack Swift compute framework that runs compute within a Swift cluster
+openstack-github-16-410 | designate-dashboard | https://github.com/openstack/designate-dashboard | author:openstack description:OpenStack DNS As A Service (Designate) Horizon Plugin
+openstack-github-16-411 | proliantutils | https://github.com/openstack/proliantutils | author:openstack description:Utility library for managing HP Proliant servers (used in Ironic iLO drivers).
+openstack-github-16-412 | os-testr | https://github.com/openstack/os-testr | author:openstack description:OpenStack tooling for interacting with testr
+openstack-github-16-413 | xstatic-angular-lrdragndrop | https://github.com/openstack/xstatic-angular-lrdragndrop | author:openstack description:Angular IrDragNDrop JavaScript library packaged as XStatic.
+openstack-github-16-414 | xstatic-magic-search | https://github.com/openstack/xstatic-magic-search | author:openstack description:AngularJS widget that provides faceted and text search
+openstack-github-15-415 | python-senlinclient | https://github.com/openstack/python-senlinclient | author:openstack description:Client library for Senlin API
+openstack-github-15-416 | compass-install | https://github.com/openstack/compass-install | author:openstack description:Installation of Compass in Different Formats
+openstack-github-15-417 | nerd-reviewer | https://github.com/openstack/nerd-reviewer | author:openstack description:Nerd Reviewer bot reviews patches and checks that they pass common project rules e.g. unit test coverage, max amount of loc, well written commit message... So core reviews can concentrate on other more important stuff.
+openstack-github-15-418 | devstack-plugin-glusterfs | https://github.com/openstack/devstack-plugin-glusterfs | author:openstack description:Devstack plugin to configure GlusterFS backend.
+openstack-github-15-419 | networking-bigswitch | https://github.com/openstack/networking-bigswitch | author:openstack description:Big Switch Networks plugins and drivers for the networking project
+openstack-github-15-420 | fuel-plugin-cisco-aci | https://github.com/openstack/fuel-plugin-cisco-aci | author:openstack description:Fuel plugin to enable neutron to work with Cisco ACI/GBP
+openstack-github-15-421 | openstack-health | https://github.com/openstack/openstack-health | author:openstack description:OpenStack Health Dashboard
+openstack-github-15-422 | ooi | https://github.com/openstack/ooi | author:openstack description:OOI is an implementation the Open Cloud Computing Interface (OCCI) for OpenStack.
+openstack-github-15-423 | searchlight | https://github.com/openstack/searchlight | author:openstack description:OpenStack Search (Searchlight)
+openstack-github-15-424 | fuel-plugin-mellanox | https://github.com/openstack/fuel-plugin-mellanox | author:openstack description:Fuel plugin for Mellanox support
+openstack-github-15-425 | cloudv-ostf-adapter | https://github.com/openstack/cloudv-ostf-adapter | author:openstack description:Fuel-independent OSTF adapter for Cloud Validation
+openstack-github-15-426 | telcowg-usecases | https://github.com/openstack/telcowg-usecases | author:openstack description:Use case repo for Telco Working Group
+openstack-github-15-427 | kiloeyes | https://github.com/openstack/kiloeyes | author:openstack description:A monitoring project for OpenStack Cloud
+openstack-github-15-428 | xstatic-angular-smart-table | https://github.com/openstack/xstatic-angular-smart-table | author:openstack description:Angular Smart-table JavaScript library packaged as XStatic.
+openstack-github-14-429 | fuel-plugin-lma-infrastructure-alerting | https://github.com/openstack/fuel-plugin-lma-infrastructure-alerting | author:openstack description:The LMA Infrastructure Alerting plugin installs necessary tools to provide the alerting functionality of the LMA toolchain
+openstack-github-14-430 | fuel-plugin-calico | https://github.com/openstack/fuel-plugin-calico | author:openstack description:Calico provides Layer 3 Virtual Networking for Highly Scalable Data Centers
+openstack-github-14-431 | astara-neutron | https://github.com/openstack/astara-neutron | author:openstack description:Neutron API extensions for Akanda
+openstack-github-14-432 | devstack-plugin-sheepdog | https://github.com/openstack/devstack-plugin-sheepdog | author:openstack description:Devstack plugin to configure Sheepdog backend.
+openstack-github-14-433 | osops-tools-monitoring | https://github.com/openstack/osops-tools-monitoring | author:openstack description:Monitoring for OpenStack Operators
+openstack-github-14-434 | cloudpulse | https://github.com/openstack/cloudpulse | author:openstack description:A Health-Checking service for OpenStack deployments.
+openstack-github-14-435 | instack-undercloud | https://github.com/openstack/instack-undercloud | author:openstack description:A utility to run diskimage-builder undercloud elements on a running host
+openstack-github-14-436 | networking-onos | https://github.com/openstack/networking-onos | author:openstack description:Neutron drivers for Open Network Operating System.
+openstack-github-14-437 | fuel-plugin-midonet | https://github.com/openstack/fuel-plugin-midonet | author:openstack description:Fuel plugin for MidoNet SDN as a networking backend
+openstack-github-14-438 | fuel-plugin-nova-nfs | https://github.com/openstack/fuel-plugin-nova-nfs | author:openstack description:Fuel plugin for nfs as storage backend for ephemeral volumes (nova)
+openstack-github-14-439 | third-party-ci-tools | https://github.com/openstack/third-party-ci-tools | author:openstack description:Repository for third party continuous integration teams to share tools, configurations, plug-ins and documents.
+openstack-github-14-440 | fuel-plugin-opendaylight | https://github.com/openstack/fuel-plugin-opendaylight | author:openstack description:Fuel plugin for OpenDaylight integration
+openstack-github-14-441 | fuel-nailgun-agent | https://github.com/openstack/fuel-nailgun-agent | author:openstack description:Node discovery agent for Fuel
+openstack-github-13-442 | oslo.service | https://github.com/openstack/oslo.service | author:openstack description:Library for running OpenStack services
+openstack-github-13-443 | tacker-horizon | https://github.com/openstack/tacker-horizon | author:openstack description:Horizon UI for Tacker VNF Manager
+openstack-github-13-444 | puppet-modulesync-configs | https://github.com/openstack/puppet-modulesync-configs | author:openstack description:Modulesync configuration for stackforge puppet modules
+openstack-github-13-445 | ekko | https://github.com/openstack/ekko | author:openstack description:Incremental block-based backup to object storage
+openstack-github-13-446 | futurist | https://github.com/openstack/futurist | author:openstack description:A collection of async functionality and additions from the future.
+openstack-github-13-447 | python-tripleoclient | https://github.com/openstack/python-tripleoclient | author:openstack description:python utility to manage a tripleo based cloud
+openstack-github-13-448 | ironic-lib | https://github.com/openstack/ironic-lib | author:openstack description:A python library of common ironic utilities.
+openstack-github-13-449 | freezer-web-ui | https://github.com/openstack/freezer-web-ui | author:openstack description:Horizon Web interface for Freezer backup, restore and disaster recovery platform
+openstack-github-13-450 | fuel-mirror | https://github.com/openstack/fuel-mirror | author:openstack description:Tools for working with packages mirrors
+openstack-github-13-451 | releases | https://github.com/openstack/releases | author:openstack description:Release requests and history tracking
+openstack-github-12-452 | cerberus-dashboard | https://github.com/openstack/cerberus-dashboard | author:openstack description:Cerberus Horizon Plugin
+openstack-github-12-453 | reno | https://github.com/openstack/reno | author:openstack description:Release notes management tool
+openstack-github-12-454 | astara-horizon | https://github.com/openstack/astara-horizon | author:openstack description:akanda rug horizon extension
+openstack-github-12-455 | shotgun | https://github.com/openstack/shotgun | author:openstack description:Tool for collecting diagnostic snapshot from nodes (logs, databases, etc).
+openstack-github-12-456 | compute-hyperv | https://github.com/openstack/compute-hyperv | author:openstack description:Nova Hyper-V Compute Driver
+openstack-github-12-457 | monasca-log-api | https://github.com/openstack/monasca-log-api | author:openstack description:Monasca Log REST API
+openstack-github-12-458 | networking-sfc | https://github.com/openstack/networking-sfc | author:openstack description:API's and implementations to support Service Function Chaining in Neutron.
+openstack-github-12-459 | fuel-plugin-detach-keystone | https://github.com/openstack/fuel-plugin-detach-keystone | author:openstack description:Fuel plugin to detach Keystone from controller role
+openstack-github-12-460 | networking-bagpipe | https://github.com/openstack/networking-bagpipe | author:openstack description:Neutron agent and drivers for BaGPipe-based BGP VPNs
+openstack-github-12-461 | fuel-upgrade | https://github.com/openstack/fuel-upgrade | author:openstack description:Fuel master node upgrade system
+openstack-github-12-462 | coreos-image-builder | https://github.com/openstack/coreos-image-builder | author:openstack description:A framework for building CoreOS Ramdisk
+openstack-github-12-463 | python-gnocchiclient | https://github.com/openstack/python-gnocchiclient | author:openstack description:Gnocchi Client
+openstack-github-12-464 | fuel-plugin-openbook | https://github.com/openstack/fuel-plugin-openbook | author:openstack description:Fuel plugin for Openbook project integration
+openstack-github-12-465 | fuel-plugin-glance-nfs | https://github.com/openstack/fuel-plugin-glance-nfs | author:openstack description:Fuel plugin for nfs as storage backend for images (glance)
+openstack-github-11-466 | sticks-dashboard | https://github.com/openstack/sticks-dashboard | author:openstack description:Sticks Horizon Plugin
+openstack-github-11-467 | oslo.cache | https://github.com/openstack/oslo.cache | author:openstack description:An oslo.config enabled dogpile.cache.
+openstack-github-11-468 | puppet-mistral | https://github.com/openstack/puppet-mistral | author:openstack description:OpenStack Mistral Puppet Module
+openstack-github-11-469 | aeromancer | https://github.com/openstack/aeromancer | author:openstack description:OpenStack Source Explorer
+openstack-github-11-470 | python-dracclient | https://github.com/openstack/python-dracclient | author:openstack description:Library for managing machines with Dell iDRAC cards
+openstack-github-11-471 | freezer-api | https://github.com/openstack/freezer-api | author:openstack description:REST API interface for Freezer backup, restore and disaster recovery platform
+openstack-github-11-472 | nova-zvm-virt-driver | https://github.com/openstack/nova-zvm-virt-driver | author:openstack description:Implementation of Nova virtulization driver for zVM.
+openstack-github-11-473 | magnum-ui | https://github.com/openstack/magnum-ui | author:openstack description:The UI component for Magnum
+openstack-github-11-474 | sticks | https://github.com/openstack/sticks | author:openstack description:Cerberus ticket manager plugin
+openstack-github-11-475 | fuel-plugin-detach-database | https://github.com/openstack/fuel-plugin-detach-database | author:openstack description:Fuel plugin to detach database from controller role
+openstack-github-11-476 | cathead | https://github.com/openstack/cathead | author:openstack description:Certificate monitoring service
+openstack-github-11-477 | python-cerberusclient | https://github.com/openstack/python-cerberusclient | author:openstack description:Python client library for Cerberus API
+openstack-github-11-478 | networking-6wind | https://github.com/openstack/networking-6wind | author:openstack description:Neutron support for fast path stack
+openstack-github-11-479 | python-sticksclient | https://github.com/openstack/python-sticksclient | author:openstack description:Python client library for sticks API
+openstack-github-11-480 | puppet-setproxy | https://github.com/openstack/puppet-setproxy | author:openstack description:Generic Set proxy Module
+openstack-github-11-481 | fuel-plugin-tls | https://github.com/openstack/fuel-plugin-tls | author:openstack description:Fuel plugin to secure openstack using the Transport Layer Security (TLS) protocol
+openstack-github-11-482 | drbd-devstack | https://github.com/openstack/drbd-devstack | author:openstack description:Devstack plugin to configure the DRBD backend.
+openstack-github-11-483 | osops-tools-logging | https://github.com/openstack/osops-tools-logging | author:openstack description:Logging Tools for OpenStack Operators
+openstack-github-11-484 | puppet-autossh | https://github.com/openstack/puppet-autossh | author:openstack description:Autossh Puppet Module
+openstack-github-11-485 | fuel-plugin-ironic | https://github.com/openstack/fuel-plugin-ironic | author:openstack description:Fuel plugin for Ironic integration
+openstack-github-11-486 | cue-dashboard | https://github.com/openstack/cue-dashboard | author:openstack description:Horizon plugin for Cue.
+openstack-github-11-487 | kolla-mesos | https://github.com/openstack/kolla-mesos | author:openstack description:Kolla-Mesos provides mesos deployment for Kolla containers
+openstack-github-11-488 | fuel-plugin-dbaas-trove | https://github.com/openstack/fuel-plugin-dbaas-trove | author:openstack description:Fuel plugin which enables option to deploy Trove
+openstack-github-11-489 | manila-ui | https://github.com/openstack/manila-ui | author:openstack description:The UI component for Manila
+openstack-github-11-490 | fuel-octane | https://github.com/openstack/fuel-octane | author:openstack description:Tools to upgrade OpenStack cloud managed by the Fuel installer.
+openstack-github-11-491 | tripleo-docs | https://github.com/openstack/tripleo-docs | author:openstack description:Documentation for TripleO
+openstack-github-11-492 | python-watcherclient | https://github.com/openstack/python-watcherclient | author:openstack description:Client for resource optimization service for OpenStack.
+openstack-github-10-493 | fuel-plugin-nsxv | https://github.com/openstack/fuel-plugin-nsxv | author:openstack description:Fuel plugin for NSX-V integration
+openstack-github-10-494 | fuel-plugin-solidfire-cinder | https://github.com/openstack/fuel-plugin-solidfire-cinder | author:openstack description:Fuel plugin for SolidFire with Cinder integration
+openstack-github-10-495 | neutron-lbaas-dashboard | https://github.com/openstack/neutron-lbaas-dashboard | author:openstack description:Horizon UI support for Neutron LBaaS
+openstack-github-10-496 | networking-zvm | https://github.com/openstack/networking-zvm | author:openstack description:Implements zVM ML2 mechanism driver and zVM neutron agent for OpenStack Neutron.
+openstack-github-10-497 | swauth | https://github.com/openstack/swauth | author:openstack description:An alternative authentication system for Swift
+openstack-github-10-498 | network-checker | https://github.com/openstack/network-checker | author:openstack description:Network connectivity health check tool.
+openstack-github-10-499 | networking-infoblox | https://github.com/openstack/networking-infoblox | author:openstack description:Infoblox Neutron DDI
+openstack-github-10-500 | python-cloudpulseclient | https://github.com/openstack/python-cloudpulseclient | author:openstack description:Python client library for CloudPulse
+openstack-github-10-501 | puppet-openstack-cookiecutter | https://github.com/openstack/puppet-openstack-cookiecutter | author:openstack description:Cookiecutter template for a compliant Openstack puppet-modules
+openstack-github-10-502 | fuel-menu | https://github.com/openstack/fuel-menu | author:openstack description:Urwid-based console user interface to configure Fuel master node.
+openstack-github-10-503 | fuel-plugin-zabbix-snmptrapd | https://github.com/openstack/fuel-plugin-zabbix-snmptrapd | author:openstack description:Fuel plugin for Zabbix snmptrapd integration
+openstack-github-10-504 | fuel-plugin-availability-zones | https://github.com/openstack/fuel-plugin-availability-zones | author:openstack description:Fuel plugin to manage availability zones
+openstack-github-10-505 | openstack-user-stories | https://github.com/openstack/openstack-user-stories | author:openstack description:OpenStack User Stories Submitted to Product WG
+openstack-github-10-506 | fuel-ui | https://github.com/openstack/fuel-ui | author:openstack description:Fuel Web UI
+openstack-github-10-507 | instack | https://github.com/openstack/instack | author:openstack description:A utility to run diskimage-builder elements in place on a running host
+openstack-github-10-508 | fuel-plugin-ldap | https://github.com/openstack/fuel-plugin-ldap | author:openstack description:Fuel plugin which allows to use LDAP as an authentication backend
+openstack-github-10-509 | puppet-barbican | https://github.com/openstack/puppet-barbican | author:openstack description:OpenStack Barbican Puppet Module
+openstack-github-10-510 | senlin-dashboard | https://github.com/openstack/senlin-dashboard | author:openstack description:The UI component for Senlin
+openstack-github-10-511 | puppet-zaqar | https://github.com/openstack/puppet-zaqar | author:openstack description:OpenStack Zaqar Puppet Module.
+openstack-github-10-512 | python-cognitiveclient | https://github.com/openstack/python-cognitiveclient | author:openstack description:Python client library for Cognitive
+openstack-github-10-513 | xstatic-bootswatch | https://github.com/openstack/xstatic-bootswatch | author:openstack description:Bootswatch CSS library packaged as XStatic.
+openstack-github-10-514 | kolla-kubernetes | https://github.com/openstack/kolla-kubernetes | author:openstack description:Kubernetes deployment of the Kolla containers
+openstack-github-10-515 | fuel-plugin-scaleio | https://github.com/openstack/fuel-plugin-scaleio | author:openstack description:Fuel plugin for ScaleIO storage backend integration
+openstack-github-10-516 | networking-fujitsu | https://github.com/openstack/networking-fujitsu | author:openstack description:Fujitsu Neutron Plugin
+openstack-github-9-517 | ops-tags-team | https://github.com/openstack/ops-tags-team | author:openstack description:Work of the User Committee's Ops Tags Team.
+openstack-github-9-518 | oslo.reports | https://github.com/openstack/oslo.reports | author:openstack description:OpenStack library for creating Guru Meditation Reports and other reports
+openstack-github-9-519 | kingbird | https://github.com/openstack/kingbird | author:openstack description:Centralised service for multi-region deployments.
+openstack-github-9-520 | kosmos-specs | https://github.com/openstack/kosmos-specs | author:openstack description:Global Load Balancing Service (Kosmos) Specifications
+openstack-github-9-521 | fuel-plugin-swiftstack | https://github.com/openstack/fuel-plugin-swiftstack | author:openstack description:Fuel plugin to allow integration of external SwiftStack Swift cluster
+openstack-github-9-522 | vitrage-dashboard | https://github.com/openstack/vitrage-dashboard | author:openstack description:Vitrage UI Dashboard
+openstack-github-9-523 | python-oneviewclient | https://github.com/openstack/python-oneviewclient | author:openstack description:Python client for HP OneView.
+openstack-github-9-524 | devstack-plugin-hdfs | https://github.com/openstack/devstack-plugin-hdfs | author:openstack description:Devstack plugin to configure HDFS backend.
+openstack-github-9-525 | fuel-plugin-vmware-dvs | https://github.com/openstack/fuel-plugin-vmware-dvs | author:openstack description:Fuel plugin for VMware DVS integration
+openstack-github-9-526 | mox3 | https://github.com/openstack/mox3 | author:openstack description:Port of mox library to python 3
+openstack-github-9-527 | fuel-plugin-bigswitch | https://github.com/openstack/fuel-plugin-bigswitch | author:openstack description:Fuel plugin for BigSwitch Neutron ML2 integration
+openstack-github-9-528 | django-openstack-auth-kerberos | https://github.com/openstack/django-openstack-auth-kerberos | author:openstack description:Kerberos support for django-openstack-auth
+openstack-github-9-529 | manila-image-elements | https://github.com/openstack/manila-image-elements | author:openstack description:Automated way to build a bootable linux image for use by the Manila generic driver.
+openstack-github-9-530 | xstatic-angular-gettext | https://github.com/openstack/xstatic-angular-gettext | author:openstack description:Angular-Gettext JavaScript library packaged as XStatic.
+openstack-github-9-531 | fuel-plugin-vxlan | https://github.com/openstack/fuel-plugin-vxlan | author:openstack description:Fuel plugin for Vxlan for Neutron
+openstack-github-9-532 | osops-example-configs | https://github.com/openstack/osops-example-configs | author:openstack description:Example Configurations for OpenStack Operators
+openstack-github-9-533 | fuel-plugin-zabbix-monitoring-extreme-networks | https://github.com/openstack/fuel-plugin-zabbix-monitoring-extreme-networks | author:openstack description:Fuel plugin for Zabbix monitoring extreme networks integration
+openstack-github-9-534 | puppet-surveil | https://github.com/openstack/puppet-surveil | author:openstack description:Puppet Surveil Module
+openstack-github-9-535 | horizon-cisco-ui | https://github.com/openstack/horizon-cisco-ui | author:openstack description:Cisco plugin for Horizon
+openstack-github-9-536 | python-ironic-inspector-client | https://github.com/openstack/python-ironic-inspector-client | author:openstack description:A python client and OpenStackClient plugin for Ironic Inspector
+openstack-github-9-537 | fuel-plugin-detach-rabbitmq | https://github.com/openstack/fuel-plugin-detach-rabbitmq | author:openstack description:Fuel plugin to detach RabbitMQ from controller role
+openstack-github-9-538 | ironic-webclient | https://github.com/openstack/ironic-webclient | author:openstack description:Ironic HTTP(S) Client
+openstack-github-9-539 | fuel-plugin-zabbix-monitoring-emc | https://github.com/openstack/fuel-plugin-zabbix-monitoring-emc | author:openstack description:Fuel plugin for Zabbix monitoring EMC integration
+openstack-github-9-540 | networking-calico | https://github.com/openstack/networking-calico | author:openstack description:OpenStack/Neutron integration for Calico networking
+openstack-github-9-541 | rpm-packaging | https://github.com/openstack/rpm-packaging | author:openstack description:RPM packaging templates for OpenStack
+openstack-github-8-542 | devstack-plugin-amqp1 | https://github.com/openstack/devstack-plugin-amqp1 | author:openstack description:Devstack plugin to configure AMQP1.
+openstack-github-8-543 | xstatic-mdi | https://github.com/openstack/xstatic-mdi | author:openstack description:Google Material Design Icons packaged as XStatic.
+openstack-github-8-544 | security-specs | https://github.com/openstack/security-specs | author:openstack description:OpenStack Security Specifications
+openstack-github-8-545 | stackviz | https://github.com/openstack/stackviz | author:openstack description:Performance and debugging visualization for DevStack and Tempest
+openstack-github-8-546 | fuel-plugin-xenserver | https://github.com/openstack/fuel-plugin-xenserver | author:openstack description:Fuel plugin for XenServer integration
+openstack-github-8-547 | rpm-packaging-tools | https://github.com/openstack/rpm-packaging-tools | author:openstack description:RPM packaging tooling
+openstack-github-8-548 | watcher-specs | https://github.com/openstack/watcher-specs | author:openstack description:Watcher Specifications
+openstack-github-8-549 | smaug | https://github.com/openstack/smaug | author:openstack description:Application Data Protection as a Service in OpenStack
+openstack-github-8-550 | python-neutron-pd-driver | https://github.com/openstack/python-neutron-pd-driver | author:openstack description:A prefix delegation driver written using pure python for use with OpenStack Neutron.
+openstack-github-8-551 | puppet-rally | https://github.com/openstack/puppet-rally | author:openstack description:OpenStack Rally Puppet Module
+openstack-github-8-552 | oslo.privsep | https://github.com/openstack/oslo.privsep | author:openstack description:OpenStack library for privilege separation
+openstack-github-8-553 | devstack-plugin-zmq | https://github.com/openstack/devstack-plugin-zmq | author:openstack description:Devstack plugin to configure ZMQ.
+openstack-github-8-554 | fuel-plugin-ceilometer-redis | https://github.com/openstack/fuel-plugin-ceilometer-redis | author:openstack description:Fuel plugin to enable central agent HA and workload partitioning
+openstack-github-8-555 | fuel-plugin-zabbix-agents | https://github.com/openstack/fuel-plugin-zabbix-agents | author:openstack description:Fuel plugin for Zabbix agents integration
+openstack-github-8-556 | fuel-plugin-wstunnel | https://github.com/openstack/fuel-plugin-wstunnel | author:openstack description:Fuel plugin for Web-sockets tunnel integration
+openstack-github-8-557 | eslint-config-openstack | https://github.com/openstack/eslint-config-openstack | author:openstack description:JavaScript Style Guidelines for OpenStack.
+openstack-github-8-558 | project-team-guide | https://github.com/openstack/project-team-guide | author:openstack description:OpenStack Project Team Guide
+openstack-github-8-559 | networking-ale-omniswitch | https://github.com/openstack/networking-ale-omniswitch | author:openstack description:ALE OmniSwtich drivers for ML2
+openstack-github-8-560 | xstatic-roboto-fontface | https://github.com/openstack/xstatic-roboto-fontface | author:openstack description:Roboto Font packaged as XStatic.
+openstack-github-8-561 | intel-nfv-ci-tests | https://github.com/openstack/intel-nfv-ci-tests | author:openstack description:intel nfv ci testcase repo.
+openstack-github-8-562 | ceilometer-zvm | https://github.com/openstack/ceilometer-zvm | author:openstack description:zVM compute agent plugins for OpenStack Ceilometer
+openstack-github-8-563 | os-win | https://github.com/openstack/os-win | author:openstack description:Windows / Hyper-V library for OpenStack projects.
+openstack-github-8-564 | collectd-ceilometer-plugin | https://github.com/openstack/collectd-ceilometer-plugin | author:openstack description:A collectd plugin to publish telemetry to Ceilometer.
+openstack-github-8-565 | election | https://github.com/openstack/election | author:openstack description:OpenStack Elections repository
+openstack-github-8-566 | fuel-plugin-calamari | https://github.com/openstack/fuel-plugin-calamari | author:openstack description:Fuel plugin for Calamari integration
+openstack-github-8-567 | puppet-aodh | https://github.com/openstack/puppet-aodh | author:openstack description:OpenStack Aodh Puppet Module
+openstack-github-8-568 | transparency-policy | https://github.com/openstack/transparency-policy | author:openstack description:OpenStack Foundation Transparency Policy.
+openstack-github-8-569 | puppet-magnum | https://github.com/openstack/puppet-magnum | author:openstack description:Updated May 17, 2016
+openstack-github-8-570 | evoque | https://github.com/openstack/evoque | author:openstack description:Ticket service for OpenStack
+openstack-github-8-571 | fuel-plugin-block-device | https://github.com/openstack/fuel-plugin-block-device | author:openstack description:Fuel plugin for Cinder Block Device Driver integration
+openstack-github-8-572 | spanner | https://github.com/openstack/spanner | author:openstack description:Operation dashboard for OpenStack
+openstack-github-8-573 | devstack-plugin-bdd | https://github.com/openstack/devstack-plugin-bdd | author:openstack description:DevStack plugin to configure Cinder BlockDeviceDriver
+openstack-github-8-574 | fuel-plugin-saltstack | https://github.com/openstack/fuel-plugin-saltstack | author:openstack description:Fuel plugin for SaltStack integration
+openstack-github-8-575 | kosmos | https://github.com/openstack/kosmos | author:openstack description:Global Server Load-Balancing
+openstack-github-8-576 | networking-fortinet | https://github.com/openstack/networking-fortinet | author:openstack description:FortiOS Integration with Neutron
+openstack-github-8-577 | fuel-plugin-tintri-cinder | https://github.com/openstack/fuel-plugin-tintri-cinder | author:openstack description:Fuel plugin to enable Tintri driver for Cinder
+openstack-github-8-578 | networking-lenovo | https://github.com/openstack/networking-lenovo | author:openstack description:Lenovo Neutron Plugin
+openstack-github-7-579 | bareon | https://github.com/openstack/bareon | author:openstack description:Flexible and easy to use operating system installation tool.
+openstack-github-7-580 | python-vitrageclient | https://github.com/openstack/python-vitrageclient | author:openstack description:Vitrage API Client library.
+openstack-github-7-581 | pymod2pkg | https://github.com/openstack/pymod2pkg | author:openstack description:Python module name to package name map
+openstack-github-7-582 | fuel-plugin-scaleio-cinder | https://github.com/openstack/fuel-plugin-scaleio-cinder | author:openstack description:Fuel plugin for ScaleIO with Cinder storage backend integration
+openstack-github-7-583 | git-repo-manifests | https://github.com/openstack/git-repo-manifests | author:openstack description:Clone multiple OpenStack repos as a group
+openstack-github-7-584 | pandaman | https://github.com/openstack/pandaman | author:openstack description:ITDB Service for OpenStack
+openstack-github-7-585 | app-catalog-common | https://github.com/openstack/app-catalog-common | author:openstack description:Common components for application catalog
+openstack-github-7-586 | tripleo-quickstart | https://github.com/openstack/tripleo-quickstart | author:openstack description:Ansible based project for setting up TripleO virtual environments
+openstack-github-7-587 | vitrage-specs | https://github.com/openstack/vitrage-specs | author:openstack description:Vitrage Design Specifications
+openstack-github-7-588 | fuel-plugin-designate | https://github.com/openstack/fuel-plugin-designate | author:openstack description:Fuel plugin to deploy OpenStack Designate on MOS controllers
+openstack-github-7-589 | ansible-role-jenkins-job-builder | https://github.com/openstack/ansible-role-jenkins-job-builder | author:openstack description:Ansible role to manage Jenkins Job Builder
+openstack-github-7-590 | solar | https://github.com/openstack/solar | author:openstack description:Resource management and orchestration engine for distributed systems
+openstack-github-7-591 | tempest-plugin-cookiecutter | https://github.com/openstack/tempest-plugin-cookiecutter | author:openstack description:Cookiecutter Template for new tempest plugins
+openstack-github-7-592 | fuel-plugin-purestorage-cinder | https://github.com/openstack/fuel-plugin-purestorage-cinder | author:openstack description:Fuel plugin for PureStorage Cinder integration
+openstack-github-7-593 | python-scciclient | https://github.com/openstack/python-scciclient | author:openstack description:Python ServerView Common Command Interface (SCCI) Client Library
+openstack-github-7-594 | scalpels | https://github.com/openstack/scalpels | author:openstack description:Digging and Tracing system for OpenStack
+openstack-github-7-595 | cisco-ironic-contrib | https://github.com/openstack/cisco-ironic-contrib | author:openstack description:Package containing Cisco specific ironic work that doesn't fit into the core ironic tree.
+openstack-github-6-596 | deb-openstack-pkg-tools | https://github.com/openstack/deb-openstack-pkg-tools | author:openstack description:build tools for Debian packages
+openstack-github-6-597 | ironic-ui | https://github.com/openstack/ironic-ui | author:openstack description:Ironic plugin UI for Horizon to allow users to view and manage bare metal.
+openstack-github-6-598 | trove-dashboard | https://github.com/openstack/trove-dashboard | author:openstack description:Trove Horizon plugin.
+openstack-github-6-599 | openstack-salt | https://github.com/openstack/openstack-salt | author:openstack description:Salt formulas for deploying OpenStack.
+openstack-github-6-600 | fuel-plugin-network-node | https://github.com/openstack/fuel-plugin-network-node | author:openstack description:Fuel plugin for Network Node deployment integration
+openstack-github-6-601 | neutron-classifier | https://github.com/openstack/neutron-classifier | author:openstack description:Common library for services that classify packets
+openstack-github-6-602 | bilean | https://github.com/openstack/bilean | author:openstack description:Billing service for OpenStack
+openstack-github-6-603 | osops-coda | https://github.com/openstack/osops-coda | author:openstack description:Coda is a Horizon dashboard and panel (both share the name) that facilitates resource clean up of a project once that project is no longer needed
+openstack-github-6-604 | ansible-role-zuul | https://github.com/openstack/ansible-role-zuul | author:openstack description:Ansible role to manage Zuul
+openstack-github-6-605 | fairy-slipper | https://github.com/openstack/fairy-slipper | author:openstack description:API documentation generator and builder for OpenStack
+openstack-github-6-606 | renderspec | https://github.com/openstack/renderspec | author:openstack description:RPM .spec template renderer
+openstack-github-6-607 | puppet-openstack_spec_helper | https://github.com/openstack/puppet-openstack_spec_helper | author:openstack description:Library gem used by Puppet OpenStack modules
+openstack-github-6-608 | openstack-resource-agents | https://github.com/openstack/openstack-resource-agents | author:openstack description:Pacemaker High Availability resource agents for OpenStack
+openstack-github-6-609 | python-searchlightclient | https://github.com/openstack/python-searchlightclient | author:openstack description:OpenStack Search (Searchlight) Client
+openstack-github-6-610 | python-aodhclient | https://github.com/openstack/python-aodhclient | author:openstack description:Client library for Aodh API
+openstack-github-5-611 | fuel-plugin-debug | https://github.com/openstack/fuel-plugin-debug | author:openstack description:Fuel plugin which enables debug output for specific MOS service
+openstack-github-5-612 | sahara-tests | https://github.com/openstack/sahara-tests | author:openstack description:Repo for Sahara Scenario Framework
+openstack-github-5-613 | i18n | https://github.com/openstack/i18n | author:openstack description:Utilities, assets and configrations used by I18n team
+openstack-github-5-614 | openstack-ansible-openstack_hosts | https://github.com/openstack/openstack-ansible-openstack_hosts | author:openstack description:Role openstack_hosts for OpenStack-Ansible
+openstack-github-5-615 | fuel-plugin-ci | https://github.com/openstack/fuel-plugin-ci | author:openstack description:Place to store data required to build up a CI for any Fuel plugin
+openstack-github-5-616 | fuel-plugin-plumgrid | https://github.com/openstack/fuel-plugin-plumgrid | author:openstack description:Fuel plugin for PLUMgrid SDN network backend integration
+openstack-github-5-617 | puppet-midonet | https://github.com/openstack/puppet-midonet | author:openstack description:Puppet Module for MidoNet project
+openstack-github-5-618 | puppet-vitrage | https://github.com/openstack/puppet-vitrage | author:openstack description:OpenStack Vitrage Puppet Module
+openstack-github-5-619 | fuel-noop-fixtures | https://github.com/openstack/fuel-noop-fixtures | author:openstack description:Fixtures for Fuel Library Noop tests framework
+openstack-github-5-620 | openstack-ansible-plugins | https://github.com/openstack/openstack-ansible-plugins | author:openstack description:Plugins for OpenStack-Ansible
+openstack-github-5-621 | openstack-ansible-rabbitmq_server | https://github.com/openstack/openstack-ansible-rabbitmq_server | author:openstack description:Role rabbitmq_server for OpenStack-Ansible
+openstack-github-5-622 | neutron-lib | https://github.com/openstack/neutron-lib | author:openstack description:Neutron shared routines and utilities.
+openstack-github-5-623 | openstack-ansible-pip_install | https://github.com/openstack/openstack-ansible-pip_install | author:openstack description:Role pip_install for OpenStack-Ansible
+openstack-github-5-624 | release-schedule-generator | https://github.com/openstack/release-schedule-generator | author:openstack description:Generate representations of the OpenStack release cycle from a yaml file
+openstack-github-5-625 | fuel-plugin-qemu | https://github.com/openstack/fuel-plugin-qemu | author:openstack description:Fuel plugin to deploy QEMU
+openstack-github-5-626 | ansible-role-diskimage-builder | https://github.com/openstack/ansible-role-diskimage-builder | author:openstack description:Ansible role to manage Nodepool
+openstack-github-5-627 | devstack-plugin-kafka | https://github.com/openstack/devstack-plugin-kafka | author:openstack description:DevStack plugin to configure Kafka.
+openstack-github-5-628 | searchlight-specs | https://github.com/openstack/searchlight-specs | author:openstack description:OpenStack Search (Searchlight) Specifications
+openstack-github-5-629 | openstack-ansible-galera_server | https://github.com/openstack/openstack-ansible-galera_server | author:openstack description:Role galera_server for OpenStack-Ansible
+openstack-github-5-630 | fuel-plugin-bgpvpn | https://github.com/openstack/fuel-plugin-bgpvpn | author:openstack description:Fuel plugin to enable and configure networking-bgpvpn component
+openstack-github-5-631 | fuel-plugin-ovs | https://github.com/openstack/fuel-plugin-ovs | author:openstack description:Fuel plugin to deploy OVS with NSH and DPDK
+openstack-github-5-632 | performance-docs | https://github.com/openstack/performance-docs | author:openstack description:OpenStack performance testing plans, results, investigations and accompanying pieces of testing scripts and Rally scenarios.
+openstack-github-5-633 | bareon-specs | https://github.com/openstack/bareon-specs | author:openstack description:Specs for bareon project
+openstack-github-5-634 | bareon-api | https://github.com/openstack/bareon-api | author:openstack description:REST API interface for Bareon, flexible and easy to use operating system installation tool.
+openstack-github-5-635 | packetary | https://github.com/openstack/packetary | author:openstack description:Library and eponymous utility to manage the entire lifecycle of repositories
+openstack-github-5-636 | puppet-ec2api | https://github.com/openstack/puppet-ec2api | author:openstack description:OpenStack EC2 API Puppet Module
+openstack-github-5-637 | fuel-plugin-mistral | https://github.com/openstack/fuel-plugin-mistral | author:openstack description:Fuel plugin for Mistral integration
+openstack-github-5-638 | fuel-plugin-inkscope | https://github.com/openstack/fuel-plugin-inkscope | author:openstack description:Fuel plugin for Inkscope integration
+openstack-github-5-639 | marshal | https://github.com/openstack/marshal | author:openstack description:Key retrieval agent for OpenStack instances.
+openstack-github-5-640 | mistral-specs | https://github.com/openstack/mistral-specs | author:openstack description:OpenStack Workflow (Mistral) Specifications
+openstack-github-5-641 | devstack-plugin-ceph | https://github.com/openstack/devstack-plugin-ceph | author:openstack description:DevStack plugin to configure Ceph backend.
+openstack-github-5-642 | zaqar-ui | https://github.com/openstack/zaqar-ui | author:openstack description:The UI component for Zaqar
+openstack-github-5-643 | puppet-oslo | https://github.com/openstack/puppet-oslo | author:openstack description:Module for managing Oslo.* library
+openstack-github-5-644 | networking-generic-switch | https://github.com/openstack/networking-generic-switch | author:openstack description:Multi-vendor Modular Layer 2 (ML2) driver.
+openstack-github-5-645 | nomad | https://github.com/openstack/nomad | author:openstack description:Distributed Acceleration Management
+openstack-github-5-646 | devstack-plugin-pika | https://github.com/openstack/devstack-plugin-pika | author:openstack description:DevStack plugin to configure Pika RabbitMQ driver.
+openstack-github-5-647 | python-evoqueclient | https://github.com/openstack/python-evoqueclient | author:openstack description:Client library for Evoque API
+openstack-github-5-648 | fuel-plugin-onos | https://github.com/openstack/fuel-plugin-onos | author:openstack description:Fuel plugin Onos for L2 traffic instead of neutron openvswitch agent
+openstack-github-5-649 | windmill | https://github.com/openstack/windmill | author:openstack description:An Ansible deployment to validate ansible roles for Continuous Integration.
+openstack-github-5-650 | puppet-openstack-release-tools | https://github.com/openstack/puppet-openstack-release-tools | author:openstack description:Release tools for Puppet OpenStack modules
+openstack-github-5-651 | ansible-role-nodepool | https://github.com/openstack/ansible-role-nodepool | author:openstack description:Ansible role to manage Nodepool
+openstack-github-4-652 | evoque-dashboard | https://github.com/openstack/evoque-dashboard | author:openstack description:The UI component for Evoque
+openstack-github-4-653 | openstack-ansible-galera_client | https://github.com/openstack/openstack-ansible-galera_client | author:openstack description:Role galera_client for OpenStack-Ansible
+openstack-github-4-654 | python-brick-cinderclient-ext | https://github.com/openstack/python-brick-cinderclient-ext | author:openstack description:python-cinderclient extension for local storage management
+openstack-github-4-655 | shovel | https://github.com/openstack/shovel | author:openstack description:RackHD and OpenStack Coordinator
+openstack-github-4-656 | openstack-ansible-lxc_container_create | https://github.com/openstack/openstack-ansible-lxc_container_create | author:openstack description:Role lxc_container_create for OpenStack-Ansible
+openstack-github-4-657 | fuel-plugin-6wind-virtual-accelerator | https://github.com/openstack/fuel-plugin-6wind-virtual-accelerator | author:openstack description:Fuel plugin for 6WIND Virtual Accelerator integration
+openstack-github-4-658 | ironic-inspector-specs | https://github.com/openstack/ironic-inspector-specs | author:openstack description:Specs for ironic-inspector
+openstack-github-4-659 | salt-formula-horizon | https://github.com/openstack/salt-formula-horizon | author:openstack description:Horizon salt formula
+openstack-github-4-660 | ansible-role-jenkins | https://github.com/openstack/ansible-role-jenkins | author:openstack description:Updated Mar 30, 2016
+openstack-github-4-661 | fuel-virtualbox | https://github.com/openstack/fuel-virtualbox | author:openstack description:A set of bash scripts that allow to easily deploy Fuel environment and try OpenStack using VirtualBox as a virtualization layer.
+openstack-github-4-662 | watcher-dashboard | https://github.com/openstack/watcher-dashboard | author:openstack description:Watcher Horizon plugin.
+openstack-github-4-663 | fuel-plugin-hedvig-cinder | https://github.com/openstack/fuel-plugin-hedvig-cinder | author:openstack description:Fuel plugin for Hedvig Cinder storage backend integration
+openstack-github-4-664 | openstack-ansible-apt_package_pinning | https://github.com/openstack/openstack-ansible-apt_package_pinning | author:openstack description:Role apt_package_pinning for OpenStack-Ansible
+openstack-github-4-665 | openstack-ansible-rsyslog_server | https://github.com/openstack/openstack-ansible-rsyslog_server | author:openstack description:Role rsyslog_server for OpenStack-Ansible
+openstack-github-4-666 | openstack-ansible-pip_lock_down | https://github.com/openstack/openstack-ansible-pip_lock_down | author:openstack description:Role pip_lock_down for OpenStack-Ansible
+openstack-github-4-667 | openstack-ansible-repo_server | https://github.com/openstack/openstack-ansible-repo_server | author:openstack description:Role repo_server for OpenStack-Ansible
+openstack-github-4-668 | openstack-ansible-memcached_server | https://github.com/openstack/openstack-ansible-memcached_server | author:openstack description:Role memcached_server for OpenStack-Ansible
+openstack-github-4-669 | fuel-plugin-qlogic-sriov-vxlan | https://github.com/openstack/fuel-plugin-qlogic-sriov-vxlan | author:openstack description:Fuel plugin which enables SRIOV capabilities in QLogic E3/E4 Intelligent Ethernet Adapters
+openstack-github-4-670 | openstack-ansible-py_from_git | https://github.com/openstack/openstack-ansible-py_from_git | author:openstack description:Role py_from_git for OpenStack-Ansible
+openstack-github-4-671 | daisycloud-core | https://github.com/openstack/daisycloud-core | author:openstack description:The core API implementation for Daisycloud OpenStack installer.
+openstack-github-4-672 | openstack-ansible-lxc_hosts | https://github.com/openstack/openstack-ansible-lxc_hosts | author:openstack description:Role lxc_hosts for OpenStack-Ansible
+openstack-github-4-673 | salt-formula-opencontrail | https://github.com/openstack/salt-formula-opencontrail | author:openstack description:OpenContrail salt formula
+openstack-github-4-674 | os-vif | https://github.com/openstack/os-vif | author:openstack description:Integration library between network (Neutron) and compute (Nova) providers
+openstack-github-4-675 | os-performance-tools | https://github.com/openstack/os-performance-tools | author:openstack description:Python scripts for use in Performance QA work
+openstack-github-4-676 | puppet-pacemaker | https://github.com/openstack/puppet-pacemaker | author:openstack description:Pacemaker Puppet Module
+openstack-github-4-677 | ansible-role-jenkins-plugins | https://github.com/openstack/ansible-role-jenkins-plugins | author:openstack description:Updated Apr 29, 2016
+openstack-github-4-678 | salt-formula-keystone | https://github.com/openstack/salt-formula-keystone | author:openstack description:Keystone salt formula
+openstack-github-4-679 | openstack-ux | https://github.com/openstack/openstack-ux | author:openstack description:OpenStack User Experience Repository
+openstack-github-4-680 | openstack-ansible-rsyslog_client | https://github.com/openstack/openstack-ansible-rsyslog_client | author:openstack description:Role rsyslog_client for OpenStack-Ansible
+openstack-github-3-681 | fuel-plugin-astara | https://github.com/openstack/fuel-plugin-astara | author:openstack description:Fuel plugin for Astra Network Service with MOS integration
+openstack-github-3-682 | python-wsmanclient | https://github.com/openstack/python-wsmanclient | author:openstack description:Python client that speaks Web Services-Management protocol.
+openstack-github-3-683 | openstack-ansible-os_designate | https://github.com/openstack/openstack-ansible-os_designate | author:openstack description:Role os_designate for OpenStack-Ansible
+openstack-github-3-684 | coupler | https://github.com/openstack/coupler | author:openstack description:Coupling Storage Service VM for OpenStack
+openstack-github-3-685 | ironic-staging-drivers | https://github.com/openstack/ironic-staging-drivers | author:openstack description:A project used to hold out-of-tree ironic drivers
+openstack-github-3-686 | bareon-ironic | https://github.com/openstack/bareon-ironic | author:openstack description:Bareon-based driver for Ironic
+openstack-github-3-687 | ansible-role-shade | https://github.com/openstack/ansible-role-shade | author:openstack description:Ansible role to manage Shade
+openstack-github-3-688 | salt-formula-glance | https://github.com/openstack/salt-formula-glance | author:openstack description:Glance salt formula
+openstack-github-3-689 | salt-formula-cinder | https://github.com/openstack/salt-formula-cinder | author:openstack description:Cinder salt formula
+openstack-github-3-690 | python-k8sclient | https://github.com/openstack/python-k8sclient | author:openstack description:Python API for Kubernetes
+openstack-github-3-691 | salt-formula-nova | https://github.com/openstack/salt-formula-nova | author:openstack description:Nova salt formula
+openstack-github-3-692 | fuel-plugin-external-lb | https://github.com/openstack/fuel-plugin-external-lb | author:openstack description:Fuel plugin to enable use of external LB instead of default VIPs and HAproxy
+openstack-github-3-693 | poppy-ui | https://github.com/openstack/poppy-ui | author:openstack description:Horizon Web interface for Poppy
+openstack-github-3-694 | salt-formula-ceilometer | https://github.com/openstack/salt-formula-ceilometer | author:openstack description:Ceilometer salt formula
+openstack-github-3-695 | fuel-plugin-nuage | https://github.com/openstack/fuel-plugin-nuage | author:openstack description:Fuel plugin for Nuage SDN with MOS integration
+openstack-github-3-696 | salt-formula-heat | https://github.com/openstack/salt-formula-heat | author:openstack description:Heat salt formula
+openstack-github-3-697 | salt-formula-neutron | https://github.com/openstack/salt-formula-neutron | author:openstack description:Neutron salt formula
+openstack-github-3-698 | ansible-role-ssh | https://github.com/openstack/ansible-role-ssh | author:openstack description:Ansible role to manage SSH
+openstack-github-3-699 | stacklight-integration-tests | https://github.com/openstack/stacklight-integration-tests | author:openstack description:Integration tests for StackLight plugins
+openstack-github-3-700 | openstack-salt-specs | https://github.com/openstack/openstack-salt-specs | author:openstack description:Design Specifications for OpenStack-Salt
+openstack-github-3-701 | vahana | https://github.com/openstack/vahana | author:openstack description:OpenStack Client libraries for iOS
+openstack-github-2-702 | designate-tempest-plugin | https://github.com/openstack/designate-tempest-plugin | author:openstack description:OpenStack DNS As A Service (Designate) Functional Tests
+openstack-github-2-703 | solar-resources | https://github.com/openstack/solar-resources | author:openstack description:Resource definitions and example deployments for Solar
+openstack-github-2-704 | python-appcatalogclient | https://github.com/openstack/python-appcatalogclient | author:openstack description:Client library for App Catalog API
+openstack-github-2-705 | bareon-image-elements | https://github.com/openstack/bareon-image-elements | author:openstack description:Disk image elements for Bareon
+openstack-github-2-706 | fuel-plugin-detach-swift | https://github.com/openstack/fuel-plugin-detach-swift | author:openstack description:Fuel plugin to detach Swift from controller role
+openstack-github-2-707 | openstack-ansible-os_horizon | https://github.com/openstack/openstack-ansible-os_horizon | author:openstack description:Updated May 17, 2016
+openstack-github-2-708 | openstack-ansible-os_neutron | https://github.com/openstack/openstack-ansible-os_neutron | author:openstack description:Role os_neutron for OpenStack-Ansible
+openstack-github-2-709 | openstack-ansible-os_keystone | https://github.com/openstack/openstack-ansible-os_keystone | author:openstack description:Role os_keystone for OpenStack-Ansible
+openstack-github-2-710 | shovel-horizon | https://github.com/openstack/shovel-horizon | author:openstack description:Shovel plugin for OpenStack Horizon dashboard
+openstack-github-2-711 | openstack-ansible-ironic | https://github.com/openstack/openstack-ansible-ironic | author:openstack description:Role Ironic for OpenStack-Ansible
+openstack-github-2-712 | networking-huawei | https://github.com/openstack/networking-huawei | author:openstack description:Neutron integration for Huawei Technologies
+openstack-github-2-713 | openstack-ansible-repo_build | https://github.com/openstack/openstack-ansible-repo_build | author:openstack description:Role repo_server for OpenStack-Ansible
+openstack-github-2-714 | iotronic | https://github.com/openstack/iotronic | author:openstack description:Internet of Things resource management service for OpenStack clouds
+openstack-github-2-715 | openstack-ansible-os_nova | https://github.com/openstack/openstack-ansible-os_nova | author:openstack description:Role os_nova for OpenStack-Ansible
+openstack-github-2-716 | puppet-openstack-guide | https://github.com/openstack/puppet-openstack-guide | author:openstack description:Puppet OpenStack Project Guide
+openstack-github-2-717 | ansible-role-nginx | https://github.com/openstack/ansible-role-nginx | author:openstack description:Ansible role to manage Nginx
+openstack-github-2-718 | release-test | https://github.com/openstack/release-test | author:openstack description:Package for testing OpenStack release tools.
+openstack-github-2-719 | searchlight-ui | https://github.com/openstack/searchlight-ui | author:openstack description:Horizon UI support for Searchlight
+openstack-github-2-720 | bareon-allocator | https://github.com/openstack/bareon-allocator | author:openstack description:Dynamic allocation system for Bareon.
+openstack-github-2-721 | charm-ceph-radosgw | https://github.com/openstack/charm-ceph-radosgw | author:openstack description:Juju Charm - Ceph RADOS Gateway
+openstack-github-1-722 | service-types-authority | https://github.com/openstack/service-types-authority | author:openstack description:OpenStack Service Types Authority
+openstack-github-1-723 | jacket | https://github.com/openstack/jacket | author:openstack description:Jacket is for managing the heterogeneous cloud via OpenStack (VMware private cloud, AWS public cloud and so on).
+openstack-github-1-724 | charm-openstack-dashboard | https://github.com/openstack/charm-openstack-dashboard | author:openstack description:Juju Charm - OpenStack dashboard
+openstack-github-1-725 | neutron-dynamic-routing | https://github.com/openstack/neutron-dynamic-routing | author:openstack description:Dynamic routing services for OpenStack Neutron.
+openstack-github-1-726 | openstack-ansible-os_barbican | https://github.com/openstack/openstack-ansible-os_barbican | author:openstack description:Role os_barbican for OpenStack-Ansible
+openstack-github-1-727 | openstack-ansible-os_swift | https://github.com/openstack/openstack-ansible-os_swift | author:openstack description:Role os_swift for OpenStack-Ansible
+openstack-github-1-728 | openstack-ansible-os_rally | https://github.com/openstack/openstack-ansible-os_rally | author:openstack description:Role os_rally for OpenStack-Ansible
+openstack-github-1-729 | openstack-ansible-os_tempest | https://github.com/openstack/openstack-ansible-os_tempest | author:openstack description:Role os_tempest for OpenStack-Ansible
+openstack-github-1-730 | openstack-ansible-openstack_openrc | https://github.com/openstack/openstack-ansible-openstack_openrc | author:openstack description:Role openstack_openrc for OpenStack-Ansible
+openstack-github-1-731 | charm-ceph-mon | https://github.com/openstack/charm-ceph-mon | author:openstack description:Juju Charm - Ceph MON
+openstack-github-1-732 | tuning-box | https://github.com/openstack/tuning-box | author:openstack description:A service to process unstructured serialized configuration data and facilitate exchange of this data between deployment services such as Fuel or Puppet Master and deployed OpenStack components.
+openstack-github-1-733 | python-smaugclient | https://github.com/openstack/python-smaugclient | author:openstack description:Python client library for Smaug API
+openstack-github-1-734 | openstack-ansible-os_aodh | https://github.com/openstack/openstack-ansible-os_aodh | author:openstack description:Role os_aodh for OpenStack-Ansible
+openstack-github-1-735 | openstack-ansible-os_ceilometer | https://github.com/openstack/openstack-ansible-os_ceilometer | author:openstack description:Role os_ceilometer for OpenStack-Ansible
+openstack-github-1-736 | giftwrap | https://github.com/openstack/giftwrap | author:openstack description:Updated May 5, 2016
+openstack-github-1-737 | ramdisk-func-test | https://github.com/openstack/ramdisk-func-test | author:openstack description:Functional testing framework for deployment ramdisks (e.g. Bareon)
+openstack-github-1-738 | broadview-ui | https://github.com/openstack/broadview-ui | author:openstack description:broadview-ui is a horizon panel that is used to configure broadview-collector.
+openstack-github-1-739 | freezer-specs | https://github.com/openstack/freezer-specs | author:openstack description:OpenStack Freezer Specifications.
+openstack-github-1-740 | charm-keystone | https://github.com/openstack/charm-keystone | author:openstack description:Juju Charm - Keystone
+openstack-github-1-741 | charm-swift-storage | https://github.com/openstack/charm-swift-storage | author:openstack description:Juju Charm - Swift storage
+openstack-github-1-742 | charm-swift-proxy | https://github.com/openstack/charm-swift-proxy | author:openstack description:Juju Charm - Swift proxy
+openstack-github-1-743 | charm-rabbitmq-server | https://github.com/openstack/charm-rabbitmq-server | author:openstack description:Juju Charm - RabbitMQ
+openstack-github-1-744 | packetary-specs | https://github.com/openstack/packetary-specs | author:openstack description:Specs for packetary project
+openstack-github-1-745 | devstack-plugin-nfs | https://github.com/openstack/devstack-plugin-nfs | author:openstack description:DevStack plugin to configure NFS backend.
+openstack-github-1-746 | fuel-plugin-murano | https://github.com/openstack/fuel-plugin-murano | author:openstack description:Fuel plugin for Murano with MOS integration
+openstack-github-1-747 | charm-ceph-osd | https://github.com/openstack/charm-ceph-osd | author:openstack description:Juju Charm - Ceph OSD
+openstack-github-1-748 | tripleo-ui | https://github.com/openstack/tripleo-ui | author:openstack description:The UI component for TripleO
+openstack-github-1-749 | openstack-ansible-os_cinder | https://github.com/openstack/openstack-ansible-os_cinder | author:openstack description:Role os_cinder for OpenStack-Ansible
+openstack-github-1-750 | synergy-service | https://github.com/openstack/synergy-service | author:openstack description:Updated May 2, 2016
+openstack-github-1-751 | charm-odl-controller | https://github.com/openstack/charm-odl-controller | author:openstack description:Juju Charm - OpenDayLight Controller
+openstack-github-1-752 | openstack-ansible-os_zaqar | https://github.com/openstack/openstack-ansible-os_zaqar | author:openstack description:Role os_zaqar for OpenStack-Ansible
+openstack-github-1-753 | openstack-ansible-os_glance | https://github.com/openstack/openstack-ansible-os_glance | author:openstack description:Role os_glance for OpenStack-Ansible
+openstack-github-1-754 | openstack-ansible-os_magnum | https://github.com/openstack/openstack-ansible-os_magnum | author:openstack description:Role os_magnum for OpenStack-Ansible
+openstack-github-1-755 | openstack-ansible-os_heat | https://github.com/openstack/openstack-ansible-os_heat | author:openstack description:Role os_heat for OpenStack-Ansible
+openstack-github-1-756 | devstack-plugin-tar-installer | https://github.com/openstack/devstack-plugin-tar-installer | author:openstack description:DevStack plugin to install software from tar releases
+openstack-github-1-757 | fuxi | https://github.com/openstack/fuxi | author:openstack description:Enable Docker container to use Cinder volume and Manila share
+openstack-github-1-758 | conveyor | https://github.com/openstack/conveyor | author:openstack description:Clone and migrate OpenStack resources
+openstack-github-1-759 | monasca-transform | https://github.com/openstack/monasca-transform | author:openstack description:Monasca Transform and Aggregation Engine
+openstack-github-1-760 | charm-lxd | https://github.com/openstack/charm-lxd | author:openstack description:Juju Charm - LXD
+openstack-github-1-761 | charm-openvswitch-odl | https://github.com/openstack/charm-openvswitch-odl | author:openstack description:Juju Charm - Open vSwitch OpenDayLight
+openstack-github-1-762 | charm-cinder-ceph | https://github.com/openstack/charm-cinder-ceph | author:openstack description:Juju Charm - Cinder Ceph backend
+openstack-github-1-763 | charm-neutron-api-odl | https://github.com/openstack/charm-neutron-api-odl | author:openstack description:Juju Charm - Neutron API - OpenDayLight
+openstack-github-1-764 | charm-neutron-gateway | https://github.com/openstack/charm-neutron-gateway | author:openstack description:Juju Charm - Neutron Gateway
+openstack-github-1-765 | charm-neutron-api | https://github.com/openstack/charm-neutron-api | author:openstack description:Juju Charm - Neutron API
+openstack-github-1-766 | charm-neutron-openvswitch | https://github.com/openstack/charm-neutron-openvswitch | author:openstack description:Juju Charm - Neutron Open vSwitch
+openstack-github-1-767 | networking-hpe | https://github.com/openstack/networking-hpe | author:openstack description:Hewlett Packard Enterprise drivers for ML2
+openstack-github-1-768 | charm-nova-compute | https://github.com/openstack/charm-nova-compute | author:openstack description:Juju Charm - Nova Compute
+openstack-github-1-769 | charm-percona-cluster | https://github.com/openstack/charm-percona-cluster | author:openstack description:Juju Charm - Percona XtraDB Cluster
+openstack-github-1-770 | charm-heat | https://github.com/openstack/charm-heat | author:openstack description:Juju Charm - Heat
+openstack-github-1-771 | charm-nova-cloud-controller | https://github.com/openstack/charm-nova-cloud-controller | author:openstack description:Juju Charm - Nova Cloud Controller
+openstack-github-1-772 | charm-cinder | https://github.com/openstack/charm-cinder | author:openstack description:Juju Charm - Cinder
+openstack-github-1-773 | charm-glance | https://github.com/openstack/charm-glance | author:openstack description:Juju Charm - Glance
+openstack-github-1-774 | charm-ceilometer | https://github.com/openstack/charm-ceilometer | author:openstack description:Juju Charm - Ceilometer
+openstack-github-1-775 | charm-ceph | https://github.com/openstack/charm-ceph | author:openstack description:Juju Charm - Ceph
+openstack-github-1-776 | openstack-ansible-os_swift_sync | https://github.com/openstack/openstack-ansible-os_swift_sync | author:openstack description:Role os_swift_sync for OpenStack-Ansible
+openstack-github-1-777 | virtualbmc | https://github.com/openstack/virtualbmc | author:openstack description:A virtual BMC for controlling virtual machines using IPMI commands.
+openstack-github-1-778 | charm-cinder-backup | https://github.com/openstack/charm-cinder-backup | author:openstack description:Juju Charm - Cinder backup
+openstack-github-1-779 | python-namosclient | https://github.com/openstack/python-namosclient | author:openstack description:Client library for Namos API.
+openstack-github-1-780 | manila-specs | https://github.com/openstack/manila-specs | author:openstack description:Specs repo for Manila (OpenStack Shared File Systems) project.
+openstack-github-1-781 | fuel-plugin-detach-haproxy | https://github.com/openstack/fuel-plugin-detach-haproxy | author:openstack description:Fuel plugin to detach HAproxy from controller role
+openstack-github-1-782 | performa | https://github.com/openstack/performa | author:openstack description:Distributed scenario runner, results processor and report generator
+openstack-github-1-783 | devstack-plugin-additional-pkg-repos | https://github.com/openstack/devstack-plugin-additional-pkg-repos | author:openstack description:A DevStack plugin that allows inclusion of external package repositories for testing new (or indeed old) releases of system utiilities
+openstack-github-1-784 | charm-ceilometer-agent | https://github.com/openstack/charm-ceilometer-agent | author:openstack description:Juju Charm - Ceilometer agent
+openstack-github-1-785 | horizon-mellanox | https://github.com/openstack/horizon-mellanox | author:openstack description:Mellanox Extension for the OpenStack Dashboard (Horizon)
+openstack-github-1-786 | broadview-lib | https://github.com/openstack/broadview-lib | author:openstack description:broadview-lib provides an API for interaction with Broadcom BroadView agents.
+openstack-github-1-787 | microversion-parse | https://github.com/openstack/microversion-parse | author:openstack description:Simple library for parsing OpenStack microversion headers.
+openstack-github-1-788 | fuel-plugin-tacker | https://github.com/openstack/fuel-plugin-tacker | author:openstack description:Fuel plugin to install Tacker VNF manager which support SFC through OpenDaylight controller
+openstack-github-1-789 | openstack-ansible-os_gnocchi | https://github.com/openstack/openstack-ansible-os_gnocchi | author:openstack description:Role os_gnocchi for OpenStack-Ansible
+openstack-github-1-790 | puppet-octavia | https://github.com/openstack/puppet-octavia | author:openstack description:OpenStack Octavia Puppet Module
+openstack-github-1-791 | synergy-scheduler-manager | https://github.com/openstack/synergy-scheduler-manager | author:openstack description:Updated Apr 25, 2016
+openstack-github-1-792 | puppet-ovn | https://github.com/openstack/puppet-ovn | author:openstack description:Networking OVN Puppet Module
+openstack-github-1-793 | python-freezerclient | https://github.com/openstack/python-freezerclient | author:openstack description:Client cli and Library for Freezer API and storages media
+openstack-github-1-794 | uc-recognition | https://github.com/openstack/uc-recognition | author:openstack description:scripts and useful references to track contributions by users.
+openstack-github-1-795 | os-namos | https://github.com/openstack/os-namos | author:openstack description:Namos discovery agent.
+openstack-github-1-796 | ci-cd-pipeline-app-murano | https://github.com/openstack/ci-cd-pipeline-app-murano | author:openstack description:Collection of applications for CI-CD pipeline
+openstack-github-1-797 | broadview-collector | https://github.com/openstack/broadview-collector | author:openstack description:broadview-collector is a plugin-based service that collects and publishes network underlay data to services such as Monasca.
+openstack-github-1-798 | smaug-dashboard | https://github.com/openstack/smaug-dashboard | author:openstack description:Horizon plugin for Smaug
+openstack-github-0-799 | liberasurecode | https://github.com/openstack/liberasurecode | author:openstack description:Erasure Code API library written in C with pluggable Erasure Code backends.
+openstack-github-0-800 | ldappool | https://github.com/openstack/ldappool | author:openstack description:A simple connector pool for python-ldap and related LDAP libraries.
+openstack-github-0-801 | osc-lib | https://github.com/openstack/osc-lib | author:openstack description:OpenStackClient plugin library support
+openstack-github-0-802 | oslo.tools | https://github.com/openstack/oslo.tools | author:openstack description:Tools for working in the OpenStack Oslo community.
+openstack-github-0-803 | ailuropoda | https://github.com/openstack/ailuropoda | author:openstack description:The sad panda API
+openstack-github-0-804 | tempest-horizon | https://github.com/openstack/tempest-horizon | author:openstack description:Horizon plugin for tempest
+openstack-github-0-805 | freezer-dr | https://github.com/openstack/freezer-dr | author:openstack description:Tools and automation to achieve Disaster Recovery of OpenStack Cloud Platforms
+openstack-github-0-806 | higgins | https://github.com/openstack/higgins | author:openstack description:Container Management Service for OpenStack
+openstack-github-0-807 | monasca-analytics | https://github.com/openstack/monasca-analytics | author:openstack description:Monasca Analytics Engine
+openstack-github-0-808 | ansible-role-cloud-launcher | https://github.com/openstack/ansible-role-cloud-launcher | author:openstack description:Ansible role to deploy multiple clouds resources
+openstack-github-0-809 | installguide-cookiecutter | https://github.com/openstack/installguide-cookiecutter | author:openstack description:Cookiecutter Template for new Install Guide
+openstack-github-0-810 | openstack-resource-agents-specs | https://github.com/openstack/openstack-resource-agents-specs | author:openstack description:Design Specifications for Pacemaker High Availability resource agents for OpenStack
+openstack-github-0-811 | kuryr-kubernetes | https://github.com/openstack/kuryr-kubernetes | author:openstack description:Kubernetes integration with OpenStack networking
+openstack-github-0-812 | kuryr-libnetwork | https://github.com/openstack/kuryr-libnetwork | author:openstack description:Docker remote driver for OpenStack Neutron
+openstack-github-0-813 | pyeclib | https://github.com/openstack/pyeclib | author:openstack description:A simple Python interface for implementing erasure codes
+openstack-github-0-814 | python-bileanclient | https://github.com/openstack/python-bileanclient | author:openstack description:Python client library for Bilean API
+openstack-github-0-815 | os-api-ref | https://github.com/openstack/os-api-ref | author:openstack description:Sphinx extension to support OpenStack API reference pages creation
+openstack-github-0-816 | delimiter | https://github.com/openstack/delimiter | author:openstack description:Quota Enforcement and Management Library
