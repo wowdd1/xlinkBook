@@ -132,13 +132,13 @@ ex:
      ./goto.py -c '6.001' -e 'youtube'
      ./goto.py -q 'data mining'
 
-display one course info:
+display one record info:
 
-    ./about_course.py 'course number'
+    ./about.py 'course number'
 
 ex:
 
-     ./about_course.py '6.001'
+     ./about.py '6.001'
 
 
 find the instructor:
