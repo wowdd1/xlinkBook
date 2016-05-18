@@ -51,8 +51,7 @@ def customPrint(data):
     print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def customPrintFile(line):
-    global line_id
-    line_id += 1
+
     if line.find('.') != -1:
         number = line[0 : line.find(' ')]
         title = line[line.find(' ') + 1 : ].strip()
@@ -133,7 +132,10 @@ def convert(source):
         data = utils.clearHtmlTag(data)
     
         for line in data.split('\n'):
-            customPrintFile(line)
+            if line.strip() != '':
+                line_id += 1
+            if line.strip() != '' and line_id >= start and line_id <= end:
+                customPrintFile(line)
 
 def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
