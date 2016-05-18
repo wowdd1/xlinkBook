@@ -51,14 +51,17 @@ def customPrint(data):
     print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def customPrintFile(line):
-
+    global parentid
+    customid = str(line_id)
+    if parentid != '':
+        customid = parentid
     if line.find('.') != -1:
         number = line[0 : line.find(' ')]
         title = line[line.find(' ') + 1 : ].strip()
-        print parentid + '-' + number + ' | ' + title + ' | | parentid:' + parentid + '-' + number[0 : number.find('.')]
+        print customid + '-' + number + ' | ' + title + ' | | parentid:' + customid + '-' + number[0 : number.find('.')]
     else:
         title = line[line.find(' ') + 1 : ].strip()
-        print parentid + '-' + line[0 : line.find(' ')].strip() + ' | ' + title + ' | | parentid:' + parentid 
+        print customid + '-' + line[0 : line.find(' ')].strip() + ' | ' + title + ' | | parentid:' + customid
 
 def format(line, link):
     if link != '' and line.startswith('http') == False:

@@ -12,10 +12,18 @@ ol li {
    margin-bottom: 0px;
 }
 li p {
-   font: 13px/1.5 Helvetica, sans-serif;
+   font: 14px/1.5 Helvetica, sans-serif;
    padding-left: 40px;
    color: #555;
 }
+
+ol li div {
+   position: relative;
+   font: 13px/1.5 Helvetica, Verdana, sans-serif;
+   margin-bottom: 0px;
+}
+
 span {
+   font: bold italic;
    position: absolute;
 }
