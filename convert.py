@@ -50,6 +50,17 @@ def customPrint(data):
     #print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
     print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
+def customPrintFile(line):
+    global line_id
+    line_id += 1
+    if line.find('.') != -1:
+        number = line[0 : line.find(' ')]
+        title = line[line.find(' ') + 1 : ].strip()
+        print parentid + '-' + number + ' | ' + title + ' | | parentid:' + parentid + '-' + number[0 : number.find('.')]
+    else:
+        title = line[line.find(' ') + 1 : ].strip()
+        print parentid + '-' + line[0 : line.find(' ')].strip() + ' | ' + title + ' | | parentid:' + parentid 
+
 def format(line, link):
     if link != '' and line.startswith('http') == False:
         if source.find('com') != -1:
@@ -122,7 +133,7 @@ def convert(source):
         data = utils.clearHtmlTag(data)
     
         for line in data.split('\n'):
-            printLine(line)
+            customPrintFile(line)
 
 def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
