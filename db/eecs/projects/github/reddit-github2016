@@ -1,0 +1,61 @@
+reddit-github-10763-1 | reddit | https://github.com/reddit/reddit | author:reddit description:the code that powers reddit.com
+reddit-github-779-2 | reddit-mobile | https://github.com/reddit/reddit-mobile | author:reddit description:Updated May 17, 2016
+reddit-github-457-3 | iReddit | https://github.com/reddit/iReddit | author:reddit description:The iReddit iPhone app
+reddit-github-132-4 | reddit-i18n | https://github.com/reddit/reddit-i18n | author:reddit description:reddit's translation files - USE CROWDIN TO SUBMIT TRANSLATIONS. Direct pull requests to this repository will, generally, be rejected.
+reddit-github-101-5 | reddit-plugin-thebutton | https://github.com/reddit/reddit-plugin-thebutton | author:reddit description:The Button.
+reddit-github-88-6 | snudown | https://github.com/reddit/snudown | author:reddit description:reddit's markdown renderer. based on sundown.
+reddit-github-78-7 | push | https://github.com/reddit/push | author:reddit description:this tool has been replaced with rollingpin ->
+reddit-github-61-8 | reddit-plugin-robin | https://github.com/reddit/reddit-plugin-robin | author:reddit description:robin
+reddit-github-60-9 | monitors | https://github.com/reddit/monitors | author:reddit description:daemons to monitor reddit ops
+reddit-github-57-10 | thebutton-data | https://github.com/reddit/thebutton-data | author:reddit description:press history for /r/thebutton
+reddit-github-56-11 | styleguide | https://github.com/reddit/styleguide | author:reddit description:Updated Apr 11, 2016
+reddit-github-32-12 | node-horse | https://github.com/reddit/node-horse | author:reddit description:Updated Apr 19, 2016
+reddit-github-27-13 | reddit-plugin-liveupdate | https://github.com/reddit/reddit-plugin-liveupdate | author:reddit description:the code behind reddit live
+reddit-github-24-14 | public-data-sets | https://github.com/reddit/public-data-sets | author:reddit description:Updated Jan 20, 2016
+reddit-github-23-15 | reddit-vagrant | https://github.com/reddit/reddit-vagrant | author:reddit description:Vagrant setup for reddit
+reddit-github-20-16 | error-pages | https://github.com/reddit/error-pages | author:reddit description:the bummer mobile
+reddit-github-18-17 | node-api-client | https://github.com/reddit/node-api-client | author:reddit description:Updated May 18, 2016
+reddit-github-15-18 | tallier | https://github.com/reddit/tallier | author:reddit description:high performance statsd drop-in
+reddit-github-15-19 | reddit-plugin-gold | https://github.com/reddit/reddit-plugin-gold | author:reddit description:reddit gold plugin
+reddit-github-14-20 | reddit-plugin-about | https://github.com/reddit/reddit-plugin-about | author:reddit description:reddit about pages plugin
+reddit-github-12-21 | node-flags | https://github.com/reddit/node-flags | author:reddit description:
+reddit-github-12-22 | node-horse-react | https://github.com/reddit/node-horse-react | author:reddit description:Updated May 3, 2016
+reddit-github-8-23 | reddit-plugin-f2p | https://github.com/reddit/reddit-plugin-f2p | author:reddit description:april fools 2013
+reddit-github-7-24 | rollingpin | https://github.com/reddit/rollingpin | author:reddit description:fast deploy to lots of servers
+reddit-github-7-25 | snooboots | https://github.com/reddit/snooboots | author:reddit description:Exploratory bootstrap customized for reddit
+reddit-github-6-26 | reddit-plugin-meatspace | https://github.com/reddit/reddit-plugin-meatspace | author:reddit description:tools for meetups
+reddit-github-6-27 | cabot-alert-twilio | https://github.com/reddit/cabot-alert-twilio | author:reddit description:reddit custom twilio alerting plugin for cabot
+reddit-github-5-28 | cabot-alert-slack | https://github.com/reddit/cabot-alert-slack | author:reddit description:A simple Cabot alerting plugin for Slack.
+reddit-github-5-29 | baseplate | https://github.com/reddit/baseplate | author:reddit description:something to build on
+reddit-github-5-30 | reddit-plugin-adzerk | https://github.com/reddit/reddit-plugin-adzerk | author:reddit description:reddit plugin for adzerk-hosted adverts
+reddit-github-4-31 | event-collector | https://github.com/reddit/event-collector | author:reddit description:data collection service
+reddit-github-4-32 | postcards | https://github.com/reddit/postcards | author:reddit description:stupid-simple thingy for managing postcards
+reddit-github-4-33 | node-text-js | https://github.com/reddit/node-text-js | author:reddit description:Updated Jul 13, 2015
+reddit-github-3-34 | node-rest-cache | https://github.com/reddit/node-rest-cache | author:reddit description:An LRU-based caching solution for rest-like data fetching.
+reddit-github-2-35 | reddit-plugin-donate | https://github.com/reddit/reddit-plugin-donate | author:reddit description:reddit donate
+reddit-github-2-36 | node-build | https://github.com/reddit/node-build | author:reddit description:build system for ES2015 projects
+reddit-github-2-37 | switcharoo-vagrant | https://github.com/reddit/switcharoo-vagrant | author:reddit description:Updated Feb 26, 2015
+reddit-github-1-38 | reddit-mobile-plugin-metrics | https://github.com/reddit/reddit-mobile-plugin-metrics | author:reddit description:Updated May 22, 2015
+reddit-github-1-39 | node-mothership | https://github.com/reddit/node-mothership | author:reddit description:CLI tools for running platform projects
+reddit-github-1-40 | reddit-service-activity | https://github.com/reddit/reddit-service-activity | author:reddit description:activity counting service, v0
+reddit-github-1-41 | metron-client | https://github.com/reddit/metron-client | author:reddit description:Updated Jan 28, 2015
+reddit-github-1-42 | docker-cassandra | https://github.com/reddit/docker-cassandra | author:reddit description:Reddit-specific Cassandra 1.2 Docker images
+reddit-github-1-43 | reddit-service-websockets | https://github.com/reddit/reddit-service-websockets | author:reddit description:websockets for reddit
+reddit-github-1-44 | reddit-client-lib | https://github.com/reddit/reddit-client-lib | author:reddit description:library of client side code to be shared between multiple projects
+reddit-github-1-45 | reddit-plugin-dfp | https://github.com/reddit/reddit-plugin-dfp | author:reddit description:dave's fantastic plugin
+reddit-github-1-46 | reddit-plugin-betamode | https://github.com/reddit/reddit-plugin-betamode | author:reddit description:reddit beta testing mode
+reddit-github-1-47 | stinkypy | https://github.com/reddit/stinkypy | author:reddit description:Library to aid in finding patterns associated with security issues within diffs
+reddit-github-0-48 | django-underpants | https://github.com/reddit/django-underpants | author:reddit description:tiny helpers for integrating django with underpants
+reddit-github-0-49 | metron | https://github.com/reddit/metron | author:reddit description:Updated Jan 29, 2015
+reddit-github-0-50 | node-private | https://github.com/reddit/node-private | author:reddit description:login / register / etc endpoints, only useful if you have access your own reddit instance
+reddit-github-0-51 | docker-reddit-py | https://github.com/reddit/docker-reddit-py | author:reddit description:Reddit Python base image for Docker
+reddit-github-0-52 | iframes | https://github.com/reddit/iframes | author:reddit description:Updated Dec 22, 2015
+reddit-github-0-53 | reddit-cookiecutter-r2plugin | https://github.com/reddit/reddit-cookiecutter-r2plugin | author:reddit description:skeleton of a reddit plugin
+reddit-github-0-54 | reddit-cookiecutter-thrift | https://github.com/reddit/reddit-cookiecutter-thrift | author:reddit description:cookiecutter template for a baseplate-based thrift service
+reddit-github-0-55 | reddit-api | https://github.com/reddit/reddit-api | author:reddit description:Updated May 14, 2015
+reddit-github-0-56 | reddit-mobile-plugin-ads | https://github.com/reddit/reddit-mobile-plugin-ads | author:reddit description:Updated May 22, 2015
+reddit-github-0-57 | node-middleware | https://github.com/reddit/node-middleware | author:reddit description:Middleware for Redux
+reddit-github-0-58 | node-widgets | https://github.com/reddit/node-widgets | author:reddit description:A collection of Reddit specific React components and the Redux actions and reducers to accompany them
+reddit-github-0-59 | node-platform | https://github.com/reddit/node-platform | author:reddit description:A set of tools to enable easy universal rendering and page navigation on a React + Redux stack
+reddit-github-0-60 | reddit-cookiecutter-pyramid | https://github.com/reddit/reddit-cookiecutter-pyramid | author:reddit description:cookiecutter template for a baseplate-based pyramid service
+reddit-github-0-61 | event-tracker | https://github.com/reddit/event-tracker | author:reddit description:Updated Feb 8, 2016

@@ -628,7 +628,8 @@ class GithubSpider(Spider):
                 'openai' : 'https://github.com/openai',\
                 'github' : 'https://github.com/github',\
                 'mozilla' : 'https://github.com/mozilla',\
-                'openstack': 'https://github.com/openstack'}
+                'openstack': 'https://github.com/openstack',\
+                'reddit' : 'https://github.com/reddit'}
 
         for k in data:
 
@@ -691,6 +692,7 @@ class GithubSpider(Spider):
         #print "get user data..."
         #self.processGithubiUserData("all", 500, 100)
         #self.processGithubiUserData("china", 500, 100)
+
         self.getOrganizationProjects()
         
 start = GithubSpider()
