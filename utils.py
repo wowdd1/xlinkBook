@@ -234,14 +234,17 @@ class Utils:
         count = 0
         newIndex = ''
         if dataType == 'content' and self.record_content.has_key(key):
+            #print key
             for r in self.record_content[key]:
                 count += 1
                 if index == '':
                     newIndex = str(count) + '.'
                 else:
                     newIndex = index + str(count) + '.'
-
-                html += '<li><span>' + newIndex + '</span>'
+                if r.get_id().find('-') != -1:
+                    html += '<li><span>' + r.get_id()[r.get_id().find('-') + 1 :].strip() + '</span>'
+                else:
+                    html += '<li><span>' + newIndex + '</span>'
                 if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
                     content_divID += '-' + str(count)
                     linkID = 'a-' + content_divID[content_divID.find('-') + 1 :] 
