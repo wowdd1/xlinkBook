@@ -5,6 +5,7 @@ news
 q-a
 p2p
 website
+wiki
 paper
 journal
 course
@@ -17,7 +18,6 @@ dataset
 patent
 event
 people
-wiki
 talk
 tutorial
 podcast
@@ -34,3 +34,5 @@ rank
 tools
 content
 reference
+#pipeline
+#policy
