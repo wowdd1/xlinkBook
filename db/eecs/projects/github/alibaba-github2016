@@ -1,0 +1,81 @@
+alibaba-github-5140-1 | fastjson | https://github.com/alibaba/fastjson | author:alibaba description:🚄 A fast JSON parser/generator for Java
+alibaba-github-4219-2 | dubbo | https://github.com/alibaba/dubbo | author:alibaba description:Dubbo is a distributed service framework empowers applications with service import/export capability with high performance RPC.
+alibaba-github-4216-3 | tengine | https://github.com/alibaba/tengine | author:alibaba description:A distribution of Nginx with some advanced features
+alibaba-github-3382-4 | druid | https://github.com/alibaba/druid | author:alibaba description:为监控而生的数据库连接池！
+alibaba-github-3300-5 | AndFix | https://github.com/alibaba/AndFix | author:alibaba description:AndFix is a library that offer hot-fix for Android App.
+alibaba-github-2822-6 | dexposed | https://github.com/alibaba/dexposed | author:alibaba description:dexposed enable 'god' mode for single android application.
+alibaba-github-2086-7 | jstorm | https://github.com/alibaba/jstorm | author:alibaba description:Enterprise Storm
+alibaba-github-1816-8 | RocketMQ | https://github.com/alibaba/RocketMQ | author:alibaba description:Alibaba's MQ, also aliyun ONS.
+alibaba-github-1330-9 | canal | https://github.com/alibaba/canal | author:alibaba description:阿里巴巴mysql数据库binlog的增量订阅&消费组件
+alibaba-github-1183-10 | cobar | https://github.com/alibaba/cobar | author:alibaba description:基于MySQL的分布式数据库服务中间件
+alibaba-github-1163-11 | anyproxy | https://github.com/alibaba/anyproxy | author:alibaba description:A fully configurable http/https proxy in NodeJS
+alibaba-github-1157-12 | otter | https://github.com/alibaba/otter | author:alibaba description:阿里巴巴分布式数据库同步系统(解决中美异地机房)
+alibaba-github-1144-13 | tsar | https://github.com/alibaba/tsar | author:alibaba description:Taobao System Activity Reporter
+alibaba-github-975-14 | f2etest | https://github.com/alibaba/f2etest | author:alibaba description:F2etest是一个面向前端、测试、产品等岗位的多浏览器兼容性测试整体解决方案。
+alibaba-github-811-15 | macaca | https://github.com/alibaba/macaca | author:alibaba description:Solution for Automation Test with Ease 一套完整的自动化测试解决方案
+alibaba-github-809-16 | mdrill | https://github.com/alibaba/mdrill | author:alibaba description:for千亿数据即席分析
+alibaba-github-691-17 | TProfiler | https://github.com/alibaba/TProfiler | author:alibaba description:TProfiler是一个可以在生产环境长期使用的性能分析工具
+alibaba-github-633-18 | oceanbase | https://github.com/alibaba/oceanbase | author:alibaba description:A distributed, shared-nothing relational database
+alibaba-github-629-19 | LVS | https://github.com/alibaba/LVS | author:alibaba description:A distribution of Linux Virtual Server with some advanced features. It introduces a new packet forwarding method - FULLNAT other than NAT/Tunneling/DirectRouting, and defense mechanism against synflooding attack - SYNPROXY.
+alibaba-github-614-20 | zeus | https://github.com/alibaba/zeus | author:alibaba description:Hadoop作业平台
+alibaba-github-519-21 | taokeeper | https://github.com/alibaba/taokeeper | author:alibaba description:ZooKeeper-Monitor, a monitor for zookeeper in java. Download https://github.com/alibaba/taokeeper/downloads
+alibaba-github-480-22 | tb_tddl | https://github.com/alibaba/tb_tddl | author:alibaba description:Updated Apr 27, 2012
+alibaba-github-457-23 | LuaViewSDK | https://github.com/alibaba/LuaViewSDK | author:alibaba description:Updated Apr 25, 2016
+alibaba-github-447-24 | nginx-http-concat | https://github.com/alibaba/nginx-http-concat | author:alibaba description:A Nginx module for concatenating files in a given context: CSS and JS files usually
+alibaba-github-385-25 | tfs | https://github.com/alibaba/tfs | author:alibaba description:TFS (Taobao File System) is a distributed file system similar to GFS.
+alibaba-github-373-26 | DataX | https://github.com/alibaba/DataX | author:alibaba description:DataX 是阿里巴巴集团内被广泛使用的离线数据同步工具/平台，实现包括 MySQL、Oracle、HDFS、Hive、OceanBase、HBase、OTS、ODPS 等各种异构数据源之间高效的数据同步功能。
+alibaba-github-350-27 | tair | https://github.com/alibaba/tair | author:alibaba description:A distributed key-value storage system developed by Taobao.com
+alibaba-github-345-28 | yugong | https://github.com/alibaba/yugong | author:alibaba description:阿里巴巴去Oracle数据迁移同步工具(全量+增量,目标支持MySQL/DRDS)
+alibaba-github-319-29 | cobarclient | https://github.com/alibaba/cobarclient | author:alibaba description:基于iBatis和Spring的轻量级分布式数据访问框架(DDAL)
+alibaba-github-264-30 | MBMvc | https://github.com/alibaba/MBMvc | author:alibaba description:An iOS Message Based MVC framework
+alibaba-github-233-31 | simpleimage | https://github.com/alibaba/simpleimage | author:alibaba description:Updated Apr 27, 2016
+alibaba-github-232-32 | transmittable-thread-local | https://github.com/alibaba/transmittable-thread-local | author:alibaba description:A simple 0-dependency java lib for transmitting ThreadLocal value between threads even using thread pool.
+alibaba-github-230-33 | ali_kernel | https://github.com/alibaba/ali_kernel | author:alibaba description:The Linux Kernel Tree for Alibaba.
+alibaba-github-175-34 | node-hbase-client | https://github.com/alibaba/node-hbase-client | author:alibaba description:Asynchronous HBase client for Node.js, pure JavaScript implementation.
+alibaba-github-161-35 | nginx-tfs | https://github.com/alibaba/nginx-tfs | author:alibaba description:An Asynchronous Nginx module providing a RESTful API for TFS (Taobao File System).
+alibaba-github-157-36 | asyncload | https://github.com/alibaba/asyncload | author:alibaba description:异步并行加载工具(依赖字节码技术)
+alibaba-github-153-37 | wasp | https://github.com/alibaba/wasp | author:alibaba description:megastore-like system
+alibaba-github-148-38 | nquery | https://github.com/alibaba/nquery | author:alibaba description:Generic SQL engine for Web and Big-data.
+alibaba-github-133-39 | dubbo-doc-static | https://github.com/alibaba/dubbo-doc-static | author:alibaba description:dubbo document static contents
+alibaba-github-113-40 | java-dns-cache-manipulator | https://github.com/alibaba/java-dns-cache-manipulator | author:alibaba description:A simple 0-dependency thread-safe lib for setting dns programmatically without touching host file, make unit/integration test portable.
+alibaba-github-112-41 | RocketMQ-docs | https://github.com/alibaba/RocketMQ-docs | author:alibaba description:Docs for Alibaba's MQ
+alibaba-github-106-42 | nginx-http-sysguard | https://github.com/alibaba/nginx-http-sysguard | author:alibaba description:A Nginx module to protect servers when system load or memory use goes too high.
+alibaba-github-89-43 | TDH_Socket | https://github.com/alibaba/TDH_Socket | author:alibaba description:TDH_Socket_Plugin_for_MySQL is a MySQL plugin which like HandlerSocket.
+alibaba-github-84-44 | taobao-kernel | https://github.com/alibaba/taobao-kernel | author:alibaba description:Taobao's Linux kernel tree
+alibaba-github-78-45 | nginx-http-user-agent | https://github.com/alibaba/nginx-http-user-agent | author:alibaba description:A nginx module to match browsers and crawlers
+alibaba-github-78-46 | tamper | https://github.com/alibaba/tamper | author:alibaba description:A Java Bean to Java Bean mapper that recursively copies data from one object to another
+alibaba-github-78-47 | mpich2-yarn | https://github.com/alibaba/mpich2-yarn | author:alibaba description:Running MPICH2 on Yarn
+alibaba-github-77-48 | TBJMap | https://github.com/alibaba/TBJMap | author:alibaba description:JMap Enhanced Edition
+alibaba-github-75-49 | nginx-http-footer-filter | https://github.com/alibaba/nginx-http-footer-filter | author:alibaba description:A nginx module that prints some text in the footer of a request
+alibaba-github-64-50 | TrafficServer | https://github.com/alibaba/TrafficServer | author:alibaba description:Alibaba's TrafficServer (with those patches not accepted by the Apache TrafficServer community yet)
+alibaba-github-63-51 | ruby.taobao.org | https://github.com/alibaba/ruby.taobao.org | author:alibaba description:RubyGems Mirror Web page
+alibaba-github-58-52 | top | https://github.com/alibaba/top | author:alibaba description:Taobao Open API Client
+alibaba-github-56-53 | cooma | https://github.com/alibaba/cooma | author:alibaba description:A simple and flexible microcontainer of Java
+alibaba-github-53-54 | nginx-http-slice | https://github.com/alibaba/nginx-http-slice | author:alibaba description:Nginx module for serving a file in slices (reverse byte-range)
+alibaba-github-52-55 | OceanBase-0.5 | https://github.com/alibaba/OceanBase-0.5 | author:alibaba description:Updated Jun 27, 2014
+alibaba-github-51-56 | alibaba.github.com | https://github.com/alibaba/alibaba.github.com | author:alibaba description:The alibaba github homepage.
+alibaba-github-44-57 | druid-ha | https://github.com/alibaba/druid-ha | author:alibaba description:在Druid连接池上提供HA支持
+alibaba-github-44-58 | tengine-website | https://github.com/alibaba/tengine-website | author:alibaba description:The source code of Tengine's website (tengine.taobao.org)
+alibaba-github-41-59 | tsar2db | https://github.com/alibaba/tsar2db | author:alibaba description:used to store tsar data to mysql
+alibaba-github-39-60 | webx-restful | https://github.com/alibaba/webx-restful | author:alibaba description:citrus-rpc
+alibaba-github-39-61 | FlexGW | https://github.com/alibaba/FlexGW | author:alibaba description:a vpn, snat web app for vpc vm.
+alibaba-github-37-62 | ots | https://github.com/alibaba/ots | author:alibaba description:Aliyun OTS(Open Table Service) nodejs SDK. http://ots.aliyun.com/
+alibaba-github-32-63 | opensesame | https://github.com/alibaba/opensesame | author:alibaba description:alibaba open parent
+alibaba-github-30-64 | nginx-backtrace | https://github.com/alibaba/nginx-backtrace | author:alibaba description:A Nginx module to dump backtrace when a worker process exits abnormally
+alibaba-github-30-65 | simpleel | https://github.com/alibaba/simpleel | author:alibaba description:Simple Expression Language
+alibaba-github-30-66 | plover | https://github.com/alibaba/plover | author:alibaba description:专注于模块化的NodeJs Web框架
+alibaba-github-28-67 | phpwind | https://github.com/alibaba/phpwind | author:alibaba description:Rediscover the community.
+alibaba-github-23-68 | xoc | https://github.com/alibaba/xoc | author:alibaba description:XOC is a compiler infrastructure that provides multi-level operations, flexibility, and the capability of representing almost all popular languages. There are two level IR representations used throughout all phases of the compilation.
+alibaba-github-22-69 | tdhs-java-client | https://github.com/alibaba/tdhs-java-client | author:alibaba description:A TDH_SOCKET Client For Java
+alibaba-github-22-70 | ossfs | https://github.com/alibaba/ossfs | author:alibaba description:fuse client based on aliyun oss
+alibaba-github-18-71 | druid-extension | https://github.com/alibaba/druid-extension | author:alibaba description:druid-wrapper
+alibaba-github-14-72 | ali_kernel_rpm | https://github.com/alibaba/ali_kernel_rpm | author:alibaba description:Repository which can build an ali_kernel rpm successfully.
+alibaba-github-13-73 | mirrors | https://github.com/alibaba/mirrors | author:alibaba description:Alibaba open source hosting service, providing mirrors of popular open source software.
+alibaba-github-12-74 | BeautifulCode | https://github.com/alibaba/BeautifulCode | author:alibaba description:代码之美
+alibaba-github-12-75 | mile | https://github.com/alibaba/mile | author:alibaba description:schemaless的类sql分布式查询系统
+alibaba-github-11-76 | tengine-patches | https://github.com/alibaba/tengine-patches | author:alibaba description:patches for third party modules with Tengine
+alibaba-github-10-77 | ons | https://github.com/alibaba/ons | author:alibaba description:Aliyun ONS Q&A
+alibaba-github-9-78 | oceanbase_rpm_package | https://github.com/alibaba/oceanbase_rpm_package | author:alibaba description:Updated Nov 13, 2013
+alibaba-github-3-79 | tvb | https://github.com/alibaba/tvb | author:alibaba description:Updated Feb 24, 2016
+alibaba-github-2-80 | tair-java-client | https://github.com/alibaba/tair-java-client | author:alibaba description:Updated May 8, 2016
+alibaba-github-1-81 | client-keyshare | https://github.com/alibaba/client-keyshare | author:alibaba description:ClientKeyshare Extension for TLS, which reduces the full handshake latency of 1 RTT

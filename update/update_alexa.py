@@ -33,7 +33,7 @@ class AlexaSpider(Spider):
                 div = sp.find('div', class_='description')
                 print li.div.text + ' ' + li.a.text + ' ' + 'http://www.alexa.com' + li.a['href'] +" "+  u.removeDoubleSpace(div.text).strip()
                 self.count += 1
-                self.write_db(f, 'alexa-' + li.div.text, li.a.text, 'http://www.alexa.com'+ li.a['href'], "description:" + u.removeDoubleSpace(div.text).strip())
+                self.write_db(f, 'alexa-' + li.div.text, li.a.text, 'http://' + li.a['href'][li.a['href'].find('/', 1) + 1 : ], "description:" + u.removeDoubleSpace(div.text).strip())
 
 
 

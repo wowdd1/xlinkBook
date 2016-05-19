@@ -604,6 +604,7 @@ class GithubSpider(Spider):
                 "google-cloud-platform" : "https://github.com/GoogleCloudPlatform",\
                 'googlesamples' : 'https://github.com/googlesamples',\
                 "microsoft" : "https://github.com/Microsoft",\
+                "donet" : "https://github.com/dotnet",\
                 "apple" : "https://github.com/apple/",\
                 "yahoo" : "https://github.com/yahoo",\
                 "facebook" : "https://github.com/facebook",\
@@ -611,7 +612,6 @@ class GithubSpider(Spider):
                 "aws" : "https://github.com/aws",\
                 "awslabs" : "https://github.com/awslabs",\
                 "amznlabs" : "https://github.com/amznlabs",\
-                "donet" : "https://github.com/dotnet",\
                 "awslabs" : "https://github.com/awslabs",\
                 "linkedin" : "https://github.com/linkedin",\
                 "square" : "https://github.com/square",\
@@ -629,7 +629,24 @@ class GithubSpider(Spider):
                 'github' : 'https://github.com/github',\
                 'mozilla' : 'https://github.com/mozilla',\
                 'openstack': 'https://github.com/openstack',\
-                'reddit' : 'https://github.com/reddit'}
+                'reddit' : 'https://github.com/reddit',\
+                'pinterest' : 'https://github.com/pinterest',\
+                'quora' : 'https://github.com/quora',\
+                'dropbox' : 'https://github.com/dropbox',\
+                'netflix' : 'https://github.com/Netflix',\
+                'adobe' : 'https://github.com/adobe',\
+                'alibaba' : 'https://github.com/Alibaba',\
+                'ebay' : 'https://github.com/ebay',\
+                'zhihu' : 'https://github.com/zhihu',\
+                'vimeo' : 'https://github.com/vimeo',\
+                'aol' : 'https://github.com/aol',\
+                'yelp' : 'https://github.com/yelp',\
+                'wordpress' : 'https://github.com/wordpress',\
+                'ibm' : 'https://github.com/ibm',\
+                'netease' : 'https://github.com/NetEase',\
+                'mysql' : 'https://github.com/mysql',\
+                'imgur' : 'https://github.com/imgur',\
+                'sogou' : 'https://github.com/sogou'}
 
         for k in data:
 
@@ -692,7 +709,6 @@ class GithubSpider(Spider):
         #print "get user data..."
         #self.processGithubiUserData("all", 500, 100)
         #self.processGithubiUserData("china", 500, 100)
-
         self.getOrganizationProjects()
         
 start = GithubSpider()

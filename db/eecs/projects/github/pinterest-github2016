@@ -1,0 +1,31 @@
+pinterest-github-2237-1 | PINRemoteImage | https://github.com/pinterest/PINRemoteImage | author:pinterest description:A thread safe, performant, feature rich image fetcher
+pinterest-github-1653-2 | teletraan | https://github.com/pinterest/teletraan | author:pinterest description:Teletraan is Pinterest's deploy system.
+pinterest-github-988-3 | PINCache | https://github.com/pinterest/PINCache | author:pinterest description:Fast, non-deadlocking parallel object cache for iOS and OS X
+pinterest-github-640-4 | mysql_utils | https://github.com/pinterest/mysql_utils | author:pinterest description:Pinterest MySQL Management Tools
+pinterest-github-628-5 | secor | https://github.com/pinterest/secor | author:pinterest description:Secor is a service implementing Kafka log persistence
+pinterest-github-588-6 | pinball | https://github.com/pinterest/pinball | author:pinterest description:Pinball is a scalable workflow manager
+pinterest-github-383-7 | knox | https://github.com/pinterest/knox | author:pinterest description:Knox is a secret management service
+pinterest-github-305-8 | cloudgrid | https://github.com/pinterest/cloudgrid | author:pinterest description:Updated Apr 30, 2014
+pinterest-github-301-9 | elixometer | https://github.com/pinterest/elixometer | author:pinterest description:A light Elixir wrapper around exometer.
+pinterest-github-190-10 | bender | https://github.com/pinterest/bender | author:pinterest description:An easy-to-use library for creating load testing applications
+pinterest-github-178-11 | pymemcache | https://github.com/pinterest/pymemcache | author:pinterest description:A comprehensive, fast, pure-Python memcached client.
+pinterest-github-161-12 | riffed | https://github.com/pinterest/riffed | author:pinterest description:Provides idiomatic Elixir bindings for Apache Thrift
+pinterest-github-151-13 | terrapin | https://github.com/pinterest/terrapin | author:pinterest description:Serving system for batch generated data sets
+pinterest-github-147-14 | snappass | https://github.com/pinterest/snappass | author:pinterest description:It's like SnapChat... for passwords.
+pinterest-github-125-15 | widgets | https://github.com/pinterest/widgets | author:pinterest description:JavaScript widgets, including the Pin It button.
+pinterest-github-91-16 | pinlater | https://github.com/pinterest/pinlater | author:pinterest description:PinLater is a Thrift service to manage scheduling and execution of asynchronous jobs.
+pinterest-github-76-17 | react-pinterest | https://github.com/pinterest/react-pinterest | author:pinterest description:Updated Feb 10, 2016
+pinterest-github-64-18 | ios-pdk | https://github.com/pinterest/ios-pdk | author:pinterest description:Pinterest iOS SDK
+pinterest-github-54-19 | pagerduty-monit | https://github.com/pinterest/pagerduty-monit | author:pinterest description:Wrapper scripts to integrate monit and PagerDuty.
+pinterest-github-53-20 | thrift-tools | https://github.com/pinterest/thrift-tools | author:pinterest description:thrift-tools is a library and a set of tools to introspect Apache Thrift traffic.
+pinterest-github-52-21 | jbender | https://github.com/pinterest/jbender | author:pinterest description:An easy-to-use library for creating load testing applications.
+pinterest-github-36-22 | pinrepo | https://github.com/pinterest/pinrepo | author:pinterest description:Pinrepo is a highly scalable solution for storing and serving build artifacts such as debian packages, maven jars and pypi packages.
+pinterest-github-33-23 | pinterest-api-demo | https://github.com/pinterest/pinterest-api-demo | author:pinterest description:Updated May 17, 2016
+pinterest-github-32-24 | kingpin | https://github.com/pinterest/kingpin | author:pinterest description:KingPin is the toolset used at Pinterest for service discovery and application configuration.
+pinterest-github-22-25 | quasar-thrift | https://github.com/pinterest/quasar-thrift | author:pinterest description:A Thrift server that uses Quasar's lightweight threads to handle connections.
+pinterest-github-20-26 | elixir-thrift | https://github.com/pinterest/elixir-thrift | author:pinterest description:Elixir utilities for working with Thrift
+pinterest-github-17-27 | android-pdk | https://github.com/pinterest/android-pdk | author:pinterest description:Pinterest Android SDK
+pinterest-github-7-28 | arcanist-linters | https://github.com/pinterest/arcanist-linters | author:pinterest description:A collection of custom Arcanist linters
+pinterest-github-5-29 | wheeljack | https://github.com/pinterest/wheeljack | author:pinterest description:Work with interdependent python repositories seemlessly.
+pinterest-github-4-30 | arcanist-owners | https://github.com/pinterest/arcanist-owners | author:pinterest description:An Arcanist extension for displaying file ownership information
+pinterest-github-1-31 | secor-contrib | https://github.com/pinterest/secor-contrib | author:pinterest description:Updated Dec 11, 2014
