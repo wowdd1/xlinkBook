@@ -651,7 +651,7 @@ class GithubSpider(Spider):
 
         for k in data:
 
-            file_name = self.get_file_name("eecs/projects/github/" + k, self.school)
+            file_name = self.get_file_name("eecs/projects/github/organization/" + k, self.school)
             file_lines = self.countFileLineNum(file_name)
             f = self.open_db(file_name + ".tmp")
             self.count = 0
