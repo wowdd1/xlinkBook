@@ -1,0 +1,7 @@
+instacart-github-94-1 | ahab | https://github.com/instacart/ahab | author:instacart description:Docker event handling with Python
+instacart-github-66-2 | wilson_score | https://github.com/instacart/wilson_score | author:instacart description:Simple, dependency-free Wilson score
+instacart-github-44-3 | amountable | https://github.com/instacart/amountable | author:instacart description:An easy and transparent way to attach, manage and sum Money fields to your ActiveRecord models.
+instacart-github-1-4 | specmon | https://github.com/instacart/specmon | author:instacart description:Monitor your specs runtime over the time.
+instacart-github-1-5 | aws-scripts-mon | https://github.com/instacart/aws-scripts-mon | author:instacart description:Clone of AWS Cloudwatch Monitor Scripts + report inodes
+instacart-github-1-6 | specmon-demo | https://github.com/instacart/specmon-demo | author:instacart description:Demo app for specmon
+instacart-github-0-7 | heroku-buildpack-ruby | https://github.com/instacart/heroku-buildpack-ruby | author:instacart description:Ruby Heroku Buildpack custom for Instacart

@@ -1,0 +1,21 @@
+datto-github-190-1 | dattobd | https://github.com/datto/dattobd | author:datto description:kernel module for taking block-level snapshots and incremental backups of Linux block devices
+datto-github-13-2 | php-json-rpc | https://github.com/datto/php-json-rpc | author:datto description:Fully unit-tested JSON-RPC 2.0 for PHP
+datto-github-5-3 | php-json-rpc-http | https://github.com/datto/php-json-rpc-http | author:datto description:HTTP client and server for JSON-RPC 2.0
+datto-github-5-4 | tls-config | https://github.com/datto/tls-config | author:datto description:Our best shot at doing it all with SSL
+datto-github-3-5 | throughputd | https://github.com/datto/throughputd | author:datto description:network traffic monitoring tool
+datto-github-2-6 | php-parser | https://github.com/datto/php-parser | author:datto description:Define and parse a context-free grammar
+datto-github-2-7 | php-json-rpc-simple | https://github.com/datto/php-json-rpc-simple | author:datto description:Request-to-class mapping extension for the JSON-RPC library
+datto-github-2-8 | cass_schema | https://github.com/datto/cass_schema | author:datto description:A gem for managing multiple Cassandra schemas across multiple clusters.
+datto-github-2-9 | cassava | https://github.com/datto/cassava | author:datto description:An un-opinionated Cassandra client built on top of the Datastax Cassandra Driver.
+datto-github-1-10 | librdpmux | https://github.com/datto/librdpmux | author:datto description:Library to provide low-level QEMU guest interaction capabilties outside the hypervisor.
+datto-github-1-11 | RDPMux | https://github.com/datto/RDPMux | author:datto description:RDP server multiplexer designed to work with virtual machines
+datto-github-1-12 | zfs-tests | https://github.com/datto/zfs-tests | author:datto description:An attempt at making a broadly applicable zfs test suite
+datto-github-1-13 | php-json-rpc-ssh | https://github.com/datto/php-json-rpc-ssh | author:datto description:SSH client and server for JSON-RPC 2.0
+datto-github-1-14 | php-json-rpc-log | https://github.com/datto/php-json-rpc-log | author:datto description:Logged server extension for the JSON-RPC library
+datto-github-1-15 | php-json-rpc-auth | https://github.com/datto/php-json-rpc-auth | author:datto description:Authentication & authorization extension for the JSON-RPC library
+datto-github-1-16 | php-json-rpc-validator | https://github.com/datto/php-json-rpc-validator | author:datto description:Validation extension for the JSON-RPC library
+datto-github-1-17 | pyper | https://github.com/datto/pyper | author:datto description:Flexible pipelines for data storage and retrieval.
+datto-github-0-18 | petduino-examples | https://github.com/datto/petduino-examples | author:datto description:Updated Apr 4, 2016
+datto-github-0-19 | cinnabari | https://github.com/datto/cinnabari | author:datto description:Updated May 10, 2016
+datto-github-0-20 | core-enumerator | https://github.com/datto/core-enumerator | author:datto description:PHP class for enumeration of classes within a given namespace.
+datto-github-0-21 | datto.github.io | https://github.com/datto/datto.github.io | author:datto description:Datto's GitHub Pages site

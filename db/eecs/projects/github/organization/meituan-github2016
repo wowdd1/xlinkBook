@@ -1,0 +1,23 @@
+meituan-github-127-1 | RoboAspectJ | https://github.com/meituan/RoboAspectJ | author:meituan description:A gradle plugin that enables AOP in android.
+meituan-github-38-2 | monkey | https://github.com/meituan/monkey | author:meituan description:Data mapping system
+meituan-github-34-3 | Firefly | https://github.com/meituan/Firefly | author:meituan description:Lightweight thrift client code generator and runtime library for Android and Java.
+meituan-github-8-4 | mcsapi_python | https://github.com/meituan/mcsapi_python | author:meituan description:美团云 API Python SDK和客户端
+meituan-github-6-5 | mcsapi_java | https://github.com/meituan/mcsapi_java | author:meituan description:美团云 API Java SDK和客户端
+meituan-github-5-6 | imghdr | https://github.com/meituan/imghdr | author:meituan description:The imghdr module determines the type of image contained in a file or octet streams(obj of Buffer).
+meituan-github-5-7 | mssapi_php | https://github.com/meituan/mssapi_php | author:meituan description:美团云对象存储 PHP SDK
+meituan-github-3-8 | mcsapi | https://github.com/meituan/mcsapi | author:meituan description:MOS云主机(MCS)API文档
+meituan-github-2-9 | mssapi_python | https://github.com/meituan/mssapi_python | author:meituan description:美团云对象存储 Python SDK
+meituan-github-2-10 | mssapi_ruby_gem | https://github.com/meituan/mssapi_ruby_gem | author:meituan description:美团云对象存储 Ruby SDK Gem版本
+meituan-github-2-11 | mssapi_ruby | https://github.com/meituan/mssapi_ruby | author:meituan description:美团云对象存储 Ruby SDK
+meituan-github-2-12 | mock-response | https://github.com/meituan/mock-response | author:meituan description:Response renderer
+meituan-github-1-13 | mock-random | https://github.com/meituan/mock-random | author:meituan description:Random JSON generator for mock service
+meituan-github-1-14 | mock-request | https://github.com/meituan/mock-request | author:meituan description:Request parser
+meituan-github-1-15 | stub-demo | https://github.com/meituan/stub-demo | author:meituan description:List of demos of how to use `stub`
+meituan-github-1-16 | mock-generator | https://github.com/meituan/mock-generator | author:meituan description:Random data generator
+meituan-github-1-17 | mock-locator | https://github.com/meituan/mock-locator | author:meituan description:Resource locator
+meituan-github-1-18 | stub-proxy | https://github.com/meituan/stub-proxy | author:meituan description:HTTP proxy frontend for monkey
+meituan-github-1-19 | mssapi_js | https://github.com/meituan/mssapi_js | author:meituan description:美团云对象存储 Javascript SDK
+meituan-github-1-20 | mock-template | https://github.com/meituan/mock-template | author:meituan description:Template mock data generator
+meituan-github-0-21 | stub-http | https://github.com/meituan/stub-http | author:meituan description:HTTP frontend for monkey
+meituan-github-0-22 | mcsapi_ruby | https://github.com/meituan/mcsapi_ruby | author:meituan description:美团云Ruby SDK
+meituan-github-0-23 | mssapi_java | https://github.com/meituan/mssapi_java | author:meituan description:美团云对象存储 Java SDK

@@ -1,0 +1,39 @@
+hellofresh-github-4-1 | feature-toggle | https://github.com/hellofresh/feature-toggle | author:hellofresh description:A simple feature toggle mechanism for PHP
+hellofresh-github-4-2 | resizer | https://github.com/hellofresh/resizer | author:hellofresh description:Microservice to resize images
+hellofresh-github-4-3 | lentil | https://github.com/hellofresh/lentil | author:hellofresh description:Smart and modular gulp wrapper
+hellofresh-github-2-4 | reagieren | https://github.com/hellofresh/reagieren | author:hellofresh description:A set of adapters for message brokers
+hellofresh-github-1-5 | ansible-deployment | https://github.com/hellofresh/ansible-deployment | author:hellofresh description:Ansible Deployment Role
+hellofresh-github-1-6 | strider-docker-spark | https://github.com/hellofresh/strider-docker-spark | author:hellofresh description:A Strider CD docker image containing Apache Spark 1.5.2 and its dependencies
+hellofresh-github-1-7 | ansible-oauth2-proxy | https://github.com/hellofresh/ansible-oauth2-proxy | author:hellofresh description:An ansible role to install oauth2 proxy
+hellofresh-github-1-8 | workstation-checks | https://github.com/hellofresh/workstation-checks | author:hellofresh description:Specs tests to check your Mac/linux compatibility with a set of best security practices.
+hellofresh-github-1-9 | hf-baseimage | https://github.com/hellofresh/hf-baseimage | author:hellofresh description:Docker base image for production workloads tailored for HF usage.
+hellofresh-github-1-10 | ansible-samson | https://github.com/hellofresh/ansible-samson | author:hellofresh description:Create and Manage zendesk Samson
+hellofresh-github-1-11 | mapr-vagrant | https://github.com/hellofresh/mapr-vagrant | author:hellofresh description:A MapR 5.0.0 minimal vagrant box including Apache Spark 1.5.2 and Impala 1.4.1
+hellofresh-github-1-12 | ansible-consul | https://github.com/hellofresh/ansible-consul | author:hellofresh description:Ansible Role to install and configure consul
+hellofresh-github-0-13 | weird-github-client | https://github.com/hellofresh/weird-github-client | author:hellofresh description:A weird GitHub client. It does... stuff. For instance, it generates this report.
+hellofresh-github-0-14 | ansible-docker-ci | https://github.com/hellofresh/ansible-docker-ci | author:hellofresh description:Docker image that has ansible
+hellofresh-github-0-15 | zendesk-go | https://github.com/hellofresh/zendesk-go | author:hellofresh description:Zendesk API build in Go
+hellofresh-github-0-16 | logpruner | https://github.com/hellofresh/logpruner | author:hellofresh description:Prunes logs stored in AWS ElasticSearch Service domains.
+hellofresh-github-0-17 | ansible-aws-elb | https://github.com/hellofresh/ansible-aws-elb | author:hellofresh description:Register/De-register an EC2 instance with an Elastic Load Balancer (ELB)
+hellofresh-github-0-18 | rx.php-examples | https://github.com/hellofresh/rx.php-examples | author:hellofresh description:A series of interactive php examples for learning Microsoft's Reactive Extensions.
+hellofresh-github-0-19 | ansible-api-proxy | https://github.com/hellofresh/ansible-api-proxy | author:hellofresh description:Manage API-proxy
+hellofresh-github-0-20 | crossengage-python-client | https://github.com/hellofresh/crossengage-python-client | author:hellofresh description:Python client for Crossengage's API
+hellofresh-github-0-21 | logstash-docker | https://github.com/hellofresh/logstash-docker | author:hellofresh description:Docker-ized Logstash service with runit supervision.
+hellofresh-github-0-22 | ansible-dockerhost | https://github.com/hellofresh/ansible-dockerhost | author:hellofresh description:Create and manage docker hosts
+hellofresh-github-0-23 | jenkins-trigger-console | https://github.com/hellofresh/jenkins-trigger-console | author:hellofresh description:Is a simple python script that triggers jobs on remote Jenkins and follows the console output.
+hellofresh-github-0-24 | logreplay-docker | https://github.com/hellofresh/logreplay-docker | author:hellofresh description:A container to re-feed logs stored in S3 into an ElasticSearch cluster.
+hellofresh-github-0-25 | imgresizer-consul-demo | https://github.com/hellofresh/imgresizer-consul-demo | author:hellofresh description:A Dockerized demo environment using Consul for Service Discovery.
+hellofresh-github-0-26 | ansible-mandrill | https://github.com/hellofresh/ansible-mandrill | author:hellofresh description:An ansible role and library that uses Mandrill to send emails.
+hellofresh-github-0-27 | phpkafka | https://github.com/hellofresh/phpkafka | author:hellofresh description:Binary artifacts for PHP Kafka extension
+hellofresh-github-0-28 | ansible-dbinit | https://github.com/hellofresh/ansible-dbinit | author:hellofresh description:An ansible role that manages databases credentials
+hellofresh-github-0-29 | hf-javaimage | https://github.com/hellofresh/hf-javaimage | author:hellofresh description:Docker image providing Java 8 RE based on OpenJDK.
+hellofresh-github-0-30 | api-proxy | https://github.com/hellofresh/api-proxy | author:hellofresh description:A secure API proxy based on Joyents HTTP schema
+hellofresh-github-0-31 | gosign | https://github.com/hellofresh/gosign | author:hellofresh description:Validate Joyent's HTTP Signature Scheme
+hellofresh-github-0-32 | hf-golangimage | https://github.com/hellofresh/hf-golangimage | author:hellofresh description:Docker image providing Go(lang) 1.6 tool chain.
+hellofresh-github-0-33 | ansible-archive | https://github.com/hellofresh/ansible-archive | author:hellofresh description:Ansible role to archive files and folders
+hellofresh-github-0-34 | logreplay | https://github.com/hellofresh/logreplay | author:hellofresh description:Re-feed logs stored in S3 into an ElasticSearch cluster.
+hellofresh-github-0-35 | logstashbrcvr | https://github.com/hellofresh/logstashbrcvr | author:hellofresh description:Relay Logstash heartbeats over HTTP for availability monitoring.
+hellofresh-github-0-36 | ansible-firefox | https://github.com/hellofresh/ansible-firefox | author:hellofresh description:An ansible role to install multi version of firefox
+hellofresh-github-0-37 | mysql-replication-monitor | https://github.com/hellofresh/mysql-replication-monitor | author:hellofresh description:A Python MySQL Replication Monitor with Slack and Email notifications
+hellofresh-github-0-38 | signed_request | https://github.com/hellofresh/signed_request | author:hellofresh description:Make signed request
+hellofresh-github-0-39 | kitchen-baseimage-docker | https://github.com/hellofresh/kitchen-baseimage-docker | author:hellofresh description:A base image for test-kitchen docker
