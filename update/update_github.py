@@ -647,7 +647,10 @@ class GithubSpider(Spider):
                 'imgur' : 'https://github.com/imgur',\
                 'sogou' : 'https://github.com/sogou',\
                 'flickr' : 'https://github.com/Flickr',\
-                'hulu' : 'https://github.com/hulu'}
+                'hulu' : 'https://github.com/hulu',\
+                'udacity' : 'https://github.com/udacity',\
+                'coursera' : 'https://github.com/coursera',\
+                'edx' : 'https://github.com/edx'}
 
         for k in data:
 
@@ -710,6 +713,7 @@ class GithubSpider(Spider):
         #print "get user data..."
         #self.processGithubiUserData("all", 500, 100)
         #self.processGithubiUserData("china", 500, 100)
+
         self.getOrganizationProjects()
         
 start = GithubSpider()
