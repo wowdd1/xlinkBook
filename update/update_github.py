@@ -424,6 +424,9 @@ class GithubSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
+        f = open('../github_token', 'rU')
+        self.token = ''.join(f.readlines()).strip()
+
 
     def isQueryLang(self, lang):
         for item in self.lang_list:
@@ -645,7 +648,9 @@ class GithubSpider(Spider):
                 'flickr' : 'https://github.com/Flickr',\
                 'hulu' : 'https://github.com/hulu',\
                 'coursera' : 'https://github.com/coursera',\
-                'edx' : 'https://github.com/edx'}
+                'edx' : 'https://github.com/edx',\
+                'bvlc' : 'https://github.com/BVLC',\
+                'tum-vision' : 'https://github.com/tum-vision/'}
 
         self.getProjectByDict(data)
         #self.getStartupPorjects()
