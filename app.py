@@ -25,7 +25,7 @@ def index():
                       request.args.get('column', '3'),
                       request.args.get('filter', ''),
                       request.args.get('style', ''),
-                      request.args.get('desc', ''),
+                      request.args.get('desc', 'true'),
                       request.args.get('width', ''),
                       request.args.get('row', ''),
                       request.args.get('top', ''),
@@ -45,7 +45,8 @@ def index():
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa):
     cmd = "./list.py -i db/" + db + key + " -b 4"
     if db != '':
-        cmd += ' -u ' + db.replace('/', '') + ' '
+        cmd += ' -u ' + db + ' ' #+ db.replace('/', '') + ' '
+        #cmd += ' -u ' + db.replace('/', '') + ' '
     if column_num != '':
         cmd += " -c " + column_num + " "
     if navigation != "false":
@@ -79,7 +80,34 @@ def listDB():
 def listAllFile(db):
     folder = 'db/' + db + '/'
     files = os.listdir(folder)
-    return genList(files, folder, db)
+    #return genList(files, folder, db)
+    if len(files) > 40:
+        return genTable(files, folder, db)
+    else:
+        return genList(files, folder, db)
+
+
+def genTable(files, folder= '', db=''):
+    html = '<table>'
+    count = 0
+    column_num = int(request.args.get('column', '3'));
+    tds = ''
+    for f in files:
+       count += 1
+       if os.path.isfile(os.path.join(folder, f)):
+           tds += '<td><a href="http://localhost:5000/?db=' + db+  '&key=' + f + '">' + str(count) + '. ' + f + '<a></td>'
+       else:
+           if db != '':
+               tds += '<td><a href="http://localhost:5000/?db=' + db + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
+           else:
+               tds += '<td><a href="http://localhost:5000/?db=' + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
+       if count % column_num == 0:
+           html += '<tr>' + tds + '</tr>'
+           tds = ''
+    if tds != '':
+        html += '<tr>' + tds + '</tr>' 
+    html += '</table>'
+    return html
 
 def genList(files, folder='', db=''):
     html = '<ol>'

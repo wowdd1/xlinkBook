@@ -551,7 +551,7 @@ class Utils:
             rank = int(self.getAlexaRank(engin))
             if rank == 0:
                 return baseFontSize
-            fontSize = int(round((500 -rank) / 50.0 )) + 1
+            fontSize = int(self.revertRount((500 -rank) / 50.0 )) + 1
             #print 'rank:' + str(rank) + ' engin:' + engin + ' fontsize:' + str(fontSize)
             #print '<br/>'
             return baseFontSize + fontSize + 1
@@ -560,7 +560,12 @@ class Utils:
             priorityInt = int(priority.strip())
             return baseFontSize + priorityInt + 1
         
- 
+    def revertRount(self, number):
+        if number > round(number):
+            return round(number) + 1
+        else:
+            return round(number)
+             
     def getNavLinkList(self, engin):
         if self.ddg_mode:
             if len(self.ddg_search_engin_type) == 0 or len(self.ddg_search_engin_dict) == 0:
