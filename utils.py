@@ -135,6 +135,7 @@ class Utils:
 
     record_reference = {}
     record_content = {}
+    alexa_dict = {}
 
     def __init__(self):
         self.loadEngins()
@@ -144,6 +145,20 @@ class Utils:
             self.ddg_mode = True 
             return True
         return False
+
+
+    def loadAlexa(self):
+        if os.path.exists('db/rank/top500web-alexa2016'):
+            f = open('db/rank/top500web-alexa2016', 'rU')
+            for line in f.readlines():
+                record = Record(line)
+                title = record.get_title().strip()
+                key = title[0 : 1]
+                if self.alexa_dict.has_key(key):
+                    self.alexa_dict[key].append(record)
+                else:
+                    self.alexa_dict[key] = [record]
+        #print self.alexa_dict
 
     def loadEngins(self):
         if os.path.exists('db/metadata/engin_list'):
@@ -224,6 +239,18 @@ class Utils:
 
         #for (k, v) in self.record_content.items():
         #    print k
+
+    def getAlexaRank(self, engin):
+        engin = engin.lower().strip()
+        if len(self.alexa_dict) > 0:
+            key = engin.strip()[0 : 1].lower()
+            for k, v in self.alexa_dict.items():
+                if k.lower() == key:
+                    for r in v:
+                        title = r.get_title().lower().strip()
+                        if title.find(engin) != -1 or engin.find(title) != -1:
+                            return r.get_id()[r.get_id().find('-') + 1 : ].strip()
+        return '0'
 
     def genReferenceHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
         return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'reference', index)
@@ -504,9 +531,9 @@ class Utils:
             for e in engin_list_dive:
                 link_count += 1
                 if link_count % 2 == 0:
-                    div += self.genLinkWithScript2(scrip, e.strip() , color2, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
+                    div += self.genLinkWithScript2(scrip, e.strip() , color2, self.priority2fontsize(e.strip(), self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
                 else:
-                    div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
+                    div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(e.strip(), self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
             remain -= links_per_row
             last += links_per_row
             #print remain
@@ -517,11 +544,21 @@ class Utils:
         result += "</div>" 
         return result
 
-    def priority2fontsize(self, priority, fontSize):
+    def priority2fontsize(self, engin, priority, baseFontSize):
         if priority.strip() == '':
-            return fontSize
-        priorityInt = int(priority.strip())
-        return fontSize + priorityInt + 1
+            return baseFontSize
+        if priority.strip() == '0':
+            rank = int(self.getAlexaRank(engin))
+            if rank == 0:
+                return baseFontSize
+            fontSize = int(round((500 -rank) / 50.0 )) + 1
+            #print 'rank:' + str(rank) + ' engin:' + engin + ' fontsize:' + str(fontSize)
+            #print '<br/>'
+            return baseFontSize + fontSize + 1
+            
+        else:
+            priorityInt = int(priority.strip())
+            return baseFontSize + priorityInt + 1
         
  
     def getNavLinkList(self, engin):
