@@ -569,6 +569,8 @@ def build_lines(list_all):
 def get_line(lines, start, end, j):
     result = vertical
     for i in range(start, end):
+        if isinstance(lines[i][j], Record):
+            lines[i][j] = lines[i][j].get_describe()
         result += color_keyword(lines[i][j]) + vertical
 
     return result
