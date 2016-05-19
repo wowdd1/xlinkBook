@@ -34,14 +34,15 @@ def index():
                       request.args.get('border', ''),
                       request.args.get('engin', ''),
                       request.args.get('navigation', 'true'),
-                      request.args.get('verify', ''))
+                      request.args.get('verify', ''),
+                      request.args.get('alexa', ''))
         
         print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
         return html
 
 
-def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa):
     cmd = "./list.py -i db/" + db + key + " -b 4"
     if db != '':
         cmd += ' -u ' + db.replace('/', '') + ' '
@@ -67,6 +68,8 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -s ' + style + ' '
     if verify != '':
         cmd += ' -v ' + verify + ' '
+    if alexa == 'true':
+        cmd += ' -a '
 
     return cmd.replace('?', '') 
 

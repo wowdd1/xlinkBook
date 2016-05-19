@@ -1094,8 +1094,8 @@ def adjust_link_number():
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:a', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1152,6 +1152,8 @@ def main(argv):
             verify = a
         elif o in ('-u', '--use'):
             database = a
+        elif o in ('-a', '--alexa'):
+            utils.loadAlexa()
 
 
     if source == "":
