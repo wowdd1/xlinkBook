@@ -310,3 +310,4 @@ engin-306 | twitch | https://www.twitch.tv/search?query= | priority:0 descriptio
 engin-307 | yelp | http://www.yelp.com/search?find_desc=$&find_loc=Hong+Kong&ns=1 | priority:0 description:art
 engin-308 | gmap | http://gmap.csail.mit.edu/gmap/public.html?course= | priority:0 description:visualization
 engin-309 | livejournal | http://www.livejournal.com/gsearch/?journal=&q= | priority:0 description:social
+engin-310 | hao123 | https://www.hao123.com/?q= | priority:0 description:website
