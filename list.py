@@ -38,6 +38,7 @@ default_links_row = 2
 
 verify = ''
 database = ''
+dir_mode = False
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -450,7 +451,7 @@ def build_lines(list_all):
             describe = utils.str_block_width(list_all[i][j].get_describe())
             start = 0
             end = 0
-            if output_with_describe or html_style:
+            if (output_with_describe or html_style) and (dir_mode == False or merger_result):
                 lij = ''
                 lines = len(describe_lines)
                 linkID = ''
@@ -1057,7 +1058,8 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
     return all_lines
 
 def print_dir(dir_name):
-    global current_level
+    global current_level, dir_mode
+    dir_mode = True
     current_level += 1
     cur_list = os.listdir(dir_name)
     for item in cur_list:
