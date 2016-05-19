@@ -613,7 +613,6 @@ class GithubSpider(Spider):
                 "amznlabs" : "https://github.com/amznlabs",\
                 "awslabs" : "https://github.com/awslabs",\
                 "linkedin" : "https://github.com/linkedin",\
-                "square" : "https://github.com/square",\
                 "baidu" : "https://github.com/Baidu",\
                 "dmlc" : "https://github.com/dmlc",\
                 "amplab" : "https://github.com/amplab",\
@@ -625,13 +624,10 @@ class GithubSpider(Spider):
                 'sony' : 'https://github.com/sony',\
                 'Blizzard' : 'https://github.com/Blizzard',\
                 'openai' : 'https://github.com/openai',\
-                'github' : 'https://github.com/github',\
                 'mozilla' : 'https://github.com/mozilla',\
                 'openstack': 'https://github.com/openstack',\
                 'reddit' : 'https://github.com/reddit',\
-                'pinterest' : 'https://github.com/pinterest',\
                 'quora' : 'https://github.com/quora',\
-                'dropbox' : 'https://github.com/dropbox',\
                 'netflix' : 'https://github.com/Netflix',\
                 'adobe' : 'https://github.com/adobe',\
                 'alibaba' : 'https://github.com/Alibaba',\
@@ -648,10 +644,26 @@ class GithubSpider(Spider):
                 'sogou' : 'https://github.com/sogou',\
                 'flickr' : 'https://github.com/Flickr',\
                 'hulu' : 'https://github.com/hulu',\
-                'udacity' : 'https://github.com/udacity',\
                 'coursera' : 'https://github.com/coursera',\
                 'edx' : 'https://github.com/edx'}
 
+        self.getProjectByDict(data)
+        #self.getStartupPorjects()
+
+    def getStartupPorjects(self):
+        data = {}
+        if os.path.exists('../db/economics/startup-billion-dollar-club2016'):
+            f = open('../db/economics/startup-billion-dollar-club2016', 'rU')
+            for line in f.readlines():
+                record = Record(line)
+                key = record.get_title().replace(' ', '').strip()
+                url = 'https://github.com/' + key
+                data[key.lower()] = url 
+                  
+        if len(data) > 0:
+            self.getProjectByDict(data)
+
+    def getProjectByDict(self, data):
         for k in data:
 
             file_name = self.get_file_name("eecs/projects/github/organization/" + k, self.school)
@@ -713,8 +725,7 @@ class GithubSpider(Spider):
         #print "get user data..."
         #self.processGithubiUserData("all", 500, 100)
         #self.processGithubiUserData("china", 500, 100)
-
         self.getOrganizationProjects()
-        
+
 start = GithubSpider()
 start.doWork()

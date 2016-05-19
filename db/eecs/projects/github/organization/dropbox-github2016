@@ -1,9 +1,9 @@
 dropbox-github-5271-1 | zxcvbn | https://github.com/dropbox/zxcvbn | author:dropbox description:A realistic password strength estimator.
 dropbox-github-3692-2 | pyston | https://github.com/dropbox/pyston | author:dropbox description:An open-source Python implementation using JIT techniques.
-dropbox-github-3049-3 | godropbox | https://github.com/dropbox/godropbox | author:dropbox description:Common libraries for writing Go services/applications.
-dropbox-github-2686-4 | hackpad | https://github.com/dropbox/hackpad | author:dropbox description:Hackpad is a web-based realtime wiki.
+dropbox-github-3048-3 | godropbox | https://github.com/dropbox/godropbox | author:dropbox description:Common libraries for writing Go services/applications.
+dropbox-github-2689-4 | hackpad | https://github.com/dropbox/hackpad | author:dropbox description:Hackpad is a web-based realtime wiki.
 dropbox-github-1413-5 | dropbox-js | https://github.com/dropbox/dropbox-js | author:dropbox description:Unofficial JavaScript library for the Dropbox Core API.
-dropbox-github-1105-6 | djinni | https://github.com/dropbox/djinni | author:dropbox description:A tool for generating cross-language type declarations and interface bindings.
+dropbox-github-1110-6 | djinni | https://github.com/dropbox/djinni | author:dropbox description:A tool for generating cross-language type declarations and interface bindings.
 dropbox-github-973-7 | json11 | https://github.com/dropbox/json11 | author:dropbox description:A tiny JSON library for C++11.
 dropbox-github-683-8 | changes | https://github.com/dropbox/changes | author:dropbox description:A dashboard for your code. A build system.
 dropbox-github-596-9 | scooter | https://github.com/dropbox/scooter | author:dropbox description:An SCSS framework & UI library for Dropbox Web.
@@ -90,9 +90,9 @@ dropbox-github-3-89 | pem-converter-maven-plugin | https://github.com/dropbox/pe
 dropbox-github-3-90 | notouch | https://github.com/dropbox/notouch | author:dropbox description:UI and event database for storing and managing server and switch installer events.
 dropbox-github-2-91 | pyston-testsuite | https://github.com/dropbox/pyston-testsuite | author:dropbox description:Test suite for the Pyston project
 dropbox-github-2-92 | presto-hdbc | https://github.com/dropbox/presto-hdbc | author:dropbox description:Presto HDBC Connector
-dropbox-github-2-93 | rust-brotli-no-stdlib | https://github.com/dropbox/rust-brotli-no-stdlib | author:dropbox description:An implementation of https://github.com/google/brotli in rust avoiding the stdlib
-dropbox-github-2-94 | babelapi | https://github.com/dropbox/babelapi | author:dropbox description:Define an API once in Babel. Implement or use an existing code generator to map the API definition into usable objects and functions in any programming language.
-dropbox-github-2-95 | rust-brotli | https://github.com/dropbox/rust-brotli | author:dropbox description:Updated May 18, 2016
+dropbox-github-2-93 | babelapi | https://github.com/dropbox/babelapi | author:dropbox description:Define an API once in Babel. Implement or use an existing code generator to map the API definition into usable objects and functions in any programming language.
+dropbox-github-2-94 | rust-brotli-no-stdlib | https://github.com/dropbox/rust-brotli-no-stdlib | author:dropbox description:An implementation of https://github.com/google/brotli in rust avoiding the stdlib
+dropbox-github-2-95 | rust-brotli | https://github.com/dropbox/rust-brotli | author:dropbox description:Updated May 19, 2016
 dropbox-github-2-96 | sfmdemo | https://github.com/dropbox/sfmdemo | author:dropbox description:Demo of the Dropbox API's shared folder metadata features.
 dropbox-github-1-97 | mantle | https://github.com/dropbox/mantle | author:dropbox description:Datacenter Management System
 dropbox-github-1-98 | strongpoc | https://github.com/dropbox/strongpoc | author:dropbox description:Strong Point of Contact

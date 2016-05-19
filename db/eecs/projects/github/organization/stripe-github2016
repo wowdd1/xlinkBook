@@ -1,0 +1,49 @@
+stripe-github-3236-1 | jquery.payment | https://github.com/stripe/jquery.payment | author:stripe description:A general purpose library for building credit card forms, validating inputs and formatting numbers.
+stripe-github-1238-2 | mosql | https://github.com/stripe/mosql | author:stripe description:MongoDB → PostgreSQL streaming replication
+stripe-github-1188-3 | einhorn | https://github.com/stripe/einhorn | author:stripe description:Einhorn: the language-independent shared socket manager
+stripe-github-1148-4 | shop | https://github.com/stripe/shop | author:stripe description:Single-page shop
+stripe-github-909-5 | stripe-node | https://github.com/stripe/stripe-node | author:stripe description:Stripe API for node.js
+stripe-github-857-6 | stripe-php | https://github.com/stripe/stripe-php | author:stripe description:Stripe PHP bindings
+stripe-github-692-7 | stripe-ruby | https://github.com/stripe/stripe-ruby | author:stripe description:Stripe Ruby bindings
+stripe-github-595-8 | stripe-ios | https://github.com/stripe/stripe-ios | author:stripe description:Stripe bindings for iOS and OS X
+stripe-github-510-9 | poncho | https://github.com/stripe/poncho | author:stripe description:Easily create REST APIs
+stripe-github-440-10 | PaymentKit | https://github.com/stripe/PaymentKit | author:stripe description:Easily accept payments on iOS
+stripe-github-403-11 | stripe-go | https://github.com/stripe/stripe-go | author:stripe description:Go client for the Stripe API
+stripe-github-304-12 | stripe-python | https://github.com/stripe/stripe-python | author:stripe description:Stripe Python bindings
+stripe-github-303-13 | brushfire | https://github.com/stripe/brushfire | author:stripe description:Distributed decision tree ensemble learning in Scala
+stripe-github-260-14 | jquery.mobilePhoneNumber | https://github.com/stripe/jquery.mobilePhoneNumber | author:stripe description:A general purpose library for validating and formatting mobile phone numbers.
+stripe-github-224-15 | topmodel | https://github.com/stripe/topmodel | author:stripe description:Standard evaluations for binary classifiers so you don't have to
+stripe-github-211-16 | safesql | https://github.com/stripe/safesql | author:stripe description:Static analysis tool for Golang that protects against SQL injections
+stripe-github-199-17 | gaps | https://github.com/stripe/gaps | author:stripe description:Easy management of your Google Groups subscriptions.
+stripe-github-187-18 | stripe-java | https://github.com/stripe/stripe-java | author:stripe description:Stripe Java bindings
+stripe-github-179-19 | stripe-android | https://github.com/stripe/stripe-android | author:stripe description:Stripe Android bindings
+stripe-github-156-20 | ApplePayStubs | https://github.com/stripe/ApplePayStubs | author:stripe description:Test your Apple Pay integration without Apple Pay
+stripe-github-139-21 | wilde-things | https://github.com/stripe/wilde-things | author:stripe description:A tutorial integrating Stripe in PHP
+stripe-github-138-22 | timberlake | https://github.com/stripe/timberlake | author:stripe description:Timberlake is a Job Tracker for Hadoop.
+stripe-github-111-23 | mongoriver | https://github.com/stripe/mongoriver | author:stripe description:A library for writing MongoDB oplog tailers.
+stripe-github-101-24 | monospace-rails | https://github.com/stripe/monospace-rails | author:stripe description:Sample Rails application using Stripe to charge a subscription
+stripe-github-80-25 | herringbone | https://github.com/stripe/herringbone | author:stripe description:Tools for working with parquet, impala, and hive
+stripe-github-74-26 | sequins | https://github.com/stripe/sequins | author:stripe description:A simple K/V store on top of Hadoop's SequenceFile
+stripe-github-74-27 | subprocess | https://github.com/stripe/subprocess | author:stripe description:A port of Python's subprocess module to Ruby
+stripe-github-67-28 | monospace-django | https://github.com/stripe/monospace-django | author:stripe description:Sample Django application using Stripe to charge for subscriptions
+stripe-github-62-29 | pd2pg | https://github.com/stripe/pd2pg | author:stripe description:Import PagerDuty data into Postgres for analysis
+stripe-github-52-30 | chalk-log | https://github.com/stripe/chalk-log | author:stripe description:Chalk::Log adds a logger object to any class, which can be used for unstructured or semi-structured logging.
+stripe-github-36-31 | macgyver | https://github.com/stripe/macgyver | author:stripe description:A Chrome extension which duct tapes an SSH agent to the platformKey API
+stripe-github-34-32 | unilog | https://github.com/stripe/unilog | author:stripe description:A logger for use with daemontools.
+stripe-github-34-33 | payment-tag | https://github.com/stripe/payment-tag | author:stripe description:Updated May 31, 2013
+stripe-github-22-34 | chalk-config | https://github.com/stripe/chalk-config | author:stripe description:Maps on-disk config files into a loaded global configatron instance, taking into account your current environment.
+stripe-github-18-35 | go-einhorn | https://github.com/stripe/go-einhorn | author:stripe description:Talk to einhorn from your Go worker
+stripe-github-15-36 | example-ios-backend | https://github.com/stripe/example-ios-backend | author:stripe description:A simple, easy-to-deploy backend that you can use to demo our example iOS apps.
+stripe-github-14-37 | bonsai | https://github.com/stripe/bonsai | author:stripe description:Beautiful trees, without the landscaping.
+stripe-github-13-38 | terms | https://github.com/stripe/terms | author:stripe description:Stripe's Terms
+stripe-github-10-39 | stripe-reachability | https://github.com/stripe/stripe-reachability | author:stripe description:A bash script to test access to the Stripe API
+stripe-github-5-40 | javascript-style | https://github.com/stripe/javascript-style | author:stripe description:Javascript linter with rules for Stripe projects
+stripe-github-3-41 | java-interview-prep | https://github.com/stripe/java-interview-prep | author:stripe description:Updated Oct 21, 2015
+stripe-github-2-42 | random | https://github.com/stripe/random | author:stripe description:A collection of random utilities
+stripe-github-1-43 | stripe-datadog-checks | https://github.com/stripe/stripe-datadog-checks | author:stripe description:Checks for the Datadog Agent that Stripe finds useful.
+stripe-github-1-44 | sentry-restricted-github | https://github.com/stripe/sentry-restricted-github | author:stripe description:Updated Jan 20, 2015
+stripe-github-1-45 | time-utils | https://github.com/stripe/time-utils | author:stripe description:Updated Jun 10, 2013
+stripe-github-1-46 | python-interview-prep | https://github.com/stripe/python-interview-prep | author:stripe description:Updated Feb 22, 2016
+stripe-github-1-47 | scala-interview-prep | https://github.com/stripe/scala-interview-prep | author:stripe description:Example SBT project.
+stripe-github-0-48 | siv-go | https://github.com/stripe/siv-go | author:stripe description:A pure Go implementation of the SIV AEAD.
+stripe-github-0-49 | veneur | https://github.com/stripe/veneur | author:stripe description:A DogStatsD server implementation.

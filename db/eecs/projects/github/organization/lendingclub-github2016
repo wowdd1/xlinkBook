@@ -1,0 +1,9 @@
+lendingclub-github-39-1 | gradle-maven-plugin | https://github.com/LendingClub/gradle-maven-plugin | author:lendingclub description:maven plugin to invoke gradle
+lendingclub-github-14-2 | macgyver | https://github.com/LendingClub/macgyver | author:lendingclub description:DevOps Multi-Tool
+lendingclub-github-4-3 | neorx | https://github.com/LendingClub/neorx | author:lendingclub description:Neo4j REST client implemented using RxJava Observables
+lendingclub-github-2-4 | rx-aws | https://github.com/LendingClub/rx-aws | author:lendingclub description:RxJava and ProjectReactor adapters for Kinesis and SQS
+lendingclub-github-1-5 | okrest | https://github.com/LendingClub/okrest | author:lendingclub description:Fluent REST API built on OkHttp
+lendingclub-github-1-6 | macgyver-quickstart | https://github.com/LendingClub/macgyver-quickstart | author:lendingclub description:Quickstart for https://github.com/if6was9/macgyver
+lendingclub-github-0-7 | AccessorContext | https://github.com/LendingClub/AccessorContext | author:lendingclub description:Updated Dec 2, 2015
+lendingclub-github-0-8 | tomlson | https://github.com/LendingClub/tomlson | author:lendingclub description:Parse TOML via Jackson's Fluent API
+lendingclub-github-0-9 | metric-circus | https://github.com/LendingClub/metric-circus | author:lendingclub description:multi-protocol proxy for bridging graphite, SignalFx and other metrics protocols
