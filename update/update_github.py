@@ -421,7 +421,6 @@ class GithubSpider(Spider):
     result = ""
     request_times = 0
     token = ''
-
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -646,7 +645,9 @@ class GithubSpider(Spider):
                 'netease' : 'https://github.com/NetEase',\
                 'mysql' : 'https://github.com/mysql',\
                 'imgur' : 'https://github.com/imgur',\
-                'sogou' : 'https://github.com/sogou'}
+                'sogou' : 'https://github.com/sogou',\
+                'flickr' : 'https://github.com/Flickr',\
+                'hulu' : 'https://github.com/hulu'}
 
         for k in data:
 
