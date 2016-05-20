@@ -16,7 +16,7 @@ class Reference(BaseExtension):
         self.utils = Utils()
 
     def loadReference(self, filename, rID):
-        name = 'db/metadata/' + filename + '-reference'
+        name = 'extensions/reference/data/' + filename + '-reference'
         if os.path.exists(name):
             f = open(name, 'rU')
             all_lines = f.readlines()

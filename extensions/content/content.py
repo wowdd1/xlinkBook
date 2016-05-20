@@ -19,7 +19,7 @@ class Content(BaseExtension):
         self.utils = Utils()
 
     def loadContent(self, filename):
-        name = 'db/metadata/' + filename + '-content'
+        name = 'extensions/content/data/' + filename + '-content'
         if os.path.exists(name):
             f = open(name, 'rU')
             all_lines = f.readlines()
