@@ -1,0 +1,6 @@
+{
+    "name" : "content",
+    "module" : "content",
+    "class" : "Content",
+    "version" : "0.1"
+}

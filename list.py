@@ -350,7 +350,7 @@ def loadFiles(folder, fileType):
             result += ''.join(open(folder + '/' + f, 'rU').readlines())
     return result
 
-def getScript():
+def getScript(file_name):
     global output_script_already
     if output_script_already == True:
         return
@@ -364,13 +364,14 @@ def getScript():
     if len(div_content_list) > 0:
         for content in div_content_list:
             print "array.push('" + content + "');" 
-    if len(div_reference_dict) > 0:
-        for (k, v) in div_reference_dict.items():
-            print 'reference["' + k + '"] = ' + "'" + v + "';"
 
-    if len(div_content_dict) > 0:
-        for (k, v) in div_content_dict.items():
-            print 'content["' + k + '"] = ' + "'" + v + "';"
+    print 'var fileName = "' + file_name + '"'
+    extensions = utils.getExtensions()
+    if len(extensions) > 0:
+        print 'var extensions = [];'
+        for e in extensions:
+            print "extensions.push('" + e + "');"
+
     print script_end
 
     print loadJSScript()
@@ -481,13 +482,6 @@ def build_lines(list_all):
                                 content_divID = "div-" + ijl
                                 script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), utils.getEnginUrlOtherInfo(list_all[i][j]))
 
-                                refHtml = utils.genReferenceHtml(list_all[i][j].get_id().strip(), content_divID + '-reference', default_links_row, div_reference_dict)
-                                if refHtml != '':
-                                    div_reference_dict[list_all[i][j].get_id().strip()] = refHtml
-
-                                contentHtml = utils.genContentHtml(list_all[i][j].get_id().strip(), content_divID + '-content', default_links_row, div_content_dict)
-                                if contentHtml != '':
-                                    div_content_dict[list_all[i][j].get_id().strip()] = contentHtml
 
                             if output_with_describe:
                                 script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
@@ -764,8 +758,6 @@ def print_list(all_lines, file_name = ''):
     global top_row, old_top_row, output_with_color, output_with_style
     if verify != '':
         file_name = verify
-    if html_style and file_name != '':
-        utils.loadMetadata(getFileNameFromPath(file_name))
 
     if html_style == True and output_with_color:
         output_with_color = False
@@ -858,7 +850,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(3)
             else:
-                getScript()
+                getScript(file_name)
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
@@ -918,7 +910,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(2)
             else:
-                getScript()
+                getScript(file_name)
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
@@ -963,7 +955,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(1)
             else:
-                getScript()
+                getScript(file_name)
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
@@ -1047,8 +1039,6 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
 
         full_path = os.path.join(dir_name, item)
         if os.path.isfile(full_path):
-            if verify =='':
-                utils.loadMetadata(getFileNameFromPath(full_path))
             for line in getLines(full_path):
                 all_lines.append(line)
         else:

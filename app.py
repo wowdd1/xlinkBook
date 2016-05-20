@@ -4,8 +4,13 @@ import os
 from flask import Flask
 from flask import request
 import subprocess
+from extension_manager import ExtensionManager
 app = Flask(__name__)
 
+
+
+
+extensionManager = ExtensionManager()
 @app.route('/', methods=['GET', 'POST'])
 def index():
     key = request.args.get('key', '')
@@ -40,6 +45,12 @@ def index():
         print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
         return html
+
+@app.route('/extensions', methods=['POST'])
+def test():
+    if request.args.get('verify', '') != '':
+        form['fileName'] = request.args.get('verify', '')
+    return extensionManager.doWork(request.form)
 
 
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa):
