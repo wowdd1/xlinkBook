@@ -133,8 +133,6 @@ class Utils:
 
     ddg_mode = False
 
-    record_reference = {}
-    record_content = {}
     alexa_dict = {}
 
     def __init__(self):
@@ -146,6 +144,14 @@ class Utils:
             return True
         return False
 
+    def getExtensions(self):
+        extensions = []
+        if os.path.exists('db/metadata/engin_extension'):
+            f = open('db/metadata/engin_extension', 'rU')
+            for line in f.readlines():
+                if line.strip() != '':
+                    extensions.append(line.strip())
+        return extensions
 
     def loadAlexa(self):
         if os.path.exists('db/rank/top500web-alexa2016'):
@@ -175,9 +181,17 @@ class Utils:
             for line in all_lines:
                 if line.startswith('#'):
                     continue
-                record = Record(line)
-                if record.get_title() != '':
-                    self.search_engin_type.append(record.get_title().strip())
+                if line.strip() != '':
+                    self.search_engin_type.append(line.strip().strip())
+        if os.path.exists('db/metadata/engin_extension'):
+            f = open('db/metadata/engin_extension','rU')
+            all_lines = f.readlines()
+            for line in all_lines:
+                if line.startswith('#'):
+                    continue
+                if line.strip() != '':
+                    self.search_engin_type.append(line.strip().strip())
+
     def loadDDGEngins(self):
         year = int(time.strftime('%Y',time.localtime(time.time())))
         if os.path.exists('db/metadata/engin_list-duckduckgo' + str(year)):
@@ -198,47 +212,6 @@ class Utils:
                 if record.get_title() != '':
                     self.ddg_search_engin_type.append(record.get_title().strip())
 
-    def loadMetadata(self, filename):
-        self.loadReference(filename)
-        self.loadContent(filename)
-
-    def loadReference(self, filename):
-        name = 'db/metadata/' + filename + '-reference'
-        if os.path.exists(name):
-            f = open(name, 'rU')
-            all_lines = f.readlines()
-            for line in all_lines:
-                if line.startswith('#'):
-                    continue
-                record = ReferenceRecord(line)
-                key = record.get_id().strip()
-                if self.record_reference.has_key(key):
-                    self.record_reference[key].append(record)
-                else:
-                    self.record_reference[key] = [record]
-       
-        #for (k, v) in self.record_reference.items():
-        #    print k
-
-    def loadContent(self, filename):
-        name = 'db/metadata/' + filename + '-content'
-        if os.path.exists(name):
-            f = open(name, 'rU')
-            all_lines = f.readlines()
-            for line in all_lines:
-                if line.startswith('#'):
-                    continue
-                record = ContentRecord(line)
-                if record.get_title().strip() == '':
-                    continue
-                key = record.get_parentid().strip()
-                if self.record_content.has_key(key):
-                    self.record_content[key].append(record)
-                else:
-                    self.record_content[key] = [record]
-
-        #for (k, v) in self.record_content.items():
-        #    print k
 
     def getAlexaRank(self, engin):
         engin = engin.lower().strip()
@@ -251,83 +224,6 @@ class Utils:
                         if title.find(engin) != -1 or engin.find(title) != -1:
                             return r.get_id()[r.get_id().find('-') + 1 : ].strip()
         return '0'
-
-    def genReferenceHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
-        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'reference', index)
-
-    def genContentHtml(self, key, content_divID, default_links_row, div_reference_dict, index=''):
-        return self.genMetadataHtml(key, content_divID, default_links_row, div_reference_dict, 'content', index)
-
-    def genMetadataHtml(self, key, content_divID, default_links_row, div_dict, dataType, index=''):
-        html = '<div class="ref"><ol>'
-        count = 0
-        newIndex = ''
-        if dataType == 'content' and self.record_content.has_key(key):
-            #print key
-            for r in self.record_content[key]:
-                count += 1
-                if index == '':
-                    newIndex = str(count) + '.'
-                else:
-                    newIndex = index + str(count) + '.'
-                format_index = ''
-                if r.get_id().find('-') != -1:
-                    format_index = r.get_id()[r.get_id().find('-') + 1 :].strip()
-                else:
-                    format_index = newIndex
-                   
-                html += '<li><span>' + format_index + '</span>'
-                if len(format_index) > 4:
-                    html += '</li><br\><li>'
-                if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
-                    content_divID += '-' + str(count)
-                    linkID = 'a-' + content_divID[content_divID.find('-') + 1 :] 
-                    title = r.get_title().strip().replace(' ', '%20')
-                    script = self.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), title, '-')
-                    if r.get_url().strip() != '':
-                        html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
-                    else:
-                        html += '<p>' + r.get_title().strip()
-                    html += self.getDefaultEnginHtml(title, default_links_row)
-                    if script != "":
-                        html += self.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
-                    contentHtml = self.genContentHtml(r.get_id().strip(), content_divID + '-child', default_links_row, div_dict, newIndex)
-                    if contentHtml != '':
-                        div_dict[r.get_id().strip()] = contentHtml
-                    html += '</p>'
-                elif r.get_url().strip() != '':
-                    html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
-                    #html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
-
-                html += '</li>'
-        elif dataType == 'reference' and self.record_reference.has_key(key):
-            for r in self.record_reference[key]:
-                count += 1
-                html += '<li><span>' + str(count) + '.</span>'
-                html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
-                html += '</li>'
-        else:
-            return ''
-
-        html += "</ol></div>"
-        return html
-
-    def genMetadataLink(self, title, url):
-        if url.find('[') != -1:
-            ft = url.replace('[', '').replace(']', '').strip()
-            r = self.getRecord(ft, '','', False, False)
-            key = r.get_path()[r.get_path().find(default_subject) + len(default_subject) + 1 :]
-            url = 'http://localhost:5000?db=' + default_subject + '/&key=' + key + '&filter=' + ft  + '&desc=true'
-            
-        return self.genMetadataLinkEx(title, url)
-
-
-    def genMetadataLinkEx(self, title, url):
-        if title.find('<a>') != -1:
-            title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
-        else:
-            title = '<a target="_blank" href="' + url + '">' + title + '</a>'
-        return title
 
                 
     def removeDoubleSpace(self, text):

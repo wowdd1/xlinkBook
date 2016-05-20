@@ -1,3 +1,5 @@
+var args = []
+
 function setText(objN){
     var clicktext=document.getElementById(objN);
     if (clicktext.innerText == "..."){
@@ -76,6 +78,25 @@ function navTopic(obj, divID, parentDivID, countIndex){
     } else {
         target.style.display="";
     }
+    for (var i = 0; i < extensions.length; i++) {
+        console.log('zzz', extensions[i]);
+        for (var j = 0; j < args[divID].length; j++) {
+            console.log('args', args[divID][j])
+        }
+        if (extensions[i] == obj.text) { 
+            var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName}
+            if (obj.text == "content") {
+                postArgs["divID"] = divID + "-content"
+                postArgs["defaultLinks"] = 2
+            }
+            $.post('/extensions', postArgs)
+             .done(function(data){
+                 console.log('return', data);
+                 target.innerHTML = "";
+                 target.innerHTML = data;
+             });
+        }
+    }
 }
 function showdiv_2(targetid){
       var target=document.getElementById(targetid);
@@ -90,6 +111,7 @@ function hidendiv_2(targetid){
                 target.style.display="none";
 }
 function appendContent(targetid, id, topic, otherInfo){
+    args[targetid] = [id, topic];
     var target=document.getElementById(targetid);
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);
     console.log("xx", reference[id]);
@@ -97,13 +119,13 @@ function appendContent(targetid, id, topic, otherInfo){
         var referenceDiv = document.getElementById(targetid + "-reference");
         referenceDiv.innerHTML =reference[id];
     } else{
-        hidenMetadata(targetid, "reference");
+        //hidenMetadata(targetid, "reference");
     }
     if (typeof(content[id]) != "undefined"){
         var contentDiv = document.getElementById(targetid + "-content");
         contentDiv.innerHTML = content[id];
     } else{
-        hidenMetadata(targetid, "content");
+        //hidenMetadata(targetid, "content");
     }
 }
 function hidenMetadata(targetid, datatype){
