@@ -14,7 +14,7 @@ class CSDNBlogSpider(Spider):
         
 
     def doWork(self):
-        data = {'laoluo' : ['http://blog.csdn.net/luoshengyang', '计划']}
+        data = {'laoluo' : ['http://blog.csdn.net/luoshengyang', ['计划', '启动篇']]}
 
         for k, v in data.items():
             user_agent = {'User-agent': 'Mozilla/5.0'}
@@ -44,7 +44,7 @@ class CSDNBlogSpider(Spider):
                         self.cancel_upgrade(file_name)
                         print "no need upgrade\n"
 
-    def getPages(self, f, rID, url, start, end, key=''):
+    def getPages(self, f, rID, url, start, end, keys=[]):
         parentID = ''
         for page in list(reversed(range(int(start), int(end) + 1))):
             #print str(page)
@@ -70,13 +70,19 @@ class CSDNBlogSpider(Spider):
                     comments = link_comments.text.strip()[link_comments.text.strip().find('(') : ]
                     self.count += 1
                     desc = "description:" + div_description.text.strip() + ' ' + link_postdate.text.strip() + ' ' + view + ' ' + comments
-                    if key != '':
-                        if div_title.text.find(key) != -1:
+                    if len(keys) > 0:
+                        if self.containKey(keys, div_title.text):
                             parentID = rID + "-" + str(self.count)
                         elif parentID != '':
                             desc = "parentid:" + parentID  + " "  + desc
 
                     self.write_db(f, rID + "-" + str(self.count), div_title.text.strip(), link, desc)
+
+    def containKey(self, keys, text):
+        for key in keys:
+            if text.find(key) != -1:
+                return True
+        return False
 
 start = CSDNBlogSpider()
 start.doWork()
