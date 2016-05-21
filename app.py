@@ -71,7 +71,7 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     if navigation != "false":
         cmd += " -n "    
     if ft != '':
-        cmd += ' -f ' + ft + ' '
+        cmd += ' -f ' + ft.replace('or', '#or').replace('and', '#and').replace('not', '#not') + ' '
     if merger == 'true':
         cmd += ' -m '
     if level != '':

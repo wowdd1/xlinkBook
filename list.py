@@ -701,8 +701,8 @@ def filter(keyword, data):
                     continue
                 if match(con, data):
                     return False
-
-        if keyword.find('#and') != -1:
+            return True
+        elif keyword.find('#and') != -1:
             conditions = keyword.split('#and')
             for con in conditions:
                 if con.strip() == '':
@@ -710,14 +710,14 @@ def filter(keyword, data):
                 if match(con, data) == False:
                     return False
             return True
-
-        if keyword.find('#or') != -1:
+        elif keyword.find('#or') != -1:
             conditions = keyword.split('#or')
             for con in conditions:
                 if con.strip() == '':
                     continue
                 if match(con, data):
                     return True
+            return False
         
     return match(keyword, data)
     
