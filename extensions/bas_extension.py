@@ -3,7 +3,7 @@
 
 class BaseExtension:
     name = ''
-
+    basePath = 'extensions/'
     def __init__(self):
         self.name = ''
 
