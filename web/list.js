@@ -122,7 +122,7 @@ function appendContent(targetid, id, topic, otherInfo){
         var referenceDiv = document.getElementById(targetid + "-reference");
         referenceDiv.innerHTML =reference[id];
     } else{
-        $('#' + targetid + "-reference").load('/extensions', {name : 'content', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
+        $('#' + targetid + "-reference").load('/extensions', {name : 'reference', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
            if (data == "false") {
                hidenMetadata(targetid, "reference");
            }
