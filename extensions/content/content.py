@@ -6,8 +6,10 @@ from extensions.bas_extension import BaseExtension
 from utils import Utils
 from update.all_subject import default_subject
 from record import ContentRecord
-
-
+import requests
+reload(sys)
+sys.setdefaultencoding("utf-8")
+from bs4 import BeautifulSoup
 
 class Content(BaseExtension):
 
@@ -18,7 +20,10 @@ class Content(BaseExtension):
         BaseExtension.__init__(self)
         self.utils = Utils()
 
-    def loadContent(self, filename):
+    def loadContent(self, rID, filename):
+        if len(self.record_content) != 0 and self.record_content.has_key(rID):
+            return
+
         name = 'extensions/content/data/' + filename + '-content'
         if os.path.exists(name):
             f = open(name, 'rU')
@@ -38,17 +43,38 @@ class Content(BaseExtension):
         #for (k, v) in self.record_content.items():
         #    print k
 
-    
     def excute(self, form_dict):
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
-        if len(self.record_content) == 0:
-            fileName = form_dict['fileName'].encode('utf8')
-            while (fileName.find('/') != -1) :
-                fileName = fileName[fileName.find('/') + 1 :].strip()
-            self.loadContent(fileName)
+        fileName = form_dict['fileName'].encode('utf8')
+        self.loadContent(rID, self.formatFileName(fileName))
         return self.genContentHtml(rID, divID, form_dict['defaultLinks'])
+        '''
+        r = requests.get('https://www.google.com.hk/search?q=jquery+load&oq=jqload&aqs=chrome.1.69i57j0l5.9057j0j7&sourceid=chrome&ie=UTF-8')
+        soup = BeautifulSoup(r.text) 
+        for a in soup.find_all('a'):
+            if a['href'].startswith('http') == False:
+                a['href'] = 'https://www.google.com.hk' + a['href']
+        return r.text
+        '''
 
+    def check(self, form_dict):
+        rID = form_dict['rID'].encode('utf8')
+        fileName = form_dict['fileName'].encode('utf8')
+        self.loadContent(rID, self.formatFileName(fileName))
+        #print self.record_content
+        if self.record_content.has_key(rID):
+            return 'true'
+        else:
+            return 'false'
+        
+
+    def write(self, html):
+        f = open('temp/test.html', 'w')
+        for line in html:
+            f.write(line)
+        #print 'write ' + html + ' to file'
+        f.close
 
     def genContentHtml(self, key, content_divID, defaultLinks):
         return self.genMetadataHtml(key, content_divID, defaultLinks)

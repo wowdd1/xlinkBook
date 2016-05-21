@@ -84,16 +84,19 @@ function navTopic(obj, divID, parentDivID, countIndex){
             console.log('args', args[divID][j])
         }
         if (extensions[i] == obj.text) { 
-            var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName}
+            var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false'}
             if (obj.text == "content") {
                 postArgs["divID"] = divID + "-content"
                 postArgs["defaultLinks"] = 2
             }
-            $.post('/extensions', postArgs)
-             .done(function(data){
+              
+            $('#' + targetid).load('/extensions', postArgs, function(data){
                  console.log('return', data);
-                 target.innerHTML = "";
-                 target.innerHTML = data;
+                 if (data == "") {
+                     obj.style.display="none"
+                 }
+                 //target.innerHTML = "";
+                 //target.innerHTML = data;
              });
         }
     }
@@ -119,12 +122,23 @@ function appendContent(targetid, id, topic, otherInfo){
         var referenceDiv = document.getElementById(targetid + "-reference");
         referenceDiv.innerHTML =reference[id];
     } else{
+        $('#' + targetid + "-reference").load('/extensions', {name : 'content', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
+           if (data == "false") {
+               hidenMetadata(targetid, "reference");
+           }
+        });
         //hidenMetadata(targetid, "reference");
     }
     if (typeof(content[id]) != "undefined"){
         var contentDiv = document.getElementById(targetid + "-content");
         contentDiv.innerHTML = content[id];
     } else{
+        $('#' + targetid + "-content").load('/extensions', {name : 'content', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
+           if (data == "false") {
+               //$('#' + targetid + "-content").style.display="none";
+               hidenMetadata(targetid, "content");
+           } 
+        });
         //hidenMetadata(targetid, "content");
     }
 }

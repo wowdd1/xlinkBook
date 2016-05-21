@@ -53,6 +53,15 @@ def test():
     return extensionManager.doWork(request.form)
 
 
+@app.route('/temp/<page>', methods=['GET', 'POST'])
+def temp(page):
+    print page
+    f = open('temp/test.html', 'rU')
+    data = f.read()
+    print data
+    f.close()
+    return data
+
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa):
     cmd = "./list.py -i db/" + db + key + " -b 4"
     if db != '':
@@ -136,6 +145,6 @@ def genList(files, folder='', db=''):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
 
