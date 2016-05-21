@@ -47,12 +47,12 @@ def index():
         return html
 
 @app.route('/extensions', methods=['POST'])
-def test():
+def handleExtension():
     if request.args.get('verify', '') != '':
         form['fileName'] = request.args.get('verify', '')
     return extensionManager.doWork(request.form)
 
-
+'''
 @app.route('/temp/<page>', methods=['GET', 'POST'])
 def temp(page):
     print page
@@ -61,6 +61,7 @@ def temp(page):
     print data
     f.close()
     return data
+'''
 
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa):
     cmd = "./list.py -i db/" + db + key + " -b 4"
