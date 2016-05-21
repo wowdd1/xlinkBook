@@ -35,6 +35,8 @@ class Content(BaseExtension):
                 if record.get_title().strip() == '':
                     continue
                 key = record.get_parentid().strip()
+                if key != rID:
+                    continue
                 if self.record_content.has_key(key):
                     self.record_content[key].append(record)
                 else:
