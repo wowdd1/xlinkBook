@@ -16,6 +16,8 @@ class Reference(BaseExtension):
         self.utils = Utils()
 
     def loadReference(self, filename, rID):
+        if len(self.record_reference) != 0 and self.record_reference.has_key(rID):
+            return
         name = 'extensions/reference/data/' + filename + '-reference'
         if os.path.exists(name):
             f = open(name, 'rU')
@@ -37,17 +39,23 @@ class Reference(BaseExtension):
         #    print k
 
     def excute(self, form_dict):
-        if self.html != '':
-            return self.html
       
         fileName = form_dict['fileName'].encode('utf8')
-        while (fileName.find('/') != -1) :
-            fileName = fileName[fileName.find('/') + 1 :].strip()
-        rID = form_dict['rID']
-        if len(self.record_reference) == 0:
-            self.loadReference(fileName, rID)
-        print self.record_reference
+        rID = form_dict['rID'].encode('utf8')
+        self.loadReference(self.formatFileName(fileName), rID)
+        #print self.record_reference
         return self.genReferenceHtml(rID)
+
+
+    def check(self, form_dict):
+        fileName = form_dict['fileName'].encode('utf8')
+        rID = form_dict['rID'].encode('utf8')
+        self.loadReference(self.formatFileName(fileName), rID)
+        if self.record_reference.has_key(rID):
+            return 'true'
+        else:
+            return 'false'
+                
 
 
     def genReferenceHtml(self, rID):

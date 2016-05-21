@@ -12,4 +12,10 @@ class BaseExtension:
     def excute(form_dict):
         return    
 
+    def check(self, form_dict):
+        return 'true'
 
+    def formatFileName(self, fileName):
+        while (fileName.find('/') != -1) :
+            fileName = fileName[fileName.find('/') + 1 :].strip()
+        return fileName
