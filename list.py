@@ -729,6 +729,10 @@ def getLines(file_name):
     if os.path.exists(file_name):
         f = open(file_name,'rU')
         all_lines = f.readlines()
+        #for line in f.readlines():
+        #    record = Record(line)
+            #if record.get_describe().find('parentid:') == -1:
+            #    all_lines.append(line)
         if filter_keyword != "":
             filter_result = []
             for line in all_lines:

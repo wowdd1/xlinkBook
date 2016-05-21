@@ -14,33 +14,35 @@ from bs4 import BeautifulSoup
 class Content(BaseExtension):
 
     record_content = {}
+
+    datafile_content = {}
+    optional_content = {}
    
 
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
 
-    def loadContent(self, rID, filename):
-        if len(self.record_content) != 0 and self.record_content.has_key(rID):
+    def loadContent(self, rID, name, content):
+        if len(content) != 0 and content.has_key(rID):
             return
 
-        name = 'extensions/content/data/' + filename + '-content'
         if os.path.exists(name):
             f = open(name, 'rU')
             all_lines = f.readlines()
             for line in all_lines:
-                if line.startswith('#'):
-                    continue
                 record = ContentRecord(line)
+                if line.startswith('#') or record.get_parentid() == None:
+                    continue
                 if record.get_title().strip() == '':
                     continue
                 key = record.get_parentid().strip()
                 if key != rID:
                     continue
-                if self.record_content.has_key(key):
-                    self.record_content[key].append(record)
+                if content.has_key(key):
+                    content[key].append(record)
                 else:
-                    self.record_content[key] = [record]
+                    content[key] = [record]
 
         #for (k, v) in self.record_content.items():
         #    print k
@@ -49,7 +51,10 @@ class Content(BaseExtension):
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
-        self.loadContent(rID, self.formatFileName(fileName))
+        self.loadContent(rID, fileName, self.optional_content)
+
+        self.loadContent(rID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
+
         return self.genContentHtml(rID, divID, form_dict['defaultLinks'])
         '''
         r = requests.get('https://www.google.com.hk/search?q=jquery+load&oq=jqload&aqs=chrome.1.69i57j0l5.9057j0j7&sourceid=chrome&ie=UTF-8')
@@ -60,12 +65,16 @@ class Content(BaseExtension):
         return r.text
         '''
 
+    def getExtensionDataFilePath(self, name):
+        return 'extensions/content/data/' + name + '-content'
+
     def check(self, form_dict):
         rID = form_dict['rID'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
-        self.loadContent(rID, self.formatFileName(fileName))
+        self.loadContent(rID, fileName, self.optional_content)
+        self.loadContent(rID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
         #print self.record_content
-        if self.record_content.has_key(rID):
+        if self.datafile_content.has_key(rID) or self.optional_content.has_key(rID):
             return 'true'
         else:
             return 'false'
@@ -84,6 +93,11 @@ class Content(BaseExtension):
     def genMetadataHtml(self, key, content_divID, defaultLinks):
         html = '<div class="ref"><ol>'
         count = 0
+        if self.datafile_content.has_key(key):
+            self.record_content = self.datafile_content
+        elif self.optional_content.has_key(key):
+            self.record_content = self.optional_content
+
         if self.record_content.has_key(key):
             #print key
             for r in self.record_content[key]:
@@ -100,6 +114,7 @@ class Content(BaseExtension):
                 html += '<li><span>' + format_index + '</span>'
                 if len(format_index) > 4:
                     html += '</li><br/><li>'
+                
                 if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
                     content_divID += '-' + str(count)
                     linkID = 'a-' + content_divID[content_divID.find('-') + 1 :]
@@ -112,15 +127,11 @@ class Content(BaseExtension):
                     html += self.utils.getDefaultEnginHtml(title, defaultLinks)
                     if script != "":
                         html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
-                    #contentHtml = self.genContentHtml(r.get_id().strip(), content_divID + '-child', defaultLinks, newIndex)
-                    #if contentHtml != '':
-                    #    html += contentHtml
-                        #div_dict[r.get_id().strip()] = contentHtml
                     html += '</p>'
                 elif r.get_url().strip() != '':
                     html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
-                    #html += '<a target="_blank" href="' + r.get_url().strip() + '"><p>' + r.get_title().strip() + '</p></a>'
-
+                #if r.get_describe() != None and r.get_describe().strip() != '':
+                #    html += "<div>description:" + r.get_describe().strip() + "</div>"
                 html += '</li>'
         else:
             return ''
