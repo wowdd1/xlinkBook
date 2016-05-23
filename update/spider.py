@@ -130,11 +130,13 @@ class Spider:
                     print "creating " + file_name[0:index] + " dir"
                     os.makedirs(file_name[0:index])
         
-    def open_db(self, file_name):
+    def open_db(self, file_name, append=False):
         self.create_dir_by_file_name(file_name)
-    
+        flag = 'w'
+        if append:
+            flag = 'a'
         try:
-            f = open(file_name, "w")
+            f = open(file_name, flag)
         except IOError, err:
             print str(err)
         return f

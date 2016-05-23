@@ -70,9 +70,13 @@ class Tag():
         self.tag_priority = "priority:"
         self.tag_parentid = "parentid:"
        
+        self.tag_category = "category:"
+        self.tag_summary = "summary"
+        self.tag_published = "published"
+
         self.tag_list = [self.tag_videourl, self.tag_author, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid]
+                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published]
 
         self.tag_list_short = ["d:"]
 
@@ -110,6 +114,23 @@ class WrapRecord(Record):
                 return self.describe[start_pos + len(tag) : ]
 
         return None
+
+class PaperRecord(WrapRecord):
+    def __init__(self, line):
+        WrapRecord.__init__(self, line)
+
+    def get_author(self):
+        return self.get_tag_content(self.tag.tag_author)
+
+    def get_category(self):
+        return self.get_tag_content(self.tag.tag_category)
+
+    def get_summary(self):
+        return self.get_tag_content(self.tag.tag_summary)
+
+    def get_published(self):
+        return self.get_tag_content(self.tag.tag_published)
+
 
 
 class PriorityRecord(WrapRecord):

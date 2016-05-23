@@ -294,7 +294,7 @@ class Utils:
         if r.get_author() != None:
             author = r.get_author().strip() 
             if author != '':
-                return "&user=" + author;
+                return "&user=" + author.replace(' ', '%20');
         return ""
 
     def getEnginUrlEx(self, engin, keyword, query=''):
@@ -491,7 +491,9 @@ class Utils:
         script = ''
         script += "setText('" + linkID +"');"
         script += "showdiv('" + content_divID + "','" + linkID +"');"
-        script += "appendContent('" + content_divID + "','" + id + "','" + title.replace('"', ' ').replace("'",' ').replace('&', '%20') + "','" + info + "');"
+        title = title.replace('"', '%20').replace("'",'%20').replace('&', '%20').replace(' ', '%20')
+        info = info.replace('"', '%20').replace("'",'%20').replace('&', '%20').replace(' ', '%20')
+        script += "appendContent('" + content_divID + "','" + id + "','" + title + "','" + info + "');"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
