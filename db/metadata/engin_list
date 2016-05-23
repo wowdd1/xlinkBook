@@ -12,7 +12,7 @@ engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | pr
 engin-12 | amazon | https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | priority:8 description:book product star
 engin-13 | nap | http://www.nap.edu/search/?term= | priority:0 description:book
 engin-14 | hathitrust | http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1= | priority:0 description:book
-engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | priority:0 description:book
+engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | priority:0 description:ndisk
 engin-16 | wowebook | http://www.wowebook.co/?s= | priority:0 description:book
 engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | priority:0 description:paper
 engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | priority:0 description:paper
@@ -265,16 +265,16 @@ engin-261 | youdao | http://dict.youdao.com/search?q=$&ue=utf8&keyfrom=web.index
 engin-262 | iciba | http://www.iciba.com/ | priority:0 description:tools
 engin-263 | calendar | https://calendar.google.com/calendar/render?hl=zh_cn&pli=1#main_7&q= | priority:0 description:tools
 engin-264 | cal.supfree | http://cal.supfree.net/?q= | priority:0 description:tools
-engin-265 | pan.baidu | http://pan.baidu.com/disk/home#search/key= | priority:0 description:tools
+engin-265 | pan.baidu | http://pan.baidu.com/disk/home#search/key= | priority:0 description:ndisk
 engin-266 | presentation | https://docs.google.com/presentation/u/0/?q= | priority:0 description:tools
 engin-267 | spreadsheets | https://docs.google.com/spreadsheets/u/0/?q= | priority:0 description:tools
 engin-268 | document | https://docs.google.com/document/u/0/?q= | priority:0 description:tools
-engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 description:tools
+engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 description:ndisk
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:0 description:tools
 engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:0 description:tools
-engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:tools
+engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:ndisk
 engin-273 | mail | https://mail.google.com/mail/u/0/#search/ | priority:0 description:tools
-engin-274 | dropbox | https://www.dropbox.com/search/personal?query=$&query_unnormalized=$&last_fq_path= | priority:0 description:tools
+engin-274 | dropbox | https://www.dropbox.com/search/personal?query=$&query_unnormalized=$&last_fq_path= | priority:0 description:ndisk
 engin-275 | dotnetrocks | https://www.dotnetrocks.com/?q= | priority:0 description:podcast
 engin-276 | voanews | http://www.voanews.com/search/search2.aspx#all|$|0|allzones|min|now|date | priority:0 description:podcast
 engin-277 | onrad | http://onrad.io/ | priority:0 description:podcast

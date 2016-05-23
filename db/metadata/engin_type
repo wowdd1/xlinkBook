@@ -4,6 +4,7 @@ organization
 news
 q-a
 p2p
+ndisk
 website
 wiki
 paper
@@ -11,15 +12,15 @@ journal
 course
 slide
 book
-blog
 project
 code
 dataset
 patent
-event
 people
-talk
+blog
 tutorial
+talk
+event
 podcast
 develop
 design
