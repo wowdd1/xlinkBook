@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8-*-  
 
 import os
 from flask import Flask
@@ -13,6 +14,7 @@ app = Flask(__name__)
 extensionManager = ExtensionManager()
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    print  request.args.get('column', '')
     key = request.args.get('key', '')
     if key == '':
         key = '?'
@@ -71,7 +73,8 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     if navigation != "false":
         cmd += " -n "    
     if ft != '':
-        cmd += ' -f ' + ft.replace('or', '#or').replace('and', '#and').replace('not', '#not') + ' '
+        #cmd += ' -f ' + ft + ' '
+        cmd += ' -f ' + ft.replace('-or-', '#or').replace('-and-', '#and').replace('-not-', '#not') + ' '
     if merger == 'true':
         cmd += ' -m '
     if level != '':
@@ -111,7 +114,7 @@ def genTable(files, folder= '', db=''):
     count = 0
     column_num = int(request.args.get('column', '3'));
     tds = ''
-    for f in files:
+    for f in sorted(files,  cmp=lambda x,y : cmp(len(x), len(y))):
        count += 1
        if os.path.isfile(os.path.join(folder, f)):
            tds += '<td><a href="http://localhost:5000/?db=' + db+  '&key=' + f + '">' + str(count) + '. ' + f + '<a></td>'
@@ -130,7 +133,7 @@ def genTable(files, folder= '', db=''):
 
 def genList(files, folder='', db=''):
     html = '<ol>'
-    for f in files:
+    for f in sorted(files):
         if os.path.isfile(os.path.join(folder, f)):
             html += '<li><a href="http://localhost:5000/?db=' + db+  '&key=' + f + '">' + f + '<a></li>'
         else:
