@@ -19,6 +19,7 @@ from record import Record
 from record import PriorityRecord
 from record import CourseRecord
 from record import ReferenceRecord
+from record import PaperRecord
 from record import ContentRecord
 import time
 
@@ -585,6 +586,64 @@ class Utils:
             else:
                 final_file_list += self.find_file_by_pattern(pattern, full_path)
         return final_file_list
+
+    def sortLines(self, lines):
+        if len(lines) > 0 and lines[0].find('published:') != -1:
+            return self.quickSort(lines)
+        else:
+            return lines
+
+    def largeoreq(self, item1, item2):
+        r1 = PaperRecord(item1)
+        r2 = PaperRecord(item2)
+        return r1.get_published().strip() >= r2.get_published().strip()
+
+    def lessoreq(self, item1, item2):
+        r1 = PaperRecord(item1)
+        r2 = PaperRecord(item2)
+        return r1.get_published().strip() <= r2.get_published().strip()
+
+    def quickSort(self, alist):
+        self.quickSortHelper(alist,0,len(alist)-1)
+
+    def quickSortHelper(self, alist,first,last):
+        if first<last:
+
+            splitpoint = self.partition(alist,first,last)
+
+            self.quickSortHelper(alist,first,splitpoint-1)
+            self.quickSortHelper(alist,splitpoint+1,last)
+
+
+    def partition(self, alist,first,last):
+        pivotvalue = alist[first]
+
+        leftmark = first+1
+        rightmark = last
+
+        done = False
+        while not done:
+
+            while leftmark <= rightmark and self.largeoreq(alist[leftmark], pivotvalue):
+                leftmark = leftmark + 1
+
+            while self.lessoreq(alist[rightmark], pivotvalue) and rightmark >= leftmark:
+                rightmark = rightmark -1
+
+            if rightmark < leftmark:
+                done = True
+            else:
+                temp = alist[leftmark]
+                alist[leftmark] = alist[rightmark]
+                alist[rightmark] = temp
+
+        temp = alist[first]
+        alist[first] = alist[rightmark]
+        alist[rightmark] = temp
+
+
+        return rightmark
+
     
     def getColorStr(self, color, t):
         return '\033[' + self.cc_map[color] + 'm{0}\033[0m'.format(t)
