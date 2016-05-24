@@ -12,6 +12,8 @@ import random
 sys.path.append("..")
 from utils import Utils
 from record import Record
+from record import PaperRecord
+from random import randint
 
 '''
 prefix  explanation
@@ -225,20 +227,22 @@ class ArxivSpider(Spider):
                 f = open(fileName, 'rU')
                 lines = f.readlines()
                 for line in lines:
-                    record = Record(line)
+                    record = PaperRecord(line)
                     rawid, version = self.parse_arxiv_url(record.get_url().replace('.pdf', ''))
-                    self.rawid_version_dict[str(rawid)] = version
+                    self.rawid_version_dict[str(rawid)] = record.get_published().strip()
 
                 f.close()
 
         incremental_list = []
         for paper in all_papers:
             rawid, version = self.parse_arxiv_url(paper['id'])
-            if not self.rawid_version_dict.has_key(rawid):
+            published = paper['published'][0 : paper['published'].find('T')].strip() 
+            old_published = self.rawid_version_dict.items()[randint(0, len(self.rawid_version_dict) - 1)][1]
+            if not self.rawid_version_dict.has_key(rawid) and published >= old_published:
+                print published + ' >= ' + old_published
                 incremental_list.append(paper)
         print len(incremental_list)
         if len(incremental_list) > 0:
-
             incfile = self.open_db(self.incremental_file, True)
             self.savePapers(incfile, incremental_list, len(incremental_list))
             self.close_db(incfile)
@@ -332,6 +336,7 @@ class ArxivSpider(Spider):
             f.close()
 
             if len(lines) >= self.batch_size:
+                self.utils.sortLines(lines)
                 while (len(lines) > 0):
                     write_lines = lines[len(lines) - self.batch_size : ]
                     self.saveIncrementalPapers(write_lines) 
