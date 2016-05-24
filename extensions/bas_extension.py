@@ -13,7 +13,7 @@ class BaseExtension:
         return    
 
     def check(self, form_dict):
-        return 'true'
+        return True
 
     def formatFileName(self, fileName):
         while (fileName.find('/') != -1) :

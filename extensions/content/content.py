@@ -74,10 +74,7 @@ class Content(BaseExtension):
         self.loadContent(rID, fileName, self.optional_content)
         self.loadContent(rID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
         #print self.record_content
-        if self.datafile_content.has_key(rID) or self.optional_content.has_key(rID):
-            return 'true'
-        else:
-            return 'false'
+        return self.datafile_content.has_key(rID) or self.optional_content.has_key(rID)
         
 
     def write(self, html):
