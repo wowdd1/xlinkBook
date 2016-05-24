@@ -64,6 +64,8 @@ def temp(page):
     return data
 
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa):
+    if db.endswith('/') == False:
+        db += '/'
     cmd = "./list.py -i db/" + db + key + " -b 4"
     if db != '':
         cmd += ' -u ' + db + ' ' #+ db.replace('/', '') + ' '
