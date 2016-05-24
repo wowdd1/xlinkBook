@@ -589,19 +589,21 @@ class Utils:
 
     def sortLines(self, lines):
         if len(lines) > 0 and lines[0].find('published:') != -1:
-            return self.quickSort(lines)
+            record_list = []
+            for line in lines:
+                record_list.append(PaperRecord(line))
+            return self.quickSort(record_list)
         else:
             return lines
 
+    def sortRecords(self, records):
+        return self.quickSort(records)
+
     def largeoreq(self, item1, item2):
-        r1 = PaperRecord(item1)
-        r2 = PaperRecord(item2)
-        return r1.get_published().strip() >= r2.get_published().strip()
+        return item1.get_published().strip() >= item2.get_published().strip()
 
     def lessoreq(self, item1, item2):
-        r1 = PaperRecord(item1)
-        r2 = PaperRecord(item2)
-        return r1.get_published().strip() <= r2.get_published().strip()
+        return item1.get_published().strip() <= item2.get_published().strip()
 
     def quickSort(self, alist):
         self.quickSortHelper(alist,0,len(alist)-1)

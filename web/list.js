@@ -118,6 +118,20 @@ function appendContent(targetid, id, topic, otherInfo){
     var target=document.getElementById(targetid);
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);
     console.log("xx", reference[id]);
+
+    hidenMetadata(targetid, "reference", "none");
+    hidenMetadata(targetid, "content", "none");
+    hidenMetadata(targetid, "similar", "none");
+    $.post('/extensions', {name : '*', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
+        if (data != '') {
+            console.log("xx", data)
+            var extensions = data.split(" ");
+            for (var i = 0; i < extensions.length; i++) {
+                hidenMetadata(targetid, extensions[i], "");
+            }
+        }
+    });
+   /*
     if (typeof(reference[id]) != "undefined"){
         var referenceDiv = document.getElementById(targetid + "-reference");
         referenceDiv.innerHTML =reference[id];
@@ -137,12 +151,11 @@ function appendContent(targetid, id, topic, otherInfo){
         hidenMetadata(targetid, "content", "none");
         $('#' + targetid + "-content").load('/extensions', {name : 'content', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
            if (data == "true") {
-               //$('#' + targetid + "-content").style.display="none";
                hidenMetadata(targetid, "content", "");
            } 
         });
         //hidenMetadata(targetid, "content");
-    }
+    }*/
 }
 function hidenMetadata(targetid, datatype, value){
     var target=document.getElementById(targetid);

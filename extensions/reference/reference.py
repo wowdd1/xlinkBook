@@ -51,10 +51,7 @@ class Reference(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
-        if self.record_reference.has_key(rID):
-            return 'true'
-        else:
-            return 'false'
+        return self.record_reference.has_key(rID)
                 
 
 
@@ -70,7 +67,7 @@ class Reference(BaseExtension):
                 self.html += '<li><span>' + str(count) + '.</span>'
                 self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
                 self.html += '</li>'
-            return self.html
+            return self.html + "</div>"
         else:
             return ''
 

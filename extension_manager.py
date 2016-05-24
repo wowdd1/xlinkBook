@@ -5,8 +5,12 @@ import json
 import sys
 
 class ExtensionManager:
+    
+    extensions = {}
 
-    def loadExtension(self, name):
+    def loadExtensions(self):
+        if len(self.extensions) > 0:
+            return
         base_path = os.getcwd() + '/extensions'
         #print '--->' + base_path
         dirList = os.listdir(base_path)
@@ -16,12 +20,19 @@ class ExtensionManager:
             if os.path.isdir(base_path + '/'+ f):
                 for f2 in os.listdir(base_path + '/'+ f):
                     if f2 == 'manifest':
-                        jobj = json.loads(open(base_path + '/'+ f + '/' + f2, 'rU').read())
-                        if jobj['name']  == name:
-                            return self.newExtension('extensions.' + f + '.' + jobj['module'], jobj['class'])
+                        self.extensions[f] = base_path + '/'+ f + '/' + f2
+                        break
+
+    def loadExtension(self, name):
+        if len(self.extensions) == 0:
+            self.loadExtensions()
+        for k, manifest in self.extensions.items():
+            jobj = json.loads(open(manifest, 'rU').read())
+            if jobj['name']  == name:
+                return self.newExtension('extensions.' + name + '.' + jobj['module'], jobj['class'])
 
     def newExtension(self, module, cls):
-       #print module
+       print module
        __import__(module)
        m = sys.modules[module]
       # print m
@@ -33,15 +44,31 @@ class ExtensionManager:
        return None
 
     def doWork(self, form):
-        extension = self.loadExtension(form['name'])
+        self.loadExtensions()
         check = form['check']
 
-        if extension != None:
-            if check == 'true':
-                return extension.check(form)
-            print 'ok'
-            return extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
+        if check == 'true':
+            if form['name'] == "*":
+                return self.checkAll(form)
+            else:
+                extension = self.loadExtension(form['name'])
+                if extension != None:
+                    if extension.check(form):
+                        return 'true'
+                    else:
+                        return 'false'
+                else:
+                    print 'error'
+                    return ''
         else:
-            print 'error'
-            return ''
+            extension = self.loadExtension(form['name'])
+            return extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
 
+    def checkAll(self, form):
+        result = ''
+        for k, v in self.extensions.items():
+            if self.loadExtension(k).check(form):
+                result += k + " "
+        print result
+        return result.strip()
+        
