@@ -1,7 +1,7 @@
-.ref {
-   width: 650px;
+/*.ref {
+   width: 500px;
    margin: 5px;
-}
+}*/
 ol {
    color: #ccc;
    list-style-type: none;
@@ -16,11 +16,16 @@ li p {
    padding-left: 40px;
    color: #555;
 }
+li a {
+   font: 14px/1.5 Helvetica, sans-serif;
+   color: #555;
+}
 
 ol li div {
    position: relative;
    font: 13px/1.5 Helvetica, Verdana, sans-serif;
    margin-bottom: 0px;
+   color: #555;
 }
 
 span {

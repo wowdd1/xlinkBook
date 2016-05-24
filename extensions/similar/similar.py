@@ -62,13 +62,28 @@ class Similar(BaseExtension):
         records = records[1 : ]
         for record in records:
             #html += '<li><span>' + record.get_id().strip() + '</span><br/>'
+            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + ".pdf.jpg"
+            authors = record.get_author().split(',')
+            categorys = record.get_category().split(' ')
+            date_cat =  record.get_published() + "&nbsp;&nbsp; " + self.genListHtml(categorys, "category:")
             html += '<li>'
-            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + "</a></p></li>"
-
+            html += '<a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div><image src="' + thumbs + '"></image><div>' + record.get_summary() + "<div></li><br/>"
         html += "</ol></div>"
         return html
 
-
+    def genListHtml(self, alist, category):
+        html = ''
+        for item in alist:
+            if item.strip() == "":
+                continue
+            html += '<a target="_blank" href="http://localhost:5000?db=eecs/papers/arxiv/&filter=' + category + item.strip().replace(' ', '%20') + '">'+ item.strip() + '</a>'
+            if item != alist[len(alist) - 1]:
+                html += ', '
+            else:  
+                html += ' '
+ 
+        return html
+       
 
     def check(self, form_dict):
         rID = form_dict['rID']
