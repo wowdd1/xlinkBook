@@ -197,7 +197,7 @@ class ArxivSpider(Spider):
         return parts[0], int(parts[1])  
 
     def getCounts(self):
-        countss = []
+        counts = []
         path = '../db/eecs/papers/arxiv'
         if os.path.exists(path) and os.path.isdir(path):
             for item in os.listdir(path):
@@ -207,18 +207,18 @@ class ArxivSpider(Spider):
                     num = int(num)
                 except Exception:
                     continue
-                countss.append(num)
-            countss = sorted(top_files, reverse=True)
-        return countss
+                counts.append(num)
+            counts = sorted(counts, reverse=True)
+        return counts
 
     def incrementalUpdate(self, all_papers):
         if len(self.rawid_version_dict) == 0:
             print 'loading history file'
-            countss = self.getCounts()
-            print countss
+            counts = self.getCounts()
+            print counts
             files = []
             for i in range(0, self.load_history_files):
-                files.append('../db/eecs/papers/arxiv/arxiv' + str(countss[i])+ '-arxiv2016')
+                files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2016')
 
             for fileName in files:
 
