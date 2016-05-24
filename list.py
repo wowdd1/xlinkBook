@@ -374,9 +374,24 @@ def getScript(file_name):
 
     print script_end
 
+    #mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
+    #print mathjs
+    #print '<script type="text/x-mathjax-config;executed=true">'
+    #print "MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});"
+    #print "</script>"
     print loadJSScript()
     print loadCSS()
-
+    ref_class = css_head
+    ref_class += '.ref { margin: 5px;'
+    if column_num == "3":
+        ref_class += "width: 450px;"
+    if column_num == "2":
+        ref_class += "width: 650px;"
+    if column_num == "1":
+        ref_class += "width: 700px;"
+    ref_class += "}"
+    ref_class += css_end
+    print ref_class
     if output_with_style:
         if css_style_type == 0:
             print css_style_0

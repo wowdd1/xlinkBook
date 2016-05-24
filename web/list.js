@@ -94,6 +94,9 @@ function navTopic(obj, divID, parentDivID, countIndex){
                  console.log('return', data);
                  if (data == "") {
                      obj.style.display="none"
+                 } else {
+                      //console.log('zzz', "MathJax.Hub.Queue " + targetid)
+                      //MathJax.Hub.Queue(["Typeset", MathJax.Hub, targetid]);
                  }
                  //target.innerHTML = "";
                  //target.innerHTML = data;
