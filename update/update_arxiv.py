@@ -214,25 +214,6 @@ class ArxivSpider(Spider):
         return counts
 
     def incrementalUpdate(self, all_papers):
-        if len(self.rawid_version_dict) == 0:
-            print 'loading history file'
-            counts = self.getCounts()
-            print counts
-            files = []
-            for i in range(0, self.load_history_files):
-                files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2016')
-
-            for fileName in files:
-
-                f = open(fileName, 'rU')
-                lines = f.readlines()
-                for line in lines:
-                    record = PaperRecord(line)
-                    rawid, version = self.parse_arxiv_url(record.get_url().replace('.pdf', ''))
-                    self.rawid_version_dict[str(rawid)] = record.get_published().strip()
-
-                f.close()
-
         incremental_list = []
         for paper in all_papers:
             rawid, version = self.parse_arxiv_url(paper['id'])
@@ -268,7 +249,27 @@ class ArxivSpider(Spider):
         all_papers = []
         num_added_total = start
         if self.incremental_mode:
-            self.incremental_file = self.get_file_name('eecs/papers/arxiv/arxiv-inc', self.school)
+
+            if len(self.rawid_version_dict) == 0:
+                print 'loading history file'
+                counts = self.getCounts()
+                print counts
+                files = []
+                for i in range(0, self.load_history_files):
+                    files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2016')
+
+                for fileName in files:
+
+                    f = open(fileName, 'rU')
+                    lines = f.readlines()
+                    for line in lines:
+                        record = PaperRecord(line)
+                        rawid, version = self.parse_arxiv_url(record.get_url().replace('.pdf', ''))
+                        self.rawid_version_dict[str(rawid)] = record.get_published().strip()
+
+                    f.close()
+
+            self.incremental_file = self.get_file_name('eecs/papers/arxiv/arxiv' + str(self.getCounts()[0])+ '-inc', self.school)
             if os.path.exists(self.incremental_file):
                 os.remove(self.incremental_file)
 
