@@ -607,6 +607,7 @@ def gen_html_body_v2(content, row, subRow):
         elif column_num == "1":
             verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td></tr>']
 
+        ct = content
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
             index = index + 1

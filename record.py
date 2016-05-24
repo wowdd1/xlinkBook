@@ -42,7 +42,7 @@ class Record():
         return self.line[self.get_pos(2) + 1 : self.get_pos(3)]
 
     def get_describe(self):
-        return self.line[self.get_pos(3) + 1 : ]
+        return self.line[self.get_pos(3) + 1 : ].replace('|', '')
 
 class Tag():
     def __init__(self):
