@@ -759,7 +759,8 @@ def print_list(all_lines, file_name = ''):
     old_line_2 = ""
     color_index = 0
     filter_keyword_2 = ''
-    utils.sortLines(all_lines)
+    if filter_keyword != '' and merger_result: 
+        utils.sortLines(all_lines)
 
     global top_row, old_top_row, output_with_color, output_with_style
     if verify != '':
