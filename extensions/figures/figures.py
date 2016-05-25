@@ -36,6 +36,6 @@ class Figures(BaseExtension):
         html += '</div>'
         return html
 
-   def check(self, form_dict):
+    def check(self, form_dict):
         rID = form_dict['rID']
         return rID.startswith('arxiv')
