@@ -21,17 +21,25 @@ class Figures(BaseExtension):
         if figures != None and len(figures) > 0:
             width = "100"
             height = "100"
+            row_count = 5
             if column == '3':
                 width = "100"
                 height = "100"
+                row_count = 5
             if column == '2':
                 width = "150"
                 height = "150"
+                row_count = 5
             if column == '1':
                 width = "250"
                 height = "250"
+                row_count = 6
+            count = 0
             for fig in figures:
+                count += 1
                 html += '<img height="' + height + '" width="' + width + '" src="' + fig + '"/>&nbsp;&nbsp;'
+                if count % row_count == 0:
+                    html += '<br/>'
  
         html += '</div>'
         return html

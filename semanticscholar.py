@@ -50,7 +50,8 @@ class Semanticscholar:
     def requestData(self, url):
         print 'requestData'
         #self.requestsReferences(url)
-
+        if url == None:
+            return
 
         r = requests.get('https://www.semanticscholar.org' + url)
         soup = BeautifulSoup(r.text)
