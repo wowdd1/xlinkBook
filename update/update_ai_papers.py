@@ -10,6 +10,7 @@ class AiPapersSpider(Spider):
         Spider.__init__(self)
         self.school = 'aipapers'
         self.util = Utils()
+        self.category = self.category_obj.paper
 
     def doWork(self, jobj=None):
         if jobj == None:

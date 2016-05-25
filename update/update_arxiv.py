@@ -319,8 +319,8 @@ class ArxivSpider(Spider):
                 break
         
         
-            print 'Sleeping for %i seconds' % (15.0 , )
-            time.sleep(15.0 + random.uniform(0, 3))  
+            print 'Sleeping for %i seconds' % (5.0 , )
+            time.sleep(5.0 + random.uniform(0, 3))  
         
         if self.incremental_mode:
             if len(all_papers) > 0:
@@ -400,7 +400,7 @@ class ArxivSpider(Spider):
             category = "category:"
             for tag in paper['tags']:
                 if len(tag['term']) < 20:
-                    category += tag['term'].replace('\n', '').replace(',', ' ').strip()
+                    category += tag['term'].replace('\n', '').replace(',', ' ').strip() + ' '
 
             published = "published:" + paper['published'][0 : paper['published'].find('T')]
             summary = "summary:" + self.utils.removeDoubleSpace(paper['summary'].replace('\n', '').replace('|', '')).strip()

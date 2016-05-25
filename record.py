@@ -44,6 +44,21 @@ class Record():
     def get_describe(self):
         return self.line[self.get_pos(3) + 1 : ].replace('|', '')
 
+class Category():
+    def __init__(self):
+        self.book = "book"
+        self.journal = "journal"
+        self.paper = "paper"
+        self.course = "course"
+        self.project = "project"
+        self.slide = "slide"
+        self.code = "code"
+        self.dataset = "dataset"
+        self.patent = "patent"
+        self.people = "people"
+        self.blog = "blog"
+        self.rank = "rank"
+
 class Tag():
     def __init__(self):
         self.tag_videourl = 'videourl:'
@@ -114,6 +129,13 @@ class WrapRecord(Record):
                 return self.describe[start_pos + len(tag) : ]
 
         return None
+
+class CategoryRecord(WrapRecord):
+    def __init__(self, line):
+        WrapRecord.__init__(self, line)
+
+    def get_category(self):
+        return self.get_tag_content(self.tag.tag_category)
 
 class PaperRecord(WrapRecord):
     def __init__(self, line):

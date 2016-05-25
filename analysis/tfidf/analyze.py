@@ -12,7 +12,7 @@ import os
 import sys
 import random
 import numpy as np
-sys.path.append("..")
+sys.path.append("../..")
 from record import PaperRecord
 
 # read database
@@ -36,9 +36,9 @@ for pid,j in db.iteritems():
     else:
       print 'skipped %d/%d (%s) with %d chars: suspicious!' % (n, len(db), idvv, len(txt))
 '''
-files = os.listdir('../db/eecs/papers/arxiv/')
+files = os.listdir('../../db/eecs/papers/arxiv/')
 for item in files:
-    f = open('../db/eecs/papers/arxiv/' + item, 'rU')
+    f = open('../../db/eecs/papers/arxiv/' + item, 'rU')
     lines = f.readlines()
     f.close()
     for line in lines:
@@ -83,6 +83,7 @@ batch_size = 500
 for i in xrange(0,len(pids),batch_size):
   i1 = min(len(pids), i+batch_size)
   xquery = X[i:i1] # BxD
+  #print xquery
   ds = -np.asarray(np.dot(X, xquery.T)) #NxD * DxB => NxB
   IX = np.argsort(ds, axis=0) # NxB
   for j in xrange(i1-i):

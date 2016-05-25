@@ -16,6 +16,7 @@ class CourseraSpider(Spider):
     def __init__(self):
         Spider.__init__(self)    
         self.school = "coursera"
+        self.category = self.category_obj.course
         
     #coursera
     def loopJobj(self, url, dataList):

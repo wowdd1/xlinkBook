@@ -18,10 +18,10 @@ engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | priority:0 description
 engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | priority:0 description:paper
 engin-19 | baidu | http://www.baidu.com/s?word= | priority:8 description:all star
 engin-20 | bing | http://cn.bing.com/search?q= | priority:0 description:all
-engin-21 | academic.r | http://academic.research.microsoft.com/Search?query= | priority:0 description:paper organization people
+engin-21 | academic.r | http://academic.research.microsoft.com/Search?query= | priority:4 description:paper organization people
 engin-22 | xueshu | http://xueshu.baidu.com/s?wd= | priority:0 description:paper
-engin-23 | dblp | http://dblp.uni-trier.de/search?q= | priority:0 description:paper
-engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q= | priority:0 description:paper
+engin-23 | dblp | http://dblp.uni-trier.de/search?q= | priority:5 description:paper
+engin-24 | citeseerx | http://citeseerx.ist.psu.edu/search;jsessionid=9FF55C6424862E24B76EAD0A4718E5AD?submit=Search&sort=rlv&t=doc&q= | priority:5 description:paper
 engin-25 | springer | http://www.springer.com/?SGWID=0-102-24-0-0&searchType=EASY_CDA&submit=Submit&queryText= | priority:0 description:paper
 engin-26 | dblife | http://dblife.cs.wisc.edu/search.cgi?.submit=Search&query= | priority:0 description:paper
 engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AS&co1=AND&d=PG01&TERM1= | priority:0 description:patent
@@ -295,7 +295,7 @@ engin-291 | pornhub | http://www.pornhub.com/video/search?search= | priority:0 d
 engin-292 | ask.com | http://www.ask.com/web?q= | priority:0 description:all
 engin-293 | xvideos | http://www.xvideos.com/?k= | priority:0 description:18+
 engin-294 | imgur | http://imgur.com/search?q= | priority:0 description:18+
-engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:0 description:social
+engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:6 description:social
 engin-296 | vk.com | http://vk.com/search?c%5Bq%5D=$&c%5Bsection%5D=auto | priority:5 description:social
 engin-297 | xhamster | http://xhamster.com/search.php?from=&q=$&qcat=video | priority:0 description:18+
 engin-298 | bongacams | https://en.bongacams.com/?q= | priority:5 description:18+
@@ -311,3 +311,15 @@ engin-307 | yelp | http://www.yelp.com/search?find_desc=$&find_loc=Hong+Kong&ns=
 engin-308 | gmap | http://gmap.csail.mit.edu/gmap/public.html?course= | priority:0 description:
 engin-309 | livejournal | http://www.livejournal.com/gsearch/?journal=&q= | priority:0 description:social
 engin-310 | hao123 | https://www.hao123.com/?q= | priority:0 description:website
+engin-311 | tumblr | https://www.tumblr.com/search/ | priority:0 description:blog
+engin-312 | jianshu | http://www.jianshu.com/search?q=$&page=1&type=notes | priority:0 description:blog
+engin-313 | adsabs | http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=$&version=1 | priority:0 description:paper
+engin-314 | cds | http://cds.cern.ch/search?ln=en&p=$&action_search=Search&op1=a&m1=a&p1=&f1=&c=CERN+Document+Server | priority:0 description:paper
+engin-315 | crossref | http://search.crossref.org/?q= | priority:0 description:paper
+engin-316 | jstor | http://www.jstor.org/action/doBasicSearch?Query=$&acc=off&wc=on&fc=off&group=none | priority:0 description:paper
+engin-317 | highwire | http://highwire.stanford.edu/cgi/searchresults?fulltext=&andorexactfulltext=and&titleabstract= | priority:0 description:paper
+engin-318 | oclc | http://www.oclc.org/search-results.en.html?q=$&rfilter=allfilter | priority:0 description:paper
+engin-319 | muse | https://muse.jhu.edu/results?searchtype=regular&search_term=$&filtered_content=content&x=0&y=0 | priority:0 description:journal
+engin-320 | nytimes | http://query.nytimes.com/search/sitesearch/?action=click&contentCollection&region=TopBar&WT.nav=searchWidget&module=SearchSubmit&pgtype=Homepage#/ | priority:0 description:news
+engin-321 | edition | http://edition.cnn.com/search/?text= | priority:0 description:news
+engin-322 | chinaso | http://news.chinaso.com/search?wd=$&btn= | priority:0 description:news
