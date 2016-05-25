@@ -1,6 +1,5 @@
 var args = []
 
-
 function setText(objN){
     var clicktext=document.getElementById(objN);
     if (clicktext.innerText == "..."){

@@ -29,7 +29,7 @@ def index():
         return listAllFile(db)
     else:
         cmd = genCmd(db, key, 
-                      request.args.get('column', '3'),
+                      request.args.get('column', '2'),
                       request.args.get('filter', ''),
                       request.args.get('style', ''),
                       request.args.get('desc', 'true'),

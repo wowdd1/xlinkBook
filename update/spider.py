@@ -14,6 +14,8 @@ import re
 from all_subject import subject_dict, need_update_subject_list
 reload(sys)
 sys.setdefaultencoding("utf-8")
+sys.path.append("..")
+from record import Category
 
 
 class Spider:
@@ -28,7 +30,8 @@ class Spider:
     url = None
     count = None
     deep_mind = None
-
+    category = ''
+    category_obj = None
 
     proxies = {
         "http": "http://127.0.0.1:8087",
@@ -53,6 +56,7 @@ class Spider:
         self.url = None
         self.count = 0
         self.deep_mind = False
+        self.category_obj = Category()
 
     def doWork(self):
         return
@@ -169,7 +173,9 @@ class Spider:
     def write_db(self, f, course_num, course_name, url, describe=""):
         if url == "":
             url = self.google + course_num + " " + course_name
-    
+        if self.category != '' and describe.find('category:') == -1:
+            describe += ' category:' + self.category 
+
         f.write(course_num.strip() + " | " + course_name.replace("|","") + " | " + url  + " | " + describe + "\n")
     
     def get_storage_format(self,course_num, course_name, url, describe=""):
