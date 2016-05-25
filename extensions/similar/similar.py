@@ -59,7 +59,7 @@ class Similar(BaseExtension):
         for k in self.sim_dict[pid]:
             records.append(self.papers_dict[k])
         #self.utils.sortRecords(records)
-        records = records[1 : ]
+        #records = records[1 : ]
         for record in records:
             #html += '<li><span>' + record.get_id().strip() + '</span><br/>'
             thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + ".pdf.jpg"

@@ -5,6 +5,7 @@ from extensions.bas_extension import BaseExtension
 from utils import Utils
 from update.all_subject import default_subject
 from record import ReferenceRecord
+from semanticscholar import Semanticscholar
 
 class Reference(BaseExtension):
 
@@ -14,6 +15,7 @@ class Reference(BaseExtension):
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
+        self.semanticscholar = Semanticscholar()
 
     def loadReference(self, filename, rID):
         if len(self.record_reference) != 0 and self.record_reference.has_key(rID):
@@ -44,15 +46,38 @@ class Reference(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
         #print self.record_reference
-        return self.genReferenceHtml(rID)
+        
+        result = self.genReferenceHtml(rID) 
+        if result != '':
+            return result
+        else:
+            return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']))
 
 
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
-        return self.record_reference.has_key(rID)
+        return True
+        #self.semanticscholar.search(form_dict['rTitle'])
+        #return self.record_reference.has_key(rID) or self.semanticscholar.haveResult()
                 
+
+    def genReferenceHtml2(self, alist):
+        return self.genMetadataHtml2(alist)
+    
+    def genMetadataHtml2(self, alist):
+            self.html = '<div class="ref"><ol>'
+            count = 0
+            for r in alist:
+                count += 1
+                self.html += '<li><span>' + str(count) + '.</span>'
+                if r[1] != '':
+                    self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + r[0] + '</a>' + '</p>'
+                else:
+                    self.html += '<p>' + r[0] + '</p>'
+                self.html += '</li>'
+            return self.html + "</div>"
 
 
     def genReferenceHtml(self, rID):
