@@ -1052,6 +1052,13 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
     if fileNameFilter.find('-') != -1:
         fileNameNotContain = fileNameFilter[fileNameFilter.find('-') + 1 :]
         fileNameFilter = fileNameFilter[0 : fileNameFilter.find('-')]
+    if filter_keyword != '':
+        if filter_keyword.find(':') != -1:
+            cur_list = utils.find_file_by_pattern(filter_keyword[filter_keyword.find(':') + 1 :], os.getcwd() + '/' + dir_name)
+        else:
+            cur_list = utils.find_file_by_pattern(filter_keyword, os.getcwd() + '/' + dir_name)
+        #print cur_list
+
     for item in cur_list:
         if item.startswith("."):
             continue

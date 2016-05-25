@@ -6,7 +6,7 @@
 
 import os
 import sys
-import re
+import re, mmap
 import itertools
 import unicodedata
 from update.all_subject import default_subject
@@ -571,12 +571,14 @@ class Utils:
         
     def find_file_by_pattern(self, pattern='.*', base=".", circle=True):
         re_file = re.compile(pattern)
+        #print pattern
         if base == ".":
             base = os.getcwd()
     
         final_file_list = []
         #print base  
         cur_list = os.listdir(base)
+        #print cur_list
         for item in cur_list:
             if item == ".svn" or item == ".git" or item == ".DS_Store":
                 continue
@@ -584,8 +586,11 @@ class Utils:
             full_path = os.path.join(base, item)
             #print full_path
             if os.path.isfile(full_path):
-                if re_file.search(full_path):
-                    final_file_list.append(full_path)
+                #print full_path
+                with open(full_path, 'r+') as f:
+                    data = mmap.mmap(f.fileno(), 0)
+                    if re_file.search(data):
+                        final_file_list.append(full_path)
             else:
                 final_file_list += self.find_file_by_pattern(pattern, full_path)
         return final_file_list

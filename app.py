@@ -71,13 +71,14 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -u ' + db + ' ' #+ db.replace('/', '') + ' '
         #cmd += ' -u ' + db.replace('/', '') + ' '
     if column_num != '':
+        if ft != '':
+            column_num = '1'
         cmd += " -c " + column_num + " "
     if navigation != "false":
         cmd += " -n "    
     if ft != '':
         ft = ft.replace('"', '')
-        #cmd += ' -f ' + ft + ' '
-        cmd += ' -f "' + ft.replace('-or-', '#or').replace('-and-', '#and').replace('-not-', '#not') + '" '
+        cmd += ' -f "' + ft.replace('-or-', '#or').replace('-and-', '#and').replace('-not-', '#not') + '" -m '
     if merger == 'true':
         cmd += ' -m '
     if level != '':
