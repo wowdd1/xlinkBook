@@ -26,6 +26,7 @@ class ExtensionManager:
     def loadExtension(self, name):
         if len(self.extensions) == 0:
             self.loadExtensions()
+        print 'load ' + name + ' module'
         for k, manifest in self.extensions.items():
             jobj = json.loads(open(manifest, 'rU').read())
             if jobj['name']  == name:

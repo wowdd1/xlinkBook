@@ -366,6 +366,7 @@ def getScript(file_name):
             print "array.push('" + content + "');" 
 
     print 'var fileName = "' + file_name + '"'
+    print 'var column = "' + column_num + '"'
     extensions = utils.getExtensions()
     if len(extensions) > 0:
         print 'var extensions = [];'

@@ -1,5 +1,6 @@
 var args = []
 
+
 function setText(objN){
     var clicktext=document.getElementById(objN);
     if (clicktext.innerText == "..."){
@@ -84,12 +85,16 @@ function navTopic(obj, divID, parentDivID, countIndex){
             console.log('args', args[divID][j])
         }
         if (extensions[i] == obj.text) { 
-            var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false'}
+            var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false', column, column}
             if (obj.text == "content") {
                 postArgs["divID"] = divID + "-content"
                 postArgs["defaultLinks"] = 2
             }
-              
+            $("#" + targetid).html("Loading ...");
+            var loadAnimID = setInterval(function() {
+                i = ++i % 4;
+                $("#" + targetid).html("Loading " + Array(i+1).join("."));
+            }, 800);
             $('#' + targetid).load('/extensions', postArgs, function(data){
                  console.log('return', data);
                  if (data == "") {
@@ -98,6 +103,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
                       //console.log('zzz', "MathJax.Hub.Queue " + targetid)
                       //MathJax.Hub.Queue(["Typeset", MathJax.Hub, targetid]);
                  }
+                 clearInterval(loadAnimID)
                  //target.innerHTML = "";
                  //target.innerHTML = data;
              });
