@@ -595,7 +595,12 @@ class Utils:
             record_list = []
             for line in lines:
                 record_list.append(PaperRecord(line))
-            return self.quickSort(record_list)
+            self.quickSort(record_list)
+            ret_lines = []
+            for r in record_list:
+                ret_lines.append(r.line)
+
+            return ret_lines
         else:
             return lines
 
