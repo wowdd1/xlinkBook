@@ -777,7 +777,7 @@ def print_list(all_lines, file_name = ''):
     color_index = 0
     filter_keyword_2 = ''
     if filter_keyword != '' and merger_result: 
-        utils.sortLines(all_lines)
+        all_lines = utils.sortLines(all_lines)
 
     global top_row, old_top_row, output_with_color, output_with_style
     if verify != '':
