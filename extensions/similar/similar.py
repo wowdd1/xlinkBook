@@ -60,14 +60,16 @@ class Similar(BaseExtension):
             records.append(self.papers_dict[k])
         #self.utils.sortRecords(records)
         #records = records[1 : ]
+        count = 0
         for record in records:
             #html += '<li><span>' + record.get_id().strip() + '</span><br/>'
             thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + ".pdf.jpg"
             authors = record.get_author().split(',')
             categorys = record.get_category().split(' ')
             date_cat =  record.get_published() + "&nbsp;&nbsp; " + self.genListHtml(categorys, "category:")
-            html += '<li>'
-            html += '<a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div><image src="' + thumbs + '"></image><div>' + record.get_summary() + "<div></li><br/>"
+            count += 1
+            html += '<li><span>' + str(count) + '</span>'
+            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><p><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div><image src="' + thumbs + '"></image><div>' + record.get_summary() + "<div></li><br/>"
         html += "</ol></div>"
         return html
 
