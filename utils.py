@@ -574,7 +574,7 @@ class Utils:
         return url
         
     def find_file_by_pattern(self, pattern='.*', base=".", circle=True):
-        re_file = re.compile(pattern)
+        re_file = re.compile(pattern, re.I)
         #print pattern
         if base == ".":
             base = os.getcwd()
