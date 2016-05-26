@@ -37,7 +37,7 @@ def index():
                       request.args.get('row', ''),
                       request.args.get('top', ''),
                       request.args.get('level', ''),
-                      request.args.get('merger', 'false'),
+                      request.args.get('merger', ''),
                       request.args.get('border', ''),
                       request.args.get('engin', ''),
                       request.args.get('navigation', 'true'),
@@ -78,7 +78,9 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += " -n "    
     if ft != '':
         ft = ft.replace('"', '')
-        cmd += ' -f "' + ft.replace('-or-', '#or').replace('-and-', '#and').replace('-not-', '#not') + '" -m '
+        cmd += ' -f "' + ft.replace('-or-', '#or').replace('-and-', '#and').replace('-not-', '#not') + '"'
+        if merger != 'false':
+            cmd += ' -m '
     if merger == 'true':
         cmd += ' -m '
     if level != '':

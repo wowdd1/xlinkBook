@@ -33,8 +33,7 @@ class Figures(BaseExtension):
         figures = []
         links = []
         if self.category == self.category_obj.paper or self.category.find('cs.') != -1 or self.category.find('stat.') !=-1:
-            self.semanticscholar.search(name)
-            figures = self.semanticscholar.getFigures()
+            figures = self.semanticscholar.getFigures(name)
         else:
             figures, links = self.getRandomFigures(record.get_title())
 
@@ -70,7 +69,7 @@ class Figures(BaseExtension):
             if column == '1':
                 width = "250"
                 height = "250"
-                row_count = 6
+                row_count = 5
             count = 0
             for fig in figures:
                 count += 1

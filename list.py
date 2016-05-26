@@ -365,7 +365,7 @@ def getScript(file_name):
         for content in div_content_list:
             print "array.push('" + content + "');" 
 
-    print 'var fileName = "' + os.getcwd() + '/' + file_name + '"'
+    print 'var fileName = "' + os.getcwd() + '/' + source + '"'
     print 'var column = "' + column_num + '"'
     extensions = utils.getExtensions()
     if len(extensions) > 0:
