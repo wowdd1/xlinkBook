@@ -1,31 +1,31 @@
-N01-1001 | Instance-Based Natural Language Generation | http://www.aclweb.org/anthology/N/N01/N01-1001.pdf | author:Sebastian Varges; Chris Mellish
-N01-1002 | Corpus-based NP Modifier Generation | http://www.aclweb.org/anthology/N/N01/N01-1002.pdf | author:Hua Cheng; Massimo Poesio; Renate Henschel; Chris Mellish
-N01-1003 | SPoT: A Trainable Sentence Planner | http://www.aclweb.org/anthology/N/N01/N01-1003.pdf | author:Marilyn A. Walker; Owen Rambow; Monica Rogati
-N01-1004 | Why Inverse Document Frequency? | http://www.aclweb.org/anthology/N/N01/N01-1004.pdf | author:Kishore Papineni
-N01-1005 | Question Answering Using Maximum-Entropy Components | http://www.aclweb.org/anthology/N/N01/N01-1005.pdf | author:Abraham Ittycheriah; Martin Franz; Wei-Jing Zhu; Adwait Ratnaparkhi
-N01-1006 | Transformation Based Learning in the Fast Lane | http://www.aclweb.org/anthology/N/N01/N01-1006.pdf | author:Grace Ngai; Radu Florian
-N01-1007 | Unsupervised Learning of Name Structure From Coreference Data | http://www.aclweb.org/anthology/N/N01/N01-1007.pdf | author:Eugene Charniak
-N01-1008 | Text and Knowledge Mining for Coreference Resolution | http://www.aclweb.org/anthology/N/N01/N01-1008.pdf | author:Sanda M. Harabagiu; Razvan C. Bunescu; Steven J. Maiorano
-N01-1009 | A Corpus-based Account of Regular Polysemy: The Case of Context-sensitive Adjectives | http://www.aclweb.org/anthology/N/N01/N01-1009.pdf | author:Maria Lapata
-N01-1010 | Tree-Cut and a Lexicon Based on Systematic Polysemy | http://www.aclweb.org/anthology/N/N01/N01-1010.pdf | author:Noriko Tomuro
-N01-1011 | A Decision Tree of Bigrams is an Accurate Predictor of Word Sense | http://www.aclweb.org/anthology/N/N01/N01-1011.pdf | author:Ted Pedersen
-N01-1012 | An Algorithm for Aspects of Semantic Interpretation Using an Enhanced WordNet | http://www.aclweb.org/anthology/N/N01/N01-1012.pdf | author:Fernando Gomez
-N01-1013 | Class-Based Probability Estimation Using a Semantic Hierarchy | http://www.aclweb.org/anthology/N/N01/N01-1013.pdf | author:Stephen Clark; David Weir
-N01-1014 | Identifying Cognates by Phonetic and Semantic Similarity | http://www.aclweb.org/anthology/N/N01/N01-1014.pdf | author:Grzegorz Kondrak
-N01-1015 | Re-Engineering Letter-to-Sound Rules | http://www.aclweb.org/anthology/N/N01/N01-1015.pdf | author:Martin Jansche
-N01-1016 | Edit Detection and Parsing for Transcribed Speech | http://www.aclweb.org/anthology/N/N01/N01-1016.pdf | author:Eugene Charniak; Mark Johnson
-N01-1017 | Generating Training Data for Medical Dictations | http://www.aclweb.org/anthology/N/N01/N01-1017.pdf | author:Sergey Pakhomov; Michael Schonwetter; Joan Bachenko
-N01-1018 | A Finite-State Approach to Machine Translation | http://www.aclweb.org/anthology/N/N01/N01-1018.pdf | author:Srinivas Bangalore; Giuseppe Riccardi
-N01-1019 | Information-Based Machine Translation | http://www.aclweb.org/anthology/N/N01/N01-1019.pdf | author:Keiko Horiguchi
-N01-1020 | Multipath Translation Lexicon Induction via Bridge Languages | http://www.aclweb.org/anthology/N/N01/N01-1020.pdf | author:Gideon S. Mann; David Yarowsky
-N01-1021 | A Probabilistic Earley Parser as a Psycholinguistic Model | http://www.aclweb.org/anthology/N/N01/N01-1021.pdf | author:John Hale
-N01-1022 | Refining Tabular Parsers for TAGs | http://www.aclweb.org/anthology/N/N01/N01-1022.pdf | author:Éric Villemonte de la Clergerie
-N01-1023 | Applying Co-Training Methods to Statistical Parsing | http://www.aclweb.org/anthology/N/N01/N01-1023.pdf | author:Anoop Sarkar
-N01-1024 | Knowledge-Free Induction of Inflectional Morphologies | http://www.aclweb.org/anthology/N/N01/N01-1024.pdf | author:Patrick Schone; Daniel Jurafsky
-N01-1025 | Chunking with Support Vector Machines | http://www.aclweb.org/anthology/N/N01/N01-1025.pdf | author:Taku Kudo; Yuji Matsumoto
-N01-1026 | Inducing Multilingual POS Taggers and NP Bracketers via Robust Projection Across Aligned Corpora | http://www.aclweb.org/anthology/N/N01/N01-1026.pdf | author:David Yarowsky; Grace Ngai
-N01-1027 | Identifying User Corrections Automatically in Spoken Dialogue Systems | http://www.aclweb.org/anthology/N/N01/N01-1027.pdf | author:Julia Hirschberg; Diane Litman; Marc Swerts
-N01-1028 | Learning Optimal Dialogue Management Rules by Using Reinforcement Learning and Inductive Logic Programming | http://www.aclweb.org/anthology/N/N01/N01-1028.pdf | author:Renaud Lecoeuche
-N01-1029 | A Structured Language Model Based on Context-Sensitive Probabilistic Left-Corner Parsing | http://www.aclweb.org/anthology/N/N01/N01-1029.pdf | author:Dong Hoon Van Uytsel; Filip Van Aelten; Dirk Van Compernolle
-N01-1030 | Do CFG-Based Language Models Need Agreement Constraints? | http://www.aclweb.org/anthology/N/N01/N01-1030.pdf | author:Manny Rayner; Genevieve Gorrell; Beth Ann Hockey; John Dowding; Johan Boye
-N01-1031 | You're Not From 'Round Here, Are You? Naive Bayes Detection of Non-Native Utterances | http://www.aclweb.org/anthology/N/N01/N01-1031.pdf | author:Laura Mayfield Tomokiyo; Rosie Jones
+N01-1001 | Instance-Based Natural Language Generation | http://www.aclweb.org/anthology/N/N01/N01-1001.pdf | category:paper author:Sebastian Varges; Chris Mellish
+N01-1002 | Corpus-based NP Modifier Generation | http://www.aclweb.org/anthology/N/N01/N01-1002.pdf | category:paper author:Hua Cheng; Massimo Poesio; Renate Henschel; Chris Mellish
+N01-1003 | SPoT: A Trainable Sentence Planner | http://www.aclweb.org/anthology/N/N01/N01-1003.pdf | category:paper author:Marilyn A. Walker; Owen Rambow; Monica Rogati
+N01-1004 | Why Inverse Document Frequency? | http://www.aclweb.org/anthology/N/N01/N01-1004.pdf | category:paper author:Kishore Papineni
+N01-1005 | Question Answering Using Maximum-Entropy Components | http://www.aclweb.org/anthology/N/N01/N01-1005.pdf | category:paper author:Abraham Ittycheriah; Martin Franz; Wei-Jing Zhu; Adwait Ratnaparkhi
+N01-1006 | Transformation Based Learning in the Fast Lane | http://www.aclweb.org/anthology/N/N01/N01-1006.pdf | category:paper author:Grace Ngai; Radu Florian
+N01-1007 | Unsupervised Learning of Name Structure From Coreference Data | http://www.aclweb.org/anthology/N/N01/N01-1007.pdf | category:paper author:Eugene Charniak
+N01-1008 | Text and Knowledge Mining for Coreference Resolution | http://www.aclweb.org/anthology/N/N01/N01-1008.pdf | category:paper author:Sanda M. Harabagiu; Razvan C. Bunescu; Steven J. Maiorano
+N01-1009 | A Corpus-based Account of Regular Polysemy: The Case of Context-sensitive Adjectives | http://www.aclweb.org/anthology/N/N01/N01-1009.pdf | category:paper author:Maria Lapata
+N01-1010 | Tree-Cut and a Lexicon Based on Systematic Polysemy | http://www.aclweb.org/anthology/N/N01/N01-1010.pdf | category:paper author:Noriko Tomuro
+N01-1011 | A Decision Tree of Bigrams is an Accurate Predictor of Word Sense | http://www.aclweb.org/anthology/N/N01/N01-1011.pdf | category:paper author:Ted Pedersen
+N01-1012 | An Algorithm for Aspects of Semantic Interpretation Using an Enhanced WordNet | http://www.aclweb.org/anthology/N/N01/N01-1012.pdf | category:paper author:Fernando Gomez
+N01-1013 | Class-Based Probability Estimation Using a Semantic Hierarchy | http://www.aclweb.org/anthology/N/N01/N01-1013.pdf | category:paper author:Stephen Clark; David Weir
+N01-1014 | Identifying Cognates by Phonetic and Semantic Similarity | http://www.aclweb.org/anthology/N/N01/N01-1014.pdf | category:paper author:Grzegorz Kondrak
+N01-1015 | Re-Engineering Letter-to-Sound Rules | http://www.aclweb.org/anthology/N/N01/N01-1015.pdf | category:paper author:Martin Jansche
+N01-1016 | Edit Detection and Parsing for Transcribed Speech | http://www.aclweb.org/anthology/N/N01/N01-1016.pdf | category:paper author:Eugene Charniak; Mark Johnson
+N01-1017 | Generating Training Data for Medical Dictations | http://www.aclweb.org/anthology/N/N01/N01-1017.pdf | category:paper author:Sergey Pakhomov; Michael Schonwetter; Joan Bachenko
+N01-1018 | A Finite-State Approach to Machine Translation | http://www.aclweb.org/anthology/N/N01/N01-1018.pdf | category:paper author:Srinivas Bangalore; Giuseppe Riccardi
+N01-1019 | Information-Based Machine Translation | http://www.aclweb.org/anthology/N/N01/N01-1019.pdf | category:paper author:Keiko Horiguchi
+N01-1020 | Multipath Translation Lexicon Induction via Bridge Languages | http://www.aclweb.org/anthology/N/N01/N01-1020.pdf | category:paper author:Gideon S. Mann; David Yarowsky
+N01-1021 | A Probabilistic Earley Parser as a Psycholinguistic Model | http://www.aclweb.org/anthology/N/N01/N01-1021.pdf | category:paper author:John Hale
+N01-1022 | Refining Tabular Parsers for TAGs | http://www.aclweb.org/anthology/N/N01/N01-1022.pdf | category:paper author:Éric Villemonte de la Clergerie
+N01-1023 | Applying Co-Training Methods to Statistical Parsing | http://www.aclweb.org/anthology/N/N01/N01-1023.pdf | category:paper author:Anoop Sarkar
+N01-1024 | Knowledge-Free Induction of Inflectional Morphologies | http://www.aclweb.org/anthology/N/N01/N01-1024.pdf | category:paper author:Patrick Schone; Daniel Jurafsky
+N01-1025 | Chunking with Support Vector Machines | http://www.aclweb.org/anthology/N/N01/N01-1025.pdf | category:paper author:Taku Kudo; Yuji Matsumoto
+N01-1026 | Inducing Multilingual POS Taggers and NP Bracketers via Robust Projection Across Aligned Corpora | http://www.aclweb.org/anthology/N/N01/N01-1026.pdf | category:paper author:David Yarowsky; Grace Ngai
+N01-1027 | Identifying User Corrections Automatically in Spoken Dialogue Systems | http://www.aclweb.org/anthology/N/N01/N01-1027.pdf | category:paper author:Julia Hirschberg; Diane Litman; Marc Swerts
+N01-1028 | Learning Optimal Dialogue Management Rules by Using Reinforcement Learning and Inductive Logic Programming | http://www.aclweb.org/anthology/N/N01/N01-1028.pdf | category:paper author:Renaud Lecoeuche
+N01-1029 | A Structured Language Model Based on Context-Sensitive Probabilistic Left-Corner Parsing | http://www.aclweb.org/anthology/N/N01/N01-1029.pdf | category:paper author:Dong Hoon Van Uytsel; Filip Van Aelten; Dirk Van Compernolle
+N01-1030 | Do CFG-Based Language Models Need Agreement Constraints? | http://www.aclweb.org/anthology/N/N01/N01-1030.pdf | category:paper author:Manny Rayner; Genevieve Gorrell; Beth Ann Hockey; John Dowding; Johan Boye
+N01-1031 | You're Not From 'Round Here, Are You? Naive Bayes Detection of Non-Native Utterances | http://www.aclweb.org/anthology/N/N01/N01-1031.pdf | category:paper author:Laura Mayfield Tomokiyo; Rosie Jones

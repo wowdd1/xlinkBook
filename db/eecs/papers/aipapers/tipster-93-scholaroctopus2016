@@ -1,24 +1,24 @@
-X93-1001 | TIPSTER PROGRAM OVERVIEW | http://www.aclweb.org/anthology/X/X93/X93-1001.pdf | author:Roberta H. Merchant
-X93-1002 | TIPSTER PROGRAM HISTORY | http://www.aclweb.org/anthology/X/X93/X93-1002.pdf | author:Thomas H. Crystal
-X93-1003 | THE MESSAGE UNDERSTANDING CONFERENCES | http://www.aclweb.org/anthology/X/X93/X93-1003.pdf | author:Beth M. Sundheim
-X93-1004 | THE TEXT RETRIEVAL CONFERENCES | http://www.aclweb.org/anthology/X/X93/X93-1004.pdf | author:Donna Harman
-X93-1005 | DOCUMENT DETECTION OVERVIEW | http://www.aclweb.org/anthology/X/X93/X93-1005.pdf | author:Donna Harman
-X93-1006 | DOCUMENT DETECTION DATA PREPARATION | http://www.aclweb.org/anthology/X/X93/X93-1006.pdf | author:Donna Harman
-X93-1007 | DOCUMENT DETECTION SUMMARY OF RESULTS | http://www.aclweb.org/anthology/X/X93/X93-1007.pdf | author:Donna Harman
-X93-1008 | INQUERY System Overview | http://www.aclweb.org/anthology/X/X93/X93-1008.pdf | author:John Broglio; James P. Callan; W. Bruce Croft
-X93-1009 | TIPSTER PHASE I FINAL REPORT | http://www.aclweb.org/anthology/X/X93/X93-1009.pdf | author:Bill Caid; Stephen Gallant; Joel Carleton; David Sudbeck
-X93-1010 | DR-LINK System: Phase I Summary | http://www.aclweb.org/anthology/X/X93/X93-1010.pdf | author:Elizabeth D. Liddy; Sung H. Myaeng
-X93-1011 | TRW JAPANESE FAST DATA FINDER | http://www.aclweb.org/anthology/X/X93/X93-1011.pdf | author:Matt Mettler
-X93-1012 | INFORMATION EXTRACTION OVERVIEW | http://www.aclweb.org/anthology/X/X93/X93-1012.pdf | author:Mary Ellen Okurowski
-X93-1013 | TASKS, DOMAINS, AND LANGUAGES FOR INFORMATION EXTRACTION | http://www.aclweb.org/anthology/X/X93/X93-1013.pdf | author:Boyan Onyshkevych; Mary Ellen Okurowski; Lynn Carlson
-X93-1014 | CORPORA AND DATA PREPARATION FOR INFORMATION EXTRACTION | http://www.aclweb.org/anthology/X/X93/X93-1014.pdf | author:Lynn Carlson; Boyan Onyshkevych; Mary Ellen Okurowski
-X93-1015 | TEMPLATE DESIGN FOR INFORMATION EXTRACTION | http://www.aclweb.org/anthology/X/X93/X93-1015.pdf | author:Boyan Onyshkevych
-X93-1016 | TIPSTER/MUC-5 INFORMATION EXTRACTION SYSTEM EVALUATION | http://www.aclweb.org/anthology/X/X93/X93-1016.pdf | author:Beth M. Sundheim
-X93-1017 | AN ANALYSIS OF THE JOINT VENTURE JAPANESE TEXT PROTOTYPE AND ITS EFFECT ON SYSTEM PERFORMANCE | http://www.aclweb.org/anthology/X/X93/X93-1017.pdf | author:Steve Moiorano
-X93-1018 | COMPARING HUMAN AND MACHINE PERFORMANCE FOR NATURAL LANGUAGE INFORMATION EXTRACTION: Results from the Tipster Text Evaluation | http://www.aclweb.org/anthology/X/X93/X93-1018.pdf | author:Craig A. Will
-X93-1019 | BBN's PLUM Probabilistic Language Understanding System | http://www.aclweb.org/anthology/X/X93/X93-1019.pdf | author:The PLUM System Group
-X93-1020 | THE TIPSTEPdSHOGUN PROJECT | http://www.aclweb.org/anthology/X/X93/X93-1020.pdf | author:Paul S. Jacobs; George Krupka; Lisa Rau; Michael L. Mauldin; Teruko Mitamura; Tsuyoshi Kitani; Ira Sider; Lois Childs
-X93-1021 | CRL/BRANDEIS: THE DIDEROT SYSTEM | http://www.aclweb.org/anthology/X/X93/X93-1021.pdf | author:Jim Cowie; Louise Guthrie; Wang Jin; William Ogden; James Pustejovsky; Rong Wang; Takahiro Wakao; Scott Waterman; Yorick Wilks
-X93-1022 | UMASS/HUGHES: DESCRIPTION OF THE CIRCUS SYSTEM USED FOR TIPSTER TEXT | http://www.aclweb.org/anthology/X/X93/X93-1022.pdf | author:W. Lehnert; J. McCarthy; S. Soderland; E. Riloff; C. Cardie; J. Peterson; F. Feng
-X93-1023 | DICTIONARY CONSTRUCTION BY DOMAIN EXPERTS | http://www.aclweb.org/anthology/X/X93/X93-1023.pdf | author:Ellen Riloff; Wendy G. Lehnert
-X93-1024 | Appendix I | http://www.aclweb.org/anthology/X/X93/X93-1024.pdf | author:
+X93-1001 | TIPSTER PROGRAM OVERVIEW | http://www.aclweb.org/anthology/X/X93/X93-1001.pdf | category:paper author:Roberta H. Merchant
+X93-1002 | TIPSTER PROGRAM HISTORY | http://www.aclweb.org/anthology/X/X93/X93-1002.pdf | category:paper author:Thomas H. Crystal
+X93-1003 | THE MESSAGE UNDERSTANDING CONFERENCES | http://www.aclweb.org/anthology/X/X93/X93-1003.pdf | category:paper author:Beth M. Sundheim
+X93-1004 | THE TEXT RETRIEVAL CONFERENCES | http://www.aclweb.org/anthology/X/X93/X93-1004.pdf | category:paper author:Donna Harman
+X93-1005 | DOCUMENT DETECTION OVERVIEW | http://www.aclweb.org/anthology/X/X93/X93-1005.pdf | category:paper author:Donna Harman
+X93-1006 | DOCUMENT DETECTION DATA PREPARATION | http://www.aclweb.org/anthology/X/X93/X93-1006.pdf | category:paper author:Donna Harman
+X93-1007 | DOCUMENT DETECTION SUMMARY OF RESULTS | http://www.aclweb.org/anthology/X/X93/X93-1007.pdf | category:paper author:Donna Harman
+X93-1008 | INQUERY System Overview | http://www.aclweb.org/anthology/X/X93/X93-1008.pdf | category:paper author:John Broglio; James P. Callan; W. Bruce Croft
+X93-1009 | TIPSTER PHASE I FINAL REPORT | http://www.aclweb.org/anthology/X/X93/X93-1009.pdf | category:paper author:Bill Caid; Stephen Gallant; Joel Carleton; David Sudbeck
+X93-1010 | DR-LINK System: Phase I Summary | http://www.aclweb.org/anthology/X/X93/X93-1010.pdf | category:paper author:Elizabeth D. Liddy; Sung H. Myaeng
+X93-1011 | TRW JAPANESE FAST DATA FINDER | http://www.aclweb.org/anthology/X/X93/X93-1011.pdf | category:paper author:Matt Mettler
+X93-1012 | INFORMATION EXTRACTION OVERVIEW | http://www.aclweb.org/anthology/X/X93/X93-1012.pdf | category:paper author:Mary Ellen Okurowski
+X93-1013 | TASKS, DOMAINS, AND LANGUAGES FOR INFORMATION EXTRACTION | http://www.aclweb.org/anthology/X/X93/X93-1013.pdf | category:paper author:Boyan Onyshkevych; Mary Ellen Okurowski; Lynn Carlson
+X93-1014 | CORPORA AND DATA PREPARATION FOR INFORMATION EXTRACTION | http://www.aclweb.org/anthology/X/X93/X93-1014.pdf | category:paper author:Lynn Carlson; Boyan Onyshkevych; Mary Ellen Okurowski
+X93-1015 | TEMPLATE DESIGN FOR INFORMATION EXTRACTION | http://www.aclweb.org/anthology/X/X93/X93-1015.pdf | category:paper author:Boyan Onyshkevych
+X93-1016 | TIPSTER/MUC-5 INFORMATION EXTRACTION SYSTEM EVALUATION | http://www.aclweb.org/anthology/X/X93/X93-1016.pdf | category:paper author:Beth M. Sundheim
+X93-1017 | AN ANALYSIS OF THE JOINT VENTURE JAPANESE TEXT PROTOTYPE AND ITS EFFECT ON SYSTEM PERFORMANCE | http://www.aclweb.org/anthology/X/X93/X93-1017.pdf | category:paper author:Steve Moiorano
+X93-1018 | COMPARING HUMAN AND MACHINE PERFORMANCE FOR NATURAL LANGUAGE INFORMATION EXTRACTION: Results from the Tipster Text Evaluation | http://www.aclweb.org/anthology/X/X93/X93-1018.pdf | category:paper author:Craig A. Will
+X93-1019 | BBN's PLUM Probabilistic Language Understanding System | http://www.aclweb.org/anthology/X/X93/X93-1019.pdf | category:paper author:The PLUM System Group
+X93-1020 | THE TIPSTEPdSHOGUN PROJECT | http://www.aclweb.org/anthology/X/X93/X93-1020.pdf | category:paper author:Paul S. Jacobs; George Krupka; Lisa Rau; Michael L. Mauldin; Teruko Mitamura; Tsuyoshi Kitani; Ira Sider; Lois Childs
+X93-1021 | CRL/BRANDEIS: THE DIDEROT SYSTEM | http://www.aclweb.org/anthology/X/X93/X93-1021.pdf | category:paper author:Jim Cowie; Louise Guthrie; Wang Jin; William Ogden; James Pustejovsky; Rong Wang; Takahiro Wakao; Scott Waterman; Yorick Wilks
+X93-1022 | UMASS/HUGHES: DESCRIPTION OF THE CIRCUS SYSTEM USED FOR TIPSTER TEXT | http://www.aclweb.org/anthology/X/X93/X93-1022.pdf | category:paper author:W. Lehnert; J. McCarthy; S. Soderland; E. Riloff; C. Cardie; J. Peterson; F. Feng
+X93-1023 | DICTIONARY CONSTRUCTION BY DOMAIN EXPERTS | http://www.aclweb.org/anthology/X/X93/X93-1023.pdf | category:paper author:Ellen Riloff; Wendy G. Lehnert
+X93-1024 | Appendix I | http://www.aclweb.org/anthology/X/X93/X93-1024.pdf | category:paper author:

@@ -1,6 +1,6 @@
-jmlr-COLT2005-1 | Separating Models of Learning from Correlated and Uncorrelated Data | http://www.jmlr.org/papers/v8/elbaz07a.html | author:Ariel Elbaz, Homin K. Lee, Rocco A. Servedio, Andrew Wan
-jmlr-COLT2005-2 | General Polynomial Time Decomposition Algorithms | http://www.jmlr.org/papers/v8/list07a.html | author:Nikolas List, Hans Ulrich Simon
-jmlr-COLT2005-3 | On the Consistency of Multiclass Classification Methods | http://www.jmlr.org/papers/v8/tewari07a.html | author:Ambuj Tewari, Peter L. Bartlett
-jmlr-COLT2005-4 | From External to Internal Regret | http://www.jmlr.org/papers/v8/blum07a.html | author:Avrim Blum, Yishay Mansour
-jmlr-COLT2005-5 | Graph Laplacians and their Convergence on Random Neighborhood Graphs | http://www.jmlr.org/papers/v8/hein07a.html | author:Matthias Hein, Jean-Yves Audibert, Ulrike von Luxburg
-jmlr-COLT2005-6 | Attribute-Efficient and Non-adaptive Learning of Parities and DNF Expressions | http://www.jmlr.org/papers/v8/feldman07a.html | author:Vitaly Feldman
+jmlr-COLT2005-1 | Separating Models of Learning from Correlated and Uncorrelated Data | http://www.jmlr.org/papers/v8/elbaz07a.html | category:paper author:Ariel Elbaz, Homin K. Lee, Rocco A. Servedio, Andrew Wan
+jmlr-COLT2005-2 | General Polynomial Time Decomposition Algorithms | http://www.jmlr.org/papers/v8/list07a.html | category:paper author:Nikolas List, Hans Ulrich Simon
+jmlr-COLT2005-3 | On the Consistency of Multiclass Classification Methods | http://www.jmlr.org/papers/v8/tewari07a.html | category:paper author:Ambuj Tewari, Peter L. Bartlett
+jmlr-COLT2005-4 | From External to Internal Regret | http://www.jmlr.org/papers/v8/blum07a.html | category:paper author:Avrim Blum, Yishay Mansour
+jmlr-COLT2005-5 | Graph Laplacians and their Convergence on Random Neighborhood Graphs | http://www.jmlr.org/papers/v8/hein07a.html | category:paper author:Matthias Hein, Jean-Yves Audibert, Ulrike von Luxburg
+jmlr-COLT2005-6 | Attribute-Efficient and Non-adaptive Learning of Parities and DNF Expressions | http://www.jmlr.org/papers/v8/feldman07a.html | category:paper author:Vitaly Feldman

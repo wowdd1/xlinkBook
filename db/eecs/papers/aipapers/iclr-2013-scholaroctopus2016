@@ -1,54 +1,54 @@
-iclr-2013-1 | A Nested HDP for Hierarchical Topic Models | http://arxiv.org/abs/1301.3570 | author:John Paisley, Chong Wang, David Blei, Michael I. Jordan
-iclr-2013-2 | A Semantic Matching Energy Function for Learning with Multi-relational Data | http://arxiv.org/abs/1301.3485 | author:Xavier Glorot, Antoine Bordes, Jason Weston, Yoshua Bengio
-iclr-2013-3 | Adaptive learning rates and parallelization for stochastic, sparse, non-smooth gradients | http://arxiv.org/abs/1301.3764 | author:Tom Schaul, Yann LeCun
-iclr-2013-4 | Affinity Weighted Embedding | http://arxiv.org/abs/1301.4171 | author:Jason Weston, Ron Weiss, Hector Yee
-iclr-2013-5 | Auto-pooling: Learning to Improve Invariance of Image Features from Image Sequences | http://arxiv.org/abs/1301.3323 | author:Sainbayar Sukhbaatar, Takaki Makino, Kazuyuki Aihara
-iclr-2013-6 | Barnes-Hut-SNE | http://arxiv.org/abs/1301.3342 | author:Laurens van der Maaten
-iclr-2013-7 | Big Neural Networks Waste Capacity | http://arxiv.org/abs/1301.3583 | author:Yann N. Dauphin, Yoshua Bengio
-iclr-2013-8 | Block Coordinate Descent for Sparse NMF | http://arxiv.org/abs/1301.3527 | author:Vamsi K. Potluru, Sergey M. Plis, Jonathan Le Roux, Barak A. Pearlmutter, Vince D. Calhoun, Thomas P. Hayes
-iclr-2013-9 | Boltzmann Machines and Denoising Autoencoders for Image Denoising | http://arxiv.org/abs/1301.3468 | author:Kyunghyun Cho
-iclr-2013-10 | Clustering Learning for Robotic Vision | http://arxiv.org/abs/1301.2820 | author:Eugenio Culurciello, Jordan Bates, Aysegul Dundar, Jose Carrasco, Clement Farabet
-iclr-2013-11 | Complexity of Representation and Inference in Compositional Models with Part Sharing | http://arxiv.org/abs/1301.3560 | author:Alan L. Yuille, Roozbeh Mottaghi
-iclr-2013-12 | Cutting Recursive Autoencoder Trees | http://arxiv.org/abs/1301.2811 | author:Christian Scheible, Hinrich Schuetze
-iclr-2013-13 | Deep Learning for Detecting Robotic Grasps | http://arxiv.org/abs/1301.3592 | author:Ian Lenz, Honglak Lee, Ashutosh Saxena
-iclr-2013-14 | Deep Predictive Coding Networks | http://arxiv.org/abs/1301.3541 | author:Rakesh Chalasani, Jose C. Principe
-iclr-2013-15 | Discrete Restricted Boltzmann Machines | http://arxiv.org/abs/1301.3529 | author:Guido F. Montufar, Jason Morton
-iclr-2013-16 | Discriminative Recurrent Sparse Auto-Encoders | http://arxiv.org/abs/1301.3775 | author:Jason Tyler Rolfe, Yann LeCun
-iclr-2013-17 | Efficient Estimation of Word Representations in Vector Space | http://arxiv.org/abs/1301.3781 | author:Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
-iclr-2013-18 | Efficient Learning of Domain-invariant Image Representations | http://arxiv.org/abs/1301.3224 | author:Judy Hoffman, Erik Rodner, Jeff Donahue, Trevor Darrell, Kate Saenko
-iclr-2013-19 | Factorized Topic Models | http://arxiv.org/abs/1301.3461 | author:Cheng Zhang, Carl Henrik Ek, Hedvig Kjellstrom
-iclr-2013-20 | Feature Learning in Deep Neural Networks - A Study on Speech Recognition Tasks | http://arxiv.org/abs/1301.3605 | author:Dong Yu, Michael L. Seltzer, Jinyu Li, Jui-Ting Huang, Frank Seide
-iclr-2013-21 | Feature grouping from spatially constrained multiplicative interaction | http://arxiv.org/abs/1301.3391 | author:Felix Bauer, Roland Memisevic
-iclr-2013-22 | Gradient Driven Learning for Pooling in Visual Pipeline Feature Extraction Models | http://arxiv.org/abs/1301.3755 | author:Derek Rose, Itamar Arel
-iclr-2013-23 | Herded Gibbs Sampling | http://arxiv.org/abs/1301.4168 | author:Luke Bornn, Yutian Chen, Nando de Freitas, Mareija Eskelin, Jing Fang, Max Welling
-iclr-2013-24 | Hierarchical Data Representation Model - Multi-layer NMF | http://arxiv.org/abs/1301.6316 | author:Hyun Ah Song, Soo-Young Lee
-iclr-2013-25 | Indoor Semantic Segmentation using depth information | http://arxiv.org/abs/1301.3572 | author:Camille Couprie, Clément Farabet, Laurent Najman, Yann LeCun
-iclr-2013-26 | Information Theoretic Learning with Infinitely Divisible Kernels | http://arxiv.org/abs/1301.3551 | author:Luis G. Sanchez Giraldo, Jose C. Principe
-iclr-2013-27 | Jitter-Adaptive Dictionary Learning - Application to Multi-Trial Neuroelectric Signals | http://arxiv.org/abs/1301.3611 | author:Sebastian Hitziger, Maureen Clerc, Alexandre Gramfort, Sandrine Saillet, Christian Bénar, Théodore Papadopoulo
-iclr-2013-28 | Joint Training Deep Boltzmann Machines for Classification | http://arxiv.org/abs/1301.3568 | author:Ian J. Goodfellow, Aaron Courville, Yoshua Bengio
-iclr-2013-29 | Knowledge Matters: Importance of Prior Information for Optimization | http://arxiv.org/abs/1301.4083 | author:Caglar Gulcehre, Yoshua Bengio
-iclr-2013-30 | Latent Relation Representations for Universal Schemas | http://arxiv.org/abs/1301.4293 | author:Sebastian Riedel, Limin Yao, Andrew McCallum
-iclr-2013-31 | Learnable Pooling Regions for Image Classification | http://arxiv.org/abs/1301.3516 | author:Mateusz Malinowski, Mario Fritz
-iclr-2013-32 | Learning Features with Structure-Adapting Multi-view Exponential Family Harmoniums | http://arxiv.org/abs/1301.3539 | author:Yoonseop Kang, Seungjin Choi
-iclr-2013-33 | Learning New Facts From Knowledge Bases With Neural Tensor Networks and Semantic Word Vectors | http://arxiv.org/abs/1301.3618 | author:Danqi Chen, Richard Socher, Christopher D. Manning, Andrew Y. Ng
-iclr-2013-34 | Learning Stable Group Invariant Representations with Convolutional Networks | http://arxiv.org/abs/1301.3537 | author:Joan Bruna, Arthur Szlam, Yann LeCun
-iclr-2013-35 | Linear-Nonlinear-Poisson Neuron Networks Perform Bayesian Inference On Boltzmann Machines | http://arxiv.org/abs/1210.8442 | author:Louis Yuanlong Shao
-iclr-2013-36 | Local Component Analysis | http://arxiv.org/abs/1109.0093 | author:Nicolas Le Roux, Francis Bach
-iclr-2013-37 | Matrix Approximation under Local Low-Rank Assumption | http://arxiv.org/abs/1301.3192 | author:Joonseok Lee, Seungyeon Kim, Guy Lebanon, Yoram Singer
-iclr-2013-38 | Metric-Free Natural Gradient for Joint-Training of Boltzmann Machines | http://arxiv.org/abs/1301.3545 | author:Guillaume Desjardins, Razvan Pascanu, Aaron Courville, Yoshua Bengio
-iclr-2013-39 | Natural Gradient Revisited | http://arxiv.org/abs/1301.3584v4 | author:Razvan Pascanu, Yoshua Bengio
-iclr-2013-40 | Pushing Stochastic Gradient towards Second-Order Methods -- Backpropagation Learning with Transformations in Nonlinearities | http://arxiv.org/abs/1301.3476 | author:Tommi Vatanen, Tapani Raiko, Harri Valpola, Yann LeCun
-iclr-2013-41 | Regularized Discriminant Embedding for Visual Descriptor Learning | http://arxiv.org/abs/1301.3644 | author:Kye-Hyeon Kim, Rui Cai, Lei Zhang, Seungjin Choi
-iclr-2013-42 | Saturating Auto-Encoder | http://arxiv.org/abs/1301.3577 | author:Rostislav Goroshin, Yann LeCun
-iclr-2013-43 | Stochastic Pooling for Regularization of Deep Convolutional Neural Networks | http://arxiv.org/abs/1301.3557 | author:Matthew D. Zeiler, Rob Fergus
-iclr-2013-44 | The Manifold of Human Emotions | http://arxiv.org/abs/1301.3214 | author:Seungyeon Kim, Fuxin Li, Guy Lebanon, Irfan Essa
-iclr-2013-45 | The Neural Representation Benchmark and its Evaluation on Brain and Machine | http://arxiv.org/abs/1301.3530 | author:Charles F. Cadieu, Ha Hong, Dan Yamins, Nicolas Pinto, Najib J. Majaj, James J. DiCarlo
-iclr-2013-46 | Training Neural Networks with Stochastic Hessian-Free Optimization | http://arxiv.org/abs/1301.3641 | author:Ryan Kiros
-iclr-2013-47 | Tree structured sparse coding on cubes | http://arxiv.org/abs/1301.3590 | author:Arthur Szlam
-iclr-2013-48 | Two SVDs produce more focal deep learning representations | http://arxiv.org/abs/1301.3627 | author:Hinrich Schuetze, Christian Scheible
-iclr-2013-49 | Unsupervised Feature Learning for low-level Local Image Descriptors | http://arxiv.org/abs/1301.2840 | author:Christian Osendorfer, Justin Bayer, Patrick van der Smagt
-iclr-2013-50 | Visual Objects Classification with Sliding Spatial Pyramid Matching | http://arxiv.org/abs/1212.3767 | author:Hao Wooi Lim, Yong Haur Tay
-iclr-2013-51 | What Regularized Auto-Encoders Learn from the Data Generating Distribution | http://arxiv.org/abs/1211.4246 | author:Guillaume Alain, Yoshua Bengio
-iclr-2013-52 | When Does a Mixture of Products Contain a Product of Mixtures? | http://arxiv.org/abs/1206.0387 | author:Guido F. Montufar, Jason Morton
-iclr-2013-53 | Why Size Matters: Feature Coding as Nystrom Sampling | http://arxiv.org/abs/1301.5348 | author:Oriol Vinyals, Yangqing Jia, Trevor Darrell
-iclr-2013-54 | Zero-Shot Learning Through Cross-Modal Transfer | http://arxiv.org/abs/1301.3666 | author:Richard Socher, Milind Ganjoo, Hamsa Sridhar, Osbert Bastani, Christopher D. Manning, Andrew Y. Ng
+iclr-2013-1 | A Nested HDP for Hierarchical Topic Models | http://arxiv.org/abs/1301.3570 | category:paper author:John Paisley, Chong Wang, David Blei, Michael I. Jordan
+iclr-2013-2 | A Semantic Matching Energy Function for Learning with Multi-relational Data | http://arxiv.org/abs/1301.3485 | category:paper author:Xavier Glorot, Antoine Bordes, Jason Weston, Yoshua Bengio
+iclr-2013-3 | Adaptive learning rates and parallelization for stochastic, sparse, non-smooth gradients | http://arxiv.org/abs/1301.3764 | category:paper author:Tom Schaul, Yann LeCun
+iclr-2013-4 | Affinity Weighted Embedding | http://arxiv.org/abs/1301.4171 | category:paper author:Jason Weston, Ron Weiss, Hector Yee
+iclr-2013-5 | Auto-pooling: Learning to Improve Invariance of Image Features from Image Sequences | http://arxiv.org/abs/1301.3323 | category:paper author:Sainbayar Sukhbaatar, Takaki Makino, Kazuyuki Aihara
+iclr-2013-6 | Barnes-Hut-SNE | http://arxiv.org/abs/1301.3342 | category:paper author:Laurens van der Maaten
+iclr-2013-7 | Big Neural Networks Waste Capacity | http://arxiv.org/abs/1301.3583 | category:paper author:Yann N. Dauphin, Yoshua Bengio
+iclr-2013-8 | Block Coordinate Descent for Sparse NMF | http://arxiv.org/abs/1301.3527 | category:paper author:Vamsi K. Potluru, Sergey M. Plis, Jonathan Le Roux, Barak A. Pearlmutter, Vince D. Calhoun, Thomas P. Hayes
+iclr-2013-9 | Boltzmann Machines and Denoising Autoencoders for Image Denoising | http://arxiv.org/abs/1301.3468 | category:paper author:Kyunghyun Cho
+iclr-2013-10 | Clustering Learning for Robotic Vision | http://arxiv.org/abs/1301.2820 | category:paper author:Eugenio Culurciello, Jordan Bates, Aysegul Dundar, Jose Carrasco, Clement Farabet
+iclr-2013-11 | Complexity of Representation and Inference in Compositional Models with Part Sharing | http://arxiv.org/abs/1301.3560 | category:paper author:Alan L. Yuille, Roozbeh Mottaghi
+iclr-2013-12 | Cutting Recursive Autoencoder Trees | http://arxiv.org/abs/1301.2811 | category:paper author:Christian Scheible, Hinrich Schuetze
+iclr-2013-13 | Deep Learning for Detecting Robotic Grasps | http://arxiv.org/abs/1301.3592 | category:paper author:Ian Lenz, Honglak Lee, Ashutosh Saxena
+iclr-2013-14 | Deep Predictive Coding Networks | http://arxiv.org/abs/1301.3541 | category:paper author:Rakesh Chalasani, Jose C. Principe
+iclr-2013-15 | Discrete Restricted Boltzmann Machines | http://arxiv.org/abs/1301.3529 | category:paper author:Guido F. Montufar, Jason Morton
+iclr-2013-16 | Discriminative Recurrent Sparse Auto-Encoders | http://arxiv.org/abs/1301.3775 | category:paper author:Jason Tyler Rolfe, Yann LeCun
+iclr-2013-17 | Efficient Estimation of Word Representations in Vector Space | http://arxiv.org/abs/1301.3781 | category:paper author:Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean
+iclr-2013-18 | Efficient Learning of Domain-invariant Image Representations | http://arxiv.org/abs/1301.3224 | category:paper author:Judy Hoffman, Erik Rodner, Jeff Donahue, Trevor Darrell, Kate Saenko
+iclr-2013-19 | Factorized Topic Models | http://arxiv.org/abs/1301.3461 | category:paper author:Cheng Zhang, Carl Henrik Ek, Hedvig Kjellstrom
+iclr-2013-20 | Feature Learning in Deep Neural Networks - A Study on Speech Recognition Tasks | http://arxiv.org/abs/1301.3605 | category:paper author:Dong Yu, Michael L. Seltzer, Jinyu Li, Jui-Ting Huang, Frank Seide
+iclr-2013-21 | Feature grouping from spatially constrained multiplicative interaction | http://arxiv.org/abs/1301.3391 | category:paper author:Felix Bauer, Roland Memisevic
+iclr-2013-22 | Gradient Driven Learning for Pooling in Visual Pipeline Feature Extraction Models | http://arxiv.org/abs/1301.3755 | category:paper author:Derek Rose, Itamar Arel
+iclr-2013-23 | Herded Gibbs Sampling | http://arxiv.org/abs/1301.4168 | category:paper author:Luke Bornn, Yutian Chen, Nando de Freitas, Mareija Eskelin, Jing Fang, Max Welling
+iclr-2013-24 | Hierarchical Data Representation Model - Multi-layer NMF | http://arxiv.org/abs/1301.6316 | category:paper author:Hyun Ah Song, Soo-Young Lee
+iclr-2013-25 | Indoor Semantic Segmentation using depth information | http://arxiv.org/abs/1301.3572 | category:paper author:Camille Couprie, Clément Farabet, Laurent Najman, Yann LeCun
+iclr-2013-26 | Information Theoretic Learning with Infinitely Divisible Kernels | http://arxiv.org/abs/1301.3551 | category:paper author:Luis G. Sanchez Giraldo, Jose C. Principe
+iclr-2013-27 | Jitter-Adaptive Dictionary Learning - Application to Multi-Trial Neuroelectric Signals | http://arxiv.org/abs/1301.3611 | category:paper author:Sebastian Hitziger, Maureen Clerc, Alexandre Gramfort, Sandrine Saillet, Christian Bénar, Théodore Papadopoulo
+iclr-2013-28 | Joint Training Deep Boltzmann Machines for Classification | http://arxiv.org/abs/1301.3568 | category:paper author:Ian J. Goodfellow, Aaron Courville, Yoshua Bengio
+iclr-2013-29 | Knowledge Matters: Importance of Prior Information for Optimization | http://arxiv.org/abs/1301.4083 | category:paper author:Caglar Gulcehre, Yoshua Bengio
+iclr-2013-30 | Latent Relation Representations for Universal Schemas | http://arxiv.org/abs/1301.4293 | category:paper author:Sebastian Riedel, Limin Yao, Andrew McCallum
+iclr-2013-31 | Learnable Pooling Regions for Image Classification | http://arxiv.org/abs/1301.3516 | category:paper author:Mateusz Malinowski, Mario Fritz
+iclr-2013-32 | Learning Features with Structure-Adapting Multi-view Exponential Family Harmoniums | http://arxiv.org/abs/1301.3539 | category:paper author:Yoonseop Kang, Seungjin Choi
+iclr-2013-33 | Learning New Facts From Knowledge Bases With Neural Tensor Networks and Semantic Word Vectors | http://arxiv.org/abs/1301.3618 | category:paper author:Danqi Chen, Richard Socher, Christopher D. Manning, Andrew Y. Ng
+iclr-2013-34 | Learning Stable Group Invariant Representations with Convolutional Networks | http://arxiv.org/abs/1301.3537 | category:paper author:Joan Bruna, Arthur Szlam, Yann LeCun
+iclr-2013-35 | Linear-Nonlinear-Poisson Neuron Networks Perform Bayesian Inference On Boltzmann Machines | http://arxiv.org/abs/1210.8442 | category:paper author:Louis Yuanlong Shao
+iclr-2013-36 | Local Component Analysis | http://arxiv.org/abs/1109.0093 | category:paper author:Nicolas Le Roux, Francis Bach
+iclr-2013-37 | Matrix Approximation under Local Low-Rank Assumption | http://arxiv.org/abs/1301.3192 | category:paper author:Joonseok Lee, Seungyeon Kim, Guy Lebanon, Yoram Singer
+iclr-2013-38 | Metric-Free Natural Gradient for Joint-Training of Boltzmann Machines | http://arxiv.org/abs/1301.3545 | category:paper author:Guillaume Desjardins, Razvan Pascanu, Aaron Courville, Yoshua Bengio
+iclr-2013-39 | Natural Gradient Revisited | http://arxiv.org/abs/1301.3584v4 | category:paper author:Razvan Pascanu, Yoshua Bengio
+iclr-2013-40 | Pushing Stochastic Gradient towards Second-Order Methods -- Backpropagation Learning with Transformations in Nonlinearities | http://arxiv.org/abs/1301.3476 | category:paper author:Tommi Vatanen, Tapani Raiko, Harri Valpola, Yann LeCun
+iclr-2013-41 | Regularized Discriminant Embedding for Visual Descriptor Learning | http://arxiv.org/abs/1301.3644 | category:paper author:Kye-Hyeon Kim, Rui Cai, Lei Zhang, Seungjin Choi
+iclr-2013-42 | Saturating Auto-Encoder | http://arxiv.org/abs/1301.3577 | category:paper author:Rostislav Goroshin, Yann LeCun
+iclr-2013-43 | Stochastic Pooling for Regularization of Deep Convolutional Neural Networks | http://arxiv.org/abs/1301.3557 | category:paper author:Matthew D. Zeiler, Rob Fergus
+iclr-2013-44 | The Manifold of Human Emotions | http://arxiv.org/abs/1301.3214 | category:paper author:Seungyeon Kim, Fuxin Li, Guy Lebanon, Irfan Essa
+iclr-2013-45 | The Neural Representation Benchmark and its Evaluation on Brain and Machine | http://arxiv.org/abs/1301.3530 | category:paper author:Charles F. Cadieu, Ha Hong, Dan Yamins, Nicolas Pinto, Najib J. Majaj, James J. DiCarlo
+iclr-2013-46 | Training Neural Networks with Stochastic Hessian-Free Optimization | http://arxiv.org/abs/1301.3641 | category:paper author:Ryan Kiros
+iclr-2013-47 | Tree structured sparse coding on cubes | http://arxiv.org/abs/1301.3590 | category:paper author:Arthur Szlam
+iclr-2013-48 | Two SVDs produce more focal deep learning representations | http://arxiv.org/abs/1301.3627 | category:paper author:Hinrich Schuetze, Christian Scheible
+iclr-2013-49 | Unsupervised Feature Learning for low-level Local Image Descriptors | http://arxiv.org/abs/1301.2840 | category:paper author:Christian Osendorfer, Justin Bayer, Patrick van der Smagt
+iclr-2013-50 | Visual Objects Classification with Sliding Spatial Pyramid Matching | http://arxiv.org/abs/1212.3767 | category:paper author:Hao Wooi Lim, Yong Haur Tay
+iclr-2013-51 | What Regularized Auto-Encoders Learn from the Data Generating Distribution | http://arxiv.org/abs/1211.4246 | category:paper author:Guillaume Alain, Yoshua Bengio
+iclr-2013-52 | When Does a Mixture of Products Contain a Product of Mixtures? | http://arxiv.org/abs/1206.0387 | category:paper author:Guido F. Montufar, Jason Morton
+iclr-2013-53 | Why Size Matters: Feature Coding as Nystrom Sampling | http://arxiv.org/abs/1301.5348 | category:paper author:Oriol Vinyals, Yangqing Jia, Trevor Darrell
+iclr-2013-54 | Zero-Shot Learning Through Cross-Modal Transfer | http://arxiv.org/abs/1301.3666 | category:paper author:Richard Socher, Milind Ganjoo, Hamsa Sridhar, Osbert Bastani, Christopher D. Manning, Andrew Y. Ng

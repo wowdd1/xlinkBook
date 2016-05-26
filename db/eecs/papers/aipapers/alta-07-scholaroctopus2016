@@ -1,22 +1,22 @@
-U07-1001 | Text Mining Techniques for Building a Biolexicon | http://www.aclweb.org/anthology/U/U07/U07-1001.pdf | author:Sophia Ananiadou
-U07-1002 | Does Language Technology Offer Anything to Small Languages? | http://www.aclweb.org/anthology/U/U07/U07-1002.pdf | author:Nick Thieberger
-U07-1003 | Measures of Measurements: Robust Evaluation of Search Systems | http://www.aclweb.org/anthology/U/U07/U07-1003.pdf | author:Justin Zobel
-U07-1004 | Entailment due to Syntactically Encoded Semantic Relationships | http://www.aclweb.org/anthology/U/U07/U07-1004.pdf | author:Elena Akhmatova; Mark Dras
-U07-1005 | Measuring Correlation Between Linguist’s Judgments and Latent Dirichlet Allocation Topics | http://www.aclweb.org/anthology/U/U07/U07-1005.pdf | author:Ari Chanen; Jon Patrick
-U07-1006 | TAT: An Author Profiling Tool with Application to Arabic Emails | http://www.aclweb.org/anthology/U/U07/U07-1006.pdf | author:Dominique Estival; Tanja Gaustad; Son Bao Pham; Will Radford; Ben Hutchinson
-U07-1007 | Exploring Approaches to Discriminating among Near-Synonyms | http://www.aclweb.org/anthology/U/U07/U07-1007.pdf | author:Mary Gardiner; Mark Dras
-U07-1008 | Practical Queries of a Massive n-gram Database | http://www.aclweb.org/anthology/U/U07/U07-1008.pdf | author:Tobias Hawker; Mary Gardiner; Andrew Bennetts
-U07-1009 | Extending Sense Collocations in Interpreting Noun Compounds | http://www.aclweb.org/anthology/U/U07/U07-1009.pdf | author:Su Nam Kim; Meladel Mistica; Timothy Baldwin
-U07-1010 | Named Entity Recognition in Question Answering of Speech Data | http://www.aclweb.org/anthology/U/U07/U07-1010.pdf | author:Diego Mollá; Menno van Zaanen; Steve Cassidy
-U07-1011 | Experiments in Mutual Exclusion Bootstrapping | http://www.aclweb.org/anthology/U/U07/U07-1011.pdf | author:Tara Murphy; James Curran
-U07-1012 | Charting Democracy Across Parsers | http://www.aclweb.org/anthology/U/U07/U07-1012.pdf | author:Scott Nowson; Robert Dale
-U07-1013 | Two-Step Comprehensive Open Domain Text Annotation with Frame Semantics | http://www.aclweb.org/anthology/U/U07/U07-1013.pdf | author:Bahadorreza Ofoghi; John Yearwood; Liping Ma
-U07-1014 | Question Prediction Language Model | http://www.aclweb.org/anthology/U/U07/U07-1014.pdf | author:Luiz Augusto Pizzato; Diego Mollá
-U07-1015 | Exploring Abbreviation Expansion for Genomic Information Retrieval | http://www.aclweb.org/anthology/U/U07/U07-1015.pdf | author:Nicola Stokes; Yi Li; Lawrence Cavedon; Justin Zobel
-U07-1016 | Parsing Internal Noun Phrase Structure with Collins’ Models | http://www.aclweb.org/anthology/U/U07/U07-1016.pdf | author:David Vadas; James R. Curran
-U07-1017 | An Empirical Investigation into Grammatically Constrained Contexts in Predicting Distributional Similarity | http://www.aclweb.org/anthology/U/U07/U07-1017.pdf | author:Dongqiang Yang; David Powers
-U07-1018 | Dictionary Alignment for Context-sensitive Word Glossing | http://www.aclweb.org/anthology/U/U07/U07-1018.pdf | author:Willy Yap; Timothy Baldwin
-U07-1019 | Statistical Machine Translation of Australian Aboriginal Languages: Morphological Analysis with Languages of Differing Morphological Richness | http://www.aclweb.org/anthology/U/U07/U07-1019.pdf | author:Simon Zwarts; Mark Dras
-U07-1020 | Exploring Extensions to Machine-learning based Gene Normalisation | http://www.aclweb.org/anthology/U/U07/U07-1020.pdf | author:Benjamin Goudey; Nicola Stokes; David Martinez
-U07-1021 | Distributional Similarity of Multi-Word Expressions | http://www.aclweb.org/anthology/U/U07/U07-1021.pdf | author:Laura Ingram; James Curran
-U07-1022 | Extending CCGbank with Quotes and Multi-modal CCG | http://www.aclweb.org/anthology/U/U07/U07-1022.pdf | author:Daniel Tse; James Curran
+U07-1001 | Text Mining Techniques for Building a Biolexicon | http://www.aclweb.org/anthology/U/U07/U07-1001.pdf | category:paper author:Sophia Ananiadou
+U07-1002 | Does Language Technology Offer Anything to Small Languages? | http://www.aclweb.org/anthology/U/U07/U07-1002.pdf | category:paper author:Nick Thieberger
+U07-1003 | Measures of Measurements: Robust Evaluation of Search Systems | http://www.aclweb.org/anthology/U/U07/U07-1003.pdf | category:paper author:Justin Zobel
+U07-1004 | Entailment due to Syntactically Encoded Semantic Relationships | http://www.aclweb.org/anthology/U/U07/U07-1004.pdf | category:paper author:Elena Akhmatova; Mark Dras
+U07-1005 | Measuring Correlation Between Linguist’s Judgments and Latent Dirichlet Allocation Topics | http://www.aclweb.org/anthology/U/U07/U07-1005.pdf | category:paper author:Ari Chanen; Jon Patrick
+U07-1006 | TAT: An Author Profiling Tool with Application to Arabic Emails | http://www.aclweb.org/anthology/U/U07/U07-1006.pdf | category:paper author:Dominique Estival; Tanja Gaustad; Son Bao Pham; Will Radford; Ben Hutchinson
+U07-1007 | Exploring Approaches to Discriminating among Near-Synonyms | http://www.aclweb.org/anthology/U/U07/U07-1007.pdf | category:paper author:Mary Gardiner; Mark Dras
+U07-1008 | Practical Queries of a Massive n-gram Database | http://www.aclweb.org/anthology/U/U07/U07-1008.pdf | category:paper author:Tobias Hawker; Mary Gardiner; Andrew Bennetts
+U07-1009 | Extending Sense Collocations in Interpreting Noun Compounds | http://www.aclweb.org/anthology/U/U07/U07-1009.pdf | category:paper author:Su Nam Kim; Meladel Mistica; Timothy Baldwin
+U07-1010 | Named Entity Recognition in Question Answering of Speech Data | http://www.aclweb.org/anthology/U/U07/U07-1010.pdf | category:paper author:Diego Mollá; Menno van Zaanen; Steve Cassidy
+U07-1011 | Experiments in Mutual Exclusion Bootstrapping | http://www.aclweb.org/anthology/U/U07/U07-1011.pdf | category:paper author:Tara Murphy; James Curran
+U07-1012 | Charting Democracy Across Parsers | http://www.aclweb.org/anthology/U/U07/U07-1012.pdf | category:paper author:Scott Nowson; Robert Dale
+U07-1013 | Two-Step Comprehensive Open Domain Text Annotation with Frame Semantics | http://www.aclweb.org/anthology/U/U07/U07-1013.pdf | category:paper author:Bahadorreza Ofoghi; John Yearwood; Liping Ma
+U07-1014 | Question Prediction Language Model | http://www.aclweb.org/anthology/U/U07/U07-1014.pdf | category:paper author:Luiz Augusto Pizzato; Diego Mollá
+U07-1015 | Exploring Abbreviation Expansion for Genomic Information Retrieval | http://www.aclweb.org/anthology/U/U07/U07-1015.pdf | category:paper author:Nicola Stokes; Yi Li; Lawrence Cavedon; Justin Zobel
+U07-1016 | Parsing Internal Noun Phrase Structure with Collins’ Models | http://www.aclweb.org/anthology/U/U07/U07-1016.pdf | category:paper author:David Vadas; James R. Curran
+U07-1017 | An Empirical Investigation into Grammatically Constrained Contexts in Predicting Distributional Similarity | http://www.aclweb.org/anthology/U/U07/U07-1017.pdf | category:paper author:Dongqiang Yang; David Powers
+U07-1018 | Dictionary Alignment for Context-sensitive Word Glossing | http://www.aclweb.org/anthology/U/U07/U07-1018.pdf | category:paper author:Willy Yap; Timothy Baldwin
+U07-1019 | Statistical Machine Translation of Australian Aboriginal Languages: Morphological Analysis with Languages of Differing Morphological Richness | http://www.aclweb.org/anthology/U/U07/U07-1019.pdf | category:paper author:Simon Zwarts; Mark Dras
+U07-1020 | Exploring Extensions to Machine-learning based Gene Normalisation | http://www.aclweb.org/anthology/U/U07/U07-1020.pdf | category:paper author:Benjamin Goudey; Nicola Stokes; David Martinez
+U07-1021 | Distributional Similarity of Multi-Word Expressions | http://www.aclweb.org/anthology/U/U07/U07-1021.pdf | category:paper author:Laura Ingram; James Curran
+U07-1022 | Extending CCGbank with Quotes and Multi-modal CCG | http://www.aclweb.org/anthology/U/U07/U07-1022.pdf | category:paper author:Daniel Tse; James Curran

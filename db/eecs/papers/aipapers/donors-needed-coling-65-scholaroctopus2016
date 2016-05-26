@@ -1,24 +1,24 @@
-C65-1001 | SOME QUESTIONS OF LANGUAGE THEORY | http://www.aclweb.org/anthology/C/C65C65-1001.pdf | author:S. Abraham
-C65-1002 | SUBCLASSIFICATION OF PARTS OF SPEECH IN RUSSIAN: VERBS | http://www.aclweb.org/anthology/C/C65C65-1002.pdf | author:A. Andreyewsky
-C65-1003 | FACTOR-ANALYSIS OF CORRESPONDENCES | http://www.aclweb.org/anthology/C/C65C65-1003.pdf | author:Brigitte Cordier
-C65-1005 | MACHINE TRANSLATION AND CONNECTEDNESS BETWEEN PHRASES | http://www.aclweb.org/anthology/C/C65C65-1005.pdf | author:Karel CULIK
-C65-1006 | AUTOMATIC LINGUISTIC CLASSIFICATION | http://www.aclweb.org/anthology/C/C65C65-1006.pdf | author:E. D. Pendergraft; N. Dale
-C65-1009 | SOME COMMENTS ON ALGORITHM AND GRAMMAR IN THE AUTOMATIC PARSING OF NATURAL LANGUAGES | http://www.aclweb.org/anthology/C/C65C65-1009.pdf | author:Paul L. Garvin
-C65-1010 | MEASUREMENT OF SIMILARITY BETWEEN NOUNS | http://www.aclweb.org/anthology/C/C65C65-1010.pdf | author:Kenneth E. Harper
-C65-1014 | SOME COMPONENTS OF A PROGRAM FOR DYNAMIC MODELLING OF HISTORICAL CHANGE IN LANGUAGE | http://www.aclweb.org/anthology/C/C65C65-1014.pdf | author:Sheldon Klein
-C65-1015 | MODELS OF LEXICAL DECAY | http://www.aclweb.org/anthology/C/C65C65-1015.pdf | author:D. Kleinecke
-C65-1016 | SETS OF GRAMMARS BETWEEN CONTEXT-FREE AND CONTEXT-SENSITIVE | http://www.aclweb.org/anthology/C/C65C65-1016.pdf | author:Peter Kugel
-C65-1017 | A SYSTEM FOR TRANSFORMATIONAL ANALYSIS | http://www.aclweb.org/anthology/C/C65C65-1017.pdf | author:Susumu Kuno
-C65-1018 | A Heuristic Approach to Natural Language Processing | http://www.aclweb.org/anthology/C/C65C65-1018.pdf | author:Denis M. Manelski; Gilbert K. Krulee
-C65-1019 | PUSHDOWN STORES AND SUBSCRIPTS | http://www.aclweb.org/anthology/C/C65C65-1019.pdf | author:Jacob Mey
-C65-1020 | ENDOCENTRIC CONSTRUCTIONS AND THE COCKE PARSING LOGIC | http://www.aclweb.org/anthology/C/C65C65-1020.pdf | author:Jane J. Robinson
-C65-1021 | SOME MATHEMATICAL ASPECTS ON SYNTACTIC DISCRIPTION | http://www.aclweb.org/anthology/C/C65C65-1021.pdf | author:Itiroo Sakai
-C65-1022 | SENTENCE GENERATION BY SEMANTIC CONCORDANCE | http://www.aclweb.org/anthology/C/C65C65-1022.pdf | author:Toshiyuki Sakai; Makoto Nagao
-C65-1024 | GENERATION, PRODUCTION, AND TRANSLATION | http://www.aclweb.org/anthology/C/C65C65-1024.pdf | author:Petr Sgall
-C65-1025 | ON A CERTAIN DISTRIBUTION OF SEMANTIC UNITS | http://www.aclweb.org/anthology/C/C65C65-1025.pdf | author:Wojciech Skalmowski
-C65-1026 | SPECIFICATIONS FOR A TREE PROCESSING LANGUAGE | http://www.aclweb.org/anthology/C/C65C65-1026.pdf | author:R. Tabory; F. L. Zarnfaller
-C65-1027 | DATA PREPARATION FOR SYNTACTIC TRANSLATION | http://www.aclweb.org/anthology/C/C65C65-1027.pdf | author:L. W. Tosh
-C65-1028 | MORPHISM: A SYMBOLIC LIST PROCESSING LANGUAGE | http://www.aclweb.org/anthology/C/C65C65-1028.pdf | author:Harold R. Vandenburgh
-C65-1029 | SYNTACTIC ANALYSIS IN THE CASE OF HIGHLY INFLECTING LANGUAGES | http://www.aclweb.org/anthology/C/C65C65-1029.pdf | author:D. Varga
-C65-1030 | SYNTAXE ET INTERPRETATION | http://www.aclweb.org/anthology/C/C65C65-1030.pdf | author:B. Vauquois; G. Veillon; J. Veyrunes
-C65-1031 | AUTOMATIC DEEP STRUCTURE ANALYSIS USING AN APPROXIMATE FORMALISM | http://www.aclweb.org/anthology/C/C65C65-1031.pdf | author:D. Lieberman; D. Lochak; K. Ochel
+C65-1001 | SOME QUESTIONS OF LANGUAGE THEORY | http://www.aclweb.org/anthology/C/C65C65-1001.pdf | category:paper author:S. Abraham
+C65-1002 | SUBCLASSIFICATION OF PARTS OF SPEECH IN RUSSIAN: VERBS | http://www.aclweb.org/anthology/C/C65C65-1002.pdf | category:paper author:A. Andreyewsky
+C65-1003 | FACTOR-ANALYSIS OF CORRESPONDENCES | http://www.aclweb.org/anthology/C/C65C65-1003.pdf | category:paper author:Brigitte Cordier
+C65-1005 | MACHINE TRANSLATION AND CONNECTEDNESS BETWEEN PHRASES | http://www.aclweb.org/anthology/C/C65C65-1005.pdf | category:paper author:Karel CULIK
+C65-1006 | AUTOMATIC LINGUISTIC CLASSIFICATION | http://www.aclweb.org/anthology/C/C65C65-1006.pdf | category:paper author:E. D. Pendergraft; N. Dale
+C65-1009 | SOME COMMENTS ON ALGORITHM AND GRAMMAR IN THE AUTOMATIC PARSING OF NATURAL LANGUAGES | http://www.aclweb.org/anthology/C/C65C65-1009.pdf | category:paper author:Paul L. Garvin
+C65-1010 | MEASUREMENT OF SIMILARITY BETWEEN NOUNS | http://www.aclweb.org/anthology/C/C65C65-1010.pdf | category:paper author:Kenneth E. Harper
+C65-1014 | SOME COMPONENTS OF A PROGRAM FOR DYNAMIC MODELLING OF HISTORICAL CHANGE IN LANGUAGE | http://www.aclweb.org/anthology/C/C65C65-1014.pdf | category:paper author:Sheldon Klein
+C65-1015 | MODELS OF LEXICAL DECAY | http://www.aclweb.org/anthology/C/C65C65-1015.pdf | category:paper author:D. Kleinecke
+C65-1016 | SETS OF GRAMMARS BETWEEN CONTEXT-FREE AND CONTEXT-SENSITIVE | http://www.aclweb.org/anthology/C/C65C65-1016.pdf | category:paper author:Peter Kugel
+C65-1017 | A SYSTEM FOR TRANSFORMATIONAL ANALYSIS | http://www.aclweb.org/anthology/C/C65C65-1017.pdf | category:paper author:Susumu Kuno
+C65-1018 | A Heuristic Approach to Natural Language Processing | http://www.aclweb.org/anthology/C/C65C65-1018.pdf | category:paper author:Denis M. Manelski; Gilbert K. Krulee
+C65-1019 | PUSHDOWN STORES AND SUBSCRIPTS | http://www.aclweb.org/anthology/C/C65C65-1019.pdf | category:paper author:Jacob Mey
+C65-1020 | ENDOCENTRIC CONSTRUCTIONS AND THE COCKE PARSING LOGIC | http://www.aclweb.org/anthology/C/C65C65-1020.pdf | category:paper author:Jane J. Robinson
+C65-1021 | SOME MATHEMATICAL ASPECTS ON SYNTACTIC DISCRIPTION | http://www.aclweb.org/anthology/C/C65C65-1021.pdf | category:paper author:Itiroo Sakai
+C65-1022 | SENTENCE GENERATION BY SEMANTIC CONCORDANCE | http://www.aclweb.org/anthology/C/C65C65-1022.pdf | category:paper author:Toshiyuki Sakai; Makoto Nagao
+C65-1024 | GENERATION, PRODUCTION, AND TRANSLATION | http://www.aclweb.org/anthology/C/C65C65-1024.pdf | category:paper author:Petr Sgall
+C65-1025 | ON A CERTAIN DISTRIBUTION OF SEMANTIC UNITS | http://www.aclweb.org/anthology/C/C65C65-1025.pdf | category:paper author:Wojciech Skalmowski
+C65-1026 | SPECIFICATIONS FOR A TREE PROCESSING LANGUAGE | http://www.aclweb.org/anthology/C/C65C65-1026.pdf | category:paper author:R. Tabory; F. L. Zarnfaller
+C65-1027 | DATA PREPARATION FOR SYNTACTIC TRANSLATION | http://www.aclweb.org/anthology/C/C65C65-1027.pdf | category:paper author:L. W. Tosh
+C65-1028 | MORPHISM: A SYMBOLIC LIST PROCESSING LANGUAGE | http://www.aclweb.org/anthology/C/C65C65-1028.pdf | category:paper author:Harold R. Vandenburgh
+C65-1029 | SYNTACTIC ANALYSIS IN THE CASE OF HIGHLY INFLECTING LANGUAGES | http://www.aclweb.org/anthology/C/C65C65-1029.pdf | category:paper author:D. Varga
+C65-1030 | SYNTAXE ET INTERPRETATION | http://www.aclweb.org/anthology/C/C65C65-1030.pdf | category:paper author:B. Vauquois; G. Veillon; J. Veyrunes
+C65-1031 | AUTOMATIC DEEP STRUCTURE ANALYSIS USING AN APPROXIMATE FORMALISM | http://www.aclweb.org/anthology/C/C65C65-1031.pdf | category:paper author:D. Lieberman; D. Lochak; K. Ochel

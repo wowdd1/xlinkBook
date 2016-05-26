@@ -1,158 +1,158 @@
-icml-2008-1 | A Decoupled Approach to Exemplar-based Unsupervised Learning. | http://icml2008.cs.helsinki.fi/papers/236.pdf | author:Sebastian Nowozin,  Gökhan Bakir
-icml-2008-2 | A Distance Model for Rhythms | http://icml2008.cs.helsinki.fi/papers/278.pdf | author:Jean-Francois Paiement, Yves Grandvalet, Samy Bengio, and  Douglas Eck
-icml-2008-3 | A Dual Coordinate Descent Method for Large-scale Linear SVM | http://icml2008.cs.helsinki.fi/papers/166.pdf | author:Cho-Jui Hsieh, Kai-Wei Chang, Chih-Jen Lin, S. Sathiya Keerthi, and  S. Sundararajan
-icml-2008-4 | A Generalization of Haussler's Convolution Kernel - Mapping Kernel | http://icml2008.cs.helsinki.fi/papers/643.pdf | author:Kilho Shin,  Tetsuji Kuboyama
-icml-2008-5 | A Least Squares Formulation for Canonical Correlation Analysis | http://icml2008.cs.helsinki.fi/papers/270.pdf | author:Liang Sun, Shuiwang Ji, and  Jieping Ye
-icml-2008-6 | A Quasi-Newton Approach to Nonsmooth Convex Optimization | http://icml2008.cs.helsinki.fi/papers/461.pdf | author:Jin Yu, S.V.N. Vishwanathan, Simon Guenter, and  Nicol Schraudolph
-icml-2008-7 | A Rate-Distortion One-Class Model and its Applications to Clustering | http://icml2008.cs.helsinki.fi/papers/628.pdf | author:Koby Crammer, Partha Pratim Talukdar, and  Fernando Pereira
-icml-2008-8 | A Reproducing Kernel Hilbert Space Framework for Pairwise Time Series Distances | http://icml2008.cs.helsinki.fi/papers/318.pdf | author:Zhengdong Lu, Todd K. Leen, Yonghong Huang, and  Deniz Erdogmus
-icml-2008-9 | A Semi-parametric Statistical Approach to Model-free Policy Evaluation | http://icml2008.cs.helsinki.fi/papers/429.pdf | author:Tsuyoshi Ueno, Motoaki Kawanabe, Takeshi Mori, Shin-Ichi Maeda, and  Shin Ishii
-icml-2008-10 | A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning | http://icml2008.cs.helsinki.fi/papers/391.pdf | author:Ronan Collobert,  Jason Weston
-icml-2008-11 | A Worst-Case Comparison Between Temporal Difference and Residual Gradient with Linear Function Approximation | http://icml2008.cs.helsinki.fi/papers/125.pdf | author:Lihong Li
-icml-2008-12 | Accurate Max-margin Training for Structured Output Spaces | http://icml2008.cs.helsinki.fi/papers/402.pdf | author:Sunita Sarawagi,  Rahul Gupta
-icml-2008-13 | Active Kernel Learning | http://icml2008.cs.helsinki.fi/papers/437.pdf | author:Steven C.H. Hoi,  Rong Jin
-icml-2008-14 | Active Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/290.pdf | author:Arkady Epshteyn, Adam Vogel, and  Gerald DeJong
-icml-2008-15 | Actively Learning Level-Sets of Composite Functions | http://icml2008.cs.helsinki.fi/papers/687.pdf | author:Brent Bryan,  Jeff Schneider
-icml-2008-16 | Adaptive p-Posterior Mixture-Model Kernels for Multiple Instance Learning | http://icml2008.cs.helsinki.fi/papers/130.pdf | author:Hua-Yan Wang, Qiang Yang, and  Hongbin Zha
-icml-2008-17 | An Analysis of Linear Models, Linear Value-Function Approximation, and Feature Selection for Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/581.pdf | author:Ronald Parr, Lihong Li, Gavin Taylor, Christopher Painter-Wakefield, and  Michael Littman
-icml-2008-18 | An Analysis of Reinforcement Learning with Function Approximation | http://icml2008.cs.helsinki.fi/papers/652.pdf | author:Francisco Melo, Sean Meyn, and  Isabel Ribeiro
-icml-2008-19 | An Asymptotic Analysis of Generative, Discriminative, and Pseudolikelihood Estimators | http://icml2008.cs.helsinki.fi/papers/588.pdf | author:Percy Liang,  Michael Jordan
-icml-2008-20 | An Empirical Evaluation of Supervised Learning in High Dimensions | http://icml2008.cs.helsinki.fi/papers/632.pdf | author:Rich Caruana, Nikos Karampatziakis, and  Ainur Yessenalina
-icml-2008-21 | An HDP-HMM for Systems with State Persistence | http://icml2008.cs.helsinki.fi/papers/305.pdf | author:Emily Fox, Erik Sudderth, Michael Jordan, and  Alan Willsky
-icml-2008-22 | An Object-Oriented Representation for Efficient Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/571.pdf | author:Carlos Diuk, Andre Cohen, and  Michael Littman
-icml-2008-23 | An RKHS for Multi-View Learning and Manifold Co-Regularization | http://icml2008.cs.helsinki.fi/papers/641.pdf | author:Vikas Sindhwani,  David Rosenberg
-icml-2008-24 | Apprenticeship Learning Using Linear Programming | http://icml2008.cs.helsinki.fi/papers/645.pdf | author:Umar Syed, Michael Bowling, and  Robert Schapire
-icml-2008-25 | Automatic Discovery and Transfer of MAXQ Hierarchies | http://icml2008.cs.helsinki.fi/papers/458.pdf | author:Neville Mehta, Soumya Ray, Prasad Tadepalli, and  Thomas Dietterich
-icml-2008-26 | Autonomous Geometric Precision Error Estimation in Low-level Computer Vision Tasks | http://icml2008.cs.helsinki.fi/papers/121.pdf | author:Andrés Corrada-Emmanuel,  Howard Schultz
-icml-2008-27 | Bayes Optimal Classification for Decision Trees | http://icml2008.cs.helsinki.fi/papers/455.pdf | author:Siegfried Nijssen
-icml-2008-28 | Bayesian Multiple Instance Learning: Automatic Feature Selection and Inductive Transfer | http://icml2008.cs.helsinki.fi/papers/587.pdf | author:Vikas Raykar, Balaji Krishnapuram, Jinbo Bi, Murat Dundar, and  R. Bharat Rao
-icml-2008-29 | Bayesian Probabilistic Matrix Factorization using Markov Chain Monte Carlo | http://icml2008.cs.helsinki.fi/papers/600.pdf | author:Ruslan Salakhutdinov,  Andriy Mnih
-icml-2008-30 | Beam Sampling for the Infinite Hidden Markov Model | http://icml2008.cs.helsinki.fi/papers/679.pdf | author:Jurgen Van Gael, Yunus Saatci, Yee Whye Teh, and  Zoubin Ghahramani
-icml-2008-31 | Bi-Level Path Following for Cross Validated Solution of Kernel Quantile Regression | http://icml2008.cs.helsinki.fi/papers/399.pdf | author:Saharon Rosset
-icml-2008-32 | Bolasso: Model Consistent Lasso Estimation through the Bootstrap | http://icml2008.cs.helsinki.fi/papers/390.pdf | author:Francis Bach
-icml-2008-33 | Boosting with Incomplete Information | http://icml2008.cs.helsinki.fi/papers/331.pdf | author:Gholamreza Haffari, Yang Wang, Shaojun Wang, Greg Mori, and  Feng Jiao
-icml-2008-34 | Causal Modelling Combining Instantaneous and Lagged Effects: an Identifiable Model Based on Non-Gaussianity | http://icml2008.cs.helsinki.fi/papers/160.pdf | author:Aapo Hyvarinen, Shohei Shimizu, and  Patrik Hoyer
-icml-2008-35 | Classification using Discriminative Restricted Boltzmann Machines | http://icml2008.cs.helsinki.fi/papers/601.pdf | author:Hugo Larochelle,  Yoshua Bengio
-icml-2008-36 | Closed-form Supervised Dimensionality Reduction with Generalized Linear Models | http://icml2008.cs.helsinki.fi/papers/668.pdf | author:Irina Rish, Genady Grabarnilk, Guillermo Cecchi, Francisco Pereira, and  Geoffrey J. Gordon
-icml-2008-37 | Composite Kernel Learning | http://icml2008.cs.helsinki.fi/papers/665.pdf | author:Marie Szafranski, Yves Grandvalet, and  Alain Rakotomamonjy
-icml-2008-38 | Compressed Sensing and Bayesian Experimental Design | http://icml2008.cs.helsinki.fi/papers/459.pdf | author:Matthias Seeger,  Hannes Nickisch
-icml-2008-39 | Confidence-Weighted Linear Classification | http://icml2008.cs.helsinki.fi/papers/322.pdf | author:Mark Dredze, Koby Crammer, and  Fernando Pereira
-icml-2008-40 | Cost-Sensitive Multi-class Classification from Probability Estimates | http://icml2008.cs.helsinki.fi/papers/150.pdf | author:Deirdre O'Brien, Maya Gupta, and  Robert Gray
-icml-2008-41 | Data Spectroscopy: Learning Mixture Models using Eigenspaces of Convolution Operators | http://icml2008.cs.helsinki.fi/papers/502.pdf | author:Tao Shi, Mikhail Belkin, and  Bin Yu
-icml-2008-42 | Deep Learning via Semi-Supervised Embedding | http://icml2008.cs.helsinki.fi/papers/340.pdf | author:Jason Weston, Frederic Ratle, and  Ronan Collobert
-icml-2008-43 | Democratic Approximation of Lexicographic Preference Models | http://icml2008.cs.helsinki.fi/papers/489.pdf | author:Fusun Yaman, Thomas Walsh, Michael Littman, and  Marie desJardins
-icml-2008-44 | Detecting Statistical Interactions with Additive Groves of Trees | http://icml2008.cs.helsinki.fi/papers/630.pdf | author:Daria Sorokina, Rich Caruana, Mirek Riedewald, and  Daniel Fink
-icml-2008-45 | Dirichlet Component Analysis: Feature Extraction for Compositional Data | http://icml2008.cs.helsinki.fi/papers/129.pdf | author:Hua-Yan Wang, Qiang Yang, Hong Qin, and  Hongbin Zha
-icml-2008-46 | Discriminative Parameter Learning for Bayesian Networks | http://icml2008.cs.helsinki.fi/papers/415.pdf | author:Jiang Su, Harry Zhang, Charles X. Ling, and  Stan Matwin
-icml-2008-47 | Discriminative Structure and Parameter Learning for Markov Logic Networks | http://icml2008.cs.helsinki.fi/papers/530.pdf | author:Tuyen Huynh,  Raymond Mooney
-icml-2008-48 | Efficient Bandit Algorithms for Online Multiclass Prediction | http://icml2008.cs.helsinki.fi/papers/511.pdf | author:Sham M. Kakade, Shai Shalev-Shwartz, and  Ambuj Tewari
-icml-2008-49 | Efficient MultiClass Maximum Margin Clustering | http://icml2008.cs.helsinki.fi/papers/168.pdf | author:Bin Zhao, Fei Wang, and  Changshui Zhang
-icml-2008-50 | Efficient Projections onto the L1-Ball for Learning in High Dimensions | http://icml2008.cs.helsinki.fi/papers/361.pdf | author:John Duchi, Shai Shalev-Shwartz, Yoram Singer, and  Tushar Chandra
-icml-2008-51 | Efficiently Learning Linear-Linear Exponential Family Predictive Representations of State | http://icml2008.cs.helsinki.fi/papers/197.pdf | author:David Wingate,  Satinder Singh
-icml-2008-52 | Efficiently Solving Convex Relaxations for MAP Estimation | http://icml2008.cs.helsinki.fi/papers/327.pdf | author:Pawan Kumar Mudigonda,  Philip Torr
-icml-2008-53 | Empirical Bernstein Stopping | http://icml2008.cs.helsinki.fi/papers/523.pdf | author:Volodymyr Mnih, Csaba Szepesvari, and  Jean-Yves Audibert
-icml-2008-54 | Estimating Labels from Label Proportions | http://icml2008.cs.helsinki.fi/papers/337.pdf | author:Novi Quadrianto, Alex Smola, Tiberio Caetano, and  Quoc Viet Le
-icml-2008-55 | Estimating Local Optimums in EM Algorithm over Gaussian Mixture Model | http://icml2008.cs.helsinki.fi/papers/196.pdf | author:Zhenjie Zhang, Bing Tian Dai, and  Anthony K.H. Tung
-icml-2008-56 | Expectation-Maximization for Sparse and Non-Negative PCA | http://icml2008.cs.helsinki.fi/papers/484.pdf | author:Christian David Sigg,  Joachim M. Buhmann
-icml-2008-57 | Exploration Scavenging | http://icml2008.cs.helsinki.fi/papers/519.pdf | author:John Langford, Alexander Strehl, and  Jennifer Wortman
-icml-2008-58 | Extracting and Composing Robust Features with Denoising Autoencoders | http://icml2008.cs.helsinki.fi/papers/592.pdf | author:Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and  Pierre-Antoine Manzagol
-icml-2008-59 | Fast Estimation of Relational Pattern Coverage through Randomization and Maximum Likelihood | http://icml2008.cs.helsinki.fi/papers/503.pdf | author:Ondrej Kuzelka,  Filip Zelezny
-icml-2008-60 | Fast Gaussian Process Methods for Point Process Intensity Estimation | http://icml2008.cs.helsinki.fi/papers/151.pdf | author:John Cunningham, Krishna Shenoy, and  Maneesh Sahani
-icml-2008-61 | Fast Incremental Proximity Search in Large Graphs | http://icml2008.cs.helsinki.fi/papers/565.pdf | author:Purnamrita Sarkar, Andrew Moore, and  Amit Prakash
-icml-2008-62 | Fast Nearest Neighbor Retrieval for Bregman Divergences | http://icml2008.cs.helsinki.fi/papers/400.pdf | author:Lawrence Cayton
-icml-2008-63 | Fast Solvers and Efficient Implementations for Distance Metric Learning | http://icml2008.cs.helsinki.fi/papers/215.pdf | author:Kilian Weinberger,  Lawrence Saul
-icml-2008-64 | Fast Support Vector Machine Training and Classification on Graphics Processors | http://icml2008.cs.helsinki.fi/papers/491.pdf | author:Bryan Catanzaro, Narayanan Sundaram, and  Kurt Keutzer
-icml-2008-65 | Fully Distributed EM for Very Large Datasets | http://icml2008.cs.helsinki.fi/papers/311.pdf | author:Jason Wolfe, Aria Haghighi, and  Dan Klein
-icml-2008-66 | Gaussian Process Product Models for Nonparametric Nonstationarity | http://icml2008.cs.helsinki.fi/papers/241.pdf | author:Ryan Adams,  Oliver Stegle
-icml-2008-67 | Graph Kernels Between Point Clouds | http://icml2008.cs.helsinki.fi/papers/379.pdf | author:Francis Bach
-icml-2008-68 | Graph Transduction via Alternating Minimization | http://icml2008.cs.helsinki.fi/papers/296.pdf | author:Jun Wang, Tony Jebara, and  Shih-Fu Chang
-icml-2008-69 | Grassmann Discriminant Analysis: a Unifying View on Subspace-Based Learning | http://icml2008.cs.helsinki.fi/papers/312.pdf | author:Jihun Hamm,  Daniel Lee
-icml-2008-70 | Hierarchical Kernel Stick-Breaking Process for Multi-Task Image Analysis | http://icml2008.cs.helsinki.fi/papers/554.pdf | author:Qi An, Chunping Wang, Ivo Shterev, Eric Wang, Lawrence Carin, and  David B. Dunson
-icml-2008-71 | Hierarchical Model-Based Reinforcement Learning: R-max + MAXQ | http://icml2008.cs.helsinki.fi/papers/544.pdf | author:Nicholas Jong,  Peter Stone
-icml-2008-72 | Hierarchical sampling for active learning | http://icml2008.cs.helsinki.fi/papers/324.pdf | author:Sanjoy Dasgupta,  Daniel Hsu
-icml-2008-73 | ICA and ISA Using Schweizer-Wolff Measure of Dependence | http://icml2008.cs.helsinki.fi/papers/551.pdf | author:Sergey Kirshner,  Barnabás Póczos
-icml-2008-74 | Improved Nystrom Low-Rank Approximation and Error Analysis | http://icml2008.cs.helsinki.fi/papers/476.pdf | author:Kai Zhang, Ivor Tsang, and  James Kwok
-icml-2008-75 | Inverting the Viterbi Algorithm: an Abstract Framework for Structure Design | http://icml2008.cs.helsinki.fi/papers/182.pdf | author:Michael Schnall-Levin, Leonid Chindelevitch, and  Bonnie Berger
-icml-2008-76 | Knows What It Knows: A Framework For Self-Aware Learning | http://icml2008.cs.helsinki.fi/papers/627.pdf | author:Lihong Li, Michael Littman, and  Thomas Walsh
-icml-2008-77 | Laplace Maximum Margin Markov Networks | http://icml2008.cs.helsinki.fi/papers/237.pdf | author:Jun Zhu, Eric Xing, and  Bo Zhang
-icml-2008-78 | Large Scale Manifold Transduction | http://icml2008.cs.helsinki.fi/papers/382.pdf | author:Michael Karlen, Jason Weston, Ayse Erkan, and  Ronan Collobert
-icml-2008-79 | Learning All Optimal Policies with Multiple Criteria | http://icml2008.cs.helsinki.fi/papers/257.pdf | author:Leon Barrett,  Srinivas Narayanan
-icml-2008-80 | Learning Dissimilarities by Ranking: From SDP to QP | http://icml2008.cs.helsinki.fi/papers/392.pdf | author:Hua Ouyang,  Alexander Gray
-icml-2008-81 | Learning Diverse Rankings with Multi-Armed Bandits | http://icml2008.cs.helsinki.fi/papers/264.pdf | author:Filip Radlinski, Robert Kleinberg, and  Thorsten Joachims
-icml-2008-82 | Learning for Control from Multiple Demonstrations | http://icml2008.cs.helsinki.fi/papers/452.pdf | author:Adam Coates, Pieter Abbeel, and  Andrew Ng
-icml-2008-83 | Learning from Incomplete Data with Infinite Imputations | http://icml2008.cs.helsinki.fi/papers/272.pdf | author:Uwe Dick, Peter Haider, and  Tobias Scheffer
-icml-2008-84 | Learning to Classify with Missing and Corrupted Features | http://icml2008.cs.helsinki.fi/papers/202.pdf | author:Ofer Dekel,  Ohad Shamir
-icml-2008-85 | Learning to Learn Implicit Queries from Gaze Patterns | http://icml2008.cs.helsinki.fi/papers/412.pdf | author:Kai Puolamäki, Antti Ajanki, and  Samuel Kaski
-icml-2008-86 | Learning to Sportscast: A Test of Grounded Language Acquisition | http://icml2008.cs.helsinki.fi/papers/304.pdf | author:David Chen,  Raymond Mooney
-icml-2008-87 | Listwise Approach to Learning to Rank - Theory and Algorithm | http://icml2008.cs.helsinki.fi/papers/167.pdf | author:Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and  Hang Li
-icml-2008-88 | Local Likelihood Modeling of Temporal Text Streams | http://icml2008.cs.helsinki.fi/papers/180.pdf | author:Guy Lebanon,  Yang Zhao
-icml-2008-89 | Localized Multiple Kernel Learning | http://icml2008.cs.helsinki.fi/papers/158.pdf | author:Mehmet Gonen,  Ethem Alpaydin
-icml-2008-90 | Manifold Alignment using Procrustes Analysis | http://icml2008.cs.helsinki.fi/papers/229.pdf | author:Chang Wang,  Sridhar Mahadevan
-icml-2008-91 | ManifoldBoost: Stagewise Function Approximation for Fully-, Semi- and Un-supervised Learning | http://icml2008.cs.helsinki.fi/papers/676.pdf | author:Nicolas Loeff, David Forsyth, and  Deepak Ramachandran
-icml-2008-92 | Maximum Likelihood Rule Ensembles | http://icml2008.cs.helsinki.fi/papers/362.pdf | author:Wojciech Kotlowski, Krzysztof Dembczynski, and  Roman Slowinski
-icml-2008-93 | Memory Bounded Inference in Topic Models | http://icml2008.cs.helsinki.fi/papers/419.pdf | author:Ryan Gomes, Max Welling, and  Pietro Perona
-icml-2008-94 | Message-passing for Graph-structured Linear Programs: Proximal Projections, Convergence and Rounding Schemes | http://icml2008.cs.helsinki.fi/papers/681.pdf | author:Pradeep Ravikumar, Alekh Agarwal, and  Martin J. Wainwright
-icml-2008-95 | Metric Embedding for Kernel Classification Rules | http://icml2008.cs.helsinki.fi/papers/582.pdf | author:Bharath Sriperumbudur, Omer Lang, and  Gert Lanckriet
-icml-2008-96 | Modeling Interleaved Hidden Processes | http://icml2008.cs.helsinki.fi/papers/413.pdf | author:Niels Landwehr
-icml-2008-97 | Modified MMI/MPE: a Direct Evaluation of the Margin in Speech Recognition | http://icml2008.cs.helsinki.fi/papers/398.pdf | author:Georg Heigold, Thomas Deselaers, Ralf Schlueter, and  Hermann Ney
-icml-2008-98 | Multi-Classification by Categorical Features via Clustering | http://icml2008.cs.helsinki.fi/papers/536.pdf | author:Yevgeny Seldin,  Naftali Tishby
-icml-2008-99 | Multi-Task Compressive Sensing with Dirichlet Process Priors | http://icml2008.cs.helsinki.fi/papers/209.pdf | author:Yuting Qi, Dehong Liu, David Dunson, and  Lawrence Carin
-icml-2008-100 | Multi-Task Learning for HIV Therapy Screening | http://icml2008.cs.helsinki.fi/papers/520.pdf | author:Steffen Bickel, Jasmina Bogojeska, Thomas Lengauer, and  Tobias Scheffer
-icml-2008-101 | Multiple Instance Ranking | http://icml2008.cs.helsinki.fi/papers/552.pdf | author:Charles Bergeron, Jed Zaretzki, Curt Breneman, and  Kristin Bennett
-icml-2008-102 | Nearest Hyperdisk Methods for High-Dimensional Classification | http://icml2008.cs.helsinki.fi/papers/178.pdf | author:Hakan Cevikalp, Bill Triggs, and  Robi Polikar
-icml-2008-103 | No-Regret Learning in Convex Games | http://icml2008.cs.helsinki.fi/papers/542.pdf | author:Geoffrey J. Gordon, Amy Greenwald, and  Casey Marks
-icml-2008-104 | Non-Parametric Policy Gradients: A Unified Treatment of Propositional and Relational Domains | http://icml2008.cs.helsinki.fi/papers/259.pdf | author:Kristian Kersting,  Kurt Driessens
-icml-2008-105 | Nonextensive Entropic Kernels | http://icml2008.cs.helsinki.fi/papers/277.pdf | author:Andre F. T. Martins, Mario A. T. Figueiredo, Pedro M. Q. Aguiar, Noah A. Smith, and  Eric P. Xing
-icml-2008-106 | Nonnegative Matrix Factorization via Rank-One Downdate | http://icml2008.cs.helsinki.fi/papers/667.pdf | author:Michael Biggs, Ali Ghodsi, and  Stephen Vavasis
-icml-2008-107 | Nu-Support Vector Machine as Conditional Value-at-Risk Minimization | http://icml2008.cs.helsinki.fi/papers/216.pdf | author:Akiko Takeda,  Masashi Sugiyama
-icml-2008-108 | On Multi-View Active Learning and the Combination with Semi-Supervised Learning | http://icml2008.cs.helsinki.fi/papers/383.pdf | author:Wei Wang,  Zhi-Hua Zhou
-icml-2008-109 | On Partial Optimality in Multi-label MRFs | http://icml2008.cs.helsinki.fi/papers/260.pdf | author:Pushmeet Kohli, Alexander Shekhovtsov, Carsten Rother, Vladimir Kolmogorov, and  Philip Torr
-icml-2008-110 | On the Chance Accuracies of Large Collections of Classifiers | http://icml2008.cs.helsinki.fi/papers/323.pdf | author:Mark Palatucci,  Andrew Carlson
-icml-2008-111 | On the Hardness of Finding Symmetries in Markov Decision Processes | http://icml2008.cs.helsinki.fi/papers/682.pdf | author:Shravan Narayanamurthy,  Balaraman Ravindran
-icml-2008-112 | On the Quantitative Analysis of Deep Belief Networks | http://icml2008.cs.helsinki.fi/papers/573.pdf | author:Ruslan Salakhutdinov,  Iain Murray
-icml-2008-113 | On-line Discovery of Temporal-Difference Networks | http://icml2008.cs.helsinki.fi/papers/317.pdf | author:Takaki Makino,  Toshihisa Takagi
-icml-2008-114 | Online Kernel Selection for Bayesian Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/341.pdf | author:Joseph Reisinger, Peter Stone, and  Risto Miikkulainen
-icml-2008-115 | Optimized Cutting Plane Algorithm for Support Vector Machines | http://icml2008.cs.helsinki.fi/papers/411.pdf | author:Vojtech Franc,  Soeren Sonnenburg
-icml-2008-116 | Optimizing Estimated Loss Reduction for Active Sampling in Rank Learning | http://icml2008.cs.helsinki.fi/papers/448.pdf | author:Pinar Donmez,  Jaime Carbonell
-icml-2008-117 | Pairwise Constraint Propagation by Semidefinite Programming for Semi-Supervised Classification | http://icml2008.cs.helsinki.fi/papers/145.pdf | author:Zhenguo Li, Jianzhuang Liu, and  Xiaoou Tang
-icml-2008-118 | Pointwise Exact Bootstrap Distributions of Cost Curves | http://icml2008.cs.helsinki.fi/papers/614.pdf | author:Charles Dugas,  David Gadoury
-icml-2008-119 | Polyhedral Classifier for Target Detection A Case Study: Colorectal Cancer | http://icml2008.cs.helsinki.fi/papers/513.pdf | author:Murat Dundar, Matthias Wolf, Sarang Lakare, Marcos Salganicoff, and  Vikas C. Raykar
-icml-2008-120 | Preconditioned Temporal Difference Learning | http://icml2008.cs.helsinki.fi/papers/111.pdf | author:Hengshuai Yao,  Zhi-Qiang Liu
-icml-2008-121 | Predicting Diverse Subsets Using Structural SVMs | http://icml2008.cs.helsinki.fi/papers/470.pdf | author:Yisong Yue,  Thorsten Joachims
-icml-2008-122 | Prediction with Expert Advice for the Brier Game | http://icml2008.cs.helsinki.fi/papers/242.pdf | author:Vladimir Vovk,  Fedor Zhdanov
-icml-2008-123 | Privacy-Preserving Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/335.pdf | author:Jun Sakuma, Shigenobu Kobayashi, and  Rebecca Wright
-icml-2008-124 | Query-Level Stability and Generalization in Learning to Rank | http://icml2008.cs.helsinki.fi/papers/179.pdf | author:Yanyan Lan, Tie-Yan Liu, Tao Qin, Zhiming Ma, and  Hang Li
-icml-2008-125 | Random Classification Noise Defeats All Convex Potential Boosters | http://icml2008.cs.helsinki.fi/papers/258.pdf | author:Philip M. Long,  Rocco A. Servedio
-icml-2008-126 | Rank Minimization via Online Learning | http://icml2008.cs.helsinki.fi/papers/367.pdf | author:Raghu Meka, Prateek Jain, Constantine Caramanis, and  Inderjit Dhillon
-icml-2008-127 | Reinforcement Learning in the Presence of Rare Events | http://icml2008.cs.helsinki.fi/papers/580.pdf | author:Jordan Frank, Shie Mannor, and  Doina Precup
-icml-2008-128 | Reinforcement Learning with Limited Reinforcement: Using Bayes Risk for Active Learning in POMDPs | http://icml2008.cs.helsinki.fi/papers/487.pdf | author:Finale Doshi, Joelle Pineau, and  Nicholas Roy
-icml-2008-129 | Robust Matching and Recognition using Context-Dependent Kernels | http://icml2008.cs.helsinki.fi/papers/449.pdf | author:Hichem Sahbi, Jean-Yves Audibert, Jaonary Rabarisoa, and  Renaud Keriven
-icml-2008-130 | SVM Optimization: Inverse Dependence on Training Set Size | http://icml2008.cs.helsinki.fi/papers/266.pdf | author:Shai Shalev-Shwartz,  Nathan Srebro
-icml-2008-131 | Sample-Based Learning and Search with Permanent and Transient Memories | http://icml2008.cs.helsinki.fi/papers/564.pdf | author:David Silver, Richard Sutton, and  Martin Mueller
-icml-2008-132 | Self-taught Clustering | http://icml2008.cs.helsinki.fi/papers/432.pdf | author:Wenyuan Dai, Qiang Yang, Gui-Rong Xue, and  Yong Yu
-icml-2008-133 | Semi-supervised Learning of Compact Document Representations with Deep Networks | http://icml2008.cs.helsinki.fi/papers/611.pdf | author:Marc'Aurelio Ranzato,  Martin Szummer
-icml-2008-134 | Sequence Kernels for Predicting Protein Essentiality | http://icml2008.cs.helsinki.fi/papers/440.pdf | author:Cyril Allauzen, Mehryar Mohri, and  Ameet Talwalkar
-icml-2008-135 | Space-indexed Dynamic Programming: Learning to Follow Trajectories | http://icml2008.cs.helsinki.fi/papers/488.pdf | author:J. Zico Kolter, Adam Coates, Andrew Ng, Yi Gu, and  Charles DuHadway
-icml-2008-136 | Sparse Bayesian Nonparametric Regression | http://icml2008.cs.helsinki.fi/papers/574.pdf | author:Francois Caron,  Arnaud Doucet
-icml-2008-137 | Sparse Multiscale Gaussian Process Regression | http://icml2008.cs.helsinki.fi/papers/599.pdf | author:Christian Walder, Kwang In Kim, and  Bernhard Schoelkopf
-icml-2008-138 | Spectral Clustering with Inconsistent Advice | http://icml2008.cs.helsinki.fi/papers/172.pdf | author:Tom Coleman, James Saunderson, and  Anthony Wirth
-icml-2008-139 | Stability of Transductive Regression Algorithms | http://icml2008.cs.helsinki.fi/papers/254.pdf | author:Corinna Cortes, Mehryar Mohri, Dmitry Pechyony, and  Ashish Rastogi
-icml-2008-140 | Statistical Models for Partial Membership | http://icml2008.cs.helsinki.fi/papers/460.pdf | author:Katherine Heller, Sinead Williamson, and  Zoubin Ghahramani
-icml-2008-141 | Stopping Conditions for Exact Computation of Leave-One-Out Error in Support Vector Machines | http://icml2008.cs.helsinki.fi/papers/497.pdf | author:Vojtech Franc, Pavel Laskov, and  Klaus-R. Mueller
-icml-2008-142 | Strategy Evaluation in Extensive Games with Importance Sampling | http://icml2008.cs.helsinki.fi/papers/655.pdf | author:Michael Bowling, Michael Johanson, Neil Burch, and  Duane Szafron
-icml-2008-143 | Structure Compilation: Trading Structure for Features | http://icml2008.cs.helsinki.fi/papers/673.pdf | author:Percy Liang, Hal Daume, and  Dan Klein
-icml-2008-144 | Tailoring Density Estimation via Reproducing Kernel Moment Matching | http://icml2008.cs.helsinki.fi/papers/377.pdf | author:Le Song, Xinhua Zhang, Alex Smola, Arthur Gretton, and  Bernhard Schoelkopf
-icml-2008-145 | The Asymptotics of Semi-Supervised Learning in Discriminative Probabilistic Models | http://icml2008.cs.helsinki.fi/papers/528.pdf | author:Nataliya Sokolovska, Olivier Cappé, and  François Yvon
-icml-2008-146 | The Dynamic Hierarchical Dirichlet Process | http://icml2008.cs.helsinki.fi/papers/538.pdf | author:Lu Ren, David B. Dunson, and  Lawrence Carin
-icml-2008-147 | The GroupLASSO for Generalized Linear Models: Uniqueness of Solutions and Efficient Algorithms | http://icml2008.cs.helsinki.fi/papers/113.pdf | author:Volker Roth,  Bernd Fischer
-icml-2008-148 | The Many Faces of Optimism: a Unifying Approach | http://icml2008.cs.helsinki.fi/papers/490.pdf | author:Istvan Szita,  Andras Lorincz
-icml-2008-149 | The Projectron: a Bounded Kernel-Based Perceptron | http://icml2008.cs.helsinki.fi/papers/355.pdf | author:Francesco Orabona, Joseph Keshet, and  Barbara Caputo
-icml-2008-150 | The Skew Spectrum of Graphs | http://icml2008.cs.helsinki.fi/papers/396.pdf | author:Risi Kondor,  Karsten Borgwardt
-icml-2008-151 | Topologically-Constrained Latent Variable Models | http://icml2008.cs.helsinki.fi/papers/371.pdf | author:Raquel Urtasun, David Fleet, Andreas Geiger, Jovan Popovic, Trevor Darrell, and  Neil Lawrence
-icml-2008-152 | Training Restricted Boltzmann Machines using Approximations to the Likelihood Gradient | http://icml2008.cs.helsinki.fi/papers/638.pdf | author:Tijmen Tieleman
-icml-2008-153 | Training SVM with Indefinite Kernels | http://icml2008.cs.helsinki.fi/papers/531.pdf | author:Jianhui Chen,  Jieping Ye
-icml-2008-154 | Training Structural SVMs when Exact Inference is Intractable | http://icml2008.cs.helsinki.fi/papers/279.pdf | author:Thomas Finley,  Thorsten Joachims
-icml-2008-155 | Transfer of Samples in Batch Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/479.pdf | author:Alessandro Lazaric, Marcello Restelli, and  Andrea Bonarini
-icml-2008-156 | Uncorrelated Multilinear Principal Component Analysis through Successive Variance Maximization | http://icml2008.cs.helsinki.fi/papers/163.pdf | author:Haiping Lu, Konstantinos Plataniotis, and  Anastasios Venetsanopoulos
-icml-2008-157 | Unsupervised Rank Aggregation with Distance-Based Models | http://icml2008.cs.helsinki.fi/papers/343.pdf | author:Alexandre Klementiev, Dan Roth, and  Kevin Small
-icml-2008-158 | mStruct: A New Admixture Model for Inference of Population Structure in Light of Both Genetic Admixing and Allele Mutations | http://icml2008.cs.helsinki.fi/papers/562.pdf | author:Suyash Shringarpure,  Eric Xing
+icml-2008-1 | A Decoupled Approach to Exemplar-based Unsupervised Learning. | http://icml2008.cs.helsinki.fi/papers/236.pdf | category:paper author:Sebastian Nowozin,  Gökhan Bakir
+icml-2008-2 | A Distance Model for Rhythms | http://icml2008.cs.helsinki.fi/papers/278.pdf | category:paper author:Jean-Francois Paiement, Yves Grandvalet, Samy Bengio, and  Douglas Eck
+icml-2008-3 | A Dual Coordinate Descent Method for Large-scale Linear SVM | http://icml2008.cs.helsinki.fi/papers/166.pdf | category:paper author:Cho-Jui Hsieh, Kai-Wei Chang, Chih-Jen Lin, S. Sathiya Keerthi, and  S. Sundararajan
+icml-2008-4 | A Generalization of Haussler's Convolution Kernel - Mapping Kernel | http://icml2008.cs.helsinki.fi/papers/643.pdf | category:paper author:Kilho Shin,  Tetsuji Kuboyama
+icml-2008-5 | A Least Squares Formulation for Canonical Correlation Analysis | http://icml2008.cs.helsinki.fi/papers/270.pdf | category:paper author:Liang Sun, Shuiwang Ji, and  Jieping Ye
+icml-2008-6 | A Quasi-Newton Approach to Nonsmooth Convex Optimization | http://icml2008.cs.helsinki.fi/papers/461.pdf | category:paper author:Jin Yu, S.V.N. Vishwanathan, Simon Guenter, and  Nicol Schraudolph
+icml-2008-7 | A Rate-Distortion One-Class Model and its Applications to Clustering | http://icml2008.cs.helsinki.fi/papers/628.pdf | category:paper author:Koby Crammer, Partha Pratim Talukdar, and  Fernando Pereira
+icml-2008-8 | A Reproducing Kernel Hilbert Space Framework for Pairwise Time Series Distances | http://icml2008.cs.helsinki.fi/papers/318.pdf | category:paper author:Zhengdong Lu, Todd K. Leen, Yonghong Huang, and  Deniz Erdogmus
+icml-2008-9 | A Semi-parametric Statistical Approach to Model-free Policy Evaluation | http://icml2008.cs.helsinki.fi/papers/429.pdf | category:paper author:Tsuyoshi Ueno, Motoaki Kawanabe, Takeshi Mori, Shin-Ichi Maeda, and  Shin Ishii
+icml-2008-10 | A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning | http://icml2008.cs.helsinki.fi/papers/391.pdf | category:paper author:Ronan Collobert,  Jason Weston
+icml-2008-11 | A Worst-Case Comparison Between Temporal Difference and Residual Gradient with Linear Function Approximation | http://icml2008.cs.helsinki.fi/papers/125.pdf | category:paper author:Lihong Li
+icml-2008-12 | Accurate Max-margin Training for Structured Output Spaces | http://icml2008.cs.helsinki.fi/papers/402.pdf | category:paper author:Sunita Sarawagi,  Rahul Gupta
+icml-2008-13 | Active Kernel Learning | http://icml2008.cs.helsinki.fi/papers/437.pdf | category:paper author:Steven C.H. Hoi,  Rong Jin
+icml-2008-14 | Active Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/290.pdf | category:paper author:Arkady Epshteyn, Adam Vogel, and  Gerald DeJong
+icml-2008-15 | Actively Learning Level-Sets of Composite Functions | http://icml2008.cs.helsinki.fi/papers/687.pdf | category:paper author:Brent Bryan,  Jeff Schneider
+icml-2008-16 | Adaptive p-Posterior Mixture-Model Kernels for Multiple Instance Learning | http://icml2008.cs.helsinki.fi/papers/130.pdf | category:paper author:Hua-Yan Wang, Qiang Yang, and  Hongbin Zha
+icml-2008-17 | An Analysis of Linear Models, Linear Value-Function Approximation, and Feature Selection for Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/581.pdf | category:paper author:Ronald Parr, Lihong Li, Gavin Taylor, Christopher Painter-Wakefield, and  Michael Littman
+icml-2008-18 | An Analysis of Reinforcement Learning with Function Approximation | http://icml2008.cs.helsinki.fi/papers/652.pdf | category:paper author:Francisco Melo, Sean Meyn, and  Isabel Ribeiro
+icml-2008-19 | An Asymptotic Analysis of Generative, Discriminative, and Pseudolikelihood Estimators | http://icml2008.cs.helsinki.fi/papers/588.pdf | category:paper author:Percy Liang,  Michael Jordan
+icml-2008-20 | An Empirical Evaluation of Supervised Learning in High Dimensions | http://icml2008.cs.helsinki.fi/papers/632.pdf | category:paper author:Rich Caruana, Nikos Karampatziakis, and  Ainur Yessenalina
+icml-2008-21 | An HDP-HMM for Systems with State Persistence | http://icml2008.cs.helsinki.fi/papers/305.pdf | category:paper author:Emily Fox, Erik Sudderth, Michael Jordan, and  Alan Willsky
+icml-2008-22 | An Object-Oriented Representation for Efficient Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/571.pdf | category:paper author:Carlos Diuk, Andre Cohen, and  Michael Littman
+icml-2008-23 | An RKHS for Multi-View Learning and Manifold Co-Regularization | http://icml2008.cs.helsinki.fi/papers/641.pdf | category:paper author:Vikas Sindhwani,  David Rosenberg
+icml-2008-24 | Apprenticeship Learning Using Linear Programming | http://icml2008.cs.helsinki.fi/papers/645.pdf | category:paper author:Umar Syed, Michael Bowling, and  Robert Schapire
+icml-2008-25 | Automatic Discovery and Transfer of MAXQ Hierarchies | http://icml2008.cs.helsinki.fi/papers/458.pdf | category:paper author:Neville Mehta, Soumya Ray, Prasad Tadepalli, and  Thomas Dietterich
+icml-2008-26 | Autonomous Geometric Precision Error Estimation in Low-level Computer Vision Tasks | http://icml2008.cs.helsinki.fi/papers/121.pdf | category:paper author:Andrés Corrada-Emmanuel,  Howard Schultz
+icml-2008-27 | Bayes Optimal Classification for Decision Trees | http://icml2008.cs.helsinki.fi/papers/455.pdf | category:paper author:Siegfried Nijssen
+icml-2008-28 | Bayesian Multiple Instance Learning: Automatic Feature Selection and Inductive Transfer | http://icml2008.cs.helsinki.fi/papers/587.pdf | category:paper author:Vikas Raykar, Balaji Krishnapuram, Jinbo Bi, Murat Dundar, and  R. Bharat Rao
+icml-2008-29 | Bayesian Probabilistic Matrix Factorization using Markov Chain Monte Carlo | http://icml2008.cs.helsinki.fi/papers/600.pdf | category:paper author:Ruslan Salakhutdinov,  Andriy Mnih
+icml-2008-30 | Beam Sampling for the Infinite Hidden Markov Model | http://icml2008.cs.helsinki.fi/papers/679.pdf | category:paper author:Jurgen Van Gael, Yunus Saatci, Yee Whye Teh, and  Zoubin Ghahramani
+icml-2008-31 | Bi-Level Path Following for Cross Validated Solution of Kernel Quantile Regression | http://icml2008.cs.helsinki.fi/papers/399.pdf | category:paper author:Saharon Rosset
+icml-2008-32 | Bolasso: Model Consistent Lasso Estimation through the Bootstrap | http://icml2008.cs.helsinki.fi/papers/390.pdf | category:paper author:Francis Bach
+icml-2008-33 | Boosting with Incomplete Information | http://icml2008.cs.helsinki.fi/papers/331.pdf | category:paper author:Gholamreza Haffari, Yang Wang, Shaojun Wang, Greg Mori, and  Feng Jiao
+icml-2008-34 | Causal Modelling Combining Instantaneous and Lagged Effects: an Identifiable Model Based on Non-Gaussianity | http://icml2008.cs.helsinki.fi/papers/160.pdf | category:paper author:Aapo Hyvarinen, Shohei Shimizu, and  Patrik Hoyer
+icml-2008-35 | Classification using Discriminative Restricted Boltzmann Machines | http://icml2008.cs.helsinki.fi/papers/601.pdf | category:paper author:Hugo Larochelle,  Yoshua Bengio
+icml-2008-36 | Closed-form Supervised Dimensionality Reduction with Generalized Linear Models | http://icml2008.cs.helsinki.fi/papers/668.pdf | category:paper author:Irina Rish, Genady Grabarnilk, Guillermo Cecchi, Francisco Pereira, and  Geoffrey J. Gordon
+icml-2008-37 | Composite Kernel Learning | http://icml2008.cs.helsinki.fi/papers/665.pdf | category:paper author:Marie Szafranski, Yves Grandvalet, and  Alain Rakotomamonjy
+icml-2008-38 | Compressed Sensing and Bayesian Experimental Design | http://icml2008.cs.helsinki.fi/papers/459.pdf | category:paper author:Matthias Seeger,  Hannes Nickisch
+icml-2008-39 | Confidence-Weighted Linear Classification | http://icml2008.cs.helsinki.fi/papers/322.pdf | category:paper author:Mark Dredze, Koby Crammer, and  Fernando Pereira
+icml-2008-40 | Cost-Sensitive Multi-class Classification from Probability Estimates | http://icml2008.cs.helsinki.fi/papers/150.pdf | category:paper author:Deirdre O'Brien, Maya Gupta, and  Robert Gray
+icml-2008-41 | Data Spectroscopy: Learning Mixture Models using Eigenspaces of Convolution Operators | http://icml2008.cs.helsinki.fi/papers/502.pdf | category:paper author:Tao Shi, Mikhail Belkin, and  Bin Yu
+icml-2008-42 | Deep Learning via Semi-Supervised Embedding | http://icml2008.cs.helsinki.fi/papers/340.pdf | category:paper author:Jason Weston, Frederic Ratle, and  Ronan Collobert
+icml-2008-43 | Democratic Approximation of Lexicographic Preference Models | http://icml2008.cs.helsinki.fi/papers/489.pdf | category:paper author:Fusun Yaman, Thomas Walsh, Michael Littman, and  Marie desJardins
+icml-2008-44 | Detecting Statistical Interactions with Additive Groves of Trees | http://icml2008.cs.helsinki.fi/papers/630.pdf | category:paper author:Daria Sorokina, Rich Caruana, Mirek Riedewald, and  Daniel Fink
+icml-2008-45 | Dirichlet Component Analysis: Feature Extraction for Compositional Data | http://icml2008.cs.helsinki.fi/papers/129.pdf | category:paper author:Hua-Yan Wang, Qiang Yang, Hong Qin, and  Hongbin Zha
+icml-2008-46 | Discriminative Parameter Learning for Bayesian Networks | http://icml2008.cs.helsinki.fi/papers/415.pdf | category:paper author:Jiang Su, Harry Zhang, Charles X. Ling, and  Stan Matwin
+icml-2008-47 | Discriminative Structure and Parameter Learning for Markov Logic Networks | http://icml2008.cs.helsinki.fi/papers/530.pdf | category:paper author:Tuyen Huynh,  Raymond Mooney
+icml-2008-48 | Efficient Bandit Algorithms for Online Multiclass Prediction | http://icml2008.cs.helsinki.fi/papers/511.pdf | category:paper author:Sham M. Kakade, Shai Shalev-Shwartz, and  Ambuj Tewari
+icml-2008-49 | Efficient MultiClass Maximum Margin Clustering | http://icml2008.cs.helsinki.fi/papers/168.pdf | category:paper author:Bin Zhao, Fei Wang, and  Changshui Zhang
+icml-2008-50 | Efficient Projections onto the L1-Ball for Learning in High Dimensions | http://icml2008.cs.helsinki.fi/papers/361.pdf | category:paper author:John Duchi, Shai Shalev-Shwartz, Yoram Singer, and  Tushar Chandra
+icml-2008-51 | Efficiently Learning Linear-Linear Exponential Family Predictive Representations of State | http://icml2008.cs.helsinki.fi/papers/197.pdf | category:paper author:David Wingate,  Satinder Singh
+icml-2008-52 | Efficiently Solving Convex Relaxations for MAP Estimation | http://icml2008.cs.helsinki.fi/papers/327.pdf | category:paper author:Pawan Kumar Mudigonda,  Philip Torr
+icml-2008-53 | Empirical Bernstein Stopping | http://icml2008.cs.helsinki.fi/papers/523.pdf | category:paper author:Volodymyr Mnih, Csaba Szepesvari, and  Jean-Yves Audibert
+icml-2008-54 | Estimating Labels from Label Proportions | http://icml2008.cs.helsinki.fi/papers/337.pdf | category:paper author:Novi Quadrianto, Alex Smola, Tiberio Caetano, and  Quoc Viet Le
+icml-2008-55 | Estimating Local Optimums in EM Algorithm over Gaussian Mixture Model | http://icml2008.cs.helsinki.fi/papers/196.pdf | category:paper author:Zhenjie Zhang, Bing Tian Dai, and  Anthony K.H. Tung
+icml-2008-56 | Expectation-Maximization for Sparse and Non-Negative PCA | http://icml2008.cs.helsinki.fi/papers/484.pdf | category:paper author:Christian David Sigg,  Joachim M. Buhmann
+icml-2008-57 | Exploration Scavenging | http://icml2008.cs.helsinki.fi/papers/519.pdf | category:paper author:John Langford, Alexander Strehl, and  Jennifer Wortman
+icml-2008-58 | Extracting and Composing Robust Features with Denoising Autoencoders | http://icml2008.cs.helsinki.fi/papers/592.pdf | category:paper author:Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and  Pierre-Antoine Manzagol
+icml-2008-59 | Fast Estimation of Relational Pattern Coverage through Randomization and Maximum Likelihood | http://icml2008.cs.helsinki.fi/papers/503.pdf | category:paper author:Ondrej Kuzelka,  Filip Zelezny
+icml-2008-60 | Fast Gaussian Process Methods for Point Process Intensity Estimation | http://icml2008.cs.helsinki.fi/papers/151.pdf | category:paper author:John Cunningham, Krishna Shenoy, and  Maneesh Sahani
+icml-2008-61 | Fast Incremental Proximity Search in Large Graphs | http://icml2008.cs.helsinki.fi/papers/565.pdf | category:paper author:Purnamrita Sarkar, Andrew Moore, and  Amit Prakash
+icml-2008-62 | Fast Nearest Neighbor Retrieval for Bregman Divergences | http://icml2008.cs.helsinki.fi/papers/400.pdf | category:paper author:Lawrence Cayton
+icml-2008-63 | Fast Solvers and Efficient Implementations for Distance Metric Learning | http://icml2008.cs.helsinki.fi/papers/215.pdf | category:paper author:Kilian Weinberger,  Lawrence Saul
+icml-2008-64 | Fast Support Vector Machine Training and Classification on Graphics Processors | http://icml2008.cs.helsinki.fi/papers/491.pdf | category:paper author:Bryan Catanzaro, Narayanan Sundaram, and  Kurt Keutzer
+icml-2008-65 | Fully Distributed EM for Very Large Datasets | http://icml2008.cs.helsinki.fi/papers/311.pdf | category:paper author:Jason Wolfe, Aria Haghighi, and  Dan Klein
+icml-2008-66 | Gaussian Process Product Models for Nonparametric Nonstationarity | http://icml2008.cs.helsinki.fi/papers/241.pdf | category:paper author:Ryan Adams,  Oliver Stegle
+icml-2008-67 | Graph Kernels Between Point Clouds | http://icml2008.cs.helsinki.fi/papers/379.pdf | category:paper author:Francis Bach
+icml-2008-68 | Graph Transduction via Alternating Minimization | http://icml2008.cs.helsinki.fi/papers/296.pdf | category:paper author:Jun Wang, Tony Jebara, and  Shih-Fu Chang
+icml-2008-69 | Grassmann Discriminant Analysis: a Unifying View on Subspace-Based Learning | http://icml2008.cs.helsinki.fi/papers/312.pdf | category:paper author:Jihun Hamm,  Daniel Lee
+icml-2008-70 | Hierarchical Kernel Stick-Breaking Process for Multi-Task Image Analysis | http://icml2008.cs.helsinki.fi/papers/554.pdf | category:paper author:Qi An, Chunping Wang, Ivo Shterev, Eric Wang, Lawrence Carin, and  David B. Dunson
+icml-2008-71 | Hierarchical Model-Based Reinforcement Learning: R-max + MAXQ | http://icml2008.cs.helsinki.fi/papers/544.pdf | category:paper author:Nicholas Jong,  Peter Stone
+icml-2008-72 | Hierarchical sampling for active learning | http://icml2008.cs.helsinki.fi/papers/324.pdf | category:paper author:Sanjoy Dasgupta,  Daniel Hsu
+icml-2008-73 | ICA and ISA Using Schweizer-Wolff Measure of Dependence | http://icml2008.cs.helsinki.fi/papers/551.pdf | category:paper author:Sergey Kirshner,  Barnabás Póczos
+icml-2008-74 | Improved Nystrom Low-Rank Approximation and Error Analysis | http://icml2008.cs.helsinki.fi/papers/476.pdf | category:paper author:Kai Zhang, Ivor Tsang, and  James Kwok
+icml-2008-75 | Inverting the Viterbi Algorithm: an Abstract Framework for Structure Design | http://icml2008.cs.helsinki.fi/papers/182.pdf | category:paper author:Michael Schnall-Levin, Leonid Chindelevitch, and  Bonnie Berger
+icml-2008-76 | Knows What It Knows: A Framework For Self-Aware Learning | http://icml2008.cs.helsinki.fi/papers/627.pdf | category:paper author:Lihong Li, Michael Littman, and  Thomas Walsh
+icml-2008-77 | Laplace Maximum Margin Markov Networks | http://icml2008.cs.helsinki.fi/papers/237.pdf | category:paper author:Jun Zhu, Eric Xing, and  Bo Zhang
+icml-2008-78 | Large Scale Manifold Transduction | http://icml2008.cs.helsinki.fi/papers/382.pdf | category:paper author:Michael Karlen, Jason Weston, Ayse Erkan, and  Ronan Collobert
+icml-2008-79 | Learning All Optimal Policies with Multiple Criteria | http://icml2008.cs.helsinki.fi/papers/257.pdf | category:paper author:Leon Barrett,  Srinivas Narayanan
+icml-2008-80 | Learning Dissimilarities by Ranking: From SDP to QP | http://icml2008.cs.helsinki.fi/papers/392.pdf | category:paper author:Hua Ouyang,  Alexander Gray
+icml-2008-81 | Learning Diverse Rankings with Multi-Armed Bandits | http://icml2008.cs.helsinki.fi/papers/264.pdf | category:paper author:Filip Radlinski, Robert Kleinberg, and  Thorsten Joachims
+icml-2008-82 | Learning for Control from Multiple Demonstrations | http://icml2008.cs.helsinki.fi/papers/452.pdf | category:paper author:Adam Coates, Pieter Abbeel, and  Andrew Ng
+icml-2008-83 | Learning from Incomplete Data with Infinite Imputations | http://icml2008.cs.helsinki.fi/papers/272.pdf | category:paper author:Uwe Dick, Peter Haider, and  Tobias Scheffer
+icml-2008-84 | Learning to Classify with Missing and Corrupted Features | http://icml2008.cs.helsinki.fi/papers/202.pdf | category:paper author:Ofer Dekel,  Ohad Shamir
+icml-2008-85 | Learning to Learn Implicit Queries from Gaze Patterns | http://icml2008.cs.helsinki.fi/papers/412.pdf | category:paper author:Kai Puolamäki, Antti Ajanki, and  Samuel Kaski
+icml-2008-86 | Learning to Sportscast: A Test of Grounded Language Acquisition | http://icml2008.cs.helsinki.fi/papers/304.pdf | category:paper author:David Chen,  Raymond Mooney
+icml-2008-87 | Listwise Approach to Learning to Rank - Theory and Algorithm | http://icml2008.cs.helsinki.fi/papers/167.pdf | category:paper author:Fen Xia, Tie-Yan Liu, Jue Wang, Wensheng Zhang, and  Hang Li
+icml-2008-88 | Local Likelihood Modeling of Temporal Text Streams | http://icml2008.cs.helsinki.fi/papers/180.pdf | category:paper author:Guy Lebanon,  Yang Zhao
+icml-2008-89 | Localized Multiple Kernel Learning | http://icml2008.cs.helsinki.fi/papers/158.pdf | category:paper author:Mehmet Gonen,  Ethem Alpaydin
+icml-2008-90 | Manifold Alignment using Procrustes Analysis | http://icml2008.cs.helsinki.fi/papers/229.pdf | category:paper author:Chang Wang,  Sridhar Mahadevan
+icml-2008-91 | ManifoldBoost: Stagewise Function Approximation for Fully-, Semi- and Un-supervised Learning | http://icml2008.cs.helsinki.fi/papers/676.pdf | category:paper author:Nicolas Loeff, David Forsyth, and  Deepak Ramachandran
+icml-2008-92 | Maximum Likelihood Rule Ensembles | http://icml2008.cs.helsinki.fi/papers/362.pdf | category:paper author:Wojciech Kotlowski, Krzysztof Dembczynski, and  Roman Slowinski
+icml-2008-93 | Memory Bounded Inference in Topic Models | http://icml2008.cs.helsinki.fi/papers/419.pdf | category:paper author:Ryan Gomes, Max Welling, and  Pietro Perona
+icml-2008-94 | Message-passing for Graph-structured Linear Programs: Proximal Projections, Convergence and Rounding Schemes | http://icml2008.cs.helsinki.fi/papers/681.pdf | category:paper author:Pradeep Ravikumar, Alekh Agarwal, and  Martin J. Wainwright
+icml-2008-95 | Metric Embedding for Kernel Classification Rules | http://icml2008.cs.helsinki.fi/papers/582.pdf | category:paper author:Bharath Sriperumbudur, Omer Lang, and  Gert Lanckriet
+icml-2008-96 | Modeling Interleaved Hidden Processes | http://icml2008.cs.helsinki.fi/papers/413.pdf | category:paper author:Niels Landwehr
+icml-2008-97 | Modified MMI/MPE: a Direct Evaluation of the Margin in Speech Recognition | http://icml2008.cs.helsinki.fi/papers/398.pdf | category:paper author:Georg Heigold, Thomas Deselaers, Ralf Schlueter, and  Hermann Ney
+icml-2008-98 | Multi-Classification by Categorical Features via Clustering | http://icml2008.cs.helsinki.fi/papers/536.pdf | category:paper author:Yevgeny Seldin,  Naftali Tishby
+icml-2008-99 | Multi-Task Compressive Sensing with Dirichlet Process Priors | http://icml2008.cs.helsinki.fi/papers/209.pdf | category:paper author:Yuting Qi, Dehong Liu, David Dunson, and  Lawrence Carin
+icml-2008-100 | Multi-Task Learning for HIV Therapy Screening | http://icml2008.cs.helsinki.fi/papers/520.pdf | category:paper author:Steffen Bickel, Jasmina Bogojeska, Thomas Lengauer, and  Tobias Scheffer
+icml-2008-101 | Multiple Instance Ranking | http://icml2008.cs.helsinki.fi/papers/552.pdf | category:paper author:Charles Bergeron, Jed Zaretzki, Curt Breneman, and  Kristin Bennett
+icml-2008-102 | Nearest Hyperdisk Methods for High-Dimensional Classification | http://icml2008.cs.helsinki.fi/papers/178.pdf | category:paper author:Hakan Cevikalp, Bill Triggs, and  Robi Polikar
+icml-2008-103 | No-Regret Learning in Convex Games | http://icml2008.cs.helsinki.fi/papers/542.pdf | category:paper author:Geoffrey J. Gordon, Amy Greenwald, and  Casey Marks
+icml-2008-104 | Non-Parametric Policy Gradients: A Unified Treatment of Propositional and Relational Domains | http://icml2008.cs.helsinki.fi/papers/259.pdf | category:paper author:Kristian Kersting,  Kurt Driessens
+icml-2008-105 | Nonextensive Entropic Kernels | http://icml2008.cs.helsinki.fi/papers/277.pdf | category:paper author:Andre F. T. Martins, Mario A. T. Figueiredo, Pedro M. Q. Aguiar, Noah A. Smith, and  Eric P. Xing
+icml-2008-106 | Nonnegative Matrix Factorization via Rank-One Downdate | http://icml2008.cs.helsinki.fi/papers/667.pdf | category:paper author:Michael Biggs, Ali Ghodsi, and  Stephen Vavasis
+icml-2008-107 | Nu-Support Vector Machine as Conditional Value-at-Risk Minimization | http://icml2008.cs.helsinki.fi/papers/216.pdf | category:paper author:Akiko Takeda,  Masashi Sugiyama
+icml-2008-108 | On Multi-View Active Learning and the Combination with Semi-Supervised Learning | http://icml2008.cs.helsinki.fi/papers/383.pdf | category:paper author:Wei Wang,  Zhi-Hua Zhou
+icml-2008-109 | On Partial Optimality in Multi-label MRFs | http://icml2008.cs.helsinki.fi/papers/260.pdf | category:paper author:Pushmeet Kohli, Alexander Shekhovtsov, Carsten Rother, Vladimir Kolmogorov, and  Philip Torr
+icml-2008-110 | On the Chance Accuracies of Large Collections of Classifiers | http://icml2008.cs.helsinki.fi/papers/323.pdf | category:paper author:Mark Palatucci,  Andrew Carlson
+icml-2008-111 | On the Hardness of Finding Symmetries in Markov Decision Processes | http://icml2008.cs.helsinki.fi/papers/682.pdf | category:paper author:Shravan Narayanamurthy,  Balaraman Ravindran
+icml-2008-112 | On the Quantitative Analysis of Deep Belief Networks | http://icml2008.cs.helsinki.fi/papers/573.pdf | category:paper author:Ruslan Salakhutdinov,  Iain Murray
+icml-2008-113 | On-line Discovery of Temporal-Difference Networks | http://icml2008.cs.helsinki.fi/papers/317.pdf | category:paper author:Takaki Makino,  Toshihisa Takagi
+icml-2008-114 | Online Kernel Selection for Bayesian Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/341.pdf | category:paper author:Joseph Reisinger, Peter Stone, and  Risto Miikkulainen
+icml-2008-115 | Optimized Cutting Plane Algorithm for Support Vector Machines | http://icml2008.cs.helsinki.fi/papers/411.pdf | category:paper author:Vojtech Franc,  Soeren Sonnenburg
+icml-2008-116 | Optimizing Estimated Loss Reduction for Active Sampling in Rank Learning | http://icml2008.cs.helsinki.fi/papers/448.pdf | category:paper author:Pinar Donmez,  Jaime Carbonell
+icml-2008-117 | Pairwise Constraint Propagation by Semidefinite Programming for Semi-Supervised Classification | http://icml2008.cs.helsinki.fi/papers/145.pdf | category:paper author:Zhenguo Li, Jianzhuang Liu, and  Xiaoou Tang
+icml-2008-118 | Pointwise Exact Bootstrap Distributions of Cost Curves | http://icml2008.cs.helsinki.fi/papers/614.pdf | category:paper author:Charles Dugas,  David Gadoury
+icml-2008-119 | Polyhedral Classifier for Target Detection A Case Study: Colorectal Cancer | http://icml2008.cs.helsinki.fi/papers/513.pdf | category:paper author:Murat Dundar, Matthias Wolf, Sarang Lakare, Marcos Salganicoff, and  Vikas C. Raykar
+icml-2008-120 | Preconditioned Temporal Difference Learning | http://icml2008.cs.helsinki.fi/papers/111.pdf | category:paper author:Hengshuai Yao,  Zhi-Qiang Liu
+icml-2008-121 | Predicting Diverse Subsets Using Structural SVMs | http://icml2008.cs.helsinki.fi/papers/470.pdf | category:paper author:Yisong Yue,  Thorsten Joachims
+icml-2008-122 | Prediction with Expert Advice for the Brier Game | http://icml2008.cs.helsinki.fi/papers/242.pdf | category:paper author:Vladimir Vovk,  Fedor Zhdanov
+icml-2008-123 | Privacy-Preserving Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/335.pdf | category:paper author:Jun Sakuma, Shigenobu Kobayashi, and  Rebecca Wright
+icml-2008-124 | Query-Level Stability and Generalization in Learning to Rank | http://icml2008.cs.helsinki.fi/papers/179.pdf | category:paper author:Yanyan Lan, Tie-Yan Liu, Tao Qin, Zhiming Ma, and  Hang Li
+icml-2008-125 | Random Classification Noise Defeats All Convex Potential Boosters | http://icml2008.cs.helsinki.fi/papers/258.pdf | category:paper author:Philip M. Long,  Rocco A. Servedio
+icml-2008-126 | Rank Minimization via Online Learning | http://icml2008.cs.helsinki.fi/papers/367.pdf | category:paper author:Raghu Meka, Prateek Jain, Constantine Caramanis, and  Inderjit Dhillon
+icml-2008-127 | Reinforcement Learning in the Presence of Rare Events | http://icml2008.cs.helsinki.fi/papers/580.pdf | category:paper author:Jordan Frank, Shie Mannor, and  Doina Precup
+icml-2008-128 | Reinforcement Learning with Limited Reinforcement: Using Bayes Risk for Active Learning in POMDPs | http://icml2008.cs.helsinki.fi/papers/487.pdf | category:paper author:Finale Doshi, Joelle Pineau, and  Nicholas Roy
+icml-2008-129 | Robust Matching and Recognition using Context-Dependent Kernels | http://icml2008.cs.helsinki.fi/papers/449.pdf | category:paper author:Hichem Sahbi, Jean-Yves Audibert, Jaonary Rabarisoa, and  Renaud Keriven
+icml-2008-130 | SVM Optimization: Inverse Dependence on Training Set Size | http://icml2008.cs.helsinki.fi/papers/266.pdf | category:paper author:Shai Shalev-Shwartz,  Nathan Srebro
+icml-2008-131 | Sample-Based Learning and Search with Permanent and Transient Memories | http://icml2008.cs.helsinki.fi/papers/564.pdf | category:paper author:David Silver, Richard Sutton, and  Martin Mueller
+icml-2008-132 | Self-taught Clustering | http://icml2008.cs.helsinki.fi/papers/432.pdf | category:paper author:Wenyuan Dai, Qiang Yang, Gui-Rong Xue, and  Yong Yu
+icml-2008-133 | Semi-supervised Learning of Compact Document Representations with Deep Networks | http://icml2008.cs.helsinki.fi/papers/611.pdf | category:paper author:Marc'Aurelio Ranzato,  Martin Szummer
+icml-2008-134 | Sequence Kernels for Predicting Protein Essentiality | http://icml2008.cs.helsinki.fi/papers/440.pdf | category:paper author:Cyril Allauzen, Mehryar Mohri, and  Ameet Talwalkar
+icml-2008-135 | Space-indexed Dynamic Programming: Learning to Follow Trajectories | http://icml2008.cs.helsinki.fi/papers/488.pdf | category:paper author:J. Zico Kolter, Adam Coates, Andrew Ng, Yi Gu, and  Charles DuHadway
+icml-2008-136 | Sparse Bayesian Nonparametric Regression | http://icml2008.cs.helsinki.fi/papers/574.pdf | category:paper author:Francois Caron,  Arnaud Doucet
+icml-2008-137 | Sparse Multiscale Gaussian Process Regression | http://icml2008.cs.helsinki.fi/papers/599.pdf | category:paper author:Christian Walder, Kwang In Kim, and  Bernhard Schoelkopf
+icml-2008-138 | Spectral Clustering with Inconsistent Advice | http://icml2008.cs.helsinki.fi/papers/172.pdf | category:paper author:Tom Coleman, James Saunderson, and  Anthony Wirth
+icml-2008-139 | Stability of Transductive Regression Algorithms | http://icml2008.cs.helsinki.fi/papers/254.pdf | category:paper author:Corinna Cortes, Mehryar Mohri, Dmitry Pechyony, and  Ashish Rastogi
+icml-2008-140 | Statistical Models for Partial Membership | http://icml2008.cs.helsinki.fi/papers/460.pdf | category:paper author:Katherine Heller, Sinead Williamson, and  Zoubin Ghahramani
+icml-2008-141 | Stopping Conditions for Exact Computation of Leave-One-Out Error in Support Vector Machines | http://icml2008.cs.helsinki.fi/papers/497.pdf | category:paper author:Vojtech Franc, Pavel Laskov, and  Klaus-R. Mueller
+icml-2008-142 | Strategy Evaluation in Extensive Games with Importance Sampling | http://icml2008.cs.helsinki.fi/papers/655.pdf | category:paper author:Michael Bowling, Michael Johanson, Neil Burch, and  Duane Szafron
+icml-2008-143 | Structure Compilation: Trading Structure for Features | http://icml2008.cs.helsinki.fi/papers/673.pdf | category:paper author:Percy Liang, Hal Daume, and  Dan Klein
+icml-2008-144 | Tailoring Density Estimation via Reproducing Kernel Moment Matching | http://icml2008.cs.helsinki.fi/papers/377.pdf | category:paper author:Le Song, Xinhua Zhang, Alex Smola, Arthur Gretton, and  Bernhard Schoelkopf
+icml-2008-145 | The Asymptotics of Semi-Supervised Learning in Discriminative Probabilistic Models | http://icml2008.cs.helsinki.fi/papers/528.pdf | category:paper author:Nataliya Sokolovska, Olivier Cappé, and  François Yvon
+icml-2008-146 | The Dynamic Hierarchical Dirichlet Process | http://icml2008.cs.helsinki.fi/papers/538.pdf | category:paper author:Lu Ren, David B. Dunson, and  Lawrence Carin
+icml-2008-147 | The GroupLASSO for Generalized Linear Models: Uniqueness of Solutions and Efficient Algorithms | http://icml2008.cs.helsinki.fi/papers/113.pdf | category:paper author:Volker Roth,  Bernd Fischer
+icml-2008-148 | The Many Faces of Optimism: a Unifying Approach | http://icml2008.cs.helsinki.fi/papers/490.pdf | category:paper author:Istvan Szita,  Andras Lorincz
+icml-2008-149 | The Projectron: a Bounded Kernel-Based Perceptron | http://icml2008.cs.helsinki.fi/papers/355.pdf | category:paper author:Francesco Orabona, Joseph Keshet, and  Barbara Caputo
+icml-2008-150 | The Skew Spectrum of Graphs | http://icml2008.cs.helsinki.fi/papers/396.pdf | category:paper author:Risi Kondor,  Karsten Borgwardt
+icml-2008-151 | Topologically-Constrained Latent Variable Models | http://icml2008.cs.helsinki.fi/papers/371.pdf | category:paper author:Raquel Urtasun, David Fleet, Andreas Geiger, Jovan Popovic, Trevor Darrell, and  Neil Lawrence
+icml-2008-152 | Training Restricted Boltzmann Machines using Approximations to the Likelihood Gradient | http://icml2008.cs.helsinki.fi/papers/638.pdf | category:paper author:Tijmen Tieleman
+icml-2008-153 | Training SVM with Indefinite Kernels | http://icml2008.cs.helsinki.fi/papers/531.pdf | category:paper author:Jianhui Chen,  Jieping Ye
+icml-2008-154 | Training Structural SVMs when Exact Inference is Intractable | http://icml2008.cs.helsinki.fi/papers/279.pdf | category:paper author:Thomas Finley,  Thorsten Joachims
+icml-2008-155 | Transfer of Samples in Batch Reinforcement Learning | http://icml2008.cs.helsinki.fi/papers/479.pdf | category:paper author:Alessandro Lazaric, Marcello Restelli, and  Andrea Bonarini
+icml-2008-156 | Uncorrelated Multilinear Principal Component Analysis through Successive Variance Maximization | http://icml2008.cs.helsinki.fi/papers/163.pdf | category:paper author:Haiping Lu, Konstantinos Plataniotis, and  Anastasios Venetsanopoulos
+icml-2008-157 | Unsupervised Rank Aggregation with Distance-Based Models | http://icml2008.cs.helsinki.fi/papers/343.pdf | category:paper author:Alexandre Klementiev, Dan Roth, and  Kevin Small
+icml-2008-158 | mStruct: A New Admixture Model for Inference of Population Structure in Light of Both Genetic Admixing and Allele Mutations | http://icml2008.cs.helsinki.fi/papers/562.pdf | category:paper author:Suyash Shringarpure,  Eric Xing

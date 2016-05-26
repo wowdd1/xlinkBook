@@ -1,30 +1,30 @@
-M98-1001 | Overview of MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1001.pdf | author:N. Chinchor
-M98-1002 | MUC-7 Evaluation of IE Technology:  Overview of Results | http://www.aclweb.org/anthology/M/M98/M98-1002.pdf | author:E. Marsh; D. Perzanowski
-M98-1003 | Analyzing the Complexity of a Domain with Respect to an Information Extraction Task | http://www.aclweb.org/anthology/M/M98/M98-1003.pdf | author:A. Bagga
-M98-1004 | Description of the Oki System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1004.pdf | author:J. Fukumoto; F. Masui; M. Shimcheta; M. Saski
-M98-1005 | University of Durham: Description of the LOLITA system as Used in MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1005.pdf | author:R. Garigliano; A. Urbanowicz; D. J. Nettleton
-M98-1006 | Using Collocation Statistics in Information Extraction | http://www.aclweb.org/anthology/M/M98/M98-1006.pdf | author:D. Lin
-M98-1007 | University of Sheffield: Description of the LaSIE-II System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1007.pdf | author:K. Humphreys; R. Gaizauskas; S. Azzam; C. Huyck; B. Mitchell; H. Cunningham; Y. Wilks
-M98-1008 | American University in Cairo: Description of the American University in Cairo's System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1008.pdf | author:C. Huyck
-M98-1009 | BBN: Description of the SIFT System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1009.pdf | author:S. Miller; M. Crystal; H. Fox; L. Ramshaw; R. Schwartz; R. Stone; R. Weischedel; the Annotation Group
-M98-1010 | Description of Lockheed Martin's NLToolset as Applied to MUC-7 (AATM7) | http://www.aclweb.org/anthology/M/M98/M98-1010.pdf | author:D. Brady; L. Childs; D. Cassel; B. Magee; N. Heintzelman; C. Weir
-M98-1011 | NYU: Description of the Proteus/PET System as Used for MUC-7 ST | http://www.aclweb.org/anthology/M/M98/M98-1011.pdf | author:R. Yangarber; R. Grishman
-M98-1012 | SRA: Description of the IE2 System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1012.pdf | author:C. Aone; L. Halverson; T. Hampton; M. Ramos-Santacruz
-M98-1013 | TASC: Description of the TASC System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1013.pdf | author:T. Patten; B. Hoffman; M. Thurn
-M98-1014 | FACILE: Description of the NE System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1014.pdf | author:W.J. Black; F. Rinaldi; D. Mowatt
-M98-1015 | IsoQuest Inc.: Description of the NetOwlTM Extractor System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1015.pdf | author:G. R. Krupka; K. Hausman
-M98-1016 | Description of the Kent Ridge Digital Labs System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1016.pdf | author:Shihong Yu; Shuanhu Bai; Paul Wu
-M98-1017 | Description of the NTU System used for MET-2 | http://www.aclweb.org/anthology/M/M98/M98-1017.pdf | author:H.-H. Chen; Y.-W. Ding; S.-C. Tsai; G.-W. Bian
-M98-1018 | NYU: Description of the MENE Named Entity System as Used in MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1018.pdf | author:A. Borthwick; J. Sterling; E. Agichtein; R. Grishman
-M98-1019 | Description of the Japanese NE System Used for MET-2 | http://www.aclweb.org/anthology/M/M98/M98-1019.pdf | author:S. Sekine
-M98-1020 | Description of the Oki System as Used for MET-2 | http://www.aclweb.org/anthology/M/M98/M98-1020.pdf | author:J. Fukumoto; M. Shimohata; F. Masui; M. Saski
-M98-1021 | Description of the LTG System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1021.pdf | author:A. Mikheev; C. Grover; M. Moens
-M98-1022 | Description of the UPENN CAMP System as Used for Coreference | http://www.aclweb.org/anthology/M/M98/M98-1022.pdf | author:B. Baldwin; T. Morton; A. Bagga; J. Baldridge; R. Chandraseker; A. Dimitriadis; K. Snyder; M. Wolska
-M98-1023 | Appendix A: Walk-Through Articles with Answer Keys | http://www.aclweb.org/anthology/M/M98/M98-1023.pdf | author:
-M98-1024 | Appendix B: MUC-7 Test Scores Introduction | http://www.aclweb.org/anthology/M/M98/M98-1024.pdf | author:N. Chinchor
-M98-1025 | Appendix C: MUC-7 Statistical Significance Results | http://www.aclweb.org/anthology/M/M98/M98-1025.pdf | author:
-M98-1026 | Appendix D: MUC-7 Test Score Reports for all Participants | http://www.aclweb.org/anthology/M/M98/M98-1026.pdf | author:
-M98-1027 | Appendix D: MUC-7 Information Extraction Task Definition (version 5.1) | http://www.aclweb.org/anthology/M/M98/M98-1027.pdf | author:N. Chinchor; E. Marsh
-M98-1028 | Appendix E: MUC-7 Named Entity Task Definition (version 3.5) | http://www.aclweb.org/anthology/M/M98/M98-1028.pdf | author:N. Chinchor; P. Robinson
-M98-1029 | Appendix F: MUC-7 Coreference Task Definition (version 3.0) | http://www.aclweb.org/anthology/M/M98/M98-1029.pdf | author:L. Hirschman; N. Chinchor
-M98-1030 | Appendix G: The Message Understanding Conference Scoring Software User's Manual | http://www.aclweb.org/anthology/M/M98/M98-1030.pdf | author:A. Douthat
+M98-1001 | Overview of MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1001.pdf | category:paper author:N. Chinchor
+M98-1002 | MUC-7 Evaluation of IE Technology:  Overview of Results | http://www.aclweb.org/anthology/M/M98/M98-1002.pdf | category:paper author:E. Marsh; D. Perzanowski
+M98-1003 | Analyzing the Complexity of a Domain with Respect to an Information Extraction Task | http://www.aclweb.org/anthology/M/M98/M98-1003.pdf | category:paper author:A. Bagga
+M98-1004 | Description of the Oki System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1004.pdf | category:paper author:J. Fukumoto; F. Masui; M. Shimcheta; M. Saski
+M98-1005 | University of Durham: Description of the LOLITA system as Used in MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1005.pdf | category:paper author:R. Garigliano; A. Urbanowicz; D. J. Nettleton
+M98-1006 | Using Collocation Statistics in Information Extraction | http://www.aclweb.org/anthology/M/M98/M98-1006.pdf | category:paper author:D. Lin
+M98-1007 | University of Sheffield: Description of the LaSIE-II System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1007.pdf | category:paper author:K. Humphreys; R. Gaizauskas; S. Azzam; C. Huyck; B. Mitchell; H. Cunningham; Y. Wilks
+M98-1008 | American University in Cairo: Description of the American University in Cairo's System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1008.pdf | category:paper author:C. Huyck
+M98-1009 | BBN: Description of the SIFT System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1009.pdf | category:paper author:S. Miller; M. Crystal; H. Fox; L. Ramshaw; R. Schwartz; R. Stone; R. Weischedel; the Annotation Group
+M98-1010 | Description of Lockheed Martin's NLToolset as Applied to MUC-7 (AATM7) | http://www.aclweb.org/anthology/M/M98/M98-1010.pdf | category:paper author:D. Brady; L. Childs; D. Cassel; B. Magee; N. Heintzelman; C. Weir
+M98-1011 | NYU: Description of the Proteus/PET System as Used for MUC-7 ST | http://www.aclweb.org/anthology/M/M98/M98-1011.pdf | category:paper author:R. Yangarber; R. Grishman
+M98-1012 | SRA: Description of the IE2 System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1012.pdf | category:paper author:C. Aone; L. Halverson; T. Hampton; M. Ramos-Santacruz
+M98-1013 | TASC: Description of the TASC System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1013.pdf | category:paper author:T. Patten; B. Hoffman; M. Thurn
+M98-1014 | FACILE: Description of the NE System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1014.pdf | category:paper author:W.J. Black; F. Rinaldi; D. Mowatt
+M98-1015 | IsoQuest Inc.: Description of the NetOwlTM Extractor System as Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1015.pdf | category:paper author:G. R. Krupka; K. Hausman
+M98-1016 | Description of the Kent Ridge Digital Labs System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1016.pdf | category:paper author:Shihong Yu; Shuanhu Bai; Paul Wu
+M98-1017 | Description of the NTU System used for MET-2 | http://www.aclweb.org/anthology/M/M98/M98-1017.pdf | category:paper author:H.-H. Chen; Y.-W. Ding; S.-C. Tsai; G.-W. Bian
+M98-1018 | NYU: Description of the MENE Named Entity System as Used in MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1018.pdf | category:paper author:A. Borthwick; J. Sterling; E. Agichtein; R. Grishman
+M98-1019 | Description of the Japanese NE System Used for MET-2 | http://www.aclweb.org/anthology/M/M98/M98-1019.pdf | category:paper author:S. Sekine
+M98-1020 | Description of the Oki System as Used for MET-2 | http://www.aclweb.org/anthology/M/M98/M98-1020.pdf | category:paper author:J. Fukumoto; M. Shimohata; F. Masui; M. Saski
+M98-1021 | Description of the LTG System Used for MUC-7 | http://www.aclweb.org/anthology/M/M98/M98-1021.pdf | category:paper author:A. Mikheev; C. Grover; M. Moens
+M98-1022 | Description of the UPENN CAMP System as Used for Coreference | http://www.aclweb.org/anthology/M/M98/M98-1022.pdf | category:paper author:B. Baldwin; T. Morton; A. Bagga; J. Baldridge; R. Chandraseker; A. Dimitriadis; K. Snyder; M. Wolska
+M98-1023 | Appendix A: Walk-Through Articles with Answer Keys | http://www.aclweb.org/anthology/M/M98/M98-1023.pdf | category:paper author:
+M98-1024 | Appendix B: MUC-7 Test Scores Introduction | http://www.aclweb.org/anthology/M/M98/M98-1024.pdf | category:paper author:N. Chinchor
+M98-1025 | Appendix C: MUC-7 Statistical Significance Results | http://www.aclweb.org/anthology/M/M98/M98-1025.pdf | category:paper author:
+M98-1026 | Appendix D: MUC-7 Test Score Reports for all Participants | http://www.aclweb.org/anthology/M/M98/M98-1026.pdf | category:paper author:
+M98-1027 | Appendix D: MUC-7 Information Extraction Task Definition (version 5.1) | http://www.aclweb.org/anthology/M/M98/M98-1027.pdf | category:paper author:N. Chinchor; E. Marsh
+M98-1028 | Appendix E: MUC-7 Named Entity Task Definition (version 3.5) | http://www.aclweb.org/anthology/M/M98/M98-1028.pdf | category:paper author:N. Chinchor; P. Robinson
+M98-1029 | Appendix F: MUC-7 Coreference Task Definition (version 3.0) | http://www.aclweb.org/anthology/M/M98/M98-1029.pdf | category:paper author:L. Hirschman; N. Chinchor
+M98-1030 | Appendix G: The Message Understanding Conference Scoring Software User's Manual | http://www.aclweb.org/anthology/M/M98/M98-1030.pdf | category:paper author:A. Douthat

@@ -1,79 +1,79 @@
-P00-1001 | Invited Talk: Processes that Shape Conversation and their Implications for Computational Linguistics | http://www.aclweb.org/anthology/P/P00/P00-1001.pdf | author:Susan E. Brennan
-P00-1002 | Invited Talk: Generic NLP Technologies: Language, Knowledge and Information Extraction | http://www.aclweb.org/anthology/P/P00/P00-1002.pdf | author:Jun'ichi Tsujii
-P00-1003 | Invited Talk: Spoken Language Technology: Where Do We Go From Here? | http://www.aclweb.org/anthology/P/P00/P00-1003.pdf | author:Roger K. Moore
-P00-1004 | Translation with Cascaded Finite State Transducers | http://www.aclweb.org/anthology/P/P00/P00-1004.pdf | author:Stephan Vogel; Hermann Ney
-P00-1005 | Phrase-Pattern-based Korean to English Machine Translation using Two Level Translation Pattern Selection | http://www.aclweb.org/anthology/P/P00/P00-1005.pdf | author:Jung-jae Kim; Key-Sun Choi; Young-Soog Chae
-P00-1006 | A Maximum Entropy/Minimum Divergence Translation Model | http://www.aclweb.org/anthology/P/P00/P00-1006.pdf | author:George Foster
-P00-1007 | Incorporating Compositional Evidence in Memory-Based Partial Parsing | http://www.aclweb.org/anthology/P/P00/P00-1007.pdf | author:Yuval Krymolowski; Ido Dagan
-P00-1008 | Tree-gram Parsing: Lexical Dependencies and Structural Relations | http://www.aclweb.org/anthology/P/P00/P00-1008.pdf | author:K. Sima'an
-P00-1009 | An Improved Parser for Data-Oriented Lexical-Functional Analysis | http://www.aclweb.org/anthology/P/P00/P00-1009.pdf | author:Rens Bod
-P00-1010 | Robust Temporal Processing of News | http://www.aclweb.org/anthology/P/P00/P00-1010.pdf | author:Inderjeet Mani; George Wilson
-P00-1011 | Tagging Unknown Proper Names Using Decision Trees | http://www.aclweb.org/anthology/P/P00/P00-1011.pdf | author:Frédéric Béchet; Alexis Nasr; Franck Genet
-P00-1012 | The Order of Prenominal Adjectives in Natural Language Generation | http://www.aclweb.org/anthology/P/P00/P00-1012.pdf | author:Robert Malouf
-P00-1013 | Spoken Dialogue Management Using Probabilistic Reasoning | http://www.aclweb.org/anthology/P/P00/P00-1013.pdf | author:Nicholas Roy; Joelle Pineau; Sebastian Thrun
-P00-1014 | An Unsupervised Approach to Prepositional Phrase Attachment using Contextually Similar Words | http://www.aclweb.org/anthology/P/P00/P00-1014.pdf | author:Patrick Pantel; Dekang Lin
-P00-1015 | A Unified Statistical Model for the Identification of English BaseNP | http://www.aclweb.org/anthology/P/P00/P00-1015.pdf | author:Endong Xun; Changning Huang; Ming Zhou
-P00-1016 | Rule Writing or Annotation: Cost-efficient Resource Usage for Base Noun Phrase Chunking | http://www.aclweb.org/anthology/P/P00/P00-1016.pdf | author:Grace Ngai; David Yarowsky
-P00-1017 | Using Existing Systems to Supplement Small Amounts of Annotated Grammatical Relations Training Data | http://www.aclweb.org/anthology/P/P00/P00-1017.pdf | author:Alexander Yeh
-P00-1018 | Distributing Representation for Robust Interpretation of Dialogue Utterances | http://www.aclweb.org/anthology/P/P00/P00-1018.pdf | author:David Milward
-P00-1019 | Can Nominal Expressions Achieve Multiple Goals?: An Empirical Study | http://www.aclweb.org/anthology/P/P00/P00-1019.pdf | author:Pamela Jordan
-P00-1020 | An Empirical Study of the Influence of Argument Conciseness on Argument Effectiveness | http://www.aclweb.org/anthology/P/P00/P00-1020.pdf | author:Giuseppe Carenini; Johanna D. Moore
-P00-1021 | Multi-Agent Explanation Strategies in Real-Time Domains | http://www.aclweb.org/anthology/P/P00/P00-1021.pdf | author:Kumiko Tanaka-Ishii; Ian Frank
-P00-1022 | A Computational Approach to Zero-pronouns in Spanish | http://www.aclweb.org/anthology/P/P00/P00-1022.pdf | author:Antonio Ferrández; Jesús Peral
-P00-1023 | Coreference for NLP Applications | http://www.aclweb.org/anthology/P/P00/P00-1023.pdf | author:Thomas S. Morton
-P00-1024 | Learning Attribute Selections for Non-Pronominal Expressions | http://www.aclweb.org/anthology/P/P00/P00-1024.pdf | author:Pamela Jordan; Marilyn Walker
-P00-1025 | Finite-State Non-Concatenative Morphotactics | http://www.aclweb.org/anthology/P/P00/P00-1025.pdf | author:Kenneth R. Beesley; Lauri Karttunen
-P00-1026 | A Morphologically Sensitive Clustering Algorithm for Identifying Arabic Roots | http://www.aclweb.org/anthology/P/P00/P00-1026.pdf | author:Anne N. De Roeck; Waleed Al-Fares
-P00-1027 | Minimally Supervised Morphological Analysis by Multimodal Alignment | http://www.aclweb.org/anthology/P/P00/P00-1027.pdf | author:David Yarowsky; Richard Wicentowski
-P00-1028 | A Constraint-based Approach to English Prosodic Constituents | http://www.aclweb.org/anthology/P/P00/P00-1028.pdf | author:Ewan Klein
-P00-1029 | Inducing Probabilistic Syllable Classes Using Multivariate Clustering | http://www.aclweb.org/anthology/P/P00/P00-1029.pdf | author:Karin Müller; Bernd Möbius; Detlef Prescher
-P00-1030 | Modeling Local Context for Pitch Accent Prediction | http://www.aclweb.org/anthology/P/P00/P00-1030.pdf | author:Shimei Pan; Julia Hirschberg
-P00-1031 | A New Statistical Approach To Chinese Pinyin Input | http://www.aclweb.org/anthology/P/P00/P00-1031.pdf | author:Zheng Chen; Kai-Fu Lee
-P00-1032 | Automatic Detecting/Correcting Errors in Chinese Text by an Approximate Word-Matching Algorithm | http://www.aclweb.org/anthology/P/P00/P00-1032.pdf | author:Lei Zhang; Ming Zhou; Changning Huang; Haihua Pan
-P00-1033 | Dependency-based Syntactic Analysis of Chinese and Annotation of Parsed Corpus | http://www.aclweb.org/anthology/P/P00/P00-1033.pdf | author:Tom B.Y. Lai; Changning Huang
-P00-1034 | Part-of-Speech Tagging Based on Hidden Markov Model Assuming Joint Independence | http://www.aclweb.org/anthology/P/P00/P00-1034.pdf | author:Sang-Zoo Lee; Jun'ichi Tsujii; Hae-Chang Rim
-P00-1035 | Language Independent, Minimally Supervised Induction of Lexical Probabilities | http://www.aclweb.org/anthology/P/P00/P00-1035.pdf | author:Silviu Cucerzan; David Yarowsky
-P00-1036 | Independence and Commitment: Assumptions for Rapid Training and Execution of Rule-based POS Taggers | http://www.aclweb.org/anthology/P/P00/P00-1036.pdf | author:Mark Hepple
-P00-1037 | An Improved Error Model for Noisy Channel Spelling Correction | http://www.aclweb.org/anthology/P/P00/P00-1037.pdf | author:Eric Brill; Robert C. Moore
-P00-1038 | Query-Relevant Summarization using FAQs | http://www.aclweb.org/anthology/P/P00/P00-1038.pdf | author:Adam Berger; Vibhu O. Mittal
-P00-1039 | An Algorithm for One-page Summarization of a Long Text Based on Thematic Hierarchy Detection | http://www.aclweb.org/anthology/P/P00/P00-1039.pdf | author:Yoshio Nakao
-P00-1040 | Summarizing Multilingual Spoken Negotiation Dialogues | http://www.aclweb.org/anthology/P/P00/P00-1040.pdf | author:Norbert Reithinger; Michael Kipp; Ralf Engel and Jan Ale; rsson
-P00-1041 | Headline Generation Based on Statistical Translation | http://www.aclweb.org/anthology/P/P00/P00-1041.pdf | author:Michele Banko; Vibhu O. Mittal; Michael J. Witbrock
-P00-1042 | Named Entity Extraction Based on A Maximum Entropy Model and Transformation Rules | http://www.aclweb.org/anthology/P/P00/P00-1042.pdf | author:Kiyotaka Uchimoto; Qing Ma; Masaki Murata; Hiromi Ozaku; Hitoshi Isahara
-P00-1043 | Extracting Causal Knowledge from a Medical Database Using Graphical Patterns | http://www.aclweb.org/anthology/P/P00/P00-1043.pdf | author:Christopher S. G. Khoo; Syin Chan; Yun Niu
-P00-1044 | Difficulty Indices for the Named Entity Task in Japanese | http://www.aclweb.org/anthology/P/P00/P00-1044.pdf | author:Chikashi Nobata; Satoshi Sekine; Jun'ichi Tsujii
-P00-1045 | Memory-Efficient and Thread-Safe Quasi-Destructive Graph Unification | http://www.aclweb.org/anthology/P/P00/P00-1045.pdf | author:Marcel P. van Lohuizen
-P00-1046 | Processing Optimality-theoretic Syntax by Interleaved Chart Parsing and Generation | http://www.aclweb.org/anthology/P/P00/P00-1046.pdf | author:Jonas Kuhn
-P00-1047 | A Polynomial-Time Fragment of Dominance Constraints | http://www.aclweb.org/anthology/P/P00/P00-1047.pdf | author:Alexander Koller; Kurt Mehlhorn; Joachim Niehren
-P00-1048 | Hidden Markov Model-Based Korean Part-of-Speech Tagging Considering High Agglutinativity, Word-Spacing, and Lexical Correlativity | http://www.aclweb.org/anthology/P/P00/P00-1048.pdf | author:Sang-Zoo Lee; Jun'ichi Tsujii; Hae-Chang Rim
-P00-1049 | Synchronous Morphological Analysis of Grapheme and Phoneme for Japanese OCR | http://www.aclweb.org/anthology/P/P00/P00-1049.pdf | author:Masaaki Nagata
-P00-1050 | Chinese-Korean Word Alignment Based on Linguistic Comparison | http://www.aclweb.org/anthology/P/P00/P00-1050.pdf | author:Jin-Xia Huang; Key-Sun Choi
-P00-1051 | Specifying the Parameters of Centering Theory: a Corpus-Based Evaluation using Text from Application-Oriented Domains | http://www.aclweb.org/anthology/P/P00/P00-1051.pdf | author:M. Poesio; H. Cheng; R. Henschel; J. Hitzeman; R. Kibble; R. Stevenson
-P00-1052 | The Role of Centering Theory's Rough-Shift in the Teaching and Evaluation of Writing Skills | http://www.aclweb.org/anthology/P/P00/P00-1052.pdf | author:Eleni Miltsakaki; Karen Kukich
-P00-1053 | A Hierarchical Account of Referential Accessibility | http://www.aclweb.org/anthology/P/P00/P00-1053.pdf | author:Nancy Ide; Dan Cristea
-P00-1054 | Lexical Transfer Using a Vector-Space Model | http://www.aclweb.org/anthology/P/P00/P00-1054.pdf | author:Eiichiro Sumita
-P00-1055 | Using Confidence Bands for Parallel Texts Alignment | http://www.aclweb.org/anthology/P/P00/P00-1055.pdf | author:António Ribeiro; Gabriel Lopes; João Mexia
-P00-1056 | Improved Statistical Alignment Models | http://www.aclweb.org/anthology/P/P00/P00-1056.pdf | author:Franz Josef Och; Hermann Ney
-P00-1057 | Multi-Component TAG and Notions of Formal Power | http://www.aclweb.org/anthology/P/P00/P00-1057.pdf | author:William Schuler; David Chiang; Mark Dras
-P00-1058 | Statistical Parsing with an Automatically-Extracted Tree Adjoining Grammar | http://www.aclweb.org/anthology/P/P00/P00-1058.pdf | author:David Chiang
-P00-1059 | Corpus-Based Lexical Choice in Natural Language Generation | http://www.aclweb.org/anthology/P/P00/P00-1059.pdf | author:Srinivas Bangalore; Owen Rambow
-P00-1060 | An Information-Theory-Based Feature Type Analysis for the Modeling of Statistical Parsing | http://www.aclweb.org/anthology/P/P00/P00-1060.pdf | author:Zhifang Sui; Jun Zhao; Dekai Wu
-P00-1061 | Lexicalized Stochastic Modeling of Constraint-Based Grammars using Log-Linear Measures and EM Training | http://www.aclweb.org/anthology/P/P00/P00-1061.pdf | author:Stefan Riezler; Detlef Prescher; Jonas Kuhn; Mark Johnson
-P00-1062 | Utilizing the World Wide Web as an Encyclopedia: Extracting Term Descriptions from Semi-Structured Texts | http://www.aclweb.org/anthology/P/P00/P00-1062.pdf | author:Atsushi Fujii; Tetsuya Ishikawa
-P00-1063 | Term Recognition Using Technical Dictionary Hierarchy | http://www.aclweb.org/anthology/P/P00/P00-1063.pdf | author:Jong-Hoon Oh; KyungSoon Lee; Key-Sun Choi
-P00-1064 | Mapping WordNets Using Structural Information | http://www.aclweb.org/anthology/P/P00/P00-1064.pdf | author:J. Daudé; L. Padró; G. Rigau
-P00-1065 | Automatic Labeling of Semantic Roles | http://www.aclweb.org/anthology/P/P00/P00-1065.pdf | author:Daniel Gildea; Daniel Jurafsky
-P00-1066 | Feature Logic for Dotted Types: A Formalism for Complex Word Meanings | http://www.aclweb.org/anthology/P/P00/P00-1066.pdf | author:Manfred Pinkal; Michael Kohlhase
-P00-1067 | PENS: A Machine-aided English Writing System for Chinese Users | http://www.aclweb.org/anthology/P/P00/P00-1067.pdf | author:Ting Liu; Ming Zhou; Jianfeng Gao; Endong Xun; Changning Huang
-P00-1068 | Diagnostic Processing of Japanese for Computer-Assisted Second Language Learning | http://www.aclweb.org/anthology/P/P00/P00-1068.pdf | author:Jun'ichi Kakegawa; Hisayuki Kanda; Eitaro Fujioka; Makoto Itami; Kohji Itoh
-P00-1069 | Word Sense Disambiguation by Learning from Unlabeled Data | http://www.aclweb.org/anthology/P/P00/P00-1069.pdf | author:Seong-Bae Park; Byoung-Tak Zhang; Yung Taek Kim
-P00-1070 | Importance of Pronominal Anaphora Resolution in Question Answering Systems | http://www.aclweb.org/anthology/P/P00/P00-1070.pdf | author:José L. Vicedo; Antonio Ferrández
-P00-1071 | The Structure and Performance of an Open-Domain Question Answering System | http://www.aclweb.org/anthology/P/P00/P00-1071.pdf | author:Dan Moldovan; Sanda Harabagiu; Marius Pasca; Rada Mihalcea; Roxana Girju; Richard Goodrum; Vasile Rus
-P00-1072 | Dimension-Reduced Estimation of Word Co-occurrence Probability | http://www.aclweb.org/anthology/P/P00/P00-1072.pdf | author:Kilyoun Kim; Key-Sun Choi
-P00-1073 | Distribution-Based Pruning of Backoff Language Models | http://www.aclweb.org/anthology/P/P00/P00-1073.pdf | author:Jianfeng Gao; Kai-Fu Lee
-P00-1074 | Panel: Computational Linguistics Research on Philippine Languages | http://www.aclweb.org/anthology/P/P00/P00-1074.pdf | author:Rachel Edita O. Roxas; Allan Borra
-P00-1075 | Panel: Development of Computational Linguistics Research: A Challenge for Indonesia | http://www.aclweb.org/anthology/P/P00/P00-1075.pdf | author:Bobby Nazief
-P00-1076 | Panel: Good Spelling of Vietnamese Texts,One Aspect of Computational Linguistics in Vietnam | http://www.aclweb.org/anthology/P/P00/P00-1076.pdf | author:Huy Khanh Phan
-P00-1077 | Panel: Computational Linguistics in India: An Overview | http://www.aclweb.org/anthology/P/P00/P00-1077.pdf | author:Akshar Bharati; Vineet Chaitanya; Rajeev Sangal
-P00-1078 | Panel: The State of the Art in Thai Language Processing | http://www.aclweb.org/anthology/P/P00/P00-1078.pdf | author:Virach Sornlertlamvanich; Tanapong Potipiti; Chai Wutiwiwatchai; Pradit Mittrapiyanuruk
-P00-1079 | Panel: Computational Linguistics in Malaysia | http://www.aclweb.org/anthology/P/P00/P00-1079.pdf | author:Zaharin Yusoff
+P00-1001 | Invited Talk: Processes that Shape Conversation and their Implications for Computational Linguistics | http://www.aclweb.org/anthology/P/P00/P00-1001.pdf | category:paper author:Susan E. Brennan
+P00-1002 | Invited Talk: Generic NLP Technologies: Language, Knowledge and Information Extraction | http://www.aclweb.org/anthology/P/P00/P00-1002.pdf | category:paper author:Jun'ichi Tsujii
+P00-1003 | Invited Talk: Spoken Language Technology: Where Do We Go From Here? | http://www.aclweb.org/anthology/P/P00/P00-1003.pdf | category:paper author:Roger K. Moore
+P00-1004 | Translation with Cascaded Finite State Transducers | http://www.aclweb.org/anthology/P/P00/P00-1004.pdf | category:paper author:Stephan Vogel; Hermann Ney
+P00-1005 | Phrase-Pattern-based Korean to English Machine Translation using Two Level Translation Pattern Selection | http://www.aclweb.org/anthology/P/P00/P00-1005.pdf | category:paper author:Jung-jae Kim; Key-Sun Choi; Young-Soog Chae
+P00-1006 | A Maximum Entropy/Minimum Divergence Translation Model | http://www.aclweb.org/anthology/P/P00/P00-1006.pdf | category:paper author:George Foster
+P00-1007 | Incorporating Compositional Evidence in Memory-Based Partial Parsing | http://www.aclweb.org/anthology/P/P00/P00-1007.pdf | category:paper author:Yuval Krymolowski; Ido Dagan
+P00-1008 | Tree-gram Parsing: Lexical Dependencies and Structural Relations | http://www.aclweb.org/anthology/P/P00/P00-1008.pdf | category:paper author:K. Sima'an
+P00-1009 | An Improved Parser for Data-Oriented Lexical-Functional Analysis | http://www.aclweb.org/anthology/P/P00/P00-1009.pdf | category:paper author:Rens Bod
+P00-1010 | Robust Temporal Processing of News | http://www.aclweb.org/anthology/P/P00/P00-1010.pdf | category:paper author:Inderjeet Mani; George Wilson
+P00-1011 | Tagging Unknown Proper Names Using Decision Trees | http://www.aclweb.org/anthology/P/P00/P00-1011.pdf | category:paper author:Frédéric Béchet; Alexis Nasr; Franck Genet
+P00-1012 | The Order of Prenominal Adjectives in Natural Language Generation | http://www.aclweb.org/anthology/P/P00/P00-1012.pdf | category:paper author:Robert Malouf
+P00-1013 | Spoken Dialogue Management Using Probabilistic Reasoning | http://www.aclweb.org/anthology/P/P00/P00-1013.pdf | category:paper author:Nicholas Roy; Joelle Pineau; Sebastian Thrun
+P00-1014 | An Unsupervised Approach to Prepositional Phrase Attachment using Contextually Similar Words | http://www.aclweb.org/anthology/P/P00/P00-1014.pdf | category:paper author:Patrick Pantel; Dekang Lin
+P00-1015 | A Unified Statistical Model for the Identification of English BaseNP | http://www.aclweb.org/anthology/P/P00/P00-1015.pdf | category:paper author:Endong Xun; Changning Huang; Ming Zhou
+P00-1016 | Rule Writing or Annotation: Cost-efficient Resource Usage for Base Noun Phrase Chunking | http://www.aclweb.org/anthology/P/P00/P00-1016.pdf | category:paper author:Grace Ngai; David Yarowsky
+P00-1017 | Using Existing Systems to Supplement Small Amounts of Annotated Grammatical Relations Training Data | http://www.aclweb.org/anthology/P/P00/P00-1017.pdf | category:paper author:Alexander Yeh
+P00-1018 | Distributing Representation for Robust Interpretation of Dialogue Utterances | http://www.aclweb.org/anthology/P/P00/P00-1018.pdf | category:paper author:David Milward
+P00-1019 | Can Nominal Expressions Achieve Multiple Goals?: An Empirical Study | http://www.aclweb.org/anthology/P/P00/P00-1019.pdf | category:paper author:Pamela Jordan
+P00-1020 | An Empirical Study of the Influence of Argument Conciseness on Argument Effectiveness | http://www.aclweb.org/anthology/P/P00/P00-1020.pdf | category:paper author:Giuseppe Carenini; Johanna D. Moore
+P00-1021 | Multi-Agent Explanation Strategies in Real-Time Domains | http://www.aclweb.org/anthology/P/P00/P00-1021.pdf | category:paper author:Kumiko Tanaka-Ishii; Ian Frank
+P00-1022 | A Computational Approach to Zero-pronouns in Spanish | http://www.aclweb.org/anthology/P/P00/P00-1022.pdf | category:paper author:Antonio Ferrández; Jesús Peral
+P00-1023 | Coreference for NLP Applications | http://www.aclweb.org/anthology/P/P00/P00-1023.pdf | category:paper author:Thomas S. Morton
+P00-1024 | Learning Attribute Selections for Non-Pronominal Expressions | http://www.aclweb.org/anthology/P/P00/P00-1024.pdf | category:paper author:Pamela Jordan; Marilyn Walker
+P00-1025 | Finite-State Non-Concatenative Morphotactics | http://www.aclweb.org/anthology/P/P00/P00-1025.pdf | category:paper author:Kenneth R. Beesley; Lauri Karttunen
+P00-1026 | A Morphologically Sensitive Clustering Algorithm for Identifying Arabic Roots | http://www.aclweb.org/anthology/P/P00/P00-1026.pdf | category:paper author:Anne N. De Roeck; Waleed Al-Fares
+P00-1027 | Minimally Supervised Morphological Analysis by Multimodal Alignment | http://www.aclweb.org/anthology/P/P00/P00-1027.pdf | category:paper author:David Yarowsky; Richard Wicentowski
+P00-1028 | A Constraint-based Approach to English Prosodic Constituents | http://www.aclweb.org/anthology/P/P00/P00-1028.pdf | category:paper author:Ewan Klein
+P00-1029 | Inducing Probabilistic Syllable Classes Using Multivariate Clustering | http://www.aclweb.org/anthology/P/P00/P00-1029.pdf | category:paper author:Karin Müller; Bernd Möbius; Detlef Prescher
+P00-1030 | Modeling Local Context for Pitch Accent Prediction | http://www.aclweb.org/anthology/P/P00/P00-1030.pdf | category:paper author:Shimei Pan; Julia Hirschberg
+P00-1031 | A New Statistical Approach To Chinese Pinyin Input | http://www.aclweb.org/anthology/P/P00/P00-1031.pdf | category:paper author:Zheng Chen; Kai-Fu Lee
+P00-1032 | Automatic Detecting/Correcting Errors in Chinese Text by an Approximate Word-Matching Algorithm | http://www.aclweb.org/anthology/P/P00/P00-1032.pdf | category:paper author:Lei Zhang; Ming Zhou; Changning Huang; Haihua Pan
+P00-1033 | Dependency-based Syntactic Analysis of Chinese and Annotation of Parsed Corpus | http://www.aclweb.org/anthology/P/P00/P00-1033.pdf | category:paper author:Tom B.Y. Lai; Changning Huang
+P00-1034 | Part-of-Speech Tagging Based on Hidden Markov Model Assuming Joint Independence | http://www.aclweb.org/anthology/P/P00/P00-1034.pdf | category:paper author:Sang-Zoo Lee; Jun'ichi Tsujii; Hae-Chang Rim
+P00-1035 | Language Independent, Minimally Supervised Induction of Lexical Probabilities | http://www.aclweb.org/anthology/P/P00/P00-1035.pdf | category:paper author:Silviu Cucerzan; David Yarowsky
+P00-1036 | Independence and Commitment: Assumptions for Rapid Training and Execution of Rule-based POS Taggers | http://www.aclweb.org/anthology/P/P00/P00-1036.pdf | category:paper author:Mark Hepple
+P00-1037 | An Improved Error Model for Noisy Channel Spelling Correction | http://www.aclweb.org/anthology/P/P00/P00-1037.pdf | category:paper author:Eric Brill; Robert C. Moore
+P00-1038 | Query-Relevant Summarization using FAQs | http://www.aclweb.org/anthology/P/P00/P00-1038.pdf | category:paper author:Adam Berger; Vibhu O. Mittal
+P00-1039 | An Algorithm for One-page Summarization of a Long Text Based on Thematic Hierarchy Detection | http://www.aclweb.org/anthology/P/P00/P00-1039.pdf | category:paper author:Yoshio Nakao
+P00-1040 | Summarizing Multilingual Spoken Negotiation Dialogues | http://www.aclweb.org/anthology/P/P00/P00-1040.pdf | category:paper author:Norbert Reithinger; Michael Kipp; Ralf Engel and Jan Ale; rsson
+P00-1041 | Headline Generation Based on Statistical Translation | http://www.aclweb.org/anthology/P/P00/P00-1041.pdf | category:paper author:Michele Banko; Vibhu O. Mittal; Michael J. Witbrock
+P00-1042 | Named Entity Extraction Based on A Maximum Entropy Model and Transformation Rules | http://www.aclweb.org/anthology/P/P00/P00-1042.pdf | category:paper author:Kiyotaka Uchimoto; Qing Ma; Masaki Murata; Hiromi Ozaku; Hitoshi Isahara
+P00-1043 | Extracting Causal Knowledge from a Medical Database Using Graphical Patterns | http://www.aclweb.org/anthology/P/P00/P00-1043.pdf | category:paper author:Christopher S. G. Khoo; Syin Chan; Yun Niu
+P00-1044 | Difficulty Indices for the Named Entity Task in Japanese | http://www.aclweb.org/anthology/P/P00/P00-1044.pdf | category:paper author:Chikashi Nobata; Satoshi Sekine; Jun'ichi Tsujii
+P00-1045 | Memory-Efficient and Thread-Safe Quasi-Destructive Graph Unification | http://www.aclweb.org/anthology/P/P00/P00-1045.pdf | category:paper author:Marcel P. van Lohuizen
+P00-1046 | Processing Optimality-theoretic Syntax by Interleaved Chart Parsing and Generation | http://www.aclweb.org/anthology/P/P00/P00-1046.pdf | category:paper author:Jonas Kuhn
+P00-1047 | A Polynomial-Time Fragment of Dominance Constraints | http://www.aclweb.org/anthology/P/P00/P00-1047.pdf | category:paper author:Alexander Koller; Kurt Mehlhorn; Joachim Niehren
+P00-1048 | Hidden Markov Model-Based Korean Part-of-Speech Tagging Considering High Agglutinativity, Word-Spacing, and Lexical Correlativity | http://www.aclweb.org/anthology/P/P00/P00-1048.pdf | category:paper author:Sang-Zoo Lee; Jun'ichi Tsujii; Hae-Chang Rim
+P00-1049 | Synchronous Morphological Analysis of Grapheme and Phoneme for Japanese OCR | http://www.aclweb.org/anthology/P/P00/P00-1049.pdf | category:paper author:Masaaki Nagata
+P00-1050 | Chinese-Korean Word Alignment Based on Linguistic Comparison | http://www.aclweb.org/anthology/P/P00/P00-1050.pdf | category:paper author:Jin-Xia Huang; Key-Sun Choi
+P00-1051 | Specifying the Parameters of Centering Theory: a Corpus-Based Evaluation using Text from Application-Oriented Domains | http://www.aclweb.org/anthology/P/P00/P00-1051.pdf | category:paper author:M. Poesio; H. Cheng; R. Henschel; J. Hitzeman; R. Kibble; R. Stevenson
+P00-1052 | The Role of Centering Theory's Rough-Shift in the Teaching and Evaluation of Writing Skills | http://www.aclweb.org/anthology/P/P00/P00-1052.pdf | category:paper author:Eleni Miltsakaki; Karen Kukich
+P00-1053 | A Hierarchical Account of Referential Accessibility | http://www.aclweb.org/anthology/P/P00/P00-1053.pdf | category:paper author:Nancy Ide; Dan Cristea
+P00-1054 | Lexical Transfer Using a Vector-Space Model | http://www.aclweb.org/anthology/P/P00/P00-1054.pdf | category:paper author:Eiichiro Sumita
+P00-1055 | Using Confidence Bands for Parallel Texts Alignment | http://www.aclweb.org/anthology/P/P00/P00-1055.pdf | category:paper author:António Ribeiro; Gabriel Lopes; João Mexia
+P00-1056 | Improved Statistical Alignment Models | http://www.aclweb.org/anthology/P/P00/P00-1056.pdf | category:paper author:Franz Josef Och; Hermann Ney
+P00-1057 | Multi-Component TAG and Notions of Formal Power | http://www.aclweb.org/anthology/P/P00/P00-1057.pdf | category:paper author:William Schuler; David Chiang; Mark Dras
+P00-1058 | Statistical Parsing with an Automatically-Extracted Tree Adjoining Grammar | http://www.aclweb.org/anthology/P/P00/P00-1058.pdf | category:paper author:David Chiang
+P00-1059 | Corpus-Based Lexical Choice in Natural Language Generation | http://www.aclweb.org/anthology/P/P00/P00-1059.pdf | category:paper author:Srinivas Bangalore; Owen Rambow
+P00-1060 | An Information-Theory-Based Feature Type Analysis for the Modeling of Statistical Parsing | http://www.aclweb.org/anthology/P/P00/P00-1060.pdf | category:paper author:Zhifang Sui; Jun Zhao; Dekai Wu
+P00-1061 | Lexicalized Stochastic Modeling of Constraint-Based Grammars using Log-Linear Measures and EM Training | http://www.aclweb.org/anthology/P/P00/P00-1061.pdf | category:paper author:Stefan Riezler; Detlef Prescher; Jonas Kuhn; Mark Johnson
+P00-1062 | Utilizing the World Wide Web as an Encyclopedia: Extracting Term Descriptions from Semi-Structured Texts | http://www.aclweb.org/anthology/P/P00/P00-1062.pdf | category:paper author:Atsushi Fujii; Tetsuya Ishikawa
+P00-1063 | Term Recognition Using Technical Dictionary Hierarchy | http://www.aclweb.org/anthology/P/P00/P00-1063.pdf | category:paper author:Jong-Hoon Oh; KyungSoon Lee; Key-Sun Choi
+P00-1064 | Mapping WordNets Using Structural Information | http://www.aclweb.org/anthology/P/P00/P00-1064.pdf | category:paper author:J. Daudé; L. Padró; G. Rigau
+P00-1065 | Automatic Labeling of Semantic Roles | http://www.aclweb.org/anthology/P/P00/P00-1065.pdf | category:paper author:Daniel Gildea; Daniel Jurafsky
+P00-1066 | Feature Logic for Dotted Types: A Formalism for Complex Word Meanings | http://www.aclweb.org/anthology/P/P00/P00-1066.pdf | category:paper author:Manfred Pinkal; Michael Kohlhase
+P00-1067 | PENS: A Machine-aided English Writing System for Chinese Users | http://www.aclweb.org/anthology/P/P00/P00-1067.pdf | category:paper author:Ting Liu; Ming Zhou; Jianfeng Gao; Endong Xun; Changning Huang
+P00-1068 | Diagnostic Processing of Japanese for Computer-Assisted Second Language Learning | http://www.aclweb.org/anthology/P/P00/P00-1068.pdf | category:paper author:Jun'ichi Kakegawa; Hisayuki Kanda; Eitaro Fujioka; Makoto Itami; Kohji Itoh
+P00-1069 | Word Sense Disambiguation by Learning from Unlabeled Data | http://www.aclweb.org/anthology/P/P00/P00-1069.pdf | category:paper author:Seong-Bae Park; Byoung-Tak Zhang; Yung Taek Kim
+P00-1070 | Importance of Pronominal Anaphora Resolution in Question Answering Systems | http://www.aclweb.org/anthology/P/P00/P00-1070.pdf | category:paper author:José L. Vicedo; Antonio Ferrández
+P00-1071 | The Structure and Performance of an Open-Domain Question Answering System | http://www.aclweb.org/anthology/P/P00/P00-1071.pdf | category:paper author:Dan Moldovan; Sanda Harabagiu; Marius Pasca; Rada Mihalcea; Roxana Girju; Richard Goodrum; Vasile Rus
+P00-1072 | Dimension-Reduced Estimation of Word Co-occurrence Probability | http://www.aclweb.org/anthology/P/P00/P00-1072.pdf | category:paper author:Kilyoun Kim; Key-Sun Choi
+P00-1073 | Distribution-Based Pruning of Backoff Language Models | http://www.aclweb.org/anthology/P/P00/P00-1073.pdf | category:paper author:Jianfeng Gao; Kai-Fu Lee
+P00-1074 | Panel: Computational Linguistics Research on Philippine Languages | http://www.aclweb.org/anthology/P/P00/P00-1074.pdf | category:paper author:Rachel Edita O. Roxas; Allan Borra
+P00-1075 | Panel: Development of Computational Linguistics Research: A Challenge for Indonesia | http://www.aclweb.org/anthology/P/P00/P00-1075.pdf | category:paper author:Bobby Nazief
+P00-1076 | Panel: Good Spelling of Vietnamese Texts,One Aspect of Computational Linguistics in Vietnam | http://www.aclweb.org/anthology/P/P00/P00-1076.pdf | category:paper author:Huy Khanh Phan
+P00-1077 | Panel: Computational Linguistics in India: An Overview | http://www.aclweb.org/anthology/P/P00/P00-1077.pdf | category:paper author:Akshar Bharati; Vineet Chaitanya; Rajeev Sangal
+P00-1078 | Panel: The State of the Art in Thai Language Processing | http://www.aclweb.org/anthology/P/P00/P00-1078.pdf | category:paper author:Virach Sornlertlamvanich; Tanapong Potipiti; Chai Wutiwiwatchai; Pradit Mittrapiyanuruk
+P00-1079 | Panel: Computational Linguistics in Malaysia | http://www.aclweb.org/anthology/P/P00/P00-1079.pdf | category:paper author:Zaharin Yusoff

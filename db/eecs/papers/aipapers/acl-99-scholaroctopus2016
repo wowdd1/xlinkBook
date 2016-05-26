@@ -1,83 +1,83 @@
-P99-1001 | Untangling Text Data Mining | http://www.aclweb.org/anthology/P/P99/P99-1001.pdf | author:Marti A. Hearst
-P99-1002 | AUTOMATIC SPEECH RECOGNITION AND ITS APPLICATION TO INFORMATION EXTRACTION | http://www.aclweb.org/anthology/P/P99/P99-1002.pdf | author:Sadaoki Furu
-P99-1003 | The Lexical Component of Natural Language Processing | http://www.aclweb.org/anthology/P/P99/P99-1003.pdf | author:George A. Miller
-P99-1004 | Measures of Distributional Similarity | http://www.aclweb.org/anthology/P/P99/P99-1004.pdf | author:Lillian Lee
-P99-1005 | Distributional Similarity Models: Clustering vs. Nearest Neighbors | http://www.aclweb.org/anthology/P/P99/P99-1005.pdf | author:Lillian Lee
-P99-1006 | Discourse Relations: A Structural and Presuppositional Account Using Lexicalised TAG | http://www.aclweb.org/anthology/P/P99/P99-1006.pdf | author:Bonnie Webber; Alistair Knott; Matthew Stone; Aravind Joshi
-P99-1007 | Unifying Parallels | http://www.aclweb.org/anthology/P/P99/P99-1007.pdf | author:Claire Gardent
-P99-1008 | Finding Parts in Very Large Corpora | http://www.aclweb.org/anthology/P/P99/P99-1008.pdf | author:Matthew Berland; Eugene Charniak
-P99-1009 | Man* vs. Machine: A Case Study in Base Noun Phrase Learning | http://www.aclweb.org/anthology/P/P99/P99-1009.pdf | author:Eric Brill; Grace Ngai
-P99-1010 | Supervised Grammar Induction using Training Data with Limited Constituent Information | http://www.aclweb.org/anthology/P/P99/P99-1010.pdf | author:Rebecca Hwa
-P99-1011 | A Meta-Level Grammar: Redefining Synchronous TAG for Translation and Paraphrase | http://www.aclweb.org/anthology/P/P99/P99-1011.pdf | author:Mark Dras
-P99-1012 | Preserving Semantic Dependencies in Synchronous Tree Adjoining Grammar | http://www.aclweb.org/anthology/P/P99/P99-1012.pdf | author:William Schuler
-P99-1013 | Compositional Semantics for Linguistic Formalisms | http://www.aclweb.org/anthology/P/P99/P99-1013.pdf | author:Shuly Wintner
-P99-1014 | Inducing a Semantically Annotated Lexicon via EM-Based Clustering | http://www.aclweb.org/anthology/P/P99/P99-1014.pdf | author:Mats Rooth; Stefan Riezler; Detlef Prescher; Glenn Carroll; Franz Beil
-P99-1015 | Corpus-Based Linguistic Indicators for Aspectual Classification | http://www.aclweb.org/anthology/P/P99/P99-1015.pdf | author:Eric V. Siegel
-P99-1016 | Automatic construction of a hypernym-labeled noun hierarchy from text | http://www.aclweb.org/anthology/P/P99/P99-1016.pdf | author:Sharon A. Caraballo
-P99-1017 | Using aggregation for selecting content when generating referring expressions | http://www.aclweb.org/anthology/P/P99/P99-1017.pdf | author:John A. Bateman
-P99-1018 | Ordering Among Premodifiers | http://www.aclweb.org/anthology/P/P99/P99-1018.pdf | author:James Shaw; Vasileios Hatzivassiloglou
-P99-1019 | Bilingual Hebrew-English Generation of Possessives and Partitives: Raising the Input Abstraction Level | http://www.aclweb.org/anthology/P/P99/P99-1019.pdf | author:Yael Dahan Netzer; Michael Elhadad
-P99-1020 | A Method for Word Sense Disambiguation of Unrestricted Text | http://www.aclweb.org/anthology/P/P99/P99-1020.pdf | author:Rada Mihalcea; Dan I. Moldovan
-P99-1021 | A Knowledge-free Method for Capitalized Word Disambiguation | http://www.aclweb.org/anthology/P/P99/P99-1021.pdf | author:Andrei Mikheev
-P99-1022 | Dynamic Nonlocal Language Modeling via Hierarchical Topic-Based Adaptation | http://www.aclweb.org/anthology/P/P99/P99-1022.pdf | author:Radu Florian; David Yarowsk
-P99-1023 | A Second-Order Hidden Markov Model for Part-of-Speech Tagging | http://www.aclweb.org/anthology/P/P99/P99-1023.pdf | author:Scott M. Thede; Mary P. Harper
-P99-1024 | The CommandTalk Spoken Dialogue System | http://www.aclweb.org/anthology/P/P99/P99-1024.pdf | author:Amanda Stent; John Doweling; Jean Mark Gawron; Elizabeth Owen Bratt; Robert Moore
-P99-1025 | Construct Algebra: Analytical Dialog Management | http://www.aclweb.org/anthology/P/P99/P99-1025.pdf | author:Alicia Abella; Allen L. Gorin
-P99-1026 | Understanding Unsegmented User Utterances in Real-Time Spoken Dialogue Systems | http://www.aclweb.org/anthology/P/P99/P99-1026.pdf | author:Mikio Nakano; Noboru Miyazaki; Jun-ichi Hirasawa; Kohji Dohsaka; Takeshi Kawabata
-P99-1027 | Should we Translate the Documents or the Queries in Cross-language Information Retrieval? | http://www.aclweb.org/anthology/P/P99/P99-1027.pdf | author:J. Scott McCarley
-P99-1028 | Resolving Translation Ambiguity and Target Polysemy in Cross-Language Information Retrieval | http://www.aclweb.org/anthology/P/P99/P99-1028.pdf | author:Hsin-Hsi Chen; Guo-Wei Bian; Wen-Cheng Lin
-P99-1029 | Using Mutual Information to Resolve Query Translation Ambiguities and Query Term Weighting | http://www.aclweb.org/anthology/P/P99/P99-1029.pdf | author:Myung-Gil Jang; Sung Hyon Myaeng; Se Young Park
-P99-1030 | Analysis System of Speech Acts and Discourse Structures Using Maximum Entropy Model | http://www.aclweb.org/anthology/P/P99/P99-1030.pdf | author:Won Seug Choi; Jeong-Mi Cho; Jungyun Sea
-P99-1031 | Measuring Conformity to Discourse Routines in Decision-Making Interactions | http://www.aclweb.org/anthology/P/P99/P99-1031.pdf | author:Sherri L. Condon; Claude G. Cech; William R. Edwards
-P99-1032 | Development and Use of a Gold-Standard Data Set for Subjectivity Classifications | http://www.aclweb.org/anthology/P/P99/P99-1032.pdf | author:Janyce M. Wiebe; Rebecca F. Bruce; Thomas P. O'Hara
-P99-1033 | Dependency Parsing with an Extended Finite State Approach | http://www.aclweb.org/anthology/P/P99/P99-1033.pdf | author:Kemal Oflazer
-P99-1034 | A Unification-based Approach to Morpho-syntactic Parsing of Agglutinative and Other (Highly) Inflectional Languages | http://www.aclweb.org/anthology/P/P99/P99-1034.pdf | author:Gabor Proszeky; Balazs Kis
-P99-1035 | Inside-Outside Estimation of a Lexicalized PCFG for German | http://www.aclweb.org/anthology/P/P99/P99-1035.pdf | author:Franz Beil; Glenn Carroll; Detlef Prescher; Stefan Riezler; Mats Rooth
-P99-1036 | A Part of Speech Estimation Method for Japanese Unknown Words using a Statistical Model of Morphology and Context | http://www.aclweb.org/anthology/P/P99/P99-1036.pdf | author:Masaaki NAGATA
-P99-1037 | Memory-Based Morphological Analysis | http://www.aclweb.org/anthology/P/P99/P99-1037.pdf | author:Antal van den Bosch; Walter Daelemans
-P99-1038 | Two Accounts of Scope Availability and Semantic Underspecification | http://www.aclweb.org/anthology/P/P99/P99-1038.pdf | author:Alistair Willis; Suresh Manandhar
-P99-1039 | Alternating Quantifier Scope in CCG | http://www.aclweb.org/anthology/P/P99/P99-1039.pdf | author:Mark Steedman
-P99-1040 | Automatic Detection of Poor Speech Recognition at the Dialogue Level | http://www.aclweb.org/anthology/P/P99/P99-1040.pdf | author:Diane J. Litman; Marilyn A. Walker; Michael S. Kearns
-P99-1041 | Automatic Identification of Non-compositional Phrases | http://www.aclweb.org/anthology/P/P99/P99-1041.pdf | author:Dekang Lin
-P99-1042 | Deep Read: A Reading Comprehension System | http://www.aclweb.org/anthology/P/P99/P99-1042.pdf | author:Lynette Hirschman; Marc Light; Eric Breck; John D. Burger
-P99-1043 | Mixed Language Query Disambiguation | http://www.aclweb.org/anthology/P/P99/P99-1043.pdf | author:Pascale FUNG; LIU Xiaohu; CHEUNG Chi Shun
-P99-1044 | Syntagmatic and Paradigmatic Representations of Term Variation | http://www.aclweb.org/anthology/P/P99/P99-1044.pdf | author:Christian Jacquemin
-P99-1045 | Less is more: Eliminating index terms from subordinate clauses | http://www.aclweb.org/anthology/P/P99/P99-1045.pdf | author:Simon H. Corston-Oliver; William B. Dolan
-P99-1046 | Statistical Models for Topic Segmentation | http://www.aclweb.org/anthology/P/P99/P99-1046.pdf | author:Jeffrey C. Reynar
-P99-1047 | A Decision-Based Approach to Rhetorical Parsing | http://www.aclweb.org/anthology/P/P99/P99-1047.pdf | author:Daniel Marcu
-P99-1048 | Corpus-Based Identification of Non-Anaphoric Noun Phrases | http://www.aclweb.org/anthology/P/P99/P99-1048.pdf | author:David L. Bean; Ellen Riloff
-P99-1049 | An Efficient Statistical Speech Act Type Tagging System for Speech Translation Systems | http://www.aclweb.org/anthology/P/P99/P99-1049.pdf | author:Hideki Tanaka; Akio Yokoo
-P99-1050 | Projecting Corpus-Based Semantic Links on a Thesaurus | http://www.aclweb.org/anthology/P/P99/P99-1050.pdf | author:Emmanuel Morin
-P99-1051 | Acquiring Lexical Generalizations from Corpora: A Case Study for Diathesis Alternations | http://www.aclweb.org/anthology/P/P99/P99-1051.pdf | author:Maria Lapata
-P99-1052 | Charting the Depths of Robust Speech Parsing | http://www.aclweb.org/anthology/P/P99/P99-1052.pdf | author:W. Kasper; B. Kiefer; H.-U. Krieger; C. J. Rupp; K. L. Worm
-P99-1053 | A Syntactic Framework for Speech Repairs and Other Disruptions | http://www.aclweb.org/anthology/P/P99/P99-1053.pdf | author:Mark G. Core; Lenhart K. Schubert
-P99-1054 | Efficient probabilistic top-down and left-corner parsing | http://www.aclweb.org/anthology/P/P99/P99-1054.pdf | author:Brian Roark; Mark Johnson
-P99-1055 | A Selectionist Theory of Language Acquisition | http://www.aclweb.org/anthology/P/P99/P99-1055.pdf | author:Charles D. Yang
-P99-1056 | The grapho-phonological system of written French: Statistical analysis and empirical validation | http://www.aclweb.org/anthology/P/P99/P99-1056.pdf | author:Marielle Lange; Alain Content
-P99-1057 | Learning to Recognize Tables in Free Text | http://www.aclweb.org/anthology/P/P99/P99-1057.pdf | author:Hwee Tou Ng; Chung Yong Lim; Jessica Li Teng Koo
-P99-1058 | A semantically-derived subset of English for hardware verification | http://www.aclweb.org/anthology/P/P99/P99-1058.pdf | author:Alexander Holt; Ewan Klein
-P99-1059 | Efficient Parsing for Bilexical Context-Free Grammars and Head Automaton Grammars | http://www.aclweb.org/anthology/P/P99/P99-1059.pdf | author:Jason Eisner; Giorgio Satta
-P99-1060 | An Earley-style Predictive Chart Parsing Method for Lambek Grammars | http://www.aclweb.org/anthology/P/P99/P99-1060.pdf | author:Mark Hepple
-P99-1061 | A Bag of Useful Techniques for Efficient and Robust Parsing | http://www.aclweb.org/anthology/P/P99/P99-1061.pdf | author:Bernd Kiefert; Hans-Ulrich Kriegert; John Carrollt; Rob Malouf
-P99-1062 | Semantic Analysis of Japanese Noun Phrases - A New Approach to Dictionary-Based Understanding | http://www.aclweb.org/anthology/P/P99/P99-1062.pdf | author:Sadao Kurohashi; Yasuyuki Sakai
-P99-1063 | Lexical Semantics to Disambiguate Polysemous Phenomena of Japanese Adnominal Constituents | http://www.aclweb.org/anthology/P/P99/P99-1063.pdf | author:Hitoshi Isahara; Kyoko Kanzaki
-P99-1064 | Computational Lexical Semantics, Incrementality, and the So-called Punctuality of Events | http://www.aclweb.org/anthology/P/P99/P99-1064.pdf | author:Patrick CAUDAL
-P99-1065 | A Statistical Parser for Czech | http://www.aclweb.org/anthology/P/P99/P99-1065.pdf | author:Michael Collins; Jan Hajic; Lance Ramshaw; Christoph Tillmann
-P99-1066 | Automatic Compensation for Parser Figure-of-Merit Flaws | http://www.aclweb.org/anthology/P/P99/P99-1066.pdf | author:Don Blaheta; Eugene Charniak
-P99-1067 | Automatic Identification of Word Translations from Unrelated English and German Corpora | http://www.aclweb.org/anthology/P/P99/P99-1067.pdf | author:Reinhard Rapp
-P99-1068 | Mining the Web for Bilingual Text | http://www.aclweb.org/anthology/P/P99/P99-1068.pdf | author:Philip Resnik
-P99-1069 | Estimators for Stochastic "Unification-Based" Grammars | http://www.aclweb.org/anthology/P/P99/P99-1069.pdf | author:Mark Johnson; Stuart Geman; Stephen Canon; Zhiyi Chi; Stefan Riezler
-P99-1070 | Relating Probabilistic Grammars and Automata | http://www.aclweb.org/anthology/P/P99/P99-1070.pdf | author:Steven Abney; David McAllester; Fernando Pereira
-P99-1071 | Information Fusion in the Context of Multi-Document Summarization | http://www.aclweb.org/anthology/P/P99/P99-1071.pdf | author:Regina Barzilay; Kathleen R. McKeown; Michael Elhadad
-P99-1072 | Improving Summaries by Revising Them | http://www.aclweb.org/anthology/P/P99/P99-1072.pdf | author:Inderjeet Mani; Barbara Gates; Eric Bloedorn
-P99-1073 | Designing a Task-Based Evaluation Methodology for a Spoken Machine Translation System | http://www.aclweb.org/anthology/P/P99/P99-1073.pdf | author:Kavita Thomas
-P99-1074 | Robust, Finite-State Parsing for Spoken Language Understanding | http://www.aclweb.org/anthology/P/P99/P99-1074.pdf | author:Edward C. Kaiser
-P99-1075 | Packing of Feature Structures for Efficient Unification of Disjunctive Feature Structures | http://www.aclweb.org/anthology/P/P99/P99-1075.pdf | author:Yusuke Miyao
-P99-1076 | Parsing preferences with Lexicalized Trey Adjoining Grammars exploiting the derivation tree | http://www.aclweb.org/anthology/P/P99/P99-1076.pdf | author:Alexandra Kinyon
-P99-1077 | Cohesion and Collocation: Using Context Vectors in Text Segmentation | http://www.aclweb.org/anthology/P/P99/P99-1077.pdf | author:Stefan Kaufmann
-P99-1078 | Using Linguistic Knowledge in Automatic Abstracting | http://www.aclweb.org/anthology/P/P99/P99-1078.pdf | author:Horacio Saggion
-P99-1079 | Analysis of Syntax-Based Pronoun Resolution Methods | http://www.aclweb.org/anthology/P/P99/P99-1079.pdf | author:Joel R. Tetreault
-P99-1080 | A Pylonic Decision-Tree Language Model- with Optimal Question Selection | http://www.aclweb.org/anthology/P/P99/P99-1080.pdf | author:Adrian Corduneanu
-P99-1081 | An Unsupervised Model for Statistically Determining Coordinate Phrase Attachment | http://www.aclweb.org/anthology/P/P99/P99-1081.pdf | author:Miriam Goldberg
-P99-1082 | A flexible distributed architecture for NLP system development and use | http://www.aclweb.org/anthology/P/P99/P99-1082.pdf | author:Freddy Y. Y. Choi
-P99-1083 | Modeling Filled Pauses in Medical Dictations | http://www.aclweb.org/anthology/P/P99/P99-1083.pdf | author:Sergey V. Pakhomov
+P99-1001 | Untangling Text Data Mining | http://www.aclweb.org/anthology/P/P99/P99-1001.pdf | category:paper author:Marti A. Hearst
+P99-1002 | AUTOMATIC SPEECH RECOGNITION AND ITS APPLICATION TO INFORMATION EXTRACTION | http://www.aclweb.org/anthology/P/P99/P99-1002.pdf | category:paper author:Sadaoki Furu
+P99-1003 | The Lexical Component of Natural Language Processing | http://www.aclweb.org/anthology/P/P99/P99-1003.pdf | category:paper author:George A. Miller
+P99-1004 | Measures of Distributional Similarity | http://www.aclweb.org/anthology/P/P99/P99-1004.pdf | category:paper author:Lillian Lee
+P99-1005 | Distributional Similarity Models: Clustering vs. Nearest Neighbors | http://www.aclweb.org/anthology/P/P99/P99-1005.pdf | category:paper author:Lillian Lee
+P99-1006 | Discourse Relations: A Structural and Presuppositional Account Using Lexicalised TAG | http://www.aclweb.org/anthology/P/P99/P99-1006.pdf | category:paper author:Bonnie Webber; Alistair Knott; Matthew Stone; Aravind Joshi
+P99-1007 | Unifying Parallels | http://www.aclweb.org/anthology/P/P99/P99-1007.pdf | category:paper author:Claire Gardent
+P99-1008 | Finding Parts in Very Large Corpora | http://www.aclweb.org/anthology/P/P99/P99-1008.pdf | category:paper author:Matthew Berland; Eugene Charniak
+P99-1009 | Man* vs. Machine: A Case Study in Base Noun Phrase Learning | http://www.aclweb.org/anthology/P/P99/P99-1009.pdf | category:paper author:Eric Brill; Grace Ngai
+P99-1010 | Supervised Grammar Induction using Training Data with Limited Constituent Information | http://www.aclweb.org/anthology/P/P99/P99-1010.pdf | category:paper author:Rebecca Hwa
+P99-1011 | A Meta-Level Grammar: Redefining Synchronous TAG for Translation and Paraphrase | http://www.aclweb.org/anthology/P/P99/P99-1011.pdf | category:paper author:Mark Dras
+P99-1012 | Preserving Semantic Dependencies in Synchronous Tree Adjoining Grammar | http://www.aclweb.org/anthology/P/P99/P99-1012.pdf | category:paper author:William Schuler
+P99-1013 | Compositional Semantics for Linguistic Formalisms | http://www.aclweb.org/anthology/P/P99/P99-1013.pdf | category:paper author:Shuly Wintner
+P99-1014 | Inducing a Semantically Annotated Lexicon via EM-Based Clustering | http://www.aclweb.org/anthology/P/P99/P99-1014.pdf | category:paper author:Mats Rooth; Stefan Riezler; Detlef Prescher; Glenn Carroll; Franz Beil
+P99-1015 | Corpus-Based Linguistic Indicators for Aspectual Classification | http://www.aclweb.org/anthology/P/P99/P99-1015.pdf | category:paper author:Eric V. Siegel
+P99-1016 | Automatic construction of a hypernym-labeled noun hierarchy from text | http://www.aclweb.org/anthology/P/P99/P99-1016.pdf | category:paper author:Sharon A. Caraballo
+P99-1017 | Using aggregation for selecting content when generating referring expressions | http://www.aclweb.org/anthology/P/P99/P99-1017.pdf | category:paper author:John A. Bateman
+P99-1018 | Ordering Among Premodifiers | http://www.aclweb.org/anthology/P/P99/P99-1018.pdf | category:paper author:James Shaw; Vasileios Hatzivassiloglou
+P99-1019 | Bilingual Hebrew-English Generation of Possessives and Partitives: Raising the Input Abstraction Level | http://www.aclweb.org/anthology/P/P99/P99-1019.pdf | category:paper author:Yael Dahan Netzer; Michael Elhadad
+P99-1020 | A Method for Word Sense Disambiguation of Unrestricted Text | http://www.aclweb.org/anthology/P/P99/P99-1020.pdf | category:paper author:Rada Mihalcea; Dan I. Moldovan
+P99-1021 | A Knowledge-free Method for Capitalized Word Disambiguation | http://www.aclweb.org/anthology/P/P99/P99-1021.pdf | category:paper author:Andrei Mikheev
+P99-1022 | Dynamic Nonlocal Language Modeling via Hierarchical Topic-Based Adaptation | http://www.aclweb.org/anthology/P/P99/P99-1022.pdf | category:paper author:Radu Florian; David Yarowsk
+P99-1023 | A Second-Order Hidden Markov Model for Part-of-Speech Tagging | http://www.aclweb.org/anthology/P/P99/P99-1023.pdf | category:paper author:Scott M. Thede; Mary P. Harper
+P99-1024 | The CommandTalk Spoken Dialogue System | http://www.aclweb.org/anthology/P/P99/P99-1024.pdf | category:paper author:Amanda Stent; John Doweling; Jean Mark Gawron; Elizabeth Owen Bratt; Robert Moore
+P99-1025 | Construct Algebra: Analytical Dialog Management | http://www.aclweb.org/anthology/P/P99/P99-1025.pdf | category:paper author:Alicia Abella; Allen L. Gorin
+P99-1026 | Understanding Unsegmented User Utterances in Real-Time Spoken Dialogue Systems | http://www.aclweb.org/anthology/P/P99/P99-1026.pdf | category:paper author:Mikio Nakano; Noboru Miyazaki; Jun-ichi Hirasawa; Kohji Dohsaka; Takeshi Kawabata
+P99-1027 | Should we Translate the Documents or the Queries in Cross-language Information Retrieval? | http://www.aclweb.org/anthology/P/P99/P99-1027.pdf | category:paper author:J. Scott McCarley
+P99-1028 | Resolving Translation Ambiguity and Target Polysemy in Cross-Language Information Retrieval | http://www.aclweb.org/anthology/P/P99/P99-1028.pdf | category:paper author:Hsin-Hsi Chen; Guo-Wei Bian; Wen-Cheng Lin
+P99-1029 | Using Mutual Information to Resolve Query Translation Ambiguities and Query Term Weighting | http://www.aclweb.org/anthology/P/P99/P99-1029.pdf | category:paper author:Myung-Gil Jang; Sung Hyon Myaeng; Se Young Park
+P99-1030 | Analysis System of Speech Acts and Discourse Structures Using Maximum Entropy Model | http://www.aclweb.org/anthology/P/P99/P99-1030.pdf | category:paper author:Won Seug Choi; Jeong-Mi Cho; Jungyun Sea
+P99-1031 | Measuring Conformity to Discourse Routines in Decision-Making Interactions | http://www.aclweb.org/anthology/P/P99/P99-1031.pdf | category:paper author:Sherri L. Condon; Claude G. Cech; William R. Edwards
+P99-1032 | Development and Use of a Gold-Standard Data Set for Subjectivity Classifications | http://www.aclweb.org/anthology/P/P99/P99-1032.pdf | category:paper author:Janyce M. Wiebe; Rebecca F. Bruce; Thomas P. O'Hara
+P99-1033 | Dependency Parsing with an Extended Finite State Approach | http://www.aclweb.org/anthology/P/P99/P99-1033.pdf | category:paper author:Kemal Oflazer
+P99-1034 | A Unification-based Approach to Morpho-syntactic Parsing of Agglutinative and Other (Highly) Inflectional Languages | http://www.aclweb.org/anthology/P/P99/P99-1034.pdf | category:paper author:Gabor Proszeky; Balazs Kis
+P99-1035 | Inside-Outside Estimation of a Lexicalized PCFG for German | http://www.aclweb.org/anthology/P/P99/P99-1035.pdf | category:paper author:Franz Beil; Glenn Carroll; Detlef Prescher; Stefan Riezler; Mats Rooth
+P99-1036 | A Part of Speech Estimation Method for Japanese Unknown Words using a Statistical Model of Morphology and Context | http://www.aclweb.org/anthology/P/P99/P99-1036.pdf | category:paper author:Masaaki NAGATA
+P99-1037 | Memory-Based Morphological Analysis | http://www.aclweb.org/anthology/P/P99/P99-1037.pdf | category:paper author:Antal van den Bosch; Walter Daelemans
+P99-1038 | Two Accounts of Scope Availability and Semantic Underspecification | http://www.aclweb.org/anthology/P/P99/P99-1038.pdf | category:paper author:Alistair Willis; Suresh Manandhar
+P99-1039 | Alternating Quantifier Scope in CCG | http://www.aclweb.org/anthology/P/P99/P99-1039.pdf | category:paper author:Mark Steedman
+P99-1040 | Automatic Detection of Poor Speech Recognition at the Dialogue Level | http://www.aclweb.org/anthology/P/P99/P99-1040.pdf | category:paper author:Diane J. Litman; Marilyn A. Walker; Michael S. Kearns
+P99-1041 | Automatic Identification of Non-compositional Phrases | http://www.aclweb.org/anthology/P/P99/P99-1041.pdf | category:paper author:Dekang Lin
+P99-1042 | Deep Read: A Reading Comprehension System | http://www.aclweb.org/anthology/P/P99/P99-1042.pdf | category:paper author:Lynette Hirschman; Marc Light; Eric Breck; John D. Burger
+P99-1043 | Mixed Language Query Disambiguation | http://www.aclweb.org/anthology/P/P99/P99-1043.pdf | category:paper author:Pascale FUNG; LIU Xiaohu; CHEUNG Chi Shun
+P99-1044 | Syntagmatic and Paradigmatic Representations of Term Variation | http://www.aclweb.org/anthology/P/P99/P99-1044.pdf | category:paper author:Christian Jacquemin
+P99-1045 | Less is more: Eliminating index terms from subordinate clauses | http://www.aclweb.org/anthology/P/P99/P99-1045.pdf | category:paper author:Simon H. Corston-Oliver; William B. Dolan
+P99-1046 | Statistical Models for Topic Segmentation | http://www.aclweb.org/anthology/P/P99/P99-1046.pdf | category:paper author:Jeffrey C. Reynar
+P99-1047 | A Decision-Based Approach to Rhetorical Parsing | http://www.aclweb.org/anthology/P/P99/P99-1047.pdf | category:paper author:Daniel Marcu
+P99-1048 | Corpus-Based Identification of Non-Anaphoric Noun Phrases | http://www.aclweb.org/anthology/P/P99/P99-1048.pdf | category:paper author:David L. Bean; Ellen Riloff
+P99-1049 | An Efficient Statistical Speech Act Type Tagging System for Speech Translation Systems | http://www.aclweb.org/anthology/P/P99/P99-1049.pdf | category:paper author:Hideki Tanaka; Akio Yokoo
+P99-1050 | Projecting Corpus-Based Semantic Links on a Thesaurus | http://www.aclweb.org/anthology/P/P99/P99-1050.pdf | category:paper author:Emmanuel Morin
+P99-1051 | Acquiring Lexical Generalizations from Corpora: A Case Study for Diathesis Alternations | http://www.aclweb.org/anthology/P/P99/P99-1051.pdf | category:paper author:Maria Lapata
+P99-1052 | Charting the Depths of Robust Speech Parsing | http://www.aclweb.org/anthology/P/P99/P99-1052.pdf | category:paper author:W. Kasper; B. Kiefer; H.-U. Krieger; C. J. Rupp; K. L. Worm
+P99-1053 | A Syntactic Framework for Speech Repairs and Other Disruptions | http://www.aclweb.org/anthology/P/P99/P99-1053.pdf | category:paper author:Mark G. Core; Lenhart K. Schubert
+P99-1054 | Efficient probabilistic top-down and left-corner parsing | http://www.aclweb.org/anthology/P/P99/P99-1054.pdf | category:paper author:Brian Roark; Mark Johnson
+P99-1055 | A Selectionist Theory of Language Acquisition | http://www.aclweb.org/anthology/P/P99/P99-1055.pdf | category:paper author:Charles D. Yang
+P99-1056 | The grapho-phonological system of written French: Statistical analysis and empirical validation | http://www.aclweb.org/anthology/P/P99/P99-1056.pdf | category:paper author:Marielle Lange; Alain Content
+P99-1057 | Learning to Recognize Tables in Free Text | http://www.aclweb.org/anthology/P/P99/P99-1057.pdf | category:paper author:Hwee Tou Ng; Chung Yong Lim; Jessica Li Teng Koo
+P99-1058 | A semantically-derived subset of English for hardware verification | http://www.aclweb.org/anthology/P/P99/P99-1058.pdf | category:paper author:Alexander Holt; Ewan Klein
+P99-1059 | Efficient Parsing for Bilexical Context-Free Grammars and Head Automaton Grammars | http://www.aclweb.org/anthology/P/P99/P99-1059.pdf | category:paper author:Jason Eisner; Giorgio Satta
+P99-1060 | An Earley-style Predictive Chart Parsing Method for Lambek Grammars | http://www.aclweb.org/anthology/P/P99/P99-1060.pdf | category:paper author:Mark Hepple
+P99-1061 | A Bag of Useful Techniques for Efficient and Robust Parsing | http://www.aclweb.org/anthology/P/P99/P99-1061.pdf | category:paper author:Bernd Kiefert; Hans-Ulrich Kriegert; John Carrollt; Rob Malouf
+P99-1062 | Semantic Analysis of Japanese Noun Phrases - A New Approach to Dictionary-Based Understanding | http://www.aclweb.org/anthology/P/P99/P99-1062.pdf | category:paper author:Sadao Kurohashi; Yasuyuki Sakai
+P99-1063 | Lexical Semantics to Disambiguate Polysemous Phenomena of Japanese Adnominal Constituents | http://www.aclweb.org/anthology/P/P99/P99-1063.pdf | category:paper author:Hitoshi Isahara; Kyoko Kanzaki
+P99-1064 | Computational Lexical Semantics, Incrementality, and the So-called Punctuality of Events | http://www.aclweb.org/anthology/P/P99/P99-1064.pdf | category:paper author:Patrick CAUDAL
+P99-1065 | A Statistical Parser for Czech | http://www.aclweb.org/anthology/P/P99/P99-1065.pdf | category:paper author:Michael Collins; Jan Hajic; Lance Ramshaw; Christoph Tillmann
+P99-1066 | Automatic Compensation for Parser Figure-of-Merit Flaws | http://www.aclweb.org/anthology/P/P99/P99-1066.pdf | category:paper author:Don Blaheta; Eugene Charniak
+P99-1067 | Automatic Identification of Word Translations from Unrelated English and German Corpora | http://www.aclweb.org/anthology/P/P99/P99-1067.pdf | category:paper author:Reinhard Rapp
+P99-1068 | Mining the Web for Bilingual Text | http://www.aclweb.org/anthology/P/P99/P99-1068.pdf | category:paper author:Philip Resnik
+P99-1069 | Estimators for Stochastic "Unification-Based" Grammars | http://www.aclweb.org/anthology/P/P99/P99-1069.pdf | category:paper author:Mark Johnson; Stuart Geman; Stephen Canon; Zhiyi Chi; Stefan Riezler
+P99-1070 | Relating Probabilistic Grammars and Automata | http://www.aclweb.org/anthology/P/P99/P99-1070.pdf | category:paper author:Steven Abney; David McAllester; Fernando Pereira
+P99-1071 | Information Fusion in the Context of Multi-Document Summarization | http://www.aclweb.org/anthology/P/P99/P99-1071.pdf | category:paper author:Regina Barzilay; Kathleen R. McKeown; Michael Elhadad
+P99-1072 | Improving Summaries by Revising Them | http://www.aclweb.org/anthology/P/P99/P99-1072.pdf | category:paper author:Inderjeet Mani; Barbara Gates; Eric Bloedorn
+P99-1073 | Designing a Task-Based Evaluation Methodology for a Spoken Machine Translation System | http://www.aclweb.org/anthology/P/P99/P99-1073.pdf | category:paper author:Kavita Thomas
+P99-1074 | Robust, Finite-State Parsing for Spoken Language Understanding | http://www.aclweb.org/anthology/P/P99/P99-1074.pdf | category:paper author:Edward C. Kaiser
+P99-1075 | Packing of Feature Structures for Efficient Unification of Disjunctive Feature Structures | http://www.aclweb.org/anthology/P/P99/P99-1075.pdf | category:paper author:Yusuke Miyao
+P99-1076 | Parsing preferences with Lexicalized Trey Adjoining Grammars exploiting the derivation tree | http://www.aclweb.org/anthology/P/P99/P99-1076.pdf | category:paper author:Alexandra Kinyon
+P99-1077 | Cohesion and Collocation: Using Context Vectors in Text Segmentation | http://www.aclweb.org/anthology/P/P99/P99-1077.pdf | category:paper author:Stefan Kaufmann
+P99-1078 | Using Linguistic Knowledge in Automatic Abstracting | http://www.aclweb.org/anthology/P/P99/P99-1078.pdf | category:paper author:Horacio Saggion
+P99-1079 | Analysis of Syntax-Based Pronoun Resolution Methods | http://www.aclweb.org/anthology/P/P99/P99-1079.pdf | category:paper author:Joel R. Tetreault
+P99-1080 | A Pylonic Decision-Tree Language Model- with Optimal Question Selection | http://www.aclweb.org/anthology/P/P99/P99-1080.pdf | category:paper author:Adrian Corduneanu
+P99-1081 | An Unsupervised Model for Statistically Determining Coordinate Phrase Attachment | http://www.aclweb.org/anthology/P/P99/P99-1081.pdf | category:paper author:Miriam Goldberg
+P99-1082 | A flexible distributed architecture for NLP system development and use | http://www.aclweb.org/anthology/P/P99/P99-1082.pdf | category:paper author:Freddy Y. Y. Choi
+P99-1083 | Modeling Filled Pauses in Medical Dictations | http://www.aclweb.org/anthology/P/P99/P99-1083.pdf | category:paper author:Sergey V. Pakhomov

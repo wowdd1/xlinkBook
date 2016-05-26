@@ -1,15 +1,15 @@
-W95-0101 | Unsupervised Learning of Disambiguation Rules for Part of Speech Tagging | http://www.aclweb.org/anthology/W/W95/W95-0101.pdf | author:Eric Brill
-W95-0102 | Lexical Heads, Phrase Structure and the Induction of Grammar | http://www.aclweb.org/anthology/W/W95/W95-0102.pdf | author:Carl de Marcken
-W95-0103 | Prepositional Phrase Attachment through a Backed-off Model | http://www.aclweb.org/anthology/W/W95/W95-0103.pdf | author:Michael Collins; James Brooks
-W95-0104 | A Bayesian Hybrid Method for Context-sensitive Spelling Correction | http://www.aclweb.org/anthology/W/W95/W95-0104.pdf | author:Andrew Golding
-W95-0105 | Disambiguating Noun Groupings with Respect to Wordnet Senses | http://www.aclweb.org/anthology/W/W95/W95-0105.pdf | author:Philip Resnik
-W95-0106 | Trainable Coarse Bilingual Grammars for Parallel Text Bracketing | http://www.aclweb.org/anthology/W/W95/W95-0106.pdf | author:Dekai Wu
-W95-0107 | Text Chunking using Transformation-Based Learning | http://www.aclweb.org/anthology/W/W95/W95-0107.pdf | author:Lance Ramshaw; Mitch Marcus
-W95-0108 | Beyond Word N-Grams | http://www.aclweb.org/anthology/W/W95/W95-0108.pdf | author:Fernando Pereira; Yoram Singer; Naftali Tishby
-W95-0109 | Automatic Construction of a Chinese Electronic Dictionary | http://www.aclweb.org/anthology/W/W95/W95-0109.pdf | author:Jing-Shin Chang; Yi-Chung Lin; Keh-Yih Su
-W95-0110 | Inverse Document Frequency (IDF): A Measure of Deviations from Poisson | http://www.aclweb.org/anthology/W/W95/W95-0110.pdf | author:Kenneth Church; William Gale
-W95-0111 | Automatic Suggestion of Significant Terms for a Predefined Topic | http://www.aclweb.org/anthology/W/W95/W95-0111.pdf | author:Joe Zhou; Pete Dapkus
-W95-0112 | Automatically Acquiring Conceptual Patterns without an Annotated Corpus | http://www.aclweb.org/anthology/W/W95/W95-0112.pdf | author:Ellen Riloff; Jay Shoen
-W95-0113 | Development of a Partially Bracketed Corpus with Part-of-Speech Information Only | http://www.aclweb.org/anthology/W/W95/W95-0113.pdf | author:Hsin-Hsi Chen; Yue-Shi Lee
-W95-0114 | Compiling Bilingual Lexicon Entries From a Non-Parallel English-Chinese Corpus | http://www.aclweb.org/anthology/W/W95/W95-0114.pdf | author:Pascale Fung
-W95-0115 | Automatic Evaluation and Uniform Filter Cascades for Inducing N-Best Translation Lexicons | http://www.aclweb.org/anthology/W/W95/W95-0115.pdf | author:I. Dan Melamed
+W95-0101 | Unsupervised Learning of Disambiguation Rules for Part of Speech Tagging | http://www.aclweb.org/anthology/W/W95/W95-0101.pdf | category:paper author:Eric Brill
+W95-0102 | Lexical Heads, Phrase Structure and the Induction of Grammar | http://www.aclweb.org/anthology/W/W95/W95-0102.pdf | category:paper author:Carl de Marcken
+W95-0103 | Prepositional Phrase Attachment through a Backed-off Model | http://www.aclweb.org/anthology/W/W95/W95-0103.pdf | category:paper author:Michael Collins; James Brooks
+W95-0104 | A Bayesian Hybrid Method for Context-sensitive Spelling Correction | http://www.aclweb.org/anthology/W/W95/W95-0104.pdf | category:paper author:Andrew Golding
+W95-0105 | Disambiguating Noun Groupings with Respect to Wordnet Senses | http://www.aclweb.org/anthology/W/W95/W95-0105.pdf | category:paper author:Philip Resnik
+W95-0106 | Trainable Coarse Bilingual Grammars for Parallel Text Bracketing | http://www.aclweb.org/anthology/W/W95/W95-0106.pdf | category:paper author:Dekai Wu
+W95-0107 | Text Chunking using Transformation-Based Learning | http://www.aclweb.org/anthology/W/W95/W95-0107.pdf | category:paper author:Lance Ramshaw; Mitch Marcus
+W95-0108 | Beyond Word N-Grams | http://www.aclweb.org/anthology/W/W95/W95-0108.pdf | category:paper author:Fernando Pereira; Yoram Singer; Naftali Tishby
+W95-0109 | Automatic Construction of a Chinese Electronic Dictionary | http://www.aclweb.org/anthology/W/W95/W95-0109.pdf | category:paper author:Jing-Shin Chang; Yi-Chung Lin; Keh-Yih Su
+W95-0110 | Inverse Document Frequency (IDF): A Measure of Deviations from Poisson | http://www.aclweb.org/anthology/W/W95/W95-0110.pdf | category:paper author:Kenneth Church; William Gale
+W95-0111 | Automatic Suggestion of Significant Terms for a Predefined Topic | http://www.aclweb.org/anthology/W/W95/W95-0111.pdf | category:paper author:Joe Zhou; Pete Dapkus
+W95-0112 | Automatically Acquiring Conceptual Patterns without an Annotated Corpus | http://www.aclweb.org/anthology/W/W95/W95-0112.pdf | category:paper author:Ellen Riloff; Jay Shoen
+W95-0113 | Development of a Partially Bracketed Corpus with Part-of-Speech Information Only | http://www.aclweb.org/anthology/W/W95/W95-0113.pdf | category:paper author:Hsin-Hsi Chen; Yue-Shi Lee
+W95-0114 | Compiling Bilingual Lexicon Entries From a Non-Parallel English-Chinese Corpus | http://www.aclweb.org/anthology/W/W95/W95-0114.pdf | category:paper author:Pascale Fung
+W95-0115 | Automatic Evaluation and Uniform Filter Cascades for Inducing N-Best Translation Lexicons | http://www.aclweb.org/anthology/W/W95/W95-0115.pdf | category:paper author:I. Dan Melamed

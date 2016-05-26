@@ -1,13 +1,13 @@
-jmlr-icml01-1 | Special Issue on the Eighteenth International Conference on Machine Learning | http://www.jmlr.org/papers/volume3/brodley02a/brodley02a.pdf | author:Carla E. Brodley, Andrea P. Danyluk
-jmlr-icml01-2 | Efficient Algorithms for Decision Tree Cross-validation | http://www.jmlr.org/papers/v3/blockeel02a.html | author:Hendrik Blockeel, Jan Struyf
-jmlr-icml01-3 | Multiple Instance Learning of Real Valued Data | http://www.jmlr.org/papers/v3/dooly02a.html | author:Daniel R. Dooly, Qi Zhang, Sally A. Goldman, Robert A. Amar
-jmlr-icml01-4 | Learning Probabilistic Models of Link Structure | http://www.jmlr.org/papers/v3/getoor02a.html | author:Lisa Getoor, Nir Friedman, Daphne Koller, Benjamin Taskar
-jmlr-icml01-5 | The Representational Power of Discrete Bayesian Networks | http://www.jmlr.org/papers/v3/ling02a.html | author:Charles X. Ling, Huajie Zhang
-jmlr-icml01-6 | The Set Covering Machine | http://www.jmlr.org/papers/v3/marchand02a.html | author:Mario Marchand, John Shawe Taylor
-jmlr-icml01-7 | Coupled Clustering: A Method for Detecting Structural Correspondence | http://www.jmlr.org/papers/v3/marx02a.html | author:Zvika Marx, Ido Dagan, Joachim M. Buhmann, Eli Shamir
-jmlr-icml01-8 | Some Greedy Learning Algorithms for Sparse Regression and Classification with Mercer Kernels | http://www.jmlr.org/papers/v3/nair02a.html | author:Prasanth B. Nair, Arindam Choudhury, Andy J. Keane
-jmlr-icml01-9 | Lyapunov Design for Safe Reinforcement Learning | http://www.jmlr.org/papers/v3/perkins02a.html | author:Theodore J. Perkins, Andrew G. Barto
-jmlr-icml01-10 | Finding the Most Interesting Patterns in a Database Quickly by Using Sequential Sampling | http://www.jmlr.org/papers/v3/scheffer02a.html | author:Tobias Scheffer, Stefan Wrobel
-jmlr-icml01-11 | Stopping Criterion for Boosting Based Data Reduction Techniques: from Binary to Multiclass Problem | http://www.jmlr.org/papers/v3/sebban02a.html | author:Marc Sebban, Richard Nock, Stéphane Lallich
-jmlr-icml01-12 | Learning to Construct Fast Signal Processing Implementations | http://www.jmlr.org/papers/v3/singer02a.html | author:Bryan Singer, Manuela Veloso
-jmlr-icml01-13 | Policy Search using Paired Comparisons | http://www.jmlr.org/papers/v3/strens02a.html | author:Malcolm J. A. Strens, Andrew W. Moore
+jmlr-icml01-1 | Special Issue on the Eighteenth International Conference on Machine Learning | http://www.jmlr.org/papers/volume3/brodley02a/brodley02a.pdf | category:paper author:Carla E. Brodley, Andrea P. Danyluk
+jmlr-icml01-2 | Efficient Algorithms for Decision Tree Cross-validation | http://www.jmlr.org/papers/v3/blockeel02a.html | category:paper author:Hendrik Blockeel, Jan Struyf
+jmlr-icml01-3 | Multiple Instance Learning of Real Valued Data | http://www.jmlr.org/papers/v3/dooly02a.html | category:paper author:Daniel R. Dooly, Qi Zhang, Sally A. Goldman, Robert A. Amar
+jmlr-icml01-4 | Learning Probabilistic Models of Link Structure | http://www.jmlr.org/papers/v3/getoor02a.html | category:paper author:Lisa Getoor, Nir Friedman, Daphne Koller, Benjamin Taskar
+jmlr-icml01-5 | The Representational Power of Discrete Bayesian Networks | http://www.jmlr.org/papers/v3/ling02a.html | category:paper author:Charles X. Ling, Huajie Zhang
+jmlr-icml01-6 | The Set Covering Machine | http://www.jmlr.org/papers/v3/marchand02a.html | category:paper author:Mario Marchand, John Shawe Taylor
+jmlr-icml01-7 | Coupled Clustering: A Method for Detecting Structural Correspondence | http://www.jmlr.org/papers/v3/marx02a.html | category:paper author:Zvika Marx, Ido Dagan, Joachim M. Buhmann, Eli Shamir
+jmlr-icml01-8 | Some Greedy Learning Algorithms for Sparse Regression and Classification with Mercer Kernels | http://www.jmlr.org/papers/v3/nair02a.html | category:paper author:Prasanth B. Nair, Arindam Choudhury, Andy J. Keane
+jmlr-icml01-9 | Lyapunov Design for Safe Reinforcement Learning | http://www.jmlr.org/papers/v3/perkins02a.html | category:paper author:Theodore J. Perkins, Andrew G. Barto
+jmlr-icml01-10 | Finding the Most Interesting Patterns in a Database Quickly by Using Sequential Sampling | http://www.jmlr.org/papers/v3/scheffer02a.html | category:paper author:Tobias Scheffer, Stefan Wrobel
+jmlr-icml01-11 | Stopping Criterion for Boosting Based Data Reduction Techniques: from Binary to Multiclass Problem | http://www.jmlr.org/papers/v3/sebban02a.html | category:paper author:Marc Sebban, Richard Nock, Stéphane Lallich
+jmlr-icml01-12 | Learning to Construct Fast Signal Processing Implementations | http://www.jmlr.org/papers/v3/singer02a.html | category:paper author:Bryan Singer, Manuela Veloso
+jmlr-icml01-13 | Policy Search using Paired Comparisons | http://www.jmlr.org/papers/v3/strens02a.html | category:paper author:Malcolm J. A. Strens, Andrew W. Moore

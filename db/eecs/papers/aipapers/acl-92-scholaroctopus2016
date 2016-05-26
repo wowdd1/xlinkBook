@@ -1,54 +1,54 @@
-P92-1001 | INFERRING DISCOURSE RELATIONS IN CONTEXT | http://www.aclweb.org/anthology/P/P92/P92-1001.pdf | author:Alex Lascarides; Nicholas Asher; Jon Oberlander
-P92-1002 | AN ALGORITHM FOR VP ELLIPSIS | http://www.aclweb.org/anthology/P/P92/P92-1002.pdf | author:Daniel Hardt
-P92-1003 | A SIMPLE BUT USEFUL APPROACH TO CONJUNCT IDENTIFICATION | http://www.aclweb.org/anthology/P/P92/P92-1003.pdf | author:Rajeev Agarwal; Lois Boggess
-P92-1004 | THE REPRESENTATION OF MULTIMODAL USER INTERFACE DIALOGUES USING DISCOURSE PEGS | http://www.aclweb.org/anthology/P/P92/P92-1004.pdf | author:Susann Luperfoy
-P92-1005 | MONOTONIC SEMANTIC INTERPRETATION | http://www.aclweb.org/anthology/P/P92/P92-1005.pdf | author:Hiyan Alshawi; Richard Crouch
-P92-1006 | Efficiency, Robustness and Accuracy in picky Chart Parsing | http://www.aclweb.org/anthology/P/P92/P92-1006.pdf | author:David M. Magerman; Carl Weir
-P92-1007 | A Functional Approach to Generation with TAG | http://www.aclweb.org/anthology/P/P92/P92-1007.pdf | author:Kathleen F. McCoy; K. Vijay-Shanker; Gijoo Yang
-P92-1008 | INTEGRATING MULTIPLE KNOWLEDGE SOURCES FOR DETECTION AND CORRECTION OF REPAIRS IN HUMAN-COMPUTER DIALOG | http://www.aclweb.org/anthology/P/P92/P92-1008.pdf | author:John Bear; John Dowding; Elizabeth Shribergf
-P92-1009 | CONVERSATIONAL IMPLICATURES IN INDIRECT REPLIES | http://www.aclweb.org/anthology/P/P92/P92-1009.pdf | author:Nancy Green; Sandra Carberry
-P92-1010 | Reasoning with Descriptions of Trees | http://www.aclweb.org/anthology/P/P92/P92-1010.pdf | author:James Rogers; K. Vijay-Shanker
-P92-1011 | COMPARING TWO GRAMMAR-BASED GENERATION ALGORITHMS: A CASE STUDY | http://www.aclweb.org/anthology/P/P92/P92-1011.pdf | author:Miroslav Martinovic; Tomek Strzaikowski
-P92-1012 | RECOGNITION OF LINEAR CONTEXT-FREE REWRITING SYSTEMS | http://www.aclweb.org/anthology/P/P92/P92-1012.pdf | author:Giorgio Satta
-P92-1013 | ACCOMMODATING CONTEXT CHANGE | http://www.aclweb.org/anthology/P/P92/P92-1013.pdf | author:Bonnie Lynn Webber; Breck Baldwin
-P92-1014 | INFORMATION RETRIEVAL USING ROBUST NATURAL LANGUAGE PROCESSING | http://www.aclweb.org/anthology/P/P92/P92-1014.pdf | author:Tomek Strzalkowski; Barbara Vautheyt
-P92-1015 | Prosodic Aids to Syntactic and Semantic Analysis of Spoken English | http://www.aclweb.org/anthology/P/P92/P92-1015.pdf | author:Chris Rowles; Xiuming Huang
-P92-1016 | UNDERSTANDING NATURAL LANGUAGE INSTRUCTIONS: THE CASE OF PURPOSE CLAUSES | http://www.aclweb.org/anthology/P/P92/P92-1016.pdf | author:Barbara Di Eugenio
-P92-1017 | INSIDE-OUTSIDE REESTIMATION FROM PARTIALLY BRACKETED CORPORA | http://www.aclweb.org/anthology/P/P92/P92-1017.pdf | author:Fernando Pereira; Yves Schabes
-P92-1018 | Linear Context-Free Rewriting Systems and Deterministic Tree-Walking Transducers | http://www.aclweb.org/anthology/P/P92/P92-1018.pdf | author:David J. Weir
-P92-1019 | A CONNECTIONIST PARSER FOR STRUCTURE UNIFICATION GRAMMAR | http://www.aclweb.org/anthology/P/P92/P92-1019.pdf | author:James B. Henderson
-P92-1020 | WOULD I LIE TO YOU? MODELLING MISREPRESENTATION AND CONTEXT IN DIALOGUE | http://www.aclweb.org/anthology/P/P92/P92-1020.pdf | author:Carl Gutwin; Gordon McCalla
-P92-1021 | LATTICE-BASED WORD IDENTIFICATION IN CLARE | http://www.aclweb.org/anthology/P/P92/P92-1021.pdf | author:David M. Carter
-P92-1022 | An Alternative Conception of Tree-Adjoining Derivation | http://www.aclweb.org/anthology/P/P92/P92-1022.pdf | author:Yves Schabes; Stuart M. Shieber
-P92-1023 | GPSM: A GENERALIZED PROBABILISTIC SEMANTIC MODEL FOR AMBIGUITY RESOLUTION | http://www.aclweb.org/anthology/P/P92/P92-1023.pdf | author:Jing-Shin Chang; Yih-Fen Luo; Keh-Yih Su
-P92-1024 | Development and Evaluation of a Broad-Coverage Probabilistic Grammar of English-Language Computer Manuals | http://www.aclweb.org/anthology/P/P92/P92-1024.pdf | author:Ezra Black; John Lafferty; Salim Roukos
-P92-1025 | MODELING NEGOTIATION SUBDIALOGUES | http://www.aclweb.org/anthology/P/P92/P92-1025.pdf | author:Lynn Lambert; Sandra Carberry
-P92-1026 | HANDLING LINEAR PRECEDENCE CONSTRAINTS BY UNIFICATION | http://www.aclweb.org/anthology/P/P92/P92-1026.pdf | author:Judith Engelkamp; Gregor Erbach; Hans Uszkoreit
-P92-1027 | A UNIFICATION-BASED SEMANTIC INTERPRETATION FOR COORDINATE CONSTRUCTS | http://www.aclweb.org/anthology/P/P92/P92-1027.pdf | author:Jong C. Park
-P92-1028 | CORPUS-BASED ACQUISITION OF RELATIVE PRONOUN DISAMBIGUATION HEURISTICS | http://www.aclweb.org/anthology/P/P92/P92-1028.pdf | author:Claire Cardie
-P92-1029 | Association-based Natural Language Processing with Neural Networks | http://www.aclweb.org/anthology/P/P92/P92-1029.pdf | author:KIMURA Kazuhiro; UZUOKA Takashi; AMANO Sin-ya
-P92-1030 | TENSE TREES AS THE "FINE STRUCTURE" OF DISCOURSE | http://www.aclweb.org/anthology/P/P92/P92-1030.pdf | author:Chung Hee Hwang; Lenhart K. Schubert
-P92-1031 | CONNECTION RELATIONS AND QUANTIFIER SCOPE | http://www.aclweb.org/anthology/P/P92/P92-1031.pdf | author:Longin Latecki
-P92-1032 | Estimating Upper and Lower Bounds on the Performance of Word-Sense Disambiguation Programs | http://www.aclweb.org/anthology/P/P92/P92-1032.pdf | author:William Gale; Kenneth Ward Church; David Yarowsky
-P92-1033 | A PARAMETERIZED APPROACH TO INTEGRATING ASPECT WITH LEXICAL-SEMANTICS FOR MACHINE TRANSLATION | http://www.aclweb.org/anthology/P/P92/P92-1033.pdf | author:Bonnie J. Dorr
-P92-1034 | USING CLASSIFICATION TO GENERATE TEXT | http://www.aclweb.org/anthology/P/P92/P92-1034.pdf | author:Ehud Reiter; Chris Mellish
-P92-1035 | CORRECTING ILLEGAL NP OMISSIONS USING LOCAL FOCUS | http://www.aclweb.org/anthology/P/P92/P92-1035.pdf | author:Linda Z. Suril
-P92-1036 | SOME PROBLEMATIC CASES OF VP ELLIPSIS | http://www.aclweb.org/anthology/P/P92/P92-1036.pdf | author:Daniel Hardt
-P92-1037 | UNDERSTANDING REPETITION IN NATURAL LANGUAGE INSTRUCTIONS - THE SEMANTICS OF EXTENT | http://www.aclweb.org/anthology/P/P92/P92-1037.pdf | author:Sheila Rock
-P92-1038 | ON THE INTONATION OF MONO- AND DI-SYLLABIC WORDS WITHIN THE DISCOURSE FRAMEWORK OF CONVERSATIONAL GAMES | http://www.aclweb.org/anthology/P/P92/P92-1038.pdf | author:Jacqueline C. Kowtko
-P92-1039 | RIGHT ASSOCIATION REVISITED | http://www.aclweb.org/anthology/P/P92/P92-1039.pdf | author:Michael Niv
-P92-1040 | AN LR CATEGORY-NEUTRAL PARSER WITH LEFT CORNER PREDICTION | http://www.aclweb.org/anthology/P/P92/P92-1040.pdf | author:Paola Merlo
-P92-1041 | INCREMENTAL DEPENDENCY PARSING | http://www.aclweb.org/anthology/P/P92/P92-1041.pdf | author:Vincenzo Lombardo
-P92-1042 | DOCUMENTATION PARSER TO EXTRACT SOFTWARE TEST CONDITIONS | http://www.aclweb.org/anthology/P/P92/P92-1042.pdf | author:Patricia Lutsky
-P92-1043 | A Linguistic and Computational Analysis of the German "Third Construction" | http://www.aclweb.org/anthology/P/P92/P92-1043.pdf | author:Owen Rainbow
-P92-1044 | A CCG APPROACH TO FREE WORD ORDER LANGUAGES | http://www.aclweb.org/anthology/P/P92/P92-1044.pdf | author:Beryl Hoffman
-P92-1045 | INFORMATION STATES AS FIRST CLASS CITIZENS | http://www.aclweb.org/anthology/P/P92/P92-1045.pdf | author:Jorgen Villadsen
-P92-1046 | Spatial Lexicalization in the Translation of Prepositional Phrases | http://www.aclweb.org/anthology/P/P92/P92-1046.pdf | author:Arturo Trujillo
-P92-1047 | METONYMY; REASSESSMENT, SURVEY OF ACCEPTABILITY, AND ITS TREATMENT IN A MACHINE TRANSLATION SYSTEM | http://www.aclweb.org/anthology/P/P92/P92-1047.pdf | author:Shin-ichiro Kamei; Takahiro Wakao
-P92-1048 | A BASIS FOR A FORMALIZATION OF LINGUISTIC STYLE | http://www.aclweb.org/anthology/P/P92/P92-1048.pdf | author:Stephen J. Green
-P92-1049 | ELABORATION IN OBJECT DESCRIPTIONS THROUGH EXAMPLES | http://www.aclweb.org/anthology/P/P92/P92-1049.pdf | author:Vibhu O. Mittal
-P92-1050 | THE EXPRESSION OF LOCAL RHETORICAL RELATIONS IN INSTRUCTIONAL TEXT | http://www.aclweb.org/anthology/P/P92/P92-1050.pdf | author:Keith Vander Linden
-P92-1051 | GENERATING A SPECIFIC CLASS OF METAPHORS | http://www.aclweb.org/anthology/P/P92/P92-1051.pdf | author:Mark Alan Jones
-P92-1052 | SEXTANT: EXPLORING UNEXPLORED CONTEXTS FOR SEMANTIC EXTRACTION FROM SYNTACTIC ANALYSIS | http://www.aclweb.org/anthology/P/P92/P92-1052.pdf | author:Gregory Grefenstette
-P92-1053 | A CLASS-BASED APPROACH TO LEXICAL DISCOVERY | http://www.aclweb.org/anthology/P/P92/P92-1053.pdf | author:Philip Resnik
-P92-1054 | Sense-Linking in a Machine Readable Dictionary | http://www.aclweb.org/anthology/P/P92/P92-1054.pdf | author:Robert Krovetz
+P92-1001 | INFERRING DISCOURSE RELATIONS IN CONTEXT | http://www.aclweb.org/anthology/P/P92/P92-1001.pdf | category:paper author:Alex Lascarides; Nicholas Asher; Jon Oberlander
+P92-1002 | AN ALGORITHM FOR VP ELLIPSIS | http://www.aclweb.org/anthology/P/P92/P92-1002.pdf | category:paper author:Daniel Hardt
+P92-1003 | A SIMPLE BUT USEFUL APPROACH TO CONJUNCT IDENTIFICATION | http://www.aclweb.org/anthology/P/P92/P92-1003.pdf | category:paper author:Rajeev Agarwal; Lois Boggess
+P92-1004 | THE REPRESENTATION OF MULTIMODAL USER INTERFACE DIALOGUES USING DISCOURSE PEGS | http://www.aclweb.org/anthology/P/P92/P92-1004.pdf | category:paper author:Susann Luperfoy
+P92-1005 | MONOTONIC SEMANTIC INTERPRETATION | http://www.aclweb.org/anthology/P/P92/P92-1005.pdf | category:paper author:Hiyan Alshawi; Richard Crouch
+P92-1006 | Efficiency, Robustness and Accuracy in picky Chart Parsing | http://www.aclweb.org/anthology/P/P92/P92-1006.pdf | category:paper author:David M. Magerman; Carl Weir
+P92-1007 | A Functional Approach to Generation with TAG | http://www.aclweb.org/anthology/P/P92/P92-1007.pdf | category:paper author:Kathleen F. McCoy; K. Vijay-Shanker; Gijoo Yang
+P92-1008 | INTEGRATING MULTIPLE KNOWLEDGE SOURCES FOR DETECTION AND CORRECTION OF REPAIRS IN HUMAN-COMPUTER DIALOG | http://www.aclweb.org/anthology/P/P92/P92-1008.pdf | category:paper author:John Bear; John Dowding; Elizabeth Shribergf
+P92-1009 | CONVERSATIONAL IMPLICATURES IN INDIRECT REPLIES | http://www.aclweb.org/anthology/P/P92/P92-1009.pdf | category:paper author:Nancy Green; Sandra Carberry
+P92-1010 | Reasoning with Descriptions of Trees | http://www.aclweb.org/anthology/P/P92/P92-1010.pdf | category:paper author:James Rogers; K. Vijay-Shanker
+P92-1011 | COMPARING TWO GRAMMAR-BASED GENERATION ALGORITHMS: A CASE STUDY | http://www.aclweb.org/anthology/P/P92/P92-1011.pdf | category:paper author:Miroslav Martinovic; Tomek Strzaikowski
+P92-1012 | RECOGNITION OF LINEAR CONTEXT-FREE REWRITING SYSTEMS | http://www.aclweb.org/anthology/P/P92/P92-1012.pdf | category:paper author:Giorgio Satta
+P92-1013 | ACCOMMODATING CONTEXT CHANGE | http://www.aclweb.org/anthology/P/P92/P92-1013.pdf | category:paper author:Bonnie Lynn Webber; Breck Baldwin
+P92-1014 | INFORMATION RETRIEVAL USING ROBUST NATURAL LANGUAGE PROCESSING | http://www.aclweb.org/anthology/P/P92/P92-1014.pdf | category:paper author:Tomek Strzalkowski; Barbara Vautheyt
+P92-1015 | Prosodic Aids to Syntactic and Semantic Analysis of Spoken English | http://www.aclweb.org/anthology/P/P92/P92-1015.pdf | category:paper author:Chris Rowles; Xiuming Huang
+P92-1016 | UNDERSTANDING NATURAL LANGUAGE INSTRUCTIONS: THE CASE OF PURPOSE CLAUSES | http://www.aclweb.org/anthology/P/P92/P92-1016.pdf | category:paper author:Barbara Di Eugenio
+P92-1017 | INSIDE-OUTSIDE REESTIMATION FROM PARTIALLY BRACKETED CORPORA | http://www.aclweb.org/anthology/P/P92/P92-1017.pdf | category:paper author:Fernando Pereira; Yves Schabes
+P92-1018 | Linear Context-Free Rewriting Systems and Deterministic Tree-Walking Transducers | http://www.aclweb.org/anthology/P/P92/P92-1018.pdf | category:paper author:David J. Weir
+P92-1019 | A CONNECTIONIST PARSER FOR STRUCTURE UNIFICATION GRAMMAR | http://www.aclweb.org/anthology/P/P92/P92-1019.pdf | category:paper author:James B. Henderson
+P92-1020 | WOULD I LIE TO YOU? MODELLING MISREPRESENTATION AND CONTEXT IN DIALOGUE | http://www.aclweb.org/anthology/P/P92/P92-1020.pdf | category:paper author:Carl Gutwin; Gordon McCalla
+P92-1021 | LATTICE-BASED WORD IDENTIFICATION IN CLARE | http://www.aclweb.org/anthology/P/P92/P92-1021.pdf | category:paper author:David M. Carter
+P92-1022 | An Alternative Conception of Tree-Adjoining Derivation | http://www.aclweb.org/anthology/P/P92/P92-1022.pdf | category:paper author:Yves Schabes; Stuart M. Shieber
+P92-1023 | GPSM: A GENERALIZED PROBABILISTIC SEMANTIC MODEL FOR AMBIGUITY RESOLUTION | http://www.aclweb.org/anthology/P/P92/P92-1023.pdf | category:paper author:Jing-Shin Chang; Yih-Fen Luo; Keh-Yih Su
+P92-1024 | Development and Evaluation of a Broad-Coverage Probabilistic Grammar of English-Language Computer Manuals | http://www.aclweb.org/anthology/P/P92/P92-1024.pdf | category:paper author:Ezra Black; John Lafferty; Salim Roukos
+P92-1025 | MODELING NEGOTIATION SUBDIALOGUES | http://www.aclweb.org/anthology/P/P92/P92-1025.pdf | category:paper author:Lynn Lambert; Sandra Carberry
+P92-1026 | HANDLING LINEAR PRECEDENCE CONSTRAINTS BY UNIFICATION | http://www.aclweb.org/anthology/P/P92/P92-1026.pdf | category:paper author:Judith Engelkamp; Gregor Erbach; Hans Uszkoreit
+P92-1027 | A UNIFICATION-BASED SEMANTIC INTERPRETATION FOR COORDINATE CONSTRUCTS | http://www.aclweb.org/anthology/P/P92/P92-1027.pdf | category:paper author:Jong C. Park
+P92-1028 | CORPUS-BASED ACQUISITION OF RELATIVE PRONOUN DISAMBIGUATION HEURISTICS | http://www.aclweb.org/anthology/P/P92/P92-1028.pdf | category:paper author:Claire Cardie
+P92-1029 | Association-based Natural Language Processing with Neural Networks | http://www.aclweb.org/anthology/P/P92/P92-1029.pdf | category:paper author:KIMURA Kazuhiro; UZUOKA Takashi; AMANO Sin-ya
+P92-1030 | TENSE TREES AS THE "FINE STRUCTURE" OF DISCOURSE | http://www.aclweb.org/anthology/P/P92/P92-1030.pdf | category:paper author:Chung Hee Hwang; Lenhart K. Schubert
+P92-1031 | CONNECTION RELATIONS AND QUANTIFIER SCOPE | http://www.aclweb.org/anthology/P/P92/P92-1031.pdf | category:paper author:Longin Latecki
+P92-1032 | Estimating Upper and Lower Bounds on the Performance of Word-Sense Disambiguation Programs | http://www.aclweb.org/anthology/P/P92/P92-1032.pdf | category:paper author:William Gale; Kenneth Ward Church; David Yarowsky
+P92-1033 | A PARAMETERIZED APPROACH TO INTEGRATING ASPECT WITH LEXICAL-SEMANTICS FOR MACHINE TRANSLATION | http://www.aclweb.org/anthology/P/P92/P92-1033.pdf | category:paper author:Bonnie J. Dorr
+P92-1034 | USING CLASSIFICATION TO GENERATE TEXT | http://www.aclweb.org/anthology/P/P92/P92-1034.pdf | category:paper author:Ehud Reiter; Chris Mellish
+P92-1035 | CORRECTING ILLEGAL NP OMISSIONS USING LOCAL FOCUS | http://www.aclweb.org/anthology/P/P92/P92-1035.pdf | category:paper author:Linda Z. Suril
+P92-1036 | SOME PROBLEMATIC CASES OF VP ELLIPSIS | http://www.aclweb.org/anthology/P/P92/P92-1036.pdf | category:paper author:Daniel Hardt
+P92-1037 | UNDERSTANDING REPETITION IN NATURAL LANGUAGE INSTRUCTIONS - THE SEMANTICS OF EXTENT | http://www.aclweb.org/anthology/P/P92/P92-1037.pdf | category:paper author:Sheila Rock
+P92-1038 | ON THE INTONATION OF MONO- AND DI-SYLLABIC WORDS WITHIN THE DISCOURSE FRAMEWORK OF CONVERSATIONAL GAMES | http://www.aclweb.org/anthology/P/P92/P92-1038.pdf | category:paper author:Jacqueline C. Kowtko
+P92-1039 | RIGHT ASSOCIATION REVISITED | http://www.aclweb.org/anthology/P/P92/P92-1039.pdf | category:paper author:Michael Niv
+P92-1040 | AN LR CATEGORY-NEUTRAL PARSER WITH LEFT CORNER PREDICTION | http://www.aclweb.org/anthology/P/P92/P92-1040.pdf | category:paper author:Paola Merlo
+P92-1041 | INCREMENTAL DEPENDENCY PARSING | http://www.aclweb.org/anthology/P/P92/P92-1041.pdf | category:paper author:Vincenzo Lombardo
+P92-1042 | DOCUMENTATION PARSER TO EXTRACT SOFTWARE TEST CONDITIONS | http://www.aclweb.org/anthology/P/P92/P92-1042.pdf | category:paper author:Patricia Lutsky
+P92-1043 | A Linguistic and Computational Analysis of the German "Third Construction" | http://www.aclweb.org/anthology/P/P92/P92-1043.pdf | category:paper author:Owen Rainbow
+P92-1044 | A CCG APPROACH TO FREE WORD ORDER LANGUAGES | http://www.aclweb.org/anthology/P/P92/P92-1044.pdf | category:paper author:Beryl Hoffman
+P92-1045 | INFORMATION STATES AS FIRST CLASS CITIZENS | http://www.aclweb.org/anthology/P/P92/P92-1045.pdf | category:paper author:Jorgen Villadsen
+P92-1046 | Spatial Lexicalization in the Translation of Prepositional Phrases | http://www.aclweb.org/anthology/P/P92/P92-1046.pdf | category:paper author:Arturo Trujillo
+P92-1047 | METONYMY; REASSESSMENT, SURVEY OF ACCEPTABILITY, AND ITS TREATMENT IN A MACHINE TRANSLATION SYSTEM | http://www.aclweb.org/anthology/P/P92/P92-1047.pdf | category:paper author:Shin-ichiro Kamei; Takahiro Wakao
+P92-1048 | A BASIS FOR A FORMALIZATION OF LINGUISTIC STYLE | http://www.aclweb.org/anthology/P/P92/P92-1048.pdf | category:paper author:Stephen J. Green
+P92-1049 | ELABORATION IN OBJECT DESCRIPTIONS THROUGH EXAMPLES | http://www.aclweb.org/anthology/P/P92/P92-1049.pdf | category:paper author:Vibhu O. Mittal
+P92-1050 | THE EXPRESSION OF LOCAL RHETORICAL RELATIONS IN INSTRUCTIONAL TEXT | http://www.aclweb.org/anthology/P/P92/P92-1050.pdf | category:paper author:Keith Vander Linden
+P92-1051 | GENERATING A SPECIFIC CLASS OF METAPHORS | http://www.aclweb.org/anthology/P/P92/P92-1051.pdf | category:paper author:Mark Alan Jones
+P92-1052 | SEXTANT: EXPLORING UNEXPLORED CONTEXTS FOR SEMANTIC EXTRACTION FROM SYNTACTIC ANALYSIS | http://www.aclweb.org/anthology/P/P92/P92-1052.pdf | category:paper author:Gregory Grefenstette
+P92-1053 | A CLASS-BASED APPROACH TO LEXICAL DISCOVERY | http://www.aclweb.org/anthology/P/P92/P92-1053.pdf | category:paper author:Philip Resnik
+P92-1054 | Sense-Linking in a Machine Readable Dictionary | http://www.aclweb.org/anthology/P/P92/P92-1054.pdf | category:paper author:Robert Krovetz

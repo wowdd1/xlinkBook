@@ -1,68 +1,68 @@
-W93-0101 | Word Sense Disambiguation by Human Subjects: Computational and Psycholinguistic Applications | http://www.aclweb.org/anthology/W/W93/W93-0101.pdf | author:Thomas Ahlswede; David Lorand
-W93-0102 | Towards Building Contextual Representations of Word Senses Using Statistical Models | http://www.aclweb.org/anthology/W/W93/W93-0102.pdf | author:Claudia Leacock; Geoffrey Towell; Ellen Voorhees
-W93-0103 | Lexical Concept Acquisition from Collocation Map | http://www.aclweb.org/anthology/W/W93/W93-0103.pdf | author:Youn S. Han; Young Kyoon Han; Ken-Sun Choi
-W93-0104 | Internal and External Evidence in the Identification and Semantic Categorization of Proper Names | http://www.aclweb.org/anthology/W/W93/W93-0104.pdf | author:David McDonald
-W93-0105 | Identifying Unknown Proper Names in Newswire Text | http://www.aclweb.org/anthology/W/W93/W93-0105.pdf | author:Inderjeet Mani; T. Richard Macmillan; Susann Luperfoy; Elaine Lusher; Sharon Laskowski
-W93-0106 | Customizing a Lexicon to Better Suit a Computational Task | http://www.aclweb.org/anthology/W/W93/W93-0106.pdf | author:Marti Hearst; Hinrich Schuetze
-W93-0107 | Hierarchical Clustering of Verbs | http://www.aclweb.org/anthology/W/W93/W93-0107.pdf | author:Roberto Basili; Maria Pazienza; Paola Velardi
-W93-0108 | Detecting Dependencies between Semantic Verb Subclasses and Subcategorization Frames in Text Corpora | http://www.aclweb.org/anthology/W/W93/W93-0108.pdf | author:Victor Poznanski; Antonio Sanfilippo
-W93-0109 | The Automatic Acquisition of Frequencies of Verb Subcategorization Frames from Tagged Corpora | http://www.aclweb.org/anthology/W/W93/W93-0109.pdf | author:Akira Ushioda; David Evans; Ted Gibson; Alex Waibel
-W93-0110 | Acquiring Predicate-Argument Mapping Information from Multilingual Texts | http://www.aclweb.org/anthology/W/W93/W93-0110.pdf | author:Chinatsu Aone; Douglas McKee
-W93-0111 | Experiments in Syntactic and Semantic Classification and Disambiguation using Bootstrapping | http://www.aclweb.org/anthology/W/W93/W93-0111.pdf | author:Robert Futrelle; Susan Gauch
-W93-0112 | Structural Methods for Lexical/Semantic Patterns | http://www.aclweb.org/anthology/W/W93/W93-0112.pdf | author:Scott Waterman
-W93-0113 | Evaluation Techniques for Automatic Semantic Extraction: Comparing Syntactic and Window Based Approaches | http://www.aclweb.org/anthology/W/W93/W93-0113.pdf | author:Gregory Grefenstette
-W93-0114 | Categorization and Standardizing Proper Nouns for Efficient Information Retrieval | http://www.aclweb.org/anthology/W/W93/W93-0114.pdf | author:Woojin Paik; Elizabeth Liddy; Edmund Yu; Mary McKenna
-W93-0115 | The Long Journey from the Core to the Real Size of Large LDBs | http://www.aclweb.org/anthology/W/W93/W93-0115.pdf | author:Elena Paskaleva; Kiril Simov; Mariana Damova; Milena Slavcheva
-W93-0201 | Rhetorical Relations: Necessary But Not Sufficient | http://www.aclweb.org/anthology/W/W93/W93-0201.pdf | author:Sandra Carberry; Jennifer Chu; Nancy Green; Lynn Lambert
-W93-0202 | Rhetoric and Intentions in Discourse | http://www.aclweb.org/anthology/W/W93/W93-0202.pdf | author:Robert Dale
-W93-0203 | Knowledge, Intention, Rhetoric: Levels of Variation in Multilingual Instructions | http://www.aclweb.org/anthology/W/W93/W93-0203.pdf | author:Judy Delin; Donia Scott; Tony Hartley
-W93-0204 | Speaker's Intentions and Beliefs in Negative Imperatives | http://www.aclweb.org/anthology/W/W93/W93-0204.pdf | author:Barbara Di Eugenio
-W93-0205 | A Goal-Based Grammar of Rhetoric | http://www.aclweb.org/anthology/W/W93/W93-0205.pdf | author:Chrysanne DiMarco; Graeme Hirst; Marzena Makuta-Giluk
-W93-0206 | An Algorithm for High-Level Organization of Multi-Paragraph Texts | http://www.aclweb.org/anthology/W/W93/W93-0206.pdf | author:Robert Granville
-W93-0207 | Planning for Intentions with Rhetorical Relations | http://www.aclweb.org/anthology/W/W93/W93-0207.pdf | author:Susan Haller
-W93-0208 | Structuring Two-Medium Dialog for Learning Language and Other Things | http://www.aclweb.org/anthology/W/W93/W93-0208.pdf | author:Henry Hamburger; Dan Tufis; Raza Hashim
-W93-0209 | From Planning to Actions: Realizing Intentions by Rhetorical Means | http://www.aclweb.org/anthology/W/W93/W93-0209.pdf | author:Helmut Horacek
-W93-0210 | In Defense of Syntax: Informational, Intentional, and Rhetorical Structures in Discourse | http://www.aclweb.org/anthology/W/W93/W93-0210.pdf | author:Eduard Hovy
-W93-0211 | Observations and Directions in Text Structure | http://www.aclweb.org/anthology/W/W93/W93-0211.pdf | author:John Hughes; Kathleen McCoy
-W93-0212 | "Act promptly, make your god happy": Representation and Rhetorical Relations in Natural Language Generation | http://www.aclweb.org/anthology/W/W93/W93-0212.pdf | author:Margaret Hundleby
-W93-0213 | Using Cue Phrases to Determine Rhetorical Relations | http://www.aclweb.org/anthology/W/W93/W93-0213.pdf | author:Alistair Knott
-W93-0214 | Towards Stratification of RST | http://www.aclweb.org/anthology/W/W93/W93-0214.pdf | author:Tanya Korelsky; Richard Kittredge
-W93-0215 | Domain-Dependent and Domain-Independent Rhetorical Relations | http://www.aclweb.org/anthology/W/W93/W93-0215.pdf | author:Jong-Gyun Lim
-W93-0216 | Empirical Evidence for Intention-Based Discourse Segmentation | http://www.aclweb.org/anthology/W/W93/W93-0216.pdf | author:Diane J. Litman; Rebecca J. Passonneau
-W93-0217 | The Need for Intentionally-Based Approaches to Language | http://www.aclweb.org/anthology/W/W93/W93-0217.pdf | author:Karen Lochbaum
-W93-0218 | Intentions in Bilingual Dialogue Processing | http://www.aclweb.org/anthology/W/W93/W93-0218.pdf | author:Susann LuperFoy
-W93-0219 | The Representation of Interdependencies between Communicative Goals and Rhetorical Relations in the Framework of Multimedia Document Generation | http://www.aclweb.org/anthology/W/W93/W93-0219.pdf | author:Elisabeth Maier
-W93-0220 | On Structure and Intention | http://www.aclweb.org/anthology/W/W93/W93-0220.pdf | author:Mark Maybury
-W93-0221 | Textual Constraints, Rhetorical RElations and Communicative Goals and Rhetorical Relations in the Framework of Multimedia Document Generation | http://www.aclweb.org/anthology/W/W93/W93-0221.pdf | author:Elisabeth Maier
-W93-0222 | Assumption Underlying Discourse Relations: Which Ones are Really There and Where are They? | http://www.aclweb.org/anthology/W/W93/W93-0222.pdf | author:Marie Meteer
-W93-0223 | How Could Rhetorical Relations Be Used in Machine Translation? | http://www.aclweb.org/anthology/W/W93/W93-0223.pdf | author:Ruslan Mitkov
-W93-0224 | On the Necessity of Intentions and the Usefulness of Rhetorical Relations: A Position Paper | http://www.aclweb.org/anthology/W/W93/W93-0224.pdf | author:Vibhu Mittal; Cecile Paris
-W93-0225 | Investigating Discourse Relations | http://www.aclweb.org/anthology/W/W93/W93-0225.pdf | author:Megan Moser; Johanna Moore
-W93-0226 | Intentions, Information, and Inference: Two Rhetorical Questions | http://www.aclweb.org/anthology/W/W93/W93-0226.pdf | author:Jon Oberlander
-W93-0227 | Rhetoric as Knowledge | http://www.aclweb.org/anthology/W/W93/W93-0227.pdf | author:Owen Rambow
-W93-0228 | Intentions, Rhetoric, or Discourse Relations ? A Case from Multilingual Document Generation | http://www.aclweb.org/anthology/W/W93/W93-0228.pdf | author:Dietmar Rosner
-W93-0229 | A Model of Speech Act Planner Adapted to Multiagent Universes | http://www.aclweb.org/anthology/W/W93/W93-0229.pdf | author:Daniel Rousseau; Guy Lapalme; Bernard Moulin
-W93-0230 | On the Cognitive and Text-Analytic Status of Coherence Relations | http://www.aclweb.org/anthology/W/W93/W93-0230.pdf | author:Ted Sanders
-W93-0231 | Domain Structure, Rhetorical Structure, and Text Structure | http://www.aclweb.org/anthology/W/W93/W93-0231.pdf | author:Penelope Sibun
-W93-0232 | On Discourse Relations, Rhetorical Relations and Rhetoric | http://www.aclweb.org/anthology/W/W93/W93-0232.pdf | author:Candance Sidner
-W93-0233 | Summarising as a Lever for Studying Large-Scale Discourse Structure | http://www.aclweb.org/anthology/W/W93/W93-0233.pdf | author:Karen Sparck Jones
-W93-0234 | The Multifaceted Organization of Discourse | http://www.aclweb.org/anthology/W/W93/W93-0234.pdf | author:Dan Suthers
-W93-0235 | Rhetorical Relations, Action and Intentionality in Conversation | http://www.aclweb.org/anthology/W/W93/W93-0235.pdf | author:David Traum
-W93-0236 | Intentionality in a Topical Approach of Discourse Structure | http://www.aclweb.org/anthology/W/W93/W93-0236.pdf | author:Jan van Kuppevelt
-W93-0237 | Rhetorical Relations in Instructional Text Generation | http://www.aclweb.org/anthology/W/W93/W93-0237.pdf | author:Keith Vander Linden
-W93-0238 | Information and Deliberation in Discourse | http://www.aclweb.org/anthology/W/W93/W93-0238.pdf | author:Marilyn Walker
-W93-0239 | Issues in Linguistic Segmentation | http://www.aclweb.org/anthology/W/W93/W93-0239.pdf | author:Janyce Wiebe
-W93-0240 | Closing the Gap Between Discourse Structure and Communicative Intention | http://www.aclweb.org/anthology/W/W93/W93-0240.pdf | author:Paul Wu Horng Jyh
-W93-0301 | Robust Bilingual Word Alignment for Machine Aided Translation | http://www.aclweb.org/anthology/W/W93/W93-0301.pdf | author:Ido Dagan; Kenneth Church; Willian Gale
-W93-0302 | Robust Text Processing in Automated Information Retrieval | http://www.aclweb.org/anthology/W/W93/W93-0302.pdf | author:Tomek Strzalkowski
-W93-0303 | Document Filtering using Semantic Information from a Machine Readable Dictionary | http://www.aclweb.org/anthology/W/W93/W93-0303.pdf | author:Elizabeth D. Liddy; Woojin Paik
-W93-0304 | Toward a Cross-Linguistic Tagset | http://www.aclweb.org/anthology/W/W93/W93-0304.pdf | author:Jan Cloeren
-W93-0305 | HMM-Based Part-of-Speech Tagging for Chinese Corpora | http://www.aclweb.org/anthology/W/W93/W93-0305.pdf | author:Chao-Huang Chang; Cheng-der Chen
-W93-0306 | NPtool, a Detector of English Noun Phrases | http://www.aclweb.org/anthology/W/W93/W93-0306.pdf | author:Atro Voutilainen
-W93-0307 | Structural Ambiguity and Conceptual Relations | http://www.aclweb.org/anthology/W/W93/W93-0307.pdf | author:Philip Resnik; Marti A. Hearst
-W93-0308 | Text Recognition and Collocations and Domain Codes | http://www.aclweb.org/anthology/W/W93/W93-0308.pdf | author:T.G. Rose; L.J. Evett
-W93-0309 | Extraction of V-N-Collocations from Text Corpora: A Feasibility Study for German | http://www.aclweb.org/anthology/W/W93/W93-0309.pdf | author:Elizabeth Breidt
-W93-0310 | Computation of Word Associations Based on Co-occurrences of Words in Large Corpora | http://www.aclweb.org/anthology/W/W93/W93-0310.pdf | author:Manfred Wettler; Reinhard Rapp
-W93-0311 | Corpus-Based Adaptation Mechanisms for Chinese Homophone Disambiguation | http://www.aclweb.org/anthology/W/W93/W93-0311.pdf | author:Chao-Huang Chang
-W93-0312 | Example-Based Sense Tagging of Running Chinese Text | http://www.aclweb.org/anthology/W/W93/W93-0312.pdf | author:Xiang Tong; Change-ning Huang; Cheng-ming Guo
-W93-0313 | Experience about Compound Dictionary on Computer Networks | http://www.aclweb.org/anthology/W/W93/W93-0313.pdf | author:Kyoji Umemura; Akihiro Umemura; Etsuko Suzuki
+W93-0101 | Word Sense Disambiguation by Human Subjects: Computational and Psycholinguistic Applications | http://www.aclweb.org/anthology/W/W93/W93-0101.pdf | category:paper author:Thomas Ahlswede; David Lorand
+W93-0102 | Towards Building Contextual Representations of Word Senses Using Statistical Models | http://www.aclweb.org/anthology/W/W93/W93-0102.pdf | category:paper author:Claudia Leacock; Geoffrey Towell; Ellen Voorhees
+W93-0103 | Lexical Concept Acquisition from Collocation Map | http://www.aclweb.org/anthology/W/W93/W93-0103.pdf | category:paper author:Youn S. Han; Young Kyoon Han; Ken-Sun Choi
+W93-0104 | Internal and External Evidence in the Identification and Semantic Categorization of Proper Names | http://www.aclweb.org/anthology/W/W93/W93-0104.pdf | category:paper author:David McDonald
+W93-0105 | Identifying Unknown Proper Names in Newswire Text | http://www.aclweb.org/anthology/W/W93/W93-0105.pdf | category:paper author:Inderjeet Mani; T. Richard Macmillan; Susann Luperfoy; Elaine Lusher; Sharon Laskowski
+W93-0106 | Customizing a Lexicon to Better Suit a Computational Task | http://www.aclweb.org/anthology/W/W93/W93-0106.pdf | category:paper author:Marti Hearst; Hinrich Schuetze
+W93-0107 | Hierarchical Clustering of Verbs | http://www.aclweb.org/anthology/W/W93/W93-0107.pdf | category:paper author:Roberto Basili; Maria Pazienza; Paola Velardi
+W93-0108 | Detecting Dependencies between Semantic Verb Subclasses and Subcategorization Frames in Text Corpora | http://www.aclweb.org/anthology/W/W93/W93-0108.pdf | category:paper author:Victor Poznanski; Antonio Sanfilippo
+W93-0109 | The Automatic Acquisition of Frequencies of Verb Subcategorization Frames from Tagged Corpora | http://www.aclweb.org/anthology/W/W93/W93-0109.pdf | category:paper author:Akira Ushioda; David Evans; Ted Gibson; Alex Waibel
+W93-0110 | Acquiring Predicate-Argument Mapping Information from Multilingual Texts | http://www.aclweb.org/anthology/W/W93/W93-0110.pdf | category:paper author:Chinatsu Aone; Douglas McKee
+W93-0111 | Experiments in Syntactic and Semantic Classification and Disambiguation using Bootstrapping | http://www.aclweb.org/anthology/W/W93/W93-0111.pdf | category:paper author:Robert Futrelle; Susan Gauch
+W93-0112 | Structural Methods for Lexical/Semantic Patterns | http://www.aclweb.org/anthology/W/W93/W93-0112.pdf | category:paper author:Scott Waterman
+W93-0113 | Evaluation Techniques for Automatic Semantic Extraction: Comparing Syntactic and Window Based Approaches | http://www.aclweb.org/anthology/W/W93/W93-0113.pdf | category:paper author:Gregory Grefenstette
+W93-0114 | Categorization and Standardizing Proper Nouns for Efficient Information Retrieval | http://www.aclweb.org/anthology/W/W93/W93-0114.pdf | category:paper author:Woojin Paik; Elizabeth Liddy; Edmund Yu; Mary McKenna
+W93-0115 | The Long Journey from the Core to the Real Size of Large LDBs | http://www.aclweb.org/anthology/W/W93/W93-0115.pdf | category:paper author:Elena Paskaleva; Kiril Simov; Mariana Damova; Milena Slavcheva
+W93-0201 | Rhetorical Relations: Necessary But Not Sufficient | http://www.aclweb.org/anthology/W/W93/W93-0201.pdf | category:paper author:Sandra Carberry; Jennifer Chu; Nancy Green; Lynn Lambert
+W93-0202 | Rhetoric and Intentions in Discourse | http://www.aclweb.org/anthology/W/W93/W93-0202.pdf | category:paper author:Robert Dale
+W93-0203 | Knowledge, Intention, Rhetoric: Levels of Variation in Multilingual Instructions | http://www.aclweb.org/anthology/W/W93/W93-0203.pdf | category:paper author:Judy Delin; Donia Scott; Tony Hartley
+W93-0204 | Speaker's Intentions and Beliefs in Negative Imperatives | http://www.aclweb.org/anthology/W/W93/W93-0204.pdf | category:paper author:Barbara Di Eugenio
+W93-0205 | A Goal-Based Grammar of Rhetoric | http://www.aclweb.org/anthology/W/W93/W93-0205.pdf | category:paper author:Chrysanne DiMarco; Graeme Hirst; Marzena Makuta-Giluk
+W93-0206 | An Algorithm for High-Level Organization of Multi-Paragraph Texts | http://www.aclweb.org/anthology/W/W93/W93-0206.pdf | category:paper author:Robert Granville
+W93-0207 | Planning for Intentions with Rhetorical Relations | http://www.aclweb.org/anthology/W/W93/W93-0207.pdf | category:paper author:Susan Haller
+W93-0208 | Structuring Two-Medium Dialog for Learning Language and Other Things | http://www.aclweb.org/anthology/W/W93/W93-0208.pdf | category:paper author:Henry Hamburger; Dan Tufis; Raza Hashim
+W93-0209 | From Planning to Actions: Realizing Intentions by Rhetorical Means | http://www.aclweb.org/anthology/W/W93/W93-0209.pdf | category:paper author:Helmut Horacek
+W93-0210 | In Defense of Syntax: Informational, Intentional, and Rhetorical Structures in Discourse | http://www.aclweb.org/anthology/W/W93/W93-0210.pdf | category:paper author:Eduard Hovy
+W93-0211 | Observations and Directions in Text Structure | http://www.aclweb.org/anthology/W/W93/W93-0211.pdf | category:paper author:John Hughes; Kathleen McCoy
+W93-0212 | "Act promptly, make your god happy": Representation and Rhetorical Relations in Natural Language Generation | http://www.aclweb.org/anthology/W/W93/W93-0212.pdf | category:paper author:Margaret Hundleby
+W93-0213 | Using Cue Phrases to Determine Rhetorical Relations | http://www.aclweb.org/anthology/W/W93/W93-0213.pdf | category:paper author:Alistair Knott
+W93-0214 | Towards Stratification of RST | http://www.aclweb.org/anthology/W/W93/W93-0214.pdf | category:paper author:Tanya Korelsky; Richard Kittredge
+W93-0215 | Domain-Dependent and Domain-Independent Rhetorical Relations | http://www.aclweb.org/anthology/W/W93/W93-0215.pdf | category:paper author:Jong-Gyun Lim
+W93-0216 | Empirical Evidence for Intention-Based Discourse Segmentation | http://www.aclweb.org/anthology/W/W93/W93-0216.pdf | category:paper author:Diane J. Litman; Rebecca J. Passonneau
+W93-0217 | The Need for Intentionally-Based Approaches to Language | http://www.aclweb.org/anthology/W/W93/W93-0217.pdf | category:paper author:Karen Lochbaum
+W93-0218 | Intentions in Bilingual Dialogue Processing | http://www.aclweb.org/anthology/W/W93/W93-0218.pdf | category:paper author:Susann LuperFoy
+W93-0219 | The Representation of Interdependencies between Communicative Goals and Rhetorical Relations in the Framework of Multimedia Document Generation | http://www.aclweb.org/anthology/W/W93/W93-0219.pdf | category:paper author:Elisabeth Maier
+W93-0220 | On Structure and Intention | http://www.aclweb.org/anthology/W/W93/W93-0220.pdf | category:paper author:Mark Maybury
+W93-0221 | Textual Constraints, Rhetorical RElations and Communicative Goals and Rhetorical Relations in the Framework of Multimedia Document Generation | http://www.aclweb.org/anthology/W/W93/W93-0221.pdf | category:paper author:Elisabeth Maier
+W93-0222 | Assumption Underlying Discourse Relations: Which Ones are Really There and Where are They? | http://www.aclweb.org/anthology/W/W93/W93-0222.pdf | category:paper author:Marie Meteer
+W93-0223 | How Could Rhetorical Relations Be Used in Machine Translation? | http://www.aclweb.org/anthology/W/W93/W93-0223.pdf | category:paper author:Ruslan Mitkov
+W93-0224 | On the Necessity of Intentions and the Usefulness of Rhetorical Relations: A Position Paper | http://www.aclweb.org/anthology/W/W93/W93-0224.pdf | category:paper author:Vibhu Mittal; Cecile Paris
+W93-0225 | Investigating Discourse Relations | http://www.aclweb.org/anthology/W/W93/W93-0225.pdf | category:paper author:Megan Moser; Johanna Moore
+W93-0226 | Intentions, Information, and Inference: Two Rhetorical Questions | http://www.aclweb.org/anthology/W/W93/W93-0226.pdf | category:paper author:Jon Oberlander
+W93-0227 | Rhetoric as Knowledge | http://www.aclweb.org/anthology/W/W93/W93-0227.pdf | category:paper author:Owen Rambow
+W93-0228 | Intentions, Rhetoric, or Discourse Relations ? A Case from Multilingual Document Generation | http://www.aclweb.org/anthology/W/W93/W93-0228.pdf | category:paper author:Dietmar Rosner
+W93-0229 | A Model of Speech Act Planner Adapted to Multiagent Universes | http://www.aclweb.org/anthology/W/W93/W93-0229.pdf | category:paper author:Daniel Rousseau; Guy Lapalme; Bernard Moulin
+W93-0230 | On the Cognitive and Text-Analytic Status of Coherence Relations | http://www.aclweb.org/anthology/W/W93/W93-0230.pdf | category:paper author:Ted Sanders
+W93-0231 | Domain Structure, Rhetorical Structure, and Text Structure | http://www.aclweb.org/anthology/W/W93/W93-0231.pdf | category:paper author:Penelope Sibun
+W93-0232 | On Discourse Relations, Rhetorical Relations and Rhetoric | http://www.aclweb.org/anthology/W/W93/W93-0232.pdf | category:paper author:Candance Sidner
+W93-0233 | Summarising as a Lever for Studying Large-Scale Discourse Structure | http://www.aclweb.org/anthology/W/W93/W93-0233.pdf | category:paper author:Karen Sparck Jones
+W93-0234 | The Multifaceted Organization of Discourse | http://www.aclweb.org/anthology/W/W93/W93-0234.pdf | category:paper author:Dan Suthers
+W93-0235 | Rhetorical Relations, Action and Intentionality in Conversation | http://www.aclweb.org/anthology/W/W93/W93-0235.pdf | category:paper author:David Traum
+W93-0236 | Intentionality in a Topical Approach of Discourse Structure | http://www.aclweb.org/anthology/W/W93/W93-0236.pdf | category:paper author:Jan van Kuppevelt
+W93-0237 | Rhetorical Relations in Instructional Text Generation | http://www.aclweb.org/anthology/W/W93/W93-0237.pdf | category:paper author:Keith Vander Linden
+W93-0238 | Information and Deliberation in Discourse | http://www.aclweb.org/anthology/W/W93/W93-0238.pdf | category:paper author:Marilyn Walker
+W93-0239 | Issues in Linguistic Segmentation | http://www.aclweb.org/anthology/W/W93/W93-0239.pdf | category:paper author:Janyce Wiebe
+W93-0240 | Closing the Gap Between Discourse Structure and Communicative Intention | http://www.aclweb.org/anthology/W/W93/W93-0240.pdf | category:paper author:Paul Wu Horng Jyh
+W93-0301 | Robust Bilingual Word Alignment for Machine Aided Translation | http://www.aclweb.org/anthology/W/W93/W93-0301.pdf | category:paper author:Ido Dagan; Kenneth Church; Willian Gale
+W93-0302 | Robust Text Processing in Automated Information Retrieval | http://www.aclweb.org/anthology/W/W93/W93-0302.pdf | category:paper author:Tomek Strzalkowski
+W93-0303 | Document Filtering using Semantic Information from a Machine Readable Dictionary | http://www.aclweb.org/anthology/W/W93/W93-0303.pdf | category:paper author:Elizabeth D. Liddy; Woojin Paik
+W93-0304 | Toward a Cross-Linguistic Tagset | http://www.aclweb.org/anthology/W/W93/W93-0304.pdf | category:paper author:Jan Cloeren
+W93-0305 | HMM-Based Part-of-Speech Tagging for Chinese Corpora | http://www.aclweb.org/anthology/W/W93/W93-0305.pdf | category:paper author:Chao-Huang Chang; Cheng-der Chen
+W93-0306 | NPtool, a Detector of English Noun Phrases | http://www.aclweb.org/anthology/W/W93/W93-0306.pdf | category:paper author:Atro Voutilainen
+W93-0307 | Structural Ambiguity and Conceptual Relations | http://www.aclweb.org/anthology/W/W93/W93-0307.pdf | category:paper author:Philip Resnik; Marti A. Hearst
+W93-0308 | Text Recognition and Collocations and Domain Codes | http://www.aclweb.org/anthology/W/W93/W93-0308.pdf | category:paper author:T.G. Rose; L.J. Evett
+W93-0309 | Extraction of V-N-Collocations from Text Corpora: A Feasibility Study for German | http://www.aclweb.org/anthology/W/W93/W93-0309.pdf | category:paper author:Elizabeth Breidt
+W93-0310 | Computation of Word Associations Based on Co-occurrences of Words in Large Corpora | http://www.aclweb.org/anthology/W/W93/W93-0310.pdf | category:paper author:Manfred Wettler; Reinhard Rapp
+W93-0311 | Corpus-Based Adaptation Mechanisms for Chinese Homophone Disambiguation | http://www.aclweb.org/anthology/W/W93/W93-0311.pdf | category:paper author:Chao-Huang Chang
+W93-0312 | Example-Based Sense Tagging of Running Chinese Text | http://www.aclweb.org/anthology/W/W93/W93-0312.pdf | category:paper author:Xiang Tong; Change-ning Huang; Cheng-ming Guo
+W93-0313 | Experience about Compound Dictionary on Computer Networks | http://www.aclweb.org/anthology/W/W93/W93-0313.pdf | category:paper author:Kyoji Umemura; Akihiro Umemura; Etsuko Suzuki

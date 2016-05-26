@@ -1,39 +1,39 @@
-RSS-II-1 | Haptic Playback: Modeling, Controller Design, and Stability Analysis | http://www.roboticsproceedings.org/rss02/p01.pdf | author:M. Corno, M. Zefran
-RSS-II-2 | Optimal Rules for Programmed Stochastic Self-Assembly | http://www.roboticsproceedings.org/rss02/p02.pdf | author:E. Klavins, S. Burden and N. Napp
-RSS-II-3 | Sliding Autonomy for Complex Coordinated Multi-Robot Tasks: Analysis & Experiments | http://www.roboticsproceedings.org/rss02/p03.pdf | author:F. Heger, S. Singh
-RSS-II-4 | Improving Robot Navigation Through Self-Supervised Online Learning | http://www.roboticsproceedings.org/rss02/p04.pdf | author:B. Sofman, E. Lin, J. Bagnell, N. Vandapel, A. Stentz
-RSS-II-5 | Self-supervised Monocular Road Detection in Desert Terrain | http://www.roboticsproceedings.org/rss02/p05.pdf | author:H. Dahlkamp, A. Kaehler, D. Stavens, S. Thrun, G. Bradski
-RSS-II-6 | Enhancing Supervised Terrain Classification with Predictive Unsupervised Learning | http://www.roboticsproceedings.org/rss02/p06.pdf | author:M. Happold, M. Ollis, N. Johnson
-RSS-II-7 | Distributed Coverage Control with Sensory Feedback for Networked Robots | http://www.roboticsproceedings.org/rss02/p07.pdf | author:M. Schwager, J. McLurkin, D. Rus
-RSS-II-8 | Integrated Planning and Control for Convex-bodied Nonholonomic systems using Local Feedback Control Policies | http://www.roboticsproceedings.org/rss02/p08.pdf | author:D. Conner, H. Choset, A. Rizzi
-RSS-II-9 | On Comparing the Power of Mobile Robots | http://www.roboticsproceedings.org/rss02/p09.pdf | author:J. O'Kane, S. LaValle
-RSS-II-10 | Exploiting Locality in SLAM by Nested Dissection | http://www.roboticsproceedings.org/rss02/p10.pdf | author:P. Krauthausen, A. Kipp, F. Dellaert
-RSS-II-11 | Unified Inverse Depth Parametrization for Monocular SLAM | http://www.roboticsproceedings.org/rss02/p11.pdf | author:J. Montiel, J. Civera, A. Davison
-RSS-II-12 | Qualitative Hybrid Control of Dynamic Bipedal Walking | http://www.roboticsproceedings.org/rss02/p12.pdf | author:S. Ramamoorthy, B. Kuipers
-RSS-II-13 | Gait Regulation and Feedback on a Robotic Climbing Hexapod | http://www.roboticsproceedings.org/rss02/p13.pdf | author:G. Haynes, A. Rizzi
-RSS-II-14 | Slip Prediction Using Visual Information | http://www.roboticsproceedings.org/rss02/p14.pdf | author:A. Angelova, L. Matthies, D. Helmick, P. Perona
-RSS-II-15 | Pursuit and evasion in non-convex domains of arbitrary dimensions | http://www.roboticsproceedings.org/rss02/p15.pdf | author:S. Alexander, R. Bishop, R. Ghrist
-RSS-II-16 | Development of Methodology for Design and Analysis of Physically Cooperating Robot and Applications to Other Robotic Systems | http://www.roboticsproceedings.org/rss02/p16.pdf | author:A. Deshpande, J. Luntz
-RSS-II-17 | An Equilibrium Point based Model Unifying Movement Control in Humanoids | http://www.roboticsproceedings.org/rss02/p17.pdf | author:X. Gu, D. Ballard
-RSS-II-18 | A new inlier identification scheme for robust estimation problems | http://www.roboticsproceedings.org/rss02/p18.pdf | author:W. Zhang, J. Kosecka
-RSS-II-19 | A Probabilistic Exemplar Approach to Combine Laser and Vision for Person Tracking | http://www.roboticsproceedings.org/rss02/p19.pdf | author:D. Schulz
-RSS-II-20 | Outdoor Path Labeling Using Polynomial Mahalanobis Distance | http://www.roboticsproceedings.org/rss02/p20.pdf | author:G. Grudic, J. Mulligan
-RSS-II-21 | Probabilistic Terrain Analysis For High-Speed Desert Driving | http://www.roboticsproceedings.org/rss02/p21.pdf | author:S. Thrun, M. Montemerlo, A. Aron
-RSS-II-22 | Multi-loop Position Analysis via Iterated Linear Programming | http://www.roboticsproceedings.org/rss02/p22.pdf | author:J. Porta, L. Ros, F. Thomas
-RSS-II-23 | Inverse Kinematics for a Serial Chain with Joints Under Distance Constraints | http://www.roboticsproceedings.org/rss02/p23.pdf | author:L. Han, L. Rudolph
-RSS-II-24 | A Gravity Balancing Passive Exoskeleton for the Human Leg | http://www.roboticsproceedings.org/rss02/p24.pdf | author:S. Agrawal, S. Banala, A. Fattah
-RSS-II-25 | Design Methodologies for Central Pattern Generators: An Application to Crawling Humanoids | http://www.roboticsproceedings.org/rss02/p25.pdf | author:L. Righetti, A. Ijspeert
-RSS-II-26 | Dynamic Imitation in a Humanoid Robot through Nonparametric Probabilistic Inference | http://www.roboticsproceedings.org/rss02/p26.pdf | author:D. Grimes, R. Chalodhorn, R. Rao
-RSS-II-27 | Computing Smooth Feedback Plans Over Cylindrical Algebraic Decompositions | http://www.roboticsproceedings.org/rss02/p27.pdf | author:S. Lindemann, S. LaValle
-RSS-II-28 | Analytical Characterization of the Accuracy of SLAM without Absolute Orientation Measurements | http://www.roboticsproceedings.org/rss02/p28.pdf | author:A. Mourikis, S. Roumeliotis
-RSS-II-29 | The Identity Management Kalman Filter (IMKF) | http://www.roboticsproceedings.org/rss02/p29.pdf | author:B. Schumitsch, S. Thrun, L. Guibas, K. Olukotun
-RSS-II-30 | Adaptive Dynamics with Efficient Contact Handling for Articulated Robots | http://www.roboticsproceedings.org/rss02/p30.pdf | author:R. Gayle, M. Lin, D. Manocha
-RSS-II-31 | Generation of Point-contact State Space between Strictly Curved Objects | http://www.roboticsproceedings.org/rss02/p31.pdf | author:P. Tang, J. Xiao
-RSS-II-32 | A Bayesian Approach to Nonlinear Parameter Identification for Rigid Body Dynamics | http://www.roboticsproceedings.org/rss02/p32.pdf | author:J. Ting, M. Mistry, J. Peters, S. Schaal, J. Nakanishi
-RSS-II-33 | Learning Operational Space Control | http://www.roboticsproceedings.org/rss02/p33.pdf | author:J. Peters, S. Schaal
-RSS-II-34 | The Iterated Sigma Point Kalman Filter with Applications to Long Range Stereo | http://www.roboticsproceedings.org/rss02/p34.pdf | author:G. Sibley, G. Sukhatme, L. Matthies
-RSS-II-35 | Environment Identification for a Running Robot Using Inertial and Actuator Cues | http://www.roboticsproceedings.org/rss02/p35.pdf | author:P. Giguere, G. Dudek, S. Saunderson, C. Prahacs
-RSS-II-36 | Elastic Roadmaps: Globally Task-Consistent Motion for Autonomous Mobile Manipulation in Dynamic Environments | http://www.roboticsproceedings.org/rss02/p36.pdf | author:Y. Yang, O. Brock
-RSS-II-37 | Responsive Robot Gaze to Interaction Partner | http://www.roboticsproceedings.org/rss02/p37.pdf | author:Y. Yoshikawa, K. Shinozawa, H. Ishiguro, N. Hagita, T. Miyamoto
-RSS-II-38 | On the Dubins Traveling Salesperson Problems: novel approximation algorithms | http://www.roboticsproceedings.org/rss02/p38.pdf | author:K. Savla, E. Frazzoli, F. Bullo
-RSS-II-39 | Gaussian Processes for Signal Strength-Based Location Estimation | http://www.roboticsproceedings.org/rss02/p39.pdf | author:B. Ferris, D. Haehnel, D. Fox
+RSS-II-1 | Haptic Playback: Modeling, Controller Design, and Stability Analysis | http://www.roboticsproceedings.org/rss02/p01.pdf | category:paper author:M. Corno, M. Zefran
+RSS-II-2 | Optimal Rules for Programmed Stochastic Self-Assembly | http://www.roboticsproceedings.org/rss02/p02.pdf | category:paper author:E. Klavins, S. Burden and N. Napp
+RSS-II-3 | Sliding Autonomy for Complex Coordinated Multi-Robot Tasks: Analysis & Experiments | http://www.roboticsproceedings.org/rss02/p03.pdf | category:paper author:F. Heger, S. Singh
+RSS-II-4 | Improving Robot Navigation Through Self-Supervised Online Learning | http://www.roboticsproceedings.org/rss02/p04.pdf | category:paper author:B. Sofman, E. Lin, J. Bagnell, N. Vandapel, A. Stentz
+RSS-II-5 | Self-supervised Monocular Road Detection in Desert Terrain | http://www.roboticsproceedings.org/rss02/p05.pdf | category:paper author:H. Dahlkamp, A. Kaehler, D. Stavens, S. Thrun, G. Bradski
+RSS-II-6 | Enhancing Supervised Terrain Classification with Predictive Unsupervised Learning | http://www.roboticsproceedings.org/rss02/p06.pdf | category:paper author:M. Happold, M. Ollis, N. Johnson
+RSS-II-7 | Distributed Coverage Control with Sensory Feedback for Networked Robots | http://www.roboticsproceedings.org/rss02/p07.pdf | category:paper author:M. Schwager, J. McLurkin, D. Rus
+RSS-II-8 | Integrated Planning and Control for Convex-bodied Nonholonomic systems using Local Feedback Control Policies | http://www.roboticsproceedings.org/rss02/p08.pdf | category:paper author:D. Conner, H. Choset, A. Rizzi
+RSS-II-9 | On Comparing the Power of Mobile Robots | http://www.roboticsproceedings.org/rss02/p09.pdf | category:paper author:J. O'Kane, S. LaValle
+RSS-II-10 | Exploiting Locality in SLAM by Nested Dissection | http://www.roboticsproceedings.org/rss02/p10.pdf | category:paper author:P. Krauthausen, A. Kipp, F. Dellaert
+RSS-II-11 | Unified Inverse Depth Parametrization for Monocular SLAM | http://www.roboticsproceedings.org/rss02/p11.pdf | category:paper author:J. Montiel, J. Civera, A. Davison
+RSS-II-12 | Qualitative Hybrid Control of Dynamic Bipedal Walking | http://www.roboticsproceedings.org/rss02/p12.pdf | category:paper author:S. Ramamoorthy, B. Kuipers
+RSS-II-13 | Gait Regulation and Feedback on a Robotic Climbing Hexapod | http://www.roboticsproceedings.org/rss02/p13.pdf | category:paper author:G. Haynes, A. Rizzi
+RSS-II-14 | Slip Prediction Using Visual Information | http://www.roboticsproceedings.org/rss02/p14.pdf | category:paper author:A. Angelova, L. Matthies, D. Helmick, P. Perona
+RSS-II-15 | Pursuit and evasion in non-convex domains of arbitrary dimensions | http://www.roboticsproceedings.org/rss02/p15.pdf | category:paper author:S. Alexander, R. Bishop, R. Ghrist
+RSS-II-16 | Development of Methodology for Design and Analysis of Physically Cooperating Robot and Applications to Other Robotic Systems | http://www.roboticsproceedings.org/rss02/p16.pdf | category:paper author:A. Deshpande, J. Luntz
+RSS-II-17 | An Equilibrium Point based Model Unifying Movement Control in Humanoids | http://www.roboticsproceedings.org/rss02/p17.pdf | category:paper author:X. Gu, D. Ballard
+RSS-II-18 | A new inlier identification scheme for robust estimation problems | http://www.roboticsproceedings.org/rss02/p18.pdf | category:paper author:W. Zhang, J. Kosecka
+RSS-II-19 | A Probabilistic Exemplar Approach to Combine Laser and Vision for Person Tracking | http://www.roboticsproceedings.org/rss02/p19.pdf | category:paper author:D. Schulz
+RSS-II-20 | Outdoor Path Labeling Using Polynomial Mahalanobis Distance | http://www.roboticsproceedings.org/rss02/p20.pdf | category:paper author:G. Grudic, J. Mulligan
+RSS-II-21 | Probabilistic Terrain Analysis For High-Speed Desert Driving | http://www.roboticsproceedings.org/rss02/p21.pdf | category:paper author:S. Thrun, M. Montemerlo, A. Aron
+RSS-II-22 | Multi-loop Position Analysis via Iterated Linear Programming | http://www.roboticsproceedings.org/rss02/p22.pdf | category:paper author:J. Porta, L. Ros, F. Thomas
+RSS-II-23 | Inverse Kinematics for a Serial Chain with Joints Under Distance Constraints | http://www.roboticsproceedings.org/rss02/p23.pdf | category:paper author:L. Han, L. Rudolph
+RSS-II-24 | A Gravity Balancing Passive Exoskeleton for the Human Leg | http://www.roboticsproceedings.org/rss02/p24.pdf | category:paper author:S. Agrawal, S. Banala, A. Fattah
+RSS-II-25 | Design Methodologies for Central Pattern Generators: An Application to Crawling Humanoids | http://www.roboticsproceedings.org/rss02/p25.pdf | category:paper author:L. Righetti, A. Ijspeert
+RSS-II-26 | Dynamic Imitation in a Humanoid Robot through Nonparametric Probabilistic Inference | http://www.roboticsproceedings.org/rss02/p26.pdf | category:paper author:D. Grimes, R. Chalodhorn, R. Rao
+RSS-II-27 | Computing Smooth Feedback Plans Over Cylindrical Algebraic Decompositions | http://www.roboticsproceedings.org/rss02/p27.pdf | category:paper author:S. Lindemann, S. LaValle
+RSS-II-28 | Analytical Characterization of the Accuracy of SLAM without Absolute Orientation Measurements | http://www.roboticsproceedings.org/rss02/p28.pdf | category:paper author:A. Mourikis, S. Roumeliotis
+RSS-II-29 | The Identity Management Kalman Filter (IMKF) | http://www.roboticsproceedings.org/rss02/p29.pdf | category:paper author:B. Schumitsch, S. Thrun, L. Guibas, K. Olukotun
+RSS-II-30 | Adaptive Dynamics with Efficient Contact Handling for Articulated Robots | http://www.roboticsproceedings.org/rss02/p30.pdf | category:paper author:R. Gayle, M. Lin, D. Manocha
+RSS-II-31 | Generation of Point-contact State Space between Strictly Curved Objects | http://www.roboticsproceedings.org/rss02/p31.pdf | category:paper author:P. Tang, J. Xiao
+RSS-II-32 | A Bayesian Approach to Nonlinear Parameter Identification for Rigid Body Dynamics | http://www.roboticsproceedings.org/rss02/p32.pdf | category:paper author:J. Ting, M. Mistry, J. Peters, S. Schaal, J. Nakanishi
+RSS-II-33 | Learning Operational Space Control | http://www.roboticsproceedings.org/rss02/p33.pdf | category:paper author:J. Peters, S. Schaal
+RSS-II-34 | The Iterated Sigma Point Kalman Filter with Applications to Long Range Stereo | http://www.roboticsproceedings.org/rss02/p34.pdf | category:paper author:G. Sibley, G. Sukhatme, L. Matthies
+RSS-II-35 | Environment Identification for a Running Robot Using Inertial and Actuator Cues | http://www.roboticsproceedings.org/rss02/p35.pdf | category:paper author:P. Giguere, G. Dudek, S. Saunderson, C. Prahacs
+RSS-II-36 | Elastic Roadmaps: Globally Task-Consistent Motion for Autonomous Mobile Manipulation in Dynamic Environments | http://www.roboticsproceedings.org/rss02/p36.pdf | category:paper author:Y. Yang, O. Brock
+RSS-II-37 | Responsive Robot Gaze to Interaction Partner | http://www.roboticsproceedings.org/rss02/p37.pdf | category:paper author:Y. Yoshikawa, K. Shinozawa, H. Ishiguro, N. Hagita, T. Miyamoto
+RSS-II-38 | On the Dubins Traveling Salesperson Problems: novel approximation algorithms | http://www.roboticsproceedings.org/rss02/p38.pdf | category:paper author:K. Savla, E. Frazzoli, F. Bullo
+RSS-II-39 | Gaussian Processes for Signal Strength-Based Location Estimation | http://www.roboticsproceedings.org/rss02/p39.pdf | category:paper author:B. Ferris, D. Haehnel, D. Fox

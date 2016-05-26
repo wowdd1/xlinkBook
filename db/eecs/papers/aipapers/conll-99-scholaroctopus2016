@@ -1,8 +1,8 @@
-W99-0701 | Unsupervised Learning of Word Boundary with Description Length Gain | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0701.pdf | author:Chunyu Kitt; Yorick Wilks
-W99-0702 | Experiments in Unsupervised Entropy-Based Corpus Segmentation | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0702.pdf | author:Andrd Kemp
-W99-0703 | Practical Bootstrapping of Morphological Analyzers | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0703.pdf | author:Kemal Oflazer; Sergei Nirenburg
-W99-0704 | Finding Representations for Memory-Based Language Learning | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0704.pdf | author:Stephan Raaijmakers
-W99-0705 | The u-TBL System: Logic Programming Tools for Transformation-Based Learning | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0705.pdf | author:Torbjorn Lager
-W99-0706 | Learning Transformation Rules to Find Grammatical Relations | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0706.pdf | author:Lisa Ferro; Marc Vilain; Alexander Yeh
-W99-0707 | Memory-Based Shallow Parsing | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0707.pdf | author:Walter Daelemans; Sabine Buchholz; Jorn Veenstra
-W99-0708 | MDL-based DCG Induction for NP Identification | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0708.pdf | author:Miles Osborne
+W99-0701 | Unsupervised Learning of Word Boundary with Description Length Gain | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0701.pdf | category:paper author:Chunyu Kitt; Yorick Wilks
+W99-0702 | Experiments in Unsupervised Entropy-Based Corpus Segmentation | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0702.pdf | category:paper author:Andrd Kemp
+W99-0703 | Practical Bootstrapping of Morphological Analyzers | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0703.pdf | category:paper author:Kemal Oflazer; Sergei Nirenburg
+W99-0704 | Finding Representations for Memory-Based Language Learning | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0704.pdf | category:paper author:Stephan Raaijmakers
+W99-0705 | The u-TBL System: Logic Programming Tools for Transformation-Based Learning | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0705.pdf | category:paper author:Torbjorn Lager
+W99-0706 | Learning Transformation Rules to Find Grammatical Relations | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0706.pdf | category:paper author:Lisa Ferro; Marc Vilain; Alexander Yeh
+W99-0707 | Memory-Based Shallow Parsing | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0707.pdf | category:paper author:Walter Daelemans; Sabine Buchholz; Jorn Veenstra
+W99-0708 | MDL-based DCG Induction for NP Identification | http://www.aclweb.org/anthology/K/K99/../../W/W99/W99-0708.pdf | category:paper author:Miles Osborne

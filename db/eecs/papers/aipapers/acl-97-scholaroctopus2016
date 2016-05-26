@@ -1,73 +1,73 @@
-P97-1001 | Interleaving Universal Principles and Relational Constraints over Typed Feature Logic | http://www.aclweb.org/anthology/P/P97/P97-1001.pdf | author:Thilo Gotz; Detmar Meurers
-P97-1002 | Fast Context-Free Parsing Requires Fast Boolean Matrix Multiplication | http://www.aclweb.org/anthology/P/P97/P97-1002.pdf | author:Lillian Lee
-P97-1003 | Three Generative, Lexicalised Models for Statistical Parsing | http://www.aclweb.org/anthology/P/P97/P97-1003.pdf | author:Michael Collins
-P97-1004 | Expansion of Multi- Word Terms for Indexing and Retrieval Using Morphology and Syntax | http://www.aclweb.org/anthology/P/P97/P97-1004.pdf | author:Christian Jacquemin; Judith L. Klavans; Evelyne Tzoukermann
-P97-1005 | Automatic Detection of Text Genre | http://www.aclweb.org/anthology/P/P97/P97-1005.pdf | author:Brett Kessler; Geoffrey Nunberg; Hinrich Schutze
-P97-1006 | Document Classification Using a Finite Mixture Model | http://www.aclweb.org/anthology/P/P97/P97-1006.pdf | author:Hang Li; Kenji Yamanishi
-P97-1007 | Combining Unsupervised Lexical Knowledge Methods for Word Sense Disambiguation | http://www.aclweb.org/anthology/P/P97/P97-1007.pdf | author:German Rigau; Jordi Atserias; Eneko Agirre
-P97-1008 | Similarity-Based Methods for Word Sense Disambiguation | http://www.aclweb.org/anthology/P/P97/P97-1008.pdf | author:Ido Dagan; Lillian Lee; Fernando Pereira
-P97-1009 | Using Syntactic Dependency as Local Context to Resolve Word Sense Ambiguity | http://www.aclweb.org/anthology/P/P97/P97-1009.pdf | author:Dekang Lin
-P97-1010 | Homonymy and Polysemy in Information Retrieval | http://www.aclweb.org/anthology/P/P97/P97-1010.pdf | author:Robert Krovetz
-P97-1011 | Learning Features that Predict Cue Usage | http://www.aclweb.org/anthology/P/P97/P97-1011.pdf | author:Barbara Di Eugenio; Johanna D. Moore; Massimo Paolucci
-P97-1012 | Expectations in Incremental Discourse Processing | http://www.aclweb.org/anthology/P/P97/P97-1012.pdf | author:Dan Cristea; Bonnie Webber
-P97-1013 | The Rhetorical Parsing of Unrestricted Natural Language Texts | http://www.aclweb.org/anthology/P/P97/P97-1013.pdf | author:Daniel Marcu
-P97-1014 | Centering in-the-Large: Computing Referential Discourse Segments | http://www.aclweb.org/anthology/P/P97/P97-1014.pdf | author:Udo Hahn; Michael Strube
-P97-1015 | Probing the Lexicon in Evaluating Commercial MT Systems | http://www.aclweb.org/anthology/P/P97/P97-1015.pdf | author:Martin Volk
-P97-1016 | Ambiguity Resolution for Machine Translation of Telegraphic Messages | http://www.aclweb.org/anthology/P/P97/P97-1016.pdf | author:Young-Suk Lee; Clifford Weinstein; Stephanie Seneff; Dinesh Tummala
-P97-1017 | Machine Transliteration | http://www.aclweb.org/anthology/P/P97/P97-1017.pdf | author:Kevin Knight; Jonathan Graehl
-P97-1018 | Intergrating Symbolic and Statistical Representations: The Lexicon Pragmatics Interface | http://www.aclweb.org/anthology/P/P97/P97-1018.pdf | author:Ann Copestake; Alex Lascarides
-P97-1019 | Negative Polarity Licensing at the Syntax-Semantics Interface | http://www.aclweb.org/anthology/P/P97/P97-1019.pdf | author:John Fry
-P97-1020 | Deriving Verbal and Compositonal Lexical Aspect for NLP Applications | http://www.aclweb.org/anthology/P/P97/P97-1020.pdf | author:Bonnie J. Dorr; Mari Broman Olsen
-P97-1021 | A DOP Model for Semantic Interpretation | http://www.aclweb.org/anthology/P/P97/P97-1021.pdf | author:Remko Bonnema; Rens Bod; Remko Scha
-P97-1022 | Fertility Models for Statistical Natural Language Understanding | http://www.aclweb.org/anthology/P/P97/P97-1022.pdf | author:Stephen Della Pietra; Mark Epstein; Salim Roukos; Todd Ward
-P97-1023 | Predicting the Semantic Orientation of Adjectives | http://www.aclweb.org/anthology/P/P97/P97-1023.pdf | author:Vasileios Hatzivassiloglou; Kathleen R. McKeown
-P97-1024 | Independence Assumptions Considered Harmful | http://www.aclweb.org/anthology/P/P97/P97-1024.pdf | author:Alexander Franz
-P97-1025 | Planning Reference Choices for Argumentative Teas | http://www.aclweb.org/anthology/P/P97/P97-1025.pdf | author:Xiaorong Huang
-P97-1026 | Sentence Planning as Description Using Tree Adjoining Grammar | http://www.aclweb.org/anthology/P/P97/P97-1026.pdf | author:Matthew Stone; Christine Doran
-P97-1027 | An Algorithm for Generating Referential Descriptions with Flexible Interfaces | http://www.aclweb.org/anthology/P/P97/P97-1027.pdf | author:Helmut Horacek
-P97-1028 | Applying Explanation-based Learning to Control and Speeding-up Natural Language Generation | http://www.aclweb.org/anthology/P/P97/P97-1028.pdf | author:Gunter Neumann
-P97-1029 | Morphological Disambiguation by Voting Constraints | http://www.aclweb.org/anthology/P/P97/P97-1029.pdf | author:Kemal Oflazer; Gokhan Tur
-P97-1030 | Mistake-Driven Mixture of Hierarchical Tag Context Trees | http://www.aclweb.org/anthology/P/P97/P97-1030.pdf | author:Masahiko Haruno; Yuji Matsumoto
-P97-1031 | A Flexible POS Tagger Using an Automatically Acquired Language Model | http://www.aclweb.org/anthology/P/P97/P97-1031.pdf | author:Lluis Marquez; Lluis Padro
-P97-1032 | Comparing a Linguistic and a Stochastic Tagger | http://www.aclweb.org/anthology/P/P97/P97-1032.pdf | author:Christer Samuelsson; Atro Voutilainen
-P97-1033 | Intonational Boundaries, Speech Repairs, and Discourse Markers: Modeling Spoken Dialog | http://www.aclweb.org/anthology/P/P97/P97-1033.pdf | author:Peter A. Heeman; James F. Allen
-P97-1034 | Tracking Initiative in Collaborative Dialogue Interactions | http://www.aclweb.org/anthology/P/P97/P97-1034.pdf | author:Jennifer Chu-Carroll; Michael K. Brown
-P97-1035 | PARADISE: A Framework for Evaluating Spoken Dialogue Agents | http://www.aclweb.org/anthology/P/P97/P97-1035.pdf | author:Marilyn A. Walker; Diane J. Litman; Candace A. Kamm; Alicia Abella
-P97-1036 | Unification-based Multimodal Integration | http://www.aclweb.org/anthology/P/P97/P97-1036.pdf | author:Michael Johnston; Philip R. Cohen; David McGee; Sharon L. Oviatt; James A. Pittman; Ira Smith
-P97-1037 | A DP-based Search Using Monotone Alignments in Statistical Translation | http://www.aclweb.org/anthology/P/P97/P97-1037.pdf | author:Christoph Tillmann; Stephan Vogel; Hermann Ney; Alex Zubiaga
-P97-1038 | An Alignment Method for Noisy Parallel Corpora based on Image Processing Techniques | http://www.aclweb.org/anthology/P/P97/P97-1038.pdf | author:Jason S. Chang; Mathis H. Chen
-P97-1039 | A Portable Algorithm for Mapping Bitext Correspondence | http://www.aclweb.org/anthology/P/P97/P97-1039.pdf | author:I. Dan Melamed
-P97-1040 | Efficient Generation in Primitive Optimality Theory | http://www.aclweb.org/anthology/P/P97/P97-1040.pdf | author:Jason Eisner
-P97-1041 | A Trainable Rule-Based Algorithm for Word Segmentation | http://www.aclweb.org/anthology/P/P97/P97-1041.pdf | author:David D. Palmer
-P97-1042 | Compiling Regular Formalisms with Rule Features into Finite-State Automata | http://www.aclweb.org/anthology/P/P97/P97-1042.pdf | author:George Anton Kiraz
-P97-1043 | The Complexity of Recognition of Linguistically Adequate Dependency Grammars | http://www.aclweb.org/anthology/P/P97/P97-1043.pdf | author:Peter Neuhaus; Norbert Broker
-P97-1044 | Maximal Incrementality in Linear Categorial Deduction | http://www.aclweb.org/anthology/P/P97/P97-1044.pdf | author:Mark Hepple
-P97-1045 | Automatic Extraction of Aspectual Information from a Monolingual Corpus | http://www.aclweb.org/anthology/P/P97/P97-1045.pdf | author:Akira Oishi; Yuji Matsumoto
-P97-1046 | A Comparison of Head Transducers and Transfer for a Limited Domain Translation Application | http://www.aclweb.org/anthology/P/P97/P97-1046.pdf | author:Hiyan Alshawi; Adam L. Buchsbaum; Fei Xia
-P97-1047 | Decoding Algorithm in Statistical Machine Translation | http://www.aclweb.org/anthology/P/P97/P97-1047.pdf | author:Ye-Yi Wang; Alex Waibel
-P97-1048 | A Model of Lexical Attraction and Repulsion | http://www.aclweb.org/anthology/P/P97/P97-1048.pdf | author:Doug Beeferman; Adam Berger; John Lafferty
-P97-1049 | Hierarchical Non-Emitting Markov Models | http://www.aclweb.org/anthology/P/P97/P97-1049.pdf | author:Eric Sven Ristad; Robert G. Thomas
-P97-1050 | Efficient Construction of Underspeci fled Semantics under Massive Ambiguity | http://www.aclweb.org/anthology/P/P97/P97-1050.pdf | author:Jochen Dörre
-P97-1051 | A Theory of Parallelism and the Case of VP Ellipsis | http://www.aclweb.org/anthology/P/P97/P97-1051.pdf | author:Jerry R. Hobbs; Andrew Kehler
-P97-1052 | On Interpreting F-Structures as UDRSs | http://www.aclweb.org/anthology/P/P97/P97-1052.pdf | author:Josef van Genabith; Richard Crouch
-P97-1053 | A Uniform Approach to Underspecification and Parallelism | http://www.aclweb.org/anthology/P/P97/P97-1053.pdf | author:Joachim Niehren; Manfred Pinkal; Peter Ruhrberg
-P97-1054 | Co-Evolution of Language and of the Language Acquisition Device | http://www.aclweb.org/anthology/P/P97/P97-1054.pdf | author:Ted Briscoe
-P97-1055 | Paradigmatic Cascades: A Linguistically Sound Model of Pronunciation by Analogy | http://www.aclweb.org/anthology/P/P97/P97-1055.pdf | author:François Yvon
-P97-1056 | Memory-Based Learning: Using Similarity for Smoothing | http://www.aclweb.org/anthology/P/P97/P97-1056.pdf | author:Jakub Zavrel; Walter Daelemans
-P97-1057 | String Transformation Learning | http://www.aclweb.org/anthology/P/P97/P97-1057.pdf | author:Giorgio Satta; John C. Henderson
-P97-1058 | Approximating Context-Free Grammars with a Finite-State Calculus | http://www.aclweb.org/anthology/P/P97/P97-1058.pdf | author:Edmund Grimley Evans
-P97-1059 | Finite State Transducers Approximating Hidden Markov Models | http://www.aclweb.org/anthology/P/P97/P97-1059.pdf | author:Andre Kempe
-P97-1060 | Representing Constraints with Automata | http://www.aclweb.org/anthology/P/P97/P97-1060.pdf | author:Frank Morawietz; Tom Cornell
-P97-1061 | Retrieving Collocations by Co-Occurrences and Word Order Constraints | http://www.aclweb.org/anthology/P/P97/P97-1061.pdf | author:Sayori Shimohata; Toshiyuki Sugio; Junji Nagata
-P97-1062 | Learning Parse and Translation Decisions from Examples with Rich Context | http://www.aclweb.org/anthology/P/P97/P97-1062.pdf | author:Ulf Hermjakob; Raymond J. Mooney
-P97-1063 | A Word-to-Word Model of Translational Equivalence | http://www.aclweb.org/anthology/P/P97/P97-1063.pdf | author:I. Dan Melamed
-P97-1064 | A Structured Language Model | http://www.aclweb.org/anthology/P/P97/P97-1064.pdf | author:Ciprian Chelba
-P97-1065 | Incorporating Context Information for the Extraction of Terms | http://www.aclweb.org/anthology/P/P97/P97-1065.pdf | author:Katerina T. Frantzi
-P97-1066 | Knowledge Acquisition from Texts: Using an Automatic Clustering Method Based on Noun-Modifier Relationship | http://www.aclweb.org/anthology/P/P97/P97-1066.pdf | author:Houssem Assadi
-P97-1067 | Choosing the Word Most Typical in Context Using a Lexical Co-occurrence Network | http://www.aclweb.org/anthology/P/P97/P97-1067.pdf | author:Philip Edmonds
-P97-1068 | Improving Translation through Contextual Information | http://www.aclweb.org/anthology/P/P97/P97-1068.pdf | author:Maite Taboada
-P97-1069 | Generative Power of CCGs with Generalized Type-Raised Categories | http://www.aclweb.org/anthology/P/P97/P97-1069.pdf | author:Nobo Komagata
-P97-1070 | Representing Paraphrases Using Synchronous TAGS | http://www.aclweb.org/anthology/P/P97/P97-1070.pdf | author:Mark Dras
-P97-1071 | Contrastive accent in a data-to-speech system | http://www.aclweb.org/anthology/P/P97/P97-1071.pdf | author:Mariet Theune
-P97-1072 | Towards resolution of bridging descriptions | http://www.aclweb.org/anthology/P/P97/P97-1072.pdf | author:Renata Vieira; Simone Teufel
-P97-1073 | Compositional Semantics of German Prefix Verbs | http://www.aclweb.org/anthology/P/P97/P97-1073.pdf | author:Maria Wolters
+P97-1001 | Interleaving Universal Principles and Relational Constraints over Typed Feature Logic | http://www.aclweb.org/anthology/P/P97/P97-1001.pdf | category:paper author:Thilo Gotz; Detmar Meurers
+P97-1002 | Fast Context-Free Parsing Requires Fast Boolean Matrix Multiplication | http://www.aclweb.org/anthology/P/P97/P97-1002.pdf | category:paper author:Lillian Lee
+P97-1003 | Three Generative, Lexicalised Models for Statistical Parsing | http://www.aclweb.org/anthology/P/P97/P97-1003.pdf | category:paper author:Michael Collins
+P97-1004 | Expansion of Multi- Word Terms for Indexing and Retrieval Using Morphology and Syntax | http://www.aclweb.org/anthology/P/P97/P97-1004.pdf | category:paper author:Christian Jacquemin; Judith L. Klavans; Evelyne Tzoukermann
+P97-1005 | Automatic Detection of Text Genre | http://www.aclweb.org/anthology/P/P97/P97-1005.pdf | category:paper author:Brett Kessler; Geoffrey Nunberg; Hinrich Schutze
+P97-1006 | Document Classification Using a Finite Mixture Model | http://www.aclweb.org/anthology/P/P97/P97-1006.pdf | category:paper author:Hang Li; Kenji Yamanishi
+P97-1007 | Combining Unsupervised Lexical Knowledge Methods for Word Sense Disambiguation | http://www.aclweb.org/anthology/P/P97/P97-1007.pdf | category:paper author:German Rigau; Jordi Atserias; Eneko Agirre
+P97-1008 | Similarity-Based Methods for Word Sense Disambiguation | http://www.aclweb.org/anthology/P/P97/P97-1008.pdf | category:paper author:Ido Dagan; Lillian Lee; Fernando Pereira
+P97-1009 | Using Syntactic Dependency as Local Context to Resolve Word Sense Ambiguity | http://www.aclweb.org/anthology/P/P97/P97-1009.pdf | category:paper author:Dekang Lin
+P97-1010 | Homonymy and Polysemy in Information Retrieval | http://www.aclweb.org/anthology/P/P97/P97-1010.pdf | category:paper author:Robert Krovetz
+P97-1011 | Learning Features that Predict Cue Usage | http://www.aclweb.org/anthology/P/P97/P97-1011.pdf | category:paper author:Barbara Di Eugenio; Johanna D. Moore; Massimo Paolucci
+P97-1012 | Expectations in Incremental Discourse Processing | http://www.aclweb.org/anthology/P/P97/P97-1012.pdf | category:paper author:Dan Cristea; Bonnie Webber
+P97-1013 | The Rhetorical Parsing of Unrestricted Natural Language Texts | http://www.aclweb.org/anthology/P/P97/P97-1013.pdf | category:paper author:Daniel Marcu
+P97-1014 | Centering in-the-Large: Computing Referential Discourse Segments | http://www.aclweb.org/anthology/P/P97/P97-1014.pdf | category:paper author:Udo Hahn; Michael Strube
+P97-1015 | Probing the Lexicon in Evaluating Commercial MT Systems | http://www.aclweb.org/anthology/P/P97/P97-1015.pdf | category:paper author:Martin Volk
+P97-1016 | Ambiguity Resolution for Machine Translation of Telegraphic Messages | http://www.aclweb.org/anthology/P/P97/P97-1016.pdf | category:paper author:Young-Suk Lee; Clifford Weinstein; Stephanie Seneff; Dinesh Tummala
+P97-1017 | Machine Transliteration | http://www.aclweb.org/anthology/P/P97/P97-1017.pdf | category:paper author:Kevin Knight; Jonathan Graehl
+P97-1018 | Intergrating Symbolic and Statistical Representations: The Lexicon Pragmatics Interface | http://www.aclweb.org/anthology/P/P97/P97-1018.pdf | category:paper author:Ann Copestake; Alex Lascarides
+P97-1019 | Negative Polarity Licensing at the Syntax-Semantics Interface | http://www.aclweb.org/anthology/P/P97/P97-1019.pdf | category:paper author:John Fry
+P97-1020 | Deriving Verbal and Compositonal Lexical Aspect for NLP Applications | http://www.aclweb.org/anthology/P/P97/P97-1020.pdf | category:paper author:Bonnie J. Dorr; Mari Broman Olsen
+P97-1021 | A DOP Model for Semantic Interpretation | http://www.aclweb.org/anthology/P/P97/P97-1021.pdf | category:paper author:Remko Bonnema; Rens Bod; Remko Scha
+P97-1022 | Fertility Models for Statistical Natural Language Understanding | http://www.aclweb.org/anthology/P/P97/P97-1022.pdf | category:paper author:Stephen Della Pietra; Mark Epstein; Salim Roukos; Todd Ward
+P97-1023 | Predicting the Semantic Orientation of Adjectives | http://www.aclweb.org/anthology/P/P97/P97-1023.pdf | category:paper author:Vasileios Hatzivassiloglou; Kathleen R. McKeown
+P97-1024 | Independence Assumptions Considered Harmful | http://www.aclweb.org/anthology/P/P97/P97-1024.pdf | category:paper author:Alexander Franz
+P97-1025 | Planning Reference Choices for Argumentative Teas | http://www.aclweb.org/anthology/P/P97/P97-1025.pdf | category:paper author:Xiaorong Huang
+P97-1026 | Sentence Planning as Description Using Tree Adjoining Grammar | http://www.aclweb.org/anthology/P/P97/P97-1026.pdf | category:paper author:Matthew Stone; Christine Doran
+P97-1027 | An Algorithm for Generating Referential Descriptions with Flexible Interfaces | http://www.aclweb.org/anthology/P/P97/P97-1027.pdf | category:paper author:Helmut Horacek
+P97-1028 | Applying Explanation-based Learning to Control and Speeding-up Natural Language Generation | http://www.aclweb.org/anthology/P/P97/P97-1028.pdf | category:paper author:Gunter Neumann
+P97-1029 | Morphological Disambiguation by Voting Constraints | http://www.aclweb.org/anthology/P/P97/P97-1029.pdf | category:paper author:Kemal Oflazer; Gokhan Tur
+P97-1030 | Mistake-Driven Mixture of Hierarchical Tag Context Trees | http://www.aclweb.org/anthology/P/P97/P97-1030.pdf | category:paper author:Masahiko Haruno; Yuji Matsumoto
+P97-1031 | A Flexible POS Tagger Using an Automatically Acquired Language Model | http://www.aclweb.org/anthology/P/P97/P97-1031.pdf | category:paper author:Lluis Marquez; Lluis Padro
+P97-1032 | Comparing a Linguistic and a Stochastic Tagger | http://www.aclweb.org/anthology/P/P97/P97-1032.pdf | category:paper author:Christer Samuelsson; Atro Voutilainen
+P97-1033 | Intonational Boundaries, Speech Repairs, and Discourse Markers: Modeling Spoken Dialog | http://www.aclweb.org/anthology/P/P97/P97-1033.pdf | category:paper author:Peter A. Heeman; James F. Allen
+P97-1034 | Tracking Initiative in Collaborative Dialogue Interactions | http://www.aclweb.org/anthology/P/P97/P97-1034.pdf | category:paper author:Jennifer Chu-Carroll; Michael K. Brown
+P97-1035 | PARADISE: A Framework for Evaluating Spoken Dialogue Agents | http://www.aclweb.org/anthology/P/P97/P97-1035.pdf | category:paper author:Marilyn A. Walker; Diane J. Litman; Candace A. Kamm; Alicia Abella
+P97-1036 | Unification-based Multimodal Integration | http://www.aclweb.org/anthology/P/P97/P97-1036.pdf | category:paper author:Michael Johnston; Philip R. Cohen; David McGee; Sharon L. Oviatt; James A. Pittman; Ira Smith
+P97-1037 | A DP-based Search Using Monotone Alignments in Statistical Translation | http://www.aclweb.org/anthology/P/P97/P97-1037.pdf | category:paper author:Christoph Tillmann; Stephan Vogel; Hermann Ney; Alex Zubiaga
+P97-1038 | An Alignment Method for Noisy Parallel Corpora based on Image Processing Techniques | http://www.aclweb.org/anthology/P/P97/P97-1038.pdf | category:paper author:Jason S. Chang; Mathis H. Chen
+P97-1039 | A Portable Algorithm for Mapping Bitext Correspondence | http://www.aclweb.org/anthology/P/P97/P97-1039.pdf | category:paper author:I. Dan Melamed
+P97-1040 | Efficient Generation in Primitive Optimality Theory | http://www.aclweb.org/anthology/P/P97/P97-1040.pdf | category:paper author:Jason Eisner
+P97-1041 | A Trainable Rule-Based Algorithm for Word Segmentation | http://www.aclweb.org/anthology/P/P97/P97-1041.pdf | category:paper author:David D. Palmer
+P97-1042 | Compiling Regular Formalisms with Rule Features into Finite-State Automata | http://www.aclweb.org/anthology/P/P97/P97-1042.pdf | category:paper author:George Anton Kiraz
+P97-1043 | The Complexity of Recognition of Linguistically Adequate Dependency Grammars | http://www.aclweb.org/anthology/P/P97/P97-1043.pdf | category:paper author:Peter Neuhaus; Norbert Broker
+P97-1044 | Maximal Incrementality in Linear Categorial Deduction | http://www.aclweb.org/anthology/P/P97/P97-1044.pdf | category:paper author:Mark Hepple
+P97-1045 | Automatic Extraction of Aspectual Information from a Monolingual Corpus | http://www.aclweb.org/anthology/P/P97/P97-1045.pdf | category:paper author:Akira Oishi; Yuji Matsumoto
+P97-1046 | A Comparison of Head Transducers and Transfer for a Limited Domain Translation Application | http://www.aclweb.org/anthology/P/P97/P97-1046.pdf | category:paper author:Hiyan Alshawi; Adam L. Buchsbaum; Fei Xia
+P97-1047 | Decoding Algorithm in Statistical Machine Translation | http://www.aclweb.org/anthology/P/P97/P97-1047.pdf | category:paper author:Ye-Yi Wang; Alex Waibel
+P97-1048 | A Model of Lexical Attraction and Repulsion | http://www.aclweb.org/anthology/P/P97/P97-1048.pdf | category:paper author:Doug Beeferman; Adam Berger; John Lafferty
+P97-1049 | Hierarchical Non-Emitting Markov Models | http://www.aclweb.org/anthology/P/P97/P97-1049.pdf | category:paper author:Eric Sven Ristad; Robert G. Thomas
+P97-1050 | Efficient Construction of Underspeci fled Semantics under Massive Ambiguity | http://www.aclweb.org/anthology/P/P97/P97-1050.pdf | category:paper author:Jochen Dörre
+P97-1051 | A Theory of Parallelism and the Case of VP Ellipsis | http://www.aclweb.org/anthology/P/P97/P97-1051.pdf | category:paper author:Jerry R. Hobbs; Andrew Kehler
+P97-1052 | On Interpreting F-Structures as UDRSs | http://www.aclweb.org/anthology/P/P97/P97-1052.pdf | category:paper author:Josef van Genabith; Richard Crouch
+P97-1053 | A Uniform Approach to Underspecification and Parallelism | http://www.aclweb.org/anthology/P/P97/P97-1053.pdf | category:paper author:Joachim Niehren; Manfred Pinkal; Peter Ruhrberg
+P97-1054 | Co-Evolution of Language and of the Language Acquisition Device | http://www.aclweb.org/anthology/P/P97/P97-1054.pdf | category:paper author:Ted Briscoe
+P97-1055 | Paradigmatic Cascades: A Linguistically Sound Model of Pronunciation by Analogy | http://www.aclweb.org/anthology/P/P97/P97-1055.pdf | category:paper author:François Yvon
+P97-1056 | Memory-Based Learning: Using Similarity for Smoothing | http://www.aclweb.org/anthology/P/P97/P97-1056.pdf | category:paper author:Jakub Zavrel; Walter Daelemans
+P97-1057 | String Transformation Learning | http://www.aclweb.org/anthology/P/P97/P97-1057.pdf | category:paper author:Giorgio Satta; John C. Henderson
+P97-1058 | Approximating Context-Free Grammars with a Finite-State Calculus | http://www.aclweb.org/anthology/P/P97/P97-1058.pdf | category:paper author:Edmund Grimley Evans
+P97-1059 | Finite State Transducers Approximating Hidden Markov Models | http://www.aclweb.org/anthology/P/P97/P97-1059.pdf | category:paper author:Andre Kempe
+P97-1060 | Representing Constraints with Automata | http://www.aclweb.org/anthology/P/P97/P97-1060.pdf | category:paper author:Frank Morawietz; Tom Cornell
+P97-1061 | Retrieving Collocations by Co-Occurrences and Word Order Constraints | http://www.aclweb.org/anthology/P/P97/P97-1061.pdf | category:paper author:Sayori Shimohata; Toshiyuki Sugio; Junji Nagata
+P97-1062 | Learning Parse and Translation Decisions from Examples with Rich Context | http://www.aclweb.org/anthology/P/P97/P97-1062.pdf | category:paper author:Ulf Hermjakob; Raymond J. Mooney
+P97-1063 | A Word-to-Word Model of Translational Equivalence | http://www.aclweb.org/anthology/P/P97/P97-1063.pdf | category:paper author:I. Dan Melamed
+P97-1064 | A Structured Language Model | http://www.aclweb.org/anthology/P/P97/P97-1064.pdf | category:paper author:Ciprian Chelba
+P97-1065 | Incorporating Context Information for the Extraction of Terms | http://www.aclweb.org/anthology/P/P97/P97-1065.pdf | category:paper author:Katerina T. Frantzi
+P97-1066 | Knowledge Acquisition from Texts: Using an Automatic Clustering Method Based on Noun-Modifier Relationship | http://www.aclweb.org/anthology/P/P97/P97-1066.pdf | category:paper author:Houssem Assadi
+P97-1067 | Choosing the Word Most Typical in Context Using a Lexical Co-occurrence Network | http://www.aclweb.org/anthology/P/P97/P97-1067.pdf | category:paper author:Philip Edmonds
+P97-1068 | Improving Translation through Contextual Information | http://www.aclweb.org/anthology/P/P97/P97-1068.pdf | category:paper author:Maite Taboada
+P97-1069 | Generative Power of CCGs with Generalized Type-Raised Categories | http://www.aclweb.org/anthology/P/P97/P97-1069.pdf | category:paper author:Nobo Komagata
+P97-1070 | Representing Paraphrases Using Synchronous TAGS | http://www.aclweb.org/anthology/P/P97/P97-1070.pdf | category:paper author:Mark Dras
+P97-1071 | Contrastive accent in a data-to-speech system | http://www.aclweb.org/anthology/P/P97/P97-1071.pdf | category:paper author:Mariet Theune
+P97-1072 | Towards resolution of bridging descriptions | http://www.aclweb.org/anthology/P/P97/P97-1072.pdf | category:paper author:Renata Vieira; Simone Teufel
+P97-1073 | Compositional Semantics of German Prefix Verbs | http://www.aclweb.org/anthology/P/P97/P97-1073.pdf | category:paper author:Maria Wolters

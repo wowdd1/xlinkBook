@@ -1,116 +1,116 @@
-E12-1001 | Speech Communication in the Wild | http://www.aclweb.org/anthology/E/E12/E12-1001.pdf | author:Martin Cooke
-E12-1002 | Power-Law Distributions for Paraphrases Extracted from Bilingual Corpora | http://www.aclweb.org/anthology/E/E12/E12-1002.pdf | author:Spyros Martzoukos; Christof Monz
-E12-1003 | A Bayesian Approach to Unsupervised Semantic Role Induction | http://www.aclweb.org/anthology/E/E12/E12-1003.pdf | author:Ivan Titov; Alexandre Klementiev
-E12-1004 | Entailment above the word level in distributional semantics | http://www.aclweb.org/anthology/E/E12/E12-1004.pdf | author:Marco Baroni; Raffaella Bernardi; Ngoc-Quynh Do; Chung-chieh Shan
-E12-1005 | Evaluating Distributional Models of Semantics for Syntactically Invariant Inference | http://www.aclweb.org/anthology/E/E12/E12-1005.pdf | author:Jackie Chi Kit Cheung; Gerald Penn
-E12-1006 | Cross-Framework Evaluation for Statistical Parsing | http://www.aclweb.org/anthology/E/E12/E12-1006.pdf | author:Reut Tsarfaty; Joakim Nivre; Evelina Andersson
-E12-1007 | Dependency Parsing of Hungarian: Baseline Results and Challenges | http://www.aclweb.org/anthology/E/E12/E12-1007.pdf | author:Richárd Farkas; Veronika Vincze; Helmut Schmid
-E12-1008 | Dependency Parsing with Undirected Graphs | http://www.aclweb.org/anthology/E/E12/E12-1008.pdf | author:Carlos Gómez-Rodríguez; Daniel Fernández-González
-E12-1009 | The Best of BothWorlds – A Graph-based Completion Model for Transition-based Parsers | http://www.aclweb.org/anthology/E/E12/E12-1009.pdf | author:Bernd Bohnet; Jonas Kuhn
-E12-1010 | Answer Sentence Retrieval by Matching Dependency Paths acquired from Question/Answer Sentence Pairs | http://www.aclweb.org/anthology/E/E12/E12-1010.pdf | author:Michael Kaisser
-E12-1011 | Can Click Patterns across User’s Query Logs Predict Answers to Definition Questions? | http://www.aclweb.org/anthology/E/E12/E12-1011.pdf | author:Alejandro Figueroa
-E12-1012 | Adaptation of Statistical Machine Translation Model for Cross-Lingual Information Retrieval in a Service Context | http://www.aclweb.org/anthology/E/E12/E12-1012.pdf | author:Vassilina Nikoulina; Bogomil Kovachev; Nikolaos Lagos; Christof Monz
-E12-1013 | Computing Lattice BLEU Oracle Scores for Machine Translation | http://www.aclweb.org/anthology/E/E12/E12-1013.pdf | author:Artem Sokolov; Guillaume Wisniewski; Francois Yvon
-E12-1014 | Toward Statistical Machine Translation without Parallel Corpora | http://www.aclweb.org/anthology/E/E12/E12-1014.pdf | author:Alexandre Klementiev; Ann Irvine; Chris Callison-Burch; David Yarowsky
-E12-1015 | Character-Based Pivot Translation for Under-Resourced Languages and Domains | http://www.aclweb.org/anthology/E/E12/E12-1015.pdf | author:Jörg Tiedemann
-E12-1016 | Does more data always yield better translations? | http://www.aclweb.org/anthology/E/E12/E12-1016.pdf | author:Guillem Gascó; Martha-Alicia Rocha; Germán Sanchis-Trilles; Jesús Andrés-Ferrer; Francisco Casacuberta
-E12-1017 | Recall-Oriented Learning of Named Entities in Arabic Wikipedia | http://www.aclweb.org/anthology/E/E12/E12-1017.pdf | author:Behrang Mohit; Nathan Schneider; Rishav Bhowmick; Kemal Oflazer; Noah A. Smith
-E12-1018 | Tree Representations in Probabilistic Models for Extended Named Entities Detection | http://www.aclweb.org/anthology/E/E12/E12-1018.pdf | author:Marco Dinarelli; Sophie Rosset
-E12-1019 | When Did that Happen? â Linking Events and Relations to Timestamps | http://www.aclweb.org/anthology/E/E12/E12-1019.pdf | author:Dirk Hovy; James Fan; Alfio Gliozzo; Siddharth Patwardhan; Christopher Welty
-E12-1020 | Compensating for Annotation Errors in Training a Relation Extractor | http://www.aclweb.org/anthology/E/E12/E12-1020.pdf | author:Bonan Min; Ralph Grishman
-E12-1021 | Incorporating Lexical Priors into Topic Models | http://www.aclweb.org/anthology/E/E12/E12-1021.pdf | author:Jagadeesh Jagarlamudi; Hal Daume III; Raghavendra Udupa
-E12-1022 | DualSum: a Topic-Model based approach for update summarization | http://www.aclweb.org/anthology/E/E12/E12-1022.pdf | author:Jean-Yves Delort; Enrique Alfonseca
-E12-1023 | Large-Margin Learning of Submodular Summarization Models | http://www.aclweb.org/anthology/E/E12/E12-1023.pdf | author:Ruben Sipos; Pannaga Shivaswamy; Thorsten Joachims
-E12-1024 | A Probabilistic Model of Syntactic and Semantic Acquisition from Child-Directed Utterances and their Meanings | http://www.aclweb.org/anthology/E/E12/E12-1024.pdf | author:Tom Kwiatkowski; Sharon Goldwater; Luke Zettlemoyer; Mark Steedman
-E12-1025 | Active learning for interactive machine translation | http://www.aclweb.org/anthology/E/E12/E12-1025.pdf | author:Jesús González-Rubio; Daniel Ortiz-Martínez; Francisco Casacuberta
-E12-1026 | Adapting Translation Models to Translationese Improves SMT | http://www.aclweb.org/anthology/E/E12/E12-1026.pdf | author:Gennadi Lembersky; Noam Ordan; Shuly Wintner
-E12-1027 | Aspectual Type and Temporal Relation Classification | http://www.aclweb.org/anthology/E/E12/E12-1027.pdf | author:Francisco Costa; António Branco
-E12-1028 | Automatic generation of short informative sentiment summaries | http://www.aclweb.org/anthology/E/E12/E12-1028.pdf | author:Andrea Glaser; Hinrich Schütze
-E12-1029 | Bootstrapped Training of Event Extraction Classifiers | http://www.aclweb.org/anthology/E/E12/E12-1029.pdf | author:Ruihong Huang; Ellen Riloff
-E12-1030 | Bootstrapping Events and Relations from Text | http://www.aclweb.org/anthology/E/E12/E12-1030.pdf | author:Ting Liu; Tomek Strzalkowski
-E12-1031 | CLex: A Lexicon for Exploring Color, Concept and Emotion Associations in Language | http://www.aclweb.org/anthology/E/E12/E12-1031.pdf | author:Svitlana Volkova; William B. Dolan; Theresa Wilson
-E12-1032 | Extending the Entity-based Coherence Model with Multiple Ranks | http://www.aclweb.org/anthology/E/E12/E12-1032.pdf | author:Vanessa Wei Feng; Graeme Hirst
-E12-1033 | Generalization Methods for In-Domain and Cross-Domain Opinion Holder Extraction | http://www.aclweb.org/anthology/E/E12/E12-1033.pdf | author:Michael Wiegand; Dietrich Klakow
-E12-1034 | Skip N-grams and Ranking Functions for Predicting Script Events | http://www.aclweb.org/anthology/E/E12/E12-1034.pdf | author:Bram Jans; Steven Bethard; Ivan Vulić; Marie-Francine Moens
-E12-1035 | The Problem with Kappa | http://www.aclweb.org/anthology/E/E12/E12-1035.pdf | author:David Martin Ward Powers
-E12-1036 | User Edits Classification Using Document Revision Histories | http://www.aclweb.org/anthology/E/E12/E12-1036.pdf | author:Amit Bronner; Christof Monz
-E12-1037 | User Participation Prediction in Online Forums | http://www.aclweb.org/anthology/E/E12/E12-1037.pdf | author:Zhonghua Qu; Yang Liu
-E12-1038 | Inferring Selectional Preferences from Part-Of-Speech N-grams | http://www.aclweb.org/anthology/E/E12/E12-1038.pdf | author:Hyeju Jang; Jack Mostow
-E12-1039 | WebCAGe – A Web-Harvested Corpus Annotated with GermaNet Senses | http://www.aclweb.org/anthology/E/E12/E12-1039.pdf | author:Verena Henrich; Erhard Hinrichs; Tatiana Vodolazova
-E12-1040 | Learning to Behave by Reading | http://www.aclweb.org/anthology/E/E12/E12-1040.pdf | author:Regina Barzilay
-E12-1041 | Lexical surprisal as a general predictor of reading time | http://www.aclweb.org/anthology/E/E12/E12-1041.pdf | author:Irene Fernandez Monsalve; Stefan L. Frank; Gabriella Vigliocco
-E12-1042 | Spectral Learning for Non-Deterministic Dependency Parsing | http://www.aclweb.org/anthology/E/E12/E12-1042.pdf | author:Franco M. Luque; Ariadna Quattoni; Borja Balle; Xavier Carreras
-E12-1043 | Combining Tree Structures, Flat Features and Patterns for Biomedical Relation Extraction | http://www.aclweb.org/anthology/E/E12/E12-1043.pdf | author:Md. Faisal Mahbub Chowdhury; Alberto Lavelli
-E12-1044 | Coordination Structure Analysis using Dual Decomposition | http://www.aclweb.org/anthology/E/E12/E12-1044.pdf | author:Atsushi Hanamoto; Takuya Matsuzaki; Jun’ichi Tsujii
-E12-1045 | Cutting the Long Tail: Hybrid Language Models for Translation Style Adaptation | http://www.aclweb.org/anthology/E/E12/E12-1045.pdf | author:Arianna Bisazza; Marcello Federico
-E12-1046 | Detecting Highly Confident Word Translations from Comparable Corpora without Any Prior Knowledge | http://www.aclweb.org/anthology/E/E12/E12-1046.pdf | author:Ivan Vulić; Marie-Francine Moens
-E12-1047 | Efficient parsing with Linear Context-Free Rewriting Systems | http://www.aclweb.org/anthology/E/E12/E12-1047.pdf | author:Andreas van Cranenburgh
-E12-1048 | Evaluating language understanding accuracy with respect to objective outcomes in a dialogue system | http://www.aclweb.org/anthology/E/E12/E12-1048.pdf | author:Myroslava O. Dzikovska; Peter Bell; Amy Isard; Johanna D. Moore
-E12-1049 | Experimenting with Distant Supervision for Emotion Classification | http://www.aclweb.org/anthology/E/E12/E12-1049.pdf | author:Matthew Purver; Stuart Battersby
-E12-1050 | Feature-Rich Part-of-speech Tagging for Morphologically Complex Languages: Application to Bulgarian | http://www.aclweb.org/anthology/E/E12/E12-1050.pdf | author:Georgi Georgiev; Valentin Zhikov; Kiril Simov; Petya Osenova; Preslav Nakov
-E12-1051 | Instance-Driven Attachment of Semantic Annotations over Conceptual Hierarchies | http://www.aclweb.org/anthology/E/E12/E12-1051.pdf | author:Janara Christensen; Marius Pasca
-E12-1052 | Joint Satisfaction of Syntactic and Pragmatic Constraints Improves Incremental Spoken Language Understanding | http://www.aclweb.org/anthology/E/E12/E12-1052.pdf | author:Andreas Peldszus; Okko Buß; Timo Baumann; David Schlangen
-E12-1053 | Learning How to Conjugate the Romanian Verb. Rules for Regular and Partially Irregular Verbs | http://www.aclweb.org/anthology/E/E12/E12-1053.pdf | author:Liviu P. Dinu; Vlad Niculae; Octavia-Maria Sulea
-E12-1054 | Measuring Contextual Fitness Using Error Contexts Extracted from the Wikipedia Revision History | http://www.aclweb.org/anthology/E/E12/E12-1054.pdf | author:Torsten Zesch
-E12-1055 | Perplexity Minimization for Translation Model Domain Adaptation in Statistical Machine Translation | http://www.aclweb.org/anthology/E/E12/E12-1055.pdf | author:Rico Sennrich
-E12-1056 | Subcat-LMF: Fleshing out a standardized format for subcategorization frame interoperability | http://www.aclweb.org/anthology/E/E12/E12-1056.pdf | author:Judith Eckle-Kohler; Iryna Gurevych
-E12-1057 | The effect of domain and text type on text prediction quality | http://www.aclweb.org/anthology/E/E12/E12-1057.pdf | author:Suzan Verberne; Antal van den Bosch; Helmer Strik; Lou Boves
-E12-1058 | The Impact of Spelling Errors on Patent Search | http://www.aclweb.org/anthology/E/E12/E12-1058.pdf | author:Benno Stein; Dennis Hoppe; Tim Gollub
-E12-1059 | UBY - A Large-Scale Unified Lexical-Semantic Resource Based on LMF | http://www.aclweb.org/anthology/E/E12/E12-1059.pdf | author:Iryna Gurevych; Judith Eckle-Kohler; Silvana Hartmann; Michael Matuschek; Christian M. Meyer; Christian Wirth
-E12-1060 | Word Sense Induction for Novel Sense Detection | http://www.aclweb.org/anthology/E/E12/E12-1060.pdf | author:Jey Han Lau; Paul Cook; Diana McCarthy; David Newman; Timothy Baldwin
-E12-1061 | Learning Language from Perceptual Context | http://www.aclweb.org/anthology/E/E12/E12-1061.pdf | author:Raymond Mooney
-E12-1062 | Learning for Microblogs with Distant Supervision: Political Forecasting with Twitter | http://www.aclweb.org/anthology/E/E12/E12-1062.pdf | author:Micol Marchetti-Bowick; Nathanael Chambers
-E12-1063 | Learning from evolving data streams: online triage of bug reports | http://www.aclweb.org/anthology/E/E12/E12-1063.pdf | author:Grzegorz Chrupala
-E12-1064 | Towards a model of formal and informal address in English | http://www.aclweb.org/anthology/E/E12/E12-1064.pdf | author:Manaal Faruqui; Sebastian Pado
-E12-1065 | Character-based kernels for novelistic plot structure | http://www.aclweb.org/anthology/E/E12/E12-1065.pdf | author:Micha Elsner
-E12-1066 | Smart Paradigms and the Predictability and Complexity of Inflectional Morphology | http://www.aclweb.org/anthology/E/E12/E12-1066.pdf | author:Grégoire Détrez; Aarne Ranta
-E12-1067 | Probabilistic Hierarchical Clustering of Morphological Paradigms | http://www.aclweb.org/anthology/E/E12/E12-1067.pdf | author:Burcu Can; Suresh Manandhar
-E12-1068 | Modeling Inflection and Word-Formation in SMT | http://www.aclweb.org/anthology/E/E12/E12-1068.pdf | author:Alexander Fraser; Marion Weller; Aoife Cahill; Fabienne Cap
-E12-1069 | Identifying Broken Plurals, Irregular Gender, and Rationality in Arabic Text | http://www.aclweb.org/anthology/E/E12/E12-1069.pdf | author:Sarah Alkuhlani; Nizar Habash
-E12-1070 | Framework of Semantic Role Assignment based on Extended Lexical Conceptual Structure: Comparison with VerbNet and FrameNet | http://www.aclweb.org/anthology/E/E12/E12-1070.pdf | author:Yuichiroh Matsubayashi; Yusuke Miyao; Akiko Aizawa
-E12-1071 | Unsupervised Detection of Downward-Entailing Operators By Maximizing Classification Certainty | http://www.aclweb.org/anthology/E/E12/E12-1071.pdf | author:Jackie Chi Kit Cheung; Gerald Penn
-E12-1072 | Elliphant: Improved Automatic Detection of Zero Subjects and Impersonal Constructions in Spanish | http://www.aclweb.org/anthology/E/E12/E12-1072.pdf | author:Luz Rello; Ricardo Baeza-Yates; Ruslan Mitkov
-E12-1073 | Validation of sub-sentential paraphrases acquired from parallel monolingual corpora | http://www.aclweb.org/anthology/E/E12/E12-1073.pdf | author:Houda Bouamor; Aurélien Max; Anne Vilnat
-E12-1074 | Determining the placement of German verbs in English–to–German SMT | http://www.aclweb.org/anthology/E/E12/E12-1074.pdf | author:Anita Gojun; Alexander Fraser
-E12-1075 | Syntax-Based Word Ordering Incorporating a Large-Scale Language Model | http://www.aclweb.org/anthology/E/E12/E12-1075.pdf | author:Yue Zhang; Graeme Blackwood; Stephen Clark
-E12-1076 | Midge: Generating Image Descriptions From Computer Vision Detections | http://www.aclweb.org/anthology/E/E12/E12-1076.pdf | author:Margaret Mitchell; Jesse Dodge; Amit Goyal; Kota Yamaguchi; Karl Stratos; Xufeng Han; Alyssa Mensch; Alex Berg; Tamara Berg; Hal Daume III
-E12-1077 | Generation of landmark-based navigation instructions from open-source data | http://www.aclweb.org/anthology/E/E12/E12-1077.pdf | author:Markus Dräger; Alexander Koller
-E12-1078 | To what extent does sentence-internal realisation reflect discourse context? A study on word order | http://www.aclweb.org/anthology/E/E12/E12-1078.pdf | author:Sina Zarrieß; Aoife Cahill; Jonas Kuhn
-E12-1079 | Behind the Article: Recognizing Dialog Acts in Wikipedia Talk Pages | http://www.aclweb.org/anthology/E/E12/E12-1079.pdf | author:Oliver Ferschke; Iryna Gurevych; Yevgen Chebotar
-E12-1080 | An Unsupervised Dynamic Bayesian Network Approach to Measuring Speech Style Accommodation | http://www.aclweb.org/anthology/E/E12/E12-1080.pdf | author:Mahaveer Jain; John McDonough; Gahgene Gweon; Bhiksha Raj; Carolyn Penstein Rosé
-E12-1081 | Learning the Fine-Grained Information Status of Discourse Entities | http://www.aclweb.org/anthology/E/E12/E12-1081.pdf | author:Altaf Rahman; Vincent Ng
-E12-1082 | Composing extended top-down tree transducers | http://www.aclweb.org/anthology/E/E12/E12-1082.pdf | author:Aurelie Lagoutte; Fabienne Braune; Daniel Quernheim; Andreas Maletti
-E12-1083 | Structural and Topical Dimensions in Multi-Task Patent Translation | http://www.aclweb.org/anthology/E/E12/E12-1083.pdf | author:Katharina Waeschle; Stefan Riezler
-E12-1084 | Not as Awful as it Seems: Explaining German Case through Computational Experiments in Fluid Construction Grammar | http://www.aclweb.org/anthology/E/E12/E12-1084.pdf | author:Remi van Trijp
-E12-1085 | Managing Uncertainty in Semantic Tagging | http://www.aclweb.org/anthology/E/E12/E12-1085.pdf | author:Silvie Cinková; Martin Holub; Vincent KríÅ¾
-E12-2001 | Language Resources Factory: case study on the acquisition of Translation Memories | http://www.aclweb.org/anthology/E/E12/E12-2001.pdf | author:Marc Poch; Antonio Toral; Núria Bel
-E12-2002 | Harnessing NLP Techniques in the Processes of Multilingual Content Management | http://www.aclweb.org/anthology/E/E12/E12-2002.pdf | author:Anelia Belogay; Diman Karagyozov; Svetla Koeva; Cristina Vertan; Adam Przepiórkowski; Dan Cristea; Plovios Raxis
-E12-2003 | Collaborative Machine Translation Service for Scientific texts | http://www.aclweb.org/anthology/E/E12/E12-2003.pdf | author:Patrik Lambert; Jean Senellart; Laurent Romary; Holger Schwenk; Florian Zipser; Patrice Lopez; Frédéric Blain
-E12-2004 | TransAhead: A Writing Assistant for CAT and CALL | http://www.aclweb.org/anthology/E/E12/E12-2004.pdf | author:Chung-chi Huang; Ping-che Yang; Mei-hua Chen; Hung-ting Hsieh; Ting-hui Kao; Jason S. Chang
-E12-2005 | SWAN - Scientific Writing AssistaNt. A Tool for Helping Scholars to Write Reader-Friendly Manuscripts | http://www.aclweb.org/anthology/E/E12/E12-2005.pdf | author:Tomi Kinnunen; Henri Leisma; Monika Machunik; Tuomo Kakkonen; Jean-Luc LeBrun
-E12-2006 | ONTS: "Optima" News Translation System | http://www.aclweb.org/anthology/E/E12/E12-2006.pdf | author:Marco Turchi; Martin Atkinson; Alastair Wilcox; Brett Crawley; Stefano Bucci; Ralf Steinberger; Erik Van der Goot
-E12-2007 | Just Title It! (by an Online Application) | http://www.aclweb.org/anthology/E/E12/E12-2007.pdf | author:Cédric Lopez; Violaine Prince; Mathieu Roche
-E12-2008 | Folheador: browsing through Portuguese semantic relations | http://www.aclweb.org/anthology/E/E12/E12-2008.pdf | author:Hugo Gonçalo Oliveira; Hernani Costa; Diana Santos
-E12-2009 | A Computer Assisted Speech Transcription System | http://www.aclweb.org/anthology/E/E12/E12-2009.pdf | author:Alejandro Revuelta-Martínez; Luis Rodríguez; Ismael García-Varea
-E12-2010 | A Statistical Spoken Dialogue System using Complex User Goals and Value Directed Compression | http://www.aclweb.org/anthology/E/E12/E12-2010.pdf | author:Paul A. Crook; Zhuoran Wang; Xingkun Liu; Oliver Lemon
-E12-2011 | Automatically Generated Customizable Online Dictionaries | http://www.aclweb.org/anthology/E/E12/E12-2011.pdf | author:EnikÅ Héja; Dávid Takács
-E12-2012 | MaltOptimizer: An Optimization Tool for MaltParser | http://www.aclweb.org/anthology/E/E12/E12-2012.pdf | author:Miguel Ballesteros; Joakim Nivre
-E12-2013 | Fluid Construction Grammar: The New Kid on the Block | http://www.aclweb.org/anthology/E/E12/E12-2013.pdf | author:Remi van Trijp; Luc Steels; Katrien Beuls; Pieter Wellens
-E12-2014 | A Support Platform for Event Detection using Social Intelligence | http://www.aclweb.org/anthology/E/E12/E12-2014.pdf | author:Timothy Baldwin; Paul Cook; Bo Han; Aaron Harwood; Shanika Karunasekera; Masud Moshtaghi
-E12-2015 | NERD: A Framework for Unifying Named Entity Recognition and Disambiguation Extraction Tools | http://www.aclweb.org/anthology/E/E12/E12-2015.pdf | author:Giuseppe Rizzo; Raphael Troncy
-E12-2016 | Automatic Analysis of Patient History Episodes in Bulgarian Hospital Discharge Letters | http://www.aclweb.org/anthology/E/E12/E12-2016.pdf | author:Svetla Boytcheva; Galia Angelova; Ivelina Nikolova
-E12-2017 | ElectionWatch: Detecting Patterns in News Coverage of US Elections | http://www.aclweb.org/anthology/E/E12/E12-2017.pdf | author:Saatviga Sudhahar; Thomas Lansdall-Welfare; Ilias Flaounas; Nello Cristianini
-E12-2018 | Query log analysis with LangLog | http://www.aclweb.org/anthology/E/E12/E12-2018.pdf | author:Marco Trevisan; Eduard Barbu; Igor Barsanti; Luca Dini; Nikolaos Lagos; Frédérique Segond; Mathieu Rhulmann; Ed Vald
-E12-2019 | A platform for collaborative semantic annotation | http://www.aclweb.org/anthology/E/E12/E12-2019.pdf | author:Valerio Basile; Johan Bos; Kilian Evang; Noortje Venhuizen
-E12-2020 | HadoopPerceptron: a Toolkit for Distributed Perceptron Training and Prediction with MapReduce | http://www.aclweb.org/anthology/E/E12/E12-2020.pdf | author:Andrea Gesmundo; Nadi Tomeh
-E12-2021 | brat: a Web-based Tool for NLP-Assisted Text Annotation | http://www.aclweb.org/anthology/E/E12/E12-2021.pdf | author:Pontus Stenetorp; Sampo Pyysalo; Goran Topić; Tomoko Ohta; Sophia Ananiadou; Jun’ichi Tsujii
-E12-3001 | Improving Pronoun Translation for Statistical Machine Translation | http://www.aclweb.org/anthology/E/E12/E12-3001.pdf | author:Liane Guillou
-E12-3002 | Cross-Lingual Genre Classification | http://www.aclweb.org/anthology/E/E12/E12-3002.pdf | author:Philipp Petrenz
-E12-3003 | A Comparative Study of Reinforcement Learning Techniques on Dialogue Management | http://www.aclweb.org/anthology/E/E12/E12-3003.pdf | author:Alexandros Papangelis
-E12-3004 | Manually constructed context-free grammar for Myanmar syllable structure | http://www.aclweb.org/anthology/E/E12/E12-3004.pdf | author:Tin Htay Hlaing
-E12-3005 | What’s in a Name? Entity Type Variation across Two Biomedical Subdomains | http://www.aclweb.org/anthology/E/E12/E12-3005.pdf | author:Claudiu Mihaila; Riza Theresa Batista-Navarro
-E12-3006 | Yet Another Language Identifier | http://www.aclweb.org/anthology/E/E12/E12-3006.pdf | author:Martin Majliš
-E12-3007 | Discourse Type Clustering using POS n-gram Profiles and High-Dimensional Embeddings | http://www.aclweb.org/anthology/E/E12/E12-3007.pdf | author:Christelle Cocco
-E12-3008 | Hierarchical Bayesian Language Modelling for the Linguistically Informed | http://www.aclweb.org/anthology/E/E12/E12-3008.pdf | author:Jan A. Botha
-E12-3009 | Mining Co-Occurrence Matrices for SO-PMI Paradigm Word Candidates | http://www.aclweb.org/anthology/E/E12/E12-3009.pdf | author:Aleksander Wawer
-E12-3010 | Improving machine translation of null subjects in Italian and Spanish | http://www.aclweb.org/anthology/E/E12/E12-3010.pdf | author:Lorenza Russo; Sharid Loáiciga; Asheesh Gulati
+E12-1001 | Speech Communication in the Wild | http://www.aclweb.org/anthology/E/E12/E12-1001.pdf | category:paper author:Martin Cooke
+E12-1002 | Power-Law Distributions for Paraphrases Extracted from Bilingual Corpora | http://www.aclweb.org/anthology/E/E12/E12-1002.pdf | category:paper author:Spyros Martzoukos; Christof Monz
+E12-1003 | A Bayesian Approach to Unsupervised Semantic Role Induction | http://www.aclweb.org/anthology/E/E12/E12-1003.pdf | category:paper author:Ivan Titov; Alexandre Klementiev
+E12-1004 | Entailment above the word level in distributional semantics | http://www.aclweb.org/anthology/E/E12/E12-1004.pdf | category:paper author:Marco Baroni; Raffaella Bernardi; Ngoc-Quynh Do; Chung-chieh Shan
+E12-1005 | Evaluating Distributional Models of Semantics for Syntactically Invariant Inference | http://www.aclweb.org/anthology/E/E12/E12-1005.pdf | category:paper author:Jackie Chi Kit Cheung; Gerald Penn
+E12-1006 | Cross-Framework Evaluation for Statistical Parsing | http://www.aclweb.org/anthology/E/E12/E12-1006.pdf | category:paper author:Reut Tsarfaty; Joakim Nivre; Evelina Andersson
+E12-1007 | Dependency Parsing of Hungarian: Baseline Results and Challenges | http://www.aclweb.org/anthology/E/E12/E12-1007.pdf | category:paper author:Richárd Farkas; Veronika Vincze; Helmut Schmid
+E12-1008 | Dependency Parsing with Undirected Graphs | http://www.aclweb.org/anthology/E/E12/E12-1008.pdf | category:paper author:Carlos Gómez-Rodríguez; Daniel Fernández-González
+E12-1009 | The Best of BothWorlds – A Graph-based Completion Model for Transition-based Parsers | http://www.aclweb.org/anthology/E/E12/E12-1009.pdf | category:paper author:Bernd Bohnet; Jonas Kuhn
+E12-1010 | Answer Sentence Retrieval by Matching Dependency Paths acquired from Question/Answer Sentence Pairs | http://www.aclweb.org/anthology/E/E12/E12-1010.pdf | category:paper author:Michael Kaisser
+E12-1011 | Can Click Patterns across User’s Query Logs Predict Answers to Definition Questions? | http://www.aclweb.org/anthology/E/E12/E12-1011.pdf | category:paper author:Alejandro Figueroa
+E12-1012 | Adaptation of Statistical Machine Translation Model for Cross-Lingual Information Retrieval in a Service Context | http://www.aclweb.org/anthology/E/E12/E12-1012.pdf | category:paper author:Vassilina Nikoulina; Bogomil Kovachev; Nikolaos Lagos; Christof Monz
+E12-1013 | Computing Lattice BLEU Oracle Scores for Machine Translation | http://www.aclweb.org/anthology/E/E12/E12-1013.pdf | category:paper author:Artem Sokolov; Guillaume Wisniewski; Francois Yvon
+E12-1014 | Toward Statistical Machine Translation without Parallel Corpora | http://www.aclweb.org/anthology/E/E12/E12-1014.pdf | category:paper author:Alexandre Klementiev; Ann Irvine; Chris Callison-Burch; David Yarowsky
+E12-1015 | Character-Based Pivot Translation for Under-Resourced Languages and Domains | http://www.aclweb.org/anthology/E/E12/E12-1015.pdf | category:paper author:Jörg Tiedemann
+E12-1016 | Does more data always yield better translations? | http://www.aclweb.org/anthology/E/E12/E12-1016.pdf | category:paper author:Guillem Gascó; Martha-Alicia Rocha; Germán Sanchis-Trilles; Jesús Andrés-Ferrer; Francisco Casacuberta
+E12-1017 | Recall-Oriented Learning of Named Entities in Arabic Wikipedia | http://www.aclweb.org/anthology/E/E12/E12-1017.pdf | category:paper author:Behrang Mohit; Nathan Schneider; Rishav Bhowmick; Kemal Oflazer; Noah A. Smith
+E12-1018 | Tree Representations in Probabilistic Models for Extended Named Entities Detection | http://www.aclweb.org/anthology/E/E12/E12-1018.pdf | category:paper author:Marco Dinarelli; Sophie Rosset
+E12-1019 | When Did that Happen? â Linking Events and Relations to Timestamps | http://www.aclweb.org/anthology/E/E12/E12-1019.pdf | category:paper author:Dirk Hovy; James Fan; Alfio Gliozzo; Siddharth Patwardhan; Christopher Welty
+E12-1020 | Compensating for Annotation Errors in Training a Relation Extractor | http://www.aclweb.org/anthology/E/E12/E12-1020.pdf | category:paper author:Bonan Min; Ralph Grishman
+E12-1021 | Incorporating Lexical Priors into Topic Models | http://www.aclweb.org/anthology/E/E12/E12-1021.pdf | category:paper author:Jagadeesh Jagarlamudi; Hal Daume III; Raghavendra Udupa
+E12-1022 | DualSum: a Topic-Model based approach for update summarization | http://www.aclweb.org/anthology/E/E12/E12-1022.pdf | category:paper author:Jean-Yves Delort; Enrique Alfonseca
+E12-1023 | Large-Margin Learning of Submodular Summarization Models | http://www.aclweb.org/anthology/E/E12/E12-1023.pdf | category:paper author:Ruben Sipos; Pannaga Shivaswamy; Thorsten Joachims
+E12-1024 | A Probabilistic Model of Syntactic and Semantic Acquisition from Child-Directed Utterances and their Meanings | http://www.aclweb.org/anthology/E/E12/E12-1024.pdf | category:paper author:Tom Kwiatkowski; Sharon Goldwater; Luke Zettlemoyer; Mark Steedman
+E12-1025 | Active learning for interactive machine translation | http://www.aclweb.org/anthology/E/E12/E12-1025.pdf | category:paper author:Jesús González-Rubio; Daniel Ortiz-Martínez; Francisco Casacuberta
+E12-1026 | Adapting Translation Models to Translationese Improves SMT | http://www.aclweb.org/anthology/E/E12/E12-1026.pdf | category:paper author:Gennadi Lembersky; Noam Ordan; Shuly Wintner
+E12-1027 | Aspectual Type and Temporal Relation Classification | http://www.aclweb.org/anthology/E/E12/E12-1027.pdf | category:paper author:Francisco Costa; António Branco
+E12-1028 | Automatic generation of short informative sentiment summaries | http://www.aclweb.org/anthology/E/E12/E12-1028.pdf | category:paper author:Andrea Glaser; Hinrich Schütze
+E12-1029 | Bootstrapped Training of Event Extraction Classifiers | http://www.aclweb.org/anthology/E/E12/E12-1029.pdf | category:paper author:Ruihong Huang; Ellen Riloff
+E12-1030 | Bootstrapping Events and Relations from Text | http://www.aclweb.org/anthology/E/E12/E12-1030.pdf | category:paper author:Ting Liu; Tomek Strzalkowski
+E12-1031 | CLex: A Lexicon for Exploring Color, Concept and Emotion Associations in Language | http://www.aclweb.org/anthology/E/E12/E12-1031.pdf | category:paper author:Svitlana Volkova; William B. Dolan; Theresa Wilson
+E12-1032 | Extending the Entity-based Coherence Model with Multiple Ranks | http://www.aclweb.org/anthology/E/E12/E12-1032.pdf | category:paper author:Vanessa Wei Feng; Graeme Hirst
+E12-1033 | Generalization Methods for In-Domain and Cross-Domain Opinion Holder Extraction | http://www.aclweb.org/anthology/E/E12/E12-1033.pdf | category:paper author:Michael Wiegand; Dietrich Klakow
+E12-1034 | Skip N-grams and Ranking Functions for Predicting Script Events | http://www.aclweb.org/anthology/E/E12/E12-1034.pdf | category:paper author:Bram Jans; Steven Bethard; Ivan Vulić; Marie-Francine Moens
+E12-1035 | The Problem with Kappa | http://www.aclweb.org/anthology/E/E12/E12-1035.pdf | category:paper author:David Martin Ward Powers
+E12-1036 | User Edits Classification Using Document Revision Histories | http://www.aclweb.org/anthology/E/E12/E12-1036.pdf | category:paper author:Amit Bronner; Christof Monz
+E12-1037 | User Participation Prediction in Online Forums | http://www.aclweb.org/anthology/E/E12/E12-1037.pdf | category:paper author:Zhonghua Qu; Yang Liu
+E12-1038 | Inferring Selectional Preferences from Part-Of-Speech N-grams | http://www.aclweb.org/anthology/E/E12/E12-1038.pdf | category:paper author:Hyeju Jang; Jack Mostow
+E12-1039 | WebCAGe – A Web-Harvested Corpus Annotated with GermaNet Senses | http://www.aclweb.org/anthology/E/E12/E12-1039.pdf | category:paper author:Verena Henrich; Erhard Hinrichs; Tatiana Vodolazova
+E12-1040 | Learning to Behave by Reading | http://www.aclweb.org/anthology/E/E12/E12-1040.pdf | category:paper author:Regina Barzilay
+E12-1041 | Lexical surprisal as a general predictor of reading time | http://www.aclweb.org/anthology/E/E12/E12-1041.pdf | category:paper author:Irene Fernandez Monsalve; Stefan L. Frank; Gabriella Vigliocco
+E12-1042 | Spectral Learning for Non-Deterministic Dependency Parsing | http://www.aclweb.org/anthology/E/E12/E12-1042.pdf | category:paper author:Franco M. Luque; Ariadna Quattoni; Borja Balle; Xavier Carreras
+E12-1043 | Combining Tree Structures, Flat Features and Patterns for Biomedical Relation Extraction | http://www.aclweb.org/anthology/E/E12/E12-1043.pdf | category:paper author:Md. Faisal Mahbub Chowdhury; Alberto Lavelli
+E12-1044 | Coordination Structure Analysis using Dual Decomposition | http://www.aclweb.org/anthology/E/E12/E12-1044.pdf | category:paper author:Atsushi Hanamoto; Takuya Matsuzaki; Jun’ichi Tsujii
+E12-1045 | Cutting the Long Tail: Hybrid Language Models for Translation Style Adaptation | http://www.aclweb.org/anthology/E/E12/E12-1045.pdf | category:paper author:Arianna Bisazza; Marcello Federico
+E12-1046 | Detecting Highly Confident Word Translations from Comparable Corpora without Any Prior Knowledge | http://www.aclweb.org/anthology/E/E12/E12-1046.pdf | category:paper author:Ivan Vulić; Marie-Francine Moens
+E12-1047 | Efficient parsing with Linear Context-Free Rewriting Systems | http://www.aclweb.org/anthology/E/E12/E12-1047.pdf | category:paper author:Andreas van Cranenburgh
+E12-1048 | Evaluating language understanding accuracy with respect to objective outcomes in a dialogue system | http://www.aclweb.org/anthology/E/E12/E12-1048.pdf | category:paper author:Myroslava O. Dzikovska; Peter Bell; Amy Isard; Johanna D. Moore
+E12-1049 | Experimenting with Distant Supervision for Emotion Classification | http://www.aclweb.org/anthology/E/E12/E12-1049.pdf | category:paper author:Matthew Purver; Stuart Battersby
+E12-1050 | Feature-Rich Part-of-speech Tagging for Morphologically Complex Languages: Application to Bulgarian | http://www.aclweb.org/anthology/E/E12/E12-1050.pdf | category:paper author:Georgi Georgiev; Valentin Zhikov; Kiril Simov; Petya Osenova; Preslav Nakov
+E12-1051 | Instance-Driven Attachment of Semantic Annotations over Conceptual Hierarchies | http://www.aclweb.org/anthology/E/E12/E12-1051.pdf | category:paper author:Janara Christensen; Marius Pasca
+E12-1052 | Joint Satisfaction of Syntactic and Pragmatic Constraints Improves Incremental Spoken Language Understanding | http://www.aclweb.org/anthology/E/E12/E12-1052.pdf | category:paper author:Andreas Peldszus; Okko Buß; Timo Baumann; David Schlangen
+E12-1053 | Learning How to Conjugate the Romanian Verb. Rules for Regular and Partially Irregular Verbs | http://www.aclweb.org/anthology/E/E12/E12-1053.pdf | category:paper author:Liviu P. Dinu; Vlad Niculae; Octavia-Maria Sulea
+E12-1054 | Measuring Contextual Fitness Using Error Contexts Extracted from the Wikipedia Revision History | http://www.aclweb.org/anthology/E/E12/E12-1054.pdf | category:paper author:Torsten Zesch
+E12-1055 | Perplexity Minimization for Translation Model Domain Adaptation in Statistical Machine Translation | http://www.aclweb.org/anthology/E/E12/E12-1055.pdf | category:paper author:Rico Sennrich
+E12-1056 | Subcat-LMF: Fleshing out a standardized format for subcategorization frame interoperability | http://www.aclweb.org/anthology/E/E12/E12-1056.pdf | category:paper author:Judith Eckle-Kohler; Iryna Gurevych
+E12-1057 | The effect of domain and text type on text prediction quality | http://www.aclweb.org/anthology/E/E12/E12-1057.pdf | category:paper author:Suzan Verberne; Antal van den Bosch; Helmer Strik; Lou Boves
+E12-1058 | The Impact of Spelling Errors on Patent Search | http://www.aclweb.org/anthology/E/E12/E12-1058.pdf | category:paper author:Benno Stein; Dennis Hoppe; Tim Gollub
+E12-1059 | UBY - A Large-Scale Unified Lexical-Semantic Resource Based on LMF | http://www.aclweb.org/anthology/E/E12/E12-1059.pdf | category:paper author:Iryna Gurevych; Judith Eckle-Kohler; Silvana Hartmann; Michael Matuschek; Christian M. Meyer; Christian Wirth
+E12-1060 | Word Sense Induction for Novel Sense Detection | http://www.aclweb.org/anthology/E/E12/E12-1060.pdf | category:paper author:Jey Han Lau; Paul Cook; Diana McCarthy; David Newman; Timothy Baldwin
+E12-1061 | Learning Language from Perceptual Context | http://www.aclweb.org/anthology/E/E12/E12-1061.pdf | category:paper author:Raymond Mooney
+E12-1062 | Learning for Microblogs with Distant Supervision: Political Forecasting with Twitter | http://www.aclweb.org/anthology/E/E12/E12-1062.pdf | category:paper author:Micol Marchetti-Bowick; Nathanael Chambers
+E12-1063 | Learning from evolving data streams: online triage of bug reports | http://www.aclweb.org/anthology/E/E12/E12-1063.pdf | category:paper author:Grzegorz Chrupala
+E12-1064 | Towards a model of formal and informal address in English | http://www.aclweb.org/anthology/E/E12/E12-1064.pdf | category:paper author:Manaal Faruqui; Sebastian Pado
+E12-1065 | Character-based kernels for novelistic plot structure | http://www.aclweb.org/anthology/E/E12/E12-1065.pdf | category:paper author:Micha Elsner
+E12-1066 | Smart Paradigms and the Predictability and Complexity of Inflectional Morphology | http://www.aclweb.org/anthology/E/E12/E12-1066.pdf | category:paper author:Grégoire Détrez; Aarne Ranta
+E12-1067 | Probabilistic Hierarchical Clustering of Morphological Paradigms | http://www.aclweb.org/anthology/E/E12/E12-1067.pdf | category:paper author:Burcu Can; Suresh Manandhar
+E12-1068 | Modeling Inflection and Word-Formation in SMT | http://www.aclweb.org/anthology/E/E12/E12-1068.pdf | category:paper author:Alexander Fraser; Marion Weller; Aoife Cahill; Fabienne Cap
+E12-1069 | Identifying Broken Plurals, Irregular Gender, and Rationality in Arabic Text | http://www.aclweb.org/anthology/E/E12/E12-1069.pdf | category:paper author:Sarah Alkuhlani; Nizar Habash
+E12-1070 | Framework of Semantic Role Assignment based on Extended Lexical Conceptual Structure: Comparison with VerbNet and FrameNet | http://www.aclweb.org/anthology/E/E12/E12-1070.pdf | category:paper author:Yuichiroh Matsubayashi; Yusuke Miyao; Akiko Aizawa
+E12-1071 | Unsupervised Detection of Downward-Entailing Operators By Maximizing Classification Certainty | http://www.aclweb.org/anthology/E/E12/E12-1071.pdf | category:paper author:Jackie Chi Kit Cheung; Gerald Penn
+E12-1072 | Elliphant: Improved Automatic Detection of Zero Subjects and Impersonal Constructions in Spanish | http://www.aclweb.org/anthology/E/E12/E12-1072.pdf | category:paper author:Luz Rello; Ricardo Baeza-Yates; Ruslan Mitkov
+E12-1073 | Validation of sub-sentential paraphrases acquired from parallel monolingual corpora | http://www.aclweb.org/anthology/E/E12/E12-1073.pdf | category:paper author:Houda Bouamor; Aurélien Max; Anne Vilnat
+E12-1074 | Determining the placement of German verbs in English–to–German SMT | http://www.aclweb.org/anthology/E/E12/E12-1074.pdf | category:paper author:Anita Gojun; Alexander Fraser
+E12-1075 | Syntax-Based Word Ordering Incorporating a Large-Scale Language Model | http://www.aclweb.org/anthology/E/E12/E12-1075.pdf | category:paper author:Yue Zhang; Graeme Blackwood; Stephen Clark
+E12-1076 | Midge: Generating Image Descriptions From Computer Vision Detections | http://www.aclweb.org/anthology/E/E12/E12-1076.pdf | category:paper author:Margaret Mitchell; Jesse Dodge; Amit Goyal; Kota Yamaguchi; Karl Stratos; Xufeng Han; Alyssa Mensch; Alex Berg; Tamara Berg; Hal Daume III
+E12-1077 | Generation of landmark-based navigation instructions from open-source data | http://www.aclweb.org/anthology/E/E12/E12-1077.pdf | category:paper author:Markus Dräger; Alexander Koller
+E12-1078 | To what extent does sentence-internal realisation reflect discourse context? A study on word order | http://www.aclweb.org/anthology/E/E12/E12-1078.pdf | category:paper author:Sina Zarrieß; Aoife Cahill; Jonas Kuhn
+E12-1079 | Behind the Article: Recognizing Dialog Acts in Wikipedia Talk Pages | http://www.aclweb.org/anthology/E/E12/E12-1079.pdf | category:paper author:Oliver Ferschke; Iryna Gurevych; Yevgen Chebotar
+E12-1080 | An Unsupervised Dynamic Bayesian Network Approach to Measuring Speech Style Accommodation | http://www.aclweb.org/anthology/E/E12/E12-1080.pdf | category:paper author:Mahaveer Jain; John McDonough; Gahgene Gweon; Bhiksha Raj; Carolyn Penstein Rosé
+E12-1081 | Learning the Fine-Grained Information Status of Discourse Entities | http://www.aclweb.org/anthology/E/E12/E12-1081.pdf | category:paper author:Altaf Rahman; Vincent Ng
+E12-1082 | Composing extended top-down tree transducers | http://www.aclweb.org/anthology/E/E12/E12-1082.pdf | category:paper author:Aurelie Lagoutte; Fabienne Braune; Daniel Quernheim; Andreas Maletti
+E12-1083 | Structural and Topical Dimensions in Multi-Task Patent Translation | http://www.aclweb.org/anthology/E/E12/E12-1083.pdf | category:paper author:Katharina Waeschle; Stefan Riezler
+E12-1084 | Not as Awful as it Seems: Explaining German Case through Computational Experiments in Fluid Construction Grammar | http://www.aclweb.org/anthology/E/E12/E12-1084.pdf | category:paper author:Remi van Trijp
+E12-1085 | Managing Uncertainty in Semantic Tagging | http://www.aclweb.org/anthology/E/E12/E12-1085.pdf | category:paper author:Silvie Cinková; Martin Holub; Vincent KríÅ¾
+E12-2001 | Language Resources Factory: case study on the acquisition of Translation Memories | http://www.aclweb.org/anthology/E/E12/E12-2001.pdf | category:paper author:Marc Poch; Antonio Toral; Núria Bel
+E12-2002 | Harnessing NLP Techniques in the Processes of Multilingual Content Management | http://www.aclweb.org/anthology/E/E12/E12-2002.pdf | category:paper author:Anelia Belogay; Diman Karagyozov; Svetla Koeva; Cristina Vertan; Adam Przepiórkowski; Dan Cristea; Plovios Raxis
+E12-2003 | Collaborative Machine Translation Service for Scientific texts | http://www.aclweb.org/anthology/E/E12/E12-2003.pdf | category:paper author:Patrik Lambert; Jean Senellart; Laurent Romary; Holger Schwenk; Florian Zipser; Patrice Lopez; Frédéric Blain
+E12-2004 | TransAhead: A Writing Assistant for CAT and CALL | http://www.aclweb.org/anthology/E/E12/E12-2004.pdf | category:paper author:Chung-chi Huang; Ping-che Yang; Mei-hua Chen; Hung-ting Hsieh; Ting-hui Kao; Jason S. Chang
+E12-2005 | SWAN - Scientific Writing AssistaNt. A Tool for Helping Scholars to Write Reader-Friendly Manuscripts | http://www.aclweb.org/anthology/E/E12/E12-2005.pdf | category:paper author:Tomi Kinnunen; Henri Leisma; Monika Machunik; Tuomo Kakkonen; Jean-Luc LeBrun
+E12-2006 | ONTS: "Optima" News Translation System | http://www.aclweb.org/anthology/E/E12/E12-2006.pdf | category:paper author:Marco Turchi; Martin Atkinson; Alastair Wilcox; Brett Crawley; Stefano Bucci; Ralf Steinberger; Erik Van der Goot
+E12-2007 | Just Title It! (by an Online Application) | http://www.aclweb.org/anthology/E/E12/E12-2007.pdf | category:paper author:Cédric Lopez; Violaine Prince; Mathieu Roche
+E12-2008 | Folheador: browsing through Portuguese semantic relations | http://www.aclweb.org/anthology/E/E12/E12-2008.pdf | category:paper author:Hugo Gonçalo Oliveira; Hernani Costa; Diana Santos
+E12-2009 | A Computer Assisted Speech Transcription System | http://www.aclweb.org/anthology/E/E12/E12-2009.pdf | category:paper author:Alejandro Revuelta-Martínez; Luis Rodríguez; Ismael García-Varea
+E12-2010 | A Statistical Spoken Dialogue System using Complex User Goals and Value Directed Compression | http://www.aclweb.org/anthology/E/E12/E12-2010.pdf | category:paper author:Paul A. Crook; Zhuoran Wang; Xingkun Liu; Oliver Lemon
+E12-2011 | Automatically Generated Customizable Online Dictionaries | http://www.aclweb.org/anthology/E/E12/E12-2011.pdf | category:paper author:EnikÅ Héja; Dávid Takács
+E12-2012 | MaltOptimizer: An Optimization Tool for MaltParser | http://www.aclweb.org/anthology/E/E12/E12-2012.pdf | category:paper author:Miguel Ballesteros; Joakim Nivre
+E12-2013 | Fluid Construction Grammar: The New Kid on the Block | http://www.aclweb.org/anthology/E/E12/E12-2013.pdf | category:paper author:Remi van Trijp; Luc Steels; Katrien Beuls; Pieter Wellens
+E12-2014 | A Support Platform for Event Detection using Social Intelligence | http://www.aclweb.org/anthology/E/E12/E12-2014.pdf | category:paper author:Timothy Baldwin; Paul Cook; Bo Han; Aaron Harwood; Shanika Karunasekera; Masud Moshtaghi
+E12-2015 | NERD: A Framework for Unifying Named Entity Recognition and Disambiguation Extraction Tools | http://www.aclweb.org/anthology/E/E12/E12-2015.pdf | category:paper author:Giuseppe Rizzo; Raphael Troncy
+E12-2016 | Automatic Analysis of Patient History Episodes in Bulgarian Hospital Discharge Letters | http://www.aclweb.org/anthology/E/E12/E12-2016.pdf | category:paper author:Svetla Boytcheva; Galia Angelova; Ivelina Nikolova
+E12-2017 | ElectionWatch: Detecting Patterns in News Coverage of US Elections | http://www.aclweb.org/anthology/E/E12/E12-2017.pdf | category:paper author:Saatviga Sudhahar; Thomas Lansdall-Welfare; Ilias Flaounas; Nello Cristianini
+E12-2018 | Query log analysis with LangLog | http://www.aclweb.org/anthology/E/E12/E12-2018.pdf | category:paper author:Marco Trevisan; Eduard Barbu; Igor Barsanti; Luca Dini; Nikolaos Lagos; Frédérique Segond; Mathieu Rhulmann; Ed Vald
+E12-2019 | A platform for collaborative semantic annotation | http://www.aclweb.org/anthology/E/E12/E12-2019.pdf | category:paper author:Valerio Basile; Johan Bos; Kilian Evang; Noortje Venhuizen
+E12-2020 | HadoopPerceptron: a Toolkit for Distributed Perceptron Training and Prediction with MapReduce | http://www.aclweb.org/anthology/E/E12/E12-2020.pdf | category:paper author:Andrea Gesmundo; Nadi Tomeh
+E12-2021 | brat: a Web-based Tool for NLP-Assisted Text Annotation | http://www.aclweb.org/anthology/E/E12/E12-2021.pdf | category:paper author:Pontus Stenetorp; Sampo Pyysalo; Goran Topić; Tomoko Ohta; Sophia Ananiadou; Jun’ichi Tsujii
+E12-3001 | Improving Pronoun Translation for Statistical Machine Translation | http://www.aclweb.org/anthology/E/E12/E12-3001.pdf | category:paper author:Liane Guillou
+E12-3002 | Cross-Lingual Genre Classification | http://www.aclweb.org/anthology/E/E12/E12-3002.pdf | category:paper author:Philipp Petrenz
+E12-3003 | A Comparative Study of Reinforcement Learning Techniques on Dialogue Management | http://www.aclweb.org/anthology/E/E12/E12-3003.pdf | category:paper author:Alexandros Papangelis
+E12-3004 | Manually constructed context-free grammar for Myanmar syllable structure | http://www.aclweb.org/anthology/E/E12/E12-3004.pdf | category:paper author:Tin Htay Hlaing
+E12-3005 | What’s in a Name? Entity Type Variation across Two Biomedical Subdomains | http://www.aclweb.org/anthology/E/E12/E12-3005.pdf | category:paper author:Claudiu Mihaila; Riza Theresa Batista-Navarro
+E12-3006 | Yet Another Language Identifier | http://www.aclweb.org/anthology/E/E12/E12-3006.pdf | category:paper author:Martin Majliš
+E12-3007 | Discourse Type Clustering using POS n-gram Profiles and High-Dimensional Embeddings | http://www.aclweb.org/anthology/E/E12/E12-3007.pdf | category:paper author:Christelle Cocco
+E12-3008 | Hierarchical Bayesian Language Modelling for the Linguistically Informed | http://www.aclweb.org/anthology/E/E12/E12-3008.pdf | category:paper author:Jan A. Botha
+E12-3009 | Mining Co-Occurrence Matrices for SO-PMI Paradigm Word Candidates | http://www.aclweb.org/anthology/E/E12/E12-3009.pdf | category:paper author:Aleksander Wawer
+E12-3010 | Improving machine translation of null subjects in Italian and Spanish | http://www.aclweb.org/anthology/E/E12/E12-3010.pdf | category:paper author:Lorenza Russo; Sharid Loáiciga; Asheesh Gulati

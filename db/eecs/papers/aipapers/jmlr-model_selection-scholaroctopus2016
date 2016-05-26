@@ -1,17 +1,17 @@
-jmlr-model_selection-1 | Model Selection: Beyond the Bayesian/Frequentist Divide | http://www.jmlr.org/papers/v11/guyon10a.html | author:Isabelle Guyon, Amir Saffari, Gideon Dror, Gavin Cawley
-jmlr-model_selection-2 | Preventing Over-Fitting during Model Selection via Bayesian Regularisation of the Hyper-Parameters | http://www.jmlr.org/papers/v8/cawley07a.html | author:Gavin C. Cawley, Nicola L. C. Talbot
-jmlr-model_selection-3 | Compression-Based Averaging of Selective Naive Bayes Classifiers | http://www.jmlr.org/papers/v8/boulle07a.html | author:Marc Boullé
-jmlr-model_selection-4 | VC Theory of Large Margin Multi-Category Classifiers | http://www.jmlr.org/papers/v8/guermeur07a.html | author:Yann Guermeur
-jmlr-model_selection-5 | A New Probabilistic Approach in Rank Regression with Optimal Bayesian Partitioning | http://www.jmlr.org/papers/v8/hue07a.html | author:Carine Hue, Marc Boullé
-jmlr-model_selection-6 | An Information Criterion for Variable Selection in Support Vector Machines | http://www.jmlr.org/papers/v9/claeskens08a.html | author:Gerda Claeskens, Christophe Croux, Johan Van Kerckhoven
-jmlr-model_selection-7 | Multi-class Discriminant Kernel Learning via Convex Programming | http://www.jmlr.org/papers/v9/ye08b.html | author:Jieping Ye, Shuiwang Ji, Jianhui Chen
-jmlr-model_selection-8 | Model Selection in Kernel Based Regression using the Influence Function | http://www.jmlr.org/papers/v9/debruyne08a.html | author:Michiel Debruyne, Mia Hubert, Johan A.K. Suykens
-jmlr-model_selection-9 | Model Selection for Regression with Continuous Kernel Functions Using the Modulus of Continuity | http://www.jmlr.org/papers/v9/koo08b.html | author:Imhoi Koo, Rhee Man Kil
-jmlr-model_selection-10 | Particle Swarm Model Selection | http://www.jmlr.org/papers/v10/escalante09a.html | author:Hugo Jair Escalante, Manuel Montes, Luis Enrique Sucar
-jmlr-model_selection-11 | Feature Selection with Ensembles, Artificial Variables, and Redundancy Elimination | http://www.jmlr.org/papers/v10/tuv09a.html | author:Eugene Tuv, Alexander Borisov, George Runger, Kari Torkkola
-jmlr-model_selection-12 | On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation | http://www.jmlr.org/papers/v11/cawley10a.html | author:Gavin C. Cawley, Nicola L. C. Talbot
-jmlr-model_selection-13 | Extensions to Metric-Based Model Selection | http://www.jmlr.org/papers/v3/bengio03b.html | author:Yoshua Bengio, Nicolas Chapados
-jmlr-model_selection-14 | A Compression Approach to Support Vector Model Selection | http://www.jmlr.org/papers/v5/luxburg04a.html | author:Ulrike von Luxburg, Olivier Bousquet, Bernhard Schölkopf
-jmlr-model_selection-15 | Asymptotic Model Selection for Naive Bayesian Networks | http://www.jmlr.org/papers/v6/rusakov05a.html | author:Dmitry Rusakov, Dan Geiger
-jmlr-model_selection-16 | On Model Selection Consistency of Lasso | http://www.jmlr.org/papers/v7/zhao06a.html | author:Peng Zhao, Bin Yu
-jmlr-model_selection-17 | Model Selection Through Sparse Maximum Likelihood Estimation for Multivariate Gaussian or Binary Data | http://www.jmlr.org/papers/v9/banerjee08a.html | author:Onureena Banerjee, Laurent El Ghaoui, Alexandre d'Aspremont
+jmlr-model_selection-1 | Model Selection: Beyond the Bayesian/Frequentist Divide | http://www.jmlr.org/papers/v11/guyon10a.html | category:paper author:Isabelle Guyon, Amir Saffari, Gideon Dror, Gavin Cawley
+jmlr-model_selection-2 | Preventing Over-Fitting during Model Selection via Bayesian Regularisation of the Hyper-Parameters | http://www.jmlr.org/papers/v8/cawley07a.html | category:paper author:Gavin C. Cawley, Nicola L. C. Talbot
+jmlr-model_selection-3 | Compression-Based Averaging of Selective Naive Bayes Classifiers | http://www.jmlr.org/papers/v8/boulle07a.html | category:paper author:Marc Boullé
+jmlr-model_selection-4 | VC Theory of Large Margin Multi-Category Classifiers | http://www.jmlr.org/papers/v8/guermeur07a.html | category:paper author:Yann Guermeur
+jmlr-model_selection-5 | A New Probabilistic Approach in Rank Regression with Optimal Bayesian Partitioning | http://www.jmlr.org/papers/v8/hue07a.html | category:paper author:Carine Hue, Marc Boullé
+jmlr-model_selection-6 | An Information Criterion for Variable Selection in Support Vector Machines | http://www.jmlr.org/papers/v9/claeskens08a.html | category:paper author:Gerda Claeskens, Christophe Croux, Johan Van Kerckhoven
+jmlr-model_selection-7 | Multi-class Discriminant Kernel Learning via Convex Programming | http://www.jmlr.org/papers/v9/ye08b.html | category:paper author:Jieping Ye, Shuiwang Ji, Jianhui Chen
+jmlr-model_selection-8 | Model Selection in Kernel Based Regression using the Influence Function | http://www.jmlr.org/papers/v9/debruyne08a.html | category:paper author:Michiel Debruyne, Mia Hubert, Johan A.K. Suykens
+jmlr-model_selection-9 | Model Selection for Regression with Continuous Kernel Functions Using the Modulus of Continuity | http://www.jmlr.org/papers/v9/koo08b.html | category:paper author:Imhoi Koo, Rhee Man Kil
+jmlr-model_selection-10 | Particle Swarm Model Selection | http://www.jmlr.org/papers/v10/escalante09a.html | category:paper author:Hugo Jair Escalante, Manuel Montes, Luis Enrique Sucar
+jmlr-model_selection-11 | Feature Selection with Ensembles, Artificial Variables, and Redundancy Elimination | http://www.jmlr.org/papers/v10/tuv09a.html | category:paper author:Eugene Tuv, Alexander Borisov, George Runger, Kari Torkkola
+jmlr-model_selection-12 | On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation | http://www.jmlr.org/papers/v11/cawley10a.html | category:paper author:Gavin C. Cawley, Nicola L. C. Talbot
+jmlr-model_selection-13 | Extensions to Metric-Based Model Selection | http://www.jmlr.org/papers/v3/bengio03b.html | category:paper author:Yoshua Bengio, Nicolas Chapados
+jmlr-model_selection-14 | A Compression Approach to Support Vector Model Selection | http://www.jmlr.org/papers/v5/luxburg04a.html | category:paper author:Ulrike von Luxburg, Olivier Bousquet, Bernhard Schölkopf
+jmlr-model_selection-15 | Asymptotic Model Selection for Naive Bayesian Networks | http://www.jmlr.org/papers/v6/rusakov05a.html | category:paper author:Dmitry Rusakov, Dan Geiger
+jmlr-model_selection-16 | On Model Selection Consistency of Lasso | http://www.jmlr.org/papers/v7/zhao06a.html | category:paper author:Peng Zhao, Bin Yu
+jmlr-model_selection-17 | Model Selection Through Sparse Maximum Likelihood Estimation for Multivariate Gaussian or Binary Data | http://www.jmlr.org/papers/v9/banerjee08a.html | category:paper author:Onureena Banerjee, Laurent El Ghaoui, Alexandre d'Aspremont

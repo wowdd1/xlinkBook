@@ -1,59 +1,59 @@
-jmlr-v3-1 | Kernel Independent Component Analysis | http://jmlr.csail.mit.edu/papers/v3/bach02a.html | author:Francis R. Bach, Michael I. Jordan
-jmlr-v3-2 | Learning Monotone DNF from a Teacher that Almost Does Not Answer Membership Queries | http://jmlr.csail.mit.edu/papers/v3/bshouty02a.html | author:Nader H. Bshouty, Nadav Eiron
-jmlr-v3-3 | On the Convergence of Optimistic Policy Iteration | http://jmlr.csail.mit.edu/papers/v3/tsitsiklis02a.html | author:John N. Tsitsiklis
-jmlr-v3-4 | Data-dependent margin-based generalization bounds for classification | http://jmlr.csail.mit.edu/papers/v3/antos02a.html | author:András Antos, Balázs Kégl, Tamás Linder, Gábor Lugosi
-jmlr-v3-5 | Variational Learning of Clusters of Undercomplete Nonsymmetric Independent Components | http://jmlr.csail.mit.edu/papers/v3/chan02a.html | author:Kwokleung Chan, Te-Won Lee, Terrence J. Sejnowski
-jmlr-v3-6 | Learning Precise Timing with LSTM Recurrent Networks | http://jmlr.csail.mit.edu/papers/v3/gers02a.html | author:Felix A. Gers, Nicol N. Schraudolph, Jürgen Schmidhuber
-jmlr-v3-7 | ε-MDPs: Learning in Varying Environments | http://jmlr.csail.mit.edu/papers/v3/szita02a.html | author:István Szita, Bálint Takács, András Lörincz
-jmlr-v3-8 | Algorithmic Luckiness | http://jmlr.csail.mit.edu/papers/v3/herbrich02a.html | author:Ralf Herbrich, Robert C. Williamson
-jmlr-v3-9 | R-MAX - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning | http://jmlr.csail.mit.edu/papers/v3/brafman02a.html | author:Ronen I. Brafman, Moshe Tennenholtz
-jmlr-v3-10 | PAC-Bayesian Generalisation Error Bounds for Gaussian Process Classification | http://jmlr.csail.mit.edu/papers/v3/seeger02a.html | author:Matthias Seeger
-jmlr-v3-11 | On Online Learning of Decision Lists | http://jmlr.csail.mit.edu/papers/v3/nevo02a.html | author:Ziv Nevo, Ran El-Yaniv
-jmlr-v3-12 | Minimal Kernel Classifiers | http://jmlr.csail.mit.edu/papers/v3/fung02a.html | author:Glenn M. Fung, Olvi L. Mangasarian, Alexander J. Smola
-jmlr-v3-13 | The Subspace Information Criterion for Infinite Dimensional Hypothesis Spaces | http://jmlr.csail.mit.edu/papers/v3/sugiyama02a.html | author:Masashi Sugiyama, Klaus-Robert Müller
-jmlr-v3-14 | Introduction to the Special Issue on Computational Learning Theory | http://www.jmlr.org/papers/volume3/long02a/long02a.pdf | author:Philip M. Long
-jmlr-v3-15 | Tracking a Small Set of Experts by Mixing Past Posteriors | http://jmlr.csail.mit.edu/papers/v3/bousquet02b.html | author:Olivier Bousquet, Manfred K. Warmuth
-jmlr-v3-16 | Using Confidence Bounds for Exploitation-Exploration Trade-offs | http://jmlr.csail.mit.edu/papers/v3/auer02a.html | author:Peter Auer
-jmlr-v3-17 | Efficient Algorithms for Universal Portfolios | http://jmlr.csail.mit.edu/papers/v3/kalai02a.html | author:Adam Kalai, Santosh Vempala
-jmlr-v3-18 | Limitations of Learning Via Embeddings in Euclidean Half Spaces | http://jmlr.csail.mit.edu/papers/v3/bendavid02a.html | author:Shai Ben-David, Nadav Eiron, Hans Ulrich Simon
-jmlr-v3-19 | Rademacher and Gaussian Complexities: Risk Bounds and Structural Results | http://jmlr.csail.mit.edu/papers/v3/bartlett02a.html | author:Peter L. Bartlett, Shahar Mendelson
-jmlr-v3-20 | On Boosting with Polynomially Bounded Distributions | http://jmlr.csail.mit.edu/papers/v3/bshouty02b.html | author:Nader H. Bshouty, Dmitry Gavinsky
-jmlr-v3-21 | Optimal Structure Identification With Greedy Search | http://jmlr.csail.mit.edu/papers/v3/chickering02b.html | author:David Maxwell Chickering
-jmlr-v3-22 | A Robust Minimax Approach to Classification | http://jmlr.csail.mit.edu/papers/v3/lanckriet02a.html | author:Gert R.G. Lanckriet, Laurent El Ghaoui, Chiranjib Bhattacharyya, Michael I. Jordan
-jmlr-v3-23 | Cluster Ensembles --- A Knowledge Reuse Framework for Combining Multiple Partitions | http://jmlr.csail.mit.edu/papers/v3/strehl02a.html | author:Alexander Strehl, Joydeep Ghosh
-jmlr-v3-24 | Special Issue on the Eighteenth International Conference on Machine Learning | http://www.jmlr.org/papers/volume3/brodley02a/brodley02a.pdf | author:Carla E. Brodley, Andrea P. Danyluk
-jmlr-v3-25 | Efficient Algorithms for Decision Tree Cross-validation | http://jmlr.csail.mit.edu/papers/v3/blockeel02a.html | author:Hendrik Blockeel, Jan Struyf
-jmlr-v3-26 | Multiple-Instance Learning of Real-Valued Data | http://jmlr.csail.mit.edu/papers/v3/dooly02a.html | author:Daniel R. Dooly, Qi Zhang, Sally A. Goldman, Robert A. Amar
-jmlr-v3-27 | Learning Probabilistic Models of Link Structure | http://jmlr.csail.mit.edu/papers/v3/getoor02a.html | author:Lisa Getoor, Nir Friedman, Daphne Koller, Benjamin Taskar
-jmlr-v3-28 | The Representational Power of Discrete Bayesian Networks | http://jmlr.csail.mit.edu/papers/v3/ling02a.html | author:Charles X. Ling, Huajie Zhang
-jmlr-v3-29 | The Set Covering Machine | http://jmlr.csail.mit.edu/papers/v3/marchand02a.html | author:Mario Marchand, John Shawe-Taylor
-jmlr-v3-30 | Coupled Clustering: A Method for Detecting Structural Correspondence | http://jmlr.csail.mit.edu/papers/v3/marx02a.html | author:Zvika Marx, Ido Dagan, Joachim M. Buhmann, Eli Shamir
-jmlr-v3-31 | Some Greedy Learning Algorithms for Sparse Regression and Classification with Mercer Kernels | http://jmlr.csail.mit.edu/papers/v3/nair02a.html | author:Prasanth B. Nair, Arindam Choudhury, Andy J. Keane
-jmlr-v3-32 | Lyapunov Design for Safe Reinforcement Learning | http://jmlr.csail.mit.edu/papers/v3/perkins02a.html | author:Theodore J. Perkins, Andrew G. Barto
-jmlr-v3-33 | Finding the Most Interesting Patterns in a Database Quickly by Using Sequential Sampling | http://jmlr.csail.mit.edu/papers/v3/scheffer02a.html | author:Tobias Scheffer, Stefan Wrobel
-jmlr-v3-34 | Stopping Criterion for Boosting-Based Data Reduction Techniques: from Binary to Multiclass Problem | http://jmlr.csail.mit.edu/papers/v3/sebban02a.html | author:Marc Sebban, Richard Nock, Stéphane Lallich
-jmlr-v3-35 | Learning to Construct Fast Signal Processing Implementations | http://jmlr.csail.mit.edu/papers/v3/singer02a.html | author:Bryan Singer, Manuela Veloso
-jmlr-v3-36 | Policy Search using Paired Comparisons | http://jmlr.csail.mit.edu/papers/v3/strens02a.html | author:Malcolm J. A. Strens, Andrew W. Moore
-jmlr-v3-37 | Ultraconservative Online Algorithms for Multiclass Problems | http://jmlr.csail.mit.edu/papers/v3/crammer03a.html | author:Koby Crammer, Yoram Singer
-jmlr-v3-38 | Latent Dirichlet Allocation | http://jmlr.csail.mit.edu/papers/v3/blei03a.html | author:David M. Blei, Andrew Y. Ng, Michael I. Jordan
-jmlr-v3-39 | Introduction to the Special Issue on Machine Learning Methods for Text and Images | http://www.jmlr.org/papers/volume3/kandola03a/kandola03a.pdf | author:Jaz Kandola, Thomas Hofmann, Tomaso Poggio, John Shawe-Taylor
-jmlr-v3-40 | A Family of Additive Online Algorithms for Category Ranking | http://jmlr.csail.mit.edu/papers/v3/crammer03b.html | author:Koby Crammer, Yoram Singer
-jmlr-v3-41 | Word-Sequence Kernels | http://jmlr.csail.mit.edu/papers/v3/cancedda03a.html | author:Nicola Cancedda, Eric Gaussier, Cyril Goutte, Jean-Michel Renders
-jmlr-v3-42 | Kernel Methods for Relation Extraction | http://jmlr.csail.mit.edu/papers/v3/zelenko03a.html | author:Dmitry Zelenko, Chinatsu Aone, Anthony Richardella
-jmlr-v3-43 | Matching Words and Pictures | http://jmlr.csail.mit.edu/papers/v3/barnard03a.html | author:Kobus Barnard, Pinar Duygulu, David Forsyth, Nando de Freitas,David M. Blei, Michael I. Jordan
-jmlr-v3-44 | A Neural Probabilistic Language Model | http://jmlr.csail.mit.edu/papers/v3/bengio03a.html | author:Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin
-jmlr-v3-45 | An Introduction to Variable and Feature Selection | http://jmlr.csail.mit.edu/papers/v3/guyon03a.html | author:Isabelle Guyon, André Elisseeff
-jmlr-v3-46 | Distributional Word Clusters vs. Words for Text Categorization | http://jmlr.csail.mit.edu/papers/v3/bekkerman03a.html | author:Ron Bekkerman, Ran El-Yaniv, Naftali Tishby, Yoad Winter
-jmlr-v3-47 | Extensions to Metric-Based Model Selection | http://jmlr.csail.mit.edu/papers/v3/bengio03b.html | author:Yoshua Bengio, Nicolas Chapados
-jmlr-v3-48 | Dimensionality Reduction via Sparse Support Vector Machines | http://jmlr.csail.mit.edu/papers/v3/bi03a.html | author:Jinbo Bi, Kristin Bennett, Mark Embrechts, Curt Breneman, Minghu Song
-jmlr-v3-49 | Benefitting from the Variables that Variable Selection Discards | http://jmlr.csail.mit.edu/papers/v3/caruana03a.html | author:Rich Caruana, Virginia R. de Sa
-jmlr-v3-50 | A Divisive Information-Theoretic Feature Clustering Algorithm for Text Classification | http://jmlr.csail.mit.edu/papers/v3/dhillon03a.html | author:Inderjit S. Dhillon, Subramanyam Mallela, Rahul Kumar
-jmlr-v3-51 | An Extensive Empirical Study of Feature Selection Metrics for Text Classification | http://jmlr.csail.mit.edu/papers/v3/forman03a.html | author:George Forman
-jmlr-v3-52 | Sufficient Dimensionality Reduction | http://jmlr.csail.mit.edu/papers/v3/globerson03a.html | author:Amir Globerson, Naftali Tishby
-jmlr-v3-53 | Grafting: Fast, Incremental Feature Selection by Gradient Descent in Function Space | http://jmlr.csail.mit.edu/papers/v3/perkins03a.html | author:Simon Perkins, Kevin Lacker, James Theiler
-jmlr-v3-54 | Variable Selection Using SVM-based Criteria | http://jmlr.csail.mit.edu/papers/v3/rakotomamonjy03a.html | author:Alain Rakotomamonjy
-jmlr-v3-55 | Overfitting in Making Comparisons Between Variable Selection Methods | http://jmlr.csail.mit.edu/papers/v3/reunanen03a.html | author:Juha Reunanen
-jmlr-v3-56 | MLPs | http://jmlr.csail.mit.edu/papers/v3/rivals03a.html | author:Isabelle Rivals, Léon Personnaz
-jmlr-v3-57 | Ranking a Random Feature for Variable and Feature Selection | http://jmlr.csail.mit.edu/papers/v3/stoppiglia03a.html | author:Hervé Stoppiglia, Gérard Dreyfus, Rémi Dubois, Yacine Oussar
-jmlr-v3-58 | Feature Extraction by Non-Parametric Mutual Information Maximization | http://jmlr.csail.mit.edu/papers/v3/torkkola03a.html | author:Kari Torkkola
-jmlr-v3-59 | Use of the Zero-Norm with Linear Models and Kernel Methods | http://jmlr.csail.mit.edu/papers/v3/weston03a.html | author:Jason Weston, André Elisseeff, Bernhard Schölkopf, Mike Tipping
+jmlr-v3-1 | Kernel Independent Component Analysis | http://jmlr.csail.mit.edu/papers/v3/bach02a.html | category:paper author:Francis R. Bach, Michael I. Jordan
+jmlr-v3-2 | Learning Monotone DNF from a Teacher that Almost Does Not Answer Membership Queries | http://jmlr.csail.mit.edu/papers/v3/bshouty02a.html | category:paper author:Nader H. Bshouty, Nadav Eiron
+jmlr-v3-3 | On the Convergence of Optimistic Policy Iteration | http://jmlr.csail.mit.edu/papers/v3/tsitsiklis02a.html | category:paper author:John N. Tsitsiklis
+jmlr-v3-4 | Data-dependent margin-based generalization bounds for classification | http://jmlr.csail.mit.edu/papers/v3/antos02a.html | category:paper author:András Antos, Balázs Kégl, Tamás Linder, Gábor Lugosi
+jmlr-v3-5 | Variational Learning of Clusters of Undercomplete Nonsymmetric Independent Components | http://jmlr.csail.mit.edu/papers/v3/chan02a.html | category:paper author:Kwokleung Chan, Te-Won Lee, Terrence J. Sejnowski
+jmlr-v3-6 | Learning Precise Timing with LSTM Recurrent Networks | http://jmlr.csail.mit.edu/papers/v3/gers02a.html | category:paper author:Felix A. Gers, Nicol N. Schraudolph, Jürgen Schmidhuber
+jmlr-v3-7 | ε-MDPs: Learning in Varying Environments | http://jmlr.csail.mit.edu/papers/v3/szita02a.html | category:paper author:István Szita, Bálint Takács, András Lörincz
+jmlr-v3-8 | Algorithmic Luckiness | http://jmlr.csail.mit.edu/papers/v3/herbrich02a.html | category:paper author:Ralf Herbrich, Robert C. Williamson
+jmlr-v3-9 | R-MAX - A General Polynomial Time Algorithm for Near-Optimal Reinforcement Learning | http://jmlr.csail.mit.edu/papers/v3/brafman02a.html | category:paper author:Ronen I. Brafman, Moshe Tennenholtz
+jmlr-v3-10 | PAC-Bayesian Generalisation Error Bounds for Gaussian Process Classification | http://jmlr.csail.mit.edu/papers/v3/seeger02a.html | category:paper author:Matthias Seeger
+jmlr-v3-11 | On Online Learning of Decision Lists | http://jmlr.csail.mit.edu/papers/v3/nevo02a.html | category:paper author:Ziv Nevo, Ran El-Yaniv
+jmlr-v3-12 | Minimal Kernel Classifiers | http://jmlr.csail.mit.edu/papers/v3/fung02a.html | category:paper author:Glenn M. Fung, Olvi L. Mangasarian, Alexander J. Smola
+jmlr-v3-13 | The Subspace Information Criterion for Infinite Dimensional Hypothesis Spaces | http://jmlr.csail.mit.edu/papers/v3/sugiyama02a.html | category:paper author:Masashi Sugiyama, Klaus-Robert Müller
+jmlr-v3-14 | Introduction to the Special Issue on Computational Learning Theory | http://www.jmlr.org/papers/volume3/long02a/long02a.pdf | category:paper author:Philip M. Long
+jmlr-v3-15 | Tracking a Small Set of Experts by Mixing Past Posteriors | http://jmlr.csail.mit.edu/papers/v3/bousquet02b.html | category:paper author:Olivier Bousquet, Manfred K. Warmuth
+jmlr-v3-16 | Using Confidence Bounds for Exploitation-Exploration Trade-offs | http://jmlr.csail.mit.edu/papers/v3/auer02a.html | category:paper author:Peter Auer
+jmlr-v3-17 | Efficient Algorithms for Universal Portfolios | http://jmlr.csail.mit.edu/papers/v3/kalai02a.html | category:paper author:Adam Kalai, Santosh Vempala
+jmlr-v3-18 | Limitations of Learning Via Embeddings in Euclidean Half Spaces | http://jmlr.csail.mit.edu/papers/v3/bendavid02a.html | category:paper author:Shai Ben-David, Nadav Eiron, Hans Ulrich Simon
+jmlr-v3-19 | Rademacher and Gaussian Complexities: Risk Bounds and Structural Results | http://jmlr.csail.mit.edu/papers/v3/bartlett02a.html | category:paper author:Peter L. Bartlett, Shahar Mendelson
+jmlr-v3-20 | On Boosting with Polynomially Bounded Distributions | http://jmlr.csail.mit.edu/papers/v3/bshouty02b.html | category:paper author:Nader H. Bshouty, Dmitry Gavinsky
+jmlr-v3-21 | Optimal Structure Identification With Greedy Search | http://jmlr.csail.mit.edu/papers/v3/chickering02b.html | category:paper author:David Maxwell Chickering
+jmlr-v3-22 | A Robust Minimax Approach to Classification | http://jmlr.csail.mit.edu/papers/v3/lanckriet02a.html | category:paper author:Gert R.G. Lanckriet, Laurent El Ghaoui, Chiranjib Bhattacharyya, Michael I. Jordan
+jmlr-v3-23 | Cluster Ensembles --- A Knowledge Reuse Framework for Combining Multiple Partitions | http://jmlr.csail.mit.edu/papers/v3/strehl02a.html | category:paper author:Alexander Strehl, Joydeep Ghosh
+jmlr-v3-24 | Special Issue on the Eighteenth International Conference on Machine Learning | http://www.jmlr.org/papers/volume3/brodley02a/brodley02a.pdf | category:paper author:Carla E. Brodley, Andrea P. Danyluk
+jmlr-v3-25 | Efficient Algorithms for Decision Tree Cross-validation | http://jmlr.csail.mit.edu/papers/v3/blockeel02a.html | category:paper author:Hendrik Blockeel, Jan Struyf
+jmlr-v3-26 | Multiple-Instance Learning of Real-Valued Data | http://jmlr.csail.mit.edu/papers/v3/dooly02a.html | category:paper author:Daniel R. Dooly, Qi Zhang, Sally A. Goldman, Robert A. Amar
+jmlr-v3-27 | Learning Probabilistic Models of Link Structure | http://jmlr.csail.mit.edu/papers/v3/getoor02a.html | category:paper author:Lisa Getoor, Nir Friedman, Daphne Koller, Benjamin Taskar
+jmlr-v3-28 | The Representational Power of Discrete Bayesian Networks | http://jmlr.csail.mit.edu/papers/v3/ling02a.html | category:paper author:Charles X. Ling, Huajie Zhang
+jmlr-v3-29 | The Set Covering Machine | http://jmlr.csail.mit.edu/papers/v3/marchand02a.html | category:paper author:Mario Marchand, John Shawe-Taylor
+jmlr-v3-30 | Coupled Clustering: A Method for Detecting Structural Correspondence | http://jmlr.csail.mit.edu/papers/v3/marx02a.html | category:paper author:Zvika Marx, Ido Dagan, Joachim M. Buhmann, Eli Shamir
+jmlr-v3-31 | Some Greedy Learning Algorithms for Sparse Regression and Classification with Mercer Kernels | http://jmlr.csail.mit.edu/papers/v3/nair02a.html | category:paper author:Prasanth B. Nair, Arindam Choudhury, Andy J. Keane
+jmlr-v3-32 | Lyapunov Design for Safe Reinforcement Learning | http://jmlr.csail.mit.edu/papers/v3/perkins02a.html | category:paper author:Theodore J. Perkins, Andrew G. Barto
+jmlr-v3-33 | Finding the Most Interesting Patterns in a Database Quickly by Using Sequential Sampling | http://jmlr.csail.mit.edu/papers/v3/scheffer02a.html | category:paper author:Tobias Scheffer, Stefan Wrobel
+jmlr-v3-34 | Stopping Criterion for Boosting-Based Data Reduction Techniques: from Binary to Multiclass Problem | http://jmlr.csail.mit.edu/papers/v3/sebban02a.html | category:paper author:Marc Sebban, Richard Nock, Stéphane Lallich
+jmlr-v3-35 | Learning to Construct Fast Signal Processing Implementations | http://jmlr.csail.mit.edu/papers/v3/singer02a.html | category:paper author:Bryan Singer, Manuela Veloso
+jmlr-v3-36 | Policy Search using Paired Comparisons | http://jmlr.csail.mit.edu/papers/v3/strens02a.html | category:paper author:Malcolm J. A. Strens, Andrew W. Moore
+jmlr-v3-37 | Ultraconservative Online Algorithms for Multiclass Problems | http://jmlr.csail.mit.edu/papers/v3/crammer03a.html | category:paper author:Koby Crammer, Yoram Singer
+jmlr-v3-38 | Latent Dirichlet Allocation | http://jmlr.csail.mit.edu/papers/v3/blei03a.html | category:paper author:David M. Blei, Andrew Y. Ng, Michael I. Jordan
+jmlr-v3-39 | Introduction to the Special Issue on Machine Learning Methods for Text and Images | http://www.jmlr.org/papers/volume3/kandola03a/kandola03a.pdf | category:paper author:Jaz Kandola, Thomas Hofmann, Tomaso Poggio, John Shawe-Taylor
+jmlr-v3-40 | A Family of Additive Online Algorithms for Category Ranking | http://jmlr.csail.mit.edu/papers/v3/crammer03b.html | category:paper author:Koby Crammer, Yoram Singer
+jmlr-v3-41 | Word-Sequence Kernels | http://jmlr.csail.mit.edu/papers/v3/cancedda03a.html | category:paper author:Nicola Cancedda, Eric Gaussier, Cyril Goutte, Jean-Michel Renders
+jmlr-v3-42 | Kernel Methods for Relation Extraction | http://jmlr.csail.mit.edu/papers/v3/zelenko03a.html | category:paper author:Dmitry Zelenko, Chinatsu Aone, Anthony Richardella
+jmlr-v3-43 | Matching Words and Pictures | http://jmlr.csail.mit.edu/papers/v3/barnard03a.html | category:paper author:Kobus Barnard, Pinar Duygulu, David Forsyth, Nando de Freitas,David M. Blei, Michael I. Jordan
+jmlr-v3-44 | A Neural Probabilistic Language Model | http://jmlr.csail.mit.edu/papers/v3/bengio03a.html | category:paper author:Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin
+jmlr-v3-45 | An Introduction to Variable and Feature Selection | http://jmlr.csail.mit.edu/papers/v3/guyon03a.html | category:paper author:Isabelle Guyon, André Elisseeff
+jmlr-v3-46 | Distributional Word Clusters vs. Words for Text Categorization | http://jmlr.csail.mit.edu/papers/v3/bekkerman03a.html | category:paper author:Ron Bekkerman, Ran El-Yaniv, Naftali Tishby, Yoad Winter
+jmlr-v3-47 | Extensions to Metric-Based Model Selection | http://jmlr.csail.mit.edu/papers/v3/bengio03b.html | category:paper author:Yoshua Bengio, Nicolas Chapados
+jmlr-v3-48 | Dimensionality Reduction via Sparse Support Vector Machines | http://jmlr.csail.mit.edu/papers/v3/bi03a.html | category:paper author:Jinbo Bi, Kristin Bennett, Mark Embrechts, Curt Breneman, Minghu Song
+jmlr-v3-49 | Benefitting from the Variables that Variable Selection Discards | http://jmlr.csail.mit.edu/papers/v3/caruana03a.html | category:paper author:Rich Caruana, Virginia R. de Sa
+jmlr-v3-50 | A Divisive Information-Theoretic Feature Clustering Algorithm for Text Classification | http://jmlr.csail.mit.edu/papers/v3/dhillon03a.html | category:paper author:Inderjit S. Dhillon, Subramanyam Mallela, Rahul Kumar
+jmlr-v3-51 | An Extensive Empirical Study of Feature Selection Metrics for Text Classification | http://jmlr.csail.mit.edu/papers/v3/forman03a.html | category:paper author:George Forman
+jmlr-v3-52 | Sufficient Dimensionality Reduction | http://jmlr.csail.mit.edu/papers/v3/globerson03a.html | category:paper author:Amir Globerson, Naftali Tishby
+jmlr-v3-53 | Grafting: Fast, Incremental Feature Selection by Gradient Descent in Function Space | http://jmlr.csail.mit.edu/papers/v3/perkins03a.html | category:paper author:Simon Perkins, Kevin Lacker, James Theiler
+jmlr-v3-54 | Variable Selection Using SVM-based Criteria | http://jmlr.csail.mit.edu/papers/v3/rakotomamonjy03a.html | category:paper author:Alain Rakotomamonjy
+jmlr-v3-55 | Overfitting in Making Comparisons Between Variable Selection Methods | http://jmlr.csail.mit.edu/papers/v3/reunanen03a.html | category:paper author:Juha Reunanen
+jmlr-v3-56 | MLPs | http://jmlr.csail.mit.edu/papers/v3/rivals03a.html | category:paper author:Isabelle Rivals, Léon Personnaz
+jmlr-v3-57 | Ranking a Random Feature for Variable and Feature Selection | http://jmlr.csail.mit.edu/papers/v3/stoppiglia03a.html | category:paper author:Hervé Stoppiglia, Gérard Dreyfus, Rémi Dubois, Yacine Oussar
+jmlr-v3-58 | Feature Extraction by Non-Parametric Mutual Information Maximization | http://jmlr.csail.mit.edu/papers/v3/torkkola03a.html | category:paper author:Kari Torkkola
+jmlr-v3-59 | Use of the Zero-Norm with Linear Models and Kernel Methods | http://jmlr.csail.mit.edu/papers/v3/weston03a.html | category:paper author:Jason Weston, André Elisseeff, Bernhard Schölkopf, Mike Tipping

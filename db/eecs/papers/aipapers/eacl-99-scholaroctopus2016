@@ -1,52 +1,52 @@
-E99-1001 | Named Entity Recognition without Gazetteers | http://www.aclweb.org/anthology/E/E99/E99-1001.pdf | author:Andrei Mikheev; Marc Moens; Claire Grover
-E99-1002 | Generating referring expressions with a unification grammar | http://www.aclweb.org/anthology/E/E99/E99-1002.pdf | author:Richard Power
-E99-1003 | TERM EXTRACTION -I- TERM CLUSTERING: An Integrated Platform for Computer-Aided Terminology | http://www.aclweb.org/anthology/E/E99/E99-1003.pdf | author:Didier Bourigault; Christian Jacquemin
-E99-1004 | An Object-Oriented Approach to the Design of Dialogue Management Functionality | http://www.aclweb.org/anthology/E/E99/E99-1004.pdf | author:Ian M. O'Neill; Michael F. McTear
-E99-1005 | Determinants of Adjective-Noun Plausibility | http://www.aclweb.org/anthology/E/E99/E99-1005.pdf | author:Maria Lapata; Scott McDonald; Frank Keller
-E99-1006 | Resolving Discourse Deictic Anaphora in Dialogues | http://www.aclweb.org/anthology/E/E99/E99-1006.pdf | author:Miriam Eckert; Michael Strube
-E99-1007 | Automatic Verb Classification Using Distributions of Grammatical Features | http://www.aclweb.org/anthology/E/E99/E99-1007.pdf | author:Suzanne Stevenson; Paola Merlo
-E99-1008 | Chinese Numbers, MIX, Scrambling, and Concatenation Grammars Range | http://www.aclweb.org/anthology/E/E99/E99-1008.pdf | author:Pierre Boulli
-E99-1009 | Geometry of Lexico-Syntactic Interaction | http://www.aclweb.org/anthology/E/E99/E99-1009.pdf | author:Glyn Morrill
-E99-1010 | An Efficient Method for Determining Bilingual Word Classes | http://www.aclweb.org/anthology/E/E99/E99-1010.pdf | author:Franz Josef Och
-E99-1011 | The TIPSTER SUMMAC Text Summarization Evaluation | http://www.aclweb.org/anthology/E/E99/E99-1011.pdf | author:Inderjeet Mani; David House; Gary Klein; Lynette Hirschman; Therese Firmin; Beth Sundheim
-E99-1012 | Ambiguous propositions typed | http://www.aclweb.org/anthology/E/E99/E99-1012.pdf | author:Tim Fernando
-E99-1013 | Complementing WordNet with Roget's and Corpus-based Thesauri for Information Retrieval | http://www.aclweb.org/anthology/E/E99/E99-1013.pdf | author:Rila Mandala; Takenobu Tokunaga; Hozumi Tanaka
-E99-1014 | Full Text Parsing using Cascades of Rules: an Information Extraction Perspective | http://www.aclweb.org/anthology/E/E99/E99-1014.pdf | author:Fabio Ciravegna; Alberto Lavelli
-E99-1015 | An annotation scheme for discourse-level argumentation in research articles | http://www.aclweb.org/anthology/E/E99/E99-1015.pdf | author:Simone Teufel; Jean Carlettat; Marc Moens
-E99-1016 | Cascaded Markov Models | http://www.aclweb.org/anthology/E/E99/E99-1016.pdf | author:Thorsten Brants
-E99-1017 | Transducers from Rewrite Rules with Backreferences | http://www.aclweb.org/anthology/E/E99/E99-1017.pdf | author:Dale Gerdemann; Gertjan van Noord
-E99-1018 | POS Disambiguation and Unknown Word Guessing with Decision Trees | http://www.aclweb.org/anthology/E/E99/E99-1018.pdf | author:Giorgos S. Orphanos; Dimitris N. Christodoulakis
-E99-1019 | Exploring the Use of Linguistic Features in Domain and Genre Classification | http://www.aclweb.org/anthology/E/E99/E99-1019.pdf | author:Maria Wolters; Mathias Kirsten
-E99-1020 | Tabular Algorithms for TAG Parsing | http://www.aclweb.org/anthology/E/E99/E99-1020.pdf | author:Miguel A. Alonso; David Cabrero; Eric de la Clergerie; Manuel Vilares
-E99-1021 | Automatic Authorship Attribution | http://www.aclweb.org/anthology/E/E99/E99-1021.pdf | author:E. StamatatosN. Fakotakis; G. Kokkinakis
-E99-1022 | Selective Magic HPSG Parsing | http://www.aclweb.org/anthology/E/E99/E99-1022.pdf | author:Guido Minnen
-E99-1023 | Representing Text Chunks | http://www.aclweb.org/anthology/E/E99/E99-1023.pdf | author:Erik F. Tjong; Kim Sang; Jorn Veenstra
-E99-1024 | Detection of Japanese Homophone Errors by a Decision List Including a Written Word as a Default Evidence | http://www.aclweb.org/anthology/E/E99/E99-1024.pdf | author:Hiroyuki Shinnou
-E99-1025 | New Models for Improving Supertag Disambiguation | http://www.aclweb.org/anthology/E/E99/E99-1025.pdf | author:John Chen; Srinivas Bangalore
-E99-1026 | Japanese Dependency Structure Analysis Based on Maximum Entropy Models | http://www.aclweb.org/anthology/E/E99/E99-1026.pdf | author:Kiyotaka Uchimoto; Satoshi Sekine; Hitoshi Isahara
-E99-1027 | An experiment on the upper bound of interjudge agreement: the case of tagging | http://www.aclweb.org/anthology/E/E99/E99-1027.pdf | author:Atro Voutilainen
-E99-1028 | Word Sense Disambiguation in Untagged Text based on Term Weight Learning | http://www.aclweb.org/anthology/E/E99/E99-1028.pdf | author:Fumiyo Fukumoto; Yoshimi Suzuki
-E99-1029 | Parsing with an Extended Domain of Locality | http://www.aclweb.org/anthology/E/E99/E99-1029.pdf | author:John Carroll; Nicolas Nicolov; Olga Shaumyan; Martine Smets; David Weir
-E99-1030 | The Development of Lexical Resources for Information Extraction from Text Combining WordNet and Dewey Decimal Classification | http://www.aclweb.org/anthology/E/E99/E99-1030.pdf | author:Gabriela Cavaglia
-E99-1031 | A Flexible Architecture for Reference Resolution | http://www.aclweb.org/anthology/E/E99/E99-1031.pdf | author:Donna K. Byron; Joel R. Tetreault
-E99-1032 | Result Stages and the Lexicon: The Proper Treatment of Event Structure | http://www.aclweb.org/anthology/E/E99/E99-1032.pdf | author:Patrick Caudal
-E99-1033 | Investigating NLG Architectures: taking style into consideration | http://www.aclweb.org/anthology/E/E99/E99-1033.pdf | author:Daniel S. Paiva
-E99-1034 | Finding content-bearing terms using term similarities | http://www.aclweb.org/anthology/E/E99/E99-1034.pdf | author:Justin Picard
-E99-1035 | A Cascaded Finite-State Parser for Syntactic Analysis of Swedish | http://www.aclweb.org/anthology/E/E99/E99-1035.pdf | author:Dimitrios Kokkinakis; Sofie Johansson Kokkinakis
-E99-1036 | Repair Strategies for Lexicalized Tree Grammars | http://www.aclweb.org/anthology/E/E99/E99-1036.pdf | author:Patrice Lopez
-E99-1037 | Dialogue Processing in a CALL-System | http://www.aclweb.org/anthology/E/E99/E99-1037.pdf | author:Veit Reuer
-E99-1038 | Focusing on focus: a formalization | http://www.aclweb.org/anthology/E/E99/E99-1038.pdf | author:Yan Zuo
-E99-1039 | Representing a System of Lexical Types Using Default Unification | http://www.aclweb.org/anthology/E/E99/E99-1039.pdf | author:Aline Villavicencio
-E99-1040 | Designing spelling correctors for inflected languages using lexical transducers | http://www.aclweb.org/anthology/E/E99/E99-1040.pdf | author:I. Aldezabal; I. Alegria; 0. Ansa; J. M. Arriola; N. Ezeiza
-E99-1041 | The Treegram Index-An Efficient Technique for Retrieval in Linguistic Treebanks | http://www.aclweb.org/anthology/E/E99/E99-1041.pdf | author:Hans Argenton; Anke Feldhaus
-E99-1042 | Simplifying Text for Language-Impaired Readers | http://www.aclweb.org/anthology/E/E99/E99-1042.pdf | author:John Carroll; Guido Minnen; Darren Pearce; Yvonne Canning; Siobhan Devlin; John Tait
-E99-1043 | The GENIA project: corpus-based knowledge acquisition and information extraction from genome research papers | http://www.aclweb.org/anthology/E/E99/E99-1043.pdf | author:Nigel Collier; Hyun Seok Park; Norihiro Ogata; Yuka Tateishi; Chikashi Nobata; Tomoko Ohta; Tateshi Sekimizu; Hisao Imai; Katsutoshi Ibushi; Jun-ichi Tsujii
-E99-1044 | A Note on Categorial Grammar, Disharmony and Permutation | http://www.aclweb.org/anthology/E/E99/E99-1044.pdf | author:Crit Cremers
-E99-1045 | Encoding a Parallel Corpus for Automatic Terminology Extraction | http://www.aclweb.org/anthology/E/E99/E99-1045.pdf | author:Johann Gamper 
-E99-1046 | 95% Replicability for Manual Word Sense Tagging | http://www.aclweb.org/anthology/E/E99/E99-1046.pdf | author:Adam Kilgarriff
-E99-1047 | u-TBL Lite: A Small, Extendible Transformation-Based Learner | http://www.aclweb.org/anthology/E/E99/E99-1047.pdf | author:Torbjorn Lager
-E99-1048 | Comparison and Classification of Dialects | http://www.aclweb.org/anthology/E/E99/E99-1048.pdf | author:John Nerbonne; Wilbert Heeringa; Peter Kleiweg
-E99-1049 | Pointing to Events | http://www.aclweb.org/anthology/E/E99/E99-1049.pdf | author:Frank Schilder
-E99-1050 | A Corpus-Based Approach to Deriving Lexical Mappings | http://www.aclweb.org/anthology/E/E99/E99-1050.pdf | author:Mark Stevenson
-E99-1051 | Robust and Flexible Mixed-Initiative Dialogue for Telephone Services | http://www.aclweb.org/anthology/E/E99/E99-1051.pdf | author:Relano Gil, Jose; Tapias, Daniel; Gancedo, Maria C.; Charfuelan Marcela; Herndndez, Luis A
-E99-1052 | Determination of Syntactic Functions in Estonian Constraint Grammar | http://www.aclweb.org/anthology/E/E99/E99-1052.pdf | author:Kaili Muiirisep
+E99-1001 | Named Entity Recognition without Gazetteers | http://www.aclweb.org/anthology/E/E99/E99-1001.pdf | category:paper author:Andrei Mikheev; Marc Moens; Claire Grover
+E99-1002 | Generating referring expressions with a unification grammar | http://www.aclweb.org/anthology/E/E99/E99-1002.pdf | category:paper author:Richard Power
+E99-1003 | TERM EXTRACTION -I- TERM CLUSTERING: An Integrated Platform for Computer-Aided Terminology | http://www.aclweb.org/anthology/E/E99/E99-1003.pdf | category:paper author:Didier Bourigault; Christian Jacquemin
+E99-1004 | An Object-Oriented Approach to the Design of Dialogue Management Functionality | http://www.aclweb.org/anthology/E/E99/E99-1004.pdf | category:paper author:Ian M. O'Neill; Michael F. McTear
+E99-1005 | Determinants of Adjective-Noun Plausibility | http://www.aclweb.org/anthology/E/E99/E99-1005.pdf | category:paper author:Maria Lapata; Scott McDonald; Frank Keller
+E99-1006 | Resolving Discourse Deictic Anaphora in Dialogues | http://www.aclweb.org/anthology/E/E99/E99-1006.pdf | category:paper author:Miriam Eckert; Michael Strube
+E99-1007 | Automatic Verb Classification Using Distributions of Grammatical Features | http://www.aclweb.org/anthology/E/E99/E99-1007.pdf | category:paper author:Suzanne Stevenson; Paola Merlo
+E99-1008 | Chinese Numbers, MIX, Scrambling, and Concatenation Grammars Range | http://www.aclweb.org/anthology/E/E99/E99-1008.pdf | category:paper author:Pierre Boulli
+E99-1009 | Geometry of Lexico-Syntactic Interaction | http://www.aclweb.org/anthology/E/E99/E99-1009.pdf | category:paper author:Glyn Morrill
+E99-1010 | An Efficient Method for Determining Bilingual Word Classes | http://www.aclweb.org/anthology/E/E99/E99-1010.pdf | category:paper author:Franz Josef Och
+E99-1011 | The TIPSTER SUMMAC Text Summarization Evaluation | http://www.aclweb.org/anthology/E/E99/E99-1011.pdf | category:paper author:Inderjeet Mani; David House; Gary Klein; Lynette Hirschman; Therese Firmin; Beth Sundheim
+E99-1012 | Ambiguous propositions typed | http://www.aclweb.org/anthology/E/E99/E99-1012.pdf | category:paper author:Tim Fernando
+E99-1013 | Complementing WordNet with Roget's and Corpus-based Thesauri for Information Retrieval | http://www.aclweb.org/anthology/E/E99/E99-1013.pdf | category:paper author:Rila Mandala; Takenobu Tokunaga; Hozumi Tanaka
+E99-1014 | Full Text Parsing using Cascades of Rules: an Information Extraction Perspective | http://www.aclweb.org/anthology/E/E99/E99-1014.pdf | category:paper author:Fabio Ciravegna; Alberto Lavelli
+E99-1015 | An annotation scheme for discourse-level argumentation in research articles | http://www.aclweb.org/anthology/E/E99/E99-1015.pdf | category:paper author:Simone Teufel; Jean Carlettat; Marc Moens
+E99-1016 | Cascaded Markov Models | http://www.aclweb.org/anthology/E/E99/E99-1016.pdf | category:paper author:Thorsten Brants
+E99-1017 | Transducers from Rewrite Rules with Backreferences | http://www.aclweb.org/anthology/E/E99/E99-1017.pdf | category:paper author:Dale Gerdemann; Gertjan van Noord
+E99-1018 | POS Disambiguation and Unknown Word Guessing with Decision Trees | http://www.aclweb.org/anthology/E/E99/E99-1018.pdf | category:paper author:Giorgos S. Orphanos; Dimitris N. Christodoulakis
+E99-1019 | Exploring the Use of Linguistic Features in Domain and Genre Classification | http://www.aclweb.org/anthology/E/E99/E99-1019.pdf | category:paper author:Maria Wolters; Mathias Kirsten
+E99-1020 | Tabular Algorithms for TAG Parsing | http://www.aclweb.org/anthology/E/E99/E99-1020.pdf | category:paper author:Miguel A. Alonso; David Cabrero; Eric de la Clergerie; Manuel Vilares
+E99-1021 | Automatic Authorship Attribution | http://www.aclweb.org/anthology/E/E99/E99-1021.pdf | category:paper author:E. StamatatosN. Fakotakis; G. Kokkinakis
+E99-1022 | Selective Magic HPSG Parsing | http://www.aclweb.org/anthology/E/E99/E99-1022.pdf | category:paper author:Guido Minnen
+E99-1023 | Representing Text Chunks | http://www.aclweb.org/anthology/E/E99/E99-1023.pdf | category:paper author:Erik F. Tjong; Kim Sang; Jorn Veenstra
+E99-1024 | Detection of Japanese Homophone Errors by a Decision List Including a Written Word as a Default Evidence | http://www.aclweb.org/anthology/E/E99/E99-1024.pdf | category:paper author:Hiroyuki Shinnou
+E99-1025 | New Models for Improving Supertag Disambiguation | http://www.aclweb.org/anthology/E/E99/E99-1025.pdf | category:paper author:John Chen; Srinivas Bangalore
+E99-1026 | Japanese Dependency Structure Analysis Based on Maximum Entropy Models | http://www.aclweb.org/anthology/E/E99/E99-1026.pdf | category:paper author:Kiyotaka Uchimoto; Satoshi Sekine; Hitoshi Isahara
+E99-1027 | An experiment on the upper bound of interjudge agreement: the case of tagging | http://www.aclweb.org/anthology/E/E99/E99-1027.pdf | category:paper author:Atro Voutilainen
+E99-1028 | Word Sense Disambiguation in Untagged Text based on Term Weight Learning | http://www.aclweb.org/anthology/E/E99/E99-1028.pdf | category:paper author:Fumiyo Fukumoto; Yoshimi Suzuki
+E99-1029 | Parsing with an Extended Domain of Locality | http://www.aclweb.org/anthology/E/E99/E99-1029.pdf | category:paper author:John Carroll; Nicolas Nicolov; Olga Shaumyan; Martine Smets; David Weir
+E99-1030 | The Development of Lexical Resources for Information Extraction from Text Combining WordNet and Dewey Decimal Classification | http://www.aclweb.org/anthology/E/E99/E99-1030.pdf | category:paper author:Gabriela Cavaglia
+E99-1031 | A Flexible Architecture for Reference Resolution | http://www.aclweb.org/anthology/E/E99/E99-1031.pdf | category:paper author:Donna K. Byron; Joel R. Tetreault
+E99-1032 | Result Stages and the Lexicon: The Proper Treatment of Event Structure | http://www.aclweb.org/anthology/E/E99/E99-1032.pdf | category:paper author:Patrick Caudal
+E99-1033 | Investigating NLG Architectures: taking style into consideration | http://www.aclweb.org/anthology/E/E99/E99-1033.pdf | category:paper author:Daniel S. Paiva
+E99-1034 | Finding content-bearing terms using term similarities | http://www.aclweb.org/anthology/E/E99/E99-1034.pdf | category:paper author:Justin Picard
+E99-1035 | A Cascaded Finite-State Parser for Syntactic Analysis of Swedish | http://www.aclweb.org/anthology/E/E99/E99-1035.pdf | category:paper author:Dimitrios Kokkinakis; Sofie Johansson Kokkinakis
+E99-1036 | Repair Strategies for Lexicalized Tree Grammars | http://www.aclweb.org/anthology/E/E99/E99-1036.pdf | category:paper author:Patrice Lopez
+E99-1037 | Dialogue Processing in a CALL-System | http://www.aclweb.org/anthology/E/E99/E99-1037.pdf | category:paper author:Veit Reuer
+E99-1038 | Focusing on focus: a formalization | http://www.aclweb.org/anthology/E/E99/E99-1038.pdf | category:paper author:Yan Zuo
+E99-1039 | Representing a System of Lexical Types Using Default Unification | http://www.aclweb.org/anthology/E/E99/E99-1039.pdf | category:paper author:Aline Villavicencio
+E99-1040 | Designing spelling correctors for inflected languages using lexical transducers | http://www.aclweb.org/anthology/E/E99/E99-1040.pdf | category:paper author:I. Aldezabal; I. Alegria; 0. Ansa; J. M. Arriola; N. Ezeiza
+E99-1041 | The Treegram Index-An Efficient Technique for Retrieval in Linguistic Treebanks | http://www.aclweb.org/anthology/E/E99/E99-1041.pdf | category:paper author:Hans Argenton; Anke Feldhaus
+E99-1042 | Simplifying Text for Language-Impaired Readers | http://www.aclweb.org/anthology/E/E99/E99-1042.pdf | category:paper author:John Carroll; Guido Minnen; Darren Pearce; Yvonne Canning; Siobhan Devlin; John Tait
+E99-1043 | The GENIA project: corpus-based knowledge acquisition and information extraction from genome research papers | http://www.aclweb.org/anthology/E/E99/E99-1043.pdf | category:paper author:Nigel Collier; Hyun Seok Park; Norihiro Ogata; Yuka Tateishi; Chikashi Nobata; Tomoko Ohta; Tateshi Sekimizu; Hisao Imai; Katsutoshi Ibushi; Jun-ichi Tsujii
+E99-1044 | A Note on Categorial Grammar, Disharmony and Permutation | http://www.aclweb.org/anthology/E/E99/E99-1044.pdf | category:paper author:Crit Cremers
+E99-1045 | Encoding a Parallel Corpus for Automatic Terminology Extraction | http://www.aclweb.org/anthology/E/E99/E99-1045.pdf | category:paper author:Johann Gamper 
+E99-1046 | 95% Replicability for Manual Word Sense Tagging | http://www.aclweb.org/anthology/E/E99/E99-1046.pdf | category:paper author:Adam Kilgarriff
+E99-1047 | u-TBL Lite: A Small, Extendible Transformation-Based Learner | http://www.aclweb.org/anthology/E/E99/E99-1047.pdf | category:paper author:Torbjorn Lager
+E99-1048 | Comparison and Classification of Dialects | http://www.aclweb.org/anthology/E/E99/E99-1048.pdf | category:paper author:John Nerbonne; Wilbert Heeringa; Peter Kleiweg
+E99-1049 | Pointing to Events | http://www.aclweb.org/anthology/E/E99/E99-1049.pdf | category:paper author:Frank Schilder
+E99-1050 | A Corpus-Based Approach to Deriving Lexical Mappings | http://www.aclweb.org/anthology/E/E99/E99-1050.pdf | category:paper author:Mark Stevenson
+E99-1051 | Robust and Flexible Mixed-Initiative Dialogue for Telephone Services | http://www.aclweb.org/anthology/E/E99/E99-1051.pdf | category:paper author:Relano Gil, Jose; Tapias, Daniel; Gancedo, Maria C.; Charfuelan Marcela; Herndndez, Luis A
+E99-1052 | Determination of Syntactic Functions in Estonian Constraint Grammar | http://www.aclweb.org/anthology/E/E99/E99-1052.pdf | category:paper author:Kaili Muiirisep

@@ -1,75 +1,75 @@
-H01-1001 | Activity detection for information access to oral communication | http://www.aclweb.org/anthology/H/H01/H01-1001.pdf | author:K. Ries; A. Waibel
-H01-1002 | Adapting an Example-Based Translation System to Chinese | http://www.aclweb.org/anthology/H/H01/H01-1002.pdf | author:Y. Zhang; R.D. Brown; R.E. Frederking
-H01-1003 | Advances in meeting recognition | http://www.aclweb.org/anthology/H/H01/H01-1003.pdf | author:A. Waibel; H. Yu; T. Schultz; Y. Pan; M. Bett; M. Westphal; H. Soltau; T. Schaaf; F. Metze
-H01-1004 | Amount of Information Presented in a Complex List: Effects on User Performance | http://www.aclweb.org/anthology/H/H01/H01-1004.pdf | author:D. Dutton; M. Walker; S. Chu; J. Hubbell; S. Narayanan
-H01-1005 | The Annotation Graph Toolkit: Software Components for Building Linguistic Annotation Tools | http://www.aclweb.org/anthology/H/H01/H01-1005.pdf | author:K. Maeda; S. Bird; X. Ma; H. Lee
-H01-1006 | Answering What-Is Questions by Virtual Annotation | http://www.aclweb.org/anthology/H/H01/H01-1006.pdf | author:J. Prager; D. Radev; K. Czuba
-H01-1007 | Architecture and Design Considerations in NESPOLE!: a Speech Translation System for E-commerce Applications | http://www.aclweb.org/anthology/H/H01/H01-1007.pdf | author:A. Lavie; C. Langley; A. Waibel; F. Pianesi; G. Lazzari; P. Coletti; L. Taddei; F. Balducci
-H01-1008 | Assigning Belief Scores to Names in Queries | http://www.aclweb.org/anthology/H/H01/H01-1008.pdf | author:C. Dozier
-H01-1009 | Automatic Pattern Acquisition for Japanese Information Extraction | http://www.aclweb.org/anthology/H/H01/H01-1009.pdf | author:K. Sudo; S. Sekine; R. Grishman
-H01-1010 | Automatic Predicate Argument Analysis of the Penn TreeBank | http://www.aclweb.org/anthology/H/H01/H01-1010.pdf | author:M. Palmer; J. Rosenzweig; S. Cotton
-H01-1011 | Automatic Title Generation for Spoken Broadcast News | http://www.aclweb.org/anthology/H/H01/H01-1011.pdf | author:R. Jin; A. Hauptmann
-H01-1012 | A Conversational Interface for Online Shopping | http://www.aclweb.org/anthology/H/H01/H01-1012.pdf | author:J. Chai; V. Horvath; N. Kambhatla; N. Nicolov; M. Stys-Budzikowska
-H01-1013 | Conversational Sales Assistant for Online Shopping | http://www.aclweb.org/anthology/H/H01/H01-1013.pdf | author:M. Budzikowska; J. Chai; S. Govindappa; V. Horvath; N. Kambhatla; N. Nicolov; W. Zadrozny
-H01-1014 | Converting Dependency Structures to Phrase Structures | http://www.aclweb.org/anthology/H/H01/H01-1014.pdf | author:F. Xia; M. Palmer
-H01-1015 | DATE: A Dialogue Act Tagging Scheme for Evaluation of Spoken Dialogue Systems | http://www.aclweb.org/anthology/H/H01/H01-1015.pdf | author:M. Walker; R. Passonneau
-H01-1016 | Development of the HRL Route Navigation Dialogue System | http://www.aclweb.org/anthology/H/H01/H01-1016.pdf | author:R. Belvin; R. Burns; C. Hein
-H01-1017 | Dialogue Interaction with the DARPA Communicator Infrastructure: The Development of Useful Software | http://www.aclweb.org/anthology/H/H01/H01-1017.pdf | author:S. Bayer; C. Doran; B. George
-H01-1018 | Domain Portability in Speech-to-Speech Translation | http://www.aclweb.org/anthology/H/H01/H01-1018.pdf | author:A. Lavie; L Levin; T. Schultz; C. Langley; B. Han; A. Tribble; D. Gates; D. Wallace; K. Peterson
-H01-1019 | English-Chinese CLIR using a Simplified PIRCS System | http://www.aclweb.org/anthology/H/H01/H01-1019.pdf | author:K.L. Kwok; N. Dinstl; P. Deng
-H01-1020 | Entry Vocabulary - a Technology to Enhance Digital Search | http://www.aclweb.org/anthology/H/H01/H01-1020.pdf | author:F. Gey; M. Buckland; A. Chen; R. Larson
-H01-1021 | Evaluating Question-Answering Techniques in Chinese | http://www.aclweb.org/anthology/H/H01/H01-1021.pdf | author:X. Li; W.B. Croft
-H01-1022 | An Evaluation Corpus For Temporal Summarization | http://www.aclweb.org/anthology/H/H01/H01-1022.pdf | author:V. Khandelwal; R. Gupta; J. Allan
-H01-1023 | Evaluation Results for the Talk'n'Travel System | http://www.aclweb.org/anthology/H/H01/H01-1023.pdf | author:D. Stallard
-H01-1024 | Experiments in Multi-Modal Automatic Content Extraction | http://www.aclweb.org/anthology/H/H01/H01-1024.pdf | author:L. Ramshaw; E. Boschee; S. Bratus; S. Miller; R. Stone; R. Weischedel; A. Zamanian
-H01-1025 | Exploring Speech-Enabled Dialogue with the Galaxy Communicator Infrastructure | http://www.aclweb.org/anthology/H/H01/H01-1025.pdf | author:S. Bayer; C. Doran; B. George
-H01-1026 | Facilitating Treebank Annotation Using a Statistical Parser | http://www.aclweb.org/anthology/H/H01/H01-1026.pdf | author:F. Chiou; D. Chiang; M. Palmer
-H01-1027 | FactBrowser Demonstration | http://www.aclweb.org/anthology/H/H01/H01-1027.pdf | author:S. Miller; S. Bratus; L. Ramshaw; R. Weischedel; A. Zamanian
-H01-1028 | Finding Errors Automatically in Semantically Tagged Dialogues | http://www.aclweb.org/anthology/H/H01/H01-1028.pdf | author:J. Aberdeen; C. Doran; L. Damianos; S. Bayer; L. Hirschman
-H01-1029 | Fine-Grained Hidden Markov Modeling for Broadcast-News Story Segmentation | http://www.aclweb.org/anthology/H/H01/H01-1029.pdf | author:W. Greiff; A. Morgan; R. Fish; M. Richards; A. Kundu
-H01-1030 | First Story Detection using a Composite Document Representation | http://www.aclweb.org/anthology/H/H01/H01-1030.pdf | author:N. Stokes; J. Carthy
-H01-1031 | Guidelines for Annotating Temporal Information | http://www.aclweb.org/anthology/H/H01/H01-1031.pdf | author:I. Mani; G. Wilson; L. Ferro; B. Sundheim
-H01-1032 | Hypothesis Selection and Resolution in the Mercury Flight Reservation System | http://www.aclweb.org/anthology/H/H01/H01-1032.pdf | author:S. Seneff; J. Polifroni
-H01-1033 | Improved Cross-Language Retrieval using Backoff Translation | http://www.aclweb.org/anthology/H/H01/H01-1033.pdf | author:P. Resnik; D. Oard; G. Levow
-H01-1034 | Improving Information Extraction by Modeling Errors in Speech Recognizer Output | http://www.aclweb.org/anthology/H/H01/H01-1034.pdf | author:D.D. Palmer; M. Ostendorf
-H01-1035 | Inducing Multilingual Text Analysis Tools via Robust Projection across Aligned Corpora | http://www.aclweb.org/anthology/H/H01/H01-1035.pdf | author:D. Yarowsky; G. Ngai; R. Wicentowski
-H01-1036 | Information Extraction with Term Frequencies | http://www.aclweb.org/anthology/H/H01/H01-1036.pdf | author:T.R. Lynam; C.L.A. Clarke; G.V. Cormack
-H01-1037 | The Integrated Feasibility Experiment Process | http://www.aclweb.org/anthology/H/H01/H01-1037.pdf | author:A. Sears; S.E. Cross
-H01-1038 | Integrated Feasibility Experiment for Bio-Security: IFE-Bio, A TIDES Demonstration | http://www.aclweb.org/anthology/H/H01/H01-1038.pdf | author:L. Hirschman; K. Concepcion; L. Damianos; D. Day; J. Delmore; L. Ferro; J. Griffith; J. Henderson; J. Kurtz; I. Mani; S. Mardis; T. McEntee; K. Miller; B. Nunam; J. Ponte; F. Reeder; B. Wellner; G. Wilson; A. Yeh
-H01-1039 | Integrated Information Management: An Interactive, Extensible Architecture for Information Retrieval  | http://www.aclweb.org/anthology/H/H01/H01-1039.pdf | author:E. Nyberg; H. Daume
-H01-1040 | Intelligent Access to Text: Integrating Information Extraction Technology into Text Browsers | http://www.aclweb.org/anthology/H/H01/H01-1040.pdf | author:R. Gaizauskas; P. Herring; M. Oakes; M. Beaulieu; P. Willett; H. Fowkes; A. Jonsson
-H01-1041 | Interlingua-Based Broad-Coverage Korean-to-English Translation in CCLINC | http://www.aclweb.org/anthology/H/H01/H01-1041.pdf | author:Y.-S. Lee; W.S. Yi; S. Seneff; C. Weinstein
-H01-1042 | Is That Your Final Answer? | http://www.aclweb.org/anthology/H/H01/H01-1042.pdf | author:F. Reeder
-H01-1043 | Japanese Case Frame Construction by Coupling the Verb and its Closest Case Component | http://www.aclweb.org/anthology/H/H01/H01-1043.pdf | author:D. Kawahara; S. Kurohashi
-H01-1044 | Japanese Text Input System With Digits | http://www.aclweb.org/anthology/H/H01/H01-1044.pdf | author:K. Tanaka-Ishii; Y. Inutsuka; M. Takeichi
-H01-1045 | Large scale testing of a descriptive phrase finder | http://www.aclweb.org/anthology/H/H01/H01-1045.pdf | author:H. Joho; Y.K. Liu; M. Sanderson
-H01-1046 | LaTaT: Language and Text Analysis Tools | http://www.aclweb.org/anthology/H/H01/H01-1046.pdf | author:D. Lin
-H01-1047 | Linguatronic: Product-Level Speech System for Mercedes-Benz Car | http://www.aclweb.org/anthology/H/H01/H01-1047.pdf | author:P. Heisterkamp
-H01-1048 | LingWear: A Mobile Tourist Information System | http://www.aclweb.org/anthology/H/H01/H01-1048.pdf | author:C. Fügen; M. Westphal; M. Schneider; T. Schultz; A. Waibel
-H01-1049 | Listen-Communicate-Show: Spoken Language Command of Agent-based Remote Information Access | http://www.aclweb.org/anthology/H/H01/H01-1049.pdf | author:J. Daniels; B. Bell
-H01-1050 | Mandarin-English Information: Investigating Translingual Speech Retrieval  | http://www.aclweb.org/anthology/H/H01/H01-1050.pdf | author:H. Meng; W.-K. Lo; B. Chen; H.-M.. Wang; S. Khudanpur; G.-A. Levow; D.W. Oard; J. Wang
-H01-1051 | The Meeting Project at ICSI | http://www.aclweb.org/anthology/H/H01/H01-1051.pdf | author:N. Morgan; D. Baron; J. Edwards; D. Ellis; D. Gelbart ; A. Janin; T. Pfau; E. Shriberg; A. Stolcke
-H01-1052 | Mitigating the Paucity-of-Data Problem: Exploring the Effect of Training Corpus Size on Classifier Performance for Natural Language Processing | http://www.aclweb.org/anthology/H/H01/H01-1052.pdf | author:M. Banko; E. Brill
-H01-1053 | Monitoring the News: a TDT demonstration system | http://www.aclweb.org/anthology/H/H01/H01-1053.pdf | author:D. Frey; R. Gupta; V. Khandelwal; V. Lavrenko; A. Leuski; J. Allan
-H01-1054 | Multidocument Summarization via Information Extraction | http://www.aclweb.org/anthology/H/H01/H01-1054.pdf | author:M. White; T. Korelsky; C. Cardie; V. Ng; D. Pierce; K. Wagstaff
-H01-1055 | Natural Language Generation in Dialog Systems | http://www.aclweb.org/anthology/H/H01/H01-1055.pdf | author:O. Rambow; S. Bangalore; M. Walker
-H01-1056 | NewsInEssence: A System For Domain-Independent, Real-Time News Clustering and Multi-Document Summarization | http://www.aclweb.org/anthology/H/H01/H01-1056.pdf | author:D.R. Radev; S. Blair-Goldensohn; Z. Zhang; R.S. Raghavan
-H01-1057 | Non-Dictionary-Based Thai Word Segmentation Using Decision Trees | http://www.aclweb.org/anthology/H/H01/H01-1057.pdf | author:T. Theeramunkong; S. Usanavasin
-H01-1058 | On Combining Language Models: Oracle Approach | http://www.aclweb.org/anthology/H/H01/H01-1058.pdf | author:K. Hacioglu; W. Ward
-H01-1059 | Portability Issues for Speech Recognition Technologies | http://www.aclweb.org/anthology/H/H01/H01-1059.pdf | author:L. Lamel; F. Lefevre; J.-L. Gauvain; G. Adda
-H01-1060 | Rapidly Retargetable Interactive Translingual Retrieval | http://www.aclweb.org/anthology/H/H01/H01-1060.pdf | author:G.-A. Levow; D.W. Oard; P. Resnik
-H01-1061 | Robust Knowledge Discovery from Parallel Speech and Text Sources | http://www.aclweb.org/anthology/H/H01/H01-1061.pdf | author:F. Jelinek; W. Byrne; S. Khudanpur; B. Hladká; H. Ney; F.J. Och; J. Curín; J. Psutka
-H01-1062 | The RWTH System for Statistical Translation of Spoken Dialogues | http://www.aclweb.org/anthology/H/H01/H01-1062.pdf | author:H. Ney; F.J. Och; S. Vogel
-H01-1063 | Scalability and Portability of a Belief Network-based Dialog Model for Different Application Domains | http://www.aclweb.org/anthology/H/H01/H01-1063.pdf | author:C. Wai; H.M. Meng; R. Pieraccini
-H01-1064 | SCANMail: Audio Navigation in the Voicemail Domain | http://www.aclweb.org/anthology/H/H01/H01-1064.pdf | author:M. Bacchiani; J. Hirschberg; A. Rosenberg; S. Whittaker; D. Hindle; P. Isenhour; M. Jones; L. Stark; G. Zamchick
-H01-1065 | Sentence Ordering in Multidocument Summarization | http://www.aclweb.org/anthology/H/H01/H01-1065.pdf | author:R. Barzilay; N. Elhadad; K. McKeown
-H01-1066 | A Server for Real-Time Event Tracking in News | http://www.aclweb.org/anthology/H/H01/H01-1066.pdf | author:R.D. Brown
-H01-1067 | The SynDiKATe Text Knowledge Base Generator | http://www.aclweb.org/anthology/H/H01/H01-1067.pdf | author:U. Hahn; M. Romacker
-H01-1068 | A Three-Tiered Evaluation Approach for Interactive Spoken Dialogue Systems | http://www.aclweb.org/anthology/H/H01/H01-1068.pdf | author:K. Stibler; J. Denny
-H01-1069 | Toward Semantics-Based Answer Pinpointing | http://www.aclweb.org/anthology/H/H01/H01-1069.pdf | author:E. Hovy; L. Gerber; U. Hermjakob; C.-Y. Lin; D. Ravichandran
-H01-1070 | Towards an Intelligent Multilingual Keyboard System | http://www.aclweb.org/anthology/H/H01/H01-1070.pdf | author:T. Potipiti; V. Sornlertlamvanich; K. Thanadkran
-H01-1071 | Towards Automatic Sign Translation | http://www.aclweb.org/anthology/H/H01/H01-1071.pdf | author:J. Yang; J. Gao; Y. Zhang; A. Waibel
-H01-1072 | TüSBL: A Similarity-Based Chunk Parser for Robust Syntactic Processing | http://www.aclweb.org/anthology/H/H01/H01-1072.pdf | author:S. Kübler; E.W. Hinrichs
-H01-1073 | University of Colorado Dialogue Systems for Travel and Navigation | http://www.aclweb.org/anthology/H/H01/H01-1073.pdf | author:B. Pellom; W. Ward; J. Hansen; R. Cole; K. Hacioglu; J. Zhang; X. Yu; S. Pradhan
-H01-1074 | The Use of Dynamic Segment Scoring for Language-Independent Question Answering  | http://www.aclweb.org/anthology/H/H01/H01-1074.pdf | author:D. Pack; C. Weinstein
-H01-1075 | Using Speech and Language Technology to Coach Reading | http://www.aclweb.org/anthology/H/H01/H01-1075.pdf | author:P. Price; L. Julia
+H01-1001 | Activity detection for information access to oral communication | http://www.aclweb.org/anthology/H/H01/H01-1001.pdf | category:paper author:K. Ries; A. Waibel
+H01-1002 | Adapting an Example-Based Translation System to Chinese | http://www.aclweb.org/anthology/H/H01/H01-1002.pdf | category:paper author:Y. Zhang; R.D. Brown; R.E. Frederking
+H01-1003 | Advances in meeting recognition | http://www.aclweb.org/anthology/H/H01/H01-1003.pdf | category:paper author:A. Waibel; H. Yu; T. Schultz; Y. Pan; M. Bett; M. Westphal; H. Soltau; T. Schaaf; F. Metze
+H01-1004 | Amount of Information Presented in a Complex List: Effects on User Performance | http://www.aclweb.org/anthology/H/H01/H01-1004.pdf | category:paper author:D. Dutton; M. Walker; S. Chu; J. Hubbell; S. Narayanan
+H01-1005 | The Annotation Graph Toolkit: Software Components for Building Linguistic Annotation Tools | http://www.aclweb.org/anthology/H/H01/H01-1005.pdf | category:paper author:K. Maeda; S. Bird; X. Ma; H. Lee
+H01-1006 | Answering What-Is Questions by Virtual Annotation | http://www.aclweb.org/anthology/H/H01/H01-1006.pdf | category:paper author:J. Prager; D. Radev; K. Czuba
+H01-1007 | Architecture and Design Considerations in NESPOLE!: a Speech Translation System for E-commerce Applications | http://www.aclweb.org/anthology/H/H01/H01-1007.pdf | category:paper author:A. Lavie; C. Langley; A. Waibel; F. Pianesi; G. Lazzari; P. Coletti; L. Taddei; F. Balducci
+H01-1008 | Assigning Belief Scores to Names in Queries | http://www.aclweb.org/anthology/H/H01/H01-1008.pdf | category:paper author:C. Dozier
+H01-1009 | Automatic Pattern Acquisition for Japanese Information Extraction | http://www.aclweb.org/anthology/H/H01/H01-1009.pdf | category:paper author:K. Sudo; S. Sekine; R. Grishman
+H01-1010 | Automatic Predicate Argument Analysis of the Penn TreeBank | http://www.aclweb.org/anthology/H/H01/H01-1010.pdf | category:paper author:M. Palmer; J. Rosenzweig; S. Cotton
+H01-1011 | Automatic Title Generation for Spoken Broadcast News | http://www.aclweb.org/anthology/H/H01/H01-1011.pdf | category:paper author:R. Jin; A. Hauptmann
+H01-1012 | A Conversational Interface for Online Shopping | http://www.aclweb.org/anthology/H/H01/H01-1012.pdf | category:paper author:J. Chai; V. Horvath; N. Kambhatla; N. Nicolov; M. Stys-Budzikowska
+H01-1013 | Conversational Sales Assistant for Online Shopping | http://www.aclweb.org/anthology/H/H01/H01-1013.pdf | category:paper author:M. Budzikowska; J. Chai; S. Govindappa; V. Horvath; N. Kambhatla; N. Nicolov; W. Zadrozny
+H01-1014 | Converting Dependency Structures to Phrase Structures | http://www.aclweb.org/anthology/H/H01/H01-1014.pdf | category:paper author:F. Xia; M. Palmer
+H01-1015 | DATE: A Dialogue Act Tagging Scheme for Evaluation of Spoken Dialogue Systems | http://www.aclweb.org/anthology/H/H01/H01-1015.pdf | category:paper author:M. Walker; R. Passonneau
+H01-1016 | Development of the HRL Route Navigation Dialogue System | http://www.aclweb.org/anthology/H/H01/H01-1016.pdf | category:paper author:R. Belvin; R. Burns; C. Hein
+H01-1017 | Dialogue Interaction with the DARPA Communicator Infrastructure: The Development of Useful Software | http://www.aclweb.org/anthology/H/H01/H01-1017.pdf | category:paper author:S. Bayer; C. Doran; B. George
+H01-1018 | Domain Portability in Speech-to-Speech Translation | http://www.aclweb.org/anthology/H/H01/H01-1018.pdf | category:paper author:A. Lavie; L Levin; T. Schultz; C. Langley; B. Han; A. Tribble; D. Gates; D. Wallace; K. Peterson
+H01-1019 | English-Chinese CLIR using a Simplified PIRCS System | http://www.aclweb.org/anthology/H/H01/H01-1019.pdf | category:paper author:K.L. Kwok; N. Dinstl; P. Deng
+H01-1020 | Entry Vocabulary - a Technology to Enhance Digital Search | http://www.aclweb.org/anthology/H/H01/H01-1020.pdf | category:paper author:F. Gey; M. Buckland; A. Chen; R. Larson
+H01-1021 | Evaluating Question-Answering Techniques in Chinese | http://www.aclweb.org/anthology/H/H01/H01-1021.pdf | category:paper author:X. Li; W.B. Croft
+H01-1022 | An Evaluation Corpus For Temporal Summarization | http://www.aclweb.org/anthology/H/H01/H01-1022.pdf | category:paper author:V. Khandelwal; R. Gupta; J. Allan
+H01-1023 | Evaluation Results for the Talk'n'Travel System | http://www.aclweb.org/anthology/H/H01/H01-1023.pdf | category:paper author:D. Stallard
+H01-1024 | Experiments in Multi-Modal Automatic Content Extraction | http://www.aclweb.org/anthology/H/H01/H01-1024.pdf | category:paper author:L. Ramshaw; E. Boschee; S. Bratus; S. Miller; R. Stone; R. Weischedel; A. Zamanian
+H01-1025 | Exploring Speech-Enabled Dialogue with the Galaxy Communicator Infrastructure | http://www.aclweb.org/anthology/H/H01/H01-1025.pdf | category:paper author:S. Bayer; C. Doran; B. George
+H01-1026 | Facilitating Treebank Annotation Using a Statistical Parser | http://www.aclweb.org/anthology/H/H01/H01-1026.pdf | category:paper author:F. Chiou; D. Chiang; M. Palmer
+H01-1027 | FactBrowser Demonstration | http://www.aclweb.org/anthology/H/H01/H01-1027.pdf | category:paper author:S. Miller; S. Bratus; L. Ramshaw; R. Weischedel; A. Zamanian
+H01-1028 | Finding Errors Automatically in Semantically Tagged Dialogues | http://www.aclweb.org/anthology/H/H01/H01-1028.pdf | category:paper author:J. Aberdeen; C. Doran; L. Damianos; S. Bayer; L. Hirschman
+H01-1029 | Fine-Grained Hidden Markov Modeling for Broadcast-News Story Segmentation | http://www.aclweb.org/anthology/H/H01/H01-1029.pdf | category:paper author:W. Greiff; A. Morgan; R. Fish; M. Richards; A. Kundu
+H01-1030 | First Story Detection using a Composite Document Representation | http://www.aclweb.org/anthology/H/H01/H01-1030.pdf | category:paper author:N. Stokes; J. Carthy
+H01-1031 | Guidelines for Annotating Temporal Information | http://www.aclweb.org/anthology/H/H01/H01-1031.pdf | category:paper author:I. Mani; G. Wilson; L. Ferro; B. Sundheim
+H01-1032 | Hypothesis Selection and Resolution in the Mercury Flight Reservation System | http://www.aclweb.org/anthology/H/H01/H01-1032.pdf | category:paper author:S. Seneff; J. Polifroni
+H01-1033 | Improved Cross-Language Retrieval using Backoff Translation | http://www.aclweb.org/anthology/H/H01/H01-1033.pdf | category:paper author:P. Resnik; D. Oard; G. Levow
+H01-1034 | Improving Information Extraction by Modeling Errors in Speech Recognizer Output | http://www.aclweb.org/anthology/H/H01/H01-1034.pdf | category:paper author:D.D. Palmer; M. Ostendorf
+H01-1035 | Inducing Multilingual Text Analysis Tools via Robust Projection across Aligned Corpora | http://www.aclweb.org/anthology/H/H01/H01-1035.pdf | category:paper author:D. Yarowsky; G. Ngai; R. Wicentowski
+H01-1036 | Information Extraction with Term Frequencies | http://www.aclweb.org/anthology/H/H01/H01-1036.pdf | category:paper author:T.R. Lynam; C.L.A. Clarke; G.V. Cormack
+H01-1037 | The Integrated Feasibility Experiment Process | http://www.aclweb.org/anthology/H/H01/H01-1037.pdf | category:paper author:A. Sears; S.E. Cross
+H01-1038 | Integrated Feasibility Experiment for Bio-Security: IFE-Bio, A TIDES Demonstration | http://www.aclweb.org/anthology/H/H01/H01-1038.pdf | category:paper author:L. Hirschman; K. Concepcion; L. Damianos; D. Day; J. Delmore; L. Ferro; J. Griffith; J. Henderson; J. Kurtz; I. Mani; S. Mardis; T. McEntee; K. Miller; B. Nunam; J. Ponte; F. Reeder; B. Wellner; G. Wilson; A. Yeh
+H01-1039 | Integrated Information Management: An Interactive, Extensible Architecture for Information Retrieval  | http://www.aclweb.org/anthology/H/H01/H01-1039.pdf | category:paper author:E. Nyberg; H. Daume
+H01-1040 | Intelligent Access to Text: Integrating Information Extraction Technology into Text Browsers | http://www.aclweb.org/anthology/H/H01/H01-1040.pdf | category:paper author:R. Gaizauskas; P. Herring; M. Oakes; M. Beaulieu; P. Willett; H. Fowkes; A. Jonsson
+H01-1041 | Interlingua-Based Broad-Coverage Korean-to-English Translation in CCLINC | http://www.aclweb.org/anthology/H/H01/H01-1041.pdf | category:paper author:Y.-S. Lee; W.S. Yi; S. Seneff; C. Weinstein
+H01-1042 | Is That Your Final Answer? | http://www.aclweb.org/anthology/H/H01/H01-1042.pdf | category:paper author:F. Reeder
+H01-1043 | Japanese Case Frame Construction by Coupling the Verb and its Closest Case Component | http://www.aclweb.org/anthology/H/H01/H01-1043.pdf | category:paper author:D. Kawahara; S. Kurohashi
+H01-1044 | Japanese Text Input System With Digits | http://www.aclweb.org/anthology/H/H01/H01-1044.pdf | category:paper author:K. Tanaka-Ishii; Y. Inutsuka; M. Takeichi
+H01-1045 | Large scale testing of a descriptive phrase finder | http://www.aclweb.org/anthology/H/H01/H01-1045.pdf | category:paper author:H. Joho; Y.K. Liu; M. Sanderson
+H01-1046 | LaTaT: Language and Text Analysis Tools | http://www.aclweb.org/anthology/H/H01/H01-1046.pdf | category:paper author:D. Lin
+H01-1047 | Linguatronic: Product-Level Speech System for Mercedes-Benz Car | http://www.aclweb.org/anthology/H/H01/H01-1047.pdf | category:paper author:P. Heisterkamp
+H01-1048 | LingWear: A Mobile Tourist Information System | http://www.aclweb.org/anthology/H/H01/H01-1048.pdf | category:paper author:C. Fügen; M. Westphal; M. Schneider; T. Schultz; A. Waibel
+H01-1049 | Listen-Communicate-Show: Spoken Language Command of Agent-based Remote Information Access | http://www.aclweb.org/anthology/H/H01/H01-1049.pdf | category:paper author:J. Daniels; B. Bell
+H01-1050 | Mandarin-English Information: Investigating Translingual Speech Retrieval  | http://www.aclweb.org/anthology/H/H01/H01-1050.pdf | category:paper author:H. Meng; W.-K. Lo; B. Chen; H.-M.. Wang; S. Khudanpur; G.-A. Levow; D.W. Oard; J. Wang
+H01-1051 | The Meeting Project at ICSI | http://www.aclweb.org/anthology/H/H01/H01-1051.pdf | category:paper author:N. Morgan; D. Baron; J. Edwards; D. Ellis; D. Gelbart ; A. Janin; T. Pfau; E. Shriberg; A. Stolcke
+H01-1052 | Mitigating the Paucity-of-Data Problem: Exploring the Effect of Training Corpus Size on Classifier Performance for Natural Language Processing | http://www.aclweb.org/anthology/H/H01/H01-1052.pdf | category:paper author:M. Banko; E. Brill
+H01-1053 | Monitoring the News: a TDT demonstration system | http://www.aclweb.org/anthology/H/H01/H01-1053.pdf | category:paper author:D. Frey; R. Gupta; V. Khandelwal; V. Lavrenko; A. Leuski; J. Allan
+H01-1054 | Multidocument Summarization via Information Extraction | http://www.aclweb.org/anthology/H/H01/H01-1054.pdf | category:paper author:M. White; T. Korelsky; C. Cardie; V. Ng; D. Pierce; K. Wagstaff
+H01-1055 | Natural Language Generation in Dialog Systems | http://www.aclweb.org/anthology/H/H01/H01-1055.pdf | category:paper author:O. Rambow; S. Bangalore; M. Walker
+H01-1056 | NewsInEssence: A System For Domain-Independent, Real-Time News Clustering and Multi-Document Summarization | http://www.aclweb.org/anthology/H/H01/H01-1056.pdf | category:paper author:D.R. Radev; S. Blair-Goldensohn; Z. Zhang; R.S. Raghavan
+H01-1057 | Non-Dictionary-Based Thai Word Segmentation Using Decision Trees | http://www.aclweb.org/anthology/H/H01/H01-1057.pdf | category:paper author:T. Theeramunkong; S. Usanavasin
+H01-1058 | On Combining Language Models: Oracle Approach | http://www.aclweb.org/anthology/H/H01/H01-1058.pdf | category:paper author:K. Hacioglu; W. Ward
+H01-1059 | Portability Issues for Speech Recognition Technologies | http://www.aclweb.org/anthology/H/H01/H01-1059.pdf | category:paper author:L. Lamel; F. Lefevre; J.-L. Gauvain; G. Adda
+H01-1060 | Rapidly Retargetable Interactive Translingual Retrieval | http://www.aclweb.org/anthology/H/H01/H01-1060.pdf | category:paper author:G.-A. Levow; D.W. Oard; P. Resnik
+H01-1061 | Robust Knowledge Discovery from Parallel Speech and Text Sources | http://www.aclweb.org/anthology/H/H01/H01-1061.pdf | category:paper author:F. Jelinek; W. Byrne; S. Khudanpur; B. Hladká; H. Ney; F.J. Och; J. Curín; J. Psutka
+H01-1062 | The RWTH System for Statistical Translation of Spoken Dialogues | http://www.aclweb.org/anthology/H/H01/H01-1062.pdf | category:paper author:H. Ney; F.J. Och; S. Vogel
+H01-1063 | Scalability and Portability of a Belief Network-based Dialog Model for Different Application Domains | http://www.aclweb.org/anthology/H/H01/H01-1063.pdf | category:paper author:C. Wai; H.M. Meng; R. Pieraccini
+H01-1064 | SCANMail: Audio Navigation in the Voicemail Domain | http://www.aclweb.org/anthology/H/H01/H01-1064.pdf | category:paper author:M. Bacchiani; J. Hirschberg; A. Rosenberg; S. Whittaker; D. Hindle; P. Isenhour; M. Jones; L. Stark; G. Zamchick
+H01-1065 | Sentence Ordering in Multidocument Summarization | http://www.aclweb.org/anthology/H/H01/H01-1065.pdf | category:paper author:R. Barzilay; N. Elhadad; K. McKeown
+H01-1066 | A Server for Real-Time Event Tracking in News | http://www.aclweb.org/anthology/H/H01/H01-1066.pdf | category:paper author:R.D. Brown
+H01-1067 | The SynDiKATe Text Knowledge Base Generator | http://www.aclweb.org/anthology/H/H01/H01-1067.pdf | category:paper author:U. Hahn; M. Romacker
+H01-1068 | A Three-Tiered Evaluation Approach for Interactive Spoken Dialogue Systems | http://www.aclweb.org/anthology/H/H01/H01-1068.pdf | category:paper author:K. Stibler; J. Denny
+H01-1069 | Toward Semantics-Based Answer Pinpointing | http://www.aclweb.org/anthology/H/H01/H01-1069.pdf | category:paper author:E. Hovy; L. Gerber; U. Hermjakob; C.-Y. Lin; D. Ravichandran
+H01-1070 | Towards an Intelligent Multilingual Keyboard System | http://www.aclweb.org/anthology/H/H01/H01-1070.pdf | category:paper author:T. Potipiti; V. Sornlertlamvanich; K. Thanadkran
+H01-1071 | Towards Automatic Sign Translation | http://www.aclweb.org/anthology/H/H01/H01-1071.pdf | category:paper author:J. Yang; J. Gao; Y. Zhang; A. Waibel
+H01-1072 | TüSBL: A Similarity-Based Chunk Parser for Robust Syntactic Processing | http://www.aclweb.org/anthology/H/H01/H01-1072.pdf | category:paper author:S. Kübler; E.W. Hinrichs
+H01-1073 | University of Colorado Dialogue Systems for Travel and Navigation | http://www.aclweb.org/anthology/H/H01/H01-1073.pdf | category:paper author:B. Pellom; W. Ward; J. Hansen; R. Cole; K. Hacioglu; J. Zhang; X. Yu; S. Pradhan
+H01-1074 | The Use of Dynamic Segment Scoring for Language-Independent Question Answering  | http://www.aclweb.org/anthology/H/H01/H01-1074.pdf | category:paper author:D. Pack; C. Weinstein
+H01-1075 | Using Speech and Language Technology to Coach Reading | http://www.aclweb.org/anthology/H/H01/H01-1075.pdf | category:paper author:P. Price; L. Julia

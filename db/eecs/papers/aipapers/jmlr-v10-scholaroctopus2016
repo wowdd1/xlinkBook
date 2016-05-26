@@ -1,100 +1,100 @@
-jmlr-v10-1 | Exploring Strategies for Training Deep Neural Networks | http://www.jmlr.org/papers/v10/larochelle09a.html | author:Hugo Larochelle, Yoshua Bengio, Jérôme Louradour, Pascal Lamblin
-jmlr-v10-2 | Markov Properties for Linear Causal Models with Correlated Errors | http://www.jmlr.org/papers/v10/kang09a.html | author:Changsung Kang, Jin Tian
-jmlr-v10-3 | An Analysis of Convex Relaxations for MAP Estimation of Discrete MRFs | http://www.jmlr.org/papers/v10/kumar09a.html | author:M. Pawan Kumar, Vladimir Kolmogorov, Philip H.S. Torr
-jmlr-v10-4 | Refinement of Reproducing Kernels | http://www.jmlr.org/papers/v10/xu09a.html | author:Yuesheng Xu, Haizhang Zhang
-jmlr-v10-5 | Subgroup Analysis via Recursive Partitioning | http://www.jmlr.org/papers/v10/su09a.html | author:Xiaogang Su, Chih-Ling Tsai, Hansheng Wang, David M. Nickerson, Bogong Li
-jmlr-v10-6 | Python Environment for Bayesian Learning: Inferring the Structure of Bayesian Networks from Knowledge and Data | http://www.jmlr.org/papers/v10/shah09a.html | author:Abhik Shah, Peter Woolf
-jmlr-v10-7 | On The Power of Membership Queries in Agnostic Learning | http://www.jmlr.org/papers/v10/feldman09a.html | author:Vitaly Feldman
-jmlr-v10-8 | Using Local Dependencies within Batches to Improve Large Margin Classifiers | http://www.jmlr.org/papers/v10/vural09a.html | author:Volkan Vural, Glenn Fung, Balaji Krishnapuram, Jennifer G. Dy, Bharat Rao
-jmlr-v10-9 | Distance Metric Learning for Large Margin Nearest Neighbor Classification | http://www.jmlr.org/papers/v10/weinberger09a.html | author:Kilian Q. Weinberger, Lawrence K. Saul
-jmlr-v10-10 | Data-driven Calibration of Penalties for Least-Squares Regression | http://www.jmlr.org/papers/v10/arlot09a.html | author:Sylvain Arlot, Pascal Massart
-jmlr-v10-11 | Analysis of Perceptron-Based Active Learning | http://www.jmlr.org/papers/v10/dasgupta09a.html | author:Sanjoy Dasgupta, Adam Tauman Kalai, Claire Monteleoni
-jmlr-v10-12 | Improving the Reliability of Causal Discovery from Small Data Sets Using Argumentation | http://www.jmlr.org/papers/v10/bromberg09a.html | author:Facundo Bromberg, Dimitris Margaritis
-jmlr-v10-13 | Low-Rank Kernel Learning with Bregman Matrix Divergences | http://www.jmlr.org/papers/v10/kulis09a.html | author:Brian Kulis, Mátyás A. Sustik, Inderjit S. Dhillon
-jmlr-v10-14 | Supervised Descriptive Rule Discovery: A Unifying Survey of Contrast Set, Emerging Pattern and Subgroup Mining | http://www.jmlr.org/papers/v10/kralj-novak09a.html | author:Petra Kralj Novak, Nada Lavrač, Geoffrey I. Webb
-jmlr-v10-15 | Particle Swarm Model Selection | http://www.jmlr.org/papers/v10/escalante09a.html | author:Hugo Jair Escalante, Manuel Montes, Luis Enrique Sucar
-jmlr-v10-16 | Generalization Bounds for Ranking Algorithms via Algorithmic Stability | http://www.jmlr.org/papers/v10/agarwal09a.html | author:Shivani Agarwal, Partha Niyogi
-jmlr-v10-17 | Controlling the False Discovery Rate of the Association/Causality Structure Learned with the PC Algorithm | http://www.jmlr.org/papers/v10/li09a.html | author:Junning Li, Z. Jane Wang
-jmlr-v10-18 | Identification of Recurrent Neural Networks by Bayesian Interrogation Techniques | http://www.jmlr.org/papers/v10/poczos09a.html | author:Barnabás Póczos, András Lőrincz
-jmlr-v10-19 | On the Consistency of Feature Selection using Greedy Least Squares Regression | http://www.jmlr.org/papers/v10/zhang09a.html | author:Tong Zhang
-jmlr-v10-20 | Online Learning with Sample Path Constraints | http://www.jmlr.org/papers/v10/mannor09a.html | author:Shie Mannor, John N. Tsitsiklis, Jia Yuan Yu
-jmlr-v10-21 | NEUROSVM: An Architecture to Reduce the Effect of the Choice of Kernel on the Performance of SVM | http://www.jmlr.org/papers/v10/ghanty09a.html | author:Pradip Ghanty, Samrat Paul, Nikhil R. Pal
-jmlr-v10-22 | Scalable Collaborative Filtering Approaches for Large Recommender Systems | http://www.jmlr.org/papers/v10/takacs09a.html | author:Gábor Takács, István Pilászy, Bottyán Németh, Domonkos Tikk
-jmlr-v10-23 | Nearest Neighbor Clustering: A Baseline Method for Consistent Clustering with Arbitrary Objective Functions | http://www.jmlr.org/papers/v10/bubeck09a.html | author:Sébastien Bubeck, Ulrike von Luxburg
-jmlr-v10-24 | Properties of Monotonic Effects on Directed Acyclic Graphs | http://www.jmlr.org/papers/v10/vanderweele09a.html | author:Tyler J. VanderWeele, James M. Robins
-jmlr-v10-25 | On Efficient Large Margin Semisupervised Learning: Method and Theory | http://www.jmlr.org/papers/v10/wang09a.html | author:Junhui Wang, Xiaotong Shen, Wei Pan
-jmlr-v10-26 | Nieme: Large-Scale Energy-Based Models | http://www.jmlr.org/papers/v10/maes09a.html | author:Francis Maes
-jmlr-v10-27 | Similarity-based Classification: Concepts and Algorithms | http://www.jmlr.org/papers/v10/chen09a.html | author:Yihua Chen, Eric K. Garcia, Maya R. Gupta, Ali Rahimi, Luca Cazzanti
-jmlr-v10-28 | Sparse Online Learning via Truncated Gradient | http://www.jmlr.org/papers/v10/langford09a.html | author:John Langford, Lihong Li, Tong Zhang
-jmlr-v10-29 | A New Approach to Collaborative Filtering: Operator Estimation with Spectral Regularization | http://www.jmlr.org/papers/v10/abernethy09a.html | author:Jacob Abernethy, Francis Bach, Theodoros Evgeniou, Jean-Philippe Vert
-jmlr-v10-30 | Consistency and Localizability | http://www.jmlr.org/papers/v10/zakai09a.html | author:Alon Zakai, Ya'acov Ritov
-jmlr-v10-31 | Stable and Efficient Gaussian Process Calculations | http://www.jmlr.org/papers/v10/foster09a.html | author:Leslie Foster, Alex Waagen, Nabeela Aijaz, Michael Hurley, Apolonio Luis, Joel Rinsky, Chandrika Satyavolu, Michael J. Way, Paul Gazis, Ashok Srivastava
-jmlr-v10-32 | Estimation of Sparse Binary Pairwise Markov Networks using Pseudo-likelihoods | http://www.jmlr.org/papers/v10/hoefling09a.html | author:Holger Höfling, Robert Tibshirani
-jmlr-v10-33 | Polynomial-Delay Enumeration of Monotonic Graph Classes | http://www.jmlr.org/papers/v10/ramon09a.html | author:Jan Ramon, Siegfried Nijssen
-jmlr-v10-34 | Java-ML: A Machine Learning Library | http://www.jmlr.org/papers/v10/abeel09a.html | author:Thomas Abeel, Yves Van de Peer, Yvan Saeys
-jmlr-v10-35 | Nonextensive Information Theoretic Kernels on Measures | http://www.jmlr.org/papers/v10/martins09a.html | author:André F. T. Martins, Noah A. Smith, Eric P. Xing, Pedro M. Q. Aguiar, Mário A. T. Figueiredo
-jmlr-v10-36 | On Uniform Deviations of General Empirical Risks with Unboundedness, Dependence, and High Dimensionality | http://www.jmlr.org/papers/v10/jiang09a.html | author:Wenxin Jiang
-jmlr-v10-37 | Fourier Theoretic Probabilistic Inference over Permutations | http://www.jmlr.org/papers/v10/huang09a.html | author:Jonathan Huang, Carlos Guestrin, Leonidas Guibas
-jmlr-v10-38 | An Algorithm for Reading Dependencies from the Minimal Undirected Independence Map of a Graphoid that Satisfies Weak Transitivity | http://www.jmlr.org/papers/v10/pena09a.html | author:Jose M. Peña, Roland Nilsson, Johan Björkegren, Jesper Tegnér
-jmlr-v10-39 | Universal Kernel-Based Learning with Applications to Regular Languages | http://www.jmlr.org/papers/v10/kontorovich09a.html | author:Leonid (Aryeh) Kontorovich, Boaz Nadler
-jmlr-v10-40 | Multi-task Reinforcement Learning in Partially Observable Stochastic Environments | http://www.jmlr.org/papers/v10/li09b.html | author:Hui Li, Xuejun Liao, Lawrence Carin
-jmlr-v10-41 | The Hidden Life of Latent Variables: Bayesian Learning with Mixed Graph Models | http://www.jmlr.org/papers/v10/silva09a.html | author:Ricardo Silva, Zoubin Ghahramani
-jmlr-v10-42 | Incorporating Functional Knowledge in Neural Networks | http://www.jmlr.org/papers/v10/dugas09a.html | author:Charles Dugas, Yoshua Bengio, François Bélisle, Claude Nadeau, René Garcia
-jmlr-v10-43 | Perturbation Corrections in Approximate Inference: Mixture Modelling Applications | http://www.jmlr.org/papers/v10/paquet09a.html | author:Ulrich Paquet, Ole Winther, Manfred Opper
-jmlr-v10-44 | Robust Process Discovery with Artificial Negative Events | http://www.jmlr.org/papers/v10/goedertier09a.html | author:Stijn Goedertier, David Martens, Jan Vanthienen, Bart Baesens
-jmlr-v10-45 | Feature Selection with Ensembles, Artificial Variables, and Redundancy Elimination | http://www.jmlr.org/papers/v10/tuv09a.html | author:Eugene Tuv, Alexander Borisov, George Runger, Kari Torkkola
-jmlr-v10-46 | A Parameter-Free Classification Method for Large Scale Learning | http://www.jmlr.org/papers/v10/boulle09a.html | author:Marc Boullé
-jmlr-v10-47 | Model Monitor | http://www.jmlr.org/papers/v10/raeder09a.html | author:Troy Raeder, Nitesh V. Chawla
-jmlr-v10-48 | A Least-squares Approach to Direct Importance Estimation | http://www.jmlr.org/papers/v10/kanamori09a.html | author:Takafumi Kanamori, Shohei Hido, Masashi Sugiyama
-jmlr-v10-49 | Classification with Gaussians and Convex Loss | http://www.jmlr.org/papers/v10/xiang09a.html | author:Dao-Hong Xiang, Ding-Xuan Zhou
-jmlr-v10-50 | Entropy Inference and the James-Stein Estimator, with Application to Nonlinear Gene Association Networks | http://www.jmlr.org/papers/v10/hausser09a.html | author:Jean Hausser, Korbinian Strimmer
-jmlr-v10-51 | Robustness and Regularization of Support Vector Machines | http://www.jmlr.org/papers/v10/xu09b.html | author:Huan Xu, Constantine Caramanis, Shie Mannor
-jmlr-v10-52 | Strong Limit Theorems for the Bayesian Scoring Criterion in Bayesian Networks | http://www.jmlr.org/papers/v10/slobodianik09a.html | author:Nikolai Slobodianik, Dmitry Zaporozhets, Neal Madras
-jmlr-v10-53 | Bayesian Network Structure Learning by Recursive Autonomy Identification | http://www.jmlr.org/papers/v10/yehezkel09a.html | author:Raanan Yehezkel, Boaz Lerner
-jmlr-v10-54 | Learning Linear Ranking Functions for Beam Search with Application to Planning | http://www.jmlr.org/papers/v10/xu09c.html | author:Yuehua Xu, Alan Fern, Sungwook Yoon
-jmlr-v10-55 | Marginal Likelihood Integrals for Mixtures of Independence Models | http://www.jmlr.org/papers/v10/lin09a.html | author:Shaowei Lin, Bernd Sturmfels, Zhiqiang Xu
-jmlr-v10-56 | Transfer Learning for Reinforcement Learning Domains: A Survey | http://www.jmlr.org/papers/v10/taylor09a.html | author:Matthew E. Taylor, Peter Stone
-jmlr-v10-57 | Application of Non Parametric Empirical Bayes Estimation to High Dimensional Classification | http://www.jmlr.org/papers/v10/greenshtein09a.html | author:Eitan Greenshtein, Junyong Park
-jmlr-v10-58 | Learning Permutations with Exponential Weights | http://www.jmlr.org/papers/v10/helmbold09a.html | author:David P. Helmbold, Manfred K. Warmuth
-jmlr-v10-59 | SGD-QN: Careful Quasi-Newton Stochastic Gradient Descent | http://www.jmlr.org/papers/v10/bordes09a.html | author:Antoine Bordes, Léon Bottou, Patrick Gallinari
-jmlr-v10-60 | Dlib-ml: A Machine Learning Toolkit | http://www.jmlr.org/papers/v10/king09a.html | author:Davis E. King
-jmlr-v10-61 | Settable Systems: An Extension of Pearl's Causal Model with Optimization, Equilibrium, and Learning | http://www.jmlr.org/papers/v10/white09a.html | author:Halbert White, Karim Chalak
-jmlr-v10-62 | Distributed Algorithms for Topic Models | http://www.jmlr.org/papers/v10/newman09a.html | author:David Newman, Arthur Asuncion, Padhraic Smyth, Max Welling
-jmlr-v10-63 | Nonlinear Models Using Dirichlet Process Mixtures | http://www.jmlr.org/papers/v10/shahbaba09a.html | author:Babak Shahbaba, Radford Neal
-jmlr-v10-64 | CarpeDiem: Optimizing the Viterbi Algorithm and Applications to Supervised Sequential Learning | http://www.jmlr.org/papers/v10/esposito09a.html | author:Roberto Esposito, Daniele P. Radicioni
-jmlr-v10-65 | Learning Acyclic Probabilistic Circuits Using Test Paths | http://www.jmlr.org/papers/v10/angluin09a.html | author:Dana Angluin, James Aspnes, Jiang Chen, David Eisenstat, Lev Reyzin
-jmlr-v10-66 | Learning Approximate Sequential Patterns for Classification | http://www.jmlr.org/papers/v10/syed09a.html | author:Zeeshan Syed, Piotr Indyk, John Guttag
-jmlr-v10-67 | Hybrid MPI/OpenMP Parallel Linear Support Vector Machine Training | http://www.jmlr.org/papers/v10/woodsend09a.html | author:Kristian Woodsend, Jacek Gondzio
-jmlr-v10-68 | Provably Efficient Learning with Typed Parametric Models | http://www.jmlr.org/papers/v10/brunskill09a.html | author:Emma Brunskill, Bethany R. Leffler, Lihong Li, Michael L. Littman, Nicholas Roy
-jmlr-v10-69 | Fast Approximate kNN Graph Construction for High Dimensional Data via Recursive Lanczos Bisection | http://www.jmlr.org/papers/v10/chen09b.html | author:Jie Chen, Haw-ren Fang, Yousef Saad
-jmlr-v10-70 | Ultrahigh Dimensional Feature Selection: Beyond The Linear Model | http://www.jmlr.org/papers/v10/fan09a.html | author:Jianqing Fan, Richard Samworth, Yichao Wu
-jmlr-v10-71 | Evolutionary Model Type Selection for Global Surrogate Modeling | http://www.jmlr.org/papers/v10/gorissen09a.html | author:Dirk Gorissen, Tom Dhaene, Filip De Turck
-jmlr-v10-72 | An Anticorrelation Kernel for Subsystem Training in Multiple Classifier Systems | http://www.jmlr.org/papers/v10/ferrer09a.html | author:Luciana Ferrer, Kemal Sönmez, Elizabeth Shriberg
-jmlr-v10-73 | Deterministic Error Analysis of Support Vector Regression and Related Regularized Kernel Methods | http://www.jmlr.org/papers/v10/rieger09a.html | author:Christian Rieger, Barbara Zwicknagl
-jmlr-v10-74 | RL-Glue: Language-Independent Software for Reinforcement-Learning Experiments | http://www.jmlr.org/papers/v10/tanner09a.html | author:Brian Tanner, Adam White
-jmlr-v10-75 | Discriminative Learning Under Covariate Shift | http://www.jmlr.org/papers/v10/bickel09a.html | author:Steffen Bickel, Michael Brückner, Tobias Scheffer
-jmlr-v10-76 | Optimized Cutting Plane Algorithm for Large-Scale Risk Minimization | http://www.jmlr.org/papers/v10/franc09a.html | author:Vojtěch Franc, Sören Sonnenburg
-jmlr-v10-77 | Margin-based Ranking and an Equivalence between AdaBoost and RankBoost | http://www.jmlr.org/papers/v10/rudin09a.html | author:Cynthia Rudin, Robert E. Schapire
-jmlr-v10-78 | The P-Norm Push: A Simple Convex Ranking Algorithm that Concentrates at the Top of the List | http://www.jmlr.org/papers/v10/rudin09b.html | author:Cynthia Rudin
-jmlr-v10-79 | Learning Nondeterministic Classifiers | http://www.jmlr.org/papers/v10/delcoz09a.html | author:Juan José del Coz, Jorge Díez, Antonio Bahamonde
-jmlr-v10-80 | The Nonparanormal: Semiparametric Estimation of High Dimensional Undirected Graphs | http://www.jmlr.org/papers/v10/liu09a.html | author:Han Liu, John Lafferty, Larry Wasserman
-jmlr-v10-81 | Computing Maximum Likelihood Estimates in Recursive Linear Models with Correlated Errors | http://www.jmlr.org/papers/v10/drton09a.html | author:Mathias Drton, Michael Eichler, Thomas S. Richardson
-jmlr-v10-82 | Estimating Labels from Label Proportions | http://www.jmlr.org/papers/v10/quadrianto09a.html | author:Novi Quadrianto, Alex J. Smola, Tibério S. Caetano, Quoc V. Le
-jmlr-v10-83 | Exploiting Product Distributions to Identify Relevant Variables of Correlation Immune Functions | http://www.jmlr.org/papers/v10/hellerstein09a.html | author:Lisa Hellerstein, Bernard Rosell, Eric Bach, Soumya Ray, David Page
-jmlr-v10-84 | Reinforcement Learning in Finite MDPs: PAC Analysis | http://www.jmlr.org/papers/v10/strehl09a.html | author:Alexander L. Strehl, Lihong Li, Michael L. Littman
-jmlr-v10-85 | Prediction With Expert Advice For The Brier Game | http://www.jmlr.org/papers/v10/vovk09a.html | author:Vladimir Vovk, Fedor Zhdanov
-jmlr-v10-86 | Bi-Level Path Following for Cross Validated Solution of Kernel Quantile Regression | http://www.jmlr.org/papers/v10/rosset09a.html | author:Saharon Rosset
-jmlr-v10-87 | When Is There a Representer Theorem?  Vector Versus Matrix Regularizers | http://www.jmlr.org/papers/v10/argyriou09a.html | author:Andreas Argyriou, Charles A. Micchelli, Massimiliano Pontil
-jmlr-v10-88 | Maximum Entropy Discrimination Markov Networks | http://www.jmlr.org/papers/v10/zhu09a.html | author:Jun Zhu, Eric P. Xing
-jmlr-v10-89 | Learning When Concepts Abound | http://www.jmlr.org/papers/v10/madani09a.html | author:Omid Madani, Michael Connor, Wiley Greiner
-jmlr-v10-90 | Hash Kernels for Structured Data | http://www.jmlr.org/papers/v10/shi09a.html | author:Qinfeng Shi, James Petterson, Gideon Dror, John Langford, Alex Smola, S.V.N. Vishwanathan
-jmlr-v10-91 | DL-Learner: Learning Concepts in Description Logics | http://www.jmlr.org/papers/v10/lehmann09a.html | author:Jens Lehmann
-jmlr-v10-92 | Bounded Kernel-Based Online Learning | http://www.jmlr.org/papers/v10/orabona09a.html | author:Francesco Orabona, Joseph Keshet, Barbara Caputo
-jmlr-v10-93 | Structure Spaces | http://www.jmlr.org/papers/v10/jain09a.html | author:Brijnesh J. Jain, Klaus Obermayer
-jmlr-v10-94 | Learning Halfspaces with Malicious Noise | http://www.jmlr.org/papers/v10/klivans09a.html | author:Adam R. Klivans, Philip M. Long, Rocco A. Servedio
-jmlr-v10-95 | Reproducing Kernel Banach Spaces for Machine Learning | http://www.jmlr.org/papers/v10/zhang09b.html | author:Haizhang Zhang, Yuesheng Xu, Jun Zhang
-jmlr-v10-96 | Cautious Collective Classification | http://www.jmlr.org/papers/v10/mcdowell09a.html | author:Luke K. McDowell, Kalyan Moy Gupta, David W. Aha
-jmlr-v10-97 | Adaptive False Discovery Rate Control under Independence and Dependence | http://www.jmlr.org/papers/v10/blanchard09a.html | author:Gilles Blanchard,  Étienne Roquain
-jmlr-v10-98 | Online Learning with Samples Drawn from Non-identical Distributions | http://www.jmlr.org/papers/v10/hu09a.html | author:Ting Hu, Ding-Xuan Zhou
-jmlr-v10-99 | Efficient Online and Batch Learning Using Forward Backward Splitting | http://www.jmlr.org/papers/v10/duchi09a.html | author:John Duchi, Yoram Singer
-jmlr-v10-100 | A Survey of Accuracy Evaluation Metrics of Recommendation Tasks | http://www.jmlr.org/papers/v10/gunawardana09a.html | author:Asela Gunawardana, Guy Shani
+jmlr-v10-1 | Exploring Strategies for Training Deep Neural Networks | http://www.jmlr.org/papers/v10/larochelle09a.html | category:paper author:Hugo Larochelle, Yoshua Bengio, Jérôme Louradour, Pascal Lamblin
+jmlr-v10-2 | Markov Properties for Linear Causal Models with Correlated Errors | http://www.jmlr.org/papers/v10/kang09a.html | category:paper author:Changsung Kang, Jin Tian
+jmlr-v10-3 | An Analysis of Convex Relaxations for MAP Estimation of Discrete MRFs | http://www.jmlr.org/papers/v10/kumar09a.html | category:paper author:M. Pawan Kumar, Vladimir Kolmogorov, Philip H.S. Torr
+jmlr-v10-4 | Refinement of Reproducing Kernels | http://www.jmlr.org/papers/v10/xu09a.html | category:paper author:Yuesheng Xu, Haizhang Zhang
+jmlr-v10-5 | Subgroup Analysis via Recursive Partitioning | http://www.jmlr.org/papers/v10/su09a.html | category:paper author:Xiaogang Su, Chih-Ling Tsai, Hansheng Wang, David M. Nickerson, Bogong Li
+jmlr-v10-6 | Python Environment for Bayesian Learning: Inferring the Structure of Bayesian Networks from Knowledge and Data | http://www.jmlr.org/papers/v10/shah09a.html | category:paper author:Abhik Shah, Peter Woolf
+jmlr-v10-7 | On The Power of Membership Queries in Agnostic Learning | http://www.jmlr.org/papers/v10/feldman09a.html | category:paper author:Vitaly Feldman
+jmlr-v10-8 | Using Local Dependencies within Batches to Improve Large Margin Classifiers | http://www.jmlr.org/papers/v10/vural09a.html | category:paper author:Volkan Vural, Glenn Fung, Balaji Krishnapuram, Jennifer G. Dy, Bharat Rao
+jmlr-v10-9 | Distance Metric Learning for Large Margin Nearest Neighbor Classification | http://www.jmlr.org/papers/v10/weinberger09a.html | category:paper author:Kilian Q. Weinberger, Lawrence K. Saul
+jmlr-v10-10 | Data-driven Calibration of Penalties for Least-Squares Regression | http://www.jmlr.org/papers/v10/arlot09a.html | category:paper author:Sylvain Arlot, Pascal Massart
+jmlr-v10-11 | Analysis of Perceptron-Based Active Learning | http://www.jmlr.org/papers/v10/dasgupta09a.html | category:paper author:Sanjoy Dasgupta, Adam Tauman Kalai, Claire Monteleoni
+jmlr-v10-12 | Improving the Reliability of Causal Discovery from Small Data Sets Using Argumentation | http://www.jmlr.org/papers/v10/bromberg09a.html | category:paper author:Facundo Bromberg, Dimitris Margaritis
+jmlr-v10-13 | Low-Rank Kernel Learning with Bregman Matrix Divergences | http://www.jmlr.org/papers/v10/kulis09a.html | category:paper author:Brian Kulis, Mátyás A. Sustik, Inderjit S. Dhillon
+jmlr-v10-14 | Supervised Descriptive Rule Discovery: A Unifying Survey of Contrast Set, Emerging Pattern and Subgroup Mining | http://www.jmlr.org/papers/v10/kralj-novak09a.html | category:paper author:Petra Kralj Novak, Nada Lavrač, Geoffrey I. Webb
+jmlr-v10-15 | Particle Swarm Model Selection | http://www.jmlr.org/papers/v10/escalante09a.html | category:paper author:Hugo Jair Escalante, Manuel Montes, Luis Enrique Sucar
+jmlr-v10-16 | Generalization Bounds for Ranking Algorithms via Algorithmic Stability | http://www.jmlr.org/papers/v10/agarwal09a.html | category:paper author:Shivani Agarwal, Partha Niyogi
+jmlr-v10-17 | Controlling the False Discovery Rate of the Association/Causality Structure Learned with the PC Algorithm | http://www.jmlr.org/papers/v10/li09a.html | category:paper author:Junning Li, Z. Jane Wang
+jmlr-v10-18 | Identification of Recurrent Neural Networks by Bayesian Interrogation Techniques | http://www.jmlr.org/papers/v10/poczos09a.html | category:paper author:Barnabás Póczos, András Lőrincz
+jmlr-v10-19 | On the Consistency of Feature Selection using Greedy Least Squares Regression | http://www.jmlr.org/papers/v10/zhang09a.html | category:paper author:Tong Zhang
+jmlr-v10-20 | Online Learning with Sample Path Constraints | http://www.jmlr.org/papers/v10/mannor09a.html | category:paper author:Shie Mannor, John N. Tsitsiklis, Jia Yuan Yu
+jmlr-v10-21 | NEUROSVM: An Architecture to Reduce the Effect of the Choice of Kernel on the Performance of SVM | http://www.jmlr.org/papers/v10/ghanty09a.html | category:paper author:Pradip Ghanty, Samrat Paul, Nikhil R. Pal
+jmlr-v10-22 | Scalable Collaborative Filtering Approaches for Large Recommender Systems | http://www.jmlr.org/papers/v10/takacs09a.html | category:paper author:Gábor Takács, István Pilászy, Bottyán Németh, Domonkos Tikk
+jmlr-v10-23 | Nearest Neighbor Clustering: A Baseline Method for Consistent Clustering with Arbitrary Objective Functions | http://www.jmlr.org/papers/v10/bubeck09a.html | category:paper author:Sébastien Bubeck, Ulrike von Luxburg
+jmlr-v10-24 | Properties of Monotonic Effects on Directed Acyclic Graphs | http://www.jmlr.org/papers/v10/vanderweele09a.html | category:paper author:Tyler J. VanderWeele, James M. Robins
+jmlr-v10-25 | On Efficient Large Margin Semisupervised Learning: Method and Theory | http://www.jmlr.org/papers/v10/wang09a.html | category:paper author:Junhui Wang, Xiaotong Shen, Wei Pan
+jmlr-v10-26 | Nieme: Large-Scale Energy-Based Models | http://www.jmlr.org/papers/v10/maes09a.html | category:paper author:Francis Maes
+jmlr-v10-27 | Similarity-based Classification: Concepts and Algorithms | http://www.jmlr.org/papers/v10/chen09a.html | category:paper author:Yihua Chen, Eric K. Garcia, Maya R. Gupta, Ali Rahimi, Luca Cazzanti
+jmlr-v10-28 | Sparse Online Learning via Truncated Gradient | http://www.jmlr.org/papers/v10/langford09a.html | category:paper author:John Langford, Lihong Li, Tong Zhang
+jmlr-v10-29 | A New Approach to Collaborative Filtering: Operator Estimation with Spectral Regularization | http://www.jmlr.org/papers/v10/abernethy09a.html | category:paper author:Jacob Abernethy, Francis Bach, Theodoros Evgeniou, Jean-Philippe Vert
+jmlr-v10-30 | Consistency and Localizability | http://www.jmlr.org/papers/v10/zakai09a.html | category:paper author:Alon Zakai, Ya'acov Ritov
+jmlr-v10-31 | Stable and Efficient Gaussian Process Calculations | http://www.jmlr.org/papers/v10/foster09a.html | category:paper author:Leslie Foster, Alex Waagen, Nabeela Aijaz, Michael Hurley, Apolonio Luis, Joel Rinsky, Chandrika Satyavolu, Michael J. Way, Paul Gazis, Ashok Srivastava
+jmlr-v10-32 | Estimation of Sparse Binary Pairwise Markov Networks using Pseudo-likelihoods | http://www.jmlr.org/papers/v10/hoefling09a.html | category:paper author:Holger Höfling, Robert Tibshirani
+jmlr-v10-33 | Polynomial-Delay Enumeration of Monotonic Graph Classes | http://www.jmlr.org/papers/v10/ramon09a.html | category:paper author:Jan Ramon, Siegfried Nijssen
+jmlr-v10-34 | Java-ML: A Machine Learning Library | http://www.jmlr.org/papers/v10/abeel09a.html | category:paper author:Thomas Abeel, Yves Van de Peer, Yvan Saeys
+jmlr-v10-35 | Nonextensive Information Theoretic Kernels on Measures | http://www.jmlr.org/papers/v10/martins09a.html | category:paper author:André F. T. Martins, Noah A. Smith, Eric P. Xing, Pedro M. Q. Aguiar, Mário A. T. Figueiredo
+jmlr-v10-36 | On Uniform Deviations of General Empirical Risks with Unboundedness, Dependence, and High Dimensionality | http://www.jmlr.org/papers/v10/jiang09a.html | category:paper author:Wenxin Jiang
+jmlr-v10-37 | Fourier Theoretic Probabilistic Inference over Permutations | http://www.jmlr.org/papers/v10/huang09a.html | category:paper author:Jonathan Huang, Carlos Guestrin, Leonidas Guibas
+jmlr-v10-38 | An Algorithm for Reading Dependencies from the Minimal Undirected Independence Map of a Graphoid that Satisfies Weak Transitivity | http://www.jmlr.org/papers/v10/pena09a.html | category:paper author:Jose M. Peña, Roland Nilsson, Johan Björkegren, Jesper Tegnér
+jmlr-v10-39 | Universal Kernel-Based Learning with Applications to Regular Languages | http://www.jmlr.org/papers/v10/kontorovich09a.html | category:paper author:Leonid (Aryeh) Kontorovich, Boaz Nadler
+jmlr-v10-40 | Multi-task Reinforcement Learning in Partially Observable Stochastic Environments | http://www.jmlr.org/papers/v10/li09b.html | category:paper author:Hui Li, Xuejun Liao, Lawrence Carin
+jmlr-v10-41 | The Hidden Life of Latent Variables: Bayesian Learning with Mixed Graph Models | http://www.jmlr.org/papers/v10/silva09a.html | category:paper author:Ricardo Silva, Zoubin Ghahramani
+jmlr-v10-42 | Incorporating Functional Knowledge in Neural Networks | http://www.jmlr.org/papers/v10/dugas09a.html | category:paper author:Charles Dugas, Yoshua Bengio, François Bélisle, Claude Nadeau, René Garcia
+jmlr-v10-43 | Perturbation Corrections in Approximate Inference: Mixture Modelling Applications | http://www.jmlr.org/papers/v10/paquet09a.html | category:paper author:Ulrich Paquet, Ole Winther, Manfred Opper
+jmlr-v10-44 | Robust Process Discovery with Artificial Negative Events | http://www.jmlr.org/papers/v10/goedertier09a.html | category:paper author:Stijn Goedertier, David Martens, Jan Vanthienen, Bart Baesens
+jmlr-v10-45 | Feature Selection with Ensembles, Artificial Variables, and Redundancy Elimination | http://www.jmlr.org/papers/v10/tuv09a.html | category:paper author:Eugene Tuv, Alexander Borisov, George Runger, Kari Torkkola
+jmlr-v10-46 | A Parameter-Free Classification Method for Large Scale Learning | http://www.jmlr.org/papers/v10/boulle09a.html | category:paper author:Marc Boullé
+jmlr-v10-47 | Model Monitor | http://www.jmlr.org/papers/v10/raeder09a.html | category:paper author:Troy Raeder, Nitesh V. Chawla
+jmlr-v10-48 | A Least-squares Approach to Direct Importance Estimation | http://www.jmlr.org/papers/v10/kanamori09a.html | category:paper author:Takafumi Kanamori, Shohei Hido, Masashi Sugiyama
+jmlr-v10-49 | Classification with Gaussians and Convex Loss | http://www.jmlr.org/papers/v10/xiang09a.html | category:paper author:Dao-Hong Xiang, Ding-Xuan Zhou
+jmlr-v10-50 | Entropy Inference and the James-Stein Estimator, with Application to Nonlinear Gene Association Networks | http://www.jmlr.org/papers/v10/hausser09a.html | category:paper author:Jean Hausser, Korbinian Strimmer
+jmlr-v10-51 | Robustness and Regularization of Support Vector Machines | http://www.jmlr.org/papers/v10/xu09b.html | category:paper author:Huan Xu, Constantine Caramanis, Shie Mannor
+jmlr-v10-52 | Strong Limit Theorems for the Bayesian Scoring Criterion in Bayesian Networks | http://www.jmlr.org/papers/v10/slobodianik09a.html | category:paper author:Nikolai Slobodianik, Dmitry Zaporozhets, Neal Madras
+jmlr-v10-53 | Bayesian Network Structure Learning by Recursive Autonomy Identification | http://www.jmlr.org/papers/v10/yehezkel09a.html | category:paper author:Raanan Yehezkel, Boaz Lerner
+jmlr-v10-54 | Learning Linear Ranking Functions for Beam Search with Application to Planning | http://www.jmlr.org/papers/v10/xu09c.html | category:paper author:Yuehua Xu, Alan Fern, Sungwook Yoon
+jmlr-v10-55 | Marginal Likelihood Integrals for Mixtures of Independence Models | http://www.jmlr.org/papers/v10/lin09a.html | category:paper author:Shaowei Lin, Bernd Sturmfels, Zhiqiang Xu
+jmlr-v10-56 | Transfer Learning for Reinforcement Learning Domains: A Survey | http://www.jmlr.org/papers/v10/taylor09a.html | category:paper author:Matthew E. Taylor, Peter Stone
+jmlr-v10-57 | Application of Non Parametric Empirical Bayes Estimation to High Dimensional Classification | http://www.jmlr.org/papers/v10/greenshtein09a.html | category:paper author:Eitan Greenshtein, Junyong Park
+jmlr-v10-58 | Learning Permutations with Exponential Weights | http://www.jmlr.org/papers/v10/helmbold09a.html | category:paper author:David P. Helmbold, Manfred K. Warmuth
+jmlr-v10-59 | SGD-QN: Careful Quasi-Newton Stochastic Gradient Descent | http://www.jmlr.org/papers/v10/bordes09a.html | category:paper author:Antoine Bordes, Léon Bottou, Patrick Gallinari
+jmlr-v10-60 | Dlib-ml: A Machine Learning Toolkit | http://www.jmlr.org/papers/v10/king09a.html | category:paper author:Davis E. King
+jmlr-v10-61 | Settable Systems: An Extension of Pearl's Causal Model with Optimization, Equilibrium, and Learning | http://www.jmlr.org/papers/v10/white09a.html | category:paper author:Halbert White, Karim Chalak
+jmlr-v10-62 | Distributed Algorithms for Topic Models | http://www.jmlr.org/papers/v10/newman09a.html | category:paper author:David Newman, Arthur Asuncion, Padhraic Smyth, Max Welling
+jmlr-v10-63 | Nonlinear Models Using Dirichlet Process Mixtures | http://www.jmlr.org/papers/v10/shahbaba09a.html | category:paper author:Babak Shahbaba, Radford Neal
+jmlr-v10-64 | CarpeDiem: Optimizing the Viterbi Algorithm and Applications to Supervised Sequential Learning | http://www.jmlr.org/papers/v10/esposito09a.html | category:paper author:Roberto Esposito, Daniele P. Radicioni
+jmlr-v10-65 | Learning Acyclic Probabilistic Circuits Using Test Paths | http://www.jmlr.org/papers/v10/angluin09a.html | category:paper author:Dana Angluin, James Aspnes, Jiang Chen, David Eisenstat, Lev Reyzin
+jmlr-v10-66 | Learning Approximate Sequential Patterns for Classification | http://www.jmlr.org/papers/v10/syed09a.html | category:paper author:Zeeshan Syed, Piotr Indyk, John Guttag
+jmlr-v10-67 | Hybrid MPI/OpenMP Parallel Linear Support Vector Machine Training | http://www.jmlr.org/papers/v10/woodsend09a.html | category:paper author:Kristian Woodsend, Jacek Gondzio
+jmlr-v10-68 | Provably Efficient Learning with Typed Parametric Models | http://www.jmlr.org/papers/v10/brunskill09a.html | category:paper author:Emma Brunskill, Bethany R. Leffler, Lihong Li, Michael L. Littman, Nicholas Roy
+jmlr-v10-69 | Fast Approximate kNN Graph Construction for High Dimensional Data via Recursive Lanczos Bisection | http://www.jmlr.org/papers/v10/chen09b.html | category:paper author:Jie Chen, Haw-ren Fang, Yousef Saad
+jmlr-v10-70 | Ultrahigh Dimensional Feature Selection: Beyond The Linear Model | http://www.jmlr.org/papers/v10/fan09a.html | category:paper author:Jianqing Fan, Richard Samworth, Yichao Wu
+jmlr-v10-71 | Evolutionary Model Type Selection for Global Surrogate Modeling | http://www.jmlr.org/papers/v10/gorissen09a.html | category:paper author:Dirk Gorissen, Tom Dhaene, Filip De Turck
+jmlr-v10-72 | An Anticorrelation Kernel for Subsystem Training in Multiple Classifier Systems | http://www.jmlr.org/papers/v10/ferrer09a.html | category:paper author:Luciana Ferrer, Kemal Sönmez, Elizabeth Shriberg
+jmlr-v10-73 | Deterministic Error Analysis of Support Vector Regression and Related Regularized Kernel Methods | http://www.jmlr.org/papers/v10/rieger09a.html | category:paper author:Christian Rieger, Barbara Zwicknagl
+jmlr-v10-74 | RL-Glue: Language-Independent Software for Reinforcement-Learning Experiments | http://www.jmlr.org/papers/v10/tanner09a.html | category:paper author:Brian Tanner, Adam White
+jmlr-v10-75 | Discriminative Learning Under Covariate Shift | http://www.jmlr.org/papers/v10/bickel09a.html | category:paper author:Steffen Bickel, Michael Brückner, Tobias Scheffer
+jmlr-v10-76 | Optimized Cutting Plane Algorithm for Large-Scale Risk Minimization | http://www.jmlr.org/papers/v10/franc09a.html | category:paper author:Vojtěch Franc, Sören Sonnenburg
+jmlr-v10-77 | Margin-based Ranking and an Equivalence between AdaBoost and RankBoost | http://www.jmlr.org/papers/v10/rudin09a.html | category:paper author:Cynthia Rudin, Robert E. Schapire
+jmlr-v10-78 | The P-Norm Push: A Simple Convex Ranking Algorithm that Concentrates at the Top of the List | http://www.jmlr.org/papers/v10/rudin09b.html | category:paper author:Cynthia Rudin
+jmlr-v10-79 | Learning Nondeterministic Classifiers | http://www.jmlr.org/papers/v10/delcoz09a.html | category:paper author:Juan José del Coz, Jorge Díez, Antonio Bahamonde
+jmlr-v10-80 | The Nonparanormal: Semiparametric Estimation of High Dimensional Undirected Graphs | http://www.jmlr.org/papers/v10/liu09a.html | category:paper author:Han Liu, John Lafferty, Larry Wasserman
+jmlr-v10-81 | Computing Maximum Likelihood Estimates in Recursive Linear Models with Correlated Errors | http://www.jmlr.org/papers/v10/drton09a.html | category:paper author:Mathias Drton, Michael Eichler, Thomas S. Richardson
+jmlr-v10-82 | Estimating Labels from Label Proportions | http://www.jmlr.org/papers/v10/quadrianto09a.html | category:paper author:Novi Quadrianto, Alex J. Smola, Tibério S. Caetano, Quoc V. Le
+jmlr-v10-83 | Exploiting Product Distributions to Identify Relevant Variables of Correlation Immune Functions | http://www.jmlr.org/papers/v10/hellerstein09a.html | category:paper author:Lisa Hellerstein, Bernard Rosell, Eric Bach, Soumya Ray, David Page
+jmlr-v10-84 | Reinforcement Learning in Finite MDPs: PAC Analysis | http://www.jmlr.org/papers/v10/strehl09a.html | category:paper author:Alexander L. Strehl, Lihong Li, Michael L. Littman
+jmlr-v10-85 | Prediction With Expert Advice For The Brier Game | http://www.jmlr.org/papers/v10/vovk09a.html | category:paper author:Vladimir Vovk, Fedor Zhdanov
+jmlr-v10-86 | Bi-Level Path Following for Cross Validated Solution of Kernel Quantile Regression | http://www.jmlr.org/papers/v10/rosset09a.html | category:paper author:Saharon Rosset
+jmlr-v10-87 | When Is There a Representer Theorem?  Vector Versus Matrix Regularizers | http://www.jmlr.org/papers/v10/argyriou09a.html | category:paper author:Andreas Argyriou, Charles A. Micchelli, Massimiliano Pontil
+jmlr-v10-88 | Maximum Entropy Discrimination Markov Networks | http://www.jmlr.org/papers/v10/zhu09a.html | category:paper author:Jun Zhu, Eric P. Xing
+jmlr-v10-89 | Learning When Concepts Abound | http://www.jmlr.org/papers/v10/madani09a.html | category:paper author:Omid Madani, Michael Connor, Wiley Greiner
+jmlr-v10-90 | Hash Kernels for Structured Data | http://www.jmlr.org/papers/v10/shi09a.html | category:paper author:Qinfeng Shi, James Petterson, Gideon Dror, John Langford, Alex Smola, S.V.N. Vishwanathan
+jmlr-v10-91 | DL-Learner: Learning Concepts in Description Logics | http://www.jmlr.org/papers/v10/lehmann09a.html | category:paper author:Jens Lehmann
+jmlr-v10-92 | Bounded Kernel-Based Online Learning | http://www.jmlr.org/papers/v10/orabona09a.html | category:paper author:Francesco Orabona, Joseph Keshet, Barbara Caputo
+jmlr-v10-93 | Structure Spaces | http://www.jmlr.org/papers/v10/jain09a.html | category:paper author:Brijnesh J. Jain, Klaus Obermayer
+jmlr-v10-94 | Learning Halfspaces with Malicious Noise | http://www.jmlr.org/papers/v10/klivans09a.html | category:paper author:Adam R. Klivans, Philip M. Long, Rocco A. Servedio
+jmlr-v10-95 | Reproducing Kernel Banach Spaces for Machine Learning | http://www.jmlr.org/papers/v10/zhang09b.html | category:paper author:Haizhang Zhang, Yuesheng Xu, Jun Zhang
+jmlr-v10-96 | Cautious Collective Classification | http://www.jmlr.org/papers/v10/mcdowell09a.html | category:paper author:Luke K. McDowell, Kalyan Moy Gupta, David W. Aha
+jmlr-v10-97 | Adaptive False Discovery Rate Control under Independence and Dependence | http://www.jmlr.org/papers/v10/blanchard09a.html | category:paper author:Gilles Blanchard,  Étienne Roquain
+jmlr-v10-98 | Online Learning with Samples Drawn from Non-identical Distributions | http://www.jmlr.org/papers/v10/hu09a.html | category:paper author:Ting Hu, Ding-Xuan Zhou
+jmlr-v10-99 | Efficient Online and Batch Learning Using Forward Backward Splitting | http://www.jmlr.org/papers/v10/duchi09a.html | category:paper author:John Duchi, Yoram Singer
+jmlr-v10-100 | A Survey of Accuracy Evaluation Metrics of Recommendation Tasks | http://www.jmlr.org/papers/v10/gunawardana09a.html | category:paper author:Asela Gunawardana, Guy Shani

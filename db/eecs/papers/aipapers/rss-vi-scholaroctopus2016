@@ -1,40 +1,40 @@
-RSS-VI-1 | Biophysically inspired development of a sand-swimming robot | http://www.roboticsproceedings.org/rss06/p01.pdf | author:R. Maladen, Y. Ding, P. Umbanhowar, A. Kamor and D. Goldman
-RSS-VI-2 | Passive torque regulation in an underactuated flapping wing robotic insect | http://www.roboticsproceedings.org/rss06/p02.pdf | author:P. Sreetharan and R. Wood
-RSS-VI-3 | Color-Accurate Underwater Imaging using Perceptual Adaptive Illumination | http://www.roboticsproceedings.org/rss06/p03.pdf | author:I. Vasilescu, C. Detweiler and D. Rus
-RSS-VI-4 | Probabilistic Lane Estimation using Basis Curves | http://www.roboticsproceedings.org/rss06/p04.pdf | author:A. Huang and S. Teller
-RSS-VI-5 | Reinforcement Learning to adjust Robot Movements to New Situations | http://www.roboticsproceedings.org/rss06/p05.pdf | author:J. Kober, E. Oztop and J. Peters
-RSS-VI-6 | Analysis and Control of a Dissipative Spring-Mass Hopper with Torque Actuation | http://www.roboticsproceedings.org/rss06/p06.pdf | author:M. M. Ankarali and U. Saranli
-RSS-VI-7 | On motion and force controllability of grasping hands with postural synergies | http://www.roboticsproceedings.org/rss06/p07.pdf | author:D. Pratichizzo, M. Malvezzi and A. Bicchi
-RSS-VI-8 | Back-drivable and Inherently Safe Mechanism for Artificial Finger | http://www.roboticsproceedings.org/rss06/p08.pdf | author:K. Koganezawa
-RSS-VI-9 | Segmentation and Unsupervised Part-based Discovery of Repetitive Objects | http://www.roboticsproceedings.org/rss06/p09.pdf | author:R. Triebel, J. Shin and R. Siegwart
-RSS-VI-10 | Scale Drift-Aware Large Scale Monocular SLAM | http://www.roboticsproceedings.org/rss06/p10.pdf | author:H. Strasdat, J. M. M. Montiel and A. Davison
-RSS-VI-11 | Preliminary Results in Decentralized Estimation for Single-Beacon Acoustic Underwater Navigation | http://www.roboticsproceedings.org/rss06/p11.pdf | author:S. Webster, L. Whitcomb and R. Eustice
-RSS-VI-12 | A Non-invasive Real-Time Method for Measuring Variable Stiffness  | http://www.roboticsproceedings.org/rss06/p12.pdf | author:G. Grioli and A. Bicchi
-RSS-VI-13 | Consistent data association in multi-robot systems with limited communications | http://www.roboticsproceedings.org/rss06/p13.pdf | author:R. Aragues, E. Montijano and C. Sagues
-RSS-VI-14 | Singularity-invariant leg rearrangements in doubly-planar Stewart-Gough platforms | http://www.roboticsproceedings.org/rss06/p14.pdf | author:J. B. Sol, F. Thomas and C. Torras
-RSS-VI-15 | On the kinematic design of exoskeletons and their fixations with a human member | http://www.roboticsproceedings.org/rss06/p15.pdf | author:N. Jarrasse and G. Morel
-RSS-VI-16 | Assessing Optimal Assignment under Uncertainty: An Interval-based Algorithm | http://www.roboticsproceedings.org/rss06/p16.pdf | author:L. Liu and D. Shell
-RSS-VI-17 | LQG-MP: Optimized Path Planning for Robots with Motion Uncertainty and Imperfect State Information | http://www.roboticsproceedings.org/rss06/p17.pdf | author:J. V. D. Berg, P. Abbeel and K. Goldberg
-RSS-VI-18 | The Smooth Curvature Flexure Model: An Accurate, Low-Dimensional Approach for Robot Analysis | http://www.roboticsproceedings.org/rss06/p18.pdf | author:L. Odhner and A. Dollar
-RSS-VI-19 | Multi-Priority Cartesian Impedance Control | http://www.roboticsproceedings.org/rss06/p19.pdf | author:R. Platt, M. Abdallah and C. Wampler
-RSS-VI-20 | Variable Impedance Control - A Reinforcement Learning Approach | http://www.roboticsproceedings.org/rss06/p20.pdf | author:J. Buchli, E. Theodorou, F. Stulp and S. Schaal
-RSS-VI-21 | A Fast Traversal Heuristic and Optimal Algorithm for Effective Environmental Coverage | http://www.roboticsproceedings.org/rss06/p21.pdf | author:L. Xu and T. Stentz
-RSS-VI-22 | Stochastic Complementarity for Local Control of Discontinuous Dynamics | http://www.roboticsproceedings.org/rss06/p22.pdf | author:Y. Tassa and E. Todorov
-RSS-VI-23 | Distributed Optimization with Pairwise Constraints and its Application to Multi-robot Path Planning | http://www.roboticsproceedings.org/rss06/p23.pdf | author:S. Bhattacharya, V. Kumar and M. Likachev
-RSS-VI-24 | PLISS: Detecting and Labeling Places Using Online Change-Point Detection | http://www.roboticsproceedings.org/rss06/p24.pdf | author:A. Ranganathan
-RSS-VI-25 | A Constant-Time Algorithm for Vector Field SLAM using an Exactly Sparse Extended Information Filter | http://www.roboticsproceedings.org/rss06/p25.pdf | author:J.-S. Gutmann, E. Eade, P. Fong and M. Munich
-RSS-VI-26 | Efficient probabilistic planar robot motion estimation given pairs of images | http://www.roboticsproceedings.org/rss06/p26.pdf | author:O. Booij, Z. Zivkovic and B. KrÃ¶se
-RSS-VI-27 | Efficient Non-Parametric Surface Representations Using Active Sampling for Push Broom Laser Data | http://www.roboticsproceedings.org/rss06/p27.pdf | author:M. Smith, I. Posner and P. Newman
-RSS-VI-28 | Sensor Placement for Improved Robotic Navigation | http://www.roboticsproceedings.org/rss06/p28.pdf | author:M. Vitus and C. Tomlin
-RSS-VI-29 | Task-Driven Tactile Exploration | http://www.roboticsproceedings.org/rss06/p29.pdf | author:K. Hsiao, L. Kaelbling and T. Lozano-Perez
-RSS-VI-30 | On the Role of Hand Synergies in the Optimal Choice of Grasping Forces | http://www.roboticsproceedings.org/rss06/p30.pdf | author:M. Gabiccini and A. Bicchi
-RSS-VI-31 | Dynamic Constraint-based Optimal Shape Trajectory Planner for Shape-Accelerated Underactuated Balancing Systems | http://www.roboticsproceedings.org/rss06/p31.pdf | author:U. Nagarajan
-RSS-VI-32 | Design and Optimization Strategies for Muscle-Like Direct Drive Linear Permanent Magnet Motors | http://www.roboticsproceedings.org/rss06/p32.pdf | author:B. Ruddy and I. Hunter
-RSS-VI-33 | Study of group food retrieval by ants as a model for multi-robot collective transport strategies | http://www.roboticsproceedings.org/rss06/p33.pdf | author:S. Berman, Q. Lindsey, M. Sakar, V. Kumar and S. Pratt
-RSS-VI-34 | Incremental Sampling-based Algorithms for Optimal Motion Planning | http://www.roboticsproceedings.org/rss06/p34.pdf | author:S. Karaman and E. Frazzoli
-RSS-VI-35 | Stochastic Modeling of the Expected Time to Search for an Intermittent Signal Source Under a Limited Sensing Range | http://www.roboticsproceedings.org/rss06/p35.pdf | author:D. Song, C. Y. Kim and J. Yi
-RSS-VI-36 | Closing the Learning-Planning Loop with Predictive State Representations | http://www.roboticsproceedings.org/rss06/p36.pdf | author:B. Boots, S. Siddiqi and G. Gordon
-RSS-VI-37 | Belief space planning assuming maximum likelihood observations | http://www.roboticsproceedings.org/rss06/p37.pdf | author:R. Platt, R. Tedrake, L. Kaelbling and T. Lozano-Perez
-RSS-VI-38 | Motion planning under bounded uncertainty using ensemble control | http://www.roboticsproceedings.org/rss06/p38.pdf | author:A. Becker and T. Bretl
-RSS-VI-39 | Remotely Powered Propulsion of Helical Nanobelts | http://www.roboticsproceedings.org/rss06/p39.pdf | author:G. Hwang, S. Haliyo and S. RÃ©gnier
-RSS-VI-40 | A Molecular Algorithm for Path Self-Assembly in 3 Dimensions | http://www.roboticsproceedings.org/rss06/p40.pdf | author:R. Schulman and B. Yurke
+RSS-VI-1 | Biophysically inspired development of a sand-swimming robot | http://www.roboticsproceedings.org/rss06/p01.pdf | category:paper author:R. Maladen, Y. Ding, P. Umbanhowar, A. Kamor and D. Goldman
+RSS-VI-2 | Passive torque regulation in an underactuated flapping wing robotic insect | http://www.roboticsproceedings.org/rss06/p02.pdf | category:paper author:P. Sreetharan and R. Wood
+RSS-VI-3 | Color-Accurate Underwater Imaging using Perceptual Adaptive Illumination | http://www.roboticsproceedings.org/rss06/p03.pdf | category:paper author:I. Vasilescu, C. Detweiler and D. Rus
+RSS-VI-4 | Probabilistic Lane Estimation using Basis Curves | http://www.roboticsproceedings.org/rss06/p04.pdf | category:paper author:A. Huang and S. Teller
+RSS-VI-5 | Reinforcement Learning to adjust Robot Movements to New Situations | http://www.roboticsproceedings.org/rss06/p05.pdf | category:paper author:J. Kober, E. Oztop and J. Peters
+RSS-VI-6 | Analysis and Control of a Dissipative Spring-Mass Hopper with Torque Actuation | http://www.roboticsproceedings.org/rss06/p06.pdf | category:paper author:M. M. Ankarali and U. Saranli
+RSS-VI-7 | On motion and force controllability of grasping hands with postural synergies | http://www.roboticsproceedings.org/rss06/p07.pdf | category:paper author:D. Pratichizzo, M. Malvezzi and A. Bicchi
+RSS-VI-8 | Back-drivable and Inherently Safe Mechanism for Artificial Finger | http://www.roboticsproceedings.org/rss06/p08.pdf | category:paper author:K. Koganezawa
+RSS-VI-9 | Segmentation and Unsupervised Part-based Discovery of Repetitive Objects | http://www.roboticsproceedings.org/rss06/p09.pdf | category:paper author:R. Triebel, J. Shin and R. Siegwart
+RSS-VI-10 | Scale Drift-Aware Large Scale Monocular SLAM | http://www.roboticsproceedings.org/rss06/p10.pdf | category:paper author:H. Strasdat, J. M. M. Montiel and A. Davison
+RSS-VI-11 | Preliminary Results in Decentralized Estimation for Single-Beacon Acoustic Underwater Navigation | http://www.roboticsproceedings.org/rss06/p11.pdf | category:paper author:S. Webster, L. Whitcomb and R. Eustice
+RSS-VI-12 | A Non-invasive Real-Time Method for Measuring Variable Stiffness  | http://www.roboticsproceedings.org/rss06/p12.pdf | category:paper author:G. Grioli and A. Bicchi
+RSS-VI-13 | Consistent data association in multi-robot systems with limited communications | http://www.roboticsproceedings.org/rss06/p13.pdf | category:paper author:R. Aragues, E. Montijano and C. Sagues
+RSS-VI-14 | Singularity-invariant leg rearrangements in doubly-planar Stewart-Gough platforms | http://www.roboticsproceedings.org/rss06/p14.pdf | category:paper author:J. B. Sol, F. Thomas and C. Torras
+RSS-VI-15 | On the kinematic design of exoskeletons and their fixations with a human member | http://www.roboticsproceedings.org/rss06/p15.pdf | category:paper author:N. Jarrasse and G. Morel
+RSS-VI-16 | Assessing Optimal Assignment under Uncertainty: An Interval-based Algorithm | http://www.roboticsproceedings.org/rss06/p16.pdf | category:paper author:L. Liu and D. Shell
+RSS-VI-17 | LQG-MP: Optimized Path Planning for Robots with Motion Uncertainty and Imperfect State Information | http://www.roboticsproceedings.org/rss06/p17.pdf | category:paper author:J. V. D. Berg, P. Abbeel and K. Goldberg
+RSS-VI-18 | The Smooth Curvature Flexure Model: An Accurate, Low-Dimensional Approach for Robot Analysis | http://www.roboticsproceedings.org/rss06/p18.pdf | category:paper author:L. Odhner and A. Dollar
+RSS-VI-19 | Multi-Priority Cartesian Impedance Control | http://www.roboticsproceedings.org/rss06/p19.pdf | category:paper author:R. Platt, M. Abdallah and C. Wampler
+RSS-VI-20 | Variable Impedance Control - A Reinforcement Learning Approach | http://www.roboticsproceedings.org/rss06/p20.pdf | category:paper author:J. Buchli, E. Theodorou, F. Stulp and S. Schaal
+RSS-VI-21 | A Fast Traversal Heuristic and Optimal Algorithm for Effective Environmental Coverage | http://www.roboticsproceedings.org/rss06/p21.pdf | category:paper author:L. Xu and T. Stentz
+RSS-VI-22 | Stochastic Complementarity for Local Control of Discontinuous Dynamics | http://www.roboticsproceedings.org/rss06/p22.pdf | category:paper author:Y. Tassa and E. Todorov
+RSS-VI-23 | Distributed Optimization with Pairwise Constraints and its Application to Multi-robot Path Planning | http://www.roboticsproceedings.org/rss06/p23.pdf | category:paper author:S. Bhattacharya, V. Kumar and M. Likachev
+RSS-VI-24 | PLISS: Detecting and Labeling Places Using Online Change-Point Detection | http://www.roboticsproceedings.org/rss06/p24.pdf | category:paper author:A. Ranganathan
+RSS-VI-25 | A Constant-Time Algorithm for Vector Field SLAM using an Exactly Sparse Extended Information Filter | http://www.roboticsproceedings.org/rss06/p25.pdf | category:paper author:J.-S. Gutmann, E. Eade, P. Fong and M. Munich
+RSS-VI-26 | Efficient probabilistic planar robot motion estimation given pairs of images | http://www.roboticsproceedings.org/rss06/p26.pdf | category:paper author:O. Booij, Z. Zivkovic and B. KrÃ¶se
+RSS-VI-27 | Efficient Non-Parametric Surface Representations Using Active Sampling for Push Broom Laser Data | http://www.roboticsproceedings.org/rss06/p27.pdf | category:paper author:M. Smith, I. Posner and P. Newman
+RSS-VI-28 | Sensor Placement for Improved Robotic Navigation | http://www.roboticsproceedings.org/rss06/p28.pdf | category:paper author:M. Vitus and C. Tomlin
+RSS-VI-29 | Task-Driven Tactile Exploration | http://www.roboticsproceedings.org/rss06/p29.pdf | category:paper author:K. Hsiao, L. Kaelbling and T. Lozano-Perez
+RSS-VI-30 | On the Role of Hand Synergies in the Optimal Choice of Grasping Forces | http://www.roboticsproceedings.org/rss06/p30.pdf | category:paper author:M. Gabiccini and A. Bicchi
+RSS-VI-31 | Dynamic Constraint-based Optimal Shape Trajectory Planner for Shape-Accelerated Underactuated Balancing Systems | http://www.roboticsproceedings.org/rss06/p31.pdf | category:paper author:U. Nagarajan
+RSS-VI-32 | Design and Optimization Strategies for Muscle-Like Direct Drive Linear Permanent Magnet Motors | http://www.roboticsproceedings.org/rss06/p32.pdf | category:paper author:B. Ruddy and I. Hunter
+RSS-VI-33 | Study of group food retrieval by ants as a model for multi-robot collective transport strategies | http://www.roboticsproceedings.org/rss06/p33.pdf | category:paper author:S. Berman, Q. Lindsey, M. Sakar, V. Kumar and S. Pratt
+RSS-VI-34 | Incremental Sampling-based Algorithms for Optimal Motion Planning | http://www.roboticsproceedings.org/rss06/p34.pdf | category:paper author:S. Karaman and E. Frazzoli
+RSS-VI-35 | Stochastic Modeling of the Expected Time to Search for an Intermittent Signal Source Under a Limited Sensing Range | http://www.roboticsproceedings.org/rss06/p35.pdf | category:paper author:D. Song, C. Y. Kim and J. Yi
+RSS-VI-36 | Closing the Learning-Planning Loop with Predictive State Representations | http://www.roboticsproceedings.org/rss06/p36.pdf | category:paper author:B. Boots, S. Siddiqi and G. Gordon
+RSS-VI-37 | Belief space planning assuming maximum likelihood observations | http://www.roboticsproceedings.org/rss06/p37.pdf | category:paper author:R. Platt, R. Tedrake, L. Kaelbling and T. Lozano-Perez
+RSS-VI-38 | Motion planning under bounded uncertainty using ensemble control | http://www.roboticsproceedings.org/rss06/p38.pdf | category:paper author:A. Becker and T. Bretl
+RSS-VI-39 | Remotely Powered Propulsion of Helical Nanobelts | http://www.roboticsproceedings.org/rss06/p39.pdf | category:paper author:G. Hwang, S. Haliyo and S. RÃ©gnier
+RSS-VI-40 | A Molecular Algorithm for Path Self-Assembly in 3 Dimensions | http://www.roboticsproceedings.org/rss06/p40.pdf | category:paper author:R. Schulman and B. Yurke

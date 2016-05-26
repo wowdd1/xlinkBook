@@ -1,24 +1,24 @@
-jmlr-causality-1 | Introduction to Causal Inference | http://www.jmlr.org/papers/v11/spirtes10a.html | author:Peter Spirtes
-jmlr-causality-2 | Using Markov Blankets for Causal Structure Learning | http://www.jmlr.org/papers/v9/pellet08a.html | author:Jean-Philippe Pellet, André Elisseeff
-jmlr-causality-3 | Causal Reasoning with Ancestral Graphs | http://www.jmlr.org/papers/v9/zhang08a.html | author:Jiji Zhang
-jmlr-causality-4 | Complete Identification Methods for the Causal Hierarchy | http://www.jmlr.org/papers/v9/shpitser08a.html | author:Ilya Shpitser, Judea Pearl
-jmlr-causality-5 | Active Learning of Causal Networks with Intervention Experiments and Optimal Designs | http://www.jmlr.org/papers/v9/he08a.html | author:Yang-Bo He, Zhi Geng
-jmlr-causality-6 | Markov Properties for Linear Causal Models with Correlated Errors | http://www.jmlr.org/papers/v10/kang09a.html | author:Changsung Kang, Jin Tian
-jmlr-causality-7 | Improving the Reliability of Causal Discovery from Small Data Sets Using Argumentation | http://www.jmlr.org/papers/v10/bromberg09a.html | author:Facundo Bromberg, Dimitris Margaritis
-jmlr-causality-8 | Properties of Monotonic Effects on Directed Acyclic Graphs | http://www.jmlr.org/papers/v10/vanderweele09a.html | author:Tyler J. VanderWeele, James M. Robins
-jmlr-causality-9 | Bayesian Network Structure Learning by Recursive Autonomy Identification | http://www.jmlr.org/papers/v10/yehezkel09a.html | author:Raanan Yehezkel, Boaz Lerner
-jmlr-causality-10 | Local Causal and Markov Blanket Induction for Causal Discovery and Feature Selection for Classification Part I: Algorithms and Empirical Evaluation | http://www.jmlr.org/papers/v11/aliferis10a.html | author:Constantin F. Aliferis, Alexander Statnikov, Ioannis Tsamardinos, Subramani Mani, Xenofon D. Koutsoukos
-jmlr-causality-11 | Local Causal and Markov Blanket Induction for Causal Discovery and Feature Selection for Classification Part II: Analysis and Extensions | http://www.jmlr.org/papers/v11/aliferis10b.html | author:Constantin F. Aliferis, Alexander Statnikov, Ioannis Tsamardinos, Subramani Mani, Xenofon D. Koutsoukos
-jmlr-causality-12 | "Ideal Parent" Structure Learning for Continuous Variable Bayesian Networks | http://www.jmlr.org/papers/v8/elidan07a.html | author:Gal Elidan, Iftach Nachman, Nir Friedman
-jmlr-causality-13 | A Recursive Method for Structural Learning of Directed Acyclic Graphs | http://www.jmlr.org/papers/v9/xie08a.html | author:Xianchao Xie, Zhi Geng
-jmlr-causality-14 | Search for Additive Nonlinear Time Series Causal Models | http://www.jmlr.org/papers/v9/chu08a.html | author:Tianjiao Chu, Clark Glymour
-jmlr-causality-15 | Finding Optimal Bayesian Network Given a Super-Structure | http://www.jmlr.org/papers/v9/perrier08a.html | author:Eric Perrier, Seiya Imoto, Satoru Miyano
-jmlr-causality-16 | Learning Bounded Treewidth Bayesian Networks | http://www.jmlr.org/papers/v9/elidan08a.html | author:Gal Elidan, Stephen Gould
-jmlr-causality-17 | Structural Learning of Chain Graphs via Decomposition | http://www.jmlr.org/papers/v9/ma08a.html | author:Zongming Ma, Xianchao Xie, Zhi Geng
-jmlr-causality-18 | Python Environment for Bayesian Learning: Inferring the Structure of Bayesian Networks from Knowledge and Data | http://www.jmlr.org/papers/v10/shah09a.html | author:Abhik Shah, Peter Woolf
-jmlr-causality-19 | Controlling the False Discovery Rate of the Association/Causality Structure Learned with the PC Algorithm | http://www.jmlr.org/papers/v10/li09a.html | author:Junning Li, Z. Jane Wang
-jmlr-causality-20 | The Hidden Life of Latent Variables: Bayesian Learning with Mixed Graph Models | http://www.jmlr.org/papers/v10/silva09a.html | author:Ricardo Silva, Zoubin Ghahramani
-jmlr-causality-21 | Settable Systems: An Extension of Pearl's Causal Model with Optimization, Equilibrium, and Learning | http://www.jmlr.org/papers/v10/white09a.html | author:Halbert White, Karim Chalak
-jmlr-causality-22 | Optimal Search on Clustered Structural Constraint for Learning Bayesian Network Structure | http://www.jmlr.org/papers/v11/kojima10a.html | author:Kaname Kojima, Eric Perrier, Seiya Imoto, Satoru Miyano
-jmlr-causality-23 | Continuous Time Bayesian Network Reasoning and Learning Engine | http://www.jmlr.org/papers/v11/shelton10a.html | author:Christian R. Shelton, Yu Fan, William Lam, Joon Lee, Jing Xu
-jmlr-causality-24 | Bayesian Learning in Sparse Graphical Factor Models via Variational Mean-Field Annealing | http://www.jmlr.org/papers/v11/yoshida10a.html | author:Ryo Yoshida, Mike West
+jmlr-causality-1 | Introduction to Causal Inference | http://www.jmlr.org/papers/v11/spirtes10a.html | category:paper author:Peter Spirtes
+jmlr-causality-2 | Using Markov Blankets for Causal Structure Learning | http://www.jmlr.org/papers/v9/pellet08a.html | category:paper author:Jean-Philippe Pellet, André Elisseeff
+jmlr-causality-3 | Causal Reasoning with Ancestral Graphs | http://www.jmlr.org/papers/v9/zhang08a.html | category:paper author:Jiji Zhang
+jmlr-causality-4 | Complete Identification Methods for the Causal Hierarchy | http://www.jmlr.org/papers/v9/shpitser08a.html | category:paper author:Ilya Shpitser, Judea Pearl
+jmlr-causality-5 | Active Learning of Causal Networks with Intervention Experiments and Optimal Designs | http://www.jmlr.org/papers/v9/he08a.html | category:paper author:Yang-Bo He, Zhi Geng
+jmlr-causality-6 | Markov Properties for Linear Causal Models with Correlated Errors | http://www.jmlr.org/papers/v10/kang09a.html | category:paper author:Changsung Kang, Jin Tian
+jmlr-causality-7 | Improving the Reliability of Causal Discovery from Small Data Sets Using Argumentation | http://www.jmlr.org/papers/v10/bromberg09a.html | category:paper author:Facundo Bromberg, Dimitris Margaritis
+jmlr-causality-8 | Properties of Monotonic Effects on Directed Acyclic Graphs | http://www.jmlr.org/papers/v10/vanderweele09a.html | category:paper author:Tyler J. VanderWeele, James M. Robins
+jmlr-causality-9 | Bayesian Network Structure Learning by Recursive Autonomy Identification | http://www.jmlr.org/papers/v10/yehezkel09a.html | category:paper author:Raanan Yehezkel, Boaz Lerner
+jmlr-causality-10 | Local Causal and Markov Blanket Induction for Causal Discovery and Feature Selection for Classification Part I: Algorithms and Empirical Evaluation | http://www.jmlr.org/papers/v11/aliferis10a.html | category:paper author:Constantin F. Aliferis, Alexander Statnikov, Ioannis Tsamardinos, Subramani Mani, Xenofon D. Koutsoukos
+jmlr-causality-11 | Local Causal and Markov Blanket Induction for Causal Discovery and Feature Selection for Classification Part II: Analysis and Extensions | http://www.jmlr.org/papers/v11/aliferis10b.html | category:paper author:Constantin F. Aliferis, Alexander Statnikov, Ioannis Tsamardinos, Subramani Mani, Xenofon D. Koutsoukos
+jmlr-causality-12 | "Ideal Parent" Structure Learning for Continuous Variable Bayesian Networks | http://www.jmlr.org/papers/v8/elidan07a.html | category:paper author:Gal Elidan, Iftach Nachman, Nir Friedman
+jmlr-causality-13 | A Recursive Method for Structural Learning of Directed Acyclic Graphs | http://www.jmlr.org/papers/v9/xie08a.html | category:paper author:Xianchao Xie, Zhi Geng
+jmlr-causality-14 | Search for Additive Nonlinear Time Series Causal Models | http://www.jmlr.org/papers/v9/chu08a.html | category:paper author:Tianjiao Chu, Clark Glymour
+jmlr-causality-15 | Finding Optimal Bayesian Network Given a Super-Structure | http://www.jmlr.org/papers/v9/perrier08a.html | category:paper author:Eric Perrier, Seiya Imoto, Satoru Miyano
+jmlr-causality-16 | Learning Bounded Treewidth Bayesian Networks | http://www.jmlr.org/papers/v9/elidan08a.html | category:paper author:Gal Elidan, Stephen Gould
+jmlr-causality-17 | Structural Learning of Chain Graphs via Decomposition | http://www.jmlr.org/papers/v9/ma08a.html | category:paper author:Zongming Ma, Xianchao Xie, Zhi Geng
+jmlr-causality-18 | Python Environment for Bayesian Learning: Inferring the Structure of Bayesian Networks from Knowledge and Data | http://www.jmlr.org/papers/v10/shah09a.html | category:paper author:Abhik Shah, Peter Woolf
+jmlr-causality-19 | Controlling the False Discovery Rate of the Association/Causality Structure Learned with the PC Algorithm | http://www.jmlr.org/papers/v10/li09a.html | category:paper author:Junning Li, Z. Jane Wang
+jmlr-causality-20 | The Hidden Life of Latent Variables: Bayesian Learning with Mixed Graph Models | http://www.jmlr.org/papers/v10/silva09a.html | category:paper author:Ricardo Silva, Zoubin Ghahramani
+jmlr-causality-21 | Settable Systems: An Extension of Pearl's Causal Model with Optimization, Equilibrium, and Learning | http://www.jmlr.org/papers/v10/white09a.html | category:paper author:Halbert White, Karim Chalak
+jmlr-causality-22 | Optimal Search on Clustered Structural Constraint for Learning Bayesian Network Structure | http://www.jmlr.org/papers/v11/kojima10a.html | category:paper author:Kaname Kojima, Eric Perrier, Seiya Imoto, Satoru Miyano
+jmlr-causality-23 | Continuous Time Bayesian Network Reasoning and Learning Engine | http://www.jmlr.org/papers/v11/shelton10a.html | category:paper author:Christian R. Shelton, Yu Fan, William Lam, Joon Lee, Jing Xu
+jmlr-causality-24 | Bayesian Learning in Sparse Graphical Factor Models via Variational Mean-Field Annealing | http://www.jmlr.org/papers/v11/yoshida10a.html | category:paper author:Ryo Yoshida, Mike West

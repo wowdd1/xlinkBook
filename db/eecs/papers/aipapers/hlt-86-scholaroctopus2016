@@ -1,24 +1,24 @@
-H86-1001 | Research and Development in Natural Language Processing at BBN Laboratories in the Strategic Computing Program | http://www.aclweb.org/anthology/H/H86/H86-1001.pdf | author:Ralph Weischedel; Remko Scha; Edward Walker; Damaris Ayuso; Andrew Haas; Erhard Hinrichs; Robert Ingria; Lance Ramshaw; Varda Shaked; David Stallard
-H86-1002 | PROTEUS and PUNDIT: RESEARCH IN TEXT UNDERSTANDING | http://www.aclweb.org/anthology/H/H86/H86-1002.pdf | author:Ralph Grishman; Lynette Hirschman
-H86-1003 | Overview of the TACITUS Project | http://www.aclweb.org/anthology/H/H86/H86-1003.pdf | author:Jerry R. Hobbs
-H86-1004 | The Counselor Project at the Un/versity of Massachusetts | http://www.aclweb.org/anthology/H/H86/H86-1004.pdf | author:David D. McDonald; James D. Pustejowky
-H86-1005 | RESEARCH IN NATURAL LANGUAGE PROCESSING | http://www.aclweb.org/anthology/H/H86/H86-1005.pdf | author:Aravind Joshi; Tim Finin; Dale Miller; Lokendra Shastri; Bonnie Webber
-H86-1006 | Text Generation for Strategic Computing | http://www.aclweb.org/anthology/H/H86/H86-1006.pdf | author:William Mann; Norman Sondheimer
-H86-1007 | Out of the Laboratory: A Case Study with the IRUS Natural Language Interface | http://www.aclweb.org/anthology/H/H86/H86-1007.pdf | author:Ralph M. Weischedel; Edward Walker; Damaris Ayuso; Jos de BruinKimberle Koile, Lance Ramshaw, Varda Shaked
-H86-1008 | A Terminological Simplification Transformation for Natural Language Question-Answering Systems 1 | http://www.aclweb.org/anthology/H/H86/H86-1008.pdf | author:David G. Stallard
-H86-1009 | Model-based Analysis of Messages about Equipment | http://www.aclweb.org/anthology/H/H86/H86-1009.pdf | author:Ralph Grishman; Tomasz Ksiezyk; Ngo Thanh Nhan
-H86-1010 | An Equipment Model and Its Role in the Interpretation of Nominal Compounds | http://www.aclweb.org/anthology/H/H86/H86-1010.pdf | author:Tomasz Ksiezyk; Ralph Grishman
-H86-1011 | RECOVERING IMPLICIT INFORMATION | http://www.aclweb.org/anthology/H/H86/H86-1011.pdf | author:Martha S. Palmer; Deborah A. Dahl; Rebecca J. Schiffman; Lynette Hirschman; Marcia Linebarger; John Dowding
-H86-1012 | Focusing and Reference Resolution in PUNDIT | http://www.aclweb.org/anthology/H/H86/H86-1012.pdf | author:Deborah A. Dahl
-H86-1013 | COMMONSENSE METAPHYSICS AND LEXICAL SEMANTICS | http://www.aclweb.org/anthology/H/H86/H86-1013.pdf | author:Jerry R. Hobbs; William Croft; Todd Davies; Douglas Edwards; Kenneth Laws
-H86-1014 | Multi-Level Description Directed Generation | http://www.aclweb.org/anthology/H/H86/H86-1014.pdf | author:David D. McDonald
-H86-1015 | TAG's as a Grammatical Formalism for Generation | http://www.aclweb.org/anthology/H/H86/H86-1015.pdf | author:David D. McDonald; James D. Pustejovsky
-H86-1016 | Hypotheticals as Heuristic Device | http://www.aclweb.org/anthology/H/H86/H86-1016.pdf | author:Edwina L. Rissland; Kevin D. Ashley
-H86-1017 | LIVING UP TO EXPECTATIONS: COMPUTING EXPERT RESPONSES' | http://www.aclweb.org/anthology/H/H86/H86-1017.pdf | author:Aravind Joshi; Bonnie Webber; Ralph M. Weischedel
-H86-1018 | TIIE ROLE OF PERSPECTIVE IN RESPONDING TO PROPERTY MISCONCEPTIONS | http://www.aclweb.org/anthology/H/H86/H86-1018.pdf | author:Kathleen F. McCoy
-H86-1019 | Adapting MUMBLE: Experience with Natural Language Generation | http://www.aclweb.org/anthology/H/H86/H86-1019.pdf | author:Robert Rubinoff
-H86-1020 | SOME COMPUTATIONAL PROPERTIES OF TREE ADJOINING GRAMMARS | http://www.aclweb.org/anthology/H/H86/H86-1020.pdf | author:K. Vijay-Shankar; Aravind K. Joshi
-H86-1021 | GUMS 1 : A General User Modeling System | http://www.aclweb.org/anthology/H/H86/H86-1021.pdf | author:Tim Finin; David Drager
-H86-1022 | A LOGICAL-FORM AND KNOWLEDGE-BASE DESIGN FOR NATURAL LANGUAGE GENERATION | http://www.aclweb.org/anthology/H/H86/H86-1022.pdf | author:Norman K. Sondheimer; Bernhard Nebel
-H86-1023 | The Lexicon in Text Generation | http://www.aclweb.org/anthology/H/H86/H86-1023.pdf | author:Susanna Cumming
-H86-1024 | Assertions from Discourse Structure | http://www.aclweb.org/anthology/H/H86/H86-1024.pdf | author:William C. Mann; Sandra A. Thompson
+H86-1001 | Research and Development in Natural Language Processing at BBN Laboratories in the Strategic Computing Program | http://www.aclweb.org/anthology/H/H86/H86-1001.pdf | category:paper author:Ralph Weischedel; Remko Scha; Edward Walker; Damaris Ayuso; Andrew Haas; Erhard Hinrichs; Robert Ingria; Lance Ramshaw; Varda Shaked; David Stallard
+H86-1002 | PROTEUS and PUNDIT: RESEARCH IN TEXT UNDERSTANDING | http://www.aclweb.org/anthology/H/H86/H86-1002.pdf | category:paper author:Ralph Grishman; Lynette Hirschman
+H86-1003 | Overview of the TACITUS Project | http://www.aclweb.org/anthology/H/H86/H86-1003.pdf | category:paper author:Jerry R. Hobbs
+H86-1004 | The Counselor Project at the Un/versity of Massachusetts | http://www.aclweb.org/anthology/H/H86/H86-1004.pdf | category:paper author:David D. McDonald; James D. Pustejowky
+H86-1005 | RESEARCH IN NATURAL LANGUAGE PROCESSING | http://www.aclweb.org/anthology/H/H86/H86-1005.pdf | category:paper author:Aravind Joshi; Tim Finin; Dale Miller; Lokendra Shastri; Bonnie Webber
+H86-1006 | Text Generation for Strategic Computing | http://www.aclweb.org/anthology/H/H86/H86-1006.pdf | category:paper author:William Mann; Norman Sondheimer
+H86-1007 | Out of the Laboratory: A Case Study with the IRUS Natural Language Interface | http://www.aclweb.org/anthology/H/H86/H86-1007.pdf | category:paper author:Ralph M. Weischedel; Edward Walker; Damaris Ayuso; Jos de BruinKimberle Koile, Lance Ramshaw, Varda Shaked
+H86-1008 | A Terminological Simplification Transformation for Natural Language Question-Answering Systems 1 | http://www.aclweb.org/anthology/H/H86/H86-1008.pdf | category:paper author:David G. Stallard
+H86-1009 | Model-based Analysis of Messages about Equipment | http://www.aclweb.org/anthology/H/H86/H86-1009.pdf | category:paper author:Ralph Grishman; Tomasz Ksiezyk; Ngo Thanh Nhan
+H86-1010 | An Equipment Model and Its Role in the Interpretation of Nominal Compounds | http://www.aclweb.org/anthology/H/H86/H86-1010.pdf | category:paper author:Tomasz Ksiezyk; Ralph Grishman
+H86-1011 | RECOVERING IMPLICIT INFORMATION | http://www.aclweb.org/anthology/H/H86/H86-1011.pdf | category:paper author:Martha S. Palmer; Deborah A. Dahl; Rebecca J. Schiffman; Lynette Hirschman; Marcia Linebarger; John Dowding
+H86-1012 | Focusing and Reference Resolution in PUNDIT | http://www.aclweb.org/anthology/H/H86/H86-1012.pdf | category:paper author:Deborah A. Dahl
+H86-1013 | COMMONSENSE METAPHYSICS AND LEXICAL SEMANTICS | http://www.aclweb.org/anthology/H/H86/H86-1013.pdf | category:paper author:Jerry R. Hobbs; William Croft; Todd Davies; Douglas Edwards; Kenneth Laws
+H86-1014 | Multi-Level Description Directed Generation | http://www.aclweb.org/anthology/H/H86/H86-1014.pdf | category:paper author:David D. McDonald
+H86-1015 | TAG's as a Grammatical Formalism for Generation | http://www.aclweb.org/anthology/H/H86/H86-1015.pdf | category:paper author:David D. McDonald; James D. Pustejovsky
+H86-1016 | Hypotheticals as Heuristic Device | http://www.aclweb.org/anthology/H/H86/H86-1016.pdf | category:paper author:Edwina L. Rissland; Kevin D. Ashley
+H86-1017 | LIVING UP TO EXPECTATIONS: COMPUTING EXPERT RESPONSES' | http://www.aclweb.org/anthology/H/H86/H86-1017.pdf | category:paper author:Aravind Joshi; Bonnie Webber; Ralph M. Weischedel
+H86-1018 | TIIE ROLE OF PERSPECTIVE IN RESPONDING TO PROPERTY MISCONCEPTIONS | http://www.aclweb.org/anthology/H/H86/H86-1018.pdf | category:paper author:Kathleen F. McCoy
+H86-1019 | Adapting MUMBLE: Experience with Natural Language Generation | http://www.aclweb.org/anthology/H/H86/H86-1019.pdf | category:paper author:Robert Rubinoff
+H86-1020 | SOME COMPUTATIONAL PROPERTIES OF TREE ADJOINING GRAMMARS | http://www.aclweb.org/anthology/H/H86/H86-1020.pdf | category:paper author:K. Vijay-Shankar; Aravind K. Joshi
+H86-1021 | GUMS 1 : A General User Modeling System | http://www.aclweb.org/anthology/H/H86/H86-1021.pdf | category:paper author:Tim Finin; David Drager
+H86-1022 | A LOGICAL-FORM AND KNOWLEDGE-BASE DESIGN FOR NATURAL LANGUAGE GENERATION | http://www.aclweb.org/anthology/H/H86/H86-1022.pdf | category:paper author:Norman K. Sondheimer; Bernhard Nebel
+H86-1023 | The Lexicon in Text Generation | http://www.aclweb.org/anthology/H/H86/H86-1023.pdf | category:paper author:Susanna Cumming
+H86-1024 | Assertions from Discourse Structure | http://www.aclweb.org/anthology/H/H86/H86-1024.pdf | category:paper author:William C. Mann; Sandra A. Thompson

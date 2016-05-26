@@ -1,11 +1,11 @@
-jmlr-v1-1 | Learning with Mixtures of Trees | http://jmlr.csail.mit.edu/papers/v1/meila00a.html | author:Marina Meila, Michael I. Jordan
-jmlr-v1-2 | Dependency Networks for Inference, Collaborative Filtering, and Data Visualization | http://jmlr.csail.mit.edu/papers/v1/heckerman00a.html | author:David Heckerman, David Maxwell Chickering, Christopher Meek, Robert Rounthwaite, Carl Kadie
-jmlr-v1-3 | Learning Evaluation Functions to Improve Optimization by Local Search | http://jmlr.csail.mit.edu/papers/v1/boyan00a.html | author:Justin Boyan, Andrew W. Moore
-jmlr-v1-4 | Reducing Multiclass to Binary: A Unifying Approach for Margin Classifiers | http://jmlr.csail.mit.edu/papers/v1/allwein00a.html | author:Erin L. Allwein, Robert E. Schapire, Yoram Singer
-jmlr-v1-5 | SVMTorch: Support Vector Machines for Large-Scale Regression Problems | http://jmlr.csail.mit.edu/papers/v1/collobert01a.html | author:Ronan Collobert, Samy Bengio
-jmlr-v1-6 | Lagrangian Support Vector Machines | http://jmlr.csail.mit.edu/papers/v1/mangasarian01a.html | author:O. L. Mangasarian, David R. Musicant
-jmlr-v1-7 | Regularized Principal Manifolds | http://jmlr.csail.mit.edu/papers/v1/smola01a.html | author:Alexander J. Smola, Sebastian Mika, Bernhard Schölkopf, Robert C. Williamson
-jmlr-v1-8 | Sparse Bayesian Learning and the Relevance Vector Machine | http://jmlr.csail.mit.edu/papers/v1/tipping01a.html | author:Michael E. Tipping
-jmlr-v1-9 | Bayes Point Machines | http://jmlr.csail.mit.edu/papers/v1/herbrich01a.html | author:Ralf Herbrich, Thore Graepel, Colin Campbell
-jmlr-v1-10 | Tracking the Best Linear Predictor | http://jmlr.csail.mit.edu/papers/v1/herbster01a.html | author:Mark Herbster, Manfred K. Warmuth
-jmlr-v1-11 | Prior Knowledge and Preferential Structures in Gradient Descent Learning Algorithms | http://jmlr.csail.mit.edu/papers/v1/mahony01a.html | author:Robert E. Mahony, Robert C. Williamson
+jmlr-v1-1 | Learning with Mixtures of Trees | http://jmlr.csail.mit.edu/papers/v1/meila00a.html | category:paper author:Marina Meila, Michael I. Jordan
+jmlr-v1-2 | Dependency Networks for Inference, Collaborative Filtering, and Data Visualization | http://jmlr.csail.mit.edu/papers/v1/heckerman00a.html | category:paper author:David Heckerman, David Maxwell Chickering, Christopher Meek, Robert Rounthwaite, Carl Kadie
+jmlr-v1-3 | Learning Evaluation Functions to Improve Optimization by Local Search | http://jmlr.csail.mit.edu/papers/v1/boyan00a.html | category:paper author:Justin Boyan, Andrew W. Moore
+jmlr-v1-4 | Reducing Multiclass to Binary: A Unifying Approach for Margin Classifiers | http://jmlr.csail.mit.edu/papers/v1/allwein00a.html | category:paper author:Erin L. Allwein, Robert E. Schapire, Yoram Singer
+jmlr-v1-5 | SVMTorch: Support Vector Machines for Large-Scale Regression Problems | http://jmlr.csail.mit.edu/papers/v1/collobert01a.html | category:paper author:Ronan Collobert, Samy Bengio
+jmlr-v1-6 | Lagrangian Support Vector Machines | http://jmlr.csail.mit.edu/papers/v1/mangasarian01a.html | category:paper author:O. L. Mangasarian, David R. Musicant
+jmlr-v1-7 | Regularized Principal Manifolds | http://jmlr.csail.mit.edu/papers/v1/smola01a.html | category:paper author:Alexander J. Smola, Sebastian Mika, Bernhard Schölkopf, Robert C. Williamson
+jmlr-v1-8 | Sparse Bayesian Learning and the Relevance Vector Machine | http://jmlr.csail.mit.edu/papers/v1/tipping01a.html | category:paper author:Michael E. Tipping
+jmlr-v1-9 | Bayes Point Machines | http://jmlr.csail.mit.edu/papers/v1/herbrich01a.html | category:paper author:Ralf Herbrich, Thore Graepel, Colin Campbell
+jmlr-v1-10 | Tracking the Best Linear Predictor | http://jmlr.csail.mit.edu/papers/v1/herbster01a.html | category:paper author:Mark Herbster, Manfred K. Warmuth
+jmlr-v1-11 | Prior Knowledge and Preferential Structures in Gradient Descent Learning Algorithms | http://jmlr.csail.mit.edu/papers/v1/mahony01a.html | category:paper author:Robert E. Mahony, Robert C. Williamson

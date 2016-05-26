@@ -1,27 +1,27 @@
-Q15-1001 | Reasoning about Quantities in Natural Language | http://www.aclweb.org/anthology/Q/Q15/Q15-1001.pdf | author:Subhro Roy; Tim Vieira; Dan Rote
-Q15-1002 | Cross-Document Co-Reference Resolution using Sample-Based Clustering with Knowledge Enrichment | http://www.aclweb.org/anthology/Q/Q15/Q15-1002.pdf | author:Sourav Dutta; Gerhard Weikum; 
-Q15-1003 | Efficient Inference and Structured Learning for Semantic Role Labeling | http://www.aclweb.org/anthology/Q/Q15/Q15-1003.pdf | author:Oscar TÃ¤ckstrÃ¶m; Kuzman Ganchev; Dipanjan Das
-Q15-1004 | SPRITE: Generalizing Topic Models with Structured Priors | http://www.aclweb.org/anthology/Q/Q15/Q15-1004.pdf | author:Michael Paul; Mark Dredze
-Q15-1005 | A Sense-Topic Model for Word Sense Induction with Unsupervised Data Enrichment | http://www.aclweb.org/anthology/Q/Q15/Q15-1005.pdf | author:Jing Wang; Mohit Bansal; Kevin Gimpel; Brian D. Ziebart; Clement T. Yu
-Q15-1006 | Which Step Do I Take First? Troubleshooting with Bayesian Models | http://www.aclweb.org/anthology/Q/Q15/Q15-1006.pdf | author:Annie Louis; Mirella Lapata
-Q15-1007 | Gappy Pattern Matching on GPUs for On-Demand Extraction of Hierarchical Translation Grammars | http://www.aclweb.org/anthology/Q/Q15/Q15-1007.pdf | author:Hua He; Jimmy Lin; Adam Lopez
-Q15-1008 | A Bayesian Model of Grounded Color Semantics | http://www.aclweb.org/anthology/Q/Q15/Q15-1008.pdf | author:Brian McMahan; Matthew Stone
-Q15-1009 | Exploiting Parallel News Streams for Unsupervised Event Extraction | http://www.aclweb.org/anthology/Q/Q15/Q15-1009.pdf | author:Congle Zhang; Stephen Soderland; Daniel S. Weld
-Q15-1010 | Unsupervised Declarative Knowledge Induction for Constraint-Based Learning of Information Structure in Scientific Documents | http://www.aclweb.org/anthology/Q/Q15/Q15-1010.pdf | author:Yufan Guo; Roi Reichart; Anna Korhonen
-Q15-1011 | Entity Disambiguation with Web Links | http://www.aclweb.org/anthology/Q/Q15/Q15-1011.pdf | author:Andrew Chisholm; Ben Hachey
-Q15-1012 | An Unsupervised Method for Uncovering Morphological Chains | http://www.aclweb.org/anthology/Q/Q15/Q15-1012.pdf | author:Karthik Narasimhan; Regina Barzilay; Tommi Jaakkola
-Q15-1013 | Modelling and Optimizing on Syntactic N-Grams for Statistical Machine Translation | http://www.aclweb.org/anthology/Q/Q15/Q15-1013.pdf | author:Rico Sennrich
-Q15-1014 | From Visual Attributes to Adjectives through Decompositional Distributional Semantics | http://www.aclweb.org/anthology/Q/Q15/Q15-1014.pdf | author:Angeliki Lazaridou; Georgiana Dinu; Adam Liska; Marco Baroni
-Q15-1015 | Higher-order Lexical Semantic Models for Non-factoid Answer Reranking | http://www.aclweb.org/anthology/Q/Q15/Q15-1015.pdf | author:Daniel Fried; Peter Jansen; Gustave Hahn-Powell; Mihai Surdeanu; Peter Clark
-Q15-1016 | Improving Distributional Similarity with Lessons Learned from Word Embeddings | http://www.aclweb.org/anthology/Q/Q15/Q15-1016.pdf | author:Omer Levy; Yoav Goldberg; Ido Dagan
-Q15-1017 | Learning Composition Models for Phrase Embeddings | http://www.aclweb.org/anthology/Q/Q15/Q15-1017.pdf | author:Mo Yu; Mark Dredze
-Q15-1018 | Combining Minimally-supervised Methods for Arabic Named Entity Recognition | http://www.aclweb.org/anthology/Q/Q15/Q15-1018.pdf | author:Udo Kruschwitz; Massimo Poesio
-Q15-1019 | Learning a Compositional Semantics for Freebase with an Open Predicate Vocabulary | http://www.aclweb.org/anthology/Q/Q15/Q15-1019.pdf | author:Jayant Krishnamurthy; Tom M. Mitchell
-Q15-1020 | Domain Adaptation for Syntactic and Semantic Dependency Parsing Using Deep Belief Networks | http://www.aclweb.org/anthology/Q/Q15/Q15-1020.pdf | author:Haitong Yang; Tao Zhuang; Chengqing Zong
-Q15-1021 | Problems in Current Text Simplification Research: New Data Can Help | http://www.aclweb.org/anthology/Q/Q15/Q15-1021.pdf | author:Wei Xu; Chris Callison-Burch; Courtney Napoles
-Q15-1022 | Improving Topic Models with Latent Feature Word Representations | http://www.aclweb.org/anthology/Q/Q15/Q15-1022.pdf | author:Dat Quoc Nguyen; Richard Billingsley; Lan Du; Mark Johnson
-Q15-1023 | Design Challenges for Entity Linking | http://www.aclweb.org/anthology/Q/Q15/Q15-1023.pdf | author:Xiao Ling; Sameer Singh; Daniel S. Weld
-Q15-1024 | One Vector is Not Enough: Entity-Augmented Distributed Semantics for Discourse Relations | http://www.aclweb.org/anthology/Q/Q15/Q15-1024.pdf | author:Yangfeng Ji; Jacob Eisenstein
-Q15-1025 | From Paraphrase Database to Compositional Paraphrase Model and Back | http://www.aclweb.org/anthology/Q/Q15/Q15-1025.pdf | author:John Wieting; Mohit Bansal; Kevin Gimpel; Karen Livescu
-Q15-1026 | A Graph-based Lattice Dependency Parser for Joint Morphological Segmentation and Syntactic Analysis | http://www.aclweb.org/anthology/Q/Q15/Q15-1026.pdf | author:Wolfgang Seeker; Ãzlem ÃetinoÄlu
-Q15-1027 | Deriving Boolean structures from distributional vectors | http://www.aclweb.org/anthology/Q/Q15/Q15-1027.pdf | author:GermÃ¡n Kruszewski; Denis Paperno; Marco Baroni
+Q15-1001 | Reasoning about Quantities in Natural Language | http://www.aclweb.org/anthology/Q/Q15/Q15-1001.pdf | category:paper author:Subhro Roy; Tim Vieira; Dan Rote
+Q15-1002 | Cross-Document Co-Reference Resolution using Sample-Based Clustering with Knowledge Enrichment | http://www.aclweb.org/anthology/Q/Q15/Q15-1002.pdf | category:paper author:Sourav Dutta; Gerhard Weikum; 
+Q15-1003 | Efficient Inference and Structured Learning for Semantic Role Labeling | http://www.aclweb.org/anthology/Q/Q15/Q15-1003.pdf | category:paper author:Oscar TÃ¤ckstrÃ¶m; Kuzman Ganchev; Dipanjan Das
+Q15-1004 | SPRITE: Generalizing Topic Models with Structured Priors | http://www.aclweb.org/anthology/Q/Q15/Q15-1004.pdf | category:paper author:Michael Paul; Mark Dredze
+Q15-1005 | A Sense-Topic Model for Word Sense Induction with Unsupervised Data Enrichment | http://www.aclweb.org/anthology/Q/Q15/Q15-1005.pdf | category:paper author:Jing Wang; Mohit Bansal; Kevin Gimpel; Brian D. Ziebart; Clement T. Yu
+Q15-1006 | Which Step Do I Take First? Troubleshooting with Bayesian Models | http://www.aclweb.org/anthology/Q/Q15/Q15-1006.pdf | category:paper author:Annie Louis; Mirella Lapata
+Q15-1007 | Gappy Pattern Matching on GPUs for On-Demand Extraction of Hierarchical Translation Grammars | http://www.aclweb.org/anthology/Q/Q15/Q15-1007.pdf | category:paper author:Hua He; Jimmy Lin; Adam Lopez
+Q15-1008 | A Bayesian Model of Grounded Color Semantics | http://www.aclweb.org/anthology/Q/Q15/Q15-1008.pdf | category:paper author:Brian McMahan; Matthew Stone
+Q15-1009 | Exploiting Parallel News Streams for Unsupervised Event Extraction | http://www.aclweb.org/anthology/Q/Q15/Q15-1009.pdf | category:paper author:Congle Zhang; Stephen Soderland; Daniel S. Weld
+Q15-1010 | Unsupervised Declarative Knowledge Induction for Constraint-Based Learning of Information Structure in Scientific Documents | http://www.aclweb.org/anthology/Q/Q15/Q15-1010.pdf | category:paper author:Yufan Guo; Roi Reichart; Anna Korhonen
+Q15-1011 | Entity Disambiguation with Web Links | http://www.aclweb.org/anthology/Q/Q15/Q15-1011.pdf | category:paper author:Andrew Chisholm; Ben Hachey
+Q15-1012 | An Unsupervised Method for Uncovering Morphological Chains | http://www.aclweb.org/anthology/Q/Q15/Q15-1012.pdf | category:paper author:Karthik Narasimhan; Regina Barzilay; Tommi Jaakkola
+Q15-1013 | Modelling and Optimizing on Syntactic N-Grams for Statistical Machine Translation | http://www.aclweb.org/anthology/Q/Q15/Q15-1013.pdf | category:paper author:Rico Sennrich
+Q15-1014 | From Visual Attributes to Adjectives through Decompositional Distributional Semantics | http://www.aclweb.org/anthology/Q/Q15/Q15-1014.pdf | category:paper author:Angeliki Lazaridou; Georgiana Dinu; Adam Liska; Marco Baroni
+Q15-1015 | Higher-order Lexical Semantic Models for Non-factoid Answer Reranking | http://www.aclweb.org/anthology/Q/Q15/Q15-1015.pdf | category:paper author:Daniel Fried; Peter Jansen; Gustave Hahn-Powell; Mihai Surdeanu; Peter Clark
+Q15-1016 | Improving Distributional Similarity with Lessons Learned from Word Embeddings | http://www.aclweb.org/anthology/Q/Q15/Q15-1016.pdf | category:paper author:Omer Levy; Yoav Goldberg; Ido Dagan
+Q15-1017 | Learning Composition Models for Phrase Embeddings | http://www.aclweb.org/anthology/Q/Q15/Q15-1017.pdf | category:paper author:Mo Yu; Mark Dredze
+Q15-1018 | Combining Minimally-supervised Methods for Arabic Named Entity Recognition | http://www.aclweb.org/anthology/Q/Q15/Q15-1018.pdf | category:paper author:Udo Kruschwitz; Massimo Poesio
+Q15-1019 | Learning a Compositional Semantics for Freebase with an Open Predicate Vocabulary | http://www.aclweb.org/anthology/Q/Q15/Q15-1019.pdf | category:paper author:Jayant Krishnamurthy; Tom M. Mitchell
+Q15-1020 | Domain Adaptation for Syntactic and Semantic Dependency Parsing Using Deep Belief Networks | http://www.aclweb.org/anthology/Q/Q15/Q15-1020.pdf | category:paper author:Haitong Yang; Tao Zhuang; Chengqing Zong
+Q15-1021 | Problems in Current Text Simplification Research: New Data Can Help | http://www.aclweb.org/anthology/Q/Q15/Q15-1021.pdf | category:paper author:Wei Xu; Chris Callison-Burch; Courtney Napoles
+Q15-1022 | Improving Topic Models with Latent Feature Word Representations | http://www.aclweb.org/anthology/Q/Q15/Q15-1022.pdf | category:paper author:Dat Quoc Nguyen; Richard Billingsley; Lan Du; Mark Johnson
+Q15-1023 | Design Challenges for Entity Linking | http://www.aclweb.org/anthology/Q/Q15/Q15-1023.pdf | category:paper author:Xiao Ling; Sameer Singh; Daniel S. Weld
+Q15-1024 | One Vector is Not Enough: Entity-Augmented Distributed Semantics for Discourse Relations | http://www.aclweb.org/anthology/Q/Q15/Q15-1024.pdf | category:paper author:Yangfeng Ji; Jacob Eisenstein
+Q15-1025 | From Paraphrase Database to Compositional Paraphrase Model and Back | http://www.aclweb.org/anthology/Q/Q15/Q15-1025.pdf | category:paper author:John Wieting; Mohit Bansal; Kevin Gimpel; Karen Livescu
+Q15-1026 | A Graph-based Lattice Dependency Parser for Joint Morphological Segmentation and Syntactic Analysis | http://www.aclweb.org/anthology/Q/Q15/Q15-1026.pdf | category:paper author:Wolfgang Seeker; Ãzlem ÃetinoÄlu
+Q15-1027 | Deriving Boolean structures from distributional vectors | http://www.aclweb.org/anthology/Q/Q15/Q15-1027.pdf | category:paper author:GermÃ¡n Kruszewski; Denis Paperno; Marco Baroni

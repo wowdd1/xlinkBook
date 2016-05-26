@@ -1,57 +1,57 @@
-RSS-X-1 | Batch Continuous-Time Trajectory Estimation as Exactly Sparse Gaussian Process Regression | http://www.roboticsproceedings.org/rss10/p01.pdf | author:Tim Barfoot, Chi Hay Tong, Simo Sarkka
-RSS-X-2 | Effective Task Training Strategies for Instructional Robots | http://www.roboticsproceedings.org/rss10/p02.pdf | author:Allison SauppÃ©, Bilge Mutlu
-RSS-X-3 | Learning to Recognize Human Activities from Soft Labeled Data | http://www.roboticsproceedings.org/rss10/p03.pdf | author:Ninghang Hu, Zhongyu Lou, Gwenn Englebienne, Ben KrÃ¶se
-RSS-X-4 | Automatic generation of reduced CPG control networks for locomotion of arbitrary modular robot structures | http://www.roboticsproceedings.org/rss10/p04.pdf | author:StÃ©phane Bonardi, Massimo Vespignani, Rico Moeckel, Jesse Van den Kieboom, Soha Pouya, Alexander Sproewitz, Auke Ijspeert
-RSS-X-5 | Tell Me Dave: Context-Sensitive Grounding of Natural Language to Manipulation Instructions | http://www.roboticsproceedings.org/rss10/p05.pdf | author:Dipendra Kumar Misra, Jaeyong Sung, Kevin Lee, Ashutosh Saxena
-RSS-X-6 | Hierarchical Semantic Labeling for Task-Relevant RGB-D Perception | http://www.roboticsproceedings.org/rss10/p06.pdf | author:Chenxia Wu, Ian Lenz, Ashutosh Saxena
-RSS-X-7 | LOAM: Lidar Odometry and Mapping in Real-time | http://www.roboticsproceedings.org/rss10/p07.pdf | author:Ji Zhang, Sanjiv Singh
-RSS-X-8 | Self-Calibration and Visual SLAM with a Multi-Camera System on a Micro Aerial Vehicle | http://www.roboticsproceedings.org/rss10/p08.pdf | author:Lionel Heng, Gim Hee Lee, Marc Pollefeys
-RSS-X-9 | Articulated Pose Estimation via Over-parametrization and Noise Projection | http://www.roboticsproceedings.org/rss10/p09.pdf | author:Jonathan Brookshire, Seth Teller
-RSS-X-10 | An Analysis of Deceptive Robot Motion | http://www.roboticsproceedings.org/rss10/p10.pdf | author:Anca Dragan, Rachel Holladay, Siddhartha Srinivasa
-RSS-X-11 | Online Trajectory Planning in Dynamic Environments for Surgical Task Automation | http://www.roboticsproceedings.org/rss10/p11.pdf | author:Takayuki Osa, Naohiko Sugita, Mamoru Mitsuishi
-RSS-X-12 | Correct High-level Robot Behavior in Environments with Unexpected Events | http://www.roboticsproceedings.org/rss10/p12.pdf | author:Kai Weng Wong, RÃ¼diger Ehlers, Hadas Kress-Gazit
-RSS-X-13 | Six-Degrees-of-Freedom Remote Actuation of Magnetic Microrobots | http://www.roboticsproceedings.org/rss10/p13.pdf | author:Eric Diller, Joshua Giltinan, Guo Zhan Lum, Zhou Ye, Metin Sitti
-RSS-X-14 | Combining 3D Shape, Color, and Motion for Robust Anytime Tracking | http://www.roboticsproceedings.org/rss10/p14.pdf | author:David Held, Jesse Levinson, Sebastian Thrun, Silvio Savarese
-RSS-X-15 | Modeling High-Dimensional Humans for Activity Anticipation using Gaussian Process Latent CRFs | http://www.roboticsproceedings.org/rss10/p15.pdf | author:Yun Jiang, Ashutosh Saxena
-RSS-X-16 | Manhattan and Piecewise-Planar Constraints for Dense Monocular Mapping | http://www.roboticsproceedings.org/rss10/p16.pdf | author:Alejo Concha, Wajahat Hussain, Luis Montano, Javier Civera
-RSS-X-17 | The Multi-Agent Navigation Transformation: Tuning-Free Multi-Robot Navigation | http://www.roboticsproceedings.org/rss10/p17.pdf | author:Savvas Loizou
-RSS-X-18 | A Novel Type of Compliant, Underactuated Robotic Hand for Dexterous Grasping | http://www.roboticsproceedings.org/rss10/p18.pdf | author:Raphael Deimel, Oliver Brock
-RSS-X-19 | State Representation Learning in Robotics: Using Prior Knowledge about Physical Interaction | http://www.roboticsproceedings.org/rss10/p19.pdf | author:Rico Jonschkowski, Oliver Brock
-RSS-X-20 | Enhanced 3D Kinematic Modeling of Wheeled Mobile Robots | http://www.roboticsproceedings.org/rss10/p20.pdf | author:Neal Seegmiller, Alonzo Kelly
-RSS-X-21 | Fully Decentralized Task Swaps with Optimized Local Searching | http://www.roboticsproceedings.org/rss10/p21.pdf | author:Lantao Liu, Nathan Michael, Dylan Shell
-RSS-X-22 | Modeling robot discrete movements with state-varying stiffness and damping: A framework for integrated motion generation and impedance control | http://www.roboticsproceedings.org/rss10/p22.pdf | author:Mohammad Khansari, Klas Kronander, Aude Billard
-RSS-X-23 | Scene Signatures: Localised and Point-less Features for Localisation | http://www.roboticsproceedings.org/rss10/p23.pdf | author:Colin McManus, Ben Upcroft, Paul Newmann
-RSS-X-24 | Asking for Help Using Inverse Semantics | http://www.roboticsproceedings.org/rss10/p24.pdf | author:Stefanie Tellex, Ross Knepper, Adrian Li, Daniela Rus, Nicholas Roy
-RSS-X-25 | Modeling and Controlling Friendliness for An Interactive Museum Robot | http://www.roboticsproceedings.org/rss10/p25.pdf | author:Chien-Ming Huang, Takamasa Iio, Satoru Satake, Takayuki Kanda
-RSS-X-26 | Control of Robotic Mobility-On-Demand Systems: a Queueing-Theoretical Perspective | http://www.roboticsproceedings.org/rss10/p26.pdf | author:Rick Zhang, Marco Pavone
-RSS-X-27 | Bio-Artificial Synergies for Grasp Posture Control of Supernumerary Robotic Fingers | http://www.roboticsproceedings.org/rss10/p27.pdf | author:Faye Wu, Harry Asada
-RSS-X-28 | Robust and Agile 3D Biped Walking With Steering Capability Using a Footstep Predictive Approach | http://www.roboticsproceedings.org/rss10/p28.pdf | author:Salman Faraji, Soha Pouya, Auke Ijspeert
-RSS-X-29 | Appearance-based Active, Monocular, Dense Reconstruction for Micro Aerial Vehicles | http://www.roboticsproceedings.org/rss10/p29.pdf | author:Christian Forster, Matia Pizzoli, Davide Scaramuzza
-RSS-X-30 | DART: Dense Articulated Real-Time Tracking | http://www.roboticsproceedings.org/rss10/p30.pdf | author:Tanner Schmidt, Richard Newcombe, Dieter Fox
-RSS-X-31 | Active Reward Learning | http://www.roboticsproceedings.org/rss10/p31.pdf | author:Christian Daniel, Malte Viering, Jan Metz, Oliver Kroemer, Jan Peters
-RSS-X-32 | Stiction Compensation in Agonist-Antagonist Variable Stiffness Actuators | http://www.roboticsproceedings.org/rss10/p32.pdf | author:Luca Fiorio, Francesco Romano, Alberto Parmiggiani, Giulio Sandini, Francesco Nori
-RSS-X-33 | Planning Single-arm Manipulations with n-Arm Robots | http://www.roboticsproceedings.org/rss10/p33.pdf | author:Benjamin Cohen, Mike Phillips, Maxim Likhachev
-RSS-X-34 | Pre- and Post-Contact Policy Decomposition for Planar Contact Manipulation Under Uncertainty | http://www.roboticsproceedings.org/rss10/p34.pdf | author:Michael Koval, Nancy Pollard, Siddhartha Srinivasa
-RSS-X-35 | Learning to locate from demonstrated searches | http://www.roboticsproceedings.org/rss10/p35.pdf | author:Paul Vernaza, Anthony Stentz
-RSS-X-36 | An Online Sparsity-Cognizant Loop-Closure Algorithm for Visual Navigation | http://www.roboticsproceedings.org/rss10/p36.pdf | author:Yasir Latif, Guoquan Huang, John Leonard, Jose Neira
-RSS-X-37 | 5-DOF Manipulation of an Untethered Magnetic Device in Fluid using a Single Permanent Magnet | http://www.roboticsproceedings.org/rss10/p37.pdf | author:Arthur Mahoney, Abbott Jake
-RSS-X-38 | Persistent Monitoring of Stochastic Spatio-temporal Phenomena with a Small Team of Robots | http://www.roboticsproceedings.org/rss10/p38.pdf | author:Sahil Garg, Nora Ayanian
-RSS-X-39 | Probably Approximately Correct MDP Learning and Control With Temporal Logic Constraints | http://www.roboticsproceedings.org/rss10/p39.pdf | author:Jie Fu, Ufuk Topcu
-RSS-X-40 | Nonlinear Graph Sparsification for SLAM | http://www.roboticsproceedings.org/rss10/p40.pdf | author:Mladen Mazuran, Tipaldi Gian Diego, Spinello Luciano, Wolfram Burgard
-RSS-X-41 | Open-vocabulary Object Retrieval | http://www.roboticsproceedings.org/rss10/p41.pdf | author:Sergio Guadarrama, Erik Rodner, Kate Saenko, Ning Zhang, Ryan Farrell, Jeff Donahue, Trevor Darrell
-RSS-X-42 | Cogging Torque Ripple Minimization via Position Based Characterization | http://www.roboticsproceedings.org/rss10/p42.pdf | author:Matthew Piccoli, Mark Yim
-RSS-X-43 | Semantic Localization Via the Matrix Permanent | http://www.roboticsproceedings.org/rss10/p43.pdf | author:Nikolay Atanasov, Menglong Zhu, Kostas Daniilidis, George Pappas
-RSS-X-44 | Vision-based Landing Site Evaluation and Trajectory Generation Toward Rooftop Landing | http://www.roboticsproceedings.org/rss10/p44.pdf | author:Vishnu Desaraju, Nathan Michael, Martin Humenberger, roland Brockers, Stephan Weiss, Larry Matthies
-RSS-X-45 | An Automata-Theoretic Approach to the Vehicle Routing Problem | http://www.roboticsproceedings.org/rss10/p45.pdf | author:Cristian Vasile, Calin Belta
-RSS-X-46 | Decision-Making Authority, Team Efficiency and Human Worker Satisfaction in Mixed Human-Robot Teams | http://www.roboticsproceedings.org/rss10/p46.pdf | author:Matthew Gombolay, Reymundo Gutierrez, Giancarlo Sturla, Julie Shah
-RSS-X-47 | Sky segmentation with ultraviolet images can be used for navigation | http://www.roboticsproceedings.org/rss10/p47.pdf | author:Thomas Stone, Michael Mangan, Paul Ardin, Barbara Webb
-RSS-X-48 | Robot Programming by Demonstration with Interactive Action Visualizations | http://www.roboticsproceedings.org/rss10/p48.pdf | author:Sonya Alexandrova, Maya Cakmak, Kaijen Hsiao, Leila Takayama
-RSS-X-49 | Robust Policies via Meshing for Metastable Rough Terrain Walking | http://www.roboticsproceedings.org/rss10/p49.pdf | author:Cenk Oguz Saglam, Katie Byl
-RSS-X-50 | Learning Articulated Motions From Visual Demonstration | http://www.roboticsproceedings.org/rss10/p50.pdf | author:Sudeep Pillai, Matthew Walter, Seth Teller
-RSS-X-51 | Simultaneous Compliance and Registration Estimation for Robotic Surgery | http://www.roboticsproceedings.org/rss10/p51.pdf | author:Siddharth Sanan, Stephen Tully, Andrea Bajo, Nabil Simaan, Howie Choset
-RSS-X-52 | Combining the benefits of function approximation and trajectory optimization | http://www.roboticsproceedings.org/rss10/p52.pdf | author:Igor Mordatch, Emo Todorov
-RSS-X-53 | Dynamically Feasible Motion Planning through Partial Differential Flatness. | http://www.roboticsproceedings.org/rss10/p53.pdf | author:Suresh Ramasamy, Guofan Wu, Koushil Sreenath
-RSS-X-54 | Multiscale Topological Trajectory Classification with Persistent Homology | http://www.roboticsproceedings.org/rss10/p54.pdf | author:Florian T. Pokorny, Majd Hawasly, Subramanian Ramamoorthy
-RSS-X-55 | Conditioned Basis Array Factorization: An Approach to Gait Pattern Extraction | http://www.roboticsproceedings.org/rss10/p55.pdf | author:Chaohui Gong, Matthew Travers, Henry Astley, Lu Li, Joseph Mendelson, David Hu, Daniel Goldman, Howie Choset
-RSS-X-56 | Multi-Heuristic A* | http://www.roboticsproceedings.org/rss10/p56.pdf | author:Sandip Aine, Siddharth Swaminathan, Venkatraman Narayanan, Victor Hwang, Maxim Likhachev
-RSS-X-57 | Efficient Visual-Inertial Navigation using a Rolling-Shutter Camera with Inaccurate Timestamps | http://www.roboticsproceedings.org/rss10/p57.pdf | author:Chao Guo, Dimitrios Kottas, Ryan DuToit, Ahmed Ahmed, Ruipeng Li, Stergios Roumeliotis
+RSS-X-1 | Batch Continuous-Time Trajectory Estimation as Exactly Sparse Gaussian Process Regression | http://www.roboticsproceedings.org/rss10/p01.pdf | category:paper author:Tim Barfoot, Chi Hay Tong, Simo Sarkka
+RSS-X-2 | Effective Task Training Strategies for Instructional Robots | http://www.roboticsproceedings.org/rss10/p02.pdf | category:paper author:Allison SauppÃ©, Bilge Mutlu
+RSS-X-3 | Learning to Recognize Human Activities from Soft Labeled Data | http://www.roboticsproceedings.org/rss10/p03.pdf | category:paper author:Ninghang Hu, Zhongyu Lou, Gwenn Englebienne, Ben KrÃ¶se
+RSS-X-4 | Automatic generation of reduced CPG control networks for locomotion of arbitrary modular robot structures | http://www.roboticsproceedings.org/rss10/p04.pdf | category:paper author:StÃ©phane Bonardi, Massimo Vespignani, Rico Moeckel, Jesse Van den Kieboom, Soha Pouya, Alexander Sproewitz, Auke Ijspeert
+RSS-X-5 | Tell Me Dave: Context-Sensitive Grounding of Natural Language to Manipulation Instructions | http://www.roboticsproceedings.org/rss10/p05.pdf | category:paper author:Dipendra Kumar Misra, Jaeyong Sung, Kevin Lee, Ashutosh Saxena
+RSS-X-6 | Hierarchical Semantic Labeling for Task-Relevant RGB-D Perception | http://www.roboticsproceedings.org/rss10/p06.pdf | category:paper author:Chenxia Wu, Ian Lenz, Ashutosh Saxena
+RSS-X-7 | LOAM: Lidar Odometry and Mapping in Real-time | http://www.roboticsproceedings.org/rss10/p07.pdf | category:paper author:Ji Zhang, Sanjiv Singh
+RSS-X-8 | Self-Calibration and Visual SLAM with a Multi-Camera System on a Micro Aerial Vehicle | http://www.roboticsproceedings.org/rss10/p08.pdf | category:paper author:Lionel Heng, Gim Hee Lee, Marc Pollefeys
+RSS-X-9 | Articulated Pose Estimation via Over-parametrization and Noise Projection | http://www.roboticsproceedings.org/rss10/p09.pdf | category:paper author:Jonathan Brookshire, Seth Teller
+RSS-X-10 | An Analysis of Deceptive Robot Motion | http://www.roboticsproceedings.org/rss10/p10.pdf | category:paper author:Anca Dragan, Rachel Holladay, Siddhartha Srinivasa
+RSS-X-11 | Online Trajectory Planning in Dynamic Environments for Surgical Task Automation | http://www.roboticsproceedings.org/rss10/p11.pdf | category:paper author:Takayuki Osa, Naohiko Sugita, Mamoru Mitsuishi
+RSS-X-12 | Correct High-level Robot Behavior in Environments with Unexpected Events | http://www.roboticsproceedings.org/rss10/p12.pdf | category:paper author:Kai Weng Wong, RÃ¼diger Ehlers, Hadas Kress-Gazit
+RSS-X-13 | Six-Degrees-of-Freedom Remote Actuation of Magnetic Microrobots | http://www.roboticsproceedings.org/rss10/p13.pdf | category:paper author:Eric Diller, Joshua Giltinan, Guo Zhan Lum, Zhou Ye, Metin Sitti
+RSS-X-14 | Combining 3D Shape, Color, and Motion for Robust Anytime Tracking | http://www.roboticsproceedings.org/rss10/p14.pdf | category:paper author:David Held, Jesse Levinson, Sebastian Thrun, Silvio Savarese
+RSS-X-15 | Modeling High-Dimensional Humans for Activity Anticipation using Gaussian Process Latent CRFs | http://www.roboticsproceedings.org/rss10/p15.pdf | category:paper author:Yun Jiang, Ashutosh Saxena
+RSS-X-16 | Manhattan and Piecewise-Planar Constraints for Dense Monocular Mapping | http://www.roboticsproceedings.org/rss10/p16.pdf | category:paper author:Alejo Concha, Wajahat Hussain, Luis Montano, Javier Civera
+RSS-X-17 | The Multi-Agent Navigation Transformation: Tuning-Free Multi-Robot Navigation | http://www.roboticsproceedings.org/rss10/p17.pdf | category:paper author:Savvas Loizou
+RSS-X-18 | A Novel Type of Compliant, Underactuated Robotic Hand for Dexterous Grasping | http://www.roboticsproceedings.org/rss10/p18.pdf | category:paper author:Raphael Deimel, Oliver Brock
+RSS-X-19 | State Representation Learning in Robotics: Using Prior Knowledge about Physical Interaction | http://www.roboticsproceedings.org/rss10/p19.pdf | category:paper author:Rico Jonschkowski, Oliver Brock
+RSS-X-20 | Enhanced 3D Kinematic Modeling of Wheeled Mobile Robots | http://www.roboticsproceedings.org/rss10/p20.pdf | category:paper author:Neal Seegmiller, Alonzo Kelly
+RSS-X-21 | Fully Decentralized Task Swaps with Optimized Local Searching | http://www.roboticsproceedings.org/rss10/p21.pdf | category:paper author:Lantao Liu, Nathan Michael, Dylan Shell
+RSS-X-22 | Modeling robot discrete movements with state-varying stiffness and damping: A framework for integrated motion generation and impedance control | http://www.roboticsproceedings.org/rss10/p22.pdf | category:paper author:Mohammad Khansari, Klas Kronander, Aude Billard
+RSS-X-23 | Scene Signatures: Localised and Point-less Features for Localisation | http://www.roboticsproceedings.org/rss10/p23.pdf | category:paper author:Colin McManus, Ben Upcroft, Paul Newmann
+RSS-X-24 | Asking for Help Using Inverse Semantics | http://www.roboticsproceedings.org/rss10/p24.pdf | category:paper author:Stefanie Tellex, Ross Knepper, Adrian Li, Daniela Rus, Nicholas Roy
+RSS-X-25 | Modeling and Controlling Friendliness for An Interactive Museum Robot | http://www.roboticsproceedings.org/rss10/p25.pdf | category:paper author:Chien-Ming Huang, Takamasa Iio, Satoru Satake, Takayuki Kanda
+RSS-X-26 | Control of Robotic Mobility-On-Demand Systems: a Queueing-Theoretical Perspective | http://www.roboticsproceedings.org/rss10/p26.pdf | category:paper author:Rick Zhang, Marco Pavone
+RSS-X-27 | Bio-Artificial Synergies for Grasp Posture Control of Supernumerary Robotic Fingers | http://www.roboticsproceedings.org/rss10/p27.pdf | category:paper author:Faye Wu, Harry Asada
+RSS-X-28 | Robust and Agile 3D Biped Walking With Steering Capability Using a Footstep Predictive Approach | http://www.roboticsproceedings.org/rss10/p28.pdf | category:paper author:Salman Faraji, Soha Pouya, Auke Ijspeert
+RSS-X-29 | Appearance-based Active, Monocular, Dense Reconstruction for Micro Aerial Vehicles | http://www.roboticsproceedings.org/rss10/p29.pdf | category:paper author:Christian Forster, Matia Pizzoli, Davide Scaramuzza
+RSS-X-30 | DART: Dense Articulated Real-Time Tracking | http://www.roboticsproceedings.org/rss10/p30.pdf | category:paper author:Tanner Schmidt, Richard Newcombe, Dieter Fox
+RSS-X-31 | Active Reward Learning | http://www.roboticsproceedings.org/rss10/p31.pdf | category:paper author:Christian Daniel, Malte Viering, Jan Metz, Oliver Kroemer, Jan Peters
+RSS-X-32 | Stiction Compensation in Agonist-Antagonist Variable Stiffness Actuators | http://www.roboticsproceedings.org/rss10/p32.pdf | category:paper author:Luca Fiorio, Francesco Romano, Alberto Parmiggiani, Giulio Sandini, Francesco Nori
+RSS-X-33 | Planning Single-arm Manipulations with n-Arm Robots | http://www.roboticsproceedings.org/rss10/p33.pdf | category:paper author:Benjamin Cohen, Mike Phillips, Maxim Likhachev
+RSS-X-34 | Pre- and Post-Contact Policy Decomposition for Planar Contact Manipulation Under Uncertainty | http://www.roboticsproceedings.org/rss10/p34.pdf | category:paper author:Michael Koval, Nancy Pollard, Siddhartha Srinivasa
+RSS-X-35 | Learning to locate from demonstrated searches | http://www.roboticsproceedings.org/rss10/p35.pdf | category:paper author:Paul Vernaza, Anthony Stentz
+RSS-X-36 | An Online Sparsity-Cognizant Loop-Closure Algorithm for Visual Navigation | http://www.roboticsproceedings.org/rss10/p36.pdf | category:paper author:Yasir Latif, Guoquan Huang, John Leonard, Jose Neira
+RSS-X-37 | 5-DOF Manipulation of an Untethered Magnetic Device in Fluid using a Single Permanent Magnet | http://www.roboticsproceedings.org/rss10/p37.pdf | category:paper author:Arthur Mahoney, Abbott Jake
+RSS-X-38 | Persistent Monitoring of Stochastic Spatio-temporal Phenomena with a Small Team of Robots | http://www.roboticsproceedings.org/rss10/p38.pdf | category:paper author:Sahil Garg, Nora Ayanian
+RSS-X-39 | Probably Approximately Correct MDP Learning and Control With Temporal Logic Constraints | http://www.roboticsproceedings.org/rss10/p39.pdf | category:paper author:Jie Fu, Ufuk Topcu
+RSS-X-40 | Nonlinear Graph Sparsification for SLAM | http://www.roboticsproceedings.org/rss10/p40.pdf | category:paper author:Mladen Mazuran, Tipaldi Gian Diego, Spinello Luciano, Wolfram Burgard
+RSS-X-41 | Open-vocabulary Object Retrieval | http://www.roboticsproceedings.org/rss10/p41.pdf | category:paper author:Sergio Guadarrama, Erik Rodner, Kate Saenko, Ning Zhang, Ryan Farrell, Jeff Donahue, Trevor Darrell
+RSS-X-42 | Cogging Torque Ripple Minimization via Position Based Characterization | http://www.roboticsproceedings.org/rss10/p42.pdf | category:paper author:Matthew Piccoli, Mark Yim
+RSS-X-43 | Semantic Localization Via the Matrix Permanent | http://www.roboticsproceedings.org/rss10/p43.pdf | category:paper author:Nikolay Atanasov, Menglong Zhu, Kostas Daniilidis, George Pappas
+RSS-X-44 | Vision-based Landing Site Evaluation and Trajectory Generation Toward Rooftop Landing | http://www.roboticsproceedings.org/rss10/p44.pdf | category:paper author:Vishnu Desaraju, Nathan Michael, Martin Humenberger, roland Brockers, Stephan Weiss, Larry Matthies
+RSS-X-45 | An Automata-Theoretic Approach to the Vehicle Routing Problem | http://www.roboticsproceedings.org/rss10/p45.pdf | category:paper author:Cristian Vasile, Calin Belta
+RSS-X-46 | Decision-Making Authority, Team Efficiency and Human Worker Satisfaction in Mixed Human-Robot Teams | http://www.roboticsproceedings.org/rss10/p46.pdf | category:paper author:Matthew Gombolay, Reymundo Gutierrez, Giancarlo Sturla, Julie Shah
+RSS-X-47 | Sky segmentation with ultraviolet images can be used for navigation | http://www.roboticsproceedings.org/rss10/p47.pdf | category:paper author:Thomas Stone, Michael Mangan, Paul Ardin, Barbara Webb
+RSS-X-48 | Robot Programming by Demonstration with Interactive Action Visualizations | http://www.roboticsproceedings.org/rss10/p48.pdf | category:paper author:Sonya Alexandrova, Maya Cakmak, Kaijen Hsiao, Leila Takayama
+RSS-X-49 | Robust Policies via Meshing for Metastable Rough Terrain Walking | http://www.roboticsproceedings.org/rss10/p49.pdf | category:paper author:Cenk Oguz Saglam, Katie Byl
+RSS-X-50 | Learning Articulated Motions From Visual Demonstration | http://www.roboticsproceedings.org/rss10/p50.pdf | category:paper author:Sudeep Pillai, Matthew Walter, Seth Teller
+RSS-X-51 | Simultaneous Compliance and Registration Estimation for Robotic Surgery | http://www.roboticsproceedings.org/rss10/p51.pdf | category:paper author:Siddharth Sanan, Stephen Tully, Andrea Bajo, Nabil Simaan, Howie Choset
+RSS-X-52 | Combining the benefits of function approximation and trajectory optimization | http://www.roboticsproceedings.org/rss10/p52.pdf | category:paper author:Igor Mordatch, Emo Todorov
+RSS-X-53 | Dynamically Feasible Motion Planning through Partial Differential Flatness. | http://www.roboticsproceedings.org/rss10/p53.pdf | category:paper author:Suresh Ramasamy, Guofan Wu, Koushil Sreenath
+RSS-X-54 | Multiscale Topological Trajectory Classification with Persistent Homology | http://www.roboticsproceedings.org/rss10/p54.pdf | category:paper author:Florian T. Pokorny, Majd Hawasly, Subramanian Ramamoorthy
+RSS-X-55 | Conditioned Basis Array Factorization: An Approach to Gait Pattern Extraction | http://www.roboticsproceedings.org/rss10/p55.pdf | category:paper author:Chaohui Gong, Matthew Travers, Henry Astley, Lu Li, Joseph Mendelson, David Hu, Daniel Goldman, Howie Choset
+RSS-X-56 | Multi-Heuristic A* | http://www.roboticsproceedings.org/rss10/p56.pdf | category:paper author:Sandip Aine, Siddharth Swaminathan, Venkatraman Narayanan, Victor Hwang, Maxim Likhachev
+RSS-X-57 | Efficient Visual-Inertial Navigation using a Rolling-Shutter Camera with Inaccurate Timestamps | http://www.roboticsproceedings.org/rss10/p57.pdf | category:paper author:Chao Guo, Dimitrios Kottas, Ryan DuToit, Ahmed Ahmed, Ruipeng Li, Stergios Roumeliotis

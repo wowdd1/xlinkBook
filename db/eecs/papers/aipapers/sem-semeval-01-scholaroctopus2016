@@ -1,40 +1,40 @@
-S01-1001 | SENSEVAL-2: Overview | http://www.aclweb.org/anthology/S/S01/S01-1001.pdf | author:Philip Edmonds; Scott Cotton
-S01-1002 | The Basque Task: Did Systems Perform in the Upperbound? | http://www.aclweb.org/anthology/S/S01/S01-1002.pdf | author:Eneko Agirre; Elena Garcia; Mikel Lersundi; David Martinez; Eli Pociello
-S01-1003 | Dutch Word Sense Disambiguation: Data and Preliminary Results | http://www.aclweb.org/anthology/S/S01/S01-1003.pdf | author:Iris Hendrickx; Antal van den Bosch
-S01-1004 | English Lexical Sample Task Description | http://www.aclweb.org/anthology/S/S01/S01-1004.pdf | author:Adam Kilgarriff
-S01-1005 | English Tasks: All-Words and Verb Lexical Sample | http://www.aclweb.org/anthology/S/S01/S01-1005.pdf | author:Martha Palmer; Christiane Fellbaum; Scott Cotton; Lauren Delfs; Hoa Trang Dang
-S01-1006 | Sensiting Inflectionality: Estonian Task for SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1006.pdf | author:Neeme Kahusk; Heili Orav; Haldur Oim
-S01-1007 | The Italian Lexical Sample Task | http://www.aclweb.org/anthology/S/S01/S01-1007.pdf | author:Francesca Bertagna; Claudia Soria; Nicoletta Calzolari
-S01-1008 | SENSEVAL-2 Japanese Dictionary Task | http://www.aclweb.org/anthology/S/S01/S01-1008.pdf | author:Kiyoaki Shirai
-S01-1009 | SENSEVAL-2 Japanese Translation Task | http://www.aclweb.org/anthology/S/S01/S01-1009.pdf | author:Sadao Kurohashi
-S01-1010 | Framework and Results for the Spanish SENSEVAL | http://www.aclweb.org/anthology/S/S01/S01-1010.pdf | author:German Rigau; Mariona Taulè; Ana Fernandez; Julio Gonzalo
-S01-1011 | SENSEVAL-2 The Swedish Framework | http://www.aclweb.org/anthology/S/S01/S01-1011.pdf | author:Dimitrios Kokkinakis; Jerker Järborg; Yvonne Cederholm
-S01-1012 | The SENSEVAL-2 Panel on Domains, Topics and Senses | http://www.aclweb.org/anthology/S/S01/S01-1012.pdf | author:Paul Buitelaar
-S01-1013 | The Japanese Translation Task: Lexical and Structural Perspectives | http://www.aclweb.org/anthology/S/S01/S01-1013.pdf | author:Timothy Baldwin; Atsushi Okazaki; Takenobu Tokunaga; Hozumi Tanaka
-S01-1014 | Supervised Sense Tagging using Support Vector Machines | http://www.aclweb.org/anthology/S/S01/S01-1014.pdf | author:Clara Cabezas; Philip Resnik; Jessica Stevens
-S01-1015 | Probabilistic Network Models for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1015.pdf | author:Gerald Chao; Michael G. Dyer
-S01-1016 | Improving WSD with Multi-Level View of Context Monitored by Similarity Measure | http://www.aclweb.org/anthology/S/S01/S01-1016.pdf | author:Eric Crestan; Marc El-Bèze; Claude de Loupy
-S01-1017 | Using LazyBoosting for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1017.pdf | author:Gerard Escudero; Lluìs Màrquez; German Rigau
-S01-1018 | The UNED Systems at SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1018.pdf | author:David Fernández-Amorós; Julio Gonzalo; Felisa Verdejo
-S01-1019 | Semantic Tagging Using WordNet Examples | http://www.aclweb.org/anthology/S/S01/S01-1019.pdf | author:Sherwood Haynes
-S01-1020 | Classifier Optimization and Combination in the English All Words Task | http://www.aclweb.org/anthology/S/S01/S01-1020.pdf | author:Vèronique Hoste; Anne Kool; Walter Daelemans
-S01-1021 | Combining Heterogeneous Classifiers for Word-Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1021.pdf | author:H. Tolga Ilhan; Sepandar D. Kamvar; Dan Klein; Christopher D. Manning; Kristina Toutanova
-S01-1022 | The Spr\aakdata-ML System as Used for SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1022.pdf | author:Dimitrios Kokkinakis
-S01-1023 | ATR-SLT System for SENSEVAL-2 Japanese Translation Task | http://www.aclweb.org/anthology/S/S01/S01-1023.pdf | author:Tadashi Kumano; Hideki Kashioka; Hideki Tanaka
-S01-1024 | Sense and Deduction: The Power of Peewees Applied to the SENSEVAL-2 Swedish Lexical Sample Task | http://www.aclweb.org/anthology/S/S01/S01-1024.pdf | author:Torbjörn Lager; Natalia Zinovjeva
-S01-1025 | Primitive-Based Word Sense Disambiguation for SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1025.pdf | author:Lim Beng Tat; Zaharin Yusoff; Tang Enya Kong; Guo Cheng Ming
-S01-1026 | Use of Machine Readable Dictionaries for Word-Sense Disambiguation in SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1026.pdf | author:Kenneth C. Litkowski
-S01-1027 | Using Domain Information for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1027.pdf | author:Bernardo Magnini; Carlo Strapparava; Giovanni Pezzulo; Alfio Gliozzo
-S01-1028 | Decision Lists for English and Basque | http://www.aclweb.org/anthology/S/S01/S01-1028.pdf | author:David Martinez; Eneko Agirre
-S01-1029 | Disambiguating Noun and Verb Senses Using Automatically Acquired Selectional Preferences | http://www.aclweb.org/anthology/S/S01/S01-1029.pdf | author:Diana McCarthy; John Carroll; Judita Preiss
-S01-1030 | Combination of Contextual Features for Word Sense Disambiguation: LIU-WSD | http://www.aclweb.org/anthology/S/S01/S01-1030.pdf | author:Magnus Merkel; Mikael Andersson
-S01-1031 | Pattern Learning and Active Feature Selection for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1031.pdf | author:Rada F. Mihalcea; Dan I. Moldovan
-S01-1032 | The University of Alicante Word Sense Disambiguation System | http://www.aclweb.org/anthology/S/S01/S01-1032.pdf | author:Andrès Montoyo; Armando Suárez
-S01-1033 | Japanese Word Sense Disambiguation using the Simple Bayes and Support Vector Machine Methods | http://www.aclweb.org/anthology/S/S01/S01-1033.pdf | author:Masaki Murata; Masao Utiyama; Kiyotaka Uchimoto; Qing Ma; Hitoshi Isahara
-S01-1034 | Machine Learning with Lexical Features: The Duluth Approach to SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1034.pdf | author:Ted Pedersen
-S01-1035 | Anaphora Resolution with Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1035.pdf | author:Judita Preiss
-S01-1036 | KUNLP system using Classification Information Model at SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1036.pdf | author:Hee-Cheol Seo; Sang-Zoo Lee; Hae-Chang Rim; Ho Lee
-S01-1037 | WASP-Bench: a Lexicographic Tool Supporting Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1037.pdf | author:David Tugwell; Adam Kilgarriff
-S01-1038 | Word Translation Based on Machine Learning Models Using Translation Memory and Corpora | http://www.aclweb.org/anthology/S/S01/S01-1038.pdf | author:Kiyotaka Uchimoto; Satoshi Sekine; Masaki Murata; Hitoshi Isahara
-S01-1039 | Automatic WSD: Does it Make Sense of Estonian? | http://www.aclweb.org/anthology/S/S01/S01-1039.pdf | author:Kadri Vider; Kaarel Kaljurand
-S01-1040 | The John Hopkins SENSEVAL-2 System Descriptions | http://www.aclweb.org/anthology/S/S01/S01-1040.pdf | author:David Yarowsky; Silviu Cucerzan; Radu Florian; Charles Schafer; Richard Wicentowski
+S01-1001 | SENSEVAL-2: Overview | http://www.aclweb.org/anthology/S/S01/S01-1001.pdf | category:paper author:Philip Edmonds; Scott Cotton
+S01-1002 | The Basque Task: Did Systems Perform in the Upperbound? | http://www.aclweb.org/anthology/S/S01/S01-1002.pdf | category:paper author:Eneko Agirre; Elena Garcia; Mikel Lersundi; David Martinez; Eli Pociello
+S01-1003 | Dutch Word Sense Disambiguation: Data and Preliminary Results | http://www.aclweb.org/anthology/S/S01/S01-1003.pdf | category:paper author:Iris Hendrickx; Antal van den Bosch
+S01-1004 | English Lexical Sample Task Description | http://www.aclweb.org/anthology/S/S01/S01-1004.pdf | category:paper author:Adam Kilgarriff
+S01-1005 | English Tasks: All-Words and Verb Lexical Sample | http://www.aclweb.org/anthology/S/S01/S01-1005.pdf | category:paper author:Martha Palmer; Christiane Fellbaum; Scott Cotton; Lauren Delfs; Hoa Trang Dang
+S01-1006 | Sensiting Inflectionality: Estonian Task for SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1006.pdf | category:paper author:Neeme Kahusk; Heili Orav; Haldur Oim
+S01-1007 | The Italian Lexical Sample Task | http://www.aclweb.org/anthology/S/S01/S01-1007.pdf | category:paper author:Francesca Bertagna; Claudia Soria; Nicoletta Calzolari
+S01-1008 | SENSEVAL-2 Japanese Dictionary Task | http://www.aclweb.org/anthology/S/S01/S01-1008.pdf | category:paper author:Kiyoaki Shirai
+S01-1009 | SENSEVAL-2 Japanese Translation Task | http://www.aclweb.org/anthology/S/S01/S01-1009.pdf | category:paper author:Sadao Kurohashi
+S01-1010 | Framework and Results for the Spanish SENSEVAL | http://www.aclweb.org/anthology/S/S01/S01-1010.pdf | category:paper author:German Rigau; Mariona Taulè; Ana Fernandez; Julio Gonzalo
+S01-1011 | SENSEVAL-2 The Swedish Framework | http://www.aclweb.org/anthology/S/S01/S01-1011.pdf | category:paper author:Dimitrios Kokkinakis; Jerker Järborg; Yvonne Cederholm
+S01-1012 | The SENSEVAL-2 Panel on Domains, Topics and Senses | http://www.aclweb.org/anthology/S/S01/S01-1012.pdf | category:paper author:Paul Buitelaar
+S01-1013 | The Japanese Translation Task: Lexical and Structural Perspectives | http://www.aclweb.org/anthology/S/S01/S01-1013.pdf | category:paper author:Timothy Baldwin; Atsushi Okazaki; Takenobu Tokunaga; Hozumi Tanaka
+S01-1014 | Supervised Sense Tagging using Support Vector Machines | http://www.aclweb.org/anthology/S/S01/S01-1014.pdf | category:paper author:Clara Cabezas; Philip Resnik; Jessica Stevens
+S01-1015 | Probabilistic Network Models for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1015.pdf | category:paper author:Gerald Chao; Michael G. Dyer
+S01-1016 | Improving WSD with Multi-Level View of Context Monitored by Similarity Measure | http://www.aclweb.org/anthology/S/S01/S01-1016.pdf | category:paper author:Eric Crestan; Marc El-Bèze; Claude de Loupy
+S01-1017 | Using LazyBoosting for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1017.pdf | category:paper author:Gerard Escudero; Lluìs Màrquez; German Rigau
+S01-1018 | The UNED Systems at SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1018.pdf | category:paper author:David Fernández-Amorós; Julio Gonzalo; Felisa Verdejo
+S01-1019 | Semantic Tagging Using WordNet Examples | http://www.aclweb.org/anthology/S/S01/S01-1019.pdf | category:paper author:Sherwood Haynes
+S01-1020 | Classifier Optimization and Combination in the English All Words Task | http://www.aclweb.org/anthology/S/S01/S01-1020.pdf | category:paper author:Vèronique Hoste; Anne Kool; Walter Daelemans
+S01-1021 | Combining Heterogeneous Classifiers for Word-Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1021.pdf | category:paper author:H. Tolga Ilhan; Sepandar D. Kamvar; Dan Klein; Christopher D. Manning; Kristina Toutanova
+S01-1022 | The Spr\aakdata-ML System as Used for SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1022.pdf | category:paper author:Dimitrios Kokkinakis
+S01-1023 | ATR-SLT System for SENSEVAL-2 Japanese Translation Task | http://www.aclweb.org/anthology/S/S01/S01-1023.pdf | category:paper author:Tadashi Kumano; Hideki Kashioka; Hideki Tanaka
+S01-1024 | Sense and Deduction: The Power of Peewees Applied to the SENSEVAL-2 Swedish Lexical Sample Task | http://www.aclweb.org/anthology/S/S01/S01-1024.pdf | category:paper author:Torbjörn Lager; Natalia Zinovjeva
+S01-1025 | Primitive-Based Word Sense Disambiguation for SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1025.pdf | category:paper author:Lim Beng Tat; Zaharin Yusoff; Tang Enya Kong; Guo Cheng Ming
+S01-1026 | Use of Machine Readable Dictionaries for Word-Sense Disambiguation in SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1026.pdf | category:paper author:Kenneth C. Litkowski
+S01-1027 | Using Domain Information for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1027.pdf | category:paper author:Bernardo Magnini; Carlo Strapparava; Giovanni Pezzulo; Alfio Gliozzo
+S01-1028 | Decision Lists for English and Basque | http://www.aclweb.org/anthology/S/S01/S01-1028.pdf | category:paper author:David Martinez; Eneko Agirre
+S01-1029 | Disambiguating Noun and Verb Senses Using Automatically Acquired Selectional Preferences | http://www.aclweb.org/anthology/S/S01/S01-1029.pdf | category:paper author:Diana McCarthy; John Carroll; Judita Preiss
+S01-1030 | Combination of Contextual Features for Word Sense Disambiguation: LIU-WSD | http://www.aclweb.org/anthology/S/S01/S01-1030.pdf | category:paper author:Magnus Merkel; Mikael Andersson
+S01-1031 | Pattern Learning and Active Feature Selection for Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1031.pdf | category:paper author:Rada F. Mihalcea; Dan I. Moldovan
+S01-1032 | The University of Alicante Word Sense Disambiguation System | http://www.aclweb.org/anthology/S/S01/S01-1032.pdf | category:paper author:Andrès Montoyo; Armando Suárez
+S01-1033 | Japanese Word Sense Disambiguation using the Simple Bayes and Support Vector Machine Methods | http://www.aclweb.org/anthology/S/S01/S01-1033.pdf | category:paper author:Masaki Murata; Masao Utiyama; Kiyotaka Uchimoto; Qing Ma; Hitoshi Isahara
+S01-1034 | Machine Learning with Lexical Features: The Duluth Approach to SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1034.pdf | category:paper author:Ted Pedersen
+S01-1035 | Anaphora Resolution with Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1035.pdf | category:paper author:Judita Preiss
+S01-1036 | KUNLP system using Classification Information Model at SENSEVAL-2 | http://www.aclweb.org/anthology/S/S01/S01-1036.pdf | category:paper author:Hee-Cheol Seo; Sang-Zoo Lee; Hae-Chang Rim; Ho Lee
+S01-1037 | WASP-Bench: a Lexicographic Tool Supporting Word Sense Disambiguation | http://www.aclweb.org/anthology/S/S01/S01-1037.pdf | category:paper author:David Tugwell; Adam Kilgarriff
+S01-1038 | Word Translation Based on Machine Learning Models Using Translation Memory and Corpora | http://www.aclweb.org/anthology/S/S01/S01-1038.pdf | category:paper author:Kiyotaka Uchimoto; Satoshi Sekine; Masaki Murata; Hitoshi Isahara
+S01-1039 | Automatic WSD: Does it Make Sense of Estonian? | http://www.aclweb.org/anthology/S/S01/S01-1039.pdf | category:paper author:Kadri Vider; Kaarel Kaljurand
+S01-1040 | The John Hopkins SENSEVAL-2 System Descriptions | http://www.aclweb.org/anthology/S/S01/S01-1040.pdf | category:paper author:David Yarowsky; Silviu Cucerzan; Radu Florian; Charles Schafer; Richard Wicentowski
