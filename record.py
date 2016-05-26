@@ -58,6 +58,14 @@ class Category():
         self.people = "people"
         self.blog = "blog"
         self.rank = "rank"
+        self.website = "website"
+    def match(self, desc, category):
+        index = desc.find('category:')
+        if index != -1 and desc.find(category, index + 1) != -1:
+            print category + ' match'
+            return True
+        return False
+
 
 class Tag():
     def __init__(self):
