@@ -77,7 +77,7 @@ class Figures(BaseExtension):
                 if len(links) > 0:
                     html += '<a target="_blank" href="' + links[count - 1] + '"><img class="demo-img pos-center" height="' + height + '" width="' + width + '" src="' + fig + '"/></a>&nbsp;&nbsp;'
                 else:
-                    html += '<img height="' + height + '" width="' + width + '" src="' + fig + '"/>&nbsp;&nbsp;'
+                    html += '<a target="_blank" href="' + fig + '"><img height="' + height + '" width="' + width + '" src="' + fig + '"/></a>&nbsp;&nbsp;'
                 if count % row_count == 0:
                     html += '<br/>'
  

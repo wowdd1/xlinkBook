@@ -58,9 +58,9 @@ class Reference(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
-        return True
-        #self.semanticscholar.search(form_dict['rTitle'])
-        #return self.record_reference.has_key(rID) or self.semanticscholar.haveResult()
+        if self.record_reference.has_key(rID) or rID.startswith('arxiv'):
+            return True
+        return False
                 
 
     def genReferenceHtml2(self, alist):
