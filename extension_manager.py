@@ -7,7 +7,8 @@ import sys
 class ExtensionManager:
     
     extensions = {}
-
+    extensions_check_cache = {}
+ 
     def loadExtensions(self):
         if len(self.extensions) > 0:
             return
@@ -50,7 +51,13 @@ class ExtensionManager:
 
         if check == 'true':
             if form['name'] == "*":
-                return self.checkAll(form)
+                rID = form['rID'].encode('utf-8')
+                if self.extensions_check_cache.has_key(rID):
+                    print 'return cache for ' + rID
+                    return self.extensions_check_cache[rID]
+                else:
+                    self.extensions_check_cache[rID] = self.checkAll(form)
+                    return self.extensions_check_cache[rID]
             else:
                 extension = self.loadExtension(form['name'])
                 if extension != None:

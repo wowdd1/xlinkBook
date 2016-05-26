@@ -5,6 +5,7 @@ from extensions.bas_extension import BaseExtension
 from utils import Utils
 from update.all_subject import default_subject
 from record import ReferenceRecord
+from record import CategoryRecord, Category
 from semanticscholar import Semanticscholar
 
 class Reference(BaseExtension):
@@ -16,6 +17,7 @@ class Reference(BaseExtension):
         BaseExtension.__init__(self)
         self.utils = Utils()
         self.semanticscholar = Semanticscholar()
+        self.category_obj = Category()
 
     def loadReference(self, filename, rID):
         if len(self.record_reference) != 0 and self.record_reference.has_key(rID):
@@ -46,10 +48,9 @@ class Reference(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
         #print self.record_reference
-        result = self.genReferenceHtml(rID) 
-        if result != None and result.strip() != '':
+        if self.record_reference.has_key(rID):
             print result
-            return result
+            return self.genReferenceHtml(rID)
         else:
             return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']), form_dict['divID'].encode('utf8'),
                                           form_dict['defaultLinks'], form_dict['rID'])
@@ -58,8 +59,11 @@ class Reference(BaseExtension):
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
-        self.loadReference(self.formatFileName(fileName), rID)
-        if self.record_reference.has_key(rID) or rID.startswith('arxiv') or rID.startswith('loop'):
+        record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/') + 1])
+        category = ''
+        if record != None:
+            category = CategoryRecord(record.line).get_category()
+        if rID.startswith('arxiv') or rID.startswith('loop') or (category == self.category_obj.paper):
             return True
         return False
                 
