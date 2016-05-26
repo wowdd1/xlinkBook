@@ -17,8 +17,6 @@ class Semanticscholar:
     title = ''
 
     def search(self, title):
-        if title == self.title:
-            return
         self.title = title
         print 'search ' + title
         '''
@@ -35,7 +33,7 @@ class Semanticscholar:
         for result in jobj['results']:
             print result
         '''
-        self.requestData(self.getUrl(title))
+        self.requestData(title, self.getUrl(title))
 
     def getUrl(self, title):
         r = requests.get('https://www.semanticscholar.org/search?q=' + title)
@@ -49,10 +47,11 @@ class Semanticscholar:
     def haveResult(self):
         return self.have_result
 
-    def requestData(self, url):
+    def requestData(self, title, url):
         print 'requestData'
         #self.requestsReferences(url)
         if url == None:
+            print 'no url found for ' + title
             return
 
         r = requests.get('https://www.semanticscholar.org' + url)
@@ -61,15 +60,15 @@ class Semanticscholar:
         for div in soup.find_all('div', class_='paper-detail-figures-list-figure-image'):
             print div.img['src']
             figures.append(div.img['src'])
-        self.figures[self.title] = figures
+        self.figures[title] = figures
       
         section = soup.find('section', class_='paper-abstract')
-        self.abstract[self.title] = section.p.text
+        self.abstract[title] = section.p.text
         soup = BeautifulSoup(soup.find('ul', class_='subhead').prettify())
         authors = []
         for a in soup.find_all('a', class_='author-link'):
             authors.append({a.text.strip() : 'https://www.semanticscholar.org' + a['href']})
-        self.authors[self.title] = authors
+        self.authors[title] = authors
 
     def requestsReferences(self, title, url):
         id = url[url.rfind('/') + 1 : ]
@@ -91,7 +90,10 @@ class Semanticscholar:
             return self.figures[title]
 
         self.search(title)
-        return self.figures[title]
+        if self.figures.has_key(title):
+            return self.figures[title]
+        else:
+            return ''
 
     def getReferences(self, title):
         print title
@@ -103,7 +105,10 @@ class Semanticscholar:
             url = self.getUrl(title)
             if url != None:
                 self.requestsReferences(title, self.getUrl(title)) 
-                return self.references[title] 
+                if self.references.has_key(title):
+                    return self.references[title] 
+                else:
+                    return []
             else:
                 return []
 
@@ -112,12 +117,18 @@ class Semanticscholar:
             return self.abstract[title]
 
         self.search(title)
-        return self.abstract[title]
+        if self.abstract.has_key(title):
+            return self.abstract[title]
+        else:
+            return ''
 
     def getAuthors(self, title):
         if self.authors.has_key(title):
             return self.authors[title]
 
         self.search(title)
-        return self.authors[title]
+        if self.authors.has_key(title):
+            return self.authors[title]
+        else:
+            return ''
 

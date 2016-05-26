@@ -600,11 +600,14 @@ class Utils:
         return final_file_list
 
     def sortLines(self, lines):
-        if len(lines) > 0 and lines[0].find('published:') != -1:
+        if len(lines) > 0:
             record_list = []
             for line in lines:
                 record_list.append(PaperRecord(line))
-            self.quickSort(record_list)
+            if lines[0].find('published:') != -1:
+                self.quickSort(record_list)
+            else:
+                 self.quickSort(record_list, 'id')
             ret_lines = []
             for r in record_list:
                 ret_lines.append(r.line)
@@ -616,25 +619,31 @@ class Utils:
     def sortRecords(self, records):
         return self.quickSort(records)
 
-    def largeoreq(self, item1, item2):
-        return item1.get_published().strip() >= item2.get_published().strip()
+    def largeoreq(self, item1, item2, sortType):
+        if sortType == "published":
+            return item1.get_published().strip() >= item2.get_published().strip()
+        else:
+            return item1.get_id().strip() >= item2.get_id().strip()
 
-    def lessoreq(self, item1, item2):
-        return item1.get_published().strip() <= item2.get_published().strip()
+    def lessoreq(self, item1, item2, sortType):
+        if sortType == "published":
+            return item1.get_published().strip() <= item2.get_published().strip()
+        else:
+            return item1.get_id().strip() <= item2.get_id().strip()
 
-    def quickSort(self, alist):
-        self.quickSortHelper(alist,0,len(alist)-1)
+    def quickSort(self, alist, sortType="published"):
+        self.quickSortHelper(alist,0,len(alist)-1, sortType)
 
-    def quickSortHelper(self, alist,first,last):
+    def quickSortHelper(self, alist,first,last, sortType):
         if first<last:
 
-            splitpoint = self.partition(alist,first,last)
+            splitpoint = self.partition(alist,first,last, sortType)
 
-            self.quickSortHelper(alist,first,splitpoint-1)
-            self.quickSortHelper(alist,splitpoint+1,last)
+            self.quickSortHelper(alist,first,splitpoint-1, sortType)
+            self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
 
-    def partition(self, alist,first,last):
+    def partition(self, alist,first,last, sortType):
         pivotvalue = alist[first]
 
         leftmark = first+1
@@ -643,10 +652,10 @@ class Utils:
         done = False
         while not done:
 
-            while leftmark <= rightmark and self.largeoreq(alist[leftmark], pivotvalue):
+            while leftmark <= rightmark and self.largeoreq(alist[leftmark], pivotvalue, sortType):
                 leftmark = leftmark + 1
 
-            while self.lessoreq(alist[rightmark], pivotvalue) and rightmark >= leftmark:
+            while self.lessoreq(alist[rightmark], pivotvalue, sortType) and rightmark >= leftmark:
                 rightmark = rightmark -1
 
             if rightmark < leftmark:
