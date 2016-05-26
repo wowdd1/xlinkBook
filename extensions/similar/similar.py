@@ -3,8 +3,10 @@
 import sys, os
 from extensions.bas_extension import BaseExtension
 from utils import Utils
-from record import PaperRecord
+from record import PaperRecord, Category
 import cPickle as pickle
+import requests
+from bs4 import BeautifulSoup
 
 class Similar(BaseExtension):
 
@@ -13,6 +15,7 @@ class Similar(BaseExtension):
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
+        self.category_obj = Category()
 
     def loadPapers(self):
         if len(self.papers_dict) > 0:
@@ -36,24 +39,54 @@ class Similar(BaseExtension):
 
     def excute(self, form_dict):
         rID = form_dict['rID']
-        if rID.startswith('arxiv') == False:
-            return ''
-        record = self.utils.getRecord(rID.strip())
-        pid = self.getPid(record.get_url())
+        fileName = form_dict['fileName']
+        record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
+        if rID.startswith('arxiv'):
+            pid = self.getPid(record.get_url())
 
-        self.loadPapers()
-        self.loadSimDict()
-        #print sim_dict
-        if self.papers_dict.has_key(pid) == False:
-            return ''
-        print 'request:'
-        print pid + ' ' + self.papers_dict[pid].get_title()
-        if pid in self.sim_dict:
-            print 'resutl:'
-            for k in self.sim_dict[pid]:
-                print k + ' ' + self.papers_dict[k].get_title()
-            return self.genHtml(pid)
+            self.loadPapers()
+            self.loadSimDict()
+            #print sim_dict
+            if self.papers_dict.has_key(pid) == False:
+                return ''
+            print 'request:'
+            print pid + ' ' + self.papers_dict[pid].get_title()
+            if pid in self.sim_dict:
+                print 'resutl:'
+                for k in self.sim_dict[pid]:
+                    print k + ' ' + self.papers_dict[k].get_title()
+                return self.genHtml(pid)
+        elif self.category_obj.match(record.get_describe(), self.category_obj.website):
+            return self.genWebsiteHtml(record.get_title().strip())
         return ''
+
+    def genWebsiteHtml(self, key):
+        html = '<div class="ref"><ol>'
+        count = 0
+        cookies = dict(unsafe='True')
+        page = ''
+        page_num = 6
+        page = 'http://www.xmarks.com/topic/' + key
+        nextpage = ''
+        page_count = 0
+        for i in range(0, page_num):
+            page_count += 1
+            if nextpage != '':
+                page = nextpage.replace('2', str(page_count))
+            print 'request ' + page
+            r = requests.get(page, cookies=cookies)
+            if r.status_code != 200:
+                break
+            soup = BeautifulSoup(r.text)
+            #print r.text
+            for div in soup.find_all('div', class_='content'):
+                count += 1
+                html += '<li><span>' + str(count) + '.</span><p><a target="_blank" href="' + div.a['href'] + '">' + div.a.text + "</a></p></li>"
+            nextDiv = soup.find('div', class_='site-pagination')
+            if nextDiv != None and nextpage == '':
+                nextpage = 'http://www.xmarks.com' + nextDiv.a['href']
+        html += "</ol></div>"
+        return html
 
     def genHtml(self, pid):
         html = '<div class="ref"><ol>'
@@ -91,4 +124,6 @@ class Similar(BaseExtension):
 
     def check(self, form_dict):
         rID = form_dict['rID']
-        return rID.startswith('arxiv')
+        fileName = form_dict['fileName']
+        record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
+        return rID.startswith('arxiv') or self.category_obj.match(record.get_describe(), self.category_obj.website)

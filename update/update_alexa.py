@@ -12,6 +12,7 @@ class AlexaSpider(Spider):
         Spider.__init__(self)
         self.school = "alexa"
         self.subject = "top500web"
+        self.category = self.category_obj.website        
 
 
     def doWork(self):
