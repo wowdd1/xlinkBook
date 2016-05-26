@@ -44,6 +44,8 @@ class Similar(BaseExtension):
         self.loadPapers()
         self.loadSimDict()
         #print sim_dict
+        if self.papers_dict.has_key(pid) == False:
+            return ''
         print 'request:'
         print pid + ' ' + self.papers_dict[pid].get_title()
         if pid in self.sim_dict:

@@ -55,6 +55,7 @@ class Semanticscholar:
 
         r = requests.get('https://www.semanticscholar.org' + url)
         soup = BeautifulSoup(r.text)
+        self.figures = []
         for div in soup.find_all('div', class_='paper-detail-figures-list-figure-image'):
             print div.img['src']
             self.figures.append(div.img['src'])
@@ -62,6 +63,7 @@ class Semanticscholar:
         section = soup.find('section', class_='paper-abstract')
         self.abstract = section.p.text
         soup = BeautifulSoup(soup.find('ul', class_='subhead').prettify())
+        self.authors = []
         for a in soup.find_all('a', class_='author-link'):
             self.authors.append({a.text.strip() : 'https://www.semanticscholar.org' + a['href']})
 
@@ -69,6 +71,7 @@ class Semanticscholar:
         id = url[url.rfind('/') + 1 : ]
         r = requests.get('https://www.semanticscholar.org/api/1/paper/' + id + '/citations?sort=is-influential&page=1&citationType=citedPapers&citationsPageSize=1000')
         jobj = json.loads(r.text)
+        self.references = []
         for item in jobj['citations']:
             print item['title']['text']
             url = ''
@@ -81,7 +84,9 @@ class Semanticscholar:
         return self.figures
 
     def getReferences(self, title):
-        if len(self.references) > 0 and title != self.title:
+        print title
+        print self.title
+        if len(self.references) > 0 and title == self.title:
             return self.references
         else:
             url = self.getUrl(title)
