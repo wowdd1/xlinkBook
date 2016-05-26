@@ -27,7 +27,7 @@ class Content(BaseExtension):
         if len(content) != 0 and content.has_key(rID):
             return
 
-        if os.path.exists(name):
+        if os.path.exists(name) and os.path.isfile(name):
             f = open(name, 'rU')
             all_lines = f.readlines()
             for line in all_lines:
