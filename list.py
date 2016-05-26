@@ -444,15 +444,15 @@ def build_lines(list_all):
         for j in range(0, len(list_all[i])):
             engin_list_dict = {}
             title = ''
+            id_title = align_id_title(list_all[i][j])
+            title = id_title[id_title.find('|') + 1 : ]
+            id = id_title[0 : id_title.find('|')].strip()
             if html_style == False or (list_all[i][j].get_url().strip() == '' and engin == ''):
-                id_title_lines[i][j] = align_id_title(list_all[i][j])
+                id_title_lines[i][j] = id_title
             else:
-                id_title = align_id_title(list_all[i][j])
                 url = list_all[i][j].get_url()
-                title = id_title[id_title.find('|') + 1 : ]
                 if html_style and title.find('(') != -1 and title.strip().startswith('(') == False:
                     title = title[0 : title.find('(')].strip()
-                id = id_title[0 : id_title.find('|')].strip()
                 
                 if url.strip() != '':
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
