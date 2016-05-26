@@ -59,6 +59,7 @@ class Reference(BaseExtension):
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
+        print 'check filename ' + fileName
         record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/') + 1])
         category = ''
         if record != None:
