@@ -85,10 +85,8 @@ function navTopic(obj, divID, parentDivID, countIndex){
         }
         if (extensions[i] == obj.text) { 
             var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false', column, column}
-            if (obj.text == "content") {
-                postArgs["divID"] = divID + "-content"
-                postArgs["defaultLinks"] = 2
-            }
+            postArgs["divID"] = divID + "-" + obj.text
+            postArgs["defaultLinks"] = 2
             $("#" + targetid).html("Loading ...");
             var loadAnimID = setInterval(function() {
                 i = ++i % 4;

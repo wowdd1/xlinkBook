@@ -46,37 +46,52 @@ class Reference(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
         #print self.record_reference
-        
         result = self.genReferenceHtml(rID) 
-        if result != '':
+        if result != None and result.strip() != '':
+            print result
             return result
         else:
-            return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']))
+            return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']), form_dict['divID'].encode('utf8'),
+                                          form_dict['defaultLinks'], form_dict['rID'])
 
 
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
-        if self.record_reference.has_key(rID) or rID.startswith('arxiv'):
+        if self.record_reference.has_key(rID) or rID.startswith('arxiv') or rID.startswith('loop'):
             return True
         return False
                 
 
-    def genReferenceHtml2(self, alist):
-        return self.genMetadataHtml2(alist)
+    def genReferenceHtml2(self, alist, divid, defaultLinks, rID):
+        return self.genMetadataHtml2(alist, divid, defaultLinks, rID)
     
-    def genMetadataHtml2(self, alist):
+    def genMetadataHtml2(self, alist, ref_divID, defaultLinks, rID):
             self.html = '<div class="ref"><ol>'
             count = 0
             for r in alist:
                 count += 1
-                self.html += '<li><span>' + str(count) + '.</span>'
-                if r[1] != '':
-                    self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + r[0] + '</a>' + '</p>'
+                ref_divID += '-' + str(count)
+                linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
+                appendID = str(count)
+                if rID.startswith('loop'):
+                    appendID = rID[rID.rfind('-') + 1 :].replace('R', '.') + '.' + str(count) 
+                    self.html += '<li><span>' + appendID + '.</span>'
+                    if len(appendID) >= 5:
+                        self.html += '<br/>'
+                    appendID = appendID.replace('.','R')
                 else:
-                    self.html += '<p>' + r[0] + '</p>'
-                self.html += '</li>'
+                    self.html += '<li><span>' + str(count) + '.</span>'
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID + '-' + str(appendID), r[0], '-')
+                if r[1] != '':
+                    self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + r[0] + '</a>'
+                else:
+                    self.html += '<p>' + r[0]
+                #self.html += self.utils.getDefaultEnginHtml(r[0], defaultLinks)
+                if script != "":
+                    self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
+                self.html += '</p></li>'
             return self.html + "</div>"
 
 
