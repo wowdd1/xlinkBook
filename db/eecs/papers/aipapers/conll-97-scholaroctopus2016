@@ -1,16 +1,16 @@
-W97-1001 | A Trainable Message Understanding System | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1001.pdf | author:Amit Bagga; Joyce Yue Chai
-W97-1002 | Relational Learning of Pattern-Match Rules for Information Extraction | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1002.pdf | author:Mary Elaine Califf; Raymond J. Mooney
-W97-1003 | A Preliminary Study of Word Clustering Based on Syntactic Behavior | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1003.pdf | author:Wide R. Hogenhout; Yuji Matsumoto
-W97-1004 | Learning New Compositions from Given Ones | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1004.pdf | author:Ji Donghong; He Jun; Huang Changning
-W97-1005 | A Statistical Decision Making Method: A Case Study on Prepositional Phrase Attachment | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1005.pdf | author:Mehmet Kayaalp; Ted Pedersen; Rebecca Bruce
-W97-1006 | METHOD FOR IMPROVING AUTOMATIC WORD CATEGORIZATION | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1006.pdf | author:Emin Erkan Korkmaz; Gokturk Ucoluk
-W97-1007 | From Psycholinguistic Modelling of Interlanguage in Second Language Acquisition to a Computational Model | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1007.pdf | author:Montse Maritxalar; Arantza Diaz de Ilarraza; Maite Oronoz
-W97-1008 | What makes a word: Learning base units in Japanese for speech recognition | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1008.pdf | author:Laura Mayfield Tomokiyo; Klaus Ries
-W97-1009 | Evolution of a Rapidly Learned Representation for Speech | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1009.pdf | author:Ramin Charles Nakisa; Kim Plunkett
-W97-1010 | Learning Stochastic Categorial Grammars | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1010.pdf | author:Miles Osborne; Ted Briscoe
-W97-1011 | Learning and Application of Differential Grammars | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1011.pdf | author:David M. W. Powers
-W97-1012 | Recurrent Neural-Network Learning of Phonological Regularities in Turkish | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1012.pdf | author:Jennifer Rodd
-W97-1013 | Explanation-Based Learning of Data-Oriented Parsing | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1013.pdf | author:K. Sima'an
-W97-1014 | Word Triggers and the EM Algorithm | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1014.pdf | author:Christoph Tillmann; Hermann Ney
-W97-1015 | A Comparative Study of the Application of Different Learning Techniques to Natural Language Interfaces | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1015.pdf | author:Werner Winiwarter; Yahiko Kambayashi
-W97-1016 | Resolving PP attachment Ambiguities with Memory-Based Learning | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1016.pdf | author:Jakub Zavrel; Walter Daelemans; Jorn Veenstra
+W97-1001 | A Trainable Message Understanding System | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1001.pdf | category:paper author:Amit Bagga; Joyce Yue Chai
+W97-1002 | Relational Learning of Pattern-Match Rules for Information Extraction | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1002.pdf | category:paper author:Mary Elaine Califf; Raymond J. Mooney
+W97-1003 | A Preliminary Study of Word Clustering Based on Syntactic Behavior | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1003.pdf | category:paper author:Wide R. Hogenhout; Yuji Matsumoto
+W97-1004 | Learning New Compositions from Given Ones | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1004.pdf | category:paper author:Ji Donghong; He Jun; Huang Changning
+W97-1005 | A Statistical Decision Making Method: A Case Study on Prepositional Phrase Attachment | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1005.pdf | category:paper author:Mehmet Kayaalp; Ted Pedersen; Rebecca Bruce
+W97-1006 | METHOD FOR IMPROVING AUTOMATIC WORD CATEGORIZATION | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1006.pdf | category:paper author:Emin Erkan Korkmaz; Gokturk Ucoluk
+W97-1007 | From Psycholinguistic Modelling of Interlanguage in Second Language Acquisition to a Computational Model | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1007.pdf | category:paper author:Montse Maritxalar; Arantza Diaz de Ilarraza; Maite Oronoz
+W97-1008 | What makes a word: Learning base units in Japanese for speech recognition | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1008.pdf | category:paper author:Laura Mayfield Tomokiyo; Klaus Ries
+W97-1009 | Evolution of a Rapidly Learned Representation for Speech | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1009.pdf | category:paper author:Ramin Charles Nakisa; Kim Plunkett
+W97-1010 | Learning Stochastic Categorial Grammars | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1010.pdf | category:paper author:Miles Osborne; Ted Briscoe
+W97-1011 | Learning and Application of Differential Grammars | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1011.pdf | category:paper author:David M. W. Powers
+W97-1012 | Recurrent Neural-Network Learning of Phonological Regularities in Turkish | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1012.pdf | category:paper author:Jennifer Rodd
+W97-1013 | Explanation-Based Learning of Data-Oriented Parsing | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1013.pdf | category:paper author:K. Sima'an
+W97-1014 | Word Triggers and the EM Algorithm | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1014.pdf | category:paper author:Christoph Tillmann; Hermann Ney
+W97-1015 | A Comparative Study of the Application of Different Learning Techniques to Natural Language Interfaces | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1015.pdf | category:paper author:Werner Winiwarter; Yahiko Kambayashi
+W97-1016 | Resolving PP attachment Ambiguities with Memory-Based Learning | http://www.aclweb.org/anthology/K/K97/../../W/W97/W97-1016.pdf | category:paper author:Jakub Zavrel; Walter Daelemans; Jorn Veenstra

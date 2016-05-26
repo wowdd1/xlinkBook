@@ -1,7 +1,7 @@
-jmlr-shallow_parsing02-1 | Introduction to Special Issue on Machine Learning Approaches to Shallow Parsing | http://www.jmlr.org/papers/v2/hammerton02a.html | author:James Hammerton, Miles Osborne, Susan Armstrong, Walter Daelemans
-jmlr-shallow_parsing02-2 | Memory-Based Shallow Parsing | http://www.jmlr.org/papers/v2/tks02a.html | author:Erik F. Tjong Kim Sang
-jmlr-shallow_parsing02-3 | Shallow Parsing using Specialized HMMs | http://www.jmlr.org/papers/v2/molina02a.html | author:Antonio Molina, Ferran Pla
-jmlr-shallow_parsing02-4 | Text Chunking based on a Generalization of Winnow | http://www.jmlr.org/papers/v2/zhang02c.html | author:Tong Zhang, Fred Damerau, David Johnson
-jmlr-shallow_parsing02-5 | Shallow Parsing with PoS Taggers and Linguistic Features | http://www.jmlr.org/papers/v2/megyesi02a.html | author:Beáta Megyesi
-jmlr-shallow_parsing02-6 | Learning Rules and Their Exceptions | http://www.jmlr.org/papers/v2/dejean02a.html | author:Hervé Déjean
-jmlr-shallow_parsing02-7 | Shallow Parsing using Noisy and Non-Stationary Training Material | http://www.jmlr.org/papers/v2/osborne02a.html | author:Miles Osborne
+jmlr-shallow_parsing02-1 | Introduction to Special Issue on Machine Learning Approaches to Shallow Parsing | http://www.jmlr.org/papers/v2/hammerton02a.html | category:paper author:James Hammerton, Miles Osborne, Susan Armstrong, Walter Daelemans
+jmlr-shallow_parsing02-2 | Memory-Based Shallow Parsing | http://www.jmlr.org/papers/v2/tks02a.html | category:paper author:Erik F. Tjong Kim Sang
+jmlr-shallow_parsing02-3 | Shallow Parsing using Specialized HMMs | http://www.jmlr.org/papers/v2/molina02a.html | category:paper author:Antonio Molina, Ferran Pla
+jmlr-shallow_parsing02-4 | Text Chunking based on a Generalization of Winnow | http://www.jmlr.org/papers/v2/zhang02c.html | category:paper author:Tong Zhang, Fred Damerau, David Johnson
+jmlr-shallow_parsing02-5 | Shallow Parsing with PoS Taggers and Linguistic Features | http://www.jmlr.org/papers/v2/megyesi02a.html | category:paper author:Beáta Megyesi
+jmlr-shallow_parsing02-6 | Learning Rules and Their Exceptions | http://www.jmlr.org/papers/v2/dejean02a.html | category:paper author:Hervé Déjean
+jmlr-shallow_parsing02-7 | Shallow Parsing using Noisy and Non-Stationary Training Material | http://www.jmlr.org/papers/v2/osborne02a.html | category:paper author:Miles Osborne

@@ -1,52 +1,52 @@
-P94-1001 | Discourse Obligations in Dialogue Processing | http://www.aclweb.org/anthology/P/P94/P94-1001.pdf | author:David R. Traum; James F. Allen
-P94-1002 | MULTI-PARAGRAPH SEGMENTATION EXPOSITORY TEXT | http://www.aclweb.org/anthology/P/P94/P94-1002.pdf | author:Marti A. Hearst
-P94-1003 | PRIORITY UNION AND GENERALIZATION IN DISCOURSE GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1003.pdf | author:Claire Grover; Chris Brew; Suresh Manandhar; Marc Moens
-P94-1004 | HIDDEN UNDERSTANDING MODELS OF NATURAL LANGUAGE | http://www.aclweb.org/anthology/P/P94/P94-1004.pdf | author:Scott Miller; Robert Bobrow; Robert Ingria; Richard Schwartz
-P94-1005 | From Strings to Trees to Strings to Trees (Abstract) | http://www.aclweb.org/anthology/P/P94/P94-1005.pdf | author:Aravind K. Joshi
-P94-1006 | INTENTIONS AND INFORMATION IN DISCOURSE | http://www.aclweb.org/anthology/P/P94/P94-1006.pdf | author:Nicholas Asher; Alex Lascarides
-P94-1007 | GENERATING PRECONDITION EXPRESSIONS IN INSTRUCTIONAL TEXT | http://www.aclweb.org/anthology/P/P94/P94-1007.pdf | author:Keith Vander Linden
-P94-1008 | COMMON TOPICS AND COHERENT SITUATIONS: INTERPRETING ELLIPSIS IN THE CONTEXT OF DISCOURSE INFERENCE | http://www.aclweb.org/anthology/P/P94/P94-1008.pdf | author:Andrew Kehler
-P94-1009 | A HYBRID REASONING MODEL FOR INDIRECT ANSWERS | http://www.aclweb.org/anthology/P/P94/P94-1009.pdf | author:Nancy Green; Sandra Carberry
-P94-1010 | A STOCHASTIC FINITE-STATE WORD-SEGMENTATION ALGORITHM FOR CHINESE | http://www.aclweb.org/anthology/P/P94/P94-1010.pdf | author:Richard Sproat; Chilin Shih; William Gale; Nancy Chang
-P94-1011 | PRECISE N-GRAM PROBABILITIES FROM STOCHASTIC CONTEXT-FREE GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1011.pdf | author:Andreas Stolcke; Jonathan Segal
-P94-1012 | ALIGNING A PARALLEL ENGLISH-CHINESE CORPUS STATISTICALLY WITH LEXICAL CRITERIA | http://www.aclweb.org/anthology/P/P94/P94-1012.pdf | author:Dekai Wu
-P94-1013 | DECISION LISTS FOR LEXICAL AMBIGUITY RESOLUTION: Application to Accent Restoration in Spanish and French | http://www.aclweb.org/anthology/P/P94/P94-1013.pdf | author:David Yarowsky
-P94-1014 | AN EMPIRICAL MODEL OF ACKNOWLEDGMENT FOR SPOKEN-LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/P/P94/P94-1014.pdf | author:David G. Novick; Stephen Sutton
-P94-1015 | SPEECH DIALOGUE WITH FACIAL DISPLAYS: MULTIMODAL HUMAN-COMPUTER CONVERSATION | http://www.aclweb.org/anthology/P/P94/P94-1015.pdf | author:Katashi Nagao; Akikazu Takeuchi
-P94-1016 | INTERLEAVING SYNTAX AND SEMANTICS IN AN EFFICIENT BOTTOM-UP PARSER | http://www.aclweb.org/anthology/P/P94/P94-1016.pdf | author:John Dowding; Robert Moore; Francois Andryt; Douglas Moran
-P94-1017 | AN OPTIMAL TABULAR PARSING ALGORITHM | http://www.aclweb.org/anthology/P/P94/P94-1017.pdf | author:Mark-Jan Nederhof
-P94-1018 | A Psycholinguistically Motivated Parser for CCG | http://www.aclweb.org/anthology/P/P94/P94-1018.pdf | author:Michael Niv
-P94-1019 | VERB SEMANTICS AND LEXICAL SELECTION | http://www.aclweb.org/anthology/P/P94/P94-1019.pdf | author:Zhibiao Wu; Martha Palmer
-P94-1020 | Word-Sense Disambiguation Using Decomposable Models | http://www.aclweb.org/anthology/P/P94/P94-1020.pdf | author:Rebecca Bruce; Janyce Wiebe
-P94-1021 | Constraint-Based Categorial Grammar | http://www.aclweb.org/anthology/P/P94/P94-1021.pdf | author:Gosse Bouma; Gertjan van Noord
-P94-1022 | Capturing CFLs with Tree Adjoining Grammars | http://www.aclweb.org/anthology/P/P94/P94-1022.pdf | author:James Rogers
-P94-1023 | ON DETERMINING THE CONSISTENCY OF PARTIAL DESCRIPTIONS OF TREES | http://www.aclweb.org/anthology/P/P94/P94-1023.pdf | author:Thomas L. Cornell
-P94-1024 | A MARKOV LANGUAGE LEARNING MODEL FOR FINITE PARAMETER SPACES | http://www.aclweb.org/anthology/P/P94/P94-1024.pdf | author:Partha Niyogi; Robert C. Berwick
-P94-1025 | PART-OF-SPEECH TAGGING USING A VARIABLE MEMORY MARKOV MODEL | http://www.aclweb.org/anthology/P/P94/P94-1025.pdf | author:Hinrich Schuetze; Yoram Singer
-P94-1026 | GRAMMAR SPECIALIZATION THROUGH ENTROPY THRESHOLDS | http://www.aclweb.org/anthology/P/P94/P94-1026.pdf | author:Christer Samuelsson
-P94-1027 | OPTIMIZING THE COMPUTATIONAL LEXICALIZATION OF LARGE GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1027.pdf | author:Christian JACQUEMIN
-P94-1028 | COMPACT REPRESENTATIONS BY FINITE-STATE TRANSDUCERS | http://www.aclweb.org/anthology/P/P94/P94-1028.pdf | author:Mehryar Mohri
-P94-1029 | AN EXTENDED THEORY OF HEAD-DRIVEN PARSING | http://www.aclweb.org/anthology/P/P94/P94-1029.pdf | author:Mark-Jan Nederhof; Giorgio Satta
-P94-1030 | GENERALIZED CHART ALGORITHM: AN EFFICIENT PROCEDURE FOR COST-BASED ABDUCTION | http://www.aclweb.org/anthology/P/P94/P94-1030.pdf | author:Yasuharu Den
-P94-1031 | Tricolor DAGs for Machine Translation | http://www.aclweb.org/anthology/P/P94/P94-1031.pdf | author:Koichi Takeda
-P94-1032 | Extracting Noun Phrases from Large-Scale Texts: A Hybrid Approach and Its Automatic Evaluation | http://www.aclweb.org/anthology/P/P94/P94-1032.pdf | author:Kuang-hua Chen; Hsin-Hsi Chen
-P94-1033 | A Corpus-based Approach to Automatic Compound Extraction | http://www.aclweb.org/anthology/P/P94/P94-1033.pdf | author:Keh-Yih Su; Ming-Wen Wu; Jing-Shin Chang
-P94-1034 | An Automatic Treebank Conversion Algorithm for Corpus Sharing | http://www.aclweb.org/anthology/P/P94/P94-1034.pdf | author:Jong-Nae Wang; Jing-Shin Chang; Keh-Yih Su
-P94-1035 | An Attributive Logic of Set Descriptions and Set Operations | http://www.aclweb.org/anthology/P/P94/P94-1035.pdf | author:Suresh Manandhar
-P94-1036 | Multiset-Valued Linear Index Grammars: Imposing Dominance Constraints on Derivations | http://www.aclweb.org/anthology/P/P94/P94-1036.pdf | author:Owen Rambow
-P94-1037 | Optimality Theory: Universal Grammar, Learning and Parsing Algorithms, and Connectionist Foundations (Abstract) | http://www.aclweb.org/anthology/P/P94/P94-1037.pdf | author:Paul Smolensky; Bruce Tesar
-P94-1038 | Similarity-Based Estimation of Word Cooccurrence Probabilities | http://www.aclweb.org/anthology/P/P94/P94-1038.pdf | author:Ido Dagan; Fernando Pereira; Lillian Lee
-P94-1039 | Acquiring Receptive Morphology: A Connectionist Model | http://www.aclweb.org/anthology/P/P94/P94-1039.pdf | author:Michael Gasser
-P94-1040 | RELATING COMPLEXITY TO PRACTICAL PERFORMANCE IN PARSING WITH WIDE-COVERAGE UNIFICATION GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1040.pdf | author:John Carroll
-P94-1041 | Detecting and Correcting Speech Repairs | http://www.aclweb.org/anthology/P/P94/P94-1041.pdf | author:Peter Heeman; James Allen
-P94-1042 | A COMPUTATIONAL VIEW OF THE COGNITIVE SEMANTICS OF SPATIAL PREPOSITIONS | http://www.aclweb.org/anthology/P/P94/P94-1042.pdf | author:Patrick Olivier; Jun-ichi Tsujii
-P94-1043 | REAPING THE BENEFITS OF INTERACTIVE SYNTAX AND SEMANTICS | http://www.aclweb.org/anthology/P/P94/P94-1043.pdf | author:Kavi Mahesh
-P94-1044 | GRADED UNIFICATION: A FRAMEWORK FOR INTERACTIVE PROCESSING | http://www.aclweb.org/anthology/P/P94/P94-1044.pdf | author:Albert Kim
-P94-1045 | AN INTEGRATED HEURISTIC SCHEME FOR PARTIAL PARSE EVALUATION | http://www.aclweb.org/anthology/P/P94/P94-1045.pdf | author:Alon Lavie
-P94-1046 | TEMPORAL RELATIONS: REFERENCE OR DISCOURSE COHERENCE? | http://www.aclweb.org/anthology/P/P94/P94-1046.pdf | author:Andrew Kehler
-P94-1047 | SIMULATING CHILDREN'S NULL SUBJECTS: AN EARLY LANGUAGE GENERATION MODEL | http://www.aclweb.org/anthology/P/P94/P94-1047.pdf | author:Carole T. Boster
-P94-1048 | DUAL-CODING THEORY AND CONNECTIONIST LEXICAL SELECTION | http://www.aclweb.org/anthology/P/P94/P94-1048.pdf | author:Ye-Yi Wang
-P94-1049 | Integration Of Visual Inter-word Constraints And Linguistic Knowledge In Degraded Text Recognition | http://www.aclweb.org/anthology/P/P94/P94-1049.pdf | author:Tao Hong
-P94-1050 | AN AUTOMATIC METHOD OF FINDING TOPIC BOUNDARIES | http://www.aclweb.org/anthology/P/P94/P94-1050.pdf | author:Jeffrey C. Reynar
-P94-1051 | AUTOMATIC ALIGNMENT IN PARALLEL CORPORA | http://www.aclweb.org/anthology/P/P94/P94-1051.pdf | author:Harris Papageorgiou; Lambros Cranias; Stelios Piperidis
-P94-1052 | CONCEPTUAL ASSOCIATION FOR COMPOUND NOUN ANALYSIS | http://www.aclweb.org/anthology/P/P94/P94-1052.pdf | author:Mark Lauer
+P94-1001 | Discourse Obligations in Dialogue Processing | http://www.aclweb.org/anthology/P/P94/P94-1001.pdf | category:paper author:David R. Traum; James F. Allen
+P94-1002 | MULTI-PARAGRAPH SEGMENTATION EXPOSITORY TEXT | http://www.aclweb.org/anthology/P/P94/P94-1002.pdf | category:paper author:Marti A. Hearst
+P94-1003 | PRIORITY UNION AND GENERALIZATION IN DISCOURSE GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1003.pdf | category:paper author:Claire Grover; Chris Brew; Suresh Manandhar; Marc Moens
+P94-1004 | HIDDEN UNDERSTANDING MODELS OF NATURAL LANGUAGE | http://www.aclweb.org/anthology/P/P94/P94-1004.pdf | category:paper author:Scott Miller; Robert Bobrow; Robert Ingria; Richard Schwartz
+P94-1005 | From Strings to Trees to Strings to Trees (Abstract) | http://www.aclweb.org/anthology/P/P94/P94-1005.pdf | category:paper author:Aravind K. Joshi
+P94-1006 | INTENTIONS AND INFORMATION IN DISCOURSE | http://www.aclweb.org/anthology/P/P94/P94-1006.pdf | category:paper author:Nicholas Asher; Alex Lascarides
+P94-1007 | GENERATING PRECONDITION EXPRESSIONS IN INSTRUCTIONAL TEXT | http://www.aclweb.org/anthology/P/P94/P94-1007.pdf | category:paper author:Keith Vander Linden
+P94-1008 | COMMON TOPICS AND COHERENT SITUATIONS: INTERPRETING ELLIPSIS IN THE CONTEXT OF DISCOURSE INFERENCE | http://www.aclweb.org/anthology/P/P94/P94-1008.pdf | category:paper author:Andrew Kehler
+P94-1009 | A HYBRID REASONING MODEL FOR INDIRECT ANSWERS | http://www.aclweb.org/anthology/P/P94/P94-1009.pdf | category:paper author:Nancy Green; Sandra Carberry
+P94-1010 | A STOCHASTIC FINITE-STATE WORD-SEGMENTATION ALGORITHM FOR CHINESE | http://www.aclweb.org/anthology/P/P94/P94-1010.pdf | category:paper author:Richard Sproat; Chilin Shih; William Gale; Nancy Chang
+P94-1011 | PRECISE N-GRAM PROBABILITIES FROM STOCHASTIC CONTEXT-FREE GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1011.pdf | category:paper author:Andreas Stolcke; Jonathan Segal
+P94-1012 | ALIGNING A PARALLEL ENGLISH-CHINESE CORPUS STATISTICALLY WITH LEXICAL CRITERIA | http://www.aclweb.org/anthology/P/P94/P94-1012.pdf | category:paper author:Dekai Wu
+P94-1013 | DECISION LISTS FOR LEXICAL AMBIGUITY RESOLUTION: Application to Accent Restoration in Spanish and French | http://www.aclweb.org/anthology/P/P94/P94-1013.pdf | category:paper author:David Yarowsky
+P94-1014 | AN EMPIRICAL MODEL OF ACKNOWLEDGMENT FOR SPOKEN-LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/P/P94/P94-1014.pdf | category:paper author:David G. Novick; Stephen Sutton
+P94-1015 | SPEECH DIALOGUE WITH FACIAL DISPLAYS: MULTIMODAL HUMAN-COMPUTER CONVERSATION | http://www.aclweb.org/anthology/P/P94/P94-1015.pdf | category:paper author:Katashi Nagao; Akikazu Takeuchi
+P94-1016 | INTERLEAVING SYNTAX AND SEMANTICS IN AN EFFICIENT BOTTOM-UP PARSER | http://www.aclweb.org/anthology/P/P94/P94-1016.pdf | category:paper author:John Dowding; Robert Moore; Francois Andryt; Douglas Moran
+P94-1017 | AN OPTIMAL TABULAR PARSING ALGORITHM | http://www.aclweb.org/anthology/P/P94/P94-1017.pdf | category:paper author:Mark-Jan Nederhof
+P94-1018 | A Psycholinguistically Motivated Parser for CCG | http://www.aclweb.org/anthology/P/P94/P94-1018.pdf | category:paper author:Michael Niv
+P94-1019 | VERB SEMANTICS AND LEXICAL SELECTION | http://www.aclweb.org/anthology/P/P94/P94-1019.pdf | category:paper author:Zhibiao Wu; Martha Palmer
+P94-1020 | Word-Sense Disambiguation Using Decomposable Models | http://www.aclweb.org/anthology/P/P94/P94-1020.pdf | category:paper author:Rebecca Bruce; Janyce Wiebe
+P94-1021 | Constraint-Based Categorial Grammar | http://www.aclweb.org/anthology/P/P94/P94-1021.pdf | category:paper author:Gosse Bouma; Gertjan van Noord
+P94-1022 | Capturing CFLs with Tree Adjoining Grammars | http://www.aclweb.org/anthology/P/P94/P94-1022.pdf | category:paper author:James Rogers
+P94-1023 | ON DETERMINING THE CONSISTENCY OF PARTIAL DESCRIPTIONS OF TREES | http://www.aclweb.org/anthology/P/P94/P94-1023.pdf | category:paper author:Thomas L. Cornell
+P94-1024 | A MARKOV LANGUAGE LEARNING MODEL FOR FINITE PARAMETER SPACES | http://www.aclweb.org/anthology/P/P94/P94-1024.pdf | category:paper author:Partha Niyogi; Robert C. Berwick
+P94-1025 | PART-OF-SPEECH TAGGING USING A VARIABLE MEMORY MARKOV MODEL | http://www.aclweb.org/anthology/P/P94/P94-1025.pdf | category:paper author:Hinrich Schuetze; Yoram Singer
+P94-1026 | GRAMMAR SPECIALIZATION THROUGH ENTROPY THRESHOLDS | http://www.aclweb.org/anthology/P/P94/P94-1026.pdf | category:paper author:Christer Samuelsson
+P94-1027 | OPTIMIZING THE COMPUTATIONAL LEXICALIZATION OF LARGE GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1027.pdf | category:paper author:Christian JACQUEMIN
+P94-1028 | COMPACT REPRESENTATIONS BY FINITE-STATE TRANSDUCERS | http://www.aclweb.org/anthology/P/P94/P94-1028.pdf | category:paper author:Mehryar Mohri
+P94-1029 | AN EXTENDED THEORY OF HEAD-DRIVEN PARSING | http://www.aclweb.org/anthology/P/P94/P94-1029.pdf | category:paper author:Mark-Jan Nederhof; Giorgio Satta
+P94-1030 | GENERALIZED CHART ALGORITHM: AN EFFICIENT PROCEDURE FOR COST-BASED ABDUCTION | http://www.aclweb.org/anthology/P/P94/P94-1030.pdf | category:paper author:Yasuharu Den
+P94-1031 | Tricolor DAGs for Machine Translation | http://www.aclweb.org/anthology/P/P94/P94-1031.pdf | category:paper author:Koichi Takeda
+P94-1032 | Extracting Noun Phrases from Large-Scale Texts: A Hybrid Approach and Its Automatic Evaluation | http://www.aclweb.org/anthology/P/P94/P94-1032.pdf | category:paper author:Kuang-hua Chen; Hsin-Hsi Chen
+P94-1033 | A Corpus-based Approach to Automatic Compound Extraction | http://www.aclweb.org/anthology/P/P94/P94-1033.pdf | category:paper author:Keh-Yih Su; Ming-Wen Wu; Jing-Shin Chang
+P94-1034 | An Automatic Treebank Conversion Algorithm for Corpus Sharing | http://www.aclweb.org/anthology/P/P94/P94-1034.pdf | category:paper author:Jong-Nae Wang; Jing-Shin Chang; Keh-Yih Su
+P94-1035 | An Attributive Logic of Set Descriptions and Set Operations | http://www.aclweb.org/anthology/P/P94/P94-1035.pdf | category:paper author:Suresh Manandhar
+P94-1036 | Multiset-Valued Linear Index Grammars: Imposing Dominance Constraints on Derivations | http://www.aclweb.org/anthology/P/P94/P94-1036.pdf | category:paper author:Owen Rambow
+P94-1037 | Optimality Theory: Universal Grammar, Learning and Parsing Algorithms, and Connectionist Foundations (Abstract) | http://www.aclweb.org/anthology/P/P94/P94-1037.pdf | category:paper author:Paul Smolensky; Bruce Tesar
+P94-1038 | Similarity-Based Estimation of Word Cooccurrence Probabilities | http://www.aclweb.org/anthology/P/P94/P94-1038.pdf | category:paper author:Ido Dagan; Fernando Pereira; Lillian Lee
+P94-1039 | Acquiring Receptive Morphology: A Connectionist Model | http://www.aclweb.org/anthology/P/P94/P94-1039.pdf | category:paper author:Michael Gasser
+P94-1040 | RELATING COMPLEXITY TO PRACTICAL PERFORMANCE IN PARSING WITH WIDE-COVERAGE UNIFICATION GRAMMARS | http://www.aclweb.org/anthology/P/P94/P94-1040.pdf | category:paper author:John Carroll
+P94-1041 | Detecting and Correcting Speech Repairs | http://www.aclweb.org/anthology/P/P94/P94-1041.pdf | category:paper author:Peter Heeman; James Allen
+P94-1042 | A COMPUTATIONAL VIEW OF THE COGNITIVE SEMANTICS OF SPATIAL PREPOSITIONS | http://www.aclweb.org/anthology/P/P94/P94-1042.pdf | category:paper author:Patrick Olivier; Jun-ichi Tsujii
+P94-1043 | REAPING THE BENEFITS OF INTERACTIVE SYNTAX AND SEMANTICS | http://www.aclweb.org/anthology/P/P94/P94-1043.pdf | category:paper author:Kavi Mahesh
+P94-1044 | GRADED UNIFICATION: A FRAMEWORK FOR INTERACTIVE PROCESSING | http://www.aclweb.org/anthology/P/P94/P94-1044.pdf | category:paper author:Albert Kim
+P94-1045 | AN INTEGRATED HEURISTIC SCHEME FOR PARTIAL PARSE EVALUATION | http://www.aclweb.org/anthology/P/P94/P94-1045.pdf | category:paper author:Alon Lavie
+P94-1046 | TEMPORAL RELATIONS: REFERENCE OR DISCOURSE COHERENCE? | http://www.aclweb.org/anthology/P/P94/P94-1046.pdf | category:paper author:Andrew Kehler
+P94-1047 | SIMULATING CHILDREN'S NULL SUBJECTS: AN EARLY LANGUAGE GENERATION MODEL | http://www.aclweb.org/anthology/P/P94/P94-1047.pdf | category:paper author:Carole T. Boster
+P94-1048 | DUAL-CODING THEORY AND CONNECTIONIST LEXICAL SELECTION | http://www.aclweb.org/anthology/P/P94/P94-1048.pdf | category:paper author:Ye-Yi Wang
+P94-1049 | Integration Of Visual Inter-word Constraints And Linguistic Knowledge In Degraded Text Recognition | http://www.aclweb.org/anthology/P/P94/P94-1049.pdf | category:paper author:Tao Hong
+P94-1050 | AN AUTOMATIC METHOD OF FINDING TOPIC BOUNDARIES | http://www.aclweb.org/anthology/P/P94/P94-1050.pdf | category:paper author:Jeffrey C. Reynar
+P94-1051 | AUTOMATIC ALIGNMENT IN PARALLEL CORPORA | http://www.aclweb.org/anthology/P/P94/P94-1051.pdf | category:paper author:Harris Papageorgiou; Lambros Cranias; Stelios Piperidis
+P94-1052 | CONCEPTUAL ASSOCIATION FOR COMPOUND NOUN ANALYSIS | http://www.aclweb.org/anthology/P/P94/P94-1052.pdf | category:paper author:Mark Lauer

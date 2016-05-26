@@ -1,40 +1,40 @@
-RSS-IV-1 | Bridging the Gap of Abstraction for Probabilistic Decision Making on a Multi-Modal Service Robot | http://www.roboticsproceedings.org/rss04/p14.pdf | author:Sven Schmidt-Rohr, Steffen Knoop, Martin Lösch, Rüdiger Dillmann
-RSS-IV-2 | Clustering Sensor Data for Terrain Identification using a Windowless Algorithm | http://www.roboticsproceedings.org/rss04/p4.pdf | author:Philippe Giguere, Gregory Dudek
-RSS-IV-3 | A Numerically Robust LCP Solver for Simulating Articulated Rigid Bodies in Contact | http://www.roboticsproceedings.org/rss04/p12.pdf | author:Katsu Yamane, Yoshihiko Nakamura
-RSS-IV-4 | Using Recognition to Guide a Robot's Attention | http://www.roboticsproceedings.org/rss04/p32.pdf | author:Alexander Thomas, Vittorio Ferrari, Bastian Leibe, Tinne Tuytelaars, Luc Van Gool
-RSS-IV-5 | Simplex-Tree Based Kinematics of Foldable Objects as Multi-body Systems Involving Loops | http://www.roboticsproceedings.org/rss04/p25.pdf | author:Li Han, Lee Rudolph
-RSS-IV-6 | Gas Distribution Modeling using Sparse Gaussian Process Mixture Models | http://www.roboticsproceedings.org/rss04/p40.pdf | author:Cyrill Stachniss, Christian Plagemann, Achim Lilienthal, Wolfram Burgard
-RSS-IV-7 | Prior Data and Kernel Conditional Random Fields for Obstacle Detection | http://www.roboticsproceedings.org/rss04/p8.pdf | author:Carlos Vallespi-Gonzalez, Tony Stentz
-RSS-IV-8 | NanoNewton Force Sensing and Control in Microrobotic Cell Manipulation | http://www.roboticsproceedings.org/rss04/p39.pdf | author:Xinyu  Liu, Keekyoung  Kim, Yong  Zhang, Yu  Sun
-RSS-IV-9 | Target Enumeration via Integration over Planar Sensor Networks | http://www.roboticsproceedings.org/rss04/p31.pdf | author:Robert  Ghrist, Yuliy  Baryshnikov
-RSS-IV-10 | A Local Collision Avoidance Method for Non-strictly Convex Polyhedra | http://www.roboticsproceedings.org/rss04/p20.pdf | author:Fumio  Kanehiro, Florent  Lamiraux, Oussama  Kanoun, Eiichi  Yoshida, Jean-Paul  Laumond
-RSS-IV-11 | Friction-Induced Velocity Fields for Point Parts Sliding on a Rigid Oscillated Plate | http://www.roboticsproceedings.org/rss04/p29.pdf | author:Thomas  Vose, Paul Umbanhowar, Kevin  Lynch
-RSS-IV-12 | Detection of Principle Directions in Unknown Environments for Autonomous Navigation | http://www.roboticsproceedings.org/rss04/p10.pdf | author:Dmitri Dolgov, Sebastian  Thrun
-RSS-IV-13 | Approximation Schemes for Two-Player Pursuit Evasion Games with Visibility Constraints | http://www.roboticsproceedings.org/rss04/p11.pdf | author:Sourabh  Bhattacharya, Seth  Hutchinson
-RSS-IV-14 | Improving Localization Robustness in Monocular SLAM Using a High-Speed Camera | http://www.roboticsproceedings.org/rss04/p24.pdf | author:Peter Gemeiner, Andrew Davison, Markus Vincze
-RSS-IV-15 | Adaptive Body Scheme Models for Robust Robotic Manipulation | http://www.roboticsproceedings.org/rss04/p15.pdf | author:Juergen Sturm, Christian Plagemann, Wolfram Burgard
-RSS-IV-16 | Learning to Manipulate Articulated Objects in Unstructured Environments Using a Grounded Relational Representation | http://www.roboticsproceedings.org/rss04/p33.pdf | author:Dov Katz, Yuri Pyuro, Oliver Brock
-RSS-IV-17 | BiSpace Planning: Concurrent Multi-Space Exploration | http://www.roboticsproceedings.org/rss04/p21.pdf | author:Rosen Diankov, Nathan Ratliff, Dave Ferguson, Siddhartha Srinivasa, James Kuffner
-RSS-IV-18 | Classifying Dynamic Objects: An Unsupervised Learning Approach | http://www.roboticsproceedings.org/rss04/p35.pdf | author:Matthias Luber, Kai Arras, Christian Plagemann, Wolfram Burgard
-RSS-IV-19 | fMRI-Compatible Robotic Interfaces with Fluidic Actuation | http://www.roboticsproceedings.org/rss04/p26.pdf | author:Ningbo Yu, Christoph Hollnagel, Armin Blickenstorfer, Spyros Kollias, Robert Riener
-RSS-IV-20 | SARSOP: Efficient Point-Based POMDP Planning by Approximating Optimally Reachable Belief Spaces | http://www.roboticsproceedings.org/rss04/p9.pdf | author:Hanna Kurniawati, David Hsu, Wee Sun Lee
-RSS-IV-21 | Hybrid Motion Planning Using Minkowski Sums | http://www.roboticsproceedings.org/rss04/p13.pdf | author:Jyh-Ming Lien
-RSS-IV-22 | Multi-Sensor Lane Finding in Urban Road Networks | http://www.roboticsproceedings.org/rss04/p1.pdf | author:Albert Huang, David Moore, Matthew Antone, Edwin Olson, Seth Teller
-RSS-IV-23 | Proofs and Experiments in Scalable, Near-Optimal Search by Multiple Robots | http://www.roboticsproceedings.org/rss04/p27.pdf | author:Geoffrey Hollinger, Sanjiv Singh
-RSS-IV-24 | Dynamic Modeling of Stick Slip Motion in an Untethered Magnetic Micro-Robot | http://www.roboticsproceedings.org/rss04/p37.pdf | author:Steven Floyd, Chytra Pawashe, Metin Sitti
-RSS-IV-25 | Stochastic Recruitment: A Limited-Feedback Control Policy for Large Ensemble Systems | http://www.roboticsproceedings.org/rss04/p7.pdf | author:Lael Odhner, Harry Asada
-RSS-IV-26 | Bearing-Only Control Laws For Balanced Circular Formations of Ground Robots | http://www.roboticsproceedings.org/rss04/p16.pdf | author:Nima Moshtagh, Nathan Michael, Ali Jadbabaie, Kostas Daniilidis
-RSS-IV-27 | Probabilistic Models of Object Geometry for Grasp Planning | http://www.roboticsproceedings.org/rss04/p36.pdf | author:Jared Glover, Daniela Rus, Nicholas Roy
-RSS-IV-28 | High Performance Outdoor Navigation from Overhead Data using Imitation Learning | http://www.roboticsproceedings.org/rss04/p34.pdf | author:David Silver, James Bagnell, Anthony Stentz
-RSS-IV-29 | HyPE: Hybrid Particle-Element Approach for Recursive Bayesian Searching and Tracking | http://www.roboticsproceedings.org/rss04/p18.pdf | author:Benjamin Lavis, Tomonari Furukawa, 
-RSS-IV-30 | Abstractions and Algorithms for Cooperative Multiple Robot Planar Manipulation | http://www.roboticsproceedings.org/rss04/p19.pdf | author:Peng Cheng, Jonathan Fink, Vijay Kumar
-RSS-IV-31 | Structural Improvement Filtering Strategy for PRM | http://www.roboticsproceedings.org/rss04/p22.pdf | author:Roger Pearce, Marco Morales, Nancy Amato
-RSS-IV-32 | Controlling Shapes of Ensembles of Robots of Finite Size with Nonholonomic Constraints | http://www.roboticsproceedings.org/rss04/p6.pdf | author:Nathan Michael, Vijay Kumar
-RSS-IV-33 | Metastable Walking on Stochastically Rough Terrain | http://www.roboticsproceedings.org/rss04/p30.pdf | author:Katie Byl, Russ Tedrake
-RSS-IV-34 | Planning Long Dynamically-Feasible Maneuvers For Autonomous Vehicles | http://www.roboticsproceedings.org/rss04/p28.pdf | author:Maxim Likhachev, Dave Ferguson
-RSS-IV-35 | Fast Probabilistic Labeling of City Maps | http://www.roboticsproceedings.org/rss04/p3.pdf | author:Ingmar Posner, Mark Cummins, Paul Newman
-RSS-IV-36 | Laser and Vision Based Outdoor Object Mapping | http://www.roboticsproceedings.org/rss04/p2.pdf | author:Bertrand Douillard, Dieter Fox, Fabio Ramos
-RSS-IV-37 | Model Based Vehicle Tracking for Autonomous Driving in Urban Environments | http://www.roboticsproceedings.org/rss04/p23.pdf | author:Anna Petrovskaya, Sebastian Thrun
-RSS-IV-38 | CPG-based Control of a Turtle-like Underwater Vehicle | http://www.roboticsproceedings.org/rss04/p17.pdf | author:Keehong Seo, Soon-Jo Chung, Jean-Jacques Slotine
-RSS-IV-39 | Distributed Localization of Modular Robot Ensembles | http://www.roboticsproceedings.org/rss04/p5.pdf | author:Funiak Stanislav, Padmanabhan  Pillai, Michael Ashley-Rollman, Jason Campbell, Seth Goldstein
-RSS-IV-40 | Super-Flexible Skin Sensors Embedded on the Whole Body, Self-Organizing Based on Haptic Interactions | http://www.roboticsproceedings.org/rss04/p38.pdf | author:Tomoyuki Noda, Takahiro Miyashita, Hiroshi Ishiguro, Norihiro Hagita
+RSS-IV-1 | Bridging the Gap of Abstraction for Probabilistic Decision Making on a Multi-Modal Service Robot | http://www.roboticsproceedings.org/rss04/p14.pdf | category:paper author:Sven Schmidt-Rohr, Steffen Knoop, Martin Lösch, Rüdiger Dillmann
+RSS-IV-2 | Clustering Sensor Data for Terrain Identification using a Windowless Algorithm | http://www.roboticsproceedings.org/rss04/p4.pdf | category:paper author:Philippe Giguere, Gregory Dudek
+RSS-IV-3 | A Numerically Robust LCP Solver for Simulating Articulated Rigid Bodies in Contact | http://www.roboticsproceedings.org/rss04/p12.pdf | category:paper author:Katsu Yamane, Yoshihiko Nakamura
+RSS-IV-4 | Using Recognition to Guide a Robot's Attention | http://www.roboticsproceedings.org/rss04/p32.pdf | category:paper author:Alexander Thomas, Vittorio Ferrari, Bastian Leibe, Tinne Tuytelaars, Luc Van Gool
+RSS-IV-5 | Simplex-Tree Based Kinematics of Foldable Objects as Multi-body Systems Involving Loops | http://www.roboticsproceedings.org/rss04/p25.pdf | category:paper author:Li Han, Lee Rudolph
+RSS-IV-6 | Gas Distribution Modeling using Sparse Gaussian Process Mixture Models | http://www.roboticsproceedings.org/rss04/p40.pdf | category:paper author:Cyrill Stachniss, Christian Plagemann, Achim Lilienthal, Wolfram Burgard
+RSS-IV-7 | Prior Data and Kernel Conditional Random Fields for Obstacle Detection | http://www.roboticsproceedings.org/rss04/p8.pdf | category:paper author:Carlos Vallespi-Gonzalez, Tony Stentz
+RSS-IV-8 | NanoNewton Force Sensing and Control in Microrobotic Cell Manipulation | http://www.roboticsproceedings.org/rss04/p39.pdf | category:paper author:Xinyu  Liu, Keekyoung  Kim, Yong  Zhang, Yu  Sun
+RSS-IV-9 | Target Enumeration via Integration over Planar Sensor Networks | http://www.roboticsproceedings.org/rss04/p31.pdf | category:paper author:Robert  Ghrist, Yuliy  Baryshnikov
+RSS-IV-10 | A Local Collision Avoidance Method for Non-strictly Convex Polyhedra | http://www.roboticsproceedings.org/rss04/p20.pdf | category:paper author:Fumio  Kanehiro, Florent  Lamiraux, Oussama  Kanoun, Eiichi  Yoshida, Jean-Paul  Laumond
+RSS-IV-11 | Friction-Induced Velocity Fields for Point Parts Sliding on a Rigid Oscillated Plate | http://www.roboticsproceedings.org/rss04/p29.pdf | category:paper author:Thomas  Vose, Paul Umbanhowar, Kevin  Lynch
+RSS-IV-12 | Detection of Principle Directions in Unknown Environments for Autonomous Navigation | http://www.roboticsproceedings.org/rss04/p10.pdf | category:paper author:Dmitri Dolgov, Sebastian  Thrun
+RSS-IV-13 | Approximation Schemes for Two-Player Pursuit Evasion Games with Visibility Constraints | http://www.roboticsproceedings.org/rss04/p11.pdf | category:paper author:Sourabh  Bhattacharya, Seth  Hutchinson
+RSS-IV-14 | Improving Localization Robustness in Monocular SLAM Using a High-Speed Camera | http://www.roboticsproceedings.org/rss04/p24.pdf | category:paper author:Peter Gemeiner, Andrew Davison, Markus Vincze
+RSS-IV-15 | Adaptive Body Scheme Models for Robust Robotic Manipulation | http://www.roboticsproceedings.org/rss04/p15.pdf | category:paper author:Juergen Sturm, Christian Plagemann, Wolfram Burgard
+RSS-IV-16 | Learning to Manipulate Articulated Objects in Unstructured Environments Using a Grounded Relational Representation | http://www.roboticsproceedings.org/rss04/p33.pdf | category:paper author:Dov Katz, Yuri Pyuro, Oliver Brock
+RSS-IV-17 | BiSpace Planning: Concurrent Multi-Space Exploration | http://www.roboticsproceedings.org/rss04/p21.pdf | category:paper author:Rosen Diankov, Nathan Ratliff, Dave Ferguson, Siddhartha Srinivasa, James Kuffner
+RSS-IV-18 | Classifying Dynamic Objects: An Unsupervised Learning Approach | http://www.roboticsproceedings.org/rss04/p35.pdf | category:paper author:Matthias Luber, Kai Arras, Christian Plagemann, Wolfram Burgard
+RSS-IV-19 | fMRI-Compatible Robotic Interfaces with Fluidic Actuation | http://www.roboticsproceedings.org/rss04/p26.pdf | category:paper author:Ningbo Yu, Christoph Hollnagel, Armin Blickenstorfer, Spyros Kollias, Robert Riener
+RSS-IV-20 | SARSOP: Efficient Point-Based POMDP Planning by Approximating Optimally Reachable Belief Spaces | http://www.roboticsproceedings.org/rss04/p9.pdf | category:paper author:Hanna Kurniawati, David Hsu, Wee Sun Lee
+RSS-IV-21 | Hybrid Motion Planning Using Minkowski Sums | http://www.roboticsproceedings.org/rss04/p13.pdf | category:paper author:Jyh-Ming Lien
+RSS-IV-22 | Multi-Sensor Lane Finding in Urban Road Networks | http://www.roboticsproceedings.org/rss04/p1.pdf | category:paper author:Albert Huang, David Moore, Matthew Antone, Edwin Olson, Seth Teller
+RSS-IV-23 | Proofs and Experiments in Scalable, Near-Optimal Search by Multiple Robots | http://www.roboticsproceedings.org/rss04/p27.pdf | category:paper author:Geoffrey Hollinger, Sanjiv Singh
+RSS-IV-24 | Dynamic Modeling of Stick Slip Motion in an Untethered Magnetic Micro-Robot | http://www.roboticsproceedings.org/rss04/p37.pdf | category:paper author:Steven Floyd, Chytra Pawashe, Metin Sitti
+RSS-IV-25 | Stochastic Recruitment: A Limited-Feedback Control Policy for Large Ensemble Systems | http://www.roboticsproceedings.org/rss04/p7.pdf | category:paper author:Lael Odhner, Harry Asada
+RSS-IV-26 | Bearing-Only Control Laws For Balanced Circular Formations of Ground Robots | http://www.roboticsproceedings.org/rss04/p16.pdf | category:paper author:Nima Moshtagh, Nathan Michael, Ali Jadbabaie, Kostas Daniilidis
+RSS-IV-27 | Probabilistic Models of Object Geometry for Grasp Planning | http://www.roboticsproceedings.org/rss04/p36.pdf | category:paper author:Jared Glover, Daniela Rus, Nicholas Roy
+RSS-IV-28 | High Performance Outdoor Navigation from Overhead Data using Imitation Learning | http://www.roboticsproceedings.org/rss04/p34.pdf | category:paper author:David Silver, James Bagnell, Anthony Stentz
+RSS-IV-29 | HyPE: Hybrid Particle-Element Approach for Recursive Bayesian Searching and Tracking | http://www.roboticsproceedings.org/rss04/p18.pdf | category:paper author:Benjamin Lavis, Tomonari Furukawa, 
+RSS-IV-30 | Abstractions and Algorithms for Cooperative Multiple Robot Planar Manipulation | http://www.roboticsproceedings.org/rss04/p19.pdf | category:paper author:Peng Cheng, Jonathan Fink, Vijay Kumar
+RSS-IV-31 | Structural Improvement Filtering Strategy for PRM | http://www.roboticsproceedings.org/rss04/p22.pdf | category:paper author:Roger Pearce, Marco Morales, Nancy Amato
+RSS-IV-32 | Controlling Shapes of Ensembles of Robots of Finite Size with Nonholonomic Constraints | http://www.roboticsproceedings.org/rss04/p6.pdf | category:paper author:Nathan Michael, Vijay Kumar
+RSS-IV-33 | Metastable Walking on Stochastically Rough Terrain | http://www.roboticsproceedings.org/rss04/p30.pdf | category:paper author:Katie Byl, Russ Tedrake
+RSS-IV-34 | Planning Long Dynamically-Feasible Maneuvers For Autonomous Vehicles | http://www.roboticsproceedings.org/rss04/p28.pdf | category:paper author:Maxim Likhachev, Dave Ferguson
+RSS-IV-35 | Fast Probabilistic Labeling of City Maps | http://www.roboticsproceedings.org/rss04/p3.pdf | category:paper author:Ingmar Posner, Mark Cummins, Paul Newman
+RSS-IV-36 | Laser and Vision Based Outdoor Object Mapping | http://www.roboticsproceedings.org/rss04/p2.pdf | category:paper author:Bertrand Douillard, Dieter Fox, Fabio Ramos
+RSS-IV-37 | Model Based Vehicle Tracking for Autonomous Driving in Urban Environments | http://www.roboticsproceedings.org/rss04/p23.pdf | category:paper author:Anna Petrovskaya, Sebastian Thrun
+RSS-IV-38 | CPG-based Control of a Turtle-like Underwater Vehicle | http://www.roboticsproceedings.org/rss04/p17.pdf | category:paper author:Keehong Seo, Soon-Jo Chung, Jean-Jacques Slotine
+RSS-IV-39 | Distributed Localization of Modular Robot Ensembles | http://www.roboticsproceedings.org/rss04/p5.pdf | category:paper author:Funiak Stanislav, Padmanabhan  Pillai, Michael Ashley-Rollman, Jason Campbell, Seth Goldstein
+RSS-IV-40 | Super-Flexible Skin Sensors Embedded on the Whole Body, Self-Organizing Based on Haptic Interactions | http://www.roboticsproceedings.org/rss04/p38.pdf | category:paper author:Tomoyuki Noda, Takahiro Miyashita, Hiroshi Ishiguro, Norihiro Hagita

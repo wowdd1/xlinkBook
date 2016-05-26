@@ -1,212 +1,212 @@
-C94-1001 | IMPROVEMENT IN CUSTOMIZABILITY USING TRANSLATION TEMPLATES | http://www.aclweb.org/anthology/C/C94/C94-1001.pdf | author:Satoshi Kinoshita; Akira Kumano; Hideki Hirakawa
-C94-1002 | Countability and Number in Japanese to English Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1002.pdf | author:Francis Bond; Kentaro Ogura; Satoru Ikehara
-C94-1003 | A Method for Distinguishing Exceptional and General Examples in Example-based Transfer Systems | http://www.aclweb.org/anthology/C/C94/C94-1003.pdf | author:Hideo Watanabe
-C94-1004 | INTERPRETING COMPOUNDS FOR MACHINE TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-1004.pdf | author:Barbara Gawronska; Anders Nordner; Christer Johansson; Caroline Willners
-C94-1005 | Towards Machine Translation Using Contextual Information | http://www.aclweb.org/anthology/C/C94/C94-1005.pdf | author:Tim Cornish; Kiimikazu Fujita; Ryochi Sugimura
-C94-1006 | Two Methods for Learning ALT-J/E Translation Rules from Examples and a Semantic Hierarchy | http://www.aclweb.org/anthology/C/C94/C94-1006.pdf | author:Ilussein Allmuallim; Yasuhiro Akiba; Takefumi Yamazaki; Akio Yokoo; Shigeo Kaneda
-C94-1007 | A BIDIRECTIONAL, TRANSFER-DRIVEN MACHINE TRANSLATION SYSTEM FOR SPOKEN DIALOGUES | http://www.aclweb.org/anthology/C/C94/C94-1007.pdf | author:Yasuhiro Sobashima; Osamu Furuse; Susumu Akamine; Jun Kawai; Hitoshi Iida
-C94-1008 | Treating 'Free Word Order' in Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1008.pdf | author:Ralf Steinberger
-C94-1009 | BUILDING AN MT DICTIONARY FROM PARALLEL TEXTS BASED ON LINGUISTIC AND STATISTICAL INFORMATION | http://www.aclweb.org/anthology/C/C94/C94-1009.pdf | author:Akira Kumano; Hideki Hirakawa
-C94-1010 | DILEMMA - AN INSTANT LEXICOGRAPIIER | http://www.aclweb.org/anthology/C/C94/C94-1010.pdf | author:Hans Karlgren; Jussi Karlgren; Magnus Nordstrom; Paul Pettersson; Bengt Wahrolen
-C94-1011 | Portable Knowledge Sources for Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1011.pdf | author:Koichi Takeda
-C94-1012 | Coping With Ambiguity in a Large-Scale Machine Translation System | http://www.aclweb.org/anthology/C/C94/C94-1012.pdf | author:Kathryn L. Baker; Alexander M. Franz; Pamela W. Jordan; Teruko Mitamura; Eric H. Nyberg
-C94-1013 | Evaluation Metrics for Knowledge-Based Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1013.pdf | author:Eric H. Nyberg, 3rd; Teruko Mitamura; Jaime G. Carbonell
-C94-1014 | A MATCHING TECHNIQUE IN EXAMPLE-BASED MACHINE TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-1014.pdf | author:Lambros Cranias; Harris Papageorgiou; Stelios Piperdis
-C94-1015 | Constituent Boundary Parsing for Example-Based Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1015.pdf | author:Osamu Furuse; Hitoshi Iida
-C94-1016 | THE JaRAP EXPERIMENTAL SYSTEM OF JAPANESE-RUSSIAN AUTOMATIC TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-1016.pdf | author:Larisa S. Modina; Zoya M. Shalyapina
-C94-1017 | Perspectives of DBMT for monolingual authors on the basis of LIDIA-1, an implemented mock-up | http://www.aclweb.org/anthology/C/C94/C94-1017.pdf | author:Herve Blanchon
-C94-1018 | MODALS AS A PROBLEM FOR MT | http://www.aclweb.org/anthology/C/C94/C94-1018.pdf | author:Bengt Sigurd; Barbara Gawronska
-C94-1019 | Two Types of Adaptive MT Environments | http://www.aclweb.org/anthology/C/C94/C94-1019.pdf | author:Sergei Nirenburg; Robert Frederking; David Farwell; Yorick Wilks
-C94-1020 | AN ENGLISH-TO-KOREAN MACHINE TRANSLATOR: MATES/EK | http://www.aclweb.org/anthology/C/C94/C94-1020.pdf | author:Key-Sun Choi; Seungmi Lee; Hiongun Kim; Deok-bong Kim; Cheoljung Kweon; Gilchang Kim
-C94-1021 | INTERLANGUAGE SIGNS AND LEXICAL TRANSFER ERRORS | http://www.aclweb.org/anthology/C/C94/C94-1021.pdf | author:Atle Ro
-C94-1022 | Morphology with a Null-Interface | http://www.aclweb.org/anthology/C/C94/C94-1022.pdf | author:Harald Trost; Johannes Matiasek
-C94-1023 | AUTOMATIC MODEL REFINEMENT - with an application to tagging | http://www.aclweb.org/anthology/C/C94/C94-1023.pdf | author:Yi-Chung Lin; Tung-Hui Chiang; Keh-Yih Su
-C94-1024 | Disambiguation of Super Parts of Speech (or Supertags): Allnost Parsing | http://www.aclweb.org/anthology/C/C94/C94-1024.pdf | author:Aravind K. Joshi; B. Srinivas
-C94-1025 | PROBABILISTIC TAGGING WITH FEATURE STRUCTURES | http://www.aclweb.org/anthology/C/C94/C94-1025.pdf | author:Andre Kempe
-C94-1026 | A Part-of-Speech-Based Alignment Algorithm | http://www.aclweb.org/anthology/C/C94/C94-1026.pdf | author:Kuang-hua Chen; Hsin-Hsi Chen
-C94-1027 | PART-OF-SPEECH TAGGING WITH NEURAL NETWORKS | http://www.aclweb.org/anthology/C/C94/C94-1027.pdf | author:Helmut Schmid
-C94-1028 | THE RUMORS SYSTEM OF RUSSIAN SYNTHESIS | http://www.aclweb.org/anthology/C/C94/C94-1028.pdf | author:Max I. Kanovich; Zoyn M. Shalyapina
-C94-1029 | MULTI-TAPE TWO-LEVEL MORPHOLOGY: A Case Study in Semitic Non-linear Morphology | http://www.aclweb.org/anthology/C/C94/C94-1029.pdf | author:George Anton Kiraz
-C94-1030 | AN EVALUATION TO DETECT AND CORRECT ERRONEOUS CHARACTERS WRONGLY SUBSTITUTED, DELETED AND INSERTED IN JAPANESE AND ENGLISH SENTENCES USING MARKOV MODELS | http://www.aclweb.org/anthology/C/C94/C94-1030.pdf | author:Tetsuo Araki; Satoru Ikehara; Nobuyuki Tsukahara; Yasunori Komatsu
-C94-1031 | AN EFFICIENT TREATMENT OF JAPANESE VERB INFLECTION FOR MORPHOLOGICAL ANALYSIS | http://www.aclweb.org/anthology/C/C94/C94-1031.pdf | author:Toru Hisamitsu; Yoshihiko Nitta
-C94-1032 | A Stochastic Japanese Morphological Analyzer Using a Forward-DP Backward-A* N-Best Search Algorithm | http://www.aclweb.org/anthology/C/C94/C94-1032.pdf | author:Masaaki Nagata
-C94-1033 | Backtracking-Free Dictionary Access Method for Japanese Morphological Analysis | http://www.aclweb.org/anthology/C/C94/C94-1033.pdf | author:Hiroshi Maruyama
-C94-1034 | MODULARITY IN A CONNECTIONIST MODEL OF MORPHOLOGY ACQUISITION | http://www.aclweb.org/anthology/C/C94/C94-1034.pdf | author:Michael Gasser
-C94-1035 | SYLLABLE-BASED MODEL FOR TIIE KOREAN MORPIIOLOGY | http://www.aclweb.org/anthology/C/C94/C94-1035.pdf | author:Seung-Shik Kang; Yung Taek Kim
-C94-1036 | SEGMENTING A SENTENCE INTO MORPIIEMES USING STATISTIC INFORMATION BETWEEN WORDS | http://www.aclweb.org/anthology/C/C94/C94-1036.pdf | author:Shilm Nobesawa; Junya Tsutsumi; Tomoaki Nitta; Kotaro Ono; Sun Da Jiang; Masakazu Nakanishi
-C94-1037 | "DERIVATIONAL" PARADIGMS IN MORPHONOLOGY | http://www.aclweb.org/anthology/C/C94/C94-1037.pdf | author:Vito Pirrelli; Stefano Federici
-C94-1038 | AN ARCHITECTURE FOR A UNIVERSAL LEXICON A Case Study on Shared Syntactic Information in Japanese, Hindi, Bengali, Greek, and English | http://www.aclweb.org/anthology/C/C94/C94-1038.pdf | author:Naoyuki Nomura; Douglas A. Jones; Robert C. Berwick
-C94-1039 | Adjuncts and the Processing of Lexical Rules | http://www.aclweb.org/anthology/C/C94/C94-1039.pdf | author:Gertjan van Noord; Gosse Bouma
-C94-1040 | Noun Phrasal Entries in the EDR English Word Dictionary | http://www.aclweb.org/anthology/C/C94/C94-1040.pdf | author:A. Koizumi; M. Arioka; C. Harada; M. Sugimoto; L. Guthrie; C. Watts; R. Catizone; Y. Wilks
-C94-1041 | KASSYS: A DEFINITION ACQUISITION SYSTEM IN NATURAL LANGUAGE | http://www.aclweb.org/anthology/C/C94/C94-1041.pdf | author:Patrice Hernert
-C94-1042 | Comlex Syntax: Building a Computational Lexicon | http://www.aclweb.org/anthology/C/C94/C94-1042.pdf | author:Ralph Grishman; Catherine Macleod; Adam Meyers
-C94-1043 | Word Knowledge Acquisition, Lexicon Construction and Dictionary Compilation | http://www.aclweb.org/anthology/C/C94/C94-1043.pdf | author:Antonio Sanfilippo
-C94-1044 | lnterlinguai Lexical Organisation for Multilingual Lexical Databases in NADIA | http://www.aclweb.org/anthology/C/C94/C94-1044.pdf | author:Gilles Serasset
-C94-1045 | Manipulating human-oriented dictionaries with very simple tools | http://www.aclweb.org/anthology/C/C94/C94-1045.pdf | author:Jean Gaschler; Mathieu Lafourcade
-C94-1046 | TOWARDS LINGUISTIC KNOWLEDGE DISCOVERY ASSISTANTS: APPLICATION TO LEARNING LEXICAL PROPERTIES OF CHINESE CHARACTERS | http://www.aclweb.org/anthology/C/C94/C94-1046.pdf | author:Georges Fafiotte; Francois Tcheou
-C94-1047 | LOGIC COMPRESSION OF DICTIONARIES FOR MULTILINGUAL SPELLING CHECKERS | http://www.aclweb.org/anthology/C/C94/C94-1047.pdf | author:Boubaker Meddeb Hamrouni
-C94-1048 | Construction of a Bilingual Dictionary Intermediated by a Third Language | http://www.aclweb.org/anthology/C/C94/C94-1048.pdf | author:Kumiko Tanaka; Kyoji Umemura
-C94-1049 | CO-OCCURRENCE VECTORS FROM CORPORA VS. DISTANCE VECTORS FROM DICTIONARIES | http://www.aclweb.org/anthology/C/C94/C94-1049.pdf | author:Yoshiki Niwa; Yoshihiko Nitta
-C94-1050 | Analysis of Scene Identification Ability of Associative Memory with Pictorial Dictionary | http://www.aclweb.org/anthology/C/C94/C94-1050.pdf | author:Tatsuhiko Tsunoda; Hidehiko Tanaka
-C94-1051 | Anticipating the Reader's Problems and the Automatic Generation of Paraphrases | http://www.aclweb.org/anthology/C/C94/C94-1051.pdf | author:Nils Lenke
-C94-1052 | TGE: Tlinks Generation Environment | http://www.aclweb.org/anthology/C/C94/C94-1052.pdf | author:Alicia Ageno; Francesc Ribas; German Rigau; Horacio Rodriguez; Anna Samiotou
-C94-1053 | Planning Argumentative Texts | http://www.aclweb.org/anthology/C/C94/C94-1053.pdf | author:Xiaorong Huang
-C94-1054 | A HYBRID APPROACH TO THE AUTOMATIC PLANNING OF TEXTUAL STRUCTURES | http://www.aclweb.org/anthology/C/C94/C94-1054.pdf | author:Gang Zhu; Nigel Shadbolt
-C94-1055 | Generating Multilingual Documents from a Knowledge Base The TECHDOC Project | http://www.aclweb.org/anthology/C/C94/C94-1055.pdf | author:Dietmar Rosner; Manfred Stede
-C94-1056 | ABSTRACT GENERATION BASED ON RHETORICAL STRUCTURE EXTRACTION | http://www.aclweb.org/anthology/C/C94/C94-1056.pdf | author:Kenji Ono; Kazuo Sumita; Seiji Miike
-C94-1057 | The Correct Place of Lexical Semantics in Interlingual MT | http://www.aclweb.org/anthology/C/C94/C94-1057.pdf | author:Lori Levin; Sergei Nirenburg
-C94-1058 | DEFAULT HANDLING IN INCREMENTAL GENERATION | http://www.aclweb.org/anthology/C/C94/C94-1058.pdf | author:Karin Harbusch; Gen-ichiro Kikui; Anne Kilger
-C94-1059 | ENGLISH GENERATION FROM INTERLINGUA BY EXAMPLE-BASED METHOD | http://www.aclweb.org/anthology/C/C94/C94-1059.pdf | author:Eiji Komatsu; Jin Cui; Hiroshi Yasuhara
-C94-1060 | ON LEXICALLY BIASED DISCOURSE ORGANIZATION IN TEXT GENERATION | http://www.aclweb.org/anthology/C/C94/C94-1060.pdf | author:Leo Wanner
-C94-1061 | CONCURRENT LEXICALIZED DEPENDENCY PARSING: THE ParseTalk MODEL | http://www.aclweb.org/anthology/C/C94/C94-1061.pdf | author:Norbert Broker; Udo Hahn; Susanne Schacht
-C94-1062 | NOTES ON LR PARSER DESIGN | http://www.aclweb.org/anthology/C/C94/C94-1062.pdf | author:Christer Samuelsson
-C94-1063 | PARSING A FLEXIBLE WORD ORDER LANGUAGE | http://www.aclweb.org/anthology/C/C94/C94-1063.pdf | author:Vladimir Pericliev; Alexander Grigorov
-C94-1064 | PARSING AS TREE TRAVERSAL | http://www.aclweb.org/anthology/C/C94/C94-1064.pdf | author:Dale Gerdemann
-C94-1065 | LR(k)-Parsing of Coupled-Context-Free Grammars | http://www.aclweb.org/anthology/C/C94/C94-1065.pdf | author:Gisela Pitsch
-C94-1066 | CONSTRUCTING LEXICAL TRANSDUCERS | http://www.aclweb.org/anthology/C/C94/C94-1066.pdf | author:Lauri Karttunen
-C94-1067 | An HPSG Parser Based on Description Logics | http://www.aclweb.org/anthology/C/C94/C94-1067.pdf | author:J. Joachim Quantz 
-C94-1068 | An Efficient Parser Generator for Natural Language | http://www.aclweb.org/anthology/C/C94/C94-1068.pdf | author:Masayuki Ishii; Kazuhisa Ohta; Hiroaki Saito
-C94-1069 | EXPLORING THE ROLE OF PUNCTUATION IN PARSING NATURAL TEXT | http://www.aclweb.org/anthology/C/C94/C94-1069.pdf | author:Bernard E M Jones
-C94-1070 | THE "WHITEBOARD" ARCHITECTURE: A WAY TO INTEGRATE HETEROGENEOUS COMPONENTS OF NLP SYSTEMS | http://www.aclweb.org/anthology/C/C94/C94-1070.pdf | author:Christian Boitet; Mark Seligman
-C94-1071 | Two Parsing Algorithms by Means of Finite State Transducers | http://www.aclweb.org/anthology/C/C94/C94-1071.pdf | author:Emmanuel Roche
-C94-1072 | DISCO-An HPSG-based NLP System and its Application for Appointment Scheduling Project Note | http://www.aclweb.org/anthology/C/C94/C94-1072.pdf | author:Hans Uszkoreit; Rolf Backofen; Stephan Busemann; Abdel Kader Diagne; Elizabeth A. Hinkelman; Walter Kasper; Bernd Kiefer; Hans-Ulrich Krieger; Klaus Netter; Gunter Neumann; Stephan Oepen; Stephen P. Spackman
-C94-1073 | A Corpus-Based Learning Technique for Building A Self-Extensible Parser | http://www.aclweb.org/anthology/C/C94/C94-1073.pdf | author:Key-Long Liu; Von-Wun Soo
-C94-1074 | A "not-so-shallow" parser for collocational analysis | http://www.aclweb.org/anthology/C/C94/C94-1074.pdf | author:Basili R.; M.T. Pazienza; P. Velardi
-C94-1075 | A MODULAR ARCHITECTURE FOR CONSTRAINT-BASED PARSING | http://www.aclweb.org/anthology/C/C94/C94-1075.pdf | author:Francois Barthelemy; Francois Rouaix
-C94-1076 | Minimal Change and Bounded Incremental Parsing | http://www.aclweb.org/anthology/C/C94/C94-1076.pdf | author:Mats Wiren
-C94-1077 | Emergent Parsing and Generation with Generalized Chart | http://www.aclweb.org/anthology/C/C94/C94-1077.pdf | author:HASIDA Koiti
-C94-1078 | SYNTACTIC-HEAD-DRIVEN GENERATION | http://www.aclweb.org/anthology/C/C94/C94-1078.pdf | author:Esther Konig
-C94-1079 | PRINCIPAR - An Efficient, Broad-coverage, Principle-based Parser | http://www.aclweb.org/anthology/C/C94/C94-1079.pdf | author:Dekang Lin
-C94-1080 | CONCURRENT LEXICALIZED DEPENDENCY PARSING: A BEHAVIORAL VIEW ON ParseTalk EVENTS | http://www.aclweb.org/anthology/C/C94/C94-1080.pdf | author:Susanne Schacht; Udo Hahn; Norbert Broker
-C94-1081 | PARSING TURKISH USING THE LEXICAL FUNCTIONAL GRAMMAR FORMALISM | http://www.aclweb.org/anthology/C/C94/C94-1081.pdf | author:Zelal Gungordu; Kemal Oflazer
-C94-1082 | LHIP: Extended DCGs for Configurable Robust Parsing | http://www.aclweb.org/anthology/C/C94/C94-1082.pdf | author:Afzal Ballim; Graham Russell
-C94-1083 | CATEGORIAL GRAMMAR AND DISCOURSE REPRESENTATION THEORY | http://www.aclweb.org/anthology/C/C94/C94-1083.pdf | author:Reinhard Muskens
-C94-1084 | Towards Automatic Extraction of Monolingual and Bilingual Terminology | http://www.aclweb.org/anthology/C/C94/C94-1084.pdf | author:Beatrice Daille; Eric Gaussier; Jean-Marc Lange
-C94-1085 | Fax: An Alternative to SGML | http://www.aclweb.org/anthology/C/C94/C94-1085.pdf | author:Kenneth W. Church; William A. Gale; Jonathan I. Helfman; David D. Lewis
-C94-1086 | REFERRING TO WORLD OBJECTS WITH TEXT AND PICTURES | http://www.aclweb.org/anthology/C/C94/C94-1086.pdf | author:Elisabeth Andre; Thomas Rist
-C94-1087 | A TWO-LEVEL MORPHOLOGICAL ANALYSIS OF KOREAN | http://www.aclweb.org/anthology/C/C94/C94-1087.pdf | author:Deok-Bong Kim; Sung-Jin Lee; Key-Sun Choi; Gil-Chang Kim
-C94-1088 | Character-based Collocation for Mandarin Chinese | http://www.aclweb.org/anthology/C/C94/C94-1088.pdf | author:Chu-Ren Huang; Keh-jiann Chen; Yun-yan Yang
-C94-1089 | LEXICAL, KNOWLEDGE REPRESENTATION IN AN INTELLIGENT DICTIONARY HELP SYSTEM | http://www.aclweb.org/anthology/C/C94/C94-1089.pdf | author:E. Agirre; X. Arregi; X. Artola; A. Diaz de Ilarraza; K. Sarasola
-C94-1090 | REVERSIBLE RESOLUTION WITH AN APPLICATION TO PARAPHRASING | http://www.aclweb.org/anthology/C/C94/C94-1090.pdf | author:Matthew Hurst
-C94-1091 | CLASSIFIER ASSIGNMENT BY CORPUS-BASED APPROACH | http://www.aclweb.org/anthology/C/C94/C94-1091.pdf | author:Virach Sornlertlamvanich; Wantanee Pantachat; Surapant Meknavin
-C94-1092 | ANNOTATING 200 MILLION WORDS: THE BANK OF ENGLISH PROJECT | http://www.aclweb.org/anthology/C/C94/C94-1092.pdf | author:Time Jarvinen
-C94-1093 | Restructuring Tagged Corpora with Morpheme Adjustment Rules | http://www.aclweb.org/anthology/C/C94/C94-1093.pdf | author:Toshihisa Tashiro; Noriyoshi Uratani; Tsuyoshi Morimoto
-C94-1094 | Encoding standards for large text resources: The Text Encoding Initiative | http://www.aclweb.org/anthology/C/C94/C94-1094.pdf | author:Nancy Ide
-C94-1095 | INTEX: A CORPUS PROCESSING SYSTEM | http://www.aclweb.org/anthology/C/C94/C94-1095.pdf | author:Max D. Silberztein
-C94-1096 | AN IBM-PC ENVIRONMENT FOR CHINESE CORPUS ANALYSIS | http://www.aclweb.org/anthology/C/C94/C94-1096.pdf | author:Robert Wing Pong Luk
-C94-1097 | MULTEXT: Multilingual Text Tools and Corpora | http://www.aclweb.org/anthology/C/C94/C94-1097.pdf | author:Nancy Ide; Jean Veronis
-C94-1098 | A PARSER COPING WITH SELF-REPAIRED JAPANESE UTTERANCES AND LARGE CORPUS-BASED EVALUATION | http://www.aclweb.org/anthology/C/C94/C94-1098.pdf | author:Yuji Sagawa; Noboru Ohnishi; Noboru Sugie
-C94-1099 | A TOOL FOR COLLECTING DOMAIN DEPENDENT SORTAL CONSTRAINTS FROM CORPORA | http://www.aclweb.org/anthology/C/C94/C94-1099.pdf | author:Francois Andry; Mark Gawron; John Dowding; Robert Moore
-C94-1100 | BUILDING A LEXICAL DOMAIN MAP FROM TEXT CORPORA | http://www.aclweb.org/anthology/C/C94/C94-1100.pdf | author:Tomek Strzalkowski
-C94-1101 | A New Method of N-gram Statistics for Large Number of n and Automatic Extraction of Words and Phrases from Large Text Data of Japanese | http://www.aclweb.org/anthology/C/C94/C94-1101.pdf | author:Makoto Nagao; Shinsuke Mori
-C94-1102 | Non-directionality and Self-Assessment in an Example-based System Using Genetic Algorithms | http://www.aclweb.org/anthology/C/C94/C94-1102.pdf | author:Yves Lepage
-C94-1103 | CLAWS4: THE TAGGING OF THE BRITISH NATIONAL CORPUS | http://www.aclweb.org/anthology/C/C94/C94-1103.pdf | author:Geoffrey Leech; Roger Garside; Michael Bryant
-C94-1104 | SYNTACTIC ANALYSIS OF NATURAL LANGUAGE USING LINGUISTIC RULES AND CORPUS-BASED PATTERNS | http://www.aclweb.org/anthology/C/C94/C94-1104.pdf | author:Pasi Tapanainen; Timo Jarvinen
-C94-2105 | WORD SENSE ACQUISITION FOR MULTILINGUAL TEXT INTERPRETATION | http://www.aclweb.org/anthology/C/C94/C94-2105.pdf | author:Paul S. Jacobs
-C94-2106 | A System of Verbal Semantic Attributes Focused on the Syntactic Correspondence between Japanese and English | http://www.aclweb.org/anthology/C/C94/C94-2106.pdf | author:Hiromi Nakaiwa; Akio Yokoo; Satoru Ikehara
-C94-2107 | Semantics of Complex Sentences in Japanese | http://www.aclweb.org/anthology/C/C94/C94-2107.pdf | author:Hiroshi Nakagawa; Shin-ichiro Nishizawa
-C94-2108 | CONTENT CHARACTERIZATION USING WORD SHAPE TOKENS | http://www.aclweb.org/anthology/C/C94/C94-2108.pdf | author:Penelope Sibun; David S. Farrar
-C94-2109 | THE NATURE OF NEAR-SYNONYMIC RELATIONS | http://www.aclweb.org/anthology/C/C94/C94-2109.pdf | author:Chrysanne DiMarco
-C94-2110 | Virtual Polysemy | http://www.aclweb.org/anthology/C/C94/C94-2110.pdf | author:Antonio Sanfilippo; Kerima Benkerimi; Dagmar Dwehus
-C94-2111 | BUILDING A WINDOWS-BASED BILINGUAL FUNCTIONAL SEMANTIC PROCESSOR | http://www.aclweb.org/anthology/C/C94/C94-2111.pdf | author:Jonathan J Webster
-C94-2112 | On the Proper Role of Coercion in Semantic Typing | http://www.aclweb.org/anthology/C/C94/C94-2112.pdf | author:James Pustejovsky; Pierrette Bouillon
-C94-2113 | WORD SENSE AMBIGUATION: CLUSTERING RELATED SENSES | http://www.aclweb.org/anthology/C/C94/C94-2113.pdf | author:William B. Dolan 
-C94-2114 | A Best-Match Algorithm for Broad-Coverage Example-Based Disambiguation | http://www.aclweb.org/anthology/C/C94/C94-2114.pdf | author:Naohiko Uramoto
-C94-2115 | Drawing Pictures with Natural Language and Direct Manipulation | http://www.aclweb.org/anthology/C/C94/C94-2115.pdf | author:Mayumi Hiyoshi; Hideo Shimazu
-C94-2116 | VERBAL CASE FRAME ACQUISITION FROM A BILINGUAL CORPUS: GRADUAL KNOWLEDGE ACQUISITION | http://www.aclweb.org/anthology/C/C94/C94-2116.pdf | author:Hideki Tanaka
-C94-2117 | AN EMPIRICAL STUDY ON THE GENERATION OF ZERO ANAPHORS IN CHINESE | http://www.aclweb.org/anthology/C/C94/C94-2117.pdf | author:Ching-Long Yeh; Chris Mellish
-C94-2118 | Representing Information Need with Semantic Relations | http://www.aclweb.org/anthology/C/C94/C94-2118.pdf | author:Anil S. Chakravarthy
-C94-2119 | Generalizing Automatically Generated Selectional Patterns | http://www.aclweb.org/anthology/C/C94/C94-2119.pdf | author:Ralph Grishman; John Sterling
-C94-2120 | INCREMENTAL INTERPRETATION: APPLICATIONS, THEORY, AND RELATIONSHIP TO DYNAMIC SEMANTICS | http://www.aclweb.org/anthology/C/C94/C94-2120.pdf | author:David Milward; Robin Cooper
-C94-2121 | Word Sense Disambiguation and Text Segmentation Based on Lexical Cohesion | http://www.aclweb.org/anthology/C/C94/C94-2121.pdf | author:Manabu Okumura; Takeo Honda
-C94-2122 | Automatic Recognition of Verbal Polysemy | http://www.aclweb.org/anthology/C/C94/C94-2122.pdf | author:Fumiyo Fukumoto; Jun'ichi Tsujii
-C94-2123 | AN EXPERIMENT ON LEARNING APPROPRIATE SELECTIONAL RESTRICTIONS FROM A PARSED CORPUS | http://www.aclweb.org/anthology/C/C94/C94-2123.pdf | author:Francesc Ribas Framis
-C94-2124 | A DISCRETE MODEL OF DEGREE CONCEPT IN NATURAL LANGUAGE | http://www.aclweb.org/anthology/C/C94/C94-2124.pdf | author:Shin-ichiro Kamei; Kazunori Muraki
-C94-2125 | ALGORITHM FOR AUTOMATIC INTERPRETATION OF NOUN SEQUENCES | http://www.aclweb.org/anthology/C/C94/C94-2125.pdf | author:Lucy Vanderwende
-C94-2126 | A TREATMENT OF FUNCTIONAL DEFINITE DESCRIPTIONS | http://www.aclweb.org/anthology/C/C94/C94-2126.pdf | author:Hajime Wada
-C94-2127 | Bottom-Up Earley Deduction | http://www.aclweb.org/anthology/C/C94/C94-2127.pdf | author:Gregor Erbach
-C94-2128 | THE MERGED UPPER MODEL: A LINGUISTIC ONTOLOGY FOR GERMAN AND ENGLISH | http://www.aclweb.org/anthology/C/C94/C94-2128.pdf | author:Renate Henschel; John Bateman
-C94-2129 | MODELING DIALOGUE BY FUNCTIONAL SUB CATEGORIZATION | http://www.aclweb.org/anthology/C/C94/C94-2129.pdf | author:J. R. Zubizarreta Aizpuru; Craig Jones
-C94-2130 | Dutch Cross Serial Dependencies in HPSG | http://www.aclweb.org/anthology/C/C94/C94-2130.pdf | author:Gerrit Rentier
-C94-2131 | HPSG LEXICON WITHOUT LEXICAL RULES | http://www.aclweb.org/anthology/C/C94/C94-2131.pdf | author:Karel Oliva
-C94-2132 | A LEXICON OF DISTRIBUTED NOUN REPRESENTATIONS CONSTRUCTED BY TAXONOMIC TRAVERSAL | http://www.aclweb.org/anthology/C/C94/C94-2132.pdf | author:Richard F.E. Sutcliffe; Donie O'Sullivan; Fergus Meharg
-C94-2133 | Multi-Modal Definite Clause Grammar | http://www.aclweb.org/anthology/C/C94/C94-2133.pdf | author:Hideo Shimazu; Seigo Arita; Yosuke Takashima
-C94-2134 | Hypothesis Selection in Grammar Acquisition | http://www.aclweb.org/anthology/C/C94/C94-2134.pdf | author:Masaki Kiyono; Jun'ichi Tsujii
-C94-2135 | ACHIEVING FLEXIBILITY IN UNIFICATION FORMALISMS | http://www.aclweb.org/anthology/C/C94/C94-2135.pdf | author:Lena Stromback
-C94-2136 | TWP: How to Assist English Production on Japanese Word Processor | http://www.aclweb.org/anthology/C/C94/C94-2136.pdf | author:Kazunori Muraki; Susunm Akamine; Kenji Satoh; Sinichi Ando
-C94-2137 | Long-Distance Dependencies and Applicative Universal Grammar | http://www.aclweb.org/anthology/C/C94/C94-2137.pdf | author:Sebastian Shaumyan
-C94-2138 | A Reestimation Algorithm for Probabilistic ttecursive Transition Network | http://www.aclweb.org/anthology/C/C94/C94-2138.pdf | author:Young S. Han; Key-Sun Choi
-C94-2139 | Analysis of Japanese Compound Nouns using Collocational Information | http://www.aclweb.org/anthology/C/C94/C94-2139.pdf | author:Yosiyuki Kobayasi; Takenobu Tokunaga; Hozumi Tanaka
-C94-2140 | Free-ordered CUG on Chemical Abstract Machine | http://www.aclweb.org/anthology/C/C94/C94-2140.pdf | author:Satoshi Tojo
-C94-2141 | COMPUTING FIRST AND FOLLOW FUNCTIONS FOR FEATURE-THEORETIC GRAMMARS | http://www.aclweb.org/anthology/C/C94/C94-2141.pdf | author:Arturo Trujillo
-C94-2142 | FOCUS ON "ONLY" AND "NOT" | http://www.aclweb.org/anthology/C/C94/C94-2142.pdf | author:Allan Ramsay
-C94-2143 | STRUCTURE SHARING PROBLEM AND ITS SOLUTION IN GRAPH UNIFICATION | http://www.aclweb.org/anthology/C/C94/C94-2143.pdf | author:Kiyoshi Kogure
-C94-2144 | TDL-A Type Description Language for Constraint-Based Grammars | http://www.aclweb.org/anthology/C/C94/C94-2144.pdf | author:Hans-Ulrich Krieger; Ulrich Schafer
-C94-2145 | ON THE PORTABILITY OF COMPLEX CONSTRAINT-BASED GRAMMARS | http://www.aclweb.org/anthology/C/C94/C94-2145.pdf | author:C.J. Rupp; Rod Johnson
-C94-2146 | A GRAMMAR BASED APPROACH TO A GRAMMAR CHECKING OF  FREE WORD ORDER LANGUAGES | http://www.aclweb.org/anthology/C/C94/C94-2146.pdf | author:Vladislav Kubon; Martin Platek
-C94-2147 | Table-driven Neural Syntactic Analysis of Spoken Korean | http://www.aclweb.org/anthology/C/C94/C94-2147.pdf | author:Wonll Lee; Geunbae Lee; Jong-Hyeok Lee
-C94-2148 | UNIVERSAL GUIDES AND FINITENESS AND SYMMETRY OF GRAMMAR PROCESSING ALGORITHMS | http://www.aclweb.org/anthology/C/C94/C94-2148.pdf | author:Miroslav Martinovie
-C94-2149 | XTAG System - A Wide Coverage Grammar for English | http://www.aclweb.org/anthology/C/C94/C94-2149.pdf | author:Christy Doran; Dania Egedi; Beth Ann Hockey; B. Srinivas; Martin Zaidel
-C94-2150 | Weakly Restricted Stochastic Grammars | http://www.aclweb.org/anthology/C/C94/C94-2150.pdf | author:Rieks op den Akker; Hugo ter Doest
-C94-2151 | NON-CONSTITUENT COORDINATION: THEORY AND PRACTICE | http://www.aclweb.org/anthology/C/C94/C94-2151.pdf | author:David Milward
-C94-2152 | Hypothesis Scoring over Theta Grids Information in Parsing Chinese Sentences with Serial Verb Constructions | http://www.aclweb.org/anthology/C/C94/C94-2152.pdf | author:Koong H. C. Lin; Von-Wun Soo
-C94-2153 | AN EFFICIENT SYNTACTIC TAGGING TOOL FOR CORPORA | http://www.aclweb.org/anthology/C/C94/C94-2153.pdf | author:Ming Zhou; Changning Huang
-C94-2154 | THE CORRECT AND EFFICIENT IMPLEMENTATION OF APPROPRIATENESS SPECIFICATIONS FOR TYPED FEATURE STRUCTURES | http://www.aclweb.org/anthology/C/C94/C94-2154.pdf | author:Dale Gerdemann; Paul John King
-C94-2155 | A CLASSIFICATION METHOD FOR JAPANESE SIGNS USING MANUAL MOTION DESCRIPTIONS | http://www.aclweb.org/anthology/C/C94/C94-2155.pdf | author:Hisahiro Adachi; Kazuo Kamata
-C94-2156 | Machine-Readable Dictionaries in Text-to-Speech Systems | http://www.aclweb.org/anthology/C/C94/C94-2156.pdf | author:Judith L. Klavans; Evelyne Tzoukermann
-C94-2157 | ISSUES IN TEXT-TO-SPEECH FOR FRENCH | http://www.aclweb.org/anthology/C/C94/C94-2157.pdf | author:Evelyne Tzoukermann
-C94-2158 | CHATR: a generic speech synthesis system | http://www.aclweb.org/anthology/C/C94/C94-2158.pdf | author:Alan W Black; Paul Taylor
-C94-2159 | PAUSE AS A PHRASE DEMARCATOR FOR SPEECH AND LANGUAGE PROCESSING | http://www.aclweb.org/anthology/C/C94/C94-2159.pdf | author:Junko Hosaka; Mark Seligman; Harald Singer
-C94-2160 | THE PARSODY SYSTEM: AUTOMATIC PREDICTION OF PROSODIC BOUNDARIES FOR TEXT-TO-SPEECH | http://www.aclweb.org/anthology/C/C94/C94-2160.pdf | author:Stephen Minnis
-C94-2161 | Anytime Algorithms for Speech Parsing? | http://www.aclweb.org/anthology/C/C94/C94-2161.pdf | author:Gunther Gorz; Marcus Kesseler
-C94-2162 | Towards a Proper Linguistic and Computational Treatment of Scrambling: An Analysis of Japanese | http://www.aclweb.org/anthology/C/C94/C94-2162.pdf | author:Sandiway Pong
-C94-2163 | Phonological Derivation in Optimality Theory | http://www.aclweb.org/anthology/C/C94/C94-2163.pdf | author:T. Mark Ellison
-C94-2164 | A GRAMMAR AND A PARSER FOR SPONTANEOUS SPEECH | http://www.aclweb.org/anthology/C/C94/C94-2164.pdf | author:Mikio Nakano; Akira Shimazu; Kiyoshi Kogure
-C94-2165 | CATCHING THE CHESHIRE CAT | http://www.aclweb.org/anthology/C/C94/C94-2165.pdf | author:Christer Johansson
-C94-2166 | A Dutch to SQL database interface using Generalized Quantifier Theory | http://www.aclweb.org/anthology/C/C94/C94-2166.pdf | author:Dirk Speelman; Geert Adriaens
-C94-2167 | A METHODOLOGY FOR AUTOMATIC TERM RECOGNITION | http://www.aclweb.org/anthology/C/C94/C94-2167.pdf | author:Sophia Ananiadou
-C94-2168 | Knowledge Extraction from Texts: a method for extracting predicate-argument structures from texts | http://www.aclweb.org/anthology/C/C94/C94-2168.pdf | author:Florence Pugeault; Patrick Saint-Dizier; Marie-Gaelle Monteil
-C94-2169 | Thesaurus-based Efficient Example Retrieval by Generating Retrieval Queries from Similarities | http://www.aclweb.org/anthology/C/C94/C94-2169.pdf | author:Takehito Utsuro; Kiyotaka Uchimoto; Mitsutaka Matsumoto; Makoto Nagao
-C94-2170 | Tools for Extracting and Structuring Knowledge from Texts | http://www.aclweb.org/anthology/C/C94/C94-2170.pdf | author:Antoine Ogonowski; Marie Luce Herviou; Eva Dauphin
-C94-2171 | N-GRAM CLUSTER IDENTIFICATION DURING EMPIRICAL KNOWLEDGE REPRESENTATION GENERATION | http://www.aclweb.org/anthology/C/C94/C94-2171.pdf | author:Robin Collier
-C94-2172 | DOCUMENT CLASSIFICATION BY MACHINE:Theory and Practice | http://www.aclweb.org/anthology/C/C94/C94-2172.pdf | author:Louise Guthrie; Elbert Walker
-C94-2173 | PATTERN MATCHING IN THE TEXTRACT INFORMATION EXTRACTION SYSTEM | http://www.aclweb.org/anthology/C/C94/C94-2173.pdf | author:Tsuyoshi Kitani; Yoshio Eriguchi; Masami Hara
-C94-2174 | RECOGNIZING TEXT GENRES WITH SIMPLE METRICS USING DISCRIMINANT ANALYSIS | http://www.aclweb.org/anthology/C/C94/C94-2174.pdf | author:Jussi Karlgren; Douglass Cutting
-C94-2175 | Bilingual Text, Matching using Bilingual Dictionary and Statistics | http://www.aclweb.org/anthology/C/C94/C94-2175.pdf | author:Takehito Utsuro; Hiroshi Ikeda; Masaya Yamane; Yuji Matsumoto; Makoto Nagao
-C94-2176 | TOWARDS A MORE USER-FRIENDLY CORRECTION | http://www.aclweb.org/anthology/C/C94/C94-2176.pdf | author:Damien Genthial; Jacques Courtin; Jacques Menezo
-C94-2177 | Reverse Queries in DATR | http://www.aclweb.org/anthology/C/C94/C94-2177.pdf | author:Hagen Langer
-C94-2178 | K-vec: A New Approach for Aligning Parallel Texts | http://www.aclweb.org/anthology/C/C94/C94-2178.pdf | author:Pascale Fung; Kenneth Ward Church
-C94-2179 | A FORMAL REPRESENTATION OF THE THEMATIC-RHEMATIC STRUCTURE OF SENTENCES BASED ON A TYPED A-CALCULUS | http://www.aclweb.org/anthology/C/C94/C94-2179.pdf | author:Yoichi Uetake
-C94-2180 | CUSTOMIZING AND EVALUATING A MULTILINGUAL DISCOURSE MODULE | http://www.aclweb.org/anthology/C/C94/C94-2180.pdf | author:Chinatsu Aone
-C94-2181 | CONSEQUENCE RELATIONS IN DRT | http://www.aclweb.org/anthology/C/C94/C94-2181.pdf | author:Seiki Akama; Yotaro Nakayama
-C94-2182 | COLLABORATION ON REFERENCE TO OBJECTS THAT ARE NOT MUTUALLY KNOWN | http://www.aclweb.org/anthology/C/C94/C94-2182.pdf | author:Philip G. Edmonds
-C94-2183 | Automatic Detection of Discourse Structure by Checking Surface Information in Sentences | http://www.aclweb.org/anthology/C/C94/C94-2183.pdf | author:Sadao Kurohashi; Makoto Nagao
-C94-2184 | EXTENDING DRT WITH A FOCUSING MECHANISM FOR PRONOMINAL ANAPHORA AND ELLIPSIS RESOLUTION | http://www.aclweb.org/anthology/C/C94/C94-2184.pdf | author:Jose Abracos; Jose Gabriel Lopes
-C94-2185 | REFERENCE RESOLUTION USING SEMANTIC PATTERNS IN JAPANESE NEWSPAPER ARTICLES | http://www.aclweb.org/anthology/C/C94/C94-2185.pdf | author:Takahiro Wakao
-C94-2186 | EXPLOITING REFERENCE INTERACTION IN RESOLVING TEMPORAL REFERENCE | http://www.aclweb.org/anthology/C/C94/C94-2186.pdf | author:Kohji Dohsaka
-C94-2187 | A GRAMMATICO-STATISTICAL APPROACH TO DISCOURSE PARTITIONING | http://www.aclweb.org/anthology/C/C94/C94-2187.pdf | author:Tadashi Nomoto; Yoshihiko Nitta
-C94-2188 | Centering in Japanese: A Step Towards Better Interpretation of Pronouns and Zero-Pronouns | http://www.aclweb.org/anthology/C/C94/C94-2188.pdf | author:Shingo Takada; Norihisa Doi
-C94-2189 | ROBUST METHOD OF PRONOUN RESOLUTION USING FULL-TEXT INFORMATION | http://www.aclweb.org/anthology/C/C94/C94-2189.pdf | author:Tetsuya Nasukawa
-C94-2190 | Towards a Dynamic Theory of Belief-Sharing in Cooperative Dialogues | http://www.aclweb.org/anthology/C/C94/C94-2190.pdf | author:Hisashi Komatsu; Norihiro Ogata; Akira Ishikawa
-C94-2191 | AN INTEGRATED MODEL FOR ANAPHORA RESOLUTION | http://www.aclweb.org/anthology/C/C94/C94-2191.pdf | author:Ruslan Mitkov
-C94-2192 | Breaking Down Rhetorical Relations for the purpose of Analysing Discourse Structures | http://www.aclweb.org/anthology/C/C94/C94-2192.pdf | author:Jun'ichi Fukumoto; Jun'ichi Tsujii
-C94-2193 | PRESUPPOSITION & VP-ELLIPSIS | http://www.aclweb.org/anthology/C/C94/C94-2193.pdf | author:Johan Bos
-C94-2194 | COMMUNICATING WITH MULTIPLE AGENTS | http://www.aclweb.org/anthology/C/C94/C94-2194.pdf | author:Elizabeth A. Hinkelman; Stephen P. Spackman
-C94-2195 | A Rule-Based Approach to Prepositional Phrase Attachment Disambiguation | http://www.aclweb.org/anthology/C/C94/C94-2195.pdf | author:Eric Brill; Philip Resnik
-C94-2196 | Discourse and Deliberation: Testing a Collaborative Strategy | http://www.aclweb.org/anthology/C/C94/C94-2196.pdf | author:Marilyn A. Walker
-C94-2197 | A Bayesian Approach for User Modeling in Dialogue Systems | http://www.aclweb.org/anthology/C/C94/C94-2197.pdf | author:Tomoyosi Akiba; Hozumi Tanaka
-C94-2198 | WORD CLASS DISCOVERY FOR POSTPROCESSING CHINESE HANDWRITING RECOGNITION | http://www.aclweb.org/anthology/C/C94/C94-2198.pdf | author:Chao-Huang Chang
-C94-2199 | A Simple Transformation for Offline-Parsable Grammars and its Termination Properties | http://www.aclweb.org/anthology/C/C94/C94-2199.pdf | author:Marc Dymetman
-C94-2200 | THE EVOLUTION OF MACHINE-TRACTABLE DICTIONARIES | http://www.aclweb.org/anthology/C/C94/C94-2200.pdf | author:Cheng-ming Guo; Chang-ning Huang; Jun-ping Gong; Jin Li
-C94-2201 | DISCONTINUITY AND THE LAMBEK CALCULUS | http://www.aclweb.org/anthology/C/C94/C94-2201.pdf | author:Mark Hepple
-C94-2202 | LEXICAL FUNCTIONS AND MACHINE TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-2202.pdf | author:Dirk Heylen; Kerry G. Maxwell; Marc Verhagen
-C94-2203 | CHINESE SEGMENTATION DISAMBIGUATION | http://www.aclweb.org/anthology/C/C94/C94-2203.pdf | author:Wanying Jin
-C94-2204 | TYPED FEATURE STRUCTURES AS DESCRIPTIONS | http://www.aclweb.org/anthology/C/C94/C94-2204.pdf | author:Paul John King
-C94-2205 | Portuguese Analysis with Tree Adjoining Grammars | http://www.aclweb.org/anthology/C/C94/C94-2205.pdf | author:Karin Christine Kipper; Vera Lucia Strube de Lima
-C94-2206 | Incremental Construction of a Lexical Transducer for Korean | http://www.aclweb.org/anthology/C/C94/C94-2206.pdf | author:Hyuk-Chul Kwon; Lauri Karttunen
-C94-2207 | DYNAMIC LOGIC WITH POSSIBLE WORLD | http://www.aclweb.org/anthology/C/C94/C94-2207.pdf | author:Ruzhan Lu
-C94-2208 | HUMOR-BASED APPLICATIONS | http://www.aclweb.org/anthology/C/C94/C94-2208.pdf | author:Gabor Proszeky; Miklos Pal; Laszlo Tihanyi
-C94-2209 | BLENDING SEGMENTATION WITH TAGGING IN CHINESE LANGUAGE CORPUS PROCESSING | http://www.aclweb.org/anthology/C/C94/C94-2209.pdf | author:Zhou Qiang; Yu Shiwen
-C94-2210 | Syllable-based Phonetic transcription by Maximum Likelihood Methods | http://www.aclweb.org/anthology/C/C94/C94-2210.pdf | author:R.A. Sharman
-C94-2211 | A Knowledge Acquisition and Management System for Morphological Dictionaries | http://www.aclweb.org/anthology/C/C94/C94-2211.pdf | author:Pius ten Hacken; Stephan Bopp; Marc Domenig; Dieter Holz; Alain Hsiung; Sandro Pedrazzini
-C94-2212 | NL Understanding with a Grammar of Constructions | http://www.aclweb.org/anthology/C/C94/C94-2212.pdf | author:Wlodek Zadrozny; Marcin Szummer; Stanislaw Jarecki; David E. Johnson; Leora Morgenstern
+C94-1001 | IMPROVEMENT IN CUSTOMIZABILITY USING TRANSLATION TEMPLATES | http://www.aclweb.org/anthology/C/C94/C94-1001.pdf | category:paper author:Satoshi Kinoshita; Akira Kumano; Hideki Hirakawa
+C94-1002 | Countability and Number in Japanese to English Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1002.pdf | category:paper author:Francis Bond; Kentaro Ogura; Satoru Ikehara
+C94-1003 | A Method for Distinguishing Exceptional and General Examples in Example-based Transfer Systems | http://www.aclweb.org/anthology/C/C94/C94-1003.pdf | category:paper author:Hideo Watanabe
+C94-1004 | INTERPRETING COMPOUNDS FOR MACHINE TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-1004.pdf | category:paper author:Barbara Gawronska; Anders Nordner; Christer Johansson; Caroline Willners
+C94-1005 | Towards Machine Translation Using Contextual Information | http://www.aclweb.org/anthology/C/C94/C94-1005.pdf | category:paper author:Tim Cornish; Kiimikazu Fujita; Ryochi Sugimura
+C94-1006 | Two Methods for Learning ALT-J/E Translation Rules from Examples and a Semantic Hierarchy | http://www.aclweb.org/anthology/C/C94/C94-1006.pdf | category:paper author:Ilussein Allmuallim; Yasuhiro Akiba; Takefumi Yamazaki; Akio Yokoo; Shigeo Kaneda
+C94-1007 | A BIDIRECTIONAL, TRANSFER-DRIVEN MACHINE TRANSLATION SYSTEM FOR SPOKEN DIALOGUES | http://www.aclweb.org/anthology/C/C94/C94-1007.pdf | category:paper author:Yasuhiro Sobashima; Osamu Furuse; Susumu Akamine; Jun Kawai; Hitoshi Iida
+C94-1008 | Treating 'Free Word Order' in Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1008.pdf | category:paper author:Ralf Steinberger
+C94-1009 | BUILDING AN MT DICTIONARY FROM PARALLEL TEXTS BASED ON LINGUISTIC AND STATISTICAL INFORMATION | http://www.aclweb.org/anthology/C/C94/C94-1009.pdf | category:paper author:Akira Kumano; Hideki Hirakawa
+C94-1010 | DILEMMA - AN INSTANT LEXICOGRAPIIER | http://www.aclweb.org/anthology/C/C94/C94-1010.pdf | category:paper author:Hans Karlgren; Jussi Karlgren; Magnus Nordstrom; Paul Pettersson; Bengt Wahrolen
+C94-1011 | Portable Knowledge Sources for Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1011.pdf | category:paper author:Koichi Takeda
+C94-1012 | Coping With Ambiguity in a Large-Scale Machine Translation System | http://www.aclweb.org/anthology/C/C94/C94-1012.pdf | category:paper author:Kathryn L. Baker; Alexander M. Franz; Pamela W. Jordan; Teruko Mitamura; Eric H. Nyberg
+C94-1013 | Evaluation Metrics for Knowledge-Based Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1013.pdf | category:paper author:Eric H. Nyberg, 3rd; Teruko Mitamura; Jaime G. Carbonell
+C94-1014 | A MATCHING TECHNIQUE IN EXAMPLE-BASED MACHINE TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-1014.pdf | category:paper author:Lambros Cranias; Harris Papageorgiou; Stelios Piperdis
+C94-1015 | Constituent Boundary Parsing for Example-Based Machine Translation | http://www.aclweb.org/anthology/C/C94/C94-1015.pdf | category:paper author:Osamu Furuse; Hitoshi Iida
+C94-1016 | THE JaRAP EXPERIMENTAL SYSTEM OF JAPANESE-RUSSIAN AUTOMATIC TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-1016.pdf | category:paper author:Larisa S. Modina; Zoya M. Shalyapina
+C94-1017 | Perspectives of DBMT for monolingual authors on the basis of LIDIA-1, an implemented mock-up | http://www.aclweb.org/anthology/C/C94/C94-1017.pdf | category:paper author:Herve Blanchon
+C94-1018 | MODALS AS A PROBLEM FOR MT | http://www.aclweb.org/anthology/C/C94/C94-1018.pdf | category:paper author:Bengt Sigurd; Barbara Gawronska
+C94-1019 | Two Types of Adaptive MT Environments | http://www.aclweb.org/anthology/C/C94/C94-1019.pdf | category:paper author:Sergei Nirenburg; Robert Frederking; David Farwell; Yorick Wilks
+C94-1020 | AN ENGLISH-TO-KOREAN MACHINE TRANSLATOR: MATES/EK | http://www.aclweb.org/anthology/C/C94/C94-1020.pdf | category:paper author:Key-Sun Choi; Seungmi Lee; Hiongun Kim; Deok-bong Kim; Cheoljung Kweon; Gilchang Kim
+C94-1021 | INTERLANGUAGE SIGNS AND LEXICAL TRANSFER ERRORS | http://www.aclweb.org/anthology/C/C94/C94-1021.pdf | category:paper author:Atle Ro
+C94-1022 | Morphology with a Null-Interface | http://www.aclweb.org/anthology/C/C94/C94-1022.pdf | category:paper author:Harald Trost; Johannes Matiasek
+C94-1023 | AUTOMATIC MODEL REFINEMENT - with an application to tagging | http://www.aclweb.org/anthology/C/C94/C94-1023.pdf | category:paper author:Yi-Chung Lin; Tung-Hui Chiang; Keh-Yih Su
+C94-1024 | Disambiguation of Super Parts of Speech (or Supertags): Allnost Parsing | http://www.aclweb.org/anthology/C/C94/C94-1024.pdf | category:paper author:Aravind K. Joshi; B. Srinivas
+C94-1025 | PROBABILISTIC TAGGING WITH FEATURE STRUCTURES | http://www.aclweb.org/anthology/C/C94/C94-1025.pdf | category:paper author:Andre Kempe
+C94-1026 | A Part-of-Speech-Based Alignment Algorithm | http://www.aclweb.org/anthology/C/C94/C94-1026.pdf | category:paper author:Kuang-hua Chen; Hsin-Hsi Chen
+C94-1027 | PART-OF-SPEECH TAGGING WITH NEURAL NETWORKS | http://www.aclweb.org/anthology/C/C94/C94-1027.pdf | category:paper author:Helmut Schmid
+C94-1028 | THE RUMORS SYSTEM OF RUSSIAN SYNTHESIS | http://www.aclweb.org/anthology/C/C94/C94-1028.pdf | category:paper author:Max I. Kanovich; Zoyn M. Shalyapina
+C94-1029 | MULTI-TAPE TWO-LEVEL MORPHOLOGY: A Case Study in Semitic Non-linear Morphology | http://www.aclweb.org/anthology/C/C94/C94-1029.pdf | category:paper author:George Anton Kiraz
+C94-1030 | AN EVALUATION TO DETECT AND CORRECT ERRONEOUS CHARACTERS WRONGLY SUBSTITUTED, DELETED AND INSERTED IN JAPANESE AND ENGLISH SENTENCES USING MARKOV MODELS | http://www.aclweb.org/anthology/C/C94/C94-1030.pdf | category:paper author:Tetsuo Araki; Satoru Ikehara; Nobuyuki Tsukahara; Yasunori Komatsu
+C94-1031 | AN EFFICIENT TREATMENT OF JAPANESE VERB INFLECTION FOR MORPHOLOGICAL ANALYSIS | http://www.aclweb.org/anthology/C/C94/C94-1031.pdf | category:paper author:Toru Hisamitsu; Yoshihiko Nitta
+C94-1032 | A Stochastic Japanese Morphological Analyzer Using a Forward-DP Backward-A* N-Best Search Algorithm | http://www.aclweb.org/anthology/C/C94/C94-1032.pdf | category:paper author:Masaaki Nagata
+C94-1033 | Backtracking-Free Dictionary Access Method for Japanese Morphological Analysis | http://www.aclweb.org/anthology/C/C94/C94-1033.pdf | category:paper author:Hiroshi Maruyama
+C94-1034 | MODULARITY IN A CONNECTIONIST MODEL OF MORPHOLOGY ACQUISITION | http://www.aclweb.org/anthology/C/C94/C94-1034.pdf | category:paper author:Michael Gasser
+C94-1035 | SYLLABLE-BASED MODEL FOR TIIE KOREAN MORPIIOLOGY | http://www.aclweb.org/anthology/C/C94/C94-1035.pdf | category:paper author:Seung-Shik Kang; Yung Taek Kim
+C94-1036 | SEGMENTING A SENTENCE INTO MORPIIEMES USING STATISTIC INFORMATION BETWEEN WORDS | http://www.aclweb.org/anthology/C/C94/C94-1036.pdf | category:paper author:Shilm Nobesawa; Junya Tsutsumi; Tomoaki Nitta; Kotaro Ono; Sun Da Jiang; Masakazu Nakanishi
+C94-1037 | "DERIVATIONAL" PARADIGMS IN MORPHONOLOGY | http://www.aclweb.org/anthology/C/C94/C94-1037.pdf | category:paper author:Vito Pirrelli; Stefano Federici
+C94-1038 | AN ARCHITECTURE FOR A UNIVERSAL LEXICON A Case Study on Shared Syntactic Information in Japanese, Hindi, Bengali, Greek, and English | http://www.aclweb.org/anthology/C/C94/C94-1038.pdf | category:paper author:Naoyuki Nomura; Douglas A. Jones; Robert C. Berwick
+C94-1039 | Adjuncts and the Processing of Lexical Rules | http://www.aclweb.org/anthology/C/C94/C94-1039.pdf | category:paper author:Gertjan van Noord; Gosse Bouma
+C94-1040 | Noun Phrasal Entries in the EDR English Word Dictionary | http://www.aclweb.org/anthology/C/C94/C94-1040.pdf | category:paper author:A. Koizumi; M. Arioka; C. Harada; M. Sugimoto; L. Guthrie; C. Watts; R. Catizone; Y. Wilks
+C94-1041 | KASSYS: A DEFINITION ACQUISITION SYSTEM IN NATURAL LANGUAGE | http://www.aclweb.org/anthology/C/C94/C94-1041.pdf | category:paper author:Patrice Hernert
+C94-1042 | Comlex Syntax: Building a Computational Lexicon | http://www.aclweb.org/anthology/C/C94/C94-1042.pdf | category:paper author:Ralph Grishman; Catherine Macleod; Adam Meyers
+C94-1043 | Word Knowledge Acquisition, Lexicon Construction and Dictionary Compilation | http://www.aclweb.org/anthology/C/C94/C94-1043.pdf | category:paper author:Antonio Sanfilippo
+C94-1044 | lnterlinguai Lexical Organisation for Multilingual Lexical Databases in NADIA | http://www.aclweb.org/anthology/C/C94/C94-1044.pdf | category:paper author:Gilles Serasset
+C94-1045 | Manipulating human-oriented dictionaries with very simple tools | http://www.aclweb.org/anthology/C/C94/C94-1045.pdf | category:paper author:Jean Gaschler; Mathieu Lafourcade
+C94-1046 | TOWARDS LINGUISTIC KNOWLEDGE DISCOVERY ASSISTANTS: APPLICATION TO LEARNING LEXICAL PROPERTIES OF CHINESE CHARACTERS | http://www.aclweb.org/anthology/C/C94/C94-1046.pdf | category:paper author:Georges Fafiotte; Francois Tcheou
+C94-1047 | LOGIC COMPRESSION OF DICTIONARIES FOR MULTILINGUAL SPELLING CHECKERS | http://www.aclweb.org/anthology/C/C94/C94-1047.pdf | category:paper author:Boubaker Meddeb Hamrouni
+C94-1048 | Construction of a Bilingual Dictionary Intermediated by a Third Language | http://www.aclweb.org/anthology/C/C94/C94-1048.pdf | category:paper author:Kumiko Tanaka; Kyoji Umemura
+C94-1049 | CO-OCCURRENCE VECTORS FROM CORPORA VS. DISTANCE VECTORS FROM DICTIONARIES | http://www.aclweb.org/anthology/C/C94/C94-1049.pdf | category:paper author:Yoshiki Niwa; Yoshihiko Nitta
+C94-1050 | Analysis of Scene Identification Ability of Associative Memory with Pictorial Dictionary | http://www.aclweb.org/anthology/C/C94/C94-1050.pdf | category:paper author:Tatsuhiko Tsunoda; Hidehiko Tanaka
+C94-1051 | Anticipating the Reader's Problems and the Automatic Generation of Paraphrases | http://www.aclweb.org/anthology/C/C94/C94-1051.pdf | category:paper author:Nils Lenke
+C94-1052 | TGE: Tlinks Generation Environment | http://www.aclweb.org/anthology/C/C94/C94-1052.pdf | category:paper author:Alicia Ageno; Francesc Ribas; German Rigau; Horacio Rodriguez; Anna Samiotou
+C94-1053 | Planning Argumentative Texts | http://www.aclweb.org/anthology/C/C94/C94-1053.pdf | category:paper author:Xiaorong Huang
+C94-1054 | A HYBRID APPROACH TO THE AUTOMATIC PLANNING OF TEXTUAL STRUCTURES | http://www.aclweb.org/anthology/C/C94/C94-1054.pdf | category:paper author:Gang Zhu; Nigel Shadbolt
+C94-1055 | Generating Multilingual Documents from a Knowledge Base The TECHDOC Project | http://www.aclweb.org/anthology/C/C94/C94-1055.pdf | category:paper author:Dietmar Rosner; Manfred Stede
+C94-1056 | ABSTRACT GENERATION BASED ON RHETORICAL STRUCTURE EXTRACTION | http://www.aclweb.org/anthology/C/C94/C94-1056.pdf | category:paper author:Kenji Ono; Kazuo Sumita; Seiji Miike
+C94-1057 | The Correct Place of Lexical Semantics in Interlingual MT | http://www.aclweb.org/anthology/C/C94/C94-1057.pdf | category:paper author:Lori Levin; Sergei Nirenburg
+C94-1058 | DEFAULT HANDLING IN INCREMENTAL GENERATION | http://www.aclweb.org/anthology/C/C94/C94-1058.pdf | category:paper author:Karin Harbusch; Gen-ichiro Kikui; Anne Kilger
+C94-1059 | ENGLISH GENERATION FROM INTERLINGUA BY EXAMPLE-BASED METHOD | http://www.aclweb.org/anthology/C/C94/C94-1059.pdf | category:paper author:Eiji Komatsu; Jin Cui; Hiroshi Yasuhara
+C94-1060 | ON LEXICALLY BIASED DISCOURSE ORGANIZATION IN TEXT GENERATION | http://www.aclweb.org/anthology/C/C94/C94-1060.pdf | category:paper author:Leo Wanner
+C94-1061 | CONCURRENT LEXICALIZED DEPENDENCY PARSING: THE ParseTalk MODEL | http://www.aclweb.org/anthology/C/C94/C94-1061.pdf | category:paper author:Norbert Broker; Udo Hahn; Susanne Schacht
+C94-1062 | NOTES ON LR PARSER DESIGN | http://www.aclweb.org/anthology/C/C94/C94-1062.pdf | category:paper author:Christer Samuelsson
+C94-1063 | PARSING A FLEXIBLE WORD ORDER LANGUAGE | http://www.aclweb.org/anthology/C/C94/C94-1063.pdf | category:paper author:Vladimir Pericliev; Alexander Grigorov
+C94-1064 | PARSING AS TREE TRAVERSAL | http://www.aclweb.org/anthology/C/C94/C94-1064.pdf | category:paper author:Dale Gerdemann
+C94-1065 | LR(k)-Parsing of Coupled-Context-Free Grammars | http://www.aclweb.org/anthology/C/C94/C94-1065.pdf | category:paper author:Gisela Pitsch
+C94-1066 | CONSTRUCTING LEXICAL TRANSDUCERS | http://www.aclweb.org/anthology/C/C94/C94-1066.pdf | category:paper author:Lauri Karttunen
+C94-1067 | An HPSG Parser Based on Description Logics | http://www.aclweb.org/anthology/C/C94/C94-1067.pdf | category:paper author:J. Joachim Quantz 
+C94-1068 | An Efficient Parser Generator for Natural Language | http://www.aclweb.org/anthology/C/C94/C94-1068.pdf | category:paper author:Masayuki Ishii; Kazuhisa Ohta; Hiroaki Saito
+C94-1069 | EXPLORING THE ROLE OF PUNCTUATION IN PARSING NATURAL TEXT | http://www.aclweb.org/anthology/C/C94/C94-1069.pdf | category:paper author:Bernard E M Jones
+C94-1070 | THE "WHITEBOARD" ARCHITECTURE: A WAY TO INTEGRATE HETEROGENEOUS COMPONENTS OF NLP SYSTEMS | http://www.aclweb.org/anthology/C/C94/C94-1070.pdf | category:paper author:Christian Boitet; Mark Seligman
+C94-1071 | Two Parsing Algorithms by Means of Finite State Transducers | http://www.aclweb.org/anthology/C/C94/C94-1071.pdf | category:paper author:Emmanuel Roche
+C94-1072 | DISCO-An HPSG-based NLP System and its Application for Appointment Scheduling Project Note | http://www.aclweb.org/anthology/C/C94/C94-1072.pdf | category:paper author:Hans Uszkoreit; Rolf Backofen; Stephan Busemann; Abdel Kader Diagne; Elizabeth A. Hinkelman; Walter Kasper; Bernd Kiefer; Hans-Ulrich Krieger; Klaus Netter; Gunter Neumann; Stephan Oepen; Stephen P. Spackman
+C94-1073 | A Corpus-Based Learning Technique for Building A Self-Extensible Parser | http://www.aclweb.org/anthology/C/C94/C94-1073.pdf | category:paper author:Key-Long Liu; Von-Wun Soo
+C94-1074 | A "not-so-shallow" parser for collocational analysis | http://www.aclweb.org/anthology/C/C94/C94-1074.pdf | category:paper author:Basili R.; M.T. Pazienza; P. Velardi
+C94-1075 | A MODULAR ARCHITECTURE FOR CONSTRAINT-BASED PARSING | http://www.aclweb.org/anthology/C/C94/C94-1075.pdf | category:paper author:Francois Barthelemy; Francois Rouaix
+C94-1076 | Minimal Change and Bounded Incremental Parsing | http://www.aclweb.org/anthology/C/C94/C94-1076.pdf | category:paper author:Mats Wiren
+C94-1077 | Emergent Parsing and Generation with Generalized Chart | http://www.aclweb.org/anthology/C/C94/C94-1077.pdf | category:paper author:HASIDA Koiti
+C94-1078 | SYNTACTIC-HEAD-DRIVEN GENERATION | http://www.aclweb.org/anthology/C/C94/C94-1078.pdf | category:paper author:Esther Konig
+C94-1079 | PRINCIPAR - An Efficient, Broad-coverage, Principle-based Parser | http://www.aclweb.org/anthology/C/C94/C94-1079.pdf | category:paper author:Dekang Lin
+C94-1080 | CONCURRENT LEXICALIZED DEPENDENCY PARSING: A BEHAVIORAL VIEW ON ParseTalk EVENTS | http://www.aclweb.org/anthology/C/C94/C94-1080.pdf | category:paper author:Susanne Schacht; Udo Hahn; Norbert Broker
+C94-1081 | PARSING TURKISH USING THE LEXICAL FUNCTIONAL GRAMMAR FORMALISM | http://www.aclweb.org/anthology/C/C94/C94-1081.pdf | category:paper author:Zelal Gungordu; Kemal Oflazer
+C94-1082 | LHIP: Extended DCGs for Configurable Robust Parsing | http://www.aclweb.org/anthology/C/C94/C94-1082.pdf | category:paper author:Afzal Ballim; Graham Russell
+C94-1083 | CATEGORIAL GRAMMAR AND DISCOURSE REPRESENTATION THEORY | http://www.aclweb.org/anthology/C/C94/C94-1083.pdf | category:paper author:Reinhard Muskens
+C94-1084 | Towards Automatic Extraction of Monolingual and Bilingual Terminology | http://www.aclweb.org/anthology/C/C94/C94-1084.pdf | category:paper author:Beatrice Daille; Eric Gaussier; Jean-Marc Lange
+C94-1085 | Fax: An Alternative to SGML | http://www.aclweb.org/anthology/C/C94/C94-1085.pdf | category:paper author:Kenneth W. Church; William A. Gale; Jonathan I. Helfman; David D. Lewis
+C94-1086 | REFERRING TO WORLD OBJECTS WITH TEXT AND PICTURES | http://www.aclweb.org/anthology/C/C94/C94-1086.pdf | category:paper author:Elisabeth Andre; Thomas Rist
+C94-1087 | A TWO-LEVEL MORPHOLOGICAL ANALYSIS OF KOREAN | http://www.aclweb.org/anthology/C/C94/C94-1087.pdf | category:paper author:Deok-Bong Kim; Sung-Jin Lee; Key-Sun Choi; Gil-Chang Kim
+C94-1088 | Character-based Collocation for Mandarin Chinese | http://www.aclweb.org/anthology/C/C94/C94-1088.pdf | category:paper author:Chu-Ren Huang; Keh-jiann Chen; Yun-yan Yang
+C94-1089 | LEXICAL, KNOWLEDGE REPRESENTATION IN AN INTELLIGENT DICTIONARY HELP SYSTEM | http://www.aclweb.org/anthology/C/C94/C94-1089.pdf | category:paper author:E. Agirre; X. Arregi; X. Artola; A. Diaz de Ilarraza; K. Sarasola
+C94-1090 | REVERSIBLE RESOLUTION WITH AN APPLICATION TO PARAPHRASING | http://www.aclweb.org/anthology/C/C94/C94-1090.pdf | category:paper author:Matthew Hurst
+C94-1091 | CLASSIFIER ASSIGNMENT BY CORPUS-BASED APPROACH | http://www.aclweb.org/anthology/C/C94/C94-1091.pdf | category:paper author:Virach Sornlertlamvanich; Wantanee Pantachat; Surapant Meknavin
+C94-1092 | ANNOTATING 200 MILLION WORDS: THE BANK OF ENGLISH PROJECT | http://www.aclweb.org/anthology/C/C94/C94-1092.pdf | category:paper author:Time Jarvinen
+C94-1093 | Restructuring Tagged Corpora with Morpheme Adjustment Rules | http://www.aclweb.org/anthology/C/C94/C94-1093.pdf | category:paper author:Toshihisa Tashiro; Noriyoshi Uratani; Tsuyoshi Morimoto
+C94-1094 | Encoding standards for large text resources: The Text Encoding Initiative | http://www.aclweb.org/anthology/C/C94/C94-1094.pdf | category:paper author:Nancy Ide
+C94-1095 | INTEX: A CORPUS PROCESSING SYSTEM | http://www.aclweb.org/anthology/C/C94/C94-1095.pdf | category:paper author:Max D. Silberztein
+C94-1096 | AN IBM-PC ENVIRONMENT FOR CHINESE CORPUS ANALYSIS | http://www.aclweb.org/anthology/C/C94/C94-1096.pdf | category:paper author:Robert Wing Pong Luk
+C94-1097 | MULTEXT: Multilingual Text Tools and Corpora | http://www.aclweb.org/anthology/C/C94/C94-1097.pdf | category:paper author:Nancy Ide; Jean Veronis
+C94-1098 | A PARSER COPING WITH SELF-REPAIRED JAPANESE UTTERANCES AND LARGE CORPUS-BASED EVALUATION | http://www.aclweb.org/anthology/C/C94/C94-1098.pdf | category:paper author:Yuji Sagawa; Noboru Ohnishi; Noboru Sugie
+C94-1099 | A TOOL FOR COLLECTING DOMAIN DEPENDENT SORTAL CONSTRAINTS FROM CORPORA | http://www.aclweb.org/anthology/C/C94/C94-1099.pdf | category:paper author:Francois Andry; Mark Gawron; John Dowding; Robert Moore
+C94-1100 | BUILDING A LEXICAL DOMAIN MAP FROM TEXT CORPORA | http://www.aclweb.org/anthology/C/C94/C94-1100.pdf | category:paper author:Tomek Strzalkowski
+C94-1101 | A New Method of N-gram Statistics for Large Number of n and Automatic Extraction of Words and Phrases from Large Text Data of Japanese | http://www.aclweb.org/anthology/C/C94/C94-1101.pdf | category:paper author:Makoto Nagao; Shinsuke Mori
+C94-1102 | Non-directionality and Self-Assessment in an Example-based System Using Genetic Algorithms | http://www.aclweb.org/anthology/C/C94/C94-1102.pdf | category:paper author:Yves Lepage
+C94-1103 | CLAWS4: THE TAGGING OF THE BRITISH NATIONAL CORPUS | http://www.aclweb.org/anthology/C/C94/C94-1103.pdf | category:paper author:Geoffrey Leech; Roger Garside; Michael Bryant
+C94-1104 | SYNTACTIC ANALYSIS OF NATURAL LANGUAGE USING LINGUISTIC RULES AND CORPUS-BASED PATTERNS | http://www.aclweb.org/anthology/C/C94/C94-1104.pdf | category:paper author:Pasi Tapanainen; Timo Jarvinen
+C94-2105 | WORD SENSE ACQUISITION FOR MULTILINGUAL TEXT INTERPRETATION | http://www.aclweb.org/anthology/C/C94/C94-2105.pdf | category:paper author:Paul S. Jacobs
+C94-2106 | A System of Verbal Semantic Attributes Focused on the Syntactic Correspondence between Japanese and English | http://www.aclweb.org/anthology/C/C94/C94-2106.pdf | category:paper author:Hiromi Nakaiwa; Akio Yokoo; Satoru Ikehara
+C94-2107 | Semantics of Complex Sentences in Japanese | http://www.aclweb.org/anthology/C/C94/C94-2107.pdf | category:paper author:Hiroshi Nakagawa; Shin-ichiro Nishizawa
+C94-2108 | CONTENT CHARACTERIZATION USING WORD SHAPE TOKENS | http://www.aclweb.org/anthology/C/C94/C94-2108.pdf | category:paper author:Penelope Sibun; David S. Farrar
+C94-2109 | THE NATURE OF NEAR-SYNONYMIC RELATIONS | http://www.aclweb.org/anthology/C/C94/C94-2109.pdf | category:paper author:Chrysanne DiMarco
+C94-2110 | Virtual Polysemy | http://www.aclweb.org/anthology/C/C94/C94-2110.pdf | category:paper author:Antonio Sanfilippo; Kerima Benkerimi; Dagmar Dwehus
+C94-2111 | BUILDING A WINDOWS-BASED BILINGUAL FUNCTIONAL SEMANTIC PROCESSOR | http://www.aclweb.org/anthology/C/C94/C94-2111.pdf | category:paper author:Jonathan J Webster
+C94-2112 | On the Proper Role of Coercion in Semantic Typing | http://www.aclweb.org/anthology/C/C94/C94-2112.pdf | category:paper author:James Pustejovsky; Pierrette Bouillon
+C94-2113 | WORD SENSE AMBIGUATION: CLUSTERING RELATED SENSES | http://www.aclweb.org/anthology/C/C94/C94-2113.pdf | category:paper author:William B. Dolan 
+C94-2114 | A Best-Match Algorithm for Broad-Coverage Example-Based Disambiguation | http://www.aclweb.org/anthology/C/C94/C94-2114.pdf | category:paper author:Naohiko Uramoto
+C94-2115 | Drawing Pictures with Natural Language and Direct Manipulation | http://www.aclweb.org/anthology/C/C94/C94-2115.pdf | category:paper author:Mayumi Hiyoshi; Hideo Shimazu
+C94-2116 | VERBAL CASE FRAME ACQUISITION FROM A BILINGUAL CORPUS: GRADUAL KNOWLEDGE ACQUISITION | http://www.aclweb.org/anthology/C/C94/C94-2116.pdf | category:paper author:Hideki Tanaka
+C94-2117 | AN EMPIRICAL STUDY ON THE GENERATION OF ZERO ANAPHORS IN CHINESE | http://www.aclweb.org/anthology/C/C94/C94-2117.pdf | category:paper author:Ching-Long Yeh; Chris Mellish
+C94-2118 | Representing Information Need with Semantic Relations | http://www.aclweb.org/anthology/C/C94/C94-2118.pdf | category:paper author:Anil S. Chakravarthy
+C94-2119 | Generalizing Automatically Generated Selectional Patterns | http://www.aclweb.org/anthology/C/C94/C94-2119.pdf | category:paper author:Ralph Grishman; John Sterling
+C94-2120 | INCREMENTAL INTERPRETATION: APPLICATIONS, THEORY, AND RELATIONSHIP TO DYNAMIC SEMANTICS | http://www.aclweb.org/anthology/C/C94/C94-2120.pdf | category:paper author:David Milward; Robin Cooper
+C94-2121 | Word Sense Disambiguation and Text Segmentation Based on Lexical Cohesion | http://www.aclweb.org/anthology/C/C94/C94-2121.pdf | category:paper author:Manabu Okumura; Takeo Honda
+C94-2122 | Automatic Recognition of Verbal Polysemy | http://www.aclweb.org/anthology/C/C94/C94-2122.pdf | category:paper author:Fumiyo Fukumoto; Jun'ichi Tsujii
+C94-2123 | AN EXPERIMENT ON LEARNING APPROPRIATE SELECTIONAL RESTRICTIONS FROM A PARSED CORPUS | http://www.aclweb.org/anthology/C/C94/C94-2123.pdf | category:paper author:Francesc Ribas Framis
+C94-2124 | A DISCRETE MODEL OF DEGREE CONCEPT IN NATURAL LANGUAGE | http://www.aclweb.org/anthology/C/C94/C94-2124.pdf | category:paper author:Shin-ichiro Kamei; Kazunori Muraki
+C94-2125 | ALGORITHM FOR AUTOMATIC INTERPRETATION OF NOUN SEQUENCES | http://www.aclweb.org/anthology/C/C94/C94-2125.pdf | category:paper author:Lucy Vanderwende
+C94-2126 | A TREATMENT OF FUNCTIONAL DEFINITE DESCRIPTIONS | http://www.aclweb.org/anthology/C/C94/C94-2126.pdf | category:paper author:Hajime Wada
+C94-2127 | Bottom-Up Earley Deduction | http://www.aclweb.org/anthology/C/C94/C94-2127.pdf | category:paper author:Gregor Erbach
+C94-2128 | THE MERGED UPPER MODEL: A LINGUISTIC ONTOLOGY FOR GERMAN AND ENGLISH | http://www.aclweb.org/anthology/C/C94/C94-2128.pdf | category:paper author:Renate Henschel; John Bateman
+C94-2129 | MODELING DIALOGUE BY FUNCTIONAL SUB CATEGORIZATION | http://www.aclweb.org/anthology/C/C94/C94-2129.pdf | category:paper author:J. R. Zubizarreta Aizpuru; Craig Jones
+C94-2130 | Dutch Cross Serial Dependencies in HPSG | http://www.aclweb.org/anthology/C/C94/C94-2130.pdf | category:paper author:Gerrit Rentier
+C94-2131 | HPSG LEXICON WITHOUT LEXICAL RULES | http://www.aclweb.org/anthology/C/C94/C94-2131.pdf | category:paper author:Karel Oliva
+C94-2132 | A LEXICON OF DISTRIBUTED NOUN REPRESENTATIONS CONSTRUCTED BY TAXONOMIC TRAVERSAL | http://www.aclweb.org/anthology/C/C94/C94-2132.pdf | category:paper author:Richard F.E. Sutcliffe; Donie O'Sullivan; Fergus Meharg
+C94-2133 | Multi-Modal Definite Clause Grammar | http://www.aclweb.org/anthology/C/C94/C94-2133.pdf | category:paper author:Hideo Shimazu; Seigo Arita; Yosuke Takashima
+C94-2134 | Hypothesis Selection in Grammar Acquisition | http://www.aclweb.org/anthology/C/C94/C94-2134.pdf | category:paper author:Masaki Kiyono; Jun'ichi Tsujii
+C94-2135 | ACHIEVING FLEXIBILITY IN UNIFICATION FORMALISMS | http://www.aclweb.org/anthology/C/C94/C94-2135.pdf | category:paper author:Lena Stromback
+C94-2136 | TWP: How to Assist English Production on Japanese Word Processor | http://www.aclweb.org/anthology/C/C94/C94-2136.pdf | category:paper author:Kazunori Muraki; Susunm Akamine; Kenji Satoh; Sinichi Ando
+C94-2137 | Long-Distance Dependencies and Applicative Universal Grammar | http://www.aclweb.org/anthology/C/C94/C94-2137.pdf | category:paper author:Sebastian Shaumyan
+C94-2138 | A Reestimation Algorithm for Probabilistic ttecursive Transition Network | http://www.aclweb.org/anthology/C/C94/C94-2138.pdf | category:paper author:Young S. Han; Key-Sun Choi
+C94-2139 | Analysis of Japanese Compound Nouns using Collocational Information | http://www.aclweb.org/anthology/C/C94/C94-2139.pdf | category:paper author:Yosiyuki Kobayasi; Takenobu Tokunaga; Hozumi Tanaka
+C94-2140 | Free-ordered CUG on Chemical Abstract Machine | http://www.aclweb.org/anthology/C/C94/C94-2140.pdf | category:paper author:Satoshi Tojo
+C94-2141 | COMPUTING FIRST AND FOLLOW FUNCTIONS FOR FEATURE-THEORETIC GRAMMARS | http://www.aclweb.org/anthology/C/C94/C94-2141.pdf | category:paper author:Arturo Trujillo
+C94-2142 | FOCUS ON "ONLY" AND "NOT" | http://www.aclweb.org/anthology/C/C94/C94-2142.pdf | category:paper author:Allan Ramsay
+C94-2143 | STRUCTURE SHARING PROBLEM AND ITS SOLUTION IN GRAPH UNIFICATION | http://www.aclweb.org/anthology/C/C94/C94-2143.pdf | category:paper author:Kiyoshi Kogure
+C94-2144 | TDL-A Type Description Language for Constraint-Based Grammars | http://www.aclweb.org/anthology/C/C94/C94-2144.pdf | category:paper author:Hans-Ulrich Krieger; Ulrich Schafer
+C94-2145 | ON THE PORTABILITY OF COMPLEX CONSTRAINT-BASED GRAMMARS | http://www.aclweb.org/anthology/C/C94/C94-2145.pdf | category:paper author:C.J. Rupp; Rod Johnson
+C94-2146 | A GRAMMAR BASED APPROACH TO A GRAMMAR CHECKING OF  FREE WORD ORDER LANGUAGES | http://www.aclweb.org/anthology/C/C94/C94-2146.pdf | category:paper author:Vladislav Kubon; Martin Platek
+C94-2147 | Table-driven Neural Syntactic Analysis of Spoken Korean | http://www.aclweb.org/anthology/C/C94/C94-2147.pdf | category:paper author:Wonll Lee; Geunbae Lee; Jong-Hyeok Lee
+C94-2148 | UNIVERSAL GUIDES AND FINITENESS AND SYMMETRY OF GRAMMAR PROCESSING ALGORITHMS | http://www.aclweb.org/anthology/C/C94/C94-2148.pdf | category:paper author:Miroslav Martinovie
+C94-2149 | XTAG System - A Wide Coverage Grammar for English | http://www.aclweb.org/anthology/C/C94/C94-2149.pdf | category:paper author:Christy Doran; Dania Egedi; Beth Ann Hockey; B. Srinivas; Martin Zaidel
+C94-2150 | Weakly Restricted Stochastic Grammars | http://www.aclweb.org/anthology/C/C94/C94-2150.pdf | category:paper author:Rieks op den Akker; Hugo ter Doest
+C94-2151 | NON-CONSTITUENT COORDINATION: THEORY AND PRACTICE | http://www.aclweb.org/anthology/C/C94/C94-2151.pdf | category:paper author:David Milward
+C94-2152 | Hypothesis Scoring over Theta Grids Information in Parsing Chinese Sentences with Serial Verb Constructions | http://www.aclweb.org/anthology/C/C94/C94-2152.pdf | category:paper author:Koong H. C. Lin; Von-Wun Soo
+C94-2153 | AN EFFICIENT SYNTACTIC TAGGING TOOL FOR CORPORA | http://www.aclweb.org/anthology/C/C94/C94-2153.pdf | category:paper author:Ming Zhou; Changning Huang
+C94-2154 | THE CORRECT AND EFFICIENT IMPLEMENTATION OF APPROPRIATENESS SPECIFICATIONS FOR TYPED FEATURE STRUCTURES | http://www.aclweb.org/anthology/C/C94/C94-2154.pdf | category:paper author:Dale Gerdemann; Paul John King
+C94-2155 | A CLASSIFICATION METHOD FOR JAPANESE SIGNS USING MANUAL MOTION DESCRIPTIONS | http://www.aclweb.org/anthology/C/C94/C94-2155.pdf | category:paper author:Hisahiro Adachi; Kazuo Kamata
+C94-2156 | Machine-Readable Dictionaries in Text-to-Speech Systems | http://www.aclweb.org/anthology/C/C94/C94-2156.pdf | category:paper author:Judith L. Klavans; Evelyne Tzoukermann
+C94-2157 | ISSUES IN TEXT-TO-SPEECH FOR FRENCH | http://www.aclweb.org/anthology/C/C94/C94-2157.pdf | category:paper author:Evelyne Tzoukermann
+C94-2158 | CHATR: a generic speech synthesis system | http://www.aclweb.org/anthology/C/C94/C94-2158.pdf | category:paper author:Alan W Black; Paul Taylor
+C94-2159 | PAUSE AS A PHRASE DEMARCATOR FOR SPEECH AND LANGUAGE PROCESSING | http://www.aclweb.org/anthology/C/C94/C94-2159.pdf | category:paper author:Junko Hosaka; Mark Seligman; Harald Singer
+C94-2160 | THE PARSODY SYSTEM: AUTOMATIC PREDICTION OF PROSODIC BOUNDARIES FOR TEXT-TO-SPEECH | http://www.aclweb.org/anthology/C/C94/C94-2160.pdf | category:paper author:Stephen Minnis
+C94-2161 | Anytime Algorithms for Speech Parsing? | http://www.aclweb.org/anthology/C/C94/C94-2161.pdf | category:paper author:Gunther Gorz; Marcus Kesseler
+C94-2162 | Towards a Proper Linguistic and Computational Treatment of Scrambling: An Analysis of Japanese | http://www.aclweb.org/anthology/C/C94/C94-2162.pdf | category:paper author:Sandiway Pong
+C94-2163 | Phonological Derivation in Optimality Theory | http://www.aclweb.org/anthology/C/C94/C94-2163.pdf | category:paper author:T. Mark Ellison
+C94-2164 | A GRAMMAR AND A PARSER FOR SPONTANEOUS SPEECH | http://www.aclweb.org/anthology/C/C94/C94-2164.pdf | category:paper author:Mikio Nakano; Akira Shimazu; Kiyoshi Kogure
+C94-2165 | CATCHING THE CHESHIRE CAT | http://www.aclweb.org/anthology/C/C94/C94-2165.pdf | category:paper author:Christer Johansson
+C94-2166 | A Dutch to SQL database interface using Generalized Quantifier Theory | http://www.aclweb.org/anthology/C/C94/C94-2166.pdf | category:paper author:Dirk Speelman; Geert Adriaens
+C94-2167 | A METHODOLOGY FOR AUTOMATIC TERM RECOGNITION | http://www.aclweb.org/anthology/C/C94/C94-2167.pdf | category:paper author:Sophia Ananiadou
+C94-2168 | Knowledge Extraction from Texts: a method for extracting predicate-argument structures from texts | http://www.aclweb.org/anthology/C/C94/C94-2168.pdf | category:paper author:Florence Pugeault; Patrick Saint-Dizier; Marie-Gaelle Monteil
+C94-2169 | Thesaurus-based Efficient Example Retrieval by Generating Retrieval Queries from Similarities | http://www.aclweb.org/anthology/C/C94/C94-2169.pdf | category:paper author:Takehito Utsuro; Kiyotaka Uchimoto; Mitsutaka Matsumoto; Makoto Nagao
+C94-2170 | Tools for Extracting and Structuring Knowledge from Texts | http://www.aclweb.org/anthology/C/C94/C94-2170.pdf | category:paper author:Antoine Ogonowski; Marie Luce Herviou; Eva Dauphin
+C94-2171 | N-GRAM CLUSTER IDENTIFICATION DURING EMPIRICAL KNOWLEDGE REPRESENTATION GENERATION | http://www.aclweb.org/anthology/C/C94/C94-2171.pdf | category:paper author:Robin Collier
+C94-2172 | DOCUMENT CLASSIFICATION BY MACHINE:Theory and Practice | http://www.aclweb.org/anthology/C/C94/C94-2172.pdf | category:paper author:Louise Guthrie; Elbert Walker
+C94-2173 | PATTERN MATCHING IN THE TEXTRACT INFORMATION EXTRACTION SYSTEM | http://www.aclweb.org/anthology/C/C94/C94-2173.pdf | category:paper author:Tsuyoshi Kitani; Yoshio Eriguchi; Masami Hara
+C94-2174 | RECOGNIZING TEXT GENRES WITH SIMPLE METRICS USING DISCRIMINANT ANALYSIS | http://www.aclweb.org/anthology/C/C94/C94-2174.pdf | category:paper author:Jussi Karlgren; Douglass Cutting
+C94-2175 | Bilingual Text, Matching using Bilingual Dictionary and Statistics | http://www.aclweb.org/anthology/C/C94/C94-2175.pdf | category:paper author:Takehito Utsuro; Hiroshi Ikeda; Masaya Yamane; Yuji Matsumoto; Makoto Nagao
+C94-2176 | TOWARDS A MORE USER-FRIENDLY CORRECTION | http://www.aclweb.org/anthology/C/C94/C94-2176.pdf | category:paper author:Damien Genthial; Jacques Courtin; Jacques Menezo
+C94-2177 | Reverse Queries in DATR | http://www.aclweb.org/anthology/C/C94/C94-2177.pdf | category:paper author:Hagen Langer
+C94-2178 | K-vec: A New Approach for Aligning Parallel Texts | http://www.aclweb.org/anthology/C/C94/C94-2178.pdf | category:paper author:Pascale Fung; Kenneth Ward Church
+C94-2179 | A FORMAL REPRESENTATION OF THE THEMATIC-RHEMATIC STRUCTURE OF SENTENCES BASED ON A TYPED A-CALCULUS | http://www.aclweb.org/anthology/C/C94/C94-2179.pdf | category:paper author:Yoichi Uetake
+C94-2180 | CUSTOMIZING AND EVALUATING A MULTILINGUAL DISCOURSE MODULE | http://www.aclweb.org/anthology/C/C94/C94-2180.pdf | category:paper author:Chinatsu Aone
+C94-2181 | CONSEQUENCE RELATIONS IN DRT | http://www.aclweb.org/anthology/C/C94/C94-2181.pdf | category:paper author:Seiki Akama; Yotaro Nakayama
+C94-2182 | COLLABORATION ON REFERENCE TO OBJECTS THAT ARE NOT MUTUALLY KNOWN | http://www.aclweb.org/anthology/C/C94/C94-2182.pdf | category:paper author:Philip G. Edmonds
+C94-2183 | Automatic Detection of Discourse Structure by Checking Surface Information in Sentences | http://www.aclweb.org/anthology/C/C94/C94-2183.pdf | category:paper author:Sadao Kurohashi; Makoto Nagao
+C94-2184 | EXTENDING DRT WITH A FOCUSING MECHANISM FOR PRONOMINAL ANAPHORA AND ELLIPSIS RESOLUTION | http://www.aclweb.org/anthology/C/C94/C94-2184.pdf | category:paper author:Jose Abracos; Jose Gabriel Lopes
+C94-2185 | REFERENCE RESOLUTION USING SEMANTIC PATTERNS IN JAPANESE NEWSPAPER ARTICLES | http://www.aclweb.org/anthology/C/C94/C94-2185.pdf | category:paper author:Takahiro Wakao
+C94-2186 | EXPLOITING REFERENCE INTERACTION IN RESOLVING TEMPORAL REFERENCE | http://www.aclweb.org/anthology/C/C94/C94-2186.pdf | category:paper author:Kohji Dohsaka
+C94-2187 | A GRAMMATICO-STATISTICAL APPROACH TO DISCOURSE PARTITIONING | http://www.aclweb.org/anthology/C/C94/C94-2187.pdf | category:paper author:Tadashi Nomoto; Yoshihiko Nitta
+C94-2188 | Centering in Japanese: A Step Towards Better Interpretation of Pronouns and Zero-Pronouns | http://www.aclweb.org/anthology/C/C94/C94-2188.pdf | category:paper author:Shingo Takada; Norihisa Doi
+C94-2189 | ROBUST METHOD OF PRONOUN RESOLUTION USING FULL-TEXT INFORMATION | http://www.aclweb.org/anthology/C/C94/C94-2189.pdf | category:paper author:Tetsuya Nasukawa
+C94-2190 | Towards a Dynamic Theory of Belief-Sharing in Cooperative Dialogues | http://www.aclweb.org/anthology/C/C94/C94-2190.pdf | category:paper author:Hisashi Komatsu; Norihiro Ogata; Akira Ishikawa
+C94-2191 | AN INTEGRATED MODEL FOR ANAPHORA RESOLUTION | http://www.aclweb.org/anthology/C/C94/C94-2191.pdf | category:paper author:Ruslan Mitkov
+C94-2192 | Breaking Down Rhetorical Relations for the purpose of Analysing Discourse Structures | http://www.aclweb.org/anthology/C/C94/C94-2192.pdf | category:paper author:Jun'ichi Fukumoto; Jun'ichi Tsujii
+C94-2193 | PRESUPPOSITION & VP-ELLIPSIS | http://www.aclweb.org/anthology/C/C94/C94-2193.pdf | category:paper author:Johan Bos
+C94-2194 | COMMUNICATING WITH MULTIPLE AGENTS | http://www.aclweb.org/anthology/C/C94/C94-2194.pdf | category:paper author:Elizabeth A. Hinkelman; Stephen P. Spackman
+C94-2195 | A Rule-Based Approach to Prepositional Phrase Attachment Disambiguation | http://www.aclweb.org/anthology/C/C94/C94-2195.pdf | category:paper author:Eric Brill; Philip Resnik
+C94-2196 | Discourse and Deliberation: Testing a Collaborative Strategy | http://www.aclweb.org/anthology/C/C94/C94-2196.pdf | category:paper author:Marilyn A. Walker
+C94-2197 | A Bayesian Approach for User Modeling in Dialogue Systems | http://www.aclweb.org/anthology/C/C94/C94-2197.pdf | category:paper author:Tomoyosi Akiba; Hozumi Tanaka
+C94-2198 | WORD CLASS DISCOVERY FOR POSTPROCESSING CHINESE HANDWRITING RECOGNITION | http://www.aclweb.org/anthology/C/C94/C94-2198.pdf | category:paper author:Chao-Huang Chang
+C94-2199 | A Simple Transformation for Offline-Parsable Grammars and its Termination Properties | http://www.aclweb.org/anthology/C/C94/C94-2199.pdf | category:paper author:Marc Dymetman
+C94-2200 | THE EVOLUTION OF MACHINE-TRACTABLE DICTIONARIES | http://www.aclweb.org/anthology/C/C94/C94-2200.pdf | category:paper author:Cheng-ming Guo; Chang-ning Huang; Jun-ping Gong; Jin Li
+C94-2201 | DISCONTINUITY AND THE LAMBEK CALCULUS | http://www.aclweb.org/anthology/C/C94/C94-2201.pdf | category:paper author:Mark Hepple
+C94-2202 | LEXICAL FUNCTIONS AND MACHINE TRANSLATION | http://www.aclweb.org/anthology/C/C94/C94-2202.pdf | category:paper author:Dirk Heylen; Kerry G. Maxwell; Marc Verhagen
+C94-2203 | CHINESE SEGMENTATION DISAMBIGUATION | http://www.aclweb.org/anthology/C/C94/C94-2203.pdf | category:paper author:Wanying Jin
+C94-2204 | TYPED FEATURE STRUCTURES AS DESCRIPTIONS | http://www.aclweb.org/anthology/C/C94/C94-2204.pdf | category:paper author:Paul John King
+C94-2205 | Portuguese Analysis with Tree Adjoining Grammars | http://www.aclweb.org/anthology/C/C94/C94-2205.pdf | category:paper author:Karin Christine Kipper; Vera Lucia Strube de Lima
+C94-2206 | Incremental Construction of a Lexical Transducer for Korean | http://www.aclweb.org/anthology/C/C94/C94-2206.pdf | category:paper author:Hyuk-Chul Kwon; Lauri Karttunen
+C94-2207 | DYNAMIC LOGIC WITH POSSIBLE WORLD | http://www.aclweb.org/anthology/C/C94/C94-2207.pdf | category:paper author:Ruzhan Lu
+C94-2208 | HUMOR-BASED APPLICATIONS | http://www.aclweb.org/anthology/C/C94/C94-2208.pdf | category:paper author:Gabor Proszeky; Miklos Pal; Laszlo Tihanyi
+C94-2209 | BLENDING SEGMENTATION WITH TAGGING IN CHINESE LANGUAGE CORPUS PROCESSING | http://www.aclweb.org/anthology/C/C94/C94-2209.pdf | category:paper author:Zhou Qiang; Yu Shiwen
+C94-2210 | Syllable-based Phonetic transcription by Maximum Likelihood Methods | http://www.aclweb.org/anthology/C/C94/C94-2210.pdf | category:paper author:R.A. Sharman
+C94-2211 | A Knowledge Acquisition and Management System for Morphological Dictionaries | http://www.aclweb.org/anthology/C/C94/C94-2211.pdf | category:paper author:Pius ten Hacken; Stephan Bopp; Marc Domenig; Dieter Holz; Alain Hsiung; Sandro Pedrazzini
+C94-2212 | NL Understanding with a Grammar of Constructions | http://www.aclweb.org/anthology/C/C94/C94-2212.pdf | category:paper author:Wlodek Zadrozny; Marcin Szummer; Stanislaw Jarecki; David E. Johnson; Leora Morgenstern

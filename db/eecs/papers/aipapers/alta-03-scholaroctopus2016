@@ -1,18 +1,18 @@
-U03-1001 | Incremental chart parsing with predictive hints | http://www.aclweb.org/anthology/U/U03/U03-1001.pdf | author:Rolf Schwitter
-U03-1002 | ’One’-anaphora and the case for discourse-driven referring expression generation | http://www.aclweb.org/anthology/U/U03/U03-1002.pdf | author:Robert Dale
-U03-1003 | Application of search algorithms to natural language processing | http://www.aclweb.org/anthology/U/U03/U03-1003.pdf | author:Takeshi Matsumoto; David M. W. Powers; Geoff Jarrad
-U03-1004 | An empirical study for generating zero pronoun in Korean based on Cost-based centering model | http://www.aclweb.org/anthology/U/U03/U03-1004.pdf | author:Ji-Eun Roh; Jong-Hyeok Lee
-U03-1005 | S-clause segmentation for efficient syntactic analysis using decision trees | http://www.aclweb.org/anthology/U/U03/U03-1005.pdf | author:Mi-Young Kim; Jong-Hyeok Lee
-U03-1006 | Syntactic disambiguation using presupposition resolution | http://www.aclweb.org/anthology/U/U03/U03-1006.pdf | author:Alistair Knott; Peter Vlugter
-U03-1007 | The Ins and Outs of Dutch noun countability classification | http://www.aclweb.org/anthology/U/U03/U03-1007.pdf | author:Timothy Baldwin; Leonoor van der Beek
-U03-1008 | Encoding and presenting interlinear text using XML technologies | http://www.aclweb.org/anthology/U/U03/U03-1008.pdf | author:Baden Hughes; Steven Bird; Catherine Bow
-U03-1009 | A queueing-theory model of word frequency distributions | http://www.aclweb.org/anthology/U/U03/U03-1009.pdf | author:Robert Munro
-U03-1010 | T-code compression for Arabic computational morphology | http://www.aclweb.org/anthology/U/U03/U03-1010.pdf | author:Jim Yaghi; Mark R. Titchener; Sane Yagi
-U03-1011 | Performance metrics for word sense disambiguation | http://www.aclweb.org/anthology/U/U03/U03-1011.pdf | author:Trevor Cohn
-U03-1012 | Straight to the point: Discovering themes for summary generation | http://www.aclweb.org/anthology/U/U03/U03-1012.pdf | author:Stephen Wan; Mark Dras; Cecile Paris; Robert Dale
-U03-1013 | Resolving Sense Ambiguity of Korean Nouns Based on Concept Co-occurrence Information | http://www.aclweb.org/anthology/U/U03/U03-1013.pdf | author:You-Jin Chung; Jong-Hyeok Lee
-U03-1014 | Towards semantic-based overlap measures for question-answering | http://www.aclweb.org/anthology/U/U03/U03-1014.pdf | author:Diego Mollá
-U03-1015 | The importance of high-quality input for WSD: an application-oriented comparison of part-of-speech taggers | http://www.aclweb.org/anthology/U/U03/U03-1015.pdf | author:Tanja Gaustad
-U03-1016 | Conceptual Schema Approach to Natural Language Database Access | http://www.aclweb.org/anthology/U/U03/U03-1016.pdf | author:In-Su Kang; Seung-Hoon Na; Jong-Hyeok Lee
-U03-1017 | Document classification in structured military messages | http://www.aclweb.org/anthology/U/U03/U03-1017.pdf | author:Oliver Carr; Dominique Estival
-U03-1018 | Identifying interpersonal distance using systemic features | http://www.aclweb.org/anthology/U/U03/U03-1018.pdf | author:Maria Herke-Couchman; Casey Whitelaw
+U03-1001 | Incremental chart parsing with predictive hints | http://www.aclweb.org/anthology/U/U03/U03-1001.pdf | category:paper author:Rolf Schwitter
+U03-1002 | ’One’-anaphora and the case for discourse-driven referring expression generation | http://www.aclweb.org/anthology/U/U03/U03-1002.pdf | category:paper author:Robert Dale
+U03-1003 | Application of search algorithms to natural language processing | http://www.aclweb.org/anthology/U/U03/U03-1003.pdf | category:paper author:Takeshi Matsumoto; David M. W. Powers; Geoff Jarrad
+U03-1004 | An empirical study for generating zero pronoun in Korean based on Cost-based centering model | http://www.aclweb.org/anthology/U/U03/U03-1004.pdf | category:paper author:Ji-Eun Roh; Jong-Hyeok Lee
+U03-1005 | S-clause segmentation for efficient syntactic analysis using decision trees | http://www.aclweb.org/anthology/U/U03/U03-1005.pdf | category:paper author:Mi-Young Kim; Jong-Hyeok Lee
+U03-1006 | Syntactic disambiguation using presupposition resolution | http://www.aclweb.org/anthology/U/U03/U03-1006.pdf | category:paper author:Alistair Knott; Peter Vlugter
+U03-1007 | The Ins and Outs of Dutch noun countability classification | http://www.aclweb.org/anthology/U/U03/U03-1007.pdf | category:paper author:Timothy Baldwin; Leonoor van der Beek
+U03-1008 | Encoding and presenting interlinear text using XML technologies | http://www.aclweb.org/anthology/U/U03/U03-1008.pdf | category:paper author:Baden Hughes; Steven Bird; Catherine Bow
+U03-1009 | A queueing-theory model of word frequency distributions | http://www.aclweb.org/anthology/U/U03/U03-1009.pdf | category:paper author:Robert Munro
+U03-1010 | T-code compression for Arabic computational morphology | http://www.aclweb.org/anthology/U/U03/U03-1010.pdf | category:paper author:Jim Yaghi; Mark R. Titchener; Sane Yagi
+U03-1011 | Performance metrics for word sense disambiguation | http://www.aclweb.org/anthology/U/U03/U03-1011.pdf | category:paper author:Trevor Cohn
+U03-1012 | Straight to the point: Discovering themes for summary generation | http://www.aclweb.org/anthology/U/U03/U03-1012.pdf | category:paper author:Stephen Wan; Mark Dras; Cecile Paris; Robert Dale
+U03-1013 | Resolving Sense Ambiguity of Korean Nouns Based on Concept Co-occurrence Information | http://www.aclweb.org/anthology/U/U03/U03-1013.pdf | category:paper author:You-Jin Chung; Jong-Hyeok Lee
+U03-1014 | Towards semantic-based overlap measures for question-answering | http://www.aclweb.org/anthology/U/U03/U03-1014.pdf | category:paper author:Diego Mollá
+U03-1015 | The importance of high-quality input for WSD: an application-oriented comparison of part-of-speech taggers | http://www.aclweb.org/anthology/U/U03/U03-1015.pdf | category:paper author:Tanja Gaustad
+U03-1016 | Conceptual Schema Approach to Natural Language Database Access | http://www.aclweb.org/anthology/U/U03/U03-1016.pdf | category:paper author:In-Su Kang; Seung-Hoon Na; Jong-Hyeok Lee
+U03-1017 | Document classification in structured military messages | http://www.aclweb.org/anthology/U/U03/U03-1017.pdf | category:paper author:Oliver Carr; Dominique Estival
+U03-1018 | Identifying interpersonal distance using systemic features | http://www.aclweb.org/anthology/U/U03/U03-1018.pdf | category:paper author:Maria Herke-Couchman; Casey Whitelaw

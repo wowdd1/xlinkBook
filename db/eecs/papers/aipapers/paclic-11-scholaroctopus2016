@@ -1,67 +1,67 @@
-Y11-1001 | Web based English-Chinese OOV term translation using Adaptive rules and Recursive feature selection | http://www.aclweb.org/anthology/Y/Y11/Y11-1001.pdf | author:Jian Qu
-Y11-1002 | English-Chinese Name Transliteration with Bi-Directional Syllable-Based Maximum Matching | http://www.aclweb.org/anthology/Y/Y11/Y11-1002.pdf | author:Oi Yee Kwong
-Y11-1003 | Language Model Weight Adaptation Based on Cross-entropy for Statistical Machine Translation | http://www.aclweb.org/anthology/Y/Y11/Y11-1003.pdf | author:Yinggong Zhao; Yangsheng Ji; Ning Xi; Shujian Huang; Jiajun Chen
-Y11-1004 | A grammar design accommodating packed argument frame information on verbs | http://www.aclweb.org/anthology/Y/Y11/Y11-1004.pdf | author:Petter Haugereid
-Y11-1005 | Quantification and the Garden Path Effect Reduction: The Case of Universally Quantified Subjects | http://www.aclweb.org/anthology/Y/Y11/Y11-1005.pdf | author:Akira Ohtani; Takeo Kurafuji
-Y11-1006 | A Simple Surface Realizer for Filipino | http://www.aclweb.org/anthology/Y/Y11/Y11-1006.pdf | author:Ethel Ong; Stephanie Abella; Lawrence Santos; Dennis Tiu
-Y11-1007 | Measuring Concept Concreteness from the Lexicographic Perspective | http://www.aclweb.org/anthology/Y/Y11/Y11-1007.pdf | author:Oi Yee Kwong
-Y11-1008 | Logical Information Processing of Possibility and Negation: Cases from Taiwanese Hakka | http://www.aclweb.org/anthology/Y/Y11/Y11-1008.pdf | author:Chiou-shing Yeh; Huei-ling Lai
-Y11-1009 | The Syntax-Semantics Interface of Resultative Constructions in Mandarin Chinese and Cantonese | http://www.aclweb.org/anthology/Y/Y11/Y11-1009.pdf | author:Pui Lun Chow
-Y11-1010 | Automatic Wrapper Generation and Maintenance | http://www.aclweb.org/anthology/Y/Y11/Y11-1010.pdf | author:Yingju Xia; Yuhang Yang; Shu Zhang; Hao Yu
-Y11-1011 | Evaluation via Negativa of Chinese Word Segmentation for Information Retrieval | http://www.aclweb.org/anthology/Y/Y11/Y11-1011.pdf | author:Mike Tian-Jian Jiang; Cheng-Wei Shih; Richard Tzong-Han Tsai; Wen-Lian Hsu
-Y11-1012 | Factual or Satisfactory: What Search Results Are Better? | http://www.aclweb.org/anthology/Y/Y11/Y11-1012.pdf | author:Yu Hong; Jun Lu; Shiqi Zhao
-Y11-1013 | A Graph-based Bilingual Corpus Selection Approach for SMT | http://www.aclweb.org/anthology/Y/Y11/Y11-1013.pdf | author:Wenhan Chao; Zhoujun Li
-Y11-1014 | Myanmar Phrases Translation Model with Morphological Analysis for Statistical Myanmar to English Translation System | http://www.aclweb.org/anthology/Y/Y11/Y11-1014.pdf | author:Thet Thet Zin; Khin Mar Soe; Ni Lar Thein
-Y11-1015 | Context Resolution of Verb Particle Constructions for English to Hindi Translation | http://www.aclweb.org/anthology/Y/Y11/Y11-1015.pdf | author:Niladri Chatterjee; Renu Balyan
-Y11-1016 | Improving Sampling-based Alignment by Investigating the Distribution of N-grams in Phrase Translation Tables | http://www.aclweb.org/anthology/Y/Y11/Y11-1016.pdf | author:Juan Luo; Adrien Lardilleux; Yves Lepage
-Y11-1017 | Predicting Linguistic Difficulty by Means of a Morpho-Syntactic Probabilistic Model | http://www.aclweb.org/anthology/Y/Y11/Y11-1017.pdf | author:Philippe Blache; StÃ©phane Rauzy
-Y11-1018 | Tibetan Word Segmentation as Syllable Tagging Using Conditional Random Field | http://www.aclweb.org/anthology/Y/Y11/Y11-1018.pdf | author:Huidan Liu; Minghua Nuo; Longlong Ma; Jian Wu; Yeping He
-Y11-1019 | Plural Problems in the Nominal Morphology of Marathi | http://www.aclweb.org/anthology/Y/Y11/Y11-1019.pdf | author:Shalmalee Pitale
-Y11-1020 | The L1 Acquisition of the Imperfective Aspect markers in Korean: a Comparison with Japanese | http://www.aclweb.org/anthology/Y/Y11/Y11-1020.pdf | author:Ju-Yeon Ryu
-Y11-1021 | Semi-Automatic Identification of Bilingual Synonymous Technical Terms from Phrase Tables and Parallel Patent Sentences | http://www.aclweb.org/anthology/Y/Y11/Y11-1021.pdf | author:Bing Liang; Takehito Utsuro; Mikio Yamamoto
-Y11-1022 | Automatic Error Analysis Based on Grammatical Questions | http://www.aclweb.org/anthology/Y/Y11/Y11-1022.pdf | author:Tomoki Nagase; Hajime Tsukada; Katsunori Kotani; Nobutoshi Hatanaka; Yoshiyuki Sakamoto
-Y11-1023 | Maximum Entropy Based Lexical Reordering Model for Hierarchical Phrase-based Machine Translation | http://www.aclweb.org/anthology/Y/Y11/Y11-1023.pdf | author:Zhongguang Zheng; Yao Meng; Hao Yu
-Y11-1024 | A Bare-bones Constraint Grammar | http://www.aclweb.org/anthology/Y/Y11/Y11-1024.pdf | author:Eckhard Bick
-Y11-1025 | Spring Cleaning and Grammar Compression: Two Techniques for Detection of Redundancy in HPSG Grammars | http://www.aclweb.org/anthology/Y/Y11/Y11-1025.pdf | author:Antske Fokkens; Yi Zhang; Emily M. Bender
-Y11-1026 | Developing a Chunk-based Grammar Checker for Translated English Sentences | http://www.aclweb.org/anthology/Y/Y11/Y11-1026.pdf | author:Nay Yee Lin; Khin Mar Soe; Ni Lar Thein
-Y11-1027 | Creating the Open Wordnet Bahasa | http://www.aclweb.org/anthology/Y/Y11/Y11-1027.pdf | author:Nurril Hirfana Bte Mohamed Noor; Suerya Sapuan; Francis Bond
-Y11-1028 | Automatic identification of words with novel but infrequent senses | http://www.aclweb.org/anthology/Y/Y11/Y11-1028.pdf | author:Paul Cook; Graeme Hirst
-Y11-1029 | Annotating the Structure and Semantics of Fables | http://www.aclweb.org/anthology/Y/Y11/Y11-1029.pdf | author:Oi Yee Kwong
-Y11-1030 | Verbal Inflection in Hindi: A Distributed Morphology Approach | http://www.aclweb.org/anthology/Y/Y11/Y11-1030.pdf | author:Smriti Singh; Vaijayanthi M Sarma
-Y11-1031 | Word classes in Indonesian: A linguistic reality or a convenient fallacy in natural language processing? | http://www.aclweb.org/anthology/Y/Y11/Y11-1031.pdf | author:Meladel Mistica; Timothy Baldwin; I Wayan Arka
-Y11-1032 | Automated Proof Reading of Clinical Notes | http://www.aclweb.org/anthology/Y/Y11/Y11-1032.pdf | author:Jon Patrick; Dung Nguyen
-Y11-1033 | Modelling Word Meaning using Efficient Tensor Representations | http://www.aclweb.org/anthology/Y/Y11/Y11-1033.pdf | author:Mike Symonds; Peter Bruza; Laurianne Sitbon; Ian Turner
-Y11-1034 | A Study of Sense-Disambiguated Networks Induced from Folksonomies | http://www.aclweb.org/anthology/Y/Y11/Y11-1034.pdf | author:Hans-Peter Zorn; Iryna Gurevych
-Y11-1035 | Unsupervised Word Sense Disambiguation Using Neighborhood Knowledge | http://www.aclweb.org/anthology/Y/Y11/Y11-1035.pdf | author:Heyan Huang; Zhizhuo Yang; Ping Jian
-Y11-1036 | Dependency-based Analysis for Tagalog Sentences | http://www.aclweb.org/anthology/Y/Y11/Y11-1036.pdf | author:Erlyn Manguilimotan; Yuji Matsumoto
-Y11-1037 | Case study of BushBank concept | http://www.aclweb.org/anthology/Y/Y11/Y11-1037.pdf | author:Marek Grac
-Y11-1038 | Building and Annotating the Linguistically Diverse NTU-MC (NTU-Multilingual Corpus) | http://www.aclweb.org/anthology/Y/Y11/Y11-1038.pdf | author:Liling Tan; Francis Bond
-Y11-1039 | In Situ Text Summarisation for Museum Visitors | http://www.aclweb.org/anthology/Y/Y11/Y11-1039.pdf | author:Timothy Baldwin; Patrick Ye; Fabian Bohnert; Ingrid Zukerman
-Y11-1040 | Iteratively Estimating Pattern Reliability and Seed Quality With Extraction Consistency | http://www.aclweb.org/anthology/Y/Y11/Y11-1040.pdf | author:Yi-Hsun Lee; Chung-Yao Chuang; Wen-Lian Hsu
-Y11-1041 | The Effect of Answer Patterns for Supervised Named Entity Recognition in Thai | http://www.aclweb.org/anthology/Y/Y11/Y11-1041.pdf | author:Nutcha Tirasaroj; Wirote Aroonmanakun
-Y11-1042 | A Listwise Approach to Coreference Resolution in Multiple Languages | http://www.aclweb.org/anthology/Y/Y11/Y11-1042.pdf | author:Oanh Thi Tran; Bach Xuan Ngo; Minh Le Nguyen; Akira Shimazu
-Y11-1043 | Combining Dependency and Constituent-based Syntactic Information for Anaphoricity Determination in Coreference Resolution | http://www.aclweb.org/anthology/Y/Y11/Y11-1043.pdf | author:Fang Kong; Guodong Zhou
-Y11-1044 | Sentiment Classification in Resource-Scarce Languages by using Label Propagation | http://www.aclweb.org/anthology/Y/Y11/Y11-1044.pdf | author:Yong Ren; Nobuhiro Kaji; Naoki Yoshinaga; Masashi Toyoda; Masaru Kitsuregawa
-Y11-1045 | A Hybrid Extraction Model for Chinese Noun/Verb Synonymous bi-gram Collocations | http://www.aclweb.org/anthology/Y/Y11/Y11-1045.pdf | author:Wanyin Li; Qin Lu
-Y11-1046 | Word-order and argument-marking: Japanese vs Chinese vs Naxi | http://www.aclweb.org/anthology/Y/Y11/Y11-1046.pdf | author:Paul Law
-Y11-1047 | Classification of Filipino Speech Rhythm Using Computational and Perceptual Approach | http://www.aclweb.org/anthology/Y/Y11/Y11-1047.pdf | author:Timothy Israel Santos; Rowena Cristina Guevara
-Y11-1048 | Disfluencies in Consecutive Interpreting among Undergraduates in the Language Lab Environment in the final version | http://www.aclweb.org/anthology/Y/Y11/Y11-1048.pdf | author:Kexiu Yin
-Y11-1049 | An English-Chinese Cross-lingual Word Semantic Similarity Measure Exploring Attributes and Relations | http://www.aclweb.org/anthology/Y/Y11/Y11-1049.pdf | author:Lin Dai; Heyan Huang
-Y11-1050 | Learning-to-Translate Based on the S-SSTC Annotation Schema | http://www.aclweb.org/anthology/Y/Y11/Y11-1050.pdf | author:Enya Kong Tang; Zaharin Yusoff; Christian Boitet
-Y11-1051 | Translating English Names to Arabic Using Phonotactic Rules | http://www.aclweb.org/anthology/Y/Y11/Y11-1051.pdf | author:Faisal Alshuwaier; Ali Areshey
-Y11-1052 | Translating Common English and Chinese Verb-Noun Pairs in Technical Documents with Collocational and Bilingual Information | http://www.aclweb.org/anthology/Y/Y11/Y11-1052.pdf | author:Yi-Hsuan Chuang; Chao-Lin Liu; Jing-Shin Chang
-Y11-1053 | System for Flexibly Judging the Misuse of Honorifics in Japanese | http://www.aclweb.org/anthology/Y/Y11/Y11-1053.pdf | author:Tamotsu Shirado; Satoko Marumoto; Masaki Murata; Hitoshi Isahara
-Y11-1054 | Compound Event Nouns of the âModifier-headâ Type in Mandarin Chinese | http://www.aclweb.org/anthology/Y/Y11/Y11-1054.pdf | author:Shan Wang; Chu-Ren Huang
-Y11-1055 | The Co-occurrence of Two Delimiters: An Investigation of Mandarin Chinese Resultatives | http://www.aclweb.org/anthology/Y/Y11/Y11-1055.pdf | author:Jingxia Lin; Chu-Ren Huang
-Y11-1056 | The Order of Mandarin Chinese Motion Morphemes and the âScalar Specificity Constraintâ | http://www.aclweb.org/anthology/Y/Y11/Y11-1056.pdf | author:Jingxia Lin
-Y11-1057 | Verbs and (sub)Event Structure: A Case Study from Italian | http://www.aclweb.org/anthology/Y/Y11/Y11-1057.pdf | author:Francesca Strik Lievers
-Y11-1058 | The Effects of EFL Learnersâ Awareness and Retention in Learning Metaphoric and Metonymic Expressions | http://www.aclweb.org/anthology/Y/Y11/Y11-1058.pdf | author:Yi-chen Chen; Huei-ling Lai
-Y11-1059 | NERSIL - the Named-Entity Recognition System for Iban Language | http://www.aclweb.org/anthology/Y/Y11/Y11-1059.pdf | author:Yong Soo Fong; Bali Ranaivo MalanÒ«on; Alvin Yeo Wee
-Y11-1060 | Improving PP Attachment Disambiguation in a Rule-based Parser | http://www.aclweb.org/anthology/Y/Y11/Y11-1060.pdf | author:Yoon-Hyung Roh; Ki-Young Lee; Young-Gil Kim
-Y11-1061 | Fully-Automatic Marker-based Chunking in 11 European Languages and Counts of the Number of Analogies between Chunks | http://www.aclweb.org/anthology/Y/Y11/Y11-1061.pdf | author:Kota Takeya; Yves Lepage
-Y11-1062 | Extraction of Broad-Scale, High-Precision Japanese-English Parallel Translation Expressions Using Lexical Information and Rules | http://www.aclweb.org/anthology/Y/Y11/Y11-1062.pdf | author:Qing Ma; Shinya Sakagami; Masaki Murata
-Y11-1063 | Analyzing the characteristics of academic paper categories by using an index of representativeness | http://www.aclweb.org/anthology/Y/Y11/Y11-1063.pdf | author:Takafumi Suzuki; Kiyoko Uchiyama; Ryota Tomisaka; Akiko Aizawa
-Y11-1064 | Exploring Emotional Words for Chinese Document Chief Emotion Analysis | http://www.aclweb.org/anthology/Y/Y11/Y11-1064.pdf | author:Yunong Wu; Kenji Kita; Fuji Ren; Kazuyuki Matsumoto; Xin Kang
-Y11-1065 | A Construction Grammar Approach to Prepositional Phrase Attachment: Semantic Feature Analysis of V NP1 into NP2 Construction | http://www.aclweb.org/anthology/Y/Y11/Y11-1065.pdf | author:Liyin Chen; Siaw-Fong Chung; Chao-Lin Liu
-Y11-1066 | Supervised and Semi-supervised Methods based Organization Name Disambiguity | http://www.aclweb.org/anthology/Y/Y11/Y11-1066.pdf | author:Shu Zhang; Hao Yu
-Y11-1067 | Study and Implementation of Monolingual Approach on Indonesian Question Answering for Factoid and Non-Factoid Question | http://www.aclweb.org/anthology/Y/Y11/Y11-1067.pdf | author:Alvin Andhika Zulen; Ayu Purwarianti
+Y11-1001 | Web based English-Chinese OOV term translation using Adaptive rules and Recursive feature selection | http://www.aclweb.org/anthology/Y/Y11/Y11-1001.pdf | category:paper author:Jian Qu
+Y11-1002 | English-Chinese Name Transliteration with Bi-Directional Syllable-Based Maximum Matching | http://www.aclweb.org/anthology/Y/Y11/Y11-1002.pdf | category:paper author:Oi Yee Kwong
+Y11-1003 | Language Model Weight Adaptation Based on Cross-entropy for Statistical Machine Translation | http://www.aclweb.org/anthology/Y/Y11/Y11-1003.pdf | category:paper author:Yinggong Zhao; Yangsheng Ji; Ning Xi; Shujian Huang; Jiajun Chen
+Y11-1004 | A grammar design accommodating packed argument frame information on verbs | http://www.aclweb.org/anthology/Y/Y11/Y11-1004.pdf | category:paper author:Petter Haugereid
+Y11-1005 | Quantification and the Garden Path Effect Reduction: The Case of Universally Quantified Subjects | http://www.aclweb.org/anthology/Y/Y11/Y11-1005.pdf | category:paper author:Akira Ohtani; Takeo Kurafuji
+Y11-1006 | A Simple Surface Realizer for Filipino | http://www.aclweb.org/anthology/Y/Y11/Y11-1006.pdf | category:paper author:Ethel Ong; Stephanie Abella; Lawrence Santos; Dennis Tiu
+Y11-1007 | Measuring Concept Concreteness from the Lexicographic Perspective | http://www.aclweb.org/anthology/Y/Y11/Y11-1007.pdf | category:paper author:Oi Yee Kwong
+Y11-1008 | Logical Information Processing of Possibility and Negation: Cases from Taiwanese Hakka | http://www.aclweb.org/anthology/Y/Y11/Y11-1008.pdf | category:paper author:Chiou-shing Yeh; Huei-ling Lai
+Y11-1009 | The Syntax-Semantics Interface of Resultative Constructions in Mandarin Chinese and Cantonese | http://www.aclweb.org/anthology/Y/Y11/Y11-1009.pdf | category:paper author:Pui Lun Chow
+Y11-1010 | Automatic Wrapper Generation and Maintenance | http://www.aclweb.org/anthology/Y/Y11/Y11-1010.pdf | category:paper author:Yingju Xia; Yuhang Yang; Shu Zhang; Hao Yu
+Y11-1011 | Evaluation via Negativa of Chinese Word Segmentation for Information Retrieval | http://www.aclweb.org/anthology/Y/Y11/Y11-1011.pdf | category:paper author:Mike Tian-Jian Jiang; Cheng-Wei Shih; Richard Tzong-Han Tsai; Wen-Lian Hsu
+Y11-1012 | Factual or Satisfactory: What Search Results Are Better? | http://www.aclweb.org/anthology/Y/Y11/Y11-1012.pdf | category:paper author:Yu Hong; Jun Lu; Shiqi Zhao
+Y11-1013 | A Graph-based Bilingual Corpus Selection Approach for SMT | http://www.aclweb.org/anthology/Y/Y11/Y11-1013.pdf | category:paper author:Wenhan Chao; Zhoujun Li
+Y11-1014 | Myanmar Phrases Translation Model with Morphological Analysis for Statistical Myanmar to English Translation System | http://www.aclweb.org/anthology/Y/Y11/Y11-1014.pdf | category:paper author:Thet Thet Zin; Khin Mar Soe; Ni Lar Thein
+Y11-1015 | Context Resolution of Verb Particle Constructions for English to Hindi Translation | http://www.aclweb.org/anthology/Y/Y11/Y11-1015.pdf | category:paper author:Niladri Chatterjee; Renu Balyan
+Y11-1016 | Improving Sampling-based Alignment by Investigating the Distribution of N-grams in Phrase Translation Tables | http://www.aclweb.org/anthology/Y/Y11/Y11-1016.pdf | category:paper author:Juan Luo; Adrien Lardilleux; Yves Lepage
+Y11-1017 | Predicting Linguistic Difficulty by Means of a Morpho-Syntactic Probabilistic Model | http://www.aclweb.org/anthology/Y/Y11/Y11-1017.pdf | category:paper author:Philippe Blache; StÃ©phane Rauzy
+Y11-1018 | Tibetan Word Segmentation as Syllable Tagging Using Conditional Random Field | http://www.aclweb.org/anthology/Y/Y11/Y11-1018.pdf | category:paper author:Huidan Liu; Minghua Nuo; Longlong Ma; Jian Wu; Yeping He
+Y11-1019 | Plural Problems in the Nominal Morphology of Marathi | http://www.aclweb.org/anthology/Y/Y11/Y11-1019.pdf | category:paper author:Shalmalee Pitale
+Y11-1020 | The L1 Acquisition of the Imperfective Aspect markers in Korean: a Comparison with Japanese | http://www.aclweb.org/anthology/Y/Y11/Y11-1020.pdf | category:paper author:Ju-Yeon Ryu
+Y11-1021 | Semi-Automatic Identification of Bilingual Synonymous Technical Terms from Phrase Tables and Parallel Patent Sentences | http://www.aclweb.org/anthology/Y/Y11/Y11-1021.pdf | category:paper author:Bing Liang; Takehito Utsuro; Mikio Yamamoto
+Y11-1022 | Automatic Error Analysis Based on Grammatical Questions | http://www.aclweb.org/anthology/Y/Y11/Y11-1022.pdf | category:paper author:Tomoki Nagase; Hajime Tsukada; Katsunori Kotani; Nobutoshi Hatanaka; Yoshiyuki Sakamoto
+Y11-1023 | Maximum Entropy Based Lexical Reordering Model for Hierarchical Phrase-based Machine Translation | http://www.aclweb.org/anthology/Y/Y11/Y11-1023.pdf | category:paper author:Zhongguang Zheng; Yao Meng; Hao Yu
+Y11-1024 | A Bare-bones Constraint Grammar | http://www.aclweb.org/anthology/Y/Y11/Y11-1024.pdf | category:paper author:Eckhard Bick
+Y11-1025 | Spring Cleaning and Grammar Compression: Two Techniques for Detection of Redundancy in HPSG Grammars | http://www.aclweb.org/anthology/Y/Y11/Y11-1025.pdf | category:paper author:Antske Fokkens; Yi Zhang; Emily M. Bender
+Y11-1026 | Developing a Chunk-based Grammar Checker for Translated English Sentences | http://www.aclweb.org/anthology/Y/Y11/Y11-1026.pdf | category:paper author:Nay Yee Lin; Khin Mar Soe; Ni Lar Thein
+Y11-1027 | Creating the Open Wordnet Bahasa | http://www.aclweb.org/anthology/Y/Y11/Y11-1027.pdf | category:paper author:Nurril Hirfana Bte Mohamed Noor; Suerya Sapuan; Francis Bond
+Y11-1028 | Automatic identification of words with novel but infrequent senses | http://www.aclweb.org/anthology/Y/Y11/Y11-1028.pdf | category:paper author:Paul Cook; Graeme Hirst
+Y11-1029 | Annotating the Structure and Semantics of Fables | http://www.aclweb.org/anthology/Y/Y11/Y11-1029.pdf | category:paper author:Oi Yee Kwong
+Y11-1030 | Verbal Inflection in Hindi: A Distributed Morphology Approach | http://www.aclweb.org/anthology/Y/Y11/Y11-1030.pdf | category:paper author:Smriti Singh; Vaijayanthi M Sarma
+Y11-1031 | Word classes in Indonesian: A linguistic reality or a convenient fallacy in natural language processing? | http://www.aclweb.org/anthology/Y/Y11/Y11-1031.pdf | category:paper author:Meladel Mistica; Timothy Baldwin; I Wayan Arka
+Y11-1032 | Automated Proof Reading of Clinical Notes | http://www.aclweb.org/anthology/Y/Y11/Y11-1032.pdf | category:paper author:Jon Patrick; Dung Nguyen
+Y11-1033 | Modelling Word Meaning using Efficient Tensor Representations | http://www.aclweb.org/anthology/Y/Y11/Y11-1033.pdf | category:paper author:Mike Symonds; Peter Bruza; Laurianne Sitbon; Ian Turner
+Y11-1034 | A Study of Sense-Disambiguated Networks Induced from Folksonomies | http://www.aclweb.org/anthology/Y/Y11/Y11-1034.pdf | category:paper author:Hans-Peter Zorn; Iryna Gurevych
+Y11-1035 | Unsupervised Word Sense Disambiguation Using Neighborhood Knowledge | http://www.aclweb.org/anthology/Y/Y11/Y11-1035.pdf | category:paper author:Heyan Huang; Zhizhuo Yang; Ping Jian
+Y11-1036 | Dependency-based Analysis for Tagalog Sentences | http://www.aclweb.org/anthology/Y/Y11/Y11-1036.pdf | category:paper author:Erlyn Manguilimotan; Yuji Matsumoto
+Y11-1037 | Case study of BushBank concept | http://www.aclweb.org/anthology/Y/Y11/Y11-1037.pdf | category:paper author:Marek Grac
+Y11-1038 | Building and Annotating the Linguistically Diverse NTU-MC (NTU-Multilingual Corpus) | http://www.aclweb.org/anthology/Y/Y11/Y11-1038.pdf | category:paper author:Liling Tan; Francis Bond
+Y11-1039 | In Situ Text Summarisation for Museum Visitors | http://www.aclweb.org/anthology/Y/Y11/Y11-1039.pdf | category:paper author:Timothy Baldwin; Patrick Ye; Fabian Bohnert; Ingrid Zukerman
+Y11-1040 | Iteratively Estimating Pattern Reliability and Seed Quality With Extraction Consistency | http://www.aclweb.org/anthology/Y/Y11/Y11-1040.pdf | category:paper author:Yi-Hsun Lee; Chung-Yao Chuang; Wen-Lian Hsu
+Y11-1041 | The Effect of Answer Patterns for Supervised Named Entity Recognition in Thai | http://www.aclweb.org/anthology/Y/Y11/Y11-1041.pdf | category:paper author:Nutcha Tirasaroj; Wirote Aroonmanakun
+Y11-1042 | A Listwise Approach to Coreference Resolution in Multiple Languages | http://www.aclweb.org/anthology/Y/Y11/Y11-1042.pdf | category:paper author:Oanh Thi Tran; Bach Xuan Ngo; Minh Le Nguyen; Akira Shimazu
+Y11-1043 | Combining Dependency and Constituent-based Syntactic Information for Anaphoricity Determination in Coreference Resolution | http://www.aclweb.org/anthology/Y/Y11/Y11-1043.pdf | category:paper author:Fang Kong; Guodong Zhou
+Y11-1044 | Sentiment Classification in Resource-Scarce Languages by using Label Propagation | http://www.aclweb.org/anthology/Y/Y11/Y11-1044.pdf | category:paper author:Yong Ren; Nobuhiro Kaji; Naoki Yoshinaga; Masashi Toyoda; Masaru Kitsuregawa
+Y11-1045 | A Hybrid Extraction Model for Chinese Noun/Verb Synonymous bi-gram Collocations | http://www.aclweb.org/anthology/Y/Y11/Y11-1045.pdf | category:paper author:Wanyin Li; Qin Lu
+Y11-1046 | Word-order and argument-marking: Japanese vs Chinese vs Naxi | http://www.aclweb.org/anthology/Y/Y11/Y11-1046.pdf | category:paper author:Paul Law
+Y11-1047 | Classification of Filipino Speech Rhythm Using Computational and Perceptual Approach | http://www.aclweb.org/anthology/Y/Y11/Y11-1047.pdf | category:paper author:Timothy Israel Santos; Rowena Cristina Guevara
+Y11-1048 | Disfluencies in Consecutive Interpreting among Undergraduates in the Language Lab Environment in the final version | http://www.aclweb.org/anthology/Y/Y11/Y11-1048.pdf | category:paper author:Kexiu Yin
+Y11-1049 | An English-Chinese Cross-lingual Word Semantic Similarity Measure Exploring Attributes and Relations | http://www.aclweb.org/anthology/Y/Y11/Y11-1049.pdf | category:paper author:Lin Dai; Heyan Huang
+Y11-1050 | Learning-to-Translate Based on the S-SSTC Annotation Schema | http://www.aclweb.org/anthology/Y/Y11/Y11-1050.pdf | category:paper author:Enya Kong Tang; Zaharin Yusoff; Christian Boitet
+Y11-1051 | Translating English Names to Arabic Using Phonotactic Rules | http://www.aclweb.org/anthology/Y/Y11/Y11-1051.pdf | category:paper author:Faisal Alshuwaier; Ali Areshey
+Y11-1052 | Translating Common English and Chinese Verb-Noun Pairs in Technical Documents with Collocational and Bilingual Information | http://www.aclweb.org/anthology/Y/Y11/Y11-1052.pdf | category:paper author:Yi-Hsuan Chuang; Chao-Lin Liu; Jing-Shin Chang
+Y11-1053 | System for Flexibly Judging the Misuse of Honorifics in Japanese | http://www.aclweb.org/anthology/Y/Y11/Y11-1053.pdf | category:paper author:Tamotsu Shirado; Satoko Marumoto; Masaki Murata; Hitoshi Isahara
+Y11-1054 | Compound Event Nouns of the âModifier-headâ Type in Mandarin Chinese | http://www.aclweb.org/anthology/Y/Y11/Y11-1054.pdf | category:paper author:Shan Wang; Chu-Ren Huang
+Y11-1055 | The Co-occurrence of Two Delimiters: An Investigation of Mandarin Chinese Resultatives | http://www.aclweb.org/anthology/Y/Y11/Y11-1055.pdf | category:paper author:Jingxia Lin; Chu-Ren Huang
+Y11-1056 | The Order of Mandarin Chinese Motion Morphemes and the âScalar Specificity Constraintâ | http://www.aclweb.org/anthology/Y/Y11/Y11-1056.pdf | category:paper author:Jingxia Lin
+Y11-1057 | Verbs and (sub)Event Structure: A Case Study from Italian | http://www.aclweb.org/anthology/Y/Y11/Y11-1057.pdf | category:paper author:Francesca Strik Lievers
+Y11-1058 | The Effects of EFL Learnersâ Awareness and Retention in Learning Metaphoric and Metonymic Expressions | http://www.aclweb.org/anthology/Y/Y11/Y11-1058.pdf | category:paper author:Yi-chen Chen; Huei-ling Lai
+Y11-1059 | NERSIL - the Named-Entity Recognition System for Iban Language | http://www.aclweb.org/anthology/Y/Y11/Y11-1059.pdf | category:paper author:Yong Soo Fong; Bali Ranaivo MalanÒ«on; Alvin Yeo Wee
+Y11-1060 | Improving PP Attachment Disambiguation in a Rule-based Parser | http://www.aclweb.org/anthology/Y/Y11/Y11-1060.pdf | category:paper author:Yoon-Hyung Roh; Ki-Young Lee; Young-Gil Kim
+Y11-1061 | Fully-Automatic Marker-based Chunking in 11 European Languages and Counts of the Number of Analogies between Chunks | http://www.aclweb.org/anthology/Y/Y11/Y11-1061.pdf | category:paper author:Kota Takeya; Yves Lepage
+Y11-1062 | Extraction of Broad-Scale, High-Precision Japanese-English Parallel Translation Expressions Using Lexical Information and Rules | http://www.aclweb.org/anthology/Y/Y11/Y11-1062.pdf | category:paper author:Qing Ma; Shinya Sakagami; Masaki Murata
+Y11-1063 | Analyzing the characteristics of academic paper categories by using an index of representativeness | http://www.aclweb.org/anthology/Y/Y11/Y11-1063.pdf | category:paper author:Takafumi Suzuki; Kiyoko Uchiyama; Ryota Tomisaka; Akiko Aizawa
+Y11-1064 | Exploring Emotional Words for Chinese Document Chief Emotion Analysis | http://www.aclweb.org/anthology/Y/Y11/Y11-1064.pdf | category:paper author:Yunong Wu; Kenji Kita; Fuji Ren; Kazuyuki Matsumoto; Xin Kang
+Y11-1065 | A Construction Grammar Approach to Prepositional Phrase Attachment: Semantic Feature Analysis of V NP1 into NP2 Construction | http://www.aclweb.org/anthology/Y/Y11/Y11-1065.pdf | category:paper author:Liyin Chen; Siaw-Fong Chung; Chao-Lin Liu
+Y11-1066 | Supervised and Semi-supervised Methods based Organization Name Disambiguity | http://www.aclweb.org/anthology/Y/Y11/Y11-1066.pdf | category:paper author:Shu Zhang; Hao Yu
+Y11-1067 | Study and Implementation of Monolingual Approach on Indonesian Question Answering for Factoid and Non-Factoid Question | http://www.aclweb.org/anthology/Y/Y11/Y11-1067.pdf | category:paper author:Alvin Andhika Zulen; Ayu Purwarianti

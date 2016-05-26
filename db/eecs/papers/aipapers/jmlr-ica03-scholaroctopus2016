@@ -1,15 +1,15 @@
-jmlr-ica03-1 | Introduction to Special Issue on Independent Components Analysis | http://www.jmlr.org/papers/volume4/lee03a/lee03a.pdf | author:Te-Won Lee, Jean-François Cardoso, Erkki Oja, Shun-ichi Amari
-jmlr-ica03-2 | Dependence, Correlation and Gaussianity in Independent Component Analysis | http://www.jmlr.org/papers/v4/cardoso03a.html | author:Jean-François Cardoso
-jmlr-ica03-3 | Beyond Independent Components: Trees and Clusters | http://www.jmlr.org/papers/v4/bach03a.html | author:Francis R. Bach, Michael I. Jordan
-jmlr-ica03-4 | Energy-Based Models for Sparse Overcomplete Representations | http://www.jmlr.org/papers/v4/teh03a.html | author:Yee Whye Teh, Max Welling, Simon Osindero, Geoffrey E. Hinton
-jmlr-ica03-5 | Blind Source Separation via Generalized Eigenvalue Decomposition | http://www.jmlr.org/papers/v4/parra03a.html | author:Lucas Parra, Paul Sajda
-jmlr-ica03-6 | ICA Using Spacings Estimates of Entropy | http://www.jmlr.org/papers/v4/learned-miller03a.html | author:Erik G. Learned-Miller, John W. Fisher III
-jmlr-ica03-7 | MISEP -- Linear and Nonlinear ICA Based on Mutual Information | http://www.jmlr.org/papers/v4/almeida03a.html | author:Luís B. Almeida
-jmlr-ica03-8 | Blind Separation of Post-nonlinear Mixtures using Linearizing Transformations and Temporal Decorrelation | http://www.jmlr.org/papers/v4/ziehe03a.html | author:Andreas Ziehe, Motoaki Kawanabe, Stefan Harmeling, Klaus-Robert Müller
-jmlr-ica03-9 | A Multiscale Framework For Blind Separation of Linearly Mixed Signals | http://www.jmlr.org/papers/v4/kisilev03a.html | author:Pavel Kisilev, Michael Zibulevsky, Yehoshua Y. Zeevi
-jmlr-ica03-10 | A Maximum Likelihood Approach to Single-channel Source Separation | http://www.jmlr.org/papers/v4/jang03a.html | author:Gil-Jin Jang, Te-Won Lee
-jmlr-ica03-11 | Statistical Dynamics of On-line Independent Component Analysis | http://www.jmlr.org/papers/v4/basalyga03a.html | author:Gleb Basalyga, Magnus Rattray
-jmlr-ica03-12 | Blind Source Recovery: A Framework in the State Space | http://www.jmlr.org/papers/v4/waheed03a.html | author:Khurram Waheed, Fathi M. Salem
-jmlr-ica03-13 | Overlearning in Marginal Distribution-Based ICA: Analysis and Solutions | http://www.jmlr.org/papers/v4/sarela03a.html | author:Jaakko Särelä, Ricardo Vigário
-jmlr-ica03-14 | ICA for Watermarking Digital Images | http://www.jmlr.org/papers/v4/bounkong03a.html | author:Stéphane Bounkong, Borémi Toch, David Saad, David Lowe
-jmlr-ica03-15 | A Generative Model for Separating Illumination and Reflectance from Images | http://www.jmlr.org/papers/v4/stainvas03a.html | author:Inna Stainvas, David Lowe
+jmlr-ica03-1 | Introduction to Special Issue on Independent Components Analysis | http://www.jmlr.org/papers/volume4/lee03a/lee03a.pdf | category:paper author:Te-Won Lee, Jean-François Cardoso, Erkki Oja, Shun-ichi Amari
+jmlr-ica03-2 | Dependence, Correlation and Gaussianity in Independent Component Analysis | http://www.jmlr.org/papers/v4/cardoso03a.html | category:paper author:Jean-François Cardoso
+jmlr-ica03-3 | Beyond Independent Components: Trees and Clusters | http://www.jmlr.org/papers/v4/bach03a.html | category:paper author:Francis R. Bach, Michael I. Jordan
+jmlr-ica03-4 | Energy-Based Models for Sparse Overcomplete Representations | http://www.jmlr.org/papers/v4/teh03a.html | category:paper author:Yee Whye Teh, Max Welling, Simon Osindero, Geoffrey E. Hinton
+jmlr-ica03-5 | Blind Source Separation via Generalized Eigenvalue Decomposition | http://www.jmlr.org/papers/v4/parra03a.html | category:paper author:Lucas Parra, Paul Sajda
+jmlr-ica03-6 | ICA Using Spacings Estimates of Entropy | http://www.jmlr.org/papers/v4/learned-miller03a.html | category:paper author:Erik G. Learned-Miller, John W. Fisher III
+jmlr-ica03-7 | MISEP -- Linear and Nonlinear ICA Based on Mutual Information | http://www.jmlr.org/papers/v4/almeida03a.html | category:paper author:Luís B. Almeida
+jmlr-ica03-8 | Blind Separation of Post-nonlinear Mixtures using Linearizing Transformations and Temporal Decorrelation | http://www.jmlr.org/papers/v4/ziehe03a.html | category:paper author:Andreas Ziehe, Motoaki Kawanabe, Stefan Harmeling, Klaus-Robert Müller
+jmlr-ica03-9 | A Multiscale Framework For Blind Separation of Linearly Mixed Signals | http://www.jmlr.org/papers/v4/kisilev03a.html | category:paper author:Pavel Kisilev, Michael Zibulevsky, Yehoshua Y. Zeevi
+jmlr-ica03-10 | A Maximum Likelihood Approach to Single-channel Source Separation | http://www.jmlr.org/papers/v4/jang03a.html | category:paper author:Gil-Jin Jang, Te-Won Lee
+jmlr-ica03-11 | Statistical Dynamics of On-line Independent Component Analysis | http://www.jmlr.org/papers/v4/basalyga03a.html | category:paper author:Gleb Basalyga, Magnus Rattray
+jmlr-ica03-12 | Blind Source Recovery: A Framework in the State Space | http://www.jmlr.org/papers/v4/waheed03a.html | category:paper author:Khurram Waheed, Fathi M. Salem
+jmlr-ica03-13 | Overlearning in Marginal Distribution-Based ICA: Analysis and Solutions | http://www.jmlr.org/papers/v4/sarela03a.html | category:paper author:Jaakko Särelä, Ricardo Vigário
+jmlr-ica03-14 | ICA for Watermarking Digital Images | http://www.jmlr.org/papers/v4/bounkong03a.html | category:paper author:Stéphane Bounkong, Borémi Toch, David Saad, David Lowe
+jmlr-ica03-15 | A Generative Model for Separating Illumination and Reflectance from Images | http://www.jmlr.org/papers/v4/stainvas03a.html | category:paper author:Inna Stainvas, David Lowe

@@ -1,20 +1,20 @@
-U12-1001 | Using a large annotated historical corpus to study word-specific effects in sound change | http://www.aclweb.org/anthology/U/U12/U12-1001.pdf | author:Jennifer Hay
-U12-1002 | Diverse Words, Shared Meanings: Statistical Machine Translation for Paraphrase, Grounding, and Intent | http://www.aclweb.org/anthology/U/U12/U12-1002.pdf | author:Chris Brockett
-U12-1003 | A Citation Centric Annotation Scheme for Scientific Articles | http://www.aclweb.org/anthology/U/U12/U12-1003.pdf | author:Angrosh M.A.; Stephen Cranefield; Nigel Stanger
-U12-1004 | Semantic Judgement of Medical Concepts: Combining Syntagmatic and Paradigmatic Information with the Tensor Encoding Model | http://www.aclweb.org/anthology/U/U12/U12-1004.pdf | author:Michael Symonds; Guido Zuccon; Bevan Koopman; Peter Bruza; Anthony Nguyen
-U12-1005 | Active Learning and the Irish Treebank | http://www.aclweb.org/anthology/U/U12/U12-1005.pdf | author:Teresa Lynn; Jennifer Foster; Mark Dras; Elaine Uí Dhonnchadha
-U12-1006 | Unsupervised Estimation of Word Usage Similarity | http://www.aclweb.org/anthology/U/U12/U12-1006.pdf | author:Marco Lui; Timothy Baldwin; Diana McCarthy
-U12-1007 | Valence Shifting: Is It A Valid Task? | http://www.aclweb.org/anthology/U/U12/U12-1007.pdf | author:Mary Gardiner; Mark Dras
-U12-1008 | Experimental Evaluation of a Lexicon- and Corpus-based Ensemble for Multi-way Sentiment Analysis | http://www.aclweb.org/anthology/U/U12/U12-1008.pdf | author:Minh Duc Cao; Ingrid Zukerman
-U12-1009 | Segmentation and Translation of Japanese Multi-word Loanwords | http://www.aclweb.org/anthology/U/U12/U12-1009.pdf | author:James Breen; Timothy Baldwin; Francis Bond
-U12-1010 | Measurement of Progress in Machine Translation | http://www.aclweb.org/anthology/U/U12/U12-1010.pdf | author:Yvette Graham; Timothy Baldwin; Aaron Harwood; Alistair Moffat; Justin Zobel
-U12-1011 | Towards Two-step Multi-document Summarisation for Evidence Based Medicine: A Quantitative Analysis | http://www.aclweb.org/anthology/U/U12/U12-1011.pdf | author:Abeed Sarker; Diego Mollá-Aliod; Cecile Paris
-U12-1012 | In Your Eyes: Identifying Clichés in Song Lyrics | http://www.aclweb.org/anthology/U/U12/U12-1012.pdf | author:Alex G. Smith; Christopher X. S. Zee; Alexandra L. Uitdenbogerd
-U12-1013 | Free-text input vs menu selection: exploring the difference with a tutorial dialogue system. | http://www.aclweb.org/anthology/U/U12/U12-1013.pdf | author:Jenny Mcdonald; Alistair Knott; Richard Zeng
-U12-1014 | langid.py for better language modelling | http://www.aclweb.org/anthology/U/U12/U12-1014.pdf | author:Paul Cook; Marco Lui
-U12-1015 | LaBB-CAT: an Annotation Store | http://www.aclweb.org/anthology/U/U12/U12-1015.pdf | author:Robert Fromont; Jennifer Hay
-U12-1016 | Classification of Study Region in Environmental Science Abstracts | http://www.aclweb.org/anthology/U/U12/U12-1016.pdf | author:Jared Willett; Timothy Baldwin; David Martinez; Angus Webb
-U12-1017 | Overview of the ALTA 2012 Shared Task | http://www.aclweb.org/anthology/U/U12/U12-1017.pdf | author:Iman Amini; David Martinez; Diego Molla
-U12-1018 | Automatic sentence classifier using sentence ordering features for Event Based Medicine: Shared task system description | http://www.aclweb.org/anthology/U/U12/U12-1018.pdf | author:Spandana Gella; Duong Thanh Long
-U12-1019 | Feature Stacking for Sentence Classification in Evidence-Based Medicine | http://www.aclweb.org/anthology/U/U12/U12-1019.pdf | author:Marco Lui
-U12-1020 | Experiments with Clustering-based Features for Sentence Classification in Medical Publications: Macquarie Test’s participation in the ALTA 2012 shared task. | http://www.aclweb.org/anthology/U/U12/U12-1020.pdf | author:Diego Mollá
+U12-1001 | Using a large annotated historical corpus to study word-specific effects in sound change | http://www.aclweb.org/anthology/U/U12/U12-1001.pdf | category:paper author:Jennifer Hay
+U12-1002 | Diverse Words, Shared Meanings: Statistical Machine Translation for Paraphrase, Grounding, and Intent | http://www.aclweb.org/anthology/U/U12/U12-1002.pdf | category:paper author:Chris Brockett
+U12-1003 | A Citation Centric Annotation Scheme for Scientific Articles | http://www.aclweb.org/anthology/U/U12/U12-1003.pdf | category:paper author:Angrosh M.A.; Stephen Cranefield; Nigel Stanger
+U12-1004 | Semantic Judgement of Medical Concepts: Combining Syntagmatic and Paradigmatic Information with the Tensor Encoding Model | http://www.aclweb.org/anthology/U/U12/U12-1004.pdf | category:paper author:Michael Symonds; Guido Zuccon; Bevan Koopman; Peter Bruza; Anthony Nguyen
+U12-1005 | Active Learning and the Irish Treebank | http://www.aclweb.org/anthology/U/U12/U12-1005.pdf | category:paper author:Teresa Lynn; Jennifer Foster; Mark Dras; Elaine Uí Dhonnchadha
+U12-1006 | Unsupervised Estimation of Word Usage Similarity | http://www.aclweb.org/anthology/U/U12/U12-1006.pdf | category:paper author:Marco Lui; Timothy Baldwin; Diana McCarthy
+U12-1007 | Valence Shifting: Is It A Valid Task? | http://www.aclweb.org/anthology/U/U12/U12-1007.pdf | category:paper author:Mary Gardiner; Mark Dras
+U12-1008 | Experimental Evaluation of a Lexicon- and Corpus-based Ensemble for Multi-way Sentiment Analysis | http://www.aclweb.org/anthology/U/U12/U12-1008.pdf | category:paper author:Minh Duc Cao; Ingrid Zukerman
+U12-1009 | Segmentation and Translation of Japanese Multi-word Loanwords | http://www.aclweb.org/anthology/U/U12/U12-1009.pdf | category:paper author:James Breen; Timothy Baldwin; Francis Bond
+U12-1010 | Measurement of Progress in Machine Translation | http://www.aclweb.org/anthology/U/U12/U12-1010.pdf | category:paper author:Yvette Graham; Timothy Baldwin; Aaron Harwood; Alistair Moffat; Justin Zobel
+U12-1011 | Towards Two-step Multi-document Summarisation for Evidence Based Medicine: A Quantitative Analysis | http://www.aclweb.org/anthology/U/U12/U12-1011.pdf | category:paper author:Abeed Sarker; Diego Mollá-Aliod; Cecile Paris
+U12-1012 | In Your Eyes: Identifying Clichés in Song Lyrics | http://www.aclweb.org/anthology/U/U12/U12-1012.pdf | category:paper author:Alex G. Smith; Christopher X. S. Zee; Alexandra L. Uitdenbogerd
+U12-1013 | Free-text input vs menu selection: exploring the difference with a tutorial dialogue system. | http://www.aclweb.org/anthology/U/U12/U12-1013.pdf | category:paper author:Jenny Mcdonald; Alistair Knott; Richard Zeng
+U12-1014 | langid.py for better language modelling | http://www.aclweb.org/anthology/U/U12/U12-1014.pdf | category:paper author:Paul Cook; Marco Lui
+U12-1015 | LaBB-CAT: an Annotation Store | http://www.aclweb.org/anthology/U/U12/U12-1015.pdf | category:paper author:Robert Fromont; Jennifer Hay
+U12-1016 | Classification of Study Region in Environmental Science Abstracts | http://www.aclweb.org/anthology/U/U12/U12-1016.pdf | category:paper author:Jared Willett; Timothy Baldwin; David Martinez; Angus Webb
+U12-1017 | Overview of the ALTA 2012 Shared Task | http://www.aclweb.org/anthology/U/U12/U12-1017.pdf | category:paper author:Iman Amini; David Martinez; Diego Molla
+U12-1018 | Automatic sentence classifier using sentence ordering features for Event Based Medicine: Shared task system description | http://www.aclweb.org/anthology/U/U12/U12-1018.pdf | category:paper author:Spandana Gella; Duong Thanh Long
+U12-1019 | Feature Stacking for Sentence Classification in Evidence-Based Medicine | http://www.aclweb.org/anthology/U/U12/U12-1019.pdf | category:paper author:Marco Lui
+U12-1020 | Experiments with Clustering-based Features for Sentence Classification in Medical Publications: Macquarie Test’s participation in the ALTA 2012 shared task. | http://www.aclweb.org/anthology/U/U12/U12-1020.pdf | category:paper author:Diego Mollá

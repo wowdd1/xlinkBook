@@ -1,49 +1,49 @@
-M92-1001 | OVERVIEW OF THE FOURTH MESSAGE UNDERSTANDINGEVALUATION AND CONFERENCE | http://www.aclweb.org/anthology/M/M92/M92-1001.pdf | author:Beth M. Sundheim
-M92-1002 | MUC-4 EVALUATION METRICS | http://www.aclweb.org/anthology/M/M92/M92-1002.pdf | author:Nancy Chinchor, Ph.D.
-M92-1003 | THE STATISTICAL SIGNIFICANCE OF THE MUC-4 RESULTS | http://www.aclweb.org/anthology/M/M92/M92-1003.pdf | author:Nancy Chinchor, Ph.D.
-M92-1004 | Text Filtering in B/IUC-3 and MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1004.pdf | author:David D. Lewis; Richard M. Tong
-M92-1005 | AN ADJUNCT TEST FOR DISCOURSE PROCESSING IN MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1005.pdf | author:Lynette Hirschman
-M92-1006 | GE ADJUNCT TEST REPORT:OBJECT-ORIENTED DESIGN AND SCORING FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1006.pdf | author:George Krupka; Lisa Rau
-M92-1007 | BBN PLUM:MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1007.pdf | author:Ralph Weischedel; Damaris Ayuso; Sean Boisen; Heidi Fox; Herbert Gish; Robert Ingria
-M92-1008 | GE NLTOOLSET:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1008.pdf | author:Lisa Rau; George Krupka; Paul Jacobs
-M92-1009 | TIPSTER SHOGUN SYSTEM (JOINT GE-CMU): MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1009.pdf | author:George Krupka; Paul Jacobs; Michael Mauldin; Todd Kaufmann; IraSider
-M92-1010 | HUGHES RESEARCH LABORATORIESTRAINABLE TEXT SKIMMER:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1010.pdf | author:Stephanie E. August; Charles P. Dolan
-M92-1011 | LANGUAGE SYSTEMS, INC.MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1011.pdf | author:Christine A. Montgomery; Bonnie Glover Stalls; Robert R. Stumberger; Naicong Li; Robert S. Belvin; Alfredo Arnaiz; Susan B. Hirsh
-M92-1012 | MCDONNELL DOUGLAS ELECTRONIC SYSTEMS COMPANY MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1012.pdf | author:Amnon Meyers; David de Hilster
-M92-1013 | MITRE-Bedford ALEMBIC:MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1013.pdf | author:John Aberdeen; John Burger; Dennis Connolly; Susan Roberts; Marc Vilain
-M92-1014 | CRL/NMSU and Brandeis MucBruce: MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1014.pdf | author:Jim Cowie; Louise Guthrie; Yorick Wilks; James Pustejovsky
-M92-1015 | NEW YORK UNIVERSITY PROTEUS SYSTEM:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1015.pdf | author:Ralph Grishman; John Sterling; Catherine Macleod
-M92-1016 | PARAMAX SYSTEMS CORPORATION:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1016.pdf | author:Carl Weir; Barry Silk
-M92-1017 | THE PRC PAKTUS SYSTEM:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1017.pdf | author:Bruce Loatman
-M92-1018 | SRA SOLOMON:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1018.pdf | author:Chinatsu Aone; Doug McKee; Sandy Shinn; Hatte Blejer
-M92-1019 | SRI INTERNATIONAL FASTUS SYSTEM MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1019.pdf | author:Douglas E. Appelt; John Bear; Jerry R. Hobbs; David Israel; Mabry Tyson
-M92-1020 | UNIVERSITY OF MARYLAND/CONQUEST: MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1020.pdf | author:James Mayfield
-M92-1021 | University of Massachusetts: MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1021.pdf | author:W. Lehnert; C. Cardie; D. Fisher; J. McCarthy; E. Riloff; S. Soderland
-M92-1022 | The LINK System: MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1022.pdf | author:Steven L. Lytinen; Sayan Bhattacharyya; Robert R. Burridge; Peter M. Hastings; Christian Huyck; Karen A. Lipinsky; Eric S. McDaniel; Karenann K. Terrell
-M92-1023 | U,SC:MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1023.pdf | author:D. Moldovan; S. Cha; M. Chung; K. Hendrickson; J. Kim; S. Kowalski
-M92-1024 | BBN:Description of the PLUM System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1024.pdf | author:Damaris Ayuso; Sean Boisen; Heidi Fox; Herb Gish; Robert Ingria; Ralph Weischedel
-M92-1025 | GE NLTOOLSET: DESCRIPTION OF THE SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1025.pdf | author:George Krupka; Paul Jacobs; Lisa Rau; Lois Childs; Ira Sider
-M92-1026 | GE-CMU:DESCRIPTION OF THE TIPSTER/SHOGUN SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1026.pdf | author:Paul Jacobs; George Krupka; Lisa Rau; Todd Kaufmann; Michael Mauldin
-M92-1027 | HUGHES RESEARCH LABORATORIES: DESCRIPTION OF THE TRAINABLE TEXT SKIMMER USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1027.pdf | author:Stephanie E. August; Charles P. Dolan
-M92-1028 | LANGUAGE SYSTEMS, INC.DESCRIPTION OF THE DBG SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1028.pdf | author:Christine A. Montgomery; Bonnie Glover Stalls; Robert E. Stumberger; Naicong Li; Robert S. Belvin; Alfredo Arnaiz; Susan B. Hirsh
-M92-1029 | MCDONNELL DOUGLAS ELECTRONIC SYSTEMS COMPANY:DESCRIPTION OF THE TEXUS SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1029.pdf | author:Amnon Meyers; David de Hilster
-M92-1030 | MITRE-Bedford:Description of the ALEMBIC System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1030.pdf | author:John Aberdeen; John Burger; Dennis Connolly; Susan Roberts; Marc Vilain
-M92-1031 | CRL/NMSU and Brandeis: Description of the MucBruce System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1031.pdf | author:Jim Cowie; Louise Guthrie; Yorick Wilks
-M92-1032 | NEW YORK UNIVERSITY DESCRIPTION OF THE PROTEUS SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1032.pdf | author:Ralph Grishman; Catherine Macleod; John Sterling
-M92-1033 | PARAMAX SYSTEMS CORPORATION: DESCRIPTION OF THE PARAMAX SYSTEM USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1033.pdf | author:Carl Weir; Barry Silk
-M92-1034 | PRC Inc:DESCRIPTION OF THE PAKTUS SYSTEM USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1034.pdf | author:Bruce Loatman
-M92-1035 | SRA:DESCRIPTION OF THE SOLOMON SYSTEM AS USED FORMUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1035.pdf | author:Chinatsu Aone; Doug McKee; Sandy Shinn; Hatte Blejer
-M92-1036 | SRI INTERNATIONAL: DESCRIPTION OF THE FASTUS SYSTEM USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1036.pdf | author:Jerry R. Hobbs; Douglas Appelt; Mabry Tyson; John Bear; David Israel
-M92-1037 | UNIVERSITY OF MARYLAND/CONQUEST: DESCRIPTION OF THE ICTOAN SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1037.pdf | author:James Mayfield
-M92-1038 | University of Massachusetts : Description of the CIRCUS System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1038.pdf | author:W. Lehnert; C. Cardie; D. Fisher; J. McCarthy; E. Riloff; S. Soderland
-M92-1039 | Description of the LINK System Used for MUC- 4 | http://www.aclweb.org/anthology/M/M92/M92-1039.pdf | author:Steven L. Lytinen; Sayan Bhattacharyya; Robert R . Burridge; Peter M. Hastings; Christian Huyck; Karen A . Lipinsky; Eric S. McDaniel; Karenann K. Terrell
-M92-1040 | USC: Description of the SNAP System Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1040.pdf | author:D. Moldovan; S. Chet; M. Chung; K. Hendrickson; J. Kim; S . Kowalski
-M92-1041 | PART IV: APPENDICES | http://www.aclweb.org/anthology/M/M92/M92-1041.pdf | author:
-M92-1042 | APPENDIX A: EVALUATION TASK DESCRIPTION | http://www.aclweb.org/anthology/M/M92/M92-1042.pdf | author:
-M92-1043 | APPENDIX B: PROCEDURE FOR MUC-4 FINAL TESTING | http://www.aclweb.org/anthology/M/M92/M92-1043.pdf | author:
-M92-1044 | APPENDIX C: GUIDELINES FOR SCORING MISMATCHES BETWEEN SYSTEM RESPONSES AND ANSWER KEY | http://www.aclweb.org/anthology/M/M92/M92-1044.pdf | author:
-M92-1045 | APPENDIX D: SAMPLE TEXTS FROM TST2 TEST SET | http://www.aclweb.org/anthology/M/M92/M92-1045.pdf | author:
-M92-1046 | APPENDIX E: ANSWER KEY TEMPLATES FOR TST2 SAMPLE TEXTS | http://www.aclweb.org/anthology/M/M92/M92-1046.pdf | author:
-M92-1047 | APPENDIX F: MUC-4 SYSTEM WALKTHROUGH EXAMPLE | http://www.aclweb.org/anthology/M/M92/M92-1047.pdf | author:
-M92-1048 | APPENDIX G: FINAL TEST SCORE SUMMARIES | http://www.aclweb.org/anthology/M/M92/M92-1048.pdf | author:
-M92-1049 | APPENDIX H: SCATTER PLOTS OF FINAL TEST RESULTS | http://www.aclweb.org/anthology/M/M92/M92-1049.pdf | author:
+M92-1001 | OVERVIEW OF THE FOURTH MESSAGE UNDERSTANDINGEVALUATION AND CONFERENCE | http://www.aclweb.org/anthology/M/M92/M92-1001.pdf | category:paper author:Beth M. Sundheim
+M92-1002 | MUC-4 EVALUATION METRICS | http://www.aclweb.org/anthology/M/M92/M92-1002.pdf | category:paper author:Nancy Chinchor, Ph.D.
+M92-1003 | THE STATISTICAL SIGNIFICANCE OF THE MUC-4 RESULTS | http://www.aclweb.org/anthology/M/M92/M92-1003.pdf | category:paper author:Nancy Chinchor, Ph.D.
+M92-1004 | Text Filtering in B/IUC-3 and MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1004.pdf | category:paper author:David D. Lewis; Richard M. Tong
+M92-1005 | AN ADJUNCT TEST FOR DISCOURSE PROCESSING IN MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1005.pdf | category:paper author:Lynette Hirschman
+M92-1006 | GE ADJUNCT TEST REPORT:OBJECT-ORIENTED DESIGN AND SCORING FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1006.pdf | category:paper author:George Krupka; Lisa Rau
+M92-1007 | BBN PLUM:MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1007.pdf | category:paper author:Ralph Weischedel; Damaris Ayuso; Sean Boisen; Heidi Fox; Herbert Gish; Robert Ingria
+M92-1008 | GE NLTOOLSET:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1008.pdf | category:paper author:Lisa Rau; George Krupka; Paul Jacobs
+M92-1009 | TIPSTER SHOGUN SYSTEM (JOINT GE-CMU): MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1009.pdf | category:paper author:George Krupka; Paul Jacobs; Michael Mauldin; Todd Kaufmann; IraSider
+M92-1010 | HUGHES RESEARCH LABORATORIESTRAINABLE TEXT SKIMMER:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1010.pdf | category:paper author:Stephanie E. August; Charles P. Dolan
+M92-1011 | LANGUAGE SYSTEMS, INC.MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1011.pdf | category:paper author:Christine A. Montgomery; Bonnie Glover Stalls; Robert R. Stumberger; Naicong Li; Robert S. Belvin; Alfredo Arnaiz; Susan B. Hirsh
+M92-1012 | MCDONNELL DOUGLAS ELECTRONIC SYSTEMS COMPANY MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1012.pdf | category:paper author:Amnon Meyers; David de Hilster
+M92-1013 | MITRE-Bedford ALEMBIC:MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1013.pdf | category:paper author:John Aberdeen; John Burger; Dennis Connolly; Susan Roberts; Marc Vilain
+M92-1014 | CRL/NMSU and Brandeis MucBruce: MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1014.pdf | category:paper author:Jim Cowie; Louise Guthrie; Yorick Wilks; James Pustejovsky
+M92-1015 | NEW YORK UNIVERSITY PROTEUS SYSTEM:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1015.pdf | category:paper author:Ralph Grishman; John Sterling; Catherine Macleod
+M92-1016 | PARAMAX SYSTEMS CORPORATION:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1016.pdf | category:paper author:Carl Weir; Barry Silk
+M92-1017 | THE PRC PAKTUS SYSTEM:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1017.pdf | category:paper author:Bruce Loatman
+M92-1018 | SRA SOLOMON:MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1018.pdf | category:paper author:Chinatsu Aone; Doug McKee; Sandy Shinn; Hatte Blejer
+M92-1019 | SRI INTERNATIONAL FASTUS SYSTEM MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1019.pdf | category:paper author:Douglas E. Appelt; John Bear; Jerry R. Hobbs; David Israel; Mabry Tyson
+M92-1020 | UNIVERSITY OF MARYLAND/CONQUEST: MUC-4 TEST RESULTS AND ANALYSIS | http://www.aclweb.org/anthology/M/M92/M92-1020.pdf | category:paper author:James Mayfield
+M92-1021 | University of Massachusetts: MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1021.pdf | category:paper author:W. Lehnert; C. Cardie; D. Fisher; J. McCarthy; E. Riloff; S. Soderland
+M92-1022 | The LINK System: MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1022.pdf | category:paper author:Steven L. Lytinen; Sayan Bhattacharyya; Robert R. Burridge; Peter M. Hastings; Christian Huyck; Karen A. Lipinsky; Eric S. McDaniel; Karenann K. Terrell
+M92-1023 | U,SC:MUC-4 Test Results and Analysis | http://www.aclweb.org/anthology/M/M92/M92-1023.pdf | category:paper author:D. Moldovan; S. Cha; M. Chung; K. Hendrickson; J. Kim; S. Kowalski
+M92-1024 | BBN:Description of the PLUM System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1024.pdf | category:paper author:Damaris Ayuso; Sean Boisen; Heidi Fox; Herb Gish; Robert Ingria; Ralph Weischedel
+M92-1025 | GE NLTOOLSET: DESCRIPTION OF THE SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1025.pdf | category:paper author:George Krupka; Paul Jacobs; Lisa Rau; Lois Childs; Ira Sider
+M92-1026 | GE-CMU:DESCRIPTION OF THE TIPSTER/SHOGUN SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1026.pdf | category:paper author:Paul Jacobs; George Krupka; Lisa Rau; Todd Kaufmann; Michael Mauldin
+M92-1027 | HUGHES RESEARCH LABORATORIES: DESCRIPTION OF THE TRAINABLE TEXT SKIMMER USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1027.pdf | category:paper author:Stephanie E. August; Charles P. Dolan
+M92-1028 | LANGUAGE SYSTEMS, INC.DESCRIPTION OF THE DBG SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1028.pdf | category:paper author:Christine A. Montgomery; Bonnie Glover Stalls; Robert E. Stumberger; Naicong Li; Robert S. Belvin; Alfredo Arnaiz; Susan B. Hirsh
+M92-1029 | MCDONNELL DOUGLAS ELECTRONIC SYSTEMS COMPANY:DESCRIPTION OF THE TEXUS SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1029.pdf | category:paper author:Amnon Meyers; David de Hilster
+M92-1030 | MITRE-Bedford:Description of the ALEMBIC System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1030.pdf | category:paper author:John Aberdeen; John Burger; Dennis Connolly; Susan Roberts; Marc Vilain
+M92-1031 | CRL/NMSU and Brandeis: Description of the MucBruce System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1031.pdf | category:paper author:Jim Cowie; Louise Guthrie; Yorick Wilks
+M92-1032 | NEW YORK UNIVERSITY DESCRIPTION OF THE PROTEUS SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1032.pdf | category:paper author:Ralph Grishman; Catherine Macleod; John Sterling
+M92-1033 | PARAMAX SYSTEMS CORPORATION: DESCRIPTION OF THE PARAMAX SYSTEM USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1033.pdf | category:paper author:Carl Weir; Barry Silk
+M92-1034 | PRC Inc:DESCRIPTION OF THE PAKTUS SYSTEM USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1034.pdf | category:paper author:Bruce Loatman
+M92-1035 | SRA:DESCRIPTION OF THE SOLOMON SYSTEM AS USED FORMUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1035.pdf | category:paper author:Chinatsu Aone; Doug McKee; Sandy Shinn; Hatte Blejer
+M92-1036 | SRI INTERNATIONAL: DESCRIPTION OF THE FASTUS SYSTEM USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1036.pdf | category:paper author:Jerry R. Hobbs; Douglas Appelt; Mabry Tyson; John Bear; David Israel
+M92-1037 | UNIVERSITY OF MARYLAND/CONQUEST: DESCRIPTION OF THE ICTOAN SYSTEM AS USED FOR MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1037.pdf | category:paper author:James Mayfield
+M92-1038 | University of Massachusetts : Description of the CIRCUS System as Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1038.pdf | category:paper author:W. Lehnert; C. Cardie; D. Fisher; J. McCarthy; E. Riloff; S. Soderland
+M92-1039 | Description of the LINK System Used for MUC- 4 | http://www.aclweb.org/anthology/M/M92/M92-1039.pdf | category:paper author:Steven L. Lytinen; Sayan Bhattacharyya; Robert R . Burridge; Peter M. Hastings; Christian Huyck; Karen A . Lipinsky; Eric S. McDaniel; Karenann K. Terrell
+M92-1040 | USC: Description of the SNAP System Used for MUC-4 | http://www.aclweb.org/anthology/M/M92/M92-1040.pdf | category:paper author:D. Moldovan; S. Chet; M. Chung; K. Hendrickson; J. Kim; S . Kowalski
+M92-1041 | PART IV: APPENDICES | http://www.aclweb.org/anthology/M/M92/M92-1041.pdf | category:paper author:
+M92-1042 | APPENDIX A: EVALUATION TASK DESCRIPTION | http://www.aclweb.org/anthology/M/M92/M92-1042.pdf | category:paper author:
+M92-1043 | APPENDIX B: PROCEDURE FOR MUC-4 FINAL TESTING | http://www.aclweb.org/anthology/M/M92/M92-1043.pdf | category:paper author:
+M92-1044 | APPENDIX C: GUIDELINES FOR SCORING MISMATCHES BETWEEN SYSTEM RESPONSES AND ANSWER KEY | http://www.aclweb.org/anthology/M/M92/M92-1044.pdf | category:paper author:
+M92-1045 | APPENDIX D: SAMPLE TEXTS FROM TST2 TEST SET | http://www.aclweb.org/anthology/M/M92/M92-1045.pdf | category:paper author:
+M92-1046 | APPENDIX E: ANSWER KEY TEMPLATES FOR TST2 SAMPLE TEXTS | http://www.aclweb.org/anthology/M/M92/M92-1046.pdf | category:paper author:
+M92-1047 | APPENDIX F: MUC-4 SYSTEM WALKTHROUGH EXAMPLE | http://www.aclweb.org/anthology/M/M92/M92-1047.pdf | category:paper author:
+M92-1048 | APPENDIX G: FINAL TEST SCORE SUMMARIES | http://www.aclweb.org/anthology/M/M92/M92-1048.pdf | category:paper author:
+M92-1049 | APPENDIX H: SCATTER PLOTS OF FINAL TEST RESULTS | http://www.aclweb.org/anthology/M/M92/M92-1049.pdf | category:paper author:

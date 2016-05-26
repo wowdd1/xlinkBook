@@ -1,35 +1,35 @@
-Q13-1001 | Token and Type Constraints for Cross-Lingual Part-of-Speech Tagging | http://www.aclweb.org/anthology/Q/Q13/Q13-1001.pdf | author:Oscar Täckström; Dipanjan Das; Slav Petrov; Ryan McDonald; Joakim Nivre
-Q13-1002 | Finding Optimal 1-Endpoint-Crossing Trees | http://www.aclweb.org/anthology/Q/Q13/Q13-1002.pdf | author:Emily Pitler; Sampath Kannan; Mitchell Marcus
-Q13-1003 | Grounding Action Descriptions in Videos | http://www.aclweb.org/anthology/Q/Q13/Q13-1003.pdf | author:Michaela Regneri; Marcus Rohrbach; Dominikus Wetzel; Stefan Thater; Bernt Schiele; Manfred Pinkal
-Q13-1004 | Branch and Bound Algorithm for Dependency Parsing with Non-local Features | http://www.aclweb.org/anthology/Q/Q13/Q13-1004.pdf | author:Xian Qian; Yang Liu
-Q13-1005 | Weakly Supervised Learning of Semantic Parsers for Mapping Instructions to Actions | http://www.aclweb.org/anthology/Q/Q13/Q13-1005.pdf | author:Yoav Artzi; Luke Zettlemoyer
-Q13-1006 | Unsupervised Dependency Parsing with Acoustic Cues | http://www.aclweb.org/anthology/Q/Q13/Q13-1006.pdf | author:John K Pate; Sharon Goldwater
-Q13-1007 | An HDP Model for Inducing Combinatory Categorial Grammars | http://www.aclweb.org/anthology/Q/Q13/Q13-1007.pdf | author:Yonatan Bisk; Julia Hockenmaier
-Q13-1008 | A Novel Feature-based Bayesian Model for Query Focused Multi-document Summarization | http://www.aclweb.org/anthology/Q/Q13/Q13-1008.pdf | author:Jiwei Li; Sujian Li
-Q13-1009 | Using Pivot-Based Paraphrasing and Sentiment Profiles to Improve a Subjectivity Lexicon for Essay Data | http://www.aclweb.org/anthology/Q/Q13/Q13-1009.pdf | author:Beata Beigman Klebanov; Nitin Madnani; Jill Burstein
-Q13-1010 | Incremental Tree Substitution Grammar for Parsing and Sentence Prediction | http://www.aclweb.org/anthology/Q/Q13/Q13-1010.pdf | author:Federico Sangati; Frank Keller
-Q13-1011 | Modeling Child Divergences from Adult Grammar | http://www.aclweb.org/anthology/Q/Q13/Q13-1011.pdf | author:Sam Sahakian; Benjamin Snyder
-Q13-1012 | Efficient Stacked Dependency Parsing by Forest Reranking | http://www.aclweb.org/anthology/Q/Q13/Q13-1012.pdf | author:Katsuhiko Hayashi; Shuhei Kondo; Yuji Matsumoto
-Q13-1013 | Dijkstra-WSA: A Graph-Based Approach to Word Sense Alignment | http://www.aclweb.org/anthology/Q/Q13/Q13-1013.pdf | author:Michael Matuschek; Iryna Gurevych
-Q13-1014 | Learning to translate with products of novices: a suite of open-ended challenge problems for teaching MT | http://www.aclweb.org/anthology/Q/Q13/Q13-1014.pdf | author:Adam Lopez; Matt Post; Chris Callison-Burch; Jonathan Weese; Juri Ganitkevitch; Narges Ahmidi; Olivia Buzek; Leah Hanson; Beaniesh Jamil; Matthias Lee; Ya-Ting Lin; Henry Pao; Fatima Rivera; Leili Shahriyari; Debu Sinha; Adam Teichert; Stephen Wampler; Michael Weinberger; Daguang Xu; Lin Yang; Shang Zhao
-Q13-1015 | Combined Distributional and Logical Semantics | http://www.aclweb.org/anthology/Q/Q13/Q13-1015.pdf | author:Mike Lewis; Mark Steedman
-Q13-1016 | Jointly Learning to Parse and Perceive: Connecting Natural Language to the Physical World | http://www.aclweb.org/anthology/Q/Q13/Q13-1016.pdf | author:Jayant Krishnamurthy; Thomas Kollar
-Q13-1017 | Dual Coordinate Descent Algorithms for Efficient Large Margin Structured Prediction | http://www.aclweb.org/anthology/Q/Q13/Q13-1017.pdf | author:Ming-Wei Chang; Wen-tau Yih
-Q13-1018 | Joint Arc-factored Parsing of Syntactic and Semantic Dependencies | http://www.aclweb.org/anthology/Q/Q13/Q13-1018.pdf | author:Xavier Lluís; Xavier Carreras; Lluís Màrquez
-Q13-1019 | Modeling Semantic Relations Expressed by Prepositions | http://www.aclweb.org/anthology/Q/Q13/Q13-1019.pdf | author:Vivek Srikumar; Dan Roth
-Q13-1020 | Unsupervised Tree Induction for Tree-based Translation | http://www.aclweb.org/anthology/Q/Q13/Q13-1020.pdf | author:Feifei Zhai; Jiajun Zhang; Yu Zhou; Chengqing Zong
-Q13-1021 | Minimally-Supervised Morphological Segmentation using Adaptor Grammars | http://www.aclweb.org/anthology/Q/Q13/Q13-1021.pdf | author:Kairit Sirts; Sharon Goldwater
-Q13-1022 | Efficient Parsing for Head-Split Dependency Trees | http://www.aclweb.org/anthology/Q/Q13/Q13-1022.pdf | author:Giorgio Satta; Marco Kuhlmann
-Q13-1023 | Good, Great, Excellent: Global Inference of Semantic Intensities | http://www.aclweb.org/anthology/Q/Q13/Q13-1023.pdf | author:Gerard de Melo; Mohit Bansal
-Q13-1024 | Large-scale Word Alignment Using Soft Dependency Cohesion Constraints | http://www.aclweb.org/anthology/Q/Q13/Q13-1024.pdf | author:Zhiguo Wang; Chengqing Zong
-Q13-1025 | Data-driven, PCFG-based and Pseudo-PCFG-based Models for Chinese Dependency Parsing | http://www.aclweb.org/anthology/Q/Q13/Q13-1025.pdf | author:Weiwei Sun; Xiaojun Wan
-Q13-1026 | Parsing entire discourses as very long strings: Capturing topic continuity in grounded language learning | http://www.aclweb.org/anthology/Q/Q13/Q13-1026.pdf | author:Minh-Thang Luong; Michael C. Frank; Mark Johnson
-Q13-1027 | Dynamically Shaping the Reordering Search Space of Phrase-Based Statistical Machine Translation | http://www.aclweb.org/anthology/Q/Q13/Q13-1027.pdf | author:Arianna Bisazza; Marcello Federico
-Q13-1028 | What Makes Writing Great? First Experiments on Article Quality Prediction in the Science Journalism Domain | http://www.aclweb.org/anthology/Q/Q13/Q13-1028.pdf | author:Annie Louis; Ani Nenkova
-Q13-1029 | Distributional Semantics Beyond Words: Supervised Learning of Analogy and Paraphrase | http://www.aclweb.org/anthology/Q/Q13/Q13-1029.pdf | author:Peter D. Turney
-Q13-1030 | Modeling Missing Data in Distant Supervision for Information Extraction | http://www.aclweb.org/anthology/Q/Q13/Q13-1030.pdf | author:Alan Ritter; Luke Zettlemoyer; Mausam; Oren Etzioni
-Q13-1031 | Data-Driven Metaphor Recognition and Explanation | http://www.aclweb.org/anthology/Q/Q13/Q13-1031.pdf | author:Hongsong Li; Kenny Q. Zhu; Haixun Wang
-Q13-1032 | Powergrading: a Clustering Approach to Amplify Human Effort for Short Answer Grading | http://www.aclweb.org/anthology/Q/Q13/Q13-1032.pdf | author:Sumit Basu; Chuck Jacobs; Lucy Vanderwende
-Q13-1033 | Training Deterministic Parsers with Non-Deterministic Oracles | http://www.aclweb.org/anthology/Q/Q13/Q13-1033.pdf | author:Yoav Goldberg; Joakim Nivre
-Q13-1034 | Joint Morphological and Syntactic Analysis for Richly Inflected Languages | http://www.aclweb.org/anthology/Q/Q13/Q13-1034.pdf | author:Bernd Bohnet; Joakim Nivre; Igor Boguslavsky; Richard Farkas; Filip Ginter; Jan Hajic
-Q13-1035 | Measuring Machine Translation Errors in New Domains | http://www.aclweb.org/anthology/Q/Q13/Q13-1035.pdf | author:Ann Irvine; John Morgan; Marine Carpuat; Hal Daume III; Dragos Munteanu
+Q13-1001 | Token and Type Constraints for Cross-Lingual Part-of-Speech Tagging | http://www.aclweb.org/anthology/Q/Q13/Q13-1001.pdf | category:paper author:Oscar Täckström; Dipanjan Das; Slav Petrov; Ryan McDonald; Joakim Nivre
+Q13-1002 | Finding Optimal 1-Endpoint-Crossing Trees | http://www.aclweb.org/anthology/Q/Q13/Q13-1002.pdf | category:paper author:Emily Pitler; Sampath Kannan; Mitchell Marcus
+Q13-1003 | Grounding Action Descriptions in Videos | http://www.aclweb.org/anthology/Q/Q13/Q13-1003.pdf | category:paper author:Michaela Regneri; Marcus Rohrbach; Dominikus Wetzel; Stefan Thater; Bernt Schiele; Manfred Pinkal
+Q13-1004 | Branch and Bound Algorithm for Dependency Parsing with Non-local Features | http://www.aclweb.org/anthology/Q/Q13/Q13-1004.pdf | category:paper author:Xian Qian; Yang Liu
+Q13-1005 | Weakly Supervised Learning of Semantic Parsers for Mapping Instructions to Actions | http://www.aclweb.org/anthology/Q/Q13/Q13-1005.pdf | category:paper author:Yoav Artzi; Luke Zettlemoyer
+Q13-1006 | Unsupervised Dependency Parsing with Acoustic Cues | http://www.aclweb.org/anthology/Q/Q13/Q13-1006.pdf | category:paper author:John K Pate; Sharon Goldwater
+Q13-1007 | An HDP Model for Inducing Combinatory Categorial Grammars | http://www.aclweb.org/anthology/Q/Q13/Q13-1007.pdf | category:paper author:Yonatan Bisk; Julia Hockenmaier
+Q13-1008 | A Novel Feature-based Bayesian Model for Query Focused Multi-document Summarization | http://www.aclweb.org/anthology/Q/Q13/Q13-1008.pdf | category:paper author:Jiwei Li; Sujian Li
+Q13-1009 | Using Pivot-Based Paraphrasing and Sentiment Profiles to Improve a Subjectivity Lexicon for Essay Data | http://www.aclweb.org/anthology/Q/Q13/Q13-1009.pdf | category:paper author:Beata Beigman Klebanov; Nitin Madnani; Jill Burstein
+Q13-1010 | Incremental Tree Substitution Grammar for Parsing and Sentence Prediction | http://www.aclweb.org/anthology/Q/Q13/Q13-1010.pdf | category:paper author:Federico Sangati; Frank Keller
+Q13-1011 | Modeling Child Divergences from Adult Grammar | http://www.aclweb.org/anthology/Q/Q13/Q13-1011.pdf | category:paper author:Sam Sahakian; Benjamin Snyder
+Q13-1012 | Efficient Stacked Dependency Parsing by Forest Reranking | http://www.aclweb.org/anthology/Q/Q13/Q13-1012.pdf | category:paper author:Katsuhiko Hayashi; Shuhei Kondo; Yuji Matsumoto
+Q13-1013 | Dijkstra-WSA: A Graph-Based Approach to Word Sense Alignment | http://www.aclweb.org/anthology/Q/Q13/Q13-1013.pdf | category:paper author:Michael Matuschek; Iryna Gurevych
+Q13-1014 | Learning to translate with products of novices: a suite of open-ended challenge problems for teaching MT | http://www.aclweb.org/anthology/Q/Q13/Q13-1014.pdf | category:paper author:Adam Lopez; Matt Post; Chris Callison-Burch; Jonathan Weese; Juri Ganitkevitch; Narges Ahmidi; Olivia Buzek; Leah Hanson; Beaniesh Jamil; Matthias Lee; Ya-Ting Lin; Henry Pao; Fatima Rivera; Leili Shahriyari; Debu Sinha; Adam Teichert; Stephen Wampler; Michael Weinberger; Daguang Xu; Lin Yang; Shang Zhao
+Q13-1015 | Combined Distributional and Logical Semantics | http://www.aclweb.org/anthology/Q/Q13/Q13-1015.pdf | category:paper author:Mike Lewis; Mark Steedman
+Q13-1016 | Jointly Learning to Parse and Perceive: Connecting Natural Language to the Physical World | http://www.aclweb.org/anthology/Q/Q13/Q13-1016.pdf | category:paper author:Jayant Krishnamurthy; Thomas Kollar
+Q13-1017 | Dual Coordinate Descent Algorithms for Efficient Large Margin Structured Prediction | http://www.aclweb.org/anthology/Q/Q13/Q13-1017.pdf | category:paper author:Ming-Wei Chang; Wen-tau Yih
+Q13-1018 | Joint Arc-factored Parsing of Syntactic and Semantic Dependencies | http://www.aclweb.org/anthology/Q/Q13/Q13-1018.pdf | category:paper author:Xavier Lluís; Xavier Carreras; Lluís Màrquez
+Q13-1019 | Modeling Semantic Relations Expressed by Prepositions | http://www.aclweb.org/anthology/Q/Q13/Q13-1019.pdf | category:paper author:Vivek Srikumar; Dan Roth
+Q13-1020 | Unsupervised Tree Induction for Tree-based Translation | http://www.aclweb.org/anthology/Q/Q13/Q13-1020.pdf | category:paper author:Feifei Zhai; Jiajun Zhang; Yu Zhou; Chengqing Zong
+Q13-1021 | Minimally-Supervised Morphological Segmentation using Adaptor Grammars | http://www.aclweb.org/anthology/Q/Q13/Q13-1021.pdf | category:paper author:Kairit Sirts; Sharon Goldwater
+Q13-1022 | Efficient Parsing for Head-Split Dependency Trees | http://www.aclweb.org/anthology/Q/Q13/Q13-1022.pdf | category:paper author:Giorgio Satta; Marco Kuhlmann
+Q13-1023 | Good, Great, Excellent: Global Inference of Semantic Intensities | http://www.aclweb.org/anthology/Q/Q13/Q13-1023.pdf | category:paper author:Gerard de Melo; Mohit Bansal
+Q13-1024 | Large-scale Word Alignment Using Soft Dependency Cohesion Constraints | http://www.aclweb.org/anthology/Q/Q13/Q13-1024.pdf | category:paper author:Zhiguo Wang; Chengqing Zong
+Q13-1025 | Data-driven, PCFG-based and Pseudo-PCFG-based Models for Chinese Dependency Parsing | http://www.aclweb.org/anthology/Q/Q13/Q13-1025.pdf | category:paper author:Weiwei Sun; Xiaojun Wan
+Q13-1026 | Parsing entire discourses as very long strings: Capturing topic continuity in grounded language learning | http://www.aclweb.org/anthology/Q/Q13/Q13-1026.pdf | category:paper author:Minh-Thang Luong; Michael C. Frank; Mark Johnson
+Q13-1027 | Dynamically Shaping the Reordering Search Space of Phrase-Based Statistical Machine Translation | http://www.aclweb.org/anthology/Q/Q13/Q13-1027.pdf | category:paper author:Arianna Bisazza; Marcello Federico
+Q13-1028 | What Makes Writing Great? First Experiments on Article Quality Prediction in the Science Journalism Domain | http://www.aclweb.org/anthology/Q/Q13/Q13-1028.pdf | category:paper author:Annie Louis; Ani Nenkova
+Q13-1029 | Distributional Semantics Beyond Words: Supervised Learning of Analogy and Paraphrase | http://www.aclweb.org/anthology/Q/Q13/Q13-1029.pdf | category:paper author:Peter D. Turney
+Q13-1030 | Modeling Missing Data in Distant Supervision for Information Extraction | http://www.aclweb.org/anthology/Q/Q13/Q13-1030.pdf | category:paper author:Alan Ritter; Luke Zettlemoyer; Mausam; Oren Etzioni
+Q13-1031 | Data-Driven Metaphor Recognition and Explanation | http://www.aclweb.org/anthology/Q/Q13/Q13-1031.pdf | category:paper author:Hongsong Li; Kenny Q. Zhu; Haixun Wang
+Q13-1032 | Powergrading: a Clustering Approach to Amplify Human Effort for Short Answer Grading | http://www.aclweb.org/anthology/Q/Q13/Q13-1032.pdf | category:paper author:Sumit Basu; Chuck Jacobs; Lucy Vanderwende
+Q13-1033 | Training Deterministic Parsers with Non-Deterministic Oracles | http://www.aclweb.org/anthology/Q/Q13/Q13-1033.pdf | category:paper author:Yoav Goldberg; Joakim Nivre
+Q13-1034 | Joint Morphological and Syntactic Analysis for Richly Inflected Languages | http://www.aclweb.org/anthology/Q/Q13/Q13-1034.pdf | category:paper author:Bernd Bohnet; Joakim Nivre; Igor Boguslavsky; Richard Farkas; Filip Ginter; Jan Hajic
+Q13-1035 | Measuring Machine Translation Errors in New Domains | http://www.aclweb.org/anthology/Q/Q13/Q13-1035.pdf | category:paper author:Ann Irvine; John Morgan; Marine Carpuat; Hal Daume III; Dragos Munteanu

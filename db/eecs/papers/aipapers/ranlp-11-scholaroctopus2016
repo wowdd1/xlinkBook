@@ -1,139 +1,139 @@
-R11-1001 | Extracting STRIPS Representations of Actions and Events | http://www.aclweb.org/anthology/R/R11/R11-1001.pdf | author:Avirup Sil; Alexander Yates
-R11-1002 | Acquiring Topic Features to improve Event Extraction: in Pre-selected and Balanced Collections | http://www.aclweb.org/anthology/R/R11/R11-1002.pdf | author:Shasha Liao; Ralph Grishman
-R11-1003 | Minimally Supervised Rule Learning for the Extraction of Biographic Information from Various Social Domains | http://www.aclweb.org/anthology/R/R11/R11-1003.pdf | author:Hong Li; Feiyu Xu; Hans Uszkoreit
-R11-1004 | Extracting Relations Within and Across Sentences | http://www.aclweb.org/anthology/R/R11/R11-1004.pdf | author:Kumutha Swampillai; Mark Stevenson
-R11-1005 | Knowledge-Poor Approach to Shallow Parsing: Contribution of Unsupervised Part-of-Speech Induction | http://www.aclweb.org/anthology/R/R11/R11-1005.pdf | author:Marie Guègan; Claude de Loupy
-R11-1006 | Fast Domain Adaptation for Part of Speech Tagging for Dialogues | http://www.aclweb.org/anthology/R/R11/R11-1006.pdf | author:Sandra Kübler; Eric Baucom
-R11-1007 | Using a Morphological Database to Increase the Accuracy in POS Tagging | http://www.aclweb.org/anthology/R/R11/R11-1007.pdf | author:Hrafn Loftsson; Sigrún Helgadóttir; Eirìkur Rögnvaldsson
-R11-1008 | Actions Speak Louder than Words: Evaluating Parsers in the Context of Natural Language Understanding Systems for Human-Robot Interaction | http://www.aclweb.org/anthology/R/R11/R11-1008.pdf | author:Sandra Kübler; Rachael Cantrell; Matthias Scheutz
-R11-1009 | Constructing Linguistically Motivated Structures from Statistical Grammars | http://www.aclweb.org/anthology/R/R11/R11-1009.pdf | author:Ali Basirat; Heshaam Faili
-R11-1010 | An Open Source Punjabi Resource Grammar | http://www.aclweb.org/anthology/R/R11/R11-1010.pdf | author:Shafqat Mumtaz Virk; Muhammad Humayoun; Aarne Ranta
-R11-1011 | Multi-Document Summarization by Capturing the Information Users are Interested in | http://www.aclweb.org/anthology/R/R11/R11-1011.pdf | author:Elena Lloret; Laura Plaza; Ahmet Aker
-R11-1012 | Efficient algorithm for Context Sensitive Aggregation in Natural Language generation | http://www.aclweb.org/anthology/R/R11/R11-1012.pdf | author:Hemanth Sagar Bayyarapu
-R11-1013 | Enriching a statistical machine translation system trained on small parallel corpora with rule-based bilingual phrases | http://www.aclweb.org/anthology/R/R11/R11-1013.pdf | author:Vìctor M. Sánchez-Cartagena; Felipe Sánchez-Martìnez; Juan Antonio Pèrez-Ortiz
-R11-1014 | Assessing the Post-Editing Effort for Automatic and Semi-Automatic Translations of DVD Subtitles | http://www.aclweb.org/anthology/R/R11/R11-1014.pdf | author:Sheila C. M. de Sousa; Wilker Aziz; Lucia Specia
-R11-1015 | JRC-NAMES: A Freely Available, Highly Multilingual Named Entity Resource | http://www.aclweb.org/anthology/R/R11/R11-1015.pdf | author:Ralf Steinberger; Bruno Pouliquen; Mijail Kabadjov; Jenya Belyaeva; Erik van der Goot
-R11-1016 | MDL-based Models for Alignment of Etymological Data | http://www.aclweb.org/anthology/R/R11/R11-1016.pdf | author:Hannes Wettig; Suvi Hiltunen; Roman Yangarber
-R11-1017 | Building a Multilingual Named Entity-Annotated Corpus Using Annotation Projection | http://www.aclweb.org/anthology/R/R11/R11-1017.pdf | author:Maud Ehrmann; Marco Turchi; Ralf Steinberger
-R11-1018 | Bilingual lexicon extraction from comparable corpora for closely related languages | http://www.aclweb.org/anthology/R/R11/R11-1018.pdf | author:Darja Fišer; Nikola Ljubešić
-R11-1019 | Sentiments and Opinions in Health-related Web messages | http://www.aclweb.org/anthology/R/R11/R11-1019.pdf | author:Marina Sokolova; Victoria Bobicev
-R11-1020 | An Exploration into the Use of Contextual Document Clustering for Cluster Sentiment Analysis | http://www.aclweb.org/anthology/R/R11/R11-1020.pdf | author:Niall Rooney; Hui Wang; Fiona Browne; Fergal Monaghan; Jann Müller; Alan Sergeant; Zhiwei Lin; Philip Taylor; Vladimir Dobrynin
-R11-1021 | Pause and Stop Labeling for Chinese Sentence Boundary Detection | http://www.aclweb.org/anthology/R/R11/R11-1021.pdf | author:Hen-Hsen Huang; Hsin-Hsi Chen
-R11-1022 | Multilabel Tagging of Discourse Relations in Ambiguous Temporal Connectives | http://www.aclweb.org/anthology/R/R11/R11-1022.pdf | author:Yannick Versley
-R11-1023 | Noun Compound and Named Entity Recognition and their Usability in Keyphrase Extraction | http://www.aclweb.org/anthology/R/R11/R11-1023.pdf | author:István Nagy T.; Gábor Berend; Veronika Vincze
-R11-1024 | A Named Entity Recognition Method using Rules Acquired from Unlabeled Data | http://www.aclweb.org/anthology/R/R11/R11-1024.pdf | author:Tomoya Iwakura
-R11-1025 | An Incremental Entity-Mention Model for Coreference Resolution with Restrictive Antecedent Accessibility | http://www.aclweb.org/anthology/R/R11/R11-1025.pdf | author:Manfred Klenner; Don Tuggener
-R11-1026 | Cross-Domain Dutch Coreference Resolution | http://www.aclweb.org/anthology/R/R11/R11-1026.pdf | author:Orphèe De Clercq; Vèronique Hoste; Iris Hendrickx
-R11-1027 | Finding the Best Approach for Multi-lingual Text Summarisation: A Comparative Analysis | http://www.aclweb.org/anthology/R/R11/R11-1027.pdf | author:Elena Lloret; Manuel Palomar
-R11-1028 | Automatically Creating General-Purpose Opinion Summaries from Text | http://www.aclweb.org/anthology/R/R11/R11-1028.pdf | author:Veselin Stoyanov; Claire Cardie
-R11-1029 | Exploring the Usefulness of Cross-lingual Information Fusion for Refining Real-time News Event Extraction: A Preliminary Study | http://www.aclweb.org/anthology/R/R11/R11-1029.pdf | author:Jakub Piskorski; Jenya Belayeva; Martin Atkinson
-R11-1030 | Temporal Relation Extraction Using Expectation Maximization | http://www.aclweb.org/anthology/R/R11/R11-1030.pdf | author:Seyed Abolghasem Mirroshandel; Gholamreza Ghassem-Sani
-R11-1031 | Improving Chunk-based Semantic Role Labeling with Lexical Features | http://www.aclweb.org/anthology/R/R11/R11-1031.pdf | author:Wilker Aziz; Miguel Rios; Lucia Specia
-R11-1032 | Improving WSD using ISR-WN with Relevant Semantic Trees and SemCor Senses Frequency | http://www.aclweb.org/anthology/R/R11/R11-1032.pdf | author:Yoan Gutièrrez; Sonia Vázquez; Andrès Montoyo
-R11-1033 | Investigating Advanced Techniques for Document Content Similarity Applied to External Plagiarism Analysis | http://www.aclweb.org/anthology/R/R11/R11-1033.pdf | author:Daniel Micol; Rafael Muñoz; Óscar Ferrández
-R11-1034 | Using Cognates in a French-Romanian Lexical Alignment System: A Comparative Study | http://www.aclweb.org/anthology/R/R11/R11-1034.pdf | author:Mirabela Navlea; Amalia Todirascu
-R11-1035 | Highly Multilingual Coreference Resolution Exploiting a Mature Entity Repository | http://www.aclweb.org/anthology/R/R11/R11-1035.pdf | author:Josef Steinberger; Jenya Belyaeva; Jonathan Crawley; Leonida Della-Rocca; Mohamed Ebrahim; Maud Ehrmann; Mijail Kabadjov; Ralf Steinberger; Erik Van-der-Goot
-R11-1036 | Singletons and Coreference Resolution Evaluation | http://www.aclweb.org/anthology/R/R11/R11-1036.pdf | author:Sandra Kübler; Desislava Zhekova
-R11-1037 | Modelling Entity Instantiations | http://www.aclweb.org/anthology/R/R11/R11-1037.pdf | author:Andrew McKinlay; Katja Markert
-R11-1038 | A New Scheme for Annotating Semantic Relations between Named Entities in Corpora | http://www.aclweb.org/anthology/R/R11/R11-1038.pdf | author:Mani Ezzat; Thierry Poibeau
-R11-1039 | Prototypical Opinion Holders: What We can Learn from Experts and Analysts | http://www.aclweb.org/anthology/R/R11/R11-1039.pdf | author:Michael Wiegand; Dietrich Klakow
-R11-1040 | Multiword Expressions and Named Entities in the Wiki50 Corpus | http://www.aclweb.org/anthology/R/R11/R11-1040.pdf | author:Veronika Vincze; István Nagy T.; Gábor Berend
-R11-1041 | Towards the Automatic Merging of Lexical Resources: Automatic Mapping | http://www.aclweb.org/anthology/R/R11/R11-1041.pdf | author:Muntsa Padró; Núria Bel; Silvia Necsulescu
-R11-1042 | Unsupervised Learning for Persian WordNet Construction | http://www.aclweb.org/anthology/R/R11/R11-1042.pdf | author:Mortaza Montazery; Heshaam Faili
-R11-1043 | Domain Independent Authorship Attribution without Domain Adaptation | http://www.aclweb.org/anthology/R/R11/R11-1043.pdf | author:Rohith Menon; Yejin Choi
-R11-1044 | Cultural Configuration of Wikipedia: measuring Autoreferentiality in Different Languages | http://www.aclweb.org/anthology/R/R11/R11-1044.pdf | author:Marc Miquel Ribè; Horacio Rodrìguez
-R11-1045 | Combining Relational and Attributional Similarity for Semantic Relation Classification | http://www.aclweb.org/anthology/R/R11/R11-1045.pdf | author:Preslav Nakov; Zornitsa Kozareva
-R11-1046 | In Search of Missing Arguments: A Linguistic Approach | http://www.aclweb.org/anthology/R/R11/R11-1046.pdf | author:Josef Ruppenhofer; Philip Gorinski; Caroline Sporleder
-R11-1047 | Enlarging Monolingual Dictionaries for Machine Translation with Active Learning and Non-Expert Users | http://www.aclweb.org/anthology/R/R11/R11-1047.pdf | author:Miquel Esplà-Gomis; Vìctor M. Sánchez-Cartagena; Juan Antonio Pèrez-Ortiz
-R11-1048 | Morphological Analysis of Biomedical Terminology with Analogy-Based Alignment | http://www.aclweb.org/anthology/R/R11/R11-1048.pdf | author:Vincent Claveau; Ewa Kijak
-R11-1049 | Adaptability of Lexical Acquisition for Large-scale Grammars | http://www.aclweb.org/anthology/R/R11/R11-1049.pdf | author:Kostadin Cholakov; Gertjan van Noord; Valia Kordoni; Yi Zhang
-R11-1050 | Integration of Data from a Syntactic Lexicon into Generative and Discriminative Probabilistic Parsers | http://www.aclweb.org/anthology/R/R11/R11-1050.pdf | author:Anthony Sigogne; Matthieu Constant; Éric Laporte
-R11-1051 | Pattern Learning for Event Extraction using Monolingual Statistical Machine Translation | http://www.aclweb.org/anthology/R/R11/R11-1051.pdf | author:Marco Turchi; Vanni Zavarella; Hristo Tanev
-R11-1052 | META-DARE: Monitoring the Minimally Supervised ML of Relation Extraction Rules | http://www.aclweb.org/anthology/R/R11/R11-1052.pdf | author:Hong Li; Feiyu Xu; Hans Uszkoreit
-R11-1053 | Mining Transliterations from Wikipedia using Dynamic Bayesian Networks | http://www.aclweb.org/anthology/R/R11/R11-1053.pdf | author:Peter Nabende
-R11-1054 | Detecting Opinions Using Deep Syntactic Analysis | http://www.aclweb.org/anthology/R/R11/R11-1054.pdf | author:Caroline Brun
-R11-1055 | Using Visual Information to Predict Lexical Preference | http://www.aclweb.org/anthology/R/R11/R11-1055.pdf | author:Shane Bergsma; Randy Goebel
-R11-1056 | Systematic Knowledge Acquisition for Question Analysis | http://www.aclweb.org/anthology/R/R11/R11-1056.pdf | author:Dat Quoc Nguyen; Dai Quoc Nguyen; Son Bao Pham
-R11-1057 | A Semi-Automatic, Iterative Method for Creating a Domain-Specific Treebank | http://www.aclweb.org/anthology/R/R11/R11-1057.pdf | author:Corina Dima; Erhard Hinrichs
-R11-1058 | Determining Immediate Constituents of Compounds in GermaNet | http://www.aclweb.org/anthology/R/R11/R11-1058.pdf | author:Verena Henrich; Erhard Hinrichs
-R11-1059 | Segmentation and Clustering of Textual Sequences: a Typological Approach | http://www.aclweb.org/anthology/R/R11/R11-1059.pdf | author:Christelle Cocco; Raphaël Pittier; François Bavaud; Aris Xanthos
-R11-1060 | A Contextual Classification Strategy for Polarity Analysis of Direct Quotations from Financial News | http://www.aclweb.org/anthology/R/R11/R11-1060.pdf | author:Brett Drury; Gaël Dias; Luìs Torgo
-R11-1061 | On the Contribution of MWE-based Features to a Readability Formula for French as a Foreign Language | http://www.aclweb.org/anthology/R/R11/R11-1061.pdf | author:Thomas François; Patrick Watrin
-R11-1062 | Exploiting Hidden Morphophonemic Constraints for Finding the Underlying Forms of 'weak' Arabic Verbs | http://www.aclweb.org/anthology/R/R11/R11-1062.pdf | author:Allan Ramsay; Hanady Mansour
-R11-1063 | A Confidence Model for Syntactically-Motivated Entailment Proofs | http://www.aclweb.org/anthology/R/R11/R11-1063.pdf | author:Asher Stern; Ido Dagan
-R11-1064 | Learning Script Participants from Unlabeled Data | http://www.aclweb.org/anthology/R/R11/R11-1064.pdf | author:Michaela Regneri; Alexander Koller; Josef Ruppenhofer; Manfred Pinkal
-R11-1065 | Towards Minimal Recursion Semantics over Bulgarian Dependency Parsing | http://www.aclweb.org/anthology/R/R11/R11-1065.pdf | author:Kiril Simov; Petya Osenova
-R11-1066 | Discourse Structures to Reduce Discourse Incoherence in Blog Summarization | http://www.aclweb.org/anthology/R/R11/R11-1066.pdf | author:Shamima Mithun; Leila Kosseim
-R11-1067 | Parallel Suffix Arrays for Linguistic Pattern Search | http://www.aclweb.org/anthology/R/R11/R11-1067.pdf | author:Johannes Goller
-R11-1068 | A Mechanism to Restrict the Scope of Clause-Bounded Quantifiers in 'Continuation' Semantics | http://www.aclweb.org/anthology/R/R11/R11-1068.pdf | author:Anca Dinu
-R11-1069 | A Support Tool for Deriving Domain Taxonomies from Wikipedia | http://www.aclweb.org/anthology/R/R11/R11-1069.pdf | author:Lili Kotlerman; Zemer Avital; Ido Dagan; Amnon Lotan; Ofer Weintraub
-R11-1070 | Barrier Features for Classification of Semantic Relations | http://www.aclweb.org/anthology/R/R11/R11-1070.pdf | author:Anita Alicante; Anna Corazza
-R11-1071 | A Reflective View on Text Similarity | http://www.aclweb.org/anthology/R/R11/R11-1071.pdf | author:Daniel Bär; Torsten Zesch; Iryna Gurevych
-R11-1072 | Evaluating the Robustness of EmotiBlog for Sentiment Analysis and Opinion Mining | http://www.aclweb.org/anthology/R/R11/R11-1072.pdf | author:Ester Boldrini; Javi Fernández; Josè Manuel Gómez; Patricio Martìnez-Barco
-R11-1073 | Hybrid System For Plagiarism Detection | http://www.aclweb.org/anthology/R/R11/R11-1073.pdf | author:Javier R. Bru; Patricio Martìnez-Barco; Rafael Muñoz
-R11-1074 | Data-Driven Approach Using Semantics for Recognizing and Classifying TimeML Events in Italian | http://www.aclweb.org/anthology/R/R11/R11-1074.pdf | author:Tommaso Caselli; Hector Llorens; Borja Navarro-Colorado; Estela Saquete
-R11-1075 | Can Alternations Be Learned? A Machine Learning Approach To Romanian Verb Conjugation | http://www.aclweb.org/anthology/R/R11/R11-1075.pdf | author:Liviu P. Dinu; Emil Ionescu; Vlad Niculae; Octavia-Maria Sulea
-R11-1076 | A New Representation Model for the Automatic Recognition and Translation of Arabic Named Entities with NooJ | http://www.aclweb.org/anthology/R/R11/R11-1076.pdf | author:Hèla Fehri; Kais Haddar; Abdelmajid Ben Hamadou
-R11-1077 | Training Data in Statistical Machine Translation - the More, the Better? | http://www.aclweb.org/anthology/R/R11/R11-1077.pdf | author:Monica Gavrila; Cristina Vertan
-R11-1078 | Towards a Corpus-based Approach to Modelling Language Production of Foreign Language Learners in Communicative Contexts | http://www.aclweb.org/anthology/R/R11/R11-1078.pdf | author:Voula Gotsoulia; Bessie Dendrinos
-R11-1079 | Parsing a Polysynthetic Language | http://www.aclweb.org/anthology/R/R11/R11-1079.pdf | author:Petr Homola
-R11-1080 | An algorithm of Identifying Semantic Arguments of a Verb From Structured Data | http://www.aclweb.org/anthology/R/R11/R11-1080.pdf | author:Minhua Huang; Robert M. Haralick
-R11-1081 | Construction of an HPSG Grammar for the Arabic Relative Sentences | http://www.aclweb.org/anthology/R/R11/R11-1081.pdf | author:Ines Zalila; Kais Haddar
-R11-1082 | Automatically Selected Skip Edges in Conditional Random Fields for Named Entity Recognition | http://www.aclweb.org/anthology/R/R11/R11-1082.pdf | author:Roman Klinger
-R11-1083 | Negation Naive Bayes for Categorization of Product Pages on the Web | http://www.aclweb.org/anthology/R/R11/R11-1083.pdf | author:Kanako Komiya; Naoto Sato; Koji Fujimoto; Yoshiyuki Kotani
-R11-1084 | A Hybrid Approach for Event Extraction and Event Actor Identification | http://www.aclweb.org/anthology/R/R11/R11-1084.pdf | author:Anup Kumar Kolya; Asif Ekbal; Sivaji Bandyopadhyay
-R11-1085 | Evaluating Human Correction Quality for Machine Translation from Crowdsourcing | http://www.aclweb.org/anthology/R/R11/R11-1085.pdf | author:Shasha Liao; Cheng Wu; Juan Huerta
-R11-1086 | Multi-class SVM for Relation Extraction from Clinical Reports | http://www.aclweb.org/anthology/R/R11/R11-1086.pdf | author:Anne-Lyse Minard; Anne-Laure Ligozat; Brigitte Grau
-R11-1087 | Discovering coreference using image-grounded verb models | http://www.aclweb.org/anthology/R/R11/R11-1087.pdf | author:Amitabha Mukerjee; Kruti Neema; Sushobhan Nayak
-R11-1088 | Word and Phrase Learning based on Prior Semantics | http://www.aclweb.org/anthology/R/R11/R11-1088.pdf | author:Amitabha Mukerjee; Nikhil Joshi
-R11-1089 | Domain-Dependent Identification of Multiword Expressions | http://www.aclweb.org/anthology/R/R11/R11-1089.pdf | author:István Nagy T.; Veronika Vincze; Gábor Berend
-R11-1090 | Robust Semantic Analysis for Unseen Data in FrameNet | http://www.aclweb.org/anthology/R/R11/R11-1090.pdf | author:Alexis Palmer; Afra Alishahi; Caroline Sporleder
-R11-1091 | Studying Translationese at the Character Level | http://www.aclweb.org/anthology/R/R11/R11-1091.pdf | author:Marius Popescu
-R11-1092 | Linear Transduction Grammars and Zipper Finite-State Transducers | http://www.aclweb.org/anthology/R/R11/R11-1092.pdf | author:Markus Saers; Dekai Wu
-R11-1093 | Finding Negative Key Phrases for Internet Advertising Campaigns using Wikipedia | http://www.aclweb.org/anthology/R/R11/R11-1093.pdf | author:Martin Scaiano; Diana Inkpen
-R11-1094 | Establishing Implementation Priorities in Aiding Writers of Controlled Crisis Management Texts | http://www.aclweb.org/anthology/R/R11/R11-1094.pdf | author:Irina Temnikova
-R11-1095 | TechWatchTool: Innovation and Trend Monitoring | http://www.aclweb.org/anthology/R/R11/R11-1095.pdf | author:Hong Li; Feiyu Xu; Hans Uszkoreit
-R11-1096 | "Yes we can?": Subjectivity Annotation and Tagging for the Health Domain | http://www.aclweb.org/anthology/R/R11/R11-1096.pdf | author:Muhammad Abdul-Mageed; Mohammed Korayem; Ahmed YoussefAgha
-R11-1097 | Wordnets: State of the Art and Perspectives. Case Study: the Romanian Wordnet | http://www.aclweb.org/anthology/R/R11/R11-1097.pdf | author:Verginica Barbu Mititelu
-R11-1098 | Creation and Development of the Romanian Lexical Resources | http://www.aclweb.org/anthology/R/R11/R11-1098.pdf | author:Elena Boian; Constantin Ciubotaru; Svetlana Cojocaru; Alexandru Colesnicov; Ludmila Malahov; Mircea Petic
-R11-1099 | Analyses Tools for Non-head Structures | http://www.aclweb.org/anthology/R/R11/R11-1099.pdf | author:Sirine Boukedi; Kais Haddar
-R11-1100 | Visualization for Coreference Annotation | http://www.aclweb.org/anthology/R/R11/R11-1100.pdf | author:Andre Burkovski; Gunther Heidemann
-R11-1101 | The RST Spanish Treebank On-line Interface | http://www.aclweb.org/anthology/R/R11/R11-1101.pdf | author:Iria da Cunha; Juan-Manuel Torres-Moreno; Gerardo Sierra; Luis Adrián Cabrera-Diego; Brenda Gabriela Castro Rolón; Juan Miguel Rolland Bartilotti
-R11-1102 | Lexical Generalisation for Word-level Matching in Plagiarism Detection | http://www.aclweb.org/anthology/R/R11/R11-1102.pdf | author:Miranda Chong; Lucia Specia
-R11-1103 | Multiple Evidence for Term Extraction in Broad Domains | http://www.aclweb.org/anthology/R/R11/R11-1103.pdf | author:Boris Dobrov; Natalia Loukachevitch
-R11-1104 | Language Modeling for Document Selection in Question Answering | http://www.aclweb.org/anthology/R/R11/R11-1104.pdf | author:Nicolas Foucault; Gilles Adda; Sophie Rosset
-R11-1105 | Evaluating Various Linguistic Features on Semantic Relation Extraction | http://www.aclweb.org/anthology/R/R11/R11-1105.pdf | author:Marcos Garcia; Pablo Gamallo
-R11-1106 | Automatic titling of Articles Using Position and Statistical Information | http://www.aclweb.org/anthology/R/R11/R11-1106.pdf | author:Cèdric Lopez; Violaine Prince; Mathieu Roche
-R11-1107 | Unsupervised Domain Adaptation based on Text Relatedness | http://www.aclweb.org/anthology/R/R11/R11-1107.pdf | author:Georgios Petasis
-R11-1108 | Bilingual Experiments with an Arabic-English Corpus for Opinion Mining | http://www.aclweb.org/anthology/R/R11/R11-1108.pdf | author:Mohammed Rushdi-Saleh; M. Teresa Martìn-Valdivia; L. Alfonso Ureña-López; Josè M. Perea-Ortega
-R11-1109 | Experiments on Term Extraction using Noun Phrase Subclassifications | http://www.aclweb.org/anthology/R/R11/R11-1109.pdf | author:Merley da Silva Conrado; Walter Koza; Josuka Dìaz-Labrador; Joseba Abaitua; Solange Oliveira Rezende; Thiago Pardo; Zulema Solana
-R11-1110 | Adaptive Feedback Message Generation for Second Language Learners of Arabic | http://www.aclweb.org/anthology/R/R11/R11-1110.pdf | author:Khaled Shaalan; Marwa Magdy
-R11-1111 | Building a Patient-based Ontology for User-written Web Messages | http://www.aclweb.org/anthology/R/R11/R11-1111.pdf | author:Marina Sokolova; David Schramm
-R11-1112 | Recognition and Classification of Numerical Entities in Basque | http://www.aclweb.org/anthology/R/R11/R11-1112.pdf | author:Ander Soraluze; Iñaki Alegria; Olatz Ansa; Olatz Arregi; Xabier Arregi
-R11-1113 | Multilingual Entity-Centered Sentiment Analysis Evaluated by Parallel Corpora | http://www.aclweb.org/anthology/R/R11/R11-1113.pdf | author:Josef Steinberger; Polina Lenkova; Mijail Kabadjov; Ralf Steinberger; Erik van der Goot
-R11-1114 | Term Validation for Vocabulary Construction and Key Term Extraction | http://www.aclweb.org/anthology/R/R11/R11-1114.pdf | author:Alexander Ulanov; Andrey Simanovsky
-R11-1115 | Agreement: How to Reach it? Defining Language Features Leading to Agreement in Discourse | http://www.aclweb.org/anthology/R/R11/R11-1115.pdf | author:Tatiana Zidrasco; Victoria Bobicev; Shun Shiramatsu; Tadachika Ozono; Toramatsu Shintani
-R11-2001 | Domain-Dependent Detection of Light Verb Constructions | http://www.aclweb.org/anthology/R/R11/R11-2001.pdf | author:István T. Nagy; Gábor Berend; György Móra; Veronika Vincze
-R11-2002 | A Weighted Lexicon of French Event Names | http://www.aclweb.org/anthology/R/R11/R11-2002.pdf | author:Béatrice Arnulphy
-R11-2003 | Towards a Better Exploitation of the Brown 'Family' Corpora in Diachronic Studies of British and American English Language Varieties | http://www.aclweb.org/anthology/R/R11/R11-2003.pdf | author:Sanja Štajner
-R11-2004 | Projecting Farsi POS Data To Tag Pashto | http://www.aclweb.org/anthology/R/R11/R11-2004.pdf | author:Mohammad Khan; Eric Baucom; Anthony Meyer; Lwin Moe
-R11-2005 | Enriching Phrase-Based Statistical Machine Translation with POS Information | http://www.aclweb.org/anthology/R/R11/R11-2005.pdf | author:Miriam Kaeshammer; Dominikus Wetzel
-R11-2006 | Inter-domain Opinion Phrase Extraction Based on Feature Augmentation | http://www.aclweb.org/anthology/R/R11/R11-2006.pdf | author:Gábor Berend; István T. Nagy; György Móra; Veronika Vincze
-R11-2007 | ArbTE: Arabic Textual Entailment | http://www.aclweb.org/anthology/R/R11/R11-2007.pdf | author:Maytham Alabbas
-R11-2008 | RDFa Editor for Ontological Annotation | http://www.aclweb.org/anthology/R/R11/R11-2008.pdf | author:Melania Duma
-R11-2009 | Extracting Protein-Protein Interactions with Language Modelling | http://www.aclweb.org/anthology/R/R11/R11-2009.pdf | author:Ali Reza Ebadat
-R11-2010 | Experiments with Small-size Corpora in CBMT | http://www.aclweb.org/anthology/R/R11/R11-2010.pdf | author:Monica Gavrila; Natalia Elita
-R11-2011 | Question Parsing for QA in Spanish | http://www.aclweb.org/anthology/R/R11/R11-2011.pdf | author:Iria Gayo
-R11-2012 | Incremental Semantics Driven Natural Language Generation with Self-Repairing Capability | http://www.aclweb.org/anthology/R/R11/R11-2012.pdf | author:Julian Hough
-R11-2013 | Initial Experiments with Multilingual Extraction of Rhetoric Figures by means of PERL-compatible Regular Expressions | http://www.aclweb.org/anthology/R/R11/R11-2013.pdf | author:Daniel Devatman Hromada
-R11-2014 | Is Three the Optimal Context Window for Memory-Based Word Sense Disambiguation? | http://www.aclweb.org/anthology/R/R11/R11-2014.pdf | author:Rodrigo de Oliveira; Lucas Hausmann; Desislava Zhekova
-R11-2015 | Heterogeneous Natural Language Processing Tools via Language Processing Chains | http://www.aclweb.org/anthology/R/R11/R11-2015.pdf | author:Diman Karagiozov
-R11-2016 | Pattern-Based Ontology Construction from Selected Wikipedia Pages | http://www.aclweb.org/anthology/R/R11/R11-2016.pdf | author:Carmen Klaussner; Desislava Zhekova
-R11-2017 | Lexico-Syntactic Patterns for Automatic Ontology Building | http://www.aclweb.org/anthology/R/R11/R11-2017.pdf | author:Carmen Klaussner; Desislava Zhekova
-R11-2018 | Towards a Grounded Model for Ontological Metaphors | http://www.aclweb.org/anthology/R/R11/R11-2018.pdf | author:Sushobhan Nayak
-R11-2019 | Automatic Acquisition of Possible Contexts for Low-Frequent Words | http://www.aclweb.org/anthology/R/R11/R11-2019.pdf | author:Silvia Necsulescu
-R11-2020 | Adapting Standard Open-Source Resources To Tagging A Morphologically Rich Language: A Case Study With Arabic | http://www.aclweb.org/anthology/R/R11/R11-2020.pdf | author:Hajder S. Rabiee
-R11-2021 | Towards Cross-Language Word Sense Disambiguation for Quechua | http://www.aclweb.org/anthology/R/R11/R11-2021.pdf | author:Alex Rudnick
-R11-2022 | Annotating Negation and Speculation: the Case of the Review Domain | http://www.aclweb.org/anthology/R/R11/R11-2022.pdf | author:Natalia Konstantinova; Sheila C. M. de Sousa
-R11-2023 | N-gram Based Text Classification According To Authorship | http://www.aclweb.org/anthology/R/R11/R11-2023.pdf | author:Anđelka Zečević
-R11-2024 | Instance Sampling for Multilingual Coreference Resolution | http://www.aclweb.org/anthology/R/R11/R11-2024.pdf | author:Desislava Zhekova
+R11-1001 | Extracting STRIPS Representations of Actions and Events | http://www.aclweb.org/anthology/R/R11/R11-1001.pdf | category:paper author:Avirup Sil; Alexander Yates
+R11-1002 | Acquiring Topic Features to improve Event Extraction: in Pre-selected and Balanced Collections | http://www.aclweb.org/anthology/R/R11/R11-1002.pdf | category:paper author:Shasha Liao; Ralph Grishman
+R11-1003 | Minimally Supervised Rule Learning for the Extraction of Biographic Information from Various Social Domains | http://www.aclweb.org/anthology/R/R11/R11-1003.pdf | category:paper author:Hong Li; Feiyu Xu; Hans Uszkoreit
+R11-1004 | Extracting Relations Within and Across Sentences | http://www.aclweb.org/anthology/R/R11/R11-1004.pdf | category:paper author:Kumutha Swampillai; Mark Stevenson
+R11-1005 | Knowledge-Poor Approach to Shallow Parsing: Contribution of Unsupervised Part-of-Speech Induction | http://www.aclweb.org/anthology/R/R11/R11-1005.pdf | category:paper author:Marie Guègan; Claude de Loupy
+R11-1006 | Fast Domain Adaptation for Part of Speech Tagging for Dialogues | http://www.aclweb.org/anthology/R/R11/R11-1006.pdf | category:paper author:Sandra Kübler; Eric Baucom
+R11-1007 | Using a Morphological Database to Increase the Accuracy in POS Tagging | http://www.aclweb.org/anthology/R/R11/R11-1007.pdf | category:paper author:Hrafn Loftsson; Sigrún Helgadóttir; Eirìkur Rögnvaldsson
+R11-1008 | Actions Speak Louder than Words: Evaluating Parsers in the Context of Natural Language Understanding Systems for Human-Robot Interaction | http://www.aclweb.org/anthology/R/R11/R11-1008.pdf | category:paper author:Sandra Kübler; Rachael Cantrell; Matthias Scheutz
+R11-1009 | Constructing Linguistically Motivated Structures from Statistical Grammars | http://www.aclweb.org/anthology/R/R11/R11-1009.pdf | category:paper author:Ali Basirat; Heshaam Faili
+R11-1010 | An Open Source Punjabi Resource Grammar | http://www.aclweb.org/anthology/R/R11/R11-1010.pdf | category:paper author:Shafqat Mumtaz Virk; Muhammad Humayoun; Aarne Ranta
+R11-1011 | Multi-Document Summarization by Capturing the Information Users are Interested in | http://www.aclweb.org/anthology/R/R11/R11-1011.pdf | category:paper author:Elena Lloret; Laura Plaza; Ahmet Aker
+R11-1012 | Efficient algorithm for Context Sensitive Aggregation in Natural Language generation | http://www.aclweb.org/anthology/R/R11/R11-1012.pdf | category:paper author:Hemanth Sagar Bayyarapu
+R11-1013 | Enriching a statistical machine translation system trained on small parallel corpora with rule-based bilingual phrases | http://www.aclweb.org/anthology/R/R11/R11-1013.pdf | category:paper author:Vìctor M. Sánchez-Cartagena; Felipe Sánchez-Martìnez; Juan Antonio Pèrez-Ortiz
+R11-1014 | Assessing the Post-Editing Effort for Automatic and Semi-Automatic Translations of DVD Subtitles | http://www.aclweb.org/anthology/R/R11/R11-1014.pdf | category:paper author:Sheila C. M. de Sousa; Wilker Aziz; Lucia Specia
+R11-1015 | JRC-NAMES: A Freely Available, Highly Multilingual Named Entity Resource | http://www.aclweb.org/anthology/R/R11/R11-1015.pdf | category:paper author:Ralf Steinberger; Bruno Pouliquen; Mijail Kabadjov; Jenya Belyaeva; Erik van der Goot
+R11-1016 | MDL-based Models for Alignment of Etymological Data | http://www.aclweb.org/anthology/R/R11/R11-1016.pdf | category:paper author:Hannes Wettig; Suvi Hiltunen; Roman Yangarber
+R11-1017 | Building a Multilingual Named Entity-Annotated Corpus Using Annotation Projection | http://www.aclweb.org/anthology/R/R11/R11-1017.pdf | category:paper author:Maud Ehrmann; Marco Turchi; Ralf Steinberger
+R11-1018 | Bilingual lexicon extraction from comparable corpora for closely related languages | http://www.aclweb.org/anthology/R/R11/R11-1018.pdf | category:paper author:Darja Fišer; Nikola Ljubešić
+R11-1019 | Sentiments and Opinions in Health-related Web messages | http://www.aclweb.org/anthology/R/R11/R11-1019.pdf | category:paper author:Marina Sokolova; Victoria Bobicev
+R11-1020 | An Exploration into the Use of Contextual Document Clustering for Cluster Sentiment Analysis | http://www.aclweb.org/anthology/R/R11/R11-1020.pdf | category:paper author:Niall Rooney; Hui Wang; Fiona Browne; Fergal Monaghan; Jann Müller; Alan Sergeant; Zhiwei Lin; Philip Taylor; Vladimir Dobrynin
+R11-1021 | Pause and Stop Labeling for Chinese Sentence Boundary Detection | http://www.aclweb.org/anthology/R/R11/R11-1021.pdf | category:paper author:Hen-Hsen Huang; Hsin-Hsi Chen
+R11-1022 | Multilabel Tagging of Discourse Relations in Ambiguous Temporal Connectives | http://www.aclweb.org/anthology/R/R11/R11-1022.pdf | category:paper author:Yannick Versley
+R11-1023 | Noun Compound and Named Entity Recognition and their Usability in Keyphrase Extraction | http://www.aclweb.org/anthology/R/R11/R11-1023.pdf | category:paper author:István Nagy T.; Gábor Berend; Veronika Vincze
+R11-1024 | A Named Entity Recognition Method using Rules Acquired from Unlabeled Data | http://www.aclweb.org/anthology/R/R11/R11-1024.pdf | category:paper author:Tomoya Iwakura
+R11-1025 | An Incremental Entity-Mention Model for Coreference Resolution with Restrictive Antecedent Accessibility | http://www.aclweb.org/anthology/R/R11/R11-1025.pdf | category:paper author:Manfred Klenner; Don Tuggener
+R11-1026 | Cross-Domain Dutch Coreference Resolution | http://www.aclweb.org/anthology/R/R11/R11-1026.pdf | category:paper author:Orphèe De Clercq; Vèronique Hoste; Iris Hendrickx
+R11-1027 | Finding the Best Approach for Multi-lingual Text Summarisation: A Comparative Analysis | http://www.aclweb.org/anthology/R/R11/R11-1027.pdf | category:paper author:Elena Lloret; Manuel Palomar
+R11-1028 | Automatically Creating General-Purpose Opinion Summaries from Text | http://www.aclweb.org/anthology/R/R11/R11-1028.pdf | category:paper author:Veselin Stoyanov; Claire Cardie
+R11-1029 | Exploring the Usefulness of Cross-lingual Information Fusion for Refining Real-time News Event Extraction: A Preliminary Study | http://www.aclweb.org/anthology/R/R11/R11-1029.pdf | category:paper author:Jakub Piskorski; Jenya Belayeva; Martin Atkinson
+R11-1030 | Temporal Relation Extraction Using Expectation Maximization | http://www.aclweb.org/anthology/R/R11/R11-1030.pdf | category:paper author:Seyed Abolghasem Mirroshandel; Gholamreza Ghassem-Sani
+R11-1031 | Improving Chunk-based Semantic Role Labeling with Lexical Features | http://www.aclweb.org/anthology/R/R11/R11-1031.pdf | category:paper author:Wilker Aziz; Miguel Rios; Lucia Specia
+R11-1032 | Improving WSD using ISR-WN with Relevant Semantic Trees and SemCor Senses Frequency | http://www.aclweb.org/anthology/R/R11/R11-1032.pdf | category:paper author:Yoan Gutièrrez; Sonia Vázquez; Andrès Montoyo
+R11-1033 | Investigating Advanced Techniques for Document Content Similarity Applied to External Plagiarism Analysis | http://www.aclweb.org/anthology/R/R11/R11-1033.pdf | category:paper author:Daniel Micol; Rafael Muñoz; Óscar Ferrández
+R11-1034 | Using Cognates in a French-Romanian Lexical Alignment System: A Comparative Study | http://www.aclweb.org/anthology/R/R11/R11-1034.pdf | category:paper author:Mirabela Navlea; Amalia Todirascu
+R11-1035 | Highly Multilingual Coreference Resolution Exploiting a Mature Entity Repository | http://www.aclweb.org/anthology/R/R11/R11-1035.pdf | category:paper author:Josef Steinberger; Jenya Belyaeva; Jonathan Crawley; Leonida Della-Rocca; Mohamed Ebrahim; Maud Ehrmann; Mijail Kabadjov; Ralf Steinberger; Erik Van-der-Goot
+R11-1036 | Singletons and Coreference Resolution Evaluation | http://www.aclweb.org/anthology/R/R11/R11-1036.pdf | category:paper author:Sandra Kübler; Desislava Zhekova
+R11-1037 | Modelling Entity Instantiations | http://www.aclweb.org/anthology/R/R11/R11-1037.pdf | category:paper author:Andrew McKinlay; Katja Markert
+R11-1038 | A New Scheme for Annotating Semantic Relations between Named Entities in Corpora | http://www.aclweb.org/anthology/R/R11/R11-1038.pdf | category:paper author:Mani Ezzat; Thierry Poibeau
+R11-1039 | Prototypical Opinion Holders: What We can Learn from Experts and Analysts | http://www.aclweb.org/anthology/R/R11/R11-1039.pdf | category:paper author:Michael Wiegand; Dietrich Klakow
+R11-1040 | Multiword Expressions and Named Entities in the Wiki50 Corpus | http://www.aclweb.org/anthology/R/R11/R11-1040.pdf | category:paper author:Veronika Vincze; István Nagy T.; Gábor Berend
+R11-1041 | Towards the Automatic Merging of Lexical Resources: Automatic Mapping | http://www.aclweb.org/anthology/R/R11/R11-1041.pdf | category:paper author:Muntsa Padró; Núria Bel; Silvia Necsulescu
+R11-1042 | Unsupervised Learning for Persian WordNet Construction | http://www.aclweb.org/anthology/R/R11/R11-1042.pdf | category:paper author:Mortaza Montazery; Heshaam Faili
+R11-1043 | Domain Independent Authorship Attribution without Domain Adaptation | http://www.aclweb.org/anthology/R/R11/R11-1043.pdf | category:paper author:Rohith Menon; Yejin Choi
+R11-1044 | Cultural Configuration of Wikipedia: measuring Autoreferentiality in Different Languages | http://www.aclweb.org/anthology/R/R11/R11-1044.pdf | category:paper author:Marc Miquel Ribè; Horacio Rodrìguez
+R11-1045 | Combining Relational and Attributional Similarity for Semantic Relation Classification | http://www.aclweb.org/anthology/R/R11/R11-1045.pdf | category:paper author:Preslav Nakov; Zornitsa Kozareva
+R11-1046 | In Search of Missing Arguments: A Linguistic Approach | http://www.aclweb.org/anthology/R/R11/R11-1046.pdf | category:paper author:Josef Ruppenhofer; Philip Gorinski; Caroline Sporleder
+R11-1047 | Enlarging Monolingual Dictionaries for Machine Translation with Active Learning and Non-Expert Users | http://www.aclweb.org/anthology/R/R11/R11-1047.pdf | category:paper author:Miquel Esplà-Gomis; Vìctor M. Sánchez-Cartagena; Juan Antonio Pèrez-Ortiz
+R11-1048 | Morphological Analysis of Biomedical Terminology with Analogy-Based Alignment | http://www.aclweb.org/anthology/R/R11/R11-1048.pdf | category:paper author:Vincent Claveau; Ewa Kijak
+R11-1049 | Adaptability of Lexical Acquisition for Large-scale Grammars | http://www.aclweb.org/anthology/R/R11/R11-1049.pdf | category:paper author:Kostadin Cholakov; Gertjan van Noord; Valia Kordoni; Yi Zhang
+R11-1050 | Integration of Data from a Syntactic Lexicon into Generative and Discriminative Probabilistic Parsers | http://www.aclweb.org/anthology/R/R11/R11-1050.pdf | category:paper author:Anthony Sigogne; Matthieu Constant; Éric Laporte
+R11-1051 | Pattern Learning for Event Extraction using Monolingual Statistical Machine Translation | http://www.aclweb.org/anthology/R/R11/R11-1051.pdf | category:paper author:Marco Turchi; Vanni Zavarella; Hristo Tanev
+R11-1052 | META-DARE: Monitoring the Minimally Supervised ML of Relation Extraction Rules | http://www.aclweb.org/anthology/R/R11/R11-1052.pdf | category:paper author:Hong Li; Feiyu Xu; Hans Uszkoreit
+R11-1053 | Mining Transliterations from Wikipedia using Dynamic Bayesian Networks | http://www.aclweb.org/anthology/R/R11/R11-1053.pdf | category:paper author:Peter Nabende
+R11-1054 | Detecting Opinions Using Deep Syntactic Analysis | http://www.aclweb.org/anthology/R/R11/R11-1054.pdf | category:paper author:Caroline Brun
+R11-1055 | Using Visual Information to Predict Lexical Preference | http://www.aclweb.org/anthology/R/R11/R11-1055.pdf | category:paper author:Shane Bergsma; Randy Goebel
+R11-1056 | Systematic Knowledge Acquisition for Question Analysis | http://www.aclweb.org/anthology/R/R11/R11-1056.pdf | category:paper author:Dat Quoc Nguyen; Dai Quoc Nguyen; Son Bao Pham
+R11-1057 | A Semi-Automatic, Iterative Method for Creating a Domain-Specific Treebank | http://www.aclweb.org/anthology/R/R11/R11-1057.pdf | category:paper author:Corina Dima; Erhard Hinrichs
+R11-1058 | Determining Immediate Constituents of Compounds in GermaNet | http://www.aclweb.org/anthology/R/R11/R11-1058.pdf | category:paper author:Verena Henrich; Erhard Hinrichs
+R11-1059 | Segmentation and Clustering of Textual Sequences: a Typological Approach | http://www.aclweb.org/anthology/R/R11/R11-1059.pdf | category:paper author:Christelle Cocco; Raphaël Pittier; François Bavaud; Aris Xanthos
+R11-1060 | A Contextual Classification Strategy for Polarity Analysis of Direct Quotations from Financial News | http://www.aclweb.org/anthology/R/R11/R11-1060.pdf | category:paper author:Brett Drury; Gaël Dias; Luìs Torgo
+R11-1061 | On the Contribution of MWE-based Features to a Readability Formula for French as a Foreign Language | http://www.aclweb.org/anthology/R/R11/R11-1061.pdf | category:paper author:Thomas François; Patrick Watrin
+R11-1062 | Exploiting Hidden Morphophonemic Constraints for Finding the Underlying Forms of 'weak' Arabic Verbs | http://www.aclweb.org/anthology/R/R11/R11-1062.pdf | category:paper author:Allan Ramsay; Hanady Mansour
+R11-1063 | A Confidence Model for Syntactically-Motivated Entailment Proofs | http://www.aclweb.org/anthology/R/R11/R11-1063.pdf | category:paper author:Asher Stern; Ido Dagan
+R11-1064 | Learning Script Participants from Unlabeled Data | http://www.aclweb.org/anthology/R/R11/R11-1064.pdf | category:paper author:Michaela Regneri; Alexander Koller; Josef Ruppenhofer; Manfred Pinkal
+R11-1065 | Towards Minimal Recursion Semantics over Bulgarian Dependency Parsing | http://www.aclweb.org/anthology/R/R11/R11-1065.pdf | category:paper author:Kiril Simov; Petya Osenova
+R11-1066 | Discourse Structures to Reduce Discourse Incoherence in Blog Summarization | http://www.aclweb.org/anthology/R/R11/R11-1066.pdf | category:paper author:Shamima Mithun; Leila Kosseim
+R11-1067 | Parallel Suffix Arrays for Linguistic Pattern Search | http://www.aclweb.org/anthology/R/R11/R11-1067.pdf | category:paper author:Johannes Goller
+R11-1068 | A Mechanism to Restrict the Scope of Clause-Bounded Quantifiers in 'Continuation' Semantics | http://www.aclweb.org/anthology/R/R11/R11-1068.pdf | category:paper author:Anca Dinu
+R11-1069 | A Support Tool for Deriving Domain Taxonomies from Wikipedia | http://www.aclweb.org/anthology/R/R11/R11-1069.pdf | category:paper author:Lili Kotlerman; Zemer Avital; Ido Dagan; Amnon Lotan; Ofer Weintraub
+R11-1070 | Barrier Features for Classification of Semantic Relations | http://www.aclweb.org/anthology/R/R11/R11-1070.pdf | category:paper author:Anita Alicante; Anna Corazza
+R11-1071 | A Reflective View on Text Similarity | http://www.aclweb.org/anthology/R/R11/R11-1071.pdf | category:paper author:Daniel Bär; Torsten Zesch; Iryna Gurevych
+R11-1072 | Evaluating the Robustness of EmotiBlog for Sentiment Analysis and Opinion Mining | http://www.aclweb.org/anthology/R/R11/R11-1072.pdf | category:paper author:Ester Boldrini; Javi Fernández; Josè Manuel Gómez; Patricio Martìnez-Barco
+R11-1073 | Hybrid System For Plagiarism Detection | http://www.aclweb.org/anthology/R/R11/R11-1073.pdf | category:paper author:Javier R. Bru; Patricio Martìnez-Barco; Rafael Muñoz
+R11-1074 | Data-Driven Approach Using Semantics for Recognizing and Classifying TimeML Events in Italian | http://www.aclweb.org/anthology/R/R11/R11-1074.pdf | category:paper author:Tommaso Caselli; Hector Llorens; Borja Navarro-Colorado; Estela Saquete
+R11-1075 | Can Alternations Be Learned? A Machine Learning Approach To Romanian Verb Conjugation | http://www.aclweb.org/anthology/R/R11/R11-1075.pdf | category:paper author:Liviu P. Dinu; Emil Ionescu; Vlad Niculae; Octavia-Maria Sulea
+R11-1076 | A New Representation Model for the Automatic Recognition and Translation of Arabic Named Entities with NooJ | http://www.aclweb.org/anthology/R/R11/R11-1076.pdf | category:paper author:Hèla Fehri; Kais Haddar; Abdelmajid Ben Hamadou
+R11-1077 | Training Data in Statistical Machine Translation - the More, the Better? | http://www.aclweb.org/anthology/R/R11/R11-1077.pdf | category:paper author:Monica Gavrila; Cristina Vertan
+R11-1078 | Towards a Corpus-based Approach to Modelling Language Production of Foreign Language Learners in Communicative Contexts | http://www.aclweb.org/anthology/R/R11/R11-1078.pdf | category:paper author:Voula Gotsoulia; Bessie Dendrinos
+R11-1079 | Parsing a Polysynthetic Language | http://www.aclweb.org/anthology/R/R11/R11-1079.pdf | category:paper author:Petr Homola
+R11-1080 | An algorithm of Identifying Semantic Arguments of a Verb From Structured Data | http://www.aclweb.org/anthology/R/R11/R11-1080.pdf | category:paper author:Minhua Huang; Robert M. Haralick
+R11-1081 | Construction of an HPSG Grammar for the Arabic Relative Sentences | http://www.aclweb.org/anthology/R/R11/R11-1081.pdf | category:paper author:Ines Zalila; Kais Haddar
+R11-1082 | Automatically Selected Skip Edges in Conditional Random Fields for Named Entity Recognition | http://www.aclweb.org/anthology/R/R11/R11-1082.pdf | category:paper author:Roman Klinger
+R11-1083 | Negation Naive Bayes for Categorization of Product Pages on the Web | http://www.aclweb.org/anthology/R/R11/R11-1083.pdf | category:paper author:Kanako Komiya; Naoto Sato; Koji Fujimoto; Yoshiyuki Kotani
+R11-1084 | A Hybrid Approach for Event Extraction and Event Actor Identification | http://www.aclweb.org/anthology/R/R11/R11-1084.pdf | category:paper author:Anup Kumar Kolya; Asif Ekbal; Sivaji Bandyopadhyay
+R11-1085 | Evaluating Human Correction Quality for Machine Translation from Crowdsourcing | http://www.aclweb.org/anthology/R/R11/R11-1085.pdf | category:paper author:Shasha Liao; Cheng Wu; Juan Huerta
+R11-1086 | Multi-class SVM for Relation Extraction from Clinical Reports | http://www.aclweb.org/anthology/R/R11/R11-1086.pdf | category:paper author:Anne-Lyse Minard; Anne-Laure Ligozat; Brigitte Grau
+R11-1087 | Discovering coreference using image-grounded verb models | http://www.aclweb.org/anthology/R/R11/R11-1087.pdf | category:paper author:Amitabha Mukerjee; Kruti Neema; Sushobhan Nayak
+R11-1088 | Word and Phrase Learning based on Prior Semantics | http://www.aclweb.org/anthology/R/R11/R11-1088.pdf | category:paper author:Amitabha Mukerjee; Nikhil Joshi
+R11-1089 | Domain-Dependent Identification of Multiword Expressions | http://www.aclweb.org/anthology/R/R11/R11-1089.pdf | category:paper author:István Nagy T.; Veronika Vincze; Gábor Berend
+R11-1090 | Robust Semantic Analysis for Unseen Data in FrameNet | http://www.aclweb.org/anthology/R/R11/R11-1090.pdf | category:paper author:Alexis Palmer; Afra Alishahi; Caroline Sporleder
+R11-1091 | Studying Translationese at the Character Level | http://www.aclweb.org/anthology/R/R11/R11-1091.pdf | category:paper author:Marius Popescu
+R11-1092 | Linear Transduction Grammars and Zipper Finite-State Transducers | http://www.aclweb.org/anthology/R/R11/R11-1092.pdf | category:paper author:Markus Saers; Dekai Wu
+R11-1093 | Finding Negative Key Phrases for Internet Advertising Campaigns using Wikipedia | http://www.aclweb.org/anthology/R/R11/R11-1093.pdf | category:paper author:Martin Scaiano; Diana Inkpen
+R11-1094 | Establishing Implementation Priorities in Aiding Writers of Controlled Crisis Management Texts | http://www.aclweb.org/anthology/R/R11/R11-1094.pdf | category:paper author:Irina Temnikova
+R11-1095 | TechWatchTool: Innovation and Trend Monitoring | http://www.aclweb.org/anthology/R/R11/R11-1095.pdf | category:paper author:Hong Li; Feiyu Xu; Hans Uszkoreit
+R11-1096 | "Yes we can?": Subjectivity Annotation and Tagging for the Health Domain | http://www.aclweb.org/anthology/R/R11/R11-1096.pdf | category:paper author:Muhammad Abdul-Mageed; Mohammed Korayem; Ahmed YoussefAgha
+R11-1097 | Wordnets: State of the Art and Perspectives. Case Study: the Romanian Wordnet | http://www.aclweb.org/anthology/R/R11/R11-1097.pdf | category:paper author:Verginica Barbu Mititelu
+R11-1098 | Creation and Development of the Romanian Lexical Resources | http://www.aclweb.org/anthology/R/R11/R11-1098.pdf | category:paper author:Elena Boian; Constantin Ciubotaru; Svetlana Cojocaru; Alexandru Colesnicov; Ludmila Malahov; Mircea Petic
+R11-1099 | Analyses Tools for Non-head Structures | http://www.aclweb.org/anthology/R/R11/R11-1099.pdf | category:paper author:Sirine Boukedi; Kais Haddar
+R11-1100 | Visualization for Coreference Annotation | http://www.aclweb.org/anthology/R/R11/R11-1100.pdf | category:paper author:Andre Burkovski; Gunther Heidemann
+R11-1101 | The RST Spanish Treebank On-line Interface | http://www.aclweb.org/anthology/R/R11/R11-1101.pdf | category:paper author:Iria da Cunha; Juan-Manuel Torres-Moreno; Gerardo Sierra; Luis Adrián Cabrera-Diego; Brenda Gabriela Castro Rolón; Juan Miguel Rolland Bartilotti
+R11-1102 | Lexical Generalisation for Word-level Matching in Plagiarism Detection | http://www.aclweb.org/anthology/R/R11/R11-1102.pdf | category:paper author:Miranda Chong; Lucia Specia
+R11-1103 | Multiple Evidence for Term Extraction in Broad Domains | http://www.aclweb.org/anthology/R/R11/R11-1103.pdf | category:paper author:Boris Dobrov; Natalia Loukachevitch
+R11-1104 | Language Modeling for Document Selection in Question Answering | http://www.aclweb.org/anthology/R/R11/R11-1104.pdf | category:paper author:Nicolas Foucault; Gilles Adda; Sophie Rosset
+R11-1105 | Evaluating Various Linguistic Features on Semantic Relation Extraction | http://www.aclweb.org/anthology/R/R11/R11-1105.pdf | category:paper author:Marcos Garcia; Pablo Gamallo
+R11-1106 | Automatic titling of Articles Using Position and Statistical Information | http://www.aclweb.org/anthology/R/R11/R11-1106.pdf | category:paper author:Cèdric Lopez; Violaine Prince; Mathieu Roche
+R11-1107 | Unsupervised Domain Adaptation based on Text Relatedness | http://www.aclweb.org/anthology/R/R11/R11-1107.pdf | category:paper author:Georgios Petasis
+R11-1108 | Bilingual Experiments with an Arabic-English Corpus for Opinion Mining | http://www.aclweb.org/anthology/R/R11/R11-1108.pdf | category:paper author:Mohammed Rushdi-Saleh; M. Teresa Martìn-Valdivia; L. Alfonso Ureña-López; Josè M. Perea-Ortega
+R11-1109 | Experiments on Term Extraction using Noun Phrase Subclassifications | http://www.aclweb.org/anthology/R/R11/R11-1109.pdf | category:paper author:Merley da Silva Conrado; Walter Koza; Josuka Dìaz-Labrador; Joseba Abaitua; Solange Oliveira Rezende; Thiago Pardo; Zulema Solana
+R11-1110 | Adaptive Feedback Message Generation for Second Language Learners of Arabic | http://www.aclweb.org/anthology/R/R11/R11-1110.pdf | category:paper author:Khaled Shaalan; Marwa Magdy
+R11-1111 | Building a Patient-based Ontology for User-written Web Messages | http://www.aclweb.org/anthology/R/R11/R11-1111.pdf | category:paper author:Marina Sokolova; David Schramm
+R11-1112 | Recognition and Classification of Numerical Entities in Basque | http://www.aclweb.org/anthology/R/R11/R11-1112.pdf | category:paper author:Ander Soraluze; Iñaki Alegria; Olatz Ansa; Olatz Arregi; Xabier Arregi
+R11-1113 | Multilingual Entity-Centered Sentiment Analysis Evaluated by Parallel Corpora | http://www.aclweb.org/anthology/R/R11/R11-1113.pdf | category:paper author:Josef Steinberger; Polina Lenkova; Mijail Kabadjov; Ralf Steinberger; Erik van der Goot
+R11-1114 | Term Validation for Vocabulary Construction and Key Term Extraction | http://www.aclweb.org/anthology/R/R11/R11-1114.pdf | category:paper author:Alexander Ulanov; Andrey Simanovsky
+R11-1115 | Agreement: How to Reach it? Defining Language Features Leading to Agreement in Discourse | http://www.aclweb.org/anthology/R/R11/R11-1115.pdf | category:paper author:Tatiana Zidrasco; Victoria Bobicev; Shun Shiramatsu; Tadachika Ozono; Toramatsu Shintani
+R11-2001 | Domain-Dependent Detection of Light Verb Constructions | http://www.aclweb.org/anthology/R/R11/R11-2001.pdf | category:paper author:István T. Nagy; Gábor Berend; György Móra; Veronika Vincze
+R11-2002 | A Weighted Lexicon of French Event Names | http://www.aclweb.org/anthology/R/R11/R11-2002.pdf | category:paper author:Béatrice Arnulphy
+R11-2003 | Towards a Better Exploitation of the Brown 'Family' Corpora in Diachronic Studies of British and American English Language Varieties | http://www.aclweb.org/anthology/R/R11/R11-2003.pdf | category:paper author:Sanja Štajner
+R11-2004 | Projecting Farsi POS Data To Tag Pashto | http://www.aclweb.org/anthology/R/R11/R11-2004.pdf | category:paper author:Mohammad Khan; Eric Baucom; Anthony Meyer; Lwin Moe
+R11-2005 | Enriching Phrase-Based Statistical Machine Translation with POS Information | http://www.aclweb.org/anthology/R/R11/R11-2005.pdf | category:paper author:Miriam Kaeshammer; Dominikus Wetzel
+R11-2006 | Inter-domain Opinion Phrase Extraction Based on Feature Augmentation | http://www.aclweb.org/anthology/R/R11/R11-2006.pdf | category:paper author:Gábor Berend; István T. Nagy; György Móra; Veronika Vincze
+R11-2007 | ArbTE: Arabic Textual Entailment | http://www.aclweb.org/anthology/R/R11/R11-2007.pdf | category:paper author:Maytham Alabbas
+R11-2008 | RDFa Editor for Ontological Annotation | http://www.aclweb.org/anthology/R/R11/R11-2008.pdf | category:paper author:Melania Duma
+R11-2009 | Extracting Protein-Protein Interactions with Language Modelling | http://www.aclweb.org/anthology/R/R11/R11-2009.pdf | category:paper author:Ali Reza Ebadat
+R11-2010 | Experiments with Small-size Corpora in CBMT | http://www.aclweb.org/anthology/R/R11/R11-2010.pdf | category:paper author:Monica Gavrila; Natalia Elita
+R11-2011 | Question Parsing for QA in Spanish | http://www.aclweb.org/anthology/R/R11/R11-2011.pdf | category:paper author:Iria Gayo
+R11-2012 | Incremental Semantics Driven Natural Language Generation with Self-Repairing Capability | http://www.aclweb.org/anthology/R/R11/R11-2012.pdf | category:paper author:Julian Hough
+R11-2013 | Initial Experiments with Multilingual Extraction of Rhetoric Figures by means of PERL-compatible Regular Expressions | http://www.aclweb.org/anthology/R/R11/R11-2013.pdf | category:paper author:Daniel Devatman Hromada
+R11-2014 | Is Three the Optimal Context Window for Memory-Based Word Sense Disambiguation? | http://www.aclweb.org/anthology/R/R11/R11-2014.pdf | category:paper author:Rodrigo de Oliveira; Lucas Hausmann; Desislava Zhekova
+R11-2015 | Heterogeneous Natural Language Processing Tools via Language Processing Chains | http://www.aclweb.org/anthology/R/R11/R11-2015.pdf | category:paper author:Diman Karagiozov
+R11-2016 | Pattern-Based Ontology Construction from Selected Wikipedia Pages | http://www.aclweb.org/anthology/R/R11/R11-2016.pdf | category:paper author:Carmen Klaussner; Desislava Zhekova
+R11-2017 | Lexico-Syntactic Patterns for Automatic Ontology Building | http://www.aclweb.org/anthology/R/R11/R11-2017.pdf | category:paper author:Carmen Klaussner; Desislava Zhekova
+R11-2018 | Towards a Grounded Model for Ontological Metaphors | http://www.aclweb.org/anthology/R/R11/R11-2018.pdf | category:paper author:Sushobhan Nayak
+R11-2019 | Automatic Acquisition of Possible Contexts for Low-Frequent Words | http://www.aclweb.org/anthology/R/R11/R11-2019.pdf | category:paper author:Silvia Necsulescu
+R11-2020 | Adapting Standard Open-Source Resources To Tagging A Morphologically Rich Language: A Case Study With Arabic | http://www.aclweb.org/anthology/R/R11/R11-2020.pdf | category:paper author:Hajder S. Rabiee
+R11-2021 | Towards Cross-Language Word Sense Disambiguation for Quechua | http://www.aclweb.org/anthology/R/R11/R11-2021.pdf | category:paper author:Alex Rudnick
+R11-2022 | Annotating Negation and Speculation: the Case of the Review Domain | http://www.aclweb.org/anthology/R/R11/R11-2022.pdf | category:paper author:Natalia Konstantinova; Sheila C. M. de Sousa
+R11-2023 | N-gram Based Text Classification According To Authorship | http://www.aclweb.org/anthology/R/R11/R11-2023.pdf | category:paper author:Anđelka Zečević
+R11-2024 | Instance Sampling for Multilingual Coreference Resolution | http://www.aclweb.org/anthology/R/R11/R11-2024.pdf | category:paper author:Desislava Zhekova

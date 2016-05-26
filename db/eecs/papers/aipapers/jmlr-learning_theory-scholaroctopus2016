@@ -1,7 +1,7 @@
-jmlr-learning_theory-1 | A Universal Well-Calibrated Algorithm for On-line Classification | http://www.jmlr.org/papers/v5/vovk04a.html | author:Vladimir Vovk
-jmlr-learning_theory-2 | The Sample Complexity of Exploration in the Multi-Armed Bandit Problem | http://www.jmlr.org/papers/v5/mannor04b.html | author:Shie Mannor, John N. Tsitsiklis
-jmlr-learning_theory-3 | Preference Elicitation and Query Learning | http://www.jmlr.org/papers/v5/blum04a.html | author:Avrim Blum, Jeffrey Jackson, Tuomas Sandholm, Martin Zinkevich
-jmlr-learning_theory-4 | Distance-Based Classification with Lipschitz Functions | http://www.jmlr.org/papers/v5/luxburg04b.html | author:Ulrike von Luxburg, Olivier Bousquet
-jmlr-learning_theory-5 | Probability Product Kernels | http://www.jmlr.org/papers/v5/jebara04a.html | author:Tony Jebara, Risi Kondor, Andrew Howard 
+jmlr-learning_theory-1 | A Universal Well-Calibrated Algorithm for On-line Classification | http://www.jmlr.org/papers/v5/vovk04a.html | category:paper author:Vladimir Vovk
+jmlr-learning_theory-2 | The Sample Complexity of Exploration in the Multi-Armed Bandit Problem | http://www.jmlr.org/papers/v5/mannor04b.html | category:paper author:Shie Mannor, John N. Tsitsiklis
+jmlr-learning_theory-3 | Preference Elicitation and Query Learning | http://www.jmlr.org/papers/v5/blum04a.html | category:paper author:Avrim Blum, Jeffrey Jackson, Tuomas Sandholm, Martin Zinkevich
+jmlr-learning_theory-4 | Distance-Based Classification with Lipschitz Functions | http://www.jmlr.org/papers/v5/luxburg04b.html | category:paper author:Ulrike von Luxburg, Olivier Bousquet
+jmlr-learning_theory-5 | Probability Product Kernels | http://www.jmlr.org/papers/v5/jebara04a.html | category:paper author:Tony Jebara, Risi Kondor, Andrew Howard 
 
-jmlr-learning_theory-6 | Rational Kernels: Theory and Algorithms | http://www.jmlr.org/papers/v5/cortes04a.html | author: Corinna Cortes, Patrick Haffner, Mehryar Mohri
+jmlr-learning_theory-6 | Rational Kernels: Theory and Algorithms | http://www.jmlr.org/papers/v5/cortes04a.html | category:paper author: Corinna Cortes, Patrick Haffner, Mehryar Mohri

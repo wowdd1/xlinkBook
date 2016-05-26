@@ -1,83 +1,83 @@
-iclr-2014-1 | A Generative Product-of-Filters Model of Audio | http://arxiv.org/abs/1312.5857 | author:Dawen Liang, Mathew D. Hoffman, Gautham Mysore
-iclr-2014-2 | A Primal-Dual Method for Training Recurrent Neural Networks Constrained by the Echo-State Property | http://arxiv.org/abs/1311.6091 | author:Jianshu Chen, Li Deng
-iclr-2014-3 | A Simple Model for Learning Multilingual Compositional Semantics | http://arxiv.org/abs/1312.6173 | author:Karl Moritz Hermann, Phil Blunsom
-iclr-2014-4 | An Architecture for Distinguishing between Predictors and Inhibitors in Reinforcement Learning | http://arxiv.org/abs/1312.5714 | author:Patrick C. Connor, Thomas P. Trappenberg
-iclr-2014-5 | An Empirical Investigation of Catastrophic Forgeting in Gradient-Based Neural Networks | http://arxiv.org/abs/1312.6211 | author:Ian J. Goodfellow, Mehdi Mirza, Da Xiao, Aaron Courville, Yoshua Bengio
-iclr-2014-6 | An empirical analysis of dropout in piecewise linear networks | http://arxiv.org/abs/1312.6197 | author:David Warde-Farley, Ian J. Goodfellow, Aaron Courville, Yoshua Bengio
-iclr-2014-7 | Approximated Infomax Early Stopping: Revisiting Gaussian RBMs on Natural Images | http://arxiv.org/abs/1312.5412 | author:Taichi Kiwaki, Takaki Makino, Kazuyuki Aihara
-iclr-2014-8 | Auto-Encoding Variational Bayes | http://arxiv.org/abs/1312.6114 | author:Diederik P. Kingma, Max Welling
-iclr-2014-9 | Bounding the Test Log-Likelihood of Generative Models | http://arxiv.org/abs/1311.6184 | author:Yoshua Bengio, Li Yao, Kyunghyun Cho
-iclr-2014-10 | Can recursive neural tensor networks learn logical reasoning? | http://arxiv.org/abs/1312.6192 | author:Samuel R. Bowman
-iclr-2014-11 | Continuous Learning: Engineering Super Features With Feature Algebras | http://arxiv.org/abs/1312.5398 | author:Michael Tetelman
-iclr-2014-12 | Correlation-based construction of neighborhood and edge features | http://arxiv.org/abs/1312.7335 | author:Balázs Kégl
-iclr-2014-13 | Deep Belief Networks for Image Denoising | http://arxiv.org/abs/1312.6158 | author:Mohammad Ali Keyvanrad, Mohammad Pezeshki, Mohammad Mehdi Homayounpour
-iclr-2014-14 | Deep Convolutional Ranking for Multilabel Image Annotation | http://arxiv.org/abs/1312.4894 | author:Yunchao Gong, Yangqing Jia, Sergey Ioffe, Alexander Toshev, Thomas Leung
-iclr-2014-15 | Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps | http://arxiv.org/abs/1312.6034 | author:Karen Simonyan, Andrea Vedaldi, Andrew Zisserman
-iclr-2014-16 | Deep Learning Embeddings for Discontinuous Linguistic Units | http://arxiv.org/abs/1312.5129 | author:Wenpeng Yin, Hinrich Schütze
-iclr-2014-17 | Deep and Wide Multiscale Recursive Networks for Robust Image Labeling | http://arxiv.org/abs/1310.0354 | author:Gary B. Huang, Viren Jain
-iclr-2014-18 | Deep learning for class-generic object detection | http://arxiv.org/abs/1312.6885 | author:Brody Huval, Adam Coates, Andrew Ng
-iclr-2014-19 | Deep learning for neuroimaging: a validation study | http://arxiv.org/abs/1312.5847 | author:Sergey M. Plis, Devon R. Hjelm, Ruslan Salakhutdinov, Vince D. Calhoun
-iclr-2014-20 | Distinction between features extracted using deep belief networks | http://arxiv.org/abs/1312.6157 | author:Mohammad Pezeshki, Sajjad Gholami, Ahmad Nickabadi
-iclr-2014-21 | Distributional Models and Deep Learning Embeddings: Combining the Best of Both Worlds | http://arxiv.org/abs/1312.5559 | author:Irina Sergienya, Hinrich Schütze
-iclr-2014-22 | Do Deep Nets Really Need to be Deep? | http://arxiv.org/abs/1312.6184 | author:Jimmy Lei Ba, Rich Caruana
-iclr-2014-23 | EXMOVES: Classifier-based Features for Scalable Action Recognition | http://arxiv.org/abs/1312.5785 | author:Du Tran, Lorenzo Torresani
-iclr-2014-24 | End-to-End Text Recognition with Hybrid HMM Maxout Models | http://arxiv.org/abs/1310.1811 | author:Ouais Alsharif, Joelle Pineau
-iclr-2014-25 | Exact solutions to the nonlinear dynamics of learning in deep linear neural networks | http://arxiv.org/abs/1312.6120 | author:Andrew M. Saxe, James L. McClelland, Surya Ganguli
-iclr-2014-26 | Factorial Hidden Markov Models for Learning Representations of Natural Language | http://arxiv.org/abs/1312.6168 | author:Anjan Nepal, Alexander Yates
-iclr-2014-27 | Fast Training of Convolutional Networks through FFTs | http://arxiv.org/abs/1312.5851 | author:Michael Mathieu, Mikael Henaff, Yann LeCun
-iclr-2014-28 | Feature Graph Architectures | http://arxiv.org/abs/1312.4209 | author:Richard Davis, Sanjay Chawla, Philip Leong
-iclr-2014-29 | GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network Training | http://arxiv.org/abs/1312.6186 | author:Thomas Huang, Zhe Lin, Hailin Jin, Jianchao Yang, Thomas Paine
-iclr-2014-30 | Generative NeuroEvolution for Deep Learning | http://arxiv.org/abs/1312.5355 | author:Phillip Verbancsics, Josh Harguess
-iclr-2014-31 | Generic Deep Networks with Wavelet Scattering | http://arxiv.org/abs/1312.5940 | author:Edouard Oyallon, Stéphane Mallat, Laurent Sifre
-iclr-2014-32 | Group-sparse Embeddings in Collective Matrix Factorization | http://arxiv.org/abs/1312.5921 | author:Arto Klami, Guillaume Bouchard, Abhishek Tripathi
-iclr-2014-33 | How to Construct Deep Recurrent Neural Networks | http://arxiv.org/abs/1312.6026 | author:Razvan Pascanu, Caglar Gulcehre, Kyunghyun Cho, Yoshua Bengio
-iclr-2014-34 | Image Representation Learning Using Graph Regularized Auto-Encoders | http://arxiv.org/abs/1312.0786 | author:Yiyi Liao, Yue Wang, Yong Liu
-iclr-2014-35 | Improving Deep Neural Networks with Probabilistic Maxout Units | http://arxiv.org/abs/1312.6116 | author:Jost Tobias Springenberg, Martin Riedmiller
-iclr-2014-36 | Intriguing properties of neural networks | http://arxiv.org/abs/1312.6199 | author:Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan, Ian Goodfellow, Rob Fergus
-iclr-2014-37 | Large-scale Multi-label Text Classification - Revisiting Neural Networks | http://arxiv.org/abs/1312.5419 | author:Jinseok Nam, Jungi Kim, Iryna Gurevych, Johannes Fürnkranz
-iclr-2014-38 | Learned versus Hand-Designed Feature Representations for 3d Agglomeration | http://arxiv.org/abs/1312.6159 | author:John A. Bogovic, Gary B. Huang, Viren Jain
-iclr-2014-39 | Learning Factored Representations in a Deep Mixture of Experts | http://arxiv.org/abs/1312.4314 | author:David Eigen, Marc'Aurelio Ranzato, Ilya Sutskever
-iclr-2014-40 | Learning High-level Image Representation for Image Retrieval via Multi-Task DNN using Clickthrough Data | http://arxiv.org/abs/1312.4740 | author:Wei Yu, Tiejun Zhao, Yalong Bai, Wei-Ying Ma, Kuiyuan Yang
-iclr-2014-41 | Learning Human Pose Estimation Features with Convolutional Networks | http://arxiv.org/abs/1312.7302 | author:Ajrun Jain, Graham W. Taylor, Christoph Bregler, Mykhaylo Andriluka, Jonathan Tompson
-iclr-2014-42 | Learning Information Spread in Content Networks | http://arxiv.org/abs/1312.6169 | author:Sylvain Lamprier, Simon Bourigault, Ludovic Denoyer, Patrick Gallinari, Cédric Lagnier
-iclr-2014-43 | Learning Non-Linear Feature Maps, With An Application To Representation Learning | http://arxiv.org/abs/1312.5869 | author:Dimitrios Athanasakis, John Shawe-Taylor, Delmiro Fernandez-Reyes
-iclr-2014-44 | Learning Paired-associate Images with An Unsupervised Deep Learning Architecture | http://arxiv.org/abs/1312.6171 | author:Ti Wang, Daniel L. Silver
-iclr-2014-45 | Learning Semantic Script Knowledge with Event Embeddings | http://arxiv.org/abs/1312.5198 | author:Ashutosh Modi, Ivan Titov
-iclr-2014-46 | Learning States Representations in POMDP | http://arxiv.org/abs/1312.6042 | author:Gabriella Contardo, Ludovic Denoyer, Thierry Artieres, Patrick Gallinari
-iclr-2014-47 | Learning Transformations for Classification Forests | http://arxiv.org/abs/1312.5604 | author:Qiang Qiu, Guillermo Sapiro
-iclr-2014-48 | Learning Type-Driven Tensor-Based Meaning Representations | http://arxiv.org/abs/1312.5985 | author:Tamara Polajnar, Luana Fagarasan, Stephen Clark
-iclr-2014-49 | Learning generative models with visual attention | http://arxiv.org/abs/1312.6110 | author:Yichuan Tang, Nitish Srivastava, Ruslan Salakhutdinov
-iclr-2014-50 | Learning to encode motion using spatio-temporal synchrony | http://arxiv.org/abs/1306.3162 | author:Kishore Reddy Konda, Roland Memisevic, Vincent Michalski
-iclr-2014-51 | Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks | http://arxiv.org/abs/1312.4461 | author:Andrew Davis, Itamar Arel
-iclr-2014-52 | Modeling correlations in spontaneous activity of visual cortex with centered Gaussian-binary deep Boltzmann machines | http://arxiv.org/abs/1312.6108 | author:Nan Wang, Laurenz Wiskott, Dirk Jancke
-iclr-2014-53 | Multi-GPU Training of ConvNets | http://arxiv.org/abs/1312.5853 | author:Omry Yadan, Keith Adams, Yaniv Taigman, Marc'Aurelio Ranzato
-iclr-2014-54 | Multi-View Priors for Learning Detectors from Sparse Viewpoint Data | http://arxiv.org/abs/1312.6095 | author:Bojan Pepik, Michael Stark, Peter Gehler, Bernt Schiele
-iclr-2014-55 | Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks | http://arxiv.org/abs/1312.6082 | author:Ian J. Goodfellow, Yaroslav Bulatov, Julian Ibarz, Sacha Arnoud, Vinay Shet
-iclr-2014-56 | Multimodal Transitions for Generative Stochastic Networks | http://arxiv.org/abs/1312.5578 | author:Sherjil Ozair, Li Yao, Yoshua Bengio
-iclr-2014-57 | Network In Network | http://arxiv.org/abs/1312.4400 | author:Min Lin, Qiang Chen, Shuicheng Yan
-iclr-2014-58 | Neuronal Synchrony in Complex-Valued Deep Networks | http://arxiv.org/abs/1312.6115 | author:David P. Reichert, Thomas Serre
-iclr-2014-59 | Nonparametric Weight Initialization of Neural Networks via Integral Representation | http://arxiv.org/abs/1312.6461 | author:Sho Sonoda, Noboru Murata
-iclr-2014-60 | Occupancy Detection in Vehicles Using Fisher Vector Image Representation | http://arxiv.org/abs/1312.6024 | author:Yusuf Artan, Peter Paul
-iclr-2014-61 | On Fast Dropout and its Applicability to Recurrent Networks | http://arxiv.org/abs/1311.0701 | author:Patrick van der Smagt, Christian Osendorfer, Nutan Chen, Daniela Korhammer, Sebastian Urban, Justin Bayer
-iclr-2014-62 | On the number of inference regions of deep feed forward networks with piece-wise linear activations | http://arxiv.org/abs/1312.6098 | author:Razvan Pascanu, Guido Montufar, Yoshua Bengio
-iclr-2014-63 | One-Shot Adaptation of Supervised Deep Convolutional Models | http://arxiv.org/abs/1312.6204 | author:Judy Hoffman, Eric Tzeng, Jeff Donahue, Yangqing Jia, Kate Saenko, Trevor Darrell
-iclr-2014-64 | OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks | http://arxiv.org/abs/1312.6229 | author:Pierre Sermanet, David Eigen, Xiang Zhang, Michael Mathieu, Rob Fergus, Yann LeCun
-iclr-2014-65 | Rate-Distortion Auto-Encoders | http://arxiv.org/abs/1312.7381 | author:Luis G. Sanchez Giraldo, Jose C. Principe
-iclr-2014-66 | Relaxations for inference in restricted Boltzmann machines | http://arxiv.org/abs/1312.6205 | author:Sida I. Wang, Roy Frostig, Percy Liang, Christopher D. Manning
-iclr-2014-67 | Revisiting Natural Gradient for Deep Networks | http://arxiv.org/abs/1301.3584 | author:Razvan Pascanu, Yoshua Bengio
-iclr-2014-68 | Semistochastic Quadratic Bound Methods | http://arxiv.org/abs/1309.1369 | author:Aleksandr Y. Aravkin, Anna Choromanska, Tony Jebara, Dimitri Kanevsky
-iclr-2014-69 | Sequentially Generated Instance-Dependent Image Representations for Classification | http://arxiv.org/abs/1312.6594 | author:Ludovic Denoyer, Matthieu Cord, Patrick Gallinari, Nicolas Thome, Gabriel Dulac-Arnold
-iclr-2014-70 | Sparse similarity-preserving hashing | http://arxiv.org/abs/1312.5479 | author:Alex M. Bronstein, Pablo Sprechmann, Michael M. Bronstein, Jonathan Masci, Guillermo Sapiro
-iclr-2014-71 | Sparse, complex-valued representations of natural sounds learned with phase and amplitude continuity priors | http://arxiv.org/abs/1312.4695 | author:Wiktor Mlynarski
-iclr-2014-72 | Spectral Networks and Locally Connected Networks on Graphs | http://arxiv.org/abs/1312.6203 | author:Joan Bruna, Wojciech Zaremba, Arthur Szlam, Yann LeCun
-iclr-2014-73 | Stochastic Gradient Estimate Variance in Contrastive Divergence and Persistent Contrastive Divergence | http://arxiv.org/abs/1312.6002 | author:Mathias Berglund, Tapani Raiko
-iclr-2014-74 | Stopping Criteria in Contrastive Divergence: Alternatives to the Reconstruction Error | http://arxiv.org/abs/1312.6062 | author:David Buchaca, Enrique Romero, Ferran Mazzanti, Jordi Delgado
-iclr-2014-75 | The return of AdaBoost.MH: multi-class Hamming trees | http://arxiv.org/abs/1312.6086 | author:Balázs Kégl
-iclr-2014-76 | Understanding Deep Architectures using a Recursive Convolutional Network | http://arxiv.org/abs/1312.1847 | author:David Eigen, Jason Rolfe, Rob Fergus, Yann LeCun
-iclr-2014-77 | Unit Tests for Stochastic Optimization | http://arxiv.org/abs/1312.6055 | author:Tom Schaul, Ioannis Antonoglou, David Silver
-iclr-2014-78 | Unsupervised Feature Learning by Deep Sparse Coding | http://arxiv.org/abs/1312.5783 | author:Yun Wang, Yanjun Qi, Arthur Szlam, Yunlong He, Koray Kavukcuoglu
-iclr-2014-79 | Unsupervised feature learning by augmenting single images | http://arxiv.org/abs/1312.5242 | author:Alexey Dosovitskiy, Jost Tobias Springenberg, Thomas Brox
-iclr-2014-80 | Why does the unsupervised pretraining encourage moderate-sparseness? | http://arxiv.org/abs/1312.5813 | author:Jun Li, Wei Luo, Jian Yang, Xiaotong Yuan
-iclr-2014-81 | Zero-Shot Learning and Clustering for Semantic Utterance Classification | http://arxiv.org/abs/1401.0509 | author:Yann N. Dauphin, Gokhan Tur, Dilek Hakkani-Tur, Larry Heck
-iclr-2014-82 | Zero-Shot Learning by Convex Combination of Semantic Embeddings | http://arxiv.org/abs/1312.5650 | author:Mohammad Norouzi, Tomas Mikolov, Samy Bengio, Yoram Singer, Jonathon Shlens, Andrea Frome, Greg S. Corrado, Jeffrey Dean
-iclr-2014-83 | k-Sparse Autoencoders | http://arxiv.org/abs/1312.5663 | author:Alireza Makhzani, Brendan Frey
+iclr-2014-1 | A Generative Product-of-Filters Model of Audio | http://arxiv.org/abs/1312.5857 | category:paper author:Dawen Liang, Mathew D. Hoffman, Gautham Mysore
+iclr-2014-2 | A Primal-Dual Method for Training Recurrent Neural Networks Constrained by the Echo-State Property | http://arxiv.org/abs/1311.6091 | category:paper author:Jianshu Chen, Li Deng
+iclr-2014-3 | A Simple Model for Learning Multilingual Compositional Semantics | http://arxiv.org/abs/1312.6173 | category:paper author:Karl Moritz Hermann, Phil Blunsom
+iclr-2014-4 | An Architecture for Distinguishing between Predictors and Inhibitors in Reinforcement Learning | http://arxiv.org/abs/1312.5714 | category:paper author:Patrick C. Connor, Thomas P. Trappenberg
+iclr-2014-5 | An Empirical Investigation of Catastrophic Forgeting in Gradient-Based Neural Networks | http://arxiv.org/abs/1312.6211 | category:paper author:Ian J. Goodfellow, Mehdi Mirza, Da Xiao, Aaron Courville, Yoshua Bengio
+iclr-2014-6 | An empirical analysis of dropout in piecewise linear networks | http://arxiv.org/abs/1312.6197 | category:paper author:David Warde-Farley, Ian J. Goodfellow, Aaron Courville, Yoshua Bengio
+iclr-2014-7 | Approximated Infomax Early Stopping: Revisiting Gaussian RBMs on Natural Images | http://arxiv.org/abs/1312.5412 | category:paper author:Taichi Kiwaki, Takaki Makino, Kazuyuki Aihara
+iclr-2014-8 | Auto-Encoding Variational Bayes | http://arxiv.org/abs/1312.6114 | category:paper author:Diederik P. Kingma, Max Welling
+iclr-2014-9 | Bounding the Test Log-Likelihood of Generative Models | http://arxiv.org/abs/1311.6184 | category:paper author:Yoshua Bengio, Li Yao, Kyunghyun Cho
+iclr-2014-10 | Can recursive neural tensor networks learn logical reasoning? | http://arxiv.org/abs/1312.6192 | category:paper author:Samuel R. Bowman
+iclr-2014-11 | Continuous Learning: Engineering Super Features With Feature Algebras | http://arxiv.org/abs/1312.5398 | category:paper author:Michael Tetelman
+iclr-2014-12 | Correlation-based construction of neighborhood and edge features | http://arxiv.org/abs/1312.7335 | category:paper author:Balázs Kégl
+iclr-2014-13 | Deep Belief Networks for Image Denoising | http://arxiv.org/abs/1312.6158 | category:paper author:Mohammad Ali Keyvanrad, Mohammad Pezeshki, Mohammad Mehdi Homayounpour
+iclr-2014-14 | Deep Convolutional Ranking for Multilabel Image Annotation | http://arxiv.org/abs/1312.4894 | category:paper author:Yunchao Gong, Yangqing Jia, Sergey Ioffe, Alexander Toshev, Thomas Leung
+iclr-2014-15 | Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps | http://arxiv.org/abs/1312.6034 | category:paper author:Karen Simonyan, Andrea Vedaldi, Andrew Zisserman
+iclr-2014-16 | Deep Learning Embeddings for Discontinuous Linguistic Units | http://arxiv.org/abs/1312.5129 | category:paper author:Wenpeng Yin, Hinrich Schütze
+iclr-2014-17 | Deep and Wide Multiscale Recursive Networks for Robust Image Labeling | http://arxiv.org/abs/1310.0354 | category:paper author:Gary B. Huang, Viren Jain
+iclr-2014-18 | Deep learning for class-generic object detection | http://arxiv.org/abs/1312.6885 | category:paper author:Brody Huval, Adam Coates, Andrew Ng
+iclr-2014-19 | Deep learning for neuroimaging: a validation study | http://arxiv.org/abs/1312.5847 | category:paper author:Sergey M. Plis, Devon R. Hjelm, Ruslan Salakhutdinov, Vince D. Calhoun
+iclr-2014-20 | Distinction between features extracted using deep belief networks | http://arxiv.org/abs/1312.6157 | category:paper author:Mohammad Pezeshki, Sajjad Gholami, Ahmad Nickabadi
+iclr-2014-21 | Distributional Models and Deep Learning Embeddings: Combining the Best of Both Worlds | http://arxiv.org/abs/1312.5559 | category:paper author:Irina Sergienya, Hinrich Schütze
+iclr-2014-22 | Do Deep Nets Really Need to be Deep? | http://arxiv.org/abs/1312.6184 | category:paper author:Jimmy Lei Ba, Rich Caruana
+iclr-2014-23 | EXMOVES: Classifier-based Features for Scalable Action Recognition | http://arxiv.org/abs/1312.5785 | category:paper author:Du Tran, Lorenzo Torresani
+iclr-2014-24 | End-to-End Text Recognition with Hybrid HMM Maxout Models | http://arxiv.org/abs/1310.1811 | category:paper author:Ouais Alsharif, Joelle Pineau
+iclr-2014-25 | Exact solutions to the nonlinear dynamics of learning in deep linear neural networks | http://arxiv.org/abs/1312.6120 | category:paper author:Andrew M. Saxe, James L. McClelland, Surya Ganguli
+iclr-2014-26 | Factorial Hidden Markov Models for Learning Representations of Natural Language | http://arxiv.org/abs/1312.6168 | category:paper author:Anjan Nepal, Alexander Yates
+iclr-2014-27 | Fast Training of Convolutional Networks through FFTs | http://arxiv.org/abs/1312.5851 | category:paper author:Michael Mathieu, Mikael Henaff, Yann LeCun
+iclr-2014-28 | Feature Graph Architectures | http://arxiv.org/abs/1312.4209 | category:paper author:Richard Davis, Sanjay Chawla, Philip Leong
+iclr-2014-29 | GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network Training | http://arxiv.org/abs/1312.6186 | category:paper author:Thomas Huang, Zhe Lin, Hailin Jin, Jianchao Yang, Thomas Paine
+iclr-2014-30 | Generative NeuroEvolution for Deep Learning | http://arxiv.org/abs/1312.5355 | category:paper author:Phillip Verbancsics, Josh Harguess
+iclr-2014-31 | Generic Deep Networks with Wavelet Scattering | http://arxiv.org/abs/1312.5940 | category:paper author:Edouard Oyallon, Stéphane Mallat, Laurent Sifre
+iclr-2014-32 | Group-sparse Embeddings in Collective Matrix Factorization | http://arxiv.org/abs/1312.5921 | category:paper author:Arto Klami, Guillaume Bouchard, Abhishek Tripathi
+iclr-2014-33 | How to Construct Deep Recurrent Neural Networks | http://arxiv.org/abs/1312.6026 | category:paper author:Razvan Pascanu, Caglar Gulcehre, Kyunghyun Cho, Yoshua Bengio
+iclr-2014-34 | Image Representation Learning Using Graph Regularized Auto-Encoders | http://arxiv.org/abs/1312.0786 | category:paper author:Yiyi Liao, Yue Wang, Yong Liu
+iclr-2014-35 | Improving Deep Neural Networks with Probabilistic Maxout Units | http://arxiv.org/abs/1312.6116 | category:paper author:Jost Tobias Springenberg, Martin Riedmiller
+iclr-2014-36 | Intriguing properties of neural networks | http://arxiv.org/abs/1312.6199 | category:paper author:Christian Szegedy, Wojciech Zaremba, Ilya Sutskever, Joan Bruna, Dumitru Erhan, Ian Goodfellow, Rob Fergus
+iclr-2014-37 | Large-scale Multi-label Text Classification - Revisiting Neural Networks | http://arxiv.org/abs/1312.5419 | category:paper author:Jinseok Nam, Jungi Kim, Iryna Gurevych, Johannes Fürnkranz
+iclr-2014-38 | Learned versus Hand-Designed Feature Representations for 3d Agglomeration | http://arxiv.org/abs/1312.6159 | category:paper author:John A. Bogovic, Gary B. Huang, Viren Jain
+iclr-2014-39 | Learning Factored Representations in a Deep Mixture of Experts | http://arxiv.org/abs/1312.4314 | category:paper author:David Eigen, Marc'Aurelio Ranzato, Ilya Sutskever
+iclr-2014-40 | Learning High-level Image Representation for Image Retrieval via Multi-Task DNN using Clickthrough Data | http://arxiv.org/abs/1312.4740 | category:paper author:Wei Yu, Tiejun Zhao, Yalong Bai, Wei-Ying Ma, Kuiyuan Yang
+iclr-2014-41 | Learning Human Pose Estimation Features with Convolutional Networks | http://arxiv.org/abs/1312.7302 | category:paper author:Ajrun Jain, Graham W. Taylor, Christoph Bregler, Mykhaylo Andriluka, Jonathan Tompson
+iclr-2014-42 | Learning Information Spread in Content Networks | http://arxiv.org/abs/1312.6169 | category:paper author:Sylvain Lamprier, Simon Bourigault, Ludovic Denoyer, Patrick Gallinari, Cédric Lagnier
+iclr-2014-43 | Learning Non-Linear Feature Maps, With An Application To Representation Learning | http://arxiv.org/abs/1312.5869 | category:paper author:Dimitrios Athanasakis, John Shawe-Taylor, Delmiro Fernandez-Reyes
+iclr-2014-44 | Learning Paired-associate Images with An Unsupervised Deep Learning Architecture | http://arxiv.org/abs/1312.6171 | category:paper author:Ti Wang, Daniel L. Silver
+iclr-2014-45 | Learning Semantic Script Knowledge with Event Embeddings | http://arxiv.org/abs/1312.5198 | category:paper author:Ashutosh Modi, Ivan Titov
+iclr-2014-46 | Learning States Representations in POMDP | http://arxiv.org/abs/1312.6042 | category:paper author:Gabriella Contardo, Ludovic Denoyer, Thierry Artieres, Patrick Gallinari
+iclr-2014-47 | Learning Transformations for Classification Forests | http://arxiv.org/abs/1312.5604 | category:paper author:Qiang Qiu, Guillermo Sapiro
+iclr-2014-48 | Learning Type-Driven Tensor-Based Meaning Representations | http://arxiv.org/abs/1312.5985 | category:paper author:Tamara Polajnar, Luana Fagarasan, Stephen Clark
+iclr-2014-49 | Learning generative models with visual attention | http://arxiv.org/abs/1312.6110 | category:paper author:Yichuan Tang, Nitish Srivastava, Ruslan Salakhutdinov
+iclr-2014-50 | Learning to encode motion using spatio-temporal synchrony | http://arxiv.org/abs/1306.3162 | category:paper author:Kishore Reddy Konda, Roland Memisevic, Vincent Michalski
+iclr-2014-51 | Low-Rank Approximations for Conditional Feedforward Computation in Deep Neural Networks | http://arxiv.org/abs/1312.4461 | category:paper author:Andrew Davis, Itamar Arel
+iclr-2014-52 | Modeling correlations in spontaneous activity of visual cortex with centered Gaussian-binary deep Boltzmann machines | http://arxiv.org/abs/1312.6108 | category:paper author:Nan Wang, Laurenz Wiskott, Dirk Jancke
+iclr-2014-53 | Multi-GPU Training of ConvNets | http://arxiv.org/abs/1312.5853 | category:paper author:Omry Yadan, Keith Adams, Yaniv Taigman, Marc'Aurelio Ranzato
+iclr-2014-54 | Multi-View Priors for Learning Detectors from Sparse Viewpoint Data | http://arxiv.org/abs/1312.6095 | category:paper author:Bojan Pepik, Michael Stark, Peter Gehler, Bernt Schiele
+iclr-2014-55 | Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks | http://arxiv.org/abs/1312.6082 | category:paper author:Ian J. Goodfellow, Yaroslav Bulatov, Julian Ibarz, Sacha Arnoud, Vinay Shet
+iclr-2014-56 | Multimodal Transitions for Generative Stochastic Networks | http://arxiv.org/abs/1312.5578 | category:paper author:Sherjil Ozair, Li Yao, Yoshua Bengio
+iclr-2014-57 | Network In Network | http://arxiv.org/abs/1312.4400 | category:paper author:Min Lin, Qiang Chen, Shuicheng Yan
+iclr-2014-58 | Neuronal Synchrony in Complex-Valued Deep Networks | http://arxiv.org/abs/1312.6115 | category:paper author:David P. Reichert, Thomas Serre
+iclr-2014-59 | Nonparametric Weight Initialization of Neural Networks via Integral Representation | http://arxiv.org/abs/1312.6461 | category:paper author:Sho Sonoda, Noboru Murata
+iclr-2014-60 | Occupancy Detection in Vehicles Using Fisher Vector Image Representation | http://arxiv.org/abs/1312.6024 | category:paper author:Yusuf Artan, Peter Paul
+iclr-2014-61 | On Fast Dropout and its Applicability to Recurrent Networks | http://arxiv.org/abs/1311.0701 | category:paper author:Patrick van der Smagt, Christian Osendorfer, Nutan Chen, Daniela Korhammer, Sebastian Urban, Justin Bayer
+iclr-2014-62 | On the number of inference regions of deep feed forward networks with piece-wise linear activations | http://arxiv.org/abs/1312.6098 | category:paper author:Razvan Pascanu, Guido Montufar, Yoshua Bengio
+iclr-2014-63 | One-Shot Adaptation of Supervised Deep Convolutional Models | http://arxiv.org/abs/1312.6204 | category:paper author:Judy Hoffman, Eric Tzeng, Jeff Donahue, Yangqing Jia, Kate Saenko, Trevor Darrell
+iclr-2014-64 | OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks | http://arxiv.org/abs/1312.6229 | category:paper author:Pierre Sermanet, David Eigen, Xiang Zhang, Michael Mathieu, Rob Fergus, Yann LeCun
+iclr-2014-65 | Rate-Distortion Auto-Encoders | http://arxiv.org/abs/1312.7381 | category:paper author:Luis G. Sanchez Giraldo, Jose C. Principe
+iclr-2014-66 | Relaxations for inference in restricted Boltzmann machines | http://arxiv.org/abs/1312.6205 | category:paper author:Sida I. Wang, Roy Frostig, Percy Liang, Christopher D. Manning
+iclr-2014-67 | Revisiting Natural Gradient for Deep Networks | http://arxiv.org/abs/1301.3584 | category:paper author:Razvan Pascanu, Yoshua Bengio
+iclr-2014-68 | Semistochastic Quadratic Bound Methods | http://arxiv.org/abs/1309.1369 | category:paper author:Aleksandr Y. Aravkin, Anna Choromanska, Tony Jebara, Dimitri Kanevsky
+iclr-2014-69 | Sequentially Generated Instance-Dependent Image Representations for Classification | http://arxiv.org/abs/1312.6594 | category:paper author:Ludovic Denoyer, Matthieu Cord, Patrick Gallinari, Nicolas Thome, Gabriel Dulac-Arnold
+iclr-2014-70 | Sparse similarity-preserving hashing | http://arxiv.org/abs/1312.5479 | category:paper author:Alex M. Bronstein, Pablo Sprechmann, Michael M. Bronstein, Jonathan Masci, Guillermo Sapiro
+iclr-2014-71 | Sparse, complex-valued representations of natural sounds learned with phase and amplitude continuity priors | http://arxiv.org/abs/1312.4695 | category:paper author:Wiktor Mlynarski
+iclr-2014-72 | Spectral Networks and Locally Connected Networks on Graphs | http://arxiv.org/abs/1312.6203 | category:paper author:Joan Bruna, Wojciech Zaremba, Arthur Szlam, Yann LeCun
+iclr-2014-73 | Stochastic Gradient Estimate Variance in Contrastive Divergence and Persistent Contrastive Divergence | http://arxiv.org/abs/1312.6002 | category:paper author:Mathias Berglund, Tapani Raiko
+iclr-2014-74 | Stopping Criteria in Contrastive Divergence: Alternatives to the Reconstruction Error | http://arxiv.org/abs/1312.6062 | category:paper author:David Buchaca, Enrique Romero, Ferran Mazzanti, Jordi Delgado
+iclr-2014-75 | The return of AdaBoost.MH: multi-class Hamming trees | http://arxiv.org/abs/1312.6086 | category:paper author:Balázs Kégl
+iclr-2014-76 | Understanding Deep Architectures using a Recursive Convolutional Network | http://arxiv.org/abs/1312.1847 | category:paper author:David Eigen, Jason Rolfe, Rob Fergus, Yann LeCun
+iclr-2014-77 | Unit Tests for Stochastic Optimization | http://arxiv.org/abs/1312.6055 | category:paper author:Tom Schaul, Ioannis Antonoglou, David Silver
+iclr-2014-78 | Unsupervised Feature Learning by Deep Sparse Coding | http://arxiv.org/abs/1312.5783 | category:paper author:Yun Wang, Yanjun Qi, Arthur Szlam, Yunlong He, Koray Kavukcuoglu
+iclr-2014-79 | Unsupervised feature learning by augmenting single images | http://arxiv.org/abs/1312.5242 | category:paper author:Alexey Dosovitskiy, Jost Tobias Springenberg, Thomas Brox
+iclr-2014-80 | Why does the unsupervised pretraining encourage moderate-sparseness? | http://arxiv.org/abs/1312.5813 | category:paper author:Jun Li, Wei Luo, Jian Yang, Xiaotong Yuan
+iclr-2014-81 | Zero-Shot Learning and Clustering for Semantic Utterance Classification | http://arxiv.org/abs/1401.0509 | category:paper author:Yann N. Dauphin, Gokhan Tur, Dilek Hakkani-Tur, Larry Heck
+iclr-2014-82 | Zero-Shot Learning by Convex Combination of Semantic Embeddings | http://arxiv.org/abs/1312.5650 | category:paper author:Mohammad Norouzi, Tomas Mikolov, Samy Bengio, Yoram Singer, Jonathon Shlens, Andrea Frome, Greg S. Corrado, Jeffrey Dean
+iclr-2014-83 | k-Sparse Autoencoders | http://arxiv.org/abs/1312.5663 | category:paper author:Alireza Makhzani, Brendan Frey

@@ -1,27 +1,27 @@
-U06-1001 | Robust multimodal understanding for interactive systems | http://www.aclweb.org/anthology/U/U06/U06-1001.pdf | author:Michael Johnston
-U06-1002 | User modelling for language technologists | http://www.aclweb.org/anthology/U/U06/U06-1002.pdf | author:Judy Kay
-U06-1003 | Efficient Combinatory Categorial Grammar Parsing | http://www.aclweb.org/anthology/U/U06/U06-1003.pdf | author:Bojan Djordjevic; James R. Curran
-U06-1004 | Improved Default Sense Selection forWord Sense Disambiguation | http://www.aclweb.org/anthology/U/U06/U06-1004.pdf | author:Tobias Hawker; Matthew Honnibal
-U06-1005 | Experiments with Sentence Classification | http://www.aclweb.org/anthology/U/U06/U06-1005.pdf | author:Yuval Marom Anthony Khoo; David Albrecht
-U06-1006 | Computational Semantics in the Natural Language Toolkit | http://www.aclweb.org/anthology/U/U06/U06-1006.pdf | author:Ewan Klein
-U06-1007 | Classifying Speech Acts using Verbal Response Modes | http://www.aclweb.org/anthology/U/U06/U06-1007.pdf | author:Andrew Lampert; Robert Dale; Cecile Paris
-U06-1008 | Word Relatives in Context for Word Sense Disambiguation | http://www.aclweb.org/anthology/U/U06/U06-1008.pdf | author:David Martinez; Eneko Agirre; Xinglong Wang
-U06-1009 | Named Entity Recognition for Question Answering | http://www.aclweb.org/anthology/U/U06/U06-1009.pdf | author:Diego Molla; Menno van Zaanen; Daniel Smith
-U06-1010 | Named Entity Recognition for Astronomy Literature | http://www.aclweb.org/anthology/U/U06/U06-1010.pdf | author:Tara Murphy; Tara McIntosh; James R. Curran
-U06-1011 | Die Morphologie (f): Targeted Lexical Acquisition for Languages other than English | http://www.aclweb.org/anthology/U/U06/U06-1011.pdf | author:Jeremy Nicholson; Timothy Baldwin; Phil Blunsom
-U06-1012 | Automatic Mapping Clinical Notes to Medical Terminologies | http://www.aclweb.org/anthology/U/U06/U06-1012.pdf | author:Jon Patrick; Yefeng Wang; Peter Budd
-U06-1013 | Pseudo Relevance Feedback Using Named Entities for Question Answering | http://www.aclweb.org/anthology/U/U06/U06-1013.pdf | author:Luiz Augusto Pizzato; Diego Molla; Cecile Paris
-U06-1014 | Evidence for Gradient Salience: What Happens with Competing Non-salient Referents during Pronoun Resolution? | http://www.aclweb.org/anthology/U/U06/U06-1014.pdf | author:Ralph L. Rose
-U06-1015 | Web Readability and Computer-Assisted Language Learning | http://www.aclweb.org/anthology/U/U06/U06-1015.pdf | author:Alexandra L. Uitdenbogerd
-U06-1016 | Questions require an answer: A deductive perspective on questions and answers | http://www.aclweb.org/anthology/U/U06/U06-1016.pdf | author:Willemijn Vermaat
-U06-1017 | Towards the Evaluation of Referring Expression Generation | http://www.aclweb.org/anthology/U/U06/U06-1017.pdf | author:Jette Viethen; Robert Dale
-U06-1018 | Error correction using utterance disambiguation techniques | http://www.aclweb.org/anthology/U/U06/U06-1018.pdf | author:Peter Vlugter; Edwin van der Ham; Alistair Knott
-U06-1019 | Using Dependency-Based Features to Take the ’Para-farce’ out of Paraphrase | http://www.aclweb.org/anthology/U/U06/U06-1019.pdf | author:Stephen Wan; Mark Dras; Robert Dale; Cecile Paris
-U06-1020 | Verb Sense Disambiguation Using Selectional Preferences Extracted with a State-of-the-art Semantic Role Labeler | http://www.aclweb.org/anthology/U/U06/U06-1020.pdf | author:Patrick Ye; Timothy Baldwin
-U06-1021 | This Phrase-Based SMT System is Out of Order: Generalised Word Reordering in Machine Translation | http://www.aclweb.org/anthology/U/U06/U06-1021.pdf | author:Simon Zwarts; Mark Dras
-U06-1022 | Analysis and Prediction of User Behaviour in a Museum Environment | http://www.aclweb.org/anthology/U/U06/U06-1022.pdf | author:Karl Grieser; Timothy Baldwin; Steven Bird
-U06-1023 | Using Dialogue Acts to Suggest Responses in Support Services via Instant Messaging | http://www.aclweb.org/anthology/U/U06/U06-1023.pdf | author:Edward Ivanovic
-U06-1024 | Probabilities improve stress-prediction in a CFG of Hawaiian phonology | http://www.aclweb.org/anthology/U/U06/U06-1024.pdf | author:Oiwi Parker Jones
-U06-1025 | Towards Cognitive Optimisation of a Search Engine Interface | http://www.aclweb.org/anthology/U/U06/U06-1025.pdf | author:Kenneth Treharne; Darius Pfitzner; David M. W. Powers
-U06-1026 | Natural Language Processing and XML Retrieval | http://www.aclweb.org/anthology/U/U06/U06-1026.pdf | author:Alan Woodley; Xavier Tannier; Marcus Hassler; Shlomo Geva
-U06-1027 | Extracting Patient Clinical Profiles from Case Reports | http://www.aclweb.org/anthology/U/U06/U06-1027.pdf | author:Yitao Zhang; Jon Patrick
+U06-1001 | Robust multimodal understanding for interactive systems | http://www.aclweb.org/anthology/U/U06/U06-1001.pdf | category:paper author:Michael Johnston
+U06-1002 | User modelling for language technologists | http://www.aclweb.org/anthology/U/U06/U06-1002.pdf | category:paper author:Judy Kay
+U06-1003 | Efficient Combinatory Categorial Grammar Parsing | http://www.aclweb.org/anthology/U/U06/U06-1003.pdf | category:paper author:Bojan Djordjevic; James R. Curran
+U06-1004 | Improved Default Sense Selection forWord Sense Disambiguation | http://www.aclweb.org/anthology/U/U06/U06-1004.pdf | category:paper author:Tobias Hawker; Matthew Honnibal
+U06-1005 | Experiments with Sentence Classification | http://www.aclweb.org/anthology/U/U06/U06-1005.pdf | category:paper author:Yuval Marom Anthony Khoo; David Albrecht
+U06-1006 | Computational Semantics in the Natural Language Toolkit | http://www.aclweb.org/anthology/U/U06/U06-1006.pdf | category:paper author:Ewan Klein
+U06-1007 | Classifying Speech Acts using Verbal Response Modes | http://www.aclweb.org/anthology/U/U06/U06-1007.pdf | category:paper author:Andrew Lampert; Robert Dale; Cecile Paris
+U06-1008 | Word Relatives in Context for Word Sense Disambiguation | http://www.aclweb.org/anthology/U/U06/U06-1008.pdf | category:paper author:David Martinez; Eneko Agirre; Xinglong Wang
+U06-1009 | Named Entity Recognition for Question Answering | http://www.aclweb.org/anthology/U/U06/U06-1009.pdf | category:paper author:Diego Molla; Menno van Zaanen; Daniel Smith
+U06-1010 | Named Entity Recognition for Astronomy Literature | http://www.aclweb.org/anthology/U/U06/U06-1010.pdf | category:paper author:Tara Murphy; Tara McIntosh; James R. Curran
+U06-1011 | Die Morphologie (f): Targeted Lexical Acquisition for Languages other than English | http://www.aclweb.org/anthology/U/U06/U06-1011.pdf | category:paper author:Jeremy Nicholson; Timothy Baldwin; Phil Blunsom
+U06-1012 | Automatic Mapping Clinical Notes to Medical Terminologies | http://www.aclweb.org/anthology/U/U06/U06-1012.pdf | category:paper author:Jon Patrick; Yefeng Wang; Peter Budd
+U06-1013 | Pseudo Relevance Feedback Using Named Entities for Question Answering | http://www.aclweb.org/anthology/U/U06/U06-1013.pdf | category:paper author:Luiz Augusto Pizzato; Diego Molla; Cecile Paris
+U06-1014 | Evidence for Gradient Salience: What Happens with Competing Non-salient Referents during Pronoun Resolution? | http://www.aclweb.org/anthology/U/U06/U06-1014.pdf | category:paper author:Ralph L. Rose
+U06-1015 | Web Readability and Computer-Assisted Language Learning | http://www.aclweb.org/anthology/U/U06/U06-1015.pdf | category:paper author:Alexandra L. Uitdenbogerd
+U06-1016 | Questions require an answer: A deductive perspective on questions and answers | http://www.aclweb.org/anthology/U/U06/U06-1016.pdf | category:paper author:Willemijn Vermaat
+U06-1017 | Towards the Evaluation of Referring Expression Generation | http://www.aclweb.org/anthology/U/U06/U06-1017.pdf | category:paper author:Jette Viethen; Robert Dale
+U06-1018 | Error correction using utterance disambiguation techniques | http://www.aclweb.org/anthology/U/U06/U06-1018.pdf | category:paper author:Peter Vlugter; Edwin van der Ham; Alistair Knott
+U06-1019 | Using Dependency-Based Features to Take the ’Para-farce’ out of Paraphrase | http://www.aclweb.org/anthology/U/U06/U06-1019.pdf | category:paper author:Stephen Wan; Mark Dras; Robert Dale; Cecile Paris
+U06-1020 | Verb Sense Disambiguation Using Selectional Preferences Extracted with a State-of-the-art Semantic Role Labeler | http://www.aclweb.org/anthology/U/U06/U06-1020.pdf | category:paper author:Patrick Ye; Timothy Baldwin
+U06-1021 | This Phrase-Based SMT System is Out of Order: Generalised Word Reordering in Machine Translation | http://www.aclweb.org/anthology/U/U06/U06-1021.pdf | category:paper author:Simon Zwarts; Mark Dras
+U06-1022 | Analysis and Prediction of User Behaviour in a Museum Environment | http://www.aclweb.org/anthology/U/U06/U06-1022.pdf | category:paper author:Karl Grieser; Timothy Baldwin; Steven Bird
+U06-1023 | Using Dialogue Acts to Suggest Responses in Support Services via Instant Messaging | http://www.aclweb.org/anthology/U/U06/U06-1023.pdf | category:paper author:Edward Ivanovic
+U06-1024 | Probabilities improve stress-prediction in a CFG of Hawaiian phonology | http://www.aclweb.org/anthology/U/U06/U06-1024.pdf | category:paper author:Oiwi Parker Jones
+U06-1025 | Towards Cognitive Optimisation of a Search Engine Interface | http://www.aclweb.org/anthology/U/U06/U06-1025.pdf | category:paper author:Kenneth Treharne; Darius Pfitzner; David M. W. Powers
+U06-1026 | Natural Language Processing and XML Retrieval | http://www.aclweb.org/anthology/U/U06/U06-1026.pdf | category:paper author:Alan Woodley; Xavier Tannier; Marcus Hassler; Shlomo Geva
+U06-1027 | Extracting Patient Clinical Profiles from Case Reports | http://www.aclweb.org/anthology/U/U06/U06-1027.pdf | category:paper author:Yitao Zhang; Jon Patrick

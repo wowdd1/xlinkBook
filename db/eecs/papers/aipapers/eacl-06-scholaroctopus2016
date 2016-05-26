@@ -1,92 +1,92 @@
-E06-1001 | Inheritance and the CCG Lexicon | http://www.aclweb.org/anthology/E/E06/E06-1001.pdf | author:Mark McConville
-E06-1002 | Using Encyclopedic Knowledge for Named entity Disambiguation | http://www.aclweb.org/anthology/E/E06/E06-1002.pdf | author:Razvan Bunescu; Marius Paşca
-E06-1003 | Weakly Supervised Approaches for Ontology Population | http://www.aclweb.org/anthology/E/E06/E06-1003.pdf | author:Hristo Tanev; Bernardo Magnini
-E06-1004 | Computational Complexity of Statistical Machine Translation | http://www.aclweb.org/anthology/E/E06/E06-1004.pdf | author:Raghavendra Udupa U.; Hemanta K. Maji
-E06-1005 | Computing Consensus Translation for Multiple Machine Translation Systems Using Enhanced Hypothesis Alignment | http://www.aclweb.org/anthology/E/E06/E06-1005.pdf | author:Evgeny Matusov; Nicola Ueffing; Hermann Ney
-E06-1006 | Phrase-Based Backoff Models for Machine Translation of Highly Inflected Languages | http://www.aclweb.org/anthology/E/E06/E06-1006.pdf | author:Mei Yang; Katrin Kirchhoff
-E06-1007 | Automatic Detection of Nonreferential It in Spoken Multi-Party Dialog | http://www.aclweb.org/anthology/E/E06/E06-1007.pdf | author:Christoph Müller
-E06-1008 | Generating Statistical Language Models from Interpretation Grammars in Dialogue Systems | http://www.aclweb.org/anthology/E/E06/E06-1008.pdf | author:Rebecca Jonson
-E06-1009 | Information Presentation in Spoken Dialogue Systems | http://www.aclweb.org/anthology/E/E06/E06-1009.pdf | author:Vera Demberg; Johanna D. Moore
-E06-1010 | Constraints on Non-Projective Dependency Parsing | http://www.aclweb.org/anthology/E/E06/E06-1010.pdf | author:Joakim Nivre
-E06-1011 | Online Learning of Approximate Dependency Parsing Algorithms | http://www.aclweb.org/anthology/E/E06/E06-1011.pdf | author:Ryan McDonald; Fernando Pereira
-E06-1012 | Statistical Dependency Parsing for Turkish | http://www.aclweb.org/anthology/E/E06/E06-1012.pdf | author:Gülşen Eryiğit; Kemal Oflazer
-E06-1013 | Generalized Hebbian Algorithm for Incremental Singular Value Decomposition in Natural Language Processing | http://www.aclweb.org/anthology/E/E06/E06-1013.pdf | author:Genevieve Gorrell
-E06-1014 | Improving Probabilistic Latent Semantic Analysis with Principal Component Analysis | http://www.aclweb.org/anthology/E/E06/E06-1014.pdf | author:Ayman Farahat; Francine Chen
-E06-1015 | Making Tree Kernels Practical for Natural Language Learning | http://www.aclweb.org/anthology/E/E06/E06-1015.pdf | author:Alessandro Moschitti
-E06-1016 | Determining Word Sense Dominance Using a Thesaurus | http://www.aclweb.org/anthology/E/E06/E06-1016.pdf | author:Saif Mohammad; Graeme Hirst
-E06-1017 | Experiments on the Validation of Sense Annotations Assisted by Lexical Chains | http://www.aclweb.org/anthology/E/E06/E06-1017.pdf | author:Roberto Navigli
-E06-1018 | Word Sense Induction: Triplet-Based Clustering and Automatic Evaluation | http://www.aclweb.org/anthology/E/E06/E06-1018.pdf | author:Stefan Bordag
-E06-1019 | A Comparison of Syntactically Motivated Word Alignment Spaces | http://www.aclweb.org/anthology/E/E06/E06-1019.pdf | author:Colin Cherry; Dekang Lin
-E06-1020 | Improved Lexical Alignment by Combining Multiple Reified Alignments | http://www.aclweb.org/anthology/E/E06/E06-1020.pdf | author:Dan Tufiş; Radu Ion; Alexandru Ceauşu; Dan Ştefănescu
-E06-1021 | Towards Robust Context-Sensitive Sentence Alignment for Monolingual Corpora | http://www.aclweb.org/anthology/E/E06/E06-1021.pdf | author:Rani Nelken; Stuart M. Shieber
-E06-1022 | Addressee Identification in Face-to-Face Meetings | http://www.aclweb.org/anthology/E/E06/E06-1022.pdf | author:Natasa Jovanovic; Rieks op den Akker; Anton Nijholt
-E06-1023 | Identifying Repair Targets in Action Control Dialogue | http://www.aclweb.org/anthology/E/E06/E06-1023.pdf | author:Kotaro Funakoshi; Takenobu Tokunaga
-E06-1024 | Keeping the Initiative: An Empirically-Motivated Approach to Predicting User-Initiated Dialogue Contribution in HCI | http://www.aclweb.org/anthology/E/E06/E06-1024.pdf | author:Kerstin Fischer; John A. Bateman
-E06-1025 | Determining Term Subjectivity and Term Orientation for Opinion Mining | http://www.aclweb.org/anthology/E/E06/E06-1025.pdf | author:Andrea Esuli; Fabrizio Sebastiani
-E06-1026 | Latent Variable Models for Semantic Orientations of Phrases | http://www.aclweb.org/anthology/E/E06/E06-1026.pdf | author:Hiroya Takamura; Takashi Inui; Manabu Okumura
-E06-1027 | Mining WordNet for a Fuzzy Sentiment: Sentiment Tag Extraction from WordNet Glosses | http://www.aclweb.org/anthology/E/E06/E06-1027.pdf | author:Alina Adreevskaia; Sabine Bergler
-E06-1028 | A Figure of Merit for the Evaluation of Web-Corpus Randomness | http://www.aclweb.org/anthology/E/E06/E06-1028.pdf | author:Massimiliano Ciaramita; Marco Baroni
-E06-1029 | Compiling French-Japanese Terminologies from the Web | http://www.aclweb.org/anthology/E/E06/E06-1029.pdf | author:Xavier Robitaille; Yasuhiro Sasaki; Masatsugu Tonoike; Satoshi Sato; Takehito Utsuro
-E06-1030 | Web Text Corpus for Natural Language Processing | http://www.aclweb.org/anthology/E/E06/E06-1030.pdf | author:Vinci Liu; James R. Curran
-E06-1031 | CDER: Efficient MT Evaluation Using Block Movements | http://www.aclweb.org/anthology/E/E06/E06-1031.pdf | author:Gregor Leusch; Nicola Ueffing; Hermann Ney
-E06-1032 | Re-evaluation the Role of Bleu in Machine Translation Research | http://www.aclweb.org/anthology/E/E06/E06-1032.pdf | author:Chris Callison-Burch; Miles Osborne; Philipp Koehn
-E06-1033 | Adaptive Transformation-Based Learning for Improving Dictionary Tagging | http://www.aclweb.org/anthology/E/E06/E06-1033.pdf | author:Burcu Karagol-Ayan; David Doermann; Amy Weinberg
-E06-1034 | From Detecting Errors to Automatically Correcting Them | http://www.aclweb.org/anthology/E/E06/E06-1034.pdf | author:Markus Dickinson
-E06-1035 | Automatic Segmentation of Multiparty Dialogue | http://www.aclweb.org/anthology/E/E06/E06-1035.pdf | author:Pei-yun Hsueh; Johanna D. Moore; Steve Renals
-E06-1036 | Recognizing Textual Parallelisms with Edit Distance and Similarity Degree | http://www.aclweb.org/anthology/E/E06/E06-1036.pdf | author:Marie Guégan; Nicolas Hernandez
-E06-1037 | Using Reinforcement Learning to Build a Better Model of Dialogue State | http://www.aclweb.org/anthology/E/E06/E06-1037.pdf | author:Joel R. Tetreault; Diane J. Litman
-E06-1038 | Discriminative Sentence Compression with Soft Syntactic Evidence | http://www.aclweb.org/anthology/E/E06/E06-1038.pdf | author:Ryan McDonald
-E06-1039 | Multi-Document Summarization of Evaluative Text | http://www.aclweb.org/anthology/E/E06/E06-1039.pdf | author:Giuseppe Carenini; Raymond Ng; Adam Pauls
-E06-1040 | Comparing Automatic and Human Evaluation of NLG Systems | http://www.aclweb.org/anthology/E/E06/E06-1040.pdf | author:Anja Belz; Ehud Reiter
-E06-1041 | Structuring Knowledge for Reference Generation: A Clustering Algorithm | http://www.aclweb.org/anthology/E/E06/E06-1041.pdf | author:Albert Gatt
-E06-1042 | A Clustering Approach for Nearly Unsupervised Recognition of Nonliteral Language | http://www.aclweb.org/anthology/E/E06/E06-1042.pdf | author:Julia Birke; Anoop Sarkar
-E06-1043 | Automatically Constructing a Lexicon of Verb Phrase Idiomatic Combinations | http://www.aclweb.org/anthology/E/E06/E06-1043.pdf | author:Afsaneh Fazly; Suzanne Stevenson
-E06-1044 | Modelling Semantic Role Pausibility in Human Sentence Processing | http://www.aclweb.org/anthology/E/E06/E06-1044.pdf | author:Ulrike Padó; Matthew Crocker; Frank Keller
-E06-1045 | Data-Driven Generation of Emphatic Facial Displays | http://www.aclweb.org/anthology/E/E06/E06-1045.pdf | author:Mary Ellen Foster; Jon Oberlander
-E06-1046 | Edit Machines for Robust Multimodal Language Processing | http://www.aclweb.org/anthology/E/E06/E06-1046.pdf | author:Srinivas Bangalore; Michael Johnston
-E06-1047 | Parsing Arabic Dialects | http://www.aclweb.org/anthology/E/E06/E06-1047.pdf | author:David Chiang; Mona Diab; Nizar Habash; Owen Rambow; Safiullah Shareef
-E06-1048 | Unifying Synchronous Tree Adjoining Grammars and Tree Transducers via Bimorphisms | http://www.aclweb.org/anthology/E/E06/E06-1048.pdf | author:Stuart M. Shieber
-E06-1049 | A Machine Learning Approach to Extract Temporal Information from Texts in Swedish and Generate Animated 3D Scenes | http://www.aclweb.org/anthology/E/E06/E06-1049.pdf | author:Anders Berglund; Richard Johansson; Pierre Nugues
-E06-1050 | A Probabilistic Answer Type Model | http://www.aclweb.org/anthology/E/E06/E06-1050.pdf | author:Christopher Pinchak; Dekan Lin
-E06-1051 | Exploiting Shallow Linguistic Information for Relation Extraction from Biomedical Literature | http://www.aclweb.org/anthology/E/E06/E06-1051.pdf | author:Claudio Giuliano; Alberto Lavelli; Lorenza Romano
-E06-1052 | Investigating a Generic Paraphrase-Based Approach for Relation Extraction | http://www.aclweb.org/anthology/E/E06/E06-1052.pdf | author:Lorenza Romano; Milen Kouylekov; Idan Szpektor; Ido Dagan; Alberto Lavelli
-E06-2001 | Large Linguistically-Processed Web Corpora for Multiple Languages | http://www.aclweb.org/anthology/E/E06/E06-2001.pdf | author:Marco Baroni; Adam Kilgarriff
-E06-2002 | A Web-based Demonstrator of a Multi-lingual Phrase-based Translation System | http://www.aclweb.org/anthology/E/E06/E06-2002.pdf | author:Roldano Cattoni; Nicola Bertoldi; Mauro Cettolo; Boxing Chen; Marcello Federico
-E06-2003 | LinguaStream: An Integrated Environment for Computational Linguistics Experimentation | http://www.aclweb.org/anthology/E/E06/E06-2003.pdf | author:Frédérik Bilhaut; Antoine Widlöcher
-E06-2004 | DUDE: A Dialogue and Understanding Development Environment, Mapping Business Process Models to Information State Update Dialogue Systems | http://www.aclweb.org/anthology/E/E06/E06-2004.pdf | author:Oliver Lemon; Xingkun Liu
-E06-2005 | XMG - An Expressive Formalism for Describing Tree-Based Grammars | http://www.aclweb.org/anthology/E/E06/E06-2005.pdf | author:Yannick Parmentier; Joseph Le Roux; Benoît Crabbé
-E06-2006 | Online Word Sense Disambiguation with Structural Semantic Interconnections | http://www.aclweb.org/anthology/E/E06/E06-2006.pdf | author:Roberto Navigli
-E06-2007 | Selecting the "Right" Number of Senses Based on Clustering Criterion Functions | http://www.aclweb.org/anthology/E/E06/E06-2007.pdf | author:Ted Pedersen; Anagha Kulkarni
-E06-2008 | ELLEIPO: A Module that Computes Coordinative Ellipsis for Generators that Don't | http://www.aclweb.org/anthology/E/E06/E06-2008.pdf | author:Karin Harbusch; Gerard Kempen
-E06-2009 | An ISU Dialogue System Exhibiting Reinforcement Learning of Dialogue Policies: Generic Slot-Filling in the TALK In-car System | http://www.aclweb.org/anthology/E/E06/E06-2009.pdf | author:Oliver Lemon; Kallirroi Georgila; James Henderson; Matthew Stuttle
-E06-2010 | Generating and Visualizing a Soccer Knowledge Base | http://www.aclweb.org/anthology/E/E06/E06-2010.pdf | author:Paul Buitelaar; Thomas Eigner; Greg Gul-rajani; Alexander Schutz; Melanie Siegel; Nicolas Weber; Philipp Cimiano; Günter Ladwig; Matthias Mantel; Honggang Zhu
-E06-2011 | Esfinge — a Question Answering System in the Web using the Web | http://www.aclweb.org/anthology/E/E06/E06-2011.pdf | author:Luís Fernando Costa
-E06-2012 | Maytag: A Multi-Staged Approach to Identifying Complex Events in Textual Data | http://www.aclweb.org/anthology/E/E06/E06-2012.pdf | author:Conrad Chang; Lisa Ferro; John Gibson; Janet Hitzeman; Suzi Lubar; Justin Palmer; Sean Munson; Marc Vilain; Benjamin Wellner
-E06-2013 | Automatic Annotation for All Semantic Layers in FrameNet | http://www.aclweb.org/anthology/E/E06/E06-2013.pdf | author:Richard Johansson; Pierre Nugues
-E06-2014 | ASSIST: Automated Semantic Assistance for Translators | http://www.aclweb.org/anthology/E/E06/E06-2014.pdf | author:Serge Sharoff; Bogdan Babych; Paul Rayson; Olga Mudraya; Scott Piao
-E06-2015 | Semantic Role Labeling for Coreference Resolution | http://www.aclweb.org/anthology/E/E06/E06-2015.pdf | author:Simone Paolo Ponzetto and Michael Strube
-E06-2016 | The GOD model | http://www.aclweb.org/anthology/E/E06/E06-2016.pdf | author:Alfio Massimiliano Gliozzo
-E06-2017 | Computing Term Translation Probabilities with Generalized Latent Semantic Analysis | http://www.aclweb.org/anthology/E/E06/E06-2017.pdf | author:Irina Matveeva; Gina-Anne Levow
-E06-2018 | Exploring the Sense Distributions of Homographs | http://www.aclweb.org/anthology/E/E06/E06-2018.pdf | author:Reinhard Rapp
-E06-2019 | Classifying Biological Full-Text Articles for Multi-Database Curation | http://www.aclweb.org/anthology/E/E06/E06-2019.pdf | author:Wen-Juan Hou; Chih Lee; Hsin-Hsi Chen
-E06-2020 | Generating Spatio-Temporal Descriptions in Pollen Forecasts | http://www.aclweb.org/anthology/E/E06/E06-2020.pdf | author:Ross Turner; Somayajulu Sripada; Ehud Reiter; Ian P Davy
-E06-2021 | Automatic Acronym Recognition | http://www.aclweb.org/anthology/E/E06/E06-2021.pdf | author:Dana Dannélls
-E06-2022 | Multilingual Term Extraction from Domain-specific Corpora Using Morphological Structure | http://www.aclweb.org/anthology/E/E06/E06-2022.pdf | author:Delphine Bernhard
-E06-2023 | Unsupervised Discovery of Persian Morphemes | http://www.aclweb.org/anthology/E/E06/E06-2023.pdf | author:Mohsen Arabsorkhi; Mehrnoush Shamsfard
-E06-2024 | A Suite of Shallow Processing Tools for Portuguese: LX-Suite | http://www.aclweb.org/anthology/E/E06/E06-2024.pdf | author:António Branco; João Ricardo Silva
-E06-2025 | Theoretical Evaluation of Estimation Methods for Data-Oriented Parsing | http://www.aclweb.org/anthology/E/E06/E06-2025.pdf | author:Willem Zuidema
-E06-2026 | Grammatical Role Labeling with Integer Linear Programming | http://www.aclweb.org/anthology/E/E06/E06-2026.pdf | author:Manfred Klenner
-E06-2027 | Information Structure and Pauses in a Corpus of Spoken Danish | http://www.aclweb.org/anthology/E/E06/E06-2027.pdf | author:Patrizia Paggio
-E06-2028 | Bayesian Network, a Model for NLP? | http://www.aclweb.org/anthology/E/E06/E06-2028.pdf | author:Davy Weissenbacher
-E06-2029 | Adaptivity in Question Answering with User Modelling and a Dialogue Interface | http://www.aclweb.org/anthology/E/E06/E06-2029.pdf | author:Silvia Quarteroni; Suresh Manandhar
-E06-2030 | Developments in Affect Detection in E-drama | http://www.aclweb.org/anthology/E/E06/E06-2030.pdf | author:Li Zhang; John A Barnden; Robert J. Hendley; Alan M. Wallington
-E06-2031 | Why Are They Excited? Identifying and Explaining Spikes in Blog Mood Levels | http://www.aclweb.org/anthology/E/E06/E06-2031.pdf | author:Krisztian Balog; Gilad Mishne; Maarten de Rijke
-E06-3001 | What's There to Talk About? A Multi-Modal Model of Referring Behavior in the Presence of Shared Visual Information | http://www.aclweb.org/anthology/E/E06/E06-3001.pdf | author:Darren Gergle
-E06-3002 | What Humour Tells Us About Discourse Theories | http://www.aclweb.org/anthology/E/E06/E06-3002.pdf | author:Arjun Karande
-E06-3003 | An Approach to Summarizing Short Stories | http://www.aclweb.org/anthology/E/E06/E06-3003.pdf | author:Anna Kazantseva
-E06-3004 | Bootstrapping Named Entity Recognition with Automatically Generated Gazetteer Lists | http://www.aclweb.org/anthology/E/E06/E06-3004.pdf | author:Zornitsa Kozareva
-E06-3005 | Developing an Approach for Why-Question Answering | http://www.aclweb.org/anthology/E/E06/E06-3005.pdf | author:Suzan Verberne
-E06-3006 | A Two-Stage Approach to Retrieving Answers for How-To Questions | http://www.aclweb.org/anthology/E/E06/E06-3006.pdf | author:Ling Yin
-E06-3007 | Lexicalising Word Order Constraints for Implemented Linearisation Grammar | http://www.aclweb.org/anthology/E/E06/E06-3007.pdf | author:Yo Sato
-E06-3008 | Towards Robust Animacy Classification Using Morphosyntactic Distributional Features | http://www.aclweb.org/anthology/E/E06/E06-3008.pdf | author:Lilja Øvrelid
-E06-3009 | Example-Based Metonymy Recognition for Proper Nouns | http://www.aclweb.org/anthology/E/E06/E06-3009.pdf | author:Yves Peirsman
+E06-1001 | Inheritance and the CCG Lexicon | http://www.aclweb.org/anthology/E/E06/E06-1001.pdf | category:paper author:Mark McConville
+E06-1002 | Using Encyclopedic Knowledge for Named entity Disambiguation | http://www.aclweb.org/anthology/E/E06/E06-1002.pdf | category:paper author:Razvan Bunescu; Marius Paşca
+E06-1003 | Weakly Supervised Approaches for Ontology Population | http://www.aclweb.org/anthology/E/E06/E06-1003.pdf | category:paper author:Hristo Tanev; Bernardo Magnini
+E06-1004 | Computational Complexity of Statistical Machine Translation | http://www.aclweb.org/anthology/E/E06/E06-1004.pdf | category:paper author:Raghavendra Udupa U.; Hemanta K. Maji
+E06-1005 | Computing Consensus Translation for Multiple Machine Translation Systems Using Enhanced Hypothesis Alignment | http://www.aclweb.org/anthology/E/E06/E06-1005.pdf | category:paper author:Evgeny Matusov; Nicola Ueffing; Hermann Ney
+E06-1006 | Phrase-Based Backoff Models for Machine Translation of Highly Inflected Languages | http://www.aclweb.org/anthology/E/E06/E06-1006.pdf | category:paper author:Mei Yang; Katrin Kirchhoff
+E06-1007 | Automatic Detection of Nonreferential It in Spoken Multi-Party Dialog | http://www.aclweb.org/anthology/E/E06/E06-1007.pdf | category:paper author:Christoph Müller
+E06-1008 | Generating Statistical Language Models from Interpretation Grammars in Dialogue Systems | http://www.aclweb.org/anthology/E/E06/E06-1008.pdf | category:paper author:Rebecca Jonson
+E06-1009 | Information Presentation in Spoken Dialogue Systems | http://www.aclweb.org/anthology/E/E06/E06-1009.pdf | category:paper author:Vera Demberg; Johanna D. Moore
+E06-1010 | Constraints on Non-Projective Dependency Parsing | http://www.aclweb.org/anthology/E/E06/E06-1010.pdf | category:paper author:Joakim Nivre
+E06-1011 | Online Learning of Approximate Dependency Parsing Algorithms | http://www.aclweb.org/anthology/E/E06/E06-1011.pdf | category:paper author:Ryan McDonald; Fernando Pereira
+E06-1012 | Statistical Dependency Parsing for Turkish | http://www.aclweb.org/anthology/E/E06/E06-1012.pdf | category:paper author:Gülşen Eryiğit; Kemal Oflazer
+E06-1013 | Generalized Hebbian Algorithm for Incremental Singular Value Decomposition in Natural Language Processing | http://www.aclweb.org/anthology/E/E06/E06-1013.pdf | category:paper author:Genevieve Gorrell
+E06-1014 | Improving Probabilistic Latent Semantic Analysis with Principal Component Analysis | http://www.aclweb.org/anthology/E/E06/E06-1014.pdf | category:paper author:Ayman Farahat; Francine Chen
+E06-1015 | Making Tree Kernels Practical for Natural Language Learning | http://www.aclweb.org/anthology/E/E06/E06-1015.pdf | category:paper author:Alessandro Moschitti
+E06-1016 | Determining Word Sense Dominance Using a Thesaurus | http://www.aclweb.org/anthology/E/E06/E06-1016.pdf | category:paper author:Saif Mohammad; Graeme Hirst
+E06-1017 | Experiments on the Validation of Sense Annotations Assisted by Lexical Chains | http://www.aclweb.org/anthology/E/E06/E06-1017.pdf | category:paper author:Roberto Navigli
+E06-1018 | Word Sense Induction: Triplet-Based Clustering and Automatic Evaluation | http://www.aclweb.org/anthology/E/E06/E06-1018.pdf | category:paper author:Stefan Bordag
+E06-1019 | A Comparison of Syntactically Motivated Word Alignment Spaces | http://www.aclweb.org/anthology/E/E06/E06-1019.pdf | category:paper author:Colin Cherry; Dekang Lin
+E06-1020 | Improved Lexical Alignment by Combining Multiple Reified Alignments | http://www.aclweb.org/anthology/E/E06/E06-1020.pdf | category:paper author:Dan Tufiş; Radu Ion; Alexandru Ceauşu; Dan Ştefănescu
+E06-1021 | Towards Robust Context-Sensitive Sentence Alignment for Monolingual Corpora | http://www.aclweb.org/anthology/E/E06/E06-1021.pdf | category:paper author:Rani Nelken; Stuart M. Shieber
+E06-1022 | Addressee Identification in Face-to-Face Meetings | http://www.aclweb.org/anthology/E/E06/E06-1022.pdf | category:paper author:Natasa Jovanovic; Rieks op den Akker; Anton Nijholt
+E06-1023 | Identifying Repair Targets in Action Control Dialogue | http://www.aclweb.org/anthology/E/E06/E06-1023.pdf | category:paper author:Kotaro Funakoshi; Takenobu Tokunaga
+E06-1024 | Keeping the Initiative: An Empirically-Motivated Approach to Predicting User-Initiated Dialogue Contribution in HCI | http://www.aclweb.org/anthology/E/E06/E06-1024.pdf | category:paper author:Kerstin Fischer; John A. Bateman
+E06-1025 | Determining Term Subjectivity and Term Orientation for Opinion Mining | http://www.aclweb.org/anthology/E/E06/E06-1025.pdf | category:paper author:Andrea Esuli; Fabrizio Sebastiani
+E06-1026 | Latent Variable Models for Semantic Orientations of Phrases | http://www.aclweb.org/anthology/E/E06/E06-1026.pdf | category:paper author:Hiroya Takamura; Takashi Inui; Manabu Okumura
+E06-1027 | Mining WordNet for a Fuzzy Sentiment: Sentiment Tag Extraction from WordNet Glosses | http://www.aclweb.org/anthology/E/E06/E06-1027.pdf | category:paper author:Alina Adreevskaia; Sabine Bergler
+E06-1028 | A Figure of Merit for the Evaluation of Web-Corpus Randomness | http://www.aclweb.org/anthology/E/E06/E06-1028.pdf | category:paper author:Massimiliano Ciaramita; Marco Baroni
+E06-1029 | Compiling French-Japanese Terminologies from the Web | http://www.aclweb.org/anthology/E/E06/E06-1029.pdf | category:paper author:Xavier Robitaille; Yasuhiro Sasaki; Masatsugu Tonoike; Satoshi Sato; Takehito Utsuro
+E06-1030 | Web Text Corpus for Natural Language Processing | http://www.aclweb.org/anthology/E/E06/E06-1030.pdf | category:paper author:Vinci Liu; James R. Curran
+E06-1031 | CDER: Efficient MT Evaluation Using Block Movements | http://www.aclweb.org/anthology/E/E06/E06-1031.pdf | category:paper author:Gregor Leusch; Nicola Ueffing; Hermann Ney
+E06-1032 | Re-evaluation the Role of Bleu in Machine Translation Research | http://www.aclweb.org/anthology/E/E06/E06-1032.pdf | category:paper author:Chris Callison-Burch; Miles Osborne; Philipp Koehn
+E06-1033 | Adaptive Transformation-Based Learning for Improving Dictionary Tagging | http://www.aclweb.org/anthology/E/E06/E06-1033.pdf | category:paper author:Burcu Karagol-Ayan; David Doermann; Amy Weinberg
+E06-1034 | From Detecting Errors to Automatically Correcting Them | http://www.aclweb.org/anthology/E/E06/E06-1034.pdf | category:paper author:Markus Dickinson
+E06-1035 | Automatic Segmentation of Multiparty Dialogue | http://www.aclweb.org/anthology/E/E06/E06-1035.pdf | category:paper author:Pei-yun Hsueh; Johanna D. Moore; Steve Renals
+E06-1036 | Recognizing Textual Parallelisms with Edit Distance and Similarity Degree | http://www.aclweb.org/anthology/E/E06/E06-1036.pdf | category:paper author:Marie Guégan; Nicolas Hernandez
+E06-1037 | Using Reinforcement Learning to Build a Better Model of Dialogue State | http://www.aclweb.org/anthology/E/E06/E06-1037.pdf | category:paper author:Joel R. Tetreault; Diane J. Litman
+E06-1038 | Discriminative Sentence Compression with Soft Syntactic Evidence | http://www.aclweb.org/anthology/E/E06/E06-1038.pdf | category:paper author:Ryan McDonald
+E06-1039 | Multi-Document Summarization of Evaluative Text | http://www.aclweb.org/anthology/E/E06/E06-1039.pdf | category:paper author:Giuseppe Carenini; Raymond Ng; Adam Pauls
+E06-1040 | Comparing Automatic and Human Evaluation of NLG Systems | http://www.aclweb.org/anthology/E/E06/E06-1040.pdf | category:paper author:Anja Belz; Ehud Reiter
+E06-1041 | Structuring Knowledge for Reference Generation: A Clustering Algorithm | http://www.aclweb.org/anthology/E/E06/E06-1041.pdf | category:paper author:Albert Gatt
+E06-1042 | A Clustering Approach for Nearly Unsupervised Recognition of Nonliteral Language | http://www.aclweb.org/anthology/E/E06/E06-1042.pdf | category:paper author:Julia Birke; Anoop Sarkar
+E06-1043 | Automatically Constructing a Lexicon of Verb Phrase Idiomatic Combinations | http://www.aclweb.org/anthology/E/E06/E06-1043.pdf | category:paper author:Afsaneh Fazly; Suzanne Stevenson
+E06-1044 | Modelling Semantic Role Pausibility in Human Sentence Processing | http://www.aclweb.org/anthology/E/E06/E06-1044.pdf | category:paper author:Ulrike Padó; Matthew Crocker; Frank Keller
+E06-1045 | Data-Driven Generation of Emphatic Facial Displays | http://www.aclweb.org/anthology/E/E06/E06-1045.pdf | category:paper author:Mary Ellen Foster; Jon Oberlander
+E06-1046 | Edit Machines for Robust Multimodal Language Processing | http://www.aclweb.org/anthology/E/E06/E06-1046.pdf | category:paper author:Srinivas Bangalore; Michael Johnston
+E06-1047 | Parsing Arabic Dialects | http://www.aclweb.org/anthology/E/E06/E06-1047.pdf | category:paper author:David Chiang; Mona Diab; Nizar Habash; Owen Rambow; Safiullah Shareef
+E06-1048 | Unifying Synchronous Tree Adjoining Grammars and Tree Transducers via Bimorphisms | http://www.aclweb.org/anthology/E/E06/E06-1048.pdf | category:paper author:Stuart M. Shieber
+E06-1049 | A Machine Learning Approach to Extract Temporal Information from Texts in Swedish and Generate Animated 3D Scenes | http://www.aclweb.org/anthology/E/E06/E06-1049.pdf | category:paper author:Anders Berglund; Richard Johansson; Pierre Nugues
+E06-1050 | A Probabilistic Answer Type Model | http://www.aclweb.org/anthology/E/E06/E06-1050.pdf | category:paper author:Christopher Pinchak; Dekan Lin
+E06-1051 | Exploiting Shallow Linguistic Information for Relation Extraction from Biomedical Literature | http://www.aclweb.org/anthology/E/E06/E06-1051.pdf | category:paper author:Claudio Giuliano; Alberto Lavelli; Lorenza Romano
+E06-1052 | Investigating a Generic Paraphrase-Based Approach for Relation Extraction | http://www.aclweb.org/anthology/E/E06/E06-1052.pdf | category:paper author:Lorenza Romano; Milen Kouylekov; Idan Szpektor; Ido Dagan; Alberto Lavelli
+E06-2001 | Large Linguistically-Processed Web Corpora for Multiple Languages | http://www.aclweb.org/anthology/E/E06/E06-2001.pdf | category:paper author:Marco Baroni; Adam Kilgarriff
+E06-2002 | A Web-based Demonstrator of a Multi-lingual Phrase-based Translation System | http://www.aclweb.org/anthology/E/E06/E06-2002.pdf | category:paper author:Roldano Cattoni; Nicola Bertoldi; Mauro Cettolo; Boxing Chen; Marcello Federico
+E06-2003 | LinguaStream: An Integrated Environment for Computational Linguistics Experimentation | http://www.aclweb.org/anthology/E/E06/E06-2003.pdf | category:paper author:Frédérik Bilhaut; Antoine Widlöcher
+E06-2004 | DUDE: A Dialogue and Understanding Development Environment, Mapping Business Process Models to Information State Update Dialogue Systems | http://www.aclweb.org/anthology/E/E06/E06-2004.pdf | category:paper author:Oliver Lemon; Xingkun Liu
+E06-2005 | XMG - An Expressive Formalism for Describing Tree-Based Grammars | http://www.aclweb.org/anthology/E/E06/E06-2005.pdf | category:paper author:Yannick Parmentier; Joseph Le Roux; Benoît Crabbé
+E06-2006 | Online Word Sense Disambiguation with Structural Semantic Interconnections | http://www.aclweb.org/anthology/E/E06/E06-2006.pdf | category:paper author:Roberto Navigli
+E06-2007 | Selecting the "Right" Number of Senses Based on Clustering Criterion Functions | http://www.aclweb.org/anthology/E/E06/E06-2007.pdf | category:paper author:Ted Pedersen; Anagha Kulkarni
+E06-2008 | ELLEIPO: A Module that Computes Coordinative Ellipsis for Generators that Don't | http://www.aclweb.org/anthology/E/E06/E06-2008.pdf | category:paper author:Karin Harbusch; Gerard Kempen
+E06-2009 | An ISU Dialogue System Exhibiting Reinforcement Learning of Dialogue Policies: Generic Slot-Filling in the TALK In-car System | http://www.aclweb.org/anthology/E/E06/E06-2009.pdf | category:paper author:Oliver Lemon; Kallirroi Georgila; James Henderson; Matthew Stuttle
+E06-2010 | Generating and Visualizing a Soccer Knowledge Base | http://www.aclweb.org/anthology/E/E06/E06-2010.pdf | category:paper author:Paul Buitelaar; Thomas Eigner; Greg Gul-rajani; Alexander Schutz; Melanie Siegel; Nicolas Weber; Philipp Cimiano; Günter Ladwig; Matthias Mantel; Honggang Zhu
+E06-2011 | Esfinge — a Question Answering System in the Web using the Web | http://www.aclweb.org/anthology/E/E06/E06-2011.pdf | category:paper author:Luís Fernando Costa
+E06-2012 | Maytag: A Multi-Staged Approach to Identifying Complex Events in Textual Data | http://www.aclweb.org/anthology/E/E06/E06-2012.pdf | category:paper author:Conrad Chang; Lisa Ferro; John Gibson; Janet Hitzeman; Suzi Lubar; Justin Palmer; Sean Munson; Marc Vilain; Benjamin Wellner
+E06-2013 | Automatic Annotation for All Semantic Layers in FrameNet | http://www.aclweb.org/anthology/E/E06/E06-2013.pdf | category:paper author:Richard Johansson; Pierre Nugues
+E06-2014 | ASSIST: Automated Semantic Assistance for Translators | http://www.aclweb.org/anthology/E/E06/E06-2014.pdf | category:paper author:Serge Sharoff; Bogdan Babych; Paul Rayson; Olga Mudraya; Scott Piao
+E06-2015 | Semantic Role Labeling for Coreference Resolution | http://www.aclweb.org/anthology/E/E06/E06-2015.pdf | category:paper author:Simone Paolo Ponzetto and Michael Strube
+E06-2016 | The GOD model | http://www.aclweb.org/anthology/E/E06/E06-2016.pdf | category:paper author:Alfio Massimiliano Gliozzo
+E06-2017 | Computing Term Translation Probabilities with Generalized Latent Semantic Analysis | http://www.aclweb.org/anthology/E/E06/E06-2017.pdf | category:paper author:Irina Matveeva; Gina-Anne Levow
+E06-2018 | Exploring the Sense Distributions of Homographs | http://www.aclweb.org/anthology/E/E06/E06-2018.pdf | category:paper author:Reinhard Rapp
+E06-2019 | Classifying Biological Full-Text Articles for Multi-Database Curation | http://www.aclweb.org/anthology/E/E06/E06-2019.pdf | category:paper author:Wen-Juan Hou; Chih Lee; Hsin-Hsi Chen
+E06-2020 | Generating Spatio-Temporal Descriptions in Pollen Forecasts | http://www.aclweb.org/anthology/E/E06/E06-2020.pdf | category:paper author:Ross Turner; Somayajulu Sripada; Ehud Reiter; Ian P Davy
+E06-2021 | Automatic Acronym Recognition | http://www.aclweb.org/anthology/E/E06/E06-2021.pdf | category:paper author:Dana Dannélls
+E06-2022 | Multilingual Term Extraction from Domain-specific Corpora Using Morphological Structure | http://www.aclweb.org/anthology/E/E06/E06-2022.pdf | category:paper author:Delphine Bernhard
+E06-2023 | Unsupervised Discovery of Persian Morphemes | http://www.aclweb.org/anthology/E/E06/E06-2023.pdf | category:paper author:Mohsen Arabsorkhi; Mehrnoush Shamsfard
+E06-2024 | A Suite of Shallow Processing Tools for Portuguese: LX-Suite | http://www.aclweb.org/anthology/E/E06/E06-2024.pdf | category:paper author:António Branco; João Ricardo Silva
+E06-2025 | Theoretical Evaluation of Estimation Methods for Data-Oriented Parsing | http://www.aclweb.org/anthology/E/E06/E06-2025.pdf | category:paper author:Willem Zuidema
+E06-2026 | Grammatical Role Labeling with Integer Linear Programming | http://www.aclweb.org/anthology/E/E06/E06-2026.pdf | category:paper author:Manfred Klenner
+E06-2027 | Information Structure and Pauses in a Corpus of Spoken Danish | http://www.aclweb.org/anthology/E/E06/E06-2027.pdf | category:paper author:Patrizia Paggio
+E06-2028 | Bayesian Network, a Model for NLP? | http://www.aclweb.org/anthology/E/E06/E06-2028.pdf | category:paper author:Davy Weissenbacher
+E06-2029 | Adaptivity in Question Answering with User Modelling and a Dialogue Interface | http://www.aclweb.org/anthology/E/E06/E06-2029.pdf | category:paper author:Silvia Quarteroni; Suresh Manandhar
+E06-2030 | Developments in Affect Detection in E-drama | http://www.aclweb.org/anthology/E/E06/E06-2030.pdf | category:paper author:Li Zhang; John A Barnden; Robert J. Hendley; Alan M. Wallington
+E06-2031 | Why Are They Excited? Identifying and Explaining Spikes in Blog Mood Levels | http://www.aclweb.org/anthology/E/E06/E06-2031.pdf | category:paper author:Krisztian Balog; Gilad Mishne; Maarten de Rijke
+E06-3001 | What's There to Talk About? A Multi-Modal Model of Referring Behavior in the Presence of Shared Visual Information | http://www.aclweb.org/anthology/E/E06/E06-3001.pdf | category:paper author:Darren Gergle
+E06-3002 | What Humour Tells Us About Discourse Theories | http://www.aclweb.org/anthology/E/E06/E06-3002.pdf | category:paper author:Arjun Karande
+E06-3003 | An Approach to Summarizing Short Stories | http://www.aclweb.org/anthology/E/E06/E06-3003.pdf | category:paper author:Anna Kazantseva
+E06-3004 | Bootstrapping Named Entity Recognition with Automatically Generated Gazetteer Lists | http://www.aclweb.org/anthology/E/E06/E06-3004.pdf | category:paper author:Zornitsa Kozareva
+E06-3005 | Developing an Approach for Why-Question Answering | http://www.aclweb.org/anthology/E/E06/E06-3005.pdf | category:paper author:Suzan Verberne
+E06-3006 | A Two-Stage Approach to Retrieving Answers for How-To Questions | http://www.aclweb.org/anthology/E/E06/E06-3006.pdf | category:paper author:Ling Yin
+E06-3007 | Lexicalising Word Order Constraints for Implemented Linearisation Grammar | http://www.aclweb.org/anthology/E/E06/E06-3007.pdf | category:paper author:Yo Sato
+E06-3008 | Towards Robust Animacy Classification Using Morphosyntactic Distributional Features | http://www.aclweb.org/anthology/E/E06/E06-3008.pdf | category:paper author:Lilja Øvrelid
+E06-3009 | Example-Based Metonymy Recognition for Proper Nouns | http://www.aclweb.org/anthology/E/E06/E06-3009.pdf | category:paper author:Yves Peirsman

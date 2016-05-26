@@ -1,257 +1,257 @@
-I08-1001 | A Lemmatization Method for Modern Mongolian and its Application to Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-1001.pdf | author:Badam-Osor Khaltar; Atsushi Fujii
-I08-1002 | An Empirical Comparison of Goodness Measures for Unsupervised Chinese Word Segmentation with a Unified Framework | http://www.aclweb.org/anthology/I/I08/I08-1002.pdf | author:Hai Zhao; Chunyu Kit
-I08-1003 | A Hybrid Approach to the Induction of Underlying Morphology | http://www.aclweb.org/anthology/I/I08/I08-1003.pdf | author:Michael Tepper; Fei Xia
-I08-1004 | Context-Sensitive Convolution Tree Kernel for Pronoun Resolution | http://www.aclweb.org/anthology/I/I08/I08-1004.pdf | author:GuoDong Zhou; Fang Kong; QiaoMing Zhu
-I08-1005 | Semi-Supervised Learning for Relation Extraction | http://www.aclweb.org/anthology/I/I08/I08-1005.pdf | author:GuoDong Zhou; JunHui Li; LongHua Qian; QiaoMing Zhu
-I08-1006 | Story Link Detection based on Dynamic Information Extending | http://www.aclweb.org/anthology/I/I08/I08-1006.pdf | author:Xiaoyan Zhang; Ting Wang; Huowang Chen
-I08-1007 | Orthographic Disambiguation Incorporating Transliterated Probability | http://www.aclweb.org/anthology/I/I08/I08-1007.pdf | author:Eiji Aramaki; Takeshi Imai; Kengo Miyo; Kazuhiko Ohe
-I08-1008 | Name Origin Recognition Using Maximum Entropy Model and Diverse Features | http://www.aclweb.org/anthology/I/I08/I08-1008.pdf | author:Min Zhang; Chengjie Sun; Haizhou Li; AiTi Aw; Chew Lim Tan; Xiaolong Wang
-I08-1009 | A More Discerning and Adaptable Multilingual Transliteration Mechanism for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-1009.pdf | author:Harshit Surana; Anil Kumar Singh
-I08-1010 | UCSG: A Wide Coverage Shallow Parsing System | http://www.aclweb.org/anthology/I/I08/I08-1010.pdf | author:G. Bharadwaja Kumar; Kavi Narayana Murthy
-I08-1011 | Memory-Inductive Categorial Grammar: An Approach to Gap Resolution in Analytic-Language Translation | http://www.aclweb.org/anthology/I/I08/I08-1011.pdf | author:Prachya Boonkwan; Thepchai Supnithi
-I08-1012 | Dependency Parsing with Short Dependency Relations in Unlabeled Data | http://www.aclweb.org/anthology/I/I08/I08-1012.pdf | author:Wenliang Chen; Daisuke Kawahara; Kiyotaka Uchimoto; Yujie Zhang; Hitoshi Isahara
-I08-1013 | An Effective Compositional Model for Lexical Alignment | http://www.aclweb.org/anthology/I/I08/I08-1013.pdf | author:BÃ©atrice Daille; Emmanuel Morin
-I08-1014 | Determining the Unithood of Word Sequences Using a Probabilistic Approach | http://www.aclweb.org/anthology/I/I08/I08-1014.pdf | author:Wilson Wong; Wei Liu; Mohammed Bennamoun
-I08-1015 | Lexical Chains as Document Features | http://www.aclweb.org/anthology/I/I08/I08-1015.pdf | author:Dinakar Jayarajan; Dipti Deodhare; Balaraman Ravindran
-I08-1016 | Entity-driven Rewrite for Multi-document Summarization | http://www.aclweb.org/anthology/I/I08/I08-1016.pdf | author:Ani Nenkova
-I08-1017 | A New Approach to Automatic Document Summarization | http://www.aclweb.org/anthology/I/I08/I08-1017.pdf | author:Xiaofeng Wu; Chengqing Zong
-I08-1018 | Generic Text Summarization Using Probabilistic Latent Semantic Indexing | http://www.aclweb.org/anthology/I/I08/I08-1018.pdf | author:Harendra Bhandari; Masashi Shimbo; Takahiko Ito; Yuji Matsumoto
-I08-1019 | Identifying Cross-Document Relations between Sentences | http://www.aclweb.org/anthology/I/I08/I08-1019.pdf | author:Yasunari Miyabe; Hiroya Takamura; Manabu Okumura
-I08-1020 | Experiments on Semantic-based Clustering for Cross-document Coreference | http://www.aclweb.org/anthology/I/I08/I08-1020.pdf | author:Horacio Saggion
-I08-1021 | Modeling Context in Scenario Template Creation | http://www.aclweb.org/anthology/I/I08/I08-1021.pdf | author:Long Qiu; Min-Yen Kan; Tat-Seng Chua
-I08-1022 | Cross Language Text Categorization Using a Bilingual Lexicon | http://www.aclweb.org/anthology/I/I08/I08-1022.pdf | author:Ke Wu; Xiaolin Wang; Bao-Liang Lu
-I08-1023 | Identify Temporal Websites Based on User Behavior Analysis | http://www.aclweb.org/anthology/I/I08/I08-1023.pdf | author:Yong Wang; Yiqun Liu; Min Zhang; Shaoping Ma; Liyun Ru
-I08-1024 | A Comparative Study for Query Translation using Linear Combination and Confidence Measure | http://www.aclweb.org/anthology/I/I08/I08-1024.pdf | author:Youssef Kadri; Jian-Yun Nie
-I08-1025 | TSUBAKI: An Open Search Engine Infrastructure for Developing New Information Access Methodology | http://www.aclweb.org/anthology/I/I08/I08-1025.pdf | author:Keiji Shinzato; Tomohide Shibata; Daisuke Kawahara; Chikara Hashimoto; Sadao Kurohashi
-I08-1026 | A Study on Effectiveness of Syntactic Relationship in Dependence Retrieval Model | http://www.aclweb.org/anthology/I/I08/I08-1026.pdf | author:Fan Ding; Bin Wang
-I08-1027 | Automatic Estimation of Word Significance oriented for Speech-based Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-1027.pdf | author:Takashi Shichiri; Hiroaki Nanjo; Takehiko Yoshimi
-I08-1028 | Rapid Prototyping of Robust Language Understanding Modules for Spoken Dialogue Systems | http://www.aclweb.org/anthology/I/I08/I08-1028.pdf | author:Yuichiro Fukubayashi; Kazunori Komatani; Mikio Nakano; Kotaro Funakoshi; Hiroshi Tsujino; Tetsuya Ogata; Hiroshi G. Okuno
-I08-1029 | Automatic Prosodic Labeling with Conditional Random Fields and Rich Acoustic Features | http://www.aclweb.org/anthology/I/I08/I08-1029.pdf | author:Gina-Anne Levow
-I08-1030 | Chinese Unknown Word Translation by Subword Re-segmentation | http://www.aclweb.org/anthology/I/I08/I08-1030.pdf | author:Ruiqiang Zhang; Eiichiro Sumita
-I08-1031 | Hypothesis Selection in Machine Transliteration: A Web Mining Approach | http://www.aclweb.org/anthology/I/I08/I08-1031.pdf | author:Jong-Hoon Oh; Hitoshi Isahara
-I08-1032 | What Prompts Translators to Modify Draft Translations? An Analysis of Basic Modification Patterns for Use in the Automatic Notification of Awkwardly Translated Text | http://www.aclweb.org/anthology/I/I08/I08-1032.pdf | author:Takeshi Abekawa; Kyo Kageura
-I08-1033 | Improving Word Alignment by Adjusting Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-1033.pdf | author:Ming-Hong Bai; Keh-Jiann Chen; Jason S. Chang
-I08-1034 | The Telling Tail: Signals of Success in Electronic Negotiation Texts | http://www.aclweb.org/anthology/I/I08/I08-1034.pdf | author:Marina Sokolova; Vivi Nastase; Stan Szpakowicz
-I08-1035 | Automatic Extraction of Briefing Templates | http://www.aclweb.org/anthology/I/I08/I08-1035.pdf | author:Dipanjan Das; Mohit Kumar; Alexander I. Rudnicky
-I08-1036 | Mining the Web for Relations between Digital Devices using a Probabilistic Maximum Margin Model | http://www.aclweb.org/anthology/I/I08/I08-1036.pdf | author:Oksana Yakhnenko; Barbara Rosario
-I08-1037 | Learning Patterns from the Web to Translate Named Entities for Cross Language Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-1037.pdf | author:Yu-Chun Wang; Richard Tzong-Han Tsai; Wen-Lian Hsu
-I08-1038 | Bootstrapping Both Product Features and Opinion Words from Chinese Customer Reviews with Cross-Inducing | http://www.aclweb.org/anthology/I/I08/I08-1038.pdf | author:Bo Wang; Houfeng Wang
-I08-1039 | Learning to Shift the Polarity of Words for Sentiment Classification | http://www.aclweb.org/anthology/I/I08/I08-1039.pdf | author:Daisuke Ikeda; Hiroya Takamura; Lev-Arie Ratinov; Manabu Okumura
-I08-1040 | Unsupervised Classification of Sentiment and Objectivity in Chinese Text | http://www.aclweb.org/anthology/I/I08/I08-1040.pdf | author:Taras Zagibalov; John Carroll
-I08-1041 | Using Roget's Thesaurus for Fine-grained Emotion Recognition | http://www.aclweb.org/anthology/I/I08/I08-1041.pdf | author:Saima Aman; Stan Szpakowicz
-I08-1042 | Heterogeneous Automatic MT Evaluation Through Non-Parametric Metric Combinations | http://www.aclweb.org/anthology/I/I08/I08-1042.pdf | author:JesÃºs GimÃ©nez; LluÃ­s MÃ¡rquez
-I08-1043 | Paraphrasing Depending on Bilingual Context Toward Generalization of Translation Knowledge | http://www.aclweb.org/anthology/I/I08/I08-1043.pdf | author:Young-Sook Hwang; Young-Kil Kim; Sangkyu Park
-I08-1044 | A Framework Based on Graphical Models with Logic for Chinese Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-1044.pdf | author:Xiaofeng Yu; Wai Lam; Shing-Kit Chan
-I08-1045 | A Hybrid Feature Set based Maximum Entropy Hindi Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-1045.pdf | author:Sujan Kumar Saha; Sudeshna Sarkar; Pabitra Mitra
-I08-1046 | An Eeffective Methods of Using Web Based Information for Relation Extraction | http://www.aclweb.org/anthology/I/I08/I08-1046.pdf | author:Stanley; Wai Keong Yong; Jian Su
-I08-1047 | Minimally Supervised Learning of Semantic Knowledge from Query Logs | http://www.aclweb.org/anthology/I/I08/I08-1047.pdf | author:Mamoru Komachi; Hisami Suzuki
-I08-1048 | Learning a Stopping Criterion for Active Learning for Word Sense Disambiguation and Text Classification | http://www.aclweb.org/anthology/I/I08/I08-1048.pdf | author:Jingbo Zhu; Huizhen Wang; Eduard Hovy
-I08-1049 | Multi-View Co-Training of Transliteration Model | http://www.aclweb.org/anthology/I/I08/I08-1049.pdf | author:Jin-Shea Kuo; Haizhou Li
-I08-1050 | Identifying Sections in Scientific Abstracts using Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-1050.pdf | author:Kenji Hirohata; Naoaki Okazaki; Sophia Ananiadou; Mitsuru Ishizuka
-I08-1051 | Formalising Multi-layer Corpora in OWL DL - Lexicon Modelling, Querying and Consistency Control | http://www.aclweb.org/anthology/I/I08/I08-1051.pdf | author:Aljoscha Burchardt; Sebastian PadÃ³; Dennis Spohr; Anette Frank; Ulrich Heid
-I08-1052 | Constructing Taxonomy of Numerative Classifiers for Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-1052.pdf | author:Kiyoaki Shirai; Takenobu Tokunaga; Chu-Ren Huang; Shu-Kai Hsieh; Tzu-Yi Kuo; Virach Sornlertlamvanich; Thatsanee Charoenporn
-I08-1053 | Translating Compounds by Learning Component Gloss Translation Models via Multiple Languages | http://www.aclweb.org/anthology/I/I08/I08-1053.pdf | author:Nikesh Garera; David Yarowsky
-I08-1054 | Answering Definition Questions via Temporally-Anchored Text Snippets | http://www.aclweb.org/anthology/I/I08/I08-1054.pdf | author:Marius Pasca
-I08-1055 | Corpus-based Question Answering for why-Questions | http://www.aclweb.org/anthology/I/I08/I08-1055.pdf | author:Ryuichiro Higashinaka; Hideki Isozaki
-I08-1056 | Cluster-Based Query Expansion for Statistical Question Answering | http://www.aclweb.org/anthology/I/I08/I08-1056.pdf | author:Lucian Vlad Lita; Jaime Carbonell
-I08-1057 | A Semantic Feature for Relation Recognition Using a Web-based Corpus | http://www.aclweb.org/anthology/I/I08/I08-1057.pdf | author:Chen-Ming Hung
-I08-1058 | Multilingual Text Entry using Automatic Language Detection | http://www.aclweb.org/anthology/I/I08/I08-1058.pdf | author:Yo Ehara; Kumiko Tanaka-Ishii
-I08-1059 | Using Contextual Speller Techniques and Language Modeling for ESL Error Correction | http://www.aclweb.org/anthology/I/I08/I08-1059.pdf | author:Michael Gamon; Jianfeng Gao; Chris Brockett; Alexandre Klementiev; William B. Dolan; Dmitriy Belenko; Lucy Vanderwende
-I08-1060 | Bilingual Synonym Identification with Spelling Variations | http://www.aclweb.org/anthology/I/I08/I08-1060.pdf | author:Takashi Tsunakawa; Jun'ichi Tsujii
-I08-1061 | Minimally Supervised Multilingual Taxonomy and Translation Lexicon Induction | http://www.aclweb.org/anthology/I/I08/I08-1061.pdf | author:Nikesh Garera; David Yarowsky
-I08-1062 | Japanese-Spanish Thesaurus Construction Using English as a Pivot | http://www.aclweb.org/anthology/I/I08/I08-1062.pdf | author:Jessica RamÃ­rez; Masayuki Asahara; Yuji Matsumoto
-I08-1063 | Automatic Identification of Rhetorical Roles using Conditional Random Fields for Legal Document Summarization | http://www.aclweb.org/anthology/I/I08/I08-1063.pdf | author:M. Saravanan; B. Ravindran; S. Raman
-I08-1064 | Projection-based Acquisition of a Temporal Labeller | http://www.aclweb.org/anthology/I/I08/I08-1064.pdf | author:Kathrin Spreyer; Anette Frank
-I08-1065 | Acquiring Event Relation Knowledge by Learning Cooccurrence Patterns and Fertilizing Cooccurrence Samples with Verbal Nouns | http://www.aclweb.org/anthology/I/I08/I08-1065.pdf | author:Shuya Abe; Kentaro Inui; Yuji Matsumoto
-I08-1066 | Refinements in BTG-based Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-1066.pdf | author:Deyi Xiong; Min Zhang; AiTi Aw; Haitao Mi; Qun Liu; Shouxun Lin
-I08-1067 | Simple Syntactic and Morphological Processing Can Help English-Hindi Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-1067.pdf | author:Ananthakrishnan Ramanathan; Jayprasad Hegde; Ritesh M. Shah; Pushpak Bhattacharyya; Sasikumar M
-I08-1068 | Statistical Machine Translation Models for Personalized Search | http://www.aclweb.org/anthology/I/I08/I08-1068.pdf | author:Rohini U; Vamshi Ambati; Vasudeva Varma
-I08-1069 | Repurposing Theoretical Linguistic Data for Tool Development and Search | http://www.aclweb.org/anthology/I/I08/I08-1069.pdf | author:Fei Xia; William D. Lewis
-I08-1070 | Computing Paraphrasability of Syntactic Variants Using Web Snippets | http://www.aclweb.org/anthology/I/I08/I08-1070.pdf | author:Atsushi Fujita; Satoshi Sato
-I08-1071 | Augmenting Wikipedia with Named Entity Tags | http://www.aclweb.org/anthology/I/I08/I08-1071.pdf | author:Wisam Dakka; Silviu Cucerzan
-I08-1072 | Context Feature Selection for Distributional Similarity | http://www.aclweb.org/anthology/I/I08/I08-1072.pdf | author:Masato Hagiwara; Yasuhiro Ogawa; Katsuhiko Toyama
-I08-1073 | Gloss-Based Semantic Similarity Metrics for Predominant Sense Acquisition | http://www.aclweb.org/anthology/I/I08/I08-1073.pdf | author:Ryu Iida; Diana McCarthy; Rob Koeling
-I08-1074 | Benchmarking Noun Compound Interpretation | http://www.aclweb.org/anthology/I/I08/I08-1074.pdf | author:Su Nam Kim; Timothy Baldwin
-I08-2075 | Vaakkriti: Sanskrit Tokenizer | http://www.aclweb.org/anthology/I/I08/I08-2075.pdf | author:Aasish Pappu; Ratna Sanyal
-I08-2076 | A Bottom Up approach to Persian Stemming | http://www.aclweb.org/anthology/I/I08/I08-2076.pdf | author:Amir Azim Sharifloo; Mehrnoush Shamsfard
-I08-2077 | Named Entity Recognition in Bengali: A Conditional Random Field Approach | http://www.aclweb.org/anthology/I/I08/I08-2077.pdf | author:Asif Ekbal; Rejwanul Haque; Sivaji Bandyopadhyay
-I08-2078 | An Online Cascaded Approach to Biomedical Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-2078.pdf | author:Shing-Kit Chan; Wai Lam; Xiaofeng Yu
-I08-2079 | Automatic Rule Acquisition for Chinese Intra-chunk Relations | http://www.aclweb.org/anthology/I/I08/I08-2079.pdf | author:Qiang Zhou
-I08-2080 | Japanese Named Entity Recognition Using Structural Natural Language Processing | http://www.aclweb.org/anthology/I/I08/I08-2080.pdf | author:Ryohei Sasano; Sadao Kurohashi
-I08-2081 | Dimensionality Reduction with Multilingual Resource | http://www.aclweb.org/anthology/I/I08/I08-2081.pdf | author:YingJu Xia; Hao Yu; Gang Zou
-I08-2082 | A Web-based English Proofing System for English as a Second Language Users | http://www.aclweb.org/anthology/I/I08/I08-2082.pdf | author:Xing Yi; Jianfeng Gao; William B. Dolan
-I08-2083 | Analysis of Intention in Dialogues Using Category Trees and Its Application to Advertisement Recommendation | http://www.aclweb.org/anthology/I/I08/I08-2083.pdf | author:Hung-Chi Huang; Hsin-Hsi Chen; Ming-Shun Lin
-I08-2084 | Term Extraction Through Unithood and Termhood Unification | http://www.aclweb.org/anthology/I/I08/I08-2084.pdf | author:Thuy Vu; AiTi Aw; Min Zhang
-I08-2085 | Search Result Clustering Using Label Language Model | http://www.aclweb.org/anthology/I/I08/I08-2085.pdf | author:Yeha Lee; Seung-Hoon Na; Jong-Hyeok Lee
-I08-2086 | Effects of Related Term Extraction in Transliteration into Chinese | http://www.aclweb.org/anthology/I/I08/I08-2086.pdf | author:HaiXiang Huang; Atsushi Fujii
-I08-2087 | A Structured Prediction Approach for Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-2087.pdf | author:Dakun Zhang; Le Sun; Wenbo Li
-I08-2088 | Method of Selecting Training Data to Build a Compact and Efficient Translation Model | http://www.aclweb.org/anthology/I/I08/I08-2088.pdf | author:Keiji Yasuda; Ruiqiang Zhang; Hirofumi Yamamoto; Eiichiro Sumita
-I08-2089 | Large and Diverse Language Models for Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-2089.pdf | author:Holger Schwenk; Philipp Koehn
-I08-2090 | A Linguistic and Navigational Knowledge Approach to Text Navigation | http://www.aclweb.org/anthology/I/I08/I08-2090.pdf | author:Javier Couto; Jean-Luc Minel
-I08-2091 | Synset Assignment for Bi-lingual Dictionary with Limited Resource | http://www.aclweb.org/anthology/I/I08/I08-2091.pdf | author:Virach Sornlertlamvanich; Thatsanee Charoenporn; Chumpol Mokarat; Hitoshi Isahara; Hammam Riza; Purev Jaimai
-I08-2092 | Ranking Words for Building a Japanese Defining Vocabulary | http://www.aclweb.org/anthology/I/I08/I08-2092.pdf | author:Tomoya Noro; Takehiro Tokuda
-I08-2093 | Automatically Identifying Computationally Relevant Typological Features | http://www.aclweb.org/anthology/I/I08/I08-2093.pdf | author:William D. Lewis; Fei Xia
-I08-2094 | Automatic Paraphrasing of Japanese Functional Expressions Using a Hierarchically Organized Dictionary | http://www.aclweb.org/anthology/I/I08/I08-2094.pdf | author:Suguru Matsuyoshi; Satoshi Sato
-I08-2095 | Generation of Referring Expression Using Prefix Tree Structure | http://www.aclweb.org/anthology/I/I08/I08-2095.pdf | author:Sibabrata Paladhi; Sivaji Bandyopadhyay
-I08-2096 | Coverage-based Evaluation of Parser Generalizability | http://www.aclweb.org/anthology/I/I08/I08-2096.pdf | author:Tuomo Kakkonen; Erkki Sutinen
-I08-2097 | Learning Reliability of Parses for Domain Adaptation of Dependency Parsing | http://www.aclweb.org/anthology/I/I08/I08-2097.pdf | author:Daisuke Kawahara; Kiyotaka Uchimoto
-I08-2098 | Resolving Ambiguities of Chinese Conjunctive Structures by Divide-and-conquer Approaches | http://www.aclweb.org/anthology/I/I08/I08-2098.pdf | author:Duen-Chi Yang; Yu-Ming Hsieh; Keh-Jiann Chen
-I08-2099 | Dependency Annotation Scheme for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-2099.pdf | author:Rafiya Begum; Samar Husain; Arun Dhwaj; Dipti Misra Sharma; Lakshmi Bai; Rajeev Sangal
-I08-2100 | Non-Factoid Japanese Question Answering through Passage Retrieval that Is Weighted Based on Types of Answers | http://www.aclweb.org/anthology/I/I08/I08-2100.pdf | author:Masaki Murata; Sachiyo Tsukawaki; Toshiyuki Kanamaru; Qing Ma; Hitoshi Isahara
-I08-2101 | A Multi-Document Multi-Lingual Automatic Summarization System | http://www.aclweb.org/anthology/I/I08/I08-2101.pdf | author:Mohamad Ali Honarpisheh; Gholamreza Ghassem-Sani; Ghassem Mirroshandel
-I08-2102 | Summarization by Analogy: An Example-based Approach for News Articles | http://www.aclweb.org/anthology/I/I08/I08-2102.pdf | author:Megumi Makino; Kazuhide Yamamoto
-I08-2103 | Sentence Ordering based on Cluster Adjacency in Multi-Document Summarization | http://www.aclweb.org/anthology/I/I08/I08-2103.pdf | author:Donghong Ji; Yu Nie
-I08-2104 | Statistical Machine Translation based Passage Retrieval for Cross-Lingual Question Answering | http://www.aclweb.org/anthology/I/I08/I08-2104.pdf | author:Tomoyosi Akiba; Kei Shimizu; Atsushi Fujii
-I08-2105 | Unsupervised All-words Word Sense Disambiguation with Grammatical Dependencies | http://www.aclweb.org/anthology/I/I08/I08-2105.pdf | author:Vivi Nastase
-I08-2106 | Syntactic and Semantic Frames in PrepNet | http://www.aclweb.org/anthology/I/I08/I08-2106.pdf | author:Patrick Saint-Dizier
-I08-2107 | Automatic Classification of English Verbs Using Rich Syntactic Features | http://www.aclweb.org/anthology/I/I08/I08-2107.pdf | author:Lin Sun; Anna Korhonen; Yuval Krymolowski
-I08-2108 | MRD-based Word Sense Disambiguation: Further Extending Lesk | http://www.aclweb.org/anthology/I/I08/I08-2108.pdf | author:Timothy Baldwin; Su Nam Kim; Francis Bond; Sanae Fujita; David Martinez; Takaaki Tanaka
-I08-2109 | Fast Computing Grammar-driven Convolution Tree Kernel for Semantic Role Labeling | http://www.aclweb.org/anthology/I/I08/I08-2109.pdf | author:Wanxiang Che; Min Zhang; AiTi Aw; Chew Lim Tan; Ting Liu; Sheng Li
-I08-2110 | SYNGRAPH: A Flexible Matching Method based on Synonymous Expression Extraction from an Ordinary Dictionary and a Web Corpus | http://www.aclweb.org/anthology/I/I08/I08-2110.pdf | author:Tomohide Shibata; Michitaka Odani; Jun Harashima; Takashi Oonishi; Sadao Kurohashi
-I08-2111 | Annotation of Multiword Expressions in the Prague Dependency Treebank | http://www.aclweb.org/anthology/I/I08/I08-2111.pdf | author:Eduard BejÄek; Pavel StraÅÃ¡k; Pavel Schlesinger
-I08-2112 | Learning Named Entity Hyponyms for Question Answering | http://www.aclweb.org/anthology/I/I08/I08-2112.pdf | author:Paul McNamee; Rion Snow; Patrick Schone; James Mayfield
-I08-2113 | Errgrams -- A Way to Improving ASR for Highly Inflected Dravidian Languages | http://www.aclweb.org/anthology/I/I08/I08-2113.pdf | author:Kamadev Bhanuprasad; Mats Svenson
-I08-2114 | Noise as a Tool for Spoken Language Identification | http://www.aclweb.org/anthology/I/I08/I08-2114.pdf | author:Sunita Maithani; J.S. Rawat
-I08-2115 | Identifying Real or Fake Articles: Towards better Language Modeling | http://www.aclweb.org/anthology/I/I08/I08-2115.pdf | author:Sameer Badaskar; Sachin Agarwal; Shilpa Arora
-I08-2116 | Multi-label Text Categorization with Model Combination based on F1-score Maximization | http://www.aclweb.org/anthology/I/I08/I08-2116.pdf | author:Akinori Fujino; Hideki Isozaki; Jun Suzuki
-I08-2117 | An Experimental Comparison of the Voted Perceptron and Support Vector Machines in Japanese Analysis Tasks | http://www.aclweb.org/anthology/I/I08/I08-2117.pdf | author:Manabu Sassano
-I08-2118 | Learning Decision Lists with Known Rules for Text Mining | http://www.aclweb.org/anthology/I/I08/I08-2118.pdf | author:Venkatesan Chakravarthy; Sachindra Joshi; Ganesh Ramakrishnan; Shantanu Godbole; Sreeram Balakrishnan
-I08-2119 | A Re-examination of Dependency Path Kernels for Relation Extraction | http://www.aclweb.org/anthology/I/I08/I08-2119.pdf | author:Mengqiu Wang
-I08-2120 | Mining Chinese-English Parallel Corpora from the Web | http://www.aclweb.org/anthology/I/I08/I08-2120.pdf | author:Bo Li; Juan Liu
-I08-2121 | Fast Duplicated Documents Detection using Multi-level Prefix-filter | http://www.aclweb.org/anthology/I/I08/I08-2121.pdf | author:Kenji Tateishi; Dai Kusui
-I08-2122 | Towards Data and Goal Oriented Analysis: Tool Inter-operability and Combinatorial Comparison | http://www.aclweb.org/anthology/I/I08/I08-2122.pdf | author:Yoshinobu Kano; Ngan Nguyen; Rune SÃ¦tre; Kazuhiro Yoshida; Keiichiro Fukamachi; Yusuke Miyao; Yoshimasa Tsuruoka; Sophia Ananiadou; Jun'ichi Tsujii
-I08-2123 | A Co-occurrence Graph-based Approach for Personal Name Alias Extraction from Anchor Texts | http://www.aclweb.org/anthology/I/I08/I08-2123.pdf | author:Danushka Bollegala; Yutaka Matsuo; Mitsuru Ishizuka
-I08-2124 | Towards Automated Semantic Analysis on Biomedical Research Articles | http://www.aclweb.org/anthology/I/I08/I08-2124.pdf | author:Donghui Feng; Gully Burns; Jingbo Zhu; Eduard Hovy
-I08-2125 | Large Scale Diagnostic Code Classification for Medical Patient Records | http://www.aclweb.org/anthology/I/I08/I08-2125.pdf | author:Lucian Vlad Lita; Shipeng Yu; Stefan Niculescu; Jinbo Bi
-I08-2126 | Hacking Wikipedia for Hyponymy Relation Acquisition | http://www.aclweb.org/anthology/I/I08/I08-2126.pdf | author:Asuka Sumida; Kentaro Torisawa
-I08-2127 | A Discriminative Approach to Japanese Abbreviation Extraction | http://www.aclweb.org/anthology/I/I08/I08-2127.pdf | author:Naoaki Okazaki; Mitsuru Ishizuka; Jun'ichi Tsujii
-I08-2128 | Linguistic Interpretation of Emotions for Affect Sensing from Text | http://www.aclweb.org/anthology/I/I08/I08-2128.pdf | author:Mostafa Al Masum Shaikh; Helmut Prendinger; Mitsuru Ishizuka
-I08-2129 | How to Take Advantage of the Limitations with Markov Clustering?--The Foundations of Branching Markov Clustering (BMCL) | http://www.aclweb.org/anthology/I/I08/I08-2129.pdf | author:Hiroyuki Akama; Maki Miyake; Jaeyoung Jung
-I08-2130 | Combining Context Features by Canonical Belief Network for Chinese Part-Of-Speech Tagging | http://www.aclweb.org/anthology/I/I08/I08-2130.pdf | author:Hongzhi Xu; Chunping Li
-I08-2131 | Language Independent Text Correction using Finite State Automata | http://www.aclweb.org/anthology/I/I08/I08-2131.pdf | author:Ahmed Hassan; Sara Noeman; Hany Hassan
-I08-2132 | Semantic Role Labeling of Chinese Using Transductive SVM and Semantic Heuristics | http://www.aclweb.org/anthology/I/I08/I08-2132.pdf | author:Yaodong Chen; Ting Wang; Huowang Chen; Xishan Xu
-I08-2133 | A Comparative Study of Mixture Models for Automatic Topic Segmentation of Multiparty Dialogues | http://www.aclweb.org/anthology/I/I08/I08-2133.pdf | author:Maria Georgescul; Alexander Clark; Susan Armstrong
-I08-2134 | Exploiting Unlabeled Text to Extract New Words of Different Semantic Transparency for Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-2134.pdf | author:Richard Tzong-Han Tsai; Hsi-Chuan Hung
-I08-2135 | Social Network Inspired Models of NLP and Language Evolution | http://www.aclweb.org/anthology/I/I08/I08-2135.pdf | author:Monojit Choudhury; Animesh Mukherjee; Niloy Ganguly
-I08-2136 | How to Add a New Language on the NLP Map: Building Resources and Tools for Languages with Scarce Resources | http://www.aclweb.org/anthology/I/I08/I08-2136.pdf | author:Rada Mihalcea; Vivi Nastase
-I08-2137 | Introduction to Text Summarization and Other Information Access Technologies | http://www.aclweb.org/anthology/I/I08/I08-2137.pdf | author:Horacio Saggion
-I08-2138 | A Punjabi Grammar Checker | http://www.aclweb.org/anthology/I/I08/I08-2138.pdf | author:Mandeep Singh Gill; Gurpreet Singh Lehal; Shiv Sharma Joshi
-I08-2139 | Netgraph â Making Searching in Treebanks Easy | http://www.aclweb.org/anthology/I/I08/I08-2139.pdf | author:JiÅÃ­ MÃ­rovskÃ½
-I08-2140 | Global Health Monitor - A Web-based System for Detecting and Mapping Infectious Diseases | http://www.aclweb.org/anthology/I/I08/I08-2140.pdf | author:Son Doan; QuocHung-Ngo; Ai Kawazoe; Nigel Collier
-I08-2141 | A Mechanism to Provide Language-Encoding Support and an NLP Friendly Editor | http://www.aclweb.org/anthology/I/I08/I08-2141.pdf | author:Anil Kumar Singh
-I08-2142 | NLP Applications of Sinhala: TTS & OCR | http://www.aclweb.org/anthology/I/I08/I08-2142.pdf | author:Ruvan Weerasinghe; Asanka Wasala; Dulip Herath; Viraj Welgama
-I08-2143 | POLLy: A Conversational System that uses a Shared Representation to Generate Action and Social Language | http://www.aclweb.org/anthology/I/I08/I08-2143.pdf | author:Swati Gupta; Marilyn A. Walker; Daniela M. Romano
-I08-2144 | Cross Lingual Information Access System for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-2144.pdf | author:CLIA Consortium
-I08-2145 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-2145.pdf | author:
-I08-3001 | Invited Talk: Building Language Resources: Ways to move forward | http://www.aclweb.org/anthology/I/I08/I08-3001.pdf | author:Anne David; Micheal Maxwell
-I08-3002 | Invited Talk: Cross Language Resource Sharing | http://www.aclweb.org/anthology/I/I08/I08-3002.pdf | author:Virach Sornlertlamvanich
-I08-3003 | Invited Talk: Breaking the Zipfian Barrier of NLP | http://www.aclweb.org/anthology/I/I08/I08-3003.pdf | author:Monojit Choudhury
-I08-3004 | Natural Language Processing for Less Privileged Languages: Where do we come from? Where are we going? | http://www.aclweb.org/anthology/I/I08/I08-3004.pdf | author:Anil Kumar Singh
-I08-3005 | KUI: an ubiquitous tool for collective intelligence development | http://www.aclweb.org/anthology/I/I08/I08-3005.pdf | author:Thatsanee Charoenporn; Virach Sornlertlamvanich; Hitoshi Isahara; Kergrit Robkop
-I08-3006 | Prototype Machine Translation System From Text-To-Indian Sign Language | http://www.aclweb.org/anthology/I/I08/I08-3006.pdf | author:Tirthankar Dasgupta; Sandipan Dandpat; Anupam Basu
-I08-3007 | Joint Grammar Development by Linguists and Computer Scientists | http://www.aclweb.org/anthology/I/I08/I08-3007.pdf | author:Michael Maxwell; Anne David
-I08-3008 | Cross-Language Parser Adaptation between Related Languages | http://www.aclweb.org/anthology/I/I08/I08-3008.pdf | author:Daniel Zeman; Philip Resnik
-I08-3009 | SriShell Primo: A Predictive Sinhala Text Input System | http://www.aclweb.org/anthology/I/I08/I08-3009.pdf | author:Sandeva Goonetilleke; Yoshihiko Hayashi; Yuichi Itoh; Fumio Kishino
-I08-3010 | A Rule-based Syllable Segmentation of Myanmar Text | http://www.aclweb.org/anthology/I/I08/I08-3010.pdf | author:Zin Maung Maung; Yoshiki Mikami
-I08-3011 | Strategies for sustainable MT for Basque: incremental design, reusability, standardization and open-source | http://www.aclweb.org/anthology/I/I08/I08-3011.pdf | author:I. Alegria; X. Arregi; X. Artola; A. Diaz de Ilarraza; G. Labaka; M. Lersundi; A. Mayor; K. Sarasola
-I08-3012 | Design of a Rule-based Stemmer for Natural Language Text in Bengali | http://www.aclweb.org/anthology/I/I08/I08-3012.pdf | author:Sandipan Sarkar; Sivaji Bandyopadhyay
-I08-3013 | Finite State Solutions For Reduplication In Kinyarwanda Language | http://www.aclweb.org/anthology/I/I08/I08-3013.pdf | author:Jackson Muhirwe; Trond Trosterud
-I08-3014 | An Optimal Order of Factors for the Computational Treatment of Personal Anaphoric Devices in Urdu Discourse | http://www.aclweb.org/anthology/I/I08/I08-3014.pdf | author:Mohammad Naveed Ali; M. A. Khan; Muhammad Aamir Khan
-I08-3015 | Morphology Driven Manipuri POS Tagger | http://www.aclweb.org/anthology/I/I08/I08-3015.pdf | author:Thoudam Doren Singh; Sivaji Bandyopadhyay
-I08-3016 | Acharya - A Text Editor and Framework for working with Indic Scripts | http://www.aclweb.org/anthology/I/I08/I08-3016.pdf | author:Krishnakumar V; Indrani Roy
-I08-3017 | Implementing a Speech Recognition System Interface for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-3017.pdf | author:R.K. Aggarwal; M. Dave
-I08-3018 | Indigenous Languages of Indonesia: Creating Language Resources for Language Preservation | http://www.aclweb.org/anthology/I/I08/I08-3018.pdf | author:Hammam Riza
-I08-3019 | Part-Of-Speech Tagging for Gujarati Using Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-3019.pdf | author:Chirag Patel; Karthik Gali
-I08-3020 | Speech to speech machine translation: Biblical chatter from Finnish to English | http://www.aclweb.org/anthology/I/I08/I08-3020.pdf | author:David Ellis; Mathias Creutz; Timo Honkela; Mikko Kurimo
-I08-4001 | An Example-based Decoder for Spoken Language Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-4001.pdf | author:Zhou-Jun Li; Wen-Han Chao; Yue-Xin Chen
-I08-4002 | Automatic Extraction of English-Chinese Transliteration Pairs using Dynamic Window and Tokenizer | http://www.aclweb.org/anthology/I/I08/I08-4002.pdf | author:Chengguo Jin; Seung-Hoon Na; Dong-Il Kim; Jong-Hyeok Lee
-I08-4003 | Mining Transliterations from Web Query Results: An Incremental Approach | http://www.aclweb.org/anthology/I/I08/I08-4003.pdf | author:Jin-Shea Kuo; Haizhou Li; Chih-Lung Lin
-I08-4004 | An Effective Hybrid Machine Learning Approach for Coreference Resolution | http://www.aclweb.org/anthology/I/I08/I08-4004.pdf | author:Feiliang Ren; Jingbo Zhu
-I08-4005 | Use of Event Types for Temporal Relation Identification in Chinese Text | http://www.aclweb.org/anthology/I/I08/I08-4005.pdf | author:Yuchang Cheng; Masayuki Asahara; Yuji Matsumoto
-I08-4006 | Chinese Word Sense Disambiguation with PageRank and HowNet | http://www.aclweb.org/anthology/I/I08/I08-4006.pdf | author:Jinghua Wang; Jianyi Liu; Ping Zhang
-I08-4007 | Stochastic Dependency Parsing Based on A* Admissible Search | http://www.aclweb.org/anthology/I/I08/I08-4007.pdf | author:Bor-shen Lin
-I08-4008 | Analyzing Chinese Synthetic Words with Tree-based Information and a Survey on Chinese Morphologically Derived Words | http://www.aclweb.org/anthology/I/I08/I08-4008.pdf | author:Jia Lu; Masayuki Asahara; Yuji Matsumoto
-I08-4009 | Which Performs Better on In-Vocabulary Word Segmentation: Based on Word or Character? | http://www.aclweb.org/anthology/I/I08/I08-4009.pdf | author:Zhenxing Wang; Changning Huang; Jingbo Zhu
-I08-4010 | The Fourth International Chinese Language Processing Bakeoff: Chinese Word Segmentation, Named Entity Recognition and Chinese POS Tagging | http://www.aclweb.org/anthology/I/I08/I08-4010.pdf | author:Guangjin Jin; Xiao Chen
-I08-4011 | A Two-Stage Approach to Chinese Part-of-Speech Tagging | http://www.aclweb.org/anthology/I/I08/I08-4011.pdf | author:Aitao Chen; Ya Zhang; Gordon Sun
-I08-4012 | NOKIA Research Center Beijing Chinese Word Segmentation System for the SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4012.pdf | author:Jiang Li; Rile Hu; Guohua Zhang; Yuezhong Tang; Zhanjiang Song; Xia Wang
-I08-4013 | Chinese Word Segmentation and Named Entity Recognition Based on Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-4013.pdf | author:Xinnian Mao; Yuan Dong; Saike He; Sencheng Bao; Haila Wang
-I08-4014 | BUPT Systems in the SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4014.pdf | author:Ying Qin; Caixia Yuan; Jiashen Sun; Xiaojie Wang
-I08-4015 | The Character-based CRF Segmenter of MSRA&NEU for the 4th Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4015.pdf | author:Zhenxing Wang; Changning Huang; Jingbo Zhu
-I08-4016 | Chinese NER Using CRFs and Logic for the Fourth SIGHAN Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4016.pdf | author:Xiaofeng Yu; Wai Lam; Shing-Kit Chan; Yiu Kei Wu; Bo Chen
-I08-4017 | Unsupervised Segmentation Helps Supervised Learning of Character Tagging for Word Segmentation and Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-4017.pdf | author:Hai Zhao; Chunyu Kit
-I08-4018 | An Agent-Based Approach to Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-4018.pdf | author:Samuel W.K. Chan; Mickey W.C. Chong
-I08-4019 | Nanjing Normal University Segmenter for the Fourth SIGHAN Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4019.pdf | author:Xiaohe Chen; Bin Li; Junzhi Lu; Hongdong Nian; Xuri Tang
-I08-4020 | Two Step Chinese Named Entity Recognition Based on Conditional Random Fields Models | http://www.aclweb.org/anthology/I/I08/I08-4020.pdf | author:Yuanyong Feng; Ruihong Huang; Le Sun
-I08-4021 | A Morpheme-based Part-of-Speech Tagger for Chinese | http://www.aclweb.org/anthology/I/I08/I08-4021.pdf | author:Guohong Fu; Jonathan J. Webster
-I08-4022 | Chinese Named Entity Recognition and Word Segmentation Based on Character | http://www.aclweb.org/anthology/I/I08/I08-4022.pdf | author:Jingzhou He; Houfeng Wang
-I08-4023 | HMM and CRF Based Hybrid Model for Chinese Lexical Analysis | http://www.aclweb.org/anthology/I/I08/I08-4023.pdf | author:Degen Huang; Xiao Sun; Shidou Jiao; Lishuang Li; Zhuoye Ding; Ru Wan
-I08-4024 | Chinese Tagging Based on Maximum Entropy Model | http://www.aclweb.org/anthology/I/I08/I08-4024.pdf | author:Ka Seng Leong; Fai Wong; Yiping Li; Ming Chui Dong
-I08-4025 | Training a Perceptron with Global and Local Features for Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-4025.pdf | author:Dong Song; Anoop Sarkar
-I08-4026 | A Study of Chinese Lexical Analysis Based on Discriminative Models | http://www.aclweb.org/anthology/I/I08/I08-4026.pdf | author:Guang-Lu Sun; Cheng-Jie Sun; Ke Sun; Xiao-Long Wang
-I08-4027 | Word Boundary Token Model for the SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4027.pdf | author:Jia-Lin Tsai
-I08-4028 | An Improved CRF based Chinese Language Processing System for SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4028.pdf | author:Xihong Wu; Xiaojun Lin; Xinhao Wang; Chunyao Wu; Yaozhong Zhang; Dianhai Yu
-I08-4029 | Description of the NCU Chinese Word Segmentation and Part-of-Speech Tagging for SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4029.pdf | author:Yu-Chieh Wu; Jie-Chi Yang; Yue-Shi Lee
-I08-4030 | CRF-based Hybrid Model for Word Segmentation, NER and even POS Tagging | http://www.aclweb.org/anthology/I/I08/I08-4030.pdf | author:Zhiting Xu; Xian Qian; Yuejie Zhang; Yaqian Zhou
-I08-4031 | CRFs-Based Named Entity Recognition Incorporated with Heuristic Entity List Searching | http://www.aclweb.org/anthology/I/I08/I08-4031.pdf | author:Fan Yang; Jun Zhao; Bo Zou
-I08-4032 | A Chinese Word Segmentation System Based on Cascade Model | http://www.aclweb.org/anthology/I/I08/I08-4032.pdf | author:Jianfeng Zhang; Jiaheng Zheng; Hu Zhang; Hongye Tan
-I08-4033 | Achilles: NiCT/ATR Chinese Morphological Analyzer for the Fourth Sighan Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4033.pdf | author:Ruiqiang Zhang; Eiichiro Sumita
-I08-4034 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-4034.pdf | author:
-I08-5001 | Invited Talk: Named Entity Recognition: Different Approaches | http://www.aclweb.org/anthology/I/I08/I08-5001.pdf | author:Sobha L
-I08-5002 | Invited Talk: Multilingual Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-5002.pdf | author:Sivaji Bandyopadhyay
-I08-5003 | Named Entity Recognition for South and South East Asian Languages: Taking Stock | http://www.aclweb.org/anthology/I/I08/I08-5003.pdf | author:Anil Kumar Singh
-I08-5004 | A Hybrid Named Entity Recognition System for South and South East Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-5004.pdf | author:Sujan Kumar Saha; Sanjay Chatterji; Sandipan Dandapat; Sudeshna Sarkar; Pabitra Mitra
-I08-5005 | Aggregating Machine Learning and Rule Based Heuristics for Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-5005.pdf | author:Karthik Gali; Harshit Surana; Ashwini Vaidya; Praneeth Shishtla; Dipti Misra Sharma
-I08-5006 | Language Independent Named Entity Recognition in Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-5006.pdf | author:Asif Ekbal; Rejwanul Haque; Amitava Das; Venkateswarlu Poka; Sivaji Bandyopadhyay
-I08-5007 | Named Entity Recognition for Telugu | http://www.aclweb.org/anthology/I/I08/I08-5007.pdf | author:P Srikanth; Kavi Narayana Murthy
-I08-5008 | Bengali Named Entity Recognition Using Support Vector Machine | http://www.aclweb.org/anthology/I/I08/I08-5008.pdf | author:Asif Ekbal; Sivaji Bandyopadhyay
-I08-5009 | Domain Focused Named Entity Recognizer for Tamil Using Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-5009.pdf | author:Vijayakrishna R; Sobha L
-I08-5010 | A Character n-gram Based Approach for Improved Recall in Indian Language NER | http://www.aclweb.org/anthology/I/I08/I08-5010.pdf | author:Praneeth M Shishtla; Prasad Pingali; Vasudeva Varma
-I08-5011 | An Experiment on Automatic Detection of Named Entities in Bangla | http://www.aclweb.org/anthology/I/I08/I08-5011.pdf | author:Bidyut Baran Chaudhuri; Suvankar Bhattacharya
-I08-5012 | Hybrid Named Entity Recognition System for South and South East Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-5012.pdf | author:Praveen P; Ravi Kiran V
-I08-5013 | Named Entity Recognition for South Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-5013.pdf | author:Amit Goyal
-I08-5014 | Named Entity Recognition for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-5014.pdf | author:Animesh Nayan; B. Ravi Kiran Rao; Pawandeep Singh; Sudip Sanyal; Ratna Sanyal
-I08-5015 | Experiments in Telugu NER: A Conditional Random Field Approach | http://www.aclweb.org/anthology/I/I08/I08-5015.pdf | author:Praneeth M Shishtla; Karthik Gali; Prasad Pingali; Vasudeva Varma
-I08-6001 | The Effects of Language Relatedness on Multilingual Information Retrieval: A Case Study With Indo-European and Semitic Languages | http://www.aclweb.org/anthology/I/I08/I08-6001.pdf | author:Peter Chew; Ahmed Abdelali
-I08-6002 | Identifying Similar and Co-referring Documents Across Languages | http://www.aclweb.org/anthology/I/I08/I08-6002.pdf | author:Pattabhi R K Rao T; Sobha L
-I08-6003 | Finding parallel texts on the web using cross-language information retrieval | http://www.aclweb.org/anthology/I/I08/I08-6003.pdf | author:Achim Ruopp; Fei Xia
-I08-6004 | Some Experiments in Mining Named Entity Transliteration Pairs from Comparable Corpora | http://www.aclweb.org/anthology/I/I08/I08-6004.pdf | author:K Saravanan; A Kumaran
-I08-6005 | Domain-Specific Query Translation for Multilingual Information Access using Machine Translation Augmented With Dictionaries Mined from Wikipedia | http://www.aclweb.org/anthology/I/I08/I08-6005.pdf | author:Gareth Jones; Fabio Fantino; Eamonn Newman; Ying Zhang
-I08-6006 | Statistical Transliteration for Cross Language Information Retrieval using HMM alignment model and CRF | http://www.aclweb.org/anthology/I/I08/I08-6006.pdf | author:Prasad Pingali; Suryaganesh; Sreeharsha Yella; Vasudeva Varma
-I08-6007 | Script Independent Word Spotting in Multilingual Documents | http://www.aclweb.org/anthology/I/I08/I08-6007.pdf | author:Anurag Bhardwaj; Damien Jose; Venu Govindaraju
-I08-6008 | A Document Graph Based Query Focused Multi-Document Summarizer | http://www.aclweb.org/anthology/I/I08/I08-6008.pdf | author:Sibabrata Paladhi; Sivaji Bandyopadhyay
-I08-6009 | Hindi and Marathi to English Cross Language Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-6009.pdf | author:Manoj Kumar Chinnakotla; Sagar Ranadive; Om P. Damani; Pushpak Bhattacharyya
-I08-6010 | Bengali and Hindi to English CLIR Evaluation | http://www.aclweb.org/anthology/I/I08/I08-6010.pdf | author:Debasis Mandal; Sandipan Dandapat; Mayank Gupta; Pratyush Banerjee; Sudeshna Sarkar
-I08-6011 | Bengali, Hindi and Telugu to English Ad-hoc Bilingual Task | http://www.aclweb.org/anthology/I/I08/I08-6011.pdf | author:Sivaji Bandyopadhyay; Tapabrata Mondal; Sudip Kumar Naskar; Asif Ekbal; Rejwanul Haque; Srinivasa Rao Godavarthy
-I08-6012 | Cross-Lingual Information Retrieval System for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-6012.pdf | author:Jagadeesh Jagarlamudi; A Kumaran
-I08-6013 | Hindi and Telugu to English CLIR using Query Expansion | http://www.aclweb.org/anthology/I/I08/I08-6013.pdf | author:Prasad Pingali; Vasudeva Varma
-I08-6014 | FIRE: Forum for Information Retrieval Evaluation | http://www.aclweb.org/anthology/I/I08/I08-6014.pdf | author:Mandar Mitra; Prosenjit Majumdar
-I08-6015 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-6015.pdf | author:
-I08-7001 | Development of Bengali Named Entity Tagged Corpus and its Use in NER Systems | http://www.aclweb.org/anthology/I/I08/I08-7001.pdf | author:Asif Ekbal; Sivaji Bandyopadhyay
-I08-7002 | Gazetteer Preparation for Named Entity Recognition in Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-7002.pdf | author:Sujan Kumar Saha; Sudeshna Sarkar; Pabitra Mitra
-I08-7003 | Preliminary Chinese Term Classification for Ontology Construction | http://www.aclweb.org/anthology/I/I08/I08-7003.pdf | author:Gaoying Cui; Qin Lu; Wenjie Li
-I08-7004 | Technical Terminology in Asian Languages: Different Approaches to Adopting Engineering Terms | http://www.aclweb.org/anthology/I/I08/I08-7004.pdf | author:Makiko Matsuda; Tomoe Takahashi; Hiroki Goto; Yoshikazu Hayase; Robin Lee Nagano; Yoshiki Mikami
-I08-7005 | Selection of XML tag set for Myanmar National Corpus | http://www.aclweb.org/anthology/I/I08/I08-7005.pdf | author:Wunna Ko Ko; Thin Zar Phyo
-I08-7006 | Myanmar Word Segmentation using Syllable level Longest Matching | http://www.aclweb.org/anthology/I/I08/I08-7006.pdf | author:Hla Hla Htay; Kavi Narayana Murthy
-I08-7007 | The Link Structure of Language Communities and its Implication for Language-specific Crawling | http://www.aclweb.org/anthology/I/I08/I08-7007.pdf | author:Rizza Caminero; Yoshiki Mikami
-I08-7008 | A Multilingual Multimedia Indian Sign Language Dictionary Tool | http://www.aclweb.org/anthology/I/I08/I08-7008.pdf | author:Tirthankar Dasgupta; Sambit Shukla; Sandeep Kumar; Synny Diwakar; Anupam Basu
-I08-7009 | A Discourse Resource for Turkish: Annotating Discourse Connectives in the METU Corpus | http://www.aclweb.org/anthology/I/I08/I08-7009.pdf | author:Deniz Zeyrek; Bonnie Webber
-I08-7010 | Towards an Annotated Corpus of Discourse Relations in Hindi | http://www.aclweb.org/anthology/I/I08/I08-7010.pdf | author:Rashmi Prasad; Samar Husain; Dipti Sharma; Aravind Joshi
-I08-7011 | A Semantic Study on Yami Ontology in Traditional Songs | http://www.aclweb.org/anthology/I/I08/I08-7011.pdf | author:Yin-Sheng Tai; D. Victoria Rau; Meng-Chien Yang
-I08-7012 | Assessment and Development of POS Tag Set for Telugu | http://www.aclweb.org/anthology/I/I08/I08-7012.pdf | author:Rama Sree R.J.; Uma Maheswara Rao G; Madhu Murthy K.V.
-I08-7013 | Designing a Common POS-Tagset Framework for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-7013.pdf | author:Sankaran Baskaran; Kalika Bali; Tanmoy Bhattacharya; Pushpak Bhattacharyya; Girish Nath Jha; Rajendran S; Saravanan K; Sobha L; Subbarao K V
-I08-7014 | Resources Report on Languages of Indonesia | http://www.aclweb.org/anthology/I/I08/I08-7014.pdf | author:Hammam Riza
-I08-7015 | Confirmed Language Resource for Answering How Type Questions Developed by Using Mails Posted to a Mailing List | http://www.aclweb.org/anthology/I/I08/I08-7015.pdf | author:Ryo Nishimura; Yasuhiko Watanabe; Yoshihiro Okada
-I08-7016 | Corpus building for Mongolian language | http://www.aclweb.org/anthology/I/I08/I08-7016.pdf | author:Purev Jaimai; Odbayar Chimeddorj
-I08-7017 | Resources for Urdu Language Processing | http://www.aclweb.org/anthology/I/I08/I08-7017.pdf | author:Sarmad Hussain
-I08-7018 | Balanced Corpus of Contemporary Written Japanese | http://www.aclweb.org/anthology/I/I08/I08-7018.pdf | author:Kikuo Maekawa
-I08-7019 | A Basic Framework to Build a Test Collection for the Vietnamese Text Catergorization | http://www.aclweb.org/anthology/I/I08/I08-7019.pdf | author:Viet Hoang-Anh; Thu Dinh-Thi-Phuong; Thang Huynh-Quyet
-I08-7020 | Enhanced Tools for Online Collaborative Language Resource Development | http://www.aclweb.org/anthology/I/I08/I08-7020.pdf | author:Virach Sornlertlamvanich; Thatsanee Charoenporn; Suphanut Thayaboon; Chumpol Mokarat; Hitoshi Isahara
-I08-7021 | Japanese Effort Toward Sharing Text and Speech Corpora | http://www.aclweb.org/anthology/I/I08/I08-7021.pdf | author:Shuichi Itahashi; Koiti Hasida
-I08-7022 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-7022.pdf | author:
-I08-8001 | Transformation-based Sentence Splitting method for Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-8001.pdf | author:Jonghoon Lee; Donghyeon Lee; Gary Geunbae Lee
-I08-8002 | Speech-to-Speech Translation Activities in Thailand | http://www.aclweb.org/anthology/I/I08/I08-8002.pdf | author:Chai Wutiwiwatchai; Thepchai Supnithi; Krit Kosawat
-I08-8003 | Phrase-based Machine Transliteration | http://www.aclweb.org/anthology/I/I08/I08-8003.pdf | author:Andrew Finch; Eiichiro Sumita
-I08-8004 | Development of Indonesian Large Vocabulary Continuous Speech Recognition System within A-STAR Project | http://www.aclweb.org/anthology/I/I08/I08-8004.pdf | author:Sakriani Sakti; Eka Kelana; Hammam Riza; Shinsuke Sakai; Konstantin Markov; Satoshi Nakamura
-I08-8005 | Using Confidence Vector in Multi-Stage Speech Recognition | http://www.aclweb.org/anthology/I/I08/I08-8005.pdf | author:Hyungbae Jeon; Kyuwoong Hwang; Hoon Chung; Seunghi Kim; Jun Park; Yunkeun Lee
-I08-8006 | Toward Asian Speech Translation System: Developing Speech Recognition and Machine Translation for Indonesian Language | http://www.aclweb.org/anthology/I/I08/I08-8006.pdf | author:Hammam Riza; Oskar Riandi
+I08-1001 | A Lemmatization Method for Modern Mongolian and its Application to Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-1001.pdf | category:paper author:Badam-Osor Khaltar; Atsushi Fujii
+I08-1002 | An Empirical Comparison of Goodness Measures for Unsupervised Chinese Word Segmentation with a Unified Framework | http://www.aclweb.org/anthology/I/I08/I08-1002.pdf | category:paper author:Hai Zhao; Chunyu Kit
+I08-1003 | A Hybrid Approach to the Induction of Underlying Morphology | http://www.aclweb.org/anthology/I/I08/I08-1003.pdf | category:paper author:Michael Tepper; Fei Xia
+I08-1004 | Context-Sensitive Convolution Tree Kernel for Pronoun Resolution | http://www.aclweb.org/anthology/I/I08/I08-1004.pdf | category:paper author:GuoDong Zhou; Fang Kong; QiaoMing Zhu
+I08-1005 | Semi-Supervised Learning for Relation Extraction | http://www.aclweb.org/anthology/I/I08/I08-1005.pdf | category:paper author:GuoDong Zhou; JunHui Li; LongHua Qian; QiaoMing Zhu
+I08-1006 | Story Link Detection based on Dynamic Information Extending | http://www.aclweb.org/anthology/I/I08/I08-1006.pdf | category:paper author:Xiaoyan Zhang; Ting Wang; Huowang Chen
+I08-1007 | Orthographic Disambiguation Incorporating Transliterated Probability | http://www.aclweb.org/anthology/I/I08/I08-1007.pdf | category:paper author:Eiji Aramaki; Takeshi Imai; Kengo Miyo; Kazuhiko Ohe
+I08-1008 | Name Origin Recognition Using Maximum Entropy Model and Diverse Features | http://www.aclweb.org/anthology/I/I08/I08-1008.pdf | category:paper author:Min Zhang; Chengjie Sun; Haizhou Li; AiTi Aw; Chew Lim Tan; Xiaolong Wang
+I08-1009 | A More Discerning and Adaptable Multilingual Transliteration Mechanism for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-1009.pdf | category:paper author:Harshit Surana; Anil Kumar Singh
+I08-1010 | UCSG: A Wide Coverage Shallow Parsing System | http://www.aclweb.org/anthology/I/I08/I08-1010.pdf | category:paper author:G. Bharadwaja Kumar; Kavi Narayana Murthy
+I08-1011 | Memory-Inductive Categorial Grammar: An Approach to Gap Resolution in Analytic-Language Translation | http://www.aclweb.org/anthology/I/I08/I08-1011.pdf | category:paper author:Prachya Boonkwan; Thepchai Supnithi
+I08-1012 | Dependency Parsing with Short Dependency Relations in Unlabeled Data | http://www.aclweb.org/anthology/I/I08/I08-1012.pdf | category:paper author:Wenliang Chen; Daisuke Kawahara; Kiyotaka Uchimoto; Yujie Zhang; Hitoshi Isahara
+I08-1013 | An Effective Compositional Model for Lexical Alignment | http://www.aclweb.org/anthology/I/I08/I08-1013.pdf | category:paper author:BÃ©atrice Daille; Emmanuel Morin
+I08-1014 | Determining the Unithood of Word Sequences Using a Probabilistic Approach | http://www.aclweb.org/anthology/I/I08/I08-1014.pdf | category:paper author:Wilson Wong; Wei Liu; Mohammed Bennamoun
+I08-1015 | Lexical Chains as Document Features | http://www.aclweb.org/anthology/I/I08/I08-1015.pdf | category:paper author:Dinakar Jayarajan; Dipti Deodhare; Balaraman Ravindran
+I08-1016 | Entity-driven Rewrite for Multi-document Summarization | http://www.aclweb.org/anthology/I/I08/I08-1016.pdf | category:paper author:Ani Nenkova
+I08-1017 | A New Approach to Automatic Document Summarization | http://www.aclweb.org/anthology/I/I08/I08-1017.pdf | category:paper author:Xiaofeng Wu; Chengqing Zong
+I08-1018 | Generic Text Summarization Using Probabilistic Latent Semantic Indexing | http://www.aclweb.org/anthology/I/I08/I08-1018.pdf | category:paper author:Harendra Bhandari; Masashi Shimbo; Takahiko Ito; Yuji Matsumoto
+I08-1019 | Identifying Cross-Document Relations between Sentences | http://www.aclweb.org/anthology/I/I08/I08-1019.pdf | category:paper author:Yasunari Miyabe; Hiroya Takamura; Manabu Okumura
+I08-1020 | Experiments on Semantic-based Clustering for Cross-document Coreference | http://www.aclweb.org/anthology/I/I08/I08-1020.pdf | category:paper author:Horacio Saggion
+I08-1021 | Modeling Context in Scenario Template Creation | http://www.aclweb.org/anthology/I/I08/I08-1021.pdf | category:paper author:Long Qiu; Min-Yen Kan; Tat-Seng Chua
+I08-1022 | Cross Language Text Categorization Using a Bilingual Lexicon | http://www.aclweb.org/anthology/I/I08/I08-1022.pdf | category:paper author:Ke Wu; Xiaolin Wang; Bao-Liang Lu
+I08-1023 | Identify Temporal Websites Based on User Behavior Analysis | http://www.aclweb.org/anthology/I/I08/I08-1023.pdf | category:paper author:Yong Wang; Yiqun Liu; Min Zhang; Shaoping Ma; Liyun Ru
+I08-1024 | A Comparative Study for Query Translation using Linear Combination and Confidence Measure | http://www.aclweb.org/anthology/I/I08/I08-1024.pdf | category:paper author:Youssef Kadri; Jian-Yun Nie
+I08-1025 | TSUBAKI: An Open Search Engine Infrastructure for Developing New Information Access Methodology | http://www.aclweb.org/anthology/I/I08/I08-1025.pdf | category:paper author:Keiji Shinzato; Tomohide Shibata; Daisuke Kawahara; Chikara Hashimoto; Sadao Kurohashi
+I08-1026 | A Study on Effectiveness of Syntactic Relationship in Dependence Retrieval Model | http://www.aclweb.org/anthology/I/I08/I08-1026.pdf | category:paper author:Fan Ding; Bin Wang
+I08-1027 | Automatic Estimation of Word Significance oriented for Speech-based Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-1027.pdf | category:paper author:Takashi Shichiri; Hiroaki Nanjo; Takehiko Yoshimi
+I08-1028 | Rapid Prototyping of Robust Language Understanding Modules for Spoken Dialogue Systems | http://www.aclweb.org/anthology/I/I08/I08-1028.pdf | category:paper author:Yuichiro Fukubayashi; Kazunori Komatani; Mikio Nakano; Kotaro Funakoshi; Hiroshi Tsujino; Tetsuya Ogata; Hiroshi G. Okuno
+I08-1029 | Automatic Prosodic Labeling with Conditional Random Fields and Rich Acoustic Features | http://www.aclweb.org/anthology/I/I08/I08-1029.pdf | category:paper author:Gina-Anne Levow
+I08-1030 | Chinese Unknown Word Translation by Subword Re-segmentation | http://www.aclweb.org/anthology/I/I08/I08-1030.pdf | category:paper author:Ruiqiang Zhang; Eiichiro Sumita
+I08-1031 | Hypothesis Selection in Machine Transliteration: A Web Mining Approach | http://www.aclweb.org/anthology/I/I08/I08-1031.pdf | category:paper author:Jong-Hoon Oh; Hitoshi Isahara
+I08-1032 | What Prompts Translators to Modify Draft Translations? An Analysis of Basic Modification Patterns for Use in the Automatic Notification of Awkwardly Translated Text | http://www.aclweb.org/anthology/I/I08/I08-1032.pdf | category:paper author:Takeshi Abekawa; Kyo Kageura
+I08-1033 | Improving Word Alignment by Adjusting Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-1033.pdf | category:paper author:Ming-Hong Bai; Keh-Jiann Chen; Jason S. Chang
+I08-1034 | The Telling Tail: Signals of Success in Electronic Negotiation Texts | http://www.aclweb.org/anthology/I/I08/I08-1034.pdf | category:paper author:Marina Sokolova; Vivi Nastase; Stan Szpakowicz
+I08-1035 | Automatic Extraction of Briefing Templates | http://www.aclweb.org/anthology/I/I08/I08-1035.pdf | category:paper author:Dipanjan Das; Mohit Kumar; Alexander I. Rudnicky
+I08-1036 | Mining the Web for Relations between Digital Devices using a Probabilistic Maximum Margin Model | http://www.aclweb.org/anthology/I/I08/I08-1036.pdf | category:paper author:Oksana Yakhnenko; Barbara Rosario
+I08-1037 | Learning Patterns from the Web to Translate Named Entities for Cross Language Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-1037.pdf | category:paper author:Yu-Chun Wang; Richard Tzong-Han Tsai; Wen-Lian Hsu
+I08-1038 | Bootstrapping Both Product Features and Opinion Words from Chinese Customer Reviews with Cross-Inducing | http://www.aclweb.org/anthology/I/I08/I08-1038.pdf | category:paper author:Bo Wang; Houfeng Wang
+I08-1039 | Learning to Shift the Polarity of Words for Sentiment Classification | http://www.aclweb.org/anthology/I/I08/I08-1039.pdf | category:paper author:Daisuke Ikeda; Hiroya Takamura; Lev-Arie Ratinov; Manabu Okumura
+I08-1040 | Unsupervised Classification of Sentiment and Objectivity in Chinese Text | http://www.aclweb.org/anthology/I/I08/I08-1040.pdf | category:paper author:Taras Zagibalov; John Carroll
+I08-1041 | Using Roget's Thesaurus for Fine-grained Emotion Recognition | http://www.aclweb.org/anthology/I/I08/I08-1041.pdf | category:paper author:Saima Aman; Stan Szpakowicz
+I08-1042 | Heterogeneous Automatic MT Evaluation Through Non-Parametric Metric Combinations | http://www.aclweb.org/anthology/I/I08/I08-1042.pdf | category:paper author:JesÃºs GimÃ©nez; LluÃ­s MÃ¡rquez
+I08-1043 | Paraphrasing Depending on Bilingual Context Toward Generalization of Translation Knowledge | http://www.aclweb.org/anthology/I/I08/I08-1043.pdf | category:paper author:Young-Sook Hwang; Young-Kil Kim; Sangkyu Park
+I08-1044 | A Framework Based on Graphical Models with Logic for Chinese Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-1044.pdf | category:paper author:Xiaofeng Yu; Wai Lam; Shing-Kit Chan
+I08-1045 | A Hybrid Feature Set based Maximum Entropy Hindi Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-1045.pdf | category:paper author:Sujan Kumar Saha; Sudeshna Sarkar; Pabitra Mitra
+I08-1046 | An Eeffective Methods of Using Web Based Information for Relation Extraction | http://www.aclweb.org/anthology/I/I08/I08-1046.pdf | category:paper author:Stanley; Wai Keong Yong; Jian Su
+I08-1047 | Minimally Supervised Learning of Semantic Knowledge from Query Logs | http://www.aclweb.org/anthology/I/I08/I08-1047.pdf | category:paper author:Mamoru Komachi; Hisami Suzuki
+I08-1048 | Learning a Stopping Criterion for Active Learning for Word Sense Disambiguation and Text Classification | http://www.aclweb.org/anthology/I/I08/I08-1048.pdf | category:paper author:Jingbo Zhu; Huizhen Wang; Eduard Hovy
+I08-1049 | Multi-View Co-Training of Transliteration Model | http://www.aclweb.org/anthology/I/I08/I08-1049.pdf | category:paper author:Jin-Shea Kuo; Haizhou Li
+I08-1050 | Identifying Sections in Scientific Abstracts using Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-1050.pdf | category:paper author:Kenji Hirohata; Naoaki Okazaki; Sophia Ananiadou; Mitsuru Ishizuka
+I08-1051 | Formalising Multi-layer Corpora in OWL DL - Lexicon Modelling, Querying and Consistency Control | http://www.aclweb.org/anthology/I/I08/I08-1051.pdf | category:paper author:Aljoscha Burchardt; Sebastian PadÃ³; Dennis Spohr; Anette Frank; Ulrich Heid
+I08-1052 | Constructing Taxonomy of Numerative Classifiers for Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-1052.pdf | category:paper author:Kiyoaki Shirai; Takenobu Tokunaga; Chu-Ren Huang; Shu-Kai Hsieh; Tzu-Yi Kuo; Virach Sornlertlamvanich; Thatsanee Charoenporn
+I08-1053 | Translating Compounds by Learning Component Gloss Translation Models via Multiple Languages | http://www.aclweb.org/anthology/I/I08/I08-1053.pdf | category:paper author:Nikesh Garera; David Yarowsky
+I08-1054 | Answering Definition Questions via Temporally-Anchored Text Snippets | http://www.aclweb.org/anthology/I/I08/I08-1054.pdf | category:paper author:Marius Pasca
+I08-1055 | Corpus-based Question Answering for why-Questions | http://www.aclweb.org/anthology/I/I08/I08-1055.pdf | category:paper author:Ryuichiro Higashinaka; Hideki Isozaki
+I08-1056 | Cluster-Based Query Expansion for Statistical Question Answering | http://www.aclweb.org/anthology/I/I08/I08-1056.pdf | category:paper author:Lucian Vlad Lita; Jaime Carbonell
+I08-1057 | A Semantic Feature for Relation Recognition Using a Web-based Corpus | http://www.aclweb.org/anthology/I/I08/I08-1057.pdf | category:paper author:Chen-Ming Hung
+I08-1058 | Multilingual Text Entry using Automatic Language Detection | http://www.aclweb.org/anthology/I/I08/I08-1058.pdf | category:paper author:Yo Ehara; Kumiko Tanaka-Ishii
+I08-1059 | Using Contextual Speller Techniques and Language Modeling for ESL Error Correction | http://www.aclweb.org/anthology/I/I08/I08-1059.pdf | category:paper author:Michael Gamon; Jianfeng Gao; Chris Brockett; Alexandre Klementiev; William B. Dolan; Dmitriy Belenko; Lucy Vanderwende
+I08-1060 | Bilingual Synonym Identification with Spelling Variations | http://www.aclweb.org/anthology/I/I08/I08-1060.pdf | category:paper author:Takashi Tsunakawa; Jun'ichi Tsujii
+I08-1061 | Minimally Supervised Multilingual Taxonomy and Translation Lexicon Induction | http://www.aclweb.org/anthology/I/I08/I08-1061.pdf | category:paper author:Nikesh Garera; David Yarowsky
+I08-1062 | Japanese-Spanish Thesaurus Construction Using English as a Pivot | http://www.aclweb.org/anthology/I/I08/I08-1062.pdf | category:paper author:Jessica RamÃ­rez; Masayuki Asahara; Yuji Matsumoto
+I08-1063 | Automatic Identification of Rhetorical Roles using Conditional Random Fields for Legal Document Summarization | http://www.aclweb.org/anthology/I/I08/I08-1063.pdf | category:paper author:M. Saravanan; B. Ravindran; S. Raman
+I08-1064 | Projection-based Acquisition of a Temporal Labeller | http://www.aclweb.org/anthology/I/I08/I08-1064.pdf | category:paper author:Kathrin Spreyer; Anette Frank
+I08-1065 | Acquiring Event Relation Knowledge by Learning Cooccurrence Patterns and Fertilizing Cooccurrence Samples with Verbal Nouns | http://www.aclweb.org/anthology/I/I08/I08-1065.pdf | category:paper author:Shuya Abe; Kentaro Inui; Yuji Matsumoto
+I08-1066 | Refinements in BTG-based Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-1066.pdf | category:paper author:Deyi Xiong; Min Zhang; AiTi Aw; Haitao Mi; Qun Liu; Shouxun Lin
+I08-1067 | Simple Syntactic and Morphological Processing Can Help English-Hindi Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-1067.pdf | category:paper author:Ananthakrishnan Ramanathan; Jayprasad Hegde; Ritesh M. Shah; Pushpak Bhattacharyya; Sasikumar M
+I08-1068 | Statistical Machine Translation Models for Personalized Search | http://www.aclweb.org/anthology/I/I08/I08-1068.pdf | category:paper author:Rohini U; Vamshi Ambati; Vasudeva Varma
+I08-1069 | Repurposing Theoretical Linguistic Data for Tool Development and Search | http://www.aclweb.org/anthology/I/I08/I08-1069.pdf | category:paper author:Fei Xia; William D. Lewis
+I08-1070 | Computing Paraphrasability of Syntactic Variants Using Web Snippets | http://www.aclweb.org/anthology/I/I08/I08-1070.pdf | category:paper author:Atsushi Fujita; Satoshi Sato
+I08-1071 | Augmenting Wikipedia with Named Entity Tags | http://www.aclweb.org/anthology/I/I08/I08-1071.pdf | category:paper author:Wisam Dakka; Silviu Cucerzan
+I08-1072 | Context Feature Selection for Distributional Similarity | http://www.aclweb.org/anthology/I/I08/I08-1072.pdf | category:paper author:Masato Hagiwara; Yasuhiro Ogawa; Katsuhiko Toyama
+I08-1073 | Gloss-Based Semantic Similarity Metrics for Predominant Sense Acquisition | http://www.aclweb.org/anthology/I/I08/I08-1073.pdf | category:paper author:Ryu Iida; Diana McCarthy; Rob Koeling
+I08-1074 | Benchmarking Noun Compound Interpretation | http://www.aclweb.org/anthology/I/I08/I08-1074.pdf | category:paper author:Su Nam Kim; Timothy Baldwin
+I08-2075 | Vaakkriti: Sanskrit Tokenizer | http://www.aclweb.org/anthology/I/I08/I08-2075.pdf | category:paper author:Aasish Pappu; Ratna Sanyal
+I08-2076 | A Bottom Up approach to Persian Stemming | http://www.aclweb.org/anthology/I/I08/I08-2076.pdf | category:paper author:Amir Azim Sharifloo; Mehrnoush Shamsfard
+I08-2077 | Named Entity Recognition in Bengali: A Conditional Random Field Approach | http://www.aclweb.org/anthology/I/I08/I08-2077.pdf | category:paper author:Asif Ekbal; Rejwanul Haque; Sivaji Bandyopadhyay
+I08-2078 | An Online Cascaded Approach to Biomedical Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-2078.pdf | category:paper author:Shing-Kit Chan; Wai Lam; Xiaofeng Yu
+I08-2079 | Automatic Rule Acquisition for Chinese Intra-chunk Relations | http://www.aclweb.org/anthology/I/I08/I08-2079.pdf | category:paper author:Qiang Zhou
+I08-2080 | Japanese Named Entity Recognition Using Structural Natural Language Processing | http://www.aclweb.org/anthology/I/I08/I08-2080.pdf | category:paper author:Ryohei Sasano; Sadao Kurohashi
+I08-2081 | Dimensionality Reduction with Multilingual Resource | http://www.aclweb.org/anthology/I/I08/I08-2081.pdf | category:paper author:YingJu Xia; Hao Yu; Gang Zou
+I08-2082 | A Web-based English Proofing System for English as a Second Language Users | http://www.aclweb.org/anthology/I/I08/I08-2082.pdf | category:paper author:Xing Yi; Jianfeng Gao; William B. Dolan
+I08-2083 | Analysis of Intention in Dialogues Using Category Trees and Its Application to Advertisement Recommendation | http://www.aclweb.org/anthology/I/I08/I08-2083.pdf | category:paper author:Hung-Chi Huang; Hsin-Hsi Chen; Ming-Shun Lin
+I08-2084 | Term Extraction Through Unithood and Termhood Unification | http://www.aclweb.org/anthology/I/I08/I08-2084.pdf | category:paper author:Thuy Vu; AiTi Aw; Min Zhang
+I08-2085 | Search Result Clustering Using Label Language Model | http://www.aclweb.org/anthology/I/I08/I08-2085.pdf | category:paper author:Yeha Lee; Seung-Hoon Na; Jong-Hyeok Lee
+I08-2086 | Effects of Related Term Extraction in Transliteration into Chinese | http://www.aclweb.org/anthology/I/I08/I08-2086.pdf | category:paper author:HaiXiang Huang; Atsushi Fujii
+I08-2087 | A Structured Prediction Approach for Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-2087.pdf | category:paper author:Dakun Zhang; Le Sun; Wenbo Li
+I08-2088 | Method of Selecting Training Data to Build a Compact and Efficient Translation Model | http://www.aclweb.org/anthology/I/I08/I08-2088.pdf | category:paper author:Keiji Yasuda; Ruiqiang Zhang; Hirofumi Yamamoto; Eiichiro Sumita
+I08-2089 | Large and Diverse Language Models for Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-2089.pdf | category:paper author:Holger Schwenk; Philipp Koehn
+I08-2090 | A Linguistic and Navigational Knowledge Approach to Text Navigation | http://www.aclweb.org/anthology/I/I08/I08-2090.pdf | category:paper author:Javier Couto; Jean-Luc Minel
+I08-2091 | Synset Assignment for Bi-lingual Dictionary with Limited Resource | http://www.aclweb.org/anthology/I/I08/I08-2091.pdf | category:paper author:Virach Sornlertlamvanich; Thatsanee Charoenporn; Chumpol Mokarat; Hitoshi Isahara; Hammam Riza; Purev Jaimai
+I08-2092 | Ranking Words for Building a Japanese Defining Vocabulary | http://www.aclweb.org/anthology/I/I08/I08-2092.pdf | category:paper author:Tomoya Noro; Takehiro Tokuda
+I08-2093 | Automatically Identifying Computationally Relevant Typological Features | http://www.aclweb.org/anthology/I/I08/I08-2093.pdf | category:paper author:William D. Lewis; Fei Xia
+I08-2094 | Automatic Paraphrasing of Japanese Functional Expressions Using a Hierarchically Organized Dictionary | http://www.aclweb.org/anthology/I/I08/I08-2094.pdf | category:paper author:Suguru Matsuyoshi; Satoshi Sato
+I08-2095 | Generation of Referring Expression Using Prefix Tree Structure | http://www.aclweb.org/anthology/I/I08/I08-2095.pdf | category:paper author:Sibabrata Paladhi; Sivaji Bandyopadhyay
+I08-2096 | Coverage-based Evaluation of Parser Generalizability | http://www.aclweb.org/anthology/I/I08/I08-2096.pdf | category:paper author:Tuomo Kakkonen; Erkki Sutinen
+I08-2097 | Learning Reliability of Parses for Domain Adaptation of Dependency Parsing | http://www.aclweb.org/anthology/I/I08/I08-2097.pdf | category:paper author:Daisuke Kawahara; Kiyotaka Uchimoto
+I08-2098 | Resolving Ambiguities of Chinese Conjunctive Structures by Divide-and-conquer Approaches | http://www.aclweb.org/anthology/I/I08/I08-2098.pdf | category:paper author:Duen-Chi Yang; Yu-Ming Hsieh; Keh-Jiann Chen
+I08-2099 | Dependency Annotation Scheme for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-2099.pdf | category:paper author:Rafiya Begum; Samar Husain; Arun Dhwaj; Dipti Misra Sharma; Lakshmi Bai; Rajeev Sangal
+I08-2100 | Non-Factoid Japanese Question Answering through Passage Retrieval that Is Weighted Based on Types of Answers | http://www.aclweb.org/anthology/I/I08/I08-2100.pdf | category:paper author:Masaki Murata; Sachiyo Tsukawaki; Toshiyuki Kanamaru; Qing Ma; Hitoshi Isahara
+I08-2101 | A Multi-Document Multi-Lingual Automatic Summarization System | http://www.aclweb.org/anthology/I/I08/I08-2101.pdf | category:paper author:Mohamad Ali Honarpisheh; Gholamreza Ghassem-Sani; Ghassem Mirroshandel
+I08-2102 | Summarization by Analogy: An Example-based Approach for News Articles | http://www.aclweb.org/anthology/I/I08/I08-2102.pdf | category:paper author:Megumi Makino; Kazuhide Yamamoto
+I08-2103 | Sentence Ordering based on Cluster Adjacency in Multi-Document Summarization | http://www.aclweb.org/anthology/I/I08/I08-2103.pdf | category:paper author:Donghong Ji; Yu Nie
+I08-2104 | Statistical Machine Translation based Passage Retrieval for Cross-Lingual Question Answering | http://www.aclweb.org/anthology/I/I08/I08-2104.pdf | category:paper author:Tomoyosi Akiba; Kei Shimizu; Atsushi Fujii
+I08-2105 | Unsupervised All-words Word Sense Disambiguation with Grammatical Dependencies | http://www.aclweb.org/anthology/I/I08/I08-2105.pdf | category:paper author:Vivi Nastase
+I08-2106 | Syntactic and Semantic Frames in PrepNet | http://www.aclweb.org/anthology/I/I08/I08-2106.pdf | category:paper author:Patrick Saint-Dizier
+I08-2107 | Automatic Classification of English Verbs Using Rich Syntactic Features | http://www.aclweb.org/anthology/I/I08/I08-2107.pdf | category:paper author:Lin Sun; Anna Korhonen; Yuval Krymolowski
+I08-2108 | MRD-based Word Sense Disambiguation: Further Extending Lesk | http://www.aclweb.org/anthology/I/I08/I08-2108.pdf | category:paper author:Timothy Baldwin; Su Nam Kim; Francis Bond; Sanae Fujita; David Martinez; Takaaki Tanaka
+I08-2109 | Fast Computing Grammar-driven Convolution Tree Kernel for Semantic Role Labeling | http://www.aclweb.org/anthology/I/I08/I08-2109.pdf | category:paper author:Wanxiang Che; Min Zhang; AiTi Aw; Chew Lim Tan; Ting Liu; Sheng Li
+I08-2110 | SYNGRAPH: A Flexible Matching Method based on Synonymous Expression Extraction from an Ordinary Dictionary and a Web Corpus | http://www.aclweb.org/anthology/I/I08/I08-2110.pdf | category:paper author:Tomohide Shibata; Michitaka Odani; Jun Harashima; Takashi Oonishi; Sadao Kurohashi
+I08-2111 | Annotation of Multiword Expressions in the Prague Dependency Treebank | http://www.aclweb.org/anthology/I/I08/I08-2111.pdf | category:paper author:Eduard BejÄek; Pavel StraÅÃ¡k; Pavel Schlesinger
+I08-2112 | Learning Named Entity Hyponyms for Question Answering | http://www.aclweb.org/anthology/I/I08/I08-2112.pdf | category:paper author:Paul McNamee; Rion Snow; Patrick Schone; James Mayfield
+I08-2113 | Errgrams -- A Way to Improving ASR for Highly Inflected Dravidian Languages | http://www.aclweb.org/anthology/I/I08/I08-2113.pdf | category:paper author:Kamadev Bhanuprasad; Mats Svenson
+I08-2114 | Noise as a Tool for Spoken Language Identification | http://www.aclweb.org/anthology/I/I08/I08-2114.pdf | category:paper author:Sunita Maithani; J.S. Rawat
+I08-2115 | Identifying Real or Fake Articles: Towards better Language Modeling | http://www.aclweb.org/anthology/I/I08/I08-2115.pdf | category:paper author:Sameer Badaskar; Sachin Agarwal; Shilpa Arora
+I08-2116 | Multi-label Text Categorization with Model Combination based on F1-score Maximization | http://www.aclweb.org/anthology/I/I08/I08-2116.pdf | category:paper author:Akinori Fujino; Hideki Isozaki; Jun Suzuki
+I08-2117 | An Experimental Comparison of the Voted Perceptron and Support Vector Machines in Japanese Analysis Tasks | http://www.aclweb.org/anthology/I/I08/I08-2117.pdf | category:paper author:Manabu Sassano
+I08-2118 | Learning Decision Lists with Known Rules for Text Mining | http://www.aclweb.org/anthology/I/I08/I08-2118.pdf | category:paper author:Venkatesan Chakravarthy; Sachindra Joshi; Ganesh Ramakrishnan; Shantanu Godbole; Sreeram Balakrishnan
+I08-2119 | A Re-examination of Dependency Path Kernels for Relation Extraction | http://www.aclweb.org/anthology/I/I08/I08-2119.pdf | category:paper author:Mengqiu Wang
+I08-2120 | Mining Chinese-English Parallel Corpora from the Web | http://www.aclweb.org/anthology/I/I08/I08-2120.pdf | category:paper author:Bo Li; Juan Liu
+I08-2121 | Fast Duplicated Documents Detection using Multi-level Prefix-filter | http://www.aclweb.org/anthology/I/I08/I08-2121.pdf | category:paper author:Kenji Tateishi; Dai Kusui
+I08-2122 | Towards Data and Goal Oriented Analysis: Tool Inter-operability and Combinatorial Comparison | http://www.aclweb.org/anthology/I/I08/I08-2122.pdf | category:paper author:Yoshinobu Kano; Ngan Nguyen; Rune SÃ¦tre; Kazuhiro Yoshida; Keiichiro Fukamachi; Yusuke Miyao; Yoshimasa Tsuruoka; Sophia Ananiadou; Jun'ichi Tsujii
+I08-2123 | A Co-occurrence Graph-based Approach for Personal Name Alias Extraction from Anchor Texts | http://www.aclweb.org/anthology/I/I08/I08-2123.pdf | category:paper author:Danushka Bollegala; Yutaka Matsuo; Mitsuru Ishizuka
+I08-2124 | Towards Automated Semantic Analysis on Biomedical Research Articles | http://www.aclweb.org/anthology/I/I08/I08-2124.pdf | category:paper author:Donghui Feng; Gully Burns; Jingbo Zhu; Eduard Hovy
+I08-2125 | Large Scale Diagnostic Code Classification for Medical Patient Records | http://www.aclweb.org/anthology/I/I08/I08-2125.pdf | category:paper author:Lucian Vlad Lita; Shipeng Yu; Stefan Niculescu; Jinbo Bi
+I08-2126 | Hacking Wikipedia for Hyponymy Relation Acquisition | http://www.aclweb.org/anthology/I/I08/I08-2126.pdf | category:paper author:Asuka Sumida; Kentaro Torisawa
+I08-2127 | A Discriminative Approach to Japanese Abbreviation Extraction | http://www.aclweb.org/anthology/I/I08/I08-2127.pdf | category:paper author:Naoaki Okazaki; Mitsuru Ishizuka; Jun'ichi Tsujii
+I08-2128 | Linguistic Interpretation of Emotions for Affect Sensing from Text | http://www.aclweb.org/anthology/I/I08/I08-2128.pdf | category:paper author:Mostafa Al Masum Shaikh; Helmut Prendinger; Mitsuru Ishizuka
+I08-2129 | How to Take Advantage of the Limitations with Markov Clustering?--The Foundations of Branching Markov Clustering (BMCL) | http://www.aclweb.org/anthology/I/I08/I08-2129.pdf | category:paper author:Hiroyuki Akama; Maki Miyake; Jaeyoung Jung
+I08-2130 | Combining Context Features by Canonical Belief Network for Chinese Part-Of-Speech Tagging | http://www.aclweb.org/anthology/I/I08/I08-2130.pdf | category:paper author:Hongzhi Xu; Chunping Li
+I08-2131 | Language Independent Text Correction using Finite State Automata | http://www.aclweb.org/anthology/I/I08/I08-2131.pdf | category:paper author:Ahmed Hassan; Sara Noeman; Hany Hassan
+I08-2132 | Semantic Role Labeling of Chinese Using Transductive SVM and Semantic Heuristics | http://www.aclweb.org/anthology/I/I08/I08-2132.pdf | category:paper author:Yaodong Chen; Ting Wang; Huowang Chen; Xishan Xu
+I08-2133 | A Comparative Study of Mixture Models for Automatic Topic Segmentation of Multiparty Dialogues | http://www.aclweb.org/anthology/I/I08/I08-2133.pdf | category:paper author:Maria Georgescul; Alexander Clark; Susan Armstrong
+I08-2134 | Exploiting Unlabeled Text to Extract New Words of Different Semantic Transparency for Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-2134.pdf | category:paper author:Richard Tzong-Han Tsai; Hsi-Chuan Hung
+I08-2135 | Social Network Inspired Models of NLP and Language Evolution | http://www.aclweb.org/anthology/I/I08/I08-2135.pdf | category:paper author:Monojit Choudhury; Animesh Mukherjee; Niloy Ganguly
+I08-2136 | How to Add a New Language on the NLP Map: Building Resources and Tools for Languages with Scarce Resources | http://www.aclweb.org/anthology/I/I08/I08-2136.pdf | category:paper author:Rada Mihalcea; Vivi Nastase
+I08-2137 | Introduction to Text Summarization and Other Information Access Technologies | http://www.aclweb.org/anthology/I/I08/I08-2137.pdf | category:paper author:Horacio Saggion
+I08-2138 | A Punjabi Grammar Checker | http://www.aclweb.org/anthology/I/I08/I08-2138.pdf | category:paper author:Mandeep Singh Gill; Gurpreet Singh Lehal; Shiv Sharma Joshi
+I08-2139 | Netgraph â Making Searching in Treebanks Easy | http://www.aclweb.org/anthology/I/I08/I08-2139.pdf | category:paper author:JiÅÃ­ MÃ­rovskÃ½
+I08-2140 | Global Health Monitor - A Web-based System for Detecting and Mapping Infectious Diseases | http://www.aclweb.org/anthology/I/I08/I08-2140.pdf | category:paper author:Son Doan; QuocHung-Ngo; Ai Kawazoe; Nigel Collier
+I08-2141 | A Mechanism to Provide Language-Encoding Support and an NLP Friendly Editor | http://www.aclweb.org/anthology/I/I08/I08-2141.pdf | category:paper author:Anil Kumar Singh
+I08-2142 | NLP Applications of Sinhala: TTS & OCR | http://www.aclweb.org/anthology/I/I08/I08-2142.pdf | category:paper author:Ruvan Weerasinghe; Asanka Wasala; Dulip Herath; Viraj Welgama
+I08-2143 | POLLy: A Conversational System that uses a Shared Representation to Generate Action and Social Language | http://www.aclweb.org/anthology/I/I08/I08-2143.pdf | category:paper author:Swati Gupta; Marilyn A. Walker; Daniela M. Romano
+I08-2144 | Cross Lingual Information Access System for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-2144.pdf | category:paper author:CLIA Consortium
+I08-2145 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-2145.pdf | category:paper author:
+I08-3001 | Invited Talk: Building Language Resources: Ways to move forward | http://www.aclweb.org/anthology/I/I08/I08-3001.pdf | category:paper author:Anne David; Micheal Maxwell
+I08-3002 | Invited Talk: Cross Language Resource Sharing | http://www.aclweb.org/anthology/I/I08/I08-3002.pdf | category:paper author:Virach Sornlertlamvanich
+I08-3003 | Invited Talk: Breaking the Zipfian Barrier of NLP | http://www.aclweb.org/anthology/I/I08/I08-3003.pdf | category:paper author:Monojit Choudhury
+I08-3004 | Natural Language Processing for Less Privileged Languages: Where do we come from? Where are we going? | http://www.aclweb.org/anthology/I/I08/I08-3004.pdf | category:paper author:Anil Kumar Singh
+I08-3005 | KUI: an ubiquitous tool for collective intelligence development | http://www.aclweb.org/anthology/I/I08/I08-3005.pdf | category:paper author:Thatsanee Charoenporn; Virach Sornlertlamvanich; Hitoshi Isahara; Kergrit Robkop
+I08-3006 | Prototype Machine Translation System From Text-To-Indian Sign Language | http://www.aclweb.org/anthology/I/I08/I08-3006.pdf | category:paper author:Tirthankar Dasgupta; Sandipan Dandpat; Anupam Basu
+I08-3007 | Joint Grammar Development by Linguists and Computer Scientists | http://www.aclweb.org/anthology/I/I08/I08-3007.pdf | category:paper author:Michael Maxwell; Anne David
+I08-3008 | Cross-Language Parser Adaptation between Related Languages | http://www.aclweb.org/anthology/I/I08/I08-3008.pdf | category:paper author:Daniel Zeman; Philip Resnik
+I08-3009 | SriShell Primo: A Predictive Sinhala Text Input System | http://www.aclweb.org/anthology/I/I08/I08-3009.pdf | category:paper author:Sandeva Goonetilleke; Yoshihiko Hayashi; Yuichi Itoh; Fumio Kishino
+I08-3010 | A Rule-based Syllable Segmentation of Myanmar Text | http://www.aclweb.org/anthology/I/I08/I08-3010.pdf | category:paper author:Zin Maung Maung; Yoshiki Mikami
+I08-3011 | Strategies for sustainable MT for Basque: incremental design, reusability, standardization and open-source | http://www.aclweb.org/anthology/I/I08/I08-3011.pdf | category:paper author:I. Alegria; X. Arregi; X. Artola; A. Diaz de Ilarraza; G. Labaka; M. Lersundi; A. Mayor; K. Sarasola
+I08-3012 | Design of a Rule-based Stemmer for Natural Language Text in Bengali | http://www.aclweb.org/anthology/I/I08/I08-3012.pdf | category:paper author:Sandipan Sarkar; Sivaji Bandyopadhyay
+I08-3013 | Finite State Solutions For Reduplication In Kinyarwanda Language | http://www.aclweb.org/anthology/I/I08/I08-3013.pdf | category:paper author:Jackson Muhirwe; Trond Trosterud
+I08-3014 | An Optimal Order of Factors for the Computational Treatment of Personal Anaphoric Devices in Urdu Discourse | http://www.aclweb.org/anthology/I/I08/I08-3014.pdf | category:paper author:Mohammad Naveed Ali; M. A. Khan; Muhammad Aamir Khan
+I08-3015 | Morphology Driven Manipuri POS Tagger | http://www.aclweb.org/anthology/I/I08/I08-3015.pdf | category:paper author:Thoudam Doren Singh; Sivaji Bandyopadhyay
+I08-3016 | Acharya - A Text Editor and Framework for working with Indic Scripts | http://www.aclweb.org/anthology/I/I08/I08-3016.pdf | category:paper author:Krishnakumar V; Indrani Roy
+I08-3017 | Implementing a Speech Recognition System Interface for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-3017.pdf | category:paper author:R.K. Aggarwal; M. Dave
+I08-3018 | Indigenous Languages of Indonesia: Creating Language Resources for Language Preservation | http://www.aclweb.org/anthology/I/I08/I08-3018.pdf | category:paper author:Hammam Riza
+I08-3019 | Part-Of-Speech Tagging for Gujarati Using Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-3019.pdf | category:paper author:Chirag Patel; Karthik Gali
+I08-3020 | Speech to speech machine translation: Biblical chatter from Finnish to English | http://www.aclweb.org/anthology/I/I08/I08-3020.pdf | category:paper author:David Ellis; Mathias Creutz; Timo Honkela; Mikko Kurimo
+I08-4001 | An Example-based Decoder for Spoken Language Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-4001.pdf | category:paper author:Zhou-Jun Li; Wen-Han Chao; Yue-Xin Chen
+I08-4002 | Automatic Extraction of English-Chinese Transliteration Pairs using Dynamic Window and Tokenizer | http://www.aclweb.org/anthology/I/I08/I08-4002.pdf | category:paper author:Chengguo Jin; Seung-Hoon Na; Dong-Il Kim; Jong-Hyeok Lee
+I08-4003 | Mining Transliterations from Web Query Results: An Incremental Approach | http://www.aclweb.org/anthology/I/I08/I08-4003.pdf | category:paper author:Jin-Shea Kuo; Haizhou Li; Chih-Lung Lin
+I08-4004 | An Effective Hybrid Machine Learning Approach for Coreference Resolution | http://www.aclweb.org/anthology/I/I08/I08-4004.pdf | category:paper author:Feiliang Ren; Jingbo Zhu
+I08-4005 | Use of Event Types for Temporal Relation Identification in Chinese Text | http://www.aclweb.org/anthology/I/I08/I08-4005.pdf | category:paper author:Yuchang Cheng; Masayuki Asahara; Yuji Matsumoto
+I08-4006 | Chinese Word Sense Disambiguation with PageRank and HowNet | http://www.aclweb.org/anthology/I/I08/I08-4006.pdf | category:paper author:Jinghua Wang; Jianyi Liu; Ping Zhang
+I08-4007 | Stochastic Dependency Parsing Based on A* Admissible Search | http://www.aclweb.org/anthology/I/I08/I08-4007.pdf | category:paper author:Bor-shen Lin
+I08-4008 | Analyzing Chinese Synthetic Words with Tree-based Information and a Survey on Chinese Morphologically Derived Words | http://www.aclweb.org/anthology/I/I08/I08-4008.pdf | category:paper author:Jia Lu; Masayuki Asahara; Yuji Matsumoto
+I08-4009 | Which Performs Better on In-Vocabulary Word Segmentation: Based on Word or Character? | http://www.aclweb.org/anthology/I/I08/I08-4009.pdf | category:paper author:Zhenxing Wang; Changning Huang; Jingbo Zhu
+I08-4010 | The Fourth International Chinese Language Processing Bakeoff: Chinese Word Segmentation, Named Entity Recognition and Chinese POS Tagging | http://www.aclweb.org/anthology/I/I08/I08-4010.pdf | category:paper author:Guangjin Jin; Xiao Chen
+I08-4011 | A Two-Stage Approach to Chinese Part-of-Speech Tagging | http://www.aclweb.org/anthology/I/I08/I08-4011.pdf | category:paper author:Aitao Chen; Ya Zhang; Gordon Sun
+I08-4012 | NOKIA Research Center Beijing Chinese Word Segmentation System for the SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4012.pdf | category:paper author:Jiang Li; Rile Hu; Guohua Zhang; Yuezhong Tang; Zhanjiang Song; Xia Wang
+I08-4013 | Chinese Word Segmentation and Named Entity Recognition Based on Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-4013.pdf | category:paper author:Xinnian Mao; Yuan Dong; Saike He; Sencheng Bao; Haila Wang
+I08-4014 | BUPT Systems in the SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4014.pdf | category:paper author:Ying Qin; Caixia Yuan; Jiashen Sun; Xiaojie Wang
+I08-4015 | The Character-based CRF Segmenter of MSRA&NEU for the 4th Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4015.pdf | category:paper author:Zhenxing Wang; Changning Huang; Jingbo Zhu
+I08-4016 | Chinese NER Using CRFs and Logic for the Fourth SIGHAN Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4016.pdf | category:paper author:Xiaofeng Yu; Wai Lam; Shing-Kit Chan; Yiu Kei Wu; Bo Chen
+I08-4017 | Unsupervised Segmentation Helps Supervised Learning of Character Tagging for Word Segmentation and Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-4017.pdf | category:paper author:Hai Zhao; Chunyu Kit
+I08-4018 | An Agent-Based Approach to Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-4018.pdf | category:paper author:Samuel W.K. Chan; Mickey W.C. Chong
+I08-4019 | Nanjing Normal University Segmenter for the Fourth SIGHAN Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4019.pdf | category:paper author:Xiaohe Chen; Bin Li; Junzhi Lu; Hongdong Nian; Xuri Tang
+I08-4020 | Two Step Chinese Named Entity Recognition Based on Conditional Random Fields Models | http://www.aclweb.org/anthology/I/I08/I08-4020.pdf | category:paper author:Yuanyong Feng; Ruihong Huang; Le Sun
+I08-4021 | A Morpheme-based Part-of-Speech Tagger for Chinese | http://www.aclweb.org/anthology/I/I08/I08-4021.pdf | category:paper author:Guohong Fu; Jonathan J. Webster
+I08-4022 | Chinese Named Entity Recognition and Word Segmentation Based on Character | http://www.aclweb.org/anthology/I/I08/I08-4022.pdf | category:paper author:Jingzhou He; Houfeng Wang
+I08-4023 | HMM and CRF Based Hybrid Model for Chinese Lexical Analysis | http://www.aclweb.org/anthology/I/I08/I08-4023.pdf | category:paper author:Degen Huang; Xiao Sun; Shidou Jiao; Lishuang Li; Zhuoye Ding; Ru Wan
+I08-4024 | Chinese Tagging Based on Maximum Entropy Model | http://www.aclweb.org/anthology/I/I08/I08-4024.pdf | category:paper author:Ka Seng Leong; Fai Wong; Yiping Li; Ming Chui Dong
+I08-4025 | Training a Perceptron with Global and Local Features for Chinese Word Segmentation | http://www.aclweb.org/anthology/I/I08/I08-4025.pdf | category:paper author:Dong Song; Anoop Sarkar
+I08-4026 | A Study of Chinese Lexical Analysis Based on Discriminative Models | http://www.aclweb.org/anthology/I/I08/I08-4026.pdf | category:paper author:Guang-Lu Sun; Cheng-Jie Sun; Ke Sun; Xiao-Long Wang
+I08-4027 | Word Boundary Token Model for the SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4027.pdf | category:paper author:Jia-Lin Tsai
+I08-4028 | An Improved CRF based Chinese Language Processing System for SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4028.pdf | category:paper author:Xihong Wu; Xiaojun Lin; Xinhao Wang; Chunyao Wu; Yaozhong Zhang; Dianhai Yu
+I08-4029 | Description of the NCU Chinese Word Segmentation and Part-of-Speech Tagging for SIGHAN Bakeoff 2007 | http://www.aclweb.org/anthology/I/I08/I08-4029.pdf | category:paper author:Yu-Chieh Wu; Jie-Chi Yang; Yue-Shi Lee
+I08-4030 | CRF-based Hybrid Model for Word Segmentation, NER and even POS Tagging | http://www.aclweb.org/anthology/I/I08/I08-4030.pdf | category:paper author:Zhiting Xu; Xian Qian; Yuejie Zhang; Yaqian Zhou
+I08-4031 | CRFs-Based Named Entity Recognition Incorporated with Heuristic Entity List Searching | http://www.aclweb.org/anthology/I/I08/I08-4031.pdf | category:paper author:Fan Yang; Jun Zhao; Bo Zou
+I08-4032 | A Chinese Word Segmentation System Based on Cascade Model | http://www.aclweb.org/anthology/I/I08/I08-4032.pdf | category:paper author:Jianfeng Zhang; Jiaheng Zheng; Hu Zhang; Hongye Tan
+I08-4033 | Achilles: NiCT/ATR Chinese Morphological Analyzer for the Fourth Sighan Bakeoff | http://www.aclweb.org/anthology/I/I08/I08-4033.pdf | category:paper author:Ruiqiang Zhang; Eiichiro Sumita
+I08-4034 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-4034.pdf | category:paper author:
+I08-5001 | Invited Talk: Named Entity Recognition: Different Approaches | http://www.aclweb.org/anthology/I/I08/I08-5001.pdf | category:paper author:Sobha L
+I08-5002 | Invited Talk: Multilingual Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-5002.pdf | category:paper author:Sivaji Bandyopadhyay
+I08-5003 | Named Entity Recognition for South and South East Asian Languages: Taking Stock | http://www.aclweb.org/anthology/I/I08/I08-5003.pdf | category:paper author:Anil Kumar Singh
+I08-5004 | A Hybrid Named Entity Recognition System for South and South East Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-5004.pdf | category:paper author:Sujan Kumar Saha; Sanjay Chatterji; Sandipan Dandapat; Sudeshna Sarkar; Pabitra Mitra
+I08-5005 | Aggregating Machine Learning and Rule Based Heuristics for Named Entity Recognition | http://www.aclweb.org/anthology/I/I08/I08-5005.pdf | category:paper author:Karthik Gali; Harshit Surana; Ashwini Vaidya; Praneeth Shishtla; Dipti Misra Sharma
+I08-5006 | Language Independent Named Entity Recognition in Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-5006.pdf | category:paper author:Asif Ekbal; Rejwanul Haque; Amitava Das; Venkateswarlu Poka; Sivaji Bandyopadhyay
+I08-5007 | Named Entity Recognition for Telugu | http://www.aclweb.org/anthology/I/I08/I08-5007.pdf | category:paper author:P Srikanth; Kavi Narayana Murthy
+I08-5008 | Bengali Named Entity Recognition Using Support Vector Machine | http://www.aclweb.org/anthology/I/I08/I08-5008.pdf | category:paper author:Asif Ekbal; Sivaji Bandyopadhyay
+I08-5009 | Domain Focused Named Entity Recognizer for Tamil Using Conditional Random Fields | http://www.aclweb.org/anthology/I/I08/I08-5009.pdf | category:paper author:Vijayakrishna R; Sobha L
+I08-5010 | A Character n-gram Based Approach for Improved Recall in Indian Language NER | http://www.aclweb.org/anthology/I/I08/I08-5010.pdf | category:paper author:Praneeth M Shishtla; Prasad Pingali; Vasudeva Varma
+I08-5011 | An Experiment on Automatic Detection of Named Entities in Bangla | http://www.aclweb.org/anthology/I/I08/I08-5011.pdf | category:paper author:Bidyut Baran Chaudhuri; Suvankar Bhattacharya
+I08-5012 | Hybrid Named Entity Recognition System for South and South East Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-5012.pdf | category:paper author:Praveen P; Ravi Kiran V
+I08-5013 | Named Entity Recognition for South Asian Languages | http://www.aclweb.org/anthology/I/I08/I08-5013.pdf | category:paper author:Amit Goyal
+I08-5014 | Named Entity Recognition for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-5014.pdf | category:paper author:Animesh Nayan; B. Ravi Kiran Rao; Pawandeep Singh; Sudip Sanyal; Ratna Sanyal
+I08-5015 | Experiments in Telugu NER: A Conditional Random Field Approach | http://www.aclweb.org/anthology/I/I08/I08-5015.pdf | category:paper author:Praneeth M Shishtla; Karthik Gali; Prasad Pingali; Vasudeva Varma
+I08-6001 | The Effects of Language Relatedness on Multilingual Information Retrieval: A Case Study With Indo-European and Semitic Languages | http://www.aclweb.org/anthology/I/I08/I08-6001.pdf | category:paper author:Peter Chew; Ahmed Abdelali
+I08-6002 | Identifying Similar and Co-referring Documents Across Languages | http://www.aclweb.org/anthology/I/I08/I08-6002.pdf | category:paper author:Pattabhi R K Rao T; Sobha L
+I08-6003 | Finding parallel texts on the web using cross-language information retrieval | http://www.aclweb.org/anthology/I/I08/I08-6003.pdf | category:paper author:Achim Ruopp; Fei Xia
+I08-6004 | Some Experiments in Mining Named Entity Transliteration Pairs from Comparable Corpora | http://www.aclweb.org/anthology/I/I08/I08-6004.pdf | category:paper author:K Saravanan; A Kumaran
+I08-6005 | Domain-Specific Query Translation for Multilingual Information Access using Machine Translation Augmented With Dictionaries Mined from Wikipedia | http://www.aclweb.org/anthology/I/I08/I08-6005.pdf | category:paper author:Gareth Jones; Fabio Fantino; Eamonn Newman; Ying Zhang
+I08-6006 | Statistical Transliteration for Cross Language Information Retrieval using HMM alignment model and CRF | http://www.aclweb.org/anthology/I/I08/I08-6006.pdf | category:paper author:Prasad Pingali; Suryaganesh; Sreeharsha Yella; Vasudeva Varma
+I08-6007 | Script Independent Word Spotting in Multilingual Documents | http://www.aclweb.org/anthology/I/I08/I08-6007.pdf | category:paper author:Anurag Bhardwaj; Damien Jose; Venu Govindaraju
+I08-6008 | A Document Graph Based Query Focused Multi-Document Summarizer | http://www.aclweb.org/anthology/I/I08/I08-6008.pdf | category:paper author:Sibabrata Paladhi; Sivaji Bandyopadhyay
+I08-6009 | Hindi and Marathi to English Cross Language Information Retrieval | http://www.aclweb.org/anthology/I/I08/I08-6009.pdf | category:paper author:Manoj Kumar Chinnakotla; Sagar Ranadive; Om P. Damani; Pushpak Bhattacharyya
+I08-6010 | Bengali and Hindi to English CLIR Evaluation | http://www.aclweb.org/anthology/I/I08/I08-6010.pdf | category:paper author:Debasis Mandal; Sandipan Dandapat; Mayank Gupta; Pratyush Banerjee; Sudeshna Sarkar
+I08-6011 | Bengali, Hindi and Telugu to English Ad-hoc Bilingual Task | http://www.aclweb.org/anthology/I/I08/I08-6011.pdf | category:paper author:Sivaji Bandyopadhyay; Tapabrata Mondal; Sudip Kumar Naskar; Asif Ekbal; Rejwanul Haque; Srinivasa Rao Godavarthy
+I08-6012 | Cross-Lingual Information Retrieval System for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-6012.pdf | category:paper author:Jagadeesh Jagarlamudi; A Kumaran
+I08-6013 | Hindi and Telugu to English CLIR using Query Expansion | http://www.aclweb.org/anthology/I/I08/I08-6013.pdf | category:paper author:Prasad Pingali; Vasudeva Varma
+I08-6014 | FIRE: Forum for Information Retrieval Evaluation | http://www.aclweb.org/anthology/I/I08/I08-6014.pdf | category:paper author:Mandar Mitra; Prosenjit Majumdar
+I08-6015 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-6015.pdf | category:paper author:
+I08-7001 | Development of Bengali Named Entity Tagged Corpus and its Use in NER Systems | http://www.aclweb.org/anthology/I/I08/I08-7001.pdf | category:paper author:Asif Ekbal; Sivaji Bandyopadhyay
+I08-7002 | Gazetteer Preparation for Named Entity Recognition in Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-7002.pdf | category:paper author:Sujan Kumar Saha; Sudeshna Sarkar; Pabitra Mitra
+I08-7003 | Preliminary Chinese Term Classification for Ontology Construction | http://www.aclweb.org/anthology/I/I08/I08-7003.pdf | category:paper author:Gaoying Cui; Qin Lu; Wenjie Li
+I08-7004 | Technical Terminology in Asian Languages: Different Approaches to Adopting Engineering Terms | http://www.aclweb.org/anthology/I/I08/I08-7004.pdf | category:paper author:Makiko Matsuda; Tomoe Takahashi; Hiroki Goto; Yoshikazu Hayase; Robin Lee Nagano; Yoshiki Mikami
+I08-7005 | Selection of XML tag set for Myanmar National Corpus | http://www.aclweb.org/anthology/I/I08/I08-7005.pdf | category:paper author:Wunna Ko Ko; Thin Zar Phyo
+I08-7006 | Myanmar Word Segmentation using Syllable level Longest Matching | http://www.aclweb.org/anthology/I/I08/I08-7006.pdf | category:paper author:Hla Hla Htay; Kavi Narayana Murthy
+I08-7007 | The Link Structure of Language Communities and its Implication for Language-specific Crawling | http://www.aclweb.org/anthology/I/I08/I08-7007.pdf | category:paper author:Rizza Caminero; Yoshiki Mikami
+I08-7008 | A Multilingual Multimedia Indian Sign Language Dictionary Tool | http://www.aclweb.org/anthology/I/I08/I08-7008.pdf | category:paper author:Tirthankar Dasgupta; Sambit Shukla; Sandeep Kumar; Synny Diwakar; Anupam Basu
+I08-7009 | A Discourse Resource for Turkish: Annotating Discourse Connectives in the METU Corpus | http://www.aclweb.org/anthology/I/I08/I08-7009.pdf | category:paper author:Deniz Zeyrek; Bonnie Webber
+I08-7010 | Towards an Annotated Corpus of Discourse Relations in Hindi | http://www.aclweb.org/anthology/I/I08/I08-7010.pdf | category:paper author:Rashmi Prasad; Samar Husain; Dipti Sharma; Aravind Joshi
+I08-7011 | A Semantic Study on Yami Ontology in Traditional Songs | http://www.aclweb.org/anthology/I/I08/I08-7011.pdf | category:paper author:Yin-Sheng Tai; D. Victoria Rau; Meng-Chien Yang
+I08-7012 | Assessment and Development of POS Tag Set for Telugu | http://www.aclweb.org/anthology/I/I08/I08-7012.pdf | category:paper author:Rama Sree R.J.; Uma Maheswara Rao G; Madhu Murthy K.V.
+I08-7013 | Designing a Common POS-Tagset Framework for Indian Languages | http://www.aclweb.org/anthology/I/I08/I08-7013.pdf | category:paper author:Sankaran Baskaran; Kalika Bali; Tanmoy Bhattacharya; Pushpak Bhattacharyya; Girish Nath Jha; Rajendran S; Saravanan K; Sobha L; Subbarao K V
+I08-7014 | Resources Report on Languages of Indonesia | http://www.aclweb.org/anthology/I/I08/I08-7014.pdf | category:paper author:Hammam Riza
+I08-7015 | Confirmed Language Resource for Answering How Type Questions Developed by Using Mails Posted to a Mailing List | http://www.aclweb.org/anthology/I/I08/I08-7015.pdf | category:paper author:Ryo Nishimura; Yasuhiko Watanabe; Yoshihiro Okada
+I08-7016 | Corpus building for Mongolian language | http://www.aclweb.org/anthology/I/I08/I08-7016.pdf | category:paper author:Purev Jaimai; Odbayar Chimeddorj
+I08-7017 | Resources for Urdu Language Processing | http://www.aclweb.org/anthology/I/I08/I08-7017.pdf | category:paper author:Sarmad Hussain
+I08-7018 | Balanced Corpus of Contemporary Written Japanese | http://www.aclweb.org/anthology/I/I08/I08-7018.pdf | category:paper author:Kikuo Maekawa
+I08-7019 | A Basic Framework to Build a Test Collection for the Vietnamese Text Catergorization | http://www.aclweb.org/anthology/I/I08/I08-7019.pdf | category:paper author:Viet Hoang-Anh; Thu Dinh-Thi-Phuong; Thang Huynh-Quyet
+I08-7020 | Enhanced Tools for Online Collaborative Language Resource Development | http://www.aclweb.org/anthology/I/I08/I08-7020.pdf | category:paper author:Virach Sornlertlamvanich; Thatsanee Charoenporn; Suphanut Thayaboon; Chumpol Mokarat; Hitoshi Isahara
+I08-7021 | Japanese Effort Toward Sharing Text and Speech Corpora | http://www.aclweb.org/anthology/I/I08/I08-7021.pdf | category:paper author:Shuichi Itahashi; Koiti Hasida
+I08-7022 | Author Index | http://www.aclweb.org/anthology/I/I08/I08-7022.pdf | category:paper author:
+I08-8001 | Transformation-based Sentence Splitting method for Statistical Machine Translation | http://www.aclweb.org/anthology/I/I08/I08-8001.pdf | category:paper author:Jonghoon Lee; Donghyeon Lee; Gary Geunbae Lee
+I08-8002 | Speech-to-Speech Translation Activities in Thailand | http://www.aclweb.org/anthology/I/I08/I08-8002.pdf | category:paper author:Chai Wutiwiwatchai; Thepchai Supnithi; Krit Kosawat
+I08-8003 | Phrase-based Machine Transliteration | http://www.aclweb.org/anthology/I/I08/I08-8003.pdf | category:paper author:Andrew Finch; Eiichiro Sumita
+I08-8004 | Development of Indonesian Large Vocabulary Continuous Speech Recognition System within A-STAR Project | http://www.aclweb.org/anthology/I/I08/I08-8004.pdf | category:paper author:Sakriani Sakti; Eka Kelana; Hammam Riza; Shinsuke Sakai; Konstantin Markov; Satoshi Nakamura
+I08-8005 | Using Confidence Vector in Multi-Stage Speech Recognition | http://www.aclweb.org/anthology/I/I08/I08-8005.pdf | category:paper author:Hyungbae Jeon; Kyuwoong Hwang; Hoon Chung; Seunghi Kim; Jun Park; Yunkeun Lee
+I08-8006 | Toward Asian Speech Translation System: Developing Speech Recognition and Machine Translation for Indonesian Language | http://www.aclweb.org/anthology/I/I08/I08-8006.pdf | category:paper author:Hammam Riza; Oskar Riandi

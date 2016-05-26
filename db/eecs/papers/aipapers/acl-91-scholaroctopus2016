@@ -1,56 +1,56 @@
-P91-1001 | RESOLUTION OF COLLECTIVE-DISTRIBUTIVE AMBIGUITY USING MODEL-BASED REASONING | http://www.aclweb.org/anthology/P/P91/P91-1001.pdf | author:Chinatsu Aone
-P91-1002 | INCLUSION, DISJOINTNESS AND CHOICE: THE LOGIC OF LINGUISTIC CLASSIFICATION | http://www.aclweb.org/anthology/P/P91/P91-1002.pdf | author:Bob Carpenter; Carl Pollard
-P91-1003 | Event-building through Role-filling and anaphora Resolution | http://www.aclweb.org/anthology/P/P91/P91-1003.pdf | author:Greg Whittemore; Melissa Macpherson; Greg Carlson
-P91-1004 | Toward a Plan-Based Understanding Model for Mixed-Initiative Dialogues | http://www.aclweb.org/anthology/P/P91/P91-1004.pdf | author:Hiroaki Kitano; Carol Van Ess-Dykemat
-P91-1005 | AN ALGORITHM FOR PLAN RECOGNITION IN COLLABORATIVE DISCOURSE | http://www.aclweb.org/anthology/P/P91/P91-1005.pdf | author:Karen E. Lochbaum
-P91-1006 | A THREE-LEVEL MODEL FOR PLAN EXPLORATION | http://www.aclweb.org/anthology/P/P91/P91-1006.pdf | author:Lance A. Ramshaw
-P91-1007 | A TRIPARTITE PLAN-BASED MODEL OF DIALOGUE | http://www.aclweb.org/anthology/P/P91/P91-1007.pdf | author:Lynn Lambert; Sandra Carberry
-P91-1008 | DISCOURSE RELATIONS AND DEFEASIBLE KNOWLEDGE` | http://www.aclweb.org/anthology/P/P91/P91-1008.pdf | author:Alex Lascaridest; Nicholas Asher
-P91-1009 | SOME FACTS ABOUT CENTERS, INDEXICALS, AND DEMONSTRATIVES | http://www.aclweb.org/anthology/P/P91/P91-1009.pdf | author:Rebecca J. Passonneau
-P91-1010 | TYPE-RAISING AND DIRECTIONALITY IN COMBINATORY GRAMMAR | http://www.aclweb.org/anthology/P/P91/P91-1010.pdf | author:Mark Steedman
-P91-1011 | EFFICIENT INCREMENTAL PROCESSING WITH CATEGORIAL GRAMMAR | http://www.aclweb.org/anthology/P/P91/P91-1011.pdf | author:Mark Hepple
-P91-1012 | COMPOSE-REDUCE PARSING | http://www.aclweb.org/anthology/P/P91/P91-1012.pdf | author:Henry S. Thompson; Mike Dixon; John Lamping
-P91-1013 | LR RECURSIVE TRANSITION NETWORKS FOR EARLEY AND TOMITA PARSING | http://www.aclweb.org/anthology/P/P91/P91-1013.pdf | author:Mark Perlin
-P91-1014 | Polynomial Time and Space Shift-Reduce Parsing of Arbitrary Context-free Grammars. | http://www.aclweb.org/anthology/P/P91/P91-1014.pdf | author:Yves Schabes
-P91-1015 | Head Corner Parsing for Discontinuous Constituency | http://www.aclweb.org/anthology/P/P91/P91-1015.pdf | author:Gertjan van Noord
-P91-1016 | The Acquisition and Application of Context Sensitive Grammar for English | http://www.aclweb.org/anthology/P/P91/P91-1016.pdf | author:Robert F. Simmons; Yeong-Ho Yu
-P91-1017 | Two Languages Are More Informative Than One | http://www.aclweb.org/anthology/P/P91/P91-1017.pdf | author:Ido Dagan; Alon Itai; Ulrike Schwall
-P91-1018 | LEARNING PERCEPTUALLY-GROUNDED SEMANTICS IN THE Lo PROJECT | http://www.aclweb.org/anthology/P/P91/P91-1018.pdf | author:Terry Regier
-P91-1019 | SUBJECT-DEPENDENT CO-OCCURRENCE AND WORD SENSE DISAMBIGUATION | http://www.aclweb.org/anthology/P/P91/P91-1019.pdf | author:Joe A. Guthriee; Louise Guthrie; Homa Aidinejad; Yorick Wilks
-P91-1020 | A SYSTEM FOR TRANSLATING LOCATIVE PREPOSITIONS FROM ENGLISH INTO FRENCH | http://www.aclweb.org/anthology/P/P91/P91-1020.pdf | author:Nathalie Japkowicz; Janyce M. Wiebe 
-P91-1021 | TRANSLATION BY QUASI LOGICAL FORM TRANSFER | http://www.aclweb.org/anthology/P/P91/P91-1021.pdf | author:Hiyan Alshawi; David Carter; Manny Rayner; Bjorn Gamback
-P91-1022 | ALIGNING SENTENCES IN PARALLEL CORPORA | http://www.aclweb.org/anthology/P/P91/P91-1022.pdf | author:Peter F. Brown; Jennifer C. Lai; Robert L. Mercer
-P91-1023 | A PROGRAM FOR ALIGNING SENTENCES IN BILINGUAL CORPORA | http://www.aclweb.org/anthology/P/P91/P91-1023.pdf | author:William A. Gale; Kenneth W. Church
-P91-1024 | EXPERIMENTS AND PROSPECTS OF EXAMPLE-BASED MACHINE TRANSLATION | http://www.aclweb.org/anthology/P/P91/P91-1024.pdf | author:Eiichiro SUMITA; Hitoshi HDA
-P91-1025 | Resolving Translation Mismatches With Information Flow | http://www.aclweb.org/anthology/P/P91/P91-1025.pdf | author:Megumi Kameyama; Ryo Ochitani; Stanley Peters
-P91-1026 | AUTOMATIC NOUN CLASSIFICATION BY USING JAPANESE-ENGLISH WORD PAIRS | http://www.aclweb.org/anthology/P/P91/P91-1026.pdf | author:Naomi Inoue
-P91-1027 | AUTOMATIC ACQUISITION OF SUBCATEGORIZATION FRAMES FROM UNTAGGED TEXT | http://www.aclweb.org/anthology/P/P91/P91-1027.pdf | author:Michael R. Brent
-P91-1028 | Multiple Default Inheritance in a Unification-Based Lexicon | http://www.aclweb.org/anthology/P/P91/P91-1028.pdf | author:Graham Russell; John Carroll; Susan Warwick-Armstrong
-P91-1029 | METAPHORIC GENERALIZATION THROUGH SORT COERCION | http://www.aclweb.org/anthology/P/P91/P91-1029.pdf | author:Ellen Hays
-P91-1030 | STRUCTURAL AMBIGUITY AND LEXICAL RELATIONS | http://www.aclweb.org/anthology/P/P91/P91-1030.pdf | author:Donald Hindle; Mats Rooth
-P91-1031 | STRATEGIES FOR ADDING CONTROL INFORMATION TO DECLARATIVE GRAMMARS | http://www.aclweb.org/anthology/P/P91/P91-1031.pdf | author:Hans Uszkoreit
-P91-1032 | FINITE-STATE APPROXIMATION OF PHRASE STRUCTURE GRAMMARS | http://www.aclweb.org/anthology/P/P91/P91-1032.pdf | author:Fernando C. N. Pereira
-P91-1033 | FEATURE LOGIC WITH WEAK SUBSUMPTION CONSTRAINTS | http://www.aclweb.org/anthology/P/P91/P91-1033.pdf | author:Jochen Dorre
-P91-1034 | WORD-SENSE DISAMBIGUATION USING STATISTICAL METHODS | http://www.aclweb.org/anthology/P/P91/P91-1034.pdf | author:Peter F. Brown; Stephen A. Della Pietra; Vincent J. Della Pietra; Robert L. Mercer
-P91-1035 | A STOCHASTIC PROCESS FOR WORD FREQUENCY DISTRIBUTIONS | http://www.aclweb.org/anthology/P/P91/P91-1035.pdf | author:Harald Baayen
-P91-1036 | FROM N-GRAMS TO COLLOCATIONS AN EVALUATION OF XTRACT | http://www.aclweb.org/anthology/P/P91/P91-1036.pdf | author:Frank A. Srnad ja
-P91-1037 | PREDICTING INTONATIONAL PHRASING FROM TEXT | http://www.aclweb.org/anthology/P/P91/P91-1037.pdf | author:Michelle Q. Wang
-P91-1038 | A Preference-first Language Processor: Integrating the Unification Grammar and Markov Language Model for Speech Recognition Applications | http://www.aclweb.org/anthology/P/P91/P91-1038.pdf | author:Lee-Feng Chien; K. J. Chen; Lin-Shan Lee
-P91-1039 | FACTORIZATION OF LANGUAGE CONSTRAINTS IN SPEECH RECOGNITION | http://www.aclweb.org/anthology/P/P91/P91-1039.pdf | author:Roberto Pieraccini; Chin-Hui Lee
-P91-1040 | CONSTRAINT PROJECTION: AN EFFICIENT TREATMENT OF DISJUNCTIVE FEATURE DESCRIPTIONS | http://www.aclweb.org/anthology/P/P91/P91-1040.pdf | author:Mikio Nakano
-P91-1041 | Quasi-Destructive Graph Unification | http://www.aclweb.org/anthology/P/P91/P91-1041.pdf | author:Hideto Tomabechi
-P91-1042 | UNIFICATION WITH LAZY NON-REDUNDANT COPYING | http://www.aclweb.org/anthology/P/P91/P91-1042.pdf | author:Martin C. Emele
-P91-1043 | Logical Form of Complex Sentences in Task-Oriented Dialogues | http://www.aclweb.org/anthology/P/P91/P91-1043.pdf | author:Cecile T. Balkanski
-P91-1044 | Action representation for NL instructions | http://www.aclweb.org/anthology/P/P91/P91-1044.pdf | author:Barbara Di Eugenio
-P91-1045 | Extracting Semantic Roles from a Model of Eventualities | http://www.aclweb.org/anthology/P/P91/P91-1045.pdf | author:Sylvie Ratt
-P91-1046 | Case Revisited: in the Shadow of Automatic Processing of Machine-Readable Dictionaries | http://www.aclweb.org/anthology/P/P91/P91-1046.pdf | author:Fuliang Weng
-P91-1047 | Discovering the Lexical Features of a Language | http://www.aclweb.org/anthology/P/P91/P91-1047.pdf | author:Eric Brill
-P91-1048 | Lexical Disambiguation: Sources of Information and their Statistical Realization | http://www.aclweb.org/anthology/P/P91/P91-1048.pdf | author:Ido Dagan
-P91-1049 | Non-Literal Word Sense Identification Through Semantic Network Path Schemata | http://www.aclweb.org/anthology/P/P91/P91-1049.pdf | author:Eric Iverson; Stephen Hebnreich
-P91-1050 | Collaborating on Referring Expressions | http://www.aclweb.org/anthology/P/P91/P91-1050.pdf | author:Peter A. Heeman
-P91-1051 | Conceptual Revision for Natural Language Generation | http://www.aclweb.org/anthology/P/P91/P91-1051.pdf | author:Ben E. Cline
-P91-1052 | Modifying Beliefs in a Plan-Based Dialogue Model | http://www.aclweb.org/anthology/P/P91/P91-1052.pdf | author:Lynn Lambert
-P91-1053 | RESOLVING A PRAGMATIC PREPOSITIONAL PHRASE ATTACHMENT AMBIGUITY | http://www.aclweb.org/anthology/P/P91/P91-1053.pdf | author:Christine H. Nakatani
-P91-1054 | Current Research in the Development of a Spoken Language Understanding System using PARSEC | http://www.aclweb.org/anthology/P/P91/P91-1054.pdf | author:Carla B. Zoltowski
-P91-1055 | Syntactic Graphs and Constraint Satisfaction | http://www.aclweb.org/anthology/P/P91/P91-1055.pdf | author:Jeff Martin
-P91-1056 | An Incremental Connectionist Phrase Structure Parser | http://www.aclweb.org/anthology/P/P91/P91-1056.pdf | author:James Henderson
+P91-1001 | RESOLUTION OF COLLECTIVE-DISTRIBUTIVE AMBIGUITY USING MODEL-BASED REASONING | http://www.aclweb.org/anthology/P/P91/P91-1001.pdf | category:paper author:Chinatsu Aone
+P91-1002 | INCLUSION, DISJOINTNESS AND CHOICE: THE LOGIC OF LINGUISTIC CLASSIFICATION | http://www.aclweb.org/anthology/P/P91/P91-1002.pdf | category:paper author:Bob Carpenter; Carl Pollard
+P91-1003 | Event-building through Role-filling and anaphora Resolution | http://www.aclweb.org/anthology/P/P91/P91-1003.pdf | category:paper author:Greg Whittemore; Melissa Macpherson; Greg Carlson
+P91-1004 | Toward a Plan-Based Understanding Model for Mixed-Initiative Dialogues | http://www.aclweb.org/anthology/P/P91/P91-1004.pdf | category:paper author:Hiroaki Kitano; Carol Van Ess-Dykemat
+P91-1005 | AN ALGORITHM FOR PLAN RECOGNITION IN COLLABORATIVE DISCOURSE | http://www.aclweb.org/anthology/P/P91/P91-1005.pdf | category:paper author:Karen E. Lochbaum
+P91-1006 | A THREE-LEVEL MODEL FOR PLAN EXPLORATION | http://www.aclweb.org/anthology/P/P91/P91-1006.pdf | category:paper author:Lance A. Ramshaw
+P91-1007 | A TRIPARTITE PLAN-BASED MODEL OF DIALOGUE | http://www.aclweb.org/anthology/P/P91/P91-1007.pdf | category:paper author:Lynn Lambert; Sandra Carberry
+P91-1008 | DISCOURSE RELATIONS AND DEFEASIBLE KNOWLEDGE` | http://www.aclweb.org/anthology/P/P91/P91-1008.pdf | category:paper author:Alex Lascaridest; Nicholas Asher
+P91-1009 | SOME FACTS ABOUT CENTERS, INDEXICALS, AND DEMONSTRATIVES | http://www.aclweb.org/anthology/P/P91/P91-1009.pdf | category:paper author:Rebecca J. Passonneau
+P91-1010 | TYPE-RAISING AND DIRECTIONALITY IN COMBINATORY GRAMMAR | http://www.aclweb.org/anthology/P/P91/P91-1010.pdf | category:paper author:Mark Steedman
+P91-1011 | EFFICIENT INCREMENTAL PROCESSING WITH CATEGORIAL GRAMMAR | http://www.aclweb.org/anthology/P/P91/P91-1011.pdf | category:paper author:Mark Hepple
+P91-1012 | COMPOSE-REDUCE PARSING | http://www.aclweb.org/anthology/P/P91/P91-1012.pdf | category:paper author:Henry S. Thompson; Mike Dixon; John Lamping
+P91-1013 | LR RECURSIVE TRANSITION NETWORKS FOR EARLEY AND TOMITA PARSING | http://www.aclweb.org/anthology/P/P91/P91-1013.pdf | category:paper author:Mark Perlin
+P91-1014 | Polynomial Time and Space Shift-Reduce Parsing of Arbitrary Context-free Grammars. | http://www.aclweb.org/anthology/P/P91/P91-1014.pdf | category:paper author:Yves Schabes
+P91-1015 | Head Corner Parsing for Discontinuous Constituency | http://www.aclweb.org/anthology/P/P91/P91-1015.pdf | category:paper author:Gertjan van Noord
+P91-1016 | The Acquisition and Application of Context Sensitive Grammar for English | http://www.aclweb.org/anthology/P/P91/P91-1016.pdf | category:paper author:Robert F. Simmons; Yeong-Ho Yu
+P91-1017 | Two Languages Are More Informative Than One | http://www.aclweb.org/anthology/P/P91/P91-1017.pdf | category:paper author:Ido Dagan; Alon Itai; Ulrike Schwall
+P91-1018 | LEARNING PERCEPTUALLY-GROUNDED SEMANTICS IN THE Lo PROJECT | http://www.aclweb.org/anthology/P/P91/P91-1018.pdf | category:paper author:Terry Regier
+P91-1019 | SUBJECT-DEPENDENT CO-OCCURRENCE AND WORD SENSE DISAMBIGUATION | http://www.aclweb.org/anthology/P/P91/P91-1019.pdf | category:paper author:Joe A. Guthriee; Louise Guthrie; Homa Aidinejad; Yorick Wilks
+P91-1020 | A SYSTEM FOR TRANSLATING LOCATIVE PREPOSITIONS FROM ENGLISH INTO FRENCH | http://www.aclweb.org/anthology/P/P91/P91-1020.pdf | category:paper author:Nathalie Japkowicz; Janyce M. Wiebe 
+P91-1021 | TRANSLATION BY QUASI LOGICAL FORM TRANSFER | http://www.aclweb.org/anthology/P/P91/P91-1021.pdf | category:paper author:Hiyan Alshawi; David Carter; Manny Rayner; Bjorn Gamback
+P91-1022 | ALIGNING SENTENCES IN PARALLEL CORPORA | http://www.aclweb.org/anthology/P/P91/P91-1022.pdf | category:paper author:Peter F. Brown; Jennifer C. Lai; Robert L. Mercer
+P91-1023 | A PROGRAM FOR ALIGNING SENTENCES IN BILINGUAL CORPORA | http://www.aclweb.org/anthology/P/P91/P91-1023.pdf | category:paper author:William A. Gale; Kenneth W. Church
+P91-1024 | EXPERIMENTS AND PROSPECTS OF EXAMPLE-BASED MACHINE TRANSLATION | http://www.aclweb.org/anthology/P/P91/P91-1024.pdf | category:paper author:Eiichiro SUMITA; Hitoshi HDA
+P91-1025 | Resolving Translation Mismatches With Information Flow | http://www.aclweb.org/anthology/P/P91/P91-1025.pdf | category:paper author:Megumi Kameyama; Ryo Ochitani; Stanley Peters
+P91-1026 | AUTOMATIC NOUN CLASSIFICATION BY USING JAPANESE-ENGLISH WORD PAIRS | http://www.aclweb.org/anthology/P/P91/P91-1026.pdf | category:paper author:Naomi Inoue
+P91-1027 | AUTOMATIC ACQUISITION OF SUBCATEGORIZATION FRAMES FROM UNTAGGED TEXT | http://www.aclweb.org/anthology/P/P91/P91-1027.pdf | category:paper author:Michael R. Brent
+P91-1028 | Multiple Default Inheritance in a Unification-Based Lexicon | http://www.aclweb.org/anthology/P/P91/P91-1028.pdf | category:paper author:Graham Russell; John Carroll; Susan Warwick-Armstrong
+P91-1029 | METAPHORIC GENERALIZATION THROUGH SORT COERCION | http://www.aclweb.org/anthology/P/P91/P91-1029.pdf | category:paper author:Ellen Hays
+P91-1030 | STRUCTURAL AMBIGUITY AND LEXICAL RELATIONS | http://www.aclweb.org/anthology/P/P91/P91-1030.pdf | category:paper author:Donald Hindle; Mats Rooth
+P91-1031 | STRATEGIES FOR ADDING CONTROL INFORMATION TO DECLARATIVE GRAMMARS | http://www.aclweb.org/anthology/P/P91/P91-1031.pdf | category:paper author:Hans Uszkoreit
+P91-1032 | FINITE-STATE APPROXIMATION OF PHRASE STRUCTURE GRAMMARS | http://www.aclweb.org/anthology/P/P91/P91-1032.pdf | category:paper author:Fernando C. N. Pereira
+P91-1033 | FEATURE LOGIC WITH WEAK SUBSUMPTION CONSTRAINTS | http://www.aclweb.org/anthology/P/P91/P91-1033.pdf | category:paper author:Jochen Dorre
+P91-1034 | WORD-SENSE DISAMBIGUATION USING STATISTICAL METHODS | http://www.aclweb.org/anthology/P/P91/P91-1034.pdf | category:paper author:Peter F. Brown; Stephen A. Della Pietra; Vincent J. Della Pietra; Robert L. Mercer
+P91-1035 | A STOCHASTIC PROCESS FOR WORD FREQUENCY DISTRIBUTIONS | http://www.aclweb.org/anthology/P/P91/P91-1035.pdf | category:paper author:Harald Baayen
+P91-1036 | FROM N-GRAMS TO COLLOCATIONS AN EVALUATION OF XTRACT | http://www.aclweb.org/anthology/P/P91/P91-1036.pdf | category:paper author:Frank A. Srnad ja
+P91-1037 | PREDICTING INTONATIONAL PHRASING FROM TEXT | http://www.aclweb.org/anthology/P/P91/P91-1037.pdf | category:paper author:Michelle Q. Wang
+P91-1038 | A Preference-first Language Processor: Integrating the Unification Grammar and Markov Language Model for Speech Recognition Applications | http://www.aclweb.org/anthology/P/P91/P91-1038.pdf | category:paper author:Lee-Feng Chien; K. J. Chen; Lin-Shan Lee
+P91-1039 | FACTORIZATION OF LANGUAGE CONSTRAINTS IN SPEECH RECOGNITION | http://www.aclweb.org/anthology/P/P91/P91-1039.pdf | category:paper author:Roberto Pieraccini; Chin-Hui Lee
+P91-1040 | CONSTRAINT PROJECTION: AN EFFICIENT TREATMENT OF DISJUNCTIVE FEATURE DESCRIPTIONS | http://www.aclweb.org/anthology/P/P91/P91-1040.pdf | category:paper author:Mikio Nakano
+P91-1041 | Quasi-Destructive Graph Unification | http://www.aclweb.org/anthology/P/P91/P91-1041.pdf | category:paper author:Hideto Tomabechi
+P91-1042 | UNIFICATION WITH LAZY NON-REDUNDANT COPYING | http://www.aclweb.org/anthology/P/P91/P91-1042.pdf | category:paper author:Martin C. Emele
+P91-1043 | Logical Form of Complex Sentences in Task-Oriented Dialogues | http://www.aclweb.org/anthology/P/P91/P91-1043.pdf | category:paper author:Cecile T. Balkanski
+P91-1044 | Action representation for NL instructions | http://www.aclweb.org/anthology/P/P91/P91-1044.pdf | category:paper author:Barbara Di Eugenio
+P91-1045 | Extracting Semantic Roles from a Model of Eventualities | http://www.aclweb.org/anthology/P/P91/P91-1045.pdf | category:paper author:Sylvie Ratt
+P91-1046 | Case Revisited: in the Shadow of Automatic Processing of Machine-Readable Dictionaries | http://www.aclweb.org/anthology/P/P91/P91-1046.pdf | category:paper author:Fuliang Weng
+P91-1047 | Discovering the Lexical Features of a Language | http://www.aclweb.org/anthology/P/P91/P91-1047.pdf | category:paper author:Eric Brill
+P91-1048 | Lexical Disambiguation: Sources of Information and their Statistical Realization | http://www.aclweb.org/anthology/P/P91/P91-1048.pdf | category:paper author:Ido Dagan
+P91-1049 | Non-Literal Word Sense Identification Through Semantic Network Path Schemata | http://www.aclweb.org/anthology/P/P91/P91-1049.pdf | category:paper author:Eric Iverson; Stephen Hebnreich
+P91-1050 | Collaborating on Referring Expressions | http://www.aclweb.org/anthology/P/P91/P91-1050.pdf | category:paper author:Peter A. Heeman
+P91-1051 | Conceptual Revision for Natural Language Generation | http://www.aclweb.org/anthology/P/P91/P91-1051.pdf | category:paper author:Ben E. Cline
+P91-1052 | Modifying Beliefs in a Plan-Based Dialogue Model | http://www.aclweb.org/anthology/P/P91/P91-1052.pdf | category:paper author:Lynn Lambert
+P91-1053 | RESOLVING A PRAGMATIC PREPOSITIONAL PHRASE ATTACHMENT AMBIGUITY | http://www.aclweb.org/anthology/P/P91/P91-1053.pdf | category:paper author:Christine H. Nakatani
+P91-1054 | Current Research in the Development of a Spoken Language Understanding System using PARSEC | http://www.aclweb.org/anthology/P/P91/P91-1054.pdf | category:paper author:Carla B. Zoltowski
+P91-1055 | Syntactic Graphs and Constraint Satisfaction | http://www.aclweb.org/anthology/P/P91/P91-1055.pdf | category:paper author:Jeff Martin
+P91-1056 | An Incremental Connectionist Phrase Structure Parser | http://www.aclweb.org/anthology/P/P91/P91-1056.pdf | category:paper author:James Henderson

@@ -1,25 +1,25 @@
-P83-1001 | CONTEXT-FREENESS AND THE COMPUTER PROCESSING OF HUMAN LANGUAGES | http://www.aclweb.org/anthology/P/P83/P83-1001.pdf | author:Geoffrey K. Pullum
-P83-1002 | FACTORING RECURSION AND DEPENDENCIES: AN ASPECT OF TREE ADJOINING GRAMMARS (TAG) AND A COMPARISON OF SOME FORMAL PROPERTIES OF TAGS, GPSGS, PLGS, AND LPGS | http://www.aclweb.org/anthology/P/P83/P83-1002.pdf | author:Aravind K. Joshi
-P83-1003 | Crossed Serial Dependencies: A low-power parseable extension to GPSG | http://www.aclweb.org/anthology/P/P83/P83-1003.pdf | author:Henry Thompson
-P83-1004 | Formal Constraints on Metarules | http://www.aclweb.org/anthology/P/P83/P83-1004.pdf | author:Stuart M. Shieber; Swan U. Stucky; Hans Uszkoreit; Jane J. Robinson
-P83-1005 | A PROLEGOMENON TO SITUATION SEMANTICS | http://www.aclweb.org/anthology/P/P83/P83-1005.pdf | author:David J. Israel
-P83-1006 | A Modal Temporal Logic for Reasoning about Change | http://www.aclweb.org/anthology/P/P83/P83-1006.pdf | author:Eric Mays
-P83-1007 | PROVIDING A UNIFIED ACCOUNT OF DEFINITE NOUN PHRASES IN DISCOURSE | http://www.aclweb.org/anthology/P/P83/P83-1007.pdf | author:Barbara J. Grosz; Aravind K. Joshi; Scott Weinstein
-P83-1008 | USING X-CALCULUS TO REPRESENT MEANINGS IN LOGIC GRAMMARS | http://www.aclweb.org/anthology/P/P83/P83-1008.pdf | author:David Scott Warren
-P83-1009 | AN IMPROPER TREATMENT OF QUANTIFICATION IN ORDINARY ENGLISH | http://www.aclweb.org/anthology/P/P83/P83-1009.pdf | author:Jerry R. Hobbs
-P83-1010 | A FOUNDATION FOR SEMANTIC INTERPRETATION | http://www.aclweb.org/anthology/P/P83/P83-1010.pdf | author:Graeme Hirst
-P83-1011 | TELEGRAM: A GRAMMAR. FORMALISM FOR LANGUAGE PLANNING | http://www.aclweb.org/anthology/P/P83/P83-1011.pdf | author:Douglas E Appelt 
-P83-1012 | AN OVERVIEW OF THE NIGEL TEXT GENERATION GRAMMAR | http://www.aclweb.org/anthology/P/P83/P83-1012.pdf | author:William C. Mann 
-P83-1013 | Automatic Recognition of Intonation Patterns | http://www.aclweb.org/anthology/P/P83/P83-1013.pdf | author:Janet B. Pierrehumbert
-P83-1014 | A Finite-State Parser for Use in Speech Recognition | http://www.aclweb.org/anthology/P/P83/P83-1014.pdf | author:Kenneth W. Church
-P83-1015 | On the Mathematical Properties of Linguistic Theories | http://www.aclweb.org/anthology/P/P83/P83-1015.pdf | author:C. Raymond Perrault
-P83-1016 | A Framework for Processing Partially Free Word Order | http://www.aclweb.org/anthology/P/P83/P83-1016.pdf | author:Hans Uszkoreit
-P83-1017 | Sentence Disambiguation by a Shift-Reduce Parsing Technique | http://www.aclweb.org/anthology/P/P83/P83-1017.pdf | author:Stuart M. Shieber
-P83-1018 | SYNTACTIC CONSTRAINTS AND EFFICIENT PARSABILITY | http://www.aclweb.org/anthology/P/P83/P83-1018.pdf | author:Robert C. Berwick ; Amy S. Weinberg 
-P83-1019 | Deterministic Parsing of Syntactic Non-fluencies | http://www.aclweb.org/anthology/P/P83/P83-1019.pdf | author:Donald Hindle
-P83-1020 | D-Theory: Talking about Talking about Trees | http://www.aclweb.org/anthology/P/P83/P83-1020.pdf | author:Mitchell P. Marcus; Donald Hindle; Margaret M. Fleck
-P83-1021 | PARSING AS DEDUCTION | http://www.aclweb.org/anthology/P/P83/P83-1021.pdf | author:Fernando C. N. Pereira; David H. D. Warren
-P83-1022 | DESIGN OF A KNOWLEDGE-BASED REPORT GENERATOR | http://www.aclweb.org/anthology/P/P83/P83-1022.pdf | author:Karen Kukich
-P83-1023 | MENU-BASED NATURAL LANGUAGE UNDERSTANDING | http://www.aclweb.org/anthology/P/P83/P83-1023.pdf | author:Harry R. Tennant; Kenneth M. Ross; Richard M. Saenz; Craig W. Thompson; James R. Miller
-P83-1024 | Knowledge Structures in UC, the UNIX* Consultant | http://www.aclweb.org/anthology/P/P83/P83-1024.pdf | author:David N. Chin
-P83-1025 | Discourse Pragmatics and Ellipsis Resolution in Task-Oriented Natural Language Interfaces | http://www.aclweb.org/anthology/P/P83/P83-1025.pdf | author:Jaime G. Carbonell
+P83-1001 | CONTEXT-FREENESS AND THE COMPUTER PROCESSING OF HUMAN LANGUAGES | http://www.aclweb.org/anthology/P/P83/P83-1001.pdf | category:paper author:Geoffrey K. Pullum
+P83-1002 | FACTORING RECURSION AND DEPENDENCIES: AN ASPECT OF TREE ADJOINING GRAMMARS (TAG) AND A COMPARISON OF SOME FORMAL PROPERTIES OF TAGS, GPSGS, PLGS, AND LPGS | http://www.aclweb.org/anthology/P/P83/P83-1002.pdf | category:paper author:Aravind K. Joshi
+P83-1003 | Crossed Serial Dependencies: A low-power parseable extension to GPSG | http://www.aclweb.org/anthology/P/P83/P83-1003.pdf | category:paper author:Henry Thompson
+P83-1004 | Formal Constraints on Metarules | http://www.aclweb.org/anthology/P/P83/P83-1004.pdf | category:paper author:Stuart M. Shieber; Swan U. Stucky; Hans Uszkoreit; Jane J. Robinson
+P83-1005 | A PROLEGOMENON TO SITUATION SEMANTICS | http://www.aclweb.org/anthology/P/P83/P83-1005.pdf | category:paper author:David J. Israel
+P83-1006 | A Modal Temporal Logic for Reasoning about Change | http://www.aclweb.org/anthology/P/P83/P83-1006.pdf | category:paper author:Eric Mays
+P83-1007 | PROVIDING A UNIFIED ACCOUNT OF DEFINITE NOUN PHRASES IN DISCOURSE | http://www.aclweb.org/anthology/P/P83/P83-1007.pdf | category:paper author:Barbara J. Grosz; Aravind K. Joshi; Scott Weinstein
+P83-1008 | USING X-CALCULUS TO REPRESENT MEANINGS IN LOGIC GRAMMARS | http://www.aclweb.org/anthology/P/P83/P83-1008.pdf | category:paper author:David Scott Warren
+P83-1009 | AN IMPROPER TREATMENT OF QUANTIFICATION IN ORDINARY ENGLISH | http://www.aclweb.org/anthology/P/P83/P83-1009.pdf | category:paper author:Jerry R. Hobbs
+P83-1010 | A FOUNDATION FOR SEMANTIC INTERPRETATION | http://www.aclweb.org/anthology/P/P83/P83-1010.pdf | category:paper author:Graeme Hirst
+P83-1011 | TELEGRAM: A GRAMMAR. FORMALISM FOR LANGUAGE PLANNING | http://www.aclweb.org/anthology/P/P83/P83-1011.pdf | category:paper author:Douglas E Appelt 
+P83-1012 | AN OVERVIEW OF THE NIGEL TEXT GENERATION GRAMMAR | http://www.aclweb.org/anthology/P/P83/P83-1012.pdf | category:paper author:William C. Mann 
+P83-1013 | Automatic Recognition of Intonation Patterns | http://www.aclweb.org/anthology/P/P83/P83-1013.pdf | category:paper author:Janet B. Pierrehumbert
+P83-1014 | A Finite-State Parser for Use in Speech Recognition | http://www.aclweb.org/anthology/P/P83/P83-1014.pdf | category:paper author:Kenneth W. Church
+P83-1015 | On the Mathematical Properties of Linguistic Theories | http://www.aclweb.org/anthology/P/P83/P83-1015.pdf | category:paper author:C. Raymond Perrault
+P83-1016 | A Framework for Processing Partially Free Word Order | http://www.aclweb.org/anthology/P/P83/P83-1016.pdf | category:paper author:Hans Uszkoreit
+P83-1017 | Sentence Disambiguation by a Shift-Reduce Parsing Technique | http://www.aclweb.org/anthology/P/P83/P83-1017.pdf | category:paper author:Stuart M. Shieber
+P83-1018 | SYNTACTIC CONSTRAINTS AND EFFICIENT PARSABILITY | http://www.aclweb.org/anthology/P/P83/P83-1018.pdf | category:paper author:Robert C. Berwick ; Amy S. Weinberg 
+P83-1019 | Deterministic Parsing of Syntactic Non-fluencies | http://www.aclweb.org/anthology/P/P83/P83-1019.pdf | category:paper author:Donald Hindle
+P83-1020 | D-Theory: Talking about Talking about Trees | http://www.aclweb.org/anthology/P/P83/P83-1020.pdf | category:paper author:Mitchell P. Marcus; Donald Hindle; Margaret M. Fleck
+P83-1021 | PARSING AS DEDUCTION | http://www.aclweb.org/anthology/P/P83/P83-1021.pdf | category:paper author:Fernando C. N. Pereira; David H. D. Warren
+P83-1022 | DESIGN OF A KNOWLEDGE-BASED REPORT GENERATOR | http://www.aclweb.org/anthology/P/P83/P83-1022.pdf | category:paper author:Karen Kukich
+P83-1023 | MENU-BASED NATURAL LANGUAGE UNDERSTANDING | http://www.aclweb.org/anthology/P/P83/P83-1023.pdf | category:paper author:Harry R. Tennant; Kenneth M. Ross; Richard M. Saenz; Craig W. Thompson; James R. Miller
+P83-1024 | Knowledge Structures in UC, the UNIX* Consultant | http://www.aclweb.org/anthology/P/P83/P83-1024.pdf | category:paper author:David N. Chin
+P83-1025 | Discourse Pragmatics and Ellipsis Resolution in Task-Oriented Natural Language Interfaces | http://www.aclweb.org/anthology/P/P83/P83-1025.pdf | category:paper author:Jaime G. Carbonell

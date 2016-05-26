@@ -1,115 +1,115 @@
-H93-1001 | Overview of the ARPA Human Language Technology Workshop | http://www.aclweb.org/anthology/H/H93/H93-1001.pdf | author:Madeleine Bates
-H93-1002 | SESSION 1: SPOKEN LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1002.pdf | author:Alexander I. Rudnicky
-H93-1003 | BENCHMARK TESTS FOR THE DARPA SPOKEN LANGUAGE PROGRAM | http://www.aclweb.org/anthology/H/H93/H93-1003.pdf | author:David S. Pallett; Johathan G. Fiscus; William M. Fisher; John S. Garofolo
-H93-1004 | Multi-Site Data Collection and Evaluation in Spoken Language Understanding | http://www.aclweb.org/anthology/H/H93/H93-1004.pdf | author:L. Hirschman; M. Bates; D. Dahl; W. Fisher; J. Garofolo; D. Pallett; K. Hunicke-Smith; P. Price; A. Rudnicky; E. Tzoukermann
-H93-1005 | THE HCRC MAP TASK CORPUS: NATURAL DIALOGUE FOR SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1005.pdf | author:Henry S. Thompson; Anne Anderson; Ellen Gurman Bard; Gwyneth Doherty-Sneddon; Alison Newlands; Cathy Sotillo
-H93-1006 | A PORTABLE APPROACH TO LAST RESORT PARSING AND INTERPRETATION | http://www.aclweb.org/anthology/H/H93/H93-1006.pdf | author:Marcia C. Linebarger; Lewis M. Norton; Deborah A. Dahl
-H93-1007 | THE SEMANTIC LINKER- A NEW FRAGMENT COMBINING METHOD | http://www.aclweb.org/anthology/H/H93/H93-1007.pdf | author:David Stallard; Robert Bobrow
-H93-1008 | Gemini: A Natural Language System for Spoken-Language Understanding | http://www.aclweb.org/anthology/H/H93/H93-1008.pdf | author:John Dowding; Jean Mark Gawron; Doug Appelt; John Bear; Lynn Cherny; Robert Moore; Doug Moran
-H93-1009 | A Bilingual VOYAGER System | http://www.aclweb.org/anthology/H/H93/H93-1009.pdf | author:D. Goodine; M. Phillips; S. Sakai; S. Seneff; V. Zue
-H93-1010 | SESSION 2: INVITED OVERVIEWS | http://www.aclweb.org/anthology/H/H93/H93-1010.pdf | author:Madeleine Bates
-H93-1011 | SURVEY OF THE MESSAGE UNDERSTANDING CONFERENCES | http://www.aclweb.org/anthology/H/H93/H93-1011.pdf | author:Beth M. Sundheim; Nancy A. Chinchor
-H93-1012 | OVERVIEW OF TREC-1 | http://www.aclweb.org/anthology/H/H93/H93-1012.pdf | author:Donna Harman
-H93-1013 | SESSION 3: CONTINUOUS SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1013.pdf | author:Douglas B. Paul
-H93-1014 | EFFICIENT CEPSTRAL NORMALIZATION FOR ROBUST SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1014.pdf | author:Fu-Hua Liu; Richard M. Stern; Xuedong Huang; Alejandro Acero
-H93-1015 | COMPARATIVE EXPERIMENTS ON LARGE VOCABULARY SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1015.pdf | author:Richard Schwartz; Tasos Anastasakos; Francis Kubala; John Makhoul; Long Nguyen; George Zavaliagkos
-H93-1016 | An Overview of the SPHINX-II Speech Recognition System | http://www.aclweb.org/anthology/H/H93/H93-1016.pdf | author:Xuedong Huang; Fileno Alleva; Mei-Yuh Hwang; Ronald Rosenfeld
-H93-1017 | PROGRESSIVE-SEARCH ALGORITHMS FOR LARGE-VOCABULARY SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1017.pdf | author:Hy Murveit; John Butzberger; Vassilios Digalakis; Mitch Weintraub
-H93-1018 | Search Algorithms for Software-Only Real-Time Recognition with Very Large Vocabularies | http://www.aclweb.org/anthology/H/H93/H93-1018.pdf | author:Long Nguyen; Richard Schwartz; Francis Kubala; Paul Placeway
-H93-1019 | Identification of Non-Linguistic Speech Features | http://www.aclweb.org/anthology/H/H93/H93-1019.pdf | author:Jean-Luc Gauvain; Lori F. Lamel
-H93-1020 | ON THE USE OF TIED-MIXTURE DISTRIBUTIONS | http://www.aclweb.org/anthology/H/H93/H93-1020.pdf | author:Owen Kimball; Mari Ostendorf
-H93-1021 | ADAPTIVE LANGUAGE MODELING USING THE MAXIMUM ENTROPY PRINCIPLE | http://www.aclweb.org/anthology/H/H93/H93-1021.pdf | author:Raymond Lau; Ronald Rosenfeld; Salim Roukos
-H93-1022 | IMPROVED KEYWORD-SPOTTING USING SRI'S DECIPHER(TM) LARGE-VOCABUARLY SPEECH-RECOGNITION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1022.pdf | author:Mitchel Weintraub
-H93-1023 | Topic and Speaker Identification via Large Vocabulary Continuous Speech Recognition | http://www.aclweb.org/anthology/H/H93/H93-1023.pdf | author:Barbara Peskin; Larry Gillick; Yoshiko Ito; Stephen Lowe; Robert Roth; Francesco Scattone; James Baker; Janet Baker; John Bridle; Melvyn Hunt; Jeremy Orloff
-H93-1024 | SESSION 4: NATURAL LANGUAGE | http://www.aclweb.org/anthology/H/H93/H93-1024.pdf | author:Robert C. Moore
-H93-1025 | HEURISTICS FOR BROAD-COVERAGE NATURAL LANGUAGE PARSING | http://www.aclweb.org/anthology/H/H93/H93-1025.pdf | author:Michael C. McCord
-H93-1026 | FASTUS: A System for Extracting Information from Text | http://www.aclweb.org/anthology/H/H93/H93-1026.pdf | author:Jerry R. Hobbs; Douglas Appelt; John Bear; David Israel; Megumi Kameyalna; Mabry Tyson
-H93-1027 | INTERPRETING TEMPORAL ADVERBIALS | http://www.aclweb.org/anthology/H/H93/H93-1027.pdf | author:Chung Hee Hwang; Lenhart K. Schubert
-H93-1028 | THE MURASAKI PROJECT: MULTILINGUAL NATURAL LANGUAGE UNDERSTANDING | http://www.aclweb.org/anthology/H/H93/H93-1028.pdf | author:Chinatsu Aone; Hatte Blejer; Sharon Flank; Douglas McKee; Sandy Shinn
-H93-1029 | VALIDATION OF TERMINOLOGICAL INFERENCE IN AN INFORMATION EXTRACTION TASK | http://www.aclweb.org/anthology/H/H93/H93-1029.pdf | author:Marc Vilain
-H93-1030 | SESSION 5: DISCOURSE | http://www.aclweb.org/anthology/H/H93/H93-1030.pdf | author:Jerry R. Hobbs
-H93-1031 | DEVELOPMENT, IMPLEMENTATION AND TESTING OF A DISCOURSE MODEL FOR NEWSPAPER TEXTS | http://www.aclweb.org/anthology/H/H93/H93-1031.pdf | author:Elizabeth D. Liddy; Kenneth A. McVearry; Woojin Paik; Edmund Yu; Mary McKenna
-H93-1032 | INDEXING AND EXPLOITING A DISCOURSE HISTORY TO GENERATE CONTEXT-SENSITIVE EXPLANATIONS | http://www.aclweb.org/anthology/H/H93/H93-1032.pdf | author:Johanna D. Moore
-H93-1033 | Generic Plan Recognition for Dialogue Systems | http://www.aclweb.org/anthology/H/H93/H93-1033.pdf | author:George Ferguson; James F. Allen
-H93-1034 | Efficient Collaborative Discourse: A Theory and Its Implementation | http://www.aclweb.org/anthology/H/H93/H93-1034.pdf | author:Alan W. Biermann; Curry I. Guinn; D. Richard Hipp; Ronnie W. Smith
-H93-1035 | Machine Translation | http://www.aclweb.org/anthology/H/H93/H93-1035.pdf | author:Alex Waibel
-H93-1036 | BUILDING A LARGE ONTOLOGY FOR MACHINE TRANSLATION | http://www.aclweb.org/anthology/H/H93/H93-1036.pdf | author:Kevin Knight
-H93-1037 | LINGSTAT: AN INTERACTIVE, MACHINE-AIDED TRANSLATION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1037.pdf | author:Jonathan Yamron; James Baker; Paul Bamberg; Haakon Chevalier; Taiko Dietzel; John Elder; Frank Kampmann; Mark Mandel; Linda Manganaro; Todd Margolis; Elizabeth Steele
-H93-1038 | An MAT Tool and Its Effectiveness | http://www.aclweb.org/anthology/H/H93/H93-1038.pdf | author:Robert Frederking; Dean Grannes; Peter Cousseau; Sergei Nirenburg
-H93-1039 | But Dictionaries Are Data Too | http://www.aclweb.org/anthology/H/H93/H93-1039.pdf | author:Peter F. Brown; Stephen A. Della Pietra; Vincent J. Della Pietra; Meredith J. Goldsmith; Jan Hajic; Robert L. Mercer; Surya Mohanty
-H93-1040 | EVALUATION OF MACHINE TRANSLATION | http://www.aclweb.org/anthology/H/H93/H93-1040.pdf | author:John S. White; Theresa A. O'Connell
-H93-1041 | RECENT ADVANCES IN JANUS: A SPEECH TRANSLATION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1041.pdf | author:M. Woszczyna; N. Coccaro; A. Eisele; A. Lavie; A. McNair; T. Polzin; I. Rogina; C. P. Rose; T. Sloboda; M. Tomita; J. Tsutsumi; N. Aoki-Waibel; A. Waibel; W. Ward
-H93-1042 | A SPEECH TO SPEECH TRANSLATION SYSTEM BUILT FROM STANDARD COMPONENTS | http://www.aclweb.org/anthology/H/H93/H93-1042.pdf | author:Manny Rayner; Hiyan Alshawi; Ivan Bretan; David Carter; Vassilios Digalakis; Bjorn Gamback; Jaan Kaja; Jussi Karlgren; Bertil Lyberg; Steve Pulman; Patti Price; Christer Samuelsson
-H93-1043 | SESSION 7: DEMONSTRATIONS | http://www.aclweb.org/anthology/H/H93/H93-1043.pdf | author:Hy Murveit
-H93-1044 | Session 8: Statistical Language Modeling | http://www.aclweb.org/anthology/H/H93/H93-1044.pdf | author:Mitchell Marcus
-H93-1045 | EXAMPLE-BASED CORRECTION OF WORD SEGMENTATION AND PART OF SPEECH LABELLING | http://www.aclweb.org/anthology/H/H93/H93-1045.pdf | author:Tomoyoshi Matsukawa; Scott Miller; Ralph Weischedel
-H93-1046 | MEASURES AND MODELS FOR PHRASE RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1046.pdf | author:Steven Abney
-H93-1047 | Automatic Grammar Induction and Parsing Free Text: A Transformation-Based Approach | http://www.aclweb.org/anthology/H/H93/H93-1047.pdf | author:Eric Brill
-H93-1048 | Prediction of Lexicalized Tree Fragments in Text | http://www.aclweb.org/anthology/H/H93/H93-1048.pdf | author:Donald Hindle
-H93-1049 | HYPOTHESIZING WORD ASSOCIATION FROM UNTAGGED TEXT  | http://www.aclweb.org/anthology/H/H93/H93-1049.pdf | author:Tomoyoshi Matsukawa
-H93-1050 | SMOOTHING OF AUTOMATICALLY GENERATED SELECTIONAL CONSTRAINTS | http://www.aclweb.org/anthology/H/H93/H93-1050.pdf | author:Ralph Grishman; John Sterling
-H93-1051 | CORPUS-BASED STATISTICAL SENSE RESOLUTION | http://www.aclweb.org/anthology/H/H93/H93-1051.pdf | author:Claudia Leacock; Geoffrey Towell; Ellen Voorhees
-H93-1052 | ONE SENSE PER COLLOCATION | http://www.aclweb.org/anthology/H/H93/H93-1052.pdf | author:David Yarowsky
-H93-1053 | Augmenting Lexicons Automatically: Clustering Semantically Related Adjectives | http://www.aclweb.org/anthology/H/H93/H93-1053.pdf | author:Kathleen McKeown; Vasileios Hatzivassiloglou
-H93-1054 | SEMANTIC CLASSES AND SYNTACTIC AMBIGUITY | http://www.aclweb.org/anthology/H/H93/H93-1054.pdf | author:Philip Resnik
-H93-1055 | SESSION 9: GOVERNMENT PANEL | http://www.aclweb.org/anthology/H/H93/H93-1055.pdf | author:Carol J. Van Ess-Dykema
-H93-1056 | PROJECTED GOVERNMENT NEEDS IN HUMAN LANGUAGE TECHNOLOGY AND THE ROLE OF RESEARCHERS IN MEETING THEM | http://www.aclweb.org/anthology/H/H93/H93-1056.pdf | author:Helen M. Gigley
-H93-1057 | LANGUAGE RESEARCH SPONSORED BY ONR | http://www.aclweb.org/anthology/H/H93/H93-1057.pdf | author:Susan Chipman
-H93-1058 | TECHNOLOGY TRANSFER: PROBLEMS AND PROSPECTS | http://www.aclweb.org/anthology/H/H93/H93-1058.pdf | author:Jesse w. Fussell
-H93-1059 | Session 10: THE LEXICON | http://www.aclweb.org/anthology/H/H93/H93-1059.pdf | author:Ralph Grishman
-H93-1060 | The COMLEX Syntax Project | http://www.aclweb.org/anthology/H/H93/H93-1060.pdf | author:Ralph Grishman; Catherine Macleod ; Susanne Wolff
-H93-1061 | A SEMANTIC CONCORDANCE | http://www.aclweb.org/anthology/H/H93/H93-1061.pdf | author:George A. Miller; Claudia Leacock; Randee Tengi; Ross T. Bunker
-H93-1062 | INTERPRETATION OF PROPER NOUNS FOR INFORMATION RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1062.pdf | author:Woojin Paik; Elizabeth D. Liddy; Edmund Yu; Mary McKenna
-H93-1063 | SESSION 11: PROSODY | http://www.aclweb.org/anthology/H/H93/H93-1063.pdf | author:M. Ostendorf
-H93-1064 | ON CUSTOMIZING PROSODY IN SPEECH SYNTHESIS: NAMES AND ADDRESSES AS A CASE IN POINT | http://www.aclweb.org/anthology/H/H93/H93-1064.pdf | author:Kim E. A. Silverman
-H93-1065 | QUANTITATIVE MODELING OF SEGMENTAL DURATION | http://www.aclweb.org/anthology/H/H93/H93-1065.pdf | author:Jan P. H. van Santen
-H93-1066 | A SPEECH-FIRST MODEL FOR REPAIR DETECTION AND CORRECTION | http://www.aclweb.org/anthology/H/H93/H93-1066.pdf | author:Christine Nakatani; Julia Hirschberg
-H93-1067 | PROSODY/PARSE SCORING AND ITS APPLICATION IN ATIS | http://www.aclweb.org/anthology/H/H93/H93-1067.pdf | author:N. M. Veilleuz; M. Ostendorf
-H93-1068 | PERCEIVED PROSODIC BOUNDARIES AND THEIR PHONETIC CORRELATES | http://www.aclweb.org/anthology/H/H93/H93-1068.pdf | author:Renk Collier; Jan Roelof de Pijper; Angelien Sanderman
-H93-1069 | Document retrieval and text retrieval | http://www.aclweb.org/anthology/H/H93/H93-1069.pdf | author:Karen Sparck Jones
-H93-1070 | The Importance of Proper Weighting Methods | http://www.aclweb.org/anthology/H/H93/H93-1070.pdf | author:Chris Buckley
-H93-1071 | QUERY PROCESSING FOR RETRIEVAL FROM LARGE TEXT BASES | http://www.aclweb.org/anthology/H/H93/H93-1071.pdf | author:John Broglio; W. Bruce Croft
-H93-1072 | AN OVERVIEW OF DR-LINK AND ITS APPROACH TO DOCUMENT FILTERING | http://www.aclweb.org/anthology/H/H93/H93-1072.pdf | author:Elizabeth D. Liddy; Woojin Paik; Edmund S. Yu; Kenneth A. McVearry
-H93-1073 | SESSION 13: NEW DIRECTIONS | http://www.aclweb.org/anthology/H/H93/H93-1073.pdf | author:Ralph Weischedel
-H93-1074 | Mode preference in a simple data-retrieval task | http://www.aclweb.org/anthology/H/H93/H93-1074.pdf | author:Alexander L Rudnicky
-H93-1075 | A SIMULATION-BASED RESEARCH STRATEGY FOR DESIGNING COMPLEX NL SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1075.pdf | author:Sharon Oviatt; Philip Cohen; Michelle Wang; Jeremy Gaston
-H93-1076 | Speech and Text-Image Processing in Documents | http://www.aclweb.org/anthology/H/H93/H93-1076.pdf | author:Marcia A. Bush
-H93-1077 | MACHINE LEARNING TECHNIQUES FOR DOCUMENT FILTERING | http://www.aclweb.org/anthology/H/H93/H93-1077.pdf | author:Richard M. Tong; Lee A. Appelbaum
-H93-1078 | Gisting Continuous Speech | http://www.aclweb.org/anthology/H/H93/H93-1078.pdf | author:J. R. Rohlicek
-H93-1079 | ROBUST CONTINUOUS SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1079.pdf | author:John Makhoul; Richard Schwartz
-H93-1080 | ROBUSTNESS, PORTABILITY, AND SCALABILITY OF NATURAL LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1080.pdf | author:Ralph Weischedel
-H93-1081 | USABLE, REAL-TIME, INTERACTIVE SPOKEN LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1081.pdf | author:John Makhoul; Madeleine Bates
-H93-1082 | Evaluating the Use of Prosodic Information in Speech Recognition and Understanding | http://www.aclweb.org/anthology/H/H93/H93-1082.pdf | author:Mari Ostendorf; Patti Price
-H93-1083 | Segment-Based Acoustic Models for Continuous Speech Recognition | http://www.aclweb.org/anthology/H/H93/H93-1083.pdf | author:Mari Ostendorf; J. Robin Rohlicek
-H93-1084 | SPOKEN-LANGUAGE RESEARCH AT CARNEGIE MELLON | http://www.aclweb.org/anthology/H/H93/H93-1084.pdf | author:Raj Reddy
-H93-1085 | Extracting Constraints on Word Usage from Large Text Corpora | http://www.aclweb.org/anthology/H/H93/H93-1085.pdf | author:Kathleen McKeown; Rebecca Passonneau
-H93-1086 | The SMART Information Retrieval Project | http://www.aclweb.org/anthology/H/H93/H93-1086.pdf | author:C. Buckley; G. Salton; J. Allan
-H93-1087 | LINGSTAT: AN INTERACTIVE, MACHINE-AIDED TRANSLATION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1087.pdf | author:Jonathan Yamron; James Baker
-H93-1088 | RESEARCH IN LARGE VOCABULARY CONTINUOUS SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1088.pdf | author:Janet Baker; Larry Gillick; Robert Roth
-H93-1089 | SHOGUN- MULTILINGUAL DATA EXTRACTION FOR TIPSTER | http://www.aclweb.org/anthology/H/H93/H93-1089.pdf | author:P. Jacobs
-H93-1090 | MatchPlus: A CONTEXT VECTOR SYSTEM FOR DOCUMENT RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1090.pdf | author:Stephen L Gallant; William R. Caid
-H93-1091 | Applying Statistical Methods to Machine Translation | http://www.aclweb.org/anthology/H/H93/H93-1091.pdf | author:Peter E Brown
-H93-1092 | Automatic Extraction of Grammars From Annotated Text | http://www.aclweb.org/anthology/H/H93/H93-1092.pdf | author:Salim Roukos
-H93-1093 | EVALUATION AND ANALYSIS OF AUDITORY MODEL FRONT ENDS FOR ROBUST SPEECH RECOGNITION PROGRAM SUMMARY | http://www.aclweb.org/anthology/H/H93/H93-1093.pdf | author:Richard P. Lippmann
-H93-1094 | ROBUST CONTINUOUS SPEECH RECOGNITION TECHNOLOGY PROGRAM SUMMARY | http://www.aclweb.org/anthology/H/H93/H93-1094.pdf | author:Clifford J. Weinstein; Douglas B. Paul
-H93-1095 | Spoken Language Recognition and Understanding | http://www.aclweb.org/anthology/H/H93/H93-1095.pdf | author:Victor Zue; Lynette Hirschman
-H93-1096 | NIST-DARPA Interagency Agreement: Spoken Language Program | http://www.aclweb.org/anthology/H/H93/H93-1096.pdf | author:David S. Pallett
-H93-1097 | INFORMATION EXTRACTION SYSTEM EVALUATION | http://www.aclweb.org/anthology/H/H93/H93-1097.pdf | author:Beth M. Sundheim
-H93-1098 | THE CONSORTIUM FOR LEXICAL RESEARCH | http://www.aclweb.org/anthology/H/H93/H93-1098.pdf | author:Y. Wilks
-H93-1099 | Diderot: TIPSTER Program, Automatic Data Extraction from Text Utilizing Semantic Analysis | http://www.aclweb.org/anthology/H/H93/H93-1099.pdf | author:Y. Wilks; J. Pustejovsky; J. Cowie
-H93-1100 | Pangloss: A Knowledge-based Machine Assisted Translation Research Project - Site | http://www.aclweb.org/anthology/H/H93/H93-1100.pdf | author:Y. Wilks
-H93-1101 | RESEARCH IN NATURAL LANGUAGE PROCESSING | http://www.aclweb.org/anthology/H/H93/H93-1101.pdf | author:Ralph Grishman
-H93-1102 | ROBUST TEXT PROCESSING AND INFORMATION RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1102.pdf | author:Tomek Strzalkowski
-H93-1103 | WORDNET: A LEXICAL DATABASE FOR ENGLISH | http://www.aclweb.org/anthology/H/H93/H93-1103.pdf | author:George A. Miller
-H93-1104 | Information Retrieval from Large Textbases | http://www.aclweb.org/anthology/H/H93/H93-1104.pdf | author:K.L. Kwok
-H93-1105 | EXPLOITING CONCEPT SPACES FOR TEXT RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1105.pdf | author:Ellen M. Voorhees
-H93-1106 | ANNOTATION OF ATIS DATA | http://www.aclweb.org/anthology/H/H93/H93-1106.pdf | author:Kate Hunicke-Smith; Jared Bernstein
-H93-1107 | CSR CORPUS COLLECTION | http://www.aclweb.org/anthology/H/H93/H93-1107.pdf | author:Denise Danielson; Jared Bernstein
-H93-1108 | A REAL-TIME SPOKEN-LANGUAGE SYSTEM FOR INTERACTIVE PROBLEM SOLVING | http://www.aclweb.org/anthology/H/H93/H93-1108.pdf | author:Patti Price; Robert C. Moore
-H93-1109 | HIGH PERFORMANCE SPEECH RECOGNITION USING CONSISTENCY MODELING | http://www.aclweb.org/anthology/H/H93/H93-1109.pdf | author:Vassilios Digalakis; Hy Murveit; Mitch Weintraub
-H93-1110 | DR-LINK: Document Retrieval Using Linguistic Knowledge | http://www.aclweb.org/anthology/H/H93/H93-1110.pdf | author:Elizabeth D. Liddy; Sung H. Myaeng
-H93-1111 | UMass/Hughes TIPSTER Project on Extraction from Text | http://www.aclweb.org/anthology/H/H93/H93-1111.pdf | author:Wendy Lehnert; Charles Dolan
-H93-1112 | Text Retrieval and Routing Techniques Based on an Inference Net | http://www.aclweb.org/anthology/H/H93/H93-1112.pdf | author:W. Bruce Croft
-H93-1113 | Natural Language Research | http://www.aclweb.org/anthology/H/H93/H93-1113.pdf | author:Aravind Joshi; Mitch Marcus; Mark Steedman; Bonnie Webber
-H93-1114 | NATURAL LANGUAGE PLANNING DIALOGUE FOR INTELLIGENT APPLICATIONS | http://www.aclweb.org/anthology/H/H93/H93-1114.pdf | author:James F. Allen; Len Schubert
-H93-1115 | THE PENMAN PROJECT ON KNOWLEDGE-BASED MACHINE TRANSLATION | http://www.aclweb.org/anthology/H/H93/H93-1115.pdf | author:Eduard Hovy
+H93-1001 | Overview of the ARPA Human Language Technology Workshop | http://www.aclweb.org/anthology/H/H93/H93-1001.pdf | category:paper author:Madeleine Bates
+H93-1002 | SESSION 1: SPOKEN LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1002.pdf | category:paper author:Alexander I. Rudnicky
+H93-1003 | BENCHMARK TESTS FOR THE DARPA SPOKEN LANGUAGE PROGRAM | http://www.aclweb.org/anthology/H/H93/H93-1003.pdf | category:paper author:David S. Pallett; Johathan G. Fiscus; William M. Fisher; John S. Garofolo
+H93-1004 | Multi-Site Data Collection and Evaluation in Spoken Language Understanding | http://www.aclweb.org/anthology/H/H93/H93-1004.pdf | category:paper author:L. Hirschman; M. Bates; D. Dahl; W. Fisher; J. Garofolo; D. Pallett; K. Hunicke-Smith; P. Price; A. Rudnicky; E. Tzoukermann
+H93-1005 | THE HCRC MAP TASK CORPUS: NATURAL DIALOGUE FOR SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1005.pdf | category:paper author:Henry S. Thompson; Anne Anderson; Ellen Gurman Bard; Gwyneth Doherty-Sneddon; Alison Newlands; Cathy Sotillo
+H93-1006 | A PORTABLE APPROACH TO LAST RESORT PARSING AND INTERPRETATION | http://www.aclweb.org/anthology/H/H93/H93-1006.pdf | category:paper author:Marcia C. Linebarger; Lewis M. Norton; Deborah A. Dahl
+H93-1007 | THE SEMANTIC LINKER- A NEW FRAGMENT COMBINING METHOD | http://www.aclweb.org/anthology/H/H93/H93-1007.pdf | category:paper author:David Stallard; Robert Bobrow
+H93-1008 | Gemini: A Natural Language System for Spoken-Language Understanding | http://www.aclweb.org/anthology/H/H93/H93-1008.pdf | category:paper author:John Dowding; Jean Mark Gawron; Doug Appelt; John Bear; Lynn Cherny; Robert Moore; Doug Moran
+H93-1009 | A Bilingual VOYAGER System | http://www.aclweb.org/anthology/H/H93/H93-1009.pdf | category:paper author:D. Goodine; M. Phillips; S. Sakai; S. Seneff; V. Zue
+H93-1010 | SESSION 2: INVITED OVERVIEWS | http://www.aclweb.org/anthology/H/H93/H93-1010.pdf | category:paper author:Madeleine Bates
+H93-1011 | SURVEY OF THE MESSAGE UNDERSTANDING CONFERENCES | http://www.aclweb.org/anthology/H/H93/H93-1011.pdf | category:paper author:Beth M. Sundheim; Nancy A. Chinchor
+H93-1012 | OVERVIEW OF TREC-1 | http://www.aclweb.org/anthology/H/H93/H93-1012.pdf | category:paper author:Donna Harman
+H93-1013 | SESSION 3: CONTINUOUS SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1013.pdf | category:paper author:Douglas B. Paul
+H93-1014 | EFFICIENT CEPSTRAL NORMALIZATION FOR ROBUST SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1014.pdf | category:paper author:Fu-Hua Liu; Richard M. Stern; Xuedong Huang; Alejandro Acero
+H93-1015 | COMPARATIVE EXPERIMENTS ON LARGE VOCABULARY SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1015.pdf | category:paper author:Richard Schwartz; Tasos Anastasakos; Francis Kubala; John Makhoul; Long Nguyen; George Zavaliagkos
+H93-1016 | An Overview of the SPHINX-II Speech Recognition System | http://www.aclweb.org/anthology/H/H93/H93-1016.pdf | category:paper author:Xuedong Huang; Fileno Alleva; Mei-Yuh Hwang; Ronald Rosenfeld
+H93-1017 | PROGRESSIVE-SEARCH ALGORITHMS FOR LARGE-VOCABULARY SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1017.pdf | category:paper author:Hy Murveit; John Butzberger; Vassilios Digalakis; Mitch Weintraub
+H93-1018 | Search Algorithms for Software-Only Real-Time Recognition with Very Large Vocabularies | http://www.aclweb.org/anthology/H/H93/H93-1018.pdf | category:paper author:Long Nguyen; Richard Schwartz; Francis Kubala; Paul Placeway
+H93-1019 | Identification of Non-Linguistic Speech Features | http://www.aclweb.org/anthology/H/H93/H93-1019.pdf | category:paper author:Jean-Luc Gauvain; Lori F. Lamel
+H93-1020 | ON THE USE OF TIED-MIXTURE DISTRIBUTIONS | http://www.aclweb.org/anthology/H/H93/H93-1020.pdf | category:paper author:Owen Kimball; Mari Ostendorf
+H93-1021 | ADAPTIVE LANGUAGE MODELING USING THE MAXIMUM ENTROPY PRINCIPLE | http://www.aclweb.org/anthology/H/H93/H93-1021.pdf | category:paper author:Raymond Lau; Ronald Rosenfeld; Salim Roukos
+H93-1022 | IMPROVED KEYWORD-SPOTTING USING SRI'S DECIPHER(TM) LARGE-VOCABUARLY SPEECH-RECOGNITION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1022.pdf | category:paper author:Mitchel Weintraub
+H93-1023 | Topic and Speaker Identification via Large Vocabulary Continuous Speech Recognition | http://www.aclweb.org/anthology/H/H93/H93-1023.pdf | category:paper author:Barbara Peskin; Larry Gillick; Yoshiko Ito; Stephen Lowe; Robert Roth; Francesco Scattone; James Baker; Janet Baker; John Bridle; Melvyn Hunt; Jeremy Orloff
+H93-1024 | SESSION 4: NATURAL LANGUAGE | http://www.aclweb.org/anthology/H/H93/H93-1024.pdf | category:paper author:Robert C. Moore
+H93-1025 | HEURISTICS FOR BROAD-COVERAGE NATURAL LANGUAGE PARSING | http://www.aclweb.org/anthology/H/H93/H93-1025.pdf | category:paper author:Michael C. McCord
+H93-1026 | FASTUS: A System for Extracting Information from Text | http://www.aclweb.org/anthology/H/H93/H93-1026.pdf | category:paper author:Jerry R. Hobbs; Douglas Appelt; John Bear; David Israel; Megumi Kameyalna; Mabry Tyson
+H93-1027 | INTERPRETING TEMPORAL ADVERBIALS | http://www.aclweb.org/anthology/H/H93/H93-1027.pdf | category:paper author:Chung Hee Hwang; Lenhart K. Schubert
+H93-1028 | THE MURASAKI PROJECT: MULTILINGUAL NATURAL LANGUAGE UNDERSTANDING | http://www.aclweb.org/anthology/H/H93/H93-1028.pdf | category:paper author:Chinatsu Aone; Hatte Blejer; Sharon Flank; Douglas McKee; Sandy Shinn
+H93-1029 | VALIDATION OF TERMINOLOGICAL INFERENCE IN AN INFORMATION EXTRACTION TASK | http://www.aclweb.org/anthology/H/H93/H93-1029.pdf | category:paper author:Marc Vilain
+H93-1030 | SESSION 5: DISCOURSE | http://www.aclweb.org/anthology/H/H93/H93-1030.pdf | category:paper author:Jerry R. Hobbs
+H93-1031 | DEVELOPMENT, IMPLEMENTATION AND TESTING OF A DISCOURSE MODEL FOR NEWSPAPER TEXTS | http://www.aclweb.org/anthology/H/H93/H93-1031.pdf | category:paper author:Elizabeth D. Liddy; Kenneth A. McVearry; Woojin Paik; Edmund Yu; Mary McKenna
+H93-1032 | INDEXING AND EXPLOITING A DISCOURSE HISTORY TO GENERATE CONTEXT-SENSITIVE EXPLANATIONS | http://www.aclweb.org/anthology/H/H93/H93-1032.pdf | category:paper author:Johanna D. Moore
+H93-1033 | Generic Plan Recognition for Dialogue Systems | http://www.aclweb.org/anthology/H/H93/H93-1033.pdf | category:paper author:George Ferguson; James F. Allen
+H93-1034 | Efficient Collaborative Discourse: A Theory and Its Implementation | http://www.aclweb.org/anthology/H/H93/H93-1034.pdf | category:paper author:Alan W. Biermann; Curry I. Guinn; D. Richard Hipp; Ronnie W. Smith
+H93-1035 | Machine Translation | http://www.aclweb.org/anthology/H/H93/H93-1035.pdf | category:paper author:Alex Waibel
+H93-1036 | BUILDING A LARGE ONTOLOGY FOR MACHINE TRANSLATION | http://www.aclweb.org/anthology/H/H93/H93-1036.pdf | category:paper author:Kevin Knight
+H93-1037 | LINGSTAT: AN INTERACTIVE, MACHINE-AIDED TRANSLATION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1037.pdf | category:paper author:Jonathan Yamron; James Baker; Paul Bamberg; Haakon Chevalier; Taiko Dietzel; John Elder; Frank Kampmann; Mark Mandel; Linda Manganaro; Todd Margolis; Elizabeth Steele
+H93-1038 | An MAT Tool and Its Effectiveness | http://www.aclweb.org/anthology/H/H93/H93-1038.pdf | category:paper author:Robert Frederking; Dean Grannes; Peter Cousseau; Sergei Nirenburg
+H93-1039 | But Dictionaries Are Data Too | http://www.aclweb.org/anthology/H/H93/H93-1039.pdf | category:paper author:Peter F. Brown; Stephen A. Della Pietra; Vincent J. Della Pietra; Meredith J. Goldsmith; Jan Hajic; Robert L. Mercer; Surya Mohanty
+H93-1040 | EVALUATION OF MACHINE TRANSLATION | http://www.aclweb.org/anthology/H/H93/H93-1040.pdf | category:paper author:John S. White; Theresa A. O'Connell
+H93-1041 | RECENT ADVANCES IN JANUS: A SPEECH TRANSLATION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1041.pdf | category:paper author:M. Woszczyna; N. Coccaro; A. Eisele; A. Lavie; A. McNair; T. Polzin; I. Rogina; C. P. Rose; T. Sloboda; M. Tomita; J. Tsutsumi; N. Aoki-Waibel; A. Waibel; W. Ward
+H93-1042 | A SPEECH TO SPEECH TRANSLATION SYSTEM BUILT FROM STANDARD COMPONENTS | http://www.aclweb.org/anthology/H/H93/H93-1042.pdf | category:paper author:Manny Rayner; Hiyan Alshawi; Ivan Bretan; David Carter; Vassilios Digalakis; Bjorn Gamback; Jaan Kaja; Jussi Karlgren; Bertil Lyberg; Steve Pulman; Patti Price; Christer Samuelsson
+H93-1043 | SESSION 7: DEMONSTRATIONS | http://www.aclweb.org/anthology/H/H93/H93-1043.pdf | category:paper author:Hy Murveit
+H93-1044 | Session 8: Statistical Language Modeling | http://www.aclweb.org/anthology/H/H93/H93-1044.pdf | category:paper author:Mitchell Marcus
+H93-1045 | EXAMPLE-BASED CORRECTION OF WORD SEGMENTATION AND PART OF SPEECH LABELLING | http://www.aclweb.org/anthology/H/H93/H93-1045.pdf | category:paper author:Tomoyoshi Matsukawa; Scott Miller; Ralph Weischedel
+H93-1046 | MEASURES AND MODELS FOR PHRASE RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1046.pdf | category:paper author:Steven Abney
+H93-1047 | Automatic Grammar Induction and Parsing Free Text: A Transformation-Based Approach | http://www.aclweb.org/anthology/H/H93/H93-1047.pdf | category:paper author:Eric Brill
+H93-1048 | Prediction of Lexicalized Tree Fragments in Text | http://www.aclweb.org/anthology/H/H93/H93-1048.pdf | category:paper author:Donald Hindle
+H93-1049 | HYPOTHESIZING WORD ASSOCIATION FROM UNTAGGED TEXT  | http://www.aclweb.org/anthology/H/H93/H93-1049.pdf | category:paper author:Tomoyoshi Matsukawa
+H93-1050 | SMOOTHING OF AUTOMATICALLY GENERATED SELECTIONAL CONSTRAINTS | http://www.aclweb.org/anthology/H/H93/H93-1050.pdf | category:paper author:Ralph Grishman; John Sterling
+H93-1051 | CORPUS-BASED STATISTICAL SENSE RESOLUTION | http://www.aclweb.org/anthology/H/H93/H93-1051.pdf | category:paper author:Claudia Leacock; Geoffrey Towell; Ellen Voorhees
+H93-1052 | ONE SENSE PER COLLOCATION | http://www.aclweb.org/anthology/H/H93/H93-1052.pdf | category:paper author:David Yarowsky
+H93-1053 | Augmenting Lexicons Automatically: Clustering Semantically Related Adjectives | http://www.aclweb.org/anthology/H/H93/H93-1053.pdf | category:paper author:Kathleen McKeown; Vasileios Hatzivassiloglou
+H93-1054 | SEMANTIC CLASSES AND SYNTACTIC AMBIGUITY | http://www.aclweb.org/anthology/H/H93/H93-1054.pdf | category:paper author:Philip Resnik
+H93-1055 | SESSION 9: GOVERNMENT PANEL | http://www.aclweb.org/anthology/H/H93/H93-1055.pdf | category:paper author:Carol J. Van Ess-Dykema
+H93-1056 | PROJECTED GOVERNMENT NEEDS IN HUMAN LANGUAGE TECHNOLOGY AND THE ROLE OF RESEARCHERS IN MEETING THEM | http://www.aclweb.org/anthology/H/H93/H93-1056.pdf | category:paper author:Helen M. Gigley
+H93-1057 | LANGUAGE RESEARCH SPONSORED BY ONR | http://www.aclweb.org/anthology/H/H93/H93-1057.pdf | category:paper author:Susan Chipman
+H93-1058 | TECHNOLOGY TRANSFER: PROBLEMS AND PROSPECTS | http://www.aclweb.org/anthology/H/H93/H93-1058.pdf | category:paper author:Jesse w. Fussell
+H93-1059 | Session 10: THE LEXICON | http://www.aclweb.org/anthology/H/H93/H93-1059.pdf | category:paper author:Ralph Grishman
+H93-1060 | The COMLEX Syntax Project | http://www.aclweb.org/anthology/H/H93/H93-1060.pdf | category:paper author:Ralph Grishman; Catherine Macleod ; Susanne Wolff
+H93-1061 | A SEMANTIC CONCORDANCE | http://www.aclweb.org/anthology/H/H93/H93-1061.pdf | category:paper author:George A. Miller; Claudia Leacock; Randee Tengi; Ross T. Bunker
+H93-1062 | INTERPRETATION OF PROPER NOUNS FOR INFORMATION RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1062.pdf | category:paper author:Woojin Paik; Elizabeth D. Liddy; Edmund Yu; Mary McKenna
+H93-1063 | SESSION 11: PROSODY | http://www.aclweb.org/anthology/H/H93/H93-1063.pdf | category:paper author:M. Ostendorf
+H93-1064 | ON CUSTOMIZING PROSODY IN SPEECH SYNTHESIS: NAMES AND ADDRESSES AS A CASE IN POINT | http://www.aclweb.org/anthology/H/H93/H93-1064.pdf | category:paper author:Kim E. A. Silverman
+H93-1065 | QUANTITATIVE MODELING OF SEGMENTAL DURATION | http://www.aclweb.org/anthology/H/H93/H93-1065.pdf | category:paper author:Jan P. H. van Santen
+H93-1066 | A SPEECH-FIRST MODEL FOR REPAIR DETECTION AND CORRECTION | http://www.aclweb.org/anthology/H/H93/H93-1066.pdf | category:paper author:Christine Nakatani; Julia Hirschberg
+H93-1067 | PROSODY/PARSE SCORING AND ITS APPLICATION IN ATIS | http://www.aclweb.org/anthology/H/H93/H93-1067.pdf | category:paper author:N. M. Veilleuz; M. Ostendorf
+H93-1068 | PERCEIVED PROSODIC BOUNDARIES AND THEIR PHONETIC CORRELATES | http://www.aclweb.org/anthology/H/H93/H93-1068.pdf | category:paper author:Renk Collier; Jan Roelof de Pijper; Angelien Sanderman
+H93-1069 | Document retrieval and text retrieval | http://www.aclweb.org/anthology/H/H93/H93-1069.pdf | category:paper author:Karen Sparck Jones
+H93-1070 | The Importance of Proper Weighting Methods | http://www.aclweb.org/anthology/H/H93/H93-1070.pdf | category:paper author:Chris Buckley
+H93-1071 | QUERY PROCESSING FOR RETRIEVAL FROM LARGE TEXT BASES | http://www.aclweb.org/anthology/H/H93/H93-1071.pdf | category:paper author:John Broglio; W. Bruce Croft
+H93-1072 | AN OVERVIEW OF DR-LINK AND ITS APPROACH TO DOCUMENT FILTERING | http://www.aclweb.org/anthology/H/H93/H93-1072.pdf | category:paper author:Elizabeth D. Liddy; Woojin Paik; Edmund S. Yu; Kenneth A. McVearry
+H93-1073 | SESSION 13: NEW DIRECTIONS | http://www.aclweb.org/anthology/H/H93/H93-1073.pdf | category:paper author:Ralph Weischedel
+H93-1074 | Mode preference in a simple data-retrieval task | http://www.aclweb.org/anthology/H/H93/H93-1074.pdf | category:paper author:Alexander L Rudnicky
+H93-1075 | A SIMULATION-BASED RESEARCH STRATEGY FOR DESIGNING COMPLEX NL SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1075.pdf | category:paper author:Sharon Oviatt; Philip Cohen; Michelle Wang; Jeremy Gaston
+H93-1076 | Speech and Text-Image Processing in Documents | http://www.aclweb.org/anthology/H/H93/H93-1076.pdf | category:paper author:Marcia A. Bush
+H93-1077 | MACHINE LEARNING TECHNIQUES FOR DOCUMENT FILTERING | http://www.aclweb.org/anthology/H/H93/H93-1077.pdf | category:paper author:Richard M. Tong; Lee A. Appelbaum
+H93-1078 | Gisting Continuous Speech | http://www.aclweb.org/anthology/H/H93/H93-1078.pdf | category:paper author:J. R. Rohlicek
+H93-1079 | ROBUST CONTINUOUS SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1079.pdf | category:paper author:John Makhoul; Richard Schwartz
+H93-1080 | ROBUSTNESS, PORTABILITY, AND SCALABILITY OF NATURAL LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1080.pdf | category:paper author:Ralph Weischedel
+H93-1081 | USABLE, REAL-TIME, INTERACTIVE SPOKEN LANGUAGE SYSTEMS | http://www.aclweb.org/anthology/H/H93/H93-1081.pdf | category:paper author:John Makhoul; Madeleine Bates
+H93-1082 | Evaluating the Use of Prosodic Information in Speech Recognition and Understanding | http://www.aclweb.org/anthology/H/H93/H93-1082.pdf | category:paper author:Mari Ostendorf; Patti Price
+H93-1083 | Segment-Based Acoustic Models for Continuous Speech Recognition | http://www.aclweb.org/anthology/H/H93/H93-1083.pdf | category:paper author:Mari Ostendorf; J. Robin Rohlicek
+H93-1084 | SPOKEN-LANGUAGE RESEARCH AT CARNEGIE MELLON | http://www.aclweb.org/anthology/H/H93/H93-1084.pdf | category:paper author:Raj Reddy
+H93-1085 | Extracting Constraints on Word Usage from Large Text Corpora | http://www.aclweb.org/anthology/H/H93/H93-1085.pdf | category:paper author:Kathleen McKeown; Rebecca Passonneau
+H93-1086 | The SMART Information Retrieval Project | http://www.aclweb.org/anthology/H/H93/H93-1086.pdf | category:paper author:C. Buckley; G. Salton; J. Allan
+H93-1087 | LINGSTAT: AN INTERACTIVE, MACHINE-AIDED TRANSLATION SYSTEM | http://www.aclweb.org/anthology/H/H93/H93-1087.pdf | category:paper author:Jonathan Yamron; James Baker
+H93-1088 | RESEARCH IN LARGE VOCABULARY CONTINUOUS SPEECH RECOGNITION | http://www.aclweb.org/anthology/H/H93/H93-1088.pdf | category:paper author:Janet Baker; Larry Gillick; Robert Roth
+H93-1089 | SHOGUN- MULTILINGUAL DATA EXTRACTION FOR TIPSTER | http://www.aclweb.org/anthology/H/H93/H93-1089.pdf | category:paper author:P. Jacobs
+H93-1090 | MatchPlus: A CONTEXT VECTOR SYSTEM FOR DOCUMENT RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1090.pdf | category:paper author:Stephen L Gallant; William R. Caid
+H93-1091 | Applying Statistical Methods to Machine Translation | http://www.aclweb.org/anthology/H/H93/H93-1091.pdf | category:paper author:Peter E Brown
+H93-1092 | Automatic Extraction of Grammars From Annotated Text | http://www.aclweb.org/anthology/H/H93/H93-1092.pdf | category:paper author:Salim Roukos
+H93-1093 | EVALUATION AND ANALYSIS OF AUDITORY MODEL FRONT ENDS FOR ROBUST SPEECH RECOGNITION PROGRAM SUMMARY | http://www.aclweb.org/anthology/H/H93/H93-1093.pdf | category:paper author:Richard P. Lippmann
+H93-1094 | ROBUST CONTINUOUS SPEECH RECOGNITION TECHNOLOGY PROGRAM SUMMARY | http://www.aclweb.org/anthology/H/H93/H93-1094.pdf | category:paper author:Clifford J. Weinstein; Douglas B. Paul
+H93-1095 | Spoken Language Recognition and Understanding | http://www.aclweb.org/anthology/H/H93/H93-1095.pdf | category:paper author:Victor Zue; Lynette Hirschman
+H93-1096 | NIST-DARPA Interagency Agreement: Spoken Language Program | http://www.aclweb.org/anthology/H/H93/H93-1096.pdf | category:paper author:David S. Pallett
+H93-1097 | INFORMATION EXTRACTION SYSTEM EVALUATION | http://www.aclweb.org/anthology/H/H93/H93-1097.pdf | category:paper author:Beth M. Sundheim
+H93-1098 | THE CONSORTIUM FOR LEXICAL RESEARCH | http://www.aclweb.org/anthology/H/H93/H93-1098.pdf | category:paper author:Y. Wilks
+H93-1099 | Diderot: TIPSTER Program, Automatic Data Extraction from Text Utilizing Semantic Analysis | http://www.aclweb.org/anthology/H/H93/H93-1099.pdf | category:paper author:Y. Wilks; J. Pustejovsky; J. Cowie
+H93-1100 | Pangloss: A Knowledge-based Machine Assisted Translation Research Project - Site | http://www.aclweb.org/anthology/H/H93/H93-1100.pdf | category:paper author:Y. Wilks
+H93-1101 | RESEARCH IN NATURAL LANGUAGE PROCESSING | http://www.aclweb.org/anthology/H/H93/H93-1101.pdf | category:paper author:Ralph Grishman
+H93-1102 | ROBUST TEXT PROCESSING AND INFORMATION RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1102.pdf | category:paper author:Tomek Strzalkowski
+H93-1103 | WORDNET: A LEXICAL DATABASE FOR ENGLISH | http://www.aclweb.org/anthology/H/H93/H93-1103.pdf | category:paper author:George A. Miller
+H93-1104 | Information Retrieval from Large Textbases | http://www.aclweb.org/anthology/H/H93/H93-1104.pdf | category:paper author:K.L. Kwok
+H93-1105 | EXPLOITING CONCEPT SPACES FOR TEXT RETRIEVAL | http://www.aclweb.org/anthology/H/H93/H93-1105.pdf | category:paper author:Ellen M. Voorhees
+H93-1106 | ANNOTATION OF ATIS DATA | http://www.aclweb.org/anthology/H/H93/H93-1106.pdf | category:paper author:Kate Hunicke-Smith; Jared Bernstein
+H93-1107 | CSR CORPUS COLLECTION | http://www.aclweb.org/anthology/H/H93/H93-1107.pdf | category:paper author:Denise Danielson; Jared Bernstein
+H93-1108 | A REAL-TIME SPOKEN-LANGUAGE SYSTEM FOR INTERACTIVE PROBLEM SOLVING | http://www.aclweb.org/anthology/H/H93/H93-1108.pdf | category:paper author:Patti Price; Robert C. Moore
+H93-1109 | HIGH PERFORMANCE SPEECH RECOGNITION USING CONSISTENCY MODELING | http://www.aclweb.org/anthology/H/H93/H93-1109.pdf | category:paper author:Vassilios Digalakis; Hy Murveit; Mitch Weintraub
+H93-1110 | DR-LINK: Document Retrieval Using Linguistic Knowledge | http://www.aclweb.org/anthology/H/H93/H93-1110.pdf | category:paper author:Elizabeth D. Liddy; Sung H. Myaeng
+H93-1111 | UMass/Hughes TIPSTER Project on Extraction from Text | http://www.aclweb.org/anthology/H/H93/H93-1111.pdf | category:paper author:Wendy Lehnert; Charles Dolan
+H93-1112 | Text Retrieval and Routing Techniques Based on an Inference Net | http://www.aclweb.org/anthology/H/H93/H93-1112.pdf | category:paper author:W. Bruce Croft
+H93-1113 | Natural Language Research | http://www.aclweb.org/anthology/H/H93/H93-1113.pdf | category:paper author:Aravind Joshi; Mitch Marcus; Mark Steedman; Bonnie Webber
+H93-1114 | NATURAL LANGUAGE PLANNING DIALOGUE FOR INTELLIGENT APPLICATIONS | http://www.aclweb.org/anthology/H/H93/H93-1114.pdf | category:paper author:James F. Allen; Len Schubert
+H93-1115 | THE PENMAN PROJECT ON KNOWLEDGE-BASED MACHINE TRANSLATION | http://www.aclweb.org/anthology/H/H93/H93-1115.pdf | category:paper author:Eduard Hovy

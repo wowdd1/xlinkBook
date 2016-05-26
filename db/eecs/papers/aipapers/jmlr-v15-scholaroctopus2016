@@ -1,120 +1,120 @@
-jmlr-v15-1 | Bridging Viterbi and Posterior Decoding: A Generalized Risk Approach to Hidden Path Inference Based on Hidden Markov Models | http:/papers/v15/lember14a.html | author:JÃ¼ri Lember, Alexey A. Koloydenko
-jmlr-v15-2 | Fast SVM Training Using Approximate Extreme Points | http:/papers/v15/nandan14a.html | author:Manu Nandan, Pramod P. Khargonekar, Sachin S. Talathi
-jmlr-v15-3 | Detecting Click Fraud in Online Advertising: A Data Mining Approach | http:/papers/v15/oentaryo14a.html | author:Richard Oentaryo, Ee-Peng Lim, Michael Finegold, David Lo, Feida Zhu, Clifton Phua, Eng-Yeow Cheu, Ghim-Eng Yap, Kelvin Sim, Minh Nhut Nguyen, Kasun Perera, Bijay Neupane, Mustafa Faisal, Zeyar Aung, Wei Lee Woon, Wei Chen, Dhaval Patel, Daniel Berrar
-jmlr-v15-4 | EnsembleSVM: A Library for Ensemble Learning Using Support Vector Machines | http:/papers/v15/claesen14a.html | author:Marc Claesen, Frank De Smet, Johan A.K. Suykens, Bart De Moor
-jmlr-v15-5 | A Junction Tree Framework for Undirected Graphical Model Selection | http:/papers/v15/vats14a.html | author:Divyanshu Vats, Robert D. Nowak
-jmlr-v15-6 | Axioms for Graph Clustering Quality Functions | http:/papers/v15/vanlaarhoven14a.html | author:Twan van Laarhoven, Elena Marchiori
-jmlr-v15-7 | Convex vs Non-Convex Estimators for Regression and Sparse Estimation: the Mean Squared Error Properties of ARD and GLasso | http:/papers/v15/aravkin14a.html | author:Aleksandr Aravkin, James V. Burke, Alessandro Chiuso, Gianluigi Pillonetto
-jmlr-v15-8 | Using Trajectory Data to Improve Bayesian Optimization for Reinforcement Learning | http:/papers/v15/wilson14a.html | author:Aaron Wilson, Alan Fern, Prasad Tadepalli
-jmlr-v15-9 | Information Theoretical Estimators Toolbox | http:/papers/v15/szabo14a.html | author:ZoltÃ¡n SzabÃ³
-jmlr-v15-10 | Off-policy Learning With Eligibility Traces: A Survey | http:/papers/v15/geist14a.html | author:Matthieu Geist, Bruno Scherrer
-jmlr-v15-11 | Early Stopping and Non-parametric Regression: An Optimal Data-dependent Stopping Rule | http:/papers/v15/raskutti14a.html | author:Garvesh Raskutti, Martin J. Wainwright, Bin Yu
-jmlr-v15-12 | Unbiased Generative Semi-Supervised Learning | http:/papers/v15/foxroberts14a.html | author:Patrick Fox-Roberts, Edward Rosten
-jmlr-v15-13 | Node-Based Learning of Multiple Gaussian Graphical Models | http:/papers/v15/mohan14a.html | author:Karthik Mohan, Palma London, Maryam Fazel, Daniela Witten, Su-In Lee
-jmlr-v15-14 | The FASTCLIME Package for Linear Programming and Large-Scale Precision Matrix Estimation in R | http:/papers/v15/pang14a.html | author:Haotian Pang, Han Liu, Robert Vanderbei
-jmlr-v15-15 | LIBOL: A Library for Online Learning Algorithms | http:/papers/v15/hoi14a.html | author:Steven C.H. Hoi, Jialei Wang, Peilin Zhao
-jmlr-v15-16 | Improving Markov Network Structure Learning Using Decision Trees | http:/papers/v15/lowd14a.html | author:Daniel Lowd, Jesse Davis
-jmlr-v15-17 | Ground Metric Learning | http:/papers/v15/cuturi14a.html | author:Marco Cuturi, David Avis
-jmlr-v15-18 | Link Prediction in Graphs with Autoregressive Features | http:/papers/v15/richard14a.html | author:Emile Richard, StÃ©phane GaÃ¯ffas, Nicolas Vayatis
-jmlr-v15-19 | Adaptivity of Averaged Stochastic Gradient Descent to Local Strong Convexity for Logistic Regression | http:/papers/v15/bach14a.html | author:Francis Bach
-jmlr-v15-20 | Random Intersection Trees | http:/papers/v15/shah14a.html | author:Rajen Dinesh Shah, Nicolai Meinshausen
-jmlr-v15-21 | Reinforcement Learning for Closed-Loop Propofol Anesthesia: A Study in Human Volunteers | http:/papers/v15/moore14a.html | author:Brett L Moore, Larry D Pyeatt, Vivekanand Kulkarni, Periklis Panousis, Kevin Padrez, Anthony G Doufas
-jmlr-v15-22 | Clustering Hidden Markov Models with Variational HEM | http:/papers/v15/coviello14a.html | author:Emanuele Coviello, Antoni B. Chan, Gert R.G. Lanckriet
-jmlr-v15-23 | A Novel M-Estimator for Robust PCA | http:/papers/v15/zhang14a.html | author:Teng Zhang, Gilad Lerman
-jmlr-v15-24 | Policy Evaluation with Temporal Differences: A Survey and Comparison | http:/papers/v15/dann14a.html | author:Christoph Dann, Gerhard Neumann, Jan Peters
-jmlr-v15-25 | Active Learning Using Smooth Relative Regret Approximations with Applications | http:/papers/v15/ailon14a.html | author:Nir Ailon, Ron Begleiter, Esther Ezra
-jmlr-v15-26 | An Extension of Slow Feature Analysis for Nonlinear Blind Source Separation | http:/papers/v15/sprekeler14a.html | author:Henning Sprekeler, Tiziano Zito, Laurenz Wiskott
-jmlr-v15-27 | Natural Evolution Strategies | http:/papers/v15/wierstra14a.html | author:Daan Wierstra, Tom Schaul, Tobias Glasmachers, Yi Sun, Jan Peters, JÃ¼rgen Schmidhuber
-jmlr-v15-28 | Conditional Random Field with High-order Dependencies for Sequence Labeling and Segmentation | http:/papers/v15/cuong14a.html | author:Nguyen Viet Cuong, Nan Ye, Wee Sun Lee, Hai Leong Chieu
-jmlr-v15-29 | Ellipsoidal Rounding for Nonnegative Matrix Factorization Under Noisy Separability | http:/papers/v15/mizutani14a.html | author:Tomohiko Mizutani
-jmlr-v15-30 | Improving Prediction from Dirichlet Process Mixtures via Enrichment | http:/papers/v15/wade14a.html | author:Sara Wade, David B. Dunson, Sonia Petrone, Lorenzo Trippa
-jmlr-v15-31 | Gibbs Max-margin Topic Models with Data Augmentation | http:/papers/v15/zhu14a.html | author:Jun Zhu, Ning Chen, Hugh Perkins, Bo Zhang
-jmlr-v15-32 | A Reliable Effective Terascale Linear Learning System | http:/papers/v15/agarwal14a.html | author:Alekh Agarwal, Oliveier Chapelle, Miroslav DudÃ­k, John Langford
-jmlr-v15-33 | New Learning Methods for Supervised and Unsupervised Preference Aggregation | http:/papers/v15/volkovs14a.html | author:Maksims N. Volkovs, Richard S. Zemel
-jmlr-v15-34 | Prediction and Clustering in Signed Networks: A Local to Global Perspective | http:/papers/v15/chiang14a.html | author:Kai-Yang Chiang, Cho-Jui Hsieh, Nagarajan Natarajan, Inderjit S. Dhillon, Ambuj Tewari
-jmlr-v15-35 | Bayesian Nonparametric Comorbidity Analysis of Psychiatric Disorders | http:/papers/v15/ruiz14a.html | author:Francisco J. R. Ruiz, Isabel Valera, Carlos Blanco, Fernando Perez-Cruz
-jmlr-v15-36 | Robust Near-Separable Nonnegative Matrix Factorization Using Linear Optimization | http:/papers/v15/gillis14a.html | author:Nicolas Gillis, Robert Luce
-jmlr-v15-37 | Follow the Leader If You Can, Hedge If You Must | http:/papers/v15/rooij14a.html | author:Steven de Rooij, Tim van Erven, Peter D. GrÃ¼nwald, Wouter M. Koolen
-jmlr-v15-38 | Structured Prediction via Output Space Search | http:/papers/v15/doppa14a.html | author:Janardhan Rao Doppa, Alan Fern, Prasad Tadepalli
-jmlr-v15-39 | Fully Simplified Multivariate Normal Updates in Non-Conjugate Variational Message Passing | http:/papers/v15/wand14a.html | author:Matt P. Wand
-jmlr-v15-40 | Towards Ultrahigh Dimensional Feature Selection for Big Data | http:/papers/v15/tan14a.html | author:Mingkui Tan, Ivor W. Tsang, Li Wang
-jmlr-v15-41 | Adaptive Sampling for Large Scale Boosting | http:/papers/v15/dubout14a.html | author:Charles Dubout, Francois Fleuret
-jmlr-v15-42 | Manopt, a Matlab Toolbox for Optimization on Manifolds | http:/papers/v15/boumal14a.html | author:Nicolas Boumal, Bamdev Mishra, P.-A. Absil, Rodolphe Sepulchre
-jmlr-v15-43 | Training Highly Multiclass Classifiers | http:/papers/v15/gupta14a.html | author:Maya R. Gupta, Samy Bengio, Jason Weston
-jmlr-v15-44 | Locally Adaptive Factor Processes for Multivariate Time Series | http:/papers/v15/durante14a.html | author:Daniele Durante, Bruno Scarpa, David B. Dunson
-jmlr-v15-45 | Iteration Complexity of Feasible Descent Methods for Convex Optimization | http:/papers/v15/wang14a.html | author:Po-Wei Wang, Chih-Jen Lin
-jmlr-v15-46 | High-Dimensional Covariance Decomposition into Sparse Markov and Independence Models | http:/papers/v15/janzamin14a.html | author:Majid Janzamin, Animashree Anandkumar
-jmlr-v15-47 | The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo | http:/papers/v15/hoffman14a.html | author:Matthew D. Hoffman, Andrew Gelman
-jmlr-v15-48 | Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife | http:/papers/v15/wager14a.html | author:Stefan Wager, Trevor Hastie, Bradley Efron
-jmlr-v15-49 | Surrogate Regret Bounds for Bipartite Ranking via Strongly Proper Losses | http:/papers/v15/agarwal14b.html | author:Shivani Agarwal
-jmlr-v15-50 | Adaptive Minimax Regression Estimation over Sparse $\ell_q$-Hulls | http:/papers/v15/wang14b.html | author:Zhan Wang, Sandra Paterlini, Fuchang Gao, Yuhong Yang
-jmlr-v15-51 | Graph Estimation From Multi-Attribute Data | http:/papers/v15/kolar14a.html | author:Mladen Kolar, Han Liu, Eric P. Xing
-jmlr-v15-52 | Hitting and Commute Times in Large Random Neighborhood Graphs | http:/papers/v15/vonluxburg14a.html | author:Ulrike von Luxburg, Agnes Radl, Matthias Hein
-jmlr-v15-53 | Bayesian Inference with Posterior Regularization and Applications to Infinite Latent SVMs | http:/papers/v15/zhu14b.html | author:Jun Zhu, Ning Chen, Eric P. Xing
-jmlr-v15-54 | Expectation Propagation for Neural Networks with Sparsity-Promoting Priors | http:/papers/v15/jylanki14a.html | author:Pasi JylÃ¤nki, Aapo Nummenmaa, Aki Vehtari
-jmlr-v15-55 | Pattern Alternating Maximization Algorithm for Missing Data in High-Dimensional Problems | http:/papers/v15/staedler14a.html | author:Nicolas StÃ¤dler, Daniel J. Stekhoven, Peter BÃ¼hlmann
-jmlr-v15-56 | Dropout: A Simple Way to Prevent Neural Networks from Overfitting | http:/papers/v15/srivastava14a.html | author:Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov
-jmlr-v15-57 | Sparse Factor Analysis for Learning and Content Analytics | http:/papers/v15/lan14a.html | author:Andrew S. Lan, Andrew E. Waters, Christoph Studer, Richard G. Baraniuk
-jmlr-v15-58 | Causal Discovery with Continuous Additive Noise Models | http:/papers/v15/peters14a.html | author:Jonas Peters, Joris M. Mooij, Dominik Janzing, Bernhard SchÃ¶lkopf
-jmlr-v15-59 | pystruct - Learning Structured Prediction in Python | http:/papers/v15/mueller14a.html | author:Andreas C. MÃ¼ller, Sven Behnke
-jmlr-v15-60 | The Student-t Mixture as a Natural Image Patch Prior with Application to Image Compression | http:/papers/v15/vandenoord14a.html | author:AÃ¤ron van den Oord, Benjamin Schrauwen
-jmlr-v15-61 | Parallel MCMC with Generalized Elliptical Slice Sampling | http:/papers/v15/nishihara14a.html | author:Robert Nishihara, Iain Murray, Ryan P. Adams
-jmlr-v15-62 | Classifier Cascades and Trees for Minimizing Feature Evaluation Cost | http:/papers/v15/xu14a.html | author:Zhixiang (Eddie) Xu, Matt J. Kusner, Kilian Q. Weinberger, Minmin Chen, Olivier Chapelle
-jmlr-v15-63 | Particle Gibbs with Ancestor Sampling | http:/papers/v15/lindsten14a.html | author:Fredrik Lindsten, Michael I. Jordan, Thomas B. SchÃ¶n
-jmlr-v15-64 | Ramp Loss Linear Programming Support Vector Machine | http:/papers/v15/huang14a.html | author:Xiaolin Huang, Lei Shi, Johan A.K. Suykens
-jmlr-v15-65 | Clustering Partially Observed Graphs via Convex Optimization | http:/papers/v15/chen14a.html | author:Yudong Chen, Ali Jalali, Sujay Sanghavi, Huan Xu
-jmlr-v15-66 | A Tensor Approach to Learning Mixed Membership Community Models | http:/papers/v15/anandkumar14a.html | author:Animashree  Anandkumar, Rong Ge, Daniel Hsu, Sham M. Kakade
-jmlr-v15-67 | Cover Tree Bayesian Reinforcement Learning | http:/papers/v15/tziortziotis14a.html | author:Nikolaos Tziortziotis, Christos Dimitrakakis, Konstantinos Blekas
-jmlr-v15-68 | Efficient State-Space Inference of Periodic Latent Force Models | http:/papers/v15/reece14a.html | author:Steven Reece, Siddhartha Ghosh, Alex Rogers, Stephen Roberts, Nicholas R. Jennings
-jmlr-v15-69 | Spectral Learning of Latent-Variable PCFGs: Algorithms and Sample Complexity | http:/papers/v15/cohen14a.html | author:Shay B. Cohen, Karl Stratos, Michael Collins, Dean P. Foster, Lyle Ungar
-jmlr-v15-70 | On Multilabel Classification and Ranking with Bandit Feedback | http:/papers/v15/gentile14a.html | author:Claudio Gentile, Francesco Orabona
-jmlr-v15-71 | Beyond the Regret Minimization Barrier: Optimal Algorithms for Stochastic Strongly-Convex Optimization | http:/papers/v15/hazan14a.html | author:Elad Hazan, Satyen Kale
-jmlr-v15-72 | One-Shot-Learning Gesture Recognition using HOG-HOF Features | http:/papers/v15/konecny14a.html | author:Jakub Konecny, Michal Hagara
-jmlr-v15-73 | Contextual Bandits with Similarity Information | http:/papers/v15/slivkins14a.html | author:Aleksandrs Slivkins
-jmlr-v15-74 | Boosting Algorithms for Detector Cascade Learning | http:/papers/v15/saberian14a.html | author:Mohammad Saberian, Nuno Vasconcelos
-jmlr-v15-75 | Efficient and Accurate Methods for Updating Generalized Linear Models with Multiple Feature Additions | http:/papers/v15/dhurandhar14a.html | author:Amit Dhurandhar, Marek Petrik
-jmlr-v15-76 | Bayesian Estimation of Causal Direction in Acyclic Structural Equation Models with Individual-specific Confounder Variables and Non-Gaussian Distributions | http:/papers/v15/shimizu14a.html | author:Shohei Shimizu, Kenneth Bollen
-jmlr-v15-77 | A Truncated EM Approach for Spike-and-Slab Sparse Coding | http:/papers/v15/sheikh14a.html | author:Abdul-Saboor Sheikh, Jacquelyn A. Shelton, JÃ¶rg LÃ¼cke
-jmlr-v15-78 | Efficient Occlusive Components Analysis | http:/papers/v15/henniges14a.html | author:Marc Henniges, Richard E. Turner, Maneesh Sahani, Julian Eggert, JÃ¶rg LÃ¼cke
-jmlr-v15-79 | Optimality of Graphlet Screening in High Dimensional Variable Selection | http:/papers/v15/jin14a.html | author:Jiashun Jin, Cun-Hui Zhang, Qi Zhang
-jmlr-v15-80 | Tensor Decompositions for Learning Latent Variable Models | http:/papers/v15/anandkumar14b.html | author:Animashree Anandkumar, Rong Ge, Daniel Hsu, Sham M. Kakade, Matus Telgarsky
-jmlr-v15-81 | Bayesian Entropy Estimation for Countable Discrete Distributions | http:/papers/v15/archer14a.html | author:Evan Archer, Il Memming Park, Jonathan W. Pillow
-jmlr-v15-82 | Confidence Intervals and Hypothesis Testing for High-Dimensional Regression | http:/papers/v15/javanmard14a.html | author:Adel Javanmard, Andrea Montanari
-jmlr-v15-83 | QUIC: Quadratic Approximation for Sparse Inverse Covariance Estimation | http:/papers/v15/hsieh14a.html | author:Cho-Jui Hsieh, MÃ¡tyÃ¡s A. Sustik, Inderjit S. Dhillon, Pradeep Ravikumar
-jmlr-v15-84 | Multimodal Learning with Deep Boltzmann Machines | http:/papers/v15/srivastava14b.html | author:Nitish Srivastava, Ruslan Salakhutdinov
-jmlr-v15-85 | Optimal Data Collection For Informative Rankings Expose Well-Connected Graphs | http:/papers/v15/osting14a.html | author:Braxton Osting, Christoph Brune, Stanley J.  Osher
-jmlr-v15-86 | Bayesian Co-Boosting for Multi-modal Gesture Recognition | http:/papers/v15/wu14a.html | author:Jiaxiang Wu, Jian Cheng
-jmlr-v15-87 | Effective String Processing and Matching for Author Disambiguation | http:/papers/v15/chin14a.html | author:Wei-Sheng Chin, Yong Zhuang, Yu-Chin Juan, Felix Wu, Hsiao-Yu Tung, Tong Yu, Jui-Pin Wang, Cheng-Xia Chang, Chun-Pai Yang, Wei-Cheng Chang, Kuan-Hao Huang, Tzu-Ming Kuo, Shan-Wei Lin, Young-San Lin, Yu-Chen Lu, Yu-Chuan Su, Cheng-Kuang Wei, Tu-Chun Yin, Chun-Liang Li, Ting-Wei Lin, Cheng-Hao Tsai, Shou-De Lin, Hsuan-Tien Lin, Chih-Jen Lin
-jmlr-v15-88 | High-Dimensional Learning of Linear Causal Networks via Inverse Covariance Estimation | http:/papers/v15/loh14a.html | author:Po-Ling Loh, Peter BÃ¼hlmann
-jmlr-v15-89 | Recursive Teaching Dimension, VC-Dimension and Sample Compression | http:/papers/v15/doliwa14a.html | author:Thorsten Doliwa, Gaojian Fan, Hans Ulrich Simon, Sandra Zilles
-jmlr-v15-90 | Do we Need Hundreds of Classifiers to Solve Real World Classification Problems? | http:/papers/v15/delgado14a.html | author:Manuel FernÃ¡ndez-Delgado, Eva Cernadas, SenÃ©n Barro, Dinani Amorim
-jmlr-v15-91 | ooDACE Toolbox: A Flexible Object-Oriented Kriging Implementation | http:/papers/v15/couckuyt14a.html | author:Ivo Couckuyt, Tom Dhaene, Piet Demeester
-jmlr-v15-92 | Robust Online Gesture Recognition with Crowdsourced Annotations | http:/papers/v15/nguyendinh14a.html | author:Long-Van Nguyen-Dinh, Alberto Calatroni, Gerhard TrÃ¶ster
-jmlr-v15-93 | Accelerating t-SNE using Tree-Based Algorithms | http:/papers/v15/vandermaaten14a.html | author:Laurens van der Maaten
-jmlr-v15-94 | Set-Valued Approachability and Online Learning with Partial Monitoring | http:/papers/v15/mannor14a.html | author:Shie Mannor, Vianney Perchet, Gilles Stoltz
-jmlr-v15-95 | Learning Graphical Models With Hubs | http:/papers/v15/tan14b.html | author:Kean Ming Tan, Palma London, Karthik Mohan, Su-In Lee, Maryam Fazel, Daniela Witten
-jmlr-v15-96 | Inconsistency of Pitman-Yor Process Mixtures for the Number of Components | http:/papers/v15/miller14a.html | author:Jeffrey W. Miller, Matthew T. Harrison
-jmlr-v15-97 | On the Bayes-Optimality of F-Measure Maximizers | http:/papers/v15/waegeman14a.html | author:Willem Waegeman, Krzysztof Dembczynski, Arkadiusz Jachnik, Weiwei Cheng, Eyke HÃ¼llermeier
-jmlr-v15-98 | Active Contextual Policy Search | http:/papers/v15/fabisch14a.html | author:Alexander Fabisch, Jan Hendrik Metzen
-jmlr-v15-99 | SPMF: A Java Open-Source Pattern Mining Library | http:/papers/v15/fournierviger14a.html | author:Philippe Fournier-Viger, Antonio Gomariz, Ted Gueniche, Azadeh Soltani, Cheng-Wei Wu, Vincent S. Tseng
-jmlr-v15-100 | Efficient Learning and Planning with Compressed Predictive States | http:/papers/v15/hamilton14a.html | author:William Hamilton, Mahdi Milani Fard, Joelle Pineau
-jmlr-v15-101 | Matrix Completion with the Trace Norm: Learning, Bounding, and Transducing | http:/papers/v15/shamir14a.html | author:Ohad Shamir, Shai Shalev-Shwartz
-jmlr-v15-102 | Statistical Analysis of Metric Graph Reconstruction | http:/papers/v15/lecci14a.html | author:Fabrizio Lecci, Alessandro Rinaldo, Larry Wasserman
-jmlr-v15-103 | Revisiting Stein's Paradox: Multi-Task Averaging | http:/papers/v15/feldman14a.html | author:Sergey Feldman, Maya R. Gupta, Bela A. Frigyik
-jmlr-v15-104 | Alternating Linearization for Structured Regularization Problems | http:/papers/v15/lin14a.html | author:Xiaodong Lin, Minh Pham, Andrzej Ruszczy\'{n}ski
-jmlr-v15-105 | The Gesture Recognition Toolkit | http:/papers/v15/gillian14a.html | author:Nicholas Gillian, Joseph A. Paradiso
-jmlr-v15-106 | Multi-Objective Reinforcement Learning using Sets of Pareto Dominating Policies | http:/papers/v15/vanmoffaert14a.html | author:Kristof Van Moffaert, Ann NowÃ©
-jmlr-v15-107 | Convolutional Nets and Watershed Cuts for Real-Time Semantic Labeling of RGBD Videos | http:/papers/v15/couprie14a.html | author:Camille Couprie, ClÃ©ment Farabet, Laurent Najman, Yann LeCun
-jmlr-v15-108 | Seeded Graph Matching for Correlated Erdos-Renyi Graphs | http:/papers/v15/lyzinski14a.html | author:Vince Lyzinski, Donniell E. Fishkind, Carey E. Priebe
-jmlr-v15-109 | Asymptotic Accuracy of Distribution-Based Estimation of Latent Variables | http:/papers/v15/yamazaki14a.html | author:Keisuke Yamazaki
-jmlr-v15-110 | What Regularized Auto-Encoders Learn from the Data-Generating Distribution | http:/papers/v15/alain14a.html | author:Guillaume Alain, Yoshua Bengio
-jmlr-v15-111 | Revisiting Bayesian Blind Deconvolution | http:/papers/v15/wipf14a.html | author:David Wipf, Haichao Zhang
-jmlr-v15-112 | New Results for Random Walk Learning | http:/papers/v15/jackson14a.html | author:Jeffrey C. Jackson, Karl Wimmer
-jmlr-v15-113 | Transfer Learning Decision Forests for Gesture Recognition | http:/papers/v15/goussies14a.html | author:Norberto A. Goussies, SebastiÃ¡n Ubalde, Marta Mejail
-jmlr-v15-114 | Semi-Supervised Eigenvectors for Large-Scale Locally-Biased Learning | http:/papers/v15/hansen14a.html | author:Toke J. Hansen, Michael W. Mahoney
-jmlr-v15-115 | BayesOpt: A Bayesian Optimization Library for Nonlinear Optimization, Experimental Design and Bandits | http:/papers/v15/martinezcantin14a.html | author:Ruben Martinez-Cantin
-jmlr-v15-116 | Order-Independent Constraint-Based Causal Structure Learning | http:/papers/v15/colombo14a.html | author:Diego Colombo, Marloes H. Maathuis
-jmlr-v15-117 | Effective Sampling and Learning for Mallows Models with Pairwise-Preference Data | http:/papers/v15/lu14a.html | author:Tyler Lu, Craig Boutilier
-jmlr-v15-118 | Robust Hierarchical Clustering | http:/papers/v15/balcan14a.html | author:Maria-Florina Balcan, Yingyu Liang, Pramod Gupta
-jmlr-v15-119 | Parallelizing Exploration-Exploitation Tradeoffs in Gaussian Process Bandit Optimization | http:/papers/v15/desautels14a.html | author:Thomas Desautels, Andreas Krause, Joel W. Burdick
-jmlr-v15-120 | Active Imitation Learning: Formal and Practical Reductions to I.I.D. Learning | http:/papers/v15/judah14a.html | author:Kshitij Judah, Alan P. Fern, Thomas G. Dietterich, Prasad Tadepalli
+jmlr-v15-1 | Bridging Viterbi and Posterior Decoding: A Generalized Risk Approach to Hidden Path Inference Based on Hidden Markov Models | http:/papers/v15/lember14a.html | category:paper author:JÃ¼ri Lember, Alexey A. Koloydenko
+jmlr-v15-2 | Fast SVM Training Using Approximate Extreme Points | http:/papers/v15/nandan14a.html | category:paper author:Manu Nandan, Pramod P. Khargonekar, Sachin S. Talathi
+jmlr-v15-3 | Detecting Click Fraud in Online Advertising: A Data Mining Approach | http:/papers/v15/oentaryo14a.html | category:paper author:Richard Oentaryo, Ee-Peng Lim, Michael Finegold, David Lo, Feida Zhu, Clifton Phua, Eng-Yeow Cheu, Ghim-Eng Yap, Kelvin Sim, Minh Nhut Nguyen, Kasun Perera, Bijay Neupane, Mustafa Faisal, Zeyar Aung, Wei Lee Woon, Wei Chen, Dhaval Patel, Daniel Berrar
+jmlr-v15-4 | EnsembleSVM: A Library for Ensemble Learning Using Support Vector Machines | http:/papers/v15/claesen14a.html | category:paper author:Marc Claesen, Frank De Smet, Johan A.K. Suykens, Bart De Moor
+jmlr-v15-5 | A Junction Tree Framework for Undirected Graphical Model Selection | http:/papers/v15/vats14a.html | category:paper author:Divyanshu Vats, Robert D. Nowak
+jmlr-v15-6 | Axioms for Graph Clustering Quality Functions | http:/papers/v15/vanlaarhoven14a.html | category:paper author:Twan van Laarhoven, Elena Marchiori
+jmlr-v15-7 | Convex vs Non-Convex Estimators for Regression and Sparse Estimation: the Mean Squared Error Properties of ARD and GLasso | http:/papers/v15/aravkin14a.html | category:paper author:Aleksandr Aravkin, James V. Burke, Alessandro Chiuso, Gianluigi Pillonetto
+jmlr-v15-8 | Using Trajectory Data to Improve Bayesian Optimization for Reinforcement Learning | http:/papers/v15/wilson14a.html | category:paper author:Aaron Wilson, Alan Fern, Prasad Tadepalli
+jmlr-v15-9 | Information Theoretical Estimators Toolbox | http:/papers/v15/szabo14a.html | category:paper author:ZoltÃ¡n SzabÃ³
+jmlr-v15-10 | Off-policy Learning With Eligibility Traces: A Survey | http:/papers/v15/geist14a.html | category:paper author:Matthieu Geist, Bruno Scherrer
+jmlr-v15-11 | Early Stopping and Non-parametric Regression: An Optimal Data-dependent Stopping Rule | http:/papers/v15/raskutti14a.html | category:paper author:Garvesh Raskutti, Martin J. Wainwright, Bin Yu
+jmlr-v15-12 | Unbiased Generative Semi-Supervised Learning | http:/papers/v15/foxroberts14a.html | category:paper author:Patrick Fox-Roberts, Edward Rosten
+jmlr-v15-13 | Node-Based Learning of Multiple Gaussian Graphical Models | http:/papers/v15/mohan14a.html | category:paper author:Karthik Mohan, Palma London, Maryam Fazel, Daniela Witten, Su-In Lee
+jmlr-v15-14 | The FASTCLIME Package for Linear Programming and Large-Scale Precision Matrix Estimation in R | http:/papers/v15/pang14a.html | category:paper author:Haotian Pang, Han Liu, Robert Vanderbei
+jmlr-v15-15 | LIBOL: A Library for Online Learning Algorithms | http:/papers/v15/hoi14a.html | category:paper author:Steven C.H. Hoi, Jialei Wang, Peilin Zhao
+jmlr-v15-16 | Improving Markov Network Structure Learning Using Decision Trees | http:/papers/v15/lowd14a.html | category:paper author:Daniel Lowd, Jesse Davis
+jmlr-v15-17 | Ground Metric Learning | http:/papers/v15/cuturi14a.html | category:paper author:Marco Cuturi, David Avis
+jmlr-v15-18 | Link Prediction in Graphs with Autoregressive Features | http:/papers/v15/richard14a.html | category:paper author:Emile Richard, StÃ©phane GaÃ¯ffas, Nicolas Vayatis
+jmlr-v15-19 | Adaptivity of Averaged Stochastic Gradient Descent to Local Strong Convexity for Logistic Regression | http:/papers/v15/bach14a.html | category:paper author:Francis Bach
+jmlr-v15-20 | Random Intersection Trees | http:/papers/v15/shah14a.html | category:paper author:Rajen Dinesh Shah, Nicolai Meinshausen
+jmlr-v15-21 | Reinforcement Learning for Closed-Loop Propofol Anesthesia: A Study in Human Volunteers | http:/papers/v15/moore14a.html | category:paper author:Brett L Moore, Larry D Pyeatt, Vivekanand Kulkarni, Periklis Panousis, Kevin Padrez, Anthony G Doufas
+jmlr-v15-22 | Clustering Hidden Markov Models with Variational HEM | http:/papers/v15/coviello14a.html | category:paper author:Emanuele Coviello, Antoni B. Chan, Gert R.G. Lanckriet
+jmlr-v15-23 | A Novel M-Estimator for Robust PCA | http:/papers/v15/zhang14a.html | category:paper author:Teng Zhang, Gilad Lerman
+jmlr-v15-24 | Policy Evaluation with Temporal Differences: A Survey and Comparison | http:/papers/v15/dann14a.html | category:paper author:Christoph Dann, Gerhard Neumann, Jan Peters
+jmlr-v15-25 | Active Learning Using Smooth Relative Regret Approximations with Applications | http:/papers/v15/ailon14a.html | category:paper author:Nir Ailon, Ron Begleiter, Esther Ezra
+jmlr-v15-26 | An Extension of Slow Feature Analysis for Nonlinear Blind Source Separation | http:/papers/v15/sprekeler14a.html | category:paper author:Henning Sprekeler, Tiziano Zito, Laurenz Wiskott
+jmlr-v15-27 | Natural Evolution Strategies | http:/papers/v15/wierstra14a.html | category:paper author:Daan Wierstra, Tom Schaul, Tobias Glasmachers, Yi Sun, Jan Peters, JÃ¼rgen Schmidhuber
+jmlr-v15-28 | Conditional Random Field with High-order Dependencies for Sequence Labeling and Segmentation | http:/papers/v15/cuong14a.html | category:paper author:Nguyen Viet Cuong, Nan Ye, Wee Sun Lee, Hai Leong Chieu
+jmlr-v15-29 | Ellipsoidal Rounding for Nonnegative Matrix Factorization Under Noisy Separability | http:/papers/v15/mizutani14a.html | category:paper author:Tomohiko Mizutani
+jmlr-v15-30 | Improving Prediction from Dirichlet Process Mixtures via Enrichment | http:/papers/v15/wade14a.html | category:paper author:Sara Wade, David B. Dunson, Sonia Petrone, Lorenzo Trippa
+jmlr-v15-31 | Gibbs Max-margin Topic Models with Data Augmentation | http:/papers/v15/zhu14a.html | category:paper author:Jun Zhu, Ning Chen, Hugh Perkins, Bo Zhang
+jmlr-v15-32 | A Reliable Effective Terascale Linear Learning System | http:/papers/v15/agarwal14a.html | category:paper author:Alekh Agarwal, Oliveier Chapelle, Miroslav DudÃ­k, John Langford
+jmlr-v15-33 | New Learning Methods for Supervised and Unsupervised Preference Aggregation | http:/papers/v15/volkovs14a.html | category:paper author:Maksims N. Volkovs, Richard S. Zemel
+jmlr-v15-34 | Prediction and Clustering in Signed Networks: A Local to Global Perspective | http:/papers/v15/chiang14a.html | category:paper author:Kai-Yang Chiang, Cho-Jui Hsieh, Nagarajan Natarajan, Inderjit S. Dhillon, Ambuj Tewari
+jmlr-v15-35 | Bayesian Nonparametric Comorbidity Analysis of Psychiatric Disorders | http:/papers/v15/ruiz14a.html | category:paper author:Francisco J. R. Ruiz, Isabel Valera, Carlos Blanco, Fernando Perez-Cruz
+jmlr-v15-36 | Robust Near-Separable Nonnegative Matrix Factorization Using Linear Optimization | http:/papers/v15/gillis14a.html | category:paper author:Nicolas Gillis, Robert Luce
+jmlr-v15-37 | Follow the Leader If You Can, Hedge If You Must | http:/papers/v15/rooij14a.html | category:paper author:Steven de Rooij, Tim van Erven, Peter D. GrÃ¼nwald, Wouter M. Koolen
+jmlr-v15-38 | Structured Prediction via Output Space Search | http:/papers/v15/doppa14a.html | category:paper author:Janardhan Rao Doppa, Alan Fern, Prasad Tadepalli
+jmlr-v15-39 | Fully Simplified Multivariate Normal Updates in Non-Conjugate Variational Message Passing | http:/papers/v15/wand14a.html | category:paper author:Matt P. Wand
+jmlr-v15-40 | Towards Ultrahigh Dimensional Feature Selection for Big Data | http:/papers/v15/tan14a.html | category:paper author:Mingkui Tan, Ivor W. Tsang, Li Wang
+jmlr-v15-41 | Adaptive Sampling for Large Scale Boosting | http:/papers/v15/dubout14a.html | category:paper author:Charles Dubout, Francois Fleuret
+jmlr-v15-42 | Manopt, a Matlab Toolbox for Optimization on Manifolds | http:/papers/v15/boumal14a.html | category:paper author:Nicolas Boumal, Bamdev Mishra, P.-A. Absil, Rodolphe Sepulchre
+jmlr-v15-43 | Training Highly Multiclass Classifiers | http:/papers/v15/gupta14a.html | category:paper author:Maya R. Gupta, Samy Bengio, Jason Weston
+jmlr-v15-44 | Locally Adaptive Factor Processes for Multivariate Time Series | http:/papers/v15/durante14a.html | category:paper author:Daniele Durante, Bruno Scarpa, David B. Dunson
+jmlr-v15-45 | Iteration Complexity of Feasible Descent Methods for Convex Optimization | http:/papers/v15/wang14a.html | category:paper author:Po-Wei Wang, Chih-Jen Lin
+jmlr-v15-46 | High-Dimensional Covariance Decomposition into Sparse Markov and Independence Models | http:/papers/v15/janzamin14a.html | category:paper author:Majid Janzamin, Animashree Anandkumar
+jmlr-v15-47 | The No-U-Turn Sampler: Adaptively Setting Path Lengths in Hamiltonian Monte Carlo | http:/papers/v15/hoffman14a.html | category:paper author:Matthew D. Hoffman, Andrew Gelman
+jmlr-v15-48 | Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife | http:/papers/v15/wager14a.html | category:paper author:Stefan Wager, Trevor Hastie, Bradley Efron
+jmlr-v15-49 | Surrogate Regret Bounds for Bipartite Ranking via Strongly Proper Losses | http:/papers/v15/agarwal14b.html | category:paper author:Shivani Agarwal
+jmlr-v15-50 | Adaptive Minimax Regression Estimation over Sparse $\ell_q$-Hulls | http:/papers/v15/wang14b.html | category:paper author:Zhan Wang, Sandra Paterlini, Fuchang Gao, Yuhong Yang
+jmlr-v15-51 | Graph Estimation From Multi-Attribute Data | http:/papers/v15/kolar14a.html | category:paper author:Mladen Kolar, Han Liu, Eric P. Xing
+jmlr-v15-52 | Hitting and Commute Times in Large Random Neighborhood Graphs | http:/papers/v15/vonluxburg14a.html | category:paper author:Ulrike von Luxburg, Agnes Radl, Matthias Hein
+jmlr-v15-53 | Bayesian Inference with Posterior Regularization and Applications to Infinite Latent SVMs | http:/papers/v15/zhu14b.html | category:paper author:Jun Zhu, Ning Chen, Eric P. Xing
+jmlr-v15-54 | Expectation Propagation for Neural Networks with Sparsity-Promoting Priors | http:/papers/v15/jylanki14a.html | category:paper author:Pasi JylÃ¤nki, Aapo Nummenmaa, Aki Vehtari
+jmlr-v15-55 | Pattern Alternating Maximization Algorithm for Missing Data in High-Dimensional Problems | http:/papers/v15/staedler14a.html | category:paper author:Nicolas StÃ¤dler, Daniel J. Stekhoven, Peter BÃ¼hlmann
+jmlr-v15-56 | Dropout: A Simple Way to Prevent Neural Networks from Overfitting | http:/papers/v15/srivastava14a.html | category:paper author:Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov
+jmlr-v15-57 | Sparse Factor Analysis for Learning and Content Analytics | http:/papers/v15/lan14a.html | category:paper author:Andrew S. Lan, Andrew E. Waters, Christoph Studer, Richard G. Baraniuk
+jmlr-v15-58 | Causal Discovery with Continuous Additive Noise Models | http:/papers/v15/peters14a.html | category:paper author:Jonas Peters, Joris M. Mooij, Dominik Janzing, Bernhard SchÃ¶lkopf
+jmlr-v15-59 | pystruct - Learning Structured Prediction in Python | http:/papers/v15/mueller14a.html | category:paper author:Andreas C. MÃ¼ller, Sven Behnke
+jmlr-v15-60 | The Student-t Mixture as a Natural Image Patch Prior with Application to Image Compression | http:/papers/v15/vandenoord14a.html | category:paper author:AÃ¤ron van den Oord, Benjamin Schrauwen
+jmlr-v15-61 | Parallel MCMC with Generalized Elliptical Slice Sampling | http:/papers/v15/nishihara14a.html | category:paper author:Robert Nishihara, Iain Murray, Ryan P. Adams
+jmlr-v15-62 | Classifier Cascades and Trees for Minimizing Feature Evaluation Cost | http:/papers/v15/xu14a.html | category:paper author:Zhixiang (Eddie) Xu, Matt J. Kusner, Kilian Q. Weinberger, Minmin Chen, Olivier Chapelle
+jmlr-v15-63 | Particle Gibbs with Ancestor Sampling | http:/papers/v15/lindsten14a.html | category:paper author:Fredrik Lindsten, Michael I. Jordan, Thomas B. SchÃ¶n
+jmlr-v15-64 | Ramp Loss Linear Programming Support Vector Machine | http:/papers/v15/huang14a.html | category:paper author:Xiaolin Huang, Lei Shi, Johan A.K. Suykens
+jmlr-v15-65 | Clustering Partially Observed Graphs via Convex Optimization | http:/papers/v15/chen14a.html | category:paper author:Yudong Chen, Ali Jalali, Sujay Sanghavi, Huan Xu
+jmlr-v15-66 | A Tensor Approach to Learning Mixed Membership Community Models | http:/papers/v15/anandkumar14a.html | category:paper author:Animashree  Anandkumar, Rong Ge, Daniel Hsu, Sham M. Kakade
+jmlr-v15-67 | Cover Tree Bayesian Reinforcement Learning | http:/papers/v15/tziortziotis14a.html | category:paper author:Nikolaos Tziortziotis, Christos Dimitrakakis, Konstantinos Blekas
+jmlr-v15-68 | Efficient State-Space Inference of Periodic Latent Force Models | http:/papers/v15/reece14a.html | category:paper author:Steven Reece, Siddhartha Ghosh, Alex Rogers, Stephen Roberts, Nicholas R. Jennings
+jmlr-v15-69 | Spectral Learning of Latent-Variable PCFGs: Algorithms and Sample Complexity | http:/papers/v15/cohen14a.html | category:paper author:Shay B. Cohen, Karl Stratos, Michael Collins, Dean P. Foster, Lyle Ungar
+jmlr-v15-70 | On Multilabel Classification and Ranking with Bandit Feedback | http:/papers/v15/gentile14a.html | category:paper author:Claudio Gentile, Francesco Orabona
+jmlr-v15-71 | Beyond the Regret Minimization Barrier: Optimal Algorithms for Stochastic Strongly-Convex Optimization | http:/papers/v15/hazan14a.html | category:paper author:Elad Hazan, Satyen Kale
+jmlr-v15-72 | One-Shot-Learning Gesture Recognition using HOG-HOF Features | http:/papers/v15/konecny14a.html | category:paper author:Jakub Konecny, Michal Hagara
+jmlr-v15-73 | Contextual Bandits with Similarity Information | http:/papers/v15/slivkins14a.html | category:paper author:Aleksandrs Slivkins
+jmlr-v15-74 | Boosting Algorithms for Detector Cascade Learning | http:/papers/v15/saberian14a.html | category:paper author:Mohammad Saberian, Nuno Vasconcelos
+jmlr-v15-75 | Efficient and Accurate Methods for Updating Generalized Linear Models with Multiple Feature Additions | http:/papers/v15/dhurandhar14a.html | category:paper author:Amit Dhurandhar, Marek Petrik
+jmlr-v15-76 | Bayesian Estimation of Causal Direction in Acyclic Structural Equation Models with Individual-specific Confounder Variables and Non-Gaussian Distributions | http:/papers/v15/shimizu14a.html | category:paper author:Shohei Shimizu, Kenneth Bollen
+jmlr-v15-77 | A Truncated EM Approach for Spike-and-Slab Sparse Coding | http:/papers/v15/sheikh14a.html | category:paper author:Abdul-Saboor Sheikh, Jacquelyn A. Shelton, JÃ¶rg LÃ¼cke
+jmlr-v15-78 | Efficient Occlusive Components Analysis | http:/papers/v15/henniges14a.html | category:paper author:Marc Henniges, Richard E. Turner, Maneesh Sahani, Julian Eggert, JÃ¶rg LÃ¼cke
+jmlr-v15-79 | Optimality of Graphlet Screening in High Dimensional Variable Selection | http:/papers/v15/jin14a.html | category:paper author:Jiashun Jin, Cun-Hui Zhang, Qi Zhang
+jmlr-v15-80 | Tensor Decompositions for Learning Latent Variable Models | http:/papers/v15/anandkumar14b.html | category:paper author:Animashree Anandkumar, Rong Ge, Daniel Hsu, Sham M. Kakade, Matus Telgarsky
+jmlr-v15-81 | Bayesian Entropy Estimation for Countable Discrete Distributions | http:/papers/v15/archer14a.html | category:paper author:Evan Archer, Il Memming Park, Jonathan W. Pillow
+jmlr-v15-82 | Confidence Intervals and Hypothesis Testing for High-Dimensional Regression | http:/papers/v15/javanmard14a.html | category:paper author:Adel Javanmard, Andrea Montanari
+jmlr-v15-83 | QUIC: Quadratic Approximation for Sparse Inverse Covariance Estimation | http:/papers/v15/hsieh14a.html | category:paper author:Cho-Jui Hsieh, MÃ¡tyÃ¡s A. Sustik, Inderjit S. Dhillon, Pradeep Ravikumar
+jmlr-v15-84 | Multimodal Learning with Deep Boltzmann Machines | http:/papers/v15/srivastava14b.html | category:paper author:Nitish Srivastava, Ruslan Salakhutdinov
+jmlr-v15-85 | Optimal Data Collection For Informative Rankings Expose Well-Connected Graphs | http:/papers/v15/osting14a.html | category:paper author:Braxton Osting, Christoph Brune, Stanley J.  Osher
+jmlr-v15-86 | Bayesian Co-Boosting for Multi-modal Gesture Recognition | http:/papers/v15/wu14a.html | category:paper author:Jiaxiang Wu, Jian Cheng
+jmlr-v15-87 | Effective String Processing and Matching for Author Disambiguation | http:/papers/v15/chin14a.html | category:paper author:Wei-Sheng Chin, Yong Zhuang, Yu-Chin Juan, Felix Wu, Hsiao-Yu Tung, Tong Yu, Jui-Pin Wang, Cheng-Xia Chang, Chun-Pai Yang, Wei-Cheng Chang, Kuan-Hao Huang, Tzu-Ming Kuo, Shan-Wei Lin, Young-San Lin, Yu-Chen Lu, Yu-Chuan Su, Cheng-Kuang Wei, Tu-Chun Yin, Chun-Liang Li, Ting-Wei Lin, Cheng-Hao Tsai, Shou-De Lin, Hsuan-Tien Lin, Chih-Jen Lin
+jmlr-v15-88 | High-Dimensional Learning of Linear Causal Networks via Inverse Covariance Estimation | http:/papers/v15/loh14a.html | category:paper author:Po-Ling Loh, Peter BÃ¼hlmann
+jmlr-v15-89 | Recursive Teaching Dimension, VC-Dimension and Sample Compression | http:/papers/v15/doliwa14a.html | category:paper author:Thorsten Doliwa, Gaojian Fan, Hans Ulrich Simon, Sandra Zilles
+jmlr-v15-90 | Do we Need Hundreds of Classifiers to Solve Real World Classification Problems? | http:/papers/v15/delgado14a.html | category:paper author:Manuel FernÃ¡ndez-Delgado, Eva Cernadas, SenÃ©n Barro, Dinani Amorim
+jmlr-v15-91 | ooDACE Toolbox: A Flexible Object-Oriented Kriging Implementation | http:/papers/v15/couckuyt14a.html | category:paper author:Ivo Couckuyt, Tom Dhaene, Piet Demeester
+jmlr-v15-92 | Robust Online Gesture Recognition with Crowdsourced Annotations | http:/papers/v15/nguyendinh14a.html | category:paper author:Long-Van Nguyen-Dinh, Alberto Calatroni, Gerhard TrÃ¶ster
+jmlr-v15-93 | Accelerating t-SNE using Tree-Based Algorithms | http:/papers/v15/vandermaaten14a.html | category:paper author:Laurens van der Maaten
+jmlr-v15-94 | Set-Valued Approachability and Online Learning with Partial Monitoring | http:/papers/v15/mannor14a.html | category:paper author:Shie Mannor, Vianney Perchet, Gilles Stoltz
+jmlr-v15-95 | Learning Graphical Models With Hubs | http:/papers/v15/tan14b.html | category:paper author:Kean Ming Tan, Palma London, Karthik Mohan, Su-In Lee, Maryam Fazel, Daniela Witten
+jmlr-v15-96 | Inconsistency of Pitman-Yor Process Mixtures for the Number of Components | http:/papers/v15/miller14a.html | category:paper author:Jeffrey W. Miller, Matthew T. Harrison
+jmlr-v15-97 | On the Bayes-Optimality of F-Measure Maximizers | http:/papers/v15/waegeman14a.html | category:paper author:Willem Waegeman, Krzysztof Dembczynski, Arkadiusz Jachnik, Weiwei Cheng, Eyke HÃ¼llermeier
+jmlr-v15-98 | Active Contextual Policy Search | http:/papers/v15/fabisch14a.html | category:paper author:Alexander Fabisch, Jan Hendrik Metzen
+jmlr-v15-99 | SPMF: A Java Open-Source Pattern Mining Library | http:/papers/v15/fournierviger14a.html | category:paper author:Philippe Fournier-Viger, Antonio Gomariz, Ted Gueniche, Azadeh Soltani, Cheng-Wei Wu, Vincent S. Tseng
+jmlr-v15-100 | Efficient Learning and Planning with Compressed Predictive States | http:/papers/v15/hamilton14a.html | category:paper author:William Hamilton, Mahdi Milani Fard, Joelle Pineau
+jmlr-v15-101 | Matrix Completion with the Trace Norm: Learning, Bounding, and Transducing | http:/papers/v15/shamir14a.html | category:paper author:Ohad Shamir, Shai Shalev-Shwartz
+jmlr-v15-102 | Statistical Analysis of Metric Graph Reconstruction | http:/papers/v15/lecci14a.html | category:paper author:Fabrizio Lecci, Alessandro Rinaldo, Larry Wasserman
+jmlr-v15-103 | Revisiting Stein's Paradox: Multi-Task Averaging | http:/papers/v15/feldman14a.html | category:paper author:Sergey Feldman, Maya R. Gupta, Bela A. Frigyik
+jmlr-v15-104 | Alternating Linearization for Structured Regularization Problems | http:/papers/v15/lin14a.html | category:paper author:Xiaodong Lin, Minh Pham, Andrzej Ruszczy\'{n}ski
+jmlr-v15-105 | The Gesture Recognition Toolkit | http:/papers/v15/gillian14a.html | category:paper author:Nicholas Gillian, Joseph A. Paradiso
+jmlr-v15-106 | Multi-Objective Reinforcement Learning using Sets of Pareto Dominating Policies | http:/papers/v15/vanmoffaert14a.html | category:paper author:Kristof Van Moffaert, Ann NowÃ©
+jmlr-v15-107 | Convolutional Nets and Watershed Cuts for Real-Time Semantic Labeling of RGBD Videos | http:/papers/v15/couprie14a.html | category:paper author:Camille Couprie, ClÃ©ment Farabet, Laurent Najman, Yann LeCun
+jmlr-v15-108 | Seeded Graph Matching for Correlated Erdos-Renyi Graphs | http:/papers/v15/lyzinski14a.html | category:paper author:Vince Lyzinski, Donniell E. Fishkind, Carey E. Priebe
+jmlr-v15-109 | Asymptotic Accuracy of Distribution-Based Estimation of Latent Variables | http:/papers/v15/yamazaki14a.html | category:paper author:Keisuke Yamazaki
+jmlr-v15-110 | What Regularized Auto-Encoders Learn from the Data-Generating Distribution | http:/papers/v15/alain14a.html | category:paper author:Guillaume Alain, Yoshua Bengio
+jmlr-v15-111 | Revisiting Bayesian Blind Deconvolution | http:/papers/v15/wipf14a.html | category:paper author:David Wipf, Haichao Zhang
+jmlr-v15-112 | New Results for Random Walk Learning | http:/papers/v15/jackson14a.html | category:paper author:Jeffrey C. Jackson, Karl Wimmer
+jmlr-v15-113 | Transfer Learning Decision Forests for Gesture Recognition | http:/papers/v15/goussies14a.html | category:paper author:Norberto A. Goussies, SebastiÃ¡n Ubalde, Marta Mejail
+jmlr-v15-114 | Semi-Supervised Eigenvectors for Large-Scale Locally-Biased Learning | http:/papers/v15/hansen14a.html | category:paper author:Toke J. Hansen, Michael W. Mahoney
+jmlr-v15-115 | BayesOpt: A Bayesian Optimization Library for Nonlinear Optimization, Experimental Design and Bandits | http:/papers/v15/martinezcantin14a.html | category:paper author:Ruben Martinez-Cantin
+jmlr-v15-116 | Order-Independent Constraint-Based Causal Structure Learning | http:/papers/v15/colombo14a.html | category:paper author:Diego Colombo, Marloes H. Maathuis
+jmlr-v15-117 | Effective Sampling and Learning for Mallows Models with Pairwise-Preference Data | http:/papers/v15/lu14a.html | category:paper author:Tyler Lu, Craig Boutilier
+jmlr-v15-118 | Robust Hierarchical Clustering | http:/papers/v15/balcan14a.html | category:paper author:Maria-Florina Balcan, Yingyu Liang, Pramod Gupta
+jmlr-v15-119 | Parallelizing Exploration-Exploitation Tradeoffs in Gaussian Process Bandit Optimization | http:/papers/v15/desautels14a.html | category:paper author:Thomas Desautels, Andreas Krause, Joel W. Burdick
+jmlr-v15-120 | Active Imitation Learning: Formal and Practical Reductions to I.I.D. Learning | http:/papers/v15/judah14a.html | category:paper author:Kshitij Judah, Alan P. Fern, Thomas G. Dietterich, Prasad Tadepalli

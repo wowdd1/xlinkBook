@@ -1,309 +1,309 @@
-icml-2014-1 | (Near) Dimension Independent Risk Bounds for Differentially Private Learning | http://jmlr.org/proceedings/papers/v32/jain14.pdf | author:Prateek Jain, Abhradeep Guha Thakurta
-icml-2014-2 | A Bayesian Framework for Online Classifier Ensemble | http://jmlr.org/proceedings/papers/v32/bai14.pdf | author:Qinxun Bai, Henry Lam, Stan Sclaroff
-icml-2014-3 | A Bayesian Wilcoxon Signed-rank Test Based on the Dirichlet Process | http://jmlr.org/proceedings/papers/v32/benavoli14.pdf | author:Alessio Benavoli, Giorgio Corani, Francesca Mangili, Marco Zaffalon, Fabrizio Ruggeri
-icml-2014-4 | A Clockwork RNN | http://jmlr.org/proceedings/papers/v32/koutnik14.pdf | author:Jan Koutnik, Klaus Greff, Faustino Gomez, Juergen Schmidhuber
-icml-2014-5 | A Compilation Target for Probabilistic Programming Languages | http://jmlr.org/proceedings/papers/v32/paige14.pdf | author:Brooks Paige, Frank Wood
-icml-2014-6 | A Consistent Histogram Estimator for Exchangeable Graph Models | http://jmlr.org/proceedings/papers/v32/chan14.pdf | author:Stanley Chan, Edoardo Airoldi
-icml-2014-7 | A Convergence Rate Analysis for LogitBoost, MART and Their Variant | http://jmlr.org/proceedings/papers/v32/sunc14.pdf | author:Peng Sun, Tong Zhang, Jie Zhou
-icml-2014-8 | A Deep Semi-NMF Model for Learning Hidden Representations | http://jmlr.org/proceedings/papers/v32/trigeorgis14.pdf | author:George Trigeorgis, Konstantinos Bousmalis, Stefanos Zafeiriou, Bjoern Schuller
-icml-2014-9 | A Deep and Tractable Density Estimator | http://jmlr.org/proceedings/papers/v32/uria14.pdf | author:Benigno Uria, Iain Murray, Hugo Larochelle
-icml-2014-10 | A Discriminative Latent Variable Model for Online Clustering | http://jmlr.org/proceedings/papers/v32/samdani14.pdf | author:Rajhans Samdani, Kai-Wei Chang, Dan Roth
-icml-2014-11 | A Divide-and-Conquer Solver for Kernel Support Vector Machines | http://jmlr.org/proceedings/papers/v32/hsieha14.pdf | author:Cho-Jui Hsieh, Si Si, Inderjit Dhillon
-icml-2014-12 | A Highly Scalable Parallel Algorithm for Isotropic Total Variation Models | http://jmlr.org/proceedings/papers/v32/wangb14.pdf | author:Jie Wang, Qingyang Li, Sen Yang, Wei Fan, Jieping Ye
-icml-2014-13 | A Kernel Independence Test for Random Processes | http://jmlr.org/proceedings/papers/v32/chwialkowski14.pdf | author:Kacper Chwialkowski, Arthur Gretton
-icml-2014-14 | A New Q | http://jmlr.org/proceedings/papers/v32/sutton14.pdf | author:Rich Sutton, Ashique Rupam Mahmood, Doina Precup, Hado van Hasselt
-icml-2014-15 | A PAC-Bayesian Bound for Lifelong Learning | http://jmlr.org/proceedings/papers/v32/pentina14.pdf | author:Anastasia Pentina, Christoph Lampert
-icml-2014-16 | A Physics-Based Model Prior for Object-Oriented MDPs | http://jmlr.org/proceedings/papers/v32/scholz14.pdf | author:Jonathan Scholz, Martin Levihn, Charles Isbell
-icml-2014-17 | A Reversible Infinite HMM using Normalised Random Measures | http://jmlr.org/proceedings/papers/v32/knowles14.pdf | author:Konstantina Palla, David Knowles, Zoubin Ghahramani
-icml-2014-18 | A Single-Pass Algorithm for Efficiently Recovering Sparse Cluster Centers for High-dimensional Data | http://jmlr.org/proceedings/papers/v32/yib14.pdf | author:Jinfeng Yi, Lijun Zhang, Jun Wang, Rong Jin, Anil Jain
-icml-2014-19 | A Statistical Convergence Perspective of Algorithms for Rank Aggregation from Pairwise Data | http://jmlr.org/proceedings/papers/v32/rajkumar14.pdf | author:Arun Rajkumar, Shivani Agarwal
-icml-2014-20 | A Statistical Perspective on Algorithmic Leveraging | http://jmlr.org/proceedings/papers/v32/ma14.pdf | author:Ping Ma, Michael Mahoney, Bin Yu
-icml-2014-21 | A Unifying View of Representer Theorems | http://jmlr.org/proceedings/papers/v32/argyriou14.pdf | author:Andreas Argyriou, Francesco Dinuzzo
-icml-2014-22 | Accelerated Proximal Stochastic Dual Coordinate Ascent for Regularized Loss Minimization | http://jmlr.org/proceedings/papers/v32/shalev-shwartz14.pdf | author:Shai Shalev-Shwartz, Tong Zhang
-icml-2014-23 | Active Detection via Adaptive Submodularity | http://jmlr.org/proceedings/papers/v32/chena14.pdf | author:Yuxin Chen, Hiroaki Shioi, Cesar Fuentes Montesinos, Lian Pin Koh, Serge Wich, Andreas Krause
-icml-2014-24 | Active Learning of Parameterized Skills | http://jmlr.org/proceedings/papers/v32/silva14.pdf | author:Bruno Da Silva, George Konidaris, Andrew Barto
-icml-2014-25 | Active Teaching for Crowdsourcing Classification | http://jmlr.org/proceedings/papers/v32/singla14.pdf | author:Adish Singla, Ilija Bogunovic, Gabor Bartok, Amin Karbasi, Andreas Krause
-icml-2014-26 | Active Transfer Learning under Model Shift | http://jmlr.org/proceedings/papers/v32/wangi14.pdf | author:Xuezhi Wang, Tzu-Kuo Huang, Jeff Schneider
-icml-2014-27 | Adaptive Monte-Carlo via Bandit Allocation | http://jmlr.org/proceedings/papers/v32/neufeld14.pdf | author:James Neufeld, Andras Gyorgy, Csaba Szepesvari, Dale Schuurmans
-icml-2014-28 | Adaptivity and Optimism: An Improved Exponentiated Gradient Algorithm | http://jmlr.org/proceedings/papers/v32/steinhardtb14.pdf | author:Jacob Steinhardt, Percy Liang
-icml-2014-29 | Admixture of Poisson MRFs: A Topic Model with Word Dependencies | http://jmlr.org/proceedings/papers/v32/inouye14.pdf | author:David Inouye, Pradeep Ravikumar, Inderjit Dhillon
-icml-2014-30 | Affinity Weighted Embedding | http://jmlr.org/proceedings/papers/v32/weston14.pdf | author:Jason Weston, Ron Weiss, Hector Yee
-icml-2014-31 | Aggregating Ordinal Labels from Crowds by Minimax Conditional Entropy | http://jmlr.org/proceedings/papers/v32/zhouc14.pdf | author:Dengyong Zhou, Qiang Liu, John Platt, Christopher Meek
-icml-2014-32 | Agnostic Bayesian Learning of Ensembles | http://jmlr.org/proceedings/papers/v32/lacoste14.pdf | author:Alexandre Lacoste, Mario Marchand, Franois Laviolette, Hugo Larochelle
-icml-2014-33 | Alternating Minimization for Mixed Linear Regression | http://jmlr.org/proceedings/papers/v32/yia14.pdf | author:Xinyang Yi, Constantine Caramanis, Sujay Sanghavi
-icml-2014-34 | An Adaptive Accelerated Proximal Gradient Method and its Homotopy Continuation for Sparse Optimization | http://jmlr.org/proceedings/papers/v32/lin14.pdf | author:Qihang Lin, Lin Xiao
-icml-2014-35 | An Adaptive Low Dimensional quasi-Newton Sum of Functions Optimizer | http://jmlr.org/proceedings/papers/v32/sohl-dicksteinb14.pdf | author:Jascha Sohl-Dickstein, Ben Poole, Surya Ganguli
-icml-2014-36 | An Analysis of State-Relevance Weights and Sampling Distributions on L1-Regularized Approximate Linear Programming Approximation Accuracy | http://jmlr.org/proceedings/papers/v32/taylor14.pdf | author:Gavin Taylor, Connor Geer, David Piekut
-icml-2014-37 | An Asynchronous Parallel Stochastic Coordinate Descent Algorithm | http://jmlr.org/proceedings/papers/v32/liud14.pdf | author:Ji Liu, Steve Wright, Christopher Re, Srikrishna Sridhar, Vicotr Bittorf
-icml-2014-38 | An Efficient Approach for Assessing Hyperparameter Importance | http://jmlr.org/proceedings/papers/v32/hutter14.pdf | author:Frank Hutter, Holger Hoos, Kevin Leyton-Brown
-icml-2014-39 | An Information Geometry of Statistical Manifold Learning | http://jmlr.org/proceedings/papers/v32/suna14.pdf | author:Ke Sun, Stéphane Marchand-Maillet
-icml-2014-40 | Anomaly Ranking as Supervised Bipartite Ranking | http://jmlr.org/proceedings/papers/v32/clemencon14.pdf | author:Stephan Clémençon, Sylvain Robbiano
-icml-2014-41 | Anti-differentiating Approximation Algorithms: A case study with Min-cuts, Spectral, and Flow | http://jmlr.org/proceedings/papers/v32/gleich14.pdf | author:David Gleich, Michael Mahoney
-icml-2014-42 | Approximate Policy Iteration Schemes: A Comparison | http://jmlr.org/proceedings/papers/v32/scherrer14.pdf | author:Bruno Scherrer
-icml-2014-43 | Approximation Analysis of Stochastic Gradient Langevin Dynamics by using Fokker-Planck Equation and Ito Process | http://jmlr.org/proceedings/papers/v32/satoa14.pdf | author:Issei Sato, Hiroshi Nakagawa
-icml-2014-44 | Asymptotically consistent estimation of the number of change points in highly dependent time series | http://jmlr.org/proceedings/papers/v32/khaleghi14.pdf | author:Azadeh Khaleghi, Daniil Ryabko
-icml-2014-45 | Asynchronous Distributed ADMM Algorithm for Global Variable Consensus Optimization | http://jmlr.org/proceedings/papers/v32/zhange14.pdf | author:Ruiliang Zhang, James Kwok
-icml-2014-46 | Austerity in MCMC Land: Cutting the Metropolis-Hastings Budget | http://jmlr.org/proceedings/papers/v32/korattikara14.pdf | author:Anoop Korattikara, Yutian Chen, Max Welling
-icml-2014-47 | Automated Inference of Point of View from User Interactions in Collective Intelligence Venues | http://jmlr.org/proceedings/papers/v32/das14.pdf | author:Sanmay Das, Allen Lavoie
-icml-2014-48 | Bayesian Max-margin Multi-Task Learning with Data Augmentation | http://jmlr.org/proceedings/papers/v32/lic14.pdf | author:Chengtao Li, Jun Zhu, Jianfei Chen
-icml-2014-49 | Bayesian Nonparametric Multilevel Clustering with Group-Level Contexts | http://jmlr.org/proceedings/papers/v32/nguyenb14.pdf | author:Tien Vu Nguyen, Dinh Phung, Xuanlong Nguyen, Swetha Venkatesh, Hung Bui
-icml-2014-50 | Bayesian Optimization with Inequality Constraints | http://jmlr.org/proceedings/papers/v32/gardner14.pdf | author:Jacob Gardner, Matt Kusner, Kilian Weinberger, John Cunningham, Zhixiang (Eddie) Xu
-icml-2014-51 | Beta Diffusion Trees | http://jmlr.org/proceedings/papers/v32/heaukulani14.pdf | author:Creighton Heaukulani, David Knowles, Zoubin Ghahramani
-icml-2014-52 | Bias in Natural Actor-Critic Algorithms | http://jmlr.org/proceedings/papers/v32/thomas14.pdf | author:Philip Thomas
-icml-2014-53 | Boosting multi-step autoregressive forecasts | http://jmlr.org/proceedings/papers/v32/taieb14.pdf | author:Souhaib Ben Taieb, Rob Hyndman
-icml-2014-54 | Boosting with Online Binary Learners for the Multiclass Bandit Problem | http://jmlr.org/proceedings/papers/v32/chenb14.pdf | author:Shang-Tse Chen, Hsuan-Tien Lin, Chi-Jen Lu
-icml-2014-55 | Buffer k-d Trees: Processing Massive Nearest Neighbor Queries on GPUs | http://jmlr.org/proceedings/papers/v32/gieseke14.pdf | author:Fabian Gieseke, Justin Heinermann, Cosmin Oancea, Christian Igel
-icml-2014-56 | Circulant Binary Embedding | http://jmlr.org/proceedings/papers/v32/yub14.pdf | author:Felix Yu, Sanjiv Kumar, Yunchao Gong, Shih-Fu Chang
-icml-2014-57 | Clustering in the Presence of Background Noise | http://jmlr.org/proceedings/papers/v32/ben-david14.pdf | author:Nika Haghtalab, Shai Ben-David
-icml-2014-58 | Coding for Random Projections | http://jmlr.org/proceedings/papers/v32/lie14.pdf | author:Ping Li, Michael Mitzenmacher, Anshumali Shrivastava
-icml-2014-59 | Coherent Matrix Completion | http://jmlr.org/proceedings/papers/v32/chenc14.pdf | author:Yudong Chen, Srinadh Bhojanapalli, Sujay Sanghavi, Rachel Ward
-icml-2014-60 | Cold-start Active Learning with Robust Ordinal Matrix Factorization | http://jmlr.org/proceedings/papers/v32/houlsby14.pdf | author:Neil Houlsby, Jose Miguel Hernandez-Lobato, Zoubin Ghahramani
-icml-2014-61 | Combinatorial Partial Monitoring Game with Linear Feedback and Its Applications | http://jmlr.org/proceedings/papers/v32/lind14.pdf | author:Tian Lin, Bruno Abrahao, Robert Kleinberg, John Lui, Wei Chen
-icml-2014-62 | Communication-Efficient Distributed Optimization using an Approximate Newton-type Method | http://jmlr.org/proceedings/papers/v32/shamir14.pdf | author:Ohad Shamir, Nati Srebro, Tong Zhang
-icml-2014-63 | Compact Random Feature Maps | http://jmlr.org/proceedings/papers/v32/hamid14.pdf | author:Raffay Hamid, Alex Gittens, Ying Xiao, Dennis Decoste
-icml-2014-64 | Composite Quantization for Approximate Nearest Neighbor Search | http://jmlr.org/proceedings/papers/v32/zhangd14.pdf | author:Ting Zhang, Chao Du, Jingdong Wang
-icml-2014-65 | Compositional Morphology for Word Representations and Language Modelling | http://jmlr.org/proceedings/papers/v32/botha14.pdf | author:Jan Botha, Phil Blunsom
-icml-2014-66 | Computing Parametric Ranking Models via Rank-Breaking | http://jmlr.org/proceedings/papers/v32/soufiani14.pdf | author:Hossein Azari Soufiani, David Parkes, Lirong Xia
-icml-2014-67 | Concentration in Unbounded Metric Spaces and Algorithmic Stability | http://jmlr.org/proceedings/papers/v32/kontorovicha14.pdf | author:Aryeh Kontorovich
-icml-2014-68 | Concept Drift Detection Through Resampling | http://jmlr.org/proceedings/papers/v32/harel14.pdf | author:Maayan Harel, Shie Mannor, Ran El-Yaniv, Koby Crammer
-icml-2014-69 | Condensed Filter Tree for Cost-Sensitive Multi-Label Classification | http://jmlr.org/proceedings/papers/v32/lia14.pdf | author:Chun-Liang Li, Hsuan-Tien Lin
-icml-2014-70 | Consistency of Causal Inference under the Additive Noise Model | http://jmlr.org/proceedings/papers/v32/kpotufe14.pdf | author:Samory Kpotufe, Eleni Sgouritsa, Dominik Janzing, Bernhard Schoelkopf
-icml-2014-71 | Convergence rates for persistence diagram estimation in Topological Data Analysis | http://jmlr.org/proceedings/papers/v32/chazal14.pdf | author:Frédéric Chazal, Marc Glisse, Catherine Labruère, Bertrand Michel
-icml-2014-72 | Convex Total Least Squares | http://jmlr.org/proceedings/papers/v32/malioutov14.pdf | author:Dmitry Malioutov, Nikolai Slavov
-icml-2014-73 | Coordinate-descent for learning orthogonal matrices through Givens rotations | http://jmlr.org/proceedings/papers/v32/shalit14.pdf | author:Uri Shalit, Gal Chechik
-icml-2014-74 | Coupled Group Lasso for Web-Scale CTR Prediction in Display Advertising | http://jmlr.org/proceedings/papers/v32/yan14.pdf | author:Ling Yan, Wu-Jun Li, Gui-Rong Xue, Dingyi Han
-icml-2014-75 | Covering Number for Efficient Heuristic-based POMDP Planning | http://jmlr.org/proceedings/papers/v32/zhanga14.pdf | author:Zongzhang Zhang, David Hsu, Wee Sun Lee
-icml-2014-76 | DeCAF: A Deep Convolutional Activation Feature for Generic Visual Recognition | http://jmlr.org/proceedings/papers/v32/donahue14.pdf | author:Jeff Donahue, Yangqing Jia, Oriol Vinyals, Judy Hoffman, Ning Zhang, Eric Tzeng, Trevor Darrell
-icml-2014-77 | Deep AutoRegressive Networks | http://jmlr.org/proceedings/papers/v32/gregor14.pdf | author:Karol Gregor, Ivo Danihelka, Andriy Mnih, Charles Blundell, Daan Wierstra
-icml-2014-78 | Deep Boosting | http://jmlr.org/proceedings/papers/v32/cortesb14.pdf | author:Corinna Cortes, Mehryar Mohri, Umar Syed
-icml-2014-79 | Deep Generative Stochastic Networks Trainable by Backprop | http://jmlr.org/proceedings/papers/v32/bengio14.pdf | author:Yoshua Bengio, Eric Laufer, Jason Yosinski
-icml-2014-80 | Deep Supervised and Convolutional Generative Stochastic Network for Protein Secondary Structure Prediction | http://jmlr.org/proceedings/papers/v32/zhou14.pdf | author:Jian Zhou, Olga Troyanskaya
-icml-2014-81 | Demystifying Information-Theoretic Clustering | http://jmlr.org/proceedings/papers/v32/steeg14.pdf | author:Greg Ver Steeg, Aram Galstyan, Fei Sha, Simon DeDeo
-icml-2014-82 | Densifying One Permutation Hashing via Rotation for Fast Near Neighbor Search | http://jmlr.org/proceedings/papers/v32/shrivastava14.pdf | author:Anshumali Shrivastava, Ping Li
-icml-2014-83 | Deterministic Anytime Inference for Stochastic Continuous-Time Markov Processes | http://jmlr.org/proceedings/papers/v32/celikkaya14.pdf | author:E. Busra Celikkaya, Christian Shelton
-icml-2014-84 | Deterministic Policy Gradient Algorithms | http://jmlr.org/proceedings/papers/v32/silver14.pdf | author:David Silver, Guy Lever, Nicolas Heess, Thomas Degris, Daan Wierstra, Martin Riedmiller
-icml-2014-85 | Diagnosis determination: decision trees optimizing simultaneously worst and expected testing cost | http://jmlr.org/proceedings/papers/v32/cicalese14.pdf | author:Ferdinando Cicalese, Eduardo Laber, Aline Medeiros Saettler
-icml-2014-86 | Dimension-free Concentration Bounds on Hankel Matrices for Spectral Learning | http://jmlr.org/proceedings/papers/v32/denis14.pdf | author:François Denis, Mattias Gybels, Amaury Habrard
-icml-2014-87 | Discovering Latent Network Structure in Point Process Data | http://jmlr.org/proceedings/papers/v32/linderman14.pdf | author:Scott Linderman, Ryan Adams
-icml-2014-88 | Discrete Chebyshev Classifiers | http://jmlr.org/proceedings/papers/v32/eban14.pdf | author:Elad Eban, Elad Mezuman, Amir Globerson
-icml-2014-89 | Discriminative Features via Generalized Eigenvectors | http://jmlr.org/proceedings/papers/v32/karampatziakis14.pdf | author:Nikos Karampatziakis, Paul Mineiro
-icml-2014-90 | Distributed Representations of Sentences and Documents | http://jmlr.org/proceedings/papers/v32/le14.pdf | author:Quoc Le, Tomas Mikolov
-icml-2014-91 | Distributed Stochastic Gradient MCMC | http://jmlr.org/proceedings/papers/v32/ahn14.pdf | author:Sungjin Ahn, Babak Shahbaba, Max Welling
-icml-2014-92 | Doubly Stochastic Variational Bayes for non-Conjugate Inference | http://jmlr.org/proceedings/papers/v32/titsias14.pdf | author:Michalis Titsias, Miguel Lázaro-Gredilla
-icml-2014-93 | Dual Query: Practical Private Query Release for High Dimensional Data | http://jmlr.org/proceedings/papers/v32/gaboardi14.pdf | author:Marco Gaboardi Emilio Jesus Gallego Arias, Justin Hsu, Aaron Roth, Zhiwei Steven Wu
-icml-2014-94 | Dynamic Programming Boosting for Discriminative Macro-Action Discovery | http://jmlr.org/proceedings/papers/v32/lefakis14.pdf | author:Leonidas Lefakis, Francois Fleuret
-icml-2014-95 | Effective Bayesian Modeling of Groups of Related Count Time Series | http://jmlr.org/proceedings/papers/v32/chapados14.pdf | author:Nicolas Chapados
-icml-2014-96 | Efficient Algorithms for Robust One-bit Compressive Sensing | http://jmlr.org/proceedings/papers/v32/zhangc14.pdf | author:Lijun Zhang, Jinfeng Yi, Rong Jin
-icml-2014-97 | Efficient Approximation of Cross-Validation for Kernel Methods using Bouligand Influence Function | http://jmlr.org/proceedings/papers/v32/liua14.pdf | author:Yong Liu, Shali Jiang, Shizhong Liao
-icml-2014-98 | Efficient Continuous-Time Markov Chain Estimation | http://jmlr.org/proceedings/papers/v32/hajiaghayi14.pdf | author:Monir Hajiaghayi, Bonnie Kirkpatrick, Liangliang Wang, Alexandre Bouchard-Côté
-icml-2014-99 | Efficient Dimensionality Reduction for High-Dimensional Network Estimation | http://jmlr.org/proceedings/papers/v32/celik14.pdf | author:Safiye Celik, Benjamin Logsdon, Su-In Lee
-icml-2014-100 | Efficient Gradient-Based Inference through Transformations between Bayes Nets and Neural Nets | http://jmlr.org/proceedings/papers/v32/kingma14.pdf | author:Diederik Kingma, Max Welling
-icml-2014-101 | Efficient Label Propagation | http://jmlr.org/proceedings/papers/v32/fujiwara14.pdf | author:Yasuhiro Fujiwara, Go Irie
-icml-2014-102 | Efficient Learning of Mahalanobis Metrics for Ranking | http://jmlr.org/proceedings/papers/v32/lim14.pdf | author:Daryl Lim, Gert Lanckriet
-icml-2014-103 | Elementary Estimators for High-Dimensional Linear Regression | http://jmlr.org/proceedings/papers/v32/yangc14.pdf | author:Eunho Yang, Aurelie Lozano, Pradeep  Ravikumar
-icml-2014-104 | Elementary Estimators for Sparse Covariance Matrices and other Structured Moments | http://jmlr.org/proceedings/papers/v32/yangd14.pdf | author:Eunho Yang, Aurelie Lozano, Pradeep Ravikumar
-icml-2014-105 | Ensemble Methods for Structured Prediction | http://jmlr.org/proceedings/papers/v32/cortesa14.pdf | author:Corinna Cortes, Vitaly Kuznetsov, Mehryar Mohri
-icml-2014-106 | Ensemble-Based Tracking: Aggregating Crowdsourced Structured Time Series Data | http://jmlr.org/proceedings/papers/v32/wangg14.pdf | author:Naiyan Wang, Dit-Yan Yeung
-icml-2014-107 | Estimating Diffusion Network Structures: Recovery Conditions, Sample Complexity & Soft-thresholding Algorithm | http://jmlr.org/proceedings/papers/v32/daneshmand14.pdf | author:Hadi Daneshmand, Manuel Gomez-Rodriguez, Le Song, Bernhard Schoelkopf
-icml-2014-108 | Estimating Latent-Variable Graphical Models using Moments and Likelihoods | http://jmlr.org/proceedings/papers/v32/chaganty14.pdf | author:Arun Tejasvi Chaganty, Percy Liang
-icml-2014-109 | Exchangeable Variable Models | http://jmlr.org/proceedings/papers/v32/niepert14.pdf | author:Mathias Niepert, Pedro Domingos
-icml-2014-110 | Exponential Family Matrix Completion under Structural Constraints | http://jmlr.org/proceedings/papers/v32/gunasekar14.pdf | author:Suriya Gunasekar, Pradeep Ravikumar, Joydeep Ghosh
-icml-2014-111 | Factorized Point Process Intensities: A Spatial Analysis of Professional Basketball | http://jmlr.org/proceedings/papers/v32/miller14.pdf | author:Andrew Miller, Luke Bornn, Ryan Adams, Kirk Goldsberry
-icml-2014-112 | Fast Allocation of Gaussian Process Experts | http://jmlr.org/proceedings/papers/v32/nguyena14.pdf | author:Trung Nguyen, Edwin Bonilla
-icml-2014-113 | Fast Computation of Wasserstein Barycenters | http://jmlr.org/proceedings/papers/v32/cuturi14.pdf | author:Marco Cuturi, Arnaud Doucet
-icml-2014-114 | Fast Multi-stage Submodular Maximization | http://jmlr.org/proceedings/papers/v32/wei14.pdf | author:Kai Wei, Rishabh Iyer, Jeff Bilmes
-icml-2014-115 | Fast Stochastic Alternating Direction Method of Multipliers | http://jmlr.org/proceedings/papers/v32/zhong14.pdf | author:Wenliang Zhong, James Kwok
-icml-2014-116 | Filtering with Abstract Particles | http://jmlr.org/proceedings/papers/v32/steinhardt14.pdf | author:Jacob Steinhardt, Percy Liang
-icml-2014-117 | Finding Dense Subgraphs via Low-Rank Bilinear Optimization | http://jmlr.org/proceedings/papers/v32/papailiopoulos14.pdf | author:Dimitris Papailiopoulos, Ioannis Mitliagkas, Alexandros Dimakis, Constantine Caramanis
-icml-2014-118 | Finito: A Faster, Permutable Incremental Gradient Method for Big Data Problems | http://jmlr.org/proceedings/papers/v32/defazio14.pdf | author:Aaron Defazio, Justin Domke, Tiberio Caetano
-icml-2014-119 | Forward-Backward Greedy Algorithms for General Convex Smooth Functions over A Cardinality Constraint | http://jmlr.org/proceedings/papers/v32/karampatziakis14.pdf | author:Ji Liu, Jieping Ye, Ryohei Fujimaki
-icml-2014-120 | From Exponential to Linear Complexity When Learning Practical Markov Random Fields | http://jmlr.org/proceedings/papers/v32/mizrahi14.pdf | author:Yariv Mizrahi, Nando De Freitas, Luis Tenorio
-icml-2014-121 | GEV-Canonical Regression for Accurate Binary Class Probability Estimation when One Class is Rare | http://jmlr.org/proceedings/papers/v32/agarwalc14.pdf | author:Arpit Agarwal, Harikrishna Narasimhan, Shivaram Kalyanakrishnan, Shivani Agarwal
-icml-2014-122 | Gaussian Approximation of Collective Graphical Models | http://jmlr.org/proceedings/papers/v32/liuf14.pdf | author:Liping Liu, Daniel Sheldon, Thomas Dietterich
-icml-2014-123 | Gaussian Process Classification and Active Learning with Multiple Annotators | http://jmlr.org/proceedings/papers/v32/rodrigues14.pdf | author:Filipe Rodrigues, Francisco Pereira, Bernardete Ribeiro
-icml-2014-124 | Gaussian Process Optimization with Mutual Information | http://jmlr.org/proceedings/papers/v32/contal14.pdf | author:Emile Contal, Nicolas Vayatis
-icml-2014-125 | Gaussian Processes for Bayesian Estimation in Ordinary Differential Equations | http://jmlr.org/proceedings/papers/v32/barber14.pdf | author:David Barber, Yali Wang
-icml-2014-126 | GeNGA: A Generalization of Natural Gradient Ascent with Positive and Negative Convergence Results | http://jmlr.org/proceedings/papers/v32/thomasb14.pdf | author:Philip Thomas
-icml-2014-127 | Generalized Exponential Concentration Inequality for Renyi Divergence Estimation | http://jmlr.org/proceedings/papers/v32/singh14.pdf | author:Shashank Singh, Barnabas Poczos
-icml-2014-128 | Geodesic Distance Function Learning via Heat Flows on Vector Fields | http://jmlr.org/proceedings/papers/v32/linb14.pdf | author:Binbin Lin, Ji Yang, Xiaofei He, Jieping Ye
-icml-2014-129 | Global Graph Kernels Using Geometric Embeddings | http://jmlr.org/proceedings/papers/v32/johansson14.pdf | author:Fredrik Johansson, Vinay Jethava, Devdatt Dubhashi, Chiranjib Bhattacharyya
-icml-2014-130 | Globally Convergent Parallel MAP LP Relaxation Solver using the Frank-Wolfe Algorithm | http://jmlr.org/proceedings/papers/v32/schwing14.pdf | author:Alexander Schwing, Tamir Hazan, Marc Pollefeys, Raquel Urtasun
-icml-2014-131 | Gradient Hard Thresholding Pursuit for Sparsity-Constrained Optimization | http://jmlr.org/proceedings/papers/v32/yuan14.pdf | author:Xiaotong Yuan, Ping Li, Tong Zhang
-icml-2014-132 | Guess-Averse Loss Functions for Cost-Sensitive Multiclass Boosting | http://jmlr.org/proceedings/papers/v32/beijbom14.pdf | author:Oscar Beijbom, Mohammad Saberian, Nuno Vasconcelos, David Kriegman
-icml-2014-133 | Hamiltonian Monte Carlo Without Detailed Balance | http://jmlr.org/proceedings/papers/v32/sohl-dickstein14.pdf | author:Jascha Sohl-Dickstein, Mayur Mudigonda, Michael DeWeese
-icml-2014-134 | Hard-margin Active Linear Regression | http://jmlr.org/proceedings/papers/v32/karnin14.pdf | author:Zohar Karnin, Elad Hazan
-icml-2014-135 | Heavy-tailed Regression with a Generalized Median-of-means | http://jmlr.org/proceedings/papers/v32/hsu14.pdf | author:Daniel Hsu, Sivan Sabato
-icml-2014-136 | Hierarchical Conditional Random Fields for Outlier Detection: An Application to Detecting Epileptogenic Cortical Malformations | http://jmlr.org/proceedings/papers/v32/ahmed14.pdf | author:Bilal Ahmed, Karen Blackmon, Thomas Thesen, Ruben Kuzniecky, Chad Carlson, Jacqueline French, Werner Doyle, Carla Brodley
-icml-2014-137 | Hierarchical Dirichlet Scaling Process | http://jmlr.org/proceedings/papers/v32/kim14.pdf | author:Dongwoo Kim, Alice Oh
-icml-2014-138 | Hierarchical Quasi-Clustering Methods for Asymmetric Networks | http://jmlr.org/proceedings/papers/v32/carlsson14.pdf | author:Gunnar Carlsson, Facundo Mémoli, Alejandro Ribeiro, Santiago Segarra
-icml-2014-139 | High Order Regularization for Semi-Supervised Learning of Structured Output Problems | http://jmlr.org/proceedings/papers/v32/lif14.pdf | author:Yujia Li, Rich Zemel
-icml-2014-140 | Implicit Particle Sequential Monte Carlo | http://jmlr.org/proceedings/papers/v32/jun14.pdf | author:Seong-Hwan Jun, Alexandre Bouchard-Côté
-icml-2014-141 | Inferning with High Girth Graphical Models | http://jmlr.org/proceedings/papers/v32/heinemann14.pdf | author:Uri Heinemann, Amir Globerson
-icml-2014-142 | Influence Function Learning in Information Diffusion Networks | http://jmlr.org/proceedings/papers/v32/du14.pdf | author:Nan Du, Yingyu Liang, Le Song, Maria Balcan
-icml-2014-143 | Input Warping for Bayesian Optimization of Non-stationary Functions | http://jmlr.org/proceedings/papers/v32/snoek14.pdf | author:Jasper Snoek, Kevin Swersky, Rich Zemel, Ryan Adams
-icml-2014-144 | Joint Inference of Multiple Label Types in Large Networks | http://jmlr.org/proceedings/papers/v32/chakrabarti14.pdf | author:Deepayan Chakrabarti, Stanislav Funiak, Jonathan Chang, Sofus Macskassy
-icml-2014-145 | K-means Recovers ICA Filters when Independent Components are Sparse | http://jmlr.org/proceedings/papers/v32/vinnikov14.pdf | author:Alon Vinnikov, Shai Shalev-Shwartz
-icml-2014-146 | Kernel Adaptive Metropolis-Hastings | http://jmlr.org/proceedings/papers/v32/sejdinovic14.pdf | author:Dino Sejdinovic, Heiko Strathmann, Maria Lomeli Garcia, Christophe Andrieu, Arthur Gretton
-icml-2014-147 | Kernel Mean Estimation and Stein Effect | http://jmlr.org/proceedings/papers/v32/muandet14.pdf | author:Krikamol Muandet, Kenji Fukumizu, Bharath Sriperumbudur, Arthur Gretton, Bernhard Schoelkopf
-icml-2014-148 | Large-Margin Metric Learning for Constrained Partitioning Problems | http://jmlr.org/proceedings/papers/v32/lajugie14.pdf | author:Rémi Lajugie, Francis Bach, Sylvain Arlot
-icml-2014-149 | Large-margin Weakly Supervised Dimensionality Reduction | http://jmlr.org/proceedings/papers/v32/xu14.pdf | author:Chang Xu, Dacheng Tao, Chao Xu, Yong Rui
-icml-2014-150 | Large-scale Multi-label Learning with Missing Labels | http://jmlr.org/proceedings/papers/v32/yu14.pdf | author:Hsiang-Fu Yu, Prateek Jain, Purushottam Kar, Inderjit Dhillon
-icml-2014-151 | Latent Bandits | http://jmlr.org/proceedings/papers/v32/maillard14.pdf | author:Odalric-Ambrym Maillard, Shie Mannor
-icml-2014-152 | Latent Confusion Analysis by Normalized Gamma Construction | http://jmlr.org/proceedings/papers/v32/satob14.pdf | author:Issei Sato, Kashima Hisashi, Hiroshi Nakagawa
-icml-2014-153 | Latent Semantic Representation Learning for Scene Classification | http://jmlr.org/proceedings/papers/v32/lid14.pdf | author:Xin Li, Yuhong Guo
-icml-2014-154 | Latent Variable Copula Inference for Bundle Pricing from Retail Transaction Data | http://jmlr.org/proceedings/papers/v32/letham14.pdf | author:Benjamin Letham, Wei Sun, Anshul Sheopuri
-icml-2014-155 | Learnability of the Superset Label Learning Problem | http://jmlr.org/proceedings/papers/v32/liug14.pdf | author:Liping Liu, Thomas Dietterich
-icml-2014-156 | Learning Character-level Representations for Part-of-Speech Tagging | http://jmlr.org/proceedings/papers/v32/santos14.pdf | author:Cicero Dos Santos, Bianca Zadrozny
-icml-2014-157 | Learning Complex Neural Network Policies with Trajectory Optimization | http://jmlr.org/proceedings/papers/v32/levine14.pdf | author:Sergey Levine, Vladlen Koltun
-icml-2014-158 | Learning Graphs with a Few Hubs | http://jmlr.org/proceedings/papers/v32/tandon14.pdf | author:Rashish Tandon, Pradeep Ravikumar
-icml-2014-159 | Learning Latent Variable Gaussian Graphical Models | http://jmlr.org/proceedings/papers/v32/meng14.pdf | author:Zhaoshi Meng, Brian Eriksson, Al Hero
-icml-2014-160 | Learning Mixtures of Linear Classifiers | http://jmlr.org/proceedings/papers/v32/sunb14.pdf | author:Yuekai Sun, Stratis Ioannidis, Andrea Montanari
-icml-2014-161 | Learning Modular Structures from Network Data and Node Variables | http://jmlr.org/proceedings/papers/v32/azizi14.pdf | author:Elham Azizi, Edoardo Airoldi
-icml-2014-162 | Learning Ordered Representations with Nested Dropout | http://jmlr.org/proceedings/papers/v32/rippel14.pdf | author:Oren Rippel, Michael Gelbart, Ryan Adams
-icml-2014-163 | Learning Polynomials with Neural Networks | http://jmlr.org/proceedings/papers/v32/andoni14.pdf | author:Alexandr Andoni, Rina Panigrahy, Gregory Valiant, Li Zhang
-icml-2014-164 | Learning Representations for Interacting Manifolds with Higher-order Boltzmann Machines | http://jmlr.org/proceedings/papers/v32/reed14.pdf | author:Scott Reed, Kihyuk Sohn, Yuting Zhang, Honglak Lee
-icml-2014-165 | Learning Sum-Product Networks with Direct and Indirect Variable Interactions | http://jmlr.org/proceedings/papers/v32/rooshenas14.pdf | author:Amirmohammad Rooshenas, Daniel Lowd
-icml-2014-166 | Learning Theory and Algorithms for revenue optimization in second price auctions with reserve | http://jmlr.org/proceedings/papers/v32/medina14.pdf | author:Mehryar Mohri, Andres Munoz Medina
-icml-2014-167 | Learning With Priors | http://jmlr.org/proceedings/papers/v32/honorio14.pdf | author:Jean Honorio, Tommi Jaakkola
-icml-2014-168 | Learning and Planning with Relational Uncertainty Predicates over the Existence of Objects | http://jmlr.org/proceedings/papers/v32/ngo14.pdf | author:Vien Ngo, Marc Toussaint
-icml-2014-169 | Learning by Stretching Deep Networks | http://jmlr.org/proceedings/papers/v32/pandey14.pdf | author:Gaurav Pandey, Ambedkar Dukkipati
-icml-2014-170 | Learning from Contagion  | http://jmlr.org/proceedings/papers/v32/amin14.pdf | author:Kareem Amin, Hoda Heidari, Michael Kearns
-icml-2014-171 | Learning the Consistent Behavior of Common Users for Target Node Prediction across Social Networks | http://jmlr.org/proceedings/papers/v32/wu14.pdf | author:Shan-Hung Wu, Hao-Heng Chien, Kuan-Hua Lin, Philip Yu
-icml-2014-172 | Learning the Irreducible Representations of Commutative Lie Groups | http://jmlr.org/proceedings/papers/v32/cohen14.pdf | author:Taco Cohen, Max Welling
-icml-2014-173 | Learning the Parameters of Determinantal Point Process Kernels | http://jmlr.org/proceedings/papers/v32/affandi14.pdf | author:Raja Hafiz Affandi, Emily Fox, Ryan Adams, Ben Taskar
-icml-2014-174 | Learning with Smoothness: Pointwise, Graph-based, Probabilistic | http://jmlr.org/proceedings/papers/v32/fang14.pdf | author:Yuan Fang, Kevin Chang, Hady Lauw
-icml-2014-175 | Least Squares Revisited: Scalable Approaches for Multi-class Prediction | http://jmlr.org/proceedings/papers/v32/agarwala14.pdf | author:Alekh Agarwal, Sham Kakade, Nikos Karampatziakis, Le Song, Gregory Valiant
-icml-2014-176 | Linear Programming for Large-Scale Markov Decision Problems | http://jmlr.org/proceedings/papers/v32/malek14.pdf | author:Alan Malek, Yasin Abbasi-Yadkori, Peter Bartlett
-icml-2014-177 | Linear Time Solver for Primal SVM | http://jmlr.org/proceedings/papers/v32/niea14.pdf | author:Feiping Nie, Yizhen Huang, Heng Huang
-icml-2014-178 | Local Algorithms for Interactive Clustering | http://jmlr.org/proceedings/papers/v32/awasthi14.pdf | author:Pranjal Awasthi, Konstantin Voevodski, Maria Balcan
-icml-2014-179 | Local Ordinal Embedding | http://jmlr.org/proceedings/papers/v32/terada14.pdf | author:Yoshikazu Terada, Ulrike von Luxburg
-icml-2014-180 | Low-density Parity Constraints for Hashing-Based Discrete Integration | http://jmlr.org/proceedings/papers/v32/ermon14.pdf | author:Stefano Ermon, Carla Gomes, Ashish Sabharwal, Bart Selman
-icml-2014-181 | Lower Bounds for the Gibbs Sampler over Mixtures of Gaussians | http://jmlr.org/proceedings/papers/v32/tosh14.pdf | author:Christopher Tosh, Sanjoy Dasgupta
-icml-2014-182 | Making Fisher Discriminant Analysis Scalable | http://jmlr.org/proceedings/papers/v32/tu14.pdf | author:Bojun Tu, Hui Qian, Zhihua Zhang
-icml-2014-183 | Making the Most of Bag of Words: Sentence Regularization with Alternating Direction Method of Multipliers | http://jmlr.org/proceedings/papers/v32/yogatama14.pdf | author:Dani Yogatama, Noah Smith
-icml-2014-184 | Marginal Structured SVM with Hidden Variables | http://jmlr.org/proceedings/papers/v32/ping14.pdf | author:Wei Ping, Qiang Liu, Alex Ihler
-icml-2014-185 | Marginalized Denoising Auto-encoders for Nonlinear Representations | http://jmlr.org/proceedings/papers/v32/cheng14.pdf | author:Minmin Chen, Kilian Weinberger, Fei Sha, Yoshua Bengio
-icml-2014-186 | Margins, Kernels and Non-linear Smoothed Perceptrons | http://jmlr.org/proceedings/papers/v32/ramdas14.pdf | author:Aaditya Ramdas, Javier Peña
-icml-2014-187 | Max-Margin Infinite Hidden Markov Models | http://jmlr.org/proceedings/papers/v32/zhangb14.pdf | author:Aonan Zhang, Jun Zhu, Bo Zhang
-icml-2014-188 | Maximum Margin Multiclass Nearest Neighbors | http://jmlr.org/proceedings/papers/v32/kontorovichb14.pdf | author:Aryeh Kontorovich, Roi Weiss
-icml-2014-189 | Maximum Mean Discrepancy for Class Ratio Estimation: Convergence Bounds and Kernel Selection | http://jmlr.org/proceedings/papers/v32/iyer14.pdf | author:Arun Iyer, Saketha Nath, Sunita Sarawagi
-icml-2014-190 | Memory Efficient Kernel Approximation | http://jmlr.org/proceedings/papers/v32/si14.pdf | author:Si Si, Cho-Jui Hsieh, Inderjit Dhillon
-icml-2014-191 | Memory and Computation Efficient PCA via Very Sparse Random Projections | http://jmlr.org/proceedings/papers/v32/anaraki14.pdf | author:Farhad Pourkamali Anaraki, Shannon Hughes
-icml-2014-192 | Methods of Moments for Learning Stochastic Languages: Unified Presentation and Empirical Comparison | http://jmlr.org/proceedings/papers/v32/balle14.pdf | author:Borja Balle, William Hamilton, Joelle Pineau
-icml-2014-193 | Min-Max Problems on Factor Graphs | http://jmlr.org/proceedings/papers/v32/ravanbakhsh14.pdf | author:Siamak Ravanbakhsh, Christopher Srinivasa, Brendan Frey, Russell Greiner
-icml-2014-194 | Modeling Correlated Arrival Events with Latent Semi-Markov Processes | http://jmlr.org/proceedings/papers/v32/lian14.pdf | author:Wenzhao Lian, Vinayak Rao, Brian Eriksson, Lawrence Carin
-icml-2014-195 | Multi-label Classification via Feature-aware Implicit Label Space Encoding | http://jmlr.org/proceedings/papers/v32/linc14.pdf | author:Zijia Lin, Guiguang Ding, Mingqing Hu, Jianmin Wang
-icml-2014-196 | Multi-period Trading Prediction Markets with Connections to Machine Learning | http://jmlr.org/proceedings/papers/v32/hu14.pdf | author:Jinli Hu, Amos Storkey
-icml-2014-197 | Multimodal Neural Language Models | http://jmlr.org/proceedings/papers/v32/kiros14.pdf | author:Ryan Kiros, Ruslan Salakhutdinov, Rich Zemel
-icml-2014-198 | Multiple Testing under Dependence via Semiparametric Graphical Models | http://jmlr.org/proceedings/papers/v32/liue14.pdf | author:Jie Liu, Chunming Zhang, Elizabeth Burnside, David Page
-icml-2014-199 | Multiresolution Matrix Factorization | http://jmlr.org/proceedings/papers/v32/kondor14.pdf | author:Risi Kondor, Nedelina Teneva, Vikas Garg
-icml-2014-200 | Multivariate Maximal Correlation Analysis | http://jmlr.org/proceedings/papers/v32/nguyenc14.pdf | author:Hoang Vu Nguyen, Emmanuel Müller, Jilles Vreeken, Pavel Efros, Klemens Böhm
-icml-2014-201 | Narrowing the Gap: Random Forests In Theory and In Practice | http://jmlr.org/proceedings/papers/v32/denil14.pdf | author:Misha Denil, David Matheson, Nando De Freitas
-icml-2014-202 | Near-Optimal Joint Object Matching via Convex Relaxation | http://jmlr.org/proceedings/papers/v32/chend14.pdf | author:Yuxin Chen, Guibas Leonidas, Qixing Huang
-icml-2014-203 | Nearest Neighbors Using Compact Sparse Codes | http://jmlr.org/proceedings/papers/v32/cherian14.pdf | author:Anoop Cherian
-icml-2014-204 | Neural Variational Inference and Learning in Belief Networks | http://jmlr.org/proceedings/papers/v32/mnih14.pdf | author:Andriy Mnih, Karol Gregor
-icml-2014-205 | Nonlinear Information-Theoretic Compressive Measurement Design | http://jmlr.org/proceedings/papers/v32/wangh14.pdf | author:Liming Wang, Abolfazl Razi, Miguel Rodrigues, Robert Calderbank, Lawrence Carin
-icml-2014-206 | Nonmyopic $\epsilon$-Bayes-Optimal Active Learning of Gaussian Processes | http://jmlr.org/proceedings/papers/v32/hoang14.pdf | author:Trong Nghia Hoang, Bryan Kian Hsiang Low, Patrick Jaillet, Mohan Kankanhalli
-icml-2014-207 | Nonnegative Sparse PCA with Provable Guarantees | http://jmlr.org/proceedings/papers/v32/asteris14.pdf | author:Megasthenis Asteris, Alexandros Dimakis, Dimitris Papailiopoulos
-icml-2014-208 | Nonparametric Estimation of Multi-View Latent Variable Models | http://jmlr.org/proceedings/papers/v32/songa14.pdf | author:Le Song, Animashree Anandkumar, Bo Dai, Bo Xie
-icml-2014-209 | Nonparametric Estimation of Renyi Divergence and Friends | http://jmlr.org/proceedings/papers/v32/krishnamurthy14.pdf | author:Akshay Krishnamurthy, Kirthevasan Kandasamy, Barnabas Poczos, Larry Wasserman
-icml-2014-210 | Nuclear Norm Minimization via Active Subspace Selection | http://jmlr.org/proceedings/papers/v32/hsiehb14.pdf | author:Cho-Jui Hsieh, Peder Olsen
-icml-2014-211 | Offline Evaluation of Recommendation Systems | http://jmlr.org/proceedings/papers/v32/mary14.pdf | author:Olivier Nicol, Jérémie Mary, Philippe Preux
-icml-2014-212 | On Measure Concentration of Random Maximum A-Posteriori Perturbations | http://jmlr.org/proceedings/papers/v32/orabona14.pdf | author:Francesco Orabona, Tamir Hazan, Anand Sarwate, Tommi Jaakkola
-icml-2014-213 | On Modelling Non-linear Topical Dependencies | http://jmlr.org/proceedings/papers/v32/lib14.pdf | author:Zhixing Li, Siqiang Wen, Juanzi Li, Peng Zhang, Jie Tang
-icml-2014-214 | On Robustness and Regularization of Structural Support Vector Machines | http://jmlr.org/proceedings/papers/v32/torkamani14.pdf | author:Mohamad Ali Torkamani, Daniel Lowd
-icml-2014-215 | On p-norm Path Following in Multiple Kernel Learning for Non-linear Feature Selection | http://jmlr.org/proceedings/papers/v32/jawanpuria14.pdf | author:Pratik Jawanpuria, Manik Varma, Saketha Nath
-icml-2014-216 | On the Convergence of No-regret Learning in Selfish Routing | http://jmlr.org/proceedings/papers/v32/krichene14.pdf | author:Benjamin Drighès, Walid Krichene, Alexandre Bayen
-icml-2014-217 | One Practical Algorithm for Both Stochastic and Adversarial Bandits | http://jmlr.org/proceedings/papers/v32/seldinb14.pdf | author:Yevgeny Seldin, Aleksandrs Slivkins
-icml-2014-218 | One-Bit Object Detection: On Learning to Localize Objects with Minimal Supervision | http://jmlr.org/proceedings/papers/v32/songb14.pdf | author:Hyun Oh Song, Ross Girshick, Stefanie Jegelka, Julien Mairal, Zaid Harchaoui, Trevor Darrell
-icml-2014-219 | Online Bayesian Passive-Aggressive Learning | http://jmlr.org/proceedings/papers/v32/shi14.pdf | author:Tianlin Shi, Jun Zhu
-icml-2014-220 | Online Clustering of Bandits | http://jmlr.org/proceedings/papers/v32/gentile14.pdf | author:Claudio Gentile, Shuai Li, Giovanni Zappella
-icml-2014-221 | Online Learning in Markov Decision Processes with Changing Cost Sequences | http://jmlr.org/proceedings/papers/v32/dick14.pdf | author:Travis Dick, Andras Gyorgy, Csaba Szepesvari
-icml-2014-222 | Online Multi-Task Learning for Policy Gradient Methods | http://jmlr.org/proceedings/papers/v32/ammar14.pdf | author:Haitham Bou Ammar, Eric Eaton, Paul Ruvolo, Matthew Taylor
-icml-2014-223 | Optimal Budget Allocation: Theoretical Guarantee and Efficient Algorithm | http://jmlr.org/proceedings/papers/v32/soma14.pdf | author:Tasuku Soma, Naonori Kakimura, Kazuhiro Inaba, Ken-ichi Kawarabayashi
-icml-2014-224 | Optimal Mean Robust Principal Component Analysis | http://jmlr.org/proceedings/papers/v32/nieb14.pdf | author:Feiping Nie, Jianjun Yuan, Heng Huang
-icml-2014-225 | Optimal PAC Multiple Arm Identification with Applications to Crowdsourcing | http://jmlr.org/proceedings/papers/v32/zhoub14.pdf | author:Yuan Zhou, Xi Chen, Jian Li
-icml-2014-226 | Optimization Equivalence of Divergences Improves Neighbor Embedding | http://jmlr.org/proceedings/papers/v32/yange14.pdf | author:Zhirong Yang, Jaakko Peltonen, Samuel Kaski
-icml-2014-227 | Orthogonal Rank-One Matrix Pursuit for Matrix Completion | http://jmlr.org/proceedings/papers/v32/wanga14.pdf | author:Zheng Wang, Ming-Jun Lai, Zhaosong Lu, Wei Fan, Hasan Davulcu, Jieping Ye
-icml-2014-228 | Outlier Path: A Homotopy Algorithm for Robust SVM | http://jmlr.org/proceedings/papers/v32/suzumura14.pdf | author:Shinya Suzumura, Kohei Ogawa, Masashi Sugiyama, Ichiro Takeuchi
-icml-2014-229 | PAC-inspired Option Discovery in Lifelong Reinforcement Learning | http://jmlr.org/proceedings/papers/v32/brunskill14.pdf | author:Emma Brunskill, Lihong Li
-icml-2014-230 | Pitfalls in the Use of Parallel Inference for the Dirichlet Process | http://jmlr.org/proceedings/papers/v32/gal14.pdf | author:Yarin Gal, Zoubin Ghahramani
-icml-2014-231 | Prediction with Limited Advice and Multiarmed Bandits with Paid Observations | http://jmlr.org/proceedings/papers/v32/seldin14.pdf | author:Yevgeny Seldin, Peter Bartlett, Koby Crammer, Yasin Abbasi-Yadkori
-icml-2014-232 | Preference-Based Rank Elicitation using Statistical Models: The Case of Mallows | http://jmlr.org/proceedings/papers/v32/busa-fekete14.pdf | author:Robert Busa-Fekete, Balázs Szörényi, Eyke Huellermeier
-icml-2014-233 | Preserving Modes and Messages via Diverse Particle Selection | http://jmlr.org/proceedings/papers/v32/pacheco14.pdf | author:Jason Pacheco, Silvia Zuffi, Michael Black, Erik Sudderth
-icml-2014-234 | Probabilistic Matrix Factorization with Non-random Missing Data | http://jmlr.org/proceedings/papers/v32/hernandez-lobatob14.pdf | author:Jose Miguel Hernandez-Lobato, Neil Houlsby, Zoubin Ghahramani
-icml-2014-235 | Probabilistic Partial Canonical Correlation Analysis | http://jmlr.org/proceedings/papers/v32/mukuta14.pdf | author:Yusuke Mukuta, Tatsuya Harada
-icml-2014-236 | Programming by Feedback | http://jmlr.org/proceedings/papers/v32/schoenauer14.pdf | author:Marc Schoenauer, Riad Akrour, Michele Sebag, Jean-Christophe Souplet
-icml-2014-237 | Provable Bounds for Learning Some Deep Representations | http://jmlr.org/proceedings/papers/v32/arora14.pdf | author:Sanjeev Arora, Aditya Bhaskara, Rong Ge, Tengyu Ma
-icml-2014-238 | Pursuit-Evasion Without Regrets, with an Application to Trading | http://jmlr.org/proceedings/papers/v32/dworkin14.pdf | author:Lili Dworkin, Michael Kearns, Yuriy Nevmyvaka
-icml-2014-239 | Putting MRFs on a Tensor Train | http://jmlr.org/proceedings/papers/v32/novikov14.pdf | author:Alexander Novikov, Anton Rodomanov, Anton Osokin, Dmitry Vetrov
-icml-2014-240 | Quasi-Monte Carlo Feature Maps for Shift-Invariant Kernels | http://jmlr.org/proceedings/papers/v32/yangb14.pdf | author:Jiyan Yang, Vikas Sindhwani, Haim Avron, Michael Mahoney
-icml-2014-241 | Randomized Nonlinear Component Analysis | http://jmlr.org/proceedings/papers/v32/lopez-paz14.pdf | author:David Lopez-Paz, Suvrit Sra, Alex Smola, Zoubin Ghahramani, Bernhard Schoelkopf
-icml-2014-242 | Rectangular Tiling Process | http://jmlr.org/proceedings/papers/v32/nakano14.pdf | author:Masahiro Nakano, Katsuhiko Ishiguro, Akisato Kimura, Takeshi Yamada, Naonori Ueda
-icml-2014-243 | Recurrent Convolutional Neural Networks for Scene Labeling | http://jmlr.org/proceedings/papers/v32/pinheiro14.pdf | author:Pedro Pinheiro, Ronan Collobert
-icml-2014-244 | Reducing Dueling Bandits to Cardinal Bandits | http://jmlr.org/proceedings/papers/v32/ailon14.pdf | author:Nir Ailon, Zohar Karnin, Thorsten Joachims
-icml-2014-245 | Relative Upper Confidence Bound for the K-Armed Dueling Bandit Problem | http://jmlr.org/proceedings/papers/v32/zoghi14.pdf | author:Masrour Zoghi, Shimon Whiteson, Remi Munos, Maarten de Rijke
-icml-2014-246 | Resource-Efficient Stochastic Optimization of a Locally Smooth Function under Correlated Bandit Feedback | http://jmlr.org/proceedings/papers/v32/azar14.pdf | author:Mohammad Gheshlaghi azar, Alessandro Lazaric, Emma Brunskill
-icml-2014-247 | Riemannian Pursuit for Big Matrix Recovery | http://jmlr.org/proceedings/papers/v32/tan14.pdf | author:Mingkui Tan, Ivor W. Tsang, Li Wang, Jialin Pan, Bart Vandereycken
-icml-2014-248 | Robust Distance Metric Learning via Simultaneous L1-Norm Minimization and Maximization | http://jmlr.org/proceedings/papers/v32/wangj14.pdf | author:Hua Wang, Feiping Nie, Heng Huang
-icml-2014-249 | Robust Inverse Covariance Estimation under Noisy Measurements | http://jmlr.org/proceedings/papers/v32/wangf14.pdf | author:Jun-Kun Wang, Ting-Wei Lin, Shou-de Lin
-icml-2014-250 | Robust Learning under Uncertain Test Distributions: Relating Covariate Shift to Model Misspecification | http://jmlr.org/proceedings/papers/v32/wen14.pdf | author:Junfeng Wen, Chun-Nam Yu, Russell Greiner
-icml-2014-251 | Robust Principal Component Analysis with Complex Noise | http://jmlr.org/proceedings/papers/v32/zhao14.pdf | author:Qian Zhao, Deyu Meng, Lei Zhang, Wangmeng Zuo, Zongben Xu
-icml-2014-252 | Robust RegBayes: Selectively Incorporating First-Order Logic Domain Knowledge into Bayesian Models | http://jmlr.org/proceedings/papers/v32/mei14.pdf | author:Shike Mei, Jun Zhu, Jerry Zhu
-icml-2014-253 | Robust and Efficient Kernel Hyperparameter Paths with Guarantees | http://jmlr.org/proceedings/papers/v32/giesen14.pdf | author:Joachim Giesen, Soeren Laue, Patrick Wieschollek
-icml-2014-254 | Robust and Efficient Representation Learning with Nonnegativity Constraints | http://jmlr.org/proceedings/papers/v32/line14.pdf | author:Tsung-Han Lin
-icml-2014-255 | Saddle Points and Accelerated Perceptron Algorithms | http://jmlr.org/proceedings/papers/v32/yuc14.pdf | author:Adams Wei Yu, fatma Kilinc-Karzan, Jaime Carbonell
-icml-2014-256 | Safe Screening with Variational Inequalities and Its Application to Lasso | http://jmlr.org/proceedings/papers/v32/liuc14.pdf | author:Jun Liu, Zheng Zhao, Jie Wang, Jieping Ye
-icml-2014-257 | Sample Efficient Reinforcement Learning with Gaussian Processes | http://jmlr.org/proceedings/papers/v32/grande14.pdf | author:Robert Grande, Thomas Walsh, Jonathan How
-icml-2014-258 | Sample-based Approximate Regularization | http://jmlr.org/proceedings/papers/v32/bachman14.pdf | author:Philip Bachman, Amir-Massoud Farahmand, Doina Precup
-icml-2014-259 | Scalable Gaussian Process Structured Prediction for Grid Factor Graph Applications | http://jmlr.org/proceedings/papers/v32/bratieres14.pdf | author:Sebastien Bratieres, Novi Quadrianto, Sebastian Nowozin, Zoubin Ghahramani
-icml-2014-260 | Scalable Nonparametric Bayesian Analysis of Incomplete Multiway Data | http://jmlr.org/proceedings/papers/v32/rai14.pdf | author:Piyush Rai, Yingjian Wang, Lawrence Carin
-icml-2014-261 | Scalable Semidefinite Relaxation for Maximum A Posteriori Estimation | http://jmlr.org/proceedings/papers/v32/huang14.pdf | author:Qixing Huang, Yuxin Chen, Guibas Leonidas
-icml-2014-262 | Scalable and Robust Bayesian Inference via the Median Posterior | http://jmlr.org/proceedings/papers/v32/minsker14.pdf | author:Stanislav Minsker, Sanvesh Srivastava, Lizhen Lin, David Dunson
-icml-2014-263 | Scaling SVM and Least Absolute Deviations via Exact Data Reduction | http://jmlr.org/proceedings/papers/v32/wangd14.pdf | author:Jie Wang, Jieping Ye
-icml-2014-264 | Scaling Up Approximate Value Iteration with Options: Better Policies with Fewer Iterations | http://jmlr.org/proceedings/papers/v32/mann14.pdf | author:Timothy Mann, Shie Mannor
-icml-2014-265 | Scaling Up Robust MDPs by Reinforcement Learning | http://jmlr.org/proceedings/papers/v32/tamar14.pdf | author:Aviv Tamar, Huan Xu, Shie Mannor
-icml-2014-266 | Signal Recovery from $\ell_p$ Pooling Representations | http://jmlr.org/proceedings/papers/v32/estrach14.pdf | author:Joan Bruna Estrach, Arthur Szlam, Yann LeCun
-icml-2014-267 | Skip Context Tree Switching | http://jmlr.org/proceedings/papers/v32/bellemare14.pdf | author:Marc Bellemare, Joel Veness, Erik Talvitie, Alex Graves
-icml-2014-268 | Sparse Meta-Gaussian Information Bottleneck | http://jmlr.org/proceedings/papers/v32/rey14.pdf | author:Melani Rey, Volker Roth, Thomas Fuchs
-icml-2014-269 | Sparse Reinforcement Learning via Convex Optimization | http://jmlr.org/proceedings/papers/v32/qin14.pdf | author:Zhiwei Qin, Weichang Li
-icml-2014-270 | Spectral Bandits for Smooth Graph Functions | http://jmlr.org/proceedings/papers/v32/valko14.pdf | author:Remi Munos, Michal Valko, Branislav Kveton, Tomas Kocak
-icml-2014-271 | Spectral Regularization for Max-Margin Sequence Tagging | http://jmlr.org/proceedings/papers/v32/quattoni14.pdf | author:Ariadna Quattoni, Borja Balle, Xavier Carreras, Amir Globerson
-icml-2014-272 | Spherical Hamiltonian Monte Carlo for Constrained Target Distributions | http://jmlr.org/proceedings/papers/v32/lan14.pdf | author:Shiwei Lan, Bo Zhou, Babak Shahbaba
-icml-2014-273 | Square Deal: Lower Bounds and Improved Relaxations for Tensor Recovery | http://jmlr.org/proceedings/papers/v32/mu14.pdf | author:Cun Mu, Bo Huang, John Wright, Donald Goldfarb
-icml-2014-274 | Standardized Mutual Information for Clustering Comparisons: One Step Further in Adjustment for Chance | http://jmlr.org/proceedings/papers/v32/romano14.pdf | author:Simone Romano, James Bailey, Vinh Nguyen, Karin Verspoor
-icml-2014-275 | Stochastic Approximation with Implicit Updates. Applications in Robust Online Learning of GLMs | http://jmlr.org/proceedings/papers/v32/toulis14.pdf | author:Panagiotis Toulis, Edoardo Airoldi, Jason Rennie
-icml-2014-276 | Stochastic Backpropagation and Approximate Inference in Deep Generative Models | http://jmlr.org/proceedings/papers/v32/rezende14.pdf | author:Danilo Jimenez Rezende, Shakir Mohamed, Daan Wierstra
-icml-2014-277 | Stochastic Dual Coordinate Ascent with Alternating Direction Method of Multipliers | http://jmlr.org/proceedings/papers/v32/suzuki14.pdf | author:Taiji Suzuki
-icml-2014-278 | Stochastic Gradient Hamiltonian Monte Carlo | http://jmlr.org/proceedings/papers/v32/cheni14.pdf | author:Tianqi Chen, Emily Fox, Carlos Guestrin
-icml-2014-279 | Stochastic Inference for Scalable Probabilistic Modeling of Binary Matrices | http://jmlr.org/proceedings/papers/v32/hernandez-lobatoa14.pdf | author:Jose Miguel Hernandez-Lobato, Neil Houlsby, Zoubin Ghahramani
-icml-2014-280 | Stochastic Neighbor Compression | http://jmlr.org/proceedings/papers/v32/kusner14.pdf | author:Matt Kusner, Stephen Tyree, Kilian Weinberger, Kunal Agrawal
-icml-2014-281 | Stochastic Variational Inference for Bayesian Time Series Models | http://jmlr.org/proceedings/papers/v32/johnson14.pdf | author:Matthew Johnson, Alan Willsky
-icml-2014-282 | Structured Generative Models of Natural Source Code | http://jmlr.org/proceedings/papers/v32/maddison14.pdf | author:Chris Maddison, Daniel Tarlow
-icml-2014-283 | Structured Low-Rank Matrix Factorization: Optimality, Algorithm, and Applications to Image Processing | http://jmlr.org/proceedings/papers/v32/haeffele14.pdf | author:Benjamin Haeffele, Rene Vidal, Eric Young
-icml-2014-284 | Structured Prediction of Network Response | http://jmlr.org/proceedings/papers/v32/su14.pdf | author:Hongyu Su, Aristides Gionis, Juho Rousu
-icml-2014-285 | Structured Recurrent Temporal Restricted Boltzmann Machines | http://jmlr.org/proceedings/papers/v32/mittelman14.pdf | author:Roni Mittelman, Benjamin Kuipers, Silvio Savarese, Honglak Lee
-icml-2014-286 | Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits | http://jmlr.org/proceedings/papers/v32/agarwalb14.pdf | author:Alekh Agarwal, Daniel Hsu, Satyen Kale, John Langford, Lihong Li, Robert Schapire
-icml-2014-287 | The Coherent Loss Function for Classification | http://jmlr.org/proceedings/papers/v32/yanga14.pdf | author:Wenzhuo Yang, Melvyn Sim, Huan Xu
-icml-2014-288 | The Falling Factorial Basis and Its Statistical Applications | http://jmlr.org/proceedings/papers/v32/wange14.pdf | author:Yu-Xiang Wang, Ryan Tibshirani, Alex Smola
-icml-2014-289 | The Inverse Regression Topic Model | http://jmlr.org/proceedings/papers/v32/rabinovich14.pdf | author:Maxim Rabinovich, David Blei
-icml-2014-290 | The f-Adjusted Laplacian: a Diagonal Perturbation with a Geometric Interpretation | http://jmlr.org/proceedings/papers/v32/kurras14.pdf | author:Sven Kurras, Ulrike von Luxburg, Gilles Blanchard
-icml-2014-291 | Thompson Sampling for Complex Online Problems | http://jmlr.org/proceedings/papers/v32/gopalan14.pdf | author:Aditya Gopalan, Shie Mannor, Yishay Mansour
-icml-2014-292 | Time-Regularized Interrupting Options  | http://jmlr.org/proceedings/papers/v32/mannb14.pdf | author:Timothy Mann, Daniel Mankowitz, Shie Mannor
-icml-2014-293 | Topic Modeling using Topics from Many Domains, Lifelong Learning and Big Data | http://jmlr.org/proceedings/papers/v32/chenf14.pdf | author:Zhiyuan Chen, Bing Liu
-icml-2014-294 | Towards End-To-End Speech Recognition with Recurrent Neural Networks | http://jmlr.org/proceedings/papers/v32/graves14.pdf | author:Alex Graves, Navdeep Jaitly
-icml-2014-295 | Towards Minimax Online Learning with Unknown Time Horizon | http://jmlr.org/proceedings/papers/v32/luo14.pdf | author:Haipeng Luo, Robert Schapire
-icml-2014-296 | Towards an optimal stochastic alternating direction method of multipliers | http://jmlr.org/proceedings/papers/v32/azadi14.pdf | author:Samaneh Azadi, Suvrit Sra
-icml-2014-297 | Towards scaling up Markov chain Monte Carlo: an adaptive subsampling approach | http://jmlr.org/proceedings/papers/v32/bardenet14.pdf | author:Rémi Bardenet, Arnaud Doucet, Chris Holmes
-icml-2014-298 | Tracking Adversarial Targets | http://jmlr.org/proceedings/papers/v32/abbasi-yadkori14.pdf | author:Yasin Abbasi-Yadkori, Peter Bartlett, Varun Kanade
-icml-2014-299 | Transductive Learning with Multi-class Volume Approximation | http://jmlr.org/proceedings/papers/v32/niu14.pdf | author:Gang Niu, Bo Dai, Christoffel du Plessis, Masashi Sugiyama
-icml-2014-300 | True Online TD | http://jmlr.org/proceedings/papers/v32/seijen14.pdf | author:Harm van Seijen, Rich Sutton
-icml-2014-301 | Two-Stage Metric Learning | http://jmlr.org/proceedings/papers/v32/wangc14.pdf | author:Jun Wang, Ke Sun, Fei Sha, Stéphane Marchand-Maillet, Alexandros Kalousis
-icml-2014-302 | Understanding Protein Dynamics with L1-Regularized Reversible Hidden Markov Models | http://jmlr.org/proceedings/papers/v32/mcgibbon14.pdf | author:Robert McGibbon, Bharath Ramsundar, Mohammad Sultan, Gert Kiss, Vijay Pande
-icml-2014-303 | Understanding the Limiting Factors of Topic Modeling via Posterior Contraction Analysis | http://jmlr.org/proceedings/papers/v32/tang14.pdf | author:Jian Tang, Zhaoshi Meng, Xuanlong Nguyen, Qiaozhu Mei, Ming Zhang
-icml-2014-304 | Unimodal Bandits: Regret Lower Bounds and Optimal Algorithms | http://jmlr.org/proceedings/papers/v32/combes14.pdf | author:Richard Combes, Alexandre Proutiere
-icml-2014-305 | Universal Matrix Completion | http://jmlr.org/proceedings/papers/v32/bhojanapalli14.pdf | author:Srinadh Bhojanapalli, Prateek Jain
-icml-2014-306 | Variational Inference for Sequential Distance Dependent Chinese Restaurant Process | http://jmlr.org/proceedings/papers/v32/bartunov14.pdf | author:Sergey Bartunov, Dmitry Vetrov
-icml-2014-307 | Von Mises-Fisher Clustering Models | http://jmlr.org/proceedings/papers/v32/gopal14.pdf | author:Siddharth Gopal, Yiming Yang
-icml-2014-308 | Wasserstein Propagation for Semi-Supervised Learning | http://jmlr.org/proceedings/papers/v32/solomon14.pdf | author:Justin Solomon, Raif Rustamov, Guibas Leonidas, Adrian Butscher
-icml-2014-309 | Weighted Graph Clustering with Non-Uniform Uncertainties | http://jmlr.org/proceedings/papers/v32/chenh14.pdf | author:Yudong Chen, Shiau Hong Lim, Huan Xu
+icml-2014-1 | (Near) Dimension Independent Risk Bounds for Differentially Private Learning | http://jmlr.org/proceedings/papers/v32/jain14.pdf | category:paper author:Prateek Jain, Abhradeep Guha Thakurta
+icml-2014-2 | A Bayesian Framework for Online Classifier Ensemble | http://jmlr.org/proceedings/papers/v32/bai14.pdf | category:paper author:Qinxun Bai, Henry Lam, Stan Sclaroff
+icml-2014-3 | A Bayesian Wilcoxon Signed-rank Test Based on the Dirichlet Process | http://jmlr.org/proceedings/papers/v32/benavoli14.pdf | category:paper author:Alessio Benavoli, Giorgio Corani, Francesca Mangili, Marco Zaffalon, Fabrizio Ruggeri
+icml-2014-4 | A Clockwork RNN | http://jmlr.org/proceedings/papers/v32/koutnik14.pdf | category:paper author:Jan Koutnik, Klaus Greff, Faustino Gomez, Juergen Schmidhuber
+icml-2014-5 | A Compilation Target for Probabilistic Programming Languages | http://jmlr.org/proceedings/papers/v32/paige14.pdf | category:paper author:Brooks Paige, Frank Wood
+icml-2014-6 | A Consistent Histogram Estimator for Exchangeable Graph Models | http://jmlr.org/proceedings/papers/v32/chan14.pdf | category:paper author:Stanley Chan, Edoardo Airoldi
+icml-2014-7 | A Convergence Rate Analysis for LogitBoost, MART and Their Variant | http://jmlr.org/proceedings/papers/v32/sunc14.pdf | category:paper author:Peng Sun, Tong Zhang, Jie Zhou
+icml-2014-8 | A Deep Semi-NMF Model for Learning Hidden Representations | http://jmlr.org/proceedings/papers/v32/trigeorgis14.pdf | category:paper author:George Trigeorgis, Konstantinos Bousmalis, Stefanos Zafeiriou, Bjoern Schuller
+icml-2014-9 | A Deep and Tractable Density Estimator | http://jmlr.org/proceedings/papers/v32/uria14.pdf | category:paper author:Benigno Uria, Iain Murray, Hugo Larochelle
+icml-2014-10 | A Discriminative Latent Variable Model for Online Clustering | http://jmlr.org/proceedings/papers/v32/samdani14.pdf | category:paper author:Rajhans Samdani, Kai-Wei Chang, Dan Roth
+icml-2014-11 | A Divide-and-Conquer Solver for Kernel Support Vector Machines | http://jmlr.org/proceedings/papers/v32/hsieha14.pdf | category:paper author:Cho-Jui Hsieh, Si Si, Inderjit Dhillon
+icml-2014-12 | A Highly Scalable Parallel Algorithm for Isotropic Total Variation Models | http://jmlr.org/proceedings/papers/v32/wangb14.pdf | category:paper author:Jie Wang, Qingyang Li, Sen Yang, Wei Fan, Jieping Ye
+icml-2014-13 | A Kernel Independence Test for Random Processes | http://jmlr.org/proceedings/papers/v32/chwialkowski14.pdf | category:paper author:Kacper Chwialkowski, Arthur Gretton
+icml-2014-14 | A New Q | http://jmlr.org/proceedings/papers/v32/sutton14.pdf | category:paper author:Rich Sutton, Ashique Rupam Mahmood, Doina Precup, Hado van Hasselt
+icml-2014-15 | A PAC-Bayesian Bound for Lifelong Learning | http://jmlr.org/proceedings/papers/v32/pentina14.pdf | category:paper author:Anastasia Pentina, Christoph Lampert
+icml-2014-16 | A Physics-Based Model Prior for Object-Oriented MDPs | http://jmlr.org/proceedings/papers/v32/scholz14.pdf | category:paper author:Jonathan Scholz, Martin Levihn, Charles Isbell
+icml-2014-17 | A Reversible Infinite HMM using Normalised Random Measures | http://jmlr.org/proceedings/papers/v32/knowles14.pdf | category:paper author:Konstantina Palla, David Knowles, Zoubin Ghahramani
+icml-2014-18 | A Single-Pass Algorithm for Efficiently Recovering Sparse Cluster Centers for High-dimensional Data | http://jmlr.org/proceedings/papers/v32/yib14.pdf | category:paper author:Jinfeng Yi, Lijun Zhang, Jun Wang, Rong Jin, Anil Jain
+icml-2014-19 | A Statistical Convergence Perspective of Algorithms for Rank Aggregation from Pairwise Data | http://jmlr.org/proceedings/papers/v32/rajkumar14.pdf | category:paper author:Arun Rajkumar, Shivani Agarwal
+icml-2014-20 | A Statistical Perspective on Algorithmic Leveraging | http://jmlr.org/proceedings/papers/v32/ma14.pdf | category:paper author:Ping Ma, Michael Mahoney, Bin Yu
+icml-2014-21 | A Unifying View of Representer Theorems | http://jmlr.org/proceedings/papers/v32/argyriou14.pdf | category:paper author:Andreas Argyriou, Francesco Dinuzzo
+icml-2014-22 | Accelerated Proximal Stochastic Dual Coordinate Ascent for Regularized Loss Minimization | http://jmlr.org/proceedings/papers/v32/shalev-shwartz14.pdf | category:paper author:Shai Shalev-Shwartz, Tong Zhang
+icml-2014-23 | Active Detection via Adaptive Submodularity | http://jmlr.org/proceedings/papers/v32/chena14.pdf | category:paper author:Yuxin Chen, Hiroaki Shioi, Cesar Fuentes Montesinos, Lian Pin Koh, Serge Wich, Andreas Krause
+icml-2014-24 | Active Learning of Parameterized Skills | http://jmlr.org/proceedings/papers/v32/silva14.pdf | category:paper author:Bruno Da Silva, George Konidaris, Andrew Barto
+icml-2014-25 | Active Teaching for Crowdsourcing Classification | http://jmlr.org/proceedings/papers/v32/singla14.pdf | category:paper author:Adish Singla, Ilija Bogunovic, Gabor Bartok, Amin Karbasi, Andreas Krause
+icml-2014-26 | Active Transfer Learning under Model Shift | http://jmlr.org/proceedings/papers/v32/wangi14.pdf | category:paper author:Xuezhi Wang, Tzu-Kuo Huang, Jeff Schneider
+icml-2014-27 | Adaptive Monte-Carlo via Bandit Allocation | http://jmlr.org/proceedings/papers/v32/neufeld14.pdf | category:paper author:James Neufeld, Andras Gyorgy, Csaba Szepesvari, Dale Schuurmans
+icml-2014-28 | Adaptivity and Optimism: An Improved Exponentiated Gradient Algorithm | http://jmlr.org/proceedings/papers/v32/steinhardtb14.pdf | category:paper author:Jacob Steinhardt, Percy Liang
+icml-2014-29 | Admixture of Poisson MRFs: A Topic Model with Word Dependencies | http://jmlr.org/proceedings/papers/v32/inouye14.pdf | category:paper author:David Inouye, Pradeep Ravikumar, Inderjit Dhillon
+icml-2014-30 | Affinity Weighted Embedding | http://jmlr.org/proceedings/papers/v32/weston14.pdf | category:paper author:Jason Weston, Ron Weiss, Hector Yee
+icml-2014-31 | Aggregating Ordinal Labels from Crowds by Minimax Conditional Entropy | http://jmlr.org/proceedings/papers/v32/zhouc14.pdf | category:paper author:Dengyong Zhou, Qiang Liu, John Platt, Christopher Meek
+icml-2014-32 | Agnostic Bayesian Learning of Ensembles | http://jmlr.org/proceedings/papers/v32/lacoste14.pdf | category:paper author:Alexandre Lacoste, Mario Marchand, Franois Laviolette, Hugo Larochelle
+icml-2014-33 | Alternating Minimization for Mixed Linear Regression | http://jmlr.org/proceedings/papers/v32/yia14.pdf | category:paper author:Xinyang Yi, Constantine Caramanis, Sujay Sanghavi
+icml-2014-34 | An Adaptive Accelerated Proximal Gradient Method and its Homotopy Continuation for Sparse Optimization | http://jmlr.org/proceedings/papers/v32/lin14.pdf | category:paper author:Qihang Lin, Lin Xiao
+icml-2014-35 | An Adaptive Low Dimensional quasi-Newton Sum of Functions Optimizer | http://jmlr.org/proceedings/papers/v32/sohl-dicksteinb14.pdf | category:paper author:Jascha Sohl-Dickstein, Ben Poole, Surya Ganguli
+icml-2014-36 | An Analysis of State-Relevance Weights and Sampling Distributions on L1-Regularized Approximate Linear Programming Approximation Accuracy | http://jmlr.org/proceedings/papers/v32/taylor14.pdf | category:paper author:Gavin Taylor, Connor Geer, David Piekut
+icml-2014-37 | An Asynchronous Parallel Stochastic Coordinate Descent Algorithm | http://jmlr.org/proceedings/papers/v32/liud14.pdf | category:paper author:Ji Liu, Steve Wright, Christopher Re, Srikrishna Sridhar, Vicotr Bittorf
+icml-2014-38 | An Efficient Approach for Assessing Hyperparameter Importance | http://jmlr.org/proceedings/papers/v32/hutter14.pdf | category:paper author:Frank Hutter, Holger Hoos, Kevin Leyton-Brown
+icml-2014-39 | An Information Geometry of Statistical Manifold Learning | http://jmlr.org/proceedings/papers/v32/suna14.pdf | category:paper author:Ke Sun, Stéphane Marchand-Maillet
+icml-2014-40 | Anomaly Ranking as Supervised Bipartite Ranking | http://jmlr.org/proceedings/papers/v32/clemencon14.pdf | category:paper author:Stephan Clémençon, Sylvain Robbiano
+icml-2014-41 | Anti-differentiating Approximation Algorithms: A case study with Min-cuts, Spectral, and Flow | http://jmlr.org/proceedings/papers/v32/gleich14.pdf | category:paper author:David Gleich, Michael Mahoney
+icml-2014-42 | Approximate Policy Iteration Schemes: A Comparison | http://jmlr.org/proceedings/papers/v32/scherrer14.pdf | category:paper author:Bruno Scherrer
+icml-2014-43 | Approximation Analysis of Stochastic Gradient Langevin Dynamics by using Fokker-Planck Equation and Ito Process | http://jmlr.org/proceedings/papers/v32/satoa14.pdf | category:paper author:Issei Sato, Hiroshi Nakagawa
+icml-2014-44 | Asymptotically consistent estimation of the number of change points in highly dependent time series | http://jmlr.org/proceedings/papers/v32/khaleghi14.pdf | category:paper author:Azadeh Khaleghi, Daniil Ryabko
+icml-2014-45 | Asynchronous Distributed ADMM Algorithm for Global Variable Consensus Optimization | http://jmlr.org/proceedings/papers/v32/zhange14.pdf | category:paper author:Ruiliang Zhang, James Kwok
+icml-2014-46 | Austerity in MCMC Land: Cutting the Metropolis-Hastings Budget | http://jmlr.org/proceedings/papers/v32/korattikara14.pdf | category:paper author:Anoop Korattikara, Yutian Chen, Max Welling
+icml-2014-47 | Automated Inference of Point of View from User Interactions in Collective Intelligence Venues | http://jmlr.org/proceedings/papers/v32/das14.pdf | category:paper author:Sanmay Das, Allen Lavoie
+icml-2014-48 | Bayesian Max-margin Multi-Task Learning with Data Augmentation | http://jmlr.org/proceedings/papers/v32/lic14.pdf | category:paper author:Chengtao Li, Jun Zhu, Jianfei Chen
+icml-2014-49 | Bayesian Nonparametric Multilevel Clustering with Group-Level Contexts | http://jmlr.org/proceedings/papers/v32/nguyenb14.pdf | category:paper author:Tien Vu Nguyen, Dinh Phung, Xuanlong Nguyen, Swetha Venkatesh, Hung Bui
+icml-2014-50 | Bayesian Optimization with Inequality Constraints | http://jmlr.org/proceedings/papers/v32/gardner14.pdf | category:paper author:Jacob Gardner, Matt Kusner, Kilian Weinberger, John Cunningham, Zhixiang (Eddie) Xu
+icml-2014-51 | Beta Diffusion Trees | http://jmlr.org/proceedings/papers/v32/heaukulani14.pdf | category:paper author:Creighton Heaukulani, David Knowles, Zoubin Ghahramani
+icml-2014-52 | Bias in Natural Actor-Critic Algorithms | http://jmlr.org/proceedings/papers/v32/thomas14.pdf | category:paper author:Philip Thomas
+icml-2014-53 | Boosting multi-step autoregressive forecasts | http://jmlr.org/proceedings/papers/v32/taieb14.pdf | category:paper author:Souhaib Ben Taieb, Rob Hyndman
+icml-2014-54 | Boosting with Online Binary Learners for the Multiclass Bandit Problem | http://jmlr.org/proceedings/papers/v32/chenb14.pdf | category:paper author:Shang-Tse Chen, Hsuan-Tien Lin, Chi-Jen Lu
+icml-2014-55 | Buffer k-d Trees: Processing Massive Nearest Neighbor Queries on GPUs | http://jmlr.org/proceedings/papers/v32/gieseke14.pdf | category:paper author:Fabian Gieseke, Justin Heinermann, Cosmin Oancea, Christian Igel
+icml-2014-56 | Circulant Binary Embedding | http://jmlr.org/proceedings/papers/v32/yub14.pdf | category:paper author:Felix Yu, Sanjiv Kumar, Yunchao Gong, Shih-Fu Chang
+icml-2014-57 | Clustering in the Presence of Background Noise | http://jmlr.org/proceedings/papers/v32/ben-david14.pdf | category:paper author:Nika Haghtalab, Shai Ben-David
+icml-2014-58 | Coding for Random Projections | http://jmlr.org/proceedings/papers/v32/lie14.pdf | category:paper author:Ping Li, Michael Mitzenmacher, Anshumali Shrivastava
+icml-2014-59 | Coherent Matrix Completion | http://jmlr.org/proceedings/papers/v32/chenc14.pdf | category:paper author:Yudong Chen, Srinadh Bhojanapalli, Sujay Sanghavi, Rachel Ward
+icml-2014-60 | Cold-start Active Learning with Robust Ordinal Matrix Factorization | http://jmlr.org/proceedings/papers/v32/houlsby14.pdf | category:paper author:Neil Houlsby, Jose Miguel Hernandez-Lobato, Zoubin Ghahramani
+icml-2014-61 | Combinatorial Partial Monitoring Game with Linear Feedback and Its Applications | http://jmlr.org/proceedings/papers/v32/lind14.pdf | category:paper author:Tian Lin, Bruno Abrahao, Robert Kleinberg, John Lui, Wei Chen
+icml-2014-62 | Communication-Efficient Distributed Optimization using an Approximate Newton-type Method | http://jmlr.org/proceedings/papers/v32/shamir14.pdf | category:paper author:Ohad Shamir, Nati Srebro, Tong Zhang
+icml-2014-63 | Compact Random Feature Maps | http://jmlr.org/proceedings/papers/v32/hamid14.pdf | category:paper author:Raffay Hamid, Alex Gittens, Ying Xiao, Dennis Decoste
+icml-2014-64 | Composite Quantization for Approximate Nearest Neighbor Search | http://jmlr.org/proceedings/papers/v32/zhangd14.pdf | category:paper author:Ting Zhang, Chao Du, Jingdong Wang
+icml-2014-65 | Compositional Morphology for Word Representations and Language Modelling | http://jmlr.org/proceedings/papers/v32/botha14.pdf | category:paper author:Jan Botha, Phil Blunsom
+icml-2014-66 | Computing Parametric Ranking Models via Rank-Breaking | http://jmlr.org/proceedings/papers/v32/soufiani14.pdf | category:paper author:Hossein Azari Soufiani, David Parkes, Lirong Xia
+icml-2014-67 | Concentration in Unbounded Metric Spaces and Algorithmic Stability | http://jmlr.org/proceedings/papers/v32/kontorovicha14.pdf | category:paper author:Aryeh Kontorovich
+icml-2014-68 | Concept Drift Detection Through Resampling | http://jmlr.org/proceedings/papers/v32/harel14.pdf | category:paper author:Maayan Harel, Shie Mannor, Ran El-Yaniv, Koby Crammer
+icml-2014-69 | Condensed Filter Tree for Cost-Sensitive Multi-Label Classification | http://jmlr.org/proceedings/papers/v32/lia14.pdf | category:paper author:Chun-Liang Li, Hsuan-Tien Lin
+icml-2014-70 | Consistency of Causal Inference under the Additive Noise Model | http://jmlr.org/proceedings/papers/v32/kpotufe14.pdf | category:paper author:Samory Kpotufe, Eleni Sgouritsa, Dominik Janzing, Bernhard Schoelkopf
+icml-2014-71 | Convergence rates for persistence diagram estimation in Topological Data Analysis | http://jmlr.org/proceedings/papers/v32/chazal14.pdf | category:paper author:Frédéric Chazal, Marc Glisse, Catherine Labruère, Bertrand Michel
+icml-2014-72 | Convex Total Least Squares | http://jmlr.org/proceedings/papers/v32/malioutov14.pdf | category:paper author:Dmitry Malioutov, Nikolai Slavov
+icml-2014-73 | Coordinate-descent for learning orthogonal matrices through Givens rotations | http://jmlr.org/proceedings/papers/v32/shalit14.pdf | category:paper author:Uri Shalit, Gal Chechik
+icml-2014-74 | Coupled Group Lasso for Web-Scale CTR Prediction in Display Advertising | http://jmlr.org/proceedings/papers/v32/yan14.pdf | category:paper author:Ling Yan, Wu-Jun Li, Gui-Rong Xue, Dingyi Han
+icml-2014-75 | Covering Number for Efficient Heuristic-based POMDP Planning | http://jmlr.org/proceedings/papers/v32/zhanga14.pdf | category:paper author:Zongzhang Zhang, David Hsu, Wee Sun Lee
+icml-2014-76 | DeCAF: A Deep Convolutional Activation Feature for Generic Visual Recognition | http://jmlr.org/proceedings/papers/v32/donahue14.pdf | category:paper author:Jeff Donahue, Yangqing Jia, Oriol Vinyals, Judy Hoffman, Ning Zhang, Eric Tzeng, Trevor Darrell
+icml-2014-77 | Deep AutoRegressive Networks | http://jmlr.org/proceedings/papers/v32/gregor14.pdf | category:paper author:Karol Gregor, Ivo Danihelka, Andriy Mnih, Charles Blundell, Daan Wierstra
+icml-2014-78 | Deep Boosting | http://jmlr.org/proceedings/papers/v32/cortesb14.pdf | category:paper author:Corinna Cortes, Mehryar Mohri, Umar Syed
+icml-2014-79 | Deep Generative Stochastic Networks Trainable by Backprop | http://jmlr.org/proceedings/papers/v32/bengio14.pdf | category:paper author:Yoshua Bengio, Eric Laufer, Jason Yosinski
+icml-2014-80 | Deep Supervised and Convolutional Generative Stochastic Network for Protein Secondary Structure Prediction | http://jmlr.org/proceedings/papers/v32/zhou14.pdf | category:paper author:Jian Zhou, Olga Troyanskaya
+icml-2014-81 | Demystifying Information-Theoretic Clustering | http://jmlr.org/proceedings/papers/v32/steeg14.pdf | category:paper author:Greg Ver Steeg, Aram Galstyan, Fei Sha, Simon DeDeo
+icml-2014-82 | Densifying One Permutation Hashing via Rotation for Fast Near Neighbor Search | http://jmlr.org/proceedings/papers/v32/shrivastava14.pdf | category:paper author:Anshumali Shrivastava, Ping Li
+icml-2014-83 | Deterministic Anytime Inference for Stochastic Continuous-Time Markov Processes | http://jmlr.org/proceedings/papers/v32/celikkaya14.pdf | category:paper author:E. Busra Celikkaya, Christian Shelton
+icml-2014-84 | Deterministic Policy Gradient Algorithms | http://jmlr.org/proceedings/papers/v32/silver14.pdf | category:paper author:David Silver, Guy Lever, Nicolas Heess, Thomas Degris, Daan Wierstra, Martin Riedmiller
+icml-2014-85 | Diagnosis determination: decision trees optimizing simultaneously worst and expected testing cost | http://jmlr.org/proceedings/papers/v32/cicalese14.pdf | category:paper author:Ferdinando Cicalese, Eduardo Laber, Aline Medeiros Saettler
+icml-2014-86 | Dimension-free Concentration Bounds on Hankel Matrices for Spectral Learning | http://jmlr.org/proceedings/papers/v32/denis14.pdf | category:paper author:François Denis, Mattias Gybels, Amaury Habrard
+icml-2014-87 | Discovering Latent Network Structure in Point Process Data | http://jmlr.org/proceedings/papers/v32/linderman14.pdf | category:paper author:Scott Linderman, Ryan Adams
+icml-2014-88 | Discrete Chebyshev Classifiers | http://jmlr.org/proceedings/papers/v32/eban14.pdf | category:paper author:Elad Eban, Elad Mezuman, Amir Globerson
+icml-2014-89 | Discriminative Features via Generalized Eigenvectors | http://jmlr.org/proceedings/papers/v32/karampatziakis14.pdf | category:paper author:Nikos Karampatziakis, Paul Mineiro
+icml-2014-90 | Distributed Representations of Sentences and Documents | http://jmlr.org/proceedings/papers/v32/le14.pdf | category:paper author:Quoc Le, Tomas Mikolov
+icml-2014-91 | Distributed Stochastic Gradient MCMC | http://jmlr.org/proceedings/papers/v32/ahn14.pdf | category:paper author:Sungjin Ahn, Babak Shahbaba, Max Welling
+icml-2014-92 | Doubly Stochastic Variational Bayes for non-Conjugate Inference | http://jmlr.org/proceedings/papers/v32/titsias14.pdf | category:paper author:Michalis Titsias, Miguel Lázaro-Gredilla
+icml-2014-93 | Dual Query: Practical Private Query Release for High Dimensional Data | http://jmlr.org/proceedings/papers/v32/gaboardi14.pdf | category:paper author:Marco Gaboardi Emilio Jesus Gallego Arias, Justin Hsu, Aaron Roth, Zhiwei Steven Wu
+icml-2014-94 | Dynamic Programming Boosting for Discriminative Macro-Action Discovery | http://jmlr.org/proceedings/papers/v32/lefakis14.pdf | category:paper author:Leonidas Lefakis, Francois Fleuret
+icml-2014-95 | Effective Bayesian Modeling of Groups of Related Count Time Series | http://jmlr.org/proceedings/papers/v32/chapados14.pdf | category:paper author:Nicolas Chapados
+icml-2014-96 | Efficient Algorithms for Robust One-bit Compressive Sensing | http://jmlr.org/proceedings/papers/v32/zhangc14.pdf | category:paper author:Lijun Zhang, Jinfeng Yi, Rong Jin
+icml-2014-97 | Efficient Approximation of Cross-Validation for Kernel Methods using Bouligand Influence Function | http://jmlr.org/proceedings/papers/v32/liua14.pdf | category:paper author:Yong Liu, Shali Jiang, Shizhong Liao
+icml-2014-98 | Efficient Continuous-Time Markov Chain Estimation | http://jmlr.org/proceedings/papers/v32/hajiaghayi14.pdf | category:paper author:Monir Hajiaghayi, Bonnie Kirkpatrick, Liangliang Wang, Alexandre Bouchard-Côté
+icml-2014-99 | Efficient Dimensionality Reduction for High-Dimensional Network Estimation | http://jmlr.org/proceedings/papers/v32/celik14.pdf | category:paper author:Safiye Celik, Benjamin Logsdon, Su-In Lee
+icml-2014-100 | Efficient Gradient-Based Inference through Transformations between Bayes Nets and Neural Nets | http://jmlr.org/proceedings/papers/v32/kingma14.pdf | category:paper author:Diederik Kingma, Max Welling
+icml-2014-101 | Efficient Label Propagation | http://jmlr.org/proceedings/papers/v32/fujiwara14.pdf | category:paper author:Yasuhiro Fujiwara, Go Irie
+icml-2014-102 | Efficient Learning of Mahalanobis Metrics for Ranking | http://jmlr.org/proceedings/papers/v32/lim14.pdf | category:paper author:Daryl Lim, Gert Lanckriet
+icml-2014-103 | Elementary Estimators for High-Dimensional Linear Regression | http://jmlr.org/proceedings/papers/v32/yangc14.pdf | category:paper author:Eunho Yang, Aurelie Lozano, Pradeep  Ravikumar
+icml-2014-104 | Elementary Estimators for Sparse Covariance Matrices and other Structured Moments | http://jmlr.org/proceedings/papers/v32/yangd14.pdf | category:paper author:Eunho Yang, Aurelie Lozano, Pradeep Ravikumar
+icml-2014-105 | Ensemble Methods for Structured Prediction | http://jmlr.org/proceedings/papers/v32/cortesa14.pdf | category:paper author:Corinna Cortes, Vitaly Kuznetsov, Mehryar Mohri
+icml-2014-106 | Ensemble-Based Tracking: Aggregating Crowdsourced Structured Time Series Data | http://jmlr.org/proceedings/papers/v32/wangg14.pdf | category:paper author:Naiyan Wang, Dit-Yan Yeung
+icml-2014-107 | Estimating Diffusion Network Structures: Recovery Conditions, Sample Complexity & Soft-thresholding Algorithm | http://jmlr.org/proceedings/papers/v32/daneshmand14.pdf | category:paper author:Hadi Daneshmand, Manuel Gomez-Rodriguez, Le Song, Bernhard Schoelkopf
+icml-2014-108 | Estimating Latent-Variable Graphical Models using Moments and Likelihoods | http://jmlr.org/proceedings/papers/v32/chaganty14.pdf | category:paper author:Arun Tejasvi Chaganty, Percy Liang
+icml-2014-109 | Exchangeable Variable Models | http://jmlr.org/proceedings/papers/v32/niepert14.pdf | category:paper author:Mathias Niepert, Pedro Domingos
+icml-2014-110 | Exponential Family Matrix Completion under Structural Constraints | http://jmlr.org/proceedings/papers/v32/gunasekar14.pdf | category:paper author:Suriya Gunasekar, Pradeep Ravikumar, Joydeep Ghosh
+icml-2014-111 | Factorized Point Process Intensities: A Spatial Analysis of Professional Basketball | http://jmlr.org/proceedings/papers/v32/miller14.pdf | category:paper author:Andrew Miller, Luke Bornn, Ryan Adams, Kirk Goldsberry
+icml-2014-112 | Fast Allocation of Gaussian Process Experts | http://jmlr.org/proceedings/papers/v32/nguyena14.pdf | category:paper author:Trung Nguyen, Edwin Bonilla
+icml-2014-113 | Fast Computation of Wasserstein Barycenters | http://jmlr.org/proceedings/papers/v32/cuturi14.pdf | category:paper author:Marco Cuturi, Arnaud Doucet
+icml-2014-114 | Fast Multi-stage Submodular Maximization | http://jmlr.org/proceedings/papers/v32/wei14.pdf | category:paper author:Kai Wei, Rishabh Iyer, Jeff Bilmes
+icml-2014-115 | Fast Stochastic Alternating Direction Method of Multipliers | http://jmlr.org/proceedings/papers/v32/zhong14.pdf | category:paper author:Wenliang Zhong, James Kwok
+icml-2014-116 | Filtering with Abstract Particles | http://jmlr.org/proceedings/papers/v32/steinhardt14.pdf | category:paper author:Jacob Steinhardt, Percy Liang
+icml-2014-117 | Finding Dense Subgraphs via Low-Rank Bilinear Optimization | http://jmlr.org/proceedings/papers/v32/papailiopoulos14.pdf | category:paper author:Dimitris Papailiopoulos, Ioannis Mitliagkas, Alexandros Dimakis, Constantine Caramanis
+icml-2014-118 | Finito: A Faster, Permutable Incremental Gradient Method for Big Data Problems | http://jmlr.org/proceedings/papers/v32/defazio14.pdf | category:paper author:Aaron Defazio, Justin Domke, Tiberio Caetano
+icml-2014-119 | Forward-Backward Greedy Algorithms for General Convex Smooth Functions over A Cardinality Constraint | http://jmlr.org/proceedings/papers/v32/karampatziakis14.pdf | category:paper author:Ji Liu, Jieping Ye, Ryohei Fujimaki
+icml-2014-120 | From Exponential to Linear Complexity When Learning Practical Markov Random Fields | http://jmlr.org/proceedings/papers/v32/mizrahi14.pdf | category:paper author:Yariv Mizrahi, Nando De Freitas, Luis Tenorio
+icml-2014-121 | GEV-Canonical Regression for Accurate Binary Class Probability Estimation when One Class is Rare | http://jmlr.org/proceedings/papers/v32/agarwalc14.pdf | category:paper author:Arpit Agarwal, Harikrishna Narasimhan, Shivaram Kalyanakrishnan, Shivani Agarwal
+icml-2014-122 | Gaussian Approximation of Collective Graphical Models | http://jmlr.org/proceedings/papers/v32/liuf14.pdf | category:paper author:Liping Liu, Daniel Sheldon, Thomas Dietterich
+icml-2014-123 | Gaussian Process Classification and Active Learning with Multiple Annotators | http://jmlr.org/proceedings/papers/v32/rodrigues14.pdf | category:paper author:Filipe Rodrigues, Francisco Pereira, Bernardete Ribeiro
+icml-2014-124 | Gaussian Process Optimization with Mutual Information | http://jmlr.org/proceedings/papers/v32/contal14.pdf | category:paper author:Emile Contal, Nicolas Vayatis
+icml-2014-125 | Gaussian Processes for Bayesian Estimation in Ordinary Differential Equations | http://jmlr.org/proceedings/papers/v32/barber14.pdf | category:paper author:David Barber, Yali Wang
+icml-2014-126 | GeNGA: A Generalization of Natural Gradient Ascent with Positive and Negative Convergence Results | http://jmlr.org/proceedings/papers/v32/thomasb14.pdf | category:paper author:Philip Thomas
+icml-2014-127 | Generalized Exponential Concentration Inequality for Renyi Divergence Estimation | http://jmlr.org/proceedings/papers/v32/singh14.pdf | category:paper author:Shashank Singh, Barnabas Poczos
+icml-2014-128 | Geodesic Distance Function Learning via Heat Flows on Vector Fields | http://jmlr.org/proceedings/papers/v32/linb14.pdf | category:paper author:Binbin Lin, Ji Yang, Xiaofei He, Jieping Ye
+icml-2014-129 | Global Graph Kernels Using Geometric Embeddings | http://jmlr.org/proceedings/papers/v32/johansson14.pdf | category:paper author:Fredrik Johansson, Vinay Jethava, Devdatt Dubhashi, Chiranjib Bhattacharyya
+icml-2014-130 | Globally Convergent Parallel MAP LP Relaxation Solver using the Frank-Wolfe Algorithm | http://jmlr.org/proceedings/papers/v32/schwing14.pdf | category:paper author:Alexander Schwing, Tamir Hazan, Marc Pollefeys, Raquel Urtasun
+icml-2014-131 | Gradient Hard Thresholding Pursuit for Sparsity-Constrained Optimization | http://jmlr.org/proceedings/papers/v32/yuan14.pdf | category:paper author:Xiaotong Yuan, Ping Li, Tong Zhang
+icml-2014-132 | Guess-Averse Loss Functions for Cost-Sensitive Multiclass Boosting | http://jmlr.org/proceedings/papers/v32/beijbom14.pdf | category:paper author:Oscar Beijbom, Mohammad Saberian, Nuno Vasconcelos, David Kriegman
+icml-2014-133 | Hamiltonian Monte Carlo Without Detailed Balance | http://jmlr.org/proceedings/papers/v32/sohl-dickstein14.pdf | category:paper author:Jascha Sohl-Dickstein, Mayur Mudigonda, Michael DeWeese
+icml-2014-134 | Hard-margin Active Linear Regression | http://jmlr.org/proceedings/papers/v32/karnin14.pdf | category:paper author:Zohar Karnin, Elad Hazan
+icml-2014-135 | Heavy-tailed Regression with a Generalized Median-of-means | http://jmlr.org/proceedings/papers/v32/hsu14.pdf | category:paper author:Daniel Hsu, Sivan Sabato
+icml-2014-136 | Hierarchical Conditional Random Fields for Outlier Detection: An Application to Detecting Epileptogenic Cortical Malformations | http://jmlr.org/proceedings/papers/v32/ahmed14.pdf | category:paper author:Bilal Ahmed, Karen Blackmon, Thomas Thesen, Ruben Kuzniecky, Chad Carlson, Jacqueline French, Werner Doyle, Carla Brodley
+icml-2014-137 | Hierarchical Dirichlet Scaling Process | http://jmlr.org/proceedings/papers/v32/kim14.pdf | category:paper author:Dongwoo Kim, Alice Oh
+icml-2014-138 | Hierarchical Quasi-Clustering Methods for Asymmetric Networks | http://jmlr.org/proceedings/papers/v32/carlsson14.pdf | category:paper author:Gunnar Carlsson, Facundo Mémoli, Alejandro Ribeiro, Santiago Segarra
+icml-2014-139 | High Order Regularization for Semi-Supervised Learning of Structured Output Problems | http://jmlr.org/proceedings/papers/v32/lif14.pdf | category:paper author:Yujia Li, Rich Zemel
+icml-2014-140 | Implicit Particle Sequential Monte Carlo | http://jmlr.org/proceedings/papers/v32/jun14.pdf | category:paper author:Seong-Hwan Jun, Alexandre Bouchard-Côté
+icml-2014-141 | Inferning with High Girth Graphical Models | http://jmlr.org/proceedings/papers/v32/heinemann14.pdf | category:paper author:Uri Heinemann, Amir Globerson
+icml-2014-142 | Influence Function Learning in Information Diffusion Networks | http://jmlr.org/proceedings/papers/v32/du14.pdf | category:paper author:Nan Du, Yingyu Liang, Le Song, Maria Balcan
+icml-2014-143 | Input Warping for Bayesian Optimization of Non-stationary Functions | http://jmlr.org/proceedings/papers/v32/snoek14.pdf | category:paper author:Jasper Snoek, Kevin Swersky, Rich Zemel, Ryan Adams
+icml-2014-144 | Joint Inference of Multiple Label Types in Large Networks | http://jmlr.org/proceedings/papers/v32/chakrabarti14.pdf | category:paper author:Deepayan Chakrabarti, Stanislav Funiak, Jonathan Chang, Sofus Macskassy
+icml-2014-145 | K-means Recovers ICA Filters when Independent Components are Sparse | http://jmlr.org/proceedings/papers/v32/vinnikov14.pdf | category:paper author:Alon Vinnikov, Shai Shalev-Shwartz
+icml-2014-146 | Kernel Adaptive Metropolis-Hastings | http://jmlr.org/proceedings/papers/v32/sejdinovic14.pdf | category:paper author:Dino Sejdinovic, Heiko Strathmann, Maria Lomeli Garcia, Christophe Andrieu, Arthur Gretton
+icml-2014-147 | Kernel Mean Estimation and Stein Effect | http://jmlr.org/proceedings/papers/v32/muandet14.pdf | category:paper author:Krikamol Muandet, Kenji Fukumizu, Bharath Sriperumbudur, Arthur Gretton, Bernhard Schoelkopf
+icml-2014-148 | Large-Margin Metric Learning for Constrained Partitioning Problems | http://jmlr.org/proceedings/papers/v32/lajugie14.pdf | category:paper author:Rémi Lajugie, Francis Bach, Sylvain Arlot
+icml-2014-149 | Large-margin Weakly Supervised Dimensionality Reduction | http://jmlr.org/proceedings/papers/v32/xu14.pdf | category:paper author:Chang Xu, Dacheng Tao, Chao Xu, Yong Rui
+icml-2014-150 | Large-scale Multi-label Learning with Missing Labels | http://jmlr.org/proceedings/papers/v32/yu14.pdf | category:paper author:Hsiang-Fu Yu, Prateek Jain, Purushottam Kar, Inderjit Dhillon
+icml-2014-151 | Latent Bandits | http://jmlr.org/proceedings/papers/v32/maillard14.pdf | category:paper author:Odalric-Ambrym Maillard, Shie Mannor
+icml-2014-152 | Latent Confusion Analysis by Normalized Gamma Construction | http://jmlr.org/proceedings/papers/v32/satob14.pdf | category:paper author:Issei Sato, Kashima Hisashi, Hiroshi Nakagawa
+icml-2014-153 | Latent Semantic Representation Learning for Scene Classification | http://jmlr.org/proceedings/papers/v32/lid14.pdf | category:paper author:Xin Li, Yuhong Guo
+icml-2014-154 | Latent Variable Copula Inference for Bundle Pricing from Retail Transaction Data | http://jmlr.org/proceedings/papers/v32/letham14.pdf | category:paper author:Benjamin Letham, Wei Sun, Anshul Sheopuri
+icml-2014-155 | Learnability of the Superset Label Learning Problem | http://jmlr.org/proceedings/papers/v32/liug14.pdf | category:paper author:Liping Liu, Thomas Dietterich
+icml-2014-156 | Learning Character-level Representations for Part-of-Speech Tagging | http://jmlr.org/proceedings/papers/v32/santos14.pdf | category:paper author:Cicero Dos Santos, Bianca Zadrozny
+icml-2014-157 | Learning Complex Neural Network Policies with Trajectory Optimization | http://jmlr.org/proceedings/papers/v32/levine14.pdf | category:paper author:Sergey Levine, Vladlen Koltun
+icml-2014-158 | Learning Graphs with a Few Hubs | http://jmlr.org/proceedings/papers/v32/tandon14.pdf | category:paper author:Rashish Tandon, Pradeep Ravikumar
+icml-2014-159 | Learning Latent Variable Gaussian Graphical Models | http://jmlr.org/proceedings/papers/v32/meng14.pdf | category:paper author:Zhaoshi Meng, Brian Eriksson, Al Hero
+icml-2014-160 | Learning Mixtures of Linear Classifiers | http://jmlr.org/proceedings/papers/v32/sunb14.pdf | category:paper author:Yuekai Sun, Stratis Ioannidis, Andrea Montanari
+icml-2014-161 | Learning Modular Structures from Network Data and Node Variables | http://jmlr.org/proceedings/papers/v32/azizi14.pdf | category:paper author:Elham Azizi, Edoardo Airoldi
+icml-2014-162 | Learning Ordered Representations with Nested Dropout | http://jmlr.org/proceedings/papers/v32/rippel14.pdf | category:paper author:Oren Rippel, Michael Gelbart, Ryan Adams
+icml-2014-163 | Learning Polynomials with Neural Networks | http://jmlr.org/proceedings/papers/v32/andoni14.pdf | category:paper author:Alexandr Andoni, Rina Panigrahy, Gregory Valiant, Li Zhang
+icml-2014-164 | Learning Representations for Interacting Manifolds with Higher-order Boltzmann Machines | http://jmlr.org/proceedings/papers/v32/reed14.pdf | category:paper author:Scott Reed, Kihyuk Sohn, Yuting Zhang, Honglak Lee
+icml-2014-165 | Learning Sum-Product Networks with Direct and Indirect Variable Interactions | http://jmlr.org/proceedings/papers/v32/rooshenas14.pdf | category:paper author:Amirmohammad Rooshenas, Daniel Lowd
+icml-2014-166 | Learning Theory and Algorithms for revenue optimization in second price auctions with reserve | http://jmlr.org/proceedings/papers/v32/medina14.pdf | category:paper author:Mehryar Mohri, Andres Munoz Medina
+icml-2014-167 | Learning With Priors | http://jmlr.org/proceedings/papers/v32/honorio14.pdf | category:paper author:Jean Honorio, Tommi Jaakkola
+icml-2014-168 | Learning and Planning with Relational Uncertainty Predicates over the Existence of Objects | http://jmlr.org/proceedings/papers/v32/ngo14.pdf | category:paper author:Vien Ngo, Marc Toussaint
+icml-2014-169 | Learning by Stretching Deep Networks | http://jmlr.org/proceedings/papers/v32/pandey14.pdf | category:paper author:Gaurav Pandey, Ambedkar Dukkipati
+icml-2014-170 | Learning from Contagion  | http://jmlr.org/proceedings/papers/v32/amin14.pdf | category:paper author:Kareem Amin, Hoda Heidari, Michael Kearns
+icml-2014-171 | Learning the Consistent Behavior of Common Users for Target Node Prediction across Social Networks | http://jmlr.org/proceedings/papers/v32/wu14.pdf | category:paper author:Shan-Hung Wu, Hao-Heng Chien, Kuan-Hua Lin, Philip Yu
+icml-2014-172 | Learning the Irreducible Representations of Commutative Lie Groups | http://jmlr.org/proceedings/papers/v32/cohen14.pdf | category:paper author:Taco Cohen, Max Welling
+icml-2014-173 | Learning the Parameters of Determinantal Point Process Kernels | http://jmlr.org/proceedings/papers/v32/affandi14.pdf | category:paper author:Raja Hafiz Affandi, Emily Fox, Ryan Adams, Ben Taskar
+icml-2014-174 | Learning with Smoothness: Pointwise, Graph-based, Probabilistic | http://jmlr.org/proceedings/papers/v32/fang14.pdf | category:paper author:Yuan Fang, Kevin Chang, Hady Lauw
+icml-2014-175 | Least Squares Revisited: Scalable Approaches for Multi-class Prediction | http://jmlr.org/proceedings/papers/v32/agarwala14.pdf | category:paper author:Alekh Agarwal, Sham Kakade, Nikos Karampatziakis, Le Song, Gregory Valiant
+icml-2014-176 | Linear Programming for Large-Scale Markov Decision Problems | http://jmlr.org/proceedings/papers/v32/malek14.pdf | category:paper author:Alan Malek, Yasin Abbasi-Yadkori, Peter Bartlett
+icml-2014-177 | Linear Time Solver for Primal SVM | http://jmlr.org/proceedings/papers/v32/niea14.pdf | category:paper author:Feiping Nie, Yizhen Huang, Heng Huang
+icml-2014-178 | Local Algorithms for Interactive Clustering | http://jmlr.org/proceedings/papers/v32/awasthi14.pdf | category:paper author:Pranjal Awasthi, Konstantin Voevodski, Maria Balcan
+icml-2014-179 | Local Ordinal Embedding | http://jmlr.org/proceedings/papers/v32/terada14.pdf | category:paper author:Yoshikazu Terada, Ulrike von Luxburg
+icml-2014-180 | Low-density Parity Constraints for Hashing-Based Discrete Integration | http://jmlr.org/proceedings/papers/v32/ermon14.pdf | category:paper author:Stefano Ermon, Carla Gomes, Ashish Sabharwal, Bart Selman
+icml-2014-181 | Lower Bounds for the Gibbs Sampler over Mixtures of Gaussians | http://jmlr.org/proceedings/papers/v32/tosh14.pdf | category:paper author:Christopher Tosh, Sanjoy Dasgupta
+icml-2014-182 | Making Fisher Discriminant Analysis Scalable | http://jmlr.org/proceedings/papers/v32/tu14.pdf | category:paper author:Bojun Tu, Hui Qian, Zhihua Zhang
+icml-2014-183 | Making the Most of Bag of Words: Sentence Regularization with Alternating Direction Method of Multipliers | http://jmlr.org/proceedings/papers/v32/yogatama14.pdf | category:paper author:Dani Yogatama, Noah Smith
+icml-2014-184 | Marginal Structured SVM with Hidden Variables | http://jmlr.org/proceedings/papers/v32/ping14.pdf | category:paper author:Wei Ping, Qiang Liu, Alex Ihler
+icml-2014-185 | Marginalized Denoising Auto-encoders for Nonlinear Representations | http://jmlr.org/proceedings/papers/v32/cheng14.pdf | category:paper author:Minmin Chen, Kilian Weinberger, Fei Sha, Yoshua Bengio
+icml-2014-186 | Margins, Kernels and Non-linear Smoothed Perceptrons | http://jmlr.org/proceedings/papers/v32/ramdas14.pdf | category:paper author:Aaditya Ramdas, Javier Peña
+icml-2014-187 | Max-Margin Infinite Hidden Markov Models | http://jmlr.org/proceedings/papers/v32/zhangb14.pdf | category:paper author:Aonan Zhang, Jun Zhu, Bo Zhang
+icml-2014-188 | Maximum Margin Multiclass Nearest Neighbors | http://jmlr.org/proceedings/papers/v32/kontorovichb14.pdf | category:paper author:Aryeh Kontorovich, Roi Weiss
+icml-2014-189 | Maximum Mean Discrepancy for Class Ratio Estimation: Convergence Bounds and Kernel Selection | http://jmlr.org/proceedings/papers/v32/iyer14.pdf | category:paper author:Arun Iyer, Saketha Nath, Sunita Sarawagi
+icml-2014-190 | Memory Efficient Kernel Approximation | http://jmlr.org/proceedings/papers/v32/si14.pdf | category:paper author:Si Si, Cho-Jui Hsieh, Inderjit Dhillon
+icml-2014-191 | Memory and Computation Efficient PCA via Very Sparse Random Projections | http://jmlr.org/proceedings/papers/v32/anaraki14.pdf | category:paper author:Farhad Pourkamali Anaraki, Shannon Hughes
+icml-2014-192 | Methods of Moments for Learning Stochastic Languages: Unified Presentation and Empirical Comparison | http://jmlr.org/proceedings/papers/v32/balle14.pdf | category:paper author:Borja Balle, William Hamilton, Joelle Pineau
+icml-2014-193 | Min-Max Problems on Factor Graphs | http://jmlr.org/proceedings/papers/v32/ravanbakhsh14.pdf | category:paper author:Siamak Ravanbakhsh, Christopher Srinivasa, Brendan Frey, Russell Greiner
+icml-2014-194 | Modeling Correlated Arrival Events with Latent Semi-Markov Processes | http://jmlr.org/proceedings/papers/v32/lian14.pdf | category:paper author:Wenzhao Lian, Vinayak Rao, Brian Eriksson, Lawrence Carin
+icml-2014-195 | Multi-label Classification via Feature-aware Implicit Label Space Encoding | http://jmlr.org/proceedings/papers/v32/linc14.pdf | category:paper author:Zijia Lin, Guiguang Ding, Mingqing Hu, Jianmin Wang
+icml-2014-196 | Multi-period Trading Prediction Markets with Connections to Machine Learning | http://jmlr.org/proceedings/papers/v32/hu14.pdf | category:paper author:Jinli Hu, Amos Storkey
+icml-2014-197 | Multimodal Neural Language Models | http://jmlr.org/proceedings/papers/v32/kiros14.pdf | category:paper author:Ryan Kiros, Ruslan Salakhutdinov, Rich Zemel
+icml-2014-198 | Multiple Testing under Dependence via Semiparametric Graphical Models | http://jmlr.org/proceedings/papers/v32/liue14.pdf | category:paper author:Jie Liu, Chunming Zhang, Elizabeth Burnside, David Page
+icml-2014-199 | Multiresolution Matrix Factorization | http://jmlr.org/proceedings/papers/v32/kondor14.pdf | category:paper author:Risi Kondor, Nedelina Teneva, Vikas Garg
+icml-2014-200 | Multivariate Maximal Correlation Analysis | http://jmlr.org/proceedings/papers/v32/nguyenc14.pdf | category:paper author:Hoang Vu Nguyen, Emmanuel Müller, Jilles Vreeken, Pavel Efros, Klemens Böhm
+icml-2014-201 | Narrowing the Gap: Random Forests In Theory and In Practice | http://jmlr.org/proceedings/papers/v32/denil14.pdf | category:paper author:Misha Denil, David Matheson, Nando De Freitas
+icml-2014-202 | Near-Optimal Joint Object Matching via Convex Relaxation | http://jmlr.org/proceedings/papers/v32/chend14.pdf | category:paper author:Yuxin Chen, Guibas Leonidas, Qixing Huang
+icml-2014-203 | Nearest Neighbors Using Compact Sparse Codes | http://jmlr.org/proceedings/papers/v32/cherian14.pdf | category:paper author:Anoop Cherian
+icml-2014-204 | Neural Variational Inference and Learning in Belief Networks | http://jmlr.org/proceedings/papers/v32/mnih14.pdf | category:paper author:Andriy Mnih, Karol Gregor
+icml-2014-205 | Nonlinear Information-Theoretic Compressive Measurement Design | http://jmlr.org/proceedings/papers/v32/wangh14.pdf | category:paper author:Liming Wang, Abolfazl Razi, Miguel Rodrigues, Robert Calderbank, Lawrence Carin
+icml-2014-206 | Nonmyopic $\epsilon$-Bayes-Optimal Active Learning of Gaussian Processes | http://jmlr.org/proceedings/papers/v32/hoang14.pdf | category:paper author:Trong Nghia Hoang, Bryan Kian Hsiang Low, Patrick Jaillet, Mohan Kankanhalli
+icml-2014-207 | Nonnegative Sparse PCA with Provable Guarantees | http://jmlr.org/proceedings/papers/v32/asteris14.pdf | category:paper author:Megasthenis Asteris, Alexandros Dimakis, Dimitris Papailiopoulos
+icml-2014-208 | Nonparametric Estimation of Multi-View Latent Variable Models | http://jmlr.org/proceedings/papers/v32/songa14.pdf | category:paper author:Le Song, Animashree Anandkumar, Bo Dai, Bo Xie
+icml-2014-209 | Nonparametric Estimation of Renyi Divergence and Friends | http://jmlr.org/proceedings/papers/v32/krishnamurthy14.pdf | category:paper author:Akshay Krishnamurthy, Kirthevasan Kandasamy, Barnabas Poczos, Larry Wasserman
+icml-2014-210 | Nuclear Norm Minimization via Active Subspace Selection | http://jmlr.org/proceedings/papers/v32/hsiehb14.pdf | category:paper author:Cho-Jui Hsieh, Peder Olsen
+icml-2014-211 | Offline Evaluation of Recommendation Systems | http://jmlr.org/proceedings/papers/v32/mary14.pdf | category:paper author:Olivier Nicol, Jérémie Mary, Philippe Preux
+icml-2014-212 | On Measure Concentration of Random Maximum A-Posteriori Perturbations | http://jmlr.org/proceedings/papers/v32/orabona14.pdf | category:paper author:Francesco Orabona, Tamir Hazan, Anand Sarwate, Tommi Jaakkola
+icml-2014-213 | On Modelling Non-linear Topical Dependencies | http://jmlr.org/proceedings/papers/v32/lib14.pdf | category:paper author:Zhixing Li, Siqiang Wen, Juanzi Li, Peng Zhang, Jie Tang
+icml-2014-214 | On Robustness and Regularization of Structural Support Vector Machines | http://jmlr.org/proceedings/papers/v32/torkamani14.pdf | category:paper author:Mohamad Ali Torkamani, Daniel Lowd
+icml-2014-215 | On p-norm Path Following in Multiple Kernel Learning for Non-linear Feature Selection | http://jmlr.org/proceedings/papers/v32/jawanpuria14.pdf | category:paper author:Pratik Jawanpuria, Manik Varma, Saketha Nath
+icml-2014-216 | On the Convergence of No-regret Learning in Selfish Routing | http://jmlr.org/proceedings/papers/v32/krichene14.pdf | category:paper author:Benjamin Drighès, Walid Krichene, Alexandre Bayen
+icml-2014-217 | One Practical Algorithm for Both Stochastic and Adversarial Bandits | http://jmlr.org/proceedings/papers/v32/seldinb14.pdf | category:paper author:Yevgeny Seldin, Aleksandrs Slivkins
+icml-2014-218 | One-Bit Object Detection: On Learning to Localize Objects with Minimal Supervision | http://jmlr.org/proceedings/papers/v32/songb14.pdf | category:paper author:Hyun Oh Song, Ross Girshick, Stefanie Jegelka, Julien Mairal, Zaid Harchaoui, Trevor Darrell
+icml-2014-219 | Online Bayesian Passive-Aggressive Learning | http://jmlr.org/proceedings/papers/v32/shi14.pdf | category:paper author:Tianlin Shi, Jun Zhu
+icml-2014-220 | Online Clustering of Bandits | http://jmlr.org/proceedings/papers/v32/gentile14.pdf | category:paper author:Claudio Gentile, Shuai Li, Giovanni Zappella
+icml-2014-221 | Online Learning in Markov Decision Processes with Changing Cost Sequences | http://jmlr.org/proceedings/papers/v32/dick14.pdf | category:paper author:Travis Dick, Andras Gyorgy, Csaba Szepesvari
+icml-2014-222 | Online Multi-Task Learning for Policy Gradient Methods | http://jmlr.org/proceedings/papers/v32/ammar14.pdf | category:paper author:Haitham Bou Ammar, Eric Eaton, Paul Ruvolo, Matthew Taylor
+icml-2014-223 | Optimal Budget Allocation: Theoretical Guarantee and Efficient Algorithm | http://jmlr.org/proceedings/papers/v32/soma14.pdf | category:paper author:Tasuku Soma, Naonori Kakimura, Kazuhiro Inaba, Ken-ichi Kawarabayashi
+icml-2014-224 | Optimal Mean Robust Principal Component Analysis | http://jmlr.org/proceedings/papers/v32/nieb14.pdf | category:paper author:Feiping Nie, Jianjun Yuan, Heng Huang
+icml-2014-225 | Optimal PAC Multiple Arm Identification with Applications to Crowdsourcing | http://jmlr.org/proceedings/papers/v32/zhoub14.pdf | category:paper author:Yuan Zhou, Xi Chen, Jian Li
+icml-2014-226 | Optimization Equivalence of Divergences Improves Neighbor Embedding | http://jmlr.org/proceedings/papers/v32/yange14.pdf | category:paper author:Zhirong Yang, Jaakko Peltonen, Samuel Kaski
+icml-2014-227 | Orthogonal Rank-One Matrix Pursuit for Matrix Completion | http://jmlr.org/proceedings/papers/v32/wanga14.pdf | category:paper author:Zheng Wang, Ming-Jun Lai, Zhaosong Lu, Wei Fan, Hasan Davulcu, Jieping Ye
+icml-2014-228 | Outlier Path: A Homotopy Algorithm for Robust SVM | http://jmlr.org/proceedings/papers/v32/suzumura14.pdf | category:paper author:Shinya Suzumura, Kohei Ogawa, Masashi Sugiyama, Ichiro Takeuchi
+icml-2014-229 | PAC-inspired Option Discovery in Lifelong Reinforcement Learning | http://jmlr.org/proceedings/papers/v32/brunskill14.pdf | category:paper author:Emma Brunskill, Lihong Li
+icml-2014-230 | Pitfalls in the Use of Parallel Inference for the Dirichlet Process | http://jmlr.org/proceedings/papers/v32/gal14.pdf | category:paper author:Yarin Gal, Zoubin Ghahramani
+icml-2014-231 | Prediction with Limited Advice and Multiarmed Bandits with Paid Observations | http://jmlr.org/proceedings/papers/v32/seldin14.pdf | category:paper author:Yevgeny Seldin, Peter Bartlett, Koby Crammer, Yasin Abbasi-Yadkori
+icml-2014-232 | Preference-Based Rank Elicitation using Statistical Models: The Case of Mallows | http://jmlr.org/proceedings/papers/v32/busa-fekete14.pdf | category:paper author:Robert Busa-Fekete, Balázs Szörényi, Eyke Huellermeier
+icml-2014-233 | Preserving Modes and Messages via Diverse Particle Selection | http://jmlr.org/proceedings/papers/v32/pacheco14.pdf | category:paper author:Jason Pacheco, Silvia Zuffi, Michael Black, Erik Sudderth
+icml-2014-234 | Probabilistic Matrix Factorization with Non-random Missing Data | http://jmlr.org/proceedings/papers/v32/hernandez-lobatob14.pdf | category:paper author:Jose Miguel Hernandez-Lobato, Neil Houlsby, Zoubin Ghahramani
+icml-2014-235 | Probabilistic Partial Canonical Correlation Analysis | http://jmlr.org/proceedings/papers/v32/mukuta14.pdf | category:paper author:Yusuke Mukuta, Tatsuya Harada
+icml-2014-236 | Programming by Feedback | http://jmlr.org/proceedings/papers/v32/schoenauer14.pdf | category:paper author:Marc Schoenauer, Riad Akrour, Michele Sebag, Jean-Christophe Souplet
+icml-2014-237 | Provable Bounds for Learning Some Deep Representations | http://jmlr.org/proceedings/papers/v32/arora14.pdf | category:paper author:Sanjeev Arora, Aditya Bhaskara, Rong Ge, Tengyu Ma
+icml-2014-238 | Pursuit-Evasion Without Regrets, with an Application to Trading | http://jmlr.org/proceedings/papers/v32/dworkin14.pdf | category:paper author:Lili Dworkin, Michael Kearns, Yuriy Nevmyvaka
+icml-2014-239 | Putting MRFs on a Tensor Train | http://jmlr.org/proceedings/papers/v32/novikov14.pdf | category:paper author:Alexander Novikov, Anton Rodomanov, Anton Osokin, Dmitry Vetrov
+icml-2014-240 | Quasi-Monte Carlo Feature Maps for Shift-Invariant Kernels | http://jmlr.org/proceedings/papers/v32/yangb14.pdf | category:paper author:Jiyan Yang, Vikas Sindhwani, Haim Avron, Michael Mahoney
+icml-2014-241 | Randomized Nonlinear Component Analysis | http://jmlr.org/proceedings/papers/v32/lopez-paz14.pdf | category:paper author:David Lopez-Paz, Suvrit Sra, Alex Smola, Zoubin Ghahramani, Bernhard Schoelkopf
+icml-2014-242 | Rectangular Tiling Process | http://jmlr.org/proceedings/papers/v32/nakano14.pdf | category:paper author:Masahiro Nakano, Katsuhiko Ishiguro, Akisato Kimura, Takeshi Yamada, Naonori Ueda
+icml-2014-243 | Recurrent Convolutional Neural Networks for Scene Labeling | http://jmlr.org/proceedings/papers/v32/pinheiro14.pdf | category:paper author:Pedro Pinheiro, Ronan Collobert
+icml-2014-244 | Reducing Dueling Bandits to Cardinal Bandits | http://jmlr.org/proceedings/papers/v32/ailon14.pdf | category:paper author:Nir Ailon, Zohar Karnin, Thorsten Joachims
+icml-2014-245 | Relative Upper Confidence Bound for the K-Armed Dueling Bandit Problem | http://jmlr.org/proceedings/papers/v32/zoghi14.pdf | category:paper author:Masrour Zoghi, Shimon Whiteson, Remi Munos, Maarten de Rijke
+icml-2014-246 | Resource-Efficient Stochastic Optimization of a Locally Smooth Function under Correlated Bandit Feedback | http://jmlr.org/proceedings/papers/v32/azar14.pdf | category:paper author:Mohammad Gheshlaghi azar, Alessandro Lazaric, Emma Brunskill
+icml-2014-247 | Riemannian Pursuit for Big Matrix Recovery | http://jmlr.org/proceedings/papers/v32/tan14.pdf | category:paper author:Mingkui Tan, Ivor W. Tsang, Li Wang, Jialin Pan, Bart Vandereycken
+icml-2014-248 | Robust Distance Metric Learning via Simultaneous L1-Norm Minimization and Maximization | http://jmlr.org/proceedings/papers/v32/wangj14.pdf | category:paper author:Hua Wang, Feiping Nie, Heng Huang
+icml-2014-249 | Robust Inverse Covariance Estimation under Noisy Measurements | http://jmlr.org/proceedings/papers/v32/wangf14.pdf | category:paper author:Jun-Kun Wang, Ting-Wei Lin, Shou-de Lin
+icml-2014-250 | Robust Learning under Uncertain Test Distributions: Relating Covariate Shift to Model Misspecification | http://jmlr.org/proceedings/papers/v32/wen14.pdf | category:paper author:Junfeng Wen, Chun-Nam Yu, Russell Greiner
+icml-2014-251 | Robust Principal Component Analysis with Complex Noise | http://jmlr.org/proceedings/papers/v32/zhao14.pdf | category:paper author:Qian Zhao, Deyu Meng, Lei Zhang, Wangmeng Zuo, Zongben Xu
+icml-2014-252 | Robust RegBayes: Selectively Incorporating First-Order Logic Domain Knowledge into Bayesian Models | http://jmlr.org/proceedings/papers/v32/mei14.pdf | category:paper author:Shike Mei, Jun Zhu, Jerry Zhu
+icml-2014-253 | Robust and Efficient Kernel Hyperparameter Paths with Guarantees | http://jmlr.org/proceedings/papers/v32/giesen14.pdf | category:paper author:Joachim Giesen, Soeren Laue, Patrick Wieschollek
+icml-2014-254 | Robust and Efficient Representation Learning with Nonnegativity Constraints | http://jmlr.org/proceedings/papers/v32/line14.pdf | category:paper author:Tsung-Han Lin
+icml-2014-255 | Saddle Points and Accelerated Perceptron Algorithms | http://jmlr.org/proceedings/papers/v32/yuc14.pdf | category:paper author:Adams Wei Yu, fatma Kilinc-Karzan, Jaime Carbonell
+icml-2014-256 | Safe Screening with Variational Inequalities and Its Application to Lasso | http://jmlr.org/proceedings/papers/v32/liuc14.pdf | category:paper author:Jun Liu, Zheng Zhao, Jie Wang, Jieping Ye
+icml-2014-257 | Sample Efficient Reinforcement Learning with Gaussian Processes | http://jmlr.org/proceedings/papers/v32/grande14.pdf | category:paper author:Robert Grande, Thomas Walsh, Jonathan How
+icml-2014-258 | Sample-based Approximate Regularization | http://jmlr.org/proceedings/papers/v32/bachman14.pdf | category:paper author:Philip Bachman, Amir-Massoud Farahmand, Doina Precup
+icml-2014-259 | Scalable Gaussian Process Structured Prediction for Grid Factor Graph Applications | http://jmlr.org/proceedings/papers/v32/bratieres14.pdf | category:paper author:Sebastien Bratieres, Novi Quadrianto, Sebastian Nowozin, Zoubin Ghahramani
+icml-2014-260 | Scalable Nonparametric Bayesian Analysis of Incomplete Multiway Data | http://jmlr.org/proceedings/papers/v32/rai14.pdf | category:paper author:Piyush Rai, Yingjian Wang, Lawrence Carin
+icml-2014-261 | Scalable Semidefinite Relaxation for Maximum A Posteriori Estimation | http://jmlr.org/proceedings/papers/v32/huang14.pdf | category:paper author:Qixing Huang, Yuxin Chen, Guibas Leonidas
+icml-2014-262 | Scalable and Robust Bayesian Inference via the Median Posterior | http://jmlr.org/proceedings/papers/v32/minsker14.pdf | category:paper author:Stanislav Minsker, Sanvesh Srivastava, Lizhen Lin, David Dunson
+icml-2014-263 | Scaling SVM and Least Absolute Deviations via Exact Data Reduction | http://jmlr.org/proceedings/papers/v32/wangd14.pdf | category:paper author:Jie Wang, Jieping Ye
+icml-2014-264 | Scaling Up Approximate Value Iteration with Options: Better Policies with Fewer Iterations | http://jmlr.org/proceedings/papers/v32/mann14.pdf | category:paper author:Timothy Mann, Shie Mannor
+icml-2014-265 | Scaling Up Robust MDPs by Reinforcement Learning | http://jmlr.org/proceedings/papers/v32/tamar14.pdf | category:paper author:Aviv Tamar, Huan Xu, Shie Mannor
+icml-2014-266 | Signal Recovery from $\ell_p$ Pooling Representations | http://jmlr.org/proceedings/papers/v32/estrach14.pdf | category:paper author:Joan Bruna Estrach, Arthur Szlam, Yann LeCun
+icml-2014-267 | Skip Context Tree Switching | http://jmlr.org/proceedings/papers/v32/bellemare14.pdf | category:paper author:Marc Bellemare, Joel Veness, Erik Talvitie, Alex Graves
+icml-2014-268 | Sparse Meta-Gaussian Information Bottleneck | http://jmlr.org/proceedings/papers/v32/rey14.pdf | category:paper author:Melani Rey, Volker Roth, Thomas Fuchs
+icml-2014-269 | Sparse Reinforcement Learning via Convex Optimization | http://jmlr.org/proceedings/papers/v32/qin14.pdf | category:paper author:Zhiwei Qin, Weichang Li
+icml-2014-270 | Spectral Bandits for Smooth Graph Functions | http://jmlr.org/proceedings/papers/v32/valko14.pdf | category:paper author:Remi Munos, Michal Valko, Branislav Kveton, Tomas Kocak
+icml-2014-271 | Spectral Regularization for Max-Margin Sequence Tagging | http://jmlr.org/proceedings/papers/v32/quattoni14.pdf | category:paper author:Ariadna Quattoni, Borja Balle, Xavier Carreras, Amir Globerson
+icml-2014-272 | Spherical Hamiltonian Monte Carlo for Constrained Target Distributions | http://jmlr.org/proceedings/papers/v32/lan14.pdf | category:paper author:Shiwei Lan, Bo Zhou, Babak Shahbaba
+icml-2014-273 | Square Deal: Lower Bounds and Improved Relaxations for Tensor Recovery | http://jmlr.org/proceedings/papers/v32/mu14.pdf | category:paper author:Cun Mu, Bo Huang, John Wright, Donald Goldfarb
+icml-2014-274 | Standardized Mutual Information for Clustering Comparisons: One Step Further in Adjustment for Chance | http://jmlr.org/proceedings/papers/v32/romano14.pdf | category:paper author:Simone Romano, James Bailey, Vinh Nguyen, Karin Verspoor
+icml-2014-275 | Stochastic Approximation with Implicit Updates. Applications in Robust Online Learning of GLMs | http://jmlr.org/proceedings/papers/v32/toulis14.pdf | category:paper author:Panagiotis Toulis, Edoardo Airoldi, Jason Rennie
+icml-2014-276 | Stochastic Backpropagation and Approximate Inference in Deep Generative Models | http://jmlr.org/proceedings/papers/v32/rezende14.pdf | category:paper author:Danilo Jimenez Rezende, Shakir Mohamed, Daan Wierstra
+icml-2014-277 | Stochastic Dual Coordinate Ascent with Alternating Direction Method of Multipliers | http://jmlr.org/proceedings/papers/v32/suzuki14.pdf | category:paper author:Taiji Suzuki
+icml-2014-278 | Stochastic Gradient Hamiltonian Monte Carlo | http://jmlr.org/proceedings/papers/v32/cheni14.pdf | category:paper author:Tianqi Chen, Emily Fox, Carlos Guestrin
+icml-2014-279 | Stochastic Inference for Scalable Probabilistic Modeling of Binary Matrices | http://jmlr.org/proceedings/papers/v32/hernandez-lobatoa14.pdf | category:paper author:Jose Miguel Hernandez-Lobato, Neil Houlsby, Zoubin Ghahramani
+icml-2014-280 | Stochastic Neighbor Compression | http://jmlr.org/proceedings/papers/v32/kusner14.pdf | category:paper author:Matt Kusner, Stephen Tyree, Kilian Weinberger, Kunal Agrawal
+icml-2014-281 | Stochastic Variational Inference for Bayesian Time Series Models | http://jmlr.org/proceedings/papers/v32/johnson14.pdf | category:paper author:Matthew Johnson, Alan Willsky
+icml-2014-282 | Structured Generative Models of Natural Source Code | http://jmlr.org/proceedings/papers/v32/maddison14.pdf | category:paper author:Chris Maddison, Daniel Tarlow
+icml-2014-283 | Structured Low-Rank Matrix Factorization: Optimality, Algorithm, and Applications to Image Processing | http://jmlr.org/proceedings/papers/v32/haeffele14.pdf | category:paper author:Benjamin Haeffele, Rene Vidal, Eric Young
+icml-2014-284 | Structured Prediction of Network Response | http://jmlr.org/proceedings/papers/v32/su14.pdf | category:paper author:Hongyu Su, Aristides Gionis, Juho Rousu
+icml-2014-285 | Structured Recurrent Temporal Restricted Boltzmann Machines | http://jmlr.org/proceedings/papers/v32/mittelman14.pdf | category:paper author:Roni Mittelman, Benjamin Kuipers, Silvio Savarese, Honglak Lee
+icml-2014-286 | Taming the Monster: A Fast and Simple Algorithm for Contextual Bandits | http://jmlr.org/proceedings/papers/v32/agarwalb14.pdf | category:paper author:Alekh Agarwal, Daniel Hsu, Satyen Kale, John Langford, Lihong Li, Robert Schapire
+icml-2014-287 | The Coherent Loss Function for Classification | http://jmlr.org/proceedings/papers/v32/yanga14.pdf | category:paper author:Wenzhuo Yang, Melvyn Sim, Huan Xu
+icml-2014-288 | The Falling Factorial Basis and Its Statistical Applications | http://jmlr.org/proceedings/papers/v32/wange14.pdf | category:paper author:Yu-Xiang Wang, Ryan Tibshirani, Alex Smola
+icml-2014-289 | The Inverse Regression Topic Model | http://jmlr.org/proceedings/papers/v32/rabinovich14.pdf | category:paper author:Maxim Rabinovich, David Blei
+icml-2014-290 | The f-Adjusted Laplacian: a Diagonal Perturbation with a Geometric Interpretation | http://jmlr.org/proceedings/papers/v32/kurras14.pdf | category:paper author:Sven Kurras, Ulrike von Luxburg, Gilles Blanchard
+icml-2014-291 | Thompson Sampling for Complex Online Problems | http://jmlr.org/proceedings/papers/v32/gopalan14.pdf | category:paper author:Aditya Gopalan, Shie Mannor, Yishay Mansour
+icml-2014-292 | Time-Regularized Interrupting Options  | http://jmlr.org/proceedings/papers/v32/mannb14.pdf | category:paper author:Timothy Mann, Daniel Mankowitz, Shie Mannor
+icml-2014-293 | Topic Modeling using Topics from Many Domains, Lifelong Learning and Big Data | http://jmlr.org/proceedings/papers/v32/chenf14.pdf | category:paper author:Zhiyuan Chen, Bing Liu
+icml-2014-294 | Towards End-To-End Speech Recognition with Recurrent Neural Networks | http://jmlr.org/proceedings/papers/v32/graves14.pdf | category:paper author:Alex Graves, Navdeep Jaitly
+icml-2014-295 | Towards Minimax Online Learning with Unknown Time Horizon | http://jmlr.org/proceedings/papers/v32/luo14.pdf | category:paper author:Haipeng Luo, Robert Schapire
+icml-2014-296 | Towards an optimal stochastic alternating direction method of multipliers | http://jmlr.org/proceedings/papers/v32/azadi14.pdf | category:paper author:Samaneh Azadi, Suvrit Sra
+icml-2014-297 | Towards scaling up Markov chain Monte Carlo: an adaptive subsampling approach | http://jmlr.org/proceedings/papers/v32/bardenet14.pdf | category:paper author:Rémi Bardenet, Arnaud Doucet, Chris Holmes
+icml-2014-298 | Tracking Adversarial Targets | http://jmlr.org/proceedings/papers/v32/abbasi-yadkori14.pdf | category:paper author:Yasin Abbasi-Yadkori, Peter Bartlett, Varun Kanade
+icml-2014-299 | Transductive Learning with Multi-class Volume Approximation | http://jmlr.org/proceedings/papers/v32/niu14.pdf | category:paper author:Gang Niu, Bo Dai, Christoffel du Plessis, Masashi Sugiyama
+icml-2014-300 | True Online TD | http://jmlr.org/proceedings/papers/v32/seijen14.pdf | category:paper author:Harm van Seijen, Rich Sutton
+icml-2014-301 | Two-Stage Metric Learning | http://jmlr.org/proceedings/papers/v32/wangc14.pdf | category:paper author:Jun Wang, Ke Sun, Fei Sha, Stéphane Marchand-Maillet, Alexandros Kalousis
+icml-2014-302 | Understanding Protein Dynamics with L1-Regularized Reversible Hidden Markov Models | http://jmlr.org/proceedings/papers/v32/mcgibbon14.pdf | category:paper author:Robert McGibbon, Bharath Ramsundar, Mohammad Sultan, Gert Kiss, Vijay Pande
+icml-2014-303 | Understanding the Limiting Factors of Topic Modeling via Posterior Contraction Analysis | http://jmlr.org/proceedings/papers/v32/tang14.pdf | category:paper author:Jian Tang, Zhaoshi Meng, Xuanlong Nguyen, Qiaozhu Mei, Ming Zhang
+icml-2014-304 | Unimodal Bandits: Regret Lower Bounds and Optimal Algorithms | http://jmlr.org/proceedings/papers/v32/combes14.pdf | category:paper author:Richard Combes, Alexandre Proutiere
+icml-2014-305 | Universal Matrix Completion | http://jmlr.org/proceedings/papers/v32/bhojanapalli14.pdf | category:paper author:Srinadh Bhojanapalli, Prateek Jain
+icml-2014-306 | Variational Inference for Sequential Distance Dependent Chinese Restaurant Process | http://jmlr.org/proceedings/papers/v32/bartunov14.pdf | category:paper author:Sergey Bartunov, Dmitry Vetrov
+icml-2014-307 | Von Mises-Fisher Clustering Models | http://jmlr.org/proceedings/papers/v32/gopal14.pdf | category:paper author:Siddharth Gopal, Yiming Yang
+icml-2014-308 | Wasserstein Propagation for Semi-Supervised Learning | http://jmlr.org/proceedings/papers/v32/solomon14.pdf | category:paper author:Justin Solomon, Raif Rustamov, Guibas Leonidas, Adrian Butscher
+icml-2014-309 | Weighted Graph Clustering with Non-Uniform Uncertainties | http://jmlr.org/proceedings/papers/v32/chenh14.pdf | category:paper author:Yudong Chen, Shiau Hong Lim, Huan Xu

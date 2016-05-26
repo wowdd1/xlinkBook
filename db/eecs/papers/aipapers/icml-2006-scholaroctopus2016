@@ -1,140 +1,140 @@
-icml-2006-1 | A DC-programming algorithm for kernel selection | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ArgyriouHMP06.pdf | author:
-icml-2006-2 | A choice model with infinitely many latent features | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GorurJR06.pdf | author:
-icml-2006-3 | A continuation method for semi-supervised SVMs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ChapelleCZ06.pdf | author:
-icml-2006-4 | A duality view of spectral methods for dimensionality reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XiaoSB06.pdf | author:
-icml-2006-5 | A graphical model for predicting protein molecular function | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_EngelhardtJB06.pdf | author:
-icml-2006-6 | A new approach to data driven clustering | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AzranG06.pdf | author:
-icml-2006-7 | A note on mixtures of experts for multiclass responses: approximation rate and Consistent Bayesian Inference | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GeJ06.pdf | author:
-icml-2006-8 | A probabilistic model for text kernels | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LehmannS06.pdf | author:
-icml-2006-9 | A regularization framework for multiple-instance learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CheungK06.pdf | author:
-icml-2006-10 | A statistical approach to rule learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RuckertK06.pdf | author:
-icml-2006-11 | Accelerated training of conditional random fields with stochastic gradient methods | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_VishwanathanSSM06.pdf | author:
-icml-2006-12 | Active learning via transductive experimental design | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YuBT06.pdf | author:
-icml-2006-13 | Active sampling for detecting irrelevant features | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_VeeramachaneniOA06.pdf | author:
-icml-2006-14 | Agnostic active learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BalcanBL06.pdf | author:
-icml-2006-15 | Algorithms for portfolio management based on the Newton method | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AgarwalHKS06.pdf | author:
-icml-2006-16 | An analysis of graph cut size for transductive learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Hanneke06.pdf | author:
-icml-2006-17 | An analytic solution to discrete Bayesian reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_PoupartVHR06.pdf | author:
-icml-2006-18 | An empirical comparison of supervised learning algorithms | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CaruanaN06.pdf | author:
-icml-2006-19 | An intrinsic reward mechanism for efficient exploration | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SimsekB06.pdf | author:
-icml-2006-20 | An investigation of computational and informational limits in Gaussian mixture clustering | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SrebroSR06.pdf | author:
-icml-2006-21 | Automatic basis function construction for approximate dynamic programming and reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KellerMP06.pdf | author:
-icml-2006-22 | Autonomous shaping: knowledge transfer in reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KonidarisB06.pdf | author:
-icml-2006-23 | Batch mode active learning and its application to medical image classification | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HoiJZL06.pdf | author:
-icml-2006-24 | Bayesian learning of measurement and structural models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SilvaS06.pdf | author:
-icml-2006-25 | Bayesian multi-population haplotype inference via a hierarchical dirichlet process mixture | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XingSJT06.pdf | author:
-icml-2006-26 | Bayesian pattern ranking for move prediction in the game of Go | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SternHG06.pdf | author:
-icml-2006-27 | Bayesian regression with input noise for high dimensional data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TingDS06.pdf | author:
-icml-2006-28 | Block-quantized kernel matrix for fast spectral embedding | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ZhangK06.pdf | author:
-icml-2006-29 | CN = CPCN | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RalaivolaDM06.pdf | author:
-icml-2006-30 | Categorization in multiple category systems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RendersGGPC06.pdf | author:
-icml-2006-31 | Classifying EEG for brain-computer interfaces: learning optimal filters for dynamical system features | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SongE06.pdf | author:
-icml-2006-32 | Clustering documents with an exponential-family approximation of the Dirichlet compound multinomial distribution | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Elkan06.pdf | author:
-icml-2006-33 | Clustering graphs by weighted substructure mining | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TsudaK06.pdf | author:
-icml-2006-34 | Collaborative ordinal regression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YuYTK06.pdf | author:
-icml-2006-35 | Collaborative prediction using ensembles of Maximum Margin Matrix Factorizations | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DeCoste06.pdf | author:
-icml-2006-36 | Combined central and subspace clustering for computer vision applications | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LuV06.pdf | author:
-icml-2006-37 | Combining discriminative features to infer complex trajectories | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RossOZ06.pdf | author:
-icml-2006-38 | Concept boundary detection for speeding up SVMs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_PandaCW06.pdf | author:
-icml-2006-39 | Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GravesFGS06.pdf | author:
-icml-2006-40 | Constructing informative priors using transfer learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RainaNK06.pdf | author:
-icml-2006-41 | Convex optimization techniques for fitting sparse Gaussian graphical models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BanerjeeGdN06.pdf | author:
-icml-2006-42 | Cost-sensitive learning with conditional Markov networks | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SenG06.pdf | author:
-icml-2006-43 | Cover trees for nearest neighbor | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BeygelzimerKL06.pdf | author:
-icml-2006-44 | Data association for topic intensity tracking | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KrauseLG06.pdf | author:
-icml-2006-45 | Dealing with non-stationary environments using context detection | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SilvaBBE06.pdf | author:
-icml-2006-46 | Deterministic annealing for semi-supervised kernel machines | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SindhwaniKC06.pdf | author:
-icml-2006-47 | Discriminative cluster analysis | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TorreK06.pdf | author:
-icml-2006-48 | Discriminative unsupervised learning of structured predictors | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XuWSS06.pdf | author:
-icml-2006-49 | Dynamic topic models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BleiL06.pdf | author:
-icml-2006-50 | Efficient MAP approximation for dense energy functions | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LeordeanuH06.pdf | author:
-icml-2006-51 | Efficient co-regularised least squares regression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BrefeldGSW06.pdf | author:
-icml-2006-52 | Efficient inference on sequence segmentation models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Sarawagi06.pdf | author:
-icml-2006-53 | Efficient lazy elimination for averaged one-dependence estimators | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ZhengW06.pdf | author:
-icml-2006-54 | Efficient learning of Naive Bayes classifiers under class-conditional classification noise | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DenisMR06.pdf | author:
-icml-2006-55 | Estimating relatedness via data compression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Juba06.pdf | author:
-icml-2006-56 | Experience-efficient learning in associative bandit problems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_StrehlMLH06.pdf | author:
-icml-2006-57 | Fast and space efficient string kernels using suffix arrays | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TeoV06.pdf | author:
-icml-2006-58 | Fast direct policy evaluation using multiscale analysis of Markov diffusion processes | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_MaggioniM06.pdf | author:
-icml-2006-59 | Fast nonparametric clustering with Gaussian blurring mean-shift | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Carreira-Perpinan06.pdf | author:
-icml-2006-60 | Fast particle smoothing: if I had a million particles | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KlaasBFDML06.pdf | author:
-icml-2006-61 | Fast time series classification using numerosity reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XiKSWR06.pdf | author:
-icml-2006-62 | Fast transpose methods for kernel learning on sparse data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Haffner06.pdf | author:
-icml-2006-63 | Feature subset selection bias for classification learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SinghiL06.pdf | author:
-icml-2006-64 | Feature value acquisition in testing: a sequential batch test algorithm | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ShengL06.pdf | author:
-icml-2006-65 | Full Bayesian network classifiers | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SuZ06.pdf | author:
-icml-2006-66 | Generalized spectral bounds for sparse LDA | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_MoghaddamWA06.pdf | author:
-icml-2006-67 | Graph model selection using maximum likelihood | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BezakovaKS06.pdf | author:
-icml-2006-68 | Hidden process models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HutchinsonMR06.pdf | author:
-icml-2006-69 | Hierarchical classification: combining Bayes with SVM | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Cesa-BianchiGZ06.pdf | author:
-icml-2006-70 | Higher order learning with graphs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AgarwalBB06.pdf | author:
-icml-2006-71 | How boosting the margin can also boost classifier complexity | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ReyzinS06.pdf | author:
-icml-2006-72 | Inference with the Universum | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WestonCSBV06.pdf | author:
-icml-2006-73 | Iterative RELIEF for feature weighting | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SunL06.pdf | author:
-icml-2006-74 | Kernel Predictive Linear Gaussian models for nonlinear stochastic dynamical systems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WingateS06.pdf | author:
-icml-2006-75 | Kernel information embeddings | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Memisevic06.pdf | author:
-icml-2006-76 | Kernelizing the output of tree-based methods | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GeurtsWd06.pdf | author:
-icml-2006-77 | Label propagation through linear neighborhoods | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WangZ06.pdf | author:
-icml-2006-78 | Learning a kernel function for classification with small training samples | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HertzBW06.pdf | author:
-icml-2006-79 | Learning algorithms for online principal-agent problems (and selling goods online) | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ConitzerG06.pdf | author:
-icml-2006-80 | Learning hierarchical task networks by observation | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NejatiLK06.pdf | author:
-icml-2006-81 | Learning high-order MRF priors of color images | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_McAuleyCSF06.pdf | author:
-icml-2006-82 | Learning low-rank kernel matrices | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KulisSD06.pdf | author:
-icml-2006-83 | Learning predictive state representations using non-blind policies | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BowlingMJNW06.pdf | author:
-icml-2006-84 | Learning the structure of Factored Markov Decision Processes in reinforcement learning problems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DegrisSW06.pdf | author:
-icml-2006-85 | Learning to impersonate | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NaorR06.pdf | author:
-icml-2006-86 | Learning user preferences for sets of objects | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_desJardinsEW06.pdf | author:
-icml-2006-87 | Local Fisher discriminant analysis for supervised dimensionality reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Sugiyama06.pdf | author:
-icml-2006-88 | Local distance preservation in the GP-LVM through back constraints | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LawrenceC06.pdf | author:
-icml-2006-89 | Locally adaptive classification piloted by uncertainty | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DaiYTK06.pdf | author:
-icml-2006-90 | Looping suffix tree-based inference of partially observable hidden state | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HolmesJ06.pdf | author:
-icml-2006-91 | MISSL: multiple-instance semi-supervised learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RahmaniG06.pdf | author:
-icml-2006-92 | Maximum margin planning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RatliffBZ06.pdf | author:
-icml-2006-93 | Multiclass boosting with repartitioning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Li06.pdf | author:
-icml-2006-94 | Multiclass reduced-set support vector machines | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TangM06.pdf | author:
-icml-2006-95 | Nightmare at test time: robust learning by feature deletion | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GlobersonR06.pdf | author:
-icml-2006-96 | Nonstationary kernel combination | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LewisJN06.pdf | author:
-icml-2006-97 | Null space versus orthogonal linear discriminant analysis | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YeX06.pdf | author:
-icml-2006-98 | On Bayesian bounds | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Banerjee06.pdf | author:
-icml-2006-99 | On a theory of learning with similarity functions | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BalcanB06.pdf | author:
-icml-2006-100 | Online decoding of Markov models under latency constraints | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NarasimhanVS06.pdf | author:
-icml-2006-101 | Online multiclass learning by interclass hypothesis sharing | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_FinkSSU06.pdf | author:
-icml-2006-102 | Optimal kernel selection in Kernel Fisher discriminant analysis | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KimMB06.pdf | author:
-icml-2006-103 | PAC model-free reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_StrehlLWLL06.pdf | author:
-icml-2006-104 | Pachinko allocation: DAG-structured mixture models of topic correlations | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LiM06.pdf | author:
-icml-2006-105 | Pareto optimal linear classification | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KimMSBL06.pdf | author:
-icml-2006-106 | Permutation invariant SVMs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ShivaswamyJ06.pdf | author:
-icml-2006-107 | Personalized handwriting recognition via biased regularization | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KienzleC06.pdf | author:
-icml-2006-108 | Practical solutions to the problem of diagonal dominance in kernel document clustering | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GreeneC06.pdf | author:
-icml-2006-109 | Predictive linear-Gaussian models of controlled stochastic dynamical systems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RudaryS06.pdf | author:
-icml-2006-110 | Predictive search distributions | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BonillaWACTO06.pdf | author:
-icml-2006-111 | Predictive state representations with options | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WolfeS06.pdf | author:
-icml-2006-112 | Probabilistic inference for solving discrete and continuous state Markov Decision Processes | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ToussaintS06.pdf | author:
-icml-2006-113 | Pruning in ordered bagging ensembles | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Martinez-MunozS06.pdf | author:
-icml-2006-114 | Quadratic programming relaxations for metric labeling and Markov random field MAP estimation | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RavikumarL06.pdf | author:
-icml-2006-115 | Qualitative reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_EpshteynD06.pdf | author:
-icml-2006-116 | Ranking individuals by group comparisons | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HuangLW06.pdf | author:
-icml-2006-117 | Ranking on graph data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Agarwal06.pdf | author:
-icml-2006-118 | Region-based value iteration for partially observable Markov decision processes | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LiLC06.pdf | author:
-icml-2006-119 | Regression with the optimised combination technique | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Garcke06.pdf | author:
-icml-2006-120 | Reinforcement learning for optimized trade execution | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NevmyvakaFK06.pdf | author:
-icml-2006-121 | Relational temporal difference learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AsgharbeygiSL06.pdf | author:
-icml-2006-122 | Robust Euclidean embedding | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CaytonD06.pdf | author:
-icml-2006-123 | Robust probabilistic projections | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ArchambeauDV06.pdf | author:
-icml-2006-124 | Semi-supervised learning for structured output variables | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BrefeldS06.pdf | author:
-icml-2006-125 | Semi-supervised nonlinear dimensionality reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YangFZB06.pdf | author:
-icml-2006-126 | Sequential update of ADtrees | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RoureM06.pdf | author:
-icml-2006-127 | Simpler knowledge-based support vector machines | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LeSG06.pdf | author:
-icml-2006-128 | Spectral clustering for multi-type relational data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LongZWY06.pdf | author:
-icml-2006-129 | Statistical debugging: simultaneous identification of multiple bugs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ZhengJLNA06.pdf | author:
-icml-2006-130 | The rate adapting poisson model for information retrieval and object recognition | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GehlerHW06.pdf | author:
-icml-2006-131 | The relationship between Precision-Recall and ROC curves | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf | author:
-icml-2006-132 | The support vector decomposition machine | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_PereiraG06.pdf | author:
-icml-2006-133 | The uniqueness of a good optimum for K-means | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Meila06.pdf | author:
-icml-2006-134 | Topic modeling: beyond bag-of-words | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Wallach06.pdf | author:
-icml-2006-135 | Totally corrective boosting algorithms that maximize the margin | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WarmuthLR06.pdf | author:
-icml-2006-136 | Trading convexity for scalability | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CollobertSWB06.pdf | author:
-icml-2006-137 | Two-dimensional solution path for support vector regression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WangYL06.pdf | author:
-icml-2006-138 | Using inaccurate models in reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AbbeelQN06.pdf | author:
-icml-2006-139 | Using query-specific variance estimates to combine Bayesian classifiers | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LeeGW06.pdf | author:
-icml-2006-140 | {\it R}$_{\mbox{1}}$-PCA: rotational invariant {\it L}$_{\mbox{1}}$-norm principal component analysis for robust subspace factorization | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DingZHZ06.pdf | author:
+icml-2006-1 | A DC-programming algorithm for kernel selection | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ArgyriouHMP06.pdf | category:paper author:
+icml-2006-2 | A choice model with infinitely many latent features | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GorurJR06.pdf | category:paper author:
+icml-2006-3 | A continuation method for semi-supervised SVMs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ChapelleCZ06.pdf | category:paper author:
+icml-2006-4 | A duality view of spectral methods for dimensionality reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XiaoSB06.pdf | category:paper author:
+icml-2006-5 | A graphical model for predicting protein molecular function | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_EngelhardtJB06.pdf | category:paper author:
+icml-2006-6 | A new approach to data driven clustering | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AzranG06.pdf | category:paper author:
+icml-2006-7 | A note on mixtures of experts for multiclass responses: approximation rate and Consistent Bayesian Inference | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GeJ06.pdf | category:paper author:
+icml-2006-8 | A probabilistic model for text kernels | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LehmannS06.pdf | category:paper author:
+icml-2006-9 | A regularization framework for multiple-instance learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CheungK06.pdf | category:paper author:
+icml-2006-10 | A statistical approach to rule learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RuckertK06.pdf | category:paper author:
+icml-2006-11 | Accelerated training of conditional random fields with stochastic gradient methods | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_VishwanathanSSM06.pdf | category:paper author:
+icml-2006-12 | Active learning via transductive experimental design | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YuBT06.pdf | category:paper author:
+icml-2006-13 | Active sampling for detecting irrelevant features | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_VeeramachaneniOA06.pdf | category:paper author:
+icml-2006-14 | Agnostic active learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BalcanBL06.pdf | category:paper author:
+icml-2006-15 | Algorithms for portfolio management based on the Newton method | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AgarwalHKS06.pdf | category:paper author:
+icml-2006-16 | An analysis of graph cut size for transductive learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Hanneke06.pdf | category:paper author:
+icml-2006-17 | An analytic solution to discrete Bayesian reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_PoupartVHR06.pdf | category:paper author:
+icml-2006-18 | An empirical comparison of supervised learning algorithms | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CaruanaN06.pdf | category:paper author:
+icml-2006-19 | An intrinsic reward mechanism for efficient exploration | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SimsekB06.pdf | category:paper author:
+icml-2006-20 | An investigation of computational and informational limits in Gaussian mixture clustering | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SrebroSR06.pdf | category:paper author:
+icml-2006-21 | Automatic basis function construction for approximate dynamic programming and reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KellerMP06.pdf | category:paper author:
+icml-2006-22 | Autonomous shaping: knowledge transfer in reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KonidarisB06.pdf | category:paper author:
+icml-2006-23 | Batch mode active learning and its application to medical image classification | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HoiJZL06.pdf | category:paper author:
+icml-2006-24 | Bayesian learning of measurement and structural models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SilvaS06.pdf | category:paper author:
+icml-2006-25 | Bayesian multi-population haplotype inference via a hierarchical dirichlet process mixture | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XingSJT06.pdf | category:paper author:
+icml-2006-26 | Bayesian pattern ranking for move prediction in the game of Go | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SternHG06.pdf | category:paper author:
+icml-2006-27 | Bayesian regression with input noise for high dimensional data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TingDS06.pdf | category:paper author:
+icml-2006-28 | Block-quantized kernel matrix for fast spectral embedding | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ZhangK06.pdf | category:paper author:
+icml-2006-29 | CN = CPCN | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RalaivolaDM06.pdf | category:paper author:
+icml-2006-30 | Categorization in multiple category systems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RendersGGPC06.pdf | category:paper author:
+icml-2006-31 | Classifying EEG for brain-computer interfaces: learning optimal filters for dynamical system features | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SongE06.pdf | category:paper author:
+icml-2006-32 | Clustering documents with an exponential-family approximation of the Dirichlet compound multinomial distribution | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Elkan06.pdf | category:paper author:
+icml-2006-33 | Clustering graphs by weighted substructure mining | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TsudaK06.pdf | category:paper author:
+icml-2006-34 | Collaborative ordinal regression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YuYTK06.pdf | category:paper author:
+icml-2006-35 | Collaborative prediction using ensembles of Maximum Margin Matrix Factorizations | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DeCoste06.pdf | category:paper author:
+icml-2006-36 | Combined central and subspace clustering for computer vision applications | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LuV06.pdf | category:paper author:
+icml-2006-37 | Combining discriminative features to infer complex trajectories | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RossOZ06.pdf | category:paper author:
+icml-2006-38 | Concept boundary detection for speeding up SVMs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_PandaCW06.pdf | category:paper author:
+icml-2006-39 | Connectionist temporal classification: labelling unsegmented sequence data with recurrent neural networks | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GravesFGS06.pdf | category:paper author:
+icml-2006-40 | Constructing informative priors using transfer learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RainaNK06.pdf | category:paper author:
+icml-2006-41 | Convex optimization techniques for fitting sparse Gaussian graphical models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BanerjeeGdN06.pdf | category:paper author:
+icml-2006-42 | Cost-sensitive learning with conditional Markov networks | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SenG06.pdf | category:paper author:
+icml-2006-43 | Cover trees for nearest neighbor | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BeygelzimerKL06.pdf | category:paper author:
+icml-2006-44 | Data association for topic intensity tracking | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KrauseLG06.pdf | category:paper author:
+icml-2006-45 | Dealing with non-stationary environments using context detection | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SilvaBBE06.pdf | category:paper author:
+icml-2006-46 | Deterministic annealing for semi-supervised kernel machines | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SindhwaniKC06.pdf | category:paper author:
+icml-2006-47 | Discriminative cluster analysis | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TorreK06.pdf | category:paper author:
+icml-2006-48 | Discriminative unsupervised learning of structured predictors | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XuWSS06.pdf | category:paper author:
+icml-2006-49 | Dynamic topic models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BleiL06.pdf | category:paper author:
+icml-2006-50 | Efficient MAP approximation for dense energy functions | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LeordeanuH06.pdf | category:paper author:
+icml-2006-51 | Efficient co-regularised least squares regression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BrefeldGSW06.pdf | category:paper author:
+icml-2006-52 | Efficient inference on sequence segmentation models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Sarawagi06.pdf | category:paper author:
+icml-2006-53 | Efficient lazy elimination for averaged one-dependence estimators | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ZhengW06.pdf | category:paper author:
+icml-2006-54 | Efficient learning of Naive Bayes classifiers under class-conditional classification noise | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DenisMR06.pdf | category:paper author:
+icml-2006-55 | Estimating relatedness via data compression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Juba06.pdf | category:paper author:
+icml-2006-56 | Experience-efficient learning in associative bandit problems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_StrehlMLH06.pdf | category:paper author:
+icml-2006-57 | Fast and space efficient string kernels using suffix arrays | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TeoV06.pdf | category:paper author:
+icml-2006-58 | Fast direct policy evaluation using multiscale analysis of Markov diffusion processes | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_MaggioniM06.pdf | category:paper author:
+icml-2006-59 | Fast nonparametric clustering with Gaussian blurring mean-shift | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Carreira-Perpinan06.pdf | category:paper author:
+icml-2006-60 | Fast particle smoothing: if I had a million particles | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KlaasBFDML06.pdf | category:paper author:
+icml-2006-61 | Fast time series classification using numerosity reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_XiKSWR06.pdf | category:paper author:
+icml-2006-62 | Fast transpose methods for kernel learning on sparse data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Haffner06.pdf | category:paper author:
+icml-2006-63 | Feature subset selection bias for classification learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SinghiL06.pdf | category:paper author:
+icml-2006-64 | Feature value acquisition in testing: a sequential batch test algorithm | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ShengL06.pdf | category:paper author:
+icml-2006-65 | Full Bayesian network classifiers | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SuZ06.pdf | category:paper author:
+icml-2006-66 | Generalized spectral bounds for sparse LDA | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_MoghaddamWA06.pdf | category:paper author:
+icml-2006-67 | Graph model selection using maximum likelihood | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BezakovaKS06.pdf | category:paper author:
+icml-2006-68 | Hidden process models | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HutchinsonMR06.pdf | category:paper author:
+icml-2006-69 | Hierarchical classification: combining Bayes with SVM | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Cesa-BianchiGZ06.pdf | category:paper author:
+icml-2006-70 | Higher order learning with graphs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AgarwalBB06.pdf | category:paper author:
+icml-2006-71 | How boosting the margin can also boost classifier complexity | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ReyzinS06.pdf | category:paper author:
+icml-2006-72 | Inference with the Universum | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WestonCSBV06.pdf | category:paper author:
+icml-2006-73 | Iterative RELIEF for feature weighting | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_SunL06.pdf | category:paper author:
+icml-2006-74 | Kernel Predictive Linear Gaussian models for nonlinear stochastic dynamical systems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WingateS06.pdf | category:paper author:
+icml-2006-75 | Kernel information embeddings | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Memisevic06.pdf | category:paper author:
+icml-2006-76 | Kernelizing the output of tree-based methods | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GeurtsWd06.pdf | category:paper author:
+icml-2006-77 | Label propagation through linear neighborhoods | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WangZ06.pdf | category:paper author:
+icml-2006-78 | Learning a kernel function for classification with small training samples | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HertzBW06.pdf | category:paper author:
+icml-2006-79 | Learning algorithms for online principal-agent problems (and selling goods online) | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ConitzerG06.pdf | category:paper author:
+icml-2006-80 | Learning hierarchical task networks by observation | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NejatiLK06.pdf | category:paper author:
+icml-2006-81 | Learning high-order MRF priors of color images | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_McAuleyCSF06.pdf | category:paper author:
+icml-2006-82 | Learning low-rank kernel matrices | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KulisSD06.pdf | category:paper author:
+icml-2006-83 | Learning predictive state representations using non-blind policies | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BowlingMJNW06.pdf | category:paper author:
+icml-2006-84 | Learning the structure of Factored Markov Decision Processes in reinforcement learning problems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DegrisSW06.pdf | category:paper author:
+icml-2006-85 | Learning to impersonate | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NaorR06.pdf | category:paper author:
+icml-2006-86 | Learning user preferences for sets of objects | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_desJardinsEW06.pdf | category:paper author:
+icml-2006-87 | Local Fisher discriminant analysis for supervised dimensionality reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Sugiyama06.pdf | category:paper author:
+icml-2006-88 | Local distance preservation in the GP-LVM through back constraints | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LawrenceC06.pdf | category:paper author:
+icml-2006-89 | Locally adaptive classification piloted by uncertainty | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DaiYTK06.pdf | category:paper author:
+icml-2006-90 | Looping suffix tree-based inference of partially observable hidden state | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HolmesJ06.pdf | category:paper author:
+icml-2006-91 | MISSL: multiple-instance semi-supervised learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RahmaniG06.pdf | category:paper author:
+icml-2006-92 | Maximum margin planning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RatliffBZ06.pdf | category:paper author:
+icml-2006-93 | Multiclass boosting with repartitioning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Li06.pdf | category:paper author:
+icml-2006-94 | Multiclass reduced-set support vector machines | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_TangM06.pdf | category:paper author:
+icml-2006-95 | Nightmare at test time: robust learning by feature deletion | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GlobersonR06.pdf | category:paper author:
+icml-2006-96 | Nonstationary kernel combination | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LewisJN06.pdf | category:paper author:
+icml-2006-97 | Null space versus orthogonal linear discriminant analysis | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YeX06.pdf | category:paper author:
+icml-2006-98 | On Bayesian bounds | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Banerjee06.pdf | category:paper author:
+icml-2006-99 | On a theory of learning with similarity functions | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BalcanB06.pdf | category:paper author:
+icml-2006-100 | Online decoding of Markov models under latency constraints | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NarasimhanVS06.pdf | category:paper author:
+icml-2006-101 | Online multiclass learning by interclass hypothesis sharing | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_FinkSSU06.pdf | category:paper author:
+icml-2006-102 | Optimal kernel selection in Kernel Fisher discriminant analysis | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KimMB06.pdf | category:paper author:
+icml-2006-103 | PAC model-free reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_StrehlLWLL06.pdf | category:paper author:
+icml-2006-104 | Pachinko allocation: DAG-structured mixture models of topic correlations | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LiM06.pdf | category:paper author:
+icml-2006-105 | Pareto optimal linear classification | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KimMSBL06.pdf | category:paper author:
+icml-2006-106 | Permutation invariant SVMs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ShivaswamyJ06.pdf | category:paper author:
+icml-2006-107 | Personalized handwriting recognition via biased regularization | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_KienzleC06.pdf | category:paper author:
+icml-2006-108 | Practical solutions to the problem of diagonal dominance in kernel document clustering | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GreeneC06.pdf | category:paper author:
+icml-2006-109 | Predictive linear-Gaussian models of controlled stochastic dynamical systems | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RudaryS06.pdf | category:paper author:
+icml-2006-110 | Predictive search distributions | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BonillaWACTO06.pdf | category:paper author:
+icml-2006-111 | Predictive state representations with options | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WolfeS06.pdf | category:paper author:
+icml-2006-112 | Probabilistic inference for solving discrete and continuous state Markov Decision Processes | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ToussaintS06.pdf | category:paper author:
+icml-2006-113 | Pruning in ordered bagging ensembles | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Martinez-MunozS06.pdf | category:paper author:
+icml-2006-114 | Quadratic programming relaxations for metric labeling and Markov random field MAP estimation | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RavikumarL06.pdf | category:paper author:
+icml-2006-115 | Qualitative reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_EpshteynD06.pdf | category:paper author:
+icml-2006-116 | Ranking individuals by group comparisons | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_HuangLW06.pdf | category:paper author:
+icml-2006-117 | Ranking on graph data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Agarwal06.pdf | category:paper author:
+icml-2006-118 | Region-based value iteration for partially observable Markov decision processes | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LiLC06.pdf | category:paper author:
+icml-2006-119 | Regression with the optimised combination technique | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Garcke06.pdf | category:paper author:
+icml-2006-120 | Reinforcement learning for optimized trade execution | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_NevmyvakaFK06.pdf | category:paper author:
+icml-2006-121 | Relational temporal difference learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AsgharbeygiSL06.pdf | category:paper author:
+icml-2006-122 | Robust Euclidean embedding | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CaytonD06.pdf | category:paper author:
+icml-2006-123 | Robust probabilistic projections | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ArchambeauDV06.pdf | category:paper author:
+icml-2006-124 | Semi-supervised learning for structured output variables | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_BrefeldS06.pdf | category:paper author:
+icml-2006-125 | Semi-supervised nonlinear dimensionality reduction | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_YangFZB06.pdf | category:paper author:
+icml-2006-126 | Sequential update of ADtrees | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_RoureM06.pdf | category:paper author:
+icml-2006-127 | Simpler knowledge-based support vector machines | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LeSG06.pdf | category:paper author:
+icml-2006-128 | Spectral clustering for multi-type relational data | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LongZWY06.pdf | category:paper author:
+icml-2006-129 | Statistical debugging: simultaneous identification of multiple bugs | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_ZhengJLNA06.pdf | category:paper author:
+icml-2006-130 | The rate adapting poisson model for information retrieval and object recognition | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_GehlerHW06.pdf | category:paper author:
+icml-2006-131 | The relationship between Precision-Recall and ROC curves | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DavisG06.pdf | category:paper author:
+icml-2006-132 | The support vector decomposition machine | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_PereiraG06.pdf | category:paper author:
+icml-2006-133 | The uniqueness of a good optimum for K-means | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Meila06.pdf | category:paper author:
+icml-2006-134 | Topic modeling: beyond bag-of-words | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_Wallach06.pdf | category:paper author:
+icml-2006-135 | Totally corrective boosting algorithms that maximize the margin | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WarmuthLR06.pdf | category:paper author:
+icml-2006-136 | Trading convexity for scalability | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_CollobertSWB06.pdf | category:paper author:
+icml-2006-137 | Two-dimensional solution path for support vector regression | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_WangYL06.pdf | category:paper author:
+icml-2006-138 | Using inaccurate models in reinforcement learning | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_AbbeelQN06.pdf | category:paper author:
+icml-2006-139 | Using query-specific variance estimates to combine Bayesian classifiers | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_LeeGW06.pdf | category:paper author:
+icml-2006-140 | {\it R}$_{\mbox{1}}$-PCA: rotational invariant {\it L}$_{\mbox{1}}$-norm principal component analysis for robust subspace factorization | http://machinelearning.wustl.edu/mlpapers/paper_files/icml2006_DingZHZ06.pdf | category:paper author:

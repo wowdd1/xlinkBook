@@ -1,239 +1,239 @@
-N15-1001 | Unsupervised Induction of Semantic Roles within a Reconstruction-Error Minimization Framework | http://www.aclweb.org/anthology/N/N15/N15-1001.pdf | author:Ivan Titov; Ehsan Khoddam
-N15-1002 | Predicate Argument Alignment using a Global Coherence Model | http://www.aclweb.org/anthology/N/N15/N15-1002.pdf | author:Travis Wolfe; Mark Dredze; Benjamin Van Durme
-N15-1003 | Improving unsupervised vector-space thematic fit evaluation via role-filler prototype clustering | http://www.aclweb.org/anthology/N/N15/N15-1003.pdf | author:Clayton Greenberg; Asad Sayeed; Vera Demberg
-N15-1004 | A Compositional and Interpretable Semantic Space | http://www.aclweb.org/anthology/N/N15/N15-1004.pdf | author:Alona Fyshe; Leila Wehbe; Partha P. Talukdar; Brian Murphy; Tom M. Mitchell
-N15-1005 | Randomized Greedy Inference for Joint Segmentation, POS Tagging and Dependency Parsing | http://www.aclweb.org/anthology/N/N15/N15-1005.pdf | author:Yuan Zhang; Chengtao Li; Regina Barzilay; Kareem Darwish
-N15-1006 | An Incremental Algorithm for Transition-based CCG Parsing | http://www.aclweb.org/anthology/N/N15/N15-1006.pdf | author:Bharat Ram Ambati; Tejaswini Deoskar; Mark Johnson; Mark Steedman
-N15-1007 | Because Syntax Does Matter: Improving Predicate-Argument Structures Parsing with Syntactic Features | http://www.aclweb.org/anthology/N/N15/N15-1007.pdf | author:Corentin Ribeyre; Eric Villemonte de la Clergerie; Djamé Seddah
-N15-1008 | A Hybrid Generative/Discriminative Approach To Citation Prediction | http://www.aclweb.org/anthology/N/N15/N15-1008.pdf | author:Chris Tanner; Eugene Charniak
-N15-1009 | Weakly Supervised Slot Tagging with Partially Labeled Sequences from Web Search Click Logs | http://www.aclweb.org/anthology/N/N15/N15-1009.pdf | author:Young-Bum Kim; Minwoo Jeong; Karl Stratos; Ruhi Sarikaya
-N15-1010 | Not All Character N-grams Are Created Equal: A Study in Authorship Attribution | http://www.aclweb.org/anthology/N/N15/N15-1010.pdf | author:Upendra Sapkota; Steven Bethard; Manuel Montes; Thamar Solorio
-N15-1011 | Effective Use of Word Order for Text Categorization with Convolutional Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1011.pdf | author:Rie Johnson; Tong Zhang
-N15-1012 | Transition-Based Syntactic Linearization | http://www.aclweb.org/anthology/N/N15/N15-1012.pdf | author:Yijia Liu; Yue Zhang; Wanxiang Che; Bing Qin
-N15-1013 | Extractive Summarisation Based on Keyword Profile and Language Model | http://www.aclweb.org/anthology/N/N15/N15-1013.pdf | author:Han Xu; Eric Martin; Ashesh Mahidadia
-N15-1014 | HEADS: Headline Generation as Sequence Prediction Using an Abstract Feature-Rich Space | http://www.aclweb.org/anthology/N/N15/N15-1014.pdf | author:Carlos A. Colmenares; Marina Litvak; Amin Mantrach; Fabrizio Silvestri
-N15-1015 | Whatâs Cookinâ? Interpreting Cooking Videos using Text, Speech and Vision | http://www.aclweb.org/anthology/N/N15/N15-1015.pdf | author:Jonathan Malmaud; Jonathan Huang; Vivek Rathod; Nicholas Johnston; Andrew Rabinovich; Kevin Murphy
-N15-1016 | Combining Language and Vision with a Multimodal Skip-gram Model | http://www.aclweb.org/anthology/N/N15/N15-1016.pdf | author:Angeliki Lazaridou; Nghia The Pham; Marco Baroni
-N15-1017 | Discriminative Unsupervised Alignment of Natural Language Instructions with Corresponding Video Segments | http://www.aclweb.org/anthology/N/N15/N15-1017.pdf | author:Iftekhar Naim; Young C. Song; Qiguang Liu; Liang Huang; Henry Kautz; Jiebo Luo; Daniel Gildea
-N15-1018 | TopicCheck: Interactive Alignment for Assessing Topic Model Stability | http://www.aclweb.org/anthology/N/N15/N15-1018.pdf | author:Jason Chuang; Margaret E. Roberts; Brandon M. Stewart; Rebecca Weiss; Dustin Tingley; Justin Grimmer; Jeffrey Heer
-N15-1019 | Inferring latent attributes of Twitter users with label regularization | http://www.aclweb.org/anthology/N/N15/N15-1019.pdf | author:Ehsan Mohammady Ardehaly; Aron Culotta
-N15-1020 | A Neural Network Approach to Context-Sensitive Generation of Conversational Responses | http://www.aclweb.org/anthology/N/N15/N15-1020.pdf | author:Alessandro Sordoni; Michel Galley; Michael Auli; Chris Brockett; Yangfeng Ji; Margaret Mitchell; Jian-Yun Nie; Jianfeng Gao; Bill Dolan
-N15-1021 | How to Make a Frenemy: Multitape FSTs for Portmanteau Generation | http://www.aclweb.org/anthology/N/N15/N15-1021.pdf | author:Aliya Deri; Kevin Knight
-N15-1022 | Aligning Sentences from Standard Wikipedia to Simple Wikipedia | http://www.aclweb.org/anthology/N/N15/N15-1022.pdf | author:William Hwang; Hannaneh Hajishirzi; Mari Ostendorf; Wei Wu
-N15-1023 | Inducing Lexical Style Properties for Paraphrase and Genre Differentiation | http://www.aclweb.org/anthology/N/N15/N15-1023.pdf | author:Ellie Pavlick; Ani Nenkova
-N15-1024 | Entity Linking for Spoken Language | http://www.aclweb.org/anthology/N/N15/N15-1024.pdf | author:Adrian Benton; Mark Dredze
-N15-1025 | Spinning Straw into Gold: Using Free Text to Train Monolingual Alignment Models for Non-factoid Question Answering | http://www.aclweb.org/anthology/N/N15/N15-1025.pdf | author:Rebecca Sharp; Peter Jansen; Mihai Surdeanu; Peter Clark
-N15-1026 | Personalized Page Rank for Named Entity Disambiguation | http://www.aclweb.org/anthology/N/N15/N15-1026.pdf | author:Maria Pershina; Yifan He; Ralph Grishman
-N15-1027 | When and why are log-linear models self-normalizing? | http://www.aclweb.org/anthology/N/N15/N15-1027.pdf | author:Jacob Andreas; Dan Klein
-N15-1028 | Deep Multilingual Correlation for Improved Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1028.pdf | author:Ang Lu; Weiran Wang; Mohit Bansal; Kevin Gimpel; Karen Livescu
-N15-1029 | Disfluency Detection with a Semi-Markov Model and Prosodic Features | http://www.aclweb.org/anthology/N/N15/N15-1029.pdf | author:James Ferguson; Greg Durrett; Dan Klein
-N15-1030 | Empty Category Detection With Joint Context-Label Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1030.pdf | author:Xun Wang; Katsuhito Sudoh; Masaaki Nagata
-N15-1031 | Incrementally Tracking Reference in Human/Human Dialogue Using Linguistic and Extra-Linguistic Information | http://www.aclweb.org/anthology/N/N15/N15-1031.pdf | author:Casey Kennington; Ryu Iida; Takenobu Tokunaga; David Schlangen
-N15-1032 | Digital Leafleting: Extracting Structured Data from Multimedia Online Flyers | http://www.aclweb.org/anthology/N/N15/N15-1032.pdf | author:Emilia Apostolova; Payam Pourashraf; Jeffrey Sack
-N15-1033 | Multi-Target Machine Translation with Multi-Synchronous Context-free Grammars | http://www.aclweb.org/anthology/N/N15/N15-1033.pdf | author:Graham Neubig; Philip Arthur; Kevin Duh
-N15-1034 | Sign constraints on feature weights improve a joint model of word segmentation and phonology | http://www.aclweb.org/anthology/N/N15/N15-1034.pdf | author:Mark Johnson; Joe Pater; Robert Staubs; Emmanuel Dupoux
-N15-1035 | Semi-Supervised Word Sense Disambiguation Using Word Embeddings in General and Specific Domains | http://www.aclweb.org/anthology/N/N15/N15-1035.pdf | author:Kaveh Taghipour; Hwee Tou Ng
-N15-1036 | Continuous Space Representations of Linguistic Typology and their Application to Phylogenetic Inference | http://www.aclweb.org/anthology/N/N15/N15-1036.pdf | author:Yugo Murawaki
-N15-1037 | Interpreting Compound Noun Phrases Using Web Search Queries | http://www.aclweb.org/anthology/N/N15/N15-1037.pdf | author:Marius Pasca
-N15-1038 | Lexicon-Free Conversational Speech Recognition with Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1038.pdf | author:Andrew Maas; Ziang Xie; Dan Jurafsky; Andrew Ng
-N15-1039 | I Can Has Cheezburger? A Nonparanormal Approach to Combining Textual and Visual Information for Predicting and Generating Popular Meme Descriptions | http://www.aclweb.org/anthology/N/N15/N15-1039.pdf | author:William Yang Wang; Miaomiao Wen
-N15-1040 | A Transition-based Algorithm for AMR Parsing | http://www.aclweb.org/anthology/N/N15/N15-1040.pdf | author:Chuan Wang; Nianwen Xue; Sameer Pradhan
-N15-1041 | The Geometry of Statistical Machine Translation | http://www.aclweb.org/anthology/N/N15/N15-1041.pdf | author:Aurelien Waite; Bill Byrne
-N15-1042 | Data-driven sentence generation with non-isomorphic trees | http://www.aclweb.org/anthology/N/N15/N15-1042.pdf | author:Miguel Ballesteros; Bernd Bohnet; Simon Mille; Leo Wanner
-N15-1043 | Latent Domain Word Alignment for Heterogeneous Corpora | http://www.aclweb.org/anthology/N/N15/N15-1043.pdf | author:Hoang Cuong; Khalil Sima'an
-N15-1044 | Extracting Human Temporal Orientation from Facebook Language | http://www.aclweb.org/anthology/N/N15/N15-1044.pdf | author:H. Andrew Schwartz; Gregory Park; Maarten Sap; Evan Weingarten; Johannes Eichstaedt; Margaret Kern; David Stillwell; Michal Kosinski; Jonah Berger; Martin Seligman; Lyle Ungar
-N15-1045 | An In-depth Analysis of the Effect of Text Normalization in Social Media | http://www.aclweb.org/anthology/N/N15/N15-1045.pdf | author:Tyler Baldwin; Yunyao Li
-N15-1046 | Using Summarization to Discover Argument Facets in Online Idealogical Dialog | http://www.aclweb.org/anthology/N/N15/N15-1046.pdf | author:Amita Misra; Pranav Anand; Jean E. Fox Tree; Marilyn Walker
-N15-1047 | Active Learning with Rationales for Text Classification | http://www.aclweb.org/anthology/N/N15/N15-1047.pdf | author:Manali Sharma; Di Zhuang; Mustafa Bilgic
-N15-1048 | Inferring Temporally-Anchored Spatial Knowledge from Semantic Roles | http://www.aclweb.org/anthology/N/N15/N15-1048.pdf | author:Eduardo Blanco; Alakananda Vempala
-N15-1049 | A Dynamic Programming Algorithm for Tree Trimming-based Text Summarization | http://www.aclweb.org/anthology/N/N15/N15-1049.pdf | author:Masaaki Nishino; Norihito Yasuda; Tsutomu Hirao; Shin-ichi Minato; Masaaki Nagata
-N15-1050 | Modeling Word Meaning in Context with Substitute Vectors | http://www.aclweb.org/anthology/N/N15/N15-1050.pdf | author:Oren Melamud; Ido Dagan; Jacob Goldberger
-N15-1051 | Corpus-based discovery of semantic intensity scales | http://www.aclweb.org/anthology/N/N15/N15-1051.pdf | author:Chaitanya Shivade; Marie-Catherine de Marneffe; Eric Fosler-Lussier; Albert M. Lai
-N15-1052 | Dialogue focus tracking for zero pronoun resolution | http://www.aclweb.org/anthology/N/N15/N15-1052.pdf | author:Sudha Rao; Allyson Ettinger; Hal Daumé III; Philip Resnik
-N15-1053 | Déjà Image-Captions: A Corpus of Expressive Descriptions in Repetition | http://www.aclweb.org/anthology/N/N15/N15-1053.pdf | author:Jianfu Chen; Polina Kuznetsova; David Warren; Yejin Choi
-N15-1054 | Inferring Missing Entity Type Instances for Knowledge Base Completion: New Dataset and Methods | http://www.aclweb.org/anthology/N/N15/N15-1054.pdf | author:Arvind Neelakantan; Ming-Wei Chang
-N15-1055 | Robust Morphological Tagging with Word Representations | http://www.aclweb.org/anthology/N/N15/N15-1055.pdf | author:Thomas Müller; Hinrich Schuetze
-N15-1056 | English orthography is not "close to optimal" | http://www.aclweb.org/anthology/N/N15/N15-1056.pdf | author:Garrett Nicolai; Grzegorz Kondrak
-N15-1057 | LCCT: A Semi-supervised Model for Sentiment Classification | http://www.aclweb.org/anthology/N/N15/N15-1057.pdf | author:Min Yang; Wenting Tu; Ziyu Lu; Wenpeng Yin; Kam-Pui Chow
-N15-1058 | Multiview LSA: Representation Learning via Generalized CCA | http://www.aclweb.org/anthology/N/N15/N15-1058.pdf | author:Pushpendre Rastogi; Benjamin Van Durme; Raman Arora
-N15-1059 | NASARI: a Novel Approach to a Semantically-Aware Representation of Items | http://www.aclweb.org/anthology/N/N15/N15-1059.pdf | author:José Camacho-Collados; Mohammad Taher Pilehvar; Roberto Navigli
-N15-1060 | Towards a standard evaluation method for grammatical error detection and correction | http://www.aclweb.org/anthology/N/N15/N15-1060.pdf | author:Mariano Felice; Ted Briscoe
-N15-1061 | Using Zero-Resource Spoken Term Discovery for Ranked Retrieval | http://www.aclweb.org/anthology/N/N15/N15-1061.pdf | author:Jerome White; Douglas Oard; Aren Jansen; Jiaul Paik; Rashmi Sankepally
-N15-1062 | Constraint-Based Models of Lexical Borrowing | http://www.aclweb.org/anthology/N/N15/N15-1062.pdf | author:Yulia Tsvetkov; Waleed Ammar; Chris Dyer
-N15-1063 | Model Invertibility Regularization: Sequence Alignment With or Without Parallel Data | http://www.aclweb.org/anthology/N/N15/N15-1063.pdf | author:Tomer Levinboim; Ashish Vaswani; David Chiang
-N15-1064 | Jointly Modeling Inter-Slot Relations by Random Walk on Knowledge Graphs for Unsupervised Spoken Language Understanding | http://www.aclweb.org/anthology/N/N15/N15-1064.pdf | author:Yun-Nung Chen; William Yang Wang; Alexander Rudnicky
-N15-1065 | Expanding Paraphrase Lexicons by Exploiting Lexical Variants | http://www.aclweb.org/anthology/N/N15/N15-1065.pdf | author:Atsushi Fujita; Pierre Isabelle
-N15-1066 | Diamonds in the Rough: Event Extraction from Imperfect Microblog Data | http://www.aclweb.org/anthology/N/N15/N15-1066.pdf | author:Ander Intxaurrondo; Eneko Agirre; Oier Lopez de Lacalle; Mihai Surdeanu
-N15-1067 | Unsupervised Dependency Parsing: Let's Use Supervised Parsers | http://www.aclweb.org/anthology/N/N15/N15-1067.pdf | author:Phong Le; Willem Zuidema
-N15-1068 | A Linear-Time Transition System for Crossing Interval Trees | http://www.aclweb.org/anthology/N/N15/N15-1068.pdf | author:Emily Pitler; Ryan McDonald
-N15-1069 | Unsupervised Multi-Domain Adaptation with Feature Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1069.pdf | author:Yi Yang; Jacob Eisenstein
-N15-1070 | Ontologically Grounded Multi-sense Representation Learning for Semantic Vector Space Models | http://www.aclweb.org/anthology/N/N15/N15-1070.pdf | author:Sujay Kumar Jauhar; Chris Dyer; Eduard Hovy
-N15-1071 | Subsentential Sentiment on a Shoestring: A Crosslingual Analysis of Compositional Classification | http://www.aclweb.org/anthology/N/N15/N15-1071.pdf | author:Michael Haas; Yannick Versley
-N15-1072 | Cost Optimization in Crowdsourcing Translation: Low cost translations made even cheaper | http://www.aclweb.org/anthology/N/N15/N15-1072.pdf | author:Mingkun Gao; Wei Xu; Chris Callison-Burch
-N15-1073 | Multitask Learning for Adaptive Quality Estimation of Automatically Transcribed Utterances | http://www.aclweb.org/anthology/N/N15/N15-1073.pdf | author:José G. C. de Souza; Hamed Zamani; Matteo Negri; Marco Turchi; Falavigna Daniele
-N15-1074 | Incorporating Word Correlation Knowledge into Topic Modeling | http://www.aclweb.org/anthology/N/N15/N15-1074.pdf | author:Pengtao Xie; Diyi Yang; Eric Xing
-N15-1075 | The Unreasonable Effectiveness of Word Representations for Twitter Named Entity Recognition | http://www.aclweb.org/anthology/N/N15/N15-1075.pdf | author:Colin Cherry; Hongyu Guo
-N15-1076 | Is Your Anchor Going Up or Down? Fast and Accurate Supervised Topic Models | http://www.aclweb.org/anthology/N/N15/N15-1076.pdf | author:Thang Nguyen; Jordan Boyd-Graber; Jeffrey Lund; Kevin Seppi; Eric Ringger
-N15-1077 | Grounded Semantic Parsing for Complex Knowledge Extraction | http://www.aclweb.org/anthology/N/N15/N15-1077.pdf | author:Ankur P. Parikh; Hoifung Poon; Kristina Toutanova
-N15-1078 | Sentiment after Translation: A Case-Study on Arabic Social Media Posts | http://www.aclweb.org/anthology/N/N15/N15-1078.pdf | author:Mohammad Salameh; Saif Mohammad; Svetlana Kiritchenko
-N15-1079 | Using External Resources and Joint Learning for Bigram Weighting in ILP-Based Multi-Document Summarization | http://www.aclweb.org/anthology/N/N15/N15-1079.pdf | author:Chen Li; Yang Liu; Lin Zhao
-N15-1080 | Transforming Dependencies into Phrase Structures | http://www.aclweb.org/anthology/N/N15/N15-1080.pdf | author:Lingpeng Kong; Alexander M. Rush; Noah A. Smith
-N15-1081 | Improving the Inference of Implicit Discourse Relations via Classifying Explicit Discourse Connectives | http://www.aclweb.org/anthology/N/N15/N15-1081.pdf | author:Attapol Rutherford; Nianwen Xue
-N15-1082 | Solving Hard Coreference Problems | http://www.aclweb.org/anthology/N/N15/N15-1082.pdf | author:Haoruo Peng; Daniel Khashabi; Dan Roth
-N15-1083 | Pragmatic Neural Language Modelling in Machine Translation | http://www.aclweb.org/anthology/N/N15/N15-1083.pdf | author:Paul Baltescu; Phil Blunsom
-N15-1084 | Key Female Characters in Film Have More to Talk About Besides Men: Automating the Bechdel Test | http://www.aclweb.org/anthology/N/N15/N15-1084.pdf | author:Apoorv Agarwal; Jiehan Zheng; Shruti Kamath; Sriramkumar Balasubramanian; Shirin Ann Dey
-N15-1085 | Semantic Grounding in Dialogue for Complex Problem Solving | http://www.aclweb.org/anthology/N/N15/N15-1085.pdf | author:Xiaolong Li; Kristy Boyer
-N15-1086 | Learning Knowledge Graphs for Question Answering through Conversational Dialog | http://www.aclweb.org/anthology/N/N15/N15-1086.pdf | author:Ben Hixon; Peter Clark; Hannaneh Hajishirzi
-N15-1087 | Sentence segmentation of aphasic speech | http://www.aclweb.org/anthology/N/N15/N15-1087.pdf | author:Kathleen C. Fraser; Naama Ben-David; Graeme Hirst; Naida Graham; Elizabeth Rochon
-N15-1088 | Semantic parsing of speech using grammars learned with weak supervision | http://www.aclweb.org/anthology/N/N15/N15-1088.pdf | author:Judith Gaspers; Philipp Cimiano; Britta Wrede
-N15-1089 | Early Gains Matter: A Case for Preferring Generative over Discriminative Crowdsourcing Models | http://www.aclweb.org/anthology/N/N15/N15-1089.pdf | author:Paul Felt; Kevin Black; Eric Ringger; Kevin Seppi; Robbie Haertel
-N15-1090 | Optimizing Multivariate Performance Measures for Learning Relation Extraction Models | http://www.aclweb.org/anthology/N/N15/N15-1090.pdf | author:Gholamreza Haffari; Ajay Nagesh; Ganesh Ramakrishnan
-N15-1091 | Convolutional Neural Network for Paraphrase Identification | http://www.aclweb.org/anthology/N/N15/N15-1091.pdf | author:Wenpeng Yin; Hinrich Schütze
-N15-1092 | Representation Learning Using Multi-Task Deep Neural Networks for Semantic Classification and Information Retrieval | http://www.aclweb.org/anthology/N/N15/N15-1092.pdf | author:Xiaodong Liu; Jianfeng Gao; Xiaodong He; Li Deng; Kevin Duh; Ye-Yi Wang
-N15-1093 | Inflection Generation as Discriminative String Transduction | http://www.aclweb.org/anthology/N/N15/N15-1093.pdf | author:Garrett Nicolai; Colin Cherry; Grzegorz Kondrak
-N15-1094 | Penalized Expectation Propagation for Graphical Models over Strings | http://www.aclweb.org/anthology/N/N15/N15-1094.pdf | author:Ryan Cotterell; Jason Eisner
-N15-1095 | Joint Generation of Transliterations from Multiple Representations | http://www.aclweb.org/anthology/N/N15/N15-1095.pdf | author:Lei Yao; Grzegorz Kondrak
-N15-1096 | Prosodic boundary information helps unsupervised word segmentation | http://www.aclweb.org/anthology/N/N15/N15-1096.pdf | author:Bogdan Ludusan; Gabriel Synnaeve; Emmanuel Dupoux
-N15-1097 | So similar and yet incompatible: Toward the automated identification of semantically compatible words | http://www.aclweb.org/anthology/N/N15/N15-1097.pdf | author:Germán Kruszewski; Marco Baroni
-N15-1098 | Do Supervised Distributional Methods Really Learn Lexical Inference Relations? | http://www.aclweb.org/anthology/N/N15/N15-1098.pdf | author:Omer Levy; Steffen Remus; Chris Biemann; Ido Dagan
-N15-1099 | A Word Embedding Approach to Predicting the Compositionality of Multiword Expressions | http://www.aclweb.org/anthology/N/N15/N15-1099.pdf | author:Bahar Salehi; Paul Cook; Timothy Baldwin
-N15-1100 | Word Embedding-based Antonym Detection using Thesauri and Distributional Information | http://www.aclweb.org/anthology/N/N15/N15-1100.pdf | author:Masataka Ono; Makoto Miwa; Yutaka Sasaki
-N15-1101 | A Comparison of Word Similarity Performance Using Explanatory and Non-explanatory Texts | http://www.aclweb.org/anthology/N/N15/N15-1101.pdf | author:Lifeng Jin; William Schuler
-N15-1102 | Morphological Modeling for Machine Translation of English-Iraqi Arabic Spoken Dialogs | http://www.aclweb.org/anthology/N/N15/N15-1102.pdf | author:Katrin Kirchhoff; Yik-Cheung Tam; Colleen Richey; Wen Wang
-N15-1103 | Continuous Adaptation to User Feedback for Statistical Machine Translation | http://www.aclweb.org/anthology/N/N15/N15-1103.pdf | author:Frédéric Blain; Fethi Bougares; Amir Hazem; Loïc Barrault; Holger Schwenk
-N15-1104 | Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation | http://www.aclweb.org/anthology/N/N15/N15-1104.pdf | author:Chao Xing; Dong Wang; Chao Liu; Yiye Lin
-N15-1105 | Fast and Accurate Preordering for SMT using Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1105.pdf | author:Adrià de Gispert; Gonzalo Iglesias; Bill Byrne
-N15-1106 | APRO: All-Pairs Ranking Optimization for MT Tuning | http://www.aclweb.org/anthology/N/N15/N15-1106.pdf | author:Markus Dreyer; Yuanzhe Dong
-N15-1107 | Paradigm classification in supervised learning of morphology | http://www.aclweb.org/anthology/N/N15/N15-1107.pdf | author:Malin Ahlberg; Markus Forsberg; Mans Hulden
-N15-1108 | Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice | http://www.aclweb.org/anthology/N/N15/N15-1108.pdf | author:Haitao Mi; Liang Huang
-N15-1109 | Unsupervised Code-Switching for Multilingual Historical Document Transcription | http://www.aclweb.org/anthology/N/N15/N15-1109.pdf | author:Dan Garrette; Hannah Alpert-Abrams; Taylor Berg-Kirkpatrick; Dan Klein
-N15-1110 | Matching Citation Text and Cited Spans in Biomedical Literature: a Search-Oriented Approach | http://www.aclweb.org/anthology/N/N15/N15-1110.pdf | author:Arman Cohan; Luca Soldaini; Nazli Goharian
-N15-1111 | Effective Feature Integration for Automated Short Answer Scoring | http://www.aclweb.org/anthology/N/N15/N15-1111.pdf | author:Keisuke Sakaguchi; Michael Heilman; Nitin Madnani
-N15-1112 | Socially-Informed Timeline Generation for Complex Events | http://www.aclweb.org/anthology/N/N15/N15-1112.pdf | author:Lu Wang; Claire Cardie; Galen Marchetti
-N15-1113 | Movie Script Summarization as Graph-based Scene Extraction | http://www.aclweb.org/anthology/N/N15/N15-1113.pdf | author:Philip John Gorinski; Mirella Lapata
-N15-1114 | Toward Abstractive Summarization Using Semantic Representations | http://www.aclweb.org/anthology/N/N15/N15-1114.pdf | author:Fei Liu; Jeffrey Flanigan; Sam Thomson; Norman Sadeh; Noah A. Smith
-N15-1115 | Encoding World Knowledge in the Evaluation of Local Coherence | http://www.aclweb.org/anthology/N/N15/N15-1115.pdf | author:Muyu Zhang; Vanessa Wei Feng; Bing Qin; Graeme Hirst; Ting Liu; Jingwen Huang
-N15-1116 | Chinese Event Coreference Resolution: An Unsupervised Probabilistic Model Rivaling Supervised Resolvers | http://www.aclweb.org/anthology/N/N15/N15-1116.pdf | author:Chen Chen; Vincent Ng
-N15-1117 | Removing the Training Wheels: A Coreference Dataset that Entertains Humans and Challenges Computers | http://www.aclweb.org/anthology/N/N15/N15-1117.pdf | author:Anupam Guha; Mohit Iyyer; Danny Bouman; Jordan Boyd-Graber
-N15-1118 | Injecting Logical Background Knowledge into Embeddings for Relation Extraction | http://www.aclweb.org/anthology/N/N15/N15-1118.pdf | author:Tim Rocktäschel; Sameer Singh; Sebastian Riedel
-N15-1119 | Unsupervised Entity Linking with Abstract Meaning Representation | http://www.aclweb.org/anthology/N/N15/N15-1119.pdf | author:Xiaoman Pan; Taylor Cassidy; Ulf Hermjakob; Heng Ji; Kevin Knight
-N15-1120 | Idest: Learning a Distributed Representation for Event Patterns | http://www.aclweb.org/anthology/N/N15/N15-1120.pdf | author:Sebastian Krause; Enrique Alfonseca; Katja Filippova; Daniele Pighin
-N15-1121 | High-Order Low-Rank Tensors for Semantic Role Labeling | http://www.aclweb.org/anthology/N/N15/N15-1121.pdf | author:Tao Lei; Yuan Zhang; Lluís Màrquez; Alessandro Moschitti; Regina Barzilay
-N15-1122 | Lexical Event Ordering with an Edge-Factored Model | http://www.aclweb.org/anthology/N/N15/N15-1122.pdf | author:Omri Abend; Shay B. Cohen; Mark Steedman
-N15-1123 | Bag-of-Words Forced Decoding for Cross-Lingual Information Retrieval | http://www.aclweb.org/anthology/N/N15/N15-1123.pdf | author:Felix Hieber; Stefan Riezler
-N15-1124 | Accurate Evaluation of Segment-level Machine Translation Metrics | http://www.aclweb.org/anthology/N/N15/N15-1124.pdf | author:Yvette Graham; Timothy Baldwin; Nitika Mathur
-N15-1125 | Leveraging Small Multilingual Corpora for SMT Using Many Pivot Languages | http://www.aclweb.org/anthology/N/N15/N15-1125.pdf | author:Raj Dabre; Fabien Cromieres; Sadao Kurohashi; Pushpak Bhattacharyya
-N15-1126 | Why Read if You Can Scan? Trigger Scoping Strategy for Biographical Fact Extraction | http://www.aclweb.org/anthology/N/N15/N15-1126.pdf | author:Dian Yu; Heng Ji; Sujian Li; Chin-Yew Lin
-N15-1127 | Lachmannian Archetype Reconstruction for Ancient Manuscript Corpora | http://www.aclweb.org/anthology/N/N15/N15-1127.pdf | author:Armin Hoenen
-N15-1128 | Distributed Representations of Words to Guide Bootstrapped Entity Classifiers | http://www.aclweb.org/anthology/N/N15/N15-1128.pdf | author:Sonal Gupta; Christopher D. Manning
-N15-1129 | Multi-Task Word Alignment Triangulation for Low-Resource Languages | http://www.aclweb.org/anthology/N/N15/N15-1129.pdf | author:Tomer Levinboim; David Chiang
-N15-1130 | Automatic cognate identification with gap-weighted string subsequences. | http://www.aclweb.org/anthology/N/N15/N15-1130.pdf | author:Taraka Rama
-N15-1131 | Short Text Understanding by Leveraging Knowledge into Topic Model | http://www.aclweb.org/anthology/N/N15/N15-1131.pdf | author:Shansong Yang; Weiming Lu; Dezhi Yang; Liang Yao; Baogang Wei
-N15-1132 | Unsupervised Most Frequent Sense Detection using Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1132.pdf | author:Sudha Bhingardive; Dhirendra Singh; Rudramurthy V; Hanumant Redkar; Pushpak Bhattacharyya
-N15-1133 | Chain Based RNN for Relation Classification | http://www.aclweb.org/anthology/N/N15/N15-1133.pdf | author:Javid Ebrahimi; Dejing Dou
-N15-1134 | LR Parsing for LCFRS | http://www.aclweb.org/anthology/N/N15/N15-1134.pdf | author:Laura Kallmeyer; Wolfgang Maier
-N15-1135 | Mining for unambiguous instances to adapt part-of-speech taggers to new domains | http://www.aclweb.org/anthology/N/N15/N15-1135.pdf | author:Dirk Hovy; Barbara Plank; Héctor Martínez Alonso; Anders Søgaard
-N15-1136 | Clustering Sentences with Density Peaks for Multi-document Summarization | http://www.aclweb.org/anthology/N/N15/N15-1136.pdf | author:Yang Zhang; Yunqing Xia; Yi Liu; Wenmin Wang
-N15-1137 | Development of the Multilingual Semantic Annotation System | http://www.aclweb.org/anthology/N/N15/N15-1137.pdf | author:Scott Piao; Francesca Bianchi; Carmen Dayrell; Angela D'Egidio; Paul Rayson
-N15-1138 | Unsupervised Sparse Vector Densification for Short Text Similarity | http://www.aclweb.org/anthology/N/N15/N15-1138.pdf | author:Yangqiu Song; Dan Roth
-N15-1139 | #WhyIStayed, #WhyILeft: Microblogging to Make Sense of Domestic Abuse | http://www.aclweb.org/anthology/N/N15/N15-1139.pdf | author:Nicolas Schrading; Cecilia Ovesdotter Alm; Raymond Ptucha; Christopher Homan
-N15-1140 | Morphological Word-Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1140.pdf | author:Ryan Cotterell; Hinrich Schütze
-N15-1141 | Recognizing Social Constructs from Textual Conversation | http://www.aclweb.org/anthology/N/N15/N15-1141.pdf | author:Somak Aditya; Chitta Baral; Nguyen Ha Vo; Joohyung Lee; Jieping Ye; Zaw Naung; Barry Lumpkin; Jenny Hastings; Richard Scherl; Dawn M. Sweet; Daniela Inclezan
-N15-1142 | Two/Too Simple Adaptations of Word2Vec for Syntax Problems | http://www.aclweb.org/anthology/N/N15/N15-1142.pdf | author:Wang Ling; Chris Dyer; Alan W Black; Isabel Trancoso
-N15-1143 | Estimating Numerical Attributes by Bringing Together Fragmentary Clues | http://www.aclweb.org/anthology/N/N15/N15-1143.pdf | author:Hiroya Takamura; Jun'ichi Tsujii
-N15-1144 | Unsupervised POS Induction with Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1144.pdf | author:Chu-Cheng Lin; Waleed Ammar; Chris Dyer; Lori Levin
-N15-1145 | Improving Update Summarization via Supervised ILP and Sentence Reranking | http://www.aclweb.org/anthology/N/N15/N15-1145.pdf | author:Chen Li; Yang Liu; Lin Zhao
-N15-1146 | MPQA 3.0: An Entity/Event-Level Sentiment Corpus | http://www.aclweb.org/anthology/N/N15/N15-1146.pdf | author:Lingjia Deng; Janyce Wiebe
-N15-1147 | Everyone Likes Shopping! Multi-class Product Categorization for e-Commerce | http://www.aclweb.org/anthology/N/N15/N15-1147.pdf | author:Zornitsa Kozareva
-N15-1148 | GPU-Friendly Local Regression for Voice Conversion | http://www.aclweb.org/anthology/N/N15/N15-1148.pdf | author:Taylor Berg-Kirkpatrick; Dan Klein
-N15-1149 | Response-based Learning for Machine Translation of Open-domain Database Queries | http://www.aclweb.org/anthology/N/N15/N15-1149.pdf | author:Carolin Haas; Stefan Riezler
-N15-1150 | Context-Dependent Automatic Response Generation Using Statistical Machine Translation Techniques | http://www.aclweb.org/anthology/N/N15/N15-1150.pdf | author:Andrew Shin; Ryohei Sasano; Hiroya Takamura; Manabu Okumura
-N15-1151 | Multilingual Open Relation Extraction Using Cross-lingual Projection | http://www.aclweb.org/anthology/N/N15/N15-1151.pdf | author:Manaal Faruqui; Shankar Kumar
-N15-1152 | Learning to parse with IAA-weighted loss | http://www.aclweb.org/anthology/N/N15/N15-1152.pdf | author:Héctor Martínez Alonso; Barbara Plank; Arne Skjærholt; Anders Søgaard
-N15-1153 | Exploiting Text and Network Context for Geolocation of Social Media Users | http://www.aclweb.org/anthology/N/N15/N15-1153.pdf | author:Afshin Rahimi; Duy Vu; Trevor Cohn; Timothy Baldwin
-N15-1154 | Discriminative Phrase Embedding for Paraphrase Identification | http://www.aclweb.org/anthology/N/N15/N15-1154.pdf | author:Wenpeng Yin; Hinrich Schütze
-N15-1155 | Combining Word Embeddings and Feature Embeddings for Fine-grained Relation Extraction | http://www.aclweb.org/anthology/N/N15/N15-1155.pdf | author:Mo Yu; Matthew R. Gormley; Mark Dredze
-N15-1156 | CASSA: A Context-Aware Synonym Simplification Algorithm | http://www.aclweb.org/anthology/N/N15/N15-1156.pdf | author:Ricardo Baeza-Yates; Luz Rello; Julia Dembowski
-N15-1157 | Simple task-specific bilingual word embeddings | http://www.aclweb.org/anthology/N/N15/N15-1157.pdf | author:Stephan Gouws; Anders Søgaard
-N15-1158 | Sampling Techniques for Streaming Cross Document Coreference Resolution | http://www.aclweb.org/anthology/N/N15/N15-1158.pdf | author:Luke Shrimpton; Victor Lavrenko; Miles Osborne
-N15-1159 | On the Automatic Learning of Sentiment Lexicons | http://www.aclweb.org/anthology/N/N15/N15-1159.pdf | author:Aliaksei Severyn; Alessandro Moschitti
-N15-1160 | Large-Scale Native Language Identification with Cross-Corpus Evaluation | http://www.aclweb.org/anthology/N/N15/N15-1160.pdf | author:Shervin Malmasi; Mark Dras
-N15-1161 | Unediting: Detecting Disfluencies Without Careful Transcripts | http://www.aclweb.org/anthology/N/N15/N15-1161.pdf | author:Victoria Zayats; Mari Ostendorf; Hannaneh Hajishirzi
-N15-1162 | Type-Driven Incremental Semantic Parsing with Polymorphism | http://www.aclweb.org/anthology/N/N15/N15-1162.pdf | author:Kai Zhao; Liang Huang
-N15-1163 | Template Kernels for Dependency Parsing | http://www.aclweb.org/anthology/N/N15/N15-1163.pdf | author:Hillel Taub-Tabib; Yoav Goldberg; Amir Globerson
-N15-1164 | Embedding a Semantic Network in a Word Space | http://www.aclweb.org/anthology/N/N15/N15-1164.pdf | author:Richard Johansson; Luis Nieto Piña
-N15-1165 | Random Walks and Neural Network Language Models on Knowledge Bases | http://www.aclweb.org/anthology/N/N15/N15-1165.pdf | author:Josu Goikoetxea; Aitor Soroa; Eneko Agirre
-N15-1166 | Identification and Characterization of Newsworthy Verbs in World News | http://www.aclweb.org/anthology/N/N15/N15-1166.pdf | author:Benjamin Nye; Ani Nenkova
-N15-1167 | Enhancing Sumerian Lemmatization by Unsupervised Named-Entity Recognition | http://www.aclweb.org/anthology/N/N15/N15-1167.pdf | author:Yudong Liu; Clinton Burkhart; James Hearne; Liang Luo
-N15-1168 | Extracting Information about Medication Use from Veterinary Discussions | http://www.aclweb.org/anthology/N/N15/N15-1168.pdf | author:Haibo Ding; Ellen Riloff
-N15-1169 | Reserating the awesometastic: An automatic extension of the WordNet taxonomy for novel terms | http://www.aclweb.org/anthology/N/N15/N15-1169.pdf | author:David Jurgens; Mohammad Taher Pilehvar
-N15-1170 | Cross-lingual Text Classification Using Topic-Dependent Word Probabilities | http://www.aclweb.org/anthology/N/N15/N15-1170.pdf | author:Daniel Andrade; Kunihiko Sadamasa; Akihiro Tamura; Masaaki Tsuchida
-N15-1171 | Testing and Comparing Computational Approaches for Identifying the Language of Framing in Political News | http://www.aclweb.org/anthology/N/N15/N15-1171.pdf | author:Eric Baumer; Elisha Elovic; Ying Qin; Francesca Polletta; Geri Gay
-N15-1172 | Echoes of Persuasion: The Effect of Euphony in Persuasive Communication | http://www.aclweb.org/anthology/N/N15/N15-1172.pdf | author:Marco Guerini; Gözde Özbal; Carlo Strapparava
-N15-1173 | Translating Videos to Natural Language Using Deep Recurrent Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1173.pdf | author:Subhashini Venugopalan; Huijuan Xu; Jeff Donahue; Marcus Rohrbach; Raymond Mooney; Kate Saenko
-N15-1174 | Learning to Interpret and Describe Abstract Scenes | http://www.aclweb.org/anthology/N/N15/N15-1174.pdf | author:Luis Gilberto Mateos Ortiz; Clemens Wolff; Mirella Lapata
-N15-1175 | A Comparison of Update Strategies for Large-Scale Maximum Expected BLEU Training | http://www.aclweb.org/anthology/N/N15/N15-1175.pdf | author:Joern Wuebker; Sebastian Muehr; Patrick Lehnen; Stephan Peitz; Hermann Ney
-N15-1176 | Learning Translation Models from Monolingual Continuous Representations | http://www.aclweb.org/anthology/N/N15/N15-1176.pdf | author:Kai Zhao; Hany Hassan; Michael Auli
-N15-1177 | A Corpus and Model Integrating Multiword Expressions and Supersenses | http://www.aclweb.org/anthology/N/N15/N15-1177.pdf | author:Nathan Schneider; Noah A. Smith
-N15-1178 | Good News or Bad News: Using Affect Control Theory to Analyze Readers' Reaction Towards News Articles | http://www.aclweb.org/anthology/N/N15/N15-1178.pdf | author:Areej Alhothali; Jesse Hoey
-N15-1179 | Do We Really Need Lexical Information? Towards a Top-down Approach to Sentiment Analysis of Product Reviews | http://www.aclweb.org/anthology/N/N15/N15-1179.pdf | author:Yulia Otmakhova; Hyopil Shin
-N15-1180 | How to Memorize a Random 60-Bit String | http://www.aclweb.org/anthology/N/N15/N15-1180.pdf | author:Marjan Ghazvininejad; Kevin Knight
-N15-1181 | A Bayesian Model for Joint Learning of Categories and their Features | http://www.aclweb.org/anthology/N/N15/N15-1181.pdf | author:Lea Frermann; Mirella Lapata
-N15-1182 | Shared common ground influences information density in microblog texts | http://www.aclweb.org/anthology/N/N15/N15-1182.pdf | author:Gabriel Doyle; Michael Frank
-N15-1183 | Hierarchic syntax improves reading time prediction | http://www.aclweb.org/anthology/N/N15/N15-1183.pdf | author:Marten van Schijndel; William Schuler
-N15-1184 | Retrofitting Word Vectors to Semantic Lexicons | http://www.aclweb.org/anthology/N/N15/N15-1184.pdf | author:Manaal Faruqui; Jesse Dodge; Sujay Kumar Jauhar; Chris Dyer; Eduard Hovy; Noah A. Smith
-N15-1185 | "Youâre Mr. Lebowski, Iâm the Dude": Inducing Address Term Formality in Signed Social Networks | http://www.aclweb.org/anthology/N/N15/N15-1185.pdf | author:Vinodh Krishnan; Jacob Eisenstein
-N15-1186 | Unsupervised Morphology Induction Using Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1186.pdf | author:Radu Soricut; Franz Och
-N15-2001 | Cache-Augmented Latent Topic Language Models for Speech Retrieval | http://www.aclweb.org/anthology/N/N15/N15-2001.pdf | author:Jonathan Wintrode
-N15-2002 | Reliable Lexical Simplification for Non-Native Speakers | http://www.aclweb.org/anthology/N/N15/N15-2002.pdf | author:Gustavo Paetzold
-N15-2003 | Analyzing Newspaper Crime Reports for Identification of Safe Transit Paths | http://www.aclweb.org/anthology/N/N15/N15-2003.pdf | author:Vasu Sharma; Rajat Kulshreshtha; Puneet Singh; Nishant Agrawal; Akshay Kumar
-N15-2004 | Relation extraction pattern ranking using word similarity | http://www.aclweb.org/anthology/N/N15/N15-2004.pdf | author:Konstantinos Lambrou-Latreille
-N15-2005 | Towards a Better Semantic Role Labeling of Complex Predicates | http://www.aclweb.org/anthology/N/N15/N15-2005.pdf | author:Glorianna Jagfeld; Lonneke van der Plas
-N15-2006 | Exploring Relational Features and Learning under Distant Supervision for Information Extraction Tasks | http://www.aclweb.org/anthology/N/N15/N15-2006.pdf | author:Ajay Nagesh
-N15-2007 | Entity/Event-Level Sentiment Detection and Inference | http://www.aclweb.org/anthology/N/N15/N15-2007.pdf | author:Lingjia Deng
-N15-2008 | Initial Steps for Building a Lexicon of Adjectives with Scalemates | http://www.aclweb.org/anthology/N/N15/N15-2008.pdf | author:Bryan Wilkinson
-N15-2009 | A Preliminary Evaluation of the Impact of Syntactic Structure in Semantic Textual Similarity and Semantic Relatedness Tasks | http://www.aclweb.org/anthology/N/N15/N15-2009.pdf | author:Ngoc Phuoc An Vo; Octavian Popescu
-N15-2010 | Benchmarking Machine Translated Sentiment Analysis for Arabic Tweets | http://www.aclweb.org/anthology/N/N15/N15-2010.pdf | author:Eshrag Refaee; Verena Rieser
-N15-2011 | Learning Kernels for Semantic Clustering: A Deep Approach | http://www.aclweb.org/anthology/N/N15/N15-2011.pdf | author:Ignacio Arroyo-Fernández
-N15-2012 | Narrowing the Loop: Integration of Resources and Linguistic Dataset Development with Interactive Machine Learning | http://www.aclweb.org/anthology/N/N15/N15-2012.pdf | author:Seid Muhie Yimam
-N15-2013 | Relation Extraction from Community Generated Question-Answer Pairs | http://www.aclweb.org/anthology/N/N15/N15-2013.pdf | author:Denis Savenkov; Wei-Lwun Lu; Jeff Dalton; Eugene Agichtein
-N15-2014 | Detecting Translation Direction: A Cross-Domain Study | http://www.aclweb.org/anthology/N/N15/N15-2014.pdf | author:Sauleh Eetemadi; Kristina Toutanova
-N15-2015 | Improving the Translation of Discourse Markers for Chinese into English | http://www.aclweb.org/anthology/N/N15/N15-2015.pdf | author:David Steele
-N15-2016 | Discourse and Document-level Information for Evaluating Language Output Tasks | http://www.aclweb.org/anthology/N/N15/N15-2016.pdf | author:Carolina Scarton
-N15-2017 | Speeding Document Annotation with Topic Models | http://www.aclweb.org/anthology/N/N15/N15-2017.pdf | author:Forough Poursabzi-Sangdeh; Jordan Boyd-Graber
-N15-2018 | Lifelong Machine Learning for Topic Modeling and Beyond | http://www.aclweb.org/anthology/N/N15/N15-2018.pdf | author:Zhiyuan Chen
-N15-2019 | Semantics-based Graph Approach to Complex Question-Answering | http://www.aclweb.org/anthology/N/N15/N15-2019.pdf | author:Tomasz Jurczyk; Jinho D. Choi
-N15-2020 | Recognizing Textual Entailment using Dependency Analysis and Machine Learning | http://www.aclweb.org/anthology/N/N15/N15-2020.pdf | author:Nidhi Sharma; Richa Sharma; Kanad K. Biswas
-N15-2021 | Bilingual lexicon extraction for a distant language pair using a small parallel corpus | http://www.aclweb.org/anthology/N/N15/N15-2021.pdf | author:Ximena Gutierrez-Vasques
-N15-2022 | Morphological Paradigms: Computational Structure and Unsupervised Learning | http://www.aclweb.org/anthology/N/N15/N15-2022.pdf | author:Jackson Lee
-N15-2023 | Computational Exploration to Linguistic Structures of Future: Classification and Categorization | http://www.aclweb.org/anthology/N/N15/N15-2023.pdf | author:Aiming Ni; Jinho D. Choi; Jason Shepard; Phillip Wolff
-N15-3001 | Two Practical Rhetorical Structure Theory Parsers | http://www.aclweb.org/anthology/N/N15/N15-3001.pdf | author:Mihai Surdeanu; Tom Hicks; Marco Antonio Valenzuela-Escarcega
-N15-3002 | Analyzing and Visualizing Coreference Resolution Errors | http://www.aclweb.org/anthology/N/N15/N15-3002.pdf | author:Sebastian Martschat; Thierry Göckel; Michael Strube
-N15-3003 | hyp: A Toolkit for Representing, Manipulating, and Optimizing Hypergraphs | http://www.aclweb.org/anthology/N/N15/N15-3003.pdf | author:Markus Dreyer; Jonathan Graehl
-N15-3004 | Enhancing Instructor-Student and Student-Student Interactions with Mobile Interfaces and Summarization | http://www.aclweb.org/anthology/N/N15/N15-3004.pdf | author:Wencan Luo; Xiangmin Fan; Muhsin Menekse; Jingtao Wang; Diane Litman
-N15-3005 | RExtractor: a Robust Information Extractor | http://www.aclweb.org/anthology/N/N15/N15-3005.pdf | author:Vincent Kríž; Barbora Hladka
-N15-3006 | An AMR parser for English, French, German, Spanish and Japanese and a new AMR-annotated corpus | http://www.aclweb.org/anthology/N/N15/N15-3006.pdf | author:Lucy Vanderwende; Arul Menezes; Chris Quirk
-N15-3007 | ICE: Rapid Information Extraction Customization for NLP Novices | http://www.aclweb.org/anthology/N/N15/N15-3007.pdf | author:Yifan He; Ralph Grishman
-N15-3008 | AMRICA: an AMR Inspector for Cross-language Alignments | http://www.aclweb.org/anthology/N/N15/N15-3008.pdf | author:Naomi Saphra; Adam Lopez
-N15-3009 | Ckylark: A More Robust PCFG-LA Parser | http://www.aclweb.org/anthology/N/N15/N15-3009.pdf | author:Yusuke Oda; Graham Neubig; Sakriani Sakti; Tomoki Toda; Satoshi Nakamura
-N15-3010 | ELCO3: Entity Linking with Corpus Coherence Combining Open Source Annotators | http://www.aclweb.org/anthology/N/N15/N15-3010.pdf | author:Pablo Ruiz; Thierry Poibeau; Fréderique Mélanie
-N15-3011 | SETS: Scalable and Efficient Tree Search in Dependency Graphs | http://www.aclweb.org/anthology/N/N15/N15-3011.pdf | author:Juhani Luotolahti; Jenna Kanerva; Sampo Pyysalo; Filip Ginter
-N15-3012 | Visualizing Deep-Syntactic Parser Output | http://www.aclweb.org/anthology/N/N15/N15-3012.pdf | author:Juan Soler-Company; Miguel Ballesteros; Bernd Bohnet; Simon Mille; Leo Wanner
-N15-3013 | WOLFE: An NLP-friendly Declarative Machine Learning Stack | http://www.aclweb.org/anthology/N/N15/N15-3013.pdf | author:Sameer Singh; Tim Rocktäschel; Luke Hewitt; Jason Naradowsky; Sebastian Riedel
-N15-3014 | Lean Question Answering over Freebase from Scratch | http://www.aclweb.org/anthology/N/N15/N15-3014.pdf | author:Xuchen Yao
-N15-3015 | A Web Application for Automated Dialect Analysis | http://www.aclweb.org/anthology/N/N15/N15-3015.pdf | author:Sravana Reddy; James Stanford
-N15-3016 | An Open-source Framework for Multi-level Semantic Similarity Measurement | http://www.aclweb.org/anthology/N/N15/N15-3016.pdf | author:Mohammad Taher Pilehvar; Roberto Navigli
-N15-3017 | Brahmi-Net: A transliteration and script conversion system for languages of the Indian subcontinent | http://www.aclweb.org/anthology/N/N15/N15-3017.pdf | author:Anoop Kunchukuttan; Ratish Puduppully; Pushpak Bhattacharyya
-N15-3018 | A Concrete Chinese NLP Pipeline | http://www.aclweb.org/anthology/N/N15/N15-3018.pdf | author:Nanyun Peng; Francis Ferraro; Mo Yu; Nicholas Andrews; Jay DeYoung; Max Thomas; Matthew R. Gormley; Travis Wolfe; Craig Harman; Benjamin Van Durme; Mark Dredze
-N15-3019 | CroVeWA: Crosslingual Vector-Based Writing Assistance | http://www.aclweb.org/anthology/N/N15/N15-3019.pdf | author:Hubert Soyer; Goran Topić; Pontus Stenetorp; Akiko Aizawa
-N15-3020 | Online Readability and Text Complexity Analysis with TextEvaluator | http://www.aclweb.org/anthology/N/N15/N15-3020.pdf | author:Diane Napolitano; Kathleen Sheehan; Robert Mundkowsky
-N15-3021 | Natural Language Question Answering and Analytics for Diverse and Interlinked Datasets | http://www.aclweb.org/anthology/N/N15/N15-3021.pdf | author:Dezhao Song; Frank Schilder; Charese Smiley; Chris Brew
-N15-3022 | WriteAhead2: Mining Lexical Grammar Patterns for Assisted Writing | http://www.aclweb.org/anthology/N/N15/N15-3022.pdf | author:Jim Chang; Jason Chang
-N15-3023 | Question Answering System using Multiple Information Source and Open Type Answer Merge | http://www.aclweb.org/anthology/N/N15/N15-3023.pdf | author:Seonyeong Park; Soonchoul Kwon; Byungsoo Kim; Sangdo Han; Hyosup Shim; Gary Geunbae Lee
-N15-3024 | Using Word Semantics To Assist English as a Second Language Learners | http://www.aclweb.org/anthology/N/N15/N15-3024.pdf | author:Mahmoud Azab; Chris Hokamp; Rada Mihalcea
-N15-4001 | Hands-on Learning to Search for Structured Prediction | http://www.aclweb.org/anthology/N/N15/N15-4001.pdf | author:Hal Daumé III; John Langford; Kai-Wei Chang; He He; Sudha Rao
-N15-4002 | Crowdsourcing for NLP | http://www.aclweb.org/anthology/N/N15/N15-4002.pdf | author:Chris Callison-Burch; Lyle Ungar; Ellie Pavlick
-N15-4003 | The Logic of AMR: Practical, Unified, Graph-Based Sentence Semantics for NLP | http://www.aclweb.org/anthology/N/N15/N15-4003.pdf | author:Nathan Schneider; Jeffrey Flanigan; Tim O'Gorman
-N15-4004 | Deep Learning and Continuous Representations for Natural Language Processing | http://www.aclweb.org/anthology/N/N15/N15-4004.pdf | author:Wen-tau Yih; Xiaodong He; Jianfeng Gao
-N15-4005 | Social Media Predictive Analytics | http://www.aclweb.org/anthology/N/N15/N15-4005.pdf | author:Svitlana Volkova; Benjamin Van Durme; David Yarowsky; Yoram Bachrach
-N15-4006 | Getting the Roles Right: Using FrameNet in NLP | http://www.aclweb.org/anthology/N/N15/N15-4006.pdf | author:Collin Baker; Nathan Schneider; Miriam R L Petruck; Michael Ellsworth
+N15-1001 | Unsupervised Induction of Semantic Roles within a Reconstruction-Error Minimization Framework | http://www.aclweb.org/anthology/N/N15/N15-1001.pdf | category:paper author:Ivan Titov; Ehsan Khoddam
+N15-1002 | Predicate Argument Alignment using a Global Coherence Model | http://www.aclweb.org/anthology/N/N15/N15-1002.pdf | category:paper author:Travis Wolfe; Mark Dredze; Benjamin Van Durme
+N15-1003 | Improving unsupervised vector-space thematic fit evaluation via role-filler prototype clustering | http://www.aclweb.org/anthology/N/N15/N15-1003.pdf | category:paper author:Clayton Greenberg; Asad Sayeed; Vera Demberg
+N15-1004 | A Compositional and Interpretable Semantic Space | http://www.aclweb.org/anthology/N/N15/N15-1004.pdf | category:paper author:Alona Fyshe; Leila Wehbe; Partha P. Talukdar; Brian Murphy; Tom M. Mitchell
+N15-1005 | Randomized Greedy Inference for Joint Segmentation, POS Tagging and Dependency Parsing | http://www.aclweb.org/anthology/N/N15/N15-1005.pdf | category:paper author:Yuan Zhang; Chengtao Li; Regina Barzilay; Kareem Darwish
+N15-1006 | An Incremental Algorithm for Transition-based CCG Parsing | http://www.aclweb.org/anthology/N/N15/N15-1006.pdf | category:paper author:Bharat Ram Ambati; Tejaswini Deoskar; Mark Johnson; Mark Steedman
+N15-1007 | Because Syntax Does Matter: Improving Predicate-Argument Structures Parsing with Syntactic Features | http://www.aclweb.org/anthology/N/N15/N15-1007.pdf | category:paper author:Corentin Ribeyre; Eric Villemonte de la Clergerie; Djamé Seddah
+N15-1008 | A Hybrid Generative/Discriminative Approach To Citation Prediction | http://www.aclweb.org/anthology/N/N15/N15-1008.pdf | category:paper author:Chris Tanner; Eugene Charniak
+N15-1009 | Weakly Supervised Slot Tagging with Partially Labeled Sequences from Web Search Click Logs | http://www.aclweb.org/anthology/N/N15/N15-1009.pdf | category:paper author:Young-Bum Kim; Minwoo Jeong; Karl Stratos; Ruhi Sarikaya
+N15-1010 | Not All Character N-grams Are Created Equal: A Study in Authorship Attribution | http://www.aclweb.org/anthology/N/N15/N15-1010.pdf | category:paper author:Upendra Sapkota; Steven Bethard; Manuel Montes; Thamar Solorio
+N15-1011 | Effective Use of Word Order for Text Categorization with Convolutional Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1011.pdf | category:paper author:Rie Johnson; Tong Zhang
+N15-1012 | Transition-Based Syntactic Linearization | http://www.aclweb.org/anthology/N/N15/N15-1012.pdf | category:paper author:Yijia Liu; Yue Zhang; Wanxiang Che; Bing Qin
+N15-1013 | Extractive Summarisation Based on Keyword Profile and Language Model | http://www.aclweb.org/anthology/N/N15/N15-1013.pdf | category:paper author:Han Xu; Eric Martin; Ashesh Mahidadia
+N15-1014 | HEADS: Headline Generation as Sequence Prediction Using an Abstract Feature-Rich Space | http://www.aclweb.org/anthology/N/N15/N15-1014.pdf | category:paper author:Carlos A. Colmenares; Marina Litvak; Amin Mantrach; Fabrizio Silvestri
+N15-1015 | Whatâs Cookinâ? Interpreting Cooking Videos using Text, Speech and Vision | http://www.aclweb.org/anthology/N/N15/N15-1015.pdf | category:paper author:Jonathan Malmaud; Jonathan Huang; Vivek Rathod; Nicholas Johnston; Andrew Rabinovich; Kevin Murphy
+N15-1016 | Combining Language and Vision with a Multimodal Skip-gram Model | http://www.aclweb.org/anthology/N/N15/N15-1016.pdf | category:paper author:Angeliki Lazaridou; Nghia The Pham; Marco Baroni
+N15-1017 | Discriminative Unsupervised Alignment of Natural Language Instructions with Corresponding Video Segments | http://www.aclweb.org/anthology/N/N15/N15-1017.pdf | category:paper author:Iftekhar Naim; Young C. Song; Qiguang Liu; Liang Huang; Henry Kautz; Jiebo Luo; Daniel Gildea
+N15-1018 | TopicCheck: Interactive Alignment for Assessing Topic Model Stability | http://www.aclweb.org/anthology/N/N15/N15-1018.pdf | category:paper author:Jason Chuang; Margaret E. Roberts; Brandon M. Stewart; Rebecca Weiss; Dustin Tingley; Justin Grimmer; Jeffrey Heer
+N15-1019 | Inferring latent attributes of Twitter users with label regularization | http://www.aclweb.org/anthology/N/N15/N15-1019.pdf | category:paper author:Ehsan Mohammady Ardehaly; Aron Culotta
+N15-1020 | A Neural Network Approach to Context-Sensitive Generation of Conversational Responses | http://www.aclweb.org/anthology/N/N15/N15-1020.pdf | category:paper author:Alessandro Sordoni; Michel Galley; Michael Auli; Chris Brockett; Yangfeng Ji; Margaret Mitchell; Jian-Yun Nie; Jianfeng Gao; Bill Dolan
+N15-1021 | How to Make a Frenemy: Multitape FSTs for Portmanteau Generation | http://www.aclweb.org/anthology/N/N15/N15-1021.pdf | category:paper author:Aliya Deri; Kevin Knight
+N15-1022 | Aligning Sentences from Standard Wikipedia to Simple Wikipedia | http://www.aclweb.org/anthology/N/N15/N15-1022.pdf | category:paper author:William Hwang; Hannaneh Hajishirzi; Mari Ostendorf; Wei Wu
+N15-1023 | Inducing Lexical Style Properties for Paraphrase and Genre Differentiation | http://www.aclweb.org/anthology/N/N15/N15-1023.pdf | category:paper author:Ellie Pavlick; Ani Nenkova
+N15-1024 | Entity Linking for Spoken Language | http://www.aclweb.org/anthology/N/N15/N15-1024.pdf | category:paper author:Adrian Benton; Mark Dredze
+N15-1025 | Spinning Straw into Gold: Using Free Text to Train Monolingual Alignment Models for Non-factoid Question Answering | http://www.aclweb.org/anthology/N/N15/N15-1025.pdf | category:paper author:Rebecca Sharp; Peter Jansen; Mihai Surdeanu; Peter Clark
+N15-1026 | Personalized Page Rank for Named Entity Disambiguation | http://www.aclweb.org/anthology/N/N15/N15-1026.pdf | category:paper author:Maria Pershina; Yifan He; Ralph Grishman
+N15-1027 | When and why are log-linear models self-normalizing? | http://www.aclweb.org/anthology/N/N15/N15-1027.pdf | category:paper author:Jacob Andreas; Dan Klein
+N15-1028 | Deep Multilingual Correlation for Improved Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1028.pdf | category:paper author:Ang Lu; Weiran Wang; Mohit Bansal; Kevin Gimpel; Karen Livescu
+N15-1029 | Disfluency Detection with a Semi-Markov Model and Prosodic Features | http://www.aclweb.org/anthology/N/N15/N15-1029.pdf | category:paper author:James Ferguson; Greg Durrett; Dan Klein
+N15-1030 | Empty Category Detection With Joint Context-Label Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1030.pdf | category:paper author:Xun Wang; Katsuhito Sudoh; Masaaki Nagata
+N15-1031 | Incrementally Tracking Reference in Human/Human Dialogue Using Linguistic and Extra-Linguistic Information | http://www.aclweb.org/anthology/N/N15/N15-1031.pdf | category:paper author:Casey Kennington; Ryu Iida; Takenobu Tokunaga; David Schlangen
+N15-1032 | Digital Leafleting: Extracting Structured Data from Multimedia Online Flyers | http://www.aclweb.org/anthology/N/N15/N15-1032.pdf | category:paper author:Emilia Apostolova; Payam Pourashraf; Jeffrey Sack
+N15-1033 | Multi-Target Machine Translation with Multi-Synchronous Context-free Grammars | http://www.aclweb.org/anthology/N/N15/N15-1033.pdf | category:paper author:Graham Neubig; Philip Arthur; Kevin Duh
+N15-1034 | Sign constraints on feature weights improve a joint model of word segmentation and phonology | http://www.aclweb.org/anthology/N/N15/N15-1034.pdf | category:paper author:Mark Johnson; Joe Pater; Robert Staubs; Emmanuel Dupoux
+N15-1035 | Semi-Supervised Word Sense Disambiguation Using Word Embeddings in General and Specific Domains | http://www.aclweb.org/anthology/N/N15/N15-1035.pdf | category:paper author:Kaveh Taghipour; Hwee Tou Ng
+N15-1036 | Continuous Space Representations of Linguistic Typology and their Application to Phylogenetic Inference | http://www.aclweb.org/anthology/N/N15/N15-1036.pdf | category:paper author:Yugo Murawaki
+N15-1037 | Interpreting Compound Noun Phrases Using Web Search Queries | http://www.aclweb.org/anthology/N/N15/N15-1037.pdf | category:paper author:Marius Pasca
+N15-1038 | Lexicon-Free Conversational Speech Recognition with Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1038.pdf | category:paper author:Andrew Maas; Ziang Xie; Dan Jurafsky; Andrew Ng
+N15-1039 | I Can Has Cheezburger? A Nonparanormal Approach to Combining Textual and Visual Information for Predicting and Generating Popular Meme Descriptions | http://www.aclweb.org/anthology/N/N15/N15-1039.pdf | category:paper author:William Yang Wang; Miaomiao Wen
+N15-1040 | A Transition-based Algorithm for AMR Parsing | http://www.aclweb.org/anthology/N/N15/N15-1040.pdf | category:paper author:Chuan Wang; Nianwen Xue; Sameer Pradhan
+N15-1041 | The Geometry of Statistical Machine Translation | http://www.aclweb.org/anthology/N/N15/N15-1041.pdf | category:paper author:Aurelien Waite; Bill Byrne
+N15-1042 | Data-driven sentence generation with non-isomorphic trees | http://www.aclweb.org/anthology/N/N15/N15-1042.pdf | category:paper author:Miguel Ballesteros; Bernd Bohnet; Simon Mille; Leo Wanner
+N15-1043 | Latent Domain Word Alignment for Heterogeneous Corpora | http://www.aclweb.org/anthology/N/N15/N15-1043.pdf | category:paper author:Hoang Cuong; Khalil Sima'an
+N15-1044 | Extracting Human Temporal Orientation from Facebook Language | http://www.aclweb.org/anthology/N/N15/N15-1044.pdf | category:paper author:H. Andrew Schwartz; Gregory Park; Maarten Sap; Evan Weingarten; Johannes Eichstaedt; Margaret Kern; David Stillwell; Michal Kosinski; Jonah Berger; Martin Seligman; Lyle Ungar
+N15-1045 | An In-depth Analysis of the Effect of Text Normalization in Social Media | http://www.aclweb.org/anthology/N/N15/N15-1045.pdf | category:paper author:Tyler Baldwin; Yunyao Li
+N15-1046 | Using Summarization to Discover Argument Facets in Online Idealogical Dialog | http://www.aclweb.org/anthology/N/N15/N15-1046.pdf | category:paper author:Amita Misra; Pranav Anand; Jean E. Fox Tree; Marilyn Walker
+N15-1047 | Active Learning with Rationales for Text Classification | http://www.aclweb.org/anthology/N/N15/N15-1047.pdf | category:paper author:Manali Sharma; Di Zhuang; Mustafa Bilgic
+N15-1048 | Inferring Temporally-Anchored Spatial Knowledge from Semantic Roles | http://www.aclweb.org/anthology/N/N15/N15-1048.pdf | category:paper author:Eduardo Blanco; Alakananda Vempala
+N15-1049 | A Dynamic Programming Algorithm for Tree Trimming-based Text Summarization | http://www.aclweb.org/anthology/N/N15/N15-1049.pdf | category:paper author:Masaaki Nishino; Norihito Yasuda; Tsutomu Hirao; Shin-ichi Minato; Masaaki Nagata
+N15-1050 | Modeling Word Meaning in Context with Substitute Vectors | http://www.aclweb.org/anthology/N/N15/N15-1050.pdf | category:paper author:Oren Melamud; Ido Dagan; Jacob Goldberger
+N15-1051 | Corpus-based discovery of semantic intensity scales | http://www.aclweb.org/anthology/N/N15/N15-1051.pdf | category:paper author:Chaitanya Shivade; Marie-Catherine de Marneffe; Eric Fosler-Lussier; Albert M. Lai
+N15-1052 | Dialogue focus tracking for zero pronoun resolution | http://www.aclweb.org/anthology/N/N15/N15-1052.pdf | category:paper author:Sudha Rao; Allyson Ettinger; Hal Daumé III; Philip Resnik
+N15-1053 | Déjà Image-Captions: A Corpus of Expressive Descriptions in Repetition | http://www.aclweb.org/anthology/N/N15/N15-1053.pdf | category:paper author:Jianfu Chen; Polina Kuznetsova; David Warren; Yejin Choi
+N15-1054 | Inferring Missing Entity Type Instances for Knowledge Base Completion: New Dataset and Methods | http://www.aclweb.org/anthology/N/N15/N15-1054.pdf | category:paper author:Arvind Neelakantan; Ming-Wei Chang
+N15-1055 | Robust Morphological Tagging with Word Representations | http://www.aclweb.org/anthology/N/N15/N15-1055.pdf | category:paper author:Thomas Müller; Hinrich Schuetze
+N15-1056 | English orthography is not "close to optimal" | http://www.aclweb.org/anthology/N/N15/N15-1056.pdf | category:paper author:Garrett Nicolai; Grzegorz Kondrak
+N15-1057 | LCCT: A Semi-supervised Model for Sentiment Classification | http://www.aclweb.org/anthology/N/N15/N15-1057.pdf | category:paper author:Min Yang; Wenting Tu; Ziyu Lu; Wenpeng Yin; Kam-Pui Chow
+N15-1058 | Multiview LSA: Representation Learning via Generalized CCA | http://www.aclweb.org/anthology/N/N15/N15-1058.pdf | category:paper author:Pushpendre Rastogi; Benjamin Van Durme; Raman Arora
+N15-1059 | NASARI: a Novel Approach to a Semantically-Aware Representation of Items | http://www.aclweb.org/anthology/N/N15/N15-1059.pdf | category:paper author:José Camacho-Collados; Mohammad Taher Pilehvar; Roberto Navigli
+N15-1060 | Towards a standard evaluation method for grammatical error detection and correction | http://www.aclweb.org/anthology/N/N15/N15-1060.pdf | category:paper author:Mariano Felice; Ted Briscoe
+N15-1061 | Using Zero-Resource Spoken Term Discovery for Ranked Retrieval | http://www.aclweb.org/anthology/N/N15/N15-1061.pdf | category:paper author:Jerome White; Douglas Oard; Aren Jansen; Jiaul Paik; Rashmi Sankepally
+N15-1062 | Constraint-Based Models of Lexical Borrowing | http://www.aclweb.org/anthology/N/N15/N15-1062.pdf | category:paper author:Yulia Tsvetkov; Waleed Ammar; Chris Dyer
+N15-1063 | Model Invertibility Regularization: Sequence Alignment With or Without Parallel Data | http://www.aclweb.org/anthology/N/N15/N15-1063.pdf | category:paper author:Tomer Levinboim; Ashish Vaswani; David Chiang
+N15-1064 | Jointly Modeling Inter-Slot Relations by Random Walk on Knowledge Graphs for Unsupervised Spoken Language Understanding | http://www.aclweb.org/anthology/N/N15/N15-1064.pdf | category:paper author:Yun-Nung Chen; William Yang Wang; Alexander Rudnicky
+N15-1065 | Expanding Paraphrase Lexicons by Exploiting Lexical Variants | http://www.aclweb.org/anthology/N/N15/N15-1065.pdf | category:paper author:Atsushi Fujita; Pierre Isabelle
+N15-1066 | Diamonds in the Rough: Event Extraction from Imperfect Microblog Data | http://www.aclweb.org/anthology/N/N15/N15-1066.pdf | category:paper author:Ander Intxaurrondo; Eneko Agirre; Oier Lopez de Lacalle; Mihai Surdeanu
+N15-1067 | Unsupervised Dependency Parsing: Let's Use Supervised Parsers | http://www.aclweb.org/anthology/N/N15/N15-1067.pdf | category:paper author:Phong Le; Willem Zuidema
+N15-1068 | A Linear-Time Transition System for Crossing Interval Trees | http://www.aclweb.org/anthology/N/N15/N15-1068.pdf | category:paper author:Emily Pitler; Ryan McDonald
+N15-1069 | Unsupervised Multi-Domain Adaptation with Feature Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1069.pdf | category:paper author:Yi Yang; Jacob Eisenstein
+N15-1070 | Ontologically Grounded Multi-sense Representation Learning for Semantic Vector Space Models | http://www.aclweb.org/anthology/N/N15/N15-1070.pdf | category:paper author:Sujay Kumar Jauhar; Chris Dyer; Eduard Hovy
+N15-1071 | Subsentential Sentiment on a Shoestring: A Crosslingual Analysis of Compositional Classification | http://www.aclweb.org/anthology/N/N15/N15-1071.pdf | category:paper author:Michael Haas; Yannick Versley
+N15-1072 | Cost Optimization in Crowdsourcing Translation: Low cost translations made even cheaper | http://www.aclweb.org/anthology/N/N15/N15-1072.pdf | category:paper author:Mingkun Gao; Wei Xu; Chris Callison-Burch
+N15-1073 | Multitask Learning for Adaptive Quality Estimation of Automatically Transcribed Utterances | http://www.aclweb.org/anthology/N/N15/N15-1073.pdf | category:paper author:José G. C. de Souza; Hamed Zamani; Matteo Negri; Marco Turchi; Falavigna Daniele
+N15-1074 | Incorporating Word Correlation Knowledge into Topic Modeling | http://www.aclweb.org/anthology/N/N15/N15-1074.pdf | category:paper author:Pengtao Xie; Diyi Yang; Eric Xing
+N15-1075 | The Unreasonable Effectiveness of Word Representations for Twitter Named Entity Recognition | http://www.aclweb.org/anthology/N/N15/N15-1075.pdf | category:paper author:Colin Cherry; Hongyu Guo
+N15-1076 | Is Your Anchor Going Up or Down? Fast and Accurate Supervised Topic Models | http://www.aclweb.org/anthology/N/N15/N15-1076.pdf | category:paper author:Thang Nguyen; Jordan Boyd-Graber; Jeffrey Lund; Kevin Seppi; Eric Ringger
+N15-1077 | Grounded Semantic Parsing for Complex Knowledge Extraction | http://www.aclweb.org/anthology/N/N15/N15-1077.pdf | category:paper author:Ankur P. Parikh; Hoifung Poon; Kristina Toutanova
+N15-1078 | Sentiment after Translation: A Case-Study on Arabic Social Media Posts | http://www.aclweb.org/anthology/N/N15/N15-1078.pdf | category:paper author:Mohammad Salameh; Saif Mohammad; Svetlana Kiritchenko
+N15-1079 | Using External Resources and Joint Learning for Bigram Weighting in ILP-Based Multi-Document Summarization | http://www.aclweb.org/anthology/N/N15/N15-1079.pdf | category:paper author:Chen Li; Yang Liu; Lin Zhao
+N15-1080 | Transforming Dependencies into Phrase Structures | http://www.aclweb.org/anthology/N/N15/N15-1080.pdf | category:paper author:Lingpeng Kong; Alexander M. Rush; Noah A. Smith
+N15-1081 | Improving the Inference of Implicit Discourse Relations via Classifying Explicit Discourse Connectives | http://www.aclweb.org/anthology/N/N15/N15-1081.pdf | category:paper author:Attapol Rutherford; Nianwen Xue
+N15-1082 | Solving Hard Coreference Problems | http://www.aclweb.org/anthology/N/N15/N15-1082.pdf | category:paper author:Haoruo Peng; Daniel Khashabi; Dan Roth
+N15-1083 | Pragmatic Neural Language Modelling in Machine Translation | http://www.aclweb.org/anthology/N/N15/N15-1083.pdf | category:paper author:Paul Baltescu; Phil Blunsom
+N15-1084 | Key Female Characters in Film Have More to Talk About Besides Men: Automating the Bechdel Test | http://www.aclweb.org/anthology/N/N15/N15-1084.pdf | category:paper author:Apoorv Agarwal; Jiehan Zheng; Shruti Kamath; Sriramkumar Balasubramanian; Shirin Ann Dey
+N15-1085 | Semantic Grounding in Dialogue for Complex Problem Solving | http://www.aclweb.org/anthology/N/N15/N15-1085.pdf | category:paper author:Xiaolong Li; Kristy Boyer
+N15-1086 | Learning Knowledge Graphs for Question Answering through Conversational Dialog | http://www.aclweb.org/anthology/N/N15/N15-1086.pdf | category:paper author:Ben Hixon; Peter Clark; Hannaneh Hajishirzi
+N15-1087 | Sentence segmentation of aphasic speech | http://www.aclweb.org/anthology/N/N15/N15-1087.pdf | category:paper author:Kathleen C. Fraser; Naama Ben-David; Graeme Hirst; Naida Graham; Elizabeth Rochon
+N15-1088 | Semantic parsing of speech using grammars learned with weak supervision | http://www.aclweb.org/anthology/N/N15/N15-1088.pdf | category:paper author:Judith Gaspers; Philipp Cimiano; Britta Wrede
+N15-1089 | Early Gains Matter: A Case for Preferring Generative over Discriminative Crowdsourcing Models | http://www.aclweb.org/anthology/N/N15/N15-1089.pdf | category:paper author:Paul Felt; Kevin Black; Eric Ringger; Kevin Seppi; Robbie Haertel
+N15-1090 | Optimizing Multivariate Performance Measures for Learning Relation Extraction Models | http://www.aclweb.org/anthology/N/N15/N15-1090.pdf | category:paper author:Gholamreza Haffari; Ajay Nagesh; Ganesh Ramakrishnan
+N15-1091 | Convolutional Neural Network for Paraphrase Identification | http://www.aclweb.org/anthology/N/N15/N15-1091.pdf | category:paper author:Wenpeng Yin; Hinrich Schütze
+N15-1092 | Representation Learning Using Multi-Task Deep Neural Networks for Semantic Classification and Information Retrieval | http://www.aclweb.org/anthology/N/N15/N15-1092.pdf | category:paper author:Xiaodong Liu; Jianfeng Gao; Xiaodong He; Li Deng; Kevin Duh; Ye-Yi Wang
+N15-1093 | Inflection Generation as Discriminative String Transduction | http://www.aclweb.org/anthology/N/N15/N15-1093.pdf | category:paper author:Garrett Nicolai; Colin Cherry; Grzegorz Kondrak
+N15-1094 | Penalized Expectation Propagation for Graphical Models over Strings | http://www.aclweb.org/anthology/N/N15/N15-1094.pdf | category:paper author:Ryan Cotterell; Jason Eisner
+N15-1095 | Joint Generation of Transliterations from Multiple Representations | http://www.aclweb.org/anthology/N/N15/N15-1095.pdf | category:paper author:Lei Yao; Grzegorz Kondrak
+N15-1096 | Prosodic boundary information helps unsupervised word segmentation | http://www.aclweb.org/anthology/N/N15/N15-1096.pdf | category:paper author:Bogdan Ludusan; Gabriel Synnaeve; Emmanuel Dupoux
+N15-1097 | So similar and yet incompatible: Toward the automated identification of semantically compatible words | http://www.aclweb.org/anthology/N/N15/N15-1097.pdf | category:paper author:Germán Kruszewski; Marco Baroni
+N15-1098 | Do Supervised Distributional Methods Really Learn Lexical Inference Relations? | http://www.aclweb.org/anthology/N/N15/N15-1098.pdf | category:paper author:Omer Levy; Steffen Remus; Chris Biemann; Ido Dagan
+N15-1099 | A Word Embedding Approach to Predicting the Compositionality of Multiword Expressions | http://www.aclweb.org/anthology/N/N15/N15-1099.pdf | category:paper author:Bahar Salehi; Paul Cook; Timothy Baldwin
+N15-1100 | Word Embedding-based Antonym Detection using Thesauri and Distributional Information | http://www.aclweb.org/anthology/N/N15/N15-1100.pdf | category:paper author:Masataka Ono; Makoto Miwa; Yutaka Sasaki
+N15-1101 | A Comparison of Word Similarity Performance Using Explanatory and Non-explanatory Texts | http://www.aclweb.org/anthology/N/N15/N15-1101.pdf | category:paper author:Lifeng Jin; William Schuler
+N15-1102 | Morphological Modeling for Machine Translation of English-Iraqi Arabic Spoken Dialogs | http://www.aclweb.org/anthology/N/N15/N15-1102.pdf | category:paper author:Katrin Kirchhoff; Yik-Cheung Tam; Colleen Richey; Wen Wang
+N15-1103 | Continuous Adaptation to User Feedback for Statistical Machine Translation | http://www.aclweb.org/anthology/N/N15/N15-1103.pdf | category:paper author:Frédéric Blain; Fethi Bougares; Amir Hazem; Loïc Barrault; Holger Schwenk
+N15-1104 | Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation | http://www.aclweb.org/anthology/N/N15/N15-1104.pdf | category:paper author:Chao Xing; Dong Wang; Chao Liu; Yiye Lin
+N15-1105 | Fast and Accurate Preordering for SMT using Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1105.pdf | category:paper author:Adrià de Gispert; Gonzalo Iglesias; Bill Byrne
+N15-1106 | APRO: All-Pairs Ranking Optimization for MT Tuning | http://www.aclweb.org/anthology/N/N15/N15-1106.pdf | category:paper author:Markus Dreyer; Yuanzhe Dong
+N15-1107 | Paradigm classification in supervised learning of morphology | http://www.aclweb.org/anthology/N/N15/N15-1107.pdf | category:paper author:Malin Ahlberg; Markus Forsberg; Mans Hulden
+N15-1108 | Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice | http://www.aclweb.org/anthology/N/N15/N15-1108.pdf | category:paper author:Haitao Mi; Liang Huang
+N15-1109 | Unsupervised Code-Switching for Multilingual Historical Document Transcription | http://www.aclweb.org/anthology/N/N15/N15-1109.pdf | category:paper author:Dan Garrette; Hannah Alpert-Abrams; Taylor Berg-Kirkpatrick; Dan Klein
+N15-1110 | Matching Citation Text and Cited Spans in Biomedical Literature: a Search-Oriented Approach | http://www.aclweb.org/anthology/N/N15/N15-1110.pdf | category:paper author:Arman Cohan; Luca Soldaini; Nazli Goharian
+N15-1111 | Effective Feature Integration for Automated Short Answer Scoring | http://www.aclweb.org/anthology/N/N15/N15-1111.pdf | category:paper author:Keisuke Sakaguchi; Michael Heilman; Nitin Madnani
+N15-1112 | Socially-Informed Timeline Generation for Complex Events | http://www.aclweb.org/anthology/N/N15/N15-1112.pdf | category:paper author:Lu Wang; Claire Cardie; Galen Marchetti
+N15-1113 | Movie Script Summarization as Graph-based Scene Extraction | http://www.aclweb.org/anthology/N/N15/N15-1113.pdf | category:paper author:Philip John Gorinski; Mirella Lapata
+N15-1114 | Toward Abstractive Summarization Using Semantic Representations | http://www.aclweb.org/anthology/N/N15/N15-1114.pdf | category:paper author:Fei Liu; Jeffrey Flanigan; Sam Thomson; Norman Sadeh; Noah A. Smith
+N15-1115 | Encoding World Knowledge in the Evaluation of Local Coherence | http://www.aclweb.org/anthology/N/N15/N15-1115.pdf | category:paper author:Muyu Zhang; Vanessa Wei Feng; Bing Qin; Graeme Hirst; Ting Liu; Jingwen Huang
+N15-1116 | Chinese Event Coreference Resolution: An Unsupervised Probabilistic Model Rivaling Supervised Resolvers | http://www.aclweb.org/anthology/N/N15/N15-1116.pdf | category:paper author:Chen Chen; Vincent Ng
+N15-1117 | Removing the Training Wheels: A Coreference Dataset that Entertains Humans and Challenges Computers | http://www.aclweb.org/anthology/N/N15/N15-1117.pdf | category:paper author:Anupam Guha; Mohit Iyyer; Danny Bouman; Jordan Boyd-Graber
+N15-1118 | Injecting Logical Background Knowledge into Embeddings for Relation Extraction | http://www.aclweb.org/anthology/N/N15/N15-1118.pdf | category:paper author:Tim Rocktäschel; Sameer Singh; Sebastian Riedel
+N15-1119 | Unsupervised Entity Linking with Abstract Meaning Representation | http://www.aclweb.org/anthology/N/N15/N15-1119.pdf | category:paper author:Xiaoman Pan; Taylor Cassidy; Ulf Hermjakob; Heng Ji; Kevin Knight
+N15-1120 | Idest: Learning a Distributed Representation for Event Patterns | http://www.aclweb.org/anthology/N/N15/N15-1120.pdf | category:paper author:Sebastian Krause; Enrique Alfonseca; Katja Filippova; Daniele Pighin
+N15-1121 | High-Order Low-Rank Tensors for Semantic Role Labeling | http://www.aclweb.org/anthology/N/N15/N15-1121.pdf | category:paper author:Tao Lei; Yuan Zhang; Lluís Màrquez; Alessandro Moschitti; Regina Barzilay
+N15-1122 | Lexical Event Ordering with an Edge-Factored Model | http://www.aclweb.org/anthology/N/N15/N15-1122.pdf | category:paper author:Omri Abend; Shay B. Cohen; Mark Steedman
+N15-1123 | Bag-of-Words Forced Decoding for Cross-Lingual Information Retrieval | http://www.aclweb.org/anthology/N/N15/N15-1123.pdf | category:paper author:Felix Hieber; Stefan Riezler
+N15-1124 | Accurate Evaluation of Segment-level Machine Translation Metrics | http://www.aclweb.org/anthology/N/N15/N15-1124.pdf | category:paper author:Yvette Graham; Timothy Baldwin; Nitika Mathur
+N15-1125 | Leveraging Small Multilingual Corpora for SMT Using Many Pivot Languages | http://www.aclweb.org/anthology/N/N15/N15-1125.pdf | category:paper author:Raj Dabre; Fabien Cromieres; Sadao Kurohashi; Pushpak Bhattacharyya
+N15-1126 | Why Read if You Can Scan? Trigger Scoping Strategy for Biographical Fact Extraction | http://www.aclweb.org/anthology/N/N15/N15-1126.pdf | category:paper author:Dian Yu; Heng Ji; Sujian Li; Chin-Yew Lin
+N15-1127 | Lachmannian Archetype Reconstruction for Ancient Manuscript Corpora | http://www.aclweb.org/anthology/N/N15/N15-1127.pdf | category:paper author:Armin Hoenen
+N15-1128 | Distributed Representations of Words to Guide Bootstrapped Entity Classifiers | http://www.aclweb.org/anthology/N/N15/N15-1128.pdf | category:paper author:Sonal Gupta; Christopher D. Manning
+N15-1129 | Multi-Task Word Alignment Triangulation for Low-Resource Languages | http://www.aclweb.org/anthology/N/N15/N15-1129.pdf | category:paper author:Tomer Levinboim; David Chiang
+N15-1130 | Automatic cognate identification with gap-weighted string subsequences. | http://www.aclweb.org/anthology/N/N15/N15-1130.pdf | category:paper author:Taraka Rama
+N15-1131 | Short Text Understanding by Leveraging Knowledge into Topic Model | http://www.aclweb.org/anthology/N/N15/N15-1131.pdf | category:paper author:Shansong Yang; Weiming Lu; Dezhi Yang; Liang Yao; Baogang Wei
+N15-1132 | Unsupervised Most Frequent Sense Detection using Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1132.pdf | category:paper author:Sudha Bhingardive; Dhirendra Singh; Rudramurthy V; Hanumant Redkar; Pushpak Bhattacharyya
+N15-1133 | Chain Based RNN for Relation Classification | http://www.aclweb.org/anthology/N/N15/N15-1133.pdf | category:paper author:Javid Ebrahimi; Dejing Dou
+N15-1134 | LR Parsing for LCFRS | http://www.aclweb.org/anthology/N/N15/N15-1134.pdf | category:paper author:Laura Kallmeyer; Wolfgang Maier
+N15-1135 | Mining for unambiguous instances to adapt part-of-speech taggers to new domains | http://www.aclweb.org/anthology/N/N15/N15-1135.pdf | category:paper author:Dirk Hovy; Barbara Plank; Héctor Martínez Alonso; Anders Søgaard
+N15-1136 | Clustering Sentences with Density Peaks for Multi-document Summarization | http://www.aclweb.org/anthology/N/N15/N15-1136.pdf | category:paper author:Yang Zhang; Yunqing Xia; Yi Liu; Wenmin Wang
+N15-1137 | Development of the Multilingual Semantic Annotation System | http://www.aclweb.org/anthology/N/N15/N15-1137.pdf | category:paper author:Scott Piao; Francesca Bianchi; Carmen Dayrell; Angela D'Egidio; Paul Rayson
+N15-1138 | Unsupervised Sparse Vector Densification for Short Text Similarity | http://www.aclweb.org/anthology/N/N15/N15-1138.pdf | category:paper author:Yangqiu Song; Dan Roth
+N15-1139 | #WhyIStayed, #WhyILeft: Microblogging to Make Sense of Domestic Abuse | http://www.aclweb.org/anthology/N/N15/N15-1139.pdf | category:paper author:Nicolas Schrading; Cecilia Ovesdotter Alm; Raymond Ptucha; Christopher Homan
+N15-1140 | Morphological Word-Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1140.pdf | category:paper author:Ryan Cotterell; Hinrich Schütze
+N15-1141 | Recognizing Social Constructs from Textual Conversation | http://www.aclweb.org/anthology/N/N15/N15-1141.pdf | category:paper author:Somak Aditya; Chitta Baral; Nguyen Ha Vo; Joohyung Lee; Jieping Ye; Zaw Naung; Barry Lumpkin; Jenny Hastings; Richard Scherl; Dawn M. Sweet; Daniela Inclezan
+N15-1142 | Two/Too Simple Adaptations of Word2Vec for Syntax Problems | http://www.aclweb.org/anthology/N/N15/N15-1142.pdf | category:paper author:Wang Ling; Chris Dyer; Alan W Black; Isabel Trancoso
+N15-1143 | Estimating Numerical Attributes by Bringing Together Fragmentary Clues | http://www.aclweb.org/anthology/N/N15/N15-1143.pdf | category:paper author:Hiroya Takamura; Jun'ichi Tsujii
+N15-1144 | Unsupervised POS Induction with Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1144.pdf | category:paper author:Chu-Cheng Lin; Waleed Ammar; Chris Dyer; Lori Levin
+N15-1145 | Improving Update Summarization via Supervised ILP and Sentence Reranking | http://www.aclweb.org/anthology/N/N15/N15-1145.pdf | category:paper author:Chen Li; Yang Liu; Lin Zhao
+N15-1146 | MPQA 3.0: An Entity/Event-Level Sentiment Corpus | http://www.aclweb.org/anthology/N/N15/N15-1146.pdf | category:paper author:Lingjia Deng; Janyce Wiebe
+N15-1147 | Everyone Likes Shopping! Multi-class Product Categorization for e-Commerce | http://www.aclweb.org/anthology/N/N15/N15-1147.pdf | category:paper author:Zornitsa Kozareva
+N15-1148 | GPU-Friendly Local Regression for Voice Conversion | http://www.aclweb.org/anthology/N/N15/N15-1148.pdf | category:paper author:Taylor Berg-Kirkpatrick; Dan Klein
+N15-1149 | Response-based Learning for Machine Translation of Open-domain Database Queries | http://www.aclweb.org/anthology/N/N15/N15-1149.pdf | category:paper author:Carolin Haas; Stefan Riezler
+N15-1150 | Context-Dependent Automatic Response Generation Using Statistical Machine Translation Techniques | http://www.aclweb.org/anthology/N/N15/N15-1150.pdf | category:paper author:Andrew Shin; Ryohei Sasano; Hiroya Takamura; Manabu Okumura
+N15-1151 | Multilingual Open Relation Extraction Using Cross-lingual Projection | http://www.aclweb.org/anthology/N/N15/N15-1151.pdf | category:paper author:Manaal Faruqui; Shankar Kumar
+N15-1152 | Learning to parse with IAA-weighted loss | http://www.aclweb.org/anthology/N/N15/N15-1152.pdf | category:paper author:Héctor Martínez Alonso; Barbara Plank; Arne Skjærholt; Anders Søgaard
+N15-1153 | Exploiting Text and Network Context for Geolocation of Social Media Users | http://www.aclweb.org/anthology/N/N15/N15-1153.pdf | category:paper author:Afshin Rahimi; Duy Vu; Trevor Cohn; Timothy Baldwin
+N15-1154 | Discriminative Phrase Embedding for Paraphrase Identification | http://www.aclweb.org/anthology/N/N15/N15-1154.pdf | category:paper author:Wenpeng Yin; Hinrich Schütze
+N15-1155 | Combining Word Embeddings and Feature Embeddings for Fine-grained Relation Extraction | http://www.aclweb.org/anthology/N/N15/N15-1155.pdf | category:paper author:Mo Yu; Matthew R. Gormley; Mark Dredze
+N15-1156 | CASSA: A Context-Aware Synonym Simplification Algorithm | http://www.aclweb.org/anthology/N/N15/N15-1156.pdf | category:paper author:Ricardo Baeza-Yates; Luz Rello; Julia Dembowski
+N15-1157 | Simple task-specific bilingual word embeddings | http://www.aclweb.org/anthology/N/N15/N15-1157.pdf | category:paper author:Stephan Gouws; Anders Søgaard
+N15-1158 | Sampling Techniques for Streaming Cross Document Coreference Resolution | http://www.aclweb.org/anthology/N/N15/N15-1158.pdf | category:paper author:Luke Shrimpton; Victor Lavrenko; Miles Osborne
+N15-1159 | On the Automatic Learning of Sentiment Lexicons | http://www.aclweb.org/anthology/N/N15/N15-1159.pdf | category:paper author:Aliaksei Severyn; Alessandro Moschitti
+N15-1160 | Large-Scale Native Language Identification with Cross-Corpus Evaluation | http://www.aclweb.org/anthology/N/N15/N15-1160.pdf | category:paper author:Shervin Malmasi; Mark Dras
+N15-1161 | Unediting: Detecting Disfluencies Without Careful Transcripts | http://www.aclweb.org/anthology/N/N15/N15-1161.pdf | category:paper author:Victoria Zayats; Mari Ostendorf; Hannaneh Hajishirzi
+N15-1162 | Type-Driven Incremental Semantic Parsing with Polymorphism | http://www.aclweb.org/anthology/N/N15/N15-1162.pdf | category:paper author:Kai Zhao; Liang Huang
+N15-1163 | Template Kernels for Dependency Parsing | http://www.aclweb.org/anthology/N/N15/N15-1163.pdf | category:paper author:Hillel Taub-Tabib; Yoav Goldberg; Amir Globerson
+N15-1164 | Embedding a Semantic Network in a Word Space | http://www.aclweb.org/anthology/N/N15/N15-1164.pdf | category:paper author:Richard Johansson; Luis Nieto Piña
+N15-1165 | Random Walks and Neural Network Language Models on Knowledge Bases | http://www.aclweb.org/anthology/N/N15/N15-1165.pdf | category:paper author:Josu Goikoetxea; Aitor Soroa; Eneko Agirre
+N15-1166 | Identification and Characterization of Newsworthy Verbs in World News | http://www.aclweb.org/anthology/N/N15/N15-1166.pdf | category:paper author:Benjamin Nye; Ani Nenkova
+N15-1167 | Enhancing Sumerian Lemmatization by Unsupervised Named-Entity Recognition | http://www.aclweb.org/anthology/N/N15/N15-1167.pdf | category:paper author:Yudong Liu; Clinton Burkhart; James Hearne; Liang Luo
+N15-1168 | Extracting Information about Medication Use from Veterinary Discussions | http://www.aclweb.org/anthology/N/N15/N15-1168.pdf | category:paper author:Haibo Ding; Ellen Riloff
+N15-1169 | Reserating the awesometastic: An automatic extension of the WordNet taxonomy for novel terms | http://www.aclweb.org/anthology/N/N15/N15-1169.pdf | category:paper author:David Jurgens; Mohammad Taher Pilehvar
+N15-1170 | Cross-lingual Text Classification Using Topic-Dependent Word Probabilities | http://www.aclweb.org/anthology/N/N15/N15-1170.pdf | category:paper author:Daniel Andrade; Kunihiko Sadamasa; Akihiro Tamura; Masaaki Tsuchida
+N15-1171 | Testing and Comparing Computational Approaches for Identifying the Language of Framing in Political News | http://www.aclweb.org/anthology/N/N15/N15-1171.pdf | category:paper author:Eric Baumer; Elisha Elovic; Ying Qin; Francesca Polletta; Geri Gay
+N15-1172 | Echoes of Persuasion: The Effect of Euphony in Persuasive Communication | http://www.aclweb.org/anthology/N/N15/N15-1172.pdf | category:paper author:Marco Guerini; Gözde Özbal; Carlo Strapparava
+N15-1173 | Translating Videos to Natural Language Using Deep Recurrent Neural Networks | http://www.aclweb.org/anthology/N/N15/N15-1173.pdf | category:paper author:Subhashini Venugopalan; Huijuan Xu; Jeff Donahue; Marcus Rohrbach; Raymond Mooney; Kate Saenko
+N15-1174 | Learning to Interpret and Describe Abstract Scenes | http://www.aclweb.org/anthology/N/N15/N15-1174.pdf | category:paper author:Luis Gilberto Mateos Ortiz; Clemens Wolff; Mirella Lapata
+N15-1175 | A Comparison of Update Strategies for Large-Scale Maximum Expected BLEU Training | http://www.aclweb.org/anthology/N/N15/N15-1175.pdf | category:paper author:Joern Wuebker; Sebastian Muehr; Patrick Lehnen; Stephan Peitz; Hermann Ney
+N15-1176 | Learning Translation Models from Monolingual Continuous Representations | http://www.aclweb.org/anthology/N/N15/N15-1176.pdf | category:paper author:Kai Zhao; Hany Hassan; Michael Auli
+N15-1177 | A Corpus and Model Integrating Multiword Expressions and Supersenses | http://www.aclweb.org/anthology/N/N15/N15-1177.pdf | category:paper author:Nathan Schneider; Noah A. Smith
+N15-1178 | Good News or Bad News: Using Affect Control Theory to Analyze Readers' Reaction Towards News Articles | http://www.aclweb.org/anthology/N/N15/N15-1178.pdf | category:paper author:Areej Alhothali; Jesse Hoey
+N15-1179 | Do We Really Need Lexical Information? Towards a Top-down Approach to Sentiment Analysis of Product Reviews | http://www.aclweb.org/anthology/N/N15/N15-1179.pdf | category:paper author:Yulia Otmakhova; Hyopil Shin
+N15-1180 | How to Memorize a Random 60-Bit String | http://www.aclweb.org/anthology/N/N15/N15-1180.pdf | category:paper author:Marjan Ghazvininejad; Kevin Knight
+N15-1181 | A Bayesian Model for Joint Learning of Categories and their Features | http://www.aclweb.org/anthology/N/N15/N15-1181.pdf | category:paper author:Lea Frermann; Mirella Lapata
+N15-1182 | Shared common ground influences information density in microblog texts | http://www.aclweb.org/anthology/N/N15/N15-1182.pdf | category:paper author:Gabriel Doyle; Michael Frank
+N15-1183 | Hierarchic syntax improves reading time prediction | http://www.aclweb.org/anthology/N/N15/N15-1183.pdf | category:paper author:Marten van Schijndel; William Schuler
+N15-1184 | Retrofitting Word Vectors to Semantic Lexicons | http://www.aclweb.org/anthology/N/N15/N15-1184.pdf | category:paper author:Manaal Faruqui; Jesse Dodge; Sujay Kumar Jauhar; Chris Dyer; Eduard Hovy; Noah A. Smith
+N15-1185 | "Youâre Mr. Lebowski, Iâm the Dude": Inducing Address Term Formality in Signed Social Networks | http://www.aclweb.org/anthology/N/N15/N15-1185.pdf | category:paper author:Vinodh Krishnan; Jacob Eisenstein
+N15-1186 | Unsupervised Morphology Induction Using Word Embeddings | http://www.aclweb.org/anthology/N/N15/N15-1186.pdf | category:paper author:Radu Soricut; Franz Och
+N15-2001 | Cache-Augmented Latent Topic Language Models for Speech Retrieval | http://www.aclweb.org/anthology/N/N15/N15-2001.pdf | category:paper author:Jonathan Wintrode
+N15-2002 | Reliable Lexical Simplification for Non-Native Speakers | http://www.aclweb.org/anthology/N/N15/N15-2002.pdf | category:paper author:Gustavo Paetzold
+N15-2003 | Analyzing Newspaper Crime Reports for Identification of Safe Transit Paths | http://www.aclweb.org/anthology/N/N15/N15-2003.pdf | category:paper author:Vasu Sharma; Rajat Kulshreshtha; Puneet Singh; Nishant Agrawal; Akshay Kumar
+N15-2004 | Relation extraction pattern ranking using word similarity | http://www.aclweb.org/anthology/N/N15/N15-2004.pdf | category:paper author:Konstantinos Lambrou-Latreille
+N15-2005 | Towards a Better Semantic Role Labeling of Complex Predicates | http://www.aclweb.org/anthology/N/N15/N15-2005.pdf | category:paper author:Glorianna Jagfeld; Lonneke van der Plas
+N15-2006 | Exploring Relational Features and Learning under Distant Supervision for Information Extraction Tasks | http://www.aclweb.org/anthology/N/N15/N15-2006.pdf | category:paper author:Ajay Nagesh
+N15-2007 | Entity/Event-Level Sentiment Detection and Inference | http://www.aclweb.org/anthology/N/N15/N15-2007.pdf | category:paper author:Lingjia Deng
+N15-2008 | Initial Steps for Building a Lexicon of Adjectives with Scalemates | http://www.aclweb.org/anthology/N/N15/N15-2008.pdf | category:paper author:Bryan Wilkinson
+N15-2009 | A Preliminary Evaluation of the Impact of Syntactic Structure in Semantic Textual Similarity and Semantic Relatedness Tasks | http://www.aclweb.org/anthology/N/N15/N15-2009.pdf | category:paper author:Ngoc Phuoc An Vo; Octavian Popescu
+N15-2010 | Benchmarking Machine Translated Sentiment Analysis for Arabic Tweets | http://www.aclweb.org/anthology/N/N15/N15-2010.pdf | category:paper author:Eshrag Refaee; Verena Rieser
+N15-2011 | Learning Kernels for Semantic Clustering: A Deep Approach | http://www.aclweb.org/anthology/N/N15/N15-2011.pdf | category:paper author:Ignacio Arroyo-Fernández
+N15-2012 | Narrowing the Loop: Integration of Resources and Linguistic Dataset Development with Interactive Machine Learning | http://www.aclweb.org/anthology/N/N15/N15-2012.pdf | category:paper author:Seid Muhie Yimam
+N15-2013 | Relation Extraction from Community Generated Question-Answer Pairs | http://www.aclweb.org/anthology/N/N15/N15-2013.pdf | category:paper author:Denis Savenkov; Wei-Lwun Lu; Jeff Dalton; Eugene Agichtein
+N15-2014 | Detecting Translation Direction: A Cross-Domain Study | http://www.aclweb.org/anthology/N/N15/N15-2014.pdf | category:paper author:Sauleh Eetemadi; Kristina Toutanova
+N15-2015 | Improving the Translation of Discourse Markers for Chinese into English | http://www.aclweb.org/anthology/N/N15/N15-2015.pdf | category:paper author:David Steele
+N15-2016 | Discourse and Document-level Information for Evaluating Language Output Tasks | http://www.aclweb.org/anthology/N/N15/N15-2016.pdf | category:paper author:Carolina Scarton
+N15-2017 | Speeding Document Annotation with Topic Models | http://www.aclweb.org/anthology/N/N15/N15-2017.pdf | category:paper author:Forough Poursabzi-Sangdeh; Jordan Boyd-Graber
+N15-2018 | Lifelong Machine Learning for Topic Modeling and Beyond | http://www.aclweb.org/anthology/N/N15/N15-2018.pdf | category:paper author:Zhiyuan Chen
+N15-2019 | Semantics-based Graph Approach to Complex Question-Answering | http://www.aclweb.org/anthology/N/N15/N15-2019.pdf | category:paper author:Tomasz Jurczyk; Jinho D. Choi
+N15-2020 | Recognizing Textual Entailment using Dependency Analysis and Machine Learning | http://www.aclweb.org/anthology/N/N15/N15-2020.pdf | category:paper author:Nidhi Sharma; Richa Sharma; Kanad K. Biswas
+N15-2021 | Bilingual lexicon extraction for a distant language pair using a small parallel corpus | http://www.aclweb.org/anthology/N/N15/N15-2021.pdf | category:paper author:Ximena Gutierrez-Vasques
+N15-2022 | Morphological Paradigms: Computational Structure and Unsupervised Learning | http://www.aclweb.org/anthology/N/N15/N15-2022.pdf | category:paper author:Jackson Lee
+N15-2023 | Computational Exploration to Linguistic Structures of Future: Classification and Categorization | http://www.aclweb.org/anthology/N/N15/N15-2023.pdf | category:paper author:Aiming Ni; Jinho D. Choi; Jason Shepard; Phillip Wolff
+N15-3001 | Two Practical Rhetorical Structure Theory Parsers | http://www.aclweb.org/anthology/N/N15/N15-3001.pdf | category:paper author:Mihai Surdeanu; Tom Hicks; Marco Antonio Valenzuela-Escarcega
+N15-3002 | Analyzing and Visualizing Coreference Resolution Errors | http://www.aclweb.org/anthology/N/N15/N15-3002.pdf | category:paper author:Sebastian Martschat; Thierry Göckel; Michael Strube
+N15-3003 | hyp: A Toolkit for Representing, Manipulating, and Optimizing Hypergraphs | http://www.aclweb.org/anthology/N/N15/N15-3003.pdf | category:paper author:Markus Dreyer; Jonathan Graehl
+N15-3004 | Enhancing Instructor-Student and Student-Student Interactions with Mobile Interfaces and Summarization | http://www.aclweb.org/anthology/N/N15/N15-3004.pdf | category:paper author:Wencan Luo; Xiangmin Fan; Muhsin Menekse; Jingtao Wang; Diane Litman
+N15-3005 | RExtractor: a Robust Information Extractor | http://www.aclweb.org/anthology/N/N15/N15-3005.pdf | category:paper author:Vincent Kríž; Barbora Hladka
+N15-3006 | An AMR parser for English, French, German, Spanish and Japanese and a new AMR-annotated corpus | http://www.aclweb.org/anthology/N/N15/N15-3006.pdf | category:paper author:Lucy Vanderwende; Arul Menezes; Chris Quirk
+N15-3007 | ICE: Rapid Information Extraction Customization for NLP Novices | http://www.aclweb.org/anthology/N/N15/N15-3007.pdf | category:paper author:Yifan He; Ralph Grishman
+N15-3008 | AMRICA: an AMR Inspector for Cross-language Alignments | http://www.aclweb.org/anthology/N/N15/N15-3008.pdf | category:paper author:Naomi Saphra; Adam Lopez
+N15-3009 | Ckylark: A More Robust PCFG-LA Parser | http://www.aclweb.org/anthology/N/N15/N15-3009.pdf | category:paper author:Yusuke Oda; Graham Neubig; Sakriani Sakti; Tomoki Toda; Satoshi Nakamura
+N15-3010 | ELCO3: Entity Linking with Corpus Coherence Combining Open Source Annotators | http://www.aclweb.org/anthology/N/N15/N15-3010.pdf | category:paper author:Pablo Ruiz; Thierry Poibeau; Fréderique Mélanie
+N15-3011 | SETS: Scalable and Efficient Tree Search in Dependency Graphs | http://www.aclweb.org/anthology/N/N15/N15-3011.pdf | category:paper author:Juhani Luotolahti; Jenna Kanerva; Sampo Pyysalo; Filip Ginter
+N15-3012 | Visualizing Deep-Syntactic Parser Output | http://www.aclweb.org/anthology/N/N15/N15-3012.pdf | category:paper author:Juan Soler-Company; Miguel Ballesteros; Bernd Bohnet; Simon Mille; Leo Wanner
+N15-3013 | WOLFE: An NLP-friendly Declarative Machine Learning Stack | http://www.aclweb.org/anthology/N/N15/N15-3013.pdf | category:paper author:Sameer Singh; Tim Rocktäschel; Luke Hewitt; Jason Naradowsky; Sebastian Riedel
+N15-3014 | Lean Question Answering over Freebase from Scratch | http://www.aclweb.org/anthology/N/N15/N15-3014.pdf | category:paper author:Xuchen Yao
+N15-3015 | A Web Application for Automated Dialect Analysis | http://www.aclweb.org/anthology/N/N15/N15-3015.pdf | category:paper author:Sravana Reddy; James Stanford
+N15-3016 | An Open-source Framework for Multi-level Semantic Similarity Measurement | http://www.aclweb.org/anthology/N/N15/N15-3016.pdf | category:paper author:Mohammad Taher Pilehvar; Roberto Navigli
+N15-3017 | Brahmi-Net: A transliteration and script conversion system for languages of the Indian subcontinent | http://www.aclweb.org/anthology/N/N15/N15-3017.pdf | category:paper author:Anoop Kunchukuttan; Ratish Puduppully; Pushpak Bhattacharyya
+N15-3018 | A Concrete Chinese NLP Pipeline | http://www.aclweb.org/anthology/N/N15/N15-3018.pdf | category:paper author:Nanyun Peng; Francis Ferraro; Mo Yu; Nicholas Andrews; Jay DeYoung; Max Thomas; Matthew R. Gormley; Travis Wolfe; Craig Harman; Benjamin Van Durme; Mark Dredze
+N15-3019 | CroVeWA: Crosslingual Vector-Based Writing Assistance | http://www.aclweb.org/anthology/N/N15/N15-3019.pdf | category:paper author:Hubert Soyer; Goran Topić; Pontus Stenetorp; Akiko Aizawa
+N15-3020 | Online Readability and Text Complexity Analysis with TextEvaluator | http://www.aclweb.org/anthology/N/N15/N15-3020.pdf | category:paper author:Diane Napolitano; Kathleen Sheehan; Robert Mundkowsky
+N15-3021 | Natural Language Question Answering and Analytics for Diverse and Interlinked Datasets | http://www.aclweb.org/anthology/N/N15/N15-3021.pdf | category:paper author:Dezhao Song; Frank Schilder; Charese Smiley; Chris Brew
+N15-3022 | WriteAhead2: Mining Lexical Grammar Patterns for Assisted Writing | http://www.aclweb.org/anthology/N/N15/N15-3022.pdf | category:paper author:Jim Chang; Jason Chang
+N15-3023 | Question Answering System using Multiple Information Source and Open Type Answer Merge | http://www.aclweb.org/anthology/N/N15/N15-3023.pdf | category:paper author:Seonyeong Park; Soonchoul Kwon; Byungsoo Kim; Sangdo Han; Hyosup Shim; Gary Geunbae Lee
+N15-3024 | Using Word Semantics To Assist English as a Second Language Learners | http://www.aclweb.org/anthology/N/N15/N15-3024.pdf | category:paper author:Mahmoud Azab; Chris Hokamp; Rada Mihalcea
+N15-4001 | Hands-on Learning to Search for Structured Prediction | http://www.aclweb.org/anthology/N/N15/N15-4001.pdf | category:paper author:Hal Daumé III; John Langford; Kai-Wei Chang; He He; Sudha Rao
+N15-4002 | Crowdsourcing for NLP | http://www.aclweb.org/anthology/N/N15/N15-4002.pdf | category:paper author:Chris Callison-Burch; Lyle Ungar; Ellie Pavlick
+N15-4003 | The Logic of AMR: Practical, Unified, Graph-Based Sentence Semantics for NLP | http://www.aclweb.org/anthology/N/N15/N15-4003.pdf | category:paper author:Nathan Schneider; Jeffrey Flanigan; Tim O'Gorman
+N15-4004 | Deep Learning and Continuous Representations for Natural Language Processing | http://www.aclweb.org/anthology/N/N15/N15-4004.pdf | category:paper author:Wen-tau Yih; Xiaodong He; Jianfeng Gao
+N15-4005 | Social Media Predictive Analytics | http://www.aclweb.org/anthology/N/N15/N15-4005.pdf | category:paper author:Svitlana Volkova; Benjamin Van Durme; David Yarowsky; Yoram Bachrach
+N15-4006 | Getting the Roles Right: Using FrameNet in NLP | http://www.aclweb.org/anthology/N/N15/N15-4006.pdf | category:paper author:Collin Baker; Nathan Schneider; Miriam R L Petruck; Michael Ellsworth

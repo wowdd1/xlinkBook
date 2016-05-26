@@ -1,6 +1,6 @@
-jmlr-text_images03-1 | Introduction to the Special Issue on Machine Learning Methods for Text and Images | http://www.jmlr.org/papers/volume3/kandola03a/kandola03a.pdf | author:Jaz Kandola, Thomas Hofmann, Tomaso Poggio, John Shawe Taylor
-jmlr-text_images03-2 | A Family of Additive Online Algorithms for Category Ranking | http://www.jmlr.org/papers/v3/crammer03b.html | author:Koby Crammer, Yoram Singer
-jmlr-text_images03-3 | Word Sequence Kernels | http://www.jmlr.org/papers/v3/cancedda03a.html | author:Nicola Cancedda, Eric Gaussier, Cyril Goutte, Jean Michel Renders
-jmlr-text_images03-4 | Kernel Methods for Relation Extraction | http://www.jmlr.org/papers/v3/zelenko03a.html | author:Dmitry Zelenko, Chinatsu Aone, Anthony Richardella
-jmlr-text_images03-5 | Matching Words and Pictures | http://www.jmlr.org/papers/v3/barnard03a.html | author:Kobus Barnard, Pinar Duygulu, David Forsyth, Nando de Freitas, David M. Blei, Michael I. Jordan
-jmlr-text_images03-6 | A Neural Probabilistic Language Model | http://www.jmlr.org/papers/v3/bengio03a.html | author:Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin
+jmlr-text_images03-1 | Introduction to the Special Issue on Machine Learning Methods for Text and Images | http://www.jmlr.org/papers/volume3/kandola03a/kandola03a.pdf | category:paper author:Jaz Kandola, Thomas Hofmann, Tomaso Poggio, John Shawe Taylor
+jmlr-text_images03-2 | A Family of Additive Online Algorithms for Category Ranking | http://www.jmlr.org/papers/v3/crammer03b.html | category:paper author:Koby Crammer, Yoram Singer
+jmlr-text_images03-3 | Word Sequence Kernels | http://www.jmlr.org/papers/v3/cancedda03a.html | category:paper author:Nicola Cancedda, Eric Gaussier, Cyril Goutte, Jean Michel Renders
+jmlr-text_images03-4 | Kernel Methods for Relation Extraction | http://www.jmlr.org/papers/v3/zelenko03a.html | category:paper author:Dmitry Zelenko, Chinatsu Aone, Anthony Richardella
+jmlr-text_images03-5 | Matching Words and Pictures | http://www.jmlr.org/papers/v3/barnard03a.html | category:paper author:Kobus Barnard, Pinar Duygulu, David Forsyth, Nando de Freitas, David M. Blei, Michael I. Jordan
+jmlr-text_images03-6 | A Neural Probabilistic Language Model | http://www.jmlr.org/papers/v3/bengio03a.html | category:paper author:Yoshua Bengio, Réjean Ducharme, Pascal Vincent, Christian Jauvin
