@@ -193,10 +193,13 @@ class ArxivSpider(Spider):
         we want to extract the raw id and the version
         """
         ix = url.rfind('/')
-        idversion = url[ix+1:] # extract just the id (and the version)
-        parts = idversion.split('v')
-        assert len(parts) == 2, 'error parsing url ' + url
-        return parts[0], int(parts[1])  
+        idversion = url[ix+1:].strip() # extract just the id (and the version)
+        if idversion.find('v') != -1:
+            return idversion[0 : idversion.find('v')], 1
+        return idversion , 1
+        #parts = idversion.split('v')
+        #assert len(parts) == 2, 'error parsing url ' + url
+        #return parts[0], int(parts[1])  
 
     def getCounts(self):
         counts = []
@@ -219,8 +222,9 @@ class ArxivSpider(Spider):
             rawid, version = self.parse_arxiv_url(paper['id'])
             published = paper['published'][0 : paper['published'].find('T')].strip() 
             old_published = self.rawid_version_dict.items()[randint(0, len(self.rawid_version_dict) - 1)][1]
-            if not self.rawid_version_dict.has_key(rawid) and published >= old_published:
-                print published + ' >= ' + old_published
+            if not self.rawid_version_dict.has_key(rawid): #and published >= old_published:
+                #print published + ' >= ' + old_published
+                print 'rawid ' + rawid + ' not in db'
                 incremental_list.append(paper)
         print len(incremental_list)
         if len(incremental_list) > 0:
@@ -255,7 +259,7 @@ class ArxivSpider(Spider):
                 counts = self.getCounts()
                 print counts
                 files = []
-                for i in range(0, self.load_history_files):
+                for i in range(0, len(counts)):
                     files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2016')
 
                 for fileName in files:
@@ -268,6 +272,9 @@ class ArxivSpider(Spider):
                         self.rawid_version_dict[str(rawid)] = record.get_published().strip()
 
                     f.close()
+            for k, v in self.rawid_version_dict.items():
+                print k + ' ' + v
+            print len(self.rawid_version_dict)
 
             self.incremental_file = self.get_file_name('eecs/papers/arxiv/arxiv' + str(self.getCounts()[0])+ '-inc', self.school)
             if os.path.exists(self.incremental_file):
@@ -408,7 +415,7 @@ class ArxivSpider(Spider):
 
             desc = authors + ' ' + category + ' ' + published + ' ' + summary
             self.write_db(f, 'arxiv-' + str(id_stuff) + "-" + str(self.count), title,
-                      paper['id'].replace('abs', 'pdf') + ".pdf", desc)
+                      paper['id'][0: paper['id'].rfind('v')].strip(), desc)
 
 
 start = ArxivSpider()
