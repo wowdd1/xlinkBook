@@ -59,13 +59,21 @@ class Category():
         self.blog = "blog"
         self.rank = "rank"
         self.website = "website"
+        self.engin = "engin"
+
     def match(self, desc, category):
         index = desc.find('category:')
         if index != -1 and desc.find(category, index + 1) != -1:
             print category + ' match'
             return True
+        print  category + ' not match ' + desc
         return False
 
+    def containMatch(self, key, category):
+        if key.find(category) != -1:
+            print category + ' match'
+            return True
+        return False
 
 class Tag():
     def __init__(self):
@@ -96,10 +104,11 @@ class Tag():
         self.tag_category = "category:"
         self.tag_summary = "summary:"
         self.tag_published = "published:"
+        self.tag_version = "version:"
 
         self.tag_list = [self.tag_videourl, self.tag_author, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published]
+                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version]
 
         self.tag_list_short = ["d:"]
 
@@ -160,6 +169,9 @@ class PaperRecord(WrapRecord):
 
     def get_published(self):
         return self.get_tag_content(self.tag.tag_published)
+
+    def get_version(self):
+        return self.get_tag_content(self.tag.tag_version)
 
 
 
