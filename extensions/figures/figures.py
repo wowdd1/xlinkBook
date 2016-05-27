@@ -37,7 +37,31 @@ class Figures(BaseExtension):
         else:
             figures, links = self.getRandomFigures(record.get_title())
 
-        return self.genHtml(figures, form_dict['column'], links)
+        thumb = ''
+        if record.get_id().strip().startswith('arxiv'):
+            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url())
+            version = "v1"    
+            jpg = '.pdf.jpg'
+            retry = 0
+            for i in range(1, 10):
+                r = requests.get(thumbs + 'v' + str(i) + jpg)
+                if r.status_code == 200:
+                    retry = 0
+                    version = 'v' + str(i)
+                else:
+                   retry += 1
+                if retry >= 2:
+                    break 
+                #else:
+                #    break
+            thumbs = thumbs + version + jpg
+            print 'thumbs ' + thumbs
+        return self.genHtml(figures, form_dict['column'], links, thumbs)
+
+
+    def getPid(self, url):
+        return url[url.rfind('/') + 1 : ].replace('.pdf', '').strip()
+
 
 
     def getRandomFigures(self, title):
@@ -52,8 +76,10 @@ class Figures(BaseExtension):
             figures.append(img['src'])
         return figures, links
 
-    def genHtml(self, figures, column, links=[]):
+    def genHtml(self, figures, column, links=[], thumb=''):
         html = '<div>'
+        if thumb != '':
+            html += '<a target="_blank" href="' + thumb + '"><img src="' + thumb + '"/></a>'
         if figures != None and len(figures) > 0:
             width = "100"
             height = "100"
@@ -70,6 +96,8 @@ class Figures(BaseExtension):
                 width = "250"
                 height = "250"
                 row_count = 5
+
+ 
             count = 0
             for fig in figures:
                 count += 1

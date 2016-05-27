@@ -323,3 +323,4 @@ engin-319 | muse | https://muse.jhu.edu/results?searchtype=regular&search_term=$
 engin-320 | nytimes | http://query.nytimes.com/search/sitesearch/?action=click&contentCollection&region=TopBar&WT.nav=searchWidget&module=SearchSubmit&pgtype=Homepage#/ | priority:0 description:news
 engin-321 | edition | http://edition.cnn.com/search/?text= | priority:0 description:news
 engin-322 | chinaso | http://news.chinaso.com/search?wd=$&btn= | priority:0 description:news
+engin-323 | gitxiv | http://gitxiv.com/search/?q= | priority:4 description:project

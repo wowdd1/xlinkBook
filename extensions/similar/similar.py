@@ -38,7 +38,7 @@ class Similar(BaseExtension):
         return url[url.rfind('/') + 1 : ].replace('.pdf', '').strip()
 
     def excute(self, form_dict):
-        rID = form_dict['rID']
+        rID = form_dict['rID'].encode('utf-8')
         fileName = form_dict['fileName']
         record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
         if rID.startswith('arxiv'):
@@ -56,7 +56,7 @@ class Similar(BaseExtension):
                 for k in self.sim_dict[pid]:
                     print k + ' ' + self.papers_dict[k].get_title()
                 return self.genHtml(pid)
-        elif self.category_obj.match(record.get_describe(), self.category_obj.website):
+        elif self.category_obj.match(record.get_describe(), self.category_obj.website) or self.category_obj.containMatch(rID[0 : rID.find('-')].strip() , self.category_obj.engin):
             return self.genWebsiteHtml(record.get_title().strip())
         return ''
 
@@ -73,6 +73,7 @@ class Similar(BaseExtension):
             page_count += 1
             if nextpage != '':
                 page = nextpage.replace('2', str(page_count))
+
             print 'request ' + page
             r = requests.get(page, cookies=cookies)
             if r.status_code != 200:
@@ -85,6 +86,8 @@ class Similar(BaseExtension):
             nextDiv = soup.find('div', class_='site-pagination')
             if nextDiv != None and nextpage == '':
                 nextpage = 'http://www.xmarks.com' + nextDiv.a['href']
+            if nextDiv == None:
+                break
         html += "</ol></div>"
         return html
 
@@ -98,7 +101,8 @@ class Similar(BaseExtension):
         count = 0
         for record in records:
             #html += '<li><span>' + record.get_id().strip() + '</span><br/>'
-            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + ".pdf.jpg"
+            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + "v1.pdf.jpg"
+                    
             authors = record.get_author().split(',')
             categorys = record.get_category().split(' ')
             date_cat =  record.get_published() + "&nbsp;&nbsp; " + self.genListHtml(categorys, "category:")
@@ -123,7 +127,9 @@ class Similar(BaseExtension):
        
 
     def check(self, form_dict):
-        rID = form_dict['rID']
+        rID = form_dict['rID'].encode('utf-8')
         fileName = form_dict['fileName']
         record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
-        return rID.startswith('arxiv') or self.category_obj.match(record.get_describe(), self.category_obj.website)
+        match_website = self.category_obj.match(record.get_describe(), self.category_obj.website) 
+        match_engin = self.category_obj.containMatch(rID[0 : rID.find('-')].strip() , self.category_obj.engin)
+        return rID.startswith('arxiv') or match_website or match_engin
