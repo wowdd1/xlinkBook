@@ -48,7 +48,8 @@ for item in files:
         url = record.get_url()
         pid = url[url.rfind('/') + 1 : ].replace('.pdf', '').strip()
         pids.append(pid)
-        print pid
+        if pid.find('v') != -1:
+            print pid
 # compute tfidf vectors with scikits
 v = TfidfVectorizer(input='content', 
         encoding='utf-8', decode_error='replace', strip_accents='unicode', 

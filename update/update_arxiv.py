@@ -363,7 +363,8 @@ class ArxivSpider(Spider):
         for line in lines:
             self.count += 1
             record = Record(line)
-            self.write_db(f, 'arxiv-' + str(number) + '-' + str(self.count), record.get_title().strip(), record.get_url().strip(),
+            rawid = self.parse_arxiv_url(record.get_url().strip()).replace('.', '-')
+            self.write_db(f, 'arxiv-' + rawid, record.get_title().strip(), record.get_url().strip(),
                               record.get_describe().strip())
 
 
@@ -414,7 +415,8 @@ class ArxivSpider(Spider):
             title = self.utils.removeDoubleSpace(paper['title'].replace('\n', '')).strip()
 
             desc = authors + ' ' + category + ' ' + published + ' ' + summary
-            self.write_db(f, 'arxiv-' + str(id_stuff) + "-" + str(self.count), title,
+            
+            self.write_db(f, 'arxiv-' + paper['_rawid'].replace('.', '-'), title,
                       paper['id'][0: paper['id'].rfind('v')].strip(), desc)
 
 

@@ -25,7 +25,7 @@ print all_lines[1000]
 
 #all_lines = all_lines[17400 : 18300]
 utils = Utils()
-utils.sortLines(all_lines)
+all_lines = utils.sortLines(all_lines)
 print all_lines[0]
 print all_lines[1]
 #print all_lines[18299]
@@ -47,7 +47,12 @@ for i in range(len(all_lines), -setp_size, -setp_size):
             count_line += 1
             #print count_line
             record = PaperRecord(line)
-            f.write('arxiv-' + str(count) + '-' + str(count_line) + " | " + record.get_title().strip() + " | " + record.get_url().strip()  + " | " + record.get_describe().strip() + "\n")
+            url = record.get_url()
+            if url.find('v', url.find('org')) != -1:
+                url = url[0 : url.rfind('v')]
+            rawid = url[url.rfind('/') + 1 : ].strip().replace('.','-')
+            
+            f.write('arxiv-' + rawid + " | " + record.get_title().strip() + " | " + url  + " | " + record.get_describe().strip() + "\n")
         f.close()
     last = i
     if i < 0:
