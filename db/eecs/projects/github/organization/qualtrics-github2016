@@ -1,5 +1,5 @@
-qualtrics-github-2-1 | foreman_hyperview | https://github.com/qualtrics/foreman_hyperview | author:qualtrics description:Foreman plugin for detailed hypervisor information, specifically for libvirt.
-qualtrics-github-0-2 | foreman_compute_profiles | https://github.com/qualtrics/foreman_compute_profiles | author:qualtrics description:API exposure for compute profiles and compute attributes
-qualtrics-github-0-3 | foreman_quotas | https://github.com/qualtrics/foreman_quotas | author:qualtrics description:Quotas utilized via the API for # of host to be built via host groups
-qualtrics-github-0-4 | phloem | https://github.com/qualtrics/phloem | author:qualtrics description:Simple reliable backup system
-qualtrics-github-0-5 | color | https://github.com/qualtrics/color | author:qualtrics description:Updated Sep 2, 2014
+github-qualtrics-2-1 | foreman_hyperview | https://github.com/qualtrics/foreman_hyperview | author:qualtrics description:Foreman plugin for detailed hypervisor information, specifically for libvirt.
+github-qualtrics-0-2 | foreman_compute_profiles | https://github.com/qualtrics/foreman_compute_profiles | author:qualtrics description:API exposure for compute profiles and compute attributes
+github-qualtrics-0-3 | foreman_quotas | https://github.com/qualtrics/foreman_quotas | author:qualtrics description:Quotas utilized via the API for # of host to be built via host groups
+github-qualtrics-0-4 | phloem | https://github.com/qualtrics/phloem | author:qualtrics description:Simple reliable backup system
+github-qualtrics-0-5 | color | https://github.com/qualtrics/color | author:qualtrics description:Updated Sep 2, 2014

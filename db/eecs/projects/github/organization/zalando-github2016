@@ -1,153 +1,153 @@
-zalando-github-297-1 | gulp-check-unused-css | https://github.com/zalando/gulp-check-unused-css | author:zalando description:Check your HTML templates for unused CSS classes
-zalando-github-203-2 | connexion | https://github.com/zalando/connexion | author:zalando description:Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation and OAuth2 support
-zalando-github-184-3 | patroni | https://github.com/zalando/patroni | author:zalando description:Runners to orchestrate a high-availability PostgreSQL
-zalando-github-146-4 | skipper | https://github.com/zalando/skipper | author:zalando description:An HTTP router, built with Go, that acts as a reverse proxy with support for custom route definitions
-zalando-github-144-5 | pg_view | https://github.com/zalando/pg_view | author:zalando description:PostgreSQL Activity View Utility
-zalando-github-134-6 | MapleBacon | https://github.com/zalando/MapleBacon | author:zalando description:MapleBacon is a Swift image download and caching library.
-zalando-github-131-7 | PGObserver | https://github.com/zalando/PGObserver | author:zalando description:A battle-tested, flexible and comprehensive monitoring solution for your PostgreSQL databases
-zalando-github-89-8 | spilo | https://github.com/zalando/spilo | author:zalando description:Highly available elephant herd: HA PostgreSQL cluster using Docker and STUPS
-zalando-github-74-9 | zmon | https://github.com/zalando/zmon | author:zalando description:Real-time monitoring of critical metrics and KPIs via easy-to-use dashboards, Grafana2 visualizations & more
-zalando-github-65-10 | elm-street-404 | https://github.com/zalando/elm-street-404 | author:zalando description:A fun WebGL game built with Elm
-zalando-github-63-11 | zalando-rules-of-play | https://github.com/zalando/zalando-rules-of-play | author:zalando description:Zalando Tech’s guidelines for building new applications and managing legacy systems.
-zalando-github-57-12 | play-swagger | https://github.com/zalando/play-swagger | author:zalando description:Provides Swagger support for the Play-Framework
-zalando-github-44-13 | restful-api-guidelines | https://github.com/zalando/restful-api-guidelines | author:zalando description:A model set of guidelines for RESTful APIs, created by Zalando
-zalando-github-42-14 | innkeeper | https://github.com/zalando/innkeeper | author:zalando description:Simple route management API for Skipper
-zalando-github-41-15 | zappr | https://github.com/zalando/zappr | author:zalando description:Enhance your Github workflow with the simple flip of a toggle
-zalando-github-38-16 | cube | https://github.com/zalando/cube | author:zalando description:A versatile, CRUD-like tool that allows you to organize and manage your data
-zalando-github-38-17 | java-sproc-wrapper | https://github.com/zalando/java-sproc-wrapper | author:zalando description:Java Stored Procedure Wrapper: Calling PostgreSQL stored procedures from Java
-zalando-github-35-18 | scala-jsonapi | https://github.com/zalando/scala-jsonapi | author:zalando description:A support library for integrating JSON API specification with Scala and Spray JSON or Play! JSON
-zalando-github-35-19 | python-nsenter | https://github.com/zalando/python-nsenter | author:zalando description:Enter kernel namespaces from Python
-zalando-github-32-20 | zalando-howto-open-source | https://github.com/zalando/zalando-howto-open-source | author:zalando description:The guide to open-sourcing projects followed by the tech team at Zalando (zalando.com), Europe's largest online fashion platform.
-zalando-github-30-21 | typhoon | https://github.com/zalando/typhoon | author:zalando description:Distributed system stress and load testing tool for investigating protocol and application latencies
-zalando-github-30-22 | catwatch | https://github.com/zalando/catwatch | author:zalando description:A metrics dashboard for GitHub organizations, with results accessible via REST API
-zalando-github-29-23 | tailor | https://github.com/zalando/tailor | author:zalando description:A streaming layout service for front-end microservices
-zalando-github-25-24 | dress-code | https://github.com/zalando/dress-code | author:zalando description:The Dress Code is the official style guide and style framework for all Brand Solutions products.
-zalando-github-24-25 | elephant-worker | https://github.com/zalando/elephant-worker | author:zalando description:Background workers in PostgreSQL
-zalando-github-23-26 | problem | https://github.com/zalando/problem | author:zalando description:Problem is a Java library that implements application/problem+json.
-zalando-github-22-27 | beard | https://github.com/zalando/beard | author:zalando description:A lightweight logicless templating engine, written in Scala and inspired by Mustache
-zalando-github-22-28 | spark-appliance | https://github.com/zalando/spark-appliance | author:zalando description:Distributed HA Spark standalone cluster appliance for AWS environment using STUPS, Docker and Jupyter Notebook for Spark SQL, Python / PySpark and R / SparkR
-zalando-github-22-29 | shop-api-documentation | https://github.com/zalando/shop-api-documentation | author:zalando description:Zalando SE public API documentation
-zalando-github-21-30 | expan | https://github.com/zalando/expan | author:zalando description:A Python library for statistical analysis of randomised control trials (A/B tests)
-zalando-github-18-31 | logbook | https://github.com/zalando/logbook | author:zalando description:An extensible Java library for HTTP request and response logging
-zalando-github-17-32 | jackson-datatype-money | https://github.com/zalando/jackson-datatype-money | author:zalando description:Extension module to properly support datatypes of javax.money.
-zalando-github-17-33 | problem-spring-web | https://github.com/zalando/problem-spring-web | author:zalando description:A library for handling Problems in Spring Web MVC
-zalando-github-16-34 | tech-radar | https://github.com/zalando/tech-radar | author:zalando description:A tool to help teams make the right technology choices.
-zalando-github-15-35 | nakadi | https://github.com/zalando/nakadi | author:zalando description:A distributed event bus that implements a RESTful API abstraction instead of Kafka-like queues
-zalando-github-14-36 | swagger-mock | https://github.com/zalando/swagger-mock | author:zalando description:Runs an HTTP server based on a swagger definition and returns mocked responses.
-zalando-github-13-37 | tracer | https://github.com/zalando/tracer | author:zalando description:Call tracing and log correlation in distributed systems
-zalando-github-12-38 | stups-cassandra | https://github.com/zalando/stups-cassandra | author:zalando description:Cassandra appliance for the STUPS (AWS) environment with companion Docker image
-zalando-github-12-39 | lizzy | https://github.com/zalando/lizzy | author:zalando description:REST Service to deploy AWS CF templates using Senza
-zalando-github-11-40 | chrome-oauth-bearer-plugin | https://github.com/zalando/chrome-oauth-bearer-plugin | author:zalando description:Chrome plugin to inject OAuth Bearer tokens
-zalando-github-11-41 | package-build | https://github.com/zalando/package-build | author:zalando description:A toolset for building system packages using Docker and fpm-cookery
-zalando-github-10-42 | riptide | https://github.com/zalando/riptide | author:zalando description:Client=side response routing for Spring's RestTemplate
-zalando-github-9-43 | python-clickclick | https://github.com/zalando/python-clickclick | author:zalando description:Click command line utilities
-zalando-github-9-44 | open-source-principles | https://github.com/zalando/open-source-principles | author:zalando description:Zalando's Open Source Principles
-zalando-github-9-45 | acid-tools | https://github.com/zalando/acid-tools | author:zalando description:Various tools around PostgreSQL monitoring/management
-zalando-github-9-46 | pazuzu-registry | https://github.com/zalando/pazuzu-registry | author:zalando description:A feature registry for customized Docker images
-zalando-github-9-47 | scala-study-group | https://github.com/zalando/scala-study-group | author:zalando description:Materials developed by Zalando's internal Scala Study Group
-zalando-github-8-48 | oauth2-client-js | https://github.com/zalando/oauth2-client-js | author:zalando description:A library to help you handling OAuth2 access and refresh tokens.
-zalando-github-8-49 | ui-automation-chrome-extension | https://github.com/zalando/ui-automation-chrome-extension | author:zalando description:Chrome extension to help you to write automated Selenium tests faster
-zalando-github-8-50 | shop-api-demo | https://github.com/zalando/shop-api-demo | author:zalando description:This is a small demo to showcase how to use Zalando Shop API
-zalando-github-8-51 | scarl | https://github.com/zalando/scarl | author:zalando description:A Scala library that acts as a binding layer connecting the Erlang and Scala/Akka universes
-zalando-github-7-52 | go-tokens | https://github.com/zalando/go-tokens | author:zalando description:Golang library to manage OAuth access tokens
-zalando-github-7-53 | zmon-controller | https://github.com/zalando/zmon-controller | author:zalando description:ZMON Frontend Controller with UI and REST API
-zalando-github-7-54 | spring-cloud-config-aws-kms | https://github.com/zalando/spring-cloud-config-aws-kms | author:zalando description:Spring Cloud Config add-on that provides encryption via AWS KMS
-zalando-github-7-55 | zmon-worker | https://github.com/zalando/zmon-worker | author:zalando description:ZMON Python Worker
-zalando-github-7-56 | stups-etcd-cluster | https://github.com/zalando/stups-etcd-cluster | author:zalando description:Etcd cluster appliance for the STUPS (AWS) environment
-zalando-github-7-57 | saiki-buku | https://github.com/zalando/saiki-buku | author:zalando description:Kafka Appliance for STUPS
-zalando-github-7-58 | stups2go | https://github.com/zalando/stups2go | author:zalando description:Go Continuous Delivery service based on the STUPS infrastructure.
-zalando-github-7-59 | turnstile | https://github.com/zalando/turnstile | author:zalando description:Zalando's Local Git Hooks
-zalando-github-7-60 | axiom-web | https://github.com/zalando/axiom-web | author:zalando description:Axiom web libraries
-zalando-github-7-61 | github-maintainer-cli | https://github.com/zalando/github-maintainer-cli | author:zalando description:CLI support tool for GitHub repo maintainers
-zalando-github-6-62 | planb-tokeninfo | https://github.com/zalando/planb-tokeninfo | author:zalando description:Plan B Token Info service for JWT tokens
-zalando-github-6-63 | ghe-backup | https://github.com/zalando/ghe-backup | author:zalando description:multi AWS account GitHub Enterprise backup based on Docker.
-zalando-github-6-64 | play-swagger-service | https://github.com/zalando/play-swagger-service | author:zalando description:Play-Swagger activator template
-zalando-github-6-65 | environmental | https://github.com/zalando/environmental | author:zalando description:Map a python configuration from environment variables
-zalando-github-6-66 | react-zoom | https://github.com/zalando/react-zoom | author:zalando description:Lightweight and stateless modal component for React.js based on flexbox
-zalando-github-6-67 | zmon-android | https://github.com/zalando/zmon-android | author:zalando description:Android client for ZMON monitoring
-zalando-github-6-68 | banknote | https://github.com/zalando/banknote | author:zalando description:A simple JavaScript libary for formatting currency amounts according to Unicode CLDR standards
-zalando-github-6-69 | sunstreet | https://github.com/zalando/sunstreet | author:zalando description:Sunstreet is a minimalistic blog template, specially made for Github pages and can be statically/dynamically served anywhere else too
-zalando-github-5-70 | planb-provider | https://github.com/zalando/planb-provider | author:zalando description:Plan B OpenID Connect Provider issuing JWT tokens
-zalando-github-5-71 | zmon-docs | https://github.com/zalando/zmon-docs | author:zalando description:ZMON Documentation
-zalando-github-5-72 | docker-openjdk | https://github.com/zalando/docker-openjdk | author:zalando description:Docker image with OpenJDK and Zalando CA
-zalando-github-5-73 | funelo | https://github.com/zalando/funelo | author:zalando description:Big Data ingestion made easy.
-zalando-github-5-74 | planb-revocation | https://github.com/zalando/planb-revocation | author:zalando description:Plan B Revocation Service for JWT tokens
-zalando-github-5-75 | spring-boot-etcd | https://github.com/zalando/spring-boot-etcd | author:zalando description:etcd client to access and store configuration values in an etcd cluster
-zalando-github-5-76 | openapi-cli-client | https://github.com/zalando/openapi-cli-client | author:zalando description:OpenAPI/Swagger CLI Client
-zalando-github-5-77 | react-zlide | https://github.com/zalando/react-zlide | author:zalando description:Lightweight and stateless slider component for React.js
-zalando-github-5-78 | docker-ubuntu | https://github.com/zalando/docker-ubuntu | author:zalando description:Ubuntu base image including Zalando CA
-zalando-github-5-79 | test-service-kit | https://github.com/zalando/test-service-kit | author:zalando description:Micro-framework that manages external services for tests: mock HTTP services, Docker containers, databases, etc.)
-zalando-github-5-80 | zester | https://github.com/zalando/zester | author:zalando description:With Zester you can run mutation tests with ease in IntelliJ IDEA.
-zalando-github-5-81 | spoton | https://github.com/zalando/spoton | author:zalando description:Spot On! is an extension for your AWS account to use AWS Spot Fleet for your stateless services.
-zalando-github-5-82 | lizzy-client | https://github.com/zalando/lizzy-client | author:zalando description:Script to deploy Senza definitions using a Lizzy server.
-zalando-github-5-83 | zalando.github.io-dev | https://github.com/zalando/zalando.github.io-dev | author:zalando description:The zalando.github.io open-source metrics dashboard
-zalando-github-4-84 | intellij-swagger | https://github.com/zalando/intellij-swagger | author:zalando description:A plugin to help you easily edit Swagger specification files inside IntelliJ IDEA
-zalando-github-4-85 | kontrolletti | https://github.com/zalando/kontrolletti | author:zalando description:Auditing made easier with this principled REST API, which aggregates info from different source control mgmt systems
-zalando-github-4-86 | db_agg | https://github.com/zalando/db_agg | author:zalando description:Join multiple datasources with a single query
-zalando-github-4-87 | toga | https://github.com/zalando/toga | author:zalando description:Toolset for validation, testdata generation and testdata distribution based on JSON Schema.
-zalando-github-4-88 | zmon-cli | https://github.com/zalando/zmon-cli | author:zalando description:ZMON Command Line Interface
-zalando-github-4-89 | zalando.github.io | https://github.com/zalando/zalando.github.io | author:zalando description:Zalando github.io organization page
-zalando-github-4-90 | zmon-scheduler | https://github.com/zalando/zmon-scheduler | author:zalando description:ZMON Scheduler
-zalando-github-4-91 | testing-microservices | https://github.com/zalando/testing-microservices | author:zalando description:An experimental repository to try out automated testing of microservice interaction over a message queue.
-zalando-github-4-92 | github-user-team-sync | https://github.com/zalando/github-user-team-sync | author:zalando description:Sync employees and their team membership with GitHub.com
-zalando-github-4-93 | docker-python | https://github.com/zalando/docker-python | author:zalando description:Docker image with Python 3.5 and Zalando CA
-zalando-github-4-94 | docker-locust | https://github.com/zalando/docker-locust | author:zalando description:Docker image for the Locust.io open source load testing tool
-zalando-github-4-95 | planb-cassandra | https://github.com/zalando/planb-cassandra | author:zalando description:Plan B Cassandra for STUPS/AWS with static IPs
-zalando-github-4-96 | reactive-nakadi | https://github.com/zalando/reactive-nakadi | author:zalando description:Reactive Streams for Nakadi
-zalando-github-3-97 | ssl-keygen | https://github.com/zalando/ssl-keygen | author:zalando description:Utilities to generate browser-compatible (test) SSL certificates.
-zalando-github-3-98 | sea-proxy | https://github.com/zalando/sea-proxy | author:zalando description:HTTP reverse proxy which terminates OAuth2 and SSL.
-zalando-github-3-99 | zmon-notification-service | https://github.com/zalando/zmon-notification-service | author:zalando description:Push notifications for google cloud messaging
-zalando-github-3-100 | nakadi-klients | https://github.com/zalando/nakadi-klients | author:zalando description:Nakadi Low Level API client
-zalando-github-3-101 | docker-node | https://github.com/zalando/docker-node | author:zalando description:Docker image with Node.js and Zalando CA
-zalando-github-3-102 | intreact | https://github.com/zalando/intreact | author:zalando description:Handling interactions with dumb react components.
-zalando-github-3-103 | pazuzu-ui | https://github.com/zalando/pazuzu-ui | author:zalando description:UI for Pazuzu Registry and Pazuzu, the Docker Maker
-zalando-github-3-104 | saiki | https://github.com/zalando/saiki | author:zalando description:Saiki provides a scalable Change Data Capture (CDC) infrastructure.
-zalando-github-3-105 | money-validation | https://github.com/zalando/money-validation | author:zalando description:Validation support for javax.money
-zalando-github-3-106 | gitbook-structured-toc | https://github.com/zalando/gitbook-structured-toc | author:zalando description:A Table Of Contents module for Gitbook that adds headers as anchors
-zalando-github-3-107 | aws-saml-login | https://github.com/zalando/aws-saml-login | author:zalando description:AWS SAML login helper library for Python (only supports Shibboleth Identity Provider atm)
-zalando-github-3-108 | superagent-oauth2-client | https://github.com/zalando/superagent-oauth2-client | author:zalando description:A superagent plugin for stressless OAuth2 token management.
-zalando-github-3-109 | python-gitconfig | https://github.com/zalando/python-gitconfig | author:zalando description:Small wrapper around the git cli to expose git configuration as a mapping
-zalando-github-3-110 | sprocrest | https://github.com/zalando/sprocrest | author:zalando description:Automatic restful service wrapper for PostgreSQL
-zalando-github-2-111 | openig-vagrant | https://github.com/zalando/openig-vagrant | author:zalando description:A Vagrant Box containing a sample installation of OpenIG
-zalando-github-2-112 | zmon-eventlog-service | https://github.com/zalando/zmon-eventlog-service | author:zalando description:ZMON's EventLog service receives and provides Event Log entries
-zalando-github-2-113 | forgerock-docker | https://github.com/zalando/forgerock-docker | author:zalando description:Docker definitions for the ForgeRock stack
-zalando-github-2-114 | pazuzu | https://github.com/zalando/pazuzu | author:zalando description:Pazuzu, the Docker Maker
-zalando-github-2-115 | react-callout | https://github.com/zalando/react-callout | author:zalando description:Lightweight and stateless callout component for React.js
-zalando-github-2-116 | docker-sphinx-doc | https://github.com/zalando/docker-sphinx-doc | author:zalando description:Docker image to update, build and serve Sphinx documentation including OAuth authorization flow
-zalando-github-2-117 | rkt-vagrant-box | https://github.com/zalando/rkt-vagrant-box | author:zalando description:Virtual box to test rocket (https://github.com/coreos/rkt)
-zalando-github-2-118 | zmon-ios | https://github.com/zalando/zmon-ios | author:zalando description:iOS client for ZMON monitoring
-zalando-github-2-119 | baigan-config | https://github.com/zalando/baigan-config | author:zalando description:Simple and distributed configuration service framework.
-zalando-github-2-120 | saiki-pemetaan | https://github.com/zalando/saiki-pemetaan | author:zalando description:A control center for all Saiki and Kafka/Buku tasks
-zalando-github-2-121 | zmon-aws-agent | https://github.com/zalando/zmon-aws-agent | author:zalando description:Use AWS API to retrieve "known" applications (currently expecting STUPS compatible Taupage userdata for this)
-zalando-github-2-122 | turnstile-zalando | https://github.com/zalando/turnstile-zalando | author:zalando description:Meta-package to install turnstile and extension
-zalando-github-2-123 | turnstile-codevalidator | https://github.com/zalando/turnstile-codevalidator | author:zalando description:Codevalidator extension for turnstile
-zalando-github-2-124 | react-automatic-width | https://github.com/zalando/react-automatic-width | author:zalando description:Automatically sets `width` property on child components
-zalando-github-1-125 | rezponsive | https://github.com/zalando/rezponsive | author:zalando description:React decorator for responsive behaviors
-zalando-github-1-126 | pathmux | https://github.com/zalando/pathmux | author:zalando description:The go package pathmux is a fork of httptreemux
-zalando-github-1-127 | switchboard | https://github.com/zalando/switchboard | author:zalando description:An event router that helps to write simple, asynchronous tests.
-zalando-github-1-128 | crypto | https://github.com/zalando/crypto | author:zalando description:If you want to hide things.
-zalando-github-1-129 | dress-code-bower | https://github.com/zalando/dress-code-bower | author:zalando description:Brand Solutions Dress Code is the official style guide ad style framwork for all Brand Solutions products. (Bower version)
-zalando-github-1-130 | clair-sqs | https://github.com/zalando/clair-sqs | author:zalando description:CoreOS' Clair packaged for use with AWS SQS and SNS.
-zalando-github-1-131 | jersey-media-json-gson | https://github.com/zalando/jersey-media-json-gson | author:zalando description:Jersey JSON GSON entity providers support
-zalando-github-1-132 | zmon-data-service | https://github.com/zalando/zmon-data-service | author:zalando description:Receiving end of new worker to push data across DC boundaries
-zalando-github-1-133 | spring-boot-cassandra | https://github.com/zalando/spring-boot-cassandra | author:zalando description:Updated Feb 26, 2016
-zalando-github-1-134 | scoop | https://github.com/zalando/scoop | author:zalando description:A simple library based on Akka Cluster to partition work between multiple instances belonging to the same cluster
-zalando-github-1-135 | planb-docs | https://github.com/zalando/planb-docs | author:zalando description:Plan B OAuth2/JWT Infrastructure Documentation
-zalando-github-1-136 | camunda-cockpit-client | https://github.com/zalando/camunda-cockpit-client | author:zalando description:Camunda Cockpit Commandline Client
-zalando-github-1-137 | zengage | https://github.com/zalando/zengage | author:zalando description:Updated Dec 17, 2015
-zalando-github-1-138 | zmon-actuator | https://github.com/zalando/zmon-actuator | author:zalando description:Improved REST endpoint metrics for Spring Boot Projects
-zalando-github-1-139 | zmon-demo | https://github.com/zalando/zmon-demo | author:zalando description:ZMON demo installation scripts (single-node)
-zalando-github-1-140 | kontrolletti-client-java | https://github.com/zalando/kontrolletti-client-java | author:zalando description:Java interfaces and implementations for the Kontrolletti API
-zalando-github-1-141 | spring-data-jpa-businesskey | https://github.com/zalando/spring-data-jpa-businesskey | author:zalando description:Updated Jul 29, 2015
-zalando-github-1-142 | spring-social-zauth | https://github.com/zalando/spring-social-zauth | author:zalando description:Spring-Social support for Z-Auth.
-zalando-github-1-143 | read-our-docs | https://github.com/zalando/read-our-docs | author:zalando description:Simple documentation repository. It currently supports Git repositories with Sphinx docs.
-zalando-github-0-144 | octopus-ci | https://github.com/zalando/octopus-ci | author:zalando description:Updated Jun 8, 2015
-zalando-github-0-145 | go-ldapdn | https://github.com/zalando/go-ldapdn | author:zalando description:go module for handling LDAP DNs
-zalando-github-0-146 | partitioned | https://github.com/zalando/partitioned | author:zalando description:Partitioned coordinates the partition consumption within a group of Nakadi clients
-zalando-github-0-147 | scala-study-group-bnb | https://github.com/zalando/scala-study-group-bnb | author:zalando description:Scala Study Group for Wholesale Engineering @ BNB
-zalando-github-0-148 | nakadi-end2end | https://github.com/zalando/nakadi-end2end | author:zalando description:Application for monitoring end2end event processing time of nakadi messaging bus
-zalando-github-0-149 | jackson-module-unknown-property | https://github.com/zalando/jackson-module-unknown-property | author:zalando description:Jackson extension module that adds standardized logging of unknown properties.
-zalando-github-0-150 | zmon-metric-cache | https://github.com/zalando/zmon-metric-cache | author:zalando description:API metric cache for ZMON frontend
-zalando-github-0-151 | esio | https://github.com/zalando/esio | author:zalando description:An Erlang library that provides an HTTP client for Elasticsearch
-zalando-github-0-152 | gitbook-restructure-navigation | https://github.com/zalando/gitbook-restructure-navigation | author:zalando description:Restructures the navigation bar in a gitbook website
-zalando-github-0-153 | eclipselink-session-customizer | https://github.com/zalando/eclipselink-session-customizer | author:zalando description:EclipseLink Session Customizer implementation.
+github-zalando-297-1 | gulp-check-unused-css | https://github.com/zalando/gulp-check-unused-css | author:zalando description:Check your HTML templates for unused CSS classes
+github-zalando-203-2 | connexion | https://github.com/zalando/connexion | author:zalando description:Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation and OAuth2 support
+github-zalando-184-3 | patroni | https://github.com/zalando/patroni | author:zalando description:Runners to orchestrate a high-availability PostgreSQL
+github-zalando-146-4 | skipper | https://github.com/zalando/skipper | author:zalando description:An HTTP router, built with Go, that acts as a reverse proxy with support for custom route definitions
+github-zalando-144-5 | pg_view | https://github.com/zalando/pg_view | author:zalando description:PostgreSQL Activity View Utility
+github-zalando-134-6 | MapleBacon | https://github.com/zalando/MapleBacon | author:zalando description:MapleBacon is a Swift image download and caching library.
+github-zalando-131-7 | PGObserver | https://github.com/zalando/PGObserver | author:zalando description:A battle-tested, flexible and comprehensive monitoring solution for your PostgreSQL databases
+github-zalando-89-8 | spilo | https://github.com/zalando/spilo | author:zalando description:Highly available elephant herd: HA PostgreSQL cluster using Docker and STUPS
+github-zalando-74-9 | zmon | https://github.com/zalando/zmon | author:zalando description:Real-time monitoring of critical metrics and KPIs via easy-to-use dashboards, Grafana2 visualizations & more
+github-zalando-65-10 | elm-street-404 | https://github.com/zalando/elm-street-404 | author:zalando description:A fun WebGL game built with Elm
+github-zalando-63-11 | zalando-rules-of-play | https://github.com/zalando/zalando-rules-of-play | author:zalando description:Zalando Tech’s guidelines for building new applications and managing legacy systems.
+github-zalando-57-12 | play-swagger | https://github.com/zalando/play-swagger | author:zalando description:Provides Swagger support for the Play-Framework
+github-zalando-44-13 | restful-api-guidelines | https://github.com/zalando/restful-api-guidelines | author:zalando description:A model set of guidelines for RESTful APIs, created by Zalando
+github-zalando-42-14 | innkeeper | https://github.com/zalando/innkeeper | author:zalando description:Simple route management API for Skipper
+github-zalando-41-15 | zappr | https://github.com/zalando/zappr | author:zalando description:Enhance your Github workflow with the simple flip of a toggle
+github-zalando-38-16 | cube | https://github.com/zalando/cube | author:zalando description:A versatile, CRUD-like tool that allows you to organize and manage your data
+github-zalando-38-17 | java-sproc-wrapper | https://github.com/zalando/java-sproc-wrapper | author:zalando description:Java Stored Procedure Wrapper: Calling PostgreSQL stored procedures from Java
+github-zalando-35-18 | scala-jsonapi | https://github.com/zalando/scala-jsonapi | author:zalando description:A support library for integrating JSON API specification with Scala and Spray JSON or Play! JSON
+github-zalando-35-19 | python-nsenter | https://github.com/zalando/python-nsenter | author:zalando description:Enter kernel namespaces from Python
+github-zalando-32-20 | zalando-howto-open-source | https://github.com/zalando/zalando-howto-open-source | author:zalando description:The guide to open-sourcing projects followed by the tech team at Zalando (zalando.com), Europe's largest online fashion platform.
+github-zalando-30-21 | typhoon | https://github.com/zalando/typhoon | author:zalando description:Distributed system stress and load testing tool for investigating protocol and application latencies
+github-zalando-30-22 | catwatch | https://github.com/zalando/catwatch | author:zalando description:A metrics dashboard for GitHub organizations, with results accessible via REST API
+github-zalando-29-23 | tailor | https://github.com/zalando/tailor | author:zalando description:A streaming layout service for front-end microservices
+github-zalando-25-24 | dress-code | https://github.com/zalando/dress-code | author:zalando description:The Dress Code is the official style guide and style framework for all Brand Solutions products.
+github-zalando-24-25 | elephant-worker | https://github.com/zalando/elephant-worker | author:zalando description:Background workers in PostgreSQL
+github-zalando-23-26 | problem | https://github.com/zalando/problem | author:zalando description:Problem is a Java library that implements application/problem+json.
+github-zalando-22-27 | beard | https://github.com/zalando/beard | author:zalando description:A lightweight logicless templating engine, written in Scala and inspired by Mustache
+github-zalando-22-28 | spark-appliance | https://github.com/zalando/spark-appliance | author:zalando description:Distributed HA Spark standalone cluster appliance for AWS environment using STUPS, Docker and Jupyter Notebook for Spark SQL, Python / PySpark and R / SparkR
+github-zalando-22-29 | shop-api-documentation | https://github.com/zalando/shop-api-documentation | author:zalando description:Zalando SE public API documentation
+github-zalando-21-30 | expan | https://github.com/zalando/expan | author:zalando description:A Python library for statistical analysis of randomised control trials (A/B tests)
+github-zalando-18-31 | logbook | https://github.com/zalando/logbook | author:zalando description:An extensible Java library for HTTP request and response logging
+github-zalando-17-32 | jackson-datatype-money | https://github.com/zalando/jackson-datatype-money | author:zalando description:Extension module to properly support datatypes of javax.money.
+github-zalando-17-33 | problem-spring-web | https://github.com/zalando/problem-spring-web | author:zalando description:A library for handling Problems in Spring Web MVC
+github-zalando-16-34 | tech-radar | https://github.com/zalando/tech-radar | author:zalando description:A tool to help teams make the right technology choices.
+github-zalando-15-35 | nakadi | https://github.com/zalando/nakadi | author:zalando description:A distributed event bus that implements a RESTful API abstraction instead of Kafka-like queues
+github-zalando-14-36 | swagger-mock | https://github.com/zalando/swagger-mock | author:zalando description:Runs an HTTP server based on a swagger definition and returns mocked responses.
+github-zalando-13-37 | tracer | https://github.com/zalando/tracer | author:zalando description:Call tracing and log correlation in distributed systems
+github-zalando-12-38 | stups-cassandra | https://github.com/zalando/stups-cassandra | author:zalando description:Cassandra appliance for the STUPS (AWS) environment with companion Docker image
+github-zalando-12-39 | lizzy | https://github.com/zalando/lizzy | author:zalando description:REST Service to deploy AWS CF templates using Senza
+github-zalando-11-40 | chrome-oauth-bearer-plugin | https://github.com/zalando/chrome-oauth-bearer-plugin | author:zalando description:Chrome plugin to inject OAuth Bearer tokens
+github-zalando-11-41 | package-build | https://github.com/zalando/package-build | author:zalando description:A toolset for building system packages using Docker and fpm-cookery
+github-zalando-10-42 | riptide | https://github.com/zalando/riptide | author:zalando description:Client=side response routing for Spring's RestTemplate
+github-zalando-9-43 | python-clickclick | https://github.com/zalando/python-clickclick | author:zalando description:Click command line utilities
+github-zalando-9-44 | open-source-principles | https://github.com/zalando/open-source-principles | author:zalando description:Zalando's Open Source Principles
+github-zalando-9-45 | acid-tools | https://github.com/zalando/acid-tools | author:zalando description:Various tools around PostgreSQL monitoring/management
+github-zalando-9-46 | pazuzu-registry | https://github.com/zalando/pazuzu-registry | author:zalando description:A feature registry for customized Docker images
+github-zalando-9-47 | scala-study-group | https://github.com/zalando/scala-study-group | author:zalando description:Materials developed by Zalando's internal Scala Study Group
+github-zalando-8-48 | oauth2-client-js | https://github.com/zalando/oauth2-client-js | author:zalando description:A library to help you handling OAuth2 access and refresh tokens.
+github-zalando-8-49 | ui-automation-chrome-extension | https://github.com/zalando/ui-automation-chrome-extension | author:zalando description:Chrome extension to help you to write automated Selenium tests faster
+github-zalando-8-50 | shop-api-demo | https://github.com/zalando/shop-api-demo | author:zalando description:This is a small demo to showcase how to use Zalando Shop API
+github-zalando-8-51 | scarl | https://github.com/zalando/scarl | author:zalando description:A Scala library that acts as a binding layer connecting the Erlang and Scala/Akka universes
+github-zalando-7-52 | go-tokens | https://github.com/zalando/go-tokens | author:zalando description:Golang library to manage OAuth access tokens
+github-zalando-7-53 | zmon-controller | https://github.com/zalando/zmon-controller | author:zalando description:ZMON Frontend Controller with UI and REST API
+github-zalando-7-54 | spring-cloud-config-aws-kms | https://github.com/zalando/spring-cloud-config-aws-kms | author:zalando description:Spring Cloud Config add-on that provides encryption via AWS KMS
+github-zalando-7-55 | zmon-worker | https://github.com/zalando/zmon-worker | author:zalando description:ZMON Python Worker
+github-zalando-7-56 | stups-etcd-cluster | https://github.com/zalando/stups-etcd-cluster | author:zalando description:Etcd cluster appliance for the STUPS (AWS) environment
+github-zalando-7-57 | saiki-buku | https://github.com/zalando/saiki-buku | author:zalando description:Kafka Appliance for STUPS
+github-zalando-7-58 | stups2go | https://github.com/zalando/stups2go | author:zalando description:Go Continuous Delivery service based on the STUPS infrastructure.
+github-zalando-7-59 | turnstile | https://github.com/zalando/turnstile | author:zalando description:Zalando's Local Git Hooks
+github-zalando-7-60 | axiom-web | https://github.com/zalando/axiom-web | author:zalando description:Axiom web libraries
+github-zalando-7-61 | github-maintainer-cli | https://github.com/zalando/github-maintainer-cli | author:zalando description:CLI support tool for GitHub repo maintainers
+github-zalando-6-62 | planb-tokeninfo | https://github.com/zalando/planb-tokeninfo | author:zalando description:Plan B Token Info service for JWT tokens
+github-zalando-6-63 | ghe-backup | https://github.com/zalando/ghe-backup | author:zalando description:multi AWS account GitHub Enterprise backup based on Docker.
+github-zalando-6-64 | play-swagger-service | https://github.com/zalando/play-swagger-service | author:zalando description:Play-Swagger activator template
+github-zalando-6-65 | environmental | https://github.com/zalando/environmental | author:zalando description:Map a python configuration from environment variables
+github-zalando-6-66 | react-zoom | https://github.com/zalando/react-zoom | author:zalando description:Lightweight and stateless modal component for React.js based on flexbox
+github-zalando-6-67 | zmon-android | https://github.com/zalando/zmon-android | author:zalando description:Android client for ZMON monitoring
+github-zalando-6-68 | banknote | https://github.com/zalando/banknote | author:zalando description:A simple JavaScript libary for formatting currency amounts according to Unicode CLDR standards
+github-zalando-6-69 | sunstreet | https://github.com/zalando/sunstreet | author:zalando description:Sunstreet is a minimalistic blog template, specially made for Github pages and can be statically/dynamically served anywhere else too
+github-zalando-5-70 | planb-provider | https://github.com/zalando/planb-provider | author:zalando description:Plan B OpenID Connect Provider issuing JWT tokens
+github-zalando-5-71 | zmon-docs | https://github.com/zalando/zmon-docs | author:zalando description:ZMON Documentation
+github-zalando-5-72 | docker-openjdk | https://github.com/zalando/docker-openjdk | author:zalando description:Docker image with OpenJDK and Zalando CA
+github-zalando-5-73 | funelo | https://github.com/zalando/funelo | author:zalando description:Big Data ingestion made easy.
+github-zalando-5-74 | planb-revocation | https://github.com/zalando/planb-revocation | author:zalando description:Plan B Revocation Service for JWT tokens
+github-zalando-5-75 | spring-boot-etcd | https://github.com/zalando/spring-boot-etcd | author:zalando description:etcd client to access and store configuration values in an etcd cluster
+github-zalando-5-76 | openapi-cli-client | https://github.com/zalando/openapi-cli-client | author:zalando description:OpenAPI/Swagger CLI Client
+github-zalando-5-77 | react-zlide | https://github.com/zalando/react-zlide | author:zalando description:Lightweight and stateless slider component for React.js
+github-zalando-5-78 | docker-ubuntu | https://github.com/zalando/docker-ubuntu | author:zalando description:Ubuntu base image including Zalando CA
+github-zalando-5-79 | test-service-kit | https://github.com/zalando/test-service-kit | author:zalando description:Micro-framework that manages external services for tests: mock HTTP services, Docker containers, databases, etc.)
+github-zalando-5-80 | zester | https://github.com/zalando/zester | author:zalando description:With Zester you can run mutation tests with ease in IntelliJ IDEA.
+github-zalando-5-81 | spoton | https://github.com/zalando/spoton | author:zalando description:Spot On! is an extension for your AWS account to use AWS Spot Fleet for your stateless services.
+github-zalando-5-82 | lizzy-client | https://github.com/zalando/lizzy-client | author:zalando description:Script to deploy Senza definitions using a Lizzy server.
+github-zalando-5-83 | zalando.github.io-dev | https://github.com/zalando/zalando.github.io-dev | author:zalando description:The zalando.github.io open-source metrics dashboard
+github-zalando-4-84 | intellij-swagger | https://github.com/zalando/intellij-swagger | author:zalando description:A plugin to help you easily edit Swagger specification files inside IntelliJ IDEA
+github-zalando-4-85 | kontrolletti | https://github.com/zalando/kontrolletti | author:zalando description:Auditing made easier with this principled REST API, which aggregates info from different source control mgmt systems
+github-zalando-4-86 | db_agg | https://github.com/zalando/db_agg | author:zalando description:Join multiple datasources with a single query
+github-zalando-4-87 | toga | https://github.com/zalando/toga | author:zalando description:Toolset for validation, testdata generation and testdata distribution based on JSON Schema.
+github-zalando-4-88 | zmon-cli | https://github.com/zalando/zmon-cli | author:zalando description:ZMON Command Line Interface
+github-zalando-4-89 | zalando.github.io | https://github.com/zalando/zalando.github.io | author:zalando description:Zalando github.io organization page
+github-zalando-4-90 | zmon-scheduler | https://github.com/zalando/zmon-scheduler | author:zalando description:ZMON Scheduler
+github-zalando-4-91 | testing-microservices | https://github.com/zalando/testing-microservices | author:zalando description:An experimental repository to try out automated testing of microservice interaction over a message queue.
+github-zalando-4-92 | github-user-team-sync | https://github.com/zalando/github-user-team-sync | author:zalando description:Sync employees and their team membership with GitHub.com
+github-zalando-4-93 | docker-python | https://github.com/zalando/docker-python | author:zalando description:Docker image with Python 3.5 and Zalando CA
+github-zalando-4-94 | docker-locust | https://github.com/zalando/docker-locust | author:zalando description:Docker image for the Locust.io open source load testing tool
+github-zalando-4-95 | planb-cassandra | https://github.com/zalando/planb-cassandra | author:zalando description:Plan B Cassandra for STUPS/AWS with static IPs
+github-zalando-4-96 | reactive-nakadi | https://github.com/zalando/reactive-nakadi | author:zalando description:Reactive Streams for Nakadi
+github-zalando-3-97 | ssl-keygen | https://github.com/zalando/ssl-keygen | author:zalando description:Utilities to generate browser-compatible (test) SSL certificates.
+github-zalando-3-98 | sea-proxy | https://github.com/zalando/sea-proxy | author:zalando description:HTTP reverse proxy which terminates OAuth2 and SSL.
+github-zalando-3-99 | zmon-notification-service | https://github.com/zalando/zmon-notification-service | author:zalando description:Push notifications for google cloud messaging
+github-zalando-3-100 | nakadi-klients | https://github.com/zalando/nakadi-klients | author:zalando description:Nakadi Low Level API client
+github-zalando-3-101 | docker-node | https://github.com/zalando/docker-node | author:zalando description:Docker image with Node.js and Zalando CA
+github-zalando-3-102 | intreact | https://github.com/zalando/intreact | author:zalando description:Handling interactions with dumb react components.
+github-zalando-3-103 | pazuzu-ui | https://github.com/zalando/pazuzu-ui | author:zalando description:UI for Pazuzu Registry and Pazuzu, the Docker Maker
+github-zalando-3-104 | saiki | https://github.com/zalando/saiki | author:zalando description:Saiki provides a scalable Change Data Capture (CDC) infrastructure.
+github-zalando-3-105 | money-validation | https://github.com/zalando/money-validation | author:zalando description:Validation support for javax.money
+github-zalando-3-106 | gitbook-structured-toc | https://github.com/zalando/gitbook-structured-toc | author:zalando description:A Table Of Contents module for Gitbook that adds headers as anchors
+github-zalando-3-107 | aws-saml-login | https://github.com/zalando/aws-saml-login | author:zalando description:AWS SAML login helper library for Python (only supports Shibboleth Identity Provider atm)
+github-zalando-3-108 | superagent-oauth2-client | https://github.com/zalando/superagent-oauth2-client | author:zalando description:A superagent plugin for stressless OAuth2 token management.
+github-zalando-3-109 | python-gitconfig | https://github.com/zalando/python-gitconfig | author:zalando description:Small wrapper around the git cli to expose git configuration as a mapping
+github-zalando-3-110 | sprocrest | https://github.com/zalando/sprocrest | author:zalando description:Automatic restful service wrapper for PostgreSQL
+github-zalando-2-111 | openig-vagrant | https://github.com/zalando/openig-vagrant | author:zalando description:A Vagrant Box containing a sample installation of OpenIG
+github-zalando-2-112 | zmon-eventlog-service | https://github.com/zalando/zmon-eventlog-service | author:zalando description:ZMON's EventLog service receives and provides Event Log entries
+github-zalando-2-113 | forgerock-docker | https://github.com/zalando/forgerock-docker | author:zalando description:Docker definitions for the ForgeRock stack
+github-zalando-2-114 | pazuzu | https://github.com/zalando/pazuzu | author:zalando description:Pazuzu, the Docker Maker
+github-zalando-2-115 | react-callout | https://github.com/zalando/react-callout | author:zalando description:Lightweight and stateless callout component for React.js
+github-zalando-2-116 | docker-sphinx-doc | https://github.com/zalando/docker-sphinx-doc | author:zalando description:Docker image to update, build and serve Sphinx documentation including OAuth authorization flow
+github-zalando-2-117 | rkt-vagrant-box | https://github.com/zalando/rkt-vagrant-box | author:zalando description:Virtual box to test rocket (https://github.com/coreos/rkt)
+github-zalando-2-118 | zmon-ios | https://github.com/zalando/zmon-ios | author:zalando description:iOS client for ZMON monitoring
+github-zalando-2-119 | baigan-config | https://github.com/zalando/baigan-config | author:zalando description:Simple and distributed configuration service framework.
+github-zalando-2-120 | saiki-pemetaan | https://github.com/zalando/saiki-pemetaan | author:zalando description:A control center for all Saiki and Kafka/Buku tasks
+github-zalando-2-121 | zmon-aws-agent | https://github.com/zalando/zmon-aws-agent | author:zalando description:Use AWS API to retrieve "known" applications (currently expecting STUPS compatible Taupage userdata for this)
+github-zalando-2-122 | turnstile-zalando | https://github.com/zalando/turnstile-zalando | author:zalando description:Meta-package to install turnstile and extension
+github-zalando-2-123 | turnstile-codevalidator | https://github.com/zalando/turnstile-codevalidator | author:zalando description:Codevalidator extension for turnstile
+github-zalando-2-124 | react-automatic-width | https://github.com/zalando/react-automatic-width | author:zalando description:Automatically sets `width` property on child components
+github-zalando-1-125 | rezponsive | https://github.com/zalando/rezponsive | author:zalando description:React decorator for responsive behaviors
+github-zalando-1-126 | pathmux | https://github.com/zalando/pathmux | author:zalando description:The go package pathmux is a fork of httptreemux
+github-zalando-1-127 | switchboard | https://github.com/zalando/switchboard | author:zalando description:An event router that helps to write simple, asynchronous tests.
+github-zalando-1-128 | crypto | https://github.com/zalando/crypto | author:zalando description:If you want to hide things.
+github-zalando-1-129 | dress-code-bower | https://github.com/zalando/dress-code-bower | author:zalando description:Brand Solutions Dress Code is the official style guide ad style framwork for all Brand Solutions products. (Bower version)
+github-zalando-1-130 | clair-sqs | https://github.com/zalando/clair-sqs | author:zalando description:CoreOS' Clair packaged for use with AWS SQS and SNS.
+github-zalando-1-131 | jersey-media-json-gson | https://github.com/zalando/jersey-media-json-gson | author:zalando description:Jersey JSON GSON entity providers support
+github-zalando-1-132 | zmon-data-service | https://github.com/zalando/zmon-data-service | author:zalando description:Receiving end of new worker to push data across DC boundaries
+github-zalando-1-133 | spring-boot-cassandra | https://github.com/zalando/spring-boot-cassandra | author:zalando description:Updated Feb 26, 2016
+github-zalando-1-134 | scoop | https://github.com/zalando/scoop | author:zalando description:A simple library based on Akka Cluster to partition work between multiple instances belonging to the same cluster
+github-zalando-1-135 | planb-docs | https://github.com/zalando/planb-docs | author:zalando description:Plan B OAuth2/JWT Infrastructure Documentation
+github-zalando-1-136 | camunda-cockpit-client | https://github.com/zalando/camunda-cockpit-client | author:zalando description:Camunda Cockpit Commandline Client
+github-zalando-1-137 | zengage | https://github.com/zalando/zengage | author:zalando description:Updated Dec 17, 2015
+github-zalando-1-138 | zmon-actuator | https://github.com/zalando/zmon-actuator | author:zalando description:Improved REST endpoint metrics for Spring Boot Projects
+github-zalando-1-139 | zmon-demo | https://github.com/zalando/zmon-demo | author:zalando description:ZMON demo installation scripts (single-node)
+github-zalando-1-140 | kontrolletti-client-java | https://github.com/zalando/kontrolletti-client-java | author:zalando description:Java interfaces and implementations for the Kontrolletti API
+github-zalando-1-141 | spring-data-jpa-businesskey | https://github.com/zalando/spring-data-jpa-businesskey | author:zalando description:Updated Jul 29, 2015
+github-zalando-1-142 | spring-social-zauth | https://github.com/zalando/spring-social-zauth | author:zalando description:Spring-Social support for Z-Auth.
+github-zalando-1-143 | read-our-docs | https://github.com/zalando/read-our-docs | author:zalando description:Simple documentation repository. It currently supports Git repositories with Sphinx docs.
+github-zalando-0-144 | octopus-ci | https://github.com/zalando/octopus-ci | author:zalando description:Updated Jun 8, 2015
+github-zalando-0-145 | go-ldapdn | https://github.com/zalando/go-ldapdn | author:zalando description:go module for handling LDAP DNs
+github-zalando-0-146 | partitioned | https://github.com/zalando/partitioned | author:zalando description:Partitioned coordinates the partition consumption within a group of Nakadi clients
+github-zalando-0-147 | scala-study-group-bnb | https://github.com/zalando/scala-study-group-bnb | author:zalando description:Scala Study Group for Wholesale Engineering @ BNB
+github-zalando-0-148 | nakadi-end2end | https://github.com/zalando/nakadi-end2end | author:zalando description:Application for monitoring end2end event processing time of nakadi messaging bus
+github-zalando-0-149 | jackson-module-unknown-property | https://github.com/zalando/jackson-module-unknown-property | author:zalando description:Jackson extension module that adds standardized logging of unknown properties.
+github-zalando-0-150 | zmon-metric-cache | https://github.com/zalando/zmon-metric-cache | author:zalando description:API metric cache for ZMON frontend
+github-zalando-0-151 | esio | https://github.com/zalando/esio | author:zalando description:An Erlang library that provides an HTTP client for Elasticsearch
+github-zalando-0-152 | gitbook-restructure-navigation | https://github.com/zalando/gitbook-restructure-navigation | author:zalando description:Restructures the navigation bar in a gitbook website
+github-zalando-0-153 | eclipselink-session-customizer | https://github.com/zalando/eclipselink-session-customizer | author:zalando description:EclipseLink Session Customizer implementation.

@@ -1,17 +1,17 @@
-willowgarage-github-2-1 | multimaster_experimental | https://github.com/willowgarage/multimaster_experimental | description:Updated Feb 4, 2015
-willowgarage-github-2-2 | depthcloudjs | https://github.com/willowgarage/depthcloudjs | description:DEPRECATED - Compressed point cloud streaming in three.js
-willowgarage-github-1-3 | pr2-kernel | https://github.com/willowgarage/pr2-kernel | description:Kernel and build infrastructure for the PR2
-willowgarage-github-1-4 | heartbeats | https://github.com/willowgarage/heartbeats | description:An easy way for creating heartbeats across multiple nodes in a ROS graph along with rough statistics about network performance
-willowgarage-github-0-5 | interactive-manipulation-install | https://github.com/willowgarage/interactive-manipulation-install | description:Updated Feb 18, 2013
-willowgarage-github-0-6 | interactive-manipulation-sandbox | https://github.com/willowgarage/interactive-manipulation-sandbox | description:Playground for Interactive Manipulation code that aren't quite baked enough for a full-on repo.
-willowgarage-github-0-7 | plane_finder | https://github.com/willowgarage/plane_finder | description:Updated Sep 6, 2012
-willowgarage-github-0-8 | smach_executer | https://github.com/willowgarage/smach_executer | description:Updated Jan 22, 2013
-willowgarage-github-0-9 | wgtest_status_indicator | https://github.com/willowgarage/wgtest_status_indicator | description:Controls Delcom USB indicator light with the status of Test Manager.
-willowgarage-github-0-10 | world_model | https://github.com/willowgarage/world_model | description:World model storage and annotation interfaces.
-willowgarage-github-0-11 | canonical_scan_matcher | https://github.com/willowgarage/canonical_scan_matcher | description:Wrapper around Andrea Censi's canonical_scan_matcher to build it as a ROS package.
-willowgarage-github-0-12 | wg_hardware_test | https://github.com/willowgarage/wg_hardware_test | description:Hardware testing tools and utilities. Willow Garage use only.
-willowgarage-github-0-13 | bmce_apps | https://github.com/willowgarage/bmce_apps | description:Custom apps for BMCE bank.
-willowgarage-github-0-14 | shield_teleop | https://github.com/willowgarage/shield_teleop | description:Control ROS robots with an nVidia SHIELD as well as view their video stream. Mimics ROS PS3 teleop.
-willowgarage-github-0-15 | pr2_hardware | https://github.com/willowgarage/pr2_hardware | description:Updated Feb 1, 2013
-willowgarage-github-0-16 | arm_navigation | https://github.com/willowgarage/arm_navigation | description:Updated Jan 28, 2014
-willowgarage-github-0-17 | arm_navigation_experimental | https://github.com/willowgarage/arm_navigation_experimental | description:Updated Jan 28, 2014
+github-willowgarage-2-1 | multimaster_experimental | https://github.com/willowgarage/multimaster_experimental | description:Updated Feb 4, 2015
+github-willowgarage-2-2 | depthcloudjs | https://github.com/willowgarage/depthcloudjs | description:DEPRECATED - Compressed point cloud streaming in three.js
+github-willowgarage-1-3 | pr2-kernel | https://github.com/willowgarage/pr2-kernel | description:Kernel and build infrastructure for the PR2
+github-willowgarage-1-4 | heartbeats | https://github.com/willowgarage/heartbeats | description:An easy way for creating heartbeats across multiple nodes in a ROS graph along with rough statistics about network performance
+github-willowgarage-0-5 | interactive-manipulation-install | https://github.com/willowgarage/interactive-manipulation-install | description:Updated Feb 18, 2013
+github-willowgarage-0-6 | interactive-manipulation-sandbox | https://github.com/willowgarage/interactive-manipulation-sandbox | description:Playground for Interactive Manipulation code that aren't quite baked enough for a full-on repo.
+github-willowgarage-0-7 | plane_finder | https://github.com/willowgarage/plane_finder | description:Updated Sep 6, 2012
+github-willowgarage-0-8 | smach_executer | https://github.com/willowgarage/smach_executer | description:Updated Jan 22, 2013
+github-willowgarage-0-9 | wgtest_status_indicator | https://github.com/willowgarage/wgtest_status_indicator | description:Controls Delcom USB indicator light with the status of Test Manager.
+github-willowgarage-0-10 | world_model | https://github.com/willowgarage/world_model | description:World model storage and annotation interfaces.
+github-willowgarage-0-11 | canonical_scan_matcher | https://github.com/willowgarage/canonical_scan_matcher | description:Wrapper around Andrea Censi's canonical_scan_matcher to build it as a ROS package.
+github-willowgarage-0-12 | wg_hardware_test | https://github.com/willowgarage/wg_hardware_test | description:Hardware testing tools and utilities. Willow Garage use only.
+github-willowgarage-0-13 | bmce_apps | https://github.com/willowgarage/bmce_apps | description:Custom apps for BMCE bank.
+github-willowgarage-0-14 | shield_teleop | https://github.com/willowgarage/shield_teleop | description:Control ROS robots with an nVidia SHIELD as well as view their video stream. Mimics ROS PS3 teleop.
+github-willowgarage-0-15 | pr2_hardware | https://github.com/willowgarage/pr2_hardware | description:Updated Feb 1, 2013
+github-willowgarage-0-16 | arm_navigation | https://github.com/willowgarage/arm_navigation | description:Updated Jan 28, 2014
+github-willowgarage-0-17 | arm_navigation_experimental | https://github.com/willowgarage/arm_navigation_experimental | description:Updated Jan 28, 2014

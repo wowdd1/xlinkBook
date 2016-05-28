@@ -1,28 +1,28 @@
-nextdoor-github-51-1 | ndscheduler | https://github.com/Nextdoor/ndscheduler | author:nextdoor description:A flexible python library for building your own cron-like system, with REST APIs and a Web UI.
-nextdoor-github-34-2 | zkwatcher | https://github.com/Nextdoor/zkwatcher | author:nextdoor description:Service monitoring daemon that registers/deregisters servers in Apache ZooKeeper
-nextdoor-github-23-3 | git-change | https://github.com/Nextdoor/git-change | author:nextdoor description:Git command to create and manage Gerrit Code Review changes
-nextdoor-github-22-4 | puppet_zkwatcher | https://github.com/Nextdoor/puppet_zkwatcher | author:nextdoor description:Puppet library and manifest for use with zk_watcher
-nextdoor-github-21-5 | ndkale | https://github.com/Nextdoor/ndkale | author:nextdoor description:Kale is a python task worker library that supports priority queues on Amazon SQS
-nextdoor-github-19-6 | hooky | https://github.com/Nextdoor/hooky | author:nextdoor description:Webhook Translation Service
-nextdoor-github-15-7 | collectd_plugins | https://github.com/Nextdoor/collectd_plugins | author:nextdoor description:Custom Collectd Plugins
-nextdoor-github-14-8 | ndserviceregistry | https://github.com/Nextdoor/ndserviceregistry | author:nextdoor description:Nextdoor ServiceRegistry Foundational Python Class
-nextdoor-github-8-9 | kingpin | https://github.com/Nextdoor/kingpin | author:nextdoor description:Deployment Automation Engine
-nextdoor-github-7-10 | NDRefresh | https://github.com/Nextdoor/NDRefresh | author:nextdoor description:Flexible pull to refresh control for iOS, written in Swift.
-nextdoor-github-3-11 | puppet_thycotic | https://github.com/Nextdoor/puppet_thycotic | author:nextdoor description:Puppet library for accessing 'secrets' stored in Thycotic's 'Secret Server'
-nextdoor-github-2-12 | puppet_rightscale | https://github.com/Nextdoor/puppet_rightscale | author:nextdoor description:Puppet libraries and modules for interacting with RightScale
-nextdoor-github-2-13 | zkmonitor | https://github.com/Nextdoor/zkmonitor | author:nextdoor description:Zookeeper Monitoring Daemon
-nextdoor-github-2-14 | dutch-boy | https://github.com/Nextdoor/dutch-boy | author:nextdoor description:A Memory Leak Detector Plugin for Nose
-nextdoor-github-2-15 | public_cookbooks | https://github.com/Nextdoor/public_cookbooks | author:nextdoor description:RightScale Cookbooks: Public Cookbooks
-nextdoor-github-2-16 | puppet-strongswan | https://github.com/Nextdoor/puppet-strongswan | author:nextdoor description:Manages StrongSwan on a host with Puppet
-nextdoor-github-1-17 | NDPhraseParser | https://github.com/Nextdoor/NDPhraseParser | author:nextdoor description:A library that allows for formatting strings with context, like Python.
-nextdoor-github-1-18 | cloudformation | https://github.com/Nextdoor/cloudformation | author:nextdoor description:Simple repo of totally public CloudFormation scripts
-nextdoor-github-1-19 | nextdoor.github.io | https://github.com/Nextdoor/nextdoor.github.io | author:nextdoor description:Nextdoor Opensource Projects
-nextdoor-github-1-20 | puppet-k8s | https://github.com/Nextdoor/puppet-k8s | author:nextdoor description:Kubernetes Puppet Module
-nextdoor-github-1-21 | tornado_rest_client | https://github.com/Nextdoor/tornado_rest_client | author:nextdoor description:Tornado REST Client Framework
-nextdoor-github-1-22 | public-ops-tools | https://github.com/Nextdoor/public-ops-tools | author:nextdoor description:Rundeck scripts, etc. that are publicly accessible.
-nextdoor-github-0-23 | yardmaster | https://github.com/Nextdoor/yardmaster | author:nextdoor description:n. a person who superintends all or part of a railroad yard
-nextdoor-github-0-24 | python-imaging-library | https://github.com/Nextdoor/python-imaging-library | author:nextdoor description:Nextdoor fork of PIL
-nextdoor-github-0-25 | rancher-utils | https://github.com/Nextdoor/rancher-utils | author:nextdoor description:Updated Feb 17, 2016
-nextdoor-github-0-26 | hubot-scripts | https://github.com/Nextdoor/hubot-scripts | author:nextdoor description:Updated Jan 12, 2016
-nextdoor-github-0-27 | alphabot | https://github.com/Nextdoor/alphabot | author:nextdoor description:Open source python bot to chat with Slack and other platforms.
-nextdoor-github-0-28 | rightscale_rightlink10_rightscripts | https://github.com/Nextdoor/rightscale_rightlink10_rightscripts | author:nextdoor description:"Cookbook" scripts for use with RightScale RightLink10
+github-nextdoor-51-1 | ndscheduler | https://github.com/Nextdoor/ndscheduler | author:nextdoor description:A flexible python library for building your own cron-like system, with REST APIs and a Web UI.
+github-nextdoor-34-2 | zkwatcher | https://github.com/Nextdoor/zkwatcher | author:nextdoor description:Service monitoring daemon that registers/deregisters servers in Apache ZooKeeper
+github-nextdoor-23-3 | git-change | https://github.com/Nextdoor/git-change | author:nextdoor description:Git command to create and manage Gerrit Code Review changes
+github-nextdoor-22-4 | puppet_zkwatcher | https://github.com/Nextdoor/puppet_zkwatcher | author:nextdoor description:Puppet library and manifest for use with zk_watcher
+github-nextdoor-21-5 | ndkale | https://github.com/Nextdoor/ndkale | author:nextdoor description:Kale is a python task worker library that supports priority queues on Amazon SQS
+github-nextdoor-19-6 | hooky | https://github.com/Nextdoor/hooky | author:nextdoor description:Webhook Translation Service
+github-nextdoor-15-7 | collectd_plugins | https://github.com/Nextdoor/collectd_plugins | author:nextdoor description:Custom Collectd Plugins
+github-nextdoor-14-8 | ndserviceregistry | https://github.com/Nextdoor/ndserviceregistry | author:nextdoor description:Nextdoor ServiceRegistry Foundational Python Class
+github-nextdoor-8-9 | kingpin | https://github.com/Nextdoor/kingpin | author:nextdoor description:Deployment Automation Engine
+github-nextdoor-7-10 | NDRefresh | https://github.com/Nextdoor/NDRefresh | author:nextdoor description:Flexible pull to refresh control for iOS, written in Swift.
+github-nextdoor-3-11 | puppet_thycotic | https://github.com/Nextdoor/puppet_thycotic | author:nextdoor description:Puppet library for accessing 'secrets' stored in Thycotic's 'Secret Server'
+github-nextdoor-2-12 | puppet_rightscale | https://github.com/Nextdoor/puppet_rightscale | author:nextdoor description:Puppet libraries and modules for interacting with RightScale
+github-nextdoor-2-13 | zkmonitor | https://github.com/Nextdoor/zkmonitor | author:nextdoor description:Zookeeper Monitoring Daemon
+github-nextdoor-2-14 | dutch-boy | https://github.com/Nextdoor/dutch-boy | author:nextdoor description:A Memory Leak Detector Plugin for Nose
+github-nextdoor-2-15 | public_cookbooks | https://github.com/Nextdoor/public_cookbooks | author:nextdoor description:RightScale Cookbooks: Public Cookbooks
+github-nextdoor-2-16 | puppet-strongswan | https://github.com/Nextdoor/puppet-strongswan | author:nextdoor description:Manages StrongSwan on a host with Puppet
+github-nextdoor-1-17 | NDPhraseParser | https://github.com/Nextdoor/NDPhraseParser | author:nextdoor description:A library that allows for formatting strings with context, like Python.
+github-nextdoor-1-18 | cloudformation | https://github.com/Nextdoor/cloudformation | author:nextdoor description:Simple repo of totally public CloudFormation scripts
+github-nextdoor-1-19 | nextdoor.github.io | https://github.com/Nextdoor/nextdoor.github.io | author:nextdoor description:Nextdoor Opensource Projects
+github-nextdoor-1-20 | puppet-k8s | https://github.com/Nextdoor/puppet-k8s | author:nextdoor description:Kubernetes Puppet Module
+github-nextdoor-1-21 | tornado_rest_client | https://github.com/Nextdoor/tornado_rest_client | author:nextdoor description:Tornado REST Client Framework
+github-nextdoor-1-22 | public-ops-tools | https://github.com/Nextdoor/public-ops-tools | author:nextdoor description:Rundeck scripts, etc. that are publicly accessible.
+github-nextdoor-0-23 | yardmaster | https://github.com/Nextdoor/yardmaster | author:nextdoor description:n. a person who superintends all or part of a railroad yard
+github-nextdoor-0-24 | python-imaging-library | https://github.com/Nextdoor/python-imaging-library | author:nextdoor description:Nextdoor fork of PIL
+github-nextdoor-0-25 | rancher-utils | https://github.com/Nextdoor/rancher-utils | author:nextdoor description:Updated Feb 17, 2016
+github-nextdoor-0-26 | hubot-scripts | https://github.com/Nextdoor/hubot-scripts | author:nextdoor description:Updated Jan 12, 2016
+github-nextdoor-0-27 | alphabot | https://github.com/Nextdoor/alphabot | author:nextdoor description:Open source python bot to chat with Slack and other platforms.
+github-nextdoor-0-28 | rightscale_rightlink10_rightscripts | https://github.com/Nextdoor/rightscale_rightlink10_rightscripts | author:nextdoor description:"Cookbook" scripts for use with RightScale RightLink10

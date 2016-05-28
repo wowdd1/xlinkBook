@@ -1,21 +1,21 @@
-lyft-github-1397-1 | scissors | https://github.com/lyft/scissors | author:lyft description:✂ Android image cropping library
-lyft-github-890-2 | confidant | https://github.com/lyft/confidant | author:lyft description:Confidant: your secret keeper.
-lyft-github-713-3 | scoop | https://github.com/lyft/scoop | author:lyft description:🍦 micro framework for building view based modular Android applications.
-lyft-github-610-4 | mapper | https://github.com/lyft/mapper | author:lyft description:A JSON deserialization library for Swift
-lyft-github-87-5 | linty_fresh | https://github.com/lyft/linty_fresh | author:lyft description:Surface lint errors during code review
-lyft-github-49-6 | metadataproxy | https://github.com/lyft/metadataproxy | author:lyft description:A proxy for AWS's metadata service that gives out scoped IAM credentials from STS
-lyft-github-44-7 | reactive-http | https://github.com/lyft/reactive-http | author:lyft description:RxJava HTTP Client for Android and Java application
-lyft-github-19-8 | bandit-high-entropy-string | https://github.com/lyft/bandit-high-entropy-string | author:lyft description:A high entropy string plugin for OpenStack's bandit project
-lyft-github-4-9 | dynamodb-hive-serde | https://github.com/lyft/dynamodb-hive-serde | author:lyft description:Hive Deserializer for DynamoDB backup data format
-lyft-github-4-10 | opsreview | https://github.com/lyft/opsreview | author:lyft description:Compile a report of recent PagerDuty alerts for a single escalation policy.
-lyft-github-3-11 | fake_sqs | https://github.com/lyft/fake_sqs | author:lyft description:An implementation of a local SQS service.
-lyft-github-3-12 | collectd-statsd | https://github.com/lyft/collectd-statsd | author:lyft description:collectd plugin to write to statsd
-lyft-github-2-13 | circonus-statsd-backend | https://github.com/lyft/circonus-statsd-backend | author:lyft description:Statsd backend to send metrics to Circonus
-lyft-github-2-14 | CLA | https://github.com/lyft/CLA | author:lyft description:Contributor License Agreement (CLA) for Lyft's open source projects
-lyft-github-0-15 | code-of-conduct | https://github.com/lyft/code-of-conduct | author:lyft description:Code of Conduct for Lyft's open source projects
-lyft-github-0-16 | flask-pystatsd | https://github.com/lyft/flask-pystatsd | author:lyft description:flask extension to simplify the use of the pystatsd library
-lyft-github-0-17 | pycollectd | https://github.com/lyft/pycollectd | author:lyft description:Framework for writing collectd plugins in Python.
-lyft-github-0-18 | heroku-buildpack-php | https://github.com/lyft/heroku-buildpack-php | author:lyft description:Updated Jun 26, 2013
-lyft-github-0-19 | heroku-buildpack-python-data | https://github.com/lyft/heroku-buildpack-python-data | author:lyft description:Updated Jul 10, 2014
-lyft-github-0-20 | homebrew-formulae | https://github.com/lyft/homebrew-formulae | author:lyft description:Yet another homebrew tap
-lyft-github-0-21 | lyft.github.io | https://github.com/lyft/lyft.github.io | author:lyft description:Documentation site for lyft.github.io
+github-lyft-1397-1 | scissors | https://github.com/lyft/scissors | author:lyft description:✂ Android image cropping library
+github-lyft-890-2 | confidant | https://github.com/lyft/confidant | author:lyft description:Confidant: your secret keeper.
+github-lyft-713-3 | scoop | https://github.com/lyft/scoop | author:lyft description:🍦 micro framework for building view based modular Android applications.
+github-lyft-610-4 | mapper | https://github.com/lyft/mapper | author:lyft description:A JSON deserialization library for Swift
+github-lyft-87-5 | linty_fresh | https://github.com/lyft/linty_fresh | author:lyft description:Surface lint errors during code review
+github-lyft-49-6 | metadataproxy | https://github.com/lyft/metadataproxy | author:lyft description:A proxy for AWS's metadata service that gives out scoped IAM credentials from STS
+github-lyft-44-7 | reactive-http | https://github.com/lyft/reactive-http | author:lyft description:RxJava HTTP Client for Android and Java application
+github-lyft-19-8 | bandit-high-entropy-string | https://github.com/lyft/bandit-high-entropy-string | author:lyft description:A high entropy string plugin for OpenStack's bandit project
+github-lyft-4-9 | dynamodb-hive-serde | https://github.com/lyft/dynamodb-hive-serde | author:lyft description:Hive Deserializer for DynamoDB backup data format
+github-lyft-4-10 | opsreview | https://github.com/lyft/opsreview | author:lyft description:Compile a report of recent PagerDuty alerts for a single escalation policy.
+github-lyft-3-11 | fake_sqs | https://github.com/lyft/fake_sqs | author:lyft description:An implementation of a local SQS service.
+github-lyft-3-12 | collectd-statsd | https://github.com/lyft/collectd-statsd | author:lyft description:collectd plugin to write to statsd
+github-lyft-2-13 | circonus-statsd-backend | https://github.com/lyft/circonus-statsd-backend | author:lyft description:Statsd backend to send metrics to Circonus
+github-lyft-2-14 | CLA | https://github.com/lyft/CLA | author:lyft description:Contributor License Agreement (CLA) for Lyft's open source projects
+github-lyft-0-15 | code-of-conduct | https://github.com/lyft/code-of-conduct | author:lyft description:Code of Conduct for Lyft's open source projects
+github-lyft-0-16 | flask-pystatsd | https://github.com/lyft/flask-pystatsd | author:lyft description:flask extension to simplify the use of the pystatsd library
+github-lyft-0-17 | pycollectd | https://github.com/lyft/pycollectd | author:lyft description:Framework for writing collectd plugins in Python.
+github-lyft-0-18 | heroku-buildpack-php | https://github.com/lyft/heroku-buildpack-php | author:lyft description:Updated Jun 26, 2013
+github-lyft-0-19 | heroku-buildpack-python-data | https://github.com/lyft/heroku-buildpack-python-data | author:lyft description:Updated Jul 10, 2014
+github-lyft-0-20 | homebrew-formulae | https://github.com/lyft/homebrew-formulae | author:lyft description:Yet another homebrew tap
+github-lyft-0-21 | lyft.github.io | https://github.com/lyft/lyft.github.io | author:lyft description:Documentation site for lyft.github.io

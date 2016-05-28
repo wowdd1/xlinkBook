@@ -1,29 +1,29 @@
-xiaomi-github-1460-1 | open-falcon | https://github.com/XiaoMi/open-falcon | author:xiaomi description:互联网企业级监控系统
-xiaomi-github-315-2 | minos | https://github.com/XiaoMi/minos | author:xiaomi description:Minos is beyond a hadoop deployment system.
-xiaomi-github-265-3 | rose | https://github.com/XiaoMi/rose | author:xiaomi description:Rose is not only a framework.
-xiaomi-github-247-4 | LuckyMoneyTool | https://github.com/XiaoMi/LuckyMoneyTool | author:xiaomi description:Updated Aug 12, 2015
-xiaomi-github-208-5 | android_tv_metro | https://github.com/XiaoMi/android_tv_metro | author:xiaomi description:android tv metro framework and server API
-xiaomi-github-149-6 | chronos | https://github.com/XiaoMi/chronos | author:xiaomi description:Network service to provide globally strictly monotone increasing timestamp
-xiaomi-github-134-7 | themis | https://github.com/XiaoMi/themis | author:xiaomi description:Themis provides cross-row/cross-table transaction on HBase based on google's percolator.
-xiaomi-github-38-8 | jack | https://github.com/XiaoMi/jack | author:xiaomi description:Jack is a cluster manager built on top of Zookeeper and thrift.
-xiaomi-github-30-9 | misound | https://github.com/XiaoMi/misound | author:xiaomi description:MiSound is a Android application making XiaoMi's SoundBar more powerful. EQ, control, player all in one.
-xiaomi-github-8-10 | galaxy-fds-sdk-android | https://github.com/XiaoMi/galaxy-fds-sdk-android | author:xiaomi description:Android SDK for Xiaomi File Data Storage.
-xiaomi-github-7-11 | galaxy-sdk-java | https://github.com/XiaoMi/galaxy-sdk-java | author:xiaomi description:Java SDK for Xiaomi Structured Datastore Service
-xiaomi-github-7-12 | xiaomi.github.com | https://github.com/XiaoMi/xiaomi.github.com | author:xiaomi description:Updated Apr 23, 2014
-xiaomi-github-6-13 | galaxy-fds-sdk-java | https://github.com/XiaoMi/galaxy-fds-sdk-java | author:xiaomi description:Java SDK for Xiaomi File Data Storage.
-xiaomi-github-6-14 | galaxy-sdk-go | https://github.com/XiaoMi/galaxy-sdk-go | author:xiaomi description:Go SDK for Xiaomi Structured Datastore Service
-xiaomi-github-5-15 | galaxy-thrift-api | https://github.com/XiaoMi/galaxy-thrift-api | author:xiaomi description:Thrift API for Xiaomi Structured Datastore Service
-xiaomi-github-5-16 | galaxy-fds-migration-tool | https://github.com/XiaoMi/galaxy-fds-migration-tool | author:xiaomi description:A MapReduce tool to migrate objects or files parallely between different object storage systems
-xiaomi-github-4-17 | galaxy-fds-sdk-ios | https://github.com/XiaoMi/galaxy-fds-sdk-ios | author:xiaomi description:ios sdk for galaxy-fds
-xiaomi-github-3-18 | galaxy-hadoop | https://github.com/XiaoMi/galaxy-hadoop | author:xiaomi description:Hadoop interface for Xiaomi Open Storage
-xiaomi-github-3-19 | galaxy-sdk-python | https://github.com/XiaoMi/galaxy-sdk-python | author:xiaomi description:Python SDK for Xiaomi Structured Datastore Service
-xiaomi-github-3-20 | galaxy-fds-sdk-python | https://github.com/XiaoMi/galaxy-fds-sdk-python | author:xiaomi description:Python SDK for Xiaomi File Data Storage.
-xiaomi-github-2-21 | galaxy-sdk-nodejs | https://github.com/XiaoMi/galaxy-sdk-nodejs | author:xiaomi description:Node.js SDK for Xiaomi Structured Datastore Service
-xiaomi-github-2-22 | galaxy-fds-sdk-javascript | https://github.com/XiaoMi/galaxy-fds-sdk-javascript | author:xiaomi description:Updated Dec 15, 2015
-xiaomi-github-0-23 | galaxy-sdk-php | https://github.com/XiaoMi/galaxy-sdk-php | author:xiaomi description:PHP SDK for Xiaomi Structured Datastore Service
-xiaomi-github-0-24 | galaxy-fds-sdk-php | https://github.com/XiaoMi/galaxy-fds-sdk-php | author:xiaomi description:PHP SDK for Xiaomi File Data Storage.
-xiaomi-github-0-25 | galaxy-fds-sdk-cpp | https://github.com/XiaoMi/galaxy-fds-sdk-cpp | author:xiaomi description:C++ SDK for Xiaomi File Data Storage
-xiaomi-github-0-26 | PowerTestDemoGlobal | https://github.com/XiaoMi/PowerTestDemoGlobal | author:xiaomi description:The demo script of Power Consumption Test.
-xiaomi-github-0-27 | PowerTestDemo | https://github.com/XiaoMi/PowerTestDemo | author:xiaomi description:Updated Aug 13, 2015
-xiaomi-github-0-28 | galaxy-sdk-javascript | https://github.com/XiaoMi/galaxy-sdk-javascript | author:xiaomi description:Javascript SDK for Xiaomi Structured Datastore Service
-xiaomi-github-0-29 | galaxy-sdk-cpp | https://github.com/XiaoMi/galaxy-sdk-cpp | author:xiaomi description:C++ SDK for Xiaomi Structured Datastore Service
+github-xiaomi-1460-1 | open-falcon | https://github.com/XiaoMi/open-falcon | author:xiaomi description:互联网企业级监控系统
+github-xiaomi-315-2 | minos | https://github.com/XiaoMi/minos | author:xiaomi description:Minos is beyond a hadoop deployment system.
+github-xiaomi-265-3 | rose | https://github.com/XiaoMi/rose | author:xiaomi description:Rose is not only a framework.
+github-xiaomi-247-4 | LuckyMoneyTool | https://github.com/XiaoMi/LuckyMoneyTool | author:xiaomi description:Updated Aug 12, 2015
+github-xiaomi-208-5 | android_tv_metro | https://github.com/XiaoMi/android_tv_metro | author:xiaomi description:android tv metro framework and server API
+github-xiaomi-149-6 | chronos | https://github.com/XiaoMi/chronos | author:xiaomi description:Network service to provide globally strictly monotone increasing timestamp
+github-xiaomi-134-7 | themis | https://github.com/XiaoMi/themis | author:xiaomi description:Themis provides cross-row/cross-table transaction on HBase based on google's percolator.
+github-xiaomi-38-8 | jack | https://github.com/XiaoMi/jack | author:xiaomi description:Jack is a cluster manager built on top of Zookeeper and thrift.
+github-xiaomi-30-9 | misound | https://github.com/XiaoMi/misound | author:xiaomi description:MiSound is a Android application making XiaoMi's SoundBar more powerful. EQ, control, player all in one.
+github-xiaomi-8-10 | galaxy-fds-sdk-android | https://github.com/XiaoMi/galaxy-fds-sdk-android | author:xiaomi description:Android SDK for Xiaomi File Data Storage.
+github-xiaomi-7-11 | galaxy-sdk-java | https://github.com/XiaoMi/galaxy-sdk-java | author:xiaomi description:Java SDK for Xiaomi Structured Datastore Service
+github-xiaomi-7-12 | xiaomi.github.com | https://github.com/XiaoMi/xiaomi.github.com | author:xiaomi description:Updated Apr 23, 2014
+github-xiaomi-6-13 | galaxy-fds-sdk-java | https://github.com/XiaoMi/galaxy-fds-sdk-java | author:xiaomi description:Java SDK for Xiaomi File Data Storage.
+github-xiaomi-6-14 | galaxy-sdk-go | https://github.com/XiaoMi/galaxy-sdk-go | author:xiaomi description:Go SDK for Xiaomi Structured Datastore Service
+github-xiaomi-5-15 | galaxy-thrift-api | https://github.com/XiaoMi/galaxy-thrift-api | author:xiaomi description:Thrift API for Xiaomi Structured Datastore Service
+github-xiaomi-5-16 | galaxy-fds-migration-tool | https://github.com/XiaoMi/galaxy-fds-migration-tool | author:xiaomi description:A MapReduce tool to migrate objects or files parallely between different object storage systems
+github-xiaomi-4-17 | galaxy-fds-sdk-ios | https://github.com/XiaoMi/galaxy-fds-sdk-ios | author:xiaomi description:ios sdk for galaxy-fds
+github-xiaomi-3-18 | galaxy-hadoop | https://github.com/XiaoMi/galaxy-hadoop | author:xiaomi description:Hadoop interface for Xiaomi Open Storage
+github-xiaomi-3-19 | galaxy-sdk-python | https://github.com/XiaoMi/galaxy-sdk-python | author:xiaomi description:Python SDK for Xiaomi Structured Datastore Service
+github-xiaomi-3-20 | galaxy-fds-sdk-python | https://github.com/XiaoMi/galaxy-fds-sdk-python | author:xiaomi description:Python SDK for Xiaomi File Data Storage.
+github-xiaomi-2-21 | galaxy-sdk-nodejs | https://github.com/XiaoMi/galaxy-sdk-nodejs | author:xiaomi description:Node.js SDK for Xiaomi Structured Datastore Service
+github-xiaomi-2-22 | galaxy-fds-sdk-javascript | https://github.com/XiaoMi/galaxy-fds-sdk-javascript | author:xiaomi description:Updated Dec 15, 2015
+github-xiaomi-0-23 | galaxy-sdk-php | https://github.com/XiaoMi/galaxy-sdk-php | author:xiaomi description:PHP SDK for Xiaomi Structured Datastore Service
+github-xiaomi-0-24 | galaxy-fds-sdk-php | https://github.com/XiaoMi/galaxy-fds-sdk-php | author:xiaomi description:PHP SDK for Xiaomi File Data Storage.
+github-xiaomi-0-25 | galaxy-fds-sdk-cpp | https://github.com/XiaoMi/galaxy-fds-sdk-cpp | author:xiaomi description:C++ SDK for Xiaomi File Data Storage
+github-xiaomi-0-26 | PowerTestDemoGlobal | https://github.com/XiaoMi/PowerTestDemoGlobal | author:xiaomi description:The demo script of Power Consumption Test.
+github-xiaomi-0-27 | PowerTestDemo | https://github.com/XiaoMi/PowerTestDemo | author:xiaomi description:Updated Aug 13, 2015
+github-xiaomi-0-28 | galaxy-sdk-javascript | https://github.com/XiaoMi/galaxy-sdk-javascript | author:xiaomi description:Javascript SDK for Xiaomi Structured Datastore Service
+github-xiaomi-0-29 | galaxy-sdk-cpp | https://github.com/XiaoMi/galaxy-sdk-cpp | author:xiaomi description:C++ SDK for Xiaomi Structured Datastore Service

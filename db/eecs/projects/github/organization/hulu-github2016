@@ -1,12 +1,12 @@
-hulu-github-236-1 | GrannySmith | https://github.com/hulu/GrannySmith | author:hulu description:It's green. It's an apple.
-hulu-github-134-2 | restfulgit | https://github.com/hulu/restfulgit | author:hulu description:REST API for Git data
-hulu-github-63-3 | GSAutomation | https://github.com/hulu/GSAutomation | author:hulu description:A Javascript extension/wrapper on iOS UIAutomation that makes test scripts more robust and easier to write.
-hulu-github-42-4 | ectyper | https://github.com/hulu/ectyper | author:hulu description:Tornado-based image manipulation service
-hulu-github-41-5 | dripls | https://github.com/hulu/dripls | author:hulu description:"CDN in a box" that can shape network traffic for testing HTTPLS
-hulu-github-40-6 | bank | https://github.com/hulu/bank | author:hulu description:Statsd and Metricsd frontend for UDP packets aggregation
-hulu-github-17-7 | monaco | https://github.com/hulu/monaco | author:hulu description:Updated Mar 1, 2016
-hulu-github-11-8 | vfl2objc | https://github.com/hulu/vfl2objc | author:hulu description:A script to convert Visual Formatting Language into native Objective C code for iOS developers
-hulu-github-9-9 | HUTypedEvents | https://github.com/hulu/HUTypedEvents | author:hulu description:An alternative way to manage events in Objective C
-hulu-github-5-10 | statsd-router | https://github.com/hulu/statsd-router | author:hulu description:Metrics router for statsd cluster
-hulu-github-4-11 | urepo | https://github.com/hulu/urepo | author:hulu description:Universal repository for linux binary packages
-hulu-github-4-12 | statsd-aggregator | https://github.com/hulu/statsd-aggregator | author:hulu description:Local aggregator for statsd metrics.
+github-hulu-236-1 | GrannySmith | https://github.com/hulu/GrannySmith | author:hulu description:It's green. It's an apple.
+github-hulu-134-2 | restfulgit | https://github.com/hulu/restfulgit | author:hulu description:REST API for Git data
+github-hulu-63-3 | GSAutomation | https://github.com/hulu/GSAutomation | author:hulu description:A Javascript extension/wrapper on iOS UIAutomation that makes test scripts more robust and easier to write.
+github-hulu-42-4 | ectyper | https://github.com/hulu/ectyper | author:hulu description:Tornado-based image manipulation service
+github-hulu-41-5 | dripls | https://github.com/hulu/dripls | author:hulu description:"CDN in a box" that can shape network traffic for testing HTTPLS
+github-hulu-40-6 | bank | https://github.com/hulu/bank | author:hulu description:Statsd and Metricsd frontend for UDP packets aggregation
+github-hulu-17-7 | monaco | https://github.com/hulu/monaco | author:hulu description:Updated Mar 1, 2016
+github-hulu-11-8 | vfl2objc | https://github.com/hulu/vfl2objc | author:hulu description:A script to convert Visual Formatting Language into native Objective C code for iOS developers
+github-hulu-9-9 | HUTypedEvents | https://github.com/hulu/HUTypedEvents | author:hulu description:An alternative way to manage events in Objective C
+github-hulu-5-10 | statsd-router | https://github.com/hulu/statsd-router | author:hulu description:Metrics router for statsd cluster
+github-hulu-4-11 | urepo | https://github.com/hulu/urepo | author:hulu description:Universal repository for linux binary packages
+github-hulu-4-12 | statsd-aggregator | https://github.com/hulu/statsd-aggregator | author:hulu description:Local aggregator for statsd metrics.

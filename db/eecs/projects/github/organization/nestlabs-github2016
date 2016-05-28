@@ -1,11 +1,11 @@
-nestlabs-github-28-1 | rest-streaming | https://github.com/nestlabs/rest-streaming | author:nestlabs description:REST Streaming API sample app for Nest Cam, Thermostat and Protect using Node.js
-nestlabs-github-27-2 | control-jquery | https://github.com/nestlabs/control-jquery | author:nestlabs description:A sample web app that shows how to control your Nest thermostat using the Nest API
-nestlabs-github-19-3 | android-NestDK | https://github.com/nestlabs/android-NestDK | author:nestlabs description:DEPRECATED - Please use the android-sdk project.
-nestlabs-github-18-4 | iOS-NestDK | https://github.com/nestlabs/iOS-NestDK | author:nestlabs description:A sample iOS app demonstrating Nest Developer auth and Nest thermostat control
-nestlabs-github-10-5 | android-sdk | https://github.com/nestlabs/android-sdk | author:nestlabs description:Interact with the Nest API quickly and easily on Android.
-nestlabs-github-9-6 | nest-twitter | https://github.com/nestlabs/nest-twitter | author:nestlabs description:A Scala sample showing server-server integration between Nest and Twitter
-nestlabs-github-5-7 | passport-nest | https://github.com/nestlabs/passport-nest | author:nestlabs description:Passport Strategy for authenticating with Nest via OAuth2
-nestlabs-github-4-8 | android-sdk-sample | https://github.com/nestlabs/android-sdk-sample | author:nestlabs description:Sample app showcasing how to use the Nest Android SDK.
-nestlabs-github-4-9 | hover | https://github.com/nestlabs/hover | author:nestlabs description:A floating menu library for Android.
-nestlabs-github-1-10 | alert-jquery | https://github.com/nestlabs/alert-jquery | author:nestlabs description:A simple JQuery sample app that alerts you when your Nest Protect goes off
-nestlabs-github-1-11 | omniauth-nest | https://github.com/nestlabs/omniauth-nest | author:nestlabs description:OmniAuth Strategy for authenticating with Nest via OAuth2
+github-nestlabs-28-1 | rest-streaming | https://github.com/nestlabs/rest-streaming | author:nestlabs description:REST Streaming API sample app for Nest Cam, Thermostat and Protect using Node.js
+github-nestlabs-27-2 | control-jquery | https://github.com/nestlabs/control-jquery | author:nestlabs description:A sample web app that shows how to control your Nest thermostat using the Nest API
+github-nestlabs-19-3 | android-NestDK | https://github.com/nestlabs/android-NestDK | author:nestlabs description:DEPRECATED - Please use the android-sdk project.
+github-nestlabs-18-4 | iOS-NestDK | https://github.com/nestlabs/iOS-NestDK | author:nestlabs description:A sample iOS app demonstrating Nest Developer auth and Nest thermostat control
+github-nestlabs-10-5 | android-sdk | https://github.com/nestlabs/android-sdk | author:nestlabs description:Interact with the Nest API quickly and easily on Android.
+github-nestlabs-9-6 | nest-twitter | https://github.com/nestlabs/nest-twitter | author:nestlabs description:A Scala sample showing server-server integration between Nest and Twitter
+github-nestlabs-5-7 | passport-nest | https://github.com/nestlabs/passport-nest | author:nestlabs description:Passport Strategy for authenticating with Nest via OAuth2
+github-nestlabs-4-8 | android-sdk-sample | https://github.com/nestlabs/android-sdk-sample | author:nestlabs description:Sample app showcasing how to use the Nest Android SDK.
+github-nestlabs-4-9 | hover | https://github.com/nestlabs/hover | author:nestlabs description:A floating menu library for Android.
+github-nestlabs-1-10 | alert-jquery | https://github.com/nestlabs/alert-jquery | author:nestlabs description:A simple JQuery sample app that alerts you when your Nest Protect goes off
+github-nestlabs-1-11 | omniauth-nest | https://github.com/nestlabs/omniauth-nest | author:nestlabs description:OmniAuth Strategy for authenticating with Nest via OAuth2

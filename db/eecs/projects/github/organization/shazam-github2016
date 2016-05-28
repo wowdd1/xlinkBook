@@ -1,15 +1,15 @@
-shazam-github-147-1 | fork | https://github.com/shazam/fork | author:shazam description:A library that offers the fastest way to execute Android instrumentation tests.
-shazam-github-76-2 | gwen | https://github.com/shazam/gwen | author:shazam description:Library for specifying acceptance criteria in tests in a Given-When-Then format
-shazam-github-44-3 | android-aspects | https://github.com/shazam/android-aspects | author:shazam description:A simple aspecting library for Android
-shazam-github-32-4 | shazamcrest | https://github.com/shazam/shazamcrest | author:shazam description:Reusable Hamcrest matchers suitable for automated testing
-shazam-github-24-5 | androidTestRules | https://github.com/shazam/androidTestRules | author:shazam description:A collection of conditions for ignoring Android tests based on device characteristics
-shazam-github-14-6 | tocker | https://github.com/shazam/tocker | author:shazam description:Library for using Docker in automated JVM tests
-shazam-github-11-7 | fork-gradle-plugin | https://github.com/shazam/fork-gradle-plugin | author:shazam description:Previously repo for the Fork Gradle Plugin. Now moved to main Fork repo
-shazam-github-6-8 | php-slack | https://github.com/shazam/php-slack | author:shazam description:PHP library that allows you to connect to Slack
-shazam-github-5-9 | pipeline-builder | https://github.com/shazam/pipeline-builder | author:shazam description:Pipeline Builder is a Jenkins plugin to help you control AWS Data Pipeline deployment
-shazam-github-4-10 | jira-flightboard | https://github.com/shazam/jira-flightboard | author:shazam description:Updated Jul 13, 2015
-shazam-github-4-11 | yadda-bootstrap | https://github.com/shazam/yadda-bootstrap | author:shazam description:Sample project on using Yadda, WebDriverJS and Mocha together
-shazam-github-3-12 | easy-config | https://github.com/shazam/easy-config | author:shazam description:Updated May 28, 2015
-shazam-github-2-13 | php-statsd | https://github.com/shazam/php-statsd | author:shazam description:Simple PHP library to send stats to statsd
-shazam-github-2-14 | mysql-migrations | https://github.com/shazam/mysql-migrations | author:shazam description:Updated May 28, 2015
-shazam-github-0-15 | elasticmq-gradle-plugin | https://github.com/shazam/elasticmq-gradle-plugin | author:shazam description:Gradle Plugin to launch an ElasticMQ server
+github-shazam-147-1 | fork | https://github.com/shazam/fork | author:shazam description:A library that offers the fastest way to execute Android instrumentation tests.
+github-shazam-76-2 | gwen | https://github.com/shazam/gwen | author:shazam description:Library for specifying acceptance criteria in tests in a Given-When-Then format
+github-shazam-44-3 | android-aspects | https://github.com/shazam/android-aspects | author:shazam description:A simple aspecting library for Android
+github-shazam-32-4 | shazamcrest | https://github.com/shazam/shazamcrest | author:shazam description:Reusable Hamcrest matchers suitable for automated testing
+github-shazam-24-5 | androidTestRules | https://github.com/shazam/androidTestRules | author:shazam description:A collection of conditions for ignoring Android tests based on device characteristics
+github-shazam-14-6 | tocker | https://github.com/shazam/tocker | author:shazam description:Library for using Docker in automated JVM tests
+github-shazam-11-7 | fork-gradle-plugin | https://github.com/shazam/fork-gradle-plugin | author:shazam description:Previously repo for the Fork Gradle Plugin. Now moved to main Fork repo
+github-shazam-6-8 | php-slack | https://github.com/shazam/php-slack | author:shazam description:PHP library that allows you to connect to Slack
+github-shazam-5-9 | pipeline-builder | https://github.com/shazam/pipeline-builder | author:shazam description:Pipeline Builder is a Jenkins plugin to help you control AWS Data Pipeline deployment
+github-shazam-4-10 | jira-flightboard | https://github.com/shazam/jira-flightboard | author:shazam description:Updated Jul 13, 2015
+github-shazam-4-11 | yadda-bootstrap | https://github.com/shazam/yadda-bootstrap | author:shazam description:Sample project on using Yadda, WebDriverJS and Mocha together
+github-shazam-3-12 | easy-config | https://github.com/shazam/easy-config | author:shazam description:Updated May 28, 2015
+github-shazam-2-13 | php-statsd | https://github.com/shazam/php-statsd | author:shazam description:Simple PHP library to send stats to statsd
+github-shazam-2-14 | mysql-migrations | https://github.com/shazam/mysql-migrations | author:shazam description:Updated May 28, 2015
+github-shazam-0-15 | elasticmq-gradle-plugin | https://github.com/shazam/elasticmq-gradle-plugin | author:shazam description:Gradle Plugin to launch an ElasticMQ server

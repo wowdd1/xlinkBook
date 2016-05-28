@@ -1,65 +1,65 @@
-newrelic-github-1597-1 | centurion | https://github.com/newrelic/centurion | author:newrelic description:A mass deployment tool for Docker fleets
-newrelic-github-840-2 | rpm | https://github.com/newrelic/rpm | author:newrelic description:New Relic RPM Ruby Agent
-newrelic-github-468-3 | node-newrelic | https://github.com/newrelic/node-newrelic | author:newrelic description:New Relic Node.js agent code base. Developers are welcome to create pull requests here, please see our contributing guidelines. For New Relic technical support, please go to http://support.newrelic.com.
-newrelic-github-199-4 | rpm_contrib | https://github.com/newrelic/rpm_contrib | author:newrelic description:Extra Instrumentation for the New Relic RPM Gem
-newrelic-github-123-5 | newrelic_api | https://github.com/newrelic/newrelic_api | author:newrelic description:Documentation, Active Resource Helper, and test code for the RPM REST API
-newrelic-github-108-6 | check_docker | https://github.com/newrelic/check_docker | author:newrelic description:A Go Nagios check for Docker
-newrelic-github-33-7 | go_nagios | https://github.com/newrelic/go_nagios | author:newrelic description:Go lang package for writing Nagios checks
-newrelic-github-31-8 | dPerf | https://github.com/newrelic/dPerf | author:newrelic description:Distributed Mobile CPU Profiling
-newrelic-github-23-9 | futurestack14_badge | https://github.com/newrelic/futurestack14_badge | author:newrelic description:Source code for the badges from New Relic's FutureStack 2014 conference
-newrelic-github-23-10 | newrelic-ruby-kata | https://github.com/newrelic/newrelic-ruby-kata | author:newrelic description:Updated Feb 4, 2016
-newrelic-github-22-11 | extends_newrelic_rpm | https://github.com/newrelic/extends_newrelic_rpm | author:newrelic description:Gems that extend New Relic's Ruby agent (newrelic_rpm), linked via git submodules
-newrelic-github-21-12 | dkenv | https://github.com/newrelic/dkenv | author:newrelic description:A docker version switcher
-newrelic-github-20-13 | newrelic-python-kata | https://github.com/newrelic/newrelic-python-kata | author:newrelic description:Newrelic Python Kata
-newrelic-github-20-14 | marlowe | https://github.com/newrelic/marlowe | author:newrelic description:Experimental project for investigating interesting visualizations of APM data
-newrelic-github-19-15 | papers | https://github.com/newrelic/papers | author:newrelic description:Validates licenses of your Rails dependencies against a whitelist
-newrelic-github-17-16 | tendersync | https://github.com/newrelic/tendersync | author:newrelic description:Utility for syncing documents from an ENTP Tender repository to a local filesystem, as well as creating index files
-newrelic-github-17-17 | agent_sdk_samples | https://github.com/newrelic/agent_sdk_samples | author:newrelic description:Sample wrappers and code for the New Relic Agent SDK
-newrelic-github-14-18 | newrelic-cordova-ios | https://github.com/newrelic/newrelic-cordova-ios | author:newrelic description:A PhoneGap / Cordova plugin for New Relic's iOS SDK
-newrelic-github-14-19 | ruby-metaprogramming-challenge | https://github.com/newrelic/ruby-metaprogramming-challenge | author:newrelic description:A fun metaprogramming challenge created at New Relic
-newrelic-github-13-20 | sidecar | https://github.com/newrelic/sidecar | author:newrelic description:Gossip-based service discovery. Docker native, but supports static discovery, too.
-newrelic-github-13-21 | ia | https://github.com/newrelic/ia | author:newrelic description:Infrastructure Agent
-newrelic-github-11-22 | empanada | https://github.com/newrelic/empanada | author:newrelic description:Software, install and config docs to support using a Raspberry Pi as an information radiator
-newrelic-github-10-23 | rpm_test_app | https://github.com/newrelic/rpm_test_app | author:newrelic description:A generic rails application used for testing the New Relic RPM plugin/gem
-newrelic-github-8-24 | ldap-selfservice | https://github.com/newrelic/ldap-selfservice | author:newrelic description:LDAP Toolbox Project - Self-Service Password (0.8 fork) - http://ltb-project.org/wiki/documentation/self-service-password
-newrelic-github-8-25 | futurestack_badge | https://github.com/newrelic/futurestack_badge | author:newrelic description:Updated Jun 16, 2014
-newrelic-github-7-26 | brewery | https://github.com/newrelic/brewery | author:newrelic description:New Developer Provisioning scripts
-newrelic-github-7-27 | puppet-nrsysmond | https://github.com/newrelic/puppet-nrsysmond | author:newrelic description:Puppet module to install the New Relic Server Monitor
-newrelic-github-7-28 | helios | https://github.com/newrelic/helios | author:newrelic description:Controlling lights at New Relic
-newrelic-github-7-29 | nuget-azure-web-sites | https://github.com/newrelic/nuget-azure-web-sites | author:newrelic description:The nuget package for x86 apps (of type web site) running on Windows Azure
-newrelic-github-7-30 | puppet-dell | https://github.com/newrelic/puppet-dell | author:newrelic description:Puppet management of drac cards using racadm
-newrelic-github-6-31 | webhook-processor-example | https://github.com/newrelic/webhook-processor-example | author:newrelic description:Updated Aug 19, 2014
-newrelic-github-6-32 | rails3_upgrade | https://github.com/newrelic/rails3_upgrade | author:newrelic description:Helping you upgrade Rails on master
-newrelic-github-5-33 | newrelic-dot-net-kata | https://github.com/newrelic/newrelic-dot-net-kata | author:newrelic description:Using New Relic and Azure Cloud Services (emulated or not) see how many things you can find and fix to make this app perform fast
-newrelic-github-5-34 | yakaa | https://github.com/newrelic/yakaa | author:newrelic description:Yet Another Keep Alive Agent for Node
-newrelic-github-5-35 | nuget-azure-cloud-services | https://github.com/newrelic/nuget-azure-cloud-services | author:newrelic description:The nuget package for x64 apps (VMs or Cloud Services - Web Roles | Worker Roles) running on Windows Azure
-newrelic-github-5-36 | supervisor-remote-logging | https://github.com/newrelic/supervisor-remote-logging | author:newrelic description:Use supervisord to relay your application's stdout/stderr to syslog.
-newrelic-github-5-37 | ARTBench | https://github.com/newrelic/ARTBench | author:newrelic description:Updated Jul 7, 2014
-newrelic-github-4-38 | metriks-reporter-new_relic | https://github.com/newrelic/metriks-reporter-new_relic | author:newrelic description:Metriks::Reporter to send collected data to a New Relic account
-newrelic-github-4-39 | insights-about-pagerduty | https://github.com/newrelic/insights-about-pagerduty | author:newrelic description:Slurp resolved PagerDuty incident data into New Relic Insights
-newrelic-github-4-40 | insights-arduino-client | https://github.com/newrelic/insights-arduino-client | author:newrelic description:Updated Dec 13, 2015
-newrelic-github-4-41 | zero-to-docker-blog-post | https://github.com/newrelic/zero-to-docker-blog-post | author:newrelic description:examples for the Zero to Docker blog post
-newrelic-github-4-42 | node-mitm-server | https://github.com/newrelic/node-mitm-server | author:newrelic description:A node library for writing man-in-the-middle proxy servers
-newrelic-github-3-43 | puppet-heka | https://github.com/newrelic/puppet-heka | author:newrelic description:A simple Puppet module for configuring Heka, an event stream processor written in Go
-newrelic-github-3-44 | vauxs-swift | https://github.com/newrelic/vauxs-swift | author:newrelic description:Sample code showing how to instrument a Swift app
-newrelic-github-3-45 | nuget-agent-api | https://github.com/newrelic/nuget-agent-api | author:newrelic description:The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at http://newrelic.com/docs/dotnet/AgentApi. This is for the ANY CPU build of the API
-newrelic-github-2-46 | heroku-newrelic-java-install | https://github.com/newrelic/heroku-newrelic-java-install | author:newrelic description:heroku plugin to ease install of newrelic javaagent
-newrelic-github-2-47 | black-friday-2015 | https://github.com/newrelic/black-friday-2015 | author:newrelic description:Black Friday 2015
-newrelic-github-2-48 | insights-electric-imp | https://github.com/newrelic/insights-electric-imp | author:newrelic description:Updated Jan 21, 2015
-newrelic-github-1-49 | grabby | https://github.com/newrelic/grabby | author:newrelic description:Prototype: automaticatic custom parameter instrumentation for Insights (Rails only)
-newrelic-github-1-50 | newrelic-cf | https://github.com/newrelic/newrelic-cf | author:newrelic description:Updated Dec 8, 2015
-newrelic-github-1-51 | puppet-redis | https://github.com/newrelic/puppet-redis | author:newrelic description:Puppet module for configuring Redis
-newrelic-github-1-52 | customRangeSlider | https://github.com/newrelic/customRangeSlider | author:newrelic description:Public repository for Javascript range slider.
-newrelic-github-1-53 | newrelic-pcf-agent-tile | https://github.com/newrelic/newrelic-pcf-agent-tile | author:newrelic description:Updated Dec 17, 2015
-newrelic-github-1-54 | java-agent-api | https://github.com/newrelic/java-agent-api | author:newrelic description:Updated Dec 11, 2015
-newrelic-github-1-55 | php_framework_inflator | https://github.com/newrelic/php_framework_inflator | author:newrelic description:This repo contains bash scripts used to standup and "inflate" a handful of PHP frameworks for testing
-newrelic-github-1-56 | TestOutboundConnections | https://github.com/newrelic/TestOutboundConnections | author:newrelic description:A simple Java application to test connectivity from your application server to the outside world on http and https.
-newrelic-github-1-57 | guava-libraries | https://github.com/newrelic/guava-libraries | author:newrelic description:New Relic's guava fork
-newrelic-github-1-58 | newrelic-azure-webjobs | https://github.com/newrelic/newrelic-azure-webjobs | author:newrelic description:This is a demo project that illustrates how to use the New Relic .NET agent to instrument Azure Web Jobs
-newrelic-github-0-59 | km-send | https://github.com/newrelic/km-send | author:newrelic description:A utility to process Kiss Metrics log files for transmission to the KM server
-newrelic-github-0-60 | puppet-nagios | https://github.com/newrelic/puppet-nagios | author:newrelic description:Puppet module for configuring a Nagios Server
-newrelic-github-0-61 | stealth_stars | https://github.com/newrelic/stealth_stars | author:newrelic description:Demo application for RailsConf 2013
-newrelic-github-0-62 | github-insights-event-pump | https://github.com/newrelic/github-insights-event-pump | author:newrelic description:Processor to read github event feed and import into insights
-newrelic-github-0-63 | newrelic-azure-environment-configuration | https://github.com/newrelic/newrelic-azure-environment-configuration | author:newrelic description:This is a demo project that illustrates how to use the .NET agent API to set things dynamically, like app name, using the Azure management APIs
-newrelic-github-0-64 | nuget | https://github.com/newrelic/nuget | author:newrelic description:Updated Aug 9, 2013
-newrelic-github-0-65 | nuget-azure-web-sites-x64 | https://github.com/newrelic/nuget-azure-web-sites-x64 | author:newrelic description:The nuget package for x64 apps (of type "web site") running on Windows Azure
+github-newrelic-1597-1 | centurion | https://github.com/newrelic/centurion | author:newrelic description:A mass deployment tool for Docker fleets
+github-newrelic-840-2 | rpm | https://github.com/newrelic/rpm | author:newrelic description:New Relic RPM Ruby Agent
+github-newrelic-468-3 | node-newrelic | https://github.com/newrelic/node-newrelic | author:newrelic description:New Relic Node.js agent code base. Developers are welcome to create pull requests here, please see our contributing guidelines. For New Relic technical support, please go to http://support.newrelic.com.
+github-newrelic-199-4 | rpm_contrib | https://github.com/newrelic/rpm_contrib | author:newrelic description:Extra Instrumentation for the New Relic RPM Gem
+github-newrelic-123-5 | newrelic_api | https://github.com/newrelic/newrelic_api | author:newrelic description:Documentation, Active Resource Helper, and test code for the RPM REST API
+github-newrelic-108-6 | check_docker | https://github.com/newrelic/check_docker | author:newrelic description:A Go Nagios check for Docker
+github-newrelic-33-7 | go_nagios | https://github.com/newrelic/go_nagios | author:newrelic description:Go lang package for writing Nagios checks
+github-newrelic-31-8 | dPerf | https://github.com/newrelic/dPerf | author:newrelic description:Distributed Mobile CPU Profiling
+github-newrelic-23-9 | futurestack14_badge | https://github.com/newrelic/futurestack14_badge | author:newrelic description:Source code for the badges from New Relic's FutureStack 2014 conference
+github-newrelic-23-10 | newrelic-ruby-kata | https://github.com/newrelic/newrelic-ruby-kata | author:newrelic description:Updated Feb 4, 2016
+github-newrelic-22-11 | extends_newrelic_rpm | https://github.com/newrelic/extends_newrelic_rpm | author:newrelic description:Gems that extend New Relic's Ruby agent (newrelic_rpm), linked via git submodules
+github-newrelic-21-12 | dkenv | https://github.com/newrelic/dkenv | author:newrelic description:A docker version switcher
+github-newrelic-20-13 | newrelic-python-kata | https://github.com/newrelic/newrelic-python-kata | author:newrelic description:Newrelic Python Kata
+github-newrelic-20-14 | marlowe | https://github.com/newrelic/marlowe | author:newrelic description:Experimental project for investigating interesting visualizations of APM data
+github-newrelic-19-15 | papers | https://github.com/newrelic/papers | author:newrelic description:Validates licenses of your Rails dependencies against a whitelist
+github-newrelic-17-16 | tendersync | https://github.com/newrelic/tendersync | author:newrelic description:Utility for syncing documents from an ENTP Tender repository to a local filesystem, as well as creating index files
+github-newrelic-17-17 | agent_sdk_samples | https://github.com/newrelic/agent_sdk_samples | author:newrelic description:Sample wrappers and code for the New Relic Agent SDK
+github-newrelic-14-18 | newrelic-cordova-ios | https://github.com/newrelic/newrelic-cordova-ios | author:newrelic description:A PhoneGap / Cordova plugin for New Relic's iOS SDK
+github-newrelic-14-19 | ruby-metaprogramming-challenge | https://github.com/newrelic/ruby-metaprogramming-challenge | author:newrelic description:A fun metaprogramming challenge created at New Relic
+github-newrelic-13-20 | sidecar | https://github.com/newrelic/sidecar | author:newrelic description:Gossip-based service discovery. Docker native, but supports static discovery, too.
+github-newrelic-13-21 | ia | https://github.com/newrelic/ia | author:newrelic description:Infrastructure Agent
+github-newrelic-11-22 | empanada | https://github.com/newrelic/empanada | author:newrelic description:Software, install and config docs to support using a Raspberry Pi as an information radiator
+github-newrelic-10-23 | rpm_test_app | https://github.com/newrelic/rpm_test_app | author:newrelic description:A generic rails application used for testing the New Relic RPM plugin/gem
+github-newrelic-8-24 | ldap-selfservice | https://github.com/newrelic/ldap-selfservice | author:newrelic description:LDAP Toolbox Project - Self-Service Password (0.8 fork) - http://ltb-project.org/wiki/documentation/self-service-password
+github-newrelic-8-25 | futurestack_badge | https://github.com/newrelic/futurestack_badge | author:newrelic description:Updated Jun 16, 2014
+github-newrelic-7-26 | brewery | https://github.com/newrelic/brewery | author:newrelic description:New Developer Provisioning scripts
+github-newrelic-7-27 | puppet-nrsysmond | https://github.com/newrelic/puppet-nrsysmond | author:newrelic description:Puppet module to install the New Relic Server Monitor
+github-newrelic-7-28 | helios | https://github.com/newrelic/helios | author:newrelic description:Controlling lights at New Relic
+github-newrelic-7-29 | nuget-azure-web-sites | https://github.com/newrelic/nuget-azure-web-sites | author:newrelic description:The nuget package for x86 apps (of type web site) running on Windows Azure
+github-newrelic-7-30 | puppet-dell | https://github.com/newrelic/puppet-dell | author:newrelic description:Puppet management of drac cards using racadm
+github-newrelic-6-31 | webhook-processor-example | https://github.com/newrelic/webhook-processor-example | author:newrelic description:Updated Aug 19, 2014
+github-newrelic-6-32 | rails3_upgrade | https://github.com/newrelic/rails3_upgrade | author:newrelic description:Helping you upgrade Rails on master
+github-newrelic-5-33 | newrelic-dot-net-kata | https://github.com/newrelic/newrelic-dot-net-kata | author:newrelic description:Using New Relic and Azure Cloud Services (emulated or not) see how many things you can find and fix to make this app perform fast
+github-newrelic-5-34 | yakaa | https://github.com/newrelic/yakaa | author:newrelic description:Yet Another Keep Alive Agent for Node
+github-newrelic-5-35 | nuget-azure-cloud-services | https://github.com/newrelic/nuget-azure-cloud-services | author:newrelic description:The nuget package for x64 apps (VMs or Cloud Services - Web Roles | Worker Roles) running on Windows Azure
+github-newrelic-5-36 | supervisor-remote-logging | https://github.com/newrelic/supervisor-remote-logging | author:newrelic description:Use supervisord to relay your application's stdout/stderr to syslog.
+github-newrelic-5-37 | ARTBench | https://github.com/newrelic/ARTBench | author:newrelic description:Updated Jul 7, 2014
+github-newrelic-4-38 | metriks-reporter-new_relic | https://github.com/newrelic/metriks-reporter-new_relic | author:newrelic description:Metriks::Reporter to send collected data to a New Relic account
+github-newrelic-4-39 | insights-about-pagerduty | https://github.com/newrelic/insights-about-pagerduty | author:newrelic description:Slurp resolved PagerDuty incident data into New Relic Insights
+github-newrelic-4-40 | insights-arduino-client | https://github.com/newrelic/insights-arduino-client | author:newrelic description:Updated Dec 13, 2015
+github-newrelic-4-41 | zero-to-docker-blog-post | https://github.com/newrelic/zero-to-docker-blog-post | author:newrelic description:examples for the Zero to Docker blog post
+github-newrelic-4-42 | node-mitm-server | https://github.com/newrelic/node-mitm-server | author:newrelic description:A node library for writing man-in-the-middle proxy servers
+github-newrelic-3-43 | puppet-heka | https://github.com/newrelic/puppet-heka | author:newrelic description:A simple Puppet module for configuring Heka, an event stream processor written in Go
+github-newrelic-3-44 | vauxs-swift | https://github.com/newrelic/vauxs-swift | author:newrelic description:Sample code showing how to instrument a Swift app
+github-newrelic-3-45 | nuget-agent-api | https://github.com/newrelic/nuget-agent-api | author:newrelic description:The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at http://newrelic.com/docs/dotnet/AgentApi. This is for the ANY CPU build of the API
+github-newrelic-2-46 | heroku-newrelic-java-install | https://github.com/newrelic/heroku-newrelic-java-install | author:newrelic description:heroku plugin to ease install of newrelic javaagent
+github-newrelic-2-47 | black-friday-2015 | https://github.com/newrelic/black-friday-2015 | author:newrelic description:Black Friday 2015
+github-newrelic-2-48 | insights-electric-imp | https://github.com/newrelic/insights-electric-imp | author:newrelic description:Updated Jan 21, 2015
+github-newrelic-1-49 | grabby | https://github.com/newrelic/grabby | author:newrelic description:Prototype: automaticatic custom parameter instrumentation for Insights (Rails only)
+github-newrelic-1-50 | newrelic-cf | https://github.com/newrelic/newrelic-cf | author:newrelic description:Updated Dec 8, 2015
+github-newrelic-1-51 | puppet-redis | https://github.com/newrelic/puppet-redis | author:newrelic description:Puppet module for configuring Redis
+github-newrelic-1-52 | customRangeSlider | https://github.com/newrelic/customRangeSlider | author:newrelic description:Public repository for Javascript range slider.
+github-newrelic-1-53 | newrelic-pcf-agent-tile | https://github.com/newrelic/newrelic-pcf-agent-tile | author:newrelic description:Updated Dec 17, 2015
+github-newrelic-1-54 | java-agent-api | https://github.com/newrelic/java-agent-api | author:newrelic description:Updated Dec 11, 2015
+github-newrelic-1-55 | php_framework_inflator | https://github.com/newrelic/php_framework_inflator | author:newrelic description:This repo contains bash scripts used to standup and "inflate" a handful of PHP frameworks for testing
+github-newrelic-1-56 | TestOutboundConnections | https://github.com/newrelic/TestOutboundConnections | author:newrelic description:A simple Java application to test connectivity from your application server to the outside world on http and https.
+github-newrelic-1-57 | guava-libraries | https://github.com/newrelic/guava-libraries | author:newrelic description:New Relic's guava fork
+github-newrelic-1-58 | newrelic-azure-webjobs | https://github.com/newrelic/newrelic-azure-webjobs | author:newrelic description:This is a demo project that illustrates how to use the New Relic .NET agent to instrument Azure Web Jobs
+github-newrelic-0-59 | km-send | https://github.com/newrelic/km-send | author:newrelic description:A utility to process Kiss Metrics log files for transmission to the KM server
+github-newrelic-0-60 | puppet-nagios | https://github.com/newrelic/puppet-nagios | author:newrelic description:Puppet module for configuring a Nagios Server
+github-newrelic-0-61 | stealth_stars | https://github.com/newrelic/stealth_stars | author:newrelic description:Demo application for RailsConf 2013
+github-newrelic-0-62 | github-insights-event-pump | https://github.com/newrelic/github-insights-event-pump | author:newrelic description:Processor to read github event feed and import into insights
+github-newrelic-0-63 | newrelic-azure-environment-configuration | https://github.com/newrelic/newrelic-azure-environment-configuration | author:newrelic description:This is a demo project that illustrates how to use the .NET agent API to set things dynamically, like app name, using the Azure management APIs
+github-newrelic-0-64 | nuget | https://github.com/newrelic/nuget | author:newrelic description:Updated Aug 9, 2013
+github-newrelic-0-65 | nuget-azure-web-sites-x64 | https://github.com/newrelic/nuget-azure-web-sites-x64 | author:newrelic description:The nuget package for x64 apps (of type "web site") running on Windows Azure

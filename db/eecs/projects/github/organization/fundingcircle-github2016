@@ -1,26 +1,26 @@
-fundingcircle-github-13-1 | ring-gatekeeper | https://github.com/FundingCircle/ring-gatekeeper | author:fundingcircle description:Authentication middleware in clojure
-fundingcircle-github-9-2 | dotatom | https://github.com/FundingCircle/dotatom | author:fundingcircle description:Config for the Atom text editor
-fundingcircle-github-8-3 | sass-common | https://github.com/FundingCircle/sass-common | author:fundingcircle description:Common Sass mixins and files
-fundingcircle-github-8-4 | kafka-compose | https://github.com/FundingCircle/kafka-compose | author:fundingcircle description:Docker compose setup for running a Kafka cluster locally.
-fundingcircle-github-5-5 | ring-request-proxy | https://github.com/FundingCircle/ring-request-proxy | author:fundingcircle description:Ring middleware to proxy requests
-fundingcircle-github-4-6 | factory-time | https://github.com/FundingCircle/factory-time | author:fundingcircle description:A Clojure library inspired by factory_girl
-fundingcircle-github-4-7 | shipment_tracker | https://github.com/FundingCircle/shipment_tracker | author:fundingcircle description:Tracks shipment of software versions for Financial Conduct Authority auditing purposes
-fundingcircle-github-4-8 | dotvim | https://github.com/FundingCircle/dotvim | author:fundingcircle description:Vim configuration setup
-fundingcircle-github-3-9 | riemann-manifold | https://github.com/FundingCircle/riemann-manifold | author:fundingcircle description:Riemann metrics for Manifold streams
-fundingcircle-github-3-10 | ring-venturi | https://github.com/FundingCircle/ring-venturi | author:fundingcircle description:Ring middleware to rate-limit requests
-fundingcircle-github-2-11 | riemann-cassandra | https://github.com/FundingCircle/riemann-cassandra | author:fundingcircle description:Tool for sending Cassandra metrics to Riemann
-fundingcircle-github-1-12 | sshkit-backends-netssh_global | https://github.com/FundingCircle/sshkit-backends-netssh_global | author:fundingcircle description:Configure options for Capistrano 3 and SSHKit globally.
-fundingcircle-github-1-13 | ragtime-cli-tools | https://github.com/FundingCircle/ragtime-cli-tools | author:fundingcircle description:Lets you run ragtime migrations from an uberjar
-fundingcircle-github-1-14 | do-make-rethink | https://github.com/FundingCircle/do-make-rethink | author:fundingcircle description:A Clojure library for making RethinkDB databases.
-fundingcircle-github-1-15 | clj-loga | https://github.com/FundingCircle/clj-loga | author:fundingcircle description:Custom log formatting
-fundingcircle-github-1-16 | krump | https://github.com/FundingCircle/krump | author:fundingcircle description:A kafka consumer focused on convenience
-fundingcircle-github-1-17 | fluent-plugin-graylog | https://github.com/FundingCircle/fluent-plugin-graylog | author:fundingcircle description:GrayLog output plugin for Fluentd
-fundingcircle-github-0-18 | supervisor_nag | https://github.com/FundingCircle/supervisor_nag | author:fundingcircle description:Check the status of supervisor jobs
-fundingcircle-github-0-19 | homebrew-elasticsearch | https://github.com/FundingCircle/homebrew-elasticsearch | author:fundingcircle description:Homebrew formulae for deprecated Elasticsearch versions
-fundingcircle-github-0-20 | memoria | https://github.com/FundingCircle/memoria | author:fundingcircle description:A central location to store, search and share knowledge cards.
-fundingcircle-github-0-21 | brewfiles | https://github.com/FundingCircle/brewfiles | author:fundingcircle description:Helpers for the perfect Brew
-fundingcircle-github-0-22 | ruby-style-guide | https://github.com/FundingCircle/ruby-style-guide | author:fundingcircle description:A ruby style guide
-fundingcircle-github-0-23 | hellgrid | https://github.com/FundingCircle/hellgrid | author:fundingcircle description:Track Ruby gem dependencies across projects.
-fundingcircle-github-0-24 | kaftee | https://github.com/FundingCircle/kaftee | author:fundingcircle description:puts the `tee` in Kafka.
-fundingcircle-github-0-25 | capistrano-ext-superusers | https://github.com/FundingCircle/capistrano-ext-superusers | author:fundingcircle description:Capistrano plugin to run commands as a specific user
-fundingcircle-github-0-26 | git-info | https://github.com/FundingCircle/git-info | author:fundingcircle description:Extract Git info from working directory
+github-fundingcircle-13-1 | ring-gatekeeper | https://github.com/FundingCircle/ring-gatekeeper | author:fundingcircle description:Authentication middleware in clojure
+github-fundingcircle-9-2 | dotatom | https://github.com/FundingCircle/dotatom | author:fundingcircle description:Config for the Atom text editor
+github-fundingcircle-8-3 | sass-common | https://github.com/FundingCircle/sass-common | author:fundingcircle description:Common Sass mixins and files
+github-fundingcircle-8-4 | kafka-compose | https://github.com/FundingCircle/kafka-compose | author:fundingcircle description:Docker compose setup for running a Kafka cluster locally.
+github-fundingcircle-5-5 | ring-request-proxy | https://github.com/FundingCircle/ring-request-proxy | author:fundingcircle description:Ring middleware to proxy requests
+github-fundingcircle-4-6 | factory-time | https://github.com/FundingCircle/factory-time | author:fundingcircle description:A Clojure library inspired by factory_girl
+github-fundingcircle-4-7 | shipment_tracker | https://github.com/FundingCircle/shipment_tracker | author:fundingcircle description:Tracks shipment of software versions for Financial Conduct Authority auditing purposes
+github-fundingcircle-4-8 | dotvim | https://github.com/FundingCircle/dotvim | author:fundingcircle description:Vim configuration setup
+github-fundingcircle-3-9 | riemann-manifold | https://github.com/FundingCircle/riemann-manifold | author:fundingcircle description:Riemann metrics for Manifold streams
+github-fundingcircle-3-10 | ring-venturi | https://github.com/FundingCircle/ring-venturi | author:fundingcircle description:Ring middleware to rate-limit requests
+github-fundingcircle-2-11 | riemann-cassandra | https://github.com/FundingCircle/riemann-cassandra | author:fundingcircle description:Tool for sending Cassandra metrics to Riemann
+github-fundingcircle-1-12 | sshkit-backends-netssh_global | https://github.com/FundingCircle/sshkit-backends-netssh_global | author:fundingcircle description:Configure options for Capistrano 3 and SSHKit globally.
+github-fundingcircle-1-13 | ragtime-cli-tools | https://github.com/FundingCircle/ragtime-cli-tools | author:fundingcircle description:Lets you run ragtime migrations from an uberjar
+github-fundingcircle-1-14 | do-make-rethink | https://github.com/FundingCircle/do-make-rethink | author:fundingcircle description:A Clojure library for making RethinkDB databases.
+github-fundingcircle-1-15 | clj-loga | https://github.com/FundingCircle/clj-loga | author:fundingcircle description:Custom log formatting
+github-fundingcircle-1-16 | krump | https://github.com/FundingCircle/krump | author:fundingcircle description:A kafka consumer focused on convenience
+github-fundingcircle-1-17 | fluent-plugin-graylog | https://github.com/FundingCircle/fluent-plugin-graylog | author:fundingcircle description:GrayLog output plugin for Fluentd
+github-fundingcircle-0-18 | supervisor_nag | https://github.com/FundingCircle/supervisor_nag | author:fundingcircle description:Check the status of supervisor jobs
+github-fundingcircle-0-19 | homebrew-elasticsearch | https://github.com/FundingCircle/homebrew-elasticsearch | author:fundingcircle description:Homebrew formulae for deprecated Elasticsearch versions
+github-fundingcircle-0-20 | memoria | https://github.com/FundingCircle/memoria | author:fundingcircle description:A central location to store, search and share knowledge cards.
+github-fundingcircle-0-21 | brewfiles | https://github.com/FundingCircle/brewfiles | author:fundingcircle description:Helpers for the perfect Brew
+github-fundingcircle-0-22 | ruby-style-guide | https://github.com/FundingCircle/ruby-style-guide | author:fundingcircle description:A ruby style guide
+github-fundingcircle-0-23 | hellgrid | https://github.com/FundingCircle/hellgrid | author:fundingcircle description:Track Ruby gem dependencies across projects.
+github-fundingcircle-0-24 | kaftee | https://github.com/FundingCircle/kaftee | author:fundingcircle description:puts the `tee` in Kafka.
+github-fundingcircle-0-25 | capistrano-ext-superusers | https://github.com/FundingCircle/capistrano-ext-superusers | author:fundingcircle description:Capistrano plugin to run commands as a specific user
+github-fundingcircle-0-26 | git-info | https://github.com/FundingCircle/git-info | author:fundingcircle description:Extract Git info from working directory
