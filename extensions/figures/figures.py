@@ -79,7 +79,7 @@ class Figures(BaseExtension):
     def genHtml(self, figures, column, links=[], thumb=''):
         html = '<div>'
         if thumb != '':
-            html += '<a target="_blank" href="' + thumb + '"><img src="' + thumb + '"/></a>'
+            html += '<a target="_blank" href="' + thumb + '"><img src="' + thumb + '"/></a><br/>'
         if figures != None and len(figures) > 0:
             width = "100"
             height = "100"

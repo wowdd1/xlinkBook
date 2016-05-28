@@ -195,11 +195,11 @@ class ArxivSpider(Spider):
         ix = url.rfind('/')
         idversion = url[ix+1:].strip() # extract just the id (and the version)
         if idversion.find('v') != -1:
-            return idversion[0 : idversion.find('v')], 1
+            parts = idversion.split('v')
+            assert len(parts) == 2, 'error parsing url ' + url
+            return parts[0], int(parts[1])  
+            #return idversion[0 : idversion.find('v')], 1
         return idversion , 1
-        #parts = idversion.split('v')
-        #assert len(parts) == 2, 'error parsing url ' + url
-        #return parts[0], int(parts[1])  
 
     def getCounts(self):
         counts = []
@@ -414,7 +414,7 @@ class ArxivSpider(Spider):
             summary = "summary:" + self.utils.removeDoubleSpace(paper['summary'].replace('\n', '').replace('|', '')).strip()
             title = self.utils.removeDoubleSpace(paper['title'].replace('\n', '')).strip()
 
-            desc = authors + ' ' + category + ' ' + published + ' ' + summary
+            desc = authors + ' ' + category + ' ' + published + ' ' + summary + ' version:' + str(paper['_version'])
             
             self.write_db(f, 'arxiv-' + paper['_rawid'].replace('.', '-'), title,
                       paper['id'][0: paper['id'].rfind('v')].strip(), desc)

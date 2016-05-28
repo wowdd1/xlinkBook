@@ -741,7 +741,9 @@ def filter(keyword, data):
 def buildLine(content):
     return " id | xx" + content + " | | \n"
 
+record_dict = {}
 def getLines(file_name):
+    global record_dict
     all_lines = []
     if os.path.exists(file_name):
         f = open(file_name,'rU')
@@ -758,9 +760,11 @@ def getLines(file_name):
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
                     keyword, data = getKeywordAndData(filter_keyword, line)
-
+                if record_dict.has_key(record.get_url().strip()):
+                    continue
                 if filter(keyword, data):
                     filter_result.append(line)
+                    record_dict[record.get_url().strip()] = ""
             all_lines = filter_result[:]
     return all_lines
 
