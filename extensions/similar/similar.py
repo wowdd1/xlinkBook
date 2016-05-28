@@ -54,7 +54,8 @@ class Similar(BaseExtension):
             if pid in self.sim_dict:
                 print 'resutl:'
                 for k in self.sim_dict[pid]:
-                    print k + ' ' + self.papers_dict[k].get_title()
+                    if self.papers_dict.has_key(k):
+                        print k + ' ' + self.papers_dict[k].get_title()
                 return self.genHtml(pid)
         elif self.category_obj.match(record.get_describe(), self.category_obj.website) or self.category_obj.containMatch(rID[0 : rID.find('-')].strip() , self.category_obj.engin):
             return self.genWebsiteHtml(record.get_title().strip())
@@ -101,7 +102,11 @@ class Similar(BaseExtension):
         count = 0
         for record in records:
             #html += '<li><span>' + record.get_id().strip() + '</span><br/>'
-            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + "v1.pdf.jpg"
+            version = record.get_version()
+            if version == None or version.strip() == '':
+                version = '1'
+                
+            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + "v" + version + ".pdf.jpg"
                     
             authors = record.get_author().split(',')
             categorys = record.get_category().split(' ')

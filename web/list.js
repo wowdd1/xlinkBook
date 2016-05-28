@@ -38,6 +38,16 @@ function searchTopic(obj, topic, otherInfo){
     } else{
          otherInfo = "";
     }
+    if (topic == "") {
+        var box=document.getElementById("search_txt");
+        value = box.value.replace(" ", "&nbsp;");
+        if (value != "") {
+            topic = value;
+            console.log("xx" , "box value " + value);
+        }
+        
+    }
+
     for(var i=0;i<options.length;i++){
         if (trimStr(options[i].text) == trimStr(obj.text)) {
             console.log("xx", options[i].value);
@@ -80,9 +90,9 @@ function navTopic(obj, divID, parentDivID, countIndex){
     }
     for (var i = 0; i < extensions.length; i++) {
         console.log('zzz', extensions[i]);
-        for (var j = 0; j < args[divID].length; j++) {
-            console.log('args', args[divID][j])
-        }
+        //for (var j = 0; j < args[divID].length; j++) {
+        //    console.log('args', args[divID][j])
+        //}
         if (extensions[i] == obj.text) { 
             var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false', column, column}
             postArgs["divID"] = divID + "-" + obj.text
@@ -125,9 +135,9 @@ function appendContent(targetid, id, topic, otherInfo){
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);
     console.log("xx", reference[id]);
 
-    hidenMetadata(targetid, "reference", "none");
-    hidenMetadata(targetid, "content", "none");
-    hidenMetadata(targetid, "similar", "none");
+    for (var i = 0; i < extensions.length; i++) {
+        hidenMetadata(targetid, extensions[i], "none")
+    }
     $.post('/extensions', {name : '*', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
         if (data != '') {
             console.log("xx", data)
@@ -181,7 +191,7 @@ function appendContentBox(targetid, boxid){
     var target=document.getElementById(targetid);
     var box=document.getElementById(boxid);
     console.log("xx", target);
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace(" ", "&nbsp;")).replace(/#otherInfo/g, "");
+    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, "").replace(/#otherInfo/g, "");
     hidenMetadata(targetid, "content");
     hidenMetadata(targetid, "reference");
 }

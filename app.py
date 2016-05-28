@@ -71,8 +71,8 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -u ' + db + ' ' #+ db.replace('/', '') + ' '
         #cmd += ' -u ' + db.replace('/', '') + ' '
     if column_num != '':
-        if ft != '':
-            column_num = '1'
+        #if ft != '':
+        #    column_num = '1'
         cmd += " -c " + column_num + " "
     if navigation != "false":
         cmd += " -n "    
@@ -153,6 +153,7 @@ def genList(files, folder='', db=''):
 
 
 if __name__ == '__main__':
+    print '__main__'
     app.run(debug=True)
 
 
