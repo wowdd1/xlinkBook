@@ -9,7 +9,10 @@ coverage==3.7.1
 decorator==3.4.0
 feedparser==5.2.1
 gensim==0.12.1
+gevent==1.1.1
 google-api-python-client==1.4.0
+greenlet==0.4.9
+gunicorn==19.6.0
 html5lib==1.0b3
 httplib2==0.9
 itsdangerous==0.24
@@ -26,9 +29,11 @@ pyasn1==0.1.7
 pyasn1-modules==0.0.5
 requests==2.5.0
 rsa==3.1.4
+scikit-learn==0.17.1
 scipy==0.16.0
 simplejson==3.6.5
 six==1.9.0
+sklearn==0.0
 smart-open==1.2.1
 uritemplate==0.6
 wikipedia==1.4.0
