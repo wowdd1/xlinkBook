@@ -1,15 +1,15 @@
-okta-github-18-1 | api | https://github.com/okta/api | author:okta description:Okta's Public API Repository
-okta-github-14-2 | oktasdk-java | https://github.com/okta/oktasdk-java | author:okta description:Updated May 18, 2016
-okta-github-12-3 | okta.github.io | https://github.com/okta/okta.github.io | author:okta description:Okta Identity Platform API Docs and Developer Home
-okta-github-11-4 | okta-mobile-connect | https://github.com/okta/okta-mobile-connect | author:okta description:Updated Dec 3, 2014
-okta-github-9-5 | okta-music-store | https://github.com/okta/okta-music-store | author:okta description:An example website that uses the Okta API
-okta-github-7-6 | jenkinizer | https://github.com/okta/jenkinizer | author:okta description:Template-based jenkins configuration-generation
-okta-github-6-7 | oktasdk-python | https://github.com/okta/oktasdk-python | author:okta description:Updated Mar 25, 2016
-okta-github-4-8 | okta-openvpn | https://github.com/okta/okta-openvpn | author:okta description:Updated Jan 7, 2016
-okta-github-3-9 | guava-libraries | https://github.com/okta/guava-libraries | author:okta description:Clone of Google's guava-libraries project
-okta-github-3-10 | oktasdk-csharp | https://github.com/okta/oktasdk-csharp | author:okta description:Updated May 14, 2016
-okta-github-2-11 | okta-auth-js | https://github.com/okta/okta-auth-js | author:okta description:The official js wrapper around Okta's auth API
-okta-github-2-12 | okta-signin-widget | https://github.com/okta/okta-signin-widget | author:okta description:Okta SignIn widget that renders the new login/auth/recovery flows
-okta-github-1-13 | okta-provisioning-sdk | https://github.com/okta/okta-provisioning-sdk | author:okta description:Updated Jan 14, 2014
-okta-github-0-14 | test-determinism-calculator | https://github.com/okta/test-determinism-calculator | author:okta description:Calculates a test's non-deterministic behavior.
-okta-github-0-15 | UserDocs | https://github.com/okta/UserDocs | author:okta description:Updated May 13, 2016
+github-okta-18-1 | api | https://github.com/okta/api | author:okta description:Okta's Public API Repository
+github-okta-14-2 | oktasdk-java | https://github.com/okta/oktasdk-java | author:okta description:Updated May 18, 2016
+github-okta-12-3 | okta.github.io | https://github.com/okta/okta.github.io | author:okta description:Okta Identity Platform API Docs and Developer Home
+github-okta-11-4 | okta-mobile-connect | https://github.com/okta/okta-mobile-connect | author:okta description:Updated Dec 3, 2014
+github-okta-9-5 | okta-music-store | https://github.com/okta/okta-music-store | author:okta description:An example website that uses the Okta API
+github-okta-7-6 | jenkinizer | https://github.com/okta/jenkinizer | author:okta description:Template-based jenkins configuration-generation
+github-okta-6-7 | oktasdk-python | https://github.com/okta/oktasdk-python | author:okta description:Updated Mar 25, 2016
+github-okta-4-8 | okta-openvpn | https://github.com/okta/okta-openvpn | author:okta description:Updated Jan 7, 2016
+github-okta-3-9 | guava-libraries | https://github.com/okta/guava-libraries | author:okta description:Clone of Google's guava-libraries project
+github-okta-3-10 | oktasdk-csharp | https://github.com/okta/oktasdk-csharp | author:okta description:Updated May 14, 2016
+github-okta-2-11 | okta-auth-js | https://github.com/okta/okta-auth-js | author:okta description:The official js wrapper around Okta's auth API
+github-okta-2-12 | okta-signin-widget | https://github.com/okta/okta-signin-widget | author:okta description:Okta SignIn widget that renders the new login/auth/recovery flows
+github-okta-1-13 | okta-provisioning-sdk | https://github.com/okta/okta-provisioning-sdk | author:okta description:Updated Jan 14, 2014
+github-okta-0-14 | test-determinism-calculator | https://github.com/okta/test-determinism-calculator | author:okta description:Calculates a test's non-deterministic behavior.
+github-okta-0-15 | UserDocs | https://github.com/okta/UserDocs | author:okta description:Updated May 13, 2016

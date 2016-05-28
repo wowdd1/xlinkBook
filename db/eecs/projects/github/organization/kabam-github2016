@@ -1,2 +1,2 @@
-kabam-github-2-1 | cloudformula | https://github.com/Kabam/cloudformula | author:kabam description:CloudFormula is a user-friendly tool to generate and upload CloudFormation templates from ERB templates.
-kabam-github-0-2 | chef-mongodb | https://github.com/Kabam/chef-mongodb | author:kabam description:Fork of https://github.com/edelight/chef-mongodb
+github-kabam-2-1 | cloudformula | https://github.com/Kabam/cloudformula | author:kabam description:CloudFormula is a user-friendly tool to generate and upload CloudFormation templates from ERB templates.
+github-kabam-0-2 | chef-mongodb | https://github.com/Kabam/chef-mongodb | author:kabam description:Fork of https://github.com/edelight/chef-mongodb

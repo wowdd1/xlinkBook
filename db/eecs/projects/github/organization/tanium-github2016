@@ -1,8 +1,8 @@
-tanium-github-11-1 | pytan | https://github.com/tanium/pytan | author:tanium description:Python Wrapper for Tanium's SOAP API
-tanium-github-4-2 | TaniumOsquery | https://github.com/tanium/TaniumOsquery | author:tanium description:An integration between Tanium and Osquery
-tanium-github-2-3 | SplunkforTanium | https://github.com/tanium/SplunkforTanium | author:tanium description:This is the Splunk App integrated with Tanium
-tanium-github-0-4 | PaloAltoNetworksTrapsContent | https://github.com/tanium/PaloAltoNetworksTrapsContent | author:tanium description:Updated Mar 31, 2016
-tanium-github-0-5 | Detect-IocUpload | https://github.com/tanium/Detect-IocUpload | author:tanium description:Example code for integration partners to use when integrating with Tanium Detect.
-tanium-github-0-6 | pyjenkins | https://github.com/tanium/pyjenkins | author:tanium description:A Jenkins meta-plugin for defining a build in python sourced from version control
-tanium-github-0-7 | stand-alone-python | https://github.com/tanium/stand-alone-python | author:tanium description:This provides scripts that utilize py2exe to produce a stand alone Python interpreter as a single Windows executable.
-tanium-github-0-8 | parameterized-pytests | https://github.com/tanium/parameterized-pytests | author:tanium description:Provides support for parameterizing tests in python's unittest
+github-tanium-11-1 | pytan | https://github.com/tanium/pytan | author:tanium description:Python Wrapper for Tanium's SOAP API
+github-tanium-4-2 | TaniumOsquery | https://github.com/tanium/TaniumOsquery | author:tanium description:An integration between Tanium and Osquery
+github-tanium-2-3 | SplunkforTanium | https://github.com/tanium/SplunkforTanium | author:tanium description:This is the Splunk App integrated with Tanium
+github-tanium-0-4 | PaloAltoNetworksTrapsContent | https://github.com/tanium/PaloAltoNetworksTrapsContent | author:tanium description:Updated Mar 31, 2016
+github-tanium-0-5 | Detect-IocUpload | https://github.com/tanium/Detect-IocUpload | author:tanium description:Example code for integration partners to use when integrating with Tanium Detect.
+github-tanium-0-6 | pyjenkins | https://github.com/tanium/pyjenkins | author:tanium description:A Jenkins meta-plugin for defining a build in python sourced from version control
+github-tanium-0-7 | stand-alone-python | https://github.com/tanium/stand-alone-python | author:tanium description:This provides scripts that utilize py2exe to produce a stand alone Python interpreter as a single Windows executable.
+github-tanium-0-8 | parameterized-pytests | https://github.com/tanium/parameterized-pytests | author:tanium description:Provides support for parameterizing tests in python's unittest

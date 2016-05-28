@@ -694,7 +694,7 @@ class GithubSpider(Spider):
                     title =  div.h3.a.text.strip()
                     desc = "description:" + div.p.text.strip().replace('\n', '')
                     self.count += 1
-                    id = k + '-github-' + stats + "-" + str(self.count) 
+                    id = 'github-' + k + '-' + stats + "-" + str(self.count) 
                     record = record = self.get_storage_format(stats, title, "https://github.com" + div.h3.a['href'], desc)
                     project_dict[id] = Record(record)
             self.count = 0

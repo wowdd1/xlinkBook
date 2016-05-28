@@ -1,60 +1,60 @@
-klarna-github-140-1 | jesse | https://github.com/klarna/jesse | author:klarna description:This repository is no longer actively maintained, please see
-klarna-github-89-2 | ponos | https://github.com/klarna/ponos | author:klarna description:ponos is a simple yet powerful load generator written in erlang
-klarna-github-60-3 | brod | https://github.com/klarna/brod | author:klarna description:Client for Apache Kafka in Erlang
-klarna-github-58-4 | tulib | https://github.com/klarna/tulib | author:klarna description:Standard Erlang library.
-klarna-github-57-5 | HiveRunner | https://github.com/klarna/HiveRunner | author:klarna description:An Open Source unit test framework for hadoop hive queries based on JUnit4
-klarna-github-49-6 | eremetic | https://github.com/klarna/eremetic | author:klarna description:A Framework for Mesos to run one-off tasks in docker
-klarna-github-45-7 | katt | https://github.com/klarna/katt | author:klarna description:This repository is no longer actively maintained, please see
-klarna-github-44-8 | meshup | https://github.com/klarna/meshup | author:klarna description:Dynamo-flavored workflow engine.
-klarna-github-37-9 | circuit_breaker | https://github.com/klarna/circuit_breaker | author:klarna description:Updated Feb 11, 2016
-klarna-github-22-10 | mnesia_pg | https://github.com/klarna/mnesia_pg | author:klarna description:Postgres backend to Mnesia via mnesia_ext
-klarna-github-21-11 | kco_php | https://github.com/klarna/kco_php | author:klarna description:Klarna Checkout PHP library
-klarna-github-17-12 | kco-mobile-sdk | https://github.com/klarna/kco-mobile-sdk | author:klarna description:Klarna Checkout SDK for mobile apps: iOS, Android and Cordova
-klarna-github-16-13 | leveldb_manager | https://github.com/klarna/leveldb_manager | author:klarna description:Small service for snapshotting eleveldb without stopping the Erlang node
-klarna-github-13-14 | soapbox | https://github.com/klarna/soapbox | author:klarna description:XMLRPCful microframework.
-klarna-github-10-15 | erl_unused_includes | https://github.com/klarna/erl_unused_includes | author:klarna description:Updated Dec 3, 2014
-klarna-github-10-16 | krc | https://github.com/klarna/krc | author:klarna description:The K Riak Client.
-klarna-github-9-17 | hubot-stash-poll | https://github.com/klarna/hubot-stash-poll | author:klarna description:Poll your Atlassian Stash repositories for pull request changes
-klarna-github-8-18 | klarna-on-demand-ios | https://github.com/klarna/klarna-on-demand-ios | author:klarna description:Klarna On Demand SDK for iOS
-klarna-github-8-19 | lager_middleman_backend | https://github.com/klarna/lager_middleman_backend | author:klarna description:Updated Jun 2, 2014
-klarna-github-8-20 | erlavro | https://github.com/klarna/erlavro | author:klarna description:Avro support for Erlang (http://avro.apache.org/)
-klarna-github-7-21 | kco_dotnet | https://github.com/klarna/kco_dotnet | author:klarna description:Klarna Checkout dotnet library
-klarna-github-6-22 | katt-js | https://github.com/klarna/katt-js | author:klarna description:KATT (Klarna API Testing Tool) is an HTTP-based testing tool for Node.
-klarna-github-6-23 | rimu | https://github.com/klarna/rimu | author:klarna description:Riak implementations of MeshUp interfaces.
-klarna-github-6-24 | kafka_protocol | https://github.com/klarna/kafka_protocol | author:klarna description:Kafka protocol erlang library
-klarna-github-6-25 | ui-css-components | https://github.com/klarna/ui-css-components | author:klarna description:Klarna's UI CSS Components
-klarna-github-6-26 | kco_python | https://github.com/klarna/kco_python | author:klarna description:Klarna Checkout Python Library
-klarna-github-5-27 | sample-digital-goods-backend | https://github.com/klarna/sample-digital-goods-backend | author:klarna description:A sample integration of Klarna's Digital Goods
-klarna-github-5-28 | ui-react-components | https://github.com/klarna/ui-react-components | author:klarna description:Klarna's UI React Components
-klarna-github-4-29 | klarna-on-demand-android | https://github.com/klarna/klarna-on-demand-android | author:klarna description:Klarna On Demand SDK for Android
-klarna-github-4-30 | cloud9-gradle-template | https://github.com/klarna/cloud9-gradle-template | author:klarna description:Template workspace structure for a Java Gradle project in Cloud9
-klarna-github-4-31 | kco_java | https://github.com/klarna/kco_java | author:klarna description:Klarna Checkout Java Library
-klarna-github-3-32 | kco_rest_java | https://github.com/klarna/kco_rest_java | author:klarna description:Java library for Klarna Checkout v3 and Order Management APIs
-klarna-github-3-33 | cloudconfig | https://github.com/klarna/cloudconfig | author:klarna description:Cloudconfig is an application that manages configurations for resources in Cloudstack.
-klarna-github-3-34 | restit | https://github.com/klarna/restit | author:klarna description:REST Interface Tool is a prototype for consuming pure REST APIs.
-klarna-github-3-35 | kastle | https://github.com/klarna/kastle | author:klarna description:Kafka REST proxy
-klarna-github-3-36 | php-xmlrpc | https://github.com/klarna/php-xmlrpc | author:klarna description:the klarna xmlrpc library for php
-klarna-github-2-37 | kco_rest_dotnet | https://github.com/klarna/kco_rest_dotnet | author:klarna description:.NET library for Klarna Checkout v3 and Order Management APIs
-klarna-github-1-38 | katt-player | https://github.com/klarna/katt-player | author:klarna description:KATT player is a mock HTTP server that replies with HTTP responses based on KATT blueprints.
-klarna-github-1-39 | stdapp.mk | https://github.com/klarna/stdapp.mk | author:klarna description:Generic Makefile for building Erlang applications
-klarna-github-1-40 | kco_rest_php | https://github.com/klarna/kco_rest_php | author:klarna description:PHP library for Klarna Checkout v3 and Order Management APIs
-klarna-github-1-41 | awesometer | https://github.com/klarna/awesometer | author:klarna description:Updated May 4, 2014
-klarna-github-1-42 | katt-util | https://github.com/klarna/katt-util | author:klarna description:KATT utilities for KATT blueprints.
-klarna-github-1-43 | on-demand-for-digital-goods-docs | https://github.com/klarna/on-demand-for-digital-goods-docs | author:klarna description:Updated Apr 6, 2016
-klarna-github-1-44 | cloud9-js-pair-coding-template | https://github.com/klarna/cloud9-js-pair-coding-template | author:klarna description:Updated May 11, 2015
-klarna-github-1-45 | kco_asp | https://github.com/klarna/kco_asp | author:klarna description:Klarna Checkout ASP Library
-klarna-github-0-46 | ipx-mock | https://github.com/klarna/ipx-mock | author:klarna description:A mock for IPX SMS Service
-klarna-github-0-47 | kco-android-example-app | https://github.com/klarna/kco-android-example-app | author:klarna description:An example Android app to demonstrate Klarna Checkout SDK usage
-klarna-github-0-48 | the-konferense | https://github.com/klarna/the-konferense | author:klarna description:Updated May 9, 2016
-klarna-github-0-49 | sample-ondemand-backend | https://github.com/klarna/sample-ondemand-backend | author:klarna description:A very slim backend that facilitates purchases for an app using the Klarna on Demand SDK.
-klarna-github-0-50 | kco-ios-example-app | https://github.com/klarna/kco-ios-example-app | author:klarna description:An example iOS app to demonstrate Klarna Checkout SDK usage
-klarna-github-0-51 | kco-cordova-example-app | https://github.com/klarna/kco-cordova-example-app | author:klarna description:An example Cordova app to demonstrate Klarna Checkout SDK usage
-klarna-github-0-52 | ansible-role-import-and-trust-certificate | https://github.com/klarna/ansible-role-import-and-trust-certificate | author:klarna description:Ansible role for importing and trusting PEM certificates.
-klarna-github-0-53 | on-demand-for-digital-goods-python | https://github.com/klarna/on-demand-for-digital-goods-python | author:klarna description:On demand for digital goods. Simple example in Python
-klarna-github-0-54 | omniauth-klarna | https://github.com/klarna/omniauth-klarna | author:klarna description:This is the official OmniAuth strategy to authenticate with Klarna via OAuth2.
-klarna-github-0-55 | klarna-apigen-theme | https://github.com/klarna/klarna-apigen-theme | author:klarna description:Klarna ApiGen Theme
-klarna-github-0-56 | swedish_personal_number | https://github.com/klarna/swedish_personal_number | author:klarna description:A Value Object that provides some convenience helpers to deal with Swedish personal numbers
-klarna-github-0-57 | klarna-on-demand-js | https://github.com/klarna/klarna-on-demand-js | author:klarna description:Klarna On Demand SDK for hybrid applications
-klarna-github-0-58 | nordicjs | https://github.com/klarna/nordicjs | author:klarna description:A code challenge and short presentation to show at nordic.js
-klarna-github-0-59 | klarna-on-demand-integration-tests | https://github.com/klarna/klarna-on-demand-integration-tests | author:klarna description:Contains common integration tests for Klarna's on Demand SDKs
-klarna-github-0-60 | ansible-role-homebrew | https://github.com/klarna/ansible-role-homebrew | author:klarna description:Ansible role for installing Homebrew and Homebrew Cask.
+github-klarna-140-1 | jesse | https://github.com/klarna/jesse | author:klarna description:This repository is no longer actively maintained, please see
+github-klarna-89-2 | ponos | https://github.com/klarna/ponos | author:klarna description:ponos is a simple yet powerful load generator written in erlang
+github-klarna-60-3 | brod | https://github.com/klarna/brod | author:klarna description:Client for Apache Kafka in Erlang
+github-klarna-58-4 | tulib | https://github.com/klarna/tulib | author:klarna description:Standard Erlang library.
+github-klarna-57-5 | HiveRunner | https://github.com/klarna/HiveRunner | author:klarna description:An Open Source unit test framework for hadoop hive queries based on JUnit4
+github-klarna-49-6 | eremetic | https://github.com/klarna/eremetic | author:klarna description:A Framework for Mesos to run one-off tasks in docker
+github-klarna-45-7 | katt | https://github.com/klarna/katt | author:klarna description:This repository is no longer actively maintained, please see
+github-klarna-44-8 | meshup | https://github.com/klarna/meshup | author:klarna description:Dynamo-flavored workflow engine.
+github-klarna-37-9 | circuit_breaker | https://github.com/klarna/circuit_breaker | author:klarna description:Updated Feb 11, 2016
+github-klarna-22-10 | mnesia_pg | https://github.com/klarna/mnesia_pg | author:klarna description:Postgres backend to Mnesia via mnesia_ext
+github-klarna-21-11 | kco_php | https://github.com/klarna/kco_php | author:klarna description:Klarna Checkout PHP library
+github-klarna-17-12 | kco-mobile-sdk | https://github.com/klarna/kco-mobile-sdk | author:klarna description:Klarna Checkout SDK for mobile apps: iOS, Android and Cordova
+github-klarna-16-13 | leveldb_manager | https://github.com/klarna/leveldb_manager | author:klarna description:Small service for snapshotting eleveldb without stopping the Erlang node
+github-klarna-13-14 | soapbox | https://github.com/klarna/soapbox | author:klarna description:XMLRPCful microframework.
+github-klarna-10-15 | erl_unused_includes | https://github.com/klarna/erl_unused_includes | author:klarna description:Updated Dec 3, 2014
+github-klarna-10-16 | krc | https://github.com/klarna/krc | author:klarna description:The K Riak Client.
+github-klarna-9-17 | hubot-stash-poll | https://github.com/klarna/hubot-stash-poll | author:klarna description:Poll your Atlassian Stash repositories for pull request changes
+github-klarna-8-18 | klarna-on-demand-ios | https://github.com/klarna/klarna-on-demand-ios | author:klarna description:Klarna On Demand SDK for iOS
+github-klarna-8-19 | lager_middleman_backend | https://github.com/klarna/lager_middleman_backend | author:klarna description:Updated Jun 2, 2014
+github-klarna-8-20 | erlavro | https://github.com/klarna/erlavro | author:klarna description:Avro support for Erlang (http://avro.apache.org/)
+github-klarna-7-21 | kco_dotnet | https://github.com/klarna/kco_dotnet | author:klarna description:Klarna Checkout dotnet library
+github-klarna-6-22 | katt-js | https://github.com/klarna/katt-js | author:klarna description:KATT (Klarna API Testing Tool) is an HTTP-based testing tool for Node.
+github-klarna-6-23 | rimu | https://github.com/klarna/rimu | author:klarna description:Riak implementations of MeshUp interfaces.
+github-klarna-6-24 | kafka_protocol | https://github.com/klarna/kafka_protocol | author:klarna description:Kafka protocol erlang library
+github-klarna-6-25 | ui-css-components | https://github.com/klarna/ui-css-components | author:klarna description:Klarna's UI CSS Components
+github-klarna-6-26 | kco_python | https://github.com/klarna/kco_python | author:klarna description:Klarna Checkout Python Library
+github-klarna-5-27 | sample-digital-goods-backend | https://github.com/klarna/sample-digital-goods-backend | author:klarna description:A sample integration of Klarna's Digital Goods
+github-klarna-5-28 | ui-react-components | https://github.com/klarna/ui-react-components | author:klarna description:Klarna's UI React Components
+github-klarna-4-29 | klarna-on-demand-android | https://github.com/klarna/klarna-on-demand-android | author:klarna description:Klarna On Demand SDK for Android
+github-klarna-4-30 | cloud9-gradle-template | https://github.com/klarna/cloud9-gradle-template | author:klarna description:Template workspace structure for a Java Gradle project in Cloud9
+github-klarna-4-31 | kco_java | https://github.com/klarna/kco_java | author:klarna description:Klarna Checkout Java Library
+github-klarna-3-32 | kco_rest_java | https://github.com/klarna/kco_rest_java | author:klarna description:Java library for Klarna Checkout v3 and Order Management APIs
+github-klarna-3-33 | cloudconfig | https://github.com/klarna/cloudconfig | author:klarna description:Cloudconfig is an application that manages configurations for resources in Cloudstack.
+github-klarna-3-34 | restit | https://github.com/klarna/restit | author:klarna description:REST Interface Tool is a prototype for consuming pure REST APIs.
+github-klarna-3-35 | kastle | https://github.com/klarna/kastle | author:klarna description:Kafka REST proxy
+github-klarna-3-36 | php-xmlrpc | https://github.com/klarna/php-xmlrpc | author:klarna description:the klarna xmlrpc library for php
+github-klarna-2-37 | kco_rest_dotnet | https://github.com/klarna/kco_rest_dotnet | author:klarna description:.NET library for Klarna Checkout v3 and Order Management APIs
+github-klarna-1-38 | katt-player | https://github.com/klarna/katt-player | author:klarna description:KATT player is a mock HTTP server that replies with HTTP responses based on KATT blueprints.
+github-klarna-1-39 | stdapp.mk | https://github.com/klarna/stdapp.mk | author:klarna description:Generic Makefile for building Erlang applications
+github-klarna-1-40 | kco_rest_php | https://github.com/klarna/kco_rest_php | author:klarna description:PHP library for Klarna Checkout v3 and Order Management APIs
+github-klarna-1-41 | awesometer | https://github.com/klarna/awesometer | author:klarna description:Updated May 4, 2014
+github-klarna-1-42 | katt-util | https://github.com/klarna/katt-util | author:klarna description:KATT utilities for KATT blueprints.
+github-klarna-1-43 | on-demand-for-digital-goods-docs | https://github.com/klarna/on-demand-for-digital-goods-docs | author:klarna description:Updated Apr 6, 2016
+github-klarna-1-44 | cloud9-js-pair-coding-template | https://github.com/klarna/cloud9-js-pair-coding-template | author:klarna description:Updated May 11, 2015
+github-klarna-1-45 | kco_asp | https://github.com/klarna/kco_asp | author:klarna description:Klarna Checkout ASP Library
+github-klarna-0-46 | ipx-mock | https://github.com/klarna/ipx-mock | author:klarna description:A mock for IPX SMS Service
+github-klarna-0-47 | kco-android-example-app | https://github.com/klarna/kco-android-example-app | author:klarna description:An example Android app to demonstrate Klarna Checkout SDK usage
+github-klarna-0-48 | the-konferense | https://github.com/klarna/the-konferense | author:klarna description:Updated May 9, 2016
+github-klarna-0-49 | sample-ondemand-backend | https://github.com/klarna/sample-ondemand-backend | author:klarna description:A very slim backend that facilitates purchases for an app using the Klarna on Demand SDK.
+github-klarna-0-50 | kco-ios-example-app | https://github.com/klarna/kco-ios-example-app | author:klarna description:An example iOS app to demonstrate Klarna Checkout SDK usage
+github-klarna-0-51 | kco-cordova-example-app | https://github.com/klarna/kco-cordova-example-app | author:klarna description:An example Cordova app to demonstrate Klarna Checkout SDK usage
+github-klarna-0-52 | ansible-role-import-and-trust-certificate | https://github.com/klarna/ansible-role-import-and-trust-certificate | author:klarna description:Ansible role for importing and trusting PEM certificates.
+github-klarna-0-53 | on-demand-for-digital-goods-python | https://github.com/klarna/on-demand-for-digital-goods-python | author:klarna description:On demand for digital goods. Simple example in Python
+github-klarna-0-54 | omniauth-klarna | https://github.com/klarna/omniauth-klarna | author:klarna description:This is the official OmniAuth strategy to authenticate with Klarna via OAuth2.
+github-klarna-0-55 | klarna-apigen-theme | https://github.com/klarna/klarna-apigen-theme | author:klarna description:Klarna ApiGen Theme
+github-klarna-0-56 | swedish_personal_number | https://github.com/klarna/swedish_personal_number | author:klarna description:A Value Object that provides some convenience helpers to deal with Swedish personal numbers
+github-klarna-0-57 | klarna-on-demand-js | https://github.com/klarna/klarna-on-demand-js | author:klarna description:Klarna On Demand SDK for hybrid applications
+github-klarna-0-58 | nordicjs | https://github.com/klarna/nordicjs | author:klarna description:A code challenge and short presentation to show at nordic.js
+github-klarna-0-59 | klarna-on-demand-integration-tests | https://github.com/klarna/klarna-on-demand-integration-tests | author:klarna description:Contains common integration tests for Klarna's on Demand SDKs
+github-klarna-0-60 | ansible-role-homebrew | https://github.com/klarna/ansible-role-homebrew | author:klarna description:Ansible role for installing Homebrew and Homebrew Cask.

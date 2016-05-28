@@ -1,10 +1,10 @@
-medallia-github-71-1 | Word2VecJava | https://github.com/medallia/Word2VecJava | author:medallia description:Word2Vec Java Port
-medallia-github-5-2 | ios-MMAccessoryPanel | https://github.com/medallia/ios-MMAccessoryPanel | author:medallia description:MMAccessoryPanel is a iOS Cocoa Touch class that creates and manages collapsible bars on top of any UIScrollView, just below the navigation bar.
-medallia-github-1-3 | hipchat-notifier | https://github.com/medallia/hipchat-notifier | author:medallia description:Push HipChat notifications to the configured room.
-medallia-github-0-4 | w2v4j | https://github.com/medallia/w2v4j | author:medallia description:Java port of the Word2Vec library
-medallia-github-0-5 | ui-challenge | https://github.com/medallia/ui-challenge | author:medallia description:Updated Jun 17, 2014
-medallia-github-0-6 | service-discovery | https://github.com/medallia/service-discovery | author:medallia description:Updated Mar 23, 2016
-medallia-github-0-7 | hashtest | https://github.com/medallia/hashtest | author:medallia description:Updated Aug 27, 2015
-medallia-github-0-8 | unsafe | https://github.com/medallia/unsafe | author:medallia description:Java library to compile and run C++ code in-memory
-medallia-github-0-9 | coop-paging-poc | https://github.com/medallia/coop-paging-poc | author:medallia description:Proof-of-Concept for Cooperative Paging
-medallia-github-0-10 | jq-package-builder | https://github.com/medallia/jq-package-builder | author:medallia description:Updated Apr 13, 2016
+github-medallia-71-1 | Word2VecJava | https://github.com/medallia/Word2VecJava | author:medallia description:Word2Vec Java Port
+github-medallia-5-2 | ios-MMAccessoryPanel | https://github.com/medallia/ios-MMAccessoryPanel | author:medallia description:MMAccessoryPanel is a iOS Cocoa Touch class that creates and manages collapsible bars on top of any UIScrollView, just below the navigation bar.
+github-medallia-1-3 | hipchat-notifier | https://github.com/medallia/hipchat-notifier | author:medallia description:Push HipChat notifications to the configured room.
+github-medallia-0-4 | w2v4j | https://github.com/medallia/w2v4j | author:medallia description:Java port of the Word2Vec library
+github-medallia-0-5 | ui-challenge | https://github.com/medallia/ui-challenge | author:medallia description:Updated Jun 17, 2014
+github-medallia-0-6 | service-discovery | https://github.com/medallia/service-discovery | author:medallia description:Updated Mar 23, 2016
+github-medallia-0-7 | hashtest | https://github.com/medallia/hashtest | author:medallia description:Updated Aug 27, 2015
+github-medallia-0-8 | unsafe | https://github.com/medallia/unsafe | author:medallia description:Java library to compile and run C++ code in-memory
+github-medallia-0-9 | coop-paging-poc | https://github.com/medallia/coop-paging-poc | author:medallia description:Proof-of-Concept for Cooperative Paging
+github-medallia-0-10 | jq-package-builder | https://github.com/medallia/jq-package-builder | author:medallia description:Updated Apr 13, 2016

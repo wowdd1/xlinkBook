@@ -1,37 +1,37 @@
-flipkart-github-204-1 | HostDB | https://github.com/Flipkart/HostDB | author:flipkart description:HostDB: a new tool to help manage data center inventory and write applications around it.
-flipkart-github-201-2 | phantom | https://github.com/Flipkart/phantom | author:flipkart description:Phantom is a high performance proxy for accessing distributed services. It is an RPC system with support for different transports and protocols. Phantom is inspired by Twitter Finagle clients and builds on the capabilities of technologies like Netty, Unix Domain Sockets, Netflix Hystrix and Spring. Phantom proxies have been used to serve several…
-flipkart-github-81-3 | aesop | https://github.com/Flipkart/aesop | author:flipkart description:A keen Observer of changes that can also relay change events reliably to interested parties. Provides useful infrastructure for building Eventually Consistent data sources and systems.
-flipkart-github-57-4 | foxtrot | https://github.com/Flipkart/foxtrot | author:flipkart description:A store abstraction and analytics system for real-time event data.
-flipkart-github-38-5 | flipcast | https://github.com/Flipkart/flipcast | author:flipkart description:A scalable push notification platform for mobile, devices and web.
-flipkart-github-18-6 | loader | https://github.com/Flipkart/loader | author:flipkart description:Distributed Load generation Platform with Server Side Monitoring Capabilities.
-flipkart-github-14-7 | GraceKelly | https://github.com/Flipkart/GraceKelly | author:flipkart description:A Best Effort Cache Synchronization Library In Java
-flipkart-github-10-8 | phantom-mysql-proxy | https://github.com/Flipkart/phantom-mysql-proxy | author:flipkart description:The Mysql proxy leverages the Phantom extensibility support.
-flipkart-github-5-9 | harness | https://github.com/Flipkart/harness | author:flipkart description:Harness project - an automation test framework for functional tests
-flipkart-github-3-10 | multitenancy | https://github.com/Flipkart/multitenancy | author:flipkart description:Tenant gem for supply chain
-flipkart-github-2-11 | speed | https://github.com/Flipkart/speed | author:flipkart description:Fault tolerant distributed in memory filesystem based on Membase
-flipkart-github-2-12 | netmap | https://github.com/Flipkart/netmap | author:flipkart description:netmap and VALE - very fast packet I/O from userspace (FreeBSD/Linux)
-flipkart-github-2-13 | nosh | https://github.com/Flipkart/nosh | author:flipkart description:Interactive text-based console with pluggable commands for Java applications
-flipkart-github-1-14 | ekart-analytics | https://github.com/Flipkart/ekart-analytics | author:flipkart description:Repo for Scripts, Models, etc created by analytics team
-flipkart-github-1-15 | MySQL-replication-listener | https://github.com/Flipkart/MySQL-replication-listener | author:flipkart description:This is a fork of MySQL-replication-listener on launchpad. https://launchpad.net/mysql-replication-listener
-flipkart-github-1-16 | user-affinity | https://github.com/Flipkart/user-affinity | author:flipkart description:Updated Mar 15, 2016
-flipkart-github-1-17 | hhd-wpa | https://github.com/Flipkart/hhd-wpa | author:flipkart description:Updated Mar 29, 2016
-flipkart-github-1-18 | fk-affiliate-api-python | https://github.com/Flipkart/fk-affiliate-api-python | author:flipkart description:Product and Offers Feed APIs
-flipkart-github-1-19 | quartz | https://github.com/Flipkart/quartz | author:flipkart description:Updated Jul 28, 2015
-flipkart-github-0-20 | hash-utility | https://github.com/Flipkart/hash-utility | author:flipkart description:A simple utility to authenticate a service call, based on HMAC (signature).
-flipkart-github-0-21 | pwa-mocks | https://github.com/Flipkart/pwa-mocks | author:flipkart description:Updated May 1, 2016
-flipkart-github-0-22 | device-lab | https://github.com/Flipkart/device-lab | author:flipkart description:Updated May 19, 2016
-flipkart-github-0-23 | F7-models | https://github.com/Flipkart/F7-models | author:flipkart description:Updated Apr 26, 2016
-flipkart-github-0-24 | luceneIndexer | https://github.com/Flipkart/luceneIndexer | author:flipkart description:Create lucene index in hdfs
-flipkart-github-0-25 | fk-apache-camel-kafka-async | https://github.com/Flipkart/fk-apache-camel-kafka-async | author:flipkart description:Apache Camel Kafka Component - which uses Kafka Asynchronous producer
-flipkart-github-0-26 | relay | https://github.com/Flipkart/relay | author:flipkart description:Relayer implementation in Java to reliably transmit messages from a datasource to a queue
-flipkart-github-0-27 | ekart-balance-bucket-hbase-consumer | https://github.com/Flipkart/ekart-balance-bucket-hbase-consumer | author:flipkart description:Hbase Client Consumer for Balance Bucket Service
-flipkart-github-0-28 | espion | https://github.com/Flipkart/espion | author:flipkart description:Codahale Metrics for Scala
-flipkart-github-0-29 | ra_mec_jira | https://github.com/Flipkart/ra_mec_jira | author:flipkart description:Retail Accounting Jira Issue Tracker
-flipkart-github-0-30 | minnal-sample-app | https://github.com/Flipkart/minnal-sample-app | author:flipkart description:Contains sample application developed on minnal framework
-flipkart-github-0-31 | automobile | https://github.com/Flipkart/automobile | author:flipkart description:an automation test framework for mobile apps
-flipkart-github-0-32 | bootcamp2014-build-tool-faceoff | https://github.com/Flipkart/bootcamp2014-build-tool-faceoff | author:flipkart description:Updated Jul 4, 2014
-flipkart-github-0-33 | sun-jdk-7-debian-x64 | https://github.com/Flipkart/sun-jdk-7-debian-x64 | author:flipkart description:Sun JDK 1.7 package for debian squeeze
-flipkart-github-0-34 | fixit-felix | https://github.com/Flipkart/fixit-felix | author:flipkart description:Fixit-Felix troubleshooting workshop
-flipkart-github-0-35 | bootcamp2014-mvn-intro | https://github.com/Flipkart/bootcamp2014-mvn-intro | author:flipkart description:Updated Jul 4, 2014
-flipkart-github-0-36 | linux | https://github.com/Flipkart/linux | author:flipkart description:Flipkart fork of Linux kernel
-flipkart-github-0-37 | obelix | https://github.com/Flipkart/obelix | author:flipkart description:Updated Jan 27, 2015
+github-flipkart-204-1 | HostDB | https://github.com/Flipkart/HostDB | author:flipkart description:HostDB: a new tool to help manage data center inventory and write applications around it.
+github-flipkart-201-2 | phantom | https://github.com/Flipkart/phantom | author:flipkart description:Phantom is a high performance proxy for accessing distributed services. It is an RPC system with support for different transports and protocols. Phantom is inspired by Twitter Finagle clients and builds on the capabilities of technologies like Netty, Unix Domain Sockets, Netflix Hystrix and Spring. Phantom proxies have been used to serve several…
+github-flipkart-81-3 | aesop | https://github.com/Flipkart/aesop | author:flipkart description:A keen Observer of changes that can also relay change events reliably to interested parties. Provides useful infrastructure for building Eventually Consistent data sources and systems.
+github-flipkart-57-4 | foxtrot | https://github.com/Flipkart/foxtrot | author:flipkart description:A store abstraction and analytics system for real-time event data.
+github-flipkart-38-5 | flipcast | https://github.com/Flipkart/flipcast | author:flipkart description:A scalable push notification platform for mobile, devices and web.
+github-flipkart-18-6 | loader | https://github.com/Flipkart/loader | author:flipkart description:Distributed Load generation Platform with Server Side Monitoring Capabilities.
+github-flipkart-14-7 | GraceKelly | https://github.com/Flipkart/GraceKelly | author:flipkart description:A Best Effort Cache Synchronization Library In Java
+github-flipkart-10-8 | phantom-mysql-proxy | https://github.com/Flipkart/phantom-mysql-proxy | author:flipkart description:The Mysql proxy leverages the Phantom extensibility support.
+github-flipkart-5-9 | harness | https://github.com/Flipkart/harness | author:flipkart description:Harness project - an automation test framework for functional tests
+github-flipkart-3-10 | multitenancy | https://github.com/Flipkart/multitenancy | author:flipkart description:Tenant gem for supply chain
+github-flipkart-2-11 | speed | https://github.com/Flipkart/speed | author:flipkart description:Fault tolerant distributed in memory filesystem based on Membase
+github-flipkart-2-12 | netmap | https://github.com/Flipkart/netmap | author:flipkart description:netmap and VALE - very fast packet I/O from userspace (FreeBSD/Linux)
+github-flipkart-2-13 | nosh | https://github.com/Flipkart/nosh | author:flipkart description:Interactive text-based console with pluggable commands for Java applications
+github-flipkart-1-14 | ekart-analytics | https://github.com/Flipkart/ekart-analytics | author:flipkart description:Repo for Scripts, Models, etc created by analytics team
+github-flipkart-1-15 | MySQL-replication-listener | https://github.com/Flipkart/MySQL-replication-listener | author:flipkart description:This is a fork of MySQL-replication-listener on launchpad. https://launchpad.net/mysql-replication-listener
+github-flipkart-1-16 | user-affinity | https://github.com/Flipkart/user-affinity | author:flipkart description:Updated Mar 15, 2016
+github-flipkart-1-17 | hhd-wpa | https://github.com/Flipkart/hhd-wpa | author:flipkart description:Updated Mar 29, 2016
+github-flipkart-1-18 | fk-affiliate-api-python | https://github.com/Flipkart/fk-affiliate-api-python | author:flipkart description:Product and Offers Feed APIs
+github-flipkart-1-19 | quartz | https://github.com/Flipkart/quartz | author:flipkart description:Updated Jul 28, 2015
+github-flipkart-0-20 | hash-utility | https://github.com/Flipkart/hash-utility | author:flipkart description:A simple utility to authenticate a service call, based on HMAC (signature).
+github-flipkart-0-21 | pwa-mocks | https://github.com/Flipkart/pwa-mocks | author:flipkart description:Updated May 1, 2016
+github-flipkart-0-22 | device-lab | https://github.com/Flipkart/device-lab | author:flipkart description:Updated May 19, 2016
+github-flipkart-0-23 | F7-models | https://github.com/Flipkart/F7-models | author:flipkart description:Updated Apr 26, 2016
+github-flipkart-0-24 | luceneIndexer | https://github.com/Flipkart/luceneIndexer | author:flipkart description:Create lucene index in hdfs
+github-flipkart-0-25 | fk-apache-camel-kafka-async | https://github.com/Flipkart/fk-apache-camel-kafka-async | author:flipkart description:Apache Camel Kafka Component - which uses Kafka Asynchronous producer
+github-flipkart-0-26 | relay | https://github.com/Flipkart/relay | author:flipkart description:Relayer implementation in Java to reliably transmit messages from a datasource to a queue
+github-flipkart-0-27 | ekart-balance-bucket-hbase-consumer | https://github.com/Flipkart/ekart-balance-bucket-hbase-consumer | author:flipkart description:Hbase Client Consumer for Balance Bucket Service
+github-flipkart-0-28 | espion | https://github.com/Flipkart/espion | author:flipkart description:Codahale Metrics for Scala
+github-flipkart-0-29 | ra_mec_jira | https://github.com/Flipkart/ra_mec_jira | author:flipkart description:Retail Accounting Jira Issue Tracker
+github-flipkart-0-30 | minnal-sample-app | https://github.com/Flipkart/minnal-sample-app | author:flipkart description:Contains sample application developed on minnal framework
+github-flipkart-0-31 | automobile | https://github.com/Flipkart/automobile | author:flipkart description:an automation test framework for mobile apps
+github-flipkart-0-32 | bootcamp2014-build-tool-faceoff | https://github.com/Flipkart/bootcamp2014-build-tool-faceoff | author:flipkart description:Updated Jul 4, 2014
+github-flipkart-0-33 | sun-jdk-7-debian-x64 | https://github.com/Flipkart/sun-jdk-7-debian-x64 | author:flipkart description:Sun JDK 1.7 package for debian squeeze
+github-flipkart-0-34 | fixit-felix | https://github.com/Flipkart/fixit-felix | author:flipkart description:Fixit-Felix troubleshooting workshop
+github-flipkart-0-35 | bootcamp2014-mvn-intro | https://github.com/Flipkart/bootcamp2014-mvn-intro | author:flipkart description:Updated Jul 4, 2014
+github-flipkart-0-36 | linux | https://github.com/Flipkart/linux | author:flipkart description:Flipkart fork of Linux kernel
+github-flipkart-0-37 | obelix | https://github.com/Flipkart/obelix | author:flipkart description:Updated Jan 27, 2015
