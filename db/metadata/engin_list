@@ -164,8 +164,8 @@ engin-160 | ust.hk | http://www.ust.hk/search/$/?sopt=google | priority:0 descri
 engin-161 | physicsworld | http://physicsworld.com/cws/search?siteCode=phw&query= | priority:0 description:journal
 engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
-engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:8 description:all
-engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:5 description:all 
+engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:4 description:all
+engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:4 description:all 
 engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:course 
 engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:book 
 engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset p2p
@@ -347,7 +347,7 @@ engin-343 | codeproject | http://www.codeproject.com/search.aspx?q=$&x=0&y=0&sbo
 engin-344 | oschina | http://www.oschina.net/search?scope=project&q= | priority:0 description:project
 engin-345 | refme | https://app.refme.com/home?q= | priority:5 description:tools
 engin-346 | btdigg | http://btdigg.org/search?info_hash=&q= | priority:5 description:p2p
-engin-347 | filechef | http://www.filechef.com/?fileType=&query= | priority:5 description:all
+engin-347 | filechef | http://www.filechef.com/?fileType=&query= | priority:0 description:all
 engin-348 | chiff | http://www.chiff.com/search/search.php?zoom_query=$&x=0&y=0 | priority:0 description:website
 engin-349 | kadaza | http://www.kadaza.com/search#gsc.q= | priority:0 description:website
 engin-350 | allmyfaves | http://www.allmyfaves.com/index/search/?cx=partner-pub-1569923671775194%3A8145466440&cof=FORID%3A10&ie=UTF-8&q=$&sa=Search&siteurl=www.allmyfaves.com%2F&ref=www.egouz.com%2Ftopics%2F6313.html&ss=727j112003j6 | priority:0 description:website
@@ -358,3 +358,17 @@ engin-354 | peekyou | http://www.peekyou.com/ | priority:0 description:people
 engin-355 | mendeley | https://www.mendeley.com/research-papers/search/?query= | priority:4 description:tools
 engin-356 | zotero | https://www.zotero.org/search/?q= | priority:4 description:tools
 engin-357 | kamihq | https://web.kamihq.com/web/viewer.html?q= | priority:4 description:tools
+engin-358 | ci.nii | http://ci.nii.ac.jp/search?q=$&range=0&count=&sortorder=&type=0 | priority:0 description:paper
+engin-359 | storm | https://storm.it/?q= | priority:0 description:all 
+engin-360 | tastekid | https://www.tastekid.com/like/ | priority:0 description:all
+engin-361 | topsimilarsites | http://www.topsimilarsites.com/similar-to/ | priority:0 description:website
+engin-362 | similarweb | https://www.similarweb.com/website/$#overview | priority:0 description:website
+engin-363 | spokeo | http://www.spokeo.com/ | priority:0 description:people
+engin-364 | searchtiny | http://www.searchtiny.com/?q= | priority:0 description:all 
+engin-365 | wikimindmap | http://wikimindmap.com/viewmap.php?wiki=en.wikipedia.org&topic= | priority:0 description:wiki 
+engin-366 | codota | http://www.codota.com/doSearchScenarios?searchQuery=$&target=all | priority:0 description:code 
+engin-367 | spezify | http://www.spezify.com/#/ | priority:0 description:social 
+engin-368 | whostalkin | http://www.whostalkin.com/search?q=$&x=0&y=0 | priority:4 description:social
+engin-369 | watchi | http://watchi.ly/index.php?search= | priority:4 description:art
+engin-370 | shodan | https://www.shodan.io/search?query= | priority:0 description:all
+engin-371 | ravellaw | https://www.ravellaw.com/search/m?query= | priority:0 description:law
