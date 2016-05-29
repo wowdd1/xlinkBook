@@ -25,6 +25,13 @@ function search(inputid,optionid){
     console.log("",select[select.selectedIndex].text);
     if (select[select.selectedIndex].value.slice(0, 1) == "!"){
         window.open("http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " "));
+    } else if (select[select.selectedIndex].value == "current") {
+        var url = "http://localhost:5000?db=" + database;
+        if (key != "") {
+            url = url + "&key=" + key;
+        }
+        url = url + '&filter="' + input.value + '"';
+        window.open(url)
     } else {
         window.open(select.value + input.value);
     }

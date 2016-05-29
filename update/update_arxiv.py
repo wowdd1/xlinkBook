@@ -298,7 +298,8 @@ class ArxivSpider(Spider):
                 rawid, version = self.parse_arxiv_url(j['id'])
                 j['_rawid'] = rawid
                 j['_version'] = version
-                print j['title'].replace('\n', '')
+                j['title'] = self.utils.removeDoubleSpace(j['title'].replace('\n', '')).strip()
+                print j['title']
                 #print j['id'].replace('abs', 'pdf')
           
                 #print j['authors']
@@ -412,11 +413,10 @@ class ArxivSpider(Spider):
 
             published = "published:" + paper['published'][0 : paper['published'].find('T')]
             summary = "summary:" + self.utils.removeDoubleSpace(paper['summary'].replace('\n', '').replace('|', '')).strip()
-            title = self.utils.removeDoubleSpace(paper['title'].replace('\n', '')).strip()
 
             desc = authors + ' ' + category + ' ' + published + ' ' + summary + ' version:' + str(paper['_version'])
             
-            self.write_db(f, 'arxiv-' + paper['_rawid'].replace('.', '-'), title,
+            self.write_db(f, 'arxiv-' + paper['_rawid'].replace('.', '-'), paper['title'],
                       paper['id'][0: paper['id'].rfind('v')].strip(), desc)
 
 

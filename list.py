@@ -320,6 +320,7 @@ def genEnginOption(selectid):
     option = ''
     engin_list = utils.getAllEnginList()
     option = '<select id="' + selectid +'">'
+    option += '<option value ="current">current</option>'
     for e in engin_list:
         option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
     option += '</select>'
@@ -365,8 +366,12 @@ def getScript(file_name):
         for content in div_content_list:
             print "array.push('" + content + "');" 
 
-    print 'var fileName = "' + os.getcwd() + '/' + source + '"'
-    print 'var column = "' + column_num + '"'
+    print 'var fileName = "' + os.getcwd() + '/' + source + '";'
+    print 'var column = "' + column_num + '";'
+    print 'var database = "' + database + '";'
+    print 'var key = "";'
+    if source.endswith('/') == False:
+        print 'key = "' + source[source.rfind('/') + 1 :] + '";'
     extensions = utils.getExtensions()
     if len(extensions) > 0:
         print 'var extensions = [];'
