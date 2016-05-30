@@ -60,6 +60,7 @@ class Category():
         self.rank = "rank"
         self.website = "website"
         self.engin = "engin"
+        self.tools = "tools"
 
     def match(self, desc, category):
         index = desc.find('category:')
