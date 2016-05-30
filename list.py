@@ -352,7 +352,7 @@ def loadFiles(folder, fileType):
             result += ''.join(open(folder + '/' + f, 'rU').readlines())
     return result
 
-def getScript(file_name):
+def getScript(file_name, first_record):
     global output_script_already
     if output_script_already == True:
         return
@@ -382,10 +382,11 @@ def getScript(file_name):
     print script_end
 
     if plugins_mode:
+        title = first_record.get_title().strip().replace(' ', '%20')
         click_more = "document.addEventListener('DOMContentLoaded', function () {\
 	        setText('a-000');\
 	        showdiv('div-000','a-000');\
-	        appendContent('div-000','','for%20Fine-Grained%20Recognition','');\
+	        appendContent('div-000','','" + title + "','');\
                 navTopic(document.getElementById('div-000-nav-all'),'div-000','div-000-nav-',2);\
 	    });";
         print script_head + click_more + script_end
@@ -901,7 +902,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(3)
             else:
-                getScript(file_name)
+                getScript(file_name, list_all[0][0])
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
@@ -961,7 +962,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(2)
             else:
-                getScript(file_name)
+                getScript(file_name, list_all[0][0])
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
@@ -1006,7 +1007,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(1)
             else:
-                getScript(file_name)
+                getScript(file_name, list_all[0][0])
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)

@@ -149,6 +149,9 @@ function appendContent(targetid, id, topic, otherInfo){
     for (var i = 0; i < extensions.length; i++) {
         hidenMetadata(targetid, extensions[i], "none")
     }
+    if (id == "") {
+        return
+    }
     $.post('/extensions', {name : '*', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
         if (data != '') {
             console.log("xx", data)
