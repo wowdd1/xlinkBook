@@ -54,6 +54,7 @@ html_style = False
 css_style_type = 0
 
 engin = ''
+plugins_mode = False
 
 div_content_list = []
 div_reference_dict = {}
@@ -380,6 +381,15 @@ def getScript(file_name):
 
     print script_end
 
+    if plugins_mode:
+        click_more = "document.addEventListener('DOMContentLoaded', function () {\
+	        setText('a-000');\
+	        showdiv('div-000','a-000');\
+	        appendContent('div-000','','for%20Fine-Grained%20Recognition','');\
+                navTopic(document.getElementById('div-000-nav-all'),'div-000','div-000-nav-',2);\
+	    });";
+        print script_head + click_more + script_end
+
     #mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
     #print mathjs
     #print '<script type="text/x-mathjax-config;executed=true">'
@@ -416,13 +426,15 @@ def getScript(file_name):
     print "</head>"
 
 def build_lines(list_all):
-    global div_link_content, gen_html_done;
+    global div_link_content, gen_html_done, max_links_row;
     id_title_lines = copy.deepcopy(list_all)
     describe_lines = []
     engin_list = []
     if engin != '':
         engin_list = utils.getEnginList(engin.strip())
     #print engin_list
+    if plugins_mode:
+        max_links_row = 9
     if len(engin_list) > default_links_row:
         row = len(engin_list) / max_links_row
         if len(engin_list) % max_links_row > 0:
@@ -539,7 +551,8 @@ def build_lines(list_all):
                                     for link in navLinks:
                                         nav_div_id = "#div-nav-" + str(count_index)
                                         divID = '#div'
-                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str(len(navLinks) / max_nav_link_row) + ');', link, '#888888', 9)
+                                        aid = "#div-nav-" + link
+                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str(len(navLinks) / max_nav_link_row) + ');', link, '#888888', 9, aid)
                                         count += 1 
                                         if count >= max_nav_link_row:
                                             div_content_list.append('<div id="' + nav_div_id + '">')
@@ -639,10 +652,14 @@ def print_search_box():
     global search_box_displayed
     if html_style and search_box_displayed == False:
         search_box_displayed = True
-        print '<br/>'
+        if plugins_mode == False:
+            print '<br/>'
         onclick = "search('search_txt', 'select');"
-        
-        out = '<div style="width:778px;margin:auto;"><input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
+        div = '<div style="width:778px;margin:auto;' 
+        if plugins_mode:
+            div += ' display:none;'
+        div += '">'
+        out = div + '<input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
               '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>'
         if output_navigation_links:
                out += utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 
@@ -650,8 +667,9 @@ def print_search_box():
             out += '</div>' 
         print out
 
-        for i in range(0, 1):
-            print '<br/>'
+        if plugins_mode == False:
+            for i in range(0, 1):
+                print '<br/>'
 
 def print_table_head_with_style():
     print "<body>"
@@ -1034,8 +1052,8 @@ def print_list(all_lines, file_name = ''):
                 message += "<br/>"
                 message += "<br/>"
                 message += "<br/>"
-
-            print message
+            if plugins_mode == False:
+                print message
             
 current_level = 1
 level = 100
@@ -1124,10 +1142,10 @@ def adjust_link_number():
        max_nav_link_row = (max_nav_link_row - 2) * 2
     
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:a', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use", "alexa"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:ap', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa", "plugins"])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1186,6 +1204,8 @@ def main(argv):
             database = a
         elif o in ('-a', '--alexa'):
             utils.loadAlexa()
+        elif o in ('-p', '--plugins'):
+            plugins_mode = True
 
 
     if source == "":

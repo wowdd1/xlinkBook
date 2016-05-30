@@ -394,3 +394,6 @@ engin-390 | peerj | https://peerj.com/search/?q= | priority:0 description:journa
 engin-391 | datahub | https://datahub.io/dataset?q= | priority:0 description:dataset
 engin-392 | scizzle | http://www.myscizzle.com/search?term= | priority:0 description:paper
 engin-393 | europepmc | http://labs.europepmc.org/search/?page=1&query= | priority:0 description:paper
+engin-394 | sharelatex | https://www.sharelatex.com/project?q= | priority:0 description:tools
+engin-395 | arxiv/ | localhost:5000/?db=eecs/papers/arxiv/&filter="$" | priority:0 description:localhost
+engin-396 | aipapers/ | http://localhost:5000/?db=eecs/papers/aipapers/&filter="$" | priority:0 description:localhost
