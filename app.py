@@ -5,7 +5,9 @@ import os
 from flask import Flask
 from flask import request
 import subprocess
+import json
 from extension_manager import ExtensionManager
+from utils import Utils
 app = Flask(__name__)
 
 
@@ -51,15 +53,40 @@ def index():
 @app.route('/extensions', methods=['POST'])
 def handleExtension():
     if request.args.get('verify', '') != '':
-        form['fileName'] = request.args.get('verify', '')
+        request.form['fileName'] = request.args.get('verify', '')
+    print request.form
+    if request.form['rID'] == "":
+        return ""
     return extensionManager.doWork(request.form)
+
+@app.route('/chrome', methods=['GET', 'POST'])
+def chrome():
+    print "chrome"
+    #jobj = json.loads(request.form.keys()[0])
+    #print jobj['title']
+    #print request.form['data']
+    
+    f = open("temp/input", 'w');
+    f.write(' | ' + request.form['title'] + '| | ')
+    f.close()
+
+    html = subprocess.check_output("./list.py -i temp/input -b 4  -c 2  -p -e 'd:star' -n -d ", shell=True)
+    #print data
+    #data = "ddd"
+    f = open('temp/output.html', 'w')
+    f.write(html)
+    f.close()
+    
+    print request.form['title']
+    return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://localhost:5000/temp/test.html"></iframe>'
+    #return '{"firstAccess" : "' + data + '"}'
 
 @app.route('/temp/<page>', methods=['GET', 'POST'])
 def temp(page):
     print page
-    f = open('temp/test.html', 'rU')
+    f = open('temp/output.html', 'rU')
     data = f.read()
-    print data
+    #print data
     f.close()
     return data
 

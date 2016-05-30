@@ -511,12 +511,15 @@ class Utils:
         script += "appendContentBox('" + content_divID + "', '" + boxid + "');"
         return script
 
-    def genLinkWithScript2(self, script, text, color='', fontSize=12):
+    def genLinkWithScript2(self, script, text, color='', fontSize=12, aid=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
+        atag = " <a "
+        if aid != '':
+            atag += ' id="' + aid + '" '
         if color != '':
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + text + '</a>'
+            return atag + 'href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + text + '</a>'
         else:
-            return ' <a href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color: rgb(136, 136, 136);" font-size: ' + str(fontSize) + 'pt;>' + text + '</a>'
+            return atag + 'href="' + 'javascript:void(0);' + '" onClick=' + script + ' style="color: rgb(136, 136, 136);" font-size: ' + str(fontSize) + 'pt;>' + text + '</a>'
 
     def searchByID(self, engin):
         if engin.strip() == 'textbooksearch':
@@ -581,7 +584,9 @@ class Utils:
     
         final_file_list = []
         #print base  
-        cur_list = os.listdir(base)
+        cur_list = []
+        if os.path.isdir(base):
+            cur_list = os.listdir(base)
         #print cur_list
         for item in cur_list:
             if item == ".svn" or item == ".git" or item == ".DS_Store":
@@ -589,12 +594,15 @@ class Utils:
     
             full_path = os.path.join(base, item)
             #print full_path
-            if os.path.isfile(full_path):
+            if os.path.isfile(full_path) and full_path.find('db/') != -1:
                 #print full_path
                 with open(full_path, 'r+') as f:
-                    data = mmap.mmap(f.fileno(), 0)
-                    if re_file.search(data):
-                        final_file_list.append(full_path)
+                    try:
+                        data = mmap.mmap(f.fileno(), 0)
+                        if re_file.search(data):
+                            final_file_list.append(full_path)
+                    except Exception as e:
+                        print str(e) + full_path
             else:
                 final_file_list += self.find_file_by_pattern(pattern, full_path)
         return final_file_list

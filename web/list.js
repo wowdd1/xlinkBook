@@ -11,6 +11,10 @@ function setText(objN){
 }
 function showdiv(targetid,objN){
       var target=document.getElementById(targetid);
+      if (target == null) {
+          console.log("error", targetid);
+          return
+      }
       var clicktext=document.getElementById(objN);
             if (clicktext.innerText=="less"){
                 target.style.display="";
