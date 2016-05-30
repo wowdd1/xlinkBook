@@ -106,7 +106,7 @@ def listDB():
     return genList(os.listdir('db/'))
 
 def listAllFile(db):
-    folder = 'db/' + db + '/'
+    folder = 'db/' + db
     files = os.listdir(folder)
     #return genList(files, folder, db)
     if len(files) > 40:
