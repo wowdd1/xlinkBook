@@ -67,7 +67,7 @@ def chrome():
     #print request.form['data']
     
     f = open("temp/input", 'w');
-    f.write(' | ' + request.form['title'] + '| | ')
+    f.write(' | ' + request.form['title'].replace('"', ' ').replace("'", " ").replace('\n', '').strip() + '| | ')
     f.close()
 
     html = subprocess.check_output("./list.py -i temp/input -b 4  -c 2  -p -e 'd:star' -n -d ", shell=True)
