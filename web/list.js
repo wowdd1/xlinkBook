@@ -152,7 +152,11 @@ function appendContent(targetid, id, topic, otherInfo){
     if (id == "") {
         return
     }
-    $.post('/extensions', {name : '*', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
+    var module = "*";
+    if (targetid.indexOf("-content-") > 0) {
+        module = "content"
+    }
+    $.post('/extensions', {name : module, rID : id, fileName : fileName, 'check' : 'true'}, function(data){
         if (data != '') {
             console.log("xx", data)
             var extensions = data.split(" ");

@@ -310,17 +310,17 @@ class Utils:
         if engin != '':
             url = self.getEnginUrl(engin) + keyword.strip()
         if engin == "arxiv":
-            url = url.replace("$", keyword.strip())
+            url = url.replace("%s", keyword.strip())
         if engin == "doaj":
-            url = url.replace('$', keyword.strip())
+            url = url.replace('%s', keyword.strip())
         if engin == "ust.hk":
-            url = url.replace('$', keyword.strip())
+            url = url.replace('%s', keyword.strip())
         if engin == "crunchbase" and query.find(':') != -1:
             url = self.getEnginUrl(engin) + keyword.strip().replace(' ', '-')
             query = query[query.find(':') + 1 :].strip()
             if query == 'star':
                 query = 'organization'
-            url = url.replace('$', query)
+            url = url.replace('%s', query)
 
         return url
     

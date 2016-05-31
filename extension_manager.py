@@ -62,7 +62,7 @@ class ExtensionManager:
                 extension = self.loadExtension(form['name'])
                 if extension != None:
                     if extension.check(form):
-                        return 'true'
+                        return form['name']
                     else:
                         return 'false'
                 else:
