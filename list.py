@@ -364,7 +364,7 @@ def space_end(text, start, end):
     while ret_end2 >= 0 and ret_end2 < len(text) and text[ret_end2] != ' ':
         ret_end2 += 1
     if ret_end2 >= len(text):
-        return len(text) - 1
+        return len(text)
     
     if (end - ret_end1) > (ret_end2 - end):
         return ret_end2
