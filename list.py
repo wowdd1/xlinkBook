@@ -3,6 +3,7 @@
 #author: wowdd1
 #mail: developergf@gmail.com
 #data: 2014.12.08
+# -*- coding: utf-8 -*-
 
 import getopt
 import time
@@ -198,7 +199,7 @@ def color_keyword(text):
             else:
                 result = result.replace(k, utils.getColorStr('darkcyan', k))
 
-    return result
+    return result.encode('utf-8')
 
 def align_id_title(record):
     course_num = record.get_id()
@@ -321,8 +322,12 @@ def genEnginOption(selectid):
     option = ''
     engin_list = utils.getAllEnginList()
     option = '<select id="' + selectid +'">'
-    option += '<option value ="current">current</option>'
+    if plugins_mode == False:
+        option += '<option value ="current">current</option>'
+    option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
     for e in engin_list:
+        if e == "google":
+            continue
         option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
     option += '</select>'
     return option
@@ -388,6 +393,15 @@ def getScript(file_name, first_record):
 	        showdiv('div-000','a-000');\
 	        appendContent('div-000','','" + title + "','');\
                 navTopic(document.getElementById('div-000-nav-all'),'div-000','div-000-nav-',2);\
+                var search_txt = document.getElementById('search_txt');\
+                search_txt.onchange=function(){\
+                    var search_a = document.getElementById('a-000');\
+                    if (search_a.text == 'less' && this.value.length > 0) {\
+                        setText('a-000');\
+                        showdiv('div-000','a-000');\
+                        setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
+                    }\
+                };\
 	    });";
         print script_head + click_more + script_end
 
@@ -599,7 +613,7 @@ def get_line(lines, start, end, j):
     result = vertical
     for i in range(start, end):
         if isinstance(lines[i][j], Record):
-            lines[i][j] = lines[i][j].get_describe()
+            lines[i][j] =  u' '.join(lines[i][j].get_describe()).encode('utf-8')
         result += color_keyword(lines[i][j]) + vertical
 
     return result
@@ -657,8 +671,8 @@ def print_search_box():
             print '<br/>'
         onclick = "search('search_txt', 'select');"
         div = '<div style="width:778px;margin:auto;' 
-        if plugins_mode:
-            div += ' display:none;'
+        #if plugins_mode:
+        #    div += ' display:none;'
         div += '">'
         out = div + '<input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
               '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>'

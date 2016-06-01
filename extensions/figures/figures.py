@@ -37,7 +37,7 @@ class Figures(BaseExtension):
         else:
             figures, links = self.getRandomFigures(record.get_title())
 
-        thumb = ''
+        thumbs = ''
         if record.get_id().strip().startswith('arxiv'):
             thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url())
             version = "v1"    
@@ -113,4 +113,5 @@ class Figures(BaseExtension):
 
     def check(self, form_dict):
         rID = form_dict['rID']
-        return rID.startswith('arxiv')
+        return True
+        #return rID.startswith('arxiv')
