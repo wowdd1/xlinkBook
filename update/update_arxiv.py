@@ -348,15 +348,20 @@ class ArxivSpider(Spider):
                 self.utils.sortLines(lines)
                 while (len(lines) > 0):
                     write_lines = lines[len(lines) - self.batch_size : ]
-                    self.saveIncrementalPapers(write_lines) 
+                    counts = self.getCounts()
+                    number = ''
+                    if len(lines) < self.batch_size:
+                        number = str(counts[0]) + "-inc"
+                    else:
+                        number = str(counts[0] + self.batch_size)
+                    self.saveIncrementalPapers(number, write_lines) 
 
                     lines = lines[0 : len(lines) - self.batch_size]
+                os.remove(self.incremental_file)
                     
-    def saveIncrementalPapers(self, lines):
-        counts = self.getCounts()
-        number = counts[0] + self.self.batch_size
+    def saveIncrementalPapers(self, fileNumber, lines):
 
-        file_name = self.get_file_name("eecs/papers/arxiv/arxiv" + str(number), self.school)
+        file_name = self.get_file_name("eecs/papers/arxiv/arxiv" + fileNumber, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp") 
         self.count = 0
@@ -364,7 +369,7 @@ class ArxivSpider(Spider):
         for line in lines:
             self.count += 1
             record = Record(line)
-            rawid = self.parse_arxiv_url(record.get_url().strip()).replace('.', '-')
+            rawid = self.parse_arxiv_url(record.get_url().strip())[0].replace('.', '-')
             self.write_db(f, 'arxiv-' + rawid, record.get_title().strip(), record.get_url().strip(),
                               record.get_describe().strip())
 
