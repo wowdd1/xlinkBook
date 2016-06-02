@@ -1,16 +1,16 @@
-CBMM-github-10-1 | cochleagram | https://github.com/CBMM/cochleagram | author:CBMM description:cbmm.github.io/cochleagram
-CBMM-github-1-2 | tagging | https://github.com/CBMM/tagging | author:CBMM description:Psychophysics web experiment platform
-CBMM-github-1-3 | CBaaS | https://github.com/CBMM/CBaaS | author:CBMM description:Center for Brains Minds and Machines as a Service
-CBMM-github-1-4 | annotation-widget | https://github.com/CBMM/annotation-widget | author:CBMM description:Updated Apr 1, 2016
-CBMM-github-0-5 | cbmm-memo-cover | https://github.com/CBMM/cbmm-memo-cover | author:CBMM description:Updated Jun 7, 2016
-CBMM-github-0-6 | videoutils | https://github.com/CBMM/videoutils | author:CBMM description:One-off scripts for processing video (splitting into chunks, transcode, etc)
-CBMM-github-0-7 | CBMM.github.io | https://github.com/CBMM/CBMM.github.io | author:CBMM description:CBMM Software Core Page
-CBMM-github-0-8 | petersonfaces | https://github.com/CBMM/petersonfaces | author:CBMM description:Updated Jun 19, 2016
-CBMM-github-0-9 | drawcopy | https://github.com/CBMM/drawcopy | author:CBMM description:Character stroke-order widget
-CBMM-github-0-10 | retreat2015 | https://github.com/CBMM/retreat2015 | author:CBMM description:Updated Aug 23, 2015
-CBMM-github-0-11 | retinal-tracking | https://github.com/CBMM/retinal-tracking | author:CBMM description:Updated Mar 10, 2016
-CBMM-github-0-12 | dspace-drupal | https://github.com/CBMM/dspace-drupal | author:CBMM description:Drupal module binding to MIT's DSpace repository
-CBMM-github-0-13 | journal | https://github.com/CBMM/journal | author:CBMM description:Journal of Brains Minds and Machines
-CBMM-github-0-14 | shell-base-server | https://github.com/CBMM/shell-base-server | author:CBMM description:Updated Jan 12, 2016
-CBMM-github-0-15 | dotty | https://github.com/CBMM/dotty | author:CBMM description:That dot game for JT lab - Josh Rule/Spelke too
-CBMM-github-0-16 | MIBRPoster | https://github.com/CBMM/MIBRPoster | author:CBMM description:CBMM Poster for the McGovern Institute scientific advisory board
+github-CBMM-cochleagram | cochleagram | https://github.com/CBMM/cochleagram | author:CBMM description:cbmm.github.io/cochleagram
+github-CBMM-tagging | tagging | https://github.com/CBMM/tagging | author:CBMM description:Psychophysics web experiment platform
+github-CBMM-CBaaS | CBaaS | https://github.com/CBMM/CBaaS | author:CBMM description:Center for Brains Minds and Machines as a Service
+github-CBMM-annotation-widget | annotation-widget | https://github.com/CBMM/annotation-widget | author:CBMM description:Updated Apr 1, 2016
+github-CBMM-petersonfaces | petersonfaces | https://github.com/CBMM/petersonfaces | author:CBMM description:Updated Jul 29, 2016
+github-CBMM-CBMM.github.io | CBMM.github.io | https://github.com/CBMM/CBMM.github.io | author:CBMM description:CBMM Software Core Page
+github-CBMM-drawcopy | drawcopy | https://github.com/CBMM/drawcopy | author:CBMM description:Character stroke-order widget
+github-CBMM-videoutils | videoutils | https://github.com/CBMM/videoutils | author:CBMM description:One-off scripts for processing video (splitting into chunks, transcode, etc)
+github-CBMM-cbmm-memo-cover | cbmm-memo-cover | https://github.com/CBMM/cbmm-memo-cover | author:CBMM description:Updated Jun 7, 2016
+github-CBMM-retinal-tracking | retinal-tracking | https://github.com/CBMM/retinal-tracking | author:CBMM description:Updated Mar 10, 2016
+github-CBMM-MIBRPoster | MIBRPoster | https://github.com/CBMM/MIBRPoster | author:CBMM description:CBMM Poster for the McGovern Institute scientific advisory board
+github-CBMM-dotty | dotty | https://github.com/CBMM/dotty | author:CBMM description:That dot game for JT lab - Josh Rule/Spelke too
+github-CBMM-shell-base-server | shell-base-server | https://github.com/CBMM/shell-base-server | author:CBMM description:Updated Jan 12, 2016
+github-CBMM-retreat2015 | retreat2015 | https://github.com/CBMM/retreat2015 | author:CBMM description:Updated Aug 23, 2015
+github-CBMM-journal | journal | https://github.com/CBMM/journal | author:CBMM description:Journal of Brains Minds and Machines
+github-CBMM-dspace-drupal | dspace-drupal | https://github.com/CBMM/dspace-drupal | author:CBMM description:Drupal module binding to MIT's DSpace repository
