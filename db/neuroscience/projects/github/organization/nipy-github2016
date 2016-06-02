@@ -1,0 +1,29 @@
+github-nipy-nipype | nipype | https://github.com/nipy/nipype | author:nipy description:Workflows and interfaces for neuroimaging packages
+github-nipy-nipy | nipy | https://github.com/nipy/nipy | author:nipy description:Neuroimaging in Python FMRI analysis package
+github-nipy-nibabel | nibabel | https://github.com/nipy/nibabel | author:nipy description:Python package to access a cacophony of neuro-imaging file formats
+github-nipy-dipy | dipy | https://github.com/nipy/dipy | author:nipy description:Diffusion MR Imaging in Python
+github-nipy-nitime | nitime | https://github.com/nipy/nitime | author:nipy description:Timeseries analysis for neuroscience data
+github-nipy-PySurfer | PySurfer | https://github.com/nipy/PySurfer | author:nipy description:Cortical neuroimaging visualization in Python
+github-nipy-mindboggle | mindboggle | https://github.com/nipy/mindboggle | author:nipy description:Automated anatomical brain label/shape analysis software (+ website)
+github-nipy-pbrain | pbrain | https://github.com/nipy/pbrain | author:nipy description:Python EEG and ECoG analysis software by John Hunter et al
+github-nipy-brainx | brainx | https://github.com/nipy/brainx | author:nipy description:Tools for analysis of brain imaging-derived networks, based on NetworkX
+github-nipy-nipy-artwork | nipy-artwork | https://github.com/nipy/nipy-artwork | author:nipy description:Fliers, images, etc
+github-nipy-nibotmi | nibotmi | https://github.com/nipy/nibotmi | author:nipy description:NIPY BuildBot Master Instance
+github-nipy-heudiconv | heudiconv | https://github.com/nipy/heudiconv | author:nipy description:little helper to ease DICOM conversion to ready-to-share folder with heuristics
+github-nipy-nireg | nireg | https://github.com/nipy/nireg | author:nipy description:Brain image registration package
+github-nipy-PyLocator | PyLocator | https://github.com/nipy/PyLocator | author:nipy description:Localization of EEG-electrodes from MRI-recordings
+github-nipy-data-packaging | data-packaging | https://github.com/nipy/data-packaging | author:nipy description:Utilities for managing data packages
+github-nipy-nipyco | nipyco | https://github.com/nipy/nipyco | author:nipy description:Nipy community web pages
+github-nipy-nipy-suite | nipy-suite | https://github.com/nipy/nipy-suite | author:nipy description:Meta-project to provide a single point of getting/testing for all projects under NiPy umbrella
+github-nipy-nisext | nisext | https://github.com/nipy/nisext | author:nipy description:Shareable distutils etc utilities
+github-nipy-nipy.github.com | nipy.github.com | https://github.com/nipy/nipy.github.com | author:nipy description:Main website for the Neuroimaging in Python community
+github-nipy-nipy-labs | nipy-labs | https://github.com/nipy/nipy-labs | author:nipy description:Work-in-progress add-ons for nipy (require lapack)
+github-nipy-workshops | workshops | https://github.com/nipy/workshops | author:nipy description:Brain imaging workshops
+github-nipy-nibabel-paper | nibabel-paper | https://github.com/nipy/nibabel-paper | author:nipy description:Journal manuscript for the initial publication of NiBabel
+github-nipy-nidoodles | nidoodles | https://github.com/nipy/nidoodles | author:nipy description:Work-in-progress notes and code fragments for the nipy projects
+github-nipy-blog | blog | https://github.com/nipy/blog | author:nipy description:Updated Jan 31, 2015
+github-nipy-dipy_qa | dipy_qa | https://github.com/nipy/dipy_qa | author:nipy description:Experimental large scale quality assurance framework for DIPY
+github-nipy-nibotme-logs | nibotme-logs | https://github.com/nipy/nibotme-logs | author:nipy description:NIPY BuildBot Master Instance (buildbot logs)
+github-nipy-dipy_web | dipy_web | https://github.com/nipy/dipy_web | author:nipy description:Website generation and content management tools for dipy.org
+github-nipy-data-packages | data-packages | https://github.com/nipy/data-packages | author:nipy description:Serving nipy data packages via Github pages
+github-nipy-mindboggle-data | mindboggle-data | https://github.com/nipy/mindboggle-data | author:nipy description:Updated May 4, 2016
