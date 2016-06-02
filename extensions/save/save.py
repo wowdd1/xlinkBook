@@ -26,6 +26,8 @@ class Save(BaseExtension):
         library = username + '-library'
         if Config.default_library != '':
             library = Config.default_library
+            if library.endswith('-library') == False:
+                library += '-library'
         return library
 
 

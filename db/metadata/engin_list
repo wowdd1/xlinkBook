@@ -8,14 +8,14 @@ engin-7 | booksc | http://booksc.org/s/?q= | priority:0 description:paper
 engin-8 | booksee | http://en.booksee.org/s/?q= | priority:0 description:book
 engin-9 | avxsearch | http://avxsearch.in/?q= | priority:0 description:book
 engin-10 | ebookee | http://ebookee.org/search.php?sa=Search&q= | priority:0 description:book
-engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | priority:6 description:paper star
+engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | priority:6 description:paper
 engin-12 | amazon | https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | priority:8 description:book product star icon:http://mycroftproject.com/updateos.php/id0/amazon_appstore.ico
 engin-13 | nap | http://www.nap.edu/search/?term= | priority:0 description:book
 engin-14 | hathitrust | http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1= | priority:0 description:book
 engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | priority:0 description:book
 engin-16 | wowebook | http://www.wowebook.co/?s= | priority:0 description:book
 engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | priority:0 description:paper
-engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | priority:0 description:paper
+engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | priority:6 description:paper
 engin-19 | baidu | http://www.baidu.com/s?word= | priority:8 description:all star icon:http://mycroftproject.com/updateos.php/id0/baidujp-video.png
 engin-20 | bing | http://cn.bing.com/search?q= | priority:0 description:all
 engin-21 | academic.r | http://academic.research.microsoft.com/Search?query= | priority:4 description:paper organization people
@@ -110,7 +110,7 @@ engin-106 | harvard | http://www.harvard.edu/searches#gsc.tab=0&gsc.q= | priorit
 engin-107 | search.ox | https://search.ox.ac.uk/search?access=p&output=xml_no_dtd&ie=UTF-8&client=admin&proxystylesheet=admin&site=default-minus&submit=Search&q= | priority:0 description:people course
 engin-108 | ethz.ch | https://www.ethz.ch/en/utils/search.ethz_search.html?language=en&pagetype=all&search= | priority:0 description:people course
 engin-109 | techtalks | http://techtalks.tv/search/results/?q= | priority:8 description:talk course
-engin-110 | plus.google | https://plus.google.com/s/ | priority:0 description:social
+engin-110 | plus.g | https://plus.google.com/s/ | priority:0 description:social star
 engin-111 | slashdot | https://slashdot.org/index2.pl?fhfilter= | priority:0 description:news
 engin-112 | digg | http://digg.com/search?q= | priority:0 description:digg
 engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | priority:0 description:wiki
@@ -474,3 +474,10 @@ engin-481 | inoreader | http://www.inoreader.com/discovery/search/ | priority:0 
 engin-482 | xianguo | http://xianguo.com/lianbo/search?kw= | priority:0 description:tools discovery
 engin-483 | biostars | https://www.biostars.org/local/search/page/?q= | priority:0 description:q-a
 engin-484 | neurostars | https://neurostars.org/local/search/page/?q= | priority:0 description:q-a 
+engin-485 | researchandmarkets | http://www.researchandmarkets.com/search.asp?q= | priority:0 description:finance
+engin-486 | neurosciencenews | http://neurosciencenews.com/?s= | priority:0 description:news
+engin-487 | brainscanr | http://www.brainscanr.com/Search?term_a= | priority:4 description:paper
+engin-488 | sciencedirect | http://www.sciencedirect.com/science?_ob=QuickSearchURL&_method=submitForm&searchtype=a&_zone=qSearch&qs_all= | priority:4 description:paper
+engin-489 | hstalks | https://hstalks.com/search/%s/?biosci&subtype=TALK | priority:6 description:talk course
+engin-490 | nitrc.org | http://www.nitrc.org/search/?type_of_search=group&q=neuro | priority:0 description:project
+engin-491 | superstarsofscience | http://superstarsofscience.com/scientists?q= | priority:0 description:people
