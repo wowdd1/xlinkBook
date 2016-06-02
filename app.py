@@ -226,7 +226,13 @@ def listAllFile(db):
     if session.has_key('avatar_url'):
         image = session['avatar_url']
     image = ''
-    libary = utils.gen_libary(True, name, image)
+    if Config.default_library != '':
+        name = Config.default_library
+        if name.endswith('-library'):
+            name = name[0 : name.rfind('-')]
+        libary = utils.gen_libary(True, name, '')
+    else:
+        libary = utils.gen_libary(True, name, image)
     if len(files) > 37:
         if Config.center_content:
             html += '<body style="text-align:center;">'
@@ -334,6 +340,8 @@ def library():
     library = session['name'] + "-library"
     if Config.default_library != '':
         library = Config.default_library
+        if library.endswith('-library') == False:
+            library += '-library'
     if os.path.exists('db/library/' + library) == False:
         f = open('db/library/' + library, 'a')
         f.write('none | no record, add some! | | \n')

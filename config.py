@@ -62,7 +62,8 @@ class Config():
     recommend_engin = True
     recommend_engin_num = 18
 
-    default_library = ''
+    #default_library = ''
+    default_library = 'schizophrenia-library'
     
     background = ''
 

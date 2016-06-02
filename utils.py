@@ -185,6 +185,11 @@ class Utils:
     def gen_libary(self, root=False, user_name='', user_image=''):
         html = ''
         db_root = ''
+        origin_user_name = user_name
+        if Config.default_library != '':
+            user_name = Config.default_library
+            if user_name.endswith('-library'):
+                user_name = user_name[0 : user_name.rfind('-')]
         if root:
             db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
         if user_name != None and user_name != '':
@@ -198,7 +203,12 @@ class Utils:
 		html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
             if user_image != '':
                 html += '<img src="' + user_image + '" width="20" height="20" style="border-radius: 50%;"/>'
-            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=77">' + user_name + '(' + str(lines) + ')</a></div>'
+            content = ''
+            if origin_user_name != user_name:
+                content = origin_user_name + "' " + user_name
+            else:
+                content = user_name
+            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=77">' + content + '(' + str(lines) + ')</a></div>'
         else:
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/login">Login</a></div>'
         html += '<div style="height: 21px; width: 100px"></div>'

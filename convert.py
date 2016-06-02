@@ -95,7 +95,11 @@ def customPrintFile(line):
 	print 'pitt-neurobio-' + str(line_id) + ' | ' + line + ' | | '
     '''
     title = line.strip()
-    print line[0 : line.find(' ')] + ' | ' + line[line.find(' ') :].strip()+ ' | | '
+    id = line[0 : line.find(' ')]
+    if id.find('.') != -1:
+        print '9.583-' + id + ' | ' + line[line.find(' ') :].strip()+ ' | | parentid:9.583-' + id[0 : id.rfind('.')]
+    else:
+        print '9.583-' + id + ' | ' + line[line.find(' ') :].strip()+ ' | | parentid:9.583' 
     #if title.find('(') != -1:
         #title = title[0 : title.find('(')].strip()
     #print customid + '-' + str(line_id) + ' | ' + title + ' | | '

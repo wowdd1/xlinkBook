@@ -24,6 +24,7 @@ class Reference(BaseExtension):
         self.category_obj = Category()
 
     def loadReference(self, filename, rID):
+        print 'loadReference ' + filename
         if len(self.record_reference) != 0 and self.record_reference.has_key(rID):
             return
         name = 'extensions/reference/data/' + filename + '-reference'
