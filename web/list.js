@@ -209,7 +209,7 @@ function appendContentBox(targetid, boxid){
     var target=document.getElementById(targetid);
     var box=document.getElementById(boxid);
     console.log("xx", target);
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, "").replace(/#otherInfo/g, "");
+    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace('', '%20')).replace(/#otherInfo/g, "");
     hidenMetadata(targetid, "content");
     hidenMetadata(targetid, "reference");
 }
