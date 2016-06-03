@@ -394,6 +394,7 @@ def getScript(file_name, first_record):
 	        appendContent('div-000','','" + title + "','');\
                 navTopic(document.getElementById('div-000-nav-all'),'div-000','div-000-nav-',2);\
                 var search_txt = document.getElementById('search_txt');\
+                search_txt.focus();\
                 search_txt.onchange=function(){\
                     var search_a = document.getElementById('a-000');\
                     if (search_a.text == 'less' && this.value.length > 0) {\

@@ -299,7 +299,7 @@ class ArxivSpider(Spider):
                 j['_rawid'] = rawid
                 j['_version'] = version
                 j['title'] = self.utils.removeDoubleSpace(j['title'].replace('\n', '')).strip()
-                print j['title']
+                print j['title'].encode('utf-8')
                 #print j['id'].replace('abs', 'pdf')
           
                 #print j['authors']
