@@ -252,7 +252,16 @@ class Utils:
             pos = file_name.find('/', pos) + 1
         return file_name[pos : ]
 
+    cache_records = {}
+
     def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False):
+        if self.cache_records.has_key(keyword):
+            if log:
+                print 'return cached record for ' + keyword
+            if return_all:
+                return self.cache_records[keyword]
+            else:
+                return self.cache_records[keyword][0]
         subject = default_subject;
         if use_subject != "":
             subject = use_subject
@@ -276,9 +285,11 @@ class Utils:
                     if return_all:
                         record_list.append(record)
                     else:
+                        self.cache_records[keyword] = [record]
                         return record
         if return_all:
             if len(record_list) > 0:
+                self.cache_records[keyword] = record_list
                 return record_list
             else:
                 if log:
