@@ -10,6 +10,7 @@ import os,sys
 class Semanticscholar:
     #def __init__(self):
     references = {}
+    citations = {}
     figures = {}
     abstract = {}
     authors = {} 
@@ -72,17 +73,28 @@ class Semanticscholar:
 
     def requestsReferences(self, title, url):
         id = url[url.rfind('/') + 1 : ]
-        r = requests.get('https://www.semanticscholar.org/api/1/paper/' + id + '/citations?sort=is-influential&page=1&citationType=citedPapers&citationsPageSize=1000')
+        self.requestsByType(id, title, 'citedPapers', self.references)
+
+    def requestsCitations(self, title, url):
+        id = url[url.rfind('/') + 1 : ]
+        self.requestsByType(id, title, 'citingPapers', self.citations)
+        
+
+    def requestsByType(self, id, title, citationType, dataDict):
+        url = 'https://www.semanticscholar.org/api/1/paper/' + id + '/citations?sort=is-influential&page=1&citationType=' + citationType + '&citationsPageSize=1000'
+        print 'requesting url: ' + url
+        r = requests.get(url)
         jobj = json.loads(r.text)
-        references = []
+        data = []
         for item in jobj['citations']:
             print item['title']['text']
             url = ''
             if item.has_key('slug') and item.has_key('id'):
                 url = 'https://www.semanticscholar.org/paper/' + item['slug'] + '/' + item['id'] + '/pdf'
             print url
-            references.append([item['title']['text'].strip(), url])
-        self.references[title] = references
+            data.append([item['title']['text'].strip(), url])
+        dataDict[title] = data
+
 
     def getFigures(self, title):
         if self.figures.has_key(title):
@@ -107,6 +119,23 @@ class Semanticscholar:
                 self.requestsReferences(title, self.getUrl(title)) 
                 if self.references.has_key(title):
                     return self.references[title] 
+                else:
+                    return []
+            else:
+                return []
+
+    def getCitations(self, title):
+        print title
+        print self.title
+        if self.citations.has_key(title):
+            print 'return cache for ' + title
+            return self.citations[title]
+        else:
+            url = self.getUrl(title)
+            if url != None:
+                self.requestsCitations(title, self.getUrl(title))
+                if self.citations.has_key(title):
+                    return self.citations[title]
                 else:
                     return []
             else:
