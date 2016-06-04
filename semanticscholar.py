@@ -87,7 +87,7 @@ class Semanticscholar:
         jobj = json.loads(r.text)
         data = []
         for item in jobj['citations']:
-            print item['title']['text']
+            print item['title']['text'].encode('utf-8')
             url = ''
             if item.has_key('slug') and item.has_key('id'):
                 url = 'https://www.semanticscholar.org/paper/' + item['slug'] + '/' + item['id'] + '/pdf'

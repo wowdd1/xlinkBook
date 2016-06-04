@@ -21,7 +21,7 @@ class Citation(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         print 'check filename ' + fileName
-        record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/') + 1])
+        record = self.utils.getRecord(rID, path=fileName)
         category = ''
         if record != None:
             category = CategoryRecord(record.line).get_category()
