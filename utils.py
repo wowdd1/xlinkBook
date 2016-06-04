@@ -272,7 +272,12 @@ class Utils:
         record_list = []
         print keyword
         print path
-        for file_name in self.find_file_by_pattern(keyword, path):
+        files = ''
+        if os.path.isfile(path):
+            files = path
+        else:
+            files = self.find_file_by_pattern(keyword, path)
+        for file_name in files:
             if os.path.isfile(file_name) == False:
                 continue
             f = open(file_name)

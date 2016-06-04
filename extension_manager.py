@@ -3,6 +3,7 @@
 import os
 import json
 import sys
+import datetime  
 
 class ExtensionManager:
     
@@ -75,8 +76,11 @@ class ExtensionManager:
     def checkAll(self, form):
         result = ''
         for k, v in self.extensions.items():
+            starttime = datetime.datetime.now().microsecond
             if self.loadExtension(k).check(form):
                 result += k + " "
+            endtime = datetime.datetime.now().microsecond
+            print k + " check cost --> " + str((endtime - starttime) / 1000.0) + "ms"
         print result
         return result.strip()
         

@@ -40,7 +40,7 @@ class Similar(BaseExtension):
     def excute(self, form_dict):
         rID = form_dict['rID'].encode('utf-8')
         fileName = form_dict['fileName']
-        record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
+        record = self.utils.getRecord(rID, path=fileName)
         if rID.startswith('arxiv'):
             pid = self.getPid(record.get_url())
 
@@ -134,7 +134,8 @@ class Similar(BaseExtension):
     def check(self, form_dict):
         rID = form_dict['rID'].encode('utf-8')
         fileName = form_dict['fileName']
-        record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
+        #record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
+        record = self.utils.getRecord(rID, path=fileName)
         match_website = self.category_obj.match(record.get_describe(), self.category_obj.website) 
         match_engin = self.category_obj.containMatch(rID[0 : rID.find('-')].strip() , self.category_obj.engin)
         return rID.startswith('arxiv') or match_website or match_engin
