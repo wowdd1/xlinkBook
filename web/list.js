@@ -101,9 +101,6 @@ function navTopic(obj, divID, parentDivID, countIndex){
     }
     for (var i = 0; i < extensions.length; i++) {
         console.log('zzz', extensions[i]);
-        //for (var j = 0; j < args[divID].length; j++) {
-        //    console.log('args', args[divID][j])
-        //}
         if (extensions[i] == obj.text) { 
             var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false', column, column}
             postArgs["divID"] = divID + "-" + obj.text
@@ -118,12 +115,8 @@ function navTopic(obj, divID, parentDivID, countIndex){
                  if (data == "") {
                      obj.style.display="none"
                  } else {
-                      //console.log('zzz', "MathJax.Hub.Queue " + targetid)
-                      //MathJax.Hub.Queue(["Typeset", MathJax.Hub, targetid]);
                  }
                  clearInterval(loadAnimID)
-                 //target.innerHTML = "";
-                 //target.innerHTML = data;
              });
         }
     }
@@ -165,31 +158,6 @@ function appendContent(targetid, id, topic, otherInfo){
             }
         }
     });
-   /*
-    if (typeof(reference[id]) != "undefined"){
-        var referenceDiv = document.getElementById(targetid + "-reference");
-        referenceDiv.innerHTML =reference[id];
-    } else{
-        hidenMetadata(targetid, "reference", "none");
-        $('#' + targetid + "-reference").load('/extensions', {name : 'reference', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
-           if (data == "true") {
-               hidenMetadata(targetid, "reference", "");
-           }
-        });
-        //hidenMetadata(targetid, "reference");
-    }
-    if (typeof(content[id]) != "undefined"){
-        var contentDiv = document.getElementById(targetid + "-content");
-        contentDiv.innerHTML = content[id];
-    } else{
-        hidenMetadata(targetid, "content", "none");
-        $('#' + targetid + "-content").load('/extensions', {name : 'content', rID : id, fileName : fileName, 'check' : 'true'}, function(data){
-           if (data == "true") {
-               hidenMetadata(targetid, "content", "");
-           } 
-        });
-        //hidenMetadata(targetid, "content");
-    }*/
 }
 function hidenMetadata(targetid, datatype, value){
     var target=document.getElementById(targetid);
@@ -208,8 +176,9 @@ function hidenMetadata(targetid, datatype, value){
 function appendContentBox(targetid, boxid){
     var target=document.getElementById(targetid);
     var box=document.getElementById(boxid);
-    console.log("xx", target);
+    console.log("id", targetid);
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace('', '%20')).replace(/#otherInfo/g, "");
-    hidenMetadata(targetid, "content");
-    hidenMetadata(targetid, "reference");
+    for (var i = 0; i < extensions.length; i++) {
+        hidenMetadata(targetid, extensions[i], "none")
+    }
 }
