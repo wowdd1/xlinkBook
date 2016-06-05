@@ -4,6 +4,10 @@ import os
 import json
 import sys
 import datetime  
+from record import Record
+from record import LibraryRecord
+from utils import Utils
+
 
 class ExtensionManager:
     
@@ -53,11 +57,21 @@ class ExtensionManager:
         if check == 'true':
             if form['name'] == "*":
                 rID = form['rID'].encode('utf-8')
-                if self.extensions_check_cache.has_key(rID):
+                fileName = form['fileName'].encode('utf-8')
+                new_form = form.copy()
+                if fileName.endswith('library'):
+                    utils = Utils()
+                    r = utils.getRecord(rID, path=fileName, use_cache=False)
+                    print r.line
+                    lr = LibraryRecord(r.line)
+                    new_form['fileName'] = os.getcwd() + lr.get_path().strip()
+                    new_form['delete'] = True
+                    
+                if self.extensions_check_cache.has_key(rID) and (form.has_key('nocache') and form['nocache'] == "false"):
                     print 'return cache for ' + rID
-                    return self.checkCache(self.extensions_check_cache[rID].split(' '), form)
+                    return self.checkCache(self.extensions_check_cache[rID].split(' '), new_form)
                 else:
-                    self.extensions_check_cache[rID] = self.checkAll(form)
+                    self.extensions_check_cache[rID] = self.checkAll(new_form)
                     return self.extensions_check_cache[rID]
             else:
                 extension = self.loadExtension(form['name'])
