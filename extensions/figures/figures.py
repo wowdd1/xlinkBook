@@ -78,26 +78,29 @@ class Figures(BaseExtension):
 
     def genHtml(self, figures, column, links=[], thumb=''):
         html = '<div>'
-        if thumb != '':
-            html += '<a target="_blank" href="' + thumb + '"><img src="' + thumb + '"/></a><br/>'
-        if figures != None and len(figures) > 0:
-            width = "100"
-            height = "100"
+        width = "100"
+        height = "100"
+        thumb_width = '570px'
+        row_count = 5
+        if column == '3':
+            width = "80"
+            height = "80"
+            thumb_width = '450px'
             row_count = 5
-            if column == '3':
-                width = "100"
-                height = "100"
-                row_count = 5
-            if column == '2':
-                width = "150"
-                height = "150"
-                row_count = 4
-            if column == '1':
-                width = "250"
-                height = "250"
-                row_count = 5
+        if column == '2':
+            width = "130"
+            height = "130"
+            thumb_width = '570px'
+            row_count = 4
+        if column == '1':
+            width = "230"
+            height = "230"
+            thumb_width = '600px'
+            row_count = 5
+        if thumb != '':
+            html += '<a target="_blank" href="' + thumb + '"><img width="' + thumb_width + '" src="' + thumb + '"/></a><br/>'
 
- 
+        if figures != None: 
             count = 0
             for fig in figures:
                 count += 1
