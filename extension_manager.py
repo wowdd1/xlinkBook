@@ -13,6 +13,7 @@ class ExtensionManager:
     
     extensions = {}
     extensions_check_cache = {}
+    cache_path = ''
  
     def loadExtensions(self):
         if len(self.extensions) > 0:
@@ -50,28 +51,33 @@ class ExtensionManager:
 
        return None
 
-    def doWork(self, form):
+    def doWork(self, form_dict):
+        form = form_dict.copy()
         self.loadExtensions()
         check = form['check']
+        rID = form['rID'].encode('utf-8')
+        fileName = form['fileName'].encode('utf-8')
+        if fileName.endswith('library'):
+            utils = Utils()
+            r = utils.getRecord(rID, path=fileName, use_cache=False)
+            if r.get_id().strip() != '':
+                print r.line
+                lr = LibraryRecord(r.line)
+                form['fileName'] = os.getcwd() + lr.get_path().strip()
+                self.cache_path = form['fileName']
+            else:
+                form['fileName'] = self.cache_path
 
         if check == 'true':
             if form['name'] == "*":
-                rID = form['rID'].encode('utf-8')
-                fileName = form['fileName'].encode('utf-8')
-                new_form = form.copy()
                 if fileName.endswith('library'):
-                    utils = Utils()
-                    r = utils.getRecord(rID, path=fileName, use_cache=False)
-                    print r.line
-                    lr = LibraryRecord(r.line)
-                    new_form['fileName'] = os.getcwd() + lr.get_path().strip()
-                    new_form['delete'] = True
+                    form['delete'] = True
                     
                 if self.extensions_check_cache.has_key(rID) and (form.has_key('nocache') and form['nocache'] == "false"):
                     print 'return cache for ' + rID
-                    return self.checkCache(self.extensions_check_cache[rID].split(' '), new_form)
+                    return self.checkCache(self.extensions_check_cache[rID].split(' '), form)
                 else:
-                    self.extensions_check_cache[rID] = self.checkAll(new_form)
+                    self.extensions_check_cache[rID] = self.checkAll(form)
                     return self.extensions_check_cache[rID]
             else:
                 extension = self.loadExtension(form['name'])
