@@ -254,8 +254,8 @@ class Utils:
 
     cache_records = {}
 
-    def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False):
-        if self.cache_records.has_key(keyword):
+    def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False, use_cache=True):
+        if self.cache_records.has_key(keyword) and use_cache:
             if log:
                 print 'return cached record for ' + keyword
             if return_all:

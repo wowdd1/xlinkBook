@@ -687,9 +687,19 @@ def print_search_box():
             for i in range(0, 1):
                 print '<br/>'
 
+def print_libary():
+    if html_style and source.find('library') == -1:
+        if os.path.exists('db/library/library'):
+            f = open('db/library/library')
+            lines = f.readlines()
+            f.close()
+            if len(lines) > 0:
+                print '<div style="float:right; margin-right:10px"><a target="_blank" href="http://localhost:5000/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div>'
+
 def print_table_head_with_style():
     print "<body>"
     print_search_box()
+    print_libary()
     if css_style_type == 3 or css_style_type == 4 or css_style_type == 5:
         print '<table class="easy-table easy-table-default coursesTable">'
     else:

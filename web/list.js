@@ -112,11 +112,12 @@ function navTopic(obj, divID, parentDivID, countIndex){
             }, 800);
             $('#' + targetid).load('/extensions', postArgs, function(data){
                  console.log('return', data);
-                 if (data == "") {
-                     obj.style.display="none"
-                 } else {
+                 if (data == "" || (obj.text == "save" && data.indexOf("sucess") != -1)) {
+                     obj.style.display="none";
+                 } else if (data.indexOf("http") == 0){
+                     window.location.href = data;
                  }
-                 clearInterval(loadAnimID)
+                 clearInterval(loadAnimID);
              });
         }
     }
@@ -146,10 +147,14 @@ function appendContent(targetid, id, topic, otherInfo){
         return
     }
     var module = "*";
+    var nocache = 'false'
     if (targetid.indexOf("-content-") > 0) {
         module = "content"
     }
-    $.post('/extensions', {name : module, rID : id, fileName : fileName, 'check' : 'true'}, function(data){
+    if (fileName.indexOf("library") > 0){
+        nocache = "true";
+    }
+    $.post('/extensions', {name : module, rID : id, fileName : fileName, nocache : nocache, 'check' : 'true'}, function(data){
         if (data != '') {
             console.log("xx", data)
             var extensions = data.split(" ");
