@@ -113,7 +113,7 @@ class Similar(BaseExtension):
             date_cat =  record.get_published() + "&nbsp;&nbsp; " + self.genListHtml(categorys, "category:")
             count += 1
             html += '<li><span>' + str(count) + '</span>'
-            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><p><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div><image src="' + thumbs + '"></image><div>' + record.get_summary() + "<div></li><br/>"
+            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><p><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div><image height="110px" width="570px" src="' + thumbs + '"></image><div>' + record.get_summary() + "<div></li><br/>"
         html += "</ol></div>"
         return html
 
