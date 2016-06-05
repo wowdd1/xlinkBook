@@ -55,7 +55,7 @@ class ExtensionManager:
                 rID = form['rID'].encode('utf-8')
                 if self.extensions_check_cache.has_key(rID):
                     print 'return cache for ' + rID
-                    return self.extensions_check_cache[rID]
+                    return self.checkCache(self.extensions_check_cache[rID].split(' '), form)
                 else:
                     self.extensions_check_cache[rID] = self.checkAll(form)
                     return self.extensions_check_cache[rID]
@@ -72,6 +72,16 @@ class ExtensionManager:
         else:
             extension = self.loadExtension(form['name'])
             return extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
+    def checkCache(self, names, form):
+        result = ''
+        for name in names:
+            extension = self.loadExtension(name)
+            if extension != None:
+                if extension.needCache():
+                    result += name + ' '
+                elif extension.check(form):
+                    result += name + ' '
+        return result
 
     def checkAll(self, form):
         result = ''

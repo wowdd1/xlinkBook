@@ -274,7 +274,7 @@ class Utils:
         print path
         files = ''
         if os.path.isfile(path):
-            files = path
+            files = [path]
         else:
             files = self.find_file_by_pattern(keyword, path)
         for file_name in files:

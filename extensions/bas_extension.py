@@ -19,3 +19,6 @@ class BaseExtension:
         while (fileName.find('/') != -1) :
             fileName = fileName[fileName.find('/') + 1 :].strip()
         return fileName
+
+    def needCache(self):
+        return True
