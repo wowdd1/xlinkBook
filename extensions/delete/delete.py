@@ -27,7 +27,7 @@ class Delete(BaseExtension):
                 for line in all_lines:
                     f.write(line)
                 f.close()
-                return 'http://localhost:5000/?db=library/&key=library'
+                return 'http://' + Config.ip_adress + '/?db=library/&key=library'
         return 'error'
 
     def check(self, form_dict):

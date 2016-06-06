@@ -129,6 +129,7 @@ class Utils:
     }
     search_engin_dict = {}
     search_engin_type = []
+    engin_extension = []
     search_engin_url_dict = {}
 
     ddg_search_engin_dict = {}
@@ -194,7 +195,7 @@ class Utils:
                 if line.startswith('#'):
                     continue
                 if line.strip() != '':
-                    self.search_engin_type.append(line.strip().strip())
+                    self.engin_extension.append(line.strip().strip())
 
     def loadDDGEngins(self):
         year = int(time.strftime('%Y',time.localtime(time.time())))
@@ -492,8 +493,11 @@ class Utils:
                 self.loadDDGEngins()
             return self.ddg_search_engin_type
         else:
-            return self.search_engin_type
+            return self.search_engin_type + self.engin_extension
         #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
+
+    def getLastEnginType(self):
+        return self.search_engin_type[len(self.search_engin_type) - 1]
 
     def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'

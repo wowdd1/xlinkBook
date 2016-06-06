@@ -406,7 +406,7 @@ engin-402 | hypothes | https://hypothes.is/stream?q= | priority:4 description:to
 engin-403 | alternativeto | http://alternativeto.net/software/ | priority:0 description:discovery
 engin-404 | xuetangx | http://www.xuetangx.com/courses/search?query= | priority:0 description:course
 engin-405 | ptopenlab | https://crl.ptopenlab.com:8800/dashboard/supervessel/market_images/?q= | priority:4 description:cloud
-engin-406 | codio | https://codio.com/home/projects/?tab=1&sDirection=asc&sProp=reverseOwnerLastAccess&filter= | priority:4 description:tools
+engin-406 | codio | https://codio.com/home/projects/?tab=1&sDirection=asc&sProp=reverseOwnerLastAccess&filter= | priority:3 description:cloud
 engin-407 | hub.docker | https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=%s&starCount=0 | priority:4 description:cloud
 engin-408 | cloud.google | https://console.cloud.google.com/home/dashboard?project= | priority:0 description:cloud
 engin-409 | azure | https://azure.microsoft.com/en-us/search/?q= | priority:0 description:cloud
@@ -416,3 +416,4 @@ engin-412 | qcloud | https://www.qcloud.com/search/result.php?type=1&pagenum=1&k
 engin-413 | bce.baidu | https://bce.baidu.com/search.html?q= | priority:0 description:cloud
 engin-414 | nbviewer | http://nbviewer.jupyter.org/github/ | priority:3 description:tools
 engin-415 | openpowerfoundation | http://openpowerfoundation.org/?submit=Search&s= | priority:4 description:develop
+engin-416 | qwiklab | https://nvidia.qwiklab.com/searches/elasticsearch?q= | priority:0 description:cloud

@@ -143,7 +143,7 @@ class Content(BaseExtension):
             ft = url.replace('[', '').replace(']', '').strip()
             r = self.utils.getRecord(ft, '','', False, False)
             key = r.get_path()[r.get_path().find(default_subject) + len(default_subject) + 1 :]
-            url = 'http://localhost:5000?db=' + default_subject + '/&key=' + key + '&filter=' + ft  + '&desc=true'
+            url = 'http://' + Config.ip_adress + '?db=' + default_subject + '/&key=' + key + '&filter=' + ft  + '&desc=true'
 
         return self.genMetadataLinkEx(title, url)
 

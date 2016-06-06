@@ -122,7 +122,7 @@ class Similar(BaseExtension):
         for item in alist:
             if item.strip() == "":
                 continue
-            html += '<a target="_blank" href="http://localhost:5000?db=eecs/papers/arxiv/&filter=' + category + item.strip().replace(' ', '%20') + '">'+ item.strip() + '</a>'
+            html += '<a target="_blank" href="http://' + Config.ip_adress + '?db=eecs/papers/arxiv/&filter=' + category + item.strip().replace(' ', '%20') + '">'+ item.strip() + '</a>'
             if item != alist[len(alist) - 1]:
                 html += ', '
             else:  

@@ -14,12 +14,14 @@ sys.setdefaultencoding('utf-8')
 from record import Record, Tag
 from utils import Utils
 import copy
+from config import Config
 
 source = ""
 filter_keyword = ""
 column_num = "2"
 
 custom_cell_len = 88
+split_length = custom_cell_len + 15
 custom_cell_row = 5
 cell_len=89  #  cell_len >= course_num_len + 1 + course_name_len + 3
 course_name_len=70
@@ -564,19 +566,22 @@ def build_lines(list_all):
                                     count = 0
                                     count_index = 0
                                     nav_div_id = ''
+                                    length = 0
                                     for link in navLinks:
                                         nav_div_id = "#div-nav-" + str(count_index)
                                         divID = '#div'
                                         aid = "#div-nav-" + link
-                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str(len(navLinks) / max_nav_link_row) + ');', link, '#888888', 9, aid)
+                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 2) + ');', link, '#888888', 9, aid)
                                         count += 1 
-                                        if count >= max_nav_link_row:
+                                        length += len(link) + 1
+                                        if count >= max_nav_link_row or link == utils.getLastEnginType() or length > split_length:
                                             div_content_list.append('<div id="' + nav_div_id + '">')
                                             div_content_list.append(content)
                                             div_content_list.append('</div>')
                                             count_index += 1
                                             count = 0
                                             content = '' 
+                                            length = 0
                                     if content != '':
                                         div_content_list.append('<div id="' + nav_div_id + '">')
                                         div_content_list.append(content)
@@ -694,7 +699,7 @@ def print_libary():
             lines = f.readlines()
             f.close()
             if len(lines) > 0:
-                print '<div style="float:right; margin-right:10px"><a target="_blank" href="http://localhost:5000/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div>'
+                print '<div style="float:right; margin-right:10px"><a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div>'
 
 def print_table_head_with_style():
     print "<body>"
