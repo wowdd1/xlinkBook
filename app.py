@@ -8,6 +8,7 @@ import subprocess
 import json
 from extension_manager import ExtensionManager
 from utils import Utils
+from config import Config
 app = Flask(__name__)
 
 
@@ -78,7 +79,7 @@ def chrome():
     f.close()
     
     print request.form['title']
-    return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://localhost:5000/temp/test.html"></iframe>'
+    return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
     #return '{"firstAccess" : "' + data + '"}'
 
 @app.route('/temp/<page>', methods=['GET', 'POST'])
@@ -126,6 +127,8 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -v ' + verify + ' '
     if alexa == 'true':
         cmd += ' -a '
+    if width != '':
+        cmd += ' -w ' + width + ' '
 
     return cmd.replace('?', '') 
 
@@ -150,12 +153,12 @@ def genTable(files, folder= '', db=''):
     for f in sorted(files,  cmp=lambda x,y : cmp(len(x), len(y))):
        count += 1
        if os.path.isfile(os.path.join(folder, f)):
-           tds += '<td><a href="http://localhost:5000/?db=' + db+  '&key=' + f + '">' + str(count) + '. ' + f + '<a></td>'
+           tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f + '">' + str(count) + '. ' + f + '<a></td>'
        else:
            if db != '':
-               tds += '<td><a href="http://localhost:5000/?db=' + db + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
+               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
            else:
-               tds += '<td><a href="http://localhost:5000/?db=' + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
+               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
        if count % column_num == 0:
            html += '<tr>' + tds + '</tr>'
            tds = ''
@@ -168,12 +171,12 @@ def genList(files, folder='', db=''):
     html = '<ol>'
     for f in sorted(files):
         if os.path.isfile(os.path.join(folder, f)):
-            html += '<li><a href="http://localhost:5000/?db=' + db+  '&key=' + f + '">' + f + '<a></li>'
+            html += '<li><a href="http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f + '">' + f + '<a></li>'
         else:
             if db != '':
-                html += '<li><a href="http://localhost:5000/?db=' + db + f +  '/&key=?">' + f + '/</a></li>'
+                html += '<li><a href="http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?">' + f + '/</a></li>'
             else:
-                html += '<li><a href="http://localhost:5000/?db=' + f +  '/&key=?">' + f + '/</a></li>'
+                html += '<li><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + f + '/</a></li>'
 
     html += '<ol>'
     return html

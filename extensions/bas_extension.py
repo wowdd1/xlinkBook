@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from config import Config
 
 class BaseExtension:
     name = ''
