@@ -10,7 +10,6 @@ import re, mmap
 import itertools
 import unicodedata
 from update.all_subject import default_subject
-import prettytable
 import requests
 import sys
 from bs4 import BeautifulSoup;
