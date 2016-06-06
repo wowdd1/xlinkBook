@@ -574,7 +574,7 @@ def build_lines(list_all):
                                         content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 2) + ');', link, '#888888', 9, aid)
                                         count += 1 
                                         length += len(link) + 1
-                                        if count >= max_nav_link_row or link == utils.getLastEnginType() or length > split_length:
+                                        if count >= max_nav_link_row or length > split_length:
                                             div_content_list.append('<div id="' + nav_div_id + '">')
                                             div_content_list.append(content)
                                             div_content_list.append('</div>')
