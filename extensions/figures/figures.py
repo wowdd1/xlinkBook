@@ -4,7 +4,7 @@ import sys, os
 from extensions.bas_extension import BaseExtension
 from utils import Utils
 from semanticscholar import Semanticscholar
-
+import subprocess
 from record import CategoryRecord, Category
 import requests
 from bs4 import BeautifulSoup
@@ -44,13 +44,17 @@ class Figures(BaseExtension):
             jpg = '.pdf.jpg'
             retry = 0
             for i in range(1, 10):
-                r = requests.get(thumbs + 'v' + str(i) + jpg)
-                if r.status_code == 200:
+                url = thumbs + 'v' + str(i) + jpg
+                #r = requests.get(thumbs + 'v' + str(i) + jpg)
+                output = subprocess.check_output("curl --head " + url, shell=True)
+                #if r.status_code == 200:
+                print output
+                if output.find('200 OK') != -1:
                     retry = 0
                     version = 'v' + str(i)
                 else:
                    retry += 1
-                if retry >= 2:
+                if retry >= 1:
                     break 
                 #else:
                 #    break

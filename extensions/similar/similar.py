@@ -8,6 +8,7 @@ import cPickle as pickle
 import requests
 from bs4 import BeautifulSoup
 from config import Config
+import subprocess
 
 class Similar(BaseExtension):
 
@@ -106,8 +107,17 @@ class Similar(BaseExtension):
             version = record.get_version()
             if version == None or version.strip() == '':
                 version = '1'
-                
-            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + "v" + version + ".pdf.jpg"
+            found = False
+            thumbs = ''
+            while found == False:
+                thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + "v" + version + ".pdf.jpg"
+                output = subprocess.check_output("curl --head " + thumbs, shell=True)
+                print output
+                if output.find('200 OK') != -1:
+                    found = True
+                else:
+                    version = str(int(version) + 1)
+            
                     
             authors = record.get_author().split(',')
             categorys = record.get_category().split(' ')
