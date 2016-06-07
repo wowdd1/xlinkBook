@@ -6,6 +6,7 @@ from extensions.bas_extension import BaseExtension
 from utils import Utils
 from update.all_subject import default_subject
 from record import ContentRecord
+from config import Config
 import requests
 reload(sys)
 sys.setdefaultencoding("utf-8")

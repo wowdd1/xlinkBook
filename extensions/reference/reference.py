@@ -7,6 +7,7 @@ from update.all_subject import default_subject
 from record import ReferenceRecord
 from record import CategoryRecord, Category
 from semanticscholar import Semanticscholar
+from config import Config
 
 class Reference(BaseExtension):
 

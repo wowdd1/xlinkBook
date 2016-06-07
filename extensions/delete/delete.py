@@ -4,6 +4,7 @@ import sys, os
 from extensions.bas_extension import BaseExtension
 from utils import Utils
 from record import Record
+from config import Config
 
 class Delete(BaseExtension):
 

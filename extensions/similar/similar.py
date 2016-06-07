@@ -7,6 +7,7 @@ from record import PaperRecord, Category
 import cPickle as pickle
 import requests
 from bs4 import BeautifulSoup
+from config import Config
 
 class Similar(BaseExtension):
 
