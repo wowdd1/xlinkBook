@@ -678,7 +678,7 @@ def print_search_box():
         if plugins_mode == False:
             print '<br/>'
         onclick = "search('search_txt', 'select');"
-        div = '<div style="width:778px;margin:auto;' 
+        div = '<div style="width:778px;margin: 0 auto;' 
         #if plugins_mode:
         #    div += ' display:none;'
         div += '">'
@@ -701,7 +701,7 @@ def print_libary():
             lines = f.readlines()
             f.close()
             if len(lines) > 0:
-                print '<div style="float:right; margin-right:10px"><a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div>'
+                print '<div style="float:right; margin-top:2px; margin-right:10px"><a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div><div style="height: 21px; width: 100px"></div>'
 
 def print_table_head_with_style():
     print "<body>"
