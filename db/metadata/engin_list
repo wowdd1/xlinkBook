@@ -166,8 +166,8 @@ engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
 engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:4 description:all
 engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:4 description:all 
-engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:course 
-engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:book 
+engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:tools 
+engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:tools
 engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset p2p
 engin-169 | freenode | http://irc.netsplit.de/channels/?net=freenode&chat= | priority:0 description:organization
 engin-170 | meetup | http://www.meetup.com/find/?keywords= | priority:0 description:organization people
@@ -184,7 +184,7 @@ engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:
 engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization finance
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
 engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 description:18+
-engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:project 
+engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:tools 
 engin-185 | codeschool | https://www.codeschool.com/search?query= | priority:0 description:tutorial
 engin-186 | teamtreehouse | https://teamtreehouse.com/library/q: | priority:0 description:tutorial
 engin-187 | mva | https://mva.microsoft.com/search/SearchResults.aspx#!q= | priority:0 description:tutorial
@@ -417,3 +417,4 @@ engin-413 | bce.baidu | https://bce.baidu.com/search.html?q= | priority:0 descri
 engin-414 | nbviewer | http://nbviewer.jupyter.org/github/ | priority:3 description:tools
 engin-415 | openpowerfoundation | http://openpowerfoundation.org/?submit=Search&s= | priority:4 description:develop
 engin-416 | qwiklab | https://nvidia.qwiklab.com/searches/elasticsearch?q= | priority:0 description:cloud
+engin-417 | paperscape | http://paperscape.org/?q= | priority:5 description:tools

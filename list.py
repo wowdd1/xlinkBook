@@ -534,7 +534,7 @@ def build_lines(list_all):
                                 script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), utils.getEnginUrlOtherInfo(list_all[i][j]))
 
 
-                            if output_with_describe:
+                            if output_with_describe and end < describe:
                                 script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
                                 script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
                             if gen_html_done == False:
@@ -617,11 +617,14 @@ def build_lines(list_all):
 
 def get_line(lines, start, end, j):
     result = vertical
+    text = ''
     for i in range(start, end):
         if isinstance(lines[i][j], Record):
             lines[i][j] =  u' '.join(lines[i][j].get_describe()).encode('utf-8')
-        result += color_keyword(lines[i][j]) + vertical
-
+        text = color_keyword(lines[i][j])
+        if html_style and text.strip() == '':
+            text = vertical
+        result += text + vertical
     return result
 
 def gen_html_body(content, row=0):
@@ -662,7 +665,6 @@ def gen_html_body_v2(content, row, subRow):
         elif column_num == "1":
             verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td></tr>']
 
-        ct = content
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
             index = index + 1

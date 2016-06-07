@@ -446,7 +446,7 @@ class Utils:
         script += "setText('" + linkID +"');"
         script += "showdiv('" + content_divID + "','" + linkID +"');"
         title = title.replace('"', '%20').replace("'",'%20').replace('&', '%20').replace(' ', '%20')
-        info = info.replace('"', '%20').replace("'",'%20').replace('&', '%20').replace(' ', '%20')
+        info = info.replace('"', '%20').replace("'",'%20').replace(' ', '%20')
         script += "appendContent('" + content_divID + "','" + id + "','" + title + "','" + info + "');"
         return script
 
