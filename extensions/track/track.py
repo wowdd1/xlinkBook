@@ -19,10 +19,14 @@ class Track(BaseExtension):
         html = ''
         count = 0
         index_dict = {}
-        for i in range(0, 3):
-            index = random.randint(0, len(self.utils.search_engin_type_engin_dict[name]) - 1)
+        max_index = 3
+        engins = self.utils.search_engin_type_engin_dict[name]
+        if (len(engins) < 3):
+            max_index = len(engins)
+        for i in range(0, max_index):
+            index = random.randint(0, len(engins) - 1)
             while index_dict.has_key(str(index)):
-                index = random.randint(0, len(self.utils.search_engin_type_engin_dict[name]) - 1)
+                index = random.randint(0, len(engins) - 1)
             index_dict[str(index)] = ''
 
             url = self.utils.search_engin_type_engin_dict[name][index]
@@ -31,7 +35,7 @@ class Track(BaseExtension):
             else:
                 url = url + title
             html += '<iframe src="' + url + '" style="border: 0; width: 100%; height: 350px"></iframe>'
-            if i != 2:
+            if i != max_index - 1:
                 html += '<br/><br/><br/>'
 
         return html
