@@ -19,6 +19,7 @@ from record import CourseRecord
 from record import ReferenceRecord
 from record import PaperRecord
 from record import ContentRecord
+from record import EnginRecord
 import time
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -54,6 +55,7 @@ class Utils:
         'white': '1;37',
     }
     search_engin_dict = {}
+    search_engin_type_engin_dict = {}
     search_engin_type = []
     engin_extension = []
     search_engin_url_dict = {}
@@ -98,15 +100,24 @@ class Utils:
         #print self.alexa_dict
 
     def loadEngins(self):
-        if os.path.exists('db/metadata/engin_list'):
+        if len(self.search_engin_dict) == 0 and os.path.exists('db/metadata/engin_list'):
             f = open('db/metadata/engin_list','rU')
             all_lines = f.readlines()
             for line in all_lines:
-                record = PriorityRecord(line)
+                record = EnginRecord(line)
                 if record.get_title() != '':
-                    self.search_engin_url_dict[record.get_title().strip()] = record.get_url().strip()
+                    url = record.get_url().strip()
+                    self.search_engin_url_dict[record.get_title().strip()] = url
                     self.search_engin_dict[record.get_title().strip()] = record
-        if os.path.exists('db/metadata/engin_type'):
+                    desc = record.get_description().strip()
+                    categorys = desc.split(' ')
+                    for category in categorys:
+                        if self.search_engin_type_engin_dict.has_key(category):
+                            self.search_engin_type_engin_dict[category].append(url)
+                        else:
+                            self.search_engin_type_engin_dict[category] = [url]
+ 
+        if len(self.search_engin_type) == 0 and os.path.exists('db/metadata/engin_type'):
             f = open('db/metadata/engin_type','rU')
             all_lines = f.readlines()
             for line in all_lines:
@@ -114,7 +125,7 @@ class Utils:
                     continue
                 if line.strip() != '':
                     self.search_engin_type.append(line.strip().strip())
-        if os.path.exists('db/metadata/engin_extension'):
+        if len(self.engin_extension) == 0 and os.path.exists('db/metadata/engin_extension'):
             f = open('db/metadata/engin_extension','rU')
             all_lines = f.readlines()
             for line in all_lines:
@@ -389,6 +400,7 @@ class Utils:
             count += 1
             result += div
         result += "</div>" 
+        result += '<div id="' + divid + '-data"></div>'
         return result
 
     def priority2fontsize(self, engin, priority, baseFontSize):

@@ -104,9 +104,10 @@ class Similar(BaseExtension):
         count = 0
         for record in records:
             #html += '<li><span>' + record.get_id().strip() + '</span><br/>'
-            version = record.get_version()
-            if version == None or version.strip() == '':
-                version = '1'
+            #version = record.get_version()
+            #if version == None or version.strip() == '':
+            version = '1'
+            
             found = False
             thumbs = ''
             while found == False:

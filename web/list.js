@@ -99,12 +99,20 @@ function navTopic(obj, divID, parentDivID, countIndex){
     } else {
         target.style.display="";
     }
+
+    var postArgs;
+    if (args[divID] != null){
+        postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false', column, column};
+    } else {
+        postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), fileName : fileName, 'check' : 'false', column, column};
+    }
+    postArgs["divID"] = divID + "-" + obj.text;
+    postArgs["defaultLinks"] = 2;
+    var extension = false;
     for (var i = 0; i < extensions.length; i++) {
         console.log('zzz', extensions[i]);
         if (extensions[i] == obj.text) { 
-            var postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false', column, column}
-            postArgs["divID"] = divID + "-" + obj.text
-            postArgs["defaultLinks"] = 2
+            extension = true;
             $("#" + targetid).html("Loading ...");
             var loadAnimID = setInterval(function() {
                 i = ++i % 4;
@@ -121,6 +129,16 @@ function navTopic(obj, divID, parentDivID, countIndex){
              });
         }
     }
+    if (!extension) {
+        console.log('datatarget', targetid + '-data');
+        data_target = $('#' + targetid + '-data');
+        if (data_target != null) {
+            data_target.show();
+            postArgs["navigate"] = 'true';
+            data_target.load('/navigate', postArgs, function(data){
+            });
+        }
+    }
 }
 function showdiv_2(targetid){
       var target=document.getElementById(targetid);
@@ -132,7 +150,9 @@ function showdiv_2(targetid){
 }
 function hidendiv_2(targetid){
       var target=document.getElementById(targetid);
-                target.style.display="none";
+      target.style.display="none";
+      var target=document.getElementById(targetid + "-data");
+      target.style.display="none";
 }
 function appendContent(targetid, id, topic, otherInfo){
     args[targetid] = [id, topic];
@@ -178,9 +198,11 @@ function hidenMetadata(targetid, datatype, value){
         }
     }
 }
+var search_box;
 function appendContentBox(targetid, boxid){
     var target=document.getElementById(targetid);
     var box=document.getElementById(boxid);
+    search_box = box;
     console.log("id", targetid);
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace('', '%20')).replace(/#otherInfo/g, "");
     for (var i = 0; i < extensions.length; i++) {
