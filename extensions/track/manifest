@@ -1,0 +1,6 @@
+{
+    "name" : "track",
+    "module" : "track",
+    "class" : "Track",
+    "version" : "0.1"
+}

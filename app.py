@@ -51,6 +51,12 @@ def index():
         html = subprocess.check_output(cmd, shell=True)
         return html
 
+@app.route('/navigate', methods=['POST'])
+def handleNavigate():
+    if request.form['rID'] == "":
+        return ""
+    return extensionManager.doWork(request.form)
+
 @app.route('/extensions', methods=['POST'])
 def handleExtension():
     if request.args.get('verify', '') != '':

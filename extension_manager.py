@@ -7,6 +7,7 @@ import datetime
 from record import Record
 from record import LibraryRecord
 from utils import Utils
+from config import Config
 
 
 class ExtensionManager:
@@ -90,7 +91,13 @@ class ExtensionManager:
                     print 'error'
                     return ''
         else:
-            extension = self.loadExtension(form['name'])
+            name = form['name']
+            if form.has_key('navigate'):
+                if Config.track_mode:
+                    name = 'track'
+                else:
+                    return ''
+            extension = self.loadExtension(name)
             return extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
     def checkCache(self, names, form):
         result = ''
