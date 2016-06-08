@@ -14,7 +14,7 @@ class Track(BaseExtension):
     def excute(self, form_dict):
         title = form_dict['rTitle']
         name = form_dict['name']
-        print name + ' ' + title + ' clicked'
+        #print name + ' ' + title.encode('utf-8') + ' clicked'
         print self.utils.search_engin_type_engin_dict[name]
         html = ''
         count = 0
