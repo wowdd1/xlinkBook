@@ -18,8 +18,18 @@ function showdiv(targetid,objN){
       var clicktext=document.getElementById(objN);
             if (clicktext.innerText=="less"){
                 target.style.display="";
+                $('#' + targetid).attr("alt", 'showing')
             } else {
-                target.style.display="none";
+                if (targetid.indexOf('tr-') >= 0) {
+                    if (target.innerHTML.indexOf('showing') > 0) {
+                    } else {
+                        target.style.display="none";
+                        $('#' + targetid).attr("alt", '')
+                    } 
+                } else {
+                    target.style.display="none";
+                    $('#' + targetid).attr("alt", '')
+                }
             }
 }
 function search(inputid,optionid){
