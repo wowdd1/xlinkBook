@@ -295,7 +295,7 @@ engin-291 | pornhub | http://www.pornhub.com/video/search?search= | priority:0 d
 engin-292 | ask.com | http://www.ask.com/web?q= | priority:0 description:all
 engin-293 | xvideos | http://www.xvideos.com/?k= | priority:0 description:18+
 engin-294 | imgur | http://imgur.com/search?q= | priority:0 description:18+
-engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:6 description:social image
+engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:6 description:social
 engin-296 | vk.com | http://vk.com/search?c%5Bq%5D=%s&c%5Bsection%5D=auto | priority:5 description:social
 engin-297 | xhamster | http://xhamster.com/search.php?from=&q=%s&qcat=video | priority:0 description:18+
 engin-298 | bongacams | https://en.bongacams.com/?q= | priority:5 description:18+
@@ -418,4 +418,5 @@ engin-414 | nbviewer | http://nbviewer.jupyter.org/github/ | priority:3 descript
 engin-415 | openpowerfoundation | http://openpowerfoundation.org/?submit=Search&s= | priority:4 description:develop
 engin-416 | qwiklab | https://nvidia.qwiklab.com/searches/elasticsearch?q= | priority:0 description:cloud
 engin-417 | paperscape | http://paperscape.org/?q= | priority:5 description:tools
-engin-418 | flickr | https://www.flickr.com/search/?text= | priority:3 description:image
+engin-418 | image.baidu | http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word= | priority:3 description:image
+engin-419 | bing.com/images | http://cn.bing.com/images/search?q=%s&go=Submit&qs=bs&form=QBILPG | priority:3 description:image
