@@ -535,8 +535,8 @@ def build_lines(list_all):
 
 
                             if output_with_describe and end < describe:
-                                script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
                                 script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
+                                script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
                             if gen_html_done == False:
 
                                 if (l+1) * max_links_row < len(engin_list_sub):
