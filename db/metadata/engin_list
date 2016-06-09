@@ -33,7 +33,7 @@ engin-32 | coursera | https://www.coursera.org/courses?query= | priority:8 descr
 engin-33 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | priority:8 description:course star
 engin-35 | videolectures | http://videolectures.net/site/search/?q= | priority:8 description:talk star
-engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | priority:0 description:people rank
+engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | priority:0 description:people review
 engin-37 | ted | http://www.ted.com/search?q= | priority:0 description:talk
 engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | priority:0 description:paper
 engin-39 | frontiersin | http://www.frontiersin.org/SearchData.aspx?sq= | priority:0 description:paper
@@ -94,7 +94,7 @@ engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | pri
 engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | priority:0 description:paper 
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | priority:8 description:social star
 engin-93 | crunchbase | https://www.crunchbase.com/%s/ | priority:8 description:organization people star
-engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | priority:0 description:organization rank
+engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | priority:0 description:organization review
 engin-95 | douban | https://www.douban.com/search?q= | priority:0 description:organization book people
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | priority:0 description:book
 engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | priority:0 description:business
@@ -144,10 +144,10 @@ engin-140 | law.com | http://www.law.com/search/?query= | priority:0 description
 engin-141 | baike | http://baike.baidu.com/search?pn=0&rn=0&enc=utf8&word= | priority:0 description:wiki
 engin-142 | wenku | http://wenku.baidu.com/search?word= | priority:0 description:slide doc
 engin-143 | bitbucket | https://bitbucket.org/repo/all?name= | priority:0 description:project
-engin-144 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course rank
-engin-145 | coursecycle | https://coursecycle.com/ | priority:0 description:course rank
-engin-146 | stanfordrank | http://www.stanfordrank.com/search?query= | priority:0 description:course rank
-engin-147 | treeviews | http://treeviews.io/?query= | priority:0 description:course rank
+engin-144 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course review
+engin-145 | coursecycle | https://coursecycle.com/ | priority:0 description:course review
+engin-146 | stanfordrank | http://www.stanfordrank.com/search?query= | priority:0 description:course review
+engin-147 | treeviews | http://treeviews.io/?query= | priority:0 description:course review
 engin-148 | cmu.edu | https://web-search.andrew.cmu.edu/search?entqr=3&entsp=a&sort=date%3AD%3AL%3Ad1&output=xml_no_dtd&client=default_frontend&ud=1&oe=UTF-8&ie=UTF-8&proxystylesheet=default_frontend&q= | priority:0 description:people course
 engin-149 | ucl.ac | https://search2.ucl.ac.uk/s/search.html?collection=website-meta&profile=_website&tab=websites&query= | priority:0 description:people course
 engin-150 | sciencemag | http://www.sciencemag.org/search/ | priority:0 description:journal
@@ -169,7 +169,7 @@ engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:4 d
 engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:tools 
 engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:tools
 engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset p2p
-engin-169 | freenode | http://irc.netsplit.de/channels/?net=freenode&chat= | priority:0 description:organization
+engin-169 | freenode | http://irc.netsplit.de/channels/?net=freenode&chat= | priority:0 description:tools
 engin-170 | meetup | http://www.meetup.com/find/?keywords= | priority:0 description:organization people
 engin-171 | geekpark | http://www.geekpark.net/?q= | priority:0 description:news
 engin-172 | hn.algolia | https://hn.algolia.com/?query= | priority:0 description:news
@@ -220,7 +220,7 @@ engin-216 | iwencai | http://www.iwencai.com/stockpick/search?tid=stockpick&qs=s
 engin-217 | microjs | http://microjs.com/# | priority:0 description:project
 engin-218 | npmjs | https://www.npmjs.com/search?q= | priority:0 description:project
 engin-219 | dribbble | https://dribbble.com/search?q= | priority:0 description:design
-engin-220 | scimagojr | http://www.scimagojr.com/journalsearch.php?q=%s&tip=jou | priority:0 description:journal rank
+engin-220 | scimagojr | http://www.scimagojr.com/journalsearch.php?q=%s&tip=jou | priority:0 description:journal review
 engin-221 | sciencedaily | https://www.sciencedaily.com/search/?keyword= | priority:0 description:journal
 engin-222 | semanticscholar | https://www.semanticscholar.org/search?q=Deep%20Learning&sort=relevance&ae=false | priority:6 description:paper people
 engin-223 | scholarpedia | http://www.scholarpedia.org/w/index.php?search=%s&button=&title=Special%3ASearch | priority:0 description:wiki
@@ -295,7 +295,7 @@ engin-291 | pornhub | http://www.pornhub.com/video/search?search= | priority:0 d
 engin-292 | ask.com | http://www.ask.com/web?q= | priority:0 description:all
 engin-293 | xvideos | http://www.xvideos.com/?k= | priority:0 description:18+
 engin-294 | imgur | http://imgur.com/search?q= | priority:0 description:18+
-engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:6 description:social
+engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:6 description:social image
 engin-296 | vk.com | http://vk.com/search?c%5Bq%5D=%s&c%5Bsection%5D=auto | priority:5 description:social
 engin-297 | xhamster | http://xhamster.com/search.php?from=&q=%s&qcat=video | priority:0 description:18+
 engin-298 | bongacams | https://en.bongacams.com/?q= | priority:5 description:18+
@@ -403,7 +403,7 @@ engin-399 | readcube | https://app.readcube.com/#/library/search?q= | priority:5
 engin-400 | mycroft | http://mycroftproject.com/search-engines.html?name= | priority:5 description:website
 engin-401 | altmetric | https://www.altmetric.com/?s= | priority:0 description:tools
 engin-402 | hypothes | https://hypothes.is/stream?q= | priority:4 description:tools
-engin-403 | alternativeto | http://alternativeto.net/software/ | priority:0 description:discovery
+engin-403 | alternativeto | http://alternativeto.net/software/ | priority:0 description:review
 engin-404 | xuetangx | http://www.xuetangx.com/courses/search?query= | priority:0 description:course
 engin-405 | ptopenlab | https://crl.ptopenlab.com:8800/dashboard/supervessel/market_images/?q= | priority:4 description:cloud
 engin-406 | codio | https://codio.com/home/projects/?tab=1&sDirection=asc&sProp=reverseOwnerLastAccess&filter= | priority:3 description:cloud
@@ -420,3 +420,8 @@ engin-416 | qwiklab | https://nvidia.qwiklab.com/searches/elasticsearch?q= | pri
 engin-417 | paperscape | http://paperscape.org/?q= | priority:5 description:tools
 engin-418 | image.baidu | http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word= | priority:3 description:image
 engin-419 | bing.com/images | http://cn.bing.com/images/search?q=%s&go=Submit&qs=bs&form=QBILPG | priority:3 description:image
+engin-420 | slack | https://slack.com/signin/find?q= | priority:3 description:tools
+engin-421 | gitter | https://gitter.im/ | priority:3 description:tools
+engin-422 | flickr | https://www.flickr.com/search/?text= | priority:0 description:image
+engin-423 | images.search.yahoo | https://images.search.yahoo.com/search/images;_ylt=AwrTcXxU5FhXgMQA8KiLuLkF?p=%s&ei=UTF-8&iscqry=&fr=sfp | priority:0 description:image
+engin-424 | images.google | https://www.google.com/search?&tbm=isch&q= | priority:0 description:image

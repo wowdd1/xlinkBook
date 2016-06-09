@@ -45,7 +45,8 @@ def index():
                       request.args.get('engin', ''),
                       request.args.get('navigation', 'true'),
                       request.args.get('verify', ''),
-                      request.args.get('alexa', ''))
+                      request.args.get('alexa', ''),
+                      request.args.get('track', 'false'))
         
         print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
@@ -97,7 +98,7 @@ def temp(page):
     f.close()
     return data
 
-def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track):
     if db.endswith('/') == False:
         db += '/'
     cmd = "./list.py -i db/" + db + key + " -b 4"
@@ -135,6 +136,11 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -a '
     if width != '':
         cmd += ' -w ' + width + ' '
+    if track == 'true':
+        Config.track_mode = True
+    else:
+        Config.track_mode = False
+       
 
     return cmd.replace('?', '') 
 

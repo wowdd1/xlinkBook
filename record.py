@@ -57,7 +57,7 @@ class Category():
         self.patent = "patent"
         self.people = "people"
         self.blog = "blog"
-        self.rank = "rank"
+        self.review = "review"
         self.website = "website"
         self.engin = "engin"
         self.tools = "tools"
