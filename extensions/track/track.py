@@ -4,6 +4,7 @@ from extensions.bas_extension import BaseExtension
 from utils import Utils
 import requests
 import random
+import subprocess
 
 class Track(BaseExtension):
     
@@ -34,9 +35,11 @@ class Track(BaseExtension):
                 url = url.replace('%s', title)
             else:
                 url = url + title
-            html += '<iframe src="' + url + '" style="border: 0; width: 100%; height: 350px"></iframe>'
-            if i != max_index - 1:
-                html += '<br/><br/><br/>'
+            output = subprocess.check_output("curl --head " + url, shell=True)
+            if output.find('X-Frame-Options:') < 0:
+                html += '<iframe src="' + url + '" style="border: 0; width: 100%; height: 350px"></iframe>'
+                if i != max_index - 1:
+                    html += '<br/><br/><br/>'
 
         return html
 

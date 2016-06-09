@@ -1,14 +1,16 @@
 all
 social
+#predict
+news
+image
+event
 organization
 people
-news
-event
 q-a
-p2p
-wiki
 website
 discovery
+review
+wiki
 paper
 journal
 talk
@@ -23,7 +25,6 @@ patent
 blog
 tutorial
 podcast
-image
 develop
 design
 product
@@ -33,7 +34,7 @@ business
 finance
 legal
 #18+
-rank
+p2p
 tools
 #
 #gist
