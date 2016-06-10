@@ -1175,7 +1175,7 @@ def adjust_link_number():
        max_nav_link_row = (max_nav_link_row - 2) * 2
     
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:ap', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin", "navigation", "verify", "use", "alexa", "plugins"])
@@ -1211,6 +1211,8 @@ def main(argv):
             #output_with_color = True
         elif o in ('-w', '--width'):
             custom_cell_len = int(a) 
+            split_length = custom_cell_len + 15
+            max_nav_link_row = 1000
         elif o in ('-r', '--row'):
             if int(a) > 0 and int(a) < 30:
                 custom_cell_row = int(a)
