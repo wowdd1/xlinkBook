@@ -429,3 +429,4 @@ engin-425 | v.baidu | http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=
 engin-426 | bing.com/video | http://cn.bing.com/videos/search?q=%s&go=Submit&qs=n&form=QBVLPG&pq=%s&sc=8-5&sp=-1&sk= | priority:0 description:video
 engin-427 | video.search.yahoo | https://video.search.yahoo.com/search/?p=%s&fr=uh3_magtv_web_gs&fr2=piv-web | priority:0 description:video
 engin-428 | google.com/search?tbm | https://www.google.com/search?tbm=vid&hl=en&source=hp&biw=&bih=&q= | priority:0 description:video 
+engin-429 | askubuntu | http://askubuntu.com/search?q= | priority:0 description:q-a
