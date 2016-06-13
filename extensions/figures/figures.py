@@ -21,7 +21,10 @@ class Figures(BaseExtension):
 
     def excute(self, form_dict):
         name = form_dict['rTitle'] 
-        record = self.utils.getRecord(form_dict['rID'].encode('utf-8'))
+        fileName = form_dict['fileName'].encode('utf8')
+        rID = form_dict['rID'].encode('utf8')
+        record = self.utils.getRecord(rID, path=fileName)
+
         print record.get_id()
         print record.get_describe()
         if record != None or record.get_describe().find('category:') != -1:

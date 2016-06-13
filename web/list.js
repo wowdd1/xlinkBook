@@ -165,16 +165,26 @@ function hidendiv_2(targetid){
       target.style.display="none";
 }
 function appendContent(targetid, id, topic, otherInfo){
-    args[targetid] = [id, topic];
     var target=document.getElementById(targetid);
+    if (target.innerHTML.indexOf(topic) > 0) {
+        if (!disable_thumb) {
+            if ($('#div-thumb-' + id.toLowerCase()).is(':visible')) {
+                $('#div-thumb-' + id.toLowerCase()).hide();
+            } else {
+                $('#div-thumb-' + id.toLowerCase()).show();
+            }
+        }
+        return;
+    }
+    args[targetid] = [id, topic];
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);
     console.log("xx", reference[id]);
 
     for (var i = 0; i < extensions.length; i++) {
-        hidenMetadata(targetid, extensions[i], "none")
+        hidenMetadata(targetid, extensions[i], "none");
     }
     if (id == "") {
-        return
+        return;
     }
     var module = "*";
     var nocache = 'false'
@@ -196,6 +206,13 @@ function appendContent(targetid, id, topic, otherInfo){
             }
         }
     });
+    if (!disable_thumb) {
+        $.post('/thumb', {name : module, rID : id, fileName : fileName, nocache : nocache, 'check' : 'false'}, function(data){
+            if (data != '') {
+                $('#div-thumb-' + id.toLowerCase()).html('<image width="90px" height="100px" src="https://api.thumbalizr.com/?url=' + data + '&width=1280"/>');
+            }
+        });
+    }
 }
 function hidenMetadata(targetid, datatype, value){
     var target=document.getElementById(targetid);

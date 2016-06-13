@@ -352,6 +352,7 @@ class Utils:
         engin_display = ''
         for engin in engins:
             engin_display = engin
+            engin_display = self.getEnginIcon(engin)
             if engin_display == 'search.mit':
                 engin_display = 'mit'
             if engin_display == 'sanity':
@@ -360,9 +361,18 @@ class Utils:
                 keyword = id.strip()
             else:
                 keyword = topic.strip()
+
             result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + engin_display + '</a>'
 
         return result
+
+    def getEnginIcon(self, engin):
+        record = self.search_engin_dict[engin]
+        icon = record.get_icon()
+        if icon != None and icon.strip() != '':
+            return '<image margin-right:"2px" width="18px" height="18px" alt="' + engin + '" src="' + icon.strip() + '"/>'
+        else:
+            return engin
 
     def getDDGEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
         return {}
