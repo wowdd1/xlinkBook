@@ -367,6 +367,8 @@ class Utils:
         return result
 
     def getEnginIcon(self, engin):
+        if Config.disable_icon:
+            return engin
         record = self.search_engin_dict[engin]
         icon = record.get_icon()
         if icon != None and icon.strip() != '':
