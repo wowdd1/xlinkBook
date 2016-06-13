@@ -140,7 +140,6 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         Config.track_mode = True
     else:
         Config.track_mode = False
-       
 
     return cmd.replace('?', '') 
 

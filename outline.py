@@ -13,29 +13,47 @@ from pdfminer.pdfdocument import PDFDocument
 from bs4 import BeautifulSoup
 import requests
 import webbrowser
+import subprocess
 
-def getToc(pdfPath):
-    infile = open(pdfPath, 'rb')
-    parser = PDFParser(infile)
-    document = PDFDocument(parser)
+class Outline():
 
-    toc = list()
-    for (level,title,dest,a,structelem) in document.get_outlines():
-        toc.append((level, title))
+    def getToc(self, pdfPath):
+        infile = open(pdfPath, 'rb')
+        parser = PDFParser(infile)
+        document = PDFDocument(parser)
 
-    return toc
+        toc = list()
+        for (level,title,dest,a,structelem) in document.get_outlines():
+            toc.append((level, title))
 
-def toOutline(source):
-    if source.endswith('.pdf') and source.startswith('http') == False:
-       for item in getToc(source):
-           print item[1]
-    elif source.startswith('http'):
-        url = 'https://gsnedders.html5.org/outliner/process.py?url=' + source
-        webbrowser.open(url)
-        #r = requests.get('https://gsnedders.html5.org/outliner/process.py?url=' + source) 
-        #soup = BeautifulSoup(r.text)
-        #for li in soup.find_all('li'):
-        #    print li.text.strip()
+        return toc
+
+    def toOutline(self, source):
+        if source.endswith('.pdf') and source.startswith('http') == False:
+            items = ''
+            for item in self.getToc(source):
+                items += item[1] + '\n'
+            return items
+        elif source.startswith('http'):
+            #url = 'https://gsnedders.html5.org/outliner/process.py?url=' + source
+            #webbrowser.open(url)
+            r = requests.get('https://gsnedders.html5.org/outliner/process.py?url=' + source) 
+            return r.text
+            #soup = BeautifulSoup(r.text)
+            #for li in soup.find_all('li'):
+            #    print li.text.strip()
+            '''
+            r = requests.get(source)
+            #script = "var data = new Array();"
+            #for line in r.text:
+            #    script += "data.push('" + line + "')"
+            script = ''
+            script += "var HTML5Outline = require('h5o');"
+            script += "var outline = HTML5Outline('<html></html>');"
+            output = subprocess.check_output('node -p "' + script + '"' , shell=True)
+            return output
+            '''
+        return ''
         
 
 def main(argv):
@@ -50,8 +68,8 @@ def main(argv):
     for o, a in opts:
         if o in ('-i', '--input'):
             source = a
-
-    toOutline(source)
+    outline = Outline()
+    print outline.toOutline(source)
 
 if __name__ == '__main__':
     main(sys.argv)

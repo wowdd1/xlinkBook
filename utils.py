@@ -21,6 +21,7 @@ from record import PaperRecord
 from record import ContentRecord
 from record import EnginRecord
 import time
+from config import Config
 reload(sys)
 sys.setdefaultencoding('utf8')
 
@@ -431,7 +432,10 @@ class Utils:
                 self.loadDDGEngins()
             return self.ddg_search_engin_type
         else:
-            return self.search_engin_type + self.engin_extension
+            if Config.extension_mode:
+                return self.engin_extension
+            else:
+                return self.search_engin_type + self.engin_extension
         #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
 
     def getLastEnginType(self):

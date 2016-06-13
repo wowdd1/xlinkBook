@@ -6,7 +6,6 @@
 
 
 class Record():
-    line = ""
     default_line = " | | | "
     def __init__(self, line):
         self.line = line
@@ -118,7 +117,6 @@ class Tag():
 
 class WrapRecord(Record):
 
-    describe = ''
     def __init__(self, line):
         Record.__init__(self, line)
         self.describe = self.get_describe()
@@ -192,6 +190,10 @@ class PriorityRecord(WrapRecord):
 
     def get_priority(self):
         return self.get_tag_content(self.tag.tag_priority)
+
+
+    def get_description(self):
+        return self.get_tag_content(self.tag.tag_description)
 
 class EnginRecord(PriorityRecord):
     def __init__(self, line):

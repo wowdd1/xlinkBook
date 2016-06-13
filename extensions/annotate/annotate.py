@@ -37,9 +37,10 @@ class Annotate(BaseExtension):
         return self.genHtml(rID)
 
     def genHtml(self, rID):
-        html = '<div>'
+        html = '<div class="ref">'
         for record in self.annotates[rID]:
-            html += '<iframe src="' + record.get_url().strip() + '" style="border: 0; width: 100%; height: 350px" ></iframe><br/><a href="' + record.get_url().strip() + '" target="_blank">'+ record.get_title().strip() + '</a><br/>'
+            #html += '<iframe src="' + record.get_url().strip() + '" style="border: 0; width: 100%; height: 500px" ></iframe><br/>'
+            html += '<p><a href="' + record.get_url().strip() + '" target="_blank">'+ record.get_title().strip() + '</a></p>'
         return html + '</div>'
     
 
