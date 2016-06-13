@@ -9,7 +9,12 @@ class Config():
     #show random preview when click nav link
     track_mode = False
 
+    disable_default_engin = True
+  
+    disable_thumb = "false";
+
     #do not show nav links, only show extension links
     extension_mode = False
 
     default_tab = 'content'
+    

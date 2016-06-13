@@ -10,9 +10,10 @@ from extension_manager import ExtensionManager
 from utils import Utils
 from config import Config
 app = Flask(__name__)
+import requests
 
 
-
+utils = Utils()
 
 extensionManager = ExtensionManager()
 @app.route('/', methods=['GET', 'POST'])
@@ -66,6 +67,20 @@ def handleExtension():
     if request.form['rID'] == "":
         return ""
     return extensionManager.doWork(request.form)
+
+@app.route('/thumb', methods=['POST'])
+def handleThumb():
+    fileName = request.form['fileName'].encode('utf8')
+    rID = request.form['rID'].encode('utf8')
+    record = utils.getRecord(rID, path=fileName)
+    url = record.get_url().strip()
+    if url != '':
+        try:
+            output = subprocess.check_output("curl --max-time 1 --head " + 'https://api.thumbalizr.com/?url=' + url + '&width=1280', shell=True)
+        except Exception as e:
+            print e
+        #requests.get('https://api.thumbalizr.com/?url=' + url + '&width=800')
+    return url
 
 @app.route('/chrome', methods=['GET', 'POST'])
 def chrome():
@@ -122,6 +137,8 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -l ' + level + ' '
     if engin != '':
         cmd += ' -e "' + engin + '" '
+    else:
+        cmd += " -e 'd:star' "
     if top != '':
         cmd += ' -t ' + top + ' '
     if desc == 'true':

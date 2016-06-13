@@ -368,6 +368,7 @@ def getScript(file_name, first_record):
     print "<head>"
     print script_head
     print "var default_tab = '" + Config.default_tab + "';"
+    print "var disable_thumb = " + Config.disable_thumb + ";"
     print "var array = []; "
     print "var reference = new Array();"
     print "var content = new Array();"
@@ -605,7 +606,7 @@ def build_lines(list_all):
                 count = 0
                 
                 if html_style: 
-                    if Config.extension_mode == False:
+                    if Config.extension_mode == False and Config.disable_default_engin == False:
                         id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
                     if script != '':
                         id_title_lines[i][j] += utils.genMoreEnginHtml(linkID, script, '...', content_divID);
@@ -638,15 +639,26 @@ def gen_html_body(content, row=0):
     if vertical == '|': 
         verticals = []
         if column_num == "2":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "3":
             verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "1":
             verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
 
+        ids = []
+        content_back = content.split('|')
+        for index in range(0, len(content_back)):
+            if (index + 1) % 2 == 0 and index != 0:
+                ids.append(content_back[index].strip())
+
+        index = 0
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
             index = index + 1
+        for i in range(0, len(ids)):
+            content = content.replace('#div-thumb-' + str(i), 'div-thumb-' + ids[i].lower())
+            
+
 
     return content
 
