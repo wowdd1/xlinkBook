@@ -190,6 +190,9 @@ function appendContent(targetid, id, topic, otherInfo){
             var extensions = data.split(" ");
             for (var i = 0; i < extensions.length; i++) {
                 hidenMetadata(targetid, extensions[i], "");
+                if (extensions[i] == default_tab){
+                    navTopic(document.getElementById(targetid + "-nav-" + default_tab), targetid, targetid + "-nav-",4);
+                }
             }
         }
     });

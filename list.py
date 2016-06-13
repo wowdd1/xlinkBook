@@ -367,6 +367,7 @@ def getScript(file_name, first_record):
     global script
     print "<head>"
     print script_head
+    print "var default_tab = '" + Config.default_tab + "';"
     print "var array = []; "
     print "var reference = new Array();"
     print "var content = new Array();"
@@ -604,7 +605,8 @@ def build_lines(list_all):
                 count = 0
                 
                 if html_style: 
-                    id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
+                    if Config.extension_mode == False:
+                        id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
                     if script != '':
                         id_title_lines[i][j] += utils.genMoreEnginHtml(linkID, script, '...', content_divID);
             elif engin != '' and html_style and engin_list_dict != '':
@@ -1241,7 +1243,6 @@ def main(argv):
             utils.loadAlexa()
         elif o in ('-p', '--plugins'):
             plugins_mode = True
-
 
     if source == "":
         print "you must input the input file or dir"

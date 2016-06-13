@@ -46,7 +46,11 @@ class Figures(BaseExtension):
             for i in range(1, 10):
                 url = thumbs + 'v' + str(i) + jpg
                 #r = requests.get(thumbs + 'v' + str(i) + jpg)
-                output = subprocess.check_output("curl --head " + url, shell=True)
+                output = ''
+                try:
+                    output = subprocess.check_output("curl --max-time 2 --head " + url, shell=True)
+                except Exception as e:
+                    print e
                 #if r.status_code == 200:
                 print output
                 if output.find('200 OK') != -1:

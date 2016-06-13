@@ -29,6 +29,7 @@ line_id = 0
 delete_from_char = ''
 parentid=''
 
+keys = {}
 
 def customFormat(id, title, link):
     '''
@@ -46,9 +47,11 @@ def customPrint(data):
         print parentid + '-' + data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid + "-" + data[0][0 : data[0].find('.')]
     else:
         print parentid + '-' + data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
-    '''    
-    #print data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
-    print data[0] + " |"  + data[1] + " | " + data[2] + " |"
+    '''
+    if keys.has_key(data[1]) == False:
+        keys[data[1]] = ''
+        print parentid + " |"  + data[1] + " | " + data[2] + " | " 
+    #print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def customPrintFile(line):
     global parentid
