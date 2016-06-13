@@ -11,7 +11,9 @@ class Config():
 
     disable_default_engin = True
   
-    disable_thumb = "false";
+    disable_thumb = "false"
+
+    disable_icon = True
 
     #do not show nav links, only show extension links
     extension_mode = False

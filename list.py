@@ -641,9 +641,9 @@ def gen_html_body(content, row=0):
         if column_num == "2":
             verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "3":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '<div id="#div-thumb-2"></div></td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td></tr>']   
 
         ids = []
         content_back = content.split('|')
