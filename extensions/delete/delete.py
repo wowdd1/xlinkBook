@@ -32,7 +32,7 @@ class Delete(BaseExtension):
         return 'error'
 
     def check(self, form_dict):
-        return form_dict.has_key('delete') and form_dict['delete']
+        return form_dict.has_key('delete') and form_dict['delete'] and form_dict['rID'].startswith('loop') == False
 
     def needCache(self):
         return False

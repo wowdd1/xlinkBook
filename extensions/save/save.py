@@ -44,7 +44,7 @@ class Save(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         self.loadLibrary()
         print self.saved_records
-        return self.saved_records.has_key(rID) == False
+        return self.saved_records.has_key(rID) == False and rID.startswith('loop') == False
         
     def needCache(self):
         return False
