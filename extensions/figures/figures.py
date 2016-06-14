@@ -39,7 +39,7 @@ class Figures(BaseExtension):
         if self.category == self.category_obj.paper or self.category.find('cs.') != -1 or self.category.find('stat.') !=-1:
             figures = self.semanticscholar.getFigures(name)
         else:
-            figures, links = self.getRandomFigures(record.get_title())
+            figures, links = self.getRandomFigures(name)
 
         thumbs = ''
         if record.get_id().strip().startswith('arxiv'):
