@@ -533,7 +533,7 @@ def build_lines(list_all):
                             if l == 0:
                                 linkID = 'a-' + ijl;
                                 content_divID = "div-" + ijl
-                                script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), utils.getEnginUrlOtherInfo(list_all[i][j]))
+                                script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), list_all[i][j].get_url().strip(), utils.getEnginUrlOtherInfo(list_all[i][j]))
 
 
                             if output_with_describe and end < describe:
@@ -576,7 +576,7 @@ def build_lines(list_all):
                                         content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 2) + ');', link, '#888888', 9, aid)
                                         count += 1 
                                         length += len(link) + 1
-                                        if count >= max_nav_link_row or length > split_length:
+                                        if count >= max_nav_link_row or length > split_length or link == utils.getEnginTypes()[len(utils.getEnginTypes()) - 1]:
                                             div_content_list.append('<div id="' + nav_div_id + '">')
                                             div_content_list.append(content)
                                             div_content_list.append('</div>')

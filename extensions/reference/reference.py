@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import sys, os
 from extensions.bas_extension import BaseExtension
@@ -8,6 +9,8 @@ from record import ReferenceRecord
 from record import CategoryRecord, Category
 from semanticscholar import Semanticscholar
 from config import Config
+from bs4 import BeautifulSoup
+import requests
 
 class Reference(BaseExtension):
 
@@ -51,11 +54,43 @@ class Reference(BaseExtension):
         #print self.record_reference
         if self.record_reference.has_key(rID):
             #print result
-            return self.genReferenceHtml(rID)
-        else:
+            return self.genReferenceHtml(rID, form_dict['divID'].encode('utf8'))
+        elif rID.startswith('arxiv'):
             return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']), form_dict['divID'].encode('utf8'),
                                           form_dict['defaultLinks'], form_dict['rID'])
+        else:
+            return self.getAllLinks(form_dict['url'])          
 
+
+    def getAllLinks(self, url):
+        if url == '':
+            return ''
+        else:
+            user_agent = {'User-agent': 'Mozilla/5.0'}
+            r = requests.get(url, headers = user_agent)
+            soup = BeautifulSoup(r.text)
+            count = 0
+            link_dict = {}
+            html = ''
+            html += '<div class="ref"><ol>'
+            count = 0
+            for a in soup.find_all('a'):
+                if a.attrs.has_key('href') == False or link_dict.has_key(a['href']):
+                    continue
+                link = a['href']
+                title = a.text.strip().encode('utf-8')
+                if title == '':
+                    title = link.replace('http://', '').replace('www.', '')
+                link_dict[link] = link
+                link = self.utils.fixUrl(url, link)
+                count += 1
+                print str(count) + ' ' + title + ' ' + link
+                html += '<li><span>' + str(count) + '.</span>'
+                html += '<p>' + '<a target="_blank" href="' + link + '">' + title + '</a></li>'
+            html += '</ol></div>'
+        if count == 0:
+            html = ''
+        return html
 
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
@@ -66,7 +101,7 @@ class Reference(BaseExtension):
         category = ''
         if record != None:
             category = CategoryRecord(record.line).get_category()
-        if self.record_reference.has_key(rID) or rID.startswith('arxiv') or rID.startswith('loop') or (category == self.category_obj.paper):
+        if self.record_reference.has_key(rID) or rID.startswith('arxiv') or rID.startswith('loop') or (category == self.category_obj.paper) or form_dict['url'] != '':
             return True
         return False
                 
@@ -90,7 +125,7 @@ class Reference(BaseExtension):
                     appendID = appendID.replace('.','R')
                 else:
                     self.html += '<li><span>' + str(count) + '.</span>'
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID + '-' + str(appendID), r[0], '-')
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID + '-' + str(appendID), r[0], r[1], '-')
                 if r[1] != '':
                     self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + r[0] + '</a>'
                 else:
@@ -102,18 +137,25 @@ class Reference(BaseExtension):
             return self.html + "</div>"
 
 
-    def genReferenceHtml(self, rID):
-        return self.genMetadataHtml(rID)
+    def genReferenceHtml(self, rID, ref_divID):
+        return self.genMetadataHtml(rID, ref_divID)
 
-    def genMetadataHtml(self, key):
+    def genMetadataHtml(self, key, ref_divID):
         if self.record_reference.has_key(key):
             self.html = '<div class="ref"><ol>'
             count = 0
             for r in self.record_reference[key]:
                 count += 1
+                ref_divID += '-' + str(count)
+                linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
+                appendID = str(count)
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-')
+
                 self.html += '<li><span>' + str(count) + '.</span>'
-                self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip()) + '</p>'
-                self.html += '</li>'
+                self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
+                if script != "":
+                    self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
+                self.html += '</p></li>'
             return self.html + "</div>"
         else:
             return ''

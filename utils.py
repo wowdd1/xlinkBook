@@ -155,6 +155,26 @@ class Utils:
                 if record.get_title() != '':
                     self.ddg_search_engin_type.append(record.get_title().strip())
 
+    def fixUrl(self, baseUrl, url):
+        link = url
+        if url.startswith('./'):
+            url = url[1:]
+        if url.find('/', url.find('/') + 1) != -1 and baseUrl.find('/', baseUrl.find('//') + 2) != -1:
+            baseUrl = baseUrl[0 : baseUrl.find('/', baseUrl.find('//') + 2) + 1]
+        if url.startswith('//'):
+            url = 'http:' + url
+        if url.startswith('http') == False:
+            if baseUrl.endswith('/') and url.startswith('/'):
+                link = baseUrl + url[1:]
+            elif baseUrl.endswith('/') == False and url.startswith('/') == False:
+                if baseUrl.find('/', baseUrl.find('//') + 2) != -1:
+                    link = baseUrl[0 : baseUrl.rfind('/')] + '/' + url
+                else:
+                    link = baseUrl + '/' + url
+
+            else:
+                link = baseUrl + url
+        return link
 
     def getAlexaRank(self, engin):
         engin = engin.lower().strip()
@@ -450,6 +470,12 @@ class Utils:
                 return self.search_engin_type + self.engin_extension
         #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
 
+    def getEnginTypes(self):
+        return self.search_engin_type
+
+    def getEnginExtensions(self):
+        return self.engin_extension
+
     def getLastEnginType(self):
         return self.search_engin_type[len(self.search_engin_type) - 1]
 
@@ -469,13 +495,13 @@ class Utils:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + ';><font color="#999966">' + text + '</font></a></font>'
         return html + div
 
-    def genMoreEnginScript(sefl, linkID, content_divID, id, title, info):
+    def genMoreEnginScript(sefl, linkID, content_divID, id, title, url, info):
         script = ''
         script += "setText('" + linkID +"');"
         script += "showdiv('" + content_divID + "','" + linkID +"');"
         title = title.replace('"', '%20').replace("'",'%20').replace('&', '%20').replace(' ', '%20')
         info = info.replace('"', '%20').replace("'",'%20').replace(' ', '%20')
-        script += "appendContent('" + content_divID + "','" + id + "','" + title + "','" + info + "');"
+        script += "appendContent('" + content_divID + "','" + id + "','" + title + "','" + url+ "','" + info + "');"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
