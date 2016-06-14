@@ -96,11 +96,12 @@ class Reference(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
-        print 'check filename ' + fileName
-        record = self.utils.getRecord(rID, path=fileName)
         category = ''
-        if record != None:
-            category = CategoryRecord(record.line).get_category()
+        print 'check filename ' + fileName
+        if rID.startswith('loop') == False:
+            record = self.utils.getRecord(rID, path=fileName)
+            if record != None:
+                category = CategoryRecord(record.line).get_category()
         if self.record_reference.has_key(rID) or rID.startswith('arxiv') or rID.startswith('loop') or (category == self.category_obj.paper) or form_dict['url'] != '':
             return True
         return False

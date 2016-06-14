@@ -20,11 +20,12 @@ class Citation(BaseExtension):
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
-        print 'check filename ' + fileName
-        record = self.utils.getRecord(rID, path=fileName)
         category = ''
-        if record != None:
-            category = CategoryRecord(record.line).get_category()
+        if rID.startswith('loop') == False:
+            print 'check filename ' + fileName
+            record = self.utils.getRecord(rID, path=fileName)
+            if record != None:
+                category = CategoryRecord(record.line).get_category()
         if rID.startswith('arxiv') or rID.startswith('loop') or (category == self.category_obj.paper):
             return True
         return False
