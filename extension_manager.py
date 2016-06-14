@@ -86,6 +86,8 @@ class ExtensionManager:
                     if extension.check(form):
                         return form['name']
                     else:
+                        if form['url'] != '':
+                            return 'reference'
                         return 'false'
                 else:
                     print 'error'

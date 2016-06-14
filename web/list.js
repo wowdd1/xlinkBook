@@ -112,9 +112,9 @@ function navTopic(obj, divID, parentDivID, countIndex){
 
     var postArgs;
     if (args[divID] != null){
-        postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], fileName : fileName, 'check' : 'false', column, column};
+        postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], url : args[divID][2], fileName : fileName, 'check' : 'false', column, column};
     } else {
-        postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), fileName : fileName, 'check' : 'false', column, column};
+        postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), url : '', fileName : fileName, 'check' : 'false', column, column};
     }
     postArgs["divID"] = divID + "-" + obj.text;
     postArgs["defaultLinks"] = 2;
@@ -164,19 +164,22 @@ function hidendiv_2(targetid){
       var target=document.getElementById(targetid + "-data");
       target.style.display="none";
 }
-function appendContent(targetid, id, topic, otherInfo){
+function appendContent(targetid, id, topic, url, otherInfo){
     var target=document.getElementById(targetid);
     if (target.innerHTML.indexOf(topic) > 0) {
         if (!disable_thumb) {
             if ($('#div-thumb-' + id.toLowerCase()).is(':visible')) {
                 $('#div-thumb-' + id.toLowerCase()).hide();
             } else {
+                var url = $('#div-thumb-' + id.toLowerCase()).children('img').attr('src');
+                $('#div-thumb-' + id.toLowerCase()).children('img').attr('src', "");
+                $('#div-thumb-' + id.toLowerCase()).children('img').attr('src', url);
                 $('#div-thumb-' + id.toLowerCase()).show();
             }
         }
         return;
     }
-    args[targetid] = [id, topic];
+    args[targetid] = [id, topic, url];
     target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);
     console.log("xx", reference[id]);
 
@@ -194,8 +197,8 @@ function appendContent(targetid, id, topic, otherInfo){
     if (fileName.indexOf("library") > 0){
         nocache = "true";
     }
-    $.post('/extensions', {name : module, rID : id, fileName : fileName, nocache : nocache, 'check' : 'true'}, function(data){
-        if (data != '') {
+    $.post('/extensions', {name : module, rID : id, url : url, fileName : fileName, nocache : nocache, 'check' : 'true'}, function(data){
+        if (data.trim() != '') {
             console.log("xx", data)
             var extensions = data.split(" ");
             for (var i = 0; i < extensions.length; i++) {
@@ -206,10 +209,10 @@ function appendContent(targetid, id, topic, otherInfo){
             }
         }
     });
-    if (!disable_thumb) {
-        $.post('/thumb', {name : module, rID : id, fileName : fileName, nocache : nocache, 'check' : 'false'}, function(data){
+    if (!disable_thumb && id.indexOf('loop') < 0) {
+        $.post('/thumb', {name : module, rID : id, url : url, fileName : fileName, nocache : nocache, 'check' : 'false'}, function(data){
             if (data != '') {
-                $('#div-thumb-' + id.toLowerCase()).html('<image width="90px" height="100px" src="https://api.thumbalizr.com/?url=' + data + '&width=1280"/>');
+                $('#div-thumb-' + id.toLowerCase()).html('<a target="_blank" href="' + data+ '"><image width="90px" height="90px" src="https://api.thumbalizr.com/?url=' + data + '&width=1280&quality=100"/></a>');
             }
         });
     }

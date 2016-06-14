@@ -8,6 +8,7 @@ import subprocess
 from record import CategoryRecord, Category
 import requests
 from bs4 import BeautifulSoup
+from config import Config
 
 class Figures(BaseExtension):
 
@@ -67,7 +68,30 @@ class Figures(BaseExtension):
                 #    break
             thumbs = thumbs + version + jpg
             print 'thumbs ' + thumbs
-        return self.genHtml(figures, form_dict['column'], links, thumbs)
+        return self.getRefImage(form_dict['url']) + self.genHtml(figures, form_dict['column'], links, thumbs)
+
+
+
+    def getRefImage(self, url):
+        html = ''
+        if Config.disable_reference_image == False and url.strip() != '':
+            user_agent = {'User-agent': 'Mozilla/5.0'}
+            r = requests.get(url, headers = user_agent)
+            soup = BeautifulSoup(r.text)
+            count = 0
+            for img in soup.find_all('img'):
+                if img['src'].endswith('.gif'):
+                    continue
+                if count == 0:
+                    html += '<div>'
+                count += 1
+                html += '<img src="' + self.utils.fixUrl(url, img['src']) + '" width="80" height="50"/>&nbsp;'
+                if count > 5:
+                    count = 0
+                    html += '</div><div>'
+
+            html += '</div>'
+        return html
 
 
     def getPid(self, url):

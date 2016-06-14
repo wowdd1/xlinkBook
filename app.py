@@ -70,13 +70,10 @@ def handleExtension():
 
 @app.route('/thumb', methods=['POST'])
 def handleThumb():
-    fileName = request.form['fileName'].encode('utf8')
-    rID = request.form['rID'].encode('utf8')
-    record = utils.getRecord(rID, path=fileName)
-    url = record.get_url().strip()
+    url = request.form['url']
     if url != '':
         try:
-            output = subprocess.check_output("curl --max-time 1 --head " + 'https://api.thumbalizr.com/?url=' + url + '&width=1280', shell=True)
+            output = subprocess.check_output("curl --max-time 1 --head " + 'https://api.thumbalizr.com/?url=' + url + '&width=1280&quality=100', shell=True)
         except Exception as e:
             print e
         #requests.get('https://api.thumbalizr.com/?url=' + url + '&width=800')
@@ -137,7 +134,7 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -l ' + level + ' '
     if engin != '':
         cmd += ' -e "' + engin + '" '
-    else:
+    elif Config.disable_star_engin == False:
         cmd += " -e 'd:star' "
     if top != '':
         cmd += ' -t ' + top + ' '
