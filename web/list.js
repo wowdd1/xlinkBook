@@ -212,7 +212,7 @@ function appendContent(targetid, id, topic, url, otherInfo){
     if (!disable_thumb && id.indexOf('loop') < 0) {
         $.post('/thumb', {name : module, rID : id, url : url, fileName : fileName, nocache : nocache, 'check' : 'false'}, function(data){
             if (data != '') {
-                $('#div-thumb-' + id.toLowerCase()).html('<a target="_blank" href="' + data+ '"><image width="90px" height="90px" src="https://api.thumbalizr.com/?url=' + data + '&width=1280&quality=100"/></a>');
+                $('#div-thumb-' + id.toLowerCase()).html('<a target="_blank" href="' + data+ '"><image width="78px" height="70px" src="https://api.thumbalizr.com/?url=' + data + '&width=1280&quality=100"/></a>');
             }
         });
     }

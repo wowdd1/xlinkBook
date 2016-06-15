@@ -190,6 +190,7 @@ def print_keyword(file_name):
 def color_keyword(text):
     result = text
     for k in keyword_list:
+        k = ' ' + k
         if (color_index - 1) % 2 == 0:
             if html_style == True:
                 result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
@@ -708,19 +709,10 @@ def print_search_box():
             for i in range(0, 1):
                 print '<br/>'
 
-def print_libary():
-    if html_style and source.find('library') == -1:
-        if os.path.exists('db/library/library'):
-            f = open('db/library/library')
-            lines = f.readlines()
-            f.close()
-            if len(lines) > 0:
-                print '<div style="float:right; margin-top:2px; margin-right:10px"><a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div><div style="height: 21px; width: 100px"></div>'
-
 def print_table_head_with_style():
     print "<body>"
     print_search_box()
-    print_libary()
+    print utils.gen_libary()
     if css_style_type == 3 or css_style_type == 4 or css_style_type == 5:
         print '<table class="easy-table easy-table-default coursesTable">'
     else:
