@@ -369,6 +369,8 @@ def getScript(file_name, first_record):
     print "<head>"
     print script_head
     print "var default_tab = '" + Config.default_tab + "';"
+    if Config.hiden_record_id:
+        Config.disable_thumb = 'true'
     print "var disable_thumb = " + Config.disable_thumb + ";"
     print "var array = []; "
     print "var reference = new Array();"
@@ -639,12 +641,15 @@ def gen_html_body(content, row=0):
     index = 0
     if vertical == '|': 
         verticals = []
+        id_style = ''
+        if Config.hiden_record_id:
+            id_style = 'display: none;'
         if column_num == "2":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "3":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top;">', '<div id="#div-thumb-2"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-2"></div></td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top;">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td></tr>']   
 
         ids = []
         content_back = content.split('|')
@@ -673,12 +678,15 @@ def gen_html_body_v2(content, row, subRow):
     td_div_id = str(row) + str(subRow)
     if vertical == '|':
         verticals = []
+        id_style = ''
+        if Config.hiden_record_id:
+            id_style = 'style="display: none;"'
         if column_num == "2":
-            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td><td>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none;">', '</div></td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style + '>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td><td ' + id_style + '>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none;">', '</div></td></tr>']
         elif column_num == "3":
-            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td><td>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none;">', '</div></td><td>', '</td><td><div id="td-div-2' + td_div_id + '" style="display: none;">', '</div></td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style + '>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td><td ' + id_style + '>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none;">', '</div></td><td ' + id_style +'>', '</td><td><div id="td-div-2' + td_div_id + '" style="display: none;">', '</div></td></tr>']
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style +'>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none;">', '</div></td></tr>']
 
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]

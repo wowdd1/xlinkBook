@@ -18,6 +18,8 @@ class Config():
     disable_star_engin = True
 
     disable_reference_image = False 
+   
+    hiden_record_id = False
 
     #do not show nav links, only show extension links
     extension_mode = False
