@@ -164,10 +164,11 @@ def listAllFile(db):
     folder = 'db/' + db
     files = os.listdir(folder)
     #return genList(files, folder, db)
+    libary = utils.gen_libary(True)
     if len(files) > 40:
-        return genTable(files, folder, db)
+        return libary + genTable(files, folder, db)
     else:
-        return genList(files, folder, db)
+        return libary + genList(files, folder, db)
 
 
 def genTable(files, folder= '', db=''):

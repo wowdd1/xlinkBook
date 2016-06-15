@@ -176,6 +176,20 @@ class Utils:
                 link = baseUrl + url
         return link
 
+    def gen_libary(self, root=False):
+        html = ''
+        if os.path.exists('db/library/library'):
+            f = open('db/library/library')
+            lines = f.readlines()
+            f.close()
+            db_root = ''
+            if root:
+                db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:10px">Home</a>'
+            if len(lines) > 0:
+                html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div><div style="height: 21px; width: 100px"></div>'
+
+        return html
+
     def getAlexaRank(self, engin):
         engin = engin.lower().strip()
         if len(self.alexa_dict) > 0:
