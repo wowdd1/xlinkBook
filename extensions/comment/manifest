@@ -1,0 +1,6 @@
+{
+    "name" : "comment",
+    "module" : "comment",
+    "class" : "Comment",
+    "version" : "0.1"
+}
