@@ -164,6 +164,16 @@ function hidendiv_2(targetid){
       var target=document.getElementById(targetid + "-data");
       target.style.display="none";
 }
+
+function hidendiv_3(targetid){
+      var target=document.getElementById(targetid);
+      if (target.style.display == 'none') {
+          target.style.display="";
+      } else {
+          target.style.display="none";
+      }
+}
+
 function appendContent(targetid, id, topic, url, otherInfo){
     var target=document.getElementById(targetid);
     if (target.innerHTML.indexOf(topic) > 0) {

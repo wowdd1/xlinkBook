@@ -45,9 +45,9 @@ class Track(BaseExtension):
             engin = engin.replace('www.', '').replace('.com', '')
             if output != '' and output.find('X-Frame-Options:') < 0:
                 html += '<br/><iframe src="' + url + '" style="border: 0; width: 100%; height: 400px"></iframe><br/>'
-                html += '<a target="_blank" href="' + url+ '">' + engin + '</a><br/>'
+                html += '<div style="background-color:#EEEEFF; border-radius: 5px 5px 5px 5px;"><a target="_blank" href="' + url+ '">' + engin + '</a></div><br/>'
             else:
-                html += '<br/><a target="_blank" href="' + url+ '">search ' + title.replace('%20', ' ') + ' with ' +  engin +' </a><br/>'
+                html += '<br/><div style="background-color:#EEEEFF; border-radius: 5px 5px 5px 5px;"><a target="_blank" href="' + url+ '">search ' + title.replace('%20', ' ') + ' with ' +  engin +' </a></div><br/>'
             
 
         return html

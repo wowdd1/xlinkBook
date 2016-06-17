@@ -121,23 +121,16 @@ class Content(BaseExtension):
                 script = self.utils.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), self.utils.clearHtmlTag(title), r.get_url().strip(), '-')
                 moreHtml = self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
                 if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
-                    #content_divID += '-' + str(count)
-                    #linkID = 'a-' + content_divID[content_divID.find('-') + 1 :]
-                    #title = r.get_title().strip().replace(' ', '%20')
-                    #script = self.utils.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), title, r.get_url().strip(), '-')
                     if r.get_url().strip() != '':
                         html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
                     else:
                         html += '<p>' + r.get_title().strip()
-                    html += self.utils.getDefaultEnginHtml(title, defaultLinks)
+                    #html += self.utils.getDefaultEnginHtml(title, defaultLinks)
                     if moreHtml != "":
                         html += moreHtml
-                        #html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
                     html += '</p>'
                 elif r.get_url().strip() != '':
                     html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())  + moreHtml + '</p>'
-                #if r.get_describe() != None and r.get_describe().strip() != '':
-                #    html += "<div>description:" + r.get_describe().strip() + "</div>"
                 html += '</li>'
         else:
             return ''

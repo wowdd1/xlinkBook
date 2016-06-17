@@ -55,7 +55,7 @@ class Reference(BaseExtension):
         if self.record_reference.has_key(rID):
             #print result
             return self.genReferenceHtml(rID, form_dict['divID'].encode('utf8'))
-        elif rID.find('arxiv') != -1:
+        elif rID.find('arxiv') >= 0:
             return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']), form_dict['divID'].encode('utf8'),
                                           form_dict['defaultLinks'], form_dict['rID'])
         else:

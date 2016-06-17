@@ -32,7 +32,7 @@ engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:10
 engin-32 | coursera | https://www.coursera.org/courses?query= | priority:8 description:course
 engin-33 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | priority:8 description:course
-engin-35 | videolectures | http://videolectures.net/site/search/?q= | priority:8 description:talk star icon:http://mycroftproject.com/updateos.php/id0/videolectures.ico
+engin-35 | videolectures | http://videolectures.net/site/search/?q= | priority:8 description:talk icon:http://mycroftproject.com/updateos.php/id0/videolectures.ico
 engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | priority:0 description:people review
 engin-37 | ted | http://www.ted.com/search?q= | priority:0 description:talk
 engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | priority:0 description:paper
@@ -166,8 +166,8 @@ engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
 engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:4 description:all
 engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:4 description:all 
-engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:tools 
-engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:tools
+engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:visualization 
+engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:visualization
 engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset p2p
 engin-169 | freenode | http://irc.netsplit.de/channels/?net=freenode&chat= | priority:0 description:tools
 engin-170 | meetup | http://www.meetup.com/find/?keywords= | priority:0 description:organization people
@@ -184,7 +184,7 @@ engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:
 engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization finance
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
 engin-183 | onion | https://hss3uro2hsxfogfq.onion.to/index.php?q= | priority:0 description:18+
-engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:tools 
+engin-184 | artzub | http://ghv.artzub.com/#climit=100&repo= | priority:5 description:visualization 
 engin-185 | codeschool | https://www.codeschool.com/search?query= | priority:0 description:tutorial
 engin-186 | teamtreehouse | https://teamtreehouse.com/library/q: | priority:0 description:tutorial
 engin-187 | mva | https://mva.microsoft.com/search/SearchResults.aspx#!q= | priority:0 description:tutorial
@@ -379,7 +379,7 @@ engin-375 | entireweb | http://www.entireweb.com/#q=%s&of=0&md=web&ts=1464521342
 engin-376 | artcyclopedia | http://www.artcyclopedia.com/scripts/tsearch.pl?t=%s&type=2 | priority:0 description:wiki
 engin-377 | vitorrentz | http://www.vitorrentz.co/search/ | priority:0 description:p2p
 engin-378 | biorxiv | http://biorxiv.org/search/ | priority:0 description:paper
-engin-379 | bibsonomy | http://www.bibsonomy.org/search/ | priority:0 description:social
+engin-379 | bibsonomy | http://www.bibsonomy.org/search/ | priority:0 description:social paper
 engin-380 | academia.edu | https://www.academia.edu/people/search?utf8=✓&q= | priority:0 description:social
 engin-381 | pubget | http://pubget.com/search?q= | priority:0 description:paper
 engin-382 | protocols.io | https://www.protocols.io/search?key= | priority:0 description:dataset
@@ -417,7 +417,7 @@ engin-413 | bce.baidu | https://bce.baidu.com/search.html?q= | priority:0 descri
 engin-414 | nbviewer | http://nbviewer.jupyter.org/github/ | priority:3 description:tools
 engin-415 | openpowerfoundation | http://openpowerfoundation.org/?submit=Search&s= | priority:4 description:develop
 engin-416 | qwiklab | https://nvidia.qwiklab.com/searches/elasticsearch?q= | priority:0 description:cloud
-engin-417 | paperscape | http://paperscape.org/?q= | priority:5 description:tools
+engin-417 | paperscape | http://paperscape.org/?q= | priority:5 description:visualization
 engin-418 | image.baidu | http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word= | priority:3 description:image
 engin-419 | bing.com/images | http://cn.bing.com/images/search?q=%s&go=Submit&qs=bs&form=QBILPG | priority:3 description:image
 engin-420 | slack | https://slack.com/signin/find?q= | priority:3 description:tools
@@ -432,3 +432,7 @@ engin-428 | google.com/search?tbm | https://www.google.com/search?tbm=vid&hl=en&
 engin-429 | askubuntu | http://askubuntu.com/search?q= | priority:0 description:q-a
 engin-430 | terminal.com | https://www.terminal.com/explore#query=%s&sortby=popularity&category=All | priority:0 description:cloud
 engin-431 | scirate | https://scirate.com/search?utf8=%E2%9C%93&q= | priority:5 description:paper review
+engin-432 | shortscience | http://www.shortscience.org/search?term= | priority:5 description:paper review
+engin-433 | internet-map | http://internet-map.net/#4-49.972337008878064-157.89597744831835?q= | priority:0 description:visualization
+engin-434 | rhiever | http://rhiever.github.io/redditviz/# | priority:0 description:visualization
+engin-435 | feedly | http://feedly.com/i/spotlight/ | priority:0 description:tools

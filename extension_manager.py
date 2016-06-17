@@ -64,7 +64,10 @@ class ExtensionManager:
             if r.get_id().strip() != '':
                 print r.line
                 lr = LibraryRecord(r.line)
-                form['fileName'] = os.getcwd() + lr.get_path().strip()
+                if lr.get_path() != None and lr.get_path().strip() != '':
+                    form['fileName'] = os.getcwd() + lr.get_path().strip()
+                else:
+                    form['fileName'] = os.getcwd() + 'db/library/library'
                 self.cache_path = form['fileName']
             else:
                 form['fileName'] = self.cache_path
