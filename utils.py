@@ -333,7 +333,7 @@ class Utils:
     def realGetEnginList(self, tags, records):
         engin_list = []
         for record in records:
-            desc = record.get_describe().strip()
+            desc = record.get_description().strip()
             desc = desc[desc.find(':') + 1 :].strip()
             for tag in tags:
                 if desc.find(tag) != -1:
@@ -431,7 +431,7 @@ class Utils:
                 engin_list_dive = engin_list[last : ]
                 remain = 0
             #print engin_list_dive
-            div = '<div id="' + divid + '-' + str(count) + '">'
+            div = '<div id="' + divid + '-' + str(count) + '" ">'
             link_count = 0
             for e in engin_list_dive:
                 link_count += 1
@@ -447,7 +447,7 @@ class Utils:
             count += 1
             result += div
         result += "</div>" 
-        result += '<div id="' + divid + '-data"></div>'
+        result += '<div id="' + divid + '-data" style="border-radius: 10px 10px 10px 10px;"></div>'
         return result
 
     def priority2fontsize(self, engin, priority, baseFontSize):

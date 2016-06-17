@@ -50,7 +50,7 @@ def customPrint(data):
     '''
     if keys.has_key(data[1]) == False:
         keys[data[1]] = ''
-        print parentid + " |"  + data[1] + " | " + data[2] + " | " 
+        print parentid + " |"  + data[1].replace('|', '') + " | " + data[2] + " | " 
     #print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def customPrintFile(line):

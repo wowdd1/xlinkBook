@@ -15,11 +15,13 @@ class Config():
 
     disable_icon = True
 
-    disable_star_engin = True
+    disable_star_engin = False
 
     disable_reference_image = False 
    
     hiden_record_id = False
+
+    hiden_engins = True
 
     #do not show nav links, only show extension links
     extension_mode = False

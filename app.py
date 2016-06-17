@@ -38,7 +38,7 @@ def index():
                       request.args.get('style', ''),
                       request.args.get('desc', 'true'),
                       request.args.get('width', ''),
-                      request.args.get('row', ''),
+                      request.args.get('row', '20'),
                       request.args.get('top', ''),
                       request.args.get('level', ''),
                       request.args.get('merger', ''),

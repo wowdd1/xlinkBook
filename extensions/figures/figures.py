@@ -42,7 +42,7 @@ class Figures(BaseExtension):
             figures, links = self.getRandomFigures(name)
 
         thumbs = ''
-        if record.get_id().strip().startswith('arxiv'):
+        if record.get_id().find('arxiv') >= 0:
             thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url())
             version = "v1"    
             jpg = '.pdf.jpg'
@@ -52,7 +52,7 @@ class Figures(BaseExtension):
                 #r = requests.get(thumbs + 'v' + str(i) + jpg)
                 output = ''
                 try:
-                    output = subprocess.check_output("curl --max-time 2 --head " + url, shell=True)
+                    output = subprocess.check_output("curl --max-time 1 --head " + url, shell=True)
                 except Exception as e:
                     print e
                 #if r.status_code == 200:
@@ -62,18 +62,20 @@ class Figures(BaseExtension):
                     version = 'v' + str(i)
                 else:
                    retry += 1
-                if retry >= 1:
+                if retry > 2:
                     break 
                 #else:
                 #    break
             thumbs = thumbs + version + jpg
             print 'thumbs ' + thumbs
-        return self.getRefImage(form_dict['url']) + self.genHtml(figures, form_dict['column'], links, thumbs)
+        return self.getRefImage(rID, form_dict['url']) + self.genHtml(figures, form_dict['column'], links, thumbs)
 
 
 
-    def getRefImage(self, url):
+    def getRefImage(self, rID, Irl):
         html = ''
+        if rID.find('arxiv') >= 0:
+            return html
         if Config.disable_reference_image == False and url.strip() != '':
             user_agent = {'User-agent': 'Mozilla/5.0'}
             r = requests.get(url, headers = user_agent)
@@ -128,10 +130,10 @@ class Figures(BaseExtension):
             thumb_width = '570px'
             row_count = 4
         if column == '1':
-            width = "230"
-            height = "230"
+            width = "150"
+            height = "150"
             thumb_width = '600px'
-            row_count = 5
+            row_count = 6
         if thumb != '':
             html += '<a target="_blank" href="' + thumb + '"><img width="' + thumb_width + '" src="' + thumb + '"/></a><br/>'
 
