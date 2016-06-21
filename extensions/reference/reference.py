@@ -123,6 +123,8 @@ class Reference(BaseExtension):
                 linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
                 appendID = str(count)
                 script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), text, link, '-') 
+		#if a.img != None and a.img['src'].endswith('gif') == False:
+		#    html += '<img width="48" height="48" src="' + a.img['src'] + '">'
                 html += '<li><span>' + str(count) + '.</span>'
 		if title.find('- Duration') != -1:
 		    html += '<p>' + '<a target="_blank" href="' + link + '">' + title[0 : title.find('- Duration')] + '</a>' + title[title.find('- Duration') :]
@@ -145,7 +147,10 @@ class Reference(BaseExtension):
         title += sp.find('span', class_='g-hovercard').text.strip() + ', '
         views = sp.find('span', class_='stat view-count').text.strip().strip()
         views = views[0 : views.find(' ')]
-        title += '<font size="' + str(len(views.replace(',', ''))) + '" color="rgb(212, 51, 51)">' + views + '</font> views'
+	font_size = len(views.replace(',', ''))
+	if font_size - 2 > 0:
+	    font_size -= 2
+        title += '<font size="' + str(font_size) + '" color="rgb(212, 51, 51)">' + views + '</font> views'
         return self.utils.removeDoubleSpace(title)
 
     def check(self, form_dict):

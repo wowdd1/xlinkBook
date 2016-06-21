@@ -29,6 +29,7 @@ class YoutubeSpider(Spider):
                 'unsw' : 'https://www.youtube.com/user/UNSWelearning/playlists?sort=dd&view=1',\
                 'nptel' : 'https://www.youtube.com/user/nptelhrd/playlists',\
 		'CBMM' : 'https://www.youtube.com/channel/UCGoxKRfTs0jQP52cfHCyyRQ/playlists'}
+
         self.videos_urls = { 'ucl' : 'https://www.youtube.com/user/Mikesev/videos?view=0&sort=dd&live_view=500&flow=grid',
                              'sciwrite' : 'https://www.youtube.com/channel/UC-wb-n89yM0lBiP2QltsDaA/videos',\
                              'MicrosoftResearch' : 'https://www.youtube.com/user/MicrosoftResearch/videos',\
@@ -88,8 +89,11 @@ class YoutubeSpider(Spider):
 			     'ICLR' : 'https://www.youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w/videos',\
 			     'singularitysummit' : 'https://www.youtube.com/user/singularitysummit/videos',\
 			     'anfavideo' : 'https://www.youtube.com/user/anfavideo/videos',\
-			     'broadinstitute' : 'https://www.youtube.com/user/broadinstitute/videos'}
-        self.videos_urls = {'harvardmedicalschool' : 'https://www.youtube.com/user/harvardmedicalschool/videos'}
+			     'broadinstitute' : 'https://www.youtube.com/user/broadinstitute/videos',\
+                             'harvardmedicalschool' : 'https://www.youtube.com/user/harvardmedicalschool/videos',\
+                             'iBiology' : 'https://www.youtube.com/user/ibioseminars/videos',\
+                             'iBioMagazine' : 'https://www.youtube.com/user/ibiomagazine/videos',\
+                             'iBioEducation' : 'https://www.youtube.com/user/iBioEducation/videos'}
     def getPlaylist(self, html, user):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):
@@ -180,6 +184,7 @@ class YoutubeSpider(Spider):
         f = self.open_db(file_name + ".tmp")
         self.count = 0
         for k, v in [(k,self.playlist[k]) for k in sorted(self.playlist.keys())]:
+        #for k, v in self.playlist.items():
             self.count += 1
             video_id = user + '-' + str(self.count)
             if k.startswith('MIT'):
@@ -191,7 +196,7 @@ class YoutubeSpider(Spider):
             print k + ' ' + v
             self.write_db(f, video_id, k, v, 'videourl:' + v)
         self.close_db(f)
-        if file_lines != self.count and self.count > 0:
+        if self.count > 0:
             self.do_upgrade_db(file_name)
             print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
         else:
