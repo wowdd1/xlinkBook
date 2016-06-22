@@ -23,4 +23,4 @@ class Monitor(BaseExtension):
         
 
     def check(self, form_dict):
-	return True
+	return form_dict['rID'].startswith('loop') == False

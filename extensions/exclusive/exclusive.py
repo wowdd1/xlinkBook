@@ -14,4 +14,6 @@ class Exclusive(BaseExtension):
 
 
     def check(self, form_dict):
-	return True
+	column = str(form_dict['column']).strip()
+        #print 'exclusive check column ' + column
+	return column != '1' and form_dict['rID'].startswith('loop') == False

@@ -180,8 +180,8 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs["defaultLinks"] = 2;
     postArgs['user_name'] = user_name;
     postArgs['originFileName'] = fileName;
-
-    if (obj.text == "search") {
+    postArgs['selection'] = ''
+    if (obj.text == "search" || obj.text == "keyword") {
         var selection = window.getSelection().toString();
         if (selection != '') {
             postArgs['selection'] = selection;
@@ -306,7 +306,7 @@ function appendContent(targetid, id, topic, url, otherInfo){
     if (fileName.indexOf("library") > 0){
         nocache = "true";
     }
-    $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, nocache : nocache, 'check' : 'true', user_name : user_name}, function(data){
+    $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, nocache : nocache, column : column, 'check' : 'true', user_name : user_name}, function(data){
         if (data.trim() != '') {
             console.log("xx", data)
             var extensions = data.split(" ");

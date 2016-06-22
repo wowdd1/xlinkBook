@@ -1,0 +1,6 @@
+{
+    "name" : "keyword",
+    "module" : "keyword",
+    "class" : "Keyword",
+    "version" : "0.1"
+}
