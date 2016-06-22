@@ -459,3 +459,6 @@ engin-466 | mlsurveys | http://www.mlsurveys.com/?q= | priority:0 description:pa
 engin-467 | goodreads | https://www.goodreads.com/search?q= | priority:0 description:book review
 engin-468 | iarpa.gov | https://www.iarpa.gov/index.php/search?q= | priority:0 description:project
 engin-469 | ibiology | http://www.ibiology.org/?s=%s&p_length=-1&p_topics=-1&post_type=post&ibio_ext_search=true&ib_results_format=grid | priority:4 description:course 
+engin-470 | plot.ly | https://plot.ly/feed/?q= | priority:0 description:tools
+engin-471 | WebPlotDigitizer | http://arohatgi.info/WebPlotDigitizer/app/? | priority:0 description:tools
+engin-472 | edanzediting | https://www.edanzediting.com/search/node/ | priority:0 description:tools

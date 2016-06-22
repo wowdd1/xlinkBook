@@ -93,7 +93,10 @@ class YoutubeSpider(Spider):
                              'harvardmedicalschool' : 'https://www.youtube.com/user/harvardmedicalschool/videos',\
                              'iBiology' : 'https://www.youtube.com/user/ibioseminars/videos',\
                              'iBioMagazine' : 'https://www.youtube.com/user/ibiomagazine/videos',\
-                             'iBioEducation' : 'https://www.youtube.com/user/iBioEducation/videos'}
+                             'iBioEducation' : 'https://www.youtube.com/user/iBioEducation/videos',\
+                             'tedx' : 'https://www.youtube.com/user/TEDxTalks/videos',\
+                             'ted' : 'https://www.youtube.com/user/TEDtalksDirector/videos',\
+                             'CodeNeuro' : 'https://www.youtube.com/channel/UCZqlliYGopB9zved7pJTi_A/videos'}
     def getPlaylist(self, html, user):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):
