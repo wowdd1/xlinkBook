@@ -1,3 +1,8 @@
+goal:
+    1. learning by doing, search by research 
+    2. capture flow (data, computing) 
+    3. simple, speed, flexible, intelligent, evolution 
+    4. integrating and explorer every activity
 
 install:
 
