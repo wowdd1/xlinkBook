@@ -2,7 +2,7 @@ goal:
 
     1. integrating activity
     2. learning by doing, search by research(problem -> resource & learn -> ED -> resource & learn -> BP) 
-    3. capture flow (data, computing), explorer activity 
+    3. capture flow (data, computing), explorer activity(activity -> value) 
     4. simple, speed, flexible, intelligent, evolution 
 
 install:
