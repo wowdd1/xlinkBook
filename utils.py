@@ -332,14 +332,34 @@ class Utils:
         else:
             return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
 
-    def getEnginList(self, engins):
+    def recommendEngins(self, folder):
+        engins = []
+        if folder.find('papers') != -1:
+            engins = self.realGetEnginList(['paper'], self.search_engin_dict.values())
+        if folder.find('projects') != -1:
+            engins = self.realGetEnginList(['project'], self.search_engin_dict.values())
+        if len(engins) == 0:
+            return self.realGetEnginList(['star'], self.search_engin_dict.values())
+        else:
+            engins = sorted(engins, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
+            #for e in engins:
+            #    print e + ' p:' + self.search_engin_dict[e].get_priority()
+
+            if len(engins) < Config.recommend_engin_num:
+                return engins
+            return engins[0 : Config.recommend_engin_num]
+
+    def getEnginList(self, engins, folder=''):
         if engins.startswith('description:') or engins.startswith('d:'):
             engin_list = []
             tags = engins[engins.find(':') + 1 :].strip().split(' ')
             #print engins
             if self.ddg_mode:
                 return self.getDDGEnginList(tags)
-            return self.realGetEnginList(tags, self.search_engin_dict.values())
+            if Config.recommend_engin and tags[0] == 'star' and folder != '':
+                return self.recommendEngins(folder)
+            else:
+                return self.realGetEnginList(tags, self.search_engin_dict.values())
         else:
             return engins.split(' ')
 

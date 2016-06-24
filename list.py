@@ -502,13 +502,13 @@ def getScript(file_name, first_record):
             print css_style_6
     print "</head>"
 
-def build_lines(list_all):
+def build_lines(list_all, file_name):
     global div_link_content, gen_html_done, max_links_row;
     id_title_lines = copy.deepcopy(list_all)
     describe_lines = []
     engin_list = []
     if engin != '':
-        engin_list = utils.getEnginList(engin.strip())
+        engin_list = utils.getEnginList(engin.strip(), file_name)
 
     global loadmore_count
     if source.find('arxiv') != -1 and filter_keyword == '':
@@ -1111,7 +1111,7 @@ def print_list(all_lines, file_name = ''):
                 list_all[1].insert(0, list_all[0][len(list_all[0]) - 1])
                 list_all[0].pop()
         #print list_all
-        id_title_lines, describe_lines = build_lines(list_all)
+        id_title_lines, describe_lines = build_lines(list_all, file_name)
         #print_search_box()
         #print id_title_lines
         if column_num == "3":
