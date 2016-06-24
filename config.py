@@ -56,8 +56,11 @@ class Config():
     max_nav_links_row = 7
     default_links_row = 2    
 
-    css_style_type = 6
+    css_style_type = 0
     plugins_mode = False
+
+    recommend_engin = True
+    recommend_engin_num = 18
 
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
 		  'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
