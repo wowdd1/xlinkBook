@@ -1,9 +1,9 @@
 goal:
 
-    1. learning by doing, search by research(problem -> resource & learn -> ED -> resource & learn -> BP) 
-    2. capture flow (data, computing) 
-    3. simple, speed, flexible, intelligent, evolution 
-    4. integrating and explorer every activity
+    1. integrating and explorer every activity
+    2. learning by doing, search by research(problem -> resource & learn -> ED -> resource & learn -> BP) 
+    3. capture flow (data, computing) 
+    4. simple, speed, flexible, intelligent, evolution 
 
 install:
 
