@@ -1361,10 +1361,10 @@ def adjust_link_number():
         max_nav_link_row = max_nav_link_row * 2
     if column_num == '2':
         max_nav_link_row = (max_nav_link_row - 2) * 2
-        max_links_row = max_links_row - 1
+        #max_links_row = max_links_row - 1
     if column_num == '3':
-	max_nav_link_row = max_nav_link_row - 1
-        max_links_row = max_links_row - 2
+	max_nav_link_row = max_nav_link_row + 1
+        max_links_row = max_links_row - 1
     
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username

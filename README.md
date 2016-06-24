@@ -1,6 +1,6 @@
 goal:
 
-    1. learning by doing, search by research 
+    1. learning by doing, search by research(complex problem -> best resource -> more resource) 
     2. capture flow (data, computing) 
     3. simple, speed, flexible, intelligent, evolution 
     4. integrating and explorer every activity

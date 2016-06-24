@@ -9,6 +9,7 @@ import getopt
 import webbrowser
 from utils import Utils
 from update.all_subject import print_all_subject
+from config import Config
 
 engin = ""
 keyword = ""
@@ -93,7 +94,10 @@ def main(argv):
             search_video = True
            
     if keyword != "":
-        search(keyword, engin, search_keyword) 
+        if keyword.find('db/') != -1:
+            openBrowser('http://' + Config.ip_adress + '/?db=' + keyword[keyword.find('/') + 1 : keyword.rfind('/') + 1] + '&key=' + keyword[keyword.rfind('/') + 1 : ])
+        else:
+            search(keyword, engin, search_keyword) 
              
 
 if __name__ == '__main__':
