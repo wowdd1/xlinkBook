@@ -237,7 +237,7 @@ engin-234 | deepdyve | https://www.deepdyve.com/search?query= | priority:0 descr
 engin-235 | binsearch | http://www.binsearch.info/?q=%s&max=100&adv_age=1100&server= | priority:0 description:book
 engin-236 | openhatch | https://openhatch.org/search/?q= | priority:0 description:project
 engin-237 | osf.io | https://osf.io/search/?q= | priority:0 description:dataset
-engin-238 | figshare | https://figshare.com/search?q=%s&quick=1 | priority:0 description:dataset
+engin-238 | figshare | https://figshare.com/search?q=%s&quick=1 | priority:0 description:dataset paper
 engin-239 | hindawi | http://www.hindawi.com/search/all/ | priority:0 description:journal
 engin-240 | acm | http://dl.acm.org/results.cfm?query=%s&Go.x=0&Go.y=0 | priority:0 description:paper 
 engin-241 | espacenet | http://worldwide.espacenet.com/searchResults?ST=singleline&locale=en_EP&submitted=true&DB=&query= | priority:0 description:patent
