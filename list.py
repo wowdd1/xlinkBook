@@ -996,7 +996,7 @@ def getLines(file_name):
             filter_result = []
             for line in all_lines:
                 record = Record(line)
-                data = record.get_title()
+                data = record.get_id() + ' ' + record.get_title()
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
                     keyword, data = getKeywordAndData(filter_keyword, line)
