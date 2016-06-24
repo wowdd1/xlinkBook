@@ -16,6 +16,7 @@ keyword = ""
 use_subject = u""
 search_keyword = False
 search_video = False
+filter = ''
 
 def usage(argv0):
     print ' usage:'
@@ -69,9 +70,9 @@ def openWeb(engin, keyword, url):
 
 
 def main(argv):
-    global keyword, engin, use_subject, search_keyword, search_video
+    global keyword, engin, use_subject, search_keyword, search_video, filter
     try:
-        opts, args = getopt.getopt(argv[1:], 'hc:e:u:q:v', ["help","course","engin","use", 'query', 'video'])
+        opts, args = getopt.getopt(argv[1:], 'hc:e:u:q:vf:', ["help","course","engin","use", 'query', 'video', 'filter'])
         if len(args) == 1:
             keyword = args[0]
     except getopt.GetoptError, err:
@@ -92,10 +93,15 @@ def main(argv):
             use_subject = str(a)
         elif o in ('-v', '--video'):
             search_video = True
+        elif o in ('-f', '--filter'):
+            filter = a
            
     if keyword != "":
         if keyword.find('db/') != -1:
-            openBrowser('http://' + Config.ip_adress + '/?db=' + keyword[keyword.find('/') + 1 : keyword.rfind('/') + 1] + '&key=' + keyword[keyword.rfind('/') + 1 : ])
+            url = 'http://' + Config.ip_adress + '/?db=' + keyword[keyword.find('/') + 1 : keyword.rfind('/') + 1] + '&key=' + keyword[keyword.rfind('/') + 1 : ]
+            if filter != '':
+                url += '&filter="' + filter.replace(' ', '%20') + '"'
+            openBrowser(url)
         else:
             search(keyword, engin, search_keyword) 
              
