@@ -414,6 +414,7 @@ def getScript(file_name, first_record):
     print "<head>"
     print script_head
     print "var default_tab = '" + Config.default_tab + "';"
+    print "var second_default_tab = '" + Config.second_default_tab + "';"
     if Config.hiden_record_id:
         Config.disable_thumb = 'true'
     print "var disable_thumb = " + Config.disable_thumb + ";"

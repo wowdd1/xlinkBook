@@ -42,6 +42,7 @@ class Save(BaseExtension):
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
+        print rID
         self.loadLibrary()
         print self.saved_records
         return self.saved_records.has_key(rID) == False and rID.startswith('loop') == False
