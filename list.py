@@ -675,7 +675,7 @@ def build_lines(list_all):
                                             is_extension = True
                                     if Config.extension_mode == False and Config.hiden_engins:
                                         more_html = ''
-                                        more_html = utils.genMoreEnginHtml(linkID+'-' + linkID, hidenScript2 + 'setText("' + linkID+'-' + linkID + '")', '...', content_divID + '-' + content_divID, doubleQ=False)
+                                        more_html = utils.genMoreEnginHtml('#div-' + linkID, hidenScript2 + 'setText("' + '#div-' + linkID + '")', '...', content_divID + '-' + content_divID, doubleQ=False)
                                         for index in range(0, len(div_content_list)):
                                             if div_content_list[index].find('#more') != -1:
                                                 div_content_list[index] = div_content_list[index].replace('#more', more_html)
