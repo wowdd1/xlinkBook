@@ -830,7 +830,10 @@ class Utils:
         f.close()
 
         print selection
-        return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
+        if search_box:
+            return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
+        else:
+            return '<iframe  id="iFrameLink" width="600" height="190" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
         #return '{"firstAccess" : "' + data + '"}'
 
 

@@ -868,7 +868,7 @@ def print_table_head_with_style():
         print_search_box(search_box_hiden)
         if library_hiden == False:
             print utils.gen_libary()
-    print '<div ' + center_style + ' >'
+        print '<div ' + center_style + ' >'
     center_style = ''
     if Config.center_content:
         if column_num == '1':

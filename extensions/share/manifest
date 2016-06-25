@@ -1,0 +1,6 @@
+{
+    "name" : "share",
+    "module" : "share",
+    "class" : "Share",
+    "version" : "0.1"
+}

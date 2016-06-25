@@ -133,7 +133,9 @@ function searchTopic(obj, topic, otherInfo){
 
 function navTopic(obj, divID, parentDivID, countIndex){
     var targetid = divID + "-" + obj.text;
+    var target_data_id = divID + "-" + obj.text + '-data';
     var target=document.getElementById(targetid);
+    var target_data = document.getElementById(target_data_id);
     for (var i = 0; i < countIndex + 1; i++) {
         console.log("xx",parentDivID + i.toString());
         var parentDiv = document.getElementById(parentDivID + i.toString());
@@ -150,8 +152,10 @@ function navTopic(obj, divID, parentDivID, countIndex){
     obj.style.fontSize="12pt";
     if (target.style.display == ""){
         target.style.display="none";
+        target_data.style.display="none";
     } else {
         target.style.display="";
+        target_data.style.display="";
     }
 
     var postArgs;
@@ -179,12 +183,12 @@ function navTopic(obj, divID, parentDivID, countIndex){
         console.log('zzz', extensions[i]);
         if (extensions[i] == obj.text) { 
             extension = true;
-            $("#" + targetid).html("Loading ...");
+            $("#" + target_data_id).html("Loading ...");
             var loadAnimID = setInterval(function() {
                 i = ++i % 4;
-                $("#" + targetid).html("Loading " + Array(i+1).join("."));
+                $("#" + target_data_id).html("Loading " + Array(i+1).join("."));
             }, 800);
-            $('#' + targetid).load('/extensions', postArgs, function(data){
+            $('#' + target_data_id).load('/extensions', postArgs, function(data){
                  console.log('return', data);
                  if (data == "" || (obj.text == "save" && data.indexOf("sucess") != -1)) {
                      obj.style.display="none";
@@ -237,6 +241,16 @@ function hidendiv_3(targetid){
       } else {
           target.style.display="none";
       }
+}
+
+function share(website, url, title) {
+   if (website == "facebook")  {
+       window.open('http://www.facebook.com/sharer/sharer.php?u=' + url);
+   } else if (website == 'twitter') {
+       window.open("https://twitter.com/intent/tweet?text=" + title + ' (' + url + ')');
+   } else if (website == 'linkedin'){
+       window.open("http://www.linkedin.com/shareArticle?mini=true&amp;url=" + url + '&amp;title=' + title + ' (' + url + ')&amp;source=xlinkbook');
+   }
 }
 
 function appendContent(targetid, id, topic, url, otherInfo){
