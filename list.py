@@ -68,6 +68,9 @@ div_content_dict = {}
 gen_html_done = False
 search_box_displayed = False
 
+search_box_hiden = False
+library_hiden = False
+
 script_head = '<script language="JavaScript" type="text/JavaScript">';
 script_end = '</script>'
 css_head = '<style type="text/css">'
@@ -820,7 +823,7 @@ def gen_html_body_v2(content, row, subRow):
 
     return content
 
-def print_search_box():
+def print_search_box(hiden):
     global search_box_displayed
     if html_style and search_box_displayed == False:
         search_box_displayed = True
@@ -828,6 +831,8 @@ def print_search_box():
             print '<br/>'
         onclick = "search('search_txt', 'select');"
         div = '<div style="width:778px;margin: 0 auto;' 
+        if hiden:
+            div += 'display: none;'
         #if plugins_mode:
         #    div += ' display:none;'
         div += '">'
@@ -860,9 +865,10 @@ def print_table_head_with_style():
     center_style += 'margin-left:' + Config.content_margin_left + ';'
     center_style += '"'
     if loadmore_mode == False:
-        print_search_box()
-        print utils.gen_libary()
-        print '<div ' + center_style + ' >'
+        print_search_box(search_box_hiden)
+        if library_hiden == False:
+            print utils.gen_libary()
+    print '<div ' + center_style + ' >'
     center_style = ''
     if Config.center_content:
         if column_num == '1':
@@ -1344,10 +1350,10 @@ def adjust_link_number():
        max_nav_link_row = (max_nav_link_row - 2) * 2
     
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore'])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:x', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1412,6 +1418,9 @@ def main(argv):
             plugins_mode = True
         elif o in ('-z', '--loadmore'):
             loadmore_mode = True
+        elif o in ('-x', '--nosearchbox'):
+            search_box_hiden = True
+            library_hiden = True
 
     if source == "":
         print "you must input the input file or dir"

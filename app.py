@@ -109,25 +109,7 @@ def handleThumb():
 
 @app.route('/chrome', methods=['GET', 'POST'])
 def chrome():
-    print "chrome"
-    #jobj = json.loads(request.form.keys()[0])
-    #print jobj['title']
-    #print request.form['data']
-    
-    f = open("temp/input", 'w');
-    f.write(' | ' + request.form['title'].replace('"', ' ').replace("'", " ").replace('\n', '').strip() + '| | ')
-    f.close()
-
-    html = subprocess.check_output("./list.py -i temp/input -b 4  -c 1  -p -e 'd:star' -n -d ", shell=True)
-    #print data
-    #data = "ddd"
-    f = open('temp/output.html', 'w')
-    f.write(html)
-    f.close()
-    
-    print request.form['title']
-    return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
-    #return '{"firstAccess" : "' + data + '"}'
+    return utils.gen_plugin_content(request.form['title'])
 
 @app.route('/temp/<page>', methods=['GET', 'POST'])
 def temp(page):
