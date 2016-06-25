@@ -8,7 +8,7 @@ engin-7 | booksc | http://booksc.org/s/?q= | priority:0 description:paper
 engin-8 | booksee | http://en.booksee.org/s/?q= | priority:0 description:book
 engin-9 | avxsearch | http://avxsearch.in/?q= | priority:0 description:book
 engin-10 | ebookee | http://ebookee.org/search.php?sa=Search&q= | priority:0 description:book
-engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | priority:6 description:paper
+engin-11 | sci-hub | http://scholar.google.com.secure.sci-hub.io/scholar?q= | priority:6 description:paper star
 engin-12 | amazon | https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dstripbooks&field-keywords= | priority:8 description:book product star icon:http://mycroftproject.com/updateos.php/id0/amazon_appstore.ico
 engin-13 | nap | http://www.nap.edu/search/?term= | priority:0 description:book
 engin-14 | hathitrust | http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;lmt=ft;q1= | priority:0 description:book
@@ -91,7 +91,7 @@ engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 descrip
 engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social star
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization star icon:http://mycroftproject.com/updateos.php/id0/linkedin_googfr.ico
-engin-91 | sanity | http://www.arxiv-sanity.com/search?q= | priority:0 description:paper 
+engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | priority:4 description:paper 
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | priority:8 description:social star icon:http://mycroftproject.com/updateos.php/id0/facebookvideomirror.ico
 engin-93 | crunchbase | https://www.crunchbase.com/%s/ | priority:8 description:organization people icon:http://mycroftproject.com/updateos.php/id0/crunchbasesearch.png
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | priority:0 description:organization review
@@ -436,3 +436,11 @@ engin-432 | shortscience | http://www.shortscience.org/search?term= | priority:5
 engin-433 | internet-map | http://internet-map.net/#4-49.972337008878064-157.89597744831835?q= | priority:0 description:visualization
 engin-434 | rhiever | http://rhiever.github.io/redditviz/# | priority:0 description:visualization
 engin-435 | feedly | http://feedly.com/i/spotlight/ | priority:0 description:tools
+engin-436 | sanity.marcel | http://sanity.marcelwunderlich.com/search?q= | priority:4 description:paper
+engin-437 | sanity-physics | http://arxiv-sanity-physics.com/search?q= | priority:4 description:paper
+engin-438 | yummyastro | http://yummyastro.me:5000/search?q= | priority:0 description:paper
+engin-439 | voxcharta | http://nju.voxcharta.org/?s= | priority:0 description:paper
+engin-440 | picker.mit | http://picker.mit.edu/?q= | priority:4 description:course
+engin-441 | stellar.mit | https://stellar.mit.edu/?q= | priority:4 description:course
+engin-442 | aitopics | http://aitopics.org/search/site/ | priority:4 description:news book video podcast
+engin-443 | ustc.edu | http://rec.ustc.edu.cn/search/course?_token=d550c2fe31937535a1a222c0a552dd33&keyword= | priority:0 description:course

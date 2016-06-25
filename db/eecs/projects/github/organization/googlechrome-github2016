@@ -1,0 +1,100 @@
+GoogleChrome-github-4853-1 | chrome-app-samples | https://github.com/GoogleChrome/chrome-app-samples | author:GoogleChrome description:Chrome Apps
+GoogleChrome-github-2794-2 | chromedeveditor | https://github.com/GoogleChrome/chromedeveditor | author:GoogleChrome description:Chrome Dev Editor is a developer tool for building apps on the Chrome platform - Chrome Apps and Web Apps, in JavaScript or Dart.
+GoogleChrome-github-1496-3 | samples | https://github.com/GoogleChrome/samples | author:GoogleChrome description:A repo containing samples tied to new functionality in each release of Google Chrome.
+GoogleChrome-github-1336-4 | lighthouse | https://github.com/GoogleChrome/lighthouse | author:GoogleChrome description:auditing and performance metrics for Progressive Web Apps
+GoogleChrome-github-1189-5 | sw-toolbox | https://github.com/GoogleChrome/sw-toolbox | author:GoogleChrome description:A collection of tools for service workers.
+GoogleChrome-github-1097-6 | sw-precache | https://github.com/GoogleChrome/sw-precache | author:GoogleChrome description:A node module to generate service worker code that will precache specific resources.
+GoogleChrome-github-787-7 | big-rig | https://github.com/GoogleChrome/big-rig | author:GoogleChrome description:A proof-of-concept Performance Dashboard, CLI and Node module
+GoogleChrome-github-714-8 | ioweb2015 | https://github.com/GoogleChrome/ioweb2015 | author:GoogleChrome description:I/O Web App 2015
+GoogleChrome-github-686-9 | accessibility-developer-tools | https://github.com/GoogleChrome/accessibility-developer-tools | author:GoogleChrome description:Updated Jun 18, 2016
+GoogleChrome-github-681-10 | ChromeWebLab | https://github.com/GoogleChrome/ChromeWebLab | author:GoogleChrome description:The Chrome Web Lab for Makers, Hackers and everyone
+GoogleChrome-github-614-11 | custom-tabs-client | https://github.com/GoogleChrome/custom-tabs-client | author:GoogleChrome description:Chrome custom tabs examples
+GoogleChrome-github-610-12 | application-shell | https://github.com/GoogleChrome/application-shell | author:GoogleChrome description:Service Worker Application Shell Architecture
+GoogleChrome-github-552-13 | chromium-webview-samples | https://github.com/GoogleChrome/chromium-webview-samples | author:GoogleChrome description:Useful examples for Developing apps with the Chromium based WebView
+GoogleChrome-github-519-14 | dialog-polyfill | https://github.com/GoogleChrome/dialog-polyfill | author:GoogleChrome description:Polyfill for the dialog element
+GoogleChrome-github-505-15 | guitar-tuner | https://github.com/GoogleChrome/guitar-tuner | author:GoogleChrome description:A web-based guitar tuner
+GoogleChrome-github-491-16 | voice-memos | https://github.com/GoogleChrome/voice-memos | author:GoogleChrome description:A Progressive Web App for recording and playing back voice memos.
+GoogleChrome-github-391-17 | node-big-rig | https://github.com/GoogleChrome/node-big-rig | author:GoogleChrome description:A CLI version of Big Rig
+GoogleChrome-github-390-18 | devtools-docs | https://github.com/GoogleChrome/devtools-docs | author:GoogleChrome description:The legacy documentation for Chrome DevTools.
+GoogleChrome-github-367-19 | flipjs | https://github.com/GoogleChrome/flipjs | author:GoogleChrome description:A helper library for doing FLIP animations.
+GoogleChrome-github-365-20 | simplehttp2server | https://github.com/GoogleChrome/simplehttp2server | author:GoogleChrome description:A simple HTTP/2 server for development
+GoogleChrome-github-331-21 | ui-element-samples | https://github.com/GoogleChrome/ui-element-samples | author:GoogleChrome description:A collection of prototyped UI elements
+GoogleChrome-github-326-22 | MiniMobileDeviceLab | https://github.com/GoogleChrome/MiniMobileDeviceLab | author:GoogleChrome description:A mini mobile web device lab
+GoogleChrome-github-321-23 | ADBPlugin | https://github.com/GoogleChrome/ADBPlugin | author:GoogleChrome description:Google Chrome Extension with ADB Daemon
+GoogleChrome-github-294-24 | devsummit | https://github.com/GoogleChrome/devsummit | author:GoogleChrome description:Chrome Dev Summit Site: A fast, Material Design conference site
+GoogleChrome-github-266-25 | wReader-app | https://github.com/GoogleChrome/wReader-app | author:GoogleChrome description:RSS Reader written using AngularJS
+GoogleChrome-github-258-26 | ioweb2016 | https://github.com/GoogleChrome/ioweb2016 | author:GoogleChrome description:I/O web app 2016
+GoogleChrome-github-238-27 | text-app | https://github.com/GoogleChrome/text-app | author:GoogleChrome description:A text editor for ChromeOS and Chrome
+GoogleChrome-github-232-28 | webplatform-samples | https://github.com/GoogleChrome/webplatform-samples | author:GoogleChrome description:HTML5 Samples/Demos
+GoogleChrome-github-212-29 | OpenInChrome | https://github.com/GoogleChrome/OpenInChrome | author:GoogleChrome description:Open in Chrome
+GoogleChrome-github-202-30 | code-editor-app | https://github.com/GoogleChrome/code-editor-app | author:GoogleChrome description:Updated Jan 11, 2014
+GoogleChrome-github-173-31 | chromium-dashboard | https://github.com/GoogleChrome/chromium-dashboard | author:GoogleChrome description:Chromium Dashboard
+GoogleChrome-github-145-32 | Propel | https://github.com/GoogleChrome/Propel | author:GoogleChrome description:A library to support developers implementing Web Push notifications
+GoogleChrome-github-144-33 | houdini-samples | https://github.com/GoogleChrome/houdini-samples | author:GoogleChrome description:Updated May 24, 2016
+GoogleChrome-github-134-34 | chrome-app-codelab | https://github.com/GoogleChrome/chrome-app-codelab | author:GoogleChrome description:The goal of this tutorial is to get you building Chrome apps fast. Once you've completed the tutorial, you will have a simple Todo app. We've done our best to capture some of the trickier parts to the development process keeping the sample simple and straightforward.
+GoogleChrome-github-132-35 | chrome-platform-analytics | https://github.com/GoogleChrome/chrome-platform-analytics | author:GoogleChrome description:Chrome Platform Analytics is a JavaScript library that supports the use of Google Analytics (GA) in Chrome Platform Applications and Extensions.
+GoogleChrome-github-130-36 | offthread-image | https://github.com/GoogleChrome/offthread-image | author:GoogleChrome description:A helper library to decode images off main thread using createImageBitmap.
+GoogleChrome-github-117-37 | chrome-nfc | https://github.com/GoogleChrome/chrome-nfc | author:GoogleChrome description:Chrome App NFC Library
+GoogleChrome-github-102-38 | css-triggers | https://github.com/GoogleChrome/css-triggers | author:GoogleChrome description:A reference for the render impact of mutating CSS properties.
+GoogleChrome-github-83-39 | airhorn | https://github.com/GoogleChrome/airhorn | author:GoogleChrome description:Air horn
+GoogleChrome-github-82-40 | http2push-gae | https://github.com/GoogleChrome/http2push-gae | author:GoogleChrome description:Drop-in HTTP2 push on App Engine
+GoogleChrome-github-63-41 | web-push-encryption | https://github.com/GoogleChrome/web-push-encryption | author:GoogleChrome description:Encryption Utilities for Web Push protocol
+GoogleChrome-github-59-42 | devtools-extension-boilerplate | https://github.com/GoogleChrome/devtools-extension-boilerplate | author:GoogleChrome description:(WIP) A boilerplate project for Chrome DevTools extensions
+GoogleChrome-github-58-43 | apps-resource-loader | https://github.com/GoogleChrome/apps-resource-loader | author:GoogleChrome description:Updated Dec 16, 2013
+GoogleChrome-github-57-44 | accessibility-developer-tools-extension | https://github.com/GoogleChrome/accessibility-developer-tools-extension | author:GoogleChrome description:Updated Mar 26, 2016
+GoogleChrome-github-57-45 | proxy-polyfill | https://github.com/GoogleChrome/proxy-polyfill | author:GoogleChrome description:Proxy object polyfill
+GoogleChrome-github-55-46 | apps-developer-tools | https://github.com/GoogleChrome/apps-developer-tools | author:GoogleChrome description:Apps developer tools
+GoogleChrome-github-51-47 | web-audio-samples | https://github.com/GoogleChrome/web-audio-samples | author:GoogleChrome description:Web Audio API samples
+GoogleChrome-github-50-48 | news-reader-app | https://github.com/GoogleChrome/news-reader-app | author:GoogleChrome description:news-reader-app
+GoogleChrome-github-47-49 | push-notifications | https://github.com/GoogleChrome/push-notifications | author:GoogleChrome description:Updated May 19, 2016
+GoogleChrome-github-47-50 | multi-device | https://github.com/GoogleChrome/multi-device | author:GoogleChrome description:Chrome multi-device (mobile) docs
+GoogleChrome-github-47-51 | jank-busters | https://github.com/GoogleChrome/jank-busters | author:GoogleChrome description:Resources for jank busting on the web.
+GoogleChrome-github-46-52 | permission.site | https://github.com/GoogleChrome/permission.site | author:GoogleChrome description:A site to test the interaction of web APIs and browser permissions.
+GoogleChrome-github-44-53 | devtools-device-data | https://github.com/GoogleChrome/devtools-device-data | author:GoogleChrome description:Updated May 2, 2016
+GoogleChrome-github-41-54 | sw-helpers | https://github.com/GoogleChrome/sw-helpers | author:GoogleChrome description:Service Worker helper libraries
+GoogleChrome-github-41-55 | frame-timing-polyfill | https://github.com/GoogleChrome/frame-timing-polyfill | author:GoogleChrome description:Polyfill for Smoothness API spec and wrapper code for measuring FPS on the web
+GoogleChrome-github-38-56 | current-versions | https://github.com/GoogleChrome/current-versions | author:GoogleChrome description:Up-to-date listing of Chrome's latest versions across stable, beta, dev and canary
+GoogleChrome-github-38-57 | push-encryption-go | https://github.com/GoogleChrome/push-encryption-go | author:GoogleChrome description:Updated Jun 1, 2016
+GoogleChrome-github-36-58 | inert-polyfill | https://github.com/GoogleChrome/inert-polyfill | author:GoogleChrome description:Polyfill for the HTML inert attribute
+GoogleChrome-github-36-59 | net-chromeify | https://github.com/GoogleChrome/net-chromeify | author:GoogleChrome description:Updated Nov 26, 2013
+GoogleChrome-github-33-60 | http2-push-manifest | https://github.com/GoogleChrome/http2-push-manifest | author:GoogleChrome description:Generate a list of static resources for http2 push.
+GoogleChrome-github-29-61 | sencha-video-player-app | https://github.com/GoogleChrome/sencha-video-player-app | author:GoogleChrome description:Updated Sep 25, 2012
+GoogleChrome-github-26-62 | numberhtml5-app | https://github.com/GoogleChrome/numberhtml5-app | author:GoogleChrome description:Updated Apr 1, 2013
+GoogleChrome-github-26-63 | camera-app | https://github.com/GoogleChrome/camera-app | author:GoogleChrome description:Camera App is a packaged app designed to take pictures with several effects using the embedded web camera.
+GoogleChrome-github-23-64 | chromeos_network_file_share | https://github.com/GoogleChrome/chromeos_network_file_share | author:GoogleChrome description:Access network file shares directly from the Chrome OS files app.
+GoogleChrome-github-23-65 | webstore-docs | https://github.com/GoogleChrome/webstore-docs | author:GoogleChrome description:Developer docs for Chrome Web Store:
+GoogleChrome-github-23-66 | browserify-chrome | https://github.com/GoogleChrome/browserify-chrome | author:GoogleChrome description:Tools to use Browserify for Chrome Packaged Apps
+GoogleChrome-github-22-67 | erlnmyr | https://github.com/GoogleChrome/erlnmyr | author:GoogleChrome description:Builder of Tree Builders
+GoogleChrome-github-22-68 | google-sign-in | https://github.com/GoogleChrome/google-sign-in | author:GoogleChrome description:Google Sign-In for Websites sample code.
+GoogleChrome-github-20-69 | web-components-samples | https://github.com/GoogleChrome/web-components-samples | author:GoogleChrome description:Demos for Web Components
+GoogleChrome-github-19-70 | css-filters-demo | https://github.com/GoogleChrome/css-filters-demo | author:GoogleChrome description:cssfilters.appspot.com
+GoogleChrome-github-18-71 | infinite-scroll | https://github.com/GoogleChrome/infinite-scroll | author:GoogleChrome description:A sample implementation of an infinite scroll / recycler list component using new Web Platform primitives and APIs.
+GoogleChrome-github-18-72 | delta-encoding | https://github.com/GoogleChrome/delta-encoding | author:GoogleChrome description:Updated Oct 13, 2014
+GoogleChrome-github-17-73 | CWSLauncher-extension | https://github.com/GoogleChrome/CWSLauncher-extension | author:GoogleChrome description:Chrome Web Store App Launcher Extension
+GoogleChrome-github-16-74 | progressive-webapps-everywhere | https://github.com/GoogleChrome/progressive-webapps-everywhere | author:GoogleChrome description:Feedback on PWAs built using JS frameworks
+GoogleChrome-github-14-75 | udacity-60fps-samples | https://github.com/GoogleChrome/udacity-60fps-samples | author:GoogleChrome description:Samples for Udacity 60fps course
+GoogleChrome-github-13-76 | web-animations-utils | https://github.com/GoogleChrome/web-animations-utils | author:GoogleChrome description:Utility libraries for the Web Animations API
+GoogleChrome-github-13-77 | remote-rtc | https://github.com/GoogleChrome/remote-rtc | author:GoogleChrome description:Demo library to show how a page could control peer connections on remote devices.
+GoogleChrome-github-12-78 | sw-unit-test-sample | https://github.com/GoogleChrome/sw-unit-test-sample | author:GoogleChrome description:Exploring a way of unit testing a SW with Mocha and a way of documenting edge cases.
+GoogleChrome-github-12-79 | collab-vim | https://github.com/GoogleChrome/collab-vim | author:GoogleChrome description:Updated Aug 28, 2014
+GoogleChrome-github-11-80 | blink-intent-tracker | https://github.com/GoogleChrome/blink-intent-tracker | author:GoogleChrome description:A service to automatically track blink-dev intents.
+GoogleChrome-github-11-81 | kendo-photo-booth-app | https://github.com/GoogleChrome/kendo-photo-booth-app | author:GoogleChrome description:Updated Oct 16, 2012
+GoogleChrome-github-10-82 | credential-management-sample | https://github.com/GoogleChrome/credential-management-sample | author:GoogleChrome description:Credential Management Sample
+GoogleChrome-github-10-83 | otp-generator | https://github.com/GoogleChrome/otp-generator | author:GoogleChrome description:Updated May 24, 2016
+GoogleChrome-github-10-84 | notational_velocity.dart | https://github.com/GoogleChrome/notational_velocity.dart | author:GoogleChrome description:Chrome packages app built with Dart.
+GoogleChrome-github-9-85 | experience-sampling | https://github.com/GoogleChrome/experience-sampling | author:GoogleChrome description:Updated Sep 23, 2015
+GoogleChrome-github-9-86 | web-threading-model | https://github.com/GoogleChrome/web-threading-model | author:GoogleChrome description:Updated Dec 18, 2014
+GoogleChrome-github-9-87 | chromebook-demo-app | https://github.com/GoogleChrome/chromebook-demo-app | author:GoogleChrome description:Updated Dec 6, 2013
+GoogleChrome-github-9-88 | chromeos_smart_card_connector | https://github.com/GoogleChrome/chromeos_smart_card_connector | author:GoogleChrome description:Smart Card Connector App for Chrome OS
+GoogleChrome-github-6-89 | dev-video-search | https://github.com/GoogleChrome/dev-video-search | author:GoogleChrome description:Prototype API and sample app for searching Google developer videos
+GoogleChrome-github-6-90 | sw-testing-helpers | https://github.com/GoogleChrome/sw-testing-helpers | author:GoogleChrome description:A set of helper files used to test Propel and sw-toolbox.
+GoogleChrome-github-6-91 | webplatform-metrics | https://github.com/GoogleChrome/webplatform-metrics | author:GoogleChrome description:Stats on the webplatform
+GoogleChrome-github-5-92 | devtools-codeschool-ext | https://github.com/GoogleChrome/devtools-codeschool-ext | author:GoogleChrome description:Updated Mar 19, 2014
+GoogleChrome-github-5-93 | chrome-gamepad-probe | https://github.com/GoogleChrome/chrome-gamepad-probe | author:GoogleChrome description:Gamepad API mapper
+GoogleChrome-github-4-94 | service-worker-benchmark | https://github.com/GoogleChrome/service-worker-benchmark | author:GoogleChrome description:A performance measurement of several classes of Service Worker.
+GoogleChrome-github-4-95 | devtools-docs-migration | https://github.com/GoogleChrome/devtools-docs-migration | author:GoogleChrome description:Testing ground for migrating devtools content to chrome docs
+GoogleChrome-github-1-96 | two-token-sw | https://github.com/GoogleChrome/two-token-sw | author:GoogleChrome description:Updated Jun 15, 2016
+GoogleChrome-github-0-97 | selenium-assistant | https://github.com/GoogleChrome/selenium-assistant | author:GoogleChrome description:A node module that helps using browsers with selenium
+GoogleChrome-github-0-98 | custom-tabs-provider | https://github.com/GoogleChrome/custom-tabs-provider | author:GoogleChrome description:Android sample app demonstrating how browser vendors can support the custom tabs protocol.
+GoogleChrome-github-0-99 | fsp-inspector | https://github.com/GoogleChrome/fsp-inspector | author:GoogleChrome description:Updated Jun 26, 2015
+GoogleChrome-github-0-100 | SDCH | https://github.com/GoogleChrome/SDCH | author:GoogleChrome description:Updated May 15, 2015
