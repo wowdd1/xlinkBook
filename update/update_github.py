@@ -627,6 +627,7 @@ class GithubSpider(Spider):
                 'sony' : 'https://github.com/sony',\
                 'Blizzard' : 'https://github.com/Blizzard',\
                 'openai' : 'https://github.com/openai',\
+                'deepmind' : "https://github.com/deepmind",\
                 'mozilla' : 'https://github.com/mozilla',\
                 'openstack': 'https://github.com/openstack',\
                 'reddit' : 'https://github.com/reddit',\
@@ -650,8 +651,8 @@ class GithubSpider(Spider):
                 'coursera' : 'https://github.com/coursera',\
                 'edx' : 'https://github.com/edx',\
                 'bvlc' : 'https://github.com/BVLC',\
-                'tum-vision' : 'https://github.com/tum-vision/'}
-
+                'tum-vision' : 'https://github.com/tum-vision/',\
+                'GoogleChrome' : 'https://github.com/GoogleChrome'}
         self.getProjectByDict(data)
         #self.getStartupPorjects()
 

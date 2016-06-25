@@ -20,6 +20,7 @@ extensionManager = ExtensionManager()
 def index():
     print  request.args.get('column', '')
     key = request.args.get('key', '')
+    print key
     if key == '':
         key = '?'
 
@@ -33,9 +34,9 @@ def index():
         return listAllFile(db)
     else:
         cmd = genCmd(db, key, 
-                      request.args.get('column', '2'),
+                      request.args.get('column', Config.column_num),
                       request.args.get('filter', ''),
-                      request.args.get('style', ''),
+                      request.args.get('style', str(Config.css_style_type)),
                       request.args.get('desc', 'true'),
                       request.args.get('width', ''),
                       request.args.get('row', '20'),
@@ -47,11 +48,36 @@ def index():
                       request.args.get('navigation', 'true'),
                       request.args.get('verify', ''),
                       request.args.get('alexa', ''),
-                      request.args.get('track', 'false'))
+                      request.args.get('track', 'false'), '')
         
         print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
         return html
+
+@app.route('/loadmore', methods=['POST'])
+def handleLoadmore():
+    print 'handleLoadmore'
+    cmd = genCmd(request.form['db'], request.form['key'],
+                      Config.column_num,
+                      '',
+                      str(Config.css_style_type),
+                      'true',
+                      '',
+                      '20',
+                      '',
+                      '',
+                      '',
+                      '',
+                      '',
+                      'true',
+                      '',
+                      '',
+                      'false', 'true')
+
+    print '\ncmd  --->   '  + cmd + '   <---\n'
+    html = subprocess.check_output(cmd, shell=True)
+    return html
+
 
 @app.route('/navigate', methods=['POST'])
 def handleNavigate():
@@ -71,6 +97,8 @@ def handleExtension():
 @app.route('/thumb', methods=['POST'])
 def handleThumb():
     url = request.form['url']
+    if request.form['fileName'].find('papers') != -1:
+        return ''
     if url != '':
         try:
             output = subprocess.check_output("curl --max-time 1 --head " + 'https://api.thumbalizr.com/?url=' + url + '&width=1280&quality=100', shell=True)
@@ -90,7 +118,7 @@ def chrome():
     f.write(' | ' + request.form['title'].replace('"', ' ').replace("'", " ").replace('\n', '').strip() + '| | ')
     f.close()
 
-    html = subprocess.check_output("./list.py -i temp/input -b 4  -c 2  -p -e 'd:star' -n -d ", shell=True)
+    html = subprocess.check_output("./list.py -i temp/input -b 4  -c 1  -p -e 'd:star' -n -d ", shell=True)
     #print data
     #data = "ddd"
     f = open('temp/output.html', 'w')
@@ -110,7 +138,7 @@ def temp(page):
     f.close()
     return data
 
-def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track, loadmore):
     if db.endswith('/') == False:
         db += '/'
     cmd = "./list.py -i db/" + db + key + " -b 4"
@@ -155,6 +183,9 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     else:
         Config.track_mode = False
 
+    if loadmore != '':
+        cmd += ' -z true '
+
     return cmd.replace('?', '') 
 
 def listDB():
@@ -163,16 +194,30 @@ def listDB():
 def listAllFile(db):
     folder = 'db/' + db
     files = os.listdir(folder)
+    html = ''
+    html += '<head></head>'
     #return genList(files, folder, db)
     libary = utils.gen_libary(True)
     if len(files) > 40:
-        return libary + genTable(files, folder, db)
+        if Config.center_content:
+            html += '<body style="text-align:center;">'
+        else:
+            html += "<body>"
+        html += libary + genTable(files, folder, db)
     else:
-        return libary + genList(files, folder, db)
+        html += "<body>"
+        html += libary + genList(files, folder, db)
+    html += '</body>'
+    return html
 
 
 def genTable(files, folder= '', db=''):
-    html = '<table>'
+    html = ''
+    if Config.center_content:
+        html = '<table style="margin:0px auto">'
+    else:
+        html = '<table>'
+
     count = 0
     column_num = int(request.args.get('column', '3'));
     tds = ''
@@ -194,8 +239,14 @@ def genTable(files, folder= '', db=''):
     return html
 
 def genList(files, folder='', db=''):
-    html = '<ol>'
+    html = ''
+    #if Config.center_content:
+    #    html += '<div style="margin:0px auto">'
+    #else:
+    html += '<ol>'
+    count = 0
     for f in sorted(files):
+        count += 1
         if os.path.isfile(os.path.join(folder, f)):
             html += '<li><a href="http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f + '">' + f + '<a></li>'
         else:
@@ -204,7 +255,7 @@ def genList(files, folder='', db=''):
             else:
                 html += '<li><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + f + '/</a></li>'
 
-    html += '<ol>'
+    html += '</ol>'
     return html
 
 

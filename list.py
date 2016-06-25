@@ -18,26 +18,26 @@ from config import Config
 
 source = ""
 filter_keyword = ""
-column_num = "2"
+column_num = Config.column_num
 
-custom_cell_len = 88
-split_length = custom_cell_len + 15
-custom_cell_row = 5
-cell_len=89  #  cell_len >= course_num_len + 1 + course_name_len + 3
-course_name_len=70
-course_num_len=10
-color_index=0
-output_with_color = False
-output_with_style = False
-output_with_describe = False
-output_navigation_links = False
-merger_result = False
-top_row = 0
-old_top_row = 0
-max_links_row = 8
-max_nav_link_row = 11
-max_nav_links_row = 7
-default_links_row = 2
+custom_cell_len = Config.custom_cell_len
+split_length = Config.split_length
+custom_cell_row = Config.custom_cell_row
+cell_len = Config.cell_len  #  cell_len >= course_num_len + 1 + course_name_len + 3
+course_name_len = Config.course_name_len
+course_num_len = Config.course_num_len
+color_index = Config.color_index
+output_with_color = Config.output_with_color
+output_with_style = Config.output_with_style
+output_with_describe = Config.output_with_describe
+output_navigation_links = Config.output_navigation_links
+merger_result = Config.merger_result
+top_row = Config.top_row
+old_top_row = Config.old_top_row
+max_links_row = Config.max_links_row
+max_nav_link_row = Config.max_nav_link_row
+max_nav_links_row = Config.max_nav_links_row
+default_links_row = Config.default_links_row
 
 verify = ''
 database = ''
@@ -54,10 +54,12 @@ plus = '+'
 subtraction = '-'
 vertical = '|'
 html_style = False
-css_style_type = 0
+css_style_type = Config.css_style_type
 
 engin = ''
-plugins_mode = False
+loadmore_mode = False
+loadmore_count = 0
+plugins_mode = Config.plugins_mode
 
 div_content_list = []
 div_reference_dict = {}
@@ -328,14 +330,36 @@ def next_pos(text, start):
     if min_end != len(text):
         min_end -= 1
         if min_end - start > course_name_len:
-            return start + course_name_len
+            ret_end = start + course_name_len
+            return space_end(text, start, ret_end)
         else:
             return min_end
 
     if (len(text) - start) < course_name_len:
         return start + len(text) - start
     else:
-        return start + course_name_len
+        ret_end = start + course_name_len
+        return space_end(text, start, ret_end)
+       
+def space_end(text, start, end): 
+
+    ret_end1 = end
+    ret_end2 = end
+    while ret_end1 >= 0 and ret_end1 < len(text) and text[ret_end1] != ' ':
+        ret_end1 -= 1
+    if ret_end1 < 0:
+        return 0
+    while ret_end2 >= 0 and ret_end2 < len(text) and text[ret_end2] != ' ':
+        ret_end2 += 1
+    if ret_end2 >= len(text):
+        return len(text) - 1
+    
+    if (end - ret_end1) > (ret_end2 - end):
+        return ret_end2
+    if (ret_end2 - start) <= course_name_len:
+        return ret_end2
+    else:
+        return ret_end1
 
 def genEnginOption(selectid):
 
@@ -378,6 +402,8 @@ def loadFiles(folder, fileType):
     return result
 
 def getScript(file_name, first_record):
+    if loadmore_mode:
+        return 
     global output_script_already
     if output_script_already == True:
         return
@@ -413,28 +439,25 @@ def getScript(file_name, first_record):
     if plugins_mode:
         title = first_record.get_title().strip().replace(' ', '%20')
         click_more = "document.addEventListener('DOMContentLoaded', function () {\
-	        setText('a-000');\
-	        showdiv('div-000','a-000');\
-	        appendContent('div-000','','" + title + "','');\
-                navTopic(document.getElementById('div-000-nav-all'),'div-000','div-000-nav-',2);\
+	        setText('a-0-0-0');\
+	        showdiv('div-000','a-0-0-0');\
+	        appendContent('div-0-0-0','','" + title + "','');\
+                navTopic(document.getElementById('div-0-0-0-nav-all'),'div-0-0-0','div-0-0-0-nav-',2);\
                 var search_txt = document.getElementById('search_txt');\
                 search_txt.focus();\
                 search_txt.onchange=function(){\
-                    var search_a = document.getElementById('a-000');\
+                    var search_a = document.getElementById('a-0-0-0');\
                     if (search_a.text == 'less' && this.value.length > 0) {\
-                        setText('a-000');\
-                        showdiv('div-000','a-000');\
+                        setText('a-0-0-0');\
+                        showdiv('div-0-0-0','a-0-0-0');\
                         setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
                     }\
                 };\
 	    });";
         print script_head + click_more + script_end
 
-    #mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
-    #print mathjs
-    #print '<script type="text/x-mathjax-config;executed=true">'
-    #print "MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});"
-    #print "</script>"
+    mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
+    print mathjs
     print loadJSScript()
     print loadCSS()
     ref_class = css_head
@@ -442,7 +465,7 @@ def getScript(file_name, first_record):
     if column_num == "3":
         ref_class += "width: 450px;"
     if column_num == "2":
-        ref_class += "width: 650px;"
+        ref_class += "width: 500px;"
     if column_num == "1":
         ref_class += "width: 700px;"
     ref_class += "}"
@@ -472,6 +495,12 @@ def build_lines(list_all):
     engin_list = []
     if engin != '':
         engin_list = utils.getEnginList(engin.strip())
+
+    global loadmore_count
+    if source.find('arxiv') != -1:
+        loadmore_count = source[source.find('arxiv') + 11 : source.find('-')]
+        loadmore_count = int(loadmore_count) - 300
+
     #print engin_list
     if plugins_mode:
         max_links_row = 9
@@ -548,17 +577,25 @@ def build_lines(list_all):
                             #else:
                             #    engin_list_sub = engin_list
 
-                            ijl = str(i) + str(j) + str(l)
+                            ijl = str(i) + '-' + str(j) + '-' + str(l)
 
                             if l == 0:
-                                linkID = 'a-' + ijl;
-                                content_divID = "div-" + ijl
+                                if loadmore_mode and loadmore_count != 0:
+                                    linkID = 'a-' + str(loadmore_count) + '-' + ijl;
+                                    content_divID = "div-" + str(loadmore_count) + '-' + ijl
+                                else:
+                                    linkID = 'a-' + ijl;
+                                    content_divID = "div-" + ijl
                                 script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), list_all[i][j].get_url().strip(), utils.getEnginUrlOtherInfo(list_all[i][j]))
 
 
                             if output_with_describe and end < describe:
-                                script += "showdiv('td-div-" + ijl + "', '" + linkID +"');"
-                                script += "showdiv('tr-" + ijl[1:] + "', '" + linkID +"');"
+                                if loadmore_mode and loadmore_count != 0:
+                                    script += "showdiv('td-div-" + str(loadmore_count) + '-' + ijl  + "', '" + linkID +"');"
+                                    script += "showdiv('tr-" + str(loadmore_count) + '-' + str(j) + '-' + str(l) + "', '" + linkID +"');"
+                                else:
+                                    script += "showdiv('td-div-" + ijl  + "', '" + linkID +"');"
+                                    script += "showdiv('tr-" + str(j) + '-' + str(l) + "', '" + linkID +"');"
                             if gen_html_done == False:
 
                                 if (l+1) * max_links_row < len(engin_list_sub):
@@ -587,22 +624,29 @@ def build_lines(list_all):
                                     content = ''
                                     hidenScript = ''
                                     hidenScript2 = ''
+                                    hidenScript3 = ''
                                     last_engin_type = utils.getEnginTypes()[len(utils.getEnginTypes()) - 1]
                                     nopass_flag = True
                                     for link2 in navLinks:
                                         hidenScript += 'hidendiv_2("' + '#div-' + link2 + '");'
                                         if nopass_flag:
                                             hidenScript2 += 'hidendiv_2("' + '#div-' + link2 + '");'
+                                        else:
+                                            hidenScript3 += 'hidendiv_2("' + '#div-' + link2 + '");'
                                         if link2 == last_engin_type:
                                             nopass_flag = False
                                     count = 0
                                     count_index = 0
                                     nav_div_id = ''
                                     length = 0
+                                    is_extension = False
+                                    hidenScript = hidenScript2
                                     for link in navLinks:
                                         nav_div_id = "#div-nav-" + str(count_index)
                                         divID = '#div'
                                         aid = "#div-nav-" + link
+                                        if is_extension:
+                                            hidenScript = hidenScript3
                                         content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 2) + ');', link, '#888888', 9, aid)
                                         count += 1 
                                         length += len(link) + 1
@@ -621,6 +665,8 @@ def build_lines(list_all):
                                             content = '' 
                                             length = 0
                                             hidenScript2 += 'hidendiv_3("' + nav_div_id + '");'
+                                        if link == last_engin_type:
+                                            is_extension = True
                                     if Config.extension_mode == False and Config.hiden_engins:
                                         more_html = ''
                                         more_html = utils.genMoreEnginHtml(linkID+'-' + linkID, hidenScript2 + 'setText("' + linkID+'-' + linkID + '")', '...', content_divID + '-' + content_divID, doubleQ=False)
@@ -629,9 +675,12 @@ def build_lines(list_all):
                                                 div_content_list[index] = div_content_list[index].replace('#more', more_html)
                                                 break
                                     if content != '':
-                                        div_content_list.append('<div id="' + nav_div_id + '">')
+                                        div_style = 'background-color:#F8F8FF; border-radius: 5px 5px 5px 5px; width:auto; float:left;'
+                                        div_content_list.append('<div id="' + nav_div_id + '" style="' + div_style + '">')
                                         div_content_list.append(content)
                                         div_content_list.append('</div>')
+                                        if plugins_mode == False:
+                                            div_content_list.append('<br\>')
                                     for link in navLinks:
                                         divID = '#div-' + link
                                         div_content_list.append(utils.getDescDivs(divID, link, title, max_nav_links_row, 'searchTopic(this,"' + "#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
@@ -643,7 +692,8 @@ def build_lines(list_all):
                         if html_style == False:
                             describe_lines[l][i][j] = align_describe("")
                         continue
-                    end = next_pos(list_all[i][j].get_describe(), start) 
+                    record_describe = list_all[i][j].get_describe()
+                    end = next_pos(record_describe, start) 
                     if output_with_describe:
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
                     start = end
@@ -666,6 +716,7 @@ def get_line(lines, start, end, j):
     result = vertical
     text = ''
     for i in range(start, end):
+        rID = ''
         if isinstance(lines[i][j], Record):
             lines[i][j] =  u' '.join(lines[i][j].get_describe()).encode('utf-8')
         text = color_keyword(lines[i][j])
@@ -686,11 +737,11 @@ def gen_html_body(content, row=0):
         if Config.hiden_record_id:
             id_style = 'display: none;'
         if column_num == "2":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + ' >', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "3":
             verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-2"></div></td><td style="vertical-align:top;">', '</td></tr>']   
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '";"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td></tr>']   
 
         ids = []
         content_back = content.split('|')
@@ -707,30 +758,58 @@ def gen_html_body(content, row=0):
             
 
 
-    return content
+    return content + '<tr class="info" style="height: ' + Config.split_height + ';"></tr>'
 
+def get_background_color(content):
+    content_back = content.split('|')
+    background_colors = []
+    for index in range(0, len(content_back)):
+        if (index + 1) % 2 != 0 and index != 0:
+            if (css_style_type == 0 or css_style_type == 6) and ((contain_keyword(content_back[index].strip()) == False or (contain_desc_keyword(content_back[index].strip())))):
+                #background_colors.append('background-color:#f6f5ec; border-radius: 5px 5px 5px 5px;')
+                background_colors.append('background-color:#F8F8FF; border-radius: 5px 5px 5px 5px;')
+            else:
+                background_colors.append('')
+    return background_colors
 
 def gen_html_body_v2(content, row, subRow):
     style = 'info'
     if row % 2 == 0:
         style = ''
     index = 0
-    tr_id = "tr-" + str(row) + str(subRow)
-    td_div_id = str(row) + str(subRow)
+    tr_id = ''
+    td_div_id = ''
+    td_div_0 = ''
+    td_div_1 = ''
+    td_div_2 = ''
+    
+    if loadmore_mode and loadmore_count > 0:
+        tr_id = "tr-" + str(loadmore_count) + '-' + str(row) + '-' +str(subRow)
+        td_div_id = '-' + str(row) + '-' + str(subRow)
+        td_div_0 = 'td-div-' + str(loadmore_count) + '-' + '0' + td_div_id
+        td_div_1 = 'td-div-' + str(loadmore_count) + '-' + '1' + td_div_id
+        td_div_2 = 'td-div-' + str(loadmore_count) + '-' + '2' + td_div_id
+    else:
+        tr_id = "tr-" + str(row) + '-' +str(subRow)
+        td_div_id = '-' + str(row) + '-' + str(subRow)
+        td_div_0 = 'td-div-0' + td_div_id
+        td_div_1 = 'td-div-1' + td_div_id
+        td_div_2 = 'td-div-2' + td_div_id
+
     if vertical == '|':
         verticals = []
         id_style = ''
         background_color = ""
         if Config.hiden_record_id:
             id_style = 'style="display: none;"'
-        if (css_style_type == 0 or css_style_type == 6) and (contain_keyword(content) == False or (contain_desc_keyword(content))):
-            background_color = 'background-color:#EEFFEE; border-radius: 5px 5px 5px 5px;'
+        background_colors = get_background_color(content)
+        auto_size = ' width:auto; float:left;'
         if column_num == "2":
-            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style + '>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none; ' + background_color + '">', '</div></td><td ' + id_style + '>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none; ' + background_color + '">', '</div></td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style + '>', '</td><td><div  id="' + td_div_0 + '" style="display: none; ' + background_colors[0] + auto_size + '">', '</div></td><td ' + id_style + '>', '</td><td><div id="' + td_div_1 + '" style="display: none; ' + background_colors[1] + auto_size + '">', '</div></td></tr>']
         elif column_num == "3":
-            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style + '>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none; ' + background_color + '">', '</div></td><td ' + id_style + '>', '</td><td><div id="td-div-1' + td_div_id + '" style="display: none; ' + background_color + '">', '</div></td><td ' + id_style +'>', '</td><td><div id="td-div-2' + td_div_id + '" style="display: none; ' + background_color + '">', '</div></td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style + '>', '</td><td><div id="' + td_div_0 + '" style="display: none; ' + background_colors[0] + auto_size + '">', '</div></td><td ' + id_style + '>', '</td><td><div id="' + td_div_1 + '" style="display: none; ' + background_colors[1] + auto_size + '">', '</div></td><td ' + id_style +'>', '</td><td><div id="' + td_div_2 + '" style="display: none; ' + background_colors[2] + auto_size + '">', '</div></td></tr>']
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style +'>', '</td><td><div id="td-div-0' + td_div_id + '" style="display: none; ' + background_color + '">', '</div></td></tr>']
+            verticals = ['<tr class="' + style + '" id="' + tr_id + '" style="display: none;"><td ' + id_style +'>', '</td><td><div id="' + td_div_0 + '" style="display: none; ' + background_colors[0] + auto_size + '">', '</div></td></tr>']
 
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
@@ -762,17 +841,41 @@ def print_search_box():
                 print '<br/>'
 
 def print_table_head_with_style():
-    print "<body>"
-    print_search_box()
-    print utils.gen_libary()
-    if css_style_type == 3 or css_style_type == 4 or css_style_type == 5:
-        print '<table class="easy-table easy-table-default coursesTable">'
+    center_style = 'style="'
+    if Config.center_content:
+        width = '100%'
+        background_color = '#FFFFFF'
+        if column_num == '1':
+            width = '75%'
+            background_color = '#F6F3E5'
+        if loadmore_mode == False:
+            print '<body  style="text-align:center; background-color:' + background_color + ';">'
+        center_style += 'margin:0px auto; background-color:#FFFFFF;  width:' + width + '; border:1; bordercolor=#000077;'
     else:
-        print '<table class="table">'
+        if loadmore_mode == False:
+            print '<body>'
+    center_style += 'margin-left:' + Config.content_margin_left + ';'
+    center_style += '"'
+    if loadmore_mode == False:
+        print_search_box()
+        print utils.gen_libary()
+        print '<div ' + center_style + ' >'
+    center_style = ''
+    if Config.center_content:
+        if column_num == '1':
+            center_style = 'style="margin-left:13px; background-color:#FFFFFF;"'
+        else:
+            center_style = 'style="margin:0px auto; background-color:#FFFFFF;"'
+    if css_style_type == 3 or css_style_type == 4 or css_style_type == 5:
+        print '<table class="easy-table easy-table-default coursesTable" ' + center_style + '>'
+    else:
+        print '<table class="table" ' + center_style + '>'
 
 def print_table_footer():
     print "</table>"
-    print "</body>"
+    print '</div>'
+    if loadmore_mode == False:
+        print "</body>"
 
 def get_space_cell(num, column_num):
     result = ""
@@ -800,9 +903,10 @@ def getKeywordAndData(filter_keyword, line):
     for k in keyword_list:
         if filter_keyword.find(k) != -1:
             filter_keyword = filter_keyword.replace(k,'')
-            da = utils.reflection_call('record', 'CourseRecord', 'get_' + k[0 : len(k) - 1], line)
-            if da != None:
-                data += da + ' '
+            args = { 'tag' : k } 
+            ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, args)
+            if ret != None:
+                data += ret + ' '
     
     return filter_keyword, data
 
@@ -1127,13 +1231,10 @@ def print_list(all_lines, file_name = ''):
         if current > 0:
             message = ''
 
-            if html_style:
-                message += "<br/>"
-
             if filter_keyword != "":
-                message += "\nTotal " + str(current) + " records cotain " + filter_keyword
+                message += '<div id="total-info"><br/>' + "\nTotal " + str(current) + " records cotain " + filter_keyword
             else:
-                message += "\nTotal " + str(current) + " records"
+                message += '<div id="total-info"><br/>' + "\nTotal " + str(current) + " records"
             if file_name != '':
                 message += ", File: " + file_name + "\n\n"
             else:
@@ -1142,7 +1243,13 @@ def print_list(all_lines, file_name = ''):
             if html_style:
                 message += "<br/>"
                 message += "<br/>"
-                message += "<br/>"
+                message += "<br/></div>"
+                if loadmore_mode == False:
+                    loadmore_div = ''
+                    loadmore_div += '<div id="loadmore" style="' + 'margin-left:' + Config.content_margin_left + ';' + '"></div>'
+                    message += loadmore_div
+            if loadmore_mode:
+                message = ''
             if plugins_mode == False:
                 print message
             
@@ -1233,10 +1340,10 @@ def adjust_link_number():
        max_nav_link_row = (max_nav_link_row - 2) * 2
     
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:ap', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use", "alexa", "plugins"])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1299,6 +1406,8 @@ def main(argv):
             utils.loadAlexa()
         elif o in ('-p', '--plugins'):
             plugins_mode = True
+        elif o in ('-z', '--loadmore'):
+            loadmore_mode = True
 
     if source == "":
         print "you must input the input file or dir"

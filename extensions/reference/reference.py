@@ -55,7 +55,7 @@ class Reference(BaseExtension):
         if self.record_reference.has_key(rID):
             #print result
             return self.genReferenceHtml(rID, form_dict['divID'].encode('utf8'))
-        elif rID.find('arxiv') >= 0:
+        elif fileName.find('papers') != -1:
             return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']), form_dict['divID'].encode('utf8'),
                                           form_dict['defaultLinks'], form_dict['rID'])
         else:
@@ -63,6 +63,7 @@ class Reference(BaseExtension):
 
 
     def getAllLinks(self, url):
+        print 'getAllLinks ' + url
         if url == '':
             return ''
         else:
@@ -96,13 +97,7 @@ class Reference(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
-        category = ''
-        print 'check filename ' + fileName
-        if rID.startswith('loop') == False:
-            record = self.utils.getRecord(rID, path=fileName)
-            if record != None:
-                category = CategoryRecord(record.line).get_category()
-        if self.record_reference.has_key(rID) or rID.startswith('arxiv') or rID.startswith('loop') or (category == self.category_obj.paper) or form_dict['url'] != '':
+        if self.record_reference.has_key(rID) or fileName.find('papers') != -1 or form_dict['url'] != '':
             return True
         return False
                 
