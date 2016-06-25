@@ -1,5 +1,6 @@
 var args = [];
 var search_box;
+var global_selection = '';
 
 $(document).ready(function(){
 	
@@ -161,6 +162,18 @@ function navTopic(obj, divID, parentDivID, countIndex){
     }
     postArgs["divID"] = divID + "-" + obj.text;
     postArgs["defaultLinks"] = 2;
+    if (obj.text == "search") {
+        var selection = window.getSelection().toString();
+        if (selection != '') {
+            postArgs['selection'] = selection;
+        } else if (global_selection != '') {
+            postArgs['selection'] = global_selection;
+            global_selection = '';
+        } else {
+            $("#" + targetid).html("please select some text for search");
+            return
+        }
+    }
     var extension = false;
     for (var i = 0; i < extensions.length; i++) {
         console.log('zzz', extensions[i]);
@@ -206,6 +219,11 @@ function showdiv_2(targetid){
 }
 
 function hidendiv_2(targetid){
+      
+      var selection = window.getSelection().toString();
+      if (selection != '') {
+          global_selection = selection;
+      }
       var target=document.getElementById(targetid);
       target.style.display="none";
       var target=document.getElementById(targetid + "-data");

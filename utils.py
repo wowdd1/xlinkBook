@@ -23,6 +23,7 @@ from record import EnginRecord
 import time
 import feedparser
 import urllib
+import subprocess
 from config import Config
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -812,6 +813,25 @@ class Utils:
             j = self.encode_feedparser_dict(e)
             return j['id'][j['id'].rfind('v') :]
         return 'v1'
+
+
+    def gen_plugin_content(self, selection, search_box=True):
+        f = open("temp/input", 'w');
+        f.write(' | ' + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + '| | ')
+        f.close()
+        cmd = "./list.py -i temp/input -b 4  -c 1  -p -e 'd:star' -n -d "
+        if search_box == False:
+            cmd += ' -x '
+        html = subprocess.check_output(cmd, shell=True)
+        #print data
+        #data = "ddd"
+        f = open('temp/output.html', 'w')
+        f.write(html)
+        f.close()
+
+        print selection
+        return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
+        #return '{"firstAccess" : "' + data + '"}'
 
 
     def clearHtmlTag(self, htmlstr):
