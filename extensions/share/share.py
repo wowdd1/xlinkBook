@@ -10,12 +10,12 @@ class Share(BaseExtension):
     def excute(self, form_dict):
         url= form_dict['url'].encode('utf-8')
         title = form_dict['rTitle']
-        html = '<ul>'
-        html += '<li><a href="javascript:void(0);" onclick=share("facebook","' + url + '","' + title + '");>facebook</a></li>'
-        html += '<li><a href="javascript:void(0);" onclick=share("twitter","' + url + '","' + title + '");>twitter</a></li>'
-        html += '<li><a href="javascript:void(0);" onclick=share("linkedin","' + url + '","' + title + '");>linkedin</a></li>'
-        html += '<li><a href="mailto:?subject=' + title + ' (' + url + ')&amp;body=' + title+ ' (' + url + ')" target="_self">mail</a></li>'
-        html += '</ul>'
+        html = '<div class="ref"><ol>'
+        html += '<li><p><a href="javascript:void(0);" onclick=share("facebook","' + url + '","' + title + '");>facebook</a></p></li>'
+        html += '<li><p><a href="javascript:void(0);" onclick=share("twitter","' + url + '","' + title + '");>twitter</a></p></li>'
+        html += '<li><p><a href="javascript:void(0);" onclick=share("linkedin","' + url + '","' + title + '");>linkedin</a></p></li>'
+        html += '<li><p><a href="mailto:?subject=' + title + ' (' + url + ')&amp;body=' + title+ ' (' + url + ')" target="_self">mail</a></p></li>'
+        html += '</ol></div>'
         print html
         return html
 
