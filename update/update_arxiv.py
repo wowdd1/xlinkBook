@@ -165,7 +165,7 @@ class ArxivSpider(Spider):
         self.utils = Utils()
         self.batch_size = 300
         self.load_history_files = 2
-        self.incremental_mode = True
+        self.incremental_mode = False
         self.rawid_version_dict = {}
         self.incremental_file = ''
 
@@ -239,8 +239,9 @@ class ArxivSpider(Spider):
         base_url = 'http://export.arxiv.org/api/query?' # base api query url
         cats = ['cs.CV', 'cs.LG', 'cs.CL', 'cs.NE', 'stat.ML'] 
         # main loop where we fetch the new results
+        start = 0
         results_per_iteration = 100
-        max_result = 18300
+        max_result = 18900
         search_query = ''
         for cat in cats:
             if cat == cats[len(cats) -1]:
@@ -249,15 +250,18 @@ class ArxivSpider(Spider):
                 search_query += 'cat:' + cat + '+OR+'
 
         print 'Searching arXiv for %s' % (search_query, )
-        start = 0
         all_papers = []
         num_added_total = start
+        exception = False
+        counts = self.getCounts()
+        print counts
+        if len(counts) >  0 and counts[len(counts) - 1] == self.batch_size:
+            self.incremental_mode = True
+            start = 0
         if self.incremental_mode:
-
+            print 'incremental update mode'
             if len(self.rawid_version_dict) == 0:
                 print 'loading history file'
-                counts = self.getCounts()
-                print counts
                 files = []
                 for i in range(0, len(counts)):
                     files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2016')
@@ -276,7 +280,7 @@ class ArxivSpider(Spider):
                 print k + ' ' + v
             print len(self.rawid_version_dict)
 
-            self.incremental_file = self.get_file_name('eecs/papers/arxiv/arxiv' + str(self.getCounts()[0])+ '-inc', self.school)
+            self.incremental_file = self.get_file_name('eecs/papers/arxiv/arxiv' + str(self.getCounts()[0] + self.batch_size)+ '-inc', self.school)
             if os.path.exists(self.incremental_file):
                 os.remove(self.incremental_file)
 
@@ -285,7 +289,11 @@ class ArxivSpider(Spider):
             print "Results %i - %i" % (i,i+results_per_iteration)
             query = 'search_query=%s&sortBy=lastUpdatedDate&start=%i&max_results=%i' % (search_query,
                                                                  i, results_per_iteration)
-            response = urllib.urlopen(base_url+query).read()
+            response = None
+            try:
+                response = urllib.urlopen(base_url+query).read()
+            except Exception as e:
+                exception = True
             #response = self.requestWithProxy(base_url+query).text
             parse = feedparser.parse(response)
             num_added = 0
@@ -310,7 +318,7 @@ class ArxivSpider(Spider):
                 num_added += 1
                 num_added_total += 1
           
-            if (i+results_per_iteration) % self.batch_size == 0:
+            if (i+results_per_iteration) % self.batch_size == 0 and exception == False:
                 if self.incremental_mode:
                     if self.incrementalUpdate(all_papers) == False:
                         all_papers = []
@@ -327,15 +335,15 @@ class ArxivSpider(Spider):
                 break
         
         
-            print 'Sleeping for %i seconds' % (5.0 , )
-            time.sleep(5.0 + random.uniform(0, 3))  
+            print 'Sleeping for %i seconds' % (25.0 , )
+            time.sleep(25.0 + random.uniform(0, 3))  
         
         if self.incremental_mode:
             if len(all_papers) > 0:
                 self.incrementalUpdate(all_papers)
             self.processIncrementalFile()
 
-        if not self.incremental_mode and len(all_papers) > 0:
+        if not self.incremental_mode and len(all_papers) > 0 and exception == False:
             self.save("eecs/papers/arxiv/arxiv" + str(num_added_total), all_papers, num_added_total)
 
     def processIncrementalFile(self):
@@ -351,7 +359,7 @@ class ArxivSpider(Spider):
                     counts = self.getCounts()
                     number = ''
                     if len(lines) < self.batch_size:
-                        number = str(counts[0]) + "-inc"
+                        number = str(counts[0] + self.batch_size) + "-inc"
                     else:
                         number = str(counts[0] + self.batch_size)
                     self.saveIncrementalPapers(number, write_lines) 
@@ -417,9 +425,9 @@ class ArxivSpider(Spider):
                     category += tag['term'].replace('\n', '').replace(',', ' ').strip() + ' '
 
             published = "published:" + paper['published'][0 : paper['published'].find('T')]
-            summary = "summary:" + self.utils.removeDoubleSpace(paper['summary'].replace('\n', '').replace('|', '')).strip()
+            summary = "summary:" + self.utils.removeDoubleSpace(paper['summary'].replace('\n', ' ').replace('|', ' ')).strip()
 
-            desc = authors + ' ' + category + ' ' + published + ' ' + summary + ' version:' + str(paper['_version'])
+            desc = 'id:' + paper['_rawid'].strip() + ' ' + authors + ' ' + category + ' ' + published + ' ' + summary + ' version:' + str(paper['_version'])
             
             self.write_db(f, 'arxiv-' + paper['_rawid'].replace('.', '-'), paper['title'],
                       paper['id'][0: paper['id'].rfind('v')].strip(), desc)

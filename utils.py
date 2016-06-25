@@ -21,6 +21,8 @@ from record import PaperRecord
 from record import ContentRecord
 from record import EnginRecord
 import time
+import feedparser
+import urllib
 from config import Config
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -774,6 +776,44 @@ class Utils:
         return html
     '''
 
+    def encode_feedparser_dict(self, d):
+        """
+        helper function to get rid of feedparser bs with a deep copy.
+        I hate when libs wrap simple things in their own classes.
+        """
+        if isinstance(d, feedparser.FeedParserDict) or isinstance(d, dict):
+          j = {}
+          for k in d.keys():
+            j[k] = self.encode_feedparser_dict(d[k])
+          return j
+        elif isinstance(d, list):
+          l = []
+          for k in d:
+            l.append(self.encode_feedparser_dict(k))
+          return l
+        else:
+          return d
+
+    def get_arxiv_entries(self, query):
+        query_url = 'http://export.arxiv.org/api/query?search_query=' + query
+        response = None
+        try:
+            response = urllib.urlopen(query_url).read()
+        except Exception as e:
+            exception = True
+        #response = self.requestWithProxy(base_url+query).text
+        if response != None:
+            parse = feedparser.parse(response)
+            return parse.entries
+        return None
+
+    def get_last_arxiv_version(self, query):
+        for e in self.get_arxiv_entries(query):
+            j = self.encode_feedparser_dict(e)
+            return j['id'][j['id'].rfind('v') :]
+        return 'v1'
+
+
     def clearHtmlTag(self, htmlstr):
         re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I)
         re_script=re.compile('<\s*script[^>]*>[^<]*<\s*/\s*script\s*>',re.I)
@@ -830,7 +870,7 @@ class Utils:
                     if att2 == method:
                         func = getattr(obj, att2)
                         if method_arg != None:
-                            return apply(func, method_arg)    
+                            return apply(func, (), method_arg)    
                         else:
                             return apply(func)
 

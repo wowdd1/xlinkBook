@@ -24,55 +24,25 @@ class Figures(BaseExtension):
         name = form_dict['rTitle'] 
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
-        record = self.utils.getRecord(rID, path=fileName)
-
-        print record.get_id()
-        print record.get_describe()
-        if record != None or record.get_describe().find('category:') != -1:
-    
-            record = CategoryRecord(record.line)
-            if record.get_category() != None:
-                self.category = record.get_category().strip()
-        print self.category
         figures = []
         links = []
-        if self.category == self.category_obj.paper or self.category.find('cs.') != -1 or self.category.find('stat.') !=-1:
+        if fileName.find('papers') != -1:
             figures = self.semanticscholar.getFigures(name)
         else:
             figures, links = self.getRandomFigures(name)
 
         thumbs = ''
-        if record.get_id().find('arxiv') >= 0:
-            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url())
-            version = "v1"    
+        if rID.find('arxiv') >= 0:
+            thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(form_dict['url'])
+            version = self.utils.get_last_arxiv_version(rID[rID.find('arxiv-') + 6 :].replace('-', '.')) 
             jpg = '.pdf.jpg'
-            retry = 0
-            for i in range(1, 10):
-                url = thumbs + 'v' + str(i) + jpg
-                #r = requests.get(thumbs + 'v' + str(i) + jpg)
-                output = ''
-                try:
-                    output = subprocess.check_output("curl --max-time 1 --head " + url, shell=True)
-                except Exception as e:
-                    print e
-                #if r.status_code == 200:
-                print output
-                if output.find('200 OK') != -1:
-                    retry = 0
-                    version = 'v' + str(i)
-                else:
-                   retry += 1
-                if retry > 2:
-                    break 
-                #else:
-                #    break
             thumbs = thumbs + version + jpg
             print 'thumbs ' + thumbs
         return self.getRefImage(rID, form_dict['url']) + self.genHtml(figures, form_dict['column'], links, thumbs)
 
 
 
-    def getRefImage(self, rID, Irl):
+    def getRefImage(self, rID, url):
         html = ''
         if rID.find('arxiv') >= 0:
             return html
@@ -154,4 +124,3 @@ class Figures(BaseExtension):
     def check(self, form_dict):
         rID = form_dict['rID']
         return True
-        #return rID.startswith('arxiv')

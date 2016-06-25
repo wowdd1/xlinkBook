@@ -1,4 +1,49 @@
-var args = []
+var args = [];
+
+$(document).ready(function(){
+	
+  //urlq = QueryString.q;
+  
+  //if(msg !== '') { d3.select("#rtable").append('div').classed('msg', true).html(msg); }
+ 
+  //addPapers(20, false);
+  if (fileName.indexOf('arxiv') != -1) {
+
+  var loading_more = false;
+  var count = 0;
+  count = fileName.substring(fileName.indexOf('arxiv') + 11,  fileName.indexOf('-'))
+  $(window).on('scroll', function(){
+    var scrollTop = $(document).scrollTop();
+    var windowHeight = $(window).height();
+    //var bodyHeight = $(document).height() - windowHeight;
+    var bodyHeight = $(document).height();
+    var scrollPercentage = (scrollTop / bodyHeight);
+    if(scrollPercentage > 0.8 && !loading_more) {
+      console.log('scrollPercentage:%f', scrollPercentage);
+      //addPapers(5, true);
+      //alert('xx');
+      loading_more = true;
+      count = count - 300;
+      if (count < 300) {
+          return;
+      }
+      postArgs = {'db' : 'eecs/papers/arxiv/', 'key' : 'arxiv' + count + '-arxiv2016'}
+      var parent_div = document.getElementById('loadmore');
+      var div = document.createElement('div');
+      div.id = 'loadmore-div-' + count;
+      parent_div.appendChild(div)
+      
+      $('#' + div.id).load('/loadmore', postArgs, function(data){
+          var target=document.getElementById('total-info');
+          target.style.display="none";
+          loading_more = false;
+          MathJax.Hub.Queue(["Typeset", MathJax.Hub, div.id]);
+      });
+    }
+  });
+  }
+});
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
 function setText(objN){
     var clicktext=document.getElementById(objN);
@@ -42,9 +87,9 @@ function search(inputid,optionid){
     } else if (select[select.selectedIndex].value == "current") {
         var url = "http://localhost:5000?db=" + database;
         if (key != "") {
-            url = url + "&key=" + key;
+            //url = url + "&key=" + key;
         }
-        url = url + '&filter="' + input.value + '"';
+        url = url + '&filter="' + input.value + '"' + '&column=1';
         window.open(url)
     } else {
         window.open(select.value + input.value);
@@ -68,7 +113,6 @@ function searchTopic(obj, topic, otherInfo){
         }
         
     }
-
     for(var i=0;i<options.length;i++){
         if (trimStr(options[i].text) == trimStr(obj.text)) {
             console.log("xx", options[i].value);
@@ -133,13 +177,15 @@ function navTopic(obj, divID, parentDivID, countIndex){
                  if (data == "" || (obj.text == "save" && data.indexOf("sucess") != -1)) {
                      obj.style.display="none";
                  } else if (data.indexOf("http") == 0){
-                     window.location.href = data;
+                     //window.location.href = data;
+                     window.open(data);
                  }
                  clearInterval(loadAnimID);
+                 MathJax.Hub.Queue(["Typeset", MathJax.Hub, targetid]);
              });
         }
     }
-    if (!extension) {
+    if (!extension && postArgs['rID'] != '') {
         console.log('datatarget', targetid + '-data');
         data_target = $('#' + targetid + '-data');
         if (data_target != null) {

@@ -110,14 +110,22 @@ class Similar(BaseExtension):
             
             found = False
             thumbs = ''
-            while found == False:
+            retry = 0
+            while found == False and retry < 3:
                 thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(record.get_url()) + "v" + version + ".pdf.jpg"
-                output = subprocess.check_output("curl --head " + thumbs, shell=True)
+                output = ''
+                try:
+                    output = subprocess.check_output("curl --max-time 1 --head " + thumbs, shell=True)
+                except Exception as e:
+                    print e
                 print output
                 if output.find('200 OK') != -1:
                     found = True
                 else:
+                    retry += 1
                     version = str(int(version) + 1)
+            if found == False:
+                thumbs = ''
             
                     
             authors = record.get_author().split(',')
@@ -125,7 +133,12 @@ class Similar(BaseExtension):
             date_cat =  record.get_published() + "&nbsp;&nbsp; " + self.genListHtml(categorys, "category:")
             count += 1
             html += '<li><span>' + str(count) + '</span>'
-            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><p><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div><image height="110px" width="570px" src="' + thumbs + '"></image><div>' + record.get_summary() + "<div></li><br/>"
+            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><p><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div>'
+            if thumbs != '':
+                html += '<image height="110px" width="570px" src="' + thumbs + '"></image>'
+            else:
+                html += '<br\>'
+            html += '<div>' + record.get_summary() + "<div></li><br/>"
         html += "</ol></div>"
         return html
 
@@ -146,8 +159,4 @@ class Similar(BaseExtension):
     def check(self, form_dict):
         rID = form_dict['rID'].encode('utf-8')
         fileName = form_dict['fileName']
-        #record = self.utils.getRecord(rID, path=fileName[0 : fileName.rfind('/')])
-        record = self.utils.getRecord(rID, path=fileName)
-        match_website = self.category_obj.match(record.get_describe(), self.category_obj.website) 
-        match_engin = self.category_obj.containMatch(rID[0 : rID.find('-')].strip() , self.category_obj.engin)
-        return rID.startswith('arxiv') or match_website or match_engin
+        return rID.startswith('arxiv')
