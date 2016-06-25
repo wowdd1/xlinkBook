@@ -193,6 +193,8 @@ def color_keyword(text):
     result = text
     for k in keyword_list:
         k = ' ' + k
+        if result.find(k + ' ') != -1:
+            continue
         if (color_index - 1) % 2 == 0:
             if html_style == True:
                 result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
