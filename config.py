@@ -32,6 +32,7 @@ class Config():
     extension_mode = False
 
     default_tab = 'content'
+    second_default_tab = 'figures'
 
 
     column_num = "1"
