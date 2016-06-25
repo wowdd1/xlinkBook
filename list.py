@@ -1230,11 +1230,12 @@ def print_list(all_lines, file_name = ''):
 
         if current > 0:
             message = ''
-
+            if html_style:
+                message += '<div id="total-info"><br/>'
             if filter_keyword != "":
-                message += '<div id="total-info"><br/>' + "\nTotal " + str(current) + " records cotain " + filter_keyword
+                message += "\nTotal " + str(current) + " records cotain " + filter_keyword
             else:
-                message += '<div id="total-info"><br/>' + "\nTotal " + str(current) + " records"
+                message += "\nTotal " + str(current) + " records"
             if file_name != '':
                 message += ", File: " + file_name + "\n\n"
             else:
