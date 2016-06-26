@@ -17,7 +17,15 @@ $(document).ready(function(){
     //var bodyHeight = $(document).height() - windowHeight;
     var bodyHeight = $(document).height();
     var scrollPercentage = (scrollTop / bodyHeight);
-    if(scrollPercentage > 0.8 && !loading_more) {
+    var percentage = 0.8;
+    if (column == '1') {
+        percentage = 0.9;
+    } else if (column == '2') {
+        percentage = 0.8;
+    } else if (column == '3') {
+        percentage = 0.6;
+    }
+    if(scrollPercentage > percentage && !loading_more) {
       console.log('scrollPercentage:%f', scrollPercentage);
       loading_more = true;
       count = count - 300;

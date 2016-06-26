@@ -16,6 +16,8 @@ import requests
 utils = Utils()
 
 extensionManager = ExtensionManager()
+args_history = {}
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     print  request.args.get('column', '')
@@ -33,6 +35,21 @@ def index():
     if key == '?' and request.args.get('filter', '') == '':
         return listAllFile(db)
     else:
+        args_history['column'] = request.args.get('column', Config.column_num)
+        args_history['filter'] = request.args.get('filter','')
+        args_history['style'] = request.args.get('style', str(Config.css_style_type))
+        args_history['desc'] = request.args.get('desc', 'true')
+        args_history['width'] = request.args.get('width', '')
+        args_history['row'] = request.args.get('row', '20')
+        args_history['top'] = request.args.get('top', '')
+        args_history['level'] = request.args.get('level', '')
+        args_history['merger'] = request.args.get('merger', '')
+        args_history['border'] = request.args.get('border', '')
+        args_history['engin'] = request.args.get('engin', '')
+        args_history['navigation'] = request.args.get('navigation', 'true')
+        args_history['verify'] = request.args.get('verify', '')
+        args_history['alexa'] = request.args.get('alexa', '')
+        args_history['track'] = request.args.get('track', 'false')
         cmd = genCmd(db, key, 
                       request.args.get('column', Config.column_num),
                       request.args.get('filter', ''),
@@ -58,21 +75,21 @@ def index():
 def handleLoadmore():
     print 'handleLoadmore'
     cmd = genCmd(request.form['db'], request.form['key'],
-                      Config.column_num,
-                      '',
-                      str(Config.css_style_type),
-                      'true',
-                      '',
-                      '20',
-                      '',
-                      '',
-                      '',
-                      '',
-                      '',
-                      'true',
-                      '',
-                      '',
-                      'false', 'true')
+                      args_history['column'],
+                      args_history['filter'],
+                      args_history['style'],
+                      args_history['desc'],
+                      args_history['width'],
+                      args_history['row'],
+                      args_history['top'],
+                      args_history['level'],
+                      args_history['merger'],
+                      args_history['border'],
+                      args_history['engin'],
+                      args_history['navigation'],
+                      args_history['verify'],
+                      args_history['alexa'],
+                      args_history['track'], 'true')
 
     print '\ncmd  --->   '  + cmd + '   <---\n'
     html = subprocess.check_output(cmd, shell=True)
