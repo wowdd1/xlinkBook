@@ -3,7 +3,7 @@ goal:
     1. integrating activities
     2. learning by doing, search by research(problem <-> resource & learn -> ED <-> resource & learn -> BP) 
     3. capture flow(data, wiring, computing), explorer activity(activity -> deconstruction -> reconstruction -> value) 
-    4. simple, speed, flexible, intelligent, evolution(the best fecture is simple tool build complex tool, build is activities) 
+    4. simple, speed, flexible, intelligent, evolution(the best fecture is simple build complex, build is activities) 
 
 install:
 
