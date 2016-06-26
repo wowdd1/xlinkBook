@@ -2,8 +2,8 @@ goal:
 
     1. integrating activities
     2. learning by doing, search by research(problem <-> resource & learn -> ED <-> resource & learn -> BP) 
-    3. capture flow(data, structure, wiring, computing), explorer activity(activity -> deconstruction -> reconstruction -> value) 
-    4. sync the state of art knowledge, build the freeway of knowledge
+    3. sync the state of art knowledge, build the freeway of knowledge
+    4. capture flow(data, structure, wiring, computing), explorer activity(activity -> deconstruction -> reconstruction -> value) 
     5. simple, speed, flexible, intelligent, evolution(the best fecture is simple build complex, build is activities) 
 
 install:
