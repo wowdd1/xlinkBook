@@ -18,6 +18,7 @@ class Similar(BaseExtension):
         BaseExtension.__init__(self)
         self.utils = Utils()
         self.category_obj = Category()
+        self.img_style = "-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; background: #f8f8f8; border-top:1px solid #ccc; border-right:1px solid #666; border-bottom:2px solid #999; border-left:1px solid #ccc; padding: 0px;"
 
     def loadPapers(self):
         if len(self.papers_dict) > 0:
@@ -95,7 +96,7 @@ class Similar(BaseExtension):
         return html
 
     def genHtml(self, pid):
-        html = '<div class="ref"><ol>'
+        html = '<div class="ref"><ol width="100%">'
         records = []
         for k in self.sim_dict[pid]:
             records.append(self.papers_dict[k])
@@ -133,12 +134,13 @@ class Similar(BaseExtension):
             date_cat =  record.get_published() + "&nbsp;&nbsp; " + self.genListHtml(categorys, "category:")
             count += 1
             html += '<li><span>' + str(count) + '</span>'
-            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><p><div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div>'
+            html += '<p><a target="_blank" href="' + record.get_url() + '">' + record.get_title() + '</a><p>'
+            html += '<div>' + self.genListHtml(authors, "author:") + '</div><div>' + date_cat + '</div>'
             if thumbs != '':
-                html += '<image height="110px" width="570px" src="' + thumbs + '"></image>'
+                html += '<image width="570px" src="' + thumbs + '" style="' + self.img_style + '"></image>'
             else:
                 html += '<br\>'
-            html += '<div>' + record.get_summary() + "<div></li><br/>"
+            html += '<div>' + record.get_summary() + "</div></li><br/>"
         html += "</ol></div>"
         return html
 

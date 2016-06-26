@@ -502,14 +502,14 @@ class Utils:
         html = ''
         if color != '':
             if doubleQ:
-                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '";><font color="' + color + '">' + text + '</font></a></font>'
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '"><font color="' + color + '">' + text + '</font></a></font>'
             else:
-                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + ';><font color="' + color + '">' + text + '</font></a></font>'
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + '><font color="' + color + '">' + text + '</font></a></font>'
         else:
             if doubleQ:
-                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '";><font color="#999966">' + text + '</font></a></font>'
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '"><font color="#999966">' + text + '</font></a></font>'
             else:
-                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + ';><font color="#999966">' + text + '</font></a></font>'
+                html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + '><font color="#999966">' + text + '</font></a></font>'
         return html + div
 
     def genMoreEnginScript(sefl, linkID, content_divID, id, title, url, info):

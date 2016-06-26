@@ -19,6 +19,9 @@ class Figures(BaseExtension):
         self.category_obj = Category()
         self.record = None
         self.category = ''
+        self.img_style = "-webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; background: #f8f8f8; border-top:1px solid #ccc; border-right:1px solid #666; border-bottom:2px solid #999; border-left:1px solid #ccc; padding: 0px;"
+        self.img_style_2 = 'border-radius:50%;'
+        self.img_style_3 = '-webkit-filter: blur(1px); -moz-filter: blur(30px); -ms-filter: blur(30px); filter: blur(1px); filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=30, MakeShadow=false);'
 
     def excute(self, form_dict):
         name = form_dict['rTitle'] 
@@ -57,7 +60,7 @@ class Figures(BaseExtension):
                 if count == 0:
                     html += '<div>'
                 count += 1
-                html += '<img src="' + self.utils.fixUrl(url, img['src']) + '" width="80" height="50"/>&nbsp;'
+                html += '<img src="' + self.utils.fixUrl(url, img['src']) + '" width="50" height="50" style="' + self.img_style_2+ '"/>&nbsp;'
                 if count > 5:
                     count = 0
                     html += '</div><div>'
@@ -89,32 +92,36 @@ class Figures(BaseExtension):
         height = "100"
         thumb_width = '570px'
         row_count = 5
+        space = ''
         if column == '3':
             width = "80"
             height = "80"
             thumb_width = '450px'
             row_count = 5
+            space = 2 * '&nbsp;'
         if column == '2':
             width = "130"
             height = "130"
-            thumb_width = '570px'
+            thumb_width = '563px'
             row_count = 4
+            space = 3 * '&nbsp;'
         if column == '1':
             width = "150"
             height = "150"
             thumb_width = '600px'
             row_count = 6
+            space = 2 * '&nbsp;'
         if thumb != '':
-            html += '<a target="_blank" href="' + thumb + '"><img width="' + thumb_width + '" src="' + thumb + '"/></a><br/>'
-
+            html += '<a target="_blank" href="' + thumb + '"><img width="' + thumb_width + '" src="' + thumb + '" style="' + self.img_style + '"/></a><br/>'
+        
         if figures != None: 
             count = 0
             for fig in figures:
                 count += 1
                 if len(links) > 0:
-                    html += '<a target="_blank" href="' + links[count - 1] + '"><img class="demo-img pos-center" height="' + height + '" width="' + width + '" src="' + fig + '"/></a>&nbsp;&nbsp;'
+                    html += '<a target="_blank" href="' + links[count - 1] + '"><img class="demo-img pos-center" height="' + height + '" width="' + width + '" src="' + fig + '" style="' + self.img_style + '"/></a>' + space
                 else:
-                    html += '<a target="_blank" href="' + fig + '"><img height="' + height + '" width="' + width + '" src="' + fig + '"/></a>&nbsp;&nbsp;'
+                    html += '<a target="_blank" href="' + fig + '"><img height="' + height + '" width="' + width + '" src="' + fig + '" style="' + self.img_style + '"/></a>' + space
                 if count % row_count == 0:
                     html += '<br/>'
  

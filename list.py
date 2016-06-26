@@ -230,7 +230,7 @@ def align_id_title(record):
         else:
             course_name = course_name + get_space(0, course_name_len - utils.str_block_width(course_name))
     else:
-        if utils.str_block_width(course_name) > course_name_len:
+        if utils.str_block_width(course_name) > course_name_len + 15:
             course_name = course_name[0 : course_name_len - 3 ] + "..."
 
     if len(course_num) < course_num_len:
@@ -302,7 +302,10 @@ def print_table_separator(col):
     print table_separator
 
 def get_space(start, end):
-    return (end - start) * " "
+    if html_style:
+        return ""
+    else:
+        return (end - start) * " "
 
 def get_id_and_title(record):
     return record.get_id() + vertical + record.get_title()
@@ -739,15 +742,16 @@ def gen_html_body(content, row=0):
     index = 0
     if vertical == '|': 
         verticals = []
-        id_style = ''
+        id_style = 'vertical-align:top; width:' + str(course_num_len) + 'px; '
+        name_style = 'vertical-align:top; width:' + str(course_name_len * 9) + 'px; '
         if Config.hiden_record_id:
-            id_style = 'display: none;'
+            id_style += 'display: none; '
         if column_num == "2":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + ' >', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="' + name_style + '">', '</td><td style="' + id_style + '">', '<div id="#div-thumb-1"></div></td><td style="' + name_style + '">', '</td></tr>']   
         elif column_num == "3":
-            verticals = ['<tr class="' + style + '"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-1"></div></td><td style="vertical-align:top;">', '</td><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-2"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '"><td style="' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="' + name_style + '">', '</td><td style="' + id_style + '">', '<div id="#div-thumb-1"></div></td><td style="' + name_style + '">', '</td><td style="' + id_style + '">', '<div id="#div-thumb-2"></div></td><td style="' + name_style + '">', '</td></tr>']   
         elif column_num == "1":
-            verticals = ['<tr class="' + style + '";"><td style="vertical-align:top; ' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="vertical-align:top;">', '</td></tr>']   
+            verticals = ['<tr class="' + style + '";"><td style="' + id_style + '">', '<div id="#div-thumb-0"></div></td><td style="' + name_style + '">', '</td></tr>']   
 
         ids = []
         content_back = content.split('|')
