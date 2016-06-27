@@ -271,7 +271,7 @@ engin-267 | spreadsheets | https://docs.google.com/spreadsheets/u/0/?q= | priori
 engin-268 | document | https://docs.google.com/document/u/0/?q= | priority:3 description:tools
 engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 description:cloud
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:4 description:tools
-engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:0 description:tools
+engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:6 description:tools
 engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:cloud
 engin-273 | mail | https://mail.google.com/mail/u/0/#search/ | priority:0 description:tools
 engin-274 | dropbox | https://www.dropbox.com/search/personal?query=%s&query_unnormalized=%s&last_fq_path= | priority:0 description:cloud
@@ -446,3 +446,6 @@ engin-442 | aitopics | http://aitopics.org/search/site/ | priority:4 description
 engin-443 | ustc.edu | http://rec.ustc.edu.cn/search/course?_token=d550c2fe31937535a1a222c0a552dd33&keyword= | priority:0 description:course
 engin-444 | pastebin | http://pastebin.com/search?q= | priority:3 description:tools
 engin-445 | paperpile | https://paperpile.com/welcome?q= | priority:3 description:tools
+engin-446 | dribbble | https://dribbble.com/search?q= | priority:3 description:image art
+engin-447 | google.com/maps | https://www.google.com/maps/search/ | priority:3 description:map
+engin-448 | map.baidu | http://map.baidu.com/?q= | priority:3 description:map
