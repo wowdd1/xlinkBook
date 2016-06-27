@@ -4,7 +4,7 @@ goal:
     2. learning by doing, search by research(problem <-> resource & learn -> ED <-> resource & learn -> BP) 
     3. sync the state of art knowledge, build the freeway of knowledge
     4. capture information flow(data, structure, wiring, computing), explorer activity(activity -> deconstruction -> reconstruction -> value) 
-    5. simple, speed, flexible, intelligent, evolution(the best fecture is simple build complex, build is activities) 
+    5. simple, speed, flexible, intelligent, evolution(the best fecture is knowledge build knowledge, build is activities) 
 
 install:
 
