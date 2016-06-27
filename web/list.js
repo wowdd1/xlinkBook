@@ -19,9 +19,9 @@ $(document).ready(function(){
     var scrollPercentage = (scrollTop / bodyHeight);
     var percentage = 0.8;
     if (column == '1') {
-        percentage = 0.9;
-    } else if (column == '2') {
         percentage = 0.8;
+    } else if (column == '2') {
+        percentage = 0.7;
     } else if (column == '3') {
         percentage = 0.6;
     }
