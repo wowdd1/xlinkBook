@@ -63,8 +63,8 @@ class Config():
     recommend_engin_num = 18
 
     default_library = ''
-
-    background = ""
+    
+    background = ''
 
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
 		  'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\

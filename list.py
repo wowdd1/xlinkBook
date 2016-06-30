@@ -249,7 +249,7 @@ def align_describe(describe):
             describe += get_space(0, course_name_len - utils.str_block_width(describe))
         return get_space(0, course_num_len) + vertical + describe
     else:
-        return  vertical + describe
+        return  vertical + smartLink(describe)
 
 def print_with_color(text):
     global color_index
@@ -691,7 +691,10 @@ def build_lines(list_all, file_name):
                                                 div_content_list[index] = div_content_list[index].replace('#more', more_html)
                                                 break
                                     if content != '':
-                                        div_style = 'background-color:#F8F8FF; border-radius: 5px 5px 5px 5px; width:auto; float:left;'
+                                        div_style = ''
+                                        if Config.background == '':
+                                            div_style += 'background-color:#F8F8FF;'
+                                        div_style += 'border-radius: 5px 5px 5px 5px; width:auto; float:left;'
                                         div_content_list.append('<div id="' + nav_div_id + '" style="' + div_style + '">')
                                         div_content_list.append(content)
                                         div_content_list.append('</div>')
@@ -784,7 +787,10 @@ def get_background_color(content):
         if (index + 1) % 2 != 0 and index != 0:
             if (css_style_type == 0 or css_style_type == 6) and ((contain_keyword(content_back[index].strip()) == False or (contain_desc_keyword(content_back[index].strip())))):
                 #background_colors.append('background-color:#f6f5ec; border-radius: 5px 5px 5px 5px;')
-                background_colors.append('background-color:#F8F8FF; border-radius: 5px 5px 5px 5px;')
+                if Config.background == '':
+                    background_colors.append('background-color:#F8F8FF; border-radius: 5px 5px 5px 5px;')
+                else:
+                    background_colors.append('')
             else:
                 background_colors.append('')
     return background_colors
@@ -833,6 +839,12 @@ def gen_html_body_v2(content, row, subRow):
             index = index + 1
 
     return content
+
+def smartLink(content):
+    if content.strip().startswith('path:'):
+        return '<a target="_blank" href="http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=' + content[content.rfind('/') + 1 : ] + '">' + content + "</a>"
+    else:
+        return content
 
 def print_search_box(hiden):
     global search_box_displayed
