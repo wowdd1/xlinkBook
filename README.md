@@ -10,7 +10,7 @@ goal:
     6. share, distributed, simple, speed, flexible, intelligent, evolution
        (the best fecture is knowledge build knowledge, 
         the best tool is treat thinking as central,
-        the best result is communication with others) 
+        the best result is get the best solution as quick as possible) 
 
 install:
 
