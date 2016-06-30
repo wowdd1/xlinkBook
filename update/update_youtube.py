@@ -96,10 +96,13 @@ class YoutubeSpider(Spider):
                              'iBioEducation' : 'https://www.youtube.com/user/iBioEducation/videos',\
                              'tedx' : 'https://www.youtube.com/user/TEDxTalks/videos',\
                              'ted' : 'https://www.youtube.com/user/TEDtalksDirector/videos',\
-                             'CodeNeuro' : 'https://www.youtube.com/channel/UCZqlliYGopB9zved7pJTi_A/videos'}
-        self.videos_urls = { 'thebrainforum' : 'https://www.youtube.com/user/thebrainforum/videos' }
-        self.videos_urls = { 'NSFbraininitiative' : 'https://www.youtube.com/user/NSFbraininitiative/videos' }
-        self.videos_urls = { 'INCF' : 'https://www.youtube.com/user/INCForg/videos'}
+                             'CodeNeuro' : 'https://www.youtube.com/channel/UCZqlliYGopB9zved7pJTi_A/videos',\
+                             'thebrainforum' : 'https://www.youtube.com/user/thebrainforum/videos',\
+                             'NSFbraininitiative' : 'https://www.youtube.com/user/NSFbraininitiative/videos',\
+                             'INCF' : 'https://www.youtube.com/user/INCForg/videos',\
+                             'BrainFacts' : 'https://www.youtube.com/channel/UCR1t4P1IaRbpbvoqvv5USAA/videos?sort=dd&view=0&shelf_id=0',\
+                             'sfn' : 'https://www.youtube.com/user/sfnvideo/videos',\
+                             'neurochallenged' : 'https://www.youtube.com/user/neurochallenged/videos'}
     def getPlaylist(self, html, user):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):
