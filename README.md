@@ -1,7 +1,8 @@
 goal:
 
     1. integrating activities(agent, activity, resource)
-    2. sync the state of art information, build the freeway of information
+    2. sync the state of art information(core resource -> more resource), 
+       build the freeway of information
     3. learning by doing, search by research
        (problem <-> resource & learn -> ED <-> resource & learn -> BP) 
     4. capture information flow(data, structure, wiring, computing), track waveform in real time

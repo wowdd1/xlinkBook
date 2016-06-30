@@ -842,7 +842,8 @@ def gen_html_body_v2(content, row, subRow):
 
 def smartLink(content):
     if content.strip().startswith('path:'):
-        return '<a target="_blank" href="http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=' + content[content.rfind('/') + 1 : ] + '">' + content + "</a>"
+        src = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=' + content[content.rfind('/') + 1 : ] + '&column=2'
+        return '<a target="_blank" href="' + src + '">' + content + "</a>"
     else:
         return content
 
