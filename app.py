@@ -25,6 +25,8 @@ def index():
     print key
     if key == '':
         key = '?'
+    key = key.strip()
+    key = key.replace(' ', '+')
 
     db = request.args.get('db', '')
     if db == '':
@@ -223,12 +225,12 @@ def genTable(files, folder= '', db=''):
     for f in sorted(files,  cmp=lambda x,y : cmp(len(x), len(y))):
        count += 1
        if os.path.isfile(os.path.join(folder, f)):
-           tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f + '">' + str(count) + '. ' + f + '<a></td>'
+           tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f + '">' + f + '<a></td>'
        else:
            if db != '':
-               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
+               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?">' + f + '/</a></td>'
            else:
-               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + str(count) + '. ' + f + '/</a></td>'
+               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + f + '/</a></td>'
        if count % column_num == 0:
            html += '<tr>' + tds + '</tr>'
            tds = ''
@@ -239,10 +241,7 @@ def genTable(files, folder= '', db=''):
 
 def genList(files, folder='', db=''):
     html = ''
-    #if Config.center_content:
-    #    html += '<div style="margin:0px auto">'
-    #else:
-    html += '<ol>'
+    html += '<ul style="margin:0; padding:0; list-sytle:none;">'
     count = 0
     for f in sorted(files):
         count += 1
@@ -254,7 +253,7 @@ def genList(files, folder='', db=''):
             else:
                 html += '<li><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + f + '/</a></li>'
 
-    html += '</ol>'
+    html += '</ul>'
     return html
 
 

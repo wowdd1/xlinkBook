@@ -506,7 +506,7 @@ def build_lines(list_all):
         engin_list = utils.getEnginList(engin.strip())
 
     global loadmore_count
-    if source.find('arxiv') != -1:
+    if source.find('arxiv') != -1 and filter_keyword == '':
         loadmore_count = source[source.find('arxiv') + 11 : source.find('-')]
         loadmore_count = int(loadmore_count) - 300
 
@@ -661,6 +661,8 @@ def build_lines(list_all):
                                         length += len(link) + 1
                                         if count >= max_nav_link_row or length > split_length or link == last_engin_type:
                                             div_style = ''
+                                            if is_extension:
+                                                continue
                                             #if column_num != 1:
                                             #    div_style = 'background-color:#EEEEFF; border-radius: 3px 3px 3px 3px;'
                                             if Config.hiden_engins:
@@ -834,7 +836,7 @@ def print_search_box(hiden):
         if plugins_mode == False:
             print '<br/>'
         onclick = "search('search_txt', 'select');"
-        div = '<div style="width:778px;margin: 0 auto;' 
+        div = '<div style="text-align:center;width:100%;margin: 0px auto;' 
         if hiden:
             div += 'display: none;'
         #if plugins_mode:
