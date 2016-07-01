@@ -94,10 +94,10 @@ class Figures(BaseExtension):
         row_count = 5
         space = ''
         if column == '3':
-            width = "80"
-            height = "80"
+            width = "100"
+            height = "100"
             thumb_width = '450px'
-            row_count = 5
+            row_count = 4
             space = 2 * '&nbsp;'
         if column == '2':
             width = "130"
@@ -109,7 +109,7 @@ class Figures(BaseExtension):
             width = "150"
             height = "150"
             thumb_width = '600px'
-            row_count = 6
+            row_count = 7
             space = 2 * '&nbsp;'
         if thumb != '':
             html += '<a target="_blank" href="' + thumb + '"><img width="' + thumb_width + '" src="' + thumb + '" style="' + self.img_style + '"/></a><br/>'

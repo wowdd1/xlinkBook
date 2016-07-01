@@ -2,7 +2,7 @@ engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | pri
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/googlescholar.ico
 engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
-engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
+engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book star icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
 engin-6 | bookzz | http://bookzz.org/s/?q= | priority:0 description:book
 engin-7 | booksc | http://booksc.org/s/?q= | priority:0 description:paper
 engin-8 | booksee | http://en.booksee.org/s/?q= | priority:0 description:book
@@ -449,3 +449,5 @@ engin-445 | paperpile | https://paperpile.com/welcome?q= | priority:3 descriptio
 engin-446 | dribbble | https://dribbble.com/search?q= | priority:3 description:image art
 engin-447 | google.com/maps | https://www.google.com/maps/search/ | priority:3 description:map
 engin-448 | map.baidu | http://map.baidu.com/?q= | priority:3 description:map
+engin-449 | play.google | https://play.google.com/store/search?q=%s&c=apps | priority:3 description:tools
+engin-450 | thegreatcourses | http://www.thegreatcourses.com/search/?q= | priority:3 description:course
