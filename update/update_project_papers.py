@@ -12,16 +12,265 @@ class ProjectPaperSpider(Spider):
         self.school = "project-papers"
 
     def doWork(self):
-        self.getWastonPapers()
+        '''
         self.getSTAIRPapers()
         self.getSTARTPapers()
         self.getSparkPapers()
         self.getHadoopPapers()
         #self.getRoboBrainPapers()
-        self.getMobileEyePapers()
+        self.getMobileyePapers()
         self.getAutonomousDrivingPapers()
 
         self.getCALOPapers()
+        '''
+        self.getWastonPapers()
+        self.getDeepmindPapers()
+        self.getFacebookResearchPapers()
+        self.getGoogleBrainPapers()
+	self.getAI2Papers()
+	self.getBaiduResearchPapers()
+
+    def getBaiduResearchPapers(self):
+
+	urls = ['http://research.baidu.com/silicon-valley-ai-lab/', 'http://research.baidu.com/institute-of-deep-learning', 'http://research.baidu.com/big-data-lab/']
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "baidu-research", self.school)
+	file_lines = self.countFileLineNum(file_name)
+	f = self.open_db(file_name + ".tmp")
+	self.count = 0
+        papers = {}
+	for url in urls:
+	    r = requests.get(url)
+	    soup = BeautifulSoup(r.text)
+            title = ''
+	    link = ''
+	    authors = 'author:'
+	    summary = 'summary:'
+	    desc = 'description:'
+	    for p in soup.find_all('p'):
+		title = ''
+		link = ''
+		authors = 'author:'
+		summary = 'summary:'
+		desc = 'description:'
+	        data = p.text.split('\n')
+	        if len(data) == 3 or (len(data) == 1 and p.em != None):
+		    if data[0] == '':
+		        continue
+		    if len(data) == 3:
+		        title = data[0]
+			if p.a != None:
+			    link = p.a['href']
+			authors += data[1] + ' '
+			desc += data[2] + ' '
+			#print title
+			self.count += 1
+	                id = 'baidu-research-' + str(self.count)
+			if self.count < 10:
+			    id = 'baidu-research-0' + str(self.count)
+
+			papers[id] = [title, link, authors, desc]
+			title = ''
+			link = ''
+			authors = 'author:'
+			summary = 'summary:'
+			desc = 'description:'
+		    elif len(data) == 1:
+			summary += data[0] + ' '
+			id = 'baidu-research-' + str(self.count)
+			if self.count < 10:
+			    id = 'baidu-research-0' + str(self.count)
+			papers[id].append(summary)
+	for k, v in sorted(papers.items(), key=lambda papers:papers[0][papers[0].rfind('-') + 1 :]):
+	    print v
+	    if len(v) == 5:
+	        self.write_db(f, k, v[0], v[1], v[2] + v[4] + v[3])
+            else:
+	        self.write_db(f, k, v[0], v[1], v[2] + v[3])
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+	    print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+	else:
+	    self.cancel_upgrade(file_name)
+	    print "no need upgrade\n"
+
+    def getAI2Papers(self):
+	r = requests.get('http://allenai.org/papers.html')
+	soup = BeautifulSoup(r.text)
+	ul = soup.find('ul', class_='filter-data')
+	soup = BeautifulSoup(ul.prettify())
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "ai2", self.school)
+        file_lines = self.countFileLineNum(file_name)
+	f = self.open_db(file_name + ".tmp")
+	self.count = 0
+	for li in soup.find_all('li'):
+	    title = li.a.text.strip()
+	    link = li.a['href']
+	    sp = BeautifulSoup(li.prettify())
+	    authors = "author:"
+	    desc = 'description:'
+	    count = 0
+	    for em in sp.find_all('em'):
+                count += 1
+		if count == 1:
+		    authors += em.text.replace('\n', '').strip() + ' '
+		else:
+	            desc += em.text.replace('\n', '').strip() + ' '
+	    print authors
+	    print desc
+	    self.count += 1
+	    self.write_db(f, 'ai2-' + str(self.count), title, link, authors + desc)
+        if file_lines != self.count and self.count > 0:
+	    self.do_upgrade_db(file_name)
+	    print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+	else:
+	    self.cancel_upgrade(file_name)
+	    print "no need upgrade\n"
+
+    def getGoogleBrainPapers(self):
+        r = requests.get('https://research.google.com/pubs/BrainTeam.html')
+	soup = BeautifulSoup(r.text)
+	ul = soup.find('ul', class_='pub-list')
+	soup = BeautifulSoup(ul.prettify())
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "googlebrain", self.school)
+        file_lines = self.countFileLineNum(file_name)
+	f = self.open_db(file_name + ".tmp")
+        self.count = 0
+	for li in soup.find_all('li'):
+            sp = BeautifulSoup(li.prettify())
+	    link = sp.find('a', class_='pdf-icon tooltip')
+	    if link != None:
+		link = 'https://research.google.com' + link['href']
+	    else:
+		link = ''
+	    title = sp.find('p', class_='pub-title')
+	    count = 0
+	    authors ="author:"
+	    desc = 'description:'
+	    for p in sp.find_all('p'):
+	        count += 1
+	        if count == 1:
+	            title = self.utils.removeDoubleSpace(p.text.strip().replace('\n', ''))
+		if count == 2:
+		    authors += self.utils.removeDoubleSpace(p.text.replace('\n', '')).strip() + ' '
+		    authors = authors.replace(' ,', ',').strip() + ' '
+		if count == 3:
+		    desc += self.utils.removeDoubleSpace(p.text.replace('\n', '')).strip() + ' '
+            print title
+	    print link
+	    print authors
+	    print desc
+	    self.count += 1
+	    self.write_db(f, 'googlebrain-' + str(self.count), title, link, authors + desc)
+        self.close_db(f)
+	if file_lines != self.count and self.count > 0:
+	    self.do_upgrade_db(file_name)
+	    print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+	else:
+	    self.cancel_upgrade(file_name)
+	    print "no need upgrade\n"
+
+    def getFacebookResearchPapers(self):
+        count = 0
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "facebook-ai", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        while True:
+            count += 1
+	    #https://research.facebook.com/publications/machinelearning,machinelearningarea/
+            r = self.requestWithProxy2('https://research.facebook.com/publications/ai/?p=' + str(count))
+            print r.status_code
+            if r.status_code != 200:
+                break
+            if r.text.find('More contents coming soon') != -1:
+                break
+            soup = BeautifulSoup(r.text)
+            divs = soup.find_all('div', class_='_3y3h')
+            for div in divs:
+                sp = BeautifulSoup(div.prettify())
+                title = ''
+                link = ''
+                authors = 'author:'
+                published = 'published:'
+                summary = 'summary:'
+                category = 'category:'
+                desc = 'description:'
+                div = sp.find('div', class_='_3y3i')
+                if div == None:
+                    continue
+                if div.a != None:
+                    title += div.a.text.strip() + ' '
+                    link = 'https://research.facebook.com' + div.a['href']
+                div = sp.find('div', class_='_3y34')
+                if div != None:
+                    for li in BeautifulSoup(div.prettify()).find_all('li'):
+                        authors += li.text.strip() + ', '
+                    authors = authors[0 : len(authors) - 2] + ' '
+                div = sp.find('div', class_='_3y3n')
+                if div != None:
+                    desc += div.text.strip() + ' '
+                div = sp.find('div', class_='_3y3l')
+                if div != None:
+                    published += div.text.strip() + ' '
+                div = sp.find('div', class_='_1c-z')
+                if div != None:
+                    summary += div.text.strip() + ' '
+                div = sp.find('div', class_='_3y3m')
+                if div != None:
+                    category += self.utils.removeDoubleSpace(div.text.replace('\n', '')).strip() + ' '
+
+                print title
+                self.count += 1
+                self.write_db(f, 'facebook-ai-' + str(self.count), title, link, authors + published + category + summary + desc)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+    def getDeepmindPapers(self):
+        r = requests.get('https://deepmind.com/publications')
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "deepmind", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for ul in soup.find_all('ul', class_='publication'):
+            #print ul
+            sp = BeautifulSoup(ul.prettify())
+            title = sp.find('li', class_='title').text.strip()
+            link = sp.find('li', class_='title').a['href']
+            authors = ''
+            for span in sp.find_all('span', class_='author'):
+                authors += span.text.strip() + ', '
+            authors = authors[0 : len(authors) - 2]
+            desc = self.utils.removeDoubleSpace(sp.find('li', class_='abstract').text.strip().replace('\n', ' '))
+
+            print title
+            print link
+            print authors
+            print desc
+            self.count += 1
+            self.write_db(f, 'deepmind-' + str(self.count), title, link, 'author:' + authors + ' description:' + desc)
+
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
     def getCALOPapers(self):
         r = requests.get('http://www.ai.sri.com/pubs/search.php?project=179')
         soup = BeautifulSoup(r.text)
@@ -85,8 +334,8 @@ class ProjectPaperSpider(Spider):
             self.cancel_upgrade(file_name)
             print "no need upgrade\n"
 
-    def getMobileEyePapers(self):
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "MobileEye", self.school)
+    def getMobileyePapers(self):
+        file_name = self.get_file_name("eecs/" + self.school + "/" + "Mobileye", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -101,7 +350,7 @@ class ProjectPaperSpider(Spider):
                 author = "author:" + div.p.text.strip()
                 print title
                 self.count += 1
-                self.write_db(f, "mobileeye-paper-" + str(self.count), title, link, author)
+                self.write_db(f, "mobileye-paper-" + str(self.count), title, link, author)
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
             self.do_upgrade_db(file_name)

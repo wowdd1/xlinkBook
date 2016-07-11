@@ -15,6 +15,7 @@ from record import Record, Tag
 from utils import Utils
 import copy
 from config import Config
+from flask import session
 
 source = ""
 filter_keyword = ""
@@ -42,6 +43,7 @@ default_links_row = Config.default_links_row
 verify = ''
 database = ''
 dir_mode = False
+username = ''
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -350,6 +352,8 @@ def next_pos(text, start):
         return space_end(text, start, ret_end)
        
 def space_end(text, start, end): 
+    if html_style == False:
+        return end
 
     ret_end1 = end
     ret_end2 = end
@@ -431,6 +435,7 @@ def getScript(file_name, first_record):
         for content in div_content_list:
             print "array.push('" + content + "');" 
 
+    print 'var user_name = "' + username + '";'
     print 'var fileName = "' + os.getcwd() + '/' + source + '";'
     print 'var column = "' + column_num + '";'
     print 'var database = "' + database + '";'
@@ -546,8 +551,8 @@ def build_lines(list_all):
                 id_title_lines[i][j] = id_title
             else:
                 url = list_all[i][j].get_url()
-                if html_style and title.find('(') != -1 and title.strip().startswith('(') == False:
-                    title = title[0 : title.find('(')].strip()
+                #if html_style and title.find('(') != -1 and title.strip().startswith('(') == False:
+                #    title = title[0 : title.find('(')].strip()
                 
                 if url.strip() != '':
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
@@ -557,7 +562,7 @@ def build_lines(list_all):
                 else:
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
                 if engin != '':
-                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())#, '#33EE22')
+                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())  #, '#33EE22')
                     #print engin_list_dict
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
@@ -691,10 +696,10 @@ def build_lines(list_all):
                                         div_content_list.append(content)
                                         div_content_list.append('</div>')
                                         if plugins_mode == False:
-                                            div_content_list.append('<br\>')
+                                            div_content_list.append('<br>')
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_list.append(utils.getDescDivs(divID, link, title, max_nav_links_row, 'searchTopic(this,"' + "#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
+                                        div_content_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
                                 if l == lines - 1:
                                     gen_html_done = True
 
@@ -872,8 +877,10 @@ def print_table_head_with_style():
     center_style += '"'
     if loadmore_mode == False:
         print_search_box(search_box_hiden)
-        if library_hiden == False:
-            print utils.gen_libary()
+        if library_hiden == False and plugins_mode == False:
+            print utils.gen_libary(True,username, '')
+	if plugins_mode:
+	    print '<br>'
         print '<div ' + center_style + ' >'
     center_style = ''
     if Config.center_content:
@@ -989,7 +996,7 @@ def getLines(file_name):
             filter_result = []
             for line in all_lines:
                 record = Record(line)
-                data = record.get_id() + record.get_title()
+                data = record.get_title()
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
                     keyword, data = getKeywordAndData(filter_keyword, line)
@@ -1349,17 +1356,20 @@ def adjust_cell_len():
         custom_cell_len = cell_len * 2
 
 def adjust_link_number():
-    global max_nav_link_row
+    global max_nav_link_row, max_links_row
     if column_num == '1':
        max_nav_link_row = max_nav_link_row * 2
     if column_num == '2':
        max_nav_link_row = (max_nav_link_row - 2) * 2
+       max_links_row = max_links_row - 1
+    if column_num == '3':
+       max_links_row = max_links_row - 2
     
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:x', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox'])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1424,6 +1434,8 @@ def main(argv):
             plugins_mode = True
         elif o in ('-z', '--loadmore'):
             loadmore_mode = True
+        elif o in ('-y', '--username'):
+            username = str(a)
         elif o in ('-x', '--nosearchbox'):
             search_box_hiden = True
             library_hiden = True

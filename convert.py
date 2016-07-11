@@ -24,7 +24,7 @@ custom_html_tag = 'a'
 custom_filter = ''
 custom_contain = ''
 start = 0
-end = 1000
+end = 10000
 line_id = 0
 delete_from_char = ''
 parentid=''
@@ -50,7 +50,8 @@ def customPrint(data):
     '''
     if keys.has_key(data[1]) == False:
         keys[data[1]] = ''
-        print parentid + " |"  + data[1].replace('|', '') + " | " + data[2] + " | " 
+        print parentid  + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " 
+        #print str(line_id) + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " 
     #print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 def customPrintFile(line):

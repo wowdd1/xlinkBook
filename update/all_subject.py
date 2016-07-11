@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
+import sys
+sys.path.append("..")
+from config import Config
 
-default_subject = "eecs"
+default_subject = Config.default_subject
 
 subject_dict = {\
     'Config' : 'config',\
@@ -10,11 +13,11 @@ subject_dict = {\
     "Art" : "art-culture",\
     "Anthropology" : "anthropology",\
     "Culture" : "art-culture",\
-    "Brain" : "cognitive-science",\
-    "Biology" : "neuroscience",\
-    "Biological" : "neuroscience",\
-    "Cognitive Science" : "cognitive-science",\
-    "Life Sciences" : "neuroscience",\
+    "Brain" : "cognitive-neuroscience",\
+    "Biology" : "biology",\
+    "Biological" : "biology",\
+    "Cognitive Science" : "cognitive-neuroscience",\
+    "Life Sciences" : "biology",\
     "Business" : "business-management",\
     "Management" : "business-management",\
     "Chemistry" : "chemistry",\
@@ -53,8 +56,8 @@ subject_dict = {\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "art",\
-    "Neurobiology" : "neuroscience",\
-    "Neuroscience" : "neuroscience",\
+    "Neurobiology" : "cognitive-neuroscience",\
+    "Neuroscience" : "cognitive-neuroscience",\
     "Philanthropy" : "philosophy",\
     "Philosophy" : "philosophy",\
     "Psychology" : "psychology",\
@@ -103,8 +106,7 @@ need_update_subject_list = [
     'economics',
     #'rank',
     'physics',
-    #'cognitive-science',
-    #'neuroscience',
+    'cognitive-neuroscience',
     #'literature',
     #'linguistic',
     #'philosophy',

@@ -2,6 +2,7 @@
 
 
 class Config():
+    default_subject = 'eecs'
 
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
@@ -32,7 +33,7 @@ class Config():
     extension_mode = False
 
     default_tab = 'content'
-    second_default_tab = 'figures'
+    second_default_tab = ''#'figures'
 
 
     column_num = "1"

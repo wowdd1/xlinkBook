@@ -32,3 +32,11 @@ span {
    font: bold italic;
    position: absolute;
 }
+a {
+   font-weight:Normal; /*CSS字体效果 普通 可以改成bold粗体 如果去除此行那么默认是不显示下划线的*/
+   text-decoration:none; /*CSS下划线效果：无下划线*/
+}
+
+a:hover {
+   text-decoration:underline; /*CSS下划线效果：无下划线*/
+}
