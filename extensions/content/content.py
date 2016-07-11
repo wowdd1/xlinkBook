@@ -25,6 +25,8 @@ class Content(BaseExtension):
         self.utils = Utils()
 
     def loadContent(self, rID, name, content):
+	print 'rid :' + rID
+	print ' loadContent filename:' + name
         if len(content) != 0 and content.has_key(rID):
             return
 
@@ -32,6 +34,7 @@ class Content(BaseExtension):
             f = open(name, 'rU')
             all_lines = f.readlines()
             for line in all_lines:
+		line = line.strip()
                 record = ContentRecord(line)
                 if line.startswith('#') or record.get_parentid() == None:
                     continue
@@ -107,9 +110,11 @@ class Content(BaseExtension):
                 pid = r.get_parentid().strip()
                 if self.record_content.has_key(pid) and key.find('-') != -1:
                     pRecord = self.record_content[pid] 
-                    format_index = pid[pid.find('-') + 1 :] + '.' + str(count)
+                    format_index = pid[pid.rfind('-') + 1 :] + '.' + str(count)
                 elif r.get_id().find('-') != -1:
-                    format_index = r.get_id()[r.get_id().find('-') + 1 : ].strip()
+                    format_index = r.get_id()[r.get_id().rfind('-') + 1 : ].strip()
+		while format_index.find('-') != -1:
+		    format_index = format_index[format_index.find('-') + 1 :]
 
                 html += '<li><span>' + format_index + '</span>'
                 if len(format_index) > 4:

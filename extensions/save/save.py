@@ -13,9 +13,9 @@ class Save(BaseExtension):
         BaseExtension.__init__(self)
         self.utils = Utils()
 
-    def loadLibrary(self):
-        if os.path.exists('db/library/library') and len(self.saved_records) == 0:
-            f = open('db/library/library')
+    def loadLibrary(self, username):
+        if os.path.exists('db/library/' + username + '-library') and len(self.saved_records) == 0:
+            f = open('db/library/' + username + '-library')
             for line in f.readlines():
                 r = Record(line)
                 self.saved_records[r.get_id().strip()] = r
@@ -24,13 +24,14 @@ class Save(BaseExtension):
     def excute(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
+        user_name = form_dict['user_name'].encode('utf8')
         if self.saved_records.has_key(rID):
             return "already saved"
 
         record = self.utils.getRecord(rID, path=fileName)
         print record.get_title()
         if record != None and self.saved_records.has_key(record.get_id().strip()) == False:
-            f = open('db/library/library', 'a')
+            f = open('db/library/' + user_name + '-library', 'a')
             f.write(record.line.replace('\n', '').strip() + " path:" + fileName[fileName.find('db/') : ] + "\n")
             f.close()
             self.saved_records[record.get_id().strip()] = record
@@ -42,10 +43,13 @@ class Save(BaseExtension):
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
+        user_name = form_dict['user_name'].encode('utf8')
         print rID
-        self.loadLibrary()
-        print self.saved_records
-        return self.saved_records.has_key(rID) == False and rID.startswith('loop') == False
+        if user_name != '':
+            self.loadLibrary(user_name)
+            print self.saved_records
+            return self.saved_records.has_key(rID) == False and rID.startswith('loop') == False
+        return False
         
     def needCache(self):
         return False

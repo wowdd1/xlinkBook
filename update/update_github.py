@@ -652,7 +652,22 @@ class GithubSpider(Spider):
                 'edx' : 'https://github.com/edx',\
                 'bvlc' : 'https://github.com/BVLC',\
                 'tum-vision' : 'https://github.com/tum-vision/',\
-                'GoogleChrome' : 'https://github.com/GoogleChrome'}
+                'GoogleChrome' : 'https://github.com/GoogleChrome',\
+                'uArm-Developer' : 'https://github.com/uArm-Developer',\
+                'arduino' : 'https://github.com/arduino',\
+                'ai2' : 'https://github.com/allenai',\
+                'microsoftresearch' : 'https://github.com/microsoftresearch',\
+                'facebookresearch' : 'https://github.com/facebookresearch',\
+                'ibm-research' : 'https://github.com/ibm-research',\
+                'ibm-watson' : 'https://github.com/ibm-watson',\
+                'csail' : 'https://github.com/csail',\
+                'stanford' : 'https://github.com/stanford',\
+                'IBM-Bluemix' : 'https://github.com/IBM-Bluemix',\
+                'watson-developer-cloud' : 'https://github.com/watson-developer-cloud',\
+                'Samsung' : 'https://github.com/Samsung',\
+                'nvidia' : 'https://github.com/nvidia',\
+		'CBMM' : 'https://github.com/CBMM',\
+		'AllenInstitute' : 'https://github.com/AllenInstitute'}
         self.getProjectByDict(data)
         #self.getStartupPorjects()
 

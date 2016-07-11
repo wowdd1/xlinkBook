@@ -177,19 +177,29 @@ class Utils:
 
             else:
                 link = baseUrl + url
+
+        if link.startswith('//'):
+            return 'http:' + link
         return link
 
-    def gen_libary(self, root=False):
+    def gen_libary(self, root=False, user_name='', user_image=''):
         html = ''
-        if os.path.exists('db/library/library'):
-            f = open('db/library/library')
-            lines = f.readlines()
-            f.close()
-            db_root = ''
-            if root:
-                db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:10px">Home</a>'
-            if len(lines) > 0:
-                html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=library">My Library(' + str(len(lines)) + ')</a></div><div style="height: 21px; width: 100px"></div>'
+        db_root = ''
+        if root:
+            db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:10px">Home</a>'
+        if user_name != None and user_name != '':
+            lines = 0
+            if os.path.exists('db/library/' + user_name + '-library'):
+                f = open('db/library/' + user_name + '-library')
+                lines = len(f.readlines())
+                f.close()
+            html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root
+            if user_image != '':
+                html += '<img src="' + user_image + '" width="20" height="20" style="border-radius: 50%;"/>'
+            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library">' + user_name + '(' + str(lines) + ')</a></div>'
+        else:
+            html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/login">Login</a></div>'
+        html += '<div style="height: 21px; width: 100px"></div>'
 
         return html
 
@@ -300,13 +310,11 @@ class Utils:
     def getEnginUrlEx(self, engin, keyword, query=''):
         url = ''
         if engin != '':
-            url = self.getEnginUrl(engin) + keyword.strip()
-        if engin == "arxiv":
-            url = url.replace("%s", keyword.strip())
-        if engin == "doaj":
-            url = url.replace('%s', keyword.strip())
-        if engin == "ust.hk":
-            url = url.replace('%s', keyword.strip())
+            url = self.getEnginUrl(engin)
+            if url.find('%s') != -1:
+                url = url.replace("%s", keyword.strip())
+            else:
+                url += keyword.strip()
         if engin == "crunchbase" and query.find(':') != -1:
             url = self.getEnginUrl(engin) + keyword.strip().replace(' ', '-')
             query = query[query.find(':') + 1 :].strip()
@@ -518,7 +526,7 @@ class Utils:
         script += "showdiv('" + content_divID + "','" + linkID +"');"
         title = title.replace('"', '%20').replace("'",'%20').replace('&', '%20').replace(' ', '%20')
         info = info.replace('"', '%20').replace("'",'%20').replace(' ', '%20')
-        script += "appendContent('" + content_divID + "','" + id + "','" + title + "','" + url+ "','" + info + "');"
+        script += "appendContent('" + content_divID + "','" + id + "','" + title.strip().replace(" ", '%20') + "','" + url+ "','" + info + "');"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
@@ -816,24 +824,24 @@ class Utils:
 
 
     def gen_plugin_content(self, selection, search_box=True):
-        f = open("temp/input", 'w');
+        f = open("web_content/chrome/input", 'w');
         f.write(' | ' + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + '| | ')
         f.close()
-        cmd = "./list.py -i temp/input -b 4  -c 1  -p -e 'd:star' -n -d "
+        cmd = "./list.py -i web_content/chrome/input -b 4  -c 1  -p -e 'd:star' -n -d "
         if search_box == False:
             cmd += ' -x '
         html = subprocess.check_output(cmd, shell=True)
         #print data
         #data = "ddd"
-        f = open('temp/output.html', 'w')
+        f = open('web_content/chrome/output.html', 'w')
         f.write(html)
         f.close()
 
         print selection
         if search_box:
-            return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
+            return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         else:
-            return '<iframe  id="iFrameLink" width="600" height="190" frameborder="0"  src="http://' + Config.ip_adress + '/temp/test.html"></iframe>'
+            return '<iframe  id="iFrameLink" width="600" height="190" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         #return '{"firstAccess" : "' + data + '"}'
 
 

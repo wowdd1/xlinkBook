@@ -15,7 +15,9 @@ class Delete(BaseExtension):
 
     def excute(self, form_dict):
         rID = form_dict['rID'].encode('utf8')
-        library = 'db/library/library'
+        user_name = form_dict['user_name'].encode('utf8')
+        library = 'db/library/' + user_name + '-library'
+        print library
         if os.path.exists(library):
             f = open(library, 'rU')
             all_lines = []
@@ -23,16 +25,19 @@ class Delete(BaseExtension):
                 if rID != line[0 : line.find('|')].strip():
                     all_lines.append(line)
             f.close()
+            f = open(library, 'w')
             if len(all_lines) > 0:
-                f = open(library, 'w')
                 for line in all_lines:
                     f.write(line)
+            else:
+                f.write('')
                 f.close()
-                return 'http://' + Config.ip_adress + '/?db=library/&key=library'
+            return 'http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library'
         return 'error'
 
     def check(self, form_dict):
-        return form_dict.has_key('delete') and form_dict['delete'] and form_dict['rID'].startswith('loop') == False
+        user_name = form_dict['user_name']
+        return user_name != '' and form_dict.has_key('delete') and form_dict['delete'] and form_dict['rID'].startswith('loop') == False
 
     def needCache(self):
         return False

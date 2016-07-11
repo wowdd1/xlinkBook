@@ -35,12 +35,13 @@ class Figures(BaseExtension):
             figures, links = self.getRandomFigures(name)
 
         thumbs = ''
-        if rID.find('arxiv') >= 0:
+        if rID.find('arxiv') >= 0 or form_dict['url'].find('arxiv') != -1:
             thumbs = "http://www.arxiv-sanity.com/static/thumbs/" + self.getPid(form_dict['url'])
             version = self.utils.get_last_arxiv_version(rID[rID.find('arxiv-') + 6 :].replace('-', '.')) 
             jpg = '.pdf.jpg'
             thumbs = thumbs + version + jpg
             print 'thumbs ' + thumbs
+            return self.genHtml(figures, form_dict['column'], links, thumbs)
         return self.getRefImage(rID, form_dict['url']) + self.genHtml(figures, form_dict['column'], links, thumbs)
 
 

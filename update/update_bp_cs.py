@@ -1,22 +1,16 @@
 #!/usr/bin/env python
 
-
-
 from spider import *
 sys.path.append("..")
 from utils import Utils
 
-
 class BpCsSpider(Spider):
-
-
-
 
     def doWork(self):
         utils = Utils()
         r = requests.get('http://jeffhuang.com/best_paper_awards.html')
         soup = BeautifulSoup(r.text)
-        file_name = self.get_file_name("eecs/best_cs_paper", "")
+        file_name = self.get_file_name("eecs/papers/best_cs_paper", "")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -76,6 +70,6 @@ class BpCsSpider(Spider):
             else:
                 print item
                 self.count += 1
-                self.write_db(f, number, title, '', 'author:' + item)
+		self.write_db(f, number, title, 'http://scholar.google.com/scholar?as_q=&num=10&btnG=Search+Scholar&as_epq=' + title, 'id:' + number + ' author:' + item)
 start = BpCsSpider()
 start.doWork()

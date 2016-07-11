@@ -27,9 +27,64 @@ class YoutubeSpider(Spider):
                 'toronto' : 'https://www.youtube.com/user/universitytoronto/playlists',\
                 'uns' : 'https://www.youtube.com/user/NUScast/playlists',\
                 'unsw' : 'https://www.youtube.com/user/UNSWelearning/playlists?sort=dd&view=1',\
-                'nptel' : 'https://www.youtube.com/user/nptelhrd/playlists'}
+                'nptel' : 'https://www.youtube.com/user/nptelhrd/playlists',\
+		'CBMM' : 'https://www.youtube.com/channel/UCGoxKRfTs0jQP52cfHCyyRQ/playlists'}
         self.videos_urls = { #'ucl' : 'https://www.youtube.com/user/Mikesev/videos?view=0&sort=dd&live_view=500&flow=grid',
-                             'sciwrite' : 'https://www.youtube.com/channel/UC-wb-n89yM0lBiP2QltsDaA/videos'}
+                             #'sciwrite' : 'https://www.youtube.com/channel/UC-wb-n89yM0lBiP2QltsDaA/videos',\
+                             #'MicrosoftResearch' : 'https://www.youtube.com/user/MicrosoftResearch/videos',\
+                             #'GoogleTechTalks' : 'https://www.youtube.com/user/GoogleTechTalks/videos',\
+                             #'GoogleDevelopers' : 'https://www.youtube.com/user/GoogleDevelopers/videos',\
+                             #'Apple' : 'https://www.youtube.com/user/Apple/videos',\
+                             #'FacebookDevelopers' : 'https://www.youtube.com/user/FacebookDevelopers/videos',\
+                             #'IBMResearch' : 'https://www.youtube.com/user/IBMLabs/videos',\
+                             #'BaiduResearch' : 'https://www.youtube.com/channel/UCm08TSsp87RRfn9SB_khuUQ/videos',\
+                             #'DeepMind' : 'https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A/videos',\
+                             #'Nvidia' : 'https://www.youtube.com/user/nvidia/videos',\
+                             #'BostonDynamics' : 'https://www.youtube.com/user/BostonDynamics/videos',\
+                             #'TwitterDev' : 'https://www.youtube.com/channel/UCcRd4oOOUPKAvg6vs2P9ReA/videos',\
+                             #'DARPA' : 'https://www.youtube.com/user/DARPAtv/videos',\
+                             #'nasa' : 'https://www.youtube.com/user/NASAtelevision/videos',\
+                             #'Watson' : 'https://www.youtube.com/user/IBMWatsonSolutions/videos',\
+                             #'IBM' : 'https://www.youtube.com/user/IBM/videos',\
+                             #'cvprtum' : 'https://www.youtube.com/user/cvprtum/videos',\
+                             #'ibmthinkacademy' : 'https://www.youtube.com/user/ibmthinkacademy/videos',\
+                             #'developerworks' : 'https://www.youtube.com/user/developerworks/videos',\
+                             #'rework' : 'https://www.youtube.com/user/teamrework/videos',\
+                             #'AmazonWebServices' : 'https://www.youtube.com/user/AmazonWebServices/videos',\
+                             #'MITCSAIL' : 'https://www.youtube.com/user/MITCSAIL/videos',\
+                             #'cmurobotics' : 'https://www.youtube.com/user/cmurobotics/videos',\
+                             #'stanfordeng' : 'https://www.youtube.com/user/stanfordeng/videos',\
+                             #'docker' : 'https://www.youtube.com/user/dockerrun/videos',\
+                             #'spark' : 'https://www.youtube.com/user/TheApacheSpark/videos',\
+                             #'TwitterUniversity' : 'https://www.youtube.com/user/TwitterUniversity/videos',\
+                             #'AI2' : 'https://www.youtube.com/channel/UCEqgmyWChwvt6MFGGlmUQCQ',\
+                             #'GoogleCloudPlatform' : 'https://www.youtube.com/user/googlecloudplatform/videos',\
+                             #'lifeatgoogle' : 'https://www.youtube.com/user/lifeatgoogle/videos',\
+                             #'spacex' : 'https://www.youtube.com/user/spacexchannel/videos',\
+                             #'mitmedialab' : 'https://www.youtube.com/user/mitmedialab/videos',\
+                             #'MagicLeap' : 'https://www.youtube.com/channel/UC2E1x3l45YUO2eOhRv-A7lw/videos',\
+                             #'RockstarGames' : 'https://www.youtube.com/user/RockstarGames/videos',\
+                             #'oculusvr' : 'https://www.youtube.com/user/oculusvr/videos',\
+                             #'ign' : 'https://www.youtube.com/user/IGNentertainment/videos',\
+                             #'CryTek' : 'https://www.youtube.com/user/CryDevPortal/videos',\
+                             #'UnrealEngin' : 'https://www.youtube.com/user/UnrealDevelopmentKit/videos',\
+                             #'TwoMinutePapers' : 'https://www.youtube.com/user/keeroyz/videos',\
+                             #'watsonanalytics' : 'https://www.youtube.com/user/watsonanalytics/videos',\
+                             #'VisualStudio' : 'https://www.youtube.com/user/VisualStudio/videos',\
+                             #'WorkingAtMicrosoft' : 'https://www.youtube.com/user/WorkingAtMicrosoft/videos',
+                             #'singularityu' : 'https://www.youtube.com/user/singularityu/videos',\
+                             #'SingularityLectures' : 'https://www.youtube.com/channel/UC-a4MiIis33-Z9vLYFerN6g/videos',\
+                             #'2045Initiative' : 'https://www.youtube.com/user/2045ru/videos',\
+                             #'MITTechnologyReview' : 'https://www.youtube.com/user/TechnologyReview/videos',\
+                             #'nature' : 'https://www.youtube.com/user/NatureVideoChannel/videos',\
+                             #'ScienceMag' : 'https://www.youtube.com/user/ScienceMag/videos',\
+                             #'SciAmerican' : 'https://www.youtube.com/user/SciAmerican/videos',\
+			     #'nips' : 'https://www.youtube.com/user/NeuralInformationPro/videos',\
+			     #'UCFCRCV' : 'https://www.youtube.com/user/UCFCRCV/videos',\
+			     #'McGovernInstitute' : 'https://www.youtube.com/channel/UCDqKkRpDCSqPx8kGn0aTIZw/videos',\
+			     #'NIBIB' : 'https://www.youtube.com/user/NIBIBTV/videos',\
+			     #'TheHumanBrainProject' : 'https://www.youtube.com/user/TheHumanBrainProject/videos',\
+			     'allenInstitute' : 'https://www.youtube.com/user/AllenInstitute/videos'}
     def getPlaylist(self, html, user):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):
@@ -62,14 +117,16 @@ class YoutubeSpider(Spider):
                 if contain != '' and key.find(contain) == -1:
                     continue
                 url = 'https://www.youtube.com' + a['href']
-                print prefix + ' | ' + key + ' | ' + url + ' | '
+                self.count += 1
+                print prefix + '-' + str(self.count) + ' | ' + key + ' | ' + url + ' | '
                 self.videos[key] = url
 
     def getVideos(self, user, url):
         self.videos = {}
         r = requests.get(url)
-        contain = 'SciW'
-        prefix = 'COMP3095'
+        contain = ''
+        prefix = user.lower()
+        self.count = 0
         self.getVideo(r.text, user, contain, prefix)
         
         load_more_href = self.getLoadMoreHref(r.text)
@@ -112,7 +169,7 @@ class YoutubeSpider(Spider):
                     k = k[k.find(' ') : ].strip()
 
             print k + ' ' + v
-            #self.write_db(f, video_id, k, v, 'videourl:' + v)
+            self.write_db(f, video_id, k, v, 'videourl:' + v)
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
             self.do_upgrade_db(file_name)

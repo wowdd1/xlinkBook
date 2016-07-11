@@ -14,7 +14,6 @@ class ExtensionManager:
     
     extensions = {}
     extensions_check_cache = {}
-    cache_path = ''
  
     def loadExtensions(self):
         if len(self.extensions) > 0:
@@ -52,6 +51,19 @@ class ExtensionManager:
 
        return None
 
+    def findRecordInLib(self, rID, fileName):
+        utils = Utils()
+	while True:
+            r = utils.getRecord(rID, path=fileName, use_cache=False)
+	    if r.get_id().strip() != '':
+		return r
+	    else:
+		if rID.find('-') != -1:
+		    rID = rID[0 : rID.rfind('-')]
+		else:
+		    return None
+
+
     def doWork(self, form_dict):
         form = form_dict.copy()
         self.loadExtensions()
@@ -59,18 +71,13 @@ class ExtensionManager:
         rID = form['rID'].encode('utf-8')
         fileName = form['fileName'].encode('utf-8')
         if fileName.endswith('library'):
-            utils = Utils()
-            r = utils.getRecord(rID, path=fileName, use_cache=False)
-            if r.get_id().strip() != '':
-                print r.line
+            r = self.findRecordInLib(rID, fileName)
+            if r != None and r.get_id().strip() != '':
                 lr = LibraryRecord(r.line)
                 if lr.get_path() != None and lr.get_path().strip() != '':
                     form['fileName'] = os.getcwd() + lr.get_path().strip()
                 else:
-                    form['fileName'] = os.getcwd() + 'db/library/library'
-                self.cache_path = form['fileName']
-            else:
-                form['fileName'] = self.cache_path
+                    form['fileName'] = os.getcwd() + 'db/library/' + form['user_name'] + '-library'
 
         if check == 'true':
             if form['name'] == "*":

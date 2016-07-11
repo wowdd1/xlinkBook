@@ -124,8 +124,8 @@ function searchTopic(obj, topic, otherInfo){
     for(var i=0;i<options.length;i++){
         if (trimStr(options[i].text) == trimStr(obj.text)) {
             console.log("xx", options[i].value);
-            if (options[i].value.indexOf("$") != -1) {
-                window.open(options[i].value.replace("$", topic.replace("&nbsp;", " ")) + otherInfo);
+            if (options[i].value.indexOf("%s") != -1) {
+                window.open(options[i].value.replace("%s", topic.replace("&nbsp;", " ")) + otherInfo);
             } else {
                 console.log("xx", obj.text.slice(0, 1));
                 if (options[i].value.slice(0, 1) == "!"){
@@ -174,6 +174,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
     }
     postArgs["divID"] = divID + "-" + obj.text;
     postArgs["defaultLinks"] = 2;
+    postArgs['user_name'] = user_name;
     if (obj.text == "search") {
         var selection = window.getSelection().toString();
         if (selection != '') {
@@ -185,6 +186,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
             $("#" + targetid).html("please select some text for search");
             return
         }
+        $("#" + targetid).html('');
     }
     var extension = false;
     for (var i = 0; i < extensions.length; i++) {
@@ -256,8 +258,12 @@ function share(website, url, title) {
        window.open('http://www.facebook.com/sharer/sharer.php?u=' + url);
    } else if (website == 'twitter') {
        window.open("https://twitter.com/intent/tweet?text=" + title + ' (' + url + ')');
+   } else if (website == 'google+'){
+       window.open('https://plus.google.com/share?url=' + url);
    } else if (website == 'linkedin'){
        window.open("http://www.linkedin.com/shareArticle?mini=true&amp;url=" + url + '&amp;title=' + title + ' (' + url + ')&amp;source=xlinkbook');
+   } else if (website == 'weibo') {
+       window.open('http://service.weibo.com/share/share.php?url=' + url + '&appkey=&title=' + title + '&pic=&ralateUid=&language=zh_cn');
    }
 }
 
@@ -288,13 +294,13 @@ function appendContent(targetid, id, topic, url, otherInfo){
     }
     var module = "*";
     var nocache = 'false'
-    if (targetid.indexOf("-content-") > 0) {
-        module = "content"
-    }
+    //if (targetid.indexOf("-content-") > 0) {
+    //    module = "content"
+    //}
     if (fileName.indexOf("library") > 0){
         nocache = "true";
     }
-    $.post('/extensions', {name : module, rID : id, url : url, fileName : fileName, nocache : nocache, 'check' : 'true'}, function(data){
+    $.post('/extensions', {name : module, rID : id, url : url, fileName : fileName, nocache : nocache, 'check' : 'true', user_name : user_name}, function(data){
         if (data.trim() != '') {
             console.log("xx", data)
             var extensions = data.split(" ");
@@ -352,7 +358,11 @@ function appendContentBox(targetid, boxid){
     var box=document.getElementById(boxid);
     search_box = box;
     console.log("id", targetid);
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, box.value.replace('', '%20')).replace(/#otherInfo/g, "");
+    var data = box.value;
+    while(data.indexOf(' ') >= 0) {
+	data = data.replace(' ', '%20');
+    }
+    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, data).replace(/#otherInfo/g, "");
     for (var i = 0; i < extensions.length; i++) {
         hidenMetadata(targetid, extensions[i], "none")
     }

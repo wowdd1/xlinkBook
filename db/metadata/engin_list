@@ -2,7 +2,7 @@ engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | pri
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/googlescholar.ico
 engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
-engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book star icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
+engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
 engin-6 | bookzz | http://bookzz.org/s/?q= | priority:0 description:book
 engin-7 | booksc | http://booksc.org/s/?q= | priority:0 description:paper
 engin-8 | booksee | http://en.booksee.org/s/?q= | priority:0 description:book
@@ -32,10 +32,10 @@ engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:10
 engin-32 | coursera | https://www.coursera.org/courses?query= | priority:8 description:course
 engin-33 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | priority:8 description:course
-engin-35 | videolectures | http://videolectures.net/site/search/?q= | priority:8 description:talk icon:http://mycroftproject.com/updateos.php/id0/videolectures.ico
+engin-35 | videolectures | http://videolectures.net/site/search/?q= | priority:8 description:talk star icon:http://mycroftproject.com/updateos.php/id0/videolectures.ico
 engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | priority:0 description:people review
 engin-37 | ted | http://www.ted.com/search?q= | priority:0 description:talk
-engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | priority:0 description:paper
+engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | priority:0 description:paper journal
 engin-39 | frontiersin | http://www.frontiersin.org/SearchData.aspx?sq= | priority:0 description:paper
 engin-40 | plos.org | http://journals.plos.org/plosone/search?filterJournals=PLoSONE&q= | priority:0 description:journal
 engin-41 | plosone | http://www.plosone.org/search/simple?from=globalSimpleSearch&filterJournals=PLoSONE&query= | priority:0 description:paper
@@ -91,11 +91,11 @@ engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 descrip
 engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social star
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:social
 engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization star icon:http://mycroftproject.com/updateos.php/id0/linkedin_googfr.ico
-engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | priority:4 description:paper 
+engin-91 | arxiv-sanity | http://www.arxiv-sanity.com/search?q= | priority:4 description:paper
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | priority:8 description:social star icon:http://mycroftproject.com/updateos.php/id0/facebookvideomirror.ico
 engin-93 | crunchbase | https://www.crunchbase.com/%s/ | priority:8 description:organization people icon:http://mycroftproject.com/updateos.php/id0/crunchbasesearch.png
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | priority:0 description:organization review
-engin-95 | douban | https://www.douban.com/search?q= | priority:0 description:organization book people
+engin-95 | douban | https://www.douban.com/search?q= | priority:0 description:book social
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | priority:0 description:book
 engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | priority:0 description:business
 engin-98 | cn.indeed | http://cn.indeed.com/%E5%B7%A5%E4%BD%9C?l=%E6%B7%B1%E5%9C%B3%E5%B8%82&rq=1&fromage=last&q= | priority:0 description:business
@@ -115,7 +115,7 @@ engin-111 | slashdot | https://slashdot.org/index2.pl?fhfilter= | priority:0 des
 engin-112 | digg | http://digg.com/search?q= | priority:0 description:digg
 engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | priority:0 description:wiki
 engin-114 | groups | https://groups.google.com/forum/#!search/ | priority:0 description:organization social
-engin-115 | cognet | http://search.mit.edu/search?client=mit&site=default_collection&output=xml_no_dtd&proxystylesheet=mit&as_sitesearch=cognet.mit.edu&q= | priority:0 description:book paper
+engin-115 | cognet | http://search.mit.edu/search?client=mit&site=default_collection&output=xml_no_dtd&proxystylesheet=mit&as_sitesearch=cognet.mit.edu&q= | priority:0 description:book paper dataset
 engin-116 | lagou | http://www.lagou.com/jobs/list_ | priority:0 description:business
 engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=package:chromium&type=cs&q= | priority:0 description:code
 engin-118 | searchcode | https://searchcode.com/?q= | priority:0 description:code
@@ -165,7 +165,7 @@ engin-161 | physicsworld | http://physicsworld.com/cws/search?siteCode=phw&query
 engin-162 | wired | http://www.wired.com/?s= | priority:0 description:journal
 engin-163 | technologyreview | https://www.technologyreview.com/search/?s= | priority:0 description:journal
 engin-164 | duckduckgo | https://duckduckgo.com/?q= | priority:4 description:all
-engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:4 description:all 
+engin-165 | wolframalpha | https://www.wolframalpha.com/input/?i= | priority:1 description:all 
 engin-166 | yasiv.com/y | http://www.yasiv.com/youtube#/Search?q= | priority:5 description:visualization 
 engin-167 | yasiv.com/# | http://www.yasiv.com/#/Search?category=Books&lang=US&q= | priority:5 description:visualization
 engin-168 | academictorrents | http://academictorrents.com/browse.php?search= | priority:5 description:paper course dataset p2p
@@ -192,7 +192,7 @@ engin-188 | alison | https://alison.com/search/result/?q= | priority:0 descripti
 engin-189 | channel9 | https://channel9.msdn.com/Search?term= | priority:6 description:talk
 engin-190 | technet | https://social.technet.microsoft.com/Search/en-US?query=%s&ac=4 | priority:0 description:event talk course
 engin-191 | msevents | https://msevents.microsoft.com/cui/SearchDisplay.aspx?culture=en-US&q= | priority:0 description:event talk course
-engin-192 | ibm.com | http://www.ibm.com/Search/?q=%s&v=18&en=utf&lang=en&cc=us&sn=dw&dws=dw&hpp=20 | priority:0 description:event develop
+engin-192 | ibm.com | http://www.ibm.com/Search/?q=%s&v=18&en=utf&lang=en&cc=us&sn=dw&dws=dw&hpp=20 | priority:0 description:event develop paper project
 engin-193 | huiyi.csdn | http://huiyi.csdn.net/activity/home?t=%s&c=0&s=&a= | priority:0 description:event
 engin-194 | developer.apple | https://developer.apple.com/search/?q=%s&type=Videos | priority:0 description:develop
 engin-195 | developers.google | https://developers.google.com/s/results/?q= | priority:0 description:develop
@@ -355,7 +355,7 @@ engin-351 | fhm.com | http://www.fhm.com/search?utf8=%E2%9C%93&query=%s&button= 
 engin-352 | playboy | http://www.playboy.com/search?q= | priority:0 description:18+
 engin-353 | torrentreactor | https://torrentreactor.com/torrents-search/ | priority:0 description:p2p
 engin-354 | peekyou | http://www.peekyou.com/ | priority:0 description:people
-engin-355 | mendeley | https://www.mendeley.com/research-papers/search/?query= | priority:4 description:tools
+engin-355 | mendeley | https://www.mendeley.com/research-papers/search/?query= | priority:4 description:tools discovery
 engin-356 | zotero | https://www.zotero.org/search/?q= | priority:4 description:tools
 engin-357 | kamihq | https://web.kamihq.com/web/viewer.html?q= | priority:4 description:tools
 engin-358 | ci.nii | http://ci.nii.ac.jp/search?q=%s&range=0&count=&sortorder=&type=0 | priority:0 description:paper
@@ -392,11 +392,11 @@ engin-388 | overleaf | https://www.overleaf.com/dash/q/ | priority:0 description
 engin-389 | labii | https://www.labii.com/groups/select/notes_eln/?q= | priority:0 description:tools
 engin-390 | peerj | https://peerj.com/search/?q= | priority:0 description:journal
 engin-391 | datahub | https://datahub.io/dataset?q= | priority:0 description:dataset
-engin-392 | scizzle | http://www.myscizzle.com/search?term= | priority:0 description:paper
+engin-392 | scizzle | http://www.myscizzle.com/search?term= | priority:0 description:paper discovery
 engin-393 | europepmc | http://labs.europepmc.org/search/?page=1&query= | priority:0 description:paper
 engin-394 | sharelatex | https://www.sharelatex.com/project?q= | priority:0 description:tools
 engin-395 | colwiz | https://www.colwiz.com/search/publications?q= | priority:3 description:tools
-engin-396 | f1000 | http://f1000.com/work/#/items?query= | priority:3 description:tools
+engin-396 | f1000 | http://f1000.com/work/#/items?query= | priority:3 description:tools discovery
 engin-397 | yilan | http://www.yilan.io/search/?search=vision&sitetype=site | priority:0 description:discovery
 engin-398 | scireader | http://www.scireader.org/?q= | priority:0 description:discovery
 engin-399 | readcube | https://app.readcube.com/#/library/search?q= | priority:5 description:tools
@@ -451,3 +451,21 @@ engin-447 | google.com/maps | https://www.google.com/maps/search/ | priority:3 d
 engin-448 | map.baidu | http://map.baidu.com/?q= | priority:3 description:map
 engin-449 | play.google | https://play.google.com/store/search?q=%s&c=apps | priority:3 description:tools
 engin-450 | thegreatcourses | http://www.thegreatcourses.com/search/?q= | priority:3 description:course
+engin-451 | mystudylife | https://app.mystudylife.com/search?q= | priority:3 description:tools
+engin-452 | pubchase | https://www.pubchase.com/search?keywords= | priority:3 description:paper discovery 
+engin-453 | sparrho | https://www.sparrho.com/search/ | priority:3 description:paper discovery
+engin-454 | nowomics | https://nowomics.com/?q= | priority:3 description:paper discovery
+engin-455 | dlvr.it | https://app.dlvr.it/share/automate/new/inputs?q= | priority:3 description:discovery
+engin-456 | robohub | http://robohub.org/index.php?s= | priority:0 description:news
+engin-457 | patreon | https://www.patreon.com/search?q= | priority:0 description:finance
+engin-458 | microsoft | https://www.microsoft.com/en-us/research/search/?q= | priority:0 description:paper project
+engin-459 | research.google | https://research.google.com/search.html?q= | priority:0 description:paper project
+engin-460 | research.facebook | https://research.facebook.com/search?q= | priority:0 description:paper project
+engin-461 | csail | https://www.csail.mit.edu/search/node/ | priority:0 description:paper project
+engin-462 | apa.org | http://www.apa.org/search.aspx?query= | priority:0 description:dataset
+engin-463 | figshare | https://figshare.com/search?q=%s&quick=1 | priority:0 description:dataset
+engin-464 | osf.io | https://osf.io/search/?q= | priority:0 description:tools
+engin-465 | jeffhuang.com | http://jeffhuang.com/best_paper_awards.html#?q= | priority:0 description:paper
+engin-466 | mlsurveys | http://www.mlsurveys.com/?q= | priority:0 description:paper
+engin-467 | goodreads | https://www.goodreads.com/search?q= | priority:0 description:book review
+engin-468 | iarpa.gov | https://www.iarpa.gov/index.php/search?q= | priority:0 description:project

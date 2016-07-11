@@ -146,7 +146,7 @@ class WrapRecord(Record):
     def get_tag_content(self, tag, max_pos = False):
         start_pos = self.describe.lower().find(tag)
         if start_pos != -1:
-            end_pos = self.next_tag_pos(start_pos, max_pos)
+            end_pos = self.next_tag_pos(start_pos + len(tag), max_pos)
             if end_pos != -1:
                 return self.describe[start_pos + len(tag) : end_pos].strip()
             else:

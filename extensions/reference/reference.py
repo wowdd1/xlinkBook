@@ -59,12 +59,12 @@ class Reference(BaseExtension):
             return self.genReferenceHtml2(self.semanticscholar.getReferences(form_dict['rTitle']), form_dict['divID'].encode('utf8'),
                                           form_dict['defaultLinks'], form_dict['rID'])
         else:
-            return self.getAllLinks(form_dict['url'])          
+            return self.getAllLinks(form_dict['url'], form_dict['divID'].encode('utf8'), form_dict['rID'])          
 
 
-    def getAllLinks(self, url):
+    def getAllLinks(self, url, ref_divID, rID):
         print 'getAllLinks ' + url
-        if url == '':
+        if url == '' or url.startswith('http') == False:
             return ''
         else:
             user_agent = {'User-agent': 'Mozilla/5.0'}
@@ -78,20 +78,59 @@ class Reference(BaseExtension):
             for a in soup.find_all('a'):
                 if a.attrs.has_key('href') == False or link_dict.has_key(a['href']):
                     continue
+                #print a['href']
+                if url.find('youtube') != -1:
+                    if url.find('watch') != -1 and a.text.find('Duration') == -1 and a['href'].startswith('/watch') == False:
+                        continue
+                    if a['href'].startswith('/watch') == False:
+                        continue
                 link = a['href']
                 title = a.text.strip().encode('utf-8')
                 if title == '':
                     title = link.replace('http://', '').replace('www.', '')
                 link_dict[link] = link
                 link = self.utils.fixUrl(url, link)
+                text = title
+                if url.find('youtube') != -1 and link.find('watch') != -1:
+                    link = 'https://www.youtube.com' + link[link.rfind('/watch') :]
+                    if url.find('playlist') == -1:
+                        if a.text.find('Duration') != -1:
+                            text = self.formatYoutubeLink(a, True).replace(' ', '%20') 
+                            title = self.formatYoutubeLink(a, False)
+                        else:
+                            text = self.utils.removeDoubleSpace(a.text.strip()).replace(' ', '%20')
+                        if title.startswith('/watch'):
+                            continue
+                    else:
+                        if count == 0:
+                            return self.getAllLinks(link, ref_divID, rID)
                 count += 1
                 print str(count) + ' ' + title + ' ' + link
+                ref_divID += '-' + str(count)
+                linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
+                appendID = str(count)
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), text, link, '-') 
                 html += '<li><span>' + str(count) + '.</span>'
-                html += '<p>' + '<a target="_blank" href="' + link + '">' + title + '</a></li>'
+                html += '<p>' + '<a target="_blank" href="' + link + '">' + title + '</a>'
+                if script != "":
+                    html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
+                html += '</p></li>'
             html += '</ol></div>'
         if count == 0:
             html = ''
         return html
+
+    def formatYoutubeLink(self, a, title_only):
+        sp = BeautifulSoup(a.prettify())
+        title = sp.find('span', class_='title').text.strip()
+        if title_only:
+            return self.utils.removeDoubleSpace(title)
+        title += ' ' + sp.find('span', class_='accessible-description').text.strip() + ' '
+        title += sp.find('span', class_='g-hovercard').text.strip() + ', '
+        views = sp.find('span', class_='stat view-count').text.strip().strip()
+        views = views[0 : views.find(' ')]
+        title += '<font size="' + str(len(views.replace(',', ''))) + '" color="rgb(130, 35, 18)">' + views + '</font> views'
+        return self.utils.removeDoubleSpace(title)
 
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
@@ -121,7 +160,7 @@ class Reference(BaseExtension):
                     appendID = appendID.replace('.','R')
                 else:
                     self.html += '<li><span>' + str(count) + '.</span>'
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID + '-' + str(appendID), r[0], r[1], '-')
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-')
                 if r[1] != '':
                     self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + r[0] + '</a>'
                 else:
@@ -129,6 +168,7 @@ class Reference(BaseExtension):
                 #self.html += self.utils.getDefaultEnginHtml(r[0], defaultLinks)
                 if script != "":
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
+                title = a.text.strip()
                 self.html += '</p></li>'
             return self.html + "</div>"
 
@@ -145,7 +185,7 @@ class Reference(BaseExtension):
                 ref_divID += '-' + str(count)
                 linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
                 appendID = str(count)
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-')
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-')
 
                 self.html += '<li><span>' + str(count) + '.</span>'
                 self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())

@@ -1,0 +1,6 @@
+{
+    "name" : "preview",
+    "module" : "preview",
+    "class" : "Preview",
+    "version" : "0.1"
+}
