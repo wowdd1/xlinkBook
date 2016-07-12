@@ -667,7 +667,8 @@ class GithubSpider(Spider):
                 'Samsung' : 'https://github.com/Samsung',\
                 'nvidia' : 'https://github.com/nvidia',\
 		'CBMM' : 'https://github.com/CBMM',\
-		'AllenInstitute' : 'https://github.com/AllenInstitute'}
+		'AllenInstitute' : 'https://github.com/AllenInstitute',\
+		'ACElab' : 'https://github.com/aces'}
         self.getProjectByDict(data)
         #self.getStartupPorjects()
 

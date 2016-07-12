@@ -1,0 +1,17 @@
+stanford-github-7-1 | WMD | https://github.com/Stanford/WMD | author:stanford description:WebAuth Module for Drupal
+stanford-github-5-2 | CAP_drupal | https://github.com/Stanford/CAP_drupal | author:stanford description:Updated Nov 28, 2014
+stanford-github-2-3 | webauth | https://github.com/Stanford/webauth | author:stanford description:Public copy of webauth code
+stanford-github-2-4 | AWS-SSO | https://github.com/Stanford/AWS-SSO | author:stanford description:Updated Sep 22, 2015
+stanford-github-2-5 | dlcl_features | https://github.com/Stanford/dlcl_features | author:stanford description:Features for the Dept of Literature, Culture & Languages
+stanford-github-1-6 | su_wysiwyg_features | https://github.com/Stanford/su_wysiwyg_features | author:stanford description:features for wysiwyg installation in the Stanford environment
+stanford-github-1-7 | su_wysiwyg_profile | https://github.com/Stanford/su_wysiwyg_profile | author:stanford description:An installation profile for deployment and testing of the WYSIWYG Features for Stanford University
+stanford-github-1-8 | wallet | https://github.com/Stanford/wallet | author:stanford description:Updated Jun 8, 2015
+stanford-github-0-9 | www-aws | https://github.com/Stanford/www-aws | author:stanford description:Scripts run on www/aws servers to manage homepage content.
+stanford-github-0-10 | stanford_capx | https://github.com/Stanford/stanford_capx | author:stanford description:Stanford CAPx Project
+stanford-github-0-11 | awsadmin | https://github.com/Stanford/awsadmin | author:stanford description:Admin tools to provision and manage www servers in AWS
+stanford-github-0-12 | webauth_extras | https://github.com/Stanford/webauth_extras | author:stanford description:Extra functions for the WebAuth Drupal module
+stanford-github-0-13 | webauth_tests | https://github.com/Stanford/webauth_tests | author:stanford description:Selenium Tests for the WebAuth Drupal Module
+stanford-github-0-14 | CAP_drupal6 | https://github.com/Stanford/CAP_drupal6 | author:stanford description:D6 backport of the CAP Drupal module
+stanford-github-0-15 | soe_depts_awards | https://github.com/Stanford/soe_depts_awards | author:stanford description:Stanford SoE awards content type and views
+stanford-github-0-16 | soe_faculty | https://github.com/Stanford/soe_faculty | author:stanford description:Updated Aug 11, 2012
+stanford-github-0-17 | soe_dept_admin | https://github.com/Stanford/soe_dept_admin | author:stanford description:Stanford School of Engineering

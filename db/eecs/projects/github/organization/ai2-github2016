@@ -1,0 +1,30 @@
+ai2-github-32-1 | pdffigures | https://github.com/allenai/pdffigures | author:ai2 description:Command line tool to extract figures, tables, and captions from scholarly documents in PDF form.
+ai2-github-18-2 | nlpstack | https://github.com/allenai/nlpstack | author:ai2 description:NLP toolkit (tokenizer, POS-tagger, parser, etc.)
+ai2-github-14-3 | tableilp | https://github.com/allenai/tableilp | author:ai2 description:Question Answering via Integer Programming (TableILP)
+ai2-github-14-4 | sbt-plugins | https://github.com/allenai/sbt-plugins | author:ai2 description:SBT Plugins for AI2 projects
+ai2-github-11-5 | ike | https://github.com/allenai/ike | author:ai2 description:Interactive Knowledge Extraction tool
+ai2-github-10-6 | pipeline | https://github.com/allenai/pipeline | author:ai2 description:Library for building reproducible data pipelines to support experimentation
+ai2-github-10-7 | tuffylite | https://github.com/allenai/tuffylite | author:ai2 description:TuffyLite is an open-source MLN inference engine that modifies the original Tuffy solver.
+ai2-github-5-8 | taggers | https://github.com/allenai/taggers | author:ai2 description:Easily identify and label sentence intervals using various taggers.
+ai2-github-4-9 | pesto | https://github.com/allenai/pesto | author:ai2 description:The perfect recipe for running integration tests of AngularJS based web applications.
+ai2-github-4-10 | ml | https://github.com/allenai/ml | author:ai2 description:Re-usable low-level ML components
+ai2-github-3-11 | common | https://github.com/allenai/common | author:ai2 description:A collection of useful utility classes and functions.
+ai2-github-3-12 | pdffigures2 | https://github.com/allenai/pdffigures2 | author:ai2 description:Updated Jun 22, 2016
+ai2-github-2-13 | meta-eval | https://github.com/allenai/meta-eval | author:ai2 description:Tools to evaluate accuracies of various (research papers') metadata extraction libraries
+ai2-github-2-14 | gulp-cache-breaker | https://github.com/allenai/gulp-cache-breaker | author:ai2 description:Gulp utility for producing unique urls to static resources for the purpose of ensuring a cache miss after deploying updates.
+ai2-github-2-15 | flapjack | https://github.com/allenai/flapjack | author:ai2 description:A scrumptious serving of HTML, CSS and Javascript designed to make developing a web UI as easy as possible.
+ai2-github-2-16 | syrup | https://github.com/allenai/syrup | author:ai2 description:A collection of common UI utilities and libraries leveraged by AI2.
+ai2-github-2-17 | openie-standalone | https://github.com/allenai/openie-standalone | author:ai2 description:Updated Jun 28, 2016
+ai2-github-1-18 | griddle | https://github.com/allenai/griddle | author:ai2 description:Express middleware for executing gulp builds and reporting errors in the browser.
+ai2-github-1-19 | react-demo | https://github.com/allenai/react-demo | author:ai2 description:A simple ReactJS demo which demonstrates the ability to use ReactJS as a client or server-side rendering mechanism.
+ai2-github-1-20 | jverbnet | https://github.com/allenai/jverbnet | author:ai2 description:JVerbNet from http://projects.csail.mit.edu/jverbnet/
+ai2-github-1-21 | ai2-project-starter | https://github.com/allenai/ai2-project-starter | author:ai2 description:Easy project bootstrapping utility
+ai2-github-1-22 | node-express.recipe | https://github.com/allenai/node-express.recipe | author:ai2 description:A simple recipe for a NodeJS based express web-server.
+ai2-github-1-23 | angular-web.recipe | https://github.com/allenai/angular-web.recipe | author:ai2 description:Biscuit recipe for a simple AngularJS based web application.
+ai2-github-1-24 | datastore | https://github.com/allenai/datastore | author:ai2 description:Store for immutable objects in S3
+ai2-github-1-25 | diagram-viz | https://github.com/allenai/diagram-viz | author:ai2 description:Simple diagram extraction visualizer
+ai2-github-1-26 | EquationTree | https://github.com/allenai/EquationTree | author:ai2 description:Equation tree parsing using pyparsing CFG
+ai2-github-1-27 | hackaton-realAndRational | https://github.com/allenai/hackaton-realAndRational | author:ai2 description:Updated Aug 8, 2014
+ai2-github-0-28 | eccv_imagenet_temp | https://github.com/allenai/eccv_imagenet_temp | author:ai2 description:Updated Mar 10, 2016
+ai2-github-0-29 | test-tablestore | https://github.com/allenai/test-tablestore | author:ai2 description:Updated Feb 23, 2016
+ai2-github-0-30 | orientation | https://github.com/allenai/orientation | author:ai2 description:Intern Orientation
