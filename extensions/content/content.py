@@ -110,7 +110,10 @@ class Content(BaseExtension):
                 pid = r.get_parentid().strip()
                 if self.record_content.has_key(pid) and key.find('-') != -1:
                     pRecord = self.record_content[pid] 
-                    format_index = pid[pid.rfind('-') + 1 :] + '.' + str(count)
+		    if content_divID.find('content') == content_divID.rfind('content'):
+                        format_index = str(count)
+		    else:
+                        format_index = pid[pid.rfind('-') + 1 :] + '.' + str(count)
                 elif r.get_id().find('-') != -1:
                     format_index = r.get_id()[r.get_id().rfind('-') + 1 : ].strip()
 		while format_index.find('-') != -1:

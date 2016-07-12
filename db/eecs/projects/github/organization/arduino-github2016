@@ -1,0 +1,49 @@
+arduino-github-5651-1 | Arduino | https://github.com/arduino/Arduino | author:arduino description:open-source electronics prototyping platform
+arduino-github-113-2 | arduino-builder | https://github.com/arduino/arduino-builder | author:arduino description:A command line tool for compiling Arduino sketches
+arduino-github-105-3 | openwrt-yun | https://github.com/arduino/openwrt-yun | author:arduino description:A custom version of OpenWrt, targeted to the Arduino Yún
+arduino-github-88-4 | wifishield | https://github.com/arduino/wifishield | author:arduino description:Arduino Wifi Shield
+arduino-github-84-5 | linino | https://github.com/arduino/linino | author:arduino description:Updated Apr 10, 2015
+arduino-github-58-6 | openwrt-packages-yun | https://github.com/arduino/openwrt-packages-yun | author:arduino description:Updated Jan 28, 2016
+arduino-github-57-7 | YunBridge | https://github.com/arduino/YunBridge | author:arduino description:Updated May 9, 2016
+arduino-github-54-8 | BtSerial | https://github.com/arduino/BtSerial | author:arduino description:A Bluetooth Serial library for Processing for Android
+arduino-github-43-9 | YunWebUI | https://github.com/arduino/YunWebUI | author:arduino description:Updated May 24, 2016
+arduino-github-40-10 | toolchain-avr | https://github.com/arduino/toolchain-avr | author:arduino description:The AVR toolchain used by the Arduino IDE
+arduino-github-37-11 | ArduinoCore-samd | https://github.com/arduino/ArduinoCore-samd | author:arduino description:Updated Jun 30, 2016
+arduino-github-34-12 | RXTX | https://github.com/arduino/RXTX | author:arduino description:Arduino version of RXTX
+arduino-github-32-13 | arduino-create-agent | https://github.com/arduino/arduino-create-agent | author:arduino description:The Arduino Create Multi Platform Agent
+arduino-github-28-14 | TFTP-Bootloader | https://github.com/arduino/TFTP-Bootloader | author:arduino description:An unfinished TFTP bootloader for Arduino Ethernet
+arduino-github-20-15 | arduino-usb-scanner | https://github.com/arduino/arduino-usb-scanner | author:arduino description:Tool that scans the USB bus autodetecting Arduino boards and their serial port names
+arduino-github-15-16 | OpenOCD | https://github.com/arduino/OpenOCD | author:arduino description:Fork of OpenOCD
+arduino-github-14-17 | Tests | https://github.com/arduino/Tests | author:arduino description:Updated Sep 22, 2015
+arduino-github-14-18 | ethernet-bootloader | https://github.com/arduino/ethernet-bootloader | author:arduino description:TFTP Bootloader for the Arduino Ethernet Board
+arduino-github-12-19 | tutorials | https://github.com/arduino/tutorials | author:arduino description:Updated Apr 23, 2016
+arduino-github-9-20 | astyle | https://github.com/arduino/astyle | author:arduino description:Scripts and patches used to build astyle, a code formatter used by the Arduino IDE
+arduino-github-9-21 | cloud-examples | https://github.com/arduino/cloud-examples | author:arduino description:Examples for Arduino Cloud
+arduino-github-5-22 | ArduinoISP | https://github.com/arduino/ArduinoISP | author:arduino description:Updated Apr 22, 2014
+arduino-github-5-23 | BasicEducationShield | https://github.com/arduino/BasicEducationShield | author:arduino description:Castilla project library
+arduino-github-5-24 | TFT | https://github.com/arduino/TFT | author:arduino description:An Arduino library for the GLCD module
+arduino-github-4-25 | ctags | https://github.com/arduino/ctags | author:arduino description:A mix of ctags and anjuta-tags for the perfect C++ ctags
+arduino-github-4-26 | Steelwonder | https://github.com/arduino/Steelwonder | author:arduino description:This is a version of the Mendel prusa i3 3d printer.
+arduino-github-4-27 | reference-en | https://github.com/arduino/reference-en | author:arduino description:Updated Apr 27, 2016
+arduino-github-4-28 | openwrt-yun-1505 | https://github.com/arduino/openwrt-yun-1505 | author:arduino description:Updated build system for OpenWrt - Yun family boards
+arduino-github-3-29 | arduino-flash-tools | https://github.com/arduino/arduino-flash-tools | author:arduino description:Arduino Tools for Create
+arduino-github-3-30 | OpenOCD-build-script | https://github.com/arduino/OpenOCD-build-script | author:arduino description:Build scripts for OpenOCD used in Arduino
+arduino-github-2-31 | listSerialPortsC | https://github.com/arduino/listSerialPortsC | author:arduino description:Simple multiplatform program to list serial ports with vid/pid/iserial fields
+arduino-github-1-32 | EducationalShield | https://github.com/arduino/EducationalShield | author:arduino description:Updated Jul 1, 2016
+arduino-github-1-33 | reference-fr | https://github.com/arduino/reference-fr | author:arduino description:Updated Feb 2, 2015
+arduino-github-1-34 | go-xero | https://github.com/arduino/go-xero | author:arduino description:The Xero library for Go Language
+arduino-github-1-35 | forum-issues | https://github.com/arduino/forum-issues | author:arduino description:Repository to contain Forum issues available for the community - forum.arduino.cc
+arduino-github-1-36 | glossary-content | https://github.com/arduino/glossary-content | author:arduino description:Updated Feb 26, 2016
+arduino-github-1-37 | reference-de | https://github.com/arduino/reference-de | author:arduino description:Updated Feb 2, 2015
+arduino-github-1-38 | reference-it | https://github.com/arduino/reference-it | author:arduino description:Updated Feb 2, 2015
+arduino-github-1-39 | CTC-Processing | https://github.com/arduino/CTC-Processing | author:arduino description:Updated Apr 26, 2016
+arduino-github-1-40 | CTC-Arduino | https://github.com/arduino/CTC-Arduino | author:arduino description:Arduino code and libraries for the CTC project by Arduino Verkstad
+arduino-github-1-41 | openwrt-arduino-packages | https://github.com/arduino/openwrt-arduino-packages | author:arduino description:Collection of packages from Arduino for OpenWrt official distribution
+arduino-github-1-42 | Svante | https://github.com/arduino/Svante | author:arduino description:Arduino based robot
+arduino-github-0-43 | avrdude-build-script | https://github.com/arduino/avrdude-build-script | author:arduino description:avrdude build scripts for Arduino/Genuino
+arduino-github-0-44 | CTC-Image-Uploader | https://github.com/arduino/CTC-Image-Uploader | author:arduino description:This python script gets collection information from a LightRoom database, uploads all the images to flickr, generates bitly short url, and output a pdf
+arduino-github-0-45 | EducationShield | https://github.com/arduino/EducationShield | author:arduino description:Updated Jun 23, 2016
+arduino-github-0-46 | reference-es | https://github.com/arduino/reference-es | author:arduino description:Updated Feb 2, 2015
+arduino-github-0-47 | Svante-Workshop | https://github.com/arduino/Svante-Workshop | author:arduino description:Svante library and examples for generic workshops
+arduino-github-0-48 | CTCIoT | https://github.com/arduino/CTCIoT | author:arduino description:Updated Mar 1, 2016
+arduino-github-0-49 | dfu-utils-cross | https://github.com/arduino/dfu-utils-cross | author:arduino description:Updated Mar 24, 2016
