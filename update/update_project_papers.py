@@ -23,7 +23,7 @@ class ProjectPaperSpider(Spider):
 
         self.getCALOPapers()
         '''
-        self.getWastonPapers()
+        #self.getWastonPapers()
         self.getDeepmindPapers()
         self.getFacebookResearchPapers()
         self.getGoogleBrainPapers()

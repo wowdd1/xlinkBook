@@ -13,10 +13,10 @@ subject_dict = {\
     "Art" : "art-culture",\
     "Anthropology" : "anthropology",\
     "Culture" : "art-culture",\
-    "Brain" : "cognitive-neuroscience",\
+    "Brain" : "cognitive-computational-neuroscience",\
     "Biology" : "biology",\
     "Biological" : "biology",\
-    "Cognitive Science" : "cognitive-neuroscience",\
+    "Cognitive Science" : "cognitive-computational-neuroscience",\
     "Life Sciences" : "biology",\
     "Business" : "business-management",\
     "Management" : "business-management",\
@@ -50,14 +50,15 @@ subject_dict = {\
     "Humanities" : "humanities",\
     "Human Resource Management" : 'economics',\
     "Law" : "law",\
-    "Linguistic" : "linguistic",\
+    "Linguistic" : "linguistics",\
+    "Linguistics" : "linguistics",\
     "Literature" : "literature",\
     "Math" : "mathematics",\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "art",\
-    "Neurobiology" : "cognitive-neuroscience",\
-    "Neuroscience" : "cognitive-neuroscience",\
+    "Neurobiology" : "cognitive-computational-neuroscience",\
+    "Neuroscience" : "cognitive-computational-neuroscience",\
     "Philanthropy" : "philosophy",\
     "Philosophy" : "philosophy",\
     "Psychology" : "psychology",\
@@ -105,10 +106,11 @@ need_update_subject_list = [
     #'business-management',
     'economics',
     #'rank',
-    'physics',
-    'cognitive-neuroscience',
+    #'physics',
+    'biology',
+    'cognitive-computational-neuroscience',
     #'literature',
-    #'linguistic',
+    'linguistics',
     #'philosophy',
     #"psychology",
     #'chemistry',
