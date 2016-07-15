@@ -41,8 +41,11 @@ class MitOcwSpider(Spider):
 
     def getDescription2(self, url):
         r = requests.get(url)
-        jobj = json.loads(r.text)
-        return 'level:' + jobj['level'] + ' features:' + jobj['features']
+	if r.text != None and r.text != '':
+            jobj = json.loads(r.text)
+            return 'level:' + jobj['level'] + ' features:' + jobj['features']
+        else:
+	    return ''
 
     def getOcwLinks(selfi, subject):
         ocw_links = {}

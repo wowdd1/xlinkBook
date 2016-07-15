@@ -131,7 +131,7 @@ class BaikeSpider(Spider):
         last_line = ''
         last_citations = ''
         remark = 'description:'
-        file_name = self.get_file_name(self.subject + "/computer-science-citations", self.school)
+        file_name = self.get_file_name("eecs/people/computer-science-citations", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -172,6 +172,8 @@ class BaikeSpider(Spider):
             if citations != last_citations:
                 self.count += 1
             last_citations = citations
+	    if title.find('>') != -1:
+		title = title[title.find('>') + 1 :].strip()
             self.write_db(f, 'csc-' + str(self.count), title, '', remark)
 
         self.close_db(f)
@@ -499,5 +501,6 @@ class BaikeSpider(Spider):
         self.startupSpeakers()
         self.processBloomberg('http://www.livemint.com/Politics/TGX2iczPnC5ofl2WKQR7FN/Narendra-Modi-in-Bloomberg-Markets-50-Most-Influential-list.html')
         self.processWatermanAward('https://en.wikipedia.org/wiki/Alan_T._Waterman_Award')
+
 start = BaikeSpider()
 start.doWork()

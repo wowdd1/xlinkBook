@@ -168,9 +168,9 @@ function navTopic(obj, divID, parentDivID, countIndex){
 
     var postArgs;
     if (args[divID] != null){
-        postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], url : args[divID][2], fileName : fileName, 'check' : 'false', column, column};
+        postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], url : args[divID][2], fileName : fileName, 'check' : 'false', column : column};
     } else {
-        postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), url : '', fileName : fileName, 'check' : 'false', column, column};
+        postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), url : '', fileName : fileName, 'check' : 'false', column : column};
     }
     postArgs["divID"] = divID + "-" + obj.text;
     postArgs["defaultLinks"] = 2;
