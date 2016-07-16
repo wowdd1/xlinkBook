@@ -1,6 +1,6 @@
-microsoftresearch-github-314-1 | Naiad | https://github.com/MicrosoftResearch/Naiad | author:microsoftresearch description:The Naiad system provides fast incremental and iterative computation for data-parallel workloads
-microsoftresearch-github-203-2 | Dryad | https://github.com/MicrosoftResearch/Dryad | author:microsoftresearch description:This is a research prototype of the Dryad and DryadLINQ data-parallel processing frameworks running on Hadoop YARN.
-microsoftresearch-github-22-3 | Azimuth | https://github.com/MicrosoftResearch/Azimuth | author:microsoftresearch description:Machine Learning-Based Predictive Modelling of CRISPR/Cas9 guide efficiency
-microsoftresearch-github-16-4 | NaiadSamples | https://github.com/MicrosoftResearch/NaiadSamples | author:microsoftresearch description:Sample implementations using Naiad
-microsoftresearch-github-11-5 | SHS | https://github.com/MicrosoftResearch/SHS | author:microsoftresearch description:The Scalable Hyperlink Store
-microsoftresearch-github-5-6 | Peloponnese | https://github.com/MicrosoftResearch/Peloponnese | author:microsoftresearch description:A collection of libraries for working with YARN from .Net
+github-microsoftresearch-Naiad | Naiad | https://github.com/MicrosoftResearch/Naiad | author:microsoftresearch description:The Naiad system provides fast incremental and iterative computation for data-parallel workloads
+github-microsoftresearch-Dryad | Dryad | https://github.com/MicrosoftResearch/Dryad | author:microsoftresearch description:This is a research prototype of the Dryad and DryadLINQ data-parallel processing frameworks running on Hadoop YARN.
+github-microsoftresearch-Azimuth | Azimuth | https://github.com/MicrosoftResearch/Azimuth | author:microsoftresearch description:Machine Learning-Based Predictive Modelling of CRISPR/Cas9 guide efficiency
+github-microsoftresearch-NaiadSamples | NaiadSamples | https://github.com/MicrosoftResearch/NaiadSamples | author:microsoftresearch description:Sample implementations using Naiad
+github-microsoftresearch-SHS | SHS | https://github.com/MicrosoftResearch/SHS | author:microsoftresearch description:The Scalable Hyperlink Store
+github-microsoftresearch-Peloponnese | Peloponnese | https://github.com/MicrosoftResearch/Peloponnese | author:microsoftresearch description:A collection of libraries for working with YARN from .Net

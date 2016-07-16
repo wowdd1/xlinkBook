@@ -1,5 +1,5 @@
-ibm-research-github-34-1 | fusedos | https://github.com/ibm-research/fusedos | author:ibm-research description:Updated Aug 15, 2014
-ibm-research-github-7-2 | iostash | https://github.com/ibm-research/iostash | author:ibm-research description:Flash cache solution iostash
-ibm-research-github-2-3 | fusedos-linux | https://github.com/ibm-research/fusedos-linux | author:ibm-research description:Updated Sep 26, 2013
-ibm-research-github-1-4 | SwiftHLM | https://github.com/ibm-research/SwiftHLM | author:ibm-research description:SwiftHLM - a middleware for using OpenStack Swift with tape and other hight latency media storage backends
-ibm-research-github-0-5 | vicos | https://github.com/ibm-research/vicos | author:ibm-research description:Verification of Integrity and Consistency for Cloud Object Storage
+github-ibm-research-fusedos | fusedos | https://github.com/ibm-research/fusedos | author:ibm-research description:Updated Aug 15, 2014
+github-ibm-research-iostash | iostash | https://github.com/ibm-research/iostash | author:ibm-research description:Flash cache solution iostash
+github-ibm-research-fusedos-linux | fusedos-linux | https://github.com/ibm-research/fusedos-linux | author:ibm-research description:Updated Sep 26, 2013
+github-ibm-research-SwiftHLM | SwiftHLM | https://github.com/ibm-research/SwiftHLM | author:ibm-research description:SwiftHLM - a middleware for using OpenStack Swift with tape and other hight latency media storage backends
+github-ibm-research-vicos | vicos | https://github.com/ibm-research/vicos | author:ibm-research description:Verification of Integrity and Consistency for Cloud Object Storage

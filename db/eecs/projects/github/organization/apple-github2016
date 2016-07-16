@@ -1,19 +1,20 @@
-github-apple-30355-1 | swift | https://github.com/apple/swift | author:apple description:The Swift Programming Language
-github-apple-4151-2 | swift-evolution | https://github.com/apple/swift-evolution | author:apple description:This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
-github-apple-4065-3 | swift-package-manager | https://github.com/apple/swift-package-manager | author:apple description:The Package Manager for the Swift Programming Language
-github-apple-1863-4 | swift-corelibs-foundation | https://github.com/apple/swift-corelibs-foundation | author:apple description:The Foundation Project, providing core utilities, internationalization, and OS independence
-github-apple-680-5 | swift-corelibs-libdispatch | https://github.com/apple/swift-corelibs-libdispatch | author:apple description:The libdispatch Project, (a.k.a. Grand Central Dispatch), for concurrency on multicore hardware
-github-apple-478-6 | swift-corelibs-xctest | https://github.com/apple/swift-corelibs-xctest | author:apple description:The XCTest Project, A Swift core library for providing unit test support
-github-apple-441-7 | swift-llvm | https://github.com/apple/swift-llvm | author:apple description:Updated May 16, 2016
-github-apple-392-8 | swift-3-api-guidelines-review | https://github.com/apple/swift-3-api-guidelines-review | author:apple description:Updated Feb 29, 2016
-github-apple-373-9 | swift-clang | https://github.com/apple/swift-clang | author:apple description:Updated May 16, 2016
-github-apple-323-10 | swift-lldb | https://github.com/apple/swift-lldb | author:apple description:This is the version of LLDB that supports the Swift programming language & REPL.
-github-apple-304-11 | swift-llbuild | https://github.com/apple/swift-llbuild | author:apple description:A low-level build system, used by the Swift Package Manager
-github-apple-136-12 | example-package-dealer | https://github.com/apple/example-package-dealer | author:apple description:Example package for use with the Swift Package Manager
-github-apple-118-13 | example-package-playingcard | https://github.com/apple/example-package-playingcard | author:apple description:Example package for use with the Swift Package Manager
-github-apple-115-14 | example-package-fisheryates | https://github.com/apple/example-package-fisheryates | author:apple description:Example package for use with the Swift Package Manager
-github-apple-99-15 | example-package-deckofplayingcards | https://github.com/apple/example-package-deckofplayingcards | author:apple description:Example package for use with the Swift Package Manager
-github-apple-55-16 | cups | https://github.com/apple/cups | author:apple description:Official CUPS Sources
-github-apple-52-17 | swift-internals | https://github.com/apple/swift-internals | author:apple description:Updated May 3, 2016
-github-apple-33-18 | swift-integration-tests | https://github.com/apple/swift-integration-tests | author:apple description:Automated tests for validating the generated Swift snapshots behave correctly
-github-apple-23-19 | swift-compiler-rt | https://github.com/apple/swift-compiler-rt | author:apple description:Updated May 16, 2016
+github-apple-swift | swift | https://github.com/apple/swift | author:apple description:The Swift Programming Language
+github-apple-swift-evolution | swift-evolution | https://github.com/apple/swift-evolution | author:apple description:This maintains proposals for changes and user-visible enhancements to the Swift Programming Language.
+github-apple-swift-package-manager | swift-package-manager | https://github.com/apple/swift-package-manager | author:apple description:The Package Manager for the Swift Programming Language
+github-apple-swift-corelibs-foundation | swift-corelibs-foundation | https://github.com/apple/swift-corelibs-foundation | author:apple description:The Foundation Project, providing core utilities, internationalization, and OS independence
+github-apple-swift-corelibs-libdispatch | swift-corelibs-libdispatch | https://github.com/apple/swift-corelibs-libdispatch | author:apple description:The libdispatch Project, (a.k.a. Grand Central Dispatch), for concurrency on multicore hardware
+github-apple-swift-corelibs-xctest | swift-corelibs-xctest | https://github.com/apple/swift-corelibs-xctest | author:apple description:The XCTest Project, A Swift core library for providing unit test support
+github-apple-swift-llvm | swift-llvm | https://github.com/apple/swift-llvm | author:apple description:Updated Jul 16, 2016
+github-apple-swift-3-api-guidelines-review | swift-3-api-guidelines-review | https://github.com/apple/swift-3-api-guidelines-review | author:apple description:Updated Feb 29, 2016
+github-apple-swift-clang | swift-clang | https://github.com/apple/swift-clang | author:apple description:Updated Jul 16, 2016
+github-apple-swift-lldb | swift-lldb | https://github.com/apple/swift-lldb | author:apple description:This is the version of LLDB that supports the Swift programming language & REPL.
+github-apple-swift-llbuild | swift-llbuild | https://github.com/apple/swift-llbuild | author:apple description:A low-level build system, used by the Swift Package Manager
+github-apple-example-package-dealer | example-package-dealer | https://github.com/apple/example-package-dealer | author:apple description:Example package for use with the Swift Package Manager
+github-apple-example-package-playingcard | example-package-playingcard | https://github.com/apple/example-package-playingcard | author:apple description:Example package for use with the Swift Package Manager
+github-apple-example-package-fisheryates | example-package-fisheryates | https://github.com/apple/example-package-fisheryates | author:apple description:Example package for use with the Swift Package Manager
+github-apple-example-package-deckofplayingcards | example-package-deckofplayingcards | https://github.com/apple/example-package-deckofplayingcards | author:apple description:Example package for use with the Swift Package Manager
+github-apple-cups | cups | https://github.com/apple/cups | author:apple description:Official CUPS Sources
+github-apple-swift-internals | swift-internals | https://github.com/apple/swift-internals | author:apple description:Updated May 3, 2016
+github-apple-swift-integration-tests | swift-integration-tests | https://github.com/apple/swift-integration-tests | author:apple description:Automated tests for validating the generated Swift snapshots behave correctly
+github-apple-swift-xcode-playground-support | swift-xcode-playground-support | https://github.com/apple/swift-xcode-playground-support | author:apple description:Logging and communication to allow Swift toolchains to communicate with Xcode.
+github-apple-swift-compiler-rt | swift-compiler-rt | https://github.com/apple/swift-compiler-rt | author:apple description:Updated Jul 16, 2016

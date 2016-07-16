@@ -1,4 +1,7 @@
-github-amznlabs-1839-1 | amazon-dsstne | https://github.com/amznlabs/amazon-dsstne | author:amznlabs description:Deep Scalable Sparse Tensor Network Engine (DSSTNE) is an Amazon developed library for building Deep Learning (DL) machine learning (ML) models
-github-amznlabs-577-2 | ion-java | https://github.com/amznlabs/ion-java | author:amznlabs description:Java streaming parser/serializer for Ion.
-github-amznlabs-29-3 | oss-dashboard | https://github.com/amznlabs/oss-dashboard | author:amznlabs description:A dashboard for viewing many GitHub organizations at once.
-github-amznlabs-13-4 | ion-tests | https://github.com/amznlabs/ion-tests | author:amznlabs description:Test vectors for testing compliant Ion implementations.
+github-amznlabs-amazon-dsstne | amazon-dsstne | https://github.com/amznlabs/amazon-dsstne | author:amznlabs description:Deep Scalable Sparse Tensor Network Engine (DSSTNE) is an Amazon developed library for building Deep Learning (DL) machine learning (ML) models
+github-amznlabs-ion-java | ion-java | https://github.com/amznlabs/ion-java | author:amznlabs description:Java streaming parser/serializer for Ion.
+github-amznlabs-oss-dashboard | oss-dashboard | https://github.com/amznlabs/oss-dashboard | author:amznlabs description:A dashboard for viewing many GitHub organizations at once.
+github-amznlabs-ion-tests | ion-tests | https://github.com/amznlabs/ion-tests | author:amznlabs description:Test vectors for testing compliant Ion implementations.
+github-amznlabs-ion-c | ion-c | https://github.com/amznlabs/ion-c | author:amznlabs description:A C Implementation of Amazon Ion.
+github-amznlabs-ion-python | ion-python | https://github.com/amznlabs/ion-python | author:amznlabs description:A Python Implementation of Amazon Ion.
+github-amznlabs-ion-intellij-plugin | ion-intellij-plugin | https://github.com/amznlabs/ion-intellij-plugin | author:amznlabs description:Support for Ion in Intellij IDEA.

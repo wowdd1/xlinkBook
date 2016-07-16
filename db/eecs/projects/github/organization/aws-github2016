@@ -1,53 +1,56 @@
-github-aws-3851-1 | aws-cli | https://github.com/aws/aws-cli | author:aws description:Universal Command Line Interface for Amazon Web Services
-github-aws-2502-2 | aws-sdk-go | https://github.com/aws/aws-sdk-go | author:aws description:AWS SDK for the Go programming language.
-github-aws-2273-3 | aws-sdk-js | https://github.com/aws/aws-sdk-js | author:aws description:AWS SDK for JavaScript in the browser and Node.js
-github-aws-2022-4 | aws-sdk-ruby | https://github.com/aws/aws-sdk-ruby | author:aws description:The official AWS SDK for Ruby.
-github-aws-2000-5 | aws-sdk-php | https://github.com/aws/aws-sdk-php | author:aws description:Official repository of the AWS SDK for PHP (@awsforphp)
-github-aws-1404-6 | aws-sdk-java | https://github.com/aws/aws-sdk-java | author:aws description:The official AWS SDK for Java.
-github-aws-867-7 | opsworks-cookbooks | https://github.com/aws/opsworks-cookbooks | author:aws description:Chef Cookbooks for the AWS OpsWorks Service
-github-aws-658-8 | aws-sdk-php-laravel | https://github.com/aws/aws-sdk-php-laravel | author:aws description:A Laravel 5 (and 4) service provider for the AWS SDK for PHP
-github-aws-564-9 | amazon-ecs-agent | https://github.com/aws/amazon-ecs-agent | author:aws description:Amazon EC2 Container Service Agent
-github-aws-540-10 | aws-sdk-ios | https://github.com/aws/aws-sdk-ios | author:aws description:Official mirror of version 2 of the AWS Mobile SDK for iOS. For more information, see our web site:
-github-aws-500-11 | aws-sdk-ios-v1 | https://github.com/aws/aws-sdk-ios-v1 | author:aws description:Deprecated
-github-aws-419-12 | aws-sdk-net | https://github.com/aws/aws-sdk-net | author:aws description:Official mirror of the AWS SDK for .NET. For more information on the AWS SDK for .NET, see our web site:
-github-aws-328-13 | aws-sdk-cpp | https://github.com/aws/aws-sdk-cpp | author:aws description:AWS SDK for C++
-github-aws-249-14 | aws-sdk-core-ruby | https://github.com/aws/aws-sdk-core-ruby | author:aws description:This repository has moved to the master branch of aws/aws-sdk-ruby
-github-aws-242-15 | amazon-ecs-cli | https://github.com/aws/amazon-ecs-cli | author:aws description:A custom Amazon ECS CLI that eases up the cluster setup process, enables users to run their applications locally or on ECS using the same Docker Compose file format and familiar Compose commands.
-github-aws-225-16 | aws-iot-device-sdk-js | https://github.com/aws/aws-iot-device-sdk-js | author:aws description:SDK for connecting to AWS IoT from a device using JavaScript/Node.js
-github-aws-193-17 | aws-sdk-android | https://github.com/aws/aws-sdk-android | author:aws description:Official mirror of version 2 of the AWS Mobile SDK for Android. For more information, see our web site:
-github-aws-148-18 | aws-toolkit-eclipse | https://github.com/aws/aws-toolkit-eclipse | author:aws description:Official mirror of the AWS Toolkit for Eclipse. For more information on the toolkit, see our web site:
-github-aws-131-19 | aws-iot-device-sdk-embedded-C | https://github.com/aws/aws-iot-device-sdk-embedded-C | author:aws description:SDK for connecting to AWS IoT from a device using embedded C.
-github-aws-124-20 | aws-flow-ruby | https://github.com/aws/aws-flow-ruby | author:aws description:Updated Feb 25, 2016
-github-aws-103-21 | aws-sdk-rails | https://github.com/aws/aws-sdk-rails | author:aws description:Official repository for the aws-sdk-rails gem, which integrates the AWS SDK for Ruby V2 with Ruby on Rails.
-github-aws-83-22 | aws-sdk-php-zf2 | https://github.com/aws/aws-sdk-php-zf2 | author:aws description:ZF2 module for using the AWS SDK for PHP to interact with AWS services like S3, DynamoDB, SQS, EC2, etc.
-github-aws-77-23 | amazon-cognito-js | https://github.com/aws/amazon-cognito-js | author:aws description:Amazon Cognito Sync Manager for JavaScript
-github-aws-77-24 | aws-codedeploy-agent | https://github.com/aws/aws-codedeploy-agent | author:aws description:Updated May 16, 2016
-github-aws-72-25 | aws-sdk-unity | https://github.com/aws/aws-sdk-unity | author:aws description:Official repository for the AWS Mobile SDK for Unity. For more information, see our web site: http://aws.amazon.com/mobile/sdk/
-github-aws-69-26 | aws-iot-device-sdk-arduino-yun | https://github.com/aws/aws-iot-device-sdk-arduino-yun | author:aws description:SDK for connecting to AWS IoT from an Arduino Yún.
-github-aws-68-27 | aws-sdk-php-silex | https://github.com/aws/aws-sdk-php-silex | author:aws description:Simple Silex service provider for including the AWS SDK for PHP
-github-aws-64-28 | aws-dynamodb-session-tomcat | https://github.com/aws/aws-dynamodb-session-tomcat | author:aws description:Amazon DynamoDB based session store for Apache Tomcat
-github-aws-55-29 | amazon-ssm-agent | https://github.com/aws/amazon-ssm-agent | author:aws description:Agent to enable remote management of your Amazon EC2 instance configuration.
-github-aws-45-30 | aws-cfn-resource-bridge | https://github.com/aws/aws-cfn-resource-bridge | author:aws description:Updated Sep 15, 2015
-github-aws-43-31 | aws-lambda-java-libs | https://github.com/aws/aws-lambda-java-libs | author:aws description:Official mirror for interface definitions and helper classes for Java code running on the AWS Lambda platform.
-github-aws-38-32 | amazon-ecs-init | https://github.com/aws/amazon-ecs-init | author:aws description:Amazon EC2 Container Service RPM
-github-aws-37-33 | aws-sdk-php-symfony | https://github.com/aws/aws-sdk-php-symfony | author:aws description:Updated Mar 15, 2016
-github-aws-34-34 | aws-sessionstore-dynamodb-ruby | https://github.com/aws/aws-sessionstore-dynamodb-ruby | author:aws description:Handles sessions for Ruby web applications using DynamoDB as a backend.
-github-aws-34-35 | aws-sdk-mobile-analytics-js | https://github.com/aws/aws-sdk-mobile-analytics-js | author:aws description:Amazon Mobile Analytics JavaScript SDK
-github-aws-33-36 | aws-eb-python-dockerfiles | https://github.com/aws/aws-eb-python-dockerfiles | author:aws description:Official Elastic Beanstalk repository for Python docker files.
-github-aws-30-37 | amazon-cognito-android | https://github.com/aws/amazon-cognito-android | author:aws description:Official mirror of the Amazon Cognito Sync portion of the AWS SDK for Android. For more information on the AWS SDK for Android, see our web site: http://aws.amazon.com/sdkforandroid
-github-aws-29-38 | amazon-cognito-identity-js | https://github.com/aws/amazon-cognito-identity-js | author:aws description:Updated May 16, 2016
-github-aws-27-39 | amazon-cognito-ios | https://github.com/aws/amazon-cognito-ios | author:aws description:Updated Mar 16, 2016
-github-aws-23-40 | aws-cloudtrail-processing-library | https://github.com/aws/aws-cloudtrail-processing-library | author:aws description:The AWS CloudTrail Processing Library helps Java developers to easily consume and process log files from AWS CloudTrail.
-github-aws-16-41 | aws-php-sns-message-validator | https://github.com/aws/aws-php-sns-message-validator | author:aws description:Amazon SNS message validation for PHP
-github-aws-15-42 | aws-sdk-js-apis | https://github.com/aws/aws-sdk-js-apis | author:aws description:This package is now deprecated, see
-github-aws-10-43 | aws-js-sns-message-validator | https://github.com/aws/aws-js-sns-message-validator | author:aws description:Updated Apr 13, 2016
-github-aws-9-44 | aws-eb-glassfish-dockerfiles | https://github.com/aws/aws-eb-glassfish-dockerfiles | author:aws description:Official Elastic Beanstalk repository for GlassFish docker files.
-github-aws-9-45 | aws-dotnet-session-provider | https://github.com/aws/aws-dotnet-session-provider | author:aws description:A session state provider for ASP.NET applications that stores the sessions in Amazon DynamoDB
-github-aws-8-46 | amazon-cognito-unity | https://github.com/aws/amazon-cognito-unity | author:aws description:Official repository for Amazon Cognito SDK for Unity (distributed as part of AWS Mobile SDK for Unity)
-github-aws-7-47 | aws-sdk-java-archetype | https://github.com/aws/aws-sdk-java-archetype | author:aws description:Updated May 18, 2015
-github-aws-6-48 | aws-cla | https://github.com/aws/aws-cla | author:aws description:License Agreement(s) for contributions to AWS-owned repositories
-github-aws-3-49 | aws-dotnet-trace-listener | https://github.com/aws/aws-dotnet-trace-listener | author:aws description:A trace listener for System.Diagnostics that can be used to log events straight to Amazon DynamoDB.
-github-aws-3-50 | aws-sdk-js-dist-tools | https://github.com/aws/aws-sdk-js-dist-tools | author:aws description:Please see aws/aws-sdk-js for distribution tools
-github-aws-2-51 | amazon-cognito-dotnet | https://github.com/aws/amazon-cognito-dotnet | author:aws description:Official repository for Amazon Cognito Sync Manager SDK for Dotnet.
-github-aws-1-52 | aws-sdk-php-v3-bridge | https://github.com/aws/aws-sdk-php-v3-bridge | author:aws description:A compatibility pack for services no longer supported in V3 of the AWS SDK for PHP
-github-aws-0-53 | aws-swf-build-tools | https://github.com/aws/aws-swf-build-tools | author:aws description:Updated May 16, 2016
+github-aws-aws-cli | aws-cli | https://github.com/aws/aws-cli | author:aws description:Universal Command Line Interface for Amazon Web Services
+github-aws-aws-sdk-go | aws-sdk-go | https://github.com/aws/aws-sdk-go | author:aws description:AWS SDK for the Go programming language.
+github-aws-aws-sdk-js | aws-sdk-js | https://github.com/aws/aws-sdk-js | author:aws description:AWS SDK for JavaScript in the browser and Node.js
+github-aws-aws-sdk-php | aws-sdk-php | https://github.com/aws/aws-sdk-php | author:aws description:Official repository of the AWS SDK for PHP (@awsforphp)
+github-aws-aws-sdk-ruby | aws-sdk-ruby | https://github.com/aws/aws-sdk-ruby | author:aws description:The official AWS SDK for Ruby.
+github-aws-aws-sdk-java | aws-sdk-java | https://github.com/aws/aws-sdk-java | author:aws description:The official AWS SDK for Java.
+github-aws-opsworks-cookbooks | opsworks-cookbooks | https://github.com/aws/opsworks-cookbooks | author:aws description:Chef Cookbooks for the AWS OpsWorks Service
+github-aws-aws-sdk-php-laravel | aws-sdk-php-laravel | https://github.com/aws/aws-sdk-php-laravel | author:aws description:A Laravel 5 (and 4) service provider for the AWS SDK for PHP
+github-aws-amazon-ecs-agent | amazon-ecs-agent | https://github.com/aws/amazon-ecs-agent | author:aws description:Amazon EC2 Container Service Agent
+github-aws-aws-sdk-ios | aws-sdk-ios | https://github.com/aws/aws-sdk-ios | author:aws description:Official mirror of version 2 of the AWS Mobile SDK for iOS. For more information, see our web site:
+github-aws-aws-sdk-ios-v1 | aws-sdk-ios-v1 | https://github.com/aws/aws-sdk-ios-v1 | author:aws description:Deprecated
+github-aws-aws-sdk-net | aws-sdk-net | https://github.com/aws/aws-sdk-net | author:aws description:Official mirror of the AWS SDK for .NET. For more information on the AWS SDK for .NET, see our web site:
+github-aws-aws-sdk-cpp | aws-sdk-cpp | https://github.com/aws/aws-sdk-cpp | author:aws description:AWS SDK for C++
+github-aws-amazon-ecs-cli | amazon-ecs-cli | https://github.com/aws/amazon-ecs-cli | author:aws description:A custom Amazon ECS CLI that eases up the cluster setup process, enables users to run their applications locally or on ECS using the same Docker Compose file format and familiar Compose commands.
+github-aws-aws-iot-device-sdk-js | aws-iot-device-sdk-js | https://github.com/aws/aws-iot-device-sdk-js | author:aws description:SDK for connecting to AWS IoT from a device using JavaScript/Node.js
+github-aws-aws-sdk-core-ruby | aws-sdk-core-ruby | https://github.com/aws/aws-sdk-core-ruby | author:aws description:This repository has moved to the master branch of aws/aws-sdk-ruby
+github-aws-aws-sdk-android | aws-sdk-android | https://github.com/aws/aws-sdk-android | author:aws description:Official mirror of version 2 of the AWS Mobile SDK for Android. For more information, see our web site:
+github-aws-aws-toolkit-eclipse | aws-toolkit-eclipse | https://github.com/aws/aws-toolkit-eclipse | author:aws description:Official mirror of the AWS Toolkit for Eclipse. For more information on the toolkit, see our web site:
+github-aws-aws-iot-device-sdk-embedded-C | aws-iot-device-sdk-embedded-C | https://github.com/aws/aws-iot-device-sdk-embedded-C | author:aws description:SDK for connecting to AWS IoT from a device using embedded C.
+github-aws-aws-flow-ruby | aws-flow-ruby | https://github.com/aws/aws-flow-ruby | author:aws description:Updated Feb 25, 2016
+github-aws-aws-sdk-rails | aws-sdk-rails | https://github.com/aws/aws-sdk-rails | author:aws description:Official repository for the aws-sdk-rails gem, which integrates the AWS SDK for Ruby V2 with Ruby on Rails.
+github-aws-aws-codedeploy-agent | aws-codedeploy-agent | https://github.com/aws/aws-codedeploy-agent | author:aws description:Updated Jul 15, 2016
+github-aws-amazon-cognito-js | amazon-cognito-js | https://github.com/aws/amazon-cognito-js | author:aws description:Amazon Cognito Sync Manager for JavaScript
+github-aws-aws-sdk-php-zf2 | aws-sdk-php-zf2 | https://github.com/aws/aws-sdk-php-zf2 | author:aws description:ZF2 module for using the AWS SDK for PHP to interact with AWS services like S3, DynamoDB, SQS, EC2, etc.
+github-aws-aws-sdk-unity | aws-sdk-unity | https://github.com/aws/aws-sdk-unity | author:aws description:Official repository for the AWS Mobile SDK for Unity. For more information, see our web site: http://aws.amazon.com/mobile/sdk/
+github-aws-amazon-cognito-identity-js | amazon-cognito-identity-js | https://github.com/aws/amazon-cognito-identity-js | author:aws description:Updated Jul 15, 2016
+github-aws-aws-iot-device-sdk-arduino-yun | aws-iot-device-sdk-arduino-yun | https://github.com/aws/aws-iot-device-sdk-arduino-yun | author:aws description:SDK for connecting to AWS IoT from an Arduino Yún.
+github-aws-aws-sdk-php-silex | aws-sdk-php-silex | https://github.com/aws/aws-sdk-php-silex | author:aws description:Simple Silex service provider for including the AWS SDK for PHP
+github-aws-aws-dynamodb-session-tomcat | aws-dynamodb-session-tomcat | https://github.com/aws/aws-dynamodb-session-tomcat | author:aws description:Amazon DynamoDB based session store for Apache Tomcat
+github-aws-amazon-ssm-agent | amazon-ssm-agent | https://github.com/aws/amazon-ssm-agent | author:aws description:Agent to enable remote management of your Amazon EC2 instance configuration.
+github-aws-aws-lambda-java-libs | aws-lambda-java-libs | https://github.com/aws/aws-lambda-java-libs | author:aws description:Official mirror for interface definitions and helper classes for Java code running on the AWS Lambda platform.
+github-aws-aws-cfn-resource-bridge | aws-cfn-resource-bridge | https://github.com/aws/aws-cfn-resource-bridge | author:aws description:Updated Sep 15, 2015
+github-aws-aws-sdk-php-symfony | aws-sdk-php-symfony | https://github.com/aws/aws-sdk-php-symfony | author:aws description:Updated Jun 22, 2016
+github-aws-amazon-ecs-init | amazon-ecs-init | https://github.com/aws/amazon-ecs-init | author:aws description:Amazon EC2 Container Service RPM
+github-aws-aws-eb-python-dockerfiles | aws-eb-python-dockerfiles | https://github.com/aws/aws-eb-python-dockerfiles | author:aws description:Official Elastic Beanstalk repository for Python docker files.
+github-aws-aws-sessionstore-dynamodb-ruby | aws-sessionstore-dynamodb-ruby | https://github.com/aws/aws-sessionstore-dynamodb-ruby | author:aws description:Handles sessions for Ruby web applications using DynamoDB as a backend.
+github-aws-aws-sdk-mobile-analytics-js | aws-sdk-mobile-analytics-js | https://github.com/aws/aws-sdk-mobile-analytics-js | author:aws description:Amazon Mobile Analytics JavaScript SDK
+github-aws-amazon-cognito-ios | amazon-cognito-ios | https://github.com/aws/amazon-cognito-ios | author:aws description:Updated Mar 16, 2016
+github-aws-amazon-cognito-android | amazon-cognito-android | https://github.com/aws/amazon-cognito-android | author:aws description:Official mirror of the Amazon Cognito Sync portion of the AWS SDK for Android. For more information on the AWS SDK for Android, see our web site: http://aws.amazon.com/sdkforandroid
+github-aws-aws-cloudtrail-processing-library | aws-cloudtrail-processing-library | https://github.com/aws/aws-cloudtrail-processing-library | author:aws description:The AWS CloudTrail Processing Library helps Java developers to easily consume and process log files from AWS CloudTrail.
+github-aws-aws-php-sns-message-validator | aws-php-sns-message-validator | https://github.com/aws/aws-php-sns-message-validator | author:aws description:Amazon SNS message validation for PHP
+github-aws-aws-iot-device-sdk-python | aws-iot-device-sdk-python | https://github.com/aws/aws-iot-device-sdk-python | author:aws description:SDK for connecting to AWS IoT from a device using Python.
+github-aws-aws-sdk-js-apis | aws-sdk-js-apis | https://github.com/aws/aws-sdk-js-apis | author:aws description:This package is now deprecated, see
+github-aws-aws-eb-glassfish-dockerfiles | aws-eb-glassfish-dockerfiles | https://github.com/aws/aws-eb-glassfish-dockerfiles | author:aws description:Official Elastic Beanstalk repository for GlassFish docker files.
+github-aws-aws-js-sns-message-validator | aws-js-sns-message-validator | https://github.com/aws/aws-js-sns-message-validator | author:aws description:Updated Apr 13, 2016
+github-aws-aws-iot-device-sdk-java | aws-iot-device-sdk-java | https://github.com/aws/aws-iot-device-sdk-java | author:aws description:Java SDK for connecting to AWS IoT from a device.
+github-aws-aws-dotnet-session-provider | aws-dotnet-session-provider | https://github.com/aws/aws-dotnet-session-provider | author:aws description:A session state provider for ASP.NET applications that stores the sessions in Amazon DynamoDB
+github-aws-aws-sdk-java-archetype | aws-sdk-java-archetype | https://github.com/aws/aws-sdk-java-archetype | author:aws description:Updated May 18, 2015
+github-aws-amazon-cognito-unity | amazon-cognito-unity | https://github.com/aws/amazon-cognito-unity | author:aws description:Official repository for Amazon Cognito SDK for Unity (distributed as part of AWS Mobile SDK for Unity)
+github-aws-aws-cla | aws-cla | https://github.com/aws/aws-cla | author:aws description:License Agreement(s) for contributions to AWS-owned repositories
+github-aws-aws-dotnet-trace-listener | aws-dotnet-trace-listener | https://github.com/aws/aws-dotnet-trace-listener | author:aws description:A trace listener for System.Diagnostics that can be used to log events straight to Amazon DynamoDB.
+github-aws-aws-sdk-js-dist-tools | aws-sdk-js-dist-tools | https://github.com/aws/aws-sdk-js-dist-tools | author:aws description:Please see aws/aws-sdk-js for distribution tools
+github-aws-aws-sdk-java-samples | aws-sdk-java-samples | https://github.com/aws/aws-sdk-java-samples | author:aws description:Handwritten and generated code samples for the AWS SDK for Java documentation
+github-aws-aws-swf-build-tools | aws-swf-build-tools | https://github.com/aws/aws-swf-build-tools | author:aws description:Updated Jun 21, 2016
+github-aws-aws-sdk-php-v3-bridge | aws-sdk-php-v3-bridge | https://github.com/aws/aws-sdk-php-v3-bridge | author:aws description:A compatibility pack for services no longer supported in V3 of the AWS SDK for PHP
+github-aws-amazon-cognito-dotnet | amazon-cognito-dotnet | https://github.com/aws/amazon-cognito-dotnet | author:aws description:Official repository for Amazon Cognito Sync Manager SDK for Dotnet.

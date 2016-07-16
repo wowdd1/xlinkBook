@@ -712,13 +712,14 @@ class GithubSpider(Spider):
                     desc = "description:" + div.p.text.strip().replace('\n', '')
                     self.count += 1
                     id = 'github-' + k + "-" + str(self.count) 
-                    record = self.get_storage_format(id, title, "https://github.com" + div.h3.a['href'], desc)
+                    record = self.get_storage_format(stats, title, "https://github.com" + div.h3.a['href'], desc)
                     project_dict[id] = Record(record)
             self.count = 0
             for item in sorted(project_dict.items(), key=lambda project_dict:int(project_dict[1].get_id().strip()), reverse=True):
                 print item[1].get_id() + " " + item[1].get_title()
                 self.count += 1
-                self.write_db(f, item[0], item[1].get_title().strip(), item[1].get_url().strip(), 'author:'+ k + ' ' + item[1].get_describe().strip())
+		id = item[0][0 : item[0].rfind('-')] + '-' + item[1].get_title().strip()
+                self.write_db(f, id, item[1].get_title().strip(), item[1].get_url().strip(), 'author:'+ k + ' ' + item[1].get_describe().strip())
 
             self.close_db(f)
             if self.count > 0:

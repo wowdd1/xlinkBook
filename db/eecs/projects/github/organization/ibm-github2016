@@ -1,2 +1,10 @@
-github-ibm-211-1 | ibm.github.io | https://github.com/IBM/ibm.github.io | author:ibm description:Portal for IBM open source at GitHub
-github-ibm-1-2 | SparkMultiuserBenchmark | https://github.com/IBM/SparkMultiuserBenchmark | author:ibm description:Spark Multiuser Benchmark
+github-ibm-ibm.github.io | ibm.github.io | https://github.com/IBM/ibm.github.io | author:ibm description:Portal for IBM open source at GitHub
+github-ibm-xlc-community-edition-dockerfile | xlc-community-edition-dockerfile | https://github.com/IBM/xlc-community-edition-dockerfile | author:ibm description:Dockerfile for XLC Community Edition
+github-ibm-SparkMultiuserBenchmark | SparkMultiuserBenchmark | https://github.com/IBM/SparkMultiuserBenchmark | author:ibm description:Spark Multiuser Benchmark
+github-ibm-otc-saucelabs-broker | otc-saucelabs-broker | https://github.com/IBM/otc-saucelabs-broker | author:ibm description:OTC Sauce Labs Broker
+github-ibm-otc-slack-broker | otc-slack-broker | https://github.com/IBM/otc-slack-broker | author:ibm description:OTC Slack Broker
+github-ibm-ObjectizedTextInput | ObjectizedTextInput | https://github.com/IBM/ObjectizedTextInput | author:ibm description:ObjectizedTextInput
+github-ibm-node-nano-doc-updater | node-nano-doc-updater | https://github.com/IBM/node-nano-doc-updater | author:ibm description:Node.js Nano Doc Updater
+github-ibm-node-swagger-ui-middleware | node-swagger-ui-middleware | https://github.com/IBM/node-swagger-ui-middleware | author:ibm description:Node.js Swagger UI middleware
+github-ibm-otc-pagerduty-broker | otc-pagerduty-broker | https://github.com/IBM/otc-pagerduty-broker | author:ibm description:OTC Pager Duty Broker
+github-ibm-node-log4js-qradar-syslog-appender | node-log4js-qradar-syslog-appender | https://github.com/IBM/node-log4js-qradar-syslog-appender | author:ibm description:Node.js Log4js syslog appender for QRadar

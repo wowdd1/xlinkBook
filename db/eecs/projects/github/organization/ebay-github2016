@@ -1,54 +1,55 @@
-github-ebay-1922-1 | fabio | https://github.com/eBay/fabio | author:ebay description:A fast, modern, zero-conf load balancing HTTP(S) router for deploying microservices managed by consul.
-github-ebay-718-2 | restcommander | https://github.com/eBay/restcommander | author:ebay description:Fast Parallel Async HTTP client as a Service to monitor and manage 10,000 web servers. (Java+Akka)
-github-ebay-634-3 | bayesian-belief-networks | https://github.com/eBay/bayesian-belief-networks | author:ebay description:Pythonic Bayesian Belief Network Package, supporting creation of and exact inference on Bayesian Belief Networks specified as pure python functions.
-github-ebay-332-4 | parallec | https://github.com/eBay/parallec | author:ebay description:Fast Parallel Async HTTP/SSH/TCP/Ping Client Java Library. Aggregate 10,000 APIs & send anywhere in 20 lines of code.Ping/HTTP Calls 8000 servers in 12 seconds. (Akka) www.parallec.io
-github-ebay-178-5 | Neutrino | https://github.com/eBay/Neutrino | author:ebay description:Neutrino is a software load balancer(SLB)
-github-ebay-164-6 | Eagle | https://github.com/eBay/Eagle | author:ebay description:This codebase is retained for historical interest only, please visit Apache Incubator Repository for latest one
-github-ebay-109-7 | UAF | https://github.com/eBay/UAF | author:ebay description:UAF - Universal Authentication Framework
-github-ebay-106-8 | cors-filter | https://github.com/eBay/cors-filter | author:ebay description:CORS (Cross Origin Resource Sharing) is a mechanism supported by W3C to enable cross origin requests in web-browsers. CORS requires support from both browser and server to work. This is a Java servlet filter implementation of server-side CORS for web containers such as Apache Tomcat.
-github-ebay-56-9 | maxDNN | https://github.com/eBay/maxDNN | author:ebay description:High Efficiency Convolution Kernel for Maxwell GPU Architecture
-github-ebay-50-10 | parallec-samples | https://github.com/eBay/parallec-samples | author:ebay description:Single file examples and ready-to-use servers show how to use parallec.io library. Examples to aggregate APIs and publish to Elastic Search and Kafka, and many more.
-github-ebay-36-11 | jsonpipe | https://github.com/eBay/jsonpipe | author:ebay description:A lightweight AJAX client for chunked JSON responses
-github-ebay-34-12 | tsv-utils-dlang | https://github.com/eBay/tsv-utils-dlang | author:ebay description:Command line utilities for tab-separated value files written in the D programming language.
-github-ebay-32-13 | cassandra-river | https://github.com/eBay/cassandra-river | author:ebay description:Cassandra river for Elastic search.
-github-ebay-28-14 | xcelite | https://github.com/eBay/xcelite | author:ebay description:Updated Mar 8, 2016
-github-ebay-25-15 | embedded-druid | https://github.com/eBay/embedded-druid | author:ebay description:Updated Jan 25, 2016
-github-ebay-22-16 | GZinga | https://github.com/eBay/GZinga | author:ebay description:Updated Oct 1, 2015
-github-ebay-21-17 | oink | https://github.com/eBay/oink | author:ebay description:REST based interface for PIG execution
-github-ebay-20-18 | YiDB | https://github.com/eBay/YiDB | author:ebay description:Updated Apr 30, 2015
-github-ebay-19-19 | crossdomain-xhr | https://github.com/eBay/crossdomain-xhr | author:ebay description:Updated Oct 27, 2015
-github-ebay-19-20 | hadrian | https://github.com/eBay/hadrian | author:ebay description:Updated Feb 16, 2014
-github-ebay-18-21 | geosense | https://github.com/eBay/geosense | author:ebay description:Self-contained jar to lookup timezone by lat+lon
-github-ebay-17-22 | skin | https://github.com/eBay/skin | author:ebay description:CSS modules designed by eBay to build an online store.
-github-ebay-15-23 | myriad | https://github.com/eBay/myriad | author:ebay description:Updated Sep 29, 2014
-github-ebay-13-24 | mtdtool | https://github.com/eBay/mtdtool | author:ebay description:The Manual Test Demultiplexer is a desktop app (Mac and Windows) that provides an interface for driving manual testing on multiple physical devices.
-github-ebay-12-25 | ostara | https://github.com/eBay/ostara | author:ebay description:Updated Jun 22, 2015
-github-ebay-12-26 | SVNetworking | https://github.com/eBay/SVNetworking | author:ebay description:Objective-C remote resource loading and networking
-github-ebay-11-27 | modshot | https://github.com/eBay/modshot | author:ebay description:Takes screenshot of UI modules and compare with baselines using PhantomCSS
-github-ebay-11-28 | bonsai | https://github.com/eBay/bonsai | author:ebay description:open source version of the Bonsai library
-github-ebay-10-29 | EBNObservable | https://github.com/eBay/EBNObservable | author:ebay description:A block-based Key-Value Observing (KVO) implementation with observable collections.
-github-ebay-9-30 | fluid | https://github.com/eBay/fluid | author:ebay description:Fluid Web Components
-github-ebay-9-31 | wextracto | https://github.com/eBay/wextracto | author:ebay description:Updated May 14, 2016
-github-ebay-9-32 | RTran | https://github.com/eBay/RTran | author:ebay description:Road to Continous Upgrade
-github-ebay-9-33 | TDD-Albums | https://github.com/eBay/TDD-Albums | author:ebay description:A Hands-On Tutorial for iPhone Developers Learning TDD
-github-ebay-7-34 | WebRex | https://github.com/eBay/WebRex | author:ebay description:WebRex is a tool for web resource aggregation and optimization in runtime. In comparison with other open source optimizers like wro4j, its outstanding advantage is, the aggregation and optimization are dynamic instead of static.
-github-ebay-6-35 | hadoop-tsdb-connector | https://github.com/eBay/hadoop-tsdb-connector | author:ebay description:Updated Aug 19, 2014
-github-ebay-5-36 | parallec-plugins | https://github.com/eBay/parallec-plugins | author:ebay description:Parallec Plugin: Single Line of Code to Enable SSL Client Authentication
-github-ebay-5-37 | hpulse | https://github.com/eBay/hpulse | author:ebay description:Realtime Monitoring of Hadoop through JMX JSON
-github-ebay-4-38 | Design-Grid-Overlay | https://github.com/eBay/Design-Grid-Overlay | author:ebay description:A Chrome extension to overlay a design grid on your web page; configurable to fit many design scenarios.
-github-ebay-4-39 | cronus-agent | https://github.com/eBay/cronus-agent | author:ebay description:Updated Apr 17, 2015
-github-ebay-4-40 | Vivid | https://github.com/eBay/Vivid | author:ebay description:A visual testing tool to compare two web pages visually and generate the pixel difference they have.
-github-ebay-3-41 | P2Portal | https://github.com/eBay/P2Portal | author:ebay description:Updated Nov 13, 2015
-github-ebay-3-42 | ldapadmtool | https://github.com/eBay/ldapadmtool | author:ebay description:UNIX LDAP command toolchain
-github-ebay-3-43 | NococoHint | https://github.com/eBay/NococoHint | author:ebay description:NococoHint - Node Module for Istanbul and JSHint Report Aggregation
-github-ebay-3-44 | MySQL-Benchmark-Perl | https://github.com/eBay/MySQL-Benchmark-Perl | author:ebay description:A tool to drive our MySQL Benchmarking Activities
-github-ebay-2-45 | ebay.github.com | https://github.com/eBay/ebay.github.com | author:ebay description:Updated Apr 15, 2015
-github-ebay-2-46 | gauntlet | https://github.com/eBay/gauntlet | author:ebay description:Gauntlet - systems management made easy
-github-ebay-2-47 | reactive-source | https://github.com/eBay/reactive-source | author:ebay description:Moved at: http://github.com/kstam/reactive-source
-github-ebay-1-48 | Eagle-Site | https://github.com/eBay/Eagle-Site | author:ebay description:Updated Oct 16, 2015
-github-ebay-1-49 | AIALib | https://github.com/eBay/AIALib | author:ebay description:Updated Oct 14, 2015
-github-ebay-0-50 | EasyConfig | https://github.com/eBay/EasyConfig | author:ebay description:Updated Sep 10, 2015
-github-ebay-0-51 | HIPE | https://github.com/eBay/HIPE | author:ebay description:Updated Feb 10, 2016
-github-ebay-0-52 | ie-debug | https://github.com/eBay/ie-debug | author:ebay description:Updated Oct 8, 2015
-github-ebay-0-53 | fw | https://github.com/eBay/fw | author:ebay description:Updated Aug 26, 2014
-github-ebay-0-54 | mTracker | https://github.com/eBay/mTracker | author:ebay description:mTracker a.k.a Maven Build Tracking is a system used to track the Maven builds in various environments (IDE, CLI, CI etc.), load the data into central DB for analyzing performance/reliability metrics. It can be easily integrated with reporting system. It is low-footprint, low-latency, self-upgrade, easy to maintain.
+github-ebay-fabio | fabio | https://github.com/eBay/fabio | author:ebay description:A fast, modern, zero-conf load balancing HTTP(S) router for deploying microservices managed by consul.
+github-ebay-restcommander | restcommander | https://github.com/eBay/restcommander | author:ebay description:Fast Parallel Async HTTP client as a Service to monitor and manage 10,000 web servers. (Java+Akka)
+github-ebay-bayesian-belief-networks | bayesian-belief-networks | https://github.com/eBay/bayesian-belief-networks | author:ebay description:Pythonic Bayesian Belief Network Package, supporting creation of and exact inference on Bayesian Belief Networks specified as pure python functions.
+github-ebay-parallec | parallec | https://github.com/eBay/parallec | author:ebay description:Fast Parallel Async HTTP/SSH/TCP/Ping Client Java Library. Aggregate 10,000 APIs & send anywhere in 20 lines of code.Ping/HTTP Calls 8000 servers in 12 seconds. (Akka) www.parallec.io
+github-ebay-Neutrino | Neutrino | https://github.com/eBay/Neutrino | author:ebay description:Neutrino is a software load balancer(SLB)
+github-ebay-Eagle | Eagle | https://github.com/eBay/Eagle | author:ebay description:This codebase is retained for historical interest only, please visit Apache Incubator Repository for latest one
+github-ebay-cors-filter | cors-filter | https://github.com/eBay/cors-filter | author:ebay description:CORS (Cross Origin Resource Sharing) is a mechanism supported by W3C to enable cross origin requests in web-browsers. CORS requires support from both browser and server to work. This is a Java servlet filter implementation of server-side CORS for web containers such as Apache Tomcat.
+github-ebay-UAF | UAF | https://github.com/eBay/UAF | author:ebay description:UAF - Universal Authentication Framework
+github-ebay-maxDNN | maxDNN | https://github.com/eBay/maxDNN | author:ebay description:High Efficiency Convolution Kernel for Maxwell GPU Architecture
+github-ebay-parallec-samples | parallec-samples | https://github.com/eBay/parallec-samples | author:ebay description:Single file examples and ready-to-use servers show how to use parallec.io library. Examples to aggregate APIs and publish to Elastic Search and Kafka, and many more.
+github-ebay-jsonpipe | jsonpipe | https://github.com/eBay/jsonpipe | author:ebay description:A lightweight AJAX client for chunked JSON responses
+github-ebay-tsv-utils-dlang | tsv-utils-dlang | https://github.com/eBay/tsv-utils-dlang | author:ebay description:Command line utilities for tab-separated value files written in the D programming language.
+github-ebay-cassandra-river | cassandra-river | https://github.com/eBay/cassandra-river | author:ebay description:Cassandra river for Elastic search.
+github-ebay-xcelite | xcelite | https://github.com/eBay/xcelite | author:ebay description:Updated Mar 8, 2016
+github-ebay-embedded-druid | embedded-druid | https://github.com/eBay/embedded-druid | author:ebay description:Updated Jan 25, 2016
+github-ebay-GZinga | GZinga | https://github.com/eBay/GZinga | author:ebay description:Updated Oct 1, 2015
+github-ebay-oink | oink | https://github.com/eBay/oink | author:ebay description:REST based interface for PIG execution
+github-ebay-crossdomain-xhr | crossdomain-xhr | https://github.com/eBay/crossdomain-xhr | author:ebay description:Updated Oct 27, 2015
+github-ebay-YiDB | YiDB | https://github.com/eBay/YiDB | author:ebay description:Updated Apr 30, 2015
+github-ebay-hadrian | hadrian | https://github.com/eBay/hadrian | author:ebay description:Updated Feb 16, 2014
+github-ebay-skin | skin | https://github.com/eBay/skin | author:ebay description:CSS modules designed by eBay to build an online store.
+github-ebay-geosense | geosense | https://github.com/eBay/geosense | author:ebay description:Self-contained jar to lookup timezone by lat+lon
+github-ebay-bonsai | bonsai | https://github.com/eBay/bonsai | author:ebay description:open source version of the Bonsai library
+github-ebay-myriad | myriad | https://github.com/eBay/myriad | author:ebay description:Updated Sep 29, 2014
+github-ebay-mtdtool | mtdtool | https://github.com/eBay/mtdtool | author:ebay description:The Manual Test Demultiplexer is a desktop app (Mac and Windows) that provides an interface for driving manual testing on multiple physical devices.
+github-ebay-SVNetworking | SVNetworking | https://github.com/eBay/SVNetworking | author:ebay description:Objective-C remote resource loading and networking
+github-ebay-ostara | ostara | https://github.com/eBay/ostara | author:ebay description:Updated Jun 22, 2015
+github-ebay-modshot | modshot | https://github.com/eBay/modshot | author:ebay description:Takes screenshot of UI modules and compare with baselines using PhantomCSS
+github-ebay-EBNObservable | EBNObservable | https://github.com/eBay/EBNObservable | author:ebay description:A block-based Key-Value Observing (KVO) implementation with observable collections.
+github-ebay-fluid | fluid | https://github.com/eBay/fluid | author:ebay description:Fluid Web Components
+github-ebay-wextracto | wextracto | https://github.com/eBay/wextracto | author:ebay description:Updated May 14, 2016
+github-ebay-RTran | RTran | https://github.com/eBay/RTran | author:ebay description:Road to Continous Upgrade
+github-ebay-TDD-Albums | TDD-Albums | https://github.com/eBay/TDD-Albums | author:ebay description:A Hands-On Tutorial for iPhone Developers Learning TDD
+github-ebay-WebRex | WebRex | https://github.com/eBay/WebRex | author:ebay description:WebRex is a tool for web resource aggregation and optimization in runtime. In comparison with other open source optimizers like wro4j, its outstanding advantage is, the aggregation and optimization are dynamic instead of static.
+github-ebay-hpulse | hpulse | https://github.com/eBay/hpulse | author:ebay description:Realtime Monitoring of Hadoop through JMX JSON
+github-ebay-hadoop-tsdb-connector | hadoop-tsdb-connector | https://github.com/eBay/hadoop-tsdb-connector | author:ebay description:Updated Aug 19, 2014
+github-ebay-Design-Grid-Overlay | Design-Grid-Overlay | https://github.com/eBay/Design-Grid-Overlay | author:ebay description:A Chrome extension to overlay a design grid on your web page; configurable to fit many design scenarios.
+github-ebay-parallec-plugins | parallec-plugins | https://github.com/eBay/parallec-plugins | author:ebay description:Parallec Plugin: Single Line of Code to Enable SSL Client Authentication
+github-ebay-cronus-agent | cronus-agent | https://github.com/eBay/cronus-agent | author:ebay description:Updated Apr 17, 2015
+github-ebay-Vivid | Vivid | https://github.com/eBay/Vivid | author:ebay description:A visual testing tool to compare two web pages visually and generate the pixel difference they have.
+github-ebay-ldapadmtool | ldapadmtool | https://github.com/eBay/ldapadmtool | author:ebay description:UNIX LDAP command toolchain
+github-ebay-P2Portal | P2Portal | https://github.com/eBay/P2Portal | author:ebay description:Updated Nov 13, 2015
+github-ebay-NococoHint | NococoHint | https://github.com/eBay/NococoHint | author:ebay description:NococoHint - Node Module for Istanbul and JSHint Report Aggregation
+github-ebay-MySQL-Benchmark-Perl | MySQL-Benchmark-Perl | https://github.com/eBay/MySQL-Benchmark-Perl | author:ebay description:A tool to drive our MySQL Benchmarking Activities
+github-ebay-reactive-source | reactive-source | https://github.com/eBay/reactive-source | author:ebay description:Moved at: http://github.com/kstam/reactive-source
+github-ebay-gauntlet | gauntlet | https://github.com/eBay/gauntlet | author:ebay description:Gauntlet - systems management made easy
+github-ebay-ebay.github.com | ebay.github.com | https://github.com/eBay/ebay.github.com | author:ebay description:Updated Jun 22, 2016
+github-ebay-Pine | Pine | https://github.com/eBay/Pine | author:ebay description:Pine: Machine Learning As A Service
+github-ebay-AIALib | AIALib | https://github.com/eBay/AIALib | author:ebay description:Updated Oct 14, 2015
+github-ebay-Eagle-Site | Eagle-Site | https://github.com/eBay/Eagle-Site | author:ebay description:Updated Oct 16, 2015
+github-ebay-fw | fw | https://github.com/eBay/fw | author:ebay description:Updated Aug 26, 2014
+github-ebay-mTracker | mTracker | https://github.com/eBay/mTracker | author:ebay description:mTracker a.k.a Maven Build Tracking is a system used to track the Maven builds in various environments (IDE, CLI, CI etc.), load the data into central DB for analyzing performance/reliability metrics. It can be easily integrated with reporting system. It is low-footprint, low-latency, self-upgrade, easy to maintain.
+github-ebay-HIPE | HIPE | https://github.com/eBay/HIPE | author:ebay description:Updated Feb 10, 2016
+github-ebay-ie-debug | ie-debug | https://github.com/eBay/ie-debug | author:ebay description:Updated Oct 8, 2015
+github-ebay-EasyConfig | EasyConfig | https://github.com/eBay/EasyConfig | author:ebay description:Updated Sep 10, 2015
