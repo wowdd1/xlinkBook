@@ -58,3 +58,8 @@ class Config():
 
     css_style_type = 6
     plugins_mode = False
+
+    fav_links = { 'Arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
+		  'Video' :  ip_adress + '/?db=videos/&key=?',\
+		  'eecs' :  ip_adress + '/?db=eecs/&key=?',\
+		  'Neuroscience' : ip_adress + '/?db=cognitive-computational-neuroscience/&key=?'}
