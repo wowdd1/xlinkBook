@@ -186,7 +186,7 @@ class Utils:
         html = ''
         db_root = ''
         if root:
-            db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:10px">Home</a>'
+            db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
         if user_name != None and user_name != '':
             lines = 0
             if os.path.exists('db/library/' + user_name + '-library'):
@@ -194,9 +194,11 @@ class Utils:
                 lines = len(f.readlines())
                 f.close()
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root
+	    for link_dict in Config.fav_links.items():
+		html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
             if user_image != '':
                 html += '<img src="' + user_image + '" width="20" height="20" style="border-radius: 50%;"/>'
-            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library">' + user_name + '(' + str(lines) + ')</a></div>'
+            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=77">' + user_name + '(' + str(lines) + ')</a></div>'
         else:
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/login">Login</a></div>'
         html += '<div style="height: 21px; width: 100px"></div>'
@@ -844,6 +846,15 @@ class Utils:
             return '<iframe  id="iFrameLink" width="600" height="190" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         #return '{"firstAccess" : "' + data + '"}'
 
+    def suportFrame(self, url, sec):
+        output = ''
+	try:
+	    output = subprocess.check_output("curl --max-time " + str(sec) + " --head " + url, shell=True)
+	except Exception as e:
+	    output = ''
+        if output != '' and output.find('X-Frame-Options:') < 0:
+	    return True
+        return False
 
     def clearHtmlTag(self, htmlstr):
         re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I)
