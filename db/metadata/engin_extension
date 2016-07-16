@@ -13,6 +13,7 @@ share
 monitor
 note
 gitter
+exclusive
 save
 delete
 #pipeline

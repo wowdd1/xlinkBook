@@ -88,6 +88,10 @@ function search(inputid,optionid){
     var select = document.getElementById(optionid);
     console.log("xx",input.value);
     console.log("",select[select.selectedIndex].text);
+    //if (input.value.indexOf('http') != -1 || input.indexOf('.com') != -1) {
+    //    window.open(input.value);
+    //	return;
+    //}
     if (select[select.selectedIndex].value.slice(0, 1) == "!"){
         window.open("http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " "));
     } else if (select[select.selectedIndex].value == "current") {
@@ -175,6 +179,8 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs["divID"] = divID + "-" + obj.text;
     postArgs["defaultLinks"] = 2;
     postArgs['user_name'] = user_name;
+    postArgs['originFileName'] = fileName;
+
     if (obj.text == "search") {
         var selection = window.getSelection().toString();
         if (selection != '') {
@@ -300,7 +306,7 @@ function appendContent(targetid, id, topic, url, otherInfo){
     if (fileName.indexOf("library") > 0){
         nocache = "true";
     }
-    $.post('/extensions', {name : module, rID : id, url : url, fileName : fileName, nocache : nocache, 'check' : 'true', user_name : user_name}, function(data){
+    $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, nocache : nocache, 'check' : 'true', user_name : user_name}, function(data){
         if (data.trim() != '') {
             console.log("xx", data)
             var extensions = data.split(" ");
