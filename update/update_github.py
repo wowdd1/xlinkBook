@@ -475,7 +475,7 @@ class GithubSpider(Spider):
                     description = ""
                     if item['description'] != None:
                         description = 'author:' + item['owner']['login'] + ' description:' + item['description'] + " (stars:" + str(item["stargazers_count"]) + " forks:" + str(item['forks_count']) + " watchers:" + str(item['watchers']) + ")"
-                    self.write_db(f, 'github-' + str(item["stargazers_count"]) + "-" + str(item['forks_count']), item["name"], item['html_url'], description)
+                    self.write_db(f, 'github-' + item['owner']['login'].strip() + '-' + item["name"].strip(), item["name"], item['html_url'], description)
                     self.count = self.count + 1
         return total_size
 
@@ -711,15 +711,14 @@ class GithubSpider(Spider):
                     title =  div.h3.a.text.strip()
                     desc = "description:" + div.p.text.strip().replace('\n', '')
                     self.count += 1
-                    id = 'github-' + k + '-' + stats + "-" + str(self.count) 
-                    record = record = self.get_storage_format(stats, title, "https://github.com" + div.h3.a['href'], desc)
+                    id = 'github-' + k + "-" + str(self.count) 
+                    record = self.get_storage_format(id, title, "https://github.com" + div.h3.a['href'], desc)
                     project_dict[id] = Record(record)
             self.count = 0
             for item in sorted(project_dict.items(), key=lambda project_dict:int(project_dict[1].get_id().strip()), reverse=True):
                 print item[1].get_id() + " " + item[1].get_title()
                 self.count += 1
-                id = k + '-github-' + item[1].get_id().strip() + "-" + str(self.count)
-                self.write_db(f, id, item[1].get_title().strip(), item[1].get_url().strip(), 'author:'+ k + ' ' + item[1].get_describe().strip())
+                self.write_db(f, item[0], item[1].get_title().strip(), item[1].get_url().strip(), 'author:'+ k + ' ' + item[1].get_describe().strip())
 
             self.close_db(f)
             if self.count > 0:
