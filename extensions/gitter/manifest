@@ -1,0 +1,6 @@
+{
+    "name" : "gitter",
+    "module" : "gitter",
+    "class" : "Gitter",
+    "version" : "0.1"
+}

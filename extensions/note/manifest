@@ -1,0 +1,6 @@
+{
+    "name" : "note",
+    "module" : "note",
+    "class" : "Note",
+    "version" : "0.1"
+}

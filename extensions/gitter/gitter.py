@@ -2,13 +2,12 @@
 
 from extensions.bas_extension import BaseExtension
 
-class Monitor(BaseExtension):
+class Gitter(BaseExtension):
 
     def excute(self, form_dict):
         url = form_dict['url'].encode('utf8')
-	#src = 'https://pomotodo.com/app/'
-	#src = 'https://trello.com/'
-	src = 'https://oasis.sandstorm.io/grain'
+	src = 'https://gitter.im' + url[url.find('com') + 3 : url.rfind('/')]
+	print src
 	column = form_dict['column']
 	width = '660'
 	height = '415'
@@ -23,4 +22,5 @@ class Monitor(BaseExtension):
         
 
     def check(self, form_dict):
-	return True
+        url = form_dict['url'].encode('utf8')
+	return url.find('github') != -1
