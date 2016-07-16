@@ -1,0 +1,16 @@
+github-ACElab-brainbrowser | brainbrowser | https://github.com/aces/brainbrowser | author:ACElab description:Web-based visualization tools for neurological data.
+github-ACElab-Loris | Loris | https://github.com/aces/Loris | author:ACElab description:LORIS is a web-accessible database solution for longitudinal multi-site studies.
+github-ACElab-cbrain | cbrain | https://github.com/aces/cbrain | author:ACElab description:CBRAIN is a flexible Ruby on Rails framework for accessing and processing of large data on high-performance computing infrastructures.
+github-ACElab-Loris-MRI | Loris-MRI | https://github.com/aces/Loris-MRI | author:ACElab description:The set of scripts that preprocess and insert MRI data into the database.
+github-ACElab-DICAT | DICAT | https://github.com/aces/DICAT | author:ACElab description:Tool to anonymize DICOM data headers.
+github-ACElab-dicom-archive-tools | dicom-archive-tools | https://github.com/aces/dicom-archive-tools | author:ACElab description:a set of tools to deal with DICOMs
+github-ACElab-cbrain-plugins-fmri-psom | cbrain-plugins-fmri-psom | https://github.com/aces/cbrain-plugins-fmri-psom | author:ACElab description:PSOM fMRI models and tasks for CBRAIN
+github-ACElab-Data-Query-Tool | Data-Query-Tool | https://github.com/aces/Data-Query-Tool | author:ACElab description:LORIS's Data Query Tool, written as a CouchApp
+github-ACElab-bigbrain-surface-viewer | bigbrain-surface-viewer | https://github.com/aces/bigbrain-surface-viewer | author:ACElab description:BigBrain Surface Viewer for Claude
+github-ACElab-Loris-BigBrain-Modules | Loris-BigBrain-Modules | https://github.com/aces/Loris-BigBrain-Modules | author:ACElab description:This contains the Loris modules written for the Loris release of BigBrain at https://bigbrain.loris.ca
+github-ACElab-cbrain-plugins-mni | cbrain-plugins-mni | https://github.com/aces/cbrain-plugins-mni | author:ACElab description:(Deprecated) MNI models and tasks for CBRAIN
+github-ACElab-cbrain-plugins-fsl | cbrain-plugins-fsl | https://github.com/aces/cbrain-plugins-fsl | author:ACElab description:(Deprecated) FSL models and tasks for CBRAIN
+github-ACElab-loris.ca | loris.ca | https://github.com/aces/loris.ca | author:ACElab description:The public website of LORIS
+github-ACElab-cbrain-plugins-freesurfer | cbrain-plugins-freesurfer | https://github.com/aces/cbrain-plugins-freesurfer | author:ACElab description:(Deprecated) FreeSurfer models and tasks for CBRAIN
+github-ACElab-cbrain-apis | cbrain-apis | https://github.com/aces/cbrain-apis | author:ACElab description:External APIs for accessing the CBRAIN platform.
+github-ACElab-cbrain-plugins-neuro | cbrain-plugins-neuro | https://github.com/aces/cbrain-plugins-neuro | author:ACElab description:Updated Jul 13, 2016

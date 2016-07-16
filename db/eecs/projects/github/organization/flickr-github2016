@@ -1,10 +1,11 @@
-github-flickr-871-1 | justified-layout | https://github.com/flickr/justified-layout | author:flickr description:Pass in box sizes and get back sizes and coordinates for a justified layout
-github-flickr-250-2 | yakbak | https://github.com/flickr/yakbak | author:flickr description:Record and playback HTTP responses
-github-flickr-79-3 | Pandonia | https://github.com/flickr/Pandonia | author:flickr description:TileMill styles for use with the OSM Bright template.
-github-flickr-14-4 | FlickrDithr | https://github.com/flickr/FlickrDithr | author:flickr description:1 bit dithering, created for Flickr April Fools
-github-flickr-4-5 | flickr-sdk | https://github.com/flickr/flickr-sdk | author:flickr description:The easiest way to talk to the Flickr API with node.js or a web browser
-github-flickr-3-6 | tagExplodr | https://github.com/flickr/tagExplodr | author:flickr description:How to convert a big ol’ string of tags into a big ol’ array of tags
-github-flickr-2-7 | incoming-message-hash | https://github.com/flickr/incoming-message-hash | author:flickr description:Generate a one-way hash from an http.IncomingMessage
-github-flickr-2-8 | flickr-api-swagger | https://github.com/flickr/flickr-api-swagger | author:flickr description:Flickr API v1 Swagger definitions
-github-flickr-0-9 | flickr.github.com | https://github.com/flickr/flickr.github.com | author:flickr description:The organization page for Flickr.
-github-flickr-0-10 | flickr | https://github.com/flickr/flickr | author:flickr description:Placeholder repository
+github-flickr-justified-layout | justified-layout | https://github.com/flickr/justified-layout | author:flickr description:Pass in box sizes and get back sizes and coordinates for a justified layout
+github-flickr-yakbak | yakbak | https://github.com/flickr/yakbak | author:flickr description:Record and playback HTTP responses
+github-flickr-Pandonia | Pandonia | https://github.com/flickr/Pandonia | author:flickr description:TileMill styles for use with the OSM Bright template.
+github-flickr-FlickrDithr | FlickrDithr | https://github.com/flickr/FlickrDithr | author:flickr description:1 bit dithering, created for Flickr April Fools
+github-flickr-flickr-sdk | flickr-sdk | https://github.com/flickr/flickr-sdk | author:flickr description:The easiest way to talk to the Flickr API with node.js or a web browser
+github-flickr-tagExplodr | tagExplodr | https://github.com/flickr/tagExplodr | author:flickr description:How to convert a big ol’ string of tags into a big ol’ array of tags
+github-flickr-incoming-message-hash | incoming-message-hash | https://github.com/flickr/incoming-message-hash | author:flickr description:Generate a one-way hash from an http.IncomingMessage
+github-flickr-flickr-api-swagger | flickr-api-swagger | https://github.com/flickr/flickr-api-swagger | author:flickr description:Flickr API v1 Swagger definitions
+github-flickr-eslint-config-flickr | eslint-config-flickr | https://github.com/flickr/eslint-config-flickr | author:flickr description:Flickr's cool eslint config
+github-flickr-flickr | flickr | https://github.com/flickr/flickr | author:flickr description:Placeholder repository
+github-flickr-flickr.github.com | flickr.github.com | https://github.com/flickr/flickr.github.com | author:flickr description:The organization page for Flickr.

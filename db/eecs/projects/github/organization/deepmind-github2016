@@ -1,15 +1,15 @@
-deepmind-github-547-1 | rc-data | https://github.com/deepmind/rc-data | author:deepmind description:Question answering dataset featured in "Teaching Machines to Read and Comprehend
-deepmind-github-94-2 | torch-hdf5 | https://github.com/deepmind/torch-hdf5 | author:deepmind description:Torch interface to HDF5 library
-deepmind-github-57-3 | xitari | https://github.com/deepmind/xitari | author:deepmind description:Updated Jun 10, 2016
-deepmind-github-54-4 | classic | https://github.com/deepmind/classic | author:deepmind description:A class system for Lua.
-deepmind-github-26-5 | torch-distributions | https://github.com/deepmind/torch-distributions | author:deepmind description:Updated Apr 8, 2016
-deepmind-github-21-6 | torch-cephes | https://github.com/deepmind/torch-cephes | author:deepmind description:Cephes Mathematical Functions library wrapped for Torch
-deepmind-github-20-7 | mnist-cluttered | https://github.com/deepmind/mnist-cluttered | author:deepmind description:Updated Mar 27, 2015
-deepmind-github-18-8 | alewrap | https://github.com/deepmind/alewrap | author:deepmind description:Updated Jun 18, 2016
-deepmind-github-15-9 | torch-totem | https://github.com/deepmind/torch-totem | author:deepmind description:Torch test module
-deepmind-github-13-10 | torch-dokx | https://github.com/deepmind/torch-dokx | author:deepmind description:Scripts to help with Torch package documentation
-deepmind-github-11-11 | torch-randomkit | https://github.com/deepmind/torch-randomkit | author:deepmind description:Updated Nov 20, 2015
-deepmind-github-10-12 | plplot-ffi | https://github.com/deepmind/plplot-ffi | author:deepmind description:LuaJIT wrapper for PLplot
-deepmind-github-4-13 | strict | https://github.com/deepmind/strict | author:deepmind description:A Lua package to detect reading of undeclared variables and creating of global variables.
-deepmind-github-3-14 | luastyle | https://github.com/deepmind/luastyle | author:deepmind description:Style guide for Lua code.
-deepmind-github-3-15 | torch-oocairo | https://github.com/deepmind/torch-oocairo | author:deepmind description:Cairo lua bindings with extensions for torch
+github-deepmind-rc-data | rc-data | https://github.com/deepmind/rc-data | author:deepmind description:Question answering dataset featured in "Teaching Machines to Read and Comprehend
+github-deepmind-torch-hdf5 | torch-hdf5 | https://github.com/deepmind/torch-hdf5 | author:deepmind description:Torch interface to HDF5 library
+github-deepmind-xitari | xitari | https://github.com/deepmind/xitari | author:deepmind description:Updated Jun 10, 2016
+github-deepmind-classic | classic | https://github.com/deepmind/classic | author:deepmind description:A class system for Lua.
+github-deepmind-torch-distributions | torch-distributions | https://github.com/deepmind/torch-distributions | author:deepmind description:Updated Apr 8, 2016
+github-deepmind-alewrap | alewrap | https://github.com/deepmind/alewrap | author:deepmind description:Updated Jun 18, 2016
+github-deepmind-torch-cephes | torch-cephes | https://github.com/deepmind/torch-cephes | author:deepmind description:Cephes Mathematical Functions library wrapped for Torch
+github-deepmind-mnist-cluttered | mnist-cluttered | https://github.com/deepmind/mnist-cluttered | author:deepmind description:Updated Mar 27, 2015
+github-deepmind-torch-totem | torch-totem | https://github.com/deepmind/torch-totem | author:deepmind description:Torch test module
+github-deepmind-torch-dokx | torch-dokx | https://github.com/deepmind/torch-dokx | author:deepmind description:Scripts to help with Torch package documentation
+github-deepmind-torch-randomkit | torch-randomkit | https://github.com/deepmind/torch-randomkit | author:deepmind description:Updated Jul 11, 2016
+github-deepmind-plplot-ffi | plplot-ffi | https://github.com/deepmind/plplot-ffi | author:deepmind description:LuaJIT wrapper for PLplot
+github-deepmind-strict | strict | https://github.com/deepmind/strict | author:deepmind description:A Lua package to detect reading of undeclared variables and creating of global variables.
+github-deepmind-torch-oocairo | torch-oocairo | https://github.com/deepmind/torch-oocairo | author:deepmind description:Cairo lua bindings with extensions for torch
+github-deepmind-luastyle | luastyle | https://github.com/deepmind/luastyle | author:deepmind description:Style guide for Lua code.

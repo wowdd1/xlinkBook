@@ -1,17 +1,17 @@
-id-Software-github-2220-1 | DOOM-3-BFG | https://github.com/id-Software/DOOM-3-BFG | author:id-Software description:Doom 3 BFG Edition
-id-Software-github-1663-2 | Quake-III-Arena | https://github.com/id-Software/Quake-III-Arena | author:id-Software description:Quake III Arena GPL Source Release
-id-Software-github-1594-3 | DOOM | https://github.com/id-Software/DOOM | author:id-Software description:DOOM Open Source Release
-id-Software-github-1179-4 | Quake | https://github.com/id-Software/Quake | author:id-Software description:Quake GPL Source Release
-id-Software-github-613-5 | Quake-2 | https://github.com/id-Software/Quake-2 | author:id-Software description:Quake 2 GPL Source Release
-id-Software-github-520-6 | wolf3d | https://github.com/id-Software/wolf3d | author:id-Software description:The original open source release of Wolfenstein 3D
-id-Software-github-431-7 | DOOM-iOS | https://github.com/id-Software/DOOM-iOS | author:id-Software description:DOOM Classic for iOS Source Release
-id-Software-github-290-8 | Wolf3D-iOS | https://github.com/id-Software/Wolf3D-iOS | author:id-Software description:Wolfenstein 3D for iOS Source Release
-id-Software-github-209-9 | wolf3d-browser | https://github.com/id-Software/wolf3d-browser | author:id-Software description:WOLF3D Browser Version GPL source release
-id-Software-github-205-10 | Enemy-Territory | https://github.com/id-Software/Enemy-Territory | author:id-Software description:Wolfenstein: Enemy Territory GPL Source Release
-id-Software-github-197-11 | RTCW-SP | https://github.com/id-Software/RTCW-SP | author:id-Software description:Return to Castle Wolfenstein Single Player GPL Source Release
-id-Software-github-173-12 | Quake-Tools | https://github.com/id-Software/Quake-Tools | author:id-Software description:The source release of the Quake tools and utilities
-id-Software-github-136-13 | RTCW-MP | https://github.com/id-Software/RTCW-MP | author:id-Software description:Return to Castle Wolfenstein Multiplayer GPL Source Release
-id-Software-github-136-14 | DOOM-IOS2 | https://github.com/id-Software/DOOM-IOS2 | author:id-Software description:Doom Classic for iOS version 2
-id-Software-github-117-15 | Quake-2-Tools | https://github.com/id-Software/Quake-2-Tools | author:id-Software description:Quake 2 Tools GPL Source Release
-id-Software-github-114-16 | GtkRadiant | https://github.com/id-Software/GtkRadiant | author:id-Software description:GtkRadiant GPL Source Release
-id-Software-github-103-17 | idsetup | https://github.com/id-Software/idsetup | author:id-Software description:This is the source for the setup program included with DOOM, Final DOOM, Strife, etc.
+github-id-Software-DOOM-3-BFG | DOOM-3-BFG | https://github.com/id-Software/DOOM-3-BFG | author:id-Software description:Doom 3 BFG Edition
+github-id-Software-Quake-III-Arena | Quake-III-Arena | https://github.com/id-Software/Quake-III-Arena | author:id-Software description:Quake III Arena GPL Source Release
+github-id-Software-DOOM | DOOM | https://github.com/id-Software/DOOM | author:id-Software description:DOOM Open Source Release
+github-id-Software-Quake | Quake | https://github.com/id-Software/Quake | author:id-Software description:Quake GPL Source Release
+github-id-Software-Quake-2 | Quake-2 | https://github.com/id-Software/Quake-2 | author:id-Software description:Quake 2 GPL Source Release
+github-id-Software-wolf3d | wolf3d | https://github.com/id-Software/wolf3d | author:id-Software description:The original open source release of Wolfenstein 3D
+github-id-Software-DOOM-iOS | DOOM-iOS | https://github.com/id-Software/DOOM-iOS | author:id-Software description:DOOM Classic for iOS Source Release
+github-id-Software-Wolf3D-iOS | Wolf3D-iOS | https://github.com/id-Software/Wolf3D-iOS | author:id-Software description:Wolfenstein 3D for iOS Source Release
+github-id-Software-wolf3d-browser | wolf3d-browser | https://github.com/id-Software/wolf3d-browser | author:id-Software description:WOLF3D Browser Version GPL source release
+github-id-Software-Enemy-Territory | Enemy-Territory | https://github.com/id-Software/Enemy-Territory | author:id-Software description:Wolfenstein: Enemy Territory GPL Source Release
+github-id-Software-RTCW-SP | RTCW-SP | https://github.com/id-Software/RTCW-SP | author:id-Software description:Return to Castle Wolfenstein Single Player GPL Source Release
+github-id-Software-Quake-Tools | Quake-Tools | https://github.com/id-Software/Quake-Tools | author:id-Software description:The source release of the Quake tools and utilities
+github-id-Software-DOOM-IOS2 | DOOM-IOS2 | https://github.com/id-Software/DOOM-IOS2 | author:id-Software description:Doom Classic for iOS version 2
+github-id-Software-RTCW-MP | RTCW-MP | https://github.com/id-Software/RTCW-MP | author:id-Software description:Return to Castle Wolfenstein Multiplayer GPL Source Release
+github-id-Software-Quake-2-Tools | Quake-2-Tools | https://github.com/id-Software/Quake-2-Tools | author:id-Software description:Quake 2 Tools GPL Source Release
+github-id-Software-GtkRadiant | GtkRadiant | https://github.com/id-Software/GtkRadiant | author:id-Software description:GtkRadiant GPL Source Release
+github-id-Software-idsetup | idsetup | https://github.com/id-Software/idsetup | author:id-Software description:This is the source for the setup program included with DOOM, Final DOOM, Strife, etc.

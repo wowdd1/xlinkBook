@@ -1,4 +1,4 @@
-github-bvlc-10301-1 | caffe | https://github.com/BVLC/caffe | author:bvlc description:Caffe: a fast open framework for deep learning.
-github-bvlc-116-2 | caffe-tutorial | https://github.com/BVLC/caffe-tutorial | author:bvlc description:DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe
-github-bvlc-37-3 | raptor | https://github.com/BVLC/raptor | author:bvlc description:Code basis for the Realtime adAPtative detecTOR (first published and referred to at IEEE ICRA 2014)
-github-bvlc-18-4 | DPD | https://github.com/BVLC/DPD | author:bvlc description:Deformable part descriptor project page
+github-bvlc-caffe | caffe | https://github.com/BVLC/caffe | author:bvlc description:Caffe: a fast open framework for deep learning.
+github-bvlc-caffe-tutorial | caffe-tutorial | https://github.com/BVLC/caffe-tutorial | author:bvlc description:DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe
+github-bvlc-raptor | raptor | https://github.com/BVLC/raptor | author:bvlc description:Code basis for the Realtime adAPtative detecTOR (first published and referred to at IEEE ICRA 2014)
+github-bvlc-DPD | DPD | https://github.com/BVLC/DPD | author:bvlc description:Deformable part descriptor project page
