@@ -456,7 +456,7 @@ def getScript(file_name, first_record):
 	        setText('a-0-0-0');\
 	        showdiv('div-000','a-0-0-0');\
 	        appendContent('div-0-0-0','','" + title + "','');\
-                navTopic(document.getElementById('div-0-0-0-nav-all'),'div-0-0-0','div-0-0-0-nav-',2);\
+                navTopic(document.getElementById('div-0-0-0-nav-all'),'div-0-0-0','div-0-0-0-nav-',4);\
                 var search_txt = document.getElementById('search_txt');\
                 search_txt.focus();\
                 search_txt.onchange=function(){\
@@ -661,7 +661,7 @@ def build_lines(list_all):
                                         aid = "#div-nav-" + link
                                         if is_extension:
                                             hidenScript = hidenScript3
-                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 2) + ');', link, '#888888', 9, aid)
+                                        content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 4) + ');', link, '#888888', 9, aid)
                                         count += 1 
                                         length += len(link) + 1
                                         if count >= max_nav_link_row or length > split_length or link == last_engin_type:
@@ -847,8 +847,8 @@ def print_search_box(hiden):
         #if plugins_mode:
         #    div += ' display:none;'
         div += '">'
-        out = div + '<input id="search_txt" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
-              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">search</button>'
+	out = div + '<input id="search_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
+              '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">Go</button>'
         if output_navigation_links:
                out += utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 
         else:
