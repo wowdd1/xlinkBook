@@ -850,6 +850,7 @@ class Utils:
         output = ''
 	try:
 	    output = subprocess.check_output("curl --max-time " + str(sec) + " --head " + url, shell=True)
+	    print output
 	except Exception as e:
 	    output = ''
         if output != '' and output.find('X-Frame-Options:') < 0:

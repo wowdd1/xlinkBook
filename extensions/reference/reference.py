@@ -68,6 +68,9 @@ class Reference(BaseExtension):
             return ''
         else:
             user_agent = {'User-agent': 'Mozilla/5.0'}
+	    url = url.replace('http://', 'https://')
+	    print '---- ' + url + ' ---'
+
             r = requests.get(url, headers = user_agent)
             soup = BeautifulSoup(r.text)
             count = 0
@@ -78,13 +81,23 @@ class Reference(BaseExtension):
             for a in soup.find_all('a'):
                 if a.attrs.has_key('href') == False or link_dict.has_key(a['href']):
                     continue
-                #print a['href']
-                if url.find('youtube') != -1:
+                if url.find('youtube') != -1 and url.endswith('videos') == False:
                     if url.find('watch') != -1 and a.text.find('Duration') == -1 and a['href'].startswith('/watch') == False:
                         continue
-                    if a['href'].startswith('/watch') == False:
+                    if a['href'].startswith('/watch') == False and a['href'].startswith('/playlist') == False:
                         continue
-                link = a['href']
+		    if a.text.strip().find('Play all') != -1:
+			continue
+		if url.endswith('videos'):
+		    if a['href'].startswith('/watch') and a.text.strip() != '':
+		        link = 'https://www.youtube.com' + a['href']
+		    else:
+			continue
+		elif a['href'].startswith('/playlist'):
+		    link = 'http://www.youtube.com' + a['href']
+		else:
+                    link = a['href']
+                print a['href']
                 title = a.text.strip().encode('utf-8')
                 if title == '':
                     title = link.replace('http://', '').replace('www.', '')
@@ -101,7 +114,7 @@ class Reference(BaseExtension):
                             text = self.utils.removeDoubleSpace(a.text.strip()).replace(' ', '%20')
                         if title.startswith('/watch'):
                             continue
-                    else:
+		    elif url.endswith('playlist') == False:
                         if count == 0:
                             return self.getAllLinks(link, ref_divID, rID)
                 count += 1
@@ -111,7 +124,10 @@ class Reference(BaseExtension):
                 appendID = str(count)
                 script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), text, link, '-') 
                 html += '<li><span>' + str(count) + '.</span>'
-                html += '<p>' + '<a target="_blank" href="' + link + '">' + title + '</a>'
+		if title.find('- Duration') != -1:
+		    html += '<p>' + '<a target="_blank" href="' + link + '">' + title[0 : title.find('- Duration')] + '</a>' + title[title.find('- Duration') :]
+	        else:
+                    html += '<p>' + '<a target="_blank" href="' + link + '">' + title + '</a>'
                 if script != "":
                     html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
                 html += '</p></li>'
@@ -129,7 +145,7 @@ class Reference(BaseExtension):
         title += sp.find('span', class_='g-hovercard').text.strip() + ', '
         views = sp.find('span', class_='stat view-count').text.strip().strip()
         views = views[0 : views.find(' ')]
-        title += '<font size="' + str(len(views.replace(',', ''))) + '" color="rgb(130, 35, 18)">' + views + '</font> views'
+        title += '<font size="' + str(len(views.replace(',', ''))) + '" color="rgb(212, 51, 51)">' + views + '</font> views'
         return self.utils.removeDoubleSpace(title)
 
     def check(self, form_dict):

@@ -13,10 +13,10 @@ subject_dict = {\
     "Art" : "art-culture",\
     "Anthropology" : "anthropology",\
     "Culture" : "art-culture",\
-    "Brain" : "cognitive-computational-neuroscience",\
+    "Brain" : "neuroscience",\
     "Biology" : "biology",\
     "Biological" : "biology",\
-    "Cognitive Science" : "cognitive-computational-neuroscience",\
+    "Cognitive Science" : "neuroscience",\
     "Life Sciences" : "biology",\
     "Business" : "business-management",\
     "Management" : "business-management",\
@@ -57,8 +57,8 @@ subject_dict = {\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
     "Music" : "art",\
-    "Neurobiology" : "cognitive-computational-neuroscience",\
-    "Neuroscience" : "cognitive-computational-neuroscience",\
+    "Neurobiology" : "neuroscience",\
+    "Neuroscience" : "neuroscience",\
     "Philanthropy" : "philosophy",\
     "Philosophy" : "philosophy",\
     "Psychology" : "psychology",\
@@ -108,7 +108,7 @@ need_update_subject_list = [
     #'rank',
     #'physics',
     'biology',
-    'cognitive-computational-neuroscience',
+    'neuroscience',
     #'literature',
     'linguistics',
     #'philosophy',
