@@ -11,8 +11,8 @@ class Note(BaseExtension):
 	width = '660'
 	height = '550'
 	if column == '1':
-	    width = '1200'
-	    height = '550'
+	    width = '1300'
+	    height = '600'
 	elif column == '3':
 	    width = '560'
 	html = '<div class="ref"><br><iframe width="' + width + '" height="' + height + '" src="' + src + '" frameborder="0" allowfullscreen></iframe>'

@@ -35,16 +35,10 @@ class Track(BaseExtension):
                 url = url.replace('%s', title)
             else:
                 url = url + title
-            output = ''
-            try:
-                output = subprocess.check_output("curl --max-time 2 --head " + url, shell=True)
-            except Exception as e:
-                output = ''
-                print e
             engin = url[url.find('//') + 2 : url.find('/', url.find('.'))]
             engin = engin.replace('www.', '').replace('.com', '')
             div_radius = '<div style="background-color:#EEEEFF; border-radius: 5px 5px 5px 5px; width:auto; float:left;">'
-            if output != '' and output.find('X-Frame-Options:') < 0:
+            if self.utils.suportFrame(url, 2):
                 html += '<br/><iframe src="' + url + '" style="border: 0; width: 100%; height: 400px" allowfullscreen></iframe><br/>'
                 html += div_radius + '<a target="_blank" href="' + url+ '">' + engin + '</a></div><br/>'
             else:

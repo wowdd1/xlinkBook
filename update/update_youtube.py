@@ -87,7 +87,9 @@ class YoutubeSpider(Spider):
 			     'allenInstitute' : 'https://www.youtube.com/user/AllenInstitute/videos',\
 			     'ICLR' : 'https://www.youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w/videos',\
 			     'singularitysummit' : 'https://www.youtube.com/user/singularitysummit/videos',\
-			     'anfavideo' : 'https://www.youtube.com/user/anfavideo/videos'}
+			     'anfavideo' : 'https://www.youtube.com/user/anfavideo/videos',\
+			     'broadinstitute' : 'https://www.youtube.com/user/broadinstitute/videos'}
+        self.videos_urls = {'harvardmedicalschool' : 'https://www.youtube.com/user/harvardmedicalschool/videos'}
     def getPlaylist(self, html, user):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):

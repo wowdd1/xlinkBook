@@ -1358,12 +1358,13 @@ def adjust_cell_len():
 def adjust_link_number():
     global max_nav_link_row, max_links_row
     if column_num == '1':
-       max_nav_link_row = max_nav_link_row * 2
+        max_nav_link_row = max_nav_link_row * 2
     if column_num == '2':
-       max_nav_link_row = (max_nav_link_row - 2) * 2
-       max_links_row = max_links_row - 1
+        max_nav_link_row = (max_nav_link_row - 2) * 2
+        max_links_row = max_links_row - 1
     if column_num == '3':
-       max_links_row = max_links_row - 2
+	max_nav_link_row = max_nav_link_row - 1
+        max_links_row = max_links_row - 2
     
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username
@@ -1403,7 +1404,7 @@ def main(argv):
         elif o in ('-w', '--width'):
             custom_cell_len = int(a) 
             split_length = custom_cell_len + 15
-            max_nav_link_row = 1000
+            #max_nav_link_row = 1000
         elif o in ('-r', '--row'):
             if int(a) > 0 and int(a) < 30:
                 custom_cell_row = int(a)

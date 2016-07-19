@@ -36,13 +36,16 @@ args_history = {}
 def index():
     print  request.args.get('column', '')
     key = request.args.get('key', '')
+    db = request.args.get('db', '')
     print key
     if key == '':
         key = '?'
-    key = key.strip()
-    key = key.replace(' ', '+')
+    if db.find('github') != -1:
+	if key == 'c':
+	    key += '#-github2016'
+        key = key.replace('  ', '++')
 
-    db = request.args.get('db', '')
+    key = key.strip()
     if db == '':
         db = Config.default_subject + '/'   
     elif db == '?':
@@ -224,7 +227,7 @@ def listAllFile(db):
         image = session['avatar_url']
     image = ''
     libary = utils.gen_libary(True, name, image)
-    if len(files) > 40:
+    if len(files) > 37:
         if Config.center_content:
             html += '<body style="text-align:center;">'
         else:
@@ -322,8 +325,13 @@ def authorized():
 
     flash('Logged in as ' + me['name'])
     print me['name']
-    return redirect(url_for('index'))
+    return redirect(url_for('library'))
 
+@app.route('/library', methods=['GET', 'POST'])
+def library():
+    if session['name'] == None or session['name'] == '':
+        return redirect(url_for('index'))
+    return subprocess.check_output("./list.py -i db/library/" + session['name'] + "-library -b 4 -u library/  -c 3  -n  -e 'd:star'  -d  -r 20  -s 6  -w 77  -y " + session['name'], shell=True)
 
 if __name__ == '__main__':
     print '__main__'
