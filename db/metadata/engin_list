@@ -392,7 +392,7 @@ engin-399 | readcube | https://app.readcube.com/#/library/search?q= | priority:5
 engin-400 | mycroft | http://mycroftproject.com/search-engines.html?name= | priority:5 description:website
 engin-401 | altmetric | https://www.altmetric.com/?s= | priority:0 description:tools
 engin-402 | hypothes | https://hypothes.is/stream?q= | priority:4 description:tools
-engin-403 | alternativeto | http://alternativeto.net/software/ | priority:0 description:review
+engin-403 | alternativeto | http://alternativeto.net/software/ | priority:3 description:discovery tools
 engin-404 | xuetangx | http://www.xuetangx.com/courses/search?query= | priority:0 description:course
 engin-405 | ptopenlab | https://crl.ptopenlab.com:8800/dashboard/supervessel/market_images/?q= | priority:4 description:cloud
 engin-406 | codio | https://codio.com/home/projects/?tab=1&sDirection=asc&sProp=reverseOwnerLastAccess&filter= | priority:3 description:cloud
@@ -466,3 +466,4 @@ engin-473 | researchgate | https://www.researchgate.net/search?q= | priority:4 d
 engin-474 | shimo | https://shimo.im/desktop?q= | priority:0 description:tools
 engin-475 | chongbuluo | http://xs.chongbuluo.com/?q= | priority:0 description:tools
 engin-476 | stackedit | https://stackedit.io/editor?q= | priority:0 description:tools
+engin-477 | onenote | https://www.onenote.com/notebooks?auth=1&q= | priority:0 description:tools
