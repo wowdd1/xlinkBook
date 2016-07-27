@@ -1,7 +1,7 @@
 goal:
 
     1. integrating activities(agent, activity, data)
-    2. sync the state of art knowledge, build the freeway of knowledge
+    2. sync the state of art information, build the freeway of information
     3. learning by doing, search by research(problem <-> resource & learn -> ED <-> resource & learn -> BP) 
     4. capture information flow(data, structure, wiring, computing), explorer activity(activity -> deconstruction -> reconstruction -> value) 
     5. simple, speed, flexible, intelligent, evolution(the best fecture is knowledge build knowledge, build is activities) 
