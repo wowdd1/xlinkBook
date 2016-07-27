@@ -1,6 +1,6 @@
 goal:
 
-    1. integrating activities
+    1. integrating activities(agent, activity, data)
     2. learning by doing, search by research(problem <-> resource & learn -> ED <-> resource & learn -> BP) 
     3. sync the state of art knowledge, build the freeway of knowledge, accelerate innovation
     4. capture information flow(data, structure, wiring, computing), explorer activity(activity -> deconstruction -> reconstruction -> value) 
