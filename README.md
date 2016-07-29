@@ -8,7 +8,9 @@ goal:
        (activity -> deconstruction -> reconstruction -> value) 
     5. explorer what your want(simple -> complex -> simple)
     6. share, distributed, simple, speed, flexible, intelligent, evolution
-       (the best fecture is knowledge build knowledge, best tool is treat thinking as central!) 
+       (the best fecture is knowledge build knowledge, 
+        the best tool is treat thinking as central,
+        the best result is communication with others) 
 
 install:
 
