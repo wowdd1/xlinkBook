@@ -5,7 +5,7 @@ goal:
     3. learning by doing, search by research(problem <-> resource & learn -> ED <-> resource & learn -> BP) 
     4. capture information flow(data, structure, wiring, computing), track waveform in real time(activity -> deconstruction -> reconstruction -> value) 
     5. explorer what your want(simple -> complex -> simple)
-    6. share, distributed, speed, flexible, intelligent, evolution(the best fecture is knowledge build knowledge, build is activities) 
+    6. share, distributed, speed, flexible, intelligent, evolution(the best fecture is knowledge build knowledge, best tool is brain!) 
 
 install:
 
