@@ -81,7 +81,7 @@ class ExtensionManager:
 
         if check == 'true':
             if form['name'] == "*":
-                if fileName.endswith('library'):
+                if fileName.find('db/library/') != -1:
                     form['delete'] = True
                     
                 if self.extensions_check_cache.has_key(rID) and (form.has_key('nocache') and form['nocache'] == "false"):

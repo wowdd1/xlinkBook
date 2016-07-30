@@ -54,18 +54,51 @@ def customPrint(data):
         #print str(line_id) + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " 
     #print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
+pid = 0
+sub_pid = 0
 def customPrintFile(line):
     global parentid
-    customid = str(line_id)
+    global pid, sub_pid
+    #customid = str(line_id)
+    customid = '9.04'
     if parentid != '':
         customid = parentid
+    '''
+    line = line.replace(':', '').strip()
+    if line.strip().startswith('I ') or line.startswith('II')\
+           or line.startswith('III')\
+           or line.startswith('IV')\
+           or line.startswith('V')\
+           or line.startswith('VI')\
+           or line.startswith('VII')\
+           or line.startswith('VIII')\
+           or line.startswith('IX')\
+           or line.startswith('X ')\
+	   or line.startswith('XI'):
+    #if line.strip().startswith('Part'):
+	pid += 1
+	sub_pid = 0
+	line = line[line.find(' ') : ].strip()
+	print '6.034-' + str(pid) + ' | ' + line[line.find('.') + 1 :].strip() + ' | | parentid:6.034'
+    else:
+	sub_pid += 1
+	print '6.034-' + str(pid)+ '.' + str(sub_pid) + ' | ' + line[line.find('.') + 1 : ].strip() + ' | | parentid:6.034-' + str(pid)
+
     if line.find('.') != -1:
-        number = line[0 : line.find(' ')]
+        number = line[0 : line.find(' ')].replace('.', '')
         title = line[line.find(' ') + 1 : ].strip()
-        print customid + '-' + number + ' | ' + title + ' | | parentid:' + customid + '-' + number[0 : number.find('.')]
+        print customid + '-' + number + ' | ' + title + ' | | parentid:' + customid
     else:
         title = line[line.find(' ') + 1 : ].strip()
-        print customid + '-' + line[0 : line.find(' ')].strip() + ' | ' + title + ' | | parentid:' + customid
+        #print customid + '-' + line[0 : line.find(' ')].strip() + ' | ' + title + ' | | parentid:' + customid
+        #print line[0 : line.find(' ')].strip() + ' | ' + title + ' | | '
+	print 'pitt-neurobio-' + str(line_id) + ' | ' + line + ' | | '
+    '''
+    title = line.strip()
+    print line[0 : line.find(' ')] + ' | ' + line[line.find(' ') :].strip()+ ' | | '
+    #if title.find('(') != -1:
+        #title = title[0 : title.find('(')].strip()
+    #print customid + '-' + str(line_id) + ' | ' + title + ' | | '
 
 def format(line, link):
     if link != '' and line.startswith('http') == False:

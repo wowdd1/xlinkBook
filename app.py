@@ -331,7 +331,14 @@ def authorized():
 def library():
     if session['name'] == None or session['name'] == '':
         return redirect(url_for('index'))
-    return subprocess.check_output("./list.py -i db/library/" + session['name'] + "-library -b 4 -u library/  -c 3  -n  -e 'd:star'  -d  -r 20  -s 6  -w 77  -y " + session['name'], shell=True)
+    library = session['name'] + "-library"
+    if Config.default_library != '':
+        library = Config.default_library
+    if os.path.exists('db/library/' + library) == False:
+        f = open('db/library/' + library, 'a')
+        f.write('none | no record, add some! | | \n')
+        f.close()
+    return subprocess.check_output("./list.py -i db/library/" +  library + " -b 4 -u library/  -c 3  -n  -e 'd:star'  -d  -r 20  -s 6  -w 77  -y " + session['name'], shell=True)
 
 if __name__ == '__main__':
     print '__main__'

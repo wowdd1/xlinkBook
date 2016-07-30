@@ -97,6 +97,9 @@ class YoutubeSpider(Spider):
                              'tedx' : 'https://www.youtube.com/user/TEDxTalks/videos',\
                              'ted' : 'https://www.youtube.com/user/TEDtalksDirector/videos',\
                              'CodeNeuro' : 'https://www.youtube.com/channel/UCZqlliYGopB9zved7pJTi_A/videos'}
+        self.videos_urls = { 'thebrainforum' : 'https://www.youtube.com/user/thebrainforum/videos' }
+        self.videos_urls = { 'NSFbraininitiative' : 'https://www.youtube.com/user/NSFbraininitiative/videos' }
+        self.videos_urls = { 'INCF' : 'https://www.youtube.com/user/INCForg/videos'}
     def getPlaylist(self, html, user):
         soup = BeautifulSoup(html)
         for a in soup.find_all('a'):
