@@ -868,11 +868,20 @@ def print_table_head_with_style():
             width = '75%'
             background_color = '#F6F3E5'
         if loadmore_mode == False:
-            print '<body  style="text-align:center; background-color:' + background_color + ';">'
+            body = ''
+            body += '<body  style="text-align:center; background-color:' + background_color + ';'
+            if Config.background != '':
+                body += 'background-image:url(' + Config.background + ');">'
+            else:
+                body += '">'
+            print body
         center_style += 'margin:0px auto; background-color:#FFFFFF;  width:' + width + '; border:1; bordercolor=#000077;'
     else:
         if loadmore_mode == False:
-            print '<body>'
+            if Config.background != '':
+                print '<body style="background-image:url(' + Config.background + ')">'
+            else:
+                print '<body>'
     center_style += 'margin-left:' + Config.content_margin_left + ';'
     center_style += '"'
     if loadmore_mode == False:
@@ -1364,7 +1373,7 @@ def adjust_link_number():
         #max_links_row = max_links_row - 1
     if column_num == '3':
 	max_nav_link_row = max_nav_link_row + 1
-        max_links_row = max_links_row - 1
+        max_links_row = max_links_row - 2
     
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username

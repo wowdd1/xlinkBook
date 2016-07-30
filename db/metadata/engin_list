@@ -424,7 +424,7 @@ engin-431 | scirate | https://scirate.com/search?utf8=%E2%9C%93&q= | priority:5 
 engin-432 | shortscience | http://www.shortscience.org/search?term= | priority:5 description:paper review
 engin-433 | internet-map | http://internet-map.net/#4-49.972337008878064-157.89597744831835?q= | priority:0 description:visualization
 engin-434 | rhiever | http://rhiever.github.io/redditviz/# | priority:0 description:visualization
-engin-435 | feedly | http://feedly.com/i/spotlight/ | priority:0 description:tools
+engin-435 | feedly | http://feedly.com/i/spotlight/ | priority:0 description:tools discovery
 engin-436 | sanity.marcel | http://sanity.marcelwunderlich.com/search?q= | priority:4 description:paper
 engin-437 | sanity-physics | http://arxiv-sanity-physics.com/search?q= | priority:4 description:paper
 engin-438 | yummyastro | http://yummyastro.me:5000/search?q= | priority:0 description:paper
@@ -467,3 +467,10 @@ engin-474 | shimo | https://shimo.im/desktop?q= | priority:0 description:tools
 engin-475 | chongbuluo | http://xs.chongbuluo.com/?q= | priority:0 description:tools
 engin-476 | stackedit | https://stackedit.io/editor?q= | priority:0 description:tools
 engin-477 | onenote | https://www.onenote.com/notebooks?auth=1&q= | priority:0 description:tools
+engin-478 | wiz.cn | http://www.wiz.cn/index.php?s= | priority:0 description:tools
+engin-479 | study.163 | http://study.163.com/search.htm?p= | priority:0 description:course
+engin-480 | libib | https://www.libib.com/library/home?q= | priority:0 description:tools
+engin-481 | inoreader | http://www.inoreader.com/discovery/search/ | priority:0 description:tools discovery
+engin-482 | xianguo | http://xianguo.com/lianbo/search?kw= | priority:0 description:tools discovery
+engin-483 | biostars | https://www.biostars.org/local/search/page/?q= | priority:0 description:q-a
+engin-484 | neurostars | https://neurostars.org/local/search/page/?q= | priority:0 description:q-a 

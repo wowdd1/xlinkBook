@@ -338,6 +338,8 @@ class Utils:
             engins = self.realGetEnginList(['paper'], self.search_engin_dict.values())
         if folder.find('projects') != -1:
             engins = self.realGetEnginList(['project'], self.search_engin_dict.values())
+        if folder.find('video') != -1:
+            engins = self.realGetEnginList(['video'], self.search_engin_dict.values())
         if len(engins) == 0:
             return self.realGetEnginList(['star'], self.search_engin_dict.values())
         else:
@@ -422,8 +424,8 @@ class Utils:
             engin_display = self.getEnginIcon(engin)
             if engin_display == 'search.mit':
                 engin_display = 'mit'
-            if engin_display == 'sanity':
-                engin_display = 'arxiv-sanity'
+            #if engin_display == 'sanity':
+            #    engin_display = 'arxiv-sanity'
             if self.searchByID(engin):
                 keyword = id.strip()
             else:

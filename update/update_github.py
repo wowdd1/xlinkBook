@@ -602,7 +602,7 @@ class GithubSpider(Spider):
             print "no need upgrade\n"
 
     def getOrganizationProjects(self):
-        data = {"google" : "https://github.com/google",\
+        data_eecs = {"google" : "https://github.com/google",\
                 "google-cloud-platform" : "https://github.com/GoogleCloudPlatform",\
                 'googlesamples' : 'https://github.com/googlesamples',\
                 "microsoft" : "https://github.com/Microsoft",\
@@ -665,11 +665,17 @@ class GithubSpider(Spider):
                 'IBM-Bluemix' : 'https://github.com/IBM-Bluemix',\
                 'watson-developer-cloud' : 'https://github.com/watson-developer-cloud',\
                 'Samsung' : 'https://github.com/Samsung',\
-                'nvidia' : 'https://github.com/nvidia',\
+                'nvidia' : 'https://github.com/nvidia'}
+
+        data_neuro = {'INCF' : 'https://github.com/INCF',\
+                'nipy' : 'https://github.com/nipy',\
+                'OpenNeuroLab' : 'https://github.com/OpenNeuroLab',\
+                'PySurfer' : 'https://github.com/PySurfer',\
 		'CBMM' : 'https://github.com/CBMM',\
 		'AllenInstitute' : 'https://github.com/AllenInstitute',\
 		'ACElab' : 'https://github.com/aces'}
-        self.getProjectByDict(data)
+        #self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
+        self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
         #self.getStartupPorjects()
 
     def getStartupPorjects(self):
@@ -685,10 +691,10 @@ class GithubSpider(Spider):
         if len(data) > 0:
             self.getProjectByDict(data)
 
-    def getProjectByDict(self, data):
+    def getProjectByDict(self, data, path):
         for k in data:
 
-            file_name = self.get_file_name("eecs/projects/github/organization/" + k, self.school)
+            file_name = self.get_file_name(path + k, self.school)
             file_lines = self.countFileLineNum(file_name)
             f = self.open_db(file_name + ".tmp")
             self.count = 0

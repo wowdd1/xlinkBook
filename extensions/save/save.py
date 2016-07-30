@@ -4,6 +4,7 @@ import sys, os
 from extensions.bas_extension import BaseExtension
 from utils import Utils
 from record import Record
+from config import Config
 
 class Save(BaseExtension):
 
@@ -14,12 +15,19 @@ class Save(BaseExtension):
         self.utils = Utils()
 
     def loadLibrary(self, username):
-        if os.path.exists('db/library/' + username + '-library') and len(self.saved_records) == 0:
-            f = open('db/library/' + username + '-library')
+        if os.path.exists('db/library/' + self.getLibrary(username)) and len(self.saved_records) == 0:
+            f = open('db/library/' + self.getLibrary(username))
             for line in f.readlines():
                 r = Record(line)
                 self.saved_records[r.get_id().strip()] = r
             f.close()
+
+    def getLibrary(self, username):
+        library = username + '-library'
+        if Config.default_library != '':
+            library = Config.default_library
+        return library
+
 
     def excute(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
@@ -31,12 +39,12 @@ class Save(BaseExtension):
         record = self.utils.getRecord(rID, path=fileName)
         print record.get_title()
         if record != None and self.saved_records.has_key(record.get_id().strip()) == False:
-            f = open('db/library/' + user_name + '-library', 'a')
+            f = open('db/library/' + self.getLibrary(user_name), 'a')
             f.write(record.line.replace('\n', '').strip() + " path:" + fileName[fileName.find('db/') : ] + "\n")
             f.close()
             self.saved_records[record.get_id().strip()] = record
             print self.saved_records
-            return "save sucess"
+            return "saved to " + self.getLibrary(user_name)
         return "save fail"
         
                 

@@ -12,11 +12,17 @@ class Delete(BaseExtension):
     def __init__(self):
         BaseExtension.__init__(self)
 
+    def getLibrary(self, username):
+        library = username + '-library'
+        if Config.default_library != '':
+            library = Config.default_library
+        return library
+
 
     def excute(self, form_dict):
         rID = form_dict['rID'].encode('utf8')
         user_name = form_dict['user_name'].encode('utf8')
-        library = 'db/library/' + user_name + '-library'
+        library = 'db/library/' + self.getLibrary(user_name)
         print library
         if os.path.exists(library):
             f = open(library, 'rU')
@@ -32,7 +38,7 @@ class Delete(BaseExtension):
             else:
                 f.write('')
                 f.close()
-            return 'http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library'
+            return 'http://' + Config.ip_adress + '/?db=library/&key=' + self.getLibrary(user_name)
         return 'error'
 
     def check(self, form_dict):

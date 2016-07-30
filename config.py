@@ -62,8 +62,13 @@ class Config():
     recommend_engin = True
     recommend_engin_num = 18
 
+    default_library = ''
+
+    background = ""
+
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
 		  'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
 		  'youtube' :  ip_adress + '/?db=videos/&key=?',\
 		  'eecs' :  ip_adress + '/?db=eecs/&key=?',\
+                  'library' : ip_adress + '/?db=library/&key=?',\
 		  'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
