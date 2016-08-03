@@ -16,7 +16,7 @@ goal:
 
 philosophy:
 
-    divide abstract connect
+    divide abstract connect -> flow
 
 install:
 
