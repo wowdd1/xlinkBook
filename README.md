@@ -14,6 +14,10 @@ goal:
         the best tool is treat thinking as central,
         the best result is get the best solution as quick as possible) 
 
+philosophy:
+
+    divide abstract connect
+
 install:
 
     git clone git@github.com:wowdd1/xlinkbook.git
