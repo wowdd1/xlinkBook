@@ -12,7 +12,7 @@ goal:
        (the best fecture is flow capture flow, knowledge generate knowledge, 
             layer build layer until top of pyramid 
         the best tool is treat thinking as central,
-        the best result is get the best solution as quick as possible) 
+        the best result is get the suitable information as quick as possible) 
 
 philosophy:
 
