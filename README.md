@@ -1,6 +1,6 @@
 goal:
 
-    1. integrating activities(agent, activity, resource)
+    1. integrating topics(agent, activity, resource, every topic contain a network)
     2. sync the state of art information or tools(core resource -> more resource), 
        build the freeway of information
     3. learning by doing, search by research
