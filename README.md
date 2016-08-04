@@ -1,7 +1,7 @@
 goal:
 
     1. integrating activities(agent, activity, resource)
-    2. sync the state of art information(time point -> core resource -> more resource), 
+    2. sync the state of art information or tools(core resource -> more resource), 
        build the freeway of information
     3. learning by doing, search by research
        (problem <-> resource & learn -> ED <-> resource & learn -> BP) 
