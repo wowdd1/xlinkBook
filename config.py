@@ -62,14 +62,19 @@ class Config():
     recommend_engin = True
     recommend_engin_num = 18
 
+    auto_library_cell_len = True
+
     #default_library = ''
-    default_library = 'schizophrenia-library'
+    default_library = 'genes-neuro-library'
+    #default_library = 'breakthrough-library'
     
     background = ''
 
+
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
+                  'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
 		  'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
 		  'youtube' :  ip_adress + '/?db=videos/&key=?',\
 		  'eecs' :  ip_adress + '/?db=eecs/&key=?',\
-                  'library' : ip_adress + '/?db=library/&key=?',\
-		  'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
+                  'library' : ip_adress + '/?db=library/&key=?'}
+		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
