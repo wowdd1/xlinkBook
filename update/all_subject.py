@@ -16,6 +16,7 @@ subject_dict = {\
     "Brain" : "neuroscience",\
     "Biology" : "biology",\
     "Biological" : "biology",\
+    "Bioengineering" : "biology",\
     "Cognitive Science" : "neuroscience",\
     "Life Sciences" : "biology",\
     "Business" : "business-management",\
@@ -118,6 +119,7 @@ need_update_subject_list = [
     #'art-culture',
     'data-science'
 ]
+
 
 def print_all_subject():
     print ', '.join(subject_dict.values())
