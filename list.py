@@ -1462,6 +1462,13 @@ def main(argv):
         elif o in ('-x', '--nosearchbox'):
             search_box_hiden = True
             library_hiden = True
+    if source.endswith('-library') and Config.auto_library_cell_len:
+        column_num = '3'
+        adjust_cell_len()
+        adjust_link_number()
+        custom_cell_len = 77
+        split_length = custom_cell_len + 15
+
 
     if source == "":
         print "you must input the input file or dir"
