@@ -9,7 +9,7 @@ goal:
        (activity -> deconstruction -> reconstruction -> value) 
     5. explorer what your want(simple -> complex -> simple)
     6. share, distributed, simple, speed, flexible, intelligent, evolution
-       (the best fecture is flow capture flow, knowledge generate knowledge, 
+       (the best fecture is flow capture flow, knowledge build knowledge or tool, 
             layer build layer until top of pyramid 
         the best tool is treat thinking as central,
         the best result is get the suitable information as quick as possible) 
