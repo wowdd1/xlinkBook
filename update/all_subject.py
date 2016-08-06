@@ -66,6 +66,7 @@ subject_dict = {\
     "Ethics" : "ethics",\
     'Operations Information & Technology' : 'economics',\
     'Organizational Behavior' : 'economics',\
+    'Optics' : 'physics',\
     "Physics" : "physics",\
     "Physical" : "physics",\
     'Strategic Management' : 'economics',\
