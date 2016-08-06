@@ -64,8 +64,8 @@ class Config():
 
     auto_library_cell_len = True
 
-    #default_library = ''
-    default_library = 'genes-neuro-library'
+    default_library = ''
+    #default_library = 'genes-neuro-library'
     #default_library = 'breakthrough-library'
     
     background = ''
