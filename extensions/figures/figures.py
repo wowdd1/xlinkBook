@@ -76,6 +76,20 @@ class Figures(BaseExtension):
 
 
     def getRandomFigures(self, title):
+        return self.getPinterestImg(title)
+        #return self.getGoogleImage(title)
+
+    def getGoogleImage(self, title):
+        r = requests.get('https://www.google.com/search?q=%s&newwindow=1&biw=1435&bih=481&source=lnms&tbm=isch&sa=X'.replace('%s', title.replace(' ', '%20')))
+        soup = BeautifulSoup(r.text)
+        figures = []
+        links = []
+        for div in soup.find_all('div', class_='rg_di rg_bx rg_el ivg-i'):
+            links.append('http://www.google.com' + div.a['href'])
+            figures.append('http://www.google.com' + div.a['href'])
+        return figures, links
+
+    def getPinterestImg(self, title):
         r = requests.get('https://www.pinterest.com/search/pins/?q=' + title)
         soup = BeautifulSoup(r.text)
         figures = []
@@ -99,7 +113,7 @@ class Figures(BaseExtension):
             height = "100"
             thumb_width = '450px'
             row_count = 4
-            space = 2 * '&nbsp;'
+            space = ''
         if column == '2':
             width = "130"
             height = "130"

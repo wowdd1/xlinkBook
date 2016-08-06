@@ -69,6 +69,7 @@ def index():
         args_history['verify'] = request.args.get('verify', '')
         args_history['alexa'] = request.args.get('alexa', '')
         args_history['track'] = request.args.get('track', 'false')
+        args_history['nosearchbox'] = request.args.get('nosearchbox', 'false')
         cmd = genCmd(db, key, 
                       request.args.get('column', Config.column_num),
                       request.args.get('filter', ''),
@@ -84,7 +85,7 @@ def index():
                       request.args.get('navigation', 'true'),
                       request.args.get('verify', ''),
                       request.args.get('alexa', ''),
-                      request.args.get('track', 'false'), '')
+                      request.args.get('track', 'false'), '', request.args.get('nosearchbox', 'false'))
         
         print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
@@ -108,7 +109,7 @@ def handleLoadmore():
                       args_history['navigation'],
                       args_history['verify'],
                       args_history['alexa'],
-                      args_history['track'], 'true')
+                      args_history['track'], 'true', args_history['nosearchbox'])
 
     print '\ncmd  --->   '  + cmd + '   <---\n'
     html = subprocess.check_output(cmd, shell=True)
@@ -156,7 +157,7 @@ def web(page):
     f.close()
     return data
 
-def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track, loadmore):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track, loadmore, nosearchbox):
     if db.endswith('/') == False:
         db += '/'
     cmd = "./list.py -i db/" + db + key + " -b 4"
@@ -200,11 +201,15 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         Config.track_mode = True
     else:
         Config.track_mode = False
+    if nosearchbox == 'true':
+        cmd += ' -x '
 
     if loadmore != '':
         cmd += ' -z true '
     if session.has_key('name'):
         cmd += ' -y ' + session['name'] + ' '
+
+
 
     return cmd.replace('?', '') 
 
@@ -346,7 +351,9 @@ def library():
         f = open('db/library/' + library, 'a')
         f.write('none | no record, add some! | | \n')
         f.close()
-    return subprocess.check_output("./list.py -i db/library/" +  library + " -b 4 -u library/  -c 3  -n  -e 'd:star'  -d  -r 20  -s 6  -w 77  -y " + session['name'], shell=True)
+    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3 -w 77 -n  -e 'd:star'  -d  -r 20  -s 6 -y " + session['name']
+    print cmd
+    return subprocess.check_output(cmd, shell=True)
 
 if __name__ == '__main__':
     print '__main__'

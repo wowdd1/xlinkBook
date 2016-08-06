@@ -367,7 +367,7 @@ engin-374 | fnd.io | https://fnd.io/#/us/search?mediaType=all&term= | priority:0
 engin-375 | entireweb | http://www.entireweb.com/#q=%s&of=0&md=web&ts=1464521342864 | priority:0 description:social
 engin-376 | artcyclopedia | http://www.artcyclopedia.com/scripts/tsearch.pl?t=%s&type=2 | priority:0 description:wiki
 engin-377 | vitorrentz | http://www.vitorrentz.co/search/ | priority:0 description:p2p
-engin-378 | biorxiv | http://biorxiv.org/search/ | priority:0 description:paper
+engin-378 | biorxiv | http://biorxiv.org/search/ | priority:6 description:paper
 engin-379 | bibsonomy | http://www.bibsonomy.org/search/ | priority:0 description:social paper
 engin-380 | academia.edu | https://www.academia.edu/people/search?utf8=✓&q= | priority:0 description:social
 engin-381 | pubget | http://pubget.com/search?q= | priority:0 description:paper
@@ -413,7 +413,7 @@ engin-420 | slack | https://slack.com/signin/find?q= | priority:3 description:to
 engin-421 | gitter | https://gitter.im/ | priority:3 description:tools
 engin-422 | flickr | https://www.flickr.com/search/?text= | priority:0 description:image
 engin-423 | images.search.yahoo | https://images.search.yahoo.com/search/images;_ylt=AwrTcXxU5FhXgMQA8KiLuLkF?p=%s&ei=UTF-8&iscqry=&fr=sfp | priority:0 description:image
-engin-424 | images.google | https://www.google.com/search?&tbm=isch&q= | priority:0 description:image
+engin-424 | images.g | https://www.google.com/search?q=%s&newwindow=1&biw=1435&bih=481&source=lnms&tbm=isch&sa=X | priority:0 description:image star
 engin-425 | v.baidu | http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word= | priority:0 description:video
 engin-426 | bing.com/video | http://cn.bing.com/videos/search?q=%s&go=Submit&qs=n&form=QBVLPG&pq=%s&sc=8-5&sp=-1&sk= | priority:0 description:video
 engin-427 | video.search.yahoo | https://video.search.yahoo.com/search/?p=%s&fr=uh3_magtv_web_gs&fr2=piv-web | priority:0 description:video
@@ -481,3 +481,15 @@ engin-488 | sciencedirect | http://www.sciencedirect.com/science?_ob=QuickSearch
 engin-489 | hstalks | https://hstalks.com/search/%s/?biosci&subtype=TALK | priority:6 description:talk course
 engin-490 | nitrc.org | http://www.nitrc.org/search/?type_of_search=group&q=neuro | priority:0 description:project
 engin-491 | superstarsofscience | http://superstarsofscience.com/scientists?q= | priority:0 description:people
+engin-492 | superscholar | http://superscholar.org/?s= | priority:4 description:people review 
+engin-493 | dnalc.org | https://www.dnalc.org/search?q= | priority:4 description:website course
+engin-494 | ustream | http://www.ustream.tv/search?q= | priority:0 description:video
+engin-495 | vadlo | http://vadlo.com/Molecular_biology_Protocols_Search_Results.html?q= | priority:5 description:protocol
+engin-496 | jove | http://www.jove.com/search?q=se&filter_type_1=and&filter_val_1=&filter_type_2=or&filter_val_2=&filter_type_3=not&filter_val_3= | priority:4 description:protocol
+engin-497 | cshlp | http://cshprotocols.cshlp.org/search?fulltext=%s&submit=yes&x=0&y=0&tocsectionid=protocol&tocsectionid=recipe&tocsectionid=topic+introduction&tocsectionid=emerging+model+organisms&tocsectionid=product+protocol&tocsectionid=kit&tocsectionid=information+panel | priority:4 description:protocol
+engin-498 | nature.com | http://www.nature.com/search?journal=nprot&q= | priority:4 description:protocol
+engin-499 | springerprotocols | http://www.springerprotocols.com/cdp/search/searchResultPage?text=%s&submit=Search | priority:4 description:protocol
+engin-500 | scienceexchange | https://protocols.scienceexchange.com/protocols?utf8=✓&search= | priority:0 description:protocol
+engin-501 | benchfly | http://www.benchfly.com/search-results?search= | priority:0 description:protocol
+engin-502 | protocols.io | https://www.protocols.io/search?key= | priority:0 description:protocol
+engin-503 | protocol-online | http://www.protocol-online.org/cgi-bin/prot/search.cgi?query=%s&submit2=Go | priority:0 description:protocol

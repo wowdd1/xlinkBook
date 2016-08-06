@@ -1281,7 +1281,11 @@ def print_list(all_lines, file_name = ''):
             else:
                 message += "\nTotal " + str(current) + " records"
             if file_name != '':
-                message += ", File: " + file_name + "\n\n"
+                if html_style:
+                    a = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :]+ '">' + file_name + '</a>'
+                    message += ", File: " + a + "\n\n"
+                else:
+                    message += ", File: " + file_name + "\n\n"
             else:
                 message += "\n\n"
 
@@ -1386,7 +1390,7 @@ def adjust_link_number():
         #max_links_row = max_links_row - 1
     if column_num == '3':
 	max_nav_link_row = max_nav_link_row + 1
-        max_links_row = max_links_row - 2
+        max_links_row = max_links_row - 1
     
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username
