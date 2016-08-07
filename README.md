@@ -16,7 +16,7 @@ goal:
 
 philosophy:
 
-    divide abstract connect -> flow
+    divide abstract connect free(norule) -> flow
 
 install:
 
