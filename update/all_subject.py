@@ -42,11 +42,11 @@ subject_dict = {\
     "Engineering" : "engineering",\
     "Environmental Studies" : "environmental-studies",\
     "Ethics" : "ethics",\
-    "Food" : "food-nutrition",\
+    "Food" : "medicine",\
     'GSB General & Interdisciplinary' : 'economics',\
-    "Nutrition" : "food-nutrition",\
-    "Health" : "health-safety",\
-    "Safety" : "health-safety",\
+    "Nutrition" : "medicine",\
+    "Health" : "medicine",\
+    "Safety" : "humanities",\
     "History" : "history",\
     "Humanities" : "humanities",\
     "Human Resource Management" : 'economics',\
@@ -63,19 +63,19 @@ subject_dict = {\
     "Philanthropy" : "philosophy",\
     "Philosophy" : "philosophy",\
     "Psychology" : "psychology",\
-    "Ethics" : "ethics",\
     'Operations Information & Technology' : 'economics',\
     'Organizational Behavior' : 'economics',\
     'Optics' : 'physics',\
     "Physics" : "physics",\
     "Physical" : "physics",\
     "Astrophysics" : "physics",\
-    'Strategic Management' : 'economics',\
+    'Strategic Management' : 'management',\
     "Social Sciences" : "social-science",\
     "Statistics" : "data-science",\
     "Data Analysis" : "data-science",\
     "Civil and Environmental Engineering" : "civil-environmental",\
     "Mechanical Engineering" : "mechanical",\
+    "Materials" : "materials-science",\
     "Materials Science and Engineering" : "materials-science",\
     "Chemical Engineering" : "chemistry",\
     "Urban Studies and Planning" : "architecture",\
@@ -97,11 +97,11 @@ subject_dict = {\
     "Engineering Systems" : "engineering",\
     "Experimental Study Group" : "others",\
     "Health Sciences and Technology" : "medicine",\
-    "Military Science" : "military",\
-    "Naval Science" : "naval",\
+    "Military Science" : "military-science",\
+    "Naval Science" : "naval-science",\
     "Science, Technology, and Society" : "others",\
     "Special Programs" : "others",\
-    "Women's and Gender Studies" : "others"}
+    "Women's and Gender Studies" : "education"}
 
 need_update_subject_list = [
     'config',
