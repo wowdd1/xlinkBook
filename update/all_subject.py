@@ -19,8 +19,8 @@ subject_dict = {\
     "Bioengineering" : "biology",\
     "Cognitive Science" : "neuroscience",\
     "Life Sciences" : "biology",\
-    "Business" : "business-management",\
-    "Management" : "business-management",\
+    "Business" : "economics",\
+    "Management" : "management",\
     "Chemistry" : "chemistry",\
     "Communication" : "communication",\
     "Computer Science" : "eecs",\
@@ -69,33 +69,36 @@ subject_dict = {\
     'Optics' : 'physics',\
     "Physics" : "physics",\
     "Physical" : "physics",\
+    "Astrophysics" : "physics",\
     'Strategic Management' : 'economics',\
-    "Social Sciences" : "social-sciences",\
+    "Social Sciences" : "social-science",\
     "Statistics" : "data-science",\
     "Data Analysis" : "data-science",\
-    "Civil and Environmental Engineering" : "engineering",\
-    "Mechanical Engineering" : "engineering",\
-    "Materials Science and Engineering" : "engineering",\
+    "Civil and Environmental Engineering" : "civil-environmental",\
+    "Mechanical Engineering" : "mechanical",\
+    "Materials Science and Engineering" : "materials-science",\
     "Chemical Engineering" : "chemistry",\
     "Urban Studies and Planning" : "architecture",\
-    "Earth, Atmospheric, and Planetary Sciences" : "energy-earth-sciences",\
-    "Aeronautics and Astronautics" : "engineering",\
+    "Earth, Atmospheric, and Planetary Sciences" : "earth-science",\
+    "Aeronautics and Astronautics" : "aeronautics",\
     "Political Science" : "political",\
-    "Biological Engineering" : "engineering",\
+    "Political" : "political",\
+    "Biological Engineering" : "biology",\
     "Global Studies and Languages" : "education",\
     "Music and Theater Arts" : "art",\
-    "Nuclear Science and Engineering" : "engineering",\
+    "Nuclear Science and Engineering" : "nuclear-science",\
+    "Astronomy" : "astronomy",\
     "Media Arts and Sciences" : "eecs",\
     "Aerospace Studies" : "others",\
     "Comparative Media Studies" : "others",\
-    "Computational and Systems Biology" : "others",\
+    "Computational and Systems Biology" : "biology",\
     "Concourse" : "others",\
     "Edgerton Center" : "others",\
     "Engineering Systems" : "engineering",\
     "Experimental Study Group" : "others",\
-    "Health Sciences and Technology" : "others",\
-    "Military Science" : "others",\
-    "Naval Science" : "others",\
+    "Health Sciences and Technology" : "medicine",\
+    "Military Science" : "military",\
+    "Naval Science" : "naval",\
     "Science, Technology, and Society" : "others",\
     "Special Programs" : "others",\
     "Women's and Gender Studies" : "others"}
@@ -105,7 +108,6 @@ need_update_subject_list = [
     #'anthropology',
     'eecs',
     'mathematics',
-    #'business-management',
     'economics',
     #'rank',
     #'physics',
@@ -118,9 +120,13 @@ need_update_subject_list = [
     #'chemistry',
     #'others',
     #'art-culture',
+    #'astronomy',
+    #'political',
+    #'humanities',
+    #'history',
+    #'management',
     'data-science'
 ]
-
 
 def print_all_subject():
     print ', '.join(subject_dict.values())
