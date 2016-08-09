@@ -135,103 +135,116 @@ need_update_subject_list = [
     'data-science'
 ]
 
+need_update_subject_list = ['medicine']
+
+
 def print_all_subject():
     print ', '.join(subject_dict.values())
 
 # reference subjects #
 ''' harvard
-Introductory Notes
-Dramatic Arts
-Middle Eastern Studies
-General Education
-Earth and Planetary Sciences
-Mind, Brain, and Behavior
-Graduate Seminars in General Education and in Undergraduate Education
-East Asian Languages and Civilizations
-Molecular and Cellular Biology
-Core Curriculum
-Economics
-Music
-Freshman Seminars and House Seminars
-Education
-Near Eastern Languages and Civilizations
-African and African American Studies
-Engineering Sciences
-Neurobiology
-African Studies
-English
-Oceanography
+African & African Amer Studies
 American Studies
-Environmental Science and Public Policy
-Organismic and Evolutionary Biology
 Anthropology
-Ethnicity, Migration, Rights
-Philosophy
 Applied Computation
-Ethnic Studies
-Physical Sciences
 Applied Mathematics
-European Studies
-Physics
 Applied Physics
-Expository Writing
-Political Economy and Government
-Archaeology
-Film and Visual Studies
-Psychology
-Architecture, Landscape Architecture and Urban Planning
-Folklore and Mythology
-Public Policy
-Arts and Humanities
-Germanic Languages and Literatures
-The Study of Religion
-Asian Studies Programs
-Global Health and Health Policy
-Romance Languages and Literatures
+Arch, Landscape & Urban Plan
+Architecture
 Astronomy
-Government
-ROTC
-Biological Sciences in Dental Medicine
-Health Policy
-Russia, Eastern Europe, and Central Asia
-Biological Sciences in Public Health
-History
-Slavic Languages and Literatures
+Bio Sciences in Dental Med
+Bio Sciences in Public Health
+Biological Science
 Biomedical Engineering
-History and Literature
-Social Policy
 Biophysics
-History of American Civilization
-Social Studies
 Biostatistics
-History of Art and Architecture
-Sociology
-Business Studies
-History of Science
-South Asian Studies
-Celtic Languages and Literatures
-Human Evolutionary Biology
-Special Concentrations
-Chemical and Physical Biology
-Inner Asian and Altaic Studies
-Statistics
+Biostatistics
+Celtic Languages & Literatures
+Chan School of Public Health
+Chemical & Physical Biology
 Chemical Biology
-Latin American and Iberian Studies
-Stem Cell and Regenerative Biology
-Chemical Physics
-Life Sciences
-Systems Biology
-Chemistry and Chemical Biology
-Linguistics
-Ukrainian Studies
-The Classics
-Mathematics
-Visual and Environmental Studies
+Chemistry & Chemical Biology
+Classics, The
 Comparative Literature
-Medical Sciences
-Women, Gender, and Sexuality
 Computer Science
+Core Curriculum
+Divinity School
+Doctor of Public Health
+Earth & Planetary Sciences
+East Asian Langs & Civ
+Economics
+Education
+Engineering Sciences
+English
+Envi Science & Public Policy
+Environmental Health
+Epidemiology
+Ethnicity, Migration, Rights
+European Studies
+Expository Writing
+Folklore & Mythology
+Freshman Seminars
+General Education
+Genetics & Complex Diseases
+Germanic Languages & Lit
+Global Health & Health Policy
+Global Health & Population
+Government
+Graduate School of Design
+Graduate School of Education
+HKS Government
+Health Policy
+Health Policy & Management
+History
+History & Literature
+History of Art & Architecture
+History of Science
+House Seminars
+Human Evolutionary Biology
+Humanities
+Immunology Infectious Disease
+Landscape Architecture
+Life Sciences
+Linguistics
+Mathematics
+Medical Sciences
 Medieval Studies
+Middle Eastern Studies
+Mind, Brain & Behavior
+Molecular & Cellular Biology
+Music
+Near Eastern Languages & Civ
+Neurobiology
+No Department
+Nutrition
+Organismic & Evolutionary Biol
+Philosophy
+Physical Sciences
+Physics
+Population Health Sciences
+Psychology
+Regional Studies-East Asia
+Religion, The Study of
+Romance Languages & Lit
+Russia, E Europe, Central Asia
+Sanskrit & Indian Studies
+Slavic Languages & Literatures
+Social & Behavioral Sciences
+Social Policy
+Social Studies
+Society, Human Dev & Health
+Society, Human Dev & Health
+Sociology
+South Asian Studies
+Special Concentrations
+Statistics
+Stem Cell & Regenerative Biol
+Systems Biology
+Theater, Dance & Media
+Ukrainian Studies
+Urban Planning & Design
+Visual & Environmental Studies
+Women, Gender & Sexuality
 '''
 
 ''' MIT
