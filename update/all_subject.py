@@ -10,9 +10,9 @@ subject_dict = {\
     'Config' : 'config',\
     'Accounting' : 'economics',\
     "Architecture" : "architecture",\
-    "Art" : "art-culture",\
+    "Art" : "art",\
     "Anthropology" : "anthropology",\
-    "Culture" : "art-culture",\
+    "Culture" : "culture",\
     "Brain" : "neuroscience",\
     "Biology" : "biology",\
     "Biological" : "biology",\
@@ -57,6 +57,7 @@ subject_dict = {\
     "Math" : "mathematics",\
     'Marketing' : 'economics',\
     "Medicine" : "medicine",\
+    "Medical" : "medicine",\
     "Music" : "art",\
     "Neurobiology" : "neuroscience",\
     "Neuroscience" : "neuroscience",\
@@ -73,14 +74,20 @@ subject_dict = {\
     "Social Sciences" : "social-science",\
     "Statistics" : "data-science",\
     "Data Analysis" : "data-science",\
-    "Civil and Environmental Engineering" : "civil-environmental",\
+    "Civil and Environmental Engineering" : "civil-and-environmental",\
     "Mechanical Engineering" : "mechanical",\
     "Materials" : "materials-science",\
     "Materials Science and Engineering" : "materials-science",\
+    "Materials Science" : "materials-science",\
+    "Material" : "materials-science",\
     "Chemical Engineering" : "chemistry",\
-    "Urban Studies and Planning" : "architecture",\
+    "Urban Studies and Planning" : "urban",\
     "Earth, Atmospheric, and Planetary Sciences" : "earth-science",\
+    "Earth" : "earth-science",\
+    "Atmospheric" : "earth-science",\
     "Aeronautics and Astronautics" : "aeronautics",\
+    "Aeronautics" : "aeronautics",\
+    "Astronautics" : "aeronautics",\
     "Political Science" : "political",\
     "Political" : "political",\
     "Biological Engineering" : "biology",\
