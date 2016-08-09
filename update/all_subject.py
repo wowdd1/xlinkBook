@@ -14,9 +14,12 @@ subject_dict = {\
     "Anthropology" : "anthropology",\
     "Culture" : "culture",\
     "Brain" : "neuroscience",\
+    "Neurobiology" : "neuroscience",\
     "Biology" : "biology",\
     "Biological" : "biology",\
     "Bioengineering" : "biology",\
+    "Genetics" : "biology",\
+    "Stem Cell & Regenerative Biol" : "biology",\
     "Cognitive Science" : "neuroscience",\
     "Life Sciences" : "biology",\
     "Business" : "economics",\

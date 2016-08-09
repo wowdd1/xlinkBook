@@ -327,7 +327,7 @@ class HarvardSpider(Spider):
                     else:
                         description = ''
                     self.count += 1
-                    self.write_db(f, 'harford-' + k + '-' + obj['CRSE_ID'], title, 'https://locator.tlt.harvard.edu/course/colgsas-' + obj['CRSE_ID'], term + ' ' + instructors + ' ' + description)
+                    self.write_db(f, 'harford-' + k + '-' + obj['CRSE_ID'], title, 'https://courses.my.harvard.edu/psp/courses/EMPLOYEE/EMPL/h/?tab=HU_CLASS_SEARCH&SearchReqJSON=%7B%22SearchText%22%3A%22%s%22%7D'.replace('%s', obj['CRSE_ID']), term + ' ' + instructors + ' ' + description)
                 
                 if jobj[2]['PageNumber'] == jobj[2]['TotalPages'] or search_ok == False:
                     break
