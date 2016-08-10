@@ -3,14 +3,11 @@ goal:
     1. integrating topics
     2. sync the state of art information or tools(core resource -> more resource), 
        build the freeway of information
-    3. learning by doing, search by research
-    4. capture information flow(data, structure, wiring, computing)
-    5. explorer what your want, everything is programeabe
-    6. share, distributed, simple, speed, flexible, intelligent, evolution
+    3. capture information flow, everything is programeabe
 
 philosophy:
 
-    divide abstract connect free(norule) -> flow
+    divide abstract connect
 
 install:
 
