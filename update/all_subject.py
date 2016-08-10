@@ -13,12 +13,16 @@ subject_dict = {\
     "Art" : "art",\
     "Anthropology" : "anthropology",\
     "Culture" : "culture",\
+    "Neuroinformatics" : "neuroinformatics",\
     "Brain" : "neuroscience",\
     "Neurobiology" : "neuroscience",\
+    "Neuro" : "neuroscience",\
     "Biology" : "biology",\
     "Biological" : "biology",\
     "Bioengineering" : "biology",\
+    "Bio Science" : "biology",\
     "Genetics" : "biology",\
+    "volutionary Biol" : "biology",\
     "Stem Cell & Regenerative Biol" : "biology",\
     "Cognitive Science" : "neuroscience",\
     "Life Sciences" : "biology",\
@@ -29,6 +33,7 @@ subject_dict = {\
     "Computer Science" : "eecs",\
     "EECS" : "eecs",\
     "Computing" : "eecs",\
+    "Computation" "eecs",\
     'Economic Analysis & Policy' : 'economics',\
     "Programming" : "eecs",\
     "Rank" : 'rank',\
@@ -46,6 +51,9 @@ subject_dict = {\
     "Environmental Studies" : "environmental-studies",\
     "Ethics" : "ethics",\
     "Food" : "medicine",\
+    "Epidemiology" : "medicine",\
+    "Immunology" : "medicine",\
+    "Biomedical" : "medicine",\
     'GSB General & Interdisciplinary' : 'economics',\
     "Nutrition" : "medicine",\
     "Health" : "medicine",\
@@ -54,6 +62,9 @@ subject_dict = {\
     "Humanities" : "humanities",\
     "Human Resource Management" : 'economics',\
     "Law" : "law",\
+    "Sociology" : "Sociology",\
+    "Society" : "Sociology",\
+    "Social" : "Sociology",\
     "Linguistic" : "linguistics",\
     "Linguistics" : "linguistics",\
     "Literature" : "literature",\
@@ -62,6 +73,7 @@ subject_dict = {\
     "Medicine" : "medicine",\
     "Medical" : "medicine",\
     "Music" : "art",\
+    "Dance" : "art"
     "Neurobiology" : "neuroscience",\
     "Neuroscience" : "neuroscience",\
     "Philanthropy" : "philosophy",\
@@ -92,7 +104,10 @@ subject_dict = {\
     "Aeronautics" : "aeronautics",\
     "Astronautics" : "aeronautics",\
     "Political Science" : "political",\
+    "Government" : "political",\
+    "Public Policy" : "political",\
     "Political" : "political",\
+    "Divinity" : "theology",\
     "Biological Engineering" : "biology",\
     "Global Studies and Languages" : "education",\
     "Music and Theater Arts" : "art",\
@@ -137,9 +152,6 @@ need_update_subject_list = [
     #'management',
     'data-science'
 ]
-
-need_update_subject_list = ['medicine']
-
 
 def print_all_subject():
     print ', '.join(subject_dict.values())
