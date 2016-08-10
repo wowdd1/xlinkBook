@@ -33,7 +33,7 @@ subject_dict = {\
     "Computer Science" : "eecs",\
     "EECS" : "eecs",\
     "Computing" : "eecs",\
-    "Computation" "eecs",\
+    "Computation" : "eecs",\
     'Economic Analysis & Policy' : 'economics',\
     "Programming" : "eecs",\
     "Rank" : 'rank',\
@@ -73,7 +73,7 @@ subject_dict = {\
     "Medicine" : "medicine",\
     "Medical" : "medicine",\
     "Music" : "art",\
-    "Dance" : "art"
+    "Dance" : "art",\
     "Neurobiology" : "neuroscience",\
     "Neuroscience" : "neuroscience",\
     "Philanthropy" : "philosophy",\
