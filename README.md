@@ -1,8 +1,8 @@
 goal:
 
     1. integrating topics
-    2. sync the state of art information or tools(core resource -> more resource), 
-       build the freeway of information
+    2. sync the state of art information, build the freeway of information,
+       build tools process data
     3. capture information flow, everything is programeabe
 
 philosophy:
