@@ -1,18 +1,12 @@
 goal:
 
-    1. integrating topics(agent, activity, resource, every topic contain a network)
+    1. integrating topics
     2. sync the state of art information or tools(core resource -> more resource), 
        build the freeway of information
     3. learning by doing, search by research
-       (problem <-> resource & learn -> ED <-> resource & learn -> BP) 
-    4. capture information flow(data, structure, wiring, computing), track waveform in real time
-       (activity -> deconstruction -> reconstruction -> value) 
+    4. capture information flow(data, structure, wiring, computing)
     5. explorer what your want, everything is programeabe
     6. share, distributed, simple, speed, flexible, intelligent, evolution
-       (the best fecture is flow capture flow, knowledge build knowledge or tool, 
-            layer build layer until top of pyramid 
-        the best tool is treat thinking as central,
-        the best result is get the suitable information as quick as possible) 
 
 philosophy:
 
