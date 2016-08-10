@@ -7,7 +7,7 @@ goal:
        (problem <-> resource & learn -> ED <-> resource & learn -> BP) 
     4. capture information flow(data, structure, wiring, computing), track waveform in real time
        (activity -> deconstruction -> reconstruction -> value) 
-    5. explorer what your want(simple -> complex -> simple)
+    5. explorer what your want(simple -> complex -> simple), everything is programeabe
     6. share, distributed, simple, speed, flexible, intelligent, evolution
        (the best fecture is flow capture flow, knowledge build knowledge or tool, 
             layer build layer until top of pyramid 
