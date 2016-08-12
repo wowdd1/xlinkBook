@@ -11,6 +11,7 @@ from semanticscholar import Semanticscholar
 from config import Config
 from bs4 import BeautifulSoup
 import requests
+from extensions.reference.youtube_helper import YoutubeHelper
 
 class Reference(BaseExtension):
 
@@ -22,6 +23,7 @@ class Reference(BaseExtension):
         self.utils = Utils()
         self.semanticscholar = Semanticscholar()
         self.category_obj = Category()
+        self.helper = YoutubeHelper()
 
     def loadReference(self, filename, rID):
         print 'loadReference ' + filename
@@ -51,6 +53,9 @@ class Reference(BaseExtension):
       
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
+        if self.isYoutubeRssUrl(form_dict['url']):
+            return self.youtubeRssHtml(form_dict['url'], rID, form_dict['rID'])
+
         self.loadReference(self.formatFileName(fileName), rID)
         #print self.record_reference
         if self.record_reference.has_key(rID):
@@ -139,6 +144,40 @@ class Reference(BaseExtension):
             html = ''
         return html
 
+    def isYoutubeRssUrl(self, url):
+        return (url.find('user') != -1 or url.find('channel') != -1) and (url.find('playlists') != -1 or url.find('videos') != -1) and url.find('watch') == -1 and url.find('youtube') != -1
+
+    def youtubeRssHtml(self, url, rid, divid):
+        if url.find('playlist') != -1:
+            return self.genRssHtml(self.helper.getPlaylists(url), rid, divid)
+        elif url.find('video') != -1:
+            videos = self.helper.getVideos(url)
+            return self.genRssHtml(videos, rid, divid)
+        return ''
+
+    def genRssHtml(self, data, key, ref_divID):
+        html = '<div class="ref"><ol>'
+
+        count = 0
+        for item in data:
+            count += 1
+            html += '<li><span>' + str(count) + '.</span>'
+            html += '<p><a target="_blank" href="' + item[1] + '"> '+ item[0] + '</a>'
+
+            ref_divID += '-' + str(count)
+            linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
+            appendID = str(count)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), item[0], item[1], '-')
+            html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
+
+            html += '</p></li>'
+
+
+        html += "</ol></div>"
+        return html
+                                                        
+
+
     def formatYoutubeLink(self, a, title_only):
         sp = BeautifulSoup(a.prettify())
         title = sp.find('span', class_='title').text.strip()
@@ -192,7 +231,7 @@ class Reference(BaseExtension):
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
                 title = a.text.strip()
                 self.html += '</p></li>'
-            return self.html + "</div>"
+            return self.html + "</ol></div>"
 
 
     def genReferenceHtml(self, rID, ref_divID):
@@ -214,7 +253,7 @@ class Reference(BaseExtension):
                 if script != "":
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
                 self.html += '</p></li>'
-            return self.html + "</div>"
+            return self.html + "</ol></div>"
         else:
             return ''
 
