@@ -94,7 +94,7 @@ class Content(BaseExtension):
         return self.genMetadataHtml(key, content_divID, defaultLinks)
 
     def genMetadataHtml(self, key, content_divID, defaultLinks):
-        html = '<div class="ref"><ol>'
+        html = '<div class="ref"><br><ol>'
         count = 0
         if self.datafile_content.has_key(key):
             self.record_content = self.datafile_content
