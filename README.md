@@ -2,7 +2,8 @@ goal:
 
     1. putting the pieces together 
     2. sync the state of art knowage(20% -> 80%), build tools process data
-    3. capture information flow(micro -> macro), program everything
+    3. capture information flow(micro -> macro)
+    4. program everything
 
 philosophy:
 
