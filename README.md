@@ -2,11 +2,11 @@ goal:
 
     1. putting the pieces together 
     2. sync the state of art knowage(20% -> 80%), build tools process data
-    3. capture information flow, program everything
+    3. capture information flow(micro -> macro), program everything
 
 philosophy:
 
-    macro divide abstract connect micro
+    divide abstract connect
 
 install:
 
