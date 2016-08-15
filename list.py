@@ -477,11 +477,11 @@ def getScript(file_name, first_record):
     ref_class = css_head
     ref_class += '.ref { margin: 5px;'
     if column_num == "3":
-        ref_class += "width: 450px;"
+        ref_class += "width: 485px;"
     if column_num == "2":
-        ref_class += "width: 500px;"
+        ref_class += "width: 520px;"
     if column_num == "1":
-        ref_class += "width: 700px;"
+        ref_class += "width: 900px;"
     ref_class += "}"
     ref_class += css_end
     print ref_class

@@ -45,8 +45,8 @@ subject_dict = {\
     "Electronic" : "eecs",\
     "Electrical Engineering" : "eecs",\
     "Electronic Engineering" : "eecs",\
-    "Energy" : "energy-earth-sciences",\
-    "Earth Sciences" : "energy-earth-sciences",\
+    "Energy" : "energy-science",\
+    "Earth Sciences" : "earth-science",\
     "Engineering" : "engineering",\
     "Environmental Studies" : "environmental-studies",\
     "Ethics" : "ethics",\
@@ -582,4 +582,50 @@ Arts Intensive Program
 Community Global Health
 Service Learning Courses (certified by Haas Center)
 Design Institute
+'''
+
+''' 
+QS
+Accounting & Finance
+Agriculture & Forestry
+Anthropology
+Archaeology
+Architecture / Built Environment
+Art & Design
+Biological Sciences
+Business & Management Studies
+Chemistry
+Communication & Media Studies
+Computer Science & Information Systems
+Dentistry
+Development Studies
+Earth & Marine Sciences
+Economics & Econometrics
+Education
+Engineering - Chemical
+Engineering - Civil & Structural
+Engineering - Electrical & Electronic
+Engineering - Mechanical, Aeronautical & Manufacturing
+Engineering - Mineral & Mining
+English Language & Literature
+Environmental Sciences
+Geography & Area Studies
+History
+Law
+Linguistics
+Materials Science
+Mathematics
+Medicine
+Modern Languages
+Nursing
+Performing Arts
+Pharmacy & Pharmacology
+Philosophy
+Physics & Astronomy
+Politics & International Studies
+Psychology
+Social Policy & Administration
+Sociology
+Statistics & Operational Research
+Veterinary Science
 '''

@@ -29,7 +29,6 @@ id | DeepMind | https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A/videos 
 id | Nvidia | https://www.youtube.com/user/nvidia/videos | 
 id | BostonDynamics | https://www.youtube.com/user/BostonDynamics/videos | 
 id | TwitterDev | https://www.youtube.com/channel/UCcRd4oOOUPKAvg6vs2P9ReA/videos | 
-id | DARPA | https://www.youtube.com/user/DARPAtv/videos | 
 id | nasa | https://www.youtube.com/user/NASAtelevision/videos | 
 id | Watson | https://www.youtube.com/user/IBMWatsonSolutions/videos | 
 id | IBM | https://www.youtube.com/user/IBM/videos | 
@@ -61,21 +60,16 @@ id | VisualStudio | https://www.youtube.com/user/VisualStudio/videos |
 id | WorkingAtMicrosoft | https://www.youtube.com/user/WorkingAtMicrosoft/videos |
 id | singularityu | https://www.youtube.com/user/singularityu/videos | 
 id | SingularityLectures | https://www.youtube.com/channel/UC-a4MiIis33-Z9vLYFerN6g/videos | 
-id | 2045Initiative | https://www.youtube.com/user/2045ru/videos | 
 id | MITTechnologyReview | https://www.youtube.com/user/TechnologyReview/videos | 
 id | nature | https://www.youtube.com/user/NatureVideoChannel/videos | 
 id | ScienceMag | https://www.youtube.com/user/ScienceMag/videos | 
 id | SciAmerican | https://www.youtube.com/user/SciAmerican/videos | 
 id | nips | https://www.youtube.com/user/NeuralInformationPro/videos | 
 id | UCFCRCV | https://www.youtube.com/user/UCFCRCV/videos | 
-id | McGovernInstitute | https://www.youtube.com/channel/UCDqKkRpDCSqPx8kGn0aTIZw/videos | 
 id | NIBIB | https://www.youtube.com/user/NIBIBTV/videos | 
-id | TheHumanBrainProject | https://www.youtube.com/user/TheHumanBrainProject/videos | 
-id | allenInstitute | https://www.youtube.com/user/AllenInstitute/videos | 
 id | ICLR | https://www.youtube.com/channel/UCqxFGrNL5nX10lS62bswp9w/videos | 
 id | singularitysummit | https://www.youtube.com/user/singularitysummit/videos | 
 id | anfavideo | https://www.youtube.com/user/anfavideo/videos | 
-id | broadinstitute | https://www.youtube.com/user/broadinstitute/videos | 
 id | harvardmedicalschool | https://www.youtube.com/user/harvardmedicalschool/videos | 
 id | iBiology | https://www.youtube.com/user/ibioseminars/videos | 
 id | iBioMagazine | https://www.youtube.com/user/ibiomagazine/videos | 
@@ -84,24 +78,79 @@ id | tedx | https://www.youtube.com/user/TEDxTalks/videos |
 id | ted | https://www.youtube.com/user/TEDtalksDirector/videos | 
 id | CodeNeuro | https://www.youtube.com/channel/UCZqlliYGopB9zved7pJTi_A/videos | 
 id | thebrainforum | https://www.youtube.com/user/thebrainforum/videos | 
-id | NSFbraininitiative | https://www.youtube.com/user/NSFbraininitiative/videos | 
 id | INCF | https://www.youtube.com/user/INCForg/videos | 
 id | BrainFacts | https://www.youtube.com/channel/UCR1t4P1IaRbpbvoqvv5USAA/videos?sort=dd&view=0&shelf_id=0 | 
 id | sfn | https://www.youtube.com/user/sfnvideo/videos | 
 id | neurochallenged | https://www.youtube.com/user/neurochallenged/videos | 
 id | MassGeneralHospital | https://www.youtube.com/user/MassGeneralHospital/videos | 
 id | ColdSpringHarborLab | https://www.youtube.com/user/ColdSpringHarborLab/videos | 
-id | SalkInstitute | https://www.youtube.com/user/SalkInstitute/videos | 
 id | JohnsHopkinsMedicine | https://www.youtube.com/user/JohnsHopkinsMedicine/videos | 
-id | NIMHgov | https://www.youtube.com/user/NIMHgov/videos | 
+id | cell | https://www.youtube.com/user/cellvideoabstracts/videos | 
+id | VincentRacaniello | https://www.youtube.com/user/profvrr/videos |
+id | NeuroInfoFramework | https://www.youtube.com/user/NeuroInfoFramework/videos | 
+id | TheHumanBrainProject | https://www.youtube.com/user/TheHumanBrainProject/videos |
+id | 2045Initiative | https://www.youtube.com/user/2045ru/videos |
+id | Blue Brain Project - EPFL | https://www.youtube.com/user/Bluebrainpjt/videos |
+id | The White House BRAIN Initiative | https://www.youtube.com/user/whitehouse/videos |
+id | National Institutes of Health | https://www.youtube.com/user/IRPNIH/videos |
 id | NIHOD | https://www.youtube.com/user/NIHOD/videos | 
 id | NIHGenome | https://www.youtube.com/user/GenomeTV/videos | 
-id | cell | https://www.youtube.com/user/cellvideoabstracts/videos | 
-id | NeuroInfoFramework | https://www.youtube.com/user/NeuroInfoFramework/videos | 
+id | NIMHgov | https://www.youtube.com/user/NIMHgov/videos | 
 id | NSF | https://www.youtube.com/user/VideosatNSF/videos | 
+id | NSFbraininitiative | https://www.youtube.com/user/NSFbraininitiative/videos | 
+id | DARPA | https://www.youtube.com/user/DARPAtv/videos | 
+id | The Intelligence Advanced Research Projects Activity | | 
 id | FDA | https://www.youtube.com/user/USFoodandDrugAdmin/videos | 
 id | DOE | https://www.youtube.com/user/USdepartmentofenergy/videos | 
-id | HHMI | https://www.youtube.com/channel/UCUWJVAgUcpvWwKJXba5XoxQ/videos | 
-id | KavliFoundation | https://www.youtube.com/user/KavliFoundation/videos | 
+id | National Photonics Initiative | https://www.youtube.com/channel/UCtJjKunZrMEbLqLud3JUs9w/videos?view=0&sort=dd&shelf_id=0 |
+id | Gatsby Charitable Foundation | https://www.youtube.com/user/TheGatsbyCF/videos |
 id | SimonsFoundation | https://www.youtube.com/user/SimonsFoundation/videos | 
-id | VincentRacaniello | https://www.youtube.com/user/profvrr/videos |
+id | Denmark’s Lundbeck Foundation | https://www.youtube.com/user/Lundbeckfonden/videos?sort=dd&view=0&shelf_id=0 |
+id | Pediatric Brain Foundation | https://www.youtube.com/channel/UCzsxAqMQwVg2uCkYe1Bjx2Q/videos |
+id | Brain Canada Foundation | |
+id | KavliFoundation | https://www.youtube.com/user/KavliFoundation/videos | 
+id | Brain & Behavior Research Foundation | https://www.youtube.com/user/BBRFoundation/videos |
+id | Allen Institute | https://www.youtube.com/user/AllenInstitute/videos | 
+id | McGovern Institute for Brain Research | https://www.youtube.com/channel/UCDqKkRpDCSqPx8kGn0aTIZw/videos | 
+id | Broad Institute | https://www.youtube.com/user/broadinstitute/videos | 
+id | Salk Institute for Biological Studies | https://www.youtube.com/user/SalkInstitute/videos |
+id | HHMI | https://www.youtube.com/channel/UCUWJVAgUcpvWwKJXba5XoxQ/videos | 
+id | Lawrence Livermore National Laboratory | https://www.youtube.com/user/LivermoreLab/videos |
+id | Australian National Health and Medical Research Council | https://www.youtube.com/channel/UCrUogkUjc16wPd0Yds7ONPg/videos | 
+id | Boston Scientific | https://www.youtube.com/user/BostonScientificEndo/videos | 
+id | Carnegie Mellon University: BrainHub | https://www.youtube.com/user/CarnegieMellonU/videos |
+id | University of Pittsburgh: Brain Institute | https://www.youtube.com/user/upmc/videos |
+id | University of California System: Cal-BRAIN | https://www.youtube.com/user/UCofficeofpresident/videos |
+id | Boston University: Center for Systems Neuroscience | https://www.youtube.com/user/bu/videos |
+id | University of Texas System: UT System Neuroscience | https://www.youtube.com/user/utaustintexas/videos |
+id | University of Utah: Neurosciences Gateway | https://www.youtube.com/user/uofubraininstitute/videos |
+id | Blackrock Microsystems | https://www.youtube.com/channel/UCCmR94imeI3Y8E9JfPbp2cw/videos?shelf_id=0&sort=dd&view=0 |
+id | GE External | |
+id | GlaxoSmithKline | https://www.youtube.com/user/GSKvision/videos |
+id | Inscopix | https://www.youtube.com/channel/UCnxWcm2Qq2Cteau5EqbEA3A/videos |
+id | Medtronic | https://www.youtube.com/user/MedtronicCorp/videos |
+id | NeuroNexus | https://www.youtube.com/user/TheNeuroNexus/videos |
+id | NeuroPace | https://www.youtube.com/channel/UCo3gAkm71BvrwbuOfCHnIGw/videos |
+id | Pacific Northwest Neuroscience Neighborhood | |
+id | Ripple | https://www.youtube.com/user/ripplevideo1/videos |
+id | Second Sight | https://www.youtube.com/user/SecondSightTV/videos |
+id | World Health Organization | https://www.youtube.com/user/who/videos |
+id | WTO | https://www.youtube.com/user/WTO/videos |
+id | United Nations | https://www.youtube.com/user/unitednations/videos |
+id | The National Academies of Sciences, Engineering, and Medicine | https://www.youtube.com/user/nationalacademies/videos |
+id | CPNAS | https://www.youtube.com/user/CPNAS/videos |
+id | Distinctive Voices | https://www.youtube.com/user/DistinctiveVoicesBC/videos |
+id | National Academy of Sciences | https://www.youtube.com/user/theNASciences/videos |
+id | National Academy of Engineering | https://www.youtube.com/channel/UCDgsHhqf6a2IC9LT5hbUxpA/videos |
+id | NASEM Health and Medicine Division | https://www.youtube.com/user/instituteofmedicine/videos |
+id | The Scripps Research Institute | https://www.youtube.com/user/ScrippsResearch/videos |
+id | CSHL | https://www.youtube.com/user/ColdSpringHarborLab/videos |
+id | whitehead institute | |
+id | System Biology | https://www.youtube.com/user/ISBSystemsBiology/videos |
+id | Venter | |
+id | Stowers Institute for Medical Research | https://www.youtube.com/user/StowersInstitute/videos?sort=dd&view=0&shelf_id=0 |
+id | CrashCourse | https://www.youtube.com/user/crashcourse/videos |
+id | SciShow |  https://www.youtube.com/user/scishow/videos |
+id | Two Minute Papers | https://www.youtube.com/user/keeroyz/videos | 
+id | CIDAR LAB | https://www.youtube.com/user/cidarlab/videos | 
+id | imec | https://www.youtube.com/user/imecnanotube/videos |

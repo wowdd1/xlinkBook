@@ -19,7 +19,7 @@ class NetEasySpider(Spider):
     def process163Data(self, soup):
         #if self.need_update_subject(self.subject) == False:
         #    return
-        file_name = self.get_file_name('playlist/' + self.subject, self.school)
+        file_name = self.get_file_name('videos/' + self.subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         for div in soup.find_all("div", class_ = "g-cell1 g-card1"):

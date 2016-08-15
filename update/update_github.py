@@ -674,8 +674,13 @@ class GithubSpider(Spider):
 		'CBMM' : 'https://github.com/CBMM',\
 		'AllenInstitute' : 'https://github.com/AllenInstitute',\
 		'ACElab' : 'https://github.com/aces'}
+
+        data_gene = { 'CIDAR-LAB' : 'https://github.com/CIDARLAB',
+                      'Voigt-Lab' : 'https://github.com/VoigtLab'}
+
         #self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
-        self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
+        #self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
+        self.getProjectByDict(data_gene, 'biology/projects/github/organization/')
         #self.getStartupPorjects()
 
     def getStartupPorjects(self):

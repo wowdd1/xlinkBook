@@ -62,11 +62,15 @@ class Config():
     recommend_engin = True
     recommend_engin_num = 18
 
-    auto_library_cell_len = True
+    auto_library_cell_len = False
 
-    default_library = ''
-    #default_library = 'genes-neuro-library'
-    #default_library = 'breakthrough-library'
+    display_all_library = True
+
+    #default_library = ''
+    default_library = 'gene-neuro-virus-library'
+    #default_library = 'astronomy-library'
+    #default_library = 'business-library'
+    #default_library = 'journal-library'
     
     background = ''
 
@@ -74,7 +78,7 @@ class Config():
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
                   'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
 		  'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
-		  'youtube' :  ip_adress + '/?db=videos/&key=?',\
-		  'eecs' :  ip_adress + '/?db=eecs/&key=?',\
-                  'library' : ip_adress + '/?db=library/&key=?'}
+		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=2'}
+		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
+                  #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}

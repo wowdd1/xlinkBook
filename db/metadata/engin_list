@@ -1,8 +1,8 @@
-engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | priority:10 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
+engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | priority:9 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/googlescholar.ico
-engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
-engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
+engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
+engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book star icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
 engin-6 | bookzz | http://bookzz.org/s/?q= | priority:0 description:book
 engin-7 | booksc | http://booksc.org/s/?q= | priority:0 description:paper
 engin-8 | booksee | http://en.booksee.org/s/?q= | priority:0 description:book
@@ -28,11 +28,11 @@ engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Se
 engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | priority:0 description:patent
 engin-29 | patents.google | https://patents.google.com/?q= | priority:0 description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | priority:0 description:all
-engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:10 description:default star course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
+engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:9 description:default star course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
 engin-32 | coursera | https://www.coursera.org/courses?query= | priority:8 description:course
 engin-33 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | priority:8 description:course
-engin-35 | videolectures | http://videolectures.net/site/search/?q= | priority:8 description:talk star icon:http://mycroftproject.com/updateos.php/id0/videolectures.ico
+engin-35 | videolectures | http://videolectures.net/site/search/?q= | priority:8 description:talk icon:http://mycroftproject.com/updateos.php/id0/videolectures.ico
 engin-36 | ratemyprofessors | http://www.ratemyprofessors.com/search.jsp?query= | priority:0 description:people review
 engin-37 | ted | http://www.ted.com/search?q= | priority:0 description:talk
 engin-38 | doaj | https://doaj.org/search?source=%7B%22query%22%3A%7B%22query_string%22%3A%7B%22query%22%3A%22%24%22%2C%22default_operator%22%3A%22AND%22%7D%7D%2C%22from%22%3A0%2C%22size%22%3A10%7D#.VdDCqWSqqkp | priority:0 description:paper journal
@@ -431,7 +431,7 @@ engin-438 | yummyastro | http://yummyastro.me:5000/search?q= | priority:0 descri
 engin-439 | voxcharta | http://nju.voxcharta.org/?s= | priority:0 description:paper
 engin-440 | picker.mit | http://picker.mit.edu/?q= | priority:4 description:course
 engin-441 | stellar.mit | https://stellar.mit.edu/?q= | priority:4 description:course
-engin-442 | aitopics | http://aitopics.org/search/site/ | priority:4 description:news book video podcast
+engin-442 | aitopics | http://aitopics.org/search/site/ | priority:4 description:news book podcast
 engin-443 | ustc.edu | http://rec.ustc.edu.cn/search/course?_token=d550c2fe31937535a1a222c0a552dd33&keyword= | priority:0 description:course
 engin-444 | pastebin | http://pastebin.com/search?q= | priority:3 description:tools
 engin-445 | paperpile | https://paperpile.com/welcome?q= | priority:3 description:tools
@@ -493,3 +493,6 @@ engin-500 | scienceexchange | https://protocols.scienceexchange.com/protocols?ut
 engin-501 | benchfly | http://www.benchfly.com/search-results?search= | priority:0 description:protocol
 engin-502 | protocols.io | https://www.protocols.io/search?key= | priority:0 description:protocol
 engin-503 | protocol-online | http://www.protocol-online.org/cgi-bin/prot/search.cgi?query=%s&submit2=Go | priority:0 description:protocol
+engin-504 | addgene | https://www.addgene.org/search/advanced/?q= | priority:0 description:protocol
+engin-505 | neuinfo | https://neuinfo.org/data/search?q=%s&l=%s | priority:5 description:data
+engin-506 | vimeo | https://vimeo.com/search?q= | priority:6 description:video
