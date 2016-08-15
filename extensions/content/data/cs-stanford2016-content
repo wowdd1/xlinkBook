@@ -1,2 +1,116 @@
 CS231N-1 | archive.org <a>video</a> | https://archive.org/details/cs231n-CNNs | parentid:CS231N 
 CS231N-2 | academictorrents torrents | http://academictorrents.com/details/46c5af9e2075d9af06f280b55b65cf9b44eb9fe7 | parentid:CS231N
+CS229-1 | The Motivation & Applications of Machine Learning | | parentid:CS229
+CS229-2 | An Application of Supervised Learning - Autonomous Deriving | | parentid:CS229
+CS229-3 | The Concept of Underfitting and Overfitting | | parentid:CS229
+CS229-4 | Newton's Method | | parentid:CS229
+CS229-5 | Discriminative Algorithms | | parentid:CS229
+CS229-6 | Multinomial Event Model | | parentid:CS229
+CS229-7 | Optimal Margin Classifier | | parentid:CS229
+CS229-8 | Kernels, Mercer's Theorem... | | parentid:CS229
+CS229-9 | Bias/variance Tradeoff | | parentid:CS229
+CS229-10 | Uniform Convergence - The Case of Infinite H | | parentid:CS229
+CS229-11 | Bayesian Statistics and Regularization | | parentid:CS229
+CS229-12 | The Concept of Unsupervised Learning | | parentid:CS229
+CS229-13 | Mixture of Gaussian | | parentid:CS229
+CS229-14 | The Factor Analysis Model | | parentid:CS229
+CS229-15 | Latent Semantic Indexing (LSI) | | parentid:CS229
+CS229-16 | Applications of Reinforcement Learning | | parentid:CS229
+CS229-17 | Generalization to Continuous States | | parentid:CS229
+CS229-18 | State-action Rewards | | parentid:CS229
+CS229-19 | Advice for Applying Machine Learning | | parentid:CS229
+CS229-20 | Partially Observable MDPs (POMDPs) | | parentid:CS229
+CS334A-1 | Introduction | | parentid:CS334A
+CS334A-2 | Convex sets | | parentid:CS334A
+CS334A-3 | Convex functions | | parentid:CS334A
+CS334A-4 | Convex optimization problems | | parentid:CS334A
+CS334A-5 | Duality | | parentid:CS334A
+CS334A-6 | Approximation and fitting | | parentid:CS334A
+CS334A-7 | Statistical estimation | | parentid:CS334A
+CS334A-8 | Geometrical problems | | parentid:CS334A
+CS334A-9 | Unconstrained minimization | | parentid:CS334A
+CS334A-10 | Equality constrained minimization | | parentid:CS334A
+CS334A-11 | Interior-point methods | | parentid:CS334A
+CS205A-1 | Mathematics Review | | parentid:CS205A
+CS205A-1.1 | PRELIMINARIES: NUMBERS AND SETS | | parentid:CS205A-1
+CS205A-1.2 | VECTOR SPACES | | parentid:CS205A-1
+CS205A-1.3 | LINEARITY | | parentid:CS205A-1
+CS205A-1.4 | NONLINEARITY: DIFFERENTIAL CALCULUS | | parentid:CS205A-1
+CS205A-2 | Numerics and Error Analysis | | parentid:CS205A
+CS205A-2.1 | STORING NUMBERS WITH FRACTIONAL PARTS | | parentid:CS205A-2
+CS205A-2.2 | UNDERSTANDING ERROR | | parentid:CS205A-2
+CS205A-2.3 | PRACTICAL ASPECTS | | parentid:CS205A-2
+CS205A-3 | Linear Algebra | | parentid:CS205A
+CS205A-3.1 | Linear Systems and the LU Decomposition | | parentid:CS205A-3
+CS205A-3.2 | SOLVABILITY OF LINEAR SYSTEMS | | parentid:CS205A-3
+CS205A-3.3 | ADHOC SOLUTION STRATEGIES | | parentid:CS205A-3
+CS205A-3.4 | ENCODING ROW OPERATIONS | | parentid:CS205A-3
+CS205A-3.5 | GAUSSIAN ELIMINATION | | parentid:CS205A-3
+CS205A-3.6 | LU FACTORIZATION | | parentid:CS205A-3
+CS205A-4 | Designing and Analyzing Linear Systems | | parentid:CS205A
+CS205A-4.1 | SOLUTION OF SQUARE SYSTEMS | | parentid:CS205A-4
+CS205A-4.2 | SPECIAL PROPERTIES OF LINEAR SYSTEMS | | parentid:CS205A-4
+CS205A-4.3 | SENSITIVITY ANALYSIS | | parentid:CS205A-4
+CS205A-5 | Column Spaces and QR | | parentid:CS205A
+CS205A-5.1 | THE STRUCTURE OF THE NORMAL EQUATIONS | | parentid:CS205A-5
+CS205A-5.2 | ORTHOGONALITY | | parentid:CS205A-5
+CS205A-5.3 | STRATEGY FOR NONORTHOGONAL MATRICES | | parentid:CS205A-5
+CS205A-5.4 | GRAMSCHMIDT ORTHOGONALIZATION | | parentid:CS205A-5
+CS205A-5.5 | HOUSEHOLDER TRANSFORMATIONS | | parentid:CS205A-5
+CS205A-5.6 | REDUCED QR FACTORIZATION | | parentid:CS205A-5
+CS205A-6 | Eigenvectors | | parentid:CS205A
+CS205A-6.1 | MOTIVATION | | parentid:CS205A-6
+CS205A-6.2 | PROPERTIES OF EIGENVECTORS | | parentid:CS205A-6
+CS205A-6.3 | COMPUTING A SINGLE EIGENVALUE | | parentid:CS205A-6
+CS205A-6.4 | FINDING MULTIPLE EIGENVALUES | | parentid:CS205A-6
+CS205A-6.5 | SENSITIVITY AND CONDITIONING | | parentid:CS205A-6
+CS205A-7 | Singular Value Decomposition | | parentid:CS205A
+CS205A-7.1 | DERIVING THE SVD | | parentid:CS205A-7
+CS205A-7.2 | APPLICATIONS OF THE SVD | | parentid:CS205A-7
+CS205A-8 | Nonlinear Techniques | | parentid:CS205A
+CS205A-8.1 | Nonlinear Systems | | parentid:CS205A-8
+CS205A-8.2 | ROOTFINDING IN A SINGLE VARIABLE | | parentid:CS205A-8
+CS205A-8.3 | MULTIVARIABLE PROBLEMS | | parentid:CS205A-8
+CS205A-8.4 | CONDITIONING | | parentid:CS205A-8
+CS205A-9 | Unconstrained Optimization | | parentid:CS205A
+CS205A-9.1 | UNCONSTRAINED OPTIMIZATION: MOTIVATION | | parentid:CS205A-9
+CS205A-9.2 | OPTIMALITY | | parentid:CS205A-9
+CS205A-9.3 | ONE-DIMENSIONAL STRATEGIES | | parentid:CS205A-9
+CS205A-9.4 | MULTIVARIABLE STRATEGIES | | parentid:CS205A-9
+CS205A-10 | Constrained Optimization | | parentid:CS205A
+CS205A-10.1 | MOTIVATION | | parentid:CS205A-10
+CS205A-10.2 | THEORY OF CONSTRAINED OPTIMIZATION | | parentid:CS205A-10
+CS205A-10.3 | OPTIMIZATION ALGORITHMS | | parentid:CS205A-10
+CS205A-10.4 | CONVEX PROGRAMMING | | parentid:CS205A-10
+CS205A-11 | Iterative Linear Solvers | | parentid:CS205A
+CS205A-11.1 | GRADIENT DESCENT | | parentid:CS205A-11
+CS205A-11.2 | CONJUGATE GRADIENTS | | parentid:CS205A-11
+CS205A-11.3 | PRECONDITIONING | | parentid:CS205A-11
+CS205A-11.4 | OTHER ITERATIVE ALGORITHMS | | parentid:CS205A-11
+CS205A-12 | Specialized Optimization Methods | | parentid:CS205A
+CS205A-12.1 | NONLINEAR LEAST SQUARES | | parentid:CS205A-12
+CS205A-12.2 | ITERATIVELYREWEIGHTED LEAST SQUARES | | parentid:CS205A-12
+CS205A-12.3 | COORDINATE DESCENT AND ALTERNATION | | parentid:CS205A-12
+CS205A-12.4 | GLOBAL OPTIMIZATION | | parentid:CS205A-12
+CS205A-12.5 | ONLINE OPTIMIZATION | | parentid:CS205A-12
+CS205A-13 | Functions, Derivatives, and Integrals | | parentid:CS205A
+CS205A-13.1 | Interpolation | | parentid:CS205A-13
+CS205A-13.2 | INTERPOLATION IN A SINGLE VARIABLE | | parentid:CS205A-13
+CS205A-13.3 | MULTIVARIABLE INTERPOLATION | | parentid:CS205A-13
+CS205A-13.4 | THEORY OF INTERPOLATION | | parentid:CS205A-13
+CS205A-14 | Integration and Differentiation | | parentid:CS205A
+CS205A-14.1 | MOTIVATION | | parentid:CS205A-14
+CS205A-14.2 | QUADRATURE | | parentid:CS205A-14
+CS205A-14.3 | DIFFERENTIATION | | parentid:CS205A-14
+CS205A-15 | Ordinary Differential Equations | | parentid:CS205A
+CS205A-15.1 | MOTIVATION | | parentid:CS205A-15
+CS205A-15.2 | THEORY OF ODES | | parentid:CS205A-15
+CS205A-15.3 | TIMESTEPPING SCHEMES | | parentid:CS205A-15
+CS205A-15.4 | MULTIVALUE METHODS | | parentid:CS205A-15
+CS205A-15.5 | COMPARISON OF INTEGRATORS | | parentid:CS205A-15
+CS205A-16 | Partial Differential Equations | | parentid:CS205A
+CS205A-16.1 | MOTIVATION | | parentid:CS205A-16
+CS205A-16.2 | STATEMENT AND STRUCTURE OF PDES | | parentid:CS205A-16
+CS205A-16.3 | REPRESENTING DERIVATIVE OPERATORS | | parentid:CS205A-16
+CS205A-16.4 | SOLVING PARABOLIC AND HYPERBOLIC EQUATIONS | | parentid:CS205A-16
+CS205A-16.5 | NUMERICAL CONSIDERATIONS | | parentid:CS205A-16

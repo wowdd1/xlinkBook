@@ -199,10 +199,10 @@ function navTopic(obj, divID, parentDivID, countIndex){
         console.log('zzz', extensions[i]);
         if (extensions[i] == obj.text) { 
             extension = true;
-            $("#" + target_data_id).html("Loading ...");
+            $("#" + target_data_id).html("<br>Loading ...");
             var loadAnimID = setInterval(function() {
                 i = ++i % 4;
-                $("#" + target_data_id).html("Loading " + Array(i+1).join("."));
+                $("#" + target_data_id).html("<br>Loading " + Array(i+1).join("."));
             }, 800);
             $('#' + target_data_id).load('/extensions', postArgs, function(data){
                  console.log('return', data);

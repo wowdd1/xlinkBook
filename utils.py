@@ -208,12 +208,33 @@ class Utils:
                 content = origin_user_name + "' " + user_name
             else:
                 content = user_name
+
+            if Config.display_all_library:
+                html += self.gen_libary2(user_name)
+            else:
+                html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=?">library</a>&nbsp;'
+
             html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=77">' + content + '(' + str(lines) + ')</a></div>'
         else:
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/login">Login</a></div>'
         html += '<div style="height: 21px; width: 100px"></div>'
 
         return html
+
+    def gen_libary2(self, user):
+        html = ''
+        file_list = os.listdir("db/library/")
+        for item in file_list:
+            if Config.default_library == '' and item.find(user) != -1:
+                continue
+            if Config.default_library != '' and item.find(Config.default_library) != -1:
+                continue
+            f = open('db/library/' + item)
+            lines = len(f.readlines())
+            f.close()
+            html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=77">' + item.replace('-library', '') + '(' + str(lines) + ')</a>&nbsp;'
+        return html
+        
 
     def getAlexaRank(self, engin):
         engin = engin.lower().strip()
