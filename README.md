@@ -6,7 +6,7 @@ goal:
 
 philosophy:
 
-    divide abstract connect
+    macro divide abstract connect micro
 
 install:
 
