@@ -3,7 +3,7 @@ goal:
     1. putting the pieces together(research what) 
     2. sync the state of art knowage(20% -> 80%), build tools process data
     3. capture information flow(micro -> macro)
-    4. program the flow
+    4. program the flow(structural -> algorithm)
 
 philosophy:
 
