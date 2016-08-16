@@ -7,7 +7,7 @@ goal:
 
 philosophy:
 
-    divide abstract connect
+    divide abstract connect and open work
 
 install:
 
