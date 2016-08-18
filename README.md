@@ -1,3 +1,7 @@
+define:
+
+    x:topics, link:data, book:brain
+
 goal:
 
     1. putting the pieces together(research what) 
