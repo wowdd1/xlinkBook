@@ -1,6 +1,6 @@
 define:
 
-    x:topics, link:data, book:brain
+    x:brain, link:data, book:bible
 
 goal:
 
