@@ -1,6 +1,6 @@
 define:
 
-    x:brain, link:big data, book:explore time and space
+    x:brain, link:big data, book:infomation that worth reading
 
 goal:
 
