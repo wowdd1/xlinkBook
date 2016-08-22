@@ -56,15 +56,74 @@ def customPrint(data):
 
 pid = 0
 sub_pid = 0
+sub_sub_pid = 0
+app_mode = False
+
+
+unit = 0
+chapter = 0
+sub_chapter = 0
+
+code_list = []
+def get_parent_code(code):
+    global code_list
+    if len(code_list) == 0:
+        code_list.append(code)
+        return code
+    else:
+        if len(code) != code_list[len(code_list) - 1]:
+            code_list.append(code)
+        for i in range(len(code_list) - 1, -1, -1):
+            if code.startswith(code_list[i]) and code != code_list[i]:
+                return code_list[i]
+        code_list.append(code)
+        return code
+
+def caseLine(line):
+    new_line = ''
+    for item in line.split(' '):
+        new_line += item[0 : 1] + item[1:].lower() + ' '
+    return new_line
+
 def customPrintFile(line):
     global parentid
-    global pid, sub_pid
+    global pid, sub_pid, sub_sub_pid, app_mode
+    global unit, chapter, sub_chapter
     #customid = str(line_id)
-    customid = '9.04'
-    if parentid != '':
-        customid = parentid
+
+
+    customid = 'MI211'
+    #if parentid != '':
+    #    customid = parentid
+    #line = line.replace(':', '').strip()
+    id = line[0 : line.find(' ')]
+    
     '''
-    line = line.replace(':', '').strip()
+    if id.startswith('PART'):
+        pid += 1
+        sub_pid = 0
+        print  customid + '-' + str(pid) + ' | ' + caseLine(line[line.find('-') + 1:].strip()) + ' | | parentid:' + customid
+    elif id.find(':') != -1:
+        sub_pid += 1
+        print  customid + '-' + str(pid) + '.' + str(sub_pid) + ' | ' + line[line.find(':') + 1:].strip() + ' | | parentid:' + customid + '-' + str(pid)
+
+    parentid = get_parent_code(id)
+    if parentid == None:
+        print id
+        print code_list
+
+    if len(id) == 1:
+        line = line[line.find(' ') :].strip()
+        new_line = ''
+        for item in line.split(' '):
+            new_line += item[0 : 1] + item[1:].lower() + ' '
+        new_line = new_line.strip()
+        print customid + '-' + id + ' | ' + new_line + ' | | parentid:' + customid 
+    else:
+        print customid + '-' + id + ' | ' + line[line.find(' ') :].strip() + ' | | parentid:' + customid  + '-' + parentid
+
+    '''
+    '''
     if line.strip().startswith('I ') or line.startswith('II')\
            or line.startswith('III')\
            or line.startswith('IV')\
@@ -75,14 +134,65 @@ def customPrintFile(line):
            or line.startswith('IX')\
            or line.startswith('X ')\
 	   or line.startswith('XI'):
-    #if line.strip().startswith('Part'):
+    '''
+    '''
+    if line == "Appendices":
+        app_mode = True
+        pid = 0
+        return
+    if app_mode:
+        if line.find(':') == 1:
+            pid += 1
+            sub_pid = 0
+            print customid + '-Appendices' + str(pid) + ' | ' + line[line.find(' ') :] + ' | | parentid:' + customid
+        else:
+            sub_pid += 1
+            print customid + '-Appendices' + str(pid) + '.' + str(sub_pid) + ' | ' + line + ' | | parentid:' + customid + '-Appendices' + str(pid)
+        return
+
+    if line.startswith('Part'):
+        pid += 1
+        sub_pid = 0
+        print customid + '-' + str(pid) + ' | ' + line[line.find(' ', line.find(' ') + 1) : ].strip() + ' | | parentid:' + customid
+    elif id.replace(':', '').isdigit() and len(id) < 5:
+        sub_pid += 1
+        print customid + '-' + str(pid) + '.'  + str(sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid)
+            
+
+    if line.strip().startswith('PART'):
 	pid += 1
 	sub_pid = 0
-	line = line[line.find(' ') : ].strip()
-	print '6.034-' + str(pid) + ' | ' + line[line.find('.') + 1 :].strip() + ' | | parentid:6.034'
-    else:
+        sub_sub_pid = 0
+	line = line[line.find(' ', line.find(' ') + 1) : ].strip()
+	print customid + '-' + str(pid) + ' | ' + line.strip() + ' | | parentid:' + customid
+    elif line.strip().startswith('CHAPTER'):
 	sub_pid += 1
-	print '6.034-' + str(pid)+ '.' + str(sub_pid) + ' | ' + line[line.find('.') + 1 : ].strip() + ' | | parentid:6.034-' + str(pid)
+        sub_sub_pid = 0
+        #line = line[line.find(' ', line.find(' ') + 1) : ].strip()
+        if pid == 0:
+            print customid + '-' + str(pid) + ' | ' + line[line.find(' ', line.find(' ') + 1) : ].strip() + ' | | parentid:' + customid
+        else:
+            print customid + '-' + str(pid) + '.' + str(sub_pid)  + ' | ' + line[line.find(' ', line.find(' ') + 1) : ].strip()  + ' | | parentid:' + customid + '-' + str(pid)
+    elif id.find('.') != -1:
+        sub_sub_pid += 1
+        if pid == 0:
+            print customid + '-' + str(pid) + '.' + str(sub_sub_pid)  + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid)
+        else:
+            print customid + '-' + str(pid) + '.' + str(sub_pid) + '.' + str(sub_sub_pid)  + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.' + str(sub_pid)
+
+            
+    #elif line[0 : line.find(' ')].strip().find('.') != -1:
+
+    elif line[0 : line.find(' ')].strip().isdigit() and line[0 : line.find(' ')].find('.') == -1:
+        sub_sub_pid += 1
+        if pid == 0:
+	    print  customid + '-' + str(pid) + '.' + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-'+ str(pid)
+        else:
+	    print  customid + '-' + str(pid)+ '.' + str(sub_pid) + '.' + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-'+ str(pid) + '.' + str(sub_pid)
+    #else:
+    #    sub_sub_pid += 1
+    #    print  customid + '-' + str(pid)+ '.' + str(sub_pid) + '.' + str(sub_sub_pid) + ' | ' + line.strip() + ' | | parentid:' + customid + '-'+ str(pid) + '.' + str(sub_pid)
+
 
     if line.find('.') != -1:
         number = line[0 : line.find(' ')].replace('.', '')
@@ -93,16 +203,64 @@ def customPrintFile(line):
         #print customid + '-' + line[0 : line.find(' ')].strip() + ' | ' + title + ' | | parentid:' + customid
         #print line[0 : line.find(' ')].strip() + ' | ' + title + ' | | '
 	print 'pitt-neurobio-' + str(line_id) + ' | ' + line + ' | | '
-    '''
+
     title = line.strip()
+    custom = '7.81'
+    id = line[0 : line.find(' ')]
+    if id.find('.') == -1 and id.find(':') == -1:
+        return
+    if id.find(':') != -1:
+        id = id.replace(':', '')
+        print custom + '-' + str(id) + ' | ' + title[title.find(' ') :].strip() + ' | | parentid:' + custom
+    else:
+        print custom + '-' + str(id) + ' | ' + title[title.find(' ') :].strip() + ' | | parentid:' + custom + '-' + id[0 : id.rfind('.')]
+
+    custom = 'BIO118'
+    title = line.strip()
+    if id == 'Appendix':
+        print custom + '-' + title[0 : title.find(':')].replace(' ', '') + ' | ' + title[title.find(':') + 1 :].strip() + ' | | parentid:' + custom
+        return
+    #id =id[0 : len(id) - 1]
+
+    if title.startswith('PART') or id == '1':
+    #if id.find('.') == -1: 
+        unit += 1
+        chapter = 0
+        sub_chapter = 0
+        sub_sub_pid = 0
+        print custom + '-' + str(unit) + ' | ' + caseLine(title[title.find(' ', title.find(' ') + 1) :].strip()) + ' | | parentid:' + custom
+    #elif title.startswith(' ') == False:
+    #elif id.find('.') != -1 and id.find('.', id.find('.') + 1) == -1:
+    elif id.isdigit() and id.find('.') == -1:
+        chapter += 1
+        sub_chapter = 0
+        sub_sub_pid = 0
+        print custom + '-' + str(unit) + '.' + str(chapter) + ' | ' + title[title.find(' ') :].strip() + ' | | parentid:' + custom  + '-' + str(unit)
+    elif id.find('.') != -1:
+        sub_chapter += 1
+        sub_sub_pid = 0
+        if unit == 1:
+            print custom + '-' + str(unit) + '.' + str(sub_chapter) + ' | ' + title[title.find(' ') :].strip() + ' | | parentid:' + custom  + '-' + str(unit)
+        else:
+            print custom + '-' + str(unit) + '.' + str(chapter) + '.' + str(sub_chapter) + ' | ' + title[title.find(' ') :].strip() + ' | | parentid:' + custom  + '-' + str(unit) + '.' + str(chapter)
+    else:
+        sub_sub_pid += 1
+        if unit == 1:
+            print custom + '-' + str(unit) + '.' + str(sub_chapter) + '.' + str(sub_sub_pid) + ' | ' + title.strip() + ' | | parentid:' + custom  + '-' + str(unit) + '.' + str(sub_chapter)
+        else:
+            print custom + '-' + str(unit) + '.' + str(chapter) + '.' + str(sub_chapter) + '.' + str(sub_sub_pid) + ' | ' + title.strip() + ' | | parentid:' + custom  + '-' + str(unit) + '.' + str(chapter) + '.' + str(sub_chapter)
+
+    custom = 'CS334A'
     id = line[0 : line.find(' ')]
     if id.find('.') != -1:
-        print '9.583-' + id + ' | ' + line[line.find(' ') :].strip()+ ' | | parentid:9.583-' + id[0 : id.rfind('.')]
+        print custom + '-' + id + ' | ' + line[line.find(' ') :].strip()+ ' | | parentid:' + custom + '-' + id[0 : id.rfind('.')]
     else:
-        print '9.583-' + id + ' | ' + line[line.find(' ') :].strip()+ ' | | parentid:9.583' 
+        print custom + '-' + id + ' | ' + line[line.find(' ') :].strip()+ ' | | parentid:' + custom 
     #if title.find('(') != -1:
         #title = title[0 : title.find('(')].strip()
     #print customid + '-' + str(line_id) + ' | ' + title + ' | | '
+    '''
+    print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
 
 def format(line, link):
     if link != '' and line.startswith('http') == False:

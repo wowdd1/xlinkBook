@@ -14,6 +14,7 @@ subject_dict = {\
     "Anthropology" : "anthropology",\
     "Culture" : "culture",\
     "Neuroinformatics" : "neuroinformatics",\
+    "Bioinformatics" : "biology",\
     "Brain" : "neuroscience",\
     "Neurobiology" : "neuroscience",\
     "Neuro" : "neuroscience",\
@@ -21,6 +22,7 @@ subject_dict = {\
     "Biological" : "biology",\
     "Bioengineering" : "biology",\
     "Bio Science" : "biology",\
+    "Biochemistry" : "biology",\
     "Genetics" : "biology",\
     "volutionary Biol" : "biology",\
     "Stem Cell & Regenerative Biol" : "biology",\
@@ -54,8 +56,10 @@ subject_dict = {\
     "Epidemiology" : "medicine",\
     "Immunology" : "medicine",\
     "Biomedical" : "medicine",\
+    "Health" : "medicine",\
     'GSB General & Interdisciplinary' : 'economics',\
     "Nutrition" : "medicine",\
+    "Biogerontology" : "medicine",\
     "Health" : "medicine",\
     "Safety" : "humanities",\
     "History" : "history",\
@@ -157,6 +161,9 @@ def print_all_subject():
     print ', '.join(subject_dict.values())
 
 # reference subjects #
+# CIP
+# http://localhost:5000/?db=other/&key=cip2016&column=2
+
 ''' harvard
 African & African Amer Studies
 American Studies

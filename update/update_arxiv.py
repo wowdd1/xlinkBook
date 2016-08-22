@@ -291,9 +291,12 @@ class ArxivSpider(Spider):
                                                                  i, results_per_iteration)
             response = None
             try:
-                response = urllib.urlopen(base_url+query).read()
+                print 'requesting ' + base_url+query
+                #response = urllib.urlopen(base_url+query).read()
+                response = requests.get(base_url+query).text
             except Exception as e:
                 exception = True
+                print e
             #response = self.requestWithProxy(base_url+query).text
             parse = feedparser.parse(response)
             num_added = 0

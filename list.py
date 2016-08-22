@@ -72,6 +72,7 @@ search_box_displayed = False
 
 search_box_hiden = False
 library_hiden = False
+gened_libary = False
 
 script_head = '<script language="JavaScript" type="text/JavaScript">';
 script_end = '</script>'
@@ -332,6 +333,7 @@ def update_cell_len(index):
 
 def next_pos(text, start):
     min_end = len(text)
+    c_len = course_name_len + 10
     for k in keyword_list:
         end = text.lower().find(k, start + 2)
         if end != -1 and end < min_end:
@@ -339,19 +341,19 @@ def next_pos(text, start):
 
     if min_end != len(text):
         min_end -= 1
-        if min_end - start > course_name_len:
-            ret_end = start + course_name_len
-            return space_end(text, start, ret_end)
+        if min_end - start > c_len:
+            ret_end = start + c_len
+            return space_end(text, start, ret_end, c_len)
         else:
             return min_end
 
-    if (len(text) - start) < course_name_len:
+    if (len(text) - start) < c_len:
         return start + len(text) - start
     else:
-        ret_end = start + course_name_len
-        return space_end(text, start, ret_end)
+        ret_end = start + c_len
+        return space_end(text, start, ret_end, c_len)
        
-def space_end(text, start, end): 
+def space_end(text, start, end, c_len): 
     if html_style == False:
         return end
 
@@ -368,7 +370,7 @@ def space_end(text, start, end):
     
     if (end - ret_end1) > (ret_end2 - end):
         return ret_end2
-    if (ret_end2 - start) <= course_name_len:
+    if (ret_end2 - start) <= c_len:
         return ret_end2
     else:
         return ret_end1
@@ -479,7 +481,7 @@ def getScript(file_name, first_record):
     if column_num == "3":
         ref_class += "width: 485px;"
     if column_num == "2":
-        ref_class += "width: 520px;"
+        ref_class += "width: 575px;"
     if column_num == "1":
         ref_class += "width: 900px;"
     ref_class += "}"
@@ -723,7 +725,7 @@ def build_lines(list_all, file_name):
                         id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
                     if script != '':
                         id_title_lines[i][j] += utils.genMoreEnginHtml(linkID, script, '...', content_divID);
-            elif engin != '' and html_style and engin_list_dict != '':
+            elif engin != '' and html_style and engin_list_dict != '' and dir_mode == False:
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
             
@@ -873,6 +875,7 @@ def print_search_box(hiden):
                 print '<br/>'
 
 def print_table_head_with_style():
+    global gened_libary
     center_style = 'style="'
     if Config.center_content:
         width = '100%'
@@ -899,8 +902,9 @@ def print_table_head_with_style():
     center_style += '"'
     if loadmore_mode == False:
         print_search_box(search_box_hiden)
-        if library_hiden == False and plugins_mode == False:
+        if library_hiden == False and plugins_mode == False and gened_libary == False:
             print utils.gen_libary(True,username, '')
+            gened_libary = True
 	if plugins_mode:
 	    print '<br>'
         print '<div ' + center_style + ' >'
@@ -1390,7 +1394,7 @@ def adjust_link_number():
         #max_links_row = max_links_row - 1
     if column_num == '3':
 	max_nav_link_row = max_nav_link_row + 1
-        max_links_row = max_links_row - 1
+        max_links_row = max_links_row - 2
     
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username
@@ -1483,7 +1487,9 @@ def main(argv):
     if source.lower().find(".pdf") != -1:
         os.system("open " + source)
         return
-    if os.path.isfile(source):
+    if source.find('|') != -1:
+        print_list([source])
+    elif os.path.isfile(source):
         print_list(getLines(source), source)
     elif merger_result and os.path.isdir(source):
         print_list(get_lines_from_dir(source))

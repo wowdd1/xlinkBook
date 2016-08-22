@@ -42,7 +42,8 @@ class Delete(BaseExtension):
             else:
                 f.write('')
                 f.close()
-            return 'http://' + Config.ip_adress + '/?db=library/&key=' + originFileName
+            #return 'http://' + Config.ip_adress + '/?db=library/&key=' + originFileName
+            return 'refresh'
         return 'error'
 
     def check(self, form_dict):

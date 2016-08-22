@@ -1,7 +1,7 @@
 engin-1 | google | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q= | priority:9 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/googlescholar.ico
-engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
+engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
 engin-5 | gen.lib | http://gen.lib.rus.ec/search.php?phrase=1&view=simple&column=def&sort=year&sortmode=DESC&req= | priority:8 description:book star icon:http://mycroftproject.com/updateos.php/id0/gen.lib.rus.ec_ff.ico
 engin-6 | bookzz | http://bookzz.org/s/?q= | priority:0 description:book
 engin-7 | booksc | http://booksc.org/s/?q= | priority:0 description:paper
@@ -15,7 +15,7 @@ engin-14 | hathitrust | http://babel.hathitrust.org/cgi/ls?field1=ocr;a=srchls;l
 engin-15 | daysou | http://www.daysou.com/?start=0&isget=1&tp=all&cl=0&q= | priority:0 description:book
 engin-16 | wowebook | http://www.wowebook.co/?s= | priority:0 description:book
 engin-17 | pmc | http://www.ncbi.nlm.nih.gov/pmc/?term= | priority:0 description:paper
-engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | priority:6 description:paper
+engin-18 | pubmed | http://www.ncbi.nlm.nih.gov/pubmed/?term= | priority:8 description:paper star
 engin-19 | baidu | http://www.baidu.com/s?word= | priority:8 description:all star icon:http://mycroftproject.com/updateos.php/id0/baidujp-video.png
 engin-20 | bing | http://cn.bing.com/search?q= | priority:0 description:all
 engin-21 | academic.r | http://academic.research.microsoft.com/Search?query= | priority:4 description:paper organization people
