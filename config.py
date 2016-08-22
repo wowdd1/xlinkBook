@@ -51,7 +51,7 @@ class Config():
     merger_result = False
     top_row = 0
     old_top_row = 0
-    max_links_row = 9
+    max_links_row = 10
     max_nav_link_row = 11
     max_nav_links_row = 7
     default_links_row = 2    
@@ -68,16 +68,19 @@ class Config():
 
     #default_library = ''
     default_library = 'gene-neuro-virus-library'
+    #default_library = 'health-library'
     #default_library = 'astronomy-library'
     #default_library = 'business-library'
-    #default_library = 'journal-library'
+    #default_library = 'tend-library'
+    #default_library = 'research-tool-library'
     
     background = ''
 
 
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
+		  'cip' : ip_adress + '/?db=other/&key=cip2016&column=2',\
                   'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
-		  'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
+		  #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
 		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=2'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
                   #'library' : ip_adress + '/?db=library/&key=?'}

@@ -225,6 +225,8 @@ class Utils:
         html = ''
         file_list = os.listdir("db/library/")
         for item in file_list:
+            if item.startswith('.'):
+                continue
             if Config.default_library == '' and item.find(user) != -1:
                 continue
             if Config.default_library != '' and item.find(Config.default_library) != -1:
@@ -879,18 +881,22 @@ class Utils:
 
 
     def gen_plugin_content(self, selection, search_box=True):
+        '''
         f = open("web_content/chrome/input", 'w');
         f.write(' | ' + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + '| | ')
         f.close()
         cmd = "./list.py -i web_content/chrome/input -b 4  -c 1  -p -e 'd:star' -n -d "
+        '''
+        cmd = "./list.py -i ' | " + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + " | | ' -b 4  -c 1  -p -e 'd:star' -n -d "
         if search_box == False:
             cmd += ' -x '
+        cmd += " > web_content/chrome/output.html"
         html = subprocess.check_output(cmd, shell=True)
         #print data
         #data = "ddd"
-        f = open('web_content/chrome/output.html', 'w')
-        f.write(html)
-        f.close()
+        #f = open('web_content/chrome/output.html', 'w')
+        #f.write(html)
+        #f.close()
 
         print selection
         if search_box:

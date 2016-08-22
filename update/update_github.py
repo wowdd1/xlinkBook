@@ -665,7 +665,9 @@ class GithubSpider(Spider):
                 'IBM-Bluemix' : 'https://github.com/IBM-Bluemix',\
                 'watson-developer-cloud' : 'https://github.com/watson-developer-cloud',\
                 'Samsung' : 'https://github.com/Samsung',\
-                'nvidia' : 'https://github.com/nvidia'}
+                'nvidia' : 'https://github.com/nvidia',\
+                'macmillanpublishers' : 'https://github.com/macmillanpublishers',\
+                'oreillymedia' : 'https://github.com/oreillymedia'}
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\
                 'nipy' : 'https://github.com/nipy',\
@@ -675,12 +677,14 @@ class GithubSpider(Spider):
 		'AllenInstitute' : 'https://github.com/AllenInstitute',\
 		'ACElab' : 'https://github.com/aces'}
 
-        data_gene = { 'CIDAR-LAB' : 'https://github.com/CIDARLAB',
-                      'Voigt-Lab' : 'https://github.com/VoigtLab'}
+        data_gene = { 'CIDAR-LAB' : 'https://github.com/CIDARLAB',\
+                      'Voigt-Lab' : 'https://github.com/VoigtLab',\
+                      'ENCODE-DCC' : 'https://github.com/ENCODE-DCC'}
 
-        #self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
+
+        self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
         #self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
-        self.getProjectByDict(data_gene, 'biology/projects/github/organization/')
+        #self.getProjectByDict(data_gene, 'biology/projects/github/organization/')
         #self.getStartupPorjects()
 
     def getStartupPorjects(self):

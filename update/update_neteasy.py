@@ -13,13 +13,13 @@ class NetEasySpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = "neteasy"
-        self.subject = "163ocw"
-        self.url = "http://open.163.com/ocw/"
+        self.urls = { '163ocw' : "http://open.163.com/ocw/",\
+                      '163cnocw' : "http://open.163.com/cuvocw/"}
 
-    def process163Data(self, soup):
+    def process163Data(self, soup, subject):
         #if self.need_update_subject(self.subject) == False:
         #    return
-        file_name = self.get_file_name('videos/' + self.subject, self.school)
+        file_name = self.get_file_name('videos/' + subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         for div in soup.find_all("div", class_ = "g-cell1 g-card1"):
@@ -47,10 +47,11 @@ class NetEasySpider(Spider):
 
     def doWork(self):
         print "downloading 163 ocw info"
-        r = requests.get(self.url)
-        soup = BeautifulSoup(r.text)
+        for subject, url in self.urls.items():
+            r = requests.get(url)
+            soup = BeautifulSoup(r.text)
 
-        self.process163Data(soup)
+            self.process163Data(soup, subject)
 
 
 

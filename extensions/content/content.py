@@ -23,6 +23,8 @@ class Content(BaseExtension):
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
+        self.data_dir = 'extensions/content/data/'
+        self.data_type = 'content'
 
     def loadContent(self, rID, name, content):
 	print 'rid :' + rID
@@ -70,7 +72,7 @@ class Content(BaseExtension):
         '''
 
     def getExtensionDataFilePath(self, name):
-        return 'extensions/content/data/' + name + '-content'
+        return self.data_dir + name + '-' + self.data_type
 
     def check(self, form_dict):
         rID = form_dict['rID'].encode('utf8')
@@ -110,7 +112,7 @@ class Content(BaseExtension):
                 pid = r.get_parentid().strip()
                 if self.record_content.has_key(pid) and key.find('-') != -1:
                     pRecord = self.record_content[pid] 
-		    if content_divID.find('content') == content_divID.rfind('content'):
+		    if content_divID.find(self.data_type) == content_divID.rfind(self.data_type):
                         format_index = str(count)
 		    else:
                         format_index = pid[pid.rfind('-') + 1 :] + '.' + str(count)
@@ -120,7 +122,7 @@ class Content(BaseExtension):
 		    format_index = format_index[format_index.find('-') + 1 :]
 
                 html += '<li><span>' + format_index + '</span>'
-                if len(format_index) > 4:
+                if len(format_index) > 5:
                     html += '</li><br/><li>'
                 
                 content_divID += '-' + str(count)

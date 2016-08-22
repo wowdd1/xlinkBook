@@ -208,6 +208,8 @@ function navTopic(obj, divID, parentDivID, countIndex){
                  console.log('return', data);
                  if (data == "" || (obj.text == "save" && data.indexOf("sucess") != -1)) {
                      obj.style.display="none";
+                 } else if (data == "refresh"){
+                     window.location.href = window.location.href;
                  } else if (data.indexOf("http") == 0){
                      //window.location.href = data;
                      window.open(data);
