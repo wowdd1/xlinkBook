@@ -9,7 +9,7 @@ class ProjectPaperSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.utils = Utils()
-        self.school = "project-papers"
+        self.school = "papers/project-papers"
 
     def doWork(self):
         '''
