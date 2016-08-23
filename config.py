@@ -77,7 +77,7 @@ class Config():
     background = ''
 
 
-    fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
+    fav_links = { 'papers' : ip_adress + '/?db=eecs/papers/&key=?',\
 		  'cip' : ip_adress + '/?db=other/&key=cip2016&column=2',\
                   'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
 		  #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\

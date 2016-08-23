@@ -102,7 +102,10 @@ class CourseraSpider(Spider):
         count = 0
 
         for courseObj in jobj.items()[0][1]:
-            url, active = self.getSessionLinkAndStatus(courseObj['links']['sessions'], courseObj['shortName'])
+            url = ''
+            active = ''
+            if courseObj['links'].has_key('sessions'):
+                url, active = self.getSessionLinkAndStatus(courseObj['links']['sessions'], courseObj['shortName'])
             remark = ""
             session_id = ""
             if active == True:
