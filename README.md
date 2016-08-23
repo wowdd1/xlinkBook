@@ -11,7 +11,7 @@ goal:
 
 philosophy:
 
-    divide abstract connect and open work
+    divide abstract connect and diversity
 
 install:
 
