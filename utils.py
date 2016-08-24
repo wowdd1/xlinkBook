@@ -369,10 +369,13 @@ class Utils:
         engins = []
         if folder.find('papers') != -1:
             engins = self.realGetEnginList(['paper'], self.search_engin_dict.values())
-        if folder.find('projects') != -1:
+        elif folder.find('projects') != -1:
             engins = self.realGetEnginList(['project'], self.search_engin_dict.values())
-        if folder.find('video') != -1:
+        elif folder.find('video') != -1:
             engins = self.realGetEnginList(['video'], self.search_engin_dict.values())
+        elif folder.find('neuro') != -1 or folder.find('biology') != -1:
+            engins = self.realGetEnginList(['biostars', 'neurostars', 'youtube', 'google', 'baidu', 'gene', 'pubmed', 'ebi', 'gen.lib', 'amazon'], self.search_engin_dict.values(), match_title=True)
+
         if len(engins) == 0:
             return self.realGetEnginList(['star'], self.search_engin_dict.values())
         else:
@@ -398,15 +401,23 @@ class Utils:
         else:
             return engins.split(' ')
 
-    def realGetEnginList(self, tags, records):
+    def realGetEnginList(self, tags, records, match_title=False):
         engin_list = []
+        if len(tags) == 0:
+            return engin_list
         for record in records:
-            desc = record.get_description().strip()
-            desc = desc[desc.find(':') + 1 :].strip()
-            for tag in tags:
-                if desc.find(tag) != -1:
-                    engin = record.get_title().strip()
-                    engin_list.append(record.get_title().strip())
+            if match_title:
+                engin = record.get_title().strip()
+                str_tags = ' ' + ' '.join(tags) + ' '
+                if str_tags.find(' ' + engin + ' ') != -1:
+                    engin_list.append(engin)
+            else:
+                desc = record.get_description().strip()
+                desc = desc[desc.find(':') + 1 :].strip()
+                for tag in tags:
+                    if desc.find(tag) != -1:
+                        #engin = record.get_title().strip()
+                        engin_list.append(record.get_title().strip())
         return engin_list
 
     def getDDGEnginList(self, tags):
