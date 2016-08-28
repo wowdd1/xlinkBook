@@ -171,8 +171,8 @@ class Spider:
     
     
     def write_db(self, f, course_num, course_name, url, describe=""):
-        if url == "":
-            url = self.google + course_num + " " + course_name
+        #if url == "":
+        #    url = self.google + course_num + " " + course_name
         if self.category != '' and describe.find('category:') == -1:
             describe += ' category:' + self.category 
 

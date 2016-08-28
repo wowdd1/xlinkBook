@@ -134,7 +134,7 @@ class Content(BaseExtension):
                     if r.get_url().strip() != '':
                         html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
                     else:
-                        html += '<p>' + self.formatTitle(r.get_title().strip())
+                        html += '<p>' + self.utils.toSmartLink(r.get_title().strip(), 45)
                     #html += self.utils.getDefaultEnginHtml(title, defaultLinks)
                     if moreHtml != "":
                         html += moreHtml
@@ -148,15 +148,6 @@ class Content(BaseExtension):
         html += "</ol></div>"
         return html
 
-    def formatTitle(self, title):
-        if len(title) > 45:
-            at = title.find(' ', 45)
-            if at != -1:
-                return title[0 : at] + '<br>' + self.formatTitle(title[at:])
-            else:
-                return title
-        else:
-            return title
 
     def genMetadataLink(self, title, url):
         if url.find('[') != -1:
@@ -172,5 +163,5 @@ class Content(BaseExtension):
         if title.find('<a>') != -1:
             title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
         else:
-            title = '<a target="_blank" href="' + url + '">' + self.formatTitle(title) + '</a>'
+            title = '<a target="_blank" href="' + url + '">' + self.utils.formatTitle(title, 45) + '</a>'
         return title

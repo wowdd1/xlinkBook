@@ -81,5 +81,23 @@ class ColumbiaSpider(Spider):
 
         print 'ok'
 
+    def neurosciencephd(self):
+        r = requests.get('http://www.neurosciencephd.columbia.edu/course-listing')
+        soup = BeautifulSoup(r.text)
+        for tr in soup.find_all('tr'):
+            if tr.text.find('Department') == -1:
+                count = 0
+                title = ''
+                i = ''
+                for item in tr.text.strip().split('\n'):
+                    if item.strip() != '':
+                        count += 1
+                        if count == 1:
+                            title =  item.strip()
+                        if count == 3:
+                            i =  item.strip()
+                        if count == 8:
+                            print i + ' | ' + title + ' | | instructors:' + item.strip()
+
 start = ColumbiaSpider()
 start.doWork()

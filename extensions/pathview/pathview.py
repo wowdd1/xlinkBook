@@ -14,7 +14,8 @@ class Pathview(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         column = form_dict['column']
         url = form_dict['url'].encode('utf8')
-        if fileName.endswith('-library') and url.find(Config.ip_adress) != -1:
+        #if fileName.endswith('-library') and url.find(Config.ip_adress) != -1:
+        if url.find(Config.ip_adress) != -1:
             fileName = url[url.find('db=') + 3 :]
             fileName = 'db/' + fileName
             fileName = fileName.replace('&key=', '')
@@ -22,7 +23,7 @@ class Pathview(BaseExtension):
                 fileName = fileName[0 : fileName.find('&')]
             print fileName
         if fileName.find('db/') != -1:
-            width = '525'
+            width = '530'
             height = '600'
             if column == '1':
                 width = '1300'

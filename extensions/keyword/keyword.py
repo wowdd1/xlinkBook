@@ -40,7 +40,7 @@ class Keyword(BaseExtension):
                 script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), k, '', '-')
                 print k
                 html += '<li><span>' + str(count) + '.</span>'
-                html += '<p>' + k
+                html += '<p>' + self.utils.toSmartLink(k)
                 if script != '':
                     html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
                 html +='</p></li>'

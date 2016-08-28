@@ -4,10 +4,12 @@ define:
 
 goal:
 
-    1. putting the pieces together(research what) 
-    2. sync the state of art knowage(20% -> 80%), build tools process data
-    3. explore data and flow(micro -> macro, structural -> function)
-    4. program the flow(structural -> algorithm)
+    0. scan data, extract information
+    1. putting the pieces together(research what, plan) 
+    2. sync the state of art knowage(20% -> 80%)
+    3. invention tools，discover theory
+    4. explore data and flow(micro -> macro, structural -> function)
+    5. program the flow(structural -> algorithm), build editor
 
 philosophy:
 

@@ -12,7 +12,7 @@ class Exclusive(BaseExtension):
         #    fileName = form_dict['fileName']
 	db = fileName[fileName.find('db/') + 3 : fileName.rfind('/')] + '/'
 	key = fileName[fileName.rfind('/') + 1 :]
-	return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + filter + '&column=1'
+	return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + filter.replace('...', '') + '&column=1'
 
 
     def check(self, form_dict):

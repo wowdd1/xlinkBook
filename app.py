@@ -44,6 +44,10 @@ def index():
 	if key == 'c':
 	    key += '#-github2016'
         key = key.replace('  ', '++')
+    key = key.replace(' ', '+')
+
+    if key.find('+') != -1 and key.find('++') == -1:
+        key = '+' + key
 
     key = key.strip()
     if db == '':
