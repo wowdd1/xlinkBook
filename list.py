@@ -562,7 +562,7 @@ def build_lines(list_all, file_name):
                 if url.strip() != '':
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
                 else:
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip()
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip())
                 if engin != '':
                     engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())  #, '#33EE22')
                     #print engin_list_dict
@@ -845,7 +845,23 @@ def gen_html_body_v2(content, row, subRow):
 def smartLink(content):
     if content.strip().startswith('path:'):
         src = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=' + content[content.rfind('/') + 1 : ] + '&column=2'
-        return '<a target="_blank" href="' + src + '">' + content + "</a>"
+        folder = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=?'
+        alt = content[content.find('db') :]
+        return content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="http://www.iconeasy.com/icon/ico/System/Stainless/document.ico" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
+    elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:'):
+        instructors = content[content.find(':') + 1 :].strip()
+        html = ''
+        if instructors.find(',') != -1:
+            instructors = instructors.split(',')
+            for i in instructors:
+                if i != instructors[len(instructors) - 1]:
+                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>,&nbsp;'
+                else:
+                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>'
+        else:
+            html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(instructors.strip()) + '">' + instructors + '</a>'
+        return content[ 0 : content.find(':') + 1 ] + html
+
     else:
         return content
 
@@ -1321,15 +1337,28 @@ def notIncludeFile(item, fileNameNotContain):
         return True
     return False
 
+def includeFile(item, fileNameFilter):
+    #print item + ' ' + fileNameFilter
+    if fileNameFilter.find('+') != -1:
+        result = False
+        for ft in fileNameFilter.split('+'):
+            if ft != '' and item.find(ft) != -1:
+                return True
+        return result
+    else:
+        return item.find(fileNameFilter) != -1
+
 def get_lines_from_dir(dir_name, fileNameFilter = ''):
     global current_level
+    #print fileNameFilter
     current_level += 1
     cur_list = os.listdir(dir_name)
     all_lines = []
     fileNameNotContain = ''
-    if fileNameFilter.find('-') != -1:
-        fileNameNotContain = fileNameFilter[fileNameFilter.find('-') + 1 :]
-        fileNameFilter = fileNameFilter[0 : fileNameFilter.find('-')]
+    if fileNameFilter.find('#-') != -1:
+        fileNameNotContain = fileNameFilter[fileNameFilter.find('#-') + 2 :]
+        fileNameFilter = fileNameFilter[0 : fileNameFilter.find('#-')]
+
     if filter_keyword != '':
         if filter_keyword.find(':') != -1:
             cur_list = utils.find_file_by_pattern(filter_keyword[filter_keyword.find(':') + 1 :], os.getcwd() + '/' + dir_name)
@@ -1340,7 +1369,7 @@ def get_lines_from_dir(dir_name, fileNameFilter = ''):
     for item in cur_list:
         if item.startswith("."):
             continue
-        if fileNameFilter != '' and item.find(fileNameFilter) == -1:
+        if fileNameFilter != '' and includeFile(item, fileNameFilter) == False:
             continue
         if fileNameNotContain != "" and notIncludeFile(item, fileNameNotContain):
             continue
@@ -1500,8 +1529,7 @@ def main(argv):
         dirName = split[0]
         if dirName.startswith('db') == False:
             dirName = 'db/' + dirName
-        if len(split) == 2:
-            print_list(get_lines_from_dir(dirName, split[1]))
+        print_list(get_lines_from_dir(dirName, source[source.find('+') + 1 :]))
 
 if __name__ == '__main__':
     main(sys.argv)

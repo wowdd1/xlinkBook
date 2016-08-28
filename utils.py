@@ -529,6 +529,45 @@ class Utils:
         result += '<div id="' + divid + '-data" style="border-radius: 10px 10px 10px 10px;"></div>'
         return result
 
+
+    def bestMatchEngin(self, text):
+        return self.getEnginUrl(Config.smart_link_engin)
+
+    def bestMatchEnginUrl(self, text):
+        url = self.bestMatchEngin(text)
+        return self.toQueryUrl(url, text)
+
+    def toQueryUrl(self, url, text):
+        query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
+        if url.find('%s') != -1:
+            url = url.replace('%s', query_text)
+        else:
+            url += query_text
+        return url
+
+
+    def toSmartLink(self, text, br_number=80, engin=''):
+        if text != '':
+            url = ''
+            if engin != '':
+                url = self.toQueryUrl(self.getEnginUrl(engin.strip()), text)
+            else:
+                url = self.bestMatchEnginUrl(text)
+
+            return '<a target="_blank" href="' + url + '">' + self.formatTitle(text, br_number) + '</a>'
+
+        return text
+
+    def formatTitle(self, title, br_number):
+        if len(title) > br_number:
+            at = title.find(' ', br_number)
+            if at != -1:
+                return title[0 : at] + '<br>' + self.formatTitle(title[at:], br_number)
+            else:
+                return title
+        else:
+            return title
+
     def priority2fontsize(self, engin, priority, baseFontSize):
         if priority.strip() == '':
             return baseFontSize
