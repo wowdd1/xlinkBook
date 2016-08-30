@@ -84,6 +84,7 @@ class Tag():
         self.tag_id = "id:"
         self.tag_videourl = 'videourl:'
         self.tag_author = 'author:'
+        self.tag_winner = "winner:"
         self.tag_ratings = 'ratings:'
         self.tag_term = 'term:'
         self.tag_prereq = 'prereq:'
@@ -114,7 +115,7 @@ class Tag():
         self.tag_path = "path:"
         self.tag_icon = "icon:"
 
-        self.tag_list = [self.tag_id, self.tag_videourl, self.tag_author, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
+        self.tag_list = [self.tag_id, self.tag_videourl, self.tag_author, self.tag_winner, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
                          self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon]
 

@@ -4,7 +4,7 @@ from extensions.bas_extension import BaseExtension
 from utils import Utils
 from config import Config
 
-class Pathview(BaseExtension):
+class Pathways(BaseExtension):
 
     def __init__(self):
 	BaseExtension.__init__(self)

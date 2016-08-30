@@ -224,6 +224,7 @@ class Utils:
     def gen_libary2(self, user):
         html = ''
         file_list = os.listdir("db/library/")
+        count = 0
         for item in file_list:
             if item.startswith('.'):
                 continue
@@ -231,10 +232,14 @@ class Utils:
                 continue
             if Config.default_library != '' and item.find(Config.default_library) != -1:
                 continue
+            count += 1
             f = open('db/library/' + item)
             lines = len(f.readlines())
             f.close()
             html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=77">' + item.replace('-library', '') + '(' + str(lines) + ')</a>&nbsp;'
+            if count > 5 :
+                count = 0
+                #html += '<br/>' #need adjust config content_margin_top
         return html
         
 

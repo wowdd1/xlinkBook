@@ -497,3 +497,5 @@ engin-504 | addgene | https://www.addgene.org/search/advanced/?q= | priority:0 d
 engin-505 | neuinfo | https://neuinfo.org/data/search?q=%s&l=%s | priority:5 description:data
 engin-506 | vimeo | https://vimeo.com/search?q= | priority:6 description:video
 engin-507 | ebi | http://www.ebi.ac.uk/ebisearch/search.ebi?query=%s&submit1=1&db=allebi&requestFrom=ebi_index | priority:6 description:dataset
+engin-508 | qkankan | http://www.qkankan.com/index.html?q= | priority:6 description:website
+engin-509 | openaire | https://www.openaire.eu/search/find?keyword= | priority:4 description:paper project dataset

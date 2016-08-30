@@ -15,6 +15,230 @@ class BaikeSpider(Spider):
         self.subject = 'rank'
         self.school = "baike"
 
+
+    def processNobelprize(self):
+        subjects = ['physics', 'chemistry', 'medicine', 'literature', 'peace', 'economic-sciences']
+
+        for subject in subjects:
+
+            file_name = self.get_file_name(self.subject + "/nobel/" + subject, 'nobel')
+            file_lines = self.countFileLineNum(file_name)
+            f = self.open_db(file_name + ".tmp")
+            self.count = 0
+
+            r = requests.get('http://www.nobelprize.org/nobel_prizes/' + subject + '/laureates/')
+            soup = BeautifulSoup(r.text)
+            for div in soup.find_all('div', class_='by_year'):
+                if div.h3 == None or div.h6 == None or div.p == None:
+                    continue
+                year = div.h3.text.strip()
+                year = year[year.rfind(' ') :].strip()
+                print year
+                soup2 = BeautifulSoup(div.prettify())
+                author = ""
+                desc = ""
+                for a in soup2.find_all('a'):
+                    if a['href'].find('html') == -1:
+                        continue
+                    author += a.text.strip() + ', '
+                for p in soup2.find_all('p'):
+                    if p.text.strip() == "":
+                        continue
+                    desc += p.text.strip().replace('\n', '').replace('"', '') + ", "
+                author = author[0 : len(author) - 2]
+                desc = desc[0 : len(desc) - 2]
+                #print div.h6.text.strip().replace(' and', ',')
+                #print div.p.text.strip().replace('\n', '').replace('"', '')
+                self.count += 1
+                self.write_db(f, 'nobel-' + subject + '-' + year, year + ' ' + author, 'http://www.nobelprize.org' + div.a['href'], 'winner:' + author + " description:" + desc)
+
+            self.close_db(f)
+            if file_lines != self.count and self.count > 0:
+                self.do_upgrade_db(file_name)
+                print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+            else:
+                self.cancel_upgrade(file_name)
+                print "no need upgrade\n"
+
+    def processFieldsMedal(self, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        desc = ''
+        winner = ''
+        year = ''
+        file_name = self.get_file_name(self.subject + "/fieldsmedal", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for tr in soup.find_all('tr'):
+            data = tr.text.split('\n')
+            id = data[1].strip()
+            if tr.td != None and tr.td.text.find('University') != -1:
+                break
+            soup2 = BeautifulSoup(tr.prettify())
+            if id.isdigit():
+                if data[3] == 'Awarded for' or data[len(data) - 2] == 'Presented by':
+                    continue
+                if desc != '':
+                    print winner[0 : len(winner) - 2]
+                    print desc[0 : len(desc) - 2]
+                    print ''
+
+                    self.count += 1
+                    self.write_db(f, "fieldsmedal-" + year, year + ' ' + winner[0 : len(winner) - 2], '', 'winner:' + winner[0 : len(winner) - 2] + ' description:' + desc[0 : len(desc) - 2])
+
+                    winner = ''
+                    desc = ''
+                    year = ''
+                #print data[1] + ' ' + data[3]
+                year = id
+                winner += data[3] + ', '
+                desc += data[3] + ':' + data[len(data) - 2].replace('\n', '').replace('"', '') + ' ' 
+                continue 
+            if (tr.td != None and tr.td.a != None and tr.td.a.has_key('title')):
+                #print data[1]
+                if data[1] == 'Awarded for' or tr.text.find('Presented by') != -1:
+                    continue
+                winner += data[1] + ', '
+                desc += data[1] + ':' + data[len(data) - 2].replace('\n', '').replace('"', '') + ' '
+
+        if desc != '':
+            self.count += 1
+            self.write_db(f, "fieldsmedal-" + year, year + ' ' + winner[0 : len(winner) - 2], '', 'winner:' + winner[0 : len(winner) - 2] + ' description:' + desc[0 : len(desc) - 2])
+
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+    def processWolfPrizeMathematics(self, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+        desc = ""
+        year = ''
+        winner = ''
+
+        file_name = self.get_file_name(self.subject + "/wolfprize-mathematics", self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for tr in soup.find_all('tr'):
+            data = tr.text.split('\n')
+            #print data
+            if data[2].find('No award') != -1 or data[1].find('Year') != -1 or data[1].find('Citation') != -1:
+                continue
+            if data[1] == '':
+                break
+            if data[1].startswith('1') or data[1].startswith('2'):
+                if desc != '':
+                    winner = winner[0 : len(winner) - 2]
+                    desc = desc.strip()
+                    print year + ' ' +  winner
+                    print desc
+                    self.count += 1
+                    self.write_db(f, 'wolfprize-math-' + year, year + ' ' + winner, '', 'winner:' + winner + ' description:' + desc)
+                    year = ''
+                    winner = ''
+                    desc = ''
+                year = data[1].strip()
+                winner += data[2].strip() + ', ' 
+                desc += data[2].strip() + ':' + data[len(data) - 2].strip() + ' '
+            else:
+                winner += data[1].strip() + ', '
+                desc += data[2].strip() + ':' + data[len(data) - 2].strip() + ' '
+        if desc != '':
+            winner = winner[0 : len(winner) - 2]
+            desc = desc.strip()
+            print year + ' ' +  winner
+            print desc
+            self.count += 1
+            self.write_db(f, 'wolfprize-math-' + year, year + ' ' + winner, '', 'winner:' + winner + ' description:' + desc)
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+    def processBreakthroughPrize(self):
+        data = {'1' : 'Fundamental-Physics',\
+                '2' : 'Life-Sciences',\
+                '3' : 'Mathematics'}
+
+        for k, v in data.items():
+            data2 = None
+            if k == '1':
+                data2 = {'P4' : 'Special-Breakthrough-Prize',\
+                         'P2' : 'New-Horizons-Prize',\
+                         'P3' : 'Physics-Frontiers-Prize',\
+                         'P1' : 'Breakthrough-Prize'}
+
+            elif k == '2':
+                data2 = { 'P1' : 'Breakthrough-Prize'}
+            elif k == '3':
+                data2 = { 'P1' : 'Breakthrough-Prize',\
+                          'P2' : 'New-Horizons-Prize'}
+            oldv = v
+            for k2, v2 in data2.items():
+                v = oldv
+                v = v + '-' + v2
+                r = requests.get('https://breakthroughprize.org/Laureates/' + k + '/' + k2)
+                soup = BeautifulSoup(r.text)
+                ul = None
+                for u in soup.find_all('ul', class_='filter'):
+                    if u.li.text.strip().startswith('20'):
+                        ul = u
+                        break
+                soup2 = BeautifulSoup(ul.prettify())
+                years = []
+                for li in soup2.find_all('li'):
+                    years.append(li.text.strip())
+
+                file_name = self.get_file_name(self.subject + "/breakthroughprize/" + v.lower(), 'breakthroughprize')
+                file_lines = self.countFileLineNum(file_name)
+                f = self.open_db(file_name + ".tmp")
+                self.count = 0
+
+
+                for year in years:
+                    url = 'https://breakthroughprize.org/Laureates/' + k +'/' + k2 + '/Y' + year
+                    r = requests.get(url)
+                    soup = BeautifulSoup(r.text)
+                    ul = None
+                    for u in soup.find_all('ul', class_='people'):
+                        if u.li != None and u.li.span != None:
+                            ul = u
+                            break
+                    soup2 = BeautifulSoup(ul.prettify())
+                    winner = ''
+                    for li in soup2.find_all('li'):
+                        #print li.prettify()
+                        title = li.span.a.text.strip()
+                        if title.find('and the') != -1:
+                            title = title[0 : title.find('and the')]
+
+                        winner += title.strip() + ', '
+                    winner = winner[0 : len(winner) - 2]
+                    print winner
+                    self.count += 1
+                    self.write_db(f, 'breakthroughprize-' + v.lower() + '-' + year, year + ' ' + winner, url, 'winner:' + winner)
+                
+                self.close_db(f)
+                if file_lines != self.count and self.count > 0:
+                    self.do_upgrade_db(file_name)
+                    print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+                else:
+                    self.cancel_upgrade(file_name)
+                    print "no need upgrade\n"
+
+
     def processBaikeData(self, url):
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
@@ -71,9 +295,9 @@ class BaikeSpider(Spider):
                     if line.startswith("For") or len(line) > 50:
                         #if i != 3:
                         print year + " " + title + " " + link
-                        remark = 'description:' + line
+                        remark = 'winner:' + title.strip().replace(' and', ',')+ ' description:' + line
                         self.count += 1
-                        self.write_db(f, year, title.strip(), link, remark)
+                        self.write_db(f, 'turing-' + year, year + ' ' + title.strip(), link, remark)
                         i = 0
                         continue
 
@@ -487,7 +711,12 @@ class BaikeSpider(Spider):
             print "no need upgrade\n"
 
     def doWork(self):
-        self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
+        self.processNobelprize()
+        #self.processFieldsMedal('https://en.wikipedia.org/wiki/Fields_Medal')
+        #self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
+        #self.processBreakthroughPrize()
+        #self.processWolfPrizeMathematics('https://en.wikipedia.org/wiki/Wolf_Prize_in_Mathematics')
+        '''
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
         self.processBaikeData("http://www.baike.com/wiki/IT%E4%B8%9A%E6%9C%80%E5%85%B7%E5%BD%B1%E5%93%8D%E5%8A%9B%E7%9A%84284%E4%BD%8D%E7%A8%8B%E5%BA%8F%E5%91%98")
         self.processComputerScienceData('http://web.cs.ucla.edu/~palsberg/h-number.html')
@@ -501,6 +730,7 @@ class BaikeSpider(Spider):
         self.startupSpeakers()
         self.processBloomberg('http://www.livemint.com/Politics/TGX2iczPnC5ofl2WKQR7FN/Narendra-Modi-in-Bloomberg-Markets-50-Most-Influential-list.html')
         self.processWatermanAward('https://en.wikipedia.org/wiki/Alan_T._Waterman_Award')
+        '''
 
 start = BaikeSpider()
 start.doWork()

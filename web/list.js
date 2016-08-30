@@ -213,6 +213,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
                  } else if (data.indexOf("http") == 0){
                      //window.location.href = data;
                      window.open(data);
+		     $("#" + target_data_id).html('---------------<br>&nbsp;&nbsp;<a target="_blank" href="' + data + '">target link</a><br>---------------');
                  }
                  clearInterval(loadAnimID);
                  MathJax.Hub.Queue(["Typeset", MathJax.Hub, targetid]);

@@ -667,7 +667,8 @@ class GithubSpider(Spider):
                 'Samsung' : 'https://github.com/Samsung',\
                 'nvidia' : 'https://github.com/nvidia',\
                 'macmillanpublishers' : 'https://github.com/macmillanpublishers',\
-                'oreillymedia' : 'https://github.com/oreillymedia'}
+                'oreillymedia' : 'https://github.com/oreillymedia',\
+                'usgs' : 'https://github.com/usgs'}
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\
                 'nipy' : 'https://github.com/nipy',\

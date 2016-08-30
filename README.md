@@ -13,7 +13,7 @@ goal:
 
 philosophy:
 
-    divide abstract connect and diversity
+    divide abstract connect diversity and difference
 
 install:
 

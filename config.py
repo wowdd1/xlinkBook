@@ -7,11 +7,12 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    smart_link_engin = 'google'
+    smart_link_engin = 'amazon'
 
     #default_library = ''
     default_library = 'gene-neuro-virus-library'
     #default_library = 'health-library'
+    #default_library = 'defense-library'
     #default_library = 'astronomy-library'
     #default_library = 'business-library'
     #default_library = 'tend-library'
@@ -37,6 +38,7 @@ class Config():
     center_content = False
     
     content_margin_left = '15px'
+    content_margin_top = '10px'
     split_height = '2px'
 
     #do not show nav links, only show extension links
@@ -80,11 +82,12 @@ class Config():
     background = ''
 
     fav_links = { 'papers' : ip_adress + '/?db=eecs/papers/&key=?',\
-		  'cip' : ip_adress + '/?db=other/&key=cip2016&column=2',\
+		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
                   'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
 		  #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
                   'rss' : ip_adress + '/?db=rss/&key=rss2016',\
-		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=2'}
+                  #'rank' : ip_adress + '/?db=rank/&key=?',\
+		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=3'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
                   #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
