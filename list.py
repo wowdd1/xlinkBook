@@ -380,11 +380,14 @@ def genEnginOption(selectid):
     option = ''
     engin_list = utils.getAllEnginList()
     option = '<select id="' + selectid +'">'
+    if Config.smart_link_engin != '':
+        option += '<option value ="' + utils.getEnginUrl(Config.smart_link_engin) + '">' + Config.smart_link_engin + '</option>'
+        
     if plugins_mode == False:
         option += '<option value ="current">current</option>'
     option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
     for e in engin_list:
-        if e == "google":
+        if e == "google" or e == Config.smart_link_engin:
             continue
         option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
     option += '</select>'
@@ -848,7 +851,7 @@ def smartLink(content):
         folder = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=?'
         alt = content[content.find('db') :]
         return content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="http://www.iconeasy.com/icon/ico/System/Stainless/document.ico" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
-    elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:'):
+    elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         instructors = content[content.find(':') + 1 :].strip()
         html = ''
         if instructors.find(',') != -1:
@@ -914,7 +917,7 @@ def print_table_head_with_style():
                 print '<body style="background-image:url(' + Config.background + ')">'
             else:
                 print '<body>'
-    center_style += 'margin-left:' + Config.content_margin_left + ';'
+    center_style += 'margin-left:' + Config.content_margin_left + '; margin-top:' + Config.content_margin_top + ';'
     center_style += '"'
     if loadmore_mode == False:
         print_search_box(search_box_hiden)

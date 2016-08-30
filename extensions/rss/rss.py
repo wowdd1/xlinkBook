@@ -28,7 +28,7 @@ class Rss(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
 
-        return fileName.find('rss/') != -1
+        return fileName.find('rss/') != -1 and rID.startswith('loop') == False
 
 
 
