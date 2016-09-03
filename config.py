@@ -10,12 +10,13 @@ class Config():
     smart_link_engin = 'amazon'
 
     #default_library = ''
-    default_library = 'gene-neuro-virus-library'
+    default_library = 'gene-neuro-cognitive-library'
     #default_library = 'health-library'
+    #default_library = 'energy-library'
     #default_library = 'defense-library'
-    #default_library = 'astronomy-library'
+    #default_library = 'universe-library'
     #default_library = 'business-library'
-    #default_library = 'tend-library'
+    #default_library = 'frontier-library'
     #default_library = 'research-tool-library'
 
     #show random preview when click nav link
@@ -32,6 +33,7 @@ class Config():
     disable_reference_image = False 
    
     hiden_record_id = True
+    hiden_record_id_commandline = False
 
     hiden_engins = True
     

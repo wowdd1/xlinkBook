@@ -29,7 +29,6 @@ id | DeepMind | https://www.youtube.com/channel/UCP7jMXSY2xbc3KCAE0MHQ-A/videos 
 id | Nvidia | https://www.youtube.com/user/nvidia/videos | 
 id | BostonDynamics | https://www.youtube.com/user/BostonDynamics/videos | 
 id | TwitterDev | https://www.youtube.com/channel/UCcRd4oOOUPKAvg6vs2P9ReA/videos | 
-id | nasa | https://www.youtube.com/user/NASAtelevision/videos | 
 id | Watson | https://www.youtube.com/user/IBMWatsonSolutions/videos | 
 id | IBM | https://www.youtube.com/user/IBM/videos | 
 id | cvprtum | https://www.youtube.com/user/cvprtum/videos | 
@@ -77,6 +76,7 @@ id | iBioEducation | https://www.youtube.com/user/iBioEducation/videos |
 id | tedx | https://www.youtube.com/user/TEDxTalks/videos | 
 id | ted | https://www.youtube.com/user/TEDtalksDirector/videos | 
 id | ted-ed | https://www.youtube.com/user/TEDEducation/videos |
+id | Big Think | https://www.youtube.com/user/bigthink/videos | 
 id | CodeNeuro | https://www.youtube.com/channel/UCZqlliYGopB9zved7pJTi_A/videos | 
 id | thebrainforum | https://www.youtube.com/user/thebrainforum/videos | 
 id | INCF | https://www.youtube.com/user/INCForg/videos | 
@@ -92,17 +92,39 @@ id | NeuroInfoFramework | https://www.youtube.com/user/NeuroInfoFramework/videos
 id | TheHumanBrainProject | https://www.youtube.com/user/TheHumanBrainProject/videos |
 id | 2045Initiative | https://www.youtube.com/user/2045ru/videos |
 id | Blue Brain Project - EPFL | https://www.youtube.com/user/Bluebrainpjt/videos |
-id | The White House BRAIN Initiative | https://www.youtube.com/user/whitehouse/videos |
+id | The White House | https://www.youtube.com/user/whitehouse/videos |
+id | Central Intelligence Agency | https://www.youtube.com/user/ciagov/videos |
+id | U.S. Department of Homeland Security | https://www.youtube.com/user/ushomelandsecurity/videos |
+id | U.S. Department of State | https://www.youtube.com/user/statevideo/videos |
+id | United States Department of Labor | https://www.youtube.com/user/USDepartmentofLabor/videos |
+id | Department of Defense | https://www.youtube.com/user/DODvClips/videos |
+id | USA.gov | https://www.youtube.com/user/USGovernment/videos | 
+id | fbi | https://www.youtube.com/user/fbi/videos |
+id | U.S. Navy | https://www.youtube.com/user/usnavy/videos |
+id | U.S. Department of Education | https://www.youtube.com/user/usedgov/videos |
+id | U.S. Department of the Treasury | https://www.youtube.com/user/USTreasGov/videos |
+id | USPTOvideo | https://www.youtube.com/user/USPTOvideo/videos |
+id | IRSvideos | https://www.youtube.com/user/irsvideos/videos |
+id | Centers for Disease Control and Prevention (CDC) | https://www.youtube.com/user/CDCStreamingHealth/videos |
+id | noaa | https://www.youtube.com/user/noaa/videos |
+id | USGS | https://www.youtube.com/user/usgs/videos | 
+id | United Nations | https://www.youtube.com/user/unitednations/videos |
+id | LibraryOfCongress | https://www.youtube.com/user/LibraryOfCongress/videos |
+id | uscensusbureau | https://www.youtube.com/user/uscensusbureau/videos |
 id | National Institutes of Health | https://www.youtube.com/user/IRPNIH/videos |
 id | NIHOD | https://www.youtube.com/user/NIHOD/videos | 
 id | NIHGenome | https://www.youtube.com/user/GenomeTV/videos | 
 id | NIMHgov | https://www.youtube.com/user/NIMHgov/videos | 
 id | NSF | https://www.youtube.com/user/VideosatNSF/videos | 
 id | NSFbraininitiative | https://www.youtube.com/user/NSFbraininitiative/videos | 
+id | nasa | https://www.youtube.com/user/NASAtelevision/videos | 
 id | DARPA | https://www.youtube.com/user/DARPAtv/videos | 
 id | The Intelligence Advanced Research Projects Activity | | 
 id | FDA | https://www.youtube.com/user/USFoodandDrugAdmin/videos | 
 id | DOE | https://www.youtube.com/user/USdepartmentofenergy/videos | 
+id | National Academy of Sciences | https://www.youtube.com/user/theNASciences/videos |
+id | National Academy of Engineering | https://www.youtube.com/channel/UCDgsHhqf6a2IC9LT5hbUxpA/videos |
+id | The National Academies of Sciences, Engineering, and Medicine | https://www.youtube.com/user/nationalacademies/videos |
 id | National Photonics Initiative | https://www.youtube.com/channel/UCtJjKunZrMEbLqLud3JUs9w/videos?view=0&sort=dd&shelf_id=0 |
 id | Gatsby Charitable Foundation | https://www.youtube.com/user/TheGatsbyCF/videos |
 id | SimonsFoundation | https://www.youtube.com/user/SimonsFoundation/videos | 
@@ -138,12 +160,8 @@ id | Ripple | https://www.youtube.com/user/ripplevideo1/videos |
 id | Second Sight | https://www.youtube.com/user/SecondSightTV/videos |
 id | World Health Organization | https://www.youtube.com/user/who/videos |
 id | WTO | https://www.youtube.com/user/WTO/videos |
-id | United Nations | https://www.youtube.com/user/unitednations/videos |
-id | The National Academies of Sciences, Engineering, and Medicine | https://www.youtube.com/user/nationalacademies/videos |
 id | CPNAS | https://www.youtube.com/user/CPNAS/videos |
 id | Distinctive Voices | https://www.youtube.com/user/DistinctiveVoicesBC/videos |
-id | National Academy of Sciences | https://www.youtube.com/user/theNASciences/videos |
-id | National Academy of Engineering | https://www.youtube.com/channel/UCDgsHhqf6a2IC9LT5hbUxpA/videos |
 id | NASEM Health and Medicine Division | https://www.youtube.com/user/instituteofmedicine/videos |
 id | The Scripps Research Institute | https://www.youtube.com/user/ScrippsResearch/videos |
 id | CSHL | https://www.youtube.com/user/ColdSpringHarborLab/videos |
@@ -157,7 +175,6 @@ id | Two Minute Papers | https://www.youtube.com/user/keeroyz/videos |
 id | CIDAR LAB | https://www.youtube.com/user/cidarlab/videos | 
 id | imec | https://www.youtube.com/user/imecnanotube/videos |
 id | SENS Foundation | https://www.youtube.com/user/SENSFVideo/videos |
-id | LibraryOfCongress | https://www.youtube.com/user/LibraryOfCongress/videos |
 id | The British Library | https://www.youtube.com/user/britishlibrary/videos |
 id | The New York Public Library | https://www.youtube.com/user/NewYorkPublicLibrary |
 id | Российская государственная библиотека | https://www.youtube.com/user/rgubru/videos |
@@ -168,4 +185,5 @@ id | National Library of China | |
 id | Bibliothèque nationale de France | https://www.youtube.com/user/BibliothequeBnF/videos |
 id | Det Kongelige Bibliotek | https://www.youtube.com/user/kongeligebibliotek/videos |
 id | Harvard College Library | https://www.youtube.com/user/HCLibraries/videos |
-di | Die Deutsche Nationalbibliothek | https://www.youtube.com/user/DtNationalbibliothek/videos |
+id | Die Deutsche Nationalbibliothek | https://www.youtube.com/user/DtNationalbibliothek/videos |
+id | Alcor Cryonics | https://www.youtube.com/channel/UCUh9FLcWu8k5k5W_ofWQMZA/videos | 

@@ -1,0 +1,1703 @@
+BIOC300.2x-0 | Genetics: The Study of Biological Information | | parentid:BIOC300.2x
+BIOC300.2x-0.1 | DNA: The Fundamental Information Molecule of Life | | parentid:BIOC300.2x-0
+BIOC300.2x-0.2 | Proteins: The Functional Molecules of Life Processes | | parentid:BIOC300.2x-0
+BIOC300.2x-0.3 | Complex Systems and Molecular Interactions | | parentid:BIOC300.2x-0
+BIOC300.2x-0.4 | Molecular Similarities of all Life-Forms | | parentid:BIOC300.2x-0
+BIOC300.2x-0.5 | The Modular Construction of Genomes | | parentid:BIOC300.2x-0
+BIOC300.2x-0.6 | Modern Genetic Techniques | | parentid:BIOC300.2x-0
+BIOC300.2x-0.7 | Human Genetics | | parentid:BIOC300.2x-0
+BIOC300.2x-1 | Basic Principles: How Traits Are Transmitted | | parentid:BIOC300.2x
+BIOC300.2x-1.1 | Mendel’s Principles of Heredity | | parentid:BIOC300.2x-1
+BIOC300.2x-1.1.1 | Background: The Historical Puzzle of Inheritance | | parentid:BIOC300.2x-1.1
+BIOC300.2x-1.1.2 | Genetic Analysis According to Mendel | | parentid:BIOC300.2x-1.1
+BIOC300.2x-1.1.3 | Mendelian Inheritance in Humans | | parentid:BIOC300.2x-1.1
+BIOC300.2x-1.2 | Extensions to Mendel’s Laws | | parentid:BIOC300.2x-1
+BIOC300.2x-1.2.1 | Extensions to Mendel for Single-Gene Inheritance | | parentid:BIOC300.2x-1.2
+BIOC300.2x-1.2.2 | Extensions to Mendel for Multifactorial Inheritance | | parentid:BIOC300.2x-1.2
+BIOC300.2x-1.3 | The Chromosome Theory of Inheritance | | parentid:BIOC300.2x-1
+BIOC300.2x-1.3.1 | Chromosomes: The Carriers of Genes | | parentid:BIOC300.2x-1.3
+BIOC300.2x-1.3.2 | Mitosis: Cell Division That Preserves Chromosome Number | | parentid:BIOC300.2x-1.3
+BIOC300.2x-1.3.3 | Meiosis: Cell Divisions That Halve Chromosome Number | | parentid:BIOC300.2x-1.3
+BIOC300.2x-1.3.4 | Gametogenesis | | parentid:BIOC300.2x-1.3
+BIOC300.2x-1.3.5 | Validation of the Chromosome Theory | | parentid:BIOC300.2x-1.3
+BIOC300.2x-1.4 | Linkage, Recombination, and the Mapping of Genes on Chromosomes | | parentid:BIOC300.2x-1
+BIOC300.2x-1.4.1 | Gene Linkage and Recombination | | parentid:BIOC300.2x-1.4
+BIOC300.2x-1.4.2 | The Chi-Square Test and Linkage Analysis | | parentid:BIOC300.2x-1.4
+BIOC300.2x-1.4.3 | Recombination: A Result of Crossing-Over During Meiosis | | parentid:BIOC300.2x-1.4
+BIOC300.2x-1.4.4 | Mapping: Locating Genes Along a Chromosome | | parentid:BIOC300.2x-1.4
+BIOC300.2x-1.4.5 | Tetrad Analysis in Fungi | | parentid:BIOC300.2x-1.4
+BIOC300.2x-1.4.6 | Mitotic Recombination and Genetic Mosaics | | parentid:BIOC300.2x-1.4
+BIOC300.2x-2 | What Genes Are and What They Do | | parentid:BIOC300.2x
+BIOC300.2x-2.1 | DNA: Structure, Replication, and Recombination | | parentid:BIOC300.2x-2
+BIOC300.2x-2.1.1 | Experimental Evidence for DNA as the Genetic Material | | parentid:BIOC300.2x-2.1
+BIOC300.2x-2.1.2 | The Watson and Crick Double Helix Model of DNA | | parentid:BIOC300.2x-2.1
+BIOC300.2x-2.1.3 | Genetic Information in DNA Base Sequence | | parentid:BIOC300.2x-2.1
+BIOC300.2x-2.1.4 | DNA Replication | | parentid:BIOC300.2x-2.1
+BIOC300.2x-2.1.5 | Recombination at the DNA Level | | parentid:BIOC300.2x-2.1
+BIOC300.2x-2.2 | Anatomy and Function of a Gene: Dissection Through Mutation | | parentid:BIOC300.2x-2
+BIOC300.2x-2.2.1 | Mutations: Primary Tools of Genetic Analysis | | parentid:BIOC300.2x-2.2
+BIOC300.2x-2.2.2 | What Mutations Tell Us About Gene Structure | | parentid:BIOC300.2x-2.2
+BIOC300.2x-2.2.3 | What Mutations Tell Us About Gene Function | | parentid:BIOC300.2x-2.2
+BIOC300.2x-2.2.4 | A Comprehensive Example: Mutations That Affect Vision | | parentid:BIOC300.2x-2.2
+BIOC300.2x-2.3 | Gene Expression: The Flow of Information from DNA to RNA to Protein | | parentid:BIOC300.2x-2
+BIOC300.2x-2.3.1 | The Genetic Code | | parentid:BIOC300.2x-2.3
+BIOC300.2x-2.3.2 | Transcription: From DNA to RNA | | parentid:BIOC300.2x-2.3
+BIOC300.2x-2.3.3 | Translation: From mRNA to Protein | | parentid:BIOC300.2x-2.3
+BIOC300.2x-2.3.4 | Differences in Gene Expression Between Prokaryotes and Eukaryotes | | parentid:BIOC300.2x-2.3
+BIOC300.2x-2.3.5 | A Comprehensive Example: Computerized Analysis of Gene Expression in C. elegans | | parentid:BIOC300.2x-2.3
+BIOC300.2x-2.3.6 | The Effect of Mutations on Gene Expression and Gene Function | | parentid:BIOC300.2x-2.3
+BIOC300.2x-3 | Analysis of Genetic Information | | parentid:BIOC300.2x
+BIOC300.2x-3.1 | Digital Analysis of DNA | | parentid:BIOC300.2x-3
+BIOC300.2x-3.1.1 | Sequence-Specific DNA Fragmentation | | parentid:BIOC300.2x-3.1
+BIOC300.2x-3.1.2 | Cloning Fragments of DNA | | parentid:BIOC300.2x-3.1
+BIOC300.2x-3.1.3 | Hybridization | | parentid:BIOC300.2x-3.1
+BIOC300.2x-3.1.4 | The Polymerase Chain Reaction | | parentid:BIOC300.2x-3.1
+BIOC300.2x-3.1.5 | DNA Sequence Analysis | | parentid:BIOC300.2x-3.1
+BIOC300.2x-3.1.6 | Bioinformatics: Information Technology and Genomes | | parentid:BIOC300.2x-3.1
+BIOC300.2x-3.1.7 | The Hemoglobin Genes: A Comprehensive Example | | parentid:BIOC300.2x-3.1
+BIOC300.2x-3.2 | Genomes and Proteomes | | parentid:BIOC300.2x-3
+BIOC300.2x-3.2.1 | Large-Scale Genome Mapping and Analysis | | parentid:BIOC300.2x-3.2
+BIOC300.2x-3.2.2 | Major Insights from Human and Model Organism Genome Sequences | | parentid:BIOC300.2x-3.2
+BIOC300.2x-3.2.3 | Global Analysis of Genes and Their mRNAs | | parentid:BIOC300.2x-3.2
+BIOC300.2x-3.2.4 | Global Analysis of Proteomes | | parentid:BIOC300.2x-3.2
+BIOC300.2x-3.2.5 | Repercussions of the Human Genome Project and High-Throughput Technology | | parentid:BIOC300.2x-3.2
+BIOC300.2x-3.3 | Genome-Wide Variation and Trait Analysis | | parentid:BIOC300.2x-3
+BIOC300.2x-3.3.1 | Genetic Variation Among Individual Genomes | | parentid:BIOC300.2x-3.3
+BIOC300.2x-3.3.2 | (SNPs) and Small-Scale-Length Variations | | parentid:BIOC300.2x-3.3
+BIOC300.2x-3.3.3 | Deletions or Duplications of a DNA Region | | parentid:BIOC300.2x-3.3
+BIOC300.2x-3.3.4 | Positional Cloning: From DNA Markers to Disease-Causing Genes | | parentid:BIOC300.2x-3.3
+BIOC300.2x-3.3.5 | Complex Traits | | parentid:BIOC300.2x-3.3
+BIOC300.2x-3.3.6 | Genome-Wide Association Studies | | parentid:BIOC300.2x-3.3
+BIOC300.2x-4 | How Genes Travel on Chromosomes | | parentid:BIOC300.2x
+BIOC300.2x-4.1 | The Eukaryotic Chromosome | | parentid:BIOC300.2x-4
+BIOC300.2x-4.1.1 | Chromosomal DNA and Proteins | | parentid:BIOC300.2x-4.1
+BIOC300.2x-4.1.2 | Chromosome Structure and Compaction | | parentid:BIOC300.2x-4.1
+BIOC300.2x-4.1.3 | Chromosomal Packaging and Function | | parentid:BIOC300.2x-4.1
+BIOC300.2x-4.1.4 | Replication and Segregation of Chromosomes | | parentid:BIOC300.2x-4.1
+BIOC300.2x-4.2 | Chromosomal Rearrangements and Changes in Chromosome Number | | parentid:BIOC300.2x-4
+BIOC300.2x-4.2.1 | Rearrangements of DNA Sequences | | parentid:BIOC300.2x-4.2
+BIOC300.2x-4.2.2 | Transposable Genetic Elements | | parentid:BIOC300.2x-4.2
+BIOC300.2x-4.2.3 | Rearrangements and Evolution: A Speculative Comprehensive Example | | parentid:BIOC300.2x-4.2
+BIOC300.2x-4.2.4 | Changes in Chromosome Number | | parentid:BIOC300.2x-4.2
+BIOC300.2x-4.2.5 | Emergent Technologies: Beyond the Karyotype | | parentid:BIOC300.2x-4.2
+BIOC300.2x-4.3 | Prokaryotic and Organelle Genetics | | parentid:BIOC300.2x-4
+BIOC300.2x-4.3.1 | A General Overview of Bacteria | | parentid:BIOC300.2x-4.3
+BIOC300.2x-4.3.2 | Bacterial Genomes | | parentid:BIOC300.2x-4.3
+BIOC300.2x-4.3.3 | Gene Transfer in Bacteria | | parentid:BIOC300.2x-4.3
+BIOC300.2x-4.3.4 | Bacterial Genetic Analysis | | parentid:BIOC300.2x-4.3
+BIOC300.2x-4.3.5 | The Genetics of Chloroplasts and Mitochondria | | parentid:BIOC300.2x-4.3
+BIOC300.2x-4.3.6 | Non-Mendelian Inheritance of Chloroplasts and Mitochondria | | parentid:BIOC300.2x-4.3
+BIOC300.2x-4.3.7 | mtDNA Mutations and Human Health | | parentid:BIOC300.2x-4.3
+BIOC300.2x-5 | How Genes Are Regulated | | parentid:BIOC300.2x
+BIOC300.2x-5.1 | Gene Regulation in Prokaryotes | | parentid:BIOC300.2x-5
+BIOC300.2x-5.1.1 | Overview of Prokaryotic Gene Regulation | | parentid:BIOC300.2x-5.1
+BIOC300.2x-5.1.2 | The Regulation of Gene Transcription | | parentid:BIOC300.2x-5.1
+BIOC300.2x-5.1.3 | Attenuation of Gene Expression: Termination of Transcription | | parentid:BIOC300.2x-5.1
+BIOC300.2x-5.1.4 | Global Regulatory Mechanisms | | parentid:BIOC300.2x-5.1
+BIOC300.2x-5.1.5 | A Comprehensive Example: The Regulation of Virulence Genes in V. cholerae | | parentid:BIOC300.2x-5.1
+BIOC300.2x-5.2 | Gene Regulation in Eukaryotes | | parentid:BIOC300.2x-5
+BIOC300.2x-5.2.1 | Overview of Eukaryotic Gene Regulation | | parentid:BIOC300.2x-5.2
+BIOC300.2x-5.2.2 | Control of Transcription Initiation | | parentid:BIOC300.2x-5.2
+BIOC300.2x-5.2.3 | Chromatin Structure and Epigenetic Effects | | parentid:BIOC300.2x-5.2
+BIOC300.2x-5.2.4 | Regulation After Transcription | | parentid:BIOC300.2x-5.2
+BIOC300.2x-5.2.5 | A Comprehensive Example: Sex Determination in Drosophila | | parentid:BIOC300.2x-5.2
+BIOC300.2x-5.3 | Somatic Mutation and the Genetics of Cancer | | parentid:BIOC300.2x-5
+BIOC300.2x-5.3.1 | Overview: Initiation of Division | | parentid:BIOC300.2x-5.3
+BIOC300.2x-5.3.2 | Cancer: A Failure of Control Over Cell Division | | parentid:BIOC300.2x-5.3
+BIOC300.2x-5.3.3 | The Normal Control of Cell Division | | parentid:BIOC300.2x-5.3
+BIOC300.2x-5.4 | Using Genetics to Study Development | | parentid:BIOC300.2x-5
+BIOC300.2x-5.4.1 | Model Organisms: Prototypes for Developmental Genetics | | parentid:BIOC300.2x-5.4
+BIOC300.2x-5.4.2 | Using Mutations to Dissect Development | | parentid:BIOC300.2x-5.4
+BIOC300.2x-5.4.3 | Analysis of Developmental Pathways | | parentid:BIOC300.2x-5.4
+BIOC300.2x-5.4.4 | A Comprehensive Example: Body-Plan Development in Drosophila | | parentid:BIOC300.2x-5.4
+BIOC300.2x-5.4.5 | How Genes Help Control Development | | parentid:BIOC300.2x-5.4
+BIOC300.2x-6 | Beyond the Individual Gene and Genome | | parentid:BIOC300.2x
+BIOC300.2x-6.1 | Variation and Selection in Populations | | parentid:BIOC300.2x-6
+BIOC300.2x-6.1.1 | The Hardy-Weinberg Law: Predicting Genetic Variation in Populations | | parentid:BIOC300.2x-6.1
+BIOC300.2x-6.1.2 | Causes of Allele Frequency Changes | | parentid:BIOC300.2x-6.1
+BIOC300.2x-6.1.3 | Analyzing Quantitative Variation | | parentid:BIOC300.2x-6.1
+BIOC300.2x-6.2 | Evolution at the Molecular Level | | parentid:BIOC300.2x-6
+BIOC300.2x-6.2.1 | The Origin of Life on Earth | | parentid:BIOC300.2x-6.2
+BIOC300.2x-6.2.2 | The Evolution of Genomes | | parentid:BIOC300.2x-6.2
+BIOC300.2x-6.2.3 | The Organization of Genomes | | parentid:BIOC300.2x-6.2
+BIOC300.2x-6.2.4 | A Comprehensive Example: Rapid Evolution in the Immune Response and in HIV | | parentid:BIOC300.2x-6.2
+BIOC300.2x-6.3 | Systems Biology and the Future of Medicine | | parentid:BIOC300.2x-6
+BIOC300.2x-6.3.1 | What Is Systems Biology? | | parentid:BIOC300.2x-6.3
+BIOC300.2x-6.3.2 | Biology as an Informational Science | | parentid:BIOC300.2x-6.3
+BIOC300.2x-6.3.3 | The Practice of Systems Biology | | parentid:BIOC300.2x-6.3
+BIOC300.2x-6.3.4 | A Systems Approach to Disease | | parentid:BIOC300.2x-6.3
+MCB80.1x-0 | Studying the Nervous System | | parentid:MCB80.1x
+MCB80.1x-1 | Neural Signaling  | | parentid:MCB80.1x
+MCB80.1x-1.1 | Electrical Signals of Nerve Cells | | parentid:MCB80.1x-1
+MCB80.1x-1.2 | Voltage-Dependent Membrane Permeability | | parentid:MCB80.1x-1
+MCB80.1x-1.3 | Ion Channels and Transporters | | parentid:MCB80.1x-1
+MCB80.1x-1.4 | Synaptic Transmission | | parentid:MCB80.1x-1
+MCB80.1x-1.5 | Neurotransmitters and Their Receptors | | parentid:MCB80.1x-1
+MCB80.1x-1.6 | Molecular Signaling within Neurons | | parentid:MCB80.1x-1
+MCB80.1x-1.7 | Synaptic Plasticity | | parentid:MCB80.1x-1
+MCB80.1x-2 | Sensation and Sensory Processing  | | parentid:MCB80.1x
+MCB80.1x-2.1 | The Somatic Sensory System: Touch and Proprioception | | parentid:MCB80.1x-2
+MCB80.1x-2.2 | Pain | | parentid:MCB80.1x-2
+MCB80.1x-2.3 | Vision: The Eye | | parentid:MCB80.1x-2
+MCB80.1x-2.4 | Central Visual Pathways | | parentid:MCB80.1x-2
+MCB80.1x-2.5 | The Auditory System | | parentid:MCB80.1x-2
+MCB80.1x-2.6 | The Vestibular System | | parentid:MCB80.1x-2
+MCB80.1x-2.7 | The Chemical Senses | | parentid:MCB80.1x-2
+MCB80.1x-3 | Movement and Its Central Control  | | parentid:MCB80.1x
+MCB80.1x-3.1 | Lower Motor Neuron Circuits and Motor Control | | parentid:MCB80.1x-3
+MCB80.1x-3.2 | Upper Motor Neuron Control of the Brainstem and Spinal Cord | | parentid:MCB80.1x-3
+MCB80.1x-3.3 | Modulation of Movement by the Basal Ganglia | | parentid:MCB80.1x-3
+MCB80.1x-3.4 | Modulation of Movement by the Cerebellum | | parentid:MCB80.1x-3
+MCB80.1x-3.5 | Eye Movements and Sensory Motor Integration | | parentid:MCB80.1x-3
+MCB80.1x-3.6 | The Visceral Motor System | | parentid:MCB80.1x-3
+MCB80.1x-4 | The Changing Brain  | | parentid:MCB80.1x
+MCB80.1x-4.1 | Early Brain Development | | parentid:MCB80.1x-4
+MCB80.1x-4.2 | Construction of Neural Circuits | | parentid:MCB80.1x-4
+MCB80.1x-4.3 | Modification of Brain Circuits as a Result of Experience | | parentid:MCB80.1x-4
+MCB80.1x-4.4 | Repair and Regeneration in the Nervous System | | parentid:MCB80.1x-4
+MCB80.1x-5 | Complex Brain Functions  | | parentid:MCB80.1x
+MCB80.1x-5.1 | Association Cortex and Cognition | | parentid:MCB80.1x-5
+MCB80.1x-5.2 | Speech and Language | | parentid:MCB80.1x-5
+MCB80.1x-5.3 | Sleep and Wakefulness | | parentid:MCB80.1x-5
+MCB80.1x-5.4 | Emotions | | parentid:MCB80.1x-5
+MCB80.1x-5.5 | Sex, Sexuality, and the Brain | | parentid:MCB80.1x-5
+MCB80.1x-5.6 | Memory | | parentid:MCB80.1x-5
+MCB80.1x-Appendix | Survey of Human Neuroanatomy | | parentid:MCB80.1x
+MCB80.3x-1 | 神经内分泌学与神经免疫学 | | parentid:MCB80.3x
+MCB80.3x-1.1 | 神经内分泌学 | | parentid:MCB80.3x-1
+MCB80.3x-1.1.1 | Adrenal Steroids: Biphasic Effects oNeurons | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.2 | AngiotensiActions oand withiBrain | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.3 | Birdsong Learning: Evolutionary, Behavioral, and Hormonal Issues | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.4 | ChromaffiCells: Model Cells for Neuronal Cell Biology | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.5 | Chronic(Repeated） Stress: Consequences, Adaptations | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.6 | Circumventricular Organs iNeuroendocrine Control | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.7 | Clock Gene Regulatioof Endocrine Function | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.8 | Corticotropin-Releasing Hormone and Urocortins: Binding Proteins and Receptors | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.9 | Corticotropin-Releasing Hormone: Integratioof Adaptive Responses to Stress | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.10 | Emotional Hormones and Memory Modulation | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.11 | Endocrine FunctioDuring Sleep and Sleep Deprivation | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.12 | Estrus and Menstrual Cycles: Neuroendocrine Control | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.13 | Gene ExpressioRegulation: Steroid Hormone Effects | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.14 | Glial Plasticity and Neuroendocrine Regulation | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.15 | Gliai Steroid Metabolism | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.16 | Gonadal Steroid Actions oBrain | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.17 | Gonadotropin, Neural and Hormonal Control | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.18 | Gonadotropin-Releasing Hormone: GnRH-1 System | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.19 | Growth Hormone | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.20 | Hormonal Signaling to the Braifor the Control of Feeding/Energy Balance | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.21 | Hormones and Behavior | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.22 | Hormones and Memory | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.23 | Hypothalamic Structure-FunctioRelationships | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.24 | Hypothalamic-Pituitary-Adrenal(HPA） Axis | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.25 | Hypothalamic-Pituitary-Thyroid Axis: Organization, Neural/Endocrine Control of TRH | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.26 | Immune System-Neuroendocrine Interactions | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.27 | Invertebrate Neurohormone GPCRs | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.28 | Kisspeptins and their Receptors | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.29 | Magnocellular Neurosecretory System: Organization, Plasticity, Model Peptidergic Neurons | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.30 | Metabolic Syndrome and Sleep | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.31 | Neuroendocrine Aging: Hypothalamic-Pituitary-Gonadal Axis iWomen | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.32 | Neuroendocrine Aging: Pituitary Metabolism | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.33 | Neuroendocrine Aging: Pituitary~Adrenal Axis | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.34 | Neuroendocrine Aging: Pituitary-Gonadal Axis iMales | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.35 | Neuroendocrine Control of Energy Balance(Central Circuits/Mechanisms） | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.36 | Neuroendocrine Control: Maternal Behavior | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.37 | Neuroendocrine Peptide Processing | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.38 | Neuroendocrinology | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.39 | Neuroendocrinology of Affective Disorders | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.40 | Neuroendocrinology of Puberty | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.41 | Neuroendocrinology of Social/Affiliative Behavior | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.42 | Neurohypophyseal System | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.43 | Neuroimmune System: Aging | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.44 | Neuropeptides: Endocrine Cells | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.45 | Neurosecretio(Regulated Exocytosis iNeuroendocrine Ceils） | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.46 | Neurosteroids | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.47 | Oxytoci(Peripheral/Central Actions and their Regulation） | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.48 | Pineal Gland and Melatonin | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.49 | Pituitary Gland(Cell Types, Mediators, Development） | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.50 | Prolactiand its Neuroendocrine Control | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.51 | Proopiomelanocortin | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.52 | Pulsatility iNeuroendocrine Systems | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.53 | Seasonal Hormonal Changes and Behavior | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.54 | Sexual Behavior: Neuroendocrine Control | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.55 | Stress and Neural Involvement iMetabolism | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.56 | Stress and Suicide | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.57 | Stress Response: Neural and Feedback Regulatioof the HPAAxis | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.58 | Stress, Dopamine, and Puberty | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.59 | Stress, the HPA Axis and Depressive Illness . | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.60 | Sympathetic Noradrenergic and AdrenomeduUary Hormonal Systems iStress and Distress | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.61 | Sympathoadrenal System: Neural Arm of the Stress Response. | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.62 | Thermoregulation: Autonomic, Age-Related Changes | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.63 | Thyroid Hormone and Transcriptional Regulatioithe S. | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.64 | TIP39(Tuberoinfundibular Peptide of 39 Residues） | | parentid:MCB80.3x-1.1
+MCB80.3x-1.1.65 | Vasopressin/Oxytociand Receptors | | parentid:MCB80.3x-1.1
+MCB80.3x-1.2 | 神经免疫学 | | parentid:MCB80.3x-1
+MCB80.3x-1.2.1 | Autonomic Neuroimmunology | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.2 | Cytokine Receptors iGlia | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.3 | Glial Cells: T Cell Interactions | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.4 | Immune FunctioDuring Sleep and Sleep Deprivation | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.5 | InflammatioiNeurodegenerative Disease and Injury | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.6 | Neural Repair and Regeneration: Inflammatory Mechanisms and Cytokines | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.7 | PANDAS(Pediatric Autoimmune Neuropsychiatric Disorders Associated with Streptococcal Infections） | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.8 | Sleep and Sleep States: Cytokines and Neuromodulation. | | parentid:MCB80.3x-1.2
+MCB80.3x-1.2.9 | Stress, Cytokines and Depressive Illness | | parentid:MCB80.3x-1.2
+MCB80.3x-2 | 突触结构、组织及神经药理学 | | parentid:MCB80.3x
+MCB80.3x-2.1 | 神经肌肉接头与间隙连接 | | parentid:MCB80.3x-2
+MCB80.3x-2.1.1 | Autonomic Neuroeffector Junction | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.2 | Botulinum and Tetanus Toxins | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.3 | Comparative Biology of Invertebrate Neuromuscular Junctions | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.4 | Development of Drosophila Neuromuscular Junctions | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.5 | Gap Junction Abnormalities and Disorders of the Nervous System | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.6 | Gap Junction Communication | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.7 | Gap Junctions and Electrical Synapses | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.8 | Gap Junctions and Hemichannels in Glia | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.9 | Gap Junctions and Neuronal Oscillations | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.10 | Gap Junctions: Metabolic Exchanges | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.11 | Magnocellular Neurosecretory System: Organization, Plasticity, Model Peptidergic Neurons | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.12 | Neuromuscular Connections: Vertebrate Patterns of | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.13 | Neuromuscular Junction(NMJ): A Target for Natural and Environmental Toxins in Humans | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.14 | Neuromuscular Junction(NMJ): Acetylcholinesterases | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.15 | Neuromuscular Junction(NMJ): Activity-Dependent Muscle Fiber Modulation | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.16 | Neuromuscular Junction(NMJ): Aging | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.17 | Neuromuscular Junction(NMJ): Inherited and Acquired Disorders | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.18 | Neuromuscular Junction(NMJ): Mammalian Development | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.19 | Neuromuscular Junction(NMJ): Postsynaptic Basal Lamina | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.20 | Neuromuscular Junction(NMJ): Postsynaptic Events in Neuromuscular Transmission | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.21 | Neuromuscular Junction(NMJ): Presynaptic Non-Quantal Release of Transmitter | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.22 | Neuromuscular Junction(NMJ): Presynaptic Schwann Cells and Modulation of Neuromuscular Transmission | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.23 | Neuromuscular Junction(NMJ): Presynaptic Short-Term Plasticity of Neuromuscular Transmission | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.24 | Neuromuscular Junction(NMJ): Presynaptic Stretch Effects on Neuromuscular Transmission | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.25 | Neuromuscular Junction Plasticity in Mammals and Botulinum Toxins | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.26 | Neuromuscular Junction: Neuronal Regulation of Gene Transcription at the Vertebrate | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.27 | Neuromuscular Junction: Synapse Elimination | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.28 | Neuromuscular Transmission Modulation at Invertebrate Neuromuscular Junctions | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.29 | Presynaptic Events in Neuromuscular Transmission | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.30 | Presynaptic: Mitochondria and Presynaptic Function | | parentid:MCB80.3x-2.1
+MCB80.3x-2.1.31 | Schwann Cells and Plasticity of the Neuromuscular Junction | | parentid:MCB80.3x-2.1
+MCB80.3x-2.2 | 神经理学 | | parentid:MCB80.3x-2
+MCB80.3x-2.2.1 | A MPA Receptors: Molecular Biology and Pharmacology | | parentid:MCB80.3x-2.2
+MCB80.3x-2.2.2 | Cognition: Neuropharmacology | | parentid:MCB80.3x-2.2
+MCB80.3x-2.2.3 | Drug Addiction: Behavioral Pharmacology of Drug Addiction in Rats | | parentid:MCB80.3x-2.2
+MCB80.3x-2.2.4 | Drugs Addiction: Actions | | parentid:MCB80.3x-2.2
+MCB80.3x-2.2.5 | Exercise: Optimizing Function and Survival at the Cellular Level | | parentid:MCB80.3x-2.2
+MCB80.3x-2.2.6 | Metabotropic Glutamate Receptors(mGluRs): Molecular Biology, Pharmacology and Cell Biology | | parentid:MCB80.3x-2.2
+MCB80.3x-2.2.7 | Neuropeptide Receptors-Drug Development | | parentid:MCB80.3x-2.2
+MCB80.3x-2.2.8 | Pharmacology of Sleep: Adenosine | | parentid:MCB80.3x-2.2
+MCB80.3x-2.3 | 突触结构 | | parentid:MCB80.3x-2
+MCB80.3x-2.3.1 | Active Zone | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.2 | Activity-Dependent Remodeling of Presynaptic Boutons | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.3 | Adenosine Receptor Mediated Functions | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.4 | Cadherins and Synapse Organization | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.5 | Cell Adhesion Molecules at Synapses | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.6 | Dendritic Spine History | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.7 | Endocytic Traffic in Spines | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.8 | Endocytosis and Presynaptic Scaffolds | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.9 | Eph Receptor Signaling and Spine Morphology | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.10 | Glia and Synapse Formation: An Overview | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.11 | Glutamate Receptor Organization: Ultrastructural Insights | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.12 | LIM Kinase and Aetin Regulation of Spines | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.13 | Neural Cell Adhesion Molecules and Synapse Regulation | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.14 | Postsynaptic Density/Architecture at Excitatory Synapses | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.15 | Postsynaptic Specialization Assembly | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.16 | Presynaptic Development: Functional and Morphological Organization.. | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.17 | Presynaptic Endosomes | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.18 | Presynaptic Receptor Signaling | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.19 | Presynaptic Regulation by Liprins | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.20 | Rho GTPases and Spines | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.21 | Ribbon Synapses | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.22 | RNA Granules: Functions within Presynaptic Terminals and Postsynaptic Spine | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.23 | Spine Plasticity | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.24 | Spines and Mental Disorders | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.25 | Synapsins and Regulation of the Reserve Pool | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.26 | Synaptic Capture and Tagging | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.27 | Synaptic Plasticity: Short-Term Mechanisms | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.28 | Translational Regulation at the Synapse | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.29 | Uitrastructural Analysis of Spine Plasticity | | parentid:MCB80.3x-2.3
+MCB80.3x-2.3.30 | Ultrastructural Organization of Release Sites in the Calyx of Held | | parentid:MCB80.3x-2.3
+MCB80.3x-3 | 神经肽与神经营养因子 | | parentid:MCB80.3x
+MCB80.3x-3.1 | Amphibian Peptides | | parentid:MCB80.3x-3
+MCB80.3x-3.2 | Apelin | | parentid:MCB80.3x-3
+MCB80.3x-3.3 | BDNF in Synaptic Plasticity and Memory | | parentid:MCB80.3x-3
+MCB80.3x-3.4 | Calcitonin Gene-Related Peptide(CGRP) and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.5 | CCK/Gastrin and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.6 | Circadian Function and Therapeutic Potential of Melatonin in Humans | | parentid:MCB80.3x-3
+MCB80.3x-3.7 | Corticotropin-Releasing Hormone and Urocortins: Binding Proteins and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.8 | Endocannabinoid Role in Synaptic Plasticity and Learning | | parentid:MCB80.3x-3
+MCB80.3x-3.9 | Enteric Nervous System: Neurotrophic Factors | | parentid:MCB80.3x-3
+MCB80.3x-3.10 | Galanin and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.11 | GFL Neurotrophic Factors: Physiology and Pharmacology | | parentid:MCB80.3x-3
+MCB80.3x-3.12 | Glial Growth Factors | | parentid:MCB80.3x-3
+MCB80.3x-3.13 | Growth Factors: Neuronal Atrophy | | parentid:MCB80.3x-3
+MCB80.3x-3.14 | Hypocretin/Orexin and MCH and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.15 | Insulin-Like Growth Factor Signaling and Actions in Brain | | parentid:MCB80.3x-3
+MCB80.3x-3.16 | Invertebrate Neurohormone GPCRs | | parentid:MCB80.3x-3
+MCB80.3x-3.17 | Kisspeptins and their Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.18 | Magnocellular Neurosecretory System: Organization, Plasticity, Model Peptidergic Neurons | | parentid:MCB80.3x-3
+MCB80.3x-3.19 | Mammalian Neuropeptide Families | | parentid:MCB80.3x-3
+MCB80.3x-3.20 | Melanocortins: Brain Effects | | parentid:MCB80.3x-3
+MCB80.3x-3.21 | Melatonin Regulation of Circadian Rhythmicity in Vertebrates | | parentid:MCB80.3x-3
+MCB80.3x-3.22 | Natriuretic Peptides | | parentid:MCB80.3x-3
+MCB80.3x-3.23 | Nerve Growth Factor | | parentid:MCB80.3x-3
+MCB80.3x-3.24 | Neuroendocrine Peptide Processing | | parentid:MCB80.3x-3
+MCB80.3x-3.25 | Neuromodulation | | parentid:MCB80.3x-3
+MCB80.3x-3.26 | Neuronal Angiotensin | | parentid:MCB80.3x-3
+MCB80.3x-3.27 | Neuropeptide FF and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.28 | Neuropeptide Inactivation or Metabolism | | parentid:MCB80.3x-3
+MCB80.3x-3.29 | Neuropeptide Receptors-Drug Development | | parentid:MCB80.3x-3
+MCB80.3x-3.30 | Neuropeptide Release | | parentid:MCB80.3x-3
+MCB80.3x-3.31 | Neuropeptide S | | parentid:MCB80.3x-3
+MCB80.3x-3.32 | Neuropeptide Signaling in Invertebrates | | parentid:MCB80.3x-3
+MCB80.3x-3.33 | Neuropeptide Synthesis and Storage | | parentid:MCB80.3x-3
+MCB80.3x-3.34 | Neuropeptide Y(NPY) and its Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.35 | Neuropeptides and Coexistence | | parentid:MCB80.3x-3
+MCB80.3x-3.36 | Neuropeptides and Receptors in Glia | | parentid:MCB80.3x-3
+MCB80.3x-3.37 | Neuropeptides in Autonomic Neurons | | parentid:MCB80.3x-3
+MCB80.3x-3.38 | Neuropeptides Internalization | | parentid:MCB80.3x-3
+MCB80.3x-3.39 | Neuropeptides Phylogeny and Evolution | | parentid:MCB80.3x-3
+MCB80.3x-3.40 | Neuropeptides: Discovery | | parentid:MCB80.3x-3
+MCB80.3x-3.41 | Neuropeptides: Electrophysiology | | parentid:MCB80.3x-3
+MCB80.3x-3.42 | Neuropeptides: Endocrine Cells | | parentid:MCB80.3x-3
+MCB80.3x-3.43 | Neuropeptides: Enteric Nervous System | | parentid:MCB80.3x-3
+MCB80.3x-3.44 | Neuropeptides: Epilepsy | | parentid:MCB80.3x-3
+MCB80.3x-3.45 | Neuropeptides: Food Intake | | parentid:MCB80.3x-3
+MCB80.3x-3.46 | Neuropeptides: Mental Disease | | parentid:MCB80.3x-3
+MCB80.3x-3.47 | Neuropeptides: Pain | | parentid:MCB80.3x-3
+MCB80.3x-3.48 | Neuropeptides: Sensory Systems | | parentid:MCB80.3x-3
+MCB80.3x-3.49 | Neurotensin and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.50 | Neurotransmitters and Growth Factors: Overview | | parentid:MCB80.3x-3
+MCB80.3x-3.51 | Neurotrophic Factor Therapy: GDNF and CNTF. | | parentid:MCB80.3x-3
+MCB80.3x-3.52 | Neurotrophic Factor Therapy: NGF, BDNF and NT-3 | | parentid:MCB80.3x-3
+MCB80.3x-3.53 | Neurotrophins: Physiology and Pharmacology | | parentid:MCB80.3x-3
+MCB80.3x-3.54 | Opioid Peptides and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.55 | Peptidergic Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.56 | Pineal Gland and Melatonin | | parentid:MCB80.3x-3
+MCB80.3x-3.57 | Prolactin and its Neuroendocrine Control | | parentid:MCB80.3x-3
+MCB80.3x-3.58 | Prolactin-Releasing Peptide | | parentid:MCB80.3x-3
+MCB80.3x-3.59 | Proopiomelanocortin | | parentid:MCB80.3x-3
+MCB80.3x-3.60 | Retrograde Neurotrophic Signaling.. | | parentid:MCB80.3x-3
+MCB80.3x-3.61 | Somatostatin and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.62 | Substance P/Tachykinins and its/their Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.63 | TIP39(Tuberoinfundibular Peptide of 39 Residues)... | | parentid:MCB80.3x-3
+MCB80.3x-3.64 | Vasoactive Intestinal Peptide and Pituitary Adenylate Cyclase Activating Peptide Receptors | | parentid:MCB80.3x-3
+MCB80.3x-3.65 | Vasopressin/Oxytocin and Receptors | | parentid:MCB80.3x-3
+MCB80.3x-4 | 神经递质与受体 | | parentid:MCB80.3x
+MCB80.3x-4.1 | 神经递质与受体 | | parentid:MCB80.3x-4
+MCB80.3x-4.1.1 | Astrocyte: Neurotransmitter and Hormone Receptors | | parentid:MCB80.3x-4.1
+MCB80.3x-4.1.2 | Cotransmission | | parentid:MCB80.3x-4.1
+MCB80.3x-4.1.3 | Neuropeptides and Coexistence | | parentid:MCB80.3x-4.1
+MCB80.3x-4.1.4 | Neurotransmitter and Hormone Receptors on Oligodendrocytes and Schwann Cells | | parentid:MCB80.3x-4.1
+MCB80.3x-4.1.5 | Neurotransmitters and Growth Factors: Overview | | parentid:MCB80.3x-4.1
+MCB80.3x-4.1.6 | Nitric Oxide | | parentid:MCB80.3x-4.1
+MCB80.3x-4.2 | 氨基酸与嘌呤 | | parentid:MCB80.3x-4
+MCB80.3x-4.2.1 | Adenosine | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.2 | Adenosine Triphosphate(ATP） | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.3 | Adenosine Triphosphate(ATP） as a Neurotransmitter | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.4 | AMPA Receptor Cell Biology/Trafficking | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.5 | AMPA Receptors: Disease | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.6 | AMPA Receptors: Molecular Biology and Pharmacology | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.7 | Calcium Waves: Purinergic Regulation | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.8 | D-Serine: From Its Synthesis in Giial Cell to Its Action on Synaptic Transmission and Plasticity | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.9 | GABA Synthesis and Metabolism | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.10 | GABAA Receptor Synaptic Functions | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.11 | GABAA Receptors and Disease | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.12 | GABAA Receptors: Developmental Roles | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.13 | GABAA Receptors: Molecular Biology, Cell Biology, and Pharmacology | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.14 | GABAB Receptor Function | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.15 | GABAn Receptors: Molecular Biology and Pharmacology | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.16 | Gamma-Aminobutyric Acid(GABA） | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.17 | Glial Glutamate Transporters: Electrophysiology | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.18 | Glutamate | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.19 | Glutamate Receptor Clusters: Narp, EphB2 Receptor, Stargazin | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.20 | Glutamate Receptor Organization: Ultrastructural Insights | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.21 | Glutamate Regulation of Dendritic Spine Form and Function | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.22 | Glutamatergic and Gabaergic Systems | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.23 | Glycine Receptors: Molecular and Cell Biology | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.24 | Herbal Products and GABA Receptors | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.25 | Kainate Receptor Functions | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.26 | Kainate Receptors: Molecular and Cell Biology | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.27 | Long-Term Depression(LTD): Metabotropic Glutamate Receptor(mGluR） and NMDAR-Dependent Forms | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.28 | Long-Term Potentiation(LTP): NMDA Receptor Role | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.29 | Long-Term Potentiation and Long-Term Depression in Experience-Dependent Plasticity | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.30 | Metabotropic Glutamate Receptors(mGluRs): Functions | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.31 | Metabotropic Glutamate Receptors(mGluRs): Molecular Biology, Pharmacology and Cell Biology | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.32 | NMDA Receptor Function and Physiological Modulation | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.33 | NMDA Receptors and Development | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.34 | NMDA Receptors and Disease | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.35 | NMDA Receptors, Cell Biology and Trafficking | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.36 | P2X Receptors | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.37 | Pharmacology of Sleep: Adenosine | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.38 | Postsynaptic Density/Architecture at Excitatory Synapses | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.39 | Purinergic Receptors | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.40 | Purines and Purinoceptors: Molecular Biology Overview | | parentid:MCB80.3x-4.2
+MCB80.3x-4.2.41 | Transporter Proteins in Neurons and Glia | | parentid:MCB80.3x-4.2
+MCB80.3x-4.3 | 胺与乙酰胆碱 | | parentid:MCB80.3x-4
+MCB80.3x-4.3.1 | Acetylchollne Neurotransmission in CNS | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.2 | Acetylcholinesterase | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.3 | Acetylchollnesterase Inhibitors and Alzheimers Disease | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.4 | Adenosine Receptor Mediated Functions | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.5 | Adrenergic Receptors | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.6 | Amphetamines | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.7 | Attention Deficit Hyperactivity Disorder(ADHD): Methylphenidate(Ritalin） and Dopamine | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.8 | Aversive Emotions: Genetic Mechanisms of Serotonin | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.9 | Brain Adrenergic Neurons | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.10 | Cells: 5-Hydroxytryptamine Receptors | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.11 | Cholinergic Neurotransmission in the Autonomic and Somatic Motor Nervous System. | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.12 | Chollnergic Pathways in CNS | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.13 | Cholinergic System | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.14 | Dopamine | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.15 | Dopamine-CNS Pathways and Neurophysiology | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.16 | Dopamlne Control of Arousal | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.17 | Dopanune in Perspective | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.18 | Dopannne Neurons: Reward and Uncertainty | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.19 | Dopannne Receptors and Antipsychotic Drugs in Health and Disease | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.20 | Dopannne: Cellular Actions | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.21 | Dopaminergic Agonists and L-DOPA | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.22 | Histamine Receptors and their Ligands: Mechanisms and Applications | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.23 | 3，4-Methylenedioxymethamphetamine(MDMA, "Ecstasy"） | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.24 | Monoamine Transporters: Focus on the Regulation of Serotonin Transporter by Cytokines | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.25 | Monoamines | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.26 | Monoamines: Human Brain Imaging | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.27 | Monoamines: Release Studies | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.28 | Muscarinic Receptors: Autonomic Neurons | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.29 | Neuroleptics | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.30 | Neutrotransmission and Neuromodulation: Acetylcholine | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.31 | Nicotine | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.32 | Nicotinic Aeetylcholine Receptors | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.33 | Nicotinic Receptors: Autonomic Neurons | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.34 | Noradrcnaline | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.35 | Norepinephrine: Adrenergic Receptors | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.36 | Norcpinephrine: CNS Pathways and Neurophysiology | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.37 | Octopamine and Other Monoamines in Invertebrates | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.38 | Serotonin(5-Hydroxytryptamine; 5-HT): Neurotransmissionand Neuromodulation | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.39 | Serotonin(5-Hydroxytryptamine; 5-HT): CNS Pathways and Neurophysiology | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.40 | Serotonin(5-Hydroxytryptamine; 5-HT): Receptors | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.41 | Serotonin and the Regulation of Mammalian Circadian Rhythms | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.42 | Serotonin-Related Psychedelic Drugs | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.43 | Sleep-Wake State Regulation by Acetylcholine | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.44 | Sympathomimetic Drugs and Adrenergic Receptor Antagonists | | parentid:MCB80.3x-4.3
+MCB80.3x-4.3.45 | Trace Monoamines and Receptors in Mammalian CNS | | parentid:MCB80.3x-4.3
+MCB80.3x-5 | 方法与技术(上) | | parentid:MCB80.3x
+MCB80.3x-5.1 | 动物模型与方法 | | parentid:MCB80.3x-5
+MCB80.3x-5.1.1 | Aging and Memory in Animals | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.2 | Aging: Invertebrate Models of Normal Brain Aging | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.3 | Alzheimer's Disease: Transgenic Mouse Models | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.4 | Animal Models of Alzheimer's Disease | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.5 | Animal Models of Amnesia | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.6 | Animal Models of Huntington's Disease | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.7 | Animal Models of Inherited Retinal Degenerations | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.8 | Animal Models of Motor and Sensory Neuron Disease | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.9 | Animal Models of Parkinson's Disease | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.10 | Animal Models of Stroke | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.11 | BAC Transgenesis: Cell-Type Specific Expression in the Nervous System. | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.12 | Drosophila Apterous Neurons: From Stem Cell to Unique Neuron | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.13 | Drug Addiction: Behavioral Pharmacology of Drug Addiction in Rats | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.14 | Episodic Memory: Assessment in Animals | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.15 | Executive Function and Higher-Order Cognition: Assessment in Animals | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.16 | Inherited Macular Degenerations: Animal Models | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.17 | Invertebrate Models to Study Learning and Memory: Lymnaea | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.18 | Learning and Memory m Invertebrate Models: Tritonia | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.19 | Learning and Memory m Invertebrates: Aplysia | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.20 | Learning and Memory in Invertebrates: C-Elegans | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.21 | Learning and Memory m Invertebrates: Drosophila | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.22 | Learning and Memory in Invertebrates: Hermissenda | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.23 | Learning and Memory m Invertebrates: Honey Bee | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.24 | Learning and Memory in Invertebrates: Limax | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.25 | Learning and Memory m Invertebrates: Mollusks | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.26 | Mammalian Sleep and Circadian Rhythms: Flies | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.27 | Neural Induction in Chicks | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.28 | Non-Primate Models of Normal Brain Aging | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.29 | Procedural Learning in Animals | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.30 | Rodent Aging | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.31 | Spatial Memory: Assessment in Animals | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.32 | Transgenic Models of Neurodegenerative Disease | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.33 | VelociGene and VelociMouse: High-Throughput Approaches for Generating Targeted | | parentid:MCB80.3x-5.1
+MCB80.3x-5.1.34 | Mutations in Mice on a Genome-Wide Scale | | parentid:MCB80.3x-5.1
+MCB80.3x-5.2 | 生物化学、细胞与分子生物学 | | parentid:MCB80.3x-5
+MCB80.3x-5.2.1 | Atomic Force Microscopy Methodologies | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.2 | BAC Use in the Study of the CNS | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.3 | Cell Culture: Autonomic and Enteric Neurons | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.4 | Cell Culture: Primary Neural Cells | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.5 | Cellular Dynamics Revealed by Digital l]o|ographic Microscopy | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.6 | Chromaffin Ceils: Model Cells for Neuronal Cell Biology | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.7 | Decoding Neuron Transcriptome by SAGE | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.8 | Engineering Viruses for CNS studies | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.9 | Fluorescence Microscopy in the Neurosciences | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.10 | Fluorescent Biomarkers in Neurons | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.11 | Glial Ion Homeostasis: A Fluorescence Microscopy Approach | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.12 | Imaging Studies Using Reporter-Gene Transgeni~ Rats | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.13 | Mass Spectroscopy of Proteins | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.14 | Memory: Genetic Approaches | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.15 | Microarray use for the Analysis of the CNS | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.16 | Microglia Identification Methods | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.17 | Monoamines: Release Studies | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.18 | Neurophysiology: Past and Present | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.19 | Neuroproteomics | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.20 | Nucleic Acid Introduction into Primary Neurons and Gila | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.21 | Oligodendrocyte and Schwann Cell Identification Methods | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.22 | Optical Monitoring of Exo- and Endocytosis | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.23 | Photolysis of Caged Glutamate for Use in the CNS | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.24 | RNA Binding Protein Methods | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.25 | Rodent Behavior: Approaches | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.26 | Single Cell Electroporation | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.27 | Single Cell Genomic DNAAnalysis | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.28 | Single Cell Molecular Analysis Procedures | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.29 | Single Cell PCR Coupled with Electrophysiology | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.30 | Single-Nucleotide Polymorphism(SNP) Analysis | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.31 | siRNA: Utility | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.32 | Synaptosomes | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.33 | Ultrastructural Analysis of Spine Plasticity. | | parentid:MCB80.3x-5.2
+MCB80.3x-5.2.34 | Viral Vectors in the CNS | | parentid:MCB80.3x-5.2
+MCB80.3x-5.3 | 其他系统神经科学方法 | | parentid:MCB80.3x-5
+MCB80.3x-5.3.1 | Connectionist Models | | parentid:MCB80.3x-5.3
+MCB80.3x-5.3.2 | Deep Brain Stimulation | | parentid:MCB80.3x-5.3
+MCB80.3x-5.3.3 | Neuroanatomy Methods in Humans and Animals. | | parentid:MCB80.3x-5.3
+MCB80.3x-5.3.4 | Neuroinformatics | | parentid:MCB80.3x-5.3
+MCB80.3x-5.3.5 | Statistical Tests and Inferences | | parentid:MCB80.3x-5.3
+MCB80.3x-6 | 方法与技术(下) | | parentid:MCB80.3x
+MCB80.3x-6.1 | 电生理学方法 | | parentid:MCB80.3x-6
+MCB80.3x-6.1.1 | Aging: Brain Potential Measures and Reaction Time Studies | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.2 | Auditory Evoked Potentials | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.3 | Deep Brain Stimulation | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.4 | Electroencephalography(EEG） | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.5 | Electrolocation | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.6 | Electromyography(EMG） and Nerve Conduction Studies | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.7 | Electrophysiology: EEG and ERPAnalysis | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.8 | Electroretinography | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.9 | Event-Related Potentials(ERPs） | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.10 | Event-Related Potentials(ERPs） and Cognitive Processing | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.11 | Evoked Potentials: Clinical | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.12 | Evoked Potentials: Recording Methods | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.13 | Executive Function and Higher-Order Cognition: EEG Studies | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.14 | Glial Glutamate Transporters: Electrophysiology | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.15 | Human Depth Electrodes | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.16 | Magnetoencephalography | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.17 | Neuropeptides: Electrophysiology | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.18 | Neurophysiology: Past and Present | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.19 | Single Cell PCR Coupled with Electrophysiology | | parentid:MCB80.3x-6.1
+MCB80.3x-6.1.20 | Sleep Oscillations | | parentid:MCB80.3x-6.1
+MCB80.3x-6.2 | 人类实验方法 | | parentid:MCB80.3x-6
+MCB80.3x-6.2.1 | Cognitive Neuroscience: An Overview | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.2 | Dichotic Listening Studies of Brain Asymmetry | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.3 | Eye Tracking and Mental Illness | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.4 | Human Methods: Psychophysics | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.5 | Motor Psychophysics | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.6 | Neuroethics | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.7 | Neuropsychological Testing | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.8 | Neuropsychology: Theoretical Basis | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.9 | Phrenology | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.10 | Psycholinguistics | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.11 | Psychophysics of Attention | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.12 | Saccades and Visual Search | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.13 | Task Switching | | parentid:MCB80.3x-6.2
+MCB80.3x-6.2.14 | Transcranial Magnetic Stimulation | | parentid:MCB80.3x-6.2
+MCB80.3x-6.3 | 成像技术 | | parentid:MCB80.3x-6
+MCB80.3x-6.3.1 | Alzheimers Disease: MRI Studies | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.2 | Atomic Force Microscopy Methodologies | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.3 | Awareness: Functional Imaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.4 | Brain Injury: Magnetic Resonance Studies of Metabolic Aspects | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.5 | Cellular Dynamics Revealed by Digital Holographic Microscopy | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.6 | Cholinergic System Imaging in the Healthy Aging Process and Alzheimer Disease | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.7 | Cognition: An Overview of Neuroimaging Techniques | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.8 | Diffusion Tensor Imaging(DTI） | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.9 | Drug Addiction: Neuroimaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.10 | Emotion: Neuroimaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.11 | Executive Function and Higher-Order Cognition: Neuroimaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.12 | fMRI: BOLD Contrast . | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.13 | Functional Connectivity | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.14 | Functional Imaging of the Motor System | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.15 | Functional Neuroimaging Studies of Aging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.16 | Glial Energy Metabolism: A NMR Spectroscopy Perspective | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.17 | Imaging Studies Using Reporter-Gene Transgenic Rats | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.18 | Magnetic Resonance Spectroscopy | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.19 | Mass Spectroscopy of Proteins | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.20 | Monoamines: Human Brain Imaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.21 | Neuroimaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.22 | Nutrition | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.23 | Optical Imaging of Intrinsic Signals | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.24 | Optical Monitoring of Exo- and Endocytosis | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.25 | Pain: Neuroimaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.26 | Perfusion MRI | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.27 | Positron Emission Tomography(PET） | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.28 | Prediction Errors in Neural Processing: Imaging in Humans | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.29 | Reward Processing: Human Imaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.30 | Single Photon Emission Computed Tomography(SPECT） | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.31 | Single Photon Emission Computed Tomography(SPECT）：Technique | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.32 | Social Emotion: Neuroimaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.33 | Two-Photon Imaging | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.34 | Visual Cortex: Mapping of Functional Architecture Using Optical Imaging .. | | parentid:MCB80.3x-6.3
+MCB80.3x-6.3.35 | Voxel Based Morphometry | | parentid:MCB80.3x-6.3
+MCB80.3x-7 | 细胞兴奋性、神经系统的基因表达与调控 | | parentid:MCB80.3x
+MCB80.3x-7.1 | Action Potential Initiation and Conduction in Axons | | parentid:MCB80.3x-7
+MCB80.3x-7.1.2 | Calcium and Signal Transduction | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.3 | Calcium Channel and Calcium-Activated Potassium Channel Coupling | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.4 | Calcium Channel Subtypes Involved in Neurotransmitter Release | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.5 | Calcium Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.6 | Calcium Channels and SNARE Proteins | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.7 | Calcium Homeostasis in Glia | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.8 | Calcium Waves in Glia | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.9 | Calcium Waves Purinergic Regulation | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.10 | Cotransmission | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.11 | Cyclic Nucleotide-Gated and Hyperpolarization-Activated Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.12 | Dendritic Signal Integration | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.13 | Dorsal Root Ganglion Neurons | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.14 | Glial Influence on Synaptic Transmission | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.15 | Glutamate Receptor Clusters Narp, EphB2 Receptor, Stargazin | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.16 | Glutamate Regulation of Dendritic Spine Form and Function | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.17 | Hair Cells Sensory Transduction | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.18 | Hodgkin-Huxley Models | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.19 | Information Coding | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.20 | Inwardly Rectifying Potassium Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.21 | Ion Channel Localization in Axons | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.22 | Ion Channel Localization in Cell Bodies and Dendrites | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.23 | Ionic Channels in Glia | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.24 | Large Conductance Calcium-Activated Potassium Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.25 | Myelin Molecular Architecture of CNS and PNS Myelin Sheath | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.26 | Neuromodulation of Calcium Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.27 | Neuromodulation of Sodium Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.28 | Neuronal Pacemaking ， | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.29 | Neutrotransmission and Neuromodulation Acetylcholine | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.30 | Potassium Channel Regulation | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.31 | Schwann Cells and Axon Relationship | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.32 | Sodium Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.33 | Spike-Timing-Dependent Plasticity(STDP） | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.34 | Spine Plasticity | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.35 | Synaptic Transmission Models | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.36 | Transient Receptor Potential(TRP） Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.37 | Two-P-Domain(K2p） Potassium Channels Leak Conductance Regulators of Excitability | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.38 | Ultrastructural Analysis of Spine Plasticity | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.39 | Voltage Gated Potassium Channels Structure and Function of Kvl to Kv9 Subfamilies | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.40 | Voltage-Gated Calcium Channels | | parentid:MCB80.3x-7.1
+MCB80.3x-7.1.41 | Voltage-Gated Potassium Channels(Kv10-Kv12） | | parentid:MCB80.3x-7.1
+MCB80.3x-7.2 | 神经系统的基因表达与调控 | | parentid:MCB80.3x-7
+MCB80.3x-7.2.1 | Alternative Splicing in the Nervous System | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.2 | Alzheimers Disease Molecular Genetics | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.3 | Alzheimers Disease Transgenic Mouse Models | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.4 | Aversive Emotions Genetic Mechanisms of Serotonin | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.5 | BAC Transgenesis Cell-Type Specific Expression in the Nervous System | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.6 | Circadian Gene Expression in the Suprachiasmatic Nucleus | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.7 | Clock Gene Regulation of Endocrine Function | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.8 | Clock Genes and Metabolic Regulation | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.9 | Decoding Neuron Transcriptome by SAGE | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.10 | Dendrites Localized Translation | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.11 | Gene Expression Dysregulation in CNS Pathophysiology | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.12 | Gene Expression in Normal Aging Brain | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.13 | Gene Expression in the Evolution of the Human Brain | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.14 | Gene Expression Regulation Activity-Dependent | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.15 | Gene Expression Regulation Chromatin Modification in the CNS | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.16 | Gene Expression Regulation Steroid Hormone Effects | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.17 | Gene Therapy Direct Viral Delivery | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.18 | Gene Therapy Genetically Modified Cells | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.19 | Genetic Influence on CNS Gene Expression Impact on Behavior | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.20 | Genetic Regulation of Circadian Rhythms in Drosophila | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.21 | Genomic Disorder and Gene Expression in the Developing CNS | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.22 | Genomics of Brain Aging Apolipoprotein E | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.23 | Genomics of Brain Aging Nuclear and Mitochondrial Genomes | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.24 | Genomics of Brain Aging Twin Studies | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.25 | Hippocampus Molecular Anatomy | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.26 | Hox Genes Expression | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.27 | Microarray use for the Analysis of the CNS | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.28 | Molecular Anatomy of the Mammalian Brain | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.29 | Neuromuscular Junction Neuronal Regulation of Gene Transcription at the Vertebrate | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.30 | Olfactory Insights from Transcriptional Profiling | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.31 | Pain and Genes | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.32 | Plasticity, and Activity-Dependent Regulation of Gene Expression | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.33 | Psychiatric Disorders Functional Genomics | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.34 | Psychiatric Genomics and Expression Profiling | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.35 | Single Cell Genomic DNA Analysis | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.36 | Sleep and Sleep States Gene Expression | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.37 | Sox Gene Expression | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.38 | Stress Response Genetic Consequences | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.39 | Thyroid Hormone and Transcriptional Regulation in the CNS | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.40 | Transcription and Reward Systems | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.41 | Transcription Control and the Circadian Clock | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.42 | Transcription Factors in Synaptic Plasticity and Learning and Memory | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.43 | Transcriptional Networks and the Spinal Cord | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.44 | Transcriptional Silencing | | parentid:MCB80.3x-7.2
+MCB80.3x-7.2.45 | VelociGene and VelociMouse High-Throughput Approaches for Generating Targeted Mutations in Mice on a Genome-Wide Scale | | parentid:MCB80.3x-7.2
+MCB80.3x-8 | 神经胶质细胞 | | parentid:MCB80.3x
+MCB80.3x-8.1 | 神经胶质细胞：起源、多样性与功能 | | parentid:MCB80.3x-8
+MCB80.3x-8.1.1 | Activity-Dependent Metabolism in Glia and Neurons | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.2 | Astrocyte: Calcium Signaling | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.3 | Astrocyte: Identification Methods | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.4 | Astrocyte: Neurotransmitter and Hormone Receptors | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.5 | Astrocyte: Response to Injury | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.6 | Axon Guidance by Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.7 | Axonal Regeneration: Role of the Extracellular Matrix and the Glial Scar | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.8 | Bergmann Glial Cells | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.9 | Calcium Homeostasis in Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.10 | Calcium Waves in Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.11 | Cytokine Receptors in Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.12 | Enteric Nervous System: Glial Cells and Interstitial Cells of Cajal | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.13 | Ependymal Cells | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.14 | Gap Junctions and Hemichannels in Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.15 | Glia and Stroke | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.16 | Glia Control of Blood Flow | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.17 | Glial Cells: Astrocytes and Oligodendrocytes during Normal Brain Aging. | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.18 | Glial Cells: Invertebrate | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.19 | Glial Cells: Microglia during Normal Brain Aging | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.20 | Glial Cells: T Cell Interactions | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.21 | Glial Energy Metabolism: A NMR Spectroscopy Perspective | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.22 | Glial Energy Metabolism: Overview | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.23 | Glial Glutamate and GABA Metabolism | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.24 | Glial Glutamate Transporters | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.25 | Glial Glutamate Transporters: Electrophysiology | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.26 | Glial Glycogen Metabolism | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.27 | Glial Growth Factors | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.28 | Glial Influence on Synaptic Transmission | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.29 | Glial Ion Homeostasis: A Fluorescence Microscopy Approach | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.30 | Glial Plasticity and Neuroendocrine Regulation | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.31 | Glial Responses to Injury | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.32 | Glial Responses to Virus Infection | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.33 | Giial Steroid Metabolism | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.34 | Glioma | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.35 | Intermediate Filaments | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.36 | Ionic Channels in Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.37 | Macroglial Lineages | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.38 | Microglia Identification Methods | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.39 | Microglia Properties | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.40 | Microglial Response to Injury | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.41 | Myelin: Molecular Architecture of CNS and PNS Myelin Sheath | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.42 | Neuron-Glia pH Regulation | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.43 | Neuron-Glia Coupling in Glutathione Metabolism | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.44 | Neuropeptides and Receptors in Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.45 | Neurotransmitter and Hormone Receptors on Oligodendrocytes and Schwann Cells | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.46 | Neurotransmitter Release from Astrocytes | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.47 | Oligodendrocyte and Schwann Cell Identification Methods | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.48 | Oligodendrocyte Morphology | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.49 | Oligodendrocyte Specification | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.50 | Potassium Homeostasis in Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.51 | Radial Glial Cells: Brain Functions | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.52 | Retinal Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.53 | Schwann Cell Development | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.54 | Schwann Cell Morphology | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.55 | Schwann Cells and Axon Relationship | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.56 | Schwann Cells and Plasticity of the Neuromuscular Junction | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.57 | Transplantation of Myelin Forming Cells | | parentid:MCB80.3x-8.1
+MCB80.3x-8.1.58 | Transporter Proteins in Neurons and Glia | | parentid:MCB80.3x-8.1
+MCB80.3x-8.2 | 能量与离子的细胞内调控 | | parentid:MCB80.3x-8
+MCB80.3x-8.2.1 | Activity-Dependent Regulation of Glucose Transporters | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.2 | Brain Glucose Metabolism:Age, Alzheimer's Disease, and ApoE Allele Effects | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.3 | Brain Injury: Magnetic Resonance Studies of Metabolic Aspects | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.4 | Brain Na,K-ATPase | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.5 | Cell-Cell Communication Through the Extracellular Space | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.6 | Intracellular Calcium and Neuronal Death | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.7 | Mitochondrial Dysfunction in Nervous System Injury | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.8 | Monocarboxylate Transporters | | parentid:MCB80.3x-8.2
+MCB80.3x-8.2.9 | Regulation of Cell Volume in Neural Cells | | parentid:MCB80.3x-8.2
+MCB80.3x-9 | 细胞内转运与细胞骨架 | | parentid:MCB80.3x
+MCB80.3x-9.1 | 细胞内信号级联与第二信使 | | parentid:MCB80.3x-9
+MCB80.3x-9.1.1 | Calcium-Calmodulin Kinase II(CaMKII) in Learning and Memory | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.2 | Cyclic AMP(cAMP) Role in Learning and Memory | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.3 | Eph Receptor Signaling and Spine Morphology | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.4 | MAP Kinase Signaling in Learning and Memory | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.5 | Neural Crest Cell Diversification and Specification: ErbB Role | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.6 | Notch Pathway: Lateral Inhibition | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.7 | Notch Signal Transduction: Molecular and Cellular Mechanisms | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.8 | Retinoic Acid Signaling and Neural Patterning | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.9 | Sonic Hedgehog and Neural Patterning | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.10 | Synaptic Plasticity: Diacylglycerol Signalling Role | | parentid:MCB80.3x-9.1
+MCB80.3x-9.1.11 | Wnt Pathway and Neural Patterning | | parentid:MCB80.3x-9.1
+MCB80.3x-9.2 | 细胞内转运与细胞骨架 | | parentid:MCB80.3x-9
+MCB80.3x-9.2.1 | Actin Cytoskeleton in Growth Cones, Nerve Terminals, and Dendritic Spines | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.2 | AMPA Receptor Cell Biology/Trafficking | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.3 | Axonal and Dendritic Identity and Structure: Control of | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.4 | Axonal and Dendritic Transport by Dyneins and Kinesins in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.5 | Axonal mRNA Transport and Functions | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.6 | Axonal Transport and ALS | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.7 | Axonal Transport and Alzheimer's Disease | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.8 | Axonal Transport and Huntington's Disease | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.9 | Axonal Transport and Neurodegenerative Diseases | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.10 | Axonal Transport Disorders | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.11 | Axonal Transport Tracers | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.12 | Cytoskeletal Interactions in the Neuron | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.13 | Cytoskeleton in Plasticity | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.14 | Dendrites: Localized Translation | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.15 | Dendritic RNA Transport: Dynamic Spatio-Temporal Control of Neuronal Gene Expression | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.16 | Dystrophin, Associated Proteins, and Muscular Dystrophy | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.17 | Intermediate Filaments | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.18 | LIM Kinase and Actin Regulation of Spines | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.19 | Lysosome and Endosome Organization and Transport in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.20 | Microtubule Associated Proteins in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.21 | Microtubules: Organization and Function in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.22 | Mitochondrial Organization and Transport in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.23 | Myosin Transport and Neuronal Function | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.24 | Neurofilaments: Organization and Function in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.25 | Neuronal Motility and Structure: MARK and GSK Pathways | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.26 | NMDA Receptors, Cell Biology and Trafficking | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.27 | Nuclear Movements in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.28 | Peroxisomes: Organization and Transport in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.29 | Prion Transport | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.30 | Proteasome Role in Neurodegeneration | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.31 | Protein Folding and the Role of Chaperone Proteins in Neurodegenerative Disease | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.32 | Retrograde Neurotrophic Signaling | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.33 | Slow Axonal Transport | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.34 | Spectrin: Organization and Function in Neurons | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.35 | Transport Dependent Damage Signaling | | parentid:MCB80.3x-9.2
+MCB80.3x-9.2.36 | Vesicular Sorting to Axons and Dendrites | | parentid:MCB80.3x-9.2
+MCB80.3x-9.3 | 分泌与囊泡循环 | | parentid:MCB80.3x-9
+MCB80.3x-9.3.1 | Active Zone | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.2 | Botulinum and Tetanus Toxins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.3 | Calcium Channel Subtypes Involved in Neurotransmitter Release | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.4 | Calcium Channels and SNARE Proteins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.5 | CIRL/Latrophilins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.6 | Clathrin and Clathrin-Adaptors | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.7 | Complexins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.8 | Cysteine-String Proteins(CSPs) | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.9 | Dynamin | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.10 | Endocytosis: Kiss and Run | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.11 | Exocytosis: Ca2+-Sensitivity | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.12 | Fusion Pore | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.13 | Large Dense Core Vesicles(LDCVs) | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.14 | Latrotoxin | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.15 | Liprins, ELKS, and RIM-BP Proteins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.16 | Lysosomal System | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.17 | Muncl3 and Associated Molecules | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.18 | Muncl8 | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.19 | Neurexins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.20 | Neuroligins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.21 | Neurosecretion(Regulated Exocytosis in Neuroendocrine Cells) | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.22 | Neurotransmitter Release from Astrocytes | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.23 | Neurotransmitter Release: Synchronous and Asynchronous | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.24 | NSF and SNAPs | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.25 | Optical Monitoring of Exo- and Endocytosis | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.26 | PHR(Pam/Highwire/RPM-l) | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.27 | Piccolo and Bassoon | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.28 | Presynaptic Receptor Signaling | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.29 | Rab3 | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.30 | Rab3A Interacting Molecules(RIMs) | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.31 | RNA Granules: Functions within Presynaptic Terminals and Postsynaptic Spines | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.32 | SNAREs | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.33 | Synapsins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.34 | Synaptic Plasticity: Short-Term Mechanisms | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.35 | Synaptic Vesicle Protein-2(SV2) | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.36 | Synaptic Vesicles | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.37 | Synaptojanin | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.38 | Synaptotagmins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.39 | SynCAMs | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.40 | Synucleins | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.41 | Vesicle Pools | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.42 | Vesicular Neurotransmitter Transporters | | parentid:MCB80.3x-9.3
+MCB80.3x-9.3.43 | Voltage-Gated Calcium Channels | | parentid:MCB80.3x-9.3
+MCB80.3x-10 | 脑的智能活动 | | parentid:MCB80.3x
+MCB80.3x-10.1 | 决策与神经经济学 | | parentid:MCB80.3x-10
+MCB80.3x-10.1.1 | Animal Communication:Honesty and Deception | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.2 | Decision-Making and Neuroeconomics | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.3 | Decision-Making and Vision | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.4 | Decision-Making in Financial Markets | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.5 | Delayed Reinforcement:Economics | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.6 | Delayed Reinforcement:Neuroscience | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.7 | Game Theory and the Economics of Animal Communication | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.8 | Games in Monkeys:Neurophysiology and Motor Decision-Making | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.9 | Neuroeconomics:History | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.10 | Neuroethological Perspective | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.11 | Reasoning and Problem Solving:Models | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.12 | Reward Decision-Making | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.13 | Social Cognition | | parentid:MCB80.3x-10.1
+MCB80.3x-10.1.14 | Social Interaction | | parentid:MCB80.3x-10.1
+MCB80.3x-10.2 | 执行功能与高级认知 | | parentid:MCB80.3x-10
+MCB80.3x-10.2.1 | Agnosia | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.2 | Alexia | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.3 | Anmesia:Declarative and Nondeclarative Memory | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.4 | Animal Models of Amnesia | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.5 | Attention and Eye Movements | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.6 | Attention:Models | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.7 | Attentional Functions in Learning and Memory | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.8 | Attentional Mechanisms in Ventral Pathway | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.9 | Attentional Networks | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.10 | Attentional Networks in the Parietal Cortex | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.11 | Brain-Computer Interface | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.12 | Cognition:An Overview of Neuroimaging Techniques | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.13 | Cognition:Basal Ganglia Role | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.14 | Cognition:Cerebellum Role | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.15 | Cognition:Neuropharmacology | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.16 | Cognitive Control and Development | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.17 | Cognitive Neuroscience:An Overview | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.18 | Emotion and Vigilance | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.19 | Emotional Influences on Memory and Attention | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.20 | Executive Function and Higher-Order Cognition:Assessment in Animals | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.21 | Executive Function and Higher-Order Cognition:Computational Models | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.22 | Executive Function and Higher-Order Cognition:Definition and Neural Substrates | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.23 | Executive Function and Higher-Order Cognition:EEG Studies | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.24 | Executive Function and Higher-Order Cognition:Neuroimaging | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.25 | Executive Functions:Eye Movements and Neuropsychiatric Disorders | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.26 | Frontal Lobe Syndrome | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.27 | Functional Amnesia | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.28 | Hemispheric Specialization and Cognition | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.29 | Human Methods:Psychophysics | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.30 | Humans | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.31 | Inhibitory Control over Action and Memory | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.32 | Neglect Syndrome and the Spatial Attention Network | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.33 | Neural Coding of Spatial Representations | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.34 | Neuropsychological Testing | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.35 | Parietal Cortex and Spatial Attention | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.36 | Perception and Eye Movements | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.37 | Prefrontal Cortex | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.38 | Prefrontal Cortex:Structure and Anatomy | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.39 | Prosopagnosia | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.40 | Psychophysics of Attention | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.41 | Referentiality and Concepts in Animal Cognition | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.42 | Sleep Deprivation and Brain Function | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.43 | Social Interaction Effects on Reward and Cognitive Abilities in Monkeys | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.44 | Spatial Cognition | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.45 | Spatial Cognition and Executive Function | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.46 | Spatial Cognitive Maps | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.47 | Spatial Orientation:Our Whole-Body Motion and Orientation Sense | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.48 | Strategic Control of Memory | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.49 | Task Switching | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.50 | Vestibular Influences on Cognition | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.51 | Vision:Mechanisms of Orientation,Direction and Depth | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.52 | Visual Attention | | parentid:MCB80.3x-10.2
+MCB80.3x-10.2.53 | Working Memory:Capacity Limitations | | parentid:MCB80.3x-10.2
+MCB80.3x-10.3 | 半球特化 | | parentid:MCB80.3x-10
+MCB80.3x-10.3.1 | Brain Asymmetry :Evolution | | parentid:MCB80.3x-10.3
+MCB80.3x-10.3.2 | Dichotic Listening Studies of Brain Asymmetry | | parentid:MCB80.3x-10.3
+MCB80.3x-10.3.3 | Hemispheric Specialization and Cognition | | parentid:MCB80.3x-10.3
+MCB80.3x-10.3.4 | Split-Brain Patients | | parentid:MCB80.3x-10.3
+MCB80.3x-10.4 | 智能 | | parentid:MCB80.3x-10
+MCB80.3x-10.4.1 | Animal Intelligence:The Search for Animal Intelligence | | parentid:MCB80.3x-10.4
+MCB80.3x-10.4.2 | Artificial Intelligence | | parentid:MCB80.3x-10.4
+MCB80.3x-10.4.3 | Numerical Intelligence:Neural Substrates | | parentid:MCB80.3x-10.4
+MCB80.3x-10.5 | 振荡神经活性 | | parentid:MCB80.3x-10
+MCB80.3x-10.5.1 | Central Pattern Generators | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.2 | Central Pattern Generators:Sensory Feedback | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.3 | Gap Junctions and Neuronal Oscillations | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.4 | Information Coding | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.5 | Neural Oscillators and Dynamical Systems Models | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.6 | Neuronal Pacemaking | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.7 | Pulsatility in Neuroendocrine Systems | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.8 | Sleep Oscillations | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.9 | Sleep Oscillations and PGO Waves | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.10 | Spiking Neuron Models | | parentid:MCB80.3x-10.5
+MCB80.3x-10.5.11 | Swim Oscillator Networks | | parentid:MCB80.3x-10.5
+MCB80.3x-11 | 稳态、神经网络与神经行为学 | | parentid:MCB80.3x
+MCB80.3x-11.1 | 计算神经行为学与神经网络 | | parentid:MCB80.3x-11
+MCB80.3x-11.1.1 | Active Perception | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.2 | Attention:Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.3 | Attractor Network Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.4 | Auditory Cortex:Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.5 | Axonal Pathfinding | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.6 | Bayesian Cortical Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.7 | Bayesian Models of Motor Control | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.8 | Birdsong Learning | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.9 | Brain Scaling Laws | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.10 | Brain-Computer Interface | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.11 | Circadian Rhythm Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.12 | Computational Approaches to Motor Control | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.13 | Computational Methods | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.14 | Computational Neuroethology | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.15 | Connectionist Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.16 | Connectionist Models of Language Processing | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.17 | Consciousness:Theoretical and Computational Neuroscience | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.18 | Consciousness:Theories and Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.19 | Electrophysiology:EEG and ERP Analysis | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.20 | Emotion:Computational Modeling | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.21 | Executive Function and Higher-Order Cognition:Computational Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.22 | Gain Modulation | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.23 | Hippocampus:Computational Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.24 | Hodgkin-Huxley Model | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.25 | Homeostasis at Multiple Spatial and Temporal Scales | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.26 | Ideal Observer Theory | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.27 | Information Coding | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.28 | Learning,Action,Inference and Neuromodulation | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.29 | Memory:Computational Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.30 | Neural Integrator Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.31 | Neural Oscillators and Dynamical Systems Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.32 | Neuromorphic Systems | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.33 | Neuroplasticity:Computational Approaches | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.34 | Olfactory Coding | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.35 | Population Codes:Theoretic Aspects | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.36 | Retinal Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.37 | Self-Organizing Maps | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.38 | Sensorimotor Integration:Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.39 | Sleep Oscillations | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.40 | Spike-Timing-Dependent Plasticity Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.41 | Spiking Neuron Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.42 | Statistical Analysis of Visual Perception | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.43 | Statistical Learning of Language | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.44 | Statistical Tests and Inferences | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.45 | Stomatogastric Ganglion Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.46 | Swim Oscillator Networks | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.47 | Synaptic Transmission:Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.48 | Synfire Chains | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.49 | Visual Cortical Models of Orientation Tuning | | parentid:MCB80.3x-11.1
+MCB80.3x-11.1.50 | Visual Motion Models | | parentid:MCB80.3x-11.1
+MCB80.3x-11.2 | 稳态：概述 | | parentid:MCB80.3x-11
+MCB80.3x-11.2.1 | Hypothalamic Structure-Function Relationships | | parentid:MCB80.3x-11.2
+MCB80.3x-11.2.2 | Magnocellular Neurosecretory System:Organization,Plasticity, Model Peptidergic Neurons | | parentid:MCB80.3x-11.2
+MCB80.3x-11.2.3 | Neuron-Glia pH Regulation | | parentid:MCB80.3x-11.2
+MCB80.3x-11.3 | 稳态：能量平衡 | | parentid:MCB80.3x-11
+MCB80.3x-11.3.1 | Activity-Dependent Metabolism in Glia and Neurons | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.2 | Activity-Dependent Regulation of Glucose Transporter | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.3 | Brain Glucose Metabolism:Age,Alzheimer's Disease,and ApoE Allele Effects | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.4 | Calcium Homeostasis in Glia | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.5 | Energy Homeostasis:Adiposity Signals | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.6 | Energy Homeostasis:Endocannabinoid System | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.7 | Energy Homeostasis:Hypothalamic Development | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.8 | Energy Homeostasis:Paraventricular Nucleus(PVN) System | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.9 | Energy Homeostasis:Visceral Control | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.10 | Exercise:Optimizing Function and Survival at the Cellular Level | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.11 | Gap Junctions:Metabolic Exchanges | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.12 | Gastrointestinal Signals:Satiety | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.13 | Gastrointestinal Signals:Stimulation | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.14 | Glial Energy Metabolism:A NMR Spectroscopy Perspective | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.15 | Glial Energy Metabolism:Overview | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.16 | Glial Glycogen Metabolism | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.17 | Glycogen Metabolism in CNS White Matter | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.18 | Hormonal Signaling to the Brain for the Control of Feeding/Energy Balance | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.19 | Motor Control of Feeding and Drinking | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.20 | Neuroendocrine Control of Energy Balance(Central Circuits/Mechanisms) | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.21 | Neuron-Glia Coupling in Glutathione Metabolism | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.22 | Nutrient Sensing:Carbohydrates | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.23 | Nutrient Sensing:Cellular Metabolism | | parentid:MCB80.3x-11.3
+MCB80.3x-11.3.24 | Nutrition | | parentid:MCB80.3x-11.3
+MCB80.3x-11.4 | 稳态：体液与矿物质平衡 | | parentid:MCB80.3x-11
+MCB80.3x-11.4.1 | Angiotensin II | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.2 | Atrial Natriuretic Peptide:Fluid/Mineral Balance | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.3 | Blood Pressure:Baroreceptors | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.4 | Circumventricular Organs | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.5 | Fluid and Electrolyte Homeostasis:Clinical Disease | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.6 | Neurohypophyseal System | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.7 | Osmoregulation | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.8 | Salt Appetite | | parentid:MCB80.3x-11.4
+MCB80.3x-11.4.9 | Thirst | | parentid:MCB80.3x-11.4
+MCB80.3x-11.5 | 稳态：食物摄入 | | parentid:MCB80.3x-11
+MCB80.3x-11.5.1 | Central Gustatory System and Ingestive Behavior | | parentid:MCB80.3x-11.5
+MCB80.3x-11.5.2 | Cortical Processing of the Reward Value of Food | | parentid:MCB80.3x-11.5
+MCB80.3x-11.5.3 | Exercise:Optimizing Function and Survival at the Cellular Level | | parentid:MCB80.3x-11.5
+MCB80.3x-11.5.4 | Food and Water Intake:Regulation | | parentid:MCB80.3x-11.5
+MCB80.3x-11.5.5 | Gastrointestinal Tract Role in Neural Control of Metabolism,Food Intake and Body Weight:A Summary | | parentid:MCB80.3x-11.5
+MCB80.3x-11.5.6 | Neuropeptides:Food Intake | | parentid:MCB80.3x-11.5
+MCB80.3x-11.6 | 稳态：体温调节 | | parentid:MCB80.3x-11
+MCB80.3x-11.6.1 | Autonomic Nervous System:Central Thermoregulatory Control | | parentid:MCB80.3x-11.6
+MCB80.3x-11.6.2 | Energy Homeostasis:Thermoregulation | | parentid:MCB80.3x-11.6
+MCB80.3x-11.6.3 | Thermoregulation during Sleep and Sleep Deprivation | | parentid:MCB80.3x-11.6
+MCB80.3x-11.6.4 | Thermoregulation:Autonomic,Age-Related Changes | | parentid:MCB80.3x-11.6
+MCB80.3x-11.7 | 神经行为学 | | parentid:MCB80.3x-11
+MCB80.3x-11.7.1 | Behavioral Hierarchies | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.2 | Development of Behavior | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.3 | Eleetrocoinmunication | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.4 | Extinction:Anatomy | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.5 | Hormones and Behavior | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.6 | Magnetic Sense in Animal Navigation | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.7 | Neuroendocrine Control:Maternal Behavior | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.8 | Neuroethological Perspective | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.9 | Neuromodulation | | parentid:MCB80.3x-11.7
+MCB80.3x-11.7.10 | Visually Guided Behavior | | parentid:MCB80.3x-11.7
+MCB80.3x-12 | 意识与情绪 | | parentid:MCB80.3x
+MCB80.3x-12.1 | 意识 | | parentid:MCB80.3x-12
+MCB80.3x-12.1.1 | Awareness:Functional Imaging | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.2 | Blindsight:Residual Vision | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.3 | Cognition:Neuropharmacology | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.4 | Coma | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.5 | Coma and Other Pathological Disorders of Consciousness | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.6 | Consciousness:Neural Basis of Conscious Experience | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.7 | Consciousness:Neurophysiology and Visual Awareness in | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.8 | Consciousness:Philosophy | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.9 | Consciousness:Theoretical and Computational Neuroscience | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.10 | Consciousness:Theories and Models | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.11 | The AIM Model of Dreaming,Sleeping,and Waking Consciousness | | parentid:MCB80.3x-12.1
+MCB80.3x-12.1.12 | Vegetative State | | parentid:MCB80.3x-12.1
+MCB80.3x-12.2 | 情绪：概述 | | parentid:MCB80.3x-12
+MCB80.3x-12.2.1 | Depression and the Brain | | parentid:MCB80.3x-12.2
+MCB80.3x-12.2.2 | Emotion in Speech | | parentid:MCB80.3x-12.2
+MCB80.3x-12.2.3 | Emotion Systems and the Brain | | parentid:MCB80.3x-12.2
+MCB80.3x-12.2.4 | Emotion:Computational Modeling | | parentid:MCB80.3x-12.2
+MCB80.3x-12.2.5 | Emotional Control of the Autonomic Nervous System | | parentid:MCB80.3x-12.2
+MCB80.3x-12.2.6 | Nightmares | | parentid:MCB80.3x-12.2
+MCB80.3x-12.2.7 | Sexual Behavior:Neuroendocrine Control | | parentid:MCB80.3x-12.2
+MCB80.3x-12.3 | 情绪：厌恶 | | parentid:MCB80.3x-12
+MCB80.3x-12.3.1 | Amygdala:Contributions to Fear | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.2 | Aversive Emotions:Genetic Mechanisms of Serotonin | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.3 | Aversive Emotions:Molecular Basis of Unconditioned Fear | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.4 | Emotion:Neuroimaging | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.5 | Fear Conditioning and Synaptic Plasticity | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.6 | Genetics of Human Anxiety and Its Disorders | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.7 | Learned Flavor Aversions and Preferences | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.8 | Panic Disorder | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.9 | Pharmacology of Fear Extinction | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.10 | Phobia and Human Evolution | | parentid:MCB80.3x-12.3
+MCB80.3x-12.3.11 | Posttraumatic Stress Disorder as an Emotional'Disorder | | parentid:MCB80.3x-12.3
+MCB80.3x-12.4 | 认知与情绪 | | parentid:MCB80.3x-12
+MCB80.3x-12.4.1 | Appetitive Systems:Amygdala and Striatum | | parentid:MCB80.3x-12.4
+MCB80.3x-12.4.2 | Emotion and Vigilance | | parentid:MCB80.3x-12.4
+MCB80.3x-12.4.3 | Emotional Hormones and Memory Modulation | | parentid:MCB80.3x-12.4
+MCB80.3x-12.4.4 | Emotional Influences on Memory and Attention | | parentid:MCB80.3x-12.4
+MCB80.3x-12.4.5 | Social Interaction Effects on Reward and Cognitive Abilities in Monkeys | | parentid:MCB80.3x-12.4
+MCB80.3x-12.5 | 情绪：社会 | | parentid:MCB80.3x-12
+MCB80.3x-12.5.1 | Aggression:Hormonal Basis | | parentid:MCB80.3x-12.5
+MCB80.3x-12.5.2 | Aggression:Neurochemical and Molecular Mechanisms | | parentid:MCB80.3x-12.5
+MCB80.3x-12.5.3 | Emotional Learning in Humans | | parentid:MCB80.3x-12.5
+MCB80.3x-12.5.4 | Neuroendocrinology of Social/Affiliative Behavior | | parentid:MCB80.3x-12.5
+MCB80.3x-12.5.5 | Pheromones in Humans and Social Chemosignals | | parentid:MCB80.3x-12.5
+MCB80.3x-12.5.6 | Social Brain:Evolution | | parentid:MCB80.3x-12.5
+MCB80.3x-12.5.7 | Social Emotion:Neuroimaging | | parentid:MCB80.3x-12.5
+MCB80.3x-12.5.8 | Social Interaction | | parentid:MCB80.3x-12.5
+MCB80.3x-12.6 | 奖励与奖励系统 | | parentid:MCB80.3x-12
+MCB80.3x-12.6.1 | Addiction:Neurobiological Mechanism | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.2 | Connectivity of Primate Reward Centers | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.3 | Cortical Processing of the Reward Value of Food | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.4 | Dopamine: Cellular Actions | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.5 | Drug Addiction:Behavioral Neurophysiology | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.6 | Drug Addiction:Behavioral Pharmacology of Drug Addiction in Rats | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.7 | Drug Addiction:Cellular Mechanisms | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.8 | Drug Addiction:Neuroimaging | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.9 | Drugs Addiction :Actions | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.10 | Electrical Serf-Stimulation | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.11 | Energy Homeostasis:Endocannabinoid System | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.12 | Goal-Directed Behavior Theories | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.13 | 3,4-Methylenedioxymethamphetamine(MDMA, "Ecstasy") | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.14 | Neuropsychology of Primate Reward Processes | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.15 | Prefrontal Contributions to Reward Encoding | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.16 | Psychopharmacology of Reward and Appetite in Rats | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.17 | Representation of Reward | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.18 | Reward and Learning | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.19 | Reward Decision-Making | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.20 | Reward Neurophysiology and Orbitofrontal Cortex | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.21 | Reward Neurophysiology and Primate Cerebral Cortex | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.22 | Reward Processing:Human Imaging | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.23 | Reward Systems:Human | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.24 | Serotonin-Related Psychedelic Drugs | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.25 | Substance.Abuse and Dependence | | parentid:MCB80.3x-12.6
+MCB80.3x-12.6.26 | Transcription and Reward Systems | | parentid:MCB80.3x-12.6
+MCB80.3x-12.7 | 压力与神经系统 | | parentid:MCB80.3x-12
+MCB80.3x-12.7.1 | Adrenal Steroids:Biphasic Effects on Neurons | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.2 | Chronic(Repeated)Stress:Consequences,Adaptations | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.3 | Circumventricular Organs in Neuroendocrine Control | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.4 | Corticotropin-Releasing Hormone:Integration of Adaptive Responses to Stress | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.5 | Diabetes Type 2 and Stress:Impact on Memory and the Hippocampus | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.6 | Gene Therapy and Protection from Stress-Induced Brain Damage | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.7 | Mother-Infant Interaction in the Variable Foraging Demand Model | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.8 | Posttraumatic Stress Disorder:Overview | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.9 | Social Stress in Adult Primates | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.10 | Stress and Cognition | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.11 | Stress and Neural Involvement in Metabolism | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.12 | Stress and Neuronal Plasticity | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.13 | Stress and Parasympathetic Control | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.14 | Stress and Suicide | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.15 | Stress and Vulnerability to Brain Damage | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.16 | Stress Response and Self-Esteem | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.17 | Stress Response:Genetic Consequences | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.18 | Stress Response:Neural and Feedback Regulation of the HPA Axis | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.19 | Stress Response:Sex Differences | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.20 | Stress,Cytokines and Depressive Illness | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.21 | Stress,Dopamine,and Puberty | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.22 | Stress,Sex and Adolescent Nicotine Response | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.23 | Stress,the HPA Axis and Depressive Illness | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.24 | Stress:Definition and History | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.25 | Stress:Homeostasis,Rheostasis, Allostasis and Allostatic Load | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.26 | Sympathetic Noradrenergic and Adrenomedullary Hormonal Systems in Stress and Distress | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.27 | Sympathoadrenal System:Neural Arm of the Stress Response | | parentid:MCB80.3x-12.7
+MCB80.3x-12.7.28 | TIP39(Tuberoinfundibular Peptide of 39 Residues) | | parentid:MCB80.3x-12.7
+MCB80.3x-13 | 学习与记忆 | | parentid:MCB80.3x
+MCB80.3x-13.1 | 动物模型 | | parentid:MCB80.3x-13
+MCB80.3x-13.1.1 | Aging and Memory in Animals | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.2 | Animal Models of Amnesia | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.3 | Invertebrate Models to Study Learning and Memory:Lymnaea | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.4 | Learning and Memory m Invertebrate Models: Tritonia | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.5 | Learmng and Memory m Invertebrates: Aplysia | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.6 | Learning and Memory in Invertebrates: C. Elegans | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.7 | Learnmg and Memory m Invertebrates: Drosophila | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.8 | Learning and Memory in Invertebrates: Hermissenda | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.9 | Learning and Memory m Invertebrates: Honey Bee | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.10 | Learning and Memory in Invertebrates: Limax | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.11 | Learning and Memory m Invertebrates: Mollusks | | parentid:MCB80.3x-13.1
+MCB80.3x-13.1.12 | Procedural Learning in Animals | | parentid:MCB80.3x-13.1
+MCB80.3x-13.2 | 突触可塑性与神经可塑性 | | parentid:MCB80.3x-13
+MCB80.3x-13.2.1 | Adult Cortical Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.2 | BDNF in Synaptic Plasticity and Memory | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.3 | Calcium-Caimodulin Kinase II(CaMKII) in Learning and Memory | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.4 | Cortical Plasticity and Learning: Mechanisms and Models | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.5 | Cyclic AMP(cAMP) Role in Learning and Memory | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.6 | Cytoskeleton in Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.7 | Endocannabinoid Role in Synaptic Plasticity and Learning | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.8 | Extracellular Matrix Molecules: Synaptic Plasticity and Learning | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.9 | Fear Conditioning and Synaptic Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.10 | Fragile X Syndrome | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.11 | GABAA Receptor Synaptic Functions | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.12 | Hebbian Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.13 | Long-Term Depression(LTD): Endocannabinoids and Cerebellar LTD | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.14 | Long-Term Depression(LTD): Metabotropic Glutamate Receptor(mGluR) and NMDAR-Dependent Forms | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.15 | Long-Term Depression: Cerebellum | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.16 | Long-Term Potentiation(LTP) | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.17 | Long-Term Potentiation(LTP): Mossy Fiber cAMP-Dependent Presynaptic LTP | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.18 | Long-Term Potentiation(LTP): NMDA Receptor Role | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.19 | Long-Term Potentiation and Long-Term Depression in Experience-Dependent Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.20 | MAP Kinase Signaling in Learning and Memory | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.21 | Metaplasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.22 | Neuroplasticity: Computational Approaches | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.23 | Pain and Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.24 | Plasticity of Intrinsic Excitability | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.25 | Plasticity, and Activity-Dependent Regulation of Gene Expression | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.26 | Post-Tetanic Potentiation(PTP) | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.27 | Presynaptic Facilitation | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.28 | Presynaptic Inhibition | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.29 | Spike-Timing-Dependent Plasticity(STDP) | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.30 | Stress and Neuronal Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.31 | Synaptic Capture and Tagging | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.32 | Synaptic Depression | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.33 | Synaptic Mechanisms of Learning | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.34 | Synaptic Plasticity and Place Cell Formation | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.35 | Synaptic Plasticity: Cerebellum | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.36 | Synaptic Plasticity: Diacylglycerol Signalling Role | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.37 | Synaptic Plasticity: Learning and Memory in Normal Aging | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.38 | Synaptic Plasticity: Neuronogenesis and Stem Cells in Normal Brain Aging | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.39 | Synaptic Plasticity: Short-Term Mechanisms | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.40 | Transcription Factors in Synaptic Plasticity and Learning and Memory | | parentid:MCB80.3x-13.2
+MCB80.3x-13.2.41 | Ubiquitin-Proteasome System and Plasticity | | parentid:MCB80.3x-13.2
+MCB80.3x-13.3 | 学习与记忆的系统和机制 | | parentid:MCB80.3x-13
+MCB80.3x-13.3.1 | Aging and Memory in Humans | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.2 | Aging: Brain Potential Measures and Reaction Time Studies | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.3 | Amnesia: Declarative and Nondeclarative Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.4 | Attentional Functions in Learning and Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.5 | Basal Forebrain and Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.6 | Birdsong Learning | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.7 | Birdsong Learning: Evolutionary, Behavioral, and Hormonal Issues | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.8 | Birdsong: The Neurobiology of Avian Vocal Learning | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.9 | Conditioned Reflex | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.10 | Conditioned Taste Aversion | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.11 | Conditioning: Simple Neural Circuits in the Honeybee | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.12 | Conditioning: Theories | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.13 | Declarative Memory System: Anatomy | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.14 | Emotional Hormones and Memory Modulation | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.15 | Emotional Influences on Memory and Attention | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.16 | Emotional Learning in Humans | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.17 | Episodic Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.18 | Episodic Memory: Assessment in Animals | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.19 | Event-Related Potentials(ERPs) | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.20 | Eyeblink Conditioning | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.21 | Functional Amnesia | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.22 | Hippocampus and Neural Representations | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.23 | Hippocampus: Computational Models | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.24 | Hormones and Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.25 | Humans | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.26 | Learned Flavor Aversions and Preferences | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.27 | Learning, Action, Inference and Neuromodulation | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.28 | Memory Consolidation: Cerebral Cortex | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.29 | Memory Consolidation: Systems | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.30 | Memory Disorders | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.31 | Memory Representation | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.32 | Memory: Computational Models | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.33 | Memory: Genetic Approaches | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.34 | Motor Autonomic Transmission | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.35 | Motor Skill Learning | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.36 | Multiple Memory Systems | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.37 | Operant Conditioning of Reflexes | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.38 | Perceptual Learning and Sensory Plasticity | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.39 | Perceptual Learning: Neural Mechanisms | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.40 | Pharmacology of Fear Extinction | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.41 | Prediction Errors in Neural Processing: Imaging in Humans | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.42 | Priming | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.43 | Procedural Learning in Humans | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.44 | Procedural Learning: Cerebellum Models | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.45 | Procedural Learning: Classical Conditioning | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.46 | Procedural Learning: Striatum | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.47 | Recognition Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.48 | Reinforcement Models | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.49 | Respiration | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.50 | Reward and Learning | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.51 | Semantic Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.52 | Short Term and Working Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.53 | Sleep-Dependent Memory Processing | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.54 | Spatial Memory: Assessment in Animals | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.55 | Statistical Learning of Language | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.56 | Strategic Control of Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.57 | Visual Associative Memory | | parentid:MCB80.3x-13.3
+MCB80.3x-13.3.58 | Working Memory: Capacity Limitations | | parentid:MCB80.3x-13.3
+MCB80.3x-14 | 节律与同步 | | parentid:MCB80.3x
+MCB80.3x-14.1 | 昼夜节律 | | parentid:MCB80.3x-14
+MCB80.3x-14.1.1 | Circadian Function and Therapeutic Potential of Melatonin in Humans | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.2 | Circadian Gene Expression in the Suprachiasmatic Nucleus | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.3 | Circadian Genes and the Sleep-Wake Cycle | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.4 | Circadian Metabolic Rhythms Regulated by the Suprachiasmatic Nucleus | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.5 | Circadian Organization | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.6 | Circadian Organization in Non-Mammalian Vertebrates | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.7 | Circadian Oscillations in the Suprachiasmatic Nucleus | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.8 | Circadian Regulation by the Suprachiasmatic Nucleus | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.9 | Circadian Regulation in Invertebrates | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.10 | Circadian Rhythm Models | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.11 | Circadian Rhythms in Sleepiness, Alertness, and Performance | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.12 | Circadian Rhythms: Influence of Light in Humans | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.13 | Circadian Systems: Evolution | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.14 | Clock Gene Regulation of Endocrine Function | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.15 | Clock Genes and Metabolic Regulation | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.16 | Entrainment of Circadian Rhythms by Light | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.17 | Genetic Regulation of Circadian Rhythms in Drosophila | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.18 | Genetics of Circadian Disorders in Humans | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.19 | Mammalian Sleep and Circadian Rhythms: Flies | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.20 | Melatonin Regulation of Circadian Rhythmicity in Vertebrates | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.21 | Non-Photoreceptor Photoreception | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.22 | Peripheral Circadian Oscillators | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.23 | Photoreceptors and Circadian Clocks | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.24 | Psychiatric Disorders Associated with Disturbed Sleep and Circadian Rhythms. | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.25 | Serotonin and the Regulation of Mammalian Circadian Rhythms | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.26 | Shift Work and Circadian Rhythms | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.27 | Single Cell Neuronal Circadian Clocks | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.28 | Sleep and Circadian Rhythm Disorders in Human Aging and Dementia | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.29 | Sleep and Waking in Drosophila | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.30 | Sleep: Development and Circadian Control | | parentid:MCB80.3x-14.1
+MCB80.3x-14.1.31 | Transcription Control and the Circadian Clock | | parentid:MCB80.3x-14.1
+MCB80.3x-14.2 | 季节节律 | | parentid:MCB80.3x-14
+MCB80.3x-14.2.1 | Photoperiodic Regulation of Reproductive Cycles | | parentid:MCB80.3x-14.2
+MCB80.3x-14.2.2 | Seasonal Changes in Night-Length and Impact on Human Sleep | | parentid:MCB80.3x-14.2
+MCB80.3x-14.2.3 | Seasonal Hormonal Changes and Behavior | | parentid:MCB80.3x-14.2
+MCB80.3x-14.2.4 | Seasonal Timing: Neural Mechanisms | | parentid:MCB80.3x-14.2
+MCB80.3x-14.3 | 睡眠、做梦与清醒 | | parentid:MCB80.3x-14
+MCB80.3x-14.3.1 | Autonomic Dysregulati0n During REM Sleep | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.2 | Cataplexy | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.3 | Coma | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.4 | Dopamine Control of Arousal | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.5 | Dream Function | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.6 | Dreams and Dreaming: Incorporation of Waking Events | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.7 | Dreams and Nightmares in PTSD | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.8 | Dreams, Dreaming Theories and Correlates of Nightmares | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.9 | Endocrine Function During Sleep and Sleep Deprivation | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.10 | Hibernation | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.11 | Immune Function During Sleep and Sleep Deprivation | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.12 | Metabolic Syndrome and Sleep | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.13 | Napping | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.14 | Narcolepsy | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.15 | Nightmares | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.16 | Parasomnias | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.17 | Pharmacology of Sleep: Adenosine | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.18 | Reticular Activating System | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.19 | Sleep and Circadian Rhythm Disorders in Human Aging and Dementia | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.20 | Sleep and Sleep States: Gene Expression | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.21 | Sleep and Sleep States: Hippocampus-Neocortex Dialog | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.22 | Sleep and Sleep States: Histamine Role | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.23 | Sleep and Sleep States: Hypothalamic Regulation | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.24 | Sleep and Sleep States: Network Reactivation | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.25 | Sleep and Sleep States: PET Activation Patterns | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.26 | Sleep and Sleep States: Phylogeny and Ontogeny | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.27 | Sleep and Sleep States: Thalamic Regulation | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.28 | Sleep Apnea | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.29 | Sleep Architecture | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.30 | Sleep Deprivation and Brain Function | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.31 | sleep Deprivation: Neurobehavioral Changes | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.32 | Sleep in Adolescents | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.33 | Sleep in Aging | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.34 | Sleep Mentation in REM and NREM: A Neurocognitive Perspective | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.35 | Sleep Oscillations | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.36 | Sleep Oscillations and PGO Waves | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.37 | Sleep Research and Sleep Medicine in Historical Perspective | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.38 | Sleep-Dependent Memory Processing | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.39 | Sleeping Sickness | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.40 | Sleep-Wake State Regulation by Acetylcholine | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.41 | Sleep-Wake State Regulation by Noradrenaline and Serotonin | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.42 | Stimulant and Wake-Promoting Substances | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.43 | The AIM Model of Dreaming, Sleeping, and Waking Consciousness | | parentid:MCB80.3x-14.3
+MCB80.3x-14.3.44 | Thermoregulation during Sleep and Sleep Deprivation | | parentid:MCB80.3x-14.3
+MCB80.2x-1 | Fundamental Neuroscience | | parentid:MCB80.2x
+MCB80.2x-1.1 | Fundamentals of Neuroscience | | parentid:MCB80.2x-1
+MCB80.2x-1.1.1 | A Brief History of Neuroscience | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.2 | The Terminology of Nervous Systems is Hierarchical, Distributed, Descriptive, and Historically Based | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.3 | Neurons and Glia Are Cellular Building Blocks of the Nervous System | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.4 | Cellular Organization of the Brain | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.5 | Organization of this Text | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.6 | This Book is Intended for a Broad Range of Scholars of the Neurosciences | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.7 | Clinical Issues in the Neurosciences | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.8 | The Genomic Inventory is a Giant Step Forward | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.9 | Neuroscience Today: a Communal Endeavor | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.10 | The Creation of Knowledge | | parentid:MCB80.2x-1.1
+MCB80.2x-1.1.11 | Responsible Conduct | | parentid:MCB80.2x-1.1
+MCB80.2x-1.2 | Basic Plan of the Nervous System | | parentid:MCB80.2x-1
+MCB80.2x-1.2.1 | Evolution Highlights: General Organizing Principles | | parentid:MCB80.2x-1.2
+MCB80.2x-1.2.2 | Development Reveals Basic Vertebrate Parts | | parentid:MCB80.2x-1.2
+MCB80.2x-1.2.3 | The Basic Plan of Nervous System Connectivity | | parentid:MCB80.2x-1.2
+MCB80.2x-1.2.4 | Overview of the Adult Mammalian Nervous System | | parentid:MCB80.2x-1.2
+MCB80.2x-2 | Cellular and Molecular Neuroscience | | parentid:MCB80.2x
+MCB80.2x-2.1 | Cellular Components of Nervous Tissue | | parentid:MCB80.2x-2
+MCB80.2x-2.1.1 | Neurons | | parentid:MCB80.2x-2.1
+MCB80.2x-2.1.2 | Specific Examples of Different Neuronal Types | | parentid:MCB80.2x-2.1
+MCB80.2x-2.1.3 | Neuroglia | | parentid:MCB80.2x-2.1
+MCB80.2x-2.1.4 | Cerebral Vasculature | | parentid:MCB80.2x-2.1
+MCB80.2x-2.2 | Subcellular Organization of the Nervous System: Organelles and Their Functions | | parentid:MCB80.2x-2
+MCB80.2x-2.2.1 | Axons and Dendrites: Unique Structural Components of Neurons | | parentid:MCB80.2x-2.2
+MCB80.2x-2.2.2 | Protein Synthesis in Nervous Tissue | | parentid:MCB80.2x-2.2
+MCB80.2x-2.2.3 | Cytoskeletons of Neurons and Glial Cells | | parentid:MCB80.2x-2.2
+MCB80.2x-2.2.4 | Molecular Motors in the Nervous System | | parentid:MCB80.2x-2.2
+MCB80.2x-2.2.5 | Building and Maintaining Cells of the Nervous System | | parentid:MCB80.2x-2.2
+MCB80.2x-2.3 | Membrane Potential and Action Potential | | parentid:MCB80.2x-2
+MCB80.2x-2.3.1 | Membrane Potential | | parentid:MCB80.2x-2.3
+MCB80.2x-2.3.2 | Passive Electrical Properties of the Neuron | | parentid:MCB80.2x-2.3
+MCB80.2x-2.3.3 | Action Potential | | parentid:MCB80.2x-2.3
+MCB80.2x-2.4 | Neurotransmitters | | parentid:MCB80.2x-2
+MCB80.2x-2.4.1 | Several Modes of Neuronal Communication Exist | | parentid:MCB80.2x-2.4
+MCB80.2x-2.4.2 | Chemical Transmission | | parentid:MCB80.2x-2.4
+MCB80.2x-2.4.3 | Classical Neurotransmitters | | parentid:MCB80.2x-2.4
+MCB80.2x-2.4.4 | Nonclassical Neurotransmitters | | parentid:MCB80.2x-2.4
+MCB80.2x-2.4.5 | Peptide Transmitters | | parentid:MCB80.2x-2.4
+MCB80.2x-2.4.6 | Unconventional Transmitters | | parentid:MCB80.2x-2.4
+MCB80.2x-2.4.7 | The Expanding Synapse and Gliotransmission | | parentid:MCB80.2x-2.4
+MCB80.2x-2.5 | Release of Neurotransmitters | | parentid:MCB80.2x-2
+MCB80.2x-2.5.1 | Transmitter Release is Quantal | | parentid:MCB80.2x-2.5
+MCB80.2x-2.5.2 | Excitation–Secretion Coupling | | parentid:MCB80.2x-2.5
+MCB80.2x-2.5.3 | Molecular Mechanisms of the Nerve Terminal | | parentid:MCB80.2x-2.5
+MCB80.2x-2.5.4 | Quantal Analysis: Probing Synaptic Physiology | | parentid:MCB80.2x-2.5
+MCB80.2x-2.5.5 | Short-Term Synaptic Plasticity | | parentid:MCB80.2x-2.5
+MCB80.2x-2.6 | Neurotransmitter Receptors | | parentid:MCB80.2x-2
+MCB80.2x-2.6.1 | Ionotropic Receptors | | parentid:MCB80.2x-2.6
+MCB80.2x-2.6.2 | G-Protein Coupled Receptors | | parentid:MCB80.2x-2.6
+MCB80.2x-2.7 | Intracellular Signaling | | parentid:MCB80.2x-2
+MCB80.2x-2.7.1 | Signaling Through G-Protein-Linked Receptors | | parentid:MCB80.2x-2.7
+MCB80.2x-2.7.2 | Modulation of Neuronal Function by Protein Kinases and Phosphatases | | parentid:MCB80.2x-2.7
+MCB80.2x-2.7.3 | Intracellular Signaling Affects Nuclear Gene Expression | | parentid:MCB80.2x-2.7
+MCB80.2x-2.8 | Postsynaptic Potentials and Synaptic Integration | | parentid:MCB80.2x-2
+MCB80.2x-2.8.1 | Ionotropic Receptors: Mediators of Fast Excitatory and Inhibitory Synaptic Potentials | | parentid:MCB80.2x-2.8
+MCB80.2x-2.8.2 | Metabotropic Receptors: Mediators of Slow Synaptic Potentials | | parentid:MCB80.2x-2.8
+MCB80.2x-2.8.3 | Integration of Synaptic Potentials | | parentid:MCB80.2x-2.8
+MCB80.2x-2.8.4 | Synaptic Plasticity | | parentid:MCB80.2x-2.8
+MCB80.2x-2.9 | Information Processing in Dendrites and Spines | | parentid:MCB80.2x-2
+MCB80.2x-2.9.1 | Synaptic Integration in Passive Dendrites | | parentid:MCB80.2x-2.9
+MCB80.2x-2.9.2 | Synaptic Integration in Active Dendrites | | parentid:MCB80.2x-2.9
+MCB80.2x-2.9.3 | Structure and Function of Dendritic Spines | | parentid:MCB80.2x-2.9
+MCB80.2x-2.9.4 | Computations Performed by Dendrites | | parentid:MCB80.2x-2.9
+MCB80.2x-2.10 | Brain Energy Metabolism | | parentid:MCB80.2x-2
+MCB80.2x-2.10.1 | Energy Metabolism of the Brain as a Whole Organ | | parentid:MCB80.2x-2.10
+MCB80.2x-2.10.2 | Tight Coupling of Neuronal Activity, Blood Flow, and Energy Metabolism | | parentid:MCB80.2x-2.10
+MCB80.2x-2.10.3 | Energy-Producing and Energy-Consuming Processes in the Brain | | parentid:MCB80.2x-2.10
+MCB80.2x-2.10.4 | Glutamate Metabolism: A Coordinated Shuttle Between Astrocytes and Neurons | | parentid:MCB80.2x-2.10
+MCB80.2x-2.10.5 | Brain Energy Metabolism at the Cellular Level | | parentid:MCB80.2x-2.10
+MCB80.2x-2.10.6 | The Astrocyte-Neuron Metabolic Unit | | parentid:MCB80.2x-2.10
+MCB80.2x-3 | Nervous System Development | | parentid:MCB80.2x
+MCB80.2x-3.1 | Neural Induction and Pattern Formation | | parentid:MCB80.2x-3
+MCB80.2x-3.1.1 | Neural Induction | | parentid:MCB80.2x-3.1
+MCB80.2x-3.1.2 | Early Neural Patterning | | parentid:MCB80.2x-3.1
+MCB80.2x-3.1.3 | Regionalization of the Central Nervous System | | parentid:MCB80.2x-3.1
+MCB80.2x-3.2 | Cellular Determination | | parentid:MCB80.2x-3
+MCB80.2x-3.2.1 | Neurogenesis | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.2 | The Proneural and Neurogenic Genes | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.3 | Transcriptional Hierarchies and Networks | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.4 | Asymmetric Cell Division and Cell Fate | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.5 | Neurons and Glia | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.6 | Sensory Neurons of the Peripheral Nervous System | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.7 | The Retina | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.8 | The Spinal Cord | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.9 | Motor Neurons | | parentid:MCB80.2x-3.2
+MCB80.2x-3.2.10 | The Cerebral Cortex | | parentid:MCB80.2x-3.2
+MCB80.2x-3.3 | Neurogenesis and Migration | | parentid:MCB80.2x-3
+MCB80.2x-3.3.1 | Development of the Peripheral Nervous System | | parentid:MCB80.2x-3.3
+MCB80.2x-3.3.2 | Segmental Migration of Neural Crest Cells | | parentid:MCB80.2x-3.3
+MCB80.2x-3.3.3 | Cell Migration in the CNS | | parentid:MCB80.2x-3.3
+MCB80.2x-3.4 | Growth Cones and Axon Pathfinding | | parentid:MCB80.2x-3
+MCB80.2x-3.4.1 | Growth Cones are Actively Guided | | parentid:MCB80.2x-3.4
+MCB80.2x-3.4.2 | Guidance Cues for Developing Axons | | parentid:MCB80.2x-3.4
+MCB80.2x-3.4.3 | Guidance Cues and the Control of Cytoskeletal Dynamics | | parentid:MCB80.2x-3.4
+MCB80.2x-3.4.4 | Guidance at the Midline: Changing Responses to Multiple Cues | | parentid:MCB80.2x-3.4
+MCB80.2x-3.4.5 | Topographic Mapping | | parentid:MCB80.2x-3.4
+MCB80.2x-3.5 | Synapse Formation | | parentid:MCB80.2x-3
+MCB80.2x-3.5.1 | Development of the Neuromuscular Synapse | | parentid:MCB80.2x-3.5
+MCB80.2x-3.5.2 | Synapse Formation in the Central Nervous System | | parentid:MCB80.2x-3.5
+MCB80.2x-3.6 | Programmed Cell Death and Neurotrophic Factors | | parentid:MCB80.2x-3
+MCB80.2x-3.6.1 | Cell Death and the Neurotrophic Hypothesis | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.2 | The Origins of Programmed Cell Death and its Widespread Occurrence in the Developing Nervous System | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.3 | Functions of Neuronal Programmed Cell Death | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.4 | Modes of Cell Death in Developing Neurons | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.5 | The Mode of Neuronal Cell Death Reflects the Activation of Distinct Biochemical and Molecular Mechanisms | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.6 | Nerve Growth Factor: the Prototype Target-Derived Neuronal Survival Factor | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.7 | The Neurotrophin Family | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.8 | Neurotrophin Receptors | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.9 | Secretion and Axonal Transport of Neurotrophins and Pro-Neurotrophins | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.10 | Signal Transduction Through TRK Receptors | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.11 | Multiple Cytokines and Growth Factors Implement Neurotrophic Activities | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.12 | Programmed Cell Death is Regulated by Interactions with Targets, Afferents, and Nonneuronal Cells | | parentid:MCB80.2x-3.6
+MCB80.2x-3.6.13 | The Role of Trophic Factors and Programmed Cell Death in Neuropathology | | parentid:MCB80.2x-3.6
+MCB80.2x-3.7 | Synapse Elimination | | parentid:MCB80.2x-3
+MCB80.2x-3.7.1 | The Purpose of Synapse Elimination | | parentid:MCB80.2x-3.7
+MCB80.2x-3.7.2 | A Structural Analysis of Synapse Elimination at the Neuromuscular Junction | | parentid:MCB80.2x-3.7
+MCB80.2x-3.7.3 | A Role for Interaxonal Competition and Activity | | parentid:MCB80.2x-3.7
+MCB80.2x-3.7.4 | Is Synapse Elimination Strictly a Developmental Phenomenon? | | parentid:MCB80.2x-3.7
+MCB80.2x-3.8 | Dendritic Development | | parentid:MCB80.2x-3
+MCB80.2x-3.8.1 | Dynamics of Dendritic Arbor Development | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.2 | Transcriptional Control of Dendrite Development | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.3 | Extracellular Regulation of Dendritic Development | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.4 | Dendritic Development and Circuit Formation in Mammalian Retina | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.5 | Laminar Specificity in the Inner Plexiform Layer | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.6 | Activity-Dependent Dendritic Development | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.7 | The Synaptotrophic Model Of Dendrite Development | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.8 | Branch Retraction and Synapse Elimination | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.9 | Calcium-Dependent Mechanisms That Mediate Dendritic Growth | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.10 | Protein Synthesis Dependent Regulation of Dendrite Development | | parentid:MCB80.2x-3.8
+MCB80.2x-3.8.11 | Convergence And Divergence | | parentid:MCB80.2x-3.8
+MCB80.2x-3.9 | Early Experience and Sensitive Periods | | parentid:MCB80.2x-3
+MCB80.2x-3.9.1 | Birdsong: Learned by Experience | | parentid:MCB80.2x-3.9
+MCB80.2x-3.9.2 | Sound Localization: Calibrated by Early Experience in the Owl | | parentid:MCB80.2x-3.9
+MCB80.2x-3.9.3 | Binocular Processing in the Mammalian Visual Cortex Depends on Early Experience | | parentid:MCB80.2x-3.9
+MCB80.2x-3.9.4 | A Sensitive Period for Shaping the Temperament of Rats | | parentid:MCB80.2x-3.9
+MCB80.2x-3.9.5 | Principles of Sensitive Period Learning | | parentid:MCB80.2x-3.9
+MCB80.2x-4 | Sensory Systems | | parentid:MCB80.2x
+MCB80.2x-4.1 | Fundamentals of Sensory Systems | | parentid:MCB80.2x-4
+MCB80.2x-4.1.1 | Sensation and Perception | | parentid:MCB80.2x-4.1
+MCB80.2x-4.1.2 | Receptors | | parentid:MCB80.2x-4.1
+MCB80.2x-4.1.3 | Peripheral Organization and Processing | | parentid:MCB80.2x-4.1
+MCB80.2x-4.1.4 | Central Pathways and Processing | | parentid:MCB80.2x-4.1
+MCB80.2x-4.1.5 | Sensory Cortex | | parentid:MCB80.2x-4.1
+MCB80.2x-4.2 | Chemical Senses: Taste and Olfaction | | parentid:MCB80.2x-4
+MCB80.2x-4.2.1 | Taste | | parentid:MCB80.2x-4.2
+MCB80.2x-4.2.2 | Olfaction | | parentid:MCB80.2x-4.2
+MCB80.2x-4.2.3 | Different Odors Activate Different Combinations of Glomeruli | | parentid:MCB80.2x-4.2
+MCB80.2x-4.2.4 | Pheromone Detection | | parentid:MCB80.2x-4.2
+MCB80.2x-4.3 | The Somatosensory System | | parentid:MCB80.2x-4
+MCB80.2x-4.3.1 | Peripheral Mechanisms of Somatic Sensation | | parentid:MCB80.2x-4.3
+MCB80.2x-4.3.2 | Nociception | | parentid:MCB80.2x-4.3
+MCB80.2x-4.3.3 | CNS Components of Somatic Sensation | | parentid:MCB80.2x-4.3
+MCB80.2x-4.3.4 | Thalamic Mechanisms of Somatic Sensation | | parentid:MCB80.2x-4.3
+MCB80.2x-4.3.5 | The Path from Nociception to Pain | | parentid:MCB80.2x-4.3
+MCB80.2x-4.3.6 | Cortical Representation of Touch | | parentid:MCB80.2x-4.3
+MCB80.2x-4.4 | Audition | | parentid:MCB80.2x-4
+MCB80.2x-4.4.1 | External and Middle Ear | | parentid:MCB80.2x-4.4
+MCB80.2x-4.4.2 | The Cochlea | | parentid:MCB80.2x-4.4
+MCB80.2x-4.4.3 | The Auditory Nerve | | parentid:MCB80.2x-4.4
+MCB80.2x-4.4.4 | Central Nervous System | | parentid:MCB80.2x-4.4
+MCB80.2x-4.5 | Vision | | parentid:MCB80.2x-4
+MCB80.2x-4.5.1 | Sensory Systems Detect Contrast or Change | | parentid:MCB80.2x-4.5
+MCB80.2x-4.5.2 | The Eye and the Retina | | parentid:MCB80.2x-4.5
+MCB80.2x-4.5.3 | The Retinogeniculocortical Pathway | | parentid:MCB80.2x-4.5
+MCB80.2x-5 | Motor Systems | | parentid:MCB80.2x
+MCB80.2x-5.1 | Fundamentals of Motor Systems | | parentid:MCB80.2x-5
+MCB80.2x-5.1.1 | Basic Components of the Motor System | | parentid:MCB80.2x-5.1
+MCB80.2x-5.1.2 | Motor Programs Coordinate Basic Motor Patterns | | parentid:MCB80.2x-5.1
+MCB80.2x-5.1.3 | Roles of Different Parts of the Nervous System in the Control of Movement | | parentid:MCB80.2x-5.1
+MCB80.2x-5.2 | The Spinal and Peripheral Motor System | | parentid:MCB80.2x-5
+MCB80.2x-5.2.1 | Locomotion is A Cycle | | parentid:MCB80.2x-5.2
+MCB80.2x-5.2.2 | Connecting the Spinal Cord to the Periphery | | parentid:MCB80.2x-5.2
+MCB80.2x-5.2.3 | Spinal Interneuron Networks | | parentid:MCB80.2x-5.2
+MCB80.2x-5.2.4 | Descending Control of Spinal Circuits | | parentid:MCB80.2x-5.2
+MCB80.2x-5.2.5 | Sensory Modulation | | parentid:MCB80.2x-5.2
+MCB80.2x-5.3 | Control of Movement | | parentid:MCB80.2x-5
+MCB80.2x-5.3.1 | The Medial Postural System | | parentid:MCB80.2x-5.3
+MCB80.2x-5.3.2 | The Lateral Voluntary System | | parentid:MCB80.2x-5.3
+MCB80.2x-5.4 | The Basal Ganglia | | parentid:MCB80.2x-5
+MCB80.2x-5.4.1 | Anatomy of the Basal Ganglia | | parentid:MCB80.2x-5.4
+MCB80.2x-5.4.2 | Signaling in Basal Ganglia | | parentid:MCB80.2x-5.4
+MCB80.2x-5.4.3 | The Effect of Basal Ganglia Damage on Behavior | | parentid:MCB80.2x-5.4
+MCB80.2x-5.4.4 | Principles of Basal Ganglia Operation for Motor Control | | parentid:MCB80.2x-5.4
+MCB80.2x-5.4.5 | Basal Ganglia Participation in Nonmotor Functions | | parentid:MCB80.2x-5.4
+MCB80.2x-5.5 | Cerebellum | | parentid:MCB80.2x-5
+MCB80.2x-5.5.1 | Cerebellar Anatomy and Circuit | | parentid:MCB80.2x-5.5
+MCB80.2x-5.5.2 | Cellular and Synaptic Performance of the Cerebellar Circuit | | parentid:MCB80.2x-5.5
+MCB80.2x-5.5.3 | Cerebellar Function | | parentid:MCB80.2x-5.5
+MCB80.2x-5.6 | Eye Movements | | parentid:MCB80.2x-5
+MCB80.2x-5.6.1 | Eye Movements are Used to Stabilize Gaze or to Redirect Gaze | | parentid:MCB80.2x-5.6
+MCB80.2x-5.6.2 | The Mechanics of Moving the Eyes | | parentid:MCB80.2x-5.6
+MCB80.2x-5.6.3 | The Fundamental Circuits for Stabilizing Gaze | | parentid:MCB80.2x-5.6
+MCB80.2x-5.6.4 | The Commands for Redirecting Gaze are Formed in the Brainstem | | parentid:MCB80.2x-5.6
+MCB80.2x-5.6.5 | Gaze Movements are Controlled by the Midbrain and Forebrain | | parentid:MCB80.2x-5.6
+MCB80.2x-5.6.6 | The Control of Gaze Movements Involves Higher-Order Processes | | parentid:MCB80.2x-5.6
+MCB80.2x-6 | Regulatory Systems | | parentid:MCB80.2x
+MCB80.2x-6.1 | The Hypothalamus: An Overview of Regulatory Systems | | parentid:MCB80.2x-6
+MCB80.2x-6.1.1 | Historical Perspective | | parentid:MCB80.2x-6.1
+MCB80.2x-6.1.2 | Hypothalamic Cytoarchitecture | | parentid:MCB80.2x-6.1
+MCB80.2x-6.1.3 | Functional Organization of the Hypothalamus | | parentid:MCB80.2x-6.1
+MCB80.2x-6.1.4 | Effector Systems of the Hypothalamus are Hormonal and Synaptic | | parentid:MCB80.2x-6.1
+MCB80.2x-6.2 | Central Control of Autonomic Functions: Organization of the Autonomic Nervous System | | parentid:MCB80.2x-6
+MCB80.2x-6.2.1 | Sympathetic Division: Organized to Mobilize the Body for Activity | | parentid:MCB80.2x-6.2
+MCB80.2x-6.2.2 | Parasympathetic Division: Organized for Energy Conservation | | parentid:MCB80.2x-6.2
+MCB80.2x-6.2.3 | The Enteric Division of the Ans: The Nerve Net Found in the Walls of Visceral Organs | | parentid:MCB80.2x-6.2
+MCB80.2x-6.2.4 | Ans Pharmacology: Transmitter and Receptor Coding | | parentid:MCB80.2x-6.2
+MCB80.2x-6.2.5 | Autonomic Coordination of Homeostasis | | parentid:MCB80.2x-6.2
+MCB80.2x-6.2.6 | Hierarchically Organized ANS Circuits in the CNS | | parentid:MCB80.2x-6.2
+MCB80.2x-6.2.7 | Perspective: Future of the Autonomic Nervous System | | parentid:MCB80.2x-6.2
+MCB80.2x-6.3 | Neural Control of Respiratory and Cardiovascular Functions | | parentid:MCB80.2x-6
+MCB80.2x-6.3.1 | Breathing | | parentid:MCB80.2x-6.3
+MCB80.2x-6.3.2 | Where are the Neurons Generating the Respiratory Pattern? | | parentid:MCB80.2x-6.3
+MCB80.2x-6.3.3 | Discharge Patterns of Respiratory Neurons | | parentid:MCB80.2x-6.3
+MCB80.2x-6.3.4 | Models for Respiratory Pattern Generation | | parentid:MCB80.2x-6.3
+MCB80.2x-6.3.5 | Mechanoreceptors in the Lungs Adjust Breathing Pattern and Initiate Protective Reflexes | | parentid:MCB80.2x-6.3
+MCB80.2x-6.3.6 | Cardiovascular | | parentid:MCB80.2x-6.3
+MCB80.2x-6.3.7 | Sensory Regulation of Respiratory and Cardiovascular Systems | | parentid:MCB80.2x-6.3
+MCB80.2x-6.3.8 | Modulation and Plasticity of Respiratory Motor Output | | parentid:MCB80.2x-6.3
+MCB80.2x-6.4 | Food Intake and Metabolism | | parentid:MCB80.2x-6
+MCB80.2x-6.4.1 | Caloric Homeostasis | | parentid:MCB80.2x-6.4
+MCB80.2x-6.4.2 | Role of Caloric Homeostasis in Control of Food Intake | | parentid:MCB80.2x-6.4
+MCB80.2x-6.4.3 | Central Control of Food Intake | | parentid:MCB80.2x-6.4
+MCB80.2x-6.4.4 | Neuropeptides and the Control of Food Intake | | parentid:MCB80.2x-6.4
+MCB80.2x-6.5 | Water and Salt Intake and Body Fluid Homeostasis | | parentid:MCB80.2x-6
+MCB80.2x-6.5.1 | Body Fluid Physiology | | parentid:MCB80.2x-6.5
+MCB80.2x-6.5.2 | Osmotic Homeostasis | | parentid:MCB80.2x-6.5
+MCB80.2x-6.5.3 | Volume Homeostasis | | parentid:MCB80.2x-6.5
+MCB80.2x-6.6 | Neuroendocrine Systems | | parentid:MCB80.2x-6
+MCB80.2x-6.6.1 | The Hypothalamus is the Central Neuroendocrine Organ | | parentid:MCB80.2x-6.6
+MCB80.2x-6.6.2 | Hypothalamic Control of Anterior Pituitary Hormones and their Regulated Functions | | parentid:MCB80.2x-6.6
+MCB80.2x-6.6.3 | Hypothalamic Control of Posterior Pituitary Hormones and their Regulated Functions | | parentid:MCB80.2x-6.6
+MCB80.2x-6.6.4 | Hormones, the Brain, and Behavior | | parentid:MCB80.2x-6.6
+MCB80.2x-6.7 | Circadian Timekeeping | | parentid:MCB80.2x-6
+MCB80.2x-6.7.1 | Overview of the Mammalian Circadian Timing System | | parentid:MCB80.2x-6.7
+MCB80.2x-6.7.2 | A Hierarchy of Cell-Autonomous Circadian Oscillators | | parentid:MCB80.2x-6.7
+MCB80.2x-6.7.3 | The Molecular Basis for Circadian Oscillation is A Transcriptional Feedback Loop | | parentid:MCB80.2x-6.7
+MCB80.2x-6.7.4 | Circadian Photoreception in Mammals | | parentid:MCB80.2x-6.7
+MCB80.2x-6.7.5 | Circadian Output Mechanisms | | parentid:MCB80.2x-6.7
+MCB80.2x-6.7.6 | Diversity of Output Pathways Leading to Physiological Rhythms | | parentid:MCB80.2x-6.7
+MCB80.2x-6.8 | The Neurobiology of Sleep and Dreaming | | parentid:MCB80.2x-6
+MCB80.2x-6.8.1 | The Two States of Sleep: Rapid Eye Movement (REM) and Non–Rapid Eye Movement (NREM) Sleep | | parentid:MCB80.2x-6.8
+MCB80.2x-6.8.2 | Neural Control of the Sleep–Wake and REM/NREM Cycles | | parentid:MCB80.2x-6.8
+MCB80.2x-6.8.3 | Systems Neuroscience of Sleep and Dreaming | | parentid:MCB80.2x-6.8
+MCB80.2x-6.8.4 | Development and Phylogeny of Sleep | | parentid:MCB80.2x-6.8
+MCB80.2x-6.8.5 | Sleep Disorders | | parentid:MCB80.2x-6.8
+MCB80.2x-6.8.6 | The Purpose of Sleep | | parentid:MCB80.2x-6.8
+MCB80.2x-6.9 | Reward, Motivation, and Addiction | | parentid:MCB80.2x-6
+MCB80.2x-6.9.1 | Reward and Motivation | | parentid:MCB80.2x-6.9
+MCB80.2x-6.9.2 | Addiction | | parentid:MCB80.2x-6.9
+MCB80.2x-7 | Behavioral and Cognitive Neuroscience | | parentid:MCB80.2x
+MCB80.2x-7.1 | Human Brain Evolution | | parentid:MCB80.2x-7
+MCB80.2x-7.1.1 | Human Brain Evolution | | parentid:MCB80.2x-7.1
+MCB80.2x-7.1.2 | The Brains of Early Mammals | | parentid:MCB80.2x-7.1
+MCB80.2x-7.1.3 | Evolution of Primate Brains | | parentid:MCB80.2x-7.1
+MCB80.2x-7.2 | Cognitive Development and Aging | | parentid:MCB80.2x-7
+MCB80.2x-7.2.1 | Brain Development | | parentid:MCB80.2x-7.2
+MCB80.2x-7.2.2 | Cognitive Development and Aging: A Life Span Perspective | | parentid:MCB80.2x-7.2
+MCB80.2x-7.2.3 | Cognitive Aging | | parentid:MCB80.2x-7.2
+MCB80.2x-7.2.4 | Pathological Processes in Cognitive Development and Aging | | parentid:MCB80.2x-7.2
+MCB80.2x-7.2.5 | Pathological Manifestations of Cognitive Aging: Dementia | | parentid:MCB80.2x-7.2
+MCB80.2x-7.3 | Visual Perception of Objects | | parentid:MCB80.2x-7
+MCB80.2x-7.3.1 | The Problem of Object Recognition | | parentid:MCB80.2x-7.3
+MCB80.2x-7.3.2 | Substrates for Object Perception and Recognition: Early Evidence from Brain Damage | | parentid:MCB80.2x-7.3
+MCB80.2x-7.3.3 | Visual Pathways for Object Processing in Nonhuman Primates | | parentid:MCB80.2x-7.3
+MCB80.2x-7.3.4 | Neuronal Properties within the Object Recognition Pathway | | parentid:MCB80.2x-7.3
+MCB80.2x-7.3.5 | Functional Neuroimaging of Object Recognition | | parentid:MCB80.2x-7.3
+MCB80.2x-7.3.6 | Perception and Recognition of Specific Classes of Objects | | parentid:MCB80.2x-7.3
+MCB80.2x-7.4 | Spatial Cognition | | parentid:MCB80.2x-7
+MCB80.2x-7.4.1 | Neural Systems for Spatial Cognition | | parentid:MCB80.2x-7.4
+MCB80.2x-7.4.2 | Parietal Cortex | | parentid:MCB80.2x-7.4
+MCB80.2x-7.4.3 | Frontal Cortex | | parentid:MCB80.2x-7.4
+MCB80.2x-7.4.4 | Medial Temporal Lobe | | parentid:MCB80.2x-7.4
+MCB80.2x-7.4.5 | Spatial Cognition and Spatial Action | | parentid:MCB80.2x-7.4
+MCB80.2x-7.5 | Attention | | parentid:MCB80.2x-7
+MCB80.2x-7.5.1 | Definitions and Varieties of Attention | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.2 | Neglect Syndrome: A Deficit of Spatial Attention | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.3 | Attention Affects Neural Activity in the Human Visual Cortex in the Presence and Absence of Visual Stimulation | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.4 | Single Unit Recording Studies in Nonhuman Primates Provide Convergent Evidence for A Fronto-Parietal Attentional Control System | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.5 | Attention Increases Neuronal Responses and Boosts the Clarity of Signals Generated by Neurons in Parts of the Visual System Devoted to Processing Information about Objects | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.6 | Attention Modulates Neural Responses in the Lateral Geniculate Nucleus | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.7 | The Visual Search Paradigm has been used to Study the Role of Attention in Selecting Relevant Stimuli from within A Cluttered Visual Environment | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.8 | Where is the Computational Bottleneck as Revealed by Search Tasks? | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.9 | Neuronal Receptive Fields are A Possible Neural Correlate of Limited Capacity | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.10 | Filtering of Unwanted Information in Humans | | parentid:MCB80.2x-7.5
+MCB80.2x-7.5.11 | Competition can be Biased by Nonspatial Feedback | | parentid:MCB80.2x-7.5
+MCB80.2x-7.6 | Learning and Memory: Basic Mechanisms | | parentid:MCB80.2x-7
+MCB80.2x-7.6.1 | Paradigms have been Developed to Study Associative and Nonassociative Learning | | parentid:MCB80.2x-7.6
+MCB80.2x-7.6.2 | Invertebrate Studies: Key Insights from Aplysia into Basic Mechanisms of Learning | | parentid:MCB80.2x-7.6
+MCB80.2x-7.6.3 | Vertebrate Studies: Long-Term Potentiation | | parentid:MCB80.2x-7.6
+MCB80.2x-7.6.4 | Long-Term Depression | | parentid:MCB80.2x-7.6
+MCB80.2x-7.6.5 | How Does a Change in Synaptic Strength Store a Complex Memory? | | parentid:MCB80.2x-7.6
+MCB80.2x-7.7 | Learning and Memory: Brain Systems | | parentid:MCB80.2x-7
+MCB80.2x-7.7.1 | Behavior Supported by Multiple Memory Systems | | parentid:MCB80.2x-7.7
+MCB80.2x-7.8 | Language | | parentid:MCB80.2x-7
+MCB80.2x-7.8.1 | Animal Communication | | parentid:MCB80.2x-7.8
+MCB80.2x-7.8.2 | Human Language | | parentid:MCB80.2x-7.8
+MCB80.2x-7.8.3 | Neural Organization for Language | | parentid:MCB80.2x-7.8
+MCB80.2x-7.9 | The Prefrontal Cortex and Executive Brain Functions | | parentid:MCB80.2x-7
+MCB80.2x-7.9.1 | Anatomy and Organization of the Prefrontal Cortex | | parentid:MCB80.2x-7.9
+MCB80.2x-7.9.2 | Effects of Damage to the Prefrontal Cortex in Humans | | parentid:MCB80.2x-7.9
+MCB80.2x-7.9.3 | Neuroimaging Studies and PFC | | parentid:MCB80.2x-7.9
+MCB80.2x-7.9.4 | Effects of Damage to the Prefrontal Cortex in Monkeys | | parentid:MCB80.2x-7.9
+MCB80.2x-7.9.5 | Neurophysiology of the Prefrontal Cortex | | parentid:MCB80.2x-7.9
+MCB80.2x-7.9.6 | Theories of Prefrontal Cortex Function | | parentid:MCB80.2x-7.9
+MCB80.2x-7.10 | The Neuroscience of Consciousness | | parentid:MCB80.2x-7
+MCB80.2x-7.10.1 | What Phenomena does Consciousness Encompass? | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.2 | The Neurobiology of Free Will | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.3 | Consciousness in other Species | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.4 | Arousal and States of Consciousness | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.5 | The Neuronal Correlates of Consciousness | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.6 | The Neuronal Basis of Perceptual Illusions | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.7 | Perceptual Puzzles of Contemporary Interest | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.8 | Forward Versus Feedback Projections | | parentid:MCB80.2x-7.10
+MCB80.2x-7.10.9 | An Information-Theoretical Theory of Consciousness | | parentid:MCB80.2x-7.10

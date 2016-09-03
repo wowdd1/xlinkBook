@@ -1,0 +1,871 @@
+7.03-1 | Genes and Chromosomes | | parentid:7.03
+7.03-1.1 | Genes Are DNA | | parentid:7.03-1
+7.03-1.2 | Genes Encode RNAs and Polypeptides | | parentid:7.03-1
+7.03-1.3 | Methods in Molecular Biology and Genetic Engineering | | parentid:7.03-1
+7.03-1.4 | The Interrupted Gene | | parentid:7.03-1
+7.03-1.5 | The Content of the Genome | | parentid:7.03-1
+7.03-1.6 | Genome Sequences and Gene Number | | parentid:7.03-1
+7.03-1.7 | Clusters and Repeats | | parentid:7.03-1
+7.03-1.8 | Genome Evolution | | parentid:7.03-1
+7.03-1.9 | Chromosomes | | parentid:7.03-1
+7.03-1.10 | Chromatin | | parentid:7.03-1
+7.03-2 | DNA Replication and Recombination | | parentid:7.03
+7.03-2.1 | Replication Is Connected to the Cell Cycle | | parentid:7.03-2
+7.03-2.2 | The Replicon: Initiation of Replication | | parentid:7.03-2
+7.03-2.3 | DNA Replication | | parentid:7.03-2
+7.03-2.4 | Extrachromosomal Replicons | | parentid:7.03-2
+7.03-2.5 | Homologous and Site-Specific Recombination | | parentid:7.03-2
+7.03-2.6 | Repair Systems | | parentid:7.03-2
+7.03-2.7 | Transposable Elements and Retroviruses | | parentid:7.03-2
+7.03-2.8 | Somatic Recombination and Hypermutation in the Immune System | | parentid:7.03-2
+7.03-3 | Transcription and Posttranscriptional Mechanisms | | parentid:7.03
+7.03-3.1 | Prokaryotic Transcription | | parentid:7.03-3
+7.03-3.2 | Eukaryotic Transcription | | parentid:7.03-3
+7.03-3.3 | RNA Splicing and Processing | | parentid:7.03-3
+7.03-3.4 | mRNA Stability and Localization | | parentid:7.03-3
+7.03-3.5 | Catalytic RNA | | parentid:7.03-3
+7.03-3.6 | Translation | | parentid:7.03-3
+7.03-3.7 | Using the Genetic Code | | parentid:7.03-3
+7.03-4 | Gene Regulation | | parentid:7.03
+7.03-4.1 | The Operon | | parentid:7.03-4
+7.03-4.2 | Phage Strategies | | parentid:7.03-4
+7.03-4.3 | Eukaryotic Transcription Regulation | | parentid:7.03-4
+7.03-4.4 | Epigenic Effects Are Inherited | | parentid:7.03-4
+7.03-4.5 | Regulatory RNA | | parentid:7.03-4
+7.05-1 | The Foundations of Biochemistry | | parentid:7.05
+7.05-2 | STRUCTURE AND CATALYSIS | | parentid:7.05
+7.05-2.1 | Water | | parentid:7.05-2
+7.05-2.2 | Amino Acids, Peptides, and Proteins | | parentid:7.05-2
+7.05-2.3 | The Three-Dimensional Structure of Proteins | | parentid:7.05-2
+7.05-2.4 | Protein Function | | parentid:7.05-2
+7.05-2.5 | Enzymes | | parentid:7.05-2
+7.05-2.6 | Carbohydrates and Glycobiology | | parentid:7.05-2
+7.05-2.7 | Nucleotides and Nucleic Acids | | parentid:7.05-2
+7.05-2.8 | DNA-Based Information Technologies | | parentid:7.05-2
+7.05-2.9 | Lipids | | parentid:7.05-2
+7.05-2.10 | Biological Membranes and Transport | | parentid:7.05-2
+7.05-2.11 | Biosignaling | | parentid:7.05-2
+7.05-3 | BIOENERGETICS AND METABOLISM | | parentid:7.05
+7.05-3.1 | Bioenergetics and Biochemical Reaction Types | | parentid:7.05-3
+7.05-3.2 | Glycolysis, Gluconeogenesis, and the Pentose Phosphate Pathway | | parentid:7.05-3
+7.05-3.3 | Principles of Metabolic Regulation | | parentid:7.05-3
+7.05-3.4 | The Citric Acid Cycle | | parentid:7.05-3
+7.05-3.5 | Fatty Acid Catabolism | | parentid:7.05-3
+7.05-3.6 | Amino Acid Oxidation and the Production of Urea | | parentid:7.05-3
+7.05-3.7 | Oxidative Phosphorylation and Photophosphorylation | | parentid:7.05-3
+7.05-3.8 | Carbohydrate Biosynthesis in Plants and Bacteria | | parentid:7.05-3
+7.05-3.9 | Lipid Biosynthesis | | parentid:7.05-3
+7.05-3.10 | Biosynthesis of Amino Acids, Nucleotides, and Related Molecules | | parentid:7.05-3
+7.05-3.11 | Hormonal Regulation and Integration of Mammalian Metabolism | | parentid:7.05-3
+7.05-4 | INFORMATION PATHWAYS | | parentid:7.05
+7.05-4.1 | Genes and Chromosomes | | parentid:7.05-4
+7.05-4.2 | DNA Metabolism | | parentid:7.05-4
+7.05-4.3 | RNA Metabolism | | parentid:7.05-4
+7.05-4.4 | Protein Metabolism | | parentid:7.05-4
+7.05-4.5 | Regulation of Gene Expression | | parentid:7.05-4
+7.81-1 | Introduction | | parentid:7.81
+7.81-1.1 | Biology in Time and Space | | parentid:7.81-1
+7.81-1.2 | Models and Modeling | | parentid:7.81-1
+7.81-1.2.1 | What Is a Model? | | parentid:7.81-1.2
+7.81-1.2.2 | Purpose and Adequateness of Models | | parentid:7.81-1.2
+7.81-1.2.3 | Advantages of Computational Modeling | | parentid:7.81-1.2
+7.81-1.3 | Basic Notions for Computational Models | | parentid:7.81-1
+7.81-1.3.1 | Model Scope | | parentid:7.81-1.3
+7.81-1.3.2 | Model Statements | | parentid:7.81-1.3
+7.81-1.3.3 | System State | | parentid:7.81-1.3
+7.81-1.3.4 | Variables, Parameters, and Constants | | parentid:7.81-1.3
+7.81-1.3.5 | Model Behavior | | parentid:7.81-1.3
+7.81-1.3.6 | Model Classification | | parentid:7.81-1.3
+7.81-1.3.7 | Steady States | | parentid:7.81-1.3
+7.81-1.3.8 | Model Assignment Is Not Unique | | parentid:7.81-1.3
+7.81-1.4 | Networks | | parentid:7.81-1
+7.81-1.5 | Data Integration | | parentid:7.81-1
+7.81-1.6 | Standards | | parentid:7.81-1
+7.81-1.7 | Model Organisms | | parentid:7.81-1
+7.81-1.7.1 | Escherichia coli | | parentid:7.81-1.7
+7.81-1.7.2 | Saccharomyces cerevisiae | | parentid:7.81-1.7
+7.81-1.7.3 | Caenorhabditis elegans | | parentid:7.81-1.7
+7.81-1.7.4 | Drosophila melanogaster | | parentid:7.81-1.7
+7.81-1.7.5 | Mus musculus | | parentid:7.81-1.7
+7.81-2 | Modeling of Biochemical Systems | | parentid:7.81
+7.81-2.1 | Overview of Common Modeling Approaches for Biochemical Systems | | parentid:7.81-2
+7.81-2.2 | ODE Systems for Biochemical Networks | | parentid:7.81-2
+7.81-2.2.1 | Basic Components of ODE Models | | parentid:7.81-2.2
+7.81-2.2.2 | Illustrative Examples of ODE Models | | parentid:7.81-2.2
+7.81-2.2.2.1 | Metabolic Example | | parentid:7.81-2.2.2
+7.81-2.2.2.2 | Regulatory Network Example | | parentid:7.81-2.2.2
+7.81-3 | Structural Modeling and Analysis of Biochemical Networks | | parentid:7.81
+7.81-3.1 | Structural Analysis of Biochemical Systems | | parentid:7.81-3
+7.81-3.1.1 | System Equations | | parentid:7.81-3.1
+7.81-3.1.2 | Information Encoded in the Stoichiometric Matrix N | | parentid:7.81-3.1
+7.81-3.1.3 | The Flux Cone | | parentid:7.81-3.1
+7.81-3.1.4 | Elementary Flux Modes and Extreme Pathways | | parentid:7.81-3.1
+7.81-3.1.5 | Conservation Relations - Null Space of N | | parentid:7.81-3.1
+7.81-3.2 | Constraint-Based Flux Optimization | | parentid:7.81-3
+7.81-3.2.1 | Flux Balance Analysis | | parentid:7.81-3.2
+7.81-3.2.2 | Geometric Interpretation of Flux Balance Analysis | | parentid:7.81-3.2
+7.81-3.2.3 | Thermodynamic Constraints | | parentid:7.81-3.2
+7.81-3.2.4 | Applications and Tests of the Flux Optimization Paradigm | | parentid:7.81-3.2
+7.81-3.2.5 | Extensions of Flux Balance Analysis | | parentid:7.81-3.2
+7.81-3.2.5.1 | Minimization of Metabolic Adjustments | | parentid:7.81-3.2.5
+7.81-3.2.5.2 | Flux Variability Analysis | | parentid:7.81-3.2.5
+7.81-3.2.5.3 | Dynamic FBA | | parentid:7.81-3.2.5
+7.81-3.2.5.4 | Regulatory FBA | | parentid:7.81-3.2.5
+7.81-4 | Kinetic Models of Biochemical Networks: Introduction | | parentid:7.81
+7.81-4.1 | Reaction Kinetics and Thermodynamics | | parentid:7.81-4
+7.81-4.1.1 | Kinetic Modeling of Enzymatic Reactions | | parentid:7.81-4.1
+7.81-4.1.2 | The Law of Mass Action | | parentid:7.81-4.1
+7.81-4.1.3 | Reaction Thermodynamics | | parentid:7.81-4.1
+7.81-4.1.4 | Michaelis-Menten Kinetics | | parentid:7.81-4.1
+7.81-4.1.4.1 | How to Derive a Rate Equation | | parentid:7.81-4.1.4
+7.81-4.1.4.2 | Parameter Estimation and Linearization of the Michaelis-Menten Equation | | parentid:7.81-4.1.4
+7.81-4.1.4.3 | The Michaelis-Menten Equation for Reversible Reactions | | parentid:7.81-4.1.4
+7.81-4.1.5 | Regulation of Enzyme Activity by Effectors | | parentid:7.81-4.1
+7.81-4.1.5.1 | Substrate Inhibition | | parentid:7.81-4.1.5
+7.81-4.1.5.2 | Binding of Ligands to Proteins | | parentid:7.81-4.1.5
+7.81-4.1.5.3 | Positive Homotropic Cooperativity and the Hill Equation | | parentid:7.81-4.1.5
+7.81-4.1.5.4 | The Monod-Wyman-Changeux Model for Sigmoid Kinetics | | parentid:7.81-4.1.5
+7.81-4.1.6 | Generalized Mass Action Kinetics | | parentid:7.81-4.1
+7.81-4.1.7 | Approximate Kinetic Formats | | parentid:7.81-4.1
+7.81-4.1.8 | Convenience Kinetics and Modular Rate Laws | | parentid:7.81-4.1
+7.81-4.2 | Metabolic Control Analysis | | parentid:7.81-4
+7.81-4.2.1 | The Coefficients of Control Analysis | | parentid:7.81-4.2
+7.81-4.2.1.1 | The Elasticity Coefficients | | parentid:7.81-4.2.1
+7.81-4.2.1.2 | Control Coefficients | | parentid:7.81-4.2.1
+7.81-4.2.1.3 | Response Coefficients | | parentid:7.81-4.2.1
+7.81-4.2.1.4 | Matrix Representation of the Coefficients | | parentid:7.81-4.2.1
+7.81-4.2.2 | The Theorems of Metabolic Control Theory | | parentid:7.81-4.2
+7.81-4.2.2.1 | The Summation Theorems | | parentid:7.81-4.2.2
+7.81-4.2.2.2 | The Connectivity Theorems | | parentid:7.81-4.2.2
+7.81-4.2.3 | Matrix Expressions for Control Coefficients | | parentid:7.81-4.2
+7.81-4.2.4 | Upper Glycolysis as Realistic Model Example | | parentid:7.81-4.2
+7.81-4.2.5 | Time-Dependent Response Coefficients | | parentid:7.81-4.2
+7.81-5 | Data Formats, Simulation Techniques, and Modeling Tools | | parentid:7.81
+7.81-5.1 | Simulation Techniques and Tools | | parentid:7.81-5
+7.81-5.1.1 | Differential Equations | | parentid:7.81-5.1
+7.81-5.1.2 | Stochastic Simulations | | parentid:7.81-5.1
+7.81-5.1.2.1 | Stochastic and Macroscopic Rate Constants | | parentid:7.81-5.1.2
+7.81-5.1.3 | Simulation Tools | | parentid:7.81-5.1
+7.81-5.1.3.1 | CellDesigner | | parentid:7.81-5.1.3
+7.81-5.1.3.2 | COPASI | | parentid:7.81-5.1.3
+7.81-5.1.3.3 | Virtual Cell | | parentid:7.81-5.1.3
+7.81-5.2 | Standards and Formats for Systems Biology | | parentid:7.81-5
+7.81-5.2.1 | Systems Biology Markup Language | | parentid:7.81-5.2
+7.81-5.2.2 | BioPAX | | parentid:7.81-5.2
+7.81-5.2.3 | Systems Biology Graphical Notation | | parentid:7.81-5.2
+7.81-5.3 | Data Resources for Modeling of Cellular Reaction Systems | | parentid:7.81-5
+7.81-5.3.1 | General-Purpose Databases | | parentid:7.81-5.3
+7.81-5.3.1.1 | PathGuide | | parentid:7.81-5.3.1
+7.81-5.3.1.2 | BioNumbers | | parentid:7.81-5.3.1
+7.81-5.3.2 | Pathway Databases | | parentid:7.81-5.3
+7.81-5.3.2.1 | KEGG | | parentid:7.81-5.3.2
+7.81-5.3.2.2 | Reactome | | parentid:7.81-5.3.2
+7.81-5.3.2.3 | WikiPathways | | parentid:7.81-5.3.2
+7.81-5.3.2.4 | ConsensusPathDB | | parentid:7.81-5.3.2
+7.81-5.3.3 | Model Databases | | parentid:7.81-5.3
+7.81-5.3.3.1 | BioModels | | parentid:7.81-5.3.3
+7.81-5.3.3.2 | JWS Online | | parentid:7.81-5.3.3
+7.81-5.4 | Sustainable Modeling and Model Semantics | | parentid:7.81-5
+7.81-5.4.1 | Standards for Systems Biology Models | | parentid:7.81-5.4
+7.81-5.4.2 | Model Semantics and Model Comparison | | parentid:7.81-5.4
+7.81-5.4.2.1 | Semantics Annotations in SBML | | parentid:7.81-5.4.2
+7.81-5.4.2.2 | Element Similarities | | parentid:7.81-5.4.2
+7.81-5.4.2.3 | Model Alignment and Model Similarities | | parentid:7.81-5.4.2
+7.81-5.4.3 | Model Combination | | parentid:7.81-5.4
+7.81-5.4.4 | Model Validity | | parentid:7.81-5.4
+7.81-6 | Model Fitting, Reduction, and Coupling | | parentid:7.81
+7.81-6.1 | Parameter Estimation | | parentid:7.81-6
+7.81-6.1.1 | Regression, Estimators, and Maximal Likelihood | | parentid:7.81-6.1
+7.81-6.1.1.1 | Regression | | parentid:7.81-6.1.1
+7.81-6.1.1.2 | Estimators and Maximal Likelihood | | parentid:7.81-6.1.1
+7.81-6.1.1.3 | Method of Least Squares | | parentid:7.81-6.1.1
+7.81-6.1.2 | Parameter Identifiability | | parentid:7.81-6.1
+7.81-6.1.2.1 | Structural Nonidentifiability | | parentid:7.81-6.1.2
+7.81-6.1.2.2 | Practical Nonidentifiability | | parentid:7.81-6.1.2
+7.81-6.1.3 | Bootstrapping | | parentid:7.81-6.1
+7.81-6.1.3.1 | Cross-Validation | | parentid:7.81-6.1.3
+7.81-6.1.4 | Bayesian Parameter Estimation | | parentid:7.81-6.1
+7.81-6.1.4.1 | Bayesian Networks | | parentid:7.81-6.1.4
+7.81-6.1.5 | Probability Distributions for Rate Constants | | parentid:7.81-6.1
+7.81-6.1.5.1 | Distributions of Enzymatic Rate Constants | | parentid:7.81-6.1.5
+7.81-6.1.5.2 | Thermodynamic Constraints on Rate Constants | | parentid:7.81-6.1.5
+7.81-6.1.5.3 | Dependence Scheme for Model Parameters | | parentid:7.81-6.1.5
+7.81-6.1.5.4 | Parameter Balancing | | parentid:7.81-6.1.5
+7.81-6.1.6 | Optimization Methods | | parentid:7.81-6.1
+7.81-6.1.6.1 | Local Optimization | | parentid:7.81-6.1.6
+7.81-6.1.6.2 | Global Optimization | | parentid:7.81-6.1.6
+7.81-6.1.6.3 | Sampling Methods | | parentid:7.81-6.1.6
+7.81-6.1.6.4 | Genetic Algorithms | | parentid:7.81-6.1.6
+7.81-6.2 | Model Selection | | parentid:7.81-6
+7.81-6.2.1 | What Is a Good Model? | | parentid:7.81-6.2
+7.81-6.2.2 | The Problem of Model Selection | | parentid:7.81-6.2
+7.81-6.2.2.1 | Likelihood and Overfitting | | parentid:7.81-6.2.2
+7.81-6.2.2.2 | Methods for Model Selection | | parentid:7.81-6.2.2
+7.81-6.2.3 | Likelihood Ratio Test | | parentid:7.81-6.2
+7.81-6.2.4 | Selection Criteria | | parentid:7.81-6.2
+7.81-6.2.5 | Bayesian Model Selection | | parentid:7.81-6.2
+7.81-6.3 | Model Reduction | | parentid:7.81-6
+7.81-6.3.1 | Model Simplification | | parentid:7.81-6.3
+7.81-6.3.2 | Reduction of Fast Processes | | parentid:7.81-6.3
+7.81-6.3.2.1 | Time Scale Separation | | parentid:7.81-6.3.2
+7.81-6.3.2.2 | Relaxation Time and Other Characteristic Time Scales | | parentid:7.81-6.3.2
+7.81-6.3.3 | Quasi-Equilibrium and Quasi-Steady State | | parentid:7.81-6.3
+7.81-6.3.4 | Global Model Reduction | | parentid:7.81-6.3
+7.81-6.3.4.1 | Linearization of Biochemical Models | | parentid:7.81-6.3.4
+7.81-6.3.4.2 | Linear Relaxation Modes | | parentid:7.81-6.3.4
+7.81-6.3.4.3 | Model Reduction | | parentid:7.81-6.3.4
+7.81-6.4 | Coupled Systems and Emergent Behavior | | parentid:7.81-6
+7.81-6.4.1 | Modeling of Coupled Systems | | parentid:7.81-6.4
+7.81-6.4.1.1 | Modeling the System Boundary | | parentid:7.81-6.4.1
+7.81-6.4.1.2 | Coupling of Submodels | | parentid:7.81-6.4.1
+7.81-6.4.1.3 | Supply-Demand Analysis | | parentid:7.81-6.4.1
+7.81-6.4.1.4 | Hierarchical Regulation Analysis | | parentid:7.81-6.4.1
+7.81-6.4.2 | Combining Rate Laws into Models | | parentid:7.81-6.4
+7.81-6.4.3 | Modular Response Analysis | | parentid:7.81-6.4
+7.81-6.4.4 | Emergent Behavior in Coupled Systems | | parentid:7.81-6.4
+7.81-6.4.5 | Causal Interactions and Global Behavior | | parentid:7.81-6.4
+7.81-7 | Discrete, Stochastic, and Spatial Models | | parentid:7.81
+7.81-7.1 | Discrete Models | | parentid:7.81-7
+7.81-7.1.1 | Boolean Networks | | parentid:7.81-7.1
+7.81-7.1.1.1 | Basic Principles of Boolean Networks | | parentid:7.81-7.1.1
+7.81-7.1.1.2 | Advanced Types of Boolean Networks | | parentid:7.81-7.1.1
+7.81-7.1.2 | Petri Nets | | parentid:7.81-7.1
+7.81-7.2 | Stochastic Modeling of Biochemical Reactions | | parentid:7.81-7
+7.81-7.2.1 | Chance in Biochemical Reaction Systems | | parentid:7.81-7.2
+7.81-7.2.2 | The Chemical Master Equation | | parentid:7.81-7.2
+7.81-7.2.3 | Stochastic Simulation | | parentid:7.81-7.2
+7.81-7.2.3.1 | Direct Method | | parentid:7.81-7.2.3
+7.81-7.2.3.2 | Explicit τ-Leaping Method | | parentid:7.81-7.2.3
+7.81-7.2.3.3 | Stochastic Simulation and Spatial Models | | parentid:7.81-7.2.3
+7.81-7.2.4 | Chemical Langevin Equation and Chemical Noise | | parentid:7.81-7.2
+7.81-7.2.5 | Dynamic Fluctuations | | parentid:7.81-7.2
+7.81-7.2.6 | From Stochastic to Deterministic Modeling | | parentid:7.81-7.2
+7.81-7.3 | Spatial Models | | parentid:7.81-7
+7.81-7.3.1 | Types of Spatial Models | | parentid:7.81-7.3
+7.81-7.3.2 | Compartment Models | | parentid:7.81-7.3
+7.81-7.3.3 | Reaction-Diffusion Systems | | parentid:7.81-7.3
+7.81-7.3.3.1 | Diffusion Equation | | parentid:7.81-7.3.3
+7.81-7.3.3.2 | Solutions of the Diffusion Equation | | parentid:7.81-7.3.3
+7.81-7.3.3.3 | Reaction-Diffusion Equation | | parentid:7.81-7.3.3
+7.81-7.3.4 | Robust Pattern Formation in Embryonic Development | | parentid:7.81-7.3
+7.81-7.3.4.1 | Bicoid Gradient in the Fly Embryo | | parentid:7.81-7.3.4
+7.81-7.3.5 | Spontaneous Pattern Formation | | parentid:7.81-7.3
+7.81-7.3.6 | Linear Stability Analysis of the Activator-Inhibitor Model | | parentid:7.81-7.3
+7.81-8 | Network Structure, Dynamics, and Function | | parentid:7.81
+7.81-8.1 | Structure of Biochemical Networks | | parentid:7.81-8
+7.81-8.1.1 | Random Graphs | | parentid:7.81-8.1
+7.81-8.1.1.1 | Mathematical Graphs | | parentid:7.81-8.1.1
+7.81-8.1.1.2 | Random Graphs | | parentid:7.81-8.1.1
+7.81-8.1.1.3 | Erdös-Rényi Random Graphs | | parentid:7.81-8.1.1
+7.81-8.1.1.4 | Geometric Random Graphs | | parentid:7.81-8.1.1
+7.81-8.1.1.5 | Random Graphs with Predefined Degree Sequence | | parentid:7.81-8.1.1
+7.81-8.1.2 | Scale-Free Networks | | parentid:7.81-8.1
+7.81-8.1.2.1 | Preferential Attachment Model | | parentid:7.81-8.1.2
+7.81-8.1.3 | Connectivity and Node Distances | | parentid:7.81-8.1
+7.81-8.1.3.1 | Clustering Coefficient | | parentid:7.81-8.1.3
+7.81-8.1.3.2 | Small-World Networks | | parentid:7.81-8.1.3
+7.81-8.1.4 | Network Motifs and Significance Tests | | parentid:7.81-8.1
+7.81-8.1.4.1 | Network Motifs | | parentid:7.81-8.1.4
+7.81-8.1.4.2 | Null Hypotheses for Detecting Network Structures | | parentid:7.81-8.1.4
+7.81-8.1.5 | Explanations for Network Structures | | parentid:7.81-8.1
+7.81-8.1.5.1 | The Network Picture Revisited | | parentid:7.81-8.1.5
+7.81-8.2 | Regulation Networks and Network Motifs | | parentid:7.81-8
+7.81-8.2.1 | Structure of Transcription Networks | | parentid:7.81-8.2
+7.81-8.2.2 | Regulation Edges and Their Steady-State Response | | parentid:7.81-8.2
+7.81-8.2.3 | Negative Feedback | | parentid:7.81-8.2
+7.81-8.2.4 | Adaptation Motif | | parentid:7.81-8.2
+7.81-8.2.5 | Feed-Forward Loops | | parentid:7.81-8.2
+7.81-8.3 | Modularity and Gene Functions | | parentid:7.81-8
+7.81-8.3.1 | Cell Functions Are Reflected in Structure, Dynamics, Regulation, and Genetics | | parentid:7.81-8.3
+7.81-8.3.2 | Metabolic Pathways and Elementary Modes | | parentid:7.81-8.3
+7.81-8.3.3 | Epistasis Can Indicate Functional Modules | | parentid:7.81-8.3
+7.81-8.3.4 | Evolution of Function and Modules | | parentid:7.81-8.3
+7.81-8.3.5 | Independent Systems as a Tacit Model Assumption | | parentid:7.81-8.3
+7.81-8.3.6 | Modularity and Biological Function Are Conceptual Abstractions | | parentid:7.81-8.3
+7.81-9 | Gene Expression Models | | parentid:7.81
+7.81-9.1 | Mechanisms of Gene Expression Regulation | | parentid:7.81-9
+7.81-9.1.1 | Transcription Factor-Initiated Gene Regulation | | parentid:7.81-9.1
+7.81-9.1.2 | General Promoter Structure | | parentid:7.81-9.1
+7.81-9.1.3 | Prediction and Analysis of Promoter Elements | | parentid:7.81-9.1
+7.81-9.1.3.1 | Sequence-Based Analysis | | parentid:7.81-9.1.3
+7.81-9.1.3.2 | Approaches that Incorporate Additional Information | | parentid:7.81-9.1.3
+7.81-9.1.4 | Posttranscriptional Regulation through microRNAs | | parentid:7.81-9.1
+7.81-9.1.4.1 | Identification of microRNAs in the Genome Sequence | | parentid:7.81-9.1.4
+7.81-9.1.4.2 | MicroRNA Target Prediction | | parentid:7.81-9.1.4
+7.81-9.1.4.3 | Experimental Implications: RNA Interference | | parentid:7.81-9.1.4
+7.81-9.2 | Dynamic Models of Gene Regulation | | parentid:7.81-9
+7.81-9.2.1 | A Basic Model of Gene Expression and Regulation | | parentid:7.81-9.2
+7.81-9.2.2 | Natural and Synthetic Gene Regulatory Networks | | parentid:7.81-9.2
+7.81-9.2.3 | Gene Expression Modeling with Stochastic Equations | | parentid:7.81-9.2
+7.81-9.3 | Gene Regulation Functions | | parentid:7.81-9
+7.81-9.3.1 | The Lac Operon in E. coli | | parentid:7.81-9.3
+7.81-9.3.2 | Gene Regulation Functions Derived from Equilibrium Binding | | parentid:7.81-9.3
+7.81-9.3.3 | Thermodynamic Models of Promoter Occupancy | | parentid:7.81-9.3
+7.81-9.3.4 | Gene Regulation Function of the Lac Promoter | | parentid:7.81-9.3
+7.81-9.3.5 | Inferring Transcription Factor Activities from Transcription Data | | parentid:7.81-9.3
+7.81-9.3.5.1 | Global Regulation by Transcription Resources | | parentid:7.81-9.3.5
+7.81-9.3.6 | Network Component Analysis | | parentid:7.81-9.3
+7.81-9.3.7 | Correspondences between mRNA and Protein Levels | | parentid:7.81-9.3
+7.81-9.4 | Fluctuations in Gene Expression | | parentid:7.81-9
+7.81-9.4.1 | Stochastic Model of Transcription and Translation | | parentid:7.81-9.4
+7.81-9.4.1.1 | Macroscopic Kinetic Model | | parentid:7.81-9.4.1
+7.81-9.4.1.2 | Microscopic Stochastic Model | | parentid:7.81-9.4.1
+7.81-9.4.1.3 | Fluctuations in a Genetic Network | | parentid:7.81-9.4.1
+7.81-9.4.2 | Intrinsic and Extrinsic Variability | | parentid:7.81-9.4
+7.81-9.4.2.1 | Measurement of Intrinsic and Extrinsic Variability | | parentid:7.81-9.4.2
+7.81-9.4.2.2 | Calculation of Intrinsic and Extrinsic Variability | | parentid:7.81-9.4.2
+7.81-9.4.3 | Temporal Fluctuations in Gene Cascades | | parentid:7.81-9.4
+7.81-9.4.3.1 | Linear Model with Two Genes | | parentid:7.81-9.4.3
+7.81-9.4.3.2 | Measuring the Time Correlations in Protein Levels | | parentid:7.81-9.4.3
+7.81-10 | Variability, Robustness, and Information | | parentid:7.81
+7.81-10.1 | Variability and Biochemical Models | | parentid:7.81-10
+7.81-10.1.1 | Variability and Uncertainty Analysis | | parentid:7.81-10.1
+7.81-10.1.1.1 | Uncertainty Analysis and the Principle of Minimal Information | | parentid:7.81-10.1.1
+7.81-10.1.1.2 | Variability Analysis and Model Ensembles | | parentid:7.81-10.1.1
+7.81-10.1.2 | Flux Sampling | | parentid:7.81-10.1
+7.81-10.1.3 | Elasticity Sampling | | parentid:7.81-10.1
+7.81-10.1.3.1 | Elasticity Sampling | | parentid:7.81-10.1.3
+7.81-10.1.3.2 | Elasticity Sampling under Thermodynamic Constraints | | parentid:7.81-10.1.3
+7.81-10.1.4 | Propagation of Parameter Variability in Kinetic Models | | parentid:7.81-10.1
+7.81-10.1.4.1 | Propagation of Variability | | parentid:7.81-10.1.4
+7.81-10.1.4.2 | Variability Can Shift Mean Values | | parentid:7.81-10.1.4
+7.81-10.1.4.3 | The Value of Robustness | | parentid:7.81-10.1.4
+7.81-10.1.5 | Models with Parameter Fluctuations | | parentid:7.81-10.1
+7.81-10.1.5.1 | Biochemical Systems under Periodic Perturbations | | parentid:7.81-10.1.5
+7.81-10.1.5.2 | Biochemical Systems under Random Fluctuations | | parentid:7.81-10.1.5
+7.81-10.2 | Robustness Mechanisms and Scaling Laws | | parentid:7.81-10
+7.81-10.2.1 | Robustness in Biochemical Systems | | parentid:7.81-10.2
+7.81-10.2.1.1 | Biological Robustness Properties | | parentid:7.81-10.2.1
+7.81-10.2.1.2 | Mathematical Robustness Criteria | | parentid:7.81-10.2.1
+7.81-10.2.2 | Robustness by Backup Elements | | parentid:7.81-10.2
+7.81-10.2.2.1 | Backup Genes and Gene Loss | | parentid:7.81-10.2.2
+7.81-10.2.2.2 | Backup Pathways | | parentid:7.81-10.2.2
+7.81-10.2.3 | Feedback Control | | parentid:7.81-10.2
+7.81-10.2.3.1 | Feedback Regulation Changes the System Dynamics | | parentid:7.81-10.2.3
+7.81-10.2.3.2 | Allosteric and Transcriptional Feedback | | parentid:7.81-10.2.3
+7.81-10.2.3.3 | Integral Feedback | | parentid:7.81-10.2.3
+7.81-10.2.4 | Perfect Robustness by Structure | | parentid:7.81-10.2
+7.81-10.2.4.1 | The Two-component System | | parentid:7.81-10.2.4
+7.81-10.2.4.2 | Chemotaxis Signaling Pathway | | parentid:7.81-10.2.4
+7.81-10.2.5 | Scaling Laws | | parentid:7.81-10.2
+7.81-10.2.5.1 | Geometric Scaling | | parentid:7.81-10.2.5
+7.81-10.2.5.2 | Power Laws | | parentid:7.81-10.2.5
+7.81-10.2.5.3 | Scale Invariance | | parentid:7.81-10.2.5
+7.81-10.2.5.4 | Allometric Scaling | | parentid:7.81-10.2.5
+7.81-10.2.5.5 | Scaling Relations within Cells: Ribosome Content and Growth Rate | | parentid:7.81-10.2.5
+7.81-10.2.6 | Time Scaling, Summation Laws, and Robustness | | parentid:7.81-10.2
+7.81-10.2.6.1 | Time Scaling and Metabolic Control | | parentid:7.81-10.2.6
+7.81-10.2.6.2 | Robustness against Correlated Expression Changes | | parentid:7.81-10.2.6
+7.81-10.2.6.3 | Temperature Compensation | | parentid:7.81-10.2.6
+7.81-10.2.6.4 | Limits of Robustness | | parentid:7.81-10.2.6
+7.81-10.2.7 | The Role of Robustness in Evolution and Modeling | | parentid:7.81-10.2
+7.81-10.2.7.1 | Robustness and Evolution | | parentid:7.81-10.2.7
+7.81-10.2.7.2 | Robustness and Modeling | | parentid:7.81-10.2.7
+7.81-10.3 | Adaptation and Exploration Strategies | | parentid:7.81-10
+7.81-10.3.1 | Information Transmission in Signaling Pathways | | parentid:7.81-10.3
+7.81-10.3.2 | Adaptation and Fold-Change Detection | | parentid:7.81-10.3
+7.81-10.3.3 | Two Adaptation Mechanisms: Sensing and Random Switching | | parentid:7.81-10.3
+7.81-10.3.3.1 | Random Switching in Cell Populations | | parentid:7.81-10.3.3
+7.81-10.3.3.2 | Phenotypic or Responsive Switching | | parentid:7.81-10.3.3
+7.81-10.3.4 | Shannon Information and the Value of Information | | parentid:7.81-10.3
+7.81-10.3.5 | Metabolic Shifts and Anticipation | | parentid:7.81-10.3
+7.81-10.3.5.1 | Metabolic Shifts | | parentid:7.81-10.3.5
+7.81-10.3.5.2 | Management of a Transient State | | parentid:7.81-10.3.5
+7.81-10.3.5.3 | Adaptation Based on Indirect Cues | | parentid:7.81-10.3.5
+7.81-10.3.6 | Exploration Strategies | | parentid:7.81-10.3
+7.81-10.3.6.1 | Stress-Induced Mutagenesis | | parentid:7.81-10.3.6
+7.81-10.3.6.2 | Chemotaxis | | parentid:7.81-10.3.6
+7.81-10.3.6.3 | Infotaxis | | parentid:7.81-10.3.6
+7.81-11 | Optimality and Evolution | | parentid:7.81
+7.81-11.1 | Optimality in Systems Biology Models | | parentid:7.81-11
+7.81-11.1.1 | Mathematical Concepts for Optimality and Compromise | | parentid:7.81-11.1
+7.81-11.1.2 | Metabolism Is Shaped by Optimality | | parentid:7.81-11.1
+7.81-11.1.3 | Optimality Approaches in Metabolic Modeling | | parentid:7.81-11.1
+7.81-11.1.4 | Metabolic Strategies | | parentid:7.81-11.1
+7.81-11.1.5 | Optimal Metabolic Adaptation | | parentid:7.81-11.1
+7.81-11.2 | Optimal Enzyme Concentrations | | parentid:7.81-11
+7.81-11.2.1 | Optimization of Catalytic Properties of Single Enzymes | | parentid:7.81-11.2
+7.81-11.2.2 | Optimal Distribution of Enzyme Concentrations in a Metabolic Pathway | | parentid:7.81-11.2
+7.81-11.2.3 | Temporal Transcription Programs | | parentid:7.81-11.2
+7.81-11.3 | Evolution and Self-Organization | | parentid:7.81-11
+7.81-11.3.1 | Introduction | | parentid:7.81-11.3
+7.81-11.3.2 | Selection Equations for Biological Macromolecules | | parentid:7.81-11.3
+7.81-11.3.2.1 | Self-Replication without Interactions | | parentid:7.81-11.3.2
+7.81-11.3.2.2 | Selection at Constant Total Concentration of Self-Replicating Molecules | | parentid:7.81-11.3.2
+7.81-11.3.3 | The Quasispecies Model: Self-Replication with Mutations | | parentid:7.81-11.3
+7.81-11.3.3.1 | The Genetic Algorithm | | parentid:7.81-11.3.3
+7.81-11.3.3.2 | Assessment of Sequence Length for Stable Passing On of Sequence Information | | parentid:7.81-11.3.3
+7.81-11.3.3.3 | Coexistence of Self-Replicating Sequences: Complementary Replication of RNA | | parentid:7.81-11.3.3
+7.81-11.3.4 | The Hypercycle | | parentid:7.81-11.3
+7.81-11.3.5 | Other Mathematical Models of Evolution: Spin Glass Model | | parentid:7.81-11.3
+7.81-11.3.6 | The Neutral Theory of Molecular Evolution | | parentid:7.81-11.3
+7.81-11.4 | Evolutionary Game Theory | | parentid:7.81-11
+7.81-11.4.1 | Social Interactions | | parentid:7.81-11.4
+7.81-11.4.2 | Game Theory | | parentid:7.81-11.4
+7.81-11.4.3 | Evolutionary Game Theory | | parentid:7.81-11.4
+7.81-11.4.4 | Replicator Equation for Population Dynamics | | parentid:7.81-11.4
+7.81-11.4.5 | Evolutionarily Stable Strategies | | parentid:7.81-11.4
+7.81-11.4.6 | Dynamical Behavior in the Rock-Scissors-Paper Game | | parentid:7.81-11.4
+7.81-11.4.7 | Evolution of Cooperative Behavior | | parentid:7.81-11.4
+7.81-11.4.8 | Compromises between Metabolic Yield and Efficiency | | parentid:7.81-11.4
+7.81-12 | Models of Biochemical Systems | | parentid:7.81
+7.81-12.1 | Metabolic Systems | | parentid:7.81-12
+7.81-12.1.1 | Basic Elements of Metabolic Modeling | | parentid:7.81-12.1
+7.81-12.1.2 | Toy Model of Upper Glycolysis | | parentid:7.81-12.1
+7.81-12.1.3 | Threonine Synthesis Pathway Model | | parentid:7.81-12.1
+7.81-12.2 | Signaling Pathways | | parentid:7.81-12
+7.81-12.2.1 | Function and Structure of Intra- and Intercellular Communication | | parentid:7.81-12.2
+7.81-12.2.2 | Receptor-Ligand Interactions | | parentid:7.81-12.2
+7.81-12.2.3 | Structural Components of Signaling Pathways | | parentid:7.81-12.2
+7.81-12.2.3.1 | G Proteins | | parentid:7.81-12.2.3
+7.81-12.2.3.2 | Small G Proteins | | parentid:7.81-12.2.3
+7.81-12.2.3.3 | Phosphorelay Systems | | parentid:7.81-12.2.3
+7.81-12.2.3.4 | MAP Kinase Cascades | | parentid:7.81-12.2.3
+7.81-12.2.3.5 | The Wnt/β-Catenin Signaling Pathway | | parentid:7.81-12.2.3
+7.81-12.2.4 | Analysis of Dynamic and Regulatory Features of Signaling Pathways | | parentid:7.81-12.2
+7.81-12.2.4.1 | Detecting Feedback Loops in Dynamical Systems | | parentid:7.81-12.2.4
+7.81-12.2.4.2 | Quantitative Measures for Properties of Signaling Pathways | | parentid:7.81-12.2.4
+7.81-12.2.4.3 | Crosstalk in Signaling Pathways | | parentid:7.81-12.2.4
+7.81-12.3 | The Cell Cycle | | parentid:7.81-12
+7.81-12.3.1 | Steps in the Cycle | | parentid:7.81-12.3
+7.81-12.3.2 | Minimal Cascade Model of a Mitotic Oscillator | | parentid:7.81-12.3
+7.81-12.3.3 | Models of Budding Yeast Cell Cycle | | parentid:7.81-12.3
+7.81-12.4 | The Aging Process | | parentid:7.81-12
+7.81-12.4.1 | Evolution of the Aging Process | | parentid:7.81-12.4
+7.81-12.4.2 | Using Stochastic Simulations to Study Mitochondrial Damage | | parentid:7.81-12.4
+7.81-12.4.3 | Using Delay Differential Equations to Study Mitochondrial Damage | | parentid:7.81-12.4
+7.81-13 | Cell Biology | | parentid:7.81
+7.81-13.1 | The Origin of Life | | parentid:7.81-13
+7.81-13.2 | Molecular Biology of the Cell | | parentid:7.81-13
+7.81-13.2.1 | Chemical Bonds and Forces Important in Biological Molecules | | parentid:7.81-13.2
+7.81-13.2.2 | Functional Groups in Biological Molecules | | parentid:7.81-13.2
+7.81-13.2.3 | Major Classes of Biological Molecules | | parentid:7.81-13.2
+7.81-13.3 | Structural Cell Biology | | parentid:7.81-13
+7.81-13.3.1 | Structure and Function of Biological Membranes | | parentid:7.81-13.3
+7.81-13.3.2 | Nucleus | | parentid:7.81-13.3
+7.81-13.3.3 | Cytosol | | parentid:7.81-13.3
+7.81-13.3.4 | Mitochondria | | parentid:7.81-13.3
+7.81-13.3.5 | Endoplasmic Reticulum and Golgi Complex | | parentid:7.81-13.3
+7.81-13.3.6 | Other Organelles | | parentid:7.81-13.3
+7.81-13.4 | Expression of Genes | | parentid:7.81-13
+7.81-13.4.1 | Transcription | | parentid:7.81-13.4
+7.81-13.4.2 | Processing of the mRNA | | parentid:7.81-13.4
+7.81-13.4.3 | Translation | | parentid:7.81-13.4
+7.81-13.4.4 | Protein Sorting and Posttranslational Modifications | | parentid:7.81-13.4
+7.81-13.4.5 | Regulation of Gene Expression | | parentid:7.81-13.4
+7.81-14 | Experimental Techniques | | parentid:7.81
+7.81-14.1 | Restriction Enzymes and Gel Electrophoresis | | parentid:7.81-14
+7.81-14.2 | Cloning Vectors and DNA Libraries | | parentid:7.81-14
+7.81-14.3 | 1D and 2D Protein Gels | | parentid:7.81-14
+7.81-14.4 | Hybridization and Blotting Techniques | | parentid:7.81-14
+7.81-14.4.1 | Southern Blotting | | parentid:7.81-14.4
+7.81-14.4.2 | Northern Blotting | | parentid:7.81-14.4
+7.81-14.4.3 | Western Blotting | | parentid:7.81-14.4
+7.81-14.4.4 | In Situ Hybridization | | parentid:7.81-14.4
+7.81-14.5 | Further Protein Separation Techniques | | parentid:7.81-14
+7.81-14.5.1 | Centrifugation | | parentid:7.81-14.5
+7.81-14.5.2 | Column Chromatography | | parentid:7.81-14.5
+7.81-14.6 | Polymerase Chain Reaction | | parentid:7.81-14
+7.81-14.7 | Next-Generation Sequencing | | parentid:7.81-14
+7.81-14.8 | DNA and Protein Chips | | parentid:7.81-14
+7.81-14.8.1 | DNA Chips | | parentid:7.81-14.8
+7.81-14.8.2 | Protein Chips | | parentid:7.81-14.8
+7.81-14.9 | RNA-Seq | | parentid:7.81-14
+7.81-14.10 | Yeast Two-Hybrid System | | parentid:7.81-14
+7.81-14.11 | Mass Spectrometry | | parentid:7.81-14
+7.81-14.12 | Transgenic Animals | | parentid:7.81-14
+7.81-14.12.1 | Microinjection and ES Cells | | parentid:7.81-14.12
+7.81-14.12.2 | Genome Editing Using ZFN, TALENs, and CRISPR | | parentid:7.81-14.12
+7.81-14.13 | RNA Interference | | parentid:7.81-14
+7.81-14.14 | ChIP-on-Chip and ChIP-PET | | parentid:7.81-14
+7.81-14.15 | Green Fluorescent Protein | | parentid:7.81-14
+7.81-14.16 | Single-Cell Experiments | | parentid:7.81-14
+7.81-14.17 | Surface Plasmon Resonance | | parentid:7.81-14
+7.81-15 | Mathematical and Physical Concepts | | parentid:7.81
+7.81-15.1 | Linear Algebra | | parentid:7.81-15
+7.81-15.1.1 | Linear Equations | | parentid:7.81-15.1
+7.81-15.1.1.1 | The Gaussian Elimination Algorithm | | parentid:7.81-15.1.1
+7.81-15.1.1.2 | Systematic Solution of Linear Systems | | parentid:7.81-15.1.1
+7.81-15.1.2 | Matrices | | parentid:7.81-15.1
+7.81-15.1.2.1 | Basic Notions | | parentid:7.81-15.1.2
+7.81-15.1.2.2 | Linear Dependency | | parentid:7.81-15.1.2
+7.81-15.1.2.3 | Basic Matrix Operations | | parentid:7.81-15.1.2
+7.81-15.1.2.4 | Dimension and Rank | | parentid:7.81-15.1.2
+7.81-15.1.2.5 | Eigenvalues and Eigenvectors of a Square Matrix | | parentid:7.81-15.1.2
+7.81-15.2 | Dynamic Systems | | parentid:7.81-15
+7.81-15.2.1 | Describing Dynamics with Ordinary Differential Equations | | parentid:7.81-15.2
+7.81-15.2.1.1 | Notations | | parentid:7.81-15.2.1
+7.81-15.2.2 | Linearization of Autonomous Systems | | parentid:7.81-15.2
+7.81-15.2.3 | Solution of Linear ODE Systems | | parentid:7.81-15.2
+7.81-15.2.4 | Stability of Steady States | | parentid:7.81-15.2
+7.81-15.2.5 | Global Stability of Steady States | | parentid:7.81-15.2
+7.81-15.2.6 | Limit Cycles | | parentid:7.81-15.2
+7.81-15.3 | Statistics | | parentid:7.81-15
+7.81-15.3.1 | Basic Concepts of Probability Theory | | parentid:7.81-15.3
+7.81-15.3.1.1 | Probability Spaces | | parentid:7.81-15.3.1
+7.81-15.3.1.2 | Random Variables, Densities, and Distribution Functions | | parentid:7.81-15.3.1
+7.81-15.3.1.3 | Transforming Probability Densities | | parentid:7.81-15.3.1
+7.81-15.3.1.4 | Product Experiments and Independence | | parentid:7.81-15.3.1
+7.81-15.3.1.5 | Limit Theorems | | parentid:7.81-15.3.1
+7.81-15.3.2 | Descriptive Statistics | | parentid:7.81-15.3
+7.81-15.3.2.1 | Statistics for Sample Location | | parentid:7.81-15.3.2
+7.81-15.3.2.2 | Statistics for Sample Variability | | parentid:7.81-15.3.2
+7.81-15.3.2.3 | Density Estimation | | parentid:7.81-15.3.2
+7.81-15.3.2.4 | Correlation of Samples | | parentid:7.81-15.3.2
+7.81-15.3.3 | Testing Statistical Hypotheses | | parentid:7.81-15.3
+7.81-15.3.3.1 | Statistical Framework | | parentid:7.81-15.3.3
+7.81-15.3.3.2 | Two Sample Location Tests | | parentid:7.81-15.3.3
+7.81-15.3.4 | Linear Models | | parentid:7.81-15.3
+7.81-15.3.4.1 | ANOVA | | parentid:7.81-15.3.4
+7.81-15.3.4.2 | Multiple Linear Regression | | parentid:7.81-15.3.4
+7.81-15.3.5 | Principal Component Analysis | | parentid:7.81-15.3
+7.81-15.4 | Stochastic Processes | | parentid:7.81-15
+7.81-15.4.1 | Chance in Physical Theories | | parentid:7.81-15.4
+7.81-15.4.2 | Mathematical Random Processes | | parentid:7.81-15.4
+7.81-15.4.2.1 | Reduced and Conditional Distributions | | parentid:7.81-15.4.2
+7.81-15.4.3 | Brownian Motion as a Random Process | | parentid:7.81-15.4
+7.81-15.4.4 | Markov Processes | | parentid:7.81-15.4
+7.81-15.4.5 | Markov Chains | | parentid:7.81-15.4
+7.81-15.4.6 | Jump Processes in Continuous Time | | parentid:7.81-15.4
+7.81-15.4.6.1 | Deriving the Master Equation | | parentid:7.81-15.4.6
+7.81-15.4.7 | Continuous Random Processes | | parentid:7.81-15.4
+7.81-15.4.7.1 | Langevin Equations | | parentid:7.81-15.4.7
+7.81-15.4.7.2 | The Fokker-Planck Equation | | parentid:7.81-15.4.7
+7.81-15.4.8 | Moment-Generating Functions | | parentid:7.81-15.4
+7.81-15.5 | Control of Linear Dynamical Systems | | parentid:7.81-15
+7.81-15.5.1 | Linear Dynamical Systems | | parentid:7.81-15.5
+7.81-15.5.2 | System Response and Linear Filters | | parentid:7.81-15.5
+7.81-15.5.2.1 | Impulse Input | | parentid:7.81-15.5.2
+7.81-15.5.2.2 | Oscillatory Input | | parentid:7.81-15.5.2
+7.81-15.5.3 | Random Fluctuations and Spectral Density | | parentid:7.81-15.5
+7.81-15.5.4 | The Gramian Matrices | | parentid:7.81-15.5
+7.81-15.5.5 | Model Reduction | | parentid:7.81-15.5
+7.81-15.5.6 | Optimal Control | | parentid:7.81-15.5
+7.81-15.6 | Biological Thermodynamics | | parentid:7.81-15
+7.81-15.6.1 | Microstate and Statistical Ensemble | | parentid:7.81-15.6
+7.81-15.6.1.1 | Thermodynamic Equilibrium and Detailed Balance | | parentid:7.81-15.6.1
+7.81-15.6.2 | Boltzmann Distribution and Free Energy | | parentid:7.81-15.6
+7.81-15.6.2.1 | Boltzmann Distribution | | parentid:7.81-15.6.2
+7.81-15.6.2.2 | Free Energy | | parentid:7.81-15.6.2
+7.81-15.6.3 | Entropy | | parentid:7.81-15.6
+7.81-15.6.3.1 | The Second Law of Thermodynamics | | parentid:7.81-15.6.3
+7.81-15.6.3.2 | Statistical Entropy | | parentid:7.81-15.6.3
+7.81-15.6.3.3 | Principle of Maximal Entropy | | parentid:7.81-15.6.3
+7.81-15.6.4 | Equilibrium Constant and Energies | | parentid:7.81-15.6
+7.81-15.6.5 | Chemical Reaction Systems | | parentid:7.81-15.6
+7.81-15.6.5.1 | Temperature and Pressure as Free Variables | | parentid:7.81-15.6.5
+7.81-15.6.5.2 | Gibbs Energy and Chemical Potentials | | parentid:7.81-15.6.5
+7.81-15.6.5.3 | Reaction Gibbs Energy | | parentid:7.81-15.6.5
+7.81-15.6.5.4 | Wegscheider Conditions and Haldane Relationships | | parentid:7.81-15.6.5
+7.81-15.6.5.5 | Data for Thermodynamic Calculations | | parentid:7.81-15.6.5
+7.81-15.6.6 | Nonequilibrium Reactions | | parentid:7.81-15.6
+7.81-15.6.6.1 | Variational Principle for Flux States | | parentid:7.81-15.6.6
+7.81-15.6.6.2 | Consequences of the Flux-Force Relation | | parentid:7.81-15.6.6
+7.81-15.6.6.3 | Reaction Energetics and Flux Control | | parentid:7.81-15.6.6
+7.81-15.6.7 | The Role of Thermodynamics in Systems Biology | | parentid:7.81-15.6
+7.81-15.7 | Multivariate Statistics | | parentid:7.81-15
+7.81-15.7.1 | Planning and Designing Experiments for Case-Control Studies | | parentid:7.81-15.7
+7.81-15.7.2 | Tests for Differential Expression | | parentid:7.81-15.7
+7.81-15.7.2.1 | DNA Arrays | | parentid:7.81-15.7.2
+7.81-15.7.2.2 | Next-Generation Sequencing | | parentid:7.81-15.7.2
+7.81-15.7.3 | Multiple Testing | | parentid:7.81-15.7
+7.81-15.7.4 | ROC Curve Analysis | | parentid:7.81-15.7
+7.81-15.7.5 | Clustering Algorithms | | parentid:7.81-15.7
+7.81-15.7.5.1 | Hierarchical Clustering | | parentid:7.81-15.7.5
+7.81-15.7.5.2 | Self-Organizing Maps (SOMs) | | parentid:7.81-15.7.5
+7.81-15.7.5.3 | K-Means | | parentid:7.81-15.7.5
+7.81-15.7.6 | Cluster Validation | | parentid:7.81-15.7
+7.81-15.7.7 | Overrepresentation and Enrichment Analyses | | parentid:7.81-15.7
+7.81-15.7.8 | Classification Methods | | parentid:7.81-15.7
+7.81-15.7.8.1 | Support Vector Machines | | parentid:7.81-15.7.8
+7.81-15.7.8.2 | Other Approaches | | parentid:7.81-15.7.8
+7.81-16 | Databases | | parentid:7.81
+7.81-16.1 | General-Purpose Data Resources | | parentid:7.81-16
+7.81-16.1.1 | PathGuide | | parentid:7.81-16.1
+7.81-16.1.2 | BioNumbers | | parentid:7.81-16.1
+7.81-16.2 | Nucleotide Sequence Databases | | parentid:7.81-16
+7.81-16.2.1 | Data Repositories of the National Center for Biotechnology Information | | parentid:7.81-16.2
+7.81-16.2.2 | GenBank/RefSeq/UniGene | | parentid:7.81-16.2
+7.81-16.2.3 | Entrez | | parentid:7.81-16.2
+7.81-16.2.4 | EMBL Nucleotide Sequence Database | | parentid:7.81-16.2
+7.81-16.2.5 | European Nucleotide Archive | | parentid:7.81-16.2
+7.81-16.2.6 | Ensembl | | parentid:7.81-16.2
+7.81-16.3 | Protein Databases | | parentid:7.81-16
+7.81-16.3.1 | UniProt/Swiss-Prot/TrEMBL | | parentid:7.81-16.3
+7.81-16.3.2 | Protein Data Bank | | parentid:7.81-16.3
+7.81-16.3.3 | PANTHER | | parentid:7.81-16.3
+7.81-16.3.4 | InterPro | | parentid:7.81-16.3
+7.81-16.3.5 | iHOP | | parentid:7.81-16.3
+7.81-16.4 | Ontology Databases | | parentid:7.81-16
+7.81-16.4.1 | Gene Ontology | | parentid:7.81-16.4
+7.81-16.5 | Pathway Databases | | parentid:7.81-16
+7.81-16.5.1 | KEGG | | parentid:7.81-16.5
+7.81-16.5.2 | Reactome | | parentid:7.81-16.5
+7.81-16.5.3 | ConsensusPathDB | | parentid:7.81-16.5
+7.81-16.5.4 | WikiPathways | | parentid:7.81-16.5
+7.81-16.6 | Enzyme Reaction Kinetics Databases | | parentid:7.81-16
+7.81-16.6.1 | BRENDA | | parentid:7.81-16.6
+7.81-16.6.2 | SABIO-RK | | parentid:7.81-16.6
+7.81-16.7 | Model Collections | | parentid:7.81-16
+7.81-16.7.1 | BioModels | | parentid:7.81-16.7
+7.81-16.7.2 | JWS Online | | parentid:7.81-16.7
+7.81-16.8 | Compound and Drug Databases | | parentid:7.81-16
+7.81-16.8.1 | ChEBI | | parentid:7.81-16.8
+7.81-16.8.2 | Guide to PHARMACOLOGY | | parentid:7.81-16.8
+7.81-16.9 | Transcription Factor Databases | | parentid:7.81-16
+7.81-16.9.1 | JASPAR | | parentid:7.81-16.9
+7.81-16.9.2 | TRED | | parentid:7.81-16.9
+7.81-16.9.3 | Transcription Factor Encyclopedia | | parentid:7.81-16.9
+7.81-16.10 | Microarray and Sequencing Databases | | parentid:7.81-16
+7.81-16.10.1 | Gene Expression Omnibus | | parentid:7.81-16.10
+7.81-16.10.2 | ArrayExpress | | parentid:7.81-16.10
+7.81-17 | Software Tools for Modeling | | parentid:7.81
+7.81-17.1 | 13C-Flux2 | | parentid:7.81-17
+7.81-17.2 | Antimony | | parentid:7.81-17
+7.81-17.3 | Berkeley Madonna | | parentid:7.81-17
+7.81-17.4 | BIOCHAM | | parentid:7.81-17
+7.81-17.5 | BioNetGen | | parentid:7.81-17
+7.81-17.6 | Biopython | | parentid:7.81-17
+7.81-17.7 | BioTapestry | | parentid:7.81-17
+7.81-17.8 | BioUML | | parentid:7.81-17
+7.81-17.9 | CellDesigner | | parentid:7.81-17
+7.81-17.10 | CellNetAnalyzer | | parentid:7.81-17
+7.81-17.11 | Copasi | | parentid:7.81-17
+7.81-17.12 | CPN Tools | | parentid:7.81-17
+7.81-17.13 | Cytoscape | | parentid:7.81-17
+7.81-17.14 | E-Cell | | parentid:7.81-17
+7.81-17.15 | EvA2 | | parentid:7.81-17
+7.81-17.16 | FEniCS Project | | parentid:7.81-17
+7.81-17.17 | Genetic Network Analyzer (GNA) | | parentid:7.81-17
+7.81-17.18 | Jarnac | | parentid:7.81-17
+7.81-17.19 | JDesigner | | parentid:7.81-17
+7.81-17.20 | JSim | | parentid:7.81-17
+7.81-17.21 | KNIME | | parentid:7.81-17
+7.81-17.22 | libSBML | | parentid:7.81-17
+7.81-17.23 | MASON | | parentid:7.81-17
+7.81-17.24 | Mathematica | | parentid:7.81-17
+7.81-17.25 | MathSBML | | parentid:7.81-17
+7.81-17.26 | Matlab | | parentid:7.81-17
+7.81-17.27 | MesoRD | | parentid:7.81-17
+7.81-17.28 | Octave | | parentid:7.81-17
+7.81-17.29 | Omix Visualization | | parentid:7.81-17
+7.81-17.30 | OpenCOR | | parentid:7.81-17
+7.81-17.31 | Oscill8 | | parentid:7.81-17
+7.81-17.32 | PhysioDesigner | | parentid:7.81-17
+7.81-17.33 | PottersWheel | | parentid:7.81-17
+7.81-17.34 | PyBioS | | parentid:7.81-17
+7.81-17.35 | PySCeS | | parentid:7.81-17
+7.81-17.36 | R | | parentid:7.81-17
+7.81-17.37 | SAAM II | | parentid:7.81-17
+7.81-17.38 | SBMLeditor | | parentid:7.81-17
+7.81-17.39 | SemanticSBML | | parentid:7.81-17
+7.81-17.40 | SBML-PET-MPI | | parentid:7.81-17
+7.81-17.41 | SBMLsimulator | | parentid:7.81-17
+7.81-17.42 | SBMLsqueezer | | parentid:7.81-17
+7.81-17.43 | SBML Toolbox | | parentid:7.81-17
+7.81-17.44 | SBtoolbox2 | | parentid:7.81-17
+7.81-17.45 | SBML Validator | | parentid:7.81-17
+7.81-17.46 | SensA | | parentid:7.81-17
+7.81-17.47 | SmartCell | | parentid:7.81-17
+7.81-17.48 | STELLA | | parentid:7.81-17
+7.81-17.49 | STEPS | | parentid:7.81-17
+7.81-17.50 | StochKit2 | | parentid:7.81-17
+7.81-17.51 | SystemModeler | | parentid:7.81-17
+7.81-17.52 | Systems Biology Workbench | | parentid:7.81-17
+7.81-17.53 | Taverna | | parentid:7.81-17
+7.81-17.54 | VANTED | | parentid:7.81-17
+7.81-17.55 | Virtual Cell (VCell) | | parentid:7.81-17
+7.81-17.56 | xCellerator | | parentid:7.81-17
+7.81-17.57 | XPPAUT | | parentid:7.81-17
+7.06-1 | Introduction To The Cell  | | parentid:7.06
+7.06-1.1 | Cells and Genomes | | parentid:7.06-1
+7.06-1.2 | Cell Chemistry and Bioenergetics | | parentid:7.06-1
+7.06-1.3 | Proteins | | parentid:7.06-1
+7.06-2 | Basic Genetic Mechanisms  | | parentid:7.06
+7.06-2.1 | DNA, Chromosomes, and Genomes | | parentid:7.06-2
+7.06-2.2 | DNA Replication, Repair, and Recombination | | parentid:7.06-2
+7.06-2.3 | How Cells Read the Genome: From DNA to Protein | | parentid:7.06-2
+7.06-2.4 | Control of Gene Expression | | parentid:7.06-2
+7.06-3 | Isolating Cells And Growing Them In Culture  | | parentid:7.06
+7.06-3.1 | Analyzing Cells, Molecules,and Systems | | parentid:7.06-3
+7.06-3.2 | Visualizing Cells | | parentid:7.06-3
+7.06-4 | Internal Organization Of The Cell  | | parentid:7.06
+7.06-4.1 | Membrane Structure | | parentid:7.06-4
+7.06-4.2 | Membrane Transport of Small Molecules and the Electrical Properties of Membranes | | parentid:7.06-4
+7.06-4.3 | Intracellular Compartments and Protein Sorting | | parentid:7.06-4
+7.06-4.4 | Intracellular Membrane Traffic | | parentid:7.06-4
+7.06-4.5 | Energy Conversion: Mitochondria and Chloroplasts | | parentid:7.06-4
+7.06-4.6 | Cell Signaling | | parentid:7.06-4
+7.06-4.7 | The Cytoskeleton | | parentid:7.06-4
+7.06-4.8 | The Cell Cycle | | parentid:7.06-4
+7.06-4.9 | Cell Death | | parentid:7.06-4
+7.06-5 | Cells In Their Social Context  | | parentid:7.06
+7.06-5.1 | Cell Junctions and the Extracellular Matrix | | parentid:7.06-5
+7.06-5.2 | Cancer | | parentid:7.06-5
+7.06-5.3 | Development of Multicellular Organisms | | parentid:7.06-5
+7.06-5.4 | Stem Cells and Tissue Renewal | | parentid:7.06-5
+7.06-5.5 | Pathogens and Infection | | parentid:7.06-5
+7.06-5.6 | The Innate and Adaptive Immune Systems | | parentid:7.06-5
+7.28-1 | History  | | parentid:7.28
+7.28-1.1 | The Mendelian View of the World | | parentid:7.28-1
+7.28-1.1.1 | Mendel’s Discoveries  | | parentid:7.28-1.1
+7.28-1.1.2 | Chromosomal Theory Of Heredity  | | parentid:7.28-1.1
+7.28-1.1.3 | Gene Linkage And Crossing Over  | | parentid:7.28-1.1
+7.28-1.1.4 | Chromosome Mapping  | | parentid:7.28-1.1
+7.28-1.1.5 | The Origin Of Genetic Variability Through Mutations  | | parentid:7.28-1.1
+7.28-1.1.6 | Early Speculations About What Genes Are And How They Act  | | parentid:7.28-1.1
+7.28-1.1.7 | Preliminary Attempts To Find A Gene–protein Relationship  | | parentid:7.28-1.1
+7.28-1.2 | Nucleic Acids Convey Genetic Information | | parentid:7.28-1
+7.28-1.2.1 | Avery’s Bombshell: Dnacan Carry Genetic Specificity  | | parentid:7.28-1.2
+7.28-1.2.2 | The Double Helix  | | parentid:7.28-1.2
+7.28-1.2.3 | The Genetic Information Within Dna Is Conveyed By The Sequence Of Its Four Nucleotide Building Blocks  | | parentid:7.28-1.2
+7.28-1.2.4 | The Central Dogma  | | parentid:7.28-1.2
+7.28-1.2.5 | Establishing The Direction Of Protein Synthesis  | | parentid:7.28-1.2
+7.28-1.2.6 | The Era Of Genomics  | | parentid:7.28-1.2
+7.28-2 | Structure And Study Of Macromolecules  | | parentid:7.28
+7.28-2.1 | The Importance of Weak and Strong Chemical Bonds | | parentid:7.28-2
+7.28-2.1.1 | Characteristics Of Chemical Bonds  | | parentid:7.28-2.1
+7.28-2.1.2 | The Concept Of Free Energy  | | parentid:7.28-2.1
+7.28-2.1.3 | Weak Bonds In Biological Systems  | | parentid:7.28-2.1
+7.28-2.1.4 | High-energy Bonds  | | parentid:7.28-2.1
+7.28-2.1.5 | Molecules That Donate Energy Are Thermodynamically Unstable  | | parentid:7.28-2.1
+7.28-2.1.6 | Enzymes Lower Activation Energies In Biochemical Reactions  | | parentid:7.28-2.1
+7.28-2.1.7 | Free Energy In Biomolecules  | | parentid:7.28-2.1
+7.28-2.1.8 | High-energy Bonds In Biosynthetic Reactions  | | parentid:7.28-2.1
+7.28-2.1.9 | Activation Of Precursors In Group Transfer Reactions  | | parentid:7.28-2.1
+7.28-2.2 | The Structure of DNA | | parentid:7.28-2
+7.28-2.2.1 | Dna Structure  | | parentid:7.28-2.2
+7.28-2.2.2 | Dna Topology  | | parentid:7.28-2.2
+7.28-2.3 | The Structure and Versatility of RNA | | parentid:7.28-2
+7.28-2.3.1 | Rna Contains Ribose And Uracil And Is Usually Single-stranded  | | parentid:7.28-2.3
+7.28-2.3.2 | Rna Chains Fold Back On Themselves To Form Local Regions Of Double Helix Similar To A-form Dna  | | parentid:7.28-2.3
+7.28-2.3.3 | Rna Can Fold Up Into Complex Tertiary Structures  | | parentid:7.28-2.3
+7.28-2.3.4 | Nucleotide Substitutions In Combination With Chemical Probing Predict Rna Structure  | | parentid:7.28-2.3
+7.28-2.3.5 | Directed Evolution Selects Rnas That Bind Small Molecules  | | parentid:7.28-2.3
+7.28-2.3.6 | Some Rnas Are Enzymes  | | parentid:7.28-2.3
+7.28-2.4 | The Structure of Proteins | | parentid:7.28-2
+7.28-2.4.1 | The Basics  | | parentid:7.28-2.4
+7.28-2.4.2 | Importance Of Water  | | parentid:7.28-2.4
+7.28-2.4.3 | Protein Structure Can Be Described At Four Levels  | | parentid:7.28-2.4
+7.28-2.4.4 | Protein Domains  | | parentid:7.28-2.4
+7.28-2.4.5 | From Amino-acid Sequence To Three-dimensional Structure  | | parentid:7.28-2.4
+7.28-2.4.6 | Conformational Changes In Proteins  | | parentid:7.28-2.4
+7.28-2.4.7 | Proteins As Agents Of Specific Molecular Recognition  | | parentid:7.28-2.4
+7.28-2.4.8 | Enzymes: Proteins As Catalysts  | | parentid:7.28-2.4
+7.28-2.4.9 | Regulation Of Protein Activity  | | parentid:7.28-2.4
+7.28-2.5 | Techniques of Molecular Biology | | parentid:7.28-2
+7.28-2.5.1 | Nucleic Acids: Basic Methods  | | parentid:7.28-2.5
+7.28-2.5.2 | Genomics  | | parentid:7.28-2.5
+7.28-2.5.3 | Proteins  | | parentid:7.28-2.5
+7.28-2.5.4 | Proteomics  | | parentid:7.28-2.5
+7.28-2.5.5 | Nucleic Acid–protein Interactions  | | parentid:7.28-2.5
+7.28-3 | Maintenance Of The Genome  | | parentid:7.28
+7.28-3.1 | Genome Structure, Chromatin, and the Nucleosome | | parentid:7.28-3
+7.28-3.1.1 | Genome Sequence And Chromosome Diversity  | | parentid:7.28-3.1
+7.28-3.1.2 | Chromosome Duplication And Segregation  | | parentid:7.28-3.1
+7.28-3.1.3 | The Nucleosome  | | parentid:7.28-3.1
+7.28-3.1.4 | Higher-order Chromatin Structure  | | parentid:7.28-3.1
+7.28-3.1.5 | Regulation Of Chromatin Structure  | | parentid:7.28-3.1
+7.28-3.1.6 | Nucleosome Assembly  | | parentid:7.28-3.1
+7.28-3.2 | The Replication of DNA | | parentid:7.28-3
+7.28-3.2.1 | The Chemistry Of Dna Synthesis  | | parentid:7.28-3.2
+7.28-3.2.2 | The Mechanism Of Dna Polymerase  | | parentid:7.28-3.2
+7.28-3.2.3 | The Replication Fork  | | parentid:7.28-3.2
+7.28-3.2.4 | The Specialization Of Dna Polymerases  | | parentid:7.28-3.2
+7.28-3.2.5 | Dna Synthesis At The Replication Fork  | | parentid:7.28-3.2
+7.28-3.2.6 | Initiation Of Dna Replication  | | parentid:7.28-3.2
+7.28-3.2.7 | Binding And Unwinding: Origin Selection And Activation By The Initiator Protein  | | parentid:7.28-3.2
+7.28-3.2.8 | Finishing Replication  | | parentid:7.28-3.2
+7.28-3.3 | The Mutability and Repair of DNA | | parentid:7.28-3
+7.28-3.3.1 | Replication Errors And Their Repair  | | parentid:7.28-3.3
+7.28-3.3.2 | Dna Damage  | | parentid:7.28-3.3
+7.28-3.3.3 | Repair And Tolerance Of Dna Damage  | | parentid:7.28-3.3
+7.28-3.4 | Homologous Recombination at the Molecular Level | | parentid:7.28-3
+7.28-3.4.1 | Dna Breaks Are Common And Initiate Recombination  | | parentid:7.28-3.4
+7.28-3.4.2 | Models For Homologous Recombination  | | parentid:7.28-3.4
+7.28-3.4.3 | Homologous Recombination Protein Machines  | | parentid:7.28-3.4
+7.28-3.4.4 | Homologous Recombination In Eukaryotes  | | parentid:7.28-3.4
+7.28-3.4.5 | Mating-type Switching  | | parentid:7.28-3.4
+7.28-3.4.6 | Genetic Consequences Of The Mechanism Of Homologous Recombination  | | parentid:7.28-3.4
+7.28-3.5 | Site-Specific Recombination and Transposition of DNA | | parentid:7.28-3
+7.28-3.5.1 | Conservative Site-specific Recombination  | | parentid:7.28-3.5
+7.28-3.5.2 | Biological Roles Of Site-specific Recombination  | | parentid:7.28-3.5
+7.28-3.5.3 | Transposition  | | parentid:7.28-3.5
+7.28-3.5.4 | Examples Of Transposable Elements And Their Regulation  | | parentid:7.28-3.5
+7.28-3.5.5 | V(d)j Recombination  | | parentid:7.28-3.5
+7.28-4 | Expression Of The Genome  | | parentid:7.28
+7.28-4.1 | Mechanisms of Transcription | | parentid:7.28-4
+7.28-4.1.1 | Rna Polymerases And The Transcription Cycle  | | parentid:7.28-4.1
+7.28-4.1.2 | The Transcription Cycle In Bacteria  | | parentid:7.28-4.1
+7.28-4.1.3 | Transcription In Eukaryotes  | | parentid:7.28-4.1
+7.28-4.1.4 | Transcription By Rna Polymerases I And Iii  | | parentid:7.28-4.1
+7.28-4.2 | RNA Splicing | | parentid:7.28-4
+7.28-4.2.1 | The Chemistry Of Rna Splicing  | | parentid:7.28-4.2
+7.28-4.2.2 | The Spliceosome Machinery  | | parentid:7.28-4.2
+7.28-4.2.3 | Splicing Pathways  | | parentid:7.28-4.2
+7.28-4.2.4 | Variants Of Splicing  | | parentid:7.28-4.2
+7.28-4.2.5 | Alternative Splicing  | | parentid:7.28-4.2
+7.28-4.2.6 | Exon Shuffling  | | parentid:7.28-4.2
+7.28-4.2.7 | Rna Editing  | | parentid:7.28-4.2
+7.28-4.2.8 | mrna Transport  | | parentid:7.28-4.2
+7.28-4.3 | Translation | | parentid:7.28-4
+7.28-4.3.1 | Messenger Rna  | | parentid:7.28-4.3
+7.28-4.3.2 | Transfer Rna  | | parentid:7.28-4.3
+7.28-4.3.3 | Attachment Of Amino Acids To trna  | | parentid:7.28-4.3
+7.28-4.3.4 | The Ribosome  | | parentid:7.28-4.3
+7.28-4.3.5 | Initiation Of Translation  | | parentid:7.28-4.3
+7.28-4.3.6 | Translation Elongation  | | parentid:7.28-4.3
+7.28-4.3.7 | Termination Of Translation  | | parentid:7.28-4.3
+7.28-4.3.8 | Regulation Of Translation  | | parentid:7.28-4.3
+7.28-4.3.9 | Translation-dependent Regulation Of mrna And Protein Stability  | | parentid:7.28-4.3
+7.28-4.4 | The Genetic Code | | parentid:7.28-4
+7.28-4.4.1 | The Code Is Degenerate  | | parentid:7.28-4.4
+7.28-4.4.2 | Three Rules Govern The Genetic Code  | | parentid:7.28-4.4
+7.28-4.4.3 | Suppressor Mutations Can Reside In The Same Or A Different Gene  | | parentid:7.28-4.4
+7.28-4.4.4 | The Code Is Nearly Universal  | | parentid:7.28-4.4
+7.28-4.5 | The Origin and Early Evolution of Life | | parentid:7.28-4
+7.28-4.5.1 | When Did Life Arise On Earth?  | | parentid:7.28-4.5
+7.28-4.5.2 | What Was The Basis For Prebiotic Organic Chemistry?  | | parentid:7.28-4.5
+7.28-4.5.3 | Did Life Evolve From An Rna World?  | | parentid:7.28-4.5
+7.28-4.5.4 | Can Self-replicating Ribozymes Be Created By Directed Evolution?  | | parentid:7.28-4.5
+7.28-4.5.5 | Does Darwinian Evolution Require Self-replicating Protocells?  | | parentid:7.28-4.5
+7.28-4.5.6 | Did Life Arise On Earth?  | | parentid:7.28-4.5
+7.28-5 | Regulation  | | parentid:7.28
+7.28-5.1 | Transcriptional Regulation in Prokaryotes | | parentid:7.28-5
+7.28-5.1.1 | Principles Of Transcriptional Regulation  | | parentid:7.28-5.1
+7.28-5.1.2 | Regulation Of Transcription Initiation: Examples From Prokaryotes  | | parentid:7.28-5.1
+7.28-5.1.3 | The Case Of Bacteriophage : Layers Of Regulation  | | parentid:7.28-5.1
+7.28-5.2 | Transcriptional Regulation in Eukaryotes | | parentid:7.28-5
+7.28-5.2.1 | Conserved Mechanisms Of Transcriptional Regulation From Yeast To Mammals  | | parentid:7.28-5.2
+7.28-5.2.2 | Recruitment Of Protein Complexes To Genes By Eukaryotic Activators  | | parentid:7.28-5.2
+7.28-5.2.3 | Signal Integration And Combinatorial Control  | | parentid:7.28-5.2
+7.28-5.2.4 | Transcriptional Repressors  | | parentid:7.28-5.2
+7.28-5.2.5 | Signal Transduction And The Control Of Transcriptional Regulators  | | parentid:7.28-5.2
+7.28-5.2.6 | Gene “silencing” By Modification Of Histones And Dna  | | parentid:7.28-5.2
+7.28-5.2.7 | Epigenetic Gene Regulation  | | parentid:7.28-5.2
+7.28-5.3 | Regulatory RNAs | | parentid:7.28-5
+7.28-5.3.1 | Regulation By Rnas In Bacteria  | | parentid:7.28-5.3
+7.28-5.3.2 | Regulatory Rnas Are Widespread In Eukaryotes  | | parentid:7.28-5.3
+7.28-5.3.3 | Synthesis And Function Of mirna Molecules  | | parentid:7.28-5.3
+7.28-5.3.4 | Silencing Gene Expression By Small Rnas  | | parentid:7.28-5.3
+7.28-5.3.5 | Long Non-coding Rnas And X-inactivation  | | parentid:7.28-5.3
+7.28-5.4 | Gene Regulation in Development and Evolution | | parentid:7.28-5
+7.28-5.4.1 | Three Strategies By Which Cells Are Instructed To Express Specific Sets Of Genes During Development  | | parentid:7.28-5.4
+7.28-5.4.2 | Examples Of The Three Strategies For Establishing Differential Gene Expression  | | parentid:7.28-5.4
+7.28-5.4.3 | The Molecular Biology Of Drosophila Embryogenesis  | | parentid:7.28-5.4
+7.28-5.4.4 | Homeotic Genes: An Important Class Of Developmental Regulators  | | parentid:7.28-5.4
+7.28-5.4.5 | Genome Evolution And Human Origins  | | parentid:7.28-5.4
+7.28-5.5 | Systems Biology | | parentid:7.28-5
+7.28-5.5.1 | Regulatory Circuits  | | parentid:7.28-5.5
+7.28-5.5.2 | Autoregulation  | | parentid:7.28-5.5
+7.28-5.5.3 | Bistability  | | parentid:7.28-5.5
+7.28-5.5.4 | Feed-forward Loops  | | parentid:7.28-5.5
+7.28-5.5.5 | Oscillating Circuits  | | parentid:7.28-5.5
+7.28-Appendix | Model Organisms | | parentid:7.28
+7.28-Appendix.1 | Bacteriophage  | | parentid:7.28-Appendix
+7.28-Appendix.2 | Bacteria  | | parentid:7.28-Appendix
+7.28-Appendix.3 | Baker’s Yeast, Saccharomyces Cerevisiae  | | parentid:7.28-Appendix
+7.28-Appendix.4 | Arabidopsis  | | parentid:7.28-Appendix
+7.28-Appendix.5 | The Nematode Worm, Caenorhabditis Elegans  | | parentid:7.28-Appendix
+7.28-Appendix.6 | The Fruit Fly, Drosophila Melanogaster  | | parentid:7.28-Appendix
+7.28-Appendix.7 | The House Mouse, Mus Musculus  | | parentid:7.28-Appendix

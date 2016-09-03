@@ -1305,8 +1305,8 @@ def print_list(all_lines, file_name = ''):
                 message += "\nTotal " + str(current) + " records"
             if file_name != '':
                 if html_style:
-                    a = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :]+ '">' + file_name + '</a>'
-                    message += ", File: " + a + "\n\n"
+                    a = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :]+ '">' + file_name[file_name.rfind('/') + 1 :] + '</a>'
+                    message += " in " + '<a target="_blank" href="http://github.com/'+ username + '">' + username +  "</a>' " + a + "\n\n"
                 else:
                     message += ", File: " + file_name + "\n\n"
             else:

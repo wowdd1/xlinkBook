@@ -1,0 +1,44 @@
+neuralnets-2012-001-1 | Machine learning basics | | parentid:neuralnets-2012-001
+neuralnets-2012-001-1.1 | Linear algebra | | parentid:neuralnets-2012-001-1
+neuralnets-2012-001-1.2 | Probability and information theory | | parentid:neuralnets-2012-001-1
+neuralnets-2012-001-1.3 | Numerical computation | | parentid:neuralnets-2012-001-1
+neuralnets-2012-001-1.4 | Machine learning basics | | parentid:neuralnets-2012-001-1
+neuralnets-2012-001-2 | Modern practical deep networks | | parentid:neuralnets-2012-001
+neuralnets-2012-001-2.1 | Deep learning networks | | parentid:neuralnets-2012-001-2
+neuralnets-2012-001-2.2 | Regularization | | parentid:neuralnets-2012-001-2
+neuralnets-2012-001-2.3 | Optimization for training deep models | | parentid:neuralnets-2012-001-2
+neuralnets-2012-001-2.4 | Convolutional networks | | parentid:neuralnets-2012-001-2
+neuralnets-2012-001-2.5 | Sequence modeling- recurrent and recursive nets | | parentid:neuralnets-2012-001-2
+neuralnets-2012-001-3 | Deep learning research | | parentid:neuralnets-2012-001
+neuralnets-2012-001-3.1 | Structured probabilistic models- a deep learning perspective | | parentid:neuralnets-2012-001-3
+neuralnets-2012-001-3.2 | Monte Carlo methods | | parentid:neuralnets-2012-001-3
+neuralnets-2012-001-3.3 | Linear factor models and auto-encoders | | parentid:neuralnets-2012-001-3
+neuralnets-2012-001-3.4 | Representation learning | | parentid:neuralnets-2012-001-3
+neuralnets-2012-001-3.5 | The manifold perspective on representation learning | | parentid:neuralnets-2012-001-3
+neuralnets-2012-001-3.6 | Confronting the partition function | | parentid:neuralnets-2012-001-3
+neuralnets-2012-001-3.7 | Approximate inference | | parentid:neuralnets-2012-001-3
+neuralnets-2012-001-3.8 | Deep generative models | | parentid:neuralnets-2012-001-3
+pgm-003-1 | Introduction | | parentid:pgm-003
+pgm-003-2 | Foundations | | parentid:pgm-003
+pgm-003-3 | The Bayesian Network Representation | | parentid:pgm-003
+pgm-003-4 | Undirected Graphical Models | | parentid:pgm-003
+pgm-003-5 | Local Probabilistic Models | | parentid:pgm-003
+pgm-003-6 | Template-Based Representations | | parentid:pgm-003
+pgm-003-7 | Gaussian Network Models | | parentid:pgm-003
+pgm-003-8 | The Exponential Family | | parentid:pgm-003
+pgm-003-9 | Exact Inference: Variable Elimination | | parentid:pgm-003
+pgm-003-10 | Exact Inference: Clique Trees | | parentid:pgm-003
+pgm-003-11 | Inference as Optimization | | parentid:pgm-003
+pgm-003-12 | Particle-Based Approximate Inference | | parentid:pgm-003
+pgm-003-13 | MAP Inference | | parentid:pgm-003
+pgm-003-14 | Inference in Hybrid Networks | | parentid:pgm-003
+pgm-003-15 | Inference in Temporal Models | | parentid:pgm-003
+pgm-003-16 | Learning Graphical Models: Overview | | parentid:pgm-003
+pgm-003-17 | Parameter Estimation | | parentid:pgm-003
+pgm-003-18 | Structure Learning in Bayesian Networks | | parentid:pgm-003
+pgm-003-19 | Partially Observed Data | | parentid:pgm-003
+pgm-003-20 | Learning Undirected Models | | parentid:pgm-003
+pgm-003-21 | Causality | | parentid:pgm-003
+pgm-003-22 | Utilities and Decisions | | parentid:pgm-003
+pgm-003-23 | Structured Decision Problems | | parentid:pgm-003
+pgm-003-24 | Epilogue | | parentid:pgm-003
