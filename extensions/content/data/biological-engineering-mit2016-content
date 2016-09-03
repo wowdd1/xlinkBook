@@ -1,0 +1,171 @@
+20.305-0 | Synthetic Biology: Implications and Uses | | parentid:20.305
+20.305-0.1 | Introduction | | parentid:20.305-0
+20.305-0.2 | DNA Assembly and Modification | | parentid:20.305-0
+20.305-0.3 | Modular Parts and Circuits | | parentid:20.305-0
+20.305-0.4 | Spatial Regulation | | parentid:20.305-0
+20.305-0.5 | The Synthetic Cell | | parentid:20.305-0
+20.305-0.6 | Societal Challenges Posed by Synthetic Biology | | parentid:20.305-0
+20.305-0.7 | Concluding Remarks | | parentid:20.305-0
+20.305-1 | Biological Basis | | parentid:20.305
+20.305-1.1 | The Emergence of the First Cells | | parentid:20.305-1
+20.305-1.1.1 | Introduction | | parentid:20.305-1.1
+20.305-1.1.2 | Origin of Prebiotic Metabolism and Compartments | | parentid:20.305-1.1
+20.305-1.1.3 | Origin of Extant Cells | | parentid:20.305-1.1
+20.305-1.1.4 | Conclusion | | parentid:20.305-1.1
+20.305-1.2 | Regulation of Gene Expression | | parentid:20.305-1
+20.305-1.2.1 | Introduction | | parentid:20.305-1.2
+20.305-1.2.2 | Regulation of Gene Expression in Prokaryotes | | parentid:20.305-1.2
+20.305-1.2.3 | Regulation of Gene Expression in Eukaryotes | | parentid:20.305-1.2
+20.305-1.2.4 | RNA Splicing | | parentid:20.305-1.2
+20.305-1.2.5 | Role of microRNAs (miRNAs) in the Regulation of Gene Expression | | parentid:20.305-1.2
+20.305-1.2.6 | Chromatin Structure and the Control of Gene Expression | | parentid:20.305-1.2
+20.305-1.2.7 | Epigenetic Control of Gene Expression | | parentid:20.305-1.2
+20.305-1.2.8 | Gene Regulation by Hormonal Action | | parentid:20.305-1.2
+20.305-1.2.9 | Post-Transcriptional Regulation of mRNA | | parentid:20.305-1.2
+20.305-1.2.10 | Transport of Processed mRNA to the Cytoplasm | | parentid:20.305-1.2
+20.305-1.2.11 | Regulation of Gene Expression at the Level of Translation | | parentid:20.305-1.2
+20.305-1.3 | Interactome | | parentid:20.305-1
+20.305-1.3.1 | Introduction | | parentid:20.305-1.3
+20.305-1.3.2 | Experimental Techniques for Detecting Protein Interactions | | parentid:20.305-1.3
+20.305-1.3.3 | Computational Prediction of Protein Interactions | | parentid:20.305-1.3
+20.305-1.3.4 | Exploring the Topology of the Interactome | | parentid:20.305-1.3
+20.305-1.3.5 | Comparing Protein-Protein Interaction Networks | | parentid:20.305-1.3
+20.305-1.3.6 | Databases of Protein and Domain Interactions | | parentid:20.305-1.3
+20.305-1.3.7 | Applications | | parentid:20.305-1.3
+20.305-1.3.8 | Looking Ahead: Towards the Dynamic Interactome | | parentid:20.305-1.3
+20.305-1.4 | Microbiomes | | parentid:20.305-1
+20.305-1.4.1 | Introduction | | parentid:20.305-1.4
+20.305-1.4.2 | History of Microbial Diversity Studies | | parentid:20.305-1.4
+20.305-1.4.3 | Microbiomes | | parentid:20.305-1.4
+20.305-1.4.4 | Single-Cell Genomics | | parentid:20.305-1.4
+20.305-1.4.5 | Sequence Technologies and Tools | | parentid:20.305-1.4
+20.305-1.4.6 | Future Perspectives | | parentid:20.305-1.4
+20.305-2 | Modeling | | parentid:20.305
+20.305-2.1 | Dynamics of Biomolecular Networks | | parentid:20.305-2
+20.305-2.1.1 | Introduction | | parentid:20.305-2.1
+20.305-2.1.2 | Boolean Dynamics Models | | parentid:20.305-2.1
+20.305-2.1.3 | Continuous Dynamics Models | | parentid:20.305-2.1
+20.305-2.2 | E-Cell: Computer Simulation of the Cell | | parentid:20.305-2
+20.305-2.2.1 | Introduction | | parentid:20.305-2.2
+20.305-2.2.2 | Biological Modeling and Simulation Tools | | parentid:20.305-2.2
+20.305-2.2.3 | The E-Cell System | | parentid:20.305-2.2
+20.305-2.2.4 | Practical Applications | | parentid:20.305-2.2
+20.305-2.2.5 | Concluding Remarks | | parentid:20.305-2.2
+20.305-2.3 | SynBioSS Designer Modeling Suite | | parentid:20.305-2
+20.305-2.3.1 | Introduction | | parentid:20.305-2.3
+20.305-2.3.2 | Modeling Synthetic Systems Made by BioBricks | | parentid:20.305-2.3
+20.305-2.3.3 | Modeling Synthetic SystemsMade by User-Defined Genetic Constructs | | parentid:20.305-2.3
+20.305-2.3.4 | Current Limitations of the Designer | | parentid:20.305-2.3
+20.305-2.3.5 | Conclusions | | parentid:20.305-2.3
+20.305-3 | Modular Parts and Circuits | | parentid:20.305
+20.305-3.1 | Synthetic Gene Circuits | | parentid:20.305-3
+20.305-3.1.1 | Introduction to Synthetic Gene Circuits | | parentid:20.305-3.1
+20.305-3.1.2 | Building Blocks of Synthetic Gene Circuits | | parentid:20.305-3.1
+20.305-3.1.3 | Dynamical Circuits | | parentid:20.305-3.1
+20.305-3.1.4 | Memory Devices | | parentid:20.305-3.1
+20.305-3.1.5 | Boolean Logic and Digital Circuits | | parentid:20.305-3.1
+20.305-3.1.6 | Analog Circuits | | parentid:20.305-3.1
+20.305-3.1.7 | Intercellular Communication and Synthetic Multicellular Devices | | parentid:20.305-3.1
+20.305-3.1.8 | Synthetic Circuit Construction: Challenges and Solutions | | parentid:20.305-3.1
+20.305-3.1.9 | Applications of Synthetic Circuits | | parentid:20.305-3.1
+20.305-3.1.10 | Conclusions | | parentid:20.305-3.1
+20.305-3.2 | DNA Origami Nanorobots | | parentid:20.305-3
+20.305-3.2.1 | Introduction to Robotics | | parentid:20.305-3.2
+20.305-3.2.2 | DNA Nanotechnology | | parentid:20.305-3.2
+20.305-3.2.3 | DNA Nanorobotics | | parentid:20.305-3.2
+20.305-3.2.4 | Challenges of Applying DNA Nanorobots to Therapeutics | | parentid:20.305-3.2
+20.305-3.2.5 | Summary and Conclusions | | parentid:20.305-3.2
+20.305-3.3 | RNAi Synthetic Logic Circuits for Sensing, Information Processing, and Actuation | | parentid:20.305-3
+20.305-3.3.1 | Introduction | | parentid:20.305-3.3
+20.305-3.3.2 | Overview of RNA Interference | | parentid:20.305-3.3
+20.305-3.3.3 | Applications | | parentid:20.305-3.3
+20.305-3.3.4 | Conclusions and Perspectives | | parentid:20.305-3.3
+20.305-3.4 | Synthetic Hybrid Biosensors | | parentid:20.305-3
+20.305-3.4.1 | Introduction | | parentid:20.305-3.4
+20.305-3.4.2 | Sensor Design | | parentid:20.305-3.4
+20.305-3.4.3 | Electrochemical Biosensors | | parentid:20.305-3.4
+20.305-3.4.4 | Optical Biosensors | | parentid:20.305-3.4
+20.305-3.4.5 | Piezoelectric Biosensors | | parentid:20.305-3.4
+20.305-3.4.6 | Thermal Biosensors | | parentid:20.305-3.4
+20.305-3.4.7 | Microarrays | | parentid:20.305-3.4
+20.305-3.4.8 | Conclusions | | parentid:20.305-3.4
+20.305-3.5 | Synthetic Biology in Metabolic Engineering: From Complex Biochemical Pathways to Compartmentalized Metabolic Processes-a Vitamin Connection | | parentid:20.305-3
+20.305-3.5.1 | Industrial Production of Vitamin B12 | | parentid:20.305-3.5
+20.305-3.5.2 | Modular Assembly of Cobalamin | | parentid:20.305-3.5
+20.305-3.5.3 | Nature Has Evolved Different Ways to Catalyze Ring Contraction | | parentid:20.305-3.5
+20.305-3.5.4 | The Methylases in the Cobalamin Biosynthetic Pathway Are Largely Derived From One Common Ancestor | | parentid:20.305-3.5
+20.305-3.5.5 | CobA: Enhancing Pathway Productivity through Protein Engineering | | parentid:20.305-3.5
+20.305-3.5.6 | Channeling Efficiency | | parentid:20.305-3.5
+20.305-3.5.7 | Biosynthesis of Mismethylated Analogs of Cobalamin | | parentid:20.305-3.5
+20.305-3.5.8 | Substitution of the Metal Ion | | parentid:20.305-3.5
+20.305-3.5.9 | Tailoring of the Nucleotide Loop | | parentid:20.305-3.5
+20.305-3.5.10 | Cobalamin Conjugates | | parentid:20.305-3.5
+20.305-3.5.11 | Physical Compartments for Pathway Sequestration | | parentid:20.305-3.5
+20.305-3.5.12 | Future Directions | | parentid:20.305-3.5
+20.305-4 | Synthetic Genomes | | parentid:20.305
+20.305-4.1 | The Minimal Gene-Set Machinery | | parentid:20.305-4
+20.305-4.1.1 | Introduction | | parentid:20.305-4.1
+20.305-4.1.2 | Top-Down Approaches to the Minimal Gene Set | | parentid:20.305-4.1
+20.305-4.1.3 | The Minimal Gene-Set Machinery | | parentid:20.305-4.1
+20.305-4.1.4 | Conclusions | | parentid:20.305-4.1
+20.305-4.2 | Production of Mitochondrial Genome and Chromosomal DNA Segments Highly Engineered for Use in Mouse Genetics by a Bacillus subtilis-Based BGM Vector System | | parentid:20.305-4
+20.305-4.2.1 | Introduction | | parentid:20.305-4.2
+20.305-4.2.2 | Giant DNA Handled by the BGM System | | parentid:20.305-4.2
+20.305-4.2.3 | Production of a Full-Length Mouse Mitochondrial Genome by the BGM System | | parentid:20.305-4.2
+20.305-4.2.4 | Production of Heavily Manipulated DNA for Mouse Genetics | | parentid:20.305-4.2
+20.305-4.2.5 | Future Perspectives for the BGM System in Molecular Cloning and Genome Design | | parentid:20.305-4.2
+20.305-4.3 | Synthetic Genetic Polymers Functioning to Store and Propagate Information by Genetic Alphabet Expansion | | parentid:20.305-4
+20.305-4.3.1 | Introduction | | parentid:20.305-4.3
+20.305-4.3.2 | Unnatural Base Pairs | | parentid:20.305-4.3
+20.305-4.3.3 | Applications | | parentid:20.305-4.3
+20.305-4.3.4 | Conclusion | | parentid:20.305-4.3
+20.305-5 | Diseases and Therapeutics | | parentid:20.305
+20.305-5.1 | Synthetic Biology Approaches for Regenerative Medicine | | parentid:20.305-5
+20.305-5.1.1 | Introduction: Current Problems in Regenerative Medicine | | parentid:20.305-5.1
+20.305-5.1.2 | Synthetic Biology as a Promising Source of Solutions | | parentid:20.305-5.1
+20.305-5.1.3 | Ethical, Legal, and Social Implications | | parentid:20.305-5.1
+20.305-5.2 | The Synthetic Biology Approach to Stem Cells and Regenerative Medicine | | parentid:20.305-5
+20.305-5.2.1 | Introduction | | parentid:20.305-5.2
+20.305-5.2.2 | Synthetic Gene Circuits for Directing Stem Cell Differentiation and Establishing Intercellular Communication Networks within 3D Tissue-Engineered Constructs | | parentid:20.305-5.2
+20.305-5.2.3 | Precise Gene Targeting and Genome-Editing Technologies to Allay Safety Concerns of Synthetic Gene Circuits Encoded by Recombinant DNA | | parentid:20.305-5.2
+20.305-5.2.4 | Non-integrating Vectors for the Expression of Transgenes: Episomal Plasmids and Sendai Virus | | parentid:20.305-5.2
+20.305-5.2.5 | Modulating Gene Expression through Direct Delivery of Proteins and RNA into the Cell: A Safer Alternative for Stem Cell Differentiation and Reprogramming Compared with Recombinant DNA Transfection | | parentid:20.305-5.2
+20.305-5.2.6 | Breakthrough: Chemical-Based Reprogramming to Pluripotent Stem Cells with Small Molecules Alone | | parentid:20.305-5.2
+20.305-5.2.7 | Overcoming the Limited Plasticity and Proliferative Potential of Adult Stem Cells Using a Synthetic Biology Toolkit | | parentid:20.305-5.2
+20.305-5.2.8 | Conclusions: Safety Issues and Future Outlook | | parentid:20.305-5.2
+20.305-5.3 | Synthetic Biology Approaches to Cell Therapy | | parentid:20.305-5
+20.305-5.3.1 | Introduction | | parentid:20.305-5.3
+20.305-5.3.2 | Cell Therapy Successes | | parentid:20.305-5.3
+20.305-5.3.3 | Synthetic Circuits | | parentid:20.305-5.3
+20.305-5.3.4 | Cell Therapies Enabled by Synthetic Biology | | parentid:20.305-5.3
+20.305-5.3.5 | Safety | | parentid:20.305-5.3
+20.305-5.3.6 | Concluding Remarks | | parentid:20.305-5.3
+20.305-5.4 | Synthetic Biology Approaches for Vaccine Development | | parentid:20.305-5
+20.305-5.4.1 | Introduction | | parentid:20.305-5.4
+20.305-5.4.2 | Synthetic Approaches to Vaccine Design | | parentid:20.305-5.4
+20.305-5.4.3 | Attenuation by CPB Recoding | | parentid:20.305-5.4
+20.305-5.4.4 | Mechanisms of Attenuation by Recoding | | parentid:20.305-5.4
+20.305-5.4.5 | Eradication as the Goal of Vaccines | | parentid:20.305-5.4
+20.305-5.4.6 | Concluding Remarks | | parentid:20.305-5.4
+20.305-6 | Chemicals Production | | parentid:20.305
+20.305-6.1 | Metabolic Engineering for the Production of Diols | | parentid:20.305-6
+20.305-6.1.1 | Introduction | | parentid:20.305-6.1
+20.305-6.1.2 | 1,2-Propanediol (1,2-PD) | | parentid:20.305-6.1
+20.305-6.1.3 | 1,3-Propanediol | | parentid:20.305-6.1
+20.305-6.1.4 | 2,3-Butanediol | | parentid:20.305-6.1
+20.305-6.2 | Synthetic Biology in Biofuels Production | | parentid:20.305-6
+20.305-6.2.1 | Introduction | | parentid:20.305-6.2
+20.305-6.2.2 | Synthetic Biology: The Tools and Applications | | parentid:20.305-6.2
+20.305-6.2.3 | Role of Synthetic Biology in Feedstock Improvement | | parentid:20.305-6.2
+20.305-6.2.4 | Enzyme Engineering for Hydrolysis of Biomass | | parentid:20.305-6.2
+20.305-6.2.5 | Microbial Engineering to Expand the Substrate Range | | parentid:20.305-6.2
+20.305-6.2.6 | Microbial Engineering to Produce Various Biofuel Molecules | | parentid:20.305-6.2
+20.305-6.2.7 | Role of Synthetic Biology in Algal Fuels | | parentid:20.305-6.2
+20.305-6.3 | Synthetic Biology of Antibiotic Production | | parentid:20.305-6
+20.305-6.3.1 | Introduction | | parentid:20.305-6.3
+20.305-6.3.2 | The Need for Chemical Diversity | | parentid:20.305-6.3
+20.305-6.3.3 | Classical Approaches to Antibiotic Biosynthesis | | parentid:20.305-6.3
+20.305-6.3.4 | Synthetic Biology Methods for Genome Prospecting of New Bioactive Molecules | | parentid:20.305-6.3
+20.305-6.3.5 | Synthetic Biology Approaches for the Rapid Generation of Chemical Diversity | | parentid:20.305-6.3
+20.305-6.3.6 | Engineering of Versatile Chassis for the Synthetic Biology of Antibiotics | | parentid:20.305-6.3
+20.305-6.3.7 | Tools for the Future | | parentid:20.305-6.3

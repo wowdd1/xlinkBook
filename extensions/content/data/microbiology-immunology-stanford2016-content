@@ -1,0 +1,857 @@
+MI285-1 | The Foundations of microbiology | | parentid:MI285
+MI285-1.1 | Microorganisms and Microbiology | | parentid:MI285-1
+MI285-1.1.1 | Introduction and Major Themes of Microbiology | | parentid:MI285-1.1
+MI285-1.1.2 | Microbiology in Historical Context | | parentid:MI285-1.1
+MI285-1.2 | Microbial Cell Structure and Function | | parentid:MI285-1
+MI285-1.2.1 | Microscopy | | parentid:MI285-1.2
+MI285-1.2.2 | Cells of Bacteria and Archaea | | parentid:MI285-1.2
+MI285-1.2.3 | The Cytoplasmic Membrane and Transport | | parentid:MI285-1.2
+MI285-1.2.4 | Cell Walls of Bacteria and Archaea | | parentid:MI285-1.2
+MI285-1.2.5 | Other Cell Surface Structures and Inclusions | | parentid:MI285-1.2
+MI285-1.2.6 | Microbial Locomotion | | parentid:MI285-1.2
+MI285-1.2.7 | Eukaryotic Microbial Cells | | parentid:MI285-1.2
+MI285-1.3 | Microbial Metabolism | | parentid:MI285-1
+MI285-1.3.1 | Laboratory Culture of Microorganisms | | parentid:MI285-1.3
+MI285-1.3.2 | Energetics, Enzymes, and Redox | | parentid:MI285-1.3
+MI285-1.3.3 | Fermentation and Respiration | | parentid:MI285-1.3
+MI285-1.3.4 | Biosyntheses | | parentid:MI285-1.3
+MI285-1.4 | Molecular Microbiology | | parentid:MI285-1
+MI285-1.4.1 | The Blueprint of Life: Structure of the Bacterial Genome | | parentid:MI285-1.4
+MI285-1.4.2 | Transmission of Genetic Information: DNA Replication | | parentid:MI285-1.4
+MI285-1.4.3 | RNA Synthesis: Transcription | | parentid:MI285-1.4
+MI285-1.4.4 | Protein Synthesis | | parentid:MI285-1.4
+MI285-1.5 | Microbial Growth and Control | | parentid:MI285-1
+MI285-1.5.1 | Bacterial Cell Division | | parentid:MI285-1.5
+MI285-1.5.2 | Population Growth | | parentid:MI285-1.5
+MI285-1.5.3 | Measuring Microbial Growth | | parentid:MI285-1.5
+MI285-1.5.4 | Effect of Temperature on Microbial Growth | | parentid:MI285-1.5
+MI285-1.5.5 | Other Environmental Effects on Microbial Growth | | parentid:MI285-1.5
+MI285-1.5.6 | Control of Microbial Growth | | parentid:MI285-1.5
+MI285-2 | genomics, genetics, and Virology | | parentid:MI285
+MI285-2.1 | Microbial Genomics | | parentid:MI285-2
+MI285-2.1.1 | Investigating Genomes | | parentid:MI285-2.1
+MI285-2.1.2 | Microbial Genomes | | parentid:MI285-2.1
+MI285-2.1.3 | Functional Genomics | | parentid:MI285-2.1
+MI285-2.1.4 | The Evolution of Genomes | | parentid:MI285-2.1
+MI285-2.2 | Metabolic Regulation | | parentid:MI285-2
+MI285-2.2.1 | Overview of Regulation | | parentid:MI285-2.2
+MI285-2.2.2 | DNA-Binding Proteins and Transcriptional Regulation | | parentid:MI285-2.2
+MI285-2.2.3 | Sensing and Signal Transduction | | parentid:MI285-2.2
+MI285-2.2.4 | Regulation of Development in Model Bacteria | | parentid:MI285-2.2
+MI285-2.2.5 | RNA-Based Regulation | | parentid:MI285-2.2
+MI285-2.2.6 | Regulation of Enzymes and Other Proteins | | parentid:MI285-2.2
+MI285-2.3 | Viruses and Virology | | parentid:MI285-2
+MI285-2.3.1 | The Nature of Viruses | | parentid:MI285-2.3
+MI285-2.3.2 | Bacteriophage Life Cycles | | parentid:MI285-2.3
+MI285-2.3.3 | Viral Diversity and Ecology | | parentid:MI285-2.3
+MI285-2.4 | Viral Genomes and Diversity | | parentid:MI285-2
+MI285-2.4.1 | Viral Genomes and Evolution | | parentid:MI285-2.4
+MI285-2.4.2 | Viruses with DNA Genomes | | parentid:MI285-2.4
+MI285-2.4.3 | Viruses with RNA Genomes | | parentid:MI285-2.4
+MI285-2.4.4 | Subviral Agents | | parentid:MI285-2.4
+MI285-2.5 | Genetics of Bacteria and Archaea | | parentid:MI285-2
+MI285-2.5.1 | Mutation | | parentid:MI285-2.5
+MI285-2.5.2 | Gene Transfer in Bacteria | | parentid:MI285-2.5
+MI285-2.5.3 | Gene Transfer in Archaea and Other Genetic Events | | parentid:MI285-2.5
+MI285-2.6 | Genetic Engineering and Biotechnology | | parentid:MI285-2
+MI285-2.6.1 | Methods for Manipulating DNA | | parentid:MI285-2.6
+MI285-2.6.2 | Gene Cloning | | parentid:MI285-2.6
+MI285-2.6.3 | Products from Genetically Engineered Microorganisms | | parentid:MI285-2.6
+MI285-3 | microbial diversity | | parentid:MI285
+MI285-3.1 | Microbial Evolution and Systematics | | parentid:MI285-3
+MI285-3.1.1 | Early Earth and the Origin and Diversification of Life | | parentid:MI285-3.1
+MI285-3.1.2 | Living Fossils: DNA Records the History of Life | | parentid:MI285-3.1
+MI285-3.1.3 | Microbial Evolution 363 | | parentid:MI285-3.1
+MI285-3.1.4 | Microbial Systematics | | parentid:MI285-3.1
+MI285-3.2 | Metabolic Diversity of Microorganisms | | parentid:MI285-3
+MI285-3.2.1 | Phototrophy | | parentid:MI285-3.2
+MI285-3.2.2 | Chemolithotrophy | | parentid:MI285-3.2
+MI285-3.2.3 | Fermentations | | parentid:MI285-3.2
+MI285-3.2.4 | Anaerobic Respirations | | parentid:MI285-3.2
+MI285-3.2.5 | Hydrocarbon Metabolism | | parentid:MI285-3.2
+MI285-3.3 | Functional Diversity of Bacteria | | parentid:MI285-3
+MI285-3.3.1 | Functional Diversity as a Concept | | parentid:MI285-3.3
+MI285-3.3.2 | Diversity of Phototrophic Bacteria | | parentid:MI285-3.3
+MI285-3.3.3 | Bacterial Diversity in the Sulfur Cycle | | parentid:MI285-3.3
+MI285-3.3.4 | Bacterial Diversity in the Nitrogen Cycle | | parentid:MI285-3.3
+MI285-3.3.5 | Diversity of Other Distinctive Chemotrophic Bacteria | | parentid:MI285-3.3
+MI285-3.3.6 | Morphological Diversity of Bacteria | | parentid:MI285-3.3
+MI285-3.4 | Diversity of Bacteria | | parentid:MI285-3
+MI285-3.4.1 | Proteobacteria | | parentid:MI285-3.4
+MI285-3.4.2 | Firmicutes, Tenericutes, and Actinobacteria | | parentid:MI285-3.4
+MI285-3.4.3 | Bacteroidetes | | parentid:MI285-3.4
+MI285-3.4.4 | Chlamydiae, Planctomycetes, and Verrucomicrobia | | parentid:MI285-3.4
+MI285-3.4.5 | Hyperthermophilic Bacteria | | parentid:MI285-3.4
+MI285-3.4.6 | Other Bacteria | | parentid:MI285-3.4
+MI285-3.5 | Diversity of Archaea | | parentid:MI285-3
+MI285-3.5.1 | Euryarchaeota | | parentid:MI285-3.5
+MI285-3.5.2 | Thaumarchaeota, Nanoarchaeota, and Korarchaeota | | parentid:MI285-3.5
+MI285-3.5.3 | Crenarchaeota | | parentid:MI285-3.5
+MI285-3.5.4 | Evolution and Life at High Temperatures | | parentid:MI285-3.5
+MI285-3.6 | Diversity of Eukaryotic Microorganisms | | parentid:MI285-3
+MI285-3.6.1 | Organelles and Phylogeny of Microbial Eukaryotes | | parentid:MI285-3.6
+MI285-3.6.2 | Protists | | parentid:MI285-3.6
+MI285-3.6.3 | Fungi | | parentid:MI285-3.6
+MI285-3.6.4 | Red and Green Algae | | parentid:MI285-3.6
+MI285-4 | microbial Ecology and Environmental microbiology | | parentid:MI285
+MI285-4.1 | Methods in Microbial Ecology | | parentid:MI285-4
+MI285-4.1.1 | Culture-Dependent Analyses of Microbial Communities | | parentid:MI285-4.1
+MI285-4.1.2 | Culture-Independent Microscopic Analyses of Microbial Communities | | parentid:MI285-4.1
+MI285-4.1.3 | Culture-Independent Genetic Analyses of Microbial Communities | | parentid:MI285-4.1
+MI285-4.1.4 | Measuring Microbial Activities in Nature | | parentid:MI285-4.1
+MI285-4.2 | Microbial Ecosystems | | parentid:MI285-4
+MI285-4.2.1 | Microbial Ecology | | parentid:MI285-4.2
+MI285-4.2.2 | The Microbial Environment | | parentid:MI285-4.2
+MI285-4.2.3 | Terrestrial Environments | | parentid:MI285-4.2
+MI285-4.2.4 | Aquatic Environments | | parentid:MI285-4.2
+MI285-4.3 | Nutrient Cycles | | parentid:MI285-4
+MI285-4.3.1 | Carbon, Nitrogen, and Sulfur Cycles | | parentid:MI285-4.3
+MI285-4.3.2 | Other Nutrient Cycles | | parentid:MI285-4.3
+MI285-4.3.3 | Humans and Nutrient Cycling | | parentid:MI285-4.3
+MI285-4.4 | Microbiology of the Built Environment | | parentid:MI285-4
+MI285-4.4.1 | Mineral Recovery and Acid Mine Drainage | | parentid:MI285-4.4
+MI285-4.4.2 | Bioremediation | | parentid:MI285-4.4
+MI285-4.4.3 | Wastewater and Drinking Water Treatment | | parentid:MI285-4.4
+MI285-4.4.4 | Microbially Influenced Corrosion | | parentid:MI285-4.4
+MI285-4.5 | Microbial Symbioses | | parentid:MI285-4
+MI285-4.5.1 | Symbioses between Microorganisms | | parentid:MI285-4.5
+MI285-4.5.2 | Plants as Microbial Habitats | | parentid:MI285-4.5
+MI285-4.5.3 | Mammals as Microbial Habitats | | parentid:MI285-4.5
+MI285-4.5.4 | Insects as Microbial Habitats | | parentid:MI285-4.5
+MI285-4.5.5 | Aquatic Invertebrates as Microbial Habitats | | parentid:MI285-4.5
+MI285-5 | Pathogenicity and Immunology | | parentid:MI285
+MI285-5.1 | Microbial Interactions with Humans | | parentid:MI285-5
+MI285-5.1.1 | Normal Human–Microbial Interactions | | parentid:MI285-5.1
+MI285-5.1.2 | Pathogenesis | | parentid:MI285-5.1
+MI285-5.1.3 | Host Factors in Infection and Disease | | parentid:MI285-5.1
+MI285-5.2 | Immunity and Host Defense | | parentid:MI285-5
+MI285-5.2.1 | Immunity | | parentid:MI285-5.2
+MI285-5.2.2 | Host Defense | | parentid:MI285-5.2
+MI285-5.2.3 | Immune Diseases | | parentid:MI285-5.2
+MI285-5.3 | Immune Mechanisms | | parentid:MI285-5
+MI285-5.3.1 | Basic Immune Mechanisms | | parentid:MI285-5.3
+MI285-5.3.2 | Antigens and Antigen Presentation | | parentid:MI285-5.3
+MI285-5.3.3 | T Lymphocytes and Immunity | | parentid:MI285-5.3
+MI285-5.3.4 | Antibodies and Immunity | | parentid:MI285-5.3
+MI285-5.4 | Molecular Immunology | | parentid:MI285-5
+MI285-5.4.1 | Receptors and Immunity | | parentid:MI285-5.4
+MI285-5.4.2 | The Major Histocompatibility Complex (MHC) | | parentid:MI285-5.4
+MI285-5.4.3 | Antibodies and T Cell Receptors | | parentid:MI285-5.4
+MI285-5.4.4 | Molecular Switches in Immunity | | parentid:MI285-5.4
+MI285-5.5 | Diagnostic Microbiology | | parentid:MI285-5
+MI285-5.5.1 | The Clinical Environment | | parentid:MI285-5.5
+MI285-5.5.2 | Microbiological Identification of Pathogens | | parentid:MI285-5.5
+MI285-5.5.3 | Growth-Independent Diagnostic Methods | | parentid:MI285-5.5
+MI285-5.5.4 | Antimicrobial Drugs | | parentid:MI285-5.5
+MI285-5.5.5 | Antimicrobial Drug Resistance | | parentid:MI285-5.5
+MI285-6 | Infectious diseases and Their Transmission | | parentid:MI285
+MI285-6.1 | Epidemiology | | parentid:MI285-6
+MI285-6.1.1 | Principles of Epidemiology | | parentid:MI285-6.1
+MI285-6.1.2 | Epidemiology and Public Health | | parentid:MI285-6.1
+MI285-6.1.3 | Emerging Infectious Diseases | | parentid:MI285-6.1
+MI285-6.1.4 | Current Pandemics | | parentid:MI285-6.1
+MI285-6.2 | Person-to-Person Bacterial and Viral Diseases | | parentid:MI285-6
+MI285-6.2.1 | Airborne Bacterial Diseases | | parentid:MI285-6.2
+MI285-6.2.2 | Airborne Viral Diseases | | parentid:MI285-6.2
+MI285-6.2.3 | Direct-Contact Diseases | | parentid:MI285-6.2
+MI285-6.2.4 | Sexually Transmitted Infections | | parentid:MI285-6.2
+MI285-6.3 | Vectorborne and Soilborne Bacterial and Viral Diseases | | parentid:MI285-6
+MI285-6.3.1 | Animal-Transmitted Viral Diseases | | parentid:MI285-6.3
+MI285-6.3.2 | Arthropod-Transmitted Bacterial and Viral Diseases | | parentid:MI285-6.3
+MI285-6.3.3 | Soilborne Bacterial Diseases | | parentid:MI285-6.3
+MI285-6.4 | Water and Food as Vehicles of Bacterial Diseases | | parentid:MI285-6
+MI285-6.4.1 | Water as a Disease Vehicle | | parentid:MI285-6.4
+MI285-6.4.2 | Waterborne Diseases | | parentid:MI285-6.4
+MI285-6.4.3 | Food as a Disease Vehicle | | parentid:MI285-6.4
+MI285-6.4.4 | Food Poisoning | | parentid:MI285-6.4
+MI285-6.4.5 | Food Infection | | parentid:MI285-6.4
+MI285-6.5 | Eukaryotic Pathogens: Fungal and Parasitic Diseases | | parentid:MI285-6
+MI285-6.5.1 | Fungal Infections | | parentid:MI285-6.5
+MI285-6.5.2 | Visceral Parasitic Infections | | parentid:MI285-6.5
+MI285-6.5.3 | Blood and Tissue Parasitic Infections | | parentid:MI285-6.5
+MI285-Appendix1 | Energy Calculations in Microbial Bioenergetics | | parentid:MI285
+MI285-Appendix2 | Bergey's Manual of Systematic Bacteriology, Second Edition | | parentid:MI285
+MI155A-1 | Foundations | | parentid:MI155A
+MI155A-1.1 | Luria’s Credo | | parentid:MI155A-1
+MI155A-1.2 | Why We Study Viruses | | parentid:MI155A-1
+MI155A-1.2.1 | Viruses Are Everywhere | | parentid:MI155A-1.2
+MI155A-1.2.2 | Viruses Can Cause Human Disease | | parentid:MI155A-1.2
+MI155A-1.2.3 | Viruses Infect All Living Things | | parentid:MI155A-1.2
+MI155A-1.2.4 | Viruses Can Be Beneficial | | parentid:MI155A-1.2
+MI155A-1.2.5 | Viruses Can Cross Species Boundaries | | parentid:MI155A-1.2
+MI155A-1.2.6 | Viruses “R” Us | | parentid:MI155A-1.2
+MI155A-1.2.7 | Viruses Are Unique Tools To Study Biology | | parentid:MI155A-1.2
+MI155A-1.3 | Virus Prehistory | | parentid:MI155A-1
+MI155A-1.3.1 | Viral Infections in Antiquity | | parentid:MI155A-1.3
+MI155A-1.3.2 | The First Vaccines | | parentid:MI155A-1.3
+MI155A-1.3.3 | Microorganisms as Pathogenic Agents | | parentid:MI155A-1.3
+MI155A-1.4 | Discovery of Viruses | | parentid:MI155A-1
+MI155A-1.5 | The Definitive Properties of Viruses | | parentid:MI155A-1
+MI155A-1.5.1 | The Structural Simplicity of Virus Particles | | parentid:MI155A-1.5
+MI155A-1.5.2 | The Intracellular Parasitism of Viruses | | parentid:MI155A-1.5
+MI155A-1.6 | Viruses Defined | | parentid:MI155A-1
+MI155A-1.7 | Cataloging Animal Viruses | | parentid:MI155A-1
+MI155A-1.7.1 | The Classical System | | parentid:MI155A-1.7
+MI155A-1.7.2 | Classification by Genome Type: the Baltimore System | | parentid:MI155A-1.7
+MI155A-1.8 | A Common Strategy for Viral Propagation | | parentid:MI155A-1
+MI155A-1.9 | Perspectives | | parentid:MI155A-1
+MI155A-1.10 | References | | parentid:MI155A-1
+MI155A-2 | The Infectious Cycle | | parentid:MI155A
+MI155A-2.1 | Introduction | | parentid:MI155A-2
+MI155A-2.2 | The Infectious Cycle | | parentid:MI155A-2
+MI155A-2.3 | The Cell | | parentid:MI155A-2
+MI155A-2.4 | The Architecture of Cell Surfaces | | parentid:MI155A-2
+MI155A-2.4.1 | The Extracellular Matrix: Components and Biological Importance | | parentid:MI155A-2.4
+MI155A-2.4.2 | Properties of the Plasma Membrane | | parentid:MI155A-2.4
+MI155A-2.4.3 | Cell Membrane Proteins | | parentid:MI155A-2.4
+MI155A-2.5 | Entering Cells | | parentid:MI155A-2
+MI155A-2.6 | Making Viral RNA | | parentid:MI155A-2
+MI155A-2.7 | Making Viral Proteins | | parentid:MI155A-2
+MI155A-2.8 | Making Viral Genomes | | parentid:MI155A-2
+MI155A-2.9 | Forming Progeny Virus Particles | | parentid:MI155A-2
+MI155A-2.10 | Viral Pathogenesis | | parentid:MI155A-2
+MI155A-2.11 | Overcoming Host Defenses | | parentid:MI155A-2
+MI155A-2.12 | Cultivation of Viruses | | parentid:MI155A-2
+MI155A-2.12.1 | Cell Culture | | parentid:MI155A-2.12
+MI155A-2.12.2 | Embryonated Eggs | | parentid:MI155A-2.12
+MI155A-2.12.3 | Laboratory Animals | | parentid:MI155A-2.12
+MI155A-2.13 | Assay of Viruses | | parentid:MI155A-2
+MI155A-2.13.1 | Measurement of Infectious Units | | parentid:MI155A-2.13
+MI155A-2.13.2 | Efficiency of Plating | | parentid:MI155A-2.13
+MI155A-2.13.3 | Measurement of Virus Particles and Their Components | | parentid:MI155A-2.13
+MI155A-2.14 | Viral Reproduction: the Burst Concept | | parentid:MI155A-2
+MI155A-2.15 | The One-Step Growth Cycle | | parentid:MI155A-2
+MI155A-2.15.1 | Initial Concept | | parentid:MI155A-2.15
+MI155A-2.15.2 | One-Step Growth Analysis: a Valuable Tool for Studying Animal Viruses | | parentid:MI155A-2.15
+MI155A-2.16 | Systems Biology | | parentid:MI155A-2
+MI155A-2.17 | Perspectives | | parentid:MI155A-2
+MI155A-2.18 | References | | parentid:MI155A-2
+MI155A-3 | Genomes and Genetics | | parentid:MI155A
+MI155A-3.1 | Introduction | | parentid:MI155A-3
+MI155A-3.2 | Genome Principles and the Baltimore System | | parentid:MI155A-3
+MI155A-3.3 | Structure and Complexity of Viral Genomes | | parentid:MI155A-3
+MI155A-3.3.1 | DNA Genomes | | parentid:MI155A-3.3
+MI155A-3.3.2 | RNA Genomes | | parentid:MI155A-3.3
+MI155A-3.4 | What Do Viral Genomes Look Like? | | parentid:MI155A-3
+MI155A-3.5 | Coding Strategies | | parentid:MI155A-3
+MI155A-3.6 | What Can Viral Sequences Tell Us? | | parentid:MI155A-3
+MI155A-3.7 | The Origin of Viral Genomes | | parentid:MI155A-3
+MI155A-3.8 | The “Big and Small” of Viral Genomes: Does Size Matter? | | parentid:MI155A-3
+MI155A-3.9 | Genetic Analysis of Viruses | | parentid:MI155A-3
+MI155A-3.9.1 | Classical Genetic Methods | | parentid:MI155A-3.9
+MI155A-3.9.2 | Engineering Mutations into Viral Genomes | | parentid:MI155A-3.9
+MI155A-3.9.3 | Engineering Viral Genomes: Viral Vectors | | parentid:MI155A-3.9
+MI155A-3.10 | Perspectives | | parentid:MI155A-3
+MI155A-3.11 | References | | parentid:MI155A-3
+MI155A-4 | Structure | | parentid:MI155A
+MI155A-4.1 | Introduction | | parentid:MI155A-4
+MI155A-4.1.1 | Functions of the Virion | | parentid:MI155A-4.1
+MI155A-4.1.2 | Nomenclature | | parentid:MI155A-4.1
+MI155A-4.1.3 | Methods for Studying Virus Structure | | parentid:MI155A-4.1
+MI155A-4.2 | Building a Protective Coat | | parentid:MI155A-4
+MI155A-4.2.1 | Helical Structures | | parentid:MI155A-4.2
+MI155A-4.2.2 | Capsids with Icosahedral Symmetry | | parentid:MI155A-4.2
+MI155A-4.2.3 | Other Capsid Architectures | | parentid:MI155A-4.2
+MI155A-4.3 | Packaging the Nucleic Acid Genome | | parentid:MI155A-4
+MI155A-4.3.1 | Direct Contact of the Genome with a Protein Shell | | parentid:MI155A-4.3
+MI155A-4.3.2 | Packaging by Specialized Viral Proteins | | parentid:MI155A-4.3
+MI155A-4.3.3 | Packaging by Cellular Proteins | | parentid:MI155A-4.3
+MI155A-4.4 | Viruses with Envelopes | | parentid:MI155A-4
+MI155A-4.4.1 | Viral Envelope Components | | parentid:MI155A-4.4
+MI155A-4.4.2 | Simple Enveloped Viruses: Direct Contact of External Proteins with the Capsid or Nucleocapsid | | parentid:MI155A-4.4
+MI155A-4.4.3 | Enveloped Viruses with an Additional Protein Layer | | parentid:MI155A-4.4
+MI155A-4.5 | Large Viruses with Multiple Structural Elements | | parentid:MI155A-4
+MI155A-4.5.1 | Bacteriophage T4 | | parentid:MI155A-4.5
+MI155A-4.5.2 | Herpesviruses | | parentid:MI155A-4.5
+MI155A-4.5.3 | Poxviruses | | parentid:MI155A-4.5
+MI155A-4.5.4 | Giant Viruses | | parentid:MI155A-4.5
+MI155A-4.6 | Other Components of Virions | | parentid:MI155A-4
+MI155A-4.6.1 | Enzymes | | parentid:MI155A-4.6
+MI155A-4.6.2 | Other Viral Proteins | | parentid:MI155A-4.6
+MI155A-4.6.3 | Nongenomic Viral Nucleic Acid | | parentid:MI155A-4.6
+MI155A-4.6.4 | Cellular Macromolecules | | parentid:MI155A-4.6
+MI155A-4.7 | Perspectives | | parentid:MI155A-4
+MI155A-4.8 | References | | parentid:MI155A-4
+MI155A-5 | Attachment and Entry | | parentid:MI155A
+MI155A-5.1 | Introduction | | parentid:MI155A-5
+MI155A-5.2 | Attachment of Virus Particles to Cells | | parentid:MI155A-5
+MI155A-5.2.1 | General Principles | | parentid:MI155A-5.2
+MI155A-5.2.2 | Identification of Receptors for Virus Particles | | parentid:MI155A-5.2
+MI155A-5.2.3 | Virus-Receptor Interactions | | parentid:MI155A-5.2
+MI155A-5.3 | Entry into Cells | | parentid:MI155A-5
+MI155A-5.3.1 | Uncoating at the Plasma Membrane | | parentid:MI155A-5.3
+MI155A-5.3.2 | Uncoating during Endocytosis | | parentid:MI155A-5.3
+MI155A-5.3.3 | Membrane Fusion | | parentid:MI155A-5.3
+MI155A-5.3.4 | Movement of Viral and Subviral Particles within Cells | | parentid:MI155A-5.3
+MI155A-5.3.5 | Virus-Induced Signaling via Cell Receptors | | parentid:MI155A-5.3
+MI155A-5.4 | Import of Viral Genomes Into the Nucleus | | parentid:MI155A-5
+MI155A-5.4.1 | Nuclear Localization Signals | | parentid:MI155A-5.4
+MI155A-5.4.2 | The Nuclear Pore Complex | | parentid:MI155A-5.4
+MI155A-5.4.3 | The Nuclear Import Pathway | | parentid:MI155A-5.4
+MI155A-5.4.4 | Import of Influenza Virus Ribonucleoprotein | | parentid:MI155A-5.4
+MI155A-5.4.5 | Import of DNA Genomes | | parentid:MI155A-5.4
+MI155A-5.4.6 | Import of Retroviral Genomes | | parentid:MI155A-5.4
+MI155A-5.5 | Perspectives | | parentid:MI155A-5
+MI155A-5.6 | References | | parentid:MI155A-5
+MI155A-6 | Synthesis of RNA from RNA Templates | | parentid:MI155A
+MI155A-6.1 | Introduction | | parentid:MI155A-6
+MI155A-6.2 | The Nature of the RNA Template | | parentid:MI155A-6
+MI155A-6.2.1 | Secondary Structures in Viral RNA | | parentid:MI155A-6.2
+MI155A-6.2.2 | Naked or Nucleocapsid RNA | | parentid:MI155A-6.2
+MI155A-6.3 | The RNA Synthesis Machinery | | parentid:MI155A-6
+MI155A-6.3.1 | Identification of RNA-Dependent RNA Polymerases | | parentid:MI155A-6.3
+MI155A-6.3.2 | Sequence Relationships among RNA Polymerases | | parentid:MI155A-6.3
+MI155A-6.3.3 | Three-Dimensional Structure of RNA-Dependent RNA Polymerases | | parentid:MI155A-6.3
+MI155A-6.4 | Mechanisms of RNA Synthesis | | parentid:MI155A-6
+MI155A-6.4.1 | Initiation | | parentid:MI155A-6.4
+MI155A-6.4.2 | Capping | | parentid:MI155A-6.4
+MI155A-6.4.3 | Elongation | | parentid:MI155A-6.4
+MI155A-6.4.4 | Template Specificity | | parentid:MI155A-6.4
+MI155A-6.4.5 | Unwinding the RNA Template | | parentid:MI155A-6.4
+MI155A-6.4.6 | Role of Cellular Proteins | | parentid:MI155A-6.4
+MI155A-6.5 | Paradigms for Viral RNA Synthesis | | parentid:MI155A-6
+MI155A-6.5.1 | (+) Strand RNA | | parentid:MI155A-6.5
+MI155A-6.5.2 | Synthesis of Nested Subgenomic mRNAs | | parentid:MI155A-6.5
+MI155A-6.5.3 | (−) Strand RNA | | parentid:MI155A-6.5
+MI155A-6.5.4 | Ambisense RNA | | parentid:MI155A-6.5
+MI155A-6.5.5 | Double-Stranded RNA | | parentid:MI155A-6.5
+MI155A-6.5.6 | Unique Mechanisms of mRNA and Genome Synthesis of Hepatitis Delta Satellite Virus | | parentid:MI155A-6.5
+MI155A-6.5.7 | Why Are (−) and (+) Strands Made in Unequal Quantities? | | parentid:MI155A-6.5
+MI155A-6.5.8 | Do Ribosomes and RNA Polymerases Collide? | | parentid:MI155A-6.5
+MI155A-6.6 | Cellular Sites of Viral RNA Synthesis | | parentid:MI155A-6
+MI155A-6.7 | Origins of Diversity in RNA Virus Genomes | | parentid:MI155A-6
+MI155A-6.7.1 | Misincorporation of Nucleotides | | parentid:MI155A-6.7
+MI155A-6.7.2 | Segment Reassortment and RNA Recombination | | parentid:MI155A-6.7
+MI155A-6.7.3 | RNA Editing | | parentid:MI155A-6.7
+MI155A-6.8 | Perspectives | | parentid:MI155A-6
+MI155A-6.9 | References | | parentid:MI155A-6
+MI155A-7 | Reverse Transcription and Integration | | parentid:MI155A
+MI155A-7.1 | Retroviral Reverse Transcription | | parentid:MI155A-7
+MI155A-7.1.1 | Discovery | | parentid:MI155A-7.1
+MI155A-7.1.2 | Impact | | parentid:MI155A-7.1
+MI155A-7.1.3 | The Process of Reverse Transcription | | parentid:MI155A-7.1
+MI155A-7.1.4 | General Properties and Structure of Retroviral Reverse Transcriptases | | parentid:MI155A-7.1
+MI155A-7.1.5 | Other Examples of Reverse Transcription | | parentid:MI155A-7.1
+MI155A-7.2 | Retroviral DNA Integration Is a Unique Process | | parentid:MI155A-7
+MI155A-7.2.1 | The Pathway of Integration: Integrase-Catalyzed Steps | | parentid:MI155A-7.2
+MI155A-7.2.2 | Integrase Structure and Mechanism | | parentid:MI155A-7.2
+MI155A-7.3 | Hepadnaviral Reverse Transcription | | parentid:MI155A-7
+MI155A-7.3.1 | A DNA Virus with Reverse Transcriptase | | parentid:MI155A-7.3
+MI155A-7.3.2 | The Process of Reverse Transcription | | parentid:MI155A-7.3
+MI155A-7.4 | Perspectives | | parentid:MI155A-7
+MI155A-7.5 | References | | parentid:MI155A-7
+MI155A-8 | Synthesis of RNA from DNA Templates | | parentid:MI155A
+MI155A-8.1 | Introduction | | parentid:MI155A-8
+MI155A-8.1.1 | Properties of Cellular RNA Polymerases That Transcribe Viral DNA | | parentid:MI155A-8.1
+MI155A-8.1.2 | Some Viral Genomes Must Be Converted to Templates Suitable for Transcription | | parentid:MI155A-8.1
+MI155A-8.2 | Transcription by RNA Polymerase II | | parentid:MI155A-8
+MI155A-8.2.1 | Regulation of RNA Polymerase II Transcription | | parentid:MI155A-8.2
+MI155A-8.2.2 | Common Properties of Proteins That Regulate Transcription | | parentid:MI155A-8.2
+MI155A-8.3 | The Cellular Machinery Alone Can Transcribe Viral DNA Templates | | parentid:MI155A-8
+MI155A-8.4 | Viral Proteins That Govern Transcription of Viral DNA Templates | | parentid:MI155A-8
+MI155A-8.4.1 | Patterns of Regulation | | parentid:MI155A-8.4
+MI155A-8.4.2 | The Human Immunodeficiency Virus Type 1 Tat Protein Autoregulates Transcription | | parentid:MI155A-8.4
+MI155A-8.4.3 | The Transcriptional Cascades of DNA Viruses | | parentid:MI155A-8.4
+MI155A-8.4.4 | Entry into One of Two Alternative Transcriptional Programs | | parentid:MI155A-8.4
+MI155A-8.5 | Transcription of Viral Genes by RNA Polymerase III | | parentid:MI155A-8
+MI155A-8.5.1 | The VA-RNA I Promoter | | parentid:MI155A-8.5
+MI155A-8.5.2 | Regulation of VA-RNA Gene Transcription | | parentid:MI155A-8.5
+MI155A-8.6 | Inhibition of the Cellular Transcriptional Machinery | | parentid:MI155A-8
+MI155A-8.7 | Unusual Functions of Cellular Transcription Components | | parentid:MI155A-8
+MI155A-8.8 | A Viral DNA-Dependent RNA Polymerase | | parentid:MI155A-8
+MI155A-8.9 | Perspectives | | parentid:MI155A-8
+MI155A-8.10 | References | | parentid:MI155A-8
+MI155A-9 | Replication of DNA Genomes | | parentid:MI155A
+MI155A-9.1 | Introduction | | parentid:MI155A-9
+MI155A-9.2 | DNA Synthesis by the Cellular Replication Machinery | | parentid:MI155A-9
+MI155A-9.2.1 | Eukaryotic Replicons | | parentid:MI155A-9.2
+MI155A-9.2.2 | Cellular Replication Proteins | | parentid:MI155A-9.2
+MI155A-9.3 | Mechanisms of Viral DNA Synthesis | | parentid:MI155A-9
+MI155A-9.3.1 | Lessons from Simian Virus 40 | | parentid:MI155A-9.3
+MI155A-9.3.2 | Replication of Other Viral DNA Genomes | | parentid:MI155A-9.3
+MI155A-9.3.3 | Properties of Viral Replication Origins | | parentid:MI155A-9.3
+MI155A-9.3.4 | Recognition of Viral Replication Origins | | parentid:MI155A-9.3
+MI155A-9.3.5 | Viral DNA Synthesis Machines | | parentid:MI155A-9.3
+MI155A-9.3.6 | Resolution and Processing of Viral Replication Products | | parentid:MI155A-9.3
+MI155A-9.4 | Exponential Accumulation of Viral Genomes | | parentid:MI155A-9
+MI155A-9.4.1 | Viral Proteins Can Induce Synthesis of Cellular Replication Proteins | | parentid:MI155A-9.4
+MI155A-9.4.2 | Synthesis of Viral Replication Machines and Accessory Enzymes | | parentid:MI155A-9.4
+MI155A-9.4.3 | Viral DNA Replication Independent of Cellular Proteins | | parentid:MI155A-9.4
+MI155A-9.4.4 | Delayed Synthesis of Structural Proteins Prevents Premature Packaging of DNA Templates | | parentid:MI155A-9.4
+MI155A-9.4.5 | Inhibition of Cellular DNA Synthesis | | parentid:MI155A-9.4
+MI155A-9.4.6 | Viral DNAs Are Synthesized in Specialized Intracellular Compartments | | parentid:MI155A-9.4
+MI155A-9.5 | Limited Replication of Viral DNA Genomes | | parentid:MI155A-9
+MI155A-9.5.1 | Integrated Parvoviral DNA Can Replicate as Part of the Cellular Genome | | parentid:MI155A-9.5
+MI155A-9.5.2 | Different Viral Origins Regulate Replication of Epstein-Barr Virus | | parentid:MI155A-9.5
+MI155A-9.5.3 | Limited and Amplifying Replication from a Single Origin: the Papillomaviruses | | parentid:MI155A-9.5
+MI155A-9.6 | Origins of Genetic Diversity in DNA Viruses | | parentid:MI155A-9
+MI155A-9.6.1 | Fidelity of Replication by Viral DNA Polymerases | | parentid:MI155A-9.6
+MI155A-9.6.2 | Inhibition of Repair of Double-Strand Breaks in DNA | | parentid:MI155A-9.6
+MI155A-9.6.3 | Recombination of Viral Genomes | | parentid:MI155A-9.6
+MI155A-9.7 | Perspectives | | parentid:MI155A-9
+MI155A-9.8 | References | | parentid:MI155A-9
+MI155A-10 | Processing of Viral Pre-mRNA | | parentid:MI155A
+MI155A-10.1 | Introduction | | parentid:MI155A-10
+MI155A-10.2 | Covalent Modification during Viral Pre-mRNA Processing | | parentid:MI155A-10
+MI155A-10.2.1 | Capping the 5' Ends of Viral mRNA | | parentid:MI155A-10.2
+MI155A-10.2.2 | Synthesis of 3' Poly(A) Segments of Viral mRNA | | parentid:MI155A-10.2
+MI155A-10.2.3 | Splicing of Viral Pre-mRNA | | parentid:MI155A-10.2
+MI155A-10.2.4 | Alternative Processing of Viral Pre-mRNA | | parentid:MI155A-10.2
+MI155A-10.2.5 | Editing of Viral mRNAs | | parentid:MI155A-10.2
+MI155A-10.3 | Export of RNAs from the Nucleus | | parentid:MI155A-10
+MI155A-10.3.1 | The Cellular Export Machinery | | parentid:MI155A-10.3
+MI155A-10.3.2 | Export of Viral mRNA | | parentid:MI155A-10.3
+MI155A-10.4 | Posttranscriptional Regulation of Viral or Cellular Gene Expression by Viral Proteins | | parentid:MI155A-10
+MI155A-10.4.1 | Temporal Control of Viral Gene Expression | | parentid:MI155A-10.4
+MI155A-10.4.2 | Viral Proteins Can Inhibit Cellular mRNA Production | | parentid:MI155A-10.4
+MI155A-10.5 | Regulation of Turnover of Viral and Cellular mRNAs in the Cytoplasm | | parentid:MI155A-10
+MI155A-10.5.1 | Regulation of mRNA Stability by Viral Proteins | | parentid:MI155A-10.5
+MI155A-10.5.2 | mRNA Stabilization Can Facilitate Transformation | | parentid:MI155A-10.5
+MI155A-10.6 | Production and Function of Small RNAs That Inhibit Gene Expression | | parentid:MI155A-10
+MI155A-10.6.1 | Small Interfering RNAs, Micro-RNAs, and Their Synthesis | | parentid:MI155A-10.6
+MI155A-10.6.2 | Viral Micro-RNAs | | parentid:MI155A-10.6
+MI155A-10.6.3 | Viral Gene Products That Block RNA Interference | | parentid:MI155A-10.6
+MI155A-10.7 | Perspectives | | parentid:MI155A-10
+MI155A-10.8 | References | | parentid:MI155A-10
+MI155A-11 | Protein Synthesis | | parentid:MI155A
+MI155A-11.1 | Introduction | | parentid:MI155A-11
+MI155A-11.2 | Mechanisms of Eukaryotic Protein Synthesis | | parentid:MI155A-11
+MI155A-11.2.1 | General Structure of Eukaryotic mRNA | | parentid:MI155A-11.2
+MI155A-11.2.2 | The Translation Machinery | | parentid:MI155A-11.2
+MI155A-11.2.3 | Initiation | | parentid:MI155A-11.2
+MI155A-11.2.4 | Elongation and Termination | | parentid:MI155A-11.2
+MI155A-11.3 | The Diversity of Viral Translation Strategies | | parentid:MI155A-11
+MI155A-11.3.1 | Polyprotein Synthesis | | parentid:MI155A-11.3
+MI155A-11.3.2 | Leaky Scanning | | parentid:MI155A-11.3
+MI155A-11.3.3 | Reinitiation | | parentid:MI155A-11.3
+MI155A-11.3.4 | Suppression of Termination | | parentid:MI155A-11.3
+MI155A-11.3.5 | Ribosomal Frameshifting | | parentid:MI155A-11.3
+MI155A-11.3.6 | Bicistronic mRNAs | | parentid:MI155A-11.3
+MI155A-11.4 | Regulation of Translation during Viral Infection | | parentid:MI155A-11
+MI155A-11.4.1 | Inhibition of Translation Initiation after Viral Infection | | parentid:MI155A-11.4
+MI155A-11.4.2 | Regulation of eIF4F | | parentid:MI155A-11.4
+MI155A-11.4.3 | Regulation of Poly (A)-Binding Protein Activity | | parentid:MI155A-11.4
+MI155A-11.4.4 | Regulation of eIF3 | | parentid:MI155A-11.4
+MI155A-11.4.5 | Interfering with RNA | | parentid:MI155A-11.4
+MI155A-11.4.6 | Stress-Associated RNA Granules | | parentid:MI155A-11.4
+MI155A-11.5 | Perspectives | | parentid:MI155A-11
+MI155A-11.6 | References | | parentid:MI155A-11
+MI155A-12 | Intracellular Trafficking | | parentid:MI155A
+MI155A-12.1 | Introduction | | parentid:MI155A-12
+MI155A-12.2 | Assembly within the Nucleus | | parentid:MI155A-12
+MI155A-12.2.1 | Import of Viral Proteins for Assembly | | parentid:MI155A-12.2
+MI155A-12.3 | Assembly at the Plasma Membrane | | parentid:MI155A-12
+MI155A-12.3.1 | Transport of Viral Membrane Proteins to the Plasma Membrane | | parentid:MI155A-12.3
+MI155A-12.3.2 | Sorting of Viral Proteins in Polarized Cells | | parentid:MI155A-12.3
+MI155A-12.3.3 | Disruption of the Secretory Pathway in Virus-Infected Cells | | parentid:MI155A-12.3
+MI155A-12.3.4 | Signal Sequence-Independent Transport of Viral Proteins to the Plasma Membrane | | parentid:MI155A-12.3
+MI155A-12.4 | Interactions with Internal Cellular Membranes | | parentid:MI155A-12
+MI155A-12.4.1 | Localization of Viral Proteins to Compartments of the Secretory Pathway | | parentid:MI155A-12.4
+MI155A-12.4.2 | Localization of Viral Proteins to the Nuclear Membrane | | parentid:MI155A-12.4
+MI155A-12.5 | Transport of Viral Genomes to Assembly Sites | | parentid:MI155A-12
+MI155A-12.5.1 | Transport of Genomic and Pregenomic RNA from the Nucleus to the Cytoplasm | | parentid:MI155A-12.5
+MI155A-12.5.2 | Transport of Genomes from the Cytoplasm to the Plasma Membrane | | parentid:MI155A-12.5
+MI155A-12.6 | Perspectives | | parentid:MI155A-12
+MI155A-12.7 | References | | parentid:MI155A-12
+MI155A-13 | Assembly, Exit, and Maturation | | parentid:MI155A
+MI155A-13.1 | Introduction | | parentid:MI155A-13
+MI155A-13.2 | Methods of Studying Virus Assembly and Egress | | parentid:MI155A-13
+MI155A-13.2.1 | Structural Studies of Virus Particles | | parentid:MI155A-13.2
+MI155A-13.2.2 | Visualization of Assembly and Exit by Microscopy | | parentid:MI155A-13.2
+MI155A-13.2.3 | Biochemical and Genetic Analyses of Assembly Intermediates | | parentid:MI155A-13.2
+MI155A-13.2.4 | Methods Based on Recombinant DNA Technology | | parentid:MI155A-13.2
+MI155A-13.3 | Assembly of Protein Shells | | parentid:MI155A-13
+MI155A-13.3.1 | Formation of Structural Units | | parentid:MI155A-13.3
+MI155A-13.3.2 | Capsid and Nucleocapsid Assembly | | parentid:MI155A-13.3
+MI155A-13.3.3 | Self-Assembly and Assisted Assembly Reactions | | parentid:MI155A-13.3
+MI155A-13.4 | Selective Packaging of the Viral Genome and Other Components of Virus Particles | | parentid:MI155A-13
+MI155A-13.4.1 | Concerted or Sequential Assembly | | parentid:MI155A-13.4
+MI155A-13.4.2 | Recognition and Packaging of the Nucleic Acid Genome | | parentid:MI155A-13.4
+MI155A-13.4.3 | Incorporation of Enzymes and Other Nonstructural Proteins | | parentid:MI155A-13.4
+MI155A-13.5 | Acquisition of an Envelope | | parentid:MI155A-13
+MI155A-13.5.1 | Sequential Assembly of Internal Components and Budding from a Cellular Membrane | | parentid:MI155A-13.5
+MI155A-13.5.2 | Coordination of the Assembly of Internal Structures with Acquisition of the Envelope | | parentid:MI155A-13.5
+MI155A-13.6 | Release of Virus Particles | | parentid:MI155A-13
+MI155A-13.6.1 | Assembly and Budding at the Plasma Membrane | | parentid:MI155A-13.6
+MI155A-13.6.2 | Assembly at Internal Membranes: the Problem of Exocytosis | | parentid:MI155A-13.6
+MI155A-13.6.3 | Release of Nonenveloped Viruses | | parentid:MI155A-13.6
+MI155A-13.7 | Maturation of Progeny Virus Particles | | parentid:MI155A-13
+MI155A-13.7.1 | Proteolytic Processing of Structural Proteins | | parentid:MI155A-13.7
+MI155A-13.7.2 | Other Maturation Reactions | | parentid:MI155A-13.7
+MI155A-13.8 | Cell-to-Cell Spread | | parentid:MI155A-13
+MI155A-13.9 | Perspectives | | parentid:MI155A-13
+MI155A-13.10 | References | | parentid:MI155A-13
+MI155A-14 | The Infected Cell | | parentid:MI155A
+MI155A-14.1 | Introduction | | parentid:MI155A-14
+MI155A-14.2 | Signal Transduction | | parentid:MI155A-14
+MI155A-14.2.1 | Signaling Pathways | | parentid:MI155A-14.2
+MI155A-14.2.2 | Signaling in Virus-Infected Cells | | parentid:MI155A-14.2
+MI155A-14.3 | Gene Expression | | parentid:MI155A-14
+MI155A-14.3.1 | Inhibition of Cellular Gene Expression | | parentid:MI155A-14.3
+MI155A-14.3.2 | Differential Regulation of Cellular Gene Expression | | parentid:MI155A-14.3
+MI155A-14.4 | Metabolism | | parentid:MI155A-14
+MI155A-14.4.1 | Methods To Study Metabolism | | parentid:MI155A-14.4
+MI155A-14.4.2 | Glucose Metabolism | | parentid:MI155A-14.4
+MI155A-14.4.3 | The Citric Acid Cycle | | parentid:MI155A-14.4
+MI155A-14.4.4 | Electron Transport and Oxidative Phosphorylation | | parentid:MI155A-14.4
+MI155A-14.4.5 | Lipid Metabolism | | parentid:MI155A-14.4
+MI155A-14.5 | Remodeling of Cellular Organelles | | parentid:MI155A-14
+MI155A-14.5.1 | The Nucleus | | parentid:MI155A-14.5
+MI155A-14.5.2 | The Cytoplasm | | parentid:MI155A-14.5
+MI155A-14.6 | Perspectives | | parentid:MI155A-14
+MI155A-14.7 | References | | parentid:MI155A-14
+MI155A-15 | Infections of Populations: History and Epidemiology | | parentid:MI155A
+MI155A-15.1 | Introduction to Viral Pathogenesis | | parentid:MI155A-15
+MI155A-15.2 | A Brief History of Viral Pathogenesis | | parentid:MI155A-15
+MI155A-15.2.1 | The Relationships between Microbes | | parentid:MI155A-15.2
+MI155A-15.2.2 | The First Human Viruses Identified and the Role of Serendipity | | parentid:MI155A-15.2
+MI155A-15.2.3 | New Techniques Led to the Study of Viruses as Causes of Disease | | parentid:MI155A-15.2
+MI155A-15.3 | Viral Epidemics in History | | parentid:MI155A-15
+MI155A-15.3.1 | Epidemics Shaped History: the 1793 Yellow Fever Epidemic in Philadelphia | | parentid:MI155A-15.3
+MI155A-15.3.2 | Tracking Epidemics by Sequencing: West Nile Virus Spread to the Western Hemisphere | | parentid:MI155A-15.3
+MI155A-15.3.3 | The Economic Toll of Viral Epidemics in Agricultural Organisms | | parentid:MI155A-15.3
+MI155A-15.3.4 | Population Density and World Travel as Accelerators of Viral Transmission | | parentid:MI155A-15.3
+MI155A-15.3.5 | Zoonotic Infections and Viral Epidemics | | parentid:MI155A-15.3
+MI155A-15.4 | Epidemiology | | parentid:MI155A-15
+MI155A-15.4.1 | Fundamental Concepts | | parentid:MI155A-15.4
+MI155A-15.4.2 | Tools of Epidemiology | | parentid:MI155A-15.4
+MI155A-15.4.3 | Surveillance | | parentid:MI155A-15.4
+MI155A-15.5 | Parameters That Govern the Ability of a Virus To Infect a Population | | parentid:MI155A-15
+MI155A-15.5.1 | Environment | | parentid:MI155A-15.5
+MI155A-15.5.2 | Host Factors | | parentid:MI155A-15.5
+MI155A-15.6 | Perspectives | | parentid:MI155A-15
+MI155A-15.7 | References | | parentid:MI155A-15
+MI155A-16 | Barriers to Infection | | parentid:MI155A
+MI155A-16.1 | Introduction | | parentid:MI155A-16
+MI155A-16.2 | An Overview of Infection and Immunity | | parentid:MI155A-16
+MI155A-16.2.1 | A Game of Chess Played by Age-Old Masters | | parentid:MI155A-16.2
+MI155A-16.2.2 | Initiating an Infection | | parentid:MI155A-16.2
+MI155A-16.3 | Successful Infections Must Modulate or Bypass Host Defenses | | parentid:MI155A-16
+MI155A-16.3.1 | Skin | | parentid:MI155A-16.3
+MI155A-16.3.2 | Respiratory Tract | | parentid:MI155A-16.3
+MI155A-16.3.3 | Alimentary Tract | | parentid:MI155A-16.3
+MI155A-16.3.4 | Urogenital Tract | | parentid:MI155A-16.3
+MI155A-16.3.5 | Eyes | | parentid:MI155A-16.3
+MI155A-16.4 | Viral Tropism | | parentid:MI155A-16
+MI155A-16.4.1 | Accessibility of Viral Receptors | | parentid:MI155A-16.4
+MI155A-16.4.2 | Host Cell Proteins That Regulate the Infectious Cycle | | parentid:MI155A-16.4
+MI155A-16.5 | Spread throughout the Host | | parentid:MI155A-16
+MI155A-16.5.1 | Hematogenous Spread | | parentid:MI155A-16.5
+MI155A-16.5.2 | Neural Spread | | parentid:MI155A-16.5
+MI155A-16.6 | Organ Invasion | | parentid:MI155A-16
+MI155A-16.6.1 | Entry into Organs with Sinusoids | | parentid:MI155A-16.6
+MI155A-16.6.2 | Entry into Organs That Lack Sinusoids | | parentid:MI155A-16.6
+MI155A-16.6.3 | Organs with Dense Basement Membranes | | parentid:MI155A-16.6
+MI155A-16.6.4 | Skin | | parentid:MI155A-16.6
+MI155A-16.6.5 | The Fetus | | parentid:MI155A-16.6
+MI155A-16.7 | Shedding of Virus Particles | | parentid:MI155A-16
+MI155A-16.7.1 | Respiratory Secretions | | parentid:MI155A-16.7
+MI155A-16.7.2 | Saliva | | parentid:MI155A-16.7
+MI155A-16.7.3 | Feces | | parentid:MI155A-16.7
+MI155A-16.7.4 | Blood | | parentid:MI155A-16.7
+MI155A-16.7.5 | Urine | | parentid:MI155A-16.7
+MI155A-16.7.6 | Semen | | parentid:MI155A-16.7
+MI155A-16.7.7 | Milk | | parentid:MI155A-16.7
+MI155A-16.7.8 | Skin Lesions | | parentid:MI155A-16.7
+MI155A-16.8 | Perspectives | | parentid:MI155A-16
+MI155A-16.9 | References | | parentid:MI155A-16
+MI155A-17 | The Early Host Response: Cell-Autonomous and Innate Immunity | | parentid:MI155A
+MI155A-17.1 | Introduction | | parentid:MI155A-17
+MI155A-17.2 | The First Critical Moments of Infection: How Do Individual Cells Detect a Virus Infection? | | parentid:MI155A-17
+MI155A-17.2.1 | Cell Signaling Induced by Receptor Engagement | | parentid:MI155A-17.2
+MI155A-17.2.2 | Receptor-Mediated Recognition of Microbe-Associated Molecular Patterns | | parentid:MI155A-17.2
+MI155A-17.2.3 | Cellular Changes That Occur Following Viral Infection | | parentid:MI155A-17.2
+MI155A-17.3 | Intrinsic Responses to Infection | | parentid:MI155A-17
+MI155A-17.3.1 | Apoptosis (Programmed Cell Death) | | parentid:MI155A-17.3
+MI155A-17.3.2 | Other Intrinsic Immune Defenses | | parentid:MI155A-17.3
+MI155A-17.3.3 | The Continuum between Intrinsic and Innate Immunity | | parentid:MI155A-17.3
+MI155A-17.4 | Soluble Immune Mediators of the Innate Immune Response | | parentid:MI155A-17
+MI155A-17.4.1 | Overview of Cytokine Functions | | parentid:MI155A-17.4
+MI155A-17.4.2 | Interferons, Cytokines of Early Warning and Action | | parentid:MI155A-17.4
+MI155A-17.4.3 | Chemokines | | parentid:MI155A-17.4
+MI155A-17.5 | The Innate Immune Response | | parentid:MI155A-17
+MI155A-17.6 | Complement | | parentid:MI155A-17
+MI155A-17.7 | Natural Killer Cells | | parentid:MI155A-17
+MI155A-17.8 | Other Innate Immune Cells of Relevance to Viral Infections | | parentid:MI155A-17
+MI155A-17.9 | Perspectives | | parentid:MI155A-17
+MI155A-17.10 | References | | parentid:MI155A-17
+MI155A-18 | Adaptive Immunity and the Establishment of Memory | | parentid:MI155A
+MI155A-18.1 | Introduction | | parentid:MI155A-18
+MI155A-18.2 | Attributes of the Host Response | | parentid:MI155A-18
+MI155A-18.2.1 | Speed | | parentid:MI155A-18.2
+MI155A-18.2.2 | Diversity and Specificity | | parentid:MI155A-18.2
+MI155A-18.2.3 | Memory | | parentid:MI155A-18.2
+MI155A-18.2.4 | Self-Control | | parentid:MI155A-18.2
+MI155A-18.3 | Lymphocyte Development, Diversity, and Activation | | parentid:MI155A-18
+MI155A-18.3.1 | All Blood Cells Derive from a Common Hematopoietic Stem Cell | | parentid:MI155A-18.3
+MI155A-18.3.2 | The Two Arms of Adaptive Immunity | | parentid:MI155A-18.3
+MI155A-18.3.3 | The Major Effectors of the Adaptive Response: B Cells and T Cells | | parentid:MI155A-18.3
+MI155A-18.3.4 | Diverse Receptors Impart Antigen Specificity to B and T Cells | | parentid:MI155A-18.3
+MI155A-18.4 | Events at the Site of Infection Set the Stage for the Adaptive Response | | parentid:MI155A-18
+MI155A-18.4.1 | Acquisition of Viral Proteins by Professional Antigen-Presenting Cells Enables Production of Proinflammatory Cytokines and Establishment of Inflammation | | parentid:MI155A-18.4
+MI155A-18.4.2 | Antigen-Presenting Cells Leave the Site of Infection and Migrate to Lymph Nodes | | parentid:MI155A-18.4
+MI155A-18.5 | Antigen Processing and Presentation | | parentid:MI155A-18
+MI155A-18.5.1 | Professional Antigen-Presenting Cells Induce Activation via Costimulation | | parentid:MI155A-18.5
+MI155A-18.5.2 | Presentation of Antigens by Class I and Class II MHC Proteins | | parentid:MI155A-18.5
+MI155A-18.5.3 | Lymphocyte Activation Triggers Massive Cell Proliferation | | parentid:MI155A-18.5
+MI155A-18.6 | The Cell-Mediated Response | | parentid:MI155A-18
+MI155A-18.6.1 | CTLs Lyse Virus-Infected Cells | | parentid:MI155A-18.6
+MI155A-18.6.2 | Control of CTL Proliferation | | parentid:MI155A-18.6
+MI155A-18.6.3 | Noncytolytic Control of Infection by T Cells | | parentid:MI155A-18.6
+MI155A-18.6.4 | Rashes and Poxes | | parentid:MI155A-18.6
+MI155A-18.7 | The Humoral (Antibody) Response | | parentid:MI155A-18
+MI155A-18.7.1 | Antibodies Are Made by Plasma Cells | | parentid:MI155A-18.7
+MI155A-18.7.2 | Types and Functions of Antibodies | | parentid:MI155A-18.7
+MI155A-18.7.3 | Virus Neutralization by Antibodies | | parentid:MI155A-18.7
+MI155A-18.7.4 | Antibody-Dependent Cell-Mediated Cytotoxicity: Specific Killing by Nonspecific Cells | | parentid:MI155A-18.7
+MI155A-18.8 | Immunological Memory | | parentid:MI155A-18
+MI155A-18.9 | Perspectives | | parentid:MI155A-18
+MI155A-18.10 | References | | parentid:MI155A-18
+MI155A-19 | Mechanisms of Pathogenesis | | parentid:MI155A
+MI155A-19.1 | Introduction | | parentid:MI155A-19
+MI155A-19.2 | Animal Models of Human Diseases | | parentid:MI155A-19
+MI155A-19.3 | Patterns of Infection | | parentid:MI155A-19
+MI155A-19.3.1 | Incubation Periods | | parentid:MI155A-19.3
+MI155A-19.3.2 | Mathematics of Growth Correlate with Patterns of Infection | | parentid:MI155A-19.3
+MI155A-19.3.3 | Acute Infections | | parentid:MI155A-19.3
+MI155A-19.3.4 | Persistent Infections | | parentid:MI155A-19.3
+MI155A-19.3.5 | Latent Infections | | parentid:MI155A-19.3
+MI155A-19.3.6 | “Slow” Infections | | parentid:MI155A-19.3
+MI155A-19.3.7 | Abortive Infections | | parentid:MI155A-19.3
+MI155A-19.3.8 | Transforming Infections | | parentid:MI155A-19.3
+MI155A-19.4 | Viral Virulence | | parentid:MI155A-19
+MI155A-19.4.1 | Measuring Viral Virulence | | parentid:MI155A-19.4
+MI155A-19.4.2 | Alteration of Viral Virulence | | parentid:MI155A-19.4
+MI155A-19.4.3 | Viral Virulence Genes | | parentid:MI155A-19.4
+MI155A-19.5 | Pathogenesis | | parentid:MI155A-19
+MI155A-19.5.1 | Infected Cell Lysis | | parentid:MI155A-19.5
+MI155A-19.5.2 | Immunopathology | | parentid:MI155A-19.5
+MI155A-19.5.3 | Immunosuppression Induced by Viral Infection | | parentid:MI155A-19.5
+MI155A-19.5.4 | Oncogenesis | | parentid:MI155A-19.5
+MI155A-19.5.5 | Molecular Mimicry | | parentid:MI155A-19.5
+MI155A-19.6 | Perspectives | | parentid:MI155A-19
+MI155A-19.7 | References | | parentid:MI155A-19
+MI155A-20 | Cellular Transformation and Oncogenesis | | parentid:MI155A
+MI155A-20.1 | Introduction | | parentid:MI155A-20
+MI155A-20.1.1 | Properties of Transformed Cells | | parentid:MI155A-20.1
+MI155A-20.1.2 | Control of Cell Proliferation | | parentid:MI155A-20.1
+MI155A-20.2 | Oncogenic Viruses | | parentid:MI155A-20
+MI155A-20.2.1 | Discovery of Oncogenic Viruses | | parentid:MI155A-20.2
+MI155A-20.2.2 | Viral Genetic Information in Transformed Cells | | parentid:MI155A-20.2
+MI155A-20.2.3 | The Origin and Nature of Viral Transforming Genes | | parentid:MI155A-20.2
+MI155A-20.2.4 | Functions of Viral Transforming Proteins | | parentid:MI155A-20.2
+MI155A-20.3 | Activation of Cellular Signal Transduction Pathways by Viral Transforming Proteins | | parentid:MI155A-20
+MI155A-20.3.1 | Viral Signaling Molecules Acquired from the Cell | | parentid:MI155A-20.3
+MI155A-20.3.2 | Alteration of the Production or Activity of Cellular Signal Transduction Proteins | | parentid:MI155A-20.3
+MI155A-20.4 | Disruption of Cell Cycle Control Pathways by Viral Transforming Proteins | | parentid:MI155A-20
+MI155A-20.4.1 | Abrogation of Restriction Point Control Exerted by the Rb Protein | | parentid:MI155A-20.4
+MI155A-20.4.2 | Production of Virus-Specific Cyclins | | parentid:MI155A-20.4
+MI155A-20.4.3 | Inactivation of Cyclin-Dependent Kinase Inhibitors | | parentid:MI155A-20.4
+MI155A-20.5 | Transformed Cells Must Grow and Survive | | parentid:MI155A-20
+MI155A-20.5.1 | Mechanisms That Permit Survival of Transformed Cells | | parentid:MI155A-20.5
+MI155A-20.6 | Tumorigenesis Requires Additional Changes in the Properties of Transformed Cells | | parentid:MI155A-20
+MI155A-20.6.1 | Inhibition of Immune Defenses | | parentid:MI155A-20.6
+MI155A-20.7 | Other Mechanisms of Transformation and Oncogenesis by Human Tumor Viruses | | parentid:MI155A-20
+MI155A-20.7.1 | Nontransducing Oncogenic Retroviruses: Tumorigenesis with Very Long Latency | | parentid:MI155A-20.7
+MI155A-20.7.2 | Oncogenesis by Hepatitis Viruses | | parentid:MI155A-20.7
+MI155A-20.8 | Perspectives | | parentid:MI155A-20
+MI155A-20.9 | References | | parentid:MI155A-20
+MI155A-21 | Human Immunodeficiency Virus Pathogenesis | | parentid:MI155A
+MI155A-21.1 | Introduction | | parentid:MI155A-21
+MI155A-21.1.1 | Worldwide Impact of AIDS | | parentid:MI155A-21.1
+MI155A-21.2 | HIV Is a Lentivirus | | parentid:MI155A-21
+MI155A-21.2.1 | Discovery and Characterization | | parentid:MI155A-21.2
+MI155A-21.2.2 | Distinctive Features of the HIV Reproduction Cycle and the Functions of Auxiliary Proteins | | parentid:MI155A-21.2
+MI155A-21.2.3 | The Viral Capsid Counters Intrinsic Defense Mechanisms | | parentid:MI155A-21.2
+MI155A-21.3 | Cellular Targets | | parentid:MI155A-21
+MI155A-21.4 | Routes of Transmission | | parentid:MI155A-21
+MI155A-21.4.1 | Modes of Transmission | | parentid:MI155A-21.4
+MI155A-21.4.2 | Mechanics of Spread | | parentid:MI155A-21.4
+MI155A-21.5 | The Course of Infection | | parentid:MI155A-21
+MI155A-21.5.1 | The Acute Phase | | parentid:MI155A-21.5
+MI155A-21.5.2 | The Asymptomatic Phase | | parentid:MI155A-21.5
+MI155A-21.5.3 | The Symptomatic Phase and AIDS | | parentid:MI155A-21.5
+MI155A-21.5.4 | Variability of Response to Infection | | parentid:MI155A-21.5
+MI155A-21.6 | Origins of Cellular Immune Dysfunction | | parentid:MI155A-21
+MI155A-21.6.1 | CD4+ T Lymphocytes | | parentid:MI155A-21.6
+MI155A-21.6.2 | Cytotoxic T Lymphocytes | | parentid:MI155A-21.6
+MI155A-21.6.3 | Monocytes and Macrophages | | parentid:MI155A-21.6
+MI155A-21.6.4 | B Cells | | parentid:MI155A-21.6
+MI155A-21.6.5 | Natural Killer Cells | | parentid:MI155A-21.6
+MI155A-21.6.6 | Autoimmunity | | parentid:MI155A-21.6
+MI155A-21.7 | Immune Responses to HIV | | parentid:MI155A-21
+MI155A-21.7.1 | Innate Response | | parentid:MI155A-21.7
+MI155A-21.7.2 | The Cell-Mediated Response | | parentid:MI155A-21.7
+MI155A-21.7.3 | Humoral Responses | | parentid:MI155A-21.7
+MI155A-21.7.4 | Summary: the Critical Balance | | parentid:MI155A-21.7
+MI155A-21.8 | Dynamics of HIV-1 Reproduction in AIDS Patients | | parentid:MI155A-21
+MI155A-21.9 | Effects of HIV on Different Tissues and Organ Systems | | parentid:MI155A-21
+MI155A-21.9.1 | Lymphoid Organs | | parentid:MI155A-21.9
+MI155A-21.9.2 | The Nervous System | | parentid:MI155A-21.9
+MI155A-21.9.3 | The Gastrointestinal System | | parentid:MI155A-21.9
+MI155A-21.9.4 | Other Organs and Tissues | | parentid:MI155A-21.9
+MI155A-21.10 | HIV and Cancer | | parentid:MI155A-21
+MI155A-21.10.1 | Kaposi’s Sarcoma | | parentid:MI155A-21.10
+MI155A-21.10.2 | B Cell Lymphomas | | parentid:MI155A-21.10
+MI155A-21.10.3 | Anogenital Carcinomas | | parentid:MI155A-21.10
+MI155A-21.11 | Prospects for Treatment and Prevention | | parentid:MI155A-21
+MI155A-21.11.1 | Antiviral Drugs | | parentid:MI155A-21.11
+MI155A-21.11.2 | Confronting the Problems of Persistence and Latency | | parentid:MI155A-21.11
+MI155A-21.11.3 | Gene Therapy Approaches | | parentid:MI155A-21.11
+MI155A-21.11.4 | Immune System-Based Therapies | | parentid:MI155A-21.11
+MI155A-21.11.5 | Antiviral Drug Prophylaxis | | parentid:MI155A-21.11
+MI155A-21.12 | Perspectives | | parentid:MI155A-21
+MI155A-21.13 | References | | parentid:MI155A-21
+MI155A-22 | Vaccines | | parentid:MI155A
+MI155A-22.1 | Introduction | | parentid:MI155A-22
+MI155A-22.2 | The Origins of Vaccination | | parentid:MI155A-22
+MI155A-22.2.1 | Smallpox: a Historical Perspective | | parentid:MI155A-22.2
+MI155A-22.2.2 | Large-Scale Vaccination Programs Can Be Dramatically Effective | | parentid:MI155A-22.2
+MI155A-22.3 | Vaccine Basics | | parentid:MI155A-22
+MI155A-22.3.1 | Immunization Can Be Active or Passive | | parentid:MI155A-22.3
+MI155A-22.3.2 | Active Vaccination Strategies Stimulate Immune Memory | | parentid:MI155A-22.3
+MI155A-22.3.3 | The Fundamental Challenge | | parentid:MI155A-22.3
+MI155A-22.4 | The Science and Art of Making Vaccines | | parentid:MI155A-22
+MI155A-22.4.1 | Inactivated or “Killed” Virus Vaccines | | parentid:MI155A-22.4
+MI155A-22.4.2 | Attenuated Virus Vaccines | | parentid:MI155A-22.4
+MI155A-22.4.3 | Subunit Vaccines | | parentid:MI155A-22.4
+MI155A-22.4.4 | Recombinant DNA Approaches to Subunit Vaccines | | parentid:MI155A-22.4
+MI155A-22.4.5 | Virus-Like Particles | | parentid:MI155A-22.4
+MI155A-22.4.6 | DNA Vaccines | | parentid:MI155A-22.4
+MI155A-22.4.7 | Attenuated Viral Vectors and Foreign Gene Expression | | parentid:MI155A-22.4
+MI155A-22.5 | Vaccine Technology: Delivery and Improving Antigenicity | | parentid:MI155A-22
+MI155A-22.5.1 | Adjuvants Stimulate an Immune Response | | parentid:MI155A-22.5
+MI155A-22.5.2 | Delivery and Formulation | | parentid:MI155A-22.5
+MI155A-22.5.3 | Immunotherapy | | parentid:MI155A-22.5
+MI155A-22.6 | The Quest for an AIDS Vaccine | | parentid:MI155A-22
+MI155A-22.6.1 | Formidable Challenges and Promising Leads | | parentid:MI155A-22.6
+MI155A-22.7 | Perspectives | | parentid:MI155A-22
+MI155A-22.8 | References | | parentid:MI155A-22
+MI155A-23 | Antiviral Drugs | | parentid:MI155A
+MI155A-23.1 | Introduction | | parentid:MI155A-23
+MI155A-23.1.1 | Historical Perspective | | parentid:MI155A-23.1
+MI155A-23.2 | Discovering Antiviral Compounds | | parentid:MI155A-23
+MI155A-23.2.1 | The Lexicon of Antiviral Discovery | | parentid:MI155A-23.2
+MI155A-23.2.2 | Screening for Antiviral Compounds | | parentid:MI155A-23.2
+MI155A-23.2.3 | Computational Approaches to Drug Discovery | | parentid:MI155A-23.2
+MI155A-23.2.4 | The Difference between “R” and “D” | | parentid:MI155A-23.2
+MI155A-23.3 | Examples of Some Antiviral Drugs | | parentid:MI155A-23
+MI155A-23.3.1 | Approved Inhibitors of Viral Nucleic Acid Synthesis | | parentid:MI155A-23.3
+MI155A-23.3.2 | Approved Drugs That Are Not Inhibitors of Nucleic Acid Synthesis | | parentid:MI155A-23.3
+MI155A-23.4 | Expanding Target Options for Antiviral Drug Development | | parentid:MI155A-23
+MI155A-23.4.1 | Entry and Uncoating Inhibitors | | parentid:MI155A-23.4
+MI155A-23.4.2 | Viral Regulatory Proteins | | parentid:MI155A-23.4
+MI155A-23.4.3 | Regulatory RNA Molecules | | parentid:MI155A-23.4
+MI155A-23.4.4 | Proteases and Nucleic Acid Synthesis and Processing Enzymes | | parentid:MI155A-23.4
+MI155A-23.5 | Two Success Stories: Human Immunodeficiency and Hepatitis C Viruses | | parentid:MI155A-23
+MI155A-23.5.1 | Inhibitors of Human Immunodeficiency Virus and Hepatitis C Virus Polymerases | | parentid:MI155A-23.5
+MI155A-23.5.2 | Human Immunodeficiency Virus and Hepatitis C Virus Protease Inhibitors | | parentid:MI155A-23.5
+MI155A-23.5.3 | Human Immunodeficiency Virus Integrase Inhibitors | | parentid:MI155A-23.5
+MI155A-23.5.4 | Hepatitis C Virus Multifunctional Protein NS5A | | parentid:MI155A-23.5
+MI155A-23.6 | Inhibitors of Human Immunodeficiency Virus Fusion and Entry | | parentid:MI155A-23
+MI155A-23.7 | Drug Resistance | | parentid:MI155A-23
+MI155A-23.7.1 | Combination Therapy | | parentid:MI155A-23.7
+MI155A-23.7.2 | Challenges Remaining | | parentid:MI155A-23.7
+MI155A-23.8 | Perspectives | | parentid:MI155A-23
+MI155A-23.9 | References | | parentid:MI155A-23
+MI155A-24 | Evolution | | parentid:MI155A
+MI155A-24.1 | Virus Evolution | | parentid:MI155A-24
+MI155A-24.2 | Classic Theory of Host-Parasite Interactions | | parentid:MI155A-24
+MI155A-24.3 | How Do Virus Populations Evolve? | | parentid:MI155A-24
+MI155A-24.3.1 | Two General Survival Strategies Can Be Distinguished | | parentid:MI155A-24.3
+MI155A-24.3.2 | Large Numbers of Viral Progeny and Mutants Are Produced in Infected Cells | | parentid:MI155A-24.3
+MI155A-24.3.3 | The Quasispecies Concept | | parentid:MI155A-24.3
+MI155A-24.3.4 | Sequence Conservation in Changing Genomes | | parentid:MI155A-24.3
+MI155A-24.3.5 | Genetic Shift and Genetic Drift | | parentid:MI155A-24.3
+MI155A-24.3.6 | Fundamental Properties of Viruses That Constrain and Drive Evolution | | parentid:MI155A-24.3
+MI155A-24.4 | The Origin of Viruses | | parentid:MI155A-24
+MI155A-24.5 | Host-Virus Relationships Drive Evolution | | parentid:MI155A-24
+MI155A-24.5.1 | DNA Virus Relationships | | parentid:MI155A-24.5
+MI155A-24.5.2 | RNA Virus Relationships | | parentid:MI155A-24.5
+MI155A-24.5.3 | The Protovirus Hypothesis for Retroviruses | | parentid:MI155A-24.5
+MI155A-24.6 | Lessons from Paleovirology | | parentid:MI155A-24
+MI155A-24.6.1 | Endogenous Retroviruses | | parentid:MI155A-24.6
+MI155A-24.6.2 | DNA Fossils Derived from Other RNA Viral Genomes | | parentid:MI155A-24.6
+MI155A-24.6.3 | Endogenous Sequences from DNA Viruses | | parentid:MI155A-24.6
+MI155A-24.6.4 | The Host-Virus “Arms Race" | | parentid:MI155A-24.6
+MI155A-24.7 | Perspectives | | parentid:MI155A-24
+MI155A-24.8 | References | | parentid:MI155A-24
+MI155A-25 | Emergence | | parentid:MI155A
+MI155A-25.1 | The Spectrum of Host-Virus Interactions | | parentid:MI155A-25
+MI155A-25.1.1 | Stable Interactions | | parentid:MI155A-25.1
+MI155A-25.1.2 | The Evolving Host-Virus Interaction | | parentid:MI155A-25.1
+MI155A-25.1.3 | The Dead-End Interaction | | parentid:MI155A-25.1
+MI155A-25.1.4 | Common Sources of Animal-to-Human Transmission | | parentid:MI155A-25.1
+MI155A-25.1.5 | The Resistant Host | | parentid:MI155A-25.1
+MI155A-25.2 | Encountering New Hosts: Ecological Parameters | | parentid:MI155A-25
+MI155A-25.2.1 | Successful Encounters Require Access to Susceptible and Permissive Cells | | parentid:MI155A-25.2
+MI155A-25.2.2 | Population Density, Age, and Health Are Important Factors | | parentid:MI155A-25.2
+MI155A-25.2.3 | Experimental Analysis of Host-Virus Interactions | | parentid:MI155A-25.2
+MI155A-25.2.4 | Learning from Accidental Infections | | parentid:MI155A-25.2
+MI155A-25.3 | Expanding Viral Niches: Some Well-Documented Examples | | parentid:MI155A-25
+MI155A-25.3.1 | Poliomyelitis: Unexpected Consequences of Modern Sanitation | | parentid:MI155A-25.3
+MI155A-25.3.2 | Smallpox and Measles: Exploration and Colonization | | parentid:MI155A-25.3
+MI155A-25.4 | Notable Zoonoses | | parentid:MI155A-25
+MI155A-25.4.1 | Hantavirus Pulmonary Syndrome: Changing Climate and Animal Populations | | parentid:MI155A-25.4
+MI155A-25.4.2 | Severe Acute and Middle East Respiratory Syndromes (SARS and MERS): Two New Zoonotic Coronavirus Infections | | parentid:MI155A-25.4
+MI155A-25.4.3 | Acquired Immunodeficiency Syndrome (AIDS): Pandemic from a Zoonotic Infection | | parentid:MI155A-25.4
+MI155A-25.5 | Host Range Can Be Expanded by Mutation, Recombination, or Reassortment | | parentid:MI155A-25
+MI155A-25.5.1 | Canine Parvoviruses: Cat-to-Dog Host Range Change by Two Mutations | | parentid:MI155A-25.5
+MI155A-25.5.2 | Influenza Epidemics and Pandemics: Escaping the Immune Response by Reassortment | | parentid:MI155A-25.5
+MI155A-25.6 | New Technologies Uncover Hitherto Unrecognized Viruses | | parentid:MI155A-25
+MI155A-25.6.1 | Hepatitis Viruses in the Human Blood Supply | | parentid:MI155A-25.6
+MI155A-25.7 | A Revolution in Virus Discovery | | parentid:MI155A-25
+MI155A-25.8 | Perceptions and Possibilities | | parentid:MI155A-25
+MI155A-25.8.1 | Virus Names Can Be Misleading | | parentid:MI155A-25.8
+MI155A-25.8.2 | All Viruses Are Important | | parentid:MI155A-25.8
+MI155A-25.9 | What Next? | | parentid:MI155A-25
+MI155A-25.9.1 | Can We Predict the Next Viral Pandemic? | | parentid:MI155A-25.9
+MI155A-25.9.2 | Emerging Viral Infections Illuminate Immediate Problems and Issues | | parentid:MI155A-25.9
+MI155A-25.9.3 | Humans Constantly Provide New Venues for Infection | | parentid:MI155A-25.9
+MI155A-25.9.4 | Preventing Emerging Virus Infections | | parentid:MI155A-25.9
+MI155A-25.10 | Perspectives | | parentid:MI155A-25
+MI155A-25.11 | References | | parentid:MI155A-25
+MI155A-26 | Unusual Infectious Agents | | parentid:MI155A
+MI155A-26.1 | Introduction | | parentid:MI155A-26
+MI155A-26.2 | Viroids | | parentid:MI155A-26
+MI155A-26.2.1 | Replication | | parentid:MI155A-26.2
+MI155A-26.2.2 | Sequence Diversity | | parentid:MI155A-26.2
+MI155A-26.2.3 | Movement | | parentid:MI155A-26.2
+MI155A-26.2.4 | Pathogenesis | | parentid:MI155A-26.2
+MI155A-26.3 | Satellites | | parentid:MI155A-26
+MI155A-26.3.1 | Replication | | parentid:MI155A-26.3
+MI155A-26.3.2 | Pathogenesis | | parentid:MI155A-26.3
+MI155A-26.3.3 | Virophages or Satellites? | | parentid:MI155A-26.3
+MI155A-26.3.4 | Hepatitis Delta Satellite Virus | | parentid:MI155A-26.3
+MI155A-26.4 | Prions and Transmissible Spongiform Encephalopathies | | parentid:MI155A-26
+MI155A-26.4.1 | Scrapie | | parentid:MI155A-26.4
+MI155A-26.4.2 | Physical Nature of the Scrapie Agent | | parentid:MI155A-26.4
+MI155A-26.4.3 | Human TSEs | | parentid:MI155A-26.4
+MI155A-26.4.4 | Hallmarks of TSE Pathogenesis | | parentid:MI155A-26.4
+MI155A-26.4.5 | Prions and the prnp Gene | | parentid:MI155A-26.4
+MI155A-26.4.6 | Prion Strains | | parentid:MI155A-26.4
+MI155A-26.4.7 | Bovine Spongiform Encephalopathy | | parentid:MI155A-26.4
+MI155A-26.4.8 | Chronic Wasting Disease | | parentid:MI155A-26.4
+MI155A-26.4.9 | Treatment of Prion Diseases | | parentid:MI155A-26.4
+MI155A-26.5 | Perspectives | | parentid:MI155A-26
+MI155A-26.6 | References | | parentid:MI155A-26
+MI155A-Appendix1 | Structure, Genome Organization, and Infectious Cycles | | parentid:MI155A
+MI155A-Appendix2 | Diseases, Epidemiology, and Disease Mechanisms of Selected Animal Viruses Discussed in This Book | | parentid:MI155A
+MI211-1 | An Introduction to Immunobiology and Innate Immunity | | parentid:MI211
+MI211-1.1 | Basic Concepts in Immunology | | parentid:MI211-1
+MI211-1.2 | Innate Immunity: The First Lines of Defense | | parentid:MI211-1
+MI211-1.3 | The Induced Responses of Innate Immunity | | parentid:MI211-1
+MI211-2 | The Recognition of Antigen | | parentid:MI211
+MI211-2.1 | Antigen Recognition by B-cell and T-cell Receptors | | parentid:MI211-2
+MI211-2.2 | The Generation of Lymphocyte Antigen Receptors | | parentid:MI211-2
+MI211-2.3 | Antigen Presentation to T Lymphocytes | | parentid:MI211-2
+MI211-3 | The Development of Mature Lymphocyte Receptor Repertoires | | parentid:MI211
+MI211-3.1 | Lymphocyte Receptor Signaling | | parentid:MI211-3
+MI211-3.2 | The Development and of B and T Lymphocytes | | parentid:MI211-3
+MI211-4 | The Adaptive Immune Response | | parentid:MI211
+MI211-4.1 | T Cell-Mediated Immunity | | parentid:MI211-4
+MI211-5 | The Immune System in Health and Disease | | parentid:MI211
+MI211-5.1 | Failures of Host Defense Mechanisms | | parentid:MI211-5
+MI211-5.2 | Allergy and Allergic Diseases | | parentid:MI211-5
+MI211-5.3 | Autoimmunity and Transplantation | | parentid:MI211-5
+MI211-5.4 | Manipulation of the Immune Response | | parentid:MI211-5

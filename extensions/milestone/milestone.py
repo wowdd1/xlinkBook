@@ -37,9 +37,9 @@ class Milestone(BaseExtension):
                 else:
                     record_milestone_back[key] = [record]
 
-        if len(record_milestone_back[rID]) > 0:
-            if len(record_milestone_back[rID]) > 20:
-                record_milestone_back[rID] = reversed(record_milestone_back[rID])
+        if record_milestone_back.has_key(rID) and len(record_milestone_back[rID]) > 0:
+            #if len(record_milestone_back[rID]) > 20:
+            record_milestone_back[rID] = reversed(record_milestone_back[rID])
 
             self.record_milestone[rID] = record_milestone_back[rID]
         
@@ -85,7 +85,7 @@ class Milestone(BaseExtension):
                 title = r.get_title().strip()
                 id = title[0 : title.find(' ')].strip()
                 self.html += '<li><span>' + id + '.</span>'
-                if len(id) > 5:
+                if len(id) > 4:
                     self.html += '<br>'
 
                 if script != "" and len(title[title.find(' ') + 1 :].strip()) < 20:

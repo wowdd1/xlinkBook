@@ -1,0 +1,37 @@
+CS229 | <1950s Statistical methods are discovered and refined. | | 
+CS229 | 1950s Pioneering machine learning research is conducted using simple algorithms. | | 
+CS229 | 1960s | | 
+CS229 | 1970s 'AI Winter' caused by pessimism about machine learning effectiveness. | | 
+CS229 | 1980s Rediscovery of backpropagation causes a resurgence in machine learning research. | | 
+CS229 | 1990s Support vector machines and recurrent neural networks become popular. | | 
+CS229 | 2000s Deep learning becomes feasible and neural networks see widespread commercial use. | | 
+CS229 | 2010s Machine learning becomes integral to many widely used software services and receives great publicity. | | 
+CS229 | 1763 Discovery Thomas Bayes's work An Essay towards solving a Problem in the Doctrine of Chances is published two years after his death, having been amended and edited by a friend of Bayes, Richard Price. The essay presents work which underpins Bayes theorem. | | 
+CS229 | 1805 Discovery Adrien-Marie Legendre describes the "méthode des moindres carrés", known in English as the least squares method. The least squares method is used widely in data fitting. | | 
+CS229 | 1812 Pierre-Simon Laplace publishes Théorie Analytique des Probabilités, in which he expands upon the work of Bayes and defines what is now known as Bayes' Theorem. | | 
+CS229 | 1913 Discovery Andrey Markov first describes techniques he used to analyse a poem. The techniques later become known as Markov chains. | | 
+CS229 | 1950 Alan Turing proposes a 'learning machine' that could learn and become artificially intelligent. Turing's specific proposal foreshadows genetic algorithms. | | 
+CS229 | 1951 Marvin Minsky and Dean Edmonds build the first neural network machine, able to learn,, the SNARC. | | 
+CS229 | 1952 Arthur Samuel joins IBM's Poughkeepsie Laboratory and begins working on some of the very first machine learning programs, first creating programs that play checkers. | | 
+CS229 | 1957 Discovery Frank Rosenblatt invents the perceptron while working at the Cornell Aeronautical Laboratory. The invention of the perceptron generated a great deal of excitement and widely covered in the media. | | 
+CS229 | 1969 Marvin Minsky and Seymour Papert publish their book Perceptrons, describing some of the limitations of perceptrons and neural networks. The interpretation that the book shows that neural networks are fundamentally limited is seen as a hindrance for research into neural networks. | | 
+CS229 | 1980 Discovery Kunihiko Fukushima first publishes his work on the Neocognitron, a type of artificial neural network. Neocognition later inspires convolutional neural networks. | | 
+CS229 | 1982 Discovery John Hopfield popularizes Hopfield networks, a type of recurrent neural network that can serve as content-addressable memory systems. | | 
+CS229 | 1986 Discovery The process of backpropagation is described by David Rumelhart, Geoff Hinton and Ronald J. Williams. | | 
+CS229 | 1989 Discovery Christopher Watkins develops Q-learning, which greatly improves the practicality and feasibility of reinforcement learning. | | 
+CS229 | 1989 Commercialization Axcelis, Inc. releases Evolver, the first software package to commercialize the use of genetic algorithms on personal computers. | | 
+CS229 | 1992 Achievement Gerald Tesauro develops TD-Gammon, a computer backgammon program that utilises an artificial neural network trained using temporal-difference learning (hence the 'TD' in the name). TD-Gammon is able to rival, but not consistently surpass, the abilities of top human backgammon players. | | 
+CS229 | 1995 Discovery Tin Kam Ho publishes a paper describing Random decision forests. | | 
+CS229 | 1995 Discovery Corinna Cortes and Vladimir Vapnik publish their work on support vector machines. | | 
+CS229 | 1997 Discovery Sepp Hochreiter and Jürgen Schmidhuber invent Long-short term memory recurrent neural networks, greatly improving the efficiency and practicality of recurrent neural networks. | | 
+CS229 | 1998 A team led by Yann LeCun releases the MNIST database, a dataset comprising a mix of handwritten digits from American Census Bureau employees and American high school students. The MNIST database has since become a benchmark for evaluating handwriting recognition. | | 
+CS229 | 2002 Torch, a software library for machine learning, is first released. | | 
+CS229 | 2006 The Netflix Prize competition is launched by Netflix. The aim of the competition was to use machine learning to beat Netflix's own recommendation software's accuracy in predicting a user's rating for a film given their ratings for previous films by at least 10%. The prize was won in 2009. | | 
+CS229 | 2010 Kaggle, a website that serves as a platform for machine learning competitions, is launched. | | 
+CS229 | 2011 Achievement Using a combination of machine learning, natural language processing and information retrieval techniques, IBM's Watson beats two human champions in a Jeopardy! competition. | | 
+CS229 | 2012 Achievement The Google Brain team, led by Andrew Ng and Jeff Dean, create a neural network that learns to recognise cats by watching unlabeled images taken from frames of YouTube videos. | | 
+CS229 | 2014 Facebook researchers publish their work on DeepFace, a system that uses neural networks that identifies faces with 97.35% accuracy. The results are an improvement of more than 27% over previous systems and rivals human performance. | | 
+CS229 | 2014 Researchers from Google detail their work on Sibyl, a proprietary platform for massively parallel machine learning used internally by Google to make predictions about user behavior and provide recommendations. | | 
+CS229 | 2015 Achievement Google's AlphaGo program becomes the first Computer Go program to beat an unhandicapped professional human player using a combination of machine learning and tree search techniques. | | 
+CS229 | 2015 Software Google releases TensorFlow, an open source software library for machine learning. | | 
+CS229 | 2016 Software Facebook details FBLearner Flow, an internal software platform that allows Facebook software engineers to easily share, train and use machine learning algorithms. FBLearner Flow is used by more than 25% of Facebook's engineers, more than a million models have been trained using the service and the service makes more than 6 million predictions per second. | | 

@@ -1,6 +1,6 @@
 define:
 
-    x:brain, link:big data, book:all of the information but compressed
+    x:brain, link:big data, book:information
 
 goal:
 

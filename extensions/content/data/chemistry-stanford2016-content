@@ -1,0 +1,311 @@
+CHEM1-1 | Localized Chemical Bonding | | parentid:CHEM1
+CHEM1-1.1 | Covalent Bonding | | parentid:CHEM1-1
+CHEM1-1.2 | Multiple Valence | | parentid:CHEM1-1
+CHEM1-1.3 | Hybridization | | parentid:CHEM1-1
+CHEM1-1.4 | Multiple Bonds | | parentid:CHEM1-1
+CHEM1-1.5 | Photoelectron Spectroscopy | | parentid:CHEM1-1
+CHEM1-1.6 | Electronic Structures of Molecules | | parentid:CHEM1-1
+CHEM1-1.7 | Electronegativity | | parentid:CHEM1-1
+CHEM1-1.8 | Dipole Moment | | parentid:CHEM1-1
+CHEM1-1.9 | Inductive and Field Effects | | parentid:CHEM1-1
+CHEM1-1.10 | Bond Distances | | parentid:CHEM1-1
+CHEM1-1.11 | Bond Angles | | parentid:CHEM1-1
+CHEM1-1.12 | Bond Energies | | parentid:CHEM1-1
+CHEM1-2 | Delocalized Chemical Bonding | | parentid:CHEM1
+CHEM1-2.1 | Molecular Orbitals | | parentid:CHEM1-2
+CHEM1-2.2 | Bond Energies and Distances in Compounds Containing Delocalized Bonds | | parentid:CHEM1-2
+CHEM1-2.3 | Molecules that have Delocalized Bonds | | parentid:CHEM1-2
+CHEM1-2.4 | Cross-Conjugation | | parentid:CHEM1-2
+CHEM1-2.5 | The Rules of Resonance | | parentid:CHEM1-2
+CHEM1-2.6 | The Resonance Effect | | parentid:CHEM1-2
+CHEM1-2.7 | Steric Inhibition of Resonance and the Influences of Strain | | parentid:CHEM1-2
+CHEM1-2.8 | pπ–dπ Bonding. Ylids | | parentid:CHEM1-2
+CHEM1-2.9 | Aromaticity | | parentid:CHEM1-2
+CHEM1-2.9.1 | Six-Membered Rings | | parentid:CHEM1-2.9
+CHEM1-2.9.2 | Five, Seven, and Eight-Membered Rings | | parentid:CHEM1-2.9
+CHEM1-2.9.3 | Other Systems Containing Aromatic Sextets | | parentid:CHEM1-2.9
+CHEM1-2.10 | Alternant and Nonalternant Hydrocarbons | | parentid:CHEM1-2
+CHEM1-2.11 | Aromatic Systems with Electron Numbers other than Six | | parentid:CHEM1-2
+CHEM1-2.11.1 | Systems of Two Electrons | | parentid:CHEM1-2.11
+CHEM1-2.11.2 | Systems of Four Electrons: Antiaromaticity | | parentid:CHEM1-2.11
+CHEM1-2.11.3 | Systems of Eight Electrons | | parentid:CHEM1-2.11
+CHEM1-2.11.4 | Systems of Ten Electrons | | parentid:CHEM1-2.11
+CHEM1-2.11.5 | Systems of more than Ten Electrons: 4n + 2 Electrons | | parentid:CHEM1-2.11
+CHEM1-2.11.6 | Systems of more than 10 Electrons: 4n Electrons | | parentid:CHEM1-2.11
+CHEM1-2.12 | Other Aromatic Compounds | | parentid:CHEM1-2
+CHEM1-2.13 | Hyperconjugation | | parentid:CHEM1-2
+CHEM1-2.14 | Tautomerism | | parentid:CHEM1-2
+CHEM1-2.14.1 | Keto–Enol Tautomerism | | parentid:CHEM1-2.14
+CHEM1-2.14.2 | Other Proton-Shift Tautomerism | | parentid:CHEM1-2.14
+CHEM1-3 | Bonding Weaker Than Covalent | | parentid:CHEM1
+CHEM1-3.1 | Hydrogen Bonding | | parentid:CHEM1-3
+CHEM1-3.2 | π–π Interactions | | parentid:CHEM1-3
+CHEM1-3.3 | Addition Compounds | | parentid:CHEM1-3
+CHEM1-3.3.1 | Electron Donor–Acceptor Complexes | | parentid:CHEM1-3.3
+CHEM1-3.3.2 | Crown Ether Complexes and Cryptates | | parentid:CHEM1-3.3
+CHEM1-3.3.3 | Inclusion Compounds | | parentid:CHEM1-3.3
+CHEM1-3.3.4 | Cyclodextrins | | parentid:CHEM1-3.3
+CHEM1-3.4 | Catenanes and Rotaxanes | | parentid:CHEM1-3
+CHEM1-3.5 | Cucurbit[n]Uril-Based Gyroscane | | parentid:CHEM1-3
+CHEM1-4 | Stereochemistry and Conformation | | parentid:CHEM1
+CHEM1-4.1 | Optical Activity and Chirality | | parentid:CHEM1-4
+CHEM1-4.1.1 | Dependence of Rotation on Conditions of Measurement | | parentid:CHEM1-4.1
+CHEM1-4.2 | What Kinds of Molecules Display Optical Activity? | | parentid:CHEM1-4
+CHEM1-4.3 | The Fischer Projection | | parentid:CHEM1-4
+CHEM1-4.4 | Absolute Configuration | | parentid:CHEM1-4
+CHEM1-4.4.1 | The CAHN–INGOLD–PRELOG System | | parentid:CHEM1-4.4
+CHEM1-4.4.2 | Methods of Determining Configuration | | parentid:CHEM1-4.4
+CHEM1-4.5 | The Cause of Optical Activity | | parentid:CHEM1-4
+CHEM1-4.6 | Molecules with more than One Stereogenic Center | | parentid:CHEM1-4
+CHEM1-4.7 | Asymmetric Synthesis | | parentid:CHEM1-4
+CHEM1-4.8 | Methods of Resolution | | parentid:CHEM1-4
+CHEM1-4.9 | Optical Purity | | parentid:CHEM1-4
+CHEM1-4.10 | cis–trans Isomerism | | parentid:CHEM1-4
+CHEM1-4.10.1 | cis-trans Isomerism Resulting from Double Bonds | | parentid:CHEM1-4.10
+CHEM1-4.10.2 | cis–trans Isomerism of Monocyclic Compounds | | parentid:CHEM1-4.10
+CHEM1-4.10.3 | cis–trans Isomerism of Fused and Bridged Ring Systems | | parentid:CHEM1-4.10
+CHEM1-4.11 | Out–In Isomerism | | parentid:CHEM1-4
+CHEM1-4.12 | Enantiotopic and Diastereotopic Atoms, Groups, and Faces | | parentid:CHEM1-4
+CHEM1-4.13 | Stereospecific and Stereoselective Syntheses | | parentid:CHEM1-4
+CHEM1-4.14 | Conformational Analysis | | parentid:CHEM1-4
+CHEM1-4.14.1 | Conformation in Open-Chain Systems | | parentid:CHEM1-4.14
+CHEM1-4.14.2 | Conformation in Six-Membered Rings | | parentid:CHEM1-4.14
+CHEM1-4.14.3 | Conformation in Six-Membered Rings Containing Heteroatoms | | parentid:CHEM1-4.14
+CHEM1-4.14.4 | Conformation in Other Rings | | parentid:CHEM1-4.14
+CHEM1-4.15 | Molecular Mechanics | | parentid:CHEM1-4
+CHEM1-4.16 | STRAIN | | parentid:CHEM1-4
+CHEM1-4.16.1 | Strain in Small Rings | | parentid:CHEM1-4.16
+CHEM1-4.16.2 | Strain in Other Rings | | parentid:CHEM1-4.16
+CHEM1-4.16.3 | Unsaturated Rings | | parentid:CHEM1-4.16
+CHEM1-4.16.4 | Strain Due to Unavoidable Crowding | | parentid:CHEM1-4.16
+CHEM1-5 | Carbocations, Carbanions, Free Radicals, Carbenes, and Nitrenes | | parentid:CHEM1
+CHEM1-5.1 | Carbocations | | parentid:CHEM1-5
+CHEM1-5.1.1 | Nomenclature | | parentid:CHEM1-5.1
+CHEM1-5.1.2 | Stability and Structure of Carbocations | | parentid:CHEM1-5.1
+CHEM1-5.1.3 | The Generation and Fate of Carbocations | | parentid:CHEM1-5.1
+CHEM1-5.2 | Carbanions | | parentid:CHEM1-5
+CHEM1-5.2.1 | Stability and Structure | | parentid:CHEM1-5.2
+CHEM1-5.2.2 | The Structure of Organometallic Compounds | | parentid:CHEM1-5.2
+CHEM1-5.2.3 | The Generation and Fate of Carbanions | | parentid:CHEM1-5.2
+CHEM1-5.3 | Free Radicals | | parentid:CHEM1-5
+CHEM1-5.3.1 | Stability and Structure | | parentid:CHEM1-5.3
+CHEM1-5.3.2 | The Generation and Fate of Free Radicals | | parentid:CHEM1-5.3
+CHEM1-5.3.3 | Radical Ions | | parentid:CHEM1-5.3
+CHEM1-5.4 | Carbenes | | parentid:CHEM1-5
+CHEM1-5.4.1 | Stability and Structure | | parentid:CHEM1-5.4
+CHEM1-5.4.2 | The Generation and Fate of Carbenes | | parentid:CHEM1-5.4
+CHEM1-5.5 | Nitrenes | | parentid:CHEM1-5
+CHEM1-6 | Mechanisms and Methods of Determining them | | parentid:CHEM1
+CHEM1-6.1 | Types of Mechanism | | parentid:CHEM1-6
+CHEM1-6.2 | Types of Reaction | | parentid:CHEM1-6
+CHEM1-6.3 | Thermodynamic Requirements for Reaction | | parentid:CHEM1-6
+CHEM1-6.4 | Kinetic Requirements for Reaction | | parentid:CHEM1-6
+CHEM1-6.5 | The Baldwin Rules for Ring Closure | | parentid:CHEM1-6
+CHEM1-6.6 | Kinetic and Thermodynamic Control | | parentid:CHEM1-6
+CHEM1-6.7 | The Hammond Postulate | | parentid:CHEM1-6
+CHEM1-6.8 | Microscopic Reversibility | | parentid:CHEM1-6
+CHEM1-6.9 | Marcus Theory | | parentid:CHEM1-6
+CHEM1-6.10 | Methods of Determining Mechanisms | | parentid:CHEM1-6
+CHEM1-6.10.1 | Identification of Products | | parentid:CHEM1-6.10
+CHEM1-6.10.2 | Determination of the Presence of an Intermediate | | parentid:CHEM1-6.10
+CHEM1-6.10.3 | The Study of Catalysis | | parentid:CHEM1-6.10
+CHEM1-6.10.4 | Isotopic Labeling | | parentid:CHEM1-6.10
+CHEM1-6.10.5 | Stereochemical Evidence | | parentid:CHEM1-6.10
+CHEM1-6.10.6 | Kinetic Evidence | | parentid:CHEM1-6.10
+CHEM1-6.10.7 | Isotope Effects | | parentid:CHEM1-6.10
+CHEM1-7 | Irradiation Processes in Organic Chemistry | | parentid:CHEM1
+CHEM1-7.1 | Photochemistry | | parentid:CHEM1-7
+CHEM1-7.1.1 | Excited States and the Ground State | | parentid:CHEM1-7.1
+CHEM1-7.1.2 | Singlet and Triplet States: “Forbidden” Transitions | | parentid:CHEM1-7.1
+CHEM1-7.1.3 | Types of Excitation | | parentid:CHEM1-7.1
+CHEM1-7.1.4 | Nomenclature and Properties of Excited States | | parentid:CHEM1-7.1
+CHEM1-7.1.5 | Photolytic Cleavage | | parentid:CHEM1-7.1
+CHEM1-7.1.6 | The Fate of the Excited Molecule: Physical Processes | | parentid:CHEM1-7.1
+CHEM1-7.1.7 | The Fate of the Excited Molecule: Chemical Processes | | parentid:CHEM1-7.1
+CHEM1-7.1.8 | The Determination of Photochemical Mechanisms | | parentid:CHEM1-7.1
+CHEM1-7.2 | Sonochemistry | | parentid:CHEM1-7
+CHEM1-7.3 | Microwave Chemistry | | parentid:CHEM1-7
+CHEM1-8 | Acids and Bases | | parentid:CHEM1
+CHEM1-8.1 | Brønsted Theory | | parentid:CHEM1-8
+CHEM1-8.1.1 | Brønsted Acids | | parentid:CHEM1-8.1
+CHEM1-8.1.2 | Brønsted Bases | | parentid:CHEM1-8.1
+CHEM1-8.2 | The Mechanism of Proton-Transfer Reactions | | parentid:CHEM1-8
+CHEM1-8.3 | Measurements of Solvent Acidity | | parentid:CHEM1-8
+CHEM1-8.4 | Acid and Base Catalysis | | parentid:CHEM1-8
+CHEM1-8.5 | Lewis Acids and Bases | | parentid:CHEM1-8
+CHEM1-8.5.1 | Hard–Soft Acids–Bases | | parentid:CHEM1-8.5
+CHEM1-8.6 | The Effects of Structure on the Strengths of Acids and Bases | | parentid:CHEM1-8
+CHEM1-8.7 | The Effects of the Medium on Acid and Base Strength | | parentid:CHEM1-8
+CHEM1-9 | Effects of Structure and Medium on Reactivity | | parentid:CHEM1
+CHEM1-9.1 | Resonance and Field Effects | | parentid:CHEM1-9
+CHEM1-9.2 | Steric Effects | | parentid:CHEM1-9
+CHEM1-9.3 | Quantitative Treatments of the Effect of Structure on Reactivity | | parentid:CHEM1-9
+CHEM1-9.4 | Effect of Medium on Reactivity and Rate | | parentid:CHEM1-9
+CHEM1-9.4.1 | High Pressure | | parentid:CHEM1-9.4
+CHEM1-9.4.2 | Water and Other Non-Organic Solvents | | parentid:CHEM1-9.4
+CHEM1-9.4.3 | Ionic Solvents | | parentid:CHEM1-9.4
+CHEM1-9.4.4 | Solventless Reactions | | parentid:CHEM1-9.4
+CHEM1-10 | Aliphatic Substitution, Nucleophilic and Organometallic | | parentid:CHEM1
+CHEM1-10.1 | Mechanisms | | parentid:CHEM1-10
+CHEM1-10.1.1 | The SN2 Mechanism | | parentid:CHEM1-10.1
+CHEM1-10.1.2 | The SN1 Mechanism | | parentid:CHEM1-10.1
+CHEM1-10.1.3 | Ion Pairs in the SN1 Mechanism | | parentid:CHEM1-10.1
+CHEM1-10.1.4 | Mixed SN1 and SN2 Mechanisms | | parentid:CHEM1-10.1
+CHEM1-10.2 | SET Mechanisms | | parentid:CHEM1-10
+CHEM1-10.3 | The Neighboring-Group Mechanism | | parentid:CHEM1-10
+CHEM1-10.3.1 | Neighboring-Group Participation by π and σ Bonds: Nonclassical Carbocations | | parentid:CHEM1-10.3
+CHEM1-10.4 | The SNi Mechanism | | parentid:CHEM1-10
+CHEM1-10.5 | Nucleophilic Substitution at an Allylic Carbon: Allylic Rearrangements | | parentid:CHEM1-10
+CHEM1-10.6 | Nucleophilic Substitution at an Aliphatic Trigonal Carbon: The Tetrahedral Mechanism | | parentid:CHEM1-10
+CHEM1-10.7 | Reactivity | | parentid:CHEM1-10
+CHEM1-10.7.1 | The Effect of Substrate Structure | | parentid:CHEM1-10.7
+CHEM1-10.7.2 | The Effect of the Attacking Nucleophile | | parentid:CHEM1-10.7
+CHEM1-10.7.3 | The Effect of the Leaving Group | | parentid:CHEM1-10.7
+CHEM1-10.7.4 | The Effect of the Reaction Medium | | parentid:CHEM1-10.7
+CHEM1-10.7.5 | Phase-Transfer Catalysis | | parentid:CHEM1-10.7
+CHEM1-10.7.6 | Influencing Reactivity by External Means | | parentid:CHEM1-10.7
+CHEM1-10.7.7 | Ambident (Bidentant) Nucleophiles: Regioselectivity | | parentid:CHEM1-10.7
+CHEM1-10.7.8 | Ambident Substrates | | parentid:CHEM1-10.7
+CHEM1-10.8 | Reactions | | parentid:CHEM1-10
+CHEM1-10.8.1 | Oxygen Nucleophiles | | parentid:CHEM1-10.8
+CHEM1-10.8.2 | Attack by OR at an Alkyl Carbon | | parentid:CHEM1-10.8
+CHEM1-10.8.3 | Sulfur Nucleophiles | | parentid:CHEM1-10.8
+CHEM1-10.8.4 | Nitrogen Nucleophiles | | parentid:CHEM1-10.8
+CHEM1-10.8.5 | Halogen Nucleophiles | | parentid:CHEM1-10.8
+CHEM1-10.8.6 | Carbon Nucleophiles | | parentid:CHEM1-10.8
+CHEM1-11 | Aromatic Substitution, Electrophilic | | parentid:CHEM1
+CHEM1-11.1 | Mechanisms | | parentid:CHEM1-11
+CHEM1-11.1.1 | The Arenium Ion Mechanism | | parentid:CHEM1-11.1
+CHEM1-11.1.2 | The SE1 Mechanism | | parentid:CHEM1-11.1
+CHEM1-11.2 | Orientation and Reactivity | | parentid:CHEM1-11
+CHEM1-11.2.1 | Orientation and Reactivity in Monosubstituted Benzene Rings | | parentid:CHEM1-11.2
+CHEM1-11.2.2 | The Ortho/Para Ratio | | parentid:CHEM1-11.2
+CHEM1-11.2.3 | Ipso Attack | | parentid:CHEM1-11.2
+CHEM1-11.2.4 | Orientation in Benzene Rings with More Than One Substituent | | parentid:CHEM1-11.2
+CHEM1-11.2.5 | Orientation in Other Ring Systems | | parentid:CHEM1-11.2
+CHEM1-11.3 | Quantitative Treatments of Reactivity in the Substrate | | parentid:CHEM1-11
+CHEM1-11.3.1 | Quantitative Treatment of Reactivity of the Electrophile: The Selectivity Relationship | | parentid:CHEM1-11.3
+CHEM1-11.4 | The Effect of the Leaving Group | | parentid:CHEM1-11
+CHEM1-11.5 | Reactions | | parentid:CHEM1-11
+CHEM1-11.5.1 | Hydrogen as the Leaving Group in Simple Substitution Reactions | | parentid:CHEM1-11.5
+CHEM1-11.5.2 | Hydrogen as the Leaving Group in Rearrangement Reactions | | parentid:CHEM1-11.5
+CHEM1-11.5.3 | Other Leaving Groups | | parentid:CHEM1-11.5
+CHEM1-12 | Aliphatic, Alkenyl, and Alkynyl Substitution, Electrophilic and Organometallic | | parentid:CHEM1
+CHEM1-12.1 | Mechanisms | | parentid:CHEM1-12
+CHEM1-12.1.1 | Bimolecular Mechanisms: SE2 and SEi | | parentid:CHEM1-12.1
+CHEM1-12.1.2 | The SE1 Mechanism | | parentid:CHEM1-12.1
+CHEM1-12.1.3 | Electrophilic Substitution Accompanied by Double-Bond Shifts | | parentid:CHEM1-12.1
+CHEM1-12.1.4 | Other Mechanisms | | parentid:CHEM1-12.1
+CHEM1-12.2 | Reactivity | | parentid:CHEM1-12
+CHEM1-12.3 | Reactions | | parentid:CHEM1-12
+CHEM1-12.3.1 | Hydrogen as Leaving Group | | parentid:CHEM1-12.3
+CHEM1-12.3.2 | Metals as Leaving Groups | | parentid:CHEM1-12.3
+CHEM1-12.3.3 | Halogen as Leaving Group | | parentid:CHEM1-12.3
+CHEM1-12.3.4 | Carbon Leaving Groups | | parentid:CHEM1-12.3
+CHEM1-12.3.5 | Electrophilic Substitution at Nitrogen | | parentid:CHEM1-12.3
+CHEM1-13 | Aromatic Substitution: Nucleophilic and Organometallic | | parentid:CHEM1
+CHEM1-13.1 | Mechanisms | | parentid:CHEM1-13
+CHEM1-13.1.1 | The SNAr Mechanism | | parentid:CHEM1-13.1
+CHEM1-13.1.2 | The SN1 Mechanism | | parentid:CHEM1-13.1
+CHEM1-13.1.3 | The Benzyne Mechanism | | parentid:CHEM1-13.1
+CHEM1-13.1.4 | The SRN1 Mechanism | | parentid:CHEM1-13.1
+CHEM1-13.1.5 | Other Mechanisms | | parentid:CHEM1-13.1
+CHEM1-13.2 | Reactivity | | parentid:CHEM1-13
+CHEM1-13.2.1 | The Effect of Substrate Structure | | parentid:CHEM1-13.2
+CHEM1-13.2.2 | The Effect of the Leaving Group | | parentid:CHEM1-13.2
+CHEM1-13.2.3 | The Effect of the Attacking Nucleophile | | parentid:CHEM1-13.2
+CHEM1-13.3 | Reactions | | parentid:CHEM1-13
+CHEM1-13.3.1 | All Leaving Groups Except Hydrogen and N2+ | | parentid:CHEM1-13.3
+CHEM1-13.3.2 | Hydrogen as Leaving Group | | parentid:CHEM1-13.3
+CHEM1-13.3.3 | Nitrogen as Leaving Group | | parentid:CHEM1-13.3
+CHEM1-13.3.4 | Rearrangements | | parentid:CHEM1-13.3
+CHEM1-14 | Substitution Reactions: Radical | | parentid:CHEM1
+CHEM1-14.1 | Mechanisms | | parentid:CHEM1-14
+CHEM1-14.1.1 | Radical Mechanisms in General | | parentid:CHEM1-14.1
+CHEM1-14.1.2 | Free Radical Substitution Mechanisms | | parentid:CHEM1-14.1
+CHEM1-14.1.3 | Mechanisms at an Aromatic Substrate | | parentid:CHEM1-14.1
+CHEM1-14.1.4 | Neighboring-Group Assistance in Free Radical Reactions | | parentid:CHEM1-14.1
+CHEM1-14.2 | Reactivity | | parentid:CHEM1-14
+CHEM1-14.2.1 | Reactivity for Aliphatic Substrates | | parentid:CHEM1-14.2
+CHEM1-14.2.2 | Reactivity at a Bridgehead | | parentid:CHEM1-14.2
+CHEM1-14.2.3 | Reactivity in Aromatic Substrates | | parentid:CHEM1-14.2
+CHEM1-14.2.4 | Reactivity in the Attacking Radical | | parentid:CHEM1-14.2
+CHEM1-14.2.5 | The Effect of Solvent on Reactivity | | parentid:CHEM1-14.2
+CHEM1-14.3 | Reactions | | parentid:CHEM1-14
+CHEM1-14.3.1 | Hydrogen as a Leaving Group | | parentid:CHEM1-14.3
+CHEM1-14.3.2 | N2 as Leaving Group | | parentid:CHEM1-14.3
+CHEM1-14.3.3 | Metals as Leaving Groups | | parentid:CHEM1-14.3
+CHEM1-14.3.4 | Halogen as Leaving Group | | parentid:CHEM1-14.3
+CHEM1-14.3.5 | Sulfur as Leaving Group | | parentid:CHEM1-14.3
+CHEM1-14.3.6 | Carbon as Leaving Group | | parentid:CHEM1-14.3
+CHEM1-15 | Addition to Carbon–Carbon Multiple Bonds | | parentid:CHEM1
+CHEM1-15.1 | Mechanisms | | parentid:CHEM1-15
+CHEM1-15.1.1 | Electrophilic Addition | | parentid:CHEM1-15.1
+CHEM1-15.1.2 | Nucleophilic Addition | | parentid:CHEM1-15.1
+CHEM1-15.1.3 | Free Radical Addition | | parentid:CHEM1-15.1
+CHEM1-15.1.4 | Cyclic Mechanisms | | parentid:CHEM1-15.1
+CHEM1-15.1.5 | Addition to Conjugated Systems | | parentid:CHEM1-15.1
+CHEM1-15.2 | Orientation and Reactivity | | parentid:CHEM1-15
+CHEM1-15.2.1 | Reactivity | | parentid:CHEM1-15.2
+CHEM1-15.2.2 | Orientation | | parentid:CHEM1-15.2
+CHEM1-15.2.3 | Stereochemical Orientation | | parentid:CHEM1-15.2
+CHEM1-15.2.4 | Addition to Cyclopropane Rings | | parentid:CHEM1-15.2
+CHEM1-15.3 | Reactions | | parentid:CHEM1-15
+CHEM1-15.3.1 | Isomerization of Double and Triple Bonds | | parentid:CHEM1-15.3
+CHEM1-15.3.2 | Reactions in which Hydrogen Adds to One Side | | parentid:CHEM1-15.3
+CHEM1-15.3.3 | Reactions in which Hydrogen Adds to Neither Side | | parentid:CHEM1-15.3
+CHEM1-15.3.4 | Cycloaddition Reactions | | parentid:CHEM1-15.3
+CHEM1-16 | Addition to Carbon–Hetero Multiple Bonds | | parentid:CHEM1
+CHEM1-16.1 | Mechanism and Reactivity | | parentid:CHEM1-16
+CHEM1-16.1.1 | Nucleophilic Substitution at an Aliphatic Trigonal Carbon: The Tetrahedral Mechanism | | parentid:CHEM1-16.1
+CHEM1-16.2 | Reactions | | parentid:CHEM1-16
+CHEM1-16.2.1 | Reactions in which Hydrogen or a Metallic Ion Adds to the Heteroatom | | parentid:CHEM1-16.2
+CHEM1-16.2.2 | Acyl Substitution Reactions | | parentid:CHEM1-16.2
+CHEM1-16.2.3 | Reactions in which Carbon Adds to the Heteroatom | | parentid:CHEM1-16.2
+CHEM1-16.2.4 | Addition to Isocyanides | | parentid:CHEM1-16.2
+CHEM1-16.2.5 | Nucleophilic Substitution at a Sulfonyl Sulfur Atom | | parentid:CHEM1-16.2
+CHEM1-17 | Eliminations | | parentid:CHEM1
+CHEM1-17.1 | Mechanisms and Orientation | | parentid:CHEM1-17
+CHEM1-17.1.1 | The E2 Mechanism | | parentid:CHEM1-17.1
+CHEM1-17.1.2 | The E1 Mechanism | | parentid:CHEM1-17.1
+CHEM1-17.1.3 | The E1cB Mechanism | | parentid:CHEM1-17.1
+CHEM1-17.1.4 | The E1–E2–E1cB Spectrum | | parentid:CHEM1-17.1
+CHEM1-17.1.5 | The E2C Mechanism | | parentid:CHEM1-17.1
+CHEM1-17.2 | Regiochemistry of the Double Bond | | parentid:CHEM1-17
+CHEM1-17.3 | Stereochemistry of the Double Bond | | parentid:CHEM1-17
+CHEM1-17.4 | Reactivity | | parentid:CHEM1-17
+CHEM1-17.4.1 | Effect of Substrate Structure | | parentid:CHEM1-17.4
+CHEM1-17.4.2 | Effect of the Attacking Base | | parentid:CHEM1-17.4
+CHEM1-17.4.3 | Effect of the Leaving Group | | parentid:CHEM1-17.4
+CHEM1-17.4.4 | Effect of the Medium | | parentid:CHEM1-17.4
+CHEM1-17.5 | Mechanisms and Orientation in Pyrolytic Eliminations | | parentid:CHEM1-17
+CHEM1-17.5.1 | Mechanisms | | parentid:CHEM1-17.5
+CHEM1-17.5.2 | Orientation in Pyrolytic Eliminations | | parentid:CHEM1-17.5
+CHEM1-17.5.3 | 1,4-Conjugate Eliminations | | parentid:CHEM1-17.5
+CHEM1-17.6 | Reactions | | parentid:CHEM1-17
+CHEM1-17.6.1 | Reactions in which C=C and C≡C Bonds are Formed | | parentid:CHEM1-17.6
+CHEM1-17.6.2 | Fragmentations | | parentid:CHEM1-17.6
+CHEM1-17.6.3 | Reactions in which C≡N or C=N Bonds are Formed | | parentid:CHEM1-17.6
+CHEM1-17.6.4 | Reactions in which C=O Bonds are Formed | | parentid:CHEM1-17.6
+CHEM1-17.6.5 | Reactions in which N=N Bonds are Formed | | parentid:CHEM1-17.6
+CHEM1-17.6.6 | Extrusion Reactions | | parentid:CHEM1-17.6
+CHEM1-18 | Rearrangements | | parentid:CHEM1
+CHEM1-18.1 | Mechanisms | | parentid:CHEM1-18
+CHEM1-18.1.1 | Nucleophilic Rearrangements | | parentid:CHEM1-18.1
+CHEM1-18.1.2 | The Actual Nature of the Migration | | parentid:CHEM1-18.1
+CHEM1-18.1.3 | Migratory Aptitudes | | parentid:CHEM1-18.1
+CHEM1-18.1.4 | Memory Effects | | parentid:CHEM1-18.1
+CHEM1-18.2 | Longer Nucleophilic Rearrangements | | parentid:CHEM1-18
+CHEM1-18.3 | Free Radical Rearrangements | | parentid:CHEM1-18
+CHEM1-18.4 | Carbene Rearrangements | | parentid:CHEM1-18
+CHEM1-18.5 | Electrophilic Rearrangements | | parentid:CHEM1-18
+CHEM1-18.6 | Reactions | | parentid:CHEM1-18
+CHEM1-18.6.1 | 1,2-Rearrangements | | parentid:CHEM1-18.6
+CHEM1-18.6.2 | Non-1,2 Rearrangements | | parentid:CHEM1-18.6
+CHEM1-19 | Oxidations and Reductions | | parentid:CHEM1
+CHEM1-19.1 | Mechanisms | | parentid:CHEM1-19
+CHEM1-19.2 | Reactions | | parentid:CHEM1-19
+CHEM1-19.2.1 | Oxidations | | parentid:CHEM1-19.2
+CHEM1-19.2.2 | Reductions | | parentid:CHEM1-19.2
+CHEM1-APPENDIX1 | The Literature of Organic Chemistry | | parentid:CHEM1
+CHEM1-APPENDIX2 | Classification of Reactions by Type of Compounds Synthesized | | parentid:CHEM1

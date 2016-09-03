@@ -203,11 +203,7 @@ class Utils:
 		html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
             if user_image != '':
                 html += '<img src="' + user_image + '" width="20" height="20" style="border-radius: 50%;"/>'
-            content = ''
-            if origin_user_name != user_name:
-                content = origin_user_name + "' " + user_name
-            else:
-                content = user_name
+            content = user_name
 
             if Config.display_all_library:
                 html += self.gen_libary2(user_name)
@@ -544,6 +540,8 @@ class Utils:
 
     def toQueryUrl(self, url, text):
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
+        if url == '':
+            return self.bestMatchEnginUrl(text)
         if url.find('%s') != -1:
             url = url.replace('%s', query_text)
         else:

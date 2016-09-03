@@ -1,0 +1,426 @@
+6.034-1 | Beginnings | | parentid:6.034
+6.034-1.1 | Dreams and Dreamers | | parentid:6.034-1
+6.034-1.2 | Clues | | parentid:6.034-1
+6.034-1.3 | From Philosophy and Logic | | parentid:6.034-1
+6.034-1.4 | From Life Itself | | parentid:6.034-1
+6.034-1.5 | Neurons and the Brain | | parentid:6.034-1
+6.034-1.6 | Psychology and Cognitive Science | | parentid:6.034-1
+6.034-1.7 | Evolution | | parentid:6.034-1
+6.034-1.8 | Development and Maturation | | parentid:6.034-1
+6.034-1.9 | Bionics | | parentid:6.034-1
+6.034-1.10 | From Engineering | | parentid:6.034-1
+6.034-1.11 | Automata, Sensing, and Feedback | | parentid:6.034-1
+6.034-1.12 | Statistics and Probability | | parentid:6.034-1
+6.034-1.13 | The Computer | | parentid:6.034-1
+6.034-2 | Early Explorations 1950s and 1960s | | parentid:6.034
+6.034-2.1 | Gatherings | | parentid:6.034-2
+6.034-2.2 | Session on Learning Machines | | parentid:6.034-2
+6.034-2.3 | The Dartmouth Summer Project | | parentid:6.034-2
+6.034-2.4 | Mechanization of Thought Processes | | parentid:6.034-2
+6.034-2.5 | Pattern Recognition | | parentid:6.034-2
+6.034-2.6 | Character Recognition | | parentid:6.034-2
+6.034-2.7 | Neural Networks | | parentid:6.034-2
+6.034-2.8 | Perceptrons | | parentid:6.034-2
+6.034-2.9 | ADALINES and MADALINES | | parentid:6.034-2
+6.034-2.10 | The MINOS Systems at SRI | | parentid:6.034-2
+6.034-2.11 | Statistical Methods | | parentid:6.034-2
+6.034-2.12 | Applications of Pattern Recognition to Aerial Reconnaissance | | parentid:6.034-2
+6.034-2.13 | Early Heuristic Programs | | parentid:6.034-2
+6.034-2.14 | The Logic Theorist and Heuristic Search | | parentid:6.034-2
+6.034-2.15 | Proving Theorems in Geometry | | parentid:6.034-2
+6.034-2.16 | The General Problem Solver | | parentid:6.034-2
+6.034-2.17 | Game-Playing Programs | | parentid:6.034-2
+6.034-2.18 | Semantic Representations | | parentid:6.034-2
+6.034-2.19 | Solving Geometric Analogy Problems | | parentid:6.034-2
+6.034-2.20 | Storing Information and Answering Questions | | parentid:6.034-2
+6.034-2.21 | Semantic Networks | | parentid:6.034-2
+6.034-2.22 | Natural Language Processing | | parentid:6.034-2
+6.034-2.23 | Linguistic Levels | | parentid:6.034-2
+6.034-2.24 | Machine Translation | | parentid:6.034-2
+6.034-2.25 | Question Answering | | parentid:6.034-2
+6.034-2.26 | 1960s' Infrastructure | | parentid:6.034-2
+6.034-2.27 | Programming Languages | | parentid:6.034-2
+6.034-2.28 | Early AI Laboratories | | parentid:6.034-2
+6.034-2.29 | Research Support | | parentid:6.034-2
+6.034-2.30 | All Dressed Up and Places to Go | | parentid:6.034-2
+6.034-3 | Efflorescence Mid-1960s to Mid-1970s | | parentid:6.034
+6.034-3.1 | Computer Vision | | parentid:6.034-3
+6.034-3.2 | Hints from Biology | | parentid:6.034-3
+6.034-3.3 | Recognizing Faces | | parentid:6.034-3
+6.034-3.4 | Computer Vision of Three-Dimensional Solid Objects | | parentid:6.034-3
+6.034-3.5 | An Early Vision System | | parentid:6.034-3
+6.034-3.6 | The ``Summer Vision Project" | | parentid:6.034-3
+6.034-3.7 | Image Filtering | | parentid:6.034-3
+6.034-3.8 | Processing Line Drawings | | parentid:6.034-3
+6.034-3.9 | ``Hand--Eye" Research | | parentid:6.034-3
+6.034-3.10 | At MIT | | parentid:6.034-3
+6.034-3.11 | At Stanford | | parentid:6.034-3
+6.034-3.12 | In Japan | | parentid:6.034-3
+6.034-3.13 | Edinburgh's ``FREDDY" | | parentid:6.034-3
+6.034-3.14 | Knowledge Representation and Reasoning | | parentid:6.034-3
+6.034-3.15 | Deductions in Symbolic Logic | | parentid:6.034-3
+6.034-3.16 | The Situation Calculus | | parentid:6.034-3
+6.034-3.17 | Logic Programming | | parentid:6.034-3
+6.034-3.18 | Semantic Networks | | parentid:6.034-3
+6.034-3.19 | Scripts and Frames | | parentid:6.034-3
+6.034-3.20 | Mobile Robots | | parentid:6.034-3
+6.034-3.21 | Shakey, the SRI Robot | | parentid:6.034-3
+6.034-3.22 | A* A New Heuristic Search Method | | parentid:6.034-3
+6.034-3.23 | Robust Action Execution | | parentid:6.034-3
+6.034-3.24 | STRIPS A New Planning Method | | parentid:6.034-3
+6.034-3.25 | Learning and Executing Plans | | parentid:6.034-3
+6.034-3.26 | Shakey's Vision Routines | | parentid:6.034-3
+6.034-3.27 | Some Experiments with Shakey | | parentid:6.034-3
+6.034-3.28 | Shakey Runs into Funding Troubles | | parentid:6.034-3
+6.034-3.29 | The Stanford Cart | | parentid:6.034-3
+6.034-3.30 | Progress in Natural Language Processing | | parentid:6.034-3
+6.034-3.31 | Machine Translation | | parentid:6.034-3
+6.034-3.32 | Understanding | | parentid:6.034-3
+6.034-3.33 | SHRDLU | | parentid:6.034-3
+6.034-3.34 | LUNAR | | parentid:6.034-3
+6.034-3.35 | Augmented Transition Networks | | parentid:6.034-3
+6.034-3.36 | GUS | | parentid:6.034-3
+6.034-3.37 | Game Playing | | parentid:6.034-3
+6.034-3.38 | The Dendral Project | | parentid:6.034-3
+6.034-3.39 | Conferences, Books, and Funding | | parentid:6.034-3
+6.034-4 | Applications and Specializations 1970s to Early 1980s | | parentid:6.034
+6.034-4.1 | Speech Recognition and Understanding Systems | | parentid:6.034-4
+6.034-4.2 | Speech Processing | | parentid:6.034-4
+6.034-4.3 | The Speech Understanding Study Group | | parentid:6.034-4
+6.034-4.4 | The DARPA Speech Understanding Research Program | | parentid:6.034-4
+6.034-4.5 | Work at BBN | | parentid:6.034-4
+6.034-4.6 | Work at CMU | | parentid:6.034-4
+6.034-4.7 | Summary and Impact of the SUR Program | | parentid:6.034-4
+6.034-4.8 | Subsequent Work in Speech Recognition | | parentid:6.034-4
+6.034-4.9 | Consulting Systems | | parentid:6.034-4
+6.034-4.10 | The SRI Computer-Based Consultant | | parentid:6.034-4
+6.034-4.11 | Expert Systems | | parentid:6.034-4
+6.034-4.12 | MYCIN | | parentid:6.034-4
+6.034-4.13 | PROSPECTOR | | parentid:6.034-4
+6.034-4.14 | Other Expert Systems | | parentid:6.034-4
+6.034-4.15 | Expert Companies | | parentid:6.034-4
+6.034-4.16 | Understanding Queries and Signals | | parentid:6.034-4
+6.034-4.17 | The Setting | | parentid:6.034-4
+6.034-4.18 | Natural Language Access to Computer Systems | | parentid:6.034-4
+6.034-4.19 | LIFER | | parentid:6.034-4
+6.034-4.20 | CHAT-80 | | parentid:6.034-4
+6.034-4.21 | Transportable Natural Language Query Systems | | parentid:6.034-4
+6.034-4.22 | HASP/SIAP | | parentid:6.034-4
+6.034-4.23 | Progress in Computer Vision | | parentid:6.034-4
+6.034-4.24 | Beyond Line-Finding | | parentid:6.034-4
+6.034-4.25 | Shape from Shading | | parentid:6.034-4
+6.034-4.26 | The 212-D Sketch | | parentid:6.034-4
+6.034-4.27 | Intrinsic Images | | parentid:6.034-4
+6.034-4.28 | Finding Objects in Scenes | | parentid:6.034-4
+6.034-4.29 | Reasoning about Scenes | | parentid:6.034-4
+6.034-4.30 | Using Templates and Models | | parentid:6.034-4
+6.034-4.31 | DARPA's Image Understanding Program | | parentid:6.034-4
+6.034-4.32 | Boomtimes | | parentid:6.034-4
+6.034-5 | ``New-Generation" Projects | | parentid:6.034
+6.034-5.1 | The Japanese Create a Stir | | parentid:6.034-5
+6.034-5.2 | The Fifth-Generation Computer Systems Project | | parentid:6.034-5
+6.034-5.3 | Some Impacts of the Japanese Project | | parentid:6.034-5
+6.034-5.4 | The Microelectronics and Computer Technology Corporation | | parentid:6.034-5
+6.034-5.5 | The Alvey Program | | parentid:6.034-5
+6.034-5.6 | ESPRIT | | parentid:6.034-5
+6.034-5.7 | DARPA's Strategic Computing Program | | parentid:6.034-5
+6.034-5.8 | The Strategic Computing Plan | | parentid:6.034-5
+6.034-5.9 | Major Projects | | parentid:6.034-5
+6.034-5.10 | The Pilot's Associate | | parentid:6.034-5
+6.034-5.11 | Battle Management Systems | | parentid:6.034-5
+6.034-5.12 | Autonomous Vehicles | | parentid:6.034-5
+6.034-5.13 | AI Technology Base | | parentid:6.034-5
+6.034-5.14 | Computer Vision | | parentid:6.034-5
+6.034-5.15 | Speech Recognition and Natural Language Processing | | parentid:6.034-5
+6.034-5.16 | Expert Systems | | parentid:6.034-5
+6.034-5.17 | Assessment | | parentid:6.034-5
+6.034-6 | Entr'acte | | parentid:6.034
+6.034-6.1 | Speed Bumps | | parentid:6.034-6
+6.034-6.2 | Opinions from Various Onlookers | | parentid:6.034-6
+6.034-6.3 | The Mind Is Not a Machine | | parentid:6.034-6
+6.034-6.4 | The Mind Is Not a Computer | | parentid:6.034-6
+6.034-6.5 | Differences between Brains and Computers | | parentid:6.034-6
+6.034-6.6 | But Should We? | | parentid:6.034-6
+6.034-6.7 | Other Opinions | | parentid:6.034-6
+6.034-6.8 | Problems of Scale | | parentid:6.034-6
+6.034-6.9 | The Combinatorial Explosion | | parentid:6.034-6
+6.034-6.10 | Complexity Theory | | parentid:6.034-6
+6.034-6.11 | A Sober Assessment | | parentid:6.034-6
+6.034-6.12 | Acknowledged Shortcomings | | parentid:6.034-6
+6.034-6.13 | The ``AI Winter" | | parentid:6.034-6
+6.034-6.14 | Controversies and Alternative Paradigms | | parentid:6.034-6
+6.034-6.15 | About Logic | | parentid:6.034-6
+6.034-6.16 | Uncertainty | | parentid:6.034-6
+6.034-6.17 | ``Kludginess" | | parentid:6.034-6
+6.034-6.18 | About Behavior | | parentid:6.034-6
+6.034-6.19 | Behavior-Based Robots | | parentid:6.034-6
+6.034-6.20 | Teleo-Reactive Programs | | parentid:6.034-6
+6.034-6.21 | Brain-Style Computation | | parentid:6.034-6
+6.034-6.22 | Neural Networks | | parentid:6.034-6
+6.034-6.23 | Dynamical Processes | | parentid:6.034-6
+6.034-6.24 | Simulating Evolution | | parentid:6.034-6
+6.034-6.25 | Scaling Back AI's Goals | | parentid:6.034-6
+6.034-7 | The Growing Armamentarium From the 1980s Onward | | parentid:6.034
+6.034-7.1 | Reasoning and Representation | | parentid:6.034-7
+6.034-7.2 | Nonmonotonic or Defeasible Reasoning | | parentid:6.034-7
+6.034-7.3 | Qualitative Reasoning | | parentid:6.034-7
+6.034-7.4 | Semantic Networks | | parentid:6.034-7
+6.034-7.5 | Description Logics | | parentid:6.034-7
+6.034-7.6 | WordNet | | parentid:6.034-7
+6.034-7.7 | Cyc | | parentid:6.034-7
+6.034-7.8 | Other Approaches to Reasoning and Representation | | parentid:6.034-7
+6.034-7.9 | Solving Constraint Satisfaction Problems | | parentid:6.034-7
+6.034-7.10 | Solving Problems Using Propositional Logic | | parentid:6.034-7
+6.034-7.11 | Systematic Methods | | parentid:6.034-7
+6.034-7.12 | Local Search Methods | | parentid:6.034-7
+6.034-7.13 | Applications of SAT Solvers | | parentid:6.034-7
+6.034-7.14 | Representing Text as Vectors | | parentid:6.034-7
+6.034-7.15 | Latent Semantic Analysis | | parentid:6.034-7
+6.034-7.16 | Bayesian Networks | | parentid:6.034-7
+6.034-7.17 | Representing Probabilities in Networks | | parentid:6.034-7
+6.034-7.18 | Automatic Construction of Bayesian Networks | | parentid:6.034-7
+6.034-7.19 | Probabilistic Relational Models | | parentid:6.034-7
+6.034-7.20 | Temporal Bayesian Networks | | parentid:6.034-7
+6.034-7.21 | Machine Learning | | parentid:6.034-7
+6.034-7.22 | Memory-Based Learning | | parentid:6.034-7
+6.034-7.23 | Case-Based Reasoning | | parentid:6.034-7
+6.034-7.24 | Decision Trees | | parentid:6.034-7
+6.034-7.25 | Data Mining and Decision Trees | | parentid:6.034-7
+6.034-7.26 | Constructing Decision Trees | | parentid:6.034-7
+6.034-7.27 | Neural Networks | | parentid:6.034-7
+6.034-7.28 | The Backprop Algorithm | | parentid:6.034-7
+6.034-7.29 | NETtalk | | parentid:6.034-7
+6.034-7.30 | ALVINN | | parentid:6.034-7
+6.034-7.31 | Unsupervised Learning | | parentid:6.034-7
+6.034-7.32 | Reinforcement Learning | | parentid:6.034-7
+6.034-7.33 | Learning Optimal Policies | | parentid:6.034-7
+6.034-7.34 | TD-GAMMON | | parentid:6.034-7
+6.034-7.35 | Other Applications | | parentid:6.034-7
+6.034-7.36 | Enhancements | | parentid:6.034-7
+6.034-7.37 | Natural Languages and Natural Scenes | | parentid:6.034-7
+6.034-7.38 | Natural Language Processing | | parentid:6.034-7
+6.034-7.39 | Grammars and Parsing Algorithms | | parentid:6.034-7
+6.034-7.40 | Statistical NLP | | parentid:6.034-7
+6.034-7.41 | Computer Vision | | parentid:6.034-7
+6.034-7.42 | Recovering Surface and Depth Information | | parentid:6.034-7
+6.034-7.43 | Tracking Moving Objects | | parentid:6.034-7
+6.034-7.44 | Hierarchical Models | | parentid:6.034-7
+6.034-7.45 | Image Grammars | | parentid:6.034-7
+6.034-7.46 | Intelligent System Architectures | | parentid:6.034-7
+6.034-7.47 | Computational Architectures | | parentid:6.034-7
+6.034-7.48 | Three-Layer Architectures | | parentid:6.034-7
+6.034-7.49 | Multilayered Architectures | | parentid:6.034-7
+6.034-7.50 | The BDI Architecture | | parentid:6.034-7
+6.034-7.51 | Architectures for Groups of Agents | | parentid:6.034-7
+6.034-7.52 | Cognitive Architectures | | parentid:6.034-7
+6.034-7.53 | Production Systems | | parentid:6.034-7
+6.034-7.54 | ACT-R | | parentid:6.034-7
+6.034-7.55 | SOAR | | parentid:6.034-7
+6.034-8 | Modern AI Today and Tomorrow | | parentid:6.034
+6.034-8.1 | Extraordinary Achievements | | parentid:6.034-8
+6.034-8.2 | Games | | parentid:6.034-8
+6.034-8.3 | Chess | | parentid:6.034-8
+6.034-8.4 | Checkers | | parentid:6.034-8
+6.034-8.5 | Other Games | | parentid:6.034-8
+6.034-8.6 | Robot Systems | | parentid:6.034-8
+6.034-8.7 | Remote Agent in Deep Space 1 | | parentid:6.034-8
+6.034-8.8 | Driverless Automobiles | | parentid:6.034-8
+6.034-8.9 | Ubiquitous Artificial Intelligence | | parentid:6.034-8
+6.034-8.10 | AI at Home | | parentid:6.034-8
+6.034-8.11 | Advanced Driver Assistance Systems | | parentid:6.034-8
+6.034-8.12 | Route Finding in Maps | | parentid:6.034-8
+6.034-8.13 | You Might Also Like… | | parentid:6.034-8
+6.034-8.14 | Computer Games | | parentid:6.034-8
+6.034-8.15 | Smart Tools | | parentid:6.034-8
+6.034-8.16 | In Medicine | | parentid:6.034-8
+6.034-8.17 | For Scheduling | | parentid:6.034-8
+6.034-8.18 | For Automated Trading | | parentid:6.034-8
+6.034-8.19 | In Business Practices | | parentid:6.034-8
+6.034-8.20 | In Translating Languages | | parentid:6.034-8
+6.034-8.21 | For Automating Invention | | parentid:6.034-8
+6.034-8.22 | For Recognizing Faces | | parentid:6.034-8
+6.034-9 | The Quest Continues | | parentid:6.034
+6.034-9.1 | In the Labs | | parentid:6.034-9
+6.034-9.2 | Specialized Systems | | parentid:6.034-9
+6.034-9.3 | Broadly Applicable Systems | | parentid:6.034-9
+6.034-9.4 | Toward Human-Level Artificial Intelligence | | parentid:6.034-9
+6.034-9.5 | Eye on the Prize | | parentid:6.034-9
+6.034-9.6 | Controversies | | parentid:6.034-9
+6.034-9.7 | How Do We Get It? | | parentid:6.034-9
+6.034-9.8 | Some Possible Consequences of HLAI | | parentid:6.034-9
+6.034-9.9 | Summing Up | | parentid:6.034-9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6.823-1 | A Tour of Computer Systems | | parentid:6.823
+6.823-1.1 | Information Is Bits + Context | | parentid:6.823-1
+6.823-1.2 | Programs Are Translated by Other Programs into Different Forms | | parentid:6.823-1
+6.823-1.3 | It Pays to Understand How Compilation Systems Work | | parentid:6.823-1
+6.823-1.4 | Processors. Read and Interpret Instructions Stored in Memory | | parentid:6.823-1
+6.823-1.5 | Caches Matter | | parentid:6.823-1
+6.823-1.6 | Storage Devices Form a Hierarchy | | parentid:6.823-1
+6.823-1.7 | The Operating System Manages the Hardware | | parentid:6.823-1
+6.823-1.8 | Systems Communicate with Other Systems Using Networks | | parentid:6.823-1
+6.823-1.9 | Important Themes | | parentid:6.823-1
+6.823-1.10 | Summary | | parentid:6.823-1
+6.823-2 | Program Structure and Execution | | parentid:6.823
+6.823-2.1 | Representing and Manipulating Information | | parentid:6.823-2
+6.823-2.1.1 | lnformation Storage | | parentid:6.823-2.1
+6.823-2.1.2 | Integer Representations | | parentid:6.823-2.1
+6.823-2.1.3 | Integer Arithmetic | | parentid:6.823-2.1
+6.823-2.1.4 | Floating Point | | parentid:6.823-2.1
+6.823-2.1.5 | Summary | | parentid:6.823-2.1
+6.823-2.2 | Machine-Level Representation of Programs | | parentid:6.823-2
+6.823-2.2.1 | A Historical Perspective | | parentid:6.823-2.2
+6.823-2.2.2 | Program Encodings | | parentid:6.823-2.2
+6.823-2.2.3 | Data Formats | | parentid:6.823-2.2
+6.823-2.2.4 | Accessing Information | | parentid:6.823-2.2
+6.823-2.2.5 | Arithmetic and Logical Operations | | parentid:6.823-2.2
+6.823-2.2.6 | Control | | parentid:6.823-2.2
+6.823-2.2.7 | Procedures | | parentid:6.823-2.2
+6.823-2.2.8 | Array Allocation and Access | | parentid:6.823-2.2
+6.823-2.2.9 | Heterogeneous Data Structures | | parentid:6.823-2.2
+6.823-2.2.10 | Combining Control and Data in Machine-Level Programs | | parentid:6.823-2.2
+6.823-2.2.11 | F!oating-Point Code | | parentid:6.823-2.2
+6.823-2.2.12 | Summary | | parentid:6.823-2.2
+6.823-2.3 | Processor Architecture | | parentid:6.823-2
+6.823-2.3.1 | The Y86-64 Instruction Set Architecture | | parentid:6.823-2.3
+6.823-2.3.2 | Logic Design and the Hardware Control Language HCL | | parentid:6.823-2.3
+6.823-2.3.3 | Sequential Y86-64 Implementations | | parentid:6.823-2.3
+6.823-2.3.4 | General Principles of Pipelining | | parentid:6.823-2.3
+6.823-2.3.5 | Pipelined Y86-64 Implementations | | parentid:6.823-2.3
+6.823-2.3.6 | Summary | | parentid:6.823-2.3
+6.823-2.4 | Optimizing Program Performance | | parentid:6.823-2
+6.823-2.4.1 | Capabilities and Limitations of Optimizing Compilers | | parentid:6.823-2.4
+6.823-2.4.2 | Expressing Program Performance | | parentid:6.823-2.4
+6.823-2.4.3 | Program Example | | parentid:6.823-2.4
+6.823-2.4.4 | Eliminating Loop Inefficiencies | | parentid:6.823-2.4
+6.823-2.4.5 | Reducing Procedure Calls | | parentid:6.823-2.4
+6.823-2.4.6 | Eliminating Unneeded Memory References | | parentid:6.823-2.4
+6.823-2.4.7 | Understanding Modern Processors | | parentid:6.823-2.4
+6.823-2.4.8 | Loop Unrolling | | parentid:6.823-2.4
+6.823-2.4.9 | Enhancing Parallelism | | parentid:6.823-2.4
+6.823-2.4.10 | Summary of Results for Optimizing Combining Code | | parentid:6.823-2.4
+6.823-2.4.11 | Some Limiting Factors | | parentid:6.823-2.4
+6.823-2.4.12 | Understanding Memory Performance | | parentid:6.823-2.4
+6.823-2.4.13 | Life in the Real World Performance Improvement Techniques | | parentid:6.823-2.4
+6.823-2.4.14 | Identifying and Eliminating Performance Bottlenecks | | parentid:6.823-2.4
+6.823-2.4.15 | Summary | | parentid:6.823-2.4
+6.823-2.5 | The Memory Hierarchy | | parentid:6.823-2
+6.823-2.5.1 | Storage Technologies | | parentid:6.823-2.5
+6.823-2.5.2 | Locality | | parentid:6.823-2.5
+6.823-2.5.3 | The Memory Hierarchy | | parentid:6.823-2.5
+6.823-2.5.4 | Cache Memories | | parentid:6.823-2.5
+6.823-2.5.5 | Writing Cache-Friendly Code | | parentid:6.823-2.5
+6.823-2.5.6 | Putting It Together The Impact of Caches on Program Performance | | parentid:6.823-2.5
+6.823-2.5.7 | Summary | | parentid:6.823-2.5
+6.823-3 | Runinng Programs on a System | | parentid:6.823
+6.823-3.1 | Linking | | parentid:6.823-3
+6.823-3.1.1 | Compiler Drivers | | parentid:6.823-3.1
+6.823-3.1.2 | Static Linking | | parentid:6.823-3.1
+6.823-3.1.3 | Object Files | | parentid:6.823-3.1
+6.823-3.1.4 | Relocatable Object Files | | parentid:6.823-3.1
+6.823-3.1.5 | Symbols and Symbol Tables | | parentid:6.823-3.1
+6.823-3.1.6 | Symbol Resolution | | parentid:6.823-3.1
+6.823-3.1.7 | Relocation | | parentid:6.823-3.1
+6.823-3.1.8 | Executable Object Files | | parentid:6.823-3.1
+6.823-3.1.9 | Loading Executable Object Files | | parentid:6.823-3.1
+6.823-3.1.10 | Dynamic Linking with Shared Libraries | | parentid:6.823-3.1
+6.823-3.1.11 | Loading and Linking Shared Libraries from Applications | | parentid:6.823-3.1
+6.823-3.1.12 | Position-Independent Code (PIC) | | parentid:6.823-3.1
+6.823-3.1.13 | Library lnterpositioning | | parentid:6.823-3.1
+6.823-3.1.14 | Tools for Manipulating Object Files | | parentid:6.823-3.1
+6.823-3.1.15 | Summary | | parentid:6.823-3.1
+6.823-3.2 | Exceptional Control Flow | | parentid:6.823-3
+6.823-3.2.1 | Exceptions | | parentid:6.823-3.2
+6.823-3.2.2 | Processes | | parentid:6.823-3.2
+6.823-3.2.3 | System Call Error Handling | | parentid:6.823-3.2
+6.823-3.2.4 | Process Control | | parentid:6.823-3.2
+6.823-3.2.5 | Signals | | parentid:6.823-3.2
+6.823-3.2.6 | Nonlocal Jumps | | parentid:6.823-3.2
+6.823-3.2.7 | Tools for Manipulating Processes | | parentid:6.823-3.2
+6.823-3.2.8 | Summary | | parentid:6.823-3.2
+6.823-3.3 | Virtual Memory | | parentid:6.823-3
+6.823-3.3.1 | Physical and Virtual Addressing | | parentid:6.823-3.3
+6.823-3.3.2 | Address Spaces | | parentid:6.823-3.3
+6.823-3.3.3 | VM as a Tool for Caching | | parentid:6.823-3.3
+6.823-3.3.4 | VM as a Tool for Memory Management | | parentid:6.823-3.3
+6.823-3.3.5 | VM as a Tool for Memory Protection | | parentid:6.823-3.3
+6.823-3.3.6 | Address Translation | | parentid:6.823-3.3
+6.823-3.3.7 | Case Study The Intel Core i7/Linux Memory System | | parentid:6.823-3.3
+6.823-3.3.8 | Memory Mapping | | parentid:6.823-3.3
+6.823-3.3.9 | Dynamic Memory Allocation | | parentid:6.823-3.3
+6.823-3.3.10 | Garbage Collection | | parentid:6.823-3.3
+6.823-3.3.11 | Common Memory-Related Bugs in C Programs | | parentid:6.823-3.3
+6.823-3.3.12 | Summary | | parentid:6.823-3.3
+6.823-4 | Interaction and Communication between Programs | | parentid:6.823
+6.823-4.1 | System-Level I/O | | parentid:6.823-4
+6.823-4.1.1 | Unix I/O | | parentid:6.823-4.1
+6.823-4.1.2 | Files | | parentid:6.823-4.1
+6.823-4.1.3 | Opening and Closing Files | | parentid:6.823-4.1
+6.823-4.1.4 | Reading and Writing Files | | parentid:6.823-4.1
+6.823-4.1.5 | Robust Reading and Writing with the RIO Package | | parentid:6.823-4.1
+6.823-4.1.6 | Reading File Metadata | | parentid:6.823-4.1
+6.823-4.1.7 | Reading Directory Contents | | parentid:6.823-4.1
+6.823-4.1.8 | Sharing Files | | parentid:6.823-4.1
+6.823-4.1.9 | I/O Redirection | | parentid:6.823-4.1
+6.823-4.1.10 | Standard I/O | | parentid:6.823-4.1
+6.823-4.1.11 | Putting It Together Which I/O Functions Should I Use? | | parentid:6.823-4.1
+6.823-4.1.12 | Summary | | parentid:6.823-4.1
+6.823-4.2 | Network Programming | | parentid:6.823-4
+6.823-4.2.1 | The Client-Server Programming Model | | parentid:6.823-4.2
+6.823-4.2.2 | Networks | | parentid:6.823-4.2
+6.823-4.2.3 | The Global IP Internet | | parentid:6.823-4.2
+6.823-4.2.4 | The Sockets Interface | | parentid:6.823-4.2
+6.823-4.2.5 | Web Servers | | parentid:6.823-4.2
+6.823-4.2.6 | Putting It Together The TINY Web Server | | parentid:6.823-4.2
+6.823-4.2.7 | Summary | | parentid:6.823-4.2
+6.823-4.3 | Concurrent Programming | | parentid:6.823-4
+6.823-4.3.1 | Concurrent Programming with Processes | | parentid:6.823-4.3
+6.823-4.3.2 | Concurrent Programming with I/O Multiplexing | | parentid:6.823-4.3
+6.823-4.3.3 | Concurrent Programming with Threads | | parentid:6.823-4.3
+6.823-4.3.4 | Shared Variables in Threaded Programs | | parentid:6.823-4.3
+6.823-4.3.5 | Synchronizing Threads with Semaphores | | parentid:6.823-4.3
+6.823-4.3.6 | Using Threads for Parallelism | | parentid:6.823-4.3
+6.823-4.3.7 | Other Concurrency Issues | | parentid:6.823-4.3
+6.823-4.3.8 | Summary | | parentid:6.823-4.3
+6.823-5-AppendixA | Error Handling | | parentid:6.823
+6.878-1 | Analyzing DNA, RNA, and Protein Sequences | | parentid:6.878
+6.878-1.1 | Introduction | | parentid:6.878-1
+6.878-1.2 | Access to Sequence Data and Related Information | | parentid:6.878-1
+6.878-1.3 | Pairwise Sequence Alignment | | parentid:6.878-1
+6.878-1.4 | Basic Local Alignment Search Tool (BLAST) | | parentid:6.878-1
+6.878-1.5 | Advanced Database Searching | | parentid:6.878-1
+6.878-1.6 | Multiple Sequence Alignment | | parentid:6.878-1
+6.878-1.7 | Molecular Phylogeny and Evolution | | parentid:6.878-1
+6.878-2 | Genomewide Analysis of DNA, RNA, and Protein | | parentid:6.878
+6.878-2.1 | DNA: The Eukaryotic Chromosome | | parentid:6.878-2
+6.878-2.2 | Analysis of Next-Generation Sequence Data | | parentid:6.878-2
+6.878-2.3 | Bioinformatic Approaches to Ribonucleic Acid (RNA) | | parentid:6.878-2
+6.878-2.4 | Gene Expression: Microarray and RNA-seq Data Analysis | | parentid:6.878-2
+6.878-2.5 | Protein Analysis and Proteomics | | parentid:6.878-2
+6.878-2.6 | Protein Structure | | parentid:6.878-2
+6.878-2.7 | Functional Genomics | | parentid:6.878-2
+6.878-3 | Genome Analysis | | parentid:6.878
+6.878-3.1 | Genomes Across the Tree of Life | | parentid:6.878-3
+6.878-3.2 | Completed Genomes: Viruses | | parentid:6.878-3
+6.878-3.3 | Completed Genomes: Bacteria and Archaea | | parentid:6.878-3
+6.878-3.4 | Eukaryotic Genomes: Fungi | | parentid:6.878-3
+6.878-3.5 | Eukaryotic Genomes: From Parasites to Primates | | parentid:6.878-3
+6.878-3.6 | MYA: The Mouse and Rat | | parentid:6.878-3
+6.878-3.7 | Human Genome | | parentid:6.878-3
+6.878-3.8 | Human Chromosomes | | parentid:6.878-3
+6.878-3.9 | Human Disease | | parentid:6.878-3

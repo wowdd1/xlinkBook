@@ -1,0 +1,634 @@
+9.04-1 | Methods Used to Assess Visual Perception and Brain Function | | parentid:9.04
+9.04-2 | Basic Wiring of the Visual System | | parentid:9.04
+9.04-3 | The Retina | | parentid:9.04
+9.04-4 | The Lateral Geniculate Nucleus | | parentid:9.04
+9.04-5 | The Striate Cortex | | parentid:9.04
+9.04-6 | Extrastriate Cortex | | parentid:9.04
+9.04-7 | The ON and OFF Channels | | parentid:9.04
+9.04-8 | The Midget and Parasol Systems | | parentid:9.04
+9.04-9 | Color Vision | | parentid:9.04
+9.04-10 | Adaptation | | parentid:9.04
+9.04-11 | Motion Perception | | parentid:9.04
+9.04-12 | Depth Perception | | parentid:9.04
+9.04-13 | Pattern Perception | | parentid:9.04
+9.04-14 | Visual Illusions | | parentid:9.04
+9.04-15 | Eye-Movement Control | | parentid:9.04
+9.04-16 | Visual Prosthetics | | parentid:9.04
+9.583-1 | Introduction | | parentid:9.583
+9.583-1.1 | A brief overview of fMRI | | parentid:9.583-1
+9.583-1.2 | The emergence of cognitive neuroscience | | parentid:9.583-1
+9.583-1.3 | A brief history of fMRI analysis | | parentid:9.583-1
+9.583-1.4 | Major components of fMRI analysis | | parentid:9.583-1
+9.583-1.5 | Software packages for fMRI analysis | | parentid:9.583-1
+9.583-1.6 | Choosing a software package | | parentid:9.583-1
+9.583-1.7 | Overview of processing streams | | parentid:9.583-1
+9.583-1.8 | Prerequisites for fMRI analysis | | parentid:9.583-1
+9.583-2 | Image processing basics | | parentid:9.583
+9.583-2.1 | What is an image? | | parentid:9.583-2
+9.583-2.2 | Coordinate systems | | parentid:9.583-2
+9.583-2.3 | Spatial transformations | | parentid:9.583-2
+9.583-2.4 | Filtering and Fourier analysis | | parentid:9.583-2
+9.583-3 | Preprocessing fMRI data | | parentid:9.583
+9.583-3.1 | Introduction | | parentid:9.583-3
+9.583-3.2 | An overview of fMRI preprocessing | | parentid:9.583-3
+9.583-3.3 | Quality control techniques | | parentid:9.583-3
+9.583-3.4 | Distortion correction | | parentid:9.583-3
+9.583-3.5 | Slice timing correction | | parentid:9.583-3
+9.583-3.6 | Motion correction | | parentid:9.583-3
+9.583-3.7 | Spatial smoothing | | parentid:9.583-3
+9.583-4 | Spatial normalization | | parentid:9.583
+9.583-4.1 | Introduction | | parentid:9.583-4
+9.583-4.2 | Anatomical variability | | parentid:9.583-4
+9.583-4.3 | Coordinate spaces for neuroimaging | | parentid:9.583-4
+9.583-4.4 | Atlases and templates | | parentid:9.583-4
+9.583-4.4.1 | The Talairach atlas | | parentid:9.583-4.4
+9.583-4.4.2 | The MNI templates | | parentid:9.583-4.4
+9.583-4.5 | Preprocessing of anatomical images | | parentid:9.583-4
+9.583-4.5.1 | Bias field correction | | parentid:9.583-4.5
+9.583-4.5.2 | Brain extraction | | parentid:9.583-4.5
+9.583-4.5.3 | Tissue segmentation | | parentid:9.583-4.5
+9.583-4.6 | Processing streams for fMRI normalization | | parentid:9.583-4
+9.583-4.7 | Spatial normalization methods | | parentid:9.583-4
+9.583-4.7.1 | Landmark-based methods | | parentid:9.583-4.7
+9.583-4.7.2 | Volume-based registration | | parentid:9.583-4.7
+9.583-4.7.3 | Computational anatomy | | parentid:9.583-4.7
+9.583-4.8 | Surface-based methods | | parentid:9.583-4
+9.583-4.9 | Choosing a spatial normalization method | | parentid:9.583-4
+9.583-4.10 | Quality control for spatial normalization | | parentid:9.583-4
+9.583-4.11 | Troubleshooting normalization problems | | parentid:9.583-4
+9.583-4.12 | Normalizing data from special populations | | parentid:9.583-4
+9.583-5 | Statistical modeling: Single subject analysis | | parentid:9.583
+9.583-5.1 | The BOLD signal | | parentid:9.583-5
+9.583-5.2 | The BOLD noise | | parentid:9.583-5
+9.583-5.2.1 | Characterizing the noise | | parentid:9.583-5.2
+9.583-5.2.2 | High-pass filtering | | parentid:9.583-5.2
+9.583-5.2.3 | Prewhitening | | parentid:9.583-5.2
+9.583-5.2.4 | Precoloring | | parentid:9.583-5.2
+9.583-5.3 | Study design and modeling strategies | | parentid:9.583-5
+9.583-6 | Statistical modeling: Group analysis | | parentid:9.583
+9.583-6.1 | The mixed effects model | | parentid:9.583-6
+9.583-6.1.1 | Motivation | | parentid:9.583-6.1
+9.583-6.1.2 | Mixed effects modeling approach used in fMRI | | parentid:9.583-6.1
+9.583-6.1.3 | Fixed effects models | | parentid:9.583-6.1
+9.583-6.2 | Mean centering continuous covariates | | parentid:9.583-6
+9.583-6.2.1 | Single group | | parentid:9.583-6.2
+9.583-6.2.2 | Multiple groups | | parentid:9.583-6.2
+9.583-7 | Statistical inference on images | | parentid:9.583
+9.583-7.1 | Basics of statistical inference | | parentid:9.583-7
+9.583-7.2 | Features of interest in images | | parentid:9.583-7
+9.583-7.3 | The multiple testing problem and solutions | | parentid:9.583-7
+9.583-7.3.1 | Familywise error rate | | parentid:9.583-7.3
+9.583-7.3.1.1 | Bonferroni correction | | parentid:9.583-7.3.1
+9.583-7.3.1.2 | Random field theory | | parentid:9.583-7.3.1
+9.583-7.3.1.3 | Parametric simulations | | parentid:9.583-7.3.1
+9.583-7.3.1.4 | Nonparametric approaches | | parentid:9.583-7.3.1
+9.583-7.3.2 | False discovery rate | | parentid:9.583-7.3
+9.583-7.3.3 | Inference example | | parentid:9.583-7.3
+9.583-7.4 | Combining inferences: masking and conjunctions | | parentid:9.583-7
+9.583-7.5 | Use of region of interest masks | | parentid:9.583-7
+9.583-7.6 | Computing statistical power | | parentid:9.583-7
+9.583-8 | Modeling brain connectivity | | parentid:9.583
+9.583-8.1 | Introduction | | parentid:9.583-8
+9.583-8.2 | Functional connectivity | | parentid:9.583-8
+9.583-8.2.1 | Seed voxel correlation: Between-subjects | | parentid:9.583-8.2
+9.583-8.2.2 | Seed voxel correlation: Within-subjects | | parentid:9.583-8.2
+9.583-8.2.2.1 | Avoiding activation-induced correlations | | parentid:9.583-8.2.2
+9.583-8.2.3 | Beta-series correlation | | parentid:9.583-8.2
+9.583-8.2.4 | Psychophysiological interaction | | parentid:9.583-8.2
+9.583-8.2.4.1 | Creating the PPI regressor | | parentid:9.583-8.2.4
+9.583-8.2.4.2 | Potential problems with PPI | | parentid:9.583-8.2.4
+9.583-8.2.5 | Multivariate decomposition | | parentid:9.583-8.2
+9.583-8.2.5.1 | Principal components analysis | | parentid:9.583-8.2.5
+9.583-8.2.5.2 | Independent components analysis | | parentid:9.583-8.2.5
+9.583-8.2.5.3 | Performing ICA/PCA on group data | | parentid:9.583-8.2.5
+9.583-8.2.6 | Partial least squares | | parentid:9.583-8.2
+9.583-8.3 | Effective connectivity | | parentid:9.583-8
+9.583-8.4 | Network analysis and graph theory | | parentid:9.583-8
+9.583-8.4.1 | Small world networks | | parentid:9.583-8.4
+9.583-8.4.2 | Modeling networks with resting-state fMRI data | | parentid:9.583-8.4
+9.583-8.4.3 | Preprocessing for connectivity analysis | | parentid:9.583-8.4
+9.583-9 | Multivoxel pattern analysis and machine learning | | parentid:9.583
+9.583-9.1 | Introduction to pattern classification | | parentid:9.583-9
+9.583-9.1.1 | An overview of the machine learning approach | | parentid:9.583-9.1
+9.583-9.1.1.1 | Features, observations, and the “curse of dimensionality” | | parentid:9.583-9.1.1
+9.583-9.1.1.2 | Overfitting | | parentid:9.583-9.1.1
+9.583-9.2 | Applying classifiers to fMRI data | | parentid:9.583-9
+9.583-9.3 | Data extraction | | parentid:9.583-9
+9.583-9.4 | Feature selection | | parentid:9.583-9
+9.583-9.5 | Training and testing the classifier | | parentid:9.583-9
+9.583-9.5.1 | Feature selection/elimination | | parentid:9.583-9.5
+9.583-9.5.2 | Classifiers for fMRI data | | parentid:9.583-9.5
+9.583-9.5.2.1 | Linear vs. nonlinear classifiers | | parentid:9.583-9.5.2
+9.583-9.5.2.2 | Computational limitations | | parentid:9.583-9.5.2
+9.583-9.5.2.3 | Tendency to overfit | | parentid:9.583-9.5.2
+9.583-9.5.3 | Which classifier is best? | | parentid:9.583-9.5
+9.583-9.5.4 | Assessing classifier accuracy | | parentid:9.583-9.5
+9.583-9.6 | Characterizing the classifier | | parentid:9.583-9
+9.583-10 | Visualizing, localizing, and reporting fMRI data | | parentid:9.583
+9.583-10.1 | Visualizing activation data | | parentid:9.583-10
+9.583-10.2 | Localizing activation | | parentid:9.583-10
+9.583-10.2.1 | The Talairach atlas | | parentid:9.583-10.2
+9.583-10.2.2 | Anatomical atlases | | parentid:9.583-10.2
+9.583-10.2.3 | Probabilistic atlases | | parentid:9.583-10.2
+9.583-10.2.4 | Automated anatomical labeling | | parentid:9.583-10.2
+9.583-10.3 | Localizing and reporting activation | | parentid:9.583-10
+9.583-10.4 | Region of interest analysis | | parentid:9.583-10
+9.583-10.4.1 | ROIs for statistical control | | parentid:9.583-10.4
+9.583-10.4.2 | Defining ROIs | | parentid:9.583-10.4
+9.583-10.4.3 | Quantifying signals within an ROI | | parentid:9.583-10.4
+9.583-10.4.3.1 | Voxel-counting | | parentid:9.583-10.4.3
+9.583-10.4.3.2 | Extracting signals for ROI analysis | | parentid:9.583-10.4.3
+9.583-10.4.3.3 | Computing percent signal change | | parentid:9.583-10.4.3
+9.583-10.4.3.4 | Summarizing data within an ROI | | parentid:9.583-10.4.3
+9.583-A | Review of the General Linear Model | | parentid:9.583
+9.583-A.1 | Estimating GLM parameters | | parentid:9.583-A
+9.583-A.2 | Hypothesis testing | | parentid:9.583-A
+9.583-A.3 | Correlation and heterogeneous variances | | parentid:9.583-A
+9.583-A.4 | Why "general'' linear model? | | parentid:9.583-A
+9.583-B | Data organization and management | | parentid:9.583
+9.583-B.1 | Computing for fMRI analysis | | parentid:9.583-B
+9.583-B.2 | Data organization | | parentid:9.583-B
+9.583-B.3 | Project management | | parentid:9.583-B
+9.583-B.4 | Scripting for data analysis | | parentid:9.583-B
+9.583-C | Image formats | | parentid:9.583
+9.583-C.1 | Data storage | | parentid:9.583-C
+9.583-C.2 | File formats | | parentid:9.583-C
+9.20-1 | Principles of Animal Behavior | | parentid:9.20
+9.20-2 | The Evolution of Behavior | | parentid:9.20
+9.20-3 | Hormones and Neurobiology | | parentid:9.20
+9.20-4 | Molecular Genetics and Development | | parentid:9.20
+9.20-5 | Learning | | parentid:9.20
+9.20-6 | Cultural Transmission | | parentid:9.20
+9.20-7 | Sexual Selection | | parentid:9.20
+9.20-8 | Mating Systems | | parentid:9.20
+9.20-9 | Kinship | | parentid:9.20
+9.20-10 | Cooperation | | parentid:9.20
+9.20-11 | Foraging | | parentid:9.20
+9.20-12 | Antipredator Behavior | | parentid:9.20
+9.20-13 | Communication | | parentid:9.20
+9.20-14 | Habitat Selection, Territoriality, and Migration | | parentid:9.20
+9.20-15 | Aggression | | parentid:9.20
+9.20-16 | Play | | parentid:9.20
+9.20-17 | Animal Personalities | | parentid:9.20
+9.01-1 | Overall Perspective | | parentid:9.01
+9.01-1.1 | The Brain and Behavior | | parentid:9.01-1
+9.01-1.1.1 | Two Opposing Views Have Been Advanced on the Relationship Between Brain and Behavior | | parentid:9.01-1.1
+9.01-1.1.2 | The Brain Has Distinct Functional Regions | | parentid:9.01-1.1
+9.01-1.1.3 | The First Strong Evidence for Localization of Cognitive Abilities Came from Studies of Language Disorders | | parentid:9.01-1.1
+9.01-1.1.4 | Affective States Are Also Mediated by Local, Specialized Systems in the Brain | | parentid:9.01-1.1
+9.01-1.1.5 | Mental Processes Are the End Product of the Interactions Between Elementary Processing Units in the Brain | | parentid:9.01-1.1
+9.01-1.2 | Nerve Cells, Neural Circuitry, and Behavior | | parentid:9.01-1
+9.01-1.2.1 | The Nervous System Has Two Classes of Cells | | parentid:9.01-1.2
+9.01-1.2.2 | Each Nerve Cell Is Part of a Circuit That Has One or More Specific Behavioral Functions | | parentid:9.01-1.2
+9.01-1.2.3 | Signaling Is Organized in the Same Way in All Nerve Cells | | parentid:9.01-1.2
+9.01-1.2.4 | Nerve Cells Differ Most at the Molecular Level | | parentid:9.01-1.2
+9.01-1.2.5 | Neural Network Models Simulate the Brain's Parallel Processing of Information | | parentid:9.01-1.2
+9.01-1.2.6 | Neural Connections Can Be Modified by Experience | | parentid:9.01-1.2
+9.01-1.3 | Genes and Behavior | | parentid:9.01-1
+9.01-1.3.1 | Genes, Genetic Analysis, and Heritability in Behavior | | parentid:9.01-1.3
+9.01-1.3.2 | The Nature of the Gene | | parentid:9.01-1.3
+9.01-1.3.3 | Genes Are Arranged on Chromosomes | | parentid:9.01-1.3
+9.01-1.3.4 | The Relationship Between Genotype and Phenotype | | parentid:9.01-1.3
+9.01-1.3.5 | Genes Are Conserved Through Evolution | | parentid:9.01-1.3
+9.01-1.3.6 | The Role of Genes in Behavior Can Be Studied in Animal Models | | parentid:9.01-1.3
+9.01-1.3.7 | Genetic Studies of Human Behavior and Its Abnormalities | | parentid:9.01-1.3
+9.01-1.3.8 | Psychiatric Disorders and the Challenge of Understanding Multigenic Traits | | parentid:9.01-1.3
+9.01-2 | Cell and Molecular Biology of the Neuron | | parentid:9.01
+9.01-2.1 | The Cells of the Nervous System | | parentid:9.01-2
+9.01-2.1.1 | Protein Particles and Organelles Are Actively Transported Along the Axon and Dendrites | | parentid:9.01-2.1
+9.01-2.1.2 | Proteins Are Made in Neurons as in Other Secretory Cells | | parentid:9.01-2.1
+9.01-2.1.3 | Surface Membrane and Extracellular Substances Are Recycled in the Cell | | parentid:9.01-2.1
+9.01-2.1.4 | Glial Cells Play Diverse Roles in Neural Function | | parentid:9.01-2.1
+9.01-2.2 | Ion Channels | | parentid:9.01-2
+9.01-2.2.1 | Rapid Signaling in the Nervous System Depends on Ion Channels | | parentid:9.01-2.2
+9.01-2.2.2 | Ion Channels Are Proteins That Span the Cell Membrane | | parentid:9.01-2.2
+9.01-2.2.3 | Currents Through Single Ion Channels Can Be Recorded | | parentid:9.01-2.2
+9.01-2.2.4 | Ion Channels in All Cells Share Several Characteristics | | parentid:9.01-2.2
+9.01-2.2.5 | The Structure of Ion Channels Is Inferred from Biophysical, Biochemical, and Molecular Biological Studies | | parentid:9.01-2.2
+9.01-2.2.6 | Ion Channels Can Be Grouped into Gene Families | | parentid:9.01-2.2
+9.01-2.2.7 | The Closed and Open Structures of Potassium Channels Have Been Resolved by X-Ray Crystallography | | parentid:9.01-2.2
+9.01-2.2.8 | The Structural Basis of Chloride Selectivity Reveals a Close Relation Between Ion Channels and Ion Transporters | | parentid:9.01-2.2
+9.01-2.3 | Membrane Potential and the Passive Electrical Properties of the Neuron | | parentid:9.01-2
+9.01-2.3.1 | The Resting Membrane Potential Results from the Separation of Charge Across the Cell Membrane | | parentid:9.01-2.3
+9.01-2.3.2 | The Resting Membrane Potential Is Determined by Nongated and Gated Ion Channels | | parentid:9.01-2.3
+9.01-2.3.3 | The Balance of Ion Fluxes That Maintains the Resting Membrane Potential Is Abolished During the Action Potential | | parentid:9.01-2.3
+9.01-2.3.4 | The Contributions of Different Ions to the Resting Membrane Potential Can Be Quantified by the Goldman Equation | | parentid:9.01-2.3
+9.01-2.3.5 | The Functional Properties of the Neuron Can Be Represented as an Electrical Equivalent Circuit | | parentid:9.01-2.3
+9.01-2.3.6 | The Passive Electrical Properties of the Neuron Affect Electrical Signaling | | parentid:9.01-2.3
+9.01-2.4 | Propagated Signaling: The Action Potential | | parentid:9.01-2
+9.01-2.4.1 | The Action Potential Is Generated by the Flow of Ions Through Voltage-Gated Channels | | parentid:9.01-2.4
+9.01-2.4.2 | Variations in the Properties of Voltage-Gated Ion Channels Expand the Signaling Capabilities of Neurons | | parentid:9.01-2.4
+9.01-2.4.3 | The Mechanisms of Voltage-Gating and Ion Permeation Have Been Inferred from Electrophysiological Measurements | | parentid:9.01-2.4
+9.01-2.4.4 | Voltage-Gated Potassium, Sodium, and Calcium Channels Stem from a Common Ancestor and Have Similar Structures | | parentid:9.01-2.4
+9.01-3 | Synaptic Transmission | | parentid:9.01
+9.01-3.1 | Overview of Synaptic Transmission | | parentid:9.01-3
+9.01-3.1.1 | Synapses Are Either Electrical or Chemical | | parentid:9.01-3.1
+9.01-3.1.2 | Electrical Synapses Provide Instantaneous Signal Transmission | | parentid:9.01-3.1
+9.01-3.1.3 | Chemical Synapses Can Amplify Signals | | parentid:9.01-3.1
+9.01-3.2 | Signaling at the Nerve-Muscle Synapse: Directly Gated Transmission | | parentid:9.01-3
+9.01-3.2.1 | The Neuromuscular Junction Is a Well-Studied Example of Directly Gated Synaptic Transmission | | parentid:9.01-3.2
+9.01-3.2.2 | The Motor Neuron Excites the Muscle by Opening Ligand-Gated Ion Channels at the End-Plate | | parentid:9.01-3.2
+9.01-3.2.3 | The Current Through Single Acetylcholine Receptor-Channels Can Be Measured Using the Patch Clamp | | parentid:9.01-3.2
+9.01-3.2.4 | The Molecular Properties of the Acetylcholine Receptor-Channel Are Known | | parentid:9.01-3.2
+9.01-3.2.5 | Postscript: The End-Plate Current Can Be Calculated from an Equivalent Circuit | | parentid:9.01-3.2
+9.01-3.3 | Synaptic Integration in the Central Nervous System | | parentid:9.01-3
+9.01-3.3.1 | Central Neurons Receive Excitatory and Inhibitory Inputs | | parentid:9.01-3.3
+9.01-3.3.2 | Excitatory and Inhibitory Synapses Have Distinctive Ultrastructures | | parentid:9.01-3.3
+9.01-3.3.3 | Excitatory Synaptic Transmission Is Mediated by Ionotropic Glutamate Receptor-Channels That Are Permeable to Sodium and Potassium | | parentid:9.01-3.3
+9.01-3.3.4 | Inhibitory Synaptic Action Is Usually Mediated by Ionotropic GABA and Glycine Receptor-Channels That Are Permeable to Chloride | | parentid:9.01-3.3
+9.01-3.3.5 | Ionotropic Glutamate, GABA, and Glycine Receptors Are Transmembrane Proteins Encoded by Two Distinct Gene Families | | parentid:9.01-3.3
+9.01-3.3.6 | Excitatory and Inhibitory Synaptic Actions Are Integrated by the Cell into a Single Output | | parentid:9.01-3.3
+9.01-3.4 | Modulation of Synaptic Transmission: Second Messengers | | parentid:9.01-3
+9.01-3.4.1 | The Cyclic AMP Pathway Is the Best Understood Second-Messenger Signaling Cascade Initiated by G Protein-Coupled Receptors | | parentid:9.01-3.4
+9.01-3.4.2 | The Second-Messenger Pathways Initiated by G Protein-Coupled Receptors Share a Common Molecular Logic | | parentid:9.01-3.4
+9.01-3.4.3 | Transcellular Messengers Are Important for Regulating Presynaptic Function | | parentid:9.01-3.4
+9.01-3.4.4 | A Family of Receptor Tyrosine Kinases Mediates Some Metabotropic Receptor Effects | | parentid:9.01-3.4
+9.01-3.4.5 | The Physiological Actions of Ionotropic and Metabotropic Receptors Differ | | parentid:9.01-3.4
+9.01-3.4.6 | Synaptic Actions Mediated by Phosphorylation Are Terminated by Phosphoprotein Phosphatases | | parentid:9.01-3.4
+9.01-3.4.7 | Second Messengers Can Endow Synaptic Transmission with Long-Lasting Consequences | | parentid:9.01-3.4
+9.01-3.5 | Transmitter Release | | parentid:9.01-3
+9.01-3.5.1 | Transmitter Release Is Regulated by Depolarization of the Presynaptic Terminal | | parentid:9.01-3.5
+9.01-3.5.2 | Release Is Triggered by Calcium Influx | | parentid:9.01-3.5
+9.01-3.5.3 | Transmitter Is Released in Quantal Units | | parentid:9.01-3.5
+9.01-3.5.4 | Transmitter Is Stored and Released by Synaptic Vesicles | | parentid:9.01-3.5
+9.01-3.5.5 | Exocytosis of Synaptic Vesicles Relies on a Highly Conserved Protein Machinery | | parentid:9.01-3.5
+9.01-3.5.6 | Modulation of Transmitter Release Underlies Synaptic Plasticity | | parentid:9.01-3.5
+9.01-3.6 | Neurotransmitters | | parentid:9.01-3
+9.01-3.6.1 | A Chemical Messenger Must Meet Four Criteria to Be Considered a Neurotransmitter | | parentid:9.01-3.6
+9.01-3.6.2 | Only a Few Small-Molecule Substances Act as Transmitters | | parentid:9.01-3.6
+9.01-3.6.3 | Small-Molecule Transmitters Are Actively Taken Up into Vesicles | | parentid:9.01-3.6
+9.01-3.6.4 | Many Neuroactive Peptides Serve as Transmitters | | parentid:9.01-3.6
+9.01-3.6.5 | Peptides and Small-Molecule Transmitters Differ in Several Ways | | parentid:9.01-3.6
+9.01-3.6.6 | Peptides and Small-Molecule Transmitters Coexist and Can Be Co-released | | parentid:9.01-3.6
+9.01-3.6.7 | Removal of Transmitter from the Synaptic Cleft Terminates Synaptic Transmission | | parentid:9.01-3.6
+9.01-3.7 | Diseases of the Nerve and Motor Unit | | parentid:9.01-3
+9.01-3.7.1 | Disorders of the Peripheral Nerve, Neuromuscular Junction, and Muscle Can Be Distinguished Clinically | | parentid:9.01-3.7
+9.01-3.7.2 | A Variety of Diseases Target Motor Neurons and Peripheral Nerves | | parentid:9.01-3.7
+9.01-3.7.3 | Diseases of the Neuromuscular Junction Have Multiple Causes | | parentid:9.01-3.7
+9.01-3.7.4 | Diseases of Skeletal Muscle Can Be Inherited or Acquired | | parentid:9.01-3.7
+9.01-3.7.5 | Postscript: Diagnosis of Motor Unit Disorders Is Aided by Laboratory Criteria | | parentid:9.01-3.7
+9.01-4 | The Neural Basis of Cognition | | parentid:9.01
+9.01-4.1 | The Organization of the Central Nervous System | | parentid:9.01-4
+9.01-4.1.1 | The Central Nervous System Consists of the Spinal Cord and the Brain | | parentid:9.01-4.1
+9.01-4.1.2 | The Major Functional Systems Are Similarly Organized | | parentid:9.01-4.1
+9.01-4.1.3 | The Cerebral Cortex Is Concerned with Cognition | | parentid:9.01-4.1
+9.01-4.1.4 | Subcortical Regions of the Brain Are Functionally Organized into Nuclei | | parentid:9.01-4.1
+9.01-4.1.5 | Modulatory Systems in the Brain Influence Motivation, Emotion, and Memory | | parentid:9.01-4.1
+9.01-4.1.6 | The Peripheral Nervous System Is Anatomically Distinct from the Central Nervous System | | parentid:9.01-4.1
+9.01-4.2 | The Functional Organization of Perception and Movement | | parentid:9.01-4
+9.01-4.2.1 | Sensory Information Processing Is Illustrated in the Somatosensory System | | parentid:9.01-4.2
+9.01-4.2.2 | The Thalamus Is an Essential Link Between Sensory Receptors and the Cerebral Cortex for All Modalities Except Olfaction | | parentid:9.01-4.2
+9.01-4.2.3 | Sensory Information Processing Culminates in the Cerebral Cortex | | parentid:9.01-4.2
+9.01-4.2.4 | Voluntary Movement Is Mediated by Direct Connections Between the Cortex and Spinal Cord | | parentid:9.01-4.2
+9.01-4.3 | From Nerve Cells to Cognition: The Internal Representations of Space and Action | | parentid:9.01-4
+9.01-4.3.1 | The Major Goal of Cognitive Neural Science Is to Understand Neural Representations of Mental Processes | | parentid:9.01-4.3
+9.01-4.3.2 | The Brain Has an Orderly Representation of Personal Space | | parentid:9.01-4.3
+9.01-4.3.3 | The Internal Representation of Personal Space Can Be Modified by Experience | | parentid:9.01-4.3
+9.01-4.3.4 | Extrapersonal Space Is Represented in the Posterior Parietal Association Cortex | | parentid:9.01-4.3
+9.01-4.3.5 | Much of Mental Processing Is Unconscious | | parentid:9.01-4.3
+9.01-4.3.6 | Is Consciousness Accessible to Neurobiological Analysis? | | parentid:9.01-4.3
+9.01-4.4 | The Organization of Cognition | | parentid:9.01-4
+9.01-4.4.1 | Functionally Related Areas of Cortex Lie Close Together | | parentid:9.01-4.4
+9.01-4.4.2 | Sensory Information Is Processed in the Cortex in Serial Pathways | | parentid:9.01-4.4
+9.01-4.4.3 | Parallel Pathways in Each Sensory Modality Lead to Dorsal and Ventral Association Areas | | parentid:9.01-4.4
+9.01-4.4.4 | Goal-Directed Motor Behavior Is Controlled in the Frontal Lobe | | parentid:9.01-4.4
+9.01-4.4.5 | Limbic Association Cortex Is a Gateway to the Hippocampal Memory System | | parentid:9.01-4.4
+9.01-4.5 | Cognitive Functions of the Premotor Systems | | parentid:9.01-4
+9.01-4.5.1 | Direct Connections Between the Cerebral Cortex and Spinal Cord Play a Fundamental Role in the Organization of Voluntary Movements | | parentid:9.01-4.5
+9.01-4.5.2 | The Four Premotor Areas of the Primate Brain Also Have Direct Connections in the Spinal Cord | | parentid:9.01-4.5
+9.01-4.5.3 | Motor Circuits Involved in Voluntary Actions Are Organized to Achieve Specific Goals | | parentid:9.01-4.5
+9.01-4.5.4 | The Hand Has a Critical Role in Primate Behavior | | parentid:9.01-4.5
+9.01-4.5.5 | The Joint Activity of Neurons in the Parietal and Premotor Cortex Encodes Potential Motor Acts | | parentid:9.01-4.5
+9.01-4.6 | Functional Imaging of Cognition | | parentid:9.01-4
+9.01-4.6.1 | Functional Imaging Reflects the Metabolic Demand of Neural Activity | | parentid:9.01-4.6
+9.01-4.6.2 | Functional Imaging Is Used to Probe Cognitive Processes | | parentid:9.01-4.6
+9.01-4.6.3 | Functional Imaging Has Limitations | | parentid:9.01-4.6
+9.01-5 | Perception | | parentid:9.01
+9.01-5.1 | Sensory Coding | | parentid:9.01-5
+9.01-5.1.1 | Psychophysics Relates the Physical Properties of Stimuli to Sensations | | parentid:9.01-5.1
+9.01-5.1.2 | Physical Stimuli Are Represented in the Nervous System by Means of the Sensory Code | | parentid:9.01-5.1
+9.01-5.1.3 | Modality-Specific Pathways Extend to the Central Nervous System | | parentid:9.01-5.1
+9.01-5.2 | The Somatosensory System: Receptors and Central Pathways | | parentid:9.01-5
+9.01-5.2.1 | The Primary Sensory Neurons of the Somatosensory System Are Clustered in the Dorsal Root Ganglia | | parentid:9.01-5.2
+9.01-5.2.2 | Peripheral Somatosensory Nerve Fibers Conduct Action Potentials at Different Rates | | parentid:9.01-5.2
+9.01-5.2.3 | Many Specialized Receptors Are Employed by the Somatosensory System | | parentid:9.01-5.2
+9.01-5.2.4 | Somatosensory Information Enters the Central Nervous System Through Cranial and Spinal Nerves | | parentid:9.01-5.2
+9.01-5.2.5 | Somatosensory Information Flows from the Spinal Cord to the Thalamus Through Parallel Pathways | | parentid:9.01-5.2
+9.01-5.2.6 | The Thalamus Has a Number of Specialized Somatosensory Regions | | parentid:9.01-5.2
+9.01-5.3 | Touch | | parentid:9.01-5
+9.01-5.3.1 | Active and Passive Touch Evoke Similar Responses in Mechanoreceptors | | parentid:9.01-5.3
+9.01-5.3.2 | The Hand Has Four Types of Mechanoreceptors | | parentid:9.01-5.3
+9.01-5.3.3 | Tactile Information Is Processed in the Central Touch System | | parentid:9.01-5.3
+9.01-5.3.4 | Touch Information Becomes Increasingly Abstract in Successive Central Synapses | | parentid:9.01-5.3
+9.01-5.3.5 | Lesions in Somatosensory Areas of the Brain Produce Specific Tactile Deficits | | parentid:9.01-5.3
+9.01-5.4 | Pain | | parentid:9.01-5
+9.01-5.4.1 | Noxious Insults Activate Nociceptors | | parentid:9.01-5.4
+9.01-5.4.2 | Signals from Nociceptors Are Conveyed to Neurons in the Dorsal Horn of the Spinal Cord | | parentid:9.01-5.4
+9.01-5.4.3 | Hyperalgesia Has Both Peripheral and Central Origins | | parentid:9.01-5.4
+9.01-5.4.4 | Nociceptive Information Is Transmitted from the Spinal Cord to the Thalamus | | parentid:9.01-5.4
+9.01-5.4.5 | Pain Is Controlled by Cortical Mechanisms | | parentid:9.01-5.4
+9.01-5.4.6 | Opioid Peptides Contribute to Endogenous Pain Control | | parentid:9.01-5.4
+9.01-5.5 | The Constructive Nature of Visual Processing | | parentid:9.01-5
+9.01-5.5.1 | Visual Perception Is a Constructive Process | | parentid:9.01-5.5
+9.01-5.5.2 | Visual Perception Is Mediated by the Geniculostriate Pathway | | parentid:9.01-5.5
+9.01-5.5.3 | Form, Color, Motion, and Depth Are Processed in Discrete Areas of the Cerebral Cortex | | parentid:9.01-5.5
+9.01-5.5.4 | The Receptive Fields of Neurons at Successive Relays in an Afferent Pathway Provide Clues to How the Brain Analyzes Visual Form | | parentid:9.01-5.5
+9.01-5.5.5 | The Visual Cortex Is Organized into Columns of Specialized Neurons | | parentid:9.01-5.5
+9.01-5.5.6 | Intrinsic Cortical Circuits Transform Neural Information | | parentid:9.01-5.5
+9.01-5.5.7 | Visual Information Is Represented by a Variety of Neural Codes | | parentid:9.01-5.5
+9.01-5.6 | Low-Level Visual Processing: The Retina | | parentid:9.01-5
+9.01-5.6.1 | The Photoreceptor Layer Samples the Visual Image | | parentid:9.01-5.6
+9.01-5.6.2 | Phototransduction Links the Absorption of a Photon to a Change in Membrane Conductance | | parentid:9.01-5.6
+9.01-5.6.3 | Ganglion Cells Transmit Neural Images to the Brain | | parentid:9.01-5.6
+9.01-5.6.4 | A Network of Interneurons Shapes the Retinal Output | | parentid:9.01-5.6
+9.01-5.6.5 | The Retina's Sensitivity Adapts to Changes in Illumination | | parentid:9.01-5.6
+9.01-5.7 | Intermediate-Level Visual Processing and Visual Primitives | | parentid:9.01-5
+9.01-5.7.1 | Internal Models of Object Geometry Help the Brain Analyze Shapes | | parentid:9.01-5.7
+9.01-5.7.2 | Depth Perception Helps Segregate Objects from Background | | parentid:9.01-5.7
+9.01-5.7.3 | Local Movement Cues Define Object Trajectory and Shape | | parentid:9.01-5.7
+9.01-5.7.4 | Context Determines the Perception of Visual Stimuli | | parentid:9.01-5.7
+9.01-5.7.5 | Cortical Connections, Functional Architecture, and Perception Are Intimately Related | | parentid:9.01-5.7
+9.01-5.8 | High-Level Visual Processing: Cognitive Influences | | parentid:9.01-5
+9.01-5.8.1 | High-Level Visual Processing Is Concerned with Object Identification | | parentid:9.01-5.8
+9.01-5.8.2 | The Inferior Temporal Cortex Is the Primary Center for Object Perception | | parentid:9.01-5.8
+9.01-5.8.3 | Object Recognition Relies on Perceptual Constancy | | parentid:9.01-5.8
+9.01-5.8.4 | Categorical Perception of Objects Simplifies Behavior | | parentid:9.01-5.8
+9.01-5.8.5 | Visual Memory Is a Component of High-Level Visual Processing | | parentid:9.01-5.8
+9.01-5.8.6 | Associative Recall of Visual Memories Depends on Top-Down Activation of the Cortical Neurons That Process Visual Stimuli | | parentid:9.01-5.8
+9.01-5.9 | Visual Processing and Action | | parentid:9.01-5
+9.01-5.9.1 | Successive Fixations Focus Our Attention in the Visual Field | | parentid:9.01-5.9
+9.01-5.9.2 | The Visual Scene Remains Stable Despite Continual Shifts in the Retinal Image | | parentid:9.01-5.9
+9.01-5.9.3 | Vision Lapses During Saccades | | parentid:9.01-5.9
+9.01-5.9.4 | The Parietal Cortex Provides Visual Information to the Motor System | | parentid:9.01-5.9
+9.01-5.10 | The Inner Ear | | parentid:9.01-5
+9.01-5.10.1 | The Ear Has Three Functional Parts | | parentid:9.01-5.10
+9.01-5.10.2 | Hearing Commences with the Capture of Sound Energy by the Ear | | parentid:9.01-5.10
+9.01-5.10.3 | The Hydrodynamic and Mechanical Apparatus of the Cochlea Delivers Mechanical Stimuli to the Receptor Cells | | parentid:9.01-5.10
+9.01-5.10.4 | Hair Cells Transform Mechanical Energy into Neural Signals | | parentid:9.01-5.10
+9.01-5.10.5 | The Temporal Responsiveness of Hair Cells Determines Their Sensitivity | | parentid:9.01-5.10
+9.01-5.10.6 | Hair Cells Use Specialized Ribbon Synapses | | parentid:9.01-5.10
+9.01-5.10.7 | Auditory Information Flows Initially Through the Cochlear Nerve | | parentid:9.01-5.10
+9.01-5.10.8 | Sensorineural Hearing Loss Is Common but Treatable | | parentid:9.01-5.10
+9.01-5.11 | The Auditory Central Nervous System | | parentid:9.01-5
+9.01-5.11.1 | Multiple Types of Information Are Present in Sounds | | parentid:9.01-5.11
+9.01-5.11.2 | The Neural Representation of Sound Begins in the Cochlear Nuclei | | parentid:9.01-5.11
+9.01-5.11.3 | The Superior Olivary Complex of Mammals Contains Separate Circuits for Detecting Interaural Time and Intensity Differences | | parentid:9.01-5.11
+9.01-5.11.4 | Efferent Signals from the Superior Olivary Complex Provide Feedback to the Cochlea | | parentid:9.01-5.11
+9.01-5.11.5 | The Inferior Colliculus Transmits Auditory Information to the Cerebral Cortex | | parentid:9.01-5.11
+9.01-5.11.6 | Hearing Is Crucial for Vocal Learning and Production in Both Humans and Songbirds | | parentid:9.01-5.11
+9.01-5.12 | Smell and Taste: The Chemical Senses | | parentid:9.01-5
+9.01-5.12.1 | A Large Number of Olfactory Receptor Proteins Initiate the Sense of Smell | | parentid:9.01-5.12
+9.01-5.12.2 | Olfactory Information Is Transformed Along the Pathway to the Brain | | parentid:9.01-5.12
+9.01-5.12.3 | Odors Elicit Characteristic Innate Behaviors | | parentid:9.01-5.12
+9.01-5.12.4 | The Gustatory System Controls the Sense of Taste | | parentid:9.01-5.12
+9.01-6 | Movement | | parentid:9.01
+9.01-6.1 | The Organization and Planning of Movement | | parentid:9.01-6
+9.01-6.1.1 | Motor Commands Arise Through Sensorimotor Transformations | | parentid:9.01-6.1
+9.01-6.1.2 | Motor Signals Are Subject to Feedforward and Feedback Control | | parentid:9.01-6.1
+9.01-6.1.3 | Motor Systems Must Adapt to Development and Experience | | parentid:9.01-6.1
+9.01-6.2 | The Motor Unit and Muscle Action | | parentid:9.01-6
+9.01-6.2.1 | The Motor Unit Is the Elementary Unit of Motor Control | | parentid:9.01-6.2
+9.01-6.2.2 | Muscle Force Depends on the Structure of Muscle | | parentid:9.01-6.2
+9.01-6.2.3 | Different Movements Require Different Activation Strategies | | parentid:9.01-6.2
+9.01-6.3 | Spinal Reflexes | | parentid:9.01-6
+9.01-6.3.1 | Reflexes Are Adaptable to Particular Motor Tasks | | parentid:9.01-6.3
+9.01-6.3.2 | Spinal Reflexes Produce Coordinated Patterns of Muscle Contraction | | parentid:9.01-6.3
+9.01-6.3.3 | Local Spinal Circuits Contribute to the Coordination of Reflex Responses | | parentid:9.01-6.3
+9.01-6.3.4 | Central Motor Commands and Cognitive Processes Can Alter Synaptic Transmission in Spinal Reflex Pathways | | parentid:9.01-6.3
+9.01-6.3.5 | Proprioceptive Reflexes Play an Important Role in Regulating Both Voluntary and Automatic Movements | | parentid:9.01-6.3
+9.01-6.3.6 | Damage to the Central Nervous System Produces Characteristic Alterations in Reflex Response and Muscle Tone | | parentid:9.01-6.3
+9.01-6.4 | Locomotion | | parentid:9.01-6
+9.01-6.4.1 | A Complex Sequence of Muscle Contractions Is Required for Stepping | | parentid:9.01-6.4
+9.01-6.4.2 | The Motor Pattern for Stepping Is Organized at the Spinal Level | | parentid:9.01-6.4
+9.01-6.4.3 | Sensory Input from Moving Limbs Regulates Stepping | | parentid:9.01-6.4
+9.01-6.4.4 | Descending Pathways Are Necessary for Initiation and Adaptive Control of Stepping | | parentid:9.01-6.4
+9.01-6.4.5 | Human Walking May Involve Spinal Pattern Generators | | parentid:9.01-6.4
+9.01-6.5 | Voluntary Movement: The Primary Motor Cortex | | parentid:9.01-6
+9.01-6.5.1 | Motor Functions Are Localized within the Cerebral Cortex | | parentid:9.01-6.5
+9.01-6.5.2 | Many Cortical Areas Contribute to the Control of Voluntary Movements | | parentid:9.01-6.5
+9.01-6.5.3 | The Primary Motor Cortex Plays an Important Role in the Generation of Motor Commands | | parentid:9.01-6.5
+9.01-6.6 | Voluntary Movement: The Parietal and Premotor Cortex | | parentid:9.01-6
+9.01-6.6.1 | Voluntary Movement Expresses an Intention to Act | | parentid:9.01-6.6
+9.01-6.6.2 | Voluntary Movement Requires Sensory Information About the World and the Body | | parentid:9.01-6.6
+9.01-6.6.3 | Reaching for an Object Requires Sensory Information About the Object's Location in Space | | parentid:9.01-6.6
+9.01-6.6.4 | Grasping an Object Requires Sensory Information About Its Physical Properties | | parentid:9.01-6.6
+9.01-6.6.5 | The Supplementary Motor Complex Plays a Crucial Role in Selecting and Executing Appropriate Voluntary Actions | | parentid:9.01-6.6
+9.01-6.6.6 | The Cortical Motor System Is Involved in Planning Action | | parentid:9.01-6.6
+9.01-6.6.7 | Cortical Motor Areas Contribute to Understanding the Observed Actions of Others | | parentid:9.01-6.6
+9.01-6.6.8 | The Relationship between Motor Acts, the Sense of Volition, and Free Will Is Uncertain | | parentid:9.01-6.6
+9.01-6.7 | The Control of Gaze | | parentid:9.01-6
+9.01-6.7.1 | Six Neuronal Control Systems Keep the Eyes on Target | | parentid:9.01-6.7
+9.01-6.7.2 | The Eye Is Moved by the Six Extraocular Muscles | | parentid:9.01-6.7
+9.01-6.7.3 | The Motor Circuits for Saccades Lie in the Brain Stem | | parentid:9.01-6.7
+9.01-6.7.4 | Saccades Are Controlled by the Cerebral Cortex Through the Superior Colliculus | | parentid:9.01-6.7
+9.01-6.7.5 | Smooth Pursuit Involves the Cerebral Cortex, Cerebellum, and Pons | | parentid:9.01-6.7
+9.01-6.7.6 | Some Gaze Shifts Require Coordinated Head and Eye Movements | | parentid:9.01-6.7
+9.01-6.8 | The Vestibular System | | parentid:9.01-6
+9.01-6.8.1 | The Vestibular Apparatus in the Inner Ear Contains Five Receptor Organs | | parentid:9.01-6.8
+9.01-6.8.2 | Vestibulo-Ocular Reflexes Stabilize the Eyes and Body When the Head Moves | | parentid:9.01-6.8
+9.01-6.8.3 | Central Connections of the Vestibular Apparatus Integrate Vestibular, Visual, and Motor Signals | | parentid:9.01-6.8
+9.01-6.8.4 | Clinical Syndromes Elucidate Normal Vestibular Function | | parentid:9.01-6.8
+9.01-6.9 | Posture | | parentid:9.01-6
+9.01-6.9.1 | Postural Equilibrium and Orientation Are Distinct Sensorimotor Processes | | parentid:9.01-6.9
+9.01-6.9.2 | Postural Equilibrium Requires Control of the Body's Center of Mass | | parentid:9.01-6.9
+9.01-6.9.3 | Postural Orientation Is Important for Optimizing Execution of Tasks, Interpreting Sensations, and Anticipating Disturbances to Balance | | parentid:9.01-6.9
+9.01-6.9.4 | Sensory Information from Several Modalities Must Be Integrated to Maintain Equilibrium and Orientation | | parentid:9.01-6.9
+9.01-6.9.5 | Control of Posture Is Distributed in the Nervous System | | parentid:9.01-6.9
+9.01-6.9.6 | Suggested Readings | | parentid:9.01-6.9
+9.01-6.10 | The Cerebellum | | parentid:9.01-6
+9.01-6.10.1 | Cerebellar Diseases Have Distinctive Symptoms and Signs | | parentid:9.01-6.10
+9.01-6.10.2 | The Cerebellum Has Several Functionally Distinct Regions | | parentid:9.01-6.10
+9.01-6.10.3 | The Cerebellar Microcircuit Has a Distinct and Regular Organization | | parentid:9.01-6.10
+9.01-6.10.4 | The Vestibulocerebellum Regulates Balance and Eye Movements | | parentid:9.01-6.10
+9.01-6.10.5 | The Spinocerebellum Regulates Body and Limb Movements | | parentid:9.01-6.10
+9.01-6.10.6 | The Cerebrocerebellum Is Involved in Planning Movement | | parentid:9.01-6.10
+9.01-6.10.7 | The Cerebellum Participates in Motor Learning | | parentid:9.01-6.10
+9.01-6.11 | The Basal Ganglia | | parentid:9.01-6
+9.01-6.11.1 | The Basal Ganglia Consist of Several Interconnected Nuclei | | parentid:9.01-6.11
+9.01-6.11.2 | A Family of Cortico–Basal Ganglia–Thalamocortical Circuits Subserves Skeletomotor, Oculomotor, Associative, and Limbic Functions | | parentid:9.01-6.11
+9.01-6.11.3 | The Cortico–Basal Ganglia–Thalamocortical Motor Circuit Originates and Terminates in Cortical Areas Related to Movement | | parentid:9.01-6.11
+9.01-6.11.4 | Other Basal Ganglia Circuits Are Involved in the Regulation of Eye Movements, Mood, Reward, and Executive Functions | | parentid:9.01-6.11
+9.01-6.11.5 | Diseases of the Basal Ganglia Are Associated with Disturbances of Movement, Executive Function, Behavior, and Mood | | parentid:9.01-6.11
+9.01-6.12 | Genetic Mechanisms in Degenerative Diseases of the Nervous System | | parentid:9.01-6
+9.01-6.12.1 | Expanded Trinucleotide Repeats Characterize Several Neurodegenerative Diseases | | parentid:9.01-6.12
+9.01-6.12.2 | Parkinson Disease Is a Common Degenerative Disorder of the Elderly | | parentid:9.01-6.12
+9.01-6.12.3 | Selective Neuronal Loss Occurs After Damage to Ubiquitously Expressed Genes | | parentid:9.01-6.12
+9.01-6.12.4 | Animal Models Are Powerful Tools for Studying Neurodegenerative Diseases | | parentid:9.01-6.12
+9.01-6.12.5 | Several Pathways Underlie the Pathogenesis of Neurodegenerative Diseases | | parentid:9.01-6.12
+9.01-6.12.6 | Advances in Understanding the Molecular Basis of Neurodegenerative Diseases Are Opening Possibilities for Approaches to Therapeutic Intervention | | parentid:9.01-6.12
+9.01-7 | The Unconscious and Conscious Processing of Neural Information | | parentid:9.01
+9.01-7.1 | The Sensory, Motor, and Reflex Functions of the Brain Stem | | parentid:9.01-7
+9.01-7.1.1 | The Cranial Nerves Are Homologous to the Spinal Nerves | | parentid:9.01-7.1
+9.01-7.1.2 | Cranial Nerve Nuclei in the Brain Stem Are Organized on the Same Basic Plan As Are Sensory and Motor Regions of the Spinal Cord | | parentid:9.01-7.1
+9.01-7.1.3 | Neuronal Ensembles in the Brain Stem Reticular Formation Coordinate Reflexes and Simple Behaviors Necessary for Homeostasis and Survival | | parentid:9.01-7.1
+9.01-7.2 | The Modulatory Functions of the Brain Stem | | parentid:9.01-7
+9.01-7.2.1 | Ascending Monoaminergic and Cholinergic Projections from the Brain Stem Maintain Arousal | | parentid:9.01-7.2
+9.01-7.2.2 | Monoaminergic and Cholinergic Neurons Share Many Properties and Functions | | parentid:9.01-7.2
+9.01-7.2.3 | Monoamines Regulate Many Brain Functions Other Than Arousal | | parentid:9.01-7.2
+9.01-7.2.4 | Postscript: Evaluation of the Comatose Patient | | parentid:9.01-7.2
+9.01-7.3 | The Autonomic Motor System and the Hypothalamus | | parentid:9.01-7
+9.01-7.3.1 | The Autonomic Motor System Mediates Homeostasis | | parentid:9.01-7.3
+9.01-7.3.2 | The Autonomic System Contains Visceral Motor Neurons That Are Organized into Ganglia | | parentid:9.01-7.3
+9.01-7.3.3 | Both the Pre- and Postsynaptic Neurons of the Autonomic Motor System Use Co-Transmission at Their Synaptic Connections | | parentid:9.01-7.3
+9.01-7.3.4 | Autonomic Behavior Is the Product of Cooperation Between All Three Autonomic Divisions | | parentid:9.01-7.3
+9.01-7.3.5 | Autonomic and Endocrine Function Is Coordinated by a Central Autonomic Network Centered in the Hypothalamus | | parentid:9.01-7.3
+9.01-7.3.6 | The Hypothalamus Integrates Autonomic, Endocrine, and Behavioral Responses | | parentid:9.01-7.3
+9.01-7.4 | Emotions and Feelings | | parentid:9.01-7
+9.01-7.4.1 | The Modern Search for the Emotional Brain Began in the Late 19th Century | | parentid:9.01-7.4
+9.01-7.4.2 | The Amygdala Emerged as a Critical Regulatory Site in Circuits of Emotions | | parentid:9.01-7.4
+9.01-7.4.3 | Other Brain Areas Contribute to Emotional Processing | | parentid:9.01-7.4
+9.01-7.4.4 | The Neural Correlates of Feeling Are Beginning to Be Understood | | parentid:9.01-7.4
+9.01-7.5 | Homeostasis, Motivation, and Addictive States | | parentid:9.01-7
+9.01-7.5.1 | Drinking Occurs Both in Response to and in Anticipation of Dehydration | | parentid:9.01-7.5
+9.01-7.5.2 | Energy Stores Are Precisely Regulated | | parentid:9.01-7.5
+9.01-7.5.3 | Motivational States Influence Goal-Directed Behavior | | parentid:9.01-7.5
+9.01-7.5.4 | Drug Abuse and Addiction Are Goal-Directed Behaviors | | parentid:9.01-7.5
+9.01-7.6 | Seizures and Epilepsy | | parentid:9.01-7
+9.01-7.6.1 | Classification of Seizures and the Epilepsies Is Important for Pathogenesis and Treatment | | parentid:9.01-7.6
+9.01-7.6.2 | The Electroencephalogram Represents the Collective Behavior of Cortical Neurons | | parentid:9.01-7.6
+9.01-7.6.3 | Focal Seizures Originate Within a Small Group of Neurons Known as a Seizure Focus | | parentid:9.01-7.6
+9.01-7.6.4 | Primary Generalized Seizures Are Driven by Thalamocortical Circuits | | parentid:9.01-7.6
+9.01-7.6.5 | Locating the Seizure Focus Is Critical to the Surgical Treatment of Epilepsy | | parentid:9.01-7.6
+9.01-7.6.6 | Prolonged Seizures Can Cause Brain Damage | | parentid:9.01-7.6
+9.01-7.6.7 | The Factors Leading to Development of Epilepsy Are an Unfolding Mystery | | parentid:9.01-7.6
+9.01-7.7 | Sleep and Dreaming | | parentid:9.01-7
+9.01-7.7.1 | Sleep Consists of Alternating REM and Non-REM Periods | | parentid:9.01-7.7
+9.01-7.7.2 | Sleep Obeys Circadian and Ultradian Rhythms | | parentid:9.01-7.7
+9.01-7.7.3 | Sleep Changes with Age | | parentid:9.01-7.7
+9.01-7.7.4 | The Characteristics of Sleep Vary Greatly Between Species | | parentid:9.01-7.7
+9.01-7.7.5 | Sleep Disorders Have Behavioral, Psychological, and Neurological Causes | | parentid:9.01-7.7
+9.01-8 | Development and the Emergence of Behavior | | parentid:9.01
+9.01-8.1 | Patterning the Nervous System | | parentid:9.01-8
+9.01-8.1.1 | The Neural Tube Becomes Regionalized Early in Embryogenesis | | parentid:9.01-8.1
+9.01-8.1.2 | Secreted Signals Promote Neural Cell Fate | | parentid:9.01-8.1
+9.01-8.1.3 | Rostrocaudal Patterning of the Neural Tube Involves Signaling Gradients and Secondary Organizing Centers | | parentid:9.01-8.1
+9.01-8.1.4 | Dorsoventral Patterning of the Neural Tube Involves Similar Mechanisms at Different Rostrocaudal Levels | | parentid:9.01-8.1
+9.01-8.1.5 | Local Signals Determine Functional Subclasses of Neurons | | parentid:9.01-8.1
+9.01-8.1.6 | The Developing Forebrain Is Patterned by Intrinsic and Extrinsic Influences | | parentid:9.01-8.1
+9.01-8.2 | Differentiation and Survival of Nerve Cells | | parentid:9.01-8
+9.01-8.2.1 | The Proliferation of Neural Progenitor Cells Involves Symmetric and Asymmetric Modes of Cell Division | | parentid:9.01-8.2
+9.01-8.2.2 | Radial Glial Cells Serve As Neural Progenitors and Structural Scaffolds | | parentid:9.01-8.2
+9.01-8.2.3 | The Generation of Neurons or Glial Cells Is Regulated by Delta-Notch Signaling and Basic Helix-Loop-Helix Transcription Factors | | parentid:9.01-8.2
+9.01-8.2.4 | Neuronal Migration Establishes the Layered Organization of the Cerebral Cortex | | parentid:9.01-8.2
+9.01-8.2.5 | Central Neurons Migrate Along Glial Cells and Axons to Reach Their Final Settling Position | | parentid:9.01-8.2
+9.01-8.2.6 | The Neurotransmitter Phenotype of a Neuron Is Plastic | | parentid:9.01-8.2
+9.01-8.2.7 | The Survival of a Neuron Is Regulated by Neurotrophic Signals from the Neuron's Target | | parentid:9.01-8.2
+9.01-8.3 | The Growth and Guidance of Axons | | parentid:9.01-8
+9.01-8.3.1 | Differences in the Molecular Properties of Axons and Dendrites Emerge Early in Development | | parentid:9.01-8.3
+9.01-8.3.2 | The Growth Cone Is a Sensory Transducer and a Motor Structure | | parentid:9.01-8.3
+9.01-8.3.3 | Molecular Cues Guide Axons to Their Targets | | parentid:9.01-8.3
+9.01-8.3.4 | The Growth of Retinal Ganglion Axons Is Oriented in a Series of Discrete Steps | | parentid:9.01-8.3
+9.01-8.3.5 | Axons from Some Spinal Neurons Cross the Midline | | parentid:9.01-8.3
+9.01-8.4 | Formation and Elimination of Synapses | | parentid:9.01-8
+9.01-8.4.1 | Recognition of Synaptic Targets Is Specific | | parentid:9.01-8.4
+9.01-8.4.2 | Principles of Synaptic Differentiation Are Revealed at the Neuromuscular Junction | | parentid:9.01-8.4
+9.01-8.4.3 | Central Synapses Develop in Ways Similar to Neuromuscular Junctions | | parentid:9.01-8.4
+9.01-8.4.4 | Some Synapses Are Eliminated After Birth | | parentid:9.01-8.4
+9.01-8.5 | Experience and the Refinement of Synaptic Connections | | parentid:9.01-8
+9.01-8.5.1 | Development of Human Mental Function Is Influenced by Early Experience | | parentid:9.01-8.5
+9.01-8.5.2 | Development of Binocular Circuits in the Visual Cortex Depends on Postnatal Activity | | parentid:9.01-8.5
+9.01-8.5.3 | Reorganization of Visual Circuits During a Critical Period Involves Alterations in Synaptic Connections | | parentid:9.01-8.5
+9.01-8.5.4 | Segregation of Retinal Inputs in the Lateral Geniculate Nucleus Is Driven by Spontaneous Neural Activity In Utero | | parentid:9.01-8.5
+9.01-8.5.5 | Activity-Dependent Refinement of Connections Is a General Feature of Circuits in the Central Nervous System | | parentid:9.01-8.5
+9.01-8.5.6 | Critical Periods Can Be Reopened in Adulthood | | parentid:9.01-8.5
+9.01-8.6 | Repairing the Damaged Brain | | parentid:9.01-8
+9.01-8.6.1 | Damage to Axons Affects Neurons and Neighboring Cells | | parentid:9.01-8.6
+9.01-8.6.2 | Central Axons Regenerate Poorly After Injury | | parentid:9.01-8.6
+9.01-8.6.3 | Therapeutic Interventions May Promote Regeneration of Injured Central Neurons | | parentid:9.01-8.6
+9.01-8.6.4 | Neurons in the Injured Brain Die but New Ones Can Be Born | | parentid:9.01-8.6
+9.01-8.6.5 | Therapeutic Interventions May Retain or Replace Injured Central Neurons | | parentid:9.01-8.6
+9.01-8.7 | Sexual Differentiation of the Nervous System | | parentid:9.01-8
+9.01-8.7.1 | Genes and Hormones Determine Physical Differences Between Males and Females | | parentid:9.01-8.7
+9.01-8.7.2 | Sexual Differentiation of the Nervous System Generates Sexually Dimorphic Behaviors | | parentid:9.01-8.7
+9.01-8.7.3 | Environmental Cues Control Some Sexually Dimorphic Behaviors | | parentid:9.01-8.7
+9.01-8.7.4 | Sexual Dimorphism in the Human Brain May Correlate with Gender Identity and Sexual Orientation | | parentid:9.01-8.7
+9.01-8.8 | The Aging Brain | | parentid:9.01-8
+9.01-8.8.1 | The Structure and Function of the Brain Change with Age | | parentid:9.01-8.8
+9.01-8.8.2 | Cognitive Decline Is Dramatic in a Small Percentage of the Elderly | | parentid:9.01-8.8
+9.01-8.8.3 | Alzheimer Disease Is the Most Common Senile Dementia | | parentid:9.01-8.8
+9.01-8.8.4 | The Brain in Alzheimer Disease Is Altered by Atrophy, Amyloid Plaques, and Neurofibrillary Tangles | | parentid:9.01-8.8
+9.01-8.8.5 | Alzheimer Disease Can Be Diagnosed Well but Available Treatments Are Poor | | parentid:9.01-8.8
+9.01-9 | Language, Thought, Affect, and Learning | | parentid:9.01
+9.01-9.1 | Language | | parentid:9.01-9
+9.01-9.1.1 | Language Has Many Functional Levels: Phonemes, Morphemes, Words, and Sentences | | parentid:9.01-9.1
+9.01-9.1.2 | Language Acquisition in Children Follows a Universal Pattern | | parentid:9.01-9.1
+9.01-9.1.3 | Several Cortical Regions Are Involved in Language Processing | | parentid:9.01-9.1
+9.01-9.1.4 | Brain Injuries Responsible for the Aphasias Provide Important Insights into Language Processing | | parentid:9.01-9.1
+9.01-9.2 | Disorders of Conscious and Unconscious Mental Processes | | parentid:9.01-9
+9.01-9.2.1 | Conscious and Unconscious Cognitive Processes Have Distinctive Neural Correlates | | parentid:9.01-9.2
+9.01-9.2.2 | Differences Between Conscious Processes in Perception Can Be Seen in Exaggerated Form after Brain Damage | | parentid:9.01-9.2
+9.01-9.2.3 | The Control of Action Is Largely Unconscious | | parentid:9.01-9.2
+9.01-9.2.4 | The Conscious Recall of Memory Is a Creative Process | | parentid:9.01-9.2
+9.01-9.2.5 | Behavioral Observation Needs to Be Supplemented with Subjective Reports | | parentid:9.01-9.2
+9.01-9.3 | Disorders of Thought and Volition: Schizophrenia | | parentid:9.01-9
+9.01-9.3.1 | Diagnosis of Schizophrenia Is Based on Standardized Clinical Criteria | | parentid:9.01-9.3
+9.01-9.3.2 | Both Genetic and Nongenetic Risk Factors Contribute to Schizophrenia | | parentid:9.01-9.3
+9.01-9.3.3 | Neuroanatomic Abnormalities May Be a Causative Factor in Schizophrenia | | parentid:9.01-9.3
+9.01-9.3.4 | Antipsychotic Drugs Act on Dopaminergic Systems in the Brain | | parentid:9.01-9.3
+9.01-9.4 | Disorders of Mood and Anxiety | | parentid:9.01-9
+9.01-9.4.1 | The Most Common Disorders of Mood Are Unipolar Depression and Bipolar Disorder | | parentid:9.01-9.4
+9.01-9.4.2 | Both Genetic and Nongenetic Risk Factors Play an Important Role in Mood Disorders | | parentid:9.01-9.4
+9.01-9.4.3 | Specific Brain Regions and Circuits Are Involved in Mood Disorders | | parentid:9.01-9.4
+9.01-9.4.4 | Depression and Stress Are Interrelated | | parentid:9.01-9.4
+9.01-9.4.5 | Major Depression Can Be Treated Effectively | | parentid:9.01-9.4
+9.01-9.4.6 | Anxiety Disorders Stem from Abnormal Regulation of Fear | | parentid:9.01-9.4
+9.01-9.5 | Autism and Other Neurodevelopmental Disorders Affecting Cognition | | parentid:9.01-9
+9.01-9.5.1 | Autism Has Characteristic Behavioral Features | | parentid:9.01-9.5
+9.01-9.5.2 | There Is a Strong Genetic Component in Autism | | parentid:9.01-9.5
+9.01-9.5.3 | Autism Has Characteristic Neurological Abnormalities | | parentid:9.01-9.5
+9.01-9.5.4 | There Are Distinctive Cognitive Abnormalities in Autism | | parentid:9.01-9.5
+9.01-9.5.5 | Some Neurodevelopmental Disorders Have a Known Genetic Basis | | parentid:9.01-9.5
+9.01-9.6 | Learning and Memory | | parentid:9.01-9
+9.01-9.6.1 | Short-Term and Long-Term Memory Involve Different Neural Systems | | parentid:9.01-9.6
+9.01-9.6.2 | Long-Term Memory Can Be Classified As Explicit or Implicit | | parentid:9.01-9.6
+9.01-9.6.3 | Explicit Memory Has Episodic and Semantic Forms | | parentid:9.01-9.6
+9.01-9.6.4 | Implicit Memory Supports Perceptual Priming | | parentid:9.01-9.6
+9.01-9.6.5 | Errors and Imperfections in Memory Shed Light on Normal Memory Processes | | parentid:9.01-9.6
+9.01-9.7 | Cellular Mechanisms of Implicit Memory Storage and the Biological Basis of Individuality | | parentid:9.01-9
+9.01-9.7.1 | Storage of Implicit Memory Involves Changes in the Effectiveness of Synaptic Transmission | | parentid:9.01-9.7
+9.01-9.7.2 | Long-Term Storage of Implicit Memory Involves Changes in Chromatin Structure and Gene Expression Mediated by the cAMP-PKA-CREB Pathway | | parentid:9.01-9.7
+9.01-9.7.3 | Classical Fear Conditioning in Flies Uses the cAMP-PKACREB Pathway | | parentid:9.01-9.7
+9.01-9.7.4 | Memory for Learned Fear in Mammals Involves the Amygdala | | parentid:9.01-9.7
+9.01-9.7.5 | Habit Learning and Memory Require the Striatum | | parentid:9.01-9.7
+9.01-9.7.6 | Learning-Induced Changes in the Structure of the Brain Contribute to the Biological Basis of Individuality | | parentid:9.01-9.7
+9.01-9.8 | Prefrontal Cortex, Hippocampus, and the Biology of Explicit Memory Storage | | parentid:9.01-9
+9.01-9.8.1 | Working Memory Depends on Persistent Neural Activity in the Prefrontal Cortex | | parentid:9.01-9.8
+9.01-9.8.2 | Explicit Memory in Mammals Involves Different Forms of Long-Term Potentiation in the Hippocampus | | parentid:9.01-9.8
+9.01-9.8.3 | Spatial Memory Depends on Long-Term Potentiation in the Hippocampus | | parentid:9.01-9.8
+9.01-9.8.4 | A Spatial Map of the External World Is Formed in the Hippocampus | | parentid:9.01-9.8
+9.01-9.8.5 | Different Subregions of the Hippocampus Are Required for Pattern Separation and for Pattern Completion | | parentid:9.01-9.8
+9.01-9.8.6 | Memory Also Depends on Long-Term Depression of Synaptic Transmission | | parentid:9.01-9.8
+9.01-9.8.7 | Epigenetic Changes in Chromatin Structure Are Important for Long-Term Synaptic Plasticity and Learning and Memory | | parentid:9.01-9.8
+9.01-9.8.8 | Are There Molecular Building Blocks for Learning? | | parentid:9.01-9.8
+9.01-Appendices1 |  Review of Basic Circuit Theory | | parentid:9.01
+9.01-Appendices1.1 | Basic Electrical Parameters | | parentid:9.01-Appendices1
+9.01-Appendices1.2 | Rules for Circuit Analysis | | parentid:9.01-Appendices1
+9.01-Appendices1.3 | Current in Circuits with Capacitance | | parentid:9.01-Appendices1
+9.01-Appendices2 |  The Neurological Examination of the Patient | | parentid:9.01
+9.01-Appendices2.1 | Mental Status | | parentid:9.01-Appendices2
+9.01-Appendices2.2 | Cranial Nerve Function | | parentid:9.01-Appendices2
+9.01-Appendices2.3 | Musculoskeletal System | | parentid:9.01-Appendices2
+9.01-Appendices2.4 | Sensory Systems | | parentid:9.01-Appendices2
+9.01-Appendices2.5 | Motor Coordination | | parentid:9.01-Appendices2
+9.01-Appendices2.6 | Gait and Stance | | parentid:9.01-Appendices2
+9.01-Appendices2.7 | Balance | | parentid:9.01-Appendices2
+9.01-Appendices2.8 | Deep Tendon Reflexes | | parentid:9.01-Appendices2
+9.01-Appendices3 |  Circulation of the Brain | | parentid:9.01
+9.01-Appendices3.1 | The Blood Supply of the Brain Can Be Divided into Arterial Territories | | parentid:9.01-Appendices3
+9.01-Appendices3.2 | The Cerebral Vessels Have Unique Physiological Responses | | parentid:9.01-Appendices3
+9.01-Appendices3.3 | A Stroke Is the Result of Disease Involving Blood Vessels | | parentid:9.01-Appendices3
+9.01-Appendices3.4 | Clinical Vascular Syndromes May Follow Vessel Occlusion, Hypoperfusion, or Hemorrhage | | parentid:9.01-Appendices3
+9.01-Appendices3.5 | Stroke Alters the Vascular Physiology of the Brain | | parentid:9.01-Appendices3
+9.01-Appendices4 |  The Blood–Brain Barrier, Choroid Plexus, and Cerebrospinal Fluid | | parentid:9.01
+9.01-Appendices4.1 | The Blood–Brain Barrier Regulates the Interstitial Fluid in the Brain | | parentid:9.01-Appendices4
+9.01-Appendices4.2 | Cerebrospinal Fluid Is Secreted by the Choroid Plexuses | | parentid:9.01-Appendices4
+9.01-Appendices4.3 | Brain Edema Is an Increase in Brain Volume Because of Increased Water Content | | parentid:9.01-Appendices4
+9.01-Appendices4.4 | Hydrocephalus Is an Increase in the Volume of the Cerebral Ventricles | | parentid:9.01-Appendices4
+9.01-Appendices5 |  Neural Networks | | parentid:9.01
+9.01-Appendices5.1 | Early Neural Network Modeling | | parentid:9.01-Appendices5
+9.01-Appendices5.2 | Neurons Are Computational Devices | | parentid:9.01-Appendices5
+9.01-Appendices5.3 | Perceptrons Model Sequential and Parallel Computation in the Visual System | | parentid:9.01-Appendices5
+9.01-Appendices5.4 | Associative Memory Networks Use Hebbian Plasticity to Store and Recall Neural Activity Patterns | | parentid:9.01-Appendices5
+9.01-Appendices6 |  Theoretical Approaches to Neuroscience: Examples from Single Neurons to Networks | | parentid:9.01
+9.01-Appendices6.1 | Single-Neuron Models Allow Study of the Integration of Synaptic Inputs and Intrinsic Conductances | | parentid:9.01-Appendices6
+9.01-Appendices6.2 | Network Models Provide Insight into the Collective Dynamics of Neurons | | parentid:9.01-Appendices6

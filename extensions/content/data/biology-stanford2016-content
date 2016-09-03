@@ -1,0 +1,721 @@
+BIO137-1 | COMPARTMENTS | | parentid:BIO137
+BIO137-1.1 | Membrane Structure and Membranous Organelles | | parentid:BIO137-1
+BIO137-1.1.1 | Common properties and inheritance of cell membranes | | parentid:BIO137-1.1
+BIO137-1.1.2 | The fluid-mosaic membrane model | | parentid:BIO137-1.1
+BIO137-1.1.3 | Plasma membrane | | parentid:BIO137-1.1
+BIO137-1.1.4 | Endoplasmic reticulum | | parentid:BIO137-1.1
+BIO137-1.1.5 | Golgi apparatus | | parentid:BIO137-1.1
+BIO137-1.1.6 | Exocytosis and endocytosis | | parentid:BIO137-1.1
+BIO137-1.1.7 | Vacuoles | | parentid:BIO137-1.1
+BIO137-1.1.8 | The nucleus | | parentid:BIO137-1.1
+BIO137-1.1.9 | Peroxisomes | | parentid:BIO137-1.1
+BIO137-1.1.10 | Plastids | | parentid:BIO137-1.1
+BIO137-1.1.11 | Mitochondria | | parentid:BIO137-1.1
+BIO137-1.2 | The Cell Wall | | parentid:BIO137-1
+BIO137-1.2.1 | Sugars are building blocks of the cell wall | | parentid:BIO137-1.2
+BIO137-1.2.2 | Macromolecules of the cell wall | | parentid:BIO137-1.2
+BIO137-1.2.3 | Cell wall architecture | | parentid:BIO137-1.2
+BIO137-1.2.4 | Cell wall biosynthesis and assembly | | parentid:BIO137-1.2
+BIO137-1.2.5 | Growth and cell walls | | parentid:BIO137-1.2
+BIO137-1.2.6 | Cell differentiation | | parentid:BIO137-1.2
+BIO137-1.2.7 | Cell walls as sources of food, feed, fiber, and fuel, and their genetic improvement | | parentid:BIO137-1.2
+BIO137-1.3 | Membrane Transport | | parentid:BIO137-1
+BIO137-1.3.1 | Overview of plant membrane transport systems | | parentid:BIO137-1.3
+BIO137-1.3.2 | Pumps | | parentid:BIO137-1.3
+BIO137-1.3.3 | Ion channels | | parentid:BIO137-1.3
+BIO137-1.3.4 | Cotransporters | | parentid:BIO137-1.3
+BIO137-1.3.5 | Water transport through aquaporins | | parentid:BIO137-1.3
+BIO137-1.4 | Protein Sorting and Vesicle Traffic | | parentid:BIO137-1
+BIO137-1.4.1 | The cellular machinery of protein sorting | | parentid:BIO137-1.4
+BIO137-1.4.2 | Targeting proteins to the plastids | | parentid:BIO137-1.4
+BIO137-1.4.3 | Targeting proteins to mitochondria | | parentid:BIO137-1.4
+BIO137-1.4.4 | Targeting proteins to peroxisomes | | parentid:BIO137-1.4
+BIO137-1.4.5 | Transport in and out of the nucleus | | parentid:BIO137-1.4
+BIO137-1.4.6 | ER is the secretory pathway port of entry and a protein nursery | | parentid:BIO137-1.4
+BIO137-1.4.7 | Protein traffic and sorting in the secretory pathway: the ER | | parentid:BIO137-1.4
+BIO137-1.4.8 | Protein traffic and sorting in the secretory pathway: the Golgi apparatus and beyond | | parentid:BIO137-1.4
+BIO137-1.4.9 | Endocytosis and endosomal compartments | | parentid:BIO137-1.4
+BIO137-1.5 | The Cytoskeleton | | parentid:BIO137-1
+BIO137-1.5.1 | Introduction to the cytoskeleton | | parentid:BIO137-1.5
+BIO137-1.5.2 | Actin and tubulin gene families | | parentid:BIO137-1.5
+BIO137-1.5.3 | Characteristics of actin filaments and microtubules | | parentid:BIO137-1.5
+BIO137-1.5.4 | Cytoskeletal accessory proteins | | parentid:BIO137-1.5
+BIO137-1.5.5 | Observing the cytoskeleton: Statics and dynamics | | parentid:BIO137-1.5
+BIO137-1.5.6 | Role of actin filaments in directed intracellular movement | | parentid:BIO137-1.5
+BIO137-1.5.7 | Cortical microtubules and expansion | | parentid:BIO137-1.5
+BIO137-1.5.8 | The cytoskeleton and signal transduction | | parentid:BIO137-1.5
+BIO137-1.5.9 | Mitosis and cytokinesis | | parentid:BIO137-1.5
+BIO137-2 | CELL REPRODUCTION | | parentid:BIO137
+BIO137-2.1 | Nucleic Acids | | parentid:BIO137-2
+BIO137-2.1.1 | Composition of nucleic acids and synthesis of nucleotides | | parentid:BIO137-2.1
+BIO137-2.1.2 | Replication of nuclear DNA | | parentid:BIO137-2.1
+BIO137-2.1.3 | DNA repair | | parentid:BIO137-2.1
+BIO137-2.1.4 | DNA recombination | | parentid:BIO137-2.1
+BIO137-2.1.5 | Organellar DNA | | parentid:BIO137-2.1
+BIO137-2.1.6 | DNA transcription | | parentid:BIO137-2.1
+BIO137-2.1.7 | Characteristics and functions of RNA | | parentid:BIO137-2.1
+BIO137-2.1.8 | RNA processing | | parentid:BIO137-2.1
+BIO137-2.2 | Amino Acids | | parentid:BIO137-2
+BIO137-2.2.1 | Amino acid biosynthesis in plants: research and prospects | | parentid:BIO137-2.2
+BIO137-2.2.2 | Assimilation of inorganic nitrogen into N-transport amino acids | | parentid:BIO137-2.2
+BIO137-2.2.3 | Aromatic amino acids | | parentid:BIO137-2.2
+BIO137-2.2.4 | Aspartate-derived amino acids | | parentid:BIO137-2.2
+BIO137-2.2.5 | Branched-chain amino acids | | parentid:BIO137-2.2
+BIO137-2.2.6 | Glutamate-derived amino acids | | parentid:BIO137-2.2
+BIO137-2.2.7 | Histidine | | parentid:BIO137-2.2
+BIO137-2.3 | Lipids | | parentid:BIO137-2
+BIO137-2.3.1 | Structure and function of lipids | | parentid:BIO137-2.3
+BIO137-2.3.2 | Fatty acid biosynthesis | | parentid:BIO137-2.3
+BIO137-2.3.3 | Acetyl-CoA carboxylase | | parentid:BIO137-2.3
+BIO137-2.3.4 | Fatty acid synthase | | parentid:BIO137-2.3
+BIO137-2.3.5 | Desaturation and elongation of C16 and C18 fatty acids | | parentid:BIO137-2.3
+BIO137-2.3.6 | Synthesis of unusual fatty acids | | parentid:BIO137-2.3
+BIO137-2.3.7 | Synthesis of membrane lipids | | parentid:BIO137-2.3
+BIO137-2.3.8 | Function of membrane lipids | | parentid:BIO137-2.3
+BIO137-2.3.9 | Synthesis and function of extracellular lipids | | parentid:BIO137-2.3
+BIO137-2.3.10 | Synthesis and catabolism of storage lipids | | parentid:BIO137-2.3
+BIO137-2.3.11 | Genetic engineering of lipids | | parentid:BIO137-2.3
+BIO137-2.4 | Genome Structure and Organization | | parentid:BIO137-2
+BIO137-2.4.1 | Genome structure: a 21st-century perspective | | parentid:BIO137-2.4
+BIO137-2.4.2 | Genome organization | | parentid:BIO137-2.4
+BIO137-2.4.3 | Transposable elements | | parentid:BIO137-2.4
+BIO137-2.4.4 | Gene expression | | parentid:BIO137-2.4
+BIO137-2.4.5 | Chromatin and the epigenetic regulation of gene expression | | parentid:BIO137-2.4
+BIO137-2.5 | Protein Synthesis, Folding, and Degradation | | parentid:BIO137-2
+BIO137-2.5.1 | Organellar compartmentalization of protein synthesis | | parentid:BIO137-2.5
+BIO137-2.5.2 | From RNA to protein | | parentid:BIO137-2.5
+BIO137-2.5.3 | Mechanisms of plant viral translation | | parentid:BIO137-2.5
+BIO137-2.5.4 | Protein synthesis in plastids | | parentid:BIO137-2.5
+BIO137-2.5.5 | Post-translational modification of proteins | | parentid:BIO137-2.5
+BIO137-2.5.6 | Protein degradation | | parentid:BIO137-2.5
+BIO137-2.6 | Cell Division | | parentid:BIO137-2
+BIO137-2.6.1 | Animal and plant cell cycles | | parentid:BIO137-2.6
+BIO137-2.6.2 | Historical perspective on cell cycle research | | parentid:BIO137-2.6
+BIO137-2.6.3 | Mechanisms of cell cycle control | | parentid:BIO137-2.6
+BIO137-2.6.4 | The cell cycle in action | | parentid:BIO137-2.6
+BIO137-2.6.5 | Cell cycle control during development | | parentid:BIO137-2.6
+BIO137-3 | ENERGY FLOW | | parentid:BIO137
+BIO137-3.1 | Photosynthesis | | parentid:BIO137-3
+BIO137-3.1.1 | Overview of photosynthesis | | parentid:BIO137-3.1
+BIO137-3.1.2 | Light absorption and energy conversion | | parentid:BIO137-3.1
+BIO137-3.1.3 | Photosystem structure and function | | parentid:BIO137-3.1
+BIO137-3.1.4 | Electron transport pathways in chloroplast membranes | | parentid:BIO137-3.1
+BIO137-3.1.5 | ATP synthesis in chloroplasts | | parentid:BIO137-3.1
+BIO137-3.1.6 | Organization and regulation of photosynthetic complexes | | parentid:BIO137-3.1
+BIO137-3.1.7 | Carbon reactions: the Calvin–Benson cycle | | parentid:BIO137-3.1
+BIO137-3.1.8 | Rubisco | | parentid:BIO137-3.1
+BIO137-3.1.9 | Regulation of the Calvin–Benson cycle by light | | parentid:BIO137-3.1
+BIO137-3.1.10 | Variations in mechanisms of CO2 fixation | | parentid:BIO137-3.1
+BIO137-3.2 | Carbohydrate Metabolism | | parentid:BIO137-3
+BIO137-3.2.1 | The concept of metabolite pools | | parentid:BIO137-3.2
+BIO137-3.2.2 | The hexose phosphate pool: a major crossroads in plant metabolism | | parentid:BIO137-3.2
+BIO137-3.2.3 | Sucrose biosynthesis | | parentid:BIO137-3.2
+BIO137-3.2.4 | Sucrose metabolism | | parentid:BIO137-3.2
+BIO137-3.2.5 | Starch biosynthesis | | parentid:BIO137-3.2
+BIO137-3.2.6 | Partitioning of photoassimilates between sucrose and starch | | parentid:BIO137-3.2
+BIO137-3.2.7 | Starch degradation | | parentid:BIO137-3.2
+BIO137-3.2.8 | The pentose phosphate/triose phosphate pool | | parentid:BIO137-3.2
+BIO137-3.2.9 | Energy and reducing power for biosynthesis | | parentid:BIO137-3.2
+BIO137-3.2.10 | Sugar-regulated gene expression | | parentid:BIO137-3.2
+BIO137-3.3 | Respiration and Photorespiration | | parentid:BIO137-3
+BIO137-3.3.1 | Overview of respiration | | parentid:BIO137-3.3
+BIO137-3.3.2 | Citric acid cycle | | parentid:BIO137-3.3
+BIO137-3.3.3 | Plant mitochondrial electron transport | | parentid:BIO137-3.3
+BIO137-3.3.4 | Plant mitochondrial ATP synthesis | | parentid:BIO137-3.3
+BIO137-3.3.5 | Regulation of the citric acid cycle and the cytochrome pathway | | parentid:BIO137-3.3
+BIO137-3.3.6 | Integration of the cytochrome pathway and nonphosphorylating pathways | | parentid:BIO137-3.3
+BIO137-3.3.7 | Interactions between mitochondria and other cellular compartments | | parentid:BIO137-3.3
+BIO137-3.3.8 | Biochemical basis of photorespiration | | parentid:BIO137-3.3
+BIO137-3.3.9 | The photorespiratory pathway | | parentid:BIO137-3.3
+BIO137-3.3.10 | Role of photorespiration in plants | | parentid:BIO137-3.3
+BIO137-4 | METABOLIC AND DEVELOPMENTAL INTEGRATION | | parentid:BIO137
+BIO137-4.1 | Long-Distance Transport | | parentid:BIO137-4
+BIO137-4.1.1 | Selection pressures and long‐distance transport systems | | parentid:BIO137-4.1
+BIO137-4.1.2 | Cell biology of transport modules | | parentid:BIO137-4.1
+BIO137-4.1.3 | Short-distance transport events between xylem and nonvascular cells | | parentid:BIO137-4.1
+BIO137-4.1.4 | Short-distance transport events between phloem and nonvascular cells | | parentid:BIO137-4.1
+BIO137-4.1.5 | Whole-plant organization of xylem transport | | parentid:BIO137-4.1
+BIO137-4.1.6 | Whole-plant organization of phloem transport | | parentid:BIO137-4.1
+BIO137-4.1.7 | Communication and regulation controlling phloem transport events | | parentid:BIO137-4.1
+BIO137-4.2 | Nitrogen and Sulfur | | parentid:BIO137-4
+BIO137-4.2.1 | Overview of nitrogen in the biosphere and in plants | | parentid:BIO137-4.2
+BIO137-4.2.2 | Overview of biological nitrogen fixation | | parentid:BIO137-4.2
+BIO137-4.2.3 | Enzymology of nitrogen fixation | | parentid:BIO137-4.2
+BIO137-4.2.4 | Symbiotic nitrogen fixation | | parentid:BIO137-4.2
+BIO137-4.2.5 | Ammonia uptake and transport | | parentid:BIO137-4.2
+BIO137-4.2.6 | Nitrate uptake and transport | | parentid:BIO137-4.2
+BIO137-4.2.7 | Nitrate reduction | | parentid:BIO137-4.2
+BIO137-4.2.8 | Nitrite reduction | | parentid:BIO137-4.2
+BIO137-4.2.9 | Nitrate signaling | | parentid:BIO137-4.2
+BIO137-4.2.10 | Interaction between nitrate assimilation and carbon metabolism | | parentid:BIO137-4.2
+BIO137-4.2.11 | Overview of sulfur in the biosphere and plants | | parentid:BIO137-4.2
+BIO137-4.2.12 | Sulfur chemistry and function | | parentid:BIO137-4.2
+BIO137-4.2.13 | Sulfate uptake and transport | | parentid:BIO137-4.2
+BIO137-4.2.14 | The reductive sulfate assimilation pathway | | parentid:BIO137-4.2
+BIO137-4.2.15 | Cysteine synthesis | | parentid:BIO137-4.2
+BIO137-4.2.16 | Synthesis and function of glutathione and its derivatives | | parentid:BIO137-4.2
+BIO137-4.2.17 | Sulfated compounds | | parentid:BIO137-4.2
+BIO137-4.2.18 | Regulation of sulfate assimilation and interaction with nitrogen and carbon metabolism | | parentid:BIO137-4.2
+BIO137-4.3 | Biosynthesis of Hormones | | parentid:BIO137-4
+BIO137-4.3.1 | Gibberellins | | parentid:BIO137-4.3
+BIO137-4.3.2 | Abscisic acid | | parentid:BIO137-4.3
+BIO137-4.3.3 | Cytokinins | | parentid:BIO137-4.3
+BIO137-4.3.4 | Auxins | | parentid:BIO137-4.3
+BIO137-4.3.5 | Ethylene | | parentid:BIO137-4.3
+BIO137-4.3.6 | Brassinosteroids | | parentid:BIO137-4.3
+BIO137-4.3.7 | Polyamines | | parentid:BIO137-4.3
+BIO137-4.3.8 | Jasmonic acid | | parentid:BIO137-4.3
+BIO137-4.3.9 | Salicylic acid | | parentid:BIO137-4.3
+BIO137-4.3.10 | Strigolactones | | parentid:BIO137-4.3
+BIO137-4.4 | Signal Transduction | | parentid:BIO137-4
+BIO137-4.4.1 | Characteristics of signal perception, transduction, and integration in plants | | parentid:BIO137-4.4
+BIO137-4.4.2 | Overview of signal perception at the plasma membrane | | parentid:BIO137-4.4
+BIO137-4.4.3 | Intracellular signal transduction, amplification, and integration via second messengers and MAPK cascades | | parentid:BIO137-4.4
+BIO137-4.4.4 | Ethylene signal transduction | | parentid:BIO137-4.4
+BIO137-4.4.5 | Cytokinin signal transduction | | parentid:BIO137-4.4
+BIO137-4.4.6 | Integration of auxin signaling and transport | | parentid:BIO137-4.4
+BIO137-4.4.7 | Signal transduction from phytochromes | | parentid:BIO137-4.4
+BIO137-4.4.8 | Gibberellin signal transduction and its integration with phytochrome signaling during seedling development | | parentid:BIO137-4.4
+BIO137-4.4.9 | Integration of light, ABA, and CO2 signals in the regulation of stomatal aperture | | parentid:BIO137-4.4
+BIO137-4.4.10 | Prospects | | parentid:BIO137-4.4
+BIO137-4.5 | Molecular Regulation of Reproductive Development | | parentid:BIO137-4
+BIO137-4.5.1 | The transition from vegetative to reproductive development | | parentid:BIO137-4.5
+BIO137-4.5.2 | The molecular basis of flower development | | parentid:BIO137-4.5
+BIO137-4.5.3 | The formation of male gametes | | parentid:BIO137-4.5
+BIO137-4.5.4 | The formation of female gametes | | parentid:BIO137-4.5
+BIO137-4.5.5 | Pollination and fertilization | | parentid:BIO137-4.5
+BIO137-4.5.6 | The molecular basis of self-incompatibility | | parentid:BIO137-4.5
+BIO137-4.5.7 | Seed development | | parentid:BIO137-4.5
+BIO137-4.6 | Senescence and Cell Death | | parentid:BIO137-4
+BIO137-4.6.1 | Types of cell death | | parentid:BIO137-4.6
+BIO137-4.6.2 | PCD during seed development and germination | | parentid:BIO137-4.6
+BIO137-4.6.3 | Cell death during the development of secretory bodies, defensive structures and organ shapes | | parentid:BIO137-4.6
+BIO137-4.6.4 | PCD during reproductive development | | parentid:BIO137-4.6
+BIO137-4.6.5 | Senescence and PCD in the terminal development of leaves and other lateral organs | | parentid:BIO137-4.6
+BIO137-4.6.6 | Pigment metabolism in senescence | | parentid:BIO137-4.6
+BIO137-4.6.7 | Macromolecule breakdown and salvage of nutrients in senescence | | parentid:BIO137-4.6
+BIO137-4.6.8 | Energy and oxidative metabolism during senescence | | parentid:BIO137-4.6
+BIO137-4.6.9 | Environmental influences on senescence and cell death I: Abiotic interactions | | parentid:BIO137-4.6
+BIO137-4.6.10 | Environmental influences on senescence and cell death II: PCD responses to pathogen attack | | parentid:BIO137-4.6
+BIO137-4.6.11 | Plant hormones in senescence and defense-related PCD | | parentid:BIO137-4.6
+BIO137-5 | PLANT ENVIRONMENT AND AGRICULTURE | | parentid:BIO137
+BIO137-5.1 | Responses to Plant Pathogens | | parentid:BIO137-5
+BIO137-5.1.1 | Pathogens, pests, and disease | | parentid:BIO137-5.1
+BIO137-5.1.2 | An overview of immunity and defense | | parentid:BIO137-5.1
+BIO137-5.1.3 | How pathogens and pests cause disease | | parentid:BIO137-5.1
+BIO137-5.1.4 | Preformed defenses | | parentid:BIO137-5.1
+BIO137-5.1.5 | Induced defense | | parentid:BIO137-5.1
+BIO137-5.1.6 | Effector-triggered immunity, a second level of induced defense | | parentid:BIO137-5.1
+BIO137-5.1.7 | Other sources of genetic variation for resistance | | parentid:BIO137-5.1
+BIO137-5.1.8 | Local and systemic defense signaling | | parentid:BIO137-5.1
+BIO137-5.1.9 | Plant gene silencing confers virus resistance, tolerance, and attenuation | | parentid:BIO137-5.1
+BIO137-5.1.10 | Control of plant pathogens by genetic engineering | | parentid:BIO137-5.1
+BIO137-5.2 | Responses to Abiotic Stress | | parentid:BIO137-5
+BIO137-5.2.1 | Plant responses to abiotic stress | | parentid:BIO137-5.2
+BIO137-5.2.2 | Physiological and cellular responses to water deficit | | parentid:BIO137-5.2
+BIO137-5.2.3 | Gene expression and signal transduction in response to dehydration | | parentid:BIO137-5.2
+BIO137-5.2.4 | Freezing and chilling stress | | parentid:BIO137-5.2
+BIO137-5.2.5 | Flooding and oxygen deficit | | parentid:BIO137-5.2
+BIO137-5.2.6 | Oxidative stress | | parentid:BIO137-5.2
+BIO137-5.2.7 | Heat stress | | parentid:BIO137-5.2
+BIO137-5.2.8 | Crosstalk in stress responses | | parentid:BIO137-5.2
+BIO137-5.3 | Mineral Nutrient Acquisition, Transport, and Utilization | | parentid:BIO137-5
+BIO137-5.3.1 | Overview of essential mineral elements | | parentid:BIO137-5.3
+BIO137-5.3.2 | Mechanisms and regulation of plant K+ transport | | parentid:BIO137-5.3
+BIO137-5.3.3 | Phosphorus nutrition and transport | | parentid:BIO137-5.3
+BIO137-5.3.4 | The molecular physiology of micronutrient acquisition | | parentid:BIO137-5.3
+BIO137-5.3.5 | Plant responses to mineral toxicity | | parentid:BIO137-5.3
+BIO137-5.4 | Natural Products | | parentid:BIO137-5
+BIO137-5.4.1 | Terpenoids | | parentid:BIO137-5.4
+BIO137-5.4.2 | Biosynthesis of the basic five-carbon unit | | parentid:BIO137-5.4
+BIO137-5.4.3 | Repetitive additions of C5 units | | parentid:BIO137-5.4
+BIO137-5.4.4 | Formation of parent carbon skeletons | | parentid:BIO137-5.4
+BIO137-5.4.5 | Modification of terpenoid skeletons | | parentid:BIO137-5.4
+BIO137-5.4.6 | Metabolic engineering of terpenoid production | | parentid:BIO137-5.4
+BIO137-5.4.7 | Cyanogenic glycosides | | parentid:BIO137-5.4
+BIO137-5.4.8 | Cyanogenic glycoside biosynthesis | | parentid:BIO137-5.4
+BIO137-5.4.9 | Functions of cyanogenic glycosides | | parentid:BIO137-5.4
+BIO137-5.4.10 | Glucosinolates | | parentid:BIO137-5.4
+BIO137-5.4.11 | Alkaloids | | parentid:BIO137-5.4
+BIO137-5.4.12 | Alkaloid biosynthesis | | parentid:BIO137-5.4
+BIO137-5.4.13 | Biotechnological application of alkaloid biosynthesis research | | parentid:BIO137-5.4
+BIO137-5.4.14 | Phenolic compounds | | parentid:BIO137-5.4
+BIO137-5.4.15 | Phenolic biosynthesis | | parentid:BIO137-5.4
+BIO137-5.4.16 | The phenylpropanoid-acetate pathway | | parentid:BIO137-5.4
+BIO137-5.4.17 | The phenylpropanoid pathway | | parentid:BIO137-5.4
+BIO137-5.4.18 | Universal features of phenolic biosynthesis | | parentid:BIO137-5.4
+BIO137-5.4.19 | Evolution of secondary pathways | | parentid:BIO137-5.4
+BIO118-1 | Genetics Revolution  | | parentid:BIO118
+BIO118-1.1 | The Birth of Genetics | | parentid:BIO118-1
+BIO118-1.1.1 | Gregor Mendel—A monk in the garden | | parentid:BIO118-1.1
+BIO118-1.1.2 | Mendel rediscovered | | parentid:BIO118-1.1
+BIO118-1.1.3 | The central dogma of molecular biology | | parentid:BIO118-1.1
+BIO118-1.2 | After Cracking the Code | | parentid:BIO118-1
+BIO118-1.2.1 | Model organisms | | parentid:BIO118-1.2
+BIO118-1.2.2 | Tools for genetic analysis | | parentid:BIO118-1.2
+BIO118-1.3 | Genetics Today | | parentid:BIO118-1
+BIO118-1.3.1 | From classical genetics to medical genomics | | parentid:BIO118-1.3
+BIO118-1.3.2 | Investigating mutation and disease risk | | parentid:BIO118-1.3
+BIO118-1.3.3 | When rice gets its feet a little too wet | | parentid:BIO118-1.3
+BIO118-1.3.4 | Recent evolution in humans | | parentid:BIO118-1.3
+BIO118-2 | Transmission Genetics  | | parentid:BIO118
+BIO118-2.1 | Single-Gene Inheritance | | parentid:BIO118-2
+BIO118-2.1.1 | Single-Gene Inheritance Patterns | | parentid:BIO118-2.1
+BIO118-2.1.1.1 | Mendel’s pioneering experiments | | parentid:BIO118-2.1.1
+BIO118-2.1.1.2 | Mendel’s law of equal segregation | | parentid:BIO118-2.1.1
+BIO118-2.1.2 | The Chromosomal Basis of Single-Gene Inheritance Patterns | | parentid:BIO118-2.1
+BIO118-2.1.2.1 | Single-gene inheritance in diploids | | parentid:BIO118-2.1.2
+BIO118-2.1.2.2 | Single-gene inheritance in haploids | | parentid:BIO118-2.1.2
+BIO118-2.1.3 | The Molecular Basis of Mendelian Inheritance Patterns | | parentid:BIO118-2.1
+BIO118-2.1.3.1 | Structural differences between alleles at the molecular level | | parentid:BIO118-2.1.3
+BIO118-2.1.3.2 | Molecular aspects of gene transmission | | parentid:BIO118-2.1.3
+BIO118-2.1.3.3 | Alleles at the molecular level | | parentid:BIO118-2.1.3
+BIO118-2.1.4 | Some Genes Discovered by Observing Segregation Ratios | | parentid:BIO118-2.1
+BIO118-2.1.4.1 | A gene active in the development of flower color | | parentid:BIO118-2.1.4
+BIO118-2.1.4.2 | A gene for wing development | | parentid:BIO118-2.1.4
+BIO118-2.1.4.3 | A gene for hyphal branching | | parentid:BIO118-2.1.4
+BIO118-2.1.4.4 | Predicting progeny proportions or parental genotypes by applying the principles of single-gene inheritance | | parentid:BIO118-2.1.4
+BIO118-2.1.5 | Sex-Linked Single-Gene Inheritance Patterns | | parentid:BIO118-2.1
+BIO118-2.1.5.1 | Sex chromosomes | | parentid:BIO118-2.1.5
+BIO118-2.1.5.2 | Sex-linked patterns of inheritance | | parentid:BIO118-2.1.5
+BIO118-2.1.5.3 | X-linked inheritance | | parentid:BIO118-2.1.5
+BIO118-2.1.6 | Human Pedigree Analysis | | parentid:BIO118-2.1
+BIO118-2.1.6.1 | Autosomal recessive disorders | | parentid:BIO118-2.1.6
+BIO118-2.1.6.2 | Autosomal dominant disorders | | parentid:BIO118-2.1.6
+BIO118-2.1.6.3 | Autosomal polymorphisms | | parentid:BIO118-2.1.6
+BIO118-2.1.6.4 | X-linked recessive disorders | | parentid:BIO118-2.1.6
+BIO118-2.1.6.5 | X-linked dominant disorders | | parentid:BIO118-2.1.6
+BIO118-2.1.6.6 | Y-linked inheritance | | parentid:BIO118-2.1.6
+BIO118-2.1.6.7 | Calculating risks in pedigree analysis | | parentid:BIO118-2.1.6
+BIO118-2.2 | Independent Assortment of Genes | | parentid:BIO118-2
+BIO118-2.2.1 | Mendel’s Law of Independent Assortment | | parentid:BIO118-2.2
+BIO118-2.2.2 | Working with Independent Assortment | | parentid:BIO118-2.2
+BIO118-2.2.2.1 | Predicting progeny ratios | | parentid:BIO118-2.2.2
+BIO118-2.2.2.2 | Using the chi-square test on monohybrid and dihybrid ratios | | parentid:BIO118-2.2.2
+BIO118-2.2.2.3 | Synthesizing pure lines | | parentid:BIO118-2.2.2
+BIO118-2.2.2.4 | Hybrid vigor | | parentid:BIO118-2.2.2
+BIO118-2.2.3 | The Chromosomal Basis of Independent Assortment | | parentid:BIO118-2.2
+BIO118-2.2.3.1 | Independent assortment in diploid organisms | | parentid:BIO118-2.2.3
+BIO118-2.2.3.2 | Independent assortment in haploid organisms | | parentid:BIO118-2.2.3
+BIO118-2.2.3.3 | Independent assortment of combinations of autosomal and X-linked genes | | parentid:BIO118-2.2.3
+BIO118-2.2.3.4 | Recombination | | parentid:BIO118-2.2.3
+BIO118-2.2.4 | Polygenic Inheritance | | parentid:BIO118-2.2
+BIO118-2.2.5 | Organelle Genes: Inheritance Independent of the Nucleus | | parentid:BIO118-2.2
+BIO118-2.2.5.1 | Patterns of inheritance in organelles | | parentid:BIO118-2.2.5
+BIO118-2.2.5.2 | Cytoplasmic segregation | | parentid:BIO118-2.2.5
+BIO118-2.2.5.3 | Cytoplasmic mutations in humans | | parentid:BIO118-2.2.5
+BIO118-2.2.5.4 | mtDNA in evolutionary studies | | parentid:BIO118-2.2.5
+BIO118-2.3 | Mapping Eukaryote Chromosomes by Recombination | | parentid:BIO118-2
+BIO118-2.3.1 | Diagnostics of Linkage | | parentid:BIO118-2.3
+BIO118-2.3.1.1 | Using recombinant frequency to recognize linkage | | parentid:BIO118-2.3.1
+BIO118-2.3.1.2 | How crossovers produce recombinants for linked genes | | parentid:BIO118-2.3.1
+BIO118-2.3.1.3 | Linkage symbolism and terminology | | parentid:BIO118-2.3.1
+BIO118-2.3.1.4 | Evidence that crossing over is a breakage-and- rejoining process | | parentid:BIO118-2.3.1
+BIO118-2.3.1.5 | Evidence that crossing over takes place at the four-chromatid stage | | parentid:BIO118-2.3.1
+BIO118-2.3.1.6 | Multiple crossovers can include more than two chromatids | | parentid:BIO118-2.3.1
+BIO118-2.3.2 | Mapping by Recombinant Frequency | | parentid:BIO118-2.3
+BIO118-2.3.2.1 | Map units | | parentid:BIO118-2.3.2
+BIO118-2.3.2.2 | Three-point testcross | | parentid:BIO118-2.3.2
+BIO118-2.3.2.3 | Deducing gene order by inspection | | parentid:BIO118-2.3.2
+BIO118-2.3.2.4 | Interference | | parentid:BIO118-2.3.2
+BIO118-2.3.2.5 | Using ratios as diagnostics | | parentid:BIO118-2.3.2
+BIO118-2.3.3 | Mapping with Molecular Markers | | parentid:BIO118-2.3
+BIO118-2.3.3.1 | Single nucleotide polymorphisms | | parentid:BIO118-2.3.3
+BIO118-2.3.3.2 | Simple sequence length polymorphisms | | parentid:BIO118-2.3.3
+BIO118-2.3.3.3 | Detecting simple sequence length polymorphisms | | parentid:BIO118-2.3.3
+BIO118-2.3.3.4 | Recombination analysis using molecular markers | | parentid:BIO118-2.3.3
+BIO118-2.3.4 | Centromere Mapping with Linear Tetrads | | parentid:BIO118-2.3
+BIO118-2.3.5 | Using the Chi-Square Test to Infer Linkage | | parentid:BIO118-2.3
+BIO118-2.3.6 | Accounting for Unseen Multiple Crossovers | | parentid:BIO118-2.3
+BIO118-2.3.6.1 | A mapping function | | parentid:BIO118-2.3.6
+BIO118-2.3.6.2 | The Perkins formula | | parentid:BIO118-2.3.6
+BIO118-2.3.7 | Using Recombination-Based Maps in Conjunction with Physical Maps | | parentid:BIO118-2.3
+BIO118-2.3.8 | The Molecular Mechanism of Crossing Over | | parentid:BIO118-2.3
+BIO118-2.4 | The Genetics of Bacteria and Their Viruses | | parentid:BIO118-2
+BIO118-2.4.1 | Working with Microorganisms | | parentid:BIO118-2.4
+BIO118-2.4.2 | Bacterial Conjugation | | parentid:BIO118-2.4
+BIO118-2.4.2.1 | Discovery of conjugation | | parentid:BIO118-2.4.2
+BIO118-2.4.2.2 | Discovery of the fertility factor (F) | | parentid:BIO118-2.4.2
+BIO118-2.4.2.3 | Hfr strains | | parentid:BIO118-2.4.2
+BIO118-2.4.2.4 | Mapping of bacterial chromosomes | | parentid:BIO118-2.4.2
+BIO118-2.4.2.5 | F plasmids that carry genomic fragments | | parentid:BIO118-2.4.2
+BIO118-2.4.2.6 | R plasmids | | parentid:BIO118-2.4.2
+BIO118-2.4.3 | Bacterial Transformation | | parentid:BIO118-2.4
+BIO118-2.4.3.1 | The nature of transformation | | parentid:BIO118-2.4.3
+BIO118-2.4.3.2 | Chromosome mapping using transformation | | parentid:BIO118-2.4.3
+BIO118-2.4.4 | Bacteriophage Genetics | | parentid:BIO118-2.4
+BIO118-2.4.4.1 | Infection of bacteria by phages | | parentid:BIO118-2.4.4
+BIO118-2.4.4.2 | Mapping phage chromosomes by using phage crosses | | parentid:BIO118-2.4.4
+BIO118-2.4.5 | Transduction | | parentid:BIO118-2.4
+BIO118-2.4.5.1 | Discovery of transduction | | parentid:BIO118-2.4.5
+BIO118-2.4.5.2 | Generalized transduction | | parentid:BIO118-2.4.5
+BIO118-2.4.5.3 | Specialized transduction | | parentid:BIO118-2.4.5
+BIO118-2.4.5.4 | Mechanism of specialized transduction | | parentid:BIO118-2.4.5
+BIO118-2.4.6 | Physical Maps and Linkage Maps Compared | | parentid:BIO118-2.4
+BIO118-2.5 | Gene Interaction | | parentid:BIO118-2
+BIO118-2.5.1 | Interactions Between the Alleles of a Single Gene: Variations on Dominance | | parentid:BIO118-2.5
+BIO118-2.5.1.1 | Complete dominance and recessiveness | | parentid:BIO118-2.5.1
+BIO118-2.5.1.2 | Incomplete dominance | | parentid:BIO118-2.5.1
+BIO118-2.5.1.3 | Codominance | | parentid:BIO118-2.5.1
+BIO118-2.5.1.4 | Recessive lethal alleles | | parentid:BIO118-2.5.1
+BIO118-2.5.2 | Interaction of Genes in Pathways | | parentid:BIO118-2.5
+BIO118-2.5.2.1 | Biosynthetic pathways in Neurospora | | parentid:BIO118-2.5.2
+BIO118-2.5.2.2 | Gene interaction in other types of pathways | | parentid:BIO118-2.5.2
+BIO118-2.5.3 | Inferring Gene Interactions | | parentid:BIO118-2.5
+BIO118-2.5.3.1 | Sorting mutants using the complementation test | | parentid:BIO118-2.5.3
+BIO118-2.5.3.2 | Analyzing double mutants of random mutations | | parentid:BIO118-2.5.3
+BIO118-2.5.4 | Penetrance and Expressivity | | parentid:BIO118-2.5
+BIO118-3 | From Dna To Phenotype  | | parentid:BIO118
+BIO118-3.1 | Structure and Replication | | parentid:BIO118-3
+BIO118-3.1.1 | DNA: The Genetic Material | | parentid:BIO118-3.1
+BIO118-3.1.1.1 | Discovery of transformation | | parentid:BIO118-3.1.1
+BIO118-3.1.1.2 | Hershey–chase experiment | | parentid:BIO118-3.1.1
+BIO118-3.1.2 | DNA Structure | | parentid:BIO118-3.1
+BIO118-3.1.2.1 | DNA structure before Watson and crick | | parentid:BIO118-3.1.2
+BIO118-3.1.2.2 | The double helix | | parentid:BIO118-3.1.2
+BIO118-3.1.3 | Semiconservative Replication | | parentid:BIO118-3.1
+BIO118-3.1.3.1 | Meselson–Stahl experiment | | parentid:BIO118-3.1.3
+BIO118-3.1.3.2 | The replication fork | | parentid:BIO118-3.1.3
+BIO118-3.1.3.3 | DNA polymerases | | parentid:BIO118-3.1.3
+BIO118-3.1.4 | Overview of DNA Replication | | parentid:BIO118-3.1
+BIO118-3.1.5 | The Replisome: A Remarkable Replication Machine | | parentid:BIO118-3.1
+BIO118-3.1.5.1 | Unwinding the double helix | | parentid:BIO118-3.1.5
+BIO118-3.1.5.2 | Assembling the replisome: replication initiation | | parentid:BIO118-3.1.5
+BIO118-3.1.6 | Replication in Eukaryotic Organisms | | parentid:BIO118-3.1
+BIO118-3.1.6.1 | Eukaryotic origins of replication | | parentid:BIO118-3.1.6
+BIO118-3.1.6.2 | DNA replication and the yeast cell cycle | | parentid:BIO118-3.1.6
+BIO118-3.1.6.3 | Replication origins in higher eukaryotes | | parentid:BIO118-3.1.6
+BIO118-3.1.7 | Telomeres and Telomerase: Replication Termination | | parentid:BIO118-3.1
+BIO118-3.2 | RNA: Transcription and Processing | | parentid:BIO118-3
+BIO118-3.2.1 | RNA | | parentid:BIO118-3.2
+BIO118-3.2.1.1 | Early experiments suggest an rnA intermediate | | parentid:BIO118-3.2.1
+BIO118-3.2.1.2 | Properties of rnA | | parentid:BIO118-3.2.1
+BIO118-3.2.1.3 | Classes of rnA | | parentid:BIO118-3.2.1
+BIO118-3.2.2 | Transcription | | parentid:BIO118-3.2
+BIO118-3.2.2.1 | Overview: DNA as transcription template | | parentid:BIO118-3.2.2
+BIO118-3.2.2.2 | Stages of transcription | | parentid:BIO118-3.2.2
+BIO118-3.2.3 | Transcription in Eukaryotes | | parentid:BIO118-3.2
+BIO118-3.2.3.1 | Transcription initiation in eukaryotes | | parentid:BIO118-3.2.3
+BIO118-3.2.3.2 | Elongation, termination, and pre-mrnA processing in eukaryotes | | parentid:BIO118-3.2.3
+BIO118-3.2.4 | Intron Removal and Exon Splicing | | parentid:BIO118-3.2
+BIO118-3.2.4.1 | Small nuclear rnAs (snrnAs): the mechanism of exon splicing | | parentid:BIO118-3.2.4
+BIO118-3.2.4.2 | Self-splicing introns and the rnA world | | parentid:BIO118-3.2.4
+BIO118-3.2.5 | Small Functional RNAs That Regulate and Protect the Eukaryotic Genome | | parentid:BIO118-3.2
+BIO118-3.2.5.1 | MirnAs are important regulators of gene expression | | parentid:BIO118-3.2.5
+BIO118-3.2.5.2 | SirnAs ensure genome stability | | parentid:BIO118-3.2.5
+BIO118-3.2.5.3 | Similar mechanisms generate sirnA and mirnA | | parentid:BIO118-3.2.5
+BIO118-3.3 | Proteins and Their Synthesis | | parentid:BIO118-3
+BIO118-3.3.1 | Protein Structure | | parentid:BIO118-3.3
+BIO118-3.3.2 | The Genetic Code | | parentid:BIO118-3.3
+BIO118-3.3.2.1 | Overlapping versus nonoverlapping codes | | parentid:BIO118-3.3.2
+BIO118-3.3.2.2 | Number of letters in the codon | | parentid:BIO118-3.3.2
+BIO118-3.3.2.3 | Use of suppressors to demonstrate a triplet code | | parentid:BIO118-3.3.2
+BIO118-3.3.2.4 | Degeneracy of the genetic code | | parentid:BIO118-3.3.2
+BIO118-3.3.2.5 | Cracking the code | | parentid:BIO118-3.3.2
+BIO118-3.3.2.6 | Stop codons | | parentid:BIO118-3.3.2
+BIO118-3.3.3 | tRNA: The Adapter | | parentid:BIO118-3.3
+BIO118-3.3.3.1 | Codon translation by trnA | | parentid:BIO118-3.3.3
+BIO118-3.3.3.2 | Degeneracy revisited | | parentid:BIO118-3.3.3
+BIO118-3.3.4 | Ribosomes | | parentid:BIO118-3.3
+BIO118-3.3.4.1 | Ribosome features | | parentid:BIO118-3.3.4
+BIO118-3.3.4.2 | Translation initiation, elongation, and termination | | parentid:BIO118-3.3.4
+BIO118-3.3.4.3 | Nonsense suppressor mutations | | parentid:BIO118-3.3.4
+BIO118-3.3.5 | The Proteome | | parentid:BIO118-3.3
+BIO118-3.3.5.1 | Alternative splicing generates protein isoforms | | parentid:BIO118-3.3.5
+BIO118-3.3.5.2 | Posttranslational events | | parentid:BIO118-3.3.5
+BIO118-3.4 | Gene Isolation and Manipulation | | parentid:BIO118-3
+BIO118-3.4.1 | Overview: Isolating and Amplifying Specific DNA Fragments | | parentid:BIO118-3.4
+BIO118-3.4.2 | Generating Recombinant DNA Molecules | | parentid:BIO118-3.4
+BIO118-3.4.2.1 | Genomic DNA can be cut up before cloning | | parentid:BIO118-3.4.2
+BIO118-3.4.2.2 | The polymerase chain reaction amplifies selected regions of DNA in vitro | | parentid:BIO118-3.4.2
+BIO118-3.4.2.3 | DNA copies of mrnA can be synthesized | | parentid:BIO118-3.4.2
+BIO118-3.4.2.4 | Attaching donor and vector DNA | | parentid:BIO118-3.4.2
+BIO118-3.4.2.5 | Amplification of donor DNA inside a bacterial cell | | parentid:BIO118-3.4.2
+BIO118-3.4.2.6 | Making genomic and cDNA libraries | | parentid:BIO118-3.4.2
+BIO118-3.4.3 | Using Molecular Probes to Find and Analyze a Specific Clone of Interest | | parentid:BIO118-3.4
+BIO118-3.4.3.1 | Finding specific clones by using probes | | parentid:BIO118-3.4.3
+BIO118-3.4.3.2 | Finding specific clones by functional complementation | | parentid:BIO118-3.4.3
+BIO118-3.4.3.3 | Southern- and northern-blot analysis of DNA | | parentid:BIO118-3.4.3
+BIO118-3.4.4 | Determining the Base Sequence of a DNA Segment | | parentid:BIO118-3.4
+BIO118-3.4.5 | Aligning Genetic and Physical Maps to Isolate Specific Genes | | parentid:BIO118-3.4
+BIO118-3.4.5.1 | Using positional cloning to identify a human-disease gene | | parentid:BIO118-3.4.5
+BIO118-3.4.5.2 | Using fine mapping to identify genes | | parentid:BIO118-3.4.5
+BIO118-3.4.6 | Genetic Engineering | | parentid:BIO118-3.4
+BIO118-3.4.6.1 | Genetic engineering in Saccharomyces cerevisiae | | parentid:BIO118-3.4.6
+BIO118-3.4.6.2 | Genetic engineering in plants | | parentid:BIO118-3.4.6
+BIO118-3.4.6.3 | Genetic engineering in animals | | parentid:BIO118-3.4.6
+BIO118-3.5 | Regulation of Gene Expression in Bacteria and Their Viruses | | parentid:BIO118-3
+BIO118-3.5.1 | Gene Regulation | | parentid:BIO118-3.5
+BIO118-3.5.1.1 | The basics of prokaryotic transcriptional regulation: genetic switches | | parentid:BIO118-3.5.1
+BIO118-3.5.1.2 | A first look at the lac regulatory circuit | | parentid:BIO118-3.5.1
+BIO118-3.5.2 | Discovery of the lac System: Negative Control | | parentid:BIO118-3.5
+BIO118-3.5.2.1 | Genes controlled together | | parentid:BIO118-3.5.2
+BIO118-3.5.2.2 | Genetic evidence for the operator and repressor | | parentid:BIO118-3.5.2
+BIO118-3.5.2.3 | Genetic evidence for allostery | | parentid:BIO118-3.5.2
+BIO118-3.5.2.4 | Genetic analysis of the lac promoter | | parentid:BIO118-3.5.2
+BIO118-3.5.2.5 | Molecular characterization of the Lac repressor and the lac operator | | parentid:BIO118-3.5.2
+BIO118-3.5.3 | Catabolite Repression of the lac Operon: Positive Control | | parentid:BIO118-3.5
+BIO118-3.5.3.1 | The basics of lac catabolite repression: choosing the best sugar to metabolize | | parentid:BIO118-3.5.3
+BIO118-3.5.3.2 | The structures of target DNA sites | | parentid:BIO118-3.5.3
+BIO118-3.5.3.3 | A summary of the lac operon | | parentid:BIO118-3.5.3
+BIO118-3.5.4 | Dual Positive and Negative Control: The Arabinose Operon | | parentid:BIO118-3.5
+BIO118-3.5.5 | Metabolic Pathways and Additional Levels of Regulation: Attenuation | | parentid:BIO118-3.5
+BIO118-3.5.6 | Bacteriophage Life Cycles: More Regulators, Complex Operons | | parentid:BIO118-3.5
+BIO118-3.5.6.1 | Molecular anatomy of the genetic switch | | parentid:BIO118-3.5.6
+BIO118-3.5.6.2 | Sequence-specific binding of regulatory proteins to DNA | | parentid:BIO118-3.5.6
+BIO118-3.5.7 | Alternative Sigma Factors Regulate Large Sets of Genes | | parentid:BIO118-3.5
+BIO118-3.6 | Regulation of Gene Expression in Eukaryotes | | parentid:BIO118-3
+BIO118-3.6.1 | Transcriptional Regulation in Eukaryotes: An Overview | | parentid:BIO118-3.6
+BIO118-3.6.2 | Lessons from Yeast: The GAL System | | parentid:BIO118-3.6
+BIO118-3.6.2.1 | Gal4 regulates multiple genes through upstream activation sequences | | parentid:BIO118-3.6.2
+BIO118-3.6.2.2 | The Gal4 protein has separable DNA-binding and activation domains | | parentid:BIO118-3.6.2
+BIO118-3.6.2.3 | Gal4 activity is physiologically regulated | | parentid:BIO118-3.6.2
+BIO118-3.6.2.4 | Gal4 functions in most eukaryotes | | parentid:BIO118-3.6.2
+BIO118-3.6.2.5 | Activators recruit the transcriptional machinery | | parentid:BIO118-3.6.2
+BIO118-3.6.2.6 | The control of yeast mating type: combinatorial interactions | | parentid:BIO118-3.6.2
+BIO118-3.6.3 | Dynamic Chromatin | | parentid:BIO118-3.6
+BIO118-3.6.3.1 | Chromatin-remodeling proteins and gene activation | | parentid:BIO118-3.6.3
+BIO118-3.6.3.2 | Modification of histones | | parentid:BIO118-3.6.3
+BIO118-3.6.3.3 | Histone methylation can activate or repress gene expression | | parentid:BIO118-3.6.3
+BIO118-3.6.3.4 | The inheritance of histone modifications and chromatin structure | | parentid:BIO118-3.6.3
+BIO118-3.6.3.5 | Histone variants | | parentid:BIO118-3.6.3
+BIO118-3.6.3.6 | DNA methylation: another heritable mark that influences chromatin structure | | parentid:BIO118-3.6.3
+BIO118-3.6.4 | Activation of Genes in a Chromatin Environment | | parentid:BIO118-3.6
+BIO118-3.6.4.1 | The β-interferon enhanceosome | | parentid:BIO118-3.6.4
+BIO118-3.6.4.2 | Enhancer-blocking insulators | | parentid:BIO118-3.6.4
+BIO118-3.6.5 | Long-Term Inactivation of Genes in a Chromatin Environment | | parentid:BIO118-3.6
+BIO118-3.6.5.1 | Mating-type switching and gene silencing | | parentid:BIO118-3.6.5
+BIO118-3.6.5.2 | Heterochromatin and euchromatin compared | | parentid:BIO118-3.6.5
+BIO118-3.6.5.3 | Position-effect variegation in Drosophila reveals genomic neighborhoods | | parentid:BIO118-3.6.5
+BIO118-3.6.5.4 | Genetic analysis of PEV reveals proteins necessary for heterochromatin formation | | parentid:BIO118-3.6.5
+BIO118-3.6.6 | Gender-Specific Silencing of Genes and Whole Chromosomes | | parentid:BIO118-3.6
+BIO118-3.6.6.1 | Genomic imprinting explains some unusual patterns of inheritance | | parentid:BIO118-3.6.6
+BIO118-3.6.6.2 | But what about dolly and other cloned mammals? | | parentid:BIO118-3.6.6
+BIO118-3.6.6.3 | Silencing an entire chromosome: X-chromosome inactivation | | parentid:BIO118-3.6.6
+BIO118-3.6.7 | Post-Transcriptional Gene Repression by miRNAs | | parentid:BIO118-3.6
+BIO118-3.7 | The Genetic Control of Development | | parentid:BIO118-3
+BIO118-3.7.1 | The Genetic Approach to Development | | parentid:BIO118-3.7
+BIO118-3.7.2 | The Genetic Toolkit for Drosophila Development | | parentid:BIO118-3.7
+BIO118-3.7.2.1 | Classification of genes by developmental function | | parentid:BIO118-3.7.2
+BIO118-3.7.2.2 | Homeotic genes and segmental identity | | parentid:BIO118-3.7.2
+BIO118-3.7.2.3 | Organization and expression of Hox genes | | parentid:BIO118-3.7.2
+BIO118-3.7.2.4 | The homeobox | | parentid:BIO118-3.7.2
+BIO118-3.7.2.5 | Clusters of Hox genes control development in most animals | | parentid:BIO118-3.7.2
+BIO118-3.7.3 | Defining the Entire Toolkit | | parentid:BIO118-3.7
+BIO118-3.7.3.1 | The anteroposterior and dorsoventral axes | | parentid:BIO118-3.7.3
+BIO118-3.7.3.2 | Expression of toolkit genes | | parentid:BIO118-3.7.3
+BIO118-3.7.4 | Spatial Regulation of Gene Expression in Development | | parentid:BIO118-3.7
+BIO118-3.7.4.1 | Maternal gradients and gene activation | | parentid:BIO118-3.7.4
+BIO118-3.7.4.2 | Drawing stripes: integration of gap-protein inputs | | parentid:BIO118-3.7.4
+BIO118-3.7.4.3 | Making segments different: integration of Hox inputs | | parentid:BIO118-3.7.4
+BIO118-3.7.5 | Post-transcriptional Regulation of Gene Expression in Development | | parentid:BIO118-3.7
+BIO118-3.7.5.1 | RNA splicing and sex determination in Drosophila | | parentid:BIO118-3.7.5
+BIO118-3.7.5.2 | Regulation of mrnA translation and cell lineage in C. elegans | | parentid:BIO118-3.7.5
+BIO118-3.7.5.3 | Translational control in the early embryo | | parentid:BIO118-3.7.5
+BIO118-3.7.5.4 | miRNA control of developmental timing in C. elegans and other species | | parentid:BIO118-3.7.5
+BIO118-3.7.6 | From Flies to Fingers, Feathers, and Floor Plates: The Many Roles of Individual Toolkit Genes | | parentid:BIO118-3.7
+BIO118-3.7.7 | Development and Disease | | parentid:BIO118-3.7
+BIO118-3.7.7.1 | Polydactyly | | parentid:BIO118-3.7.7
+BIO118-3.7.7.2 | Holoprosencephaly | | parentid:BIO118-3.7.7
+BIO118-3.7.7.3 | Cancer as a developmental disease | | parentid:BIO118-3.7.7
+BIO118-3.8 | Genomes and Genomics | | parentid:BIO118-3
+BIO118-3.8.1 | The Genomics Revolution | | parentid:BIO118-3.8
+BIO118-3.8.2 | Obtaining the Sequence of a Genome | | parentid:BIO118-3.8
+BIO118-3.8.2.1 | Turning sequence reads into an assembled sequence | | parentid:BIO118-3.8.2
+BIO118-3.8.2.2 | Whole-genome sequencing | | parentid:BIO118-3.8.2
+BIO118-3.8.2.3 | Traditional WGS | | parentid:BIO118-3.8.2
+BIO118-3.8.2.4 | Next-generation whole-genome shotgun sequencing | | parentid:BIO118-3.8.2
+BIO118-3.8.2.5 | Whole-genome-sequence assembly | | parentid:BIO118-3.8.2
+BIO118-3.8.3 | Bioinformatics: Meaning from Genomic Sequence | | parentid:BIO118-3.8
+BIO118-3.8.3.1 | The nature of the information content of DNA | | parentid:BIO118-3.8.3
+BIO118-3.8.3.2 | Deducing the protein-encoding genes from genomic sequence | | parentid:BIO118-3.8.3
+BIO118-3.8.4 | The Structure of the Human Genome | | parentid:BIO118-3.8
+BIO118-3.8.4.1 | Noncoding functional elements in the genome | | parentid:BIO118-3.8.4
+BIO118-3.8.5 | The Comparative Genomics of Humans with Other Species | | parentid:BIO118-3.8
+BIO118-3.8.5.1 | Phylogenetic inference | | parentid:BIO118-3.8.5
+BIO118-3.8.5.2 | Of mice and humans | | parentid:BIO118-3.8.5
+BIO118-3.8.5.3 | Comparative genomics of chimpanzees and humans | | parentid:BIO118-3.8.5
+BIO118-3.8.6 | Comparative Genomics and Human Medicine | | parentid:BIO118-3.8
+BIO118-3.8.6.1 | The exome and personalized genomics | | parentid:BIO118-3.8.6
+BIO118-3.8.6.2 | Comparative genomics of nonpathogenic and pathogenic E. coli | | parentid:BIO118-3.8.6
+BIO118-3.8.7 | Functional Genomics and Reverse Genetics | | parentid:BIO118-3.8
+BIO118-3.8.7.1 | “’Omics” | | parentid:BIO118-3.8.7
+BIO118-3.8.7.2 | Reverse genetics | | parentid:BIO118-3.8.7
+BIO118-4 | Mutation, Variation, And Evolution  | | parentid:BIO118
+BIO118-4.1 | The Dynamic Genome: Transposable Elements | | parentid:BIO118-4
+BIO118-4.1.1 | Discovery of Transposable Elements in Maize | | parentid:BIO118-4.1
+BIO118-4.1.1.1 | Mcclintock’s experiments: the Ds element | | parentid:BIO118-4.1.1
+BIO118-4.1.1.2 | Autonomous and nonautonomous elements | | parentid:BIO118-4.1.1
+BIO118-4.1.1.3 | Transposable elements: only in maize? | | parentid:BIO118-4.1.1
+BIO118-4.1.2 | Transposable Elements in Prokaryotes | | parentid:BIO118-4.1
+BIO118-4.1.2.1 | Bacterial insertion sequences | | parentid:BIO118-4.1.2
+BIO118-4.1.2.2 | Prokaryotic transposons | | parentid:BIO118-4.1.2
+BIO118-4.1.2.3 | Mechanism of transposition | | parentid:BIO118-4.1.2
+BIO118-4.1.3 | Transposable Elements in Eukaryotes | | parentid:BIO118-4.1
+BIO118-4.1.3.1 | Class 1: retrotransposons | | parentid:BIO118-4.1.3
+BIO118-4.1.3.2 | Class 2: dnA transposons | | parentid:BIO118-4.1.3
+BIO118-4.1.3.3 | Utility of dnA transposons for gene discovery | | parentid:BIO118-4.1.3
+BIO118-4.1.4 | The Dynamic Genome: More Transposable Elements Than Ever Imagined | | parentid:BIO118-4.1
+BIO118-4.1.4.1 | Large genomes are largely transposable elements | | parentid:BIO118-4.1.4
+BIO118-4.1.4.2 | Transposable elements in the human genome | | parentid:BIO118-4.1.4
+BIO118-4.1.4.3 | The grasses: Ltr-retrotransposons thrive in large genomes | | parentid:BIO118-4.1.4
+BIO118-4.1.4.4 | Safe havens | | parentid:BIO118-4.1.4
+BIO118-4.1.5 | Regulation of Transposable Element Movement by the Host | | parentid:BIO118-4.1
+BIO118-4.1.5.1 | Genome surveillance in animals and bacteria | | parentid:BIO118-4.1.5
+BIO118-4.2 | Mutation, Repair, and Recombination | | parentid:BIO118-4
+BIO118-4.2.1 | The Phenotypic Consequences of DNA Mutations | | parentid:BIO118-4.2
+BIO118-4.2.1.1 | Types of point mutation | | parentid:BIO118-4.2.1
+BIO118-4.2.1.2 | The molecular consequences of point mutations in a coding region | | parentid:BIO118-4.2.1
+BIO118-4.2.1.3 | The molecular consequences of point mutations in a noncoding region | | parentid:BIO118-4.2.1
+BIO118-4.2.2 | The Molecular Basis of Spontaneous Mutations | | parentid:BIO118-4.2
+BIO118-4.2.2.1 | Luria and delbrück fluctuation test | | parentid:BIO118-4.2.2
+BIO118-4.2.2.2 | Mechanisms of spontaneous mutations | | parentid:BIO118-4.2.2
+BIO118-4.2.2.3 | Spontaneous mutations in humans: trinucleotide- repeat diseases | | parentid:BIO118-4.2.2
+BIO118-4.2.3 | The Molecular Basis of Induced Mutations | | parentid:BIO118-4.2
+BIO118-4.2.3.1 | Mechanisms of mutagenesis | | parentid:BIO118-4.2.3
+BIO118-4.2.3.2 | The Ames test: evaluating mutagens in our environment | | parentid:BIO118-4.2.3
+BIO118-4.2.4 | Biological Repair Mechanisms | | parentid:BIO118-4.2
+BIO118-4.2.4.1 | Direct reversal of damaged DNA | | parentid:BIO118-4.2.4
+BIO118-4.2.4.2 | Base-excision repair | | parentid:BIO118-4.2.4
+BIO118-4.2.4.3 | Nucleotide-excision repair | | parentid:BIO118-4.2.4
+BIO118-4.2.4.4 | Postreplication repair: mismatch repair | | parentid:BIO118-4.2.4
+BIO118-4.2.4.5 | Error-prone repair: translesion DNA synthesis | | parentid:BIO118-4.2.4
+BIO118-4.2.4.6 | Repair of double-strand breaks | | parentid:BIO118-4.2.4
+BIO118-4.2.4.7 | The involvement of DSB repair in meiotic recombination | | parentid:BIO118-4.2.4
+BIO118-4.2.5 | Cancer: An Important Phenotypic Consequence of Mutation | | parentid:BIO118-4.2
+BIO118-4.2.5.1 | How cancer cells differ from normal cells | | parentid:BIO118-4.2.5
+BIO118-4.2.5.2 | Mutations in cancer cells | | parentid:BIO118-4.2.5
+BIO118-4.3 | Large-Scale Chromosomal Changes | | parentid:BIO118-4
+BIO118-4.3.1 | Changes in Chromosome Number | | parentid:BIO118-4.3
+BIO118-4.3.1.1 | Aberrant euploidy | | parentid:BIO118-4.3.1
+BIO118-4.3.1.2 | Aneuploidy | | parentid:BIO118-4.3.1
+BIO118-4.3.1.3 | The concept of gene balance | | parentid:BIO118-4.3.1
+BIO118-4.3.2 | Changes in Chromosome Structure | | parentid:BIO118-4.3
+BIO118-4.3.2.1 | Deletions | | parentid:BIO118-4.3.2
+BIO118-4.3.2.2 | Duplications | | parentid:BIO118-4.3.2
+BIO118-4.3.2.3 | Inversions | | parentid:BIO118-4.3.2
+BIO118-4.3.2.4 | Reciprocal translocations | | parentid:BIO118-4.3.2
+BIO118-4.3.2.5 | Robertsonian translocations | | parentid:BIO118-4.3.2
+BIO118-4.3.2.6 | Applications of inversions and translocations | | parentid:BIO118-4.3.2
+BIO118-4.3.2.7 | Rearrangements and cancer | | parentid:BIO118-4.3.2
+BIO118-4.3.2.8 | Identifying chromosome mutations by genomics | | parentid:BIO118-4.3.2
+BIO118-4.3.3 | Overall Incidence of Human Chromosome Mutations | | parentid:BIO118-4.3
+BIO118-4.4 | Population Genetics | | parentid:BIO118-4
+BIO118-4.4.1 | Detecting Genetic Variation | | parentid:BIO118-4.4
+BIO118-4.4.1.1 | Single nucleotide polymorphisms (SNPs) | | parentid:BIO118-4.4.1
+BIO118-4.4.1.2 | Microsatellites | | parentid:BIO118-4.4.1
+BIO118-4.4.1.3 | Haplotypes | | parentid:BIO118-4.4.1
+BIO118-4.4.1.4 | Other sources and forms of variation | | parentid:BIO118-4.4.1
+BIO118-4.4.1.5 | The HapMap Project | | parentid:BIO118-4.4.1
+BIO118-4.4.2 | The Gene-Pool Concept and the Hardy–Weinberg Law | | parentid:BIO118-4.4
+BIO118-4.4.3 | Mating Systems | | parentid:BIO118-4.4
+BIO118-4.4.3.1 | Assortative mating | | parentid:BIO118-4.4.3
+BIO118-4.4.3.2 | Isolation by distance | | parentid:BIO118-4.4.3
+BIO118-4.4.3.3 | Inbreeding | | parentid:BIO118-4.4.3
+BIO118-4.4.3.4 | The inbreeding coefficient | | parentid:BIO118-4.4.3
+BIO118-4.4.3.5 | Population size and inbreeding | | parentid:BIO118-4.4.3
+BIO118-4.4.4 | Genetic Variation and Its Measurement | | parentid:BIO118-4.4
+BIO118-4.4.5 | The Modulation of Genetic Variation | | parentid:BIO118-4.4
+BIO118-4.4.5.1 | New alleles enter the population: mutation and migration | | parentid:BIO118-4.4.5
+BIO118-4.4.5.2 | Recombination and linkage disequilibrium | | parentid:BIO118-4.4.5
+BIO118-4.4.5.3 | Genetic drift and population size | | parentid:BIO118-4.4.5
+BIO118-4.4.5.4 | Selection | | parentid:BIO118-4.4.5
+BIO118-4.4.5.5 | Forms of selection | | parentid:BIO118-4.4.5
+BIO118-4.4.5.6 | Balance between mutation and drift | | parentid:BIO118-4.4.5
+BIO118-4.4.5.7 | Balance between mutation and selection | | parentid:BIO118-4.4.5
+BIO118-4.4.6 | Biological and Social Applications | | parentid:BIO118-4.4
+BIO118-4.4.6.1 | conservation genetics | | parentid:BIO118-4.4.6
+BIO118-4.4.6.2 | calculating disease risks | | parentid:BIO118-4.4.6
+BIO118-4.4.6.3 | DNA forensics | | parentid:BIO118-4.4.6
+BIO118-4.4.6.4 | Googling your DNA mates | | parentid:BIO118-4.4.6
+BIO118-4.5 | The Inheritance of Complex Traits | | parentid:BIO118-4
+BIO118-4.5.1 | Measuring Quantitative Variation | | parentid:BIO118-4.5
+BIO118-4.5.1.1 | Types of traits and inheritance | | parentid:BIO118-4.5.1
+BIO118-4.5.1.2 | The mean | | parentid:BIO118-4.5.1
+BIO118-4.5.1.3 | The variance | | parentid:BIO118-4.5.1
+BIO118-4.5.1.4 | The normal distribution | | parentid:BIO118-4.5.1
+BIO118-4.5.2 | A Simple Genetic Model for Quantitative Traits | | parentid:BIO118-4.5
+BIO118-4.5.2.1 | Genetic and environmental deviations | | parentid:BIO118-4.5.2
+BIO118-4.5.2.2 | Genetic and environmental variances | | parentid:BIO118-4.5.2
+BIO118-4.5.2.3 | correlation between variables | | parentid:BIO118-4.5.2
+BIO118-4.5.3 | Broad-Sense Heritability: Nature Versus Nurture | | parentid:BIO118-4.5
+BIO118-4.5.3.1 | Measuring heritability in humans using twin studies | | parentid:BIO118-4.5.3
+BIO118-4.5.4 | Narrow-Sense Heritability: Predicting Phenotypes | | parentid:BIO118-4.5
+BIO118-4.5.4.1 | Gene action and the transmission of genetic variation | | parentid:BIO118-4.5.4
+BIO118-4.5.4.2 | The additive and dominance effects | | parentid:BIO118-4.5.4
+BIO118-4.5.4.3 | A model with additivity and dominance | | parentid:BIO118-4.5.4
+BIO118-4.5.4.4 | Narrow-sense heritability | | parentid:BIO118-4.5.4
+BIO118-4.5.4.5 | Predicting offspring phenotypes | | parentid:BIO118-4.5.4
+BIO118-4.5.4.6 | Selection on complex traits | | parentid:BIO118-4.5.4
+BIO118-4.5.5 | Mapping QTL in Populations with Known Pedigrees | | parentid:BIO118-4.5
+BIO118-4.5.5.1 | The basic method | | parentid:BIO118-4.5.5
+BIO118-4.5.5.2 | From QTL to gene | | parentid:BIO118-4.5.5
+BIO118-4.5.6 | Association Mapping in Random-Mating Populations | | parentid:BIO118-4.5
+BIO118-4.5.6.1 | The basic method | | parentid:BIO118-4.5.6
+BIO118-4.5.6.2 | GWA, genes, disease, and heritability | | parentid:BIO118-4.5.6
+BIO118-4.6 | Evolution of Genes and Traits | | parentid:BIO118-4
+BIO118-4.6.1 | Evolution by Natural Selection | | parentid:BIO118-4.6
+BIO118-4.6.2 | Natural Selection in Action: An Exemplary Case | | parentid:BIO118-4.6
+BIO118-4.6.2.1 | The selective advantage of HbS | | parentid:BIO118-4.6.2
+BIO118-4.6.2.2 | The molecular origins of HbS | | parentid:BIO118-4.6.2
+BIO118-4.6.3 | Molecular Evolution: The Neutral Theory | | parentid:BIO118-4.6
+BIO118-4.6.3.1 | The development of the neutral theory | | parentid:BIO118-4.6.3
+BIO118-4.6.3.2 | The rate of neutral substitutions | | parentid:BIO118-4.6.3
+BIO118-4.6.3.3 | The signature of purifying selection on DNA | | parentid:BIO118-4.6.3
+BIO118-4.6.4 | Cumulative Selection and Multistep Paths to Functional Change | | parentid:BIO118-4.6
+BIO118-4.6.4.1 | Multistep pathways in evolution | | parentid:BIO118-4.6.4
+BIO118-4.6.4.2 | The signature of positive selection on DNA sequences | | parentid:BIO118-4.6.4
+BIO118-4.6.5 | Morphological Evolution | | parentid:BIO118-4.6
+BIO118-4.6.5.1 | Adaptive changes in a pigment-regulating protein | | parentid:BIO118-4.6.5
+BIO118-4.6.5.2 | Gene inactivation | | parentid:BIO118-4.6.5
+BIO118-4.6.5.3 | Regulatory-sequence evolution | | parentid:BIO118-4.6.5
+BIO118-4.6.5.4 | Loss of characters through regulatory-sequence evolution | | parentid:BIO118-4.6.5
+BIO118-4.6.5.5 | Regulatory evolution in humans | | parentid:BIO118-4.6.5
+BIO118-4.6.6 | The Origin of New Genes and Protein Functions | | parentid:BIO118-4.6
+BIO118-4.6.6.1 | Expanding gene number | | parentid:BIO118-4.6.6
+BIO118-4.6.6.2 | The fate of duplicated genes | | parentid:BIO118-4.6.6
+BIO118-4.6.6.3 | A Brief Guide to Model Organisms | | parentid:BIO118-4.6.6
+BIO118-AppendixA | Genetic Nomenclature | | parentid:BIO118
+BIO118-AppendixB | Bioinformatics Resources for Genetics and Genomics | | parentid:BIO118
+BIO126-1 | Exploring The Phenomena  | | parentid:BIO126
+BIO126-1.1 | Introduction | | parentid:BIO126-1
+BIO126-1.1.1 | About Our Subject  | | parentid:BIO126-1.1
+BIO126-1.1.2 | About This Book  | | parentid:BIO126-1.1
+BIO126-1.2 | Photon Counting in Vision | | parentid:BIO126-1
+BIO126-1.2.1 | A First Look  | | parentid:BIO126-1.2
+BIO126-1.2.2 | Dynamics of Single Molecules  | | parentid:BIO126-1.2
+BIO126-1.2.3 | Biochemical Amplification  | | parentid:BIO126-1.2
+BIO126-1.2.4 | The First Synapse and Beyond  | | parentid:BIO126-1.2
+BIO126-1.2.5 | Coda  | | parentid:BIO126-1.2
+BIO126-1.3 | Lessons, Problems, Principles | | parentid:BIO126-1
+BIO126-2 | Candidate Principles  | | parentid:BIO126
+BIO126-2.1 | Noise Is Not Negligible | | parentid:BIO126-2
+BIO126-2.1.1 | Fluctuations and Chemical Reactions  | | parentid:BIO126-2.1
+BIO126-2.1.2 | Motility and Chemotaxis in Bacteria  | | parentid:BIO126-2.1
+BIO126-2.1.3 | Molecule Counting, More Generally  | | parentid:BIO126-2.1
+BIO126-2.1.4 | More about Noise in Perception  | | parentid:BIO126-2.1
+BIO126-2.1.5 | Proofreading and Active Noise Reduction  | | parentid:BIO126-2.1
+BIO126-2.1.6 | Perspectives  | | parentid:BIO126-2.1
+BIO126-2.2 | No Fine Tuning | | parentid:BIO126-2
+BIO126-2.2.1 | Sequence Ensembles  | | parentid:BIO126-2.2
+BIO126-2.2.2 | Ion Channels and Neuronal Dynamics  | | parentid:BIO126-2.2
+BIO126-2.2.3 | The States of Cells  | | parentid:BIO126-2.2
+BIO126-2.2.4 | Long Time Scales in Neural Networks  | | parentid:BIO126-2.2
+BIO126-2.2.5 | Perspectives  | | parentid:BIO126-2.2
+BIO126-2.3 | Efficient Representation | | parentid:BIO126-2
+BIO126-2.3.1 | Entropy and Information  | | parentid:BIO126-2.3
+BIO126-2.3.2 | Noise and Information Flow  | | parentid:BIO126-2.3
+BIO126-2.3.3 | Does Biology Care about Bits?  | | parentid:BIO126-2.3
+BIO126-2.3.4 | Optimizing Information Flow  | | parentid:BIO126-2.3
+BIO126-2.3.5 | Gathering Information and Making Models  | | parentid:BIO126-2.3
+BIO126-2.3.6 | Perspectives  | | parentid:BIO126-2.3
+BIO126-2.4 | Outlook | | parentid:BIO126-2
+BIO126-Appendix | Appendix | | parentid:BIO126
+BIO126-Appendix.1 | Poisson Processes | | parentid:BIO126-Appendix
+BIO126-Appendix.2 | Correlations, Power Spectra, and All That | | parentid:BIO126-Appendix
+BIO126-Appendix.3 | Diffraction and Biomolecular Structure | | parentid:BIO126-Appendix
+BIO126-Appendix.4 | Electronic Transitions in Large Molecules | | parentid:BIO126-Appendix
+BIO126-Appendix.5 | The Kramers Problem | | parentid:BIO126-Appendix
+BIO126-Appendix.6 | Berg and Purcell, Revisited | | parentid:BIO126-Appendix
+BIO126-Appendix.7 | Maximum Entropy | | parentid:BIO126-Appendix
+BIO126-Appendix.8 | Measuring Information Transmission | | parentid:BIO126-Appendix
