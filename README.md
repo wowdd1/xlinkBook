@@ -1,19 +1,26 @@
 define:
 
-    x:brain, link:big data, book:information
+    x: brain, social, computer, speed
+
+    linkbook: big data, information, knowledge, quantity
 
 goal:
 
-    0. scan data, extract information
-    1. putting the pieces together(research what, plan) 
-    2. sync the state of art knowage(20% -> 80%)
-    3. invention tools，discover theory
-    4. explore data and flow(micro -> macro, structural -> function)
-    5. program the flow(structural -> algorithm), build editor
+    you only need a book
 
 philosophy:
 
-    divide abstract connect diversity and difference
+    divide, abstract, connect, information tuple, cone, inverse use and diversity++
+
+method:
+
+    0. sync the state of art state(20% -> 80%, hard -> more)
+    1. scan data, extract information(['topic' : [tuple]])
+    2. putting the pieces together(research what, plan) 
+    3. invention tools，discover theory
+    4. explore data and flow(micro -> macro, structural -> function)
+    5. program the flow(structural -> algorithm, graph -> intelligent)
+    6. if state is good, commit the state and action, otherwise rollback(image, vc, gc)
 
 install:
 
