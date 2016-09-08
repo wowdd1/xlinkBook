@@ -16,7 +16,7 @@ class Record():
         self.file_path = ''
 
     def set_path(self, path):
-        self.file_path = path
+        self.file_path = path[path.find('db') : ]
 
     def get_path(self):
         return self.file_path

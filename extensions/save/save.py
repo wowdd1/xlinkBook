@@ -42,7 +42,8 @@ class Save(BaseExtension):
         print record.get_title()
         if record != None and self.saved_records.has_key(record.get_id().strip()) == False:
             f = open('db/library/' + self.getLibrary(user_name), 'a')
-            f.write(record.line.replace('\n', '').strip() + " path:" + fileName[fileName.find('db/') : ] + "\n")
+            #f.write(record.line.replace('\n', '').strip() + " path:" + fileName[fileName.find('db/') : ] + "\n")
+            f.write(record.line.replace('\n', '').strip() + " path:" + record.get_path() + "\n")
             f.close()
             self.saved_records[record.get_id().strip()] = record
             print self.saved_records
