@@ -268,6 +268,17 @@ class Utils:
         print "invalided search engin: " + engin
         return False
 
+    def caseLine(self, line):
+        if line.isupper() == False:
+            return line
+        if self.check_contain_chinese(line):
+            return line
+        new_line = ''
+        for item in line.split(' '):
+            new_line += item[0 : 1] + item[1:].lower() + ' '
+        return new_line
+
+
     def shortFileName(self, file_name):
         pos = 0
         while (file_name.find('/', pos) != -1):
@@ -375,7 +386,7 @@ class Utils:
         elif folder.find('video') != -1:
             engins = self.realGetEnginList(['video'], self.search_engin_dict.values())
         elif folder.find('neuro') != -1 or folder.find('biology') != -1:
-            engins = self.realGetEnginList(['biostars', 'neurostars', 'youtube', 'google', 'baidu', 'gene', 'pubmed', 'ebi', 'gen.lib', 'amazon'], self.search_engin_dict.values(), match_title=True)
+            engins = self.realGetEnginList(['dxy.cn', 'wikipedia', 'biostars', 'neurostars', 'youtube', 'google', 'baidu', 'gene', 'pubmed', 'ebi', 'gen.lib', 'amazon'], self.search_engin_dict.values(), match_title=True)
 
         if len(engins) == 0:
             return self.realGetEnginList(['star'], self.search_engin_dict.values())

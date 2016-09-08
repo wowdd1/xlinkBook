@@ -27,7 +27,7 @@ class BerkeleySpider(Spider):
             if line.startswith('<span class="title">'):
                 title = self.utils.clearHtmlTag(line)
             elif line.startswith('<span class="code">'):
-                code = self.utils.clearHtmlTag(line).replace('&#160;', '')
+                code = self.utils.clearHtmlTag(line).replace('&#160;', '').replace(' ', '')
             elif line.startswith('<a href="/search/?P='):
                 link = 'http://guide.berkeley.edu' + line[line.find('"') + 1 : line.find('"', line.find('"') + 1)]
             elif line.startswith('<p class="courseblockdesc">'):

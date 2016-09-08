@@ -189,8 +189,12 @@ function navTopic(obj, divID, parentDivID, countIndex){
             postArgs['selection'] = global_selection;
             global_selection = '';
         } else {
-            $("#" + targetid).html("please select some text for search");
-            return
+	    if (obj.text == "keyword") {
+	        postArgs['selection'] = args[divID][1];
+	    } else {
+                $("#" + targetid).html("please select some text for search");
+                return
+	    }
         }
         $("#" + targetid).html('');
     }

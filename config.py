@@ -10,7 +10,8 @@ class Config():
     smart_link_engin = 'amazon'
 
     #default_library = ''
-    default_library = 'gene-neuro-cognitive-library'
+    default_library = 'neuroscience-library'
+    #default_library = 'cognitive-library'
     #default_library = 'health-library'
     #default_library = 'energy-library'
     #default_library = 'defense-library'

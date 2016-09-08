@@ -226,7 +226,7 @@ def contain_desc_keyword(content):
 
 def align_id_title(record):
     course_num = record.get_id()
-    course_name = record.get_title()
+    course_name = utils.caseLine(record.get_title())
     if html_style == False:
         if utils.str_block_width(course_name) > course_name_len:
             course_name = course_name[0 : course_name_len - 3 ] + "..."
@@ -850,7 +850,7 @@ def smartLink(content):
         src = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=' + content[content.rfind('/') + 1 : ] + '&column=2'
         folder = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=?'
         alt = content[content.find('db') :]
-        return content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="http://www.iconeasy.com/icon/ico/System/Stainless/document.ico" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
+        return content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         instructors = content[content.find(':') + 1 :].strip()
         html = ''
@@ -1048,6 +1048,8 @@ def getLines(file_name):
                 if record_dict.has_key(record.get_url().strip()):
                     continue
                 if filter(keyword, data):
+                    if record.get_describe().find('path:') == -1:
+                        line += ' path:' + file_name[file_name.find('db') :] 
                     filter_result.append(line)
                     record_dict[record.get_url().strip()] = ""
             all_lines = filter_result[:]
@@ -1502,6 +1504,7 @@ def main(argv):
         elif o in ('-x', '--nosearchbox'):
             search_box_hiden = True
             library_hiden = True
+
     if source.endswith('-library') and Config.auto_library_cell_len:
         column_num = '3'
         adjust_cell_len()
