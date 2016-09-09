@@ -1032,15 +1032,10 @@ def getLines(file_name):
     all_lines = []
     if os.path.exists(file_name):
         f = open(file_name,'rU')
-        all_lines = f.readlines()
-        #for line in f.readlines():
-        #    record = Record(line)
-            #if record.get_describe().find('parentid:') == -1:
-            #    all_lines.append(line)
-        if filter_keyword != "":
-            filter_result = []
-            for line in all_lines:
-                record = Record(line)
+        for line in f.readlines():
+            record = Record(line)
+            if filter_keyword != "":
+                
                 data = record.get_id() + ' ' + record.get_title()
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
@@ -1050,9 +1045,16 @@ def getLines(file_name):
                 if filter(keyword, data):
                     if record.get_describe().find('path:') == -1:
                         line += ' path:' + file_name[file_name.find('db') :] 
-                    filter_result.append(line)
+                    if Config.hiden_record_id:
+                        line += ' id:' + record.get_id().strip()
+                    all_lines.append(line)
                     record_dict[record.get_url().strip()] = ""
-            all_lines = filter_result[:]
+            else:
+                if Config.hiden_record_id:
+                    all_lines.append(line + ' id:' + record.get_id().strip())
+                else:
+                    all_lines.append(line)
+        f.close()
     return all_lines
 
 def getFileNameFromPath(path):

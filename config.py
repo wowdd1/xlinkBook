@@ -7,18 +7,21 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    smart_link_engin = 'amazon'
+    smart_link_engin = 'google'
 
     #default_library = ''
+    #default_library = 'information-library'
     default_library = 'neuroscience-library'
     #default_library = 'cognitive-library'
     #default_library = 'health-library'
     #default_library = 'energy-library'
-    #default_library = 'defense-library'
+    #default_library = 'military-library'
+    #default_library = 'nano-library'
     #default_library = 'universe-library'
     #default_library = 'business-library'
     #default_library = 'frontier-library'
-    #default_library = 'research-tool-library'
+    #default_library = 'research-library'
+    #default_library = 'papers-library'
 
     #show random preview when click nav link
     track_mode = False
