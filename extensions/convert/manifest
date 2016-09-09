@@ -1,0 +1,6 @@
+{
+    "name" : "convert",
+    "module" : "convert",
+    "class" : "Convert",
+    "version" : "0.1"
+}

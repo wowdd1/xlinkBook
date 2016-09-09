@@ -97,3 +97,13 @@ class Config():
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
                   #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
+
+    
+    # ==== extension ====
+    # convert
+    convert_tag = "a"
+    convert_min_num = 0
+    convert_max_num = 1000
+    convert_filter = ""
+    convert_contain = ""
+
