@@ -18,7 +18,7 @@ method:
     1. scan data, extract information(['topic' : [tuple]])
     2. putting the pieces together(research what, plan) 
     3. invention tools，discover theory
-    4. explore data and flow(micro -> macro, structural -> function)
+    4. explore data and flow(micro -> macro, structural -> function, low level -> high level)
     5. program the flow(structural -> algorithm, graph -> intelligent)
     6. if state is good, commit the state and action, otherwise rollback(image, vc, gc)
 
