@@ -385,6 +385,7 @@ def genEnginOption(selectid):
         
     if plugins_mode == False:
         option += '<option value ="current">current</option>'
+        option += '<option value ="add">add (operate)</option>'
     option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
     for e in engin_list:
         if e == "google" or e == Config.smart_link_engin:
@@ -1032,6 +1033,7 @@ def getLines(file_name):
     all_lines = []
     if os.path.exists(file_name):
         f = open(file_name,'rU')
+        count = 0
         for line in f.readlines():
             record = Record(line)
             if filter_keyword != "":
@@ -1043,19 +1045,44 @@ def getLines(file_name):
                 if record_dict.has_key(record.get_url().strip()):
                     continue
                 if filter(keyword, data):
-                    if record.get_describe().find('path:') == -1:
-                        line += ' path:' + file_name[file_name.find('db') :] 
-                    if Config.hiden_record_id:
-                        line += ' id:' + record.get_id().strip()
-                    all_lines.append(line)
+                    count += 1
+                    all_lines.append(enhancedRecord(file_name, record, count, True))
                     record_dict[record.get_url().strip()] = ""
             else:
-                if Config.hiden_record_id:
-                    all_lines.append(line + ' id:' + record.get_id().strip())
-                else:
-                    all_lines.append(line)
+                count += 1
+                all_lines.append(enhancedRecord(file_name, record, count))
         f.close()
     return all_lines
+
+def enhancedRecord(fileName, record, count, filter_mode=False):
+    line = record.line
+    if filter_mode:
+        if record.get_describe().find('path:') == -1:
+            line += ' path:' + fileName[fileName.find('db') :] 
+    else:
+        a = 1
+        
+    id = record.get_id().strip() 
+    if id == '':
+        id = 'custom-' + str(count)
+        line = id + line
+
+    if Config.hiden_record_id:
+        if filter_keyword == '':
+            if fileName.endswith('library'):
+                fileName = source
+
+            db = fileName[fileName.find('db/') + 3 : fileName.rfind('/') + 1]
+            key = fileName[fileName.rfind('/') + 1 :]
+            line += ' id:<a href="http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + id +'">' + id + '</a>'
+        else:
+            line += ' id:' + id
+
+    if fileName.find('rank') != -1 and line.find('winner') == -1 and record.get_title().find(',') != -1:
+        line += ' winner:' + record.get_title()
+
+    return line
+
 
 def getFileNameFromPath(path):
     fn = path

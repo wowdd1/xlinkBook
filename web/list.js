@@ -101,6 +101,10 @@ function search(inputid,optionid){
         }
         url = url + '&filter="' + input.value + '"' + '&column=1';
         window.open(url)
+    } else if (select[select.selectedIndex].value == "add") {
+        $.post('/addRecord', {fileName : fileName, data : input.value}, function(data) {
+	    window.location.href = window.location.href;   
+	});
     } else {
         window.open(select.value + input.value);
     }
