@@ -31,13 +31,15 @@ class Convert(BaseExtension):
             cmd += '-f "' + Config.convert_filter + '" '
         if Config.convert_contain != '':
             cmd += '-c "' + Config.convert_contain + '" '
+        if Config.convert_start > 0:
+            cmd += '-s ' + str(Config.convert_start) + ' '
 
         print 'cmd ----> ' + cmd + ' <----'
         data = subprocess.check_output(cmd, shell=True)
 
         
         count = 0
-        html = '<div class="ref"><ol>'
+        html = '<div class="ref"><ol><br>'
         for line in data.split('\n'):
             if line.strip() == '':
                 continue

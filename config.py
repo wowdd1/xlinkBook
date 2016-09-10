@@ -10,7 +10,7 @@ class Config():
     smart_link_engin = 'google'
 
     #default_library = ''
-    #default_library = 'information-library'
+    #default_library = 'eecs-library'
     default_library = 'neuroscience-library'
     #default_library = 'cognitive-library'
     #default_library = 'health-library'
@@ -89,13 +89,13 @@ class Config():
 
     fav_links = { 'papers' : ip_adress + '/?db=eecs/papers/&key=?',\
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
-                  'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
+          'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
 		  #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
-                  'rss' : ip_adress + '/?db=rss/&key=rss2016',\
-                  #'rank' : ip_adress + '/?db=rank/&key=?',\
+          'rss' : ip_adress + '/?db=rss/&key=rss2016',\
+          #'rank' : ip_adress + '/?db=rank/&key=?',\
 		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=3'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
-                  #'library' : ip_adress + '/?db=library/&key=?'}
+          #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
 
     
@@ -106,4 +106,5 @@ class Config():
     convert_max_num = 1000
     convert_filter = ""
     convert_contain = ""
+    convert_start = 0
 

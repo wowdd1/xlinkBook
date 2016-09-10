@@ -126,6 +126,21 @@ def handleNavigate():
         return ""
     return extensionManager.doWork(request.form)
 
+@app.route('/addRecord', methods=['POST'])
+def handleAddRecord():
+    data = request.form['data'].strip()
+    fileName = request.form['fileName'].strip()
+    print fileName 
+    print data
+
+    if data != '' and os.path.exists(fileName):
+        f = open(fileName, 'a')
+        f.write(data + '\n')
+        f.close()
+
+    return ''
+
+
 @app.route('/extensions', methods=['POST'])
 def handleExtension():
     if request.args.get('verify', '') != '':
