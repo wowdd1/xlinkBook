@@ -502,3 +502,4 @@ engin-509 | openaire | https://www.openaire.eu/search/find?keyword= | priority:4
 engin-510 | britannica | https://www.britannica.com/search?query= | priority:6 description:wiki
 engin-511 | dxy.cn | http://search.dxy.cn/?words=%s&limit=15 | priority:5 description:social
 engin-512 | currentprotocols | http://www.currentprotocols.com/WileyCDA/Section/id-810760.html?query=%s&x=48&y=18 | priority:6 description:protocol
+engin-513 | plato | http://plato.stanford.edu/search/searcher.py?query= | priority:5 description:wiki

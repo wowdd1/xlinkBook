@@ -1701,3 +1701,137 @@ MCB80.2x-7.10.6 | The Neuronal Basis of Perceptual Illusions | | parentid:MCB80.
 MCB80.2x-7.10.7 | Perceptual Puzzles of Contemporary Interest | | parentid:MCB80.2x-7.10
 MCB80.2x-7.10.8 | Forward Versus Feedback Projections | | parentid:MCB80.2x-7.10
 MCB80.2x-7.10.9 | An Information-Theoretical Theory of Consciousness | | parentid:MCB80.2x-7.10
+
+MCB80.4x-1 | A Brief History of Cognitive Neuroscience | | parentid:MCB80.4x
+MCB80.4x-1.1 | A Historical Perspective | | parentid:MCB80.4x-1
+MCB80.4x-1.2 | The Brain Story | | parentid:MCB80.4x-1
+MCB80.4x-1.3 | The Psychological Story | | parentid:MCB80.4x-1
+MCB80.4x-1.4 | The Instruments of Neuroscience | | parentid:MCB80.4x-1
+MCB80.4x-1.5 | The Book in Your Hands | | parentid:MCB80.4x-1
+MCB80.4x-2 | Structure and Function of the Nervous System | | parentid:MCB80.4x
+MCB80.4x-2.1 | The Structure of Neurons | | parentid:MCB80.4x-2
+MCB80.4x-2.2 | Neuronal Signaling | | parentid:MCB80.4x-2
+MCB80.4x-2.3 | Synaptic Transmission | | parentid:MCB80.4x-2
+MCB80.4x-2.4 | The Role of Glial Cells | | parentid:MCB80.4x-2
+MCB80.4x-2.5 | The Bigger Picture | | parentid:MCB80.4x-2
+MCB80.4x-2.6 | Overview of Nervous System Structure | | parentid:MCB80.4x-2
+MCB80.4x-2.7 | A Guided Tour of the Brain | | parentid:MCB80.4x-2
+MCB80.4x-2.8 | The Cerebral Cortex | | parentid:MCB80.4x-2
+MCB80.4x-2.9 | Development of the Nervous System | | parentid:MCB80.4x-2
+MCB80.4x-3 | Methods of Cognitive Neuroscience | | parentid:MCB80.4x
+MCB80.4x-3.1 | Cognitive Psychology and Behavioral Methods | | parentid:MCB80.4x-3
+MCB80.4x-3.2 | Studying the Damaged Brain | | parentid:MCB80.4x-3
+MCB80.4x-3.3 | Methods to Perturb Neural Function | | parentid:MCB80.4x-3
+MCB80.4x-3.4 | Structural Analysis of the Brain | | parentid:MCB80.4x-3
+MCB80.4x-3.5 | Methods for the Study of Neural Function | | parentid:MCB80.4x-3
+MCB80.4x-3.6 | The Marriage of Function and Structure: Neuroimaging | | parentid:MCB80.4x-3
+MCB80.4x-3.7 | Brain Graphs | | parentid:MCB80.4x-3
+MCB80.4x-3.8 | Computer Modeling | | parentid:MCB80.4x-3
+MCB80.4x-3.9 | Converging Methods | | parentid:MCB80.4x-3
+MCB80.4x-4 | Hemispheric Specialization | | parentid:MCB80.4x
+MCB80.4x-4.1 | Anatomy of the Hemispheres | | parentid:MCB80.4x-4
+MCB80.4x-4.2 | Splitting the Brain: Cortical Disconnection | | parentid:MCB80.4x-4
+MCB80.4x-4.3 | Hemispheric Specialization | | parentid:MCB80.4x-4
+MCB80.4x-4.4 | The Evolutionary Basis of Hemispheric Specialization | | parentid:MCB80.4x-4
+MCB80.4x-4.5 | Split-Brain Research as a Window into Conscious Experience | | parentid:MCB80.4x-4
+MCB80.4x-5 | Sensation and Perception | | parentid:MCB80.4x
+MCB80.4x-5.1 | Senses, Sensation, and Perception | | parentid:MCB80.4x-5
+MCB80.4x-5.2 | Sensation: Early Perceptual Processing | | parentid:MCB80.4x-5
+MCB80.4x-5.3 | Audition | | parentid:MCB80.4x-5
+MCB80.4x-5.4 | Olfaction | | parentid:MCB80.4x-5
+MCB80.4x-5.5 | Gustation | | parentid:MCB80.4x-5
+MCB80.4x-5.6 | Somatosensation | | parentid:MCB80.4x-5
+MCB80.4x-5.7 | Vision | | parentid:MCB80.4x-5
+MCB80.4x-5.8 | From Sensation to Perception | | parentid:MCB80.4x-5
+MCB80.4x-5.9 | Deficits in Visual Perception | | parentid:MCB80.4x-5
+MCB80.4x-5.10 | Perceptual Reorganization | | parentid:MCB80.4x-5
+MCB80.4x-6 | Object Recognition | | parentid:MCB80.4x
+MCB80.4x-6.1 | Principles of Object Recognition | | parentid:MCB80.4x-6
+MCB80.4x-6.2 | Multiple Pathways for Visual Perception | | parentid:MCB80.4x-6
+MCB80.4x-6.3 | Computational Problems in Object Recognition | | parentid:MCB80.4x-6
+MCB80.4x-6.4 | Failures in Object Recognition: The Big Picture | | parentid:MCB80.4x-6
+MCB80.4x-6.5 | Category Specificity in Agnosia: The Devil Is in the Details | | parentid:MCB80.4x-6
+MCB80.4x-6.6 | Processing Faces: Are Faces Special? | | parentid:MCB80.4x-6
+MCB80.4x-6.7 | Mind Reading | | parentid:MCB80.4x-6
+MCB80.4x-7 | Attention | | parentid:MCB80.4x
+MCB80.4x-7.1 | The Anatomy of Attention | | parentid:MCB80.4x-7
+MCB80.4x-7.2 | The Neuropsychology of Attention | | parentid:MCB80.4x-7
+MCB80.4x-7.3 | Models of Attention | | parentid:MCB80.4x-7
+MCB80.4x-7.4 | Neural Mechanisms of Attention and Perceptual Selection | | parentid:MCB80.4x-7
+MCB80.4x-7.5 | Attentional Control Networks | | parentid:MCB80.4x-7
+MCB80.4x-8 | Action | | parentid:MCB80.4x
+MCB80.4x-8.1 | The Anatomy and Control of Motor Structures | | parentid:MCB80.4x-8
+MCB80.4x-8.2 | Computational Issues in Motor Control | | parentid:MCB80.4x-8
+MCB80.4x-8.3 | Physiological Analysis of Motor Pathways | | parentid:MCB80.4x-8
+MCB80.4x-8.4 | Goal Selection and Action Planning | | parentid:MCB80.4x-8
+MCB80.4x-8.5 | The Brain-Machine Interface | | parentid:MCB80.4x-8
+MCB80.4x-8.6 | Movement Initiation and the Basal Ganglia | | parentid:MCB80.4x-8
+MCB80.4x-8.7 | Action Understanding and Mirror Neurons | | parentid:MCB80.4x-8
+MCB80.4x-8.8 | Learning and Performing New Skills | | parentid:MCB80.4x-8
+MCB80.4x-9 | Memory | | parentid:MCB80.4x
+MCB80.4x-9.1 | The Anatomy of Memory | | parentid:MCB80.4x-9
+MCB80.4x-9.2 | Memory Deficits: Amnesia | | parentid:MCB80.4x-9
+MCB80.4x-9.3 | Mechanisms of Memory | | parentid:MCB80.4x-9
+MCB80.4x-9.4 | The Medial Temporal Lobe Memory System | | parentid:MCB80.4x-9
+MCB80.4x-9.5 | Imaging Human Memory | | parentid:MCB80.4x-9
+MCB80.4x-9.6 | Memory Consolidation | | parentid:MCB80.4x-9
+MCB80.4x-9.7 | Cellular Basis of Learning and Memory | | parentid:MCB80.4x-9
+MCB80.4x-10 | Emotion | | parentid:MCB80.4x
+MCB80.4x-10.1 | What Is an Emotion? | | parentid:MCB80.4x-10
+MCB80.4x-10.2 | Neural Systems Involved in Emotion Processing | | parentid:MCB80.4x-10
+MCB80.4x-10.3 | Categorizing Emotions | | parentid:MCB80.4x-10
+MCB80.4x-10.4 | Theories of Emotion Generation | | parentid:MCB80.4x-10
+MCB80.4x-10.5 | The Amygdala | | parentid:MCB80.4x-10
+MCB80.4x-10.6 | Interactions Between Emotion and Other Cognitive Processes | | parentid:MCB80.4x-10
+MCB80.4x-10.7 | Get a Grip! Cognitive Control of Emotion | | parentid:MCB80.4x-10
+MCB80.4x-10.8 | Other Areas, Other Emotions | | parentid:MCB80.4x-10
+MCB80.4x-10.9 | Unique Systems, Common Components | | parentid:MCB80.4x-10
+MCB80.4x-11 | Language | | parentid:MCB80.4x
+MCB80.4x-11.1 | The Anatomy of Language | | parentid:MCB80.4x-11
+MCB80.4x-11.2 | Brain Damage and Language Deficits | | parentid:MCB80.4x-11
+MCB80.4x-11.3 | The Fundamentals of Language in the Human Brain | | parentid:MCB80.4x-11
+MCB80.4x-11.4 | Language Comprehension | | parentid:MCB80.4x-11
+MCB80.4x-11.5 | Neural Models of Language Comprehension | | parentid:MCB80.4x-11
+MCB80.4x-11.6 | Neural Models of Speech Production | | parentid:MCB80.4x-11
+MCB80.4x-11.7 | Evolution of Language | | parentid:MCB80.4x-11
+MCB80.4x-12 | Cognitive Control | | parentid:MCB80.4x
+MCB80.4x-12.1 | What Is Cognitive Control? | | parentid:MCB80.4x-12
+MCB80.4x-12.2 | The Anatomy Behind Cognitive Control | | parentid:MCB80.4x-12
+MCB80.4x-12.3 | Cognitive Control Deficits | | parentid:MCB80.4x-12
+MCB80.4x-12.4 | Goal-Oriented Behavior | | parentid:MCB80.4x-12
+MCB80.4x-12.5 | Decision Making | | parentid:MCB80.4x-12
+MCB80.4x-12.6 | Goal Planning | | parentid:MCB80.4x-12
+MCB80.4x-12.7 | Goal-Based Cognitive Control | | parentid:MCB80.4x-12
+MCB80.4x-12.8 | Ensuring That Goal-Oriented Behaviors Succeed | | parentid:MCB80.4x-12
+MCB80.4x-13 | Social Cognition | | parentid:MCB80.4x
+MCB80.4x-13.1 | Anatomical Substrates of Social Cognition | | parentid:MCB80.4x-13
+MCB80.4x-13.2 | Deficits | | parentid:MCB80.4x-13
+MCB80.4x-13.3 | Socrates' Imperative: Know Thyself | | parentid:MCB80.4x-13
+MCB80.4x-13.4 | Theory of Mind: Understanding the Mental States of Others | | parentid:MCB80.4x-13
+MCB80.4x-13.5 | Social Knowledge | | parentid:MCB80.4x-13
+MCB80.4x-14 | Consciousness, Free Will, and the Law | | parentid:MCB80.4x
+MCB80.4x-14.1 | Anatomical Orientation | | parentid:MCB80.4x-14
+MCB80.4x-14.2 | Consciousness | | parentid:MCB80.4x-14
+MCB80.4x-14.3 | Neurons, Neuronal Groups, and Conscious Experience | | parentid:MCB80.4x-14
+MCB80.4x-14.4 | The Emergence of the Brain Interpreter in the Human Species | | parentid:MCB80.4x-14
+MCB80.4x-14.5 | Abandoning the Concept of Free Will | | parentid:MCB80.4x-14
+MCB80.4x-14.6 | The Law | | parentid:MCB80.4x-14
+BioMed01x-1 | Introduction: what is biomedical engineering? | | parentid:BioMed01x
+BioMed01x-2 | Molecular and Cellular Principles | | parentid:BioMed01x
+BioMed01x-2.1 | Biomolecular principles | | parentid:BioMed01x-2
+BioMed01x-2.2 | Biomolecular principles: nucleic acids | | parentid:BioMed01x-2
+BioMed01x-2.3 | Biomolecular principles: proteins | | parentid:BioMed01x-2
+BioMed01x-2.4 | Cellular principles | | parentid:BioMed01x-2
+BioMed01x-3 | Physiological Principles | | parentid:BioMed01x
+BioMed01x-3.1 | Communication systems in the body | | parentid:BioMed01x-3
+BioMed01x-3.2 | Engineering balances: respiration and digestion | | parentid:BioMed01x-3
+BioMed01x-3.3 | Circulation | | parentid:BioMed01x-3
+BioMed01x-3.4 | Removal of molecules from the body | | parentid:BioMed01x-3
+BioMed01x-4 | Biomedical Engineering | | parentid:BioMed01x
+BioMed01x-4.1 | Biomechanics | | parentid:BioMed01x-4
+BioMed01x-4.2 | Bioinstrumentation | | parentid:BioMed01x-4
+BioMed01x-4.3 | Bioimaging | | parentid:BioMed01x-4
+BioMed01x-4.4 | Biomolecular engineering I: biotechnology | | parentid:BioMed01x-4
+BioMed01x-4.5 | Biomolecular engineering II: engineering of immunity | | parentid:BioMed01x-4
+BioMed01x-4.6 | Biomaterials and artificial organs | | parentid:BioMed01x-4
+BioMed01x-4.7 | Biomedical engineering and cancer | | parentid:BioMed01x-4

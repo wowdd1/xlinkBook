@@ -242,7 +242,7 @@ def align_id_title(record):
     else:
         return course_num + vertical + course_name
 
-def align_describe(describe):
+def align_describe(describe, record=None):
     if html_style == False:
         if utils.str_block_width(describe) > course_name_len - 1 and output_with_describe == False:
             describe = describe[0 : course_name_len - 3 ] + "..."
@@ -250,7 +250,7 @@ def align_describe(describe):
             describe += get_space(0, course_name_len - utils.str_block_width(describe))
         return get_space(0, course_num_len) + vertical + describe
     else:
-        return  vertical + smartLink(describe)
+        return  vertical + smartLink(describe, record)
 
 def print_with_color(text):
     global color_index
@@ -720,7 +720,7 @@ def build_lines(list_all, file_name):
                     record_describe = list_all[i][j].get_describe()
                     end = next_pos(record_describe, start) 
                     if output_with_describe:
-                        describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end])
+                        describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end], list_all[i][j])
                     start = end
                 count = 0
                 
@@ -846,26 +846,32 @@ def gen_html_body_v2(content, row, subRow):
 
     return content
 
-def smartLink(content):
+def smartLink(content, record):
     if content.strip().startswith('path:'):
-        src = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=' + content[content.rfind('/') + 1 : ] + '&column=2'
-        folder = 'http://' + Config.ip_adress + '/?db=' + content[content.find('/') + 1 : content.rfind('/') + 1]+ '&key=?'
-        alt = content[content.find('db') :]
+        path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'})
+        src = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=' + path[path.rfind('/') + 1 : ] + '&column=2'
+        folder = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=?'
+        alt = path[path.find('db') :]
         return content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
-        instructors = content[content.find(':') + 1 :].strip()
         html = ''
-        if instructors.find(',') != -1:
-            instructors = instructors.split(',')
-            for i in instructors:
-                if i != instructors[len(instructors) - 1]:
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : content[ 0 : content.find(':')]})
+        ret = ret[1 : len(content[content.find(':') + 1 :])]
+        if ret.find(',') != -1:
+            ret = ret.split(',')
+            for i in ret:
+                if i != ret[len(ret) - 1]:
                     html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>,&nbsp;'
                 else:
                     html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>'
         else:
-            html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(instructors.strip()) + '">' + instructors + '</a>'
+            html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(ret.strip()) + '">' + ret + '</a>'
         return content[ 0 : content.find(':') + 1 ] + html
-
+    elif content.strip().startswith('id:'):
+        if record.get_url() != None and record.get_url() != '':
+            return content[ 0 : content.find(':') + 1 ] + '<a target="_blank" href="' + record.get_url().strip()+ '">' + record.get_id().strip() + '</a>'
+        else:
+            return content
     else:
         return content
 
@@ -1035,6 +1041,8 @@ def getLines(file_name):
         f = open(file_name,'rU')
         count = 0
         for line in f.readlines():
+            if Config.hiden_parentid_record and line.find('parentid:') != -1:
+                continue
             record = Record(line)
             if filter_keyword != "":
                 
@@ -1068,15 +1076,7 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
         line = id + line
 
     if Config.hiden_record_id:
-        if filter_keyword == '':
-            if fileName.endswith('library'):
-                fileName = source
-
-            db = fileName[fileName.find('db/') + 3 : fileName.rfind('/') + 1]
-            key = fileName[fileName.rfind('/') + 1 :]
-            line += ' id:<a href="http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + id +'">' + id + '</a>'
-        else:
-            line += ' id:' + id
+        line += ' id:' + id
 
     if fileName.find('rank') != -1 and line.find('winner') == -1 and record.get_title().find(',') != -1:
         line += ' winner:' + record.get_title()
