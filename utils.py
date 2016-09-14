@@ -210,7 +210,7 @@ class Utils:
             else:
                 html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=?">library</a>&nbsp;'
 
-            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=77">' + content + '(' + str(lines) + ')</a></div>'
+            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=77">' + content + '<font size="2">(' + str(lines) + ')</font></a></div>'
         else:
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/login">Login</a></div>'
         html += '<div style="height: 21px; width: 100px"></div>'
@@ -232,7 +232,7 @@ class Utils:
             f = open('db/library/' + item)
             lines = len(f.readlines())
             f.close()
-            html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=77">' + item.replace('-library', '') + '(' + str(lines) + ')</a>&nbsp;'
+            html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=77">' + item.replace('-library', '') + '<font size="2">(' + str(lines) + ')</font></a>&nbsp;'
             if count > 5 :
                 count = 0
                 #html += '<br/>' #need adjust config content_margin_top
@@ -385,7 +385,7 @@ class Utils:
             engins = self.realGetEnginList(['project'], self.search_engin_dict.values())
         elif folder.find('video') != -1:
             engins = self.realGetEnginList(['video'], self.search_engin_dict.values())
-        elif folder.find('neuro') != -1 or folder.find('biology') != -1:
+        elif folder.find('neuro') != -1 or folder.find('biology') != -1 or folder.find('lifescience') != -1:
             engins = self.realGetEnginList(['dxy.cn', 'wikipedia', 'biostars', 'neurostars', 'youtube', 'google', 'baidu', 'gene', 'pubmed', 'ebi', 'gen.lib', 'amazon'], self.search_engin_dict.values(), match_title=True)
 
         if len(engins) == 0:
@@ -560,8 +560,8 @@ class Utils:
         return url
 
 
-    def toSmartLink(self, text, br_number=80, engin=''):
-        if text != '':
+    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin=''):
+        if text != '' and len(text.strip()) <= Config.smart_link_max_text_len:
             url = ''
             if engin != '':
                 url = self.toQueryUrl(self.getEnginUrl(engin.strip()), text)
@@ -570,9 +570,9 @@ class Utils:
 
             return '<a target="_blank" href="' + url + '">' + self.formatTitle(text, br_number) + '</a>'
 
-        return text
+        return self.formatTitle(text, br_number)
 
-    def formatTitle(self, title, br_number):
+    def formatTitle(self, title, br_number=Config.smart_link_br_len):
         if len(title) > br_number:
             at = title.find(' ', br_number)
             if at != -1:

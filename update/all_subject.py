@@ -47,10 +47,10 @@ subject_dict = {\
     "Electronic" : "eecs",\
     "Electrical Engineering" : "eecs",\
     "Electronic Engineering" : "eecs",\
-    "Energy" : "energy-science",\
+    "Energy" : "energy",\
     "Earth Sciences" : "earth-science",\
     "Engineering" : "engineering",\
-    "Environmental Studies" : "environmental-studies",\
+    "Environmental" : "earth-science",\
     "Ethics" : "ethics",\
     "Food" : "medicine",\
     "Epidemiology" : "medicine",\
@@ -65,7 +65,10 @@ subject_dict = {\
     "History" : "history",\
     "Humanities" : "humanities",\
     "Human Resource Management" : 'economics',\
+    'Business' : 'business',\
+    'Entrepreneurship' : 'business',\
     "Law" : "law",\
+    "Transportation" : "transportation",\
     "Sociology" : "Sociology",\
     "Society" : "Sociology",\
     "Social" : "Sociology",\
@@ -154,8 +157,11 @@ need_update_subject_list = [
     #'humanities',
     #'history',
     #'management',
+    #'business',
     'data-science'
 ]
+
+#need_update_subject_list = ['business']
 
 def print_all_subject():
     print ', '.join(subject_dict.values())

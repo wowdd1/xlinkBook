@@ -133,9 +133,9 @@ class Reference(BaseExtension):
 		#    html += '<img width="48" height="48" src="' + a.img['src'] + '">'
                 html += '<li><span>' + str(count) + '.</span>'
 		if title.find('- Duration') != -1:
-		    html += '<p>' + '<a target="_blank" href="' + link + '">' + self.utils.formatTitle(title[0 : title.find('- Duration')], 60) + '</a>' + title[title.find('- Duration') :]
+		    html += '<p>' + '<a target="_blank" href="' + link + '">' + self.utils.formatTitle(title[0 : title.find('- Duration')], Config.smart_link_br_len) + '</a>' + title[title.find('- Duration') :]
 	        else:
-                    html += '<p>' + '<a target="_blank" href="' + link + '">' + self.utils.formatTitle(title, 60) + '</a>'
+                    html += '<p>' + '<a target="_blank" href="' + link + '">' + self.utils.formatTitle(title, Config.smart_link_br_len) + '</a>'
                 if script != "":
                     html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
                 html += '</p></li>'
@@ -163,7 +163,7 @@ class Reference(BaseExtension):
         for item in data:
             count += 1
             html += '<li><span>' + str(count) + '.</span>'
-            html += '<p><a target="_blank" href="' + item[1] + '"> '+ self.utils.formatTitle(item[0], 60) + '</a>'
+            html += '<p><a target="_blank" href="' + item[1] + '"> '+ self.utils.formatTitle(item[0], Config.smart_link_br_len) + '</a>'
 
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
@@ -224,9 +224,9 @@ class Reference(BaseExtension):
                     self.html += '<li><span>' + str(count) + '.</span>'
                 script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-')
                 if r[1] != '':
-                    self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + self.utils.formatTitle(r[0], 60) + '</a>'
+                    self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + self.utils.formatTitle(r[0], Config.smart_link_br_len) + '</a>'
                 else:
-                    self.html += '<p>' + self.utils.toSmartLink(r[0], 60)
+                    self.html += '<p>' + self.utils.toSmartLink(r[0], Config.smart_link_br_len)
                 #self.html += self.utils.getDefaultEnginHtml(r[0], defaultLinks)
                 if script != "":
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
@@ -273,5 +273,5 @@ class Reference(BaseExtension):
         if title.find('<a>') != -1:
             title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
         else:
-            title = '<a target="_blank" href="' + url + '">' + self.utils.formatTitle(title, 60) + '</a>'
+            title = '<a target="_blank" href="' + url + '">' + self.utils.formatTitle(title, Config.smart_link_br_len) + '</a>'
         return title

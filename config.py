@@ -2,21 +2,24 @@
 
 
 class Config():
+    
     default_subject = 'eecs'
 
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    smart_link_engin = 'google'
+    smart_link_engin = 'youtube'
+    smart_link_max_text_len = 60
+    smart_link_br_len = 80
 
     #default_library = ''
-    #default_library = 'eecs-library'
-    default_library = 'neuroscience-library'
+    #default_library = 'ai-library'
+    default_library = 'lifescience-library'
     #default_library = 'cognitive-library'
-    #default_library = 'health-library'
+    #default_library = 'engineering-library'
+    #default_library = 'medical-library'
     #default_library = 'energy-library'
     #default_library = 'military-library'
-    #default_library = 'nano-library'
     #default_library = 'universe-library'
     #default_library = 'business-library'
     #default_library = 'frontier-library'
@@ -38,6 +41,7 @@ class Config():
    
     hiden_record_id = True
     hiden_record_id_commandline = False
+    hiden_parentid_record = True
 
     hiden_engins = True
     
@@ -101,10 +105,15 @@ class Config():
     
     # ==== extension ====
     # convert
-    convert_tag = "a"
+    convert_url_args = '' #'?start=' #'?start=0&tag='
+    convert_page_step = 0
+    convert_page_start = 0
+    convert_page_max = 10
+
+    convert_tag = 'h3' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
     convert_contain = ""
     convert_start = 0
-
+    convert_delete_from_char = ''

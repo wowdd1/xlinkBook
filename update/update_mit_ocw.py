@@ -35,7 +35,11 @@ class MitOcwSpider(Spider):
 
     def getDescription(self, url):
         r = requests.get(url)
-        jobj = json.loads(r.text)
+        jobj = None
+        try:
+            jobj = json.loads(r.text)
+        except Exception as e:
+            return ''
         return 'level:' + jobj['level'] + ' instructors:' + jobj['instructors'].replace('Prof.','').strip() + \
                   ' term:' + jobj['sem'] + ' features:' + jobj['features'] + ' description:' + re.sub(r'[\x00-\x1f]', '', jobj['description'].replace('\n', ''))
 

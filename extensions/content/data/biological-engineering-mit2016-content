@@ -169,3 +169,81 @@
 20.305-6.3.5 | Synthetic Biology Approaches for the Rapid Generation of Chemical Diversity | | parentid:20.305-6.3
 20.305-6.3.6 | Engineering of Versatile Chassis for the Synthetic Biology of Antibiotics | | parentid:20.305-6.3
 20.305-6.3.7 | Tools for the Future | | parentid:20.305-6.3
+20.205-1 | Introduction to Genetic Engineering | | parentid:20.205
+20.205-2 | Tools of Genetic Engineering | | parentid:20.205
+20.205-2.1 | Restriction Endonucleases | | parentid:20.205-2
+20.205-2.2 | Vectors | | parentid:20.205-2
+20.205-2.3 | Modifying Enzymes | | parentid:20.205-2
+20.205-2.4 | Basic Principles of Cloning | | parentid:20.205-2
+20.205-2.5 | Problem Session | | parentid:20.205-2
+20.205-3 | DNA Libraries | | parentid:20.205
+20.205-3.1 | Introduction | | parentid:20.205-3
+20.205-3.2 | Genomic DNA Libraries | | parentid:20.205-3
+20.205-3.3 | cDNA Libraries | | parentid:20.205-3
+20.205-3.4 | Library Screening | | parentid:20.205-3
+20.205-3.5 | Monitoring Transcription | | parentid:20.205-3
+20.205-3.6 | Problem Session | | parentid:20.205-3
+20.205-4 | Protein Production and Purification | | parentid:20.205
+20.205-4.1 | Expression Vectors and Recombinant Protein Expressions | | parentid:20.205-4
+20.205-4.2 | In Vitro Transcription and Translation | | parentid:20.205-4
+20.205-4.3 | Bacterial Expression of Proteins | | parentid:20.205-4
+20.205-4.4 | Expressions in Yeast | | parentid:20.205-4
+20.205-4.5 | Expressions in Insect Cells | | parentid:20.205-4
+20.205-4.6 | Expressions in Plant Cells | | parentid:20.205-4
+20.205-4.7 | Expressions in Mammalian Cells | | parentid:20.205-4
+20.205-4.8 | Purification of Proteins | | parentid:20.205-4
+20.205-4.9 | Post-Translational Modifications of Proteins | | parentid:20.205-4
+20.205-4.10 | Problem Session | | parentid:20.205-4
+20.205-5 | Mutagenesis | | parentid:20.205
+20.205-5.1 | Mutagenesis | | parentid:20.205-5
+20.205-5.2 | Deletion Studies | | parentid:20.205-5
+20.205-5.3 | Site-Directed Mutagenesis | | parentid:20.205-5
+20.205-5.4 | Random Mutagenesis | | parentid:20.205-5
+20.205-5.5 | Directed Evolution, Protein Engineering, and Enzyme Engineering | | parentid:20.205-5
+20.205-5.6 | Problem Session | | parentid:20.205-5
+20.205-6 | Protein-Protein Interactions | | parentid:20.205
+20.205-6.1 | Introduction | | parentid:20.205-6
+20.205-6.2 | GST Pull-Down-Based Interaction Assay | | parentid:20.205-6
+20.205-6.3 | Co-Immunoprecipitation | | parentid:20.205-6
+20.205-6.4 | The Yeast Two-Hybrid Assay | | parentid:20.205-6
+20.205-6.5 | Fluorescence Resonance Energy Transfer | | parentid:20.205-6
+20.205-6.6 | Problem Session | | parentid:20.205-6
+20.205-7 | Cell Culture | | parentid:20.205
+20.205-7.1 | Introduction | | parentid:20.205-7
+20.205-7.2 | Genetic Manipulation of Cells | | parentid:20.205-7
+20.205-7.3 | Reporter Genes | | parentid:20.205-7
+20.205-7.4 | Types of Transfection | | parentid:20.205-7
+20.205-7.5 | Level of Expression | | parentid:20.205-7
+20.205-7.6 | Problem Session | | parentid:20.205-7
+20.205-8 | Genetic Manipulation of Stem Cells and Animals | | parentid:20.205
+20.205-8.1 | Stem Cell Technology and Knockout Cells | | parentid:20.205-8
+20.205-8.2 | Transgenic Animals | | parentid:20.205-8
+20.205-8.3 | RNA Interference and MicroRNAs | | parentid:20.205-8
+20.205-8.4 | Animal Cloning | | parentid:20.205-8
+20.205-8.5 | Pharm Animals | | parentid:20.205-8
+20.205-8.6 | Gene Therapy | | parentid:20.205-8
+20.205-8.7 | Genome Editing | | parentid:20.205-8
+20.205-8.8 | Problem Session | | parentid:20.205-8
+20.205-9 | Genetic Manipulation of Plants | | parentid:20.205
+20.205-9.1 | Monocotyledons, Dicotyledons, and Commercial Crops | | parentid:20.205-9
+20.205-9.2 | Plant Manipulation Methods | | parentid:20.205-9
+20.205-9.3 | Future Trends in Transgenic Plants | | parentid:20.205-9
+20.205-9.4 | Problem Session | | parentid:20.205-9
+20.205-10 | Today and the Future | | parentid:20.205
+20.205-10.1 | Bioinformatics and the Omics Age | | parentid:20.205-10
+20.205-10.2 | Synthetic Biology and Unnatural Amino Acids | | parentid:20.205-10
+20.205-10.3 | Optogenetics | | parentid:20.205-10
+20.205-10.4 | What Is Next? | | parentid:20.205-10
+20.205-10.5 | Problem Session | | parentid:20.205-10
+20.205-11 | DNA Techniques | | parentid:20.205
+20.205-11.1 | DNA Gel Electrophoresis | | parentid:20.205-11
+20.205-11.2 | Nucleic Acid Blotting | | parentid:20.205-11
+20.205-11.3 | Polymerase Chain Reaction | | parentid:20.205-11
+20.205-11.4 | Real-Time PCR | | parentid:20.205-11
+20.205-11.5 | DNA Sequencing | | parentid:20.205-11
+20.205-11.6 | Next Generation Sequencing | | parentid:20.205-11
+20.205-12 | Protein Techniques | | parentid:20.205
+20.205-12.1 | SDS-PAGE | | parentid:20.205-12
+20.205-12.2 | Western Blotting | | parentid:20.205-12
+20.205-12.3 | 2D Gel Electrophoresis and Proteomics | | parentid:20.205-12
+20.205-12.4 | Immunofluorescence and Immunohistochemistry | | parentid:20.205-12

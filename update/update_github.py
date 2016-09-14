@@ -676,7 +676,10 @@ class GithubSpider(Spider):
                 'PySurfer' : 'https://github.com/PySurfer',\
 		'CBMM' : 'https://github.com/CBMM',\
 		'AllenInstitute' : 'https://github.com/AllenInstitute',\
-		'ACElab' : 'https://github.com/aces'}
+		'ACElab' : 'https://github.com/aces',\
+                'MCB80x' : 'https://github.com/mcb80x',\
+                'BackyardBrains' : 'https://github.com/BackyardBrains',\
+                'nengo' : 'https://github.com/nengo'}
 
         data_gene = { 'CIDAR-LAB' : 'https://github.com/CIDARLAB',\
                       'Voigt-Lab' : 'https://github.com/VoigtLab',\

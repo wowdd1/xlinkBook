@@ -632,3 +632,221 @@
 9.01-Appendices6 |  Theoretical Approaches to Neuroscience: Examples from Single Neurons to Networks | | parentid:9.01
 9.01-Appendices6.1 | Single-Neuron Models Allow Study of the Integration of Synaptic Inputs and Intrinsic Conductances | | parentid:9.01-Appendices6
 9.01-Appendices6.2 | Network Models Provide Insight into the Collective Dynamics of Neurons | | parentid:9.01-Appendices6
+9.123-1 | Whole-Brain Imaging | | parentid:9.123
+9.123-1.1 | Structural Brain Imaging Techniques | | parentid:9.123-1
+9.123-1.2 | Functional Brain Imaging Techniques | | parentid:9.123-1
+9.123-1.3 | Functional Imaging Experimental Design and Analysis | | parentid:9.123-1
+9.123-2 | Animal Behavior | | parentid:9.123
+9.123-2.1 | Considerations for Choosing and Performing a Behavioral Assay | | parentid:9.123-2
+9.123-2.2 | Rodent Behavioral Paradigms | | parentid:9.123-2
+9.123-2.3 | Drosophila Behavioral Paradigms | | parentid:9.123-2
+9.123-2.4 | Caenorhabditis elegans Behavioral Paradigms | | parentid:9.123-2
+9.123-2.5 | Nonhuman Primate Behavioral Paradigms | | parentid:9.123-2
+9.123-3 | Stereotaxic Surgeries and In Vivo Techniques | | parentid:9.123
+9.123-3.1 | Stereotaxic Surgeries | | parentid:9.123-3
+9.123-3.2 | Implants for Long-Term Access to the Brain | | parentid:9.123-3
+9.123-3.3 | Manipulating Neural Activity In vivo | | parentid:9.123-3
+9.123-4 | Electrophysiology | | parentid:9.123
+9.123-4.1 | A Brief Review of the Electrical Properties of Neurons | | parentid:9.123-4
+9.123-4.2 | The Electrophysiology Rig | | parentid:9.123-4
+9.123-4.3 | Categories of Electrophysiology Recordings | | parentid:9.123-4
+9.123-4.4 | Electrophysiology Tissue Preparations | | parentid:9.123-4
+9.123-4.5 | Manipulating Neural Activity during Electrophysiology Experiments | | parentid:9.123-4
+9.123-5 | Microscopy | | parentid:9.123
+9.123-5.1 | Essential Principles of Microscopy | | parentid:9.123-5
+9.123-5.2 | Light Microscopy | | parentid:9.123-5
+9.123-5.3 | Fluorescence Microscopy | | parentid:9.123-5
+9.123-5.4 | Electron Microscopy | | parentid:9.123-5
+9.123-5.5 | Preparing and Interpreting Microscopy Data | | parentid:9.123-5
+9.123-6 | Visualizing Neural Structure | | parentid:9.123
+9.123-6.1 | Tissue Preparation | | parentid:9.123-6
+9.123-6.2 | Visualizing Morphology | | parentid:9.123-6
+9.123-6.3 | Visualizing Gene and Protein Expression | | parentid:9.123-6
+9.123-6.4 | Visualizing Circuitry | | parentid:9.123-6
+9.123-7 | Visualizing Neural Function | | parentid:9.123
+9.123-7.1 | Static Markers of Activity | | parentid:9.123-7
+9.123-7.2 | Visualizing Neural Activity | | parentid:9.123-7
+9.123-7.3 | Visualizing Protein Function | | parentid:9.123-7
+9.123-8 | Manipulating Neural Activity | | parentid:9.123
+9.123-8.1 | Experimental Logic of Manipulating Neural Activity | | parentid:9.123-8
+9.123-8.2 | Physical Manipulation | | parentid:9.123-8
+9.123-8.3 | Electrical Manipulation | | parentid:9.123-8
+9.123-8.4 | Pharmacological Manipulation | | parentid:9.123-8
+9.123-8.5 | Genetic Manipulation | | parentid:9.123-8
+9.123-8.6 | Pharmacogenetic Manipulation | | parentid:9.123-8
+9.123-8.7 | Optogenetic Manipulation | | parentid:9.123-8
+9.123-8.8 | Neuromodulation Techniques Used in Humans | | parentid:9.123-8
+9.123-9 | Identifying Genes and Proteins of Interest | | parentid:9.123
+9.123-9.1 | A Brief Review of Genes and Proteins | | parentid:9.123-9
+9.123-9.2 | Genetic Screens | | parentid:9.123-9
+9.123-9.3 | In silico Screens | | parentid:9.123-9
+9.123-9.4 | Molecular Screens | | parentid:9.123-9
+9.123-10 | Molecular Cloning and Recombinant DNA Technology | | parentid:9.123
+9.123-10.1 | Isolating DNA Fragments | | parentid:9.123-10
+9.123-10.2 | Cloning DNA | | parentid:9.123-10
+9.123-10.3 | Identifying DNA | | parentid:9.123-10
+9.123-11 | Gene Delivery Strategies | | parentid:9.123
+9.123-11.1 | Physical Gene Delivery | | parentid:9.123-11
+9.123-11.2 | Chemical Gene Delivery | | parentid:9.123-11
+9.123-11.3 | Viral Gene Delivery | | parentid:9.123-11
+9.123-12 | Making and Using Transgenic Organisms | | parentid:9.123
+9.123-12.1 | Transgenes | | parentid:9.123-12
+9.123-12.2 | The Transgenic Construct | | parentid:9.123-12
+9.123-12.3 | Binary Transgenic Systems | | parentid:9.123-12
+9.123-12.4 | Making Transgenic Organisms | | parentid:9.123-12
+9.123-13 | Manipulating Endogenous Genes | | parentid:9.123
+9.123-13.1 | Classical Gene Targeting Methods | | parentid:9.123-13
+9.123-13.2 | Nuclease-Based Gene Targeting Methods | | parentid:9.123-13
+9.123-13.3 | Disrupting Gene Products | | parentid:9.123-13
+9.123-14 | Cell Culture Techniques | | parentid:9.123
+9.123-14.1 | Cell Culture Equipment and Reagents | | parentid:9.123-14
+9.123-14.2 | Immortalized Cell Lines | | parentid:9.123-14
+9.123-14.3 | Primary Cell and Tissue Culture | | parentid:9.123-14
+9.123-14.4 | Stem Cell Cultures | | parentid:9.123-14
+9.123-14.5 | Manipulating Cells in Culture | | parentid:9.123-14
+9.123-15 | Biochemical Assays and Intracellular Signaling | | parentid:9.123
+9.123-15.1 | Introduction to Signal Transduction and Intracellular Signaling | | parentid:9.123-15
+9.123-15.2 | Fundamental Tools Used to Study Proteins | | parentid:9.123-15
+9.123-15.3 | Investigating Protein Expression | | parentid:9.123-15
+9.123-15.4 | Investigating Protein–Protein Interactions | | parentid:9.123-15
+9.123-15.5 | Investigating Posttranslational Modifications | | parentid:9.123-15
+9.123-15.6 | Investigating Protein–DNA Interactions | | parentid:9.123-15
+9.18-1 | Introduction To The Nervous System  | | parentid:9.18
+9.18-1.1 | Principles of Signaling and Organization | | parentid:9.18-1
+9.18-1.1.1 | Introductory material | | parentid:9.18-1.1
+9.18-1.1.2 | Increased emphasis on genetics and molecular mechanisms | | parentid:9.18-1.1
+9.18-1.2 | Signaling in the Visual System | | parentid:9.18-1
+9.18-1.2.1 | Shifted to the beginning of the book from the end | | parentid:9.18-1.2
+9.18-1.2.2 | Extensively reworked to improve accessibility for readers without background knowledge of neurobiology | | parentid:9.18-1.2
+9.18-1.2.3 | Synaptic physiology in the visual cortex | | parentid:9.18-1.2
+9.18-1.3 | Functional Architecture of the Visual Cortex | | parentid:9.18-1
+9.18-1.3.1 | Like Chapter 2, shifted to the beginning of the book | | parentid:9.18-1.3
+9.18-1.3.2 | New information about columnar organization | | parentid:9.18-1.3
+9.18-2 | Electrical Properties Of Neurons And Glia  | | parentid:9.18
+9.18-2.1 | Ion Channels and Signaling | | parentid:9.18-2
+9.18-2.1.1 | Minor revisions for increased clarity | | parentid:9.18-2.1
+9.18-2.2 | Structure of Ion Channels | | parentid:9.18-2
+9.18-2.2.1 | Detailed molecular structure of both the nicotinic acetylcholine receptor channel and the voltage-sensitive potassium channel | | parentid:9.18-2.2
+9.18-2.2.2 | Conformational changes underlying channel gating | | parentid:9.18-2.2
+9.18-2.2.3 | Regulation of ion selectivity | | parentid:9.18-2.2
+9.18-2.2.4 | Updated catalogue of ion channels and channel subunits, including revised protein and gene designations | | parentid:9.18-2.2
+9.18-2.3 | Ionic Basis of the Resting Potential | | parentid:9.18-2
+9.18-2.3.1 | Channels associated with “leak” currents in the resting membrane | | parentid:9.18-2.3
+9.18-2.4 | Ionic Basis of the Action Potential | | parentid:9.18-2
+9.18-2.4.1 | Mechanism underlying voltage gating of channels | | parentid:9.18-2.4
+9.18-2.4.2 | Mechanisms underlying hyperpolarizing and depolarizing after potentials | | parentid:9.18-2.4
+9.18-2.4.3 | Role of afterpotentials in membrane excitability | | parentid:9.18-2.4
+9.18-2.5 | Electrical Signaling in Neurons | | parentid:9.18-2
+9.18-2.5.1 | Revised discussion of membrane resistance and capacitance | | parentid:9.18-2.5
+9.18-2.5.2 | Detailed structure of gap junctions | | parentid:9.18-2.5
+9.18-2.6 | Ion Transport across Cell Membranes | | parentid:9.18-2
+9.18-2.6.1 | Revised discussion of chloride transport | | parentid:9.18-2.6
+9.18-2.6.2 | Updated classification and designation of neurotransmitter transporters | | parentid:9.18-2.6
+9.18-2.6.3 | Expanded discussion of transmitter uptake mechanisms | | parentid:9.18-2.6
+9.18-2.7 | Properties and Functions of Neuroglial Cells | | parentid:9.18-2
+9.18-2.7.1 | The role of glia at synapses | | parentid:9.18-2.7
+9.18-2.7.2 | Radial glia and neurogenesis | | parentid:9.18-2.7
+9.18-2.7.3 | Calcium waves in glia | | parentid:9.18-2.7
+9.18-2.7.4 | Regulation of cerebral blood flow by glia | | parentid:9.18-2.7
+9.18-2.7.5 | The role of microglia | | parentid:9.18-2.7
+9.18-3 | Intercellular Communication  | | parentid:9.18
+9.18-3.1 | Mechanisms of Direct Synaptic Transmission | | parentid:9.18-3
+9.18-3.1.1 | Updated content on gating of nicotinic acetylcholine receptors | | parentid:9.18-3.1
+9.18-3.1.2 | Discussion of chemical transmission expanded to include excitatory and inhibitory transmission in the mammalian central nervous system | | parentid:9.18-3.1
+9.18-3.1.3 | New material on drugs and toxins acting on the neuromuscular junction, and on how transmitter receptors are localized at their postsynaptic sites | | parentid:9.18-3.1
+9.18-3.1.4 | Expanded treatment of the role of connexons and the functions of electrical transmission in the mammalian central nervous system | | parentid:9.18-3.1
+9.18-3.2 | Indirect Mechanisms of Synaptic Transmission | | parentid:9.18-3
+9.18-3.2.1 | New material on how G proteins work | | parentid:9.18-3.2
+9.18-3.2.2 | Discussion of the role of membrane phospholipids as ion channel regulators | | parentid:9.18-3.2
+9.18-3.2.3 | New coverage of endocannabinoids, nitric oxide, and carbon monoxide as neural messengers | | parentid:9.18-3.2
+9.18-3.2.4 | New material on how different receptor-activated signaling cascades are integrated or segregated in the neuron | | parentid:9.18-3.2
+9.18-3.3 | Release of Neurotransmitters | | parentid:9.18-3
+9.18-3.3.1 | New evidence for the direct role of calcium in transmitter release | | parentid:9.18-3.3
+9.18-3.3.2 | Use of fluorescent dyes and capacitance measurements to monitor vesicle fusion | | parentid:9.18-3.3
+9.18-3.3.3 | Detailed mechanism of vesicle fusion and exocytosis | | parentid:9.18-3.3
+9.18-3.3.4 | Molecular details of active zone structure revealed by electron tomography | | parentid:9.18-3.3
+9.18-3.3.5 | Structure of ribbon synapses | | parentid:9.18-3.3
+9.18-3.3.6 | The role of vesicle pools in transmitter release and recovery | | parentid:9.18-3.3
+9.18-3.4 | Neurotransmitters in the Central Nervous System | | parentid:9.18-3
+9.18-3.4.1 | Expanded and updated sections on amino acid transmitters, acetycholine, monoamines, and ATP | | parentid:9.18-3.4
+9.18-3.4.2 | Coverage of new aspects of peptidergic transmission: nociceptin (orphanin); the orexins, sleep, and regulation of food intake; and vasopressin, oxytocin, and the social brain | | parentid:9.18-3.4
+9.18-3.5 | Transmitter Synthesis, Transport, Storage, and Inactivation | | parentid:9.18-3
+9.18-3.5.1 | New material on co-uptake, co-storage, and co-release of transmitters | | parentid:9.18-3.5
+9.18-3.6 | Synaptic Plasticity | | parentid:9.18-3
+9.18-3.6.1 | Expanded discussion of presynaptic and postsynaptic mechanisms underlying long-term potentiation and long-term depression | | parentid:9.18-3.6
+9.18-4 | Integrative Mechanisms  | | parentid:9.18
+9.18-4.1 | Autonomic Nervous System | | parentid:9.18-4
+9.18-4.1.1 | Retinal ganglion cells responding to light | | parentid:9.18-4.1
+9.18-4.1.2 | Circadian rhythms | | parentid:9.18-4.1
+9.18-4.1.3 | M current second messengers | | parentid:9.18-4.1
+9.18-4.1.4 | Leptins | | parentid:9.18-4.1
+9.18-4.2 | Cellular Mechanisms of Behavior in Ants, Bees, and Leeches | | parentid:9.18-4
+9.18-4.2.1 | Path-finding by ants on stilts | | parentid:9.18-4.2
+9.18-4.2.2 | Optical recording and systems approach to behavioral analysis; how a leech makes up its mind | | parentid:9.18-4.2
+9.18-5 | Sensation And Movement  | | parentid:9.18
+9.18-5.1 | Sensory Transduction | | parentid:9.18-5
+9.18-5.1.1 | Fundamental aspects of sensory signaling exemplified by cutaneous and muscle receptors | | parentid:9.18-5.1
+9.18-5.1.2 | Detailed and updated descriptions of hair cell mechanotransduction, chemical senses, and nociception | | parentid:9.18-5.1
+9.18-5.2 | Transduction and Transmission in the Retina | | parentid:9.18-5
+9.18-5.2.1 | Coverage of the transduction cascade whereby the absorption of light results in photoreceptor hyperpolarization | | parentid:9.18-5.2
+9.18-5.2.2 | How intrinsically photosensitive ganglion cells subserve circadian rhythms | | parentid:9.18-5.2
+9.18-5.2.3 | Synaptic connectivity of photoreceptors, interneurons, and ganglion cells in the retina | | parentid:9.18-5.2
+9.18-5.3 | Touch, Pain, and Texture Sensation | | parentid:9.18-5
+9.18-5.3.1 | Completely new chapter, covering the most recent research on the somatosensory system from receptors to cortical organization | | parentid:9.18-5.3
+9.18-5.3.2 | Description of the processing that leads from contact of an object with the skin to recognition of the physical properties of that object | | parentid:9.18-5.3
+9.18-5.3.3 | New material on the functional organization of the somatosensory system, both in rats and mice, where the whiskers are particularly important, and in primates, where the fingertips are particularly important | | parentid:9.18-5.3
+9.18-5.4 | Auditory and Vestibular Sensation | | parentid:9.18-5
+9.18-5.4.1 | Frequency selectivity and amplification in the mammalian cochlea | | parentid:9.18-5.4
+9.18-5.4.2 | Electrical tuning of hair cells in the turtle inner ear | | parentid:9.18-5.4
+9.18-5.4.3 | Structure and function of the vestibular periphery | | parentid:9.18-5.4
+9.18-5.5 | Constructing Perception | | parentid:9.18-5
+9.18-5.5.1 | Completely new chapter, dedicated to a description of processing in the brain that occurs after the primary sensory areas | | parentid:9.18-5.5
+9.18-5.5.2 | Special attention given to current investigations concerning how a vibration on the fingertip is perceived, and how objects are recognized in a visual scene | | parentid:9.18-5.5
+9.18-5.6 | Circuits Controlling Reflexes, Respiration, and Coordinated Movements | | parentid:9.18-5
+9.18-5.6.1 | Optical recording from brainstem respiratory circuits | | parentid:9.18-5.6
+9.18-5.6.2 | Columnar organization of motor cortex | | parentid:9.18-5.6
+9.18-5.6.3 | Posture | | parentid:9.18-5.6
+9.18-6 | Development And Regeneration Of The Nervous System  | | parentid:9.18
+9.18-6.1 | Development of the Nervous System | | parentid:9.18-6
+9.18-6.1.1 | Text now includes, among many other additions: homeotic genes for forebrain development; neuron generation from radial glia; considerations of adult neurogenesis; mention of clinically important developmental defects | | parentid:9.18-6.1
+9.18-6.1.2 | Broadened overview of signaling | | parentid:9.18-6.1
+9.18-6.2 | Critical Periods in Sensory Systems | | parentid:9.18-6
+9.18-6.2.1 | The role of experience in shaping connectivity of the visual cortex | | parentid:9.18-6.2
+9.18-6.2.2 | Critical periods in auditory system development | | parentid:9.18-6.2
+9.18-6.2.3 | The interplay of intrinsic and extrinsic factors in developmental plasticity | | parentid:9.18-6.2
+9.18-6.3 | Regeneration of Synaptic Connections after Injury | | parentid:9.18-6
+9.18-6.3.1 | Greater emphasis on molecular mechanisms of synapse formation, agrin receptors, and the potential for use of stem cells for repair of the central nervous system | | parentid:9.18-6.3
+9.18-7 | Conclusion  | | parentid:9.18
+9.18-7.1 | Open Questions | | parentid:9.18-7
+9.18-7.1.1 | Clinical relevance emphasized | | parentid:9.18-7.1
+9.18-AppendixA | Current Flow in Electrical Circuits | parentid:9.18
+9.18-AppendixB | Metabolic Pathways for the Synthesis and Inactivation of Low-Molecular-Weight Transmitters | parentid:9.18
+9.18-AppendixC | Structures and Pathways of the Brain | parentid:9.18
+9.95-1 | Foundations | | parentid:9.95
+9.95-1.1 | Neuroscience: Past, Present, and Future | | parentid:9.95-1
+9.95-1.2 | Neurons and Glia | | parentid:9.95-1
+9.95-1.3 | The Neuronal Membrane at Rest | | parentid:9.95-1
+9.95-1.4 | The Action Potential | | parentid:9.95-1
+9.95-1.5 | Synaptic Transmission | | parentid:9.95-1
+9.95-1.6 | Neurotransmitter Systems | | parentid:9.95-1
+9.95-1.7 | The Structure of the Nervous System | | parentid:9.95-1
+9.95-2 | Sensory and Motor Systems | | parentid:9.95
+9.95-2.1 | The Chemical Senses | | parentid:9.95-2
+9.95-2.2 | The Eye | | parentid:9.95-2
+9.95-2.3 | The Central Visual System | | parentid:9.95-2
+9.95-2.4 | The Auditory and Vestibular Systems | | parentid:9.95-2
+9.95-2.5 | The Somatic Sensory System | | parentid:9.95-2
+9.95-2.6 | Spinal Control of Movement | | parentid:9.95-2
+9.95-2.7 | Brain Control of Movement | | parentid:9.95-2
+9.95-3 | The Brain and Behavior | | parentid:9.95
+9.95-3.1 | Chemical Control of the Brain and Behavior | | parentid:9.95-3
+9.95-3.2 | Motivation | | parentid:9.95-3
+9.95-3.3 | Sex and the Brain | | parentid:9.95-3
+9.95-3.4 | Brain Mechanisms of Emotion | | parentid:9.95-3
+9.95-3.5 | Brain Rhythms and Sleep | | parentid:9.95-3
+9.95-3.6 | Language | | parentid:9.95-3
+9.95-3.7 | Attention | | parentid:9.95-3
+9.95-3.8 | Mental Illness | | parentid:9.95-3
+9.95-3.9 | Wiring the Brain | | parentid:9.95-3
+9.95-3.10 | Memory Systems | | parentid:9.95-3
+9.95-3.11 | Molecular Mechanisms of Learning and Memory | | parentid:9.95-3
