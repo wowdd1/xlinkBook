@@ -17,8 +17,8 @@ class UniversityRankSpider(Spider):
         for div in soup.find_all('div', class_='link'):
             sp = BeautifulSoup(div.prettify())
             for li in sp.find_all('li'):
-                if self.need_update_subject(li.text.strip()) == False:
-                    continue
+                #if self.need_update_subject(li.text.strip()) == False:
+                #    continue
                 print li.text.strip() + " " + li.a['href']
                 url = li.a['href']
                 if url.startswith('http') == False:
@@ -133,12 +133,32 @@ class UniversityRankSpider(Spider):
 
     def processUsnewsData(self):
         self.school = 'usnews'
-        sub_list = ['biology-biochemistry', 'computer-science', 'economics-business', 'engineering', 'mathematics', 'neuroscience-behavior',\
-                    'physics', 'psychiatry-psychology']
+        sub_list = ["Agricultural-Sciences",\
+                "Arts-Humanities",\
+                "Biology-Biochemistry",\
+                "Chemistry",\
+                "Clinical-Medicine",\
+                "Computer-Science",\
+                "Economics-Business",\
+                "Engineering",\
+                "Environment-Ecology",\
+                "Geosciences",\
+                "Immunology",\
+                "Materials-Science",\
+                "Mathematics",\
+                "Microbiology",\
+                "Molecular-Biology-Genetics",\
+                "Neuroscience-Behavior",\
+                "Pharmacology-Toxicology",\
+                "Physics",\
+                "Plant-Animal-Science",\
+                "Psychiatry-Psychology",\
+                "Social-Sciences-Public-Health",\
+                "Space-Science"]
         for sub in sub_list:
-            if self.need_update_subject(sub) == False:
-                continue
-            r = requests.get('http://www.usnews.com/education/best-global-universities/search?region=&subject=' + sub + '&name=')
+            #if self.need_update_subject(sub) == False:
+            #    continue
+            r = requests.get('http://www.usnews.com/education/best-global-universities/search?region=&subject=' + sub.lower() + '&name=')
             soup = BeautifulSoup(r.text)
             file_name = self.get_file_name(self.subject + '/' + self.school + '/' + sub, self.school)
             file_lines = self.countFileLineNum(file_name)

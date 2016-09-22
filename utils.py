@@ -210,7 +210,7 @@ class Utils:
             else:
                 html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=?">library</a>&nbsp;'
 
-            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=77">' + content + '<font size="2">(' + str(lines) + ')</font></a></div>'
+            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width + '">' + content + '<font size="2">(' + str(lines) + ')</font></a></div>'
         else:
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/login">Login</a></div>'
         html += '<div style="height: 21px; width: 100px"></div>'
@@ -232,7 +232,7 @@ class Utils:
             f = open('db/library/' + item)
             lines = len(f.readlines())
             f.close()
-            html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=77">' + item.replace('-library', '') + '<font size="2">(' + str(lines) + ')</font></a>&nbsp;'
+            html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=' + Config.default_width + '">' + item.replace('-library', '') + '<font size="2">(' + str(lines) + ')</font></a>&nbsp;'
             if count > 5 :
                 count = 0
                 #html += '<br/>' #need adjust config content_margin_top

@@ -1,0 +1,152 @@
+BIOENG10-1 | Biomedical Engineering: A Historical Perspective | | parentid:BIOENG10
+BIOENG10-1.1 | The Evolution of the Modern Health Care System | | parentid:BIOENG10-1
+BIOENG10-1.2 | The Modern Health Care System | | parentid:BIOENG10-1
+BIOENG10-1.3 | What Is Biomedical Engineering? | | parentid:BIOENG10-1
+BIOENG10-1.4 | Roles Played by the Biomedical Engineers | | parentid:BIOENG10-1
+BIOENG10-1.5 | Recent Advances in Biomedical Engineering | | parentid:BIOENG10-1
+BIOENG10-1.6 | Professional Status of Biomedical Engineering | | parentid:BIOENG10-1
+BIOENG10-1.7 | Professional Societies | | parentid:BIOENG10-1
+BIOENG10-2 | Moral and Ethical Issues | | parentid:BIOENG10
+BIOENG10-2.1 | Morality and Ethics: A Definition of Terms | | parentid:BIOENG10-2
+BIOENG10-2.2 | Two Moral Norms: Beneficence and Nonmaleficence | | parentid:BIOENG10-2
+BIOENG10-2.3 | Redefining Death | | parentid:BIOENG10-2
+BIOENG10-2.4 | The Terminally Ill Patient and Euthanasia | | parentid:BIOENG10-2
+BIOENG10-2.5 | Taking Control | | parentid:BIOENG10-2
+BIOENG10-2.6 | Human Experimentation | | parentid:BIOENG10-2
+BIOENG10-2.7 | Definition and Purpose of Experimentation | | parentid:BIOENG10-2
+BIOENG10-2.8 | Informed Consent | | parentid:BIOENG10-2
+BIOENG10-2.9 | Regulation of Medical Device Innovation | | parentid:BIOENG10-2
+BIOENG10-2.10 | Marketing Medical Devices | | parentid:BIOENG10-2
+BIOENG10-2.11 | Ethical Issues in Feasibility Studies | | parentid:BIOENG10-2
+BIOENG10-2.12 | Ethical Issues in Emergency Use | | parentid:BIOENG10-2
+BIOENG10-2.13 | Ethical Issues in Treatment Use | | parentid:BIOENG10-2
+BIOENG10-2.14 | The Role of the Biomedical Engineer in the FDA Process | | parentid:BIOENG10-2
+BIOENG10-3 | Anatomy and Physiology | | parentid:BIOENG10
+BIOENG10-3.1 | Introduction | | parentid:BIOENG10-3
+BIOENG10-3.2 | Cellular Organization | | parentid:BIOENG10-3
+BIOENG10-3.3 | Tissues | | parentid:BIOENG10-3
+BIOENG10-3.4 | Major Organ Systems | | parentid:BIOENG10-3
+BIOENG10-3.5 | Homeostasis | | parentid:BIOENG10-3
+BIOENG10-4 | Biomechanics | | parentid:BIOENG10
+BIOENG10-4.1 | Introduction | | parentid:BIOENG10-4
+BIOENG10-4.2 | Basic Mechanics | | parentid:BIOENG10-4
+BIOENG10-4.3 | Mechanics of Materials | | parentid:BIOENG10-4
+BIOENG10-4.4 | Viscoelastic Properties | | parentid:BIOENG10-4
+BIOENG10-4.5 | Cartilage, Ligament, Tendon, and Muscle | | parentid:BIOENG10-4
+BIOENG10-4.6 | Clinical Gait Analysis | | parentid:BIOENG10-4
+BIOENG10-4.7 | Cardiovascular Dynamics | | parentid:BIOENG10-4
+BIOENG10-5 | Biomaterials | | parentid:BIOENG10
+BIOENG10-5.1 | Materials in Medicine: From Prosthetics to Regeneration | | parentid:BIOENG10-5
+BIOENG10-5.2 | Biomaterials: Types, Properties, and Their Applications | | parentid:BIOENG10-5
+BIOENG10-5.3 | Lessons from Nature on Biomaterial Design and Selection | | parentid:BIOENG10-5
+BIOENG10-5.4 | Tissue-Biomaterial Interactions | | parentid:BIOENG10-5
+BIOENG10-5.5 | Biomaterials Processing Techniques for Guiding Tissue Repair and Regeneration | | parentid:BIOENG10-5
+BIOENG10-5.6 | Safety Testing and Regulation of Biomaterials | | parentid:BIOENG10-5
+BIOENG10-5.7 | Application-Specific Strategies for the Design and Selection of Biomaterials | | parentid:BIOENG10-5
+BIOENG10-6 | Tissue Engineering | | parentid:BIOENG10
+BIOENG10-6.1 | What Is Tissue Engineering? | | parentid:BIOENG10-6
+BIOENG10-6.2 | Biological considerations | | parentid:BIOENG10-6
+BIOENG10-6.3 | Physical considerations | | parentid:BIOENG10-6
+BIOENG10-6.4 | Scaling up | | parentid:BIOENG10-6
+BIOENG10-6.5 | Implementation of Tissue Engineered Products | | parentid:BIOENG10-6
+BIOENG10-6.6 | Future Directions: Functional Tissue Engineering and the "-Omics" Sciences | | parentid:BIOENG10-6
+BIOENG10-6.7 | Conclusions | | parentid:BIOENG10-6
+BIOENG10-7 | Compartmental Modeling | | parentid:BIOENG10
+BIOENG10-7.1 | Introduction | | parentid:BIOENG10-7
+BIOENG10-7.2 | Solutes, Compartments, and Volumes | | parentid:BIOENG10-7
+BIOENG10-7.3 | Transfer of Substances between Two Compartments Separated by a Membrane | | parentid:BIOENG10-7
+BIOENG10-7.4 | Compartmental Modeling Basics | | parentid:BIOENG10-7
+BIOENG10-7.5 | One-Compartment Modeling | | parentid:BIOENG10-7
+BIOENG10-7.6 | Two-Compartment Modeling | | parentid:BIOENG10-7
+BIOENG10-7.7 | Three-Compartment Modeling | | parentid:BIOENG10-7
+BIOENG10-7.8 | Multicompartment Modeling | | parentid:BIOENG10-7
+BIOENG10-8 | Biochemical Reactions and Enzyme Kinetics | | parentid:BIOENG10
+BIOENG10-8.1 | Chemical Reactions | | parentid:BIOENG10-8
+BIOENG10-8.2 | Enzyme Kinetics | | parentid:BIOENG10-8
+BIOENG10-8.3 | Additional Models Using the Quasi-Steady-State Approximation | | parentid:BIOENG10-8
+BIOENG10-8.4 | Diffusion, Biochemical Reactions, and Enzyme Kinetics | | parentid:BIOENG10-8
+BIOENG10-8.5 | Cellular Respiration: Glucose Metabolism and the Creation of ATP | | parentid:BIOENG10-8
+BIOENG10-8.6 | Enzyme Inhibition, Allosteric Modifiers, and Cooperative Reactions | | parentid:BIOENG10-8
+BIOENG10-9 | Bioinstrumentation | | parentid:BIOENG10
+BIOENG10-9.1 | Introduction | | parentid:BIOENG10-9
+BIOENG10-9.2 | Basic Bioinstrumentation System | | parentid:BIOENG10-9
+BIOENG10-9.3 | Charge, Current, Voltage, Power, and Energy | | parentid:BIOENG10-9
+BIOENG10-9.4 | Resistance | | parentid:BIOENG10-9
+BIOENG10-9.5 | Linear Network Analysis | | parentid:BIOENG10-9
+BIOENG10-9.6 | Linearity and Superposition | | parentid:BIOENG10-9
+BIOENG10-9.7 | Thévenin's Theorem | | parentid:BIOENG10-9
+BIOENG10-9.8 | Inductors | | parentid:BIOENG10-9
+BIOENG10-9.9 | Capacitors | | parentid:BIOENG10-9
+BIOENG10-9.10 | A General Approach to Solving Circuits Involving Resistors, Capacitors, and Inductors | | parentid:BIOENG10-9
+BIOENG10-9.11 | Operational Amplifiers | | parentid:BIOENG10-9
+BIOENG10-9.12 | Time-Varying Signals | | parentid:BIOENG10-9
+BIOENG10-9.13 | Active Analog Filters | | parentid:BIOENG10-9
+BIOENG10-9.14 | Bioinstrumentation Design | | parentid:BIOENG10-9
+BIOENG10-10 | Biomedical Sensors | | parentid:BIOENG10
+BIOENG10-10.1 | Introduction | | parentid:BIOENG10-10
+BIOENG10-10.2 | Biopotential Measurements | | parentid:BIOENG10-10
+BIOENG10-10.3 | Physical Measurements | | parentid:BIOENG10-10
+BIOENG10-10.4 | Blood Gas Sensors | | parentid:BIOENG10-10
+BIOENG10-10.5 | Bioanalytical Sensors | | parentid:BIOENG10-10
+BIOENG10-10.6 | Optical Sensors | | parentid:BIOENG10-10
+BIOENG10-11 | Biosignal Processing | | parentid:BIOENG10
+BIOENG10-11.1 | Introduction | | parentid:BIOENG10-11
+BIOENG10-11.2 | Physiological Origins of Biosignals | | parentid:BIOENG10-11
+BIOENG10-11.3 | Characteristics of Biosignals | | parentid:BIOENG10-11
+BIOENG10-11.4 | Signal Acquisition | | parentid:BIOENG10-11
+BIOENG10-11.5 | Frequency Domain Representation of Biological Signals | | parentid:BIOENG10-11
+BIOENG10-11.6 | Linear Systems | | parentid:BIOENG10-11
+BIOENG10-11.7 | Signal Averaging | | parentid:BIOENG10-11
+BIOENG10-11.8 | The Wavelet Transform and the Short-Time Fourier Transform | | parentid:BIOENG10-11
+BIOENG10-11.9 | Artificial Intelligence Techniques | | parentid:BIOENG10-11
+BIOENG10-12 | Bioelectric Phenomena | | parentid:BIOENG10
+BIOENG10-12.1 | Introduction | | parentid:BIOENG10-12
+BIOENG10-12.2 | History | | parentid:BIOENG10-12
+BIOENG10-12.3 | Neurons | | parentid:BIOENG10-12
+BIOENG10-12.4 | Basic Biophysics Tools and Relationships | | parentid:BIOENG10-12
+BIOENG10-12.5 | Equivalent Circuit Model for the Cell Membrane | | parentid:BIOENG10-12
+BIOENG10-12.6 | The Hodgkin-Huxley Model of the Action Potential | | parentid:BIOENG10-12
+BIOENG10-12.7 | Model of a Whole Neuron | | parentid:BIOENG10-12
+BIOENG10-12.8 | Chemical Synapses | | parentid:BIOENG10-12
+BIOENG10-13 | Physiological Modeling | | parentid:BIOENG10
+BIOENG10-13.1 | Introduction | | parentid:BIOENG10-13
+BIOENG10-13.2 | An Overview of the Fast Eye Movement System | | parentid:BIOENG10-13
+BIOENG10-13.3 | The Westheimer Saccadic Eye Movement Model | | parentid:BIOENG10-13
+BIOENG10-13.4 | The Saccade Controller | | parentid:BIOENG10-13
+BIOENG10-13.5 | Development of an Oculomotor Muscle Model | | parentid:BIOENG10-13
+BIOENG10-13.6 | The 1984 Linear Reciprocal Innervation Saccadic Eye Movement Model | | parentid:BIOENG10-13
+BIOENG10-13.7 | The 1995 Linear Homeomorphic Saccadic Eye Movement Model | | parentid:BIOENG10-13
+BIOENG10-13.8 | The 2009 Linear Homeomorphic Saccadic Eye Movement Model | | parentid:BIOENG10-13
+BIOENG10-13.9 | Saccade Neural Pathways | | parentid:BIOENG10-13
+BIOENG10-13.10 | System Identification | | parentid:BIOENG10-13
+BIOENG10-14 | Biomedical Transport Processes | | parentid:BIOENG10
+BIOENG10-14.1 | Biomedical Mass Transport | | parentid:BIOENG10-14
+BIOENG10-14.2 | Biofluid Mechanics and Momentum Transport | | parentid:BIOENG10-14
+BIOENG10-14.3 | Biomedical Heat Transport | | parentid:BIOENG10-14
+BIOENG10-15 | Radiation Imaging | | parentid:BIOENG10
+BIOENG10-15.1 | Introduction | | parentid:BIOENG10-15
+BIOENG10-15.2 | Emission Imaging Systems | | parentid:BIOENG10-15
+BIOENG10-15.3 | Instrumentation and Imaging Devices | | parentid:BIOENG10-15
+BIOENG10-15.4 | Radiographic Imaging Systems | | parentid:BIOENG10-15
+BIOENG10-16 | Medical Imaging | | parentid:BIOENG10
+BIOENG10-16.1 | Introduction | | parentid:BIOENG10-16
+BIOENG10-16.2 | Diagnostic ultrasound imaging | | parentid:BIOENG10-16
+BIOENG10-16.3 | Magnetic resonance imaging | | parentid:BIOENG10-16
+BIOENG10-16.4 | Magnetoencephalography | | parentid:BIOENG10-16
+BIOENG10-16.5 | Contrast agents | | parentid:BIOENG10-16
+BIOENG10-16.6 | Comparison of imaging modes | | parentid:BIOENG10-16
+BIOENG10-16.7 | Image Fusion | | parentid:BIOENG10-16
+BIOENG10-16.8 | Summary | | parentid:BIOENG10-16
+BIOENG10-17 | Biomedical Optics and Lasers | | parentid:BIOENG10
+BIOENG10-17.1 | Introduction to Essential Optical Principles | | parentid:BIOENG10-17
+BIOENG10-17.2 | Fundamentals of Light Propagation in Biological Tissue | | parentid:BIOENG10-17
+BIOENG10-17.3 | Physical Interaction of Light and Physical Sensing | | parentid:BIOENG10-17
+BIOENG10-17.4 | Biochemical Measurement Techniques Using Light | | parentid:BIOENG10-17
+BIOENG10-17.5 | Fundamentals of the Photothermal Therapeutic Effects of Light Sources | | parentid:BIOENG10-17
+BIOENG10-17.6 | Fiber Optics and Waveguides in Medicine | | parentid:BIOENG10-17
+BIOENG10-17.7 | Biomedical Optical Imaging | | parentid:BIOENG10-17
+BIOENG10-Appendix | Appendix | | parentid:BIOENG10
+BIOENG10-Appendix-1 | Matlab | | parentid:BIOENG10-Appendix 
+BIOENG10-Appendix-2 | Solving differential equations using Matlab | | parentid:BIOENG10-Appendix 
+BIOENG10-Appendix-3 | Block diagrams and SIMULINK | | parentid:BIOENG10-Appendix 
+BIOENG10-Appendix-4 | Simulink | | parentid:BIOENG10-Appendix 

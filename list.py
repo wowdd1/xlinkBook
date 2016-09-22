@@ -197,6 +197,8 @@ def print_keyword(file_name):
 
 def color_keyword(text):
     result = text
+    #if text.find('<a') != -1:
+    #    return text
     for k in keyword_list:
         k = ' ' + k
         if result.find(k + ' ') != -1:
@@ -209,6 +211,7 @@ def color_keyword(text):
         else:
             if html_style == True:
                 result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
+                #return result.encode('utf-8')
             else:
                 result = result.replace(k, utils.getColorStr('darkcyan', k))
 
@@ -760,6 +763,8 @@ def gen_html_body(content, row=0):
         verticals = []
         id_style = 'vertical-align:top; width:' + str(course_num_len) + 'px; '
         name_style = 'vertical-align:top; width:' + str(course_name_len * 9) + 'px; '
+        if Config.title_font_size > 0:
+            name_style += 'font-size:' + str(Config.title_font_size) + '; '
         if Config.hiden_record_id:
             id_style += 'display: none; '
         if column_num == "2":
@@ -783,8 +788,10 @@ def gen_html_body(content, row=0):
             content = content.replace('#div-thumb-' + str(i), 'div-thumb-' + ids[i].lower())
             
 
-
-    return content + '<tr class="info" style="height: ' + Config.split_height + ';"></tr>'
+    if Config.split_height > 0:
+        return content + '<tr class="info" style="height: ' + str(Config.split_height) + 'px;"></tr>'
+    else:
+        return content
 
 def get_background_color(content):
     content_back = content.split('|')
@@ -848,7 +855,9 @@ def gen_html_body_v2(content, row, subRow):
 
 def smartLink(content, record):
     if content.strip().startswith('path:'):
-        path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'})
+        path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'}).strip()
+        if path.find(' ') != -1:
+            path = path[0 : path.find(' ') ].strip()
         src = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=' + path[path.rfind('/') + 1 : ] + '&column=2'
         folder = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=?'
         alt = path[path.find('db') :]
@@ -1064,6 +1073,7 @@ def getLines(file_name):
 
 def enhancedRecord(fileName, record, count, filter_mode=False):
     line = record.line
+
     if filter_mode:
         if record.get_describe().find('path:') == -1:
             line += ' path:' + fileName[fileName.find('db') :] 
@@ -1075,12 +1085,28 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
         id = 'custom-' + str(count)
         line = id + line
 
-    if Config.hiden_record_id:
+    if Config.hiden_record_id and record.get_describe().find('id:') == -1:
         line += ' id:' + id
+
+    if record.get_url().find(Config.ip_adress) != -1 and record.get_path() == '':
+        url = record.get_url().strip()
+        parts = url.split('&')
+        path = ''
+        for p in parts:
+            if p.find('db=') != -1:
+                path += p[p.find('db') : ].replace('db=', 'db/')
+            if p.find('key=') != -1:
+                path += p[p.find('key') : ].replace('key=', '')
+        if path != '':
+            line += ' path:' + path
 
     if fileName.find('rank') != -1 and line.find('winner') == -1 and record.get_title().find(',') != -1:
         line += ' winner:' + record.get_title()
-
+    
+    if fileName.endswith('library') and record.get_title().find('(') != -1:
+        title = record.get_title().strip()
+        line = line[0 : line.find('|') + 1 ] + ' ' + title[0 : title.find('(')] + ' ' + line[line.find('|', line.find('|') + 1) : ]
+    
     return line
 
 

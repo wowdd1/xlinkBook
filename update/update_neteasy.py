@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8-*-
 #author: wowdd1
 #mail: developergf@gmail.com
 #data: 2014.12.07
@@ -22,6 +22,7 @@ class NetEasySpider(Spider):
         file_name = self.get_file_name('videos/' + subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
+        self.count = 0
         for div in soup.find_all("div", class_ = "g-cell1 g-card1"):
             self.count = self.count + 1
             course_num = "163-ocw-" + str(self.count)
@@ -35,7 +36,12 @@ class NetEasySpider(Spider):
                         title = str(a.h5)[pos + 1: str(a.h5).find("<" , pos)]
                     else:
                         title = a.h5.string
-                    self.write_db(f, course_num, title, str(a["href"]))
+                    desc = title
+                    if title.find('《') != -1:
+                        title = title.replace('《','$')
+                        title = title.replace('》','%')
+                        title = title[title.find('$') + 1 : title.find('%')].strip()
+                    self.write_db(f, course_num, title, str(a["href"]), 'description:' + desc)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:

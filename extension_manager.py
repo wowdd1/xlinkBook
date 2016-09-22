@@ -77,7 +77,13 @@ class ExtensionManager:
                 if lr.get_path() != None and lr.get_path().strip() != '':
                     form['fileName'] = os.getcwd() + lr.get_path().strip()
                 else:
-                    form['fileName'] = os.getcwd() + 'db/library/' + form['user_name'] + '-library'
+                    if Config.default_library != '':
+                        if Config.default_library.endswith('-library'):
+                            form['fileName'] = os.getcwd() + 'db/library/' + Config.default_library
+                        else:
+                            form['fileName'] = os.getcwd() + 'db/library/' + Config.default_library + '-library'
+                    else:
+                        form['fileName'] = os.getcwd() + 'db/library/' + form['user_name'] + '-library'
 
         if check == 'true':
             if form['name'] == "*":

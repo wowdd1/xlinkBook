@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import subprocess
 from config import Config
@@ -29,23 +30,31 @@ class Convert(BaseExtension):
         new_url = url
         self.count = 0
         if Config.convert_page_step > 0:
+            all_data = ''
             while True:
-                data = self.genHtml(new_url, divID, rID)
-                if data != '':
-                    html += data
-                else:
-                    break
+                data = self.convert2data(new_url)
+                if data != '' and data != None:
+                    all_data += data + '\n'
+                elif data == '':
+                    if Config.convert_page_to_end == False:
+                        break
                 step += Config.convert_page_step
                 if step > Config.convert_page_max:
                     break
                 new_url = url + str(step)
+            if all_data != '':
+                return self.genHtml(all_data, divID, rID)
+            else:
+                return ''
         else:
-            html = self.genHtml(new_url, divID, rID)
+            html = self.genHtml(self.convert2data(new_url), divID, rID)
 
-        return '<div class="ref"><ol><br>' + html + '</ol></div>'
+        if Config.convert_split_column_number > 0:
+            return html 
+        else:
+            return '<div class="ref"><ol>' + html + '</ol></div>'
 
-    def genHtml(self, url, divID, rID):
-        print url
+    def convert2data(self, url):
 
         url_prefix = url[0 : url.find('/', url.find('//') + 2)]
 
@@ -71,17 +80,21 @@ class Convert(BaseExtension):
         print 'cmd ----> ' + cmd + ' <----'
         data = subprocess.check_output(cmd, shell=True)
 
-        if data.strip() == '':
-            return ''
-        
+        return data.strip()
+
+
+    def genHtml(self, data, divID, rID):
         
         html = ''
+        start = False
+        count = 0
         for line in data.split('\n'):
-            if line.strip() == '':
-                continue
+            
             r = Record(line)
             id = r.get_id().strip()
             title = r.get_title().strip()
+            if title.strip() == '':
+                continue
             link = r.get_url().strip()
             if link != '' and link.startswith('http') == False:
                 link = url_prefix + link
@@ -92,17 +105,30 @@ class Convert(BaseExtension):
                 title = self.utils.toSmartLink(title)
 
             self.count += 1
-            html += '<li><span>' + str(self.count) + '.</span>'
-            html += '<p>' + title
+            count += 1
+            if Config.convert_split_column_number > 0 and (self.count== 1 or self.count > Config.convert_split_column_number):
+                if start:
+                    html += '</ol></div>'
+                    self.count = 1
+                
+                html += '<div style="float:left;"><ol>'
+                start = True
 
-            ref_divID = divID + '-' + str(self.count)
+
+            html += '<li><span>' + str(count) + '.</span>'
+            html +=  '<p>' + title
+
+            ref_divID = divID + '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
-            appendID = str(self.count)
+            appendID = str(count)
             script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r.get_title().strip(), link, '-')
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
 
+            #html += '<br>'
             html += '</p></li>'
 
+        if start:
+            html += '</ol></div>'
         #html += "</ol></div>"
         return html
 
