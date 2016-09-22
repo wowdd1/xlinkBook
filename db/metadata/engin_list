@@ -503,3 +503,4 @@ engin-510 | britannica | https://www.britannica.com/search?query= | priority:6 d
 engin-511 | dxy.cn | http://search.dxy.cn/?words=%s&limit=15 | priority:5 description:social
 engin-512 | currentprotocols | http://www.currentprotocols.com/WileyCDA/Section/id-810760.html?query=%s&x=48&y=18 | priority:6 description:protocol
 engin-513 | plato | http://plato.stanford.edu/search/searcher.py?query= | priority:5 description:wiki
+engin-514 | brain-map | http://www.brain-map.org/search/index.html?query=%s&fa=false&e_sp=t&e_ag=t&e_tr=t&e_fa=t | priority:5 description:dataset

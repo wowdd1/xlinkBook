@@ -22,6 +22,8 @@ class Preview(BaseExtension):
 	    if column == '1':
 	        width = '698'
 	        height = '455'
+        elif url.find('163') != -1:
+            src = url.replace('open', 'v')
 	else:
 	    if column == '1':
 	        width = '1300'

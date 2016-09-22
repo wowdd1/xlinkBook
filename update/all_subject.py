@@ -65,8 +65,8 @@ subject_dict = {\
     "History" : "history",\
     "Humanities" : "humanities",\
     "Human Resource Management" : 'economics',\
-    'Business' : 'business',\
-    'Entrepreneurship' : 'business',\
+    'Business' : 'business-finance',\
+    'Entrepreneurship' : 'business-finance',\
     "Law" : "law",\
     "Transportation" : "transportation",\
     "Sociology" : "Sociology",\
@@ -157,11 +157,11 @@ need_update_subject_list = [
     #'humanities',
     #'history',
     #'management',
-    #'business',
+    #'business-finance',
     'data-science'
 ]
 
-#need_update_subject_list = ['business']
+need_update_subject_list = ['psychology']
 
 def print_all_subject():
     print ', '.join(subject_dict.values())

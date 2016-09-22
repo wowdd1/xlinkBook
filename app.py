@@ -368,9 +368,9 @@ def library():
             library += '-library'
     if os.path.exists('db/library/' + library) == False:
         f = open('db/library/' + library, 'a')
-        f.write('none | no record, add some! | | \n')
+        f.write('none | ' + Config.start_library_title+ ' | ' + Config.start_library_url + '| \n')
         f.close()
-    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:star'  -d  -r 20 -w 77 -s 6 -y " + session['name']
+    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:star'  -d  -r 20 -w " + Config.default_width + " -s 6 -y " + session['name']
     print cmd
     return subprocess.check_output(cmd, shell=True)
 

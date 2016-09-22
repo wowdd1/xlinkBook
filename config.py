@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8-*- 
 
 class Config():
     
@@ -12,21 +12,27 @@ class Config():
     smart_link_max_text_len = 60
     smart_link_br_len = 80
 
+    start_library_title = 'add some record from here!'
+    start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
+
     #default_library = ''
     #default_library = 'ai-library'
-    default_library = 'lifescience-library'
-    #default_library = 'cognitive-library'
+    #default_library = 'neuro-life-library'
+    default_library = 'cognitive-library'
     #default_library = 'engineering-library'
     #default_library = 'medical-library'
     #default_library = 'energy-library'
     #default_library = 'military-library'
     #default_library = 'universe-library'
-    #default_library = 'business-library'
+    #default_library = 'earth-library'
+    #default_library = 'business-finance-library'
+    #default_library = 'math-phys-chem-library'
+    #default_library = 'social-library'
     #default_library = 'frontier-library'
     #default_library = 'research-library'
-    #default_library = 'papers-library'
 
     #show random preview when click nav link
+
     track_mode = False
 
     disable_default_engin = True
@@ -49,7 +55,9 @@ class Config():
     
     content_margin_left = '15px'
     content_margin_top = '10px'
-    split_height = '2px'
+
+    split_height = 2
+    title_font_size = 0
 
     #do not show nav links, only show extension links
     extension_mode = False
@@ -57,7 +65,7 @@ class Config():
     default_tab = 'content'
     second_default_tab = ''#'figures'
 
-
+    default_width = "79"
     column_num = "1"
     custom_cell_len = 88 
     split_length = custom_cell_len + 15
@@ -105,15 +113,34 @@ class Config():
     
     # ==== extension ====
     # convert
+    '''
     convert_url_args = '' #'?start=' #'?start=0&tag='
     convert_page_step = 0
     convert_page_start = 0
-    convert_page_max = 10
-
-    convert_tag = 'h3' #"div#title"  # tag#class or tag
+    convert_page_max = 600
+    convert_page_to_end = True
+    convert_page_custom_parse = False
+    convert_tag = 'tr' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
     convert_contain = ""
     convert_start = 0
     convert_delete_from_char = ''
+    convert_split_column_number = 0
+    '''
+    #'''
+    convert_url_args = '' #'?start=' #'?start=0&tag='
+    convert_page_step = 0
+    convert_page_start = 0
+    convert_page_max = 10
+    convert_page_to_end = False
+    convert_tag = 'tr' #"div#title"  # tag#class or tag
+    convert_min_num = 0
+    convert_max_num = 1000
+    convert_filter = ""
+    convert_contain = "["
+    convert_start = 0
+    convert_delete_from_char = ''
+    convert_split_column_number = 10
+    #'''

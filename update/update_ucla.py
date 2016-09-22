@@ -9,6 +9,7 @@ class UclaSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.school = 'ucla'
+    '''
 
     def getCourseHomePage(self, url):
         r = None
@@ -75,6 +76,47 @@ class UclaSpider(Spider):
                 term_list.append(option['value'])
             else:
                 self.processData(option.text, option['value'], term_list)
+
+    '''
+
+    def processData(self, subject, url):
+        r = requests.get(url)
+        soup = BeautifulSoup(r.text)
+
+        file_name = self.get_file_name(subject, self.school)
+        file_lines = self.countFileLineNum(file_name)
+        f = self.open_db(file_name + ".tmp")
+        self.count = 0
+
+        for div in soup.find_all('div', class_='media-body'):
+            data = div.text.split('\n')
+            title = data[1].strip()
+            id = title[0 : title.find('.')]
+            title = title[title.find('.') + 1 :].strip()
+            print id + ' ' + title
+            desc = data[len(data) - 2].strip()
+            self.count += 1
+            self.write_db(f, id, title, '', 'description:' + desc)
+
+        self.close_db(f)
+        if file_lines != self.count and self.count > 0:
+            self.do_upgrade_db(file_name)
+            print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
+        else:
+            self.cancel_upgrade(file_name)
+            print "no need upgrade\n"
+
+
+
+    def doWork(self):
+        r = requests.get('http://registrar.ucla.edu/Academics/Course-Descriptions')
+        soup = BeautifulSoup(r.text)
+        for li in soup.find_all('li'):
+            if li.a != None and li.a['href'].find('Course-Details') != -1:
+                if self.need_update_subject(li.a.text) == False:
+                    continue
+                print li.a.text
+                self.processData(li.a.text, 'http://registrar.ucla.edu' + li.a['href'])
 
 
 start = UclaSpider()
