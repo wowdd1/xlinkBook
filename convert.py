@@ -12,12 +12,10 @@ import random
 from utils import Utils
 from bs4 import BeautifulSoup
 import requests
+from config import Config
 
 utils = Utils()
-
 source = ''
-prefix = 'convert'
-
 keyword_min_number = 3
 keyword_max_number = 7
 custom_html_tag = 'a'
@@ -28,43 +26,102 @@ end = 10000
 line_id = 0
 delete_from_char = ''
 parentid=''
-
 keys = {}
-
-def customFormat(id, title, link):
-    '''
-    stuff = title[0 : title.find(' ')].strip()
-    if len(stuff) > 1:
-        title = '    ' + title[title.find(' ') : ].strip()
-    else:
-        title = title[title.find(' ') : ].strip()
-    return [stuff, title.replace("'", ' '), link]
-    '''
-    return [id, title, link]
-def customPrint(data):
-    '''
-    if data[0].find('.') != -1:
-        print parentid + '-' + data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid + "-" + data[0][0 : data[0].find('.')]
-    else:
-        print parentid + '-' + data[0] + " |"  + data[1] + " | " + data[2] + " | " + "parentid:" + parentid
-    '''
-    if keys.has_key(data[1]) == False:
-        keys[data[1]] = ''
-        print parentid  + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " 
-        #print str(line_id) + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " 
-    #print data[0] + " |"  + data[1] + " | " + data[2] + " |"
 
 pid = 0
 sub_pid = 0
 sub_sub_pid = 0
 app_mode = False
-
-
 unit = 0
 chapter = 0
 sub_chapter = 0
-
 code_list = []
+last_pid = ''
+
+def customFormat(title, link, rID='', desc='', source=''):
+    if delete_from_char != '':
+        for dc in delete_from_char.split(' '):
+            if title.find(dc) != -1:
+                title = title[0 : title.find(dc)].strip()
+                break
+    if rID == '':
+        rID = parentid + "-" + str(line_id)
+    if link.startswith('http') == False and source != '':
+        link = source[0 : source.find('/', source.find('//') + 2)] + link
+    return [rID, customFormatTitle(title), link, desc]
+
+
+def customFormatTitle(title):
+    #return title[title.find(']') + 1 :].strip()
+    if title.find('<') != -1:
+        title = title.replace('<', '')
+    if title.find('>') != -1:
+        title = title.replace('>', '')
+    return title
+
+def customPrint(data):
+    if keys.has_key(data[1]) == False:
+        keys[data[1]] = ''
+        print data[0] + " | "  + data[1].replace('|', '') + " | " + data[2] + " | " + data[3]
+
+
+
+def customParserHtml(html, source):
+    global line_id
+    #step1 parse html
+
+    return False
+    
+    soup = BeautifulSoup(html)
+    '''
+    for div in soup.find_all('div', class_="  row  result"):
+        line = div.h2.text.strip() + ' ' + div.span.text.strip()
+        if coditionCheck(line, div.a) == False:
+            continue
+        if line != '':
+            line_id += 1
+
+        if line_id >= start and line_id <= end:
+            printLine(div.h2.text.strip() + ' ' + div.span.text.strip(), 'http://cn.indeed.com' + div.a['href'])
+        else:
+            return True
+    return True
+    '''
+    
+    soup = BeautifulSoup(html)
+    author = ''
+    title = ''
+    count = 0
+    for td in soup.find_all('td'):
+        if td.i != None:
+            title = td.text
+        else:
+            if title != '':
+                count += 1
+                author = td.text.strip().replace(',', '').replace(' and', ',').replace(' &', ',').replace('editors', '').strip().replace('(author)', '').strip()
+
+                print 'neuroscience-books-' + str(count) + ' | ' + title.strip() + ' | | author:' +  author
+                title = ''
+
+
+
+
+    return True
+    
+
+    #step2 call printLine
+
+    #step3 return True if sucess
+
+
+def coditionCheck(line, tag):
+    if filter(custom_filter, line):
+        return False
+    if contain(custom_contain, line, tag) == False:
+        return False
+
+    return True  
+
 def get_parent_code(code):
     global code_list
     if len(code_list) == 0:
@@ -79,46 +136,55 @@ def get_parent_code(code):
         code_list.append(code)
         return code
 
-def caseLine(line):
-    new_line = ''
-    for item in line.split(' '):
-        new_line += item[0 : 1] + item[1:].lower() + ' '
-    return new_line
-
 def customPrintFile(line):
     global parentid
     global pid, sub_pid, sub_sub_pid, app_mode
-    global unit, chapter, sub_chapter
+    global unit, chapter, sub_chapter, last_pid
     #customid = str(line_id)
 
 
-    customid = 'MI211'
+    customid = 'MDC-MolNeuro'
+
+    if line.strip().startswith('|'):
+        print customid + '-' + str(line_id) + line + 'author:' + line[line.find('|') + 1 : line.find('|', line.find('|') + 1)].strip()
+        return
+
+    id = line[0 : line.find(' ')]
+    '''
     #if parentid != '':
     #    customid = parentid
     #line = line.replace(':', '').strip()
-    id = line[0 : line.find(' ')]
+    id = ''
+    if len(line.strip()) == 1:
+        id = line.strip()
+    else:
+        id = line[0 : line.find(' ')]
     
-    '''
     if id.startswith('PART'):
         pid += 1
         sub_pid = 0
-        print  customid + '-' + str(pid) + ' | ' + caseLine(line[line.find('-') + 1:].strip()) + ' | | parentid:' + customid
+        print  customid + '-' + str(pid) + ' | ' + utils.caseLine(line[line.find('-') + 1:].strip()) + ' | | parentid:' + customid
     elif id.find(':') != -1:
         sub_pid += 1
         print  customid + '-' + str(pid) + '.' + str(sub_pid) + ' | ' + line[line.find(':') + 1:].strip() + ' | | parentid:' + customid + '-' + str(pid)
 
     parentid = get_parent_code(id)
+    if parentid == id:
+        parentid = customid
+    if parentid == customid and id.isdigit():
+        parentid = last_pid
     if parentid == None:
         print id
         print code_list
 
-    if len(id) == 1:
-        line = line[line.find(' ') :].strip()
-        new_line = ''
-        for item in line.split(' '):
-            new_line += item[0 : 1] + item[1:].lower() + ' '
-        new_line = new_line.strip()
-        print customid + '-' + id + ' | ' + new_line + ' | | parentid:' + customid 
+    if len(id) == 1 and id.isdigit() == False:
+        #line = line[line.find(' ') :].strip()
+        #new_line = ''
+        #for item in line.split(' '):
+        #    new_line += item[0 : 1] + item[1:].lower() + ' '
+        #new_line = new_line.strip()
+        print customid + '-' + id + ' | ' + line[line.find(' ') :].strip() + ' | | parentid:' + customid 
+        last_pid = id
     else:
         print customid + '-' + id + ' | ' + line[line.find(' ') :].strip() + ' | | parentid:' + customid  + '-' + parentid
 
@@ -134,31 +200,57 @@ def customPrintFile(line):
            or line.startswith('IX')\
            or line.startswith('X ')\
 	   or line.startswith('XI'):
-    '''
-    '''
-    if line == "Appendices":
-        app_mode = True
-        pid = 0
-        return
-    if app_mode:
-        if line.find(':') == 1:
-            pid += 1
-            sub_pid = 0
-            print customid + '-Appendices' + str(pid) + ' | ' + line[line.find(' ') :] + ' | | parentid:' + customid
-        else:
-            sub_pid += 1
-            print customid + '-Appendices' + str(pid) + '.' + str(sub_pid) + ' | ' + line + ' | | parentid:' + customid + '-Appendices' + str(pid)
-        return
-
-    if line.startswith('Part'):
         pid += 1
         sub_pid = 0
-        print customid + '-' + str(pid) + ' | ' + line[line.find(' ', line.find(' ') + 1) : ].strip() + ' | | parentid:' + customid
-    elif id.replace(':', '').isdigit() and len(id) < 5:
-        sub_pid += 1
-        print customid + '-' + str(pid) + '.'  + str(sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid)
-            
+        sub_sub_pid = 0
 
+        print customid + '-' + str(pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid
+    elif id.find('.') == -1:
+        sub_pid += 1
+        sub_sub_pid = 0
+        print customid + '-' + str(pid) + '.' + str(sub_pid)+ ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid)
+
+    elif id.find('.') != -1:
+        sub_sub_pid += 1
+        if sub_pid != 0:
+            print customid + '-' + str(pid) + '.' + str(sub_pid) + '.' + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.' + str(sub_pid)
+        else:
+            print customid + '-' + str(pid)  + '.' + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid)
+    '''
+    '''
+    if line.startswith("Appendix"):
+        app_mode = True
+        print customid + '-Appendix' + ' | ' + line[line.find(' ') :].strip() + ' | | parentid:' + customid
+        #print customid + '-Appendix' + ' | ' + line[line.find(' ', line.find(' ') + 1) :].strip() + ' | | parentid:' + customid
+        sub_pid = 0
+        return
+    if app_mode:
+        sub_pid += 1
+        print customid + '-Appendix.' + str(sub_pid) + ' | ' + line[line.find(' '):].strip() + ' | | parentid:' + customid + '-Appendix'
+        return
+    '''
+    
+    '''
+    if id== 'pid':
+        pid += 1
+        sub_pid = 0
+        sub_sub_pid = 0
+        print customid + '-' + str(pid) + ' | ' + utils.caseLine(line[line.find(' ') : ].strip()) + ' | | parentid:' + customid
+    elif id == 'sub_pid':
+        sub_pid += 1
+        sub_sub_pid = 0
+        print customid + '-' + str(pid) + '.'  + str(sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid)
+    elif id == "sub_sub_pid":
+    #else:
+        sub_sub_pid += 1
+        #if sub_pid == 0:
+        #    sub_pid += 1
+        #    print customid + '-' + str(pid)  + '.'  + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) 
+        #else:
+        print customid + '-' + str(pid) + '.'  + str(sub_pid) + '.'  + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.'  + str(sub_pid)
+    '''
+
+    '''
     if line.strip().startswith('PART'):
 	pid += 1
 	sub_pid = 0
@@ -228,7 +320,7 @@ def customPrintFile(line):
         chapter = 0
         sub_chapter = 0
         sub_sub_pid = 0
-        print custom + '-' + str(unit) + ' | ' + caseLine(title[title.find(' ', title.find(' ') + 1) :].strip()) + ' | | parentid:' + custom
+        print custom + '-' + str(unit) + ' | ' + utils.caseLine(title[title.find(' ', title.find(' ') + 1) :].strip()) + ' | | parentid:' + custom
     #elif title.startswith(' ') == False:
     #elif id.find('.') != -1 and id.find('.', id.find('.') + 1) == -1:
     elif id.isdigit() and id.find('.') == -1:
@@ -258,78 +350,103 @@ def customPrintFile(line):
         print custom + '-' + id + ' | ' + line[line.find(' ') :].strip()+ ' | | parentid:' + custom 
     #if title.find('(') != -1:
         #title = title[0 : title.find('(')].strip()
-    #print customid + '-' + str(line_id) + ' | ' + title + ' | | '
     '''
-    print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
+    print customid  + '-' + str(line_id) + ' | ' + line.strip()  + ' | | '
+    #print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
 
-def format(line, link):
-    if link != '' and line.startswith('http') == False:
-        if source.find('com') != -1:
-            link = source[0 : source.find('com') + 3] + link
-        if source.find('uk') != -1:
-            link = source[0 : source.find('uk') + 3] + link
-    if delete_from_char != '' and line.find(delete_from_char) != -1:
-        line = line[0 : line.find(delete_from_char)].strip()
 
-    return customFormat(prefix + "-" + str(line_id), line, link)
-
-def printLine(line, link=''):
+def printLine(line, link='', source='', id='', desc=''):
     #line_id = random.randrange(10, 100, 2)
-    data = format(line.strip(), link)
+    data = customFormat(line.strip(), link, id, desc, source)
     customPrint(data)
+
+def filter(filters, line):
+    if filters != '':
+       filter_list = filters.split(' ')
+       for ft in filter_list:
+           if line.find(ft) != -1:
+               return True
+    return False
+
+
+def contain(contains, line, tag):
+    if contains == '':
+        return True
+    custom_contain_split = contains.split(' ')
+    for c in custom_contain_split:
+       if c != '' and contain2(line, c, tag): #line.find(c) != -1:
+           return True
+    return False
+
+
+def contain2(line, keyword, tag):
+    if keyword.startswith('http') and tag.attrs.has_key("href") or tag.attrs.has_key("src"):
+        if tag.attrs.has_key("href"):
+            return tag['href'].find(keyword[keyword.find('//') + 2 :]) != -1
+        else:
+            return tag['src'].find(keyword[keyword.find('//') + 2 :]) != -1
+    else:
+        return line.find(keyword) != -1
+
+def defaultParserHtml(tags, html, source):
+    global start, line_id
+    for atag in custom_html_tag.strip().split(' '):
+       soup = BeautifulSoup(html)
+       data = None
+       if atag.find('#') != -1:
+           cls = atag[atag.find('#') + 1 :]
+           atag = atag[0 : atag.find('#')]
+           data = soup.find_all(atag, class_=cls)
+       else:
+           data = soup.find_all(atag)
+       for tag in data:
+           line = utils.removeDoubleSpace(tag.text.strip().replace('\n', ' '))
+           if keyword_min_number > keyword_max_number:
+              return
+           split_list = line.split(' ')
+           #print split_list  
+           #print str(len(split_list)) + ' ' + str(keyword_min_number) + ' ' + str(keyword_max_number)
+           if len(split_list) >= keyword_min_number and len(split_list) <= keyword_max_number:
+
+               if line_id > end:
+                   return  
+
+               if coditionCheck(line, tag) == False:
+                   continue
+
+               if line != '':
+                   line_id += 1
+               if line != '' and line_id >= start and line_id <= end:
+                   if tag.attrs.has_key("href"):
+                       printLine(line, tag['href'], source)
+                   elif tag.attrs.has_key("src"):
+                       printLine(line, tag['src'], source)
+                   elif tag.a != None and tag.a.attrs.has_key("href"):
+                        printLine(line, tag.a['href'], source)
+                   else:
+                        printLine(line)
 
 def convert(source):
     global start, line_id
-    if source.startswith('http') or source.endswith('html'):
+    if source.startswith('http') or source.endswith('html') or source.endswith('htm'):
        html_content = ''
        if source.startswith('http'):
            user_agent = {'User-agent': 'Mozilla/5.0'}
            r = requests.get(source, headers = user_agent) 
            html_content = r.text
-       elif source.endswith('html'):
+       elif source.endswith('html') or source.endswith('htm'):
            f = open(source)
            html_content = ''.join(f.readlines())
-       for atag in custom_html_tag.strip().split(' '):
-           soup = BeautifulSoup(html_content)
-           for tag in soup.find_all(atag):
-               line = utils.removeDoubleSpace(tag.text.strip().replace('\n', ' '))
-               if keyword_min_number > keyword_max_number:
-                  return
-               split_list = line.split(' ')
-               #print split_list  
-               #print str(len(split_list)) + ' ' + str(keyword_min_number) + ' ' + str(keyword_max_number)
-               if len(split_list) >= keyword_min_number and len(split_list) <= keyword_max_number:
-                   if custom_filter != '':
-                       filters = custom_filter.split(' ')
-                       for ft in filters:
-                           if line.find(ft) != -1:
-                               line = ''
-                               break
-                   if line_id > end:
-                       return     
-                   if custom_contain != '':
-                       custom_contain_split = custom_contain.split(' ')
-                       skip = False
-                       for c in custom_contain_split:
-                           if c != '' and line.find(c) != -1:
-                               skip = False
-                               break
-                           else:
-                               skip = True
-                       if skip: 
-                           continue
-                   if line != '':
-                       line_id += 1
-                   if line != '' and line_id >= start and line_id <= end:
-                       if tag.attrs.has_key("href"):
-                           printLine(line, tag['href'])
-                       elif tag.a != None and tag.a.attrs.has_key("href"):
-                            printLine(line, tag.a['href'])
-                       else:
-                            printLine(line)
+
+       if customParserHtml(html_content, source):
+           return
+       else:
+           defaultParserHtml(custom_html_tag.strip().split(' '), html_content, source)
+
     else:
         f = open(source)
         lines = f.readlines()
+        #lines = reversed(f.readlines())
         data = ''.join(lines)
         data = utils.clearHtmlTag(data)
     
@@ -343,7 +460,7 @@ def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
     global start, end, custom_contain, delete_from_char, parentid
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent"])
+        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:r:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)
