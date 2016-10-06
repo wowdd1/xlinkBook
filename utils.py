@@ -390,14 +390,17 @@ class Utils:
 
     def recommendEngins(self, folder):
         engins = []
-        if folder.find('papers') != -1:
-            engins = self.realGetEnginList(['paper'], self.search_engin_dict.values())
-        elif folder.find('projects') != -1:
-            engins = self.realGetEnginList(['project'], self.search_engin_dict.values())
-        elif folder.find('video') != -1:
-            engins = self.realGetEnginList(['video'], self.search_engin_dict.values())
-        elif folder.find('neuro') != -1 or folder.find('biology') != -1 or folder.find('lifescience') != -1:
-            engins = self.realGetEnginList(['dxy.cn', 'wikipedia', 'biostars', 'neurostars', 'youtube', 'google', 'baidu', 'gene', 'pubmed', 'ebi', 'gen.lib', 'amazon'], self.search_engin_dict.values(), match_title=True)
+        if Config.recommend_engin_class != '':
+            engins = self.realGetEnginList([Config.recommend_engin_class], self.search_engin_dict.values())
+        else:
+            if folder.find('papers') != -1:
+                engins = self.realGetEnginList(['paper'], self.search_engin_dict.values())
+            elif folder.find('projects') != -1:
+                engins = self.realGetEnginList(['project'], self.search_engin_dict.values())
+            elif folder.find('video') != -1:
+                engins = self.realGetEnginList(['video'], self.search_engin_dict.values())
+            elif folder.find('neuro') != -1 or folder.find('biology') != -1 or folder.find('lifescience') != -1:
+                engins = self.realGetEnginList(['dxy.cn', 'wikipedia', 'biostars', 'neurostars', 'youtube', 'google', 'baidu', 'gene', 'pubmed', 'ebi', 'gen.lib', 'amazon'], self.search_engin_dict.values(), match_title=True)
 
         if len(engins) == 0:
             return self.realGetEnginList(['star'], self.search_engin_dict.values())

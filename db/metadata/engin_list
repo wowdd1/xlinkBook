@@ -508,3 +508,4 @@ engin-515 | icourse163 | http://www.icourse163.org/search.htm?search=%s#/search 
 engin-516 | sharecourse | http://www.sharecourse.net/sharecourse/course/view/courseList?order=&keyword= | priority:5 description:course
 engin-517 | airesources | http://airesources.org/?cat=0&q= | priority:6 description:course project book dataset
 engin-518 | booksfinder | http://booksfinder.org/search.php?q= | priority:4 description:book
+engin-519 | epfl | http://search.epfl.ch/eduweb.action?q=%s&f=eduweb&lang=en&pageSize=100 | priority:4 description:course

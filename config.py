@@ -13,6 +13,11 @@ class Config():
     smart_link_br_len = 80
     replace_with_smart_link = False
 
+    recommend_engin = True
+    recommend_engin_num = 18
+    recommend_engin_class = ''
+
+
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
@@ -91,9 +96,6 @@ class Config():
 
     css_style_type = 0
     plugins_mode = False
-
-    recommend_engin = True
-    recommend_engin_num = 18
 
     auto_library_cell_len = False
 
