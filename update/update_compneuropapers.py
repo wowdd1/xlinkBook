@@ -12,7 +12,8 @@ class CompneuroPapersSpider(Spider):
     def doWork(self):
 	papers = []
 	for page in range(1, 150):
-	    r = self.requestWithProxy2('http://compneuropapers.tumblr.com/page/' + str(page))
+	    r = self.requestWithProxy('http://compneuropapers.tumblr.com/page/' + str(page))
+	    #r = self.requestWithProxy2('http://compneuropapers.tumblr.com/page/' + str(page))
 	    soup = BeautifulSoup(r.text)
 	    item = False
 	    for p in soup.find_all('p'):

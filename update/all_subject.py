@@ -165,7 +165,7 @@ need_update_subject_list = [
     'data-science'
 ]
 
-need_update_subject_list = ['eecs']
+#need_update_subject_list = ['neuroscience']
 
 def print_all_subject():
     print ', '.join(subject_dict.values())
