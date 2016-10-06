@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+
+from helper import Helper
+import sys
+sys.path.append(sys.path[0][0 : sys.path[0].find('/extensions')])
+from utils import Utils
+#print sys.path
+import requests
+import sys
+from bs4 import BeautifulSoup
+
+helper = Helper()
+utils = Utils()
+
+id_arg, file_arg = helper.getArgs(sys.argv[1:])
+
+r = utils.getRecord(id_arg, path=file_arg)
+
+#print r.get_title() + '<br>'
+#print r.get_url() + '<br>'
+
+
+req = requests.get(r.get_url().strip())
+soup = BeautifulSoup(req.text)
+
+title_list = []
+url_list = []
+for tr in soup.find_all('tr'):
+    if tr.td != None and len(tr.td.text) < 20:
+        title_list.append(tr.td.text.strip())
+        url_list.append('')
+        #html += '<li>' + tr.td.text.strip() + '</li>'
+
+
+
+print helper.toListHtml(title_list, url_list, 20)
+
+
+#print id_arg + '<br>'
+#print file_arg
