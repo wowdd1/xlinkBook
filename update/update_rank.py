@@ -390,7 +390,7 @@ class BaikeSpider(Spider):
             place = line[line.find('(') + 1 : line.find(')')]
             info = line[line.find(')') + 2 :].strip()
             #print citations
-            title = person + ' (' + place + ')'
+            title = person
             #print info
             remark +=  citations + ' citations, ' + info
             if citations != last_citations:
@@ -398,7 +398,7 @@ class BaikeSpider(Spider):
             last_citations = citations
 	    if title.find('>') != -1:
 		title = title[title.find('>') + 1 :].strip()
-            self.write_db(f, 'csc-' + str(self.count), title, '', remark)
+            self.write_db(f, 'csc-' + str(self.count), title, '', 'university:' + place + ' ' + remark)
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
@@ -711,7 +711,8 @@ class BaikeSpider(Spider):
             print "no need upgrade\n"
 
     def doWork(self):
-        self.processNobelprize()
+        self.processComputerScienceData('http://web.cs.ucla.edu/~palsberg/h-number.html')
+        #self.processNobelprize()
         #self.processFieldsMedal('https://en.wikipedia.org/wiki/Fields_Medal')
         #self.processWikiTuringData("http://en.wikipedia.org/wiki/Turing_Award")
         #self.processBreakthroughPrize()
@@ -719,7 +720,6 @@ class BaikeSpider(Spider):
         '''
         self.processWikiPioneerData("http://en.wikipedia.org/wiki/Computer_Pioneer_Award")
         self.processBaikeData("http://www.baike.com/wiki/IT%E4%B8%9A%E6%9C%80%E5%85%B7%E5%BD%B1%E5%93%8D%E5%8A%9B%E7%9A%84284%E4%BD%8D%E7%A8%8B%E5%BA%8F%E5%91%98")
-        self.processComputerScienceData('http://web.cs.ucla.edu/~palsberg/h-number.html')
         self.processTop100Scientific('http://www.adherents.com/people/100_scientists.html#')
         self.processLeaderOfCountry('https://zh.wikipedia.org/wiki/%E5%90%84%E5%9B%BD%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%88%97%E8%A1%A8')
         self.processTR35()

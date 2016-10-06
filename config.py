@@ -8,28 +8,31 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    smart_link_engin = 'youtube'
+    smart_link_engin = 'google'
     smart_link_max_text_len = 60
     smart_link_br_len = 80
+    replace_with_smart_link = False
 
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
     #default_library = ''
     #default_library = 'ai-library'
-    #default_library = 'neuro-life-library'
-    default_library = 'cognitive-library'
-    #default_library = 'engineering-library'
+    #default_library = 'information-library'
+    #default_library = 'cognitive-library'
+    default_library = 'neuro-library'
+    #default_library = 'gene-library'
+    #default_library = 'math-phys-chem-library'
+    #default_library = 'business-finance-library'
     #default_library = 'medical-library'
     #default_library = 'energy-library'
     #default_library = 'military-library'
     #default_library = 'universe-library'
     #default_library = 'earth-library'
-    #default_library = 'business-finance-library'
-    #default_library = 'math-phys-chem-library'
     #default_library = 'social-library'
     #default_library = 'frontier-library'
     #default_library = 'research-library'
+    #default_library = 'humanities-library'
 
     #show random preview when click nav link
 
@@ -104,6 +107,10 @@ class Config():
           'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
 		  #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
           'rss' : ip_adress + '/?db=rss/&key=rss2016',\
+          'disk' : ip_adress + '/?db=other/&key=disk2016',\
+          'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
+          #'members' : ip_adress + '/?db=rank/&key=members2016&column=2',\
+          'rank' : ip_adress + '/?db=rank/&key=?',\
           #'rank' : ip_adress + '/?db=rank/&key=?',\
 		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=3'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
@@ -126,7 +133,6 @@ class Config():
     convert_filter = ""
     convert_contain = ""
     convert_start = 0
-    convert_delete_from_char = ''
     convert_split_column_number = 0
     '''
     #'''
@@ -135,12 +141,13 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'tr' #"div#title"  # tag#class or tag
+    convert_tag = 'h2' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
-    convert_contain = "["
-    convert_start = 0
-    convert_delete_from_char = ''
-    convert_split_column_number = 10
+    convert_contain = ""
+    convert_start = 6
+    convert_split_column_number = 0
     #'''
+
+    delete_from_char = ''

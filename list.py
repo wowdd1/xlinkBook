@@ -853,7 +853,9 @@ def gen_html_body_v2(content, row, subRow):
 
     return content
 
+last_line_smart_link = ''
 def smartLink(content, record):
+    global last_line_smart_link
     if content.strip().startswith('path:'):
         path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'}).strip()
         if path.find(' ') != -1:
@@ -861,11 +863,12 @@ def smartLink(content, record):
         src = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=' + path[path.rfind('/') + 1 : ] + '&column=2'
         folder = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=?'
         alt = path[path.find('db') :]
-        return content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
+        last_line_smart_link = content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
+        return last_line_smart_link
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         html = ''
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : content[ 0 : content.find(':')]})
-        ret = ret[1 : len(content[content.find(':') + 1 :])]
+        
         if ret.find(',') != -1:
             ret = ret.split(',')
             for i in ret:
@@ -875,14 +878,20 @@ def smartLink(content, record):
                     html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>'
         else:
             html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(ret.strip()) + '">' + ret + '</a>'
-        return content[ 0 : content.find(':') + 1 ] + html
+        last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
+        return last_line_smart_link
     elif content.strip().startswith('id:'):
         if record.get_url() != None and record.get_url() != '':
-            return content[ 0 : content.find(':') + 1 ] + '<a target="_blank" href="' + record.get_url().strip()+ '">' + record.get_id().strip() + '</a>'
+            last_line_smart_link = content[ 0 : content.find(':') + 1 ] + '<a target="_blank" href="' + record.get_url().strip()+ '">' + record.get_id().strip() + '</a>'
+            return last_line_smart_link
         else:
-            return content
+            last_line_smart_link = content
+            return last_line_smart_link
     else:
-        return content
+        if last_line_smart_link.find(content) != -1:
+            return ''
+        last_line_smart_link = content
+        return last_line_smart_link
 
 def print_search_box(hiden):
     global search_box_displayed
@@ -937,6 +946,7 @@ def print_table_head_with_style():
     center_style += '"'
     if loadmore_mode == False:
         print_search_box(search_box_hiden)
+            
         if library_hiden == False and plugins_mode == False and gened_libary == False:
             print utils.gen_libary(True,username, '')
             gened_libary = True
@@ -1040,7 +1050,7 @@ def filter(keyword, data):
     return match(keyword, data)
     
 def buildLine(content):
-    return " id | xx" + content + " | | \n"
+    return " id | " + content + " | | \n"
 
 record_dict = {}
 def getLines(file_name):
@@ -1059,7 +1069,7 @@ def getLines(file_name):
                 keyword = filter_keyword
                 if includeDesc(filter_keyword):
                     keyword, data = getKeywordAndData(filter_keyword, line)
-                if record_dict.has_key(record.get_url().strip()):
+                if record_dict.has_key(record.get_url().strip()) and record.get_url().strip() != '':
                     continue
                 if filter(keyword, data):
                     count += 1
@@ -1077,14 +1087,12 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
     if filter_mode:
         if record.get_describe().find('path:') == -1:
             line += ' path:' + fileName[fileName.find('db') :] 
-    else:
-        a = 1
         
     id = record.get_id().strip() 
     if id == '':
         id = 'custom-' + str(count)
         line = id + line
-
+    
     if Config.hiden_record_id and record.get_describe().find('id:') == -1:
         line += ' id:' + id
 
@@ -1103,11 +1111,23 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
     if fileName.find('rank') != -1 and line.find('winner') == -1 and record.get_title().find(',') != -1:
         line += ' winner:' + record.get_title()
     
+    title = record.get_title().strip()
+
+    if Config.replace_with_smart_link:
+        line = line[0 : line.find('|', line.find('|') + 1) + 1] + utils.bestMatchEnginUrl(title) + line[line.rfind('|') : ]
+
     if fileName.endswith('library') and record.get_title().find('(') != -1:
-        title = record.get_title().strip()
-        line = line[0 : line.find('|') + 1 ] + ' ' + title[0 : title.find('(')] + ' ' + line[line.find('|', line.find('|') + 1) : ]
-    
+        line = formatTitle(title, '(', line)
+
+    if Config.delete_from_char != '' and title.find(Config.delete_from_char) != -1:
+        line = formatTitle(title, Config.delete_from_char, line)
+
     return line
+
+def formatTitle(title, char, line):
+    line = line[0 : line.find('|') + 1 ] + ' ' + title[0 : title.find(char)].strip() + ' ' + line[line.find('|', line.find('|') + 1) : ]
+    return line
+
 
 
 def getFileNameFromPath(path):
@@ -1381,6 +1401,8 @@ def print_list(all_lines, file_name = ''):
                 message = ''
             if plugins_mode == False:
                 print message
+                if html_style:
+                    print utils.gen_menu()
             
 current_level = 1
 level = 100

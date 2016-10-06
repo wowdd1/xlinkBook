@@ -182,6 +182,14 @@ class Utils:
             return 'http:' + link
         return link
 
+    def gen_menu(self):
+        db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
+        html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">' + db_root
+        for link_dict in Config.fav_links.items():
+            html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
+        html += '</div><div style="height: 21px; width: 100px"></div>'
+        return html
+
     def gen_libary(self, root=False, user_name='', user_image=''):
         html = ''
         db_root = ''
@@ -190,8 +198,8 @@ class Utils:
             user_name = Config.default_library
             if user_name.endswith('-library'):
                 user_name = user_name[0 : user_name.rfind('-')]
-        if root:
-            db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
+        #if root:
+        #    db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
         if user_name != None and user_name != '':
             lines = 0
             if os.path.exists('db/library/' + user_name + '-library'):
@@ -199,8 +207,10 @@ class Utils:
                 lines = len(f.readlines())
                 f.close()
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root
+            '''
 	    for link_dict in Config.fav_links.items():
 		html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
+            '''
             if user_image != '':
                 html += '<img src="' + user_image + '" width="20" height="20" style="border-radius: 50%;"/>'
             content = user_name
@@ -303,8 +313,9 @@ class Utils:
         if log:
             print 'searching %s'%keyword + " in " + subject
         record_list = []
-        print keyword
-        print path
+        if log:
+            print keyword
+            print path
         files = ''
         if os.path.isfile(path):
             files = [path]

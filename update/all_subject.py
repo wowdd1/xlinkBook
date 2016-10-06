@@ -32,10 +32,12 @@ subject_dict = {\
     "Management" : "management",\
     "Chemistry" : "chemistry",\
     "Communication" : "communication",\
+    'Computational' : 'eecs',\
     "Computer Science" : "eecs",\
     "EECS" : "eecs",\
     "Computing" : "eecs",\
     "Computation" : "eecs",\
+    "Information" : 'eecs',\
     'Economic Analysis & Policy' : 'economics',\
     "Programming" : "eecs",\
     "Rank" : 'rank',\
@@ -126,6 +128,7 @@ subject_dict = {\
     "Computational and Systems Biology" : "biology",\
     "Concourse" : "others",\
     "Edgerton Center" : "others",\
+    'Engineering' : 'engineering',\
     "Engineering Systems" : "engineering",\
     "Experimental Study Group" : "others",\
     "Health Sciences and Technology" : "medicine",\
@@ -137,31 +140,32 @@ subject_dict = {\
 
 need_update_subject_list = [
     'config',
-    #'anthropology',
+    'anthropology',
     'eecs',
     'mathematics',
     'economics',
     #'rank',
-    #'physics',
+    'physics',
     'biology',
     'neuroscience',
-    #'literature',
+    'literature',
     'linguistics',
-    #'philosophy',
-    #"psychology",
-    #'chemistry',
+    'philosophy',
+    "psychology",
+    'chemistry',
     #'others',
-    #'art-culture',
-    #'astronomy',
-    #'political',
-    #'humanities',
-    #'history',
-    #'management',
-    #'business-finance',
+    'art-culture',
+    'astronomy',
+    'political',
+    'humanities',
+    'history',
+    'management',
+    'medicine',
+    'business-finance',
     'data-science'
 ]
 
-need_update_subject_list = ['psychology']
+need_update_subject_list = ['eecs']
 
 def print_all_subject():
     print ', '.join(subject_dict.values())

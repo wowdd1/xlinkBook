@@ -240,7 +240,7 @@ class Reference(BaseExtension):
 
     def genMetadataHtml(self, key, ref_divID):
         if self.record_reference.has_key(key):
-            self.html = '<div class="ref"><ol>'
+            self.html = '<div class="ref"><br><ol>'
             count = 0
             for r in self.record_reference[key]:
                 count += 1
