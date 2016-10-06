@@ -49,10 +49,7 @@ class Convert(BaseExtension):
         else:
             html = self.genHtml(self.convert2data(new_url), divID, rID)
 
-        if Config.convert_split_column_number > 0:
-            return html 
-        else:
-            return '<div class="ref"><ol>' + html + '</ol></div>'
+        return html
 
     def convert2data(self, url):
 
@@ -74,8 +71,8 @@ class Convert(BaseExtension):
             cmd += '-c "' + Config.convert_contain + '" '
         if Config.convert_start > 0:
             cmd += '-s ' + str(Config.convert_start) + ' '
-        if Config.convert_delete_from_char != '':
-            cmd += '-d ' + Config.convert_delete_from_char + ' '
+        if Config.delete_from_char != '':
+            cmd += '-d ' + Config.delete_from_char + ' '
 
         print 'cmd ----> ' + cmd + ' <----'
         data = subprocess.check_output(cmd, shell=True)
@@ -87,6 +84,9 @@ class Convert(BaseExtension):
         
         html = ''
         start = False
+        if Config.convert_split_column_number == 0:
+            html = '<div class="ref"><ol>'
+            start = True
         count = 0
         for line in data.split('\n'):
             

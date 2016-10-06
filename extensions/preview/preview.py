@@ -4,6 +4,7 @@ from extensions.bas_extension import BaseExtension
 import requests
 from bs4 import BeautifulSoup
 from utils import Utils
+import subprocess
 
 class Preview(BaseExtension):
 
@@ -13,10 +14,17 @@ class Preview(BaseExtension):
 
     def excute(self, form_dict):
         url = form_dict['url'].encode('utf8')
+        if url == '':
+            url = self.utils.toSmartLink(form_dict['rTitle'].encode('utf8'))
 	src = ''
 	width = '560'
 	height = '315'
 	column = form_dict['column']
+        if url.startswith('file'):
+            subprocess.check_output("/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome " + url, shell=True)
+            return 'ok'
+    
+
 	if url.find('youtube') != -1 and url.find('watch') != -1:
 	    src = "https://www.youtube.com/embed/" + url[url.rfind('v=') + 2 :]
 	    if column == '1':
@@ -32,8 +40,7 @@ class Preview(BaseExtension):
 		width = '700'
 	        height = '400'
 	    src = url
-	    utils = Utils()
-	    if utils.suportFrame(url, 5) == False:
+	    if self.utils.suportFrame(url, 5) == False:
 		return url
 
         html = '<div class="ref"><br><iframe width="' + width + '" height="' + height + '" src="' + src + '" frameborder="0" allowfullscreen></iframe>'

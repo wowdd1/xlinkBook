@@ -52,11 +52,11 @@ class Save(BaseExtension):
         
                 
     def check(self, form_dict):
-        fileName = form_dict['fileName'].encode('utf8')
+        originFileName = form_dict['originFileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         user_name = form_dict['user_name'].encode('utf8')
         print rID
-        if user_name != '':
+        if user_name != '' and originFileName.endswith('library') == False:
             self.loadLibrary(user_name)
             print self.saved_records
             return self.saved_records.has_key(rID) == False and rID.startswith('loop') == False

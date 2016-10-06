@@ -75,16 +75,8 @@ class ExtensionManager:
             if r != None and r.get_id().strip() != '':
                 lr = LibraryRecord(r.line)
                 if lr.get_path() != None and lr.get_path().strip() != '':
-                    form['fileName'] = os.getcwd() + lr.get_path().strip()
-                else:
-                    if Config.default_library != '':
-                        if Config.default_library.endswith('-library'):
-                            form['fileName'] = os.getcwd() + 'db/library/' + Config.default_library
-                        else:
-                            form['fileName'] = os.getcwd() + 'db/library/' + Config.default_library + '-library'
-                    else:
-                        form['fileName'] = os.getcwd() + 'db/library/' + form['user_name'] + '-library'
-
+                    print lr.get_path()
+                    form['fileName'] = os.getcwd() + '/' + lr.get_path().strip()
         if check == 'true':
             if form['name'] == "*":
                 if fileName.find('db/library/') != -1:

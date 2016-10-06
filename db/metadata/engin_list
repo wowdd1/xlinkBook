@@ -504,3 +504,7 @@ engin-511 | dxy.cn | http://search.dxy.cn/?words=%s&limit=15 | priority:5 descri
 engin-512 | currentprotocols | http://www.currentprotocols.com/WileyCDA/Section/id-810760.html?query=%s&x=48&y=18 | priority:6 description:protocol
 engin-513 | plato | http://plato.stanford.edu/search/searcher.py?query= | priority:5 description:wiki
 engin-514 | brain-map | http://www.brain-map.org/search/index.html?query=%s&fa=false&e_sp=t&e_ag=t&e_tr=t&e_fa=t | priority:5 description:dataset
+engin-515 | icourse163 | http://www.icourse163.org/search.htm?search=%s#/search | priority:4 description:course
+engin-516 | sharecourse | http://www.sharecourse.net/sharecourse/course/view/courseList?order=&keyword= | priority:5 description:course
+engin-517 | airesources | http://airesources.org/?cat=0&q= | priority:6 description:course project book dataset
+engin-518 | booksfinder | http://booksfinder.org/search.php?q= | priority:4 description:book
