@@ -1,0 +1,6 @@
+{
+    "name" : "script",
+    "module" : "script",
+    "class" : "Script",
+    "version" : "0.1"
+}

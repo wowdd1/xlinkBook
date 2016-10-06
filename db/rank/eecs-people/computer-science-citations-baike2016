@@ -1,0 +1,995 @@
+csc-1 | Herbert A. Simon  |  | university:CMU description:164 citations, Nobel Laureate, Turing Award, ACM Fellow
+csc-2 | Anil K. Jain  |  | university:Michigan State U description:154 citations, ACM Fellow, IEEE Fellow, IEEE Technical Achievement Award, Member of the National Academy of Engineering
+csc-3 | Terrence Sejnowski  |  | university:UCSD description:132 citations, IEEE Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, Member of the Institute of Medicine, IEEE Frank Rosenblatt Award
+csc-4 | Jiawei Han  |  | university:UIUC description:131 citations, ACM Fellow, IEEE Technical Achievement Award
+csc-5 | Wil van der Aalst  |  | university:TU Eindhoven description:127 citations, Member of Academy of Europe (Academia Europaea), Member of the Royal Netherlands Academy of Arts and Sciences, Member of the Royal Holland Society of Sciences and Humanities
+csc-5 | Philip S. Yu  |  | university:UIC description:127 citations, ACM Fellow, IEEE Fellow, IEEE Technical Achievement Award
+csc-6 | Takeo Kanade  |  | university:CMU description:126 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-6 | Scott Shenker  |  | university:Berkeley description:126 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-7 | David Haussler  |  | university:UC Santa Cruz description:124 citations, ISCB Fellow
+csc-8 | Geoffrey E. Hinton  |  | university:U Toronto description:122 citations, Fellow of the Royal Society, Member of the American Academy of Arts & Sciences, Fellow of the Royal Society, FRSC, IEEE Frank Rosenblatt Award
+csc-9 | Hector Garcia-Molina  |  | university:Stanford description:118 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-10 | Jack Dongarra  |  | university:U Tennessee description:114 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering, SIAM Fellow, AAAS Fellow
+csc-11 | Don Towsley  |  | university:U Mass, Amherst description:113 citations, ACM Fellow, IEEE Fellow
+csc-12 | Steven Salzberg  |  | university:Johns Hopkins U description:112 citations, AAAS Fellow, ISCB Fellow
+csc-13 | Tomaso Poggio  |  | university:MIT description:111 citations, 
+csc-14 | Deborah Estrin  |  | university:Cornell NYC Tech description:110 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-14 | Sebastian Thrun  |  | university:Stanford description:110 citations, Member of the National Academy of Engineering
+csc-15 | Ian Foster  |  | university:Argonne National Laboratory & U Chicago description:109 citations, ACM Fellow, AAAS Fellow, BCS Fellow
+csc-16 | Stephen Grossberg  |  | university:Boston University description:108 citations, 
+csc-16 | Michael I. Jordan  |  | university:Berkeley description:108 citations, ACM Fellow, IEEE Fellow, AAAS Fellow, AAAI Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, Member of the American Academy of Arts & Sciences, SIAM Fellow
+csc-17 | David Culler  |  | university:Berkeley description:107 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-17 | Didier Dubois  |  | university:CNRS Toulouse description:107 citations, 
+csc-17 | Nick Jennings  |  | university:Imperial College, London description:107 citations, IEEE Fellow, Fellow of the Royal Academy of Engineering, Member of Academy of Europe (Academia Europaea)
+csc-17 | Henri Prade  |  | university:CNRS Toulouse description:107 citations, 
+csc-18 | Daphne Koller  |  | university:Stanford description:106 citations, MacArthur Fellow, AAAI Fellow, Member of the National Academy of Engineering, ACM Infosys Foundation Award
+csc-18 | Andrew Zisserman  |  | university:University of Oxford description:106 citations, Fellow of the Royal Society
+csc-19 | Bernhard Schlkopf  |  | university:Max Planck description:105 citations, 
+csc-19 | HongJiang Zhang  |  | university:KingSoft, China description:105 citations, ACM Fellow, IEEE Fellow, ACM SIGMM Technical Achievement Award, IEEE Technical Achievement Award
+csc-20 | Christos H. Papadimitriou  |  | university:Berkeley description:104 citations, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, Member of Academy of Europe (Academia Europaea), Member of the American Academy of Arts & Sciences
+csc-20 | Alex Pentland  |  | university:MIT description:104 citations, Member of the National
+csc-21 | Vipin Kumar  |  | university:U Minnesota description:102 citations, ACM Fellow, IEEE Fellow, IEEE Technical Achievement Award
+csc-22 | Francisco Herrera  |  | university:U Granada, Spain description:101 citations, ECCAI Fellow, IFSA Fellow
+csc-22 | Stanley Osher  |  | university:UCLA description:101 citations, Member of the National Academy of Sciences, SIAM Fellow
+csc-23 | Rajkumar Buyya  |  | university:University of Melbourne, Australia description:100 citations, IEEE Fellow, IEEE Medal for Excellence in Scalable Computing
+csc-23 | Mario Gerla  |  | university:UCLA description:100 citations, IEEE Fellow
+csc-23 | Georgios Giannakis  |  | university:U Minnesota description:100 citations, IEEE Fellow
+csc-23 | John A. Stankovic  |  | university:U Virginia description:100 citations, ACM Fellow
+csc-24 | Gene H. Golub  |  | university:Stanford description:99 citations, 
+csc-25 | Shree Nayar  |  | university:Columbia description:95 citations, Member of the
+csc-26 | Martin Vetterli  |  | university:EPFL description:94 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-27 | Sushil Jajodia  |  | university:George Mason U description:93 citations, IEEE Fellow, IEEE Technical Achievement Award
+csc-28 | Richard Karp  |  | university:Berkeley description:92 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, SIAM Fellow, Member of the American Academy of Arts & Sciences
+csc-28 | Alex Szalay  |  | university:Johns Hopkins U description:92 citations, 
+csc-28 | Lotfi Zadeh  |  | university:Berkeley description:92 citations, ACM Fellow, IEEE Fellow
+csc-29 | Rakesh Agrawal  |  | university:Data Insights Laboratory description:91 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-30 | Kalyanmoy Deb  |  | university:Michigan State U description:90 citations, IEEE Fellow, ASME Fellow
+csc-30 | Amit Sheth  |  | university:Wright State U description:90 citations, IEEE Fellow
+csc-31 | Jitendra Malik  |  | university:Berkeley description:89 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, Member of the American Academy of Arts and Sciences
+csc-31 | Jeffrey D. Ullman  |  | university:Stanford description:89 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-32 | Luc Van Gool  |  | university:ETH Zurich description:88 citations, 
+csc-33 | Hari Balakrishnan  |  | university:MIT description:87 citations, ACM Fellow
+csc-34 | Thomas A. Henzinger  |  | university:IST Austria description:86 citations, ACM Fellow, Member of Academy of Europe (Academia Europaea), AAAS Fellow
+csc-34 | Randy H. Katz  |  | university:Berkeley description:86 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-34 | Alberto Sangiovanni-Vincentelli  |  | university:Berkeley description:86 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-34 | Moshe Y. Vardi  |  | university:Rice U description:86 citations, ACM Fellow, Member of the National Academy of Engineering, Member of Academy of Europe (Academia Europaea)
+csc-35 | Ian F. Akyildiz  |  | university:Georgia Tech description:85 citations, ACM Fellow, IEEE Fellow
+csc-36 | John Doyle  |  | university:Cal Tech description:84 citations, 
+csc-36 | Olivier Faugeras  |  | university:INRIA description:84 citations, Member of the French Academy of Sciences
+csc-36 | Tim Finin  |  | university:UMBC description:84 citations, AAAI Fellow, IEEE Technical Achievement Award
+csc-36 | David E. Goldberg  |  | university:UIUC description:84 citations, 
+csc-36 | Jakob Nielsen  |  | university:Nielsen Norman Group description:84 citations, 
+csc-36 | Shankar Sastry  |  | university:Berkeley description:84 citations, 
+csc-37 | Marco Dorigo  |  | university:U Libre de Bruxelles description:82 citations, IEEE Fellow, ECCAI Fellow, IEEE Frank Rosenblatt Award
+csc-37 | Mark Horowitz  |  | university:Stanford description:82 citations, ACM Fellow
+csc-37 | Katia Sycara  |  | university:CMU description:82 citations, IEEE Fellow, AAAI Fellow
+csc-37 | Robert Tarjan  |  | university:Princeton description:82 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, SIAM Fellow, Member of the American Academy of Arts & Sciences
+csc-38 | Martin Abadi  |  | university:Google and UC Santa Cruz  description:81 citations, ACM Fellow, AAAS Fellow
+csc-38 | Noga Alon  |  | university:Tel Aviv U description:81 citations, 
+csc-38 | Hsinchun Chen  |  | university:U Arizona description:81 citations, ACM Fellow, IEEE Fellow, AAAS Fellow, IEEE Technical Achievement Award
+csc-38 | Trevor Darrell  |  | university:Berkeley description:81 citations, 
+csc-38 | Ben Shneiderman  |  | university:U Maryland description:81 citations, ACM Fellow, AAAS Fellow, Member of the National Academy of Engineering
+csc-39 | Mihir Bellare  |  | university:UCSD description:80 citations, ACM Fellow, IACR Fellow
+csc-39 | Dimitri Bertsekas  |  | university:MIT description:80 citations, 
+csc-39 | Jose Joaquin Garcia-Luna-Aceves  |  | university:UC Santa Cruz and PARC description:80 citations, ACM Fellow, IEEE Fellow, AAAS Fellow, Corresponding Member of the Mexican Academy Sciences, IEEE Technical Achievement Award
+csc-39 | Alon Halevy [Alon Levy]  |  | university:Google description:80 citations, ACM Fellow
+csc-39 | James Hendler  |  | university:RPI description:80 citations, IEEE Fellow, AAAI Fellow, BCS Fellow, AAAS Fellow
+csc-39 | Hojjat Adeli  |  | university:Ohio State U description:80 citations, IEEE Fellow, AAAS Fellow, AIMBE Fellow, American Neurological Association Fellow, Member of the Spanish Royal Academy of Engineering
+csc-39 | Don Norman  |  | university:UCSD description:80 citations, 
+csc-39 | Mani B. Srivastava  |  | university:UCLA description:80 citations, IEEE Fellow
+csc-39 | Jennifer Widom  |  | university:Stanford description:80 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-40 | Rama Chellappa  |  | university:U Maryland description:79 citations, ACM Fellow, IEEE Fellow, IAPR Fellow, OSA Fellow, AAAS Fellow, IEEE Technical Achievement Award
+csc-41 | Dinesh Manocha  |  | university:UNC description:78 citations, ACM Fellow, IEEE Fellow, AAAS Fellow
+csc-41 | Klaus-Robert Mller  |  | university:TU Berlin description:78 citations, 
+csc-41 | Hermann Ney  |  | university:RWTH Aachen description:78 citations, IEEE Fellow, IEEE Technical Achievement Award
+csc-41 | David A. Patterson  |  | university:Berkeley description:78 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering, IEEE Technical Achievement Award
+csc-41 | Mihalis Yannakakis  |  | university:Columbia description:78 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-42 | Thomas S. Huang  |  | university:UIUC description:77 citations, IEEE Fellow, Member of the National Academy of Engineering
+csc-42 | Henning Schulzrinne  |  | university:Columbia description:77 citations, ACM Fellow
+csc-42 | Jie Wu  |  | university:Temple U description:77 citations, IEEE Fellow
+csc-42 | Lixia Zhang  |  | university:UCLA description:77 citations, ACM Fellow
+csc-43 | Oren Etzioni  |  | university:Allen Institute for AI description:76 citations, 
+csc-43 | Richard Szeliski  |  | university:Microsoft description:76 citations, ACM Fellow
+csc-44 | Ken Kennedy  |  | university:Rice U description:75 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-44 | Rajeev Motwani  |  | university:Stanford description:75 citations, ACM Fellow
+csc-44 | Mubarak Shah  |  | university:U Central Florida description:75 citations, IEEE Fellow, AAAS Fellow, IAPR Fellow, SPIE Fellow
+csc-44 | Witold Pedrycz  |  | university:U Alberta description:75 citations, IEEE Fellow
+csc-45 | W. Bruce Croft  |  | university:U Mass, Amherst description:74 citations, ACM Fellow
+csc-45 | Fred Glover  |  | university:U Colorado description:74 citations, 
+csc-45 | Andrew B. Kahng  |  | university:UCSD description:74 citations, ACM Fellow, IEEE Fellow
+csc-45 | Donald E. Knuth  |  | university:Stanford description:74 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, SIAM Fellow, Member of the American Academy of Arts & Sciences
+csc-45 | Hans-Peter Seidel  |  | university:Max Planck description:74 citations, 
+csc-45 | Barry Smith  |  | university:SUNY Buffalo description:74 citations, 
+csc-45 | Gene Tsudik  |  | university:UC Irvine description:74 citations, ACM Fellow, IEEE Fellow
+csc-46 | Andrew Blake  |  | university:Microsoft description:73 citations, Fellow of the Royal Society
+csc-46 | John M. Carroll  |  | university:Penn State U description:73 citations, 
+csc-46 | Pascal Fua  |  | university:EPFL description:73 citations, IEEE Fellow
+csc-46 | Ian Horrocks  |  | university:Oxford U description:73 citations, Fellow of the Royal Society
+csc-46 | Robert Kraut  |  | university:CMU description:73 citations, ACM Fellow
+csc-46 | Giovanni De Micheli  |  | university:EPFL description:73 citations, ACM Fellow, IEEE Fellow
+csc-46 | Biswanath Mukherjee  |  | university:UC Davis description:73 citations, 
+csc-46 | Klara Nahrstedt  |  | university:UIUC description:73 citations, ACM Fellow, IEEE Fellow, IEEE Technical Achievement Award
+csc-46 | Burkhard Rost  |  | university:TU Munich description:73 citations, 
+csc-47 | Rajeev Alur  |  | university:U Penn description:72 citations, ACM Fellow, IEEE Fellow
+csc-47 | Nicholas Ayache  |  | university:INRIA description:72 citations, 
+csc-47 | Sajal K. Das  |  | university:Missouri University of Science and Tech description:72 citations, IEEE Fellow, IEEE Technical Achievement Award
+csc-47 | Ronald Fagin  |  | university:IBM Almaden description:72 citations, ACM Fellow, IEEE Fellow, AAAS Fellow, ACM SIGMOD Edgar F. Codd Innovations Award, IEEE Technical Achievement Award, IEEE W. Wallace McDowell Award, Gdel Prize, Member of the American Academy of Arts and Sciences, Member of the National Academy of Engineering
+csc-47 | Christian S. Jensen  |  | university:Aalborg U description:72 citations, ACM Fellow, IEEE Fellow
+csc-47 | Alexander J. Smola  |  | university:CMU description:72 citations, 
+csc-48 | Monica S. Lam  |  | university:Stanford description:71 citations, ACM Fellow
+csc-48 | Thomas W. Reps  |  | university:U Wisconsin description:71 citations, ACM Fellow
+csc-48 | Azriel Rosenfeld  |  | university:U Maryland description:71 citations, ACM Fellow
+csc-48 | Demetri Terzopoulos  |  | university:UCLA description:71 citations, ACM Fellow, IEEE Fellow, Member of the European Academy of Sciences, FRSC
+csc-48 | Ronald Yager  |  | university:Iona College description:71 citations, IEEE Fellow
+csc-49 | Richard Baraniuk  |  | university:Rice U description:70 citations, IEEE Fellow, AAAS Fellow
+csc-49 | Jason Cong  |  | university:UCLA description:70 citations, ACM Fellow, IEEE Fellow
+csc-49 | Jim Gray  |  | university:Microsoft description:70 citations, Turing Award, ACM Fellow
+csc-49 | David Karger  |  | university:MIT description:70 citations, ACM Fellow
+csc-49 | H. Vincent Poor  |  | university:Princeton description:70 citations, 
+csc-49 | Prabhakar Raghavan  |  | university:Google description:70 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-49 | Adi Shamir  |  | university:Weizmann description:70 citations, Turing Award, IACR Fellow, Member of Academy of Europe (Academia Europaea)
+csc-49 | Kishor S. Trivedi  |  | university:Duke U description:70 citations, IEEE Fellow, IEEE Technical Achievement Award
+csc-49 | Athanasios Vasilakos  |  | university:Lulea U of Technology, Sweden description:70 citations, 
+csc-49 | Terry Winograd  |  | university:Stanford description:70 citations, 
+csc-49 | Moti Yung  |  | university:Snapchat description:70 citations, ACM Fellow, IEEE Fellow, IACR Fellow
+csc-50 | Tarek Abdelzaher  |  | university:UIUC description:69 citations, 
+csc-50 | Thomas Anderson  |  | university:U Washington description:69 citations, ACM Fellow
+csc-50 | Yoshua Bengio  |  | university:U Montreal description:69 citations, 
+csc-50 | H. V. Jagadish  |  | university:U Michigan description:69 citations, ACM Fellow
+csc-50 | Jon Kleinberg  |  | university:Cornell description:69 citations, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, MacArthur Fellow, ACM Infosys Foundation Award, Member of the American Academy of Arts & Sciences, ACM-AAAI Allen Newell Award
+csc-50 | Edward A. Lee  |  | university:Berkeley description:69 citations, 
+csc-50 | Pavel Pevzner  |  | university:UCSD description:69 citations, ACM Fellow, ISCB Fellow
+csc-51 | Serge Abiteboul  |  | university:INRIA description:68 citations, ACM Fellow, Member of Academy of Europe (Academia Europaea)
+csc-51 | Andrew Campbell  |  | university:Dartmouth description:68 citations, 
+csc-51 | Erol Gelenbe  |  | university:Imperial College, London description:68 citations, ACM Fellow, IEEE Fellow, SIGMETRICS Life-Time Achievement Award, Member of the Turkish Academy of Sciences, Member of the Hungarian Academy of Scences, Member of the French National Academy of Engineering, Chevalier de la Legion d'Honneur, Member of the Polish Academy of Sciences, Member of the Royal Academy of Sciences, Letters and Arts of Belgium
+csc-51 | Markus Gross  |  | university:ETH Zurich description:68 citations, ACM Fellow, Member of the German Academy of Sciences
+csc-51 | Eric Horvitz  |  | university:Microsoft description:68 citations, ACM Fellow, ACM-AAAI Allen Newell Award
+csc-51 | C.-C. Jay Kuo  |  | university:USC description:68 citations, IEEE Fellow, AAAS Fellow, SPIE Fellow
+csc-51 | Bing Liu  |  | university:U Illinois at Chicago description:68 citations, IEEE Fellow
+csc-51 | Olvi L. Mangasarian  |  | university:U Wisconsin description:68 citations, 
+csc-51 | Vern Paxson  |  | university:ICSI description:68 citations, ACM Fellow
+csc-51 | Ronald L. Rivest  |  | university:MIT description:68 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, IACR Fellow, Member of the American Academy of Arts & Sciences
+csc-51 | Daniela Rus  |  | university:MIT description:68 citations, ACM Fellow, MacArthur Fellow
+csc-51 | Kang G. Shin  |  | university:U Michigan description:68 citations, ACM Fellow, IEEE Fellow
+csc-51 | Eduardo Sontag  |  | university:Rutgers description:68 citations, IEEE Fellow
+csc-51 | Nitin Vaidya  |  | university:UIUC description:68 citations, 
+csc-51 | John von Neumann  |  | university:Princeton description:68 citations, 
+csc-52 | Ricardo Baeza-Yates  |  | university:Yahoo Labs description:67 citations, ACM Fellow, IEEE Fellow
+csc-52 | Pierre Baldi  |  | university:UC Irvine description:67 citations, ACM Fellow, AAAS Fellow, AAAI Fellow, IEEE Fellow, ISCB Fellow
+csc-52 | Anantha Chandrakasan  |  | university:MIT description:67 citations, 
+csc-52 | Ingemar J. Cox  |  | university:U College London description:67 citations, ACM Fellow, IEEE Fellow
+csc-52 | William Freeman  |  | university:MIT description:67 citations, IEEE Fellow
+csc-52 | Ramesh Govindan  |  | university:USC description:67 citations, ACM Fellow
+csc-52 | Maurizio Lenzerini  |  | university:Sapienza U di Roma description:67 citations, ACM Fellow, Member of Academy of Europe (Academia Europaea)
+csc-52 | Chris Taylor  |  | university:U Manchester description:67 citations, 
+csc-52 | George Varghese  |  | university:Microsoft description:67 citations, ACM Fellow, IEEE Kobayashi Award, ACM SIGCOMM Lifetime Award
+csc-52 | Jeffrey Vitter  |  | university:U Kansas description:67 citations, ACM Fellow, IEEE Fellow, AAAS Fellow
+csc-52 | Alex Waibel  |  | university:CMU and U Karlsruhe description:67 citations, 
+csc-53 | Elisa Bertino  |  | university:Purdue U description:66 citations, ACM Fellow, IEEE Fellow, IEEE Technical Achievement Award
+csc-53 | Daniel Bobrow  |  | university:Xerox description:66 citations, ACM Fellow
+csc-53 | Dan Boneh  |  | university:Stanford description:66 citations, ACM Infosys Foundation Award, IACR Fellow
+csc-53 | William Dally  |  | university:Stanford description:66 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering, Fellow of the American Academy of Arts & Sciences
+csc-53 | Robert Haralick  |  | university:City U of New York description:66 citations, 
+csc-53 | Martial Hebert  |  | university:CMU description:66 citations, 
+csc-53 | John Hennessy  |  | university:Stanford description:66 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, Member of the American Academy of Arts & Sciences
+csc-53 | Jason H. Moore  |  | university:U Pennsylvania description:66 citations, AAAS Fellow, Kavli Fellow, ACMI Fellow
+csc-53 | John Mylopoulos  |  | university:U Toronto description:66 citations, FRSC
+csc-53 | Allen Newell  |  | university:CMU description:66 citations, Turing Award, IEEE Fellow, Member of the American Academy of Arts & Sciences
+csc-53 | Michael Wooldridge  |  | university:U Liverpool description:66 citations, AAAI Fellow
+csc-53 | Zhengyou Zhang  |  | university:Microsoft description:66 citations, ACM Fellow, IEEE Fellow
+csc-54 | Wolfram Burgard  |  | university:U Freiburg description:65 citations, 
+csc-54 | Anoop Gupta  |  | university:Microsoft description:65 citations, 
+csc-54 | Gabor Herman  |  | university:City University of New York description:65 citations, IEEE Fellow
+csc-54 | Jean-Pierre Hubaux  |  | university:EPFL description:65 citations, ACM Fellow, IEEE Fellow
+csc-54 | Janusz Kacprzyk  |  | university:Polish Academy of Sciences description:65 citations, IEEE Fellow, Member of Academy of Europe (Academia Europaea)
+csc-54 | Anupam Joshi  |  | university:U Maryland, Baltimore County description:65 citations, 
+csc-54 | Frank Leymann  |  | university:U Stuttgart description:65 citations, 
+csc-54 | Nick McKeown  |  | university:Stanford description:65 citations, ACM Fellow, IEEE Fellow
+csc-54 | Sankar K. Pal  |  | university:Indian Statistical Institute description:65 citations, IEEE Fellow, IAPR Fellow
+csc-54 | Steffen Staab  |  | university:U Koblenz-Landau description:65 citations, 
+csc-54 | Ion Stoica  |  | university:Berkeley description:65 citations, ACM Fellow
+csc-54 | Haim J. Wolfson  |  | university:Tel Aviv U description:65 citations, 
+csc-55 | Luca Benini  |  | university:U Bologna description:64 citations, 
+csc-55 | Larry Davis  |  | university:U Maryland description:64 citations, ACM Fellow, IEEE Fellow
+csc-55 | Susan Dumais  |  | university:Microsoft description:64 citations, ACM Fellow
+csc-55 | Joseph Y. Halpern  |  | university:Cornell description:64 citations, ACM Fellow
+csc-55 | Wen-Mei W. Hwu  |  | university:UIUC description:64 citations, ACM Fellow
+csc-55 | Somesh Jha  |  | university:U Wisconsin description:64 citations, 
+csc-55 | George Karypis  |  | university:U Minnesota description:64 citations, 
+csc-55 | Dimitris Metaxas  |  | university:Rutgers description:64 citations, Fellow of American Institute of Medical and Biological Engineers
+csc-55 | Adrian Perrig  |  | university:ETH Zurich description:64 citations, 
+csc-55 | Raghu Ramakrishnan  |  | university:Microsoft description:64 citations, ACM Fellow, IEEE Fellow
+csc-55 | Cordelia Schmid  |  | university:INRIA description:64 citations, 
+csc-55 | Ivan Stojmenovic  |  | university:U Ottawa description:64 citations, IEEE Fellow, Member of Academy of Europe (Academia Europaea)
+csc-55 | Zhi-Hua Zhou  |  | university:Nanjing U description:64 citations, IEEE Fellow, IAPR Fellow
+csc-56 | Christophe Diot  |  | university:Thomson Technology Paris Lab description:63 citations, ACM Fellow
+csc-56 | Nir Friedman  |  | university:Hebrew U of Jerusalem description:63 citations, 
+csc-56 | David S. Johnson  |  | university:AT&T Labs description:63 citations, ACM Fellow, SIAM Fellow
+csc-56 | Sara Kiesler  |  | university:CMU description:63 citations, ACM Fellow
+csc-56 | Ming C. Lin  |  | university:UNC description:63 citations, ACM Fellow, IEEE Fellow
+csc-56 | Andrew McCallum  |  | university:U Mass, Amherst description:63 citations, AAAI Fellow
+csc-56 | Theodore S. Rappaport  |  | university:NYU description:63 citations, 
+csc-56 | Michael Reiter  |  | university:UNC description:63 citations, ACM Fellow, IEEE Fellow
+csc-56 | Daniel Thalmann  |  | university:EPFL description:63 citations, 
+csc-57 | Tim Cootes  |  | university:U Manchester description:62 citations, 
+csc-57 | C. Lee Giles  |  | university:Penn State description:62 citations, ACM Fellow, IEEE Fellow
+csc-57 | William Gropp  |  | university:UIUC description:62 citations, ACM Fellow, IEEE Fellow, SIAM Fellow, Member of the National Academy of Engineering
+csc-57 | Nicholas J. Higham  |  | university:U Manchester description:62 citations, Fellow of the Royal Society, SIAM Fellow
+csc-57 | George Pappas  |  | university:U Penn description:62 citations, 
+csc-57 | Larry Peterson  |  | university:Princeton description:62 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-57 | Gerard Salton  |  | university:Cornell description:62 citations, ACM Fellow
+csc-57 | Douglas C. Schmidt  |  | university:Vanderbilt University description:62 citations, 
+csc-57 | Tieniu Tan  |  | university:Chinese Academy of Sciences description:62 citations, IEEE Fellow, IAPR Fellow
+csc-57 | Lothar Thiele  |  | university:ETH Zurich description:62 citations, 
+csc-57 | Michael Unser  |  | university:EPFL description:62 citations, 
+csc-57 | Yorick Wilks  |  | university:IHMC, Florida description:62 citations, 
+csc-58 | Norman I. Badler  |  | university:U Penn description:61 citations, 
+csc-58 | Jon Crowcroft  |  | university:U Cambridge description:61 citations, ACM Fellow, IEEE Fellow, Fellow of the Royal Society
+csc-58 | Srinivas Devadas  |  | university:MIT description:61 citations, ACM Fellow, IEEE Fellow
+csc-58 | David Fogel  |  | university:Natural Selection description:61 citations, IEEE Fellow, IEEE Kiyo Tomiyasu Award
+csc-58 | Dieter Fox  |  | university:U Washington description:61 citations, 
+csc-58 | Michael Franklin  |  | university:Berkeley description:61 citations, ACM Fellow
+csc-58 | Saul Greenberg  |  | university:University of Calgary description:61 citations, Member of the ACM CHI Academy
+csc-58 | Pat Hanrahan  |  | university:Stanford description:61 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-58 | Henry Kautz  |  | university:Rochester description:61 citations, ACM Fellow
+csc-58 | Kai Li  |  | university:Princeton description:61 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-58 | Nadia Magnenat-Thalmann  |  | university:U Geneva description:61 citations, 
+csc-58 | Chunming Qiao  |  | university:SUNY Buffalo description:61 citations, IEEE Fellow
+csc-58 | Kaushik Roy  |  | university:Purdue U description:61 citations, 
+csc-58 | Russell H. Taylor  |  | university:Johns Hopkins U description:61 citations, 
+csc-58 | Roger Wattenhofer  |  | university:ETH Zurich description:61 citations, 
+csc-58 | Alan Yuille  |  | university:UCLA description:61 citations, 
+csc-59 | Ross Anderson  |  | university:U Cambridge description:60 citations, Fellow of the Royal Society
+csc-59 | David Dill  |  | university:Stanford description:60 citations, ACM Fellow, IEEE Fellow
+csc-59 | Ronald Fedkiw  |  | university:Stanford description:60 citations, Academy Award from The Academy of Motion Picture Arts and Sciences
+csc-59 | Wen Gao  |  | university:Peking U description:60 citations, ACM Fellow, IEEE Fellow
+csc-59 | Angelos Keromytis  |  | university:Columbia description:60 citations, 
+csc-59 | K. J. Ray Liu  |  | university:U Maryland description:60 citations, IEEE Fellow, AAAS Fellow
+csc-59 | Zohar Manna  |  | university:Stanford description:60 citations, ACM Fellow
+csc-59 | Lionel Ni  |  | university:Hong Kong U of Science and Tech description:60 citations, 
+csc-59 | Sudhakar Reddy  |  | university:U Iowa description:60 citations, IEEE Fellow
+csc-59 | Gregg Rothermel  |  | university:U Nebraska, Lincoln description:60 citations, 
+csc-59 | Stefan Savage  |  | university:UCSD description:60 citations, ACM Fellow, ACM Infosys Foundation Award
+csc-59 | Dan Suciu  |  | university:U Washington description:60 citations, ACM Fellow
+csc-59 | Yiyu Yao  |  | university:U Regina description:60 citations, 
+csc-60 | Mohamed-Slim Alouini  |  | university:KAUST description:59 citations, 
+csc-60 | Guohong Cao  |  | university:Penn State description:59 citations, IEEE Fellow
+csc-60 | Carole Goble  |  | university:U Manchester description:59 citations, 
+csc-60 | Tim Berners-Lee  |  | university:World Wide Web Foundation description:59 citations, 
+csc-60 | Henry Levy  |  | university:U Washington description:59 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-60 | Huan Liu  |  | university:Arizona State U description:59 citations, 
+csc-60 | Silvio Micali  |  | university:MIT description:59 citations, Turing Award, Member of the National Academy of Engineering, Member of the National Academy of Sciences, IACR Fellow, Member of the American Academy of Arts & Sciences
+csc-60 | David Padua  |  | university:UIUC description:59 citations, ACM Fellow, IEEE Fellow
+csc-60 | David Tse  |  | university:Berkeley description:59 citations, 
+csc-60 | Jonathan Turner  |  | university:Washington U, St Louis description:59 citations, ACM Fellow
+csc-60 | Manuela Veloso  |  | university:CMU description:59 citations, 
+csc-60 | Philip Wadler  |  | university:U Edinburgh description:59 citations, ACM Fellow
+csc-60 | Daniel S. Weld  |  | university:U Washington description:59 citations, ACM Fellow
+csc-61 | Alex Acero  |  | university:Apple description:58 citations, IEEE Fellow, ISCA Fellow
+csc-61 | Alex Aiken  |  | university:Stanford description:58 citations, ACM Fellow
+csc-61 | Mostafa H. Ammar  |  | university:Georgia Tech description:58 citations, ACM Fellow, IEEE Fellow
+csc-61 | Eric Brewer  |  | university:Berkeley description:58 citations, ACM Fellow
+csc-61 | Luca Cardelli  |  | university:Microsoft description:58 citations, ACM Fellow, Member of Academy of Europe (Academia Europaea), Fellow of the Royal Society
+csc-61 | Peter Druschel  |  | university:Max Planck description:58 citations, Member of Academy of Europe (Academia Europaea)
+csc-61 | Mark Harman  |  | university:U College London description:58 citations, 
+csc-61 | Mark D. Hill  |  | university:U Wisconsin description:58 citations, ACM Fellow
+csc-61 | Hisao Ishibuchi  |  | university:Osaka Prefecture University description:58 citations, IEEE Fellow
+csc-61 | Ramesh Jain  |  | university:UC Irvine description:58 citations, ACM Fellow, IEEE Fellow, AAAI Fellow, IAPR Fellow, SPIE Fellow
+csc-61 | David B. Johnson  |  | university:Rice U description:58 citations, 
+csc-61 | Arie Kaufman  |  | university:SUNY Stony Brook description:58 citations, ACM Fellow, IEEE Fellow
+csc-61 | Wenke Lee  |  | university:Georgia Tech description:58 citations, 
+csc-61 | Pattie Maes  |  | university:MIT description:58 citations, 
+csc-61 | Enrico Motta  |  | university:The Open U description:58 citations, 
+csc-61 | Noam Nisan  |  | university:Hebrew U description:58 citations, 
+csc-61 | John Reif  |  | university:Duke U description:58 citations, ACM Fellow, IEEE Fellow, AAAS Fellow
+csc-61 | Jennifer Rexford  |  | university:Princeton description:58 citations, ACM Fellow
+csc-61 | Stefano Soatto  |  | university:UCLA description:58 citations, 
+csc-61 | Amin Vahdat  |  | university:UCSD description:58 citations, ACM Fellow
+csc-61 | David Wagner  |  | university:Berkeley description:58 citations, 
+csc-62 | Alfred V. Aho  |  | university:Columbia U description:57 citations, ACM Fellow
+csc-62 | Gustavo Alonso  |  | university:ETH Zurich description:57 citations, ACM Fellow, IEEE Fellow
+csc-62 | Mikhail Atallah  |  | university:Purdue U description:57 citations, ACM Fellow
+csc-62 | Michael J. Black  |  | university:Brown U description:57 citations, 
+csc-62 | Avrim Blum  |  | university:CMU description:57 citations, ACM Fellow
+csc-62 | Jean-Yves Le Boudec  |  | university:EPFL description:57 citations, 
+csc-62 | James Demmel  |  | university:Berkeley description:57 citations, ACM Fellow, SIAM Fellow, Paris Kanellakis Theory and Practice Award
+csc-62 | Stuart K. Card  |  | university:Xerox description:57 citations, 
+csc-62 | David K. Gifford  |  | university:MIT description:57 citations, 
+csc-62 | Mark Handley  |  | university:U College London description:57 citations, 
+csc-62 | David Harel  |  | university:Weizmann description:57 citations, ACM Fellow, IEEE Fellow, Member of Academy of Europe (Academia Europaea)
+csc-62 | Leslie Lamport  |  | university:Microsoft description:57 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering
+csc-62 | Steve Lawrence  |  | university:Google description:57 citations, 
+csc-62 | Tom Leighton  |  | university:MIT description:57 citations, Member of the National Academy of Engineering, SIAM Fellow
+csc-62 | Tom Mitchell  |  | university:CMU description:57 citations, 
+csc-62 | Wolfgang Nejdl  |  | university:L3S Research Center, Hannover description:57 citations, 
+csc-62 | Alex Nicolau  |  | university:UC Irvine description:57 citations, IEEE Fellow
+csc-62 | Rafail Ostrovsky  |  | university:UCLA description:57 citations, IACR Fellow
+csc-62 | Massoud Pedram  |  | university:USC description:57 citations, 
+csc-62 | David Salesin  |  | university:Adobe Systems description:57 citations, ACM Fellow
+csc-62 | Tuomas Sandholm  |  | university:CMU description:57 citations, ACM Fellow
+csc-62 | Padhraic Smyth  |  | university:UC Irvine description:57 citations, ACM Fellow
+csc-62 | Andrew S. Tanenbaum  |  | university:Vrije U, The Netherlands description:57 citations, ACM Fellow, IEEE Fellow
+csc-62 | Walter Willinger  |  | university:Bell Labs description:57 citations, ACM Fellow, SIAM Fellow
+csc-62 | Xin Yao  |  | university:U Birmingham description:57 citations, IEEE Fellow
+csc-62 | Michele Zorzi  |  | university:U Padova description:57 citations, IEEE Fellow
+csc-63 | Gregory D. Abowd  |  | university:Georgia Tech description:56 citations, ACM Fellow, ACM SIGCHI Academy
+csc-63 | Alan Burns  |  | university:U York description:56 citations, 
+csc-63 | Stefano Ceri  |  | university:Politecnico di Milano description:56 citations, ACM Fellow, Member of Academy of Europe (Academia Europaea)
+csc-63 | Bernard Chazelle  |  | university:Princeton description:56 citations, ACM Fellow
+csc-63 | Rachid Deriche  |  | university:INRIA description:56 citations, 
+csc-63 | Eleazar Eskin  |  | university:UCLA description:56 citations, 
+csc-63 | Dieter Fensel  |  | university:Innsbruck U description:56 citations, 
+csc-63 | David Garlan  |  | university:CMU description:56 citations, ACM Fellow
+csc-63 | Dimitrios Gunopulos  |  | university:U Athens description:56 citations, 
+csc-63 | Matthias Jarke  |  | university:RWTH Aachen description:56 citations, 
+csc-63 | Kim G. Larsen  |  | university:Aalborg U description:56 citations, 
+csc-63 | Songwu Lu  |  | university:UCLA description:56 citations, 
+csc-63 | Raymond Mooney  |  | university:UT Austin description:56 citations, ACM Fellow
+csc-63 | Brad Myers  |  | university:CMU description:56 citations, ACM Fellow, IEEE Fellow
+csc-63 | Pietro Perona  |  | university:Cal Tech description:56 citations, 
+csc-63 | Miodrag Potkonjak  |  | university:UCLA description:56 citations, 
+csc-63 | Rajeev Rastogi |  | university:Amazon description:56 citations, ACM Fellow
+csc-63 | Sartaj Sahni  |  | university:U Florida description:56 citations, ACM Fellow, IEEE Fellow
+csc-63 | Hanan Samet  |  | university:U Maryland description:56 citations, ACM Fellow, IEEE Fellow
+csc-63 | Ravi Sandhu  |  | university:UT San Antonio description:56 citations, ACM Fellow, IEEE Fellow, IEEE Technical Achievement Award
+csc-63 | Dennis Shasha  |  | university:NYU description:56 citations, ACM Fellow
+csc-63 | Prashant Shenoy  |  | university:U Mass, Amherst description:56 citations, 
+csc-63 | Ian Witten  |  | university:U Waikato description:56 citations, ACM Fellow
+csc-63 | Yang Xiao  |  | university:U Alabama description:56 citations, 
+csc-64 | Sanjoy Baruah  |  | university:UNC description:55 citations, IEEE Fellow
+csc-64 | Ming-Syan Chen  |  | university:National Taiwan University description:55 citations, ACM Fellow, IEEE Fellow
+csc-64 | Michael Cohen  |  | university:Microsoft description:55 citations, ACM Fellow
+csc-64 | Daniel Cohen-Or  |  | university:Tel Aviv U description:55 citations, 
+csc-64 | Stefan Decker  |  | university:RWTH Aachen U description:55 citations, 
+csc-64 | Pedro Domingos  |  | university:U Washington description:55 citations, 
+csc-64 | Schahram Dustdar  |  | university:TU Vienna description:55 citations, Member of Academy of Europe (Academia Europaea), IEEE Fellow
+csc-64 | Philippe Flajolet  |  | university:INRIA description:55 citations, Member of Academy of Europe (Academia Europaea)
+csc-64 | Edward A. Fox  |  | university:Virginia Tech description:55 citations, 
+csc-64 | Tao Jiang  |  | university:UC Riverside description:55 citations, ACM Fellow, AAAS Fellow
+csc-64 | David Kotz  |  | university:Dartmouth description:55 citations, 
+csc-64 | Jeff Kramer  |  | university:Imperial College, London description:55 citations, ACM Fellow
+csc-64 | Ravi Kumar  |  | university:Google description:55 citations, 
+csc-64 | H. T. Kung  |  | university:Harvard description:55 citations, Member of the National Academy of Engineering
+csc-64 | Sharad Malik  |  | university:Princeton description:55 citations, ACM Fellow
+csc-64 | B. S. Manjunath  |  | university:UC Santa Barbara description:55 citations, IEEE Fellow
+csc-64 | David Peleg  |  | university:Weizmann description:55 citations, 
+csc-64 | Calton Pu  |  | university:Georgia Tech description:55 citations, 
+csc-64 | Maarten de Rijke  |  | university:U Amsterdam description:55 citations, 
+csc-64 | Philip Rogaway  |  | university:UC Davis description:55 citations, IACR Fellow
+csc-64 | Yvonne Rogers  |  | university:U College London description:55 citations, 
+csc-64 | Alejandro Schaffer  |  | university:National Institutes of Health description:55 citations, 
+csc-64 | Joseph Sifakis  |  | university:EPFL description:55 citations, Turing Award, ACM Fellow, Member of Academy of Europe (Academia Europaea)
+csc-64 | Nigel Shadbolt  |  | university:U Southampton description:55 citations, 
+csc-64 | Salvatore Stolfo  |  | university:Columbia description:55 citations, 
+csc-64 | Milind Tambe  |  | university:USC description:55 citations, ACM Fellow, AAAI Fellow
+csc-64 | Vladimir Vapnik  |  | university:Royal Holloway, U London description:55 citations, Member of the National Academy of Engineering, IEEE Frank Rosenblatt Award
+csc-64 | Geoffrey Voelker  |  | university:UCSD description:55 citations, 
+csc-64 | Carlo Zaniolo  |  | university:UCLA description:55 citations, 
+csc-65 | Chandrajit Bajaj  |  | university:UT Austin description:54 citations, ACM Fellow
+csc-65 | David Blaauw  |  | university:U Michigan description:54 citations, 
+csc-65 | Ran Canetti  |  | university:Tel Aviv U description:54 citations, 
+csc-65 | John Canny  |  | university:Berkeley description:54 citations, 
+csc-65 | Imrich Chlamtac  |  | university:U Trento description:54 citations, 
+csc-65 | Ahmed Elmagarmid  |  | university:Purdue U and Qatar Computing Research Inst description:54 citations, ACM Fellow
+csc-65 | David Heckerman  |  | university:Microsoft and UCLA description:54 citations, ACM Fellow
+csc-65 | Kurt Keutzer  |  | university:Berkeley description:54 citations, IEEE Fellow
+csc-65 | Xiang-Yang Li  |  | university:Illinois Institute of Tech description:54 citations, IEEE Fellow
+csc-65 | Fernando C. N. Pereir |  | university:54 Fernando C. N. Pereir description:54 citations, 4 Fernando C. N. Pereira
+csc-65 | Amir Pnueli  |  | university:Weizmann and New York University description:54 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering
+csc-65 | Marc Pollefeys  |  | university:ETH Zurich description:54 citations, IEEE Fellow
+csc-65 | Mary Beth Rosson  |  | university:Penn State U description:54 citations, 
+csc-65 | Abraham Silberschatz  |  | university:Yale description:54 citations, ACM Fellow, IEEE Fellow
+csc-65 | Barry Smyth  |  | university:U College Dublin description:54 citations, 
+csc-65 | Andreas Stolcke  |  | university:Microsoft description:54 citations, 
+csc-66 | Ajith Abraham  |  | university:MIR Labs description:53 citations, 
+csc-66 | Pankaj K. Agarwal  |  | university:Duke U description:53 citations, ACM Fellow
+csc-66 | Divyakant Agrawal  |  | university:UC Santa Barbara description:53 citations, ACM Fellow
+csc-66 | Shun-ichi Amari  |  | university:Riken description:53 citations, 
+csc-66 | David Cheriton  |  | university:Stanford description:53 citations, 
+csc-66 | Mark Crovella  |  | university:Boston University description:53 citations, ACM Fellow
+csc-66 | Dipankar Dasgupta  |  | university:U Memphis description:53 citations, IEEE Fellow
+csc-66 | Sally Floyd  |  | university:ICSI description:53 citations, ACM Fellow
+csc-66 | Giuseppe De Giacomo  |  | university:Sapienza U di Roma description:53 citations, 
+csc-66 | Georg Gottlob  |  | university:University of Oxford description:53 citations, ACM Fellow, Fellow of the Royal Society, Member of Academy of Europe (Academia Europaea)
+csc-66 | Rajiv Gupta  |  | university:UC Riverside description:53 citations, ACM Fellow, IEEE Fellow, AAAS Fellow
+csc-66 | Frank van Harmelen  |  | university:Vrije U, The Netherlands description:53 citations, 
+csc-66 | John Heidemann  |  | university:USC/ISI description:53 citations, 
+csc-66 | Craig Knoblock  |  | university:USC description:53 citations, 
+csc-66 | Marta Kwiatkowska  |  | university:U Oxford description:53 citations, Member of Academia Europea
+csc-66 | Laks V.S. Lakshmanan  |  | university:U British Columbia description:53 citations, 
+csc-66 | James Larus  |  | university:EPFL description:53 citations, ACM Fellow
+csc-66 | Der-Tsai Lee  |  | university:National Chung Hsing University description:53 citations, ACM Fellow, IEEE Fellow, Member of TWAS
+csc-66 | Michael L. Littman  |  | university:Rutgers description:53 citations, 
+csc-66 | Zbigniew Michalewicz  |  | university:U Adelaide description:53 citations, 
+csc-66 | Michael Mitzenmacher  |  | university:Harvard description:53 citations, ACM Fellow
+csc-66 | Michael Pazzani  |  | university:Rutgers description:53 citations, 
+csc-66 | Rosalind Picard  |  | university:MIT description:53 citations, 
+csc-66 | Manfred Reichert  |  | university:Ulm U description:53 citations, 
+csc-66 | Amit Sahai  |  | university:UCLA description:53 citations, 
+csc-66 | John R. Smith  |  | university:IBM Research description:53 citations, 
+csc-66 | Majid Sarrafzadeh  |  | university:UCLA description:53 citations, IEEE Fellow
+csc-66 | Divesh Srivastava  |  | university:AT&T Labs description:53 citations, ACM Fellow
+csc-66 | Gaurav Sukhatme  |  | university:USC description:53 citations, 
+csc-66 | Subhash Suri  |  | university:UC Santa Barbara description:53 citations, ACM Fellow
+csc-66 | Enrique Herrera Viedma  |  | university:U Granada description:53 citations, 
+csc-66 | Michael P. Wellman  |  | university:U Michigan description:53 citations, ACM Fellow
+csc-66 | Gio Wiederhold  |  | university:Stanford description:53 citations, ACM Fellow
+csc-67 | James F. Allen  |  | university:U Rochester description:52 citations, 
+csc-67 | Eitan Altman  |  | university:INRIA Sophia-Antipolis description:52 citations, IEEE Fellow
+csc-67 | Serge Belongie  |  | university:Cornell Tech in NYC and UCSD description:52 citations, 
+csc-67 | Roberto Cipolla  |  | university:U Cambridge description:52 citations, 
+csc-67 | William W. Cohen  |  | university:CMU description:52 citations, 
+csc-67 |  |  | university:MIT description:52 citations, 
+csc-67 | Thomas Dietterich  |  | university:Oregon State U description:52 citations, ACM Fellow
+csc-67 | Danny Dolev  |  | university:Hebrew U description:52 citations, ACM Fellow
+csc-67 | Thomas Eiter  |  | university:TU Vienna description:52 citations, 
+csc-67 | Johannes Gehrke  |  | university:Cornell description:52 citations, ACM Fellow, IEEE Technical Achievement Award
+csc-67 | Phillip Gibbons  |  | university:Intel description:52 citations, ACM Fellow
+csc-67 | Donald Greenberg  |  | university:Cornell U description:52 citations, 
+csc-67 | Jonathan Grudin  |  | university:Microsoft description:52 citations, 
+csc-67 | Rajesh Gupta  |  | university:UCSD description:52 citations, IEEE Fellow
+csc-67 | Charles E. Leiserson  |  | university:MIT description:52 citations, ACM Fellow, AAAS Fellow
+csc-67 | Jure Leskovec  |  | university:Stanford description:52 citations, 
+csc-67 | Marc Levoy  |  | university:Stanford description:52 citations, 
+csc-67 | Theo Pavlidis  |  | university:SUNY Stony Brook description:52 citations, IEEE Fellow
+csc-67 | Wayne Luk  |  | university:Imperial College London description:52 citations, 
+csc-67 | Peter Patel-Schneider  |  | university:Nuance Communications description:52 citations, 
+csc-67 | Gordon Plotkin  |  | university:U Edinburgh description:52 citations, Member of Academy of Europe (Academia Europaea)
+csc-67 | Jan M. Rabaey  |  | university:Berkeley description:52 citations, 
+csc-67 | John Riedl  |  | university:U Minnesota description:52 citations, ACM Fellow
+csc-67 | Keith Ross  |  | university:Polytechnic Institute of NYU description:52 citations, ACM Fellow, IEEE Fellow
+csc-67 | Dan Roth  |  | university:UIUC description:52 citations, ACM Fellow, AAAI Fellow, ACL Fellow
+csc-67 | Pierangela Samarati  |  | university:U Milano description:52 citations, 
+csc-67 | Vivek Sarkar  |  | university:Rice U description:52 citations, ACM Fellow
+csc-67 | Bernhard Steffen  |  | university:TU Dortmund description:52 citations, 
+csc-67 | Qian Zhang  |  | university:Hong Kong U of Sci and Tech description:52 citations, IEEE Fellow
+csc-68 | Gul Agha  |  | university:UIUC description:51 citations, 
+csc-68 | Dharma P. Agrawal  |  | university:U Cincinnati description:51 citations, ACM Fellow, IEEE Fellow
+csc-68 | Baruch Awerbuch  |  | university:Johns Hopkins U description:51 citations, 
+csc-68 | Joachim Buhmann  |  | university:ETH Zurich description:51 citations, 
+csc-68 | Kevin Bowyer  |  | university:U Notre Dame description:51 citations, IEEE Fellow
+csc-68 | Peter Brusilovsky  |  | university:U Pittsburgh and CMU description:51 citations, 
+csc-68 | Brad Calder  |  | university:Microsoft description:51 citations, 
+csc-68 | Diego Calvanese  |  | university:Free University of Bozen-Bolzano description:51 citations, 
+csc-68 | Fabio Casati  |  | university:U Trento description:51 citations, 
+csc-68 | Dorin Comaniciu  |  | university:Siemens description:51 citations, IEEE Fellow
+csc-68 | Peter Denning  |  | university:Naval Postgraduate School description:51 citations, ACM Fellow, IEEE Fellow, AAAS Fellow, past ACM President
+csc-68 | Michael Fellows  |  | university:Charles Darwin U description:51 citations, 
+csc-68 | Stephanie Forrest  |  | university:U New Mexico description:51 citations, 
+csc-68 | Zoubin Ghahramani  |  | university:U Cambridge / CMU description:51 citations, 
+csc-68 | Ron Graham  |  | university:UCSD description:51 citations, ACM Fellow, Member of the National Academy of Sciences
+csc-68 | Rachid Guerraoui  |  | university:EPFL description:51 citations, ACM Fellow
+csc-68 | Joseph M. Hellerstein  |  | university:Berkeley description:51 citations, ACM Fellow
+csc-68 | Piotr Indyk  |  | university:MIT description:51 citations, 
+csc-68 | Norman Jouppi  |  | university:HP Labs description:51 citations, ACM Fellow
+csc-68 | Kevin Knight  |  | university:USC description:51 citations, 
+csc-68 | David Kriegman  |  | university:UCSD description:51 citations, 
+csc-68 | Steven Low  |  | university:Cal Tech description:51 citations, 
+csc-68 | Wei-Ying Ma  |  | university:Microsoft description:51 citations, 
+csc-68 | Christopher Manning  |  | university:Stanford description:51 citations, ACM Fellow
+csc-68 | Ueli Maurer  |  | university:ETH Zurich description:51 citations, IEEE Fellow, IACR Fellow, Member of the German Academy of Sciences
+csc-68 | Thomas P. Moran  |  | university:IBM description:51 citations, ACM Fellow
+csc-68 | Vijaykrishnan Narayanan  |  | university:Penn State description:51 citations, ACM Fellow
+csc-68 | Badri Nath [B R Badrinath]  |  | university:Rutgers description:51 citations, 
+csc-68 | Lionel M. Ni  |  | university:Hong Kong U of Sci and Tech description:51 citations, IEEE Fellow
+csc-68 | Venkata N. Padmanabhan  |  | university:Microsoft Research description:51 citations, IEEE Fellow, Member of the Indian National Academy of Engineering
+csc-68 | Jordan Pollack  |  | university:Brandeis description:51 citations, 
+csc-68 | Gunnar Ratsch  |  | university:Memorial Sloan-Kettering Cancer Center description:51 citations, 
+csc-68 | Arnold W.M. Smeulders  |  | university:U Amsterdam description:51 citations, Member of Academy of Europe (Academia Europaea), IAPR Fellow
+csc-68 | Dawn Song  |  | university:Berkeley description:51 citations, MacArthur Fellow
+csc-68 | Robert Stevens  |  | university:U Manchester description:51 citations, 
+csc-68 | Roberto Tamassia  |  | university:Brown U description:51 citations, ACM Fellow, IEEE Technical Achievement Award
+csc-68 | Wei Wang  |  | university:UCLA description:51 citations, 
+csc-68 | Joachim Weickert  |  | university:Saarland University description:51 citations, Member of Academy of Europe (Academia Europaea)
+csc-68 | Gerhard Woeginger  |  | university:TU Eindhoven description:51 citations, 
+csc-69 | Vineet Bafna  |  | university:UCSD description:50 citations, 
+csc-69 | Ben Bederson  |  | university:U Maryland description:50 citations, 
+csc-69 | Steve Benford  |  | university:U Nottingham description:50 citations, 
+csc-69 | Philip A. Bernstein  |  | university:Microsoft description:50 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-69 | Brian Bershad  |  | university:U Washington description:50 citations, 
+csc-69 | Aaron Bobick  |  | university:Georgia Tech description:50 citations, 
+csc-69 | Boualem Benatallah  |  | university:U New South Wales description:50 citations, 
+csc-69 | Lionel Briand  |  | university:Carleton U description:50 citations, IEEE Harlan D. Mills Award
+csc-69 | Surajit Chaudhuri  |  | university:Microsoft description:50 citations, ACM Fellow
+csc-69 | Mathieu Desbrun  |  | university:Caltech description:50 citations, 
+csc-69 | Garth Gibson  |  | university:CMU description:50 citations, ACM Fellow
+csc-69 | Andrew Gordon  |  | university:Microsoft description:50 citations, 
+csc-69 | W. Eric L. Grimson  |  | university:MIT description:50 citations, ACM Fellow
+csc-69 | Jessica Hodgins  |  | university:CMU description:50 citations, 
+csc-69 | Sitharama S. Iyengar  |  | university:Florida International U description:50 citations, ACM Fellow, IEEE Fellow, AAAS Fellow, Member of the European Academy of Sciences
+csc-69 | Michal Irani  |  | university:Weizmann description:50 citations, 
+csc-69 | Van Jacobson  |  | university:PARC description:50 citations, Member of the National Academy of Engineering
+csc-69 | Raj Jain  |  | university:Washington U description:50 citations, ACM Fellow, IEEE Fellow
+csc-69 | Joost-Pieter Katoen  |  | university:RWTH Aachen U description:50 citations, Member of Academy of Europe (Academia Europaea)
+csc-69 | Jeff Kephart  |  | university:IBM Research description:50 citations, IEEE Fellow
+csc-69 | Edward Knightly  |  | university:Rice U description:50 citations, IEEE Fellow
+csc-69 | Hugo Krawczyk  |  | university:IBM description:50 citations, IACR Fellow
+csc-69 | Yann LeCun  |  | university:NYU description:50 citations, 
+csc-69 | Chih-Jen Lin  |  | university:National Taiwan U description:50 citations, ACM Fellow
+csc-69 | David Maier  |  | university:Portland State U description:50 citations, ACM Fellow
+csc-69 | Ralph Martin  |  | university:Cardiff U description:50 citations, Fellow of the British Computer Society, Fellow of the Learned Society of Wales
+csc-69 | Yishay Mansour  |  | university:Tel Aviv U description:50 citations, ACM Fellow
+csc-69 | Dimitris Metaxas  |  | university:Rutgers description:50 citations, 
+csc-69 | Joseph S. B. Mitchell  |  | university:SUNY Stony Brook description:50 citations, ACM Fellow
+csc-69 | Trevor Mudge  |  | university:U Michigan description:50 citations, IEEE Fellow, ACM-IEEE CS Eckert-Mauchly Award
+csc-69 | Richard Muntz  |  | university:UCLA description:50 citations, ACM Fellow, IEEE Fellow
+csc-69 | S. Muthukrishnan  |  | university:Rutgers description:50 citations, ACM Fellow
+csc-69 | Frank Pfenning  |  | university:CMU description:50 citations, 
+csc-69 | Benjamin Pierce  |  | university:U Penn description:50 citations, ACM Fellow
+csc-69 | Riccardo Poli  |  | university:U Essex description:50 citations, 
+csc-69 | Joel Saltz  |  | university:Emory University description:50 citations, American Medical Informatics Association Fellow
+csc-69 | Shashi Shekhar  |  | university:U Minnesota description:50 citations, IEEE Fellow, AAAS Fellow, IEEE Technical Achievement Award
+csc-69 | Kevin Skadron  |  | university:U Virginia description:50 citations, IEEE Fellow
+csc-69 | Alan Smeaton  |  | university:Dublin City U description:50 citations, Member of the Royal Irish Academy
+csc-69 | Sargur Srihari  |  | university:SUNY Buffalo description:50 citations, IEEE Fellow, IAPR Fellow
+csc-69 | Mark Steedman  |  | university:U Edinburgh description:50 citations, 
+csc-69 | Douglas Stinson  |  | university:U Waterloo description:50 citations, 
+csc-69 | Eva Tardos  |  | university:Cornell description:50 citations, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, IEEE Technical Achievement Award, SIAM Fellow, Member of the American Academy of Arts & Sciences
+csc-69 | Pascal Van Hentenryck  |  | university:ANU and NICTA description:50 citations, 
+csc-69 | Michael N. Vrahatis  |  | university:U Patras description:50 citations, 
+csc-69 | Michael Waidner  |  | university:TU Darmstadt description:50 citations, 
+csc-69 | Darrell Whitley  |  | university:Colorado State University description:50 citations, 
+csc-69 | Steve Whittaker  |  | university:UC Santa Cruz description:50 citations, ACM Fellow
+csc-69 | Yuanyuan Zhou  |  | university:UCSD description:50 citations, ACM Fellow
+csc-70 | Michael Backes  |  | university:Saarland U description:49 citations, 
+csc-70 | Andrew Barto  |  | university:U Mass, Amherst description:49 citations, IEEE Fellow, AAAS Fellow
+csc-70 | Bir Bhanu  |  | university:UC Riverside description:49 citations, IEEE Fellow, AAAS Fellow, IAPR Fellow, SPIE Fellow, AIMBE Fellow
+csc-70 | Craig Boutilier  |  | university:U Toronto description:49 citations, ACM Fellow
+csc-70 | Andrew A. Chien  |  | university:U. Chicago description:49 citations, ACM Fellow, IEEE Fellow, AAAS Fellow
+csc-70 | Kenneth Church  |  | university:IBM description:49 citations, 
+csc-70 | Philip R Cohen  |  | university:Adapx Inc description:49 citations, AAAI Fellow,
+csc-70 | Adnan Darwiche  |  | university:UCLA description:49 citations, AAAI Fellow
+csc-70 | David J. DeWitt  |  | university:U Wisconsin description:49 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-70 | Bruce R. Donald  |  | university:Duke U description:49 citations, ACM Fellow, IEEE Fellow
+csc-70 | Paul Dourish  |  | university:UC Irvine description:49 citations, 
+csc-70 | David Eppstein  |  | university:UC Irvine description:49 citations, ACM Fellow
+csc-70 | Matthias Felleisen  |  | university:Northeastern U description:49 citations, ACM Fellow
+csc-70 | Steven Feiner  |  | university:Columbia description:49 citations, 
+csc-70 | Carlos Guestrin  |  | university:U Washington description:49 citations, 
+csc-70 | Leonidas J. Guibas  |  | university:Stanford description:49 citations, ACM Fellow
+csc-70 | Tian He  |  | university:U Minnesota description:49 citations, 
+csc-70 | Holger Hoos  |  | university:U British Columbia description:49 citations, 
+csc-70 | Hugues Hoppe  |  | university:Microsoft description:49 citations, ACM Fellow
+csc-70 | Tomasz Imielinski  |  | university:Rutgers description:49 citations, 
+csc-70 | Mark Johnson  |  | university:Macquarie U description:49 citations, 
+csc-70 | Ron Kimmel  |  | university:Technion description:49 citations, 
+csc-70 | Hans-Peter Kriegel  |  | university:Ludwig-Maximilians U, Munich description:49 citations, ACM Fellow
+csc-70 | Benjamin Kuipers  |  | university:U Michigan description:49 citations, 
+csc-70 | Hector Levesque  |  | university:U Toronto description:49 citations, FRSC
+csc-70 | Michael Luby  |  | university:ICSI description:49 citations, 
+csc-70 | Kurt Mehlhorn  |  | university:Max Planck description:49 citations, ACM Fellow
+csc-70 | Robert Morris  |  | university:MIT description:49 citations, ACM Fellow
+csc-70 | Moni Naor  |  | university:Weizmann description:49 citations, IACR Fellow
+csc-70 | Jeffrey F. Naughton  |  | university:U Wisconsin description:49 citations, ACM Fellow
+csc-70 | Norman Paton  |  | university:U Manchester description:49 citations, 
+csc-70 | Bart Preneel  |  | university:KU Leuven description:49 citations, 
+csc-70 | Kannan Ramchandran  |  | university:Berkeley description:49 citations, 
+csc-70 | Andre Schiper  |  | university:EPFL description:49 citations, 
+csc-70 | Timos Sellis  |  | university:RMIT, Australia description:49 citations, 
+csc-70 | Bart Selman  |  | university:Cornell description:49 citations, ACM Fellow
+csc-70 | Daniel Siewiorek  |  | university:CMU description:49 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-70 | John Stasko  |  | university:Georgia Tech description:49 citations, 
+csc-70 | Michael Stonebraker  |  | university:MIT description:49 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering
+csc-70 | V. S. Subrahmanian  |  | university:U Maryland description:49 citations, 
+csc-70 | Richard S. Sutton  |  | university:U Alberta description:49 citations, 
+csc-70 | Gerhard Weikum  |  | university:Max Planck description:49 citations, ACM Fellow, Member of Academy of Europe (Academia Europaea)
+csc-70 | David Wetherall  |  | university:U Washington description:49 citations, ACM Fellow
+csc-70 | David A. Wood  |  | university:U Wisconsin description:49 citations, ACM Fellow, IEEE Fellow
+csc-70 | Ming-Hsuan Yang  |  | university:UC Merced description:49 citations, 
+csc-70 | Justin Zobel  |  | university:U Melbourne description:49 citations, 
+csc-71 | James Allan  |  | university:U Mass, Amherst description:48 citations, 
+csc-71 | Andrew Appel  |  | university:Princeton description:48 citations, ACM Fellow
+csc-71 | Franz Baader  |  | university:TU Dresden description:48 citations, Member of Academy of Europe (Academia Europaea)
+csc-71 | Dana Ballard  |  | university:UT Austin description:48 citations, 
+csc-71 | Jan Bergstra  |  | university:U Amsterdam description:48 citations, Member of Academy of Europe (Academia Europaea)
+csc-71 | Randal Bryant  |  | university:CMU description:48 citations, ACM Fellow
+csc-71 | Peter Buneman  |  | university:U Edinburgh description:48 citations, ACM Fellow, Fellow of the Royal Society
+csc-71 | Vince Calhoun  |  | university:U New Mexico description:48 citations, 
+csc-71 | Michael J. Carey  |  | university:UC Irvine description:48 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-71 | Umeshwar Dayal  |  | university:HP Labs description:48 citations, ACM Fellow
+csc-71 | Pradeep K. Khosla  |  | university:CMU description:48 citations, IEEE Fellow, AAAI Fellow, AAAS Fellow, Member of the National Academy of Engineering
+csc-71 | Joshua Knowles  |  | university:U Manchester description:48 citations, 
+csc-71 | Simon S. Lam  |  | university:UT Austin description:48 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-71 | James Landay  |  | university:U Washington description:48 citations, 
+csc-71 | Jerome Lang  |  | university:CRNS description:48 citations, 
+csc-71 | Deborah L. McGuinness  |  | university:RPI description:48 citations, AAAS Fellow
+csc-71 | Samuel Madden  |  | university:MIT description:48 citations, 
+csc-71 | Kathleen McKeown  |  | university:Columbia description:48 citations, ACM Fellow
+csc-71 | Kathryn McKinley  |  | university:Microsoft description:48 citations, ACM Fellow, IEEE Fellow
+csc-71 | Bertrand Meyer  |  | university:ETH Zurich description:48 citations, ACM Fellow, ACM Software System Award, Member of Academy of Europe (Academia Europaea), IEEE Harlan D. Mills Award
+csc-71 | Gonzalo Navarro  |  | university:U Chile description:48 citations, 
+csc-71 | Stefano Nolfi  |  | university:National Research Council, Rome description:48 citations, 
+csc-71 | David Parnas  |  | university:U Limerick description:48 citations, ACM Fellow, IEEE Harlan D. Mills Award
+csc-71 | Jean-Jacques Quisquater  |  | university:U Catholique de Louvain description:48 citations, IACR Fellow
+csc-71 | Ulrike Sattler  |  | university:U Manchester description:48 citations, 
+csc-71 | Mahadev Satyanarayanan  |  | university:CMU description:48 citations, ACM Fellow, IEEE Fellow
+csc-71 | Bernt Schiele  |  | university:Max Planck description:48 citations, 
+csc-71 | Steven Seitz  |  | university:U Washington description:48 citations, 
+csc-71 | Yoram Singer  |  | university:Google description:48 citations, 
+csc-71 | Satinder Singh  |  | university:U Michigan description:48 citations, 
+csc-71 | Richard Snodgrass  |  | university:U Arizona description:48 citations, ACM Fellow
+csc-71 | Jaideep Srivastava  |  | university:Qatar Computing Research Institute description:48 citations, 
+csc-71 | Peter Steenkiste  |  | university:CMU description:48 citations, 
+csc-71 | Peter Stone  |  | university:UT Austin description:48 citations, 
+csc-71 | Alistair Sutcliffe  |  | university:U Manchester description:48 citations, 
+csc-71 | Andrew Tomkins  |  | university:Google description:48 citations, 
+csc-71 | Philip Torr  |  | university:Oxford Brookes U description:48 citations, 
+csc-71 | Ben Y. Zhao  |  | university:UC Santa Barbara description:48 citations, 
+csc-71 | Xiaohua Jia  |  | university:City U of Hong Kong description:48 citations, IEEE Fellow
+csc-72 | Wolfgang Banzhaf  |  | university:Memorial U Newfoundland description:47 citations, 
+csc-72 | Elizabeth Belding  |  | university:UC Santa Barbara description:47 citations, 
+csc-72 | Mark Billinghurst  |  | university:U Canterbury, New Zealand description:47 citations, 
+csc-72 | Horst Bischof  |  | university:Graz U of Technology description:47 citations, 
+csc-72 | Gaetano Borriello,  |  | university:U Washington description:47 citations, ACM Fellow
+csc-72 | Robert K. Brayton  |  | university:Berkeley description:47 citations, 
+csc-72 | Justine Cassell  |  | university:CMU description:47 citations, 
+csc-72 | Rina Dechter  |  | university:UC Irvine description:47 citations, ACM Fellow
+csc-72 | Inderjit S. Dhillon  |  | university:UT Austin description:47 citations, ACM Fellow
+csc-72 | Dirk Grunwald  |  | university:U Colorado description:47 citations, 
+csc-72 | Carl Gutwin  |  | university:U Saskatchewan description:47 citations, 
+csc-72 | Greg Hager  |  | university:Johns Hopkins U description:47 citations, 
+csc-72 | Bernd Hamann  |  | university:UC Davis description:47 citations, 
+csc-72 | Mary Jean Harrold  |  | university:Georgia Tech description:47 citations, ACM Fellow
+csc-72 | Matthew Hennessy  |  | university:U Sussex description:47 citations, 
+csc-72 | Maurice Herlihy  |  | university:Brown U description:47 citations, ACM Fellow
+csc-72 | C.A.R.  |  | university:Tony description:47 citations, Hoare (Microsoft), Turing Award, Fellow of the Royal Society, Member of Academy of Europe (Academia Europaea)
+csc-72 | Mahmut Kandemir  |  | university:Penn State description:47 citations, 
+csc-72 | Leonard Kleinrock  |  | university:UCLA description:47 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-72 | Rich Korf  |  | university:UCLA description:47 citations, AAAI Fellow
+csc-72 | Ramamohanarao  |  | university:Rao description:47 citations, Kotagiri (U Melbourne)
+csc-72 | Jim Kurose  |  | university:U Mass, Amherst description:47 citations, ACM Fellow, IEEE Fellow
+csc-72 | Richard Lipton  |  | university:Georgia Tech description:47 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-72 | Scott Mahlke  |  | university:U Michigan description:47 citations, 
+csc-72 | Nasir Memon  |  | university:Polytechnic Institute of NYU description:47 citations, IEEE Fellow
+csc-72 | Daniel Menasce  |  | university:George Mason U description:47 citations, ACM Fellow, IEEE Fellow
+csc-72 | Johanna Moore  |  | university:U Edinburgh description:47 citations, 
+csc-72 | Jeff Offutt  |  | university:George Mason U description:47 citations, 
+csc-72 | Dimitris Papadias  |  | university:Hong Kong U of Sci and Tech description:47 citations, 
+csc-72 | Yale Patt  |  | university:UT Austin description:47 citations, ACM Fellow, IEEE Fellow
+csc-72 | Yong Rui  |  | university:Microsoft description:47 citations, IEEE Fellow, IAPR Fellow, SPIE Fellow
+csc-72 | Albrecht Schmidt  |  | university:U Stuttgart description:47 citations, 
+csc-72 | Claudio Silva  |  | university:NYU description:47 citations, IEEE Fellow
+csc-72 | Mary Lou Soffa  |  | university:U Virginia description:47 citations, ACM Fellow
+csc-72 | P. N. Suganthan  |  | university:Nanyang Tech U, Singapore description:47 citations, 
+csc-72 | Toby Walsh  |  | university:NICTA and UNSW description:47 citations, 
+csc-72 | Chris Williams  |  | university:U Edinburgh description:47 citations, 
+csc-72 | Wang Yi  |  | university:Uppsala U description:47 citations, IEEE Fellow, Member of Academy of Europe (Academia Europaea)
+csc-73 | Henri Bal  |  | university:Vrije U, Amsterdam description:46 citations, 
+csc-73 | Thomas Ball  |  | university:Microsoft description:46 citations, ACM Fellow
+csc-73 | Christopher Bishop  |  | university:Microsoft description:46 citations, 
+csc-73 | Krishnendu Chakrabarty  |  | university:Duke U description:46 citations, ACM Fellow, IEEE Fellow
+csc-73 | Nick Duffield  |  | university:AT&T Labs description:46 citations, 
+csc-73 | Max J. Egenhofer  |  | university:U Maine description:46 citations, 
+csc-73 | Wenfei Fan  |  | university:U Edinburgh description:46 citations, ACM Fellow
+csc-73 | Dror Feitelson  |  | university:Hebrew U description:46 citations, 
+csc-73 | Rosario Gennaro  |  | university:City College of New York description:46 citations, 
+csc-73 | Steve Gribble  |  | university:U Washington description:46 citations, 
+csc-73 | John Hopcroft  |  | university:Cornell description:46 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, SIAM Fellow, Member of the American Academy of Arts & Sciences
+csc-73 | Tom Hou  |  | university:Virginia Tech description:46 citations, IEEE Fellow
+csc-73 | Katsushi Ikeuchi  |  | university:U Tokyo description:46 citations, 
+csc-73 | Yannis Ioannidis  |  | university:U Wisconsin description:46 citations, ACM Fellow, Member of Academy of Europe (Academia Europaea)
+csc-73 | Niraj K. Jha  |  | university:Princeton description:46 citations, ACM Fellow, IEEE Fellow
+csc-73 | Eamonn Keogh  |  | university:UC Riverside description:46 citations, 
+csc-73 | Joe Kilian  |  | university:Rutgers description:46 citations, 
+csc-73 | Dexter Kozen  |  | university:Cornell description:46 citations, ACM Fellow
+csc-73 | Vladimir Lifschitz  |  | university:UT Austin description:46 citations, 
+csc-73 | Jimmy Lin  |  | university:U Maryland description:46 citations, 
+csc-73 | Patrick Lincoln  |  | university:SRI description:46 citations, 
+csc-73 | Andrew Lumsdaine  |  | university:Indiana U description:46 citations, 
+csc-73 | Margaret Martonosi  |  | university:Princeton description:46 citations, ACM Fellow
+csc-73 | Kenneth McMillan  |  | university:Microsoft description:46 citations, 
+csc-73 | Enrico Motta  |  | university:The Open University, UK description:46 citations, 
+csc-73 | Zoran Obradovic  |  | university:Temple U description:46 citations, 
+csc-73 | Shmuel Peleg  |  | university:Hebrew U description:46 citations, 
+csc-73 | Jean Ponce  |  | university:ENS description:46 citations, 
+csc-73 | Mooly Sagiv  |  | university:Tel Aviv University description:46 citations, 
+csc-73 | Mary Shaw  |  | university:CMU description:46 citations, ACM Fellow
+csc-73 | Arun Somani  |  | university:Iowa State description:46 citations, IEEE Fellow, AAAS Fellow
+csc-73 | Rudi Studer  |  | university:Karlsruhe Inst Tech description:46 citations, 
+csc-73 | Madhu Sudan  |  | university:MIT description:46 citations, ACM Fellow
+csc-73 | Chew Lim Tan  |  | university:National U Singapore description:46 citations, 
+csc-73 | Rene Vidal  |  | university:Johns Hopkins U description:46 citations, 
+csc-73 | Emo Welzl  |  | university:ETH Zurich description:46 citations, Member of Academy of Europe (Academia Europaea), Member of the German Academy of Sciences
+csc-73 | Franco Zambonelli  |  | university:U Modena e Reggio Emilia description:46 citations, IEEE Fellow
+csc-73 | Matt Welsh  |  | university:Google description:46 citations, 
+csc-73 | Ouri Wolfson  |  | university:U Illinois at Chicago description:46 citations, ACM Fellow, IEEE Fellow, AAAS Fellow
+csc-74 | Andrei Broder  |  | university:Google description:45 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-74 | Oscar Cordon  |  | university:U Granada, Spain description:45 citations, 
+csc-74 | Samir Das  |  | university:SUNY Stony Brook description:45 citations, 
+csc-74 | Michael Ernst  |  | university:U Washington description:45 citations, ACM Fellow
+csc-74 | Anja Feldmann  |  | university:TU Berlin description:45 citations, 
+csc-74 | Amos Fiat  |  | university:Tel Aviv U description:45 citations, 
+csc-74 | Patrick J. Flynn  |  | university:U Notre Dame description:45 citations, 
+csc-74 | Lise Getoor  |  | university:UC Santa Cruz description:45 citations, AAAI Fellow
+csc-74 | Holger Hermanns  |  | university:Saarland U description:45 citations, Member of Academy of Europe (Academia Europaea)
+csc-74 | Russell Impagliazzo  |  | university:UCSD description:45 citations, 
+csc-74 | M. Frans Kaashoek  |  | university:MIT description:45 citations, ACM Fellow, ACM Infosys Foundation Award, Member of the National Academy of Engineering
+csc-74 | Carl Kesselman  |  | university:USC/ISI description:45 citations, 
+csc-74 | Nikola Kasabov  |  | university:Auckland U of Technology description:45 citations, 
+csc-74 | Ross King  |  | university:U Manchester description:45 citations, 
+csc-74 | John Koza  |  | university:Stanford description:45 citations, 
+csc-74 | Arvind Krishnamurthy  |  | university:U Washington description:45 citations, 
+csc-74 | Rudolf Kruse  |  | university:U Magdeburg description:45 citations, IEEE Fellow
+csc-74 | Ed Lazowska,  |  | university:U Washington description:45 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-74 | Victor Lesser  |  | university:U Mass, Amherst description:45 citations, IEEE Fellow, AAAI Fellow
+csc-74 | Ming Li  |  | university:U Waterloo description:45 citations, ACM Fellow, IEEE Fellow
+csc-74 | Heikki Mannila  |  | university:U Helsinki description:45 citations, 
+csc-74 | Daniel Marcu  |  | university:USC description:45 citations, 
+csc-74 | Nenad Medvidovic  |  | university:USC description:45 citations, 
+csc-74 | Alberto O. Mendelzon  |  | university:U Toronto description:45 citations, 
+csc-74 | Dusit Niyato  |  | university:Nanyang Technological U description:45 citations, 
+csc-74 | John Ousterhout  |  | university:Stanford description:45 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-74 | Yannis Papakonstantinou  |  | university:UCSD description:45 citations, 
+csc-74 | Bijan Parsia  |  | university:U Manchester description:45 citations, 
+csc-74 | Michel Raynal  |  | university:IRISA description:45 citations, 
+csc-74 | Hajo Reijers  |  | university:Vrije U Amsterdam description:45 citations, 
+csc-74 | Fred Schneider  |  | university:Cornell description:45 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-74 | Dana Scott  |  | university:CMU description:45 citations, Turing Award, ACM Fellow, Member of Academy of Europe (Academia Europaea)
+csc-74 | Carles Sierra  |  | university:Artificial Intelligence Research Institute, Spain description:45 citations, 
+csc-74 | Eero P. Simoncelli  |  | university:NYU description:45 citations, IEEE Fellow
+csc-74 | Mukesh Singhal  |  | university:UC Merced description:45 citations, 
+csc-74 | Marc Snir  |  | university:UIUC description:45 citations, ACM Fellow, IEEE Fellow
+csc-74 | Richard Taylor  |  | university:UC Irvine description:45 citations, ACM Fellow
+csc-74 | Murat Tekalp  |  | university:Koc University, Turkey description:45 citations, IEEE Fellow, Member of Academy of Europe (Academia Europaea)
+csc-74 | Mikkel Thorup  |  | university:AT&T Labs and U Copenhagen description:45 citations, ACM Fellow, Member of the Royal Danish Academy of Sciences and Letters
+csc-74 | Jun Wang  |  | university:The Chinese U of Hong Kong description:45 citations, IEEE Fellow
+csc-74 | Jarke J. van Wijk   |  | university:TU Eindhoven description:45 citations, 
+csc-74 | Niklaus Wirth  |  | university:ETH Zurich description:45 citations, Turing Award, ACM Fellow
+csc-74 | Mohammed Zaki  |  | university:RPI description:45 citations, 
+csc-74 | Steven Zucker  |  | university:Yale description:45 citations, 
+csc-75 | Victor Basili  |  | university:U Maryland description:44 citations, ACM Fellow, IEEE Harlan D. Mills Award
+csc-75 | Ernst Biersack  |  | university:Eurecom, Sophia Antipolis, France description:44 citations, 
+csc-75 | Kenneth Birman  |  | university:Cornell description:44 citations, ACM Fellow
+csc-75 | Terrance E. Boult  |  | university:U Colorado at Colorado Springs description:44 citations, 
+csc-75 | Andrew Brass  |  | university:U Manchester description:44 citations, 
+csc-75 | Carla Brodley  |  | university:Tufts University description:44 citations, AAAI Fellow
+csc-75 | Jan Camenisch  |  | university:IBM Zurich description:44 citations, IEEE Technical Achievement Award
+csc-75 | Balakrishnan Chandrasekaran  |  | university:Ohio State description:44 citations, ACM Fellow, IEEE Fellow, AAAI Fellow
+csc-75 | Brian Curless  |  | university:U Washington description:44 citations, 
+csc-75 | Marlon Dumas  |  | university:U Tartu description:44 citations, 
+csc-75 | E. Allen Emerson  |  | university:UT Austin description:44 citations, Turing Award
+csc-75 | Christos Faloutsos  |  | university:CMU description:44 citations, ACM Fellow
+csc-75 | Babak Falsafi  |  | university:EPFL description:44 citations, 
+csc-75 | Jodi Forlizzi  |  | university:CMU description:44 citations, 
+csc-75 | Carlo Ghezzi  |  | university:Politecnico di Milano description:44 citations, ACM Fellow, IEEE Fellow, Member of Academy of Europe (Academia Europaea)
+csc-75 | Oded Goldreich  |  | university:Weizmann description:44 citations, IACR Fellow
+csc-75 | Shafi Goldwasser  |  | university:MIT and Weizmann description:44 citations, Turing Award, Member of the National Academy of Engineering, Member of the National Academy of Sciences, IACR Fellow, Member of the American Academy of Arts & Sciences
+csc-75 | Ahmed Helmy  |  | university:U Florida description:44 citations, 
+csc-75 | Manuel Hermenegildo  |  | university:IMDEA and U Politecnica Madrid description:44 citations, 
+csc-75 | Thomas Hofmann  |  | university:Google description:44 citations, 
+csc-75 | Markus Jakobsson  |  | university:Paypal description:44 citations, 
+csc-75 | Jean-Marc Jezequel  |  | university:U Rennes and INRIA description:44 citations, 
+csc-75 | Thorsten Joachims  |  | university:Cornell description:44 citations, ACM Fellow
+csc-75 | Lydia Kavraki  |  | university:Rice U description:44 citations, ACM Fellow, AAAI Fellow, Member of the Institute of Medicine
+csc-75 | Donald Kossmann  |  | university:ETH Zurich description:44 citations, ACM Fellow
+csc-75 | Tao Li  |  | university:Florida International U description:44 citations, 
+csc-75 | Gail Murphy  |  | university:U British Columbia description:44 citations, 
+csc-75 | Tobias Nipkow  |  | university:TU Munich description:44 citations, 
+csc-75 | Paul C. van Oorschot  |  | university:Carleton U description:44 citations, 
+csc-75 | M. Tamer zsu  |  | university:U Waterloo description:44 citations, ACM Fellow, IEEE Fellow
+csc-75 | Franco Preparata  |  | university:Brown U description:44 citations, ACM Fellow
+csc-75 | Steve Renals  |  | university:U Edinburgh description:44 citations, IEEE Fellow
+csc-75 | Robbert van Renesse  |  | university:Cornell description:44 citations, ACM Fellow
+csc-75 | Rob Rutenbar  |  | university:UIUC description:44 citations, 
+csc-75 | Robert E. Schapire  |  | university:Princeton description:44 citations, 
+csc-75 | Victor Shoup  |  | university:NYU description:44 citations, 
+csc-75 | Mateo Valero  |  | university:Technical U Catalonia and Barcelona Supercomputing Center description:44 citations, ACM Fellow, IEEE Fellow
+csc-75 | Sabrina De Capitani di Vimercati  |  | university:U degli Studi di Milano description:44 citations, 
+csc-75 | Bonnie Webber  |  | university:U Edinburgh description:44 citations, 
+csc-75 | Jason Weston  |  | university:Google description:44 citations, 
+csc-75 | Adam Wolisz  |  | university:TU Berlin description:44 citations, 
+csc-75 | Ellen Zegura  |  | university:Georgia Tech description:44 citations, ACM Fellow
+csc-76 | Don Batory  |  | university:UT Austin description:43 citations, 
+csc-76 | Eli Biham  |  | university:Technion description:43 citations, IACR Fellow
+csc-76 | Raouf Boutaba  |  | university:U Waterloo description:43 citations, IEEE Fellow, EIC Fellow
+csc-76 | Soumen Chakrabarti  |  | university:IIT Bombay description:43 citations, 
+csc-76 | Stephen Cook  |  | university:U Toronto description:43 citations, Turing Award
+csc-76 | Rod Downey  |  | university:Victoria U description:43 citations, 
+csc-76 | Susan Eggers  |  | university:U Washington description:43 citations, ACM Fellow
+csc-76 | Uriel Feige  |  | university:Weizmann description:43 citations, 
+csc-76 | Daniela Florescu  |  | university:Oracle description:43 citations, 
+csc-76 | Robert France  |  | university:Colorado State U description:43 citations, 
+csc-76 | Zvi Galil  |  | university:Georgia Tech description:43 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-76 | Dennis Gannon  |  | university:Microsoft description:43 citations, ACM Fellow
+csc-76 | Michael T. Goodrich  |  | university:UC Irvine description:43 citations, ACM Fellow, IEEE Technical Achievement Award
+csc-76 | Joseph Goguen  |  | university:UCSD description:43 citations, 
+csc-76 | Isabelle Guyon  |  | university:ClopiNet/ChaLearn description:43 citations, 
+csc-76 | Pavol Hell  |  | university:Simon Fraser U description:43 citations, 
+csc-76 | Farnam Jahanian  |  | university:U Michigan description:43 citations, ACM Fellow, IEEE Fellow, AAAS Fellow
+csc-76 | Simon Peyton Jones  |  | university:Microsoft description:43 citations, ACM Fellow
+csc-76 | Won Kim |  | university:Sung Kyun Kwan University description:43 citations, ACM Fellow
+csc-76 | Sung Wing Kin  |  | university:National U Singapore description:43 citations, 
+csc-76 | Butler Lampson  |  | university:Microsoft description:43 citations, Turing Award, ACM Fellow
+csc-76 | Baochun Li  |  | university:U Toronto description:43 citations, 
+csc-76 | Leonid Libkin  |  | university:U Edinburgh description:43 citations, ACM Fellow
+csc-76 | Barbara Liskov  |  | university:MIT description:43 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering, Member of the National Academy of Sciences, Member of the American Academy of Arts & Sciences
+csc-76 | Michael Luck  |  | university:King's College London description:43 citations, 
+csc-76 | Satoshi Matsuoka  |  | university:Tokyo Institute of Technology description:43 citations, ACM Fellow
+csc-76 | Sharad Mehrotra  |  | university:UC Irvine description:43 citations, 
+csc-76 | Risto Miikkulainen  |  | university:UT Austin description:43 citations, 
+csc-76 | Robin Milner  |  | university:U Cambridge description:43 citations, Turing Award, ACM Fellow
+csc-76 | Nassir Navab  |  | university:TU Munich and Johns Hopkins U description:43 citations, 
+csc-76 | Martha Stone Palmer  |  | university:Colorado U description:43 citations, 
+csc-76 | Sharath Pankanti  |  | university:IBM Watson description:43 citations, 
+csc-76 | Birgit Pfitzmann  |  | university:IBM Zurich description:43 citations, 
+csc-76 | Dragomir Radev  |  | university:U Michigan description:43 citations, 
+csc-76 | Krithi Ramamritham  |  | university:IIT Bombay description:43 citations, ACM Fellow, IEEE Fellow
+csc-76 | Rajesh Rao  |  | university:U Washington description:43 citations, 
+csc-76 | Alan Rector  |  | university:U Manchester description:43 citations, 
+csc-76 | Angela Sasse  |  | university:U College London description:43 citations, 
+csc-76 | Shlomo Shamai  |  | university:Technion description:43 citations, 
+csc-76 | Amnon Shashua  |  | university:Hebrew U description:43 citations, 
+csc-76 | Kentaro Toyama  |  | university:U Michigan description:43 citations, 
+csc-76 | Marilyn Walker  |  | university:UC Santa Cruz description:43 citations, 
+csc-76 | Jonathan Walpole  |  | university:Portland State U description:43 citations, 
+csc-76 | Jose Luis Verdegay  |  | university:U Granada, Spain description:43 citations, IFSA Fellow
+csc-76 | Avi Wigderson  |  | university:Institute for Advanced Study, Princeton description:43 citations, 
+csc-76 | Pierre Wolper  |  | university:U Liege description:43 citations, 
+csc-76 | Limsoon Wong  |  | university:National U Singapore description:43 citations, 
+csc-76 | Andreas Zeller  |  | university:Saarland U description:43 citations, ACM Fellow
+csc-76 | Shlomo Zilberstein  |  | university:U Mass, Amherst description:43 citations, 
+csc-77 | Karl Aberer  |  | university:EPFL description:42 citations, 
+csc-77 | Michael Arbib  |  | university:USC description:42 citations, 
+csc-77 | Barry Boehm  |  | university:USC description:42 citations, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering, IEEE Harlan D. Mills Award
+csc-77 | John A. Carroll  |  | university:U Sussex description:42 citations, 
+csc-77 | Charles Consel  |  | university:U Bordeaux and INRIA description:42 citations, 
+csc-77 | Ivan Damgrd  |  | university:Aarhus U description:42 citations, IACR Fellow
+csc-77 | Luc Devroye  |  | university:McGill U description:42 citations, 
+csc-77 | Alan Dix  |  | university:U Birmingham description:42 citations, 
+csc-77 | Josep Domingo-Ferrer  |  | university:U Rovira i Virgili, Catalonia description:42 citations, IEEE Fellow
+csc-77 | Sorin Draghici  |  | university:Wayne State U description:42 citations, 
+csc-77 | Matthew Dwyer  |  | university:U Nebraska, Lincoln description:42 citations, 
+csc-77 | Keith Edwards  |  | university:Georgia Tech description:42 citations, 
+csc-77 | Charles Elkan  |  | university:UCSD description:42 citations, 
+csc-77 | Wulfram Gerstner  |  | university:EPFL description:42 citations, 
+csc-77 | Gaston H. Gonnet  |  | university:ETH Zurich description:42 citations, 
+csc-77 | Jan Friso Groote  |  | university:TU Eindhoven description:42 citations, 
+csc-77 | MohammadTaghi HajiAghayi  |  | university:U Maryland description:42 citations, 
+csc-77 | Robert Harper  |  | university:CMU description:42 citations, ACM Fellow
+csc-77 | Wynne Hsu  |  | university:National U Singapore description:42 citations, 
+csc-77 | Liviu Iftode  |  | university:Rutgers description:42 citations, 
+csc-77 | Josef Kittler  |  | university:Surrey U description:42 citations, 
+csc-77 | Anna Karlin  |  | university:U Washington description:42 citations, 
+csc-77 | Srinivasan Keshav  |  | university:U Waterloo description:42 citations, 
+csc-77 | Teuvo Kohonen  |  | university:Academy of Finland description:42 citations, IEEE Frank Rosenblatt Award
+csc-77 | Richard E. Ladner  |  | university:U Washington description:42 citations, 
+csc-77 | Seong-Whan Lee  |  | university:Korea University description:42 citations, IEEE Fellow
+csc-77 | Arjen Lenstra  |  | university:EPFL description:42 citations, IACR Fellow
+csc-77 | Miron Livny  |  | university:U Wisconsin description:42 citations, 
+csc-77 | Marco Ajmone Marsan  |  | university:Politecnico di Torino description:42 citations, IEEE Fellow
+csc-77 | Jose Meseguer  |  | university:UIUC description:42 citations, 
+csc-77 | Melanie Mitchell  |  | university:Portland State University description:42 citations, 
+csc-77 | Prasant Mohapatra  |  | university:UC Davis description:42 citations, IEEE Fellow, AAAS Fellow
+csc-77 | Fionn Murtagh  |  | university:U London description:42 citations, 
+csc-77 | Andrew Myers  |  | university:Cornell description:42 citations, ACM Fellow
+csc-77 | Andrew Y. Ng  |  | university:Stanford description:42 citations, 
+csc-77 | Natasha Noy  |  | university:Stanford description:42 citations, 
+csc-77 | Erkki Oja  |  | university:Helsinki U of Technology description:42 citations, 
+csc-77 | Beng Chin Ooi  |  | university:National U Singapore description:42 citations, ACM Fellow
+csc-77 | Jens Palsberg  |  | university:UCLA description:42 citations, 
+csc-77 | Jignesh Patel  |  | university:U Wisconsin description:42 citations, ACM Fellow
+csc-77 | David Poole  |  | university:U British Columbia description:42 citations, 
+csc-77 | Massimiliano Pontil  |  | university:U College London description:42 citations, 
+csc-77 | William Sanders  |  | university:UIUC description:42 citations, 
+csc-77 | Micha Sharir  |  | university:Tel Aviv U description:42 citations, ACM Fellow
+csc-77 | Thomas Schiex  |  | university:INRIA, Toulouse description:42 citations, 
+csc-77 | Eugene Spafford  |  | university:Purdue U description:42 citations, ACM Fellow, IEEE Technical Achievement Award
+csc-77 | Quentin Stout  |  | university:U Michigan description:42 citations, 
+csc-77 | Dean Tullsen  |  | university:UCSD description:42 citations, ACM Fellow
+csc-77 | Alexander Vardy  |  | university:UCSD description:42 citations, IEEE Fellow
+csc-77 | Min Wu  |  | university:U Maryland description:42 citations, IEEE Fellow
+csc-77 | Alexander Wolf  |  | university:Imperial College, London description:42 citations, ACM Fellow
+csc-77 | Willy Zwaenepoel  |  | university:EPFL description:42 citations, ACM Fellow, IEEE Fellow, Member of Academy of Europe (Academia Europaea)
+csc-78 | Emile Aarts  |  | university:TU Eindhoven description:41 citations, 
+csc-78 | Manuel Blum  |  | university:CMU description:41 citations, Turing Award, Member of the National Academy of Engineering, Member of the National Academy of Sciences, IACR Fellow, Member of the American Academy of Arts & Sciences
+csc-78 | Alan Borning  |  | university:U Washington description:41 citations, 
+csc-78 | Srdjan Capkun  |  | university:ETH Zurich description:41 citations, 
+csc-78 | Jianer Chen  |  | university:Texas A&M description:41 citations, 
+csc-78 | Ed G. Coffman  |  | university:Columbia U description:41 citations, ACM Fellow
+csc-78 | Joelle Coutaz  |  | university:U Joseph Fourier, Grenoble description:41 citations, 
+csc-78 | Stephane Ducasse  |  | university:INRIA Lille description:41 citations, 
+csc-78 | Cynthia Dwork  |  | university:Microsoft description:41 citations, Member of the National Academy of Engineering
+csc-78 | Boi Faltings  |  | university:EPFL description:41 citations, 
+csc-78 | Lance Fortnow  |  | university:Georgia Tech description:41 citations, ACM Fellow
+csc-78 | Harold Gabow  |  | university:U Colorado description:41 citations, ACM Fellow
+csc-78 | Patrice Godefroid  |  | university:Microsoft description:41 citations, 
+csc-78 | Luis Gravano  |  | university:Columbia description:41 citations, 
+csc-78 | Robert Grossman  |  | university:U Chicago description:41 citations, AAAS Fellow
+csc-78 | Jonathan Hull  |  | university:Ricoh description:41 citations, IAPR Fellow
+csc-78 | Mary Jane Irwin  |  | university:Penn State description:41 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-78 | Michael Kearns  |  | university:U Penn description:41 citations, ACM Fellow
+csc-78 | David Lowe  |  | university:U British Columbia description:41 citations, 
+csc-78 | Kwan-Liu Ma  |  | university:UC Davis description:41 citations, 
+csc-78 | Jan Mendling  |  | university:WU Vienna description:41 citations, 
+csc-78 | Weiyi Meng  |  | university:Binghampton U description:41 citations, 
+csc-78 | Dale Miller  |  | university:INRIA description:41 citations, 
+csc-78 | Marvin Minsky  |  | university:MIT description:41 citations, Turing Award
+csc-78 | Michael Mozer  |  | university:U Colorado description:41 citations, 
+csc-78 | Ian Munro  |  | university:U Waterloo description:41 citations, 
+csc-78 | Sharon Oviatt |  | university:Incaa Designs description:41 citations, 
+csc-78 | Stefano Paraboschi  |  | university:U Bergamo description:41 citations, 
+csc-78 | Lawrence C. Paulson  |  | university:U Cambridge description:41 citations, ACM Fellow
+csc-78 | Gian Pietro Picco  |  | university:U Trento description:41 citations, 
+csc-78 | Viktor Prasanna  |  | university:USC description:41 citations, ACM Fellow, IEEE Fellow
+csc-78 | Raimund Seidel  |  | university:Saarland U description:41 citations, 
+csc-78 | Alla Sheffer  |  | university:U British Columbia description:41 citations, 
+csc-78 | Joshua R. Smith  |  | university:U Washington description:41 citations, 
+csc-78 | Aravind Srinivasan  |  | university:U Maryland description:41 citations, ACM Fellow, IEEE Fellow
+csc-78 | Jean-Philippe Thiran  |  | university:EPFL description:41 citations, 
+csc-78 | Sam Toueg  |  | university:U Toronto description:41 citations, 
+csc-78 | Uzi Vishkin  |  | university:U Maryland description:41 citations, ACM Fellow
+csc-78 | Haixun Wang  |  | university:Google description:41 citations, 
+csc-78 | Ke Wang  |  | university:Simon Fraser U description:41 citations, 
+csc-78 | Manfred K. Warmuth  |  | university:UC Santa Cruz description:41 citations, 
+csc-78 | William Weihl  |  | university:Facebook description:41 citations, 
+csc-78 | Andrew Yao  |  | university:Tsinghua U description:41 citations, Turing Award, ACM Fellow, IACR Fellow
+csc-78 | Eric Yu  |  | university:U Toronto description:41 citations, 
+csc-78 | Feng Zhao  |  | university:Microsoft description:41 citations, IEEE Fellow
+csc-79 | Leonard Adleman  |  | university:USC description:40 citations, Turing Award
+csc-79 | Lars Arge  |  | university:Aarhus University description:40 citations, ACM Fellow
+csc-79 | Andrea Arpaci-Dusseau  |  | university:U Wisconsin description:40 citations, 
+csc-79 | Amotz Bar-Noy  |  | university:Brooklyn College description:40 citations, 
+csc-79 | Craig Chambers  |  | university:Google description:40 citations, 
+csc-79 | Sunghyun Choi  |  | university:Seoul National U description:40 citations, 
+csc-79 | Edmund M. Clarke  |  | university:CMU description:40 citations, Turing Award, ACM Fellow, IEEE Fellow, Member of the National Academy of Engineering
+csc-79 | Jan Chomicki  |  | university:SUNY Buffalo description:40 citations, 
+csc-79 | David Corne  |  | university:Heriot-Watt University, Edinburgh description:40 citations, 
+csc-79 | Edsger Dijkstra  |  | university:UT Austin description:40 citations, Turing Award
+csc-79 | Herbert Edelsbrunner  |  | university:Duke U description:40 citations, Member of Academy of Europe (Academia Europaea)
+csc-79 | Thomas Ertl  |  | university:U Stuttgart description:40 citations, 
+csc-79 | Nick Feamster  |  | university:Georgia Tech description:40 citations, 
+csc-79 | Cormac Flanagan  |  | university:UCSC description:40 citations, 
+csc-79 | Edward Feigenbaum  |  | university:Stanford description:40 citations, Turing Award, ACM Fellow, AAAI Fellow, Member of the National Academy of Engineering
+csc-79 | Yoav Freund  |  | university:UCSD description:40 citations, AAAI Fellow
+csc-79 | Ashok Goel  |  | university:Georgia Tech description:40 citations, 
+csc-79 | Venu Govindaraju  |  | university:U Buffalo description:40 citations, ACM Fellow, IEEE Fellow, AAAS Fellow, IAPR Fellow, SPIE Fellow, IEEE Technical Achievement Award
+csc-79 | Manish Gupta  |  | university:Goldman Sachs description:40 citations, ACM Fellow
+csc-79 | Hannes Hartenstein  |  | university:Karlsruhe Inst Tech description:40 citations, 
+csc-79 | Neil D. Jones  |  | university:DIKU, U Copenhagen description:40 citations, ACM Fellow
+csc-79 | Ari Juels  |  | university:RSA description:40 citations, 
+csc-79 | Philipp Koehn  |  | university:U Edinburgh and Johns Hopkins U description:40 citations, 
+csc-79 | Pedro Larranaga  |  | university:Technical U Madrid description:40 citations, 
+csc-79 | Brian Neil Levine  |  | university:U Mass, Amherst description:40 citations, 
+csc-79 | Nancy Lynch  |  | university:MIT description:40 citations, ACM Fellow, Member of the National Academy of Engineering
+csc-79 | Rupak Majumdar  |  | university:Max Planck and UCLA description:40 citations, 
+csc-79 | Maja Mataric  |  | university:USC description:40 citations, 
+csc-79 | John Mitchell  |  | university:Stanford description:40 citations, ACM Fellow
+csc-79 | David McAllester  |  | university:Toyota Tech Inst description:40 citations, AAAI Fellow
+csc-79 | John McCarthy  |  | university:Stanford description:40 citations, Turing Award, ACM Fellow, Member of the National Academy of Engineering
+csc-79 | Mira Mezini  |  | university:TU Darmstadt description:40 citations, 
+csc-79 | Luc Moreau  |  | university:U Southampton description:40 citations, 
+csc-79 | Oscar Nierstrasz  |  | university:U Bern description:40 citations, 
+csc-79 | David Notkin  |  | university:U Washington description:40 citations, ACM Fellow, IEEE Fellow
+csc-79 | John Owens  |  | university:UC Davis description:40 citations, 
+csc-79 | Yi Pan  |  | university:Georgia State U description:40 citations, 
+csc-79 | Mark Pauly  |  | university:EPFL description:40 citations, 
+csc-79 | Andrzej Pelc  |  | university:U Quebec en Outaouais description:40 citations, 
+csc-79 | David Pennock  |  | university:Microsoft description:40 citations, 
+csc-79 | Charles E. Perkins  |  | university:Nokia-Siemens Networks description:40 citations, 
+csc-79 | Michael O. Rabin  |  | university:Harvard description:40 citations, Turing Award, Member of the National Academy of Sciences, Member of the French Academy of Sciences, Member of the Israel Academy of Sciences and Humanities, IACR Fellow, Member of the American Academy of Arts & Sciences
+csc-79 | Raymond Reiter  |  | university:U Toronto description:40 citations, ACM Fellow
+csc-79 | Pablo Rodriguez Rodriguez  |  | university:Telefonica Research description:40 citations, 
+csc-79 | Yehoshua Sagiv  |  | university:Hebrew U description:40 citations, 
+csc-79 | Sunita Sarawagi  |  | university:IIT Bombay description:40 citations, 
+csc-79 | Mihaela van der Schaar  |  | university:UCLA description:40 citations, IEEE Fellow
+csc-79 | Andrea Schaerf  |  | university:U Udine description:40 citations, 
+csc-79 | Assaf Schuster |  | university:Technion description:40 citations, 
+csc-79 | Cyrus Shahabi  |  | university:USC description:40 citations, IEEE Fellow
+csc-79 | Linda Shapiro  |  | university:U Washington description:40 citations, 
+csc-79 | Anand Sivasubramaniam  |  | university:Penn State description:40 citations, 
+csc-79 | Gurindar S. Sohi  |  | university:U Wisconsin description:40 citations, ACM Fellow, IEEE Fellow
+csc-79 | Jacques Stern  |  | university:ENS, Paris description:40 citations, IACR Fellow
+csc-79 | S. Sudarshan  |  | university:IIT Bombay description:40 citations, ACM Fellow
+csc-79 | Paul Syverson  |  | university:U.S. Naval Research Laboratory description:40 citations, ACM Fellow
+csc-79 | Christian Theobalt  |  | university:Max-Planck-Institute and Saarland U description:40 citations, 
+csc-79 | Patrick Thiran  |  | university:EPFL description:40 citations, 
+csc-79 | John K. Tsotsos  |  | university:York U, Canada description:40 citations, FRSC
+csc-79 | Ruediger Urbanke  |  | university:EPFL description:40 citations, 
+csc-79 | Frits Vaandrager  |  | university:Radboud U Nijmegen description:40 citations, 
+csc-79 | Leslie Valiant  |  | university:Harvard description:40 citations, Turing Award, ACM Fellow
+csc-79 | Victor Vianu  |  | university:UCSD description:40 citations, ACM Fellow
+csc-79 | Maria Amparo Vila  |  | university:U Granada, Spain description:40 citations, 
+csc-79 | James H. Wilkinson  |  | university:National Physical Laboratory, England description:40 citations, Turing Award
+csc-79 | Xing Xie  |  | university:Microsoft description:40 citations, 
+csc-79 | Shuicheng Yan  |  | university:National U Singapore description:40 citations, 
+csc-79 | Moshe Zukerman  |  | university:City U of Hong Kong description:40 citations, IEEE Fellow
