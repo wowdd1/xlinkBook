@@ -1,39 +1,39 @@
-egsr2006-1 | Reconstruction of Volumetric Surface Textures for Real-Time Rendering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-1 Reconstruction of Volumetric Surface Textures for Real-Time Rendering | author:Sebastian Magda  David Kriegman
-egsr2006-2 | Statistical Acquisition of Texture Appearance | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-2 Statistical Acquisition of Texture Appearance | author:Addy Ngan   Frédo Durand
-egsr2006-3 | Sparse Lumigraph Relighting by Illumination and Reflectance Estimation from Multi-View Images | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-3 Sparse Lumigraph Relighting by Illumination and Reflectance Estimation from Multi-View Images | author:Tianli Yu   Hongcheng Wang   Narendra Ahuja   Wei-Chao Chen
-egsr2006-4 | Tomographic Reconstruction of Transparent Objects | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-4 Tomographic Reconstruction of Transparent Objects | author:Borislav Trifonov  Derek Bradley   Wolfgang Heidrich
-egsr2006-5 | An Efficient Multi-View Rasterization Architecture | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-5 An Efficient Multi-View Rasterization Architecture | author:Jon Hasselgren   Tomas Akenine-Moller
-egsr2006-6 | Antialiasing for Automultiscopic 3D Displays | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-6 Antialiasing for Automultiscopic 3D Displays | author:Matthias Zwicker   Wojciech Matusik   Frédo Durand   Hanspeter Pfister
-egsr2006-7 | Automatic Multiperspective Images | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-7 Automatic Multiperspective Images | author:Augusto Román   Hendrik P. A. Lensch
-egsr2006-8 | Real-time Multi-perspective Rendering on Graphics Hardware | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-8 Real-time Multi-perspective Rendering on Graphics Hardware | author:Xianyou Hou  Li-Yi Wei   Heung-Yeung Shum   Baining Guo
-egsr2006-9 | Two Stage Importance Sampling for Direct Lighting | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-9 Two Stage Importance Sampling for Direct Lighting | author:David Cline   Parris Egbert   Justin Talbot   David Cardon
-egsr2006-10 | Sequential Sampling of Environment Maps | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-10 Sequential Sampling of Environment Maps | author:Abhijeet Ghosh   Arnaud Doucet   Wolfgang Heidrich
-egsr2006-11 | Making Radiance and Irradiance Caching Practical: Adaptive Caching and Neighbor Clamping | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-11 Making Radiance and Irradiance Caching Practical: Adaptive Caching and Neighbor Clamping | author:Jaroslav Køivánek   Kadi Bouatouch   Sumanta Pattanaik   Jiri Zara
-egsr2006-12 | Instant Ray Tracing: The Bounding Interval Hierarchy | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-12 Instant Ray Tracing: The Bounding Interval Hierarchy | author:Carsten Wachter  Alexander Keller
-egsr2006-13 | Exploiting Temporal Coherence for Incremental All-Frequency Relighting | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-13 Exploiting Temporal Coherence for Incremental All-Frequency Relighting | author:Ryan Overbeck   Aner Ben-Artzi   Ravi Ramamoorthi   Eitan Grinspun
-egsr2006-14 | Wavelet Radiance Transport for Real-time Indirect Lighting | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-14 Wavelet Radiance Transport for Real-time Indirect Lighting | author:Janne Kontkanen   Emmanuel Turquin   Nicolas Holzschuch   François Sillion
-egsr2006-15 | Efficient Wavelet Rotation for Environment Map Rendering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-15 Efficient Wavelet Rotation for Environment Map Rendering | author:Rui Wang   Ren Ng   David Luebke   Greg Humphreys
-egsr2006-16 | Relighting Human Locomotion with Flowed Reflectance Fields | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-16 Relighting Human Locomotion with Flowed Reflectance Fields | author:Per Einarsson  Charles-Felix Chabert  Andrew Jones  Bruce Lamond  Alex Ma  Tim Hawkins  Sebastian Sylwan  Paul Debevec
-egsr2006-17 | Adaptive Visibility Driven View Cell Construction | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-17 Adaptive Visibility Driven View Cell Construction | author:Oliver Mattausch   Jiri Bittner   Michael Wimmer
-egsr2006-18 | Near Optimal Hierarchical Culling: Performance Driven Use of Hardware Occlusion Queries | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-18 Near Optimal Hierarchical Culling: Performance Driven Use of Hardware Occlusion Queries | author:Michael Guthe   Akos Balazs   Reinhard Klein
-egsr2006-19 | Shadow Map Warping and Partitioning | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-19 Shadow Map Warping and Partitioning | author:Brandon Lloyd   David Tuft   Sung-Eui Yoon   Dinesh Manocha
-egsr2006-20 | Real-time Soft Shadow Mapping by Backprojection | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-20 Real-time Soft Shadow Mapping by Backprojection | author:Gaël Guennebaud   Loïc Barthe   Mathias Paulin
-egsr2006-21 | Practical, Real-time Studio Matting using Dual Imagers | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-21 Practical, Real-time Studio Matting using Dual Imagers | author:Morgan McGuire   Wojciech Matusik   William Yerazunis
-egsr2006-22 | Surface Enhancement Using Real-time Photometric Stereo and Reflectance Transformation | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-22 Surface Enhancement Using Real-time Photometric Stereo and Reflectance Transformation | author:Tom Malzbender   Bennett Wilburn   Dan Gelb  Bill Ambrisco
-egsr2006-23 | Symmetric Photography : Exploiting Data-sparseness in Reflectance Fields | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-23 Symmetric Photography : Exploiting Data-sparseness in Reflectance Fields | author:Gaurav Garg   Eino-Ville Talvala   Marc Levoy   Hendrik P. A. Lensch
-egsr2006-24 | Spatio-angular Resolution Trade-Offs in Integral Photography | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-24 Spatio-angular Resolution Trade-Offs in Integral Photography | author:Todor Georgiev   Colin Zheng   Shree K. Nayar   David Salesin   Brian Curless  Chintan Intwala
-egsr2006-25 | Texture Transfer Using Geometry Correlation | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-25 Texture Transfer Using Geometry Correlation | author:Tom Mertens   Jan Kautz   Jiawen Chen   Philippe Bekaert   Frédo Durand
-egsr2006-26 | Silhouette Texture | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-26 Silhouette Texture | author:Hongzhi Wu   Li-Yi Wei  Xi Wang  Baining Guo
-egsr2006-27 | Feature-Aware Texturing | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-27 Feature-Aware Texturing | author:Ran Gal   Olga Sorkine   Daniel Cohen-Or
-egsr2006-28 | Texture Replacement of Garments in Monocular Video Sequences | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-28 Texture Replacement of Garments in Monocular Video Sequences | author:Volker Scholz   Marcus Magnor
-egsr2006-29 | A GPU-driven Algorithm for Accurate Interactive Reflections on Curved Objects | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-29 A GPU-driven Algorithm for Accurate Interactive Reflections on Curved Objects | author:Pau Estalella  Ignacio Martin   George Drettakis   Dani Tost
-egsr2006-30 | Interactive Screen-Space Accurate Photon Tracing on GPUs | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-30 Interactive Screen-Space Accurate Photon Tracing on GPUs | author:Jens Kruger  Kai Burger  Rudiger Westermann
-egsr2006-31 | A Novel Method for Fast and High-Quality Rendering of Hair | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-31 A Novel Method for Fast and High-Quality Rendering of Hair | author:Songhua Xu    Hao Jiang  Yunhe Pan
-egsr2006-32 | Ambient Occlusion for Animated Characters | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-32 Ambient Occlusion for Animated Characters | author:Janne Kontkanen   Timo Aila
-egsr2006-33 | ARDECO: Automatic Region DEtection and Conversion | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-33 ARDECO: Automatic Region DEtection and Conversion | author:Gregory Lecot  Bruno Lévy
-egsr2006-34 | Segmentation-Based 3D Artistic Rendering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-34 Segmentation-Based 3D Artistic Rendering | author:Alexander Kolliopoulos   Jack M. Wang   Aaron Hertzmann
-egsr2006-35 | Painting With Texture | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-35 Painting With Texture | author:Lincoln Ritter   Wilmot Li   Maneesh Agrawala Brian Curless   David Salesin
-egsr2006-36 | Directing Gaze in 3D Models with Stylized Focus | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-36 Directing Gaze in 3D Models with Stylized Focus | author:Forrester Cole   Doug DeCarlo   Adam Finkelstein  Kenrick Kin  Keith Morley   Anthony Santella
-egsr2006-37 | Bidirectional Instant Radiosity | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-37 Bidirectional Instant Radiosity | author:Benjamin Segovia   Jean-Claude Iehl   Richard Mitanchey   Bernard Peroche
-egsr2006-38 | Image-driven Navigation of Analytical BRDF Models | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-38 Image-driven Navigation of Analytical BRDF Models | author:Addy Ngan   Frédo Durand   Wojciech Matusik
-egsr2006-39 | A Spectral BSSRDF for Shading Human Skin | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2006-39 A Spectral BSSRDF for Shading Human Skin | author:Craig Donner   Henrik Wann Jensen
+egsr2006-1 | Reconstruction of Volumetric Surface Textures for Real-Time Rendering |  | author:Sebastian Magda,  David Kriegman
+egsr2006-2 | Statistical Acquisition of Texture Appearance |  | author:Addy Ngan ,  Frédo Durand
+egsr2006-3 | Sparse Lumigraph Relighting by Illumination and Reflectance Estimation from Multi-View Images |  | author:Tianli Yu ,  Hongcheng Wang ,  Narendra Ahuja ,  Wei-Chao Chen
+egsr2006-4 | Tomographic Reconstruction of Transparent Objects |  | author:Borislav Trifonov,  Derek Bradley ,  Wolfgang Heidrich
+egsr2006-5 | An Efficient Multi-View Rasterization Architecture |  | author:Jon Hasselgren ,  Tomas Akenine-Moller
+egsr2006-6 | Antialiasing for Automultiscopic 3D Displays |  | author:Matthias Zwicker ,  Wojciech Matusik ,  Frédo Durand ,  Hanspeter Pfister
+egsr2006-7 | Automatic Multiperspective Images |  | author:Augusto Román ,  Hendrik P. A. Lensch
+egsr2006-8 | Real-time Multi-perspective Rendering on Graphics Hardware |  | author:Xianyou Hou,  Li-Yi Wei ,  Heung-Yeung Shum ,  Baining Guo
+egsr2006-9 | Two Stage Importance Sampling for Direct Lighting |  | author:David Cline ,  Parris Egbert ,  Justin Talbot ,  David Cardon
+egsr2006-10 | Sequential Sampling of Environment Maps |  | author:Abhijeet Ghosh ,  Arnaud Doucet ,  Wolfgang Heidrich
+egsr2006-11 | Making Radiance and Irradiance Caching Practical: Adaptive Caching and Neighbor Clamping |  | author:Jaroslav Køivánek ,  Kadi Bouatouch ,  Sumanta Pattanaik ,  Jiri Zara
+egsr2006-12 | Instant Ray Tracing: The Bounding Interval Hierarchy |  | author:Carsten Wachter,  Alexander Keller
+egsr2006-13 | Exploiting Temporal Coherence for Incremental All-Frequency Relighting |  | author:Ryan Overbeck ,  Aner Ben-Artzi ,  Ravi Ramamoorthi ,  Eitan Grinspun
+egsr2006-14 | Wavelet Radiance Transport for Real-time Indirect Lighting |  | author:Janne Kontkanen ,  Emmanuel Turquin ,  Nicolas Holzschuch ,  François Sillion
+egsr2006-15 | Efficient Wavelet Rotation for Environment Map Rendering |  | author:Rui Wang ,  Ren Ng ,  David Luebke ,  Greg Humphreys
+egsr2006-16 | Relighting Human Locomotion with Flowed Reflectance Fields |  | author:Per Einarsson,  Charles-Felix Chabert,  Andrew Jones,  Bruce Lamond,  Alex Ma , Tim Hawkins,  Sebastian Sylwan,  Paul Debevec
+egsr2006-17 | Adaptive Visibility Driven View Cell Construction |  | author:Oliver Mattausch ,  Jiri Bittner ,  Michael Wimmer
+egsr2006-18 | Near Optimal Hierarchical Culling: Performance Driven Use of Hardware Occlusion Queries |  | author:Michael Guthe ,  Akos Balazs ,  Reinhard Klein
+egsr2006-19 | Shadow Map Warping and Partitioning |  | author:Brandon Lloyd ,  David Tuft ,  Sung-Eui Yoon ,  Dinesh Manocha
+egsr2006-20 | Real-time Soft Shadow Mapping by Backprojection |  | author:Gaël Guennebaud ,  Loïc Barthe ,  Mathias Paulin
+egsr2006-21 | Practical, Real-time Studio Matting using Dual Imagers |  | author:Morgan McGuire ,  Wojciech Matusik ,  William Yerazunis
+egsr2006-22 | Surface Enhancement Using Real-time Photometric Stereo and Reflectance Transformation |  | author:Tom Malzbender ,  Bennett Wilburn ,  Dan Gelb , Bill Ambrisco
+egsr2006-23 | Symmetric Photography : Exploiting Data-sparseness in Reflectance Fields |  | author:Gaurav Garg ,  Eino-Ville Talvala ,  Marc Levoy ,  Hendrik P. A. Lensch
+egsr2006-24 | Spatio-angular Resolution Trade-Offs in Integral Photography |  | author:Todor Georgiev ,  Colin Zheng ,  Shree K. Nayar ,  David Salesin ,  Brian Curless , Chintan Intwala
+egsr2006-25 | Texture Transfer Using Geometry Correlation |  | author:Tom Mertens ,  Jan Kautz ,  Jiawen Chen ,  Philippe Bekaert ,  Frédo Durand
+egsr2006-26 | Silhouette Texture |  | author:Hongzhi Wu ,  Li-Yi Wei , Xi Wang,  Baining Guo
+egsr2006-27 | Feature-Aware Texturing |  | author:Ran Gal ,  Olga Sorkine ,  Daniel Cohen-Or
+egsr2006-28 | Texture Replacement of Garments in Monocular Video Sequences |  | author:Volker Scholz ,  Marcus Magnor
+egsr2006-29 | A GPU-driven Algorithm for Accurate Interactive Reflections on Curved Objects |  | author:Pau Estalella,  Ignacio Martin ,  George Drettakis ,  Dani Tost
+egsr2006-30 | Interactive Screen-Space Accurate Photon Tracing on GPUs |  | author:Jens Kruger , Kai Burger,  Rudiger Westermann
+egsr2006-31 | A Novel Method for Fast and High-Quality Rendering of Hair |  | author:Songhua Xu ,  , Hao Jiang,  Yunhe Pan
+egsr2006-32 | Ambient Occlusion for Animated Characters |  | author:Janne Kontkanen ,  Timo Aila
+egsr2006-33 | ARDECO: Automatic Region DEtection and Conversion |  | author:Gregory Lecot,  Bruno Lévy
+egsr2006-34 | Segmentation-Based 3D Artistic Rendering |  | author:Alexander Kolliopoulos ,  Jack M. Wang ,  Aaron Hertzmann
+egsr2006-35 | Painting With Texture |  | author:Lincoln Ritter ,  Wilmot Li ,  Maneesh Agrawala Brian Curless ,  David Salesin
+egsr2006-36 | Directing Gaze in 3D Models with Stylized Focus |  | author:Forrester Cole ,  Doug DeCarlo ,  Adam Finkelstein , Kenrick Kin,  Keith Morley ,  Anthony Santella
+egsr2006-37 | Bidirectional Instant Radiosity |  | author:Benjamin Segovia ,  Jean-Claude Iehl ,  Richard Mitanchey ,  Bernard Peroche
+egsr2006-38 | Image-driven Navigation of Analytical BRDF Models |  | author:Addy Ngan ,  Frédo Durand ,  Wojciech Matusik
+egsr2006-39 | A Spectral BSSRDF for Shading Human Skin |  | author:Craig Donner ,  Henrik Wann Jensen

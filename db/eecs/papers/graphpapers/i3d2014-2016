@@ -1,19 +1,19 @@
-i3d2014-1 | Efficient Virtual Shadow Maps for Many Lights | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-1 Efficient Virtual Shadow Maps for Many Lights | author:Ola Olsson   Erik Sintorn   Viktor Kampe   Markus Billeter   Ulf Assarsson
-i3d2014-2 | k+-buffer: Fragment Synchronized k-buffer | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-2 k+-buffer: Fragment Synchronized k-buffer | author:Andreas A. Vasilakis   Ioannis Fudos
-i3d2014-3 | Splatting Lines: An Efficient Method for Illustrating 3D Surfaces and Volumes | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-3 Splatting Lines: An Efficient Method for Illustrating 3D Surfaces and Volumes | author:Long Zhang  Qian Sun   Ying He
-i3d2014-4 | Prefiltered Single-Scattering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-4 Prefiltered Single-Scattering | author:Oliver Klehm   Hans-Peter Seidel   Elmar Eisemann
-i3d2014-5 | Multi-Layer Alpha Blending | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-5 Multi-Layer Alpha Blending | author:Marco Salvi  Karthik Vaidyanathan
-i3d2014-6 | Adaptive Depth Bias for Shadow Maps | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-6 Adaptive Depth Bias for Shadow Maps | author:Hang Dou   Yajie Yan   Ethan Kerzner   Zeng Dai   Chris Wyman
-i3d2014-7 | Dynamic Radial View Based Culling for Continuous Self-Collision Detection | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-7 Dynamic Radial View Based Culling for Continuous Self-Collision Detection | author:Sai-Keung Wong   Wen-Chieh Lin   Yu-Shuen Wang  Chun-Hung Hung  Yi-Jheng Huang
-i3d2014-8 | Deep Screen Space | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-8 Deep Screen Space | author:Oliver Nalbach   Tobias Ritschel   Hans-Peter Seidel
-i3d2014-9 | Sub-Pixel Shadow Mapping | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-9 Sub-Pixel Shadow Mapping | author:Pascal Lecocq   Jean-Eudes Marvie   Gael Sourimant   Pascal Gautron
-i3d2014-10 | A GPU accelerated algorithm for 3D Delaunay triangulation | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-10 A GPU accelerated algorithm for 3D Delaunay triangulation | author:Thanh-Tung Cao  Ashwin Nanjappa  Mingcen Gao  Tiow-Seng Tan
-i3d2014-11 | Objective Image Quality Assessment of Texture Compression | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-11 Objective Image Quality Assessment of Texture Compression | author:Wesley Griffin   Marc Olano
-i3d2014-12 | Fast Rotation Search for Real-Time Interactive Point Cloud Registration | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-12 Fast Rotation Search for Real-Time Interactive Point Cloud Registration | author:Tat-Jun Chin  Alvaro Parra Bustos  Michael Brown   David Suter
-i3d2014-13 | Fracture Animation Based on High-Dimensional Voronoi Diagrams | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-13 Fracture Animation Based on High-Dimensional Voronoi Diagrams | author:Sara Schvartzman   Miguel Otaduy
-i3d2014-14 | Stochastic Activity Authoring with Direct User Control | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-14 Stochastic Activity Authoring with Direct User Control | author:Aline Normoyle   Maxim Likhachev   Alla Safonova
-i3d2014-15 | A Hybrid Image-CAD Based System for Modeling Realistic Hairstyles | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-15 A Hybrid Image-CAD Based System for Modeling Realistic Hairstyles | author:Xuan Yu   Zhan Yu  Xiaogang Chen  Jingyi Yu
-i3d2014-16 | Per-Triangle Shadow Volumes Using a View-Sample Cluster Hierarchy | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-16 Per-Triangle Shadow Volumes Using a View-Sample Cluster Hierarchy | author:Erik Sintorn   Viktor Kampe   Ola Olsson   Ulf Assarsson
-i3d2014-17 | FORKS: Interactive compliant mechanisms with parallel state computation | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-17 FORKS: Interactive compliant mechanisms with parallel state computation | author:Sheldon Andrews  Marek Teichmann  Paul G. Kry
-i3d2014-18 | Sound Localization and Multi-Modal Steering for Autonomous Virtual Agents | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-18 Sound Localization and Multi-Modal Steering for Autonomous Virtual Agents | author:Yu Wang  Mubbasir Kapadia   Pengfei Huang   Ladislav Kavan   Norman Badler
-i3d2014-19 | Real-Time Low-Frequency Signal Modulated Texture Compression using Intensity Dilation | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=i3d2014-19 Real-Time Low-Frequency Signal Modulated Texture Compression using Intensity Dilation | author:Pavel Krajcevski   Dinesh Manocha
+i3d2014-1 | Efficient Virtual Shadow Maps for Many Lights |  | author:Ola Olsson ,  Erik Sintorn ,  Viktor Kampe ,  Markus Billeter ,  Ulf Assarsson
+i3d2014-2 | k+-buffer: Fragment Synchronized k-buffer |  | author:Andreas A. Vasilakis ,  Ioannis Fudos
+i3d2014-3 | Splatting Lines: An Efficient Method for Illustrating 3D Surfaces and Volumes |  | author:Long Zhang,  Qian Sun ,  Ying He
+i3d2014-4 | Prefiltered Single-Scattering |  | author:Oliver Klehm ,  Hans-Peter Seidel ,  Elmar Eisemann
+i3d2014-5 | Multi-Layer Alpha Blending |  | author:Marco Salvi,  Karthik Vaidyanathan
+i3d2014-6 | Adaptive Depth Bias for Shadow Maps |  | author:Hang Dou ,  Yajie Yan ,  Ethan Kerzner ,  Zeng Dai ,  Chris Wyman
+i3d2014-7 | Dynamic Radial View Based Culling for Continuous Self-Collision Detection |  | author:Sai-Keung Wong ,  Wen-Chieh Lin ,  Yu-Shuen Wang , Chun-Hung Hung,  Yi-Jheng Huang
+i3d2014-8 | Deep Screen Space |  | author:Oliver Nalbach ,  Tobias Ritschel ,  Hans-Peter Seidel
+i3d2014-9 | Sub-Pixel Shadow Mapping |  | author:Pascal Lecocq ,  Jean-Eudes Marvie ,  Gael Sourimant ,  Pascal Gautron
+i3d2014-10 | A GPU accelerated algorithm for 3D Delaunay triangulation |  | author:Thanh-Tung Cao,  Ashwin Nanjappa , Mingcen Gao,  Tiow-Seng Tan
+i3d2014-11 | Objective Image Quality Assessment of Texture Compression |  | author:Wesley Griffin ,  Marc Olano
+i3d2014-12 | Fast Rotation Search for Real-Time Interactive Point Cloud Registration |  | author:Tat-Jun Chin , Alvaro Parra Bustos,  Michael Brown ,  David Suter
+i3d2014-13 | Fracture Animation Based on High-Dimensional Voronoi Diagrams |  | author:Sara Schvartzman ,  Miguel Otaduy
+i3d2014-14 | Stochastic Activity Authoring with Direct User Control |  | author:Aline Normoyle ,  Maxim Likhachev ,  Alla Safonova
+i3d2014-15 | A Hybrid Image-CAD Based System for Modeling Realistic Hairstyles |  | author:Xuan Yu ,  Zhan Yu , Xiaogang Chen,  Jingyi Yu
+i3d2014-16 | Per-Triangle Shadow Volumes Using a View-Sample Cluster Hierarchy |  | author:Erik Sintorn ,  Viktor Kampe ,  Ola Olsson ,  Ulf Assarsson
+i3d2014-17 | FORKS: Interactive compliant mechanisms with parallel state computation |  | author:Sheldon Andrews , Marek Teichmann,  Paul G. Kry
+i3d2014-18 | Sound Localization and Multi-Modal Steering for Autonomous Virtual Agents |  | author:Yu Wang,  Mubbasir Kapadia ,  Pengfei Huang ,  Ladislav Kavan ,  Norman Badler
+i3d2014-19 | Real-Time Low-Frequency Signal Modulated Texture Compression using Intensity Dilation |  | author:Pavel Krajcevski ,  Dinesh Manocha

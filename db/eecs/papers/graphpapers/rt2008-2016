@@ -1,30 +1,30 @@
-rt2008-1 | Creating Coherence: Ray Tracing, Spatial Search, and Irregular Data Structures | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-1 Creating Coherence: Ray Tracing, Spatial Search, and Irregular Data Structures | author:Michael McCool
-rt2008-2 | Ray Tracing: Strengths and Opportunities | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-2 Ray Tracing: Strengths and Opportunities | author:Eric Haines
-rt2008-3 | Ray-specialized Acceleration Structures for Ray Tracing | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-3 Ray-specialized Acceleration Structures for Ray Tracing | author:Warren Hunt   William Mark
-rt2008-4 | Adaptive Acceleration Structures in Perspective Space | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-4 Adaptive Acceleration Structures in Perspective Space | author:Warren Hunt   William Mark
-rt2008-5 | Raytracing Prefiltered Occlusion for Aggregate Geometry | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-5 Raytracing Prefiltered Occlusion for Aggregate Geometry | author:Dylan Lacewell  Brent Burley  Solomon Boulos   Pete Shirley
-rt2008-6 | Row Tracing using Hierarchical Occlusion Maps | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-6 Row Tracing using Hierarchical Occlusion Maps | author:Ravi Kammaje   Benjamin Mora
-rt2008-7 | Improving kd-tree Quality at a Reasonable Construction Cost | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-7 Improving kd-tree Quality at a Reasonable Construction Cost | author:Alexei Soupikov  Maxim Shevtsov  Alexander Kapustin
-rt2008-8 | Tree Rotations for Improving Bounding Volume Hierarchies | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-8 Tree Rotations for Improving Bounding Volume Hierarchies | author:Andrew Kensler
-rt2008-9 | Corrections to the Surface Area Metric with Respect to Mail-Boxing | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-9 Corrections to the Surface Area Metric with Respect to Mail-Boxing | author:Warren Hunt
-rt2008-10 | Fast Agglomerative Clustering for Rendering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-10 Fast Agglomerative Clustering for Rendering | author:Bruce Walter   Kavita Bala  Milind Kulkarni  Keshav Pingali
-rt2008-11 | Multi Bounding Volume Hierarchies | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-11 Multi Bounding Volume Hierarchies | author:Manfred Ernst   Gunther Greiner
-rt2008-12 | Large Ray Packets for Real-time Whitted Ray Tracing | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-12 Large Ray Packets for Real-time Whitted Ray Tracing | author:Ryan Overbeck   Ravi Ramamoorthi   William R. Mark
-rt2008-13 | Getting Rid of Packets -- SIMD Single-Ray Traversal using Multi-Branching BVHs | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-13 Getting Rid of Packets -- SIMD Single-Ray Traversal using Multi-Branching BVHs | author:Ingo Wald   Carsten Benthin   Solomon Boulos
-rt2008-14 | Coherent Ray Tracing via Stream Filtering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-14 Coherent Ray Tracing via Stream Filtering | author:Christiaan P. Gribble  Karthik Ramani
-rt2008-15 | Interactive Volumetric Shadows in Participating Media with Single-Scattering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-15 Interactive Volumetric Shadows in Participating Media with Single-Scattering | author:Chris Wyman   Shaun Ramsey
-rt2008-16 | Simulation of Fluorescent Concentrators | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-16 Simulation of Fluorescent Concentrators | author:Marion Bendig  Johannes Hanika   Holger Dammertz  Jan Christoph Goldschmidt Marius Peters  Michael Weber
-rt2008-17 | A Lighting Model for Fast Rendering of Forest Ecosystems | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-17 A Lighting Model for Fast Rendering of Forest Ecosystems | author:Robert Geist  Jay Steele
-rt2008-18 | Towards Interactive Global Illumination Effects via Sequential Monte Carlo Adaptation | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-18 Towards Interactive Global Illumination Effects via Sequential Monte Carlo Adaptation | author:Vincent Pegoraro   Carson Brownlee   Pete Shirley   Steven G. Parker
-rt2008-19 | RTfact: Generic Concepts for Flexible and High Performance Ray Tracing | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-19 RTfact: Generic Concepts for Flexible and High Performance Ray Tracing | author:Iliyan Georgiev   Philipp Slusallek
-rt2008-20 | Efficient Clustered BVH Update Algorithm for Highly-Dynamic Models | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-20 Efficient Clustered BVH Update Algorithm for Highly-Dynamic Models | author:Kirill Garanzha
-rt2008-21 | Adaptive Ray Packet Reordering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-21 Adaptive Ray Packet Reordering | author:Solomon Boulos   Ingo Wald   Carsten Benthin
-rt2008-22 | Interactive Particle Tracing in Dynamic Scenes consisting of NURBS Surfaces | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-22 Interactive Particle Tracing in Dynamic Scenes consisting of NURBS Surfaces | author:Jakob Barz   Oliver Abert   Stefan Muller
-rt2008-23 | SIMD Ray Tracing for Large Deformable Tetrahedral Meshes | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-23 SIMD Ray Tracing for Large Deformable Tetrahedral Meshes | author:Matthias Groß  Hans Hagen  Franz-Josef Pfreundt
-rt2008-24 | Edge Volume Heuristic - Robust Triangle Subdivision for Improved BVH Performance | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-24 Edge Volume Heuristic - Robust Triangle Subdivision for Improved BVH Performance | author:Holger Dammertz   Alexander Keller
-rt2008-25 | Ray Tracing with the BSP Tree | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-25 Ray Tracing with the BSP Tree | author:Thiago Ize   Ingo Wald   Steven G. Parker
-rt2008-26 | Accelerated Building and Ray Tracing of Restricted BSP Trees | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-26 Accelerated Building and Ray Tracing of Restricted BSP Trees | author:Brian Budge  Daniel Coming  Derek Norpchen  Kenneth Joy
-rt2008-27 | Accelerating Ray Tracing using Constrained Tetrahedralizations | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-27 Accelerating Ray Tracing using Constrained Tetrahedralizations | author:Ares Lagae   Philip Dutré
-rt2008-28 | Run-Time Code Generation for Materials | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-28 Run-Time Code Generation for Materials | author:Stephan Reiter
-rt2008-29 | kd-Tree Traversal Techniques | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-29 kd-Tree Traversal Techniques | author:John A. Tsakok   William Bishop   Andrew Kennings
-rt2008-30 | Ray Tracing NPR-Style Feature Lines | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=rt2008-30 Ray Tracing NPR-Style Feature Lines | author:A.N.M. Imroz Choudhury   Steven G. Parker
+rt2008-1 | Creating Coherence: Ray Tracing, Spatial Search, and Irregular Data Structures |  | author:Michael McCool
+rt2008-2 | Ray Tracing: Strengths and Opportunities |  | author:Eric Haines
+rt2008-3 | Ray-specialized Acceleration Structures for Ray Tracing |  | author:Warren Hunt ,  William Mark
+rt2008-4 | Adaptive Acceleration Structures in Perspective Space |  | author:Warren Hunt ,  William Mark
+rt2008-5 | Raytracing Prefiltered Occlusion for Aggregate Geometry |  | author:Dylan Lacewell , Brent Burley,  Solomon Boulos ,  Pete Shirley
+rt2008-6 | Row Tracing using Hierarchical Occlusion Maps |  | author:Ravi Kammaje ,  Benjamin Mora
+rt2008-7 | Improving kd-tree Quality at a Reasonable Construction Cost |  | author:Alexei Soupikov,  Maxim Shevtsov,  Alexander Kapustin
+rt2008-8 | Tree Rotations for Improving Bounding Volume Hierarchies |  | author:Andrew Kensler
+rt2008-9 | Corrections to the Surface Area Metric with Respect to Mail-Boxing |  | author:Warren Hunt
+rt2008-10 | Fast Agglomerative Clustering for Rendering |  | author:Bruce Walter ,  Kavita Bala , Milind Kulkarni,  Keshav Pingali
+rt2008-11 | Multi Bounding Volume Hierarchies |  | author:Manfred Ernst ,  Gunther Greiner
+rt2008-12 | Large Ray Packets for Real-time Whitted Ray Tracing |  | author:Ryan Overbeck ,  Ravi Ramamoorthi ,  William R. Mark
+rt2008-13 | Getting Rid of Packets -- SIMD Single-Ray Traversal using Multi-Branching BVHs |  | author:Ingo Wald ,  Carsten Benthin ,  Solomon Boulos
+rt2008-14 | Coherent Ray Tracing via Stream Filtering |  | author:Christiaan P. Gribble , Karthik Ramani
+rt2008-15 | Interactive Volumetric Shadows in Participating Media with Single-Scattering |  | author:Chris Wyman ,  Shaun Ramsey
+rt2008-16 | Simulation of Fluorescent Concentrators |  | author:Marion Bendig,  Johannes Hanika ,  Holger Dammertz , Jan Christoph Goldschmidt, Marius Peters,  Michael Weber
+rt2008-17 | A Lighting Model for Fast Rendering of Forest Ecosystems |  | author:Robert Geist , Jay Steele
+rt2008-18 | Towards Interactive Global Illumination Effects via Sequential Monte Carlo Adaptation |  | author:Vincent Pegoraro ,  Carson Brownlee ,  Pete Shirley ,  Steven G. Parker
+rt2008-19 | RTfact: Generic Concepts for Flexible and High Performance Ray Tracing |  | author:Iliyan Georgiev ,  Philipp Slusallek
+rt2008-20 | Efficient Clustered BVH Update Algorithm for Highly-Dynamic Models |  | author:Kirill Garanzha
+rt2008-21 | Adaptive Ray Packet Reordering |  | author:Solomon Boulos ,  Ingo Wald ,  Carsten Benthin
+rt2008-22 | Interactive Particle Tracing in Dynamic Scenes consisting of NURBS Surfaces |  | author:Jakob Barz ,  Oliver Abert ,  Stefan Muller
+rt2008-23 | SIMD Ray Tracing for Large Deformable Tetrahedral Meshes |  | author:Matthias Groß,  Hans Hagen , Franz-Josef Pfreundt
+rt2008-24 | Edge Volume Heuristic - Robust Triangle Subdivision for Improved BVH Performance |  | author:Holger Dammertz ,  Alexander Keller
+rt2008-25 | Ray Tracing with the BSP Tree |  | author:Thiago Ize ,  Ingo Wald ,  Steven G. Parker
+rt2008-26 | Accelerated Building and Ray Tracing of Restricted BSP Trees |  | author:Brian Budge , Daniel Coming,  Derek Norpchen,  Kenneth Joy
+rt2008-27 | Accelerating Ray Tracing using Constrained Tetrahedralizations |  | author:Ares Lagae ,  Philip Dutré
+rt2008-28 | Run-Time Code Generation for Materials |  | author:Stephan Reiter
+rt2008-29 | kd-Tree Traversal Techniques |  | author:John A. Tsakok ,  William Bishop ,  Andrew Kennings
+rt2008-30 | Ray Tracing NPR-Style Feature Lines |  | author:A.N.M. Imroz Choudhury ,  Steven G. Parker

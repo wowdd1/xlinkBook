@@ -1,0 +1,17 @@
+hpg2016-1 | Exploring and Expanding the Continuum of OIT Algorithms |  | author:Chris Wyman
+hpg2016-2 | SVGPU: Real Time 3D Rendering to Vector Graphics Formats |  | author:Apollo Ellis, Warren Hunt,  John Hart
+hpg2016-3 | Masked Software Occlusion Culling |  | author:Jon Hasselgren ,  Magnus Andersson ,  Tomas Akenine-Moller
+hpg2016-4 | Watertight Ray Traversal with Reduced Precision and Bounding Plane Reuse |  | author:Karthik Vaidyanathan,  Tomas Akenine-Moller ,  Marco Salvi
+hpg2016-5 | Efficient Stackless Hierarchy Traversal on GPUs with Backtracking in Constant Time |  | author:Nikolaus Binder ,  Alexander Keller
+hpg2016-6 | Bandwidth-Efficient BVH Layout for Incremental Hardware Traversal |  | author:Gabor Liktor , Karthik Vaidyanathan
+hpg2016-7 | DIRT: Deferred Image-based Ray Tracing |  | author:Konstantinos Vardis ,  Andreas A. Vasilakis ,  Georgios Papaioannou
+hpg2016-8 | Photon Splatting Using a View-Sample Cluster Hierarchy |  | author:Pierre Moreau ,  Erik Sintorn ,  Viktor Kampe ,  Ulf Assarsson ,  Michael Doggett
+hpg2016-9 | Deep G-Buffers for Stable Global Illumination Approximation |  | author:Michael Mara,  Morgan McGuire ,  Derek Nowrouzezahrai ,  David Luebke
+hpg2016-10 | Lightcuts Interpolation |  | author:Hauke Rehfeld ,  Carsten Dachsbacher
+hpg2016-11 | GVDB: Raytracing Sparse Voxel Database Structures on the GPU |  | author:Rama Hoetzlein
+hpg2016-12 | Local Shading Coherence Extraction for SIMD-Efficient Path Tracing on CPUs |  | author:Attila T. Afra , Carsten Benthin,  Ingo Wald ,  Jacob Munkberg
+hpg2016-13 | Adaptive Sampling for On-The-Fly Ray Casting of Particle-based Fluids |  | author:Hendrik Hochstetter ,  Jens Orthmann ,  Andreas Kolb
+hpg2016-14 | Infinite Resolution Textures |  | author:Alexander Reshetov ,  David Luebke
+hpg2016-15 | Filtering Distributions of Normals for Shading Antialiasing |  | author:Anton Kaplanyan , Stephen Hill,  Anjul Patney ,  Aaron Lefohn
+hpg2016-16 | Comparison of Projection Methods for Rendering Virtual Reality |  | author:Robert Toth,  Tomas Akenine-Moller ,  Jim Nilsson
+hpg2016-17 | A Fast, Massively Parallel Solver for Large, Irregular Pairwise Markov Random Fields |  | author:Daniel Thuerck,  Michael Waechter ,  Sven Widmer , Max von Buelow, Patrick Seemann, Marc E. Pfetsch,  Michael Goesele

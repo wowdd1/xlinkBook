@@ -1,0 +1,58 @@
+siga2016-1 | Learning-Based View Synthesis for Light Field Cameras |  | author:Nima Khademi Kalantari, Ting-Chun Wang, Ravi Ramamoorthi
+siga2016-2 | SMASH: Physics-guided Reconstruction of Collisions from Videos |  | author:Aron Monszpart, Nils Thuerey ,, Niloy Mitra
+siga2016-3 | Burst photography for high dynamic range and low-light imaging on mobile cameras |  | author:Samuel W. Hasinoff ,  Dillon Sharlet,  Ryan Geiss ,  Andrew Adams ,  Jonathan T. Barron ,  Florian Kainz,  Jiawen Chen , Marc Levoy
+siga2016-4 | High-Fidelity Facial and Speech Animation for VR HMDs |  | author:Kyle Olszewski, Joseph J. Lim, Shunsuke Saito , Hao Li
+siga2016-5 | Temporal Gradient-Domain Path Tracing |  | author:Marco Manzi, Markus Kettunen, Fredo Durand, Matthias Zwicker, Jaakko Lehtinen
+siga2016-6 | Bilateral Guided Upsampling |  | author:Jiawen Chen , Andrew Adams, Neal Wadhwa, Samuel W. Hasinoff ,
+siga2016-7 | Robust Background Identification for Dynamic Video Editing |  | author:Fang-Lue Zhang , Xian Wu, Jue Wang, Hao-Tian Zhang, Shi-Min Hu
+siga2016-8 | Regional Foremost Matching for Internet Images |  | author:Xiaoyong Shen ,  Xin Tao,  Chao Zhou,  Hongyun Gao, Jiaya Jia
+siga2016-9 | Simultaneous Acquisition of Microscale Reflectance and Normals |  | author:Giljoo Nam, Joo Ho Lee, Diego Gutierrez, Hongzhi Wu, Min H. Kim
+siga2016-10 | Action-Driven 3D Indoor Scene Evolution |  | author:Rui Ma , Honghua Li , Changqing Zou, Zicheng Liao, Xin Tong, Hao Zhang
+siga2016-11 | Unsupervised Texture Transfer from Images to Model Collections |  | author:Tuanfeng Y. Wang , Hao Su, Qixing Huang, Jingwei Huang , Leonidas Guibas, Niloy Mitra
+siga2016-12 | Mesh Denoising via Cascaded Normal Regression |  | author:Peng-Shuai Wang, Yang Liu , Xin Tong
+siga2016-13 | Crumpling Sound Synthesis |  | author:Gabriel Cirio, Dingzeyu Li, Miguel Otaduy, Eitan Grinspun , Changxi Zheng
+siga2016-14 | Reconstructing Personalized Anatomical Models for Physics-based Body Animation |  | author:Petr Kadlecek, Alexandru-Eugen Ichim, Tiantian Liu, Jaroslav Krivanek, Ladislav Kavan
+siga2016-15 | Robust Light Transport Simulation via Metropolized Bidirectional Estimators |  | author:Martin Sik, Hisanari Otsu , Toshiya Hachisuka, Jaroslav Krivanek
+siga2016-16 | Relationship Templates for Creating Scene Variations |  | author:Xi Zhao,, Ruizhen Hu, Paul Guerrero , Niloy Mitra, Taku Komura
+siga2016-17 | Interchangeable Components for Hands-On Assembly Based Modelling |  | author:Noah Duncan, Lap-Fai, Sai-Kit Yeung
+siga2016-18 | Adaptive Matrix Column Sampling and Completion for Rendering Participating Media |  | author:Yuchi Huo,  Rui Wang ,  Tianlei Hu,  Wei Hua , Hujun Bao
+siga2016-19 | Block Assembly for Global Registration of Building Scans |  | author:Feilong Yan ,  Liangliang Nan , Peter Wonka
+siga2016-20 | VizGen: Accelerating Visual Computing Prototypes in Dynamic Languages |  | author:Yuting Yang,  Sam Prestwood, Connelly Barnes
+siga2016-21 | Sphere Meshes for Real-Time Hand Modeling and Tracking |  | author:Anastasia Tkach , Mark Pauly, Andrea Tagliasacchi
+siga2016-22 | Towards Foveated Rendering for Gaze-Tracked Virtual Reality |  | author:Anjul Patney ,  Marco Salvi ,  Joohwan Kim ,  Anton Kaplanyan ,  Chris Wyman ,  Nir Benty ,  David Luebke , Aaron Lefohn
+siga2016-23 | An Intuitive Control Space for Material Appearance |  | author:Ana Serrano , Diego Gutierrez, Karol Myszkowski , Hans-Peter Seidel, Belen Masia
+siga2016-24 | Birefractive Stereo Imaging for Single-Shot Depth Acquisition |  | author:Seung-Hwan Baek, Diego Gutierrez, Min H. Kim
+siga2016-25 | Downsampling Scattering Parameters for Rendering Anisotropic Media |  | author:Shuang Zhao *, Lifan Wu *, Fredo Durand, Ravi Ramamoorthi
+siga2016-26 | Dispersion Kernels for Water Wave Simulation |  | author:Jose-Angel Canabal Delgado , David Miraut, Nils Thuerey ,, Theodore Kim, Javier Portilla, Miguel Otaduy
+siga2016-27 | 3D Attention-Driven Depth Acquisition for Object Identification |  | author:Kai Xu, Yifei Shi, Lintao Zheng, Junyu Zhang, Min Liu, Hui Huang, Hao Su, Daniel Cohen-Or, Baoquan Chen
+siga2016-28 | Centroidal Power Diagrams with Capacity Constraints - Computation, Applications and Extension |  | author:Zhonggui Chen, , , 
+siga2016-29 | Interactive Mechanism Modeling from Multi-view Images |  | author:Mingyuan Li, Mingliang Xu,, Weiwei Xu, Zhigang Deng, Yin Yang, Kun Zhou
+siga2016-30 | Interactive Sound Propagation with Bidirectional Path Tracing |  | author:Chunxiao Cao, Zhong Ren, Carl Schissler, Dinesh Manocha, Kun Zhou
+siga2016-31 | Efficient GPU Path Rendering Using Scanline Rasterization |  | author:Rui Li,  Qiming Hou , Kun Zhou
+siga2016-32 | Dynamic Furniture Modeling Through Assembly Instructions |  | author:Tianjia Shao , Dongping Li, Yuliang Rong, Changxi Zheng, Kun Zhou
+siga2016-33 | A Scalable Active Framework for Region Annotation in 3D Shape Collections |  | author:Li Yi, Vladimir G. Kim, Duygu Ceylan, I-Chao Shen, Mengyan Li, Hao Su , Cewu Lu, Qixing Huang, Alla Sheffer, Leonidas Guibas
+siga2016-34 | Functionality Preserving Shape Style Transfer |  | author:Zhaoliang Lun , Evangelos, Alla Sheffer
+siga2016-35 | Texture Space Caching and Reconstruction for Ray Tracing |  | author:Jacob Munkberg ,  Jon Hasselgren ,  Petrik Clarberg ,  Magnus Andersson , Tomas Akenine-Moller
+siga2016-36 | Structure-oriented Networks of Shape Collections |  | author:Noa Fish, Oliver van Kaick, Amit Bermano, Daniel Cohen-Or
+siga2016-37 | Interactively Controlled Quad Remeshing of High Resolution 3D Models |  | author:Hans-Christian Ebke ,  Patrick Schmidt,  Marcel Campen , Leif Kobbelt
+siga2016-38 | FrameFab: Robotic Fabrication of Frame Shapes |  | author:Yijiang Huang,  Juyong Zhang ,  Xin Hu,  Guoxian Song,  Zhongyuan Liu,  Lei Yu, Ligang Liu
+siga2016-39 | Hyperbolic Orbifold Tutte Embeddings |  | author:Noam Aigerman , Yaron Lipman
+siga2016-40 | Descent Methods for Elastic Body Simulation on the GPU |  | author:Huamin Wang, Yin Yang
+siga2016-41 | Computing Inversion-Free Mappings by Simplex Assembly |  | author:Xiaoming Fu, Yang Liu
+siga2016-42 | Gesture3D: Posing 3D Characters via Gesture Drawings |  | author:Mikhail Bessmeltsev ,  Nicholas Vining , Alla Sheffer
+siga2016-43 | Stochastic Structural Analysis for Context-Aware Design and Fabrication |  | author:Timothy Langlois, Ariel Shamir, Daniel Dror, Wojciech Matusik, David I.W. Levin
+siga2016-44 | Rapid, Detail-Preserving Image Downscaling |  | author:Nicolas Weber, Michael Waechter , Sandra C. Amend, Stefan Guthe, Michael Goesele
+siga2016-45 | Scalable Inside-Out Image-Based Rendering |  | author:Peter Hedman , Tobias Ritschel, George Drettakis, Gabriel Brostow
+siga2016-46 | gTangle: a Grammar for the Procedural Generation of Tangle Patterns |  | author:Christian Santoni, Fabio Pellacini
+siga2016-47 | Printone: Interactive Resonance Simulation for Free-form Print-wind Instrument Design |  | author:Nobuyuki Umetani, Athina Panotopoulou, Ryan Schmidt, Emily Whiting
+siga2016-48 | Vivace: a Practical Gauss-Seidel Method for Stable Soft Body Dynamics |  | author:Marco Fratarcangeli, Valentina Tibaldo, Fabio Pellacini
+siga2016-49 | Low-Discrepancy Blue Noise Sampling |  | author:Abdalla G. M. Ahmed, Helene Perrier , David Coeurjolly , Victor Ostromoukhov, Jianwei Guo, Dongming Yan, Hui Huang, Oliver Deussen
+siga2016-50 | Emptying, Refurnishing, and Relighting Indoor |  | author:Edward Zhang, Michael F. Cohen, Brian Curless
+siga2016-51 | Motion Parallax in Stereo 3D: Model and Applications |  | author:Petr Kellnhofer, Piotr Didyk, Tobias Ritschel, Belen Masia, Karol Myszkowski , Hans-Peter Seidel
+siga2016-52 | High-Resolution Interaction with Corotational Coarsening Models |  | author:Rosell Torres,  Alejandro Rodriguez,  Jose Miguel Espadero , Miguel A. Otaduy
+siga2016-53 | EgoCap: Egocentric Marker-less Motion Capture with Two Fisheye Cameras |  | author:Helge Rhodin, Christian Richardt, Dan Casas , Eldar Insafutdinov , Mohammad Shafiei, Hans-Peter Seidel , Bernt Schiele , Christian Theobalt
+siga2016-54 | A scalable Schur-complement fluids solver for heterogeneous compute platforms |  | author:Haixiang Liu,  Nathan Mitchell ,  Mridul Aanjaneya , Eftychios Sifakis
+siga2016-55 | Computational Multicopter Design |  | author:Tao Du , Adriana Schulz , Bo Zhu, Bernd Bickel, Wojciech Matusik
+siga2016-56 | Deep Joint Demosaicking and Denoising |  | author:Michael Gharbi , Gaurav Chaurasia, Sylvain Paris, Fredo Durand
+siga2016-57 | Eulerian Solid-Fluid Coupling |  | author:Yun Teng, David I.W. Levin, Theodore Kim
+siga2016-58 | Fabrication of freeform objects by principal strips |  | author:Masahito Takezawa,  Takuma Imai ,  Kentaro Shida , Takashi Maekawa

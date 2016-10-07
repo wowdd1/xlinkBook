@@ -1,0 +1,27 @@
+sgp2016-1 | Scale-Invariant Directional Alignment of Surface Parametrizations |  | author:Marcel Campen , Moritz Ibing,  Hans-Christian Ebke ,  Denis Zorin ,  Leif Kobbelt
+sgp2016-2 | Polycube Simplification for Coarse Layouts of Surfaces and Volumes |  | author:Gianmarco Cherchi,  Marco Livesu ,  Riccardo Scateni
+sgp2016-3 | Incorporating Sharp Features in the General Solid Sweep Framework |  | author:Bharat Adsul ,  Jinesh Machchhar ,  Milind Sohoni
+sgp2016-4 | Iterative Closest Conformal Maps between Planar Domains |  | author:Aviv Segall,  Mirela Ben-Chen
+sgp2016-5 | Complex Transfinite Barycentric Mappings with Similarity Kernels |  | author:Renjie Chen ,  Craig Gotsman
+sgp2016-6 | Advection-Based Function Matching on Surfaces |  | author:Omri Azencot ,  Orestis Vantzos ,  Mirela Ben-Chen
+sgp2016-7 | Near-Isometric Level Set Tracking |  | author:Michael Tao,  Justin Solomon ,  Adrian Butscher
+sgp2016-8 | Mobility Fitting using 4D RANSAC |  | author:Hao Li , Guowei Wan,  Honghua Li ,  Andrei Sharf Kai Xu ,  Baoquan Chen
+sgp2016-9 | Relative scale estimation and 3D registration of multi-modal geometry using Growing Least Squares |  | author:Nicolas Mellado ,  Matteo Dellepiane ,  Roberto Scopigno
+sgp2016-10 | CustomCut: On-demand Extraction of Customized 3D Parts with 2D Sketches |  | author:Xuekun Guo,  Juncong Lin,  Kai Xu ,  Siddhartha Chaudhuri ,  Xiaogang Jin
+sgp2016-11 | Stenciling: Designing Structurally-Sound Surfaces with Decorative Patterns |  | author:Christian Schumacher ,  Bernhard Thomaszewski Markus Gross
+sgp2016-12 | Splines in the Space of Shells |  | author:Behrend Heeren ,  Martin Rumpf ,  Peter Schroder Max Wardetzky ,  Benedikt Wirth
+sgp2016-13 | Stable Region Correspondences Between Non-Isometric Shapes |  | author:Vignesh Ganapathi-Subramanian ,  Boris Thibert ,  Maks Ovsjanikov ,  Leonidas Guibas
+sgp2016-14 | Partial Functional Correspondence |  | author:Emanuele Rodola ,  Luca Cosmo ,  Michael M. Bronstein ,  Andrea Torsello ,  Daniel Cremers
+sgp2016-15 | Non-Rigid Puzzles |  | author:Or Litany,  Emanuele Rodola ,  Alex Bronstein ,  Michael M. Bronstein ,  Daniel Cremers
+sgp2016-16 | Curve Reconstruction with Many Fewer Samples |  | author:Stefan Ohrhallinger , Scott A. Mitchell,  Michael Wimmer
+sgp2016-17 | Crawl through Neighbors: A Simple Curve Reconstruction Algorithm |  | author:Amal Dev Parakkat,  Ramanathan Muthuganapathy
+sgp2016-18 | Construction of Topologically Correct and Manifold Isosurfaces |  | author:Roberto Grosso
+sgp2016-19 | Learning 3D Scene Synthesis from Annotated RGB-D Images |  | author:Zeinab Sadeghipour Kermani ,  Zicheng Liao ,  Ping Tan ,  Hao Zhang
+sgp2016-20 | Identifying Style of 3D Shapes using Deep Metric Learning |  | author:Isaak Lim ,  Anne Gehre ,  Leif Kobbelt
+sgp2016-21 | Symmetry and Orbit Detection via Lie-Algebra Voting |  | author:Zeyun Shi,  Pierre Alliez ,  Mathieu Desbrun ,  Hujun Bao ,  Jin Huang
+sgp2016-22 | Planar Minimization Diagrams via Subdivision with Applications to Anisotropic Voronoi Diagrams |  | author:Huck Bennet ,  Evanthia Papadopoulou ,  Chee Yap
+sgp2016-23 | Exploration of Empty Space among Spherical Obstacles via Additively Weighted Voronoi Diagram |  | author:Martin Manak
+sgp2016-24 | Disk Density Tuning of a Maximal Random Packing |  | author:Mohamed Ebeida,  Ahmad Rushdi,  Muhammad Awad,  Ahmed Mahmoud,  Dong-Ming Yan , Shawn English,  John Owens ,  Chandrajit Bajaj , Scott Mitchell
+sgp2016-25 | Mesh Statistics for Robust Curvature Estimation |  | author:Libor Vasa,  Petr Vanecek , Martin Prantl,  Vera Skorkovska ,  Petr Martinek ,  Ivana Kolingerova
+sgp2016-26 | Deep Learning for Robust Normal Estimation in Unstructured Point Clouds |  | author:Alexandre Boulch ,  Renaud Marlet
+sgp2016-27 | Towards Globally Optimal Normal Orientations for Large Point Clouds |  | author:Nico Schertler , Bogdan Savchynsky,  Stefan Gumhold

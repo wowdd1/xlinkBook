@@ -1,0 +1,29 @@
+egsr2016-1 | Single-Shot Layered Reflectance Separation using a Polarized Light Field Camera |  | author:Jaewon Kim , Shahram Izadi,  Abhijeet Ghosh
+egsr2016-2 | Perceptually Motivated BRDF Comparison using Single Image |  | author:Vlastimil Havran ,  Jiri Filip ,  Karol Myszkowski
+egsr2016-3 | A phenomenological model for throughfall rendering in real-time |  | author:Yoann Weber ,  Vincent Jolivet ,  Guillaume Gilet , Kazuki Nanko,  Djamchid Ghazanfarpour
+egsr2016-4 | 4D-rasterization for Fast Soft Shadow Rendering |  | author:Lili Wang, Qi Zhao, Cunlei Meng,  Voicu Popescu
+egsr2016-5 | Local Shape Editing at the Compositing Stage |  | author:Carlos Jorge Zubiaga ,  Gael Guennebaud ,  Romain Vergne ,  Pascal Barla
+egsr2016-6 | Solid Angle Sampling of Disk and Cylinder Lights |  | author:Manuel Gamito
+egsr2016-7 | Improving the Dwivedi sampling scheme |  | author:Johannes Meng ,  Johannes Hanika ,  Carsten Dachsbacher
+egsr2016-8 | Line Sampling for Direct Illumination |  | author:Niels Billen ,  Philip Dutré
+egsr2016-9 | Projective blue-noise sampling |  | author:Bernhard Reinert ,  Tobias Ritschel ,  Hans-Peter Seidel ,  Iliyan Georgiev
+egsr2016-10 | Parallel Multiple-Bounce Irradiance Caching |  | author:Nathaniel Jones ,  Christoph Reinhart
+egsr2016-11 | Product Importance Sampling for Transport Path Guiding |  | author:Sebastian Herholz,  Oskar Elek ,  Jiri Vorba ,  Hendrik Lensch ,  Jaroslav Krivanek
+egsr2016-12 | Forward Light Cuts: A Scalable Approach for Real-Time Global Illumination |  | author:Gilles Laurent, Gregoire de La Riviere,  Cyril Delalandre ,  Tamy Boubekeur
+egsr2016-13 | Sparse high-degree polynomials for wide-angle lenses |  | author:Emanuel Schrade ,  Johannes Hanika ,  Carsten Dachsbacher
+egsr2016-14 | Efficient Ray Tracing Through Aspheric Lenses and Imperfect Bokeh Synthesis |  | author:Hyuntae Joo, Soonhyeon Kwon, Sangmin Lee,  Elmar Eisemann ,  Sungkil Lee
+egsr2016-15 | Shape Depiction for Transparent Objects with Bucketed k-Buffer |  | author:David Murray
+egsr2016-16 | Fast Shadow Map Rendering for Many Lights Settings |  | author:Kai Selgrad , Jonas Muller, Christian Reintges,  Marc Stamminger
+egsr2016-17 | Nonlinearly Weighted First-Order Regression for Denoising Monte Carlo Renderings |  | author:Benedikt Bitterli ,  Fabrice Rousselle ,  Bochang Moon ,  Jose A. Iglesias-Guitian , Adler,  D.,  Kenny Mitchell ,  Wojciech Jarosz ,  Jan Novak
+egsr2016-18 | Fast Filtering of Reflection Probes |  | author:Josiah Manson ,  Peter-Pike Sloan
+egsr2016-19 | Adaptive Image-Space Sampling for Gaze-Contingent Real-time Rendering |  | author:Michael Stengel ,  Steve Grogorick ,  Martin Eisemann ,  Marcus Magnor
+egsr2016-20 | Predicting Visual Perception of Material Structure in Virtual Environments |  | author:Jiri Filip ,  Radomir Vavra ,  Michal Havlicek ,  Mikulas Krupicka
+egsr2016-21 | A Robust and Flexible Real-Time Sparkle Effect |  | author:Beibei Wang , How Bowles
+egsr2016-22 | Additional Progress Towards the Unification of Microfacet and Microflake Theories |  | author:Jonathan Dupuy ,  Eric Heitz ,  Eugene d'Eon
+egsr2016-23 | A General Micro-flake Model for Predicting the Appearance of Car Paint |  | author:Serkan Ergun , Sermet Onel, Aydin Ozturk
+egsr2016-24 | Constrained Convex Space Partition for Ray Tracing in Architectural Environments |  | author:Maxime Maria, Sebastien Horna,  Lilian Aveneau
+egsr2016-25 | Deep Partitioned Shadow Volumes using Stackless and Hybrid Traversals |  | author:Frederic Mora ,  Julien Gerhards ,  Lilian Aveneau ,  Djamchid Ghazanfarpour
+egsr2016-26 | Node Culling Multi-Hit BVH Traversal |  | author:Christiaan Gribble
+egsr2016-27 | Subdivision Next-Event Estimation for Path-Traced Subsurface Scattering |  | author:David Koerner ,  Jan Novak ,  Peter Kutz ,  Ralf Habel ,  Wojciech Jarosz
+egsr2016-28 | Bi-Directional Polarised Light Transport |  | author:Michal Mojzik, Tomas Skrivan ,  Alexander Wilkie ,  Jaroslav Krivanek
+egsr2016-29 | Point-Based Light Transport for Participating Media with Refractive Boundaries |  | author:Beibei Wang ,  Jean-Dominique Gascuel ,  Nicolas Holzschuch

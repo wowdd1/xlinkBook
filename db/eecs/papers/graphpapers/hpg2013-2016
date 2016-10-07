@@ -1,15 +1,15 @@
-hpg2013-1 | Theory and Analysis of Higher-Order Motion Blur Rasterization | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-1 Theory and Analysis of Higher-Order Motion Blur Rasterization | author:Carl Johan Gribel   Jacob Munkberg   Jon Hasselgren   Tomas Akenine-Moller
-hpg2013-2 | PixelPie: Maximal Poisson-disk Sampling with Rasterization | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-2 PixelPie: Maximal Poisson-disk Sampling with Rasterization | author:Cheuk Yiu Ip  M. Adil Yalci  David Luebke   Amitabh Varshney
-hpg2013-3 | Out-of-Core Construction of Sparse Voxel Octrees | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-3 Out-of-Core Construction of Sparse Voxel Octrees | author:Jeroen Baert   Ares Lagae   Philip Dutre
-hpg2013-4 | Screen-Space Far-Field Ambient Obscurance | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-4 Screen-Space Far-Field Ambient Obscurance | author:Ville Timonen
-hpg2013-5 | Imperfect Voxelized Shadow Volumes | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-5 Imperfect Voxelized Shadow Volumes | author:Chris Wyman   Zeng Dai
-hpg2013-6 | Lazy Incremental Computation for Efficient Scene Graph Rendering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-6 Lazy Incremental Computation for Efficient Scene Graph Rendering | author:Michael Woriste Harald Steinlechner  Stefan Maierhofer   Robert F. Tobler
-hpg2013-7 | Real-time Local Displacement using Dynamic GPU Memory Management | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-7 Real-time Local Displacement using Dynamic GPU Memory Management | author:Henry Schaefer  Benjamin Keinert  Marc Stamminger
-hpg2013-8 | Real-Time High-Resolution Sparse Voxelization with Application to Image Based Modeling | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-8 Real-Time High-Resolution Sparse Voxelization with Application to Image Based Modeling | author:Charles Loop   Cha Zhang   Zhengyou Zhang
-hpg2013-9 | Efficient BVH Construction via Approximate Agglomerative Clustering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-9 Efficient BVH Construction via Approximate Agglomerative Clustering | author:Yan Gu   Yong He   Kayvon Fatahalian   Guy Blelloch
-hpg2013-10 | Fast Parallel Construction of High-Quality Bounding Volume Hierarchies | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-10 Fast Parallel Construction of High-Quality Bounding Volume Hierarchies | author:Tero Karras  Timo Aila
-hpg2013-11 | On Quality Metrics of Bounding Volume Hierarchies | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-11 On Quality Metrics of Bounding Volume Hierarchies | author:Timo Aila  Tero Karras  Samuli Laine
-hpg2013-12 | SGRT: A Mobile GPU Architecture for Real-Time Ray Tracing | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-12 SGRT: A Mobile GPU Architecture for Real-Time Ray Tracing | author:Won-Jong Lee  Youngsam Shin  Jaedon Lee  Jin-Woo Kim Jae-Ho Nah  Seokyoon Jung  Shihwa Lee  Hyun-Sang Park  Tack-Don Han
-hpg2013-13 | An Energy and Bandwidth Efficient Ray Tracing Architecture | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-13 An Energy and Bandwidth Efficient Ray Tracing Architecture | author:Daniel Kopta   Konstantin Shkurko   Josef Spjut   Erik Brunvand   Al Davis
-hpg2013-14 | Efficient Divide-And-Conquer Ray Tracing using Ray Sampling | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-14 Efficient Divide-And-Conquer Ray Tracing using Ray Sampling | author:Kosuke Nabata  Kei Iwasaki   Yoshinori Dobashi   Tomoyuki Nishita
-hpg2013-15 | Megakernels Considered Harmful: Wavefront Path Tracing on GPUs | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=hpg2013-15 Megakernels Considered Harmful: Wavefront Path Tracing on GPUs | author:Timo Aila  Tero Karras  Samuli Laine
+hpg2013-1 | Theory and Analysis of Higher-Order Motion Blur Rasterization |  | author:Carl Johan Gribel ,  Jacob Munkberg ,  Jon Hasselgren ,  Tomas Akenine-Moller
+hpg2013-2 | PixelPie: Maximal Poisson-disk Sampling with Rasterization |  | author:Cheuk Yiu Ip , M. Adil Yalci,  David Luebke ,  Amitabh Varshney
+hpg2013-3 | Out-of-Core Construction of Sparse Voxel Octrees |  | author:Jeroen Baert ,  Ares Lagae ,  Philip Dutre
+hpg2013-4 | Screen-Space Far-Field Ambient Obscurance |  | author:Ville Timonen
+hpg2013-5 | Imperfect Voxelized Shadow Volumes |  | author:Chris Wyman ,  Zeng Dai
+hpg2013-6 | Lazy Incremental Computation for Efficient Scene Graph Rendering |  | author:Michael Woriste, Harald Steinlechner,  Stefan Maierhofer ,  Robert F. Tobler
+hpg2013-7 | Real-time Local Displacement using Dynamic GPU Memory Management |  | author:Henry Schaefer , Benjamin Keinert,  Marc Stamminger
+hpg2013-8 | Real-Time High-Resolution Sparse Voxelization with Application to Image Based Modeling |  | author:Charles Loop ,  Cha Zhang ,  Zhengyou Zhang
+hpg2013-9 | Efficient BVH Construction via Approximate Agglomerative Clustering |  | author:Yan Gu ,  Yong He ,  Kayvon Fatahalian ,  Guy Blelloch
+hpg2013-10 | Fast Parallel Construction of High-Quality Bounding Volume Hierarchies |  | author:Tero Karras,  Timo Aila
+hpg2013-11 | On Quality Metrics of Bounding Volume Hierarchies |  | author:Timo Aila , Tero Karras,  Samuli Laine
+hpg2013-12 | SGRT: A Mobile GPU Architecture for Real-Time Ray Tracing |  | author:Won-Jong Lee , Youngsam Shin,  Jaedon Lee,  Jin-Woo Kim, Jae-Ho Nah,  Seokyoon Jung,  Shihwa Lee,  Hyun-Sang Park,  Tack-Don Han
+hpg2013-13 | An Energy and Bandwidth Efficient Ray Tracing Architecture |  | author:Daniel Kopta ,  Konstantin Shkurko ,  Josef Spjut ,  Erik Brunvand ,  Al Davis
+hpg2013-14 | Efficient Divide-And-Conquer Ray Tracing using Ray Sampling |  | author:Kosuke Nabata,  Kei Iwasaki ,  Yoshinori Dobashi ,  Tomoyuki Nishita
+hpg2013-15 | Megakernels Considered Harmful: Wavefront Path Tracing on GPUs |  | author:Timo Aila , Tero Karras,  Samuli Laine

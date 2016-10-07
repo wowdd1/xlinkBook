@@ -1,0 +1,12 @@
+hpg2015-1 | Efficient Ray Tracing of Subdivision Surfaces using Tessellation Caching |  | author:Carsten Benthin ,  Sven Woop ,  Matthias Niessner ,  Kai Selgrad ,  Ingo Wald
+hpg2015-2 | Bounding Volume Hierarchy Optimization through Agglomerative Treelet Restructuring |  | author:Leonardo R. Domingues ,  Helio Pedrini
+hpg2015-3 | Reorder Buffer: An Energy-Efficient Multithreading Architecture for Hardware MIMD Ray Traversal |  | author:Won-Jong Lee , Youngsam Shin,  Seok Joong Hwang,  Seok Kang,  Jeong-Joon Yoo,  Soojung Ryu
+hpg2015-4 | Decoupled Coverage Anti-Aliasing |  | author:Yuxiang Wang,  Chris Wyman ,  Yong He ,  Pradeep Sen
+hpg2015-5 | Deferred Attribute Interpolation for Memory-Efficient Deferred Shading |  | author:Christoph Schied ,  Carsten Dachsbacher
+hpg2015-6 | An Incremental Rendering VM |  | author:Georg Haaser, Harald Steinlechner, Stefan Maierhofer,  Robert F. Tobler
+hpg2015-7 | Perception of Highlight Disparity at a Distance in Consumer Head-Mounted Displays |  | author:Robert Toth,  Jon Hasselgren ,  Tomas Akenine-Moller
+hpg2015-8 | An Adaptive Acceleration Structure for Screen-space Ray Tracing |  | author:Jan Kautz ,  Sven Widmer ,  Dawid Pajak , Andre Schulz, Kari Pulli,  Michael Goesele ,  David Luebke
+hpg2015-9 | Adaptively Layered Statistical Volumetric Obscurance |  | author:Quintijn Hendrickx,  Leonardo Scandolo , Martin Eisemann,  Elmar Eisemann
+hpg2015-10 | Compiling High Performance Recursive Filters |  | author:Gaurav Chaurasia ,  Jonathan Ragan-Kelley ,  Sylvain Paris ,  George Drettakis ,  Fredo Durand
+hpg2015-11 | Grid-Free Out-Of-Core Voxelization to Sparse Voxel Octrees on GPU |  | author:Martin Patzold,  Andreas Kolb
+hpg2015-12 | Morton Integrals for High Speed Geometry Simplification |  | author:Helene Legrand,  Tamy Boubekeur

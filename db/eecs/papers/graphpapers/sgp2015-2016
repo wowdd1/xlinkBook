@@ -1,0 +1,24 @@
+sgp2015-1 | Stable Topological Signatures for Points on 3D Shapes |  | author:Mathieu Carriere,  Steve Oudot ,  Maks Ovsjanikov
+sgp2015-2 | Learning Class-specific Descriptors for Deformable Shapes Using Localized Spectral Convolutional Networks |  | author:Davide Boscaini ,  Jonathan Masci ,  Simone Melzi ,  Michael Bronstein ,  Umberto Castellani ,  Pierre Vandergheynst
+sgp2015-3 | Analysis and Synthesis of 3D Shape Families via Deep-learned Generative Models of Surfaces |  | author:Haibin Huang ,  Evangelos Kalogerakis ,  Benjamin Marlin
+sgp2015-4 | Example Based Repetitive Structure Synthesis |  | author:Riccardo Roveri,  A. Cengiz Oztireli , Sebastian Martin,  Barbara Solenthaler ,  Markus Gross
+sgp2015-5 | Reforming Shapes for Material-aware Fabrication |  | author:Yong-Liang Yang , Jun Wang,  Niloy J. Mitra
+sgp2015-6 | Texture Mapping Real-World Objects with Hydrographics |  | author:Daniele Panozzo ,  Olga Diamanti ,  Sylvain Paris ,  Marco Tarini , Evgeni Sorkine,  Olga Sorkine-Hornung
+sgp2015-7 | Hierarchical Multiview Rigid Registration |  | author:Yizhi Tang ,  Jieqing Feng
+sgp2015-8 | Sparse Non-rigid Registration of 3D Shapes |  | author:Jingyu Yang , Ke Li, Kun Li,  Yu-Kun Lai
+sgp2015-9 | Robust Articulated-ICP for Real-Time Hand Tracking |  | author:Andrea Tagliasacchi , Matthias Schroder,  Anastasia Tkach ,  Sofien Bouaziz ,  Mario Botsch ,  Mark Pauly
+sgp2015-10 | Tight Relaxation of Quadratic Matching |  | author:Itay Kezurer , Shahar Z. Kovalsky,  Ronen Basri ,  Yaron Lipman
+sgp2015-11 | Continuous Matching via Vector Fields Flow |  | author:Etienne Corman,  Maks Ovsjanikov ,  Antonin Chambolle
+sgp2015-12 | LeSSS: Learned Shared Semantic Spaces for Relating Multi-Modal Representations of 3D Shapes |  | author:Robert Herzog, Daniel Mewes,  Michael Wand ,  Leonidas Guibas ,  Hans-Peter Seidel
+sgp2015-13 | Fast and Exact |  | author:Misha Kazhdan
+sgp2015-14 | Robust Treatment of Degenerate Elements in Interactive Corotational FEM Simulations |  | author:O. Civit-Flores,  Toni Susin
+sgp2015-15 | Quaternion Julia Set Shape Optimization |  | author:Theodore Kim
+sgp2015-16 | Dynamic SfM: Detecting Scene Changes from Image Pairs |  | author:Tuanfeng Y. Wang ,  Pushmeet Kohli ,  Niloy J. Mitra
+sgp2015-17 | An Image Degradation Model for Depth Augmented Image Editing |  | author:James W. Hennessey ,  Niloy J. Mitra
+sgp2015-18 | Unconditionally Stable Shock Filters for Image and Geometry Processing |  | author:F. Prada Nino,  Misha Kazhdan
+sgp2015-19 | Perfect Laplacians for Polygon Meshes |  | author:Philipp Herholz ,  Jan Eric Kyprianidis ,  Marc Alexa
+sgp2015-20 | A Projective Framework for Polyhedral Mesh modeling |  | author:Amir Vaxman
+sgp2015-21 | Perfect Matching Quad Layouts for Manifold Meshes |  | author:Faniry H. Razafindrazaka , Ulrich Reitebuch,  Konrad Polthier
+sgp2015-22 | Can bi-cubic surfaces be class A? |  | author:Kestitutis Karciauskas ,  Jor Peters
+sgp2015-23 | Homotopic Morphing of Planar Curves |  | author:Nadav Dym ,  Anna Shtengel ,  Yaron Lipman
+sgp2015-24 | A Homologically Persistent Skeleton of an Unstructured Point Cloud in any Metric Space |  | author:Vitaliy Kurlin
