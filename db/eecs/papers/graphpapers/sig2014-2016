@@ -1,173 +1,173 @@
-sig2014-1 | Meta-representations of Shape Families |  | author:Noa Fish , Melinos Averkiou, Oliver van Kaick, Olga Sorkine-Hornung, Daniel Cohen-Or, Niloy Mitra
-sig2014-2 | Organizing Heterogeneous Scene Collections through Contextual Focal Points |  | author:Kai Xu, Rui Ma, Hao Zhang, Chenyang Zhu, Ariel Shamir, Daniel Cohen-Or, Hui Huang
-sig2014-3 | Functional Map Networks for Analyzing and Browsing Large Shape Collections |  | author:Qixing Huang ,  Fan Wang , Leonidas Guibas
-sig2014-4 | Geometry and Context for Semantic Correspondences and Functionality Recognition in Man-Made 3D Shapes |  | author:Hamid Laga, Michela Mortara , Michela Spagnuolo
-sig2014-5 | Learning 3D Attributes of Images through Shape Collection |  | author:Su Hao , Qixing Huang ,, Niloy Mitra
-sig2014-6 | Parametric Wave Field Coding for Precomputed Sound Propagation |  | author:Nikunj Raghuvanshi , John Snyder
-sig2014-7 | High-Order Diffraction and Diffuse Reflections for Interactive Sound Propagation in Large Environments |  | author:Carl Schissler ,  Ravish Mehra , Dinesh Manocha
-sig2014-8 | Eigenmode Compression for Modal Sound Models |  | author:Timothy R. Langlois ,  Steven S. An , Kelvin K. Jin, Doug L. James
-sig2014-9 | Inverse-Foley Animation: Synchronizing rigid-body motions to sound |  | author:Timothy R. Langlois , Doug L. James
-sig2014-10 | Refractive Radiative Transfer Equation |  | author:Marco Ament , Christoph Bergmann, Daniel Weiskopf,  Stuttgart,  Germany )
-sig2014-11 | Continuous Projection for Fast L1 Reconstruction |  | author:Reinhold Preiner , Oliver Mattausch , Murat Arikan, Renato Pajarola, Michael Wimmer
-sig2014-12 | Flower Modeling via X-ray Computed Tomography |  | author:Takashi Ijiri , Shin Yoshizawa , Hideo Yokota, Takeo Igarashi
-sig2014-13 | k-d Darts: Sampling by k-Dimensional Flat Searches |  | author:Mohamed S. Ebeida, Anjul Patney, Scott A. Mitchell, Keith R. Dalbey, Andrew A. Davidson, John D. Owens
-sig2014-14 | Point Morphology |  | author:Stephane Calderon, Tamy Boubekeur
-sig2014-15 | Floating Scale Surface Reconstruction |  | author:Simon Fuhrmann , Michael Goesele
-sig2014-16 | Facial Performance Enhancement Using Dynamic Shape Space Analysis |  | author:Amit H. Bermano, Derek Bradley, Thabo Beeler , Fabio Zund, Derek Nowrouzezahrai, Ilya Baran, Olga Sorkine-Hornung, Markus Gross
-sig2014-17 | Controllable High-Fidelity Facial Performance Transfer |  | author:Feng Xu, Yilong Liu, Jinxiang Chai, Xin Tong
-sig2014-18 | Displaced Dynamic Expression Regression for Real-time Facial Tracking and Animation |  | author:Chen Cao ,  Qiming Hou , Kun Zhou
-sig2014-19 | Rigid Stabilization of Facial Expressions |  | author:Thabo Beeler , Derek Bradley
-sig2014-20 | Generalizing Locomotion Style to New Animals With Inverse Optimal Regression |  | author:Kevin Wampler, Zoran Popovic, Jovan Popovic
-sig2014-21 | Learning Bicycle Stunts |  | author:Jie Tan ,  Yuting Gu ,  Karen Liu , Greg Turk
-sig2014-22 | Data-driven control of flapping flight |  | author:Eunjung Ju , Jungdam Won , Jehee Lee, Byungkuk Choi, Junyong Noh, Min Gyu Choi
-sig2014-23 | Online Motion Synthesis Using Sequential Monte Carlo |  | author:Perttu Hamalainen ,Sebastian Eriksson,Esa Tanskanen, Ville Kyrki, Jaakko Lehtinen
-sig2014-24 | Breathing Life into Shape: Capturing, Modeling and Animating 3D Human Breathing |  | author:Aggeliki Tsoli ,  Naureen Mahmood , Michael J. Black
-sig2014-25 | Authoring and Animating Painterly Characters |  | author:Katie Bassett, Markus Gross
-sig2014-26 | Ink-and-Ray: Bas-Relief Meshes for Adding Global Illumination Effects to Hand-Drawn Characters |  | author:Daniel Sykora, Ladislav Kavan, Martin Cadik, Ondrej Jamriska, Alec Jacobson, Brian Whited,Maryann Simmons, Olga Sorkine-Hornung
-sig2014-27 | Computing Smooth Surface Contours with Accurate Topology |  | author:Pierre Benard, Aaron Hertzmann, Michael Kass
-sig2014-28 | Fast Multipole Representation of Diffusion Curves and Points |  | author:Timothy Sun *, Papoj Thamjaroenporn*, Changxi Zheng
-sig2014-29 | EZ-Sketching: Three-Level Optimization for Error-Tolerant Image Tracing |  | author:Qingkun Su, Wing Ho Andy Li, Jue Wang, Hongbo Fu
-sig2014-30 | Boosting Monte Carlo Rendering by Ray Histogram Fusion |  | author:Mauricio Delbracio, Pablo Muse, Antoni Buades, Julien Chauvier,Nicholas Phelps, Jean-Michel Morel
-sig2014-31 | Factored Axis-Aligned Filtering for Rendering Multiple Distribution Effects |  | author:Soham Mehta , Ravi Ramamoorthi, Fredo Durand
-sig2014-32 | A Constructive Theory of Sampling for Image Synthesis using Reproducing Kernel Bases |  | author:Christian Lessig, Mathieu Desbrun, Eugene Fiume
-sig2014-33 | Fast Tile-Based Adaptive Sampling with User-Specified Fourier Spectra |  | author:Florent Wachtel , Adrien Pilleboue, David Coeurjolly, Katherine Breeden, Gurprit Singh , Gael Cathelin, Fernando de Goes , Mathieu Desbrun, Victor Ostromoukhov
-sig2014-34 | A Local Frequency Analysis of Light Scattering and Absorption |  | author:Laurent Belcour, Kavita Bala, Cyril Soler
-sig2014-35 | A Reflectance Display |  | author:Daniel Glasner, Todd Zickler, Anat Levin
-sig2014-36 | Focus 3D: Compressive Accommodation Display |  | author:Andrew Maimone, Gordon Wetzstein Matthew Hirsch, Douglas Lanman, Henry Fuchs
-sig2014-37 | A Compressive Light Field Projection System |  | author:Matthew Hirsch * Gordon Wetzstein * Ramesh Raskar
-sig2014-38 | Eyeglasses-free Display: Towards Correcting Visual Aberrations with Computational Light Field Displays |  | author:Fu-Chung Huang, Gordon Wetzstein, Brian A. Barsky, Ramesh Raskar
-sig2014-39 | Cascaded Displays: Spatiotemporal Superresolution using Offset Pixel Layers |  | author:Felix Heide ,  Douglas Lanman ,  Dikpal Reddy ,  Jan Kautz ,  Kari Pulli , David Luebke
-sig2014-40 | Pteromys: Interactive Design and Optimization of Free-formed Free-flight Model Airplanes |  | author:Nobuyuki Umetani, Yuki Koyama, Ryan Schmidt, Takeo Igarashi
-sig2014-41 | Wire Mesh Design |  | author:Akash Garg, Andrew Sageman-Furnas, Bailin Deng, Yonghao Yue , Eitan Grinspun, Mark Pauly
-sig2014-42 | Design and Fabrication by Example |  | author:Adriana Schulz, Ariel Shamir
-sig2014-43 | Designing Inflatable Structures |  | author:Melina Skouras, Bernhard Thomaszewski , Peter Kaufmann, Akash Garg, Bernd Bickel, Eitan Grinspun, Markus Gross
-sig2014-44 | Computational Design of Linkage-Based Characters |  | author:Bernhard Thomaszewski , Stelian Coros, Eitan Grinspun, Vittorio Megaro, Markus Gross
-sig2014-45 | Parallel chen-han |  | author:Xiang Ying Shi-Qing Xin , Ying He
-sig2014-46 | Form-finding with polyhedral meshes made simple |  | author:Tang Chengcheng, Xiang Sun, Alexandra Gomes, Johannes Wallner, Helmut Pottmann
-sig2014-47 | Earth Mover's Distances on Discrete Surfaces |  | author:Justin Solomon ,  Raif Rustamov ,  Leonidas Guibas , Adrian Butscher
-sig2014-48 | Controlling Singular Values with Semidefinite Programming |  | author:Shahar Kovalsky,  Noam Aigerman ,  Ronen Basri , Yaron Lipman
-sig2014-49 | Lifted Bijections for Low Distortion Surface Mappings |  | author:Noam Aigerman ,  Roi Poranne , Yaron Lipman
-sig2014-50 | VideoSnapping: Interactive Synchronization of Multiple Videos |  | author:Oliver Wang ,Christopher Schroers,Henning Zimmer, Markus Gross, Olga Sorkine-Hornung
-sig2014-51 | First-person Hyper-lapse videos |  | author:Johannes Kopf ,  Michael F. Cohen , Richard Szeliski
-sig2014-52 | The Visual Microphone: Passive Recovery of Sound from Video |  | author:Myers Davis, Michael Rubinstein, Neal Wadhwa, Gautham Mysore, Fredo Durand , William Freeman
-sig2014-53 | Intrinsic Video and Applications |  | author:Genzhi Ye, Elena Garces, Yebin Liu , Qionghai Dai, Diego Gutierrez
-sig2014-54 | Automatic Editing of Footage from Multiple Social Cameras |  | author:Ido Arev*, Hyun-Soo Park *, Yaser Sheikh , Jessica K. Hodgins, Ariel Shamir
-sig2014-55 | Boxelization: Folding 3D Objects Into Boxes |  | author:Yahan Zhou, Shinjiro Sueda , Wojciech Matusik
-sig2014-56 | The Connect-The-Dots Family of Puzzles: Design and Automatic Generation |  | author:Frank Staals, Gerwin Klappe, Maarten Loffler , Marc van Kreveld ,Mira Kaiser, Tim van Kapel
-sig2014-57 | Self-Refining Games using Player Analytics |  | author:Matt Stanton , Ben Humberston , Brandon Kase, Kayvon Fatahalian , Adrien Treuille
-sig2014-58 | High-contrast Computational Caustic Design |  | author:Yuliy Schwartzburg , Romain Testuz,  Andrea Tagliasacchi , Mark Pauly
-sig2014-59 | Poisson-based Continuous Surface Generation for Goal-based Caustics |  | author:Yonghao Yue, Kei Iwasaki, Bing-Yu Chen, Yoshinori Dobashi, Tomoyuki Nishita
-sig2014-60 | Locally Injective Parametrization With Arbitrary Fixed Boundaries |  | author:Ofir Weber, Denis Zorin
-sig2014-61 | Provably Good Planar Mappings |  | author:Roi Poranne , Yaron Lipman
-sig2014-62 | Context-based Coherent Surface Completion |  | author:Gur Harary , Ayellet Tal, Eitan Grinspun
-sig2014-63 | Diffusion Pruning for Rapidly and Robustly Selecting Global Correspondences using Local Isometry |  | author:Gary K. L. Tam, Ralph Martin , Paul L. Rosin , Yu-Kun Lai
-sig2014-64 | Feature Matching With Bounded Distortion |  | author:Yaron Lipman ,Stav Yagev, Roi Poranne, David W. Jacobs, Ronen Basri ,
-sig2014-65 | DecoBrush: Drawing Structured Decorative Patterns by Example |  | author:Jingwan Lu ,Connie Wan, Connelly Barnes, Adam Finkelstein, Paul Asente , Radomir Mech
-sig2014-66 | A Similarity Measure for Illustration Style |  | author:Elena Garces, Aseem Agarwala, Diego Gutierrez, Aaron Hertzmann
-sig2014-67 | Exploratory Font Selection Using Crowdsourced Attributes |  | author:Peter O'Donovan , Janis Libeks, Aseem Agarwala, Aaron Hertzmann
-sig2014-68 | Learning a Manifold of Fonts |  | author:Neill Campbell , Jan Kautz
-sig2014-69 | Look Over Here: Attention-Directing Composition of Manga Elements |  | author:Ying Cao ,  Rynson W.H. Lau , Antoni B. Chan
-sig2014-70 | Learning to be a depth camera for close-range human capture and interaction |  | author:Sean Ryan Fanello, Cem Keskin , Shahram Izadi , Pushmeet Kohli , Jamie Shotton , Antonio Criminisi , David Kim ,David Sweeney, Sing Bing Kang
-sig2014-71 | Temporal Frequency Probing for 5D Analysis of Global Light Transport |  | author:Matthew O'Toole, Felix Heide , Lei Xiao, Matthias B. Hullin, Wolfgang Heidrich, Kiriakos N. Kutulakos
-sig2014-72 | Compressive Epsilon Photography for Post-Capture Control in Digital Imaging |  | author:Atsushi Ito, Salil Tambe , Kaushik Mitra, Aswin Sankaranarayan, Ashok Veeraraghavan
-sig2014-73 | Pinlight Displays: Wide Field of View Augmented-Reality Eyeglasses Using Defocused Point Light Sources |  | author:Andrew Maimone, Douglas Lanman, Kishore Rathinavel , Kurtis Keller, David Luebke, Henry Fuchs
-sig2014-74 | Pixie Dust: Graphics Generated by Levitated and Animated Objects in a Computational Acoustic-Potential Field |  | author:Yoichi Ochiai, Takayuki Hoshi, Jun Rekimoto
-sig2014-75 | Tangible and Modular Input Device for Character Articulation |  | author:Alec Jacobson, Daniele Panozzo ,Oliver Glauser,, Cedric Pradalier, Otmar Hilliges , Olga Sorkine-Hornung
-sig2014-76 | Real-Time Continuous Pose Recovery of Human Hands Using Convolutional Networks |  | author:Jonathan Tompson , Murphy Stein,  Yann LeCun , Ken Perlin
-sig2014-77 | Interactive Manipulation of Large-Scale Crowd Animation |  | author:Jongmin Kim, Yeongho Seol, Taesoo Kwon, Jehee Lee
-sig2014-78 | Robust and Accurate Skeletal Rigging from Mesh Sequences |  | author:Binh Huy Le , Zhigang Deng
-sig2014-79 | Interactive Generalized Penetration Depth Computation for Rigid and Articulate Models Using Object Norm |  | author:Tang Min, Young J. Kim
-sig2014-80 | Dynamic and Robust Local Clearance Triangulations |  | author:Marcelo Kallmann,  Merced )
-sig2014-81 | Edit Propagation using Geometric Relationship Functions |  | author:Paul Guerrero, Stefan Jeschke, Michael Wimmer, Peter Wonka
-sig2014-82 | Indexing 3D Scenes Using the Interaction Bisector Surface |  | author:Xi Zhao,  He Wang, Taku Komura
-sig2014-83 | Procedural design of exterior lighting for buildings with complex constraints |  | author:Michael Schwarz
-sig2014-84 | Computing layouts with deformable templates |  | author:Chi-han Peng, Yong-Liang Yang, Peter Wonka
-sig2014-85 | Bridging the Gap: Automated Steady Scaffoldings for 3D Printing |  | author:Jeremie Dumas, Jean Hergel, Sylvain Lefebvre
-sig2014-86 | Computational Light Routing: 3D Printed Fiber Optics for Sensing and Display |  | author:Thiago Pereira , Szymon Rusinkiewicz, Wojciech Matusik
-sig2014-87 | An Asymptotic Numerical Method for Inverse Elastic Shape Design |  | author:Xiang Chen, Changxi Zheng, Weiwei Xu, Kun Zhou
-sig2014-88 | Spin-It: Optimizing Moment of Inertia for Spinnable Objects |  | author:Moritz Bacher, Emily Whiting, Bernd Bickel, Olga Sorkine-Hornung
-sig2014-89 | Build-to-Last: Strength to Weight 3D Printed Objects |  | author:Lin Lu, Andrei Sharf, Haisen Zhao,Yuan Wei,Qingnan Fan,Xuelin Chen, Yann Savoye, Changhe Tu, Daniel Cohen-Or, Baoquan Chen
-sig2014-90 | Unifying points, beams, and paths in volumetric light transport simulation |  | author:Jaroslav Krivanek, Iliyan Georgiev, Toshiya Hachisuka, Petr Vevoda, Martin Sik, Derek Nowrouzezahrai, Wojciech Jarosz
-sig2014-91 | High-Order Similarity Relations in Radiative Transfer |  | author:Shuang Zhao, Ravi Ramamoorthi, Kavita Bala
-sig2014-92 | Multiplexed Metropolis Light Transport |  | author:Toshiya Hachisuka, Anton S. Kaplanyan , Carsten Dachsbacher
-sig2014-93 | On-line Learning of Parametric Mixture Models for Light Transport Simulation |  | author:Jiri Vorba , Ondrej Karlik , Martin Sik, Tobias Ritschel, Jaroslav Krivanek
-sig2014-94 | The Natural-Constraint Representation of the Path Space for Efficient Light Transport Simulation |  | author:Anton S. Kaplanyan ,  Johannes Hanika , Carsten Dachsbacher
-sig2014-95 | Subspace Clothing Simulation Using Adaptive Bases |  | author:Fabian Hahn, Bernhard Thomaszewski , Stelian Coros , Robert W. Sumner, Forrester Cole , Mark Meyer , Tony DeRose, Markus Gross
-sig2014-96 | Simulating articulated subspace self-contact |  | author:Yun Teng, Miguel A. Otaduy, Theodore Kim
-sig2014-97 | Sensitivity-optimized Rigging for Example-based Real-time Clothing Synthesis |  | author:Weiwei Xu, Nobuyuki Umetani, Qianwen Chao, Jie Mao, Xiaogang Jin, Xin Tong
-sig2014-98 | Space-Time Editing of Elastic Motion through Material Optimization and Reduction |  | author:Siwang Li , Jin Huang, Fernando de Goes, Xiaogang Jin Hujun Bao, Mathieu Desbrun
-sig2014-99 | Animating Deformable Objects using Sparse Spacetime Constraints |  | author:Christian Schulz, Christoph von Tycowicz, Hans-Peter Seidel , Klaus Hildebrandt
-sig2014-100 | Animation of Deformable Bodies with Quadratic Bezier Finite Elements |  | author:Adam Bargteil , Elaine Cohen
-sig2014-101 | Adaptive Tearing and Cracking of Thin Sheets |  | author:Tobias Pfaff , Rahul Narain , Juan Miguel de Joya , James O'Brien
-sig2014-102 | Codimensional Surface Tension Flow on Simplicial Complices |  | author:Bo Zhu , Edward Quigley,  Matthew Cong ,  Justin Solomon , Ron Fedkiw
-sig2014-103 | Multimaterial Mesh-Based Surface Tracking |  | author:Fang Da, Christopher Batty, Eitan Grinspun
-sig2014-104 | Physics-Inspired Adaptive Fracture Refinement |  | author:Zhili Chen ,  Miaojun Yao ,  Renguo Feng , Huamin Wang
-sig2014-105 | genBRDF: Discovering New Analytic BRDFs with Genetic Programming |  | author:Adam Brady , Jason Lawrence, Pieter Peers, Westley Weimer
-sig2014-106 | Discrete Stochastic Microfacet Models |  | author:Wenzel Jakob, Milos Hasan , Ling-Qi Yan, Jason Lawrence, Ravi Ramamoorthi, Steve Marschner
-sig2014-107 | Rendering Glints on High-Resolution Normal-Mapped Specular Surfaces |  | author:Ling-Qi Yan , Milos Hasan, Wenzel Jakob, Jason Lawrence, Steve Marschner, Ravi Ramamoorthi
-sig2014-108 | Reflectance Scanning: Estimating Shading Frame and BRDF with Generalized Linear Light Sources |  | author:Guojun Chen, Yue Dong, Jiawan Zhang, Xin Tong
-sig2014-109 | A Comprehensive Framework for Rendering Layered Materials |  | author:Wenzel Jakob, Eugene d'Eon, Otto Jakob, Steve Marschner
-sig2014-110 | Near-Regular Structure Extraction Using Linear Programming |  | author:Qixing Huang , Leonidas Guibas, Niloy Mitra
-sig2014-111 | Relating Shapes via Geometric Symmetries and Regularities |  | author:Art Tevs, Qixing Huang ,, Michael Wand , Hans-Peter Seidel, Leonidas Guibas
-sig2014-112 | Shape2Pose: Human-Centric Shape Analysis |  | author:Vladimir G. Kim, Siddhartha Chaudhuri, Leonidas Guibas, Thomas Funkhouser
-sig2014-113 | Mesh saliency via spectral processing |  | author:Ran Song, Yonghuai Liu, Ralph Martin , Paul L. Rosin ,
-sig2014-114 | Inverse Procedural Modeling of Facade Layouts |  | author:Fuzhang Wu, Dong-Ming Yan, Weiming Dong, Xiaopeng Zhang,, Peter Wonka
-sig2014-115 | PushPull++ |  | author:Markus Lipp, Peter Wonka, Pascal Mueller
-sig2014-116 | Flow complex based shape reconstruction from 3D curves |  | author:Bardia Sadri , Karan Singh
-sig2014-117 | True2Form: 3D Curve Networks from 2D Sketches via Selective Regularization |  | author:Baoxuan Xu , William Chang , Alla Sheffer, Adrien Bousseau, James McCrae , Karan Singh
-sig2014-118 | Interactive Shape Modeling using a Skeleton-Mesh Co-Representation |  | author:J. Andreas Barentzen, Rinat Abdrashitov, Karan Singh
-sig2014-119 | Vector Graphics Complexes |  | author:Boris Dalstein, Remi Ronfard, Michiel van de Panne
-sig2014-120 | Defending Continuous Collision Detection against Errors |  | author:Huamin Wang
-sig2014-121 | Adaptive Nonlinearity for Collisions in Complex Rod Assemblies |  | author:Danny Kaufman, Rasmus Tamstorf, Breannan Smith, Jean-Marie Aubry, Eitan Grinspun
-sig2014-122 | A Reduced Model for Interactive Hairs |  | author:Menglei Chai, Changxi Zheng, Kun Zhou
-sig2014-123 | Capturing and Stylizing Hair for 3D Fabrication |  | author:Jose I. Echevarria, Derek Bradley, Diego Gutierrez, Thabo Beeler
-sig2014-124 | Robust Hair Capture Using Simulated Examples |  | author:Liwen Hu , Chongyang Ma, Linjie Luo, Hao Li
-sig2014-125 | Automating Image Morphing using Structural Similarity on a Halfway Domain |  | author:Jing Liao, Rodolfo Lima , Diego Nehab, Hugues Hoppe, Pedro Sander, Jinhui Yu
-sig2014-126 | 3D Object Manipulation in a Single Image using Stock 3D Models |  | author:Natasha Kholgade , Tomas Simon, Alexei Efros, Yaser Sheikh ,
-sig2014-127 | Bilateral Texture Filtering |  | author:Hojin Cho , Hyunjoon Lee, Henry Kang, Seungyong Lee
-sig2014-128 | Fast Local Laplacian Filters: Theory and Applications |  | author:Mathieu Aubry, Sylvain Paris, Samuel W. Hasinoff, Jan Kautz, Fredo Durand
-sig2014-129 | Image Completion using Planar Structure Guidance |  | author:Jia-Bin Huang, Sing Bing Kang, Narendra Ahuja, Johannes Kopf
-sig2014-130 | Frame Fields: Anisotropic and Non-Orthogonal Cross Fields |  | author:Daniele Panozzo ,, Enrico Puppo, Marco Tarini, Olga Sorkine-Hornung
-sig2014-131 | Robust Field-Aligned Global Parametrization |  | author:Ashish Myles, Nico Pietroni, Denis Zorin
-sig2014-132 | Exploring Quadrangulations |  | author:Chi-Han Peng, Michael Barton, Caigui Jiang, Peter Wonka
-sig2014-133 | Weighted Triangulations for Geometry Processing |  | author:Fernando de Goes, Pooran Memari, Patrick Mullen, Mathieu Desbrun
-sig2014-134 | Robust Polylines Tracing for N-symmetry Direction Field on Triangulated Surfaces |  | author:Nicolas Ray, Dmitry Sokolov
-sig2014-135 | Blending Liquids |  | author:Karthik Raveendran, Chris Wojtan, Nils Thuerey, Greg Turk
-sig2014-136 | Augmented MPM for Phase-Change and Varied Materials |  | author:Alexey Stomakhin, Craig Schroeder , Chenfanfu Jiang, Lawrence Chai, Joseph Teran, Andrew Selle
-sig2014-137 | From Capture to Simulation - Connecting Forward and Inverse Problems in Fluids |  | author:James Gregson, Ivo Ihrke, Nils Thuerey, Wolfgang Heidrich
-sig2014-138 | Smoke Rings from Smoke |  | author:Steffen Weissman , Ulrich Pinkall, Peter Schroder
-sig2014-139 | Detailed Water on Coarse Grids: Combining Surface Meshes and Adaptive Discontinuous Galerkin |  | author:Essex Edwards , Robert Bridson
-sig2014-140 | AMFS: Adaptive Multi-Frequency Shading for Future Graphics Processors |  | author:Petrik Clarberg ,Robert Toth, Jon Hasselgren ,Jim Nilsson, Tomas Akenine-Moller
-sig2014-141 | Extending the Graphics Pipeline with Adaptive, Multi-Rate Shading |  | author:Yong He ,  Yan Gu , Kayvon Fatahalian
-sig2014-142 | RayCore: A ray-tracing hardware architecture for mobile devices |  | author:Jae-Ho Nah, Hyuck-Joo Kwon, Dong-Seok Kim, Cheol-Ho Jeong, Jinhong Park, Tack-Don Han, Dinesh Manocha, Woo-Chan Park
-sig2014-143 | Embree - A Kernel Framework for Efficient CPU Ray Tracing |  | author:Ingo Wald ,  Sven Woop ,  Carsten Benthin ,  Gregory S Johnson , Manfred Ernst
-sig2014-144 | Darkroom: Compiling High-Level Image Processing Code into Hardware Pipelines |  | author:James Hegarty ,John Brunhaver,Zachary DeVito, Jonathan Ragan-Kelley, Noy Cohen,Steven Bell,Artem Vasilyev, Mark Horowitz , Pat Hanrahan
-sig2014-145 | Modeling and Optimizing Eye Vergence Response to Stereoscopic Cuts |  | author:Krzysztof Templin, Piotr Didyk, Karol Myszkowski ,, Mohamed M. Hefeeda, Hans-Peter Seidel, Wojciech Matusik
-sig2014-146 | How Do People Edit Light Fields? |  | author:Adrian Jarabo , Belen Masia, Adrien Bousseau, Fabio Pellacini, Diego Gutierrez
-sig2014-147 | Simulating and compensating changes in appearance between day and night vision |  | author:Robert Wanat, Rafal K. Mantiuk
-sig2014-148 | Style Transfer for Headshot Portraits |  | author:YiChang Shih, Sylvain Paris, Connelly Barnes, Fredo Durand , William Freeman
-sig2014-149 | Transient Attributes for High-Level Understanding and Editing of Outdoor Scenes |  | author:Pierre-Yves Laffont ,  Zhile Ren ,  Xiaofeng Tao ,  Chao Qian , James Hays
-sig2014-150 | Progressive Light Transport Simulation on the GPU: Survey and Improvements |  | author:Tomas Davidovic, Jaroslav Krivanek, Milos Hasan, Philipp Slusallek
-sig2014-151 | A Practical Algorithm for Rendering Interreflections with All-frequency BRDFs |  | author:Kun Xu ,Yan-Pei Cao, Li-Qian Ma, Zhao Dong, Rui Wang, Shi-Min Hu
-sig2014-152 | Compact Precomputed Voxelized Shadows |  | author:Erik Sintorn ,  Viktor Kampe ,  Ola Olsson , Ulf Assarsson
-sig2014-153 | Instant Convolution Shadows for Volumetric Detail Mapping |  | author:Daniel Patel, Veronika Solteszova,Jan Martin Nordbotten, Stefan Bruckner
-sig2014-154 | Dynamic Ray Stream Traversal |  | author:Rasmus Barringer, Tomas Akenine-Moller
-sig2014-155 | Deformation Embedded for Point-Based Elastoplastic Simulation |  | author:Ben Jones , Stephen Ward,  Ashok Jallepalli,  Joseph Perenia, Adam Bargteil
-sig2014-156 | Exponential Integrators for Stiff Elastodynamic Problems |  | author:Dominik Michels, Gerrit Sobottka , Andreas Weber
-sig2014-157 | Unified Particle Physics for Real-Time Applications |  | author:Miles Macklin ,  Matthias Muller ,  Nuttapong Chentanez , Tae-Yong Kim
-sig2014-158 | Projective Dynamics: Fusing Constraint Projections for Fast Simulation |  | author:Sofien Bouaziz, Sebastian Martin, Tiantian Liu , Ladislav Kavan, Mark Pauly
-sig2014-159 | Active Volumetric Musculoskeletal Systems |  | author:Ye Fan ,  Joshua Litven , Dinesh K. Pai
-sig2014-160 | Coupled Structure-from-Motion and 3D Symmetry Detection for Urban Facades |  | author:Duygu Ceylan, Niloy Mitra, Mark Pauly
-sig2014-161 | Painting-to-3D Model Alignment Via Discriminative Visual Elements |  | author:Mathieu Aubry, Bryan C. Russell, Josef Sivic
-sig2014-162 | Color Map Optimization for 3D Reconstruction with Consumer Depth Cameras |  | author:Qian-Yi Zhou , Vladlen Koltun
-sig2014-163 | Real-Time Non-Rigid Reconstruction Using an RGB-D Camera |  | author:Michael Zollhofer, Matthias Niesner, Shahram Izadi ,Christoph Rehmann,Christopher Zach, Matthew Fisher, Chenglei Wu, Andrew Fitzgibbon, Charles Loop, Christian Theobalt, Marc Stamminger
-sig2014-164 | Proactive 3D Scanning of Inaccessible Parts |  | author:Feilong Yan, Andrei Sharf, Wenzhen Lin , Hui Huang, Baoquan Chen
-sig2014-165 | Topology-Varying 3D Shape Creation via Structural Blending |  | author:Ibraheem Alhashim , Honghua Li, Kai Xu, Junjie Cao, Rui Ma, Hao Zhang
-sig2014-166 | Continuity Transition With a Single Regular Curved-Knot Spline Surface |  | author:Kan-Le Shi ,  Jun-Hai Yong ,  Jia-Guang Sun , Jean-Claude Paul,  Beijing )
-sig2014-167 | L1-based Construction of Polycube Maps from Complex Shapes |  | author:Jin Huang ,Tengfei Jiang, Zeyun Shi, Yiying Tong, Hujun Bao, Mathieu Desbrun
-sig2014-168 | Harmonic Parameterization by Electrostatics |  | author:He Wang*, Kirill Sidorov*, Peter Sandilands , Taku Komura
-sig2014-169 | Decoupling Noises and Features via Weighted l1-analysis Compressed Sensing |  | author:Ruimin Wang,  Zhouwang Yang ,  Ligang Liu ,  Jiansong Deng , Falai Chen
-sig2014-170 | AverageExplorer: Interactive Exploration and Alignment of Visual Data Collections |  | author:Jun-Yan Zhu ,  Yong Jae Lee , Alexei Efros
-sig2014-171 | Intrinsic Images in the Wild |  | author:Sean Bell ,  Kavita Bala , Noah Snavely
-sig2014-172 | Exposing Photo Manipulation from Shading and Shadows |  | author:Eric Kee, James O'Brien, Hany Farid
-sig2014-173 | Automatic scene inference for 3D object compositing |  | author:Kevin Karsch, Sunkavalli, K. Hadap, S.; Carr, N.; Jin, H.; Fonte, R.; Sittig, M., David Forsyth
+sig2014-1 | Meta-representations of Shape Families |  | author:
+sig2014-2 | Organizing Heterogeneous Scene Collections through Contextual Focal Points |  | author:
+sig2014-3 | Functional Map Networks for Analyzing and Browsing Large Shape Collections |  | author:Qixing Huang ,  Fan Wang 
+sig2014-4 | Geometry and Context for Semantic Correspondences and Functionality Recognition in Man-Made 3D Shapes |  | author:
+sig2014-5 | Learning 3D Attributes of Images through Shape Collection |  | author:
+sig2014-6 | Parametric Wave Field Coding for Precomputed Sound Propagation |  | author:Nikunj Raghuvanshi 
+sig2014-7 | High-Order Diffraction and Diffuse Reflections for Interactive Sound Propagation in Large Environments |  | author:Carl Schissler ,  Ravish Mehra 
+sig2014-8 | Eigenmode Compression for Modal Sound Models |  | author:Timothy R. Langlois ,  Steven S. An , Kelvin K. Jin
+sig2014-9 | Inverse-Foley Animation: Synchronizing rigid-body motions to sound |  | author:Timothy R. Langlois 
+sig2014-10 | Refractive Radiative Transfer Equation |  | author:Marco Ament , Christoph Bergmann, Daniel Weiskopf,  Stuttgart
+sig2014-11 | Continuous Projection for Fast L1 Reconstruction |  | author:
+sig2014-12 | Flower Modeling via X-ray Computed Tomography |  | author:
+sig2014-13 | k-d Darts: Sampling by k-Dimensional Flat Searches |  | author:
+sig2014-14 | Point Morphology |  | author:Stephane Calderon
+sig2014-15 | Floating Scale Surface Reconstruction |  | author:Simon Fuhrmann 
+sig2014-16 | Facial Performance Enhancement Using Dynamic Shape Space Analysis |  | author:
+sig2014-17 | Controllable High-Fidelity Facial Performance Transfer |  | author:
+sig2014-18 | Displaced Dynamic Expression Regression for Real-time Facial Tracking and Animation |  | author:Chen Cao ,  Qiming Hou 
+sig2014-19 | Rigid Stabilization of Facial Expressions |  | author:
+sig2014-20 | Generalizing Locomotion Style to New Animals With Inverse Optimal Regression |  | author:
+sig2014-21 | Learning Bicycle Stunts |  | author:Jie Tan ,  Yuting Gu ,  Karen Liu 
+sig2014-22 | Data-driven control of flapping flight |  | author:
+sig2014-23 | Online Motion Synthesis Using Sequential Monte Carlo |  | author:
+sig2014-24 | Breathing Life into Shape: Capturing, Modeling and Animating 3D Human Breathing |  | author:Aggeliki Tsoli ,  Naureen Mahmood 
+sig2014-25 | Authoring and Animating Painterly Characters |  | author:
+sig2014-26 | Ink-and-Ray: Bas-Relief Meshes for Adding Global Illumination Effects to Hand-Drawn Characters |  | author:
+sig2014-27 | Computing Smooth Surface Contours with Accurate Topology |  | author:
+sig2014-28 | Fast Multipole Representation of Diffusion Curves and Points |  | author:Timothy Sun *, Papoj Thamjaroenporn*
+sig2014-29 | EZ-Sketching: Three-Level Optimization for Error-Tolerant Image Tracing |  | author:
+sig2014-30 | Boosting Monte Carlo Rendering by Ray Histogram Fusion |  | author:
+sig2014-31 | Factored Axis-Aligned Filtering for Rendering Multiple Distribution Effects |  | author:
+sig2014-32 | A Constructive Theory of Sampling for Image Synthesis using Reproducing Kernel Bases |  | author:
+sig2014-33 | Fast Tile-Based Adaptive Sampling with User-Specified Fourier Spectra |  | author:
+sig2014-34 | A Local Frequency Analysis of Light Scattering and Absorption |  | author:
+sig2014-35 | A Reflectance Display |  | author:
+sig2014-36 | Focus 3D: Compressive Accommodation Display |  | author:
+sig2014-37 | A Compressive Light Field Projection System |  | author:
+sig2014-38 | Eyeglasses-free Display: Towards Correcting Visual Aberrations with Computational Light Field Displays |  | author:
+sig2014-39 | Cascaded Displays: Spatiotemporal Superresolution using Offset Pixel Layers |  | author:Felix Heide ,  Douglas Lanman ,  Dikpal Reddy ,  Jan Kautz ,  Kari Pulli 
+sig2014-40 | Pteromys: Interactive Design and Optimization of Free-formed Free-flight Model Airplanes |  | author:
+sig2014-41 | Wire Mesh Design |  | author:
+sig2014-42 | Design and Fabrication by Example |  | author:
+sig2014-43 | Designing Inflatable Structures |  | author:
+sig2014-44 | Computational Design of Linkage-Based Characters |  | author:
+sig2014-45 | Parallel chen-han |  | author:Xiang Ying Shi-Qing Xin 
+sig2014-46 | Form-finding with polyhedral meshes made simple |  | author:
+sig2014-47 | Earth Mover's Distances on Discrete Surfaces |  | author:Justin Solomon ,  Raif Rustamov ,  Leonidas Guibas 
+sig2014-48 | Controlling Singular Values with Semidefinite Programming |  | author:Shahar Kovalsky,  Noam Aigerman ,  Ronen Basri 
+sig2014-49 | Lifted Bijections for Low Distortion Surface Mappings |  | author:Noam Aigerman ,  Roi Poranne 
+sig2014-50 | VideoSnapping: Interactive Synchronization of Multiple Videos |  | author:
+sig2014-51 | First-person Hyper-lapse videos |  | author:Johannes Kopf ,  Michael F. Cohen 
+sig2014-52 | The Visual Microphone: Passive Recovery of Sound from Video |  | author:
+sig2014-53 | Intrinsic Video and Applications |  | author:
+sig2014-54 | Automatic Editing of Footage from Multiple Social Cameras |  | author:
+sig2014-55 | Boxelization: Folding 3D Objects Into Boxes |  | author:
+sig2014-56 | The Connect-The-Dots Family of Puzzles: Design and Automatic Generation |  | author:
+sig2014-57 | Self-Refining Games using Player Analytics |  | author:
+sig2014-58 | High-contrast Computational Caustic Design |  | author:Yuliy Schwartzburg , Romain Testuz,  Andrea Tagliasacchi 
+sig2014-59 | Poisson-based Continuous Surface Generation for Goal-based Caustics |  | author:
+sig2014-60 | Locally Injective Parametrization With Arbitrary Fixed Boundaries |  | author:
+sig2014-61 | Provably Good Planar Mappings |  | author:Roi Poranne 
+sig2014-62 | Context-based Coherent Surface Completion |  | author:
+sig2014-63 | Diffusion Pruning for Rapidly and Robustly Selecting Global Correspondences using Local Isometry |  | author:
+sig2014-64 | Feature Matching With Bounded Distortion |  | author:
+sig2014-65 | DecoBrush: Drawing Structured Decorative Patterns by Example |  | author:
+sig2014-66 | A Similarity Measure for Illustration Style |  | author:
+sig2014-67 | Exploratory Font Selection Using Crowdsourced Attributes |  | author:
+sig2014-68 | Learning a Manifold of Fonts |  | author:Neill Campbell 
+sig2014-69 | Look Over Here: Attention-Directing Composition of Manga Elements |  | author:Ying Cao ,  Rynson W.H. Lau 
+sig2014-70 | Learning to be a depth camera for close-range human capture and interaction |  | author:
+sig2014-71 | Temporal Frequency Probing for 5D Analysis of Global Light Transport |  | author:
+sig2014-72 | Compressive Epsilon Photography for Post-Capture Control in Digital Imaging |  | author:
+sig2014-73 | Pinlight Displays: Wide Field of View Augmented-Reality Eyeglasses Using Defocused Point Light Sources |  | author:
+sig2014-74 | Pixie Dust: Graphics Generated by Levitated and Animated Objects in a Computational Acoustic-Potential Field |  | author:
+sig2014-75 | Tangible and Modular Input Device for Character Articulation |  | author:
+sig2014-76 | Real-Time Continuous Pose Recovery of Human Hands Using Convolutional Networks |  | author:Jonathan Tompson , Murphy Stein,  Yann LeCun 
+sig2014-77 | Interactive Manipulation of Large-Scale Crowd Animation |  | author:
+sig2014-78 | Robust and Accurate Skeletal Rigging from Mesh Sequences |  | author:Binh Huy Le 
+sig2014-79 | Interactive Generalized Penetration Depth Computation for Rigid and Articulate Models Using Object Norm |  | author:Tang Min
+sig2014-80 | Dynamic and Robust Local Clearance Triangulations |  | author:Marcelo Kallmann
+sig2014-81 | Edit Propagation using Geometric Relationship Functions |  | author:
+sig2014-82 | Indexing 3D Scenes Using the Interaction Bisector Surface |  | author:Xi Zhao,  He Wang
+sig2014-83 | Procedural design of exterior lighting for buildings with complex constraints |  | author:
+sig2014-84 | Computing layouts with deformable templates |  | author:
+sig2014-85 | Bridging the Gap: Automated Steady Scaffoldings for 3D Printing |  | author:
+sig2014-86 | Computational Light Routing: 3D Printed Fiber Optics for Sensing and Display |  | author:
+sig2014-87 | An Asymptotic Numerical Method for Inverse Elastic Shape Design |  | author:
+sig2014-88 | Spin-It: Optimizing Moment of Inertia for Spinnable Objects |  | author:
+sig2014-89 | Build-to-Last: Strength to Weight 3D Printed Objects |  | author:
+sig2014-90 | Unifying points, beams, and paths in volumetric light transport simulation |  | author:
+sig2014-91 | High-Order Similarity Relations in Radiative Transfer |  | author:
+sig2014-92 | Multiplexed Metropolis Light Transport |  | author:
+sig2014-93 | On-line Learning of Parametric Mixture Models for Light Transport Simulation |  | author:
+sig2014-94 | The Natural-Constraint Representation of the Path Space for Efficient Light Transport Simulation |  | author:Anton S. Kaplanyan ,  Johannes Hanika 
+sig2014-95 | Subspace Clothing Simulation Using Adaptive Bases |  | author:
+sig2014-96 | Simulating articulated subspace self-contact |  | author:
+sig2014-97 | Sensitivity-optimized Rigging for Example-based Real-time Clothing Synthesis |  | author:
+sig2014-98 | Space-Time Editing of Elastic Motion through Material Optimization and Reduction |  | author:
+sig2014-99 | Animating Deformable Objects using Sparse Spacetime Constraints |  | author:
+sig2014-100 | Animation of Deformable Bodies with Quadratic Bezier Finite Elements |  | author:Adam Bargteil 
+sig2014-101 | Adaptive Tearing and Cracking of Thin Sheets |  | author:
+sig2014-102 | Codimensional Surface Tension Flow on Simplicial Complices |  | author:Bo Zhu , Edward Quigley,  Matthew Cong ,  Justin Solomon 
+sig2014-103 | Multimaterial Mesh-Based Surface Tracking |  | author:
+sig2014-104 | Physics-Inspired Adaptive Fracture Refinement |  | author:Zhili Chen ,  Miaojun Yao ,  Renguo Feng 
+sig2014-105 | genBRDF: Discovering New Analytic BRDFs with Genetic Programming |  | author:
+sig2014-106 | Discrete Stochastic Microfacet Models |  | author:
+sig2014-107 | Rendering Glints on High-Resolution Normal-Mapped Specular Surfaces |  | author:
+sig2014-108 | Reflectance Scanning: Estimating Shading Frame and BRDF with Generalized Linear Light Sources |  | author:
+sig2014-109 | A Comprehensive Framework for Rendering Layered Materials |  | author:
+sig2014-110 | Near-Regular Structure Extraction Using Linear Programming |  | author:
+sig2014-111 | Relating Shapes via Geometric Symmetries and Regularities |  | author:
+sig2014-112 | Shape2Pose: Human-Centric Shape Analysis |  | author:
+sig2014-113 | Mesh saliency via spectral processing |  | author:
+sig2014-114 | Inverse Procedural Modeling of Facade Layouts |  | author:
+sig2014-115 | PushPull++ |  | author:
+sig2014-116 | Flow complex based shape reconstruction from 3D curves |  | author:Bardia Sadri 
+sig2014-117 | True2Form: 3D Curve Networks from 2D Sketches via Selective Regularization |  | author:
+sig2014-118 | Interactive Shape Modeling using a Skeleton-Mesh Co-Representation |  | author:
+sig2014-119 | Vector Graphics Complexes |  | author:
+sig2014-120 | Defending Continuous Collision Detection against Errors |  | author:
+sig2014-121 | Adaptive Nonlinearity for Collisions in Complex Rod Assemblies |  | author:
+sig2014-122 | A Reduced Model for Interactive Hairs |  | author:
+sig2014-123 | Capturing and Stylizing Hair for 3D Fabrication |  | author:
+sig2014-124 | Robust Hair Capture Using Simulated Examples |  | author:
+sig2014-125 | Automating Image Morphing using Structural Similarity on a Halfway Domain |  | author:
+sig2014-126 | 3D Object Manipulation in a Single Image using Stock 3D Models |  | author:
+sig2014-127 | Bilateral Texture Filtering |  | author:
+sig2014-128 | Fast Local Laplacian Filters: Theory and Applications |  | author:
+sig2014-129 | Image Completion using Planar Structure Guidance |  | author:
+sig2014-130 | Frame Fields: Anisotropic and Non-Orthogonal Cross Fields |  | author:
+sig2014-131 | Robust Field-Aligned Global Parametrization |  | author:
+sig2014-132 | Exploring Quadrangulations |  | author:
+sig2014-133 | Weighted Triangulations for Geometry Processing |  | author:
+sig2014-134 | Robust Polylines Tracing for N-symmetry Direction Field on Triangulated Surfaces |  | author:
+sig2014-135 | Blending Liquids |  | author:
+sig2014-136 | Augmented MPM for Phase-Change and Varied Materials |  | author:
+sig2014-137 | From Capture to Simulation - Connecting Forward and Inverse Problems in Fluids |  | author:
+sig2014-138 | Smoke Rings from Smoke |  | author:
+sig2014-139 | Detailed Water on Coarse Grids: Combining Surface Meshes and Adaptive Discontinuous Galerkin |  | author:Essex Edwards 
+sig2014-140 | AMFS: Adaptive Multi-Frequency Shading for Future Graphics Processors |  | author:
+sig2014-141 | Extending the Graphics Pipeline with Adaptive, Multi-Rate Shading |  | author:Yong He ,  Yan Gu 
+sig2014-142 | RayCore: A ray-tracing hardware architecture for mobile devices |  | author:
+sig2014-143 | Embree - A Kernel Framework for Efficient CPU Ray Tracing |  | author:Ingo Wald ,  Sven Woop ,  Carsten Benthin ,  Gregory S Johnson 
+sig2014-144 | Darkroom: Compiling High-Level Image Processing Code into Hardware Pipelines |  | author:
+sig2014-145 | Modeling and Optimizing Eye Vergence Response to Stereoscopic Cuts |  | author:
+sig2014-146 | How Do People Edit Light Fields? |  | author:
+sig2014-147 | Simulating and compensating changes in appearance between day and night vision |  | author:Robert Wanat
+sig2014-148 | Style Transfer for Headshot Portraits |  | author:
+sig2014-149 | Transient Attributes for High-Level Understanding and Editing of Outdoor Scenes |  | author:Pierre-Yves Laffont ,  Zhile Ren ,  Xiaofeng Tao ,  Chao Qian 
+sig2014-150 | Progressive Light Transport Simulation on the GPU: Survey and Improvements |  | author:
+sig2014-151 | A Practical Algorithm for Rendering Interreflections with All-frequency BRDFs |  | author:
+sig2014-152 | Compact Precomputed Voxelized Shadows |  | author:Erik Sintorn ,  Viktor Kampe ,  Ola Olsson 
+sig2014-153 | Instant Convolution Shadows for Volumetric Detail Mapping |  | author:
+sig2014-154 | Dynamic Ray Stream Traversal |  | author:
+sig2014-155 | Deformation Embedded for Point-Based Elastoplastic Simulation |  | author:Ben Jones , Stephen Ward,  Ashok Jallepalli,  Joseph Perenia
+sig2014-156 | Exponential Integrators for Stiff Elastodynamic Problems |  | author:
+sig2014-157 | Unified Particle Physics for Real-Time Applications |  | author:Miles Macklin ,  Matthias Muller ,  Nuttapong Chentanez 
+sig2014-158 | Projective Dynamics: Fusing Constraint Projections for Fast Simulation |  | author:
+sig2014-159 | Active Volumetric Musculoskeletal Systems |  | author:Ye Fan ,  Joshua Litven 
+sig2014-160 | Coupled Structure-from-Motion and 3D Symmetry Detection for Urban Facades |  | author:
+sig2014-161 | Painting-to-3D Model Alignment Via Discriminative Visual Elements |  | author:
+sig2014-162 | Color Map Optimization for 3D Reconstruction with Consumer Depth Cameras |  | author:Qian-Yi Zhou 
+sig2014-163 | Real-Time Non-Rigid Reconstruction Using an RGB-D Camera |  | author:
+sig2014-164 | Proactive 3D Scanning of Inaccessible Parts |  | author:
+sig2014-165 | Topology-Varying 3D Shape Creation via Structural Blending |  | author:
+sig2014-166 | Continuity Transition With a Single Regular Curved-Knot Spline Surface |  | author:Kan-Le Shi ,  Jun-Hai Yong ,  Jia-Guang Sun , Jean-Claude Paul
+sig2014-167 | L1-based Construction of Polycube Maps from Complex Shapes |  | author:
+sig2014-168 | Harmonic Parameterization by Electrostatics |  | author:
+sig2014-169 | Decoupling Noises and Features via Weighted l1-analysis Compressed Sensing |  | author:Ruimin Wang,  Zhouwang Yang ,  Ligang Liu ,  Jiansong Deng 
+sig2014-170 | AverageExplorer: Interactive Exploration and Alignment of Visual Data Collections |  | author:Jun-Yan Zhu ,  Yong Jae Lee 
+sig2014-171 | Intrinsic Images in the Wild |  | author:Sean Bell ,  Kavita Bala 
+sig2014-172 | Exposing Photo Manipulation from Shading and Shadows |  | author:
+sig2014-173 | Automatic scene inference for 3D object compositing |  | author:

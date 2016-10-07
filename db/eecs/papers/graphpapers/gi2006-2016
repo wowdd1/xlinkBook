@@ -1,31 +1,31 @@
-gi2006-1 | Multi-finger Cursor Techniques |  | author:Tomer Moscovich , John F. Hughes
-gi2006-2 | symTone: Two-Handed Manipulation of Tone Reproduction Curves |  | author:Celine Latulipe, Ian Bell, Charlie Clarke , Craig Kaplan
-gi2006-3 | Concurrent Bimanual Stylus Interaction: A Study of Non-Preferred Hand Mode Manipulation |  | author:Edward Lank ,, Jaime Ruiz,, William B. Cowan
-gi2006-4 | TNT: Improved Rotation and Translation on Digital Tables |  | author:Liu Jun ,  David Pinelle ,  Samer Sallam ,  Sriram Subramanian , Carl Gutwin
-gi2006-5 | Style Components |  | author:Ari Shapiro ,  Yong Cao , Petros Faloutsos,  Los Angeles )
-gi2006-6 | Realistic and Interactive Simulation of Rivers |  | author:Peter Kipfer , Rüdiger Westermann
-gi2006-7 | Particle-Based Immiscible Fluid-Fluid Collision |  | author:Hai Mao , Herb Yang
-gi2006-8 | Spherical Billboards and their Application to Rendering Explosions |  | author:Tamas Umenhoffer,  Lászl? Szirmay-Kalos , Gabor Szijarto
-gi2006-9 | Faster Cascading Menu Selections with Enlarged Activation Areas |  | author:Andy Cockburn , Andrew Gin
-gi2006-10 | Performance Measures of Game Controllers in a Three-Dimensional Environment |  | author:Chris Klochek , I. Scott MacKenzie
-gi2006-11 | Human On-Line Response to Visual and Motor Target Expansion |  | author:Andy Cockburn , Philip Brock
-gi2006-12 | Early-Split Coding of Triangle Mesh Connectivity |  | author:Martin Isenburg, Jack Snoeyink
-gi2006-13 | Compression of Time Varying Isosurfaces |  | author:Ilya Eckstein, Mathieu Desbrun, C.-C. Jay Kuo
-gi2006-14 | Surfacing By Numbers |  | author:Steve Zelinka , Michael Garland
-gi2006-15 | Streaming Compression of Tetrahedral Volume Meshes |  | author:Martin Isenburg, Peter Lindstrom, Stefan Gumhold, Jonathan Shewchuk
-gi2006-16 | Evaluation of Viewport Size and Curvature of Large, High-Resolution Displays |  | author:Lauren Shupp ,  Robert Ball ,  Beth Yost ,  John Booker , Chris North
-gi2006-17 | The Importance of Accurate VR Head Registration on Skilled Motor Performance |  | author:David Sprague ,  Barry Po , Kellogg Booth
-gi2006-18 | Increased Display Size and Resolution Improve Task Performance in Information-Rich Virtual Environments |  | author:Tao Ni ,  Doug A. Bowman , Jian Chen
-gi2006-19 | Phrasing Techniques for Multi-Stroke Selection Gestures |  | author:Ken Hinckley, Francois Guimbretiere , Georg Apitz , Nicholas Chen, Maneesh Agrawala
-gi2006-20 | Fluid Inking: Augmenting the Medium of Free-Form Inking with Gestures |  | author:Robert Zeleznik , Timothy Miller
-gi2006-21 | Superflick: a Natural and Efficient Technique for Long-Distance Object Placement on Digital Tables |  | author:Adrian Reetz,  Carl Gutwin ,  Tadeusz Stach ,  Miguel Nacenta , Sriram Subramanian
-gi2006-22 | Hinge Slicer: Interactive Exploration of Volume Images Using Extended 3D Slice Plane Widgets |  | author:Tim McInerney , Sara Broughton
-gi2006-23 | Image Synthesis using Adjoint Photons |  | author:R. Keith Morley, Solomon Boulos, Jared Johnson, David Edwards, Peter Shirley, Michael Ashikhmin, Simon Premoze
-gi2006-24 | Light Animation with Precomputed Light Paths on the GPU |  | author:Laszlo Szecsi, Lászl? Szirmay-Kalos ,, Mateu Sbert
-gi2006-25 | Modelling and Rendering of Geometry with Relief Textures |  | author:Lionel Baboud , Xavier Décoret
-gi2006-26 | Fast GPU Ray Tracing of Dynamic Meshes using Geometry Images |  | author:Nathan A. Carr, Jared Hoberock , Keenan Crane , John C. Hart
-gi2006-27 | Implementing the Render Cache and the Edge-and-Point Image On Graphics Hardware |  | author:Edgar Velázquez-Armendáriz,Eugene Lee, Bruce Walter, Kavita Bala
-gi2006-28 | Cycle Shading for the Assessment and Visualization of Shape in One and Two Codimensions |  | author:Daniel Weiskopf, Helwig Hauser
-gi2006-29 | Generating Custom Notification Histories by Tracking Visual Differences between Web Page Visits |  | author:Saul Greenberg , Michael Boyle
-gi2006-30 | The Impact of Task on the Usage of Web Browser Navigation Mechanisms |  | author:Melanie Kellar ,  Carolyn Watters ,  Michael Shepherd , 
-gi2006-31 | A Case-Study of Affect Measurement Tools for Physical User Interface Design |  | author:Colin Swindells ,  Karon E. MacLean ,  Kellogg S. Booth ,  Michael Meitner , 
+gi2006-1 | Multi-finger Cursor Techniques |  | author:Tomer Moscovich 
+gi2006-2 | symTone: Two-Handed Manipulation of Tone Reproduction Curves |  | author:
+gi2006-3 | Concurrent Bimanual Stylus Interaction: A Study of Non-Preferred Hand Mode Manipulation |  | author:
+gi2006-4 | TNT: Improved Rotation and Translation on Digital Tables |  | author:Liu Jun ,  David Pinelle ,  Samer Sallam ,  Sriram Subramanian 
+gi2006-5 | Style Components |  | author:Ari Shapiro ,  Yong Cao , Petros Faloutsos
+gi2006-6 | Realistic and Interactive Simulation of Rivers |  | author:Peter Kipfer 
+gi2006-7 | Particle-Based Immiscible Fluid-Fluid Collision |  | author:Hai Mao 
+gi2006-8 | Spherical Billboards and their Application to Rendering Explosions |  | author:Tamas Umenhoffer,  Lászl? Szirmay-Kalos 
+gi2006-9 | Faster Cascading Menu Selections with Enlarged Activation Areas |  | author:Andy Cockburn 
+gi2006-10 | Performance Measures of Game Controllers in a Three-Dimensional Environment |  | author:Chris Klochek 
+gi2006-11 | Human On-Line Response to Visual and Motor Target Expansion |  | author:Andy Cockburn 
+gi2006-12 | Early-Split Coding of Triangle Mesh Connectivity |  | author:
+gi2006-13 | Compression of Time Varying Isosurfaces |  | author:
+gi2006-14 | Surfacing By Numbers |  | author:Steve Zelinka 
+gi2006-15 | Streaming Compression of Tetrahedral Volume Meshes |  | author:
+gi2006-16 | Evaluation of Viewport Size and Curvature of Large, High-Resolution Displays |  | author:Lauren Shupp ,  Robert Ball ,  Beth Yost ,  John Booker 
+gi2006-17 | The Importance of Accurate VR Head Registration on Skilled Motor Performance |  | author:David Sprague ,  Barry Po 
+gi2006-18 | Increased Display Size and Resolution Improve Task Performance in Information-Rich Virtual Environments |  | author:Tao Ni ,  Doug A. Bowman 
+gi2006-19 | Phrasing Techniques for Multi-Stroke Selection Gestures |  | author:
+gi2006-20 | Fluid Inking: Augmenting the Medium of Free-Form Inking with Gestures |  | author:Robert Zeleznik 
+gi2006-21 | Superflick: a Natural and Efficient Technique for Long-Distance Object Placement on Digital Tables |  | author:Adrian Reetz,  Carl Gutwin ,  Tadeusz Stach ,  Miguel Nacenta 
+gi2006-22 | Hinge Slicer: Interactive Exploration of Volume Images Using Extended 3D Slice Plane Widgets |  | author:Tim McInerney 
+gi2006-23 | Image Synthesis using Adjoint Photons |  | author:
+gi2006-24 | Light Animation with Precomputed Light Paths on the GPU |  | author:
+gi2006-25 | Modelling and Rendering of Geometry with Relief Textures |  | author:Lionel Baboud 
+gi2006-26 | Fast GPU Ray Tracing of Dynamic Meshes using Geometry Images |  | author:
+gi2006-27 | Implementing the Render Cache and the Edge-and-Point Image On Graphics Hardware |  | author:
+gi2006-28 | Cycle Shading for the Assessment and Visualization of Shape in One and Two Codimensions |  | author:
+gi2006-29 | Generating Custom Notification Histories by Tracking Visual Differences between Web Page Visits |  | author:Saul Greenberg 
+gi2006-30 | The Impact of Task on the Usage of Web Browser Navigation Mechanisms |  | author:Melanie Kellar ,  Carolyn Watters ,  Michael Shepherd 
+gi2006-31 | A Case-Study of Affect Measurement Tools for Physical User Interface Design |  | author:Colin Swindells ,  Karon E. MacLean ,  Kellogg S. Booth ,  Michael Meitner 

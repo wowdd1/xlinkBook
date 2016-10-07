@@ -1,97 +1,97 @@
-sig2009-1 | Gaussian KD-Trees for Fast High-Dimensional Filtering |  | author:Andrew Adams, Natasha Gelfand, Jennifer Dolson , Marc Levoy
-sig2009-2 | Edge-Avoiding Wavelets and thier Applications |  | author:Raanan Fattal
-sig2009-3 | Multi-operator Media Retargeting |  | author:Michael Rubinstein, Ariel Shamir, Shai Avidan
-sig2009-4 | PatchMatch: A Randomized Correspondence Algorithm for Structural Image Editing |  | author:Connelly Barnes, Eli Shechtman, Adam Finkelstein, Dan Goldman
-sig2009-5 | 2D Piecewise Algebraic Splines for Implicit Modeling |  | author:Qingde Li, Jie Tian
-sig2009-6 | A BSP-based algorithm for dimensionally nonhomogeneous planar implicit curves with topological guarantees |  | author:Abel J. P. Gomes, Jose F. M. Morgado, Edgar S. Pereira,  Covilha,  Portugal )
-sig2009-7 | Interpolatory Point Set Surfaces -- Convexity and Hermite Data |  | author:Marc Alexa, Anders Adamson
-sig2009-8 | A Variational Approach for Automatic Generation of Panoramic Maps |  | author:Patrick Degener , Reinhard Klein
-sig2009-9 | Light Warping for Enhanced Surface Depiction |  | author:Romain Vergne ,  Romain Pacanowski ,  Pascal Barla ,  Xavier Granier , Christophe Schlick
-sig2009-10 | Toward Evaluating Lighting Design Interface Paradigms for Novice Users |  | author:William Kerr, Fabio Pellacini
-sig2009-11 | Modeling Human Color Perception under Extended Luminance Levels |  | author:Min H. Kim ,  Tim Weyrich , Jan Kautz
-sig2009-12 | How Well Do Line Drawings Depict Shape? |  | author:Forrester Cole, Adam Finkelstein , Thomas Funkhouser , Szymon Rusinkiewicz
-sig2009-13 | Kernel Nystrom Method for Light Transport |  | author:Jiaping Wang, Yue Dong, Baining Guo
-sig2009-14 | An Empirical BSSRDF Model |  | author:Craig Donner, Jason Lawrence, Ravi Ramamoorthi, Toshiya Hachisuka Henrik Wann Jensen, Shree Nayar
-sig2009-15 | SubEdit: A Representation for Editing Measured Heterogenous Subsurface Scattering |  | author:Ying Song, Xin Tong, Fabio Pellacini, Pieter Peers
-sig2009-16 | Fabricating Microgeometry for Custom Surface Reflectance |  | author:Tim Weyrich, Pieter Peers, Wojciech Matusik, Szymon Rusinkiewicz
-sig2009-17 | iWIRES: An Analyze-and-Edit Approach to Shape Manipulation |  | author:Ran Gal, Olga Sorkine, Niloy Mitra, Daniel Cohen-Or
-sig2009-18 | Variational Harmonic Maps for Space Deformation |  | author:Mirela Ben-Chen ,  Ofir Weber , Craig Gotsman
-sig2009-19 | Joint-aware Manipulation of Deformable Models |  | author:Weiwei Xu, Jun Wang, KangKang Yin, Kun Zhou, Michiel van de Panne, Falai Chen, Baining Guo
-sig2009-20 | Semantic Deformation Transfer |  | author:Ilya Baran , Daniel Vlasic, Eitan Grinspun, Jovan Popović
-sig2009-21 | Harmonic Fluids |  | author:Changxi Zheng , Doug James
-sig2009-22 | Energy-Preserving Integrators for Fluid Animation |  | author:Patrick Mullen Keenan Crane , Dmitry Pavlov, Yiying Tong, Mathieu Desbrun
-sig2009-23 | Modular Bases for Fluid Dynamics |  | author:Martin Wicke, Matthew Stanton, Adrien Treuille
-sig2009-24 | Predictive-Corrective Incompressible SPH |  | author:Barbara Solenthaler , Renato Pajarola
-sig2009-25 | Directable, High-Resolution Simulation of FIre on the GPU |  | author:Christopher Horvath, Willi Geiger
-sig2009-26 | Moving Gradients: A Path-Based Method for Plausible Image Interpolation |  | author:Dhruv Mahajan ,Fu-Chung Huang, Wojciech Matusik, Ravi Ramamoorthi, Peter N. Belhumeur
-sig2009-27 | Optimizing Content-Preserving Projections for Wide-Angle Images |  | author:Robert Carroll , Maneesh Agrawala, Aseem Agarwala
-sig2009-28 | Content-Preserving Warps for 3D Video Stabilization |  | author:Feng Liu, Michael Gleicher, Hailin Jin , Aseem Agarwala
-sig2009-29 | Photogrammetric Texture Mapping using Casual Images |  | author:Yochay Tzur , Ayellet Tal
-sig2009-30 | Generalizing Motion Edits With Gaussian Processes |  | author:Leslie Ikemoto, Okan Arikan, David Forsyth
-sig2009-31 | Optimization-Based Interactive Motion Synthesis |  | author:Sumit Jain ,  Yuting Ye , C. Karen Liu
-sig2009-32 | Lie Group Integrators for Animation and Control of Vehicles |  | author:Marin Kobilarov ,  Keenan Crane , Mathieu Desbrun
-sig2009-33 | NURBS with Extraordinary Points: High-degree, Non-uniform, Rational Subdivision Schemes |  | author:Tom Cashman ,  Ursula Augsdörfer ,  Neil Dodgson , Malcolm Sabin
-sig2009-34 | Direct Trimming of NURBS Surfaces on the GPU |  | author:Andre Schollmeyer, Bernd Froehlich
-sig2009-35 | Bi-3 C2 Polar Subdivision |  | author:Ashish Myles , Jorg Peters
-sig2009-36 | Symmetric Tiling of Closed Surfaces: Visualization of Regular Maps |  | author:Jarke J. van Wijk
-sig2009-37 | Enrichment Textures for Detailed Cutting of Shells |  | author:Peter Kaufmann Sebastian Martin ,, Mario Botsch, Eitan Grinspun, Markus Gross
-sig2009-38 | Numerical Coarsening of Inhomogeneous Elastic Materials |  | author:Lily Kharevych ,  Patrick Mullen ,  Houman Owhadi , Mathieu Desbrun
-sig2009-39 | Preserving Topology and Elasticity for Embedded Deformable Models |  | author:Matthieu Nesme, Paul G. Kry, Lenka Jeřábková, François Faure
-sig2009-40 | Deformable Object Animation Using Reduced Optimal Control |  | author:Jernej Barbic , Marco da Silva, Jovan Popovic
-sig2009-41 | Procedural Noise using Sparse Gabor Convolution |  | author:Ares Lagae, Sylvain Lefebvre, George Drettakis, Philip Dutré
-sig2009-42 | Eye-Catching Crowds: Saliency-Based Selective Variation |  | author:Rachel McDonnell , Micheal Larkin, Benjamin Hernandez, Isaac Rudomin, Carol O'Sullivan
-sig2009-43 | Example-based Hair Geometry Synthesis |  | author:Lvdi Wang, Yizhou Yu, Kun Zhou, Baining Guo
-sig2009-44 | Visio-lization: Generating Novel Facial Images |  | author:U. Mohammed,  S. J. D. Prince, Jan Kautz
-sig2009-45 | Self-Organizing Tree Models for Image Synthesis |  | author:Wojtek Palubicki,Kipp Horel,Steven Longay,Adam Runions, Brendan Lane, Radomir Mech, Przemyslaw Prusinkiewicz
-sig2009-46 | Fourier Depth-of-Field |  | author:Cyril Soler , Kartic Subr, Fredo Durand, Nicolas Holzschuch , Francois Sillion
-sig2009-47 | Compressive Light Transport Sensing |  | author:Pieter Peers, Dhruv Mahajan ,, Wojciech Matusik, Ravi Ramamoorthi, Paul Debevec
-sig2009-48 | Display Supersampling |  | author:Niranjan Damera-Venkata , Nelson L. Chang
-sig2009-49 | GRAMPS: A Programming Model for Graphics Pipelines |  | author:Jeremy Sugerman , Kayvon Fatahalian , Solomon Boulos, Kurt Akeley, 
-sig2009-50 | Dextrous Manipulation from a Grasping Pose |  | author:C. Karen Liu
-sig2009-51 | Optimal Gait and Form for Animal Locomotion |  | author:Kevin Wampler, Zoran Popović
-sig2009-52 | Performance-Based Control Interface for Character Animation |  | author:Satoru Ishigaki, Timothy White, Victor Zordan, C. Karen Liu
-sig2009-53 | Detail-Preserving Continuum Simulation of Straight Hair |  | author:Aleka McAdams, Andrew Selle , Kelly Ward, Eftychios Sifakis , Joseph Teran
-sig2009-54 | Affine Double and Triple Product Wavelet Integrals for Rendering |  | author:Bo Sun, Ravi Ramamoorthi
-sig2009-55 | Participating-Media Illumination Using Light-Propagation Maps |  | author:Raanan Fattal
-sig2009-56 | A Tool to Create Illuminant and Reflectance Spectra for Light-Driven Graphics and Visualization |  | author:Steven Bergner Mark S. Drew Torsten Moller
-sig2009-57 | Automatic Pre-Tessellation Culling |  | author:Jon Hasselgren ,  Jacob Munkberg , Tomas Akenine-Moller
-sig2009-58 | Real-Time Hand-Tracking with a Color Glove |  | author:Robert Y. Wang, Jovan Popović
-sig2009-59 | Achieving Eye Contact in a One-to-Many 3D Video Teleconferencing System |  | author:Andrew Jones, Magnus Lang, Graham Fyffe, Xeuming Yu, Jay Busch, Ian McDowall, Mark Bolas, Paul Debevec
-sig2009-60 | The UnMousePad - An Interpolating Multi-Touch Force-Sensing Input Pad |  | author:Ilya Rosenberg , Ken Perlin
-sig2009-61 | Generating Photo Manipulation Tutorials by Demonstration |  | author:Floraine Grabler , Maneesh Agrawala, Wilmot Li Mira Dontcheva, Takeo Igarashi
-sig2009-62 | Coordinates for Instant Image Cloning |  | author:Zeev Farbman, Gil Hoffer, Yaron Lipman, Daniel Cohen-Or, Dani Lischinski
-sig2009-63 | SkyFinder: Attribute-based Sky Image Search |  | author:Litian Tao, Lu Yuan, Jian Sun
-sig2009-64 | Paint Selection |  | author:Jiangyu Liu, Jian Sun, Heung-Yeung Shum
-sig2009-65 | Video SnapCut: Robust Video Object Cutout Using Localized Classifiers |  | author:Xue Bai, Jue Wang , David Simons, Guillermo Saprio
-sig2009-66 | Efficient Reconstruction of Nonrigid Shape and Motion From Real-Time 3D Scanner Data |  | author:Michael Wand, Bart Adams, Maksim Ovsjanikov, Alexander Berner , Martin Bokeloh , Philipp Jenke, Leonidas Guibas, Hans-Peter Seidel, Andreas Schilling
-sig2009-67 | An Edge-Based, Computationally Efficient Formulation of Saint Venant-Kirchhoff Tetrahedral Finite Elements |  | author:Ryo Kikuuwe ,  Hiroaki Tabuchi, Motoji Yamamoto
-sig2009-68 | Fitting Solid Meshes to Animated Surfaces Using Linear Elasticity |  | author:Jaeil Choi, Andrzej Szymczak
-sig2009-69 | Data-Driven Curvature for Real-Time Line Drawing of Dynamic Scenes |  | author:Evangelos Kalogerakis ,  Derek Nowrouzezahrai ,  Patricio Simari ,  James McCrae ,  Aaron Hertzmann , Karan Singh
-sig2009-70 | Curve Skeleton Extraction from Incomplete Point Cloud |  | author:Andrea Tagliasacchi , Hao Zhang, Daniel Cohen-Or
-sig2009-71 | Mobius Voting for Surface Correspondence |  | author:Yaron Lipman, Thomas Funkhouser
-sig2009-72 | A Benchmark for 3D Mesh Segmentation |  | author:Xiaobai Chen ,  Aleksey Golovinskiy , Thomas Funkhouser
-sig2009-73 | Interactive Hausdorff distance computation for general polygonal models |  | author:Min Tang,  Minkyoung Lee, Young J. Kim
-sig2009-74 | Interleaving Delaunay Refinement and Optimization for Practical Isotropic Tetrahedron Mesh Generation |  | author:Jane Tournois, Camille Wormser, Pierre Alliez, Mathieu Desbrun
-sig2009-75 | Deforming Meshes that Split and Merge |  | author:Chris Wojtan, Nils Thuerey , Markus Gross, Greg Turk
-sig2009-76 | Mixed-Integer Quadrangulation |  | author:David Bommes ,  Henrik Zimmer , Leif Kobbelt
-sig2009-77 | Cyclic Plain-Weaving on Polygonal Mesh Surfaces with Graph Rotation Systems |  | author:Ergun Akleman , Jianer Chen , Qing Xing, Jonathan Gross
-sig2009-78 | Synchronized Multi-Character Motion Editing |  | author:Manmyung Kim ,  Kyung Lyul Hyun,  Jongmin Kim , Jehee Lee
-sig2009-79 | Momentum Control for Balance |  | author:Adriano Macchietto ,  Victor Zordan , Christian R. Shelton,  Riverside )
-sig2009-80 | Contact-aware Nonlinear Control of Dynamic Characters |  | author:Uldarico Muico , Yongjoon Lee, Jovan Popović
-sig2009-81 | Linear Bellman Combination for Control of Character Animation |  | author:Marco da Silva , Fredo Durand, Jovan Popovic
-sig2009-82 | A Visibility Algorithm for Converting 3D Meshes Into Editable 2D Vector Graphics |  | author:Elmar Eisemann, Sylvain Paris, Fredo Durand
-sig2009-83 | Local Layering |  | author:James McCann , Nancy Pollard
-sig2009-84 | Automatic and Topology-Preserving Gradient Mesh Generation for Image Vectorization |  | author:Yu-Kun Lai Shi-Min Hu, Ralph R. Martin
-sig2009-85 | Capacity-constrained Point Distributions: A Variant of Lloyd's Method |  | author:Michael Balzer ,  Thomas Schlömer , Oliver Deussen,  Germany )
-sig2009-86 | Asynchronous Contact Mechanics |  | author:David Harmon , Etienne Vouga , Breannan Smith, Rasmus Tamstorf, Eitan Grinspun
-sig2009-87 | Interactive Simulation of Surgical Needle Insertion and Steering |  | author:Nuttapong Chentanez, Ron Alterovitz, Daniel Ritchie , Lita Cho , Kris K. Hauser, Ken Goldberg , Jonathan R. Shewchuk , James F. O'Brien
-sig2009-88 | Capture and Modeling of Non-Linear Heterogeneous Soft Tissue |  | author:Bernd Bickel, Moritz Baecher, Miguel A. Otaduy, Wojciech Matusik, Hanspeter Pfister, Markus Gross
-sig2009-89 | Physically Guided Liquid Surface Modeling from Videos |  | author:Huamin Wang, Miao Liao , Qing Zhang, Ruigang Yang ,
-sig2009-90 | An Efficient GPU-based Approach for Interactive Global Illumination |  | author:Rui Wang, Rui Wang, Kun Zhou , Minghao Pan, Hu-Jun Bao
-sig2009-91 | Single Scattering in Refractive Media with Triangle Mesh Boundaries |  | author:Bruce Walter , Shuang Zhao, Nicolas Holzschuch, Kavita Bala
-sig2009-92 | Frequency Analysis and Sheared Reconstruction for Rendering Motion Blur |  | author:Kevin Egan , Yu-Ting Tseng, Nicolas Holzschuch ,, Fredo Durand, Ravi Ramamoorthi
-sig2009-93 | Adaptive Global Visibility Sampling |  | author:Jiri Bittner, Oliver Mattausch, Peter Wonka, Vlastimil Havran, Michael Wimmer
-sig2009-94 | Invertible Motion Blur in Video |  | author:Amit Agrawal, Yi Xu, Ramesh Raskar
-sig2009-95 | Dark Flash Photography |  | author:Dilip Krishnan , Rob Fergus
-sig2009-96 | 4D Frequency Analysis of Computational Cameras for Depth of Field Extension |  | author:Anat Levin ,  Sam Hasinoff ,  Paul Green ,  Fredo Durand , William T. Freeman
-sig2009-97 | Bokode: Imperceptible Visual Tags for Camera-based Interaction from a Distance |  | author:Ankit Mohan , Grace Woo, Shinsaku Hiura, Quinn Smithwick, Ramesh Raskar
+sig2009-1 | Gaussian KD-Trees for Fast High-Dimensional Filtering |  | author:
+sig2009-2 | Edge-Avoiding Wavelets and thier Applications |  | author:
+sig2009-3 | Multi-operator Media Retargeting |  | author:
+sig2009-4 | PatchMatch: A Randomized Correspondence Algorithm for Structural Image Editing |  | author:
+sig2009-5 | 2D Piecewise Algebraic Splines for Implicit Modeling |  | author:
+sig2009-6 | A BSP-based algorithm for dimensionally nonhomogeneous planar implicit curves with topological guarantees |  | author:Abel J. P. Gomes, Jose F. M. Morgado, Edgar S. Pereira,  Covilha
+sig2009-7 | Interpolatory Point Set Surfaces -- Convexity and Hermite Data |  | author:
+sig2009-8 | A Variational Approach for Automatic Generation of Panoramic Maps |  | author:Patrick Degener 
+sig2009-9 | Light Warping for Enhanced Surface Depiction |  | author:Romain Vergne ,  Romain Pacanowski ,  Pascal Barla ,  Xavier Granier 
+sig2009-10 | Toward Evaluating Lighting Design Interface Paradigms for Novice Users |  | author:William Kerr
+sig2009-11 | Modeling Human Color Perception under Extended Luminance Levels |  | author:Min H. Kim ,  Tim Weyrich 
+sig2009-12 | How Well Do Line Drawings Depict Shape? |  | author:
+sig2009-13 | Kernel Nystrom Method for Light Transport |  | author:
+sig2009-14 | An Empirical BSSRDF Model |  | author:
+sig2009-15 | SubEdit: A Representation for Editing Measured Heterogenous Subsurface Scattering |  | author:
+sig2009-16 | Fabricating Microgeometry for Custom Surface Reflectance |  | author:
+sig2009-17 | iWIRES: An Analyze-and-Edit Approach to Shape Manipulation |  | author:
+sig2009-18 | Variational Harmonic Maps for Space Deformation |  | author:Mirela Ben-Chen ,  Ofir Weber 
+sig2009-19 | Joint-aware Manipulation of Deformable Models |  | author:
+sig2009-20 | Semantic Deformation Transfer |  | author:
+sig2009-21 | Harmonic Fluids |  | author:Changxi Zheng 
+sig2009-22 | Energy-Preserving Integrators for Fluid Animation |  | author:
+sig2009-23 | Modular Bases for Fluid Dynamics |  | author:
+sig2009-24 | Predictive-Corrective Incompressible SPH |  | author:Barbara Solenthaler 
+sig2009-25 | Directable, High-Resolution Simulation of FIre on the GPU |  | author:Christopher Horvath
+sig2009-26 | Moving Gradients: A Path-Based Method for Plausible Image Interpolation |  | author:
+sig2009-27 | Optimizing Content-Preserving Projections for Wide-Angle Images |  | author:
+sig2009-28 | Content-Preserving Warps for 3D Video Stabilization |  | author:
+sig2009-29 | Photogrammetric Texture Mapping using Casual Images |  | author:Yochay Tzur 
+sig2009-30 | Generalizing Motion Edits With Gaussian Processes |  | author:
+sig2009-31 | Optimization-Based Interactive Motion Synthesis |  | author:Sumit Jain ,  Yuting Ye 
+sig2009-32 | Lie Group Integrators for Animation and Control of Vehicles |  | author:Marin Kobilarov ,  Keenan Crane 
+sig2009-33 | NURBS with Extraordinary Points: High-degree, Non-uniform, Rational Subdivision Schemes |  | author:Tom Cashman ,  Ursula Augsdörfer ,  Neil Dodgson 
+sig2009-34 | Direct Trimming of NURBS Surfaces on the GPU |  | author:Andre Schollmeyer
+sig2009-35 | Bi-3 C2 Polar Subdivision |  | author:Ashish Myles 
+sig2009-36 | Symmetric Tiling of Closed Surfaces: Visualization of Regular Maps |  | author:
+sig2009-37 | Enrichment Textures for Detailed Cutting of Shells |  | author:
+sig2009-38 | Numerical Coarsening of Inhomogeneous Elastic Materials |  | author:Lily Kharevych ,  Patrick Mullen ,  Houman Owhadi 
+sig2009-39 | Preserving Topology and Elasticity for Embedded Deformable Models |  | author:
+sig2009-40 | Deformable Object Animation Using Reduced Optimal Control |  | author:
+sig2009-41 | Procedural Noise using Sparse Gabor Convolution |  | author:
+sig2009-42 | Eye-Catching Crowds: Saliency-Based Selective Variation |  | author:
+sig2009-43 | Example-based Hair Geometry Synthesis |  | author:
+sig2009-44 | Visio-lization: Generating Novel Facial Images |  | author:U. Mohammed,  S. J. D. Prince
+sig2009-45 | Self-Organizing Tree Models for Image Synthesis |  | author:
+sig2009-46 | Fourier Depth-of-Field |  | author:
+sig2009-47 | Compressive Light Transport Sensing |  | author:
+sig2009-48 | Display Supersampling |  | author:Niranjan Damera-Venkata 
+sig2009-49 | GRAMPS: A Programming Model for Graphics Pipelines |  | author:
+sig2009-50 | Dextrous Manipulation from a Grasping Pose |  | author:
+sig2009-51 | Optimal Gait and Form for Animal Locomotion |  | author:Kevin Wampler
+sig2009-52 | Performance-Based Control Interface for Character Animation |  | author:
+sig2009-53 | Detail-Preserving Continuum Simulation of Straight Hair |  | author:
+sig2009-54 | Affine Double and Triple Product Wavelet Integrals for Rendering |  | author:
+sig2009-55 | Participating-Media Illumination Using Light-Propagation Maps |  | author:
+sig2009-56 | A Tool to Create Illuminant and Reflectance Spectra for Light-Driven Graphics and Visualization |  | author:
+sig2009-57 | Automatic Pre-Tessellation Culling |  | author:Jon Hasselgren ,  Jacob Munkberg 
+sig2009-58 | Real-Time Hand-Tracking with a Color Glove |  | author:
+sig2009-59 | Achieving Eye Contact in a One-to-Many 3D Video Teleconferencing System |  | author:
+sig2009-60 | The UnMousePad - An Interpolating Multi-Touch Force-Sensing Input Pad |  | author:Ilya Rosenberg 
+sig2009-61 | Generating Photo Manipulation Tutorials by Demonstration |  | author:
+sig2009-62 | Coordinates for Instant Image Cloning |  | author:
+sig2009-63 | SkyFinder: Attribute-based Sky Image Search |  | author:
+sig2009-64 | Paint Selection |  | author:
+sig2009-65 | Video SnapCut: Robust Video Object Cutout Using Localized Classifiers |  | author:
+sig2009-66 | Efficient Reconstruction of Nonrigid Shape and Motion From Real-Time 3D Scanner Data |  | author:
+sig2009-67 | An Edge-Based, Computationally Efficient Formulation of Saint Venant-Kirchhoff Tetrahedral Finite Elements |  | author:Ryo Kikuuwe ,  Hiroaki Tabuchi
+sig2009-68 | Fitting Solid Meshes to Animated Surfaces Using Linear Elasticity |  | author:
+sig2009-69 | Data-Driven Curvature for Real-Time Line Drawing of Dynamic Scenes |  | author:Evangelos Kalogerakis ,  Derek Nowrouzezahrai ,  Patricio Simari ,  James McCrae ,  Aaron Hertzmann 
+sig2009-70 | Curve Skeleton Extraction from Incomplete Point Cloud |  | author:
+sig2009-71 | Mobius Voting for Surface Correspondence |  | author:Yaron Lipman
+sig2009-72 | A Benchmark for 3D Mesh Segmentation |  | author:Xiaobai Chen ,  Aleksey Golovinskiy 
+sig2009-73 | Interactive Hausdorff distance computation for general polygonal models |  | author:Min Tang,  Minkyoung Lee
+sig2009-74 | Interleaving Delaunay Refinement and Optimization for Practical Isotropic Tetrahedron Mesh Generation |  | author:
+sig2009-75 | Deforming Meshes that Split and Merge |  | author:
+sig2009-76 | Mixed-Integer Quadrangulation |  | author:David Bommes ,  Henrik Zimmer 
+sig2009-77 | Cyclic Plain-Weaving on Polygonal Mesh Surfaces with Graph Rotation Systems |  | author:
+sig2009-78 | Synchronized Multi-Character Motion Editing |  | author:Manmyung Kim ,  Kyung Lyul Hyun,  Jongmin Kim 
+sig2009-79 | Momentum Control for Balance |  | author:Adriano Macchietto ,  Victor Zordan , Christian R. Shelton
+sig2009-80 | Contact-aware Nonlinear Control of Dynamic Characters |  | author:
+sig2009-81 | Linear Bellman Combination for Control of Character Animation |  | author:
+sig2009-82 | A Visibility Algorithm for Converting 3D Meshes Into Editable 2D Vector Graphics |  | author:
+sig2009-83 | Local Layering |  | author:James McCann 
+sig2009-84 | Automatic and Topology-Preserving Gradient Mesh Generation for Image Vectorization |  | author:
+sig2009-85 | Capacity-constrained Point Distributions: A Variant of Lloyd's Method |  | author:Michael Balzer ,  Thomas Schlömer , Oliver Deussen
+sig2009-86 | Asynchronous Contact Mechanics |  | author:
+sig2009-87 | Interactive Simulation of Surgical Needle Insertion and Steering |  | author:
+sig2009-88 | Capture and Modeling of Non-Linear Heterogeneous Soft Tissue |  | author:
+sig2009-89 | Physically Guided Liquid Surface Modeling from Videos |  | author:
+sig2009-90 | An Efficient GPU-based Approach for Interactive Global Illumination |  | author:
+sig2009-91 | Single Scattering in Refractive Media with Triangle Mesh Boundaries |  | author:
+sig2009-92 | Frequency Analysis and Sheared Reconstruction for Rendering Motion Blur |  | author:
+sig2009-93 | Adaptive Global Visibility Sampling |  | author:
+sig2009-94 | Invertible Motion Blur in Video |  | author:
+sig2009-95 | Dark Flash Photography |  | author:Dilip Krishnan 
+sig2009-96 | 4D Frequency Analysis of Computational Cameras for Depth of Field Extension |  | author:Anat Levin ,  Sam Hasinoff ,  Paul Green ,  Fredo Durand 
+sig2009-97 | Bokode: Imperceptible Visual Tags for Camera-based Interaction from a Distance |  | author:

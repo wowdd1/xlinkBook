@@ -1,115 +1,115 @@
-sig2011-1 | ShadowDraw: Real-Time User Guidance for Freehand Drawing |  | author:Yong Jae Lee, Larry Zitnick , Michael F. Cohen
-sig2011-2 | OverCoat: An Implicit Canvas for 3D Painting |  | author:Johannes Schmid, Martin Sebastian Senn, Markus Gross, Robert Sumner
-sig2011-3 | A Programmable System for Artistic Volumetric Lighting |  | author:Derek Nowrouzezahrai, Jared Johnson Andrew Selle , Dylan Lacewell ,Michael Kaschalk, Wojciech Jarosz
-sig2011-4 | Coherent Noise for Non-Photorealistic Rendering |  | author:Michael Kass , Davide Pesare
-sig2011-5 | Physically-valid Statistical Motion Models for Human Motion Generation |  | author:Xiaolin Wei ,  Jianyuan Min , Jin-Xiang Chai
-sig2011-6 | Motion Capture From Body-Mounted Cameras |  | author:Takaaki Shiratori, Hyun Soo Park, Leonid Sigal, Yaser Sheikh, Jessica Hodgins
-sig2011-7 | Motion Reconstruction Using Sparse Accelerometer Data |  | author:Jochen Tautges , Arno Zinke , Bjorn Kruger , Jan Baumann , Andreas Weber, Thomas Helten , Meinard Muller , Hans-Peter Seidel, Bernd Eberhardt
-sig2011-8 | Video-based Characters - Creating New Human Performances from a Multi-view Video Database |  | author:Feng Xu, Yebin Liu , Carsten Stoll, James Tompkin, Gaurav Bharaj, Qionghai Dai, Hans-Peter Seidel, Jan Kautz, Christian Theobalt
-sig2011-9 | Exploration of Continuous Variability in Collections of 3D Shapes |  | author:Maksim Ovsjanikov, Wilmot Li, Leonidas Guibas, Niloy J. Mitra
-sig2011-10 | Characterizing Structural Relationships in Scenes Using Graph Kernels |  | author:Matthew Fisher , Manolis Savva, Pat Hanrahan
-sig2011-11 | Probabilistic Reasoning for Assembly-Based 3D Modeling |  | author:Siddhartha Chaudhuri ,  Evangelos Kalogerakis ,  Leonidas Guibas , Vladlen Koltun
-sig2011-12 | Shape google: Geometric words and expressions for invariant shape retrieval |  | author:Alexander Bronstein, Michael Bronstein, Leonidas Guibas Maksim Ovsjanikov
-sig2011-13 | Eulerian Solid Simulation With Contact |  | author:David I.W. Levin ,  Joshua Litven ,  Garrett L. Jones ,  Shinjiro Sueda , Dinesh Pai
-sig2011-14 | Efficient Elasticity for Character Skinning with Contact and Collisions |  | author:Aleka McAdams ,, Yongning Zhu, Andrew Selle ,Mark Empey, Rasmus Tamstorf, Joseph M. Teran ,, Eftychios Sifakis
-sig2011-15 | Toward High-Quality Modal Contact Sound |  | author:Changxi Zheng , Doug James
-sig2011-16 | A Nonsmooth Newton Solver for Capturing Exact Coulomb Friction in Fiber Assemblies |  | author:Florence Bertails-Descoubes ,  Florent Cadoux , Gilles Daviet, Vincent Acary
-sig2011-17 | Large-Scale Dynamic Simulation of Highly Constrained Strands |  | author:Shinjiro Sueda ,  Garrett L. Jones ,  David I.W. Levin , Dinesh Pai
-sig2011-18 | HDR-VDP-2: A calibrated visual metric for visibility and quality predictions in all luminance conditions |  | author:Rafal Mantiuk, Kil Joong Kim, Allan G. Rempel , Wolfgang Heidrich
-sig2011-19 | A Versatile HDR Video Production System |  | author:Mike Tocci, Chris Kiser, Nora Tocci, Pradeep Sen
-sig2011-20 | Perceptually Based Tone Mapping for Low-Light Conditions |  | author:Adam G. Kirk , James F. O'Brien,  Berkeley )
-sig2011-21 | Illumination Decomposition for Material Recoloring with Consistent Interreflections |  | author:Rob Carroll ,  Ravi Ramamoorthi ,  Maneesh Agrawala , ,  Berkeley )
-sig2011-22 | Building Volumetric Appearance Models of Fabric using Micro CT Imaging |  | author:Shuang Zhao ,  Wenzel Jakob ,  Steve Marschner , Kavita Bala
-sig2011-23 | Pocket Reflectometry |  | author:Peiran Ren, Jiaping Wang, John Snyder, Xin Tong , Baining Guo
-sig2011-24 | Microgeometry Capture Using an Elastomeric Sensor |  | author:Micah Johnson ,  Forrester Cole ,  Alvin Raj , Edward Adelson
-sig2011-25 | CATRA: Interactive Measuring and Modeling of Cataracts |  | author:Vitor F. Pamplona , Erick Baptista Passos , Jan Zizka, Manuel M. Oliveira, Esteban Clua, Ramesh Raskar
-sig2011-26 | Blue-Noise Point Sampling using Kernel Density Model |  | author:Raanan Fattal
-sig2011-27 | Efficient Maximal Poisson-Disk Sampling |  | author:Mohamed S. Ebeida, Anjul Patney, Scott A. Mitchell, Andrew Davidson, Patrick M. Knupp, John D. Owens
-sig2011-28 | Differential Domain Analysis for Non-uniform Sampling |  | author:Li-Yi Wei, Rui Wang
-sig2011-29 | Filtering Solid Gabor Noise |  | author:Ares Lagae, George Drettakis
-sig2011-30 | GlobFit: Consistently Fitting Primitives by Discovering Global Relations |  | author:Yangyan Li, Xiaokun Wu, Yiorgos Chrysanthou, Andrei Sharf, Daniel Cohen-Or, Niloy J. Mitra
-sig2011-31 | Global Registration of Dynamic Range Scans for Articulated Model Reconstruction |  | author:Will Chang ,, Matthias Zwicker
-sig2011-32 | Texture-Lobes for Tree Modelling |  | author:Yotam Livny, Soeren Pirk, Zhanglin Cheng Feilong Yan ,, Oliver Deussen, Daniel Cohen-Or, Baoquan Chen
-sig2011-33 | L1-sparse Reconstruction of Sharp Point Set Surfaces |  | author:Haim Avron, Andrei Sharf, Chen Greif, Daniel Cohen-Or
-sig2011-34 | High-Quality Spatio-Temporal Rendering using Semi-Analytical Visibility |  | author:Carl Johan Gribel , Rasmus Barringer, Tomas Akenine-Moller
-sig2011-35 | Frequency Analysis and Sheared Filtering for Shadow Light Fields of Complex Occluders |  | author:Kevin Egan, Florian Hecht, Fredo Durand, Ravi Ramamoorthi
-sig2011-36 | Temporal Light Field Reconstruction for Rendering Distribution Effects |  | author:Jaakko Lehtinen , Timo Aila, Jiawen Chen, Samuli Laine, Fredo Durand
-sig2011-37 | The Area Perspective Transform: A Homogeneous Transform for Efficient In-Volume Queries |  | author:Warren Hunt , Greg Johnson
-sig2011-38 | A Quantized-Diffusion Model for Rendering Translucent Materials |  | author:Eugene d'Eon , Geoffrey Irving
-sig2011-39 | A Comprehensive Theory of Volumetric Radiance Estimation using Photon Points and Beams |  | author:Wojciech Jarosz, Derek Nowrouzezahrai, Iman Sadeghi , Henrik Wann Jensen
-sig2011-40 | Progressive Photon Mapping: A Probabilistic Approach |  | author:Claude Knaus , Matthias Zwicker
-sig2011-41 | Cache-Oblivious Ray Reordering |  | author:Bochang Moon , Youngyong Byun ,Tae-Joon Kim, Pio Claudio, Hye-sun Kim,Yun-ji Ban,Seung Woo Nam, Sung-Eui Yoon
-sig2011-42 | Interactive and Anisotropic Geometry Processing Using the Screened Poisson Equation |  | author:Ming Chuang , Michael Kazhdan
-sig2011-43 | Dinus: Double insertion, nonuniform, stationary subdivision surfaces |  | author:Kerstin Muller , Christoph Funfzig ,Lars Reusche, Dianne Hansford,Gerald Farin, Hans Hagen
-sig2011-44 | An Efficient Scheme for Curve and Surface Construction Based on a Set of Interpolatory Basis Functions |  | author:Ren-Jiang Zhang, Weiyin Ma
-sig2011-45 | Space-time Planning with Parameterized Locomotion Controllers |  | author:Sergey Levine, Yongjoon Lee, Vladlen Koltun, Zoran Popovic
-sig2011-46 | Articulated Swimming Creatures |  | author:Jie Tan , Yuting Gu,  Greg Turk , C. Karen Liu
-sig2011-47 | Locomotion Skills for Simulated Quadrupeds |  | author:Stelian Coros, Andrej Karpathy ,Ben Jones, Lionel Reveret, Michiel van de Panne
-sig2011-48 | Composite Control of Physically Simulated Characters |  | author:Uldarico Muico, Jovan Popovic, Zoran Popovic
-sig2011-49 | Character Animation in Two-player Adversarial Games |  | author:Kevin Wampler,  Erik Andersen , Evan Herbst,  Yongjoon Lee , Zoran Popovic
-sig2011-50 | Expression Flow for 3D-Aware Face Component Transfer |  | author:Fei Yang, Jue Wang , Eli Shechtman , Lubomir Bourdev, Dimitris Metaxas
-sig2011-51 | Image-Guided Weathering: A New Approach Applied to Flow Phenomena |  | author:Carles Bosch, Pierre-Yves Laffont, Holly Rushmeier , Julie Dorsey, George Drettakis
-sig2011-52 | Exploring Photobios |  | author:Ira Kemelmacher-Shlizerman , Rahul Garg , Steven M. Seitz, Eli Shechtman
-sig2011-53 | Discrete Element Textures |  | author:Chongyang Ma, Li-Yi Wei, Xin Tong
-sig2011-54 | Color Compatibility from Large Datasets |  | author:Peter O'Donovan, Aseem Agarwala, Aaron Hertzmann
-sig2011-55 | Edge-Aware Color Appearance |  | author:Min H. Kim, Jan Kautz
-sig2011-56 | Example-based Image Color and Tone Style Enhancement |  | author:Baoyuan Wang, Yizhou Yu, Ying-Qing Xu
-sig2011-57 | Switchable Primaries Using Shiftable Layers of Color Filter Arrays |  | author:Behzad Sajadi , Aditi Majumder, Kazuhiro Hiwada, Atsuto Maki, Ramesh Raskar
-sig2011-58 | Contributing Vertices-Based Minkowski Sum of a Non-Convex--Convex Pair of Polyhedra |  | author:Hichem Barki Florence Denis Florent Dupont
-sig2011-59 | MeshFlow: Interactive Visualization of Mesh Construction Sequences |  | author:Jonathan D. Denning ,  William Kerr , Fabio Pellacini
-sig2011-60 | LR: Compact Connectivity Representation for Triangle Meshes |  | author:Topraj Gurung , Mark Luffel, Peter Lindstrom, Jarek Rossignac
-sig2011-61 | On the Velocity of an Implicit Surface |  | author:Jos Stam, Ryan Schmidt
-sig2011-62 | Antialiasing Recovery |  | author:Lei Yang , Pedro V. Sander, Jason Lawrence, Hugues Hoppe
-sig2011-63 | Local Laplacian Filters: Edge-aware Image Processing with a Laplacian Pyramid |  | author:Sylvain Paris, Samuel W. Hasinoff, Jan Kautz
-sig2011-64 | Domain Transform for Edge-Aware Image and Video Processing |  | author:Eduardo S. L. Gastal , Manuel M. Oliveira
-sig2011-65 | Non-Rigid Dense Correspondence with Applications for Image Enhancement |  | author:Yoav Hacohen, Eli Shechtman , Dan Goldman, Dani Lischinski
-sig2011-66 | Data-Driven Elastic Models for Cloth: Modeling and Measurement |  | author:Huamin Wang ,  James F. O'Brien , Ravi Ramamoorthi,  Berkeley )
-sig2011-67 | Frame-based Elastic Models |  | author:Benjamin Gilles , Guillaume Bousquet , Francois Faure, Dinesh Pai
-sig2011-68 | Example-Based Elastic Materials |  | author:Sebastian Martin, Bernhard Thomaszewski, Eitan Grinspun, Markus Gross
-sig2011-69 | Sparse Meshless Models of Complex Deformable Objects |  | author:Francois Faure , Benjamin Gilles , Guillaume Bousquet, Dinesh Pai
-sig2011-70 | Leveraging Motion Capture and 3D Scanning for High-Fidelity Facial Performance Acquisition |  | author:Haoda Huang, Jin-Xiang Chai, Xin Tong ,Hsiang-Tao Wu
-sig2011-71 | High-Quality Passive Facial Performance Capture Using Anchor Frames |  | author:Thabo Beeler, Fabian Hahn, Derek Bradley , Bernd Bickel , Paul Beardsley, Craig Gotsman, Bob Sumner Markus Gross
-sig2011-72 | Interactive Region-based Linear 3D Face Models |  | author:Jose Rafael Tena, Fernando de la Torre, Iain Matthews
-sig2011-73 | Realtime Performance-Based Facial Animation |  | author:Thibaut Weise ,  Sofien Bouaziz ,  Hao Li , Mark Pauly
-sig2011-74 | Bounded Biharmonic Weights for Real-Time Deformation |  | author:Alec Jacobson, Ilya Baran, Jovan Popovic, Olga Sorkine
-sig2011-75 | Blended Intrinsic Maps |  | author:Vladimir G. Kim ,  Yaron Lipman , Thomas Funkhouser
-sig2011-76 | Biharmonic Distance |  | author:Yaron Lipman, Raif Rustamov, Thomas Funkhouser
-sig2011-77 | Photo-Inspired Model-Driven 3D Object Modeling |  | author:Kai Xu, Hanlin Zheng, Hao Zhang, Daniel Cohen-Or, Ligang Liu, Yueshan Xiong
-sig2011-78 | Two-Scale Particle Simulation |  | author:Barbara Solenthaler , Markus Gross
-sig2011-79 | Real-Time Eulerian Water Simulation Using a Restricted Tall Cell Grid |  | author:Nuttapong Chentanez , Matthias Mueller
-sig2011-80 | A PML-Based Nonreflective Boundary for Free Surface Fluid Animation |  | author:Andreas Soderstrom, Matts Karlsson, Ken Museth
-sig2011-81 | Guide shapes for high resolution naturalistic liquid simulation |  | author:Michael Nielsen, Robert Bridson
-sig2011-82 | Animating Fire With Sound |  | author:Jeffrey Chadwick , Doug James
-sig2011-83 | Converting 3D Furniture Models to Fabricatable Parts and Connectors |  | author:Manfred Lau, Akira Ohgawara, Jun Mitani, Takeo Igarashi
-sig2011-84 | Make it Home: Automatic Optimization of Furniture Arrangement |  | author:Lap-Fai Yu , Sai-Kit Yeung, Chi-Keung Tang, Demetri Terzopoulos , Tony F. Chan , Stanley Osher
-sig2011-85 | Interactive Furniture Layout Using Interior Design Guidelines |  | author:Paul Merrell , Eric Schkufza ,Zeyang Li, Maneesh Agrawala ,, Vladlen Koltun
-sig2011-86 | Interactive Architectural Modeling with Procedural Extrusions |  | author:Tom Kelly, Peter Wonka
-sig2011-87 | Metropolis Procedural Modeling |  | author:Jerry O. Talton , Yu Lou ,Steve Lesser,Jared Duke, Radomir Mech, Vladlen Koltun
-sig2011-88 | Image and Video Upscaling from Local Self-Examples |  | author:Gilad Freeman, Raanan Fattal
-sig2011-89 | Scalable and Coherent Video Resizing with Per-Frame Optimization |  | author:Yu-Shuen Wang, Jen-Hung Hsiao, Olga Sorkine, Tong-Yee Lee
-sig2011-90 | Subspace Video Stabilization |  | author:Feng Liu, Michael Gleicher, Jue Wang , Hailin Jin , Aseem Agarwala
-sig2011-91 | Tonal Stabilization of Video |  | author:Zeev Farbman , Dani Lischinski
-sig2011-92 | Sensitive Couture for Interactive Garment Design |  | author:Nobuyuki Umetani, Danny Kaufman, Takeo Igarashi, Eitan Grinspun
-sig2011-93 | Real-Time Large-Deformation Substructuring |  | author:Jernej Barbic , Yili Zhao
-sig2011-94 | Solid Simulation with Oriented Particles |  | author:Matthias Mueller , Nuttapong Chentanez
-sig2011-95 | Physics-Inspired Upsampling for Cloth Simulation in Games |  | author:Ladislav Kavan, Daniel Gerszewski , Adam Bargteil, Peter-Pike Sloan
-sig2011-96 | Computational Stereo Camera System With Programmable Control Loop |  | author:Simon Heinzle, Pierre Greisen, David Gallup, Christine Chen,Daniel Saner, Aljoscha Smolic, Andreas Peter Burg, Wojciech Matusik
-sig2011-97 | Highlighted DOF Photography: Shining Light on Focus |  | author:Jaewon Kim , Roarke Horstmeyer, Ig-Jae Kim, Ramesh Raskar
-sig2011-98 | Layered 3D: Tomographic Image Synthesis for Attenuation-based Light Field and High Dynamic Range Displays |  | author:Gordon Wetzstein, Douglas Lanman, Wolfgang Heidrich, Ramesh Raskar
-sig2011-99 | A Perceptual Model for Disparity |  | author:Piotr Didyk ,  Tobias Ritschel ,  Elmar Eisemann ,  Karol Myszkowski , Hans-Peter Seidel
-sig2011-100 | Making Burr Puzzles from 3D Models |  | author:Shi-Qing Xin , Chi-Fu Lai , Chi-Wing Fu, Tien-Tsin Wong, Ying He, Daniel Cohen-Or
-sig2011-101 | A Geometric Study of V-style Pop-ups: Theories and Algorithms |  | author:Xian-Ying Li, Tao Ju, Yan Gu, Shi-Min Hu
-sig2011-102 | Depixelizing Pixel Art |  | author:Johannes Kopf, Dani Lischinski
-sig2011-103 | Digital Micrography |  | author:Ron Maharik ,Mikhail Bessmeltsev, Alla Sheffer ,, Ariel Shamir, Nathan Carr
-sig2011-104 | Circular arc structures |  | author:Pengbo Bo, Helmut Pottmann , Martin Kilian, Wenping Wang, Johannes Wallner
-sig2011-105 | Discrete Laplacians on General Polygonal Meshes |  | author:Marc Alexa, Max Wardetzky
-sig2011-106 | HOT: Hodge-Optimized Triangulations |  | author:Patrick Mullen ,  Pooran Memari ,  Fernando de Goes , Mathieu Desbrun
-sig2011-107 | Spin Transformations of Discrete Surfaces |  | author:Keenan Crane, Ulrich Pinkall, Peter Schroder
-sig2011-108 | Interactive Editing of Massive Imagery Made Simple: Turning Atlanta into Atlantis |  | author:Brian Summa , Giorgio Scorzelli, Ming Jiang, Peer-Timo Bremer, Valerio Pascucci
-sig2011-109 | Geodesic Image and Video Editing |  | author:Antonio Criminisi , Toby Sharp , Carsten Rother, Patrick Perez
-sig2011-110 | Matting and Compositing of Transparent and Refractive Objects |  | author:Sai-Kit Yeung ,, Chi-Keung Tang ,, Michael S. Brown ,, Sing Bing Kang
-sig2011-111 | Nonlinear Revision Control for Images |  | author:Hsiang-Ting Chen, Li-Yi Wei, Chun-Fa Chang
-sig2011-112 | Clipless Dual-Space Bounds for Faster Stochastic Rasterization |  | author:Samuli Laine ,  Timo Aila ,  Tero Karras ,  Jaakko Lehtinen , 
-sig2011-113 | Decoupled Sampling for Graphics Pipelines |  | author:Jonathan Ragan-Kelley , Jaakko Lehtinen , Jiawen Chen, Michael Doggett, Fredo Durand
-sig2011-114 | Spark: Modular, Composable Shaders for Graphics Hardware |  | author:Tim Foley, Pat Hanrahan
-sig2011-115 | Physically-Based Real-Time Lens Flare Rendering |  | author:Matthias Hullin, Elmar Eisemann, Hans-Peter Seidel, Sungkil Lee
+sig2011-1 | ShadowDraw: Real-Time User Guidance for Freehand Drawing |  | author:
+sig2011-2 | OverCoat: An Implicit Canvas for 3D Painting |  | author:
+sig2011-3 | A Programmable System for Artistic Volumetric Lighting |  | author:
+sig2011-4 | Coherent Noise for Non-Photorealistic Rendering |  | author:Michael Kass 
+sig2011-5 | Physically-valid Statistical Motion Models for Human Motion Generation |  | author:Xiaolin Wei ,  Jianyuan Min 
+sig2011-6 | Motion Capture From Body-Mounted Cameras |  | author:
+sig2011-7 | Motion Reconstruction Using Sparse Accelerometer Data |  | author:
+sig2011-8 | Video-based Characters - Creating New Human Performances from a Multi-view Video Database |  | author:
+sig2011-9 | Exploration of Continuous Variability in Collections of 3D Shapes |  | author:
+sig2011-10 | Characterizing Structural Relationships in Scenes Using Graph Kernels |  | author:Matthew Fisher , Manolis Savva
+sig2011-11 | Probabilistic Reasoning for Assembly-Based 3D Modeling |  | author:Siddhartha Chaudhuri ,  Evangelos Kalogerakis ,  Leonidas Guibas 
+sig2011-12 | Shape google: Geometric words and expressions for invariant shape retrieval |  | author:
+sig2011-13 | Eulerian Solid Simulation With Contact |  | author:David I.W. Levin ,  Joshua Litven ,  Garrett L. Jones ,  Shinjiro Sueda 
+sig2011-14 | Efficient Elasticity for Character Skinning with Contact and Collisions |  | author:
+sig2011-15 | Toward High-Quality Modal Contact Sound |  | author:Changxi Zheng 
+sig2011-16 | A Nonsmooth Newton Solver for Capturing Exact Coulomb Friction in Fiber Assemblies |  | author:Florence Bertails-Descoubes ,  Florent Cadoux , Gilles Daviet
+sig2011-17 | Large-Scale Dynamic Simulation of Highly Constrained Strands |  | author:Shinjiro Sueda ,  Garrett L. Jones ,  David I.W. Levin 
+sig2011-18 | HDR-VDP-2: A calibrated visual metric for visibility and quality predictions in all luminance conditions |  | author:
+sig2011-19 | A Versatile HDR Video Production System |  | author:
+sig2011-20 | Perceptually Based Tone Mapping for Low-Light Conditions |  | author:Adam G. Kirk , James F. O'Brien
+sig2011-21 | Illumination Decomposition for Material Recoloring with Consistent Interreflections |  | author:Rob Carroll ,  Ravi Ramamoorthi ,  Maneesh Agrawala , 
+sig2011-22 | Building Volumetric Appearance Models of Fabric using Micro CT Imaging |  | author:Shuang Zhao ,  Wenzel Jakob ,  Steve Marschner 
+sig2011-23 | Pocket Reflectometry |  | author:
+sig2011-24 | Microgeometry Capture Using an Elastomeric Sensor |  | author:Micah Johnson ,  Forrester Cole ,  Alvin Raj 
+sig2011-25 | CATRA: Interactive Measuring and Modeling of Cataracts |  | author:
+sig2011-26 | Blue-Noise Point Sampling using Kernel Density Model |  | author:
+sig2011-27 | Efficient Maximal Poisson-Disk Sampling |  | author:
+sig2011-28 | Differential Domain Analysis for Non-uniform Sampling |  | author:
+sig2011-29 | Filtering Solid Gabor Noise |  | author:
+sig2011-30 | GlobFit: Consistently Fitting Primitives by Discovering Global Relations |  | author:
+sig2011-31 | Global Registration of Dynamic Range Scans for Articulated Model Reconstruction |  | author:
+sig2011-32 | Texture-Lobes for Tree Modelling |  | author:
+sig2011-33 | L1-sparse Reconstruction of Sharp Point Set Surfaces |  | author:
+sig2011-34 | High-Quality Spatio-Temporal Rendering using Semi-Analytical Visibility |  | author:
+sig2011-35 | Frequency Analysis and Sheared Filtering for Shadow Light Fields of Complex Occluders |  | author:
+sig2011-36 | Temporal Light Field Reconstruction for Rendering Distribution Effects |  | author:
+sig2011-37 | The Area Perspective Transform: A Homogeneous Transform for Efficient In-Volume Queries |  | author:Warren Hunt 
+sig2011-38 | A Quantized-Diffusion Model for Rendering Translucent Materials |  | author:Eugene d'Eon 
+sig2011-39 | A Comprehensive Theory of Volumetric Radiance Estimation using Photon Points and Beams |  | author:
+sig2011-40 | Progressive Photon Mapping: A Probabilistic Approach |  | author:Claude Knaus 
+sig2011-41 | Cache-Oblivious Ray Reordering |  | author:
+sig2011-42 | Interactive and Anisotropic Geometry Processing Using the Screened Poisson Equation |  | author:Ming Chuang 
+sig2011-43 | Dinus: Double insertion, nonuniform, stationary subdivision surfaces |  | author:
+sig2011-44 | An Efficient Scheme for Curve and Surface Construction Based on a Set of Interpolatory Basis Functions |  | author:
+sig2011-45 | Space-time Planning with Parameterized Locomotion Controllers |  | author:
+sig2011-46 | Articulated Swimming Creatures |  | author:Jie Tan , Yuting Gu,  Greg Turk 
+sig2011-47 | Locomotion Skills for Simulated Quadrupeds |  | author:
+sig2011-48 | Composite Control of Physically Simulated Characters |  | author:
+sig2011-49 | Character Animation in Two-player Adversarial Games |  | author:Kevin Wampler,  Erik Andersen , Evan Herbst,  Yongjoon Lee 
+sig2011-50 | Expression Flow for 3D-Aware Face Component Transfer |  | author:
+sig2011-51 | Image-Guided Weathering: A New Approach Applied to Flow Phenomena |  | author:
+sig2011-52 | Exploring Photobios |  | author:
+sig2011-53 | Discrete Element Textures |  | author:
+sig2011-54 | Color Compatibility from Large Datasets |  | author:
+sig2011-55 | Edge-Aware Color Appearance |  | author:
+sig2011-56 | Example-based Image Color and Tone Style Enhancement |  | author:
+sig2011-57 | Switchable Primaries Using Shiftable Layers of Color Filter Arrays |  | author:
+sig2011-58 | Contributing Vertices-Based Minkowski Sum of a Non-Convex--Convex Pair of Polyhedra |  | author:
+sig2011-59 | MeshFlow: Interactive Visualization of Mesh Construction Sequences |  | author:Jonathan D. Denning ,  William Kerr 
+sig2011-60 | LR: Compact Connectivity Representation for Triangle Meshes |  | author:
+sig2011-61 | On the Velocity of an Implicit Surface |  | author:
+sig2011-62 | Antialiasing Recovery |  | author:
+sig2011-63 | Local Laplacian Filters: Edge-aware Image Processing with a Laplacian Pyramid |  | author:
+sig2011-64 | Domain Transform for Edge-Aware Image and Video Processing |  | author:
+sig2011-65 | Non-Rigid Dense Correspondence with Applications for Image Enhancement |  | author:
+sig2011-66 | Data-Driven Elastic Models for Cloth: Modeling and Measurement |  | author:Huamin Wang ,  James F. O'Brien , Ravi Ramamoorthi
+sig2011-67 | Frame-based Elastic Models |  | author:
+sig2011-68 | Example-Based Elastic Materials |  | author:
+sig2011-69 | Sparse Meshless Models of Complex Deformable Objects |  | author:
+sig2011-70 | Leveraging Motion Capture and 3D Scanning for High-Fidelity Facial Performance Acquisition |  | author:
+sig2011-71 | High-Quality Passive Facial Performance Capture Using Anchor Frames |  | author:
+sig2011-72 | Interactive Region-based Linear 3D Face Models |  | author:
+sig2011-73 | Realtime Performance-Based Facial Animation |  | author:Thibaut Weise ,  Sofien Bouaziz ,  Hao Li 
+sig2011-74 | Bounded Biharmonic Weights for Real-Time Deformation |  | author:
+sig2011-75 | Blended Intrinsic Maps |  | author:Vladimir G. Kim ,  Yaron Lipman 
+sig2011-76 | Biharmonic Distance |  | author:
+sig2011-77 | Photo-Inspired Model-Driven 3D Object Modeling |  | author:
+sig2011-78 | Two-Scale Particle Simulation |  | author:Barbara Solenthaler 
+sig2011-79 | Real-Time Eulerian Water Simulation Using a Restricted Tall Cell Grid |  | author:Nuttapong Chentanez 
+sig2011-80 | A PML-Based Nonreflective Boundary for Free Surface Fluid Animation |  | author:
+sig2011-81 | Guide shapes for high resolution naturalistic liquid simulation |  | author:
+sig2011-82 | Animating Fire With Sound |  | author:Jeffrey Chadwick 
+sig2011-83 | Converting 3D Furniture Models to Fabricatable Parts and Connectors |  | author:
+sig2011-84 | Make it Home: Automatic Optimization of Furniture Arrangement |  | author:
+sig2011-85 | Interactive Furniture Layout Using Interior Design Guidelines |  | author:
+sig2011-86 | Interactive Architectural Modeling with Procedural Extrusions |  | author:
+sig2011-87 | Metropolis Procedural Modeling |  | author:
+sig2011-88 | Image and Video Upscaling from Local Self-Examples |  | author:Gilad Freeman
+sig2011-89 | Scalable and Coherent Video Resizing with Per-Frame Optimization |  | author:
+sig2011-90 | Subspace Video Stabilization |  | author:
+sig2011-91 | Tonal Stabilization of Video |  | author:Zeev Farbman 
+sig2011-92 | Sensitive Couture for Interactive Garment Design |  | author:
+sig2011-93 | Real-Time Large-Deformation Substructuring |  | author:Jernej Barbic 
+sig2011-94 | Solid Simulation with Oriented Particles |  | author:Matthias Mueller 
+sig2011-95 | Physics-Inspired Upsampling for Cloth Simulation in Games |  | author:
+sig2011-96 | Computational Stereo Camera System With Programmable Control Loop |  | author:
+sig2011-97 | Highlighted DOF Photography: Shining Light on Focus |  | author:
+sig2011-98 | Layered 3D: Tomographic Image Synthesis for Attenuation-based Light Field and High Dynamic Range Displays |  | author:
+sig2011-99 | A Perceptual Model for Disparity |  | author:Piotr Didyk ,  Tobias Ritschel ,  Elmar Eisemann ,  Karol Myszkowski 
+sig2011-100 | Making Burr Puzzles from 3D Models |  | author:
+sig2011-101 | A Geometric Study of V-style Pop-ups: Theories and Algorithms |  | author:
+sig2011-102 | Depixelizing Pixel Art |  | author:
+sig2011-103 | Digital Micrography |  | author:
+sig2011-104 | Circular arc structures |  | author:
+sig2011-105 | Discrete Laplacians on General Polygonal Meshes |  | author:
+sig2011-106 | HOT: Hodge-Optimized Triangulations |  | author:Patrick Mullen ,  Pooran Memari ,  Fernando de Goes 
+sig2011-107 | Spin Transformations of Discrete Surfaces |  | author:
+sig2011-108 | Interactive Editing of Massive Imagery Made Simple: Turning Atlanta into Atlantis |  | author:
+sig2011-109 | Geodesic Image and Video Editing |  | author:
+sig2011-110 | Matting and Compositing of Transparent and Refractive Objects |  | author:
+sig2011-111 | Nonlinear Revision Control for Images |  | author:
+sig2011-112 | Clipless Dual-Space Bounds for Faster Stochastic Rasterization |  | author:Samuli Laine ,  Timo Aila ,  Tero Karras ,  Jaakko Lehtinen 
+sig2011-113 | Decoupled Sampling for Graphics Pipelines |  | author:
+sig2011-114 | Spark: Modular, Composable Shaders for Graphics Hardware |  | author:
+sig2011-115 | Physically-Based Real-Time Lens Flare Rendering |  | author:

@@ -1,15 +1,15 @@
-pbg2005-1 | Interactive Ray Tracing of Point Based Models |  | author:Ingo Wald , Hans-Peter Seidel
-pbg2005-2 | High Quality Surface Splatting on Today's GPUs |  | author:Mario Botsch , Alexander Hornung, Matthias Zwicker, Leif Kobbelt
-pbg2005-3 | Progressive Splatting |  | author:Jianhua Wu ,  Zhuo Zhang , Leif Kobbelt
-pbg2005-4 | Voronoi Rasterization of Sparse Point Sets |  | author:Jerry Talton ,  Nathan Carr , John C. Hart
-pbg2005-5 | Normal Estimation for Point Clouds: A Comparison Study for a Voronoi Based Method |  | author:Tamal Dey ,  Gang Li , Jian Sun
-pbg2005-6 | A Sampling Theorem for MLS Surfaces |  | author:Peer-Timo Bremer, John C. Hart
-pbg2005-7 | Conformal Alpha Shapes |  | author:Frederic Cazals, Joachim Giesen , Mark Pauly, Afra Zomorodian
-pbg2005-8 | Computing Variation Modes for Point Set Surfaces |  | author:Lanfang Miao,Jin Huang, Xinguo Liu, Hujun Bao , Qunsheng Peng, Bainning Guo
-pbg2005-9 | Robust Filtering of Noisy Scattered Data |  | author:Oliver Schall ,  Alexander G. Belyaev , Hans-Peter Seidel
-pbg2005-10 | Surface Reconstruction with Enriched Reproducing Kernel Particle Approximation |  | author:Patrick Reuter , Pierre Joyot,  Jean Trunzler,  Tamy Boubekeur , Christophe Schlick
-pbg2005-11 | A Practical Structured Light Acquisition System for Point-Based Geometry and Texture |  | author:Filip Sadlo ,  Tim Weyrich ,  Ronald Peikert , Markus Gross
-pbg2005-12 | DuoDecim - A Structure for Point Scan Compression and Rendering |  | author:Jens Krüger ,  Jens Schneider , Rüdiger Westermann
-pbg2005-13 | Point Sampling with Uniformly Distributed Lines |  | author:Jordi Rovira, Peter Wonka, Francesc Castro , Mateu Sbert
-pbg2005-14 | Conversion of Point-Sampled Models to Textured Meshes |  | author:Martin Wicke , Sandro Olibet, Markus Gross
-pbg2005-15 | A Unifying Framework for Solid-Fluid Animations |  | author:Richard Keiser, Bart Adams, Dominique Gasser, Paolo Bazzi, Philip Dutré, Markus Gross
+pbg2005-1 | Interactive Ray Tracing of Point Based Models |  | author:Ingo Wald 
+pbg2005-2 | High Quality Surface Splatting on Today's GPUs |  | author:
+pbg2005-3 | Progressive Splatting |  | author:Jianhua Wu ,  Zhuo Zhang 
+pbg2005-4 | Voronoi Rasterization of Sparse Point Sets |  | author:Jerry Talton ,  Nathan Carr 
+pbg2005-5 | Normal Estimation for Point Clouds: A Comparison Study for a Voronoi Based Method |  | author:Tamal Dey ,  Gang Li 
+pbg2005-6 | A Sampling Theorem for MLS Surfaces |  | author:Peer-Timo Bremer
+pbg2005-7 | Conformal Alpha Shapes |  | author:
+pbg2005-8 | Computing Variation Modes for Point Set Surfaces |  | author:
+pbg2005-9 | Robust Filtering of Noisy Scattered Data |  | author:Oliver Schall ,  Alexander G. Belyaev 
+pbg2005-10 | Surface Reconstruction with Enriched Reproducing Kernel Particle Approximation |  | author:Patrick Reuter , Pierre Joyot,  Jean Trunzler,  Tamy Boubekeur 
+pbg2005-11 | A Practical Structured Light Acquisition System for Point-Based Geometry and Texture |  | author:Filip Sadlo ,  Tim Weyrich ,  Ronald Peikert 
+pbg2005-12 | DuoDecim - A Structure for Point Scan Compression and Rendering |  | author:Jens Krüger ,  Jens Schneider 
+pbg2005-13 | Point Sampling with Uniformly Distributed Lines |  | author:
+pbg2005-14 | Conversion of Point-Sampled Models to Textured Meshes |  | author:Martin Wicke , Sandro Olibet
+pbg2005-15 | A Unifying Framework for Solid-Fluid Animations |  | author:

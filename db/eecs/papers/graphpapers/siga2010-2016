@@ -1,50 +1,50 @@
-siga2010-1 | Morphable Crowds |  | author:Eunjung Ju , Myung Geol Choi , Minji Park, Jehee Lee, Kang Hoon Lee, Shigeo Takahashi
-siga2010-2 | Motion Fields for Interactive Character Animation |  | author:Yongjoon Lee, Kevin Wampler, Gilbert Bernstein, Jovan Popović, Zoran Popović
-siga2010-3 | Stable Inverse Dynamic Curves |  | author:Alexandre Derouet-Jourdan ,  Florence Bertails-Descoubes , Joelle Thollot,  Grenoble University,  France )
-siga2010-4 | Video-based Reconstruction of Animatable Human Characters |  | author:Carsten Stoll, Edilson de Aguiar, Juergen Gall, Sebastian Thrun, Christian Theobalt
-siga2010-5 | Circularly Polarized Spherical Illumination Reflectometry |  | author:Abhijeet Ghosh ,  Tongbo Chen,  Pieter Peers ,  Cyrus A. Wilson , Paul Debevec
-siga2010-6 | Content-Adaptive Parallax Barriers: Optimizing Dual-Layer 3D Displays Using Low-Rank Light Field Factorization |  | author:Douglas Lanman ,  Matthew Hirsch ,  Yun Hee Kim , Ramesh Raskar
-siga2010-7 | Light Reallocation for High Contrast Projection Using an Analog Micromirror Array |  | author:Reynald Hoskinson ,  Boris Stoeber ,  Wolfgang Heidrich ,  Sidney Fels , 
-siga2010-8 | Optical Computing for Fast Light Transport Analysis |  | author:Matthew O'Toole , Kiriakos Kutulakos
-siga2010-9 | A Practical Appearance Model for Dynamic Facial Color |  | author:Jorge Jimenez, Timothy Scully, Nuno Barbosa, Craig Donner, Xenxo Alvarez, Teresa Vieira, Paul Matts, Veronica Orvalho, Diego Gutierrez, Tim Weyrich
-siga2010-10 | A Progressive Error Estimation Framework for Photon Density Estimation |  | author:Toshiya Hachisuka, Wojciech Jarosz, Henrik Jensen
-siga2010-11 | Combining Global and Local Lights for High-Rank Illumination Effects |  | author:Tomas Davidovic, Jaroslav Krivanek, Milos Hasan, Philipp Slusallek, Kavita Bala
-siga2010-12 | Consistent Normal Interpolation |  | author:Alexander Reshetov ,  Alexei Soupikov , William R. Mark
-siga2010-13 | Data-Driven Image Color Theme Enhancement |  | author:Baoyuan Wang, Yizhou Yu, Tien-Tsin Wong, Chun Chen, Ying-Qing Xu
-siga2010-14 | Diffusion Maps for Edge-Aware Image Editing |  | author:Zeev Farbman,  Dani Lischinski , Raanan Fattal
-siga2010-15 | Metric-aware processing of spherical imagery |  | author:Misha Kazhdan, Hugues Hoppe
-siga2010-16 | MovieReshape: Tracking and Reshaping of Humans in Videos |  | author:Arjun Jain ,  Thorsten Thormahlen ,  Hans-Peter Seidel , Christian Theobalt
-siga2010-17 | Stereoscopic 3D Copy & Paste |  | author:Wan-Yen Lo , Matthias Zwicker, Markus Gross, Jeroen van Baar, Claude Knaus
-siga2010-18 | Analysis, Reconstruction and Manipulation using Arterial Snakes |  | author:Guo Li, Ligang Liu , Hanlin Zheng, Niloy J. Mitra
-siga2010-19 | Automatic Reconstruction of Tree Skeletal Structures from Point Clouds |  | author:Yotam Livny , Feilong Yan, Matt Olson, Baoquan Chen, Hao Zhang, Jihad El-Sana
-siga2010-20 | Cone Carving for Surface Reconstruction |  | author:Shy Shalom, Ariel Shamir, Hao Zhang, Daniel Cohen-Or
-siga2010-21 | Editing Operations for Irregular Vertices in Triangle Meshes |  | author:Yuanyuan Li, Eugene Zhang, Yoshihiro Kobayashi, Peter Wonka
-siga2010-22 | Animation Wrinkling: Augmenting Coarse Cloth Simulations With Realistic-Looking Wrinkles |  | author:Damien Rohmer, Tiberiu Popa, Marie-Paule Cani, Stefanie Hahmann, Alla Sheffer
-siga2010-23 | Multi-Resolution Isotropic Strain Limiting |  | author:Huamin Wang ,  Ravi Ramamoorthi , James O'Brien
-siga2010-24 | Piles of Objects |  | author:Shu-Wei Hsu , John Keyser
-siga2010-25 | Real-Time Collision Culling of a Million Bodies on Graphics Processing Units |  | author:Fuchang Liu, Takahiro Harada ,, Youngeun Lee , Young J. Kim
-siga2010-26 | A Comparative Study of Image Retargeting |  | author:Miki Rubinstein, Diego Gutierrez, Olga Sorkine, Arik Shamir
-siga2010-27 | Automatic Generation of Destination Maps |  | author:Johannes Kopf, Maneesh Agrawala, David Salesin, David Bargeron, Michael F. Cohen
-siga2010-28 | Resizing by Symmetry-Summarization |  | author:Huisi Wu, Yushuen Wang , Kun-Chuan Feng, Tien-Tsin Wong, Tong-Yee Lee, Pheng-Ann Heng
-siga2010-29 | Video Quality Assessment for Computer Graphics Applications |  | author:Tunc Aydin ,  Martin Cadik ,  Karol Myszkowski , Hans-Peter Seidel
-siga2010-30 | Accelerating Spatially Varying Gaussian Filters |  | author:Jongmin Baek , David Jacobs
-siga2010-31 | Anisotropic Blue Noise Sampling |  | author:Hongwei Li, Li-Yi Wei, Pedro V. Sander, Chi-Wing Fu
-siga2010-32 | Parallel Poisson Disk Sampling with Spectrum Analysis on Surfaces |  | author:John Bowers, Rui Wang, Li-Yi Wei, David Maletz
-siga2010-33 | Spectral Sampling of Manifolds |  | author:Cengiz Oztireli, Marc Alexa, Markus Gross
-siga2010-34 | Axial-Cones: Modeling Spherical Catadioptric Cameras for Wide-Angle Light Field Rendering |  | author:Yuichi Taguchi , Amit Agrawal , Ashok Veeraraghavan , Srikumar Ramalingam, Ramesh Raskar
-siga2010-35 | Computational Highlight Holography |  | author:Christian Regg, Markus Gross , Wojciech Matusik, Szymon Rusinkiewicz
-siga2010-36 | Computational Re-Photography |  | author:Aseem Agarwala, Soonmin Bae, Fredo Durand
-siga2010-37 | Optimizing continuity in multiscale imagery |  | author:Charles Han, Hugues Hoppe
-siga2010-38 | Detail-Preserving Fully Eulerian Interface Tracking Framework |  | author:Nambin Heo , Hyeong-Seok Ko
-siga2010-39 | Free-Flowing Granular Materials with Two-Way Solid Coupling |  | author:Rahul Narain ,  Abhinav Golas , Ming Lin
-siga2010-40 | Multi-Phase Fluid Simulations Using Regional Level Sets |  | author:Byungmoon Kim
-siga2010-41 | Scalable Fluid Simulation using Anisotropic Turbulence Particles |  | author:Tobias Pfaff , Nils Thurey, Jonathan Cohen , Sarah Tariq, Markus Gross
-siga2010-42 | A Hierarchical Volumetric Shadow Algorithm for Single Scattering |  | author:Ilya Baran , Jiawen Chen , Jonathan Ragan-Kelley , Fredo Durand, Jaakko Lehtinen
-siga2010-43 | Fast Parallel Surface and Solid Voxelization on GPUs |  | author:Michael Schwarz , Hans-Peter Seidel
-siga2010-44 | Unbiased, Adaptive Stochastic Sampling for Rendering Inhomogeneous Participating Media |  | author:Yonghao Yue, Kei Iwasaki, Bing-Yu Chen, Yoshinori Dobashi, Tomoyuki Nishita
-siga2010-45 | Volumetric Modeling with Diffusion Surfaces |  | author:Kenshi Takayama, Olga Sorkine, Andrew Nealen, Takeo Igarashi
-siga2010-46 | Computer-Generated Residential Building Layouts |  | author:Paul Merrell ,  Eric Schkufza , Vladlen Koltun
-siga2010-47 | Context-Based Search for 3D Models |  | author:Matthew Fisher , Pat Hanrahan
-siga2010-48 | Data-Driven Suggestions for Creativity Support in 3D Modeling |  | author:Siddhartha Chaudhuri , Vladlen Koltun
-siga2010-49 | Multi-Feature Matching of Fresco Fragments |  | author:Corey Toler-Franklin , Benedict Brown, Tim Weyrich, Thomas Funkhouser , Szymon Rusinkiewicz
-siga2010-50 | Style-Content Separation by Anisotropic Part Scales |  | author:Kai Xu , Honghua Li ,, Hao Zhang, Daniel Cohen-Or, Yueshan Xiong, Zhi-Quan Cheng
+siga2010-1 | Morphable Crowds |  | author:
+siga2010-2 | Motion Fields for Interactive Character Animation |  | author:
+siga2010-3 | Stable Inverse Dynamic Curves |  | author:Alexandre Derouet-Jourdan ,  Florence Bertails-Descoubes , Joelle Thollot,  Grenoble University
+siga2010-4 | Video-based Reconstruction of Animatable Human Characters |  | author:
+siga2010-5 | Circularly Polarized Spherical Illumination Reflectometry |  | author:Abhijeet Ghosh ,  Tongbo Chen,  Pieter Peers ,  Cyrus A. Wilson 
+siga2010-6 | Content-Adaptive Parallax Barriers: Optimizing Dual-Layer 3D Displays Using Low-Rank Light Field Factorization |  | author:Douglas Lanman ,  Matthew Hirsch ,  Yun Hee Kim 
+siga2010-7 | Light Reallocation for High Contrast Projection Using an Analog Micromirror Array |  | author:Reynald Hoskinson ,  Boris Stoeber ,  Wolfgang Heidrich ,  Sidney Fels 
+siga2010-8 | Optical Computing for Fast Light Transport Analysis |  | author:Matthew O'Toole 
+siga2010-9 | A Practical Appearance Model for Dynamic Facial Color |  | author:
+siga2010-10 | A Progressive Error Estimation Framework for Photon Density Estimation |  | author:
+siga2010-11 | Combining Global and Local Lights for High-Rank Illumination Effects |  | author:
+siga2010-12 | Consistent Normal Interpolation |  | author:Alexander Reshetov ,  Alexei Soupikov 
+siga2010-13 | Data-Driven Image Color Theme Enhancement |  | author:
+siga2010-14 | Diffusion Maps for Edge-Aware Image Editing |  | author:Zeev Farbman,  Dani Lischinski 
+siga2010-15 | Metric-aware processing of spherical imagery |  | author:
+siga2010-16 | MovieReshape: Tracking and Reshaping of Humans in Videos |  | author:Arjun Jain ,  Thorsten Thormahlen ,  Hans-Peter Seidel 
+siga2010-17 | Stereoscopic 3D Copy & Paste |  | author:
+siga2010-18 | Analysis, Reconstruction and Manipulation using Arterial Snakes |  | author:
+siga2010-19 | Automatic Reconstruction of Tree Skeletal Structures from Point Clouds |  | author:
+siga2010-20 | Cone Carving for Surface Reconstruction |  | author:
+siga2010-21 | Editing Operations for Irregular Vertices in Triangle Meshes |  | author:
+siga2010-22 | Animation Wrinkling: Augmenting Coarse Cloth Simulations With Realistic-Looking Wrinkles |  | author:
+siga2010-23 | Multi-Resolution Isotropic Strain Limiting |  | author:Huamin Wang ,  Ravi Ramamoorthi 
+siga2010-24 | Piles of Objects |  | author:Shu-Wei Hsu 
+siga2010-25 | Real-Time Collision Culling of a Million Bodies on Graphics Processing Units |  | author:
+siga2010-26 | A Comparative Study of Image Retargeting |  | author:
+siga2010-27 | Automatic Generation of Destination Maps |  | author:
+siga2010-28 | Resizing by Symmetry-Summarization |  | author:
+siga2010-29 | Video Quality Assessment for Computer Graphics Applications |  | author:Tunc Aydin ,  Martin Cadik ,  Karol Myszkowski 
+siga2010-30 | Accelerating Spatially Varying Gaussian Filters |  | author:Jongmin Baek 
+siga2010-31 | Anisotropic Blue Noise Sampling |  | author:
+siga2010-32 | Parallel Poisson Disk Sampling with Spectrum Analysis on Surfaces |  | author:
+siga2010-33 | Spectral Sampling of Manifolds |  | author:
+siga2010-34 | Axial-Cones: Modeling Spherical Catadioptric Cameras for Wide-Angle Light Field Rendering |  | author:
+siga2010-35 | Computational Highlight Holography |  | author:
+siga2010-36 | Computational Re-Photography |  | author:
+siga2010-37 | Optimizing continuity in multiscale imagery |  | author:
+siga2010-38 | Detail-Preserving Fully Eulerian Interface Tracking Framework |  | author:Nambin Heo 
+siga2010-39 | Free-Flowing Granular Materials with Two-Way Solid Coupling |  | author:Rahul Narain ,  Abhinav Golas 
+siga2010-40 | Multi-Phase Fluid Simulations Using Regional Level Sets |  | author:
+siga2010-41 | Scalable Fluid Simulation using Anisotropic Turbulence Particles |  | author:
+siga2010-42 | A Hierarchical Volumetric Shadow Algorithm for Single Scattering |  | author:
+siga2010-43 | Fast Parallel Surface and Solid Voxelization on GPUs |  | author:Michael Schwarz 
+siga2010-44 | Unbiased, Adaptive Stochastic Sampling for Rendering Inhomogeneous Participating Media |  | author:
+siga2010-45 | Volumetric Modeling with Diffusion Surfaces |  | author:
+siga2010-46 | Computer-Generated Residential Building Layouts |  | author:Paul Merrell ,  Eric Schkufza 
+siga2010-47 | Context-Based Search for 3D Models |  | author:Matthew Fisher 
+siga2010-48 | Data-Driven Suggestions for Creativity Support in 3D Modeling |  | author:Siddhartha Chaudhuri 
+siga2010-49 | Multi-Feature Matching of Fresco Fragments |  | author:
+siga2010-50 | Style-Content Separation by Anisotropic Part Scales |  | author:

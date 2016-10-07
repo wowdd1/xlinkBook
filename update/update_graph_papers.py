@@ -46,10 +46,20 @@ class GraphPapersSpider(Spider):
                         author_list.append(author)
                 else:
                     author_list.append(self.util.removeDoubleSpace(dd.text.strip().replace('\n', '')))
+
+                new_author_list = []
+                for au in author_list:
+                    if au == '' or au.find(')') != -1:
+                        continue
+                    if au.find('(') != -1:
+                        new_author_list.append(au[0 : au.find('(')].strip())
+                    else:
+                        new_author_list.append(au)
+
                 if paper_list[i] != '':
                     self.count += 1
                     paper_id = conference + year + '-' + str(self.count)
-                    self.write_db(f, paper_id, paper_list[i], '', 'author:' + ' '.join(author_list))
+                    self.write_db(f, paper_id, paper_list[i], '', 'author:' + ', '.join(new_author_list))
 
                     print paper_list[i] + '  ' + ','.join(author_list)
                 i += 1

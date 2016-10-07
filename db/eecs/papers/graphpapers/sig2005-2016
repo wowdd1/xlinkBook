@@ -1,98 +1,98 @@
-sig2005-1 | Skinning Mesh Animations |  | author:Doug L. James , Christopher D. Twigg
-sig2005-2 | SCAPE: Shape Completion and Animation of People |  | author:Drago Anguelov , Praveen Srinivasan , Daphne Koller , Sebastian Thrun ,J. Rodgers, James Davis
-sig2005-3 | Automatic Determination of Facial Muscle Activations From Sparse Motion Capture Marker Data |  | author:Eftychios Sifakis , Igor Neverov, Ron Fedkiw
-sig2005-4 | Face Transfer With Multilinear Models |  | author:Daniel Vlasic, Matt Brand , Hanspeter Pfister, Jovan Popovic
-sig2005-5 | RPU: A Programmable Ray Processing Unit for Realtime Ray Tracing |  | author:Sven Woop ,  Jorg Schmittler , Philipp Slusallek
-sig2005-6 | User-Configurable Automatic Shader Simplification |  | author:Fabio Pellacini
-sig2005-7 | A Relational Debugging Engine for the Graphics Pipeline |  | author:Nathaniel Duca ,  Krzysztof Niski ,  Jonathan Bilodeau ,  Matthew Bolitho ,  Yuan Chen ,  Jonathan Cohen , 
-sig2005-8 | Lpics: A Hardware-Accelerated Relighting Engine for Computer Cinematography |  | author:Fabio Pellacini ,  Kiril Vidimce ,  Aaron Lefohn ,  Alex Mohr ,  Mark Leone, John Warren
-sig2005-9 | Meshless Deformations Based on Shape Matching |  | author:Matthias Müller , Bruno Heidelberger, Matthias Teschner, Markus Gross
-sig2005-10 | Linear Rotation-Invariant Coordinates for Meshes |  | author:Yaron Lipman ,  Olga Sorkine ,  David Levin , Daniel Cohen-Or
-sig2005-11 | Mesh-based Inverse Kinematics |  | author:Robert W. Sumner , Matthias Zwicker, Craig Gotsman, Jovan Popovic
-sig2005-12 | Large Mesh Deformation Using the Volumetric Graph Laplacian |  | author:Kun Zhou, Jin Huang, John Snyder, Xinguo Liu, Hujun Bao, Baining Guo , Heung-Yeung Shum
-sig2005-13 | MoXi: Real-Time Ink Dispersion in Absorbent Paper |  | author:Nelson S.-H. Chu , Chiew-Lan Tai
-sig2005-14 | Line Drawings From Volume Data |  | author:Michael Burns , Janek Klawe , Szymon Rusinkiewicz , Adam Finkelstein, Doug DeCarlo
-sig2005-15 | Motion magnification |  | author:Ce Liu ,  Antonio Torralba ,  William T. Freeman ,  Frédo Durand , Edward H. Adelson
-sig2005-16 | Out-of-Core Tensor Approximation of High Dimensional Visual Data |  | author:Hongcheng Wang ,  Qing Wu ,  Lin Shi ,  Yizhou Yu , Narendra Ahuja
-sig2005-17 | Efficiently Combining Positions and Normals for Precise 3D Geometry |  | author:Diego Nehab , Szymon Rusinkiewicz, James Davis, Ravi Ramamoorthi
-sig2005-18 | Robust Moving Least-squares Fitting with Sharp Features |  | author:Shachar Fleishman ,, Daniel Cohen-Or, Claudio Silva
-sig2005-19 | Fast Exact and Approximate Geodesics on Meshes |  | author:Vitaly Surazhsky , Tatiana Surazhsky, Danil Kirsanov, Steven J. Gortler, Hugues Hoppe
-sig2005-20 | Mean Value Coordinates for Closed Triangular Meshes |  | author:Tao Ju ,  Scott Schaefer , Joe Warren
-sig2005-21 | Defocus Video Matting |  | author:Morgan McGuire , Wojciech Matusik , Hanspeter Pfister, John F. Hughes, Frédo Durand
-sig2005-22 | Automatic Photo Pop-upProject |  | author:Derek Hoiem ,  Alexei Efros , Martial Hebert
-sig2005-23 | Interactive Video Cutout |  | author:Jue Wang , Pravin Bhat, Alex Colburn , Maneesh Agrawala , Michael Cohen
-sig2005-24 | Video Object Cut and Paste |  | author:Yin Li,  Jian Sun , Heung-Yeung Shum
-sig2005-25 | Surface Compression With Geometrical Bandelets |  | author:Gabriel Peyré , Stéphane Mallat
-sig2005-26 | Geometry-guided Progressive Lossless 3D Mesh Coding with Octree |  | author:Jingliang Peng , C.-C. Jay Kuo
-sig2005-27 | Variational Tetrahedral Meshing |  | author:Pierre Alliez , David Cohen-Steiner , Mariette Yvinec, Mathieu Desbrun
-sig2005-28 | Shell Maps |  | author:Serban D. Porumbescu ,  Brian Budge ,  Louis Feng , Kenneth I. Joy
-sig2005-29 | Color2Gray: Salience-Preserving Color Removal |  | author:Amy A. Gooch ,  Sven C. Olsen ,  Jack Tumblin , Bruce Gooch
-sig2005-30 | Evaluation of Tone Mapping Operators using a High Dynamic Range Display |  | author:Ledda Patrick , Alan Chalmers , Tom Troscianko, Helge Seetzen
+sig2005-1 | Skinning Mesh Animations |  | author:Doug L. James 
+sig2005-2 | SCAPE: Shape Completion and Animation of People |  | author:
+sig2005-3 | Automatic Determination of Facial Muscle Activations From Sparse Motion Capture Marker Data |  | author:
+sig2005-4 | Face Transfer With Multilinear Models |  | author:
+sig2005-5 | RPU: A Programmable Ray Processing Unit for Realtime Ray Tracing |  | author:Sven Woop ,  Jorg Schmittler 
+sig2005-6 | User-Configurable Automatic Shader Simplification |  | author:
+sig2005-7 | A Relational Debugging Engine for the Graphics Pipeline |  | author:Nathaniel Duca ,  Krzysztof Niski ,  Jonathan Bilodeau ,  Matthew Bolitho ,  Yuan Chen ,  Jonathan Cohen 
+sig2005-8 | Lpics: A Hardware-Accelerated Relighting Engine for Computer Cinematography |  | author:Fabio Pellacini ,  Kiril Vidimce ,  Aaron Lefohn ,  Alex Mohr ,  Mark Leone
+sig2005-9 | Meshless Deformations Based on Shape Matching |  | author:
+sig2005-10 | Linear Rotation-Invariant Coordinates for Meshes |  | author:Yaron Lipman ,  Olga Sorkine ,  David Levin 
+sig2005-11 | Mesh-based Inverse Kinematics |  | author:
+sig2005-12 | Large Mesh Deformation Using the Volumetric Graph Laplacian |  | author:
+sig2005-13 | MoXi: Real-Time Ink Dispersion in Absorbent Paper |  | author:Nelson S.-H. Chu 
+sig2005-14 | Line Drawings From Volume Data |  | author:
+sig2005-15 | Motion magnification |  | author:Ce Liu ,  Antonio Torralba ,  William T. Freeman ,  Frédo Durand 
+sig2005-16 | Out-of-Core Tensor Approximation of High Dimensional Visual Data |  | author:Hongcheng Wang ,  Qing Wu ,  Lin Shi ,  Yizhou Yu 
+sig2005-17 | Efficiently Combining Positions and Normals for Precise 3D Geometry |  | author:
+sig2005-18 | Robust Moving Least-squares Fitting with Sharp Features |  | author:
+sig2005-19 | Fast Exact and Approximate Geodesics on Meshes |  | author:
+sig2005-20 | Mean Value Coordinates for Closed Triangular Meshes |  | author:Tao Ju ,  Scott Schaefer 
+sig2005-21 | Defocus Video Matting |  | author:
+sig2005-22 | Automatic Photo Pop-upProject |  | author:Derek Hoiem ,  Alexei Efros 
+sig2005-23 | Interactive Video Cutout |  | author:
+sig2005-24 | Video Object Cut and Paste |  | author:Yin Li,  Jian Sun 
+sig2005-25 | Surface Compression With Geometrical Bandelets |  | author:Gabriel Peyré 
+sig2005-26 | Geometry-guided Progressive Lossless 3D Mesh Coding with Octree |  | author:Jingliang Peng 
+sig2005-27 | Variational Tetrahedral Meshing |  | author:
+sig2005-28 | Shell Maps |  | author:Serban D. Porumbescu ,  Brian Budge ,  Louis Feng 
+sig2005-29 | Color2Gray: Salience-Preserving Color Removal |  | author:Amy A. Gooch ,  Sven C. Olsen ,  Jack Tumblin 
+sig2005-30 | Evaluation of Tone Mapping Operators using a High Dynamic Range Display |  | author:
 sig2005-31 | A Photon Accurate Model of the Human Eye |  | author:Michael F. Deering
-sig2005-32 | Mesh Saliency |  | author:Chang Ha Lee ,  Amitabh Varshney , David W. Jacobs
-sig2005-33 | Action Synopsis: Pose Selection and Illustration |  | author:Jackie Assa ,  Yaron Caspi , Daniel Cohen-Or
-sig2005-34 | Efficient Content-Based Retrieval of Motion Capture Data |  | author:Meinard Mueller ,  Tido Roeder , Michael Clausen
-sig2005-35 | Performance Animation From Low-dimensional Control Signals |  | author:Jinxiang Chai , Jessica K. Hodgins
-sig2005-36 | Dynamic Response for Motion Capture Animation |  | author:Victor Zordan ,  Bill Chiu,  Anna Majkowska , Matthew Fast,  Riverside )
-sig2005-37 | Modeling and Visualization of Leaf Venation Patterns |  | author:Adam Runions ,  Martin Fuhrer ,  Brendan Lane ,  Pavol Federl ,  Anne-Gaëlle Rolland-Lagan, Przemyslaw Prusinkiewicz
-sig2005-38 | Real-Time Rendering of Plant Leaves |  | author:Lifeng Wang, Wenle Wang, Julie Dorsey, Xu Yang, Baining Guo , Heung-Yeung Shum
-sig2005-39 | Floral Diagrams and Inflorescences: Interactive Flower Modeling Using Botanical Structural Constraints |  | author:Takashi Ijiri, Shigeru Owada, Makoto Okabe ,, Takeo Igarashi
-sig2005-40 | Measuring and Modeling the Appearance of Wood |  | author:Steve R. Marschner ,  Stephen H. Westin ,  Adam Arbree , Jonathan T. Moon
-sig2005-41 | Fourier Slice Photography |  | author:Ren Ng
-sig2005-42 | Dual Photography |  | author:Pradeep Sen , Billy Chen , Gaurav Garg, Steve Marschner, Mark Horowitz , Marc Levoy , Hendrik P. A. Lensch
-sig2005-43 | Performance relighting and reflectance transformation with time-multiplexed illumination |  | author:Andreas Wenger ,  Andrew Gardner ,  Chris Tchou ,  Jonas Unger,  Tim Hawkins, Paul Debevec,  Institute for Creative Technologies )
-sig2005-44 | High Performance Imaging Using Large Camera Arrays |  | author:Bennett Wilburn, Neel Joshi, Vaibhav Vaish , Eino-Ville Talvala, Emilio Antunez, Adam Barth , Andrew Adams , Mark Horowitz , Marc Levoy
-sig2005-45 | Parallel Controllable Texture Synthesis |  | author:Sylvain Lefebvre , Hugues Hoppe
-sig2005-46 | Texture design using a simplicial complex of morphable textures |  | author:Wojciech Matusik, Matthias Zwicker , Frédo Durand
-sig2005-47 | Texture Optimization for Example-based Synthesis |  | author:Vivek Kwatra ,  Irfan Essa ,  Aaron F. Bobick , Nipun Kwatra
-sig2005-48 | Wavelet Noise |  | author:Rob Cook, Tony DeRose
-sig2005-49 | Acqusition of Time-Varying Participating Media |  | author:Tim Hawkins,  Per Einarsson, Paul Debevec,  Institute for Creative Technologies )
-sig2005-50 | Modeling Hair From Multiple Views |  | author:Yichen Wei, Eyal Ofek, Long Quan, Heung-Yeung Shum
-sig2005-51 | Panoramic video textures |  | author:Aseem Agarwala , Colin Zheng, Chris Pal, Maneesh Agrawala , Michael F. Cohen, Brian Curless ,, David Salesin, Richard Szeliski
-sig2005-52 | Removing Photography Artifacts Using Gradient Projection and Flash-Exposure Sampling |  | author:Amit Agrawal , Ramesh Raskar, Shree K. Nayar
-sig2005-53 | Compressing and Companding High Dynamic Range Images with Subband Architectures |  | author:Yuanzhen Li ,  Lavanya Sharan ,  Edward H. Adelson , 
-sig2005-54 | Video Enhancement Using Per-Pixel Virtual Exposures |  | author:Eric P. Bennett , Leonard McMillan
-sig2005-55 | Animating Pictures with Stochastic Motion Textures |  | author:Yung-Yu Chuang, Dan B. Goldman , Colin Zheng , Brian Curless ,, Richard Szeliski
-sig2005-56 | Image Completion with Structure Propagation |  | author:Jian Sun, Lu Yuan, Jiaya Jia, Heung-Yeung Shum
-sig2005-57 | GoLD: Interactive Display of Huge Colored and Textured Models |  | author:Louis Borgeat , Guy Godin , Philippe Massicotte , Français Blais, Christian Lahanier
-sig2005-58 | Far Voxels: A Multiresolution Framework for Interactive Rendering of Huge Complex 3D Models on Commodity Graphics Platforms |  | author:Enrico Gobbetti , Fabio Marton,  Research and Development in Sardinia )
-sig2005-59 | Cache-Oblivious Mesh Layouts |  | author:Sung-Eui Yoon, Peter Lindstrom , Valerio Pascucci, Dinesh Manocha
-sig2005-60 | The Varrier Autostereoscopic Virtual Reality Display |  | author:Daniel J. Sandin ,  Todd Margolis,  Jinghua Ge ,  Javier Girado ,  Tom Peterka , Thomas A. DeFanti,  Electronic Visualization Laboratory )
-sig2005-61 | Animating Gases with Hybrid Meshes |  | author:Bryan Feldman ,  James F. O'Brien , Bryan M. Klingner,  Berkeley )
-sig2005-62 | A Vortex Particle Method for Smoke, Fire, and Explosions |  | author:Andrew Selle, Nick Rasmussen, Ron Fedkiw
-sig2005-63 | Discontinuous Fluids |  | author:Jeong-Mo Hong , Chang-Hun Kim
-sig2005-64 | Water Drops on Surfaces |  | author:Huamin Wang ,  Peter J. Mucha , Greg Turk
-sig2005-65 | Adaptive Dynamics of Articulated Bodies |  | author:Stephane Redon ,  Nico Galoppo , Ming C. Lin
-sig2005-66 | Fast Frictional Dynamics for Rigid Bodies |  | author:Danny Kaufman ,  Timothy Edmunds , Dinesh K. Pai
-sig2005-67 | Meshless Animation of Fracturing Solids |  | author:Mark Pauly, Richard Keiser, Bart Adams , Philip Dutré, Markus Gross, Leonidas Guibas
-sig2005-68 | Animating Sand as a Fluid |  | author:Yongning Zhu ,  Robert Bridson , 
-sig2005-69 | Coupling Water and Smoke to Thin Deformable and Rigid Shells |  | author:Eran Guendelman, Frank Losasso , Ronald Fedkiw
-sig2005-70 | Real-Time Subspace Integration for St.Venant-Kirchhoff Deformable Models |  | author:Jernej Barbic , Doug L. James
-sig2005-71 | Interactive Collision Detection Between Deformable Models Using Chromatic Decomposition |  | author:Naga Govindaraju , David Knott , Nitin Jain , Ilknur Kabul, Rasmus Tamstorf, Russel Gayle, Ming C. Lin , Dinesh Manocha
-sig2005-72 | Resolution Independent Curve Rendering Using Programmable Graphics Hardware |  | author:Charles Loop , Jim Blinn
-sig2005-73 | A Realtime GPU Subdivision Kernel |  | author:Le-Jeng Shiue ,  Ian Jones, Jorg Peters
-sig2005-74 | GPU-Based Trimming and Tessellation of NURBS and T-Spline Surfaces |  | author:Michael Guthe ,  Ákos Balázs , Reinhard Klein
-sig2005-75 | Blister: GPU-based rendering of Boolean combinations of free-form triangulated shapes |  | author:John Hable , Jarek Rossignac
-sig2005-76 | Light Diffusion in Multi-Layered Translucent Materials |  | author:Craig Donner , Henrik Wann Jensen
-sig2005-77 | A Practical Analytic Single Scattering Model for Real Time Rendering |  | author:Bo Sun , Ravi Ramamoorthi, Srinivasa Narasimhan, Shree Nayar
-sig2005-78 | An Approximate Image-Space Approach for Interactive Refraction |  | author:Chris Wyman
-sig2005-79 | Modeling and Rendering of Quasi-Homogeneous Materials |  | author:Xin Tong, Jiaping Wang, Steve Lin , Baining Guo , Heung-Yeung Shum
-sig2005-80 | Geostatistical Motion Interpolation |  | author:Tomohiko Mukai , Shigeru Kuriyama
-sig2005-81 | Learning Physics-Based Motion Style With Nonlinear Inverse Optimization |  | author:C. Karen Liu, Aaron Hertzmann, Zoran Popovic
-sig2005-82 | Style Translation for Human Motion |  | author:Eugene Hsu, Kari Pulli, Jovan Popovic
-sig2005-83 | A Data-Driven Approach to Quantifying Natural Human Motion |  | author:Liu Ren, Alton Patrick, Alexei Efros , Jessica K. Hodgins, James Rehg
-sig2005-84 | Lightcuts: A Scalable Approach to Illumination |  | author:Bruce Walter ,  Sebastian Fernandez ,  Adam Arbree ,  Kavita Bala ,  Michael Donikian , Donald P. Greenberg
-sig2005-85 | Fast and Detailed Approximate Global Illumination by Irradiance Decomposition |  | author:Okan Arikan ,  David Forsyth , James F. O'Brien
-sig2005-86 | A Frequency Analysis of Light Transport |  | author:Frédo Durand, Nicolas Holzschuch , Cyril Soler, Eric Chan, Français X. Sillion
-sig2005-87 | Visual Simulation of Weathering by gamma-ton Tracing |  | author:Yanyun Chen, Lin Xia, Tien Tsin Wong, Xin Tong , Hujun Bao, Baining Guo , Heung-Yeung Shum
-sig2005-88 | As-Rigid-As-Possible Shape Manipulation |  | author:Takeo Igarashi, Tomer Moscovich , John F. Hughes
-sig2005-89 | A Sketch-Based Interface for Detail-Preserving Mesh Editing |  | author:Andy Nealen, Olga Sorkine, Marc Alexa, Daniel Cohen-Or
-sig2005-90 | TextureMontage:Seamless Texturing of Arbitrary Surfaces From Multiple Images |  | author:Kun Zhou , Xi Wang, Yiying Tong, Mathieu Desbrun, Baining Guo , Heung-Yeung Shum
-sig2005-91 | Soft Shadow Volumes for Ray Tracing |  | author:Samuli Laine, Timo Aila ,, Ulf Assarsson, Jaakko Lehtinen, Tomas Akenine-Möller
-sig2005-92 | Wavelet Importance Sampling: Efficiently Evaluating Products of Complex Functions |  | author:Petrik Clarberg, Wojciech Jarosz, Tomas Akenine-Möller, Henrik Wann Jensen
-sig2005-93 | Multi-Level Ray Tracing Algorithm |  | author:Alexander Reshetov ,  Alexei Soupikov , Jim Hurley
-sig2005-94 | Energy redistribution path tracing |  | author:David Cline,  Justin Talbot, Parris Egbert
-sig2005-95 | Precomputed Shadow Fields for Dynamic Scenes |  | author:Kun Zhou ,  Yaohua Hu,  Steve Lin ,  Baining Guo , Heung-Yeung Shum
-sig2005-96 | All-frequency Interactive Relighting of Translucent Objects with Single and Multiple Scattering |  | author:Rui Wang ,  John Tran , David Luebke
-sig2005-97 | Precomputed Local Radiance Transfer for Real-Time Lighting Design |  | author:Anders Wang Kristensen, Tomas Akenine-Möller, Henrik Wann Jensen
-sig2005-98 | Local, Deformable Precomputed Radiance Transfer |  | author:Peter-Pike Sloan , Ben Luna,, John Snyder
+sig2005-32 | Mesh Saliency |  | author:Chang Ha Lee ,  Amitabh Varshney 
+sig2005-33 | Action Synopsis: Pose Selection and Illustration |  | author:Jackie Assa ,  Yaron Caspi 
+sig2005-34 | Efficient Content-Based Retrieval of Motion Capture Data |  | author:Meinard Mueller ,  Tido Roeder 
+sig2005-35 | Performance Animation From Low-dimensional Control Signals |  | author:Jinxiang Chai 
+sig2005-36 | Dynamic Response for Motion Capture Animation |  | author:Victor Zordan ,  Bill Chiu,  Anna Majkowska , Matthew Fast
+sig2005-37 | Modeling and Visualization of Leaf Venation Patterns |  | author:Adam Runions ,  Martin Fuhrer ,  Brendan Lane ,  Pavol Federl ,  Anne-Gaëlle Rolland-Lagan
+sig2005-38 | Real-Time Rendering of Plant Leaves |  | author:
+sig2005-39 | Floral Diagrams and Inflorescences: Interactive Flower Modeling Using Botanical Structural Constraints |  | author:
+sig2005-40 | Measuring and Modeling the Appearance of Wood |  | author:Steve R. Marschner ,  Stephen H. Westin ,  Adam Arbree 
+sig2005-41 | Fourier Slice Photography |  | author:
+sig2005-42 | Dual Photography |  | author:
+sig2005-43 | Performance relighting and reflectance transformation with time-multiplexed illumination |  | author:Andreas Wenger ,  Andrew Gardner ,  Chris Tchou ,  Jonas Unger,  Tim Hawkins, Paul Debevec
+sig2005-44 | High Performance Imaging Using Large Camera Arrays |  | author:
+sig2005-45 | Parallel Controllable Texture Synthesis |  | author:Sylvain Lefebvre 
+sig2005-46 | Texture design using a simplicial complex of morphable textures |  | author:
+sig2005-47 | Texture Optimization for Example-based Synthesis |  | author:Vivek Kwatra ,  Irfan Essa ,  Aaron F. Bobick 
+sig2005-48 | Wavelet Noise |  | author:Rob Cook
+sig2005-49 | Acqusition of Time-Varying Participating Media |  | author:Tim Hawkins,  Per Einarsson, Paul Debevec
+sig2005-50 | Modeling Hair From Multiple Views |  | author:
+sig2005-51 | Panoramic video textures |  | author:
+sig2005-52 | Removing Photography Artifacts Using Gradient Projection and Flash-Exposure Sampling |  | author:
+sig2005-53 | Compressing and Companding High Dynamic Range Images with Subband Architectures |  | author:Yuanzhen Li ,  Lavanya Sharan ,  Edward H. Adelson 
+sig2005-54 | Video Enhancement Using Per-Pixel Virtual Exposures |  | author:Eric P. Bennett 
+sig2005-55 | Animating Pictures with Stochastic Motion Textures |  | author:
+sig2005-56 | Image Completion with Structure Propagation |  | author:
+sig2005-57 | GoLD: Interactive Display of Huge Colored and Textured Models |  | author:
+sig2005-58 | Far Voxels: A Multiresolution Framework for Interactive Rendering of Huge Complex 3D Models on Commodity Graphics Platforms |  | author:Enrico Gobbetti , Fabio Marton
+sig2005-59 | Cache-Oblivious Mesh Layouts |  | author:
+sig2005-60 | The Varrier Autostereoscopic Virtual Reality Display |  | author:Daniel J. Sandin ,  Todd Margolis,  Jinghua Ge ,  Javier Girado ,  Tom Peterka , Thomas A. DeFanti
+sig2005-61 | Animating Gases with Hybrid Meshes |  | author:Bryan Feldman ,  James F. O'Brien , Bryan M. Klingner
+sig2005-62 | A Vortex Particle Method for Smoke, Fire, and Explosions |  | author:
+sig2005-63 | Discontinuous Fluids |  | author:Jeong-Mo Hong 
+sig2005-64 | Water Drops on Surfaces |  | author:Huamin Wang ,  Peter J. Mucha 
+sig2005-65 | Adaptive Dynamics of Articulated Bodies |  | author:Stephane Redon ,  Nico Galoppo 
+sig2005-66 | Fast Frictional Dynamics for Rigid Bodies |  | author:Danny Kaufman ,  Timothy Edmunds 
+sig2005-67 | Meshless Animation of Fracturing Solids |  | author:
+sig2005-68 | Animating Sand as a Fluid |  | author:Yongning Zhu ,  Robert Bridson 
+sig2005-69 | Coupling Water and Smoke to Thin Deformable and Rigid Shells |  | author:
+sig2005-70 | Real-Time Subspace Integration for St.Venant-Kirchhoff Deformable Models |  | author:Jernej Barbic 
+sig2005-71 | Interactive Collision Detection Between Deformable Models Using Chromatic Decomposition |  | author:
+sig2005-72 | Resolution Independent Curve Rendering Using Programmable Graphics Hardware |  | author:Charles Loop 
+sig2005-73 | A Realtime GPU Subdivision Kernel |  | author:Le-Jeng Shiue ,  Ian Jones
+sig2005-74 | GPU-Based Trimming and Tessellation of NURBS and T-Spline Surfaces |  | author:Michael Guthe ,  Ákos Balázs 
+sig2005-75 | Blister: GPU-based rendering of Boolean combinations of free-form triangulated shapes |  | author:John Hable 
+sig2005-76 | Light Diffusion in Multi-Layered Translucent Materials |  | author:Craig Donner 
+sig2005-77 | A Practical Analytic Single Scattering Model for Real Time Rendering |  | author:
+sig2005-78 | An Approximate Image-Space Approach for Interactive Refraction |  | author:
+sig2005-79 | Modeling and Rendering of Quasi-Homogeneous Materials |  | author:
+sig2005-80 | Geostatistical Motion Interpolation |  | author:Tomohiko Mukai 
+sig2005-81 | Learning Physics-Based Motion Style With Nonlinear Inverse Optimization |  | author:
+sig2005-82 | Style Translation for Human Motion |  | author:
+sig2005-83 | A Data-Driven Approach to Quantifying Natural Human Motion |  | author:
+sig2005-84 | Lightcuts: A Scalable Approach to Illumination |  | author:Bruce Walter ,  Sebastian Fernandez ,  Adam Arbree ,  Kavita Bala ,  Michael Donikian 
+sig2005-85 | Fast and Detailed Approximate Global Illumination by Irradiance Decomposition |  | author:Okan Arikan ,  David Forsyth 
+sig2005-86 | A Frequency Analysis of Light Transport |  | author:
+sig2005-87 | Visual Simulation of Weathering by gamma-ton Tracing |  | author:
+sig2005-88 | As-Rigid-As-Possible Shape Manipulation |  | author:
+sig2005-89 | A Sketch-Based Interface for Detail-Preserving Mesh Editing |  | author:
+sig2005-90 | TextureMontage:Seamless Texturing of Arbitrary Surfaces From Multiple Images |  | author:
+sig2005-91 | Soft Shadow Volumes for Ray Tracing |  | author:
+sig2005-92 | Wavelet Importance Sampling: Efficiently Evaluating Products of Complex Functions |  | author:
+sig2005-93 | Multi-Level Ray Tracing Algorithm |  | author:Alexander Reshetov ,  Alexei Soupikov 
+sig2005-94 | Energy redistribution path tracing |  | author:David Cline,  Justin Talbot
+sig2005-95 | Precomputed Shadow Fields for Dynamic Scenes |  | author:Kun Zhou ,  Yaohua Hu,  Steve Lin ,  Baining Guo 
+sig2005-96 | All-frequency Interactive Relighting of Translucent Objects with Single and Multiple Scattering |  | author:Rui Wang ,  John Tran 
+sig2005-97 | Precomputed Local Radiance Transfer for Real-Time Lighting Design |  | author:
+sig2005-98 | Local, Deformable Precomputed Radiance Transfer |  | author:

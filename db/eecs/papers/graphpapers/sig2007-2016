@@ -1,104 +1,104 @@
-sig2007-1 | Image Deblurring with Blurred/Noisy Image Pairs |  | author:Lu Yuan, Jian Sun, Long Quan, Heung-Yeung Shum
-sig2007-2 | Solid Texture Synthesis from 2D Exemplars |  | author:Johannes Kopf, Chi-Wing Fu, Daniel Cohen-Or, Oliver Deussen, Dani Lischinski, Tien-Tsin Wong
-sig2007-3 | Photo Clip Art |  | author:Jean-François Lalonde ,  Derek Hoiem , Alexei A. Efros,  John Winn , Antonio Criminisi
-sig2007-4 | Scene Completion Using Millions of Photographs |  | author:James Hays , Alexei A. Efros
-sig2007-5 | Active Learning for Real-Time Motion Controllers |  | author:Seth Cooper, Aaron Hertzmann, Zoran Popović
-sig2007-6 | Responsive Characters from Motion Fragments |  | author:James McCann , Nancy Pollard
-sig2007-7 | Near-optimal Character Animation with Continuous Control |  | author:Adrien Treuille ,  Yongjoon Lee , Zoran Popović
-sig2007-8 | Constraint-Based Motion Optimization Using a Statistical Dynamic Model |  | author:Jin-Xiang Chai, Jessica K. Hodgins
-sig2007-9 | Soft Scissors : An Interactive Tool for Realtime High Quality Matting |  | author:Jue Wang, Maneesh Agrawala, Michael F. Cohen
-sig2007-10 | Seam Carving for Content-Aware Image Resizing |  | author:Shai Avidan, Ariel Shamir
-sig2007-11 | Image Vectorization Using Optimized Gradient Meshes |  | author:Jian Sun , Lin Liang, Fang Wen, Heung-Yeung Shum
-sig2007-12 | Detail-Preserving Shape Deformation in Image Editing |  | author:Hui Fang, John C. Hart
-sig2007-13 | Locally Controllable Stylized Shading |  | author:Hideki Todo, Ken Anjyo , William Baxter, Takeo Igarashi
-sig2007-14 | Line Drawings Via Abstracted Shading |  | author:Yunjin Lee , Lee Markosian, Seungyong Lee
-sig2007-15 | Apparent Ridges for Line Drawing |  | author:Tilke Judd , Frédo Durand, Computer Science and Artificial Intelligence Laboratory ) Edward H. Adelson,  Department of Brain and Cognitive Science and Computer Science and Artificial Intelligence Laboratory )
-sig2007-16 | Dynamic 2D Patterns for Shading 3D Scenes |  | author:Simon Breslav Karol Szerszen, Lee Markosian, Pascal Barla , Joëlle Thollot
-sig2007-17 | Global Non-Rigid Alignment of 3-D Scans |  | author:Benedict J. Brown , Szymon Rusinkiewicz
-sig2007-18 | Parameterization-free Projection for Geometry Reconstruction |  | author:Yaron Lipman , Daniel Cohen-Or , David Levin, Hillel Tal-Ezer
-sig2007-19 | Algebraic Point Set Surfaces |  | author:Gaël Guennebaud , Markus Gross
-sig2007-20 | Direct Visibility of Point Sets |  | author:Sagi Katz , Ayellet Tal, Ronen Basri
-sig2007-21 | The Lightspeed Automatic Interactive Lighting Preview System |  | author:Jonathan Ragan-Kelley, Doug Epps, Paul Green, Christophe Hery, Frédo Durand
-sig2007-22 | Matrix Row-Column Sampling for the Many-Light Problem |  | author:Milos Hasan, Fabio Pellacini, Kavita Bala
-sig2007-23 | Interactive Relighting with Dynamic BRDFs |  | author:Xin Sun, Kun Zhou ,Yanyun Chen, Stephen Lin, Jiaoying Shi, Baining Guo
-sig2007-24 | Frequency Domain Normal Map Filtering |  | author:Charles Han ,  Bo Sun ,  Ravi Ramamoorthi , Eitan Grinspun
-sig2007-25 | Image-guided maze construction |  | author:Jie Xu , Craig S. Kaplan
-sig2007-26 | Dynamic Planar Map Illustration |  | author:Paul AsenteMike SchusterTeri Pettit
-sig2007-27 | Interactive cutaway illustrations of complex 3D models |  | author:Wilmot Li , Lincoln Ritter, Maneesh Agrawala, Brian Curless , David Salesin
-sig2007-28 | Digital Bas-Relief From 3D Scenes |  | author:Tim Weyrich , Jia Deng, Connely Barnes,  Szymon Rusinkiewicz , Adam Finkelstein
-sig2007-29 | Multi-Scale Capture of Facial Geometry and Motion |  | author:Bernd Bickel , Mario Botsch Roland Angst,, Wojciech Matusik, Miguel A. Otaduy, Hanspeter Pfister, Markus Gross
-sig2007-30 | Capturing and Animating Occluded Cloth |  | author:Ryan White, Keenan Crane , David Forsyth
-sig2007-31 | Practical Motion Capture in Everyday Surroundings |  | author:Daniel Vlasic, Rolf Adelsberger, Giovanni Vannucci, John Barnwell, Markus Gross, Wojciech Matusik, Jovan Popović
-sig2007-32 | Prakash: Lighting-Aware Motion Capture Using Photosensing Markers and Multiplexed Illumination |  | author:Ramesh Raskar ,Hideaki Nii, Bert De Decker, Yuki Hashimoto Jay Summet ,Dylan Moore,Yong Zhao,Jonathan Westhues, Paul Dietz ,, Masahiko Inami, Shree Nayar, John Barnwell ,Michael Noland, Philippe Bekaert, Vlad Branzoi,Erich Burns
-sig2007-33 | Veiling Glare in High Dynamic Range Imaging |  | author:Eino-Ville Talvala ,  Andrew Adams ,  Mark Horowitz , Marc Levoy
-sig2007-34 | Do HDR Displays Support LDR Content? A Psychophysical Evaluation |  | author:Ahmet Oğuz Akyüz, Erik Reinhard, Roland Fleming ,Berhard E. Riecke, Heinrich H. Bülthoff
-sig2007-35 | Ldr2Hdr: On-the-Fly Reverse Tone Mapping of Legacy Video and Photographs |  | author:Allan G. Rempel , Matthew Trentacoste, Helge Seetzen, H. David Young, Wolfgang Heidrich , Lorne Whitehead, Greg Ward
-sig2007-36 | Rendering for an Interactive 360-Degree Light Field Display |  | author:Andrew Jones, Ian McDowall, Hideshi Yamada, Paul Debevec
-sig2007-37 | FiberMesh: Designing Freeform Surfaces with 3D Curves |  | author:Andrew Nealen, Olga Sorkine, Marc Alexa
-sig2007-38 | Editing The Topology of 3D Models by Sketching |  | author:Tao Ju , , Shi-Min Hu
-sig2007-39 | Interactive Topology-aware Surface Reconstruction |  | author:Andrei Sharf ,, Gil Shklarski, Sivan Toledo , Daniel Cohen-Or
-sig2007-40 | ShapePalettes: Interactive Normal Transfer Via Sketching |  | author:Tai-Pang Wu , Chi-Keung Tang, Michael S. Brown, Heung-Yeung Shum
-sig2007-41 | Plushie: An Interactive Design System for Plush Toys |  | author:Yuki Mori , Takeo Igarashi
-sig2007-42 | Curl Noise for Procedural Fluid Flow |  | author:Robert Bridson, Jim Hourihan, Markus Nordenstam
-sig2007-43 | Wrinkled Flames and Cellular Patterns |  | author:Jeong-Mo Hong ,  Tamar Shinar, Ron Fedkiw
-sig2007-44 | Adaptively Sampled Particle Fluids |  | author:Bart Adams, Mark Pauly , Richard Keiser, Leonidas Guibas
-sig2007-45 | Efficient Simulation of Inextensible Cloth |  | author:Rony Goldenthal, David Harmon, Raanan Fattal, Michel Bercovier, Eitan Grinspun
-sig2007-46 | TRACKS: Toward Directable Thin Shells |  | author:Miklós Bergou , Saurabh Mathur, Max Wardetzky, Eitan Grinspun
-sig2007-47 | Multiscale Shape and Detail Enhancement from Multi-light Image Collections |  | author:Raanan Fattal , Maneesh Agrawala, Szymon Rusinkiewicz
-sig2007-48 | Post-Production Facial Performance Relighting Using Reflectance Transfer |  | author:Pieter Peers, Naoki Tamura, Wojciech Matusik, Paul Debevec
-sig2007-49 | Interactive Editing and Modeling of Bidirectional Texture Functions |  | author:Jan Kautz, Solomon Boulos, FrédoDurand
-sig2007-50 | AppWand: Editing Measured Materials using Appearance-Driven Optimization |  | author:Fabio Pellacini, Jason Lawrence
-sig2007-51 | Rotational Symmetry Field Design on Surfaces |  | author:Eugene Zhang , Jonathan Palacios
-sig2007-52 | Design of Tangent Vector Fields |  | author:Matthew Fisher , Peter Schröder , Mathieu Desbrun, Hugues Hoppe
-sig2007-53 | Isosurface Stuffing: Fast Tetrahedral Meshes with Good Dihedral Angles |  | author:François Labelle , Jonathan Richard Shewchuk,  Berkeley )
-sig2007-54 | Robust On-line Computation of Reeb Graphs: Simplicity and Speed |  | author:Valerio Pascucci , Peer-Timo Bremer, Ajith Mascarenhas, Giorgio Scorzelli
-sig2007-55 | Eikonal Rendering: Efficient Light Transport in Refractive Objects |  | author:Ivo Ihrke , Gernot Ziegler ,Art Tevs, Christian Theobalt, Marcus Magnor, Hans-Peter Seidel
-sig2007-56 | Computing the Scattering Properties of Participating Media Using Generalized Lorenz-Mie Theory |  | author:Jeppe Revall Frisvad , Niels Jørgen Christensen, Henrik Wann Jensen
-sig2007-57 | Implicit Visibility and Antiradiance for Interactive Global Illumination |  | author:Carsten Dachsbacher, Marc Stamminger, George Drettakis, Frédo Durand
-sig2007-58 | A Theory of Locally Low Dimensional Light Transport |  | author:Dhruv Mahajan, Ira Kemelmacher Shlizerman, Ravi Ramamoorthi , Peter Belhumeur
-sig2007-59 | Symmetrization |  | author:Niloy Mitra, Mark Pauly
-sig2007-60 | Geometric Modeling in Shape Space |  | author:Martin Kilian ,  Niloy Mitra , Helmut Pottmann
-sig2007-61 | Geometry of Multilayer Freeform Structures for Architecture |  | author:Helmut Pottmann, Yang Liu, Johannes Wallner, Alexander Bobenko, Wenping Wang
-sig2007-62 | A Variational Approach to Eulerian Geometry Processing |  | author:Patrick Mullen ,  Alexander McKenzie ,  Yiying Tong , Mathieu Desbrun
-sig2007-63 | Active Refocusing of Images and Videos |  | author:Francesc Moreno-Noguer, Peter N. Belhumeur , Shree K. Nayar
-sig2007-64 | Multi-Aperture Photography |  | author:Paul Green, Wenyang Sun, Wojciech Matusik ,, Frédo Durand
-sig2007-65 | Dappled Photography: Mask-Enhanced Cameras for Heterodyned Light Fields and Coded Aperture Refocusing |  | author:Ashok Veeraraghavan, Ramesh Raskar , Amit Agrawal ,Ankit Mohan, Jack Tumblin
-sig2007-66 | Image and Depth from a Conventional Camera with a Coded Aperture |  | author:Anat Levin ,  Rob Fergus ,  Frédo Durand , Bill Freeman,  Computer Science and Artificial Intelligence Laboratory )
-sig2007-67 | Harmonic Coordinates for Character Articulation |  | author:Pushkar Joshi, Mark Meyer , Tony DeRose ,Brian Green,Tom Sanocki
-sig2007-68 | Automatic Rigging and Animation of 3D Characters |  | author:Ilya Baran , Jovan Popović
-sig2007-69 | Real-Time Enveloping with Rotational Regression |  | author:Robert Y. Wang, Jovan Popović
-sig2007-70 | Key Point Subspace Acceleration and Soft Caching |  | author:Mark Meyer , John Anderson
-sig2007-71 | Color Images Visible Under UV Light |  | author:Roger D. Hersch , Philipp Donz? Sylvain Chosson
-sig2007-72 | Visual Equivalence: Towards a new standard for Image Fidelity |  | author:Ganesh Ramanarayanan ,  James Ferwerda ,  Bruce Walter , Kavita Bala
-sig2007-73 | The Influence of Shape on the Perception of Material Reflectance |  | author:Peter Vangorp ,  Jurgen Laurijssen , Philip Dutré
-sig2007-74 | Sampling with Polyominoes |  | author:Victor Ostromoukhov
-sig2007-75 | Stochastic Simplification for Aggregate Detail |  | author:Rob CookJohn HalsteadMaxwell PlanckDavid Ryu
-sig2007-76 | Embedded Deformation for Shape Manipulation |  | author:Robert Sumner ,  Johannes Schmid, Mark Pauly
-sig2007-77 | Mesh Puppetry: Cascading Optimization of Mesh Deformation With Inverse Kinematics |  | author:Xiaohan Shi, Kun Zhou ,, Yiying Tong , Mathieu Desbrun, Hujun Bao , Baining Guo
-sig2007-78 | FastLSM: Fast Lattice Shape Matching for Robust Real-Time Deformation |  | author:Alec R. Rivers , Doug L. James
-sig2007-79 | Handle-Aware Isolines for Scalable Shape Editing |  | author:Oscar Kin-Chung Au , Hongbo Fu , Chiew-Lan Tai, Daniel Cohen-Or
-sig2007-80 | Gradient Domain Editing of Deforming Mesh Sequences |  | author:Weiwei Xu, Kun Zhou ,, Yizhou Yu, Qifeng Tan, Qunsheng Peng , Baining Guo
-sig2007-81 | Image-based Procedural Modeling of Facades |  | author:Pascal Müller , Gang Zeng, Peter Wonka, Luc Van Gool
-sig2007-82 | VideoTrace: Rapid Interactive Scene Modeling From Video |  | author:Anton van den Hengel , Anthony Dick , Thorsten Thormaehlen ,Ben Ward, Philip H. S. Torr
-sig2007-83 | Image-based Tree Modeling |  | author:Ping Tan , Gang Zeng , Jingdong Wang, Sing Bing Kang, Long Quan
-sig2007-84 | Approximate Image-Based Tree-Modelling Using Particle Flows |  | author:Boris Neubert ,  Tommy Franken, Oliver Deussen
-sig2007-85 | Fast Triangle Reordering for Vertex Locality and Reduced Overdraw |  | author:Pedro Sander, Diego Nehab, Josh Barczak
-sig2007-86 | A Hardware Architecture for Surface Splatting |  | author:Tim Weyrich, Simon Heinzle, Timo Aila, Daniel B. Fasnacht,Stephan Oetiker, Mario Botsch ,Cyril Flaig,Simon Mall,Kaspar Rohrer,Norbert Felber,Hubert Kaeslin, Markus Gross
-sig2007-87 | Direct Manipulation of Subdivision Surfaces on GPUs |  | author:Kun Zhou ,  Xin Huang,  Weiwei Xu,  Baining Guo , Heung-Yeung Shum
-sig2007-88 | PCU: The Programmable Culling Unit |  | author:Jon Hasselgren , Tomas Akenine-Möller
-sig2007-89 | Capturing and Viewing Gigapixel Images |  | author:Johannes Kopf, Matt Uyttendaele, Oliver Deussen, Michael Cohen
-sig2007-90 | Efficient Gradient-Domain Compositing Using Quadtrees |  | author:Aseem Agarwala,  Inc. )
-sig2007-91 | Image Upsampling via Imposed Edges Statistics |  | author:Raanan Fattal,  Berkeley )
-sig2007-92 | Joint Bilateral Upsampling |  | author:Johannes Kopf, Michael Cohen, Dani Lischinski, Matt Uyttendaele
-sig2007-93 | Bubbling and Frothing Liquids |  | author:Paul Cleary, Soon Hyoung Pyo, Mahesh Prakash, Bon Ki Koo
-sig2007-94 | Simulation of Bubbles in Foam With Volume Control |  | author:ByungMoon Kim , Yingjie Liu, Xiangmin Jiao, Jarek Rossignac
-sig2007-95 | Wave Particles |  | author:Cem Yuksel ,  Donald H. House , John C. Keyser
-sig2007-96 | A Fast Variational Framework for Accurate Solid-Fluid Coupling |  | author:Christopher Batty ,  Florence Bertails , Robert Bridson
-sig2007-97 | Factored Time-Lapse Video |  | author:Kalyan Sunkavalli , Wojciech Matusik , Hanspeter Pfister, Szymon Rusinkiewicz
-sig2007-98 | Computational Time-Lapse Video |  | author:Eric P. Bennett , Leonard McMillan
-sig2007-99 | Real-Time Edge-Aware Image Processing With the Bilateral Grid |  | author:Jiawen Chen ,  Sylvain Paris , Frédo Durand,  Computer Science and ArtificialIntelligence Laboratory )
-sig2007-100 | Video Watercolorization using Bidirectional Texture Advection |  | author:Adrien Bousseau, Joëlle Thollot
-sig2007-101 | SIMBICON: Simple Biped Locomotion Control |  | author:Kangkang Yin ,  Kevin Loken , Michiel van de Panne
-sig2007-102 | Construction and Optimal Search of Interpolated Motion Graphs |  | author:Alla Safonova , Jessica K. Hodgins
-sig2007-103 | Simulating Biped Behaviors From Human Motion Data |  | author:Kwang Won Sok ,  Manmyung Kim , Jehee Lee
-sig2007-104 | Efficient Symbolic Differentiation for Graphics Applications |  | author:Brian K. Guenter
+sig2007-1 | Image Deblurring with Blurred/Noisy Image Pairs |  | author:
+sig2007-2 | Solid Texture Synthesis from 2D Exemplars |  | author:
+sig2007-3 | Photo Clip Art |  | author:Jean-François Lalonde ,  Derek Hoiem ,  John Winn 
+sig2007-4 | Scene Completion Using Millions of Photographs |  | author:James Hays 
+sig2007-5 | Active Learning for Real-Time Motion Controllers |  | author:
+sig2007-6 | Responsive Characters from Motion Fragments |  | author:James McCann 
+sig2007-7 | Near-optimal Character Animation with Continuous Control |  | author:Adrien Treuille ,  Yongjoon Lee 
+sig2007-8 | Constraint-Based Motion Optimization Using a Statistical Dynamic Model |  | author:
+sig2007-9 | Soft Scissors : An Interactive Tool for Realtime High Quality Matting |  | author:
+sig2007-10 | Seam Carving for Content-Aware Image Resizing |  | author:
+sig2007-11 | Image Vectorization Using Optimized Gradient Meshes |  | author:Jian Sun , Lin Liang, Fang Wen
+sig2007-12 | Detail-Preserving Shape Deformation in Image Editing |  | author:
+sig2007-13 | Locally Controllable Stylized Shading |  | author:
+sig2007-14 | Line Drawings Via Abstracted Shading |  | author:
+sig2007-15 | Apparent Ridges for Line Drawing |  | author:Tilke Judd , Frédo Durand
+sig2007-16 | Dynamic 2D Patterns for Shading 3D Scenes |  | author:
+sig2007-17 | Global Non-Rigid Alignment of 3-D Scans |  | author:Benedict J. Brown 
+sig2007-18 | Parameterization-free Projection for Geometry Reconstruction |  | author:
+sig2007-19 | Algebraic Point Set Surfaces |  | author:Gaël Guennebaud 
+sig2007-20 | Direct Visibility of Point Sets |  | author:
+sig2007-21 | The Lightspeed Automatic Interactive Lighting Preview System |  | author:
+sig2007-22 | Matrix Row-Column Sampling for the Many-Light Problem |  | author:
+sig2007-23 | Interactive Relighting with Dynamic BRDFs |  | author:
+sig2007-24 | Frequency Domain Normal Map Filtering |  | author:Charles Han ,  Bo Sun ,  Ravi Ramamoorthi 
+sig2007-25 | Image-guided maze construction |  | author:Jie Xu 
+sig2007-26 | Dynamic Planar Map Illustration |  | author:
+sig2007-27 | Interactive cutaway illustrations of complex 3D models |  | author:
+sig2007-28 | Digital Bas-Relief From 3D Scenes |  | author:Tim Weyrich , Jia Deng, Connely Barnes,  Szymon Rusinkiewicz 
+sig2007-29 | Multi-Scale Capture of Facial Geometry and Motion |  | author:
+sig2007-30 | Capturing and Animating Occluded Cloth |  | author:
+sig2007-31 | Practical Motion Capture in Everyday Surroundings |  | author:
+sig2007-32 | Prakash: Lighting-Aware Motion Capture Using Photosensing Markers and Multiplexed Illumination |  | author:
+sig2007-33 | Veiling Glare in High Dynamic Range Imaging |  | author:Eino-Ville Talvala ,  Andrew Adams ,  Mark Horowitz 
+sig2007-34 | Do HDR Displays Support LDR Content? A Psychophysical Evaluation |  | author:
+sig2007-35 | Ldr2Hdr: On-the-Fly Reverse Tone Mapping of Legacy Video and Photographs |  | author:
+sig2007-36 | Rendering for an Interactive 360-Degree Light Field Display |  | author:
+sig2007-37 | FiberMesh: Designing Freeform Surfaces with 3D Curves |  | author:
+sig2007-38 | Editing The Topology of 3D Models by Sketching |  | author:Tao Ju 
+sig2007-39 | Interactive Topology-aware Surface Reconstruction |  | author:
+sig2007-40 | ShapePalettes: Interactive Normal Transfer Via Sketching |  | author:
+sig2007-41 | Plushie: An Interactive Design System for Plush Toys |  | author:Yuki Mori 
+sig2007-42 | Curl Noise for Procedural Fluid Flow |  | author:
+sig2007-43 | Wrinkled Flames and Cellular Patterns |  | author:Jeong-Mo Hong ,  Tamar Shinar
+sig2007-44 | Adaptively Sampled Particle Fluids |  | author:
+sig2007-45 | Efficient Simulation of Inextensible Cloth |  | author:
+sig2007-46 | TRACKS: Toward Directable Thin Shells |  | author:
+sig2007-47 | Multiscale Shape and Detail Enhancement from Multi-light Image Collections |  | author:
+sig2007-48 | Post-Production Facial Performance Relighting Using Reflectance Transfer |  | author:
+sig2007-49 | Interactive Editing and Modeling of Bidirectional Texture Functions |  | author:
+sig2007-50 | AppWand: Editing Measured Materials using Appearance-Driven Optimization |  | author:
+sig2007-51 | Rotational Symmetry Field Design on Surfaces |  | author:Eugene Zhang 
+sig2007-52 | Design of Tangent Vector Fields |  | author:
+sig2007-53 | Isosurface Stuffing: Fast Tetrahedral Meshes with Good Dihedral Angles |  | author:François Labelle , Jonathan Richard Shewchuk
+sig2007-54 | Robust On-line Computation of Reeb Graphs: Simplicity and Speed |  | author:Valerio Pascucci , Peer-Timo Bremer, Ajith Mascarenhas
+sig2007-55 | Eikonal Rendering: Efficient Light Transport in Refractive Objects |  | author:
+sig2007-56 | Computing the Scattering Properties of Participating Media Using Generalized Lorenz-Mie Theory |  | author:
+sig2007-57 | Implicit Visibility and Antiradiance for Interactive Global Illumination |  | author:
+sig2007-58 | A Theory of Locally Low Dimensional Light Transport |  | author:
+sig2007-59 | Symmetrization |  | author:
+sig2007-60 | Geometric Modeling in Shape Space |  | author:Martin Kilian ,  Niloy Mitra 
+sig2007-61 | Geometry of Multilayer Freeform Structures for Architecture |  | author:
+sig2007-62 | A Variational Approach to Eulerian Geometry Processing |  | author:Patrick Mullen ,  Alexander McKenzie ,  Yiying Tong 
+sig2007-63 | Active Refocusing of Images and Videos |  | author:
+sig2007-64 | Multi-Aperture Photography |  | author:
+sig2007-65 | Dappled Photography: Mask-Enhanced Cameras for Heterodyned Light Fields and Coded Aperture Refocusing |  | author:
+sig2007-66 | Image and Depth from a Conventional Camera with a Coded Aperture |  | author:Anat Levin ,  Rob Fergus ,  Frédo Durand , Bill Freeman
+sig2007-67 | Harmonic Coordinates for Character Articulation |  | author:
+sig2007-68 | Automatic Rigging and Animation of 3D Characters |  | author:Ilya Baran 
+sig2007-69 | Real-Time Enveloping with Rotational Regression |  | author:
+sig2007-70 | Key Point Subspace Acceleration and Soft Caching |  | author:Mark Meyer 
+sig2007-71 | Color Images Visible Under UV Light |  | author:Roger D. Hersch 
+sig2007-72 | Visual Equivalence: Towards a new standard for Image Fidelity |  | author:Ganesh Ramanarayanan ,  James Ferwerda ,  Bruce Walter 
+sig2007-73 | The Influence of Shape on the Perception of Material Reflectance |  | author:Peter Vangorp ,  Jurgen Laurijssen 
+sig2007-74 | Sampling with Polyominoes |  | author:
+sig2007-75 | Stochastic Simplification for Aggregate Detail |  | author:
+sig2007-76 | Embedded Deformation for Shape Manipulation |  | author:Robert Sumner ,  Johannes Schmid
+sig2007-77 | Mesh Puppetry: Cascading Optimization of Mesh Deformation With Inverse Kinematics |  | author:
+sig2007-78 | FastLSM: Fast Lattice Shape Matching for Robust Real-Time Deformation |  | author:Alec R. Rivers 
+sig2007-79 | Handle-Aware Isolines for Scalable Shape Editing |  | author:
+sig2007-80 | Gradient Domain Editing of Deforming Mesh Sequences |  | author:
+sig2007-81 | Image-based Procedural Modeling of Facades |  | author:
+sig2007-82 | VideoTrace: Rapid Interactive Scene Modeling From Video |  | author:
+sig2007-83 | Image-based Tree Modeling |  | author:
+sig2007-84 | Approximate Image-Based Tree-Modelling Using Particle Flows |  | author:Boris Neubert ,  Tommy Franken
+sig2007-85 | Fast Triangle Reordering for Vertex Locality and Reduced Overdraw |  | author:
+sig2007-86 | A Hardware Architecture for Surface Splatting |  | author:
+sig2007-87 | Direct Manipulation of Subdivision Surfaces on GPUs |  | author:Kun Zhou ,  Xin Huang,  Weiwei Xu,  Baining Guo 
+sig2007-88 | PCU: The Programmable Culling Unit |  | author:Jon Hasselgren 
+sig2007-89 | Capturing and Viewing Gigapixel Images |  | author:
+sig2007-90 | Efficient Gradient-Domain Compositing Using Quadtrees |  | author:Aseem Agarwala
+sig2007-91 | Image Upsampling via Imposed Edges Statistics |  | author:Raanan Fattal
+sig2007-92 | Joint Bilateral Upsampling |  | author:
+sig2007-93 | Bubbling and Frothing Liquids |  | author:
+sig2007-94 | Simulation of Bubbles in Foam With Volume Control |  | author:
+sig2007-95 | Wave Particles |  | author:Cem Yuksel ,  Donald H. House 
+sig2007-96 | A Fast Variational Framework for Accurate Solid-Fluid Coupling |  | author:Christopher Batty ,  Florence Bertails 
+sig2007-97 | Factored Time-Lapse Video |  | author:
+sig2007-98 | Computational Time-Lapse Video |  | author:Eric P. Bennett 
+sig2007-99 | Real-Time Edge-Aware Image Processing With the Bilateral Grid |  | author:Jiawen Chen ,  Sylvain Paris , Frédo Durand
+sig2007-100 | Video Watercolorization using Bidirectional Texture Advection |  | author:
+sig2007-101 | SIMBICON: Simple Biped Locomotion Control |  | author:Kangkang Yin ,  Kevin Loken 
+sig2007-102 | Construction and Optimal Search of Interpolated Motion Graphs |  | author:Alla Safonova 
+sig2007-103 | Simulating Biped Behaviors From Human Motion Data |  | author:Kwang Won Sok ,  Manmyung Kim 
+sig2007-104 | Efficient Symbolic Differentiation for Graphics Applications |  | author:

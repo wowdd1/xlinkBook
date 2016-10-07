@@ -1,66 +1,66 @@
-siga2014-1 | Autocomplete Painting Repetitions |  | author:Jun Xing, Tim Chen, Li-Yi Wei
-siga2014-2 | BiggerPicture: Data-Driven Image Extrapolation Using Graph Matching |  | author:Miao Wang, Yu-Kun Lai, Yuan Liang, Ralph R. Martin, Shi-Min Hu
-siga2014-3 | Sketch Classification and Classification-Driven Analysis using Fisher Vectors |  | author:Rosalia Schneider Tinne Tuytelaars
-siga2014-4 | Data-driven Segmentation and Labeling of Freehand Sketches |  | author:Zhe Huang,  Hongbo Fu , Rynson Lau
-siga2014-5 | ConstructAide: Analyzing and Visualizing Construction Sites through Photographs and Building Models |  | author:Kevin Karsch ,  Mani Golparvar-Fard,  , David Forsyth
-siga2014-6 | Anisotropic Simplicial Meshing Using Local Convex Functions |  | author:Xiaoming Fu, Yang Liu, John Snyder, Baining Guo
-siga2014-7 | Dual Strip Weaving: Interactive Design of Quad Layouts using Elastica Strips |  | author:Marcel Campen , Leif Kobbelt
-siga2014-8 | Level-of-Detail Quad Meshing |  | author:Hans-Christian Ebke ,  Marcel Campen ,  David Bommes , Leif Kobbelt
-siga2014-9 | Field-Aligned Mesh Joinery |  | author:Paolo Cignoni , Nico Pietroni, Luigi Malomo, Roberto Scopigno
-siga2014-10 | Strict Minimizers for Geometric Optimization |  | author:Zohar Levi, Denis Zorin
-siga2014-11 | A Framework for Transient Rendering |  | author:Adrian Jarabo , Julio Marco, Adolfo Munoz, Raul Buisan, Wojciech Jarosz, Diego Gutierrez
-siga2014-12 | Improved Sampling for Gradient-Domain Metropolis Light Transport |  | author:Marco Manzi , Fabrice Rousselle, Markus Kettunen, Jaakko Lehtinen, Matthias Zwicker
-siga2014-13 | Residual Ratio Tracking for Estimating Attenuation in Heterogeneous Volumes |  | author:Jan Novak, Andrew Selle, Wojciech Jarosz
-siga2014-14 | A Framework for the Experimental Comparison of Solar and Skydome Illumination |  | author:Joseph T. Kider Jr ,  Daniel Knowlton ,  Jeremy Newlin ,  Yining Karl Li , Donald P. Greenberg,  Cornell University )
-siga2014-15 | Rendering Volumetric Haptic Shapes in Mid-air Using Ultrasound |  | author:Benjamin Long ,  Sue Ann Seah ,  Tom Carter, Sriram Subramanian
-siga2014-16 | Fast and Exact Continuous Collision Detection with Bernstein Sign Classification |  | author:Min Tang , Ruofeng Tong, Zhendong Wang, Dinesh Manocha
-siga2014-17 | Co-Constrained Handles for Deformation in Shape Collections |  | author:M. Ersin Yumer , Levent Burak Kara
-siga2014-18 | Local Barycentric Coordinates |  | author:Juyong Zhang, Bailin Deng ,, Zishun Liu, Giuseppe Patane, Sofien Bouaziz, Kai Hormann, Ligang Liu
-siga2014-19 | Robust Iso-Surface Tracking for Interactive Character Skinning |  | author:Rodolphe Vaillant, Gael Guennebaud, Loic Barthe, Brian Wyvill, Marie-Paule Cani
-siga2014-20 | Skinning Cubic Bezier Splines and Catmull-Clark Subdivision Surfaces |  | author:Songrun Liu, Alec Jacobson, Yotam Gingold
-siga2014-21 | Toward BxDF Display using Multilayer Diffraction |  | author:Genzhi Ye, Sundeep Jolly , V. Micheal Bove, Jr., Qionghai Dai, Ramesh Raskar, Gordon Wetzstein
-siga2014-22 | Improving Visual Quality of View Transitions in Automultiscopic Displays |  | author:Song-Pei Du, Piotr Didyk , Fredo Durand, Shi-Min Hu, Wojciech Matusik
-siga2014-23 | Appearance-from-Motion: Recovering Spatially Varying Surface Reflectance under Unknown Lighting |  | author:Yue Dong, Pieter Peers, Jiawan Zhang, Xin Tong
-siga2014-24 | AppIm: Linear Spaces for Image-based Appearance Editing |  | author:Francesco Di Renzo,  Claudio Calabrese, Fabio Pellacini
-siga2014-25 | Local random-phase noise for procedural texturing |  | author:G. Gilet, Basile Sauvage Kenneth Vanhoey Jean-Michel Dischler D. Ghazanfarpour
-siga2014-26 | Real-time Shading-based Refinement for Consumer Depth Cameras |  | author:Chenglei Wu, Michael Zollhofer, Matthias Nießner, Marc Stamminger, Shahram Izadi, Christian Theobalt
-siga2014-27 | Robust Surface Reconstruction via Dictionary Learning |  | author:Shiyao Xiong, Juyong Zhang, Jianmin Zheng , Jianfei Cai, Ligang Liu
-siga2014-28 | Morfit: Interactive Surface Reconstruction from Incomplete Point Clouds with Curve-Driven Topology and Geometry Control |  | author:Kangxue Yin , Hui Huang, Hao Zhang, Minglun Gong, Daniel Cohen-Or, Baoquan Chen
-siga2014-29 | Quality-driven Poisson-guided Autoscanning |  | author:Shihao Wu , Wei Sun , Pinxin Long , Hui Huang, Daniel Cohen-Or, Minglun Gong, Oliver Deussen, Baoquan Chen
-siga2014-30 | Temporally Coherent Local Tone Mapping of HDR Video |  | author:Tunc Aydin , Nikolce Stefanoski, Simone Croci, Markus Gross, Aljosa Smolic
-siga2014-31 | Interactive Intrinsic Video Editing |  | author:Nicolas Bonneel, Kalyan Sunkavalli, James Tompkin, Deqing Sun, Sylvain Paris, Hanspeter Pfister
-siga2014-32 | TrackCam: 3D-aware Tracking Shots from Consumer Video |  | author:Shuaicheng Liu, Jue Wang , Sunghyun Cho, Ping Tan
-siga2014-33 | Slippage-free Background Replacement for Hand-held Video |  | author:Fan Zhong , Song Yang, Xueying Qin, Dani Lischinski, Daniel Cohen-Or, Baoquan Chen
-siga2014-34 | Windy Trees: Computing Stress Response for Developmental Tree Models |  | author:Soren Pirk, Till Niese, Torsten Hadrich, Bedrich Benes, Oliver Deussen
-siga2014-35 | SPGrid: A Sparse Paged Grid Structure Applied to Adaptive Smoke Simulation |  | author:Rajasekhar Setaluri ,  Mridul Aanjaneya Sean Bauer, Eftychios Sifakis
-siga2014-36 | Particle-particle Particle-mesh |  | author:Xinxin Zhang, Robert Bridson
-siga2014-37 | Multiple-Fluid SPH Simulation Using a Mixture Model |  | author:Bo Ren, Chenfeng Li, Xiao Yan, Ming C. Lin, Javier Bonet, Shi-Min Hu
-siga2014-38 | Yarn-Level Simulation of Woven Cloth |  | author:Gabriel Cirio , Jorge Lopez-Moreno , David Miraut, Miguel A. Otaduy
-siga2014-39 | Automatic Semantic Modeling of Indoor Scenes from Low-quality RGB-D Data using Contextual Information |  | author:Kang Chen, Yu-Kun Lai, Yu-Xin Wu, Ralph R. Martin, Shi-Min Hu
-siga2014-40 | Imagining the Unseen: Stability-based Cuboid Arrangements for Scene Understanding |  | author:Tianjia Shao, Aron Monszpart, Youyi Zheng, Bongjin Koo, Weiwei Xu, Kun Zhou, Niloy J. Mitra
-siga2014-41 | Structure Completion for Facade Layouts |  | author:Lubin Fan, Przemyslaw Musialski, Ligang Liu, Peter Wonka
-siga2014-42 | Creating Consistent Scene Graphs Using a Probabilistic Grammar |  | author:Tianqiang Liu , Siddhartha Chaudhuri, Vladimir G. Kim , Qi-Xing Huang, Niloy J. Mitra, Thomas Funkhouser
-siga2014-43 | SceneGrok: Inferring Action Maps in 3D Environments |  | author:Manolis Savva ,  Angel X. Chang ,  Pat Hanrahan ,  Matthew Fisher , Matthias Nießner
-siga2014-44 | Approximate Pyramidal Shape Decomposition |  | author:Ruizhen Hu, Honghua Li , Hao Zhang, Daniel Cohen-Or
-siga2014-45 | Assembling Self-Supporting Structures |  | author:Mario Deuss, Daniele Panozzo , Emily Whiting, Yang Liu, Philippe Block Olga Sorkine-Hornung, Mark Pauly
-siga2014-46 | Topology-constrained Synthesis of Vector Patterns |  | author:Shizhe Zhou , Changyun Jiang, Sylvain Lefebvre
-siga2014-47 | Appearance-Mimicking Surfaces |  | author:Christian Schuller ,  Daniele Panozzo , Olga Sorkine-Hornung
-siga2014-48 | Creating Works-Like Prototypes of Mechanical Objects |  | author:Bongjin Koo, Wilmot Li, JiaXian Yao, Maneesh Agrawala, Niloy J. Mitra
-siga2014-49 | Locomotion Control for Many-Muscle Humanoids |  | author:Yoonsang Lee, Moon Seok Park, Taesoo Kwon, Jehee Lee
-siga2014-50 | Generating and Ranking Diverse Multi-Character Interactions |  | author:Jungdam Won , Kyungho Lee, Jessica Hodgins, Jehee Lee
-siga2014-51 | MoSh: Motion and Shape Capture from Sparse Markers |  | author:Matthew Loper ,  Naureen Mahmood , Michael J. Black
-siga2014-52 | Leveraging Depth Cameras and Wearbale Pressure Sensors for Full-body Kinematics and dynamics Capture |  | author:Peizhao Zhang, Kristin Siu, Jianjie Zhang, C. Karen Liu, Jinxiang Chai
-siga2014-53 | Automatic Acquisition of High-fidelity Facial Performance Using Monocular videos |  | author:Fuhao Shi, Hsiang-Tao Wu, Xin Tong, Jinxiang Chai
-siga2014-54 | High-Quality Capture of Eyes |  | author:Pascal Berard, Derek Bradley , Thabo Beeler , Maurizio Nitti, Markus Gross
-siga2014-55 | Dynamic Hair Capture using Spacetime Optimization |  | author:Zexiang Xu, Hsiang-Tao Wu, Lvdi Wang, Changxi Zheng, Xin Tong , Yue Qi
-siga2014-56 | Capturing Braided Hairstyles |  | author:Liwen Hu , Chongyang Ma, Linjie Luo, Hao Li
-siga2014-57 | Automatic Shader Simplification Using Surface Signal Approximation |  | author:Rui Wang , Xianjin Yang, Yazhen Yuan, Wei Chen, Kavita Bala, Hujun Bao
-siga2014-58 | Deep Shading Buffers on Commodity GPUs |  | author:Petrik Clarberg , Jacob Munkberg
-siga2014-59 | Whippletree: Task-based Scheduling of Dynamic Workloads on the GPU |  | author:Markus Steinberger ,  Michael Kenzel ,  Pedro Boechat,  Bernhard Kerbl,  Mark Dokter, Dieter Schmalstieg
-siga2014-60 | Massively-parallel vector graphics |  | author:Francisco Ganacim ,  Rodolfo Lima ,  Diego Nehab , Luiz Henrique de Figueiredo
-siga2014-61 | Hierarchical Diffusion Curves for Accurate Automatic Image Vectorization |  | author:Guofu Xie, Xin Sun Xin Tong, Derek Nowrouzezahrai
-siga2014-62 | FlexISP: A Flexible Camera Image Processing Framework |  | author:Felix Heide, Markus Steinberger, Yun-Ta Tsai, Mushfiqur Rouf, Dawid Pajak , Dikpal Reddy , Orazio Gallo, Jing Liu, Wolfgang Heidrich, Karen Egiazarian, Jan Kautz, Kari Pulli
-siga2014-63 | Fast Burst Images Denoising |  | author:Ziwei Liu, Lu Yuan, Xiaoou Tang, Matt Uyttendaele, Jian Sun
-siga2014-64 | Spatial-spectral Encoded Compressive Hyperspectral Imaging |  | author:Xing Lin ,  Yebin Liu ,  Jiamin Wu, Qiong-Hai Dai,  Beijing )
-siga2014-65 | Mirror Mirror: Crowdsourcing Better Portraits |  | author:Jun-Yan Zhu, Aseem Agarwala, Alexei Efros, Eli Shechtman , Jue Wang
-siga2014-66 | Compute for mobile devices: performance-focused hands-on tutorial |  | author:Maxim Shevtsov
+siga2014-1 | Autocomplete Painting Repetitions |  | author:
+siga2014-2 | BiggerPicture: Data-Driven Image Extrapolation Using Graph Matching |  | author:
+siga2014-3 | Sketch Classification and Classification-Driven Analysis using Fisher Vectors |  | author:
+siga2014-4 | Data-driven Segmentation and Labeling of Freehand Sketches |  | author:Zhe Huang,  Hongbo Fu 
+siga2014-5 | ConstructAide: Analyzing and Visualizing Construction Sites through Photographs and Building Models |  | author:Kevin Karsch ,  Mani Golparvar-Fard,  
+siga2014-6 | Anisotropic Simplicial Meshing Using Local Convex Functions |  | author:
+siga2014-7 | Dual Strip Weaving: Interactive Design of Quad Layouts using Elastica Strips |  | author:Marcel Campen 
+siga2014-8 | Level-of-Detail Quad Meshing |  | author:Hans-Christian Ebke ,  Marcel Campen ,  David Bommes 
+siga2014-9 | Field-Aligned Mesh Joinery |  | author:
+siga2014-10 | Strict Minimizers for Geometric Optimization |  | author:
+siga2014-11 | A Framework for Transient Rendering |  | author:
+siga2014-12 | Improved Sampling for Gradient-Domain Metropolis Light Transport |  | author:
+siga2014-13 | Residual Ratio Tracking for Estimating Attenuation in Heterogeneous Volumes |  | author:
+siga2014-14 | A Framework for the Experimental Comparison of Solar and Skydome Illumination |  | author:Joseph T. Kider Jr ,  Daniel Knowlton ,  Jeremy Newlin ,  Yining Karl Li , Donald P. Greenberg
+siga2014-15 | Rendering Volumetric Haptic Shapes in Mid-air Using Ultrasound |  | author:Benjamin Long ,  Sue Ann Seah ,  Tom Carter
+siga2014-16 | Fast and Exact Continuous Collision Detection with Bernstein Sign Classification |  | author:
+siga2014-17 | Co-Constrained Handles for Deformation in Shape Collections |  | author:M. Ersin Yumer 
+siga2014-18 | Local Barycentric Coordinates |  | author:
+siga2014-19 | Robust Iso-Surface Tracking for Interactive Character Skinning |  | author:
+siga2014-20 | Skinning Cubic Bezier Splines and Catmull-Clark Subdivision Surfaces |  | author:
+siga2014-21 | Toward BxDF Display using Multilayer Diffraction |  | author:
+siga2014-22 | Improving Visual Quality of View Transitions in Automultiscopic Displays |  | author:
+siga2014-23 | Appearance-from-Motion: Recovering Spatially Varying Surface Reflectance under Unknown Lighting |  | author:
+siga2014-24 | AppIm: Linear Spaces for Image-based Appearance Editing |  | author:Francesco Di Renzo,  Claudio Calabrese
+siga2014-25 | Local random-phase noise for procedural texturing |  | author:G. Gilet
+siga2014-26 | Real-time Shading-based Refinement for Consumer Depth Cameras |  | author:
+siga2014-27 | Robust Surface Reconstruction via Dictionary Learning |  | author:
+siga2014-28 | Morfit: Interactive Surface Reconstruction from Incomplete Point Clouds with Curve-Driven Topology and Geometry Control |  | author:
+siga2014-29 | Quality-driven Poisson-guided Autoscanning |  | author:
+siga2014-30 | Temporally Coherent Local Tone Mapping of HDR Video |  | author:
+siga2014-31 | Interactive Intrinsic Video Editing |  | author:
+siga2014-32 | TrackCam: 3D-aware Tracking Shots from Consumer Video |  | author:
+siga2014-33 | Slippage-free Background Replacement for Hand-held Video |  | author:
+siga2014-34 | Windy Trees: Computing Stress Response for Developmental Tree Models |  | author:
+siga2014-35 | SPGrid: A Sparse Paged Grid Structure Applied to Adaptive Smoke Simulation |  | author:Rajasekhar Setaluri ,  Mridul Aanjaneya Sean Bauer
+siga2014-36 | Particle-particle Particle-mesh |  | author:
+siga2014-37 | Multiple-Fluid SPH Simulation Using a Mixture Model |  | author:
+siga2014-38 | Yarn-Level Simulation of Woven Cloth |  | author:
+siga2014-39 | Automatic Semantic Modeling of Indoor Scenes from Low-quality RGB-D Data using Contextual Information |  | author:
+siga2014-40 | Imagining the Unseen: Stability-based Cuboid Arrangements for Scene Understanding |  | author:
+siga2014-41 | Structure Completion for Facade Layouts |  | author:
+siga2014-42 | Creating Consistent Scene Graphs Using a Probabilistic Grammar |  | author:
+siga2014-43 | SceneGrok: Inferring Action Maps in 3D Environments |  | author:Manolis Savva ,  Angel X. Chang ,  Pat Hanrahan ,  Matthew Fisher 
+siga2014-44 | Approximate Pyramidal Shape Decomposition |  | author:
+siga2014-45 | Assembling Self-Supporting Structures |  | author:
+siga2014-46 | Topology-constrained Synthesis of Vector Patterns |  | author:
+siga2014-47 | Appearance-Mimicking Surfaces |  | author:Christian Schuller ,  Daniele Panozzo 
+siga2014-48 | Creating Works-Like Prototypes of Mechanical Objects |  | author:
+siga2014-49 | Locomotion Control for Many-Muscle Humanoids |  | author:
+siga2014-50 | Generating and Ranking Diverse Multi-Character Interactions |  | author:
+siga2014-51 | MoSh: Motion and Shape Capture from Sparse Markers |  | author:Matthew Loper ,  Naureen Mahmood 
+siga2014-52 | Leveraging Depth Cameras and Wearbale Pressure Sensors for Full-body Kinematics and dynamics Capture |  | author:
+siga2014-53 | Automatic Acquisition of High-fidelity Facial Performance Using Monocular videos |  | author:
+siga2014-54 | High-Quality Capture of Eyes |  | author:
+siga2014-55 | Dynamic Hair Capture using Spacetime Optimization |  | author:
+siga2014-56 | Capturing Braided Hairstyles |  | author:
+siga2014-57 | Automatic Shader Simplification Using Surface Signal Approximation |  | author:
+siga2014-58 | Deep Shading Buffers on Commodity GPUs |  | author:Petrik Clarberg 
+siga2014-59 | Whippletree: Task-based Scheduling of Dynamic Workloads on the GPU |  | author:Markus Steinberger ,  Michael Kenzel ,  Pedro Boechat,  Bernhard Kerbl,  Mark Dokter
+siga2014-60 | Massively-parallel vector graphics |  | author:Francisco Ganacim ,  Rodolfo Lima ,  Diego Nehab 
+siga2014-61 | Hierarchical Diffusion Curves for Accurate Automatic Image Vectorization |  | author:
+siga2014-62 | FlexISP: A Flexible Camera Image Processing Framework |  | author:
+siga2014-63 | Fast Burst Images Denoising |  | author:
+siga2014-64 | Spatial-spectral Encoded Compressive Hyperspectral Imaging |  | author:Xing Lin ,  Yebin Liu ,  Jiamin Wu, Qiong-Hai Dai
+siga2014-65 | Mirror Mirror: Crowdsourcing Better Portraits |  | author:
+siga2014-66 | Compute for mobile devices: performance-focused hands-on tutorial |  | author:
