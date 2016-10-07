@@ -1,0 +1,24 @@
+sca2016-1 | Asynchronous Implicit Backward Euler Integration |  | author:Danyong Zhao ,  Yijing Li ,  Jernej Barbic
+sca2016-2 | A Macroblock Optimization for Grid-based Nonlinear Elasticity |  | author:Nathan Mitchell,  Michael Doescher ,  Eftychios Sifakis
+sca2016-3 | ADMM ⊇ Projective Dynamics: Fast Simulation of General Constitutive Models |  | author:Rahul Narain ,  Matthew Overby ,  George E. Brown
+sca2016-4 | Enriching SPH Simulation by Approximate Capillary Waves |  | author:Sheng Yang , Xiaowei He,  Huamin Wang , Sheng Li,  Guoping Wang ,  Enhua Wu ,  Kun Zhou
+sca2016-5 | Topology-Aware Neighborhoods for Point-Based Simulation and Reconstruction |  | author:Florian Canezin ,  Gael Guennebaud ,  Loic Barthe
+sca2016-6 | Constrained Neighbor Lists for SPH-based Fluid Simulations |  | author:Rene Winchenbach,  Hendrik Hochstetter ,  Andreas Kolb
+sca2016-7 | Versatile Interactions at Interfaces for SPH-Based Simulations |  | author:Tao Yang ,  Ming C. Lin ,  Ralph R. Martin , Jian Chang,  Shi-Min Hu
+sca2016-8 | Two-way Coupling of Fluids to Reduced Deformable Bodies |  | author:Wenlong Lu ,  Ning Jin ,  Ronald Fedkiw
+sca2016-9 | Compressing Fluid Subspaces |  | author:Aaron Demby Jones ,  Pradeep Sen ,  Theodore Kim
+sca2016-10 | Hele-Shaw Flow Simulation with Interactive Control using Complex Barycentric Coordinates |  | author:Aviv Segall,  Orestis Vantzos ,  Mirela Ben-Chen
+sca2016-11 | Repurposing Hand Animation for Interactive Applications |  | author:Stephen Bailey , Martin Watt,  James O¡¦Brien
+sca2016-12 | Building and Animating User-Specific Volumetric Face Rigs |  | author:Alexandru-Eugen Ichim ,  Ladislav Kavan , Merlin Nimier-David,  Mark Pauly
+sca2016-13 | Art-Directed Muscle Simulation for High-End Facial Animation |  | author:Matthew Cong ,  Ronald Fedkiw ,  Kiran Bhat
+sca2016-14 | Accurate Simulation of Wound Healing and Skin Deformation |  | author:Stefan Feess ,  Kathrin Kurfiss ,  Dominik L. Michels
+sca2016-15 | Dynamic Group Behaviors for Interactive Crowd Simulatio |  | author:Liang He ,  Jia Pan ,  Sahil Narang ,  Dinesh Manocha
+sca2016-16 | A Data-driven Model for Lane-changing in Traffic Simulation |  | author:Huikun Bi, Tianlu Mao, Zhaoqi Wang,  Zhigang Deng
+sca2016-17 | Real-time Simulation of Large Elasto-Plastic Deformation with Shape Matching |  | author:Nuttapong Chentanez ,  Matthias Mueller 
+sca2016-18 | Position and Orientation Based Cosserat Rods |  | author:Tassilo Kugelstadt ,  Elmar Schoemer
+sca2016-19 | Deployable 3D Linkages with Collision Avoidance |  | author:Changxi Zheng ,  Timothy Sun ,  Xiang Chen
+sca2016-20 | Hierarchical hp-Adaptive Signed Distance Fields |  | author:Dan Koschier ,  Crispin Deul ,  Jan Bender
+sca2016-21 | CANVAS: Computer-Assisted Narrative Animation Synthesis |  | author:Mubbasir Kapadia ,  Seth Frey , Alexander Shoulson,  Robert Sumner,  ,  Markus Gross
+sca2016-22 | Real-Time Sound Synthesis for Paper Material Based on Geometric Analysis |  | author:Camille Schreck ,  Damien Rohmer ,  Doug L. James ,  Stefanie Hahmann ,  Marie-Paule Cani
+sca2016-23 | Large-Scale Finite State Game Engines |  | author:Matt Stanton, Sascha Geddert, Adrian Blumer, Paul Hormis,  Andrew Nealen ,  Seth Cooper ,  Adrien Treuille
+sca2016-24 | Interactive Physically-Based Sound Design of 3D Model using Material Optimization |  | author:Kazuhiko Yamamoto ,  Takeo Igarashi

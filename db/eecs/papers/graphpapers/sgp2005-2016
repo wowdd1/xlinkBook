@@ -1,22 +1,22 @@
-sgp2005-1 | Template-Based Mesh Completion | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-1 Template-Based Mesh Completion | author:Vladislav Kraevoy  Alla Sheffer
-sgp2005-2 | Example-Based 3D Scan Completion | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-2 Example-Based 3D Scan Completion | author:Mark Pauly   Niloy Mitra   Joachim Giesen   Leonidas Guibas   Markus Gross
-sgp2005-3 | Atomic Volumes for Mesh Completion | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-3 Atomic Volumes for Mesh Completion | author:Joshua Podolak   Szymon Rusinkiewicz
-sgp2005-4 | An Adaptive MLS Surface for Reconstruction with Guarantees | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-4 An Adaptive MLS Surface for Reconstruction with Guarantees | author:Tamal K. Dey   Jian Sun
-sgp2005-5 | Surface Reconstruction for Noisy Point Clouds | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-5 Surface Reconstruction for Noisy Point Clouds | author:Boris Mederos   Nina Amenta   Luiz Velho   Luiz Henrique de Figueiredo
-sgp2005-6 | Triangulating Point Set Surfaces with Bounded Error | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-6 Triangulating Point Set Surfaces with Bounded Error | author:Carlos E. Scheidegger   Shachar Fleishman   Claudio T. Silva
-sgp2005-7 | Reconstruction of Solid Models from Oriented Point Sets | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-7 Reconstruction of Solid Models from Oriented Point Sets | author:Michael Kazhdan
-sgp2005-8 | Smooth Feature Lines on Surface Meshes | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-8 Smooth Feature Lines on Surface Meshes | author:Klaus Hildebandt   Konrad Polthier   Max Wardetzky
-sgp2005-9 | Setting the Boundary Free: A Composite Approach to Surface Parameterization | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-9 Setting the Boundary Free: A Composite Approach to Surface Parameterization | author:Rhaleb Zayer   Christian Rössl   Hans-Peter Seidel
-sgp2005-10 | Discrete Willmore Flow | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-10 Discrete Willmore Flow | author:Alexander Bobenko   Peter Schröder
-sgp2005-11 | Streaming Compression of Triangle Meshes | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-11 Streaming Compression of Triangle Meshes | author:Martin Isenburg   Peter Lindstrom   Jack Snoeyink
-sgp2005-12 | Data Structures for Simplicial Complexes: An Analysis And A Comparison | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-12 Data Structures for Simplicial Complexes: An Analysis And A Comparison | author:Leila De Floriani   Annie Hui
-sgp2005-13 | Progressive Buffers: View-dependent Geometry and Texture for LOD Rendering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-13 Progressive Buffers: View-dependent Geometry and Texture for LOD Rendering | author:Pedro V. Sander   Jason L. Mitchell
-sgp2005-14 | Extraction and Simplification of Iso-surfaces in Tandem | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-14 Extraction and Simplification of Iso-surfaces in Tandem | author:Dominique Attali   David Cohen-Steiner   Herbert Edelsbrunner
-sgp2005-15 | Sparse Low-degree Implicit Surfaces with Applications to High Quality Rendering, Feature Extraction, and Smoothing | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-15 Sparse Low-degree Implicit Surfaces with Applications to High Quality Rendering, Feature Extraction, and Smoothing | author:Yutaka Ohtake   Alexander Belyaev   Marc Alexa
-sgp2005-16 | Swept volumes of many poses | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-16 Swept volumes of many poses | author:Johannes Wallner   Qinmin Yang
-sgp2005-17 | Subdivision Schemes and Attractors | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-17 Subdivision Schemes and Attractors | author:Scott Schaefer   David Levin   Ron Goldman
-sgp2005-18 | Building Coordinates for Convex Polyhedra using Polar Duals | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-18 Building Coordinates for Convex Polyhedra using Polar Duals | author:Tao Ju   Scott Schaefer   Joe Warren   Mathieu Desbrun
-sgp2005-19 | Global Registration of Multiple 3D Point Sets via Optimization-on-a-Manifold | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-19 Global Registration of Multiple 3D Point Sets via Optimization-on-a-Manifold | author:Shankar Krishnan   Pei Yean Lee   John B Moore   Suresh Venkatasubramanian
-sgp2005-20 | Robust Global Registration | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-20 Robust Global Registration | author:Natasha Gelfand   Niloy Mitra   Leonidas Guibas   Helmut Pottmann
-sgp2005-21 | An Image Processing Approach to Surface Matching | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-21 An Image Processing Approach to Surface Matching | author:Nathan Litke   Marc Droske   Martin Rumpf   Peter Schröder
-sgp2005-22 | Multiscale Features for Approximate Alignment of Point-based Surfaces | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=sgp2005-22 Multiscale Features for Approximate Alignment of Point-based Surfaces | author:Xinju Li  Igor Guskov
+sgp2005-1 | Template-Based Mesh Completion |  | author:Vladislav Kraevoy,  Alla Sheffer
+sgp2005-2 | Example-Based 3D Scan Completion |  | author:Mark Pauly ,  Niloy Mitra ,  Joachim Giesen ,  Leonidas Guibas ,  Markus Gross
+sgp2005-3 | Atomic Volumes for Mesh Completion |  | author:Joshua Podolak ,  Szymon Rusinkiewicz
+sgp2005-4 | An Adaptive MLS Surface for Reconstruction with Guarantees |  | author:Tamal K. Dey ,  Jian Sun
+sgp2005-5 | Surface Reconstruction for Noisy Point Clouds |  | author:Boris Mederos ,  Nina Amenta ,  Luiz Velho ,  Luiz Henrique de Figueiredo
+sgp2005-6 | Triangulating Point Set Surfaces with Bounded Error |  | author:Carlos E. Scheidegger ,  Shachar Fleishman ,  Claudio T. Silva
+sgp2005-7 | Reconstruction of Solid Models from Oriented Point Sets |  | author:Michael Kazhdan
+sgp2005-8 | Smooth Feature Lines on Surface Meshes |  | author:Klaus Hildebandt ,  Konrad Polthier ,  Max Wardetzky
+sgp2005-9 | Setting the Boundary Free: A Composite Approach to Surface Parameterization |  | author:Rhaleb Zayer ,  Christian Rössl ,  Hans-Peter Seidel
+sgp2005-10 | Discrete Willmore Flow |  | author:Alexander Bobenko ,  Peter Schröder
+sgp2005-11 | Streaming Compression of Triangle Meshes |  | author:Martin Isenburg ,  Peter Lindstrom ,  Jack Snoeyink
+sgp2005-12 | Data Structures for Simplicial Complexes: An Analysis And A Comparison |  | author:Leila De Floriani ,  Annie Hui
+sgp2005-13 | Progressive Buffers: View-dependent Geometry and Texture for LOD Rendering |  | author:Pedro V. Sander ,  Jason L. Mitchell
+sgp2005-14 | Extraction and Simplification of Iso-surfaces in Tandem |  | author:Dominique Attali ,  David Cohen-Steiner ,  Herbert Edelsbrunner
+sgp2005-15 | Sparse Low-degree Implicit Surfaces with Applications to High Quality Rendering, Feature Extraction, and Smoothing |  | author:Yutaka Ohtake ,  Alexander Belyaev ,  Marc Alexa
+sgp2005-16 | Swept volumes of many poses |  | author:Johannes Wallner ,  Qinmin Yang
+sgp2005-17 | Subdivision Schemes and Attractors |  | author:Scott Schaefer ,  David Levin ,  Ron Goldman
+sgp2005-18 | Building Coordinates for Convex Polyhedra using Polar Duals |  | author:Tao Ju ,  Scott Schaefer ,  Joe Warren ,  Mathieu Desbrun
+sgp2005-19 | Global Registration of Multiple 3D Point Sets via Optimization-on-a-Manifold |  | author:Shankar Krishnan ,  Pei Yean Lee ,  John B Moore ,  Suresh Venkatasubramanian
+sgp2005-20 | Robust Global Registration |  | author:Natasha Gelfand ,  Niloy Mitra ,  Leonidas Guibas ,  Helmut Pottmann
+sgp2005-21 | An Image Processing Approach to Surface Matching |  | author:Nathan Litke ,  Marc Droske ,  Martin Rumpf ,  Peter Schröder
+sgp2005-22 | Multiscale Features for Approximate Alignment of Point-based Surfaces |  | author:Xinju Li,  Igor Guskov

@@ -1,0 +1,25 @@
+i3d2016-1 | SSVDAGs: Symmetry-aware Sparse Voxel DAGs |  | author:Alberto Jaspe Villanueva ,  Fabio Marton ,  Enrico Gobbetti
+i3d2016-2 | Exploiting Coherence in Time-Varying Voxel Data |  | author:Viktor Kampe ,  Sverker Rasmuson , Markus Billeter,  Erik Sintorn ,  Ulf Assarsson
+i3d2016-3 | Triangle Reordering for Reduced Overdraw in Animated Scenes |  | author:Songfang Han ,  Pedro V. Sander
+i3d2016-4 | On the Efficiency of Image Metrics for Evaluating the Visual Quality of 3D Models |  | author:Guillaume Lavoue , Mohamed Larabi,  Libor Vasa
+i3d2016-5 | PRECISION: Precomputed Environment Semantics for Contact-Rich Character Animation |  | author:Mubbasir Kapadia , Xu Xianghao,  Marcelo Kallmann ,  Stelian Coros ,  Robert W. Sumner ,  Markus Gross
+i3d2016-6 | Dynamically Balanced and Plausible Trajectory Planning for Human-Like Characters |  | author:Chonhyon Park , Jae Sung Park,  Steve Tonneau,  Nicolas Mansard,  Franck Multon,  Julien Pettre,  Dinesh Manocha
+i3d2016-7 | Path Patterns: Analyzing and Comparing Real and Simulated Crowds |  | author:He Wang ,  Jan Ondrej ,  Carol O'Sullivan
+i3d2016-8 | Real-time Hair Mesh Simulation |  | author:Kui Wu ,  Cem Yuksel
+i3d2016-9 | Ductile Fracture for Clustered Shape Matching |  | author:Ben Jones , April Martin,  Joshua A. Levine ,  Tamar Shinar ,  Adam W. Bargteil
+i3d2016-10 | Adaptive Impulse Response Modeling for Interactive Sound Propagation |  | author:Carl Schissler ,  Dinesh Manocha
+i3d2016-11 | Interactive Modal Sound Synthesis Using Generalized Proportional Damping |  | author:Auston Sterling,  Ming C. Lin
+i3d2016-12 | Guided Ecological Simulation for Artistic Editing of Plant Distributions in Natural Scenes |  | author:Gwyneth A. Bradbury ,  Kartic Subr ,  Charalampos Koniaris ,  Kenny Mitchell ,  Tim Weyrich
+i3d2016-13 | Barehanded Music: Real-time Hand Interaction for Virtual Piano |  | author:Hui Liang , Jin Wang,  Qian Sun,  Yong-Jin Liu,  Junsong Yuan,  Jun Luo,  Ying He
+i3d2016-14 | Augmented Reality Instruction for Object Assembly based on Markerless Tracking |  | author:Li-Chen Wu,  I-Chen Lin , Ming-Han Tsai
+i3d2016-15 | Data-Driven Adaptive History List for Image Editing |  | author:Hsiang-Ting Chen ,  Li-Yi Wei ,  Bjorn Hartmann ,  Maneesh Agrawala
+i3d2016-16 | New Controls for Combining Images in Correspondence |  | author:Jing Liao,  Diego Nehab ,  Hugues Hoppe ,  Pedro V. Sander
+i3d2016-17 | Accurate Analytic Approximations For Real-Time Specular Area Lighting |  | author:Pascal Lecocq ,  Sourimant Gael ,  Marvie Jean-Eudes
+i3d2016-18 | Sequential Monte Carlo Instant Radiosity |  | author:Peter Hedman ,  Tero Karras ,  Jaakko Lehtinen
+i3d2016-19 | Precomputed Illuminance Composition for Real-Time Global Illumination |  | author:Johannes Jendersie,  David Kuri ,  Thorsten Grosch
+i3d2016-20 | CloudLight: A System of Amortizing Indirect Lighting in Real-Time Rendering |  | author:Cyril Crassin ,  David Luebke , Michael Mara,  Morgan McGuire , Brent Oster,  Peter Shirley ,  Peter-Pike Sloan ,  Chris Wyman
+i3d2016-21 | Real-time Rendering of Procedural Multiscale Materials |  | author:Tobias Zirr ,  Anton Kaplanyan
+i3d2016-22 | A Phenomenological Scattering Model for Order-Independent Transparency |  | author:Morgan McGuire , Michael Mara
+i3d2016-23 | Beyond Hard Shadows: Moment Shadow Maps for Single Scattering, Soft Shadows and Translucent Occluders |  | author:Christoph Peters , Cedrick Munstermann,  Nico Wetzstein,  Reinhard Klein
+i3d2016-24 | A Multiview and Multilayer Approach for Interactive Ray Tracing |  | author:Konstantinos Vardis ,  Andreas - Alexandros Vasilakis ,  Georgios Papaioannou
+i3d2016-25 | An Evaluation of Multi-Hit Ray Traversal in a BVH using Existing First-Hit/Any-Hit Kernels |  | author:Jefferson Amstutz,  Christiaan Gribble , Johannes Gunther,  Ingo Wald

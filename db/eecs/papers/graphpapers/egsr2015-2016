@@ -1,1 +1,35 @@
-egsr2015-1 | Separable Subsurface Scattering | https://www.google.com.hk/?gws_rd=cr,ssl#safe=strict&q=egsr2015-1 Separable Subsurface Scattering | author:J. Jimenez  Karoly Zsolnai  A. Jarabo  C. Freude  T. Auzinger  X-C. Wu  J. von der Pahlen  Michael Wimmer   Diego Gutierrez
+egsr2015-1 | Stochastic Soft Shadow Mapping |  | author:Gabor Liktor ,  Stanislav Spassov ,  Gregor Muckl ,  Carsten Dachsbacher
+egsr2015-2 | Portal-Masked Environment Map Sampling |  | author:Benedikt Bitterli,  Jan Novak ,  Wojciech Jarosz
+egsr2015-3 | Practical Shading of Height Fields and Meshes using Spherical Harmonic Exponentiation |  | author:Aude Giraud,  Derek Nowrouzezahrai
+egsr2015-4 | GEARS: A General and Efficient Algorithm for Rendering Shadows |  | author:Lili Wang, Shiheng Zhou, Wei Ke,  Voicu Popescu
+egsr2015-5 | MatCap Decomposition for Dynamic Appearance Manipulation |  | author:Carlos Jorge Zubiaga , Adolfo Munoz,  Laurent Belcour ,  Carles Bosch ,  Pascal Barla
+egsr2015-6 | Extracting Microfacet-based BRDF Parameters from Arbitrary Materials with Power Iterations |  | author:Jonathan Dupuy ,  Eric Heitz ,  Jean-Claude Iehl ,  Pierre Poulin ,  Victor Ostromoukhov
+egsr2015-7 | Physically Meaningful Rendering using Tristimulus Colours |  | author:Johannes Meng ,  Florian SimonJohannes Hanika ,  Carsten Dachsbacher
+egsr2015-8 | Distributed Out-of-Core Stochastic Progressive Photon Mapping |  | author:Tobias Gunther ,  Thorsten Grosch
+egsr2015-9 | Separable Subsurface Scattering |  | author:J. Jimenez,  Karoly Zsolnai ,  A. Jarabo,  C. Freude,  T. Auzinger,  X-C. Wu,  J. von der Pahlen,  Michael Wimmer ,  Diego Gutierrez
+egsr2015-10 | Relativistic Effects for Time-Resolved Light Transport |  | author:Adrian Jarabo ,  Belen Masia ,  Andreas Velten ,  Christopher Barsi ,  Ramesh Raskar ,  Diego Gutierrez
+egsr2015-11 | Accurate Computation of Single Scattering in Participating Media with Refractive Boundaries |  | author:Nicolas Holzschuch
+egsr2015-12 | Consistent Scene Editing by Progressive Difference Images |  | author:Tobias Gunther ,  Thorsten Grosch
+egsr2015-13 | A Vectorial Framework for Ray Traced Diffusion Curves |  | author:Romain Prevost ,  Wojciech Jarosz ,  Olga Sorkine-Hornung
+egsr2015-14 | Low-Cost Subpixel Rendering for Diverse Displays |  | author:Thomas Engelhardt ,  Thorsten-Walther Schmidt ,  Jan Kautz ,  Carsten Dachsbacher
+egsr2015-15 | Unifying Color and Texture Transfer for Predictive Appearance Manipulation |  | author:Fumio Okura ,  Kenneth Vanhoey ,  Adrien Bousseau ,  Alexei A. Efros ,  George Drettakis
+egsr2015-16 | Stackless Multi-BVH Traversal for CPU, MIC and GPU Ray Tracing |  | author:Attila T. Afra ,  Laszlo Szirmay-Kalos
+egsr2015-17 | Efficient visibility heuristics for kd-trees using the RTSAH |  | author:Matthias Moulin,  Niels Billen ,  Philip Dutre
+egsr2015-18 | Apex Point Map for Constant-Time Bounding Plane Approximation |  | author:Samuli Laine ,  Tero Karras
+egsr2015-19 | MBVH Child Node Sorting for Fast Occlusion Test |  | author:Shinji Ogaki,  Alexandre Derouet-Jourdan
+egsr2015-20 | Improved Half Vector Space Light Transport |  | author:Johannes Hanika ,  Anton Kaplanyan ,  Carsten Dachsbacher
+egsr2015-21 | Gradient-Domain Bidirectional Path Tracing |  | author:Marco Manzi ,  Markus Kettunen ,  Miika Aittala ,  Jaakko Lehtinen ,  Fredo Durand ,  Matthias Zwicker
+egsr2015-22 | Probabilistic Connections for Bidirectional Path Tracing |  | author:Stefan Popov ,  Ravi Ramamoorthi ,  Fredo Durand ,  George Drettakis
+egsr2015-23 | Manifold Next Event Estimation |  | author:Johannes Hanika ,  Marc Droske,  Luca Fascione
+egsr2015-24 | Smooth Loops from Unconstrained Video |  | author:Laura Sevilla-Lara ,  Jonas Wulff ,  Kalyan Sunkavalli ,  Eli Shechtman
+egsr2015-25 | Radiometric Transfer: Example-based Radiometric Linearization of Photographs |  | author:Han Li,  Pieter Peers
+egsr2015-26 | Motion Aware Exposure Bracketing for HDR Video |  | author:Yulia Gryaditskaya ,  Tania Pouli ,  Erik Reinhard ,  Karol Myszkowski ,  Hans-Peter Seidel
+egsr2015-27 | Interactive global illumination effects using deterministically directed layered depth maps |  | author:Frederik Peter Aalund,  Jeppe Revall Frisvad ,  Jakob Andreas Barentzen
+egsr2015-28 | High Performance Non-linear Motion Blur |  | author:Jean-Philippe Guertin,  Derek Nowrouzezahrai
+egsr2015-29 | Filtering Environment Illumination for Interactive Physically-Based Rendering in Mixed Reality |  | author:Soham Uday Mehta ,  Kihwan Kim ,  Dawid Pajak,  Kari Pulli ,  Jan Kautz ,  Ravi Ramamoorthi
+egsr2015-30 | Path-space Motion Estimation and Decomposition for Robust Animation Filtering |  | author:Henning Zimmer ,  Fabrice Rousselle ,  Wenzel Jakob ,  Oliver Wang ,  David Adler,  Wojciech Jarosz ,  Olga Sorkine-Hornung ,  Alexander Sorkine-Hornung
+egsr2015-31 | Wavelet Point-Based Global Illumination |  | author:Beibei Wang,  Xiangxu Meng,  Tamy Boubekeur
+egsr2015-32 | Modeling luminance perception at absolute threshold |  | author:Petr Kellnhofer ,  Tobias Ritschel ,  Karol Myszkowski ,  Elmar Eisemann ,  Hans-Peter Seidel 
+egsr2015-33 | Stereo from Shading |  | author:Alexandre Chapiro ,  Carol O'Sullivan ,  Wojciech Jarosz ,  Markus Gross ,  Aljoscha Smolic
+egsr2015-34 | Occluder Simplification using Planar Sections |  | author:Ari Silvennoinen ,  Hannu Saransaari,  Samuli Laine ,  Jaakko Lehtinen
+egsr2015-35 | Illumination-driven Mesh Reduction for Accelerating Light Transport Simulations |  | author:Andreas Reich,  Tobias Gunther ,  Thorsten Grosch
