@@ -388,19 +388,32 @@ class Utils:
         else:
             return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
 
+    def getRecommendType(self, fileName):
+        if os.path.exists('db/metadata/engin_type'):
+            f = open('db/metadata/engin_type', 'rU')
+            engin_types = []
+            for line in f.readlines():
+                if line.startswith('#') or line.strip() == '':
+                    continue
+                engin_types.append(line.strip())
+            f.close()
+            for et in engin_types:
+                if fileName.rfind(et) != -1:
+                    return et
+        return ''
+
+
     def recommendEngins(self, folder):
         engins = []
-        if Config.recommend_engin_class != '':
-            engins = self.realGetEnginList([Config.recommend_engin_class], self.search_engin_dict.values())
+        if Config.recommend_engin_type != '':
+            engins = self.realGetEnginList([Config.recommend_engin_type], self.search_engin_dict.values())
         else:
-            if folder.find('papers') != -1:
-                engins = self.realGetEnginList(['paper'], self.search_engin_dict.values())
-            elif folder.find('projects') != -1:
-                engins = self.realGetEnginList(['project'], self.search_engin_dict.values())
-            elif folder.find('video') != -1:
-                engins = self.realGetEnginList(['video'], self.search_engin_dict.values())
+            etype = self.getRecommendType(folder)
+            if etype != '':
+                engins = self.realGetEnginList([etype], self.search_engin_dict.values())
             elif folder.find('neuro') != -1 or folder.find('biology') != -1 or folder.find('lifescience') != -1:
                 engins = self.realGetEnginList(['dxy.cn', 'wikipedia', 'biostars', 'neurostars', 'youtube', 'google', 'baidu', 'gene', 'pubmed', 'ebi', 'gen.lib', 'amazon'], self.search_engin_dict.values(), match_title=True)
+
 
         if len(engins) == 0:
             return self.realGetEnginList(['star'], self.search_engin_dict.values())
@@ -481,7 +494,7 @@ class Utils:
                 return html
         return html
 
-    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
+    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0):
         if self.ddg_mode:
             return self.getDDGEnginListLinks(engins, topic, id, query, color, fontSize)
         if topic == '':
@@ -492,18 +505,27 @@ class Utils:
         for engin in engins:
             engin_display = engin
             engin_display = self.getEnginIcon(engin)
-            if engin_display == 'search.mit':
-                engin_display = 'mit'
+            
             #if engin_display == 'sanity':
             #    engin_display = 'arxiv-sanity'
             if self.searchByID(engin):
                 keyword = id.strip()
             else:
                 keyword = topic.strip()
-
-            result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + engin_display + '</a>'
+            if Config.hiden_content_after_search:
+                result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;" onclick="var pid = this.parentNode.parentNode.id; hidenMoreContent(pid, 1);">' + self.formatEnginTitle(engin_display) + '</a>'
+            else:
+                result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + self.formatEnginTitle(engin_display) + '</a>'
 
         return result
+
+    def formatEnginTitle(self, engin):
+        if engin == 'search.mit':
+            engin = 'mit'
+
+        if len(engin) > 10:
+            return '[' + engin[0 : len(engin) - (len(engin) / 2) - 1] + ']'
+        return engin
 
     def getEnginIcon(self, engin):
         if Config.disable_icon:

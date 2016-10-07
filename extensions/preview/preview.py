@@ -5,6 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 from utils import Utils
 import subprocess
+from config import Config
 
 class Preview(BaseExtension):
 
@@ -82,4 +83,4 @@ class Preview(BaseExtension):
 
     def check(self, form_dict):
         url = form_dict['url'].encode('utf8')
-	return url != None and url != ''
+	return url != None and url != '' and url.find(Config.ip_adress) == -1

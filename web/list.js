@@ -384,3 +384,31 @@ function appendContentBox(targetid, boxid){
         hidenMetadata(targetid, extensions[i], "none")
     }
 }
+
+function hidenMoreContent(pid, start) {
+    id1 = pid.split('-')[start];
+    id2 = pid.split('-')[start + 1];
+    
+    setText('a-' + id1.toString() + '-' + id2.toString() + '-0');
+    showdiv('div-' + id1.toString() + '-' + id2.toString() + '-0','a-' + id1.toString() + '-' + id2.toString() + '-0');
+    var count = 20;
+    var index = 0;
+    for (var i = 0; i < count; i++) {
+        id = id1.toString() + '-' + id2.toString() + '-' + i.toString()
+        trid = id2 + '-' + i.toString()
+        console.log(id);
+        console.log(trid);
+
+        if (document.getElementById('td-div-' + id) != null) {
+            showdiv('td-div-' + id, 'a-' + id1.toString() + '-' + id2.toString() + '-0' );
+            showdiv('tr-' + trid, 'a-' + id1.toString() + '-' + id2.toString() + '-0' );
+            index = 0;
+        } else {
+            if (index > 2) {
+                break;
+            }
+            index = index + 1;
+            continue;
+        }
+    }
+}

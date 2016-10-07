@@ -60,7 +60,7 @@ engin-59 | codeplex | https://www.codeplex.com/site/search?query= | priority:0 d
 engin-60 | sourceforge | http://sourceforge.net/directory/os:mac/freshness:recently-updated/?q= | priority:0 description:project
 engin-61 | coursetalk | http://www.coursetalk.com/search?q= | priority:0 description:course
 engin-62 | mooc-list | https://www.google.com/cse?cx=partner-pub-3252929032242305:3580054474&ie=UTF-8&sa=Search&q= | priority:0 description:course
-engin-63 | nctu | http://ocw.nctu.edu.tw/course_list_search.php?key= | priority:0 description:course
+engin-63 | nctu | http://ocw.nctu.edu.tw/course_list_search.php?key= | priority:3 description:course
 engin-64 | class-central | https://www.class-central.com/search?q= | priority:0 description:course
 engin-65 | guokr | http://mooc.guokr.com/search/course/?wd= | priority:0 description:course
 engin-63 | nctu | http://ocw.nctu.edu.tw/course_list_search.php?key= | priority:0 description:course

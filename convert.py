@@ -40,16 +40,26 @@ last_pid = ''
 
 def customFormat(title, link, rID='', desc='', source=''):
     if delete_from_char != '':
-        for dc in delete_from_char.split(' '):
-            if title.find(dc) != -1:
-                title = title[0 : title.find(dc)].strip()
-                break
+        if len(delete_from_char) == 1:
+            if title.find(delete_from_char) != -1:
+                title = doDelete(title, delete_from_char, Config.delete_forward)
+        else:
+            for dc in delete_from_char.split(' '):
+                if title.find(dc) != -1:
+                    title = doDelete(title, dc, Config.delete_forward)
+                    break
     if rID == '':
         rID = parentid + "-" + str(line_id)
     if link.startswith('http') == False and source != '':
         link = source[0 : source.find('/', source.find('//') + 2)] + link
     return [rID, customFormatTitle(title), link, desc]
 
+def doDelete(title, char, forward):
+    if forward:
+        return title[0 : title.find(char)].strip()
+    else:
+        return title[title.find(char) + 1 :].strip()
+    return title
 
 def customFormatTitle(title):
     #return title[title.find(']') + 1 :].strip()
