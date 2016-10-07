@@ -1,33 +1,33 @@
 egsr2003-1 | Eyetronics - 3D scanning technology for special effects in movies |  | author:Prof. Dr. ir. Dirk Callaerts ,  Eyetronics ,  Belgium
 egsr2003-2 | Die Another Day - How Double Negative created VFX shots for the fiery finale of the latest James Bond adventure |  | author:Double Negative ,  UK
 egsr2003-3 | The Future of Rendering |  | author:Dr. David Kirk, Chief Scientist and Vice President of Architecture at NVIDIA
-egsr2003-4 | Computer Generated Celtic Design |  | author:Matthew Kaplan , Elaine Cohen,  USA )
-egsr2003-5 | A Stained Glass Image Filter |  | author:David Mould,  Canada )
+egsr2003-4 | Computer Generated Celtic Design |  | author:Matthew Kaplan , Elaine Cohen
+egsr2003-5 | A Stained Glass Image Filter |  | author:David Mould
 egsr2003-6 | Interactive Time-Dependent Tone Mapping Using Programmable Graphics Hardware |  | author:Nolan Goodnight ,  Rui Wang ,  Greg Humphreys ,  University of Virginia,  USA
-egsr2003-7 | Delivering Interactivity to Complex Tone Mapping operators |  | author:Alessandro Artusi ,  Jiri Bittner ,  Michael Wimmer , Alexander Wilkie,  Austria )
-egsr2003-8 | Efficient Illumination by High Dynamic Range Images |  | author:Thomas Kollig , Alexander Keller,  Germany )
-egsr2003-9 | Path Integration for Light Transport in Volumes |  | author:Simon Premoze, Michael Ashikhmin, Peter Shirley
-egsr2003-10 | Global Illumination Animation with Random Radiance Representation |  | author:Laszlo Szirmay-Kalos ,  Gyorgy Antal , Balazs Benedek,  Hungary )
-egsr2003-11 | Interactive Global Illumination in Complex and Highly Occluded Environments |  | author:Ingo Wald ,  Carsten Benthin , Philipp Slusallek,  Germany )
-egsr2003-12 | Fast Texture Synthesis on Arbitrary Meshes |  | author:Sebastian Magda, David Kriegman
-egsr2003-13 | Interactive Texture Synthesis on Surfaces Using Jump Maps |  | author:Steve Zelinka , Michael Garland
-egsr2003-14 | Hybrid Texture Synthesis |  | author:Andy Nealen , Marc Alexa,  Germany )
-egsr2003-15 | An Efficient Spatio-Temporal Architecture for Animation Rendering |  | author:Vlastimil Havran ,  Cyrille Damez ,  Karol Myszkowski , Hans-Peter Seidel,  Germany )
-egsr2003-16 | Rendering Time Estimation for Real-Time Rendering |  | author:Michael Wimmer, Peter Wonka
-egsr2003-17 | Interactive Rendering of Translucent Deformable Objects |  | author:Tom Mertens, Jan Kautz ,Philippe Bekaert, Hans-Peter Seidel, Frank Van Reeth
-egsr2003-18 | Capturing and rendering with Incident Light Fields |  | author:Jonas Unger, Andreas Wenger, Tim Hawkins, Andrew Gardner , Paul Debevec
-egsr2003-19 | A New Reconstruction Filter for Undersampled Light Fields |  | author:Jason Stewart, Jingyi Yu , Steven Gortler, Leonard McMillan
-egsr2003-20 | Wavelet Environment Matting |  | author:Pieter Peers , Philip Dutre
-egsr2003-21 | Efficient and Realistic Visualization of Cloth |  | author:Mirko Sattler ,  Ralf Sarlette , Reinhard Klein,  Germany )
-egsr2003-22 | Visualization of woven cloth |  | author:Neeharika Adabala , Guangzheng Fei,  Nadia Magnenat-Thalmann , ,  Switzerland and Chinese Academy of Sciences,  China)
-egsr2003-23 | The Trilateral Filter for High Contrast Images and Meshes |  | author:Prasun Choudhury , Jack Tumblin,  USA )
-egsr2003-24 | Translucent Shadow Maps |  | author:Carsten Dachsbacher , Marc Stamminger,  Germany )
-egsr2003-25 | Penumbra Maps |  | author:Chris Wyman , Charles Hansen,  USA )
-egsr2003-26 | Rendering Fake Soft Shadows with Smoothies |  | author:Eric Chan , Fredo Durand
-egsr2003-27 | Rapid Shadow Generation in Real-World Lighting Environments |  | author:Simon Gibson , Jon Cook,  Toby Howard , Roger Hubbold,  University of Manchester )
-egsr2003-28 | Recovering 3-D Shape and Reflectance From a Small Number of Photographs |  | author:Athinodoros Georghiades,  USA )
-egsr2003-29 | Efficient Isotropic BRDF Measurement |  | author:Wojciech Matusik, Hanspeter Pfister , Matthew Brand, Leonard McMillan
-egsr2003-30 | Optimizing Color Matching in a Lighting Reproduction System for Complex Subject and Illuminant Spectra |  | author:Andreas Wenger , Tim Hawkins, Paul Debevec
-egsr2003-31 | Refinement Criteria Based on f-Divergences |  | author:Jaume Rigau ,  Miquel Feixas , Mateu Sbert,  Catalonia,  Spain )
-egsr2003-32 | Detail to Attention: Exploiting Visual Tasks for Selective Rendering |  | author:Kirsten Cater , Alan Chalmers, Greg Ward
-egsr2003-33 | Erosion Based Visibility Preprocessing |  | author:Xavier Decoret, Gilles Debunne , François X. Sillion
+egsr2003-7 | Delivering Interactivity to Complex Tone Mapping operators |  | author:Alessandro Artusi ,  Jiri Bittner ,  Michael Wimmer , Alexander Wilkie
+egsr2003-8 | Efficient Illumination by High Dynamic Range Images |  | author:Thomas Kollig , Alexander Keller
+egsr2003-9 | Path Integration for Light Transport in Volumes |  | author:
+egsr2003-10 | Global Illumination Animation with Random Radiance Representation |  | author:Laszlo Szirmay-Kalos ,  Gyorgy Antal , Balazs Benedek
+egsr2003-11 | Interactive Global Illumination in Complex and Highly Occluded Environments |  | author:Ingo Wald ,  Carsten Benthin , Philipp Slusallek
+egsr2003-12 | Fast Texture Synthesis on Arbitrary Meshes |  | author:Sebastian Magda
+egsr2003-13 | Interactive Texture Synthesis on Surfaces Using Jump Maps |  | author:Steve Zelinka 
+egsr2003-14 | Hybrid Texture Synthesis |  | author:Andy Nealen , Marc Alexa
+egsr2003-15 | An Efficient Spatio-Temporal Architecture for Animation Rendering |  | author:Vlastimil Havran ,  Cyrille Damez ,  Karol Myszkowski , Hans-Peter Seidel
+egsr2003-16 | Rendering Time Estimation for Real-Time Rendering |  | author:
+egsr2003-17 | Interactive Rendering of Translucent Deformable Objects |  | author:
+egsr2003-18 | Capturing and rendering with Incident Light Fields |  | author:
+egsr2003-19 | A New Reconstruction Filter for Undersampled Light Fields |  | author:
+egsr2003-20 | Wavelet Environment Matting |  | author:Pieter Peers 
+egsr2003-21 | Efficient and Realistic Visualization of Cloth |  | author:Mirko Sattler ,  Ralf Sarlette , Reinhard Klein
+egsr2003-22 | Visualization of woven cloth |  | author:Neeharika Adabala , Guangzheng Fei,  Nadia Magnenat-Thalmann , ,  Switzerland and Chinese Academy of Sciences
+egsr2003-23 | The Trilateral Filter for High Contrast Images and Meshes |  | author:Prasun Choudhury , Jack Tumblin
+egsr2003-24 | Translucent Shadow Maps |  | author:Carsten Dachsbacher , Marc Stamminger
+egsr2003-25 | Penumbra Maps |  | author:Chris Wyman , Charles Hansen
+egsr2003-26 | Rendering Fake Soft Shadows with Smoothies |  | author:Eric Chan 
+egsr2003-27 | Rapid Shadow Generation in Real-World Lighting Environments |  | author:Simon Gibson , Jon Cook,  Toby Howard , Roger Hubbold
+egsr2003-28 | Recovering 3-D Shape and Reflectance From a Small Number of Photographs |  | author:Athinodoros Georghiades
+egsr2003-29 | Efficient Isotropic BRDF Measurement |  | author:
+egsr2003-30 | Optimizing Color Matching in a Lighting Reproduction System for Complex Subject and Illuminant Spectra |  | author:Andreas Wenger , Tim Hawkins
+egsr2003-31 | Refinement Criteria Based on f-Divergences |  | author:Jaume Rigau ,  Miquel Feixas , Mateu Sbert,  Catalonia
+egsr2003-32 | Detail to Attention: Exploiting Visual Tasks for Selective Rendering |  | author:
+egsr2003-33 | Erosion Based Visibility Preprocessing |  | author:

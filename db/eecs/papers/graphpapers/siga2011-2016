@@ -1,70 +1,70 @@
-siga2011-1 | Pattern-Aware Shape Deformation Using Sliding Dockers |  | author:Martin Bokeloh , Michael Wand, Vladlen Koltun, Hans-Peter Seidel
-siga2011-2 | Shape Space Exploration of Constrained Meshes |  | author:Yong-Liang Yang ,  Yi-Jun Yang Helmut Pottmann , Niloy Mitra
-siga2011-3 | Joint-Shape Segmentation with Linear Programming |  | author:Qixing Huang ,  Vladlen Koltun , Leonidas Guibas
-siga2011-4 | Unsupervised Co-Segmentation of a Set of Shapes via Descriptor-Space Spectral Clusterin |  | author:Oana Sidi, Oliver van Kaick , Yanir Kleiman, Hao Zhang, Daniel Cohen-Or
-siga2011-5 | Modeling and generating moving trees from video |  | author:Chuan Li, Oliver Deussen, Yizhe Song , Phil Willis , Peter Hall
-siga2011-6 | Candid Portrait Selection From Video |  | author:Juliet Bernstein, Aseem Agarwala, Brian Curless
-siga2011-7 | Multiview Face Capture using Polarized Spherical Gradient Illumination |  | author:Abhijeet Ghosh ,  Graham Fyffe ,  Borom Tunwattanapong ,  Jay Busch ,  Xueming Yu , Paul Debevec
-siga2011-8 | Video Face Replacement |  | author:Kevin Dale , Kalyan Sunkavalli, Micah K. Johnson , Daniel Vlasic , Wojciech Matusik, Hanspeter Pfister
-siga2011-9 | A Rendering Framework for Multi-Scale Views of 3D Models |  | author:Wei-Hsien Hsu, Kwan-Liu Ma, Carlos Correa
-siga2011-10 | Mixed-Order Compositing for 3D Painting |  | author:Ilya Baran , Johannes Schmid, Thomas Siegrist,, Markus Gross, Robert W. Sumner
-siga2011-11 | Animated Construction of Line Drawings |  | author:Hongbo Fu, Shizhe Zhou , Ligang Liu, Niloy Mitra
-siga2011-12 | Sketch-based Dynamic Illustration of Fluid Systems |  | author:Bo Zhu, Michiaki Iwata , Ryo Haraguchi, Takashi Ashihara, Nobuyuki Umetani, Takeo Igarashi Kazuo Nakazawa
-siga2011-13 | Interactive Hybrid Simulation of Large-Scale Traffic |  | author:Jason Sewall, David Wilkie , Ming C. Ling
-siga2011-14 | Pattern-Guided Smoke Animation with Lagrangian Coherent Structure |  | author:Zhi Yuan,  Fan Chen, Ye Zhao
-siga2011-15 | Interference Aware Geometric Modeling |  | author:David Harmon, Daniele Panozzo, Olga Sorkine, Denis Zorin
-siga2011-16 | Imperceptible Relaxation of Collision Avoidance Constraints in Virtual Crowds |  | author:Richard Kulpa ,  Anne-Helene Olivier Jan Ondrej , Julien Pettre,  Grenoble,  France )
-siga2011-17 | A Hybrid Iterative Solver for Robustly Capturing Coulomb Friction in Hair Dynamics |  | author:Gilles Daviet,  Florence Bertails-Descoubes , Laurence Boissieux,  Grenoble,  France )
-siga2011-18 | General Planar Quadrilateral Mesh Design Using Conjugate Direction Field |  | author:Yang Liu , Weiwei Xu , Jun Wang, Lifeng Zhu, Baining Guo, Falai Chen, Guoping Wang
-siga2011-19 | Connectivity Editing for Quadrilateral Meshes |  | author:Chi-Han Peng, Eugene Zhang, Yoshihiro Kobayashi Peter Wonka
-siga2011-20 | Simple Quad Domains for Field Aligned Mesh Parametrization |  | author:Marco Tarini, Enrico Puppo , Daniele Panozzo, Nico Pietroni , Paolo Cignoni
-siga2011-21 | Boundary Aligned Smooth 3D Cross-Frame Field |  | author:Jin Huang, Yiying Tong, Hongyu Wei, Hujun Bao
-siga2011-22 | Material Matting |  | author:Daniel Lepage, Jason Lawrence
-siga2011-23 | Physically-Based Interactive Bi-Scale Material Design |  | author:Hongzhi Wu ,  Julie Dorsey , Holly Rushmeier
-siga2011-24 | AppGen: Interactive Material Modeling from a Single Image |  | author:Yue Dong, Xin Tong, Fabio Pellacini, Baining Guo
-siga2011-25 | AppWarp: Retargeting Measured Materials by Appearance-space Warping |  | author:Xiaobo An, Xin Tong, Jonathan D. Denning , Fabio Pellacini
-siga2011-26 | Online Reconstruction of 3D Objects from Arbitrary Cross-Sections |  | author:Amit Bermano,  Amir Vaxman , Craig Gotsman
-siga2011-27 | Fusion of Depth Maps with Multiple Scales |  | author:Simon Fuhrmann , Michael Goesele
-siga2011-28 | Global Parametrization of Range Image Sets |  | author:Nico Pietroni , Marco Tarini, Olga Sorkine, Denis Zorin
-siga2011-29 | Image-space bidirectional scene reprojection |  | author:Lei Yang , Yu-Chiu Tse, Pedro V. Sander, Jason Lawrence, Diego Nehab ,, Hugues Hoppe, Clara L. Wilkins
-siga2011-30 | A Shading Reuse Method for Efficient Micropolygon Ray Tracing |  | author:Qiming Hou , Kun Zhou
-siga2011-31 | Genetic Programming for Shader Simplification |  | author:Pitchaya Sitthi-amorn ,  Nicholas Modly,  Westley Weimer , Jason Lawrence
-siga2011-32 | An Efficient Alias-free Shadow Algorithm for Opaque and Transparent Objects using per-triangle Shadow Volumes |  | author:Erik Sintorn,  Ola Olsson, Ulf Assarsson
-siga2011-33 | Data-driven Visual Similarity for Cross-domain Image Matching |  | author:Abhinav Shrivastava ,  Tomasz Malisiewicz ,  Abhinav Gupta , Alexei A. Efros
-siga2011-34 | Arcimboldo-like Collage Using Internet Images |  | author:Hua Huang Lei Zhang, Hong-Chao Zhang
-siga2011-35 | Semantic Colorization with Internet Images |  | author:Yong Sang Chia, Shaojie Zhuo , Raj Kumar Gupta, Yu-Wing Tai, Siu-Yeung Cho , Ping Tan, Stephen Lin
-siga2011-36 | Rendering Synthetic Objects into Legacy Photographs |  | author:Kevin Karsch ,  Varsha Hedau ,  David Forsyth , Derek Hoiem
-siga2011-37 | Displacement Interpolation Using Lagrangian Mass Transport |  | author:Nicolas Bonneel , Michiel van de Panne, Sylvain Paris, Wolfgang Heidrich
-siga2011-38 | Adaptive Sampling and Reconstruction using Greedy Error Minimization |  | author:Fabrice Rousselle ,  Claude Knaus , Matthias Zwicker
-siga2011-39 | T&I Engine: Traversal and Intersection Engine for Hardware Accelerated Ray Tracing |  | author:Jae-Ho Nah,  Jeong-Soo Park,  Chanmin Park,  Jin-Woo Kim,  Yun-Hye Jung,  Woo-Chan Park, Tack-Don Han
-siga2011-40 | Coherent parallel hashing |  | author:Ismael Garcia, Sylvain Lefebvre , Samuel Hornus , Anass Lasram
-siga2011-41 | Artist Friendly Facial Animation Retargeting |  | author:Yeongho Seol , Jaewoo Seo , Paul Hyunjin Kim, J. P. Lewis, Junyong Noh
-siga2011-42 | Compression and Direct Manipulation of Complex Blendshape Models |  | author:Jaewoo Seo, Geoffrey Irving , J. P. Lewis, Junyong Noh
-siga2011-43 | Controlling Physics-Based Characters Using Soft Contacts |  | author:Sumit Jain , C. Karen Liu
-siga2011-44 | Modal-Space Control for Articulated Characters |  | author:Sumit Jain , C. Karen Liu
-siga2011-45 | Stretchable and Twistable Bones for Skeletal Shape Deformation |  | author:Alec Jacobson , Olga Sorkine
-siga2011-46 | Freeform vector graphics with controlled thin-plate splines |  | author:Mark Finch ,  John Snyder , Hugues Hoppe
-siga2011-47 | Multiscale Vector Volumes |  | author:Lvdi Wang, Yizhou Yu, Kun Zhou, Baining Guo
-siga2011-48 | Slices: A Shape-proxy Based on Planar Sections |  | author:James McCrae , Karan Singh, Niloy Mitra
-siga2011-49 | Coons BVH for Freeform Geometric Models |  | author:Yong-Joon Kim, Young-Taek Oh, Seung-Hyun Yoon, Myung-Soo Kim, Gershon Elber
-siga2011-50 | Practical Spectral Characterization of Trichromatic Cameras |  | author:Martin Rump ,  Arno Zinke , Reinhard Klein
-siga2011-51 | Single View Reflectance Capture using Multiplexed Scattering and Time-of-flight Imaging |  | author:Nikhil Naik, Shuang Zhao, Andreas Velten , Ramesh Raskar, Kavita Bala
-siga2011-52 | Estimating Dual-scale Properties of Glossy Surfaces from Step-edge Lighting |  | author:Chun-Po Wang ,  Noah Snavely , Steve Marschner
-siga2011-53 | Interactive Hair Rendering and Appearance Editing under Environment Lighting |  | author:Kun Xu , Li-Qian Ma, Bo Ren, Rui Wang, Shi-Min Hu
-siga2011-54 | Image Smoothing via L0 Gradient Minimization |  | author:Li Xu ,  Cewu Lu,  Yi Xu, Jiaya Jia
-siga2011-55 | Convolution Pyramids |  | author:Zeev Farbman ,  Raanan Fattal , Dani Lischinski
-siga2011-56 | GPU-Efficient Recursive Filtering and Summed-Area Tables |  | author:Diego Nehab , Andre Maximo, Rodolfo Schulz de Lima, Hugues Hoppe
-siga2011-57 | Multigrid and Multilevel Preconditioners for Computational Photography |  | author:Dilip Krishnan, Richard Szeliski
-siga2011-58 | Modular Radiance Transfer |  | author:Bradford J. Loos, Lakulish Antani, Peter-Pike Sloan
-siga2011-59 | LightSlice: Matrix Slice Sampling for the Many-Lights Problem |  | author:Jiawei Ou, Fabio Pellacini
-siga2011-60 | Practical Filtering for Efficient Ray-traced Directional Occlusion |  | author:Kevin Egan, Fredo Durand, Ravi Ramamoorthi
-siga2011-61 | Progressive Photon Beams |  | author:Wojciech Jarosz , Derek Nowrouzezahrai , Robert Thomas, Peter-Pike Sloan, Matthias Zwicker
-siga2011-62 | Insitu: Sketching Architectural Designs in Context |  | author:Patrick Paczkowski, Min H. Kim , Julie Dorsey , Holly Rushmeier, Yann Morvan , Carol O'Sullivan
-siga2011-63 | Structure-Preserving Retargeting of Irregular 3D Architecture |  | author:Jinjie Lin, Daniel Cohen-Or, Hao Zhang, Cheng Liang, Andrei Sharf, Oliver Deussen, Baoquan Chen
-siga2011-64 | Adaptive Partitioning of Urban Facades |  | author:Chao-Hui Shen , Shi-Sheng Huang, Hongbo Fu, Shi-Min Hu
-siga2011-65 | Conjoining Gestalt Rules for Abstraction of Architectural Drawings |  | author:Liangliang Nan, Andrei Sharf, Ke Xie, Tien-Tsin Wong, Oliver Deussen, Daniel Cohen-Or, Baoquan Chen
-siga2011-66 | Polarization Fields: Dynamic Light Field Display using Multi-Layer LCDs |  | author:Douglas Lanman, Gordon Wetzstein, Matthew Hirsch, Wolfgang Heidrich
-siga2011-67 | Computing and Fabricating Multilayer Models |  | author:Michael Holroyd, Ilya Baran, Jason Lawrence, Wojciech Matusik
-siga2011-68 | C1x6: A Stereoscopic Six-User Display for Co-located Collaboration in Shared Virtual Environments |  | author:Alexander Kulik, Andre Kunert, Stephan Beck, Roman Reichel, Roland Blach Fraunhofer IAO, Bernd Froehlich
-siga2011-69 | OSCAM - Optimized Stereoscopic Camera Control for Interactive 3D |  | author:Thomas Oskam, Alexander Hornung, Huw Bowles, Kenny Mitchell ,, Markus Gross
-siga2011-70 | Multi-perspective Stereoscopy from Light Fields |  | author:Changil Kim, Alexander Hornung , Simon Heinzle, Wojciech Matusik, Markus Gross
+siga2011-1 | Pattern-Aware Shape Deformation Using Sliding Dockers |  | author:
+siga2011-2 | Shape Space Exploration of Constrained Meshes |  | author:Yong-Liang Yang ,  Yi-Jun Yang Helmut Pottmann 
+siga2011-3 | Joint-Shape Segmentation with Linear Programming |  | author:Qixing Huang ,  Vladlen Koltun 
+siga2011-4 | Unsupervised Co-Segmentation of a Set of Shapes via Descriptor-Space Spectral Clusterin |  | author:
+siga2011-5 | Modeling and generating moving trees from video |  | author:
+siga2011-6 | Candid Portrait Selection From Video |  | author:
+siga2011-7 | Multiview Face Capture using Polarized Spherical Gradient Illumination |  | author:Abhijeet Ghosh ,  Graham Fyffe ,  Borom Tunwattanapong ,  Jay Busch ,  Xueming Yu 
+siga2011-8 | Video Face Replacement |  | author:
+siga2011-9 | A Rendering Framework for Multi-Scale Views of 3D Models |  | author:
+siga2011-10 | Mixed-Order Compositing for 3D Painting |  | author:
+siga2011-11 | Animated Construction of Line Drawings |  | author:
+siga2011-12 | Sketch-based Dynamic Illustration of Fluid Systems |  | author:
+siga2011-13 | Interactive Hybrid Simulation of Large-Scale Traffic |  | author:
+siga2011-14 | Pattern-Guided Smoke Animation with Lagrangian Coherent Structure |  | author:Zhi Yuan,  Fan Chen
+siga2011-15 | Interference Aware Geometric Modeling |  | author:
+siga2011-16 | Imperceptible Relaxation of Collision Avoidance Constraints in Virtual Crowds |  | author:Richard Kulpa ,  Anne-Helene Olivier Jan Ondrej , Julien Pettre,  Grenoble
+siga2011-17 | A Hybrid Iterative Solver for Robustly Capturing Coulomb Friction in Hair Dynamics |  | author:Gilles Daviet,  Florence Bertails-Descoubes , Laurence Boissieux,  Grenoble
+siga2011-18 | General Planar Quadrilateral Mesh Design Using Conjugate Direction Field |  | author:
+siga2011-19 | Connectivity Editing for Quadrilateral Meshes |  | author:
+siga2011-20 | Simple Quad Domains for Field Aligned Mesh Parametrization |  | author:
+siga2011-21 | Boundary Aligned Smooth 3D Cross-Frame Field |  | author:
+siga2011-22 | Material Matting |  | author:Daniel Lepage
+siga2011-23 | Physically-Based Interactive Bi-Scale Material Design |  | author:Hongzhi Wu ,  Julie Dorsey 
+siga2011-24 | AppGen: Interactive Material Modeling from a Single Image |  | author:
+siga2011-25 | AppWarp: Retargeting Measured Materials by Appearance-space Warping |  | author:
+siga2011-26 | Online Reconstruction of 3D Objects from Arbitrary Cross-Sections |  | author:Amit Bermano,  Amir Vaxman 
+siga2011-27 | Fusion of Depth Maps with Multiple Scales |  | author:Simon Fuhrmann 
+siga2011-28 | Global Parametrization of Range Image Sets |  | author:
+siga2011-29 | Image-space bidirectional scene reprojection |  | author:
+siga2011-30 | A Shading Reuse Method for Efficient Micropolygon Ray Tracing |  | author:Qiming Hou 
+siga2011-31 | Genetic Programming for Shader Simplification |  | author:Pitchaya Sitthi-amorn ,  Nicholas Modly,  Westley Weimer 
+siga2011-32 | An Efficient Alias-free Shadow Algorithm for Opaque and Transparent Objects using per-triangle Shadow Volumes |  | author:Erik Sintorn,  Ola Olsson
+siga2011-33 | Data-driven Visual Similarity for Cross-domain Image Matching |  | author:Abhinav Shrivastava ,  Tomasz Malisiewicz ,  Abhinav Gupta 
+siga2011-34 | Arcimboldo-like Collage Using Internet Images |  | author:Hua Huang Lei Zhang
+siga2011-35 | Semantic Colorization with Internet Images |  | author:
+siga2011-36 | Rendering Synthetic Objects into Legacy Photographs |  | author:Kevin Karsch ,  Varsha Hedau ,  David Forsyth 
+siga2011-37 | Displacement Interpolation Using Lagrangian Mass Transport |  | author:
+siga2011-38 | Adaptive Sampling and Reconstruction using Greedy Error Minimization |  | author:Fabrice Rousselle ,  Claude Knaus 
+siga2011-39 | T&I Engine: Traversal and Intersection Engine for Hardware Accelerated Ray Tracing |  | author:Jae-Ho Nah,  Jeong-Soo Park,  Chanmin Park,  Jin-Woo Kim,  Yun-Hye Jung,  Woo-Chan Park
+siga2011-40 | Coherent parallel hashing |  | author:
+siga2011-41 | Artist Friendly Facial Animation Retargeting |  | author:
+siga2011-42 | Compression and Direct Manipulation of Complex Blendshape Models |  | author:
+siga2011-43 | Controlling Physics-Based Characters Using Soft Contacts |  | author:Sumit Jain 
+siga2011-44 | Modal-Space Control for Articulated Characters |  | author:Sumit Jain 
+siga2011-45 | Stretchable and Twistable Bones for Skeletal Shape Deformation |  | author:Alec Jacobson 
+siga2011-46 | Freeform vector graphics with controlled thin-plate splines |  | author:Mark Finch ,  John Snyder 
+siga2011-47 | Multiscale Vector Volumes |  | author:
+siga2011-48 | Slices: A Shape-proxy Based on Planar Sections |  | author:
+siga2011-49 | Coons BVH for Freeform Geometric Models |  | author:
+siga2011-50 | Practical Spectral Characterization of Trichromatic Cameras |  | author:Martin Rump ,  Arno Zinke 
+siga2011-51 | Single View Reflectance Capture using Multiplexed Scattering and Time-of-flight Imaging |  | author:
+siga2011-52 | Estimating Dual-scale Properties of Glossy Surfaces from Step-edge Lighting |  | author:Chun-Po Wang ,  Noah Snavely 
+siga2011-53 | Interactive Hair Rendering and Appearance Editing under Environment Lighting |  | author:
+siga2011-54 | Image Smoothing via L0 Gradient Minimization |  | author:Li Xu ,  Cewu Lu,  Yi Xu
+siga2011-55 | Convolution Pyramids |  | author:Zeev Farbman ,  Raanan Fattal 
+siga2011-56 | GPU-Efficient Recursive Filtering and Summed-Area Tables |  | author:
+siga2011-57 | Multigrid and Multilevel Preconditioners for Computational Photography |  | author:
+siga2011-58 | Modular Radiance Transfer |  | author:
+siga2011-59 | LightSlice: Matrix Slice Sampling for the Many-Lights Problem |  | author:
+siga2011-60 | Practical Filtering for Efficient Ray-traced Directional Occlusion |  | author:
+siga2011-61 | Progressive Photon Beams |  | author:
+siga2011-62 | Insitu: Sketching Architectural Designs in Context |  | author:
+siga2011-63 | Structure-Preserving Retargeting of Irregular 3D Architecture |  | author:
+siga2011-64 | Adaptive Partitioning of Urban Facades |  | author:
+siga2011-65 | Conjoining Gestalt Rules for Abstraction of Architectural Drawings |  | author:
+siga2011-66 | Polarization Fields: Dynamic Light Field Display using Multi-Layer LCDs |  | author:
+siga2011-67 | Computing and Fabricating Multilayer Models |  | author:
+siga2011-68 | C1x6: A Stereoscopic Six-User Display for Co-located Collaboration in Shared Virtual Environments |  | author:
+siga2011-69 | OSCAM - Optimized Stereoscopic Camera Control for Interactive 3D |  | author:
+siga2011-70 | Multi-perspective Stereoscopy from Light Fields |  | author:

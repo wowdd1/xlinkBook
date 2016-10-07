@@ -1,38 +1,38 @@
-sca2003-1 | A Practical Dynamics System |  | author:Zoran Kacic-Alesic, Marcus Nordenstam, David Bullock
-sca2003-2 | Interactive Physically Based Solid Dynamics |  | author:Michael Hauth, Joachim Gross, Wolfgang Strasser
-sca2003-3 | Simulation of Clothing with Folds and Wrinkles |  | author:Robert Bridson, Sebastian Marino, Ronald P. Fedkiw
-sca2003-4 | Estimating Cloth Simulation Parameters from Video |  | author:Kiran Bhat , Christopher Twigg , Jessica Hodgins , Pradeep Khosla, Zoran Popović , Steven Seitz
-sca2003-5 | Feel the "Fabric": An Audio-Haptic Interface |  | author:Gang Huang, Dimitris Metaxas, Muthu Govindaraj
-sca2003-6 | Discrete Shells |  | author:Eitan Grinspun ,, Anil Hirani, Mathieu Desbrun, Peter Schroder
-sca2003-7 | Finite Volume Methods for the Simulation of Skeletal Muscle |  | author:Joseph Teran, Silvia Blemker, Victor Ng Thow Hing, Ronald P. Fedkiw
-sca2003-8 | Blowing in the Wind |  | author:Xiaoming Wei ,  Ye Zhao ,  Zhe Fan ,  Wei Li , Suzanne Yoakum-Stover, Arie Kaufman
-sca2003-9 | Visual Simulation of Ice Crystal Growth |  | author:Theodore Kim , Ming C. Lin
-sca2003-10 | Construction and Animation of Anatomically Based Human Hand Models |  | author:Irene Albrecht ,  Joerg Haber , Hans-Peter Seidel,  Germany )
-sca2003-11 | Handrix: Animating the Human Hand |  | author:George ElKoura , Karan Singh
-sca2003-12 | Synthesizing Animatable Body Models with Parameterized Shape Modifications |  | author:Hyewon Seo ,  Frederic Cordier ,  Nadia Magnenat-Thalmann , ,  Switzerland )
-sca2003-13 | Dynapack: Compressing 3D Animations of Fixed Connectivity Triangle Meshes |  | author:Lawrence Ibarria, Jarek Rossignac
-sca2003-14 | Geometry Videos: A New Representation for 3D Animations |  | author:Hector Briceno, Pedro Sander, Leonard McMillan
-sca2003-15 | Advected Textures |  | author:Fabrice Neyret
-sca2003-16 | Particle-Based Fluid Simulation for Interactive Applications |  | author:Matthias Müller ,  David Charypar , Markus Gross
-sca2003-17 | A Real-Time Cloud Modeling, Rendering, and Animation System |  | author:Joshua Schpok ,Joseph Simons, David Ebert, Charles Hansen
-sca2003-18 | An Example-Based Approach for Facial Expression Cloning |  | author:Hyewon Pyun ,  Yejin Kim , Wonseok Chae,  Hyung Woo Kang , Sung Yong Shin
-sca2003-19 | Geometry-Driven Photorealistic Facial Expression Synthesis |  | author:Qingshan Zhang, Zicheng Liu, Baining Guo , Heung-Yeung Shum
-sca2003-20 | Learning Controls for Blend Shape Based Realistic Facial Animation |  | author:Pushkar Joshi , Wen Tien,  Mathieu Desbrun , Frederic Pighin
-sca2003-21 | Vision-based Control of 3D Facial Animation |  | author:Jinxiang Chai ,  Jing Xiao , Jessica Hodgins
-sca2003-22 | Adaptive Wisp Tree - a multiresolution control structure for simulating dynamic clustering in hair motion |  | author:Florence Bertails, Tae-Yong Kim, Marie-Paule Cani, Ulrich Neumann
-sca2003-23 | Flexible Automatic Motion Blending with Registration Curves |  | author:Lucas Kovar , Michael Gleicher
-sca2003-24 | Unsupervised Learning for Speech Motion Editing |  | author:Yong Cao, Frederic Pighin, Petros Faloutsos
-sca2003-25 | An Evaluation of a Cost Metric for Selecting Transitions between Motion Segments |  | author:Jing Wang, Bobby Bodenheimer
-sca2003-26 | Aesthetic Edits For Character Animation |  | author:Michael Neff , Eugene Fiume
-sca2003-27 | Mapping Optical Motion Capture Data to Skeletal Motion Using a Physical Model |  | author:Victor Zordan , Nicholas Van Der Horst
-sca2003-28 | Trackable Surfaces |  | author:Igor Guskov ,  Sergey Klibanov , Benjamin Bryant
-sca2003-29 | A 2-Stages Locomotion Planner for Digital Actors |  | author:Julien Pettre ,  Jean-Paul Laumond , Thierry Simeon
-sca2003-30 | A Scenario Language to orchestrate Virtual World Evolution |  | author:Frederic Devillers, Stephane Donikian
-sca2003-31 | Generating Flying Creatures using Body-Brain Co-Evolution                         http://www.melkzedek.com/publication.htm |  | author:Yoon-Sik Shim , Chang-Hun Kim
-sca2003-32 | Constrained Animation of Flocks |  | author:Matt Anderson ,  Eric McDaniel , Stephen Chenney
-sca2003-33 | On Creating Animated Presentations |  | author:Douglas Zongker, David Salesin
-sca2003-34 | Stylizing Motion with Drawings |  | author:Yin Li, Michael Gleicher, Ying-Qing Xu , Heung-Yeung Shum
-sca2003-35 | A Sketching Interface for Articulated Figure Animation |  | author:James Davis, Maneesh Agrawala, Erika Chuang, Zoran Popović, David Salesin
-sca2003-36 | FootSee: an Interactive Animation System |  | author:KangKang Yin, Dinesh K. Pai
-sca2003-37 | Interactive Control of Component-based Morphing |  | author:Yonghong Zhao,  Hong Yang Ong ,  Tiow Seng Tan , Yongguan Xiao
-sca2003-38 | Sound-by-Numbers: Motion-Driven Sound Synthesis |  | author:Marc Cardle , Stephen Brooks, Ziv Bar-Joseph, Peter Robinson
+sca2003-1 | A Practical Dynamics System |  | author:Zoran Kacic-Alesic, Marcus Nordenstam
+sca2003-2 | Interactive Physically Based Solid Dynamics |  | author:
+sca2003-3 | Simulation of Clothing with Folds and Wrinkles |  | author:
+sca2003-4 | Estimating Cloth Simulation Parameters from Video |  | author:
+sca2003-5 | Feel the "Fabric": An Audio-Haptic Interface |  | author:
+sca2003-6 | Discrete Shells |  | author:
+sca2003-7 | Finite Volume Methods for the Simulation of Skeletal Muscle |  | author:
+sca2003-8 | Blowing in the Wind |  | author:Xiaoming Wei ,  Ye Zhao ,  Zhe Fan ,  Wei Li , Suzanne Yoakum-Stover
+sca2003-9 | Visual Simulation of Ice Crystal Growth |  | author:Theodore Kim 
+sca2003-10 | Construction and Animation of Anatomically Based Human Hand Models |  | author:Irene Albrecht ,  Joerg Haber , Hans-Peter Seidel
+sca2003-11 | Handrix: Animating the Human Hand |  | author:George ElKoura 
+sca2003-12 | Synthesizing Animatable Body Models with Parameterized Shape Modifications |  | author:Hyewon Seo ,  Frederic Cordier ,  Nadia Magnenat-Thalmann , 
+sca2003-13 | Dynapack: Compressing 3D Animations of Fixed Connectivity Triangle Meshes |  | author:Lawrence Ibarria
+sca2003-14 | Geometry Videos: A New Representation for 3D Animations |  | author:
+sca2003-15 | Advected Textures |  | author:
+sca2003-16 | Particle-Based Fluid Simulation for Interactive Applications |  | author:Matthias Müller ,  David Charypar 
+sca2003-17 | A Real-Time Cloud Modeling, Rendering, and Animation System |  | author:
+sca2003-18 | An Example-Based Approach for Facial Expression Cloning |  | author:Hyewon Pyun ,  Yejin Kim , Wonseok Chae,  Hyung Woo Kang 
+sca2003-19 | Geometry-Driven Photorealistic Facial Expression Synthesis |  | author:
+sca2003-20 | Learning Controls for Blend Shape Based Realistic Facial Animation |  | author:Pushkar Joshi , Wen Tien,  Mathieu Desbrun 
+sca2003-21 | Vision-based Control of 3D Facial Animation |  | author:Jinxiang Chai ,  Jing Xiao 
+sca2003-22 | Adaptive Wisp Tree - a multiresolution control structure for simulating dynamic clustering in hair motion |  | author:
+sca2003-23 | Flexible Automatic Motion Blending with Registration Curves |  | author:Lucas Kovar 
+sca2003-24 | Unsupervised Learning for Speech Motion Editing |  | author:
+sca2003-25 | An Evaluation of a Cost Metric for Selecting Transitions between Motion Segments |  | author:Jing Wang
+sca2003-26 | Aesthetic Edits For Character Animation |  | author:Michael Neff 
+sca2003-27 | Mapping Optical Motion Capture Data to Skeletal Motion Using a Physical Model |  | author:Victor Zordan 
+sca2003-28 | Trackable Surfaces |  | author:Igor Guskov ,  Sergey Klibanov 
+sca2003-29 | A 2-Stages Locomotion Planner for Digital Actors |  | author:Julien Pettre ,  Jean-Paul Laumond 
+sca2003-30 | A Scenario Language to orchestrate Virtual World Evolution |  | author:
+sca2003-31 | Generating Flying Creatures using Body-Brain Co-Evolution                         http://www.melkzedek.com/publication.htm |  | author:Yoon-Sik Shim 
+sca2003-32 | Constrained Animation of Flocks |  | author:Matt Anderson ,  Eric McDaniel 
+sca2003-33 | On Creating Animated Presentations |  | author:
+sca2003-34 | Stylizing Motion with Drawings |  | author:
+sca2003-35 | A Sketching Interface for Articulated Figure Animation |  | author:
+sca2003-36 | FootSee: an Interactive Animation System |  | author:
+sca2003-37 | Interactive Control of Component-based Morphing |  | author:Yonghong Zhao,  Hong Yang Ong ,  Tiow Seng Tan 
+sca2003-38 | Sound-by-Numbers: Motion-Driven Sound Synthesis |  | author:

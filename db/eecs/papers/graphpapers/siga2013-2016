@@ -1,53 +1,53 @@
-siga2013-1 | Inverse Dynamic Hair Modeling with Frictional Contact |  | author:Alexandre Derouet-Jourdan , Florence Bertails-Descoubes , Gilles Daviet , Joelle Thollot,  France ))
-siga2013-2 | On-Set Performance Capture of Multiple Actors With A Stereo Camera |  | author:Chenglei Wu ,  Carsten Stoll ,  Levi Valgaerts , Christian Theobalt
-siga2013-3 | Reconstructing Detailed Dynamic Face Geometry from Monocular Video |  | author:Pablo Garrido ,  Levi Valgaerts ,  Chenglei Wu , Christian Theobalt
-siga2013-4 | Analyzing Growing Plants from 4D Point Cloud Data |  | author:Yangyan Li , Xiaochen Fan, Niloy J. Mitra, Daniel Chamovitz, Daniel Cohen-Or, Baoquan Chen
-siga2013-5 | Inverse Volume Rendering with Material Dictionaries |  | author:Ioannis Gkioulekas, Shuang Zhao , Kavita Bala, Todd Zickler, Anat Levin
-siga2013-6 | Wave-Ray Coupling for Interactive Sound Propagation in Large Complex Scenes |  | author:Hengchin Yeh ,  Ravish Mehra ,  Zhimin Ren ,  Lakulish Antani ,  Ming C. Lin , Dinesh Manocha
-siga2013-7 | Inverse Bi-scale Material Design |  | author:Hongzhi Wu, Julie Dorsey , Holly Rushmeier
-siga2013-8 | Joint Importance Sampling of Low-Order Volumetric Scattering |  | author:Iliyan Georgiev, Jaroslav Krivanek, Toshiya Hachisuka, Derek Nowrouzezahrai, Wojciech Jarosz ,
-siga2013-9 | PiCam: An Ultra-Thin High Performance Monolithic Camera Array |  | author:Kartik Venkataraman, Dan Lelescu, Jacques Duparre, Andrew McMahon, Gabriel Molina, Priyam Chatterjee, Robert Mullis, Shree Nayar
-siga2013-10 | Coded Time of Flight Cameras: Sparse Deconvolution to Address Multipath Interference and Recover Time Profiles |  | author:Achuta Kadambi, Refael Whyte, Ayush Bhandari, Lee Streeter, Christopher Barsi, Adrian Dorrington, Ramesh Raskar
-siga2013-11 | QEx: Robust Quad Mesh Extraction |  | author:Hans-Christian Ebke, David Bommes, Marcel Campen , Leif Kobbelt
-siga2013-12 | A Compact Random-Access Representation for Urban Modeling and Rendering |  | author:Zhengzheng Kuang, Bin Chan, Yizhou Yu, Wenping Wang
-siga2013-13 | Saddle Vertex Graph |  | author:Xiang Ying ,  Xiaoning Wang, Ying He
-siga2013-14 | Real-time 3D Reconstruction at Scale using Voxel Hashing |  | author:Matthias Niessner , Michael Zollhofer, Shahram Izadi, Marc Stamminger
-siga2013-15 | PolyCut: Monotone Graph-Cuts for PolyCube Base-Complex Construction |  | author:Marco Livesu, Nicholas Vining , Alla Sheffer , James Gregson, Riccardo Scateni
-siga2013-16 | A No-Reference Metric for Evaluating the Quality of Motion Deblurring |  | author:Yiming Liu, Jue Wang , Sunghyun Cho, Adam Finkelstein , Szymon Rusinkiewicz
-siga2013-17 | ¡§Mind the Gap¡¨: Tele-Registration for Structure-Driven Image Completion |  | author:Hui Huang , Kangxue Yin, Minglun Gong, Dani Lischinski, Daniel Cohen-Or, Uri Ascher, Baoquan Chen
-siga2013-18 | Content-Adaptive Image Downscaling |  | author:Johannes Kopf, Ariel Shamir, Pieter Peers
-siga2013-19 | Structure-Preserving Image Smoothing via Region Covariances |  | author:Levent Karacan ,  Erkut Erdem , Aykut Erdem
-siga2013-20 | Urban Pattern: Layout Design by Hierarchical Domain Splitting |  | author:Yong-Liang Yang , Jun Wang, Etienne Vouga, Peter Wonka
-siga2013-21 | Sparse Localized Deformation Components |  | author:Thomas Neumann, Kiran Varanasi, Stephan Wenger, Markus Wacker, Marcus Magnor, Christian Theobalt
-siga2013-22 | A general and efficient method for finding cycles in 3D curve networks |  | author:Yixin Zhuang, Ming Zou, Nathan Carr, Tao Ju
-siga2013-23 | Cost-effective Printing of 3D Objects with Skin-Frame Structures |  | author:Weiming Wang, Tuanfeng Y. Wang , Zhouwang Yang , Ligang Liu, Xin Tong, Weihua Tong , Jiansong Deng , Falai Chen, Xiuping Liu
-siga2013-24 | Sphere-Meshes: Shape Approximation using Spherical Quadric Error Metrics |  | author:Jean-Marc Thiery ,  Emilie Guy , Tamy Boubekeur
-siga2013-25 | Spatio-temporal Extrapolation for Fluid Animation |  | author:Yubo Zhang, Kwan-Liu Ma
-siga2013-26 | Interactive Localized Liquid Motion Editing |  | author:Zherong Pan, Jin Huang, Yiying Tong, Changxi Zheng, Hujun Bao
-siga2013-27 | Versatile Surface Tension and Adhesion for SPH Fluids |  | author:Nadir Akinci ,  A. Dippel,  Gizem Akinci , Matthias Teschner
-siga2013-28 | Physics-based Animation of Large-scale Splashing Liquids |  | author:Dan Gerszewski , Adam W. Bargteil
-siga2013-29 | Anatomy Transfer |  | author:Dicko Ali-Hamadi, Tiantian Liu, Benjamin Gilles, Ladislav Kavan, Francois Faure , Olivier Palombi Marie-Paule Cani
-siga2013-30 | 3D Self-Portraits |  | author:Hao Li, Etienne Vouga, Anton Gudym, Jonathan T. Barron, Linjie Luo, Gleb Gusev
-siga2013-31 | Designing and Fabricating Mechanical Automata from Mocap Sequences |  | author:Duygu Ceylan, Wilmot Li, Niloy J. Mitra, Maneesh Agrawala, Mark Pauly
-siga2013-32 | Augmenting Physical Avatars using Projector-Based Illumination |  | author:Amit Bermano, Philipp Bruschweiler, Daisuke Iwai, Bernd Bickel, Markus Gross
-siga2013-33 | 3D Wikipedia: Using Online Text to Automatically Label and Navigate Reconstructed Geometry |  | author:Bryan C. Russell ,  Ricardo Martin-Brualla ,  Daniel J. Butler ,  Steven M. Seitz , Luke Zettlemoyer
-siga2013-34 | Efficient Penetration Depth Computation using Active Learning |  | author:Jia Pan ,  Xinyu Zhang , Dinesh Manocha
-siga2013-35 | Projective Analysis for 3D Shape Segmentation |  | author:Yunhai Wang, Minglun Gong, Tianhua Wang, Daniel Cohen-Or, Hao Zhang, Baoquan Chen
-siga2013-36 | Fine-Grained Semi-Supervised Labeling of Large Shape Collections |  | author:Qi-xing Huang ,  Hao Su , Leonidas Guibas
-siga2013-37 | Data-driven Hallucination for Different Times of Day from a Single Outdoor Photo |  | author:YiChang Shih, Sylvain Paris, Fredo Durand , William T. Freeman
-siga2013-38 | Automatic Noise Modeling for Ghost-free HDR Reconstruction |  | author:Miguel Granados ,  Kwang In Kim ,  James Tompkin , Christian Theobalt
-siga2013-39 | Patch-based High Dynamic Range Video |  | author:Nima Khademi Kalantari, Eli Shechtman , Connelly Barnes , Soheil Darabi, Dan B Goldman, Pradeep Sen
-siga2013-40 | Image-Based Rendering in the Gradient Domain |  | author:Johannes Kopf, Fabian Langguth, Daniel Scharstein, Richard Szeliski, Michael Goesele
-siga2013-41 | The Line of Action: an Intuitive Interface for Expressive Character Posing |  | author:Martin Guay ,  Marie-Paule Cani , Remi Ronfard
-siga2013-42 | Robust Realtime Physically Based Motion Control for Human Grasping |  | author:Wenping Zhao,  Jianjie Zhang,  Jianyuan Min , Jinxiang Chai
-siga2013-43 | Animating Human Lower Limbs Using Contact-Invariant Optimization |  | author:Igor Mordatch, Jack M. Wang, Emanuel Todorov, Vladlen Koltun
-siga2013-44 | Flexible Muscle-Based Locomotion for Bipedal Creatures |  | author:Thomas Geijtenbeek, Michiel van de Panne, Frank van der Stappen
-siga2013-45 | Evaluating the Distinctiveness and Attractiveness of Human Motions on Realistic Virtual Bodies |  | author:Ludovic Hoyet, Kenneth Ryall, Katja Zibrek, Hwangpil Park , Jehee Lee, Jessica Hodgins, Carol O'Sullivan
-siga2013-46 | Linear Efficient Antialiased Displacement and Reflectance Mapping |  | author:Jonathan Dupuy, Jean-Claude Iehl, Poulin Pierre, Fabrice Neyret, Victor Ostromoukhov
-siga2013-47 | On-the-Fly Multi-Scale Infinite Texturing from Example |  | author:Kenneth Vanhoey ,  Frederic Larue ,  Basile Sauvage , Jean-Michel Dischler
-siga2013-48 | Anisotropic Spherical Gaussians |  | author:Kun Xu , Wei-Lun Sun, Zhao Dong, Dan-Yong Zhao, Run-Dong Wu, Shi-Min Hu ,
-siga2013-49 | GPU-based Out-of-Core Many-Lights Rendering |  | author:Rui Wang ,  Yuchi Huo,  Yazhen Yuan,  Kun Zhou ,  Wei Hua , Hujun Bao
-siga2013-50 | Modeling and Estimation of Internal Friction in Cloth |  | author:Eder Miguel, Rasmus Tamstorf , Derek Bradley, Sara C. Schvartzman, Bernhard Thomaszewski , Bernd Bickel, Wojciech Matusik, Steve Marschner, Miguel A. Otaduy
-siga2013-51 | Fast Simulation of Mass-Spring Systems |  | author:Tiantian Liu, Adam W. Bargteil, James F. O¡¦Brien, Ladislav Kavan
-siga2013-52 | An Efficient Construction of Reduced Deformable Objects |  | author:Christoph von Tycowicz, Christian Schulz, Hans-Peter Seidel , Klaus Hildebrandt
-siga2013-53 | Simulation and Control of Skeleton-driven Soft Body Characters |  | author:Libin Liu, KangKang Yin , Bin Wang, Baining Guo
+siga2013-1 | Inverse Dynamic Hair Modeling with Frictional Contact |  | author:
+siga2013-2 | On-Set Performance Capture of Multiple Actors With A Stereo Camera |  | author:Chenglei Wu ,  Carsten Stoll ,  Levi Valgaerts 
+siga2013-3 | Reconstructing Detailed Dynamic Face Geometry from Monocular Video |  | author:Pablo Garrido ,  Levi Valgaerts ,  Chenglei Wu 
+siga2013-4 | Analyzing Growing Plants from 4D Point Cloud Data |  | author:
+siga2013-5 | Inverse Volume Rendering with Material Dictionaries |  | author:
+siga2013-6 | Wave-Ray Coupling for Interactive Sound Propagation in Large Complex Scenes |  | author:Hengchin Yeh ,  Ravish Mehra ,  Zhimin Ren ,  Lakulish Antani ,  Ming C. Lin 
+siga2013-7 | Inverse Bi-scale Material Design |  | author:
+siga2013-8 | Joint Importance Sampling of Low-Order Volumetric Scattering |  | author:
+siga2013-9 | PiCam: An Ultra-Thin High Performance Monolithic Camera Array |  | author:
+siga2013-10 | Coded Time of Flight Cameras: Sparse Deconvolution to Address Multipath Interference and Recover Time Profiles |  | author:
+siga2013-11 | QEx: Robust Quad Mesh Extraction |  | author:
+siga2013-12 | A Compact Random-Access Representation for Urban Modeling and Rendering |  | author:
+siga2013-13 | Saddle Vertex Graph |  | author:Xiang Ying ,  Xiaoning Wang
+siga2013-14 | Real-time 3D Reconstruction at Scale using Voxel Hashing |  | author:
+siga2013-15 | PolyCut: Monotone Graph-Cuts for PolyCube Base-Complex Construction |  | author:
+siga2013-16 | A No-Reference Metric for Evaluating the Quality of Motion Deblurring |  | author:
+siga2013-17 | ¡§Mind the Gap¡¨: Tele-Registration for Structure-Driven Image Completion |  | author:
+siga2013-18 | Content-Adaptive Image Downscaling |  | author:
+siga2013-19 | Structure-Preserving Image Smoothing via Region Covariances |  | author:Levent Karacan ,  Erkut Erdem 
+siga2013-20 | Urban Pattern: Layout Design by Hierarchical Domain Splitting |  | author:
+siga2013-21 | Sparse Localized Deformation Components |  | author:
+siga2013-22 | A general and efficient method for finding cycles in 3D curve networks |  | author:
+siga2013-23 | Cost-effective Printing of 3D Objects with Skin-Frame Structures |  | author:
+siga2013-24 | Sphere-Meshes: Shape Approximation using Spherical Quadric Error Metrics |  | author:Jean-Marc Thiery ,  Emilie Guy 
+siga2013-25 | Spatio-temporal Extrapolation for Fluid Animation |  | author:Yubo Zhang
+siga2013-26 | Interactive Localized Liquid Motion Editing |  | author:
+siga2013-27 | Versatile Surface Tension and Adhesion for SPH Fluids |  | author:Nadir Akinci ,  A. Dippel,  Gizem Akinci 
+siga2013-28 | Physics-based Animation of Large-scale Splashing Liquids |  | author:Dan Gerszewski 
+siga2013-29 | Anatomy Transfer |  | author:
+siga2013-30 | 3D Self-Portraits |  | author:
+siga2013-31 | Designing and Fabricating Mechanical Automata from Mocap Sequences |  | author:
+siga2013-32 | Augmenting Physical Avatars using Projector-Based Illumination |  | author:
+siga2013-33 | 3D Wikipedia: Using Online Text to Automatically Label and Navigate Reconstructed Geometry |  | author:Bryan C. Russell ,  Ricardo Martin-Brualla ,  Daniel J. Butler ,  Steven M. Seitz 
+siga2013-34 | Efficient Penetration Depth Computation using Active Learning |  | author:Jia Pan ,  Xinyu Zhang 
+siga2013-35 | Projective Analysis for 3D Shape Segmentation |  | author:
+siga2013-36 | Fine-Grained Semi-Supervised Labeling of Large Shape Collections |  | author:Qi-xing Huang ,  Hao Su 
+siga2013-37 | Data-driven Hallucination for Different Times of Day from a Single Outdoor Photo |  | author:
+siga2013-38 | Automatic Noise Modeling for Ghost-free HDR Reconstruction |  | author:Miguel Granados ,  Kwang In Kim ,  James Tompkin 
+siga2013-39 | Patch-based High Dynamic Range Video |  | author:
+siga2013-40 | Image-Based Rendering in the Gradient Domain |  | author:
+siga2013-41 | The Line of Action: an Intuitive Interface for Expressive Character Posing |  | author:Martin Guay ,  Marie-Paule Cani 
+siga2013-42 | Robust Realtime Physically Based Motion Control for Human Grasping |  | author:Wenping Zhao,  Jianjie Zhang,  Jianyuan Min 
+siga2013-43 | Animating Human Lower Limbs Using Contact-Invariant Optimization |  | author:
+siga2013-44 | Flexible Muscle-Based Locomotion for Bipedal Creatures |  | author:
+siga2013-45 | Evaluating the Distinctiveness and Attractiveness of Human Motions on Realistic Virtual Bodies |  | author:
+siga2013-46 | Linear Efficient Antialiased Displacement and Reflectance Mapping |  | author:
+siga2013-47 | On-the-Fly Multi-Scale Infinite Texturing from Example |  | author:Kenneth Vanhoey ,  Frederic Larue ,  Basile Sauvage 
+siga2013-48 | Anisotropic Spherical Gaussians |  | author:
+siga2013-49 | GPU-based Out-of-Core Many-Lights Rendering |  | author:Rui Wang ,  Yuchi Huo,  Yazhen Yuan,  Kun Zhou ,  Wei Hua 
+siga2013-50 | Modeling and Estimation of Internal Friction in Cloth |  | author:
+siga2013-51 | Fast Simulation of Mass-Spring Systems |  | author:
+siga2013-52 | An Efficient Construction of Reduced Deformable Objects |  | author:
+siga2013-53 | Simulation and Control of Skeleton-driven Soft Body Characters |  | author:

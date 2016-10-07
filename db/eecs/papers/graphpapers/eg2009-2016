@@ -13,7 +13,7 @@ eg2009-12 | Motion compression using Principal Geodesic Analysis |  | author:Max
 eg2009-13 | Fast GPU-based adaptive tessellation with CUDA |  | author:Michael Schwarz ,  Marc Stamminger
 eg2009-14 | Fast BVH Construction on GPUs |  | author:Christian Lauterbach ,  Michael Garland ,  Shubhabrata Sengupta ,  David Luebke , and Dinesh Manocha
 eg2009-15 | Out-of-core Data Management for Path Tracing on Hybrid Resources |  | author:Brian Budge ,  Tony Bernardin , Jeff A. Stuart,  Shubhabrata Sengupta ,  Kenneth I. Joy ,  John D. Owens
-eg2009-16 | A Part-aware Surface Metric for Shape Analysis |  | author:Frank,  Hao Zhang ,  Ariel Shamir ,  Daniel Cohen-Or
+eg2009-16 | A Part-aware Surface Metric for Shape Analysis |  | author: Hao Zhang ,  Ariel Shamir ,  Daniel Cohen-Or
 eg2009-17 | Shape Decomposition Using Modal Analysis |  | author:Qixing Huang ,  Martin Wicke ,  Bart Adams ,  Leonidas J. Guibas
 eg2009-18 | Linear Time Super-Helices |  | author:Florence Bertails
 eg2009-19 | Wrinkling captured garments using space-time data-driven deformation |  | author:Tiberiu Popa , Qingnan Zhou,  Derek Bradley ,  Vladislav Kraevoy ,  Hongbo Fu ,  Alla Sheffer ,  Wolfgang Heidrich

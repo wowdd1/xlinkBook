@@ -1,42 +1,42 @@
-eg2006-1 | Accurate Specular Reflections in Real-Time |  | author:David Roger , Nicolas Holzschuch
-eg2006-2 | An Improved Physically-Based Soft Shadow Volume Algorithm |  | author:Jaakko Lehtinen, Samuli Laine , Timo Aila
-eg2006-3 | Reflected-Scene Impostors for Realistic Reflections at Interactive Rates |  | author:Voicu Popescu ,  Chunhui Mei ,  Jordan Dauble , Elisha Sack
-eg2006-4 | Direct |  | author:John Schreiner ,  Carlos Scheidegger ,  Shachar Fleishman , Claudio Silva,  University of Utah )
-eg2006-5 | A Robust Two-Step Procedure for Quad-Dominant Remeshing |  | author:Martin Marinov , Leif Kobbelt,  RWTH Aachen )
-eg2006-6 | Computing Discrete Shape Operators on General Meshes |  | author:Eitan Grinspun, Yotam Gingold ,Jason Reisman, Denis Zorin
-eg2006-7 | Projective Alpha Colour |  | author:Philip Willis,  Department of Computer Science,  University of Bath,  UK )
-eg2006-8 | Easy Matting: A Stroke Based Approach for Continous Image Matting |  | author:Yu Guan ,  Wei Chen ,  Xiao Liang , Ziang Ding, Qunsheng Peng,  Zhejiang University,  China )
-eg2006-9 | Cross Dissolve Without Cross Fade: Preserving Contrast, Color and Salience in Image Compositing |  | author:Mark Grundland ,  Rahul Vohra , Gareth P. Williams, Neil A. Dodgson
-eg2006-10 | Wrinkling Coarse Meshes on the GPU |  | author:Joern Loviscach
-eg2006-11 | Latent Doodle Space |  | author:William V. Baxter III , Ken-ichi Anjyo
-eg2006-12 | Sweep-based Free Form Deformation |  | author:Seung-Hyun Yoon , Myung-Soo Kim,  Seoul National University,  Korea )
-eg2006-13 | Tuning Subdivision |  | author:Ursula Augsdorfer , Neil A. Dodgson, Malcolm A. Sabin
-eg2006-14 | Silhouette Extraction in Hough Space |  | author:Matt Olson , Richard,  School of Computing Science,  Simon Fraser University )
-eg2006-15 | Easy Mesh Cutting |  | author:Zhongping Ji,  Ligang Liu , Zhonggui Chen, Guojin Wang,  Zhejiang University and State Key Lab of CAD&CG,  Zhejiang University )
-eg2006-16 | GPU-based Collision Detection for Deformable Parameterized Surfaces |  | author:Alexander Greß ,  Michael Guthe , Reinhard Klein,  Universität Bonn,  Germany )
-eg2006-17 | Cache-Efficient Layouts of Bounding Volume Hierarchies |  | author:Sung-Eui Yoon, Dinesh Manocha
-eg2006-18 | Ray Tracing Animated Scenes using Motion Decomposition |  | author:Johannes Günther, Heiko Friedrich, Ingo Wald, Hans-Peter Seidel, Philipp Slusallek
-eg2006-19 | Multiresolution Random-Accessible Mesh Compression |  | author:Junho Kim, Sungyul Choe , Seungyong Lee
-eg2006-20 | C-BDAM - Compressed Batched Dynamic Adaptive Meshes for Terrain Rendering |  | author:Enrico Gobbetti , Fabio Marton, Paolo Cignoni ,Marco Di Benedetto, Fabio Ganovelli
-eg2006-21 | Texture Adaptation for Progressive Meshes |  | author:Chih-Chun Chen , Jung-Hong Chuang,  Taiwan,  ROC )
-eg2006-22 | Enhancing the Interactive Visualization of Procedurally Encoded Multifield Data with Ellipsoidal Basis Functions |  | author:Yun Jang, Ralf P. Botchen ,Andreas Lauser, David S. Ebert, Kelly P. Gaither, Thomas Ertl
-eg2006-23 | Opacity Peeling for Direct Volume Rendering |  | author:Christof Rezk-Salama , Andreas Kolb,  University of Siegen,  Germany )
-eg2006-24 | Topological Structures in Two-Parameter-Dependent 2D Vector Fields |  | author:Tino Weinkauf, Holger Theisel, Hans-Christian Hege, Hans-Peter Seidel
-eg2006-25 | Real-Time Weighted Pose-Space Deformation on the GPU |  | author:Taehyun Rhee, J.P. Lewis, Ulrich Neumann
-eg2006-26 | Dancing-to-Music Character Animation |  | author:Takaaki Shiratori, Atsushi Nakazawa, Katsushi Ikeuchi
-eg2006-27 | Splicing Upper-Body Actions with Locomotion |  | author:Rachel Heck, Lucas Kovar, Michael Gleicher
-eg2006-28 | Optimizing Control Variate Estimators for Rendering |  | author:Shaohua Fan, Stephen Chenney, Bo Hu , Kam-Wah Tsui , Yu-Chi Lai
-eg2006-29 | A Predictive Light Transport Model for the Human Iris |  | author:Michael W.Y. Lam, Gladimir V. G. Baranoski,  School of Computer Science,  University of Waterloo,  Canada )
-eg2006-30 | Data-driven Local Coordinate Systems for Image-Based Rendering |  | author:Gero Müller ,  Ralf Sarlette , Reinhard Klein,  Universität Bonn,  Germany )
-eg2006-31 | Semantic Photo Synthesis |  | author:Matthew A. Johnson , Gabriel J. Brostow , Jamie Shotton , Ognjen Arandjelovic, Vivek Kwatra, Roberto Cipolla
-eg2006-32 | Analysis of Reproducing Real-World Appearance on Displays of Varying Dynamic Range |  | author:Akiko Yoshida ,  Rafal Mantiuk ,  Karol Myszkowski , Hans-Peter Seidel,  Computer Graphics Group )
-eg2006-33 | Beyond Tone Mapping: Enhanced Depiction of Tone Mapped HDR Images |  | author:Kaleigh Smith ,  Grzegorz Krawczyk ,  Karol Myszkowski , Hans-Peter Seidel,  Computer Graphics Group )
-eg2006-34 | Seamless Integration of Initial Sketching and Subsequent Detail Editing in Flower Modeling |  | author:Takashi Ijiri, Shigeru Owada, Takeo Igarashi
-eg2006-35 | Virtual Garments: A Fully Geometric Approach for Clothing Design |  | author:Philippe Decaudin, Dan Julius, Jamie Wither, Laurence Boissieux, Alla Sheffer, Marie-Paule Cani
-eg2006-36 | Implicit Surface Modelling with a Globally Regularised Basis of Compact Support |  | author:Christian Walder ,, Bernhard Schölkopf , Olivier Chapelle
-eg2006-37 | Creating Face Models from Vague Mental Images |  | author:Volker Blanz, Irene Albrecht ,Joerg Haber, Hans-Peter Seidel
-eg2006-38 | Efficient large scale acquisition of building interiors |  | author:Gleb Bahmutov ,  Voicu Popescu ,  Mihai Mudure , 
-eg2006-39 | Stroke Pattern Analysis and Synthesis |  | author:Pascal Barla, Simon Breslav, Joëlle Thollot , François Sillion, Lee Markosian
-eg2006-40 | Bayesian Point Cloud Reconstruction |  | author:Philipp Jenke, Michael Wand, Martin Bokeloh , Andreas Schilling , Wolfgang Straßer ,
-eg2006-41 | Competing Fronts for Coarse-to-Fine Surface Reconstruction |  | author:Andrei Sharf, Thomas Lewiner, Ariel Shamir, Leif Kobbelt, Daniel Cohen-Or ,
-eg2006-42 | Volume-Surface Trees |  | author:Tamy Boubekeur, Wolfgang Heidrich, Xavier Granier , Christophe Schlick
+eg2006-1 | Accurate Specular Reflections in Real-Time |  | author:David Roger 
+eg2006-2 | An Improved Physically-Based Soft Shadow Volume Algorithm |  | author:
+eg2006-3 | Reflected-Scene Impostors for Realistic Reflections at Interactive Rates |  | author:Voicu Popescu ,  Chunhui Mei ,  Jordan Dauble 
+eg2006-4 | Direct |  | author:John Schreiner ,  Carlos Scheidegger ,  Shachar Fleishman , Claudio Silva
+eg2006-5 | A Robust Two-Step Procedure for Quad-Dominant Remeshing |  | author:Martin Marinov , Leif Kobbelt
+eg2006-6 | Computing Discrete Shape Operators on General Meshes |  | author:
+eg2006-7 | Projective Alpha Colour |  | author:Philip Willis,  Department of Computer Science,  University of Bath
+eg2006-8 | Easy Matting: A Stroke Based Approach for Continous Image Matting |  | author:Yu Guan ,  Wei Chen ,  Xiao Liang , Ziang Ding, Qunsheng Peng,  Zhejiang University
+eg2006-9 | Cross Dissolve Without Cross Fade: Preserving Contrast, Color and Salience in Image Compositing |  | author:Mark Grundland ,  Rahul Vohra , Gareth P. Williams
+eg2006-10 | Wrinkling Coarse Meshes on the GPU |  | author:
+eg2006-11 | Latent Doodle Space |  | author:William V. Baxter III 
+eg2006-12 | Sweep-based Free Form Deformation |  | author:Seung-Hyun Yoon , Myung-Soo Kim,  Seoul National University
+eg2006-13 | Tuning Subdivision |  | author:
+eg2006-14 | Silhouette Extraction in Hough Space |  | author:Matt Olson ,  School of Computing Science
+eg2006-15 | Easy Mesh Cutting |  | author:Zhongping Ji,  Ligang Liu , Zhonggui Chen, Guojin Wang,  Zhejiang University and State Key Lab of CAD&CG
+eg2006-16 | GPU-based Collision Detection for Deformable Parameterized Surfaces |  | author:Alexander Greß ,  Michael Guthe , Reinhard Klein,  Universität Bonn
+eg2006-17 | Cache-Efficient Layouts of Bounding Volume Hierarchies |  | author:
+eg2006-18 | Ray Tracing Animated Scenes using Motion Decomposition |  | author:
+eg2006-19 | Multiresolution Random-Accessible Mesh Compression |  | author:
+eg2006-20 | C-BDAM - Compressed Batched Dynamic Adaptive Meshes for Terrain Rendering |  | author:
+eg2006-21 | Texture Adaptation for Progressive Meshes |  | author:Chih-Chun Chen , Jung-Hong Chuang,  Taiwan
+eg2006-22 | Enhancing the Interactive Visualization of Procedurally Encoded Multifield Data with Ellipsoidal Basis Functions |  | author:
+eg2006-23 | Opacity Peeling for Direct Volume Rendering |  | author:Christof Rezk-Salama , Andreas Kolb,  University of Siegen
+eg2006-24 | Topological Structures in Two-Parameter-Dependent 2D Vector Fields |  | author:
+eg2006-25 | Real-Time Weighted Pose-Space Deformation on the GPU |  | author:
+eg2006-26 | Dancing-to-Music Character Animation |  | author:
+eg2006-27 | Splicing Upper-Body Actions with Locomotion |  | author:
+eg2006-28 | Optimizing Control Variate Estimators for Rendering |  | author:
+eg2006-29 | A Predictive Light Transport Model for the Human Iris |  | author:Michael W.Y. Lam, Gladimir V. G. Baranoski,  School of Computer Science,  University of Waterloo
+eg2006-30 | Data-driven Local Coordinate Systems for Image-Based Rendering |  | author:Gero Müller ,  Ralf Sarlette , Reinhard Klein,  Universität Bonn
+eg2006-31 | Semantic Photo Synthesis |  | author:
+eg2006-32 | Analysis of Reproducing Real-World Appearance on Displays of Varying Dynamic Range |  | author:Akiko Yoshida ,  Rafal Mantiuk ,  Karol Myszkowski , Hans-Peter Seidel
+eg2006-33 | Beyond Tone Mapping: Enhanced Depiction of Tone Mapped HDR Images |  | author:Kaleigh Smith ,  Grzegorz Krawczyk ,  Karol Myszkowski , Hans-Peter Seidel
+eg2006-34 | Seamless Integration of Initial Sketching and Subsequent Detail Editing in Flower Modeling |  | author:
+eg2006-35 | Virtual Garments: A Fully Geometric Approach for Clothing Design |  | author:
+eg2006-36 | Implicit Surface Modelling with a Globally Regularised Basis of Compact Support |  | author:
+eg2006-37 | Creating Face Models from Vague Mental Images |  | author:
+eg2006-38 | Efficient large scale acquisition of building interiors |  | author:Gleb Bahmutov ,  Voicu Popescu ,  Mihai Mudure 
+eg2006-39 | Stroke Pattern Analysis and Synthesis |  | author:
+eg2006-40 | Bayesian Point Cloud Reconstruction |  | author:
+eg2006-41 | Competing Fronts for Coarse-to-Fine Surface Reconstruction |  | author:
+eg2006-42 | Volume-Surface Trees |  | author:

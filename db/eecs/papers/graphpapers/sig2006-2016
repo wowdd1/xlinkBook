@@ -1,82 +1,82 @@
-sig2006-1 | Ray Tracing Animated Scenes using Coherent Grid Traversal |  | author:Ingo Wald ,  Thiago Ize ,  Andrew Kensler ,  Aaron Knoll , Steven G. Parker
-sig2006-2 | Guided Visibility Sampling |  | author:Peter Wonka ,Kaichi Zhou, Michael Wimmer, Stefan Maierhofer , Gerd Hesina, Alexander Reshetov
-sig2006-3 | A Spatial Data Structure for Fast Poisson-Disk Sample Generation |  | author:Daniel Dunbar, Greg Humphreys
-sig2006-4 | Recursive Wang Tiles for Real-Time Blue Noise |  | author:Johannes Kopf, Daniel Cohen-Or, Oliver Deussen, Dani Lischinski
-sig2006-5 | Fast Median and Bilateral Filtering |  | author:Ben Weiss
-sig2006-6 | Hybrid Images |  | author:Aude Oliva, Antonio Torralba, Philippe G. Schyns
-sig2006-7 | Image Deformation Using Moving Least Squares |  | author:Scott Schaefer, Travis McPhail, Joe Warren
-sig2006-8 | Appearance-Space Texture Synthesis |  | author:Sylvain Lefebvre , Hugues Hoppe
-sig2006-9 | A Planar-Reflective Symmetry Transform for 3D Shapes |  | author:Joshua Podolak ,  Philip Shilane ,  Aleksey Golovinskiy ,  Szymon Rusinkiewicz , Thomas A. Funkhouser
-sig2006-10 | Partial and Approximate Symmetry Detection for 3D Geometry |  | author:Niloy J. Mitra , Leonidas J. Guibas, Mark Pauly
-sig2006-11 | Reassembling Fractured Objects by Geometric Matching |  | author:Qi-Xing Huang, Simon Floery, Natasha Gelfand, Michael Hofer , Helmut Pottmann ,
-sig2006-12 | Perfect Spatial Hashing |  | author:Sylvain Lefebvre , Hugues Hoppe
-sig2006-13 | SmoothSketch: 3D free-form shapes from complex sketches |  | author:Olga Karpenko , John F. Hughes
-sig2006-14 | Image-based plant modeling |  | author:Long Quan , Ping Tan , Gang Zeng , Lu Yuan , Jingdong Wang, Sing Bing Kang
-sig2006-15 | Interactive Decal Compositing With Discrete Exponential Maps |  | author:Ryan Schmidt, Cindy Grimm, Brian Wyvill
-sig2006-16 | Procedural modeling of buildings |  | author:Pascal Müller, Simon Haegler ,Andreas Ulmer, Luc Van Gool
-sig2006-17 | Color Harmonization |  | author:Daniel Cohen-Or , Olga Sorkine , Ran Gal , Tommer Leyvand, Ying Qing Xu
-sig2006-18 | Drag-and-Drop Pasting |  | author:Jiaya Jia, Jian Sun, Chi-Keung Tang, Heung-Yeung Shum
-sig2006-19 | Two-scale Tone Management for Photographic Look |  | author:Soonmin Bae ,  Sylvain Paris , Frédo Durand,  Computer Science and Artificial Intelligence Laboratory )
-sig2006-20 | Interactive Local Adjustment of Tonal Values |  | author:Dani Lischinski , Zeev Farbman, Matt Uyttendaele , Richard Szeliski
-sig2006-21 | Image-Based Material Editing |  | author:Erum Arif Khan, Erik Reinhard, Roland Fleming , Heinrich Buelthoff
-sig2006-22 | Real-Time GPU Rendering of Piecewise Algebraic Surfaces |  | author:Charles Loop , Jim Blinn
-sig2006-23 | Point-Sampled Cell Complexes |  | author:Anders Adamson, Marc Alexa
-sig2006-24 | Geometric Modeling with Conical Meshes and Developable Surfaces |  | author:Yang Liu, Helmut Pottmann , Johannes Wallner, Wenping Wang, Yong-Liang Yang
-sig2006-25 | Mesh Quilting For Geometric Texture Synthesis |  | author:Kun Zhou ,Xin Huang,Xi Wang, Yiying Tong , Mathieu Desbrun, Baining Guo , Heung-Yeung Shum
-sig2006-26 | Inverse Shade Trees for Non-Parametric Material Representation and Editing |  | author:Jason Lawrence, Aner Ben-Artzi, Wojciech Matusik , Hanspeter Pfister, Ravi Ramamoorthi
-sig2006-27 | A Compact Factored Representation of Heterogeneous Subsurface Scattering |  | author:Pieter Peers , Karl vom Berge, Wojciech Matusik ,
-sig2006-28 | Appearance Manifolds for Modeling Time-Variant Appearance of Materials |  | author:Jiaping Wang ,, Xin Tong , Stephen Lin, Minghao Pan, Hujun Bao, Baining Guo , Heung-Yeung Shum
-sig2006-29 | Time-Varying Surface Appearance: Acquisition, Modeling, and Rendering |  | author:Jinwei Gu, Chien-i Tu, Ravi Ramamoorthi , Peter Belhumeur, Wojciech Matusik, Shree Nayar
-sig2006-30 | Flash Matting |  | author:Jian Sun ,  Yin Li,  Sing Bing Kang , Heung-Yeung Shum
-sig2006-31 | Natural Video Matting using Camera Arrays |  | author:Neel Joshi, Wojciech Matusik , Shai Avidan
-sig2006-32 | Removing Camera Shake From a Single Photograph |  | author:Rob Fergus , Barun Singh, Aaron Hertzmann , Sam Roweis, William Freeman
-sig2006-33 | Coded Exposure Photography: Motion Deblurring using Fluttered Shutter |  | author:Ramesh Raskar , Amit Agrawal, Jack Tumblin
-sig2006-34 | Efficient Simulation of Large Bodies of Water by Coupling Two and Three Dimensional Techniques |  | author:Geoffrey Irving, Eran Guendelman, Frank Losasso , Ronald Fedkiw
-sig2006-35 | Multiple Interacting Liquids |  | author:Frank Losasso, Tamar Shinar, Andrew Selle, Ronald Fedkiw
-sig2006-36 | Fluid Animation with Dynamic Meshes |  | author:Bryan M. Klingner ,  Bryan E. Feldman ,  Nuttapong Chentanez , James F. O'Brien,  Berkeley )
-sig2006-37 | Model Reduction for Real-Time Fluids |  | author:Adrien Treuille , Andrew Lewis, Zoran Popović
-sig2006-38 | Photo Tourism: Exploring Photo Collections in 3D |  | author:Noah Snavely , Steven M. Seitz, Richard Szeliski
-sig2006-39 | AutoCollage |  | author:Carsten Rother ,  Lucas Bordeaux ,  Youssef Hamadi , Andrew Blake
-sig2006-40 | Photographing Long Scenes With Multi-Viewpoint Panoramas |  | author:Aseem Agarwala, Maneesh Agrawala, Michael F. Cohen , Richard Szeliski, David Salesin
-sig2006-41 | Schematic Storyboards for Video Visualization and Editing |  | author:Dan B Goldman , Brian Curless, David Salesin, Steve Seitz
-sig2006-42 | Interaction Capture and Synthesis |  | author:Paul G. Kry, Dinesh K. Pai
-sig2006-43 | Capturing and Animating Skin Deformation in Human Motion |  | author:Sang Il Park , Jessica K. Hodgins
-sig2006-44 | Compression of Motion Capture Databases |  | author:Okan Arikan
-sig2006-45 | Motion Patches: Building Blocks for Virtual Environments Annotated With Motion Data |  | author:Kang Hoon Lee ,  Myeong Geol Choi , Jehee Lee
-sig2006-46 | Projection Defocus Analysis for Scene Capture and Image Display |  | author:Li Zhang , Shree K. Nayar
-sig2006-47 | Multiview Radial Catadioptric Imaging for Scene Capture |  | author:Sujit Kuthirummal , Shree K. Nayar
-sig2006-48 | Light Field Microscopy |  | author:Marc Levoy ,  Ren Ng ,  Andrew Adams ,  Matthew Footer, Mark Horowitz
-sig2006-49 | Fast Separation of Direct and Global Components of a Scene Using High Frequency Illumination |  | author:Shree K. Nayar , Gurunandan Krishnan, Michael D. Grossberg, Ramesh Raskar
-sig2006-50 | Real-Time BRDF Editing in Complex Lighting |  | author:Aner Ben-Artzi ,  Ryan Overbeck , Ravi Ramamoorthi
-sig2006-51 | Generalized Wavelet Product Integral for Rendering Dynamic Glossy Objects |  | author:Weifeng Sun , Amar Mukherjee
-sig2006-52 | All-Frequency Precomputed Radiance Transfer using Spherical Radial Basis Functions and Clustered Tensor Approximation |  | author:Yu-Ting Tsai , Zen-Chung Shih
-sig2006-53 | Real-time Soft Shadows in Dynamic Scenes using Spherical Harmonic Exponentiation |  | author:Zhong Ren, Rui Wang, John Snyder, Kun Zhou , Xinguo Liu, Bo Sun, Peter-Pike Sloan, Hujun Bao , Qunsheng Peng, Baining Guo ,
-sig2006-54 | Precomputed Acoustic Transfer: Output-Sensitive, Accurate Sound Generation for Geometrically Complex Vibration Sources |  | author:Doug James , Jernej Barbic, Dinesh K. Pai
-sig2006-55 | Photorealistic Rendering of Rain Streaks |  | author:Kshitiz Garg , Shree K. Nayar
-sig2006-56 | Acquiring Scattering Properties of Participating Media by Dilution |  | author:Srinivasa Narasimhan , Mohit Gupta, Craig Donner, Ravi Ramamoorthi , Shree K. Nayar, Henrik Wann Jensen
-sig2006-57 | Analysis of Human Faces using a Measurement-Based Skin Reflectance Model |  | author:Tim Weyrich, Wojciech Matusik , Hanspeter Pfister, Bernd Bickel, Craig Donner, Chien Tu, Janet McAndless, Jinho Lee, Addy Ngan ,, Henrik Wann Jensen, Markus Gross
-sig2006-58 | A Statistical Model for Synthesis of Detailed Facial Geometry |  | author:Aleksey Golovinskiy, Wojciech Matusik , Hanspeter Pfister, Szymon Rusinkiewicz , Thomas A. Funkhouser
-sig2006-59 | Modified Subdivision Surfaces With Continuous Curvature |  | author:Adi Levin
-sig2006-60 | Edge Subdivision Schemes and the Construction of Smooth Vector Fields |  | author:Ke Wang ,  Weiwei Yang,  Yiying Tong ,  Mathieu Desbrun , Peter Schröder
-sig2006-61 | Streaming Computation of Delaunay Triangulations |  | author:Martin Isenburg, Yuanxin Liu, Jonathan Shewchuk, Jack Snoeyink
-sig2006-62 | Spectral Surface Quadrangulation |  | author:Shen Dong , Peer-Timo Bremer , Michael Garland, Valerio Pascucci, John C. Hart
-sig2006-63 | Simulating Multiple Scattering in Hair Using a Photon Mapping Approach |  | author:Jonathan T. Moon , Stephen R. Marschner
-sig2006-64 | Statistical Acceleration for Animated Global Illumination |  | author:Mark Meyer, John Anderson
-sig2006-65 | Multidimensional Lightcuts |  | author:Bruce Walter ,  Adam Arbree ,  Kavita Bala , Donald Greenberg
-sig2006-66 | Direct-to-Indirect Transfer for Cinematic Relighting |  | author:Milos Hasan, Fabio Pellacini, Kavita Bala
-sig2006-67 | Editing Arbitrarily Deforming Surface Animations |  | author:Scott Kircher , Michael Garland
-sig2006-68 | A Fast Multigrid Algorithm for Mesh Deformation |  | author:Lin Shi ,  Yizhou Yu ,  Nathan Bell , Wei-Wen Feng
-sig2006-69 | Vector-Field-Based Shape Deformations |  | author:Wolfram von Funck ,  Holger Theisel , Hans-Peter Seidel
-sig2006-70 | Subspace Gradient Domain Mesh Deformation |  | author:Jin Huang, Xiaohan Shi ,, Xinguo Liu, Kun Zhou , Li-Yi Wei, Shanghua Teng, Hujun Bao, Baining Guo , Heung-Yeung Shum
-sig2006-71 | Locally Adapted Hierarchical Basis Preconditioning |  | author:Richard Szeliski
-sig2006-72 | Fast Proximity Computation Among Deformable Models using Discrete Voronoi Diagrams |  | author:Avneesh Sud ,  Naga Govindaraju ,  Russell Gayle ,  Ilknur Kabul , Dinesh Manocha
-sig2006-73 | Resolving Surface Collisions Through Intersection Contour Minimization |  | author:Pascal Volino , Nadia Magnenat-Thalmann
-sig2006-74 | Continuum Crowds |  | author:Adrien Treuille , Seth Cooper, Zoran Popović
-sig2006-75 | The Cartoon Animation Filter |  | author:Jue Wang, Maneesh Agrawala, Steven Drucker , Michael F. Cohen
-sig2006-76 | Inverse Kinematics for Reduced Deformable Models |  | author:Kevin G. Der, Robert W. Sumner, Jovan Popović
-sig2006-77 | Super-Helices for Predicting the Dynamics of Natural Hair |  | author:Florence Bertails, Basile Audoly , Audoly Consulting, Marie-Paule Cani, Bernard Querleux, Frédéric Leroy, Jean-Luc Lévêque
-sig2006-78 | Heads Up! Biomechanical Modeling and Neuromuscular Control of the Neck |  | author:Sung-Hee Lee , Demetri Terzopoulos,  Los Angeles )
-sig2006-79 | Exaggerated Shading for Depicting Shape and Detail |  | author:Szymon Rusinkiewicz , Michael Burns, Doug DeCarlo
-sig2006-80 | Enhancement Using a Blurred Depth Buffer |  | author:Thomas Luft ,  Carsten Colditz , Oliver Deussen
-sig2006-81 | Manga Colorization |  | author:Yingge Qu ,  Tien-Tsin Wong , Pheng-Ann Heng
-sig2006-82 | Real-Time Video Abstraction |  | author:Holger Winnemöller ,  Sven Olsen , Bruce Gooch
+sig2006-1 | Ray Tracing Animated Scenes using Coherent Grid Traversal |  | author:Ingo Wald ,  Thiago Ize ,  Andrew Kensler ,  Aaron Knoll 
+sig2006-2 | Guided Visibility Sampling |  | author:
+sig2006-3 | A Spatial Data Structure for Fast Poisson-Disk Sample Generation |  | author:Daniel Dunbar
+sig2006-4 | Recursive Wang Tiles for Real-Time Blue Noise |  | author:
+sig2006-5 | Fast Median and Bilateral Filtering |  | author:
+sig2006-6 | Hybrid Images |  | author:
+sig2006-7 | Image Deformation Using Moving Least Squares |  | author:
+sig2006-8 | Appearance-Space Texture Synthesis |  | author:Sylvain Lefebvre 
+sig2006-9 | A Planar-Reflective Symmetry Transform for 3D Shapes |  | author:Joshua Podolak ,  Philip Shilane ,  Aleksey Golovinskiy ,  Szymon Rusinkiewicz 
+sig2006-10 | Partial and Approximate Symmetry Detection for 3D Geometry |  | author:
+sig2006-11 | Reassembling Fractured Objects by Geometric Matching |  | author:
+sig2006-12 | Perfect Spatial Hashing |  | author:Sylvain Lefebvre 
+sig2006-13 | SmoothSketch: 3D free-form shapes from complex sketches |  | author:Olga Karpenko 
+sig2006-14 | Image-based plant modeling |  | author:
+sig2006-15 | Interactive Decal Compositing With Discrete Exponential Maps |  | author:
+sig2006-16 | Procedural modeling of buildings |  | author:
+sig2006-17 | Color Harmonization |  | author:
+sig2006-18 | Drag-and-Drop Pasting |  | author:
+sig2006-19 | Two-scale Tone Management for Photographic Look |  | author:Soonmin Bae ,  Sylvain Paris , Frédo Durand
+sig2006-20 | Interactive Local Adjustment of Tonal Values |  | author:
+sig2006-21 | Image-Based Material Editing |  | author:
+sig2006-22 | Real-Time GPU Rendering of Piecewise Algebraic Surfaces |  | author:Charles Loop 
+sig2006-23 | Point-Sampled Cell Complexes |  | author:
+sig2006-24 | Geometric Modeling with Conical Meshes and Developable Surfaces |  | author:
+sig2006-25 | Mesh Quilting For Geometric Texture Synthesis |  | author:
+sig2006-26 | Inverse Shade Trees for Non-Parametric Material Representation and Editing |  | author:
+sig2006-27 | A Compact Factored Representation of Heterogeneous Subsurface Scattering |  | author:
+sig2006-28 | Appearance Manifolds for Modeling Time-Variant Appearance of Materials |  | author:
+sig2006-29 | Time-Varying Surface Appearance: Acquisition, Modeling, and Rendering |  | author:
+sig2006-30 | Flash Matting |  | author:Jian Sun ,  Yin Li,  Sing Bing Kang 
+sig2006-31 | Natural Video Matting using Camera Arrays |  | author:
+sig2006-32 | Removing Camera Shake From a Single Photograph |  | author:
+sig2006-33 | Coded Exposure Photography: Motion Deblurring using Fluttered Shutter |  | author:
+sig2006-34 | Efficient Simulation of Large Bodies of Water by Coupling Two and Three Dimensional Techniques |  | author:
+sig2006-35 | Multiple Interacting Liquids |  | author:
+sig2006-36 | Fluid Animation with Dynamic Meshes |  | author:Bryan M. Klingner ,  Bryan E. Feldman ,  Nuttapong Chentanez , James F. O'Brien
+sig2006-37 | Model Reduction for Real-Time Fluids |  | author:
+sig2006-38 | Photo Tourism: Exploring Photo Collections in 3D |  | author:
+sig2006-39 | AutoCollage |  | author:Carsten Rother ,  Lucas Bordeaux ,  Youssef Hamadi 
+sig2006-40 | Photographing Long Scenes With Multi-Viewpoint Panoramas |  | author:
+sig2006-41 | Schematic Storyboards for Video Visualization and Editing |  | author:
+sig2006-42 | Interaction Capture and Synthesis |  | author:
+sig2006-43 | Capturing and Animating Skin Deformation in Human Motion |  | author:Sang Il Park 
+sig2006-44 | Compression of Motion Capture Databases |  | author:
+sig2006-45 | Motion Patches: Building Blocks for Virtual Environments Annotated With Motion Data |  | author:Kang Hoon Lee ,  Myeong Geol Choi 
+sig2006-46 | Projection Defocus Analysis for Scene Capture and Image Display |  | author:Li Zhang 
+sig2006-47 | Multiview Radial Catadioptric Imaging for Scene Capture |  | author:Sujit Kuthirummal 
+sig2006-48 | Light Field Microscopy |  | author:Marc Levoy ,  Ren Ng ,  Andrew Adams ,  Matthew Footer
+sig2006-49 | Fast Separation of Direct and Global Components of a Scene Using High Frequency Illumination |  | author:
+sig2006-50 | Real-Time BRDF Editing in Complex Lighting |  | author:Aner Ben-Artzi ,  Ryan Overbeck 
+sig2006-51 | Generalized Wavelet Product Integral for Rendering Dynamic Glossy Objects |  | author:Weifeng Sun 
+sig2006-52 | All-Frequency Precomputed Radiance Transfer using Spherical Radial Basis Functions and Clustered Tensor Approximation |  | author:Yu-Ting Tsai 
+sig2006-53 | Real-time Soft Shadows in Dynamic Scenes using Spherical Harmonic Exponentiation |  | author:
+sig2006-54 | Precomputed Acoustic Transfer: Output-Sensitive, Accurate Sound Generation for Geometrically Complex Vibration Sources |  | author:
+sig2006-55 | Photorealistic Rendering of Rain Streaks |  | author:Kshitiz Garg 
+sig2006-56 | Acquiring Scattering Properties of Participating Media by Dilution |  | author:
+sig2006-57 | Analysis of Human Faces using a Measurement-Based Skin Reflectance Model |  | author:
+sig2006-58 | A Statistical Model for Synthesis of Detailed Facial Geometry |  | author:
+sig2006-59 | Modified Subdivision Surfaces With Continuous Curvature |  | author:
+sig2006-60 | Edge Subdivision Schemes and the Construction of Smooth Vector Fields |  | author:Ke Wang ,  Weiwei Yang,  Yiying Tong ,  Mathieu Desbrun 
+sig2006-61 | Streaming Computation of Delaunay Triangulations |  | author:
+sig2006-62 | Spectral Surface Quadrangulation |  | author:
+sig2006-63 | Simulating Multiple Scattering in Hair Using a Photon Mapping Approach |  | author:Jonathan T. Moon 
+sig2006-64 | Statistical Acceleration for Animated Global Illumination |  | author:Mark Meyer
+sig2006-65 | Multidimensional Lightcuts |  | author:Bruce Walter ,  Adam Arbree ,  Kavita Bala 
+sig2006-66 | Direct-to-Indirect Transfer for Cinematic Relighting |  | author:
+sig2006-67 | Editing Arbitrarily Deforming Surface Animations |  | author:Scott Kircher 
+sig2006-68 | A Fast Multigrid Algorithm for Mesh Deformation |  | author:Lin Shi ,  Yizhou Yu ,  Nathan Bell 
+sig2006-69 | Vector-Field-Based Shape Deformations |  | author:Wolfram von Funck ,  Holger Theisel 
+sig2006-70 | Subspace Gradient Domain Mesh Deformation |  | author:
+sig2006-71 | Locally Adapted Hierarchical Basis Preconditioning |  | author:
+sig2006-72 | Fast Proximity Computation Among Deformable Models using Discrete Voronoi Diagrams |  | author:Avneesh Sud ,  Naga Govindaraju ,  Russell Gayle ,  Ilknur Kabul 
+sig2006-73 | Resolving Surface Collisions Through Intersection Contour Minimization |  | author:Pascal Volino 
+sig2006-74 | Continuum Crowds |  | author:
+sig2006-75 | The Cartoon Animation Filter |  | author:
+sig2006-76 | Inverse Kinematics for Reduced Deformable Models |  | author:
+sig2006-77 | Super-Helices for Predicting the Dynamics of Natural Hair |  | author:
+sig2006-78 | Heads Up! Biomechanical Modeling and Neuromuscular Control of the Neck |  | author:Sung-Hee Lee , Demetri Terzopoulos
+sig2006-79 | Exaggerated Shading for Depicting Shape and Detail |  | author:
+sig2006-80 | Enhancement Using a Blurred Depth Buffer |  | author:Thomas Luft ,  Carsten Colditz 
+sig2006-81 | Manga Colorization |  | author:Yingge Qu ,  Tien-Tsin Wong 
+sig2006-82 | Real-Time Video Abstraction |  | author:Holger Winnemöller ,  Sven Olsen 

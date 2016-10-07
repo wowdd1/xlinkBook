@@ -1,70 +1,70 @@
-siga2009-1 | Layered Shape Synthesis: Automatic Generation of Control Maps for Non-Stationary Textures |  | author:Amir Rosenberger , Daniel Cohen-Or, Dani Lischinski
-siga2009-2 | Feature-Aligned Shape Texturing |  | author:Kai Xu, Daniel Cohen-Or, Tao Ju, Ligang Liu, Hao Zhang, Shizhe Zhou, Yueshan Xiong
-siga2009-3 | Continuity Mapping for Multi-chart Textures |  | author:Francisco Gonzalez , Gustavo Patow,  Geometry and Graphics Group )
-siga2009-4 | Motion Field Texture Synthesis |  | author:Chongyang Ma, Li-Yi Wei, Baining Guo, Kun Zhou
-siga2009-5 | Interactive Design of Urban Spaces using Geometrical and Behavioral Modeling |  | author:Carlos A. Vanegas , Daniel Aliaga , Bedrich Benes, Paul Waddell
-siga2009-6 | Procedural Modeling of Structurally-Sound Masonry Buildings |  | author:Emily Whiting, John Ochsendorf, Fredo Durand
-siga2009-7 | Symmetric Architecture Modeling with a Single Image |  | author:Nianjuan Jiang,  Ping Tan , Loong-Fah Cheong
-siga2009-8 | Image-Based Street-Side City Modeling |  | author:Jianxiong Xiao , Tian Fang , Peng Zhao, Maxime Lhuillier, Long Quan
-siga2009-9 | Patch-Based Image Vectorization with Automatic Curvilinear Feature Alignment |  | author:Tian Xia ,  Binbin Liao, Yizhou Yu
-siga2009-10 | A GPU Laplacian Solver for Diffusion Curves and Poisson Image Editing |  | author:Stefan Jeschke, David Cline , Peter Wonka
-siga2009-11 | Rendering Surface Details with Diffusion Curves |  | author:Stefan Jeschke, David Cline, Peter Wonka
-siga2009-12 | Efficient Affinity-based Edit Propagation using K-D Tree |  | author:Kun Xu , Yong Li, Tao Ju, Shi-Min Hu , Tian-Qiang Liu
-siga2009-13 | Harmonic Shells: A Practical Nonlinear Sound Model for Near-Rigid Thin Shells |  | author:Jeffrey Chadwick ,  Steven An , Doug James
-siga2009-14 | Stretching and Wiggling Liquids |  | author:Doyub Kim, Oh-young Song, Hyeong-Seok Ko
-siga2009-15 | Synthetic Turbulence using Artificial Boundary Layers |  | author:Tobias Pfaff, Nils Thurey, Andrew Selle, Markus Gross
-siga2009-16 | Aggregate Dynamics for Dense Crowd Simulation |  | author:Rahul Narain ,  Abhinav Golas ,  Sean Curtis , Ming Lin
-siga2009-17 | Skipping Steps in Deformable Simulation with Online Model Reduction |  | author:Theodore Kim, Doug James
-siga2009-18 | Sketch2Photo: Internet Image Montage |  | author:Tao Chen, Ming-Ming Cheng, Ping Tan, Ariel Shamir, Shi-Min Hu
-siga2009-19 | Optimized image resizing using seam carving and scaling |  | author:Weiming Dong, Ning Zhou, Jean-Claude Paul, Xiaopeng Zhang
-siga2009-20 | A System for Retargeting Streaming Video |  | author:Philipp Krahenbuhl,  Manuel Lang,  Alexander Hornung , Markus Gross
-siga2009-21 | Motion-Aware Temporal Coherence for Video Resizing |  | author:Yu-Shuen Wang, Hongbo Fu, Olga Sorkine, Tong-Yee Lee, Hans-Peter Seidel
-siga2009-22 | Printing Spatially-Varying Reflectance |  | author:Wojciech Matusik, Boris Ajdin, Jinwei Gu, Jason Lawrence, Hendrik P.A. Lensch, Fabio Pellacini, Szymon Rusinkiewicz
-siga2009-23 | Interactive Reflection Editing |  | author:Tobias Ritschel ,  M. Okabe,  T. Thormahlen, Hans-Peter Seidel
-siga2009-24 | User-Assisted Intrinsic Images |  | author:Adrien Bousseau, Sylvain Paris, Fredo Durand
-siga2009-25 | Webcam Clip Art: Appearance and Illuminant Transfer from Time-lapse Sequences |  | author:Jean-Francois Lalonde ,  Alexei Efros , Srinivasa Narasimhan
-siga2009-26 | Micro-Rendering for Scalable, Parallel Final Gathering |  | author:Tobias Ritschel , T. Engelhardt, T. Grosch, Hans-Peter Seidel, Jan Kautz, Carsten Dachsbacher
-siga2009-27 | All-Frequency Rendering of Dynamic, Spatially-Varying Reflectance |  | author:Jiaping Wang, Peiran Ren, Minmin Gong, John Snyder, Baining Guo
-siga2009-28 | Depth-of-Field Rendering with Multiview Synthesis |  | author:Sungkil Lee ,  Elmar Eisemann , Hans-Peter Seidel
-siga2009-29 | Amortized Supersampling |  | author:Lei Yang, Diego Nehab, Pedro V. Sander, Pitchaya Sitthi-Amorn, Jason Lawrence, Hugues Hoppe
-siga2009-30 | Relief Analysis and Extraction |  | author:Rony Zatzarinni, Ayellet Tal, Ariel Shamir
-siga2009-31 | Abstraction of Man-Made Shapes |  | author:Ravish Mehra , Qingnan Zhou, Jeremy Long, Alla Sheffer, Amy Gooch, Niloy J. Mitra
-siga2009-32 | Partial Intrinsic Reflectional Symmetry of 3D Shapes |  | author:Kai Xu, Hao Zhang , Andrea Tagliasacchi, Ligang Liu , Guo Li, Min Meng, Yueshan Xiong
-siga2009-33 | Packing circles and spheres on surfaces |  | author:Alexander Schiftner, Mathias Hobinger, Johannes Wallner, Helmut Pottmann
-siga2009-34 | Adaptive Wavelet Rendering |  | author:Ryan S. Overbeck , Craig Donner, Ravi Ramamoorthi
-siga2009-35 | Stochastic Progressive Photon Mapping |  | author:Toshiya Hachisuka , Henrik Wann Jensen,  San Diego )
-siga2009-36 | Automatic Bounding of Programmable Shaders for Efficient Global Illumination |  | author:Edgar Velazquez-Armendariz ,  Shuang Zhao ,  Milos Hasan ,  Bruce Walter , Kavita Bala
-siga2009-37 | Virtual Spherical Lights for Many-Light Rendering of Glossy Scenes |  | author:Milos Hasan ,  Jaroslav Krivanek ,  Bruce Walter , Kavita Bala
-siga2009-38 | Removing Image Artifacts Due to Dirty Camera Lenses and Thin Occluders |  | author:Jinwei Gu, Ravi Ramamoorthi, Peter Belhumeur , Shree Nayar
-siga2009-39 | Fast Motion Deblurring |  | author:Sunghyun Cho , Seungyong Lee
-siga2009-40 | Noise Brush: Interactive High Quality Image-Noise Separation |  | author:Jia Chen , Chi-Keung Tang, Jue Wang
-siga2009-41 | Edge-preserving Multiscale Image Decompostion based on Local Extrema |  | author:Kartic Subr , Cyril Soler, Fredo Durand
-siga2009-42 | Structured Annotations for 2D-to-3D Modeling |  | author:Yotam Gingold, Takeo Igarashi, Denis Zorin
-siga2009-43 | Analytic Drawing of 3D Scaffolds |  | author:Ryan Schmidt, Azam Khan, Karan Singh, Gord Kurtenbach
-siga2009-44 | DiagSplit: Parallel, Crack-Free, Adaptive Tessellation for Micropolygon Rendering |  | author:Matthew Fisher , Kayvon Fatahalian , Solomon Boulos, Kurt Akeley, William R. Mark, Pat Hanrahan
-siga2009-45 | Approximating Subdivision Surfaces with Gregory Patches for Hardware Tessellation |  | author:Charles Loop, Scott Schaefer, Tianyun Ni , Ignacio Castano
-siga2009-46 | Ray casting of multiple volumetric datasets with polyhedral boundaries on manycore GPUs |  | author:Bernhard Kainz ,  Markus Grabner ,  Alexander Bornik ,  Stefan Hauswiesner ,  Judith Muhl , Dieter Schmalstieg
-siga2009-47 | Debugging GPU Stream Programs Through Automatic Dataflow Recording and Visualization |  | author:Qiming Hou, Kun Zhou, Baining Guo
-siga2009-48 | Real-Time Parallel Hashing on the GPU |  | author:Dan A. Alcantara , Andrei Sharf , Fatemeh Abbasinejad , Shubhabrata Sengupta, Michael Mitzenmacher ,, John D. Owens , Nina Amenta
-siga2009-49 | RenderAnts: Interactive REYES Rendering on GPUs |  | author:Kun Zhou, Qiming Hou, Zhong Ren, Minmin Gong, Xin Sun , Baining Guo
-siga2009-50 | Shadow Art |  | author:Niloy J. Mitra, Mark Pauly
-siga2009-51 | 3D Polyomino Puzzle |  | author:Kui Yip Lo, Chi-Wing Fu, Hongwei Li
-siga2009-52 | The Graph Camera |  | author:Voicu Popescu ,  Paul Rosen , Nicoletta Adamo-Villani
-siga2009-53 | BiDi Screen: A Thin, Depth-Sensing LCD for 3D Interaction Using Lights Fields |  | author:Matthew Hirsch, Douglas Lanman, Henry Holtzman , Ramesh Raskar
-siga2009-54 | Evaluation of Reverse Tone Mapping through Varying Exposure Conditions |  | author:Belen Masia, Sandra Agustin, Roland Fleming, Olga Sorkine, Diego Gutierrez
-siga2009-55 | Robust Color-to-Gray via Nonlinear Global Mapping |  | author:Yongjin Kim ,  Cheolhun Jang,  Julien Demouth , Seungyong Lee
-siga2009-56 | Structure-Aware Error Diffusion |  | author:Jianghao Chang,  Benoit Alain, Victor Ostromoukhov
-siga2009-57 | Emerging Images |  | author:Niloy J. Mitra, Hung-Kuo Chu , Tong-Yee Lee, Lior Wolf , Hezy Yeshurun , Daniel Cohen-Or
-siga2009-58 | Exploratory Modeling with Collaborative Design Spaces |  | author:Jerry O. Talton ,  Daniel Gibson,  Lingfeng Yang,  Pat Hanrahan , Vladlen Koltun
-siga2009-59 | Capturing Hair Assemblies Fiber by Fiber |  | author:Wenzel Jakob ,  Jonathan T. Moon , Steve Marschner
-siga2009-60 | A Practical Approach for Photometric Acquisition of Hair Color |  | author:Arno Zinke ,  Tomas Lay,  Anton Andriyenko,  Martin Rump ,  Andreas Weber , Reinhard Klein
-siga2009-61 | Hair Meshes |  | author:Cem Yuksel ,  Scott Schaefer , John Keyser
-siga2009-62 | Optimizing walking controllers |  | author:Jack M. Wang ,  David J. Fleet ,  Aaron Hertzmann , 
-siga2009-63 | Compact Character Controllers |  | author:Yongjoon Lee ,  Seong Jae Lee , Zoran Popović
-siga2009-64 | Robust Task-based Control Policies for Physics-based Characters |  | author:Stelian Coros ,  Philippe Beaudoin , Michiel van de Panne
-siga2009-65 | Modeling Spatial and Temporal Variation in Motion Data |  | author:Manfred Lau ,  Ziv Bar-Joseph , James Kuffner
-siga2009-66 | Real-Time Prosody-Driven Synthesis of Body Language |  | author:Sergey Levine,  Christian Theobalt , Vladlen Koltun
-siga2009-67 | Out-of-Core Multigrid Solver for Streaming Meshes |  | author:Xiaohan Shi ,  Hujun Bao , Kun Zhou
-siga2009-68 | Dynamic Shape Capture using Multi-View Photometric Stereo |  | author:Daniel Vlasic, Pieter Peers, Ilya Baran, Paul Debevec, Jovan Popovic, Szymon Rusinkiewicz, Wojciech Matusik
-siga2009-69 | Robust Single View Geometry And Motion Reconstruction |  | author:Hao Li, Bart Adams, Leonidas J. Guibas, Mark Pauly
-siga2009-70 | Consolidation of Unorganized Point Clouds for Surface Reconstruction |  | author:Hui Huang , Dan Li, Hao Zhang, Uri Ascher, Daniel Cohen-Or
+siga2009-1 | Layered Shape Synthesis: Automatic Generation of Control Maps for Non-Stationary Textures |  | author:
+siga2009-2 | Feature-Aligned Shape Texturing |  | author:
+siga2009-3 | Continuity Mapping for Multi-chart Textures |  | author:Francisco Gonzalez , Gustavo Patow
+siga2009-4 | Motion Field Texture Synthesis |  | author:
+siga2009-5 | Interactive Design of Urban Spaces using Geometrical and Behavioral Modeling |  | author:
+siga2009-6 | Procedural Modeling of Structurally-Sound Masonry Buildings |  | author:
+siga2009-7 | Symmetric Architecture Modeling with a Single Image |  | author:Nianjuan Jiang,  Ping Tan 
+siga2009-8 | Image-Based Street-Side City Modeling |  | author:
+siga2009-9 | Patch-Based Image Vectorization with Automatic Curvilinear Feature Alignment |  | author:Tian Xia ,  Binbin Liao
+siga2009-10 | A GPU Laplacian Solver for Diffusion Curves and Poisson Image Editing |  | author:
+siga2009-11 | Rendering Surface Details with Diffusion Curves |  | author:
+siga2009-12 | Efficient Affinity-based Edit Propagation using K-D Tree |  | author:
+siga2009-13 | Harmonic Shells: A Practical Nonlinear Sound Model for Near-Rigid Thin Shells |  | author:Jeffrey Chadwick ,  Steven An 
+siga2009-14 | Stretching and Wiggling Liquids |  | author:
+siga2009-15 | Synthetic Turbulence using Artificial Boundary Layers |  | author:
+siga2009-16 | Aggregate Dynamics for Dense Crowd Simulation |  | author:Rahul Narain ,  Abhinav Golas ,  Sean Curtis 
+siga2009-17 | Skipping Steps in Deformable Simulation with Online Model Reduction |  | author:
+siga2009-18 | Sketch2Photo: Internet Image Montage |  | author:
+siga2009-19 | Optimized image resizing using seam carving and scaling |  | author:
+siga2009-20 | A System for Retargeting Streaming Video |  | author:Philipp Krahenbuhl,  Manuel Lang,  Alexander Hornung 
+siga2009-21 | Motion-Aware Temporal Coherence for Video Resizing |  | author:
+siga2009-22 | Printing Spatially-Varying Reflectance |  | author:
+siga2009-23 | Interactive Reflection Editing |  | author:Tobias Ritschel ,  M. Okabe,  T. Thormahlen
+siga2009-24 | User-Assisted Intrinsic Images |  | author:
+siga2009-25 | Webcam Clip Art: Appearance and Illuminant Transfer from Time-lapse Sequences |  | author:Jean-Francois Lalonde ,  Alexei Efros 
+siga2009-26 | Micro-Rendering for Scalable, Parallel Final Gathering |  | author:
+siga2009-27 | All-Frequency Rendering of Dynamic, Spatially-Varying Reflectance |  | author:
+siga2009-28 | Depth-of-Field Rendering with Multiview Synthesis |  | author:Sungkil Lee ,  Elmar Eisemann 
+siga2009-29 | Amortized Supersampling |  | author:
+siga2009-30 | Relief Analysis and Extraction |  | author:
+siga2009-31 | Abstraction of Man-Made Shapes |  | author:
+siga2009-32 | Partial Intrinsic Reflectional Symmetry of 3D Shapes |  | author:
+siga2009-33 | Packing circles and spheres on surfaces |  | author:
+siga2009-34 | Adaptive Wavelet Rendering |  | author:
+siga2009-35 | Stochastic Progressive Photon Mapping |  | author:Toshiya Hachisuka , Henrik Wann Jensen
+siga2009-36 | Automatic Bounding of Programmable Shaders for Efficient Global Illumination |  | author:Edgar Velazquez-Armendariz ,  Shuang Zhao ,  Milos Hasan ,  Bruce Walter 
+siga2009-37 | Virtual Spherical Lights for Many-Light Rendering of Glossy Scenes |  | author:Milos Hasan ,  Jaroslav Krivanek ,  Bruce Walter 
+siga2009-38 | Removing Image Artifacts Due to Dirty Camera Lenses and Thin Occluders |  | author:
+siga2009-39 | Fast Motion Deblurring |  | author:Sunghyun Cho 
+siga2009-40 | Noise Brush: Interactive High Quality Image-Noise Separation |  | author:
+siga2009-41 | Edge-preserving Multiscale Image Decompostion based on Local Extrema |  | author:
+siga2009-42 | Structured Annotations for 2D-to-3D Modeling |  | author:
+siga2009-43 | Analytic Drawing of 3D Scaffolds |  | author:
+siga2009-44 | DiagSplit: Parallel, Crack-Free, Adaptive Tessellation for Micropolygon Rendering |  | author:
+siga2009-45 | Approximating Subdivision Surfaces with Gregory Patches for Hardware Tessellation |  | author:
+siga2009-46 | Ray casting of multiple volumetric datasets with polyhedral boundaries on manycore GPUs |  | author:Bernhard Kainz ,  Markus Grabner ,  Alexander Bornik ,  Stefan Hauswiesner ,  Judith Muhl 
+siga2009-47 | Debugging GPU Stream Programs Through Automatic Dataflow Recording and Visualization |  | author:
+siga2009-48 | Real-Time Parallel Hashing on the GPU |  | author:
+siga2009-49 | RenderAnts: Interactive REYES Rendering on GPUs |  | author:
+siga2009-50 | Shadow Art |  | author:
+siga2009-51 | 3D Polyomino Puzzle |  | author:
+siga2009-52 | The Graph Camera |  | author:Voicu Popescu ,  Paul Rosen 
+siga2009-53 | BiDi Screen: A Thin, Depth-Sensing LCD for 3D Interaction Using Lights Fields |  | author:
+siga2009-54 | Evaluation of Reverse Tone Mapping through Varying Exposure Conditions |  | author:
+siga2009-55 | Robust Color-to-Gray via Nonlinear Global Mapping |  | author:Yongjin Kim ,  Cheolhun Jang,  Julien Demouth 
+siga2009-56 | Structure-Aware Error Diffusion |  | author:Jianghao Chang,  Benoit Alain
+siga2009-57 | Emerging Images |  | author:
+siga2009-58 | Exploratory Modeling with Collaborative Design Spaces |  | author:Jerry O. Talton ,  Daniel Gibson,  Lingfeng Yang,  Pat Hanrahan 
+siga2009-59 | Capturing Hair Assemblies Fiber by Fiber |  | author:Wenzel Jakob ,  Jonathan T. Moon 
+siga2009-60 | A Practical Approach for Photometric Acquisition of Hair Color |  | author:Arno Zinke ,  Tomas Lay,  Anton Andriyenko,  Martin Rump ,  Andreas Weber 
+siga2009-61 | Hair Meshes |  | author:Cem Yuksel ,  Scott Schaefer 
+siga2009-62 | Optimizing walking controllers |  | author:Jack M. Wang ,  David J. Fleet ,  Aaron Hertzmann 
+siga2009-63 | Compact Character Controllers |  | author:Yongjoon Lee ,  Seong Jae Lee 
+siga2009-64 | Robust Task-based Control Policies for Physics-based Characters |  | author:Stelian Coros ,  Philippe Beaudoin 
+siga2009-65 | Modeling Spatial and Temporal Variation in Motion Data |  | author:Manfred Lau ,  Ziv Bar-Joseph 
+siga2009-66 | Real-Time Prosody-Driven Synthesis of Body Language |  | author:Sergey Levine,  Christian Theobalt 
+siga2009-67 | Out-of-Core Multigrid Solver for Streaming Meshes |  | author:Xiaohan Shi ,  Hujun Bao 
+siga2009-68 | Dynamic Shape Capture using Multi-View Photometric Stereo |  | author:
+siga2009-69 | Robust Single View Geometry And Motion Reconstruction |  | author:
+siga2009-70 | Consolidation of Unorganized Point Clouds for Surface Reconstruction |  | author:
