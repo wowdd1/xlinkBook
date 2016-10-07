@@ -625,6 +625,7 @@ def build_lines(list_all, file_name):
                                     engin_list_dive = engin_list_sub[l * max_links_row : (l+1) * max_links_row]
                                 else:
                                     engin_list_dive = engin_list_sub[l * max_links_row :]
+
                                 #print engin_list_dive
                                 if len(engin_list_dive) == 0:
                                     describe_lines[l][i][j] = align_describe('')
@@ -738,7 +739,6 @@ def build_lines(list_all, file_name):
             
 
     return id_title_lines, describe_lines
-
 
 def get_line(lines, start, end, j):
     result = vertical
@@ -868,6 +868,9 @@ def smartLink(content, record):
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         html = ''
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : content[ 0 : content.find(':')]})
+
+        if ret.find(' and ') != -1:
+            ret = ret.replace(' and ', ', ')
         
         if ret.find(',') != -1:
             ret = ret.split(',')
@@ -888,7 +891,7 @@ def smartLink(content, record):
             last_line_smart_link = content
             return last_line_smart_link
     else:
-        if last_line_smart_link.find(content) != -1:
+        if last_line_smart_link.find(content) != -1 or last_line_smart_link.find(content.replace(' and ', ', ')):
             return ''
         last_line_smart_link = content
         return last_line_smart_link
@@ -1120,12 +1123,17 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
         line = formatTitle(title, '(', line)
 
     if Config.delete_from_char != '' and title.find(Config.delete_from_char) != -1:
-        line = formatTitle(title, Config.delete_from_char, line)
+        line = formatTitle(title, Config.delete_from_char, line, Config.delete_forward)
 
     return line
 
-def formatTitle(title, char, line):
-    line = line[0 : line.find('|') + 1 ] + ' ' + title[0 : title.find(char)].strip() + ' ' + line[line.find('|', line.find('|') + 1) : ]
+def formatTitle(title, char, line, deleteForward=True):
+    new_title = ''
+    if deleteForward:
+        new_title = title[0 : title.find(char)].strip()
+    else:
+        new_title = title[title.find(char) + 1 :].strip()
+    line = line[0 : line.find('|') + 1 ] + ' ' + new_title + ' ' + line[line.find('|', line.find('|') + 1) : ]
     return line
 
 
@@ -1504,7 +1512,7 @@ def adjust_link_number():
         max_nav_link_row = (max_nav_link_row - 2) * 2
         #max_links_row = max_links_row - 1
     if column_num == '3':
-	max_nav_link_row = max_nav_link_row + 1
+        max_nav_link_row = max_nav_link_row + 1
         max_links_row = max_links_row - 2
     
 def main(argv):

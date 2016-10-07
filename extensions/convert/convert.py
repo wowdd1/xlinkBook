@@ -72,7 +72,7 @@ class Convert(BaseExtension):
         if Config.convert_start > 0:
             cmd += '-s ' + str(Config.convert_start) + ' '
         if Config.delete_from_char != '':
-            cmd += '-d ' + Config.delete_from_char + ' '
+            cmd += '-d "' + Config.delete_from_char + '" '
 
         print 'cmd ----> ' + cmd + ' <----'
         data = subprocess.check_output(cmd, shell=True)
