@@ -569,7 +569,7 @@ def build_lines(list_all, file_name):
                 if url.strip() != '':
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
                 else:
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip())
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'))
                 if engin != '':
                     engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())  #, '#33EE22')
                     #print engin_list_dict
@@ -891,7 +891,8 @@ def smartLink(content, record):
             last_line_smart_link = content
             return last_line_smart_link
     else:
-        if last_line_smart_link.find(content) != -1 or last_line_smart_link.find(content.replace(' and ', ', ')):
+        if last_line_smart_link.find(content) != -1 or last_line_smart_link.find(content.replace(' and ', ', ')) != -1:
+            last_line_smart_link = content
             return ''
         last_line_smart_link = content
         return last_line_smart_link
