@@ -185,6 +185,8 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs['user_name'] = user_name;
     postArgs['originFileName'] = fileName;
     postArgs['selection'] = ''
+    postArgs['screenWidth'] = screen.width
+    postArgs['screenHeight'] = screen.height
     if (obj.text == "search" || obj.text == "keyword") {
         var selection = window.getSelection().toString();
         if (selection != '') {

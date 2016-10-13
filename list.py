@@ -336,7 +336,9 @@ def update_cell_len(index):
 
 def next_pos(text, start):
     min_end = len(text)
-    c_len = course_name_len + 10
+    c_len = course_name_len
+    if html_style:
+        c_len = course_name_len + 10
     for k in keyword_list:
         end = text.lower().find(k, start + 2)
         if end != -1 and end < min_end:
@@ -892,7 +894,6 @@ def smartLink(content, record):
             return last_line_smart_link
     else:
         if last_line_smart_link.find(content) != -1 or last_line_smart_link.find(content.replace(' and ', ', ')) != -1:
-            last_line_smart_link = content
             return ''
         last_line_smart_link = content
         return last_line_smart_link
