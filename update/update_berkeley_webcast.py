@@ -122,4 +122,35 @@ class BerkeleyWebcastSpider(Spider):
             print k + ' ' + v.get_semester()
         '''
 
+    def getDepts(self):
+        r = requests.get('http://webcast.berkeley.edu/itunesu_podcasts.js')
+        pos = r.text.find('itu_courses = [')
+        depts = {}
+        for item in r.text[pos + 16 : r.text.find('];', pos)].replace('} ,', '},').split('},'):
+            if item.strip() != '':
+                for kv in item.replace('{', '').replace('};', '').replace('", "', '","').strip().split('","'):
+                    kv = kv.replace('"', '')
+                    key = kv[0 : kv.find(':')]
+                    value = kv[kv.find(':') + 1 :]
+                    if key == 'dept':
+                        if depts.has_key(value.strip()):
+                            continue
+                        depts[value.strip()] = ''
+                        #print value.strip()
+        return depts
 
+    def doWork(self):
+        for subject, v in self.getDepts().items():
+            if self.need_update_subject(subject) == False:
+                continue
+            print 'processing ' + subject
+            data = self.getWebcastDict([subject])
+            for k, webcast in data.items():
+                print webcast.get_title()
+
+def main(argv):
+    start = BerkeleyWebcastSpider()
+    start.doWork()
+
+if __name__ == '__main__':
+    main(sys.argv)

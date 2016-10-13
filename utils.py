@@ -596,17 +596,21 @@ class Utils:
         return url
 
 
-    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin=''):
+    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False):
         if text != '' and len(text.strip()) <= Config.smart_link_max_text_len:
             url = ''
             if engin != '':
                 url = self.toQueryUrl(self.getEnginUrl(engin.strip()), text)
             else:
                 url = self.bestMatchEnginUrl(text)
-
-            return '<a target="_blank" href="' + url + '">' + self.formatTitle(text, br_number) + '</a>'
-
-        return self.formatTitle(text, br_number)
+            if noFormat:
+                return '<a target="_blank" href="' + url + '">' + text + '</a>'
+            else:
+                return '<a target="_blank" href="' + url + '">' + self.formatTitle(text, br_number) + '</a>'
+        if noFormat:
+            return text
+        else:
+            return self.formatTitle(text, br_number)
 
     def formatTitle(self, title, br_number=Config.smart_link_br_len):
         if len(title) > br_number:

@@ -14,12 +14,17 @@ class Preview(BaseExtension):
 	self.utils = Utils()
 
     def excute(self, form_dict):
+        rID = form_dict['rID'].encode('utf8')
         url = form_dict['url'].encode('utf8')
+        screenWidth = form_dict['screenWidth'].encode('utf8')
+        screenHeight = form_dict['screenHeight'].encode('utf8')
+        print 'screenWidth: ' + screenWidth
+        print 'screenHeight: ' + screenHeight
         if url == '':
             url = self.utils.toSmartLink(form_dict['rTitle'].encode('utf8'))
 	src = ''
-	width = '560'
-	height = '315'
+	width = str(int(screenWidth) / 3 + 50)
+	height = str(int(screenHeight) / 3 + 50)
 	column = form_dict['column']
         if url.startswith('file'):
             subprocess.check_output("/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome " + url, shell=True)
@@ -29,20 +34,25 @@ class Preview(BaseExtension):
 	if url.find('youtube') != -1 and url.find('watch') != -1:
 	    src = "https://www.youtube.com/embed/" + url[url.rfind('v=') + 2 :]
 	    if column == '1':
-	        width = '698'
-	        height = '455'
+	        width = str(int(screenWidth) / 3 + 200)
+	        height = str(int(screenHeight) / 2)
         elif url.find('163') != -1:
             src = url.replace('open', 'v')
+        elif rID.find('arxiv') != -1:
+            arxiv_id = rID[rID.find('arxiv-') + 6 :].replace('-', '.')
+            version = self.utils.get_last_arxiv_version(arxiv_id)
+            src = 'http://arxiv.org/pdf/' + arxiv_id + version
 	else:
-	    if column == '1':
-	        width = '1300'
-		height = '600'
-	    elif column == '2':
-		width = '700'
-	        height = '400'
 	    src = url
 	    if self.utils.suportFrame(url, 5) == False:
 		return url
+
+        if column == '1':
+            width = str(int(screenWidth) - 70)
+            height = str(int(screenHeight) - 150)
+        elif column == '2':
+            width = str(int(screenWidth) / 2 - 20)
+            height = str(int(screenHeight) / 2 - 50)
 
         html = '<div class="ref"><br><iframe width="' + width + '" height="' + height + '" src="' + src + '" frameborder="0" allowfullscreen></iframe>'
 	if url.find('youtube') != -1 and url.find('watch') != -1:

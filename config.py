@@ -15,16 +15,16 @@ class Config():
 
     recommend_engin = True
     recommend_engin_num = 18
-    recommend_engin_type = '' #ref db/metadata/engin_type
+    recommend_engin_type = 'star' #ref db/metadata/engin_type
 
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
     #default_library = ''
     #default_library = 'ai-library'
-    default_library = 'information-library'
+    #default_library = 'information-library'
     #default_library = 'cognitive-library'
-    #default_library = 'neuro-library'
+    default_library = 'neuro-library'
     #default_library = 'gene-library'
     #default_library = 'math-phys-chem-library'
     #default_library = 'business-finance-library'

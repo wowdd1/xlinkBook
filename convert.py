@@ -153,7 +153,7 @@ def customPrintFile(line):
     #customid = str(line_id)
 
 
-    customid = 'MDC-MolNeuro'
+    customid = 'famous-neuroscientists'
 
     if line.strip().startswith('|'):
         print customid + '-' + str(line_id) + line + 'author:' + line[line.find('|') + 1 : line.find('|', line.find('|') + 1)].strip()

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8-*-
 
 import sys
 sys.path.append("..")
@@ -139,29 +140,29 @@ subject_dict = {\
     "Women's and Gender Studies" : "education"}
 
 need_update_subject_list = [
-    'config',
-    'anthropology',
+    #'config',
+    #'anthropology',
     'eecs',
-    'mathematics',
-    'economics',
+    #'mathematics',
+    #'economics',
     #'rank',
-    'physics',
-    'biology',
-    'neuroscience',
-    'literature',
-    'linguistics',
-    'philosophy',
-    "psychology",
-    'chemistry',
+    #'physics',
+    #'biology',
+    #'neuroscience',
+    #'literature',
+    #'linguistics',
+    #'philosophy',
+    #"psychology",
+    #'chemistry',
     #'others',
-    'art-culture',
-    'astronomy',
-    'political',
-    'humanities',
-    'history',
-    'management',
-    'medicine',
-    'business-finance',
+    #'art-culture',
+    #'astronomy',
+    #'political',
+    #'humanities',
+    #'history',
+    #'management',
+    #'medicine',
+    #'business-finance',
     'data-science'
 ]
 
@@ -173,6 +174,7 @@ def print_all_subject():
 # reference subjects #
 # CIP
 # http://localhost:5000/?db=other/&key=cip2016&column=2
+
 
 ''' harvard
 African & African Amer Studies

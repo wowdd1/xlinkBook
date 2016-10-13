@@ -14,8 +14,9 @@ id | imperialcollegelondon | https://www.youtube.com/user/imperialcollegevideo/p
 id | toronto | https://www.youtube.com/user/universitytoronto/playlists | 
 id | uns | https://www.youtube.com/user/NUScast/playlists | 
 id | unsw | https://www.youtube.com/user/UNSWelearning/playlists?sort=dd&view=1 | 
+id | NTHUOCW | https://www.youtube.com/user/NTHUOCW/videos |
 id | nptel | https://www.youtube.com/user/nptelhrd/playlists | 
-id | CBMM | https://www.youtube.com/channel/UCGoxKRfTs0jQP52cfHCyyRQ/playlists
+id | CBMM | https://www.youtube.com/channel/UCGoxKRfTs0jQP52cfHCyyRQ/playlists |
 id | ucl | https://www.youtube.com/user/Mikesev/videos?view=0&sort=dd&live_view=500&flow=grid |
 id | sciwrite | https://www.youtube.com/channel/UC-wb-n89yM0lBiP2QltsDaA/videos | 
 id | MicrosoftResearch | https://www.youtube.com/user/MicrosoftResearch/videos | 
@@ -32,6 +33,7 @@ id | TwitterDev | https://www.youtube.com/channel/UCcRd4oOOUPKAvg6vs2P9ReA/video
 id | Watson | https://www.youtube.com/user/IBMWatsonSolutions/videos | 
 id | IBM | https://www.youtube.com/user/IBM/videos | 
 id | cvprtum | https://www.youtube.com/user/cvprtum/videos | 
+id | ComputerVisionFoundation | https://www.youtube.com/channel/UC0n76gicaarsN_Y9YShWwhw/videos |
 id | ibmthinkacademy | https://www.youtube.com/user/ibmthinkacademy/videos | 
 id | developerworks | https://www.youtube.com/user/developerworks/videos | 
 id | rework | https://www.youtube.com/user/teamrework/videos | 
