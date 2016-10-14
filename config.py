@@ -13,7 +13,7 @@ class Config():
     smart_link_br_len = 80
     replace_with_smart_link = False
 
-    page_item_count = 0
+    page_item_count = 20
 
     recommend_engin = True
     recommend_engin_num = 18
@@ -79,10 +79,10 @@ class Config():
     custom_cell_len = 88 
     split_length = custom_cell_len + 15
     custom_cell_row = 5
-    cell_len=89  #  cell_len >= course_num_len + 1 + course_name_len + 3
-    course_name_len=70
-    course_num_len=10
-    color_index=0
+    cell_len = 89  #  cell_len >= course_num_len + 1 + course_name_len + 3
+    course_name_len = 70
+    course_num_len = 10
+    color_index = 0
     output_with_color = False
     output_with_style = False
     output_with_describe = False
