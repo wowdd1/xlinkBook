@@ -870,15 +870,22 @@ def smartLink(content, record):
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         html = ''
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : content[ 0 : content.find(':')]})
-
+        if ret == None:
+            return ''
         if ret.find(' and ') != -1:
             ret = ret.replace(' and ', ', ')
-        
-        if ret.find(',') != -1:
-            ret = ret.split(',')
+        split_char = ','
+        if ret.find(';') != -1:
+            split_char = ';'
+        if ret.find(split_char) != -1:
+            ret = ret.split(split_char)
             for i in ret:
-                if i != ret[len(ret) - 1]:
-                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>,&nbsp;'
+                old_i = i
+                if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
+                    i = i[0 : i.find(Config.delete_from_char)].strip()
+                
+                if old_i != ret[len(ret) - 1]:
+                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>' + split_char + '&nbsp;'
                 else:
                     html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>'
         else:

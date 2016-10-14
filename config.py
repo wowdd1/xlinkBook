@@ -108,10 +108,11 @@ class Config():
     fav_links = { 'papers' : ip_adress + '/?db=eecs/papers/&key=?',\
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
           'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
-		  #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
           'rss' : ip_adress + '/?db=rss/&key=rss2016',\
           'disk' : ip_adress + '/?db=other/&key=disk2016',\
-          'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
+          'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
+          #'ipynb' : 'localhost:8888/tree',\
+          #'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
           #'members' : ip_adress + '/?db=rank/&key=members2016&column=2',\
           'rank' : ip_adress + '/?db=rank/&key=?',\
           #'rank' : ip_adress + '/?db=rank/&key=?',\

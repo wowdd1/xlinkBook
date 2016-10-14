@@ -7,6 +7,7 @@ class Ipython(BaseExtension):
     def excute(self, form_dict):
         url = form_dict['url'].encode('utf8')
 	src = 'http://www.tutorialspoint.com/ipython_terminal_online.php'
+        #src = 'http://localhost:8888/tree#notebooks'
 	column = form_dict['column']
 	width = '660'
 	height = '415'
