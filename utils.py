@@ -182,13 +182,13 @@ class Utils:
             return 'http:' + link
         return link
 
-    def gen_pages(self, currentPage, totalPage):
+    def gen_pages(self, currentPage, totalPage, libraryUrl):
         html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
         for page in range(0, totalPage):
             if page + 1 == currentPage:
-                html += '<a href="javascript:toPage(' + str(page + 1) + ');"><font size="5" color="#999966">' + str(page + 1) +'</font></a>&nbsp;'
+                html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') +"');" + '"><font size="5" color="#999966">' + str(page + 1) +'</font></a>&nbsp;'
             else:
-                html += '<a href="javascript:toPage(' + str(page + 1) + ');">' + str(page + 1) +'</a>&nbsp;'
+                html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') + "');" +'">' + str(page + 1) +'</a>&nbsp;'
         html += '<div style="height: 21px; width: 100px"></div></div>'
         return html
 

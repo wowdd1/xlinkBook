@@ -1409,7 +1409,7 @@ def print_list(all_lines, file_name = ''):
                 message += "\nTotal " + str(total_records) + " records"
             if file_name != '':
                 if html_style:
-                    a = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :]+ '">' + file_name[file_name.rfind('/') + 1 :] + '</a>'
+                    a = '<a target="_blank" href="' + getLibraryRealUrl(file_name) + '">' + file_name[file_name.rfind('/') + 1 :] + '</a>'
                     message += " in " + '<a target="_blank" href="http://github.com/'+ username + '">' + username +  "</a>' " + a + "\n\n"
                 else:
                     message += ", File: " + file_name + "\n\n"
@@ -1433,13 +1433,17 @@ def print_list(all_lines, file_name = ''):
                     if total_records % Config.page_item_count > 0:
                         total_pages += 1
 
-                    print utils.gen_pages(current_page, total_pages)
+                    print utils.gen_pages(current_page, total_pages, getLibraryRealUrl(file_name))
                 
                 if html_style:
                     print utils.gen_menu()
             
 current_level = 1
 level = 100
+
+def getLibraryRealUrl(file_name):
+    return 'http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :] + '&column=3&width=79'
+
 
 def notIncludeFile(item, fileNameNotContain):
     if fileNameNotContain == '':

@@ -415,16 +415,30 @@ function hidenMoreContent(pid, start) {
     }
 }
 
-function toPage(page) {
+function toPage(page, url) {
+    console.log('url', url);
     href = window.location.href;
-    console.log('ss', href);
-    if (href.indexOf('&page=') > 0) {
-        href = href.substring(0, href.indexOf('&page='))
+    if (href.indexOf('/library') > 0) {
+        href = url;
     }
-
-    href = href + '&page=' + page;
-
     console.log('ss', href);
+    if (href.indexOf('page=') > 0) {
+        split_data = href.split('page=')
+        part = "";
+        if (split_data[1].indexOf('&') > 0) {
+            part = split_data[1].substring(split_data[1].indexOf('&') + 1);
+        }
+        href = split_data[0] + part
+        //href = href.substring(0, href.indexOf('&page='))
+    }
+    if (href.substring(href.length - 1) == '&') {
+        href = href + 'page=' + page;
+    } else {
+        href = href + '&page=' + page;
+    }
+    
+
+    console.log('href', href);
     window.location.href = href;
     //alter(href);
 }
