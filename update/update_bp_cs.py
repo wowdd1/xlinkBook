@@ -10,7 +10,7 @@ class BpCsSpider(Spider):
         utils = Utils()
         r = requests.get('http://jeffhuang.com/best_paper_awards.html')
         soup = BeautifulSoup(r.text)
-        file_name = self.get_file_name("eecs/papers/best_cs_paper", "")
+        file_name = self.get_file_name("eecs/papers/best-cs-paper", "")
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
