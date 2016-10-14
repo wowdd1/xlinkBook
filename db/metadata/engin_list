@@ -133,7 +133,7 @@ engin-129 | sitesearch | http://www.similarsitesearch.com/cn/q.php?URL= | priori
 engin-130 | similarsites | http://www.similarsites.com/site/ | priority:0 description:website
 engin-131 | diigo | https://www.diigo.com/tag/ | priority:5 description:tools
 engin-132 | visiontalks | http://www.computervisiontalks.com/?s= | priority:0 description:talk course tutorial
-engin-133 | tabao | https://world.taobao.com/search/search.htm?q= | priority:0 description:product
+engin-133 | tabao | https://world.taobao.com/search/search.htm?q= | priority:4 description:product
 engin-134 | ebay | http://www.ebay.com/sch/i.html?_nkw= | priority:0 description:product
 engin-135 | jrsearch | http://jrsearch.jd.com/gs/search?q= | priority:0 description:product finance
 engin-136 | kickstarter | https://www.kickstarter.com/discover/advanced?ref=nav_search&term= | priority:0 description:product finance
@@ -302,7 +302,7 @@ engin-307 | yelp | http://www.yelp.com/search?find_desc=%s&find_loc=Hong+Kong&ns
 engin-308 | gmap | http://gmap.csail.mit.edu/gmap/public.html?course= | priority:0 description:
 engin-309 | livejournal | http://www.livejournal.com/gsearch/?journal=&q= | priority:0 description:social
 engin-310 | hao123 | https://www.hao123.com/?q= | priority:0 description:website
-engin-311 | tumblr | https://www.tumblr.com/search/ | priority:0 description:blog
+engin-311 | tumblr | https://www.tumblr.com/search/ | priority:4 description:blog
 engin-312 | jianshu | http://www.jianshu.com/search?q=%s&page=1&type=notes | priority:0 description:blog
 engin-313 | adsabs | http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=%s&version=1 | priority:0 description:paper
 engin-314 | cds | http://cds.cern.ch/search?ln=en&p=%s&action_search=Search&op1=a&m1=a&p1=&f1=&c=CERN+Document+Server | priority:0 description:paper
@@ -509,3 +509,7 @@ engin-516 | sharecourse | http://www.sharecourse.net/sharecourse/course/view/cou
 engin-517 | airesources | http://airesources.org/?cat=0&q= | priority:6 description:course project book dataset
 engin-518 | booksfinder | http://booksfinder.org/search.php?q= | priority:4 description:book
 engin-519 | epfl | http://search.epfl.ch/eduweb.action?q=%s&f=eduweb&lang=en&pageSize=100 | priority:4 description:course
+engin-520 | goo.ne.jp | http://search.goo.ne.jp/web.jsp?mode=0&OE=UTF-8&MT=%s&from=tab_web_blog&IE=UTF-8 | priority:5 description:all
+engin-521 | rakuten | http://global.rakuten.com/en/search/?k= | priority:5 description:product
+engin-522 | mixi | http://mixi.jp/search_community.pl?keyword=%s&search_mode=title&category_id=0&type=com&mode=main&launch=v1 | priority:5 description:social blog
+engin-523 | ameblo | http://search.ameba.jp/search.html?q= | priority:5 description:social blog

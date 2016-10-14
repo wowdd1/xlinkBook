@@ -751,11 +751,20 @@ class GithubSpider(Spider):
     def doWork(self):
         star = 300
         per_page = 100
+
+        #self.getProjects(star, per_page)
+        self.getKeyProjects(star, per_page)
+        #self.getUsers(500, 100)
+        #self.getOrganizations()
+
+    def getProjects(self, star, per_page):
         for lang in self.lang_list:
             self.processGithubData(lang, star, per_page)
-
+        
         if len(self.result) > 1:
             print self.result + " is not be updated"
+
+    def getKeyProjects(self, star, per_page):
         keywords = ['awesome', 'computer vision', 'nlp', 'artificial intelligence', 'spark', 'machine learning', 'deep learning', 'android']
         for keyword in keywords:
             print "get " + keyword + " data..."
@@ -763,9 +772,13 @@ class GithubSpider(Spider):
                 self.processGithubData(keyword, 100, per_page, keyword)
             else:
                 self.processGithubData(keyword, star, per_page)
-        #print "get user data..."
-        #self.processGithubiUserData("all", 500, 100)
-        #self.processGithubiUserData("china", 500, 100)
+
+    def getUsers(self, star, per_page):
+        print "get user data..."
+        self.processGithubiUserData("all", star, per_page)
+        self.processGithubiUserData("china", star, per_page)
+
+    def getOrganizations(self):
         self.getOrganizationProjects()
 
 start = GithubSpider()
