@@ -13,6 +13,8 @@ class Config():
     smart_link_br_len = 80
     replace_with_smart_link = False
 
+    page_item_count = 0
+
     recommend_engin = True
     recommend_engin_num = 18
     recommend_engin_type = 'star' #ref db/metadata/engin_type

@@ -240,7 +240,6 @@ def customPrintFile(line):
         return
     '''
     
-    '''
     if id== 'pid':
         pid += 1
         sub_pid = 0
@@ -258,7 +257,6 @@ def customPrintFile(line):
         #    print customid + '-' + str(pid)  + '.'  + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) 
         #else:
         print customid + '-' + str(pid) + '.'  + str(sub_pid) + '.'  + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.'  + str(sub_pid)
-    '''
 
     '''
     if line.strip().startswith('PART'):
@@ -361,7 +359,7 @@ def customPrintFile(line):
     #if title.find('(') != -1:
         #title = title[0 : title.find('(')].strip()
     '''
-    print customid  + '-' + str(line_id) + ' | ' + line.strip()  + ' | | '
+    #print customid  + '-' + str(line_id) + ' | ' + line.strip()  + ' | | '
     #print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
 
 

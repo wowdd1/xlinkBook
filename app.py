@@ -74,6 +74,7 @@ def index():
         args_history['alexa'] = request.args.get('alexa', '')
         args_history['track'] = request.args.get('track', 'false')
         args_history['nosearchbox'] = request.args.get('nosearchbox', 'false')
+        args_history['page'] = request.args.get('page', '')
         cmd = genCmd(db, key, 
                       request.args.get('column', Config.column_num),
                       request.args.get('filter', ''),
@@ -89,7 +90,8 @@ def index():
                       request.args.get('navigation', 'true'),
                       request.args.get('verify', ''),
                       request.args.get('alexa', ''),
-                      request.args.get('track', 'false'), '', request.args.get('nosearchbox', 'false'))
+                      request.args.get('track', 'false'), '', request.args.get('nosearchbox', 'false'),
+                      request.args.get('page', ''))
         
         print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
@@ -113,7 +115,8 @@ def handleLoadmore():
                       args_history['navigation'],
                       args_history['verify'],
                       args_history['alexa'],
-                      args_history['track'], 'true', args_history['nosearchbox'])
+                      args_history['track'], 'true', args_history['nosearchbox'],
+                      args_history['page'],)
 
     print '\ncmd  --->   '  + cmd + '   <---\n'
     html = subprocess.check_output(cmd, shell=True)
@@ -176,7 +179,7 @@ def web(page):
     f.close()
     return data
 
-def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track, loadmore, nosearchbox):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track, loadmore, nosearchbox, page):
     if db.endswith('/') == False:
         db += '/'
     cmd = "./list.py -i db/" + db + key + " -b 4"
@@ -227,6 +230,9 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -z true '
     if session.has_key('name'):
         cmd += ' -y ' + session['name'] + ' '
+
+    if page != '':
+        cmd += ' -o ' + page + ' '
 
 
 
