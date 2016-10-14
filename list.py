@@ -1091,6 +1091,7 @@ def getLines(file_name):
                 count += 1
                 all_lines.append(enhancedRecord(file_name, record, count))
         f.close()
+
     return all_lines
 
 def enhancedRecord(fileName, record, count, filter_mode=False):
@@ -1153,16 +1154,25 @@ def getFileNameFromPath(path):
         fn = fn[fn.find('/') + 1 : ].strip()
     return fn
 
+total_records = 0
+current_page = 1
 def print_list(all_lines, file_name = ''):
+    global top_row, old_top_row, output_with_color, output_with_style, total_records
     current = 0
     old_line = ""
     old_line_2 = ""
     color_index = 0
     filter_keyword_2 = ''
+
+    total_records = len(all_lines)
+
     if filter_keyword != '' and merger_result: 
         all_lines = utils.sortLines(all_lines)
 
-    global top_row, old_top_row, output_with_color, output_with_style
+    if Config.page_item_count > 0:
+        start_item = (current_page - 1) * Config.page_item_count
+        all_lines = all_lines[ start_item : start_item + Config.page_item_count]
+    
     if verify != '':
         file_name = verify
 
@@ -1394,9 +1404,9 @@ def print_list(all_lines, file_name = ''):
             if html_style:
                 message += '<div id="total-info"><br/>'
             if filter_keyword != "":
-                message += "\nTotal " + str(current) + " records cotain " + filter_keyword
+                message += "\nTotal " + str(total_records) + " records cotain " + filter_keyword
             else:
-                message += "\nTotal " + str(current) + " records"
+                message += "\nTotal " + str(total_records) + " records"
             if file_name != '':
                 if html_style:
                     a = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :]+ '">' + file_name[file_name.rfind('/') + 1 :] + '</a>'
@@ -1418,6 +1428,13 @@ def print_list(all_lines, file_name = ''):
                 message = ''
             if plugins_mode == False:
                 print message
+                if html_style and Config.page_item_count > 0:
+                    total_pages = total_records / Config.page_item_count
+                    if total_records % Config.page_item_count > 0:
+                        total_pages += 1
+
+                    print utils.gen_pages(current_page, total_pages)
+                
                 if html_style:
                     print utils.gen_menu()
             
@@ -1525,10 +1542,10 @@ def adjust_link_number():
         max_links_row = max_links_row - 2
     
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username'])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1598,6 +1615,8 @@ def main(argv):
         elif o in ('-x', '--nosearchbox'):
             search_box_hiden = True
             library_hiden = True
+        elif o in ('-o', '--page'):
+            current_page = int(a)
 
     if source.endswith('-library') and Config.auto_library_cell_len:
         column_num = '3'

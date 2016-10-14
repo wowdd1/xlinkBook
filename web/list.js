@@ -414,3 +414,17 @@ function hidenMoreContent(pid, start) {
         }
     }
 }
+
+function toPage(page) {
+    href = window.location.href;
+    console.log('ss', href);
+    if (href.indexOf('&page=') > 0) {
+        href = href.substring(0, href.indexOf('&page='))
+    }
+
+    href = href + '&page=' + page;
+
+    console.log('ss', href);
+    window.location.href = href;
+    //alter(href);
+}

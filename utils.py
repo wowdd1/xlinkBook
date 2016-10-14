@@ -182,11 +182,24 @@ class Utils:
             return 'http:' + link
         return link
 
+    def gen_pages(self, currentPage, totalPage):
+        html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
+        for page in range(0, totalPage):
+            if page + 1 == currentPage:
+                html += '<a href="javascript:toPage(' + str(page + 1) + ');"><font size="5" color="#999966">' + str(page + 1) +'</font></a>&nbsp;'
+            else:
+                html += '<a href="javascript:toPage(' + str(page + 1) + ');">' + str(page + 1) +'</a>&nbsp;'
+        html += '<div style="height: 21px; width: 100px"></div></div>'
+        return html
+
     def gen_menu(self):
         db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
         html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">' + db_root
         for link_dict in Config.fav_links.items():
-            html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
+            src = link_dict[1]
+            if src.startswith('http') == False:
+                src = 'http://' + src
+            html += '<a target="_blank" href="' + src + '" style="margin-right:6px">' + link_dict[0] + "</a>"
         html += '</div><div style="height: 21px; width: 100px"></div>'
         return html
 
