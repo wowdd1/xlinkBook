@@ -30,6 +30,13 @@ class Preview(BaseExtension):
             subprocess.check_output("/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome " + url, shell=True)
             return 'ok'
     
+        if column == '1':
+            width = str(int(screenWidth) - 70)
+            height = str(int(screenHeight) - 150)
+        elif column == '2':
+            width = str(int(screenWidth) / 2 - 20)
+            height = str(int(screenHeight) / 2 - 50)
+
 
 	if url.find('youtube') != -1 and url.find('watch') != -1:
 	    src = "https://www.youtube.com/embed/" + url[url.rfind('v=') + 2 :]
@@ -46,13 +53,6 @@ class Preview(BaseExtension):
 	    src = url
 	    if self.utils.suportFrame(url, 5) == False:
 		return url
-
-        if column == '1':
-            width = str(int(screenWidth) - 70)
-            height = str(int(screenHeight) - 150)
-        elif column == '2':
-            width = str(int(screenWidth) / 2 - 20)
-            height = str(int(screenHeight) / 2 - 50)
 
         html = '<div class="ref"><br><iframe width="' + width + '" height="' + height + '" src="' + src + '" frameborder="0" allowfullscreen></iframe>'
 	if url.find('youtube') != -1 and url.find('watch') != -1:

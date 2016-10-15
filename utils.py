@@ -186,10 +186,10 @@ class Utils:
         html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
         for page in range(0, totalPage):
             if page + 1 == currentPage:
-                html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') +"');" + '"><font size="5" color="#999966">' + str(page + 1) +'</font></a>&nbsp;'
+                html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') +"');" + '"><font size="5" color="#00BFFF">' + str(page + 1) +'</font></a>&nbsp;'
             else:
                 html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') + "');" +'">' + str(page + 1) +'</a>&nbsp;'
-        html += '<div style="height: 21px; width: 100px"></div></div>'
+        html += '<div style="height: 11px; width: 100px"></div></div>'
         return html
 
     def gen_menu(self):
@@ -535,6 +535,11 @@ class Utils:
     def formatEnginTitle(self, engin):
         if engin == 'search.mit':
             engin = 'mit'
+
+        record = self.search_engin_dict[engin]
+        shortname = record.get_shortname()
+        if shortname != None and shortname != '':
+            return shortname.strip()
 
         if len(engin) > 10:
             return '[' + engin[0 : len(engin) - (len(engin) / 2) - 1] + ']'
