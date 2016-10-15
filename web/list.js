@@ -422,8 +422,17 @@ function toPage(page, url) {
         href = url;
     }
     console.log('ss', href);
-    if (href.indexOf('page=') > 0) {
-        split_data = href.split('page=')
+    href = replaceArg(href, 'page', page);
+    
+    console.log('href', href);
+    window.location.href = href;
+    //alter(href);
+}
+
+function replaceArg(url, arg, value) {
+    href = url;
+    if (href.indexOf(arg + '=') > 0) {
+        split_data = href.split(arg + '=')
         part = "";
         if (split_data[1].indexOf('&') > 0) {
             part = split_data[1].substring(split_data[1].indexOf('&') + 1);
@@ -432,13 +441,9 @@ function toPage(page, url) {
         //href = href.substring(0, href.indexOf('&page='))
     }
     if (href.substring(href.length - 1) == '&') {
-        href = href + 'page=' + page;
+        href = href + arg + '=' + value;
     } else {
-        href = href + '&page=' + page;
+        href = href + '&' + arg + '=' + value;
     }
-    
-
-    console.log('href', href);
-    window.location.href = href;
-    //alter(href);
+    return href;
 }

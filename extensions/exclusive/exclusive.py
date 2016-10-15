@@ -8,6 +8,8 @@ class Exclusive(BaseExtension):
     def excute(self, form_dict):
         title = form_dict['rTitle']
         fileName = form_dict['fileName']
+        if fileName.find("/custom") != -1:
+            fileName = form_dict['originFileName']
         #if form_dict.has_key('fileName') and form_dict['fileName'] != '':
         #    fileName = form_dict['fileName']
         print fileName

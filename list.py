@@ -317,22 +317,30 @@ def get_id_and_title(record):
     return record.get_id() + vertical + record.get_title()
 
 def update_max_len(record, col):
-    if utils.str_block_width(get_id_and_title(record)) > line_max_len_list[col - 1]:
+    id_title_len = utils.str_block_width(get_id_and_title(record))
+    if id_title_len > line_max_len_list[col - 1]:
         line_max_len_list[col - 1] = utils.str_block_width(get_id_and_title(record))
+
     if utils.str_block_width(record.get_id()) > line_id_max_len_list[col - 1]:
         line_id_max_len_list[col - 1] = utils.str_block_width(record.get_id()) 
+
 
 
 def update_cell_len(index):
     global cell_len, course_name_len, course_num_len
     cell_len = line_max_len_list[index]
     if custom_cell_len > 0:
-        cell_len = custom_cell_len        
+        cell_len = custom_cell_len
+
     course_num_len = line_id_max_len_list[index]
     if cell_len == 0 or course_num_len == 0:
         cell_len = line_max_len_list[0]
         course_num_len = line_id_max_len_list[0]
-    course_name_len = cell_len - course_num_len - 1
+
+    if Config.hiden_record_id and html_style:
+        course_name_len = cell_len
+    else:
+        course_name_len = cell_len - course_num_len - 1
 
 def next_pos(text, start):
     min_end = len(text)
@@ -860,6 +868,8 @@ def smartLink(content, record):
     global last_line_smart_link
     if content.strip().startswith('path:'):
         path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'}).strip()
+        if path.find('/custom') != -1:
+            return ''
         if path.find(' ') != -1:
             path = path[0 : path.find(' ') ].strip()
         src = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=' + path[path.rfind('/') + 1 : ] + '&column=2'
@@ -1169,9 +1179,14 @@ def print_list(all_lines, file_name = ''):
     if filter_keyword != '' and merger_result: 
         all_lines = utils.sortLines(all_lines)
 
-    if Config.page_item_count > 0:
+    if Config.page_item_count > 0 and html_style:
         start_item = (current_page - 1) * Config.page_item_count
         all_lines = all_lines[ start_item : start_item + Config.page_item_count]
+        
+    if len(all_lines) == 1:
+        adjust_column_num('1')
+    elif len(all_lines) == 2:
+        adjust_column_num('2')
     
     if verify != '':
         file_name = verify
@@ -1417,8 +1432,6 @@ def print_list(all_lines, file_name = ''):
                 message += "\n\n"
 
             if html_style:
-                message += "<br/>"
-                message += "<br/>"
                 message += "<br/></div>"
                 if loadmore_mode == False:
                     loadmore_div = ''
@@ -1428,7 +1441,7 @@ def print_list(all_lines, file_name = ''):
                 message = ''
             if plugins_mode == False:
                 print message
-                if html_style and Config.page_item_count > 0:
+                if html_style and Config.page_item_count > 0 and total_records > Config.page_item_count:
                     total_pages = total_records / Config.page_item_count
                     if total_records % Config.page_item_count > 0:
                         total_pages += 1
@@ -1545,6 +1558,12 @@ def adjust_link_number():
         max_nav_link_row = max_nav_link_row + 1
         max_links_row = max_links_row - 2
     
+def adjust_column_num(cn):
+    global column_num
+    column_num = cn
+    adjust_cell_len()
+    adjust_link_number()
+
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page
     try:
@@ -1621,11 +1640,9 @@ def main(argv):
             library_hiden = True
         elif o in ('-o', '--page'):
             current_page = int(a)
-
+    
     if source.endswith('-library') and Config.auto_library_cell_len:
-        column_num = '3'
-        adjust_cell_len()
-        adjust_link_number()
+        adjust_column_num('3')
         custom_cell_len = 77
         split_length = custom_cell_len + 15
 

@@ -13,7 +13,7 @@ class Config():
     smart_link_br_len = 80
     replace_with_smart_link = False
 
-    page_item_count = 20
+    page_item_count = 63
 
     recommend_engin = True
     recommend_engin_num = 18
@@ -23,10 +23,10 @@ class Config():
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
     #default_library = ''
-    #default_library = 'ai-library'
+    default_library = 'ai-library'
     #default_library = 'information-library'
     #default_library = 'cognitive-library'
-    default_library = 'neuro-library'
+    #default_library = 'neuro-library'
     #default_library = 'gene-library'
     #default_library = 'math-phys-chem-library'
     #default_library = 'business-finance-library'

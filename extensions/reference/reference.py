@@ -26,11 +26,12 @@ class Reference(BaseExtension):
         self.helper = YoutubeHelper()
 
     def loadReference(self, filename, rID):
-        print 'loadReference ' + filename
+        print 'loadReference ' + filename + ' rID:' + rID
         if len(self.record_reference) != 0 and self.record_reference.has_key(rID):
             return
         name = 'extensions/reference/data/' + filename + '-reference'
         if os.path.exists(name):
+            print 'loadReference ' + name
             f = open(name, 'rU')
             all_lines = f.readlines()
             for line in all_lines:
@@ -45,6 +46,8 @@ class Reference(BaseExtension):
                     self.record_reference[key].append(record)
                 else:
                     self.record_reference[key] = [record]
+
+        print len(self.record_reference)
 
         #for (k, v) in self.record_reference.items():
         #    print k
