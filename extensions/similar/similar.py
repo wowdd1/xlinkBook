@@ -60,40 +60,7 @@ class Similar(BaseExtension):
                     if self.papers_dict.has_key(k):
                         print k + ' ' + self.papers_dict[k].get_title()
                 return self.genHtml(pid)
-        elif self.category_obj.match(record.get_describe(), self.category_obj.website) or self.category_obj.containMatch(rID[0 : rID.find('-')].strip() , self.category_obj.engin):
-            return self.genWebsiteHtml(record.get_title().strip())
         return ''
-
-    def genWebsiteHtml(self, key):
-        html = '<div class="ref"><ol>'
-        count = 0
-        cookies = dict(unsafe='True')
-        page = ''
-        page_num = 6
-        page = 'http://www.xmarks.com/topic/' + key
-        nextpage = ''
-        page_count = 0
-        for i in range(0, page_num):
-            page_count += 1
-            if nextpage != '':
-                page = nextpage.replace('2', str(page_count))
-
-            print 'request ' + page
-            r = requests.get(page, cookies=cookies)
-            if r.status_code != 200:
-                break
-            soup = BeautifulSoup(r.text)
-            #print r.text
-            for div in soup.find_all('div', class_='content'):
-                count += 1
-                html += '<li><span>' + str(count) + '.</span><p><a target="_blank" href="' + div.a['href'] + '">' + div.a.text + "</a></p></li>"
-            nextDiv = soup.find('div', class_='site-pagination')
-            if nextDiv != None and nextpage == '':
-                nextpage = 'http://www.xmarks.com' + nextDiv.a['href']
-            if nextDiv == None:
-                break
-        html += "</ol></div>"
-        return html
 
     def genHtml(self, pid):
         html = '<div class="ref"><ol width="100%">'

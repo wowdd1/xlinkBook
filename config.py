@@ -130,6 +130,9 @@ class Config():
     reference_contain = ''
     reference_igon_case = True
 
+    # bookmark
+    bookmark_enable_cloud_bookmark = False
+
     # convert
     '''
     convert_url_args = '' #'?start=' #'?start=0&tag='
