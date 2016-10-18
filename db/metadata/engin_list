@@ -110,7 +110,7 @@ engin-106 | harvard | http://www.harvard.edu/searches#gsc.tab=0&gsc.q= | priorit
 engin-107 | search.ox | https://search.ox.ac.uk/search?access=p&output=xml_no_dtd&ie=UTF-8&client=admin&proxystylesheet=admin&site=default-minus&submit=Search&q= | priority:0 description:people course
 engin-108 | ethz.ch | https://www.ethz.ch/en/utils/search.ethz_search.html?language=en&pagetype=all&search= | priority:0 description:people course
 engin-109 | techtalks | http://techtalks.tv/search/results/?q= | priority:8 description:talk course
-engin-110 | plus.g | https://plus.google.com/s/ | priority:0 description:social star
+engin-110 | plus.google | https://plus.google.com/s/%s/top | priority:6 description:social star shortname:google+
 engin-111 | slashdot | https://slashdot.org/index2.pl?fhfilter= | priority:0 description:news
 engin-112 | digg | http://digg.com/search?q= | priority:0 description:digg
 engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | priority:0 description:wiki

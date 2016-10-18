@@ -186,7 +186,7 @@ class Utils:
         html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
         for page in range(0, totalPage):
             if page + 1 == currentPage:
-                html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') +"');" + '"><font size="5" color="#00BFFF">' + str(page + 1) +'</font></a>&nbsp;'
+                html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') +"');" + '"><font size="5" color="#00BFFF"><b>' + str(page + 1) +'</b></font></a>&nbsp;'
             else:
                 html += '<a href="javascript:toPage(' + str(page + 1) + ", '" + libraryUrl.replace("'", '"') + "');" +'">' + str(page + 1) +'</a>&nbsp;'
         html += '<div style="height: 11px; width: 100px"></div></div>'
@@ -596,11 +596,12 @@ class Utils:
         return result
 
 
-    def bestMatchEngin(self, text):
+    def bestMatchEngin(self, text, resourceType=''):
+        #TODO get best engin by resourceType
         return self.getEnginUrl(Config.smart_link_engin)
 
-    def bestMatchEnginUrl(self, text):
-        url = self.bestMatchEngin(text)
+    def bestMatchEnginUrl(self, text, resourceType=''):
+        url = self.bestMatchEngin(text, resourceType=resourceType)
         return self.toQueryUrl(url, text)
 
     def toQueryUrl(self, url, text):

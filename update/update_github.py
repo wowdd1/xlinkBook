@@ -605,6 +605,7 @@ class GithubSpider(Spider):
         data_eecs = {"google" : "https://github.com/google",\
                 "google-cloud-platform" : "https://github.com/GoogleCloudPlatform",\
                 'googlesamples' : 'https://github.com/googlesamples',\
+                "youtube" : 'https://github.com/youtube',\
                 "microsoft" : "https://github.com/Microsoft",\
                 "donet" : "https://github.com/dotnet",\
                 "apple" : "https://github.com/apple/",\
@@ -617,6 +618,7 @@ class GithubSpider(Spider):
                 "awslabs" : "https://github.com/awslabs",\
                 "linkedin" : "https://github.com/linkedin",\
                 "baidu" : "https://github.com/Baidu",\
+                "baidu-research" : 'https://github.com/baidu-research',\
                 "dmlc" : "https://github.com/dmlc",\
                 "amplab" : "https://github.com/amplab",\
                 'OculusVR' : 'https://github.com/OculusVR/',\
@@ -669,6 +671,7 @@ class GithubSpider(Spider):
                 'macmillanpublishers' : 'https://github.com/macmillanpublishers',\
                 'oreillymedia' : 'https://github.com/oreillymedia',\
                 'usgs' : 'https://github.com/usgs'}
+
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\
                 'nipy' : 'https://github.com/nipy',\
@@ -753,9 +756,9 @@ class GithubSpider(Spider):
         per_page = 100
 
         #self.getProjects(star, per_page)
-        self.getKeyProjects(star, per_page)
+        #self.getKeyProjects(star, per_page)
         #self.getUsers(500, 100)
-        #self.getOrganizations()
+        self.getOrganizations()
 
     def getProjects(self, star, per_page):
         for lang in self.lang_list:

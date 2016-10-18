@@ -70,6 +70,19 @@ class Reference(BaseExtension):
         else:
             return self.getAllLinks(form_dict['url'], form_dict['divID'].encode('utf8'), form_dict['rID'])          
 
+    def passItem(self, title, url):
+        contain = Config.reference_contain
+        ft = Config.reference_filter
+        if Config.reference_igon_case:
+            title = title.lower()
+            contain = contain.lower()
+            ft = ft.lower()
+        if contain != '' and title.find(contain) == -1:
+            return True
+        if ft != '' and title.find(ft) != -1:
+            return True
+        print 'found ' + title
+        return False
 
     def getAllLinks(self, url, ref_divID, rID):
         print 'getAllLinks ' + url
@@ -107,6 +120,8 @@ class Reference(BaseExtension):
 		else:
                     link = a['href']
                 print a['href']
+                if self.passItem(a.text.strip(), link):
+                    continue
                 title = a.text.strip().encode('utf-8')
                 if title == '':
                     title = link.replace('http://', '').replace('www.', '')
@@ -164,6 +179,8 @@ class Reference(BaseExtension):
 
         count = 0
         for item in data:
+            if self.passItem(item[0], item[1]):
+                continue
             count += 1
             html += '<li><span>' + str(count) + '.</span>'
             html += '<p><a target="_blank" href="' + item[1] + '"> '+ self.utils.formatTitle(item[0], Config.smart_link_br_len) + '</a>'
@@ -213,6 +230,8 @@ class Reference(BaseExtension):
             self.html = '<div class="ref"><ol>'
             count = 0
             for r in alist:
+                if self.passItem(r[0], r[1]):
+                    continue
                 count += 1
                 ref_divID += '-' + str(count)
                 linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]

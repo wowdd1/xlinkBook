@@ -16,7 +16,7 @@ class Config():
     page_item_count = 63
 
     recommend_engin = True
-    recommend_engin_num = 18
+    recommend_engin_num = 20
     recommend_engin_type = 'star' #ref db/metadata/engin_type
 
     start_library_title = 'add some record from here!'
@@ -72,9 +72,9 @@ class Config():
     extension_mode = False
 
     default_tab = 'content'
-    second_default_tab = ''#'figures'
+    second_default_tab = 'bookmark'#'figures'
 
-    default_width = "79"
+    default_width = "54" #"79"
     column_num = "1"
     custom_cell_len = 88 
     split_length = custom_cell_len + 15
@@ -125,6 +125,11 @@ class Config():
 
     
     # ==== extension ====
+    # reference
+    reference_filter = ''
+    reference_contain = ''
+    reference_igon_case = True
+
     # convert
     '''
     convert_url_args = '' #'?start=' #'?start=0&tag='
@@ -147,7 +152,7 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = '' #"div#title"  # tag#class or tag
+    convert_tag = 'a' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
