@@ -875,7 +875,11 @@ def smartLink(content, record):
         src = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=' + path[path.rfind('/') + 1 : ] + '&column=2'
         folder = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=?'
         alt = path[path.find('db') :]
-        last_line_smart_link = content[0 : content.find('db/')] + '&nbsp;<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">' + "</a>" + '&nbsp;<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
+        last_line_smart_link = content[0 : content.find('db/')] + '&nbsp;'
+        if path != source[source.find('db/') :]:
+            last_line_smart_link += '<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">' + "</a>" + '&nbsp;'
+
+        last_line_smart_link += '<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
         return last_line_smart_link
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         html = ''
@@ -1131,6 +1135,8 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
                 path += p[p.find('key') : ].replace('key=', '')
         if path != '':
             line += ' path:' + path
+    elif record.get_path() == '' and line.find('path:') == -1:
+        line += ' path:' + fileName[fileName.find('db/') : ]
 
     if fileName.find('rank') != -1 and line.find('winner') == -1 and record.get_title().find(',') != -1:
         line += ' winner:' + record.get_title()
