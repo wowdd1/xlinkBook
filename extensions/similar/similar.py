@@ -128,4 +128,4 @@ class Similar(BaseExtension):
     def check(self, form_dict):
         rID = form_dict['rID'].encode('utf-8')
         fileName = form_dict['fileName']
-        return rID.startswith('arxiv') or fileName.find('alexa') != -1
+        return rID.startswith('arxiv')
