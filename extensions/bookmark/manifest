@@ -1,0 +1,6 @@
+{
+    "name" : "bookmark",
+    "module" : "bookmark",
+    "class" : "Bookmark",
+    "version" : "0.1"
+}
