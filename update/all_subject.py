@@ -141,32 +141,32 @@ subject_dict = {\
 
 need_update_subject_list = [
     #'config',
-    #'anthropology',
+    'anthropology',
     'eecs',
-    #'mathematics',
-    #'economics',
+    'mathematics',
+    'economics',
     #'rank',
-    #'physics',
-    #'biology',
-    #'neuroscience',
-    #'literature',
-    #'linguistics',
-    #'philosophy',
-    #"psychology",
-    #'chemistry',
-    #'others',
-    #'art-culture',
-    #'astronomy',
-    #'political',
-    #'humanities',
-    #'history',
-    #'management',
-    #'medicine',
-    #'business-finance',
+    'physics',
+    'biology',
+    'neuroscience',
+    'literature',
+    'linguistics',
+    'philosophy',
+    "psychology",
+    'chemistry',
+    'others',
+    'art-culture',
+    'astronomy',
+    'political',
+    'humanities',
+    'history',
+    'management',
+    'medicine',
+    'business-finance',
     'data-science'
 ]
 
-#need_update_subject_list = ['neuroscience']
+#need_update_subject_list = ['biology']
 
 def print_all_subject():
     print ', '.join(subject_dict.values())

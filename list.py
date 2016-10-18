@@ -488,9 +488,9 @@ def getScript(file_name, first_record):
                 };\
 	    });";
         print script_head + click_more + script_end
-
-    mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
-    print mathjs
+    if plugins_mode == False:
+        mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
+        print mathjs
     print loadJSScript()
     print loadCSS()
     ref_class = css_head
@@ -504,7 +504,7 @@ def getScript(file_name, first_record):
     ref_class += "}"
     ref_class += css_end
     print ref_class
-    if output_with_style:
+    if output_with_style and plugins_mode == False:
         if css_style_type == 0:
             print css_style_0
         elif css_style_type == 1:
@@ -879,7 +879,8 @@ def smartLink(content, record):
         return last_line_smart_link
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         html = ''
-        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : content[ 0 : content.find(':')]})
+        tag = content[ 0 : content.find(':')]
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
         if ret == None:
             return ''
         if ret.find(' and ') != -1:
@@ -895,11 +896,11 @@ def smartLink(content, record):
                     i = i[0 : i.find(Config.delete_from_char)].strip()
                 
                 if old_i != ret[len(ret) - 1]:
-                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>' + split_char + '&nbsp;'
+                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip(), resourceType=tag) + '">' + i.strip() + '</a>' + split_char + '&nbsp;'
                 else:
-                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip()) + '">' + i.strip() + '</a>'
+                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip(), resourceType=tag) + '">' + i.strip() + '</a>'
         else:
-            html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(ret.strip()) + '">' + ret + '</a>'
+            html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(ret.strip(), resourceType=tag) + '">' + ret + '</a>'
         last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
         return last_line_smart_link
     elif content.strip().startswith('id:'):

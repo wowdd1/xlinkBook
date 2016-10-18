@@ -44,7 +44,8 @@ class UdacitySpider(Spider):
                 else:
                     remark = "available:no "
                 for instructor in course['instructors']:
-                    instructors += instructor['name'] + ' '
+                    instructors += instructor['name'] + ', '
+                instructors = instructors[0 : len(instructors) - 2]
                 if course['project_name'] != '':
                     project = 'project:' + course['project_name'] +  ' '
                 remark += "level:" + course['level'] + ' ' + instructors + project + ' description:' + course['summary'].replace('\n', '')

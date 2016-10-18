@@ -174,6 +174,7 @@ def chrome():
 def web(page):
     print page
     f = open('web_content/chrome/output.html', 'rU')
+
     data = f.read()
     #print data
     f.close()
