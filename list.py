@@ -881,33 +881,6 @@ def smartLink(content, record):
 
         last_line_smart_link += utils.enhancedLink(folder, 'path-dir', img='<img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15">', module='main', library=source, rid=record.get_id())
         return last_line_smart_link
-    elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
-        html = ''
-        tag = content[ 0 : content.find(':')].strip()
-        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
-        if ret == None:
-            return ''
-        if ret.find(' and ') != -1:
-            ret = ret.replace(' and ', ', ')
-        elif ret.find('/') != -1:
-            ret = ret.replace('/', ', ')
-        elif ret.find(';') != -1:
-            ret = ret.replace(';', ', ')
-        split_char = ','
-        if ret.find(split_char) != -1:
-            ret = ret.split(split_char)
-            for i in ret:
-                old_i = i
-                if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
-                    i = i[0 : i.find(Config.delete_from_char)].strip()
-                
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id()) 
-                if old_i != ret[len(ret) - 1]:
-                    html += split_char + '&nbsp;'
-        else:
-            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id())
-        last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
-        return last_line_smart_link
     elif content.strip().startswith('id:'):
         if record.get_url() != None and record.get_url() != '':
             last_line_smart_link = content[ 0 : content.find(':') + 1 ] + utils.enhancedLink(record.get_url().strip(), record.get_id().strip(), module='main', library=source, rid=record.get_id())
@@ -941,6 +914,34 @@ def smartLink(content, record):
         html = utils.enhancedLink(ret.strip(), 'video', module='main', library=source, rid=record.get_id())
         last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
         return last_line_smart_link
+    elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner') or content.strip().startswith('alias'):
+        html = ''
+        tag = content[ 0 : content.find(':')].strip()
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
+        if ret == None:
+            return ''
+        if ret.find(' and ') != -1:
+            ret = ret.replace(' and ', ', ')
+        elif ret.find('/') != -1:
+            ret = ret.replace('/', ', ')
+        elif ret.find(';') != -1:
+            ret = ret.replace(';', ', ')
+        split_char = ','
+        if ret.find(split_char) != -1:
+            ret = ret.split(split_char)
+            for i in ret:
+                old_i = i
+                if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
+                    i = i[0 : i.find(Config.delete_from_char)].strip()
+                
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id()) 
+                if old_i != ret[len(ret) - 1]:
+                    html += split_char + '&nbsp;'
+        else:
+            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id())
+        last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
+        return last_line_smart_link
+
     else:
         if last_line_smart_link.find(content) != -1 or last_line_smart_link.find(content.replace(' and ', ', ')) != -1:
             return ''

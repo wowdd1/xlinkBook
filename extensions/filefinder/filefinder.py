@@ -34,9 +34,13 @@ class Filefinder(BaseExtension):
                 if alias != '':
                     if alias.find(',') != -1:
                         for als in alias.split(','):
-                            html += als + ':<br>' + self.genFileList(self.getMatchFiles(als.strip()).split('\n'))
+                            result = self.genFileList(self.getMatchFiles(als.strip()).split('\n'))
+                            if result != '':
+                                html += als + ':<br>' + result
                     else:
-                        html += alias + ':<br>' + self.genFileList(self.getMatchFiles(alias.strip()).split('\n'))
+                        result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'))
+                        if result != '':
+                            html += alias + ':<br>' + result
 
         html += '<div class="ref"><br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText="search my baidu disk", rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '</div>'
 

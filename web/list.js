@@ -462,3 +462,15 @@ function replaceArg(url, arg, value) {
 function userlog(text, url, module, library, rid, searchText) {
     $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, user : user_name}, function(data){});
 }
+
+function chanageLinkColor(obj, color, fontSize) {
+    if (fontSize != '') {
+        obj.innerHTML = '<font color="' + color + '" size="' + fontSize + '">' + obj.text + '</font>'
+    } else {
+        if (color != '') {
+            obj.style.color = color;
+        }
+    }
+    
+    
+}

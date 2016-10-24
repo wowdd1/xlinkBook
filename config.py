@@ -107,6 +107,8 @@ class Config():
     display_all_library = True
 
     hiden_content_after_search = True
+    background_after_click = '#FFDAB9'
+    fontsize_after_click = ''
 
     
     background = ''

@@ -638,6 +638,7 @@ class Utils:
     def enhancedLink(self, url, text, aid='', style='', script='', showText='', userQuote=False, module='', library='', img='', rid='', newTab=True, searchText=''):
         url = url.strip()
         user_log_js = ''
+        chanage_color_js = ''
         send_text = text
         if send_text.find('<') != -1:
             send_text = self.clearHtmlTag(send_text)
@@ -647,12 +648,19 @@ class Utils:
             # because array.push('') contain ', list.py will replace "'" to ""
             # so use  #quote as ', in appendContent wiil replace #quote back to '
             user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote);"
+            if Config.background_after_click != '' and text.find('path-') == -1:
+                chanage_color_js = "chanageLinkColor(this, #quote"+ Config.background_after_click +"#quote, #quote" + Config.fontsize_after_click + "#quote);"
+
         else:
             user_log_js = "userlog('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "');"
+            if Config.background_after_click != '' and text.find('path-') == -1:
+                chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
+
+        
             
         if url.startswith('http') == False and url != '':
             js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
-            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js +  user_log_js + '">'
+            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + user_log_js + '">'
             if showText != '':
                 link += showText + '</a>'
             else:
@@ -675,9 +683,9 @@ class Utils:
             result += ' id=' + id
 
         if script != '':
-            result += ' onclick="' + script + open_js + user_log_js + '"'
+            result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
         else:
-            result += ' onclick="' + open_js + user_log_js + '"'
+            result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
 
 
         if style != '':
