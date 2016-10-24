@@ -147,7 +147,7 @@ class Reference(BaseExtension):
                 ref_divID += '-' + str(count)
                 linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
                 appendID = str(count)
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), text, link, '-') 
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), text, link, '-', hidenEnginSection=True) 
 		#if a.img != None and a.img['src'].endswith('gif') == False:
 		#    html += '<img width="48" height="48" src="' + a.img['src'] + '">'
                 html += '<li><span>' + str(count) + '.</span>'
@@ -190,7 +190,7 @@ class Reference(BaseExtension):
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), item[0], item[1], '-')
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), item[0], item[1], '-', hidenEnginSection=True)
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
 
             html += '</p></li>'
@@ -246,7 +246,7 @@ class Reference(BaseExtension):
                     appendID = appendID.replace('.','R')
                 else:
                     self.html += '<li><span>' + str(count) + '.</span>'
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-')
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-', hidenEnginSection=True)
                 if r[1] != '':
                     self.html += '<p>' + self.utils.enhancedLink(r[1], self.utils.formatTitle(r[0], Config.smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
                 else:
@@ -271,7 +271,7 @@ class Reference(BaseExtension):
                 ref_divID += '-' + str(count)
                 linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
                 appendID = str(count)
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-')
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-', hidenEnginSection=True)
 
                 self.html += '<li><span>' + str(count) + '.</span>'
                 self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip(), rID=key)

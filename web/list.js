@@ -205,12 +205,14 @@ function navTopic(obj, divID, parentDivID, countIndex){
             postArgs['selection'] = global_selection;
             global_selection = '';
         } else {
+            postArgs['selection'] = args[divID][1];
+        /*
 	    if (obj.text == "keyword") {
 	        postArgs['selection'] = args[divID][1];
 	    } else {
                 $("#" + targetid).html("please select some text for search");
                 return
-	    }
+	    }*/
         }
         $("#" + targetid).html('');
     }
@@ -296,7 +298,7 @@ function share(website, url, title) {
    }
 }
 
-function appendContent(targetid, id, topic, url, otherInfo){
+function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     var target=document.getElementById(targetid);
     if (target.innerHTML.indexOf(topic) > 0) {
         if (!disable_thumb) {
@@ -311,8 +313,19 @@ function appendContent(targetid, id, topic, url, otherInfo){
         }
         return;
     }
+
     args[targetid] = [id, topic, url];
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
+
+    var enginHtml = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
+
+    var extensionHtml= extension_array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
+
+    if (hidenEngin) {
+        target.innerHTML = extensionHtml;
+    } else {
+        target.innerHTML = enginHtml + extensionHtml
+    }
+    
     console.log("xx", reference[id]);
 
     for (var i = 0; i < extensions.length; i++) {

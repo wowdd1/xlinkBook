@@ -64,6 +64,7 @@ loadmore_count = 0
 plugins_mode = Config.plugins_mode
 
 div_content_list = []
+div_content_extension_list = []
 div_reference_dict = {}
 div_content_dict = {}
 
@@ -448,11 +449,16 @@ def getScript(file_name, first_record):
         Config.disable_thumb = 'true'
     print "var disable_thumb = " + Config.disable_thumb + ";"
     print "var array = []; "
+    print "var extension_array = [];" 
     print "var reference = new Array();"
     print "var content = new Array();"
     if len(div_content_list) > 0:
         for content in div_content_list:
             print "array.push('" + content + "');" 
+    if len(div_content_extension_list) > 0:
+        for content in div_content_extension_list:
+            print "extension_array.push('" + content + "');" 
+
 
     print 'var user_name = "' + username + '";'
     print 'var fileName = "' + os.getcwd() + '/' + source + '";'
@@ -579,9 +585,13 @@ def build_lines(list_all, file_name):
                 if url.strip() != '':
                     id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid)
                 else:
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid)
+                    if plugins_mode:
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip().replace('%20', ' ')
+                    else:
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid)
+
                 if engin != '':
-                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), userQuote=True, module='star', library=source)  #, '#33EE22')
+                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), userQuote=True, module='star', library=source, pluginsMode=plugins_mode)  #, '#33EE22')
                     #print engin_list_dict
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
@@ -715,14 +725,14 @@ def build_lines(list_all, file_name):
                                         if Config.background == '':
                                             div_style += 'background-color:#F8F8FF;'
                                         div_style += 'border-radius: 5px 5px 5px 5px; width:auto; float:left;'
-                                        div_content_list.append('<div id="' + nav_div_id + '" style="' + div_style + '">')
-                                        div_content_list.append(content)
-                                        div_content_list.append('</div>')
+                                        div_content_extension_list.append('<div id="' + nav_div_id + '" style="' + div_style + '">')
+                                        div_content_extension_list.append(content)
+                                        div_content_extension_list.append('</div>')
                                         if plugins_mode == False:
-                                            div_content_list.append('<br>')
+                                            div_content_extension_list.append('<br>')
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
+                                        div_content_extension_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
                                 if l == lines - 1:
                                     gen_html_done = True
 
@@ -791,6 +801,8 @@ def gen_html_body(content, row=0):
                 ids.append(content_back[index].strip())
 
         index = 0
+        #print '--->'
+        #print content
         while content.find(vertical) != -1:
             content = content[0 :content.find(vertical)] + verticals[index] + content[content.find(vertical) + 1:]
             index = index + 1
