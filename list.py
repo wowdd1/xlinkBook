@@ -883,7 +883,7 @@ def smartLink(content, record):
         return last_line_smart_link
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         html = ''
-        tag = content[ 0 : content.find(':')]
+        tag = content[ 0 : content.find(':')].strip()
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
         if ret == None:
             return ''

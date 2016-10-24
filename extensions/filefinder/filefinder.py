@@ -16,12 +16,27 @@ class Filefinder(BaseExtension):
     def excute(self, form_dict):
         self.form_dict = form_dict
         rTitle = form_dict['rTitle'] 
+        rID = form_dict['rID']
         if form_dict.has_key('selection') and form_dict['selection'] != '':
             rTitle = form_dict['selection'].strip()
         html = ''
         localFiles = self.genFileList(self.getMatchFiles(rTitle.strip()).split('\n'))
         if localFiles != '':
             html += '<br>' + localFiles
+
+        alias = ''
+        record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True)
+        if record != None and record.get_id().strip() != '':
+            ret = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'alias'})
+            if ret != None:
+                alias = ret.strip()
+                print 'alias:' + alias
+                if alias != '':
+                    if alias.find(',') != -1:
+                        for als in alias.split(','):
+                            html += als + ':<br>' + self.genFileList(self.getMatchFiles(als.strip()).split('\n'))
+                    else:
+                        html += alias + ':<br>' + self.genFileList(self.getMatchFiles(alias.strip()).split('\n'))
 
         html += '<div class="ref"><br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText="search my baidu disk", rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '</div>'
 

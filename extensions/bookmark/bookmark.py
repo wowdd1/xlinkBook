@@ -42,10 +42,27 @@ class Bookmark(BaseExtension):
             subprocess.check_output("mv " + Config.bookmark_file_path + " extensions/bookmark/data/chrome_bookmarks.json", shell=True)
             self.loadBookmark()
 
+    def getAlias(self, rID, file):
+        alias = ''
+        record = self.utils.getRecord(rID.strip(), path=file, log=True)
+        if record != None and record.get_id().strip() != '':
+            ret = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'alias'})
+            if ret != None:
+                alias = ret.strip()
+                print 'alias:' + alias
+
+        if alias.find(',') != -1:
+            return alias.split(',')
+        elif alias != '':
+            return [alias]
+        else:
+            return []
+
     def excute(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
+        alias = self.getAlias(rID.strip(), form_dict['originFileName'])
         if form_dict.has_key('selection') and form_dict['selection'].strip() != '':
             selection = form_dict['selection'].encode('utf8').strip()
             #if rTitle.find(selection) != -1:
@@ -66,7 +83,7 @@ class Bookmark(BaseExtension):
 
         for jobj in self.jobj_list:
             if pid == '':
-                if self.containIgoncase(jobj['title'], rTitle) or (jobj.has_key('url') and (self.containIgoncase(jobj['url'], rTitle.replace(' ', '')) or self.containIgoncase(jobj['url'], rTitle.replace(' ', '%20')))):
+                if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
                     count += 1
                     html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
             else :
@@ -85,6 +102,15 @@ class Bookmark(BaseExtension):
                 html += 'cloud bookmark:<br>' + cloud_bookmark
 
         return html
+
+    def match_item(self, jobj, rTitleList):
+        if len(rTitleList) == 0:
+            return False
+        for rTitle in rTitleList:
+            if self.containIgoncase(jobj['title'].strip(), rTitle.strip()) or (jobj.has_key('url') and (self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '').strip()) or self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '%20').strip()))):
+                return True
+
+        return False
 
     def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename):
         html = ''
