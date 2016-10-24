@@ -131,7 +131,7 @@ class Content(BaseExtension):
                 content_divID += '-' + str(count)
                 linkID = 'a-' + content_divID[content_divID.find('-') + 1 :]
                 title = r.get_title().strip().replace(' ', '%20')
-                script = self.utils.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), self.utils.clearHtmlTag(title), r.get_url().strip(), '-')
+                script = self.utils.genMoreEnginScript(linkID, content_divID, r.get_id().strip(), self.utils.clearHtmlTag(title), r.get_url().strip(), '-', hidenEnginSection=True)
                 moreHtml = self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', content_divID, '', False);
                 if self.record_content.has_key(r.get_id().strip()) or r.get_url().strip() == '':
                     if r.get_url().strip() != '':

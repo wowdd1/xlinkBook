@@ -518,7 +518,7 @@ class Utils:
                 return html
         return html
 
-    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0, userQuote=False, module='', library=''):
+    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0, userQuote=False, module='', library='', pluginsMode=False):
         if self.ddg_mode:
             return self.getDDGEnginListLinks(engins, topic, id, query, color, fontSize)
         if topic == '':
@@ -536,7 +536,7 @@ class Utils:
                 keyword = id.strip()
             else:
                 keyword = topic.strip()
-            if Config.hiden_content_after_search:
+            if Config.hiden_content_after_search and pluginsMode == False:
                 script = "var pid = this.parentNode.parentNode.id; hidenMoreContent(pid, 1);"
                 style = "color:'" + color + ' ; font-size: ' + str(fontSize) + "'pt;"
                 result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, script=script, userQuote=userQuote, module=module, library=library, searchText=keyword, rid='#rid')
@@ -788,13 +788,16 @@ class Utils:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + '><font color="#999966">' + text + '</font></a></font>'
         return html + div
 
-    def genMoreEnginScript(sefl, linkID, content_divID, id, title, url, info):
+    def genMoreEnginScript(sefl, linkID, content_divID, id, title, url, info, hidenEnginSection=False):
         script = ''
         script += "setText('" + linkID +"');"
         script += "showdiv('" + content_divID + "','" + linkID +"');"
         title = title.replace('"', '%20').replace("'",'%20').replace('&', '%20').replace(' ', '%20')
         info = info.replace('"', '%20').replace("'",'%20').replace(' ', '%20')
-        script += "appendContent('" + content_divID + "','" + id + "','" + title.strip().replace(" ", '%20') + "','" + url+ "','" + info + "');"
+        hidenEngin = 'false'
+        if hidenEnginSection:
+            hidenEngin = 'true'
+        script += "appendContent('" + content_divID + "','" + id + "','" + title.strip().replace(" ", '%20') + "','" + url+ "','" + info + "'," + hidenEngin + ");"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
