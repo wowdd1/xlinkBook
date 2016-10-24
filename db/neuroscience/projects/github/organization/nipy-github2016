@@ -25,5 +25,5 @@ github-nipy-blog | blog | https://github.com/nipy/blog | author:nipy description
 github-nipy-dipy_qa | dipy_qa | https://github.com/nipy/dipy_qa | author:nipy description:Experimental large scale quality assurance framework for DIPY
 github-nipy-nibotme-logs | nibotme-logs | https://github.com/nipy/nibotme-logs | author:nipy description:NIPY BuildBot Master Instance (buildbot logs)
 github-nipy-dipy_web | dipy_web | https://github.com/nipy/dipy_web | author:nipy description:Website generation and content management tools for dipy.org
-github-nipy-data-packages | data-packages | https://github.com/nipy/data-packages | author:nipy description:Serving nipy data packages via Github pages
 github-nipy-mindboggle-data | mindboggle-data | https://github.com/nipy/mindboggle-data | author:nipy description:Updated May 4, 2016
+github-nipy-data-packages | data-packages | https://github.com/nipy/data-packages | author:nipy description:Serving nipy data packages via Github pages
