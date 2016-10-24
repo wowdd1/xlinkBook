@@ -8,6 +8,8 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
+    smart_engin_for_tag = {'instructors' : 'twitter',\
+                           'university' : 'glucky'}
     smart_link_engin = 'google' #'glucky'
     smart_link_max_text_len = 60
     smart_link_br_len = 80
@@ -18,6 +20,8 @@ class Config():
     recommend_engin = True
     recommend_engin_num = 20
     recommend_engin_type = 'star' #ref db/metadata/engin_type
+
+
 
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'

@@ -612,6 +612,9 @@ class Utils:
 
     def bestMatchEngin(self, text, resourceType=''):
         #TODO get best engin by resourceType
+        #print resourceType
+        if Config.smart_engin_for_tag.has_key(resourceType.strip()):
+            return self.getEnginUrl(Config.smart_engin_for_tag[resourceType.strip()])
         return self.getEnginUrl(Config.smart_link_engin)
 
     def bestMatchEnginUrl(self, text, resourceType='', source=''):
