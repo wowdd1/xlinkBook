@@ -93,7 +93,9 @@ function search(inputid,optionid){
     //	return;
     //}
     if (select[select.selectedIndex].value.slice(0, 1) == "!"){
-        window.open("http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " "));
+        url = "http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " ")
+        window.open(url);
+        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value);
     } else if (select[select.selectedIndex].value == "current") {
         var url = "http://localhost:5000?db=" + database;
         if (key != "") {
@@ -101,18 +103,20 @@ function search(inputid,optionid){
         }
         url = url + '&filter="' + input.value + '"' + '&column=1';
         window.open(url)
+        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value);
     } else if (select[select.selectedIndex].value == "add") {
         $.post('/addRecord', {fileName : fileName, data : input.value}, function(data) {
 	    window.location.href = window.location.href;   
 	});
     } else {
         window.open(select.value + input.value);
+        userlog(select[select.selectedIndex].text, select.value + input.value, 'searchbox', fileName, '', input.value);
     }
 }
 
 function trimStr(str){return str.replace(/(^s*)|(s*$)/g,"");}
 
-function searchTopic(obj, topic, otherInfo){
+function searchTopic(obj, rid, topic, otherInfo){
     console.log("xx",obj.text);
     console.log("xx",topic);
     var options = document.getElementsByTagName("option");
@@ -133,14 +137,20 @@ function searchTopic(obj, topic, otherInfo){
         if (trimStr(options[i].text) == trimStr(obj.text)) {
             console.log("xx", options[i].value);
             if (options[i].value.indexOf("%s") != -1) {
-                window.open(options[i].value.replace("%s", topic.replace("&nbsp;", " ")) + otherInfo);
+                url = options[i].value.replace("%s", topic.replace("&nbsp;", " ")) + otherInfo
+                window.open(url);
+                userlog(obj.text, url, 'moreEngin', fileName, rid, topic);
             } else {
                 console.log("xx", obj.text.slice(0, 1));
                 if (options[i].value.slice(0, 1) == "!"){
                     console.log("xx", options[i].value + topic.replace("&nbsp;", " "));
-                    window.open("http://duckduckgo.com/?q=" + options[i].value + " " + topic.replace("&nbsp;", " ") + otherInfo);
+                    url = "http://duckduckgo.com/?q=" + options[i].value + " " + topic.replace("&nbsp;", " ") + otherInfo
+                    window.open(url);
+                    userlog(obj.text, url, 'moreEngin', fileName, rid, topic);
                 } else {
-                    window.open(options[i].value + topic.replace("&nbsp;", " ") + otherInfo);
+                    url = options[i].value + topic.replace("&nbsp;", " ") + otherInfo
+                    window.open(url);
+                    userlog(obj.text, url, 'moreEngin', fileName, rid, topic);
                 }
             }
         }
@@ -184,7 +194,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs["defaultLinks"] = 2;
     postArgs['user_name'] = user_name;
     postArgs['originFileName'] = fileName;
-    postArgs['selection'] = ''
+    postArgs['selection'] = window.getSelection().toString();
     postArgs['screenWidth'] = screen.width
     postArgs['screenHeight'] = screen.height
     if (obj.text == "search" || obj.text == "keyword") {
@@ -302,7 +312,7 @@ function appendContent(targetid, id, topic, url, otherInfo){
         return;
     }
     args[targetid] = [id, topic, url];
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo);
+    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
     console.log("xx", reference[id]);
 
     for (var i = 0; i < extensions.length; i++) {
@@ -446,4 +456,9 @@ function replaceArg(url, arg, value) {
         href = href + '&' + arg + '=' + value;
     }
     return href;
+}
+
+
+function userlog(text, url, module, library, rid, searchText) {
+    $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, user : user_name}, function(data){});
 }

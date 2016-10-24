@@ -127,16 +127,15 @@ class Figures(BaseExtension):
             row_count = 7
             space = 2 * '&nbsp;'
         if thumb != '':
-            html += '<a target="_blank" href="' + thumb + '"><img width="' + thumb_width + '" src="' + thumb + '" style="' + self.img_style + '"/></a><br/>'
-        
+            html += self.utils.enhancedLink(thumb, '', img='<img width="' + thumb_width + '" src="' + thumb + '" style="' + self.img_style + '"/>', module='figures') + '<br/>'
         if figures != None: 
             count = 0
             for fig in figures:
                 count += 1
                 if len(links) > 0:
-                    html += '<a target="_blank" href="' + links[count - 1] + '"><img class="demo-img pos-center" height="' + height + '" width="' + width + '" src="' + fig + '" style="' + self.img_style + '"/></a>' + space
+                    html += self.utils.enhancedLink(links[count - 1], '', img='<img class="demo-img pos-center" height="' + height + '" width="' + width + '" src="' + fig + '" style="' + self.img_style + '"/>', module='figures') + space
                 else:
-                    html += '<a target="_blank" href="' + fig + '"><img height="' + height + '" width="' + width + '" src="' + fig + '" style="' + self.img_style + '"/></a>' + space
+                    html += self.utils.enhancedLink(fig, '', img='<img height="' + height + '" width="' + width + '" src="' + fig + '" style="' + self.img_style + '"/>', module='figures') + space
                 if count % row_count == 0:
                     html += '<br/>'
  
@@ -144,5 +143,4 @@ class Figures(BaseExtension):
         return html
 
     def check(self, form_dict):
-        rID = form_dict['rID']
         return True

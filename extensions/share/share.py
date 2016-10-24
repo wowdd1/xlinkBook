@@ -26,6 +26,7 @@ class Share(BaseExtension):
         return html
 
     def check(self, form_dict):
-        return True
+        url = form_dict['url']
+        return url != ''
         #url= form_dict['url']
         #return url != None and url != ''

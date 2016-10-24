@@ -573,15 +573,15 @@ def build_lines(list_all, file_name):
                 #if html_style and title.find('(') != -1 and title.strip().startswith('(') == False:
                 #    title = title[0 : title.find('(')].strip()
                 
+                #if url.strip() != '':
+                #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
+                rid = id_title[0: id_title.find('|')]
                 if url.strip() != '':
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
-                
-                if url.strip() != '':
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title.strip() + '</a>'
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid)
                 else:
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'))
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid)
                 if engin != '':
-                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip())  #, '#33EE22')
+                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), userQuote=True, module='star', library=source)  #, '#33EE22')
                     #print engin_list_dict
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
@@ -722,7 +722,7 @@ def build_lines(list_all, file_name):
                                             div_content_list.append('<br>')
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
+                                        div_content_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
                                 if l == lines - 1:
                                     gen_html_done = True
 
@@ -877,9 +877,9 @@ def smartLink(content, record):
         alt = path[path.find('db') :]
         last_line_smart_link = content[0 : content.find('db/')] + '&nbsp;'
         if path != source[source.find('db/') :]:
-            last_line_smart_link += '<a target="_blank" href="' + src + '"><img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">' + "</a>" + '&nbsp;'
+            last_line_smart_link += utils.enhancedLink(src, 'path-file', img='<img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">', module='main', library=source, rid=record.get_id()) + '&nbsp;'
 
-        last_line_smart_link += '<a target="_blank" href="' + folder+ '"><img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15"></a>'
+        last_line_smart_link += utils.enhancedLink(folder, 'path-dir', img='<img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15">', module='main', library=source, rid=record.get_id())
         return last_line_smart_link
     elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner'):
         html = ''
@@ -889,9 +889,11 @@ def smartLink(content, record):
             return ''
         if ret.find(' and ') != -1:
             ret = ret.replace(' and ', ', ')
+        elif ret.find('/') != -1:
+            ret = ret.replace('/', ', ')
+        elif ret.find(';') != -1:
+            ret = ret.replace(';', ', ')
         split_char = ','
-        if ret.find(';') != -1:
-            split_char = ';'
         if ret.find(split_char) != -1:
             ret = ret.split(split_char)
             for i in ret:
@@ -899,21 +901,46 @@ def smartLink(content, record):
                 if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
                     i = i[0 : i.find(Config.delete_from_char)].strip()
                 
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id()) 
                 if old_i != ret[len(ret) - 1]:
-                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip(), resourceType=tag) + '">' + i.strip() + '</a>' + split_char + '&nbsp;'
-                else:
-                    html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(i.strip(), resourceType=tag) + '">' + i.strip() + '</a>'
+                    html += split_char + '&nbsp;'
         else:
-            html += '<a target="_blank" href="' + utils.bestMatchEnginUrl(ret.strip(), resourceType=tag) + '">' + ret + '</a>'
+            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id())
         last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
         return last_line_smart_link
     elif content.strip().startswith('id:'):
         if record.get_url() != None and record.get_url() != '':
-            last_line_smart_link = content[ 0 : content.find(':') + 1 ] + '<a target="_blank" href="' + record.get_url().strip()+ '">' + record.get_id().strip() + '</a>'
+            last_line_smart_link = content[ 0 : content.find(':') + 1 ] + utils.enhancedLink(record.get_url().strip(), record.get_id().strip(), module='main', library=source, rid=record.get_id())
             return last_line_smart_link
         else:
             last_line_smart_link = content
             return last_line_smart_link
+    elif content.strip().startswith('category:'):
+        tags = content[content.find(':') + 1 : ].strip()
+        if tags.find(',') != -1:
+            tags = tags.split(',')
+        elif tags.find(' ') != -1:
+            tags = tags.split(' ')
+        else:
+            tags = [tags]
+        html = ''
+        for tag in tags:
+            engin = utils.getTopEngin(tag.strip())
+            if engin != '':
+                html += utils.toSmartLink(record.get_title().strip(), engin=engin, showText=tag, module='main', library=source, rid=record.get_id()) 
+                if tag.strip() != tags[len(tags) - 1].strip():
+                    html += ',&nbsp;'
+        if html != '':
+            last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
+            return last_line_smart_link
+        else:
+            last_line_smart_link = content
+            return last_line_smart_link
+    elif content.strip().startswith('videourl:'):
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'videourl'})
+        html = utils.enhancedLink(ret.strip(), 'video', module='main', library=source, rid=record.get_id())
+        last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
+        return last_line_smart_link
     else:
         if last_line_smart_link.find(content) != -1 or last_line_smart_link.find(content.replace(' and ', ', ')) != -1:
             return ''
@@ -975,7 +1002,7 @@ def print_table_head_with_style():
         print_search_box(search_box_hiden)
             
         if library_hiden == False and plugins_mode == False and gened_libary == False:
-            print utils.gen_libary(True,username, '')
+            print utils.gen_libary(True,username, '', source=source)
             gened_libary = True
 	if plugins_mode:
 	    print '<br>'
@@ -1456,7 +1483,7 @@ def print_list(all_lines, file_name = ''):
                     print utils.gen_pages(current_page, total_pages, getLibraryRealUrl(file_name))
                 
                 if html_style:
-                    print utils.gen_menu()
+                    print utils.gen_menu(source)
             
 current_level = 1
 level = 100

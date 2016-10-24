@@ -12,6 +12,10 @@ class BillionDollarClub(Spider):
         self.utils = Utils()
 
 
+    def getKey(self, company):
+        return company['Valuation']
+
+
     def doWork(self):
         r = self.requestWithProxy('http://graphics.wsj.com/billion-dollar-club/data/getData.php')
         j = json.loads(r.text)
@@ -21,24 +25,24 @@ class BillionDollarClub(Spider):
         f = self.open_db(file_name + ".tmp")
         self.count = 0
 
-        for jobj in j['companies']:
+        for jobj in sorted(j['companies'], key=self.getKey, reverse=True):
 
-
+            #print jobj
             print jobj['Company']
             #print jobj['Total_funding']
             #print jobj['rounds']
-            #print jobj['Valuation']
+            print jobj['Valuation']
             #print jobj['loc']
             #print jobj['Founded']
             #print jobj['industry']
             #print jobj['competitors']
             #print jobj['image_caption']
             company = jobj['Company'].replace('\n', '').strip()
-            desc = 'description:' + jobj['ceo'] + ' ' + str(jobj['Total_funding']) + ' ' + str(jobj['rounds']) +\
+            desc = 'ceo:' + jobj['ceo'] + ' description:' + str(jobj['Total_funding']) + ' ' + str(jobj['rounds']) +\
                    ' ' + str(jobj['Valuation']) + ' ' + jobj['loc'] + ' ' + str(jobj['Founded']) + ' ' + jobj['industry'] +\
                    ' competitors:' + jobj['competitors'] + ' '
             self.count += 1
-            self.write_db(f, 'bdc-' + str(self.count), company, self.utils.getEnginUrlEx('google', jobj['Company']), desc.replace('\n', '').strip())
+            self.write_db(f, 'bdc-' + str(self.count), company, '', desc.replace('\n', '').strip())
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:

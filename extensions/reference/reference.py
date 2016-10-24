@@ -17,6 +17,7 @@ class Reference(BaseExtension):
 
     record_reference = {}
     html = ''
+    form_dict = None
 
     def __init__(self):
         BaseExtension.__init__(self)
@@ -53,7 +54,7 @@ class Reference(BaseExtension):
         #    print k
 
     def excute(self, form_dict):
-      
+        self.form_dict = form_dict
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         if self.isYoutubeRssUrl(form_dict['url']):
@@ -151,9 +152,10 @@ class Reference(BaseExtension):
 		#    html += '<img width="48" height="48" src="' + a.img['src'] + '">'
                 html += '<li><span>' + str(count) + '.</span>'
 		if title.find('- Duration') != -1:
-		    html += '<p>' + '<a target="_blank" href="' + link + '">' + self.utils.formatTitle(title[0 : title.find('- Duration')], Config.smart_link_br_len) + '</a>' + title[title.find('- Duration') :]
+		    html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title[0 : title.find('- Duration')], Config.smart_link_br_len), module='reference') + title[title.find('- Duration') :]
 	        else:
-                    html += '<p>' + '<a target="_blank" href="' + link + '">' + self.utils.formatTitle(title, Config.smart_link_br_len) + '</a>'
+                    html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title, Config.smart_link_br_len), module='reference')
+
                 if script != "":
                     html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
                 html += '</p></li>'
@@ -183,7 +185,7 @@ class Reference(BaseExtension):
                 continue
             count += 1
             html += '<li><span>' + str(count) + '.</span>'
-            html += '<p><a target="_blank" href="' + item[1] + '"> '+ self.utils.formatTitle(item[0], Config.smart_link_br_len) + '</a>'
+            html += '<p>' + self.utils.enhancedLink(item[1], self.utils.formatTitle(item[0], Config.smart_link_br_len), module='reference')
 
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
@@ -246,9 +248,9 @@ class Reference(BaseExtension):
                     self.html += '<li><span>' + str(count) + '.</span>'
                 script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-')
                 if r[1] != '':
-                    self.html += '<p>' + '<a target="_blank" href="' + r[1] + '">' + self.utils.formatTitle(r[0], Config.smart_link_br_len) + '</a>'
+                    self.html += '<p>' + self.utils.enhancedLink(r[1], self.utils.formatTitle(r[0], Config.smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
                 else:
-                    self.html += '<p>' + self.utils.toSmartLink(r[0], Config.smart_link_br_len)
+                    self.html += '<p>' + self.utils.toSmartLink(r[0], Config.smart_link_br_len, module='reference', rid=rID, library=self.form_dict['originFileName'])
                 #self.html += self.utils.getDefaultEnginHtml(r[0], defaultLinks)
                 if script != "":
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
@@ -272,7 +274,7 @@ class Reference(BaseExtension):
                 script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-')
 
                 self.html += '<li><span>' + str(count) + '.</span>'
-                self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
+                self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip(), rID=key)
                 if script != "":
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
                 self.html += '</p></li>'
@@ -281,19 +283,19 @@ class Reference(BaseExtension):
             return ''
 
 
-    def genMetadataLink(self, title, url):
+    def genMetadataLink(self, title, url, rID=''):
         if url.find('[') != -1:
             ft = url.replace('[', '').replace(']', '').strip()
             r = self.utils.getRecord(ft, '','', False, False)
             key = r.get_path()[r.get_path().find(default_subject) + len(default_subject) + 1 :]
             url = 'http://' + Config.ip_adress + '?db=' + default_subject + '/&key=' + key + '&filter=' + ft  + '&desc=true'
 
-        return self.genMetadataLinkEx(title, url)
+        return self.genMetadataLinkEx(title, url, rID=rID)
 
 
-    def genMetadataLinkEx(self, title, url):
+    def genMetadataLinkEx(self, title, url, rID=''):
         if title.find('<a>') != -1:
             title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
         else:
-            title = '<a target="_blank" href="' + url + '">' + self.utils.formatTitle(title, Config.smart_link_br_len) + '</a>'
+            title = self.utils.enhancedLink(url, self.utils.formatTitle(title, Config.smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
         return title

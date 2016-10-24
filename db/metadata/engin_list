@@ -264,7 +264,7 @@ engin-261 | youdao | http://dict.youdao.com/search?q=%s&ue=utf8&keyfrom=web.inde
 engin-262 | iciba | http://www.iciba.com/ | priority:0 description:tools
 engin-263 | calendar | https://calendar.google.com/calendar/render?hl=zh_cn&pli=1#main_7&q= | priority:0 description:tools
 engin-264 | cal.supfree | http://cal.supfree.net/?q= | priority:0 description:tools
-engin-265 | pan.baidu | http://pan.baidu.com/disk/home#search/key= | priority:3 description:cloud
+engin-265 | pan.baidu | http://pan.baidu.com/disk/home#search/key= | priority:5 description:cloud
 engin-266 | presentation | https://docs.google.com/presentation/u/0/?q= | priority:3 description:tools
 engin-267 | spreadsheets | https://docs.google.com/spreadsheets/u/0/?q= | priority:0 description:tools
 engin-268 | document | https://docs.google.com/document/u/0/?q= | priority:3 description:tools
@@ -272,7 +272,7 @@ engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 descri
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:4 description:tools
 engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:6 description:tools
 engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:cloud
-engin-273 | mail | https://mail.google.com/mail/u/0/#search/ | priority:0 description:tools
+engin-273 | mail | https://mail.google.com/mail/u/0/#search/ | priority:0 description:tools social
 engin-274 | dropbox | https://www.dropbox.com/search/personal?query=%s&query_unnormalized=%s&last_fq_path= | priority:0 description:cloud
 engin-275 | dotnetrocks | https://www.dotnetrocks.com/?q= | priority:0 description:podcast
 engin-276 | voanews | http://www.voanews.com/search/search2.aspx#all|%s|0|allzones|min|now|date | priority:0 description:podcast
@@ -513,3 +513,4 @@ engin-520 | goo.ne.jp | http://search.goo.ne.jp/web.jsp?mode=0&OE=UTF-8&MT=%s&fr
 engin-521 | rakuten | http://global.rakuten.com/en/search/?k= | priority:5 description:product
 engin-522 | mixi | http://mixi.jp/search_community.pl?keyword=%s&search_mode=title&category_id=0&type=com&mode=main&launch=v1 | priority:5 description:social blog
 engin-523 | ameblo | http://search.ameba.jp/search.html?q= | priority:5 description:social blog
+engin-524 | glucky | https://www.google.com.hk/search?site=&source=hp&q=%s&btnI=1 | priority:5 description:all

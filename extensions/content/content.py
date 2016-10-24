@@ -18,6 +18,8 @@ class Content(BaseExtension):
 
     datafile_content = {}
     optional_content = {}
+
+    form_dict = None
    
 
     def __init__(self):
@@ -54,6 +56,7 @@ class Content(BaseExtension):
         #    print k
 
     def excute(self, form_dict):
+        self.form_dict = form_dict
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
@@ -134,7 +137,7 @@ class Content(BaseExtension):
                     if r.get_url().strip() != '':
                         html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip())
                     else:
-                        html += '<p>' + self.utils.toSmartLink(r.get_title().strip(), 45)
+                        html += '<p>' + self.utils.toSmartLink(r.get_title().strip(), 45, module='content', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])
                     #html += self.utils.getDefaultEnginHtml(title, defaultLinks)
                     if moreHtml != "":
                         html += moreHtml
@@ -163,5 +166,5 @@ class Content(BaseExtension):
         if title.find('<a>') != -1:
             title = title.replace('<a>', '<a target="_blank" href="' + url + '">')
         else:
-            title = '<a target="_blank" href="' + url + '">' + self.utils.formatTitle(title, 45) + '</a>'
+            title = self.utils.enhancedLink(url, self.utils.formatTitle(title, 45), module='content', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])
         return title

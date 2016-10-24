@@ -46,4 +46,5 @@ class Pathways(BaseExtension):
         originFileName = form_dict['originFileName'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
         url = form_dict['url'].encode('utf8')
+        print fileName
         return (originFileName != fileName and fileName.endswith('-library') == False) or url.find(Config.ip_adress) != -1
