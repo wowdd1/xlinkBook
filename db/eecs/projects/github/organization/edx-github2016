@@ -4,109 +4,117 @@ github-edx-XBlock | XBlock | https://github.com/edx/XBlock | author:edx descript
 github-edx-ux-pattern-library | ux-pattern-library | https://github.com/edx/ux-pattern-library | author:edx description:The (working) Visual, UI, and Front End Styleguide for edX.
 github-edx-codejail | codejail | https://github.com/edx/codejail | author:edx description:Secure code execution
 github-edx-ease | ease | https://github.com/edx/ease | author:edx description:EASE (Enhanced AI Scoring Engine) is a library that allows for machine learning based classification of textual content. This is useful for tasks such as scoring student essays.
-github-edx-edx-app-android | edx-app-android | https://github.com/edx/edx-app-android | author:edx description:Updated Jul 15, 2016
-github-edx-edx-app-ios | edx-app-ios | https://github.com/edx/edx-app-ios | author:edx description:Updated Jul 13, 2016
+github-edx-edx-app-android | edx-app-android | https://github.com/edx/edx-app-android | author:edx description:Updated Oct 19, 2016
+github-edx-edx-app-ios | edx-app-ios | https://github.com/edx/edx-app-ios | author:edx description:Updated Oct 19, 2016
 github-edx-xserver | xserver | https://github.com/edx/xserver | author:edx description:XServer accepts student code submissions from the LMS and runs the code using (separate) courseware graders
-github-edx-insights | insights | https://github.com/edx/insights | author:edx description:[Deprecated Prototype] Python+Mongo+Django framework for creating simple, pluggable analytics based on streaming events.
 github-edx-edx-documentation | edx-documentation | https://github.com/edx/edx-documentation | author:edx description:For published versions of the edX documentation, visit:
+github-edx-insights | insights | https://github.com/edx/insights | author:edx description:[Deprecated Prototype] Python+Mongo+Django framework for creating simple, pluggable analytics based on streaming events.
 github-edx-bok-choy | bok-choy | https://github.com/edx/bok-choy | author:edx description:UI-level acceptance test framework
 github-edx-ecommerce | ecommerce | https://github.com/edx/ecommerce | author:edx description:Django application used to manage edX's product catalog and handle orders for those products.
-github-edx-xblock-sdk | xblock-sdk | https://github.com/edx/xblock-sdk | author:edx description:Workbench and example xblocks
 github-edx-edx-tools | edx-tools | https://github.com/edx/edx-tools | author:edx description:a collection of miscellaneous tools for use with the edX platform
+github-edx-xblock-sdk | xblock-sdk | https://github.com/edx/xblock-sdk | author:edx description:Workbench and example xblocks
+github-edx-edx-analytics-pipeline | edx-analytics-pipeline | https://github.com/edx/edx-analytics-pipeline | author:edx description:Updated Oct 19, 2016
 github-edx-edx-ora2 | edx-ora2 | https://github.com/edx/edx-ora2 | author:edx description:Open Response Assessment Suite
 github-edx-edx-analytics-dashboard | edx-analytics-dashboard | https://github.com/edx/edx-analytics-dashboard | author:edx description:Dashboard to display course analytics to course teams
-github-edx-edx-analytics-pipeline | edx-analytics-pipeline | https://github.com/edx/edx-analytics-pipeline | author:edx description:Updated Jul 12, 2016
 github-edx-cs_comments_service | cs_comments_service | https://github.com/edx/cs_comments_service | author:edx description:server side of the comment service
-github-edx-xqueue | xqueue | https://github.com/edx/xqueue | author:edx description:XQueue defines an interface for the LMS to communicate with external grader services.
 github-edx-edx-ora | edx-ora | https://github.com/edx/edx-ora | author:edx description:[DEPRECATED] edX ORA (Open Response Assessor) allows for the peer, instructor, and AI assessment of problems on the edX platform.
-github-edx-edx-demo-course | edx-demo-course | https://github.com/edx/edx-demo-course | author:edx description:a demo course that can be imported into edX
-github-edx-notifier | notifier | https://github.com/edx/notifier | author:edx description:Updated Jul 11, 2016
-github-edx-event-tracking | event-tracking | https://github.com/edx/event-tracking | author:edx description:a system for tracking events
+github-edx-xqueue | xqueue | https://github.com/edx/xqueue | author:edx description:XQueue defines an interface for the LMS to communicate with external grader services.
 github-edx-edx-certificates | edx-certificates | https://github.com/edx/edx-certificates | author:edx description:The code edX uses to generate certificates
+github-edx-edx-demo-course | edx-demo-course | https://github.com/edx/edx-demo-course | author:edx description:a demo course that can be imported into edX
+github-edx-event-tracking | event-tracking | https://github.com/edx/event-tracking | author:edx description:a system for tracking events
+github-edx-notifier | notifier | https://github.com/edx/notifier | author:edx description:Updated Sep 7, 2016
 github-edx-repo-tools | repo-tools | https://github.com/edx/repo-tools | author:edx description:Tools for repo maintenance, etc.
 github-edx-edxanalytics | edxanalytics | https://github.com/edx/edxanalytics | author:edx description:edX Analytics Service
-github-edx-harprofiler | harprofiler | https://github.com/edx/harprofiler | author:edx description:record har files for automated web pageloads
-github-edx-edx-ui-toolkit | edx-ui-toolkit | https://github.com/edx/edx-ui-toolkit | author:edx description:A JavaScript toolkit for building edX user interfaces.
-github-edx-edx-oauth2-provider | edx-oauth2-provider | https://github.com/edx/edx-oauth2-provider | author:edx description:Updated Jun 24, 2016
-github-edx-edx-proctoring | edx-proctoring | https://github.com/edx/edx-proctoring | author:edx description:Updated Jun 23, 2016
-github-edx-loghandlersplus | loghandlersplus | https://github.com/edx/loghandlersplus | author:edx description:Additional handlers for Python logging (AWS SNS, AWS SQS)
 github-edx-edx-lint | edx-lint | https://github.com/edx/edx-lint | author:edx description:repo to contain any/all pylint checkers
-github-edx-xqueue-watcher | xqueue-watcher | https://github.com/edx/xqueue-watcher | author:edx description:Updated Oct 23, 2015
-github-edx-edx-analytics-data-api | edx-analytics-data-api | https://github.com/edx/edx-analytics-data-api | author:edx description:Updated Jul 11, 2016
-github-edx-xblock-utils | xblock-utils | https://github.com/edx/xblock-utils | author:edx description:Updated Jun 27, 2016
-github-edx-i18n-tools | i18n-tools | https://github.com/edx/i18n-tools | author:edx description:Updated Jun 22, 2016
+github-edx-edx-oauth2-provider | edx-oauth2-provider | https://github.com/edx/edx-oauth2-provider | author:edx description:Updated Sep 28, 2016
+github-edx-harprofiler | harprofiler | https://github.com/edx/harprofiler | author:edx description:record har files for automated web pageloads
+github-edx-edx-analytics-data-api | edx-analytics-data-api | https://github.com/edx/edx-analytics-data-api | author:edx description:Updated Oct 11, 2016
+github-edx-edx-ui-toolkit | edx-ui-toolkit | https://github.com/edx/edx-ui-toolkit | author:edx description:A JavaScript toolkit for building edX user interfaces.
+github-edx-xblock-utils | xblock-utils | https://github.com/edx/xblock-utils | author:edx description:Updated Sep 13, 2016
+github-edx-edx-proctoring | edx-proctoring | https://github.com/edx/edx-proctoring | author:edx description:Updated Oct 19, 2016
+github-edx-xqueue-watcher | xqueue-watcher | https://github.com/edx/xqueue-watcher | author:edx description:Updated Sep 6, 2016
+github-edx-loghandlersplus | loghandlersplus | https://github.com/edx/loghandlersplus | author:edx description:Additional handlers for Python logging (AWS SNS, AWS SQS)
+github-edx-i18n-tools | i18n-tools | https://github.com/edx/i18n-tools | author:edx description:Updated Oct 6, 2016
 github-edx-js-test-tool | js-test-tool | https://github.com/edx/js-test-tool | author:edx description:Run JavaScript test suites and collect coverage information
+github-edx-cookiecutter-django-ida | cookiecutter-django-ida | https://github.com/edx/cookiecutter-django-ida | author:edx description:Updated Oct 12, 2016
+github-edx-datajam | datajam | https://github.com/edx/datajam | author:edx description:edX Dajatam
+github-edx-edx-analytics-data-api-client | edx-analytics-data-api-client | https://github.com/edx/edx-analytics-data-api-client | author:edx description:Updated Sep 8, 2016
+github-edx-edx-sitespeed | edx-sitespeed | https://github.com/edx/edx-sitespeed | author:edx description:create authenticated edX session for use with sitespeed.io
 github-edx-edx-submissions | edx-submissions | https://github.com/edx/edx-submissions | author:edx description:API for creating submissions and scores
 github-edx-edx-notes-api | edx-notes-api | https://github.com/edx/edx-notes-api | author:edx description:edx-notes-api
-github-edx-datajam | datajam | https://github.com/edx/datajam | author:edx description:edX Dajatam
-github-edx-edx-sitespeed | edx-sitespeed | https://github.com/edx/edx-sitespeed | author:edx description:create authenticated edX session for use with sitespeed.io
-github-edx-edx-analytics-data-api-client | edx-analytics-data-api-client | https://github.com/edx/edx-analytics-data-api-client | author:edx description:Updated Jul 11, 2016
-github-edx-demo-test-course | demo-test-course | https://github.com/edx/demo-test-course | author:edx description:A demo course with as many features turned on as possible
-github-edx-edx-search | edx-search | https://github.com/edx/edx-search | author:edx description:Updated Mar 18, 2016
+github-edx-edx-search | edx-search | https://github.com/edx/edx-search | author:edx description:Updated Sep 28, 2016
 github-edx-skel | skel | https://github.com/edx/skel | author:edx description:A skeleton that can be used as the basis for open-source edX repositories
 github-edx-djeventstream | djeventstream | https://github.com/edx/djeventstream | author:edx description:djeventstream
-github-edx-cookiecutter-django-ida | cookiecutter-django-ida | https://github.com/edx/cookiecutter-django-ida | author:edx description:Updated Jun 17, 2016
-github-edx-edx-organizations | edx-organizations | https://github.com/edx/edx-organizations | author:edx description:Updated May 12, 2016
+github-edx-demo-test-course | demo-test-course | https://github.com/edx/demo-test-course | author:edx description:A demo course with as many features turned on as possible
+github-edx-api-manager | api-manager | https://github.com/edx/api-manager | author:edx description:A set of configuration files, documentation, and sample code for the edX API Manager.
+github-edx-edx-organizations | edx-organizations | https://github.com/edx/edx-organizations | author:edx description:Updated Sep 1, 2016
 github-edx-alton | alton | https://github.com/edx/alton | author:edx description:The edx robot.
-github-edx-opaque-keys | opaque-keys | https://github.com/edx/opaque-keys | author:edx description:Updated Jul 15, 2016
+github-edx-opaque-keys | opaque-keys | https://github.com/edx/opaque-keys | author:edx description:Updated Oct 19, 2016
+github-edx-edx-load-tests | edx-load-tests | https://github.com/edx/edx-load-tests | author:edx description:Open source load tests for edX software components
+github-edx-open-edx-proposals | open-edx-proposals | https://github.com/edx/open-edx-proposals | author:edx description:Proposals for Open edX architecture, best practices and processes
 github-edx-course-discovery | course-discovery | https://github.com/edx/course-discovery | author:edx description:edX Course Catalog Service
 github-edx-acid-block | acid-block | https://github.com/edx/acid-block | author:edx description:An XBlock for testing XBlock Runtimes
-github-edx-edx-load-tests | edx-load-tests | https://github.com/edx/edx-load-tests | author:edx description:Open source load tests for edX software components
-github-edx-edx-analytics-exporter | edx-analytics-exporter | https://github.com/edx/edx-analytics-exporter | author:edx description:Updated Jul 7, 2016
+github-edx-edx-analytics-configuration | edx-analytics-configuration | https://github.com/edx/edx-analytics-configuration | author:edx description:Updated Sep 2, 2016
+github-edx-edx-app-android-white-label-demo | edx-app-android-white-label-demo | https://github.com/edx/edx-app-android-white-label-demo | author:edx description:Updated Aug 27, 2016
+github-edx-edx-e2e-tests | edx-e2e-tests | https://github.com/edx/edx-e2e-tests | author:edx description:End-to-end tests for edx applications
+github-edx-xblock-lti-consumer | xblock-lti-consumer | https://github.com/edx/xblock-lti-consumer | author:edx description:Updated Oct 13, 2016
+github-edx-programs | programs | https://github.com/edx/programs | author:edx description:Django application used as the backend to support Programs-based product lines such as edX's XSeries offering.
 github-edx-pa11ycrawler | pa11ycrawler | https://github.com/edx/pa11ycrawler | author:edx description:Python crawler (using Scrapy) that uses Pa11y to check accessibility of pages as it crawls.
 github-edx-pres2edxml | pres2edxml | https://github.com/edx/pres2edxml | author:edx description:Convert a presentation to edXML for embedding in an edX course.
-github-edx-edx-rest-api-client | edx-rest-api-client | https://github.com/edx/edx-rest-api-client | author:edx description:Facilitates interaction with edX REST APIs
-github-edx-edx-notifications | edx-notifications | https://github.com/edx/edx-notifications | author:edx description:Updated Feb 10, 2016
-github-edx-edx-val | edx-val | https://github.com/edx/edx-val | author:edx description:Updated Feb 2, 2016
+github-edx-datajam-analytics | datajam-analytics | https://github.com/edx/datajam-analytics | author:edx description:Updated Dec 20, 2013
 github-edx-discussions | discussions | https://github.com/edx/discussions | author:edx description:Updated Jul 27, 2015
+github-edx-edx-notifications | edx-notifications | https://github.com/edx/edx-notifications | author:edx description:Updated Sep 8, 2016
+github-edx-edx-milestones | edx-milestones | https://github.com/edx/edx-milestones | author:edx description:Updated Sep 2, 2016
 github-edx-edx.github.io | edx.github.io | https://github.com/edx/edx.github.io | author:edx description:The source to code.edx.org
-github-edx-datajam-analytics | datajam-analytics | https://github.com/edx/datajam-analytics | author:edx description:Updated Dec 19, 2013
-github-edx-xblock-lti-consumer | xblock-lti-consumer | https://github.com/edx/xblock-lti-consumer | author:edx description:Updated Jul 14, 2016
-github-edx-api-manager | api-manager | https://github.com/edx/api-manager | author:edx description:A set of configuration files, documentation, and sample code for the edX API Manager.
-github-edx-edx-milestones | edx-milestones | https://github.com/edx/edx-milestones | author:edx description:Updated Jul 15, 2016
-github-edx-testeng-ci | testeng-ci | https://github.com/edx/testeng-ci | author:edx description:Updated Jul 15, 2016
-github-edx-edx-e2e-tests | edx-e2e-tests | https://github.com/edx/edx-e2e-tests | author:edx description:End-to-end tests for edx applications
-github-edx-edx-analytics-configuration | edx-analytics-configuration | https://github.com/edx/edx-analytics-configuration | author:edx description:Updated Jul 11, 2016
-github-edx-arch-prototype | arch-prototype | https://github.com/edx/arch-prototype | author:edx description:A space for playing around with architectural interfaces + prototypes
-github-edx-auth-backends | auth-backends | https://github.com/edx/auth-backends | author:edx description:Updated Jun 21, 2016
-github-edx-edx-django-sites-extensions | edx-django-sites-extensions | https://github.com/edx/edx-django-sites-extensions | author:edx description:Updated Jun 2, 2016
-github-edx-edx-django-profiler | edx-django-profiler | https://github.com/edx/edx-django-profiler | author:edx description:Updated Dec 16, 2014
-github-edx-build-pipeline | build-pipeline | https://github.com/edx/build-pipeline | author:edx description:EdX Engineering Build Pipeline orchestration
-github-edx-edx-analytics-hadoop-util | edx-analytics-hadoop-util | https://github.com/edx/edx-analytics-hadoop-util | author:edx description:Updated Mar 17, 2016
-github-edx-edx-reverification-block | edx-reverification-block | https://github.com/edx/edx-reverification-block | author:edx description:Updated Nov 24, 2015
-github-edx-thumb-stack | thumb-stack | https://github.com/edx/thumb-stack | author:edx description:Scripts for creating a devstack installation thumb drive
-github-edx-django-lang-pref-middleware | django-lang-pref-middleware | https://github.com/edx/django-lang-pref-middleware | author:edx description:Updated Sep 16, 2015
-github-edx-programs | programs | https://github.com/edx/programs | author:edx description:Django application used as the backend to support Programs-based product lines such as edX's XSeries offering.
+github-edx-edx-rest-api-client | edx-rest-api-client | https://github.com/edx/edx-rest-api-client | author:edx description:Facilitates interaction with edX REST APIs
+github-edx-auth-backends | auth-backends | https://github.com/edx/auth-backends | author:edx description:Updated Aug 16, 2016
+github-edx-edx-val | edx-val | https://github.com/edx/edx-val | author:edx description:Updated Oct 19, 2016
+github-edx-edx-analytics-exporter | edx-analytics-exporter | https://github.com/edx/edx-analytics-exporter | author:edx description:Updated Oct 17, 2016
+github-edx-edx-gomatic | edx-gomatic | https://github.com/edx/edx-gomatic | author:edx description:Collection of gomatic scripts used at edx
+github-edx-testeng-ci | testeng-ci | https://github.com/edx/testeng-ci | author:edx description:Updated Oct 15, 2016
+github-edx-cookiecutter-django-app | cookiecutter-django-app | https://github.com/edx/cookiecutter-django-app | author:edx description:A cookiecutter template for creating reusable Django packages (installable apps) quickly
 github-edx-credentials | credentials | https://github.com/edx/credentials | author:edx description:Django application used as the backend to support Course or Program based credentials.
-github-edx-eslint-config-edx | eslint-config-edx | https://github.com/edx/eslint-config-edx | author:edx description:ESLint config for edX JavaScript code.
-github-edx-cookiecutter-django-app | cookiecutter-django-app | https://github.com/edx/cookiecutter-django-app | author:edx description:Updated Jul 5, 2016
-github-edx-edx-drf-extensions | edx-drf-extensions | https://github.com/edx/edx-drf-extensions | author:edx description:edX extensions for Django REST Framework
-github-edx-ecommerce-scripts | ecommerce-scripts | https://github.com/edx/ecommerce-scripts | author:edx description:Updated Jun 28, 2016
-github-edx-patch-juggler | patch-juggler | https://github.com/edx/patch-juggler | author:edx description:Hackathon Project for a new Git Interactive Rebase ui
-github-edx-edx-custom-a11y-rules | edx-custom-a11y-rules | https://github.com/edx/edx-custom-a11y-rules | author:edx description:Updated Jun 17, 2016
-github-edx-marketing-site | marketing-site | https://github.com/edx/marketing-site | author:edx description:Updated Jun 15, 2016
-github-edx-edx-safety | edx-safety | https://github.com/edx/edx-safety | author:edx description:Updated Jun 2, 2016
-github-edx-edx-analytics-api-client | edx-analytics-api-client | https://github.com/edx/edx-analytics-api-client | author:edx description:Updated Oct 10, 2014
-github-edx-edx-icon | edx-icon | https://github.com/edx/edx-icon | author:edx description:RequireJS plugin to load icons from the edx-ui-toolkit
+github-edx-cookiecutter-xblock | cookiecutter-xblock | https://github.com/edx/cookiecutter-xblock | author:edx description:Updated Oct 12, 2016
 github-edx-django-openid-auth | django-openid-auth | https://github.com/edx/django-openid-auth | author:edx description:Fork of http://bazaar.launchpad.net/~django-openid-auth/django-openid-auth/trunk/revision/113
-github-edx-edx-django-extensions | edx-django-extensions | https://github.com/edx/edx-django-extensions | author:edx description:Updated May 17, 2016
-github-edx-sample-themes | sample-themes | https://github.com/edx/sample-themes | author:edx description:Updated May 23, 2016
-github-edx-dummy-webapp | dummy-webapp | https://github.com/edx/dummy-webapp | author:edx description:A dummy web app for using to test the deploy pipeline.
-github-edx-openedx-webhooks | openedx-webhooks | https://github.com/edx/openedx-webhooks | author:edx description:Webhooks for the Open edX JIRA
-github-edx-xsy | xsy | https://github.com/edx/xsy | author:edx description:Our internal hipchat fun bot
-github-edx-edx-capa | edx-capa | https://github.com/edx/edx-capa | author:edx description:Updated Mar 16, 2016
-github-edx-demo-performance-course | demo-performance-course | https://github.com/edx/demo-performance-course | author:edx description:Updated Nov 18, 2015
+github-edx-thumb-stack | thumb-stack | https://github.com/edx/thumb-stack | author:edx description:Scripts for creating a devstack installation thumb drive
+github-edx-edx-django-profiler | edx-django-profiler | https://github.com/edx/edx-django-profiler | author:edx description:Updated Dec 17, 2014
+github-edx-edx-reverification-block | edx-reverification-block | https://github.com/edx/edx-reverification-block | author:edx description:Updated Nov 24, 2015
+github-edx-edx-analytics-hadoop-util | edx-analytics-hadoop-util | https://github.com/edx/edx-analytics-hadoop-util | author:edx description:Updated Mar 17, 2016
+github-edx-django-lang-pref-middleware | django-lang-pref-middleware | https://github.com/edx/django-lang-pref-middleware | author:edx description:Updated Sep 7, 2016
+github-edx-arch-prototype | arch-prototype | https://github.com/edx/arch-prototype | author:edx description:A space for playing around with architectural interfaces + prototypes
+github-edx-edx-django-sites-extensions | edx-django-sites-extensions | https://github.com/edx/edx-django-sites-extensions | author:edx description:Updated Sep 1, 2016
+github-edx-edx-drf-extensions | edx-drf-extensions | https://github.com/edx/edx-drf-extensions | author:edx description:edX extensions for Django REST Framework
+github-edx-eslint-config-edx | eslint-config-edx | https://github.com/edx/eslint-config-edx | author:edx description:ESLint config for edX JavaScript code.
+github-edx-build-pipeline | build-pipeline | https://github.com/edx/build-pipeline | author:edx description:EdX Engineering Build Pipeline orchestration
+github-edx-patch-juggler | patch-juggler | https://github.com/edx/patch-juggler | author:edx description:Hackathon Project for a new Git Interactive Rebase ui
+github-edx-edx-django-release-util | edx-django-release-util | https://github.com/edx/edx-django-release-util | author:edx description:Release pipeline utilities for edX independently-deployable applications (IDAs) based on Django.
+github-edx-marketing-site | marketing-site | https://github.com/edx/marketing-site | author:edx description:Updated Oct 7, 2016
+github-edx-ecommerce-worker | ecommerce-worker | https://github.com/edx/ecommerce-worker | author:edx description:Updated Sep 30, 2016
+github-edx-edx-common-client | edx-common-client | https://github.com/edx/edx-common-client | author:edx description:Updated Jun 25, 2015
+github-edx-edx-app-gradle-plugin | edx-app-gradle-plugin | https://github.com/edx/edx-app-gradle-plugin | author:edx description:Updated Apr 9, 2015
+github-edx-test-metrics | test-metrics | https://github.com/edx/test-metrics | author:edx description:Test metric reporting
+github-edx-sample-themes | sample-themes | https://github.com/edx/sample-themes | author:edx description:Updated Sep 28, 2016
+github-edx-notifications-pipeline-steps | notifications-pipeline-steps | https://github.com/edx/notifications-pipeline-steps | author:edx description:The pipeline steps for the edx/notifications generic notifications framework.
+github-edx-ecommerce-scripts | ecommerce-scripts | https://github.com/edx/ecommerce-scripts | author:edx description:Updated Oct 19, 2016
+github-edx-tubular | tubular | https://github.com/edx/tubular | author:edx description:A repo for edx pipeline related scripts.
 github-edx-edx-grader-support | edx-grader-support | https://github.com/edx/edx-grader-support | author:edx description:Library of utilities for writing python graders
 github-edx-edx-user-state-client | edx-user-state-client | https://github.com/edx/edx-user-state-client | author:edx description:Python module for storing/querying user state in edx-platform.
+github-edx-edx-capa | edx-capa | https://github.com/edx/edx-capa | author:edx description:Updated Mar 16, 2016
+github-edx-edx-server-api-client | edx-server-api-client | https://github.com/edx/edx-server-api-client | author:edx description:Updated Sep 6, 2016
+github-edx-edx-custom-a11y-rules | edx-custom-a11y-rules | https://github.com/edx/edx-custom-a11y-rules | author:edx description:Updated Sep 3, 2016
+github-edx-edx-django-extensions | edx-django-extensions | https://github.com/edx/edx-django-extensions | author:edx description:Updated Aug 31, 2016
+github-edx-edx-analytics-api-client | edx-analytics-api-client | https://github.com/edx/edx-analytics-api-client | author:edx description:Updated Aug 29, 2016
+github-edx-edx-icon | edx-icon | https://github.com/edx/edx-icon | author:edx description:RequireJS plugin to load icons from the edx-ui-toolkit
+github-edx-edx-safety | edx-safety | https://github.com/edx/edx-safety | author:edx description:Updated Jun 3, 2016
+github-edx-vagrant-timer | vagrant-timer | https://github.com/edx/vagrant-timer | author:edx description:Updated Jul 26, 2016
+github-edx-xsy | xsy | https://github.com/edx/xsy | author:edx description:Our internal hipchat fun bot
+github-edx-dummy-webapp | dummy-webapp | https://github.com/edx/dummy-webapp | author:edx description:A dummy web app for using to test the deploy pipeline.
 github-edx-openedx-conference-pages | openedx-conference-pages | https://github.com/edx/openedx-conference-pages | author:edx description:Open edX Conference Website
-github-edx-edx-server-api-client | edx-server-api-client | https://github.com/edx/edx-server-api-client | author:edx description:Updated Jan 20, 2015
-github-edx-edx-app-gradle-plugin | edx-app-gradle-plugin | https://github.com/edx/edx-app-gradle-plugin | author:edx description:Updated Apr 8, 2015
-github-edx-edx-common-client | edx-common-client | https://github.com/edx/edx-common-client | author:edx description:Updated Jun 25, 2015
-github-edx-test-metrics | test-metrics | https://github.com/edx/test-metrics | author:edx description:Test metric reporting
-github-edx-edx-gomatic | edx-gomatic | https://github.com/edx/edx-gomatic | author:edx description:Collection of gomatic scripts used at edx
-github-edx-jenkins-job-dsl | jenkins-job-dsl | https://github.com/edx/jenkins-job-dsl | author:edx description:Updated Jul 15, 2016
-github-edx-tubular | tubular | https://github.com/edx/tubular | author:edx description:A repo for edx pipeline related scripts.
-github-edx-ecommerce-worker | ecommerce-worker | https://github.com/edx/ecommerce-worker | author:edx description:Updated Jul 12, 2016
-github-edx-open-edx-proposals | open-edx-proposals | https://github.com/edx/open-edx-proposals | author:edx description:Updated Jul 13, 2016
-github-edx-vagrant-timer | vagrant-timer | https://github.com/edx/vagrant-timer | author:edx description:Updated Jul 11, 2016
-github-edx-edx-django-release-util | edx-django-release-util | https://github.com/edx/edx-django-release-util | author:edx description:Release pipeline utilities for edX independently-deployable applications (IDAs) based on Django.
+github-edx-openedx-webhooks | openedx-webhooks | https://github.com/edx/openedx-webhooks | author:edx description:Webhooks for the Open edX JIRA
+github-edx-django-user-tasks | django-user-tasks | https://github.com/edx/django-user-tasks | author:edx description:A Django application for managing user-triggered asynchronous tasks.
+github-edx-jenkins-job-dsl | jenkins-job-dsl | https://github.com/edx/jenkins-job-dsl | author:edx description:Updated Oct 19, 2016
+github-edx-demo-performance-course | demo-performance-course | https://github.com/edx/demo-performance-course | author:edx description:Updated Nov 18, 2015
+github-edx-edx-enterprise | edx-enterprise | https://github.com/edx/edx-enterprise | author:edx description:Updated Oct 17, 2016
+github-edx-notifications | notifications | https://github.com/edx/notifications | author:edx description:A generic notifications framework for edX.
+github-edx-edx-sphinx-theme | edx-sphinx-theme | https://github.com/edx/edx-sphinx-theme | author:edx description:A Sphinx theme for Open edX documentation
+github-edx-django-config-models | django-config-models | https://github.com/edx/django-config-models | author:edx description:Configuration models for Django allowing config management with auditing.

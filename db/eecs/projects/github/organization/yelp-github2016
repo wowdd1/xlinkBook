@@ -1,85 +1,86 @@
 github-yelp-elastalert | elastalert | https://github.com/Yelp/elastalert | author:yelp description:Easy & Flexible Alerting With ElasticSearch
 github-yelp-mrjob | mrjob | https://github.com/Yelp/mrjob | author:yelp description:Run MapReduce jobs on Hadoop or Amazon Web Services
 github-yelp-dumb-init | dumb-init | https://github.com/Yelp/dumb-init | author:yelp description:A minimal init system for Linux containers
+github-yelp-undebt | undebt | https://github.com/Yelp/undebt | author:yelp description:A fast, straightforward, reliable tool for performing massive, automated code refactoring
 github-yelp-dockersh | dockersh | https://github.com/Yelp/dockersh | author:yelp description:A shell which places users into individual docker containers
 github-yelp-osxcollector | osxcollector | https://github.com/Yelp/osxcollector | author:yelp description:A forensic evidence collection & analysis toolkit for OS X
 github-yelp-paasta | paasta | https://github.com/Yelp/paasta | author:yelp description:An open, distributed platform as a service
 github-yelp-MOE | MOE | https://github.com/Yelp/MOE | author:yelp description:A global, black box optimization engine for real world metric optimization.
 github-yelp-yelp-api | yelp-api | https://github.com/Yelp/yelp-api | author:yelp description:Examples of code using our API
 github-yelp-dataset-examples | dataset-examples | https://github.com/Yelp/dataset-examples | author:yelp description:Samples for users of the Yelp Academic Dataset
-github-yelp-Testify | Testify | https://github.com/Yelp/Testify | author:yelp description:A more pythonic testing framework.
 github-yelp-service-principles | service-principles | https://github.com/Yelp/service-principles | author:yelp description:A guide to service principles at Yelp for our service oriented architecture
+github-yelp-Testify | Testify | https://github.com/Yelp/Testify | author:yelp description:A more pythonic testing framework.
+github-yelp-git-code-debt | git-code-debt | https://github.com/Yelp/git-code-debt | author:yelp description:A dashboard for monitoring code debt in a git repository.
 github-yelp-Tron | Tron | https://github.com/Yelp/Tron | author:yelp description:Next generation batch process scheduling and management
 github-yelp-docker-custodian | docker-custodian | https://github.com/Yelp/docker-custodian | author:yelp description:Keep docker hosts tidy
 github-yelp-firefly | firefly | https://github.com/Yelp/firefly | author:yelp description:Firefly is a web application aimed at powerful, flexible time series graphing for web developers.
-github-yelp-fullerite | fullerite | https://github.com/Yelp/fullerite | author:yelp description:Fullerite is a daemon which collect metrics periodically from various sources and sends them to different metric stores
-github-yelp-YLTableView | YLTableView | https://github.com/Yelp/YLTableView | author:yelp description:Updated Jun 17, 2016
 github-yelp-bravado | bravado | https://github.com/Yelp/bravado | author:yelp description:Bravado is a python client library for Swagger 2.0 services
+github-yelp-fullerite | fullerite | https://github.com/Yelp/fullerite | author:yelp description:Fullerite is a daemon which collect metrics periodically from various sources and sends them to different metric stores
 github-yelp-yelp.github.io | yelp.github.io | https://github.com/Yelp/yelp.github.io | author:yelp description:A showcase of projects we've open sourced and open source projects we use
+github-yelp-YLTableView | YLTableView | https://github.com/Yelp/YLTableView | author:yelp description:Updated Sep 14, 2016
 github-yelp-venv-update | venv-update | https://github.com/Yelp/venv-update | author:yelp description:Synchronize your virtualenv quickly and exactly.
 github-yelp-threat_intel | threat_intel | https://github.com/Yelp/threat_intel | author:yelp description:Threat Intelligence APIs
 github-yelp-yelp-ruby | yelp-ruby | https://github.com/Yelp/yelp-ruby | author:yelp description:A Ruby gem for communicating with the Yelp REST API
-github-yelp-kegmate | kegmate | https://github.com/Yelp/kegmate | author:yelp description:Arduino/iPad powered kegerator
-github-yelp-parcelgen | parcelgen | https://github.com/Yelp/parcelgen | author:yelp description:Helpful tool to make data objects easier for Android
 github-yelp-yelp-python | yelp-python | https://github.com/Yelp/yelp-python | author:yelp description:A Python library for the Yelp API
+github-yelp-parcelgen | parcelgen | https://github.com/Yelp/parcelgen | author:yelp description:Helpful tool to make data objects easier for Android
 github-yelp-ybinlogp | ybinlogp | https://github.com/Yelp/ybinlogp | author:yelp description:A fast mysql binlog parser
 github-yelp-sensu_handlers | sensu_handlers | https://github.com/Yelp/sensu_handlers | author:yelp description:Custom Sensu Handlers to support a multi-tenant environment, allowing checks themselves to emit the type of handler behavior they need in the event json
 github-yelp-mycroft | mycroft | https://github.com/Yelp/mycroft | author:yelp description:Updated May 7, 2015
+github-yelp-yelp-fusion | yelp-fusion | https://github.com/Yelp/yelp-fusion | author:yelp description:Yelp Fusion API
 github-yelp-zygote | zygote | https://github.com/Yelp/zygote | author:yelp description:A Python HTTP process management utility.
+github-yelp-bravado-core | bravado-core | https://github.com/Yelp/bravado-core | author:yelp description:Updated Oct 14, 2016
+github-yelp-amira | amira | https://github.com/Yelp/amira | author:yelp description:AMIRA: Automated Malware Incident Response & Analysis
 github-yelp-EMRio | EMRio | https://github.com/Yelp/EMRio | author:yelp description:Elastic MapReduce instance optimizer
-github-yelp-git-code-debt | git-code-debt | https://github.com/Yelp/git-code-debt | author:yelp description:A dashboard for monitoring code debt in a git repository.
-github-yelp-yelp-android | yelp-android | https://github.com/Yelp/yelp-android | author:yelp description:Updated May 27, 2016
-github-yelp-sqlite3dbm | sqlite3dbm | https://github.com/Yelp/sqlite3dbm | author:yelp description:sqlite-backed dictionary conforming to the dbm interface
-github-yelp-swagger_spec_validator | swagger_spec_validator | https://github.com/Yelp/swagger_spec_validator | author:yelp description:Updated Jul 7, 2016
-github-yelp-cocoapods-readonly | cocoapods-readonly | https://github.com/Yelp/cocoapods-readonly | author:yelp description:Automatically locks all CocoaPod source files.
+github-yelp-kafka-utils | kafka-utils | https://github.com/Yelp/kafka-utils | author:yelp description:Updated Oct 19, 2016
+github-yelp-yelp-android | yelp-android | https://github.com/Yelp/yelp-android | author:yelp description:Updated Sep 30, 2016
+github-yelp-swagger_spec_validator | swagger_spec_validator | https://github.com/Yelp/swagger_spec_validator | author:yelp description:Updated Oct 10, 2016
 github-yelp-WebImageView | WebImageView | https://github.com/Yelp/WebImageView | author:yelp description:An enhanced and improved ImageView for Android that displays images loaded over the interwebs
-github-yelp-PushmasterApp | PushmasterApp | https://github.com/Yelp/PushmasterApp | author:yelp description:(Legacy) Yelp pushmaster application built on Google App Engine
-github-yelp-s3mysqldump | s3mysqldump | https://github.com/Yelp/s3mysqldump | author:yelp description:Dump mysql tables to s3, and parse them
-github-yelp-tlspretense-service | tlspretense-service | https://github.com/Yelp/tlspretense-service | author:yelp description:A Docker container that exposes tlspretense on a port.
-github-yelp-bravado-core | bravado-core | https://github.com/Yelp/bravado-core | author:yelp description:Updated Jun 28, 2016
+github-yelp-cocoapods-readonly | cocoapods-readonly | https://github.com/Yelp/cocoapods-readonly | author:yelp description:Automatically locks all CocoaPod source files.
 github-yelp-uwsgi_metrics | uwsgi_metrics | https://github.com/Yelp/uwsgi_metrics | author:yelp description:Updated Dec 3, 2015
-github-yelp-puppet-uchiwa | puppet-uchiwa | https://github.com/Yelp/puppet-uchiwa | author:yelp description:Puppet module for installing Uchiwa
-github-yelp-kafka-utils | kafka-utils | https://github.com/Yelp/kafka-utils | author:yelp description:Updated Jul 15, 2016
-github-yelp-mr3po | mr3po | https://github.com/Yelp/mr3po | author:yelp description:protocols for use with mrjob
-github-yelp-puppet-monitoring_check | puppet-monitoring_check | https://github.com/Yelp/puppet-monitoring_check | author:yelp description:A Puppet module to create Sensu checks that use the Yelp Sensu Handlers for a multi-tenant environment
 github-yelp-pyramid_zipkin | pyramid_zipkin | https://github.com/Yelp/pyramid_zipkin | author:yelp description:Pyramid tween to add Zipkin service spans
-github-yelp-send_nsca | send_nsca | https://github.com/Yelp/send_nsca | author:yelp description:Pure-python NSCA client
-github-yelp-YPFastDateParser | YPFastDateParser | https://github.com/Yelp/YPFastDateParser | author:yelp description:A class for parsing strings into NSDate instances, several times faster than NSDateFormatter
-github-yelp-puppet-netstdlib | puppet-netstdlib | https://github.com/Yelp/puppet-netstdlib | author:yelp description:A collection of Puppet functions for interacting with the network
-github-yelp-yelp-rails-example | yelp-rails-example | https://github.com/Yelp/yelp-rails-example | author:yelp description:An example Rails application that uses the Yelp gem to integrate with the API
-github-yelp-pgctl | pgctl | https://github.com/Yelp/pgctl | author:yelp description:Manage sets of developer services -- "playground control"
-github-yelp-docker-observium | docker-observium | https://github.com/Yelp/docker-observium | author:yelp description:Observium docker image with both professional and community edition support, ldap auth, and easy plugin support.
-github-yelp-terraform-provider-gitfile | terraform-provider-gitfile | https://github.com/Yelp/terraform-provider-gitfile | author:yelp description:Terraform provider for checking out git repositories and making changes
-github-yelp-yelp_cheetah | yelp_cheetah | https://github.com/Yelp/yelp_cheetah | author:yelp description:cheetah, hacked by yelpers
+github-yelp-tlspretense-service | tlspretense-service | https://github.com/Yelp/tlspretense-service | author:yelp description:A Docker container that exposes tlspretense on a port.
+github-yelp-s3mysqldump | s3mysqldump | https://github.com/Yelp/s3mysqldump | author:yelp description:Dump mysql tables to s3, and parse them
+github-yelp-puppet-uchiwa | puppet-uchiwa | https://github.com/Yelp/puppet-uchiwa | author:yelp description:Puppet module for installing Uchiwa
 github-yelp-osxcollector_output_filters | osxcollector_output_filters | https://github.com/Yelp/osxcollector_output_filters | author:yelp description:Filters that process and transform the output of osxcollector
-github-yelp-pysensu-yelp | pysensu-yelp | https://github.com/Yelp/pysensu-yelp | author:yelp description:A Python library to emit Sensu events that the Yelp Sensu Handlers can understand for Self-Service Sensu Monitoring
-github-yelp-doloop | doloop | https://github.com/Yelp/doloop | author:yelp description:Task loop for keeping things updated
-github-yelp-ffmpeg-android | ffmpeg-android | https://github.com/Yelp/ffmpeg-android | author:yelp description:Updated Jun 15, 2015
-github-yelp-yelp_uri | yelp_uri | https://github.com/Yelp/yelp_uri | author:yelp description:Utilities for dealing with URIs, invented and maintained by Yelp.
-github-yelp-pygear | pygear | https://github.com/Yelp/pygear | author:yelp description:Updated Feb 21, 2016
-github-yelp-fido | fido | https://github.com/Yelp/fido | author:yelp description:Asynchronous HTTP client built on top of Crochet and Twisted
+github-yelp-terraform-provider-gitfile | terraform-provider-gitfile | https://github.com/Yelp/terraform-provider-gitfile | author:yelp description:Terraform provider for checking out git repositories and making changes
+github-yelp-mr3po | mr3po | https://github.com/Yelp/mr3po | author:yelp description:protocols for use with mrjob
+github-yelp-puppet-netstdlib | puppet-netstdlib | https://github.com/Yelp/puppet-netstdlib | author:yelp description:A collection of Puppet functions for interacting with the network
+github-yelp-puppet-monitoring_check | puppet-monitoring_check | https://github.com/Yelp/puppet-monitoring_check | author:yelp description:A Puppet module to create Sensu checks that use the Yelp Sensu Handlers for a multi-tenant environment
+github-yelp-docker-observium | docker-observium | https://github.com/Yelp/docker-observium | author:yelp description:Observium docker image with both professional and community edition support, ldap auth, and easy plugin support.
+github-yelp-send_nsca | send_nsca | https://github.com/Yelp/send_nsca | author:yelp description:Pure-python NSCA client
+github-yelp-pgctl | pgctl | https://github.com/Yelp/pgctl | author:yelp description:Manage sets of developer services -- "playground control"
+github-yelp-ffmpeg-android | ffmpeg-android | https://github.com/Yelp/ffmpeg-android | author:yelp description:Updated Sep 6, 2016
+github-yelp-py_zipkin | py_zipkin | https://github.com/Yelp/py_zipkin | author:yelp description:Provides utilities to facilitate the usage of Zipkin in Python
+github-yelp-yelp-rails-example | yelp-rails-example | https://github.com/Yelp/yelp-rails-example | author:yelp description:An example Rails application that uses the Yelp gem to integrate with the API
+github-yelp-yelp_cheetah | yelp_cheetah | https://github.com/Yelp/yelp_cheetah | author:yelp description:cheetah, hacked by yelpers
 github-yelp-hacheck | hacheck | https://github.com/Yelp/hacheck | author:yelp description:HAproxy healthcheck proxying service
+github-yelp-yelp-ios | yelp-ios | https://github.com/Yelp/yelp-ios | author:yelp description:Updated Oct 18, 2016
+github-yelp-doloop | doloop | https://github.com/Yelp/doloop | author:yelp description:Task loop for keeping things updated
+github-yelp-yelp_uri | yelp_uri | https://github.com/Yelp/yelp_uri | author:yelp description:Utilities for dealing with URIs, invented and maintained by Yelp.
+github-yelp-fido | fido | https://github.com/Yelp/fido | author:yelp description:Asynchronous HTTP client built on top of Crochet and Twisted
+github-yelp-android-school | android-school | https://github.com/Yelp/android-school | author:yelp description:The best videos from the Android community and beyond
+github-yelp-pygear | pygear | https://github.com/Yelp/pygear | author:yelp description:Updated Feb 21, 2016
+github-yelp-pysensu-yelp | pysensu-yelp | https://github.com/Yelp/pysensu-yelp | author:yelp description:A Python library to emit Sensu events that the Yelp Sensu Handlers can understand for Self-Service Sensu Monitoring
 github-yelp-puppet-cron | puppet-cron | https://github.com/Yelp/puppet-cron | author:yelp description:A super great cron Puppet module with timeouts, locking, monitoring, and more!
-github-yelp-ezio | ezio | https://github.com/Yelp/ezio | author:yelp description:Experimental Python template compiler targeting C++
-github-yelp-yelp-ios | yelp-ios | https://github.com/Yelp/yelp-ios | author:yelp description:Updated Jul 8, 2016
-github-yelp-thehub | thehub | https://github.com/Yelp/thehub | author:yelp description:A utility for decoupling JS components
+github-yelp-named_decorator | named_decorator | https://github.com/Yelp/named_decorator | author:yelp description:Dynamically name wrappers based on their callees to untangle profiles of large python codebases
+github-yelp-pyswf | pyswf | https://github.com/Yelp/pyswf | author:yelp description:Updated Oct 18, 2016
 github-yelp-yelp_encodings | yelp_encodings | https://github.com/Yelp/yelp_encodings | author:yelp description:string encodings invented and maintained by yelp
 github-yelp-dateglob | dateglob | https://github.com/Yelp/dateglob | author:yelp description:generate compact representations of sets of dates
-github-yelp-SWFUpload | SWFUpload | https://github.com/Yelp/SWFUpload | author:yelp description:Fork of quiescent SWFUpload project from http://code.google.com/p/swfupload/
-github-yelp-pt-online-schema-change-plugins | pt-online-schema-change-plugins | https://github.com/Yelp/pt-online-schema-change-plugins | author:yelp description:Updated Jun 10, 2016
-github-yelp-android-school | android-school | https://github.com/Yelp/android-school | author:yelp description:The best videos from the Android community and beyond
-github-yelp-terraform-ami_fromhttp | terraform-ami_fromhttp | https://github.com/Yelp/terraform-ami_fromhttp | author:yelp description:Updated Apr 24, 2015
-github-yelp-occam | occam | https://github.com/Yelp/occam | author:yelp description:A web front-end for the Razor imaging and provisioning server
-github-yelp-yelp_bytes | yelp_bytes | https://github.com/Yelp/yelp_bytes | author:yelp description:Utilities for dealing with byte strings, invented and maintained by Yelp.
-github-yelp-yelp_clog | yelp_clog | https://github.com/Yelp/yelp_clog | author:yelp description:Updated Jun 22, 2016
-github-yelp-swagger_zipkin | swagger_zipkin | https://github.com/Yelp/swagger_zipkin | author:yelp description:Swagger client decorator to integrate with zipkin
-github-yelp-puppet-kafka | puppet-kafka | https://github.com/Yelp/puppet-kafka | author:yelp description:A puppet module for Kafka
-github-yelp-CocoaPodsBundlerSampleProject | CocoaPodsBundlerSampleProject | https://github.com/Yelp/CocoaPodsBundlerSampleProject | author:yelp description:Sample project for managing CocoaPods version with Bundler
-github-yelp-ephemeral-port-reserve | ephemeral-port-reserve | https://github.com/Yelp/ephemeral-port-reserve | author:yelp description:Find an unused port, reliably
-github-yelp-environment_tools | environment_tools | https://github.com/Yelp/environment_tools | author:yelp description:Updated Dec 4, 2015
-github-yelp-puppet-paasta | puppet-paasta | https://github.com/Yelp/puppet-paasta | author:yelp description:A Puppet module for installing and configuring Paasta
 github-yelp-aactivator | aactivator | https://github.com/Yelp/aactivator | author:yelp description:Automatically source and unsource a project's environment
+github-yelp-terraform-ami_fromhttp | terraform-ami_fromhttp | https://github.com/Yelp/terraform-ami_fromhttp | author:yelp description:Updated Apr 24, 2015
+github-yelp-pt-online-schema-change-plugins | pt-online-schema-change-plugins | https://github.com/Yelp/pt-online-schema-change-plugins | author:yelp description:Updated Jun 9, 2016
+github-yelp-ephemeral-port-reserve | ephemeral-port-reserve | https://github.com/Yelp/ephemeral-port-reserve | author:yelp description:Find an unused port, reliably
+github-yelp-synapse-tools | synapse-tools | https://github.com/Yelp/synapse-tools | author:yelp description:Tools for configuring synapse and reloading haproxy hitlessly
+github-yelp-swagger_zipkin | swagger_zipkin | https://github.com/Yelp/swagger_zipkin | author:yelp description:Swagger client decorator to integrate with zipkin
 github-yelp-golang-scribe | golang-scribe | https://github.com/Yelp/golang-scribe | author:yelp description:Go library to interface with Scribe
-github-yelp-synapse-tools | synapse-tools | https://github.com/Yelp/synapse-tools | author:yelp description:Updated May 18, 2016
-github-yelp-nerve-tools | nerve-tools | https://github.com/Yelp/nerve-tools | author:yelp description:Updated Jul 11, 2016
-github-yelp-service_configuration_lib | service_configuration_lib | https://github.com/Yelp/service_configuration_lib | author:yelp description:Updated Jun 8, 2016
+github-yelp-yelp_bytes | yelp_bytes | https://github.com/Yelp/yelp_bytes | author:yelp description:Utilities for dealing with byte strings, invented and maintained by Yelp.
+github-yelp-twisted_s3 | twisted_s3 | https://github.com/Yelp/twisted_s3 | author:yelp description:Asynchronous Python HTTP client for interacting with Amazon S3
+github-yelp-puppet-kafka | puppet-kafka | https://github.com/Yelp/puppet-kafka | author:yelp description:A puppet module for Kafka
+github-yelp-yelp_clog | yelp_clog | https://github.com/Yelp/yelp_clog | author:yelp description:Updated Sep 30, 2016
+github-yelp-CocoaPodsBundlerSampleProject | CocoaPodsBundlerSampleProject | https://github.com/Yelp/CocoaPodsBundlerSampleProject | author:yelp description:Sample project for managing CocoaPods version with Bundler
+github-yelp-puppet-paasta | puppet-paasta | https://github.com/Yelp/puppet-paasta | author:yelp description:A Puppet module for installing and configuring Paasta
+github-yelp-environment_tools | environment_tools | https://github.com/Yelp/environment_tools | author:yelp description:Tools for programmatically describing Yelp's different environments (prod, dev, stage)
+github-yelp-nerve-tools | nerve-tools | https://github.com/Yelp/nerve-tools | author:yelp description:Tools for configuring SmartStack's Nerve based on local sources
+github-yelp-puppet-vault | puppet-vault | https://github.com/Yelp/puppet-vault | author:yelp description:Updated Sep 9, 2016
+github-yelp-homebrew-paasta | homebrew-paasta | https://github.com/Yelp/homebrew-paasta | author:yelp description:Homebrew formula for installing Paasta
+github-yelp-service_configuration_lib | service_configuration_lib | https://github.com/Yelp/service_configuration_lib | author:yelp description:Updated Sep 26, 2016

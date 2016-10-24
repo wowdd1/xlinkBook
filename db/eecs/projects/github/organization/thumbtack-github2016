@@ -1,15 +1,16 @@
-github-thumbtack-233-1 | angular-smarty | https://github.com/thumbtack/angular-smarty | author:thumbtack description:Autocomplete UI written with Angular JS.
-github-thumbtack-166-2 | abba | https://github.com/thumbtack/abba | author:thumbtack description:Javascript and Python libraries for A/B test analysis
-github-thumbtack-33-3 | rotarymaps | https://github.com/thumbtack/rotarymaps | author:thumbtack description:Rotary Maps
-github-thumbtack-8-4 | crankshaft | https://github.com/thumbtack/crankshaft | author:thumbtack description:PHP version of Python's itertools
-github-thumbtack-6-5 | angular-scrollery | https://github.com/thumbtack/angular-scrollery | author:thumbtack description:Scroll-based animation framework for AngularJS.
-github-thumbtack-3-6 | ttinjector | https://github.com/thumbtack/ttinjector | author:thumbtack description:Updated Mar 16, 2016
-github-thumbtack-2-7 | jafar | https://github.com/thumbtack/jafar | author:thumbtack description:Behavior-driven testing for PHP (like Jasmine)
-github-thumbtack-2-8 | maxwells-daemon | https://github.com/thumbtack/maxwells-daemon | author:thumbtack description:Daemon for arbitrating traffic to different versions of an application
-github-thumbtack-1-9 | datadog-petshop | https://github.com/thumbtack/datadog-petshop | author:thumbtack description:Synchronize data between Datadog and the local system
-github-thumbtack-1-10 | pgdoctor | https://github.com/thumbtack/pgdoctor | author:thumbtack description:Simple, lightweight web service to perform health checks on PostgreSQL instances
-github-thumbtack-1-11 | docker-registry | https://github.com/thumbtack/docker-registry | author:thumbtack description:A docker registry image that will use local storage
-github-thumbtack-0-12 | programming-languages-club | https://github.com/thumbtack/programming-languages-club | author:thumbtack description:Solutions to puzzles solved for programming languages club
-github-thumbtack-0-13 | querycache | https://github.com/thumbtack/querycache | author:thumbtack description:A simple query caching layer built around PDO
-github-thumbtack-0-14 | TTKeyboardphobia | https://github.com/thumbtack/TTKeyboardphobia | author:thumbtack description:Updated Aug 3, 2015
-github-thumbtack-0-15 | TTImageViewer | https://github.com/thumbtack/TTImageViewer | author:thumbtack description:Updated Aug 10, 2014
+github-thumbtack-angular-smarty | angular-smarty | https://github.com/thumbtack/angular-smarty | author:thumbtack description:Autocomplete UI written with Angular JS.
+github-thumbtack-abba | abba | https://github.com/thumbtack/abba | author:thumbtack description:Javascript and Python libraries for A/B test analysis
+github-thumbtack-rotarymaps | rotarymaps | https://github.com/thumbtack/rotarymaps | author:thumbtack description:Rotary Maps
+github-thumbtack-crankshaft | crankshaft | https://github.com/thumbtack/crankshaft | author:thumbtack description:PHP version of Python's itertools
+github-thumbtack-angular-scrollery | angular-scrollery | https://github.com/thumbtack/angular-scrollery | author:thumbtack description:Scroll-based animation framework for AngularJS.
+github-thumbtack-maxwells-daemon | maxwells-daemon | https://github.com/thumbtack/maxwells-daemon | author:thumbtack description:Daemon for arbitrating traffic to different versions of an application
+github-thumbtack-ttinjector | ttinjector | https://github.com/thumbtack/ttinjector | author:thumbtack description:Updated Mar 16, 2016
+github-thumbtack-jafar | jafar | https://github.com/thumbtack/jafar | author:thumbtack description:Behavior-driven testing for PHP (like Jasmine)
+github-thumbtack-docker-registry | docker-registry | https://github.com/thumbtack/docker-registry | author:thumbtack description:A docker registry image that will use local storage
+github-thumbtack-datadog-petshop | datadog-petshop | https://github.com/thumbtack/datadog-petshop | author:thumbtack description:Synchronize data between Datadog and the local system
+github-thumbtack-pgdoctor | pgdoctor | https://github.com/thumbtack/pgdoctor | author:thumbtack description:Simple, lightweight web service to perform health checks on PostgreSQL instances
+github-thumbtack-programming-languages-club | programming-languages-club | https://github.com/thumbtack/programming-languages-club | author:thumbtack description:Solutions to puzzles solved for programming languages club
+github-thumbtack-thrift-demo | thrift-demo | https://github.com/thumbtack/thrift-demo | author:thumbtack description:Updated Sep 9, 2016
+github-thumbtack-querycache | querycache | https://github.com/thumbtack/querycache | author:thumbtack description:A simple query caching layer built around PDO
+github-thumbtack-TTKeyboardphobia | TTKeyboardphobia | https://github.com/thumbtack/TTKeyboardphobia | author:thumbtack description:Updated Aug 3, 2015
+github-thumbtack-TTImageViewer | TTImageViewer | https://github.com/thumbtack/TTImageViewer | author:thumbtack description:Updated Aug 10, 2014

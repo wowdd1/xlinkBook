@@ -1,6 +1,5 @@
-github-wework-3-1 | weboto | https://github.com/wework/weboto | author:wework description:Domo arigato, Mr. Weboto!
-github-wework-3-2 | we-learn-react | https://github.com/wework/we-learn-react | author:wework description:Updated Nov 5, 2015
-github-wework-3-3 | wework.github.io | https://github.com/wework/wework.github.io | author:wework description:WeWork Engineering Blog
-github-wework-1-4 | skynet | https://github.com/wework/skynet | author:wework description:Updated Apr 28, 2016
-github-wework-1-5 | cordova-plugin-inappbrowser | https://github.com/wework/cordova-plugin-inappbrowser | author:wework description:Clone of the official ordova-plugin-inappbrowser project with custom changes
-github-wework-0-6 | we-interview | https://github.com/wework/we-interview | author:wework description:Starter project for WeWork Digital technical interviews
+github-wework-express-universal-query-validator | express-universal-query-validator | https://github.com/wework/express-universal-query-validator | author:wework description:Express middleware to provide consistently parseable query parameters to universal applications.
+github-wework-wework.github.io | wework.github.io | https://github.com/wework/wework.github.io | author:wework description:[DEPRECATED] WeWork Engineering Blog
+github-wework-we-learn-react | we-learn-react | https://github.com/wework/we-learn-react | author:wework description:Updated Nov 5, 2015
+github-wework-we-js-logger | we-js-logger | https://github.com/wework/we-js-logger | author:wework description:Univeral logger with transports to Rollbar and Logentries. Uses bunyan under the hood.
+github-wework-we-interview | we-interview | https://github.com/wework/we-interview | author:wework description:Starter project for WeWork Digital technical interviews

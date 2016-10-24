@@ -1,15 +1,16 @@
-github-pluralsight-1223-1 | git-internals-pdf | https://github.com/pluralsight/git-internals-pdf | author:pluralsight description:PDF on Git Internals
-github-pluralsight-400-2 | PSOperations | https://github.com/pluralsight/PSOperations | author:pluralsight description:A framework for advanced NSOperations usage
-github-pluralsight-151-3 | guides | https://github.com/pluralsight/guides | author:pluralsight description:Article back-end for Hacker Guides website
-github-pluralsight-133-4 | react-styleable | https://github.com/pluralsight/react-styleable | author:pluralsight description:React Component for portable styles
-github-pluralsight-73-5 | guides-cms | https://github.com/pluralsight/guides-cms | author:pluralsight description:Markdown based CMS with Github repository as persistent storage
-github-pluralsight-23-6 | redux-react-connector | https://github.com/pluralsight/redux-react-connector | author:pluralsight description:Convenient subscription to redux stores
-github-pluralsight-20-7 | pluralsight-author-contrib | https://github.com/pluralsight/pluralsight-author-contrib | author:pluralsight description:Pluralsight author related materials
-github-pluralsight-4-8 | FocusableView | https://github.com/pluralsight/FocusableView | author:pluralsight description:Updated Mar 25, 2016
-github-pluralsight-2-9 | git-switch | https://github.com/pluralsight/git-switch | author:pluralsight description:This is a Windows utility that allows multiple users to share a pairing station while using their own creds for commits.
-github-pluralsight-1-10 | Bless.Net | https://github.com/pluralsight/Bless.Net | author:pluralsight description:Updated Nov 30, 2015
-github-pluralsight-1-11 | HHPS-Partner-Tutorials | https://github.com/pluralsight/HHPS-Partner-Tutorials | author:pluralsight description:Private articles repo
-github-pluralsight-0-12 | lanyard | https://github.com/pluralsight/lanyard | author:pluralsight description:Updated Feb 12, 2014
-github-pluralsight-0-13 | plug | https://github.com/pluralsight/plug | author:pluralsight description:Updated Aug 22, 2012
-github-pluralsight-0-14 | pluralsight-wordpress-widget | https://github.com/pluralsight/pluralsight-wordpress-widget | author:pluralsight description:Wordpress plugin
-github-pluralsight-0-15 | mob-timer | https://github.com/pluralsight/mob-timer | author:pluralsight description:Updated May 18, 2016
+github-pluralsight-git-internals-pdf | git-internals-pdf | https://github.com/pluralsight/git-internals-pdf | author:pluralsight description:PDF on Git Internals
+github-pluralsight-PSOperations | PSOperations | https://github.com/pluralsight/PSOperations | author:pluralsight description:A framework for advanced NSOperations usage
+github-pluralsight-guides | guides | https://github.com/pluralsight/guides | author:pluralsight description:Article back-end for hack.guides() website
+github-pluralsight-react-styleable | react-styleable | https://github.com/pluralsight/react-styleable | author:pluralsight description:React Component for portable styles
+github-pluralsight-guides-cms | guides-cms | https://github.com/pluralsight/guides-cms | author:pluralsight description:Markdown based CMS with Github repository as persistent storage
+github-pluralsight-pluralsight-author-contrib | pluralsight-author-contrib | https://github.com/pluralsight/pluralsight-author-contrib | author:pluralsight description:Pluralsight author related materials
+github-pluralsight-redux-react-connector | redux-react-connector | https://github.com/pluralsight/redux-react-connector | author:pluralsight description:Convenient subscription to redux stores
+github-pluralsight-FocusableView | FocusableView | https://github.com/pluralsight/FocusableView | author:pluralsight description:Updated Mar 25, 2016
+github-pluralsight-mob-timer | mob-timer | https://github.com/pluralsight/mob-timer | author:pluralsight description:A mob programming application
+github-pluralsight-git-switch | git-switch | https://github.com/pluralsight/git-switch | author:pluralsight description:This is a Windows utility that allows multiple users to share a pairing station while using their own creds for commits.
+github-pluralsight-HHPS-Partner-Tutorials | HHPS-Partner-Tutorials | https://github.com/pluralsight/HHPS-Partner-Tutorials | author:pluralsight description:Private articles repo
+github-pluralsight-Bless.Net | Bless.Net | https://github.com/pluralsight/Bless.Net | author:pluralsight description:Updated Nov 30, 2015
+github-pluralsight-ps-wait | ps-wait | https://github.com/pluralsight/ps-wait | author:pluralsight description:Wait for a condition to be met
+github-pluralsight-pluralsight-wordpress-widget | pluralsight-wordpress-widget | https://github.com/pluralsight/pluralsight-wordpress-widget | author:pluralsight description:Wordpress plugin
+github-pluralsight-lanyard | lanyard | https://github.com/pluralsight/lanyard | author:pluralsight description:Updated Feb 12, 2014
+github-pluralsight-plug | plug | https://github.com/pluralsight/plug | author:pluralsight description:Updated Aug 23, 2012

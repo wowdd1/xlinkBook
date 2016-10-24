@@ -1,4 +1,5 @@
-github-fanduel-23-1 | hiera-cloudformation | https://github.com/fanduel/hiera-cloudformation | author:fanduel description:AWS CloudFormation backend for Hiera
-github-fanduel-2-2 | ex_vmstats | https://github.com/fanduel/ex_vmstats | author:fanduel description:An Elixir package for pushing Erlang VM stats into StatsD
-github-fanduel-2-3 | ng-cookies | https://github.com/fanduel/ng-cookies | author:fanduel description:Simple cookie service for AngularJS
-github-fanduel-1-4 | optimus-css | https://github.com/fanduel/optimus-css | author:fanduel description:Inline CSS image references as base64 data-URIs
+github-fanduel-hiera-cloudformation | hiera-cloudformation | https://github.com/fanduel/hiera-cloudformation | author:fanduel description:AWS CloudFormation backend for Hiera
+github-fanduel-ex_vmstats | ex_vmstats | https://github.com/fanduel/ex_vmstats | author:fanduel description:An Elixir package for pushing Erlang VM stats into StatsD
+github-fanduel-jsonrpc2-elixir | jsonrpc2-elixir | https://github.com/fanduel/jsonrpc2-elixir | author:fanduel description:JSON-RPC 2.0 for Elixir
+github-fanduel-ng-cookies | ng-cookies | https://github.com/fanduel/ng-cookies | author:fanduel description:Simple cookie service for AngularJS
+github-fanduel-optimus-css | optimus-css | https://github.com/fanduel/optimus-css | author:fanduel description:Inline CSS image references as base64 data-URIs

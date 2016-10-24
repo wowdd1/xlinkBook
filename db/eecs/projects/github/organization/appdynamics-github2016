@@ -1,227 +1,250 @@
-github-appdynamics-27-1 | ECommerce-Android | https://github.com/Appdynamics/ECommerce-Android | author:appdynamics description:E-Commerce example for Android (Gradle build with Robotium)
-github-appdynamics-14-2 | appdynamics-cookbooks | https://github.com/Appdynamics/appdynamics-cookbooks | author:appdynamics description:Updated Jan 29, 2016
-github-appdynamics-12-3 | cassandra-monitoring-extension | https://github.com/Appdynamics/cassandra-monitoring-extension | author:appdynamics description:AppDynamics Cassandra Monitoring Extension
-github-appdynamics-11-4 | ECommerce-iOS | https://github.com/Appdynamics/ECommerce-iOS | author:appdynamics description:Ecommerce Example For iOS
-github-appdynamics-9-5 | hadoop-monitoring-extension | https://github.com/Appdynamics/hadoop-monitoring-extension | author:appdynamics description:AppDynamics Apache Hadoop Monitoring Extention
-github-appdynamics-7-6 | ECommerce-Docker | https://github.com/Appdynamics/ECommerce-Docker | author:appdynamics description:Dockerfiles and scripts for ECommerce demo
-github-appdynamics-7-7 | redis-monitoring-extension | https://github.com/Appdynamics/redis-monitoring-extension | author:appdynamics description:redis-monitoring-extension
-github-appdynamics-7-8 | appdynamics-platform-docker | https://github.com/Appdynamics/appdynamics-platform-docker | author:appdynamics description:Docker containers for installing and running the AppDynamics Controller with EUM Server and Analytics support.
-github-appdynamics-6-9 | java-sdk | https://github.com/Appdynamics/java-sdk | author:appdynamics description:AppDynamics Java SDK
-github-appdynamics-6-10 | zookeeper-monitoring-extension | https://github.com/Appdynamics/zookeeper-monitoring-extension | author:appdynamics description:Zookeeper Monitoring Extension for AppDynamics
-github-appdynamics-5-11 | rabbitmq-monitoring-extension | https://github.com/Appdynamics/rabbitmq-monitoring-extension | author:appdynamics description:activemq
-github-appdynamics-4-12 | nodetime-demo | https://github.com/Appdynamics/nodetime-demo | author:appdynamics description:Nodetime Demo Application
-github-appdynamics-4-13 | ECommerce-Java | https://github.com/Appdynamics/ECommerce-Java | author:appdynamics description:Java components for ECommerce demo
-github-appdynamics-4-14 | ansible-php | https://github.com/Appdynamics/ansible-php | author:appdynamics description:Helper library for Ansible modules written in PHP
-github-appdynamics-4-15 | websphere-mq-monitoring-extension | https://github.com/Appdynamics/websphere-mq-monitoring-extension | author:appdynamics description:AppDynamics WebSphere MQ Monitoring Extension
-github-appdynamics-4-16 | openshift-appdynamics-jboss-cartridge | https://github.com/Appdynamics/openshift-appdynamics-jboss-cartridge | author:appdynamics description:Red Hat Openshift cartridge for Java AppServers
-github-appdynamics-4-17 | linux-monitoring-extension | https://github.com/Appdynamics/linux-monitoring-extension | author:appdynamics description:Linux System Monitoring Extension
-github-appdynamics-4-18 | Python-Demo-App | https://github.com/Appdynamics/Python-Demo-App | author:appdynamics description:Python Demo App
-github-appdynamics-4-19 | AppDRESTAPI-SDK | https://github.com/Appdynamics/AppDRESTAPI-SDK | author:appdynamics description:Updated May 8, 2016
-github-appdynamics-3-20 | process-monitoring-extension | https://github.com/Appdynamics/process-monitoring-extension | author:appdynamics description:AppDynamics Process Monitoring Extension
-github-appdynamics-3-21 | AppDLicenseCount | https://github.com/Appdynamics/AppDLicenseCount | author:appdynamics description:This will count the licenses
-github-appdynamics-3-22 | varnish-monitoring-extension | https://github.com/Appdynamics/varnish-monitoring-extension | author:appdynamics description:Updated Apr 20, 2016
-github-appdynamics-3-23 | apache-monitoring-extension | https://github.com/Appdynamics/apache-monitoring-extension | author:appdynamics description:AppDynamics Apache Monitoring Extension
-github-appdynamics-3-24 | tomcat-monitoring-extension | https://github.com/Appdynamics/tomcat-monitoring-extension | author:appdynamics description:AppDynamics Tomcat Monitoring Extension
-github-appdynamics-3-25 | oracle-monitoring-extension | https://github.com/Appdynamics/oracle-monitoring-extension | author:appdynamics description:AppDynamics Oracle Monitoring Extension
-github-appdynamics-3-26 | python-webappman | https://github.com/Appdynamics/python-webappman | author:appdynamics description:For management of Drupal and WordPress sites with Python.
-github-appdynamics-3-27 | tuxedo-monitoring-extension | https://github.com/Appdynamics/tuxedo-monitoring-extension | author:appdynamics description:Updated Aug 13, 2014
-github-appdynamics-3-28 | solr-monitoring-extension | https://github.com/Appdynamics/solr-monitoring-extension | author:appdynamics description:AppDynamics Solr Monitoring Extension
-github-appdynamics-3-29 | nodetrace | https://github.com/Appdynamics/nodetrace | author:appdynamics description:API-level DTrace provider for Node.js
-github-appdynamics-3-30 | aws-cloudwatch-monitoring-extension | https://github.com/Appdynamics/aws-cloudwatch-monitoring-extension | author:appdynamics description:AppDynamics AWS CloudWatch Monitoring Extension
-github-appdynamics-3-31 | ECommerce-Angular | https://github.com/Appdynamics/ECommerce-Angular | author:appdynamics description:ECommerce web in Angular js client
-github-appdynamics-3-32 | pingdom-monitoring-extension | https://github.com/Appdynamics/pingdom-monitoring-extension | author:appdynamics description:AppDynamics Pingdom Monitoring Extension
-github-appdynamics-2-33 | haproxy-monitoring-extension | https://github.com/Appdynamics/haproxy-monitoring-extension | author:appdynamics description:AppDynamics HAProxy Monitoring Extension
-github-appdynamics-2-34 | ECommerce-Load | https://github.com/Appdynamics/ECommerce-Load | author:appdynamics description:Load gen component for ECommerce demo
-github-appdynamics-2-35 | postgresql-monitoring-extension | https://github.com/Appdynamics/postgresql-monitoring-extension | author:appdynamics description:AppDynamics Postgresql Monitoring Extension
-github-appdynamics-2-36 | mezzanine-smartling | https://github.com/Appdynamics/mezzanine-smartling | author:appdynamics description:Updated Oct 9, 2015
-github-appdynamics-2-37 | nginx-monitoring-extension | https://github.com/Appdynamics/nginx-monitoring-extension | author:appdynamics description:AppDynamics Nginx Monitoring Extension
-github-appdynamics-2-38 | log-monitoring-extension | https://github.com/Appdynamics/log-monitoring-extension | author:appdynamics description:Monitors log file and counts the no of occurrences of the search terms provided
-github-appdynamics-2-39 | activemq-monitoring-extension | https://github.com/Appdynamics/activemq-monitoring-extension | author:appdynamics description:AppDynamics ActiveMQ Monitoring Extension
-github-appdynamics-2-40 | azure-monitoring-extension | https://github.com/Appdynamics/azure-monitoring-extension | author:appdynamics description:Updated Feb 27, 2015
-github-appdynamics-1-41 | django-base-project | https://github.com/Appdynamics/django-base-project | author:appdynamics description:This is a base django project that comes with everything you need to get started on fun, innovative stuff.
-github-appdynamics-1-42 | Selenium-Docker | https://github.com/Appdynamics/Selenium-Docker | author:appdynamics description:Repo to house Selenium Code and Docker builds
-github-appdynamics-1-43 | dropwizard-sample-app | https://github.com/Appdynamics/dropwizard-sample-app | author:appdynamics description:DropWizard Sample App
-github-appdynamics-1-44 | cloud-foundry-extension | https://github.com/Appdynamics/cloud-foundry-extension | author:appdynamics description:Cloud Foundry Pivotal Extension
-github-appdynamics-1-45 | ECommerce-Mobile-Load | https://github.com/Appdynamics/ECommerce-Mobile-Load | author:appdynamics description:Node.js script to generate mobile load on ECommerce
-github-appdynamics-1-46 | AppDUtilReports | https://github.com/Appdynamics/AppDUtilReports | author:appdynamics description:This is going to be a project that will provide utilities to get information from AppDynamics. Depends on two other projects.
-github-appdynamics-1-47 | coherence-monitoring-extension | https://github.com/Appdynamics/coherence-monitoring-extension | author:appdynamics description:An AppDynamics monitoring extension for monitoring Oracle's Coherence solution
-github-appdynamics-1-48 | verizon-cloud-connector-extension | https://github.com/Appdynamics/verizon-cloud-connector-extension | author:appdynamics description:Verizon Cloud Connector Extension
-github-appdynamics-1-49 | vertica-monitoring-extension | https://github.com/Appdynamics/vertica-monitoring-extension | author:appdynamics description:Vertica DB Monitoring Extension
-github-appdynamics-1-50 | Field-lab-correlation | https://github.com/Appdynamics/Field-lab-correlation | author:appdynamics description:Lab exercise for custom correlation.
-github-appdynamics-1-51 | voltdb-monitoring-extension | https://github.com/Appdynamics/voltdb-monitoring-extension | author:appdynamics description:VoltDB Monitoring Extension
-github-appdynamics-1-52 | ECommerce-PartnerPortal | https://github.com/Appdynamics/ECommerce-PartnerPortal | author:appdynamics description:Python, PHP and node.js projects for ECommerce Partner Portal demo apps
-github-appdynamics-1-53 | aws-connector-extension | https://github.com/Appdynamics/aws-connector-extension | author:appdynamics description:AppDynamics Amazon Web Services Elastic Compute Cloud (EC2) Connector Extension
-github-appdynamics-1-54 | ECommerce-Mobile-Tests | https://github.com/Appdynamics/ECommerce-Mobile-Tests | author:appdynamics description:Android and iOS Test Clients for the ECommerce demo
-github-appdynamics-1-55 | arbitrary-sql-monitoring-extension | https://github.com/Appdynamics/arbitrary-sql-monitoring-extension | author:appdynamics description:AppDynamics machine agent extension to run a SQL query and import the results as new custom metrics
-github-appdynamics-1-56 | business-monitoring-extension | https://github.com/Appdynamics/business-monitoring-extension | author:appdynamics description:Updated Oct 26, 2015
-github-appdynamics-1-57 | vcloud-director-connector-extension | https://github.com/Appdynamics/vcloud-director-connector-extension | author:appdynamics description:AppDynamics vCloudDirector Connector Extension
-github-appdynamics-1-58 | ECommerce-mobile-loadgen | https://github.com/Appdynamics/ECommerce-mobile-loadgen | author:appdynamics description:Mobile RUM load gen utility for ECommerce
-github-appdynamics-1-59 | ECommerce-FaultInjectionUI | https://github.com/Appdynamics/ECommerce-FaultInjectionUI | author:appdynamics description:Updated Aug 24, 2015
-github-appdynamics-1-60 | elasticsearch-monitoring-extension | https://github.com/Appdynamics/elasticsearch-monitoring-extension | author:appdynamics description:AppDynamics Elasticsearch Monitoring Extension
-github-appdynamics-1-61 | ibm-websphere-msg-broker-monitor | https://github.com/Appdynamics/ibm-websphere-msg-broker-monitor | author:appdynamics description:Updated Sep 11, 2015
-github-appdynamics-1-62 | Node.js-Demo-App | https://github.com/Appdynamics/Node.js-Demo-App | author:appdynamics description:Acme Wine Cellar - Node.js Demo
-github-appdynamics-1-63 | python-osext | https://github.com/Appdynamics/python-osext | author:appdynamics description:Extension to os module
-github-appdynamics-1-64 | nagios-monitoring-extension | https://github.com/Appdynamics/nagios-monitoring-extension | author:appdynamics description:AppDynamics Nagios Monitoring Extension
-github-appdynamics-1-65 | ansible-wordpress | https://github.com/Appdynamics/ansible-wordpress | author:appdynamics description:Ansible module for managing WordPress sites.
-github-appdynamics-1-66 | ECommerce-Java-NPM | https://github.com/Appdynamics/ECommerce-Java-NPM | author:appdynamics description:Simplified version of ECommerce-Java for NPM team
-github-appdynamics-1-67 | logstash-alert-extension | https://github.com/Appdynamics/logstash-alert-extension | author:appdynamics description:Logstash Alerting Extension
-github-appdynamics-1-68 | GearmanMonitor | https://github.com/Appdynamics/GearmanMonitor | author:appdynamics description:AppDynamics extension to provide metrics from gearman server.
-github-appdynamics-1-69 | resin-monitoring-extension | https://github.com/Appdynamics/resin-monitoring-extension | author:appdynamics description:Resin Monitoring Extension
-github-appdynamics-1-70 | FastAppConfig | https://github.com/Appdynamics/FastAppConfig | author:appdynamics description:Quickly Deploy Health Rules and Dashboards to newly onboarded applications using templates.
-github-appdynamics-1-71 | mongo-monitoring-extension | https://github.com/Appdynamics/mongo-monitoring-extension | author:appdynamics description:AppDynamics Mongo Monitoring Extension
-github-appdynamics-1-72 | hbase-monitoring-extension | https://github.com/Appdynamics/hbase-monitoring-extension | author:appdynamics description:AppDynamics HBase Monitoring Extension
-github-appdynamics-1-73 | nodetime-openshift-quickstart | https://github.com/Appdynamics/nodetime-openshift-quickstart | author:appdynamics description:Nodetime Quickstart for OpenShift
-github-appdynamics-1-74 | vmware-vsphere-monitoring-extension | https://github.com/Appdynamics/vmware-vsphere-monitoring-extension | author:appdynamics description:AppDynamics Vmware Vsphere Monitoring Extension
-github-appdynamics-1-75 | docker-monitoring-extension | https://github.com/Appdynamics/docker-monitoring-extension | author:appdynamics description:Docker Monitoring Extension
-github-appdynamics-1-76 | openstack-connector-extension | https://github.com/Appdynamics/openstack-connector-extension | author:appdynamics description:AppDynamics OpenStack Connector Extension
-github-appdynamics-1-77 | snmptrap-alerting-extension | https://github.com/Appdynamics/snmptrap-alerting-extension | author:appdynamics description:AppDynamics SNMP Trap Alerting Extension
-github-appdynamics-1-78 | victorops-alerting-extension | https://github.com/Appdynamics/victorops-alerting-extension | author:appdynamics description:To push AppDynamics health rule violation events to VictorOps.
-github-appdynamics-1-79 | extensions-docker | https://github.com/Appdynamics/extensions-docker | author:appdynamics description:Updated Apr 6, 2016
-github-appdynamics-1-80 | CassandraNT | https://github.com/Appdynamics/CassandraNT | author:appdynamics description:Cassandra Nodetool solution
-github-appdynamics-1-81 | ehcache-monitoring-extension | https://github.com/Appdynamics/ehcache-monitoring-extension | author:appdynamics description:Updated Feb 2, 2015
-github-appdynamics-1-82 | servicenow-alerting-extension | https://github.com/Appdynamics/servicenow-alerting-extension | author:appdynamics description:AppDynamics ServiceNow Alerting Extension
-github-appdynamics-1-83 | LicenseUsage | https://github.com/Appdynamics/LicenseUsage | author:appdynamics description:Python scripts to extract license usage information from your on-premises controller
-github-appdynamics-1-84 | php-demo | https://github.com/Appdynamics/php-demo | author:appdynamics description:Demo application showing AppDynamics Agents for Dynamic Languages
-github-appdynamics-0-85 | python-sysext | https://github.com/Appdynamics/python-sysext | author:appdynamics description:Extremely preliminary sys extension
-github-appdynamics-0-86 | jira-alerting-extension | https://github.com/Appdynamics/jira-alerting-extension | author:appdynamics description:AppDynamics Jira Alerting Extension
-github-appdynamics-0-87 | boundary-alerting-extension | https://github.com/Appdynamics/boundary-alerting-extension | author:appdynamics description:AppDynamics Boundary Alerting Extension
-github-appdynamics-0-88 | TibcoBWProcessMonitor | https://github.com/Appdynamics/TibcoBWProcessMonitor | author:appdynamics description:Tibco BW Process monitoring extension
-github-appdynamics-0-89 | splunkbaseapp | https://github.com/Appdynamics/splunkbaseapp | author:appdynamics description:Updated May 12, 2016
-github-appdynamics-0-90 | MixApp | https://github.com/Appdynamics/MixApp | author:appdynamics description:A multi language app for E2E testing.
-github-appdynamics-0-91 | PythonDemoDocker | https://github.com/Appdynamics/PythonDemoDocker | author:appdynamics description:Repo for Python Demo app using Docker
-github-appdynamics-0-92 | aws-lambda-monitoring-extension | https://github.com/Appdynamics/aws-lambda-monitoring-extension | author:appdynamics description:AWS Lambda Monitoring Extension
-github-appdynamics-0-93 | aws-customnamespace-monitoring-extension | https://github.com/Appdynamics/aws-customnamespace-monitoring-extension | author:appdynamics description:AWS Custom Namespace Monitoring Extension
-github-appdynamics-0-94 | aws-s3-monitoring-extension | https://github.com/Appdynamics/aws-s3-monitoring-extension | author:appdynamics description:AWS S3 Monitoring Extension
-github-appdynamics-0-95 | aws-sqs-monitoring-extension | https://github.com/Appdynamics/aws-sqs-monitoring-extension | author:appdynamics description:AWS SQS Monitoring Extension
-github-appdynamics-0-96 | LicenseAuditor | https://github.com/Appdynamics/LicenseAuditor | author:appdynamics description:Updated Oct 16, 2015
-github-appdynamics-0-97 | PCF-multitier-php | https://github.com/Appdynamics/PCF-multitier-php | author:appdynamics description:Sample multitier PHP application used for PCF/PWS platform
-github-appdynamics-0-98 | gce-connector-extension | https://github.com/Appdynamics/gce-connector-extension | author:appdynamics description:AppDynamics Google Compute Engine Connector extension
-github-appdynamics-0-99 | generic-powershell-alerting-extension | https://github.com/Appdynamics/generic-powershell-alerting-extension | author:appdynamics description:AppDynamics Generic PowerShell Alerting Extension for Controllers on Windows
-github-appdynamics-0-100 | Self-service-Sample-Apps | https://github.com/Appdynamics/Self-service-Sample-Apps | author:appdynamics description:Repository for self-service sample apps.
-github-appdynamics-0-101 | aws-sns-monitoring-extension | https://github.com/Appdynamics/aws-sns-monitoring-extension | author:appdynamics description:AWS SNS Monitoring Extension
-github-appdynamics-0-102 | aws-storagegateway-monitoring-extension | https://github.com/Appdynamics/aws-storagegateway-monitoring-extension | author:appdynamics description:AWS StorageGateway Monitoring Extension
-github-appdynamics-0-103 | ECommerce-WS | https://github.com/Appdynamics/ECommerce-WS | author:appdynamics description:ECommerce-WS - OrderService using JAX-WS libraries.
-github-appdynamics-0-104 | docker-rwd-python | https://github.com/Appdynamics/docker-rwd-python | author:appdynamics description:Docker container for Python RWD clients
-github-appdynamics-0-105 | hipchat-alerting-extension | https://github.com/Appdynamics/hipchat-alerting-extension | author:appdynamics description:AppDynamics HipChat Alerting Extension
-github-appdynamics-0-106 | .NET-SE-Lab | https://github.com/Appdynamics/.NET-SE-Lab | author:appdynamics description:.NET lab designed for AppDynamics sales engineers to educate themselves how to monitor .NET applications using AppDynamics .NET agent
-github-appdynamics-0-107 | url-monitoring-extension | https://github.com/Appdynamics/url-monitoring-extension | author:appdynamics description:An AppDynamics extension to monitor site urls
-github-appdynamics-0-108 | Telecom-Demo | https://github.com/Appdynamics/Telecom-Demo | author:appdynamics description:Demo app for Business Activity Monitoring use cases with Docker support
-github-appdynamics-0-109 | azure-database-monitoring-extension | https://github.com/Appdynamics/azure-database-monitoring-extension | author:appdynamics description:Windows Azure Database Monitoring Extension
-github-appdynamics-0-110 | offline_nodejs-buildpack | https://github.com/Appdynamics/offline_nodejs-buildpack | author:appdynamics description:Updated Mar 15, 2016
-github-appdynamics-0-111 | ApDex_Agent | https://github.com/Appdynamics/ApDex_Agent | author:appdynamics description:A Simple Apdex agent and CLI using the EUM Analytics API
-github-appdynamics-0-112 | PHP-Demo-App | https://github.com/Appdynamics/PHP-Demo-App | author:appdynamics description:Acme Wine Cellar - PHP Demo
-github-appdynamics-0-113 | amps-monitoring-extension | https://github.com/Appdynamics/amps-monitoring-extension | author:appdynamics description:AMPS Monitoring Extension
-github-appdynamics-0-114 | DiskSpaceAlertExtension | https://github.com/Appdynamics/DiskSpaceAlertExtension | author:appdynamics description:An AppDynamics Machine Agent extension to alert if disk space crosses a warning or critical threshold. If a threshold is crossed, the extension will create a custom event upon which you can trigger a Policy + Action to get notified.
-github-appdynamics-0-115 | mpstat-monitoring-extension | https://github.com/Appdynamics/mpstat-monitoring-extension | author:appdynamics description:Updated Nov 12, 2015
-github-appdynamics-0-116 | statusio-saas-alerting-extension | https://github.com/Appdynamics/statusio-saas-alerting-extension | author:appdynamics description:Updated Nov 9, 2015
-github-appdynamics-0-117 | apache-log-monitoring-extension | https://github.com/Appdynamics/apache-log-monitoring-extension | author:appdynamics description:Updated Jun 25, 2015
-github-appdynamics-0-118 | ECommerce-FaultInjection | https://github.com/Appdynamics/ECommerce-FaultInjection | author:appdynamics description:Fault Injection framework code.
-github-appdynamics-0-119 | riak-monitoring-extension | https://github.com/Appdynamics/riak-monitoring-extension | author:appdynamics description:An AppDynamics Extension to monitor Riak.
-github-appdynamics-0-120 | openshift-source2image-scripts | https://github.com/Appdynamics/openshift-source2image-scripts | author:appdynamics description:Updated Oct 21, 2015
-github-appdynamics-0-121 | opsgenie-alerting-extension | https://github.com/Appdynamics/opsgenie-alerting-extension | author:appdynamics description:Updated Feb 28, 2014
-github-appdynamics-0-122 | weblogic-monitoring-extension | https://github.com/Appdynamics/weblogic-monitoring-extension | author:appdynamics description:AppDynamics extension to monitor Oracle WebLogic Server
-github-appdynamics-0-123 | Event-Proxy | https://github.com/Appdynamics/Event-Proxy | author:appdynamics description:Proxy Events from SaaS Controllers to internal HPOM Systems
-github-appdynamics-0-124 | RestMetricQueries | https://github.com/Appdynamics/RestMetricQueries | author:appdynamics description:Updated Apr 26, 2016
-github-appdynamics-0-125 | slack-alerting-extension | https://github.com/Appdynamics/slack-alerting-extension | author:appdynamics description:Updated Apr 27, 2016
-github-appdynamics-0-126 | servicenow-api-alerting-extension | https://github.com/Appdynamics/servicenow-api-alerting-extension | author:appdynamics description:AppDynamics ServiceNow REST API Alerting Extension
-github-appdynamics-0-127 | extensions-resources | https://github.com/Appdynamics/extensions-resources | author:appdynamics description:Updated May 5, 2016
-github-appdynamics-0-128 | ssl-certificate-monitoring-extension | https://github.com/Appdynamics/ssl-certificate-monitoring-extension | author:appdynamics description:This extension monitors the SSL certificates for configurable domains.
-github-appdynamics-0-129 | SQLMonitor | https://github.com/Appdynamics/SQLMonitor | author:appdynamics description:SQL-monitoring-extension is a monitor which puts arbitrary queries against a SQL database as metrics
-github-appdynamics-0-130 | AlertParsingExtension | https://github.com/Appdynamics/AlertParsingExtension | author:appdynamics description:Updated Oct 21, 2014
-github-appdynamics-0-131 | artifact-library | https://github.com/Appdynamics/artifact-library | author:appdynamics description:Updated May 10, 2016
-github-appdynamics-0-132 | aws-cloudsearch-monitoring-extension | https://github.com/Appdynamics/aws-cloudsearch-monitoring-extension | author:appdynamics description:AWS CloudSearch Monitoring Extension
-github-appdynamics-0-133 | AppDApplicationDiscovery | https://github.com/Appdynamics/AppDApplicationDiscovery | author:appdynamics description:Updated Jan 16, 2015
-github-appdynamics-0-134 | controller_runbook | https://github.com/Appdynamics/controller_runbook | author:appdynamics description:Scripts, Tools, and Procedure for operating an AppDynamics Controller
-github-appdynamics-0-135 | ECommerce-Docker-NPM | https://github.com/Appdynamics/ECommerce-Docker-NPM | author:appdynamics description:ECommerce demo: NPM version
-github-appdynamics-0-136 | android-places-gradle | https://github.com/Appdynamics/android-places-gradle | author:appdynamics description:Android demo with Google Geocoding, Elevation and Civic Information API (Gradle)
-github-appdynamics-0-137 | android-places-maven | https://github.com/Appdynamics/android-places-maven | author:appdynamics description:Android demo with Google Geocoding, Elevation and Civic Information API (Maven)
-github-appdynamics-0-138 | BMC_HPD_Incident_Action | https://github.com/Appdynamics/BMC_HPD_Incident_Action | author:appdynamics description:Updated May 12, 2015
-github-appdynamics-0-139 | QueryExecutorClient | https://github.com/Appdynamics/QueryExecutorClient | author:appdynamics description:Client to the docker-dbwrapper.
-github-appdynamics-0-140 | zabbix-monitoring-extension | https://github.com/Appdynamics/zabbix-monitoring-extension | author:appdynamics description:Zabbix Monitoring Extension
-github-appdynamics-0-141 | docker-jenkins-cdDemo | https://github.com/Appdynamics/docker-jenkins-cdDemo | author:appdynamics description:continuous delivery with jenkins docker and source code on github
-github-appdynamics-0-142 | c3p0-monitoring-extension | https://github.com/Appdynamics/c3p0-monitoring-extension | author:appdynamics description:Updated Aug 27, 2014
-github-appdynamics-0-143 | neo4j-monitoring-extension | https://github.com/Appdynamics/neo4j-monitoring-extension | author:appdynamics description:An AppDynamics Extension to monitor Neo4j instances.
-github-appdynamics-0-144 | wpt-rwd-python | https://github.com/Appdynamics/wpt-rwd-python | author:appdynamics description:RWD python client for Webpagetest
-github-appdynamics-0-145 | OSS | https://github.com/Appdynamics/OSS | author:appdynamics description:Third Party Open Source Software
-github-appdynamics-0-146 | vsphere-connector-extension | https://github.com/Appdynamics/vsphere-connector-extension | author:appdynamics description:AppDynamics vSphere Connector Extension
-github-appdynamics-0-147 | iPlanet-monitoring-extension | https://github.com/Appdynamics/iPlanet-monitoring-extension | author:appdynamics description:Oracle iPlanet Monitoring Extension
-github-appdynamics-0-148 | Demo-Puppet | https://github.com/Appdynamics/Demo-Puppet | author:appdynamics description:This is a repository to house Puppet code for all Demo instances
-github-appdynamics-0-149 | Docker-services | https://github.com/Appdynamics/Docker-services | author:appdynamics description:Repo for Docker Services (Load generator Applications)
-github-appdynamics-0-150 | appd-extensions-repo | https://github.com/Appdynamics/appd-extensions-repo | author:appdynamics description:This repo will contain all the extensions that are published on AppSphere.
-github-appdynamics-0-151 | ACE_DynamicServiceTest | https://github.com/Appdynamics/ACE_DynamicServiceTest | author:appdynamics description:Updated Feb 20, 2015
-github-appdynamics-0-152 | rackspace-connector-extension | https://github.com/Appdynamics/rackspace-connector-extension | author:appdynamics description:AppDynamics RackSpace First-Gen Cloud Connector Extension
-github-appdynamics-0-153 | datapower-monitoring-extension | https://github.com/Appdynamics/datapower-monitoring-extension | author:appdynamics description:Updated Apr 14, 2016
-github-appdynamics-0-154 | shld | https://github.com/Appdynamics/shld | author:appdynamics description:Shell Script Linking Utility
-github-appdynamics-0-155 | f5-monitoring-extension | https://github.com/Appdynamics/f5-monitoring-extension | author:appdynamics description:AppDynamics F5 Monitoring Extension
-github-appdynamics-0-156 | spring-music | https://github.com/Appdynamics/spring-music | author:appdynamics description:CF sample app for deploying Java Applications on CF
-github-appdynamics-0-157 | pagerduty-alerting-extension | https://github.com/Appdynamics/pagerduty-alerting-extension | author:appdynamics description:AppDynamics PagerDuty Alerting Extension
-github-appdynamics-0-158 | bppm-alerting-extension | https://github.com/Appdynamics/bppm-alerting-extension | author:appdynamics description:AppDynamics BPPM (BMC ProactiveNet Performance Management) Alerting Extension
-github-appdynamics-0-159 | cloudstack-connector-extension | https://github.com/Appdynamics/cloudstack-connector-extension | author:appdynamics description:AppDynamics CloudStack Connector Extension
-github-appdynamics-0-160 | muleesb-monitoring-extension | https://github.com/Appdynamics/muleesb-monitoring-extension | author:appdynamics description:Mule ESB Monitoring Extension
-github-appdynamics-0-161 | splunk-monitoring-extension | https://github.com/Appdynamics/splunk-monitoring-extension | author:appdynamics description:Updated Dec 15, 2014
-github-appdynamics-0-162 | adeptiaesb-monitoring-extension | https://github.com/Appdynamics/adeptiaesb-monitoring-extension | author:appdynamics description:Adeptia ESB Monitoring Extension
-github-appdynamics-0-163 | c-cpp-sdk | https://github.com/Appdynamics/c-cpp-sdk | author:appdynamics description:Updated Oct 14, 2014
-github-appdynamics-0-164 | docker-activemq | https://github.com/Appdynamics/docker-activemq | author:appdynamics description:Updated Oct 21, 2014
-github-appdynamics-0-165 | maven-repo | https://github.com/Appdynamics/maven-repo | author:appdynamics description:Updated Apr 19, 2016
-github-appdynamics-0-166 | couchbase-monitoring-extension | https://github.com/Appdynamics/couchbase-monitoring-extension | author:appdynamics description:Updated Apr 18, 2016
-github-appdynamics-0-167 | Command-Watcher-Extension | https://github.com/Appdynamics/Command-Watcher-Extension | author:appdynamics description:Updated Apr 20, 2016
-github-appdynamics-0-168 | aws-ec2-monitoring-extension | https://github.com/Appdynamics/aws-ec2-monitoring-extension | author:appdynamics description:AWS EC2 Monitoring Extension
-github-appdynamics-0-169 | gce-monitoring-extension | https://github.com/Appdynamics/gce-monitoring-extension | author:appdynamics description:Google computing engine monitoring extension
-github-appdynamics-0-170 | azure-servicebus-monitoring-extension | https://github.com/Appdynamics/azure-servicebus-monitoring-extension | author:appdynamics description:Azure Service Bus Monitoring Extension
-github-appdynamics-0-171 | aws-route53-monitoring-extension | https://github.com/Appdynamics/aws-route53-monitoring-extension | author:appdynamics description:AWS Route53 Monitoring Extension
-github-appdynamics-0-172 | aws-redshift-monitoring-extension | https://github.com/Appdynamics/aws-redshift-monitoring-extension | author:appdynamics description:AWS Redshift Monitoring Extension
-github-appdynamics-0-173 | aws-elasticmapreduce-monitoring-extension | https://github.com/Appdynamics/aws-elasticmapreduce-monitoring-extension | author:appdynamics description:AWS ElasticMapReduce Monitoring Extension
-github-appdynamics-0-174 | aws-rds-monitoring-extension | https://github.com/Appdynamics/aws-rds-monitoring-extension | author:appdynamics description:AWS RDS Monitoring Extension
-github-appdynamics-0-175 | aws-elb-monitoring-extension | https://github.com/Appdynamics/aws-elb-monitoring-extension | author:appdynamics description:AWS ELB Monitoring Extension
-github-appdynamics-0-176 | aws-opsworks-monitoring-extension | https://github.com/Appdynamics/aws-opsworks-monitoring-extension | author:appdynamics description:AWS OpsWorks Monitoring Extension
-github-appdynamics-0-177 | aws-ebs-monitoring-extension | https://github.com/Appdynamics/aws-ebs-monitoring-extension | author:appdynamics description:AWS EBS Monitoring Extension
-github-appdynamics-0-178 | aws-billing-monitoring-extension | https://github.com/Appdynamics/aws-billing-monitoring-extension | author:appdynamics description:AWS Billing Monitoring Extension
-github-appdynamics-0-179 | twitter-alerting-extension | https://github.com/Appdynamics/twitter-alerting-extension | author:appdynamics description:Alerting Extension for Twitter
-github-appdynamics-0-180 | mysql-monitoring-extension | https://github.com/Appdynamics/mysql-monitoring-extension | author:appdynamics description:AppDynamics MySQL Monitoring Extension
-github-appdynamics-0-181 | marval-alerting-extension | https://github.com/Appdynamics/marval-alerting-extension | author:appdynamics description:Updated Oct 6, 2014
-github-appdynamics-0-182 | sonicmq-monitoring-extension | https://github.com/Appdynamics/sonicmq-monitoring-extension | author:appdynamics description:Updated Mar 4, 2016
-github-appdynamics-0-183 | AD-Capital-Docker | https://github.com/Appdynamics/AD-Capital-Docker | author:appdynamics description:AppDynamics Loan Processing demo application
-github-appdynamics-0-184 | AppDSimpleCrypto | https://github.com/Appdynamics/AppDSimpleCrypto | author:appdynamics description:A simple library to encrypt strings to be used with extensions
-github-appdynamics-0-185 | custom_argparse | https://github.com/Appdynamics/custom_argparse | author:appdynamics description:Python module containing subclass of argparse.ArgumentParser to allow explicit formatting of description and usage output.
-github-appdynamics-0-186 | pagerduty-saas-alert-extension | https://github.com/Appdynamics/pagerduty-saas-alert-extension | author:appdynamics description:Updated Oct 6, 2014
-github-appdynamics-0-187 | AD-Capital | https://github.com/Appdynamics/AD-Capital | author:appdynamics description:Appdynamics Transaction Analytics demo with docker support
-github-appdynamics-0-188 | endeca-mdex-monitoring-extension | https://github.com/Appdynamics/endeca-mdex-monitoring-extension | author:appdynamics description:Updated Sep 22, 2014
-github-appdynamics-0-189 | couchdb-monitoring-extension | https://github.com/Appdynamics/couchdb-monitoring-extension | author:appdynamics description:Updated Sep 5, 2014
-github-appdynamics-0-190 | aws-elasticache-monitoring-extension | https://github.com/Appdynamics/aws-elasticache-monitoring-extension | author:appdynamics description:AWS ElastiCache Monitoring Extension
-github-appdynamics-0-191 | aws-dynamodb-monitoring-extension | https://github.com/Appdynamics/aws-dynamodb-monitoring-extension | author:appdynamics description:AWS DynamoDB Monitoring Extension
-github-appdynamics-0-192 | aws-autoscaling-monitoring-extension | https://github.com/Appdynamics/aws-autoscaling-monitoring-extension | author:appdynamics description:AWS AutoScaling Monitoring Extension
-github-appdynamics-0-193 | hpopenview-alerting-extension | https://github.com/Appdynamics/hpopenview-alerting-extension | author:appdynamics description:To push AppDynamics events to HPOV / HPOM
-github-appdynamics-0-194 | kitchensink | https://github.com/Appdynamics/kitchensink | author:appdynamics description:Sample App for Openshift v3
-github-appdynamics-0-195 | imhotep_prospector | https://github.com/Appdynamics/imhotep_prospector | author:appdynamics description:Imhotep plugin to work with prospector
-github-appdynamics-0-196 | static-monitoring-extension | https://github.com/Appdynamics/static-monitoring-extension | author:appdynamics description:AppDynamics Static Monitoring Extension
-github-appdynamics-0-197 | rss-feed-monitoring-extension | https://github.com/Appdynamics/rss-feed-monitoring-extension | author:appdynamics description:AppDynamics RSS/Atom Feed monitoring extension
-github-appdynamics-0-198 | python-langutil | https://github.com/Appdynamics/python-langutil | author:appdynamics description:For generation of code in other languages from Python variables
-github-appdynamics-0-199 | se-labs | https://github.com/Appdynamics/se-labs | author:appdynamics description:Labs for SE training
-github-appdynamics-0-200 | event-publisher-extension | https://github.com/Appdynamics/event-publisher-extension | author:appdynamics description:Event Publisher Extension
-github-appdynamics-0-201 | joyent-monitoring-extension | https://github.com/Appdynamics/joyent-monitoring-extension | author:appdynamics description:Joyent Monitoring Extension
-github-appdynamics-0-202 | rackspace-monitoring-extension | https://github.com/Appdynamics/rackspace-monitoring-extension | author:appdynamics description:AppDynamics Rackspace Monitoring Extension
-github-appdynamics-0-203 | campfire-alerting-extension | https://github.com/Appdynamics/campfire-alerting-extension | author:appdynamics description:Campfire Alerting Extension
-github-appdynamics-0-204 | glassfish-monitoring-extension | https://github.com/Appdynamics/glassfish-monitoring-extension | author:appdynamics description:Glassfish Monitoring Extension
-github-appdynamics-0-205 | azure-connector-extension | https://github.com/Appdynamics/azure-connector-extension | author:appdynamics description:AppDynamics Windows Azure Connector Extension
-github-appdynamics-0-206 | cacti-monitoring-extension | https://github.com/Appdynamics/cacti-monitoring-extension | author:appdynamics description:Cacti Monitoring Extension
-github-appdynamics-0-207 | aws-cloudwatch-exts-commons | https://github.com/Appdynamics/aws-cloudwatch-exts-commons | author:appdynamics description:Common library used by individual namespace cloudwatch monitoring extension
-github-appdynamics-0-208 | hornetq-monitoring-extension | https://github.com/Appdynamics/hornetq-monitoring-extension | author:appdynamics description:Updated Apr 5, 2016
-github-appdynamics-0-209 | python-httpext | https://github.com/Appdynamics/python-httpext | author:appdynamics description:Small HTTP extension
-github-appdynamics-0-210 | ECommerce-Angular-NPM | https://github.com/Appdynamics/ECommerce-Angular-NPM | author:appdynamics description:Angular app for NPM
-github-appdynamics-0-211 | splunk-alerting-extension | https://github.com/Appdynamics/splunk-alerting-extension | author:appdynamics description:AppDynamics Splunk Alerting Extension
-github-appdynamics-0-212 | NodeJSDemoDocker | https://github.com/Appdynamics/NodeJSDemoDocker | author:appdynamics description:Repo for NodeJS Demo app using Docker
-github-appdynamics-0-213 | boundary-monitoring-extension | https://github.com/Appdynamics/boundary-monitoring-extension | author:appdynamics description:Updated Dec 20, 2013
-github-appdynamics-0-214 | FileWatcher-extension | https://github.com/Appdynamics/FileWatcher-extension | author:appdynamics description:Updated Jun 4, 2015
-github-appdynamics-0-215 | tibcoems-monitoring-extension | https://github.com/Appdynamics/tibcoems-monitoring-extension | author:appdynamics description:Appdynamics TibcoEMS Monitoring Extension
-github-appdynamics-0-216 | docker-dbwrapper | https://github.com/Appdynamics/docker-dbwrapper | author:appdynamics description:Repo for database query wrapper (RESTful APIs)
-github-appdynamics-0-217 | CloudIntegrationSampleMultitierApp | https://github.com/Appdynamics/CloudIntegrationSampleMultitierApp | author:appdynamics description:Sample Java RESTful application with PHP client.
-github-appdynamics-0-218 | CRMOnline-Demo | https://github.com/Appdynamics/CRMOnline-Demo | author:appdynamics description:Demo app for Business Activity Monitoring use cases with Docker support
-github-appdynamics-0-219 | ECommerce-Load-NPM | https://github.com/Appdynamics/ECommerce-Load-NPM | author:appdynamics description:Load gen simplified for NPM.
-github-appdynamics-0-220 | ibm-tivoli-bsm-alerting-extension | https://github.com/Appdynamics/ibm-tivoli-bsm-alerting-extension | author:appdynamics description:Updated Aug 18, 2015
-github-appdynamics-0-221 | terremark-connector-extension | https://github.com/Appdynamics/terremark-connector-extension | author:appdynamics description:AppDynamics Terremark Connector Extension
-github-appdynamics-0-222 | AD-Capital-Load | https://github.com/Appdynamics/AD-Capital-Load | author:appdynamics description:Load generator for AD-Capital demo application
-github-appdynamics-0-223 | sti-jboss-eap | https://github.com/Appdynamics/sti-jboss-eap | author:appdynamics description:Updated Nov 25, 2015
-github-appdynamics-0-224 | network-monitoring-extension | https://github.com/Appdynamics/network-monitoring-extension | author:appdynamics description:Network Monitoring Extension
-github-appdynamics-0-225 | elasticsearch-query-monitoring-extension | https://github.com/Appdynamics/elasticsearch-query-monitoring-extension | author:appdynamics description:Updated Jun 4, 2015
-github-appdynamics-0-226 | memcached-monitoring-extension | https://github.com/Appdynamics/memcached-monitoring-extension | author:appdynamics description:Memcached Monitoring Extension for AppDynamics
-github-appdynamics-0-227 | keynote-monitoring-extension | https://github.com/Appdynamics/keynote-monitoring-extension | author:appdynamics description:Updated Dec 17, 2015
+github-appdynamics-ECommerce-Android | ECommerce-Android | https://github.com/Appdynamics/ECommerce-Android | author:appdynamics description:E-Commerce example for Android (Gradle build with Robotium)
+github-appdynamics-appdynamics-cookbooks | appdynamics-cookbooks | https://github.com/Appdynamics/appdynamics-cookbooks | author:appdynamics description:Updated Sep 19, 2016
+github-appdynamics-cassandra-monitoring-extension | cassandra-monitoring-extension | https://github.com/Appdynamics/cassandra-monitoring-extension | author:appdynamics description:AppDynamics Cassandra Monitoring Extension
+github-appdynamics-ECommerce-iOS | ECommerce-iOS | https://github.com/Appdynamics/ECommerce-iOS | author:appdynamics description:Ecommerce Example For iOS
+github-appdynamics-hadoop-monitoring-extension | hadoop-monitoring-extension | https://github.com/Appdynamics/hadoop-monitoring-extension | author:appdynamics description:AppDynamics Apache Hadoop Monitoring Extention
+github-appdynamics-appdynamics-platform-docker | appdynamics-platform-docker | https://github.com/Appdynamics/appdynamics-platform-docker | author:appdynamics description:Docker containers for installing and running the AppDynamics Controller with EUM Server and Analytics support.
+github-appdynamics-redis-monitoring-extension | redis-monitoring-extension | https://github.com/Appdynamics/redis-monitoring-extension | author:appdynamics description:AppDynamics Monitoring Extension for use with Redis
+github-appdynamics-ECommerce-Docker | ECommerce-Docker | https://github.com/Appdynamics/ECommerce-Docker | author:appdynamics description:Dockerfiles and scripts for ECommerce demo
+github-appdynamics-zookeeper-monitoring-extension | zookeeper-monitoring-extension | https://github.com/Appdynamics/zookeeper-monitoring-extension | author:appdynamics description:Zookeeper Monitoring Extension for AppDynamics
+github-appdynamics-aws-cloudwatch-monitoring-extension | aws-cloudwatch-monitoring-extension | https://github.com/Appdynamics/aws-cloudwatch-monitoring-extension | author:appdynamics description:AppDynamics AWS CloudWatch Monitoring Extension
+github-appdynamics-ECommerce-Java | ECommerce-Java | https://github.com/Appdynamics/ECommerce-Java | author:appdynamics description:Java components for ECommerce demo
+github-appdynamics-rabbitmq-monitoring-extension | rabbitmq-monitoring-extension | https://github.com/Appdynamics/rabbitmq-monitoring-extension | author:appdynamics description:activemq
+github-appdynamics-AppDRESTAPI-SDK | AppDRESTAPI-SDK | https://github.com/Appdynamics/AppDRESTAPI-SDK | author:appdynamics description:Updated Oct 20, 2016
+github-appdynamics-Python-Demo-App | Python-Demo-App | https://github.com/Appdynamics/Python-Demo-App | author:appdynamics description:Python Demo App
+github-appdynamics-pingdom-monitoring-extension | pingdom-monitoring-extension | https://github.com/Appdynamics/pingdom-monitoring-extension | author:appdynamics description:AppDynamics Pingdom Monitoring Extension
+github-appdynamics-nodetime-demo | nodetime-demo | https://github.com/Appdynamics/nodetime-demo | author:appdynamics description:Nodetime Demo Application
+github-appdynamics-websphere-mq-monitoring-extension | websphere-mq-monitoring-extension | https://github.com/Appdynamics/websphere-mq-monitoring-extension | author:appdynamics description:AppDynamics WebSphere MQ Monitoring Extension
+github-appdynamics-apache-monitoring-extension | apache-monitoring-extension | https://github.com/Appdynamics/apache-monitoring-extension | author:appdynamics description:AppDynamics Apache Monitoring Extension
+github-appdynamics-linux-monitoring-extension | linux-monitoring-extension | https://github.com/Appdynamics/linux-monitoring-extension | author:appdynamics description:Linux System Monitoring Extension
+github-appdynamics-openshift-appdynamics-jboss-cartridge | openshift-appdynamics-jboss-cartridge | https://github.com/Appdynamics/openshift-appdynamics-jboss-cartridge | author:appdynamics description:Red Hat Openshift cartridge for Java AppServers
+github-appdynamics-ECommerce-Angular | ECommerce-Angular | https://github.com/Appdynamics/ECommerce-Angular | author:appdynamics description:ECommerce web in Angular js client
+github-appdynamics-FastAppConfig | FastAppConfig | https://github.com/Appdynamics/FastAppConfig | author:appdynamics description:Quickly Deploy Health Rules and Dashboards to newly onboarded applications using templates.
+github-appdynamics-ansible-php | ansible-php | https://github.com/Appdynamics/ansible-php | author:appdynamics description:Helper library for Ansible modules written in PHP
+github-appdynamics-oracle-monitoring-extension | oracle-monitoring-extension | https://github.com/Appdynamics/oracle-monitoring-extension | author:appdynamics description:AppDynamics Oracle Monitoring Extension
+github-appdynamics-varnish-monitoring-extension | varnish-monitoring-extension | https://github.com/Appdynamics/varnish-monitoring-extension | author:appdynamics description:Updated Apr 20, 2016
+github-appdynamics-process-monitoring-extension | process-monitoring-extension | https://github.com/Appdynamics/process-monitoring-extension | author:appdynamics description:AppDynamics Process Monitoring Extension
+github-appdynamics-log-monitoring-extension | log-monitoring-extension | https://github.com/Appdynamics/log-monitoring-extension | author:appdynamics description:Monitors log file and counts the no of occurrences of the search terms provided
+github-appdynamics-solr-monitoring-extension | solr-monitoring-extension | https://github.com/Appdynamics/solr-monitoring-extension | author:appdynamics description:AppDynamics Solr Monitoring Extension
+github-appdynamics-tuxedo-monitoring-extension | tuxedo-monitoring-extension | https://github.com/Appdynamics/tuxedo-monitoring-extension | author:appdynamics description:Updated Aug 13, 2014
+github-appdynamics-nodetrace | nodetrace | https://github.com/Appdynamics/nodetrace | author:appdynamics description:API-level DTrace provider for Node.js
+github-appdynamics-AppDLicenseCount | AppDLicenseCount | https://github.com/Appdynamics/AppDLicenseCount | author:appdynamics description:This will count the licenses
+github-appdynamics-python-webappman | python-webappman | https://github.com/Appdynamics/python-webappman | author:appdynamics description:For management of Drupal and WordPress sites with Python.
+github-appdynamics-ECommerce-Load | ECommerce-Load | https://github.com/Appdynamics/ECommerce-Load | author:appdynamics description:Load gen component for ECommerce demo
+github-appdynamics-tomcat-monitoring-extension | tomcat-monitoring-extension | https://github.com/Appdynamics/tomcat-monitoring-extension | author:appdynamics description:AppDynamics Tomcat Monitoring Extension
+github-appdynamics-mezzanine-smartling | mezzanine-smartling | https://github.com/Appdynamics/mezzanine-smartling | author:appdynamics description:Updated Oct 9, 2015
+github-appdynamics-azure-monitoring-extension | azure-monitoring-extension | https://github.com/Appdynamics/azure-monitoring-extension | author:appdynamics description:Updated Feb 27, 2015
+github-appdynamics-nginx-monitoring-extension | nginx-monitoring-extension | https://github.com/Appdynamics/nginx-monitoring-extension | author:appdynamics description:AppDynamics Nginx Monitoring Extension
+github-appdynamics-activemq-monitoring-extension | activemq-monitoring-extension | https://github.com/Appdynamics/activemq-monitoring-extension | author:appdynamics description:AppDynamics ActiveMQ Monitoring Extension
+github-appdynamics-postgresql-monitoring-extension | postgresql-monitoring-extension | https://github.com/Appdynamics/postgresql-monitoring-extension | author:appdynamics description:AppDynamics Postgresql Monitoring Extension
+github-appdynamics-haproxy-monitoring-extension | haproxy-monitoring-extension | https://github.com/Appdynamics/haproxy-monitoring-extension | author:appdynamics description:AppDynamics HAProxy Monitoring Extension
+github-appdynamics-extensions-docker | extensions-docker | https://github.com/Appdynamics/extensions-docker | author:appdynamics description:Updated Sep 8, 2016
+github-appdynamics-Node.js-Demo-App | Node.js-Demo-App | https://github.com/Appdynamics/Node.js-Demo-App | author:appdynamics description:Acme Wine Cellar - Node.js Demo
+github-appdynamics-ECommerce-mobile-loadgen | ECommerce-mobile-loadgen | https://github.com/Appdynamics/ECommerce-mobile-loadgen | author:appdynamics description:Mobile RUM load gen utility for ECommerce
+github-appdynamics-business-monitoring-extension | business-monitoring-extension | https://github.com/Appdynamics/business-monitoring-extension | author:appdynamics description:Updated Oct 26, 2015
+github-appdynamics-voltdb-monitoring-extension | voltdb-monitoring-extension | https://github.com/Appdynamics/voltdb-monitoring-extension | author:appdynamics description:VoltDB Monitoring Extension
+github-appdynamics-snmptrap-alerting-extension | snmptrap-alerting-extension | https://github.com/Appdynamics/snmptrap-alerting-extension | author:appdynamics description:AppDynamics SNMP Trap Alerting Extension
+github-appdynamics-logstash-alert-extension | logstash-alert-extension | https://github.com/Appdynamics/logstash-alert-extension | author:appdynamics description:Logstash Alerting Extension
+github-appdynamics-cloud-foundry-extension | cloud-foundry-extension | https://github.com/Appdynamics/cloud-foundry-extension | author:appdynamics description:Cloud Foundry Pivotal Extension
+github-appdynamics-muleesb-monitoring-extension | muleesb-monitoring-extension | https://github.com/Appdynamics/muleesb-monitoring-extension | author:appdynamics description:Mule ESB Monitoring Extension
+github-appdynamics-ECommerce-FaultInjectionUI | ECommerce-FaultInjectionUI | https://github.com/Appdynamics/ECommerce-FaultInjectionUI | author:appdynamics description:Updated Aug 24, 2015
+github-appdynamics-ECommerce-Java-NPM | ECommerce-Java-NPM | https://github.com/Appdynamics/ECommerce-Java-NPM | author:appdynamics description:Simplified version of ECommerce-Java for NPM team
+github-appdynamics-dropwizard-sample-app | dropwizard-sample-app | https://github.com/Appdynamics/dropwizard-sample-app | author:appdynamics description:DropWizard Sample App
+github-appdynamics-ibm-websphere-msg-broker-monitor | ibm-websphere-msg-broker-monitor | https://github.com/Appdynamics/ibm-websphere-msg-broker-monitor | author:appdynamics description:Updated Oct 16, 2016
+github-appdynamics-ECommerce-PartnerPortal | ECommerce-PartnerPortal | https://github.com/Appdynamics/ECommerce-PartnerPortal | author:appdynamics description:Python, PHP and node.js projects for ECommerce Partner Portal demo apps
+github-appdynamics-vcloud-director-connector-extension | vcloud-director-connector-extension | https://github.com/Appdynamics/vcloud-director-connector-extension | author:appdynamics description:AppDynamics vCloudDirector Connector Extension
+github-appdynamics-hbase-monitoring-extension | hbase-monitoring-extension | https://github.com/Appdynamics/hbase-monitoring-extension | author:appdynamics description:AppDynamics HBase Monitoring Extension
+github-appdynamics-nodetime-openshift-quickstart | nodetime-openshift-quickstart | https://github.com/Appdynamics/nodetime-openshift-quickstart | author:appdynamics description:Nodetime Quickstart for OpenShift
+github-appdynamics-elasticsearch-monitoring-extension | elasticsearch-monitoring-extension | https://github.com/Appdynamics/elasticsearch-monitoring-extension | author:appdynamics description:AppDynamics Monitoring Extension for use with Elasticsearch
+github-appdynamics-LicenseUsage | LicenseUsage | https://github.com/Appdynamics/LicenseUsage | author:appdynamics description:Python scripts to extract license usage information from your on-premises controller
+github-appdynamics-verizon-cloud-connector-extension | verizon-cloud-connector-extension | https://github.com/Appdynamics/verizon-cloud-connector-extension | author:appdynamics description:Verizon Cloud Connector Extension
+github-appdynamics-AppDUtilReports | AppDUtilReports | https://github.com/Appdynamics/AppDUtilReports | author:appdynamics description:This is going to be a project that will provide utilities to get information from AppDynamics. Depends on two other projects.
+github-appdynamics-django-base-project | django-base-project | https://github.com/Appdynamics/django-base-project | author:appdynamics description:This is a base django project that comes with everything you need to get started on fun, innovative stuff.
+github-appdynamics-php-demo | php-demo | https://github.com/Appdynamics/php-demo | author:appdynamics description:Demo application showing AppDynamics Agents for Dynamic Languages
+github-appdynamics-victorops-alerting-extension | victorops-alerting-extension | https://github.com/Appdynamics/victorops-alerting-extension | author:appdynamics description:To push AppDynamics health rule violation events to VictorOps.
+github-appdynamics-CassandraNT | CassandraNT | https://github.com/Appdynamics/CassandraNT | author:appdynamics description:Cassandra Nodetool solution
+github-appdynamics-mongo-monitoring-extension | mongo-monitoring-extension | https://github.com/Appdynamics/mongo-monitoring-extension | author:appdynamics description:AppDynamics Mongo Monitoring Extension
+github-appdynamics-vmware-vsphere-monitoring-extension | vmware-vsphere-monitoring-extension | https://github.com/Appdynamics/vmware-vsphere-monitoring-extension | author:appdynamics description:AppDynamics Vmware Vsphere Monitoring Extension
+github-appdynamics-docker-monitoring-extension | docker-monitoring-extension | https://github.com/Appdynamics/docker-monitoring-extension | author:appdynamics description:Docker Monitoring Extension
+github-appdynamics-cacti-monitoring-extension | cacti-monitoring-extension | https://github.com/Appdynamics/cacti-monitoring-extension | author:appdynamics description:Cacti Monitoring Extension
+github-appdynamics-arbitrary-sql-monitoring-extension | arbitrary-sql-monitoring-extension | https://github.com/Appdynamics/arbitrary-sql-monitoring-extension | author:appdynamics description:AppDynamics machine agent extension to run a SQL query and import the results as new custom metrics
+github-appdynamics-ECommerce-Mobile-Tests | ECommerce-Mobile-Tests | https://github.com/Appdynamics/ECommerce-Mobile-Tests | author:appdynamics description:Android and iOS Test Clients for the ECommerce demo
+github-appdynamics-aws-connector-extension | aws-connector-extension | https://github.com/Appdynamics/aws-connector-extension | author:appdynamics description:AppDynamics Amazon Web Services Elastic Compute Cloud (EC2) Connector Extension
+github-appdynamics-openstack-connector-extension | openstack-connector-extension | https://github.com/Appdynamics/openstack-connector-extension | author:appdynamics description:AppDynamics OpenStack Connector Extension
+github-appdynamics-Selenium-Docker | Selenium-Docker | https://github.com/Appdynamics/Selenium-Docker | author:appdynamics description:Repo to house Selenium Code and Docker builds
+github-appdynamics-resin-monitoring-extension | resin-monitoring-extension | https://github.com/Appdynamics/resin-monitoring-extension | author:appdynamics description:Resin Monitoring Extension
+github-appdynamics-vertica-monitoring-extension | vertica-monitoring-extension | https://github.com/Appdynamics/vertica-monitoring-extension | author:appdynamics description:Vertica DB Monitoring Extension
+github-appdynamics-servicenow-alerting-extension | servicenow-alerting-extension | https://github.com/Appdynamics/servicenow-alerting-extension | author:appdynamics description:AppDynamics ServiceNow Alerting Extension
+github-appdynamics-ehcache-monitoring-extension | ehcache-monitoring-extension | https://github.com/Appdynamics/ehcache-monitoring-extension | author:appdynamics description:Updated Feb 2, 2015
+github-appdynamics-sonicmq-monitoring-extension | sonicmq-monitoring-extension | https://github.com/Appdynamics/sonicmq-monitoring-extension | author:appdynamics description:Updated Mar 4, 2016
+github-appdynamics-ECommerce-Mobile-Load | ECommerce-Mobile-Load | https://github.com/Appdynamics/ECommerce-Mobile-Load | author:appdynamics description:Node.js script to generate mobile load on ECommerce
+github-appdynamics-GearmanMonitor | GearmanMonitor | https://github.com/Appdynamics/GearmanMonitor | author:appdynamics description:AppDynamics extension to provide metrics from gearman server.
+github-appdynamics-Field-lab-correlation | Field-lab-correlation | https://github.com/Appdynamics/Field-lab-correlation | author:appdynamics description:Lab exercise for custom correlation.
+github-appdynamics-coherence-monitoring-extension | coherence-monitoring-extension | https://github.com/Appdynamics/coherence-monitoring-extension | author:appdynamics description:An AppDynamics monitoring extension for monitoring Oracle's Coherence solution
+github-appdynamics-MixApp | MixApp | https://github.com/Appdynamics/MixApp | author:appdynamics description:A multi language app for E2E testing.
+github-appdynamics-nagios-monitoring-extension | nagios-monitoring-extension | https://github.com/Appdynamics/nagios-monitoring-extension | author:appdynamics description:AppDynamics Nagios Monitoring Extension
+github-appdynamics-python-osext | python-osext | https://github.com/Appdynamics/python-osext | author:appdynamics description:Extension to os module
+github-appdynamics-ansible-wordpress | ansible-wordpress | https://github.com/Appdynamics/ansible-wordpress | author:appdynamics description:Ansible module for managing WordPress sites.
+github-appdynamics-jira-alerting-extension | jira-alerting-extension | https://github.com/Appdynamics/jira-alerting-extension | author:appdynamics description:AppDynamics Alerting Extension for use with Atlassian JIRA
+github-appdynamics-android-places-maven | android-places-maven | https://github.com/Appdynamics/android-places-maven | author:appdynamics description:Android demo with Google Geocoding, Elevation and Civic Information API (Maven)
+github-appdynamics-confluence-monitoring-extension | confluence-monitoring-extension | https://github.com/Appdynamics/confluence-monitoring-extension | author:appdynamics description:AppDynamics Monitoring Extension for use with Atlassian Confluence
+github-appdynamics-bitbucket-monitoring-extension | bitbucket-monitoring-extension | https://github.com/Appdynamics/bitbucket-monitoring-extension | author:appdynamics description:AppDynamics Monitoring Extension for use with Atlassian Bitbucket
+github-appdynamics-bamboo-monitoring-extension | bamboo-monitoring-extension | https://github.com/Appdynamics/bamboo-monitoring-extension | author:appdynamics description:AppDynamics Monitoring Extension for use with Atlassian Bamboo
+github-appdynamics-analytics-simulator | analytics-simulator | https://github.com/Appdynamics/analytics-simulator | author:appdynamics description:Analytics Simulator for custom Analytics demos
+github-appdynamics-kafka-monitoring-extension | kafka-monitoring-extension | https://github.com/Appdynamics/kafka-monitoring-extension | author:appdynamics description:Apache Kafka Monitoring Extension
+github-appdynamics-extensions-resources | extensions-resources | https://github.com/Appdynamics/extensions-resources | author:appdynamics description:Updated Sep 29, 2016
+github-appdynamics-statusio-saas-alerting-extension | statusio-saas-alerting-extension | https://github.com/Appdynamics/statusio-saas-alerting-extension | author:appdynamics description:Updated Nov 9, 2015
+github-appdynamics-mpstat-monitoring-extension | mpstat-monitoring-extension | https://github.com/Appdynamics/mpstat-monitoring-extension | author:appdynamics description:Updated Nov 12, 2015
+github-appdynamics-openshift-source2image-scripts | openshift-source2image-scripts | https://github.com/Appdynamics/openshift-source2image-scripts | author:appdynamics description:Updated Oct 21, 2015
+github-appdynamics-event-publisher-extension | event-publisher-extension | https://github.com/Appdynamics/event-publisher-extension | author:appdynamics description:Event Publisher Extension
+github-appdynamics-joyent-monitoring-extension | joyent-monitoring-extension | https://github.com/Appdynamics/joyent-monitoring-extension | author:appdynamics description:Joyent Monitoring Extension
+github-appdynamics-aws-s3-monitoring-extension | aws-s3-monitoring-extension | https://github.com/Appdynamics/aws-s3-monitoring-extension | author:appdynamics description:AWS S3 Monitoring Extension
+github-appdynamics-aws-sqs-monitoring-extension | aws-sqs-monitoring-extension | https://github.com/Appdynamics/aws-sqs-monitoring-extension | author:appdynamics description:AWS SQS Monitoring Extension
+github-appdynamics-boundary-monitoring-extension | boundary-monitoring-extension | https://github.com/Appdynamics/boundary-monitoring-extension | author:appdynamics description:Updated Dec 20, 2013
+github-appdynamics-gce-monitoring-extension | gce-monitoring-extension | https://github.com/Appdynamics/gce-monitoring-extension | author:appdynamics description:Google computing engine monitoring extension
+github-appdynamics-gce-connector-extension | gce-connector-extension | https://github.com/Appdynamics/gce-connector-extension | author:appdynamics description:AppDynamics Google Compute Engine Connector extension
+github-appdynamics-se-labs | se-labs | https://github.com/Appdynamics/se-labs | author:appdynamics description:Labs for SE training
+github-appdynamics-hipchat-alerting-extension | hipchat-alerting-extension | https://github.com/Appdynamics/hipchat-alerting-extension | author:appdynamics description:AppDynamics Alerting Extension for use with Hipchat
+github-appdynamics-Telecom-Demo | Telecom-Demo | https://github.com/Appdynamics/Telecom-Demo | author:appdynamics description:Demo app for Business Activity Monitoring use cases with Docker support
+github-appdynamics-bppm-alerting-extension | bppm-alerting-extension | https://github.com/Appdynamics/bppm-alerting-extension | author:appdynamics description:AppDynamics BPPM (BMC ProactiveNet Performance Management) Alerting Extension
+github-appdynamics-splunk-alerting-extension | splunk-alerting-extension | https://github.com/Appdynamics/splunk-alerting-extension | author:appdynamics description:AppDynamics Splunk Alerting Extension
+github-appdynamics-ADQLJavaClient | ADQLJavaClient | https://github.com/Appdynamics/ADQLJavaClient | author:appdynamics description:Updated Sep 19, 2016
+github-appdynamics-testprojectravi | testprojectravi | https://github.com/Appdynamics/testprojectravi | author:appdynamics description:Updated Sep 19, 2016
+github-appdynamics-tibcoems-monitoring-extension | tibcoems-monitoring-extension | https://github.com/Appdynamics/tibcoems-monitoring-extension | author:appdynamics description:Appdynamics TibcoEMS Monitoring Extension
+github-appdynamics-docker-dbwrapper | docker-dbwrapper | https://github.com/Appdynamics/docker-dbwrapper | author:appdynamics description:Repo for database query wrapper (RESTful APIs)
+github-appdynamics-CloudIntegrationSampleMultitierApp | CloudIntegrationSampleMultitierApp | https://github.com/Appdynamics/CloudIntegrationSampleMultitierApp | author:appdynamics description:Sample Java RESTful application with PHP client.
+github-appdynamics-CRMOnline-Demo | CRMOnline-Demo | https://github.com/Appdynamics/CRMOnline-Demo | author:appdynamics description:Demo app for Business Activity Monitoring use cases with Docker support
+github-appdynamics-boundary-alerting-extension | boundary-alerting-extension | https://github.com/Appdynamics/boundary-alerting-extension | author:appdynamics description:AppDynamics Boundary Alerting Extension
+github-appdynamics-python-sysext | python-sysext | https://github.com/Appdynamics/python-sysext | author:appdynamics description:Extremely preliminary sys extension
+github-appdynamics-rackspace-connector-extension | rackspace-connector-extension | https://github.com/Appdynamics/rackspace-connector-extension | author:appdynamics description:AppDynamics RackSpace First-Gen Cloud Connector Extension
+github-appdynamics-static-monitoring-extension | static-monitoring-extension | https://github.com/Appdynamics/static-monitoring-extension | author:appdynamics description:AppDynamics Static Monitoring Extension
+github-appdynamics-ECommerce-Docker-NPM | ECommerce-Docker-NPM | https://github.com/Appdynamics/ECommerce-Docker-NPM | author:appdynamics description:ECommerce demo: NPM version
+github-appdynamics-ECommerce-Load-NPM | ECommerce-Load-NPM | https://github.com/Appdynamics/ECommerce-Load-NPM | author:appdynamics description:Load gen simplified for NPM.
+github-appdynamics-custom-action-scripts | custom-action-scripts | https://github.com/Appdynamics/custom-action-scripts | author:appdynamics description:Contains the script to parse the custom action arguments.
+github-appdynamics-hpopenview-alerting-extension | hpopenview-alerting-extension | https://github.com/Appdynamics/hpopenview-alerting-extension | author:appdynamics description:To push AppDynamics events to HPOV / HPOM
+github-appdynamics-appd-extensions-repo | appd-extensions-repo | https://github.com/Appdynamics/appd-extensions-repo | author:appdynamics description:This repo will contain all the extensions that are published on AppSphere.
+github-appdynamics-SQLMonitor | SQLMonitor | https://github.com/Appdynamics/SQLMonitor | author:appdynamics description:SQL-monitoring-extension is a monitor which puts arbitrary queries against a SQL database as metrics
+github-appdynamics-aws-cloudwatch-exts-commons | aws-cloudwatch-exts-commons | https://github.com/Appdynamics/aws-cloudwatch-exts-commons | author:appdynamics description:Common library used by individual namespace cloudwatch monitoring extension
+github-appdynamics-tibco-hawk-monitoring-extension | tibco-hawk-monitoring-extension | https://github.com/Appdynamics/tibco-hawk-monitoring-extension | author:appdynamics description:Tibco Hawk Monitoring Extension (Not published to community yet )
+github-appdynamics-agent-deployer | agent-deployer | https://github.com/Appdynamics/agent-deployer | author:appdynamics description:Simple bash script to deploy agents
+github-appdynamics-application-importer | application-importer | https://github.com/Appdynamics/application-importer | author:appdynamics description:Simple Bash script to import an application using a template
+github-appdynamics-elasticsearch-query-monitoring-extension | elasticsearch-query-monitoring-extension | https://github.com/Appdynamics/elasticsearch-query-monitoring-extension | author:appdynamics description:Updated Jun 4, 2015
+github-appdynamics-terremark-connector-extension | terremark-connector-extension | https://github.com/Appdynamics/terremark-connector-extension | author:appdynamics description:AppDynamics Terremark Connector Extension
+github-appdynamics-aws-autoscaling-monitoring-extension | aws-autoscaling-monitoring-extension | https://github.com/Appdynamics/aws-autoscaling-monitoring-extension | author:appdynamics description:AWS AutoScaling Monitoring Extension
+github-appdynamics-aws-dynamodb-monitoring-extension | aws-dynamodb-monitoring-extension | https://github.com/Appdynamics/aws-dynamodb-monitoring-extension | author:appdynamics description:AWS DynamoDB Monitoring Extension
+github-appdynamics-aws-opsworks-monitoring-extension | aws-opsworks-monitoring-extension | https://github.com/Appdynamics/aws-opsworks-monitoring-extension | author:appdynamics description:AWS OpsWorks Monitoring Extension
+github-appdynamics-aws-billing-monitoring-extension | aws-billing-monitoring-extension | https://github.com/Appdynamics/aws-billing-monitoring-extension | author:appdynamics description:AWS Billing Monitoring Extension
+github-appdynamics-aws-ebs-monitoring-extension | aws-ebs-monitoring-extension | https://github.com/Appdynamics/aws-ebs-monitoring-extension | author:appdynamics description:AWS EBS Monitoring Extension
+github-appdynamics-kitchensink | kitchensink | https://github.com/Appdynamics/kitchensink | author:appdynamics description:Sample App for Openshift v3
+github-appdynamics-imhotep_prospector | imhotep_prospector | https://github.com/Appdynamics/imhotep_prospector | author:appdynamics description:Imhotep plugin to work with prospector
+github-appdynamics-docker-activemq | docker-activemq | https://github.com/Appdynamics/docker-activemq | author:appdynamics description:Updated Oct 21, 2014
+github-appdynamics-user-account-manager | user-account-manager | https://github.com/Appdynamics/user-account-manager | author:appdynamics description:Bash script for user account management
+github-appdynamics-HA-toolkit | HA-toolkit | https://github.com/Appdynamics/HA-toolkit | author:appdynamics description:AppDynamics Controller High Availability Toolkit
+github-appdynamics-appd-sdk-js | appd-sdk-js | https://github.com/Appdynamics/appd-sdk-js | author:appdynamics description:Appdynamics Javascript SDK
+github-appdynamics-SeleniumECommerce16 | SeleniumECommerce16 | https://github.com/Appdynamics/SeleniumECommerce16 | author:appdynamics description:Updated Oct 12, 2016
+github-appdynamics-artifact-library | artifact-library | https://github.com/Appdynamics/artifact-library | author:appdynamics description:Updated Oct 11, 2016
+github-appdynamics-appscore | appscore | https://github.com/Appdynamics/appscore | author:appdynamics description:Updated Oct 11, 2016
+github-appdynamics-SampleApp | SampleApp | https://github.com/Appdynamics/SampleApp | author:appdynamics description:Self-Service Sample Application
+github-appdynamics-cloudstack-connector-extension | cloudstack-connector-extension | https://github.com/Appdynamics/cloudstack-connector-extension | author:appdynamics description:AppDynamics CloudStack Connector Extension
+github-appdynamics-riak-monitoring-extension | riak-monitoring-extension | https://github.com/Appdynamics/riak-monitoring-extension | author:appdynamics description:An AppDynamics Extension to monitor Riak.
+github-appdynamics-docker-rwd-python | docker-rwd-python | https://github.com/Appdynamics/docker-rwd-python | author:appdynamics description:Docker container for Python RWD clients
+github-appdynamics-apache-log-monitoring-extension | apache-log-monitoring-extension | https://github.com/Appdynamics/apache-log-monitoring-extension | author:appdynamics description:Updated Jun 25, 2015
+github-appdynamics-ECommerce-FaultInjection | ECommerce-FaultInjection | https://github.com/Appdynamics/ECommerce-FaultInjection | author:appdynamics description:Fault Injection framework code.
+github-appdynamics-Self-service-Sample-Apps | Self-service-Sample-Apps | https://github.com/Appdynamics/Self-service-Sample-Apps | author:appdynamics description:Repository for self-service sample apps.
+github-appdynamics-couchbase-monitoring-extension | couchbase-monitoring-extension | https://github.com/Appdynamics/couchbase-monitoring-extension | author:appdynamics description:Updated Apr 18, 2016
+github-appdynamics-RestMetricQueries | RestMetricQueries | https://github.com/Appdynamics/RestMetricQueries | author:appdynamics description:Updated Apr 26, 2016
+github-appdynamics-ssl-certificate-monitoring-extension | ssl-certificate-monitoring-extension | https://github.com/Appdynamics/ssl-certificate-monitoring-extension | author:appdynamics description:This extension monitors the SSL certificates for configurable domains.
+github-appdynamics-PythonDemoDocker | PythonDemoDocker | https://github.com/Appdynamics/PythonDemoDocker | author:appdynamics description:Repo for Python Demo app using Docker
+github-appdynamics-ApDex_Agent | ApDex_Agent | https://github.com/Appdynamics/ApDex_Agent | author:appdynamics description:A Simple Apdex agent and CLI using the EUM Analytics API
+github-appdynamics-splunkbaseapp | splunkbaseapp | https://github.com/Appdynamics/splunkbaseapp | author:appdynamics description:Updated Jun 8, 2016
+github-appdynamics-wpt-rwd-python | wpt-rwd-python | https://github.com/Appdynamics/wpt-rwd-python | author:appdynamics description:RWD python client for Webpagetest
+github-appdynamics-OSS | OSS | https://github.com/Appdynamics/OSS | author:appdynamics description:Third Party Open Source Software
+github-appdynamics-generic-powershell-alerting-extension | generic-powershell-alerting-extension | https://github.com/Appdynamics/generic-powershell-alerting-extension | author:appdynamics description:AppDynamics Generic PowerShell Alerting Extension for Controllers on Windows
+github-appdynamics-Command-Watcher-Extension | Command-Watcher-Extension | https://github.com/Appdynamics/Command-Watcher-Extension | author:appdynamics description:Updated Jul 8, 2016
+github-appdynamics-servicenow-api-alerting-extension | servicenow-api-alerting-extension | https://github.com/Appdynamics/servicenow-api-alerting-extension | author:appdynamics description:AppDynamics ServiceNow REST API Alerting Extension
+github-appdynamics-maven-repo | maven-repo | https://github.com/Appdynamics/maven-repo | author:appdynamics description:Updated Jul 25, 2016
+github-appdynamics-AD-Capital | AD-Capital | https://github.com/Appdynamics/AD-Capital | author:appdynamics description:Appdynamics Transaction Analytics demo with docker support
+github-appdynamics-AD-CapitalSELoad | AD-CapitalSELoad | https://github.com/Appdynamics/AD-CapitalSELoad | author:appdynamics description:Updated Jul 15, 2016
+github-appdynamics-docker-jenkins-cdDemo | docker-jenkins-cdDemo | https://github.com/Appdynamics/docker-jenkins-cdDemo | author:appdynamics description:continuous delivery with jenkins docker and source code on github
+github-appdynamics-LicenseAuditor | LicenseAuditor | https://github.com/Appdynamics/LicenseAuditor | author:appdynamics description:Updated Jun 29, 2016
+github-appdynamics-QueryExecutorClient | QueryExecutorClient | https://github.com/Appdynamics/QueryExecutorClient | author:appdynamics description:Client to the docker-dbwrapper.
+github-appdynamics-PCF-multitier-php | PCF-multitier-php | https://github.com/Appdynamics/PCF-multitier-php | author:appdynamics description:Sample multitier PHP application used for PCF/PWS platform
+github-appdynamics-campfire-alerting-extension | campfire-alerting-extension | https://github.com/Appdynamics/campfire-alerting-extension | author:appdynamics description:Campfire Alerting Extension
+github-appdynamics-android-places-gradle | android-places-gradle | https://github.com/Appdynamics/android-places-gradle | author:appdynamics description:Android demo with Google Geocoding, Elevation and Civic Information API (Gradle)
+github-appdynamics-ECommerce-Angular-NPM | ECommerce-Angular-NPM | https://github.com/Appdynamics/ECommerce-Angular-NPM | author:appdynamics description:Angular app for NPM
+github-appdynamics-azure-servicebus-monitoring-extension | azure-servicebus-monitoring-extension | https://github.com/Appdynamics/azure-servicebus-monitoring-extension | author:appdynamics description:Azure Service Bus Monitoring Extension
+github-appdynamics-shld | shld | https://github.com/Appdynamics/shld | author:appdynamics description:Shell Script Linking Utility
+github-appdynamics-datapower-monitoring-extension | datapower-monitoring-extension | https://github.com/Appdynamics/datapower-monitoring-extension | author:appdynamics description:Updated Apr 15, 2016
+github-appdynamics-f5-monitoring-extension | f5-monitoring-extension | https://github.com/Appdynamics/f5-monitoring-extension | author:appdynamics description:AppDynamics F5 Monitoring Extension
+github-appdynamics-spring-music | spring-music | https://github.com/Appdynamics/spring-music | author:appdynamics description:CF sample app for deploying Java Applications on CF
+github-appdynamics-pagerduty-alerting-extension | pagerduty-alerting-extension | https://github.com/Appdynamics/pagerduty-alerting-extension | author:appdynamics description:AppDynamics PagerDuty Alerting Extension
+github-appdynamics-hornetq-monitoring-extension | hornetq-monitoring-extension | https://github.com/Appdynamics/hornetq-monitoring-extension | author:appdynamics description:Updated Apr 5, 2016
+github-appdynamics-zabbix-monitoring-extension | zabbix-monitoring-extension | https://github.com/Appdynamics/zabbix-monitoring-extension | author:appdynamics description:Zabbix Monitoring Extension
+github-appdynamics-twitter-alerting-extension | twitter-alerting-extension | https://github.com/Appdynamics/twitter-alerting-extension | author:appdynamics description:Alerting Extension for Twitter
+github-appdynamics-aws-ec2-monitoring-extension | aws-ec2-monitoring-extension | https://github.com/Appdynamics/aws-ec2-monitoring-extension | author:appdynamics description:AWS EC2 Monitoring Extension
+github-appdynamics-aws-elasticache-monitoring-extension | aws-elasticache-monitoring-extension | https://github.com/Appdynamics/aws-elasticache-monitoring-extension | author:appdynamics description:AWS ElastiCache Monitoring Extension
+github-appdynamics-TibcoBWProcessMonitor | TibcoBWProcessMonitor | https://github.com/Appdynamics/TibcoBWProcessMonitor | author:appdynamics description:Tibco BW Process monitoring extension
+github-appdynamics-aws-rds-monitoring-extension | aws-rds-monitoring-extension | https://github.com/Appdynamics/aws-rds-monitoring-extension | author:appdynamics description:AWS RDS Monitoring Extension
+github-appdynamics-opsgenie-alerting-extension | opsgenie-alerting-extension | https://github.com/Appdynamics/opsgenie-alerting-extension | author:appdynamics description:Updated Jun 17, 2016
+github-appdynamics-AppDApplicationDiscovery | AppDApplicationDiscovery | https://github.com/Appdynamics/AppDApplicationDiscovery | author:appdynamics description:Updated Jan 16, 2015
+github-appdynamics-splunk-monitoring-extension | splunk-monitoring-extension | https://github.com/Appdynamics/splunk-monitoring-extension | author:appdynamics description:Updated Dec 15, 2014
+github-appdynamics-FileWatcher-extension | FileWatcher-extension | https://github.com/Appdynamics/FileWatcher-extension | author:appdynamics description:Updated Jun 8, 2016
+github-appdynamics-rackspace-monitoring-extension | rackspace-monitoring-extension | https://github.com/Appdynamics/rackspace-monitoring-extension | author:appdynamics description:AppDynamics Rackspace Monitoring Extension
+github-appdynamics-AD-Capital-Load | AD-Capital-Load | https://github.com/Appdynamics/AD-Capital-Load | author:appdynamics description:Load generator for AD-Capital demo application
+github-appdynamics-amps-monitoring-extension | amps-monitoring-extension | https://github.com/Appdynamics/amps-monitoring-extension | author:appdynamics description:AMPS Monitoring Extension
+github-appdynamics-ECommerce-WS | ECommerce-WS | https://github.com/Appdynamics/ECommerce-WS | author:appdynamics description:ECommerce-WS - OrderService using JAX-WS libraries.
+github-appdynamics-keynote-monitoring-extension | keynote-monitoring-extension | https://github.com/Appdynamics/keynote-monitoring-extension | author:appdynamics description:Updated Dec 17, 2015
+github-appdynamics-memcached-monitoring-extension | memcached-monitoring-extension | https://github.com/Appdynamics/memcached-monitoring-extension | author:appdynamics description:Memcached Monitoring Extension for AppDynamics
+github-appdynamics-sti-jboss-eap | sti-jboss-eap | https://github.com/Appdynamics/sti-jboss-eap | author:appdynamics description:Updated Nov 25, 2015
+github-appdynamics-adeptiaesb-monitoring-extension | adeptiaesb-monitoring-extension | https://github.com/Appdynamics/adeptiaesb-monitoring-extension | author:appdynamics description:Adeptia ESB Monitoring Extension
+github-appdynamics-controller_runbook | controller_runbook | https://github.com/Appdynamics/controller_runbook | author:appdynamics description:Scripts, Tools, and Procedure for operating an AppDynamics Controller
+github-appdynamics-c-cpp-sdk | c-cpp-sdk | https://github.com/Appdynamics/c-cpp-sdk | author:appdynamics description:Updated Oct 14, 2014
+github-appdynamics-AlertParsingExtension | AlertParsingExtension | https://github.com/Appdynamics/AlertParsingExtension | author:appdynamics description:Updated Oct 21, 2014
+github-appdynamics-azure-database-monitoring-extension | azure-database-monitoring-extension | https://github.com/Appdynamics/azure-database-monitoring-extension | author:appdynamics description:Windows Azure Database Monitoring Extension
+github-appdynamics-pagerduty-saas-alert-extension | pagerduty-saas-alert-extension | https://github.com/Appdynamics/pagerduty-saas-alert-extension | author:appdynamics description:Updated Oct 6, 2014
+github-appdynamics-slack-alerting-extension | slack-alerting-extension | https://github.com/Appdynamics/slack-alerting-extension | author:appdynamics description:Updated Sep 8, 2016
+github-appdynamics-DiskSpaceAlertExtension | DiskSpaceAlertExtension | https://github.com/Appdynamics/DiskSpaceAlertExtension | author:appdynamics description:An AppDynamics Machine Agent extension to alert if disk space crosses a warning or critical threshold. If a threshold is crossed, the extension will create a custom event upon which you can trigger a Policy + Action to get notified.
+github-appdynamics-ibm-tivoli-bsm-alerting-extension | ibm-tivoli-bsm-alerting-extension | https://github.com/Appdynamics/ibm-tivoli-bsm-alerting-extension | author:appdynamics description:Updated Sep 9, 2016
+github-appdynamics-docs-appdynamics | docs-appdynamics | https://github.com/Appdynamics/docs-appdynamics | author:appdynamics description:Documentaiton for AppDynamics APM Tile
+github-appdynamics-BMC_HPD_Incident_Action | BMC_HPD_Incident_Action | https://github.com/Appdynamics/BMC_HPD_Incident_Action | author:appdynamics description:Updated May 12, 2015
+github-appdynamics-Demo-Puppet | Demo-Puppet | https://github.com/Appdynamics/Demo-Puppet | author:appdynamics description:This is a repository to house Puppet code for all Demo instances
+github-appdynamics-focus | focus | https://github.com/Appdynamics/focus | author:appdynamics description:Updated Aug 25, 2016
+github-appdynamics-.NET-SE-Lab | .NET-SE-Lab | https://github.com/Appdynamics/.NET-SE-Lab | author:appdynamics description:.NET lab designed for AppDynamics sales engineers to educate themselves how to monitor .NET applications using AppDynamics .NET agent
+github-appdynamics-vsphere-connector-extension | vsphere-connector-extension | https://github.com/Appdynamics/vsphere-connector-extension | author:appdynamics description:AppDynamics vSphere Connector Extension
+github-appdynamics-iPlanet-monitoring-extension | iPlanet-monitoring-extension | https://github.com/Appdynamics/iPlanet-monitoring-extension | author:appdynamics description:Oracle iPlanet Monitoring Extension
+github-appdynamics-Docker-services | Docker-services | https://github.com/Appdynamics/Docker-services | author:appdynamics description:Repo for Docker Services (Load generator Applications)
+github-appdynamics-NodeJSDemoDocker | NodeJSDemoDocker | https://github.com/Appdynamics/NodeJSDemoDocker | author:appdynamics description:Repo for NodeJS Demo app using Docker
+github-appdynamics-offline_nodejs-buildpack | offline_nodejs-buildpack | https://github.com/Appdynamics/offline_nodejs-buildpack | author:appdynamics description:Updated Mar 15, 2016
+github-appdynamics-AD-Capital-Docker | AD-Capital-Docker | https://github.com/Appdynamics/AD-Capital-Docker | author:appdynamics description:AppDynamics Loan Processing demo application
+github-appdynamics-AppDSimpleCrypto | AppDSimpleCrypto | https://github.com/Appdynamics/AppDSimpleCrypto | author:appdynamics description:A simple library to encrypt strings to be used with extensions
+github-appdynamics-custom_argparse | custom_argparse | https://github.com/Appdynamics/custom_argparse | author:appdynamics description:Python module containing subclass of argparse.ArgumentParser to allow explicit formatting of description and usage output.
+github-appdynamics-endeca-mdex-monitoring-extension | endeca-mdex-monitoring-extension | https://github.com/Appdynamics/endeca-mdex-monitoring-extension | author:appdynamics description:Updated Sep 22, 2014
+github-appdynamics-marval-alerting-extension | marval-alerting-extension | https://github.com/Appdynamics/marval-alerting-extension | author:appdynamics description:Updated Oct 6, 2014
+github-appdynamics-couchdb-monitoring-extension | couchdb-monitoring-extension | https://github.com/Appdynamics/couchdb-monitoring-extension | author:appdynamics description:Updated Sep 5, 2014
+github-appdynamics-azure-connector-extension | azure-connector-extension | https://github.com/Appdynamics/azure-connector-extension | author:appdynamics description:AppDynamics Windows Azure Connector Extension
+github-appdynamics-c3p0-monitoring-extension | c3p0-monitoring-extension | https://github.com/Appdynamics/c3p0-monitoring-extension | author:appdynamics description:Updated Aug 27, 2014
+github-appdynamics-Event-Proxy | Event-Proxy | https://github.com/Appdynamics/Event-Proxy | author:appdynamics description:Proxy Events from SaaS Controllers to internal HPOM Systems
+github-appdynamics-glassfish-monitoring-extension | glassfish-monitoring-extension | https://github.com/Appdynamics/glassfish-monitoring-extension | author:appdynamics description:Glassfish Monitoring Extension
+github-appdynamics-neo4j-monitoring-extension | neo4j-monitoring-extension | https://github.com/Appdynamics/neo4j-monitoring-extension | author:appdynamics description:An AppDynamics Extension to monitor Neo4j instances.
+github-appdynamics-ACE_DynamicServiceTest | ACE_DynamicServiceTest | https://github.com/Appdynamics/ACE_DynamicServiceTest | author:appdynamics description:Updated Feb 20, 2015
+github-appdynamics-ca-siteminder-monitoring-extension | ca-siteminder-monitoring-extension | https://github.com/Appdynamics/ca-siteminder-monitoring-extension | author:appdynamics description:An AppDynamics monitoring extension for CA's SiteMinder product.
+github-appdynamics-network-monitoring-extension | network-monitoring-extension | https://github.com/Appdynamics/network-monitoring-extension | author:appdynamics description:Network Monitoring Extension
+github-appdynamics-url-monitoring-extension | url-monitoring-extension | https://github.com/Appdynamics/url-monitoring-extension | author:appdynamics description:An AppDynamics extension to monitor site urls
+github-appdynamics-mysql-monitoring-extension | mysql-monitoring-extension | https://github.com/Appdynamics/mysql-monitoring-extension | author:appdynamics description:AppDynamics MySQL Monitoring Extension
+github-appdynamics-vertx-financial-demo | vertx-financial-demo | https://github.com/Appdynamics/vertx-financial-demo | author:appdynamics description:Vert.x-based financial demo app
+github-appdynamics-jboss-connection-pool-monitoring-extension | jboss-connection-pool-monitoring-extension | https://github.com/Appdynamics/jboss-connection-pool-monitoring-extension | author:appdynamics description:An AppDynamics extension to be used with a stand alone Java machine agent to provide JBoss DataSource connection pool statistics
+github-appdynamics-uwsgi-stat-server-extension | uwsgi-stat-server-extension | https://github.com/Appdynamics/uwsgi-stat-server-extension | author:appdynamics description:This AppDynamics extension pulls statistics related to uWSGI processes.
+github-appdynamics-rss-feed-monitoring-extension | rss-feed-monitoring-extension | https://github.com/Appdynamics/rss-feed-monitoring-extension | author:appdynamics description:AppDynamics RSS/Atom Feed monitoring extension
+github-appdynamics-PHP-Demo-App | PHP-Demo-App | https://github.com/Appdynamics/PHP-Demo-App | author:appdynamics description:Acme Wine Cellar - PHP Demo
+github-appdynamics-aws-storagegateway-monitoring-extension | aws-storagegateway-monitoring-extension | https://github.com/Appdynamics/aws-storagegateway-monitoring-extension | author:appdynamics description:AWS StorageGateway Monitoring Extension
+github-appdynamics-aws-sns-monitoring-extension | aws-sns-monitoring-extension | https://github.com/Appdynamics/aws-sns-monitoring-extension | author:appdynamics description:AWS SNS Monitoring Extension
+github-appdynamics-aws-route53-monitoring-extension | aws-route53-monitoring-extension | https://github.com/Appdynamics/aws-route53-monitoring-extension | author:appdynamics description:AWS Route53 Monitoring Extension
+github-appdynamics-aws-redshift-monitoring-extension | aws-redshift-monitoring-extension | https://github.com/Appdynamics/aws-redshift-monitoring-extension | author:appdynamics description:AWS Redshift Monitoring Extension
+github-appdynamics-aws-customnamespace-monitoring-extension | aws-customnamespace-monitoring-extension | https://github.com/Appdynamics/aws-customnamespace-monitoring-extension | author:appdynamics description:AWS Custom Namespace Monitoring Extension
+github-appdynamics-aws-lambda-monitoring-extension | aws-lambda-monitoring-extension | https://github.com/Appdynamics/aws-lambda-monitoring-extension | author:appdynamics description:AWS Lambda Monitoring Extension
+github-appdynamics-aws-cloudsearch-monitoring-extension | aws-cloudsearch-monitoring-extension | https://github.com/Appdynamics/aws-cloudsearch-monitoring-extension | author:appdynamics description:AWS CloudSearch Monitoring Extension
+github-appdynamics-weblogic-monitoring-extension | weblogic-monitoring-extension | https://github.com/Appdynamics/weblogic-monitoring-extension | author:appdynamics description:AppDynamics extension to monitor Oracle WebLogic Server
+github-appdynamics-python-httpext | python-httpext | https://github.com/Appdynamics/python-httpext | author:appdynamics description:Small HTTP extension
+github-appdynamics-python-langutil | python-langutil | https://github.com/Appdynamics/python-langutil | author:appdynamics description:For generation of code in other languages from Python variables
+github-appdynamics-aws-elasticmapreduce-monitoring-extension | aws-elasticmapreduce-monitoring-extension | https://github.com/Appdynamics/aws-elasticmapreduce-monitoring-extension | author:appdynamics description:AWS ElasticMapReduce Monitoring Extension
+github-appdynamics-aws-elb-monitoring-extension | aws-elb-monitoring-extension | https://github.com/Appdynamics/aws-elb-monitoring-extension | author:appdynamics description:AWS ELB Monitoring Extension

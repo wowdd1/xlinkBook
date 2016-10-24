@@ -1,0 +1,6 @@
+github-microsoft-research-Naiad | Naiad | https://github.com/MicrosoftResearch/Naiad | author:microsoft-research description:The Naiad system provides fast incremental and iterative computation for data-parallel workloads
+github-microsoft-research-Dryad | Dryad | https://github.com/MicrosoftResearch/Dryad | author:microsoft-research description:This is a research prototype of the Dryad and DryadLINQ data-parallel processing frameworks running on Hadoop YARN.
+github-microsoft-research-Azimuth | Azimuth | https://github.com/MicrosoftResearch/Azimuth | author:microsoft-research description:Machine Learning-Based Predictive Modelling of CRISPR/Cas9 guide efficiency
+github-microsoft-research-NaiadSamples | NaiadSamples | https://github.com/MicrosoftResearch/NaiadSamples | author:microsoft-research description:Sample implementations using Naiad
+github-microsoft-research-SHS | SHS | https://github.com/MicrosoftResearch/SHS | author:microsoft-research description:The Scalable Hyperlink Store
+github-microsoft-research-Peloponnese | Peloponnese | https://github.com/MicrosoftResearch/Peloponnese | author:microsoft-research description:A collection of libraries for working with YARN from .Net

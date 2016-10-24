@@ -1,7 +1,8 @@
-github-nvidia-DIGITS | DIGITS | https://github.com/NVIDIA/DIGITS | author:nvidia description:Deep Learning GPU Training System
 github-nvidia-nvidia-docker | nvidia-docker | https://github.com/NVIDIA/nvidia-docker | author:nvidia description:Build and run Docker containers leveraging NVIDIA GPUs
+github-nvidia-DIGITS | DIGITS | https://github.com/NVIDIA/DIGITS | author:nvidia description:Deep Learning GPU Training System
 github-nvidia-nccl | nccl | https://github.com/NVIDIA/nccl | author:nvidia description:Optimized primitives for collective multi-GPU communication
 github-nvidia-libglvnd | libglvnd | https://github.com/NVIDIA/libglvnd | author:nvidia description:The GL Vendor-Neutral Dispatch library
+github-nvidia-Falcor | Falcor | https://github.com/NVIDIA/Falcor | author:nvidia description:Real-time rendering research framework
 github-nvidia-cnmem | cnmem | https://github.com/NVIDIA/cnmem | author:nvidia description:A simple memory manager for CUDA designed to help Deep Learning frameworks manage memory
 github-nvidia-gpu-rest-engine | gpu-rest-engine | https://github.com/NVIDIA/gpu-rest-engine | author:nvidia description:A REST API for Caffe using Docker and Go
 github-nvidia-gdrcopy | gdrcopy | https://github.com/NVIDIA/gdrcopy | author:nvidia description:A fast GPU memory copy library based on NVIDIA GPUDirect RDMA technology
@@ -9,30 +10,38 @@ github-nvidia-cuda-gdb | cuda-gdb | https://github.com/NVIDIA/cuda-gdb | author:
 github-nvidia-remorac | remorac | https://github.com/NVIDIA/remorac | author:nvidia description:Updated May 1, 2016
 github-nvidia-tegra-nouveau-rootfs | tegra-nouveau-rootfs | https://github.com/NVIDIA/tegra-nouveau-rootfs | author:nvidia description:Manifests to create an Arch Linux ARM rootfs augmented with Nouveau and the OSS graphics stack for NVIDIA's Jetson TK1/TX1 boards
 github-nvidia-nvidia-settings | nvidia-settings | https://github.com/NVIDIA/nvidia-settings | author:nvidia description:NVIDIA driver control panel
-github-nvidia-tegra-uboot-flasher-scripts | tegra-uboot-flasher-scripts | https://github.com/NVIDIA/tegra-uboot-flasher-scripts | author:nvidia description:Tegra U-Boot Flasher project: scripts
 github-nvidia-android-manifest | android-manifest | https://github.com/NVIDIA/android-manifest | author:nvidia description:Android Manifest
+github-nvidia-tegra-uboot-flasher-scripts | tegra-uboot-flasher-scripts | https://github.com/NVIDIA/tegra-uboot-flasher-scripts | author:nvidia description:Tegra U-Boot Flasher project: scripts
 github-nvidia-tegrarcm | tegrarcm | https://github.com/NVIDIA/tegrarcm | author:nvidia description:Tegra ReCovery Mode tool; communicates with Tegra's boot ROM to download code over USB
 github-nvidia-nvidia-modprobe | nvidia-modprobe | https://github.com/NVIDIA/nvidia-modprobe | author:nvidia description:Load the NVIDIA kernel module and create NVIDIA character device files
 github-nvidia-pynvrtc | pynvrtc | https://github.com/NVIDIA/pynvrtc | author:nvidia description:Python Binding to NVRTC
-github-nvidia-nvidia-xconfig | nvidia-xconfig | https://github.com/NVIDIA/nvidia-xconfig | author:nvidia description:NVIDIA xorg.conf configurator
-github-nvidia-nvidia-installer | nvidia-installer | https://github.com/NVIDIA/nvidia-installer | author:nvidia description:NVIDIA driver installer
 github-nvidia-vdpau-hevc-example | vdpau-hevc-example | https://github.com/NVIDIA/vdpau-hevc-example | author:nvidia description:A sample VDPAU H.265/HEVC video player
-github-nvidia-cbootimage | cbootimage | https://github.com/NVIDIA/cbootimage | author:nvidia description:Tegra BCT and bootable flash image generator/compiler
-github-nvidia-GFN-Link | GFN-Link | https://github.com/NVIDIA/GFN-Link | author:nvidia description:Updated Jul 12, 2016
-github-nvidia-tegra-uboot-scripts | tegra-uboot-scripts | https://github.com/NVIDIA/tegra-uboot-scripts | author:nvidia description:Generate boot.scr for U-Boot on Tegra
+github-nvidia-nvidia-installer | nvidia-installer | https://github.com/NVIDIA/nvidia-installer | author:nvidia description:NVIDIA driver installer
+github-nvidia-nvidia-xconfig | nvidia-xconfig | https://github.com/NVIDIA/nvidia-xconfig | author:nvidia description:NVIDIA xorg.conf configurator
+github-nvidia-GFN-Link | GFN-Link | https://github.com/NVIDIA/GFN-Link | author:nvidia description:Updated Sep 6, 2016
 github-nvidia-tegra-pinmux-scripts | tegra-pinmux-scripts | https://github.com/NVIDIA/tegra-pinmux-scripts | author:nvidia description:Scripts to auto-generate pin mux drivers and board configuration tables for Tegra SoCs and boards
-github-nvidia-winex_lgpl | winex_lgpl | https://github.com/NVIDIA/winex_lgpl | author:nvidia description:Open Source licensed components of Cider/WineX, and associated build tools and support libraries
+github-nvidia-cbootimage | cbootimage | https://github.com/NVIDIA/cbootimage | author:nvidia description:Tegra BCT and bootable flash image generator/compiler
+github-nvidia-tegra-uboot-scripts | tegra-uboot-scripts | https://github.com/NVIDIA/tegra-uboot-scripts | author:nvidia description:Generate boot.scr for U-Boot on Tegra
 github-nvidia-nvidia-persistenced | nvidia-persistenced | https://github.com/NVIDIA/nvidia-persistenced | author:nvidia description:NVIDIA driver persistence daemon
-github-nvidia-gef-nsight | gef-nsight | https://github.com/NVIDIA/gef-nsight | author:nvidia description:Graphical Editing Framework (GEF) project repository (gef)
+github-nvidia-Forma | Forma | https://github.com/NVIDIA/Forma | author:nvidia description:DSL for stencils and image processing
+github-nvidia-winex_lgpl | winex_lgpl | https://github.com/NVIDIA/winex_lgpl | author:nvidia description:Open Source licensed components of Cider/WineX, and associated build tools and support libraries
 github-nvidia-cbootimage-configs | cbootimage-configs | https://github.com/NVIDIA/cbootimage-configs | author:nvidia description:Configuration files for use with cbootimage
-github-nvidia-cpu-microcode | cpu-microcode | https://github.com/NVIDIA/cpu-microcode | author:nvidia description:NVIDIA CPU microcode
-github-nvidia-vdpau-win-x11 | vdpau-win-x11 | https://github.com/NVIDIA/vdpau-win-x11 | author:nvidia description:VDPAU X11 window system helper library
-github-nvidia-tegra-uboot-flasher-manifests | tegra-uboot-flasher-manifests | https://github.com/NVIDIA/tegra-uboot-flasher-manifests | author:nvidia description:Tegra U-Boot Flasher project: manifests (see https://github.com/NVIDIA/tegra-uboot-flasher-scripts)
 github-nvidia-android-linux-3.10 | android-linux-3.10 | https://github.com/NVIDIA/android-linux-3.10 | author:nvidia description:Android Linux kernel
-github-nvidia-android-framework-base | android-framework-base | https://github.com/NVIDIA/android-framework-base | author:nvidia description:Android Frameworks
-github-nvidia-android-3rdparty-u-boot | android-3rdparty-u-boot | https://github.com/NVIDIA/android-3rdparty-u-boot | author:nvidia description:Android U-Boot
-github-nvidia-android-system-vold | android-system-vold | https://github.com/NVIDIA/android-system-vold | author:nvidia description:Android Mount Daemon
-github-nvidia-android-framework-opt-net-wifi | android-framework-opt-net-wifi | https://github.com/NVIDIA/android-framework-opt-net-wifi | author:nvidia description:Android WiFi Service
-github-nvidia-nvidia-query-resource-opengl | nvidia-query-resource-opengl | https://github.com/NVIDIA/nvidia-query-resource-opengl | author:nvidia description:A tool for querying OpenGL resource usage of applications using the NVIDIA OpenGL driver
+github-nvidia-vdpau-win-x11 | vdpau-win-x11 | https://github.com/NVIDIA/vdpau-win-x11 | author:nvidia description:VDPAU X11 window system helper library
+github-nvidia-gef-nsight | gef-nsight | https://github.com/NVIDIA/gef-nsight | author:nvidia description:Graphical Editing Framework (GEF) project repository (gef)
+github-nvidia-cpu-microcode | cpu-microcode | https://github.com/NVIDIA/cpu-microcode | author:nvidia description:NVIDIA CPU microcode
+github-nvidia-tegra-uboot-flasher-manifests | tegra-uboot-flasher-manifests | https://github.com/NVIDIA/tegra-uboot-flasher-manifests | author:nvidia description:Tegra U-Boot Flasher project: manifests (see https://github.com/NVIDIA/tegra-uboot-flasher-scripts)
 github-nvidia-android-prebuilts-device-nvidia | android-prebuilts-device-nvidia | https://github.com/NVIDIA/android-prebuilts-device-nvidia | author:nvidia description:Android Device Configuration
+github-nvidia-nvidia-query-resource-opengl | nvidia-query-resource-opengl | https://github.com/NVIDIA/nvidia-query-resource-opengl | author:nvidia description:A tool for querying OpenGL resource usage of applications using the NVIDIA OpenGL driver
 github-nvidia-android-platform-vendor-nvidia-build | android-platform-vendor-nvidia-build | https://github.com/NVIDIA/android-platform-vendor-nvidia-build | author:nvidia description:Android vendor build
+github-nvidia-android-framework-opt-net-wifi | android-framework-opt-net-wifi | https://github.com/NVIDIA/android-framework-opt-net-wifi | author:nvidia description:Android WiFi Service
+github-nvidia-android-system-vold | android-system-vold | https://github.com/NVIDIA/android-system-vold | author:nvidia description:Android Mount Daemon
+github-nvidia-SKA-gpu-grid | SKA-gpu-grid | https://github.com/NVIDIA/SKA-gpu-grid | author:nvidia description:Gridding for the square kilometer array using GPUs
+github-nvidia-SKA-gpu-stefcal | SKA-gpu-stefcal | https://github.com/NVIDIA/SKA-gpu-stefcal | author:nvidia description:Antenna gain calibration for the square kilometer array using GPUs
+github-nvidia-SKA-gpu-degrid | SKA-gpu-degrid | https://github.com/NVIDIA/SKA-gpu-degrid | author:nvidia description:Degridding for the square kilometer array using GPUs
+github-nvidia-SKA-gpu-multiscale-clean | SKA-gpu-multiscale-clean | https://github.com/NVIDIA/SKA-gpu-multiscale-clean | author:nvidia description:Multiscale CLEAN for the square kilometer array using GPUs
+github-nvidia-SKA-gpu-direct-convolve | SKA-gpu-direct-convolve | https://github.com/NVIDIA/SKA-gpu-direct-convolve | author:nvidia description:Comparison of convolution methods for small kernels for the square kilometer array using GPUs
+github-nvidia-SKA-gpu-reproject | SKA-gpu-reproject | https://github.com/NVIDIA/SKA-gpu-reproject | author:nvidia description:Image reprojection for the square kilometer array using GPUs
+github-nvidia-android-3rdparty-u-boot | android-3rdparty-u-boot | https://github.com/NVIDIA/android-3rdparty-u-boot | author:nvidia description:Android U-Boot
+github-nvidia-android-framework-base | android-framework-base | https://github.com/NVIDIA/android-framework-base | author:nvidia description:Android Frameworks
+github-nvidia-PRBench | PRBench | https://github.com/NVIDIA/PRBench | author:nvidia description:A CUDA implementation of the PageRank Pipeline Benchmark

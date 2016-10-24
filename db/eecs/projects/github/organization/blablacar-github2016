@@ -1,23 +1,25 @@
-github-blablacar-78-1 | flaggr-android | https://github.com/blablacar/flaggr-android | author:blablacar description:Updated May 11, 2016
-github-blablacar-75-2 | dgr | https://github.com/blablacar/dgr | author:blablacar description:Container build and runtime tool
-github-blablacar-18-3 | redis-dictator | https://github.com/blablacar/redis-dictator | author:blablacar description:Master Election Manager for Redis
-github-blablacar-13-4 | ggn | https://github.com/blablacar/ggn | author:blablacar description:Link container builds with envs to end up into low level orchestration
-github-blablacar-12-5 | android-screenshots | https://github.com/blablacar/android-screenshots | author:blablacar description:Updated Mar 7, 2016
-github-blablacar-7-6 | worker-lib | https://github.com/blablacar/worker-lib | author:blablacar description:Simple lib to consume AMQP messages.
-github-blablacar-5-7 | PhotoEditor-objc | https://github.com/blablacar/PhotoEditor-objc | author:blablacar description:Updated Mar 9, 2016
-github-blablacar-5-8 | BlablacarI18nRoutingBundle | https://github.com/blablacar/BlablacarI18nRoutingBundle | author:blablacar description:Symfony2 bundle to handle i18n
-github-blablacar-4-9 | capl | https://github.com/blablacar/capl | author:blablacar description:Comuto Asynchronous Process Launcher/Consumer
-github-blablacar-4-10 | nagios-supervisord-processes | https://github.com/blablacar/nagios-supervisord-processes | author:blablacar description:Updated Feb 6, 2015
-github-blablacar-3-11 | BlablacarMemcachedBundle | https://github.com/blablacar/BlablacarMemcachedBundle | author:blablacar description:Bundle for memcached client
-github-blablacar-2-12 | go-synapse | https://github.com/blablacar/go-synapse | author:blablacar description:Updated Feb 25, 2016
-github-blablacar-2-13 | redis-client | https://github.com/blablacar/redis-client | author:blablacar description:A simple Redis Client
-github-blablacar-2-14 | go-nerve | https://github.com/blablacar/go-nerve | author:blablacar description:Updated May 10, 2016
-github-blablacar-2-15 | twig-stamp | https://github.com/blablacar/twig-stamp | author:blablacar description:Put a placeholder in a base template, fill it from anywhere.
-github-blablacar-1-16 | bbc-php-tools | https://github.com/blablacar/bbc-php-tools | author:blablacar description:BlaBlaCar tools PHP extension
-github-blablacar-1-17 | blablatech | https://github.com/blablacar/blablatech | author:blablacar description:BlaBlaCar's Tech Blog
-github-blablacar-1-18 | BlablacarRedisBundle | https://github.com/blablacar/BlablacarRedisBundle | author:blablacar description:A Redis bundle for Symfony2
-github-blablacar-1-19 | gertrude | https://github.com/blablacar/gertrude | author:blablacar description:parcequ'on s'en cogne du nom
-github-blablacar-0-20 | blablavote | https://github.com/blablacar/blablavote | author:blablacar description:Updated May 18, 2016
-github-blablacar-0-21 | attributes-merger | https://github.com/blablacar/attributes-merger | author:blablacar description:Updated Oct 29, 2015
-github-blablacar-0-22 | memcached-client | https://github.com/blablacar/memcached-client | author:blablacar description:A memcached client
-github-blablacar-0-23 | blablafaces | https://github.com/blablacar/blablafaces | author:blablacar description:Updated Jan 29, 2015
+github-blablacar-dgr | dgr | https://github.com/blablacar/dgr | author:blablacar description:Container build and runtime tool
+github-blablacar-flaggr-android | flaggr-android | https://github.com/blablacar/flaggr-android | author:blablacar description:Updated Aug 26, 2016
+github-blablacar-ggn | ggn | https://github.com/blablacar/ggn | author:blablacar description:Link container builds with envs to end up into low level orchestration
+github-blablacar-redis-dictator | redis-dictator | https://github.com/blablacar/redis-dictator | author:blablacar description:Master Election Manager for Redis
+github-blablacar-android-screenshots | android-screenshots | https://github.com/blablacar/android-screenshots | author:blablacar description:Updated Jul 1, 2016
+github-blablacar-go-synapse | go-synapse | https://github.com/blablacar/go-synapse | author:blablacar description:Service discovery router
+github-blablacar-worker-lib | worker-lib | https://github.com/blablacar/worker-lib | author:blablacar description:[DEPRECATED] See https://github.com/swarrot/swarrot
+github-blablacar-go-nerve | go-nerve | https://github.com/blablacar/go-nerve | author:blablacar description:Track and report service status
+github-blablacar-BlablacarI18nRoutingBundle | BlablacarI18nRoutingBundle | https://github.com/blablacar/BlablacarI18nRoutingBundle | author:blablacar description:Symfony2 bundle to handle i18n
+github-blablacar-PhotoEditor-objc | PhotoEditor-objc | https://github.com/blablacar/PhotoEditor-objc | author:blablacar description:Updated Mar 10, 2016
+github-blablacar-nagios-supervisord-processes | nagios-supervisord-processes | https://github.com/blablacar/nagios-supervisord-processes | author:blablacar description:Updated Feb 6, 2015
+github-blablacar-capl | capl | https://github.com/blablacar/capl | author:blablacar description:Comuto Asynchronous Process Launcher/Consumer
+github-blablacar-android-validator | android-validator | https://github.com/blablacar/android-validator | author:blablacar description:Updated Jun 20, 2016
+github-blablacar-blablatech | blablatech | https://github.com/blablacar/blablatech | author:blablacar description:BlaBlaCar's Tech Blog
+github-blablacar-redis-client | redis-client | https://github.com/blablacar/redis-client | author:blablacar description:A simple Redis Client
+github-blablacar-BlablacarMemcachedBundle | BlablacarMemcachedBundle | https://github.com/blablacar/BlablacarMemcachedBundle | author:blablacar description:Bundle for memcached client
+github-blablacar-twig-stamp | twig-stamp | https://github.com/blablacar/twig-stamp | author:blablacar description:Put a placeholder in a base template, fill it from anywhere.
+github-blablacar-bbc-php-tools | bbc-php-tools | https://github.com/blablacar/bbc-php-tools | author:blablacar description:BlaBlaCar tools PHP extension
+github-blablacar-memcached-client | memcached-client | https://github.com/blablacar/memcached-client | author:blablacar description:A memcached client
+github-blablacar-BlablacarRedisBundle | BlablacarRedisBundle | https://github.com/blablacar/BlablacarRedisBundle | author:blablacar description:A Redis bundle for Symfony2
+github-blablacar-gertrude | gertrude | https://github.com/blablacar/gertrude | author:blablacar description:parcequ'on s'en cogne du nom
+github-blablacar-blablavote | blablavote | https://github.com/blablacar/blablavote | author:blablacar description:Updated Jun 19, 2016
+github-blablacar-blablafaces | blablafaces | https://github.com/blablacar/blablafaces | author:blablacar description:Updated Jan 29, 2015
+github-blablacar-sticker | sticker | https://github.com/blablacar/sticker | author:blablacar description:Updated Sep 9, 2016
+github-blablacar-attributes-merger | attributes-merger | https://github.com/blablacar/attributes-merger | author:blablacar description:Updated Oct 29, 2015

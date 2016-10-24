@@ -1,59 +1,71 @@
-github-palantir-1028-1 | plottable | https://github.com/palantir/plottable | author:palantir description:A library of modular chart components, built on D3
-github-palantir-745-2 | tslint | https://github.com/palantir/tslint | author:palantir description:An extensible linter for the TypeScript language.
-github-palantir-323-3 | atlasdb | https://github.com/palantir/atlasdb | author:palantir description:Transactional Distributed Database Layer
-github-palantir-249-4 | eclipse-typescript | https://github.com/palantir/eclipse-typescript | author:palantir description:An Eclipse plug-in for developing in the TypeScript language.
-github-palantir-166-5 | stacktrace | https://github.com/palantir/stacktrace | author:palantir description:Stack traces for Go errors
-github-palantir-118-6 | Sysmon | https://github.com/palantir/Sysmon | author:palantir description:A lightweight platform monitoring tool for Java VMs
-github-palantir-101-7 | Cinch | https://github.com/palantir/Cinch | author:palantir description:A Java library that manages component action/event bindings for MVC patterns
-github-palantir-62-8 | stashbot | https://github.com/palantir/stashbot | author:palantir description:A plugin for Atlassian Stash to allow easy, self-service continuous integration with Jenkins
-github-palantir-53-9 | stash-codesearch-plugin | https://github.com/palantir/stash-codesearch-plugin | author:palantir description:Provides global repository, commit, and file content search for Atlassian Stash instances
-github-palantir-30-10 | gradle-jacoco-coverage | https://github.com/palantir/gradle-jacoco-coverage | author:palantir description:Updated Apr 12, 2016
-github-palantir-24-11 | svg-typewriter | https://github.com/palantir/svg-typewriter | author:palantir description:A library for manipulating text on SVG.
-github-palantir-23-12 | gradle-gitsemver | https://github.com/palantir/gradle-gitsemver | author:palantir description:Updated Apr 14, 2016
-github-palantir-23-13 | sqlite3worker | https://github.com/palantir/sqlite3worker | author:palantir description:A threadsafe sqlite worker for Python
-github-palantir-21-14 | giraffe | https://github.com/palantir/giraffe | author:palantir description:Gracefully Integrated Remote Access For Files and Execution
-github-palantir-18-15 | gradle-docker | https://github.com/palantir/gradle-docker | author:palantir description:a Gradle plugin for orchestrating docker builds and pushes.
-github-palantir-17-16 | grunt-tslint | https://github.com/palantir/grunt-tslint | author:palantir description:A Grunt plugin for tslint.
-github-palantir-17-17 | typedjsonrpc | https://github.com/palantir/typedjsonrpc | author:palantir description:A typed decorator-based JSON-RPC library for Python
-github-palantir-16-18 | docker-compose-rule | https://github.com/palantir/docker-compose-rule | author:palantir description:A JUnit rule to manage docker containers using docker-compose
-github-palantir-14-19 | gradle-baseline | https://github.com/palantir/gradle-baseline | author:palantir description:A set of Gradle plugins that configure default code quality tools for developers.
-github-palantir-11-20 | gerrit-ci | https://github.com/palantir/gerrit-ci | author:palantir description:Plugin for Gerrit enabling self-service continuous integration workflows with Jenkins.
-github-palantir-11-21 | typescript-service-generator | https://github.com/palantir/typescript-service-generator | author:palantir description:Updated Apr 26, 2016
-github-palantir-9-22 | dropwizard-web-security | https://github.com/palantir/dropwizard-web-security | author:palantir description:A Dropwizard bundle for applying default web security functionality
-github-palantir-9-23 | http-remoting | https://github.com/palantir/http-remoting | author:palantir description:a collection of useful utilities for use with HTTP remoting setups that use Feign as a client and Jersey as a server
-github-palantir-9-24 | eclipse-less | https://github.com/palantir/eclipse-less | author:palantir description:An Eclipse plug-in for compiling LESS files.
-github-palantir-8-25 | asana_mailer | https://github.com/palantir/asana_mailer | author:palantir description:A script that uses Asana's RESTful API to generate plaintext and HTML emails.
-github-palantir-8-26 | gradle-processors | https://github.com/palantir/gradle-processors | author:palantir description:Gradle plugin for integrating Java annotations processors
-github-palantir-8-27 | eclipse-tslint | https://github.com/palantir/eclipse-tslint | author:palantir description:An Eclipse plug-in for linting TypeScript code.
-github-palantir-7-28 | dropwizard-web-logger | https://github.com/palantir/dropwizard-web-logger | author:palantir description:WebLoggerBundle is a Dropwizard bundle used to help log web activity to log files on a server’s backend
-github-palantir-7-29 | global-typings-bundler | https://github.com/palantir/global-typings-bundler | author:palantir description:Converts a collection of external module definition files into a single .d.ts file for distribution alongside a browser-ready JS bundle.
-github-palantir-7-30 | gradle-flexversion | https://github.com/palantir/gradle-flexversion | author:palantir description:Updated Jan 30, 2016
-github-palantir-6-31 | gradle-git-version | https://github.com/palantir/gradle-git-version | author:palantir description:a Gradle plugin that uses `git describe` to produce a version string.
-github-palantir-6-32 | react-layered-chart | https://github.com/palantir/react-layered-chart | author:palantir description:A high-performance canvas-based time series visualization in React.
-github-palantir-6-33 | gradle-java-distribution | https://github.com/palantir/gradle-java-distribution | author:palantir description:a Gradle plugin that creates a standard Java distribution package with start scripts
-github-palantir-6-34 | gradle-miniconda-plugin | https://github.com/palantir/gradle-miniconda-plugin | author:palantir description:Plugin that sets up a Python environment for building and running tests using Miniconda.
-github-palantir-6-35 | gulp-count | https://github.com/palantir/gulp-count | author:palantir description:Counts files in vinyl streams.
-github-palantir-5-36 | eclipse-handlebars | https://github.com/palantir/eclipse-handlebars | author:palantir description:An Eclipse builder plug-in for precompiling Handlebars templates.
-github-palantir-4-37 | resource-identifier | https://github.com/palantir/resource-identifier | author:palantir description:Common resource identifier specification for inter-application object sharing
-github-palantir-4-38 | streams | https://github.com/palantir/streams | author:palantir description:Utilities for working with Java 8 streams
-github-palantir-4-39 | stash-disapproval-plugin | https://github.com/palantir/stash-disapproval-plugin | author:palantir description:This is the Disapproval Plugin for Atlassian Stash. It lets you "nack" a pull request so it will not be merged before you are ready.
-github-palantir-4-40 | gulp-bower-overrides | https://github.com/palantir/gulp-bower-overrides | author:palantir description:merge bower overrides into bower.json files
-github-palantir-4-41 | plottable-moment | https://github.com/palantir/plottable-moment | author:palantir description:Plottable date/time formatting library built on Moment.js
-github-palantir-3-42 | dropwizard-index-page | https://github.com/palantir/dropwizard-index-page | author:palantir description:A Dropwizard bundle that serves the index page for a single page application
-github-palantir-3-43 | encrypted-config-value | https://github.com/palantir/encrypted-config-value | author:palantir description:Tooling for encrypting certain configuration parameter values in dropwizard apps
-github-palantir-2-44 | backbone-typescript-accessor-generator | https://github.com/palantir/backbone-typescript-accessor-generator | author:palantir description:Generates Backbone models with typed subclasses for using Backbone.js with TypeScript and its type system.
-github-palantir-2-45 | curator-test-rule | https://github.com/palantir/curator-test-rule | author:palantir description:JUnit TestRule for running tests with ZooKeeperServer and CuratorFrameworks
-github-palantir-1-46 | junit-resource-poller | https://github.com/palantir/junit-resource-poller | author:palantir description:A JUnit rule that allows waiting for a set of services to become available
-github-palantir-1-47 | gradle-publish-mapping | https://github.com/palantir/gradle-publish-mapping | author:palantir description:A plugin for publishing artifacts to specific repos
-github-palantir-1-48 | nebulous | https://github.com/palantir/nebulous | author:palantir description:Updated Feb 3, 2016
-github-palantir-1-49 | reAddComments | https://github.com/palantir/reAddComments | author:palantir description:Re-adds comments to generated files from their CoffeeScript source files via their corresponding Source Maps.
-github-palantir-1-50 | dropwizard-version-info | https://github.com/palantir/dropwizard-version-info | author:palantir description:A simple Dropwizard bundle which exposes a version string as a Jersey resource under `/version`.
-github-palantir-1-51 | gulp-csslint-less-reporter | https://github.com/palantir/gulp-csslint-less-reporter | author:palantir description:A console reporter for csslint that maps errors back to the original less files using less source maps.
-github-palantir-1-52 | s3proxy | https://github.com/palantir/s3proxy | author:palantir description:Updated Jul 24, 2015
-github-palantir-1-53 | stashbot-unplugged | https://github.com/palantir/stashbot-unplugged | author:palantir description:Updated Jul 24, 2015
-github-palantir-0-54 | gradle-idea-test-fix | https://github.com/palantir/gradle-idea-test-fix | author:palantir description:Gradle plugin that fixes TestKit classpath ordering issue in the IDEA plugin
-github-palantir-0-55 | syntactic-paths | https://github.com/palantir/syntactic-paths | author:palantir description:A simple library for manipulating Unix-style paths in an OS-independent way
-github-palantir-0-56 | gradle-docker-test-runner | https://github.com/palantir/gradle-docker-test-runner | author:palantir description:Gradle plugin for running tests in Docker environments
-github-palantir-0-57 | auth-tokens | https://github.com/palantir/auth-tokens | author:palantir description:Updated May 16, 2016
-github-palantir-0-58 | gradle-bowerdeps-plugin | https://github.com/palantir/gradle-bowerdeps-plugin | author:palantir description:A Gradle plugin for controlling build order with bower.json files.
-github-palantir-0-59 | gradle-npm-run-plugin | https://github.com/palantir/gradle-npm-run-plugin | author:palantir description:Updated May 9, 2016
+github-palantir-plottable | plottable | https://github.com/palantir/plottable | author:palantir description:A library of modular chart components built on D3
+github-palantir-tslint | tslint | https://github.com/palantir/tslint | author:palantir description:An extensible linter for the TypeScript language.
+github-palantir-atlasdb | atlasdb | https://github.com/palantir/atlasdb | author:palantir description:Transactional Distributed Database Layer
+github-palantir-eclipse-typescript | eclipse-typescript | https://github.com/palantir/eclipse-typescript | author:palantir description:An Eclipse plug-in for developing in the TypeScript language.
+github-palantir-stacktrace | stacktrace | https://github.com/palantir/stacktrace | author:palantir description:Stack traces for Go errors
+github-palantir-Sysmon | Sysmon | https://github.com/palantir/Sysmon | author:palantir description:A lightweight platform monitoring tool for Java VMs
+github-palantir-Cinch | Cinch | https://github.com/palantir/Cinch | author:palantir description:A Java library that manages component action/event bindings for MVC patterns
+github-palantir-stashbot | stashbot | https://github.com/palantir/stashbot | author:palantir description:A plugin for Atlassian Stash to allow easy, self-service continuous integration with Jenkins
+github-palantir-stash-codesearch-plugin | stash-codesearch-plugin | https://github.com/palantir/stash-codesearch-plugin | author:palantir description:Provides global repository, commit, and file content search for Atlassian Stash instances
+github-palantir-gradle-docker | gradle-docker | https://github.com/palantir/gradle-docker | author:palantir description:a Gradle plugin for orchestrating docker builds and pushes.
+github-palantir-gradle-jacoco-coverage | gradle-jacoco-coverage | https://github.com/palantir/gradle-jacoco-coverage | author:palantir description:Updated Aug 29, 2016
+github-palantir-docker-compose-rule | docker-compose-rule | https://github.com/palantir/docker-compose-rule | author:palantir description:A JUnit rule to manage docker containers using docker-compose
+github-palantir-sqlite3worker | sqlite3worker | https://github.com/palantir/sqlite3worker | author:palantir description:A threadsafe sqlite worker for Python
+github-palantir-tslint-react | tslint-react | https://github.com/palantir/tslint-react | author:palantir description:Lint rules related to React & JSX for TSLint.
+github-palantir-gradle-gitsemver | gradle-gitsemver | https://github.com/palantir/gradle-gitsemver | author:palantir description:Updated Aug 19, 2016
+github-palantir-svg-typewriter | svg-typewriter | https://github.com/palantir/svg-typewriter | author:palantir description:A library for manipulating text on SVG.
+github-palantir-gradle-baseline | gradle-baseline | https://github.com/palantir/gradle-baseline | author:palantir description:A set of Gradle plugins that configure default code quality tools for developers.
+github-palantir-react-layered-chart | react-layered-chart | https://github.com/palantir/react-layered-chart | author:palantir description:A high-performance canvas-based time series visualization in React.
+github-palantir-http-remoting | http-remoting | https://github.com/palantir/http-remoting | author:palantir description:a collection of useful utilities for use with HTTP remoting setups that use Feign as a client and Jersey as a server
+github-palantir-grunt-tslint | grunt-tslint | https://github.com/palantir/grunt-tslint | author:palantir description:A Grunt plugin for tslint.
+github-palantir-giraffe | giraffe | https://github.com/palantir/giraffe | author:palantir description:Gracefully Integrated Remote Access For Files and Execution
+github-palantir-gradle-git-version | gradle-git-version | https://github.com/palantir/gradle-git-version | author:palantir description:a Gradle plugin that uses `git describe` to produce a version string.
+github-palantir-typedjsonrpc | typedjsonrpc | https://github.com/palantir/typedjsonrpc | author:palantir description:A typed decorator-based JSON-RPC library for Python
+github-palantir-gradle-processors | gradle-processors | https://github.com/palantir/gradle-processors | author:palantir description:Gradle plugin for integrating Java annotations processors
+github-palantir-dropwizard-web-security | dropwizard-web-security | https://github.com/palantir/dropwizard-web-security | author:palantir description:A Dropwizard bundle for applying default web security functionality
+github-palantir-gradle-java-distribution | gradle-java-distribution | https://github.com/palantir/gradle-java-distribution | author:palantir description:a Gradle plugin that creates a standard Java distribution package with start scripts
+github-palantir-typescript-service-generator | typescript-service-generator | https://github.com/palantir/typescript-service-generator | author:palantir description:Updated Jun 29, 2016
+github-palantir-gerrit-ci | gerrit-ci | https://github.com/palantir/gerrit-ci | author:palantir description:Plugin for Gerrit enabling self-service continuous integration workflows with Jenkins.
+github-palantir-dropwizard-web-logger | dropwizard-web-logger | https://github.com/palantir/dropwizard-web-logger | author:palantir description:WebLoggerBundle is a Dropwizard bundle used to help log web activity to log files on a server’s backend
+github-palantir-eclipse-less | eclipse-less | https://github.com/palantir/eclipse-less | author:palantir description:An Eclipse plug-in for compiling LESS files.
+github-palantir-asana_mailer | asana_mailer | https://github.com/palantir/asana_mailer | author:palantir description:A script that uses Asana's RESTful API to generate plaintext and HTML emails.
+github-palantir-gulp-count | gulp-count | https://github.com/palantir/gulp-count | author:palantir description:Counts files in vinyl streams.
+github-palantir-streams | streams | https://github.com/palantir/streams | author:palantir description:Utilities for working with Java 8 streams
+github-palantir-eclipse-tslint | eclipse-tslint | https://github.com/palantir/eclipse-tslint | author:palantir description:An Eclipse plug-in for linting TypeScript code.
+github-palantir-plottable-moment | plottable-moment | https://github.com/palantir/plottable-moment | author:palantir description:Plottable date/time formatting library built on Moment.js
+github-palantir-gradle-flexversion | gradle-flexversion | https://github.com/palantir/gradle-flexversion | author:palantir description:Updated Jan 30, 2016
+github-palantir-hadoop-crypto | hadoop-crypto | https://github.com/palantir/hadoop-crypto | author:palantir description:Library for per-file client-side encyption in Hadoop FileSystems such as HDFS or S3.
+github-palantir-gradle-miniconda-plugin | gradle-miniconda-plugin | https://github.com/palantir/gradle-miniconda-plugin | author:palantir description:Plugin that sets up a Python environment for building and running tests using Miniconda.
+github-palantir-global-typings-bundler | global-typings-bundler | https://github.com/palantir/global-typings-bundler | author:palantir description:(DEPRECATED) Converts a collection of external module definition files into a single .d.ts file for distribution alongside a browser-ready JS bundle.
+github-palantir-go-java-launcher | go-java-launcher | https://github.com/palantir/go-java-launcher | author:palantir description:A simple Go program for launching Java programs from a fixed configuration. This program replaces Gradle-generated Bash launch scripts which are susceptible to attacks via injection of environment variables of the form JAVA_OPTS='$(rm -rf /)'.
+github-palantir-baseline | baseline | https://github.com/palantir/baseline | author:palantir description:Updated Oct 19, 2016
+github-palantir-encrypted-config-value | encrypted-config-value | https://github.com/palantir/encrypted-config-value | author:palantir description:Tooling for encrypting certain configuration parameter values in dropwizard apps
+github-palantir-language-servers | language-servers | https://github.com/palantir/language-servers | author:palantir description:A collection of implementations for the Microsoft Language Server Protocol
+github-palantir-eclipse-handlebars | eclipse-handlebars | https://github.com/palantir/eclipse-handlebars | author:palantir description:An Eclipse builder plug-in for precompiling Handlebars templates.
+github-palantir-gulp-bower-overrides | gulp-bower-overrides | https://github.com/palantir/gulp-bower-overrides | author:palantir description:merge bower overrides into bower.json files
+github-palantir-dropwizard-index-page | dropwizard-index-page | https://github.com/palantir/dropwizard-index-page | author:palantir description:A Dropwizard bundle that serves the index page for a single page application
+github-palantir-resource-identifier | resource-identifier | https://github.com/palantir/resource-identifier | author:palantir description:Common resource identifier specification for inter-application object sharing
+github-palantir-curator-test-rule | curator-test-rule | https://github.com/palantir/curator-test-rule | author:palantir description:JUnit TestRule for running tests with ZooKeeperServer and CuratorFrameworks
+github-palantir-stash-disapproval-plugin | stash-disapproval-plugin | https://github.com/palantir/stash-disapproval-plugin | author:palantir description:This is the Disapproval Plugin for Atlassian Stash. It lets you "nack" a pull request so it will not be merged before you are ready.
+github-palantir-backbone-typescript-accessor-generator | backbone-typescript-accessor-generator | https://github.com/palantir/backbone-typescript-accessor-generator | author:palantir description:Generates Backbone models with typed subclasses for using Backbone.js with TypeScript and its type system.
+github-palantir-gradle-npm-run-plugin | gradle-npm-run-plugin | https://github.com/palantir/gradle-npm-run-plugin | author:palantir description:Updated Sep 7, 2016
+github-palantir-dropwizard-version-info | dropwizard-version-info | https://github.com/palantir/dropwizard-version-info | author:palantir description:A simple Dropwizard bundle which exposes a version string as a Jersey resource under `/version`.
+github-palantir-gradle-publish-mapping | gradle-publish-mapping | https://github.com/palantir/gradle-publish-mapping | author:palantir description:A plugin for publishing artifacts to specific repos
+github-palantir-junit-resource-poller | junit-resource-poller | https://github.com/palantir/junit-resource-poller | author:palantir description:A JUnit rule that allows waiting for a set of services to become available
+github-palantir-nebulous | nebulous | https://github.com/palantir/nebulous | author:palantir description:Updated Feb 3, 2016
+github-palantir-gulp-csslint-less-reporter | gulp-csslint-less-reporter | https://github.com/palantir/gulp-csslint-less-reporter | author:palantir description:A console reporter for csslint that maps errors back to the original less files using less source maps.
+github-palantir-gradle-docker-test-runner | gradle-docker-test-runner | https://github.com/palantir/gradle-docker-test-runner | author:palantir description:Gradle plugin for running tests in Docker environments
+github-palantir-eslint-config-palantir | eslint-config-palantir | https://github.com/palantir/eslint-config-palantir | author:palantir description:Palantir's ESLint config
+github-palantir-s3proxy | s3proxy | https://github.com/palantir/s3proxy | author:palantir description:Updated Jul 24, 2015
+github-palantir-gradle-launch-config-plugin | gradle-launch-config-plugin | https://github.com/palantir/gradle-launch-config-plugin | author:palantir description:Updated Sep 22, 2016
+github-palantir-outparamcheck | outparamcheck | https://github.com/palantir/outparamcheck | author:palantir description:outparamcheck is a Go static code analysis tool that verifies that output parameters are used correctly
+github-palantir-auth-tokens | auth-tokens | https://github.com/palantir/auth-tokens | author:palantir description:Updated Oct 6, 2016
+github-palantir-gradle-idea-test-fix | gradle-idea-test-fix | https://github.com/palantir/gradle-idea-test-fix | author:palantir description:Gradle plugin that fixes TestKit classpath ordering issue in the IDEA plugin
+github-palantir-stashbot-unplugged | stashbot-unplugged | https://github.com/palantir/stashbot-unplugged | author:palantir description:Updated Jul 24, 2015
+github-palantir-reAddComments | reAddComments | https://github.com/palantir/reAddComments | author:palantir description:Re-adds comments to generated files from their CoffeeScript source files via their corresponding Source Maps.
+github-palantir-gradle-configuration-resolver-plugin | gradle-configuration-resolver-plugin | https://github.com/palantir/gradle-configuration-resolver-plugin | author:palantir description:Updated Aug 31, 2016
+github-palantir-gradle-bowerdeps-plugin | gradle-bowerdeps-plugin | https://github.com/palantir/gradle-bowerdeps-plugin | author:palantir description:A Gradle plugin for controlling build order with bower.json files.
+github-palantir-stylelint-config-palantir | stylelint-config-palantir | https://github.com/palantir/stylelint-config-palantir | author:palantir description:Palantir's stylelint config
+github-palantir-syntactic-paths | syntactic-paths | https://github.com/palantir/syntactic-paths | author:palantir description:A simple library for manipulating Unix-style paths in an OS-independent way
+github-palantir-trove-3.0.3 | trove-3.0.3 | https://github.com/palantir/trove-3.0.3 | author:palantir description:Patched version of the Trove library - changes the Collections semantics to match proper java.util.Map semantics
+github-palantir-docker-cassandra-atlasdb | docker-cassandra-atlasdb | https://github.com/palantir/docker-cassandra-atlasdb | author:palantir description:Docker Cassandra Image for AtlasDB Applications

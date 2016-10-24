@@ -1,17 +1,17 @@
-github-wayfair-162-1 | tungstenjs | https://github.com/wayfair/tungstenjs | author:wayfair description:Updated May 17, 2016
-github-wayfair-28-2 | hussar | https://github.com/wayfair/hussar | author:wayfair description:PHP static analysis with HHVM
-github-wayfair-19-3 | wiff | https://github.com/wayfair/wiff | author:wayfair description:Updated May 22, 2014
-github-wayfair-8-4 | tesla | https://github.com/wayfair/tesla | author:wayfair description:Updated Apr 14, 2014
-github-wayfair-7-5 | statsdcc | https://github.com/wayfair/statsdcc | author:wayfair description:Statsdcc is a Statsd-compatible high performance multi-threaded network daemon written in C++. It aggregates stats and sends aggregates to backends.
-github-wayfair-7-6 | statsd-plugins | https://github.com/wayfair/statsd-plugins | author:wayfair description:Collection of plugins for statsd
-github-wayfair-7-7 | sp-phpunit | https://github.com/wayfair/sp-phpunit | author:wayfair description:Updated Feb 11, 2015
-github-wayfair-4-8 | fixing-fixed-headers | https://github.com/wayfair/fixing-fixed-headers | author:wayfair description:Updated Mar 27, 2013
-github-wayfair-3-9 | pure-ftpd-getvirtualdirs | https://github.com/wayfair/pure-ftpd-getvirtualdirs | author:wayfair description:Updated Nov 28, 2011
-github-wayfair-3-10 | nofollow_highlighter | https://github.com/wayfair/nofollow_highlighter | author:wayfair description:Nofollow link highlighter extension for Google Chrome
-github-wayfair-2-11 | drupal-vulnscan | https://github.com/wayfair/drupal-vulnscan | author:wayfair description:Updated Apr 25, 2012
-github-wayfair-2-12 | Graylog2-GroupBy | https://github.com/wayfair/Graylog2-GroupBy | author:wayfair description:Provide something similar to a group by functionality for graylog2
-github-wayfair-1-13 | ngx_http_txtset | https://github.com/wayfair/ngx_http_txtset | author:wayfair description:Updated Jan 15, 2013
-github-wayfair-0-14 | exchange-mailbox-export | https://github.com/wayfair/exchange-mailbox-export | author:wayfair description:Updated Jan 7, 2014
-github-wayfair-0-15 | statsd-graphite-udp-backend | https://github.com/wayfair/statsd-graphite-udp-backend | author:wayfair description:graphite udp backend for statsd
-github-wayfair-0-16 | memcache | https://github.com/wayfair/memcache | author:wayfair description:Fork of https://git.php.net/repository/pecl/caching/memcache.git
-github-wayfair-0-17 | gists | https://github.com/wayfair/gists | author:wayfair description:because you can't create gists as an organization
+github-wayfair-tungstenjs | tungstenjs | https://github.com/wayfair/tungstenjs | author:wayfair description:Tungsten.js is a modular framework for creating web UIs with high-performance rendering on both server and client.
+github-wayfair-hussar | hussar | https://github.com/wayfair/hussar | author:wayfair description:PHP static analysis with HHVM
+github-wayfair-wiff | wiff | https://github.com/wayfair/wiff | author:wayfair description:Updated May 22, 2014
+github-wayfair-statsdcc | statsdcc | https://github.com/wayfair/statsdcc | author:wayfair description:Statsdcc is a Statsd-compatible high performance multi-threaded network daemon written in C++. It aggregates stats and sends aggregates to backends.
+github-wayfair-sp-phpunit | sp-phpunit | https://github.com/wayfair/sp-phpunit | author:wayfair description:Updated Feb 11, 2015
+github-wayfair-tesla | tesla | https://github.com/wayfair/tesla | author:wayfair description:Updated Apr 14, 2014
+github-wayfair-statsd-plugins | statsd-plugins | https://github.com/wayfair/statsd-plugins | author:wayfair description:Collection of plugins for statsd
+github-wayfair-fixing-fixed-headers | fixing-fixed-headers | https://github.com/wayfair/fixing-fixed-headers | author:wayfair description:Updated Mar 27, 2013
+github-wayfair-nofollow_highlighter | nofollow_highlighter | https://github.com/wayfair/nofollow_highlighter | author:wayfair description:Nofollow link highlighter extension for Google Chrome
+github-wayfair-pure-ftpd-getvirtualdirs | pure-ftpd-getvirtualdirs | https://github.com/wayfair/pure-ftpd-getvirtualdirs | author:wayfair description:Updated Nov 28, 2011
+github-wayfair-drupal-vulnscan | drupal-vulnscan | https://github.com/wayfair/drupal-vulnscan | author:wayfair description:Updated Apr 25, 2012
+github-wayfair-Graylog2-GroupBy | Graylog2-GroupBy | https://github.com/wayfair/Graylog2-GroupBy | author:wayfair description:Provide something similar to a group by functionality for graylog2
+github-wayfair-ngx_http_txtset | ngx_http_txtset | https://github.com/wayfair/ngx_http_txtset | author:wayfair description:Updated Jan 15, 2013
+github-wayfair-memcache | memcache | https://github.com/wayfair/memcache | author:wayfair description:Fork of https://git.php.net/repository/pecl/caching/memcache.git
+github-wayfair-gists | gists | https://github.com/wayfair/gists | author:wayfair description:because you can't create gists as an organization
+github-wayfair-statsd-graphite-udp-backend | statsd-graphite-udp-backend | https://github.com/wayfair/statsd-graphite-udp-backend | author:wayfair description:graphite udp backend for statsd
+github-wayfair-exchange-mailbox-export | exchange-mailbox-export | https://github.com/wayfair/exchange-mailbox-export | author:wayfair description:Updated Jan 7, 2014

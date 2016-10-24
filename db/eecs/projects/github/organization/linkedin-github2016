@@ -1,88 +1,94 @@
 github-linkedin-hopscotch | hopscotch | https://github.com/linkedin/hopscotch | author:linkedin description:A framework to make it easy for developers to add product tours to their pages.
 github-linkedin-dustjs | dustjs | https://github.com/linkedin/dustjs | author:linkedin description:Asynchronous Javascript templating for the browser and server
 github-linkedin-rest.li | rest.li | https://github.com/linkedin/rest.li | author:linkedin description:Rest.li is a REST+JSON framework for building robust, scalable service architectures using dynamic discovery and simple asynchronous APIs.
+github-linkedin-LayoutKit | LayoutKit | https://github.com/linkedin/LayoutKit | author:linkedin description:LayoutKit is a fast view layout library for iOS, macOS, and tvOS.
 github-linkedin-pinot | pinot | https://github.com/linkedin/pinot | author:linkedin description:A realtime distributed OLAP datastore
 github-linkedin-databus | databus | https://github.com/linkedin/databus | author:linkedin description:Source-agnostic distributed change data capture system
 github-linkedin-qark | qark | https://github.com/linkedin/qark | author:linkedin description:Tool to look for several security related Android application vulnerabilities
-github-linkedin-LayoutKit | LayoutKit | https://github.com/linkedin/LayoutKit | author:linkedin description:LayoutKit is a fast view layout library for iOS.
 github-linkedin-indextank-engine | indextank-engine | https://github.com/linkedin/indextank-engine | author:linkedin description:Indexing engine for IndexTank
 github-linkedin-LIExposeController | LIExposeController | https://github.com/linkedin/LIExposeController | author:linkedin description:Expose style navigation for iOS apps
 github-linkedin-ambry | ambry | https://github.com/linkedin/ambry | author:linkedin description:Distributed object store
-github-linkedin-camus | camus | https://github.com/linkedin/camus | author:linkedin description:LinkedIn's previous generation Kafka to HDFS pipeline.
 github-linkedin-gobblin | gobblin | https://github.com/linkedin/gobblin | author:linkedin description:Universal data ingestion framework for Hadoop.
+github-linkedin-camus | camus | https://github.com/linkedin/camus | author:linkedin description:LinkedIn's previous generation Kafka to HDFS pipeline.
 github-linkedin-PalDB | PalDB | https://github.com/linkedin/PalDB | author:linkedin description:An embeddable write-once key-value store written in Java
 github-linkedin-Selene | Selene | https://github.com/linkedin/Selene | author:linkedin description:iOS library which schedules the execution of tasks on a background fetch
 github-linkedin-datafu | datafu | https://github.com/linkedin/datafu | author:linkedin description:Hadoop library for large-scale data processing, now an Apache Incubator project
-github-linkedin-cleo | cleo | https://github.com/linkedin/cleo | author:linkedin description:A flexible, partial, out-of-order and real-time typeahead search library
 github-linkedin-parseq | parseq | https://github.com/linkedin/parseq | author:linkedin description:Asynchronous Java made easier
+github-linkedin-test-butler | test-butler | https://github.com/linkedin/test-butler | author:linkedin description:Reliable Android Testing, at your service
+github-linkedin-Burrow | Burrow | https://github.com/linkedin/Burrow | author:linkedin description:Kafka Consumer Lag Checking
+github-linkedin-cleo | cleo | https://github.com/linkedin/cleo | author:linkedin description:A flexible, partial, out-of-order and real-time typeahead search library
 github-linkedin-FeatureFu | FeatureFu | https://github.com/linkedin/FeatureFu | author:linkedin description:Library and tools for advanced feature engineering
 github-linkedin-Hakawai | Hakawai | https://github.com/linkedin/Hakawai | author:linkedin description:A powerful, extensible UITextView.
 github-linkedin-sensei | sensei | https://github.com/linkedin/sensei | author:linkedin description:distributed realtime searchable database
 github-linkedin-inject | inject | https://github.com/linkedin/inject | author:linkedin description:AMD and CJS dependency management in the browser
 github-linkedin-LayoutTest-iOS | LayoutTest-iOS | https://github.com/linkedin/LayoutTest-iOS | author:linkedin description:Write unit tests which test the layout of a view in multiple configurations
-github-linkedin-Burrow | Burrow | https://github.com/linkedin/Burrow | author:linkedin description:Kafka Consumer Lag Checking
 github-linkedin-indextank-service | indextank-service | https://github.com/linkedin/indextank-service | author:linkedin description:The API, BackOffice, Storefront, and Nebulizer for IndexTank
-github-linkedin-ml-ease | ml-ease | https://github.com/linkedin/ml-ease | author:linkedin description:ADMM based large scale logistic regression
 github-linkedin-WhereHows | WhereHows | https://github.com/linkedin/WhereHows | author:linkedin description:Data Discovery and Lineage for Big Data Ecosystem
-github-linkedin-venus.js | venus.js | https://github.com/linkedin/venus.js | author:linkedin description:where bugs go to die
-github-linkedin-swift-style-guide | swift-style-guide | https://github.com/linkedin/swift-style-guide | author:linkedin description:LinkedIn's Official Swift Style Guide
-github-linkedin-dr-elephant | dr-elephant | https://github.com/linkedin/dr-elephant | author:linkedin description:Performance monitoring and tuning tool for Apache Hadoop
 github-linkedin-photon-ml | photon-ml | https://github.com/linkedin/photon-ml | author:linkedin description:A scalable machine learning library on Apache Spark
+github-linkedin-swift-style-guide | swift-style-guide | https://github.com/linkedin/swift-style-guide | author:linkedin description:LinkedIn's Official Swift Style Guide
+github-linkedin-kafka-monitor | kafka-monitor | https://github.com/linkedin/kafka-monitor | author:linkedin description:Updated Oct 19, 2016
+github-linkedin-RocketData | RocketData | https://github.com/linkedin/RocketData | author:linkedin description:A caching and consistency solution for immutable models.
+github-linkedin-URL-Detector | URL-Detector | https://github.com/linkedin/URL-Detector | author:linkedin description:A Java library to detect and normalize URLs in text
+github-linkedin-dr-elephant | dr-elephant | https://github.com/linkedin/dr-elephant | author:linkedin description:Performance monitoring and tuning tool for Apache Hadoop
+github-linkedin-ml-ease | ml-ease | https://github.com/linkedin/ml-ease | author:linkedin description:ADMM based large scale logistic regression
+github-linkedin-venus.js | venus.js | https://github.com/linkedin/venus.js | author:linkedin description:where bugs go to die
+github-linkedin-ConsistencyManager-iOS | ConsistencyManager-iOS | https://github.com/linkedin/ConsistencyManager-iOS | author:linkedin description:A library that manages consistency of immutable models
 github-linkedin-JTune | JTune | https://github.com/linkedin/JTune | author:linkedin description:A high precision Java CMS optimizer
 github-linkedin-Fiber | Fiber | https://github.com/linkedin/Fiber | author:linkedin description:Lightweight JavaScript prototypal inheritance model
 github-linkedin-Cubert | Cubert | https://github.com/linkedin/Cubert | author:linkedin description:Fast and efficient batch computation engine for complex analysis and reporting of massive datasets on Hadoop
-github-linkedin-kafka-monitor | kafka-monitor | https://github.com/linkedin/kafka-monitor | author:linkedin description:Updated Jul 4, 2016
-github-linkedin-URL-Detector | URL-Detector | https://github.com/linkedin/URL-Detector | author:linkedin description:A Java library to detect and normalize URLs in text
 github-linkedin-helix | helix | https://github.com/linkedin/helix | author:linkedin description:Building distributed systems made easy.
-github-linkedin-white-elephant | white-elephant | https://github.com/linkedin/white-elephant | author:linkedin description:Hadoop log aggregator and dashboard
 github-linkedin-naarad | naarad | https://github.com/linkedin/naarad | author:linkedin description:Naarad is a highly configurable system analysis tool that parses and plots timeseries data for better visual correlation. Naarad was built to help in performance analysis and investigations.
+github-linkedin-white-elephant | white-elephant | https://github.com/linkedin/white-elephant | author:linkedin description:Hadoop log aggregator and dashboard
 github-linkedin-Spyglass | Spyglass | https://github.com/linkedin/Spyglass | author:linkedin description:A library for mentions on Android
+github-linkedin-goavro | goavro | https://github.com/linkedin/goavro | author:linkedin description:Updated Oct 8, 2016
 github-linkedin-sepia | sepia | https://github.com/linkedin/sepia | author:linkedin description:Sepia is a VCR-like module for node.js that records HTTP interactions, then plays them back exactly like the first time they were invoked
-github-linkedin-goavro | goavro | https://github.com/linkedin/goavro | author:linkedin description:Updated Jun 27, 2016
+github-linkedin-pygradle | pygradle | https://github.com/linkedin/pygradle | author:linkedin description:Using Gradle to build Python projects
 github-linkedin-Zopkio | Zopkio | https://github.com/linkedin/Zopkio | author:linkedin description:A Functional and Performance Test Framework for Distributed Systems
-github-linkedin-ConsistencyManager-iOS | ConsistencyManager-iOS | https://github.com/linkedin/ConsistencyManager-iOS | author:linkedin description:A library that manages consistency of immutable models
 github-linkedin-simoorg | simoorg | https://github.com/linkedin/simoorg | author:linkedin description:Failure inducer framework
 github-linkedin-dustjs-helpers | dustjs-helpers | https://github.com/linkedin/dustjs-helpers | author:linkedin description:Helpers for dustjs-linkedin
 github-linkedin-archetype | archetype | https://github.com/linkedin/archetype | author:linkedin description:Archetype is a Compass/Sass based framework for authoring configurable, composable UI components and patterns.
 github-linkedin-pyexchange | pyexchange | https://github.com/linkedin/pyexchange | author:linkedin description:Python wrapper for Microsoft Exchange
-github-linkedin-api-get-started | api-get-started | https://github.com/linkedin/api-get-started | author:linkedin description:LinkedIn REST API Getting Started Tutorial
 github-linkedin-Isaac | Isaac | https://github.com/linkedin/Isaac | author:linkedin description:This library parses data from JSON objects into NSObject models without needing to write parsing code for each model.
+github-linkedin-api-get-started | api-get-started | https://github.com/linkedin/api-get-started | author:linkedin description:LinkedIn REST API Getting Started Tutorial
+github-linkedin-kafka-tools | kafka-tools | https://github.com/linkedin/kafka-tools | author:linkedin description:A collection of tools for working with Apache Kafka.
 github-linkedin-Backbone.TableView | Backbone.TableView | https://github.com/linkedin/Backbone.TableView | author:linkedin description:Backbone View to render collections as tables
 github-linkedin-linkedin-utils | linkedin-utils | https://github.com/linkedin/linkedin-utils | author:linkedin description:Base utilities shared by all linkedin open source projects
-github-linkedin-linkedin-gradle-plugin-for-apache-hadoop | linkedin-gradle-plugin-for-apache-hadoop | https://github.com/linkedin/linkedin-gradle-plugin-for-apache-hadoop | author:linkedin description:Updated Jul 12, 2016
+github-linkedin-linkedin-gradle-plugin-for-apache-hadoop | linkedin-gradle-plugin-for-apache-hadoop | https://github.com/linkedin/linkedin-gradle-plugin-for-apache-hadoop | author:linkedin description:Updated Oct 18, 2016
+github-linkedin-luminol | luminol | https://github.com/linkedin/luminol | author:linkedin description:Anomaly Detection and Correlation library
 github-linkedin-sysops-api | sysops-api | https://github.com/linkedin/sysops-api | author:linkedin description:sysops-api is a framework designed to provide visability from tens of thousands of machines in seconds.
 github-linkedin-linkedin-zookeeper | linkedin-zookeeper | https://github.com/linkedin/linkedin-zookeeper | author:linkedin description:This project provides utilities and wrappers around ZooKeeper
-github-linkedin-kafka-tools | kafka-tools | https://github.com/linkedin/kafka-tools | author:linkedin description:A collection of tools for working with Apache Kafka.
 github-linkedin-rest.li-api-hub | rest.li-api-hub | https://github.com/linkedin/rest.li-api-hub | author:linkedin description:API Hub is a web UI for browsing and searching a catalog of Rest.li APIs.
-github-linkedin-luminol | luminol | https://github.com/linkedin/luminol | author:linkedin description:Anomaly Detection and Correlation library
 github-linkedin-RookBoom | RookBoom | https://github.com/linkedin/RookBoom | author:linkedin description:A web application for creating meetings.
 github-linkedin-python-avro-json-serializer | python-avro-json-serializer | https://github.com/linkedin/python-avro-json-serializer | author:linkedin description:Serializes data into a JSON format using AVRO schema.
-github-linkedin-mobster | mobster | https://github.com/linkedin/mobster | author:linkedin description:Mobster is a tool that can help you get deeper understanding into the performance of mobile web applications on real mobile devices
 github-linkedin-lafayette | lafayette | https://github.com/linkedin/lafayette | author:linkedin description:Lafayette is a system to store various email abuse reports sent in ARF.
+github-linkedin-mobster | mobster | https://github.com/linkedin/mobster | author:linkedin description:Mobster is a tool that can help you get deeper understanding into the performance of mobile web applications on real mobile devices
 github-linkedin-datacl | datacl | https://github.com/linkedin/datacl | author:linkedin description:A collection of efficient utilities for a data scientist.
-github-linkedin-play-testng-plugin | play-testng-plugin | https://github.com/linkedin/play-testng-plugin | author:linkedin description:TestNG runner for the Play Framework 2.4
 github-linkedin-linkedin.github.com | linkedin.github.com | https://github.com/linkedin/linkedin.github.com | author:linkedin description:Listing of all our public GitHub projects.
-github-linkedin-dmarc-msys | dmarc-msys | https://github.com/linkedin/dmarc-msys | author:linkedin description:This set of scripts in Lua implements DMARC policy checking and reporting for the Message Systems MTA products, a popular extendable commercial MTA.
+github-linkedin-play-testng-plugin | play-testng-plugin | https://github.com/linkedin/play-testng-plugin | author:linkedin description:TestNG runner for the Play Framework 2.4
 github-linkedin-vagrant-autodns | vagrant-autodns | https://github.com/linkedin/vagrant-autodns | author:linkedin description:Vagrant plugin for automagically managing guest DNS
+github-linkedin-dmarc-msys | dmarc-msys | https://github.com/linkedin/dmarc-msys | author:linkedin description:This set of scripts in Lua implements DMARC policy checking and reporting for the Message Systems MTA products, a popular extendable commercial MTA.
+github-linkedin-shaky-android | shaky-android | https://github.com/linkedin/shaky-android | author:linkedin description:Shake to send feedback for Android.
 github-linkedin-sin | sin | https://github.com/linkedin/sin | author:linkedin description:Updated Jan 19, 2012
-github-linkedin-atscppapi | atscppapi | https://github.com/linkedin/atscppapi | author:linkedin description:This library provides wrappers around the existing Apache Traffic Server API which will vastly simplify the process of writing Apache Traffic Server plugins.
 github-linkedin-talkin | talkin | https://github.com/linkedin/talkin | author:linkedin description:TalkIn is an interface providing safe and easy unidirectional cross-document communication.
+github-linkedin-atscppapi | atscppapi | https://github.com/linkedin/atscppapi | author:linkedin description:This library provides wrappers around the existing Apache Traffic Server API which will vastly simplify the process of writing Apache Traffic Server plugins.
 github-linkedin-insframe | insframe | https://github.com/linkedin/insframe | author:linkedin description:Central hub for distributing web apps to multiple browsers on multiple environments
 github-linkedin-bowser | bowser | https://github.com/linkedin/bowser | author:linkedin description:Extensible language parser with Python-like syntax. Written in Java and antlr.
 github-linkedin-dustjs-filters-secure | dustjs-filters-secure | https://github.com/linkedin/dustjs-filters-secure | author:linkedin description:extend dustjs-linkedin to enhance the filters methods
 github-linkedin-adfullssl | adfullssl | https://github.com/linkedin/adfullssl | author:linkedin description:AdFullSsl is a tool that can automatically detect SSL non-compliant ads and fix them
+github-linkedin-glu-scripts-contrib | glu-scripts-contrib | https://github.com/linkedin/glu-scripts-contrib | author:linkedin description:This project contains glu scripts that have been contributed by the community
 github-linkedin-postcss-lang-optimizer | postcss-lang-optimizer | https://github.com/linkedin/postcss-lang-optimizer | author:linkedin description:PostCSS plugin to extract language specific CSS rulesets to their own CSS files to optimize stylesheet delivery.
 github-linkedin-Idiomatic-JSLint | Idiomatic-JSLint | https://github.com/linkedin/Idiomatic-JSLint | author:linkedin description:Updated May 30, 2013
-github-linkedin-glu-scripts-contrib | glu-scripts-contrib | https://github.com/linkedin/glu-scripts-contrib | author:linkedin description:This project contains glu scripts that have been contributed by the community
+github-linkedin-play-parseq | play-parseq | https://github.com/linkedin/play-parseq | author:linkedin description:Updated Oct 5, 2016
 github-linkedin-rest.li-sbt-plugin | rest.li-sbt-plugin | https://github.com/linkedin/rest.li-sbt-plugin | author:linkedin description:rest.li-sbt-plugin
-github-linkedin-play-parseq | play-parseq | https://github.com/linkedin/play-parseq | author:linkedin description:Updated Jun 2, 2016
-github-linkedin-MTBT | MTBT | https://github.com/linkedin/MTBT | author:linkedin description:Updated Jan 16, 2015
+github-linkedin-instantsearch-tutorial | instantsearch-tutorial | https://github.com/linkedin/instantsearch-tutorial | author:linkedin description:Sample code for building an end-to-end instant search solution
 github-linkedin-gradle-plugin-insight | gradle-plugin-insight | https://github.com/linkedin/gradle-plugin-insight | author:linkedin description:Automatic, effortless, accurate documentation for any Gradle plugin
+github-linkedin-MTBT | MTBT | https://github.com/linkedin/MTBT | author:linkedin description:Updated Jan 16, 2015
 github-linkedin-rest.li-skeleton.g8 | rest.li-skeleton.g8 | https://github.com/linkedin/rest.li-skeleton.g8 | author:linkedin description:Rest.li tool for generating skeleton rest.li projects.
 github-linkedin-streaming | streaming | https://github.com/linkedin/streaming | author:linkedin description:Updated Apr 26, 2016
 github-linkedin-inject-bower | inject-bower | https://github.com/linkedin/inject-bower | author:linkedin description:Please use linkedin/inject
-github-linkedin-instantsearch-tutorial | instantsearch-tutorial | https://github.com/linkedin/instantsearch-tutorial | author:linkedin description:Sample code for building an end-to-end instant search solution
 github-linkedin-PTYHooks | PTYHooks | https://github.com/linkedin/PTYHooks | author:linkedin description:Updated May 3, 2016
-github-linkedin-naarad-examples | naarad-examples | https://github.com/linkedin/naarad-examples | author:linkedin description:Example logs and configs for naarad
+github-linkedin-sometime | sometime | https://github.com/linkedin/sometime | author:linkedin description:A BurpSuite plugin to detect Same Origin Method Execution vulnerabilities
+github-linkedin-spaniel | spaniel | https://github.com/linkedin/spaniel | author:linkedin description:LinkedIn's JavaScript viewport tracking library and IntersectionObserver polyfill
 github-linkedin-html5-presentation | html5-presentation | https://github.com/linkedin/html5-presentation | author:linkedin description:Code for the "Building a Performant HTML5 App" presentation at http://www.meetup.com/SF-Web-Performance-Group/events/71651452/
 github-linkedin-xcdistribute | xcdistribute | https://github.com/linkedin/xcdistribute | author:linkedin description:Updated Jan 31, 2014
+github-linkedin-naarad-examples | naarad-examples | https://github.com/linkedin/naarad-examples | author:linkedin description:Example logs and configs for naarad

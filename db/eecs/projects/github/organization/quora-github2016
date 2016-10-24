@@ -1,1 +1,4 @@
+github-quora-asynq | asynq | https://github.com/quora/asynq | author:quora description:Python library for asynchronous programming
 github-quora-qmf | qmf | https://github.com/quora/qmf | author:quora description:A fast and scalable C++ library for implicit-feedback matrix factorization models
+github-quora-parsecss | parsecss | https://github.com/quora/parsecss | author:quora description:Convert CSS to a Simple JSON Structure
+github-quora-qcore | qcore | https://github.com/quora/qcore | author:quora description:Common Python utility functions

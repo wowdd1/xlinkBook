@@ -1,10 +1,16 @@
-github-medallia-71-1 | Word2VecJava | https://github.com/medallia/Word2VecJava | author:medallia description:Word2Vec Java Port
-github-medallia-5-2 | ios-MMAccessoryPanel | https://github.com/medallia/ios-MMAccessoryPanel | author:medallia description:MMAccessoryPanel is a iOS Cocoa Touch class that creates and manages collapsible bars on top of any UIScrollView, just below the navigation bar.
-github-medallia-1-3 | hipchat-notifier | https://github.com/medallia/hipchat-notifier | author:medallia description:Push HipChat notifications to the configured room.
-github-medallia-0-4 | w2v4j | https://github.com/medallia/w2v4j | author:medallia description:Java port of the Word2Vec library
-github-medallia-0-5 | ui-challenge | https://github.com/medallia/ui-challenge | author:medallia description:Updated Jun 17, 2014
-github-medallia-0-6 | service-discovery | https://github.com/medallia/service-discovery | author:medallia description:Updated Mar 23, 2016
-github-medallia-0-7 | hashtest | https://github.com/medallia/hashtest | author:medallia description:Updated Aug 27, 2015
-github-medallia-0-8 | unsafe | https://github.com/medallia/unsafe | author:medallia description:Java library to compile and run C++ code in-memory
-github-medallia-0-9 | coop-paging-poc | https://github.com/medallia/coop-paging-poc | author:medallia description:Proof-of-Concept for Cooperative Paging
-github-medallia-0-10 | jq-package-builder | https://github.com/medallia/jq-package-builder | author:medallia description:Updated Apr 13, 2016
+github-medallia-Word2VecJava | Word2VecJava | https://github.com/medallia/Word2VecJava | author:medallia description:Word2Vec Java Port
+github-medallia-unsafe | unsafe | https://github.com/medallia/unsafe | author:medallia description:Java library to compile and run C++ code in-memory
+github-medallia-ios-MMAccessoryPanel | ios-MMAccessoryPanel | https://github.com/medallia/ios-MMAccessoryPanel | author:medallia description:MMAccessoryPanel is a iOS Cocoa Touch class that creates and manages collapsible bars on top of any UIScrollView, just below the navigation bar.
+github-medallia-javaone2016 | javaone2016 | https://github.com/medallia/javaone2016 | author:medallia description:Code Generation with JavaCompiler for Fun, Speed, and Business Profit
+github-medallia-hipchat-notifier | hipchat-notifier | https://github.com/medallia/hipchat-notifier | author:medallia description:Push HipChat notifications to the configured room.
+github-medallia-jinn | jinn | https://github.com/medallia/jinn | author:medallia description:Medallia infrastructure simulation environment
+github-medallia-empty | empty | https://github.com/medallia/empty | author:medallia description:An Empty Repository
+github-medallia-hashtest | hashtest | https://github.com/medallia/hashtest | author:medallia description:Updated Aug 28, 2015
+github-medallia-docker-zookeeper | docker-zookeeper | https://github.com/medallia/docker-zookeeper | author:medallia description:zookeeper in a docker container
+github-medallia-cnm-routed-plugin | cnm-routed-plugin | https://github.com/medallia/cnm-routed-plugin | author:medallia description:Network plugin for Docker to support IP per container using pure L3 routing.
+github-medallia-quagga | quagga | https://github.com/medallia/quagga | author:medallia description:Clone of http://git.savannah.gnu.org/cgit/quagga.git
+github-medallia-docker-aurora-scheduler | docker-aurora-scheduler | https://github.com/medallia/docker-aurora-scheduler | author:medallia description:Aurora scheduler docker image based on github.com/medallia/aurora:docker-parameters
+github-medallia-w2v4j | w2v4j | https://github.com/medallia/w2v4j | author:medallia description:Java port of the Word2Vec library
+github-medallia-jq-package-builder | jq-package-builder | https://github.com/medallia/jq-package-builder | author:medallia description:Updated Apr 13, 2016
+github-medallia-ui-challenge | ui-challenge | https://github.com/medallia/ui-challenge | author:medallia description:Updated Jun 17, 2014
+github-medallia-coop-paging-poc | coop-paging-poc | https://github.com/medallia/coop-paging-poc | author:medallia description:Proof-of-Concept for Cooperative Paging

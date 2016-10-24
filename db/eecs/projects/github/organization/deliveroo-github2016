@@ -1,0 +1,7 @@
+github-deliveroo-deliveroo.engineering | deliveroo.engineering | https://github.com/deliveroo/deliveroo.engineering | author:deliveroo description:Guidelines and conventions for good software at Deliveroo
+github-deliveroo-ravelin-ruby | ravelin-ruby | https://github.com/deliveroo/ravelin-ruby | author:deliveroo description:Ravelin Ruby gem - https://www.ravelin.com
+github-deliveroo-deliveroo.github.io | deliveroo.github.io | https://github.com/deliveroo/deliveroo.github.io | author:deliveroo description:Our tech blog and coding guidelines
+github-deliveroo-rooted-rails | rooted-rails | https://github.com/deliveroo/rooted-rails | author:deliveroo description:Rails integration for the Rooted event publisher
+github-deliveroo-rooted | rooted | https://github.com/deliveroo/rooted | author:deliveroo description:An opinionated event publisher for Ruby
+github-deliveroo-react-creditCard | react-creditCard | https://github.com/deliveroo/react-creditCard | author:deliveroo description:React component to handle credit cards. This is a conversion of the Stripe jQuery plugin.
+github-deliveroo-routemaster-rushhour | routemaster-rushhour | https://github.com/deliveroo/routemaster-rushhour | author:deliveroo description:An app to stress-test and benchmark the routemaster event bus

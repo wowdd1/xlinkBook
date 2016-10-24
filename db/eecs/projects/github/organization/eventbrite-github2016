@@ -1,27 +1,30 @@
-github-eventbrite-47-1 | rebar | https://github.com/eventbrite/rebar | author:eventbrite description:Rebar makes your Forms stronger.
-github-eventbrite-31-2 | nose-knows | https://github.com/eventbrite/nose-knows | author:eventbrite description:Knows is a nose plugin for figuring out which tests you need to run based on the files you have modified
-github-eventbrite-27-3 | eventbrite-sdk-python | https://github.com/eventbrite/eventbrite-sdk-python | author:eventbrite description:Eventbrite Python SDK
-github-eventbrite-23-4 | eventbrite-client-py | https://github.com/eventbrite/eventbrite-client-py | author:eventbrite description:Client for Eventbrite's HTTP-based API
-github-eventbrite-21-5 | cartogram | https://github.com/eventbrite/cartogram | author:eventbrite description:WebGL rendering engine
-github-eventbrite-14-6 | nose-picker | https://github.com/eventbrite/nose-picker | author:eventbrite description:Nose-picker is a plugin that picks to only run a fraction of your unit tests in django
-github-eventbrite-9-7 | python_hive_utils | https://github.com/eventbrite/python_hive_utils | author:eventbrite description:Utilities for accessing hive with Python.
-github-eventbrite-9-8 | facebook-python-sdk | https://github.com/eventbrite/facebook-python-sdk | author:eventbrite description:Facebook Platform Python SDK
-github-eventbrite-8-9 | currint | https://github.com/eventbrite/currint | author:eventbrite description:Updated Mar 21, 2016
-github-eventbrite-7-10 | dorsal | https://github.com/eventbrite/dorsal | author:eventbrite description:Fin! https://eventbrite.github.io/dorsal
-github-eventbrite-5-11 | eventually | https://github.com/eventbrite/eventually | author:eventbrite description:Set and measure progress toward code quality goals.
-github-eventbrite-4-12 | m2crypto | https://github.com/eventbrite/m2crypto | author:eventbrite description:Updated May 26, 2015
-github-eventbrite-4-13 | deskapi | https://github.com/eventbrite/deskapi | author:eventbrite description:Python wrapper for Desk.com REST API.
-github-eventbrite-2-14 | vagrant-ebcommon | https://github.com/eventbrite/vagrant-ebcommon | author:eventbrite description:Vagrant plugin to execute various Eventbrite workflows.
-github-eventbrite-1-15 | kss-search | https://github.com/eventbrite/kss-search | author:eventbrite description:This code supports providing full-text search to our KSS based styleguide documentation.
-github-eventbrite-1-16 | grunt-kss-search | https://github.com/eventbrite/grunt-kss-search | author:eventbrite description:This is the grunt plugin companion to the kss-search repo.
-github-eventbrite-1-17 | gerrit_repo | https://github.com/eventbrite/gerrit_repo | author:eventbrite description:gerrit repository for testing
-github-eventbrite-0-18 | cs2mako | https://github.com/eventbrite/cs2mako | author:eventbrite description:Clearsilver to Mako converter
-github-eventbrite-0-19 | Autoformatter | https://github.com/eventbrite/Autoformatter | author:eventbrite description:Updated Apr 29, 2016
-github-eventbrite-0-20 | eb-lookup | https://github.com/eventbrite/eb-lookup | author:eventbrite description:Updated Apr 29, 2016
-github-eventbrite-0-21 | vagrant-soa | https://github.com/eventbrite/vagrant-soa | author:eventbrite description:Vagrant plugin to manage vagrant SOA infrastructure.
-github-eventbrite-0-22 | localization_shuttle | https://github.com/eventbrite/localization_shuttle | author:eventbrite description:Updated Jan 14, 2015
-github-eventbrite-0-23 | webhooks-tutorial-flask | https://github.com/eventbrite/webhooks-tutorial-flask | author:eventbrite description:Example usage of Eventbrite Webhooks
-github-eventbrite-0-24 | vagrant-puppet-fact-generator | https://github.com/eventbrite/vagrant-puppet-fact-generator | author:eventbrite description:Vagrant plugin that allows other plugins to generate custom facts for provisioning.
-github-eventbrite-0-25 | curator | https://github.com/eventbrite/curator | author:eventbrite description:Python helper for working with lua scripts in redis.
-github-eventbrite-0-26 | pydot | https://github.com/eventbrite/pydot | author:eventbrite description:Fork of pydot r29 from pydot.googlecode.com, to fix requirements in pydot 1.0.28
-github-eventbrite-0-27 | vagrant-puppet-module-registry | https://github.com/eventbrite/vagrant-puppet-module-registry | author:eventbrite description:Vagrant plugin to manage multiple puppet module paths.
+github-eventbrite-rebar | rebar | https://github.com/eventbrite/rebar | author:eventbrite description:Rebar makes your Forms stronger.
+github-eventbrite-nose-knows | nose-knows | https://github.com/eventbrite/nose-knows | author:eventbrite description:Knows is a nose plugin for figuring out which tests you need to run based on the files you have modified
+github-eventbrite-eventbrite-sdk-python | eventbrite-sdk-python | https://github.com/eventbrite/eventbrite-sdk-python | author:eventbrite description:Eventbrite Python SDK
+github-eventbrite-cartogram | cartogram | https://github.com/eventbrite/cartogram | author:eventbrite description:WebGL rendering engine
+github-eventbrite-eventbrite-client-py | eventbrite-client-py | https://github.com/eventbrite/eventbrite-client-py | author:eventbrite description:Client for Eventbrite's HTTP-based API
+github-eventbrite-nose-picker | nose-picker | https://github.com/eventbrite/nose-picker | author:eventbrite description:Nose-picker is a plugin that picks to only run a fraction of your unit tests in django
+github-eventbrite-python_hive_utils | python_hive_utils | https://github.com/eventbrite/python_hive_utils | author:eventbrite description:Utilities for accessing hive with Python.
+github-eventbrite-facebook-python-sdk | facebook-python-sdk | https://github.com/eventbrite/facebook-python-sdk | author:eventbrite description:Facebook Platform Python SDK
+github-eventbrite-currint | currint | https://github.com/eventbrite/currint | author:eventbrite description:Updated Jul 13, 2016
+github-eventbrite-dorsal | dorsal | https://github.com/eventbrite/dorsal | author:eventbrite description:Fin! https://eventbrite.github.io/dorsal
+github-eventbrite-eventually | eventually | https://github.com/eventbrite/eventually | author:eventbrite description:Set and measure progress toward code quality goals.
+github-eventbrite-javascript | javascript | https://github.com/eventbrite/javascript | author:eventbrite description:Eventbrite JavaScript coding style guide
+github-eventbrite-m2crypto | m2crypto | https://github.com/eventbrite/m2crypto | author:eventbrite description:Updated May 26, 2015
+github-eventbrite-deskapi | deskapi | https://github.com/eventbrite/deskapi | author:eventbrite description:Python wrapper for Desk.com REST API.
+github-eventbrite-vagrant-ebcommon | vagrant-ebcommon | https://github.com/eventbrite/vagrant-ebcommon | author:eventbrite description:Vagrant plugin to execute various Eventbrite workflows.
+github-eventbrite-gerrit_repo | gerrit_repo | https://github.com/eventbrite/gerrit_repo | author:eventbrite description:gerrit repository for testing
+github-eventbrite-Casper-API-Tools | Casper-API-Tools | https://github.com/eventbrite/Casper-API-Tools | author:eventbrite description:Python Command Line Interface for performing Casper Suite JSS commands.
+github-eventbrite-grunt-kss-search | grunt-kss-search | https://github.com/eventbrite/grunt-kss-search | author:eventbrite description:This is the grunt plugin companion to the kss-search repo.
+github-eventbrite-kss-search | kss-search | https://github.com/eventbrite/kss-search | author:eventbrite description:This code supports providing full-text search to our KSS based styleguide documentation.
+github-eventbrite-localization_shuttle | localization_shuttle | https://github.com/eventbrite/localization_shuttle | author:eventbrite description:Updated Jan 14, 2015
+github-eventbrite-eb-lookup | eb-lookup | https://github.com/eventbrite/eb-lookup | author:eventbrite description:Updated Apr 29, 2016
+github-eventbrite-webhooks-tutorial-flask | webhooks-tutorial-flask | https://github.com/eventbrite/webhooks-tutorial-flask | author:eventbrite description:Example usage of Eventbrite Webhooks
+github-eventbrite-vagrant-soa | vagrant-soa | https://github.com/eventbrite/vagrant-soa | author:eventbrite description:Vagrant plugin to manage vagrant SOA infrastructure.
+github-eventbrite-vagrant-puppet-module-registry | vagrant-puppet-module-registry | https://github.com/eventbrite/vagrant-puppet-module-registry | author:eventbrite description:Vagrant plugin to manage multiple puppet module paths.
+github-eventbrite-vagrant-puppet-fact-generator | vagrant-puppet-fact-generator | https://github.com/eventbrite/vagrant-puppet-fact-generator | author:eventbrite description:Vagrant plugin that allows other plugins to generate custom facts for provisioning.
+github-eventbrite-curator | curator | https://github.com/eventbrite/curator | author:eventbrite description:Python helper for working with lua scripts in redis.
+github-eventbrite-cs2mako | cs2mako | https://github.com/eventbrite/cs2mako | author:eventbrite description:Clearsilver to Mako converter
+github-eventbrite-pydot | pydot | https://github.com/eventbrite/pydot | author:eventbrite description:Fork of pydot r29 from pydot.googlecode.com, to fix requirements in pydot 1.0.28
+github-eventbrite-css | css | https://github.com/eventbrite/css | author:eventbrite description:Eventbrite CSS coding style guide
+github-eventbrite-teLogger | teLogger | https://github.com/eventbrite/teLogger | author:eventbrite description:Updated Aug 11, 2016

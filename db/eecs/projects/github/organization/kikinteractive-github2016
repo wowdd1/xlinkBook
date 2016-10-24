@@ -1,25 +1,26 @@
-github-kikinteractive-2645-1 | app | https://github.com/kikinteractive/app | author:kikinteractive description:Instant mobile web app creation
-github-kikinteractive-32-2 | starter-kit | https://github.com/kikinteractive/starter-kit | author:kikinteractive description:Template for starting to build mobile web apps
-github-kikinteractive-32-3 | swapper | https://github.com/kikinteractive/swapper | author:kikinteractive description:UI navigation and transition utility
-github-kikinteractive-28-4 | image-search-example | https://github.com/kikinteractive/image-search-example | author:kikinteractive description:Image Search example app for Kik
-github-kikinteractive-22-5 | kik-node | https://github.com/kikinteractive/kik-node | author:kikinteractive description:Kik Bot API for Node.js
-github-kikinteractive-21-6 | photo-viewer | https://github.com/kikinteractive/photo-viewer | author:kikinteractive description:Embeddable photo viewer library
-github-kikinteractive-17-7 | clickable | https://github.com/kikinteractive/clickable | author:kikinteractive description:Seamless buttons for mobile devices
-github-kikinteractive-15-8 | kik-python | https://github.com/kikinteractive/kik-python | author:kikinteractive description:Kik APIs for Python
-github-kikinteractive-11-9 | kik-api-iphone | https://github.com/kikinteractive/kik-api-iphone | author:kikinteractive description:Native iPhone API to interact with the Kik Messenger client.
-github-kikinteractive-10-10 | kik-api-android | https://github.com/kikinteractive/kik-api-android | author:kikinteractive description:Native Android API to interact with the Kik Messenger client.
-github-kikinteractive-9-11 | tapchat | https://github.com/kikinteractive/tapchat | author:kikinteractive description:TapChat example app for Kik
-github-kikinteractive-8-12 | scrollable | https://github.com/kikinteractive/scrollable | author:kikinteractive description:Seamless scrolling for mobile devices
-github-kikinteractive-7-13 | kik-lib-node | https://github.com/kikinteractive/kik-lib-node | author:kikinteractive description:A NodeJS module to help with push notifications and authentication.
-github-kikinteractive-6-14 | yaml-stratus | https://github.com/kikinteractive/yaml-stratus | author:kikinteractive description:YAML Stratus provides extensions to YAML that make it amenable to use with AWS CloudFormation templates
-github-kikinteractive-5-15 | store | https://github.com/kikinteractive/store | author:kikinteractive description:Bindable & persistent storage
-github-kikinteractive-4-16 | card-tester | https://github.com/kikinteractive/card-tester | author:kikinteractive description:basic tests for kik cards
-github-kikinteractive-4-17 | youtube-feed-viewer-demo | https://github.com/kikinteractive/youtube-feed-viewer-demo | author:kikinteractive description:Simple example on how to use YouTube's Feed API to get a list of videos by channel and then display them using angular, bootstrap and kik.
-github-kikinteractive-4-18 | dialog | https://github.com/kikinteractive/dialog | author:kikinteractive description:modal dialogs for mobile web apps
-github-kikinteractive-3-19 | kik-shooter | https://github.com/kikinteractive/kik-shooter | author:kikinteractive description:Updated Sep 17, 2013
-github-kikinteractive-2-20 | KikUserDefaults | https://github.com/kikinteractive/KikUserDefaults | author:kikinteractive description:Streamlines NSUserDefaults by removing much of the boilerplate.
-github-kikinteractive-1-21 | CLIPropertiesMojo | https://github.com/kikinteractive/CLIPropertiesMojo | author:kikinteractive description:A simple mojo to add build properties
-github-kikinteractive-1-22 | starter-kit-appengine | https://github.com/kikinteractive/starter-kit-appengine | author:kikinteractive description:AppEngine service starter kit
-github-kikinteractive-1-23 | starter-kit-go | https://github.com/kikinteractive/starter-kit-go | author:kikinteractive description:Updated Jan 20, 2014
-github-kikinteractive-0-24 | kik-js-issues | https://github.com/kikinteractive/kik-js-issues | author:kikinteractive description:Dedicated bug tracker for issues with Cards.js
-github-kikinteractive-0-25 | server-metrics-test | https://github.com/kikinteractive/server-metrics-test | author:kikinteractive description:Interview Test
+github-kikinteractive-app | app | https://github.com/kikinteractive/app | author:kikinteractive description:Instant mobile web app creation
+github-kikinteractive-kik-node | kik-node | https://github.com/kikinteractive/kik-node | author:kikinteractive description:Kik APIs for Node.js
+github-kikinteractive-starter-kit | starter-kit | https://github.com/kikinteractive/starter-kit | author:kikinteractive description:Template for starting to build mobile web apps
+github-kikinteractive-swapper | swapper | https://github.com/kikinteractive/swapper | author:kikinteractive description:UI navigation and transition utility
+github-kikinteractive-image-search-example | image-search-example | https://github.com/kikinteractive/image-search-example | author:kikinteractive description:Image Search example app for Kik
+github-kikinteractive-photo-viewer | photo-viewer | https://github.com/kikinteractive/photo-viewer | author:kikinteractive description:Embeddable photo viewer library
+github-kikinteractive-kik-python | kik-python | https://github.com/kikinteractive/kik-python | author:kikinteractive description:Kik APIs for Python
+github-kikinteractive-clickable | clickable | https://github.com/kikinteractive/clickable | author:kikinteractive description:Seamless buttons for mobile devices
+github-kikinteractive-kik-api-iphone | kik-api-iphone | https://github.com/kikinteractive/kik-api-iphone | author:kikinteractive description:Native iPhone API to interact with the Kik Messenger client.
+github-kikinteractive-kik-api-android | kik-api-android | https://github.com/kikinteractive/kik-api-android | author:kikinteractive description:Native Android API to interact with the Kik Messenger client.
+github-kikinteractive-tapchat | tapchat | https://github.com/kikinteractive/tapchat | author:kikinteractive description:TapChat example app for Kik
+github-kikinteractive-scrollable | scrollable | https://github.com/kikinteractive/scrollable | author:kikinteractive description:Seamless scrolling for mobile devices
+github-kikinteractive-kik-lib-node | kik-lib-node | https://github.com/kikinteractive/kik-lib-node | author:kikinteractive description:A NodeJS module to help with push notifications and authentication.
+github-kikinteractive-youtube-feed-viewer-demo | youtube-feed-viewer-demo | https://github.com/kikinteractive/youtube-feed-viewer-demo | author:kikinteractive description:Simple example on how to use YouTube's Feed API to get a list of videos by channel and then display them using angular, bootstrap and kik.
+github-kikinteractive-yaml-stratus | yaml-stratus | https://github.com/kikinteractive/yaml-stratus | author:kikinteractive description:YAML Stratus provides extensions to YAML that make it amenable to use with AWS CloudFormation templates
+github-kikinteractive-dialog | dialog | https://github.com/kikinteractive/dialog | author:kikinteractive description:modal dialogs for mobile web apps
+github-kikinteractive-store | store | https://github.com/kikinteractive/store | author:kikinteractive description:Bindable & persistent storage
+github-kikinteractive-card-tester | card-tester | https://github.com/kikinteractive/card-tester | author:kikinteractive description:basic tests for kik cards
+github-kikinteractive-starter-kit-appengine | starter-kit-appengine | https://github.com/kikinteractive/starter-kit-appengine | author:kikinteractive description:AppEngine service starter kit
+github-kikinteractive-kik-shooter | kik-shooter | https://github.com/kikinteractive/kik-shooter | author:kikinteractive description:Updated Sep 17, 2013
+github-kikinteractive-ice | ice | https://github.com/kikinteractive/ice | author:kikinteractive description:Guice-based Java8 configuration system
+github-kikinteractive-KikUserDefaults | KikUserDefaults | https://github.com/kikinteractive/KikUserDefaults | author:kikinteractive description:Streamlines NSUserDefaults by removing much of the boilerplate.
+github-kikinteractive-CLIPropertiesMojo | CLIPropertiesMojo | https://github.com/kikinteractive/CLIPropertiesMojo | author:kikinteractive description:A simple mojo to add build properties
+github-kikinteractive-starter-kit-go | starter-kit-go | https://github.com/kikinteractive/starter-kit-go | author:kikinteractive description:Updated Jan 20, 2014
+github-kikinteractive-server-metrics-test | server-metrics-test | https://github.com/kikinteractive/server-metrics-test | author:kikinteractive description:Interview Test
+github-kikinteractive-kik-js-issues | kik-js-issues | https://github.com/kikinteractive/kik-js-issues | author:kikinteractive description:Dedicated bug tracker for issues with Cards.js
