@@ -133,6 +133,7 @@ class Convert(BaseExtension):
         return html
 
     def check(self, form_dict):
-        return True
+        url = form_dict['url'].encode('utf8')
+        return url != ''
         #url = form_dict['url'].encode('utf8')
         #return url != "" and url.startswith('http')

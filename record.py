@@ -38,7 +38,15 @@ class Record():
         return self.line[self.get_pos(1) + 1 : self.get_pos(2)]
 
     def get_url(self):
-        return self.line[self.get_pos(2) + 1 : self.get_pos(3)]
+        url = self.line[self.get_pos(2) + 1 : self.get_pos(3)]
+        if url != None and url.find(Config.ip_adress) != -1:
+            url = url.strip()
+            if url.find('column=') == -1:
+                url += '&column=' + Config.column_num
+            if url.find('width=') == -1:
+                url += '&width=' + Config.default_width
+
+        return url            
 
     def get_describe(self):
         desc = self.line[self.get_pos(3) + 1 : ].replace('|', '')
@@ -117,9 +125,11 @@ class Tag():
 
         self.tag_shortname = "shortname:"
 
+        self.tag_ceo = 'ceo:'
+
         self.tag_list = [self.tag_id, self.tag_videourl, self.tag_author, self.tag_winner, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_description, self.tag_textbook, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname]
+                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo]
 
         self.tag_list_short = ["d:"]
 

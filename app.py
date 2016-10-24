@@ -10,6 +10,7 @@ from extension_manager import ExtensionManager
 from utils import Utils
 from config import Config
 import requests
+import datetime
 
 from flask import (Flask, flash, request, redirect,
     render_template, url_for, session)
@@ -143,6 +144,38 @@ def handleAddRecord():
 
     return ''
 
+@app.route('/exec', methods=['POST'])
+def handleExec():
+    command = request.form['command']
+    fileName = request.form['fileName']
+    print command + ' ' + fileName
+    output = ''
+    if command == 'open':
+        cmd = 'open "' + fileName + '"'
+        chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+        if os.path.exists(chrome):
+            cmd = chrome.replace(' ', '\ ') + ' "' + fileName + '"'
+        output = subprocess.check_output(cmd, shell=True)
+
+    return output
+
+
+
+@app.route('/userlog', methods=['POST'])
+def handleUserLog():
+    dt = str(datetime.datetime.now())
+    print 'handleUserLog--->  ' + dt[0 : dt.rfind('.')] + '  <---'
+    print '     linktext: ' + request.form['text'].replace('%20', ' ')
+    print '     searchText: ' + request.form['searchText'].replace('%20', ' ')
+    print '     url: ' + request.form['url']
+    print '     module: ' + request.form['module']
+    library = request.form['library']
+    if library.find('db/') != -1:
+        library = library[library.find('db/') :]
+    print '     library: ' + library
+    print '     rid: ' + request.form['rid']
+    print '     user: ' + request.form['user']
+    return ''
 
 @app.route('/extensions', methods=['POST'])
 def handleExtension():
@@ -240,14 +273,18 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     return cmd.replace('?', '') 
 
 def listDB():
-    return genList(os.listdir('db/'))
+    return genList(sorted(os.listdir('db/')))
 
 def listAllFile(db):
     folder = 'db/' + db
-    files = os.listdir(folder)
+    files = sorted(os.listdir(folder))
     html = ''
     html += '<head>'
     html += '<style type="text/css">a { font-weight:Normal;  text-decoration:none; } a:hover { text-decoration:underline; }</style>'
+    html += '<script language="JavaScript" type="text/JavaScript">'
+    html += ''.join(open('web/jquery-1.8.3.min.js', 'rU').readlines())
+    html += 'function userlog(text, url, module, library, rid) {$.post("/userlog", {text : text , url : url, module : module, library : library, rid : rid}, function(data){});}'
+    html +='</script>'
     html += '</head>'
     #return genList(files, folder, db)
     name = ''
@@ -287,15 +324,16 @@ def genTable(files, folder= '', db=''):
     count = 0
     column_num = int(request.args.get('column', '3'));
     tds = ''
-    for f in sorted(files,  cmp=lambda x,y : cmp(len(x), len(y))):
+    #for f in sorted(files,  cmp=lambda x,y : cmp(len(x), len(y))):
+    for f in sorted(files):
        count += 1
        if os.path.isfile(os.path.join(folder, f)):
-           tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f + '">' + f + '<a></td>'
+           tds += '<td>' + utils.enhancedLink('http://' + Config.ip_adress + '/?db=' + db + '&key=' + f, f, module='file', library=db + f, newTab=False) + '</td>'
        else:
            if db != '':
-               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?">' + f + '/</a></td>'
+               tds += '<td>' + utils.enhancedLink('http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?', f, module='file', library=db + f, newTab=False) + '</td>'
            else:
-               tds += '<td><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + f + '/</a></td>'
+               tds += '<td>' + utils.enhancedLink('http://' + Config.ip_adress + '/?db=' + f +  '/&key=?', f, module='file', library=db + f, newTab=False) + '</td>'
        if count % column_num == 0:
            html += '<tr>' + tds + '</tr>'
            tds = ''
@@ -310,13 +348,17 @@ def genList(files, folder='', db=''):
     count = 0
     for f in sorted(files):
         count += 1
+        
         if os.path.isfile(os.path.join(folder, f)):
-            html += '<li><a href="http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f + '">' + f + '<a></li>'
+            url = 'http://' + Config.ip_adress + '/?db=' + db+  '&key=' + f
+            html += '<li>' + utils.enhancedLink(url, f, module='file', library=db + f, newTab=False)  + '</li>'
         else:
             if db != '':
-                html += '<li><a href="http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?">' + f + '/</a></li>'
+                url = 'http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?'
+                html += '<li>' + utils.enhancedLink(url, f, module='file', library=db + f, newTab=False) + '</li>'
             else:
-                html += '<li><a href="http://' + Config.ip_adress + '/?db=' + f +  '/&key=?">' + f + '/</a></li>'
+                url = 'http://' + Config.ip_adress + '/?db=' + f +  '/&key=?'
+                html += '<li>' + utils.enhancedLink(url, f, module='file', library=f, newTab=False)  + '</li>'
 
     html += '</ul>'
     return html

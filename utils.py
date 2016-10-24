@@ -192,18 +192,18 @@ class Utils:
         html += '<div style="height: 11px; width: 100px"></div></div>'
         return html
 
-    def gen_menu(self):
+    def gen_menu(self, source):
         db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
         html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">' + db_root
         for link_dict in Config.fav_links.items():
             src = link_dict[1]
             if src.startswith('http') == False:
                 src = 'http://' + src
-            html += '<a target="_blank" href="' + src + '" style="margin-right:6px">' + link_dict[0] + "</a>"
+            html += self.enhancedLink(src, link_dict[0], style='style="margin-right:6px"', library=source, module='main') + '&nbsp;'
         html += '</div><div style="height: 21px; width: 100px"></div>'
         return html
 
-    def gen_libary(self, root=False, user_name='', user_image=''):
+    def gen_libary(self, root=False, user_name='', user_image='', source=''):
         html = ''
         db_root = ''
         origin_user_name = user_name
@@ -229,18 +229,18 @@ class Utils:
             content = user_name
 
             if Config.display_all_library:
-                html += self.gen_libary2(user_name)
+                html += self.gen_libary2(user_name, source)
             else:
-                html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=?">library</a>&nbsp;'
+                html += self.enhancedLink("http://' + Config.ip_adress + '/?db=library/&key=?", 'library', library=source, module='main') + '&nbsp;'
 
-            html +=  '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width + '">' + content + '<font size="2">(' + str(lines) + ')</font></a></div>'
+            html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(' + str(lines) + ')</font>', library=source, module='main') + '</div>'
         else:
-            html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + '<a target="_blank" href="http://' + Config.ip_adress + '/login">Login</a></div>'
+            html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + self.enhancedLink("http://' + Config.ip_adress + '/login", 'Login', library=source, module='main') + '</div>'
         html += '<div style="height: 21px; width: 100px"></div>'
 
         return html
 
-    def gen_libary2(self, user):
+    def gen_libary2(self, user, source):
         html = ''
         file_list = os.listdir("db/library/")
         count = 0
@@ -255,7 +255,8 @@ class Utils:
             f = open('db/library/' + item)
             lines = len(f.readlines())
             f.close()
-            html += '<a target="_blank" href="http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=' + Config.default_width + '">' + item.replace('-library', '') + '<font size="2">(' + str(lines) + ')</font></a>&nbsp;'
+            html += self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=' + Config.default_width,  item.replace('-library', '') + '<font size="2">(' + str(lines) + ')</font>', library=source, module='main') + '&nbsp;'
+ 
             if count > 5 :
                 count = 0
                 #html += '<br/>' #need adjust config content_margin_top
@@ -431,13 +432,20 @@ class Utils:
         if len(engins) == 0:
             return self.realGetEnginList(['star'], self.search_engin_dict.values())
         else:
-            engins = sorted(engins, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
+            #engins = sorted(engins, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
             #for e in engins:
             #    print e + ' p:' + self.search_engin_dict[e].get_priority()
 
             if len(engins) < Config.recommend_engin_num:
                 return engins
             return engins[0 : Config.recommend_engin_num]
+
+    def getTopEngin(self, tag):
+        engins = self.getEnginList('d:' + tag.strip())
+        if len(engins) > 0:
+            return engins[0]
+        else:
+            return ''
 
     def getEnginList(self, engins, folder=''):
         if engins.startswith('description:') or engins.startswith('d:'):
@@ -453,7 +461,7 @@ class Utils:
         else:
             return engins.split(' ')
 
-    def realGetEnginList(self, tags, records, match_title=False):
+    def realGetEnginList(self, tags, records, match_title=False, sort=True):
         engin_list = []
         if len(tags) == 0:
             return engin_list
@@ -470,7 +478,10 @@ class Utils:
                     if desc.find(tag) != -1:
                         #engin = record.get_title().strip()
                         engin_list.append(record.get_title().strip())
-        return engin_list
+        if sort:
+            return sorted(engin_list, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
+        else:
+            return engin_list
 
     def getDDGEnginList(self, tags):
         if len(self.ddg_search_engin_type) == 0 or len(self.ddg_search_engin_dict) == 0:
@@ -507,7 +518,7 @@ class Utils:
                 return html
         return html
 
-    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0):
+    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0, userQuote=False, module='', library=''):
         if self.ddg_mode:
             return self.getDDGEnginListLinks(engins, topic, id, query, color, fontSize)
         if topic == '':
@@ -526,10 +537,13 @@ class Utils:
             else:
                 keyword = topic.strip()
             if Config.hiden_content_after_search:
-                result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;" onclick="var pid = this.parentNode.parentNode.id; hidenMoreContent(pid, 1);">' + self.formatEnginTitle(engin_display) + '</a>'
+                script = "var pid = this.parentNode.parentNode.id; hidenMoreContent(pid, 1);"
+                style = "color:'" + color + ' ; font-size: ' + str(fontSize) + "'pt;"
+                result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, script=script, userQuote=userQuote, module=module, library=library, searchText=keyword, rid='#rid')
             else:
-                result[engin] = ' <a href="' + self.getEnginUrlEx(engin, keyword, query) + '" target="_blank" style="color:' + color + ' ; font-size: ' + str(fontSize) + 'pt;">' + self.formatEnginTitle(engin_display) + '</a>'
-
+                style = "color:'" + color + ' ; font-size:' + str(fontSize) + "'pt;"
+                result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, userQuote=userQuote, module=module, library=library, searchText=keyword, rid='#rid')
+            result[engin] += '&nbsp;'
         return result
 
     def formatEnginTitle(self, engin):
@@ -600,7 +614,9 @@ class Utils:
         #TODO get best engin by resourceType
         return self.getEnginUrl(Config.smart_link_engin)
 
-    def bestMatchEnginUrl(self, text, resourceType=''):
+    def bestMatchEnginUrl(self, text, resourceType='', source=''):
+        if source.find('github') != -1 and resourceType.find('author') != -1:
+            return 'http://github.com/' + text
         url = self.bestMatchEngin(text, resourceType=resourceType)
         return self.toQueryUrl(url, text)
 
@@ -614,8 +630,69 @@ class Utils:
             url += query_text
         return url
 
+    #hook user usage data
 
-    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', userQuote=False, module='', library='', img='', rid='', newTab=True, searchText=''):
+        url = url.strip()
+        user_log_js = ''
+        send_text = text
+        if send_text.find('<') != -1:
+            send_text = self.clearHtmlTag(send_text)
+        if searchText == '':
+            searchText = send_text
+        if userQuote:
+            # because array.push('') contain ', list.py will replace "'" to ""
+            # so use  #quote as ', in appendContent wiil replace #quote back to '
+            user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote);"
+        else:
+            user_log_js = "userlog('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "');"
+            
+        if url.startswith('http') == False and url != '':
+            js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
+            link = '<a target="_blank" href="javascript:void(0);" onclick="' + js +  user_log_js + '">'
+            if showText != '':
+                link += showText + '</a>'
+            else:
+                link += text + '</a>'
+            return link
+        if newTab:
+            if userQuote:
+                open_js = "window.open(#quote" + url + "#quote);"
+            else:
+                open_js = "window.open('" + url + "');"
+        else:
+            if userQuote:
+                open_js = "window.location.href = #quote" + url + "#quote;"
+            else:
+                open_js = "window.location.href = '" + url + "';"
+        #open_js = ''
+        result = '<a target="_blank" href="javascript:void(0);"'
+
+        if aid != '':
+            result += ' id=' + id
+
+        if script != '':
+            result += ' onclick="' + script + open_js + user_log_js + '"'
+        else:
+            result += ' onclick="' + open_js + user_log_js + '"'
+
+
+        if style != '':
+            result += ' style="' + style + '"'
+
+        result += '>' 
+
+        if img != '':
+            result += img + '</a>'
+        else:
+            if showText != '':
+                result += showText + '</a>'
+            else:
+                result += text + '</a>'
+
+        return result
+
+    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False, showText='', module='', library='', rid=''):
         if text != '' and len(text.strip()) <= Config.smart_link_max_text_len:
             url = ''
             if engin != '':
@@ -623,9 +700,9 @@ class Utils:
             else:
                 url = self.bestMatchEnginUrl(text)
             if noFormat:
-                return '<a target="_blank" href="' + url + '">' + text + '</a>'
+                return self.enhancedLink(url, text, showText=showText, module=module, library=library, rid=rid)
             else:
-                return '<a target="_blank" href="' + url + '">' + self.formatTitle(text, br_number) + '</a>'
+                return self.enhancedLink(url, self.formatTitle(text, br_number), showText=showText, module=module, library=library, rid=rid)
         if noFormat:
             return text
         else:

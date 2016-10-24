@@ -8,7 +8,7 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    smart_link_engin = 'google'
+    smart_link_engin = 'google' #'glucky'
     smart_link_max_text_len = 60
     smart_link_br_len = 80
     replace_with_smart_link = False
@@ -75,7 +75,7 @@ class Config():
     second_default_tab = 'bookmark'#'figures'
 
     default_width = "54" #"79"
-    column_num = "1"
+    column_num = "3"
     custom_cell_len = 88 
     split_length = custom_cell_len + 15
     custom_cell_row = 5
@@ -123,7 +123,9 @@ class Config():
           #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
 
-    
+    delete_from_char = ''
+    delete_forward = True
+
     # ==== extension ====
     # reference
     reference_filter = ''
@@ -132,9 +134,13 @@ class Config():
 
     # bookmark
     bookmark_enable_cloud_bookmark = False
+    bookmark_file_path = "/Users/zd/Downloads/chrome_bookmarks.json"
+
+    #filefinder
+    filefinder_dirs = ['~/Downloads']
 
     # convert
-    '''
+    ''' default config
     convert_url_args = '' #'?start=' #'?start=0&tag='
     convert_page_step = 0
     convert_page_start = 0
@@ -163,6 +169,3 @@ class Config():
     convert_start = 6
     convert_split_column_number = 0
     #'''
-
-    delete_from_char = ''
-    delete_forward = True

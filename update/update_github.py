@@ -658,8 +658,8 @@ class GithubSpider(Spider):
                 'uArm-Developer' : 'https://github.com/uArm-Developer',\
                 'arduino' : 'https://github.com/arduino',\
                 'ai2' : 'https://github.com/allenai',\
-                'microsoftresearch' : 'https://github.com/microsoftresearch',\
-                'facebookresearch' : 'https://github.com/facebookresearch',\
+                'microsoft-research' : 'https://github.com/microsoftresearch',\
+                'facebook-research' : 'https://github.com/facebookresearch',\
                 'ibm-research' : 'https://github.com/ibm-research',\
                 'ibm-watson' : 'https://github.com/ibm-watson',\
                 'csail' : 'https://github.com/csail',\
@@ -668,10 +668,10 @@ class GithubSpider(Spider):
                 'watson-developer-cloud' : 'https://github.com/watson-developer-cloud',\
                 'Samsung' : 'https://github.com/Samsung',\
                 'nvidia' : 'https://github.com/nvidia',\
+                'AMD' : 'https://github.com/amd',\
                 'macmillanpublishers' : 'https://github.com/macmillanpublishers',\
                 'oreillymedia' : 'https://github.com/oreillymedia',\
                 'usgs' : 'https://github.com/usgs'}
-
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\
                 'nipy' : 'https://github.com/nipy',\
@@ -705,7 +705,7 @@ class GithubSpider(Spider):
                 data[key.lower()] = url 
                   
         if len(data) > 0:
-            self.getProjectByDict(data)
+            self.getProjectByDict(data, 'eecs/projects/github/organization/')
 
     def getProjectByDict(self, data, path):
         for k in data:
