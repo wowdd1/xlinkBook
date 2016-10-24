@@ -1,0 +1,33 @@
+github-transferwise-ng-browser-info | ng-browser-info | https://github.com/transferwise/ng-browser-info | author:transferwise description:AngularJS service that gives you a collection of methods for knowing more about your client browser
+github-transferwise-log-it-down | log-it-down | https://github.com/transferwise/log-it-down | author:transferwise description:AngularJS module that collects all your $log and $exceptionHandler messages into a service for later inspection
+github-transferwise-cse-java | cse-java | https://github.com/transferwise/cse-java | author:transferwise description:Updated Feb 18, 2016
+github-transferwise-tw-currency-select | tw-currency-select | https://github.com/transferwise/tw-currency-select | author:transferwise description:Reusable currency-select dropdown component
+github-transferwise-dev-challenge-server | dev-challenge-server | https://github.com/transferwise/dev-challenge-server | author:transferwise description:Backend of our CLI dev challange
+github-transferwise-payment-components | payment-components | https://github.com/transferwise/payment-components | author:transferwise description:Angular components (directive-controller-view-styles bundles as it is Angular 1) for payment steps in TransferWise products.
+github-transferwise-dev-challenge-example | dev-challenge-example | https://github.com/transferwise/dev-challenge-example | author:transferwise description:An example challenge using dev-challenge-server module
+github-transferwise-ng-starter | ng-starter | https://github.com/transferwise/ng-starter | author:transferwise description:Angular 1.5, ES6, Karma, CircleCI, S3
+github-transferwise-styleguide-components | styleguide-components | https://github.com/transferwise/styleguide-components | author:transferwise description:AngularJS components for TransferWise Bootstrap
+github-transferwise-flagz | flagz | https://github.com/transferwise/flagz | author:transferwise description:SVG flags
+github-transferwise-currency-flags | currency-flags | https://github.com/transferwise/currency-flags | author:transferwise description:Flags for currency codes.
+github-transferwise-spring-cloud-tex | spring-cloud-tex | https://github.com/transferwise/spring-cloud-tex | author:transferwise description:EnableConfigServer
+github-transferwise-tw-challenge-2014 | tw-challenge-2014 | https://github.com/transferwise/tw-challenge-2014 | author:transferwise description:Base repository for TransferWise Challenge - please fork for each team and make repository public. Sharing is caring!
+github-transferwise-tw-challenge-february-2015 | tw-challenge-february-2015 | https://github.com/transferwise/tw-challenge-february-2015 | author:transferwise description:Template repository for TW Challenge submissions
+github-transferwise-grunt-inject-dependencies | grunt-inject-dependencies | https://github.com/transferwise/grunt-inject-dependencies | author:transferwise description:Updated Feb 21, 2016
+github-transferwise-mtb-client | mtb-client | https://github.com/transferwise/mtb-client | author:transferwise description:Soap client for Mutual Trust Bank (Bangladesh)
+github-transferwise-line-chart | line-chart | https://github.com/transferwise/line-chart | author:transferwise description:This is the d3 chart used in the rate alerts and currency converter tools
+github-transferwise-grunt-collect-dependencies | grunt-collect-dependencies | https://github.com/transferwise/grunt-collect-dependencies | author:transferwise description:Collect AngularJS app dependencies into a JSON file
+github-transferwise-tw-condition-factory | tw-condition-factory | https://github.com/transferwise/tw-condition-factory | author:transferwise description:Create conditions that can return promises and provide an onError callback
+github-transferwise-angular-global-pubsub | angular-global-pubsub | https://github.com/transferwise/angular-global-pubsub | author:transferwise description:Basic PubSub service provider for messaging across multiple ng-apps.
+github-transferwise-tw-base-styles | tw-base-styles | https://github.com/transferwise/tw-base-styles | author:transferwise description:Base styles repo for the bower package
+github-transferwise-WebpageSnapper | WebpageSnapper | https://github.com/transferwise/WebpageSnapper | author:transferwise description:Updated Sep 5, 2016
+github-transferwise-iconfont | iconfont | https://github.com/transferwise/iconfont | author:transferwise description:TransferWise IconFont
+github-transferwise-comparison-widget-old | comparison-widget-old | https://github.com/transferwise/comparison-widget-old | author:transferwise description:A comparison widget to be used on landing pages and tools. Uses our comparison service
+github-transferwise-comparison-widget | comparison-widget | https://github.com/transferwise/comparison-widget | author:transferwise description:Comparison Widget
+github-transferwise-tw-sketch-library | tw-sketch-library | https://github.com/transferwise/tw-sketch-library | author:transferwise description:Sketch library of TW UI components for use with Invision's craft sketch plugin
+github-transferwise-ghost-theme | ghost-theme | https://github.com/transferwise/ghost-theme | author:transferwise description:TransferWise Ghost blogging platform theme https://ghost.org/
+github-transferwise-tw-challenge-final-2015 | tw-challenge-final-2015 | https://github.com/transferwise/tw-challenge-final-2015 | author:transferwise description:Template repository for TW Challenge submissions
+github-transferwise-jira | jira | https://github.com/transferwise/jira | author:transferwise description:docker container for jira node
+github-transferwise-arbiter | arbiter | https://github.com/transferwise/arbiter | author:transferwise description:Sample app for decoupling tracking responsibility from main code responibility.
+github-transferwise-UPFMonitor | UPFMonitor | https://github.com/transferwise/UPFMonitor | author:transferwise description:Monitoring tool for UPF Interface ledgers
+github-transferwise-tw-versioning-plugin | tw-versioning-plugin | https://github.com/transferwise/tw-versioning-plugin | author:transferwise description:Grails plugin to simplify plugin version management
+github-transferwise-ics-career-day-2015 | ics-career-day-2015 | https://github.com/transferwise/ics-career-day-2015 | author:transferwise description:TransferWise tasks for UT ICS Career day 2015

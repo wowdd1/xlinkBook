@@ -1,5 +1,5 @@
-github-deliveryhero-75-1 | lymph | https://github.com/deliveryhero/lymph | author:deliveryhero description:framework for Python services
-github-deliveryhero-10-2 | distconfig | https://github.com/deliveryhero/distconfig | author:deliveryhero description:A Python library to manage shared state
-github-deliveryhero-5-3 | lymph-schema | https://github.com/deliveryhero/lymph-schema | author:deliveryhero description:Updated Mar 1, 2016
-github-deliveryhero-5-4 | lymph-sqlalchemy | https://github.com/deliveryhero/lymph-sqlalchemy | author:deliveryhero description:Updated Mar 2, 2016
-github-deliveryhero-1-5 | lymph-monitor | https://github.com/deliveryhero/lymph-monitor | author:deliveryhero description:Updated Feb 17, 2016
+github-deliveryhero-lymph | lymph | https://github.com/deliveryhero/lymph | author:deliveryhero description:framework for Python services
+github-deliveryhero-distconfig | distconfig | https://github.com/deliveryhero/distconfig | author:deliveryhero description:A Python library to manage shared state
+github-deliveryhero-lymph-schema | lymph-schema | https://github.com/deliveryhero/lymph-schema | author:deliveryhero description:Updated Mar 1, 2016
+github-deliveryhero-lymph-sqlalchemy | lymph-sqlalchemy | https://github.com/deliveryhero/lymph-sqlalchemy | author:deliveryhero description:Updated Mar 2, 2016
+github-deliveryhero-lymph-monitor | lymph-monitor | https://github.com/deliveryhero/lymph-monitor | author:deliveryhero description:Updated Feb 17, 2016

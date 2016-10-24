@@ -1,5 +1,5 @@
-github-zocdoc-8-1 | ZocBuild.Database | https://github.com/Zocdoc/ZocBuild.Database | author:zocdoc description:A build and deployment library for objects in SQL Server databases.
-github-zocdoc-8-2 | ZocMon | https://github.com/Zocdoc/ZocMon | author:zocdoc description:Simple production monitoring for .net web applications
-github-zocdoc-1-3 | ZocUtil.Database | https://github.com/Zocdoc/ZocUtil.Database | author:zocdoc description:Class library of database command helpers.
-github-zocdoc-0-4 | ZocMonGraphs | https://github.com/Zocdoc/ZocMonGraphs | author:zocdoc description:MVC application to display data created with ZocMon library.
-github-zocdoc-0-5 | Tutorial | https://github.com/Zocdoc/Tutorial | author:zocdoc description:Updated Aug 25, 2015
+github-zocdoc-ZocBuild.Database | ZocBuild.Database | https://github.com/Zocdoc/ZocBuild.Database | author:zocdoc description:A build and deployment library for objects in SQL Server databases.
+github-zocdoc-ZocMon | ZocMon | https://github.com/Zocdoc/ZocMon | author:zocdoc description:Simple production monitoring for .net web applications
+github-zocdoc-ZocUtil.Database | ZocUtil.Database | https://github.com/Zocdoc/ZocUtil.Database | author:zocdoc description:Class library of database command helpers.
+github-zocdoc-ZocMonGraphs | ZocMonGraphs | https://github.com/Zocdoc/ZocMonGraphs | author:zocdoc description:MVC application to display data created with ZocMon library.
+github-zocdoc-Tutorial | Tutorial | https://github.com/Zocdoc/Tutorial | author:zocdoc description:Updated Aug 25, 2015

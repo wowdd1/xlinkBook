@@ -1,0 +1,8 @@
+github-compass-compass | compass | https://github.com/Compass/compass | author:compass description:Compass is no longer actively maintained. Compass is a Stylesheet Authoring Environment that makes your website design simpler to implement and easier to maintain.
+github-compass-compass-rails | compass-rails | https://github.com/Compass/compass-rails | author:compass description:compass rails integration
+github-compass-compass-growl | compass-growl | https://github.com/Compass/compass-growl | author:compass description:growl notifications for compass 0.11 and up
+github-compass-compass-blueprint | compass-blueprint | https://github.com/Compass/compass-blueprint | author:compass description:blueprint compass extension
+github-compass-compass-rmagick-engine | compass-rmagick-engine | https://github.com/Compass/compass-rmagick-engine | author:compass description:Drop in rmagick sprite engine for compass
+github-compass-compass-theme | compass-theme | https://github.com/Compass/compass-theme | author:compass description:Theme for compass's websites
+github-compass-extension-registry | extension-registry | https://github.com/Compass/extension-registry | author:compass description:Compass Extension Registry
+github-compass-compass-sprites | compass-sprites | https://github.com/Compass/compass-sprites | author:compass description:a place to put compass sprites

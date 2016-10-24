@@ -1,0 +1,7 @@
+github-facebook-research-fastText | fastText | https://github.com/facebookresearch/fastText | author:facebook-research description:Library for fast text representation and classification.
+github-facebook-research-deepmask | deepmask | https://github.com/facebookresearch/deepmask | author:facebook-research description:Torch implementation of DeepMask and SharpMask
+github-facebook-research-darkforestGo | darkforestGo | https://github.com/facebookresearch/darkforestGo | author:facebook-research description:DarkForest, the Facebook Go engine.
+github-facebook-research-multipathnet | multipathnet | https://github.com/facebookresearch/multipathnet | author:facebook-research description:A Torch implementation of the object detection network from "A MultiPath Network for Object Detection" (https://arxiv.org/abs/1604.02135)
+github-facebook-research-CommAI-env | CommAI-env | https://github.com/facebookresearch/CommAI-env | author:facebook-research description:A platform for developing AI systems as described in A Roadmap towards Machine Intelligence - http://arxiv.org/abs/1511.08130
+github-facebook-research-pysparnn | pysparnn | https://github.com/facebookresearch/pysparnn | author:facebook-research description:Approximate Nearest Neighbor Search for Sparse Data in Python!
+github-facebook-research-MIXER | MIXER | https://github.com/facebookresearch/MIXER | author:facebook-research description:Mixed Incremental Cross-Entropy REINFORCE ICLR 2016

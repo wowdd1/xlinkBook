@@ -1,8 +1,16 @@
+github-baidu-Paddle | Paddle | https://github.com/baidu/Paddle | author:baidu description:PArallel Distributed Deep LEarning
 github-baidu-sofa-pbrpc | sofa-pbrpc | https://github.com/baidu/sofa-pbrpc | author:baidu description:A light-weight RPC implement of google protobuf RPC framework.
-github-baidu-tera | tera | https://github.com/baidu/tera | author:baidu description:A distributed, elastic, structured database.
+github-baidu-tera | tera | https://github.com/baidu/tera | author:baidu description:An Internet-Scale Database.
+github-baidu-fast_rgf | fast_rgf | https://github.com/baidu/fast_rgf | author:baidu description:Multi-core implementation of Regularized Greedy Forest
+github-baidu-bfs | bfs | https://github.com/baidu/bfs | author:baidu description:The Baidu File System.
 github-baidu-galaxy | galaxy | https://github.com/baidu/galaxy | author:baidu description:Galaxy is a cluster management system.
 github-baidu-ins | ins | https://github.com/baidu/ins | author:baidu description:iNexus, coordinate large scale services
-github-baidu-broc | broc | https://github.com/baidu/broc | author:baidu description:Updated Apr 27, 2016
+github-baidu-broc | broc | https://github.com/baidu/broc | author:baidu description:Updated Sep 1, 2016
 github-baidu-common | common | https://github.com/baidu/common | author:baidu description:Common library
 github-baidu-shuttle | shuttle | https://github.com/baidu/shuttle | author:baidu description:A fast computing framework based on Galaxy
+github-baidu-iot-edge-sdk-for-iot-parser | iot-edge-sdk-for-iot-parser | https://github.com/baidu/iot-edge-sdk-for-iot-parser | author:baidu description:该程序为百度开放云Modbus解析服务配套的数据采集组件，运行在客户的内网中，负责采集客户的Modbus从站上的数据并且上传到云端。之后在云端进行解析和归档等
+github-baidu-paddle_paddle_model_zoo | paddle_paddle_model_zoo | https://github.com/baidu/paddle_paddle_model_zoo | author:baidu description:Updated Aug 22, 2016
+github-baidu-oss | oss | https://github.com/baidu/oss | author:baidu description:the website for open source project
+github-baidu-iot | iot | https://github.com/baidu/iot | author:baidu description:for all code about Internet of Things
+github-baidu-speech-samples | speech-samples | https://github.com/baidu/speech-samples | author:baidu description:百度语音示例
 github-baidu-baidu.github.io | baidu.github.io | https://github.com/baidu/baidu.github.io | author:baidu description:baidu.github.io

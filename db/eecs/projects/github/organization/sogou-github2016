@@ -1,6 +1,6 @@
 github-sogou-docker-on-yarn | docker-on-yarn | https://github.com/sogou/docker-on-yarn | author:sogou description:Unified Resource Management Submit System
-github-sogou-bigdatakit | bigdatakit | https://github.com/sogou/bigdatakit | author:sogou description:BigdataKit is a tool kit to simplify your big data build process.
 github-sogou-flume-hive-batch-sink | flume-hive-batch-sink | https://github.com/sogou/flume-hive-batch-sink | author:sogou description:Flume Hive Batch Sink is a flume plugin to sink event to hive in a batch mode.
+github-sogou-bigdatakit | bigdatakit | https://github.com/sogou/bigdatakit | author:sogou description:BigdataKit is a tool kit to simplify your big data build process.
 github-sogou-Test-InjectDll | Test-InjectDll | https://github.com/sogou/Test-InjectDll | author:sogou description:崩溃模拟工具
 github-sogou-Test-ClickPrograme | Test-ClickPrograme | https://github.com/sogou/Test-ClickPrograme | author:sogou description:鼠标点击录制回放工具
 github-sogou-sogou.github.io | sogou.github.io | https://github.com/sogou/sogou.github.io | author:sogou description:Updated Nov 18, 2015

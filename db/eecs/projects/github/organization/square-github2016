@@ -1,135 +1,147 @@
-github-square-12527-1 | retrofit | https://github.com/square/retrofit | author:square description:Type-safe HTTP client for Android and Java by Square, Inc.
-github-square-11295-2 | okhttp | https://github.com/square/okhttp | author:square description:An HTTP+HTTP/2 client for Android and Java applications.
-github-square-9927-3 | picasso | https://github.com/square/picasso | author:square description:A powerful image downloading and caching library for Android
-github-square-8966-4 | leakcanary | https://github.com/square/leakcanary | author:square description:A memory leak detection library for Android and Java.
-github-square-5280-5 | crossfilter | https://github.com/square/crossfilter | author:square description:Fast n-dimensional filtering and grouping of records.
-github-square-5117-6 | dagger | https://github.com/square/dagger | author:square description:A fast dependency injector for Android and Java.
-github-square-4925-7 | PonyDebugger | https://github.com/square/PonyDebugger | author:square description:Remote network and data debugging for your native iOS app using Chrome Developer Tools
-github-square-4313-8 | maximum-awesome | https://github.com/square/maximum-awesome | author:square description:Config files for vim and tmux.
-github-square-4286-9 | cubism | https://github.com/square/cubism | author:square description:Cubism.js: A JavaScript library for time series visualization.
-github-square-4137-10 | otto | https://github.com/square/otto | author:square description:An enhanced Guava-based event bus with emphasis on Android support.
-github-square-3734-11 | cube | https://github.com/square/cube | author:square description:Cube: A system for time series visualization.
-github-square-2861-12 | android-times-square | https://github.com/square/android-times-square | author:square description:Standalone Android widget for picking a single date from a calendar view.
-github-square-2573-13 | sqlbrite | https://github.com/square/sqlbrite | author:square description:A lightweight wrapper around SQLiteOpenHelper which introduces reactive stream semantics to SQL operations.
-github-square-2298-14 | okio | https://github.com/square/okio | author:square description:A modern I/O API for Java
-github-square-1957-15 | javapoet | https://github.com/square/javapoet | author:square description:A Java API for generating .java source files.
-github-square-1795-16 | moshi | https://github.com/square/moshi | author:square description:A modern JSON library for Android and Java.
-github-square-1671-17 | flow | https://github.com/square/flow | author:square description:Name UI states, navigate between them, remember where you've been.
-github-square-1663-18 | spoon | https://github.com/square/spoon | author:square description:Distributing instrumentation tests to all your Androids.
-github-square-1656-19 | mortar | https://github.com/square/mortar | author:square description:A simple library that makes it easy to pair thin views with dedicated controllers, isolated from most of the vagaries of the Activity life cycle.
-github-square-1569-20 | Valet | https://github.com/square/Valet | author:square description:Valet lets you securely store data in the iOS or OS X Keychain without knowing a thing about how the Keychain works. It’s easy. We promise.
-github-square-1477-21 | wire | https://github.com/square/wire | author:square description:Clean, lightweight protocol buffers for Android and Java.
-github-square-1410-22 | tape | https://github.com/square/tape | author:square description:A lightning fast, transactional, file-based FIFO for Android and Java.
-github-square-1350-23 | keywhiz | https://github.com/square/keywhiz | author:square description:A system for distributing and managing secrets
-github-square-1289-24 | cane | https://github.com/square/cane | author:square description:Code quality threshold checking as part of your build
-github-square-1279-25 | assertj-android | https://github.com/square/assertj-android | author:square description:A set of AssertJ helpers geared toward testing Android.
-github-square-1215-26 | java-code-styles | https://github.com/square/java-code-styles | author:square description:IntelliJ IDEA code style settings for Square's Java and Android projects.
-github-square-791-27 | phrase | https://github.com/square/phrase | author:square description:Phrase is an Android string resource templating library
-github-square-787-28 | apropos | https://github.com/square/apropos | author:square description:A simple way to serve up appropriate images for every visitor.
-github-square-687-29 | seismic | https://github.com/square/seismic | author:square description:Android device shake detection.
-github-square-649-30 | sqldelight | https://github.com/square/sqldelight | author:square description:Generates Java models from CREATE TABLE statements.
-github-square-619-31 | spacecommander | https://github.com/square/spacecommander | author:square description:Commit fully-formatted Objective-C as a team without even trying.
-github-square-504-32 | go-jose | https://github.com/square/go-jose | author:square description:An implementation of JOSE standards in Golang.
-github-square-500-33 | shuttle | https://github.com/square/shuttle | author:square description:String extraction, translation and export tools for the 21st century. "Moving strings around so you don't have to"
-github-square-487-34 | kochiku | https://github.com/square/kochiku | author:square description:Shard your builds for fun and profit
-github-square-440-35 | haha | https://github.com/square/haha | author:square description:Java library to automate the analysis of Android heap dumps.
-github-square-435-36 | whorlwind | https://github.com/square/whorlwind | author:square description:Makes fingerprint encryption a breeze.
-github-square-409-37 | intro-to-d3 | https://github.com/square/intro-to-d3 | author:square description:a D3.js tutorial
-github-square-409-38 | otto-intellij-plugin | https://github.com/square/otto-intellij-plugin | author:square description:An IntelliJ IDEA plugin to navigate between events posted by Otto.
-github-square-396-39 | dagger-intellij-plugin | https://github.com/square/dagger-intellij-plugin | author:square description:An IntelliJ IDEA plugin for Dagger which provides insight into how injections and providers are used.
-github-square-388-40 | pollexor | https://github.com/square/pollexor | author:square description:Java client for the Thumbor image service which allows you to build URIs in an expressive fashion using a fluent API.
-github-square-386-41 | fdoc | https://github.com/square/fdoc | author:square description:Documentation format and verification
-github-square-377-42 | field-kit | https://github.com/square/field-kit | author:square description:FieldKit lets you take control of your text fields.
-github-square-367-43 | certstrap | https://github.com/square/certstrap | author:square description:Tools to bootstrap CAs, certificate requests, and signed certificates.
-github-square-340-44 | burst | https://github.com/square/burst | author:square description:A unit testing library for varying test data.
-github-square-293-45 | lgtm | https://github.com/square/lgtm | author:square description:Simple object validation for JavaScript.
-github-square-283-46 | shift | https://github.com/square/shift | author:square description:shift is an application that helps you run schema migrations on MySQL databases
-github-square-272-47 | duktape-android | https://github.com/square/duktape-android | author:square description:The Duktape embeddable Javascript engine packaged for Android.
-github-square-266-48 | ETL | https://github.com/square/ETL | author:square description:Extract, Transform, and Load data with Ruby
-github-square-255-49 | jetpack | https://github.com/square/jetpack | author:square description:jet.pack: package your JRuby rack app for Jetty.
-github-square-226-50 | luhnybin | https://github.com/square/luhnybin | author:square description:Updated Nov 20, 2011
-github-square-197-51 | square.github.io | https://github.com/square/square.github.io | author:square description:A simple, static portal which outlines our open source offerings.
-github-square-187-52 | zapp | https://github.com/square/zapp | author:square description:Continuous Integration for KIF
-github-square-176-53 | inspect | https://github.com/square/inspect | author:square description:inspect is a collection of metrics gathering, analysis utilities for various subsystems of linux, mysql and postgres.
-github-square-173-54 | mimecraft | https://github.com/square/mimecraft | author:square description:Utility for creating RFC-compliant multipart and form-encoded HTTP request bodies.
-github-square-146-55 | protoparser | https://github.com/square/protoparser | author:square description:Java parser for .proto schema declarations.
-github-square-134-56 | git-fastclone | https://github.com/square/git-fastclone | author:square description:git clone --recursive on steroids
-github-square-130-57 | Aardvark | https://github.com/square/Aardvark | author:square description:Aardvark is a library that makes it dead simple to create actionable bug reports.
-github-square-111-58 | rails-auth | https://github.com/square/rails-auth | author:square description:Modular resource-based authentication and authorization for Rails/Rack
-github-square-109-59 | p2 | https://github.com/square/p2 | author:square description:Platypus Platform: Tools for Scalable Deployment
-github-square-108-60 | wire-gradle-plugin | https://github.com/square/wire-gradle-plugin | author:square description:A Gradle plugin for generating Java code for your protocol buffer definitions with Wire.
-github-square-106-61 | qunit-bdd | https://github.com/square/qunit-bdd | author:square description:BDD-style testing for QUnit.
-github-square-104-62 | auto-value-redacted | https://github.com/square/auto-value-redacted | author:square description:An extension for Google's AutoValue that omits redacted fields from toString().
-github-square-103-63 | womeng_handbook | https://github.com/square/womeng_handbook | author:square description:Everything you need to start or expand a women in engineering group in your community.
-github-square-101-64 | metrics | https://github.com/square/metrics | author:square description:Metrics Query Engine
-github-square-99-65 | ghostunnel | https://github.com/square/ghostunnel | author:square description:A simple SSL/TLS proxy with mutual authentication for securing non-TLS services
-github-square-97-66 | keywhiz-fs | https://github.com/square/keywhiz-fs | author:square description:A file-system client for Keywhiz
-github-square-90-67 | border_patrol | https://github.com/square/border_patrol | author:square description:BorderPatrol lets you import a KML file and then check if points are inside or outside the polygons the file defines.
-github-square-78-68 | js-jose | https://github.com/square/js-jose | author:square description:JavaScript library to encrypt/decrypt data in JSON Web Encryption (JWE) format and to sign/verify data in JSON Web Signature (JWS) format. Leverages Browser's native WebCrypto API.
-github-square-72-69 | protob | https://github.com/square/protob | author:square description:Protocol buffers for Nodejs
-github-square-68-70 | osstrich | https://github.com/square/osstrich | author:square description:Open Source Software Task Robot Indestructible Computer Hero
-github-square-68-71 | objc-borderpatrol | https://github.com/square/objc-borderpatrol | author:square description:A simple point-in-polygon implementation on top of Core Location.
-github-square-65-72 | kochiku-worker | https://github.com/square/kochiku-worker | author:square description:Build worker component of Kochiku
-github-square-64-73 | prodeng | https://github.com/square/prodeng | author:square description:Updated Feb 11, 2016
-github-square-53-74 | squalor | https://github.com/square/squalor | author:square description:Go SQL utility library
-github-square-51-75 | cascading-helpers | https://github.com/square/cascading-helpers | author:square description:A whole bunch of functions, filters, and other tools that make writing Cascading flows a joy
-github-square-48-76 | toggle | https://github.com/square/toggle | author:square description:Simple, flexible and lightweight configuration switching.
-github-square-47-77 | pagerduty-incidents | https://github.com/square/pagerduty-incidents | author:square description:Java utility for programmatically triggering and resolving PagerDuty incidents.
-github-square-43-78 | rails-service | https://github.com/square/rails-service | author:square description:Microservices on Rails
-github-square-43-79 | jirafy | https://github.com/square/jirafy | author:square description:Chrome extension that linkifies JIRA ticket numbers on select pages.
-github-square-42-80 | rack-servlet | https://github.com/square/rack-servlet | author:square description:Embed JRuby Rack applications in your Java container.
-github-square-41-81 | JIRAFoundation | https://github.com/square/JIRAFoundation | author:square description:Updated Jul 24, 2015
-github-square-39-82 | pair | https://github.com/square/pair | author:square description:Configures your git author info with one or more people.
-github-square-37-83 | ThumborURL | https://github.com/square/ThumborURL | author:square description:A library to generate encrypted URLs for Thumbor in your iOS app.
-github-square-35-84 | cocoapods-check | https://github.com/square/cocoapods-check | author:square description:A CocoaPods plugin that shows differences between locked and installed Pods
-github-square-30-85 | resque-graphite | https://github.com/square/resque-graphite | author:square description:Sends Resque status from Redis to Graphite.
-github-square-28-86 | gssh | https://github.com/square/gssh | author:square description:simple command line to utility to run commands on multiple hosts in parallel
-github-square-25-87 | connect-api-examples | https://github.com/square/connect-api-examples | author:square description:Updated Apr 28, 2016
-github-square-25-88 | jna-gmp | https://github.com/square/jna-gmp | author:square description:A minimal JNA wrapper around the GNU Multiple Precision Arithmetic Library.
-github-square-23-89 | simplerrd | https://github.com/square/simplerrd | author:square description:SimpleRRD provides a simple Ruby interface for creating graphs with RRD
-github-square-23-90 | rack-time-zone-header | https://github.com/square/rack-time-zone-header | author:square description:Rack middleware for parsing Time-Zone HTTP request headers.
-github-square-21-91 | plastic | https://github.com/square/plastic | author:square description:Credit card (“plastic”) library for Ruby
-github-square-21-92 | pilgrim | https://github.com/square/pilgrim | author:square description:A documentation browser for protocol buffers
-github-square-21-93 | react-field-kit | https://github.com/square/react-field-kit | author:square description:Components to effectively manage text entry in React using FieldKit.
-github-square-18-94 | rack-geo | https://github.com/square/rack-geo | author:square description:Rack middleware for parsing Geo-Position HTTP headers.
-github-square-16-95 | square-market-embeds | https://github.com/square/square-market-embeds | author:square description:Examples for embedding Square Market items in your own website.
-github-square-16-96 | grange | https://github.com/square/grange | author:square description:A modern subset of the range query language
-github-square-14-97 | sq-dbsync | https://github.com/square/sq-dbsync | author:square description:Pull data from MySQL and PG databases and consolidate it into a single target store.
-github-square-14-98 | libcrange | https://github.com/square/libcrange | author:square description:The libcrange cluster metadata library.
-github-square-13-99 | sqeduler | https://github.com/square/sqeduler | author:square description:Provides loosely-coupled helpers for Sidekiq workers. Provides highly available scheduling across multiple hosts.
-github-square-13-100 | cascading2-protobufs | https://github.com/square/cascading2-protobufs | author:square description:Cascading 2 library for working with Protocol Buffers (Scheme, Serialization, and maybe even some functions/filters)
-github-square-12-101 | SquareRegisterSDK-iOS | https://github.com/square/SquareRegisterSDK-iOS | author:square description:A simple library for letting Register take in-store payments for your app using Register API.
-github-square-11-102 | lifecycle.js | https://github.com/square/lifecycle.js | author:square description:Lifecycles for managing your application start and stop.
-github-square-11-103 | active_record-sql_analyzer | https://github.com/square/active_record-sql_analyzer | author:square description:ActiveRecord query logger and analyzer
-github-square-10-104 | gcmd | https://github.com/square/gcmd | author:square description:Simple library for golang to execute commands in parallel
-github-square-10-105 | ftpfxp | https://github.com/square/ftpfxp | author:square description:ftpfxp, with patch
-github-square-10-106 | callback-as-promised | https://github.com/square/callback-as-promised | author:square description:Don't make promises you can't keep.
-github-square-9-107 | pam_krb5_ccache | https://github.com/square/pam_krb5_ccache | author:square description:Updated May 11, 2015
-github-square-8-108 | grange-server | https://github.com/square/grange-server | author:square description:Updated Feb 3, 2016
-github-square-8-109 | connect-api-specification | https://github.com/square/connect-api-specification | author:square description:Updated May 10, 2016
-github-square-7-110 | stround | https://github.com/square/stround | author:square description:Rounding methods for exact numbers using strings.
-github-square-6-111 | goprotowrap | https://github.com/square/goprotowrap | author:square description:A package-at-a-time wrapper for protoc, for generating Go protobuf code.
-github-square-6-112 | mssh | https://github.com/square/mssh | author:square description:Updated Oct 29, 2015
-github-square-6-113 | squab | https://github.com/square/squab | author:square description:Updated Dec 3, 2013
-github-square-6-114 | mysql-parser | https://github.com/square/mysql-parser | author:square description:A ddl parser for mysql
-github-square-5-115 | erg | https://github.com/square/erg | author:square description:CLI for querying range servers
-github-square-5-116 | connect-php-sdk | https://github.com/square/connect-php-sdk | author:square description:PHP client library for the Square Connect v2 API
-github-square-4-117 | status-collector | https://github.com/square/status-collector | author:square description:Collect the current status from your application or libraries and expose them via a web interface
-github-square-4-118 | build_execution | https://github.com/square/build_execution | author:square description:Execution primitives that force explicit error handling and never call the shell.
-github-square-4-119 | fundraiser | https://github.com/square/fundraiser | author:square description:Updated Apr 22, 2011
-github-square-4-120 | RubyMinePreferences | https://github.com/square/RubyMinePreferences | author:square description:Ruby Mine Preferences
-github-square-3-121 | rangeclient | https://github.com/square/rangeclient | author:square description:Ruby client for range
-github-square-3-122 | rough | https://github.com/square/rough | author:square description:Rough is RPC for Rails.
-github-square-3-123 | pem-parser | https://github.com/square/pem-parser | author:square description:Parses CA Certificate files that contain multiple PEMs.
-github-square-3-124 | rubymine-extensions | https://github.com/square/rubymine-extensions | author:square description:Updated Mar 4, 2013
-github-square-3-125 | connect-protos | https://github.com/square/connect-protos | author:square description:Protocol buffers describing the Connect API
-github-square-3-126 | notify | https://github.com/square/notify | author:square description:Simple notification service and libraries
-github-square-2-127 | ruby-tree_filter | https://github.com/square/ruby-tree_filter | author:square description:Filter arbitrary data trees with a concise query language.
-github-square-2-128 | connect-ruby-sdk | https://github.com/square/connect-ruby-sdk | author:square description:Ruby client library for the Square Connect v2 API
-github-square-1-129 | go-sq-metrics | https://github.com/square/go-sq-metrics | author:square description:Shared package for metrics collection
-github-square-1-130 | range-spec | https://github.com/square/range-spec | author:square description:Language agnostic spec for the range query language
-github-square-1-131 | arthur | https://github.com/square/arthur | author:square description:A gem to interact with the Bugsnag API
-github-square-1-132 | homebrew-self | https://github.com/square/homebrew-self | author:square description:Square homebrew formula
-github-square-1-133 | homebrew-bottles | https://github.com/square/homebrew-bottles | author:square description:File hosting for homebrew-self
-github-square-1-134 | reqpi | https://github.com/square/reqpi | author:square description:The build-friendly PyPI fake.
-github-square-0-135 | stash_core_api | https://github.com/square/stash_core_api | author:square description:Updated Dec 10, 2015
+github-square-retrofit | retrofit | https://github.com/square/retrofit | author:square description:Type-safe HTTP client for Android and Java by Square, Inc.
+github-square-okhttp | okhttp | https://github.com/square/okhttp | author:square description:An HTTP+HTTP/2 client for Android and Java applications.
+github-square-picasso | picasso | https://github.com/square/picasso | author:square description:A powerful image downloading and caching library for Android
+github-square-leakcanary | leakcanary | https://github.com/square/leakcanary | author:square description:A memory leak detection library for Android and Java.
+github-square-dagger | dagger | https://github.com/square/dagger | author:square description:A fast dependency injector for Android and Java.
+github-square-crossfilter | crossfilter | https://github.com/square/crossfilter | author:square description:Fast n-dimensional filtering and grouping of records.
+github-square-PonyDebugger | PonyDebugger | https://github.com/square/PonyDebugger | author:square description:Remote network and data debugging for your native iOS app using Chrome Developer Tools
+github-square-otto | otto | https://github.com/square/otto | author:square description:An enhanced Guava-based event bus with emphasis on Android support.
+github-square-maximum-awesome | maximum-awesome | https://github.com/square/maximum-awesome | author:square description:Config files for vim and tmux.
+github-square-cubism | cubism | https://github.com/square/cubism | author:square description:Cubism.js: A JavaScript library for time series visualization.
+github-square-cube | cube | https://github.com/square/cube | author:square description:Cube: A system for time series visualization.
+github-square-android-times-square | android-times-square | https://github.com/square/android-times-square | author:square description:Standalone Android widget for picking a single date from a calendar view.
+github-square-sqlbrite | sqlbrite | https://github.com/square/sqlbrite | author:square description:A lightweight wrapper around SQLiteOpenHelper which introduces reactive stream semantics to SQL operations.
+github-square-okio | okio | https://github.com/square/okio | author:square description:A modern I/O API for Java
+github-square-javapoet | javapoet | https://github.com/square/javapoet | author:square description:A Java API for generating .java source files.
+github-square-moshi | moshi | https://github.com/square/moshi | author:square description:A modern JSON library for Android and Java.
+github-square-flow | flow | https://github.com/square/flow | author:square description:Name UI states, navigate between them, remember where you've been.
+github-square-spoon | spoon | https://github.com/square/spoon | author:square description:Distributing instrumentation tests to all your Androids.
+github-square-mortar | mortar | https://github.com/square/mortar | author:square description:A simple library that makes it easy to pair thin views with dedicated controllers, isolated from most of the vagaries of the Activity life cycle.
+github-square-wire | wire | https://github.com/square/wire | author:square description:Clean, lightweight protocol buffers for Android and Java.
+github-square-Valet | Valet | https://github.com/square/Valet | author:square description:Valet lets you securely store data in the iOS or OS X Keychain without knowing a thing about how the Keychain works. It’s easy. We promise.
+github-square-tape | tape | https://github.com/square/tape | author:square description:A lightning fast, transactional, file-based FIFO for Android and Java.
+github-square-java-code-styles | java-code-styles | https://github.com/square/java-code-styles | author:square description:IntelliJ IDEA code style settings for Square's Java and Android projects.
+github-square-keywhiz | keywhiz | https://github.com/square/keywhiz | author:square description:A system for distributing and managing secrets
+github-square-assertj-android | assertj-android | https://github.com/square/assertj-android | author:square description:A set of AssertJ helpers geared toward testing Android.
+github-square-cane | cane | https://github.com/square/cane | author:square description:Code quality threshold checking as part of your build
+github-square-phrase | phrase | https://github.com/square/phrase | author:square description:Phrase is an Android string resource templating library
+github-square-sqldelight | sqldelight | https://github.com/square/sqldelight | author:square description:Generates Java models from CREATE TABLE statements.
+github-square-apropos | apropos | https://github.com/square/apropos | author:square description:A simple way to serve up appropriate images for every visitor.
+github-square-seismic | seismic | https://github.com/square/seismic | author:square description:Android device shake detection.
+github-square-spacecommander | spacecommander | https://github.com/square/spacecommander | author:square description:Commit fully-formatted Objective-C as a team without even trying.
+github-square-Cleanse | Cleanse | https://github.com/square/Cleanse | author:square description:Lightweight Swift Dependency Injection Framework
+github-square-go-jose | go-jose | https://github.com/square/go-jose | author:square description:An implementation of JOSE standards in Golang.
+github-square-haha | haha | https://github.com/square/haha | author:square description:Java library to automate the analysis of Android heap dumps.
+github-square-shuttle | shuttle | https://github.com/square/shuttle | author:square description:String extraction, translation and export tools for the 21st century. "Moving strings around so you don't have to"
+github-square-kochiku | kochiku | https://github.com/square/kochiku | author:square description:Shard your builds for fun and profit
+github-square-whorlwind | whorlwind | https://github.com/square/whorlwind | author:square description:Makes fingerprint encryption a breeze.
+github-square-dagger-intellij-plugin | dagger-intellij-plugin | https://github.com/square/dagger-intellij-plugin | author:square description:An IntelliJ IDEA plugin for Dagger which provides insight into how injections and providers are used.
+github-square-certstrap | certstrap | https://github.com/square/certstrap | author:square description:Tools to bootstrap CAs, certificate requests, and signed certificates.
+github-square-pollexor | pollexor | https://github.com/square/pollexor | author:square description:Java client for the Thumbor image service which allows you to build URIs in an expressive fashion using a fluent API.
+github-square-intro-to-d3 | intro-to-d3 | https://github.com/square/intro-to-d3 | author:square description:a D3.js tutorial
+github-square-otto-intellij-plugin | otto-intellij-plugin | https://github.com/square/otto-intellij-plugin | author:square description:An IntelliJ IDEA plugin to navigate between events posted by Otto.
+github-square-field-kit | field-kit | https://github.com/square/field-kit | author:square description:FieldKit lets you take control of your text fields.
+github-square-fdoc | fdoc | https://github.com/square/fdoc | author:square description:Documentation format and verification
+github-square-shift | shift | https://github.com/square/shift | author:square description:shift is an application that helps you run schema migrations on MySQL databases
+github-square-burst | burst | https://github.com/square/burst | author:square description:A unit testing library for varying test data.
+github-square-duktape-android | duktape-android | https://github.com/square/duktape-android | author:square description:The Duktape embeddable Javascript engine packaged for Android.
+github-square-SuperDelegate | SuperDelegate | https://github.com/square/SuperDelegate | author:square description:SuperDelegate provides a clean application delegate interface and protects you from bugs in the application lifecycle
+github-square-lgtm | lgtm | https://github.com/square/lgtm | author:square description:Simple object validation for JavaScript.
+github-square-ETL | ETL | https://github.com/square/ETL | author:square description:Extract, Transform, and Load data with Ruby
+github-square-sharkey | sharkey | https://github.com/square/sharkey | author:square description:Sharkey is a service for managing certificates for use by OpenSSH
+github-square-jetpack | jetpack | https://github.com/square/jetpack | author:square description:jet.pack: package your JRuby rack app for Jetty.
+github-square-square.github.io | square.github.io | https://github.com/square/square.github.io | author:square description:A simple, static portal which outlines our open source offerings.
+github-square-luhnybin | luhnybin | https://github.com/square/luhnybin | author:square description:Updated Nov 20, 2011
+github-square-certigo | certigo | https://github.com/square/certigo | author:square description:A utility to examine and validate certificates in a variety of formats
+github-square-inspect | inspect | https://github.com/square/inspect | author:square description:inspect is a collection of metrics gathering, analysis utilities for various subsystems of linux, mysql and postgres.
+github-square-zapp | zapp | https://github.com/square/zapp | author:square description:Continuous Integration for KIF
+github-square-mimecraft | mimecraft | https://github.com/square/mimecraft | author:square description:Utility for creating RFC-compliant multipart and form-encoded HTTP request bodies.
+github-square-auto-value-redacted | auto-value-redacted | https://github.com/square/auto-value-redacted | author:square description:An extension for Google's AutoValue that omits redacted fields from toString().
+github-square-protoparser | protoparser | https://github.com/square/protoparser | author:square description:Java parser for .proto schema declarations.
+github-square-rails-auth | rails-auth | https://github.com/square/rails-auth | author:square description:Modular resource-based authentication and authorization for Rails/Rack
+github-square-Aardvark | Aardvark | https://github.com/square/Aardvark | author:square description:Aardvark is a library that makes it dead simple to create actionable bug reports.
+github-square-git-fastclone | git-fastclone | https://github.com/square/git-fastclone | author:square description:git clone --recursive on steroids
+github-square-ghostunnel | ghostunnel | https://github.com/square/ghostunnel | author:square description:A simple SSL/TLS proxy with mutual authentication for securing non-TLS services
+github-square-p2 | p2 | https://github.com/square/p2 | author:square description:Platypus Platform: Tools for Scalable Deployment
+github-square-metrics | metrics | https://github.com/square/metrics | author:square description:Metrics Query Engine
+github-square-wire-gradle-plugin | wire-gradle-plugin | https://github.com/square/wire-gradle-plugin | author:square description:A Gradle plugin for generating Java code for your protocol buffer definitions with Wire.
+github-square-keywhiz-fs | keywhiz-fs | https://github.com/square/keywhiz-fs | author:square description:A file-system client for Keywhiz
+github-square-womeng_handbook | womeng_handbook | https://github.com/square/womeng_handbook | author:square description:Everything you need to start or expand a women in engineering group in your community.
+github-square-qunit-bdd | qunit-bdd | https://github.com/square/qunit-bdd | author:square description:BDD-style testing for QUnit.
+github-square-js-jose | js-jose | https://github.com/square/js-jose | author:square description:JavaScript library to encrypt/decrypt data in JSON Web Encryption (JWE) format and to sign/verify data in JSON Web Signature (JWS) format. Leverages Browser's native WebCrypto API.
+github-square-border_patrol | border_patrol | https://github.com/square/border_patrol | author:square description:BorderPatrol lets you import a KML file and then check if points are inside or outside the polygons the file defines.
+github-square-protob | protob | https://github.com/square/protob | author:square description:Protocol buffers for Nodejs
+github-square-objc-borderpatrol | objc-borderpatrol | https://github.com/square/objc-borderpatrol | author:square description:A simple point-in-polygon implementation on top of Core Location.
+github-square-osstrich | osstrich | https://github.com/square/osstrich | author:square description:Open Source Software Task Robot Indestructible Computer Hero
+github-square-PJFDataSource | PJFDataSource | https://github.com/square/PJFDataSource | author:square description:PJFDataSource is a small library that provides a simple, clean architecture for your app to manage its data sources while providing a consistent user interface for common content states (i.e. loading, loaded, empty, and error).
+github-square-prodeng | prodeng | https://github.com/square/prodeng | author:square description:Updated Jun 29, 2016
+github-square-kochiku-worker | kochiku-worker | https://github.com/square/kochiku-worker | author:square description:Build worker component of Kochiku
+github-square-squalor | squalor | https://github.com/square/squalor | author:square description:Go SQL utility library
+github-square-cascading-helpers | cascading-helpers | https://github.com/square/cascading-helpers | author:square description:A whole bunch of functions, filters, and other tools that make writing Cascading flows a joy
+github-square-rails-service | rails-service | https://github.com/square/rails-service | author:square description:Microservices on Rails
+github-square-pagerduty-incidents | pagerduty-incidents | https://github.com/square/pagerduty-incidents | author:square description:Java utility for programmatically triggering and resolving PagerDuty incidents.
+github-square-toggle | toggle | https://github.com/square/toggle | author:square description:Simple, flexible and lightweight configuration switching.
+github-square-jirafy | jirafy | https://github.com/square/jirafy | author:square description:Chrome extension that linkifies JIRA ticket numbers on select pages.
+github-square-pair | pair | https://github.com/square/pair | author:square description:Configures your git author info with one or more people.
+github-square-rack-servlet | rack-servlet | https://github.com/square/rack-servlet | author:square description:Embed JRuby Rack applications in your Java container.
+github-square-connect-api-examples | connect-api-examples | https://github.com/square/connect-api-examples | author:square description:Updated Aug 6, 2016
+github-square-xcknife | xcknife | https://github.com/square/xcknife | author:square description:Simple tool for optimizing XCTest runs across machines
+github-square-JIRAFoundation | JIRAFoundation | https://github.com/square/JIRAFoundation | author:square description:Updated Jul 24, 2015
+github-square-gssh | gssh | https://github.com/square/gssh | author:square description:simple command line to utility to run commands on multiple hosts in parallel
+github-square-ThumborURL | ThumborURL | https://github.com/square/ThumborURL | author:square description:A library to generate encrypted URLs for Thumbor in your iOS app.
+github-square-cocoapods-check | cocoapods-check | https://github.com/square/cocoapods-check | author:square description:A CocoaPods plugin that shows differences between locked and installed Pods
+github-square-resque-graphite | resque-graphite | https://github.com/square/resque-graphite | author:square description:Sends Resque status from Redis to Graphite.
+github-square-jna-gmp | jna-gmp | https://github.com/square/jna-gmp | author:square description:A minimal JNA wrapper around the GNU Multiple Precision Arithmetic Library.
+github-square-react-field-kit | react-field-kit | https://github.com/square/react-field-kit | author:square description:Components to effectively manage text entry in React using FieldKit.
+github-square-simplerrd | simplerrd | https://github.com/square/simplerrd | author:square description:SimpleRRD provides a simple Ruby interface for creating graphs with RRD
+github-square-rack-time-zone-header | rack-time-zone-header | https://github.com/square/rack-time-zone-header | author:square description:Rack middleware for parsing Time-Zone HTTP request headers.
+github-square-plastic | plastic | https://github.com/square/plastic | author:square description:Credit card (“plastic”) library for Ruby
+github-square-pilgrim | pilgrim | https://github.com/square/pilgrim | author:square description:A documentation browser for protocol buffers
+github-square-SquareRegisterSDK-iOS | SquareRegisterSDK-iOS | https://github.com/square/SquareRegisterSDK-iOS | author:square description:A simple library for letting Register take in-store payments for your app using Register API.
+github-square-rack-geo | rack-geo | https://github.com/square/rack-geo | author:square description:Rack middleware for parsing Geo-Position HTTP headers.
+github-square-grange | grange | https://github.com/square/grange | author:square description:A modern subset of the range query language
+github-square-register-android-sdk | register-android-sdk | https://github.com/square/register-android-sdk | author:square description:A simple library for letting Register take in-store payments for your app using Register API. http://docs.connect.squareup.com/articles/register-api-android/
+github-square-sqeduler | sqeduler | https://github.com/square/sqeduler | author:square description:Provides loosely-coupled helpers for Sidekiq workers. Provides highly available scheduling across multiple hosts.
+github-square-libcrange | libcrange | https://github.com/square/libcrange | author:square description:The libcrange cluster metadata library.
+github-square-square-market-embeds | square-market-embeds | https://github.com/square/square-market-embeds | author:square description:Examples for embedding Square Market items in your own website.
+github-square-Ackbar | Ackbar | https://github.com/square/Ackbar | author:square description:Testable debug assertions for Swift.
+github-square-active_record-sql_analyzer | active_record-sql_analyzer | https://github.com/square/active_record-sql_analyzer | author:square description:ActiveRecord query logger and analyzer
+github-square-goprotowrap | goprotowrap | https://github.com/square/goprotowrap | author:square description:A package-at-a-time wrapper for protoc, for generating Go protobuf code.
+github-square-cascading2-protobufs | cascading2-protobufs | https://github.com/square/cascading2-protobufs | author:square description:Cascading 2 library for working with Protocol Buffers (Scheme, Serialization, and maybe even some functions/filters)
+github-square-sq-dbsync | sq-dbsync | https://github.com/square/sq-dbsync | author:square description:Pull data from MySQL and PG databases and consolidate it into a single target store.
+github-square-connect-api-specification | connect-api-specification | https://github.com/square/connect-api-specification | author:square description:Updated Aug 26, 2016
+github-square-ftpfxp | ftpfxp | https://github.com/square/ftpfxp | author:square description:ftpfxp, with patch
+github-square-callback-as-promised | callback-as-promised | https://github.com/square/callback-as-promised | author:square description:Don't make promises you can't keep.
+github-square-lifecycle.js | lifecycle.js | https://github.com/square/lifecycle.js | author:square description:Lifecycles for managing your application start and stop.
+github-square-gcmd | gcmd | https://github.com/square/gcmd | author:square description:Simple library for golang to execute commands in parallel
+github-square-pam_krb5_ccache | pam_krb5_ccache | https://github.com/square/pam_krb5_ccache | author:square description:Updated May 11, 2015
+github-square-connect-php-sdk | connect-php-sdk | https://github.com/square/connect-php-sdk | author:square description:PHP client library for the Square Connect v2 API
+github-square-mssh | mssh | https://github.com/square/mssh | author:square description:Updated Jun 7, 2016
+github-square-mysql-parser | mysql-parser | https://github.com/square/mysql-parser | author:square description:A ddl parser for mysql
+github-square-stround | stround | https://github.com/square/stround | author:square description:Rounding methods for exact numbers using strings.
+github-square-grange-server | grange-server | https://github.com/square/grange-server | author:square description:Updated Feb 3, 2016
+github-square-rough | rough | https://github.com/square/rough | author:square description:Rough is RPC for Rails.
+github-square-squab | squab | https://github.com/square/squab | author:square description:Updated Dec 3, 2013
+github-square-fundraiser | fundraiser | https://github.com/square/fundraiser | author:square description:Updated Apr 22, 2011
+github-square-erg | erg | https://github.com/square/erg | author:square description:CLI for querying range servers
+github-square-connect-python-sdk | connect-python-sdk | https://github.com/square/connect-python-sdk | author:square description:Updated Aug 6, 2016
+github-square-connect-ruby-sdk | connect-ruby-sdk | https://github.com/square/connect-ruby-sdk | author:square description:Ruby client library for the Square Connect v2 API
+github-square-build_execution | build_execution | https://github.com/square/build_execution | author:square description:Execution primitives that force explicit error handling and never call the shell.
+github-square-status-collector | status-collector | https://github.com/square/status-collector | author:square description:Collect the current status from your application or libraries and expose them via a web interface
+github-square-RubyMinePreferences | RubyMinePreferences | https://github.com/square/RubyMinePreferences | author:square description:Ruby Mine Preferences
+github-square-gpgmeh | gpgmeh | https://github.com/square/gpgmeh | author:square description:It's a GPG Gem. Meh.
+github-square-rangeclient | rangeclient | https://github.com/square/rangeclient | author:square description:Ruby client for range
+github-square-rubymine-extensions | rubymine-extensions | https://github.com/square/rubymine-extensions | author:square description:Updated Mar 4, 2013
+github-square-pem-parser | pem-parser | https://github.com/square/pem-parser | author:square description:Parses CA Certificate files that contain multiple PEMs.
+github-square-notify | notify | https://github.com/square/notify | author:square description:Simple notification service and libraries
+github-square-ruby-tree_filter | ruby-tree_filter | https://github.com/square/ruby-tree_filter | author:square description:Filter arbitrary data trees with a concise query language.
+github-square-go-sq-metrics | go-sq-metrics | https://github.com/square/go-sq-metrics | author:square description:Shared package for metrics collection
+github-square-debug_socket | debug_socket | https://github.com/square/debug_socket | author:square description:Debug socket.
+github-square-arthur | arthur | https://github.com/square/arthur | author:square description:A gem to interact with the Bugsnag API
+github-square-connect-protos | connect-protos | https://github.com/square/connect-protos | author:square description:Protocol buffers describing the Connect API
+github-square-homebrew-self | homebrew-self | https://github.com/square/homebrew-self | author:square description:Square homebrew formula
+github-square-reqpi | reqpi | https://github.com/square/reqpi | author:square description:The build-friendly PyPI fake.
+github-square-homebrew-bottles | homebrew-bottles | https://github.com/square/homebrew-bottles | author:square description:File hosting for homebrew-self
+github-square-range-spec | range-spec | https://github.com/square/range-spec | author:square description:Language agnostic spec for the range query language
+github-square-connect-csharp-sdk | connect-csharp-sdk | https://github.com/square/connect-csharp-sdk | author:square description:Updated Aug 5, 2016
+github-square-stash_core_api | stash_core_api | https://github.com/square/stash_core_api | author:square description:Updated Dec 10, 2015

@@ -1,15 +1,17 @@
-github-nutanix-5-1 | Automation | https://github.com/nutanix/Automation | author:nutanix description:Repository for automation scripts
-github-nutanix-5-2 | passport-wso2 | https://github.com/nutanix/passport-wso2 | author:nutanix description:WSO2 Identity Server authentication strategy for Passport and Node.js.
-github-nutanix-5-3 | sails-forcedotcom | https://github.com/nutanix/sails-forcedotcom | author:nutanix description:Force.com adapter for Sails.js
-github-nutanix-4-4 | Connection-viaREST | https://github.com/nutanix/Connection-viaREST | author:nutanix description:PowerShell Connection to Nutanix using Invoke-RestMethod
-github-nutanix-1-5 | SampleRestJavaClient | https://github.com/nutanix/SampleRestJavaClient | author:nutanix description:This sample code demonstrate how to use Nutanix JDK to connect to PRISM and execute basic instructions
-github-nutanix-1-6 | PD-Report | https://github.com/nutanix/PD-Report | author:nutanix description:Produce Nutanix Protection Domain Report
-github-nutanix-1-7 | Fingerprint-vDisks | https://github.com/nutanix/Fingerprint-vDisks | author:nutanix description:Manually Fingerprint vDisks
-github-nutanix-1-8 | vDisk-Report | https://github.com/nutanix/vDisk-Report | author:nutanix description:Produce Nutanix vDisk Report
-github-nutanix-1-9 | Configure-Basic-Cluster | https://github.com/nutanix/Configure-Basic-Cluster | author:nutanix description:Configure basic Nutanix cluster
-github-nutanix-1-10 | Mass-Clone-VMs | https://github.com/nutanix/Mass-Clone-VMs | author:nutanix description:Mass Clone and Power VMs via vCenter using VAAI
-github-nutanix-0-11 | ClusterOperations | https://github.com/nutanix/ClusterOperations | author:nutanix description:Automating Nutanix Cluster Operations
-github-nutanix-0-12 | Change-CVM-RAM | https://github.com/nutanix/Change-CVM-RAM | author:nutanix description:CHANGE NUTANIX CVM RAM WITH POWERCLI
-github-nutanix-0-13 | OrderedPDRestore | https://github.com/nutanix/OrderedPDRestore | author:nutanix description:Restore protection domains is specified order
-github-nutanix-0-14 | DR-Automation | https://github.com/nutanix/DR-Automation | author:nutanix description:PowerCLI to Automate Disaster Recovery Failover on Nutanix
-github-nutanix-0-15 | ntnx_witness | https://github.com/nutanix/ntnx_witness | author:nutanix description:Witness-Script for Nutanix Metro Availability (python)
+github-nutanix-sails-forcedotcom | sails-forcedotcom | https://github.com/nutanix/sails-forcedotcom | author:nutanix description:Force.com adapter for Sails.js
+github-nutanix-Automation | Automation | https://github.com/nutanix/Automation | author:nutanix description:Repository for automation scripts
+github-nutanix-passport-wso2 | passport-wso2 | https://github.com/nutanix/passport-wso2 | author:nutanix description:WSO2 Identity Server authentication strategy for Passport and Node.js.
+github-nutanix-Connection-viaREST | Connection-viaREST | https://github.com/nutanix/Connection-viaREST | author:nutanix description:PowerShell Connection to Nutanix using Invoke-RestMethod
+github-nutanix-hello-prism | hello-prism | https://github.com/nutanix/hello-prism | author:nutanix description:Hello World Prism App for Nutanix Platform
+github-nutanix-SampleRestJavaClient | SampleRestJavaClient | https://github.com/nutanix/SampleRestJavaClient | author:nutanix description:This sample code demonstrate how to use Nutanix JDK to connect to PRISM and execute basic instructions
+github-nutanix-Fingerprint-vDisks | Fingerprint-vDisks | https://github.com/nutanix/Fingerprint-vDisks | author:nutanix description:Manually Fingerprint vDisks
+github-nutanix-Mass-Clone-VMs | Mass-Clone-VMs | https://github.com/nutanix/Mass-Clone-VMs | author:nutanix description:Mass Clone and Power VMs via vCenter using VAAI
+github-nutanix-PD-Report | PD-Report | https://github.com/nutanix/PD-Report | author:nutanix description:Produce Nutanix Protection Domain Report
+github-nutanix-vDisk-Report | vDisk-Report | https://github.com/nutanix/vDisk-Report | author:nutanix description:Produce Nutanix vDisk Report
+github-nutanix-Configure-Basic-Cluster | Configure-Basic-Cluster | https://github.com/nutanix/Configure-Basic-Cluster | author:nutanix description:Configure basic Nutanix cluster
+github-nutanix-OS-Customization | OS-Customization | https://github.com/nutanix/OS-Customization | author:nutanix description:Repository for CloudInit Scripts
+github-nutanix-ntnx_witness | ntnx_witness | https://github.com/nutanix/ntnx_witness | author:nutanix description:Witness-Script for Nutanix Metro Availability (python)
+github-nutanix-DR-Automation | DR-Automation | https://github.com/nutanix/DR-Automation | author:nutanix description:PowerCLI to Automate Disaster Recovery Failover on Nutanix
+github-nutanix-OrderedPDRestore | OrderedPDRestore | https://github.com/nutanix/OrderedPDRestore | author:nutanix description:Restore protection domains is specified order
+github-nutanix-ClusterOperations | ClusterOperations | https://github.com/nutanix/ClusterOperations | author:nutanix description:Automating Nutanix Cluster Operations
+github-nutanix-Change-CVM-RAM | Change-CVM-RAM | https://github.com/nutanix/Change-CVM-RAM | author:nutanix description:CHANGE NUTANIX CVM RAM WITH POWERCLI

@@ -1,7 +1,7 @@
 github-ValveSoftware-steam-for-linux | steam-for-linux | https://github.com/ValveSoftware/steam-for-linux | author:ValveSoftware description:Issue tracking for the Steam for Linux beta client
 github-ValveSoftware-ToGL | ToGL | https://github.com/ValveSoftware/ToGL | author:ValveSoftware description:Direct3D to OpenGL abstraction layer
-github-ValveSoftware-source-sdk-2013 | source-sdk-2013 | https://github.com/ValveSoftware/source-sdk-2013 | author:ValveSoftware description:The 2013 edition of the Source SDK
 github-ValveSoftware-openvr | openvr | https://github.com/ValveSoftware/openvr | author:ValveSoftware description:OpenVR SDK
+github-ValveSoftware-source-sdk-2013 | source-sdk-2013 | https://github.com/ValveSoftware/source-sdk-2013 | author:ValveSoftware description:The 2013 edition of the Source SDK
 github-ValveSoftware-vogl | vogl | https://github.com/ValveSoftware/vogl | author:ValveSoftware description:OpenGL capture / playback debugger.
 github-ValveSoftware-halflife | halflife | https://github.com/ValveSoftware/halflife | author:ValveSoftware description:Half-Life 1 engine based games
 github-ValveSoftware-SteamOS | SteamOS | https://github.com/ValveSoftware/SteamOS | author:ValveSoftware description:SteamOS community tracker
@@ -10,11 +10,12 @@ github-ValveSoftware-steam-runtime | steam-runtime | https://github.com/ValveSof
 github-ValveSoftware-csgo-osx-linux | csgo-osx-linux | https://github.com/ValveSoftware/csgo-osx-linux | author:ValveSoftware description:CS:GO Linux and Mac clients
 github-ValveSoftware-Source-1-Games | Source-1-Games | https://github.com/ValveSoftware/Source-1-Games | author:ValveSoftware description:Linux Source 1 based games such as TF2 and Counter-Strike: Source
 github-ValveSoftware-steamos_kernel | steamos_kernel | https://github.com/ValveSoftware/steamos_kernel | author:ValveSoftware description:SteamOS kernel branches
-github-ValveSoftware-voglperf | voglperf | https://github.com/ValveSoftware/voglperf | author:ValveSoftware description:Benchmarking tool for Linux OpenGL games. Spews frame information, logs frametimes.
 github-ValveSoftware-Dota-2 | Dota-2 | https://github.com/ValveSoftware/Dota-2 | author:ValveSoftware description:Tracker for issues specific to Linux and Mac in the Reborn client
+github-ValveSoftware-voglperf | voglperf | https://github.com/ValveSoftware/voglperf | author:ValveSoftware description:Benchmarking tool for Linux OpenGL games. Spews frame information, logs frametimes.
 github-ValveSoftware-steamos_mesa | steamos_mesa | https://github.com/ValveSoftware/steamos_mesa | author:ValveSoftware description:Patched branches of Mesa used in SteamOS
 github-ValveSoftware-steamworks-vr-api | steamworks-vr-api | https://github.com/ValveSoftware/steamworks-vr-api | author:ValveSoftware description:Source for the Steamworks VR API
 github-ValveSoftware-csgo-demoinfo | csgo-demoinfo | https://github.com/ValveSoftware/csgo-demoinfo | author:ValveSoftware description:CS:GO demo parsing tool
 github-ValveSoftware-portal2 | portal2 | https://github.com/ValveSoftware/portal2 | author:ValveSoftware description:Issues for the Linux port of Portal 2
+github-ValveSoftware-the_lab_renderer | the_lab_renderer | https://github.com/ValveSoftware/the_lab_renderer | author:ValveSoftware description:Valve’s VR renderer used in The Lab (Valve’s VR launch title for the HTC Vive).
 github-ValveSoftware-driver_hydra | driver_hydra | https://github.com/ValveSoftware/driver_hydra | author:ValveSoftware description:OpenVR Driver for Razer Hydra using Sixense SDK
 github-ValveSoftware-Dota-2-Vulkan | Dota-2-Vulkan | https://github.com/ValveSoftware/Dota-2-Vulkan | author:ValveSoftware description:Tracker for issues specific to the Vulkan version of Dota 2 on Windows and Linux

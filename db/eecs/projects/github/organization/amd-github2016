@@ -1,0 +1,4 @@
+github-AMD-OpenCL-caffe | OpenCL-caffe | https://github.com/amd/OpenCL-caffe | author:AMD description:This is a Experimental version of OpenCL by AMD Research, we now recommend you to use The official BVLC Caffe OpenCL branch is over at Caffe branch now at https://github.com/BVLC/caffe/tree/opencl
+github-AMD-Chromium-WebCL | Chromium-WebCL | https://github.com/amd/Chromium-WebCL | author:AMD description:WebCL implementation for Chromium
+github-AMD-rest3d | rest3d | https://github.com/amd/rest3d | author:AMD description:REST3D PROJECT see www.rest3d.org
+github-AMD-furious.js | furious.js | https://github.com/amd/furious.js | author:AMD description:scientific computing package for JavaScript - inspired by NumPy

@@ -1,27 +1,30 @@
-github-inmobi-38-1 | level-tsd | https://github.com/InMobi/level-tsd | author:inmobi description:Updated Feb 19, 2015
-github-inmobi-15-2 | grill | https://github.com/InMobi/grill | author:inmobi description:Updated May 18, 2016
-github-inmobi-10-3 | archived-data-bus | https://github.com/InMobi/archived-data-bus | author:inmobi description:Updated Oct 30, 2012
-github-inmobi-8-4 | conduit | https://github.com/InMobi/conduit | author:inmobi description:Updated May 7, 2016
-github-inmobi-8-5 | messaging-client-scribe | https://github.com/InMobi/messaging-client-scribe | author:inmobi description:A non-blocking auto reconnecting scribe client/log4j appender
-github-inmobi-6-6 | Android-Native-Samplecode-InMobi | https://github.com/InMobi/Android-Native-Samplecode-InMobi | author:inmobi description:Updated Nov 21, 2014
-github-inmobi-4-7 | iOS-Native-Samplecode-InMobi | https://github.com/InMobi/iOS-Native-Samplecode-InMobi | author:inmobi description:Updated Nov 4, 2014
-github-inmobi-3-8 | hadoop | https://github.com/InMobi/hadoop | author:inmobi description:Updated Aug 29, 2013
-github-inmobi-3-9 | api-monetization | https://github.com/InMobi/api-monetization | author:inmobi description:This library project can be used for making API 2.0 calls to InMobi servers to fetch ads for monetization purpose
-github-inmobi-3-10 | incubator-falcon | https://github.com/InMobi/incubator-falcon | author:inmobi description:Custom version of Falcon as used within InMobi
-github-inmobi-2-11 | hive | https://github.com/InMobi/hive | author:inmobi description:ed79ba365cfff4cc485d4ffb546453472c25ca86
-github-inmobi-2-12 | inmobi-stats | https://github.com/InMobi/inmobi-stats | author:inmobi description:Updated Jan 4, 2016
-github-inmobi-2-13 | koolstof | https://github.com/InMobi/koolstof | author:inmobi description:golang port graphite project's carbon daemon
-github-inmobi-2-14 | level-tsd-finder | https://github.com/InMobi/level-tsd-finder | author:inmobi description:graphite finder for level-tsd
-github-inmobi-2-15 | packaging-tools | https://github.com/InMobi/packaging-tools | author:inmobi description:A collection of various packaging tools primarily around Ubuntu
-github-inmobi-1-16 | puppet-lwes | https://github.com/InMobi/puppet-lwes | author:inmobi description:A Puppet report processor that sends metrics to LWES Server
-github-inmobi-1-17 | messaging-client-core | https://github.com/InMobi/messaging-client-core | author:inmobi description:Interfaces for message publishing
-github-inmobi-1-18 | timing-measurement | https://github.com/InMobi/timing-measurement | author:inmobi description:A library to accumulate invocation statistics of anything
-github-inmobi-0-19 | secure-s3-fsclient | https://github.com/InMobi/secure-s3-fsclient | author:inmobi description:A wrapper over S3N filesystem to securely connect to S3 FS without specifying secret-key/passcode
-github-inmobi-0-20 | static-levigo | https://github.com/InMobi/static-levigo | author:inmobi description:Updated Jul 23, 2014
-github-inmobi-0-21 | inmobi.github.com | https://github.com/InMobi/inmobi.github.com | author:inmobi description:Updated Feb 3, 2014
-github-inmobi-0-22 | ltvp | https://github.com/InMobi/ltvp | author:inmobi description:Updated Nov 20, 2012
-github-inmobi-0-23 | ivory | https://github.com/InMobi/ivory | author:inmobi description:Updated Mar 11, 2013
-github-inmobi-0-24 | Native-JS-Sample | https://github.com/InMobi/Native-JS-Sample | author:inmobi description:This project explains a basic working example of a Javascript Ad Code, for InMobi Native ads
-github-inmobi-0-25 | InMobiAPIMonetizationLibrary-Java | https://github.com/InMobi/InMobiAPIMonetizationLibrary-Java | author:inmobi description:This is the API library, build for Server integrations which use Java technology
-github-inmobi-0-26 | mvn-repo | https://github.com/InMobi/mvn-repo | author:inmobi description:Updated May 8, 2016
-github-inmobi-0-27 | pintail | https://github.com/InMobi/pintail | author:inmobi description:Updated May 8, 2016
+github-inmobi-level-tsd | level-tsd | https://github.com/InMobi/level-tsd | author:inmobi description:Updated Feb 19, 2015
+github-inmobi-grill | grill | https://github.com/InMobi/grill | author:inmobi description:Updated Oct 19, 2016
+github-inmobi-archived-data-bus | archived-data-bus | https://github.com/InMobi/archived-data-bus | author:inmobi description:Updated Oct 30, 2012
+github-inmobi-conduit | conduit | https://github.com/InMobi/conduit | author:inmobi description:Updated Sep 22, 2016
+github-inmobi-messaging-client-scribe | messaging-client-scribe | https://github.com/InMobi/messaging-client-scribe | author:inmobi description:A non-blocking auto reconnecting scribe client/log4j appender
+github-inmobi-Android-Native-Samplecode-InMobi | Android-Native-Samplecode-InMobi | https://github.com/InMobi/Android-Native-Samplecode-InMobi | author:inmobi description:Updated Nov 21, 2014
+github-inmobi-hive | hive | https://github.com/InMobi/hive | author:inmobi description:ed79ba365cfff4cc485d4ffb546453472c25ca86
+github-inmobi-iOS-Native-Samplecode-InMobi | iOS-Native-Samplecode-InMobi | https://github.com/InMobi/iOS-Native-Samplecode-InMobi | author:inmobi description:Updated Nov 4, 2014
+github-inmobi-api-monetization | api-monetization | https://github.com/InMobi/api-monetization | author:inmobi description:This library project can be used for making API 2.0 calls to InMobi servers to fetch ads for monetization purpose
+github-inmobi-incubator-falcon | incubator-falcon | https://github.com/InMobi/incubator-falcon | author:inmobi description:Custom version of Falcon as used within InMobi
+github-inmobi-hadoop | hadoop | https://github.com/InMobi/hadoop | author:inmobi description:Updated Aug 29, 2013
+github-inmobi-inmobi-stats | inmobi-stats | https://github.com/InMobi/inmobi-stats | author:inmobi description:Updated Oct 12, 2016
+github-inmobi-sdk-sample-code-ios | sdk-sample-code-ios | https://github.com/InMobi/sdk-sample-code-ios | author:inmobi description:This repository contains InMobi iOS SDK sample code for different ad-formats, which publishers can use to incorporate in their apps
+github-inmobi-koolstof | koolstof | https://github.com/InMobi/koolstof | author:inmobi description:golang port graphite project's carbon daemon
+github-inmobi-level-tsd-finder | level-tsd-finder | https://github.com/InMobi/level-tsd-finder | author:inmobi description:graphite finder for level-tsd
+github-inmobi-packaging-tools | packaging-tools | https://github.com/InMobi/packaging-tools | author:inmobi description:A collection of various packaging tools primarily around Ubuntu
+github-inmobi-pintail | pintail | https://github.com/InMobi/pintail | author:inmobi description:Updated May 8, 2016
+github-inmobi-messaging-client-core | messaging-client-core | https://github.com/InMobi/messaging-client-core | author:inmobi description:Interfaces for message publishing
+github-inmobi-timing-measurement | timing-measurement | https://github.com/InMobi/timing-measurement | author:inmobi description:A library to accumulate invocation statistics of anything
+github-inmobi-puppet-lwes | puppet-lwes | https://github.com/InMobi/puppet-lwes | author:inmobi description:A Puppet report processor that sends metrics to LWES Server
+github-inmobi-sdk-sample-code-android | sdk-sample-code-android | https://github.com/InMobi/sdk-sample-code-android | author:inmobi description:This repository contains InMobi Android SDK sample code for different ad-formats, which publishers can use to incorporate in their apps — Edit
+github-inmobi-mvn-repo | mvn-repo | https://github.com/InMobi/mvn-repo | author:inmobi description:Updated Oct 12, 2016
+github-inmobi-sdk-extensions | sdk-extensions | https://github.com/InMobi/sdk-extensions | author:inmobi description:This repository contains Partner ad-networks adapter code
+github-inmobi-secure-s3-fsclient | secure-s3-fsclient | https://github.com/InMobi/secure-s3-fsclient | author:inmobi description:A wrapper over S3N filesystem to securely connect to S3 FS without specifying secret-key/passcode
+github-inmobi-static-levigo | static-levigo | https://github.com/InMobi/static-levigo | author:inmobi description:Updated Jul 23, 2014
+github-inmobi-ltvp | ltvp | https://github.com/InMobi/ltvp | author:inmobi description:Updated Nov 20, 2012
+github-inmobi-ivory | ivory | https://github.com/InMobi/ivory | author:inmobi description:Updated Mar 11, 2013
+github-inmobi-inmobi.github.com | inmobi.github.com | https://github.com/InMobi/inmobi.github.com | author:inmobi description:Updated Feb 3, 2014
+github-inmobi-InMobiAPIMonetizationLibrary-Java | InMobiAPIMonetizationLibrary-Java | https://github.com/InMobi/InMobiAPIMonetizationLibrary-Java | author:inmobi description:This is the API library, build for Server integrations which use Java technology
+github-inmobi-Native-JS-Sample | Native-JS-Sample | https://github.com/InMobi/Native-JS-Sample | author:inmobi description:This project explains a basic working example of a Javascript Ad Code, for InMobi Native ads

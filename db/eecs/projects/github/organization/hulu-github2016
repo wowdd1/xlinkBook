@@ -1,8 +1,8 @@
 github-hulu-GrannySmith | GrannySmith | https://github.com/hulu/GrannySmith | author:hulu description:It's green. It's an apple.
 github-hulu-restfulgit | restfulgit | https://github.com/hulu/restfulgit | author:hulu description:REST API for Git data
 github-hulu-GSAutomation | GSAutomation | https://github.com/hulu/GSAutomation | author:hulu description:A Javascript extension/wrapper on iOS UIAutomation that makes test scripts more robust and easier to write.
-github-hulu-ectyper | ectyper | https://github.com/hulu/ectyper | author:hulu description:Tornado-based image manipulation service
 github-hulu-dripls | dripls | https://github.com/hulu/dripls | author:hulu description:"CDN in a box" that can shape network traffic for testing HTTPLS
+github-hulu-ectyper | ectyper | https://github.com/hulu/ectyper | author:hulu description:Tornado-based image manipulation service
 github-hulu-bank | bank | https://github.com/hulu/bank | author:hulu description:Statsd and Metricsd frontend for UDP packets aggregation
 github-hulu-monaco | monaco | https://github.com/hulu/monaco | author:hulu description:Updated Mar 1, 2016
 github-hulu-vfl2objc | vfl2objc | https://github.com/hulu/vfl2objc | author:hulu description:A script to convert Visual Formatting Language into native Objective C code for iOS developers

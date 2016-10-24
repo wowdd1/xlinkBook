@@ -1,33 +1,34 @@
 github-amplab-shark | shark | https://github.com/amplab/shark | author:amplab description:Development in Shark has been ended.
 github-amplab-SparkNet | SparkNet | https://github.com/amplab/SparkNet | author:amplab description:Distributed Neural Networks for Spark
 github-amplab-keystone | keystone | https://github.com/amplab/keystone | author:amplab description:Simplifying robust end-to-end machine learning on Apache Spark.
-github-amplab-graphx | graphx | https://github.com/amplab/graphx | author:amplab description:Former GraphX development repository. GraphX has been merged into Apache Spark; please submit pull requests there.
 github-amplab-docker-scripts | docker-scripts | https://github.com/amplab/docker-scripts | author:amplab description:Dockerfiles and scripts for Spark and Shark Docker images
+github-amplab-graphx | graphx | https://github.com/amplab/graphx | author:amplab description:Former GraphX development repository. GraphX has been merged into Apache Spark; please submit pull requests there.
 github-amplab-spark-indexedrdd | spark-indexedrdd | https://github.com/amplab/spark-indexedrdd | author:amplab description:An efficient updatable key-value store for Apache Spark
-github-amplab-MLI | MLI | https://github.com/amplab/MLI | author:amplab description:An API for Distributed Machine Learning
 github-amplab-datascience-sp14 | datascience-sp14 | https://github.com/amplab/datascience-sp14 | author:amplab description:Repository for data science course Spring 14
+github-amplab-MLI | MLI | https://github.com/amplab/MLI | author:amplab description:An API for Distributed Machine Learning
 github-amplab-training | training | https://github.com/amplab/training | author:amplab description:Training materials for Strata, AMP Camp, etc
+github-amplab-succinct | succinct | https://github.com/amplab/succinct | author:amplab description:Java/Scala Implementation of Succinct.
 github-amplab-carat | carat | https://github.com/amplab/carat | author:amplab description:Carat: Collaborative Energy Debugging
 github-amplab-snap | snap | https://github.com/amplab/snap | author:amplab description:Scalable Nucleotide Alignment Program -- a fast and accurate read aligner for high-throughput sequencing data
-github-amplab-succinct | succinct | https://github.com/amplab/succinct | author:amplab description:Java/Scala Implementation of Succinct.
+github-amplab-spark-ec2 | spark-ec2 | https://github.com/amplab/spark-ec2 | author:amplab description:Scripts used to setup a Spark cluster on EC2
 github-amplab-velox-modelserver | velox-modelserver | https://github.com/amplab/velox-modelserver | author:amplab description:Updated Jun 8, 2015
 github-amplab-benchmark | benchmark | https://github.com/amplab/benchmark | author:amplab description:Large scale query engine benchmark
-github-amplab-spark-ec2 | spark-ec2 | https://github.com/amplab/spark-ec2 | author:amplab description:Scripts used to setup a Spark cluster on EC2
 github-amplab-ml-matrix | ml-matrix | https://github.com/amplab/ml-matrix | author:amplab description:Distributed Matrix Library
 github-amplab-ampcrowd | ampcrowd | https://github.com/amplab/ampcrowd | author:amplab description:A RESTful web service that runs microtasks across multiple crowds, provides quality control techniques, and is easily extensible.
 github-amplab-smash | smash | https://github.com/amplab/smash | author:amplab description:Benchmarking toolkit for variant calling
 github-amplab-training-scripts | training-scripts | https://github.com/amplab/training-scripts | author:amplab description:Scripts to launch cluster used for Strata
 github-amplab-ampcamp | ampcamp | https://github.com/amplab/ampcamp | author:amplab description:scripts used for ampcamp
-github-amplab-orchestra | orchestra | https://github.com/amplab/orchestra | author:amplab description:Fine-Grained Distributed Computing
 github-amplab-keystone-example | keystone-example | https://github.com/amplab/keystone-example | author:amplab description:A example skeleton for an application built on top of KeystoneML
+github-amplab-orchestra | orchestra | https://github.com/amplab/orchestra | author:amplab description:Fine-Grained Distributed Computing
 github-amplab-swift | swift | https://github.com/amplab/swift | author:amplab description:Swift Transformations for RegEx queries
-github-amplab-ray | ray | https://github.com/amplab/ray | author:amplab description:This is an experimental distributed execution engine
+github-amplab-cs262a-fall2016 | cs262a-fall2016 | https://github.com/amplab/cs262a-fall2016 | author:amplab description:Updated Oct 18, 2016
 github-amplab-Buggypedia | Buggypedia | https://github.com/amplab/Buggypedia | author:amplab description:Updated Jan 5, 2016
 github-amplab-mlsys | mlsys | https://github.com/amplab/mlsys | author:amplab description:An open source survey of the emerging systems for large-scale machine learning.
 github-amplab-iolap | iolap | https://github.com/amplab/iolap | author:amplab description:Updated May 3, 2016
 github-amplab-keystone-integration-tests | keystone-integration-tests | https://github.com/amplab/keystone-integration-tests | author:amplab description:Integration Tests for KeystoneML
-github-amplab-sparse-covariance-inverse | sparse-covariance-inverse | https://github.com/amplab/sparse-covariance-inverse | author:amplab description:Created Apr 5, 2012
-github-amplab-siren-release | siren-release | https://github.com/amplab/siren-release | author:amplab description:Public version of the SiRen project
 github-amplab-ampcrowd-client-py | ampcrowd-client-py | https://github.com/amplab/ampcrowd-client-py | author:amplab description:A python client for using the AMPCrowd service
+github-amplab-sparse-covariance-inverse | sparse-covariance-inverse | https://github.com/amplab/sparse-covariance-inverse | author:amplab description:Created Apr 6, 2012
+github-amplab-siren-release | siren-release | https://github.com/amplab/siren-release | author:amplab description:Public version of the SiRen project
 github-amplab-numbuf | numbuf | https://github.com/amplab/numbuf | author:amplab description:Numerical Buffers
+github-amplab-ray-artifacts | ray-artifacts | https://github.com/amplab/ray-artifacts | author:amplab description:Build artifacts for Ray Core
 github-amplab-ray-core | ray-core | https://github.com/amplab/ray-core | author:amplab description:Experiments for the Ray backend

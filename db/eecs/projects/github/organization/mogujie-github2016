@@ -1,6 +1,8 @@
-github-mogujie-3135-1 | TeamTalk | https://github.com/mogujie/TeamTalk | author:mogujie description:TeamTalk is a solution for enterprise IM
-github-mogujie-283-2 | MGJRequestManager | https://github.com/mogujie/MGJRequestManager | author:mogujie description:一个基于 AFNetworking 2 的灵活好用的 iOS 网络库
-github-mogujie-226-3 | MGJRouter | https://github.com/mogujie/MGJRouter | author:mogujie description:一个高效/灵活的 iOS URL Router
-github-mogujie-59-4 | MGJTempStore | https://github.com/mogujie/MGJTempStore | author:mogujie description:一个用于临时存放数据的 Objective-C 类库
-github-mogujie-46-5 | TinyPIC_Gradle_Plugin | https://github.com/mogujie/TinyPIC_Gradle_Plugin | author:mogujie description:TinyPIC_Gradle_Plugin
-github-mogujie-25-6 | WebpConvert_Gradle_Plugin | https://github.com/mogujie/WebpConvert_Gradle_Plugin | author:mogujie description:Updated Jan 22, 2016
+github-mogujie-TeamTalk | TeamTalk | https://github.com/mogujie/TeamTalk | author:mogujie description:TeamTalk is a solution for enterprise IM
+github-mogujie-MGJRouter | MGJRouter | https://github.com/mogujie/MGJRouter | author:mogujie description:一个高效/灵活的 iOS URL Router
+github-mogujie-MGJRequestManager | MGJRequestManager | https://github.com/mogujie/MGJRequestManager | author:mogujie description:一个基于 AFNetworking 2 的灵活好用的 iOS 网络库
+github-mogujie-TinyPIC_Gradle_Plugin | TinyPIC_Gradle_Plugin | https://github.com/mogujie/TinyPIC_Gradle_Plugin | author:mogujie description:TinyPIC_Gradle_Plugin
+github-mogujie-MGJTempStore | MGJTempStore | https://github.com/mogujie/MGJTempStore | author:mogujie description:一个用于临时存放数据的 Objective-C 类库
+github-mogujie-WebpConvert_Gradle_Plugin | WebpConvert_Gradle_Plugin | https://github.com/mogujie/WebpConvert_Gradle_Plugin | author:mogujie description:Updated Jan 22, 2016
+github-mogujie-natasha | natasha | https://github.com/mogujie/natasha | author:mogujie description:Natasha is a Android unit testing framework used in Mogujie
+github-mogujie-ThinRPlugin | ThinRPlugin | https://github.com/mogujie/ThinRPlugin | author:mogujie description:去除android中的R.class

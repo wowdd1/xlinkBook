@@ -1,42 +1,45 @@
-github-aol-moloch | moloch | https://github.com/aol/moloch | author:aol description:Moloch is a open source large scale full PCAP capturing, indexing and database system.
+github-aol-moloch | moloch | https://github.com/aol/moloch | author:aol description:Moloch is an open source, large scale, full packet capturing, indexing, and database system.
 github-aol-micro-server | micro-server | https://github.com/aol/micro-server | author:aol description:Microserver is a Java 8 native, zero configuration, standards based, battle hardened library to run Java Rest Microservices via a standard Java main class. Supporting pure Microservice or Micro-monolith styles.
 github-aol-cyclops-react | cyclops-react | https://github.com/aol/cyclops-react | author:aol description:A comprehensive functional reactive platform for JDK8
 github-aol-cyclops | cyclops | https://github.com/aol/cyclops | author:aol description:Home of the cyclops integration modules : support for RxJava, Reactor, FunctionalJava, Guava & Javaslang
 github-aol-chronos | chronos | https://github.com/aol/chronos | author:aol description:cron-like jobs for back-end systems
 github-aol-erlgraph | erlgraph | https://github.com/aol/erlgraph | author:aol description:An erlang application which will connect a d3js force directed graph to an erlang VM and display process information.
 github-aol-transformers | transformers | https://github.com/aol/transformers | author:aol description:A package for normalizing property names and types from an external data store.
-github-aol-postable | postable | https://github.com/aol/postable | author:aol description:A simple task distribution and result collection service.
 github-aol-vulcan | vulcan | https://github.com/aol/vulcan | author:aol description:Asynchronous, high-throughput Avro writer in Java
+github-aol-postable | postable | https://github.com/aol/postable | author:aol description:A simple task distribution and result collection service.
 github-aol-atc | atc | https://github.com/aol/atc | author:aol description:An Action-Based PHP Dispatching Library
 github-aol-node-multipass | node-multipass | https://github.com/aol/node-multipass | author:aol description:Multiauth identity server using Node.js and MongoDB.
 github-aol-qiao | qiao | https://github.com/aol/qiao | author:aol description:Reliable Log Streamer
-github-aol-sbt-sonarrunner-plugin | sbt-sonarrunner-plugin | https://github.com/aol/sbt-sonarrunner-plugin | author:aol description:An SBT plugin to publish code quality data to SonarQube
-github-aol-WebRTCIEPlugin | WebRTCIEPlugin | https://github.com/aol/WebRTCIEPlugin | author:aol description:WebRTC based IE plugin for real time communication
 github-aol-trtop | trtop | https://github.com/aol/trtop | author:aol description:TCP Remote Top - A top like utility to visualize outgoing connections with statistics.
+github-aol-sbt-sonarrunner-plugin | sbt-sonarrunner-plugin | https://github.com/aol/sbt-sonarrunner-plugin | author:aol description:An SBT plugin to publish code quality data to SonarQube
 github-aol-cachelink-service | cachelink-service | https://github.com/aol/cachelink-service | author:aol description:A service for cross-datacenter caching with key associations and deep busting.
-github-aol-jquery-liveupdate | jquery-liveupdate | https://github.com/aol/jquery-liveupdate | author:aol description:Updated Aug 28, 2013
+github-aol-WebRTCIEPlugin | WebRTCIEPlugin | https://github.com/aol/WebRTCIEPlugin | author:aol description:WebRTC based IE plugin for real time communication
 github-aol-thrasher | thrasher | https://github.com/aol/thrasher | author:aol description:A high-performance centralized rate-limiting service.
+github-aol-jquery-liveupdate | jquery-liveupdate | https://github.com/aol/jquery-liveupdate | author:aol description:Updated Aug 29, 2013
+github-aol-actionize | actionize | https://github.com/aol/actionize | author:aol description:A small library to help build Redux reducers and their associated actions.
 github-aol-offload | offload | https://github.com/aol/offload | author:aol description:Simplify cached PHP tasks: background refresh, last-known-good, and single writer.
 github-aol-mod_webfw2 | mod_webfw2 | https://github.com/aol/mod_webfw2 | author:aol description:A high performance web application filtering engine.
 github-aol-ExtJS4-Fart | ExtJS4-Fart | https://github.com/aol/ExtJS4-Fart | author:aol description:An ExtJS 4.x fart class that allows you to play random fart sounds. Inspired by (and fart sounds borrowed from) the Onion fartscroll.js - https://github.com/theonion/fartscroll.js
-github-aol-actionize | actionize | https://github.com/aol/actionize | author:aol description:A small library to help build Redux reducers and their associated actions.
 github-aol-amp-styleguide | amp-styleguide | https://github.com/aol/amp-styleguide | author:aol description:AMP's official style guide.
-github-aol-dougal | dougal | https://github.com/aol/dougal | author:aol description:The missing M of MVC for Angular.js applications
 github-aol-jquery-slideshow | jquery-slideshow | https://github.com/aol/jquery-slideshow | author:aol description:Updated Mar 21, 2013
 github-aol-node-favicon | node-favicon | https://github.com/aol/node-favicon | author:aol description:Node.js Favicon Service
+github-aol-terraform-php | terraform-php | https://github.com/aol/terraform-php | author:aol description:Use PHP to generate Terraform configuration files
+github-aol-dougal | dougal | https://github.com/aol/dougal | author:aol description:The missing M of MVC for Angular.js applications
+github-aol-stitch | stitch | https://github.com/aol/stitch | author:aol description:This library helps implement HTTP PATCH method on Web Resources exposed by Restful APIs. See README.md for more info
+github-aol-JMeterMaid | JMeterMaid | https://github.com/aol/JMeterMaid | author:aol description:Updated Aug 8, 2014
 github-aol-jshint-settings | jshint-settings | https://github.com/aol/jshint-settings | author:aol description:These are the settings we, the Aol Central Engineering Team, recommend. We also recommend that you use /*global ... */ for overrides and global variable definitions.
 github-aol-dom-socket | dom-socket | https://github.com/aol/dom-socket | author:aol description:Broadcast jQuery events across sockets
-github-aol-JMeterMaid | JMeterMaid | https://github.com/aol/JMeterMaid | author:aol description:Updated Aug 8, 2014
+github-aol-protractor-http-snitch | protractor-http-snitch | https://github.com/aol/protractor-http-snitch | author:aol description:HTTP requests sometimes fail. Protractor won't talk, let's hire a snitch.
 github-aol-Webservice_Base | Webservice_Base | https://github.com/aol/Webservice_Base | author:aol description:Framework for developing API Services in Java
-github-aol-terraform-php | terraform-php | https://github.com/aol/terraform-php | author:aol description:Use PHP to generate Terraform configuration files
-github-aol-ccms-rest-template | ccms-rest-template | https://github.com/aol/ccms-rest-template | author:aol description:Walking skeleton for REST api services
-github-aol-angular-test | angular-test | https://github.com/aol/angular-test | author:aol description:MapQuest JS developers test
+github-aol-log4js-protractor-appender | log4js-protractor-appender | https://github.com/aol/log4js-protractor-appender | author:aol description:Log4js appender suited for Protractor
 github-aol-amp-scratch | amp-scratch | https://github.com/aol/amp-scratch | author:aol description:Sample AMP site boilerplates. For reference!
 github-aol-piggy-back-docs | piggy-back-docs | https://github.com/aol/piggy-back-docs | author:aol description:Piggy Back uses slightly annotated Jasmine unit tests to create documentation for your work.
 github-aol-devops-test | devops-test | https://github.com/aol/devops-test | author:aol description:One Cloud DevOps Test
+github-aol-ccms-rest-template | ccms-rest-template | https://github.com/aol/ccms-rest-template | author:aol description:Walking skeleton for REST api services
 github-aol-jquery-mmtrack | jquery-mmtrack | https://github.com/aol/jquery-mmtrack | author:aol description:Creates an mm_track URL, used for tracking page views to Comscore.
 github-aol-blogsmith-taggle | blogsmith-taggle | https://github.com/aol/blogsmith-taggle | author:aol description:"Taggle": a portmanteau of "tagger" and "toggle". Adds handy buttons for commonly used or important tags. Easily customizable by owners/editors for particular sites.
+github-aol-scrawl | scrawl | https://github.com/aol/scrawl | author:aol description:JQuery plugin for supporting endless scroll in Blogsmith sites. Initially built for Cambio.
+github-aol-angular-test | angular-test | https://github.com/aol/angular-test | author:aol description:MapQuest JS developers test
 github-aol-cachelink-client-php | cachelink-client-php | https://github.com/aol/cachelink-client-php | author:aol description:A PHP client for the cachelink service.
 github-aol-mq-js-test | mq-js-test | https://github.com/aol/mq-js-test | author:aol description:MapQuest midpoint problem
 github-aol-PigSolrDataStore | PigSolrDataStore | https://github.com/aol/PigSolrDataStore | author:aol description:The PigSolrDataStore is a library to directly index solr from pig using a single STORE function.
-github-aol-scrawl | scrawl | https://github.com/aol/scrawl | author:aol description:JQuery plugin for supporting endless scroll in Blogsmith sites. Initially built for Cambio.

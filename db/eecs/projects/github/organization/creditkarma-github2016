@@ -1,0 +1,3 @@
+github-creditkarma-graphql-loader | graphql-loader | https://github.com/creditkarma/graphql-loader | author:creditkarma description:Instantiate a GraphQL Schema by loading GraphQL Schema Language files based on a glob pattern
+github-creditkarma-graphql-validator | graphql-validator | https://github.com/creditkarma/graphql-validator | author:creditkarma description:A CLI tool to validate queries against a GraphQL Schema. The primary use case for this tool is to validate schema changes against an existing query store.
+github-creditkarma-maven-exec-jar-plugin | maven-exec-jar-plugin | https://github.com/creditkarma/maven-exec-jar-plugin | author:creditkarma description:A executable jar plugin for maven

@@ -1,43 +1,47 @@
 github-vimeo-graph-explorer | graph-explorer | https://github.com/vimeo/graph-explorer | author:vimeo description:A graphite dashboard powered by structured metrics
 github-vimeo-player-api | player-api | https://github.com/vimeo/player-api | author:vimeo description:Examples for our JavaScript and ActionScript player APIs.
+github-vimeo-stag-java | stag-java | https://github.com/vimeo/stag-java | author:vimeo description:Speedy Type Adapter Generation
 github-vimeo-vimeo-oembed-examples | vimeo-oembed-examples | https://github.com/vimeo/vimeo-oembed-examples | author:vimeo description:Some examples of how to use our oEmbed endpoint
+github-vimeo-VIMVideoPlayer | VIMVideoPlayer | https://github.com/vimeo/VIMVideoPlayer | author:vimeo description:A simple wrapper around the AVPlayer and AVPlayerLayer classes
 github-vimeo-vimeo-php-lib | vimeo-php-lib | https://github.com/vimeo/vimeo-php-lib | author:vimeo description:Our official PHP library for the Advanced API.
 github-vimeo-graphite-influxdb | graphite-influxdb | https://github.com/vimeo/graphite-influxdb | author:vimeo description:An influxdb backend for Graphite-web and graphite-api
-github-vimeo-tailgate | tailgate | https://github.com/vimeo/tailgate | author:vimeo description:Tailgate is a nodejs app to pipe `tail -F` into websockets. It's a very simple way to have real-time access to your logs.
-github-vimeo-VIMVideoPlayer | VIMVideoPlayer | https://github.com/vimeo/VIMVideoPlayer | author:vimeo description:A simple wrapper around the AVPlayer and AVPlayerLayer classes
 github-vimeo-vimeo.php | vimeo.php | https://github.com/vimeo/vimeo.php | author:vimeo description:Official PHP library for the Vimeo API.
+github-vimeo-tailgate | tailgate | https://github.com/vimeo/tailgate | author:vimeo description:Tailgate is a nodejs app to pipe `tail -F` into websockets. It's a very simple way to have real-time access to your logs.
 github-vimeo-ABLincoln | ABLincoln | https://github.com/vimeo/ABLincoln | author:vimeo description:A library for online experiments.
+github-vimeo-player.js | player.js | https://github.com/vimeo/player.js | author:vimeo description:Interact with and control an embedded Vimeo Player.
 github-vimeo-tattletale.js | tattletale.js | https://github.com/vimeo/tattletale.js | author:vimeo description:A utility to send console logs over XHR for server-side processing.
-github-vimeo-simple-black-box | simple-black-box | https://github.com/vimeo/simple-black-box | author:vimeo description:A simple black-box behavior testing framework
-github-vimeo-vimeo.js | vimeo.js | https://github.com/vimeo/vimeo.js | author:vimeo description:Official Node.js library for the Vimeo API.
 github-vimeo-vimeo.py | vimeo.py | https://github.com/vimeo/vimeo.py | author:vimeo description:Official Python library for the Vimeo API.
+github-vimeo-vimeo.js | vimeo.js | https://github.com/vimeo/vimeo.js | author:vimeo description:Official Node.js library for the Vimeo API.
+github-vimeo-simple-black-box | simple-black-box | https://github.com/vimeo/simple-black-box | author:vimeo description:A simple black-box behavior testing framework
 github-vimeo-whisper-to-influxdb | whisper-to-influxdb | https://github.com/vimeo/whisper-to-influxdb | author:vimeo description:migrate (import) graphite data from whisper to influxdb
 github-vimeo-carbon-tagger | carbon-tagger | https://github.com/vimeo/carbon-tagger | author:vimeo description:native tag-based metrics for graphite/carbon
 github-vimeo-libvmod-boltsort | libvmod-boltsort | https://github.com/vimeo/libvmod-boltsort | author:vimeo description:A fast Varnish module for sorting query string parameters.
-github-vimeo-smoketcp | smoketcp | https://github.com/vimeo/smoketcp | author:vimeo description:Smokeping like tcp connectivity tester, reports to statsd. written in Golang
 github-vimeo-VIMNetworking | VIMNetworking | https://github.com/vimeo/VIMNetworking | author:vimeo description:The Vimeo iOS SDK
+github-vimeo-smoketcp | smoketcp | https://github.com/vimeo/smoketcp | author:vimeo description:Smokeping like tcp connectivity tester, reports to statsd. written in Golang
 github-vimeo-graphite-api-influxdb-docker | graphite-api-influxdb-docker | https://github.com/vimeo/graphite-api-influxdb-docker | author:vimeo description:docker image with graphite-api and graphite-influxdb
-github-vimeo-player.js | player.js | https://github.com/vimeo/player.js | author:vimeo description:Interact with and control an embedded Vimeo Player.
-github-vimeo-VimeoUpload | VimeoUpload | https://github.com/vimeo/VimeoUpload | author:vimeo description:The Vimeo iOS/OSX Upload SDK
-github-vimeo-puppet-diamond | puppet-diamond | https://github.com/vimeo/puppet-diamond | author:vimeo description:diamond module for puppet
-github-vimeo-VIMObjectMapper | VIMObjectMapper | https://github.com/vimeo/VIMObjectMapper | author:vimeo description:An automatic JSON to model object converter
-github-vimeo-puppet-statsd | puppet-statsd | https://github.com/vimeo/puppet-statsd | author:vimeo description:statsd module for puppet
+github-vimeo-Blueprint | Blueprint | https://github.com/vimeo/Blueprint | author:vimeo description:aka How We Collaborate
 github-vimeo-vimeo-networking-java | vimeo-networking-java | https://github.com/vimeo/vimeo-networking-java | author:vimeo description:The Vimeo Java (Android) SDK
+github-vimeo-VimeoUpload | VimeoUpload | https://github.com/vimeo/VimeoUpload | author:vimeo description:The Vimeo iOS/OSX Upload SDK
 github-vimeo-go-util | go-util | https://github.com/vimeo/go-util | author:vimeo description:Small reusable Go functions.
+github-vimeo-puppet-diamond | puppet-diamond | https://github.com/vimeo/puppet-diamond | author:vimeo description:diamond module for puppet
 github-vimeo-go-magic | go-magic | https://github.com/vimeo/go-magic | author:vimeo description:Go Bindings for libmagic and an idiomatic API for getting a file's MIME type.
+github-vimeo-puppet-statsd | puppet-statsd | https://github.com/vimeo/puppet-statsd | author:vimeo description:statsd module for puppet
+github-vimeo-VIMObjectMapper | VIMObjectMapper | https://github.com/vimeo/VIMObjectMapper | author:vimeo description:An automatic JSON to model object converter
 github-vimeo-VIMDeeplink | VIMDeeplink | https://github.com/vimeo/VIMDeeplink | author:vimeo description:Simple Objc and Swift wrappers around the Vimeo iOS deeplink API
 github-vimeo-go-hammer | go-hammer | https://github.com/vimeo/go-hammer | author:vimeo description:Updated May 18, 2015
 github-vimeo-VIMUpload | VIMUpload | https://github.com/vimeo/VIMUpload | author:vimeo description:This library has been deprecated, use VimeoUpload instead
 github-vimeo-ios-labs-staffpicks | ios-labs-staffpicks | https://github.com/vimeo/ios-labs-staffpicks | author:vimeo description:An iOS Labs sample project
 github-vimeo-vimeo-deeplink-android | vimeo-deeplink-android | https://github.com/vimeo/vimeo-deeplink-android | author:vimeo description:A helper library to deep link into the official Vimeo Android App
-github-vimeo-netstorage | netstorage | https://github.com/vimeo/netstorage | author:vimeo description:go client for the new Akamai Netstorage http api
 github-vimeo-VimeoNetworking | VimeoNetworking | https://github.com/vimeo/VimeoNetworking | author:vimeo description:The Vimeo iOS SDK
+github-vimeo-netstorage | netstorage | https://github.com/vimeo/netstorage | author:vimeo description:go client for the new Akamai Netstorage http api
 github-vimeo-graphite-go | graphite-go | https://github.com/vimeo/graphite-go | author:vimeo description:Updated Apr 8, 2015
 github-vimeo-go-taglog | go-taglog | https://github.com/vimeo/go-taglog | author:vimeo description:Based on, and compatible with, the Go standard log package, but also provides additional functionality and features such as tagging.
-github-vimeo-Blueprint | Blueprint | https://github.com/vimeo/Blueprint | author:vimeo description:aka How We Collaborate
 github-vimeo-go-imgparse | go-imgparse | https://github.com/vimeo/go-imgparse | author:vimeo description:A small go library to efficiently parse the resolution of various image format streams.
-github-vimeo-graph-explorer-docker | graph-explorer-docker | https://github.com/vimeo/graph-explorer-docker | author:vimeo description:Updated Oct 2, 2014
 github-vimeo-go-iccjpeg | go-iccjpeg | https://github.com/vimeo/go-iccjpeg | author:vimeo description:A small utility package to extract ICC profiles from JPEGs.
-github-vimeo-eslint-config-player | eslint-config-player | https://github.com/vimeo/eslint-config-player | author:vimeo description:ESLint config for all player team projects.
+github-vimeo-graph-explorer-docker | graph-explorer-docker | https://github.com/vimeo/graph-explorer-docker | author:vimeo description:Updated Oct 2, 2014
+github-vimeo-rollup-plugin-bundle-size | rollup-plugin-bundle-size | https://github.com/vimeo/rollup-plugin-bundle-size | author:vimeo description:A rollup plugin to show the size of the generated bundle(s).
+github-vimeo-babel-plugin-transform-i18n | babel-plugin-transform-i18n | https://github.com/vimeo/babel-plugin-transform-i18n | author:vimeo description:A Babel transform plugin to replace strings with their translations.
 github-vimeo-graphite-aggregation-backfiller | graphite-aggregation-backfiller | https://github.com/vimeo/graphite-aggregation-backfiller | author:vimeo description:Updated Apr 8, 2015
+github-vimeo-eslint-config-player | eslint-config-player | https://github.com/vimeo/eslint-config-player | author:vimeo description:ESLint config for all player team projects.
+github-vimeo-omnipay-vindicia | omnipay-vindicia | https://github.com/vimeo/omnipay-vindicia | author:vimeo description:Vindicia driver for the Omnipay PHP payment processing library
 github-vimeo-policy | policy | https://github.com/vimeo/policy | author:vimeo description:Updated Sep 1, 2015

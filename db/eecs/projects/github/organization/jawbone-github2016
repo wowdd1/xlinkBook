@@ -1,9 +1,10 @@
-github-jawbone-3261-1 | JBChartView | https://github.com/Jawbone/JBChartView | author:jawbone description:iOS-based charting library for both line and bar graphs.
-github-jawbone-92-2 | UPPlatform_iOS_SDK | https://github.com/Jawbone/UPPlatform_iOS_SDK | author:jawbone description:An Objective-C library for communicating with the UP Platform on iOS.
-github-jawbone-60-3 | AudioSessionManager | https://github.com/Jawbone/AudioSessionManager | author:jawbone description:This iOS module routes audio output depending on device availability using the following priorities: bluetooth, wired headset, speaker. It also notifies interested listeners of audio change events (optional).
-github-jawbone-47-4 | OpenAL-MOB | https://github.com/Jawbone/OpenAL-MOB | author:jawbone description:OpenAL-MOB is a fork of openAL that supports Head Related Transfer Functions. This will help game developers build games that sound great through any pair of headphones or any of the JAMBOX speakers with LiveAudio playback enabled.
-github-jawbone-34-5 | spark-friends-ios | https://github.com/Jawbone/spark-friends-ios | author:jawbone description:Spark graph demonstration of step data using JBChartView
-github-jawbone-33-6 | UPPlatform_Android_SDK | https://github.com/Jawbone/UPPlatform_Android_SDK | author:jawbone description:UP API SDK for Android
-github-jawbone-21-7 | anscombe-quartet-ios | https://github.com/Jawbone/anscombe-quartet-ios | author:jawbone description:Demonstration of Anscombe's Quartet using JBChartView
-github-jawbone-0-8 | pylithiumsso | https://github.com/Jawbone/pylithiumsso | author:jawbone description:Python Lithium Client
-github-jawbone-0-9 | python-snappy-debian-package | https://github.com/Jawbone/python-snappy-debian-package | author:jawbone description:Updated Mar 1, 2013
+github-jawbone-JBChartView | JBChartView | https://github.com/Jawbone/JBChartView | author:jawbone description:iOS-based charting library for both line and bar graphs.
+github-jawbone-UPPlatform_iOS_SDK | UPPlatform_iOS_SDK | https://github.com/Jawbone/UPPlatform_iOS_SDK | author:jawbone description:An Objective-C library for communicating with the UP Platform on iOS.
+github-jawbone-AudioSessionManager | AudioSessionManager | https://github.com/Jawbone/AudioSessionManager | author:jawbone description:This iOS module routes audio output depending on device availability using the following priorities: bluetooth, wired headset, speaker. It also notifies interested listeners of audio change events (optional).
+github-jawbone-OpenAL-MOB | OpenAL-MOB | https://github.com/Jawbone/OpenAL-MOB | author:jawbone description:OpenAL-MOB is a fork of openAL that supports Head Related Transfer Functions. This will help game developers build games that sound great through any pair of headphones or any of the JAMBOX speakers with LiveAudio playback enabled.
+github-jawbone-UPPlatform_Android_SDK | UPPlatform_Android_SDK | https://github.com/Jawbone/UPPlatform_Android_SDK | author:jawbone description:UP API SDK for Android
+github-jawbone-spark-friends-ios | spark-friends-ios | https://github.com/Jawbone/spark-friends-ios | author:jawbone description:Spark graph demonstration of step data using JBChartView
+github-jawbone-anscombe-quartet-ios | anscombe-quartet-ios | https://github.com/Jawbone/anscombe-quartet-ios | author:jawbone description:Demonstration of Anscombe's Quartet using JBChartView
+github-jawbone-UPPlatform_Python_SDK | UPPlatform_Python_SDK | https://github.com/Jawbone/UPPlatform_Python_SDK | author:jawbone description:Python SDK for the UP API
+github-jawbone-python-snappy-debian-package | python-snappy-debian-package | https://github.com/Jawbone/python-snappy-debian-package | author:jawbone description:Updated Mar 1, 2013
+github-jawbone-pylithiumsso | pylithiumsso | https://github.com/Jawbone/pylithiumsso | author:jawbone description:Python Lithium Client

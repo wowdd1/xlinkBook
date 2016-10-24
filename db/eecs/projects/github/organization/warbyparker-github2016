@@ -1,7 +1,8 @@
-github-warbyparker-16-1 | Warby_MqModule | https://github.com/WarbyParker/Warby_MqModule | author:warbyparker description:A Magento module for publishing an JSON order object to a rabbit exchange on order conformation.
-github-warbyparker-6-2 | Warby_BulkGiftAccount | https://github.com/WarbyParker/Warby_BulkGiftAccount | author:warbyparker description:An Enterprise Magento module for the bulk creation of gift cards.
-github-warbyparker-4-3 | ansible-coreos | https://github.com/WarbyParker/ansible-coreos | author:warbyparker description:Ansible Module to manage CoreOS
-github-warbyparker-0-4 | raspberry-pi | https://github.com/WarbyParker/raspberry-pi | author:warbyparker description:Updated Mar 17, 2014
-github-warbyparker-0-5 | hipchat_freshdesk_addon | https://github.com/WarbyParker/hipchat_freshdesk_addon | author:warbyparker description:Hipchat Addon
-github-warbyparker-0-6 | warbyparker.github.io | https://github.com/WarbyParker/warbyparker.github.io | author:warbyparker description:Prototypes, demos, and miscellaneous web paraphernalia.
-github-warbyparker-0-7 | functional-react | https://github.com/WarbyParker/functional-react | author:warbyparker description:Exploration into functional frontend with React
+github-warbyparker-Warby_MqModule | Warby_MqModule | https://github.com/WarbyParker/Warby_MqModule | author:warbyparker description:A Magento module for publishing an JSON order object to a rabbit exchange on order conformation.
+github-warbyparker-Warby_BulkGiftAccount | Warby_BulkGiftAccount | https://github.com/WarbyParker/Warby_BulkGiftAccount | author:warbyparker description:An Enterprise Magento module for the bulk creation of gift cards.
+github-warbyparker-ansible-coreos | ansible-coreos | https://github.com/WarbyParker/ansible-coreos | author:warbyparker description:Ansible Module to manage CoreOS
+github-warbyparker-functional-react | functional-react | https://github.com/WarbyParker/functional-react | author:warbyparker description:Exploration into functional frontend with React
+github-warbyparker-raspberry-pi | raspberry-pi | https://github.com/WarbyParker/raspberry-pi | author:warbyparker description:Updated Mar 17, 2014
+github-warbyparker-hipchat_freshdesk_addon | hipchat_freshdesk_addon | https://github.com/WarbyParker/hipchat_freshdesk_addon | author:warbyparker description:Hipchat Addon
+github-warbyparker-www_lodash | www_lodash | https://github.com/WarbyParker/www_lodash | author:warbyparker description:Custom Lodash bundle
+github-warbyparker-warbyparker.github.io | warbyparker.github.io | https://github.com/WarbyParker/warbyparker.github.io | author:warbyparker description:Prototypes, demos, and miscellaneous web paraphernalia.
