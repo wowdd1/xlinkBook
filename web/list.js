@@ -471,6 +471,10 @@ function replaceArg(url, arg, value) {
     return href;
 }
 
+function exec(command, text, url) {
+    console.log('execCommand', url);
+    $.post('/exec', {command : command, text : text, fileName :  url }, function(data){});
+}
 
 function userlog(text, url, module, library, rid, searchText) {
     $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, user : user_name}, function(data){});

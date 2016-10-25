@@ -639,6 +639,7 @@ class Utils:
         url = url.strip()
         user_log_js = ''
         chanage_color_js = ''
+        text = self.clearHtmlTag(text).replace('\n', '')
         send_text = text
         if send_text.find('<') != -1:
             send_text = self.clearHtmlTag(send_text)
@@ -659,7 +660,8 @@ class Utils:
         
             
         if url.startswith('http') == False and url != '':
-            js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
+            #js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
+            js = "exec('open','" + searchText + "','" + url + "');"
             link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + user_log_js + '">'
             if showText != '':
                 link += showText + '</a>'
