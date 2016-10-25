@@ -316,13 +316,12 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
 
     args[targetid] = [id, topic, url];
 
-    var enginHtml = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
-
     var extensionHtml= extension_array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
 
     if (hidenEngin) {
         target.innerHTML = extensionHtml;
     } else {
+        var enginHtml = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
         target.innerHTML = enginHtml + extensionHtml
     }
     
@@ -485,9 +484,8 @@ function chanageLinkColor(obj, color, fontSize) {
         obj.innerHTML = '<font color="' + color + '" size="' + fontSize + '">' + obj.text + '</font>'
     } else {
         if (color != '') {
+            //obj.style.background = color;//'#CCEEFF'
             obj.style.color = color;
         }
     }
-    
-    
 }

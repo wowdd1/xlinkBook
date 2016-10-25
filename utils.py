@@ -518,7 +518,7 @@ class Utils:
                 return html
         return html
 
-    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0, userQuote=False, module='', library='', pluginsMode=False):
+    def getEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11, i=0, j=0, useQuote=False, module='', library='', pluginsMode=False):
         if self.ddg_mode:
             return self.getDDGEnginListLinks(engins, topic, id, query, color, fontSize)
         if topic == '':
@@ -539,10 +539,10 @@ class Utils:
             if Config.hiden_content_after_search and pluginsMode == False:
                 script = "var pid = this.parentNode.parentNode.id; hidenMoreContent(pid, 1);"
                 style = "color:'" + color + ' ; font-size: ' + str(fontSize) + "'pt;"
-                result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, script=script, userQuote=userQuote, module=module, library=library, searchText=keyword, rid='#rid')
+                result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, script=script, useQuote=useQuote, module=module, library=library, searchText=keyword, rid='#rid')
             else:
                 style = "color:'" + color + ' ; font-size:' + str(fontSize) + "'pt;"
-                result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, userQuote=userQuote, module=module, library=library, searchText=keyword, rid='#rid')
+                result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, useQuote=useQuote, module=module, library=library, searchText=keyword, rid='#rid')
             result[engin] += '&nbsp;'
         return result
 
@@ -613,8 +613,6 @@ class Utils:
     def bestMatchEngin(self, text, resourceType=''):
         #TODO get best engin by resourceType
         #print resourceType
-        if Config.smart_engin_for_tag.has_key(resourceType.strip()):
-            return self.getEnginUrl(Config.smart_engin_for_tag[resourceType.strip()])
         return self.getEnginUrl(Config.smart_link_engin)
 
     def bestMatchEnginUrl(self, text, resourceType='', source=''):
@@ -635,7 +633,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', userQuote=False, module='', library='', img='', rid='', newTab=True, searchText=''):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType=''):
         url = url.strip()
         user_log_js = ''
         chanage_color_js = ''
@@ -645,7 +643,7 @@ class Utils:
             send_text = self.clearHtmlTag(send_text)
         if searchText == '':
             searchText = send_text
-        if userQuote:
+        if useQuote:
             # because array.push('') contain ', list.py will replace "'" to ""
             # so use  #quote as ', in appendContent wiil replace #quote back to '
             user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote);"
@@ -668,16 +666,28 @@ class Utils:
             else:
                 link += text + '</a>'
             return link
-        if newTab:
-            if userQuote:
-                open_js = "window.open(#quote" + url + "#quote);"
+
+        urls = [url]
+        if resourceType !='' and Config.smart_engin_for_tag.has_key(resourceType.strip()):
+            if isinstance(Config.smart_engin_for_tag[resourceType.strip()], str):
+                urls = [self.toQueryUrl(self.getEnginUrl(Config.smart_engin_for_tag[resourceType.strip()]), searchText)]
             else:
-                open_js = "window.open('" + url + "');"
-        else:
-            if userQuote:
-                open_js = "window.location.href = #quote" + url + "#quote;"
+                urls = []
+                for u in Config.smart_engin_for_tag[resourceType.strip()]:
+                    urls.append(self.toQueryUrl(self.getEnginUrl(u), searchText))
+        open_js = ''
+        for link in urls:
+            if newTab:
+                if useQuote:
+                    open_js += "window.open(#quote" + link + "#quote);"
+                else:
+                    open_js += "window.open('" + link + "');"
             else:
-                open_js = "window.location.href = '" + url + "';"
+                if useQuote:
+                    open_js += "window.location.href = #quote" + link + "#quote;"
+                else:
+                    open_js += "window.location.href = '" + link + "';"
+                break
         #open_js = ''
         result = '<a target="_blank" href="javascript:void(0);"'
 
@@ -685,6 +695,9 @@ class Utils:
             result += ' id=' + id
 
         if script != '':
+            script = script.replace('"', "'")
+            if useQuote:
+                script = script.replace("'", '#quote')
             result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
         else:
             result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
@@ -705,17 +718,17 @@ class Utils:
 
         return result
 
-    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False, showText='', module='', library='', rid=''):
+    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False, showText='', module='', library='', rid='', resourceType=''):
         if text != '' and len(text.strip()) <= Config.smart_link_max_text_len:
             url = ''
             if engin != '':
                 url = self.toQueryUrl(self.getEnginUrl(engin.strip()), text)
             else:
-                url = self.bestMatchEnginUrl(text)
+                url = self.bestMatchEnginUrl(text, resourceType=resourceType)
             if noFormat:
-                return self.enhancedLink(url, text, showText=showText, module=module, library=library, rid=rid)
+                return self.enhancedLink(url, text, showText=showText, module=module, library=library, rid=rid, resourceType=resourceType)
             else:
-                return self.enhancedLink(url, self.formatTitle(text, br_number), showText=showText, module=module, library=library, rid=rid)
+                return self.enhancedLink(url, self.formatTitle(text, br_number), showText=showText, module=module, library=library, rid=rid, resourceType=resourceType)
         if noFormat:
             return text
         else:

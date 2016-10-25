@@ -8,7 +8,7 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    smart_engin_for_tag = {'instructors' : 'twitter',\
+    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky'],\
                            'university' : 'glucky'}
     smart_link_engin = 'google' #'glucky'
     smart_link_max_text_len = 60
@@ -108,7 +108,7 @@ class Config():
     display_all_library = True
 
     hiden_content_after_search = True
-    background_after_click = 'rgb(130, 35, 18)'
+    background_after_click = '#E9967A' ##CCEEFF
     fontsize_after_click = ''
 
     
