@@ -28,7 +28,7 @@ class Config():
 
     #default_library = ''
     default_library = 'ai-library'
-    #default_library = 'information-library'
+    #default_library = 'engineering-library'
     #default_library = 'cognitive-library'
     #default_library = 'neuro-library'
     #default_library = 'gene-library'
@@ -36,13 +36,14 @@ class Config():
     #default_library = 'business-finance-library'
     #default_library = 'medical-library'
     #default_library = 'energy-library'
-    #default_library = 'military-library'
+    #default_library = 'military(NBC)-library'
     #default_library = 'universe-library'
     #default_library = 'earth-library'
     #default_library = 'social-library'
     #default_library = 'frontier-library'
     #default_library = 'research-library'
-    #default_library = 'humanities-library'
+    #default_library = 'humanities-art-library'
+    #default_library = 'thought-political-library'
 
     #show random preview when click nav link
 
@@ -107,7 +108,7 @@ class Config():
     display_all_library = True
 
     hiden_content_after_search = True
-    background_after_click = '#FFDAB9'
+    background_after_click = 'rgb(130, 35, 18)'
     fontsize_after_click = ''
 
     
