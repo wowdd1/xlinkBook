@@ -204,19 +204,29 @@ def color_keyword(text):
         k = ' ' + k
         if result.find(k + ' ') != -1:
             continue
+        k = k.strip()
         if (color_index - 1) % 2 == 0:
             if html_style == True:
-                result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
+                #result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
+                result = replacekeyword(result, k, '<font color="#33EE22">' + k + '</font>')
             else:
                 result = result.replace(k, utils.getColorStr('brown', k))
         else:
             if html_style == True:
-                result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
+                #result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
+                result = replacekeyword(result, k, '<font color="#66CCFF">' + k + '</font>')
                 #return result.encode('utf-8')
             else:
                 result = result.replace(k, utils.getColorStr('darkcyan', k))
 
     return result.encode('utf-8')
+
+def replacekeyword(data, k, colorKeyword):
+    data = data.replace(k, colorKeyword)
+    data = data.replace(k[0 : 1].upper() + k[1:] + ' ', colorKeyword)
+    data = data.replace(k[0 : 1].upper() + k[1:], colorKeyword)
+    data = data.replace(k.upper(), colorKeyword)
+    return data
 
 def contain_keyword(text):
     for k in keyword_list:
@@ -591,7 +601,7 @@ def build_lines(list_all, file_name):
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid)
 
                 if engin != '':
-                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), userQuote=True, module='star', library=source, pluginsMode=plugins_mode)  #, '#33EE22')
+                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), useQuote=True, module='star', library=source, pluginsMode=plugins_mode)  #, '#33EE22')
                     #print engin_list_dict
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
@@ -934,6 +944,8 @@ def smartLink(content, record):
             return ''
         if ret.find(' and ') != -1:
             ret = ret.replace(' and ', ', ')
+        if ret.find(' or ') != -1:
+            ret = ret.replace(' or ', ', ')
         elif ret.find('/') != -1:
             ret = ret.replace('/', ', ')
         elif ret.find(';') != -1:
@@ -946,11 +958,11 @@ def smartLink(content, record):
                 if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
                     i = i[0 : i.find(Config.delete_from_char)].strip()
                 
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id()) 
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag) 
                 if old_i != ret[len(ret) - 1]:
                     html += split_char + '&nbsp;'
         else:
-            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id())
+            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag)
         last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
         return last_line_smart_link
 

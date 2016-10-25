@@ -174,9 +174,15 @@ class Bookmark(BaseExtension):
     def containIgoncase(self, leftData, rightData):
         return leftData.lower().find(rightData.lower()) != -1
 
+    def containIgoncase2(self, leftData, rightDataList):
+        for rightData in rightDataList:
+            if leftData.lower().find(rightData.lower()) != -1:
+                return True
+        return False
+
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        return self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or Config.bookmark_enable_cloud_bookmark
+        return self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or Config.bookmark_enable_cloud_bookmark or self.containIgoncase2(self.raw_data, self.getAlias(rID, form_dict['originFileName']))
 
