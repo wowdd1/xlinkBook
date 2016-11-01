@@ -9,6 +9,7 @@ from config import Config
 import requests
 from bs4 import BeautifulSoup
 import subprocess
+from record import Record
 
 #
 # use "Export History/Bookmarks to JSON/XLS*" chrome extension export bookmark to extensions/bookmark/data/chrome_bookmarks.json
@@ -63,10 +64,10 @@ class Bookmark(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
         alias = self.getAlias(rID.strip(), form_dict['originFileName'])
-        if form_dict.has_key('selection') and form_dict['selection'].strip() != '':
-            selection = form_dict['selection'].encode('utf8').strip()
+        #if form_dict.has_key('selection') and form_dict['selection'].strip() != '':
+        #    selection = form_dict['selection'].encode('utf8').strip()
             #if rTitle.find(selection) != -1:
-            rTitle = selection
+        #    rTitle = selection
         divID = form_dict['divID'].encode('utf8')
 
         self.updateBookmark()
@@ -74,6 +75,7 @@ class Bookmark(BaseExtension):
         html = '<br><div class="ref"><ol>'
         count = 0
         pid = ''
+        records = []
 
         if self.rounter.has_key(rID):
             pid = self.rounter[rID]
@@ -86,10 +88,18 @@ class Bookmark(BaseExtension):
                 if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
                     count += 1
                     html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                    url = ''
+                    if jobj.has_key('url'):
+                        url = jobj['url']
+                    records.append(Record('bookmark-' + str(count) + ' | ' + jobj['title'] + ' | ' + url + ' | '))
             else :
                 if jobj['parentId'] == pid:
                     count += 1
                     html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                    url = ''
+                    if jobj.has_key('url'):
+                        url = jobj['url']
+                    records.append(Record('bookmark-' + str(count) + ' | ' + jobj['title'] + ' | ' + url + ' | '))
 
         html += "</ol></div>"
 
@@ -101,13 +111,28 @@ class Bookmark(BaseExtension):
             if cloud_bookmark.find('<li>') != -1:
                 html += 'cloud bookmark:<br>' + cloud_bookmark
 
-        return html
+        if Config.bookmark_output_data_to_new_tab:
+            return self.utils.output2Disk(records, 'bookmark', rTitle, Config.bookmark_output_data_format)
+        else:
+            return html
 
     def match_item(self, jobj, rTitleList):
         if len(rTitleList) == 0:
             return False
         for rTitle in rTitleList:
-            if self.containIgoncase(jobj['title'].strip(), rTitle.strip()) or (jobj.has_key('url') and (self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '').strip()) or self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '%20').strip()))):
+            if rTitle.strip() == '':
+                continue
+            if self.containIgoncase(jobj['title'].strip(), rTitle.strip()):
+                #print jobj['title'].strip() + ' ' + rTitle.strip()
+                return True
+            if jobj.has_key('url'):
+                if self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '').strip()):
+                    return True
+                if self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '%20').strip()):
+                    return True
+                if self.containIgoncase(jobj['url'].strip(), rTitle.strip().replace(' ', '-')):
+                    return True
+            if self.containIgoncase(jobj['title'].strip(), rTitle.strip().replace(' ', '-')):
                 return True
 
         return False
@@ -132,7 +157,7 @@ class Bookmark(BaseExtension):
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-b-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), jobj['title'], url, '-', hidenEnginSection=True)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-b-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), jobj['title'], url, '-', hidenEnginSection=Config.bookmark_hiden_engin_section)
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
 
         html += '</p></li>'

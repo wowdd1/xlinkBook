@@ -222,10 +222,10 @@ def color_keyword(text):
     return result.encode('utf-8')
 
 def replacekeyword(data, k, colorKeyword):
-    data = data.replace(k, colorKeyword)
-    data = data.replace(k[0 : 1].upper() + k[1:] + ' ', colorKeyword)
-    data = data.replace(k[0 : 1].upper() + k[1:], colorKeyword)
-    data = data.replace(k.upper(), colorKeyword)
+    data = data.replace(' ' + k, ' ' + colorKeyword)
+    data = data.replace(' ' + k[0 : 1].upper() + k[1:] + ' ', ' ' + colorKeyword)
+    data = data.replace(' ' + k[0 : 1].upper() + k[1:], ' ' + colorKeyword)
+    data = data.replace(' ' + k.upper(), ' ' + colorKeyword)
     return data
 
 def contain_keyword(text):
@@ -359,8 +359,9 @@ def next_pos(text, start):
     if html_style:
         c_len = course_name_len + 10
     for k in keyword_list:
-        end = text.lower().find(k, start + 2)
-        if end != -1 and end < min_end:
+        end = text.lower().find(' ' + k, start + 2)
+        if end != -1 and end + 1 < min_end:
+            end += 1
             min_end = end
 
     if min_end != len(text):
@@ -593,15 +594,15 @@ def build_lines(list_all, file_name):
                 #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
                 rid = id_title[0: id_title.find('|')]
                 if url.strip() != '':
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid)
+                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid, resourceType='topic')
                 else:
                     if plugins_mode:
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip().replace('%20', ' ')
                     else:
-                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid)
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid, resourceType='topic')
 
                 if engin != '':
-                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), useQuote=True, module='star', library=source, pluginsMode=plugins_mode)  #, '#33EE22')
+                    engin_list_dict = utils.getEnginListLinks(engin_list, '#topic', id, engin.strip(), useQuote=True, module='star', library=source, pluginsMode=plugins_mode, fontSize=10)  #, '#33EE22')
                     #print engin_list_dict
 
             describe = utils.str_block_width(list_all[i][j].get_describe())
@@ -885,11 +886,12 @@ def gen_html_body_v2(content, row, subRow):
 
     return content
 
-last_line_smart_link = ''
+last_content = ''
 def smartLink(content, record):
-    global last_line_smart_link
+    global last_content
     if content.strip().startswith('path:'):
         path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'}).strip()
+        last_content = path
         if path.find('/custom') != -1:
             return ''
         if path.find(' ') != -1:
@@ -897,20 +899,21 @@ def smartLink(content, record):
         src = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=' + path[path.rfind('/') + 1 : ] + '&column=2'
         folder = 'http://' + Config.ip_adress + '/?db=' + path[path.find('/') + 1 : path.rfind('/') + 1]+ '&key=?'
         alt = path[path.find('db') :]
-        last_line_smart_link = content[0 : content.find('db/')] + '&nbsp;'
+        result = content[0 : content.find('db/')] + '&nbsp;'
         if path != source[source.find('db/') :]:
-            last_line_smart_link += utils.enhancedLink(src, 'path-file', img='<img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">', module='main', library=source, rid=record.get_id()) + '&nbsp;'
+            result += utils.enhancedLink(src, 'path-file', img='<img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">', module='main', library=source, rid=record.get_id()) + '&nbsp;'
 
-        last_line_smart_link += utils.enhancedLink(folder, 'path-dir', img='<img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15">', module='main', library=source, rid=record.get_id())
-        return last_line_smart_link
+        result += utils.enhancedLink(folder, 'path-dir', img='<img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15">', module='main', library=source, rid=record.get_id())
+        
+        return result
     elif content.strip().startswith('id:'):
+        last_content = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'}).strip()
         if record.get_url() != None and record.get_url() != '':
-            last_line_smart_link = content[ 0 : content.find(':') + 1 ] + utils.enhancedLink(record.get_url().strip(), record.get_id().strip(), module='main', library=source, rid=record.get_id())
-            return last_line_smart_link
+            return content[ 0 : content.find(':') + 1 ] + utils.enhancedLink(record.get_url().strip(), record.get_id().strip(), module='main', library=source, rid=record.get_id())
         else:
-            last_line_smart_link = content
-            return last_line_smart_link
+            return content
     elif content.strip().startswith('category:'):
+        last_content = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'category'}).strip()
         tags = content[content.find(':') + 1 : ].strip()
         if tags.find(',') != -1:
             tags = tags.split(',')
@@ -926,22 +929,26 @@ def smartLink(content, record):
                 if tag.strip() != tags[len(tags) - 1].strip():
                     html += ',&nbsp;'
         if html != '':
-            last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
-            return last_line_smart_link
+            return content[ 0 : content.find(':') + 1 ] + html
         else:
-            last_line_smart_link = content
-            return last_line_smart_link
+            return content
     elif content.strip().startswith('videourl:'):
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'videourl'})
+        last_content = ret
         html = utils.enhancedLink(ret.strip(), 'video', module='main', library=source, rid=record.get_id())
-        last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
-        return last_line_smart_link
-    elif content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner') or content.strip().startswith('alias'):
+        return content[ 0 : content.find(':') + 1 ] + html
+    elif isAccountTag(content):
+        tag = content[ 0 : content.find(':')].strip()
+        return genAccountHtml(tag, record, content)
+
+    elif isSmartLinkTag(content):
         html = ''
         tag = content[ 0 : content.find(':')].strip()
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
+        last_content = ret
         if ret == None:
             return ''
+        split_char = ','
         if ret.find(' and ') != -1:
             ret = ret.replace(' and ', ', ')
         if ret.find(' or ') != -1:
@@ -949,28 +956,88 @@ def smartLink(content, record):
         elif ret.find('/') != -1:
             ret = ret.replace('/', ', ')
         elif ret.find(';') != -1:
-            ret = ret.replace(';', ', ')
-        split_char = ','
-        if ret.find(split_char) != -1:
-            ret = ret.split(split_char)
-            for i in ret:
-                old_i = i
-                if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
-                    i = i[0 : i.find(Config.delete_from_char)].strip()
-                
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag) 
-                if old_i != ret[len(ret) - 1]:
-                    html += split_char + '&nbsp;'
-        else:
-            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag)
-        last_line_smart_link = content[ 0 : content.find(':') + 1 ] + html
-        return last_line_smart_link
+            #ret = ret.replace(';', ', ')
+            split_char = ';'
+
+        return genSmartLinkHtml(tag, record, split_char, '', content)
 
     else:
-        if last_line_smart_link.find(content) != -1 or last_line_smart_link.find(content.replace(' and ', ', ')) != -1:
+        if last_content.find(content) != -1:
+            last_content += content
             return ''
-        last_line_smart_link = content
-        return last_line_smart_link
+        last_content += content
+        return content
+
+def genAccountHtml(tag, record, content):
+    url = ''
+    if tag == 'slack':
+        url = 'https://%s.slack.com/'
+    elif tag == 'gitter':
+        url = 'https://gitter.im/%s/gym'
+    elif tag == 'twitter':
+        url = 'https://twitter.com/%s'    
+    elif tag == 'youtube':
+        url = 'https://www.youtube.com/user/%s/'
+    elif tag == 'github':
+        url = 'https://www.github.com/%s/'
+    elif tag == 'vimeo':
+        url = 'https://vimeo.com/%s'
+    elif tag == 'g-group':
+        url = 'https://groups.google.com/a/%s'
+    elif tag == 'medium':
+        url = 'https://medium.com/@%s'
+    if url != '':
+        return genSmartLinkHtml(tag, record, ',', url, content, urlFromServer=False, accountTag=True)
+    else:
+        return ''
+
+
+def isAccountTag(content):
+    return content.strip().startswith('slack:') or content.strip().startswith('gitter:') or content.strip().startswith('twitter:') or content.strip().startswith('github:') or content.strip().startswith('youtube:') or content.strip().startswith('vimeo') or content.strip().startswith('g-group') or content.strip().startswith('medium')
+
+def isSmartLinkTag(content):
+    return content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner:') or content.strip().startswith('alias:') or content.strip().startswith('professor:') or content.strip().startswith('conference:') or content.strip().startswith('cto:') or content.strip().startswith('company:') or content.strip().startswith('g-plus')
+
+def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False):
+    global last_content
+    ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
+    last_content = ret
+    html = ''
+    if ret.find(split_char) != -1:
+        ret = ret.split(split_char)
+        for i in ret:
+            old_i = i
+            if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
+                i = i[0 : i.find(Config.delete_from_char)].strip()
+            if url != '':
+                link = url
+                if url.find('%s') != -1:
+                    link = url.replace('%s', i.strip())
+                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag)) 
+            else:
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag)) 
+            if old_i != ret[len(ret) - 1]:
+                if accountTag:
+                    html += '&nbsp;'
+                else:
+                    html += split_char + '&nbsp;'
+    else:
+        if url != '':
+            link = url
+            if url.find('%s') != -1:
+                link = url.replace('%s', ret)
+            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag))
+        else:
+            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag))
+
+    return content[ 0 : content.find(':') + 1 ] + html
+
+def getShowText(accountTag, text, tag):
+    if accountTag:
+        return '<font style="color:#999966 ; font-size: 9pt;">@' + text + '</font>'
+    elif tag == 'alias':
+        return '<font style="font-size: 10pt;">' + text + '</font>'
+    return text
 
 def print_search_box(hiden):
     global search_box_displayed
@@ -1027,7 +1094,8 @@ def print_table_head_with_style():
         print_search_box(search_box_hiden)
             
         if library_hiden == False and plugins_mode == False and gened_libary == False:
-            print utils.gen_libary(True,username, '', source=source)
+            if source.endswith('-library'):
+                print utils.gen_libary(True,username, '', source=source)
             gened_libary = True
 	if plugins_mode:
 	    print '<br>'
@@ -1478,9 +1546,9 @@ def print_list(all_lines, file_name = ''):
             if html_style:
                 message += '<div id="total-info"><br/>'
             if filter_keyword != "":
-                message += "\nTotal " + str(total_records) + " records cotain " + filter_keyword
+                message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records cotain " + filter_keyword
             else:
-                message += "\nTotal " + str(total_records) + " records"
+                message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records"
             if file_name != '':
                 if html_style:
                     a = '<a target="_blank" href="' + getLibraryRealUrl(file_name) + '">' + file_name[file_name.rfind('/') + 1 :] + '</a>'

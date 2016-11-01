@@ -12,6 +12,7 @@ from config import Config
 from bs4 import BeautifulSoup
 import requests
 from extensions.reference.youtube_helper import YoutubeHelper
+from record import Record
 
 class Reference(BaseExtension):
 
@@ -101,6 +102,7 @@ class Reference(BaseExtension):
             html = ''
             html += '<div class="ref"><ol>'
             count = 0
+            records = []
             for a in soup.find_all('a'):
                 if a.attrs.has_key('href') == False or link_dict.has_key(a['href']):
                     continue
@@ -147,14 +149,16 @@ class Reference(BaseExtension):
                 ref_divID += '-' + str(count)
                 linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
                 appendID = str(count)
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), text, link, '-', hidenEnginSection=True) 
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), text, link, '-', hidenEnginSection=Config.reference_hiden_engin_section) 
 		#if a.img != None and a.img['src'].endswith('gif') == False:
 		#    html += '<img width="48" height="48" src="' + a.img['src'] + '">'
                 html += '<li><span>' + str(count) + '.</span>'
 		if title.find('- Duration') != -1:
 		    html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title[0 : title.find('- Duration')], Config.smart_link_br_len), module='reference') + title[title.find('- Duration') :]
+                    records.append(self.toRecord('reference-' + str(count), title[0 : title.find('- Duration')], link))
 	        else:
                     html += '<p>' + self.utils.enhancedLink(link, self.utils.formatTitle(title, Config.smart_link_br_len), module='reference')
+                    records.append(self.toRecord('reference-' + str(count), title, link))
 
                 if script != "":
                     html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
@@ -162,8 +166,14 @@ class Reference(BaseExtension):
             html += '</ol></div>'
         if count == 0:
             html = ''
-        return html
+        
+        if Config.reference_output_data_to_new_tab:
+            return self.utils.output2Disk(records, 'reference', self.form_dict['rTitle'], Config.reference_output_data_format)
+        else:
+            return html
 
+    def toRecord(self, rid, title, url):
+        return Record(rid + ' | ' + title.replace('\n', '') + ' | ' + url + ' | ')
 
     def isYoutubeRssUrl(self, url):
         return (url.find('user') != -1 or url.find('channel') != -1) and (url.find('playlists') != -1 or url.find('videos') != -1) and url.find('watch') == -1 and url.find('youtube') != -1
@@ -190,7 +200,7 @@ class Reference(BaseExtension):
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), item[0], item[1], '-', hidenEnginSection=True)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), item[0], item[1], '-', hidenEnginSection=Config.reference_hiden_engin_section)
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
 
             html += '</p></li>'
@@ -246,7 +256,7 @@ class Reference(BaseExtension):
                     appendID = appendID.replace('.','R')
                 else:
                     self.html += '<li><span>' + str(count) + '.</span>'
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-', hidenEnginSection=True)
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r[0], r[1], '-', hidenEnginSection=Config.reference_hiden_engin_section)
                 if r[1] != '':
                     self.html += '<p>' + self.utils.enhancedLink(r[1], self.utils.formatTitle(r[0], Config.smart_link_br_len), module='reference', rid=rID, library=self.form_dict['originFileName'])
                 else:
@@ -271,7 +281,7 @@ class Reference(BaseExtension):
                 ref_divID += '-' + str(count)
                 linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
                 appendID = str(count)
-                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-', hidenEnginSection=True)
+                script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + key.replace(' ', '-') + '-' + str(appendID), self.utils.clearHtmlTag(r.get_title().strip()), r.get_url().strip(), '-', hidenEnginSection=Config.reference_hiden_engin_section)
 
                 self.html += '<li><span>' + str(count) + '.</span>'
                 self.html += '<p>' + self.genMetadataLink(r.get_title().strip(), r.get_url().strip(), rID=key)

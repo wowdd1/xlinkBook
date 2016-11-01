@@ -95,7 +95,7 @@ function search(inputid,optionid){
     if (select[select.selectedIndex].value.slice(0, 1) == "!"){
         url = "http://duckduckgo.com/?q=" + select[select.selectedIndex].value + " " + input.value.replace("&nbsp;", " ")
         window.open(url);
-        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value);
+        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
     } else if (select[select.selectedIndex].value == "current") {
         var url = "http://localhost:5000?db=" + database;
         if (key != "") {
@@ -103,14 +103,14 @@ function search(inputid,optionid){
         }
         url = url + '&filter="' + input.value + '"' + '&column=1';
         window.open(url)
-        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value);
+        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
     } else if (select[select.selectedIndex].value == "add") {
         $.post('/addRecord', {fileName : fileName, data : input.value}, function(data) {
 	    window.location.href = window.location.href;   
 	});
     } else {
         window.open(select.value + input.value);
-        userlog(select[select.selectedIndex].text, select.value + input.value, 'searchbox', fileName, '', input.value);
+        userlog(select[select.selectedIndex].text, select.value + input.value, 'searchbox', fileName, '', input.value, '');
     }
 }
 
@@ -139,18 +139,18 @@ function searchTopic(obj, rid, topic, otherInfo){
             if (options[i].value.indexOf("%s") != -1) {
                 url = options[i].value.replace("%s", topic.replace("&nbsp;", " ")) + otherInfo
                 window.open(url);
-                userlog(obj.text, url, 'moreEngin', fileName, rid, topic);
+                userlog(obj.text, url, 'moreEngin', fileName, rid, topic, '');
             } else {
                 console.log("xx", obj.text.slice(0, 1));
                 if (options[i].value.slice(0, 1) == "!"){
                     console.log("xx", options[i].value + topic.replace("&nbsp;", " "));
                     url = "http://duckduckgo.com/?q=" + options[i].value + " " + topic.replace("&nbsp;", " ") + otherInfo
                     window.open(url);
-                    userlog(obj.text, url, 'moreEngin', fileName, rid, topic);
+                    userlog(obj.text, url, 'moreEngin', fileName, rid, topic, '');
                 } else {
                     url = options[i].value + topic.replace("&nbsp;", " ") + otherInfo
                     window.open(url);
-                    userlog(obj.text, url, 'moreEngin', fileName, rid, topic);
+                    userlog(obj.text, url, 'moreEngin', fileName, rid, topic, '');
                 }
             }
         }
@@ -235,7 +235,13 @@ function navTopic(obj, divID, parentDivID, countIndex){
                  } else if (data.indexOf("http") == 0){
                      //window.location.href = data;
                      window.open(data);
-		     $("#" + target_data_id).html('---------------<br>&nbsp;&nbsp;<a target="_blank" href="' + data + '">target link</a><br>---------------');
+                     userlog(postArgs['rTitle'], data, postArgs['name'], postArgs['fileName'], postArgs['rID'], postArgs['rTitle'], '');
+		     $("#" + target_data_id).html('<br>&nbsp;&nbsp;<a target="_blank" href="' + data + '">target link</a><br>');
+                 } else if (data.substring(0, data.indexOf(' ')) == 'edit') {
+                     
+                     url = data.substring(data.indexOf(' ') + 1)
+                     console.log('execCommand', url);
+                     $.post('/exec', {command : 'edit', text : url, fileName :  url }, function(data){});
                  }
                  clearInterval(loadAnimID);
                  MathJax.Hub.Queue(["Typeset", MathJax.Hub, targetid]);
@@ -475,8 +481,8 @@ function exec(command, text, url) {
     $.post('/exec', {command : command, text : text, fileName :  url }, function(data){});
 }
 
-function userlog(text, url, module, library, rid, searchText) {
-    $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, user : user_name}, function(data){});
+function userlog(text, url, module, library, rid, searchText, resourceType) {
+    $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name}, function(data){});
 }
 
 function chanageLinkColor(obj, color, fontSize) {
@@ -488,4 +494,21 @@ function chanageLinkColor(obj, color, fontSize) {
             obj.style.color = color;
         }
     }
+}
+
+function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab) {
+    $.post("/queryUrl", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name}, function(data){
+        console.log('queryUrlFromServer--->', data);
+        var urls = null;
+        if (data.indexOf(' ') > 0) {
+            urls = data.split(' ');
+        } else {
+            urls = [data];
+        }
+
+        for (var i = 0; i < urls.length; i++) {
+            window.open(urls[i]);
+            userlog(text, urls[i], module, library, rid, searchText, resourceType);
+        }
+    });
 }

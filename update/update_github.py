@@ -652,6 +652,8 @@ class GithubSpider(Spider):
                 'hulu' : 'https://github.com/hulu',\
                 'coursera' : 'https://github.com/coursera',\
                 'edx' : 'https://github.com/edx',\
+                'udacity' : 'https://github.com/udacity',\
+                'commaai' : 'https://github.com/commaai',\
                 'bvlc' : 'https://github.com/BVLC',\
                 'tum-vision' : 'https://github.com/tum-vision/',\
                 'GoogleChrome' : 'https://github.com/GoogleChrome',\
@@ -671,7 +673,8 @@ class GithubSpider(Spider):
                 'AMD' : 'https://github.com/amd',\
                 'macmillanpublishers' : 'https://github.com/macmillanpublishers',\
                 'oreillymedia' : 'https://github.com/oreillymedia',\
-                'usgs' : 'https://github.com/usgs'}
+                'usgs' : 'https://github.com/usgs',\
+                'gitter' : 'https://github.com/gitterHQ'}
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\
                 'nipy' : 'https://github.com/nipy',\
@@ -687,7 +690,6 @@ class GithubSpider(Spider):
         data_gene = { 'CIDAR-LAB' : 'https://github.com/CIDARLAB',\
                       'Voigt-Lab' : 'https://github.com/VoigtLab',\
                       'ENCODE-DCC' : 'https://github.com/ENCODE-DCC'}
-
 
         self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
         #self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
