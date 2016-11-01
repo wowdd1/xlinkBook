@@ -37,6 +37,7 @@ chapter = 0
 sub_chapter = 0
 code_list = []
 last_pid = ''
+rawdata = False
 
 def customFormat(title, link, rID='', desc='', source=''):
     if delete_from_char != '':
@@ -146,6 +147,7 @@ def get_parent_code(code):
         code_list.append(code)
         return code
 
+ids = {}
 def customPrintFile(line):
     global parentid
     global pid, sub_pid, sub_sub_pid, app_mode
@@ -160,6 +162,10 @@ def customPrintFile(line):
         return
 
     id = line[0 : line.find(' ')]
+    if ids.has_key(id):
+        return
+    ids[id] = id
+
     '''
     #if parentid != '':
     #    customid = parentid
@@ -360,6 +366,7 @@ def customPrintFile(line):
         #title = title[0 : title.find('(')].strip()
     '''
     #print customid  + '-' + str(line_id) + ' | ' + line.strip()  + ' | | '
+    print id  +  ' | ' + line[line.find(' ') :].strip()  + ' | | '
     #print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
 
 
@@ -468,7 +475,7 @@ def main(argv):
     global source, keyword_min_number, keyword_max_number, custom_html_tag, custom_filter
     global start, end, custom_contain, delete_from_char, parentid
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:r:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent"])
+        opts, args = getopt.getopt(sys.argv[1:], 'i:u:n:m:t:f:s:e:c:d:p:', ["input", "url", "number", "max", "tag", "filter", "start", "end", "contain", "delete", "parent"])
     except getopt.GetoptError, err:
         print str(err)
         sys.exit(2)

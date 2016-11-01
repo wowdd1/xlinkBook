@@ -47,7 +47,7 @@ engin-46 | macropus | http://git.macropus.org/hubmed/?term= | priority:0 descrip
 engin-47 | citeulike | http://www.citeulike.org/search/all?q= | priority:0 description:paper
 engin-48 | inspirehep | http://inspirehep.net/search?ln=en&ln=en&of=hb&action_search=Search&sf=earliestdate&so=d&rm=&rg=25&sc=0&p= | priority:0 description:paper
 engin-49 | hindawi | http://www.hindawi.com/search/all/ | priority:0 description:paper
-engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | priority:0 description:tutorial
+engin-50 | udemy | https://www.udemy.com/courses/search/?ref=home&q= | priority:4 description:tutorial, course
 engin-51 | github | https://github.com/search?q= | priority:8 description:project star icon:http://mycroftproject.com/updateos.php/id0/github93het.ico
 engin-52 | stackoverflow | http://stackoverflow.com/search?q= | priority:8 description:q-a star
 engin-53 | mathoverflow | http://mathoverflow.net/search?q= | priority:0 description:q-a
@@ -495,7 +495,7 @@ engin-502 | protocols.io | https://www.protocols.io/search?key= | priority:0 des
 engin-503 | protocol-online | http://www.protocol-online.org/cgi-bin/prot/search.cgi?query=%s&submit2=Go | priority:0 description:protocol
 engin-504 | addgene | https://www.addgene.org/search/advanced/?q= | priority:0 description:protocol
 engin-505 | neuinfo | https://neuinfo.org/data/search?q=%s&l=%s | priority:5 description:data
-engin-506 | vimeo | https://vimeo.com/search?q= | priority:6 description:video
+engin-506 | vimeo | https://vimeo.com/search?q= | priority:6 description:video star
 engin-507 | ebi | http://www.ebi.ac.uk/ebisearch/search.ebi?query=%s&submit1=1&db=allebi&requestFrom=ebi_index | priority:6 description:dataset
 engin-508 | qkankan | http://www.qkankan.com/index.html?q= | priority:6 description:website
 engin-509 | openaire | https://www.openaire.eu/search/find?keyword= | priority:4 description:paper project dataset
@@ -514,3 +514,7 @@ engin-521 | rakuten | http://global.rakuten.com/en/search/?k= | priority:5 descr
 engin-522 | mixi | http://mixi.jp/search_community.pl?keyword=%s&search_mode=title&category_id=0&type=com&mode=main&launch=v1 | priority:5 description:social blog
 engin-523 | ameblo | http://search.ameba.jp/search.html?q= | priority:5 description:social blog
 engin-524 | glucky | https://www.google.com.hk/search?site=&source=hp&q=%s&btnI=1 | priority:5 description:all
+engin-525 | medium | https://medium.com/search?q= | priority:5 description:social blog
+engin-526 | udacity | https://www.google.com/search?lr=&hl=en&as_qdr=all&q=%s%3Audacity.com | priority:5 description:coursera
+engin-527 | phdtree | http://phdtree.org/scholar/list/?q= | priority:5 description:wiki
+engin-528 | iversity.org | https://iversity.org/en/courses?utf8=✓&state=&course_type=&course_format=&language=&search= | priority:3 description:course

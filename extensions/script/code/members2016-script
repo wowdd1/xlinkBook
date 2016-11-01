@@ -8,6 +8,8 @@ from utils import Utils
 import requests
 import sys
 from bs4 import BeautifulSoup
+from config import Config
+from record import Record
 
 helper = Helper()
 utils = Utils()
@@ -25,15 +27,22 @@ soup = BeautifulSoup(req.text)
 
 title_list = []
 url_list = []
+records = []
+count = 0
 for tr in soup.find_all('tr'):
     if tr.td != None and len(tr.td.text) < 20:
         title_list.append(tr.td.text.strip())
         url_list.append('')
+        if tr.td.text.strip() != '':
+            count += 1
+            records.append(Record('member-' + str(count) + ' | ' + tr.td.text.strip() + ' | | '))
         #html += '<li>' + tr.td.text.strip() + '</li>'
 
 
-
-print helper.toListHtml(title_list, url_list, 20)
+if Config.output_data_to_new_tab:
+    print utils.output2WebContent(records, 'member', r.get_title().strip())
+else:
+    print helper.toListHtml(title_list, url_list, 20)
 
 
 #print id_arg + '<br>'

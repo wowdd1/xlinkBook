@@ -20,7 +20,7 @@ from record import ReferenceRecord
 from record import PaperRecord
 from record import ContentRecord
 from record import EnginRecord
-import time
+import time, datetime
 import feedparser
 import urllib
 import subprocess
@@ -233,7 +233,7 @@ class Utils:
             else:
                 html += self.enhancedLink("http://' + Config.ip_adress + '/?db=library/&key=?", 'library', library=source, module='main') + '&nbsp;'
 
-            html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(' + str(lines) + ')</font>', library=source, module='main') + '</div>'
+            html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '</div>'
         else:
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + self.enhancedLink("http://' + Config.ip_adress + '/login", 'Login', library=source, module='main') + '</div>'
         html += '<div style="height: 21px; width: 100px"></div>'
@@ -255,7 +255,7 @@ class Utils:
             f = open('db/library/' + item)
             lines = len(f.readlines())
             f.close()
-            html += self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=' + Config.default_width,  item.replace('-library', '') + '<font size="2">(' + str(lines) + ')</font>', library=source, module='main') + '&nbsp;'
+            html += self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + item + '&column=3&width=' + Config.default_width,  item.replace('-library', '') + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp;'
  
             if count > 5 :
                 count = 0
@@ -610,6 +610,51 @@ class Utils:
         return result
 
 
+    def output2Disk(self, records, module, fileName, outputFormat=''):
+        data = ''
+        if outputFormat == 'markdown':
+            data += '## ' + fileName.replace('%20', ' ') + '\n'
+            data += '- ### ' + module + '\n'
+        fileName = fileName.strip().replace('"', '').replace("'", '').replace('%20', ' ').replace('(', '').replace(')', '').replace(' ', '-').replace('|', '').lower() 
+        if outputFormat != '':
+            if outputFormat == 'markdown':
+                fileName += '.md'
+            else:
+                fileName += '-' + outputFormat
+        else:
+            fileName += str(datetime.date.today().year)
+        count = 0
+        for record in records:
+            count += 1
+            if outputFormat == 'markdown':
+                if record.line.find(' parentid:') != -1 and record.get_parentid().strip() != '':
+                    data += '    '
+                data += '- [ ] [' + record.get_title().strip() + '](' + record.get_url().strip() + ')\n'
+            else:
+                data += record.get_id().strip() + '-' + str(count) + ' | ' + record.get_title().strip() + ' | ' + record.get_url().strip() + ' | ' + '\n'
+        outputDir = Config.output_data_to_new_tab_path + module + '/'
+        if outputFormat != '':
+            outputDir += outputFormat + '/'
+        if os.path.exists(outputDir) == False:
+            os.makedirs(outputDir)
+
+        f = open(outputDir + fileName, 'w')
+        f.write(data)
+        f.close()
+
+        url = ''
+        if outputFormat.strip() != '':
+            url += 'edit ' + os.getcwd() + '/' + outputDir + fileName
+            return url
+
+        url += 'http://' + Config.ip_adress + '/?db=' + Config.output_data_to_new_tab_path.replace('db/', '')
+        url += module
+        if outputFormat.strip() != '':
+            url += '/' + outputFormat + '/'
+        
+        url += '&key=' + fileName
+        return url
+
     def bestMatchEngin(self, text, resourceType=''):
         #TODO get best engin by resourceType
         #print resourceType
@@ -620,6 +665,28 @@ class Utils:
             return 'http://github.com/' + text
         url = self.bestMatchEngin(text, resourceType=resourceType)
         return self.toQueryUrl(url, text)
+
+    def clientQueryEnginUrl(self, originUrl, text, resourceType, module):
+        url = self.toQueryUrl(self.bestMatchEngin(text, resourceType=resourceType), text)
+        if originUrl != '':
+            url = originUrl
+        urls = [originUrl]
+        if resourceType !='' and Config.smart_engin_for_tag.has_key(resourceType.strip()):
+            if isinstance(Config.smart_engin_for_tag[resourceType.strip()], str):
+                urls = [self.toQueryUrl(self.getEnginUrl(Config.smart_engin_for_tag[resourceType.strip()]), text)]
+            else:
+                urls = []
+                for u in Config.smart_engin_for_tag[resourceType.strip()]:
+                    urls.append(self.toQueryUrl(self.getEnginUrl(u), text))
+
+        if module != '' and Config.smart_engin_for_extension.has_key(module.strip()):
+            if isinstance(Config.smart_engin_for_extension[module.strip()], str):
+                urls = [self.toQueryUrl(self.getEnginUrl(Config.smart_engin_for_extension[module.strip()]), text)]
+            else:
+                urls = []
+                for u in Config.smart_engin_for_extension[module.strip()]:
+                    urls.append(self.toQueryUrl(self.getEnginUrl(u), text))  
+        return urls
 
     def toQueryUrl(self, url, text):
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
@@ -633,25 +700,33 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType=''):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False):
         url = url.strip()
         user_log_js = ''
+        query_url_js = ''
         chanage_color_js = ''
-        text = self.clearHtmlTag(text).replace('\n', '')
-        send_text = text
+        text = text.replace('"', '').replace("'", '')
+        #text = self.clearHtmlTag(text).replace('\n', '')
+        send_text = self.clearHtmlTag(text).replace('\n', '')
         if send_text.find('<') != -1:
             send_text = self.clearHtmlTag(send_text)
         if searchText == '':
             searchText = send_text
+        newTabArgs = 'false'
+        if newTab:
+            newTabArgs = 'true'
         if useQuote:
             # because array.push('') contain ', list.py will replace "'" to ""
             # so use  #quote as ', in appendContent wiil replace #quote back to '
             user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote);"
+
+            query_url_js = "queryUrlFromServer(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, " + newTabArgs + ");"
             if Config.background_after_click != '' and text.find('path-') == -1:
-                chanage_color_js = "chanageLinkColor(this, #quote"+ Config.background_after_click +"#quote, #quote" + Config.fontsize_after_click + "#quote);"
+                chanage_color_js = "chanageLinkColor(this, #quote"+ Config.background_after_click +"#quote, #quote" + Config.fontsize_after_click + "#quote, #quote" + resourceType + "#quote);"
 
         else:
-            user_log_js = "userlog('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "');"
+            user_log_js = "userlog('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');"
+            query_url_js = "queryUrlFromServer('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "', " + newTabArgs + ");"
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
 
@@ -659,7 +734,11 @@ class Utils:
             
         if url.startswith('http') == False and url != '':
             #js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
-            js = "exec('open','" + searchText + "','" + url + "');"
+            cmd = 'open'
+            if url.endswith('.md'):
+                cmd = 'edit'
+
+            js = "exec('" + cmd + "','" + searchText + "','" + url + "');"
             link = '<a target="_blank" href="javascript:void(0);" onclick="' + js + chanage_color_js + user_log_js + '">'
             if showText != '':
                 link += showText + '</a>'
@@ -667,27 +746,28 @@ class Utils:
                 link += text + '</a>'
             return link
 
-        urls = [url]
-        if resourceType !='' and Config.smart_engin_for_tag.has_key(resourceType.strip()):
-            if isinstance(Config.smart_engin_for_tag[resourceType.strip()], str):
-                urls = [self.toQueryUrl(self.getEnginUrl(Config.smart_engin_for_tag[resourceType.strip()]), searchText)]
-            else:
-                urls = []
-                for u in Config.smart_engin_for_tag[resourceType.strip()]:
-                    urls.append(self.toQueryUrl(self.getEnginUrl(u), searchText))
         open_js = ''
-        for link in urls:
-            if newTab:
-                if useQuote:
-                    open_js += "window.open(#quote" + link + "#quote);"
+        if urlFromServer:
+            user_log_js = ''
+            open_js = query_url_js;
+        else:
+            urls = [url]    
+            if module != '' or resourceType != '':
+                urls = self.clientQueryEnginUrl(url, searchText, resourceType, module)
+            for link in urls:
+                if link == '':
+                    continue
+                if newTab:
+                    if useQuote:
+                        open_js += "window.open(#quote" + link + "#quote);"
+                    else:
+                        open_js += "window.open('" + link + "');"
                 else:
-                    open_js += "window.open('" + link + "');"
-            else:
-                if useQuote:
-                    open_js += "window.location.href = #quote" + link + "#quote;"
-                else:
-                    open_js += "window.location.href = '" + link + "';"
-                break
+                    if useQuote:
+                        open_js += "window.location.href = #quote" + link + "#quote;"
+                    else:
+                        open_js += "window.location.href = '" + link + "';"
+                    break
         #open_js = ''
         result = '<a target="_blank" href="javascript:void(0);"'
 
@@ -712,9 +792,10 @@ class Utils:
             result += img + '</a>'
         else:
             if showText != '':
-                result += showText + '</a>'
+                result += showText
             else:
-                result += text + '</a>'
+                result += text
+            result += '</a>'
 
         return result
 
@@ -1136,14 +1217,28 @@ class Utils:
 
     def suportFrame(self, url, sec):
         output = ''
-	try:
-	    output = subprocess.check_output("curl --max-time " + str(sec) + " --head " + url, shell=True)
-	    print output
-	except Exception as e:
-	    output = ''
+        try:
+            output = subprocess.check_output("curl --max-time " + str(sec) + " --head " + url, shell=True)
+            print output
+        except Exception as e:
+            output = ''
         if output != '' and output.find('X-Frame-Options:') < 0:
-	    return True
+            return True
         return False
+
+    def websiteNotWorking(self, url, sec):
+        output = ''
+        try:
+            cmd = "curl --max-time " + str(sec) + " --head " + url
+            print cmd
+            output = subprocess.check_output(cmd, shell=True)
+            print output
+        except Exception as e:
+            output = ''
+        if output.find('200 OK') == -1:
+            return True
+        return False
+
 
     def clearHtmlTag(self, htmlstr):
         re_cdata=re.compile('//<!\[CDATA\[[^>]*//\]\]>',re.I)

@@ -155,11 +155,23 @@ def handleExec():
         chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
         if os.path.exists(chrome):
             cmd = chrome.replace(' ', '\ ') + ' "' + fileName + '"'
+        print cmd
         output = subprocess.check_output(cmd, shell=True)
-
+    elif command == 'edit':
+        cmd = 'open "' + fileName + '"'
+        sublime = '/Applications/Sublime Text.app/Contents/MacOS/Sublime Text'
+        if os.path.exists(sublime):
+            cmd = sublime.replace(' ', '\ ') + ' "' + fileName.strip() + '"'
+        print cmd
+        output = subprocess.check_output(cmd, shell=True)
     return output
 
-
+@app.route('/queryUrl', methods=['POST'])
+def handleQueryUrl():
+    urls = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
+    result = ' '.join(urls)
+    print 'handleQueryUrl: ' + result
+    return result
 
 @app.route('/userlog', methods=['POST'])
 def handleUserLog():
@@ -174,6 +186,7 @@ def handleUserLog():
         library = library[library.find('db/') :]
     print '     library: ' + library
     print '     rid: ' + request.form['rid']
+    print '     resourceType: ' + request.form['resourceType']
     print '     user: ' + request.form['user']
     return ''
 

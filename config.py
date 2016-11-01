@@ -8,9 +8,16 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
-    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky'],\
-                           'university' : 'glucky'}
+    # enable urlFromServer  enhancedLink(..., urlFromServer=True)
+    # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'google' #'glucky'
+    smart_engin_for_tag = {'instructors' : ['youtube', 'glucky'],\
+                           'university' : 'youtube',\
+                           'professor' : ['phdtree', 'glucky'],\
+                           'g-plus' : 'plus.google'}
+                           #'topic' : ''}
+    smart_engin_for_extension = {'reference' : 'udacity'}
+
     smart_link_max_text_len = 60
     smart_link_br_len = 80
     replace_with_smart_link = False
@@ -32,7 +39,9 @@ class Config():
     #default_library = 'cognitive-library'
     #default_library = 'neuro-library'
     #default_library = 'gene-library'
-    #default_library = 'math-phys-chem-library'
+    #default_library = 'math-library'
+    #default_library = 'phys-library'
+    #default_library = 'chem-library'
     #default_library = 'business-finance-library'
     #default_library = 'medical-library'
     #default_library = 'energy-library'
@@ -134,17 +143,27 @@ class Config():
     delete_forward = True
 
     # ==== extension ====
+    output_data_to_new_tab_path = 'db/other/'
     # reference
     reference_filter = ''
     reference_contain = ''
     reference_igon_case = True
+    reference_hiden_engin_section = True
+    reference_output_data_to_new_tab = False
+    reference_output_data_format = ''
 
     # bookmark
     bookmark_enable_cloud_bookmark = False
     bookmark_file_path = "/Users/zd/Downloads/chrome_bookmarks.json"
+    bookmark_hiden_engin_section = True
+    bookmark_output_data_to_new_tab = False
+    bookmark_output_data_format = ''
 
     #filefinder
-    filefinder_dirs = ['~/Downloads']
+    filefinder_dirs = ['~/Downloads', 'db']
+
+    #content
+    content_hiden_engin_section = True
 
     # convert
     ''' default config
@@ -161,6 +180,9 @@ class Config():
     convert_contain = ""
     convert_start = 0
     convert_split_column_number = 0
+    convert_hiden_engin_section = True
+    convert_output_data_to_new_tab = False
+    convert_output_data_format = ''
     '''
     #'''
     convert_url_args = '' #'?start=' #'?start=0&tag='
@@ -168,11 +190,14 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'a' #"div#title"  # tag#class or tag
+    convert_tag = 'h1' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
     convert_contain = ""
-    convert_start = 6
+    convert_start = 0
     convert_split_column_number = 0
+    convert_hiden_engin_section = False
+    convert_output_data_to_new_tab = False
+    convert_output_data_format = ''
     #'''
