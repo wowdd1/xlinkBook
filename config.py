@@ -11,7 +11,7 @@ class Config():
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'google' #'glucky'
-    smart_engin_for_tag = {'instructors' : ['youtube', 'glucky'],\
+    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky'],\
                            'university' : 'youtube',\
                            'professor' : ['phdtree', 'glucky'],\
                            'g-plus' : 'plus.google'}
@@ -158,6 +158,7 @@ class Config():
     bookmark_hiden_engin_section = True
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
+    bookmark_page_item_count = 12
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
