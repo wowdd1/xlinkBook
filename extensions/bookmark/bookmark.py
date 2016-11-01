@@ -76,6 +76,7 @@ class Bookmark(BaseExtension):
         count = 0
         pid = ''
         records = []
+        currentPage = form_dict['page']
 
         if self.rounter.has_key(rID):
             pid = self.rounter[rID]
@@ -87,7 +88,9 @@ class Bookmark(BaseExtension):
             if pid == '':
                 if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
                     count += 1
-                    html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                    if count < int(form_dict['page']) * Config.bookmark_page_item_count and count > (int(form_dict['page']) - 1) * Config.bookmark_page_item_count:
+                        currentPage = form_dict['page']
+                        html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
                     url = ''
                     if jobj.has_key('url'):
                         url = jobj['url']
@@ -114,7 +117,51 @@ class Bookmark(BaseExtension):
         if Config.bookmark_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'bookmark', rTitle, Config.bookmark_output_data_format)
         else:
+            total_page = 0;
+            if len(records) < Config.bookmark_page_item_count:
+                total_page = 1
+            elif len(records) % Config.bookmark_page_item_count == 0:
+                total_page = len(records) / Config.bookmark_page_item_count
+            else:
+                total_page = len(records) / Config.bookmark_page_item_count + 1
+            print 'currentPage ' + str(currentPage)
+            if total_page > 1:
+                html += '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
+                for page in range(0, total_page):
+                    print (page + 1)
+                    if ((page + 1) == int(currentPage)):
+                        html += '<font size="5">' + self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1), style="color:#00BFFF;") + '</font> '
+                    else:
+                        html += self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1)) + ' '
+            
+                html += '</div>'
             return html
+
+    def getPageScript(self, form_dict, page):
+        script = 'var postArgs = {};';
+        script += 'postArgs["objID"] = "' + form_dict['objID'] + '";'
+        script += 'postArgs["targetid"] = "' + form_dict['targetid'] + '";'
+        script += 'postArgs["targetDataId"] = "' + form_dict['targetDataId'] + '";'
+        script += 'postArgs["name"] = "' + form_dict['name'] + '";'
+        script += 'postArgs["rID"] = "' + form_dict['rID'] + '";'
+        script += 'postArgs["rTitle"] = "' + form_dict['rTitle'] + '";'
+        script += 'postArgs["url"] = "' + form_dict['url'] + '";'
+        script += 'postArgs["fileName"] = "' + form_dict['fileName'] + '";'
+        script += 'postArgs["check"] = "' + form_dict['check'] + '";'
+        script += 'postArgs["column"] = "' + form_dict['column'] + '";'
+        script += 'postArgs["divID"] = "' + form_dict['divID'] + '";'
+        script += 'postArgs["defaultLinks"] = ' + str(form_dict['defaultLinks']) + ';'
+        script += 'postArgs["user_name"] = "' + form_dict['user_name'] + '";'
+        script += 'postArgs["originFileName"] = "' + form_dict['originFileName'] + '";'
+        script += 'postArgs["selection"] = "' + form_dict['selection'] + '";'
+        script += 'postArgs["screenWidth"] = ' + str(form_dict['screenWidth']) + ';'
+        script += 'postArgs["screenHeight"] = ' + str(form_dict['screenHeight']) + ';'
+
+        script += 'postArgs["page"] = ' + str(page) + ';'
+
+        script += 'requestExtension(postArgs);';
+        return script
+
 
     def match_item(self, jobj, rTitleList):
         if len(rTitleList) == 0:

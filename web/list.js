@@ -190,13 +190,17 @@ function navTopic(obj, divID, parentDivID, countIndex){
     } else {
         postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), url : '', fileName : fileName, 'check' : 'false', column : column};
     }
+    postArgs["objID"] = obj.id;
     postArgs["divID"] = divID + "-" + obj.text;
     postArgs["defaultLinks"] = 2;
     postArgs['user_name'] = user_name;
+    postArgs['targetid'] = targetid;
+    postArgs['targetDataId'] = target_data_id;
     postArgs['originFileName'] = fileName;
     postArgs['selection'] = window.getSelection().toString();
-    postArgs['screenWidth'] = screen.width
-    postArgs['screenHeight'] = screen.height
+    postArgs['screenWidth'] = screen.width;
+    postArgs['screenHeight'] = screen.height;
+    postArgs['page'] = 1;
     if (obj.text == "search" || obj.text == "keyword") {
         var selection = window.getSelection().toString();
         if (selection != '') {
@@ -221,31 +225,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
         console.log('zzz', extensions[i]);
         if (extensions[i] == obj.text) { 
             extension = true;
-            $("#" + target_data_id).html("<br>Loading ...");
-            var loadAnimID = setInterval(function() {
-                i = ++i % 4;
-                $("#" + target_data_id).html("<br>Loading " + Array(i+1).join("."));
-            }, 800);
-            $('#' + target_data_id).load('/extensions', postArgs, function(data){
-                 console.log('return', data);
-                 if (data == "" || (obj.text == "save" && data.indexOf("sucess") != -1)) {
-                     obj.style.display="none";
-                 } else if (data == "refresh"){
-                     window.location.href = window.location.href;
-                 } else if (data.indexOf("http") == 0){
-                     //window.location.href = data;
-                     window.open(data);
-                     userlog(postArgs['rTitle'], data, postArgs['name'], postArgs['fileName'], postArgs['rID'], postArgs['rTitle'], '');
-		     $("#" + target_data_id).html('<br>&nbsp;&nbsp;<a target="_blank" href="' + data + '">target link</a><br>');
-                 } else if (data.substring(0, data.indexOf(' ')) == 'edit') {
-                     
-                     url = data.substring(data.indexOf(' ') + 1)
-                     console.log('execCommand', url);
-                     $.post('/exec', {command : 'edit', text : url, fileName :  url }, function(data){});
-                 }
-                 clearInterval(loadAnimID);
-                 MathJax.Hub.Queue(["Typeset", MathJax.Hub, targetid]);
-             });
+            requestExtension(postArgs);
         }
     }
     if (!extension && postArgs['rID'] != '') {
@@ -258,6 +238,39 @@ function navTopic(obj, divID, parentDivID, countIndex){
             });
         }
     }
+}
+
+function requestExtension(postArgs) {
+    console.log('', 'requestExtension ' + postArgs['targetDataId']);
+    var target_data_id = postArgs['targetDataId'];
+    var obj = document.getElementById(postArgs['objID']);
+    $("#" + target_data_id).html("<br>Loading ...");
+    var i = 0;
+    var loadAnimID = setInterval(function() {
+        i = ++i % 4;
+        $("#" + target_data_id).html("<br>Loading " + Array(i+1).join("."));
+    }, 800);
+
+    $('#' + target_data_id).load('/extensions', postArgs, function(data) {
+        console.log('return', data);
+        if (data == "" || (obj.text == "save" && data.indexOf("sucess") != -1)) {
+            obj.style.display="none";
+        } else if (data == "refresh"){
+            window.location.href = window.location.href;
+        } else if (data.indexOf("http") == 0){
+           //window.location.href = data;
+            window.open(data);
+            userlog(postArgs['rTitle'], data, postArgs['name'], postArgs['fileName'], postArgs['rID'], postArgs['rTitle'], '');
+            $("#" + target_data_id).html('<br>&nbsp;&nbsp;<a target="_blank" href="' + data + '">target link</a><br>');
+        } else if (data.substring(0, data.indexOf(' ')) == 'edit') {
+           
+            url = data.substring(data.indexOf(' ') + 1)
+            console.log('execCommand', url);
+            $.post('/exec', {command : 'edit', text : url, fileName :  url }, function(data){});
+        }
+        clearInterval(loadAnimID);
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub, postArgs['targetid']]);
+    });
 }
 
 function showdiv_2(targetid){

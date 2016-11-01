@@ -986,6 +986,8 @@ def genAccountHtml(tag, record, content):
         url = 'https://groups.google.com/a/%s'
     elif tag == 'medium':
         url = 'https://medium.com/@%s'
+    elif tag == 'goodreads':
+        url = 'http://www.goodreads.com/review/list/%s'
     if url != '':
         return genSmartLinkHtml(tag, record, ',', url, content, urlFromServer=False, accountTag=True)
     else:
@@ -993,7 +995,7 @@ def genAccountHtml(tag, record, content):
 
 
 def isAccountTag(content):
-    return content.strip().startswith('slack:') or content.strip().startswith('gitter:') or content.strip().startswith('twitter:') or content.strip().startswith('github:') or content.strip().startswith('youtube:') or content.strip().startswith('vimeo') or content.strip().startswith('g-group') or content.strip().startswith('medium')
+    return content.strip().startswith('slack:') or content.strip().startswith('gitter:') or content.strip().startswith('twitter:') or content.strip().startswith('github:') or content.strip().startswith('youtube:') or content.strip().startswith('vimeo') or content.strip().startswith('g-group') or content.strip().startswith('medium') or content.strip().startswith('goodreads')
 
 def isSmartLinkTag(content):
     return content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner:') or content.strip().startswith('alias:') or content.strip().startswith('professor:') or content.strip().startswith('conference:') or content.strip().startswith('cto:') or content.strip().startswith('company:') or content.strip().startswith('g-plus')
@@ -1034,7 +1036,12 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
 
 def getShowText(accountTag, text, tag):
     if accountTag:
-        return '<font style="color:#999966 ; font-size: 9pt;">@' + text + '</font>'
+        prefix = '@'
+        if tag == 'goodreads':
+            text = text[text.find('-') + 1 :]
+        if tag == 'slack':
+            prefix = '#'
+        return '<font style="color:#999966 ; font-size: 9pt;">' + prefix + text + '</font>'
     elif tag == 'alias':
         return '<font style="font-size: 10pt;">' + text + '</font>'
     return text
