@@ -1,26 +1,57 @@
 github-fundingcircle-ring-gatekeeper | ring-gatekeeper | https://github.com/FundingCircle/ring-gatekeeper | author:fundingcircle description:Authentication middleware in clojure
 github-fundingcircle-dotatom | dotatom | https://github.com/FundingCircle/dotatom | author:fundingcircle description:Config for the Atom text editor
 github-fundingcircle-kafka-compose | kafka-compose | https://github.com/FundingCircle/kafka-compose | author:fundingcircle description:Docker compose setup for running a Kafka cluster locally.
-github-fundingcircle-sass-common | sass-common | https://github.com/FundingCircle/sass-common | author:fundingcircle description:Common Sass mixins and files
 github-fundingcircle-shipment_tracker | shipment_tracker | https://github.com/FundingCircle/shipment_tracker | author:fundingcircle description:Tracks shipment of software versions for Financial Conduct Authority auditing purposes
+github-fundingcircle-sass-common | sass-common | https://github.com/FundingCircle/sass-common | author:fundingcircle description:Common Sass mixins and files
 github-fundingcircle-ring-request-proxy | ring-request-proxy | https://github.com/FundingCircle/ring-request-proxy | author:fundingcircle description:Ring middleware to proxy requests
 github-fundingcircle-factory-time | factory-time | https://github.com/FundingCircle/factory-time | author:fundingcircle description:A Clojure library inspired by factory_girl
-github-fundingcircle-fluent-plugin-graylog | fluent-plugin-graylog | https://github.com/FundingCircle/fluent-plugin-graylog | author:fundingcircle description:GrayLog output plugin for Fluentd
 github-fundingcircle-dotvim | dotvim | https://github.com/FundingCircle/dotvim | author:fundingcircle description:Vim configuration setup
-github-fundingcircle-clj-loga | clj-loga | https://github.com/FundingCircle/clj-loga | author:fundingcircle description:Custom log formatting
+github-fundingcircle-fluent-plugin-graylog | fluent-plugin-graylog | https://github.com/FundingCircle/fluent-plugin-graylog | author:fundingcircle description:GrayLog output plugin for Fluentd
 github-fundingcircle-ring-venturi | ring-venturi | https://github.com/FundingCircle/ring-venturi | author:fundingcircle description:Ring middleware to rate-limit requests
+github-fundingcircle-clj-loga | clj-loga | https://github.com/FundingCircle/clj-loga | author:fundingcircle description:Custom log formatting
+github-fundingcircle-gem-versioner | gem-versioner | https://github.com/FundingCircle/gem-versioner | author:fundingcircle description:Gem plugin for specifying pre-release versions when building gems
 github-fundingcircle-riemann-cassandra | riemann-cassandra | https://github.com/FundingCircle/riemann-cassandra | author:fundingcircle description:Tool for sending Cassandra metrics to Riemann
-github-fundingcircle-gem-versioner | gem-versioner | https://github.com/FundingCircle/gem-versioner | author:fundingcircle description:Updated Sep 20, 2016
-github-fundingcircle-krump | krump | https://github.com/FundingCircle/krump | author:fundingcircle description:A kafka consumer focused on convenience
-github-fundingcircle-sshkit-backends-netssh_global | sshkit-backends-netssh_global | https://github.com/FundingCircle/sshkit-backends-netssh_global | author:fundingcircle description:Configure options for Capistrano 3 and SSHKit globally.
 github-fundingcircle-ragtime-cli-tools | ragtime-cli-tools | https://github.com/FundingCircle/ragtime-cli-tools | author:fundingcircle description:Lets you run ragtime migrations from an uberjar
 github-fundingcircle-do-make-rethink | do-make-rethink | https://github.com/FundingCircle/do-make-rethink | author:fundingcircle description:A Clojure library for making RethinkDB databases.
+github-fundingcircle-devise | devise | https://github.com/FundingCircle/devise | author:fundingcircle description:Flexible authentication solution for Rails with Warden.
+github-fundingcircle-krump | krump | https://github.com/FundingCircle/krump | author:fundingcircle description:A kafka consumer focused on convenience
+github-fundingcircle-inherited_resources | inherited_resources | https://github.com/FundingCircle/inherited_resources | author:fundingcircle description:Inherited Resources speeds up development by making your controllers inherit all restful actions so you just have to focus on what is important.
+github-fundingcircle-ruby-postcodeanywhere | ruby-postcodeanywhere | https://github.com/FundingCircle/ruby-postcodeanywhere | author:fundingcircle description:TODO: one-line summary of your gem
+github-fundingcircle-sshkit-backends-netssh_global | sshkit-backends-netssh_global | https://github.com/FundingCircle/sshkit-backends-netssh_global | author:fundingcircle description:Configure options for Capistrano 3 and SSHKit globally.
 github-fundingcircle-hellgrid | hellgrid | https://github.com/FundingCircle/hellgrid | author:fundingcircle description:Track Ruby gem dependencies across projects.
-github-fundingcircle-memoria | memoria | https://github.com/FundingCircle/memoria | author:fundingcircle description:A central location to store, search and share knowledge cards.
-github-fundingcircle-supervisor_nag | supervisor_nag | https://github.com/FundingCircle/supervisor_nag | author:fundingcircle description:Check the status of supervisor jobs
-github-fundingcircle-git-info | git-info | https://github.com/FundingCircle/git-info | author:fundingcircle description:Extract Git info from working directory
-github-fundingcircle-capistrano-ext-superusers | capistrano-ext-superusers | https://github.com/FundingCircle/capistrano-ext-superusers | author:fundingcircle description:Capistrano plugin to run commands as a specific user
+github-fundingcircle-bifrost | bifrost | https://github.com/FundingCircle/bifrost | author:fundingcircle description:Safely archive data from Apache Kafka to S3 with no Hadoop dependencies :)
+github-fundingcircle-oauth2-provider | oauth2-provider | https://github.com/FundingCircle/oauth2-provider | author:fundingcircle description:Easy tools for adding OAuth2 to Ruby web apps
+github-fundingcircle-chef-collectd | chef-collectd | https://github.com/FundingCircle/chef-collectd | author:fundingcircle description:A Chef cookbook to install collectd.
+github-fundingcircle-database | database | https://github.com/FundingCircle/database | author:fundingcircle description:Development repository for Opscode Cookbook database
+github-fundingcircle-yu | yu | https://github.com/FundingCircle/yu | author:fundingcircle description:A container framework based on docker-compose
+github-fundingcircle-riemann-clojure-client | riemann-clojure-client | https://github.com/FundingCircle/riemann-clojure-client | author:fundingcircle description:A Clojure client for the Riemann monitoring system.
+github-fundingcircle-chef-docker | chef-docker | https://github.com/FundingCircle/chef-docker | author:fundingcircle description:Chef Cookbook for Docker
+github-fundingcircle-alpine-pkg-R | alpine-pkg-R | https://github.com/FundingCircle/alpine-pkg-R | author:fundingcircle description:R packaged for Alpine Linux
 github-fundingcircle-brewfiles | brewfiles | https://github.com/FundingCircle/brewfiles | author:fundingcircle description:Helpers for the perfect Brew
-github-fundingcircle-homebrew-mortuary | homebrew-mortuary | https://github.com/FundingCircle/homebrew-mortuary | author:fundingcircle description:Homebrew formulae for deprecated and deleted software versions
+github-fundingcircle-docker-images | docker-images | https://github.com/FundingCircle/docker-images | author:fundingcircle description:Dockerfiles for Confluent Stream Data Platform
+github-fundingcircle-haproxy | haproxy | https://github.com/FundingCircle/haproxy | author:fundingcircle description:Development repository for Opscode Cookbook haproxy
+github-fundingcircle-capybara | capybara | https://github.com/FundingCircle/capybara | author:fundingcircle description:Acceptance test framework for web applications
+github-fundingcircle-virsandra | virsandra | https://github.com/FundingCircle/virsandra | author:fundingcircle description:The cassandra-backed virtus model gem with a stupid name
+github-fundingcircle-cql-rb | cql-rb | https://github.com/FundingCircle/cql-rb | author:fundingcircle description:Cassandra CQL 3 binary protocol driver for Ruby
+github-fundingcircle-Rools | Rools | https://github.com/FundingCircle/Rools | author:fundingcircle description:Rools is a rules engine for abstracting business logic and program-flow. It‘s ideally suited to processing applications where the business logic undergoes frequent modification
+github-fundingcircle-secor | secor | https://github.com/FundingCircle/secor | author:fundingcircle description:Secor is a service implementing Kafka log persistence
+github-fundingcircle-supervisor | supervisor | https://github.com/FundingCircle/supervisor | author:fundingcircle description:Development repository for Opscode Cookbook supervisor
+github-fundingcircle-sprout-wrap | sprout-wrap | https://github.com/FundingCircle/sprout-wrap | author:fundingcircle description:Pivotal Labs uses this project with sprout, soloist and librarian-chef to build developer workstations
+github-fundingcircle-supervisor_nag | supervisor_nag | https://github.com/FundingCircle/supervisor_nag | author:fundingcircle description:Check the status of supervisor jobs
+github-fundingcircle-boxen-web | boxen-web | https://github.com/FundingCircle/boxen-web | author:fundingcircle description:Automate your team's Boxen installations.
+github-fundingcircle-fourth-wall | fourth-wall | https://github.com/FundingCircle/fourth-wall | author:fundingcircle description:Pull request and build status monitor
+github-fundingcircle-memoria | memoria | https://github.com/FundingCircle/memoria | author:fundingcircle description:A central location to store, search and share knowledge cards.
+github-fundingcircle-Burrow | Burrow | https://github.com/FundingCircle/Burrow | author:fundingcircle description:Kafka Consumer Lag Checking
+github-fundingcircle-git-info | git-info | https://github.com/FundingCircle/git-info | author:fundingcircle description:Extract Git info from working directory
+github-fundingcircle-parallel_tests | parallel_tests | https://github.com/FundingCircle/parallel_tests | author:fundingcircle description:Rails: 2 CPUs = 2x Testing Speed for RSpec, Test::Unit and Cucumber
+github-fundingcircle-sequel-redshift | sequel-redshift | https://github.com/FundingCircle/sequel-redshift | author:fundingcircle description:Sequel AWS::Redshift adapter
+github-fundingcircle-accounting.js | accounting.js | https://github.com/FundingCircle/accounting.js | author:fundingcircle description:A lightweight JavaScript library for number, money and currency formatting - fully localisable, zero dependencies.
+github-fundingcircle-postgresql | postgresql | https://github.com/FundingCircle/postgresql | author:fundingcircle description:Development repository for Opscode Cookbook postgresql
+github-fundingcircle-java | java | https://github.com/FundingCircle/java | author:fundingcircle description:Chef Java Cookbook
+github-fundingcircle-fc-swap | fc-swap | https://github.com/FundingCircle/fc-swap | author:fundingcircle description:Chef cookbook for creating swap
+github-fundingcircle-capistrano-ext-superusers | capistrano-ext-superusers | https://github.com/FundingCircle/capistrano-ext-superusers | author:fundingcircle description:Capistrano plugin to run commands as a specific user
+github-fundingcircle-resque_workers_nagios | resque_workers_nagios | https://github.com/FundingCircle/resque_workers_nagios | author:fundingcircle description:Nagios NRPE stuff for resque workers/ queues
+github-fundingcircle-avro | avro | https://github.com/FundingCircle/avro | author:fundingcircle description:Mirror of Apache Avro
 github-fundingcircle-pgbinder | pgbinder | https://github.com/FundingCircle/pgbinder | author:fundingcircle description:PostgreSQL version manager, using Docker.
 github-fundingcircle-ruby-style-guide | ruby-style-guide | https://github.com/FundingCircle/ruby-style-guide | author:fundingcircle description:A style guide for Ruby
+github-fundingcircle-homebrew-mortuary | homebrew-mortuary | https://github.com/FundingCircle/homebrew-mortuary | author:fundingcircle description:Homebrew formulae for deprecated and deleted software versions

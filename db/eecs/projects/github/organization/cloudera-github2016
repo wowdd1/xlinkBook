@@ -13,81 +13,127 @@ github-cloudera-ml | ml | https://github.com/cloudera/ml | author:cloudera descr
 github-cloudera-cdk | cdk | https://github.com/cloudera/cdk | author:cloudera description:Cloudera Development Kit
 github-cloudera-sqoop | sqoop | https://github.com/cloudera/sqoop | author:cloudera description:Sqoop has moved to Apache!
 github-cloudera-RecordBreaker | RecordBreaker | https://github.com/cloudera/RecordBreaker | author:cloudera description:Record Breaker
-github-cloudera-htrace | htrace | https://github.com/cloudera/htrace | author:cloudera description:Updated Apr 14, 2016
+github-cloudera-htrace | htrace | https://github.com/cloudera/htrace | author:cloudera 
 github-cloudera-gertrude | gertrude | https://github.com/cloudera/gertrude | author:cloudera description:A Multilayer and Multivariate Experiment Framework for the JVM
-github-cloudera-kitten | kitten | https://github.com/cloudera/kitten | author:cloudera description:The fast and fun way to write YARN applications.
 github-cloudera-cm_api | cm_api | https://github.com/cloudera/cm_api | author:cloudera description:Cloudera Manager API Client
+github-cloudera-kitten | kitten | https://github.com/cloudera/kitten | author:cloudera description:The fast and fun way to write YARN applications.
 github-cloudera-hoop | hoop | https://github.com/cloudera/hoop | author:cloudera description:Hoop, Hadoop HDFS over HTTP
 github-cloudera-cloudera-training | cloudera-training | https://github.com/cloudera/cloudera-training | author:cloudera description:Training exercises for Cloudera's Distribution for Hadoop
-github-cloudera-python-ngrams | python-ngrams | https://github.com/cloudera/python-ngrams | author:cloudera description:Updated Jun 18, 2013
-github-cloudera-search | search | https://github.com/cloudera/search | author:cloudera description:Updated Oct 20, 2016
+github-cloudera-python-ngrams | python-ngrams | https://github.com/cloudera/python-ngrams | author:cloudera 
 github-cloudera-impala-tpcds-kit | impala-tpcds-kit | https://github.com/cloudera/impala-tpcds-kit | author:cloudera description:TPC-DS Kit for Impala
+github-cloudera-search | search | https://github.com/cloudera/search | author:cloudera 
 github-cloudera-cdk-examples | cdk-examples | https://github.com/cloudera/cdk-examples | author:cloudera description:Cloudera Development Kit Examples
 github-cloudera-cm_ext | cm_ext | https://github.com/cloudera/cm_ext | author:cloudera description:Cloudera Manager Extensibility Tools and Documentation.
-github-cloudera-bigtop | bigtop | https://github.com/cloudera/bigtop | author:cloudera description:Bigtop is a project for the development of packaging and tests of the Apache Hadoop ecosystem. The primary goal of Bigtop is to build a community around the packaging and interoperability testing of Hadoop-related projects. This includes testing at various levels (packaging, platform, runtime, upgrade, etc...) developed by a community with a foc…
+github-cloudera-hadoop-common | hadoop-common | https://github.com/cloudera/hadoop-common | author:cloudera description:Mirror of Apache Hadoop common
 github-cloudera-ibis-notebooks | ibis-notebooks | https://github.com/cloudera/ibis-notebooks | author:cloudera description:IPython notebooks and learning materials for Ibis
-github-cloudera-hdfs-nfs-proxy | hdfs-nfs-proxy | https://github.com/cloudera/hdfs-nfs-proxy | author:cloudera description:Updated Jan 7, 2013
-github-cloudera-ades | ades | https://github.com/cloudera/ades | author:cloudera description:An analysis of adverse drug event data using Hadoop, R, and Gephi
-github-cloudera-flume-ng | flume-ng | https://github.com/cloudera/flume-ng | author:cloudera description:Updated Oct 20, 2016
+github-cloudera-bigtop | bigtop | https://github.com/cloudera/bigtop | author:cloudera description:Bigtop is a project for the development of packaging and tests of the Apache Hadoop ecosystem. The primary goal of Bigtop is to build a community around the packaging and interoperability testing of Hadoop-related projects. This includes testing at various levels (packaging, platform, runtime, upgrade, etc...) developed by a community with a foc…
+github-cloudera-hdfs-nfs-proxy | hdfs-nfs-proxy | https://github.com/cloudera/hdfs-nfs-proxy | author:cloudera 
 github-cloudera-parquet-examples | parquet-examples | https://github.com/cloudera/parquet-examples | author:cloudera description:Example programs and scripts for accessing parquet files
-github-cloudera-mapreduce-tutorial | mapreduce-tutorial | https://github.com/cloudera/mapreduce-tutorial | author:cloudera description:Updated Feb 13, 2014
+github-cloudera-flume-ng | flume-ng | https://github.com/cloudera/flume-ng | author:cloudera 
+github-cloudera-ades | ades | https://github.com/cloudera/ades | author:cloudera description:An analysis of adverse drug event data using Hadoop, R, and Gephi
+github-cloudera-hive | hive | https://github.com/cloudera/hive | author:cloudera description:Mirror of Apache Hive
+github-cloudera-spark | spark | https://github.com/cloudera/spark | author:cloudera description:Mirror of Apache Spark
+github-cloudera-mapreduce-tutorial | mapreduce-tutorial | https://github.com/cloudera/mapreduce-tutorial | author:cloudera 
 github-cloudera-alfredo | alfredo | https://github.com/cloudera/alfredo | author:cloudera description:Alfredo, Java HTTP SPNEGO
-github-cloudera-mahout | mahout | https://github.com/cloudera/mahout | author:cloudera description:Updated Oct 20, 2016
+github-cloudera-mahout | mahout | https://github.com/cloudera/mahout | author:cloudera 
+github-cloudera-madlibport | madlibport | https://github.com/cloudera/madlibport | author:cloudera description:Madlib port for Cloudera Impala
+github-cloudera-whirr-cm | whirr-cm | https://github.com/cloudera/whirr-cm | author:cloudera 
 github-cloudera-seismichadoop | seismichadoop | https://github.com/cloudera/seismichadoop | author:cloudera description:System for performing seismic data processing on a Hadoop cluster.
 github-cloudera-impala-udf-samples | impala-udf-samples | https://github.com/cloudera/impala-udf-samples | author:cloudera description:Sample UDF and UDAs for Impala.
+github-cloudera-crepo | crepo | https://github.com/cloudera/crepo | author:cloudera description:cloudera repo management tool
 github-cloudera-sentry | sentry | https://github.com/cloudera/sentry | author:cloudera description:Access Server
-github-cloudera-cdh-package | cdh-package | https://github.com/cloudera/cdh-package | author:cloudera description:Updated Oct 20, 2016
 github-cloudera-kudu-examples | kudu-examples | https://github.com/cloudera/kudu-examples | author:cloudera description:Example code for Kudu
+github-cloudera-cdh-package | cdh-package | https://github.com/cloudera/cdh-package | author:cloudera 
+github-cloudera-hs2client | hs2client | https://github.com/cloudera/hs2client | author:cloudera description:C++ native client for Impala and Hive, with Python / pandas bindings
+github-cloudera-hbase | hbase | https://github.com/cloudera/hbase | author:cloudera description:Mirror of Apache Hadoop HBase
 github-cloudera-emailarchive | emailarchive | https://github.com/cloudera/emailarchive | author:cloudera description:Hadoop for archiving email
 github-cloudera-llama | llama | https://github.com/cloudera/llama | author:cloudera description:Llama - Low Latency Application MAster
-github-cloudera-hs2client | hs2client | https://github.com/cloudera/hs2client | author:cloudera description:C++ native client for Impala and Hive, with Python / pandas bindings
+github-cloudera-hadoop-lzo | hadoop-lzo | https://github.com/cloudera/hadoop-lzo | author:cloudera description:Patched, refactored version of code.google.com/hadoop-gpl-compression for hadoop 0.20
+github-cloudera-cm_csds | cm_csds | https://github.com/cloudera/cm_csds | author:cloudera description:A collection of Custom Service Descriptors
+github-cloudera-hadoop-mapreduce | hadoop-mapreduce | https://github.com/cloudera/hadoop-mapreduce | author:cloudera description:Mirror of Apache Hadoop MapReduce
 github-cloudera-director-scripts | director-scripts | https://github.com/cloudera/director-scripts | author:cloudera description:Cloudera Director sample code
 github-cloudera-httpfs | httpfs | https://github.com/cloudera/httpfs | author:cloudera description:Apache Hadoop HttpFS for cdh3
-github-cloudera-cm_csds | cm_csds | https://github.com/cloudera/cm_csds | author:cloudera description:A collection of Custom Service Descriptors
-github-cloudera-clusterdock | clusterdock | https://github.com/cloudera/clusterdock | author:cloudera description:Updated Sep 28, 2016
+github-cloudera-clusterdock | clusterdock | https://github.com/cloudera/clusterdock | author:cloudera 
+github-cloudera-zookeeper | zookeeper | https://github.com/cloudera/zookeeper | author:cloudera description:Mirror of Apache Hadoop ZooKeeper
 github-cloudera-recordservice | recordservice | https://github.com/cloudera/recordservice | author:cloudera description:RecordService Server
-github-cloudera-dist_test | dist_test | https://github.com/cloudera/dist_test | author:cloudera description:Updated Oct 15, 2016
+github-cloudera-haatkit | haatkit | https://github.com/cloudera/haatkit | author:cloudera description:Toolkit of simple scripts useful for managing Hadoop
+github-cloudera-dist_test | dist_test | https://github.com/cloudera/dist_test | author:cloudera 
+github-cloudera-hadoop-hdfs | hadoop-hdfs | https://github.com/cloudera/hadoop-hdfs | author:cloudera description:Mirror of Apache Hadoop HDFS
 github-cloudera-impala-kudu | impala-kudu | https://github.com/cloudera/impala-kudu | author:cloudera description:Impala fork with Kudu integration
 github-cloudera-matching | matching | https://github.com/cloudera/matching | author:cloudera description:A distributed weighted matching algorithm implemented on top of Apache Giraph
 github-cloudera-director-sdk | director-sdk | https://github.com/cloudera/director-sdk | author:cloudera description:Cloudera Director API clients
+github-cloudera-oozie | oozie | https://github.com/cloudera/oozie | author:cloudera description:Oozie - workflow engine for Hadoop
 github-cloudera-quince | quince | https://github.com/cloudera/quince | author:cloudera description:Scalable genomics variant store and analytics
-github-cloudera-puppet-scm | puppet-scm | https://github.com/cloudera/puppet-scm | author:cloudera description:Updated Nov 19, 2011
+github-cloudera-puppet-scm | puppet-scm | https://github.com/cloudera/puppet-scm | author:cloudera 
 github-cloudera-cm_charting_scrapbook | cm_charting_scrapbook | https://github.com/cloudera/cm_charting_scrapbook | author:cloudera description:A collection of useful Cloudera Manager charts
-github-cloudera-navigator-sdk | navigator-sdk | https://github.com/cloudera/navigator-sdk | author:cloudera description:Navigator SDK
+github-cloudera-pig | pig | https://github.com/cloudera/pig | author:cloudera description:Mirror of Apache Pig
 github-cloudera-RecordServiceClient | RecordServiceClient | https://github.com/cloudera/RecordServiceClient | author:cloudera description:RecordService client
-github-cloudera-lucene-solr | lucene-solr | https://github.com/cloudera/lucene-solr | author:cloudera description:Updated Oct 20, 2016
-github-cloudera-earthquake | earthquake | https://github.com/cloudera/earthquake | author:cloudera description:Updated Oct 17, 2015
-github-cloudera-poisson_sampling | poisson_sampling | https://github.com/cloudera/poisson_sampling | author:cloudera description:Updated May 3, 2013
+github-cloudera-lucene-solr | lucene-solr | https://github.com/cloudera/lucene-solr | author:cloudera 
+github-cloudera-navigator-sdk | navigator-sdk | https://github.com/cloudera/navigator-sdk | author:cloudera description:Navigator SDK
+github-cloudera-earthquake | earthquake | https://github.com/cloudera/earthquake | author:cloudera 
+github-cloudera-piglatin-mode | piglatin-mode | https://github.com/cloudera/piglatin-mode | author:cloudera description:PigLatin mode for Emacs.
 github-cloudera-branchreduce | branchreduce | https://github.com/cloudera/branchreduce | author:cloudera description:Distributed branch-and-bound on Hadoop YARN.
+github-cloudera-poisson_sampling | poisson_sampling | https://github.com/cloudera/poisson_sampling | author:cloudera 
+github-cloudera-art-widgets | art-widgets | https://github.com/cloudera/art-widgets | author:cloudera 
+github-cloudera-hbase-indexer | hbase-indexer | https://github.com/cloudera/hbase-indexer | author:cloudera description:Lily HBase Indexer - indexing HBase, one row at a time
+github-cloudera-sqoop2 | sqoop2 | https://github.com/cloudera/sqoop2 | author:cloudera 
 github-cloudera-director-google-plugin | director-google-plugin | https://github.com/cloudera/director-google-plugin | author:cloudera description:Cloudera Director - Google Cloud Platform integration
 github-cloudera-stitch | stitch | https://github.com/cloudera/stitch | author:cloudera description:A higher-order target definition and build system
-github-cloudera-sqoop2 | sqoop2 | https://github.com/cloudera/sqoop2 | author:cloudera description:Updated Oct 20, 2016
-github-cloudera-kafka | kafka | https://github.com/cloudera/kafka | author:cloudera description:Updated Aug 9, 2016
-github-cloudera-native-toolchain | native-toolchain | https://github.com/cloudera/native-toolchain | author:cloudera description:Updated Sep 15, 2016
-github-cloudera-strata-tutorial-2016-nyc | strata-tutorial-2016-nyc | https://github.com/cloudera/strata-tutorial-2016-nyc | author:cloudera description:Updated Sep 27, 2016
+github-cloudera-whirr | whirr | https://github.com/cloudera/whirr | author:cloudera description:Mirror of Apache Whirr
+github-cloudera-kafka | kafka | https://github.com/cloudera/kafka | author:cloudera 
+github-cloudera-strata-tutorial-2016-nyc | strata-tutorial-2016-nyc | https://github.com/cloudera/strata-tutorial-2016-nyc | author:cloudera 
+github-cloudera-parquet-mr | parquet-mr | https://github.com/cloudera/parquet-mr | author:cloudera description:Java readers/writers for Parquet columnar file formats to use with Map-Reduce
 github-cloudera-director-aws-plugin | director-aws-plugin | https://github.com/cloudera/director-aws-plugin | author:cloudera description:Cloudera Director - Amazon Web Services integration
-github-cloudera-recordservice-quickstart | recordservice-quickstart | https://github.com/cloudera/recordservice-quickstart | author:cloudera description:Record Service VM and Examples
-github-cloudera-datafu | datafu | https://github.com/cloudera/datafu | author:cloudera description:Updated Oct 20, 2016
-github-cloudera-oryx-flume | oryx-flume | https://github.com/cloudera/oryx-flume | author:cloudera description:Updated Jan 10, 2014
+github-cloudera-oryx-flume | oryx-flume | https://github.com/cloudera/oryx-flume | author:cloudera 
+github-cloudera-avro | avro | https://github.com/cloudera/avro | author:cloudera description:Mirror of Apache Avro
+github-cloudera-cdh-maven-archetype | cdh-maven-archetype | https://github.com/cloudera/cdh-maven-archetype | author:cloudera description:Cloudera Maven Archetypes
+github-cloudera-native-toolchain | native-toolchain | https://github.com/cloudera/native-toolchain | author:cloudera 
+github-cloudera-sshj | sshj | https://github.com/cloudera/sshj | author:cloudera description:ssh, scp and sftp for java
 github-cloudera-github-jira-gateway | github-jira-gateway | https://github.com/cloudera/github-jira-gateway | author:cloudera description:A Grails app to serve as a gateway between an internal GitHub Enterprise server and an external JIRA server
-github-cloudera-repository-example | repository-example | https://github.com/cloudera/repository-example | author:cloudera description:Examples of how to use ...
-github-cloudera-python-sasl | python-sasl | https://github.com/cloudera/python-sasl | author:cloudera description:Python wrapper for Cyrus SASL
+github-cloudera-datafu | datafu | https://github.com/cloudera/datafu | author:cloudera 
+github-cloudera-recordservice-quickstart | recordservice-quickstart | https://github.com/cloudera/recordservice-quickstart | author:cloudera description:Record Service VM and Examples
+github-cloudera-haivvreo | haivvreo | https://github.com/cloudera/haivvreo | author:cloudera description:Hive + Avro. Serde for working with Avro in Hive
 github-cloudera-director-spi | director-spi | https://github.com/cloudera/director-spi | author:cloudera description:Cloudera Director Service Provider Interface
-github-cloudera-Impala-docker-hub | Impala-docker-hub | https://github.com/cloudera/Impala-docker-hub | author:cloudera description:Updated Apr 11, 2016
-github-cloudera-blog-eclipse | blog-eclipse | https://github.com/cloudera/blog-eclipse | author:cloudera description:Updated Apr 19, 2013
-github-cloudera-impala-lzo | impala-lzo | https://github.com/cloudera/impala-lzo | author:cloudera description:Updated Oct 15, 2016
-github-cloudera-logredactor | logredactor | https://github.com/cloudera/logredactor | author:cloudera description:Updated Jun 2, 2015
+github-cloudera-python-sasl | python-sasl | https://github.com/cloudera/python-sasl | author:cloudera description:Python wrapper for Cyrus SASL
+github-cloudera-repository-example | repository-example | https://github.com/cloudera/repository-example | author:cloudera description:Examples of how to use ...
+github-cloudera-puppet-apt | puppet-apt | https://github.com/cloudera/puppet-apt | author:cloudera description:Puppet module to help manage Apt
+github-cloudera-parquet-format | parquet-format | https://github.com/cloudera/parquet-format | author:cloudera description:Columnar file format for hadoop
+github-cloudera-mootools-more | mootools-more | https://github.com/cloudera/mootools-more | author:cloudera description:MooTools Plugins and Enhancements Repository
+github-cloudera-Impala-docker-hub | Impala-docker-hub | https://github.com/cloudera/Impala-docker-hub | author:cloudera 
+github-cloudera-blog-eclipse | blog-eclipse | https://github.com/cloudera/blog-eclipse | author:cloudera 
+github-cloudera-hadoop-meta | hadoop-meta | https://github.com/cloudera/hadoop-meta | author:cloudera description:Metarepository for checking out all of the hadoop subprojects
+github-cloudera-mootools-touch | mootools-touch | https://github.com/cloudera/mootools-touch | author:cloudera description:Basic drag class for MooTools 1.2. Supports mobile safari.
+github-cloudera-behavior | behavior | https://github.com/cloudera/behavior | author:cloudera description:Auto-instantiates widgets/classes based on parsed, declarative HTML.
 github-cloudera-hcatalog-examples | hcatalog-examples | https://github.com/cloudera/hcatalog-examples | author:cloudera description:Sample code for reading and writing tables with hcatalog
-github-cloudera-squeasel | squeasel | https://github.com/cloudera/squeasel | author:cloudera description:Updated Apr 28, 2016
-github-cloudera-director-byon-plugin-example | director-byon-plugin-example | https://github.com/cloudera/director-byon-plugin-example | author:cloudera description:BYON (Bring-Your-Own-Nodes) plugin for Cloudera Director
+github-cloudera-logredactor | logredactor | https://github.com/cloudera/logredactor | author:cloudera 
+github-cloudera-director-vsphere-plugin | director-vsphere-plugin | https://github.com/cloudera/director-vsphere-plugin | author:cloudera description:Cloudera Director - VMware vSphere integration (developed by VMware)
+github-cloudera-jetty-hadoop-fix | jetty-hadoop-fix | https://github.com/cloudera/jetty-hadoop-fix | author:cloudera description:A patched Jetty 6.1.26 for use in Hadoop
+github-cloudera-squeasel | squeasel | https://github.com/cloudera/squeasel | author:cloudera 
+github-cloudera-jframe | jframe | https://github.com/cloudera/jframe | author:cloudera description:The JFrame UI components from Hue
+github-cloudera-impala-lzo | impala-lzo | https://github.com/cloudera/impala-lzo | author:cloudera 
 github-cloudera-director-azure-plugin | director-azure-plugin | https://github.com/cloudera/director-azure-plugin | author:cloudera description:Cloudera Director - Microsoft Azure Integration
-github-cloudera-htrace-repo | htrace-repo | https://github.com/cloudera/htrace-repo | author:cloudera description:Updated Aug 1, 2012
+github-cloudera-mootools-core | mootools-core | https://github.com/cloudera/mootools-core | author:cloudera description:MooTools Core Repository
+github-cloudera-slick | slick | https://github.com/cloudera/slick | author:cloudera description:Standalone CSS Selector Parser and Engine. An official MooTools project.
+github-cloudera-mootools-color | mootools-color | https://github.com/cloudera/mootools-color | author:cloudera description:Color class in plain JavaScript
+github-cloudera-FitText | FitText | https://github.com/cloudera/FitText | author:cloudera description:Truncates lines of text to fit within a container
+github-cloudera-art | art | https://github.com/cloudera/art | author:cloudera description:vector drawing for buttons, icons, widgets and all that stuff
+github-cloudera-mootools-table | mootools-table | https://github.com/cloudera/mootools-table | author:cloudera description:object/object data structure
+github-cloudera-mootools-depender | mootools-depender | https://github.com/cloudera/mootools-depender | author:cloudera description:A server side dependency builder for MooTools scirpts
+github-cloudera-mootools-subtle-templates | mootools-subtle-templates | https://github.com/cloudera/mootools-subtle-templates | author:cloudera description:subtleTemplates is a MooTools Plugin which allows you to define a template in html itself and reuse it to populate dynamic data easily.
+github-cloudera-mootools-test-runner | mootools-test-runner | https://github.com/cloudera/mootools-test-runner | author:cloudera description:A wrapper for MooTools projects for running simple html tests.
+github-cloudera-more-behaviors | more-behaviors | https://github.com/cloudera/more-behaviors | author:cloudera description:Behavior Filters for MooTools More
+github-cloudera-clientcide | clientcide | https://github.com/cloudera/clientcide | author:cloudera description:The Clientcide Javascript Libraries
+github-cloudera-hcatalog | hcatalog | https://github.com/cloudera/hcatalog | author:cloudera 
+github-cloudera-cdk-examples-integration-tests | cdk-examples-integration-tests | https://github.com/cloudera/cdk-examples-integration-tests | author:cloudera 
 github-cloudera-ycsb-kudu | ycsb-kudu | https://github.com/cloudera/ycsb-kudu | author:cloudera description:YCSB fork with a Kudu addon
-github-cloudera-hcatalog | hcatalog | https://github.com/cloudera/hcatalog | author:cloudera description:Updated Dec 4, 2014
-github-cloudera-cdk-examples-integration-tests | cdk-examples-integration-tests | https://github.com/cloudera/cdk-examples-integration-tests | author:cloudera description:Updated May 6, 2014
-github-cloudera-collections-generic | collections-generic | https://github.com/cloudera/collections-generic | author:cloudera description:Updated Dec 9, 2015
+github-cloudera-htrace-repo | htrace-repo | https://github.com/cloudera/htrace-repo | author:cloudera 
+github-cloudera-director-byon-plugin-example | director-byon-plugin-example | https://github.com/cloudera/director-byon-plugin-example | author:cloudera description:BYON (Bring-Your-Own-Nodes) plugin for Cloudera Director
 github-cloudera-director-spi-tck | director-spi-tck | https://github.com/cloudera/director-spi-tck | author:cloudera description:Cloudera Director Service Provider Interface Technology Compatibility Kit
 github-cloudera-accumulo-upgrade-test | accumulo-upgrade-test | https://github.com/cloudera/accumulo-upgrade-test | author:cloudera description:Testing for Apache Accumulo upgrades
-github-cloudera-ops-testing | ops-testing | https://github.com/cloudera/ops-testing | author:cloudera description:Updated Jun 30, 2014
-github-cloudera-accumulo | accumulo | https://github.com/cloudera/accumulo | author:cloudera description:CDH specific changes and backports on top of Apache Accumulo
+github-cloudera-pelican-elegant | pelican-elegant | https://github.com/cloudera/pelican-elegant | author:cloudera description:A responsive, minimal, and stylish theme for Pelican
+github-cloudera-sentry-solr-integration | sentry-solr-integration | https://github.com/cloudera/sentry-solr-integration | author:cloudera description:Mirror of Apache Sentry
+github-cloudera-ops-testing | ops-testing | https://github.com/cloudera/ops-testing | author:cloudera 
 github-cloudera-thrift_sasl | thrift_sasl | https://github.com/cloudera/thrift_sasl | author:cloudera description:Thrift SASL module that implements TSaslClientTransport
+github-cloudera-accumulo | accumulo | https://github.com/cloudera/accumulo | author:cloudera description:CDH specific changes and backports on top of Apache Accumulo
+github-cloudera-collections-generic | collections-generic | https://github.com/cloudera/collections-generic | author:cloudera 
+github-cloudera-catapult | catapult | https://github.com/cloudera/catapult | author:cloudera description:Catapult - fork used for embedding in Kudu

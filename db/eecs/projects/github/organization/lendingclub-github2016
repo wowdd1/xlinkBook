@@ -8,5 +8,5 @@ github-lendingclub-macgyver-java-agent | macgyver-java-agent | https://github.co
 github-lendingclub-jmespath4j | jmespath4j | https://github.com/LendingClub/jmespath4j | author:lendingclub description:JMESPath API
 github-lendingclub-tomlson | tomlson | https://github.com/LendingClub/tomlson | author:lendingclub description:Parse TOML via Jackson's Fluent API
 github-lendingclub-log-metrics | log-metrics | https://github.com/LendingClub/log-metrics | author:lendingclub description:generate graphite-compatible metrics from the local logging system
-github-lendingclub-AccessorContext | AccessorContext | https://github.com/LendingClub/AccessorContext | author:lendingclub description:Updated Dec 2, 2015
+github-lendingclub-AccessorContext | AccessorContext | https://github.com/LendingClub/AccessorContext | author:lendingclub 
 github-lendingclub-metric-circus | metric-circus | https://github.com/LendingClub/metric-circus | author:lendingclub description:multi-protocol proxy for bridging graphite, SignalFx and other metrics protocols

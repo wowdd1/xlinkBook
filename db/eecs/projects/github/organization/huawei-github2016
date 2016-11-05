@@ -1,0 +1,15 @@
+github-huawei-dockyard | dockyard | https://github.com/Huawei/dockyard | author:huawei description:Container & Software Repository
+github-huawei-Huawei_LiteOS_Kernel | Huawei_LiteOS_Kernel | https://github.com/Huawei/Huawei_LiteOS_Kernel | author:huawei 
+github-huawei-containerops | containerops | https://github.com/Huawei/containerops | author:huawei 
+github-huawei-eSDK_EC_SDK_Java | eSDK_EC_SDK_Java | https://github.com/Huawei/eSDK_EC_SDK_Java | author:huawei description:eSDK_EC_SDK_Java offers Unified Communication interfaces with REST & Java Native API
+github-huawei-eSDK_eLTE_SDK_Windows | eSDK_eLTE_SDK_Windows | https://github.com/Huawei/eSDK_eLTE_SDK_Windows | author:huawei 
+github-huawei-eSDK_IVS_Java | eSDK_IVS_Java | https://github.com/Huawei/eSDK_IVS_Java | author:huawei description:eSDK_IVS_SDK_Java offers video interfaces with SOAP & Java Native API
+github-huawei-eSDK_TP_SDK_Java | eSDK_TP_SDK_Java | https://github.com/Huawei/eSDK_TP_SDK_Java | author:huawei description:eSDK_TP_SDK_Java offers telepresence interfaces with SOAP & Java Native API
+github-huawei-eSDK_TP_SDK_Windows_CPP | eSDK_TP_SDK_Windows_CPP | https://github.com/Huawei/eSDK_TP_SDK_Windows_CPP | author:huawei description:eSDK_TP Provides telepresence conference management capabilities
+github-huawei-eSDK_EC_API_Windows_C | eSDK_EC_API_Windows_C | https://github.com/Huawei/eSDK_EC_API_Windows_C | author:huawei description:eSDK_UC Provides messaging, calls, and desktop collaboration capabilities
+github-huawei-eSDK_EC_Controller_JS | eSDK_EC_Controller_JS | https://github.com/Huawei/eSDK_EC_Controller_JS | author:huawei description:Through the COM interface of eSpace , Realizeing the Web terminal integration enterprise communication ability of eSpace
+github-huawei-eSDK_HWS_ECS_JS | eSDK_HWS_ECS_JS | https://github.com/Huawei/eSDK_HWS_ECS_JS | author:huawei description:Javascript library for HuaWei ECS API
+github-huawei-eSDK_VCN_API_Windows_CPP | eSDK_VCN_API_Windows_CPP | https://github.com/Huawei/eSDK_VCN_API_Windows_CPP | author:huawei 
+github-huawei-eSDK_CC_SIPINFO_SDK_Android | eSDK_CC_SIPINFO_SDK_Android | https://github.com/Huawei/eSDK_CC_SIPINFO_SDK_Android | author:huawei description:Open-source Huawei CC SDK from eSDK department.By using its interface, you can make anonymousCall then receive and send sipInfo messages.
+github-huawei-eSDK_EC_API_Android | eSDK_EC_API_Android | https://github.com/Huawei/eSDK_EC_API_Android | author:huawei description:eSDK_UC Provides messages, calls, and Conference capabilities for ISV
+github-huawei-eSDK_EC_API_iOS | eSDK_EC_API_iOS | https://github.com/Huawei/eSDK_EC_API_iOS | author:huawei description:eSDK_UC Provides messages, calls, and Conference capabilities for ISV

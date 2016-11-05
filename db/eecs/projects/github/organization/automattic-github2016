@@ -5,10 +5,10 @@ github-automattic-kue | kue | https://github.com/Automattic/kue | author:automat
 github-automattic-node-canvas | node-canvas | https://github.com/Automattic/node-canvas | author:automattic description:Node canvas is a Cairo backed Canvas implementation for NodeJS.
 github-automattic-knox | knox | https://github.com/Automattic/knox | author:automattic description:S3 Lib
 github-automattic-expect.js | expect.js | https://github.com/Automattic/expect.js | author:automattic description:Minimalistic BDD-style assertions for Node.JS and the browser.
-github-automattic-juice | juice | https://github.com/Automattic/juice | author:automattic description:Juice inlines CSS stylesheets into your HTML source.
 github-automattic-simplenote-ios | simplenote-ios | https://github.com/Automattic/simplenote-ios | author:automattic description:Simplenote for iOS
-github-automattic-monk | monk | https://github.com/Automattic/monk | author:automattic description:The wise MongoDB API
+github-automattic-juice | juice | https://github.com/Automattic/juice | author:automattic description:Juice inlines CSS stylesheets into your HTML source.
 github-automattic-cli-table | cli-table | https://github.com/Automattic/cli-table | author:automattic description:Pretty unicode tables for the CLI with Node.JS
+github-automattic-monk | monk | https://github.com/Automattic/monk | author:automattic description:The wise MongoDB API
 github-automattic-antiscroll | antiscroll | https://github.com/Automattic/antiscroll | author:automattic description:OS X Lion style cross-browser native scrolling on the web that gets out of the way.
 github-automattic-simplenote-electron | simplenote-electron | https://github.com/Automattic/simplenote-electron | author:automattic description:A Simplenote React app packaged in Electron
 github-automattic-simplenote-android | simplenote-android | https://github.com/Automattic/simplenote-android | author:automattic description:Simplenote for Android
@@ -29,17 +29,17 @@ github-automattic-Edit-Flow | Edit-Flow | https://github.com/Automattic/Edit-Flo
 github-automattic-o2 | o2 | https://github.com/Automattic/o2 | author:automattic description:The o2 Plugin for WordPress - blogging at the speed of thought
 github-automattic-babble | babble | https://github.com/Automattic/babble | author:automattic description:Multilingual WordPress done right.
 github-automattic-Iris | Iris | https://github.com/Automattic/Iris | author:automattic description:A(n awesome) Color Picker
-github-automattic-browserbuild | browserbuild | https://github.com/Automattic/browserbuild | author:automattic description:Updated May 29, 2013
 github-automattic-batcache | batcache | https://github.com/Automattic/batcache | author:automattic description:A memcached HTML page cache for WordPress.
+github-automattic-browserbuild | browserbuild | https://github.com/Automattic/browserbuild | author:automattic 
 github-automattic-Documattic | Documattic | https://github.com/Automattic/Documattic | author:automattic description:WordPress presentations and resources shared by WordPress.com VIP
 github-automattic-legalmattic | legalmattic | https://github.com/Automattic/legalmattic | author:automattic description:Democratizing WordPress.com legalese since 2014!
 github-automattic-camptix | camptix | https://github.com/Automattic/camptix | author:automattic description:Simple and Flexible WordPress ticketing plugin brought to you by WordCamp.org
-github-automattic-mydb | mydb | https://github.com/Automattic/mydb | author:automattic description:Updated Mar 17, 2015
+github-automattic-mydb | mydb | https://github.com/Automattic/mydb | author:automattic 
 github-automattic-custom-metadata | custom-metadata | https://github.com/Automattic/custom-metadata | author:automattic description:A WordPress plugin that provides an easy way to add custom fields to your object types (post, pages, custom post types, users)
 github-automattic-Co-Authors-Plus | Co-Authors-Plus | https://github.com/Automattic/Co-Authors-Plus | author:automattic description:Multiple bylines and Guest Authors for WordPress
 github-automattic-sensei | sensei | https://github.com/Automattic/sensei | author:automattic description:Sensei the Learning Management Plugin for WordPress
 github-automattic-vip-scanner | vip-scanner | https://github.com/Automattic/vip-scanner | author:automattic description:Scan all sorts of themes and files and things!
-github-automattic-underscores.me | underscores.me | https://github.com/Automattic/underscores.me | author:automattic description:Updated Jan 13, 2016
+github-automattic-underscores.me | underscores.me | https://github.com/Automattic/underscores.me | author:automattic 
 github-automattic-PhpStorm-Resources | PhpStorm-Resources | https://github.com/Automattic/PhpStorm-Resources | author:automattic description:PhpStorm is making inroads at Automattic. Here you'll find various helpful files we've made.
 github-automattic-Genericons | Genericons | https://github.com/Automattic/Genericons | author:automattic description:A public mirror of changes to the Genericon release.
 github-automattic-wp-super-cache | wp-super-cache | https://github.com/Automattic/wp-super-cache | author:automattic description:http://wordpress.org/plugins/wp-super-cache/
@@ -47,220 +47,315 @@ github-automattic-es-backbone | es-backbone | https://github.com/Automattic/es-b
 github-automattic-media-explorer | media-explorer | https://github.com/Automattic/media-explorer | author:automattic description:With Media Explorer, you can now search for tweets and videos on Twitter and YouTube directly from the Add Media screen in WordPress.
 github-automattic-prefork | prefork | https://github.com/Automattic/prefork | author:automattic description:PHP class for pre-loading heavy PHP apps before serving requests
 github-automattic-Ad-Code-Manager | Ad-Code-Manager | https://github.com/Automattic/Ad-Code-Manager | author:automattic description:Easily manage the ad codes that need to appear in your templates
+github-automattic-canvas-fireworks | canvas-fireworks | https://github.com/Automattic/canvas-fireworks | author:automattic description:HTML5 Canvas experiment. Creating fireworks with 2D/3D particles.
 github-automattic-syndication | syndication | https://github.com/Automattic/syndication | author:automattic description:Syndicate your WordPress content
 github-automattic-cloudup-cli | cloudup-cli | https://github.com/Automattic/cloudup-cli | author:automattic description:cloudup command-line executable
 github-automattic-Rewrite-Rules-Inspector | Rewrite-Rules-Inspector | https://github.com/Automattic/Rewrite-Rules-Inspector | author:automattic description:Straightforward WordPress admin view for inspecting your rewrite rules
 github-automattic-site-logo | site-logo | https://github.com/Automattic/site-logo | author:automattic description:Add a logo to your WordPress site. Set it once, and all themes that support it will display it automatically.
 github-automattic-zoninator | zoninator | https://github.com/Automattic/zoninator | author:automattic description:Curation made easy! Create "zones" then add and order your content straight from the WordPress Dashboard.
 github-automattic-wpes-lib | wpes-lib | https://github.com/Automattic/wpes-lib | author:automattic description:WordPress-Elasticsearch Lib
-github-automattic-mongo-query | mongo-query | https://github.com/Automattic/mongo-query | author:automattic description:mongo query API component
 github-automattic-nginx-http-concat | nginx-http-concat | https://github.com/Automattic/nginx-http-concat | author:automattic description:WordPress plugin to perform CSS and Javascript concatenation of individual script files into one resource request.
+github-automattic-mongo-query | mongo-query | https://github.com/Automattic/mongo-query | author:automattic description:mongo query API component
+github-automattic-auto-update | auto-update | https://github.com/Automattic/auto-update | author:automattic 
 github-automattic-html-pipe | html-pipe | https://github.com/Automattic/html-pipe | author:automattic description:Pluggable HTML Pipeline
-github-automattic-trac-code-comments-plugin | trac-code-comments-plugin | https://github.com/Automattic/trac-code-comments-plugin | author:automattic description:Trac plugin for code comments and sending them to tickets
-github-automattic-auto-update | auto-update | https://github.com/Automattic/auto-update | author:automattic description:Updated Feb 5, 2014
 github-automattic-wp-e2e-tests | wp-e2e-tests | https://github.com/Automattic/wp-e2e-tests | author:automattic description:Automated end-to-end tests for WordPress.com
-github-automattic-zeditor | zeditor | https://github.com/Automattic/zeditor | author:automattic description:Pluggable "Editor" API for contenteditable
+github-automattic-trac-code-comments-plugin | trac-code-comments-plugin | https://github.com/Automattic/trac-code-comments-plugin | author:automattic description:Trac plugin for code comments and sending them to tickets
 github-automattic-lazy-load | lazy-load | https://github.com/Automattic/lazy-load | author:automattic description:Lazy load images on your WordPress site to improve page load times and server bandwidth.
-github-automattic-P2-Resolved-Posts | P2-Resolved-Posts | https://github.com/Automattic/P2-Resolved-Posts | author:automattic description:Lightweight GTD for the P2 WordPress theme
-github-automattic-theme-tools | theme-tools | https://github.com/Automattic/theme-tools | author:automattic description:Tools for making better themes, better.
+github-automattic-zeditor | zeditor | https://github.com/Automattic/zeditor | author:automattic description:Pluggable "Editor" API for contenteditable
 github-automattic-components.underscores.me | components.underscores.me | https://github.com/Automattic/components.underscores.me | author:automattic description:I run the components.underscores.me website and I generate pretty cool WordPress themes.
-github-automattic-WordPress-CLI-Importer | WordPress-CLI-Importer | https://github.com/Automattic/WordPress-CLI-Importer | author:automattic description:Updated Dec 8, 2011
+github-automattic-theme-tools | theme-tools | https://github.com/Automattic/theme-tools | author:automattic description:Tools for making better themes, better.
+github-automattic-P2-Resolved-Posts | P2-Resolved-Posts | https://github.com/Automattic/P2-Resolved-Posts | author:automattic description:Lightweight GTD for the P2 WordPress theme
+github-automattic-WordPress-CLI-Importer | WordPress-CLI-Importer | https://github.com/Automattic/WordPress-CLI-Importer | author:automattic 
 github-automattic-gridicons | gridicons | https://github.com/Automattic/gridicons | author:automattic description:The WordPress.com icon set
 github-automattic-jetpack-onboarding | jetpack-onboarding | https://github.com/Automattic/jetpack-onboarding | author:automattic description:Jetpack Onboarding
 github-automattic-sulfur | sulfur | https://github.com/Automattic/sulfur | author:automattic description:Media manager written for the WordPress.com & Jetpack REST API.
-github-automattic-atd-chrome | atd-chrome | https://github.com/Automattic/atd-chrome | author:automattic description:After the Deadline extension for Chrome
-github-automattic-bulk-user-management | bulk-user-management | https://github.com/Automattic/bulk-user-management | author:automattic description:Manage your WordPress sites. With Ease.
 github-automattic-video-thumb-grid | video-thumb-grid | https://github.com/Automattic/video-thumb-grid | author:automattic description:Utility to generate thumb grid spritesheets from videos
 github-automattic-eventbrite-api | eventbrite-api | https://github.com/Automattic/eventbrite-api | author:automattic description:The Eventbrite API plugin brings the power of Eventbrite to WordPress, for both users and developers.
+github-automattic-bulk-user-management | bulk-user-management | https://github.com/Automattic/bulk-user-management | author:automattic description:Manage your WordPress sites. With Ease.
+github-automattic-atd-chrome | atd-chrome | https://github.com/Automattic/atd-chrome | author:automattic description:After the Deadline extension for Chrome
 github-automattic-Document-Feedback | Document-Feedback | https://github.com/Automattic/Document-Feedback | author:automattic description:Close the loop — Get feedback from readers on the documentation you write.
 github-automattic-mShots | mShots | https://github.com/Automattic/mShots | author:automattic description:Website Thumbnail/Snapshot Service
-github-automattic-woocommerce-connect-client | woocommerce-connect-client | https://github.com/Automattic/woocommerce-connect-client | author:automattic description:WooCommerce Connect is a feature plugin, currently in Alpha, that integrates the WooCommerce Connect SaaS into WooCommerce (2.6), Alpha includes real time USPS and Canada Post shipping rates and introduces our React based UI.
 github-automattic-vip-mu-plugins-public | vip-mu-plugins-public | https://github.com/Automattic/vip-mu-plugins-public | author:automattic description:The MU plugins directory for WordPress.com VIP Go next generation hosting platform
+github-automattic-woocommerce-connect-client | woocommerce-connect-client | https://github.com/Automattic/woocommerce-connect-client | author:automattic description:WooCommerce Connect is a feature plugin, currently in Alpha, that integrates the WooCommerce Connect SaaS into WooCommerce (2.6), Alpha includes real time USPS and Canada Post shipping rates and introduces our React based UI.
 github-automattic-customize-direct-manipulation | customize-direct-manipulation | https://github.com/Automattic/customize-direct-manipulation | author:automattic description:Click-to-edit in the WordPress Customizer
 github-automattic-table-of-contents | table-of-contents | https://github.com/Automattic/table-of-contents | author:automattic description:Adds a table of contents to your WordPress pages based on h3 and h4 tags. Useful for documention-centric sites.
 github-automattic-atd-jquery | atd-jquery | https://github.com/Automattic/atd-jquery | author:automattic description:After the Deadline API for jQuery
+github-automattic-wp-cli | wp-cli | https://github.com/Automattic/wp-cli | author:automattic description:A command line interface for WordPress
 github-automattic-WordPress-CLI-Exporter | WordPress-CLI-Exporter | https://github.com/Automattic/WordPress-CLI-Exporter | author:automattic description:A CLI Wrapper around the WordPress WXR Exporter. (Deprecated; please check out http://wp-cli.org)
-github-automattic-wpgo | wpgo | https://github.com/Automattic/wpgo | author:automattic description:Command-line interface for WordPress using REST API written in Go
-github-automattic-Post-Meta-Inspector | Post-Meta-Inspector | https://github.com/Automattic/Post-Meta-Inspector | author:automattic description:Peer inside your post meta
+github-automattic-auto-update-server | auto-update-server | https://github.com/Automattic/auto-update-server | author:automattic 
 github-automattic-msm-sitemap | msm-sitemap | https://github.com/Automattic/msm-sitemap | author:automattic description:Comprehensive sitemaps for your WordPress.com VIP site. Joint collaboration between Metro.co.uk, WordPress.com VIP, Alley Interactive, Maker Media, 10up, and others.
 github-automattic-Color.js | Color.js | https://github.com/Automattic/Color.js | author:automattic description:A utility class for working with colors in JavaScript
-github-automattic-auto-update-server | auto-update-server | https://github.com/Automattic/auto-update-server | author:automattic description:Updated Feb 27, 2016
+github-automattic-Post-Meta-Inspector | Post-Meta-Inspector | https://github.com/Automattic/Post-Meta-Inspector | author:automattic description:Peer inside your post meta
+github-automattic-wpgo | wpgo | https://github.com/Automattic/wpgo | author:automattic description:Command-line interface for WordPress using REST API written in Go
 github-automattic-php-thrift-sql | php-thrift-sql | https://github.com/Automattic/php-thrift-sql | author:automattic description:PHP lib for connecting to Hive and Impala over Thrift
 github-automattic-Custom-Javascript-Editor | Custom-Javascript-Editor | https://github.com/Automattic/Custom-Javascript-Editor | author:automattic description:Custom JavaScript editor for WordPress.com Enterprise
+github-automattic-elasticsearch-statsd-plugin | elasticsearch-statsd-plugin | https://github.com/Automattic/elasticsearch-statsd-plugin | author:automattic description:ES StatsD Metrics Pusher
 github-automattic-wp-codebird | wp-codebird | https://github.com/Automattic/wp-codebird | author:automattic description:An extension of the Codebird class to use WordPress' HTTP API instead of cURL
+github-automattic-wp-frontend-uploader | wp-frontend-uploader | https://github.com/Automattic/wp-frontend-uploader | author:automattic description:WordPress plugin that allows your visitors to upload media from the front-end
 github-automattic-cheeztest | cheeztest | https://github.com/Automattic/cheeztest | author:automattic description:Adding some LOLs to your server-side WordPress A/B testing. Plays nice with Batcache.
-github-automattic-Adbusters | Adbusters | https://github.com/Automattic/Adbusters | author:automattic description:A WordPress plugin that loads a set of iframe busters for popular ad networks
 github-automattic-mandrill-send | mandrill-send | https://github.com/Automattic/mandrill-send | author:automattic description:dead-simple mandrill sender on top of superagent
-github-automattic-jquery-anchorify | jquery-anchorify | https://github.com/Automattic/jquery-anchorify | author:automattic description:jQuery Anchorify is a plugin that creates anchors for headings in your website.
-github-automattic-Postbot | Postbot | https://github.com/Automattic/Postbot | author:automattic description:Scheduled posting of photos
 github-automattic-rest-api-console2 | rest-api-console2 | https://github.com/Automattic/rest-api-console2 | author:automattic description:WordPress.com REST API Developer Console
+github-automattic-Adbusters | Adbusters | https://github.com/Automattic/Adbusters | author:automattic description:A WordPress plugin that loads a set of iframe busters for popular ad networks
+github-automattic-jquery-anchorify | jquery-anchorify | https://github.com/Automattic/jquery-anchorify | author:automattic description:jQuery Anchorify is a plugin that creates anchors for headings in your website.
+github-automattic-cheezcap | cheezcap | https://github.com/Automattic/cheezcap | author:automattic description:Cheezburger Custom Administration Panel - This is a working fork of the original CheezCAP
+github-automattic-Postbot | Postbot | https://github.com/Automattic/Postbot | author:automattic description:Scheduled posting of photos
 github-automattic-mydb-client | mydb-client | https://github.com/Automattic/mydb-client | author:automattic description:MyDB client component
-github-automattic-advanced-post-cache | advanced-post-cache | https://github.com/Automattic/advanced-post-cache | author:automattic description:All up in your WP_Query, caching the things.
-github-automattic-mongo-diff | mongo-diff | https://github.com/Automattic/mongo-diff | author:automattic description:Updated Mar 12, 2015
-github-automattic-vip-go-quickstart | vip-go-quickstart | https://github.com/Automattic/vip-go-quickstart | author:automattic description:NOT READY FOR USE YET! Quickstart environment for the next generation hosting platform from WordPress.com VIP
 github-automattic-android-wordpress-com-rest | android-wordpress-com-rest | https://github.com/Automattic/android-wordpress-com-rest | author:automattic description:WordPress.com REST Client for Android apps.
+github-automattic-advanced-post-cache | advanced-post-cache | https://github.com/Automattic/advanced-post-cache | author:automattic description:All up in your WP_Query, caching the things.
+github-automattic-mongo-diff | mongo-diff | https://github.com/Automattic/mongo-diff | author:automattic 
+github-automattic-vip-go-quickstart | vip-go-quickstart | https://github.com/Automattic/vip-go-quickstart | author:automattic description:Deprecated.
+github-automattic-Slack-Summary | Slack-Summary | https://github.com/Automattic/Slack-Summary | author:automattic 
 github-automattic-Debug-Bar-Hook-Explorer | Debug-Bar-Hook-Explorer | https://github.com/Automattic/Debug-Bar-Hook-Explorer | author:automattic description:See what's hooked into what
+github-automattic-node-graphicsmagick | node-graphicsmagick | https://github.com/Automattic/node-graphicsmagick | author:automattic description:GraphicsMagick bindings for Node.js
 github-automattic-replace-text | replace-text | https://github.com/Automattic/replace-text | author:automattic description:Replace text within an element with another element. Handles all the DOM manipulations.
 github-automattic-rest-api-console | rest-api-console | https://github.com/Automattic/rest-api-console | author:automattic description:WordPress.com REST API Developer Console - superceded by https://github.com/Automattic/rest-api-console2
+github-automattic-xgettext-js | xgettext-js | https://github.com/Automattic/xgettext-js | author:automattic description:xgettext string extractor tool capable of parsing JavaScript files
+github-automattic-social-logos | social-logos | https://github.com/Automattic/social-logos | author:automattic description:A repository of all the social logos we use on WordPress.com
 github-automattic-Map-Widget | Map-Widget | https://github.com/Automattic/Map-Widget | author:automattic description:A WordPress widget for showing google maps
 github-automattic-Minimum-Viable-VIP | Minimum-Viable-VIP | https://github.com/Automattic/Minimum-Viable-VIP | author:automattic description:The bare minimum needed to pass WordPress.com VIP theme review
 github-automattic-Co-Authors-Plus-Social-Pack | Co-Authors-Plus-Social-Pack | https://github.com/Automattic/Co-Authors-Plus-Social-Pack | author:automattic description:Co-Authors Plus add-on pack with profile fields for popular social media services and the ability to allow attributing posts to their Authors when shared using Jetpack
-github-automattic-xgettext-js | xgettext-js | https://github.com/Automattic/xgettext-js | author:automattic description:xgettext string extractor tool capable of parsing JavaScript files
-github-automattic-social-logos | social-logos | https://github.com/Automattic/social-logos | author:automattic description:A repository of all the social logos we use on WordPress.com
-github-automattic-util-inspect | util-inspect | https://github.com/Automattic/util-inspect | author:automattic description:node.js util.inspect in a single module, and cross-browser (IE6+)
+github-automattic-wp-help | wp-help | https://github.com/Automattic/wp-help | author:automattic description:#WordPressPlugin: Site operators can create detailed, hierarchical documentation for the site's authors, editors, and contributors, viewable in the WordPress admin
+github-automattic-aggregator | aggregator | https://github.com/Automattic/aggregator | author:automattic description:Synchronise posts between blogs in a multisite network.
 github-automattic-Taxonomy-Images | Taxonomy-Images | https://github.com/Automattic/Taxonomy-Images | author:automattic description:Enables WordPress users to easily associate images from the media library to categories, tags and custom taxonomies. Plugin by @mfields.
 github-automattic-dot | dot | https://github.com/Automattic/dot | author:automattic description:mongodb dot notation implementation
+github-automattic-util-inspect | util-inspect | https://github.com/Automattic/util-inspect | author:automattic description:node.js util.inspect in a single module, and cross-browser (IE6+)
 github-automattic-WP-Cron-Control | WP-Cron-Control | https://github.com/Automattic/WP-Cron-Control | author:automattic description:This plugin allows you to take control over the execution of cron jobs.
-github-automattic-aggregator | aggregator | https://github.com/Automattic/aggregator | author:automattic description:Synchronise posts between blogs in a multisite network.
 github-automattic-happychat-service | happychat-service | https://github.com/Automattic/happychat-service | author:automattic description:Socket.IO based chat server for Happychat
-github-automattic-atd-tinymce | atd-tinymce | https://github.com/Automattic/atd-tinymce | author:automattic description:After the Deadline for TinyMCE
-github-automattic-p2-hovercards | p2-hovercards | https://github.com/Automattic/p2-hovercards | author:automattic description:Hovercards! In your P2!
-github-automattic-atd-core | atd-core | https://github.com/Automattic/atd-core | author:automattic description:Core UI Module for After the Deadline
-github-automattic-drag-element | drag-element | https://github.com/Automattic/drag-element | author:automattic description:Reorder elements via drag and drop
-github-automattic-wp-cldr | wp-cldr | https://github.com/Automattic/wp-cldr | author:automattic description:Use CLDR localization data in WordPress
-github-automattic-wp-calypso-bootstrap | wp-calypso-bootstrap | https://github.com/Automattic/wp-calypso-bootstrap | author:automattic description:Calypso Bootstrap is a development environment for Calypso built with Vagrant and Puppet
-github-automattic-safe-report-comments | safe-report-comments | https://github.com/Automattic/safe-report-comments | author:automattic description:This plugin gives your visitors the possibility to report a comment as inappropriate.
 github-automattic-design-handbook | design-handbook | https://github.com/Automattic/design-handbook | author:automattic description:A handy-dandy guide to designing interfaces for WordPress.com.
-github-automattic-Automattic-Tracks-Android | Automattic-Tracks-Android | https://github.com/Automattic/Automattic-Tracks-Android | author:automattic description:Client library for tracking user events for later analysis
+github-automattic-p2-hovercards | p2-hovercards | https://github.com/Automattic/p2-hovercards | author:automattic description:Hovercards! In your P2!
+github-automattic-atd-tinymce | atd-tinymce | https://github.com/Automattic/atd-tinymce | author:automattic description:After the Deadline for TinyMCE
 github-automattic-wp-rest-php-lib | wp-rest-php-lib | https://github.com/Automattic/wp-rest-php-lib | author:automattic description:PHP Library for the WordPress.com REST or WP-API. Note: this is still a work in progress and may change.
-github-automattic-strikethrough | strikethrough | https://github.com/Automattic/strikethrough | author:automattic description:Updated Feb 27, 2014
+github-automattic-safe-report-comments | safe-report-comments | https://github.com/Automattic/safe-report-comments | author:automattic description:This plugin gives your visitors the possibility to report a comment as inappropriate.
+github-automattic-wp-calypso-bootstrap | wp-calypso-bootstrap | https://github.com/Automattic/wp-calypso-bootstrap | author:automattic description:Calypso Bootstrap is a development environment for Calypso built with Vagrant and Puppet
+github-automattic-atd-core | atd-core | https://github.com/Automattic/atd-core | author:automattic description:Core UI Module for After the Deadline
+github-automattic-wp-cldr | wp-cldr | https://github.com/Automattic/wp-cldr | author:automattic description:Use CLDR localization data in WordPress
+github-automattic-Automattic-Tracks-Android | Automattic-Tracks-Android | https://github.com/Automattic/Automattic-Tracks-Android | author:automattic description:Client library for tracking user events for later analysis
+github-automattic-drag-element | drag-element | https://github.com/Automattic/drag-element | author:automattic description:Reorder elements via drag and drop
+github-automattic-Formategory | Formategory | https://github.com/Automattic/Formategory | author:automattic description:A WordPress plugin that formats posts based on their categories.
+github-automattic-oplog | oplog | https://github.com/Automattic/oplog | author:automattic description:oplog tailing DSL built on top of monk
 github-automattic-slush-theme-pattern-library | slush-theme-pattern-library | https://github.com/Automattic/slush-theme-pattern-library | author:automattic description:A Slush generator for the Theme Pattern Library.
+github-automattic-eu-cookie-law-widget | eu-cookie-law-widget | https://github.com/Automattic/eu-cookie-law-widget | author:automattic description:The plugin that adds the "cookie law" widget.
+github-automattic-strikethrough | strikethrough | https://github.com/Automattic/strikethrough | author:automattic 
+github-automattic-photon.js | photon.js | https://github.com/Automattic/photon.js | author:automattic description:JavaScript library for the WordPress.com Photon image manipulation service
 github-automattic-grasshopper | grasshopper | https://github.com/Automattic/grasshopper | author:automattic description:A WordPress.com REST API + D3.js example
 github-automattic-writing-helper | writing-helper | https://github.com/Automattic/writing-helper | author:automattic description:Helps you write your posts
-github-automattic-eu-cookie-law-widget | eu-cookie-law-widget | https://github.com/Automattic/eu-cookie-law-widget | author:automattic description:The plugin that adds the "cookie law" widget.
-github-automattic-oplog | oplog | https://github.com/Automattic/oplog | author:automattic description:oplog tailing DSL built on top of monk
-github-automattic-photon.js | photon.js | https://github.com/Automattic/photon.js | author:automattic description:JavaScript library for the WordPress.com Photon image manipulation service
-github-automattic-jetpack-beta | jetpack-beta | https://github.com/Automattic/jetpack-beta | author:automattic description:A plugin to allow users to easily beta test Jetpack
-github-automattic-community-translator | community-translator | https://github.com/Automattic/community-translator | author:automattic description:In-page translation tool for projects that have translations in GlotPress
-github-automattic-wpcom-connect-examples | wpcom-connect-examples | https://github.com/Automattic/wpcom-connect-examples | author:automattic description:Code Examples for Implementing WordPress.com Connect
+github-automattic-WordPress-Coding-Standards | WordPress-Coding-Standards | https://github.com/Automattic/WordPress-Coding-Standards | author:automattic description:PHP_CodeSniffer rules (sniffs) to enforce WordPress coding conventions
+github-automattic-get-the-image | get-the-image | https://github.com/Automattic/get-the-image | author:automattic description:Get the Image WordPress plugin.
 github-automattic-What-the-Email | What-the-Email | https://github.com/Automattic/What-the-Email | author:automattic description:Parse that email and tell me what it is!
-github-automattic-mydb-expose | mydb-expose | https://github.com/Automattic/mydb-expose | author:automattic description:mydb connect middleware
-github-automattic-vip-code-performance | vip-code-performance | https://github.com/Automattic/vip-code-performance | author:automattic description:A plugin that helps every site benefit from the performance features built into WordPress.com VIP
-github-automattic-android-emulator-builder | android-emulator-builder | https://github.com/Automattic/android-emulator-builder | author:automattic description:A script for quickly configuring a stock set of common Android device emulators
-github-automattic-hyperdb | hyperdb | https://github.com/Automattic/hyperdb | author:automattic description:HyperDB is an advanced database class that supports replication, failover, load balancing, and partitioning. https://wordpress.org/plugins/hyperdb/
-github-automattic-atd-openoffice | atd-openoffice | https://github.com/Automattic/atd-openoffice | author:automattic description:After the Deadline extension for OpenOffice and LibreOffice
+github-automattic-wp-google-analytics | wp-google-analytics | https://github.com/Automattic/wp-google-analytics | author:automattic description:WordPress plugin to use Google Analytics to track your site statistics.
+github-automattic-wpcom-connect-examples | wpcom-connect-examples | https://github.com/Automattic/wpcom-connect-examples | author:automattic description:Code Examples for Implementing WordPress.com Connect
+github-automattic-display-posts-shortcode | display-posts-shortcode | https://github.com/Automattic/display-posts-shortcode | author:automattic description:Display a listing of posts using the [display-posts] shortcode
 github-automattic-cm-livy-scripts | cm-livy-scripts | https://github.com/Automattic/cm-livy-scripts | author:automattic description:Scripts for building Cloudera Manager parcel and CSD for Livy Spark Server
-github-automattic-pinghub | pinghub | https://github.com/Automattic/pinghub | author:automattic description:Pinghub is a simple pubsub message bus for websocket clients.
+github-automattic-mydb-expose | mydb-expose | https://github.com/Automattic/mydb-expose | author:automattic description:mydb connect middleware
+github-automattic-community-translator | community-translator | https://github.com/Automattic/community-translator | author:automattic description:In-page translation tool for projects that have translations in GlotPress
+github-automattic-jetpack-beta | jetpack-beta | https://github.com/Automattic/jetpack-beta | author:automattic description:A plugin to allow users to easily beta test Jetpack
 github-automattic-vip-dashboard | vip-dashboard | https://github.com/Automattic/vip-dashboard | author:automattic description:VIP Dashboard
+github-automattic-i18n-calypso | i18n-calypso | https://github.com/Automattic/i18n-calypso | author:automattic description:i18n JavaScript library on top of Jed originally used in Calypso
+github-automattic-vip-code-performance | vip-code-performance | https://github.com/Automattic/vip-code-performance | author:automattic description:A plugin that helps every site benefit from the performance features built into WordPress.com VIP
+github-automattic-pinghub | pinghub | https://github.com/Automattic/pinghub | author:automattic description:Pinghub is a simple pubsub message bus for websocket clients.
+github-automattic-hyperdb | hyperdb | https://github.com/Automattic/hyperdb | author:automattic description:HyperDB is an advanced database class that supports replication, failover, load balancing, and partitioning. https://wordpress.org/plugins/hyperdb/
+github-automattic-android-emulator-builder | android-emulator-builder | https://github.com/Automattic/android-emulator-builder | author:automattic description:A script for quickly configuring a stock set of common Android device emulators
+github-automattic-Safe-Redirect-Manager | Safe-Redirect-Manager | https://github.com/Automattic/Safe-Redirect-Manager | author:automattic description:WordPress plugin Safe Redirect Manager
 github-automattic-mirror | mirror | https://github.com/Automattic/mirror | author:automattic description:A plugin for keeping WordPress environments mirrored
+github-automattic-atd-openoffice | atd-openoffice | https://github.com/Automattic/atd-openoffice | author:automattic description:After the Deadline extension for OpenOffice and LibreOffice
+github-automattic-WordPress-Zendesk-API | WordPress-Zendesk-API | https://github.com/Automattic/WordPress-Zendesk-API | author:automattic description:A basic class for interacting with the Zendesk API. Requires WordPress. Only has the API functionality that I needed, but patches welcome.
+github-automattic-vip-go-mu-plugins | vip-go-mu-plugins | https://github.com/Automattic/vip-go-mu-plugins | author:automattic description:The 'must use' plugins on the VIP Go platform.
+github-automattic-scribe | scribe | https://github.com/Automattic/scribe | author:automattic description:A rich text editor framework for the web platform
+github-automattic-atd-firefox | atd-firefox | https://github.com/Automattic/atd-firefox | author:automattic description:After the Deadline add-on for Firefox
+github-automattic-SEO-Auto-Linker | SEO-Auto-Linker | https://github.com/Automattic/SEO-Auto-Linker | author:automattic description:Automatically add links to your WordPress content.
 github-automattic-lazypress | lazypress | https://github.com/Automattic/lazypress | author:automattic description:Approved by 9/10 Sloths
 github-automattic-cloudup-client | cloudup-client | https://github.com/Automattic/cloudup-client | author:automattic description:Cloudup API client for Node.js
-github-automattic-vip-go-mu-plugins | vip-go-mu-plugins | https://github.com/Automattic/vip-go-mu-plugins | author:automattic description:The 'must use' plugins on the VIP Go platform.
-github-automattic-i18n-calypso | i18n-calypso | https://github.com/Automattic/i18n-calypso | author:automattic description:i18n JavaScript library on top of Jed originally used in Calypso
-github-automattic-Automattic-Tracks-iOS | Automattic-Tracks-iOS | https://github.com/Automattic/Automattic-Tracks-iOS | author:automattic description:Client library for tracking user events for later analysis
-github-automattic-WordPress-Zendesk-API | WordPress-Zendesk-API | https://github.com/Automattic/WordPress-Zendesk-API | author:automattic description:A basic class for interacting with the Zendesk API. Requires WordPress. Only has the API functionality that I needed, but patches welcome.
-github-automattic-atd-firefox | atd-firefox | https://github.com/Automattic/atd-firefox | author:automattic description:After the Deadline add-on for Firefox
 github-automattic-Flux | Flux | https://github.com/Automattic/Flux | author:automattic description:Your content, at 88MPH
-github-automattic-jpeg-stream | jpeg-stream | https://github.com/Automattic/jpeg-stream | author:automattic description:Emits `jpeg` events from a stream of JPEG images
+github-automattic-Automattic-Tracks-iOS | Automattic-Tracks-iOS | https://github.com/Automattic/Automattic-Tracks-iOS | author:automattic description:Client library for tracking user events for later analysis
+github-automattic-wordpress-fieldmanager | wordpress-fieldmanager | https://github.com/Automattic/wordpress-fieldmanager | author:automattic description:Custom field types for WordPress
+github-automattic-mongo-eql | mongo-eql | https://github.com/Automattic/mongo-eql | author:automattic 
+github-automattic-widget-data | widget-data | https://github.com/Automattic/widget-data | author:automattic description:WordPress Plugin
 github-automattic-jetmon | jetmon | https://github.com/Automattic/jetmon | author:automattic description:Parallel HTTP health monitoring, which is employed for the Jetpack Site Monitor
-github-automattic-mongo-eql | mongo-eql | https://github.com/Automattic/mongo-eql | author:automattic description:Updated Mar 12, 2015
+github-automattic-iframify | iframify | https://github.com/Automattic/iframify | author:automattic description:Wraps the given HTML code in an iframe that resizes dynamically to fit its contents.
+github-automattic-jpeg-stream | jpeg-stream | https://github.com/Automattic/jpeg-stream | author:automattic description:Emits `jpeg` events from a stream of JPEG images
 github-automattic-go | go | https://github.com/Automattic/go | author:automattic description:A place for Go packages to go boldly (or live long and prosper).
-github-automattic-add-component-symlinks | add-component-symlinks | https://github.com/Automattic/add-component-symlinks | author:automattic description:Updated Feb 24, 2014
 github-automattic-mydb-driver | mydb-driver | https://github.com/Automattic/mydb-driver | author:automattic description:mydb monk driver
-github-automattic-pixel-stack | pixel-stack | https://github.com/Automattic/pixel-stack | author:automattic description:Interface to composite RGB/RGBA buffers together into larger buffers representing images.
-github-automattic-npm-deps | npm-deps | https://github.com/Automattic/npm-deps | author:automattic description:Merges dependencies from multiple package.json files in subdirectories.
-github-automattic-hidden-posts | hidden-posts | https://github.com/Automattic/hidden-posts | author:automattic description:The opposite of sticky posts
-github-automattic-calypso-plugin | calypso-plugin | https://github.com/Automattic/calypso-plugin | author:automattic description:Template/Boilerplate for a WordPress plugin that uses Calypso components
-github-automattic-vip-2016-tdd-plugin | vip-2016-tdd-plugin | https://github.com/Automattic/vip-2016-tdd-plugin | author:automattic description:Skeleton plugin used as basis for TDD exercise at the VIP meetup, May 2016
-github-automattic-eslint-plugin-wpcalypso | eslint-plugin-wpcalypso | https://github.com/Automattic/eslint-plugin-wpcalypso | author:automattic description:Custom ESLint rules for the WordPress.com Calypso project
+github-automattic-add-component-symlinks | add-component-symlinks | https://github.com/Automattic/add-component-symlinks | author:automattic 
 github-automattic-RadControl | RadControl | https://github.com/Automattic/RadControl | author:automattic description:Harness the power of WordPress.com's advertising partners for your own blog.
-github-automattic-atd-ckeditor | atd-ckeditor | https://github.com/Automattic/atd-ckeditor | author:automattic description:After the Deadline plugin for CKEditor
-github-automattic-wp-memcached | wp-memcached | https://github.com/Automattic/wp-memcached | author:automattic description:Memcached Object Cache for WordPress
+github-automattic-pixel-stack | pixel-stack | https://github.com/Automattic/pixel-stack | author:automattic description:Interface to composite RGB/RGBA buffers together into larger buffers representing images.
 github-automattic-hosting-settings | hosting-settings | https://github.com/Automattic/hosting-settings | author:automattic description:Database of MX records and other DNS settings for common providers
+github-automattic-vip-skeleton | vip-skeleton | https://github.com/Automattic/vip-skeleton | author:automattic 
+github-automattic-calypso-plugin | calypso-plugin | https://github.com/Automattic/calypso-plugin | author:automattic description:Template/Boilerplate for a WordPress plugin that uses Calypso components
+github-automattic-npm-deps | npm-deps | https://github.com/Automattic/npm-deps | author:automattic description:Merges dependencies from multiple package.json files in subdirectories.
+github-automattic-vip-2016-tdd-plugin | vip-2016-tdd-plugin | https://github.com/Automattic/vip-2016-tdd-plugin | author:automattic description:Skeleton plugin used as basis for TDD exercise at the VIP meetup, May 2016
 github-automattic-WordPressComKit | WordPressComKit | https://github.com/Automattic/WordPressComKit | author:automattic description:A reusable/lighweight iOS/Mac OS X/tvOS library for talking to WordPress.com
+github-automattic-wp-memcached | wp-memcached | https://github.com/Automattic/wp-memcached | author:automattic description:Memcached Object Cache for WordPress
 github-automattic-WPCOM-Related-Posts | WPCOM-Related-Posts | https://github.com/Automattic/WPCOM-Related-Posts | author:automattic description:Related Posts using the WordPress.com Elastic Search infrastructure
+github-automattic-node-phone | node-phone | https://github.com/Automattic/node-phone | author:automattic description:With a given country and phone number, validate and format the phone number to E.164 standard
 github-automattic-calypso-live-branches | calypso-live-branches | https://github.com/Automattic/calypso-live-branches | author:automattic description:Access versions of your node.js application on demand
+github-automattic-atd-ckeditor | atd-ckeditor | https://github.com/Automattic/atd-ckeditor | author:automattic description:After the Deadline plugin for CKEditor
+github-automattic-hidden-posts | hidden-posts | https://github.com/Automattic/hidden-posts | author:automattic description:The opposite of sticky posts
+github-automattic-post-forking | post-forking | https://github.com/Automattic/post-forking | author:automattic description:WordPress Post Forking allows users to "fork" or create an alternate version of content to foster a more collaborative approach to WordPress content curation.
+github-automattic-eslint-plugin-wpcalypso | eslint-plugin-wpcalypso | https://github.com/Automattic/eslint-plugin-wpcalypso | author:automattic description:Custom ESLint rules for the WordPress.com Calypso project
 github-automattic-metadns | metadns | https://github.com/Automattic/metadns | author:automattic description:PowerDNS backend module with consistent hashing of DNS results and dynamic DNS features, i.e. services are monitored remotely and added / removed from the results depending on their health status.
-github-automattic-jetpack-force-2fa | jetpack-force-2fa | https://github.com/Automattic/jetpack-force-2fa | author:automattic description:Updated Oct 18, 2016
-github-automattic-overscores | overscores | https://github.com/Automattic/overscores | author:automattic description:Theme for the Overscores site - a dynamic content generator site for theme demos
-github-automattic-vip-skeleton | vip-skeleton | https://github.com/Automattic/vip-skeleton | author:automattic description:Updated Aug 19, 2016
-github-automattic-embed-widget | embed-widget | https://github.com/Automattic/embed-widget | author:automattic description:A widget for embedding scripts and embed codes, with additional checking and balancing to help with debugging
-github-automattic-gp-import-export | gp-import-export | https://github.com/Automattic/gp-import-export | author:automattic description:Bulk Importer plugin for GlotPress
-github-automattic-vip-cli | vip-cli | https://github.com/Automattic/vip-cli | author:automattic description:CLI Tools for WordPress.com VIP
-github-automattic-css-to-js | css-to-js | https://github.com/Automattic/css-to-js | author:automattic description:Updated Jan 2, 2014
+github-automattic-WordPress-Plugin-Readme-Parser | WordPress-Plugin-Readme-Parser | https://github.com/Automattic/WordPress-Plugin-Readme-Parser | author:automattic 
 github-automattic-gp-views | gp-views | https://github.com/Automattic/gp-views | author:automattic description:GlotPress plugin to set up predefined views to search for strings using multiple conditions
 github-automattic-wpcom-xhr-request | wpcom-xhr-request | https://github.com/Automattic/wpcom-xhr-request | author:automattic description:REST API requests to WordPress.com via XMLHttpRequest (and CORS)
+github-automattic-facebook-wordpress | facebook-wordpress | https://github.com/Automattic/facebook-wordpress | author:automattic 
+github-automattic-JSON-RPC-PHP | JSON-RPC-PHP | https://github.com/Automattic/JSON-RPC-PHP | author:automattic description:A JSON-RPC server in php.
+github-automattic-mydb-tail | mydb-tail | https://github.com/Automattic/mydb-tail | author:automattic 
+github-automattic-gp-import-export | gp-import-export | https://github.com/Automattic/gp-import-export | author:automattic description:Bulk Importer plugin for GlotPress
 github-automattic-Gridicons-iOS | Gridicons-iOS | https://github.com/Automattic/Gridicons-iOS | author:automattic description:Gridicons is a tiny framework which generates Gridicon images at any resolution.
-github-automattic-wistia-php | wistia-php | https://github.com/Automattic/wistia-php | author:automattic description:A PHP wrapper for Wistia API
+github-automattic-video.js | video.js | https://github.com/Automattic/video.js | author:automattic description:Video.js - open source HTML5 & Flash video player
+github-automattic-jetpack-force-2fa | jetpack-force-2fa | https://github.com/Automattic/jetpack-force-2fa | author:automattic 
 github-automattic-wc-lang-packs-server | wc-lang-packs-server | https://github.com/Automattic/wc-lang-packs-server | author:automattic description:Language Packs server for WooCommerce extension
-github-automattic-mydb-tail | mydb-tail | https://github.com/Automattic/mydb-tail | author:automattic description:Updated Nov 21, 2012
-github-automattic-node-wpcom-oauth | node-wpcom-oauth | https://github.com/Automattic/node-wpcom-oauth | author:automattic description:WordPress.com OAuth2 authorization module for Node.js
-github-automattic-mongo-minify | mongo-minify | https://github.com/Automattic/mongo-minify | author:automattic description:Minifies a given MongoDB update query based on fields restrictions (inclusion or exclusion).
+github-automattic-wistia-php | wistia-php | https://github.com/Automattic/wistia-php | author:automattic description:A PHP wrapper for Wistia API
+github-automattic-vip-cli | vip-cli | https://github.com/Automattic/vip-cli | author:automattic description:CLI Tools for WordPress.com VIP
+github-automattic-interpolate-components | interpolate-components | https://github.com/Automattic/interpolate-components | author:automattic description:A module to turn strings into structured React components without dangerouslyInsertInnerHTML().
 github-automattic-css-transformer | css-transformer | https://github.com/Automattic/css-transformer | author:automattic description:css transform tool
-github-automattic-wc-extensions-code-test-guide | wc-extensions-code-test-guide | https://github.com/Automattic/wc-extensions-code-test-guide | author:automattic description:WooCommerce Tests Framework
+github-automattic-node-wpcom-oauth | node-wpcom-oauth | https://github.com/Automattic/node-wpcom-oauth | author:automattic description:WordPress.com OAuth2 authorization module for Node.js
+github-automattic-overscores | overscores | https://github.com/Automattic/overscores | author:automattic description:Theme for the Overscores site - a dynamic content generator site for theme demos
+github-automattic-css-to-js | css-to-js | https://github.com/Automattic/css-to-js | author:automattic 
+github-automattic-mongo-minify | mongo-minify | https://github.com/Automattic/mongo-minify | author:automattic description:Minifies a given MongoDB update query based on fields restrictions (inclusion or exclusion).
+github-automattic-scrollkit-wp | scrollkit-wp | https://github.com/Automattic/scrollkit-wp | author:automattic 
+github-automattic-lift-search | lift-search | https://github.com/Automattic/lift-search | author:automattic description:Lift Search for WordPress
+github-automattic-category-posts-widget-redux | category-posts-widget-redux | https://github.com/Automattic/category-posts-widget-redux | author:automattic description:Category Posts Widget Redux. A WordPress widget that configurably displays posts via category.
 github-automattic-vip-js-sdk | vip-js-sdk | https://github.com/Automattic/vip-js-sdk | author:automattic description:Official JavaScript library for the WordPress.com VIP REST API
-github-automattic-text-expander-acronyms | text-expander-acronyms | https://github.com/Automattic/text-expander-acronyms | author:automattic description:A TextExpander bundle for Automattic acronyms.
+github-automattic-wc-extensions-code-test-guide | wc-extensions-code-test-guide | https://github.com/Automattic/wc-extensions-code-test-guide | author:automattic description:WooCommerce Tests Framework
+github-automattic-amphtml | amphtml | https://github.com/Automattic/amphtml | author:automattic description:AMP HTML source code, samples, and documentation. See below for more info.
+github-automattic-wpcom-proxy-request | wpcom-proxy-request | https://github.com/Automattic/wpcom-proxy-request | author:automattic description:Proxied cookie-authenticated REST API requests to WordPress.com
+github-automattic-column-shortcodes | column-shortcodes | https://github.com/Automattic/column-shortcodes | author:automattic 
 github-automattic-dops-react | dops-react | https://github.com/Automattic/dops-react | author:automattic description:A set of React components for simple, sane and responsive UI's. An Automattic freestyle jam.
 github-automattic-vip-hash | vip-hash | https://github.com/Automattic/vip-hash | author:automattic description:A tool for generating hashes and marking them as good or bad
-github-automattic-wpcom-proxy-request | wpcom-proxy-request | https://github.com/Automattic/wpcom-proxy-request | author:automattic description:Proxied cookie-authenticated REST API requests to WordPress.com
-github-automattic-camptix-network-tools | camptix-network-tools | https://github.com/Automattic/camptix-network-tools | author:automattic description:Tools for managing CampTix installations across a WordPress Multisite network.
+github-automattic-text-expander-acronyms | text-expander-acronyms | https://github.com/Automattic/text-expander-acronyms | author:automattic description:A TextExpander bundle for Automattic acronyms.
+github-automattic-autosize | autosize | https://github.com/Automattic/autosize | author:automattic description:Autosize is a small, stand-alone script to automatically adjust textarea height to fit text.
+github-automattic-socket.io-cluster | socket.io-cluster | https://github.com/Automattic/socket.io-cluster | author:automattic 
+github-automattic-webfontloader | webfontloader | https://github.com/Automattic/webfontloader | author:automattic description:Web Font Loader gives you added control when using linked fonts via @font-face.
+github-automattic-find | find | https://github.com/Automattic/find | author:automattic description:Return the first matching value in an array
 github-automattic-wpcc-sign-on | wpcc-sign-on | https://github.com/Automattic/wpcc-sign-on | author:automattic description:A simple implementation of WordPress.com Connect
-github-automattic-socket.io-cluster | socket.io-cluster | https://github.com/Automattic/socket.io-cluster | author:automattic description:Updated Mar 19, 2014
+github-automattic-camptix-network-tools | camptix-network-tools | https://github.com/Automattic/camptix-network-tools | author:automattic description:Tools for managing CampTix installations across a WordPress Multisite network.
+github-automattic-embed-widget | embed-widget | https://github.com/Automattic/embed-widget | author:automattic description:A widget for embedding scripts and embed codes, with additional checking and balancing to help with debugging
+github-automattic-velocity | velocity | https://github.com/Automattic/velocity | author:automattic description:Accelerated JavaScript animation.
+github-automattic-react-big-calendar | react-big-calendar | https://github.com/Automattic/react-big-calendar | author:automattic description:gcal/outlook like calendar component
+github-automattic-automattic_visualization_setup | automattic_visualization_setup | https://github.com/Automattic/automattic_visualization_setup | author:automattic description:Matplotlib settings for better appearance and WP.com styling
+github-automattic-convert-units | convert-units | https://github.com/Automattic/convert-units | author:automattic description:An elegant way to convert quantities between different units.
+github-automattic-angellist | angellist | https://github.com/Automattic/angellist | author:automattic description:AngelList plugin for WordPress. Associate AngelList companies with a post.
+github-automattic-wp-large-options | wp-large-options | https://github.com/Automattic/wp-large-options | author:automattic 
+github-automattic-tip | tip | https://github.com/Automattic/tip | author:automattic description:Tooltips with a nice flexible API
+github-automattic-eslint-config-wpcalypso | eslint-config-wpcalypso | https://github.com/Automattic/eslint-config-wpcalypso | author:automattic description:ESLint configuration following WordPress.com's Calypso JavaScript Coding Guidelines
+github-automattic-quill | quill | https://github.com/Automattic/quill | author:automattic description:A cross browser rich text editor with an API
+github-automattic-libphutil | libphutil | https://github.com/Automattic/libphutil | author:automattic description:A collection of PHP utility classes
+github-automattic-vip-php-codesniffer | vip-php-codesniffer | https://github.com/Automattic/vip-php-codesniffer | author:automattic description:Ruleset customisations for WordPress.com VIP
+github-automattic-eventbrite-api-title-link-to-eb | eventbrite-api-title-link-to-eb | https://github.com/Automattic/eventbrite-api-title-link-to-eb | author:automattic description:Rather than linking to the post single view, event titles will link to the event on eventbrite.com.
+github-automattic-react-test-env | react-test-env | https://github.com/Automattic/react-test-env | author:automattic description:React Test Environment Setup
+github-automattic-dops-components | dops-components | https://github.com/Automattic/dops-components | author:automattic description:Shared components for VaultPress and Akismet
+github-automattic-blicki | blicki | https://github.com/Automattic/blicki | author:automattic description:A WIKI plugin for WP. This is a project for the GM 2016.
+github-automattic-jsx-require-extension | jsx-require-extension | https://github.com/Automattic/jsx-require-extension | author:automattic description:A require.extensions loader for JSX files
+github-automattic-jsconfar-workshop | jsconfar-workshop | https://github.com/Automattic/jsconfar-workshop | author:automattic description:Workshop repository for jsconfar.com - Nov 28, 2014
 github-automattic-wpcom-browser-auth | wpcom-browser-auth | https://github.com/Automattic/wpcom-browser-auth | author:automattic description:Browser authentication logic for the WordPress.com REST API
 github-automattic-go-gravatar | go-gravatar | https://github.com/Automattic/go-gravatar | author:automattic description:Simple go library for building Gravatar Urls
-github-automattic-jsconfar-workshop | jsconfar-workshop | https://github.com/Automattic/jsconfar-workshop | author:automattic description:Workshop repository for jsconfar.com - Nov 28, 2014
-github-automattic-dops-components | dops-components | https://github.com/Automattic/dops-components | author:automattic description:Shared components for VaultPress and Akismet
-github-automattic-jsx-require-extension | jsx-require-extension | https://github.com/Automattic/jsx-require-extension | author:automattic description:A require.extensions loader for JSX files
-github-automattic-react-test-env | react-test-env | https://github.com/Automattic/react-test-env | author:automattic description:React Test Environment Setup
-github-automattic-eslint-config-wpcalypso | eslint-config-wpcalypso | https://github.com/Automattic/eslint-config-wpcalypso | author:automattic description:ESLint configuration following WordPress.com's Calypso JavaScript Coding Guidelines
-github-automattic-interpolate-components | interpolate-components | https://github.com/Automattic/interpolate-components | author:automattic description:A module to turn strings into structured React components without dangerouslyInsertInnerHTML().
+github-automattic-blimply | blimply | https://github.com/Automattic/blimply | author:automattic description:Blimply is a plugin that will allow you to send push notifications to your mobile users utilizing Urban Airship API.
+github-automattic-riak_kv | riak_kv | https://github.com/Automattic/riak_kv | author:automattic description:Riak Key/Value Store
+github-automattic-Respond | Respond | https://github.com/Automattic/Respond | author:automattic description:A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)
 github-automattic-gp-extended-api-plugins | gp-extended-api-plugins | https://github.com/Automattic/gp-extended-api-plugins | author:automattic description:Expands GP API endpoints via plugins. Core, one day, it could happen.
 github-automattic-wp-error | wp-error | https://github.com/Automattic/wp-error | author:automattic description:Common logic to process WordPress.com API responses into JS Error objects
 github-automattic-mydb-preload | mydb-preload | https://github.com/Automattic/mydb-preload | author:automattic description:Express helper to preload mydb documents
 github-automattic-wpphotos-for-firefox-os | wpphotos-for-firefox-os | https://github.com/Automattic/wpphotos-for-firefox-os | author:automattic description:WPPhotos for Firefox OS
-github-automattic-vip-php-codesniffer | vip-php-codesniffer | https://github.com/Automattic/vip-php-codesniffer | author:automattic description:Ruleset customisations for WordPress.com VIP
-github-automattic-eventbrite-api-title-link-to-eb | eventbrite-api-title-link-to-eb | https://github.com/Automattic/eventbrite-api-title-link-to-eb | author:automattic description:Rather than linking to the post single view, event titles will link to the event on eventbrite.com.
-github-automattic-automattic_visualization_setup | automattic_visualization_setup | https://github.com/Automattic/automattic_visualization_setup | author:automattic description:Matplotlib settings for better appearance and WP.com styling
-github-automattic-Internacional | Internacional | https://github.com/Automattic/Internacional | author:automattic description:An abandoned attempt at supporting multi-language content on a single WordPress site
-github-automattic-eventbrite-api-display-private-events | eventbrite-api-display-private-events | https://github.com/Automattic/eventbrite-api-display-private-events | author:automattic description:Allow the Eventbrite API plugin to display private events from eventbrite.com.
-github-automattic-wpideas | wpideas | https://github.com/Automattic/wpideas | author:automattic description:Theme to track suggestions and feature requests.
-github-automattic-gp-user-last-active | gp-user-last-active | https://github.com/Automattic/gp-user-last-active | author:automattic description:Saves a last active in GP timestamp in user meta
-github-automattic-dp-style-guide | dp-style-guide | https://github.com/Automattic/dp-style-guide | author:automattic description:The Daily Post (dailypost.wordpress.com) Style Guide
-github-automattic-rest-api-tester | rest-api-tester | https://github.com/Automattic/rest-api-tester | author:automattic description:A set of tests for the WordPress API-REST
-github-automattic-php-phone | php-phone | https://github.com/Automattic/php-phone | author:automattic description:PHP port of node-phone
-github-automattic-bayesian_ab_testing | bayesian_ab_testing | https://github.com/Automattic/bayesian_ab_testing | author:automattic description:Simulating Bayesian AB Testing
-github-automattic-wc-algolia-places | wc-algolia-places | https://github.com/Automattic/wc-algolia-places | author:automattic description:Integrates Algolia Places into your WooCommerce store's address fields
-github-automattic-trace-json | trace-json | https://github.com/Automattic/trace-json | author:automattic description:Distributed tracing library
+github-automattic-es-wp-query | es-wp-query | https://github.com/Automattic/es-wp-query | author:automattic description:A drop-in replacement for WP_Query to leverage Elasticsearch for complex queries
+github-automattic-mydb-observer | mydb-observer | https://github.com/Automattic/mydb-observer | author:automattic description:Observe MongoDB collections and emit events to Redis (for MyDB)
 github-automattic-react-native-ios-wpcom-oauth | react-native-ios-wpcom-oauth | https://github.com/Automattic/react-native-ios-wpcom-oauth | author:automattic description:A react native component that implements OAuth for an iOS app and passes the bearer token to descendent components.
 github-automattic-homebrew-tap | homebrew-tap | https://github.com/Automattic/homebrew-tap | author:automattic description:A homebrew repository for various Automattic cli projects
 github-automattic-theme-components-local-development | theme-components-local-development | https://github.com/Automattic/theme-components-local-development | author:automattic description:Enables testing a local copy of Components on a local copy of http://components.underscores.me/.
-github-automattic-left-pad-0.0.3 | left-pad-0.0.3 | https://github.com/Automattic/left-pad-0.0.3 | author:automattic description:A copy of left-pad version 0.0.3 which was unpublished from npm
-github-automattic-mydb-reconnect | mydb-reconnect | https://github.com/Automattic/mydb-reconnect | author:automattic description:MyDB automatic reconnection plugin
-github-automattic-gp-master-glossary | gp-master-glossary | https://github.com/Automattic/gp-master-glossary | author:automattic description:GlotPress plugin that allows to define a project as source of a master (base) glossary.
+github-automattic-wpideas | wpideas | https://github.com/Automattic/wpideas | author:automattic description:Theme to track suggestions and feature requests.
+github-automattic-eventbrite-api-display-private-events | eventbrite-api-display-private-events | https://github.com/Automattic/eventbrite-api-display-private-events | author:automattic description:Allow the Eventbrite API plugin to display private events from eventbrite.com.
+github-automattic-jvectormap | jvectormap | https://github.com/Automattic/jvectormap | author:automattic 
 github-automattic-gp-warnings | gp-warnings | https://github.com/Automattic/gp-warnings | author:automattic description:GlotPress plugin: Warnings Dashboard
-github-automattic-vip-support | vip-support | https://github.com/Automattic/vip-support | author:automattic description:Manages the VIP Support Users on your site
-github-automattic-blicki | blicki | https://github.com/Automattic/blicki | author:automattic description:A WIKI plugin for WP. This is a project for the GM 2016.
-github-automattic-mydb-observer | mydb-observer | https://github.com/Automattic/mydb-observer | author:automattic description:Observe MongoDB collections and emit events to Redis (for MyDB)
-github-automattic-wpcom-oauth-cors | wpcom-oauth-cors | https://github.com/Automattic/wpcom-oauth-cors | author:automattic description:Implicit OAuth client-side module
+github-automattic-objects-to-objects | objects-to-objects | https://github.com/Automattic/objects-to-objects | author:automattic description:A WordPress.com safe version of Posts2Posts
+github-automattic-left-pad-0.0.3 | left-pad-0.0.3 | https://github.com/Automattic/left-pad-0.0.3 | author:automattic description:A copy of left-pad version 0.0.3 which was unpublished from npm
 github-automattic-VIP-Coding-Standards | VIP-Coding-Standards | https://github.com/Automattic/VIP-Coding-Standards | author:automattic description:PHP_CodeSniffer ruleset to enforce WordPress.com VIP coding standards
-github-automattic-inquire | inquire | https://github.com/Automattic/inquire | author:automattic description:Elasticsearch Inquire REST API Client
-github-automattic-chronos | chronos | https://github.com/Automattic/chronos | author:automattic description:An R script to analyze the distribution of time between two events
-github-automattic-calypso-pr-checker | calypso-pr-checker | https://github.com/Automattic/calypso-pr-checker | author:automattic description:A node command line app that can walk open PRs and look for things
-github-automattic-eventbrite-api-cache-one-hour | eventbrite-api-cache-one-hour | https://github.com/Automattic/eventbrite-api-cache-one-hour | author:automattic description:Reduce the Eventbrite API plugin's default cache time from one day to one hour
-github-automattic-image-widget-neue | image-widget-neue | https://github.com/Automattic/image-widget-neue | author:automattic description:Updated Dec 11, 2014
-github-automattic-vip-quickstart-skeleton | vip-quickstart-skeleton | https://github.com/Automattic/vip-quickstart-skeleton | author:automattic description:Updated Dec 23, 2014
-github-automattic-wp-info-extraction | wp-info-extraction | https://github.com/Automattic/wp-info-extraction | author:automattic description:WordPress Information Extraction lib. Consolidate all info extraction into one place.
-github-automattic-node-sw-cache | node-sw-cache | https://github.com/Automattic/node-sw-cache | author:automattic description:Auto-cache your application using a Service Worker to access it offline
-github-automattic-jetpack-wp-galleries | jetpack-wp-galleries | https://github.com/Automattic/jetpack-wp-galleries | author:automattic description:Laying the groundwork for Jetpack galleries to make it into core
-github-automattic-custom-colors-loader | custom-colors-loader | https://github.com/Automattic/custom-colors-loader | author:automattic description:Webpack loader for overwriting calypso base colors in a project-local sass file.
-github-automattic-esformatter-calypso | esformatter-calypso | https://github.com/Automattic/esformatter-calypso | author:automattic description:An esformatter configuration for wp-calypso and related projects
-github-automattic-vip-jetpack | vip-jetpack | https://github.com/Automattic/vip-jetpack | author:automattic description:Jetpack changes for VIP Go
-github-automattic-WPCOM-Legacy-Redirector | WPCOM-Legacy-Redirector | https://github.com/Automattic/WPCOM-Legacy-Redirector | author:automattic description:WordPress plugin for handling large volumes of legacy redirects in a scalable manner.
-github-automattic-grandjam | grandjam | https://github.com/Automattic/grandjam | author:automattic description:Grand Meetup 2013 - Learnup Project "JAM"
-github-automattic-mydb-session | mydb-session | https://github.com/Automattic/mydb-session | author:automattic description:Updated Dec 5, 2013
-github-automattic-Portobello | Portobello | https://github.com/Automattic/Portobello | author:automattic description:Handy Translation!
-github-automattic-wpcom-thumbnail-editor | wpcom-thumbnail-editor | https://github.com/Automattic/wpcom-thumbnail-editor | author:automattic description:Since thumbnails are generated on-demand on WordPress.com, thumbnail cropping location must be set via the URL.
+github-automattic-Internacional | Internacional | https://github.com/Automattic/Internacional | author:automattic description:An abandoned attempt at supporting multi-language content on a single WordPress site
+github-automattic-php-phone | php-phone | https://github.com/Automattic/php-phone | author:automattic description:PHP port of node-phone
+github-automattic-dp-style-guide | dp-style-guide | https://github.com/Automattic/dp-style-guide | author:automattic description:The Daily Post (dailypost.wordpress.com) Style Guide
+github-automattic-phabricator | phabricator | https://github.com/Automattic/phabricator | author:automattic description:Open software engineering platform and fun adventure game
+github-automattic-rest-api-tester | rest-api-tester | https://github.com/Automattic/rest-api-tester | author:automattic description:A set of tests for the WordPress API-REST
+github-automattic-trace-json | trace-json | https://github.com/Automattic/trace-json | author:automattic description:Distributed tracing library
+github-automattic-reactify | reactify | https://github.com/Automattic/reactify | author:automattic description:Browserify transform for JSX (superset of JavaScript used in React library by Facebook)
 github-automattic-wordpress-com-csharp-rest | wordpress-com-csharp-rest | https://github.com/Automattic/wordpress-com-csharp-rest | author:automattic description:WordPress.com REST Client for C # apps.
-github-automattic-qm-memcache-stats | qm-memcache-stats | https://github.com/Automattic/qm-memcache-stats | author:automattic description:Updated Aug 2, 2016
-github-automattic-wpcom-unpublished | wpcom-unpublished | https://github.com/Automattic/wpcom-unpublished | author:automattic description:WARN: This library is deprecated. https://github.com/Automattic/wpcom.js
+github-automattic-wpcom-oauth-cors | wpcom-oauth-cors | https://github.com/Automattic/wpcom-oauth-cors | author:automattic description:Implicit OAuth client-side module
+github-automattic-pem | pem | https://github.com/Automattic/pem | author:automattic description:Create private keys and certificates with node.js
+github-automattic-gp-master-glossary | gp-master-glossary | https://github.com/Automattic/gp-master-glossary | author:automattic description:GlotPress plugin that allows to define a project as source of a master (base) glossary.
+github-automattic-gp-user-last-active | gp-user-last-active | https://github.com/Automattic/gp-user-last-active | author:automattic description:Saves a last active in GP timestamp in user meta
+github-automattic-kafka-php | kafka-php | https://github.com/Automattic/kafka-php | author:automattic description:PHP client library for Apache Kafka
+github-automattic-mydb-reconnect | mydb-reconnect | https://github.com/Automattic/mydb-reconnect | author:automattic description:MyDB automatic reconnection plugin
+github-automattic-wp-term-management-tools | wp-term-management-tools | https://github.com/Automattic/wp-term-management-tools | author:automattic 
+github-automattic-wc-algolia-places | wc-algolia-places | https://github.com/Automattic/wc-algolia-places | author:automattic description:Integrates Algolia Places into your WooCommerce store's address fields
+github-automattic-selectionchange-polyfill | selectionchange-polyfill | https://github.com/Automattic/selectionchange-polyfill | author:automattic description:A polyfill that fires selectionchange events for Firefox
+github-automattic-vip-support | vip-support | https://github.com/Automattic/vip-support | author:automattic description:Manages the VIP Support Users on your site
+github-automattic-calypso-pr-checker | calypso-pr-checker | https://github.com/Automattic/calypso-pr-checker | author:automattic description:A node command line app that can walk open PRs and look for things
+github-automattic-chronos | chronos | https://github.com/Automattic/chronos | author:automattic description:An R script to analyze the distribution of time between two events
+github-automattic-wp_enqueue_media_override | wp_enqueue_media_override | https://github.com/Automattic/wp_enqueue_media_override | author:automattic description:Override wp_enqueue_media to be more performant
+github-automattic-seal | seal | https://github.com/Automattic/seal | author:automattic description:This is a Slack bot that publishes a team's pull requests to their Slack Channel, once provided the organisation name, the team members' github names, and a list of repos to follow. It is my first 20% project at GDS.
+github-automattic-sublime-jsfmt | sublime-jsfmt | https://github.com/Automattic/sublime-jsfmt | author:automattic description:jsfmt plugin for Sublime Text
+github-automattic-bayesian_ab_testing | bayesian_ab_testing | https://github.com/Automattic/bayesian_ab_testing | author:automattic description:Simulating Bayesian AB Testing
+github-automattic-brickhouse | brickhouse | https://github.com/Automattic/brickhouse | author:automattic description:Hive UDF's for the data warehouse
+github-automattic-sailthru-wordpress-plugin | sailthru-wordpress-plugin | https://github.com/Automattic/sailthru-wordpress-plugin | author:automattic description:Wordpress Plugin
+github-automattic-GlotPress-WP | GlotPress-WP | https://github.com/Automattic/GlotPress-WP | author:automattic description:🌍 🌎 🌏 GlotPress, a WordPress Plugin
+github-automattic-inquire | inquire | https://github.com/Automattic/inquire | author:automattic description:Elasticsearch Inquire REST API Client
+github-automattic-query-monitor | query-monitor | https://github.com/Automattic/query-monitor | author:automattic description:A WordPress plugin for monitoring database queries, hooks, conditionals, HTTP requests, query vars, environment, redirects, and more.
+github-automattic-wpcom-thumbnail-editor | wpcom-thumbnail-editor | https://github.com/Automattic/wpcom-thumbnail-editor | author:automattic description:Since thumbnails are generated on-demand on WordPress.com, thumbnail cropping location must be set via the URL.
+github-automattic-webpack-rtl-plugin | webpack-rtl-plugin | https://github.com/Automattic/webpack-rtl-plugin | author:automattic description:Webpack plugin to produce a rtl css bundle
 github-automattic-vvv-vip-go | vvv-vip-go | https://github.com/Automattic/vvv-vip-go | author:automattic description:A bootstrap template for running a VIP Go local development environment in VVV
+github-automattic-qm-memcache-stats | qm-memcache-stats | https://github.com/Automattic/qm-memcache-stats | author:automattic 
+github-automattic-lab | lab | https://github.com/Automattic/lab | author:automattic description:Node.js test framework
+github-automattic-vip-quickstart-skeleton | vip-quickstart-skeleton | https://github.com/Automattic/vip-quickstart-skeleton | author:automattic 
+github-automattic-image-widget-neue | image-widget-neue | https://github.com/Automattic/image-widget-neue | author:automattic 
+github-automattic-image-metadata-cruncher | image-metadata-cruncher | https://github.com/Automattic/image-metadata-cruncher | author:automattic description:A WordPress plugin that gives you ultimate controll over which image metadata WordPress extracts from an uploaded image and where and in what form it then goes.
+github-automattic-wp-info-extraction | wp-info-extraction | https://github.com/Automattic/wp-info-extraction | author:automattic description:WordPress Information Extraction lib. Consolidate all info extraction into one place.
+github-automattic-pmc-post-savior | pmc-post-savior | https://github.com/Automattic/pmc-post-savior | author:automattic description:Never get unexpectedly logged out when saving a post again.
+github-automattic-vagrant-photon | vagrant-photon | https://github.com/Automattic/vagrant-photon | author:automattic description:A Vagrant configuration for developing Photon
+github-automattic-wpcom-unpublished | wpcom-unpublished | https://github.com/Automattic/wpcom-unpublished | author:automattic description:WARN: This library is deprecated. https://github.com/Automattic/wpcom.js
+github-automattic-WPCOM-Legacy-Redirector | WPCOM-Legacy-Redirector | https://github.com/Automattic/WPCOM-Legacy-Redirector | author:automattic description:WordPress plugin for handling large volumes of legacy redirects in a scalable manner.
+github-automattic-nsedit | nsedit | https://github.com/Automattic/nsedit | author:automattic description:DNS Editor working with PowerDNS's new API
+github-automattic-WordPressWorldStickers | WordPressWorldStickers | https://github.com/Automattic/WordPressWorldStickers | author:automattic description:A simple iOS 10 iMessage sticker application with all of our favorite logos and mascots!
+github-automattic-simplenote-grammar-pegjs | simplenote-grammar-pegjs | https://github.com/Automattic/simplenote-grammar-pegjs | author:automattic description:Defined grammar and peg.js-based parser for Simplenote notes
+github-automattic-hapi-statsd | hapi-statsd | https://github.com/Automattic/hapi-statsd | author:automattic description:A hapi plugin for sending request round trip metrics to statsd
+github-automattic-eventbrite-api-cache-one-hour | eventbrite-api-cache-one-hour | https://github.com/Automattic/eventbrite-api-cache-one-hour | author:automattic description:Reduce the Eventbrite API plugin's default cache time from one day to one hour
+github-automattic-scribe-plugin-smart-lists | scribe-plugin-smart-lists | https://github.com/Automattic/scribe-plugin-smart-lists | author:automattic 
+github-automattic-mediawiki-extensions-cldr | mediawiki-extensions-cldr | https://github.com/Automattic/mediawiki-extensions-cldr | author:automattic description:Github mirror of MediaWiki extension cldr - our actual code is hosted with Gerrit (please see https://www.mediawiki.org/wiki/Developer_access for contributing)
 github-automattic-log-json-loggly | log-json-loggly | https://github.com/Automattic/log-json-loggly | author:automattic description:Loggly-powered log reader
+github-automattic-jenkins-php-api | jenkins-php-api | https://github.com/Automattic/jenkins-php-api | author:automattic description:PHP API for Jenkins
+github-automattic-stipple-wordpress-plugin | stipple-wordpress-plugin | https://github.com/Automattic/stipple-wordpress-plugin | author:automattic description:Add Stipple to your Wordpress blog
+github-automattic-php-src | php-src | https://github.com/Automattic/php-src | author:automattic description:The PHP Interpreter
 github-automattic-wpcom-shortcoder | wpcom-shortcoder | https://github.com/Automattic/wpcom-shortcoder | author:automattic description:Automate the insertion of WordPress shortcodes from the post editor using the media uploader. This project is old and unsupported. Check out Shortcake for a much better plugin.
-github-automattic-log-json | log-json | https://github.com/Automattic/log-json | author:automattic description:JSON stream logging utility
-github-automattic-oEmbed-Javascript-Fallback | oEmbed-Javascript-Fallback | https://github.com/Automattic/oEmbed-Javascript-Fallback | author:automattic description:A client-side fallback for oEmbed
+github-automattic-php-libevent | php-libevent | https://github.com/Automattic/php-libevent | author:automattic description:PHP libevent extension
+github-automattic-WP-Parser | WP-Parser | https://github.com/Automattic/WP-Parser | author:automattic 
+github-automattic-gm2016 | gm2016 | https://github.com/Automattic/gm2016 | author:automattic 
+github-automattic-g4-gm-servermattic | g4-gm-servermattic | https://github.com/Automattic/g4-gm-servermattic | author:automattic 
+github-automattic-esformatter-collapse-objects | esformatter-collapse-objects | https://github.com/Automattic/esformatter-collapse-objects | author:automattic description:esformatter plugin for conditionally collapsing object and array literals.
+github-automattic-webpack | webpack | https://github.com/Automattic/webpack | author:automattic description:A bundler for javascript and friends. Packs many modules into a few bundled assets. Code Splitting allows to load parts for the application on demand. Through "loaders" modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.
+github-automattic-sinon-qunit | sinon-qunit | https://github.com/Automattic/sinon-qunit | author:automattic description:A small Sinon.JS adapter for QUnit that provides automatic sandboxing of mocks and stubs
+github-automattic-gp-translation-propagation | gp-translation-propagation | https://github.com/Automattic/gp-translation-propagation | author:automattic description:Brings Translation Propagation to GlotPress.
+github-automattic-has-binary | has-binary | https://github.com/Automattic/has-binary | author:automattic description:Simple module to test if an object contains binary data
+github-automattic-Instagram-PHP-API | Instagram-PHP-API | https://github.com/Automattic/Instagram-PHP-API | author:automattic description:An easy-to-use PHP Class for accessing Instagram's API.
 github-automattic-wp-e2e-tests-jetpack | wp-e2e-tests-jetpack | https://github.com/Automattic/wp-e2e-tests-jetpack | author:automattic description:A wrapper repo to split off execution of the Jetpack e2e tests from Automattic/wp-e2e-tests
 github-automattic-wp-e2e-tests-visdiff | wp-e2e-tests-visdiff | https://github.com/Automattic/wp-e2e-tests-visdiff | author:automattic description:A wrapper repo to split off execution of the visual diff tests from Automattic/wp-e2e-tests
-github-automattic-vagrant-photon | vagrant-photon | https://github.com/Automattic/vagrant-photon | author:automattic description:A Vagrant configuration for developing Photon
-github-automattic-socket.io-stream | socket.io-stream | https://github.com/Automattic/socket.io-stream | author:automattic description:Updated Mar 12, 2014
+github-automattic-formsy-react | formsy-react | https://github.com/Automattic/formsy-react | author:automattic description:A form input builder and validator for React JS
+github-automattic-cached-request | cached-request | https://github.com/Automattic/cached-request | author:automattic description:Node.js module to perform HTTP requests with caching support
+github-automattic-socket.io-stream | socket.io-stream | https://github.com/Automattic/socket.io-stream | author:automattic 
+github-automattic-log-json | log-json | https://github.com/Automattic/log-json | author:automattic description:JSON stream logging utility
+github-automattic-php_impala_phar | php_impala_phar | https://github.com/Automattic/php_impala_phar | author:automattic description:PHP Impala client... can't let the Java and the Ruby folks have all of the fun !!!
+github-automattic-BuddyPress-VIP-Go | BuddyPress-VIP-Go | https://github.com/Automattic/BuddyPress-VIP-Go | author:automattic description:Makes BuddyPress' media work with Automattic's VIP Go hosting.
+github-automattic-redux | redux | https://github.com/Automattic/redux | author:automattic description:Predictable state container for JavaScript apps
+github-automattic-gm2016-grunion-editor | gm2016-grunion-editor | https://github.com/Automattic/gm2016-grunion-editor | author:automattic 
 github-automattic-babel-plugin-transform-wpcalypso-async | babel-plugin-transform-wpcalypso-async | https://github.com/Automattic/babel-plugin-transform-wpcalypso-async | author:automattic description:Async transformation utilities for the WordPress.com Calypso project
-github-automattic-gm2016-grunion-editor | gm2016-grunion-editor | https://github.com/Automattic/gm2016-grunion-editor | author:automattic description:Updated Oct 6, 2016
+github-automattic-deamdify | deamdify | https://github.com/Automattic/deamdify | author:automattic description:Browserify transform that converts AMD to CommonJS.
+github-automattic-wp-expiring-posts | wp-expiring-posts | https://github.com/Automattic/wp-expiring-posts | author:automattic 
+github-automattic-custom-colors-loader | custom-colors-loader | https://github.com/Automattic/custom-colors-loader | author:automattic description:Webpack loader for overwriting calypso base colors in a project-local sass file.
+github-automattic-node-sw-cache | node-sw-cache | https://github.com/Automattic/node-sw-cache | author:automattic description:Auto-cache your application using a Service Worker to access it offline
+github-automattic-jetpack-wp-galleries | jetpack-wp-galleries | https://github.com/Automattic/jetpack-wp-galleries | author:automattic description:Laying the groundwork for Jetpack galleries to make it into core
+github-automattic-oEmbed-Javascript-Fallback | oEmbed-Javascript-Fallback | https://github.com/Automattic/oEmbed-Javascript-Fallback | author:automattic description:A client-side fallback for oEmbed
+github-automattic-mydb-session | mydb-session | https://github.com/Automattic/mydb-session | author:automattic 
+github-automattic-esformatter-calypso | esformatter-calypso | https://github.com/Automattic/esformatter-calypso | author:automattic description:An esformatter configuration for wp-calypso and related projects
+github-automattic-vip-jetpack | vip-jetpack | https://github.com/Automattic/vip-jetpack | author:automattic description:Jetpack changes for VIP Go
+github-automattic-grandjam | grandjam | https://github.com/Automattic/grandjam | author:automattic description:Grand Meetup 2013 - Learnup Project "JAM"
+github-automattic-Portobello | Portobello | https://github.com/Automattic/Portobello | author:automattic description:Handy Translation!
+github-automattic-react-gettext | react-gettext | https://github.com/Automattic/react-gettext | author:automattic description:React components for gettext-based internationalization
+github-automattic-scribe-plugin-intelligent-unlink-command | scribe-plugin-intelligent-unlink-command | https://github.com/Automattic/scribe-plugin-intelligent-unlink-command | author:automattic 
+github-automattic-sqoop | sqoop | https://github.com/Automattic/sqoop | author:automattic description:Sqoop has moved to Apache!
+github-automattic-scribe-common | scribe-common | https://github.com/Automattic/scribe-common | author:automattic description:Common libraries for the Scribe editor and its plugins
+github-automattic-nbcs-wp-moderation-queue-alerts | nbcs-wp-moderation-queue-alerts | https://github.com/Automattic/nbcs-wp-moderation-queue-alerts | author:automattic description:Wordpress Moderation Queue Alerts

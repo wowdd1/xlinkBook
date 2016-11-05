@@ -10,35 +10,52 @@ github-donet-wcf | wcf | https://github.com/dotnet/wcf | author:donet descriptio
 github-donet-codeformatter | codeformatter | https://github.com/dotnet/codeformatter | author:donet description:Tool that uses Roslyn to automatically rewrite the source to follow our coding styles
 github-donet-docfx | docfx | https://github.com/dotnet/docfx | author:donet description:Tools for building and publishing API documentation for .NET projects
 github-donet-corert | corert | https://github.com/dotnet/corert | author:donet description:This repo contains CoreRT, a .NET Core runtime optimized for AOT (ahead of time compilation) scenarios, with the accompanying .NET Native compiler toolchain.
-github-donet-buildtools | buildtools | https://github.com/dotnet/buildtools | author:donet description:Build tools that are necessary for building the .NET Core projects
 github-donet-corefxlab | corefxlab | https://github.com/dotnet/corefxlab | author:donet description:This repo is for experimentation and exploring new ideas that may or may not make it into the main corefx repo.
+github-donet-buildtools | buildtools | https://github.com/dotnet/buildtools | author:donet description:Build tools that are necessary for building the .NET Core projects
 github-donet-standard | standard | https://github.com/dotnet/standard | author:donet description:This repo is building the .NET Standard
-github-donet-core-docs | core-docs | https://github.com/dotnet/core-docs | author:donet description:This repository contains .NET Documentation.
+github-donet-docs | docs | https://github.com/dotnet/docs | author:donet description:This repository contains .NET Documentation.
 github-donet-roslyn-project-system | roslyn-project-system | https://github.com/dotnet/roslyn-project-system | author:donet description:The C# and Visual Basic project system for Visual Studio "15"
-github-donet-roslyn-analyzers | roslyn-analyzers | https://github.com/dotnet/roslyn-analyzers | author:donet description:Updated Oct 17, 2016
+github-donet-roslyn-analyzers | roslyn-analyzers | https://github.com/dotnet/roslyn-analyzers | author:donet 
 github-donet-dotnet-docker | dotnet-docker | https://github.com/dotnet/dotnet-docker | author:donet description:This repo contains the base Docker images for working with .NET Core and the .NET Core Tools.
 github-donet-apireviews | apireviews | https://github.com/dotnet/apireviews | author:donet description:This repository contains the notes and API differences that we reviewed.
 github-donet-swag | swag | https://github.com/dotnet/swag | author:donet description:Artwork used to create .NET Foundation swag (T-Shirts, Mugs etc)
 github-donet-dotnet-ci | dotnet-ci | https://github.com/dotnet/dotnet-ci | author:donet description:Repository containing scripting for the dotnet-ci Jenkins instance.
 github-donet-dotnet.github.io | dotnet.github.io | https://github.com/dotnet/dotnet.github.io | author:donet description:The source for the dotnet.github.io site
 github-donet-training-tutorials | training-tutorials | https://github.com/dotnet/training-tutorials | author:donet description:Getting started tutorials for C# and ASP.NET
+github-donet-sdk | sdk | https://github.com/dotnet/sdk | author:donet description:Core functionality needed to create .NET Core projects, that is shared between VisualStudio and CLI
+github-donet-dotnet-docker-samples | dotnet-docker-samples | https://github.com/dotnet/dotnet-docker-samples | author:donet description:.NET Core Docker samples.
 github-donet-core-setup | core-setup | https://github.com/dotnet/core-setup | author:donet description:Installer packages for the .NET Core runtime and libraries
 github-donet-dotnet-docker-nightly | dotnet-docker-nightly | https://github.com/dotnet/dotnet-docker-nightly | author:donet description:This repo contains the base Docker image for working with nightly builds of .NET Core and associated tooling.
 github-donet-corefx-tools | corefx-tools | https://github.com/dotnet/corefx-tools | author:donet description:Place to include various misc tools for .NET and .NET Core.
-github-donet-roslyn-analyzers-contrib | roslyn-analyzers-contrib | https://github.com/dotnet/roslyn-analyzers-contrib | author:donet description:Updated Nov 21, 2015
-github-donet-netcorecli-fsc | netcorecli-fsc | https://github.com/dotnet/netcorecli-fsc | author:donet description:Updated Sep 15, 2016
+github-donet-netcorecli-fsc | netcorecli-fsc | https://github.com/dotnet/netcorecli-fsc | author:donet 
+github-donet-roslyn-analyzers-contrib | roslyn-analyzers-contrib | https://github.com/dotnet/roslyn-analyzers-contrib | author:donet 
 github-donet-versions | versions | https://github.com/dotnet/versions | author:donet description:This repo contains information about the various component versions that ship with .NET Core.
+github-donet-jitutils | jitutils | https://github.com/dotnet/jitutils | author:donet 
 github-donet-coreclr.xunit | coreclr.xunit | https://github.com/dotnet/coreclr.xunit | author:donet description:xUnit.net runner for CoreCLR unit test projects
-github-donet-jitutils | jitutils | https://github.com/dotnet/jitutils | author:donet description:Updated Oct 19, 2016
-github-donet-dotnet-docker-samples | dotnet-docker-samples | https://github.com/dotnet/dotnet-docker-samples | author:donet description:.NET Core Docker samples.
 github-donet-symstore | symstore | https://github.com/dotnet/symstore | author:donet description:Implements API for publishing and retrieval of symbols and other debug artifacts from symbol store.
-github-donet-corefx-testdata | corefx-testdata | https://github.com/dotnet/corefx-testdata | author:donet description:Test assets that are required by the corefx repository, and referenced as nuget packages.
 github-donet-symreader | symreader | https://github.com/dotnet/symreader | author:donet description:Managed definitions for COM interfaces exposed by DiaSymReader APIs
-github-donet-sdk | sdk | https://github.com/dotnet/sdk | author:donet description:Core functionality needed to create .NET Core projects, that is shared between VisualStudio and CLI
+github-donet-corefx-testdata | corefx-testdata | https://github.com/dotnet/corefx-testdata | author:donet description:Test assets that are required by the corefx repository, and referenced as nuget packages.
 github-donet-port-to-core | port-to-core | https://github.com/dotnet/port-to-core | author:donet description:This repo contains portability analysis reports.
 github-donet-import-comments | import-comments | https://github.com/dotnet/import-comments | author:donet description:Tool which imports triple-slash comments into .NET Core Std Lib code
-github-donet-features | features | https://github.com/dotnet/features | author:donet description:This repository contains the source of the .NET Feature catalog
-github-donet-citest | citest | https://github.com/dotnet/citest | author:donet description:CI Test Repo
 github-donet-interactive-window | interactive-window | https://github.com/dotnet/interactive-window | author:donet description:Visual Studio Interactive Window
+github-donet-features | features | https://github.com/dotnet/features | author:donet description:This repository contains the source of the .NET Feature catalog
 github-donet-symreader-portable | symreader-portable | https://github.com/dotnet/symreader-portable | author:donet description:Reader of Portable PDBs format that implements DiaSymReader interfaces (ISymUnmanagedReader, ISymUnmanagedBinder, etc.).
-github-donet-templating | templating | https://github.com/dotnet/templating | author:donet description:Updated Oct 13, 2016
+github-donet-citest | citest | https://github.com/dotnet/citest | author:donet description:CI Test Repo
+github-donet-dnx.xunit | dnx.xunit | https://github.com/dotnet/dnx.xunit | author:donet description:DNX runner for xUnit.net (please open issues in https://github.com/xunit/xunit)
+github-donet-templating | templating | https://github.com/dotnet/templating | author:donet 
+github-donet-SourceBrowser | SourceBrowser | https://github.com/dotnet/SourceBrowser | author:donet description:Source browser website generator that powers http://referencesource.microsoft.com and http://source.roslyn.io
+github-donet-docs.zh-cn | docs.zh-cn | https://github.com/dotnet/docs.zh-cn | author:donet 
+github-donet-docs.pl-pl | docs.pl-pl | https://github.com/dotnet/docs.pl-pl | author:donet 
+github-donet-docs.it-it | docs.it-it | https://github.com/dotnet/docs.it-it | author:donet 
+github-donet-docs.de-de | docs.de-de | https://github.com/dotnet/docs.de-de | author:donet 
+github-donet-docs.ru-ru | docs.ru-ru | https://github.com/dotnet/docs.ru-ru | author:donet 
+github-donet-docs.fr-fr | docs.fr-fr | https://github.com/dotnet/docs.fr-fr | author:donet 
+github-donet-source-indexer | source-indexer | https://github.com/dotnet/source-indexer | author:donet description:This repo contains the code for building http://source.dot.net
+github-donet-docs.tr-tr | docs.tr-tr | https://github.com/dotnet/docs.tr-tr | author:donet 
+github-donet-docs.pt-br | docs.pt-br | https://github.com/dotnet/docs.pt-br | author:donet 
+github-donet-docs.cs-cz | docs.cs-cz | https://github.com/dotnet/docs.cs-cz | author:donet 
+github-donet-docs.zh-tw | docs.zh-tw | https://github.com/dotnet/docs.zh-tw | author:donet 
+github-donet-MVPSummitHackathon2016 | MVPSummitHackathon2016 | https://github.com/dotnet/MVPSummitHackathon2016 | author:donet description:Samples for the CLI extensibility hackathon for MVP Summit 2016 in Redmond!
+github-donet-docs.ja-jp | docs.ja-jp | https://github.com/dotnet/docs.ja-jp | author:donet 
+github-donet-docs.ko-kr | docs.ko-kr | https://github.com/dotnet/docs.ko-kr | author:donet 
+github-donet-docs.es-es | docs.es-es | https://github.com/dotnet/docs.es-es | author:donet 

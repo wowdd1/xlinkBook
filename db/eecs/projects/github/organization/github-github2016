@@ -37,39 +37,117 @@ github-github-hoosegow | hoosegow | https://github.com/github/hoosegow | author:
 github-github-mentorships | mentorships | https://github.com/github/mentorships | author:github description:GitHub Open Source Mentorships
 github-github-graphql-client | graphql-client | https://github.com/github/graphql-client | author:github description:A Ruby library for declaring, composing and executing GraphQL queries
 github-github-ccql | ccql | https://github.com/github/ccql | author:github description:Multi server MySQL client
+github-github-game-off-2016 | game-off-2016 | https://github.com/github/game-off-2016 | author:github description:GitHub's month-long game jam 🎮 November 2016
 github-github-GitPad | GitPad | https://github.com/github/GitPad | author:github description:Notepad.exe as Git commit editor
 github-github-dat-analysis | dat-analysis | https://github.com/github/dat-analysis | author:github description:Analyze results from dat-science.
+github-github-resque | resque | https://github.com/github/resque | author:github description:Used by Enterprise! Resque is a Redis-backed Ruby library for controlling background jobs.
 github-github-github-ldap | github-ldap | https://github.com/github/github-ldap | author:github description:LDAP client for humans. Part of GitHub Enterprise.
-github-github-game-off-2013 | game-off-2013 | https://github.com/github/game-off-2013 | author:github description:Updated Aug 10, 2014
+github-github-gollum | gollum | https://github.com/github/gollum | author:github description:Unsupported — use https://github.com/gollum/gollum!
 github-github-github-graphql-rails-example | github-graphql-rails-example | https://github.com/github/github-graphql-rails-example | author:github description:Example Rails app using GitHub's GraphQL API
+github-github-statsd-ruby | statsd-ruby | https://github.com/github/statsd-ruby | author:github description:A Ruby Statsd client.
+github-github-game-off-2013 | game-off-2013 | https://github.com/github/game-off-2013 | author:github 
+github-github-ruby | ruby | https://github.com/github/ruby | author:github description:The Ruby Programming Language
 github-github-generator-hubot | generator-hubot | https://github.com/github/generator-hubot | author:github description:Hubot generator for Yeoman
+github-github-octocatalog-diff | octocatalog-diff | https://github.com/github/octocatalog-diff | author:github description:Compile Puppet catalogs from 2 branches, versions, etc., and compare them
 github-github-elastomer-client | elastomer-client | https://github.com/github/elastomer-client | author:github description:A library for interacting with Elasticsearch
+github-github-grit | grit | https://github.com/github/grit | author:github description:Grit gives you object oriented read/write access to Git repositories via Ruby.
+github-github-rails | rails | https://github.com/github/rails | author:github description:Ruby on Rails + GitHub patches
 github-github-training-utils | training-utils | https://github.com/github/training-utils | author:github description:A series of Bash and ZShell scripts useful when teaching about git and GitHub
 github-github-version_sorter | version_sorter | https://github.com/github/version_sorter | author:github description:Fast sorting of version numbers
 github-github-mysql-haproxy-xinetd | mysql-haproxy-xinetd | https://github.com/github/mysql-haproxy-xinetd | author:github description:Context aware MySQL Replica pools via HAProxy, sample configs & scripts
-github-github-tainted_hash | tainted_hash | https://github.com/github/tainted_hash | author:github description:Updated Sep 19, 2014
+github-github-OHHTTPStubs | OHHTTPStubs | https://github.com/github/OHHTTPStubs | author:github description:A class to stub network requests easily: test your apps with fake network data (stubbed from file) and custom response time
 github-github-include-fragment-element | include-fragment-element | https://github.com/github/include-fragment-element | author:github description:A Client Side Includes tag
+github-github-tainted_hash | tainted_hash | https://github.com/github/tainted_hash | author:github 
 github-github-pages-health-check | pages-health-check | https://github.com/github/pages-health-check | author:github description:Checks your GitHub Pages site for common DNS configuration issues
+github-github-expecta | expecta | https://github.com/github/expecta | author:github description:A Matcher Framework for Objective-C/Cocoa
+github-github-specta | specta | https://github.com/github/specta | author:github description:A light-weight TDD / BDD framework for Objective-C & Cocoa
 github-github-go-opstocat | go-opstocat | https://github.com/github/go-opstocat | author:github description:DEPRECATED
-github-github-elasticsearch-srv-discovery | elasticsearch-srv-discovery | https://github.com/github/elasticsearch-srv-discovery | author:github description:Elasticsearch discovery with SRV records
+github-github-ledbetter | ledbetter | https://github.com/github/ledbetter | author:github description:Script that scrapes alert statistics from Nagios and reports them to Graphite
+github-github-msysgit | msysgit | https://github.com/github/msysgit | author:github description:The version of msysGit that ships with GitHub for Windows
 github-github-homebrew-bootstrap | homebrew-bootstrap | https://github.com/github/homebrew-bootstrap | author:github description:A series of helper scripts to reduce duplication across `script/bootstrap`s.
+github-github-elasticsearch-srv-discovery | elasticsearch-srv-discovery | https://github.com/github/elasticsearch-srv-discovery | author:github description:Elasticsearch discovery with SRV records
 github-github-open-source-survey | open-source-survey | https://github.com/github/open-source-survey | author:github description:The Open Source Survey
+github-github-brakeman | brakeman | https://github.com/github/brakeman | author:github description:A static analysis security vulnerability scanner for Ruby on Rails applications
+github-github-AFNetworking | AFNetworking | https://github.com/github/AFNetworking | author:github description:A delightful iOS and OS X networking framework
+github-github-nugget | nugget | https://github.com/github/nugget | author:github description:http integration test service
 github-github-maturity-model | maturity-model | https://github.com/github/maturity-model | author:github description:A maturity model for adopting open source
+github-github-evenflow | evenflow | https://github.com/github/evenflow | author:github description:sFlow to Graphite bridge
 github-github-ernicorn | ernicorn | https://github.com/github/ernicorn | author:github description:Ruby BERTRPC server based on Unicorn
 github-github-ohnogit | ohnogit | https://github.com/github/ohnogit | author:github description:For when you have to use git in nodejs.
+github-github-Quick | Quick | https://github.com/github/Quick | author:github description:A behavior-driven development test framework for Swift and Objective-C.
+github-github-testrepo | testrepo | https://github.com/github/testrepo | author:github description:DON'T DELETE THIS. USED FOR MONITORING AND WHATNOT.
 github-github-pong | pong | https://github.com/github/pong | author:github description:Auxiliary repository for external ping checks
 github-github-game-o | game-o | https://github.com/github/game-o | author:github description:O! a Cut.js game
-github-github-testrepo | testrepo | https://github.com/github/testrepo | author:github description:DON'T DELETE THIS. USED FOR MONITORING AND WHATNOT.
-github-github-nagios-plugins-github | nagios-plugins-github | https://github.com/github/nagios-plugins-github | author:github description:Updated Mar 26, 2014
+github-github-url-polyfill | url-polyfill | https://github.com/github/url-polyfill | author:github description:URL parser in JavaScript
+github-github-MASPreferences | MASPreferences | https://github.com/github/MASPreferences | author:github description:Custom implementation of Preferences window in Cocoa applications for Mac OS X
+github-github-circuitbreaker | circuitbreaker | https://github.com/github/circuitbreaker | author:github description:Circuit Breakers in Go
 github-github-omniauth | omniauth | https://github.com/github/omniauth | author:github description:OmniAuth is a flexible authentication system utilizing Rack middleware.
-github-github-eslint-plugin-github | eslint-plugin-github | https://github.com/github/eslint-plugin-github | author:github description:Updated Sep 30, 2016
+github-github-nagios-plugins-github | nagios-plugins-github | https://github.com/github/nagios-plugins-github | author:github 
+github-github-aws-s3 | aws-s3 | https://github.com/github/aws-s3 | author:github description:Fork of AWS-S3 with some custom patches. Removes const_missing hacks like the jaf-s3 gem.
+github-github-uiimage-from-animated-gif | uiimage-from-animated-gif | https://github.com/github/uiimage-from-animated-gif | author:github description:A UIImage category that loads animated GIFs
+github-github-eslint-plugin-github | eslint-plugin-github | https://github.com/github/eslint-plugin-github | author:github 
+github-github-node-statsd | node-statsd | https://github.com/github/node-statsd | author:github description:node.js client for Etsy'd StatsD server
 github-github-codemirror-contrib | codemirror-contrib | https://github.com/github/codemirror-contrib | author:github description:CodeMirror community contributions
 github-github-cas-overlay | cas-overlay | https://github.com/github/cas-overlay | author:github description:Maven overlay for local CAS development and testing
+github-github-backstop | backstop | https://github.com/github/backstop | author:github description:HTTP service for submitting metrics to Graphite
+github-github-veewee | veewee | https://github.com/github/veewee | author:github description:Easing the building of vagrant boxes
+github-github-Nimble | Nimble | https://github.com/github/Nimble | author:github description:A Matcher Framework for Swift and Objective-C
+github-github-sprockets-rails | sprockets-rails | https://github.com/github/sprockets-rails | author:github description:Sprockets Rails integration
+github-github-puppetlabs-puppet | puppetlabs-puppet | https://github.com/github/puppetlabs-puppet | author:github description:Server automation framework and application
+github-github-facter | facter | https://github.com/github/facter | author:github description:Collect and display system facts
+github-github-aptly | aptly | https://github.com/github/aptly | author:github description:aptly - Debian repository management tool
+github-github-nagioseasier-module | nagioseasier-module | https://github.com/github/nagioseasier-module | author:github description:Make nagios easier to use, because you deserve it.
+github-github-azure-quickstart-templates | azure-quickstart-templates | https://github.com/github/azure-quickstart-templates | author:github description:Azure Quickstart Templates
+github-github-serialized_attributes | serialized_attributes | https://github.com/github/serialized_attributes | author:github description:UNMAINTAINED - kind of a bridge between using AR and a full blown schema-free db
+github-github-hubot-slack | hubot-slack | https://github.com/github/hubot-slack | author:github 
 github-github-banana_phone | banana_phone | https://github.com/github/banana_phone | author:github description:BananaPhone is RPC for BananaPack
+github-github-html-pipeline | html-pipeline | https://github.com/github/html-pipeline | author:github description:HTML processing filters and utilities
+github-github-food-recipes | food-recipes | https://github.com/github/food-recipes | author:github description:Honest-to-goodness "real food" recipes
+github-github-bert | bert | https://github.com/github/bert | author:github description:BERT (Binary ERlang Term) serialization library for Ruby.
+github-github-foreman | foreman | https://github.com/github/foreman | author:github description:Manage Procfile-based applications
+github-github-litterbox | litterbox | https://github.com/github/litterbox | author:github description:a place to hold your turds and nuggets
+github-github-grocer | grocer | https://github.com/github/grocer | author:github description:Pushing your Apple notifications since 2012.
 github-github-GHKeyBrowser | GHKeyBrowser | https://github.com/github/GHKeyBrowser | author:github description:GitHub Key Verification Helper
+github-github-SharpDevelop | SharpDevelop | https://github.com/github/SharpDevelop | author:github description:#develop (short for SharpDevelop) is a free IDE for .NET programming languages.
+github-github-graphql-relay-walker | graphql-relay-walker | https://github.com/github/graphql-relay-walker | author:github description:Walk the graph
 github-github-puppet-aptmirror | puppet-aptmirror | https://github.com/github/puppet-aptmirror | author:github description:Mirror of Puppet's APT repo
+github-github-posix-spawn | posix-spawn | https://github.com/github/posix-spawn | author:github description:Fast Process::spawn for Rubys >= 1.8.7 based on the posix_spawn() system interfaces
+github-github-rack | rack | https://github.com/github/rack | author:github description:a modular Ruby webserver interface
+github-github-octo-recipes | octo-recipes | https://github.com/github/octo-recipes | author:github description:A GitHub repository used to collaborate on recipes
+github-github-braintree-encryption.js | braintree-encryption.js | https://github.com/github/braintree-encryption.js | author:github description:Javascript Library for Client-side Encryption with Braintree
+github-github-puppetlabs-puppetdb | puppetlabs-puppetdb | https://github.com/github/puppetlabs-puppetdb | author:github description:Centralized Puppet Storage
+github-github-libgit2sharp | libgit2sharp | https://github.com/github/libgit2sharp | author:github description:Git + .Net/Mono = ❤
+github-github-lua-nginx-module | lua-nginx-module | https://github.com/github/lua-nginx-module | author:github description:Embed the Power of Lua into NGINX HTTP servers
+github-github-winbootstrap | winbootstrap | https://github.com/github/winbootstrap | author:github 
+github-github-garethr-docker | garethr-docker | https://github.com/github/garethr-docker | author:github description:Puppet module for managing docker
+github-github-fake_braintree | fake_braintree | https://github.com/github/fake_braintree | author:github description:A Braintree so fake that you can avoid hitting Braintree servers in tests.
+github-github-rubycas-server | rubycas-server | https://github.com/github/rubycas-server | author:github description:Provides single sign-on authentication for web applications, implementing the server-end of Jasig's CAS protocol.
+github-github-hubot-pager-me | hubot-pager-me | https://github.com/github/hubot-pager-me | author:github description:PagerDuty integration for Hubot
 github-github-git-msysgit | git-msysgit | https://github.com/github/git-msysgit | author:github description:GitHub version of msysgit/git
-github-github-octotales | octotales | https://github.com/github/octotales | author:github description:Updated May 2, 2016
-github-github-google-analytics | google-analytics | https://github.com/github/google-analytics | author:github description:Updated Apr 21, 2016
+github-github-octotales | octotales | https://github.com/github/octotales | author:github 
+github-github-mime-types | mime-types | https://github.com/github/mime-types | author:github description:Ruby MIME::Types implementation
+github-github-guard | guard | https://github.com/github/guard | author:github description:Guard is a command line tool to easily handle events on file system modifications.
+github-github-ghfw-build-extra | ghfw-build-extra | https://github.com/github/ghfw-build-extra | author:github description:Build scripts and customizations for creating the Git Shell environment included in GitHub Desktop
+github-github-fog | fog | https://github.com/github/fog | author:github description:The Ruby cloud services library.
+github-github-puppet-module-group | puppet-module-group | https://github.com/github/puppet-module-group | author:github description:Puppet Group Module (custom group providers)
+github-github-sprockets | sprockets | https://github.com/github/sprockets | author:github description:Rack-based asset packaging system
+github-github-kano-desktop | kano-desktop | https://github.com/github/kano-desktop | author:github 
+github-github-zero_push | zero_push | https://github.com/github/zero_push | author:github description:Ruby wrapper for the ZeroPush API
+github-github-Jcrop | Jcrop | https://github.com/github/Jcrop | author:github description:Jcrop (official) - Image Cropping Plugin for jQuery
+github-github-puppet-vault | puppet-vault | https://github.com/github/puppet-vault | author:github description:💾 📦 puppet-module to install Hashicorp's Vault.
+github-github-STUtils | STUtils | https://github.com/github/STUtils | author:github 
+github-github-railsless-deploy | railsless-deploy | https://github.com/github/railsless-deploy | author:github description:Obsolete, see http://www.capistranorb.com/ for new Capistrano with no Railsisms!
+github-github-orchestrator-agent | orchestrator-agent | https://github.com/github/orchestrator-agent | author:github description:MySQL replication topology manager - agent (daemon)
+github-github-redcloth | redcloth | https://github.com/github/redcloth | author:github description:RedCloth is a Ruby library for converting Textile into HTML.
+github-github-puppetlabs-apt | puppetlabs-apt | https://github.com/github/puppetlabs-apt | author:github description:Puppet module to help manage Apt
+github-github-google-analytics | google-analytics | https://github.com/github/google-analytics | author:github 
+github-github-node_diff_match_patch | node_diff_match_patch | https://github.com/github/node_diff_match_patch | author:github description:Repackaging of Neil Fraser's world famous diff_match_patch as a node.js module
+github-github-jquery.payment | jquery.payment | https://github.com/github/jquery.payment | author:github description:A general purpose library for building credit card forms, validating inputs and formatting numbers.
+github-github-babel | babel | https://github.com/github/babel | author:github description:🐠 Babel is a compiler for writing next generation JavaScript.
+github-github-puppet-consul_template | puppet-consul_template | https://github.com/github/puppet-consul_template | author:github description:A Puppet module to manage the config and jobs of Consul Template from Hashicorp
 github-github-requestIdleCallback | requestIdleCallback | https://github.com/github/requestIdleCallback | author:github description:Shims rIC in case a browser doesn't support it.
-github-github-octocatalog-diff | octocatalog-diff | https://github.com/github/octocatalog-diff | author:github description:Compile Puppet catalogs from 2 branches, versions, etc., and compare them
+github-github-puppet-sysfs | puppet-sysfs | https://github.com/github/puppet-sysfs | author:github description:Module to manage sysfs settings
+github-github-force-pr | force-pr | https://github.com/github/force-pr | author:github description:Basic webserver that responds to webhooks with success
+github-github-reconnecting-websocket | reconnecting-websocket | https://github.com/github/reconnecting-websocket | author:github description:A small decorator for the JavaScript WebSocket API that automatically reconnects
+github-github-Spoon-Knife | Spoon-Knife | https://github.com/github/Spoon-Knife | author:github description:This repo is for demonstration purposes only.
+github-github-go-mysql | go-mysql | https://github.com/github/go-mysql | author:github description:a powerful mysql toolset with Go

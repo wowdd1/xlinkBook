@@ -14,31 +14,42 @@ github-box-leche | leche | https://github.com/box/leche | author:box description
 github-box-RainGauge | RainGauge | https://github.com/box/RainGauge | author:box description:RainGauge
 github-box-rotunicode | rotunicode | https://github.com/box/rotunicode | author:box description:Python library for converting between a string of ASCII and Unicode chars maintaining readability
 github-box-box-android-apptoapp-sdk | box-android-apptoapp-sdk | https://github.com/box/box-android-apptoapp-sdk | author:box description:This SDK supports Box OneCloud integrations on Android that handle file ‘roundtrips’. That is, it enables file open-edit-save scenarios between the Box app and partner apps without the need for partner apps to authenticate a Box user independently.
-github-box-mysqlutilities | mysqlutilities | https://github.com/box/mysqlutilities | author:box description:Box's MySQL Utilities
 github-box-box-java-sdk | box-java-sdk | https://github.com/box/box-java-sdk | author:box description:The Box SDK for Java.
-github-box-brainy | brainy | https://github.com/box/brainy | author:box description:A faster, safer templating library for PHP
+github-box-mysqlutilities | mysqlutilities | https://github.com/box/mysqlutilities | author:box description:Box's MySQL Utilities
 github-box-mojito | mojito | https://github.com/box/mojito | author:box description:An automation platform that enables continuous localization.
+github-box-brainy | brainy | https://github.com/box/brainy | author:box description:A faster, safer templating library for PHP
 github-box-box-ios-sdk | box-ios-sdk | https://github.com/box/box-ios-sdk | author:box description:iOS SDK for the Box Content API
-github-box-shmock | shmock | https://github.com/box/shmock | author:box description:SHorthand for MOCKing in PHPUnit
-github-box-fast_assert | fast_assert | https://github.com/box/fast_assert | author:box description:Updated Jul 13, 2015
 github-box-box-node-sdk | box-node-sdk | https://github.com/box/box-node-sdk | author:box description:A Javascript interface for interacting with the Box API. You can find the node package at
+github-box-shmock | shmock | https://github.com/box/shmock | author:box description:SHorthand for MOCKing in PHPUnit
+github-box-fast_assert | fast_assert | https://github.com/box/fast_assert | author:box 
 github-box-StatusWolf | StatusWolf | https://github.com/box/StatusWolf | author:box description:Configurable operations dashboard designed to bring together the disparate datasources that operations teams need to manage and present them in a flexible and beautiful way.
 github-box-shalam | shalam | https://github.com/box/shalam | author:box description:A friendly tool for CSS spriting
 github-box-TestScribe | TestScribe | https://github.com/box/TestScribe | author:box description:Testing Made Easy
 github-box-box-salesforce-sdk | box-salesforce-sdk | https://github.com/box/box-salesforce-sdk | author:box description:Box SDK for Salesforce
-github-box-box-android-sdk | box-android-sdk | https://github.com/box/box-android-sdk | author:box description:Updated Oct 19, 2016
+github-box-box-android-sdk | box-android-sdk | https://github.com/box/box-android-sdk | author:box 
 github-box-clusterrunner-javascript-sdk | clusterrunner-javascript-sdk | https://github.com/box/clusterrunner-javascript-sdk | author:box description:ClusterRunner JavaScript SDK that works in both node and browsers
 github-box-Chrome-App-SDK | Chrome-App-SDK | https://github.com/box/Chrome-App-SDK | author:box description:Box SDK for Chrome Apps using AngularJS and RxJS
 github-box-box-ios-preview-sdk | box-ios-preview-sdk | https://github.com/box/box-ios-preview-sdk | author:box description:Box iOS Preview SDK
-github-box-box-ios-browse-sdk | box-ios-browse-sdk | https://github.com/box/box-ios-browse-sdk | author:box description:Updated Oct 7, 2016
+github-box-box-ios-browse-sdk | box-ios-browse-sdk | https://github.com/box/box-ios-browse-sdk | author:box 
 github-box-uploaders | uploaders | https://github.com/box/uploaders | author:box description:Write your own custom uploader to send 3D models/textures to Verold Studio.
-github-box-box-ios-share-sdk | box-ios-share-sdk | https://github.com/box/box-ios-share-sdk | author:box description:Updated Feb 16, 2016
-github-box-box-android-browse-sdk | box-android-browse-sdk | https://github.com/box/box-android-browse-sdk | author:box description:Updated Oct 20, 2016
-github-box-verold.github.io | verold.github.io | https://github.com/box/verold.github.io | author:box description:Verold developer docs and tutorials
-github-box-hdrCompressor | hdrCompressor | https://github.com/box/hdrCompressor | author:box description:Tool for saving HDR file as RGBM, RGBD, RGBE or LogLuv TGA file.
+github-box-three.js | three.js | https://github.com/box/three.js | author:box description:JavaScript 3D library.
+github-box-box-ios-share-sdk | box-ios-share-sdk | https://github.com/box/box-ios-share-sdk | author:box 
+github-box-box-android-browse-sdk | box-android-browse-sdk | https://github.com/box/box-android-browse-sdk | author:box 
+github-box-oauth2-php | oauth2-php | https://github.com/box/oauth2-php | author:box description:A server implementation of OAuth 2.0 in PHP.
+github-box-tcollector | tcollector | https://github.com/box/tcollector | author:box description:Data collection framework for OpenTSDB
 github-box-box-android-preview-sdk | box-android-preview-sdk | https://github.com/box/box-android-preview-sdk | author:box description:Box Android Preview SDK
+github-box-verold.github.io | verold.github.io | https://github.com/box/verold.github.io | author:box description:Verold developer docs and tutorials
+github-box-metrics | metrics | https://github.com/box/metrics | author:box description:Capturing JVM- and application-level metrics. So you know what's going on.
+github-box-etcdb | etcdb | https://github.com/box/etcdb | author:box description:Etcd PEP 249 driver.
+github-box-hdrCompressor | hdrCompressor | https://github.com/box/hdrCompressor | author:box description:Tool for saving HDR file as RGBM, RGBD, RGBE or LogLuv TGA file.
+github-box-opentsdb | opentsdb | https://github.com/box/opentsdb | author:box description:A scalable, distributed Time Series Database.
 github-box-box-windows-metadata-sdk-v2 | box-windows-metadata-sdk-v2 | https://github.com/box/box-windows-metadata-sdk-v2 | author:box description:Box Metadata C# SDK Plugin
-github-box-puppet-clusterrunner | puppet-clusterrunner | https://github.com/box/puppet-clusterrunner | author:box description:Installs ClusterRunner using Puppet
 github-box-homebrew-mojito | homebrew-mojito | https://github.com/box/homebrew-mojito | author:box description:Homebrew tap for Box/mojito
-github-box-box-android-share-sdk | box-android-share-sdk | https://github.com/box/box-android-share-sdk | author:box description:Updated Oct 20, 2016
+github-box-puppet-clusterrunner | puppet-clusterrunner | https://github.com/box/puppet-clusterrunner | author:box description:Installs ClusterRunner using Puppet
+github-box-android-simple-tooltip | android-simple-tooltip | https://github.com/box/android-simple-tooltip | author:box description:A simple library based on PopupWindow to create Tooltips on Android. ❤️
+github-box-curator | curator | https://github.com/box/curator | author:box description:ZooKeeper client wrapper and rich ZooKeeper framework
+github-box-asynchbase | asynchbase | https://github.com/box/asynchbase | author:box description:A fully asynchronous, non-blocking, thread-safe, high-performance HBase client.
+github-box-box-android-share-sdk | box-android-share-sdk | https://github.com/box/box-android-share-sdk | author:box 
+github-box-collins | collins | https://github.com/box/collins | author:box description:groovy kind of love
 github-box-box-java-sdk-samples | box-java-sdk-samples | https://github.com/box/box-java-sdk-samples | author:box description:Sample apps for the Box Java SDK.
+github-box-tsquery | tsquery | https://github.com/box/tsquery | author:box 

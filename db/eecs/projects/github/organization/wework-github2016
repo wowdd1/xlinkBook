@@ -1,5 +1,21 @@
 github-wework-express-universal-query-validator | express-universal-query-validator | https://github.com/wework/express-universal-query-validator | author:wework description:Express middleware to provide consistently parseable query parameters to universal applications.
 github-wework-wework.github.io | wework.github.io | https://github.com/wework/wework.github.io | author:wework description:[DEPRECATED] WeWork Engineering Blog
-github-wework-we-learn-react | we-learn-react | https://github.com/wework/we-learn-react | author:wework description:Updated Nov 5, 2015
+github-wework-we-learn-react | we-learn-react | https://github.com/wework/we-learn-react | author:wework 
+github-wework-env-universal | env-universal | https://github.com/wework/env-universal | author:wework description:Standard environment definition, utilities and constants for browser and node JavaScript applications
+github-wework-careday-api | careday-api | https://github.com/wework/careday-api | author:wework description:Project Careday API
+github-wework-dotenv-rails-safe | dotenv-rails-safe | https://github.com/wework/dotenv-rails-safe | author:wework description:An extension of the dotenv-rails gem that ensures setting of required environment variables
 github-wework-we-js-logger | we-js-logger | https://github.com/wework/we-js-logger | author:wework description:Univeral logger with transports to Rollbar and Logentries. Uses bunyan under the hood.
+github-wework-swagger-ui | swagger-ui | https://github.com/wework/swagger-ui | author:wework description:Swagger UI is a dependency-free collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.
+github-wework-headroom.js | headroom.js | https://github.com/wework/headroom.js | author:wework description:Give your pages some headroom. Hide your header until you need it
+github-wework-js-cookie | js-cookie | https://github.com/wework/js-cookie | author:wework description:A simple, lightweight JavaScript API for handling browser cookies
+github-wework-react-express-template | react-express-template | https://github.com/wework/react-express-template | author:wework description:Web app starter template using React, ES6, CoffeeScript, Express, and more
+github-wework-react-redux-universal-hot-example | react-redux-universal-hot-example | https://github.com/wework/react-redux-universal-hot-example | author:wework description:A starter boilerplate for a universal webapp using express, react, redux, webpack, and react-hot-loader
+github-wework-odometer | odometer | https://github.com/wework/odometer | author:wework description:Smoothly transitions numbers with ease. #hubspot-open-source
+github-wework-crypt_keeper | crypt_keeper | https://github.com/wework/crypt_keeper | author:wework description:Transparent ActiveRecord encryption
+github-wework-roots-webpack | roots-webpack | https://github.com/wework/roots-webpack | author:wework description:webpack extension for roots
 github-wework-we-interview | we-interview | https://github.com/wework/we-interview | author:wework description:Starter project for WeWork Digital technical interviews
+github-wework-netlify-cms | netlify-cms | https://github.com/wework/netlify-cms | author:wework description:A CMS for Static Site Generators
+github-wework-floatlabels.js | floatlabels.js | https://github.com/wework/floatlabels.js | author:wework description:Follows the famous Float Label Pattern. Built on jQuery.
+github-wework-huginn | huginn | https://github.com/wework/huginn | author:wework description:Build agents that monitor and act on your behalf. Your agents are standing by!
+github-wework-cloudinary_gem | cloudinary_gem | https://github.com/wework/cloudinary_gem | author:wework description:Cloudinary GEM for Ruby on Rails integration
+github-wework-react-typeahead | react-typeahead | https://github.com/wework/react-typeahead | author:wework description:Pure react-based typeahead and typeahead-tokenizer

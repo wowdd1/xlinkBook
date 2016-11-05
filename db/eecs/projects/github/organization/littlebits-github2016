@@ -1,0 +1,95 @@
+github-littlebits-react-popover | react-popover | https://github.com/littlebits/react-popover | author:littlebits description:A specification backed popover for ReactJS
+github-littlebits-cloud-client-api-http | cloud-client-api-http | https://github.com/littlebits/cloud-client-api-http | author:littlebits description:Lightweight wrapper for littleBits Cloud HTTP API
+github-littlebits-cloud-api-lessons | cloud-api-lessons | https://github.com/littlebits/cloud-api-lessons | author:littlebits description:Hardware workshop at NodeConf EU 2014
+github-littlebits-project-cloud-weather-dashboard | project-cloud-weather-dashboard | https://github.com/littlebits/project-cloud-weather-dashboard | author:littlebits 
+github-littlebits-www-developers | www-developers | https://github.com/littlebits/www-developers | author:littlebits description:littleBits Cloud developer documentation
+github-littlebits-bitCraft | bitCraft | https://github.com/littlebits/bitCraft | author:littlebits 
+github-littlebits-cloud-api | cloud-api | https://github.com/littlebits/cloud-api | author:littlebits description:Bootstrap the littleBits Cloud APIs into a client app
+github-littlebits-redis-graph | redis-graph | https://github.com/littlebits/redis-graph | author:littlebits description:CRUD actions against a graph model built on top of Redis
+github-littlebits-lbScratch | lbScratch | https://github.com/littlebits/lbScratch | author:littlebits description:This repository is for anybody who wants to use Scratch with the littleBits system, or help us develop code to do so.
+github-littlebits-scratch-littlebits-extension | scratch-littlebits-extension | https://github.com/littlebits/scratch-littlebits-extension | author:littlebits description:littleBits javascript extension for Scratch 2.0
+github-littlebits-hysteresis | hysteresis | https://github.com/littlebits/hysteresis | author:littlebits description:An implementation of hysteresis in JavaScript
+github-littlebits-i33-envelope | i33-envelope | https://github.com/littlebits/i33-envelope | author:littlebits 
+github-littlebits-i30-keyboard | i30-keyboard | https://github.com/littlebits/i30-keyboard | author:littlebits 
+github-littlebits-i36-microSequencer | i36-microSequencer | https://github.com/littlebits/i36-microSequencer | author:littlebits 
+github-littlebits-hapi-versions | hapi-versions | https://github.com/littlebits/hapi-versions | author:littlebits description:Easy versioning of hapi HTTP APIs
+github-littlebits-cloud-platform | cloud-platform | https://github.com/littlebits/cloud-platform | author:littlebits description:An inclusive open place for the discussion about the littleBits Cloud
+github-littlebits-w27-usb-I-O | w27-usb-I-O | https://github.com/littlebits/w27-usb-I-O | author:littlebits 
+github-littlebits-w18-CV | w18-CV | https://github.com/littlebits/w18-CV | author:littlebits 
+github-littlebits-w5-MIDI | w5-MIDI | https://github.com/littlebits/w5-MIDI | author:littlebits 
+github-littlebits-reactjs-nyc | reactjs-nyc | https://github.com/littlebits/reactjs-nyc | author:littlebits description:ReactJS-NYC meetup
+github-littlebits-w20-cloud | w20-cloud | https://github.com/littlebits/w20-cloud | author:littlebits 
+github-littlebits-i22-sequencer | i22-sequencer | https://github.com/littlebits/i22-sequencer | author:littlebits 
+github-littlebits-w6-arduino | w6-arduino | https://github.com/littlebits/w6-arduino | author:littlebits 
+github-littlebits-o24-synthspeaker | o24-synthspeaker | https://github.com/littlebits/o24-synthspeaker | author:littlebits 
+github-littlebits-i12-temperatureSensor | i12-temperatureSensor | https://github.com/littlebits/i12-temperatureSensor | author:littlebits 
+github-littlebits-cloudbit-output | cloudbit-output | https://github.com/littlebits/cloudbit-output | author:littlebits description:CLI utility for sending output to a cloudbit
+github-littlebits-stream-sift | stream-sift | https://github.com/littlebits/stream-sift | author:littlebits description:A minimal high-performance specification-backed stateful object matching engine
+github-littlebits-i17-timeout | i17-timeout | https://github.com/littlebits/i17-timeout | author:littlebits 
+github-littlebits-i16-pulse | i16-pulse | https://github.com/littlebits/i16-pulse | author:littlebits 
+github-littlebits-i32-filter | i32-filter | https://github.com/littlebits/i32-filter | author:littlebits 
+github-littlebits-i31-oscillator | i31-oscillator | https://github.com/littlebits/i31-oscillator | author:littlebits 
+github-littlebits-i34-random | i34-random | https://github.com/littlebits/i34-random | author:littlebits 
+github-littlebits-i20-soundTrigger | i20-soundTrigger | https://github.com/littlebits/i20-soundTrigger | author:littlebits 
+github-littlebits-i19-rollerSwitch | i19-rollerSwitch | https://github.com/littlebits/i19-rollerSwitch | author:littlebits 
+github-littlebits-i21-microphone | i21-microphone | https://github.com/littlebits/i21-microphone | author:littlebits 
+github-littlebits-twitter-stream-to-littlebits-cloud | twitter-stream-to-littlebits-cloud | https://github.com/littlebits/twitter-stream-to-littlebits-cloud | author:littlebits 
+github-littlebits-cloud-client-api-stream | cloud-client-api-stream | https://github.com/littlebits/cloud-client-api-stream | author:littlebits 
+github-littlebits-o2-longLED | o2-longLED | https://github.com/littlebits/o2-longLED | author:littlebits 
+github-littlebits-o3-rgbLED | o3-rgbLED | https://github.com/littlebits/o3-rgbLED | author:littlebits 
+github-littlebits-i37-mix | i37-mix | https://github.com/littlebits/i37-mix | author:littlebits 
+github-littlebits-o1-led | o1-led | https://github.com/littlebits/o1-led | author:littlebits 
+github-littlebits-o6-buzzer | o6-buzzer | https://github.com/littlebits/o6-buzzer | author:littlebits 
+github-littlebits-o7-irLed | o7-irLed | https://github.com/littlebits/o7-irLed | author:littlebits 
+github-littlebits-o4-vibrationMotor | o4-vibrationMotor | https://github.com/littlebits/o4-vibrationMotor | author:littlebits 
+github-littlebits-o5-dcMotor | o5-dcMotor | https://github.com/littlebits/o5-dcMotor | author:littlebits 
+github-littlebits-i35-delay | i35-delay | https://github.com/littlebits/i35-delay | author:littlebits 
+github-littlebits-i1-slideSwitch | i1-slideSwitch | https://github.com/littlebits/i1-slideSwitch | author:littlebits 
+github-littlebits-i2-toggleSwitch | i2-toggleSwitch | https://github.com/littlebits/i2-toggleSwitch | author:littlebits 
+github-littlebits-i11-pressureSensor | i11-pressureSensor | https://github.com/littlebits/i11-pressureSensor | author:littlebits 
+github-littlebits-i13-lightSensor | i13-lightSensor | https://github.com/littlebits/i13-lightSensor | author:littlebits 
+github-littlebits-i14-bendSensor | i14-bendSensor | https://github.com/littlebits/i14-bendSensor | author:littlebits 
+github-littlebits-i15-lightTrigger | i15-lightTrigger | https://github.com/littlebits/i15-lightTrigger | author:littlebits 
+github-littlebits-i5-slideDimmer | i5-slideDimmer | https://github.com/littlebits/i5-slideDimmer | author:littlebits 
+github-littlebits-i6-dimmer | i6-dimmer | https://github.com/littlebits/i6-dimmer | author:littlebits 
+github-littlebits-i7-remoteTrigger | i7-remoteTrigger | https://github.com/littlebits/i7-remoteTrigger | author:littlebits 
+github-littlebits-i8-motionTrigger | i8-motionTrigger | https://github.com/littlebits/i8-motionTrigger | author:littlebits 
+github-littlebits-bitlab-voteview | bitlab-voteview | https://github.com/littlebits/bitlab-voteview | author:littlebits description:Create and manage links between bitLab votes and cloudBits
+github-littlebits-w14-MakeyMakey | w14-MakeyMakey | https://github.com/littlebits/w14-MakeyMakey | author:littlebits 
+github-littlebits-w17-XOR | w17-XOR | https://github.com/littlebits/w17-XOR | author:littlebits 
+github-littlebits-w16-NAND | w16-NAND | https://github.com/littlebits/w16-NAND | author:littlebits 
+github-littlebits-w19-split | w19-split | https://github.com/littlebits/w19-split | author:littlebits 
+github-littlebits-w29-perf | w29-perf | https://github.com/littlebits/w29-perf | author:littlebits 
+github-littlebits-bitcons | bitcons | https://github.com/littlebits/bitcons | author:littlebits description:Feature-rich CSS-classified SVG icons of all littleBits bits
+github-littlebits-i23-threshold | i23-threshold | https://github.com/littlebits/i23-threshold | author:littlebits 
+github-littlebits-o18-irTransmitter | o18-irTransmitter | https://github.com/littlebits/o18-irTransmitter | author:littlebits 
+github-littlebits-o13-fan | o13-fan | https://github.com/littlebits/o13-fan | author:littlebits 
+github-littlebits-o9-bargraph | o9-bargraph | https://github.com/littlebits/o9-bargraph | author:littlebits 
+github-littlebits-o16-lightwire | o16-lightwire | https://github.com/littlebits/o16-lightwire | author:littlebits 
+github-littlebits-o15-UVled | o15-UVled | https://github.com/littlebits/o15-UVled | author:littlebits 
+github-littlebits-o14-brightLED | o14-brightLED | https://github.com/littlebits/o14-brightLED | author:littlebits 
+github-littlebits-w1-wire | w1-wire | https://github.com/littlebits/w1-wire | author:littlebits 
+github-littlebits-p3-usbPower | p3-usbPower | https://github.com/littlebits/p3-usbPower | author:littlebits 
+github-littlebits-p2-coinBattery | p2-coinBattery | https://github.com/littlebits/p2-coinBattery | author:littlebits 
+github-littlebits-p1-power | p1-power | https://github.com/littlebits/p1-power | author:littlebits 
+github-littlebits-team-workflow | team-workflow | https://github.com/littlebits/team-workflow | author:littlebits description:The workflow used by software teams at littleBits
+github-littlebits-o21-number | o21-number | https://github.com/littlebits/o21-number | author:littlebits 
+github-littlebits-gh-pivotal-integration | gh-pivotal-integration | https://github.com/littlebits/gh-pivotal-integration | author:littlebits 
+github-littlebits-o11-servo | o11-servo | https://github.com/littlebits/o11-servo | author:littlebits 
+github-littlebits-i25-mp3Player | i25-mp3Player | https://github.com/littlebits/i25-mp3Player | author:littlebits 
+github-littlebits-w2-branch | w2-branch | https://github.com/littlebits/w2-branch | author:littlebits 
+github-littlebits-w3-doubleOR | w3-doubleOR | https://github.com/littlebits/w3-doubleOR | author:littlebits 
+github-littlebits-w4-doubleAND | w4-doubleAND | https://github.com/littlebits/w4-doubleAND | author:littlebits 
+github-littlebits-w7-fork | w7-fork | https://github.com/littlebits/w7-fork | author:littlebits 
+github-littlebits-w8-latch | w8-latch | https://github.com/littlebits/w8-latch | author:littlebits 
+github-littlebits-w9-proto | w9-proto | https://github.com/littlebits/w9-proto | author:littlebits 
+github-littlebits-w10-inverter | w10-inverter | https://github.com/littlebits/w10-inverter | author:littlebits 
+github-littlebits-w11-wirelessReceiver | w11-wirelessReceiver | https://github.com/littlebits/w11-wirelessReceiver | author:littlebits 
+github-littlebits-w12-wirelessTransmitter | w12-wirelessTransmitter | https://github.com/littlebits/w12-wirelessTransmitter | author:littlebits 
+github-littlebits-w15-NOR | w15-NOR | https://github.com/littlebits/w15-NOR | author:littlebits 
+github-littlebits-babel-preset-littlebits | babel-preset-littlebits | https://github.com/littlebits/babel-preset-littlebits | author:littlebits description:A Babel preset for transforming javascript at littleBits
+github-littlebits-cloud-client-java | cloud-client-java | https://github.com/littlebits/cloud-client-java | author:littlebits description:littleBits Cloud Platform client library for JVM applications.
+github-littlebits-code-standards-js | code-standards-js | https://github.com/littlebits/code-standards-js | author:littlebits description:✍ JavaScript coding standards at littleBits
+github-littlebits-eslint | eslint | https://github.com/littlebits/eslint | author:littlebits description:ESLint review service
+github-littlebits-cloudBit-FW-releases | cloudBit-FW-releases | https://github.com/littlebits/cloudBit-FW-releases | author:littlebits description:Repo with release notes for cloudBit Firmware
+github-littlebits-i3-button | i3-button | https://github.com/littlebits/i3-button | author:littlebits 

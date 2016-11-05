@@ -1,2 +1,24 @@
-github-home24-Tailor-POC | Tailor-POC | https://github.com/Home24/Tailor-POC | author:home24 description:Updated Sep 5, 2016
+github-home24-nuka-carousel | nuka-carousel | https://github.com/Home24/nuka-carousel | author:home24 description:Pure React Carousel Component
+github-home24-FE-IntlTelInput | FE-IntlTelInput | https://github.com/Home24/FE-IntlTelInput | author:home24 description:A jQuery plugin for entering and validating international telephone numbers
+github-home24-FE-jqueryValidation | FE-jqueryValidation | https://github.com/Home24/FE-jqueryValidation | author:home24 description:jQuery Validation Plugin
+github-home24-Swiper | Swiper | https://github.com/Home24/Swiper | author:home24 description:Most modern mobile touch slider with hardware accelerated transitions
+github-home24-react-modal | react-modal | https://github.com/Home24/react-modal | author:home24 
+github-home24-fake_sns | fake_sns | https://github.com/Home24/fake_sns | author:home24 description:A fake implementation of AWS SNS to test against.
+github-home24-jQuery.mmenu | jQuery.mmenu | https://github.com/Home24/jQuery.mmenu | author:home24 description:The best jQuery plugin for app look-alike on- and off-canvas menus with sliding submenus for your website and webapp.
+github-home24-Magnifier.js | Magnifier.js | https://github.com/Home24/Magnifier.js | author:home24 description:Javascript library enabling magnifying glass effect on an images
+github-home24-slick | slick | https://github.com/Home24/slick | author:home24 description:the last carousel you'll ever need
+github-home24-DoctrineEncryptBundle | DoctrineEncryptBundle | https://github.com/Home24/DoctrineEncryptBundle | author:home24 description:Bundle allows you to create doctrine entities with fields that will be protected by encryption algorithms such as AES
+github-home24-react-slick | react-slick | https://github.com/Home24/react-slick | author:home24 description:React carousel component
+github-home24-fluent-plugin-gelf | fluent-plugin-gelf | https://github.com/Home24/fluent-plugin-gelf | author:home24 
+github-home24-FlexSlider | FlexSlider | https://github.com/Home24/FlexSlider | author:home24 description:An awesome, fully responsive jQuery slider plugin
+github-home24-react-tooltip | react-tooltip | https://github.com/Home24/react-tooltip | author:home24 description:react tooltip component
+github-home24-satis | satis | https://github.com/Home24/satis | author:home24 description:Simple static Composer repository generator
+github-home24-react-paginate | react-paginate | https://github.com/Home24/react-paginate | author:home24 description:A ReactJS component that creates a pagination
+github-home24-react-rater | react-rater | https://github.com/Home24/react-rater | author:home24 description:Interative star rater
+github-home24-node-zendesk | node-zendesk | https://github.com/Home24/node-zendesk | author:home24 description:a zendesk API client library for use with node.js
+github-home24-react-image-magnifier | react-image-magnifier | https://github.com/Home24/react-image-magnifier | author:home24 description:A react component that accepts a high-res source image and produces a magnifier window on mouse hover over the part of the image the cursor is over
+github-home24-Tailor-POC | Tailor-POC | https://github.com/Home24/Tailor-POC | author:home24 
+github-home24-gelf-rb | gelf-rb | https://github.com/Home24/gelf-rb | author:home24 description:Ruby GELF library (Graylog2 Extended Log Format). Download the Gem via Gemcutter. (https://rubygems.org/gems/gelf)
+github-home24-Codeception | Codeception | https://github.com/Home24/Codeception | author:home24 description:Full-stack testing PHP framework
+github-home24-monolog | monolog | https://github.com/Home24/monolog | author:home24 description:Sends your logs to files, sockets, inboxes, databases and various web services
 github-home24-eslint-config-home24 | eslint-config-home24 | https://github.com/Home24/eslint-config-home24 | author:home24 description:javascript styleguides

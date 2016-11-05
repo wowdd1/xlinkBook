@@ -12,17 +12,113 @@ github-lyft-bandit-high-entropy-string | bandit-high-entropy-string | https://gi
 github-lyft-discovery | discovery | https://github.com/lyft/discovery | author:lyft description:This service provides a REST interface for querying for the list of hosts that belong to all microservices.
 github-lyft-python-kmsauth | python-kmsauth | https://github.com/lyft/python-kmsauth | author:lyft description:A python library for reusing KMS for your own authentication and authorization
 github-lyft-opsreview | opsreview | https://github.com/lyft/opsreview | author:lyft description:Compile a report of recent PagerDuty alerts for a single escalation policy.
+github-lyft-huxley | huxley | https://github.com/lyft/huxley | author:lyft description:Huxley is a test-like system for catching visual regressions in Web applications. It watches you browse, takes screenshots, and tells you when they change.
 github-lyft-collectd-statsd | collectd-statsd | https://github.com/lyft/collectd-statsd | author:lyft description:collectd plugin to write to statsd
 github-lyft-dynamodb-hive-serde | dynamodb-hive-serde | https://github.com/lyft/dynamodb-hive-serde | author:lyft description:Hive Deserializer for DynamoDB backup data format
+github-lyft-statsrelay | statsrelay | https://github.com/lyft/statsrelay | author:lyft description:A consistent-hashing relay for statsd and carbon metrics
+github-lyft-SwiftLint | SwiftLint | https://github.com/lyft/SwiftLint | author:lyft description:An experimental tool to enforce Swift style and conventions.
 github-lyft-awseipext | awseipext | https://github.com/lyft/awseipext | author:lyft description:AWS Lambda that extends the EC2 Elastic IP API
 github-lyft-python-confidant-client | python-confidant-client | https://github.com/lyft/python-confidant-client | author:lyft description:Client library and CLI for Confidant
 github-lyft-fake_sqs | fake_sqs | https://github.com/lyft/fake_sqs | author:lyft description:An implementation of a local SQS service.
+github-lyft-Lyft-iOS-sdk | Lyft-iOS-sdk | https://github.com/lyft/Lyft-iOS-sdk | author:lyft description:Public Lyft SDK for iOS
+github-lyft-statsite | statsite | https://github.com/lyft/statsite | author:lyft description:C implementation of statsd
+github-lyft-salt | salt | https://github.com/lyft/salt | author:lyft description:Central system and configuration manager
 github-lyft-circonus-statsd-backend | circonus-statsd-backend | https://github.com/lyft/circonus-statsd-backend | author:lyft description:Statsd backend to send metrics to Circonus
+github-lyft-pygerduty | pygerduty | https://github.com/lyft/pygerduty | author:lyft description:A Python library for PagerDuty.
 github-lyft-CLA | CLA | https://github.com/lyft/CLA | author:lyft description:Contributor License Agreement (CLA) for Lyft's open source projects
+github-lyft-mixpanel-iphone | mixpanel-iphone | https://github.com/lyft/mixpanel-iphone | author:lyft description:iPhone tracking library for Mixpanel Analytics
+github-lyft-lyft-django-sample | lyft-django-sample | https://github.com/lyft/lyft-django-sample | author:lyft description:An API integration example using Django and social-auth.
+github-lyft-ApplePayStubs | ApplePayStubs | https://github.com/lyft/ApplePayStubs | author:lyft description:Test your Apple Pay integration without Apple Pay
+github-lyft-flask-googleauth | flask-googleauth | https://github.com/lyft/flask-googleauth | author:lyft description:Super simple Google OpenID and Federated Auth for Flask apps.
+github-lyft-vagrant-vmware-appcatalyst | vagrant-vmware-appcatalyst | https://github.com/lyft/vagrant-vmware-appcatalyst | author:lyft description:Vagrant provider for VMware AppCatalyst®
+github-lyft-swagger-py-codegen | swagger-py-codegen | https://github.com/lyft/swagger-py-codegen | author:lyft description:Flask RESTful Application Code Generator
 github-lyft-lyft.github.io | lyft.github.io | https://github.com/lyft/lyft.github.io | author:lyft description:Documentation site for lyft.github.io
-github-lyft-heroku-buildpack-php | heroku-buildpack-php | https://github.com/lyft/heroku-buildpack-php | author:lyft description:Updated Jun 26, 2013
-github-lyft-flask-pystatsd | flask-pystatsd | https://github.com/lyft/flask-pystatsd | author:lyft description:flask extension to simplify the use of the pystatsd library
-github-lyft-heroku-buildpack-python-data | heroku-buildpack-python-data | https://github.com/lyft/heroku-buildpack-python-data | author:lyft description:Updated Jul 10, 2014
+github-lyft-logrotate | logrotate | https://github.com/lyft/logrotate | author:lyft description:The logrotate utility is designed to simplify the administration of log files on a system which generates a lot of log files.
+github-lyft-heroku-buildpack-python | heroku-buildpack-python | https://github.com/lyft/heroku-buildpack-python | author:lyft description:Python buildpack
+github-lyft-heroku-buildpack-multi | heroku-buildpack-multi | https://github.com/lyft/heroku-buildpack-multi | author:lyft description:Composable buildpacks
+github-lyft-Mink | Mink | https://github.com/lyft/Mink | author:lyft description:PHP 5.3 acceptance test framework for web applications
+github-lyft-carbonzipper | carbonzipper | https://github.com/lyft/carbonzipper | author:lyft description:proxy to transparently merge graphite carbon backends
+github-lyft-php-webdriver | php-webdriver | https://github.com/lyft/php-webdriver | author:lyft description:thin php client for webdriver.
+github-lyft-nsq-py | nsq-py | https://github.com/lyft/nsq-py | author:lyft description:Hacking on Python NSQ Bindings
+github-lyft-Soapbox | Soapbox | https://github.com/lyft/Soapbox | author:lyft description:Python Django-like SOAP library.
+github-lyft-Hound | Hound | https://github.com/lyft/Hound | author:lyft description:Lightning fast code searching made easy
+github-lyft-trebuchet | trebuchet | https://github.com/lyft/trebuchet | author:lyft description:A two-phase Salt Stack based deployment system
+github-lyft-ngrok | ngrok | https://github.com/lyft/ngrok | author:lyft description:Introspected tunnels to localhost
+github-lyft-docker-registry | docker-registry | https://github.com/lyft/docker-registry | author:lyft description:Registry server for Docker (hosting/delivering of repositories and images)
+github-lyft-phpunit-mock-objects | phpunit-mock-objects | https://github.com/lyft/phpunit-mock-objects | author:lyft description:Mock Object library for PHPUnit
+github-lyft-PyGithub | PyGithub | https://github.com/lyft/PyGithub | author:lyft description:Python library implementing the full GitHub API v3
+github-lyft-elasticmq | elasticmq | https://github.com/lyft/elasticmq | author:lyft description:Message queueing system with an actor-based Scala and Amazon SQS-compatible interfaces. Runs stand-alone or embedded.
+github-lyft-card.io-Android-source | card.io-Android-source | https://github.com/lyft/card.io-Android-source | author:lyft description:The open-source code for the card.io-Android-SDK: provides fast, easy credit card scanning in mobile apps
+github-lyft-flask-sslify | flask-sslify | https://github.com/lyft/flask-sslify | author:lyft description:Force SSL on your Flask app.
+github-lyft-python-slackclient | python-slackclient | https://github.com/lyft/python-slackclient | author:lyft 
+github-lyft-pylint | pylint | https://github.com/lyft/pylint | author:lyft description:A Python source code analyzer which looks for programming errors, helps enforcing a coding standard and sniffs for some code smells
+github-lyft-gunicorn | gunicorn | https://github.com/lyft/gunicorn | author:lyft description:gunicorn 'Green Unicorn' is a WSGI HTTP Server for UNIX, fast clients and sleepy applications.
+github-lyft-mypy | mypy | https://github.com/lyft/mypy | author:lyft description:Optional static typing for Python 2 and 3 (PEP484)
+github-lyft-spark | spark | https://github.com/lyft/spark | author:lyft description:Mirror of Apache Spark
+github-lyft-graphiti | graphiti | https://github.com/lyft/graphiti | author:lyft description:An alternate JavaScript and Ruby front-end and graph storage application for the Graphite Real-time graphing engine.
+github-lyft-trigger | trigger | https://github.com/lyft/trigger | author:lyft description:Trebuchet git interface
+github-lyft-pyrollbar | pyrollbar | https://github.com/lyft/pyrollbar | author:lyft description:Generic python API library for Rollbar
+github-lyft-skydns | skydns | https://github.com/lyft/skydns | author:lyft description:DNS service discovery for etcd
+github-lyft-desk-php | desk-php | https://github.com/lyft/desk-php | author:lyft description:PHP client for Desk.com v2 API, based on Guzzle
+github-lyft-conda-buildpack | conda-buildpack | https://github.com/lyft/conda-buildpack | author:lyft description:Buildpack for Conda.
+github-lyft-heroku-buildpack-python-data | heroku-buildpack-python-data | https://github.com/lyft/heroku-buildpack-python-data | author:lyft 
+github-lyft-ricochet | ricochet | https://github.com/lyft/ricochet | author:lyft description:A web interface for trebuchet.
+github-lyft-logstash | logstash | https://github.com/lyft/logstash | author:lyft description:logstash - logs/event transport, processing, management, search.
 github-lyft-pycollectd | pycollectd | https://github.com/lyft/pycollectd | author:lyft description:Framework for writing collectd plugins in Python.
-github-lyft-homebrew-formulae | homebrew-formulae | https://github.com/lyft/homebrew-formulae | author:lyft description:Yet another homebrew tap
+github-lyft-mod_statsd | mod_statsd | https://github.com/lyft/mod_statsd | author:lyft description:Apache module to send statistics to Statsd
+github-lyft-flask-pystatsd | flask-pystatsd | https://github.com/lyft/flask-pystatsd | author:lyft description:flask extension to simplify the use of the pystatsd library
+github-lyft-godep | godep | https://github.com/lyft/godep | author:lyft description:dependency tool for go
+github-lyft-logster | logster | https://github.com/lyft/logster | author:lyft description:Parse log files, generate metrics for Graphite and Ganglia
+github-lyft-leaflet-plugins | leaflet-plugins | https://github.com/lyft/leaflet-plugins | author:lyft description:Plugins for Leaflet library
+github-lyft-carbon-c-relay | carbon-c-relay | https://github.com/lyft/carbon-c-relay | author:lyft description:Enhanced C implementation of Carbon relay, aggregator and rewriter
+github-lyft-wrk | wrk | https://github.com/lyft/wrk | author:lyft description:Modern HTTP benchmarking tool
+github-lyft-docker | docker | https://github.com/lyft/docker | author:lyft description:Docker - the open-source application container engine
+github-lyft-brubeck | brubeck | https://github.com/lyft/brubeck | author:lyft description:A Statsd-compatible metrics aggregator
+github-lyft-phpunit | phpunit | https://github.com/lyft/phpunit | author:lyft description:The PHP Unit Testing framework.
+github-lyft-pystatsd | pystatsd | https://github.com/lyft/pystatsd | author:lyft description:A Python client for statsd
+github-lyft-boto | boto | https://github.com/lyft/boto | author:lyft description:Python interface to Amazon Web Services
+github-lyft-php-code-coverage | php-code-coverage | https://github.com/lyft/php-code-coverage | author:lyft description:Library that provides collection, processing, and rendering functionality for PHP code coverage information.
+github-lyft-carbon | carbon | https://github.com/lyft/carbon | author:lyft description:Carbon is one of the components of Graphite, and is responsible for receiving metrics over the network and writing them down to disk using a storage backend.
+github-lyft-zf1 | zf1 | https://github.com/lyft/zf1 | author:lyft description:Conversion of ZF1 subversion repo to git, from version 15234 forward, and only containing master and release-1.12 branches and 1.12 tags.
+github-lyft-graphite-web | graphite-web | https://github.com/lyft/graphite-web | author:lyft description:A highly scalable real-time graphing system
+github-lyft-suds | suds | https://github.com/lyft/suds | author:lyft description:unomena fork of suds
+github-lyft-Airflow | Airflow | https://github.com/lyft/Airflow | author:lyft description:AirFlow is a system to programmaticaly author, schedule and monitor data pipelines.
+github-lyft-libphonenumber-for-PHP | libphonenumber-for-PHP | https://github.com/lyft/libphonenumber-for-PHP | author:lyft description:PHP version of Google's phone number handling library
+github-lyft-heroku-buildpack-php | heroku-buildpack-php | https://github.com/lyft/heroku-buildpack-php | author:lyft 
+github-lyft-dashing | dashing | https://github.com/lyft/dashing | author:lyft description:The exceptionally handsome dashboard framework in Ruby and Coffeescript.
+github-lyft-tasseo | tasseo | https://github.com/lyft/tasseo | author:lyft description:Live dashboard for Graphite
+github-lyft-s3cmd | s3cmd | https://github.com/lyft/s3cmd | author:lyft description:Official s3cmd repo -- Command line tool for managing Amazon S3 and CloudFront services
+github-lyft-heroku-buildpack-phabricator | heroku-buildpack-phabricator | https://github.com/lyft/heroku-buildpack-phabricator | author:lyft 
+github-lyft-carbonserver | carbonserver | https://github.com/lyft/carbonserver | author:lyft description:A server to handle metric globbing and data retrieval written in go
+github-lyft-twilio-python | twilio-python | https://github.com/lyft/twilio-python | author:lyft description:A Python module for communicating with the Twilio API and generating TwiML. Need help? Post your questions to http://getsatisfaction.com/twilio or email us at help@twilio.com
+github-lyft-statsd | statsd | https://github.com/lyft/statsd | author:lyft description:Simple daemon for easy stats aggregation
+github-lyft-mongodb-odm | mongodb-odm | https://github.com/lyft/mongodb-odm | author:lyft description:Doctrine MongoDB Object Document Mapper (ODM)
+github-lyft-mongo-php-driver-legacy | mongo-php-driver-legacy | https://github.com/lyft/mongo-php-driver-legacy | author:lyft description:Officially supported PHP driver for MongoDB
+github-lyft-rainbow-saddle | rainbow-saddle | https://github.com/lyft/rainbow-saddle | author:lyft description:A wrapper around gunicorn to handle graceful restarts correctly
+github-lyft-geoPHP | geoPHP | https://github.com/lyft/geoPHP | author:lyft description:Advanced geometry operations in PHP
+github-lyft-ng-table | ng-table | https://github.com/lyft/ng-table | author:lyft description:Simple table with sorting and filtering on AngularJS
+github-lyft-ice | ice | https://github.com/lyft/ice | author:lyft description:AWS Usage Tool
+github-lyft-openopt-bdist | openopt-bdist | https://github.com/lyft/openopt-bdist | author:lyft description:Pre-compiled bdist for OpenOpt ( www.openopt.org ) on 64 bit Debian.
+github-lyft-npscipy-binaries | npscipy-binaries | https://github.com/lyft/npscipy-binaries | author:lyft description:Binaries for numpy/scipy on 64bit debian. Includes blas/lapack/atlas/gfortran archive and so files.
+github-lyft-xhprof | xhprof | https://github.com/lyft/xhprof | author:lyft description:Fork of Facebook's xhprof php library, added support for Mongo
+github-lyft-amazon-kinesis-agent | amazon-kinesis-agent | https://github.com/lyft/amazon-kinesis-agent | author:lyft description:Continuously monitors a set of log files and sends new data to the Amazon Kinesis Stream and Amazon Kinesis Firehose in near-real-time.
+github-lyft-mongo-proxy | mongo-proxy | https://github.com/lyft/mongo-proxy | author:lyft description:A gem for proxying MongoDB at the wire-protocol level.
+github-lyft-twemproxy | twemproxy | https://github.com/lyft/twemproxy | author:lyft description:A fast, light-weight proxy for memcached and redis
+github-lyft-angular-css | angular-css | https://github.com/lyft/angular-css | author:lyft description:CSS on-demand for AngularJS
+github-lyft-python-kruxstatsd | python-kruxstatsd | https://github.com/lyft/python-kruxstatsd | author:lyft description:Wrapper around pystatsd
 github-lyft-code-of-conduct | code-of-conduct | https://github.com/lyft/code-of-conduct | author:lyft description:Code of Conduct for Lyft's open source projects
+github-lyft-mongodb | mongodb | https://github.com/lyft/mongodb | author:lyft description:PHP MongoDB Abstraction Layer
+github-lyft-JGProgressHUD | JGProgressHUD | https://github.com/lyft/JGProgressHUD | author:lyft description:Powerful, simple and modern progress HUD for iOS.
+github-lyft-carbonapi | carbonapi | https://github.com/lyft/carbonapi | author:lyft description:API server for github.com/dgryski/carbonzipper
+github-lyft-python-modernize | python-modernize | https://github.com/lyft/python-modernize | author:lyft description:Modernizes Python code for eventual Python 3 migration. Built on top of 2to3.
+github-lyft-amazon-kinesis-client | amazon-kinesis-client | https://github.com/lyft/amazon-kinesis-client | author:lyft description:Client library for Amazon Kinesis
+github-lyft-PynamoDB | PynamoDB | https://github.com/lyft/PynamoDB | author:lyft description:A pythonic interface to Amazon's DynamoDB
+github-lyft-bless | bless | https://github.com/lyft/bless | author:lyft description:Repository for BLESS, an SSH Certificate Authority that runs as a AWS Lambda function
+github-lyft-grafana | grafana | https://github.com/lyft/grafana | author:lyft description:Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
+github-lyft-jenkins-statsd-plugin | jenkins-statsd-plugin | https://github.com/lyft/jenkins-statsd-plugin | author:lyft description:send results and durations from jenkins jobs to a statsd server
+github-lyft-incubator-airflow | incubator-airflow | https://github.com/lyft/incubator-airflow | author:lyft description:Apache Airflow (Incubating)
+github-lyft-smokescreen | smokescreen | https://github.com/lyft/smokescreen | author:lyft description:A simple HTTP proxy that fogs over naughty URLs
+github-lyft-mgo | mgo | https://github.com/lyft/mgo | author:lyft description:The MongoDB driver for Go. See http://labix.org/mgo for details.
+github-lyft-mongoengine | mongoengine | https://github.com/lyft/mongoengine | author:lyft description:A Python Object-Document-Mapper for working with MongoDB
+github-lyft-python-geohash | python-geohash | https://github.com/lyft/python-geohash | author:lyft description:fast, accurate python geohashing library
+github-lyft-homebrew-formulae | homebrew-formulae | https://github.com/lyft/homebrew-formulae | author:lyft description:Yet another homebrew tap

@@ -1,30 +1,74 @@
+github-eventbrite-zendesk | zendesk | https://github.com/eventbrite/zendesk | author:eventbrite description:Zendesk API Wrapper for Python
 github-eventbrite-rebar | rebar | https://github.com/eventbrite/rebar | author:eventbrite description:Rebar makes your Forms stronger.
 github-eventbrite-nose-knows | nose-knows | https://github.com/eventbrite/nose-knows | author:eventbrite description:Knows is a nose plugin for figuring out which tests you need to run based on the files you have modified
 github-eventbrite-eventbrite-sdk-python | eventbrite-sdk-python | https://github.com/eventbrite/eventbrite-sdk-python | author:eventbrite description:Eventbrite Python SDK
 github-eventbrite-cartogram | cartogram | https://github.com/eventbrite/cartogram | author:eventbrite description:WebGL rendering engine
 github-eventbrite-eventbrite-client-py | eventbrite-client-py | https://github.com/eventbrite/eventbrite-client-py | author:eventbrite description:Client for Eventbrite's HTTP-based API
 github-eventbrite-nose-picker | nose-picker | https://github.com/eventbrite/nose-picker | author:eventbrite description:Nose-picker is a plugin that picks to only run a fraction of your unit tests in django
+github-eventbrite-eventbrite.php | eventbrite.php | https://github.com/eventbrite/eventbrite.php | author:eventbrite description:PHP client for the Eventbrite API
 github-eventbrite-python_hive_utils | python_hive_utils | https://github.com/eventbrite/python_hive_utils | author:eventbrite description:Utilities for accessing hive with Python.
+github-eventbrite-currint | currint | https://github.com/eventbrite/currint | author:eventbrite 
 github-eventbrite-facebook-python-sdk | facebook-python-sdk | https://github.com/eventbrite/facebook-python-sdk | author:eventbrite description:Facebook Platform Python SDK
-github-eventbrite-currint | currint | https://github.com/eventbrite/currint | author:eventbrite description:Updated Jul 13, 2016
+github-eventbrite-javascript | javascript | https://github.com/eventbrite/javascript | author:eventbrite description:Eventbrite JavaScript coding style guide
 github-eventbrite-dorsal | dorsal | https://github.com/eventbrite/dorsal | author:eventbrite description:Fin! https://eventbrite.github.io/dorsal
 github-eventbrite-eventually | eventually | https://github.com/eventbrite/eventually | author:eventbrite description:Set and measure progress toward code quality goals.
-github-eventbrite-javascript | javascript | https://github.com/eventbrite/javascript | author:eventbrite description:Eventbrite JavaScript coding style guide
-github-eventbrite-m2crypto | m2crypto | https://github.com/eventbrite/m2crypto | author:eventbrite description:Updated May 26, 2015
+github-eventbrite-django-cache-machine | django-cache-machine | https://github.com/eventbrite/django-cache-machine | author:eventbrite description:Automatic caching and invalidation for Django models through the ORM.
 github-eventbrite-deskapi | deskapi | https://github.com/eventbrite/deskapi | author:eventbrite description:Python wrapper for Desk.com REST API.
+github-eventbrite-m2crypto | m2crypto | https://github.com/eventbrite/m2crypto | author:eventbrite 
+github-eventbrite-pilo | pilo | https://github.com/eventbrite/pilo | author:eventbrite 
+github-eventbrite-nexus | nexus | https://github.com/eventbrite/nexus | author:eventbrite description:A centralized, pluggable admin app for Django
+github-eventbrite-django-assemblyline | django-assemblyline | https://github.com/eventbrite/django-assemblyline | author:eventbrite description:A model factory for Django apps.
+github-eventbrite-eventbrite.npm | eventbrite.npm | https://github.com/eventbrite/eventbrite.npm | author:eventbrite description:Eventbrite javascript (node.js) API Client
+github-eventbrite-gargoyle | gargoyle | https://github.com/eventbrite/gargoyle | author:eventbrite description:Feature switches in Django
+github-eventbrite-transifex-python-library | transifex-python-library | https://github.com/eventbrite/transifex-python-library | author:eventbrite description:Python wrapper for the Transifex API.
+github-eventbrite-django-sentry | django-sentry | https://github.com/eventbrite/django-sentry | author:eventbrite description:Real-time logging / error tracing for Django
 github-eventbrite-vagrant-ebcommon | vagrant-ebcommon | https://github.com/eventbrite/vagrant-ebcommon | author:eventbrite description:Vagrant plugin to execute various Eventbrite workflows.
-github-eventbrite-gerrit_repo | gerrit_repo | https://github.com/eventbrite/gerrit_repo | author:eventbrite description:gerrit repository for testing
-github-eventbrite-Casper-API-Tools | Casper-API-Tools | https://github.com/eventbrite/Casper-API-Tools | author:eventbrite description:Python Command Line Interface for performing Casper Suite JSS commands.
+github-eventbrite-Eventbrite.jquery.js | Eventbrite.jquery.js | https://github.com/eventbrite/Eventbrite.jquery.js | author:eventbrite description:A javascript-based Eventbrite API client library. (requires jQuery)
+github-eventbrite-duo_python | duo_python | https://github.com/eventbrite/duo_python | author:eventbrite description:Duo two-factor authentication for Python web applications
 github-eventbrite-grunt-kss-search | grunt-kss-search | https://github.com/eventbrite/grunt-kss-search | author:eventbrite description:This is the grunt plugin companion to the kss-search repo.
 github-eventbrite-kss-search | kss-search | https://github.com/eventbrite/kss-search | author:eventbrite description:This code supports providing full-text search to our KSS based styleguide documentation.
-github-eventbrite-localization_shuttle | localization_shuttle | https://github.com/eventbrite/localization_shuttle | author:eventbrite description:Updated Jan 14, 2015
-github-eventbrite-eb-lookup | eb-lookup | https://github.com/eventbrite/eb-lookup | author:eventbrite description:Updated Apr 29, 2016
-github-eventbrite-webhooks-tutorial-flask | webhooks-tutorial-flask | https://github.com/eventbrite/webhooks-tutorial-flask | author:eventbrite description:Example usage of Eventbrite Webhooks
-github-eventbrite-vagrant-soa | vagrant-soa | https://github.com/eventbrite/vagrant-soa | author:eventbrite description:Vagrant plugin to manage vagrant SOA infrastructure.
-github-eventbrite-vagrant-puppet-module-registry | vagrant-puppet-module-registry | https://github.com/eventbrite/vagrant-puppet-module-registry | author:eventbrite description:Vagrant plugin to manage multiple puppet module paths.
-github-eventbrite-vagrant-puppet-fact-generator | vagrant-puppet-fact-generator | https://github.com/eventbrite/vagrant-puppet-fact-generator | author:eventbrite description:Vagrant plugin that allows other plugins to generate custom facts for provisioning.
-github-eventbrite-curator | curator | https://github.com/eventbrite/curator | author:eventbrite description:Python helper for working with lua scripts in redis.
-github-eventbrite-cs2mako | cs2mako | https://github.com/eventbrite/cs2mako | author:eventbrite description:Clearsilver to Mako converter
+github-eventbrite-django-audit-log | django-audit-log | https://github.com/eventbrite/django-audit-log | author:eventbrite description:Audit log for your Django models
+github-eventbrite-mongoengine | mongoengine | https://github.com/eventbrite/mongoengine | author:eventbrite description:A Python Object-Document-Mapper for working with MongoDB
+github-eventbrite-gerrit_repo | gerrit_repo | https://github.com/eventbrite/gerrit_repo | author:eventbrite description:gerrit repository for testing
+github-eventbrite-kegbot | kegbot | https://github.com/eventbrite/kegbot | author:eventbrite description:Complete beer kegerator monitoring system! Django frontend and backend, Arduino controller, docs and schematics.
+github-eventbrite-celery | celery | https://github.com/eventbrite/celery | author:eventbrite description:Distributed Task Queue (development branch)
+github-eventbrite-tablesnap | tablesnap | https://github.com/eventbrite/tablesnap | author:eventbrite description:Uses inotify to monitor Cassandra SSTables and upload them to S3
+github-eventbrite-jenkinsapi | jenkinsapi | https://github.com/eventbrite/jenkinsapi | author:eventbrite description:A Python API for accessing resources and configuring Hudson & Jenkins continuous-integration servers
+github-eventbrite-django-debug-toolbar | django-debug-toolbar | https://github.com/eventbrite/django-debug-toolbar | author:eventbrite description:A configurable set of panels that display various debug information about the current request/response.
+github-eventbrite-macfsevents | macfsevents | https://github.com/eventbrite/macfsevents | author:eventbrite description:Thread-based interface to file system observation primitives.
+github-eventbrite-Casper-API-Tools | Casper-API-Tools | https://github.com/eventbrite/Casper-API-Tools | author:eventbrite description:Python Command Line Interface for performing Casper Suite JSS commands.
+github-eventbrite-puppet-sudo | puppet-sudo | https://github.com/eventbrite/puppet-sudo | author:eventbrite description:Install sudo through puppet on Debian-, RedHat- and SUSE-based distributions
+github-eventbrite-puppetlabs-apt | puppetlabs-apt | https://github.com/eventbrite/puppetlabs-apt | author:eventbrite description:Puppet module to help manage Apt
 github-eventbrite-pydot | pydot | https://github.com/eventbrite/pydot | author:eventbrite description:Fork of pydot r29 from pydot.googlecode.com, to fix requirements in pydot 1.0.28
+github-eventbrite-django-nose | django-nose | https://github.com/eventbrite/django-nose | author:eventbrite description:Django test runner using nose
+github-eventbrite-Diamond | Diamond | https://github.com/eventbrite/Diamond | author:eventbrite description:Diamond is a python daemon that collects system metrics and publishes them to Graphite (and others). It is capable of collecting cpu, memory, network, i/o, load and disk metrics. Additionally, it features an API for implementing custom collectors for gathering metrics from almost any source.
+github-eventbrite-redux-form | redux-form | https://github.com/eventbrite/redux-form | author:eventbrite description:A Higher Order Component using react-redux to keep form state in a Redux store
+github-eventbrite-eb-lookup | eb-lookup | https://github.com/eventbrite/eb-lookup | author:eventbrite 
+github-eventbrite-analytics.js | analytics.js | https://github.com/eventbrite/analytics.js | author:eventbrite description:The hassle-free way to integrate analytics into any web application.
+github-eventbrite-curator | curator | https://github.com/eventbrite/curator | author:eventbrite description:Python helper for working with lua scripts in redis.
+github-eventbrite-vagrant-puppet-fact-generator | vagrant-puppet-fact-generator | https://github.com/eventbrite/vagrant-puppet-fact-generator | author:eventbrite description:Vagrant plugin that allows other plugins to generate custom facts for provisioning.
+github-eventbrite-vagrant-puppet-module-registry | vagrant-puppet-module-registry | https://github.com/eventbrite/vagrant-puppet-module-registry | author:eventbrite description:Vagrant plugin to manage multiple puppet module paths.
+github-eventbrite-vagrant-soa | vagrant-soa | https://github.com/eventbrite/vagrant-soa | author:eventbrite description:Vagrant plugin to manage vagrant SOA infrastructure.
+github-eventbrite-graphite-reporter-agent | graphite-reporter-agent | https://github.com/eventbrite/graphite-reporter-agent | author:eventbrite description:Java Agent for Cassandra's Metrics' Graphite Reporter
+github-eventbrite-locust | locust | https://github.com/eventbrite/locust | author:eventbrite description:Scalable user load testing tool written in Python
+github-eventbrite-rangeslider.js | rangeslider.js | https://github.com/eventbrite/rangeslider.js | author:eventbrite description:HTML5 input range slider element polyfill
+github-eventbrite-cs2mako | cs2mako | https://github.com/eventbrite/cs2mako | author:eventbrite description:Clearsilver to Mako converter
+github-eventbrite-raven-java | raven-java | https://github.com/eventbrite/raven-java | author:eventbrite description:A Sentry client for Java
+github-eventbrite-eventbrite-client.rb | eventbrite-client.rb | https://github.com/eventbrite/eventbrite-client.rb | author:eventbrite description:A tiny EventBrite API client for ruby
+github-eventbrite-eventioz-archive-pdf-writer | eventioz-archive-pdf-writer | https://github.com/eventbrite/eventioz-archive-pdf-writer | author:eventbrite description:Pure Ruby tools for working with PDF documents.
+github-eventbrite-kss-node | kss-node | https://github.com/eventbrite/kss-node | author:eventbrite description:A NodeJS Implementation of KSS: a methodology for documenting CSS and generating styleguides
+github-eventbrite-pinocchio | pinocchio | https://github.com/eventbrite/pinocchio | author:eventbrite description:pinocchio is a set of extensions to the nose unit testing framework for Python
+github-eventbrite-sphinx_rtd_theme | sphinx_rtd_theme | https://github.com/eventbrite/sphinx_rtd_theme | author:eventbrite description:Sphinx theme for readthedocs.org
+github-eventbrite-puppet-supervisor | puppet-supervisor | https://github.com/eventbrite/puppet-supervisor | author:eventbrite description:Puppet module for configuring the supervisor daemon tool.
+github-eventbrite-sentry-jira | sentry-jira | https://github.com/eventbrite/sentry-jira | author:eventbrite description:A Plugin for sentry that lets you create JIRA issues
+github-eventbrite-puppetlabs-stdlib | puppetlabs-stdlib | https://github.com/eventbrite/puppetlabs-stdlib | author:eventbrite description:Puppet Labs Standard Library module. Please submit issues at https://projects.puppetlabs.com/projects/modules/issues and not using the issue tracker on Github. Pull requests, however, are encouraged. =)
+github-eventbrite-py-smartdc | py-smartdc | https://github.com/eventbrite/py-smartdc | author:eventbrite description:Python SmartDataCenter CloudAPI connector
+github-eventbrite-SOAPpy | SOAPpy | https://github.com/eventbrite/SOAPpy | author:eventbrite 
+github-eventbrite-eventioz-archive-mercadopago | eventioz-archive-mercadopago | https://github.com/eventbrite/eventioz-archive-mercadopago | author:eventbrite description:Gem para Ruby que possibilita integração com as APIs do MercadoPago
+github-eventbrite-webhooks-tutorial-flask | webhooks-tutorial-flask | https://github.com/eventbrite/webhooks-tutorial-flask | author:eventbrite description:Example usage of Eventbrite Webhooks
+github-eventbrite-eventioz-archive-cielo | eventioz-archive-cielo | https://github.com/eventbrite/eventioz-archive-cielo | author:eventbrite description:Gem para integração com os WebServices da Cielo
+github-eventbrite-localization_shuttle | localization_shuttle | https://github.com/eventbrite/localization_shuttle | author:eventbrite 
 github-eventbrite-css | css | https://github.com/eventbrite/css | author:eventbrite description:Eventbrite CSS coding style guide
-github-eventbrite-teLogger | teLogger | https://github.com/eventbrite/teLogger | author:eventbrite description:Updated Aug 11, 2016
+github-eventbrite-react-image-crop | react-image-crop | https://github.com/eventbrite/react-image-crop | author:eventbrite description:A responsive image cropping tool for React
+github-eventbrite-teLogger | teLogger | https://github.com/eventbrite/teLogger | author:eventbrite 
+github-eventbrite-python-instagram | python-instagram | https://github.com/eventbrite/python-instagram | author:eventbrite description:Python Client for Instagram API

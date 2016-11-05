@@ -1,0 +1,7 @@
+github-intel-caffe | caffe | https://github.com/intel/caffe | author:intel description:This fork of BVLC/Caffe is dedicated to improving performance of this deep learning framework when running on CPU, in particular Intel® Xeon processors (HSW+) and Intel® Xeon Phi processors
+github-intel-Theano | Theano | https://github.com/intel/Theano | author:intel description:Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation.
+github-intel-torch | torch | https://github.com/intel/torch | author:intel 
+github-intel-numpy | numpy | https://github.com/intel/numpy | author:intel description:Numpy main repository
+github-intel-scipy | scipy | https://github.com/intel/scipy | author:intel description:Scipy library main repository
+github-intel-deep-learning-technologies | deep-learning-technologies | https://github.com/intel/deep-learning-technologies | author:intel 
+github-intel-keras | keras | https://github.com/intel/keras | author:intel description:Deep Learning library for Python. Convnets, recurrent neural networks, and more. Runs on Theano or TensorFlow.

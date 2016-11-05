@@ -1,0 +1,5 @@
+github-tencent-tinker | tinker | https://github.com/Tencent/tinker | author:tencent description:Tinker is a hot-fix solution library for Android, it supports dex, library and resources update without reinstall apk.
+github-tencent-libco | libco | https://github.com/Tencent/libco | author:tencent description:libco is a coroutine library which is widely used in wechat back-end service. It has been running on tens of thousands of machines since 2013.
+github-tencent-QT4A | QT4A | https://github.com/Tencent/QT4A | author:tencent description:QTA driver for Android app
+github-tencent-QTAF | QTAF | https://github.com/Tencent/QTAF | author:tencent description:QTA base framework
+github-tencent-QT4i | QT4i | https://github.com/Tencent/QT4i | author:tencent description:QTA driver for iOS app

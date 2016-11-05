@@ -6,6 +6,21 @@ github-23andme-Yamale | Yamale | https://github.com/23andMe/Yamale | author:23an
 github-23andme-api-example-express | api-example-express | https://github.com/23andMe/api-example-express | author:23andme description:A Node.js/Express app built on 23andMe's API, checking an ACVR1B mutation for higher muscle strength.
 github-23andme-ibd | ibd | https://github.com/23andMe/ibd | author:23andme description:Script for computing HaploScore
 github-23andme-seqseek | seqseek | https://github.com/23andMe/seqseek | author:23andme description:Easy access to Human Build 37 and 38 reference sequences
+github-23andme-RestKit | RestKit | https://github.com/23andMe/RestKit | author:23andme description:RestKit is a framework for consuming and modeling RESTful web resources on iOS and OS X
 github-23andme-scripts | scripts | https://github.com/23andMe/scripts | author:23andme description:Collection of helper scripts
 github-23andme-api-example-go | api-example-go | https://github.com/23andMe/api-example-go | author:23andme description:An example API app in Go that tests a user's WNT16 and FAM3C genes for unbreakable bones.
+github-23andme-sqlalchemy | sqlalchemy | https://github.com/23andMe/sqlalchemy | author:23andme description:Mirror of SQLAlchemy
+github-23andme-OAuth2Client | OAuth2Client | https://github.com/23andMe/OAuth2Client | author:23andme description:Client library for OAuth2 (currently built against draft 10 of the OAuth2 spec)
 github-23andme-23andme.github.io | 23andme.github.io | https://github.com/23andMe/23andme.github.io | author:23andme description:23andMe Engineering
+github-23andme-ansible-bootstrap | ansible-bootstrap | https://github.com/23andMe/ansible-bootstrap | author:23andme description:Minimal scripts and files needed to allow ansible to manage a server
+github-23andme-conda-packages | conda-packages | https://github.com/23andMe/conda-packages | author:23andme 
+github-23andme-xcpretty | xcpretty | https://github.com/23andMe/xcpretty | author:23andme description:Flexible and fast xcodebuild formatter
+github-23andme-KIF | KIF | https://github.com/23andMe/KIF | author:23andme description:Keep It Functional - An iOS Functional Testing Framework
+github-23andme-docker-selenium | docker-selenium | https://github.com/23andMe/docker-selenium | author:23andme description:Docker images for Selenium Standalone Server
+github-23andme-MBContactPicker | MBContactPicker | https://github.com/23andMe/MBContactPicker | author:23andme description:iOS7 Styled Contact Picker Library that uses a UICollectionView
+github-23andme-auxlib | auxlib | https://github.com/23andMe/auxlib | author:23andme description:auxiliary library to the python standard library
+github-23andme-cloudformation-environmentbase | cloudformation-environmentbase | https://github.com/23andMe/cloudformation-environmentbase | author:23andme description:Troposphere-based environment generator
+github-23andme-troposphere | troposphere | https://github.com/23andMe/troposphere | author:23andme description:troposphere - Python library to create AWS CloudFormation descriptions
+github-23andme-ansible-modules-core | ansible-modules-core | https://github.com/23andMe/ansible-modules-core | author:23andme description:Ansible modules - these modules ship with ansible
+github-23andme-ansible-modules-extras | ansible-modules-extras | https://github.com/23andMe/ansible-modules-extras | author:23andme description:Ansible extra modules - these modules ship with ansible
+github-23andme-scripts-1 | scripts-1 | https://github.com/23andMe/scripts-1 | author:23andme description:Random scriptiness and stuff

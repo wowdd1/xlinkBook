@@ -2,9 +2,52 @@ github-jawbone-JBChartView | JBChartView | https://github.com/Jawbone/JBChartVie
 github-jawbone-UPPlatform_iOS_SDK | UPPlatform_iOS_SDK | https://github.com/Jawbone/UPPlatform_iOS_SDK | author:jawbone description:An Objective-C library for communicating with the UP Platform on iOS.
 github-jawbone-AudioSessionManager | AudioSessionManager | https://github.com/Jawbone/AudioSessionManager | author:jawbone description:This iOS module routes audio output depending on device availability using the following priorities: bluetooth, wired headset, speaker. It also notifies interested listeners of audio change events (optional).
 github-jawbone-OpenAL-MOB | OpenAL-MOB | https://github.com/Jawbone/OpenAL-MOB | author:jawbone description:OpenAL-MOB is a fork of openAL that supports Head Related Transfer Functions. This will help game developers build games that sound great through any pair of headphones or any of the JAMBOX speakers with LiveAudio playback enabled.
-github-jawbone-UPPlatform_Android_SDK | UPPlatform_Android_SDK | https://github.com/Jawbone/UPPlatform_Android_SDK | author:jawbone description:UP API SDK for Android
 github-jawbone-spark-friends-ios | spark-friends-ios | https://github.com/Jawbone/spark-friends-ios | author:jawbone description:Spark graph demonstration of step data using JBChartView
+github-jawbone-UPPlatform_Android_SDK | UPPlatform_Android_SDK | https://github.com/Jawbone/UPPlatform_Android_SDK | author:jawbone description:UP API SDK for Android
 github-jawbone-anscombe-quartet-ios | anscombe-quartet-ios | https://github.com/Jawbone/anscombe-quartet-ios | author:jawbone description:Demonstration of Anscombe's Quartet using JBChartView
+github-jawbone-UITableViewCell-Swipe-for-Options | UITableViewCell-Swipe-for-Options | https://github.com/Jawbone/UITableViewCell-Swipe-for-Options | author:jawbone description:A reproduction of the iOS 7 Mail app's swipe-to-reveal options
+github-jawbone-ios-charts | ios-charts | https://github.com/Jawbone/ios-charts | author:jawbone description:An iOS port of the beautiful MPAndroidChart. - Beautiful charts for iOS apps!
 github-jawbone-UPPlatform_Python_SDK | UPPlatform_Python_SDK | https://github.com/Jawbone/UPPlatform_Python_SDK | author:jawbone description:Python SDK for the UP API
-github-jawbone-python-snappy-debian-package | python-snappy-debian-package | https://github.com/Jawbone/python-snappy-debian-package | author:jawbone description:Updated Mar 1, 2013
+github-jawbone-REFrostedViewController | REFrostedViewController | https://github.com/Jawbone/REFrostedViewController | author:jawbone description:iOS 7/8 style blurred view controller that appears on top of your view controller.
+github-jawbone-apt-s3 | apt-s3 | https://github.com/Jawbone/apt-s3 | author:jawbone description:additional "s3" protocol for apt so you can host your giant apt repository in s3 on the cheap!
+github-jawbone-CircleProgressBar | CircleProgressBar | https://github.com/Jawbone/CircleProgressBar | author:jawbone description:iOS Circle Progress Bar
+github-jawbone-FLEX | FLEX | https://github.com/Jawbone/FLEX | author:jawbone description:An in-app debugging and exploration tool for iOS
+github-jawbone-GCDWebServer | GCDWebServer | https://github.com/Jawbone/GCDWebServer | author:jawbone description:Lightweight GCD based HTTP server for OS X & iOS (includes web based uploader & WebDAV server)
+github-jawbone-ZBar | ZBar | https://github.com/Jawbone/ZBar | author:jawbone description:Clone of the mercurial repository http://zbar.hg.sourceforge.net:8000/hgroot/zbar/zbar
+github-jawbone-kestrel | kestrel | https://github.com/Jawbone/kestrel | author:jawbone description:simple, distributed message queue system
+github-jawbone-Specs | Specs | https://github.com/Jawbone/Specs | author:jawbone description:A repository of CocoaPods (cocoapods.org) specifications.
+github-jawbone-ResearchKit | ResearchKit | https://github.com/Jawbone/ResearchKit | author:jawbone description:ResearchKit is an open source software framework that makes it easy to create apps for medical research or for other research projects.
+github-jawbone-KIF | KIF | https://github.com/Jawbone/KIF | author:jawbone description:Keep It Functional - An iOS Functional Testing Framework
+github-jawbone-AKPickerView | AKPickerView | https://github.com/Jawbone/AKPickerView | author:jawbone description:A simple yet customizable horizontal picker view.
+github-jawbone-puppet-module-monit | puppet-module-monit | https://github.com/Jawbone/puppet-module-monit | author:jawbone description:Puppet Monit Module
+github-jawbone-DTCoreText | DTCoreText | https://github.com/Jawbone/DTCoreText | author:jawbone description:Methods to allow using HTML code with CoreText
+github-jawbone-CocoaLumberjack | CocoaLumberjack | https://github.com/Jawbone/CocoaLumberjack | author:jawbone description:A fast & simple, yet powerful & flexible logging framework for Mac and iOS
+github-jawbone-puppet-resolvconf | puppet-resolvconf | https://github.com/Jawbone/puppet-resolvconf | author:jawbone description:A Puppet module for managing the resolvconf utility package
+github-jawbone-XcodeCoverage | XcodeCoverage | https://github.com/Jawbone/XcodeCoverage | author:jawbone description:Code coverage for Xcode projects
+github-jawbone-apptentive-ios | apptentive-ios | https://github.com/Jawbone/apptentive-ios | author:jawbone description:The iOS Apptentive Client. Is your app Apptentive?
+github-jawbone-AFNetworking | AFNetworking | https://github.com/Jawbone/AFNetworking | author:jawbone description:A delightful networking framework for iOS, OS X, watchOS, and tvOS.
+github-jawbone-scribe | scribe | https://github.com/Jawbone/scribe | author:jawbone description:Scribe is a server for aggregating log data streamed in real time from a large number of servers. It is designed to be scalable, extensible without client-side modification, and robust to failure of the network or any specific machine.
+github-jawbone-python-snappy-debian-package | python-snappy-debian-package | https://github.com/Jawbone/python-snappy-debian-package | author:jawbone 
+github-jawbone-puppetlabs-nodejs | puppetlabs-nodejs | https://github.com/Jawbone/puppetlabs-nodejs | author:jawbone 
+github-jawbone-puppet-ssh | puppet-ssh | https://github.com/Jawbone/puppet-ssh | author:jawbone description:Puppet module to manage ssh server and client
+github-jawbone-stacker | stacker | https://github.com/Jawbone/stacker | author:jawbone description:Stacker helps you put together your CloudFormation stacks.
+github-jawbone-puppet-openswan | puppet-openswan | https://github.com/Jawbone/puppet-openswan | author:jawbone description:Puppet Module to manage OpenSwan
+github-jawbone-puppetlabs-rabbitmq | puppetlabs-rabbitmq | https://github.com/Jawbone/puppetlabs-rabbitmq | author:jawbone description:RabbitMQ Puppet Module
+github-jawbone-puppet-memcached | puppet-memcached | https://github.com/Jawbone/puppet-memcached | author:jawbone description:Puppet module for memcached
+github-jawbone-ios-i18n | ios-i18n | https://github.com/Jawbone/ios-i18n | author:jawbone description:The ios-i18n library was designed to allow developers to seamlessly integrate plurals into their iOS apps.
+github-jawbone-PSAlertView | PSAlertView | https://github.com/Jawbone/PSAlertView | author:jawbone description:Modern block-based wrappers for UIAlertView and UIActionSheet.
+github-jawbone-sensu-puppet | sensu-puppet | https://github.com/Jawbone/sensu-puppet | author:jawbone description:Sensu Puppet module.
+github-jawbone-thrift | thrift | https://github.com/Jawbone/thrift | author:jawbone description:Mirror of Apache Thrift (incubating)
+github-jawbone-KiteJSONValidator | KiteJSONValidator | https://github.com/Jawbone/KiteJSONValidator | author:jawbone description:A native Objective-C JSON schema validator
+github-jawbone-pyclips | pyclips | https://github.com/Jawbone/pyclips | author:jawbone description:Fork of the pyclips project from http://sourceforge.net/projects/pyclips
 github-jawbone-pylithiumsso | pylithiumsso | https://github.com/Jawbone/pylithiumsso | author:jawbone description:Python Lithium Client
+github-jawbone-SDWebImage | SDWebImage | https://github.com/Jawbone/SDWebImage | author:jawbone description:Asynchronous image downloader with cache support as a UIImageView category
+github-jawbone-MBProgressHUD | MBProgressHUD | https://github.com/Jawbone/MBProgressHUD | author:jawbone description:MBProgressHUD + Customizations
+github-jawbone-json-framework | json-framework | https://github.com/Jawbone/json-framework | author:jawbone description:JSON (JavaScript Object Notation) is a light-weight data interchange format that's easy to read and write for humans and computers alike. This framework implements a strict JSON parser and generator in Objective-C.
+github-jawbone-pop | pop | https://github.com/Jawbone/pop | author:jawbone description:An extensible iOS and OS X animation library, useful for physics-based interactions.
+github-jawbone-SwipeView | SwipeView | https://github.com/Jawbone/SwipeView | author:jawbone description:SwipeView is a class designed to simplify the implementation of horizontal, paged scrolling views on iOS. It is based on a UIScrollView, but adds convenient functionality such as a UITableView-style dataSource/delegate interface for loading views dynamically, and efficient view loading, unloading and recycling.
+github-jawbone-HSTestingBackchannel | HSTestingBackchannel | https://github.com/Jawbone/HSTestingBackchannel | author:jawbone description:Send notifications directly from your UITesting classes to your running app.
+github-jawbone-FXBlurView | FXBlurView | https://github.com/Jawbone/FXBlurView | author:jawbone description:UIView subclass that replicates the iOS 7 realtime background blur effect, but works on iOS 5 and above.
+github-jawbone-puppet-sysctl | puppet-sysctl | https://github.com/Jawbone/puppet-sysctl | author:jawbone description:Puppet module to manage sysctl parameters
+github-jawbone-pyScss | pyScss | https://github.com/Jawbone/pyScss | author:jawbone description:pyScss, a Scss compiler for Python
+github-jawbone-puppet-wordpress | puppet-wordpress | https://github.com/Jawbone/puppet-wordpress | author:jawbone description:Puppet module to set up an instance of wordpress

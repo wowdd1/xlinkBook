@@ -38,11 +38,11 @@ github-twitter-twemcache | twemcache | https://github.com/twitter/twemcache | au
 github-twitter-twitter.github.com | twitter.github.com | https://github.com/twitter/twitter.github.com | author:twitter description:A listing of open source efforts at Twitter on GitHub
 github-twitter-hbc | hbc | https://github.com/twitter/hbc | author:twitter description:A Java HTTP client for consuming Twitter's Streaming API
 github-twitter-twitter-text-rb | twitter-text-rb | https://github.com/twitter/twitter-text-rb | author:twitter description:A library that does auto linking and extraction of usernames, lists and hashtags in tweets
-github-twitter-twitter-text-objc | twitter-text-objc | https://github.com/twitter/twitter-text-objc | author:twitter description:An Objective-C implementation of Twitter's text processing library
 github-twitter-twitter-server | twitter-server | https://github.com/twitter/twitter-server | author:twitter description:Twitter-Server defines a template from which services at Twitter are built
+github-twitter-twitter-text-objc | twitter-text-objc | https://github.com/twitter/twitter-text-objc | author:twitter description:An Objective-C implementation of Twitter's text processing library
 github-twitter-mysos | mysos | https://github.com/twitter/mysos | author:twitter description:Cotton (formerly known as Mysos)
-github-twitter-BreakoutDetection | BreakoutDetection | https://github.com/twitter/BreakoutDetection | author:twitter description:Breakout Detection via Robust E-Statistics
 github-twitter-twitter-korean-text | twitter-korean-text | https://github.com/twitter/twitter-korean-text | author:twitter description:Korean tokenizer
+github-twitter-BreakoutDetection | BreakoutDetection | https://github.com/twitter/BreakoutDetection | author:twitter description:Breakout Detection via Robust E-Statistics
 github-twitter-scrooge | scrooge | https://github.com/twitter/scrooge | author:twitter description:A Thrift parser/generator
 github-twitter-twitter-cldr-rb | twitter-cldr-rb | https://github.com/twitter/twitter-cldr-rb | author:twitter description:Ruby implementation of the ICU (International Components for Unicode) that uses the Common Locale Data Repository to format dates, plurals, and more.
 github-twitter-torch-autograd | torch-autograd | https://github.com/twitter/torch-autograd | author:twitter description:Autograd automatically differentiates native Torch code
@@ -67,6 +67,7 @@ github-twitter-torch-twrl | torch-twrl | https://github.com/twitter/torch-twrl |
 github-twitter-pycascading | pycascading | https://github.com/twitter/pycascading | author:twitter description:A Python wrapper for Cascading
 github-twitter-digits-android | digits-android | https://github.com/twitter/digits-android | author:twitter description:Digits for Android
 github-twitter-interactive | interactive | https://github.com/twitter/interactive | author:twitter description:Twitter interactive visualization
+github-twitter-querulous | querulous | https://github.com/twitter/querulous | author:twitter description:An agreeable way to talk to your database
 github-twitter-thrift_client | thrift_client | https://github.com/twitter/thrift_client | author:twitter description:A Thrift client wrapper that encapsulates some common failover behavior
 github-twitter-twemperf | twemperf | https://github.com/twitter/twemperf | author:twitter description:A tool for measuring memcached server performance
 github-twitter-rpc-perf | rpc-perf | https://github.com/twitter/rpc-perf | author:twitter description:A tool for benchmarking RPC services
@@ -76,9 +77,10 @@ github-twitter-RTLtextarea | RTLtextarea | https://github.com/twitter/RTLtextare
 github-twitter-hdfs-du | hdfs-du | https://github.com/twitter/hdfs-du | author:twitter description:Visualize your HDFS cluster usage
 github-twitter-standard-project | standard-project | https://github.com/twitter/standard-project | author:twitter description:A slightly more standard sbt project plugin library
 github-twitter-hpack | hpack | https://github.com/twitter/hpack | author:twitter description:Header Compression for HTTP/2
+github-twitter-scala-bootstrapper | scala-bootstrapper | https://github.com/twitter/scala-bootstrapper | author:twitter description:initial setup for a scala library or server, using sbt
+github-twitter-tormenta | tormenta | https://github.com/twitter/tormenta | author:twitter description:Scala extensions for Storm
 github-twitter-whiskey | whiskey | https://github.com/twitter/whiskey | author:twitter description:HTTP library for Android (beta)
 github-twitter-haplocheirus | haplocheirus | https://github.com/twitter/haplocheirus | author:twitter description:A Redis-backed storage engine for timelines
-github-twitter-tormenta | tormenta | https://github.com/twitter/tormenta | author:twitter description:Scala extensions for Storm
 github-twitter-hraven | hraven | https://github.com/twitter/hraven | author:twitter description:hRaven collects run time data and statistics from MapReduce jobs in an easily queryable format
 github-twitter-zktraffic | zktraffic | https://github.com/twitter/zktraffic | author:twitter description:ZooKeeper protocol analyzer and stats gathering daemon
 github-twitter-elephant-twin | elephant-twin | https://github.com/twitter/elephant-twin | author:twitter description:Elephant Twin is a framework for creating indexes in Hadoop
@@ -87,45 +89,59 @@ github-twitter-sbt-package-dist | sbt-package-dist | https://github.com/twitter/
 github-twitter-flockdb-client | flockdb-client | https://github.com/twitter/flockdb-client | author:twitter description:A Ruby client library for FlockDB
 github-twitter-twisitor | twisitor | https://github.com/twitter/twisitor | author:twitter description:A simple and spectacular photo-tweeting birdhouse
 github-twitter-twitter-text-conformance | twitter-text-conformance | https://github.com/twitter/twitter-text-conformance | author:twitter description:Conformance testing data for the twitter-text-* repositories
-github-twitter-libcrunch | libcrunch | https://github.com/twitter/libcrunch | author:twitter description:A lightweight mapping framework that maps data objects to a number of nodes, subject to constraints
 github-twitter-torch-distlearn | torch-distlearn | https://github.com/twitter/torch-distlearn | author:twitter description:A set of distributed learning algorithms for Torch
+github-twitter-libcrunch | libcrunch | https://github.com/twitter/libcrunch | author:twitter description:A lightweight mapping framework that maps data objects to a number of nodes, subject to constraints
 github-twitter-naggati2 | naggati2 | https://github.com/twitter/naggati2 | author:twitter description:Protocol builder for netty using scala (DEPRECATED)
 github-twitter-netty-http2 | netty-http2 | https://github.com/twitter/netty-http2 | author:twitter description:HTTP/2 for Netty
 github-twitter-plumage.js | plumage.js | https://github.com/twitter/plumage.js | author:twitter description:Batteries Included App Framework for Data Intensive UIs
 github-twitter-torch-dataset | torch-dataset | https://github.com/twitter/torch-dataset | author:twitter description:An extensible and high performance method of reading, sampling and processing data for Torch
 github-twitter-cdk | cdk | https://github.com/twitter/cdk | author:twitter description:CDK is a tool to quickly generate single-file html slide presentations from AsciiDoc
-github-twitter-gozer | gozer | https://github.com/twitter/gozer | author:twitter description:Prototype mesos framework using new low-level API built in Go
 github-twitter-torch-ipc | torch-ipc | https://github.com/twitter/torch-ipc | author:twitter description:A set of primitives for parallel computation in Torch
+github-twitter-gozer | gozer | https://github.com/twitter/gozer | author:twitter description:Prototype mesos framework using new low-level API built in Go
+github-twitter-mahout | mahout | https://github.com/twitter/mahout | author:twitter description:Twitter's fork of Apache Mahout (we intend to push changes upstream)
 github-twitter-gizzmo | gizzmo | https://github.com/twitter/gizzmo | author:twitter description:A command-line client for Gizzard
-github-twitter-grabby-hands | grabby-hands | https://github.com/twitter/grabby-hands | author:twitter description:A JVM Kestrel client that aggregates queues from multiple servers. Implemented in Scala with Java bindings. In use at Twitter for all JVM Search and Streaming Kestrel interactions.
 github-twitter-code-of-conduct | code-of-conduct | https://github.com/twitter/code-of-conduct | author:twitter description:Open Source Code of Conduct at Twitter
+github-twitter-grabby-hands | grabby-hands | https://github.com/twitter/grabby-hands | author:twitter description:A JVM Kestrel client that aggregates queues from multiple servers. Implemented in Scala with Java bindings. In use at Twitter for all JVM Search and Streaming Kestrel interactions.
+github-twitter-Rowz | Rowz | https://github.com/twitter/Rowz | author:twitter description:A sample gizzard application
+github-twitter-twitter4j | twitter4j | https://github.com/twitter/twitter4j | author:twitter description:Twitter4J is an open-sourced, mavenized and Google App Engine safe Java library for the Twitter API which is released under the APL 2.0.
 github-twitter-time_constants | time_constants | https://github.com/twitter/time_constants | author:twitter description:Time constants, in seconds, so you don't have to use slow ActiveSupport helpers
 github-twitter-bookkeeper | bookkeeper | https://github.com/twitter/bookkeeper | author:twitter description:Twitter's fork of Apache BookKeeper (will push changes upstream eventually)
 github-twitter-sbt-scrooge | sbt-scrooge | https://github.com/twitter/sbt-scrooge | author:twitter description:An SBT plugin that adds a mixin for doing Thrift code auto-generation during your compile phase
 github-twitter-ios-twitter-logging-service | ios-twitter-logging-service | https://github.com/twitter/ios-twitter-logging-service | author:twitter description:Twitter Logging Service is a robust and performant logging framework for iOS clients
 github-twitter-sbt-thrift | sbt-thrift | https://github.com/twitter/sbt-thrift | author:twitter description:sbt rules for generating source stubs out of thrift IDLs, for java & scala
+github-twitter-pants | pants | https://github.com/twitter/pants | author:twitter description:Pants Build System
 github-twitter-sslconfig | sslconfig | https://github.com/twitter/sslconfig | author:twitter description:Twitter's OpenSSL Configuration
 github-twitter-jaqen | jaqen | https://github.com/twitter/jaqen | author:twitter description:A type-safe heterogenous Map or a Named field Tuple
 github-twitter-ccommon | ccommon | https://github.com/twitter/ccommon | author:twitter description:Cache Commons
 github-twitter-libwatchman | libwatchman | https://github.com/twitter/libwatchman | author:twitter description:A C interface to watchman
 github-twitter-spitball | spitball | https://github.com/twitter/spitball | author:twitter description:A very simple gem package generation tool built on bundler
 github-twitter-twitter-cldr-npm | twitter-cldr-npm | https://github.com/twitter/twitter-cldr-npm | author:twitter description:TwitterCldr npm package
+github-twitter-streamyj | streamyj | https://github.com/twitter/streamyj | author:twitter description:Scala sugar for the Jackson JSON parser
 github-twitter-unishark | unishark | https://github.com/twitter/unishark | author:twitter description:Unishark: Another unittest extension for Python
 github-twitter-torch-thrift | torch-thrift | https://github.com/twitter/torch-thrift | author:twitter description:A Thrift codec for Torch
+github-twitter-webrat | webrat | https://github.com/twitter/webrat | author:twitter description:Webrat - Ruby Acceptance Testing for Web applications
 github-twitter-cloudhopper-commons | cloudhopper-commons | https://github.com/twitter/cloudhopper-commons | author:twitter description:Cloudhopper Commons
 github-twitter-jsr166e | jsr166e | https://github.com/twitter/jsr166e | author:twitter description:JSR166e for Twitter
 github-twitter-raggiana | raggiana | https://github.com/twitter/raggiana | author:twitter description:A simple standalone Finagle stats viewer
+github-twitter-git | git | https://github.com/twitter/git | author:twitter description:Git Source Code Mirror - This is a publish-only repository and all pull requests are ignored. Please follow Documentation/SubmittingPatches procedure for any of your improvements.
+github-twitter-cascading | cascading | https://github.com/twitter/cascading | author:twitter description:Cascading is a feature rich API for defining and executing complex and fault tolerant data processing workflows on a Hadoop cluster.
 github-twitter-twitterActors | twitterActors | https://github.com/twitter/twitterActors | author:twitter description:Improved Scala actors library; used internally at Twitter
+github-twitter-pig | pig | https://github.com/twitter/pig | author:twitter description:Mirror of Apache Pig
 github-twitter-finatra-activator-http-seed | finatra-activator-http-seed | https://github.com/twitter/finatra-activator-http-seed | author:twitter description:Typesafe activator template for constructing a Finatra HTTP server application:
 github-twitter-elephant-twin-lzo | elephant-twin-lzo | https://github.com/twitter/elephant-twin-lzo | author:twitter description:Elephant Twin LZO uses Elephant Twin to create LZO block indexes
+github-twitter-scala | scala | https://github.com/twitter/scala | author:twitter description:The Scala programming language
+github-twitter-sprockets-commonjs-twitter | sprockets-commonjs-twitter | https://github.com/twitter/sprockets-commonjs-twitter | author:twitter description:Adds CommonJS support to Sprockets
+github-twitter-spark | spark | https://github.com/twitter/spark | author:twitter description:Mirror of Apache Spark
 github-twitter-bittern | bittern | https://github.com/twitter/bittern | author:twitter description:Bittern Cache uses nvdimm to speed up block io operations
-github-twitter-nodes | nodes | https://github.com/twitter/nodes | author:twitter description:Updated Oct 15, 2016
+github-twitter-watchman | watchman | https://github.com/twitter/watchman | author:twitter description:Watches files and records, or triggers actions, when they change.
+github-twitter-nodes | nodes | https://github.com/twitter/nodes | author:twitter 
+github-twitter-scalacheck | scalacheck | https://github.com/twitter/scalacheck | author:twitter description:Property-based testing for Scala
 github-twitter-finatra-activator-thrift-seed | finatra-activator-thrift-seed | https://github.com/twitter/finatra-activator-thrift-seed | author:twitter description:Typesafe activator template for constructing a Finatra Thrift server application: https://twitter.github.io/finatra/user-guide/ —
 github-twitter-PerfTracepoint | PerfTracepoint | https://github.com/twitter/PerfTracepoint | author:twitter description:Perf tracepoint support for the JVM
 github-twitter-oscon-puzzles | oscon-puzzles | https://github.com/twitter/oscon-puzzles | author:twitter description:OSCON 2014 Puzzle
-github-twitter-finatra-misc | finatra-misc | https://github.com/twitter/finatra-misc | author:twitter description:Miscellaneous libraries and utils used by Finatra
 github-twitter-scala-csp-config | scala-csp-config | https://github.com/twitter/scala-csp-config | author:twitter description:A Scala library for configuring Content Security Policy headers for HTTP responses.
-github-twitter-second-control-probability-distributions | second-control-probability-distributions | https://github.com/twitter/second-control-probability-distributions | author:twitter description:Updated Jan 6, 2016
+github-twitter-second-control-probability-distributions | second-control-probability-distributions | https://github.com/twitter/second-control-probability-distributions | author:twitter 
+github-twitter-finatra-misc | finatra-misc | https://github.com/twitter/finatra-misc | author:twitter description:Miscellaneous libraries and utils used by Finatra
 github-twitter-analytics-infra-governance | analytics-infra-governance | https://github.com/twitter/analytics-infra-governance | author:twitter description:Description of the process for how to commit, review, and release code to the Scalding OSS family (Scalding, Summingbird, Algebird, Bijection, Storehaus, etc)
 github-twitter-scala-json | scala-json | https://github.com/twitter/scala-json | author:twitter description:JSON in Scala (deprecated)
 github-twitter-dodo | dodo | https://github.com/twitter/dodo | author:twitter description:The Twitter OSS Project Builder

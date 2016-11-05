@@ -1,6 +1,6 @@
 github-ValveSoftware-steam-for-linux | steam-for-linux | https://github.com/ValveSoftware/steam-for-linux | author:ValveSoftware description:Issue tracking for the Steam for Linux beta client
-github-ValveSoftware-ToGL | ToGL | https://github.com/ValveSoftware/ToGL | author:ValveSoftware description:Direct3D to OpenGL abstraction layer
 github-ValveSoftware-openvr | openvr | https://github.com/ValveSoftware/openvr | author:ValveSoftware description:OpenVR SDK
+github-ValveSoftware-ToGL | ToGL | https://github.com/ValveSoftware/ToGL | author:ValveSoftware description:Direct3D to OpenGL abstraction layer
 github-ValveSoftware-source-sdk-2013 | source-sdk-2013 | https://github.com/ValveSoftware/source-sdk-2013 | author:ValveSoftware description:The 2013 edition of the Source SDK
 github-ValveSoftware-vogl | vogl | https://github.com/ValveSoftware/vogl | author:ValveSoftware description:OpenGL capture / playback debugger.
 github-ValveSoftware-halflife | halflife | https://github.com/ValveSoftware/halflife | author:ValveSoftware description:Half-Life 1 engine based games

@@ -4,18 +4,21 @@ github-openai-rllab | rllab | https://github.com/openai/rllab | author:openai de
 github-openai-improved-gan | improved-gan | https://github.com/openai/improved-gan | author:openai description:code for the paper "Improved Techniques for Training GANs"
 github-openai-cleverhans | cleverhans | https://github.com/openai/cleverhans | author:openai description:A library for benchmarking vulnerability to adversarial examples
 github-openai-kubernetes-ec2-autoscaler | kubernetes-ec2-autoscaler | https://github.com/openai/kubernetes-ec2-autoscaler | author:openai description:A batch-optimized scaling manager for Kubernetes
-github-openai-InfoGAN | InfoGAN | https://github.com/openai/InfoGAN | author:openai description:Updated Oct 19, 2016
+github-openai-InfoGAN | InfoGAN | https://github.com/openai/InfoGAN | author:openai 
 github-openai-iaf | iaf | https://github.com/openai/iaf | author:openai description:Code for reproducing key results in the paper "Improving Variational Inference with Inverse Autoregressive Flow"
-github-openai-imitation | imitation | https://github.com/openai/imitation | author:openai description:Updated Jun 10, 2016
-github-openai-vime | vime | https://github.com/openai/vime | author:openai description:Updated Jun 20, 2016
+github-openai-imitation | imitation | https://github.com/openai/imitation | author:openai 
+github-openai-vime | vime | https://github.com/openai/vime | author:openai 
+github-openai-socml16 | socml16 | https://github.com/openai/socml16 | author:openai 
 github-openai-gym-http-api | gym-http-api | https://github.com/openai/gym-http-api | author:openai description:API to access OpenAI Gym from other languages via HTTP
-github-openai-socml16 | socml16 | https://github.com/openai/socml16 | author:openai description:Updated Aug 25, 2016
 github-openai-mujoco-py | mujoco-py | https://github.com/openai/mujoco-py | author:openai description:MuJoCo Python bindings
 github-openai-atari-py | atari-py | https://github.com/openai/atari-py | author:openai description:A packaged and slightly-modified version of https://github.com/bbitmaster/ale_python_interface
+github-openai-openai-gemm | openai-gemm | https://github.com/openai/openai-gemm | author:openai description:Open single and half precision gemm implementations
 github-openai-doom-py | doom-py | https://github.com/openai/doom-py | author:openai description:ViZDoom Python wrapper
 github-openai-pachi-py | pachi-py | https://github.com/openai/pachi-py | author:openai description:Python wrappers for Pachi. Contains a modified version of the bleeding-edge Pachi source code.
 github-openai-rosbridge | rosbridge | https://github.com/openai/rosbridge | author:openai description:Bridge from Gym to ROS robots
-github-openai-gym-soccer | gym-soccer | https://github.com/openai/gym-soccer | author:openai description:Updated Aug 29, 2016
+github-openai-gym-soccer | gym-soccer | https://github.com/openai/gym-soccer | author:openai 
 github-openai-gym-wikinav | gym-wikinav | https://github.com/openai/gym-wikinav | author:openai description:Wikipedia navigation environment for OpenAI Gym
-github-openai-openai-gemm | openai-gemm | https://github.com/openai/openai-gemm | author:openai description:Open single and half precision gemm implementations
 github-openai-gym-recording | gym-recording | https://github.com/openai/gym-recording | author:openai description:Add-on package to gym, to record sequences of actions, observations, and rewards
+github-openai-robot_controllers | robot_controllers | https://github.com/openai/robot_controllers | author:openai description:Robot control infrastructure
+github-openai-pyconfigatron | pyconfigatron | https://github.com/openai/pyconfigatron | author:openai description:a python3 compatible pyconfigatron
+github-openai-fetch_robots | fetch_robots | https://github.com/openai/fetch_robots | author:openai description:Bringup for fetch & freight

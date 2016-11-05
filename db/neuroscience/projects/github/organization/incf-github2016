@@ -3,7 +3,9 @@ github-INCF-eeg-database | eeg-database | https://github.com/INCF/eeg-database |
 github-INCF-bids-validator | bids-validator | https://github.com/INCF/bids-validator | author:INCF description:Validator for the Brain Imaging Data Structure
 github-INCF-xnnppx | xnnppx | https://github.com/INCF/xnnppx | author:INCF description:XNAT-NiPype-pyxnat
 github-INCF-neurohdf | neurohdf | https://github.com/INCF/neurohdf | author:INCF description:Unifying neuroscientific data types with HDF5
-github-INCF-ProvenanceLibrary | ProvenanceLibrary | https://github.com/INCF/ProvenanceLibrary | author:INCF description:Updated Feb 9, 2016
+github-INCF-ProvenanceLibrary | ProvenanceLibrary | https://github.com/INCF/ProvenanceLibrary | author:INCF 
+github-INCF-nineml | nineml | https://github.com/INCF/nineml | author:INCF description:Specification of the NineML model description language.
+github-INCF-ImageReconstruction | ImageReconstruction | https://github.com/INCF/ImageReconstruction | author:INCF description:Reconstruction of 3D volumetric dataset from a collection of 2D slices
 github-INCF-Scalable-Brain-Atlas | Scalable-Brain-Atlas | https://github.com/INCF/Scalable-Brain-Atlas | author:INCF description:Source code of the Scalable Brain Atlas website (scalablebrainatlas.incf.org)
 github-INCF-grabbit | grabbit | https://github.com/INCF/grabbit | author:INCF description:grabb from data structures
 github-INCF-BIDS-examples | BIDS-examples | https://github.com/INCF/BIDS-examples | author:INCF description:A set of BIDS compatible datasets with empty nifti files that can be used for testing software.
@@ -12,29 +14,39 @@ github-INCF-ImageRegistration | ImageRegistration | https://github.com/INCF/Imag
 github-INCF-ids-tools | ids-tools | https://github.com/INCF/ids-tools | author:INCF description:INCF Dataspace utilities
 github-INCF-pybids | pybids | https://github.com/INCF/pybids | author:INCF description:Python package to access BIDS datasets (yet to get going)
 github-INCF-pykCSD | pykCSD | https://github.com/INCF/pykCSD | author:INCF description:Object oriented Python kernel current source density toolbox
-github-INCF-openfmri2bids | openfmri2bids | https://github.com/INCF/openfmri2bids | author:INCF description:Convert OpenfMRI dataset to BIDS.
 github-INCF-HAWG-examples | HAWG-examples | https://github.com/INCF/HAWG-examples | author:INCF description:HAWG example JSON files
-github-INCF-Computational-Neurosciences-Ontology--C.N.O.- | Computational-Neurosciences-Ontology--C.N.O.- | https://github.com/INCF/Computational-Neurosciences-Ontology--C.N.O.- | author:INCF description:Updated Feb 21, 2013
-github-INCF-eeg2 | eeg2 | https://github.com/INCF/eeg2 | author:INCF description:Updated May 23, 2012
+github-INCF-openfmri2bids | openfmri2bids | https://github.com/INCF/openfmri2bids | author:INCF description:Convert OpenfMRI dataset to BIDS.
 github-INCF-WDAT | WDAT | https://github.com/INCF/WDAT | author:INCF description:Web Data Analysis Tool
+github-INCF-Computational-Neurosciences-Ontology--C.N.O.- | Computational-Neurosciences-Ontology--C.N.O.- | https://github.com/INCF/Computational-Neurosciences-Ontology--C.N.O.- | author:INCF 
 github-INCF-BIDS | BIDS | https://github.com/INCF/BIDS | author:INCF description:Brain Imaging Data Structure
 github-INCF-BIDS2ISATab | BIDS2ISATab | https://github.com/INCF/BIDS2ISATab | author:INCF description:Extract ISA-Tab compatible metadata from Brain Imaging Data Structure compatible datasets
-github-INCF-incf.dai | incf.dai | https://github.com/INCF/incf.dai | author:INCF description:Updated Sep 8, 2011
-github-INCF-XCEDE | XCEDE | https://github.com/INCF/XCEDE | author:INCF description:Updated Mar 28, 2012
+github-INCF-biostar-central | biostar-central | https://github.com/INCF/biostar-central | author:INCF description:DEPRECATED, please go to upstream on
+github-INCF-XCEDE | XCEDE | https://github.com/INCF/XCEDE | author:INCF 
+github-INCF-eeg2 | eeg2 | https://github.com/INCF/eeg2 | author:INCF 
+github-INCF-incf.dai | incf.dai | https://github.com/INCF/incf.dai | author:INCF 
 github-INCF-BIDS2NDA | BIDS2NDA | https://github.com/INCF/BIDS2NDA | author:INCF description:A conversion tool for creating NDA compatible metadata representation from BIDS datasets.
-github-INCF-one_click | one_click | https://github.com/INCF/one_click | author:INCF description:One Click Sharing
-github-INCF-nap | nap | https://github.com/INCF/nap | author:INCF description:neuroinformatics app platform
-github-INCF-dsni | dsni | https://github.com/INCF/dsni | author:INCF description:Updated Jan 20, 2012
-github-INCF-lib9ML | lib9ML | https://github.com/INCF/lib9ML | author:INCF description:A Python library for reading, parsing, validating and writing the 9ML (http://nineml.net) object model
-github-INCF-ansible-dataspace | ansible-dataspace | https://github.com/INCF/ansible-dataspace | author:INCF description:Ansible roles for INCF DataSpace: http://www.incf.org/resources/data-space
-github-INCF-3d-printing-of-brain-regions | 3d-printing-of-brain-regions | https://github.com/INCF/3d-printing-of-brain-regions | author:INCF description:Goal is to arrive at a pipeline that takes an MRI scan of a human or animal brain, processes and segments it, and produces a collection of 3d printable files that clip together.
-github-INCF-dbclient | dbclient | https://github.com/INCF/dbclient | author:INCF description:Drop Box Client for ImageJ Repo 2
 github-INCF-Vectorization-of-brain-atlases | Vectorization-of-brain-atlases | https://github.com/INCF/Vectorization-of-brain-atlases | author:INCF description:Output of the GSOC project 'real time vectorization of brain atlases', see http://incf.org/gsoc/2014/real-time-vectorization-of-brain-atlases
-github-INCF-NineML_demo_2016 | NineML_demo_2016 | https://github.com/INCF/NineML_demo_2016 | author:INCF description:Updated Jul 18, 2016
-github-INCF-minds-schema | minds-schema | https://github.com/INCF/minds-schema | author:INCF description:Updated May 17, 2016
-github-INCF-NineMLCatalog | NineMLCatalog | https://github.com/INCF/NineMLCatalog | author:INCF description:A collection of 9ML example component classes
-github-INCF-old_nineml_repo | old_nineml_repo | https://github.com/INCF/old_nineml_repo | author:INCF description:Updated May 4, 2016
-github-INCF-libneurosim | libneurosim | https://github.com/INCF/libneurosim | author:INCF description:Common interfaces for neuronal simulators
-github-INCF-bidsutils | bidsutils | https://github.com/INCF/bidsutils | author:INCF description:Utility functions for working with BIDS compatible datasets
+github-INCF-dbclient | dbclient | https://github.com/INCF/dbclient | author:INCF description:Drop Box Client for ImageJ Repo 2
+github-INCF-dsni | dsni | https://github.com/INCF/dsni | author:INCF 
+github-INCF-lib9ML | lib9ML | https://github.com/INCF/lib9ML | author:INCF description:A Python library for reading, parsing, validating and writing the 9ML (http://nineml.net) object model
+github-INCF-nidm | nidm | https://github.com/INCF/nidm | author:INCF description:Neuroimaging Data Model (NIDM): describing neuroimaging data and provenance
+github-INCF-3d-printing-of-brain-regions | 3d-printing-of-brain-regions | https://github.com/INCF/3d-printing-of-brain-regions | author:INCF description:Goal is to arrive at a pipeline that takes an MRI scan of a human or animal brain, processes and segments it, and produces a collection of 3d printable files that clip together.
+github-INCF-ansible-dataspace | ansible-dataspace | https://github.com/INCF/ansible-dataspace | author:INCF description:Ansible roles for INCF DataSpace: http://www.incf.org/resources/data-space
+github-INCF-nap | nap | https://github.com/INCF/nap | author:INCF description:neuroinformatics app platform
+github-INCF-one_click | one_click | https://github.com/INCF/one_click | author:INCF description:One Click Sharing
 github-INCF-p3-validator | p3-validator | https://github.com/INCF/p3-validator | author:INCF description:Performs validation of odd-ball paradigm data using P300 classification
+github-INCF-GOOGLESUMMERCODE2016 | GOOGLESUMMERCODE2016 | https://github.com/INCF/GOOGLESUMMERCODE2016 | author:INCF description:Active Segmentation Plugin for ImageJ
+github-INCF-NineMLCatalog | NineMLCatalog | https://github.com/INCF/NineMLCatalog | author:INCF description:A collection of 9ML example component classes
 github-INCF-dai-api-wsgi | dai-api-wsgi | https://github.com/INCF/dai-api-wsgi | author:INCF description:DAI API Demo
+github-INCF-incf-dai | incf-dai | https://github.com/INCF/incf-dai | author:INCF description:Automatically exported from code.google.com/p/incf-dai
+github-INCF-QSNMC | QSNMC | https://github.com/INCF/QSNMC | author:INCF description:A collection of candidates, tests, and records for use with SciDash.
+github-INCF-NineML_demo_2016 | NineML_demo_2016 | https://github.com/INCF/NineML_demo_2016 | author:INCF 
+github-INCF-files_irods | files_irods | https://github.com/INCF/files_irods | author:INCF description:Integration with iRODS
+github-INCF-odml-terminologies | odml-terminologies | https://github.com/INCF/odml-terminologies | author:INCF description:odml-terminologies defining terms to annotate electrophysiological data
+github-INCF-bidsutils | bidsutils | https://github.com/INCF/bidsutils | author:INCF description:Utility functions for working with BIDS compatible datasets
+github-INCF-csa | csa | https://github.com/INCF/csa | author:INCF description:The Python implementation of the Connection-Set Algebra
+github-INCF-libneurosim | libneurosim | https://github.com/INCF/libneurosim | author:INCF description:Common interfaces for neuronal simulators
+github-INCF-nes | nes | https://github.com/INCF/nes | author:INCF 
+github-INCF-old_nineml_repo | old_nineml_repo | https://github.com/INCF/old_nineml_repo | author:INCF 
+github-INCF-minds-schema | minds-schema | https://github.com/INCF/minds-schema | author:INCF 
+github-INCF-configuration | configuration | https://github.com/INCF/configuration | author:INCF description:a simple, but flexible, way for anyone to stand up an instance of the edX platform that is fully configured and ready-to-go

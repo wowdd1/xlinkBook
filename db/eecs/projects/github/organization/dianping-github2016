@@ -1,33 +1,46 @@
 github-dianping-cat | cat | https://github.com/dianping/cat | author:dianping description:Central Application Tracking
-github-dianping-dianping-open-sdk | dianping-open-sdk | https://github.com/dianping/dianping-open-sdk | author:dianping description:Updated May 7, 2015
 github-dianping-pigeon | pigeon | https://github.com/dianping/pigeon | author:dianping description:RPC framework of DIANPING
+github-dianping-dianping-open-sdk | dianping-open-sdk | https://github.com/dianping/dianping-open-sdk | author:dianping 
 github-dianping-zebra | zebra | https://github.com/dianping/zebra | author:dianping description:DianPing data access layer (DAL) for MySQL.
 github-dianping-camel | camel | https://github.com/dianping/camel | author:dianping description:camel: soft load balance(slb) middle ware - control nginx servers by portal and api.
-github-dianping-puma | puma | https://github.com/dianping/puma | author:dianping description:Updated Apr 11, 2016
-github-dianping-wormhole | wormhole | https://github.com/dianping/wormhole | author:dianping description:Updated Aug 19, 2014
+github-dianping-puma | puma | https://github.com/dianping/puma | author:dianping 
+github-dianping-wormhole | wormhole | https://github.com/dianping/wormhole | author:dianping 
 github-dianping-cat.net | cat.net | https://github.com/dianping/cat.net | author:dianping description:Cat .Net client library
+github-dianping-pigeon270 | pigeon270 | https://github.com/dianping/pigeon270 | author:dianping description:Service Framework
 github-dianping-polestar | polestar | https://github.com/dianping/polestar | author:dianping description:Union Query Engine Restful Service
 github-dianping-pigeon1 | pigeon1 | https://github.com/dianping/pigeon1 | author:dianping description:RPC service framework
 github-dianping-Dolphin | Dolphin | https://github.com/dianping/Dolphin | author:dianping description:Dolphin is a docker orgestration and provision tool
-github-dianping-storm-util | storm-util | https://github.com/dianping/storm-util | author:dianping description:Updated Apr 23, 2015
-github-dianping-blackhole | blackhole | https://github.com/dianping/blackhole | author:dianping description:Updated Aug 31, 2016
-github-dianping-hiveweb | hiveweb | https://github.com/dianping/hiveweb | author:dianping description:Updated Aug 25, 2014
-github-dianping-avatar-cache | avatar-cache | https://github.com/dianping/avatar-cache | author:dianping description:Updated May 16, 2014
+github-dianping-storm-util | storm-util | https://github.com/dianping/storm-util | author:dianping 
+github-dianping-blackhole | blackhole | https://github.com/dianping/blackhole | author:dianping 
+github-dianping-avatar-cache | avatar-cache | https://github.com/dianping/avatar-cache | author:dianping 
+github-dianping-hiveweb | hiveweb | https://github.com/dianping/hiveweb | author:dianping 
+github-dianping-MavenOneCMDB | MavenOneCMDB | https://github.com/dianping/MavenOneCMDB | author:dianping description:从网上找到的一个将one CMDB代码用maven的项目.便于代码的二次开发.感谢konca.
+github-dianping-docker | docker | https://github.com/dianping/docker | author:dianping description:Docker - the open-source application container engine
 github-dianping-v5 | v5 | https://github.com/dianping/v5 | author:dianping description:New Platform Planning
-github-dianping-abtest | abtest | https://github.com/dianping/abtest | author:dianping description:Updated Apr 2, 2013
-github-dianping-diors-cloud | diors-cloud | https://github.com/dianping/diors-cloud | author:dianping description:Updated May 15, 2013
+github-dianping-hadoop | hadoop | https://github.com/dianping/hadoop | author:dianping description:Mirror of Apache Hadoop
+github-dianping-docker-java | docker-java | https://github.com/dianping/docker-java | author:dianping description:Java Docker API Client
+github-dianping-abtest | abtest | https://github.com/dianping/abtest | author:dianping 
+github-dianping-hbase | hbase | https://github.com/dianping/hbase | author:dianping description:Mirror of Apache Hadoop HBase
 github-dianping-dobby | dobby | https://github.com/dianping/dobby | author:dianping description:An email-driven simple ticket system
-github-dianping-gitlab | gitlab | https://github.com/dianping/gitlab | author:dianping description:Gitlab For DianPing
-github-dianping-hcatalog-example | hcatalog-example | https://github.com/dianping/hcatalog-example | author:dianping description:Updated Jun 26, 2013
+github-dianping-diors-cloud | diors-cloud | https://github.com/dianping/diors-cloud | author:dianping 
+github-dianping-memcached | memcached | https://github.com/dianping/memcached | author:dianping description:memcached development tree
 github-dianping-ut-genius | ut-genius | https://github.com/dianping/ut-genius | author:dianping description:eclipse plugin of unit test generator
-github-dianping-dianping.github.com | dianping.github.com | https://github.com/dianping/dianping.github.com | author:dianping description:Updated May 10, 2013
+github-dianping-incubator-spark | incubator-spark | https://github.com/dianping/incubator-spark | author:dianping description:Spark DianPing Branch forked from apache
+github-dianping-acl-hdfs | acl-hdfs | https://github.com/dianping/acl-hdfs | author:dianping 
+github-dianping-donkey | donkey | https://github.com/dianping/donkey | author:dianping 
+github-dianping-YCSB | YCSB | https://github.com/dianping/YCSB | author:dianping description:Yahoo! Cloud Serving Benchmark
+github-dianping-dianping.github.com | dianping.github.com | https://github.com/dianping/dianping.github.com | author:dianping 
+github-dianping-spark | spark | https://github.com/dianping/spark | author:dianping description:Mirror of Apache Spark
+github-dianping-hcatalog-example | hcatalog-example | https://github.com/dianping/hcatalog-example | author:dianping 
 github-dianping-Trek | Trek | https://github.com/dianping/Trek | author:dianping description:A log collection service of DP front-end application
-github-dianping-donkey | donkey | https://github.com/dianping/donkey | author:dianping description:Updated Dec 11, 2013
-github-dianping-acl-hdfs | acl-hdfs | https://github.com/dianping/acl-hdfs | author:dianping description:Updated Oct 29, 2013
-github-dianping-cosmos-hive | cosmos-hive | https://github.com/dianping/cosmos-hive | author:dianping description:Updated Nov 29, 2012
-github-dianping-test-service | test-service | https://github.com/dianping/test-service | author:dianping description:Updated Jan 9, 2013
-github-dianping-dianping | dianping | https://github.com/dianping/dianping | author:dianping description:Updated Jun 25, 2013
-github-dianping-cosmos-hbase | cosmos-hbase | https://github.com/dianping/cosmos-hbase | author:dianping description:Updated Dec 20, 2012
-github-dianping-BeautyPartner | BeautyPartner | https://github.com/dianping/BeautyPartner | author:dianping description:Updated Jan 19, 2016
-github-dianping-github_tool | github_tool | https://github.com/dianping/github_tool | author:dianping description:Updated Dec 7, 2012
-github-dianping-cosmos-hadoop | cosmos-hadoop | https://github.com/dianping/cosmos-hadoop | author:dianping description:Updated Oct 29, 2013
+github-dianping-gitlab | gitlab | https://github.com/dianping/gitlab | author:dianping description:Gitlab For DianPing
+github-dianping-dianping | dianping | https://github.com/dianping/dianping | author:dianping 
+github-dianping-cosmos-hbase | cosmos-hbase | https://github.com/dianping/cosmos-hbase | author:dianping 
+github-dianping-test-service | test-service | https://github.com/dianping/test-service | author:dianping 
+github-dianping-github_tool | github_tool | https://github.com/dianping/github_tool | author:dianping 
+github-dianping-hcatalog | hcatalog | https://github.com/dianping/hcatalog | author:dianping description:Mirror of Apache HCatalog
+github-dianping-cosmos-hadoop | cosmos-hadoop | https://github.com/dianping/cosmos-hadoop | author:dianping 
+github-dianping-shark | shark | https://github.com/dianping/shark | author:dianping description:Shark DianPing Branch forked from amplab
+github-dianping-hive | hive | https://github.com/dianping/hive | author:dianping description:Mirror of Apache Hive
+github-dianping-BeautyPartner | BeautyPartner | https://github.com/dianping/BeautyPartner | author:dianping 
+github-dianping-cosmos-hive | cosmos-hive | https://github.com/dianping/cosmos-hive | author:dianping 

@@ -1,11 +1,67 @@
 github-instacart-truetime-android | truetime-android | https://github.com/instacart/truetime-android | author:instacart description:Android NTP time library. Get the true current time impervious to device clock time changes
-github-instacart-TrueTime.swift | TrueTime.swift | https://github.com/instacart/TrueTime.swift | author:instacart description:Get the true current time impervious to device clock time changes. (NTP library for Swift)
+github-instacart-TrueTime.swift | TrueTime.swift | https://github.com/instacart/TrueTime.swift | author:instacart description:NTP library for Swift. Get the true time impervious to device clock changes.
 github-instacart-ahab | ahab | https://github.com/instacart/ahab | author:instacart description:Docker event handling with Python
 github-instacart-ohmycron | ohmycron | https://github.com/instacart/ohmycron | author:instacart description:Run cron jobs in a standardized environment with logs and locking
 github-instacart-wilson_score | wilson_score | https://github.com/instacart/wilson_score | author:instacart description:Simple, dependency-free Wilson score
 github-instacart-amountable | amountable | https://github.com/instacart/amountable | author:instacart description:An easy and transparent way to attach, manage and sum Money fields to your ActiveRecord models.
 github-instacart-specmon | specmon | https://github.com/instacart/specmon | author:instacart description:Monitor your specs runtime over the time.
-github-instacart-aws-scripts-mon | aws-scripts-mon | https://github.com/instacart/aws-scripts-mon | author:instacart description:Clone of AWS Cloudwatch Monitor Scripts + report inodes
+github-instacart-searchkick | searchkick | https://github.com/instacart/searchkick | author:instacart description:Intelligent search made easy
+github-instacart-MMDrawerController | MMDrawerController | https://github.com/instacart/MMDrawerController | author:instacart description:A lightweight, easy to use, Side Drawer Navigation Controller
+github-instacart-ubuntu-ec2net | ubuntu-ec2net | https://github.com/instacart/ubuntu-ec2net | author:instacart description:port of Amazon ec2net to debian/ubuntu for automatically configuring AWS VPC interfaces
+github-instacart-slate | slate | https://github.com/instacart/slate | author:instacart description:Beautiful static documentation for your API
+github-instacart-audited | audited | https://github.com/instacart/audited | author:instacart description:Audited (formerly acts_as_audited) is an ORM extension that logs all changes to your Rails models.
 github-instacart-specmon-demo | specmon-demo | https://github.com/instacart/specmon-demo | author:instacart description:Demo app for specmon
-github-instacart-CTrueTime | CTrueTime | https://github.com/instacart/CTrueTime | author:instacart description:Bridging module for TrueTime.swift
+github-instacart-aws-scripts-mon | aws-scripts-mon | https://github.com/instacart/aws-scripts-mon | author:instacart description:Clone of AWS Cloudwatch Monitor Scripts + report inodes
+github-instacart-ios-charts | ios-charts | https://github.com/instacart/ios-charts | author:instacart description:An iOS port of the beautiful MPAndroidChart. - Beautiful charts for iOS apps!
+github-instacart-cloud-formation-viz | cloud-formation-viz | https://github.com/instacart/cloud-formation-viz | author:instacart 
+github-instacart-sidekiq-throttler | sidekiq-throttler | https://github.com/instacart/sidekiq-throttler | author:instacart description:Sidekiq middleware that adds the ability to rate limit job execution.
+github-instacart-rack-mini-profiler | rack-mini-profiler | https://github.com/instacart/rack-mini-profiler | author:instacart description:Profiler for your development and production Ruby rack apps.
+github-instacart-omniauth-google-oauth2-access-token | omniauth-google-oauth2-access-token | https://github.com/instacart/omniauth-google-oauth2-access-token | author:instacart description:Google OAuth2 Access Token Strategy for OmniAuth 1.0
+github-instacart-BMXSwipableCell | BMXSwipableCell | https://github.com/instacart/BMXSwipableCell | author:instacart description:A custom UITableViewCell that supports swipe to reveal (similar to iOS7 Mail App)
+github-instacart-haml_coffee_assets | haml_coffee_assets | https://github.com/instacart/haml_coffee_assets | author:instacart description:Haml Coffee templates in the Rails asset pipeline or as Sprockets engine.
+github-instacart-octohub | octohub | https://github.com/instacart/octohub | author:instacart description:Low level Python and CLI interface to GitHub
+github-instacart-fakeredis | fakeredis | https://github.com/instacart/fakeredis | author:instacart description:In-memory driver for redis-rb, useful for development and test environments
+github-instacart-AFAmazonS3Manager | AFAmazonS3Manager | https://github.com/instacart/AFAmazonS3Manager | author:instacart description:AFNetworking Client for the Amazon S3 API
 github-instacart-heroku-buildpack-ruby | heroku-buildpack-ruby | https://github.com/instacart/heroku-buildpack-ruby | author:instacart description:Ruby Heroku Buildpack custom for Instacart
+github-instacart-redmine | redmine | https://github.com/instacart/redmine | author:instacart description:Mirror of redmine code source - Official SVN repository is at https://svn.redmine.org/redmine - contact: @jbbarth or jeanbaptiste.barth (at) gmail (dot) com
+github-instacart-flip | flip | https://github.com/instacart/flip | author:instacart description:Flip lets you declare and manage feature flags, backed by cookies (private testing) and database (site-wide).
+github-instacart-CTrueTime | CTrueTime | https://github.com/instacart/CTrueTime | author:instacart description:Bridging module for TrueTime.swift
+github-instacart-makara | makara | https://github.com/instacart/makara | author:instacart description:A Read-Write Proxy for Connections; Also provides an ActiveRecord adapter.
+github-instacart-rails_12factor | rails_12factor | https://github.com/instacart/rails_12factor | author:instacart 
+github-instacart-rack-timeout | rack-timeout | https://github.com/instacart/rack-timeout | author:instacart description:Abort requests that are taking too long
+github-instacart-zendesk_api_client_rb | zendesk_api_client_rb | https://github.com/instacart/zendesk_api_client_rb | author:instacart description:Official Ruby Zendesk API Client
+github-instacart-elasticsearch-py | elasticsearch-py | https://github.com/instacart/elasticsearch-py | author:instacart description:Official Python low-level client for Elasticsearch.
+github-instacart-heroku-buildpack-nodejs | heroku-buildpack-nodejs | https://github.com/instacart/heroku-buildpack-nodejs | author:instacart description:The official Heroku buildpack for Node.js apps.
+github-instacart-rollbar-ios | rollbar-ios | https://github.com/instacart/rollbar-ios | author:instacart description:Objective-C library for crash reporting and logging with Rollbar.
+github-instacart-Willow | Willow | https://github.com/instacart/Willow | author:instacart description:Willow is a powerful, yet lightweight logging library written in Swift.
+github-instacart-blazer | blazer | https://github.com/instacart/blazer | author:instacart description:Open source business intelligence
+github-instacart-URITemplate.swift | URITemplate.swift | https://github.com/instacart/URITemplate.swift | author:instacart description:Swift implementation of URI Template (RFC6570)
+github-instacart-Mockingjay | Mockingjay | https://github.com/instacart/Mockingjay | author:instacart description:An elegant library for stubbing HTTP requests with ease in Swift
+github-instacart-troposphere | troposphere | https://github.com/instacart/troposphere | author:instacart description:troposphere - Python library to create AWS CloudFormation descriptions
+github-instacart-rails_workflow | rails_workflow | https://github.com/instacart/rails_workflow | author:instacart 
+github-instacart-ios-snapshot-test-case | ios-snapshot-test-case | https://github.com/instacart/ios-snapshot-test-case | author:instacart description:Snapshot view unit tests for iOS
+github-instacart-highlight_js-rails | highlight_js-rails | https://github.com/instacart/highlight_js-rails | author:instacart description:Rails pipeline wraper for highlight.js
+github-instacart-swift-style-guide | swift-style-guide | https://github.com/instacart/swift-style-guide | author:instacart description:The official Swift style guide for raywenderlich.com.
+github-instacart-sendgrid | sendgrid | https://github.com/instacart/sendgrid | author:instacart description:Adds ActionMailer settings to easily integrate with SendGrid.
+github-instacart-aws.s3 | aws.s3 | https://github.com/instacart/aws.s3 | author:instacart description:Amazon Simple Storage Service (S3) API Client
+github-instacart-sprockets-commonjs | sprockets-commonjs | https://github.com/instacart/sprockets-commonjs | author:instacart description:Adds CommonJS support to Sprockets
+github-instacart-asset_sync | asset_sync | https://github.com/instacart/asset_sync | author:instacart description:Synchronises Assets between Rails and S3
+github-instacart-spacecommander | spacecommander | https://github.com/instacart/spacecommander | author:instacart description:Commit fully-formatted Objective-C as a team without even trying.
+github-instacart-sidekiq | sidekiq | https://github.com/instacart/sidekiq | author:instacart description:Simple, efficient background processing for Ruby
+github-instacart-sprockets-coffee-react | sprockets-coffee-react | https://github.com/instacart/sprockets-coffee-react | author:instacart description:Sprockets preprocessor for CJSX (Coffeescript with React JSX markup)
+github-instacart-sidekiq-unique-jobs | sidekiq-unique-jobs | https://github.com/instacart/sidekiq-unique-jobs | author:instacart description:The missing unique jobs in sidekiq
+github-instacart-rspec_junit_formatter | rspec_junit_formatter | https://github.com/instacart/rspec_junit_formatter | author:instacart description:RSpec results formatted as JUnit XML that Hudson can read
+github-instacart-heroku-buildpack-multi | heroku-buildpack-multi | https://github.com/instacart/heroku-buildpack-multi | author:instacart description:DEPRECATED: Composable buildpacks
+github-instacart-KIF | KIF | https://github.com/instacart/KIF | author:instacart description:Keep It Functional - An iOS Functional Testing Framework
+github-instacart-zonify | zonify | https://github.com/instacart/zonify | author:instacart description:a command line tool for generating DNS records from EC2 instances
+github-instacart-omnicontacts | omnicontacts | https://github.com/instacart/omnicontacts | author:instacart description:A generalized Rack middleware for importing contacts from major email providers.
+github-instacart-heroku-buildpack-r | heroku-buildpack-r | https://github.com/instacart/heroku-buildpack-r | author:instacart description:Heroku buildpack for R (http://www.r-project.org)
+github-instacart-amazon-ecs-agent | amazon-ecs-agent | https://github.com/instacart/amazon-ecs-agent | author:instacart description:Amazon EC2 Container Service Agent
+github-instacart-Zip | Zip | https://github.com/instacart/Zip | author:instacart description:Swift framework for zipping and unzipping files.
+github-instacart-Watchdog | Watchdog | https://github.com/instacart/Watchdog | author:instacart description:Class for logging excessive blocking on the main thread
+github-instacart-ISO8601 | ISO8601 | https://github.com/instacart/ISO8601 | author:instacart description:ISO8601 date parser and writer
+github-instacart-SwiftCheck | SwiftCheck | https://github.com/instacart/SwiftCheck | author:instacart description:QuickCheck for Swift
+github-instacart-react-slick | react-slick | https://github.com/instacart/react-slick | author:instacart description:React carousel component
+github-instacart-Alamofire | Alamofire | https://github.com/instacart/Alamofire | author:instacart description:Elegant HTTP Networking in Swift
+github-instacart-thumbor | thumbor | https://github.com/instacart/thumbor | author:instacart description:thumbor is an open-source photo thumbnail service by globo.com
+github-instacart-rpm | rpm | https://github.com/instacart/rpm | author:instacart description:New Relic RPM Ruby Agent

@@ -1,12 +1,28 @@
 github-hulu-GrannySmith | GrannySmith | https://github.com/hulu/GrannySmith | author:hulu description:It's green. It's an apple.
 github-hulu-restfulgit | restfulgit | https://github.com/hulu/restfulgit | author:hulu description:REST API for Git data
 github-hulu-GSAutomation | GSAutomation | https://github.com/hulu/GSAutomation | author:hulu description:A Javascript extension/wrapper on iOS UIAutomation that makes test scripts more robust and easier to write.
-github-hulu-dripls | dripls | https://github.com/hulu/dripls | author:hulu description:"CDN in a box" that can shape network traffic for testing HTTPLS
 github-hulu-ectyper | ectyper | https://github.com/hulu/ectyper | author:hulu description:Tornado-based image manipulation service
+github-hulu-dripls | dripls | https://github.com/hulu/dripls | author:hulu description:"CDN in a box" that can shape network traffic for testing HTTPLS
 github-hulu-bank | bank | https://github.com/hulu/bank | author:hulu description:Statsd and Metricsd frontend for UDP packets aggregation
-github-hulu-monaco | monaco | https://github.com/hulu/monaco | author:hulu description:Updated Mar 1, 2016
+github-hulu-monaco | monaco | https://github.com/hulu/monaco | author:hulu 
 github-hulu-vfl2objc | vfl2objc | https://github.com/hulu/vfl2objc | author:hulu description:A script to convert Visual Formatting Language into native Objective C code for iOS developers
 github-hulu-HUTypedEvents | HUTypedEvents | https://github.com/hulu/HUTypedEvents | author:hulu description:An alternative way to manage events in Objective C
 github-hulu-statsd-router | statsd-router | https://github.com/hulu/statsd-router | author:hulu description:Metrics router for statsd cluster
 github-hulu-statsd-aggregator | statsd-aggregator | https://github.com/hulu/statsd-aggregator | author:hulu description:Local aggregator for statsd metrics.
+github-hulu-salt | salt | https://github.com/hulu/salt | author:hulu description:Central system and configuration manager
 github-hulu-urepo | urepo | https://github.com/hulu/urepo | author:hulu description:Universal repository for linux binary packages
+github-hulu-presto | presto | https://github.com/hulu/presto | author:hulu description:Distributed SQL query engine for running interactive analytic queries against big data sources.
+github-hulu-simpleRaft | simpleRaft | https://github.com/hulu/simpleRaft | author:hulu description:A implementation of Raft in pure Python
+github-hulu-bwoken | bwoken | https://github.com/hulu/bwoken | author:hulu description:iOS UIAutomation Test Runner
+github-hulu-cubism | cubism | https://github.com/hulu/cubism | author:hulu description:Cubism.js: A JavaScript library for time series visualization.
+github-hulu-IBActionSheet | IBActionSheet | https://github.com/hulu/IBActionSheet | author:hulu description:Customizable iOS 7 style UIActionSheet
+github-hulu-SocketRocket | SocketRocket | https://github.com/hulu/SocketRocket | author:hulu description:A conforming Objective-C WebSocket client library.
+github-hulu-strophejs | strophejs | https://github.com/hulu/strophejs | author:hulu description:Strophe.js is an XMPP library for JavaScript
+github-hulu-TMCache | TMCache | https://github.com/hulu/TMCache | author:hulu description:Fast parallel object cache for iOS and OS X.
+github-hulu-xmpp4r | xmpp4r | https://github.com/hulu/xmpp4r | author:hulu description:XMPP/Jabber Library for Ruby
+github-hulu-amphtml | amphtml | https://github.com/hulu/amphtml | author:hulu description:AMP HTML source code, samples, and documentation. See below for more info.
+github-hulu-amp-by-example | amp-by-example | https://github.com/hulu/amp-by-example | author:hulu description:A hands-on introduction to Accelerated Mobile Pages (AMP) focusing on code and live samples.
+github-hulu-redis-py | redis-py | https://github.com/hulu/redis-py | author:hulu description:Redis Python Client
+github-hulu-uwsgi | uwsgi | https://github.com/hulu/uwsgi | author:hulu description:uWSGI application server container
+github-hulu-Specs | Specs | https://github.com/hulu/Specs | author:hulu description:A repository of CocoaPods (cocoapods.org) specifications.
+github-hulu-robolectric | robolectric | https://github.com/hulu/robolectric | author:hulu description:Android Unit Testing Framework

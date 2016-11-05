@@ -2,22 +2,36 @@ github-meituan-RoboAspectJ | RoboAspectJ | https://github.com/meituan/RoboAspect
 github-meituan-Firefly | Firefly | https://github.com/meituan/Firefly | author:meituan description:Lightweight thrift client code generator and runtime library for Android and Java.
 github-meituan-monkey | monkey | https://github.com/meituan/monkey | author:meituan description:Data mapping system
 github-meituan-mcsapi_python | mcsapi_python | https://github.com/meituan/mcsapi_python | author:meituan description:美团云 API Python SDK和客户端
+github-meituan-android-training-course-in-chinese | android-training-course-in-chinese | https://github.com/meituan/android-training-course-in-chinese | author:meituan description:Google Android官方培训课程中文版
 github-meituan-mcsapi_java | mcsapi_java | https://github.com/meituan/mcsapi_java | author:meituan description:美团云 API Java SDK和客户端
 github-meituan-mssapi_php | mssapi_php | https://github.com/meituan/mssapi_php | author:meituan description:美团云对象存储 PHP SDK
 github-meituan-imghdr | imghdr | https://github.com/meituan/imghdr | author:meituan description:The imghdr module determines the type of image contained in a file or octet streams(obj of Buffer).
 github-meituan-mcsapi | mcsapi | https://github.com/meituan/mcsapi | author:meituan description:MOS云主机(MCS)API文档
 github-meituan-mssapi_ruby | mssapi_ruby | https://github.com/meituan/mssapi_ruby | author:meituan description:美团云对象存储 Ruby SDK
 github-meituan-mssapi_java | mssapi_java | https://github.com/meituan/mssapi_java | author:meituan description:美团云对象存储 Java SDK
+github-meituan-mssapi_python | mssapi_python | https://github.com/meituan/mssapi_python | author:meituan description:美团云对象存储 Python SDK
 github-meituan-mssapi_ruby_gem | mssapi_ruby_gem | https://github.com/meituan/mssapi_ruby_gem | author:meituan description:美团云对象存储 Ruby SDK Gem版本
 github-meituan-mock-template | mock-template | https://github.com/meituan/mock-template | author:meituan description:Template mock data generator
-github-meituan-mssapi_python | mssapi_python | https://github.com/meituan/mssapi_python | author:meituan description:美团云对象存储 Python SDK
 github-meituan-mock-response | mock-response | https://github.com/meituan/mock-response | author:meituan description:Response renderer
 github-meituan-mssapi_js | mssapi_js | https://github.com/meituan/mssapi_js | author:meituan description:美团云对象存储 Javascript SDK
-github-meituan-mock-generator | mock-generator | https://github.com/meituan/mock-generator | author:meituan description:Random data generator
+github-meituan-react-native | react-native | https://github.com/meituan/react-native | author:meituan description:A framework for building native apps with React.
+github-meituan-LVS | LVS | https://github.com/meituan/LVS | author:meituan description:A distribution of Linux Virtual Server with some advanced features. It introduces a new packet forwarding method - FULLNAT other than NAT/Tunneling/DirectRouting, and defense mechanism against synflooding attack - SYNPROXY.
+github-meituan-stub-demo | stub-demo | https://github.com/meituan/stub-demo | author:meituan description:List of demos of how to use `stub`
 github-meituan-mock-locator | mock-locator | https://github.com/meituan/mock-locator | author:meituan description:Resource locator
 github-meituan-mock-random | mock-random | https://github.com/meituan/mock-random | author:meituan description:Random JSON generator for mock service
-github-meituan-mock-request | mock-request | https://github.com/meituan/mock-request | author:meituan description:Request parser
+github-meituan-mock-generator | mock-generator | https://github.com/meituan/mock-generator | author:meituan description:Random data generator
+github-meituan-geoip-server | geoip-server | https://github.com/meituan/geoip-server | author:meituan description:Backend-free Persistent GeoIP Server
 github-meituan-stub-proxy | stub-proxy | https://github.com/meituan/stub-proxy | author:meituan description:HTTP proxy frontend for monkey
-github-meituan-stub-demo | stub-demo | https://github.com/meituan/stub-demo | author:meituan description:List of demos of how to use `stub`
+github-meituan-greenDAO | greenDAO | https://github.com/meituan/greenDAO | author:meituan description:greenDAO is a light & fast ORM solution for Android that maps objects to SQLite databases.
+github-meituan-okhttp | okhttp | https://github.com/meituan/okhttp | author:meituan description:An HTTP+SPDY client for Android and Java applications.
+github-meituan-mock-request | mock-request | https://github.com/meituan/mock-request | author:meituan description:Request parser
+github-meituan-tengine | tengine | https://github.com/meituan/tengine | author:meituan description:A distribution of Nginx with some advanced features
 github-meituan-mcsapi_ruby | mcsapi_ruby | https://github.com/meituan/mcsapi_ruby | author:meituan description:美团云Ruby SDK
+github-meituan-gbdt | gbdt | https://github.com/meituan/gbdt | author:meituan 
+github-meituan-sentry | sentry | https://github.com/meituan/sentry | author:meituan description:Sentry is a realtime, platform-agnostic error logging and aggregation platform
 github-meituan-stub-http | stub-http | https://github.com/meituan/stub-http | author:meituan description:HTTP frontend for monkey
+github-meituan-picasso | picasso | https://github.com/meituan/picasso | author:meituan description:A powerful image downloading and caching library for Android
+github-meituan-devtools-snippets | devtools-snippets | https://github.com/meituan/devtools-snippets | author:meituan description:A collection of helpful snippets to use inside of browser devtools
+github-meituan-Android-MTWidget | Android-MTWidget | https://github.com/meituan/Android-MTWidget | author:meituan description:widget library for meituan apps
+github-meituan-ali_kernel | ali_kernel | https://github.com/meituan/ali_kernel | author:meituan description:The Linux Kernel Tree for Alibaba.
+github-meituan-beanstalkd | beanstalkd | https://github.com/meituan/beanstalkd | author:meituan description:为 beanstalkd 增加 multi-subscriber 支持

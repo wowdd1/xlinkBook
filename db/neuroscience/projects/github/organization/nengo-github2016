@@ -4,10 +4,10 @@ github-nengo-nengo_gui | nengo_gui | https://github.com/nengo/nengo_gui | author
 github-nengo-nengo_ocl | nengo_ocl | https://github.com/nengo/nengo_ocl | author:nengo description:OpenCL-based simulator for Nengo neural models
 github-nengo-nengo_extras | nengo_extras | https://github.com/nengo/nengo_extras | author:nengo description:Extra utilities and add-ons for Nengo
 github-nengo-nengo_detailed_neurons | nengo_detailed_neurons | https://github.com/nengo/nengo_detailed_neurons | author:nengo description:Enable Nengo to use neuron models simulated in NEURON.
-github-nengo-nengo.github.io | nengo.github.io | https://github.com/nengo/nengo.github.io | author:nengo description:Website with basic information and pointers to subprojects.
 github-nengo-nengo_deeplearning | nengo_deeplearning | https://github.com/nengo/nengo_deeplearning | author:nengo description:Deep learning backend for Nengo
+github-nengo-nengo.github.io | nengo.github.io | https://github.com/nengo/nengo.github.io | author:nengo description:Website with basic information and pointers to subprojects.
 github-nengo-nengo_distilled | nengo_distilled | https://github.com/nengo/nengo_distilled | author:nengo description:An example backend implementation for nengo
 github-nengo-nengo_packaging | nengo_packaging | https://github.com/nengo/nengo_packaging | author:nengo description:Scripts and other tools for packaging and distributing parts of the Nengo ecosystem
-github-nengo-nengo_examples | nengo_examples | https://github.com/nengo/nengo_examples | author:nengo description:Instructive examples using projects in the Nengo ecosystem.
-github-nengo-nengo_gui_plugin_template | nengo_gui_plugin_template | https://github.com/nengo/nengo_gui_plugin_template | author:nengo description:Template for nengo_gui plugins.
 github-nengo-enhancement_proposals | enhancement_proposals | https://github.com/nengo/enhancement_proposals | author:nengo description:Proposals to enhance the Nengo Ecosystem
+github-nengo-nengo_gui_plugin_template | nengo_gui_plugin_template | https://github.com/nengo/nengo_gui_plugin_template | author:nengo description:Template for nengo_gui plugins.
+github-nengo-nengo_examples | nengo_examples | https://github.com/nengo/nengo_examples | author:nengo description:Instructive examples using projects in the Nengo ecosystem.

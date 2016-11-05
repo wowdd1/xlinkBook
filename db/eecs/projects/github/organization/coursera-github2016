@@ -1,32 +1,61 @@
 github-coursera-dataduct | dataduct | https://github.com/coursera/dataduct | author:coursera description:DataPipeline for humans.
 github-coursera-pandas-ply | pandas-ply | https://github.com/coursera/pandas-ply | author:coursera description:functional data manipulation for pandas
+github-coursera-metrics-datadog | metrics-datadog | https://github.com/coursera/metrics-datadog | author:coursera description:metrics-datadog
 github-coursera-courier | courier | https://github.com/coursera/courier | author:coursera description:Data interchange for the modern web + mobile stack.
 github-coursera-retracked | retracked | https://github.com/coursera/retracked | author:coursera description:Event tracking for React components
 github-coursera-js-libraries-snapshot | js-libraries-snapshot | https://github.com/coursera/js-libraries-snapshot | author:coursera description:A snapshot of a few JavaScript libraries used in the Coursera frontend stack.
+github-coursera-naptime | naptime | https://github.com/coursera/naptime | author:coursera description:Making REST APIs so easy, you can build them in your sleep!
 github-coursera-autoschema | autoschema | https://github.com/coursera/autoschema | author:coursera description:Generates JSON Schema from Scala classes
 github-coursera-swift-style-guide | swift-style-guide | https://github.com/coursera/swift-style-guide | author:coursera description:Coursera's Swift Style Guide
-github-coursera-naptime | naptime | https://github.com/coursera/naptime | author:coursera description:Making REST APIs so easy, you can build them in your sleep!
 github-coursera-shift | shift | https://github.com/coursera/shift | author:coursera description:Shift is a development tool that allows you to modify variables and run blocks of code while your Android application is running.
-github-coursera-bootstrap3-stylus | bootstrap3-stylus | https://github.com/coursera/bootstrap3-stylus | author:coursera description:Updated Jun 11, 2014
-github-coursera-ios-scrubber | ios-scrubber | https://github.com/coursera/ios-scrubber | author:coursera description:Updated Oct 24, 2014
+github-coursera-bootstrap3-stylus | bootstrap3-stylus | https://github.com/coursera/bootstrap3-stylus | author:coursera 
+github-coursera-ios-scrubber | ios-scrubber | https://github.com/coursera/ios-scrubber | author:coursera 
 github-coursera-forum-js-snapshot | forum-js-snapshot | https://github.com/coursera/forum-js-snapshot | author:coursera description:A snapshot of the JS used to power the new Coursera forums - views, models, templates, and tests.
-github-coursera-react-imgix | react-imgix | https://github.com/coursera/react-imgix | author:coursera description:Isomorphic React component for images scaling and manipulation using Imgix
 github-coursera-yudi | yudi | https://github.com/coursera/yudi | author:coursera description:jade i18n module
+github-coursera-react-imgix | react-imgix | https://github.com/coursera/react-imgix | author:coursera description:Isomorphic React component for images scaling and manipulation using Imgix
 github-coursera-courseraprogramming | courseraprogramming | https://github.com/coursera/courseraprogramming | author:coursera description:Command line tools to help instructional teams develop, deploy, and debug sophisticated asynchronous graders.
 github-coursera-programming-assignments-demo | programming-assignments-demo | https://github.com/coursera/programming-assignments-demo | author:coursera description:Demos for instructors.
+github-coursera-amazon-ecs-agent | amazon-ecs-agent | https://github.com/coursera/amazon-ecs-agent | author:coursera description:Amazon EC2 Container Service Agent
+github-coursera-COShakit-ios | COShakit-ios | https://github.com/coursera/COShakit-ios | author:coursera 
 github-coursera-courscala | courscala | https://github.com/coursera/courscala | author:coursera description:Core Scala classes used to build Coursera.
 github-coursera-scribe-plugin-table-command | scribe-plugin-table-command | https://github.com/coursera/scribe-plugin-table-command | author:coursera description:Table command for scribe plugins.
-github-coursera-COShakit-ios | COShakit-ios | https://github.com/coursera/COShakit-ios | author:coursera description:Updated Jun 12, 2014
-github-coursera-courseraoauth2client | courseraoauth2client | https://github.com/coursera/courseraoauth2client | author:coursera description:Python library for accessing Coursera resources protected by OAuth 2.0
+github-coursera-scala-uri | scala-uri | https://github.com/coursera/scala-uri | author:coursera description:Simple scala library for building and parsing URIs
+github-coursera-video.js | video.js | https://github.com/coursera/video.js | author:coursera description:Video.js - open source HTML5 & Flash video player
+github-coursera-less2stylus | less2stylus | https://github.com/coursera/less2stylus | author:coursera description:LESS to Stylus source to source convertor capable of translating Bootstrap
+github-coursera-COShakit-android | COShakit-android | https://github.com/coursera/COShakit-android | author:coursera 
 github-coursera-courseraresearchexports | courseraresearchexports | https://github.com/coursera/courseraresearchexports | author:coursera description:Python library and tooling for Coursera Research Exports
-github-coursera-buggy | buggy | https://github.com/coursera/buggy | author:coursera description:express router app, providing a slack integration for creating, searching, retrieving and assigning jira issues
-github-coursera-scribe-plugins | scribe-plugins | https://github.com/coursera/scribe-plugins | author:coursera description:Updated Mar 31, 2015
-github-coursera-COShakit-android | COShakit-android | https://github.com/coursera/COShakit-android | author:coursera description:Updated Jun 11, 2014
+github-coursera-arcanist | arcanist | https://github.com/coursera/arcanist | author:coursera description:Command line interface for Phabricator
+github-coursera-scribe-plugins | scribe-plugins | https://github.com/coursera/scribe-plugins | author:coursera 
+github-coursera-courseraoauth2client | courseraoauth2client | https://github.com/coursera/courseraoauth2client | author:coursera description:Python library for accessing Coursera resources protected by OAuth 2.0
 github-coursera-foody | foody | https://github.com/coursera/foody | author:coursera description:slack command for managing your organization's internal food menu
-github-coursera-scribe-plugin-placeholder | scribe-plugin-placeholder | https://github.com/coursera/scribe-plugin-placeholder | author:coursera description:Updated Feb 1, 2016
-github-coursera-booky | booky | https://github.com/coursera/booky | author:coursera description:slack command for searching gitbooks using algolia
+github-coursera-aegisthus | aegisthus | https://github.com/coursera/aegisthus | author:coursera description:A Bulk Data Pipeline out of Cassandra
+github-coursera-buggy | buggy | https://github.com/coursera/buggy | author:coursera description:express router app, providing a slack integration for creating, searching, retrieving and assigning jira issues
 github-coursera-abcdefghiJson | abcdefghiJson | https://github.com/coursera/abcdefghiJson | author:coursera description:Print your JSON alphabetized!
+github-coursera-go-dockerclient | go-dockerclient | https://github.com/coursera/go-dockerclient | author:coursera description:Go HTTP client for the Docker remote API.
+github-coursera-wikiextractor | wikiextractor | https://github.com/coursera/wikiextractor | author:coursera description:A tool for extracting plain text from Wikipedia dumps
+github-coursera-react-codemod | react-codemod | https://github.com/coursera/react-codemod | author:coursera description:React codemod scripts
+github-coursera-zipkin | zipkin | https://github.com/coursera/zipkin | author:coursera description:Zipkin is a distributed tracing system
+github-coursera-booky | booky | https://github.com/coursera/booky | author:coursera description:slack command for searching gitbooks using algolia
 github-coursera-fontawesome4-stylus | fontawesome4-stylus | https://github.com/coursera/fontawesome4-stylus | author:coursera description:a fontawesome port for stylus (a css processor)
-github-coursera-eslint-plugin-coursera | eslint-plugin-coursera | https://github.com/coursera/eslint-plugin-coursera | author:coursera description:A place to hold eslint rules used by Coursera developers.
+github-coursera-scribe-plugin-placeholder | scribe-plugin-placeholder | https://github.com/coursera/scribe-plugin-placeholder | author:coursera 
+github-coursera-node-jscs | node-jscs | https://github.com/coursera/node-jscs | author:coursera description:JavaScript Code Style checker
+github-coursera-compatibility-data | compatibility-data | https://github.com/coursera/compatibility-data | author:coursera description:Repository containing data to power WebPlatform Docs Compatibility Tables data.
+github-coursera-DTCoreText | DTCoreText | https://github.com/coursera/DTCoreText | author:coursera description:Methods to allow using HTML code with CoreText
+github-coursera-DTFoundation | DTFoundation | https://github.com/coursera/DTFoundation | author:coursera description:Standard toolset classes and categories
+github-coursera-jscodemods | jscodemods | https://github.com/coursera/jscodemods | author:coursera description:jscodemods to be used with jscodeshift
 github-coursera-triple-latte | triple-latte | https://github.com/coursera/triple-latte | author:coursera description:mochajs with extra caffeine (parallel execution, modified xunit reporter and moar)
+github-coursera-progeny | progeny | https://github.com/coursera/progeny | author:coursera description:Recursively finds dependencies of style and template source files
+github-coursera-cassandra-reaper | cassandra-reaper | https://github.com/coursera/cassandra-reaper | author:coursera description:Software to run automated repairs of cassandra
+github-coursera-grafana | grafana | https://github.com/coursera/grafana | author:coursera description:Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
+github-coursera-Tweaks | Tweaks | https://github.com/coursera/Tweaks | author:coursera description:An easy way to fine-tune, and adjust parameters for iOS apps in development.
 github-coursera-coursera.github.io | coursera.github.io | https://github.com/coursera/coursera.github.io | author:coursera description:Opensource @ Coursera
+github-coursera-eslint-plugin-coursera | eslint-plugin-coursera | https://github.com/coursera/eslint-plugin-coursera | author:coursera description:A place to hold eslint rules used by Coursera developers.
+github-coursera-winston | winston | https://github.com/coursera/winston | author:coursera description:a multi-transport async logging library for node.js
+github-coursera-looker-slackbot | looker-slackbot | https://github.com/coursera/looker-slackbot | author:coursera description:A super cool Slack bot for Looker!
+github-coursera-js-codemod | js-codemod | https://github.com/coursera/js-codemod | author:coursera description:Codemod scripts to transform code to next generation JS
+github-coursera-jshint | jshint | https://github.com/coursera/jshint | author:coursera description:JSHint is a tool that helps to detect errors and potential problems in your JavaScript code
+github-coursera-ExoPlayer | ExoPlayer | https://github.com/coursera/ExoPlayer | author:coursera description:An extensible media player for Android
+github-coursera-puppet-sudo | puppet-sudo | https://github.com/coursera/puppet-sudo | author:coursera 
+github-coursera-phabricator | phabricator | https://github.com/coursera/phabricator | author:coursera description:Open software engineering platform and fun adventure game
+github-coursera-jade4j | jade4j | https://github.com/coursera/jade4j | author:coursera description:a jade implementation written in Java
+github-coursera-homebrew | homebrew | https://github.com/coursera/homebrew | author:coursera description:The missing package manager for OS X.

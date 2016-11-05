@@ -12,50 +12,63 @@ github-ebay-maxDNN | maxDNN | https://github.com/eBay/maxDNN | author:ebay descr
 github-ebay-parallec-samples | parallec-samples | https://github.com/eBay/parallec-samples | author:ebay description:Single file examples and ready-to-use servers show how to use parallec.io library. Examples to aggregate APIs and publish to Elastic Search and Kafka, and many more.
 github-ebay-jsonpipe | jsonpipe | https://github.com/eBay/jsonpipe | author:ebay description:A lightweight AJAX client for chunked JSON responses
 github-ebay-tsv-utils-dlang | tsv-utils-dlang | https://github.com/eBay/tsv-utils-dlang | author:ebay description:Command line utilities for tab-separated value files written in the D programming language.
-github-ebay-xcelite | xcelite | https://github.com/eBay/xcelite | author:ebay description:Updated Sep 28, 2016
-github-ebay-embedded-druid | embedded-druid | https://github.com/eBay/embedded-druid | author:ebay description:Updated Jan 25, 2016
+github-ebay-embedded-druid | embedded-druid | https://github.com/eBay/embedded-druid | author:ebay 
+github-ebay-xcelite | xcelite | https://github.com/eBay/xcelite | author:ebay 
 github-ebay-cassandra-river | cassandra-river | https://github.com/eBay/cassandra-river | author:ebay description:Cassandra river for Elastic search.
-github-ebay-YiDB | YiDB | https://github.com/eBay/YiDB | author:ebay description:Updated May 1, 2015
-github-ebay-GZinga | GZinga | https://github.com/eBay/GZinga | author:ebay description:Updated Oct 1, 2015
+github-ebay-YiDB | YiDB | https://github.com/eBay/YiDB | author:ebay 
+github-ebay-GZinga | GZinga | https://github.com/eBay/GZinga | author:ebay 
+github-ebay-SparkChamber | SparkChamber | https://github.com/eBay/SparkChamber | author:ebay description:An event tracking framework for iOS
 github-ebay-oink | oink | https://github.com/eBay/oink | author:ebay description:REST based interface for PIG execution
 github-ebay-skin | skin | https://github.com/eBay/skin | author:ebay description:CSS modules designed by eBay to build an online store.
-github-ebay-crossdomain-xhr | crossdomain-xhr | https://github.com/eBay/crossdomain-xhr | author:ebay description:Updated Oct 27, 2015
+github-ebay-crossdomain-xhr | crossdomain-xhr | https://github.com/eBay/crossdomain-xhr | author:ebay 
 github-ebay-geosense | geosense | https://github.com/eBay/geosense | author:ebay description:Self-contained jar to lookup timezone by lat+lon
-github-ebay-hadrian | hadrian | https://github.com/eBay/hadrian | author:ebay description:Updated Feb 17, 2014
+github-ebay-hadrian | hadrian | https://github.com/eBay/hadrian | author:ebay 
 github-ebay-bonsai | bonsai | https://github.com/eBay/bonsai | author:ebay description:open source version of the Bonsai library
-github-ebay-DASTProxy | DASTProxy | https://github.com/eBay/DASTProxy | author:ebay description:Updated Sep 12, 2016
-github-ebay-myriad | myriad | https://github.com/eBay/myriad | author:ebay description:Updated Sep 30, 2014
+github-ebay-DASTProxy | DASTProxy | https://github.com/eBay/DASTProxy | author:ebay 
+github-ebay-myriad | myriad | https://github.com/eBay/myriad | author:ebay 
 github-ebay-mtdtool | mtdtool | https://github.com/eBay/mtdtool | author:ebay description:The Manual Test Demultiplexer is a desktop app (Mac and Windows) that provides an interface for driving manual testing on multiple physical devices.
 github-ebay-EBNObservable | EBNObservable | https://github.com/eBay/EBNObservable | author:ebay description:A block-based Key-Value Observing (KVO) implementation with observable collections.
-github-ebay-SVNetworking | SVNetworking | https://github.com/eBay/SVNetworking | author:ebay description:Objective-C remote resource loading and networking
-github-ebay-ostara | ostara | https://github.com/eBay/ostara | author:ebay description:Updated Jun 23, 2015
+github-ebay-ostara | ostara | https://github.com/eBay/ostara | author:ebay 
 github-ebay-modshot | modshot | https://github.com/eBay/modshot | author:ebay description:Takes screenshot of UI modules and compare with baselines using PhantomCSS
-github-ebay-SparkChamber | SparkChamber | https://github.com/eBay/SparkChamber | author:ebay description:An event tracking framework for iOS
+github-ebay-SVNetworking | SVNetworking | https://github.com/eBay/SVNetworking | author:ebay description:Objective-C remote resource loading and networking
 github-ebay-RTran | RTran | https://github.com/eBay/RTran | author:ebay description:Road to Continous Upgrade
+github-ebay-Kubernetes | Kubernetes | https://github.com/eBay/Kubernetes | author:ebay description:Container Cluster Manager from Google
 github-ebay-fluid | fluid | https://github.com/eBay/fluid | author:ebay description:Fluid Web Components
-github-ebay-wextracto | wextracto | https://github.com/eBay/wextracto | author:ebay description:Updated Sep 10, 2016
-github-ebay-TDD-Albums | TDD-Albums | https://github.com/eBay/TDD-Albums | author:ebay description:A Hands-On Tutorial for iPhone Developers Learning TDD
+github-ebay-wextracto | wextracto | https://github.com/eBay/wextracto | author:ebay 
 github-ebay-Design-Grid-Overlay | Design-Grid-Overlay | https://github.com/eBay/Design-Grid-Overlay | author:ebay description:A Chrome extension to overlay a design grid on your web page; configurable to fit many design scenarios.
-github-ebay-hadoop-tsdb-connector | hadoop-tsdb-connector | https://github.com/eBay/hadoop-tsdb-connector | author:ebay description:Updated Aug 19, 2014
+github-ebay-TDD-Albums | TDD-Albums | https://github.com/eBay/TDD-Albums | author:ebay description:A Hands-On Tutorial for iPhone Developers Learning TDD
+github-ebay-hadoop-tsdb-connector | hadoop-tsdb-connector | https://github.com/eBay/hadoop-tsdb-connector | author:ebay 
 github-ebay-WebRex | WebRex | https://github.com/eBay/WebRex | author:ebay description:WebRex is a tool for web resource aggregation and optimization in runtime. In comparison with other open source optimizers like wro4j, its outstanding advantage is, the aggregation and optimization are dynamic instead of static.
 github-ebay-hpulse | hpulse | https://github.com/eBay/hpulse | author:ebay description:Realtime Monitoring of Hadoop through JMX JSON
 github-ebay-parallec-plugins | parallec-plugins | https://github.com/eBay/parallec-plugins | author:ebay description:Parallec Plugin: Single Line of Code to Enable SSL Client (Mutual) Authentication
-github-ebay-cronus-agent | cronus-agent | https://github.com/eBay/cronus-agent | author:ebay description:Updated Apr 18, 2015
+github-ebay-web-client-benchmark | web-client-benchmark | https://github.com/eBay/web-client-benchmark | author:ebay description:Multiple OSS web client multiplatform evaluation and benchmark suite.
+github-ebay-cronus-agent | cronus-agent | https://github.com/eBay/cronus-agent | author:ebay 
 github-ebay-Pine | Pine | https://github.com/eBay/Pine | author:ebay description:Pine: Machine Learning Prediction As A Service
+github-ebay-Spark | Spark | https://github.com/eBay/Spark | author:ebay description:Mirror of Apache Spark
 github-ebay-ldapadmtool | ldapadmtool | https://github.com/eBay/ldapadmtool | author:ebay description:UNIX LDAP command toolchain
-github-ebay-NococoHint | NococoHint | https://github.com/eBay/NococoHint | author:ebay description:NococoHint - Node Module for Istanbul and JSHint Report Aggregation
+github-ebay-P2Portal | P2Portal | https://github.com/eBay/P2Portal | author:ebay 
+github-ebay-ebay.github.com | ebay.github.com | https://github.com/eBay/ebay.github.com | author:ebay 
 github-ebay-MySQL-Benchmark-Perl | MySQL-Benchmark-Perl | https://github.com/eBay/MySQL-Benchmark-Perl | author:ebay description:A tool to drive our MySQL Benchmarking Activities
-github-ebay-P2Portal | P2Portal | https://github.com/eBay/P2Portal | author:ebay description:Updated Nov 13, 2015
+github-ebay-NococoHint | NococoHint | https://github.com/eBay/NococoHint | author:ebay description:NococoHint - Node Module for Istanbul and JSHint Report Aggregation
 github-ebay-Vivid | Vivid | https://github.com/eBay/Vivid | author:ebay description:A visual testing tool to compare two web pages visually and generate the pixel difference they have.
-github-ebay-ebay.github.com | ebay.github.com | https://github.com/eBay/ebay.github.com | author:ebay description:Updated Aug 26, 2016
-github-ebay-gauntlet | gauntlet | https://github.com/eBay/gauntlet | author:ebay description:Gauntlet - systems management made easy
 github-ebay-reactive-source | reactive-source | https://github.com/eBay/reactive-source | author:ebay description:Moved at: http://github.com/kstam/reactive-source
-github-ebay-AIALib | AIALib | https://github.com/eBay/AIALib | author:ebay description:Updated Oct 14, 2015
-github-ebay-Eagle-Site | Eagle-Site | https://github.com/eBay/Eagle-Site | author:ebay description:Updated Oct 16, 2015
-github-ebay-EasyConfig | EasyConfig | https://github.com/eBay/EasyConfig | author:ebay description:Updated Sep 10, 2015
-github-ebay-HIPE | HIPE | https://github.com/eBay/HIPE | author:ebay description:Updated Feb 11, 2016
-github-ebay-SimbaPipelines | SimbaPipelines | https://github.com/eBay/SimbaPipelines | author:ebay description:Updated Aug 23, 2016
+github-ebay-gauntlet | gauntlet | https://github.com/eBay/gauntlet | author:ebay description:Gauntlet - systems management made easy
+github-ebay-Eagle-Site | Eagle-Site | https://github.com/eBay/Eagle-Site | author:ebay 
+github-ebay-AIALib | AIALib | https://github.com/eBay/AIALib | author:ebay 
+github-ebay-ambidex | ambidex | https://github.com/eBay/ambidex | author:ebay description:Effortlessly host your React app on both the client and the server. Some call it isomorphic JavaScript - we call it Ambidex.
+github-ebay-gravel | gravel | https://github.com/eBay/gravel | author:ebay description:An unfinished React implementation of Material Design
+github-ebay-funx | funx | https://github.com/eBay/funx | author:ebay description:An experiment in functionally-reactive Flux
+github-ebay-Flink | Flink | https://github.com/eBay/Flink | author:ebay description:Mirror of Apache Flink
 github-ebay-mTracker | mTracker | https://github.com/eBay/mTracker | author:ebay description:mTracker a.k.a Maven Build Tracking is a system used to track the Maven builds in various environments (IDE, CLI, CI etc.), load the data into central DB for analyzing performance/reliability metrics. It can be easily integrated with reporting system. It is low-footprint, low-latency, self-upgrade, easy to maintain.
-github-ebay-fw | fw | https://github.com/eBay/fw | author:ebay description:Updated Aug 27, 2014
-github-ebay-Sequence-Semantic-Embedding | Sequence-Semantic-Embedding | https://github.com/eBay/Sequence-Semantic-Embedding | author:ebay description:Updated Aug 27, 2016
-github-ebay-ie-debug | ie-debug | https://github.com/eBay/ie-debug | author:ebay description:Updated Oct 8, 2015
+github-ebay-EasyConfig | EasyConfig | https://github.com/eBay/EasyConfig | author:ebay 
+github-ebay-ie-debug | ie-debug | https://github.com/eBay/ie-debug | author:ebay 
+github-ebay-fw | fw | https://github.com/eBay/fw | author:ebay 
+github-ebay-splunklogging | splunklogging | https://github.com/eBay/splunklogging | author:ebay description:Plugin for Maven to generate Splunk compatible JSON files from TestNG output automatically
+github-ebay-HIPE | HIPE | https://github.com/eBay/HIPE | author:ebay 
+github-ebay-jupyterhub | jupyterhub | https://github.com/eBay/jupyterhub | author:ebay description:Multi-user server for Jupyter notebooks
+github-ebay-Sequence-Semantic-Embedding | Sequence-Semantic-Embedding | https://github.com/eBay/Sequence-Semantic-Embedding | author:ebay 
+github-ebay-Notebook | Notebook | https://github.com/eBay/Notebook | author:ebay description:Jupyter Interactive Notebook
+github-ebay-DDF | DDF | https://github.com/eBay/DDF | author:ebay description:Distributed DataFrame: Productivity = Power x Simplicity For Scientists & Engineers, on any Data Engine
+github-ebay-Zeppelin | Zeppelin | https://github.com/eBay/Zeppelin | author:ebay description:Mirror of Apache Zeppelin (Incubating)
+github-ebay-SimbaPipelines | SimbaPipelines | https://github.com/eBay/SimbaPipelines | author:ebay 
+github-ebay-Mahout | Mahout | https://github.com/eBay/Mahout | author:ebay description:Mirror of Apache Mahout

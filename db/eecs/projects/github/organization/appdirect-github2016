@@ -1,4 +1,11 @@
 github-appdirect-conuhacks | conuhacks | https://github.com/AppDirect/conuhacks | author:appdirect description:ConUHacks Marketplate - An API challenge
-github-appdirect-Sample-Python-Application | Sample-Python-Application | https://github.com/AppDirect/Sample-Python-Application | author:appdirect description:Updated Jul 7, 2011
+github-appdirect-Sample-Python-Application | Sample-Python-Application | https://github.com/AppDirect/Sample-Python-Application | author:appdirect 
+github-appdirect-mention-bot | mention-bot | https://github.com/AppDirect/mention-bot | author:appdirect description:Automatically mention potential reviewers on pull requests.
 github-appdirect-sample-isv | sample-isv | https://github.com/AppDirect/sample-isv | author:appdirect description:Sample application that integrates with AppDirect for distribution.
-github-appdirect-sonar-sandbox | sonar-sandbox | https://github.com/AppDirect/sonar-sandbox | author:appdirect description:Updated Apr 24, 2015
+github-appdirect-crawl.js | crawl.js | https://github.com/AppDirect/crawl.js | author:appdirect 
+github-appdirect-java-buildpack | java-buildpack | https://github.com/AppDirect/java-buildpack | author:appdirect description:Cloud Foundry buildpack for running Java applications
+github-appdirect-sonar-sandbox | sonar-sandbox | https://github.com/AppDirect/sonar-sandbox | author:appdirect 
+github-appdirect-node-properties | node-properties | https://github.com/AppDirect/node-properties | author:appdirect description:.properties parser/stringifier.
+github-appdirect-sso-sample-ios | sso-sample-ios | https://github.com/AppDirect/sso-sample-ios | author:appdirect description:Sample AppConfig example using SafariViewController via AppAuth
+github-appdirect-elastalert | elastalert | https://github.com/AppDirect/elastalert | author:appdirect description:Easy & Flexible Alerting With ElasticSearch
+github-appdirect-gatling-plugin | gatling-plugin | https://github.com/AppDirect/gatling-plugin | author:appdirect description:Jenkins plugin for Gatling

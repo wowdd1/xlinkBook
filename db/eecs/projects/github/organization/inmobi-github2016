@@ -1,30 +1,47 @@
-github-inmobi-level-tsd | level-tsd | https://github.com/InMobi/level-tsd | author:inmobi description:Updated Feb 19, 2015
-github-inmobi-grill | grill | https://github.com/InMobi/grill | author:inmobi description:Updated Oct 19, 2016
-github-inmobi-archived-data-bus | archived-data-bus | https://github.com/InMobi/archived-data-bus | author:inmobi description:Updated Oct 30, 2012
-github-inmobi-conduit | conduit | https://github.com/InMobi/conduit | author:inmobi description:Updated Sep 22, 2016
+github-inmobi-level-tsd | level-tsd | https://github.com/InMobi/level-tsd | author:inmobi 
+github-inmobi-scribe | scribe | https://github.com/InMobi/scribe | author:inmobi description:Scribe is a server for aggregating log data streamed in real time from a large number of servers. It is designed to be scalable, extensible without client-side modification, and robust to failure of the network or any specific machine.
+github-inmobi-grill | grill | https://github.com/InMobi/grill | author:inmobi 
+github-inmobi-archived-data-bus | archived-data-bus | https://github.com/InMobi/archived-data-bus | author:inmobi 
+github-inmobi-conduit | conduit | https://github.com/InMobi/conduit | author:inmobi 
 github-inmobi-messaging-client-scribe | messaging-client-scribe | https://github.com/InMobi/messaging-client-scribe | author:inmobi description:A non-blocking auto reconnecting scribe client/log4j appender
-github-inmobi-Android-Native-Samplecode-InMobi | Android-Native-Samplecode-InMobi | https://github.com/InMobi/Android-Native-Samplecode-InMobi | author:inmobi description:Updated Nov 21, 2014
+github-inmobi-Android-Native-Samplecode-InMobi | Android-Native-Samplecode-InMobi | https://github.com/InMobi/Android-Native-Samplecode-InMobi | author:inmobi 
 github-inmobi-hive | hive | https://github.com/InMobi/hive | author:inmobi description:ed79ba365cfff4cc485d4ffb546453472c25ca86
-github-inmobi-iOS-Native-Samplecode-InMobi | iOS-Native-Samplecode-InMobi | https://github.com/InMobi/iOS-Native-Samplecode-InMobi | author:inmobi description:Updated Nov 4, 2014
+github-inmobi-docker-hive | docker-hive | https://github.com/InMobi/docker-hive | author:inmobi description:Docker image for Apache Hive running on Tez
+github-inmobi-iOS-Native-Samplecode-InMobi | iOS-Native-Samplecode-InMobi | https://github.com/InMobi/iOS-Native-Samplecode-InMobi | author:inmobi 
+github-inmobi-archived-messaging-client | archived-messaging-client | https://github.com/InMobi/archived-messaging-client | author:inmobi 
 github-inmobi-api-monetization | api-monetization | https://github.com/InMobi/api-monetization | author:inmobi description:This library project can be used for making API 2.0 calls to InMobi servers to fetch ads for monetization purpose
+github-inmobi-log4j | log4j | https://github.com/InMobi/log4j | author:inmobi description:Mirror of Apache log4j
+github-inmobi-hadoop | hadoop | https://github.com/InMobi/hadoop | author:inmobi 
 github-inmobi-incubator-falcon | incubator-falcon | https://github.com/InMobi/incubator-falcon | author:inmobi description:Custom version of Falcon as used within InMobi
-github-inmobi-hadoop | hadoop | https://github.com/InMobi/hadoop | author:inmobi description:Updated Aug 29, 2013
-github-inmobi-inmobi-stats | inmobi-stats | https://github.com/InMobi/inmobi-stats | author:inmobi description:Updated Oct 12, 2016
+github-inmobi-packaging-tools | packaging-tools | https://github.com/InMobi/packaging-tools | author:inmobi description:A collection of various packaging tools primarily around Ubuntu
+github-inmobi-opentsdb | opentsdb | https://github.com/InMobi/opentsdb | author:inmobi description:A scalable, distributed Time Series Database.
+github-inmobi-inmobi-stats | inmobi-stats | https://github.com/InMobi/inmobi-stats | author:inmobi 
 github-inmobi-sdk-sample-code-ios | sdk-sample-code-ios | https://github.com/InMobi/sdk-sample-code-ios | author:inmobi description:This repository contains InMobi iOS SDK sample code for different ad-formats, which publishers can use to incorporate in their apps
+github-inmobi-carbon | carbon | https://github.com/InMobi/carbon | author:inmobi description:Carbon is one of the components of Graphite, and is responsible for receiving metrics over the network and writing them down to disk using a storage backend.
+github-inmobi-DistCpV2-0.20.203 | DistCpV2-0.20.203 | https://github.com/InMobi/DistCpV2-0.20.203 | author:inmobi description:Rewrite of Hadoop DistCp, for Hadoop 0.20.203+. Support for multiple copy-strategies. Code also reads better.
 github-inmobi-koolstof | koolstof | https://github.com/InMobi/koolstof | author:inmobi description:golang port graphite project's carbon daemon
 github-inmobi-level-tsd-finder | level-tsd-finder | https://github.com/InMobi/level-tsd-finder | author:inmobi description:graphite finder for level-tsd
-github-inmobi-packaging-tools | packaging-tools | https://github.com/InMobi/packaging-tools | author:inmobi description:A collection of various packaging tools primarily around Ubuntu
-github-inmobi-pintail | pintail | https://github.com/InMobi/pintail | author:inmobi description:Updated May 8, 2016
-github-inmobi-messaging-client-core | messaging-client-core | https://github.com/InMobi/messaging-client-core | author:inmobi description:Interfaces for message publishing
-github-inmobi-timing-measurement | timing-measurement | https://github.com/InMobi/timing-measurement | author:inmobi description:A library to accumulate invocation statistics of anything
+github-inmobi-tungsten-fsm | tungsten-fsm | https://github.com/InMobi/tungsten-fsm | author:inmobi 
 github-inmobi-puppet-lwes | puppet-lwes | https://github.com/InMobi/puppet-lwes | author:inmobi description:A Puppet report processor that sends metrics to LWES Server
+github-inmobi-timing-measurement | timing-measurement | https://github.com/InMobi/timing-measurement | author:inmobi description:A library to accumulate invocation statistics of anything
+github-inmobi-oozie | oozie | https://github.com/InMobi/oozie | author:inmobi description:Mirror of Apache Oozie
+github-inmobi-pintail | pintail | https://github.com/InMobi/pintail | author:inmobi 
+github-inmobi-messaging-client-core | messaging-client-core | https://github.com/InMobi/messaging-client-core | author:inmobi description:Interfaces for message publishing
+github-inmobi-falcon | falcon | https://github.com/InMobi/falcon | author:inmobi description:Mirror of Apache Falcon
 github-inmobi-sdk-sample-code-android | sdk-sample-code-android | https://github.com/InMobi/sdk-sample-code-android | author:inmobi description:This repository contains InMobi Android SDK sample code for different ad-formats, which publishers can use to incorporate in their apps — Edit
-github-inmobi-mvn-repo | mvn-repo | https://github.com/InMobi/mvn-repo | author:inmobi description:Updated Oct 12, 2016
+github-inmobi-mvn-repo | mvn-repo | https://github.com/InMobi/mvn-repo | author:inmobi 
+github-inmobi-amphtml | amphtml | https://github.com/InMobi/amphtml | author:inmobi description:AMP HTML source code, samples, and documentation. See below for more info.
 github-inmobi-sdk-extensions | sdk-extensions | https://github.com/InMobi/sdk-extensions | author:inmobi description:This repository contains Partner ad-networks adapter code
-github-inmobi-secure-s3-fsclient | secure-s3-fsclient | https://github.com/InMobi/secure-s3-fsclient | author:inmobi description:A wrapper over S3N filesystem to securely connect to S3 FS without specifying secret-key/passcode
-github-inmobi-static-levigo | static-levigo | https://github.com/InMobi/static-levigo | author:inmobi description:Updated Jul 23, 2014
-github-inmobi-ltvp | ltvp | https://github.com/InMobi/ltvp | author:inmobi description:Updated Nov 20, 2012
-github-inmobi-ivory | ivory | https://github.com/InMobi/ivory | author:inmobi description:Updated Mar 11, 2013
-github-inmobi-inmobi.github.com | inmobi.github.com | https://github.com/InMobi/inmobi.github.com | author:inmobi description:Updated Feb 3, 2014
-github-inmobi-InMobiAPIMonetizationLibrary-Java | InMobiAPIMonetizationLibrary-Java | https://github.com/InMobi/InMobiAPIMonetizationLibrary-Java | author:inmobi description:This is the API library, build for Server integrations which use Java technology
+github-inmobi-hraven | hraven | https://github.com/InMobi/hraven | author:inmobi description:hRaven collects run time data and statistics from MapReduce jobs in an easily queryable format
+github-inmobi-storm | storm | https://github.com/InMobi/storm | author:inmobi description:Mirror of Apache Storm
+github-inmobi-cubism | cubism | https://github.com/InMobi/cubism | author:inmobi description:Cubism.js: A JavaScript library for time series visualization.
+github-inmobi-static-levigo | static-levigo | https://github.com/InMobi/static-levigo | author:inmobi 
+github-inmobi-ltvp | ltvp | https://github.com/InMobi/ltvp | author:inmobi 
+github-inmobi-thrift | thrift | https://github.com/InMobi/thrift | author:inmobi description:Mirror of Apache Thrift
+github-inmobi-elephant-bird | elephant-bird | https://github.com/InMobi/elephant-bird | author:inmobi description:Twitter's collection of LZO and Protocol Buffer-related Hadoop, Pig, Hive, and HBase code.
 github-inmobi-Native-JS-Sample | Native-JS-Sample | https://github.com/InMobi/Native-JS-Sample | author:inmobi description:This project explains a basic working example of a Javascript Ad Code, for InMobi Native ads
+github-inmobi-InMobiAPIMonetizationLibrary-Java | InMobiAPIMonetizationLibrary-Java | https://github.com/InMobi/InMobiAPIMonetizationLibrary-Java | author:inmobi description:This is the API library, build for Server integrations which use Java technology
+github-inmobi-inmobi.github.com | inmobi.github.com | https://github.com/InMobi/inmobi.github.com | author:inmobi 
+github-inmobi-bosun | bosun | https://github.com/InMobi/bosun | author:inmobi description:Time Series Alerting Framework
+github-inmobi-secure-s3-fsclient | secure-s3-fsclient | https://github.com/InMobi/secure-s3-fsclient | author:inmobi description:A wrapper over S3N filesystem to securely connect to S3 FS without specifying secret-key/passcode
+github-inmobi-ivory | ivory | https://github.com/InMobi/ivory | author:inmobi 

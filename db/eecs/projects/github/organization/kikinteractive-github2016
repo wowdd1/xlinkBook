@@ -11,16 +11,39 @@ github-kikinteractive-kik-api-android | kik-api-android | https://github.com/kik
 github-kikinteractive-tapchat | tapchat | https://github.com/kikinteractive/tapchat | author:kikinteractive description:TapChat example app for Kik
 github-kikinteractive-scrollable | scrollable | https://github.com/kikinteractive/scrollable | author:kikinteractive description:Seamless scrolling for mobile devices
 github-kikinteractive-kik-lib-node | kik-lib-node | https://github.com/kikinteractive/kik-lib-node | author:kikinteractive description:A NodeJS module to help with push notifications and authentication.
-github-kikinteractive-youtube-feed-viewer-demo | youtube-feed-viewer-demo | https://github.com/kikinteractive/youtube-feed-viewer-demo | author:kikinteractive description:Simple example on how to use YouTube's Feed API to get a list of videos by channel and then display them using angular, bootstrap and kik.
+github-kikinteractive-touchable | touchable | https://github.com/kikinteractive/touchable | author:kikinteractive description:A simple light-weight JavaScript library for dealing with touch events
 github-kikinteractive-yaml-stratus | yaml-stratus | https://github.com/kikinteractive/yaml-stratus | author:kikinteractive description:YAML Stratus provides extensions to YAML that make it amenable to use with AWS CloudFormation templates
 github-kikinteractive-dialog | dialog | https://github.com/kikinteractive/dialog | author:kikinteractive description:modal dialogs for mobile web apps
+github-kikinteractive-youtube-feed-viewer-demo | youtube-feed-viewer-demo | https://github.com/kikinteractive/youtube-feed-viewer-demo | author:kikinteractive description:Simple example on how to use YouTube's Feed API to get a list of videos by channel and then display them using angular, bootstrap and kik.
 github-kikinteractive-store | store | https://github.com/kikinteractive/store | author:kikinteractive description:Bindable & persistent storage
 github-kikinteractive-card-tester | card-tester | https://github.com/kikinteractive/card-tester | author:kikinteractive description:basic tests for kik cards
 github-kikinteractive-starter-kit-appengine | starter-kit-appengine | https://github.com/kikinteractive/starter-kit-appengine | author:kikinteractive description:AppEngine service starter kit
-github-kikinteractive-kik-shooter | kik-shooter | https://github.com/kikinteractive/kik-shooter | author:kikinteractive description:Updated Sep 17, 2013
-github-kikinteractive-ice | ice | https://github.com/kikinteractive/ice | author:kikinteractive description:Guice-based Java8 configuration system
+github-kikinteractive-kik-shooter | kik-shooter | https://github.com/kikinteractive/kik-shooter | author:kikinteractive 
 github-kikinteractive-KikUserDefaults | KikUserDefaults | https://github.com/kikinteractive/KikUserDefaults | author:kikinteractive description:Streamlines NSUserDefaults by removing much of the boilerplate.
+github-kikinteractive-exhibitor | exhibitor | https://github.com/kikinteractive/exhibitor | author:kikinteractive description:ZooKeeper co-process for instance monitoring, backup/recovery, cleanup and visualization.
+github-kikinteractive-ice | ice | https://github.com/kikinteractive/ice | author:kikinteractive description:Guice-based Java8 configuration system
+github-kikinteractive-starter-kit-go | starter-kit-go | https://github.com/kikinteractive/starter-kit-go | author:kikinteractive 
+github-kikinteractive-MaxMind-DB-Reader-python | MaxMind-DB-Reader-python | https://github.com/kikinteractive/MaxMind-DB-Reader-python | author:kikinteractive description:Python MaxMind DB reader extension
+github-kikinteractive-logback-extensions | logback-extensions | https://github.com/kikinteractive/logback-extensions | author:kikinteractive description:The Logback Extensions project provides community supported extensions to the Logback logging framework.
+github-kikinteractive-OCMockito | OCMockito | https://github.com/kikinteractive/OCMockito | author:kikinteractive description:Mockito for Objective-C
 github-kikinteractive-CLIPropertiesMojo | CLIPropertiesMojo | https://github.com/kikinteractive/CLIPropertiesMojo | author:kikinteractive description:A simple mojo to add build properties
-github-kikinteractive-starter-kit-go | starter-kit-go | https://github.com/kikinteractive/starter-kit-go | author:kikinteractive description:Updated Jan 20, 2014
-github-kikinteractive-server-metrics-test | server-metrics-test | https://github.com/kikinteractive/server-metrics-test | author:kikinteractive description:Interview Test
+github-kikinteractive-spark | spark | https://github.com/kikinteractive/spark | author:kikinteractive description:Mirror of Apache Spark
+github-kikinteractive-aws-sdk-java | aws-sdk-java | https://github.com/kikinteractive/aws-sdk-java | author:kikinteractive description:Official mirror of the AWS SDK for Java. For more information on the AWS SDK for Java, see our web site:
+github-kikinteractive-dd-agent | dd-agent | https://github.com/kikinteractive/dd-agent | author:kikinteractive description:Datadog Agent
+github-kikinteractive-protostuff | protostuff | https://github.com/kikinteractive/protostuff | author:kikinteractive description:java serialization library, proto compiler, code generator
 github-kikinteractive-kik-js-issues | kik-js-issues | https://github.com/kikinteractive/kik-js-issues | author:kikinteractive description:Dedicated bug tracker for issues with Cards.js
+github-kikinteractive-nagios-plugins | nagios-plugins | https://github.com/kikinteractive/nagios-plugins | author:kikinteractive description:Advanced Nagios Plugins - Hadoop & NoSQL - Redis, Elasticsearch, Solr, HBase, Cassandra & DataStax OpsCenter, MongoDB, MySQL, Kafka, Riak, Memcached, Couchbase, Mesos, Spark, Neo4j, Datameer, H2O, WanDisco, Yarn, HDFS, Impala, Apache Drill, ZooKeeper, Cloudera, Hortonworks, MapR, IBM BigInsights, Infrastructure - Linux, DNS, Whois, SSL Certs etc
+github-kikinteractive-gcm | gcm | https://github.com/kikinteractive/gcm | author:kikinteractive description:Google Cloud Messaging - client libraries and sample implementations
+github-kikinteractive-cassandra_snapshotter | cassandra_snapshotter | https://github.com/kikinteractive/cassandra_snapshotter | author:kikinteractive description:A tool to backup cassandra nodes using snapshots and incremental backups on S3
+github-kikinteractive-maven-plugins | maven-plugins | https://github.com/kikinteractive/maven-plugins | author:kikinteractive description:Mirror of Apache Maven plugins
+github-kikinteractive-mixpanel-android | mixpanel-android | https://github.com/kikinteractive/mixpanel-android | author:kikinteractive description:An Android library for Mixpanel Analytics
+github-kikinteractive-maven-protoc-plugin | maven-protoc-plugin | https://github.com/kikinteractive/maven-protoc-plugin | author:kikinteractive description:Maven Protocol Buffers (protoc) Plugin that calls the protocol buffers compiler.
+github-kikinteractive-curator | curator | https://github.com/kikinteractive/curator | author:kikinteractive description:ZooKeeper client wrapper and rich ZooKeeper framework
+github-kikinteractive-gcm-server-repository | gcm-server-repository | https://github.com/kikinteractive/gcm-server-repository | author:kikinteractive description:maven repository for gcm-server for Android push notifications
+github-kikinteractive-crosswalk | crosswalk | https://github.com/kikinteractive/crosswalk | author:kikinteractive 
+github-kikinteractive-kafka-rpm | kafka-rpm | https://github.com/kikinteractive/kafka-rpm | author:kikinteractive description:Scripting to create a CentOS RPM for Kafka.
+github-kikinteractive-oauth2_proxy | oauth2_proxy | https://github.com/kikinteractive/oauth2_proxy | author:kikinteractive description:A reverse proxy that provides authentication with Google, Github or other provider
+github-kikinteractive-mailcheck-objectivec | mailcheck-objectivec | https://github.com/kikinteractive/mailcheck-objectivec | author:kikinteractive description:Reduce misspelled email addresses in your iOS app.
+github-kikinteractive-cassandra | cassandra | https://github.com/kikinteractive/cassandra | author:kikinteractive description:Mirror of Apache Cassandra
+github-kikinteractive-logback | logback | https://github.com/kikinteractive/logback | author:kikinteractive description:The reliable, generic, fast and flexible logging framework for Java.
+github-kikinteractive-leftronic-java | leftronic-java | https://github.com/kikinteractive/leftronic-java | author:kikinteractive description:A Java API to send data to Leftronic dashboards

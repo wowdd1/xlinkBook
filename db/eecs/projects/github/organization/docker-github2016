@@ -4,94 +4,101 @@ github-docker-kitematic | kitematic | https://github.com/docker/kitematic | auth
 github-docker-swarm | swarm | https://github.com/docker/swarm | author:docker description:Swarm: a Docker-native clustering system
 github-docker-dockercraft | dockercraft | https://github.com/docker/dockercraft | author:docker description:Docker + Minecraft = Dockercraft
 github-docker-machine | machine | https://github.com/docker/machine | author:docker description:Machine management for a container-centric world
-github-docker-docker-registry | docker-registry | https://github.com/docker/docker-registry | author:docker description:This is **DEPRECATED**! Please go to https://github.com/docker/distribution
 github-docker-distribution | distribution | https://github.com/docker/distribution | author:docker description:The Docker toolset to pack, ship, store, and deliver content
+github-docker-docker-registry | docker-registry | https://github.com/docker/docker-registry | author:docker description:This is **DEPRECATED**! Please go to https://github.com/docker/distribution
 github-docker-libchan | libchan | https://github.com/docker/libchan | author:docker description:Like Go channels over the network
 github-docker-docker-py | docker-py | https://github.com/docker/docker-py | author:docker description:An API client for docker written in Python
 github-docker-docker-bench-security | docker-bench-security | https://github.com/docker/docker-bench-security | author:docker description:The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production.
 github-docker-infrakit | infrakit | https://github.com/docker/infrakit | author:docker description:A toolkit for creating and managing declarative, self-healing infrastructure.
+github-docker-labs | labs | https://github.com/docker/labs | author:docker description:This is a collection of tutorials for learning how to use Docker with various tools. Contributions welcome.
 github-docker-swarmkit | swarmkit | https://github.com/docker/swarmkit | author:docker description:A toolkit for orchestrating distributed systems at any scale. It includes primitives for node discovery, raft-based consensus, task scheduling and more.
 github-docker-libcontainer | libcontainer | https://github.com/docker/libcontainer | author:docker description:PROJECT MOVED TO RUNC
 github-docker-toolbox | toolbox | https://github.com/docker/toolbox | author:docker description:The Docker Toolbox
 github-docker-libnetwork | libnetwork | https://github.com/docker/libnetwork | author:docker description:Docker Networking
 github-docker-notary | notary | https://github.com/docker/notary | author:docker description:Notary is a Docker project that allows anyone to have trust over arbitrary collections of data
-github-docker-containerd | containerd | https://github.com/docker/containerd | author:docker description:A daemon to control OCI container runtimes
 github-docker-hyperkit | hyperkit | https://github.com/docker/hyperkit | author:docker description:A toolkit for embedding hypervisor capabilities in your application
-github-docker-labs | labs | https://github.com/docker/labs | author:docker description:This is a collection of tutorials for learning how to use Docker with various tools. Contributions welcome.
-github-docker-docker-birthday-3 | docker-birthday-3 | https://github.com/docker/docker-birthday-3 | author:docker description:Updated Jun 10, 2016
+github-docker-containerd | containerd | https://github.com/docker/containerd | author:docker description:A daemon to control OCI container runtimes
+github-docker-docker-birthday-3 | docker-birthday-3 | https://github.com/docker/docker-birthday-3 | author:docker 
 github-docker-dockerlite | dockerlite | https://github.com/docker/dockerlite | author:docker description:Lightweight virtualization system based on LXC and BTRFS. See dotcloud/docker.
 github-docker-datakit | datakit | https://github.com/docker/datakit | author:docker description:Connect processes into powerful data pipelines with a simple git-like filesystem interface
 github-docker-libcompose | libcompose | https://github.com/docker/libcompose | author:docker description:An experimental go library providing Compose-like functionality
 github-docker-example-voting-app | example-voting-app | https://github.com/docker/example-voting-app | author:docker description:Example Docker Compose app
-github-docker-openstack-docker | openstack-docker | https://github.com/docker/openstack-docker | author:docker description:Nova driver and Glance backend to use Docker inside OpenStack
 github-docker-libkv | libkv | https://github.com/docker/libkv | author:docker description:Distributed Key/Value store abstraction library
-github-docker-engine-api | engine-api | https://github.com/docker/engine-api | author:docker description:DEPRECATED: Please see https://github.com/docker/docker/tree/master/client
+github-docker-openstack-docker | openstack-docker | https://github.com/docker/openstack-docker | author:docker description:Nova driver and Glance backend to use Docker inside OpenStack
 github-docker-dockercloud-haproxy | dockercloud-haproxy | https://github.com/docker/dockercloud-haproxy | author:docker description:HAproxy image that autoreconfigures itself when used in Docker Cloud
+github-docker-engine-api | engine-api | https://github.com/docker/engine-api | author:docker description:DEPRECATED: Please see https://github.com/docker/docker/tree/master/client
 github-docker-go-redis-server | go-redis-server | https://github.com/docker/go-redis-server | author:docker description:A Go implementation of the Redis server protocol
 github-docker-vpnkit | vpnkit | https://github.com/docker/vpnkit | author:docker description:A toolkit for embedding VPN capabilities in your application
-github-docker-community | community | https://github.com/docker/community | author:docker description:Updated Oct 19, 2016
+github-docker-community | community | https://github.com/docker/community | author:docker 
 github-docker-swarm-frontends | swarm-frontends | https://github.com/docker/swarm-frontends | author:docker description:Deploy Kubernetes with Swarm
 github-docker-leeroy | leeroy | https://github.com/docker/leeroy | author:docker description:Jenkins integration with GitHub pull requests
 github-docker-gordon | gordon | https://github.com/docker/gordon | author:docker description:Cli application to manage github pull requests
 github-docker-dceu_tutorials | dceu_tutorials | https://github.com/docker/dceu_tutorials | author:docker description:DCEU Hands-On Tutorials
 github-docker-global-hack-day-3 | global-hack-day-3 | https://github.com/docker/global-hack-day-3 | author:docker description:Participant final submissions for the 3rd edition of the Docker Global Hack Day
+github-docker-for-mac | for-mac | https://github.com/docker/for-mac | author:docker description:Docker for Mac
 github-docker-migrator | migrator | https://github.com/docker/migrator | author:docker description:Tool to migrate Docker images from Docker Hub or v1 registry to a v2 registry
 github-docker-go-p9p | go-p9p | https://github.com/docker/go-p9p | author:docker description:A modern, performant 9P library for Go.
-github-docker-for-mac | for-mac | https://github.com/docker/for-mac | author:docker description:Docker for Mac
 github-docker-libtrust | libtrust | https://github.com/docker/libtrust | author:docker description:Primitives for identity and authorization
-github-docker-spdystream | spdystream | https://github.com/docker/spdystream | author:docker description:Updated Sep 26, 2016
+github-docker-spdystream | spdystream | https://github.com/docker/spdystream | author:docker 
 github-docker-go-plugins-helpers | go-plugins-helpers | https://github.com/docker/go-plugins-helpers | author:docker description:Go helper packages to extend the Docker Engine
-github-docker-docker-tutorial | docker-tutorial | https://github.com/docker/docker-tutorial | author:docker description:Updated May 26, 2016
+github-docker-docker-tutorial | docker-tutorial | https://github.com/docker/docker-tutorial | author:docker 
+github-docker-docker.github.io | docker.github.io | https://github.com/docker/docker.github.io | author:docker description:Source repo for Docker's Documentation, output served at docs.docker.com
 github-docker-hub-feedback | hub-feedback | https://github.com/docker/hub-feedback | author:docker description:Feedback and bug reports for the Docker Hub
 github-docker-dnsserver | dnsserver | https://github.com/docker/dnsserver | author:docker description:A small DNS service for communicating A and SRV records.
 github-docker-golem | golem | https://github.com/docker/golem | author:docker description:Integration test framework using Docker
-github-docker-docker.github.io | docker.github.io | https://github.com/docker/docker.github.io | author:docker description:Source repo for Docker's Documentation, output served at docs.docker.com
-github-docker-jenkins-pipeline-scripts | jenkins-pipeline-scripts | https://github.com/docker/jenkins-pipeline-scripts | author:docker description:Updated Oct 6, 2016
-github-docker-docker-credential-helpers | docker-credential-helpers | https://github.com/docker/docker-credential-helpers | author:docker description:Updated Sep 15, 2016
 github-docker-for-win | for-win | https://github.com/docker/for-win | author:docker description:Docker for Windows
-github-docker-swarm-microservice-demo-v1 | swarm-microservice-demo-v1 | https://github.com/docker/swarm-microservice-demo-v1 | author:docker description:Swarm Web App Demo Cluster: Voting App
+github-docker-jenkins-pipeline-scripts | jenkins-pipeline-scripts | https://github.com/docker/jenkins-pipeline-scripts | author:docker 
+github-docker-communitytools-image2docker-win | communitytools-image2docker-win | https://github.com/docker/communitytools-image2docker-win | author:docker 
+github-docker-docker-credential-helpers | docker-credential-helpers | https://github.com/docker/docker-credential-helpers | author:docker 
 github-docker-ucp_lab | ucp_lab | https://github.com/docker/ucp_lab | author:docker description:Lab for UCP at DockerCon EU
-github-docker-go-events | go-events | https://github.com/docker/go-events | author:docker description:Composable event distribution for Go
+github-docker-swarm-microservice-demo-v1 | swarm-microservice-demo-v1 | https://github.com/docker/swarm-microservice-demo-v1 | author:docker description:Swarm Web App Demo Cluster: Voting App
 github-docker-dockercloud-cli | dockercloud-cli | https://github.com/docker/dockercloud-cli | author:docker description:CLI for Docker Cloud
+github-docker-go-events | go-events | https://github.com/docker/go-events | author:docker description:Composable event distribution for Go
 github-docker-bender | bender | https://github.com/docker/bender | author:docker description:IRC bot to manage scrum-like standup meetings
 github-docker-docker-network | docker-network | https://github.com/docker/docker-network | author:docker description:Experimental network control tool for Docker
-github-docker-communitytools-image2docker-win | communitytools-image2docker-win | https://github.com/docker/communitytools-image2docker-win | author:docker description:Updated Oct 10, 2016
 github-docker-go-connections | go-connections | https://github.com/docker/go-connections | author:docker description:Utility package to work with network connections
-github-docker-dcus-hol-2016 | dcus-hol-2016 | https://github.com/docker/dcus-hol-2016 | author:docker description:Updated Jul 1, 2016
+github-docker-dcus-hol-2016 | dcus-hol-2016 | https://github.com/docker/dcus-hol-2016 | author:docker 
 github-docker-openstack-heat-docker | openstack-heat-docker | https://github.com/docker/openstack-heat-docker | author:docker description:Orchestrate Docker containers with OpenStack Heat
-github-docker-distribution-library-image | distribution-library-image | https://github.com/docker/distribution-library-image | author:docker description:Updated Sep 25, 2016
-github-docker-leadership | leadership | https://github.com/docker/leadership | author:docker description:Distributed Leader Election using docker/libkv
+github-docker-distribution-library-image | distribution-library-image | https://github.com/docker/distribution-library-image | author:docker 
 github-docker-go-units | go-units | https://github.com/docker/go-units | author:docker description:Parse and print size and time units in human-readable format
+github-docker-leadership | leadership | https://github.com/docker/leadership | author:docker description:Distributed Leader Election using docker/libkv
 github-docker-gordon-bot | gordon-bot | https://github.com/docker/gordon-bot | author:docker description:Gordon the turtle IRC bot to rebuild Jenkins builds.
 github-docker-opensource | opensource | https://github.com/docker/opensource | author:docker description:Contains documentation and scripts related to the management of Open Source at Docker
-github-docker-go-healthcheck | go-healthcheck | https://github.com/docker/go-healthcheck | author:docker description:Updated Oct 15, 2015
-github-docker-docker-status | docker-status | https://github.com/docker/docker-status | author:docker description:Updated Dec 18, 2013
+github-docker-go-healthcheck | go-healthcheck | https://github.com/docker/go-healthcheck | author:docker 
+github-docker-docker-status | docker-status | https://github.com/docker/docker-status | author:docker 
 github-docker-swarm-library-image | swarm-library-image | https://github.com/docker/swarm-library-image | author:docker description:Docker Official Image packaging for Swarm
-github-docker-dockercloud-agent | dockercloud-agent | https://github.com/docker/dockercloud-agent | author:docker description:Agent to manage docker in nodes controlled by Docker Cloud
 github-docker-v1.10-migrator | v1.10-migrator | https://github.com/docker/v1.10-migrator | author:docker description:Prepare docker graph directory for content addressability
-github-docker-docker-bb | docker-bb | https://github.com/docker/docker-bb | author:docker description:Docker binary builder, triggered from nsq messages.
+github-docker-dockercloud-agent | dockercloud-agent | https://github.com/docker/dockercloud-agent | author:docker description:Agent to manage docker in nodes controlled by Docker Cloud
 github-docker-dockercloud-authorizedkeys | dockercloud-authorizedkeys | https://github.com/docker/dockercloud-authorizedkeys | author:docker description:Adds a user public SSH key to the host's ~/.ssh/authorized_keys via docker container
-github-docker-python-dockercloud | python-dockercloud | https://github.com/docker/python-dockercloud | author:docker description:Python library for Docker Cloud
+github-docker-docker-bb | docker-bb | https://github.com/docker/docker-bb | author:docker description:Docker binary builder, triggered from nsq messages.
+github-docker-etcd | etcd | https://github.com/docker/etcd | author:docker description:A highly-available key value store for shared configuration and service discovery
 github-docker-go-metrics | go-metrics | https://github.com/docker/go-metrics | author:docker description:Package for metrics collection in Docker projects
+github-docker-infrakit.aws | infrakit.aws | https://github.com/docker/infrakit.aws | author:docker description:Infrakit plugins for AWS.
+github-docker-orchestration-workshop | orchestration-workshop | https://github.com/docker/orchestration-workshop | author:docker 
+github-docker-python-dockercloud | python-dockercloud | https://github.com/docker/python-dockercloud | author:docker description:Python library for Docker Cloud
 github-docker-birthdaysite | birthdaysite | https://github.com/docker/birthdaysite | author:docker description:Docker's Birthday Site
 github-docker-dockercloud-node | dockercloud-node | https://github.com/docker/dockercloud-node | author:docker description:Docker Cloud node as a docker-in-docker container
-github-docker-docs-base | docs-base | https://github.com/docker/docs-base | author:docker description:Docker's base documentation theme and structure files
 github-docker-irc-minutes | irc-minutes | https://github.com/docker/irc-minutes | author:docker description:Docker-dev irc meeting Organization and minutes.
+github-docker-go-dockercloud | go-dockercloud | https://github.com/docker/go-dockercloud | author:docker description:Go library for Docker Cloud API
 github-docker-pulpo | pulpo | https://github.com/docker/pulpo | author:docker description:Configuration mechanism for Node
 github-docker-dockercloud-network-daemon | dockercloud-network-daemon | https://github.com/docker/dockercloud-network-daemon | author:docker description:[Docker Cloud System Image] Provides a secure overlay network between nodes
-github-docker-infrakit.aws | infrakit.aws | https://github.com/docker/infrakit.aws | author:docker description:Infrakit plugins for AWS.
-github-docker-go-dockercloud | go-dockercloud | https://github.com/docker/go-dockercloud | author:docker description:Go library for Docker Cloud API
 github-docker-dockercloud-hello-world | dockercloud-hello-world | https://github.com/docker/dockercloud-hello-world | author:docker description:Hello world!
 github-docker-go | go | https://github.com/docker/go | author:docker description:Go packages with small patches autogenerated (used for canonical/json)
 github-docker-dockercloud-quickstart-go | dockercloud-quickstart-go | https://github.com/docker/dockercloud-quickstart-go | author:docker description:Getting started in Docker Cloud with Go
-github-docker-markdownlint | markdownlint | https://github.com/docker/markdownlint | author:docker description:Docker projects markdown linter
+github-docker-linkcheck | linkcheck | https://github.com/docker/linkcheck | author:docker description:Web site link checker
+github-docker-hugo | hugo | https://github.com/docker/hugo | author:docker description:Staging ground for changes to Hugo - PR in progress
 github-docker-docker-e2e | docker-e2e | https://github.com/docker/docker-e2e | author:docker description:End to End testing of Docker, especially Swarmkit features.
-github-docker-jira-test | jira-test | https://github.com/docker/jira-test | author:docker description:Updated Dec 16, 2014
-github-docker-code-of-conduct | code-of-conduct | https://github.com/docker/code-of-conduct | author:docker description:Updated Jul 12, 2016
-github-docker-notary-server-image | notary-server-image | https://github.com/docker/notary-server-image | author:docker description:Updated Jul 31, 2015
+github-docker-markdownlint | markdownlint | https://github.com/docker/markdownlint | author:docker description:Docker projects markdown linter
+github-docker-runc | runc | https://github.com/docker/runc | author:docker description:runc container cli tools
+github-docker-code-of-conduct | code-of-conduct | https://github.com/docker/code-of-conduct | author:docker 
+github-docker-homebrew-core | homebrew-core | https://github.com/docker/homebrew-core | author:docker description:🍻 Core formulae for the Homebrew package manager
+github-docker-jira-test | jira-test | https://github.com/docker/jira-test | author:docker 
+github-docker-notary-server-image | notary-server-image | https://github.com/docker/notary-server-image | author:docker 
 github-docker-dctx | dctx | https://github.com/docker/dctx | author:docker description:A context package for use across docker projects
 github-docker-dockercloud-events | dockercloud-events | https://github.com/docker/dockercloud-events | author:docker description:[Docker Cloud System Image] Monitors docker events and sends updates to Docker Cloud's API
-github-docker-notary-official-images | notary-official-images | https://github.com/docker/notary-official-images | author:docker description:Updated May 11, 2016
-github-docker-notary-signer-image | notary-signer-image | https://github.com/docker/notary-signer-image | author:docker description:Updated Jul 31, 2015
 github-docker-dockercloud-quickstart-python | dockercloud-quickstart-python | https://github.com/docker/dockercloud-quickstart-python | author:docker description:Getting started in Docker Cloud with Python
-github-docker-docker-machine-driver-ci-test | docker-machine-driver-ci-test | https://github.com/docker/docker-machine-driver-ci-test | author:docker description:Updated Jan 6, 2016
+github-docker-notary-official-images | notary-official-images | https://github.com/docker/notary-official-images | author:docker 
+github-docker-notary-signer-image | notary-signer-image | https://github.com/docker/notary-signer-image | author:docker 
+github-docker-goamz | goamz | https://github.com/docker/goamz | author:docker description:Fork of the GOAMZ version developed within Canonical with additional functionality with DynamoDB
+github-docker-docker-machine-driver-ci-test | docker-machine-driver-ci-test | https://github.com/docker/docker-machine-driver-ci-test | author:docker 
+github-docker-datakit.logs | datakit.logs | https://github.com/docker/datakit.logs | author:docker 

@@ -1,43 +1,77 @@
 github-voxmedia-meme | meme | https://github.com/voxmedia/meme | author:voxmedia description:Meme generator
 github-voxmedia-autotune | autotune | https://github.com/voxmedia/autotune | author:voxmedia description:Platform for reusable news tools
-github-voxmedia-metronome | metronome | https://github.com/voxmedia/metronome | author:voxmedia description:Updated Nov 2, 2014
+github-voxmedia-metronome | metronome | https://github.com/voxmedia/metronome | author:voxmedia 
 github-voxmedia-middleman-google_drive | middleman-google_drive | https://github.com/voxmedia/middleman-google_drive | author:voxmedia description:Middleman extension for loading content from Google Drive
 github-voxmedia-verge-50 | verge-50 | https://github.com/voxmedia/verge-50 | author:voxmedia description:Editorial app for The Verge 50.
 github-voxmedia-data-projects | data-projects | https://github.com/voxmedia/data-projects | author:voxmedia description:Scripts and data for various Vox Media stories and news projects
 github-voxmedia-gliss | gliss | https://github.com/voxmedia/gliss | author:voxmedia description:Constraint based article layout system
-github-voxmedia-quiz-generator | quiz-generator | https://github.com/voxmedia/quiz-generator | author:voxmedia description:Updated Aug 27, 2014
-github-voxmedia-mapper | mapper | https://github.com/voxmedia/mapper | author:voxmedia description:A tool for generating world and US-state choropleth maps
+github-voxmedia-quiz-generator | quiz-generator | https://github.com/voxmedia/quiz-generator | author:voxmedia 
 github-voxmedia-accessibility | accessibility | https://github.com/voxmedia/accessibility | author:voxmedia description:Vox Product's Accessibility Guidelines
+github-voxmedia-mapper | mapper | https://github.com/voxmedia/mapper | author:voxmedia description:A tool for generating world and US-state choropleth maps
 github-voxmedia-vax-fig | vax-fig | https://github.com/voxmedia/vax-fig | author:voxmedia description:jQuery plugin that downloads and displays the first frame of an animated GIF
-github-voxmedia-code-of-conduct | code-of-conduct | https://github.com/voxmedia/code-of-conduct | author:voxmedia description:Updated Apr 19, 2016
+github-voxmedia-code-of-conduct | code-of-conduct | https://github.com/voxmedia/code-of-conduct | author:voxmedia 
 github-voxmedia-tonr | tonr | https://github.com/voxmedia/tonr | author:voxmedia description:Vax 16 project by Pam, Brittany, Alesha, Scott, and Aidan
+github-voxmedia-quill | quill | https://github.com/voxmedia/quill | author:voxmedia description:A cross browser rich text editor with an API
 github-voxmedia-lightbike | lightbike | https://github.com/voxmedia/lightbike | author:voxmedia description:Asset budget auditing library - for internet site webpages
 github-voxmedia-Transcriber | Transcriber | https://github.com/voxmedia/Transcriber | author:voxmedia description:NWJS os x desktop based application that given a video/audio file returns a transcription using IBM Watson Speech to text API
-github-voxmedia-ad-server-proxy | ad-server-proxy | https://github.com/voxmedia/ad-server-proxy | author:voxmedia description:Updated Oct 9, 2014
+github-voxmedia-ad-server-proxy | ad-server-proxy | https://github.com/voxmedia/ad-server-proxy | author:voxmedia 
+github-voxmedia-thumbor | thumbor | https://github.com/voxmedia/thumbor | author:voxmedia description:thumbor is an open-source photo thumbnail service by globo.com
 github-voxmedia-yobot | yobot | https://github.com/voxmedia/yobot | author:voxmedia description:Yo.
 github-voxmedia-pixelpunch | pixelpunch | https://github.com/voxmedia/pixelpunch | author:voxmedia description:http://pixelpunch.voxmedia.com
+github-voxmedia-autotune-image-slider | autotune-image-slider | https://github.com/voxmedia/autotune-image-slider | author:voxmedia 
 github-voxmedia-captions_burner | captions_burner | https://github.com/voxmedia/captions_burner | author:voxmedia description:NWJS os x desktop app that given a srt and a video burns the captions onto the video. Can also export as gif.
-github-voxmedia-autotune-image-slider | autotune-image-slider | https://github.com/voxmedia/autotune-image-slider | author:voxmedia description:Updated Jun 20, 2016
-github-voxmedia-canonical_domain | canonical_domain | https://github.com/voxmedia/canonical_domain | author:voxmedia description:Updated Jun 24, 2015
-github-voxmedia-varniphite | varniphite | https://github.com/voxmedia/varniphite | author:voxmedia description:Updated Jul 8, 2014
-github-voxmedia-voxholder | voxholder | https://github.com/voxmedia/voxholder | author:voxmedia description:Updated Jul 6, 2015
-github-voxmedia-bongo | bongo | https://github.com/voxmedia/bongo | author:voxmedia description:Bongo is a responsive tool that quickly enables people to make type pairings, color, branding and photo choices in a live, responsive environment without writing any code.
+github-voxmedia-canonical_domain | canonical_domain | https://github.com/voxmedia/canonical_domain | author:voxmedia 
 github-voxmedia-sass-theme-template-loader | sass-theme-template-loader | https://github.com/voxmedia/sass-theme-template-loader | author:voxmedia description:Themed CSS stylesheet generator for Sass assets
+github-voxmedia-bongo | bongo | https://github.com/voxmedia/bongo | author:voxmedia description:Bongo is a responsive tool that quickly enables people to make type pairings, color, branding and photo choices in a live, responsive environment without writing any code.
+github-voxmedia-varniphite | varniphite | https://github.com/voxmedia/varniphite | author:voxmedia 
+github-voxmedia-voxholder | voxholder | https://github.com/voxmedia/voxholder | author:voxmedia 
 github-voxmedia-autotune-wtfengine | autotune-wtfengine | https://github.com/voxmedia/autotune-wtfengine | author:voxmedia description:WTFEngine for Autotune
-github-voxmedia-omniauth_service | omniauth_service | https://github.com/voxmedia/omniauth_service | author:voxmedia description:Updated Aug 27, 2014
-github-voxmedia-thumbor_indexed_file_result_storage | thumbor_indexed_file_result_storage | https://github.com/voxmedia/thumbor_indexed_file_result_storage | author:voxmedia description:Updated Dec 8, 2014
-github-voxmedia-thumbor_varnish_http_loader | thumbor_varnish_http_loader | https://github.com/voxmedia/thumbor_varnish_http_loader | author:voxmedia description:Updated Feb 24, 2016
-github-voxmedia-ida | ida | https://github.com/voxmedia/ida | author:voxmedia description:Vax project 2016 - Rethinking Visual Narratives
-github-voxmedia-nginxplusphite | nginxplusphite | https://github.com/voxmedia/nginxplusphite | author:voxmedia description:Puts nginx plus status on graphite
+github-voxmedia-userstamp | userstamp | https://github.com/voxmedia/userstamp | author:voxmedia description:This Rails plugin extends ActiveRecord::Base to add automatic updating of created_by and updated_by attributes of your models in much the same way that the ActiveRecord::Timestamp module updates created_(at/on) and updated_(at/on) attributes.
 github-voxmedia-iframe-client | iframe-client | https://github.com/voxmedia/iframe-client | author:voxmedia description:Cross-origin iframe messaging client
-github-voxmedia-image_compression_experiments | image_compression_experiments | https://github.com/voxmedia/image_compression_experiments | author:voxmedia description:Updated Sep 10, 2015
-github-voxmedia-open-source-contribution-guidelines | open-source-contribution-guidelines | https://github.com/voxmedia/open-source-contribution-guidelines | author:voxmedia description:Guidelines and code of conduct for contributing to Vox Media open source projects.
+github-voxmedia-nginxplusphite | nginxplusphite | https://github.com/voxmedia/nginxplusphite | author:voxmedia description:Puts nginx plus status on graphite
+github-voxmedia-thumbor_varnish_http_loader | thumbor_varnish_http_loader | https://github.com/voxmedia/thumbor_varnish_http_loader | author:voxmedia 
+github-voxmedia-ruby-build | ruby-build | https://github.com/voxmedia/ruby-build | author:voxmedia description:Compile and install Ruby
+github-voxmedia-image_compression_experiments | image_compression_experiments | https://github.com/voxmedia/image_compression_experiments | author:voxmedia 
 github-voxmedia-attribute_delegator | attribute_delegator | https://github.com/voxmedia/attribute_delegator | author:voxmedia description:An ActiveRecord extension that allows you to treat fields from another model/table as local attributes.
-github-voxmedia-autotune-example-blueprint | autotune-example-blueprint | https://github.com/voxmedia/autotune-example-blueprint | author:voxmedia description:Updated May 29, 2015
-github-voxmedia-vox-oscars-2016 | vox-oscars-2016 | https://github.com/voxmedia/vox-oscars-2016 | author:voxmedia description:Updated Mar 30, 2016
-github-voxmedia-docker_base_images | docker_base_images | https://github.com/voxmedia/docker_base_images | author:voxmedia description:Updated May 27, 2016
-github-voxmedia-Volume_folder_report_generator | Volume_folder_report_generator | https://github.com/voxmedia/Volume_folder_report_generator | author:voxmedia description:Os X nwjs app, tha runs a ruby script to generate a report for missing media files on a video server
+github-voxmedia-sinatra-bootstrap | sinatra-bootstrap | https://github.com/voxmedia/sinatra-bootstrap | author:voxmedia description:Sinatra app for Heroku w/ Haml, Sass, Compass and jQuery
+github-voxmedia-thumbor_indexed_file_result_storage | thumbor_indexed_file_result_storage | https://github.com/voxmedia/thumbor_indexed_file_result_storage | author:voxmedia 
+github-voxmedia-ida | ida | https://github.com/voxmedia/ida | author:voxmedia description:Vax project 2016 - Rethinking Visual Narratives
+github-voxmedia-omniauth_service | omniauth_service | https://github.com/voxmedia/omniauth_service | author:voxmedia 
+github-voxmedia-alpaca | alpaca | https://github.com/voxmedia/alpaca | author:voxmedia description:Alpaca provides the easiest way to generate interactive HTML5 forms for web and mobile applications. It uses JSON Schema and simple Handlebars templates to generate great looking, dynamic user interfaces on top of Twitter Bootstrap, jQuery UI, jQuery Mobile and HTML5.
+github-voxmedia-resque-scheduler | resque-scheduler | https://github.com/voxmedia/resque-scheduler | author:voxmedia description:A light-weight job scheduling system built on top of resque
+github-voxmedia-statsd-client | statsd-client | https://github.com/voxmedia/statsd-client | author:voxmedia description:StatsD client for Ruby
+github-voxmedia-open-source-contribution-guidelines | open-source-contribution-guidelines | https://github.com/voxmedia/open-source-contribution-guidelines | author:voxmedia description:Guidelines and code of conduct for contributing to Vox Media open source projects.
+github-voxmedia-convert-rich-text | convert-rich-text | https://github.com/voxmedia/convert-rich-text | author:voxmedia description:Convert an insert-only rich-text delta into HTML
+github-voxmedia-jQuery-Tokenizing-Autocomplete-Plugin | jQuery-Tokenizing-Autocomplete-Plugin | https://github.com/voxmedia/jQuery-Tokenizing-Autocomplete-Plugin | author:voxmedia description:This is a jQuery plugin to allow users to select multiple items from a predefined list, using autocompletion as they type to find each item.
+github-voxmedia-rec-sinatra_more | rec-sinatra_more | https://github.com/voxmedia/rec-sinatra_more | author:voxmedia description:Generators, helpers and extensions enabling complex sinatra apps
 github-voxmedia-dyncheck | dyncheck | https://github.com/voxmedia/dyncheck | author:voxmedia description:Tool to check dynect stuff
-github-voxmedia-demo-autotune | demo-autotune | https://github.com/voxmedia/demo-autotune | author:voxmedia description:Autotune install for a public demo
-github-voxmedia-kinto_box | kinto_box | https://github.com/voxmedia/kinto_box | author:voxmedia description:A ruby client for Kinto(kinto.readthedocs.io)
+github-voxmedia-cookbook-openstack-compute | cookbook-openstack-compute | https://github.com/voxmedia/cookbook-openstack-compute | author:voxmedia description:Chef Cookbook - OpenStack Compute
+github-voxmedia-varnish | varnish | https://github.com/voxmedia/varnish | author:voxmedia description:Development repository for Opscode Cookbook varnish
+github-voxmedia-aws | aws | https://github.com/voxmedia/aws | author:voxmedia description:Thumbor AWS extensions
+github-voxmedia-snarkov | snarkov | https://github.com/voxmedia/snarkov | author:voxmedia description:Sinatra-based Markov bot for Slack.
+github-voxmedia-cookbook-percona | cookbook-percona | https://github.com/voxmedia/cookbook-percona | author:voxmedia description:Chef cookbooks for Percona MySQL components
+github-voxmedia-raven-ruby | raven-ruby | https://github.com/voxmedia/raven-ruby | author:voxmedia description:Raven is a Ruby client for Sentry (getsentry.com)
+github-voxmedia-gemnasium-gem | gemnasium-gem | https://github.com/voxmedia/gemnasium-gem | author:voxmedia description:Keep your projects in shape! More info: https://gemnasium.com
+github-voxmedia-rails_4_session_flash_backport | rails_4_session_flash_backport | https://github.com/voxmedia/rails_4_session_flash_backport | author:voxmedia 
+github-voxmedia-newrelic-faraday | newrelic-faraday | https://github.com/voxmedia/newrelic-faraday | author:voxmedia description:Instrument faraday for NewRelic
+github-voxmedia-unicorn-worker-killer | unicorn-worker-killer | https://github.com/voxmedia/unicorn-worker-killer | author:voxmedia description:Automatically restart Unicorn workers based on 1) max number of requests and 2) max memory
+github-voxmedia-html5-video-plugins | html5-video-plugins | https://github.com/voxmedia/html5-video-plugins | author:voxmedia description:HTML5 Video Plugins
+github-voxmedia-Volume_folder_report_generator | Volume_folder_report_generator | https://github.com/voxmedia/Volume_folder_report_generator | author:voxmedia description:Os X nwjs app, tha runs a ruby script to generate a report for missing media files on a video server
+github-voxmedia-openvpn | openvpn | https://github.com/voxmedia/openvpn | author:voxmedia description:Development repository for Chef cookbook, openvpn.
+github-voxmedia-karma-mocha-reporter | karma-mocha-reporter | https://github.com/voxmedia/karma-mocha-reporter | author:voxmedia description:Karma reporter plugin with mocha style logging.
+github-voxmedia-html5-skin | html5-skin | https://github.com/voxmedia/html5-skin | author:voxmedia 
+github-voxmedia-docker_base_images | docker_base_images | https://github.com/voxmedia/docker_base_images | author:voxmedia 
+github-voxmedia-vox-oscars-2016 | vox-oscars-2016 | https://github.com/voxmedia/vox-oscars-2016 | author:voxmedia 
+github-voxmedia-cookbook-openstack-block-storage | cookbook-openstack-block-storage | https://github.com/voxmedia/cookbook-openstack-block-storage | author:voxmedia description:Chef Cookbook - OpenStack Block Storage
+github-voxmedia-calendar_date_select | calendar_date_select | https://github.com/voxmedia/calendar_date_select | author:voxmedia description:This gem is not (and has never been) maintained by me
+github-voxmedia-fssm | fssm | https://github.com/voxmedia/fssm | author:voxmedia description:The File System State Monitor keeps track of the state of any number of paths and will fire events when said state changes (create/update/delete). FSSM supports using FSEvents on MacOS, Inotify on GNU/Linux, and polling anywhere else.
 github-voxmedia-setup-vox-rig | setup-vox-rig | https://github.com/voxmedia/setup-vox-rig | author:voxmedia description:Script for setting up your Mac OS X system to make Vox Media middleman apps (should be public)
+github-voxmedia-raven-js | raven-js | https://github.com/voxmedia/raven-js | author:voxmedia description:JavaScript client for Sentry
+github-voxmedia-kinto_box | kinto_box | https://github.com/voxmedia/kinto_box | author:voxmedia description:A ruby client for Kinto(kinto.readthedocs.io)
+github-voxmedia-prototype_legacy_helper | prototype_legacy_helper | https://github.com/voxmedia/prototype_legacy_helper | author:voxmedia description:WARNING: this repo is not maintained anymore, if you want to maintain it, please send an mail to rails-core
+github-voxmedia-chef-ganglia | chef-ganglia | https://github.com/voxmedia/chef-ganglia | author:voxmedia description:Chef Cookbook to Install and Configure Ganglia
+github-voxmedia-demo-autotune | demo-autotune | https://github.com/voxmedia/demo-autotune | author:voxmedia description:Autotune install for a public demo
+github-voxmedia-carbon-relay-ng | carbon-relay-ng | https://github.com/voxmedia/carbon-relay-ng | author:voxmedia description:Fast carbon relay+aggregator with admin interfaces for making changes online - production ready
+github-voxmedia-autotune-example-blueprint | autotune-example-blueprint | https://github.com/voxmedia/autotune-example-blueprint | author:voxmedia 
+github-voxmedia-brightbox-ruby-cookbook | brightbox-ruby-cookbook | https://github.com/voxmedia/brightbox-ruby-cookbook | author:voxmedia description:Installs Brightbox Ruby packages via Chef
+github-voxmedia-slowqwatch | slowqwatch | https://github.com/voxmedia/slowqwatch | author:voxmedia description:Counts mysql slow query log ratio and sends to statsd

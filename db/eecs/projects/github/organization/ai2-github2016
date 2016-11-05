@@ -1,35 +1,62 @@
-github-ai2-XNOR-Net | XNOR-Net | https://github.com/allenai/XNOR-Net | author:ai2 description:Updated Aug 31, 2016
-github-ai2-openie-standalone | openie-standalone | https://github.com/allenai/openie-standalone | author:ai2 description:Updated Jun 29, 2016
+github-ai2-XNOR-Net | XNOR-Net | https://github.com/allenai/XNOR-Net | author:ai2 
+github-ai2-openie-standalone | openie-standalone | https://github.com/allenai/openie-standalone | author:ai2 
 github-ai2-pdffigures | pdffigures | https://github.com/allenai/pdffigures | author:ai2 description:Command line tool to extract figures, tables, and captions from scholarly documents in PDF form.
 github-ai2-nlpstack | nlpstack | https://github.com/allenai/nlpstack | author:ai2 description:NLP toolkit (tokenizer, POS-tagger, parser, etc.)
 github-ai2-ike | ike | https://github.com/allenai/ike | author:ai2 description:Interactive Knowledge Extraction tool
 github-ai2-tableilp | tableilp | https://github.com/allenai/tableilp | author:ai2 description:Question Answering via Integer Programming (TableILP)
 github-ai2-sbt-plugins | sbt-plugins | https://github.com/allenai/sbt-plugins | author:ai2 description:SBT Plugins for AI2 projects
+github-ai2-pdffigures2 | pdffigures2 | https://github.com/allenai/pdffigures2 | author:ai2 
 github-ai2-tuffylite | tuffylite | https://github.com/allenai/tuffylite | author:ai2 description:TuffyLite is an open-source MLN inference engine that modifies the original Tuffy solver.
-github-ai2-pdffigures2 | pdffigures2 | https://github.com/allenai/pdffigures2 | author:ai2 description:Updated Jul 8, 2016
 github-ai2-pipeline | pipeline | https://github.com/allenai/pipeline | author:ai2 description:Library for building reproducible data pipelines to support experimentation
 github-ai2-taggers | taggers | https://github.com/allenai/taggers | author:ai2 description:Easily identify and label sentence intervals using various taggers.
+github-ai2-grobid | grobid | https://github.com/allenai/grobid | author:ai2 description:A machine learning software for extracting information from scholarly documents
 github-ai2-ml | ml | https://github.com/allenai/ml | author:ai2 description:Re-usable low-level ML components
-github-ai2-meta-eval | meta-eval | https://github.com/allenai/meta-eval | author:ai2 description:Tools to evaluate accuracies of various (research papers') metadata extraction libraries
 github-ai2-pesto | pesto | https://github.com/allenai/pesto | author:ai2 description:The perfect recipe for running integration tests of AngularJS based web applications.
-github-ai2-newtonian | newtonian | https://github.com/allenai/newtonian | author:ai2 description:Updated Aug 31, 2016
+github-ai2-harvard-datascience-2014 | harvard-datascience-2014 | https://github.com/allenai/harvard-datascience-2014 | author:ai2 description:AI2 data science course material based on Harvard CS109 data science course
+github-ai2-meta-eval | meta-eval | https://github.com/allenai/meta-eval | author:ai2 description:Tools to evaluate accuracies of various (research papers') metadata extraction libraries
+github-ai2-newtonian | newtonian | https://github.com/allenai/newtonian | author:ai2 
+github-ai2-Word2VecJava | Word2VecJava | https://github.com/allenai/Word2VecJava | author:ai2 description:Word2Vec Java Port
+github-ai2-openregex-scala | openregex-scala | https://github.com/allenai/openregex-scala | author:ai2 description:A scala wrapper for OpenRegex.
 github-ai2-common | common | https://github.com/allenai/common | author:ai2 description:A collection of useful utility classes and functions.
-github-ai2-forces | forces | https://github.com/allenai/forces | author:ai2 description:Updated Aug 31, 2016
-github-ai2-gulp-cache-breaker | gulp-cache-breaker | https://github.com/allenai/gulp-cache-breaker | author:ai2 description:Gulp utility for producing unique urls to static resources for the purpose of ensuring a cache miss after deploying updates.
-github-ai2-syrup | syrup | https://github.com/allenai/syrup | author:ai2 description:A collection of common UI utilities and libraries leveraged by AI2.
+github-ai2-table-structure | table-structure | https://github.com/allenai/table-structure | author:ai2 description:Cleaned research code for predicting table structure from an image.
+github-ai2-forces | forces | https://github.com/allenai/forces | author:ai2 
 github-ai2-flapjack | flapjack | https://github.com/allenai/flapjack | author:ai2 description:A scrumptious serving of HTML, CSS and Javascript designed to make developing a web UI as easy as possible.
+github-ai2-pysofia | pysofia | https://github.com/allenai/pysofia | author:ai2 description:bindings for the sofia-ml machine learning library (http://code.google.com/p/sofia-ml/)
 github-ai2-datastore | datastore | https://github.com/allenai/datastore | author:ai2 description:Store for immutable objects in S3
-github-ai2-EquationTree | EquationTree | https://github.com/allenai/EquationTree | author:ai2 description:Equation tree parsing using pyparsing CFG
-github-ai2-jverbnet | jverbnet | https://github.com/allenai/jverbnet | author:ai2 description:JVerbNet from http://projects.csail.mit.edu/jverbnet/
-github-ai2-ai2-project-starter | ai2-project-starter | https://github.com/allenai/ai2-project-starter | author:ai2 description:Easy project bootstrapping utility
-github-ai2-diagram-viz | diagram-viz | https://github.com/allenai/diagram-viz | author:ai2 description:Simple diagram extraction visualizer
-github-ai2-hackaton-realAndRational | hackaton-realAndRational | https://github.com/allenai/hackaton-realAndRational | author:ai2 description:Updated Aug 8, 2014
+github-ai2-BlackLab | BlackLab | https://github.com/allenai/BlackLab | author:ai2 description:A corpus retrieval engine based on Apache Lucene
+github-ai2-syrup | syrup | https://github.com/allenai/syrup | author:ai2 description:A collection of common UI utilities and libraries leveraged by AI2.
+github-ai2-gulp-cache-breaker | gulp-cache-breaker | https://github.com/allenai/gulp-cache-breaker | author:ai2 description:Gulp utility for producing unique urls to static resources for the purpose of ensuring a cache miss after deploying updates.
+github-ai2-nlpweb | nlpweb | https://github.com/allenai/nlpweb | author:ai2 description:A demonstration of various NLP tools.
+github-ai2-react-demo | react-demo | https://github.com/allenai/react-demo | author:ai2 description:A simple ReactJS demo which demonstrates the ability to use ReactJS as a client or server-side rendering mechanism.
+github-ai2-rexa1-metatagger | rexa1-metatagger | https://github.com/allenai/rexa1-metatagger | author:ai2 
 github-ai2-angular-web.recipe | angular-web.recipe | https://github.com/allenai/angular-web.recipe | author:ai2 description:Biscuit recipe for a simple AngularJS based web application.
 github-ai2-node-express.recipe | node-express.recipe | https://github.com/allenai/node-express.recipe | author:ai2 description:A simple recipe for a NodeJS based express web-server.
-github-ai2-react-demo | react-demo | https://github.com/allenai/react-demo | author:ai2 description:A simple ReactJS demo which demonstrates the ability to use ReactJS as a client or server-side rendering mechanism.
+github-ai2-ai2-project-starter | ai2-project-starter | https://github.com/allenai/ai2-project-starter | author:ai2 description:Easy project bootstrapping utility
 github-ai2-griddle | griddle | https://github.com/allenai/griddle | author:ai2 description:Express middleware for executing gulp builds and reporting errors in the browser.
-github-ai2-eccv_imagenet_temp | eccv_imagenet_temp | https://github.com/allenai/eccv_imagenet_temp | author:ai2 description:Updated Mar 10, 2016
-github-ai2-test-tablestore | test-tablestore | https://github.com/allenai/test-tablestore | author:ai2 description:Updated Feb 23, 2016
+github-ai2-rexa1-pstotext | rexa1-pstotext | https://github.com/allenai/rexa1-pstotext | author:ai2 
+github-ai2-nixpkgs | nixpkgs | https://github.com/allenai/nixpkgs | author:ai2 description:Nix Packages collection
+github-ai2-tiburon | tiburon | https://github.com/allenai/tiburon | author:ai2 description:Tiburon tree transducer toolkit
+github-ai2-opencv | opencv | https://github.com/allenai/opencv | author:ai2 description:Open Source Computer Vision Library
+github-ai2-hackaton-realAndRational | hackaton-realAndRational | https://github.com/allenai/hackaton-realAndRational | author:ai2 
+github-ai2-factorie | factorie | https://github.com/allenai/factorie | author:ai2 description:FACTORIE is a toolkit for deployable probabilistic modeling, implemented as a software library in Scala. It provides its users with a succinct language for creating relational factor graphs, estimating parameters and performing inference.
+github-ai2-rpp | rpp | https://github.com/allenai/rpp | author:ai2 description:Research Paper Processor
+github-ai2-jverbnet | jverbnet | https://github.com/allenai/jverbnet | author:ai2 description:JVerbNet from http://projects.csail.mit.edu/jverbnet/
+github-ai2-EquationTree | EquationTree | https://github.com/allenai/EquationTree | author:ai2 description:Equation tree parsing using pyparsing CFG
+github-ai2-blueprints | blueprints | https://github.com/allenai/blueprints | author:ai2 description:A Property Graph Model Interface
+github-ai2-geosolver | geosolver | https://github.com/allenai/geosolver | author:ai2 description:geometry question solver with functional programming
+github-ai2-fastText | fastText | https://github.com/allenai/fastText | author:ai2 description:Library for fast text representation and classification.
+github-ai2-z3 | z3 | https://github.com/allenai/z3 | author:ai2 description:The Z3 Theorem Prover
+github-ai2-diagram-viz | diagram-viz | https://github.com/allenai/diagram-viz | author:ai2 description:Simple diagram extraction visualizer
+github-ai2-GeoServer | GeoServer | https://github.com/allenai/GeoServer | author:ai2 description:Web framework for GeoSolver
+github-ai2-bibie | bibie | https://github.com/allenai/bibie | author:ai2 description:Research paper header and references field extraction
+github-ai2-xml-annotator | xml-annotator | https://github.com/allenai/xml-annotator | author:ai2 description:functions and methods for creating annotations in xml documents
+github-ai2-paper-header | paper-header | https://github.com/allenai/paper-header | author:ai2 
 github-ai2-orientation | orientation | https://github.com/allenai/orientation | author:ai2 description:Intern Orientation
-github-ai2-figureseer | figureseer | https://github.com/allenai/figureseer | author:ai2 description:Updated Oct 12, 2016
-github-ai2-vision-textbook-dataset | vision-textbook-dataset | https://github.com/allenai/vision-textbook-dataset | author:ai2 description:Updated Sep 13, 2016
+github-ai2-mech-turk-tasks | mech-turk-tasks | https://github.com/allenai/mech-turk-tasks | author:ai2 description:Examples of MTurk tasks for Aristo and Plato
+github-ai2-pnp | pnp | https://github.com/allenai/pnp | author:ai2 description:Probabilistic Neural Programming
+github-ai2-figureseer | figureseer | https://github.com/allenai/figureseer | author:ai2 
+github-ai2-pdfbox | pdfbox | https://github.com/allenai/pdfbox | author:ai2 description:Mirror of Apache PDFBox
+github-ai2-test-tablestore-1 | test-tablestore-1 | https://github.com/allenai/test-tablestore-1 | author:ai2 description:A repo to test Git tablestore. Will be deleted later.
+github-ai2-test-tablestore | test-tablestore | https://github.com/allenai/test-tablestore | author:ai2 
+github-ai2-eccv_imagenet_temp | eccv_imagenet_temp | https://github.com/allenai/eccv_imagenet_temp | author:ai2 
+github-ai2-vision-textbook-dataset | vision-textbook-dataset | https://github.com/allenai/vision-textbook-dataset | author:ai2 

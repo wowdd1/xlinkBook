@@ -1,2 +1,21 @@
 github-simplivity-distcc | distcc | https://github.com/simplivity/distcc | author:simplivity description:Simple distributed compiler client and server, including SimpliVity patches.
+github-simplivity-cinder | cinder | https://github.com/simplivity/cinder | author:simplivity 
+github-simplivity-nova | nova | https://github.com/simplivity/nova | author:simplivity description:OpenStack Compute (Nova)
+github-simplivity-gradle-versioner | gradle-versioner | https://github.com/simplivity/gradle-versioner | author:simplivity description:Gradle Version Plugin. Generates semantic versions with git meta data per branch.
+github-simplivity-gradle-ospackage-plugin | gradle-ospackage-plugin | https://github.com/simplivity/gradle-ospackage-plugin | author:simplivity description:Gradle plugin for constructing linux packages, specifically RPM and DEBs.
+github-simplivity-git_filter | git_filter | https://github.com/simplivity/git_filter | author:simplivity description:git_filter a filter for git
+github-simplivity-gradle-native-artifacts-plugin | gradle-native-artifacts-plugin | https://github.com/simplivity/gradle-native-artifacts-plugin | author:simplivity description:A gradle plugin to package C/C++ native executables and libraries into artifacts publishable to Ivy or Maven, with support for transitive dependencies.
+github-simplivity-git-plugin | git-plugin | https://github.com/simplivity/git-plugin | author:simplivity description:Git plugin for Jenkins
+github-simplivity-envinject-plugin | envinject-plugin | https://github.com/simplivity/envinject-plugin | author:simplivity 
+github-simplivity-jenkins-artifactory-plugin | jenkins-artifactory-plugin | https://github.com/simplivity/jenkins-artifactory-plugin | author:simplivity description:Jenkins artifactory plugin
+github-simplivity-googletest | googletest | https://github.com/simplivity/googletest | author:simplivity description:Google Test
+github-simplivity-scrummy | scrummy | https://github.com/simplivity/scrummy | author:simplivity description:An scrum estimation and planning game, built in Node.js by the Web Chefs of Four Kitchens.
+github-simplivity-jenkins-ctest-plugin | jenkins-ctest-plugin | https://github.com/simplivity/jenkins-ctest-plugin | author:simplivity description:Stylesheet for the xUnit plugin for Jenkins to handle CTest test results.
+github-simplivity-yaml-cpp | yaml-cpp | https://github.com/simplivity/yaml-cpp | author:simplivity description:A YAML parser and emitter in C++
+github-simplivity-gradle-jaxb-plugin | gradle-jaxb-plugin | https://github.com/simplivity/gradle-jaxb-plugin | author:simplivity description:Gradle plugin to ease projects that use xsds and the ant jaxb task
+github-simplivity-gradle | gradle | https://github.com/simplivity/gradle | author:simplivity description:A powerful build system for the JVM
+github-simplivity-gradle-visteg | gradle-visteg | https://github.com/simplivity/gradle-visteg | author:simplivity description:Exports task execution graph as .dot file
+github-simplivity-SetupBuilder | SetupBuilder | https://github.com/simplivity/SetupBuilder | author:simplivity description:Gradle plugin for building setups for different platforms.
+github-simplivity-gradle-clover-plugin | gradle-clover-plugin | https://github.com/simplivity/gradle-clover-plugin | author:simplivity description:Gradle plugin for generating a code coverage report using Clover
+github-simplivity-gradle-thrift-plugin | gradle-thrift-plugin | https://github.com/simplivity/gradle-thrift-plugin | author:simplivity description:Thrift plugin for Gradle
 github-simplivity-bullshtml | bullshtml | https://github.com/simplivity/bullshtml | author:simplivity description:Bullseye HTML Coverage Report Generator

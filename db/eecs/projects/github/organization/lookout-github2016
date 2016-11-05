@@ -6,60 +6,98 @@ github-lookout-testlab | testlab | https://github.com/lookout/testlab | author:l
 github-lookout-borderpatrol | borderpatrol | https://github.com/lookout/borderpatrol | author:lookout description:Service for web sessions and authentication in an SOA
 github-lookout-cgreen | cgreen | https://github.com/lookout/cgreen | author:lookout description:Unit testing framework for C
 github-lookout-testengineer | testengineer | https://github.com/lookout/testengineer | author:lookout description:Gem to help incorporating Foreman into integration tests
-github-lookout-factoryjs | factoryjs | https://github.com/lookout/factoryjs | author:lookout description:Updated Nov 19, 2015
+github-lookout-factoryjs | factoryjs | https://github.com/lookout/factoryjs | author:lookout 
 github-lookout-sqlite-android | sqlite-android | https://github.com/lookout/sqlite-android | author:lookout description:This is a set of small build scripts to build sqlite3 as a static library for Android.
+github-lookout-cassandra-statsd-agent | cassandra-statsd-agent | https://github.com/lookout/cassandra-statsd-agent | author:lookout description:Java Agent for Cassandra integration with StatsD
+github-lookout-keyswap | keyswap | https://github.com/lookout/keyswap | author:lookout description:PGP Key Management for Android
 github-lookout-lxc | lxc | https://github.com/lookout/lxc | author:lookout description:RubyGem for controlling local or remote Linux Containers (LXC)
 github-lookout-ImperiusGeorge | ImperiusGeorge | https://github.com/lookout/ImperiusGeorge | author:lookout description:Ruby wrapper for ui automator
 github-lookout-sidekiq-cleaner | sidekiq-cleaner | https://github.com/lookout/sidekiq-cleaner | author:lookout description:A Gem that will help triage dead sidekiq jobs
+github-lookout-cassandra-health-check | cassandra-health-check | https://github.com/lookout/cassandra-health-check | author:lookout description:Cassandra Health Check
+github-lookout-android-passive-view | android-passive-view | https://github.com/lookout/android-passive-view | author:lookout description:MVP for Android - Passive View
 github-lookout-sparkle_pony | sparkle_pony | https://github.com/lookout/sparkle_pony | author:lookout description:MySQL UI and Dashboards
+github-lookout-elementary-rpc | elementary-rpc | https://github.com/lookout/elementary-rpc | author:lookout description:Elementary RPC is a simple, async client library for interacting with Protobuf RPC servers
 github-lookout-spongebob | spongebob | https://github.com/lookout/spongebob | author:lookout description:Network differences notifier
 github-lookout-mudskipper | mudskipper | https://github.com/lookout/mudskipper | author:lookout description:Utility for extracting change data events from MySQL binlogs.
-github-lookout-cassandra-health-check | cassandra-health-check | https://github.com/lookout/cassandra-health-check | author:lookout description:Cassandra Health Check
 github-lookout-stapfen | stapfen | https://github.com/lookout/stapfen | author:lookout description:Stapfen makes it easy to write stand-alone Ruby workers to consume messages from a STOMP, JMS or Kafka compatible work queue
-github-lookout-android-passive-view | android-passive-view | https://github.com/lookout/android-passive-view | author:lookout description:MVP for Android - Passive View
-github-lookout-elementary-rpc | elementary-rpc | https://github.com/lookout/elementary-rpc | author:lookout description:Elementary RPC is a simple, async client library for interacting with Protobuf RPC servers
 github-lookout-leafy | leafy | https://github.com/lookout/leafy | author:lookout description:The green way to build Ruby-based web services
-github-lookout-ImperiusGem | ImperiusGem | https://github.com/lookout/ImperiusGem | author:lookout description:Updated Sep 20, 2013
+github-lookout-statsd | statsd | https://github.com/lookout/statsd | author:lookout description:Ruby statsd
 github-lookout-mini-xml | mini-xml | https://github.com/lookout/mini-xml | author:lookout description:Lightweight XML library
 github-lookout-fast-rsa-engine | fast-rsa-engine | https://github.com/lookout/fast-rsa-engine | author:lookout description:This gem replaces the RSA signature/ciphers from jruby-openssl with faster implementations of them
-github-lookout-rack-graphite | rack-graphite | https://github.com/lookout/rack-graphite | author:lookout description:Rack middleware for automatically logging request information to Graphite.
-github-lookout-activepush | activepush | https://github.com/lookout/activepush | author:lookout description:Web Push service built around ActiveMQ
-github-lookout-cookbook-artifactory | cookbook-artifactory | https://github.com/lookout/cookbook-artifactory | author:lookout description:Chef Cookbook for artifactory
+github-lookout-ImperiusGem | ImperiusGem | https://github.com/lookout/ImperiusGem | author:lookout 
 github-lookout-jirabot | jirabot | https://github.com/lookout/jirabot | author:lookout description:Useful bot for automatically pulling in JIRA and/or Gerrit information into IRC
 github-lookout-lookout-foodcritic-rules | lookout-foodcritic-rules | https://github.com/lookout/lookout-foodcritic-rules | author:lookout description:Custom foodcritic rules used @ Lookout
+github-lookout-rack-graphite | rack-graphite | https://github.com/lookout/rack-graphite | author:lookout description:Rack middleware for automatically logging request information to Graphite.
 github-lookout-gringotts | gringotts | https://github.com/lookout/gringotts | author:lookout description:A vault of reusable components for Chaplin and Handlebars.
 github-lookout-rack-requestash | rack-requestash | https://github.com/lookout/rack-requestash | author:lookout description:Override Rack's built-in request logging mechanism to provide logstash-friendly JSON
-github-lookout-lookout-rack-test | lookout-rack-test | https://github.com/lookout/lookout-rack-test | author:lookout description:Updated Feb 4, 2016
-github-lookout-openbanana | openbanana | https://github.com/lookout/openbanana | author:lookout description:A simple gem for bootstrapping DBs for things
-github-lookout-nagios-plugin | nagios-plugin | https://github.com/lookout/nagios-plugin | author:lookout description:Updated May 10, 2014
+github-lookout-activepush | activepush | https://github.com/lookout/activepush | author:lookout description:Web Push service built around ActiveMQ
+github-lookout-ActionBarSherlock | ActionBarSherlock | https://github.com/lookout/ActionBarSherlock | author:lookout description:Library for implementing the action bar design pattern using the native action bar on Android 4.0+ and a custom implementation on pre-4.0 through a single API and theme.
+github-lookout-cookbook-artifactory | cookbook-artifactory | https://github.com/lookout/cookbook-artifactory | author:lookout description:Chef Cookbook for artifactory
 github-lookout-service-artifact-gradle-plugin | service-artifact-gradle-plugin | https://github.com/lookout/service-artifact-gradle-plugin | author:lookout description:Gradle plugin for building a prim and proper service artifact
-github-lookout-backend-coding-questions | backend-coding-questions | https://github.com/lookout/backend-coding-questions | author:lookout description:Updated May 18, 2015
-github-lookout-lookout-rack-utils | lookout-rack-utils | https://github.com/lookout/lookout-rack-utils | author:lookout description:Updated Oct 3, 2016
-github-lookout-commit2jira | commit2jira | https://github.com/lookout/commit2jira | author:lookout description:Small gem for parsing JIRA information
+github-lookout-lookout-rack-utils | lookout-rack-utils | https://github.com/lookout/lookout-rack-utils | author:lookout 
+github-lookout-zipkin | zipkin | https://github.com/lookout/zipkin | author:lookout description:Zipkin is a distributed tracing system
+github-lookout-lookout-rack-test | lookout-rack-test | https://github.com/lookout/lookout-rack-test | author:lookout 
+github-lookout-styleguides | styleguides | https://github.com/lookout/styleguides | author:lookout description:Coding Standards, Style Guidelines and Document Templates
+github-lookout-openbanana | openbanana | https://github.com/lookout/openbanana | author:lookout description:A simple gem for bootstrapping DBs for things
+github-lookout-nagios-plugin | nagios-plugin | https://github.com/lookout/nagios-plugin | author:lookout 
+github-lookout-backend-coding-questions | backend-coding-questions | https://github.com/lookout/backend-coding-questions | author:lookout 
+github-lookout-uat-gradle-plugin | uat-gradle-plugin | https://github.com/lookout/uat-gradle-plugin | author:lookout 
 github-lookout-tapp | tapp | https://github.com/lookout/tapp | author:lookout description:Test Automation Platform Portal - A portal which takes notification data from DeployDB to assemble integration test suites to run after each deployment.
-github-lookout-uat-gradle-plugin | uat-gradle-plugin | https://github.com/lookout/uat-gradle-plugin | author:lookout description:Updated Mar 16, 2015
-github-lookout-lookout-jruby | lookout-jruby | https://github.com/lookout/lookout-jruby | author:lookout description:A small collection of hacks to make building and running JRuby applications easier
+github-lookout-openssl-android | openssl-android | https://github.com/lookout/openssl-android | author:lookout description:a version of the official Android openssl setup to build standalone for use in app
+github-lookout-wcelibcex | wcelibcex | https://github.com/lookout/wcelibcex | author:lookout description:Windows Mobile/Windows CE ANSI C compatability library
 github-lookout-lookout.github.io | lookout.github.io | https://github.com/lookout/lookout.github.io | author:lookout description:Hackers Blog for Lookout Engineering
-github-lookout-PolicyClient | PolicyClient | https://github.com/lookout/PolicyClient | author:lookout description:Updated Apr 25, 2012
-github-lookout-PolicyServer | PolicyServer | https://github.com/lookout/PolicyServer | author:lookout description:Updated Apr 26, 2012
-github-lookout-budurl-gem | budurl-gem | https://github.com/lookout/budurl-gem | author:lookout description:Ruby gem for accessing budurl.com APIs
-github-lookout-pipefish | pipefish | https://github.com/lookout/pipefish | author:lookout description:Utility that writes the results of a SQL statement to HDFS.
+github-lookout-protobuffy | protobuffy | https://github.com/lookout/protobuffy | author:lookout description:Ruby implementation for Protocol Buffers
+github-lookout-commons-compress | commons-compress | https://github.com/lookout/commons-compress | author:lookout description:Apache Commons
 github-lookout-oraculum-fastTable | oraculum-fastTable | https://github.com/lookout/oraculum-fastTable | author:lookout description:Optimized cell rendering for Oraculum's tabular plugin.
 github-lookout-oraculum-muTable | oraculum-muTable | https://github.com/lookout/oraculum-muTable | author:lookout description:Draggable interactions for Oraculum's tabular plugin.
-github-lookout-wcelibcex | wcelibcex | https://github.com/lookout/wcelibcex | author:lookout description:Windows Mobile/Windows CE ANSI C compatability library
-github-lookout-metrics-wizard | metrics-wizard | https://github.com/lookout/metrics-wizard | author:lookout description:A java agent to read your JMX metrics and magically send them somewhere else
-github-lookout-commons-compress | commons-compress | https://github.com/lookout/commons-compress | author:lookout description:Apache Commons
-github-lookout-deploydb-jenkins-plugin | deploydb-jenkins-plugin | https://github.com/lookout/deploydb-jenkins-plugin | author:lookout description:A Jenkins plugin to integrate DeployDB
-github-lookout-omnibus-testlab | omnibus-testlab | https://github.com/lookout/omnibus-testlab | author:lookout description:Omnibus installer for TestLab
-github-lookout-rack-jmx | rack-jmx | https://github.com/lookout/rack-jmx | author:lookout description:Rack middleware for exposing information via JMX
-github-lookout-hacksgiving.com | hacksgiving.com | https://github.com/lookout/hacksgiving.com | author:lookout description:Official site of Hacksgiving
-github-lookout-whoas | whoas | https://github.com/lookout/whoas | author:lookout description:Web Hooks on a Service, a most excellent adventure
-github-lookout-uat | uat | https://github.com/lookout/uat | author:lookout description:User Acceptance Test tooling
+github-lookout-commit2jira | commit2jira | https://github.com/lookout/commit2jira | author:lookout description:Small gem for parsing JIRA information
+github-lookout-clickatell | clickatell | https://github.com/lookout/clickatell | author:lookout description:Ruby interface to the Clickatell SMS Gateway API
+github-lookout-PolicyServer | PolicyServer | https://github.com/lookout/PolicyServer | author:lookout 
+github-lookout-PolicyClient | PolicyClient | https://github.com/lookout/PolicyClient | author:lookout 
+github-lookout-budurl-gem | budurl-gem | https://github.com/lookout/budurl-gem | author:lookout description:Ruby gem for accessing budurl.com APIs
+github-lookout-lookout-jruby | lookout-jruby | https://github.com/lookout/lookout-jruby | author:lookout description:A small collection of hacks to make building and running JRuby applications easier
 github-lookout-android-plugins | android-plugins | https://github.com/lookout/android-plugins | author:lookout description:Plugin Architecture for Android
-github-lookout-rspec-datadog | rspec-datadog | https://github.com/lookout/rspec-datadog | author:lookout description:Updated Mar 1, 2016
-github-lookout-blog | blog | https://github.com/lookout/blog | author:lookout description:Updated May 9, 2014
-github-lookout-backbone-factory | backbone-factory | https://github.com/lookout/backbone-factory | author:lookout description:FactoryJS wrapped Backbone definitions
-github-lookout-cloudspec | cloudspec | https://github.com/lookout/cloudspec | author:lookout description:Updated Aug 15, 2014
+github-lookout-pipefish | pipefish | https://github.com/lookout/pipefish | author:lookout description:Utility that writes the results of a SQL statement to HDFS.
+github-lookout-deploydb-jenkins-plugin | deploydb-jenkins-plugin | https://github.com/lookout/deploydb-jenkins-plugin | author:lookout description:A Jenkins plugin to integrate DeployDB
+github-lookout-metrics-wizard | metrics-wizard | https://github.com/lookout/metrics-wizard | author:lookout description:A java agent to read your JMX metrics and magically send them somewhere else
+github-lookout-bcrypt-ruby | bcrypt-ruby | https://github.com/lookout/bcrypt-ruby | author:lookout description:bcrypt-ruby is a Ruby binding for the OpenBSD bcrypt() password hashing algorithm, allowing you to easily store a secure hash of your users' passwords.
+github-lookout-newrelic-plugins | newrelic-plugins | https://github.com/lookout/newrelic-plugins | author:lookout description:NewRelic plugins (cassandra, varnish, and more to come)
+github-lookout-kafka | kafka | https://github.com/lookout/kafka | author:lookout description:Mirror of Apache Kafka
+github-lookout-storm-metrics-statsd | storm-metrics-statsd | https://github.com/lookout/storm-metrics-statsd | author:lookout description:Storm Metrics module for reporting to statsd
+github-lookout-hacksgiving.com | hacksgiving.com | https://github.com/lookout/hacksgiving.com | author:lookout description:Official site of Hacksgiving
+github-lookout-faraday-zipkin | faraday-zipkin | https://github.com/lookout/faraday-zipkin | author:lookout description:Faraday middleware to insert Zipkin tracing headers
+github-lookout-jruby-rack | jruby-rack | https://github.com/lookout/jruby-rack | author:lookout description:Rack for JRuby and Java appservers
+github-lookout-ldap-sync-prototype | ldap-sync-prototype | https://github.com/lookout/ldap-sync-prototype | author:lookout description:Synchronizes users and groups from an upstream LDAP to Conjur Users and Groups
+github-lookout-nixops | nixops | https://github.com/lookout/nixops | author:lookout description:NixOps, the NixOS-based cloud deployment tool
+github-lookout-nixpkgs | nixpkgs | https://github.com/lookout/nixpkgs | author:lookout description:Nix Packages collection
 github-lookout-jmeter-gradle-plugin | jmeter-gradle-plugin | https://github.com/lookout/jmeter-gradle-plugin | author:lookout description:Gradle plugin used for running jmeter tests
-github-lookout-queuewrangler | queuewrangler | https://github.com/lookout/queuewrangler | author:lookout description:A gem to simplify queueing work for background threads.
+github-lookout-cookbook-gerrit | cookbook-gerrit | https://github.com/lookout/cookbook-gerrit | author:lookout description:Chef cookbook for the Gerrit review system.
+github-lookout-data_fabric | data_fabric | https://github.com/lookout/data_fabric | author:lookout description:Sharding and replication support for ActiveRecord
+github-lookout-hydra | hydra | https://github.com/lookout/hydra | author:lookout description:Hydra, the Nix-based continuous build system
+github-lookout-jmxtrans-agent | jmxtrans-agent | https://github.com/lookout/jmxtrans-agent | author:lookout description:Java Agent based JMX metrics exporter.
+github-lookout-professor | professor | https://github.com/lookout/professor | author:lookout description:Professor teaches you to write better code. One commit at a time.
+github-lookout-rack-jmx | rack-jmx | https://github.com/lookout/rack-jmx | author:lookout description:Rack middleware for exposing information via JMX
+github-lookout-chef-percona | chef-percona | https://github.com/lookout/chef-percona | author:lookout description:Chef cookbooks for Percona MySQL components
+github-lookout-rubygems-mirror | rubygems-mirror | https://github.com/lookout/rubygems-mirror | author:lookout description:The `gem mirror` RubyGems command, creates local mirrors of all gems from a remote gem source.
+github-lookout-mongomapper | mongomapper | https://github.com/lookout/mongomapper | author:lookout description:A Ruby Object Mapper for Mongo
+github-lookout-vanity | vanity | https://github.com/lookout/vanity | author:lookout description:Experiment Driven Development for Ruby
+github-lookout-i18n-js | i18n-js | https://github.com/lookout/i18n-js | author:lookout description:It's a small library to provide the I18n translations on the Javascript. It comes with Rails support.
+github-lookout-multi_xml | multi_xml | https://github.com/lookout/multi_xml | author:lookout description:A generic swappable back-end for XML parsing
+github-lookout-acts_as_archive | acts_as_archive | https://github.com/lookout/acts_as_archive | author:lookout description:Don't delete your records, move them to a different table
+github-lookout-rspec-datadog | rspec-datadog | https://github.com/lookout/rspec-datadog | author:lookout 
 github-lookout-gradle-android-native-model | gradle-android-native-model | https://github.com/lookout/gradle-android-native-model | author:lookout description:Native software model components for building Android.
+github-lookout-dd-agent | dd-agent | https://github.com/lookout/dd-agent | author:lookout description:Datadog Agent
+github-lookout-backbone-factory | backbone-factory | https://github.com/lookout/backbone-factory | author:lookout description:FactoryJS wrapped Backbone definitions
+github-lookout-cloudspec | cloudspec | https://github.com/lookout/cloudspec | author:lookout 
+github-lookout-librdkafka | librdkafka | https://github.com/lookout/librdkafka | author:lookout description:The Apache Kafka C/C++ library
+github-lookout-redstorm | redstorm | https://github.com/lookout/redstorm | author:lookout description:JRuby on Storm
+github-lookout-omnibus-testlab | omnibus-testlab | https://github.com/lookout/omnibus-testlab | author:lookout description:Omnibus installer for TestLab
+github-lookout-blog | blog | https://github.com/lookout/blog | author:lookout 
+github-lookout-twilio_oncall_redirector | twilio_oncall_redirector | https://github.com/lookout/twilio_oncall_redirector | author:lookout 
+github-lookout-application_java | application_java | https://github.com/lookout/application_java | author:lookout description:Development repository for Opscode Cookbook application_java
+github-lookout-storm-cookbook | storm-cookbook | https://github.com/lookout/storm-cookbook | author:lookout 
+github-lookout-queuewrangler | queuewrangler | https://github.com/lookout/queuewrangler | author:lookout description:A gem to simplify queueing work for background threads.
+github-lookout-metrics-datadog | metrics-datadog | https://github.com/lookout/metrics-datadog | author:lookout description:metrics-datadog
+github-lookout-whoas | whoas | https://github.com/lookout/whoas | author:lookout description:Web Hooks on a Service, a most excellent adventure
+github-lookout-dropwizard-auth-ldap | dropwizard-auth-ldap | https://github.com/lookout/dropwizard-auth-ldap | author:lookout description:Dropwizard Authentication Module for LDAP using JNDI.
+github-lookout-uat | uat | https://github.com/lookout/uat | author:lookout description:User Acceptance Test tooling

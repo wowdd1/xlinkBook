@@ -1,3 +1,13 @@
-github-houzz-JSONCast | JSONCast | https://github.com/Houzz/JSONCast | author:houzz description:Updated Oct 11, 2016
+github-houzz-JSONCast | JSONCast | https://github.com/Houzz/JSONCast | author:houzz 
 github-houzz-hubot-luigi | hubot-luigi | https://github.com/Houzz/hubot-luigi | author:houzz description:Luigi Plugin for Hubot
+github-houzz-annoy2 | annoy2 | https://github.com/Houzz/annoy2 | author:houzz 
 github-houzz-FocusGuides | FocusGuides | https://github.com/Houzz/FocusGuides | author:houzz description:This repository contains the code from the blog post on using focus guides to navigate pins on a map.
+github-houzz-luigi | luigi | https://github.com/Houzz/luigi | author:houzz description:Luigi is a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.
+github-houzz-pex | pex | https://github.com/Houzz/pex | author:houzz description:A library and tool for generating .pex (Python EXecutable) files
+github-houzz-snippets | snippets | https://github.com/Houzz/snippets | author:houzz description:Snippets
+github-houzz-caffe | caffe | https://github.com/Houzz/caffe | author:houzz description:Caffe: a fast open framework for deep learning.
+github-houzz-phabricator | phabricator | https://github.com/Houzz/phabricator | author:houzz description:Open software engineering platform and fun adventure game
+github-houzz-simian | simian | https://github.com/Houzz/simian | author:houzz description:Simian is an enterprise-class Mac OS X software deployment solution. Google App Engine hosted server, with a client powered by the Munki open-source project.
+github-houzz-grunt-juice | grunt-juice | https://github.com/Houzz/grunt-juice | author:houzz 
+github-houzz-bootstrap | bootstrap | https://github.com/Houzz/bootstrap | author:houzz description:Sleek, intuitive, and powerful front-end framework for faster and easier web development.
+github-houzz-annoy | annoy | https://github.com/Houzz/annoy | author:houzz description:Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/saving to disk

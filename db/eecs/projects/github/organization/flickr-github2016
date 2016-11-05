@@ -3,10 +3,14 @@ github-flickr-yakbak | yakbak | https://github.com/flickr/yakbak | author:flickr
 github-flickr-Pandonia | Pandonia | https://github.com/flickr/Pandonia | author:flickr description:TileMill styles for use with the OSM Bright template.
 github-flickr-FlickrDithr | FlickrDithr | https://github.com/flickr/FlickrDithr | author:flickr description:1 bit dithering, created for Flickr April Fools
 github-flickr-flickr-sdk | flickr-sdk | https://github.com/flickr/flickr-sdk | author:flickr description:The easiest way to talk to the Flickr API with node.js or a web browser
+github-flickr-caffe | caffe | https://github.com/flickr/caffe | author:flickr description:Caffe: a Fast framework for neural networks
 github-flickr-flickr-api-swagger | flickr-api-swagger | https://github.com/flickr/flickr-api-swagger | author:flickr description:Flickr API v1 Swagger definitions
 github-flickr-tagExplodr | tagExplodr | https://github.com/flickr/tagExplodr | author:flickr description:How to convert a big ol’ string of tags into a big ol’ array of tags
 github-flickr-incoming-message-hash | incoming-message-hash | https://github.com/flickr/incoming-message-hash | author:flickr description:Generate a one-way hash from an http.IncomingMessage
 github-flickr-eslint-config-flickr | eslint-config-flickr | https://github.com/flickr/eslint-config-flickr | author:flickr description:Flickr's cool eslint config
-github-flickr-App-Apollo | App-Apollo | https://github.com/flickr/App-Apollo | author:flickr description:Updated Jul 21, 2016
 github-flickr-flickr.github.com | flickr.github.com | https://github.com/flickr/flickr.github.com | author:flickr description:The organization page for Flickr.
+github-flickr-Panasonic-LF20-control | Panasonic-LF20-control | https://github.com/flickr/Panasonic-LF20-control | author:flickr description:Perl Scripts to control the Panasonic LF20 LCD TV Series
+github-flickr-flickr-oauth-dance | flickr-oauth-dance | https://github.com/flickr/flickr-oauth-dance | author:flickr description:Dances with Flickr to quickly get OAuth credentials for new or existing apps
+github-flickr-App-Apollo | App-Apollo | https://github.com/flickr/App-Apollo | author:flickr 
+github-flickr-flickr-sdk-examples | flickr-sdk-examples | https://github.com/flickr/flickr-sdk-examples | author:flickr description:Implementation examples for the Flickr SDK
 github-flickr-flickr | flickr | https://github.com/flickr/flickr | author:flickr description:Placeholder repository

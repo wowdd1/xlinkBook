@@ -1,0 +1,9 @@
+github-enlitic-lasagne4newbs | lasagne4newbs | https://github.com/enlitic/lasagne4newbs | author:enlitic description:Some beginner code for lasagne - simpler than the examples included in lasagne
+github-enlitic-nolearn | nolearn | https://github.com/enlitic/nolearn | author:enlitic description:Abstractions around neural net libraries, most notably Lasagne.
+github-enlitic-postgresql | postgresql | https://github.com/enlitic/postgresql | author:enlitic description:Ansible role for PostgreSQL
+github-enlitic-Theano | Theano | https://github.com/enlitic/Theano | author:enlitic description:Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. It can use GPUs and perform efficient symbolic differentiation.
+github-enlitic-nolearn_utils | nolearn_utils | https://github.com/enlitic/nolearn_utils | author:enlitic description:Utilities for nolearn.lasagne
+github-enlitic-cornerstoneTools | cornerstoneTools | https://github.com/enlitic/cornerstoneTools | author:enlitic description:A framework for tools built on top of cornerstone
+github-enlitic-wvbox | wvbox | https://github.com/enlitic/wvbox | author:enlitic description:A wrapper class for creating an interface to word vectors.
+github-enlitic-keras | keras | https://github.com/enlitic/keras | author:enlitic description:Deep Learning library for Python. Convnets, recurrent neural networks, and more. Runs on Theano and TensorFlow.
+github-enlitic-Lasagne | Lasagne | https://github.com/enlitic/Lasagne | author:enlitic description:neural network tools for Theano

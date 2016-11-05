@@ -1,5 +1,5 @@
 github-purestorage-rest-client | rest-client | https://github.com/purestorage/rest-client | author:purestorage description:Pure Storage python REST client
 github-purestorage-graphite-grafana | graphite-grafana | https://github.com/purestorage/graphite-grafana | author:purestorage description:Pure Storage grafana dashboard for monitoring stats using graphite query editor
-github-purestorage-ucs-director-plugin | ucs-director-plugin | https://github.com/purestorage/ucs-director-plugin | author:purestorage description:Updated Apr 29, 2016
+github-purestorage-ucs-director-plugin | ucs-director-plugin | https://github.com/purestorage/ucs-director-plugin | author:purestorage 
 github-purestorage-nagios | nagios | https://github.com/purestorage/nagios | author:purestorage description:pure storage nagios utility
 github-purestorage-cleave | cleave | https://github.com/purestorage/cleave | author:purestorage description:Linux fork+exec daemon and client library.

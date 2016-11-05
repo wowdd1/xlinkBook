@@ -1,0 +1,19 @@
+github-teslamotors-pushr-core | pushr-core | https://github.com/teslamotors/pushr-core | author:teslamotors description:Redis backed push notification daemon
+github-teslamotors-devise_ldap_authenticatable | devise_ldap_authenticatable | https://github.com/teslamotors/devise_ldap_authenticatable | author:teslamotors description:Devise Module for LDAP
+github-teslamotors-rocket_pants | rocket_pants | https://github.com/teslamotors/rocket_pants | author:teslamotors description:API building tools on top of ActionController. Also, an awesome name.
+github-teslamotors-redis-rb | redis-rb | https://github.com/teslamotors/redis-rb | author:teslamotors description:A Ruby client library for Redis
+github-teslamotors-doorkeeper | doorkeeper | https://github.com/teslamotors/doorkeeper | author:teslamotors description:Doorkeeper is an OAuth 2 provider for Rails.
+github-teslamotors-sidekiq | sidekiq | https://github.com/teslamotors/sidekiq | author:teslamotors description:Simple, efficient background processing for Ruby
+github-teslamotors-mysql | mysql | https://github.com/teslamotors/mysql | author:teslamotors description:Go MySQL Driver is a lightweight and fast MySQL driver for Go's (golang) database/sql package
+github-teslamotors-mjolnir | mjolnir | https://github.com/teslamotors/mjolnir | author:teslamotors description:Applications suited to creating tiled routing data
+github-teslamotors-amqp | amqp | https://github.com/teslamotors/amqp | author:teslamotors description:Go client for AMQP 0.9.1
+github-teslamotors-odin | odin | https://github.com/teslamotors/odin | author:teslamotors description:Open Directions and Improved Narrative - a directions engine for annotating a path through the graph for use in navigation
+github-teslamotors-quickbase | quickbase | https://github.com/teslamotors/quickbase | author:teslamotors description:Quickbase gem
+github-teslamotors-push-gcm | push-gcm | https://github.com/teslamotors/push-gcm | author:teslamotors description:GCM (Android) part of the modular push daemon
+github-teslamotors-rack-attack | rack-attack | https://github.com/teslamotors/rack-attack | author:teslamotors description:Rack middleware for blocking & throttling
+github-teslamotors-ruby-smpp | ruby-smpp | https://github.com/teslamotors/ruby-smpp | author:teslamotors description:Ruby-implementation of the SMPP protocol, based on EventMachine.
+github-teslamotors-pushr-gcm | pushr-gcm | https://github.com/teslamotors/pushr-gcm | author:teslamotors 
+github-teslamotors-pushr-apns | pushr-apns | https://github.com/teslamotors/pushr-apns | author:teslamotors 
+github-teslamotors-push-core | push-core | https://github.com/teslamotors/push-core | author:teslamotors description:Core of the modular push daemon
+github-teslamotors-push-apns | push-apns | https://github.com/teslamotors/push-apns | author:teslamotors description:APNS (iOS) part of the modular push daemon.
+github-teslamotors-bootstrap | bootstrap | https://github.com/teslamotors/bootstrap | author:teslamotors description:Sleek, intuitive, and powerful front-end framework for faster and easier web development.

@@ -1,4 +1,5 @@
 github-baidu-research-warp-ctc | warp-ctc | https://github.com/baidu-research/warp-ctc | author:baidu-research description:Fast parallel CTC.
 github-baidu-research-persistent-rnn | persistent-rnn | https://github.com/baidu-research/persistent-rnn | author:baidu-research description:Fast Recurrent Networks Library
 github-baidu-research-DeepBench | DeepBench | https://github.com/baidu-research/DeepBench | author:baidu-research description:Benchmarking Deep Learning operations on different hardware
-github-baidu-research-ba-dls-deepspeech | ba-dls-deepspeech | https://github.com/baidu-research/ba-dls-deepspeech | author:baidu-research description:Updated Oct 14, 2016
+github-baidu-research-ba-dls-deepspeech | ba-dls-deepspeech | https://github.com/baidu-research/ba-dls-deepspeech | author:baidu-research 
+github-baidu-research-nervanagpu | nervanagpu | https://github.com/baidu-research/nervanagpu | author:baidu-research description:Nervana GPU library

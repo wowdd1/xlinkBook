@@ -1,71 +1,87 @@
 github-hortonworks-hadoop-tutorials | hadoop-tutorials | https://github.com/hortonworks/hadoop-tutorials | author:hortonworks description:hadoop-tutorials
-github-hortonworks-gohadoop | gohadoop | https://github.com/hortonworks/gohadoop | author:hortonworks description:Updated Jun 18, 2015
+github-hortonworks-gohadoop | gohadoop | https://github.com/hortonworks/gohadoop | author:hortonworks 
 github-hortonworks-simple-yarn-app | simple-yarn-app | https://github.com/hortonworks/simple-yarn-app | author:hortonworks description:Simple YARN application
+github-hortonworks-hive-testbench | hive-testbench | https://github.com/hortonworks/hive-testbench | author:hortonworks description:Testbench for experimenting with Apache Hive at any data scale.
 github-hortonworks-structor | structor | https://github.com/hortonworks/structor | author:hortonworks description:Vagrant files creating multi-node virtual Hadoop clusters with or without security.
+github-hortonworks-kubernetes-yarn | kubernetes-yarn | https://github.com/hortonworks/kubernetes-yarn | author:hortonworks 
 github-hortonworks-hoya | hoya | https://github.com/hortonworks/hoya | author:hortonworks description:Deploys and manages applications within a YARN cluster
-github-hortonworks-kubernetes-yarn | kubernetes-yarn | https://github.com/hortonworks/kubernetes-yarn | author:hortonworks description:Updated Feb 21, 2015
-github-hortonworks-HDP-Public-Utilities | HDP-Public-Utilities | https://github.com/hortonworks/HDP-Public-Utilities | author:hortonworks description:Updated May 31, 2016
+github-hortonworks-HDP-Public-Utilities | HDP-Public-Utilities | https://github.com/hortonworks/HDP-Public-Utilities | author:hortonworks 
 github-hortonworks-tutorials | tutorials | https://github.com/hortonworks/tutorials | author:hortonworks description:Hortonworks tutorials
-github-hortonworks-hadoop-icons | hadoop-icons | https://github.com/hortonworks/hadoop-icons | author:hortonworks description:Updated Sep 5, 2013
+github-hortonworks-hadoop-icons | hadoop-icons | https://github.com/hortonworks/hadoop-icons | author:hortonworks 
 github-hortonworks-spark-native-yarn | spark-native-yarn | https://github.com/hortonworks/spark-native-yarn | author:hortonworks description:Tez port for Spark API
 github-hortonworks-hortonworks-sandbox | hortonworks-sandbox | https://github.com/hortonworks/hortonworks-sandbox | author:hortonworks description:hortonworks-sandbox
 github-hortonworks-hive-json | hive-json | https://github.com/hortonworks/hive-json | author:hortonworks description:A rough prototype of a tool for discovering Apache Hive schemas from JSON documents.
+github-hortonworks-hdp-configuration-utils | hdp-configuration-utils | https://github.com/hortonworks/hdp-configuration-utils | author:hortonworks description:hdp-configuration-utils
 github-hortonworks-mini-dev-cluster | mini-dev-cluster | https://github.com/hortonworks/mini-dev-cluster | author:hortonworks description:Mini YARN/DFS cluster for developing and testing YARN-based applications (e.g., Tez)
-github-hortonworks-docker-socat | docker-socat | https://github.com/hortonworks/docker-socat | author:hortonworks description:Updated Jun 15, 2016
-github-hortonworks-dstream | dstream | https://github.com/hortonworks/dstream | author:hortonworks description:Updated Oct 7, 2015
-github-hortonworks-templeton | templeton | https://github.com/hortonworks/templeton | author:hortonworks description:New Templeton Repository
+github-hortonworks-docker-socat | docker-socat | https://github.com/hortonworks/docker-socat | author:hortonworks 
+github-hortonworks-dstream | dstream | https://github.com/hortonworks/dstream | author:hortonworks 
+github-hortonworks-hadoop-lzo_previous_to_gerrit | hadoop-lzo_previous_to_gerrit | https://github.com/hortonworks/hadoop-lzo_previous_to_gerrit | author:hortonworks description:Backup of hadoop-lzo before gerrit-migration
 github-hortonworks-docker-cloudbreak | docker-cloudbreak | https://github.com/hortonworks/docker-cloudbreak | author:hortonworks description:Docker image for Cloudbreak
+github-hortonworks-templeton | templeton | https://github.com/hortonworks/templeton | author:hortonworks description:New Templeton Repository
 github-hortonworks-hadoop-release | hadoop-release | https://github.com/hortonworks/hadoop-release | author:hortonworks description:Public hadoop release repository
-github-hortonworks-HBaseReplicationBridgeServer | HBaseReplicationBridgeServer | https://github.com/hortonworks/HBaseReplicationBridgeServer | author:hortonworks description:HBase Replication Bridge Server
 github-hortonworks-docker-cloudbreak-uaa | docker-cloudbreak-uaa | https://github.com/hortonworks/docker-cloudbreak-uaa | author:hortonworks description:Docker container to run a UAA identity server
+github-hortonworks-HBaseReplicationBridgeServer | HBaseReplicationBridgeServer | https://github.com/hortonworks/HBaseReplicationBridgeServer | author:hortonworks description:HBase Replication Bridge Server
 github-hortonworks-kafka-release | kafka-release | https://github.com/hortonworks/kafka-release | author:hortonworks description:kafka release repository
+github-hortonworks-hue_previous_to_gerrit | hue_previous_to_gerrit | https://github.com/hortonworks/hue_previous_to_gerrit | author:hortonworks description:Backup of hue before gerrit-migration
+github-hortonworks-spark-native-yarn-samples | spark-native-yarn-samples | https://github.com/hortonworks/spark-native-yarn-samples | author:hortonworks 
 github-hortonworks-hive-release | hive-release | https://github.com/hortonworks/hive-release | author:hortonworks description:Public hive release repository
-github-hortonworks-spark-native-yarn-samples | spark-native-yarn-samples | https://github.com/hortonworks/spark-native-yarn-samples | author:hortonworks description:Updated Nov 26, 2014
+github-hortonworks-docker-cloudbreak-autoscale | docker-cloudbreak-autoscale | https://github.com/hortonworks/docker-cloudbreak-autoscale | author:hortonworks description:Docker image with Periscope
 github-hortonworks-hadoop0 | hadoop0 | https://github.com/hortonworks/hadoop0 | author:hortonworks description:A Docker sandbox with Hadoop 0.0 (aka Nutch 0.8-dev) and word count example.
 github-hortonworks-spark-release | spark-release | https://github.com/hortonworks/spark-release | author:hortonworks description:Public spark release repository
-github-hortonworks-docker-cloudbreak-autoscale | docker-cloudbreak-autoscale | https://github.com/hortonworks/docker-cloudbreak-autoscale | author:hortonworks description:Docker image with Periscope
-github-hortonworks-pso-hdp-local-repo | pso-hdp-local-repo | https://github.com/hortonworks/pso-hdp-local-repo | author:hortonworks description:Scripts used to create a Local Repo for installations.
 github-hortonworks-knox_previous_to_gerrit | knox_previous_to_gerrit | https://github.com/hortonworks/knox_previous_to_gerrit | author:hortonworks description:Backup of knox before gerrit-migration
-github-hortonworks-docker-cloudbreak-shell | docker-cloudbreak-shell | https://github.com/hortonworks/docker-cloudbreak-shell | author:hortonworks description:Updated Oct 19, 2016
-github-hortonworks-ranger-release | ranger-release | https://github.com/hortonworks/ranger-release | author:hortonworks description:Ranger release repository
-github-hortonworks-calcite-release | calcite-release | https://github.com/hortonworks/calcite-release | author:hortonworks description:calcite release repository
-github-hortonworks-hive2-release | hive2-release | https://github.com/hortonworks/hive2-release | author:hortonworks description:Hive2 release repos
+github-hortonworks-docker-cloudbreak-shell | docker-cloudbreak-shell | https://github.com/hortonworks/docker-cloudbreak-shell | author:hortonworks 
+github-hortonworks-Hadoop-and-Swift-integration | Hadoop-and-Swift-integration | https://github.com/hortonworks/Hadoop-and-Swift-integration | author:hortonworks description:API to run Hadoop MapReduce programs over Swift
+github-hortonworks-pso-hdp-local-repo | pso-hdp-local-repo | https://github.com/hortonworks/pso-hdp-local-repo | author:hortonworks description:Scripts used to create a Local Repo for installations.
 github-hortonworks-salt-bootstrap | salt-bootstrap | https://github.com/hortonworks/salt-bootstrap | author:hortonworks description:Tool for bootstrapping VMs launched by Cloudbreak
-github-hortonworks-docker-cloudbreak-autoscale-db | docker-cloudbreak-autoscale-db | https://github.com/hortonworks/docker-cloudbreak-autoscale-db | author:hortonworks description:Updated Jun 15, 2016
-github-hortonworks-docker-cloudbreak-server-db | docker-cloudbreak-server-db | https://github.com/hortonworks/docker-cloudbreak-server-db | author:hortonworks description:Updated Jun 15, 2016
-github-hortonworks-HA-Monitor | HA-Monitor | https://github.com/hortonworks/HA-Monitor | author:hortonworks description:Updated Oct 16, 2013
+github-hortonworks-ranger-release | ranger-release | https://github.com/hortonworks/ranger-release | author:hortonworks description:Ranger release repository
+github-hortonworks-docker-cloudbreak-server-db | docker-cloudbreak-server-db | https://github.com/hortonworks/docker-cloudbreak-server-db | author:hortonworks 
+github-hortonworks-docker-cloudbreak-autoscale-db | docker-cloudbreak-autoscale-db | https://github.com/hortonworks/docker-cloudbreak-autoscale-db | author:hortonworks 
+github-hortonworks-hive-solr | hive-solr | https://github.com/hortonworks/hive-solr | author:hortonworks description:Code to index Hive tables to Solr and Solr indexes to Hive
+github-hortonworks-hbase-indexer | hbase-indexer | https://github.com/hortonworks/hbase-indexer | author:hortonworks description:Lily HBase Indexer - indexing HBase, one row at a time
+github-hortonworks-calcite-release | calcite-release | https://github.com/hortonworks/calcite-release | author:hortonworks description:calcite release repository
+github-hortonworks-HA-Monitor | HA-Monitor | https://github.com/hortonworks/HA-Monitor | author:hortonworks 
+github-hortonworks-spark2-release | spark2-release | https://github.com/hortonworks/spark2-release | author:hortonworks description:spark2 release repos
+github-hortonworks-hive2-release | hive2-release | https://github.com/hortonworks/hive2-release | author:hortonworks description:Hive2 release repos
+github-hortonworks-spark-native-yarn-release | spark-native-yarn-release | https://github.com/hortonworks/spark-native-yarn-release | author:hortonworks description:Public spark-native-yarn release repository
+github-hortonworks-tez_hive2-release | tez_hive2-release | https://github.com/hortonworks/tez_hive2-release | author:hortonworks description:tez_hive2 public repo
 github-hortonworks-spark-llap-release | spark-llap-release | https://github.com/hortonworks/spark-llap-release | author:hortonworks description:spark llap release
-github-hortonworks-tez-release | tez-release | https://github.com/hortonworks/tez-release | author:hortonworks description:Public tez release repository
-github-hortonworks-hbase-release | hbase-release | https://github.com/hortonworks/hbase-release | author:hortonworks description:Public base release repository
-github-hortonworks-knox-release | knox-release | https://github.com/hortonworks/knox-release | author:hortonworks description:Public knox release repository
-github-hortonworks-atlas-release | atlas-release | https://github.com/hortonworks/atlas-release | author:hortonworks description:Public metadata release repository
-github-hortonworks-roles | roles | https://github.com/hortonworks/roles | author:hortonworks description:Puppet roles module
-github-hortonworks-docker-haveged | docker-haveged | https://github.com/hortonworks/docker-haveged | author:hortonworks description:Haveged container to increase entropy
-github-hortonworks-zookeeper-release | zookeeper-release | https://github.com/hortonworks/zookeeper-release | author:hortonworks description:Public zookeeper release repository.
-github-hortonworks-slider-release | slider-release | https://github.com/hortonworks/slider-release | author:hortonworks description:slider release repository
-github-hortonworks-datafu-release | datafu-release | https://github.com/hortonworks/datafu-release | author:hortonworks description:datafu release repository
-github-hortonworks-pig-release | pig-release | https://github.com/hortonworks/pig-release | author:hortonworks description:Public pig release repository
-github-hortonworks-storm-release | storm-release | https://github.com/hortonworks/storm-release | author:hortonworks description:Public storm release repository
-github-hortonworks-oozie-release | oozie-release | https://github.com/hortonworks/oozie-release | author:hortonworks description:Public oozie release repository
-github-hortonworks-sqoop-release | sqoop-release | https://github.com/hortonworks/sqoop-release | author:hortonworks description:Public sqoop release repository
-github-hortonworks-polestar | polestar | https://github.com/hortonworks/polestar | author:hortonworks description:Updated Dec 3, 2015
-github-hortonworks-voyager | voyager | https://github.com/hortonworks/voyager | author:hortonworks description:Updated Dec 3, 2015
-github-hortonworks-ambari-release | ambari-release | https://github.com/hortonworks/ambari-release | author:hortonworks description:Ambari release repository.
-github-hortonworks-docker-cloudbreak-uaa-db | docker-cloudbreak-uaa-db | https://github.com/hortonworks/docker-cloudbreak-uaa-db | author:hortonworks description:Updated Sep 9, 2016
-github-hortonworks-flume-release | flume-release | https://github.com/hortonworks/flume-release | author:hortonworks description:Public flume release repository
-github-hortonworks-falcon-release | falcon-release | https://github.com/hortonworks/falcon-release | author:hortonworks description:Public falcon release repository
-github-hortonworks-hue-release | hue-release | https://github.com/hortonworks/hue-release | author:hortonworks description:Public hue release repository
 github-hortonworks-calcite_hive2-release | calcite_hive2-release | https://github.com/hortonworks/calcite_hive2-release | author:hortonworks description:calcite_hive2 release repos
 github-hortonworks-calcite_avatica-release | calcite_avatica-release | https://github.com/hortonworks/calcite_avatica-release | author:hortonworks description:Calcite_avatica release repo
-github-hortonworks-spark2-release | spark2-release | https://github.com/hortonworks/spark2-release | author:hortonworks description:spark2 release repos
-github-hortonworks-tez_hive2-release | tez_hive2-release | https://github.com/hortonworks/tez_hive2-release | author:hortonworks description:tez_hive2 public repo
-github-hortonworks-DGC-aetna | DGC-aetna | https://github.com/hortonworks/DGC-aetna | author:hortonworks description:Updated Feb 15, 2015
-github-hortonworks-vega-lite-ui | vega-lite-ui | https://github.com/hortonworks/vega-lite-ui | author:hortonworks description:Updated Dec 3, 2015
-github-hortonworks-spark-native-yarn-release | spark-native-yarn-release | https://github.com/hortonworks/spark-native-yarn-release | author:hortonworks description:Public spark-native-yarn release repository
-github-hortonworks-phoenix-release | phoenix-release | https://github.com/hortonworks/phoenix-release | author:hortonworks description:Public phoenix release repository
-github-hortonworks-accumulo-release | accumulo-release | https://github.com/hortonworks/accumulo-release | author:hortonworks description:Public accumulo release repository
+github-hortonworks-slider-release | slider-release | https://github.com/hortonworks/slider-release | author:hortonworks description:slider release repository
+github-hortonworks-pig-release | pig-release | https://github.com/hortonworks/pig-release | author:hortonworks description:Public pig release repository
+github-hortonworks-knox-release | knox-release | https://github.com/hortonworks/knox-release | author:hortonworks description:Public knox release repository
+github-hortonworks-oozie-release | oozie-release | https://github.com/hortonworks/oozie-release | author:hortonworks description:Public oozie release repository
+github-hortonworks-hbase-release | hbase-release | https://github.com/hortonworks/hbase-release | author:hortonworks description:Public base release repository
+github-hortonworks-datafu-release | datafu-release | https://github.com/hortonworks/datafu-release | author:hortonworks description:datafu release repository
+github-hortonworks-atlas-release | atlas-release | https://github.com/hortonworks/atlas-release | author:hortonworks description:Public metadata release repository
+github-hortonworks-falcon-release | falcon-release | https://github.com/hortonworks/falcon-release | author:hortonworks description:Public falcon release repository
+github-hortonworks-zookeeper-release | zookeeper-release | https://github.com/hortonworks/zookeeper-release | author:hortonworks description:Public zookeeper release repository.
 github-hortonworks-mahout-release | mahout-release | https://github.com/hortonworks/mahout-release | author:hortonworks description:Public mahout release repository
-github-hortonworks-puppet-sudo | puppet-sudo | https://github.com/hortonworks/puppet-sudo | author:hortonworks description:Fork of saz/sudo because we have to have custom stuff in /etc/sudoers
+github-hortonworks-ambari-perf | ambari-perf | https://github.com/hortonworks/ambari-perf | author:hortonworks description:Mirror of Apache Ambari
+github-hortonworks-spark-solr | spark-solr | https://github.com/hortonworks/spark-solr | author:hortonworks description:Tools for reading data from Solr as a Spark RDD and indexing objects from Spark into Solr using SolrJ.
+github-hortonworks-docker-haveged | docker-haveged | https://github.com/hortonworks/docker-haveged | author:hortonworks description:Haveged container to increase entropy
+github-hortonworks-storm-solr | storm-solr | https://github.com/hortonworks/storm-solr | author:hortonworks description:Storm / Solr Integration
+github-hortonworks-hadoop-solr | hadoop-solr | https://github.com/hortonworks/hadoop-solr | author:hortonworks description:Code to index HDFS to Solr using MapReduce
+github-hortonworks-banana | banana | https://github.com/hortonworks/banana | author:hortonworks description:Banana for Solr - A Port of Kibana
+github-hortonworks-ambari-release | ambari-release | https://github.com/hortonworks/ambari-release | author:hortonworks description:Ambari release repository.
+github-hortonworks-solr-stack | solr-stack | https://github.com/hortonworks/solr-stack | author:hortonworks description:Ambari stack service for easily installing and managing Solr on HDP cluster
+github-hortonworks-docker-cloudbreak-uaa-db | docker-cloudbreak-uaa-db | https://github.com/hortonworks/docker-cloudbreak-uaa-db | author:hortonworks 
+github-hortonworks-pig-solr | pig-solr | https://github.com/hortonworks/pig-solr | author:hortonworks description:Code for using Pig scripts to index content to Solr
 github-hortonworks-profiles | profiles | https://github.com/hortonworks/profiles | author:hortonworks description:Puppet profiles module
+github-hortonworks-roles | roles | https://github.com/hortonworks/roles | author:hortonworks description:Puppet roles module
+github-hortonworks-puppet-sudo | puppet-sudo | https://github.com/hortonworks/puppet-sudo | author:hortonworks description:Fork of saz/sudo because we have to have custom stuff in /etc/sudoers
+github-hortonworks-DGC-aetna | DGC-aetna | https://github.com/hortonworks/DGC-aetna | author:hortonworks 
+github-hortonworks-hue-release | hue-release | https://github.com/hortonworks/hue-release | author:hortonworks description:Public hue release repository
+github-hortonworks-titan | titan | https://github.com/hortonworks/titan | author:hortonworks description:Distributed Graph Database
 github-hortonworks-puppet-zabbix | puppet-zabbix | https://github.com/hortonworks/puppet-zabbix | author:hortonworks description:Zabbix Puppet Module
+github-hortonworks-voyager | voyager | https://github.com/hortonworks/voyager | author:hortonworks 
+github-hortonworks-polestar | polestar | https://github.com/hortonworks/polestar | author:hortonworks 
+github-hortonworks-vega-lite-ui | vega-lite-ui | https://github.com/hortonworks/vega-lite-ui | author:hortonworks 
+github-hortonworks-zeppelin-release | zeppelin-release | https://github.com/hortonworks/zeppelin-release | author:hortonworks description:zeppelin public release repository
+github-hortonworks-flume-release | flume-release | https://github.com/hortonworks/flume-release | author:hortonworks description:Public flume release repository
+github-hortonworks-phoenix-release | phoenix-release | https://github.com/hortonworks/phoenix-release | author:hortonworks description:Public phoenix release repository
+github-hortonworks-storm-release | storm-release | https://github.com/hortonworks/storm-release | author:hortonworks description:Public storm release repository
+github-hortonworks-accumulo-release | accumulo-release | https://github.com/hortonworks/accumulo-release | author:hortonworks description:Public accumulo release repository
+github-hortonworks-tez-release | tez-release | https://github.com/hortonworks/tez-release | author:hortonworks description:Public tez release repository
+github-hortonworks-sqoop-release | sqoop-release | https://github.com/hortonworks/sqoop-release | author:hortonworks description:Public sqoop release repository
 github-hortonworks-toolchain | toolchain | https://github.com/hortonworks/toolchain | author:hortonworks description:Ansible

@@ -1,0 +1,10 @@
+github-hike-swagger-codegen | swagger-codegen | https://github.com/hike/swagger-codegen | author:hike description:swagger-codegen contains a template-driven engine to generate client code in different languages by parsing your Swagger Resource Declaration.
+github-hike-semver-resource | semver-resource | https://github.com/hike/semver-resource | author:hike description:automated semantic version bumping
+github-hike-java-wns | java-wns | https://github.com/hike/java-wns | author:hike description:Java Service Provider to send push notifications to Windows 8 devices through WNS
+github-hike-cesi | cesi | https://github.com/hike/cesi | author:hike description:cesi is a web interface provides manage supervisors from same interface.
+github-hike-zk-web | zk-web | https://github.com/hike/zk-web | author:hike description:A web UI for zookeeper
+github-hike-pushy | pushy | https://github.com/hike/pushy | author:hike description:A Java library for sending APNs (iOS/OS X) push notifications
+github-hike-python-exiftool | python-exiftool | https://github.com/hike/python-exiftool | author:hike description:exiftool - Read and write meta information in files
+github-hike-gcm | gcm | https://github.com/hike/gcm | author:hike description:Automatically exported from code.google.com/p/gcm
+github-hike-python-hasher | python-hasher | https://github.com/hike/python-hasher | author:hike description:Murmur hash python library
+github-hike-java-mpns | java-mpns | https://github.com/hike/java-mpns | author:hike description:Java Library for the Microsoft Push Notification service
