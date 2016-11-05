@@ -168,8 +168,19 @@ def handleExec():
 
 @app.route('/queryUrl', methods=['POST'])
 def handleQueryUrl():
-    urls = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
-    result = ' '.join(urls)
+    result = ''
+    if request.form.has_key('type'):
+        resultDict = utils.clientQueryEnginUrl2(request.form['searchText'])
+        
+        count = 0
+        for k, v in resultDict.items():
+            count += 1
+            result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966 ; font-size: 10pt;", module='dialog', library=request.form['fileName']) + '&nbsp;'
+            if count % 5 == 0 and count > 0:
+                result += '<br>'
+    else:
+        urls = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
+        result = ' '.join(urls)
     print 'handleQueryUrl: ' + result
     return result
 

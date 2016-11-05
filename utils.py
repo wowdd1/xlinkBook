@@ -688,6 +688,23 @@ class Utils:
                     urls.append(self.toQueryUrl(self.getEnginUrl(u), text))  
         return urls
 
+    star_engin_cache = None
+    def clientQueryEnginUrl2(self, text):
+        result = {}
+        engins = []
+        if len(Config.smart_engin_for_dialog) > 0:
+            engins = Config.smart_engin_for_dialog
+        elif self.star_engin_cache != None:
+            engins = self.star_engin_cache
+        else:
+            engins = self.getEnginList('d:star')
+            self.star_engin_cache = engins;
+
+        for engin in engins:
+            result[engin] = self.toQueryUrl(self.getEnginUrl(engin), text)
+
+        return result
+
     def toQueryUrl(self, url, text):
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
         if url == '':
@@ -700,7 +717,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False):
         url = url.strip()
         user_log_js = ''
         query_url_js = ''
@@ -769,24 +786,30 @@ class Utils:
                         open_js += "window.location.href = '" + link + "';"
                     break
         #open_js = ''
-        result = '<a target="_blank" href="javascript:void(0);"'
-
-        if aid != '':
-            result += ' id=' + id
-
-        if script != '':
-            script = script.replace('"', "'")
-            if useQuote:
-                script = script.replace("'", '#quote')
-            result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
+ 
+        result = ''
+        
+        if dialogMode:
+            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="top" data-trigger="hover" >'
         else:
-            result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
+            result = '<a target="_blank" href="javascript:void(0);"'
+
+            if aid != '':
+                result += ' id=' + id 
+
+            if script != '':
+                script = script.replace('"', "'")
+                if useQuote:
+                    script = script.replace("'", '#quote')
+                result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
+            else:
+                result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
 
 
-        if style != '':
-            result += ' style="' + style + '"'
+            if style != '':
+                result += ' style="' + style + '"'
 
-        result += '>' 
+            result += '>' 
 
         if img != '':
             result += img + '</a>'
@@ -868,7 +891,7 @@ class Utils:
     def getLastEnginType(self):
         return self.search_engin_type[len(self.search_engin_type) - 1]
 
-    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True):
+    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True, url=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
         div = '<div id="' + content_divID + '"></div>';
         html = ''
@@ -882,7 +905,14 @@ class Utils:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '"><font color="#999966">' + text + '</font></a></font>'
             else:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + '><font color="#999966">' + text + '</font></a></font>'
-        return html + div
+        if url != '':
+            url = url.replace('http://', '').replace('https://', '')
+            if len(url) > Config.smart_link_br_len:
+                url = url[0 : Config.smart_link_br_len - 3] + '..'
+
+            return html + '<br><font size="1" style="color:#547BBE;">' + url + '</font>'+ div
+        else:
+            return html + div
 
     def genMoreEnginScript(sefl, linkID, content_divID, id, title, url, info, hidenEnginSection=False):
         script = ''

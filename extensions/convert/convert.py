@@ -9,6 +9,7 @@ from record import Record
 
 class Convert(BaseExtension):
 
+    form_dict = None
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
@@ -16,6 +17,7 @@ class Convert(BaseExtension):
 
     def excute(self, form_dict):
         print 'excute'
+        self.form_dict = form_dict
         url = form_dict['url'].encode('utf8')
         if url == '':
             url = self.utils.bestMatchEnginUrl(form_dict['rTitle'].encode('utf8'))
@@ -88,6 +90,7 @@ class Convert(BaseExtension):
             html = '<div class="ref"><ol>'
             start = True
         count = 0
+        records = []
         for line in data.split('\n'):
             
             r = Record(line)
@@ -99,13 +102,16 @@ class Convert(BaseExtension):
             if link != '' and link.startswith('http') == False:
                 link = url_prefix + link
 
+
+            self.count += 1
+            count += 1
+            records.append(Record('convert-' + str(count) + ' | ' + title + ' | ' + link + ' | '))
             if link != '':
                 title = '<a href="' + link + '" target="_blank">' + title + "</a>"
             else:
                 title = self.utils.toSmartLink(title)
 
-            self.count += 1
-            count += 1
+
             if Config.convert_split_column_number > 0 and (self.count== 1 or self.count > Config.convert_split_column_number):
                 if start:
                     html += '</ol></div>'
@@ -121,7 +127,7 @@ class Convert(BaseExtension):
             ref_divID = divID + '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r.get_title().strip(), link, '-')
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r.get_title().strip(), link, '-', hidenEnginSection=Config.convert_hiden_engin_section)
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
 
             #html += '<br>'
@@ -130,7 +136,10 @@ class Convert(BaseExtension):
         if start:
             html += '</ol></div>'
         #html += "</ol></div>"
-        return html
+        if Config.convert_output_data_to_new_tab:
+            return self.utils.output2Disk(records, 'convert', self.form_dict['rTitle'], Config.convert_output_data_format)
+        else:
+            return html
 
     def check(self, form_dict):
         url = form_dict['url'].encode('utf8')

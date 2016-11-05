@@ -2,6 +2,47 @@ var args = [];
 var search_box;
 var global_selection = '';
 
+$(function() {  
+    
+    $("[data-toggle='popover']").popover({  
+        html : true,    
+        title: title(),    
+        delay:{show:500, hide:1000},  
+        content: function() {  
+          return content(this.textContent);    
+        }   
+    });  
+}); 
+
+ 
+function title() {  
+    return $("[data-toggle='popover']").text;  
+}  
+  
+//模拟动态加载内容(真实情况可能会跟后台进行ajax交互)  
+function content(text) {  
+    var content_id = "content-id-" + $.now();
+
+    args = {type : 'dialog', searchText: text, fileName : fileName};
+    $.post('/queryUrl', args, function(data) {
+        $('#' + content_id).html(data);
+    });
+
+    result = '<div id="' + content_id + '">'
+    for (var i = 0; i < dialog_engin_count - 1; i++) {
+        result += 'nbsp;';
+        if (i % 5 == 0 && i > 0) {
+           result += 'nbsp;<br>' ;
+        }
+    }
+    
+    result += 'Loading...</div>';
+    console.log('',result);
+    return result;
+}  
+
+
+
 $(document).ready(function(){
 	
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -225,7 +266,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
         console.log('zzz', extensions[i]);
         if (extensions[i] == obj.text) { 
             extension = true;
-            requestExtension(postArgs);
+            requestExtension(postArgs, true);
         }
     }
     if (!extension && postArgs['rID'] != '') {
@@ -240,16 +281,19 @@ function navTopic(obj, divID, parentDivID, countIndex){
     }
 }
 
-function requestExtension(postArgs) {
+function requestExtension(postArgs, tipInfo) {
     console.log('', 'requestExtension ' + postArgs['targetDataId']);
     var target_data_id = postArgs['targetDataId'];
     var obj = document.getElementById(postArgs['objID']);
-    $("#" + target_data_id).html("<br>Loading ...");
-    var i = 0;
-    var loadAnimID = setInterval(function() {
-        i = ++i % 4;
-        $("#" + target_data_id).html("<br>Loading " + Array(i+1).join("."));
-    }, 800);
+    if (tipInfo) {
+        $("#" + target_data_id).html("<br>Loading ...");
+        var i = 0;
+        var loadAnimID = setInterval(function() {
+            i = ++i % 4;
+            $("#" + target_data_id).html("<br>Loading " + Array(i+1).join("."));
+        }, 800);
+    }
+
 
     $('#' + target_data_id).load('/extensions', postArgs, function(data) {
         console.log('return', data);
@@ -268,7 +312,10 @@ function requestExtension(postArgs) {
             console.log('execCommand', url);
             $.post('/exec', {command : 'edit', text : url, fileName :  url }, function(data){});
         }
-        clearInterval(loadAnimID);
+        if (tipInfo) {
+            clearInterval(loadAnimID);
+        }
+        
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, postArgs['targetid']]);
     });
 }
@@ -317,6 +364,23 @@ function share(website, url, title) {
    }
 }
 
+function genExtensionHtml(targetid, topic, otherInfo, rID) {
+    var extensionHtml= extension_array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
+    return extensionHtml
+
+}
+
+function genEnginHtml(targetid, topic, otherInfo, rID) {
+    if (array != '') {
+        var enginHtml = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, rID);
+        return enginHtml
+    } else {
+        return '';
+    }
+
+
+}
+
 function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     var target=document.getElementById(targetid);
     if (target.innerHTML.indexOf(topic) > 0) {
@@ -340,7 +404,7 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     if (hidenEngin) {
         target.innerHTML = extensionHtml;
     } else {
-        var enginHtml = array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
+        var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
         target.innerHTML = enginHtml + extensionHtml
     }
     
