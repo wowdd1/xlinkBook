@@ -1,15 +1,16 @@
 github-deepmind-rc-data | rc-data | https://github.com/deepmind/rc-data | author:deepmind description:Question answering dataset featured in "Teaching Machines to Read and Comprehend
 github-deepmind-torch-hdf5 | torch-hdf5 | https://github.com/deepmind/torch-hdf5 | author:deepmind description:Torch interface to HDF5 library
-github-deepmind-xitari | xitari | https://github.com/deepmind/xitari | author:deepmind description:Updated Jun 10, 2016
+github-deepmind-xitari | xitari | https://github.com/deepmind/xitari | author:deepmind 
 github-deepmind-classic | classic | https://github.com/deepmind/classic | author:deepmind description:A class system for Lua.
-github-deepmind-torch-distributions | torch-distributions | https://github.com/deepmind/torch-distributions | author:deepmind description:Updated Apr 8, 2016
+github-deepmind-torch-distributions | torch-distributions | https://github.com/deepmind/torch-distributions | author:deepmind 
 github-deepmind-torch-cephes | torch-cephes | https://github.com/deepmind/torch-cephes | author:deepmind description:Cephes Mathematical Functions library wrapped for Torch
-github-deepmind-alewrap | alewrap | https://github.com/deepmind/alewrap | author:deepmind description:Updated Jun 18, 2016
-github-deepmind-mnist-cluttered | mnist-cluttered | https://github.com/deepmind/mnist-cluttered | author:deepmind description:Updated Mar 27, 2015
+github-deepmind-alewrap | alewrap | https://github.com/deepmind/alewrap | author:deepmind 
+github-deepmind-mnist-cluttered | mnist-cluttered | https://github.com/deepmind/mnist-cluttered | author:deepmind 
+github-deepmind-torch-randomkit | torch-randomkit | https://github.com/deepmind/torch-randomkit | author:deepmind 
 github-deepmind-torch-totem | torch-totem | https://github.com/deepmind/torch-totem | author:deepmind description:Torch test module
-github-deepmind-torch-randomkit | torch-randomkit | https://github.com/deepmind/torch-randomkit | author:deepmind description:Updated Jul 11, 2016
 github-deepmind-torch-dokx | torch-dokx | https://github.com/deepmind/torch-dokx | author:deepmind description:Scripts to help with Torch package documentation
 github-deepmind-plplot-ffi | plplot-ffi | https://github.com/deepmind/plplot-ffi | author:deepmind description:LuaJIT wrapper for PLplot
 github-deepmind-strict | strict | https://github.com/deepmind/strict | author:deepmind description:A Lua package to detect reading of undeclared variables and creating of global variables.
+github-deepmind-lua-pprint | lua-pprint | https://github.com/deepmind/lua-pprint | author:deepmind description:A pretty print library for torch and lua.
 github-deepmind-torch-oocairo | torch-oocairo | https://github.com/deepmind/torch-oocairo | author:deepmind description:Cairo lua bindings with extensions for torch
 github-deepmind-luastyle | luastyle | https://github.com/deepmind/luastyle | author:deepmind description:Style guide for Lua code.

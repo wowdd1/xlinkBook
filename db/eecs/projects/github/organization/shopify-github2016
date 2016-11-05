@@ -16,144 +16,339 @@ github-shopify-shopify_api | shopify_api | https://github.com/Shopify/shopify_ap
 github-shopify-statsd-instrument | statsd-instrument | https://github.com/Shopify/statsd-instrument | author:shopify description:A StatsD client for Ruby apps. Provides metaprogramming methods to inject StatsD instrumentation into your code.
 github-shopify-semian | semian | https://github.com/Shopify/semian | author:shopify description:🐒 Resiliency toolkit for Ruby for failing fast
 github-shopify-turbograft | turbograft | https://github.com/Shopify/turbograft | author:shopify description:Hard fork of turbolinks, adding partial page replacement strategies, and utilities.
-github-shopify-shopify_python_api | shopify_python_api | https://github.com/Shopify/shopify_python_api | author:shopify description:ShopifyAPI library allows Python developers to programmatically access the admin section of stores
 github-shopify-graphql-batch | graphql-batch | https://github.com/Shopify/graphql-batch | author:shopify description:A query batching executor for the graphql gem
+github-shopify-shopify_python_api | shopify_python_api | https://github.com/Shopify/shopify_python_api | author:shopify description:ShopifyAPI library allows Python developers to programmatically access the admin section of stores
 github-shopify-js-buy-sdk | js-buy-sdk | https://github.com/Shopify/js-buy-sdk | author:shopify description:The JS Buy SDK is a lightweight library that allows you to build ecommerce into any website. It is based on Shopify's API and provides the ability to retrieve products and collections from your shop, add products to a cart, and checkout.
 github-shopify-shopify.github.com | shopify.github.com | https://github.com/Shopify/shopify.github.com | author:shopify description:A collection of the open source projects by Shopify
 github-shopify-themekit | themekit | https://github.com/Shopify/themekit | author:shopify description:Theme asset interaction library and management tools written in Go
 github-shopify-active_fulfillment | active_fulfillment | https://github.com/Shopify/active_fulfillment | author:shopify description:Active Merchant library for integration with order fulfillment services
 github-shopify-shopify_django_app | shopify_django_app | https://github.com/Shopify/shopify_django_app | author:shopify description:Get a Shopify app up and running with Django and Python Shopify API
-github-shopify-embedded-app-example | embedded-app-example | https://github.com/Shopify/embedded-app-example | author:shopify description:A public example app implementing the Shopify Embedded App SDK
 github-shopify-mobile-buy-sdk-ios | mobile-buy-sdk-ios | https://github.com/Shopify/mobile-buy-sdk-ios | author:shopify description:Shopify’s Mobile Buy SDK makes it simple to sell physical products inside your mobile app. With a few lines of code, you can connect your app with the Shopify platform and let your users buy your products using Apple Pay or their credit card.
+github-shopify-embedded-app-example | embedded-app-example | https://github.com/Shopify/embedded-app-example | author:shopify description:A public example app implementing the Shopify Embedded App SDK
+github-shopify-sprockets-commoner | sprockets-commoner | https://github.com/Shopify/sprockets-commoner | author:shopify description:Use Babel in Sprockets to compile JavaScript modules for the browser
 github-shopify-vision | vision | https://github.com/Shopify/vision | author:shopify description:The vision toolkit ( Shopify in a box -- for template designers )
 github-shopify-verdict | verdict | https://github.com/Shopify/verdict | author:shopify description:Framework to define and implement A/B tests in your application, and collect data for analysis purposes.
 github-shopify-wolverine | wolverine | https://github.com/Shopify/wolverine | author:shopify description:Scripting redis with lua made even easier
-github-shopify-sprockets-commoner | sprockets-commoner | https://github.com/Shopify/sprockets-commoner | author:shopify description:Use Babel in Sprockets to compile JavaScript modules for the browser
 github-shopify-twine | twine | https://github.com/Shopify/twine | author:shopify description:Twine is a minimalistic two-way binding system
 github-shopify-javascript | javascript | https://github.com/Shopify/javascript | author:shopify description:The home for all things JavaScript at Shopify.
 github-shopify-shopify-css-import | shopify-css-import | https://github.com/Shopify/shopify-css-import | author:shopify description:Add CSS import functionality to Shopify theme development with Grunt.js or Gulp.js
 github-shopify-minesweeper | minesweeper | https://github.com/Shopify/minesweeper | author:shopify description:Scans websites; detects bombs
+github-shopify-cacheable | cacheable | https://github.com/Shopify/cacheable | author:shopify description:Page caching extension of Shopify
 github-shopify-liquid-tmbundle | liquid-tmbundle | https://github.com/Shopify/liquid-tmbundle | author:shopify description:Liquid Templates Textmate Bundle
 github-shopify-browser_sniffer | browser_sniffer | https://github.com/Shopify/browser_sniffer | author:shopify description:Properly detect what browser you are dealing with
 github-shopify-BUYPaymentButton | BUYPaymentButton | https://github.com/Shopify/BUYPaymentButton | author:shopify description:BUYPaymentButton is a vector-based Apple Pay button for all iOS 8 versions
 github-shopify-scripts-public | scripts-public | https://github.com/Shopify/scripts-public | author:shopify description:Shopify Scripts Examples
-github-shopify-omniauth-shopify-oauth2 | omniauth-shopify-oauth2 | https://github.com/Shopify/omniauth-shopify-oauth2 | author:shopify description:Shopify OAuth2 Strategy for OmniAuth 1.0
 github-shopify-active_utils | active_utils | https://github.com/Shopify/active_utils | author:shopify description:Active Utils extracts commonly used modules and classes used by Active Merchant, Active Shipping, and Active Fulfillment
-github-shopify-toxiproxy-ruby | toxiproxy-ruby | https://github.com/Shopify/toxiproxy-ruby | author:shopify description:A ruby api for Toxiproxy that can be used for resiliency testing.
+github-shopify-omniauth-shopify-oauth2 | omniauth-shopify-oauth2 | https://github.com/Shopify/omniauth-shopify-oauth2 | author:shopify description:Shopify OAuth2 Strategy for OmniAuth 1.0
 github-shopify-shipping-fulfillment-app | shipping-fulfillment-app | https://github.com/Shopify/shipping-fulfillment-app | author:shopify description:Sample app (not currently running)
+github-shopify-toxiproxy-ruby | toxiproxy-ruby | https://github.com/Shopify/toxiproxy-ruby | author:shopify description:A ruby api for Toxiproxy that can be used for resiliency testing.
 github-shopify-sysv_mq | sysv_mq | https://github.com/Shopify/sysv_mq | author:shopify description:a Go wrapper for SysV Message Queues
-github-shopify-money | money | https://github.com/Shopify/money | author:shopify description:Manage money in Shopify with a class that won't lose pennies during division
+github-shopify-Shopify-Developer-Book | Shopify-Developer-Book | https://github.com/Shopify/Shopify-Developer-Book | author:shopify description:An ebook containing Shopify tips
 github-shopify-mobile-buy-sdk-android | mobile-buy-sdk-android | https://github.com/Shopify/mobile-buy-sdk-android | author:shopify description:Shopify’s Mobile Buy SDK makes it simple to sell physical products inside your mobile app. With a few lines of code, you can connect your app with the Shopify platform and let your users buy your products using their credit card.
+github-shopify-money | money | https://github.com/Shopify/money | author:shopify description:Manage money in Shopify with a class that won't lose pennies during division
 github-shopify-brigade | brigade | https://github.com/Shopify/brigade | author:shopify description:Parallel S3 bucket-bucket differential sync in Go
 github-shopify-measured | measured | https://github.com/Shopify/measured | author:shopify description:Encapsulate measurements and their units in Ruby.
 github-shopify-rails_parallel | rails_parallel | https://github.com/Shopify/rails_parallel | author:shopify description:Makes your Rails tests scale with the number of CPU cores available
 github-shopify-fleek | fleek | https://github.com/Shopify/fleek | author:shopify description:Keep your styles hot 💅
 github-shopify-liquid-c | liquid-c | https://github.com/Shopify/liquid-c | author:shopify description:Liquid performance extension in C.
-github-shopify-hosted-payment-sim | hosted-payment-sim | https://github.com/Shopify/hosted-payment-sim | author:shopify description:Updated Oct 14, 2016
+github-shopify-hosted-payment-sim | hosted-payment-sim | https://github.com/Shopify/hosted-payment-sim | author:shopify 
 github-shopify-goluago | goluago | https://github.com/Shopify/goluago | author:shopify description:Lua wrappers for the Go standard library
 github-shopify-dukpt | dukpt | https://github.com/Shopify/dukpt | author:shopify description:Implements a decrypter for ciphertext originating from a device using a Derived Unique Key Per Transaction (DUKPT) scheme
-github-shopify-graphql-parser | graphql-parser | https://github.com/Shopify/graphql-parser | author:shopify description:Updated Apr 30, 2016
+github-shopify-graphql-parser | graphql-parser | https://github.com/Shopify/graphql-parser | author:shopify 
 github-shopify-connect-googleapps | connect-googleapps | https://github.com/Shopify/connect-googleapps | author:shopify description:Google Apps OpenID auth middleware for Connect / Node.js
 github-shopify-goreferrer | goreferrer | https://github.com/Shopify/goreferrer | author:shopify description:Analyzes and classifies different kinds of referrer URLs
-github-shopify-ssllabs.rb | ssllabs.rb | https://github.com/Shopify/ssllabs.rb | author:shopify description:Updated Oct 5, 2016
+github-shopify-ssllabs.rb | ssllabs.rb | https://github.com/Shopify/ssllabs.rb | author:shopify 
+github-shopify-record_store | record_store | https://github.com/Shopify/record_store | author:shopify description:Manage DNS through a git-based workflow
 github-shopify-memcached_store | memcached_store | https://github.com/Shopify/memcached_store | author:shopify description:ActiveSupport MemcachedStore
+github-shopify-schmooze | schmooze | https://github.com/Shopify/schmooze | author:shopify description:Schmooze lets Ruby and Node.js work together intimately.
 github-shopify-asset_cloud | asset_cloud | https://github.com/Shopify/asset_cloud | author:shopify description:An abstraction layer around arbitrary and diverse asset stores
 github-shopify-magnet | magnet | https://github.com/Shopify/magnet | author:shopify description:Magnetic Track Data parsing library
-github-shopify-schmooze | schmooze | https://github.com/Shopify/schmooze | author:shopify description:Schmooze lets Ruby and Node.js work together intimately.
 github-shopify-activerecord-rescue_from_duplicate | activerecord-rescue_from_duplicate | https://github.com/Shopify/activerecord-rescue_from_duplicate | author:shopify description:Ruby gem to rescue from MySQL, PostgreSQL and Sqlite duplicate errors
-github-shopify-record_store | record_store | https://github.com/Shopify/record_store | author:shopify description:Manage DNS through a git-based workflow
 github-shopify-measured-rails | measured-rails | https://github.com/Shopify/measured-rails | author:shopify description:Rails adapter for the measured gem. Encapsulate measurements and their units in Ruby and Rails.
 github-shopify-rorybot | rorybot | https://github.com/Shopify/rorybot | author:shopify description:Catch writing that doesn't follow style guide rules.
+github-shopify-delayed_job | delayed_job | https://github.com/Shopify/delayed_job | author:shopify description:Database based asynchronously priority queue system -- Extracted from Shopify
 github-shopify-buy-button-wordpress | buy-button-wordpress | https://github.com/Shopify/buy-button-wordpress | author:shopify description:WordPress plugin for the Buy Button
 github-shopify-splunk-auth-proxy | splunk-auth-proxy | https://github.com/Shopify/splunk-auth-proxy | author:shopify description:Splunk SSO proxy for Google Apps authentication
-github-shopify-pyactiveresource | pyactiveresource | https://github.com/Shopify/pyactiveresource | author:shopify description:Updated May 30, 2016
+github-shopify-pyactiveresource | pyactiveresource | https://github.com/Shopify/pyactiveresource | author:shopify 
 github-shopify-sv-rollout | sv-rollout | https://github.com/Shopify/sv-rollout | author:shopify description:A utility for coordinating service rollouts
-github-shopify-shopify_cli | shopify_cli | https://github.com/Shopify/shopify_cli | author:shopify description:Updated Jun 18, 2015
-github-shopify-giffy | giffy | https://github.com/Shopify/giffy | author:shopify description:Updated Jul 4, 2014
-github-shopify-shopify-fulfillment-integration | shopify-fulfillment-integration | https://github.com/Shopify/shopify-fulfillment-integration | author:shopify description:Example Fulfillment Service Integration with Shopify
-github-shopify-mruby-engine | mruby-engine | https://github.com/Shopify/mruby-engine | author:shopify description:MRuby engine is a sandboxed scripting engine.
-github-shopify-theme-sync | theme-sync | https://github.com/Shopify/theme-sync | author:shopify description:Updated Aug 2, 2015
-github-shopify-retext-shopify | retext-shopify | https://github.com/Shopify/retext-shopify | author:shopify description:Warn about Shopify style guide violations with Retext.
-github-shopify-param_sanitizer | param_sanitizer | https://github.com/Shopify/param_sanitizer | author:shopify description:Updated May 27, 2015
-github-shopify-alchemy-linux-public | alchemy-linux-public | https://github.com/Shopify/alchemy-linux-public | author:shopify description:Updated Jan 25, 2015
-github-shopify-quantified | quantified | https://github.com/Shopify/quantified | author:shopify description:Pretty quantifiable measurements which feel like ActiveSupport::Duration
+github-shopify-shopify_cli | shopify_cli | https://github.com/Shopify/shopify_cli | author:shopify 
+github-shopify-giffy | giffy | https://github.com/Shopify/giffy | author:shopify 
 github-shopify-buildkit | buildkit | https://github.com/Shopify/buildkit | author:shopify description:API wrapper for buildkite https://buildkite.com/docs/api/
+github-shopify-shopify-fulfillment-integration | shopify-fulfillment-integration | https://github.com/Shopify/shopify-fulfillment-integration | author:shopify description:Example Fulfillment Service Integration with Shopify
+github-shopify-retext-shopify | retext-shopify | https://github.com/Shopify/retext-shopify | author:shopify description:Warn about Shopify style guide violations with Retext.
+github-shopify-mruby-engine | mruby-engine | https://github.com/Shopify/mruby-engine | author:shopify description:MRuby engine is a sandboxed scripting engine.
 github-shopify-ecfg | ecfg | https://github.com/Shopify/ecfg | author:shopify description:Upcoming replacement for github.com/Shopify/ejson
+github-shopify-theme-sync | theme-sync | https://github.com/Shopify/theme-sync | author:shopify 
+github-shopify-alchemy-linux-public | alchemy-linux-public | https://github.com/Shopify/alchemy-linux-public | author:shopify 
+github-shopify-param_sanitizer | param_sanitizer | https://github.com/Shopify/param_sanitizer | author:shopify 
+github-shopify-quantified | quantified | https://github.com/Shopify/quantified | author:shopify description:Pretty quantifiable measurements which feel like ActiveSupport::Duration
+github-shopify-rails-bigint-pk | rails-bigint-pk | https://github.com/Shopify/rails-bigint-pk | author:shopify description:Transparently use 64bit primary keys in rails.
 github-shopify-google_apps | google_apps | https://github.com/Shopify/google_apps | author:shopify description:Protect http endpoints with google_apps
+github-shopify-forage | forage | https://github.com/Shopify/forage | author:shopify description:Never be lost again.
 github-shopify-example-ruby-app | example-ruby-app | https://github.com/Shopify/example-ruby-app | author:shopify description:Example application written in Ruby for API documentation.
-github-shopify-linecook-gem | linecook-gem | https://github.com/Shopify/linecook-gem | author:shopify description:Build portable Linux system images.
-github-shopify-multirow_counter | multirow_counter | https://github.com/Shopify/multirow_counter | author:shopify description:Updated Jun 23, 2014
-github-shopify-capistrano-ejson | capistrano-ejson | https://github.com/Shopify/capistrano-ejson | author:shopify description:Updated Aug 4, 2016
-github-shopify-pos-app-sdk-example | pos-app-sdk-example | https://github.com/Shopify/pos-app-sdk-example | author:shopify description:Sample embedded app for Shopify POS for the iPad https://docs.shopify.com/api/sdks/shopify-pos-app-sdk
+github-shopify-shopify-snap | shopify-snap | https://github.com/Shopify/shopify-snap | author:shopify description:Website screenshot service powered by node.js and phantomjs
 github-shopify-lua-tests | lua-tests | https://github.com/Shopify/lua-tests | author:shopify description:A versioned copy of Lua tests
+github-shopify-multirow_counter | multirow_counter | https://github.com/Shopify/multirow_counter | author:shopify 
+github-shopify-pos-app-sdk-example | pos-app-sdk-example | https://github.com/Shopify/pos-app-sdk-example | author:shopify description:Sample embedded app for Shopify POS for the iPad https://docs.shopify.com/api/sdks/shopify-pos-app-sdk
+github-shopify-linecook-gem | linecook-gem | https://github.com/Shopify/linecook-gem | author:shopify description:Build portable Linux system images.
+github-shopify-decaf | decaf | https://github.com/Shopify/decaf | author:shopify description:Coffeescript to ES.next transpiler
+github-shopify-capistrano-ejson | capistrano-ejson | https://github.com/Shopify/capistrano-ejson | author:shopify 
 github-shopify-grizzly_ber | grizzly_ber | https://github.com/Shopify/grizzly_ber | author:shopify description:GrizzlyBer, the fiercest TLV-BER parser!
-github-shopify-dynect_email | dynect_email | https://github.com/Shopify/dynect_email | author:shopify description:Updated May 27, 2014
-github-shopify-terraform-provider-dns | terraform-provider-dns | https://github.com/Shopify/terraform-provider-dns | author:shopify description:A terraform plugin that provides read-only resources for DNS records.
 github-shopify-zygote-gem | zygote-gem | https://github.com/Shopify/zygote-gem | author:shopify description:iPXE automation framework
-github-shopify-pyreferrer | pyreferrer | https://github.com/Shopify/pyreferrer | author:shopify description:A Python package that analyzes and classifies different kinds of referrer URLs (search, social, ...) 🚀
+github-shopify-dynect_email | dynect_email | https://github.com/Shopify/dynect_email | author:shopify 
 github-shopify-heroku-buildpack-ejson | heroku-buildpack-ejson | https://github.com/Shopify/heroku-buildpack-ejson | author:shopify description:A Heroku Buildback that automates the decryption of EJSON secrets on deploy
 github-shopify-logrus-bugsnag | logrus-bugsnag | https://github.com/Shopify/logrus-bugsnag | author:shopify description:logrus-bugsnag is a hook that interfaces Logrus with Bugsnag.
-github-shopify-hotshot | hotshot | https://github.com/Shopify/hotshot | author:shopify description:A teeny tiny keyboard shortcuts library
-github-shopify-homebrew-shopify | homebrew-shopify | https://github.com/Shopify/homebrew-shopify | author:shopify description:Updated Oct 18, 2016
+github-shopify-pyreferrer | pyreferrer | https://github.com/Shopify/pyreferrer | author:shopify description:A Python package that analyzes and classifies different kinds of referrer URLs (search, social, ...) 🚀
+github-shopify-homebrew-shopify | homebrew-shopify | https://github.com/Shopify/homebrew-shopify | author:shopify 
+github-shopify-activeresource | activeresource | https://github.com/Shopify/activeresource | author:shopify description:Connects business objects and REST web services
+github-shopify-google_auth_proxy | google_auth_proxy | https://github.com/Shopify/google_auth_proxy | author:shopify description:A reverse proxy that provides authentication using Google OAuth2
+github-shopify-lhm | lhm | https://github.com/Shopify/lhm | author:shopify description:Online MySQL schema migrations
+github-shopify-terraform-provider-dns | terraform-provider-dns | https://github.com/Shopify/terraform-provider-dns | author:shopify description:A terraform plugin that provides read-only resources for DNS records.
+github-shopify-ObjectiveRecord | ObjectiveRecord | https://github.com/Shopify/ObjectiveRecord | author:shopify description:ObjectiveRecord
 github-shopify-redislock | redislock | https://github.com/Shopify/redislock | author:shopify description:Distributed locking
-github-shopify-alchemy-transmuter-public | alchemy-transmuter-public | https://github.com/Shopify/alchemy-transmuter-public | author:shopify description:Connect iPXE, Collins, and Alchemy Linux
-github-shopify-billing-demo-app | billing-demo-app | https://github.com/Shopify/billing-demo-app | author:shopify description:Updated Sep 2, 2016
-github-shopify-google_auth | google_auth | https://github.com/Shopify/google_auth | author:shopify description:Updated Mar 14, 2015
+github-shopify-google_auth | google_auth | https://github.com/Shopify/google_auth | author:shopify 
+github-shopify-sky | sky | https://github.com/Shopify/sky | author:shopify description:💃 Sky is an open source, behavioral analytics database.
+github-shopify-billing-demo-app | billing-demo-app | https://github.com/Shopify/billing-demo-app | author:shopify 
+github-shopify-roadie | roadie | https://github.com/Shopify/roadie | author:shopify description:Making HTML emails comfortable for the Rails rockstars
 github-shopify-erb_safety | erb_safety | https://github.com/Shopify/erb_safety | author:shopify description:Asserts the safety of ERB interpolations
-github-shopify-shopify-plus-api-pres | shopify-plus-api-pres | https://github.com/Shopify/shopify-plus-api-pres | author:shopify description:Updated Jul 21, 2014
+github-shopify-alchemy-transmuter-public | alchemy-transmuter-public | https://github.com/Shopify/alchemy-transmuter-public | author:shopify description:Connect iPXE, Collins, and Alchemy Linux
+github-shopify-hotshot | hotshot | https://github.com/Shopify/hotshot | author:shopify description:A teeny tiny keyboard shortcuts library
+github-shopify-rpm | rpm | https://github.com/Shopify/rpm | author:shopify description:New Relic RPM Ruby Agent
+github-shopify-gozk-recipes | gozk-recipes | https://github.com/Shopify/gozk-recipes | author:shopify description:Implementations of some of the common ZooKeeper "recipes".
+github-shopify-whois | whois | https://github.com/Shopify/whois | author:shopify description:An intelligent pure Ruby WHOIS client and parser.
+github-shopify-shopify-plus-api-pres | shopify-plus-api-pres | https://github.com/Shopify/shopify-plus-api-pres | author:shopify 
+github-shopify-007 | 007 | https://github.com/Shopify/007 | author:shopify description:An agent which spies on procfs.
 github-shopify-kitchen-shopify-provisioner | kitchen-shopify-provisioner | https://github.com/Shopify/kitchen-shopify-provisioner | author:shopify description:Shopify quirks for test kitchen
-github-shopify-structured-event-logger | structured-event-logger | https://github.com/Shopify/structured-event-logger | author:shopify description:Updated May 27, 2014
-github-shopify-locationary | locationary | https://github.com/Shopify/locationary | author:shopify description:Updated Jun 10, 2016
+github-shopify-tree_walker | tree_walker | https://github.com/Shopify/tree_walker | author:shopify 
+github-shopify-vcr | vcr | https://github.com/Shopify/vcr | author:shopify description:Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
+github-shopify-airbrake | airbrake | https://github.com/Shopify/airbrake | author:shopify description:The official Airbrake library for Ruby on Rails. Links to other Airbrake libraries are in the ReadMe.
+github-shopify-structured-event-logger | structured-event-logger | https://github.com/Shopify/structured-event-logger | author:shopify 
+github-shopify-relay | relay | https://github.com/Shopify/relay | author:shopify description:Relay is a JavaScript framework for building data-driven React applications.
+github-shopify-lita | lita | https://github.com/Shopify/lita | author:shopify description:ChatOps for Ruby.
+github-shopify-ultrasphinx | ultrasphinx | https://github.com/Shopify/ultrasphinx | author:shopify description:Ruby on Rails configurator and client to the Sphinx full text search engine
+github-shopify-camus | camus | https://github.com/Shopify/camus | author:shopify 
+github-shopify-locationary | locationary | https://github.com/Shopify/locationary | author:shopify 
+github-shopify-stackprof | stackprof | https://github.com/Shopify/stackprof | author:shopify description:a sampling call-stack profiler for ruby 2.1+
+github-shopify-bootscale | bootscale | https://github.com/Shopify/bootscale | author:shopify description:Speedup applications boot by caching require calls
 github-shopify-dmca | dmca | https://github.com/Shopify/dmca | author:shopify description:dmca
-github-shopify-tree_walker | tree_walker | https://github.com/Shopify/tree_walker | author:shopify description:Updated Jul 3, 2013
-github-shopify-azkaban-scheduler-ruby | azkaban-scheduler-ruby | https://github.com/Shopify/azkaban-scheduler-ruby | author:shopify description:Updated Oct 5, 2016
-github-shopify-eslint-test-generator | eslint-test-generator | https://github.com/Shopify/eslint-test-generator | author:shopify description:Updated Oct 17, 2016
-github-shopify-genesis_collector | genesis_collector | https://github.com/Shopify/genesis_collector | author:shopify description:Agent to collect information about bare metal servers and send it to Genesis.
-github-shopify-genesis_client | genesis_client | https://github.com/Shopify/genesis_client | author:shopify description:Ruby client library for the Genesis API
-github-shopify-marginalia-resque | marginalia-resque | https://github.com/Shopify/marginalia-resque | author:shopify description:Updated Oct 11, 2012
-github-shopify-delayed_job_sqs | delayed_job_sqs | https://github.com/Shopify/delayed_job_sqs | author:shopify description:Amazon SQS backend for DelayedJob
-github-shopify-activerecord-pedantmysql2-adapter | activerecord-pedantmysql2-adapter | https://github.com/Shopify/activerecord-pedantmysql2-adapter | author:shopify description:Updated Aug 14, 2015
+github-shopify-metasploit-framework | metasploit-framework | https://github.com/Shopify/metasploit-framework | author:shopify description:Metasploit Framework
+github-shopify-minfraud-ruby | minfraud-ruby | https://github.com/Shopify/minfraud-ruby | author:shopify description:Ruby interface to the MaxMind minFraud API service.
+github-shopify-collins | collins | https://github.com/Shopify/collins | author:shopify description:groovy kind of love
+github-shopify-frozen_record | frozen_record | https://github.com/Shopify/frozen_record | author:shopify description:Read only ActiveRecord-like interface to query static YAML files
+github-shopify-pyinter | pyinter | https://github.com/Shopify/pyinter | author:shopify description:A interval package for Python which deals with interval arithmetic
+github-shopify-azkaban-scheduler-ruby | azkaban-scheduler-ruby | https://github.com/Shopify/azkaban-scheduler-ruby | author:shopify 
+github-shopify-tinymce | tinymce | https://github.com/Shopify/tinymce | author:shopify description:TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor control released as Open Source under LGPL.
+github-shopify-keepalived | keepalived | https://github.com/Shopify/keepalived | author:shopify description:Keepalived
+github-shopify-go-dogstatsd | go-dogstatsd | https://github.com/Shopify/go-dogstatsd | author:shopify 
 github-shopify-oktakit | oktakit | https://github.com/Shopify/oktakit | author:shopify description:Ruby toolkit for working with the Okta API
-github-shopify-babel-plugin-eslint-test-generator | babel-plugin-eslint-test-generator | https://github.com/Shopify/babel-plugin-eslint-test-generator | author:shopify description:Updated Aug 31, 2016
+github-shopify-ruby | ruby | https://github.com/Shopify/ruby | author:shopify description:The Ruby Programming Language
+github-shopify-marginalia-resque | marginalia-resque | https://github.com/Shopify/marginalia-resque | author:shopify 
+github-shopify-opensrs | opensrs | https://github.com/Shopify/opensrs | author:shopify description:Provides support to utilise the OpenSRS API with Ruby/Rails.
+github-shopify-noeq53 | noeq53 | https://github.com/Shopify/noeq53 | author:shopify description:A fault-tolerant network service for meaningful GUID generation
+github-shopify-state_machine | state_machine | https://github.com/Shopify/state_machine | author:shopify description:Adds support for creating state machines for attributes on any Ruby class
+github-shopify-chef-apt | chef-apt | https://github.com/Shopify/chef-apt | author:shopify description:Development repository for Opscode Cookbook apt
+github-shopify-delayed_job_sqs | delayed_job_sqs | https://github.com/Shopify/delayed_job_sqs | author:shopify description:Amazon SQS backend for DelayedJob
+github-shopify-resque | resque | https://github.com/Shopify/resque | author:shopify description:Resque is a Redis-backed Ruby library for creating background jobs, placing them on multiple queues, and processing them later.
+github-shopify-iptables-ng | iptables-ng | https://github.com/Shopify/iptables-ng | author:shopify 
+github-shopify-coreos-vagrant | coreos-vagrant | https://github.com/Shopify/coreos-vagrant | author:shopify description:Minimal Vagrantfile for CoreOS
+github-shopify-libgraphqlparser | libgraphqlparser | https://github.com/Shopify/libgraphqlparser | author:shopify description:A GraphQL query parser in C++ with C and C++ APIs
+github-shopify-sassc-rails | sassc-rails | https://github.com/Shopify/sassc-rails | author:shopify description:Integrate SassC-Ruby with Rails!
+github-shopify-DAG-Visualisation | DAG-Visualisation | https://github.com/Shopify/DAG-Visualisation | author:shopify 
+github-shopify-eslint-test-generator | eslint-test-generator | https://github.com/Shopify/eslint-test-generator | author:shopify 
+github-shopify-babel-plugin-eslint-test-generator | babel-plugin-eslint-test-generator | https://github.com/Shopify/babel-plugin-eslint-test-generator | author:shopify 
+github-shopify-mail | mail | https://github.com/Shopify/mail | author:shopify description:A Really Ruby Mail Library
+github-shopify-activerecord-pedantmysql2-adapter | activerecord-pedantmysql2-adapter | https://github.com/Shopify/activerecord-pedantmysql2-adapter | author:shopify 
+github-shopify-activerecord-typedstore | activerecord-typedstore | https://github.com/Shopify/activerecord-typedstore | author:shopify description:ActiveRecord::Store but with type definition
+github-shopify-oxidized | oxidized | https://github.com/Shopify/oxidized | author:shopify description:configuration backup software (IOS, JunOS) - silly attempt at rancid
 github-shopify-pos-go | pos-go | https://github.com/Shopify/pos-go | author:shopify description:Augmented Reality Point of Sale client. Map out your store, place virtual affordances for store admin or customer facing interactions.
-github-shopify-graphicsmagick-backport | graphicsmagick-backport | https://github.com/Shopify/graphicsmagick-backport | author:shopify description:Updated Oct 6, 2014
-github-shopify-iptables-ng | iptables-ng | https://github.com/Shopify/iptables-ng | author:shopify description:Updated Dec 19, 2014
-github-shopify-linter-rorybot | linter-rorybot | https://github.com/Shopify/linter-rorybot | author:shopify description:Atom linter plugin using rory to catch Shopify style guide violations.
-github-shopify-Support-Reports | Support-Reports | https://github.com/Shopify/Support-Reports | author:shopify description:Repository for Issues with Support reports and to allow for transparency of work completed.
-github-shopify-babel-plugin-add-shopify-header | babel-plugin-add-shopify-header | https://github.com/Shopify/babel-plugin-add-shopify-header | author:shopify description:Updated Oct 4, 2016
+github-shopify-ckafka | ckafka | https://github.com/Shopify/ckafka | author:shopify 
+github-shopify-mailcheck | mailcheck | https://github.com/Shopify/mailcheck | author:shopify description:Email domain spelling suggester
+github-shopify-ohai-system_packages | ohai-system_packages | https://github.com/Shopify/ohai-system_packages | author:shopify 
 github-shopify-babel-relay-plugin | babel-relay-plugin | https://github.com/Shopify/babel-relay-plugin | author:shopify description:Babel6 support from facebook/relay repository, patched with https://github.com/facebook/relay/commit/5a9231d4be53eeeae507ac886eb42068c6e46dd9
 github-shopify-analytics-api-example | analytics-api-example | https://github.com/Shopify/analytics-api-example | author:shopify description:Example app from March 2016 Unite Talk
-github-shopify-annex-29 | annex-29 | https://github.com/Shopify/annex-29 | author:shopify description:Updated Oct 19, 2016
-github-shopify-ecto_containment_unit | ecto_containment_unit | https://github.com/Shopify/ecto_containment_unit | author:shopify description:A sandboxed, read-only Casper agent
-github-shopify-shopify_apt_get_on_change | shopify_apt_get_on_change | https://github.com/Shopify/shopify_apt_get_on_change | author:shopify description:On demand apt-get update
-github-shopify-get-project-version | get-project-version | https://github.com/Shopify/get-project-version | author:shopify description:Updated Oct 13, 2016
-github-shopify-heroku-buildpack-mysql | heroku-buildpack-mysql | https://github.com/Shopify/heroku-buildpack-mysql | author:shopify description:Updated Oct 13, 2016
-github-shopify-DAG-Visualisation | DAG-Visualisation | https://github.com/Shopify/DAG-Visualisation | author:shopify description:Updated Oct 18, 2016
+github-shopify-resque-scheduler | resque-scheduler | https://github.com/Shopify/resque-scheduler | author:shopify description:A light-weight job scheduling system built on top of resque
+github-shopify-fmdb | fmdb | https://github.com/Shopify/fmdb | author:shopify description:A Cocoa / Objective-C wrapper around SQLite
+github-shopify-genesis_client | genesis_client | https://github.com/Shopify/genesis_client | author:shopify description:Ruby client library for the Genesis API
+github-shopify-graphicsmagick-backport | graphicsmagick-backport | https://github.com/Shopify/graphicsmagick-backport | author:shopify 
+github-shopify-linter-rorybot | linter-rorybot | https://github.com/Shopify/linter-rorybot | author:shopify description:Atom linter plugin using rory to catch Shopify style guide violations.
+github-shopify-chef-git | chef-git | https://github.com/Shopify/chef-git | author:shopify description:Replacement chef-client that reads directly from a git repository
+github-shopify-terraform | terraform | https://github.com/Shopify/terraform | author:shopify description:Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
+github-shopify-css | css | https://github.com/Shopify/css | author:shopify description:Guidelines for writing CSS and SCSS at Shopify.
+github-shopify-genesis_collector | genesis_collector | https://github.com/Shopify/genesis_collector | author:shopify description:Agent to collect information about bare metal servers and send it to Genesis.
+github-shopify-oauth-ruby | oauth-ruby | https://github.com/Shopify/oauth-ruby | author:shopify description:OAuth for Ruby
+github-shopify-unicorn | unicorn | https://github.com/Shopify/unicorn | author:shopify description:Copy of unicorn webserver
+github-shopify-lua-upstream-nginx-module | lua-upstream-nginx-module | https://github.com/Shopify/lua-upstream-nginx-module | author:shopify description:Nginx C module to expose Lua API to ngx_lua for Nginx upstreams
+github-shopify-Support-Reports | Support-Reports | https://github.com/Shopify/Support-Reports | author:shopify description:Repository for Issues with Support reports and to allow for transparency of work completed.
+github-shopify-babel-plugin-add-shopify-header | babel-plugin-add-shopify-header | https://github.com/Shopify/babel-plugin-add-shopify-header | author:shopify 
+github-shopify-tableau-ruby | tableau-ruby | https://github.com/Shopify/tableau-ruby | author:shopify description:Unofficial ruby wrapper for the Tableau REST Api
+github-shopify-search_query_parser | search_query_parser | https://github.com/Shopify/search_query_parser | author:shopify 
+github-shopify-chef-collectd_plugins | chef-collectd_plugins | https://github.com/Shopify/chef-collectd_plugins | author:shopify description:Chef cookbook for collectd plugins
 github-shopify-node-themekit | node-themekit | https://github.com/Shopify/node-themekit | author:shopify description:Theme asset interaction library and management tools written in Node.js
+github-shopify-erb-lint | erb-lint | https://github.com/Shopify/erb-lint | author:shopify description:Linting gem purposed for use on Policial.io
+github-shopify-poseidon | poseidon | https://github.com/Shopify/poseidon | author:shopify description:A client for Kafka 0.8
+github-shopify-chocolatechipjs-pub | chocolatechipjs-pub | https://github.com/Shopify/chocolatechipjs-pub | author:shopify 
+github-shopify-chef-resolver | chef-resolver | https://github.com/Shopify/chef-resolver | author:shopify description:Development repository for Opscode Cookbook resolver
+github-shopify-chef-keepalived | chef-keepalived | https://github.com/Shopify/chef-keepalived | author:shopify description:Development repository for Opscode Cookbook keepalived
+github-shopify-cookbook-bind | cookbook-bind | https://github.com/Shopify/cookbook-bind | author:shopify description:Berkeley Internet Name Daemon
+github-shopify-chef-smokeping | chef-smokeping | https://github.com/Shopify/chef-smokeping | author:shopify description:Chef recipe for setting up smokeping
+github-shopify-tcr | tcr | https://github.com/Shopify/tcr | author:shopify description:VCR for TCP
+github-shopify-nokogiri | nokogiri | https://github.com/Shopify/nokogiri | author:shopify description:Temporary fork of Nokogiri for security fixes
+github-shopify-heroku-buildpack-imagemagick | heroku-buildpack-imagemagick | https://github.com/Shopify/heroku-buildpack-imagemagick | author:shopify 
+github-shopify-xeroizer | xeroizer | https://github.com/Shopify/xeroizer | author:shopify description:Xero accounting system API library.
+github-shopify-wpt-script | wpt-script | https://github.com/Shopify/wpt-script | author:shopify description:Scripts to generate WebPagetest tests and download results
+github-shopify-teaspoon | teaspoon | https://github.com/Shopify/teaspoon | author:shopify description:Teaspoon: A Javascript test runner built on top of Rails - use Jasmine, Mocha or QUnit in the browser or headlessly using PhantomJS or with Selenium Webdriver.
+github-shopify-ruby-junos-ez-stdlib | ruby-junos-ez-stdlib | https://github.com/Shopify/ruby-junos-ez-stdlib | author:shopify description:A collection of Ruby classes to make Junos automation Easy. This is the "standard library" supported on all devices.
+github-shopify-chef-kernel_module | chef-kernel_module | https://github.com/Shopify/chef-kernel_module | author:shopify description:Cookbook for adding/removing Linux kernel modules
+github-shopify-Paralloid | Paralloid | https://github.com/Shopify/Paralloid | author:shopify description:Paralloid - (Pah-rah-loid) The Android Parallax library.
+github-shopify-lita-slack | lita-slack | https://github.com/Shopify/lita-slack | author:shopify description:Lita adapter for Slack
+github-shopify-pytest-random | pytest-random | https://github.com/Shopify/pytest-random | author:shopify description:randomize your py.test run
+github-shopify-lita-external | lita-external | https://github.com/Shopify/lita-external | author:shopify 
+github-shopify-heroku-buildpack-git-deploy-keys | heroku-buildpack-git-deploy-keys | https://github.com/Shopify/heroku-buildpack-git-deploy-keys | author:shopify description:Heroku buildpack to let you use git deploy keys with your private repositories
+github-shopify-lua-nginx-module | lua-nginx-module | https://github.com/Shopify/lua-nginx-module | author:shopify description:Embed the Power of Lua into NGINX HTTP servers
+github-shopify-json | json | https://github.com/Shopify/json | author:shopify description:JSON implementation for Ruby
+github-shopify-rack-test | rack-test | https://github.com/Shopify/rack-test | author:shopify description:Rack::Test is a layer on top of Rack's MockRequest similar to Merb's RequestHelper
+github-shopify-memcached | memcached | https://github.com/Shopify/memcached | author:shopify description:A Ruby interface to the libmemcached C client
+github-shopify-chroma | chroma | https://github.com/Shopify/chroma | author:shopify description:Ruby gem for color manipulation and palette generation
+github-shopify-heroku-buildpack-mysql | heroku-buildpack-mysql | https://github.com/Shopify/heroku-buildpack-mysql | author:shopify 
+github-shopify-openvpn | openvpn | https://github.com/Shopify/openvpn | author:shopify description:OpenVPN is an open source VPN daemon
+github-shopify-ipxe | ipxe | https://github.com/Shopify/ipxe | author:shopify description:iPXE network bootloader. This is a mirror of the iPXE git tree at http://git.ipxe.org/ipxe.git
+github-shopify-stackprof-webnav | stackprof-webnav | https://github.com/Shopify/stackprof-webnav | author:shopify description:Web UI for viewing stackprof dumps
 github-shopify-preseeds | preseeds | https://github.com/Shopify/preseeds | author:shopify description:Ubuntu installation preseeds
 github-shopify-alchemy-overlay | alchemy-overlay | https://github.com/Shopify/alchemy-overlay | author:shopify description:Overlay for alchemy linux packages
-github-shopify-starscream-flake8 | starscream-flake8 | https://github.com/Shopify/starscream-flake8 | author:shopify description:Updated Aug 18, 2014
-github-shopify-prlimit | prlimit | https://github.com/Shopify/prlimit | author:shopify description:Backported prlimit from util-linux 2.21
-github-shopify-panda | panda | https://github.com/Shopify/panda | author:shopify description:Updated Jun 9, 2016
-github-shopify-lua-nginx-internals-nginx-module | lua-nginx-internals-nginx-module | https://github.com/Shopify/lua-nginx-internals-nginx-module | author:shopify description:Updated Jun 11, 2016
-github-shopify-livekernel | livekernel | https://github.com/Shopify/livekernel | author:shopify description:A live kernel used for PXE booting a live image.
-github-shopify-gozk | gozk | https://github.com/Shopify/gozk | author:shopify description:Fork of https://wiki.ubuntu.com/gozk
-github-shopify-nginx-sysv-log | nginx-sysv-log | https://github.com/Shopify/nginx-sysv-log | author:shopify description:Updated Jul 20, 2016
-github-shopify-record_store-demo | record_store-demo | https://github.com/Shopify/record_store-demo | author:shopify description:Example Record Store repo
+github-shopify-s3cmd | s3cmd | https://github.com/Shopify/s3cmd | author:shopify description:Official s3cmd repo -- Command line tool for managing Amazon S3 and CloudFront services
+github-shopify-ipset-cookbook | ipset-cookbook | https://github.com/Shopify/ipset-cookbook | author:shopify description:Chef cookbook to manage IPset on Linux
+github-shopify-stellar.js | stellar.js | https://github.com/Shopify/stellar.js | author:shopify description:Stellar.js - Parallax scrolling made easy
+github-shopify-aead | aead | https://github.com/Shopify/aead | author:shopify description:Authenticated Encryption with Associated Data
 github-shopify-heroku-buildpack-recordstore | heroku-buildpack-recordstore | https://github.com/Shopify/heroku-buildpack-recordstore | author:shopify description:Deploy Record Store with Heroku
-github-shopify-dogcrypter | dogcrypter | https://github.com/Shopify/dogcrypter | author:shopify description:Updated Jan 21, 2014
-github-shopify-hack-mcgill | hack-mcgill | https://github.com/Shopify/hack-mcgill | author:shopify description:Updated Jan 22, 2014
+github-shopify-record_store-demo | record_store-demo | https://github.com/Shopify/record_store-demo | author:shopify description:Example Record Store repo
+github-shopify-react-native-cookies | react-native-cookies | https://github.com/Shopify/react-native-cookies | author:shopify description:Cookie manager for React Native
+github-shopify-FuelSDK-Ruby | FuelSDK-Ruby | https://github.com/Shopify/FuelSDK-Ruby | author:shopify description:Fuel SDK for Ruby
+github-shopify-azkaban | azkaban | https://github.com/Shopify/azkaban | author:shopify description:Azkaban workflow manager.
+github-shopify-bugsnag-ruby | bugsnag-ruby | https://github.com/Shopify/bugsnag-ruby | author:shopify description:Bugsnag error monitoring for rails, sinatra, rack and ruby
+github-shopify-minimoozie | minimoozie | https://github.com/Shopify/minimoozie | author:shopify description:A delightfuly simple way to just monitor things on oozie.
+github-shopify-php-resque | php-resque | https://github.com/Shopify/php-resque | author:shopify description:PHP port of resque (Workers and Queueing)
+github-shopify-presto_metrico | presto_metrico | https://github.com/Shopify/presto_metrico | author:shopify description:Send Presto DB stats to DataDog
+github-shopify-psych | psych | https://github.com/Shopify/psych | author:shopify description:A libyaml wrapper for Ruby
+github-shopify-pubsubstub | pubsubstub | https://github.com/Shopify/pubsubstub | author:shopify 
+github-shopify-turbo-sprockets-rails3 | turbo-sprockets-rails3 | https://github.com/Shopify/turbo-sprockets-rails3 | author:shopify description:Speeds up your Rails 3 assets:precompile by only recompiling changed files, and only compiling once to generate all assets
+github-shopify-reprepro | reprepro | https://github.com/Shopify/reprepro | author:shopify description:Development repository for Opscode Cookbook reprepro
+github-shopify-sysctl-cookbook | sysctl-cookbook | https://github.com/Shopify/sysctl-cookbook | author:shopify 
+github-shopify-chef-collectd | chef-collectd | https://github.com/Shopify/chef-collectd | author:shopify description:Chef cookbook for collectd
+github-shopify-mixpanel-iphone | mixpanel-iphone | https://github.com/Shopify/mixpanel-iphone | author:shopify description:iPhone tracking library for Mixpanel Analytics
+github-shopify-shopify_apt_get_on_change | shopify_apt_get_on_change | https://github.com/Shopify/shopify_apt_get_on_change | author:shopify description:On demand apt-get update
 github-shopify-puppet-noeqd | puppet-noeqd | https://github.com/Shopify/puppet-noeqd | author:shopify description:puppet module for noeqd
-github-shopify-ecfg-ruby | ecfg-ruby | https://github.com/Shopify/ecfg-ruby | author:shopify description:WIP
+github-shopify-chef-client | chef-client | https://github.com/Shopify/chef-client | author:shopify description:Development repository for Opscode Cookbook chef-client
+github-shopify-rbtrace | rbtrace | https://github.com/Shopify/rbtrace | author:shopify description:like strace, but for ruby code
+github-shopify-redis-rb | redis-rb | https://github.com/Shopify/redis-rb | author:shopify description:A Ruby client library for Redis
+github-shopify-sass-lint | sass-lint | https://github.com/Shopify/sass-lint | author:shopify description:Pure Node.js Sass linting
+github-shopify-livekernel | livekernel | https://github.com/Shopify/livekernel | author:shopify description:A live kernel used for PXE booting a live image.
+github-shopify-net-ssh | net-ssh | https://github.com/Shopify/net-ssh | author:shopify description:Pure Ruby implementation of an SSH (protocol 2) client
 github-shopify-delayed_job_current | delayed_job_current | https://github.com/Shopify/delayed_job_current | author:shopify description:A fork of the official DelayedJob repository, with Shopify's improvements.
-github-shopify-pagerdutyemails | pagerdutyemails | https://github.com/Shopify/pagerdutyemails | author:shopify description:send emails to people the week before they are on call
-github-shopify-ForkSpoonTest | ForkSpoonTest | https://github.com/Shopify/ForkSpoonTest | author:shopify description:Updated Sep 15, 2015
+github-shopify-ruby-kafka | ruby-kafka | https://github.com/Shopify/ruby-kafka | author:shopify description:A Ruby client library for Apache Kafka 0.9
+github-shopify-OAStackView | OAStackView | https://github.com/Shopify/OAStackView | author:shopify description:Porting UIStackView to iOS 7+
+github-shopify-airbrake-go | airbrake-go | https://github.com/Shopify/airbrake-go | author:shopify description:Go library to report errors to airbrake and compatible servers
+github-shopify-docker | docker | https://github.com/Shopify/docker | author:shopify description:Docker - the open-source application container engine
+github-shopify-zeromq-cookbook | zeromq-cookbook | https://github.com/Shopify/zeromq-cookbook | author:shopify description:A chef cookbook to install zeromq
+github-shopify-em-eventsource | em-eventsource | https://github.com/Shopify/em-eventsource | author:shopify description:em-eventsource is an eventmachine library to consume Server-Sent Events streaming API.
+github-shopify-chef-handler-datadog | chef-handler-datadog | https://github.com/Shopify/chef-handler-datadog | author:shopify description:Get chef stats directly into Datadog
+github-shopify-jquery.payment | jquery.payment | https://github.com/Shopify/jquery.payment | author:shopify description:A general purpose library for building credit card forms, validating inputs and formatting numbers.
+github-shopify-capistrano-bundler | capistrano-bundler | https://github.com/Shopify/capistrano-bundler | author:shopify description:Bundler support for Capistrano 3.x
+github-shopify-go.grace | go.grace | https://github.com/Shopify/go.grace | author:shopify description:Graceful restart for Go servers.
+github-shopify-sky.rb | sky.rb | https://github.com/Shopify/sky.rb | author:shopify description:The Ruby client for the Sky database.
+github-shopify-mmh3 | mmh3 | https://github.com/Shopify/mmh3 | author:shopify description:Python wrapper for MurmurHash (MurmurHash3), a set of fast and robust hash functions.
 github-shopify-kubernetes-demo | kubernetes-demo | https://github.com/Shopify/kubernetes-demo | author:shopify description:Andrew's Kubernetes Demo Application
-github-shopify-babel-plugin-add-header-comment | babel-plugin-add-header-comment | https://github.com/Shopify/babel-plugin-add-header-comment | author:shopify description:Updated Aug 31, 2016
-github-shopify-nokogiri | nokogiri | https://github.com/Shopify/nokogiri | author:shopify description:Temporary fork of Nokogiri for security fixes
-github-shopify-chef-zfs | chef-zfs | https://github.com/Shopify/chef-zfs | author:shopify description:Updated May 22, 2016
-github-shopify-sublimelinter-rorybot | sublimelinter-rorybot | https://github.com/Shopify/sublimelinter-rorybot | author:shopify description:A Sublime linter for the rorybot style guide checker
-github-shopify-chef-kernel_module | chef-kernel_module | https://github.com/Shopify/chef-kernel_module | author:shopify description:Cookbook for adding/removing Linux kernel modules
-github-shopify-lita-external | lita-external | https://github.com/Shopify/lita-external | author:shopify description:Updated Apr 29, 2016
+github-shopify-fbjs | fbjs | https://github.com/Shopify/fbjs | author:shopify description:A collection of utility libraries used by other Facebook JS projects.
+github-shopify-react-native | react-native | https://github.com/Shopify/react-native | author:shopify description:A framework for building native apps with React.
+github-shopify-redlock-rb | redlock-rb | https://github.com/Shopify/redlock-rb | author:shopify description:Redlock Redis-based distributed locks implementation in Ruby
+github-shopify-google-api-ads-ruby | google-api-ads-ruby | https://github.com/Shopify/google-api-ads-ruby | author:shopify 
+github-shopify-ForkSpoonTest | ForkSpoonTest | https://github.com/Shopify/ForkSpoonTest | author:shopify 
+github-shopify-rails | rails | https://github.com/Shopify/rails | author:shopify description:Ruby on Rails
+github-shopify-python-driver | python-driver | https://github.com/Shopify/python-driver | author:shopify description:DataStax Python Driver for Apache Cassandra
+github-shopify-gulp-sass-lint | gulp-sass-lint | https://github.com/Shopify/gulp-sass-lint | author:shopify description:Gulp plugin for Sass Lint
+github-shopify-annex-29 | annex-29 | https://github.com/Shopify/annex-29 | author:shopify 
+github-shopify-ecto_containment_unit | ecto_containment_unit | https://github.com/Shopify/ecto_containment_unit | author:shopify description:A sandboxed, read-only Casper agent
+github-shopify-sprockets-svg | sprockets-svg | https://github.com/Shopify/sprockets-svg | author:shopify description:SVG toolchain for sprockets
+github-shopify-kafka-connect-hdfs | kafka-connect-hdfs | https://github.com/Shopify/kafka-connect-hdfs | author:shopify description:Kafka Connect HDFS connector
+github-shopify-babel-plugin-add-header-comment | babel-plugin-add-header-comment | https://github.com/Shopify/babel-plugin-add-header-comment | author:shopify 
+github-shopify-rack-utf8_sanitizer | rack-utf8_sanitizer | https://github.com/Shopify/rack-utf8_sanitizer | author:shopify description:Rack::UTF8Sanitizer is a Rack middleware which cleans up invalid UTF8 characters in request URI and headers.
+github-shopify-coverband | coverband | https://github.com/Shopify/coverband | author:shopify description:Rack middleware to help measure production code coverage
+github-shopify-ruby-mime-types | ruby-mime-types | https://github.com/Shopify/ruby-mime-types | author:shopify description:Ruby MIME type registry and library
+github-shopify-rails-html-sanitizer | rails-html-sanitizer | https://github.com/Shopify/rails-html-sanitizer | author:shopify 
+github-shopify-bolt | bolt | https://github.com/Shopify/bolt | author:shopify description:A low-level key/value database for Go.
+github-shopify-hmaclib | hmaclib | https://github.com/Shopify/hmaclib | author:shopify description:super simple hmac calculator for golang
+github-shopify-dyn-rb | dyn-rb | https://github.com/Shopify/dyn-rb | author:shopify description:Dyn SDK for Ruby
+github-shopify-qless | qless | https://github.com/Shopify/qless | author:shopify description:Queue / Pipeline Management
+github-shopify-analytics.js-integration-facebook-pixel | analytics.js-integration-facebook-pixel | https://github.com/Shopify/analytics.js-integration-facebook-pixel | author:shopify description:The Facebook Pixel analytics.js integration. https://segment.com/docs/integrations/facebook-pixel
+github-shopify-turbolinks | turbolinks | https://github.com/Shopify/turbolinks | author:shopify description:Turbolinks makes following links in your web application faster (use with Rails Asset Pipeline)
+github-shopify-yuidoc | yuidoc | https://github.com/Shopify/yuidoc | author:shopify description:YUI Javascript Documentation Tool
+github-shopify-hubot | hubot | https://github.com/Shopify/hubot | author:shopify description:Chef cookbook for deploying and managing an instance of Github's Hubot.
+github-shopify-arel | arel | https://github.com/Shopify/arel | author:shopify description:A Relational Algebra
+github-shopify-ios-snapshot-test-case | ios-snapshot-test-case | https://github.com/Shopify/ios-snapshot-test-case | author:shopify description:Snapshot view unit tests for iOS
+github-shopify-lua-nginx-internals-nginx-module | lua-nginx-internals-nginx-module | https://github.com/Shopify/lua-nginx-internals-nginx-module | author:shopify 
+github-shopify-panda | panda | https://github.com/Shopify/panda | author:shopify 
 github-shopify-teaspoon-bundle | teaspoon-bundle | https://github.com/Shopify/teaspoon-bundle | author:shopify description:Dynamically create a test bundle for Teaspoon that contains all the files
+github-shopify-heroku-buildpack-geoip | heroku-buildpack-geoip | https://github.com/Shopify/heroku-buildpack-geoip | author:shopify 
+github-shopify-sqlalchemy-redshift | sqlalchemy-redshift | https://github.com/Shopify/sqlalchemy-redshift | author:shopify description:Amazon Redshift SQLAlchemy Dialect
+github-shopify-rack | rack | https://github.com/Shopify/rack | author:shopify description:a modular Ruby webserver interface
+github-shopify-partial_search | partial_search | https://github.com/Shopify/partial_search | author:shopify description:Provides a library using the Chef partial search API
+github-shopify-grunt-rails-asset-digest | grunt-rails-asset-digest | https://github.com/Shopify/grunt-rails-asset-digest | author:shopify description:grunt-rails-asset-digest
+github-shopify-hack-mcgill | hack-mcgill | https://github.com/Shopify/hack-mcgill | author:shopify 
+github-shopify-dogcrypter | dogcrypter | https://github.com/Shopify/dogcrypter | author:shopify 
+github-shopify-rbeapi | rbeapi | https://github.com/Shopify/rbeapi | author:shopify description:Ruby client for Arista eAPI
+github-shopify-onepassword-app-extension | onepassword-app-extension | https://github.com/Shopify/onepassword-app-extension | author:shopify description:1Password Extension for iOS Apps
+github-shopify-oxidized-script | oxidized-script | https://github.com/Shopify/oxidized-script | author:shopify description:CLI and LIB for scripting network devices via Oxidized
+github-shopify-prlimit | prlimit | https://github.com/Shopify/prlimit | author:shopify description:Backported prlimit from util-linux 2.21
+github-shopify-ecfg-ruby | ecfg-ruby | https://github.com/Shopify/ecfg-ruby | author:shopify description:WIP
+github-shopify-Hermann | Hermann | https://github.com/Shopify/Hermann | author:shopify description:A Ruby gem wrapping the librdkafka library as a C extension.
+github-shopify-starscream-flake8 | starscream-flake8 | https://github.com/Shopify/starscream-flake8 | author:shopify 
+github-shopify-hubot-flowdock | hubot-flowdock | https://github.com/Shopify/hubot-flowdock | author:shopify description:Flowdock adapter for Hubot chat bot
+github-shopify-apache2-cookbook | apache2-cookbook | https://github.com/Shopify/apache2-cookbook | author:shopify description:Development repository for the apache2 cookbook
+github-shopify-ruby-libsass | ruby-libsass | https://github.com/Shopify/ruby-libsass | author:shopify description:Ruby bindings for libsass
+github-shopify-openMVS | openMVS | https://github.com/Shopify/openMVS | author:shopify description:open Multi-View Stereo reconstruction library
+github-shopify-Viking | Viking | https://github.com/Shopify/Viking | author:shopify description:A familiar jRuby hdfs wrapper.
+github-shopify-analytics.js-core | analytics.js-core | https://github.com/Shopify/analytics.js-core | author:shopify description:The hassle-free way to integrate analytics into any web application.
+github-shopify-chef-zfs | chef-zfs | https://github.com/Shopify/chef-zfs | author:shopify 
+github-shopify-agent | agent | https://github.com/Shopify/agent | author:shopify description:The Buildkite Agent is an open-source toolkit written in Golang for securely running build jobs on any device or network
+github-shopify-analytics.js-integration-google-analytics | analytics.js-integration-google-analytics | https://github.com/Shopify/analytics.js-integration-google-analytics | author:shopify description:The Google Analytics analytics.js integration.
+github-shopify-chef-datadog | chef-datadog | https://github.com/Shopify/chef-datadog | author:shopify description:Datadog's public cookbooks
+github-shopify-sublimelinter-rorybot | sublimelinter-rorybot | https://github.com/Shopify/sublimelinter-rorybot | author:shopify description:A Sublime linter for the rorybot style guide checker
+github-shopify-dogapi-rb | dogapi-rb | https://github.com/Shopify/dogapi-rb | author:shopify description:Ruby client for DataDog's API
+github-shopify-react-native-swipeout | react-native-swipeout | https://github.com/Shopify/react-native-swipeout | author:shopify description:iOS-style swipeout buttons behind component
+github-shopify-vim-fugitive | vim-fugitive | https://github.com/Shopify/vim-fugitive | author:shopify description:fugitive.vim: a Git wrapper so awesome, it should be illegal
+github-shopify-coffeelint-ruby | coffeelint-ruby | https://github.com/Shopify/coffeelint-ruby | author:shopify description:This adds some simple bindings to ruby to enable use of coffeelint
+github-shopify-pagerdutyemails | pagerdutyemails | https://github.com/Shopify/pagerdutyemails | author:shopify description:send emails to people the week before they are on call
+github-shopify-cloudshaper | cloudshaper | https://github.com/Shopify/cloudshaper | author:shopify description:Terraform stack management workflow
+github-shopify-analytics.js-integrations-1 | analytics.js-integrations-1 | https://github.com/Shopify/analytics.js-integrations-1 | author:shopify description:All of the third-party analytics.js integrations.
+github-shopify-sprockets | sprockets | https://github.com/Shopify/sprockets | author:shopify description:Rack-based asset packaging system
+github-shopify-state_machines-activerecord | state_machines-activerecord | https://github.com/Shopify/state_machines-activerecord | author:shopify description:StateMachines Active Record Integration
+github-shopify-state_machines | state_machines | https://github.com/Shopify/state_machines | author:shopify description:Adds support for creating state machines for attributes on any Ruby class
+github-shopify-nginx-sysv-log | nginx-sysv-log | https://github.com/Shopify/nginx-sysv-log | author:shopify 
+github-shopify-pytest-redis | pytest-redis | https://github.com/Shopify/pytest-redis | author:shopify description:A pytest plugin that reads test paths from a redis instance list
+github-shopify-wappalyzer | wappalyzer | https://github.com/Shopify/wappalyzer | author:shopify description:Detect the server side language used for the website
+github-shopify-gozk | gozk | https://github.com/Shopify/gozk | author:shopify description:Fork of https://wiki.ubuntu.com/gozk
+github-shopify-koala | koala | https://github.com/Shopify/koala | author:shopify description:A lightweight, flexible library for Facebook with support for OAuth authentication, the Graph and REST APIs, realtime updates, and test users.
+github-shopify-sshkit | sshkit | https://github.com/Shopify/sshkit | author:shopify description:A toolkit for deploying code and assets to servers in a repeatable, testable, reliable way.
 github-shopify-livesys | livesys | https://github.com/Shopify/livesys | author:shopify description:A simple ubuntu system, intended to be run as an in-memory live image.
+github-shopify-dd-agent | dd-agent | https://github.com/Shopify/dd-agent | author:shopify description:Datadog Agent
+github-shopify-jmxtrans | jmxtrans | https://github.com/Shopify/jmxtrans | author:shopify description:jmxtrans
+github-shopify-protected_attributes | protected_attributes | https://github.com/Shopify/protected_attributes | author:shopify description:Protect attributes from mass-assignment in ActiveRecord models.
+github-shopify-pywebhdfs | pywebhdfs | https://github.com/Shopify/pywebhdfs | author:shopify description:Pure Python wrapper for the Hadoop WebHDFS Rest API
+github-shopify-oj | oj | https://github.com/Shopify/oj | author:shopify description:Optimized JSON
+github-shopify-jzmq | jzmq | https://github.com/Shopify/jzmq | author:shopify description:Frozen version of JZMQ that is tested to work with Storm.
+github-shopify-omnibus_updater | omnibus_updater | https://github.com/Shopify/omnibus_updater | author:shopify description:Omnibus Chef updater (historical fork)
+github-shopify-chef-ebs | chef-ebs | https://github.com/Shopify/chef-ebs | author:shopify description:Scalarium's EBS cookbook with added magic
+github-shopify-sky.go | sky.go | https://github.com/Shopify/sky.go | author:shopify description:🚀 The official Go client for the Sky database.
+github-shopify-bcache-tools | bcache-tools | https://github.com/Shopify/bcache-tools | author:shopify description:bcache-tools, part of the bcache hybrid storage project (features, debian packaging)
+github-shopify-yuidoc-lucid-theme | yuidoc-lucid-theme | https://github.com/Shopify/yuidoc-lucid-theme | author:shopify description:A simple YUIDoc theme for single-module libraries.
+github-shopify-terraform-provider-chef | terraform-provider-chef | https://github.com/Shopify/terraform-provider-chef | author:shopify 
+github-shopify-redis-tools | redis-tools | https://github.com/Shopify/redis-tools | author:shopify description:Tools to monitor Redis servers
+github-shopify-opsworks_sidekiq | opsworks_sidekiq | https://github.com/Shopify/opsworks_sidekiq | author:shopify description:Chef cookbook for configuring an AWS OpsWorks layer of delayed_job workers.
+github-shopify-rails_stdout_logging | rails_stdout_logging | https://github.com/Shopify/rails_stdout_logging | author:shopify description:Logs to stdout so you don't have to
+github-shopify-gomemcache | gomemcache | https://github.com/Shopify/gomemcache | author:shopify description:Go Memcached client library #golang
+github-shopify-prepareTransition | prepareTransition | https://github.com/Shopify/prepareTransition | author:shopify 
+github-shopify-measurement.js | measurement.js | https://github.com/Shopify/measurement.js | author:shopify description:Behaviour-driven Unit-of-Measure conversion in javascript nice and easy.
+github-shopify-fastclick | fastclick | https://github.com/Shopify/fastclick | author:shopify description:Polyfill to remove click delays on browsers with touch UIs
+github-shopify-reconnecting-websocket | reconnecting-websocket | https://github.com/Shopify/reconnecting-websocket | author:shopify description:A small decorator for the JavaScript WebSocket API that automatically reconnects
+github-shopify-jquery-minicolors | jquery-minicolors | https://github.com/Shopify/jquery-minicolors | author:shopify description:jQuery MiniColors Plugin
+github-shopify-babelify-jest | babelify-jest | https://github.com/Shopify/babelify-jest | author:shopify description:Jest plugin for Babel which handles babelify modules gently
+github-shopify-get-project-version | get-project-version | https://github.com/Shopify/get-project-version | author:shopify 

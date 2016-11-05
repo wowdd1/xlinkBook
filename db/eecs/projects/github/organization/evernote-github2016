@@ -5,47 +5,61 @@ github-evernote-evernote-sdk-js | evernote-sdk-js | https://github.com/evernote/
 github-evernote-evernote-sdk-android | evernote-sdk-android | https://github.com/evernote/evernote-sdk-android | author:evernote description:Evernote SDK for Android
 github-evernote-sass-build-structure | sass-build-structure | https://github.com/evernote/sass-build-structure | author:evernote description:An example SASS build structure sample to start a project
 github-evernote-evernote-sdk-php | evernote-sdk-php | https://github.com/evernote/evernote-sdk-php | author:evernote description:Evernote SDK for PHP
-github-evernote-evernote-sdk-java | evernote-sdk-java | https://github.com/evernote/evernote-sdk-java | author:evernote description:Evernote SDK for Java
 github-evernote-evernote-cloud-sdk-ios | evernote-cloud-sdk-ios | https://github.com/evernote/evernote-cloud-sdk-ios | author:evernote description:Evernote Cloud SDK for iOS
+github-evernote-evernote-sdk-java | evernote-sdk-java | https://github.com/evernote/evernote-sdk-java | author:evernote description:Evernote SDK for Java
 github-evernote-evernote-sdk-ruby | evernote-sdk-ruby | https://github.com/evernote/evernote-sdk-ruby | author:evernote description:Evernote SDK for Ruby
 github-evernote-evernote-sdk-csharp | evernote-sdk-csharp | https://github.com/evernote/evernote-sdk-csharp | author:evernote description:Evernote SDK for C#
 github-evernote-evernote-sdk-python3 | evernote-sdk-python3 | https://github.com/evernote/evernote-sdk-python3 | author:evernote description:Testing the Evernote Cloud API for Python 3
-github-evernote-evernote-cloud-sdk-php | evernote-cloud-sdk-php | https://github.com/evernote/evernote-cloud-sdk-php | author:evernote description:Updated Sep 24, 2016
+github-evernote-evernote-cloud-sdk-php | evernote-cloud-sdk-php | https://github.com/evernote/evernote-cloud-sdk-php | author:evernote 
 github-evernote-serge | serge | https://github.com/evernote/serge | author:evernote description:Free, open-source solution for continuous localization
 github-evernote-evernote-thrift | evernote-thrift | https://github.com/evernote/evernote-thrift | author:evernote description:Thrift IDL files for the Evernote Cloud API
 github-evernote-evernote-sdk-mac | evernote-sdk-mac | https://github.com/evernote/evernote-sdk-mac | author:evernote description:Evernote SDK for Cocoa
 github-evernote-evernote-oauth-ruby | evernote-oauth-ruby | https://github.com/evernote/evernote-oauth-ruby | author:evernote description:Evernote OAuth / Thrift API client library for Ruby
 github-evernote-fetch | fetch | https://github.com/evernote/fetch | author:evernote description:Fluent API to query data in ContentResolver and SQLiteDatabase
 github-evernote-evernote-sdk-cpp | evernote-sdk-cpp | https://github.com/evernote/evernote-sdk-cpp | author:evernote description:Evernote SDK for C++
+github-evernote-graphite-web | graphite-web | https://github.com/evernote/graphite-web | author:evernote 
 github-evernote-ios8-share-extension-demo | ios8-share-extension-demo | https://github.com/evernote/ios8-share-extension-demo | author:evernote description:A simple demo/testing application to see how iOS8 Evernote share extension works
-github-evernote-evernote-cloud-sdk-windows | evernote-cloud-sdk-windows | https://github.com/evernote/evernote-cloud-sdk-windows | author:evernote description:Updated Sep 4, 2016
+github-evernote-evernote-cloud-sdk-windows | evernote-cloud-sdk-windows | https://github.com/evernote/evernote-cloud-sdk-windows | author:evernote 
 github-evernote-android-intent | android-intent | https://github.com/evernote/android-intent | author:evernote description:A simple to use library for Android which helps to connect to the main Android app with Intents.
 github-evernote-simple-api-client-example-ios | simple-api-client-example-ios | https://github.com/evernote/simple-api-client-example-ios | author:evernote description:A very simple iPhone application to illustration the use of the Evernote API and SDK
 github-evernote-evernote-ios-x-callback-url | evernote-ios-x-callback-url | https://github.com/evernote/evernote-ios-x-callback-url | author:evernote description:x-callback-url support for Evernote iOS app
-github-evernote-javascript-style-guide | javascript-style-guide | https://github.com/evernote/javascript-style-guide | author:evernote description:Updated Sep 28, 2014
+github-evernote-javascript-style-guide | javascript-style-guide | https://github.com/evernote/javascript-style-guide | author:evernote 
 github-evernote-phonegap-example | phonegap-example | https://github.com/evernote/phonegap-example | author:evernote description:A PhoneGap example using the evernote js sdk
 github-evernote-bro-scripts | bro-scripts | https://github.com/evernote/bro-scripts | author:evernote description:Bro scripts developed by the Evernote security team.
-github-evernote-css-style-guide | css-style-guide | https://github.com/evernote/css-style-guide | author:evernote description:Updated Sep 11, 2014
+github-evernote-css-style-guide | css-style-guide | https://github.com/evernote/css-style-guide | author:evernote 
 github-evernote-simple-api-client-example-ruby | simple-api-client-example-ruby | https://github.com/evernote/simple-api-client-example-ruby | author:evernote description:A simple Ruby application, using Sinatra, to demonstrate configuration and usage of the Evernote Cloud API
 github-evernote-evernote-sdk-as3 | evernote-sdk-as3 | https://github.com/evernote/evernote-sdk-as3 | author:evernote description:Evernote SDK for ActionScript
-github-evernote-email-builder | email-builder | https://github.com/evernote/email-builder | author:evernote description:Updated Feb 26, 2015
 github-evernote-evernote-sdk-perl | evernote-sdk-perl | https://github.com/evernote/evernote-sdk-perl | author:evernote description:Evernote SDK for Perl
+github-evernote-email-builder | email-builder | https://github.com/evernote/email-builder | author:evernote 
 github-evernote-evernote-demo-metro | evernote-demo-metro | https://github.com/evernote/evernote-demo-metro | author:evernote description:Sample Metro app that uses the Evernote API
 github-evernote-jquery-form-validation | jquery-form-validation | https://github.com/evernote/jquery-form-validation | author:evernote description:A jQuery form validation plugin that makes it easy to add validation to existing forms. Error messages are fully customizable and translated in 22 languages.
 github-evernote-opauth-evernote | opauth-evernote | https://github.com/evernote/opauth-evernote | author:evernote description:Opauth strategy for Evernote
 github-evernote-python-findrelated-example | python-findrelated-example | https://github.com/evernote/python-findrelated-example | author:evernote description:A simple Python application demonstrating the use of NoteStore.findRelated
+github-evernote-pootle | pootle | https://github.com/evernote/pootle | author:evernote description:This is an unofficial fork of Pootle used at Evernote
 github-evernote-kgb | kgb | https://github.com/evernote/kgb | author:evernote description:Keyboard Geometry Builder and espresso keyboard testing
 github-evernote-less-build-structure | less-build-structure | https://github.com/evernote/less-build-structure | author:evernote description:An example LESS build structure sample to start a project.
 github-evernote-viewport-visible | viewport-visible | https://github.com/evernote/viewport-visible | author:evernote description:A light-weight module that allows you to pass in elements and return whether or not they are visible within the immediate viewport.
-github-evernote-old-ios-sample | old-ios-sample | https://github.com/evernote/old-ios-sample | author:evernote description:Updated May 9, 2012
+github-evernote-Specs | Specs | https://github.com/evernote/Specs | author:evernote description:A repository of CocoaPods specifications.
+github-evernote-MaterialTapTargetPrompt | MaterialTapTargetPrompt | https://github.com/evernote/MaterialTapTargetPrompt | author:evernote description:Material Design tap target for Android. https://sjwall.github.io/MaterialTapTargetPrompt/
 github-evernote-ops-totp | ops-totp | https://github.com/evernote/ops-totp | author:evernote description:OpenLDAP+FreeRadius TOTP stuff
-github-evernote-noms-client | noms-client | https://github.com/evernote/noms-client | author:evernote description:Client libraries for NOMS components
-github-evernote-iwana | iwana | https://github.com/evernote/iwana | author:evernote description:Updated Jul 2, 2016
-github-evernote-jiraRESTbridge | jiraRESTbridge | https://github.com/evernote/jiraRESTbridge | author:evernote description:jiraRESTbridge is a REST API bridge providing access to the JIRA REST API while handling the complication of OAuth
+github-evernote-ops-elesai | ops-elesai | https://github.com/evernote/ops-elesai | author:evernote description:LSI's MegaCli grokking tool
+github-evernote-old-ios-sample | old-ios-sample | https://github.com/evernote/old-ios-sample | author:evernote 
+github-evernote-optconfig | optconfig | https://github.com/evernote/optconfig | author:evernote description:Standardized approach to command-line options, configuration files
 github-evernote-zing | zing | https://github.com/evernote/zing | author:evernote description:Zing is what makes localizing Evernote fun!
+github-evernote-iwana | iwana | https://github.com/evernote/iwana | author:evernote 
+github-evernote-jiraRESTbridge | jiraRESTbridge | https://github.com/evernote/jiraRESTbridge | author:evernote description:jiraRESTbridge is a REST API bridge providing access to the JIRA REST API while handling the complication of OAuth
+github-evernote-ops-senedsa | ops-senedsa | https://github.com/evernote/ops-senedsa | author:evernote description:Utility and library to wrap the Nagios send_nsca binary.
+github-evernote-noms-client | noms-client | https://github.com/evernote/noms-client | author:evernote description:Client libraries for NOMS components
+github-evernote-ops-dribbled | ops-dribbled | https://github.com/evernote/ops-dribbled | author:evernote 
+github-evernote-ops-warthog | ops-warthog | https://github.com/evernote/ops-warthog | author:evernote description:Poking A10 load balancers with a RESTick
+github-evernote-ops-naplug | ops-naplug | https://github.com/evernote/ops-naplug | author:evernote description:Nagios Plugin
 github-evernote-eslint-plugin-evernote | eslint-plugin-evernote | https://github.com/evernote/eslint-plugin-evernote | author:evernote description:Evernote custom eslint plugin
 github-evernote-eslint-config-evernote | eslint-config-evernote | https://github.com/evernote/eslint-config-evernote | author:evernote description:eslint config rules for Evernote projects.
+github-evernote-noms-factloader | noms-factloader | https://github.com/evernote/noms-factloader | author:evernote description:Load Puppet facts into NOMS CMDB
+github-evernote-dumbo | dumbo | https://github.com/evernote/dumbo | author:evernote 
+github-evernote-noms-nagcheck | noms-nagcheck | https://github.com/evernote/noms-nagcheck | author:evernote description:CGI providing on-demand service and host checking for Nagios via Mk LiveStatus
+github-evernote-ncc-api | ncc-api | https://github.com/evernote/ncc-api | author:evernote description:Replacement for cloud-management API
 github-evernote-logging-unixout | logging-unixout | https://github.com/evernote/logging-unixout | author:evernote description:Logger subclass implementing "Unixy" output
-github-evernote-evernote-m2 | evernote-m2 | https://github.com/evernote/evernote-m2 | author:evernote description:Updated Dec 12, 2012
+github-evernote-facette | facette | https://github.com/evernote/facette | author:evernote description:Time series data visualization and graphing software
+github-evernote-evernote-m2 | evernote-m2 | https://github.com/evernote/evernote-m2 | author:evernote 
 github-evernote-serge-dockerfiles | serge-dockerfiles | https://github.com/evernote/serge-dockerfiles | author:evernote description:Install Serge as a Docker container
-github-evernote-dumbo | dumbo | https://github.com/evernote/dumbo | author:evernote description:Updated Apr 5, 2015

@@ -1,1 +1,3 @@
 github-sunrun-cfn-response-java | cfn-response-java | https://github.com/SunRun/cfn-response-java | author:sunrun description:A utility for using Cloudformation with Java8-based lambdas as custom resources
+github-sunrun-jboss-logmanager-ext | jboss-logmanager-ext | https://github.com/SunRun/jboss-logmanager-ext | author:sunrun description:Extended support for JBoss Log Manager
+github-sunrun-docker-consul | docker-consul | https://github.com/SunRun/docker-consul | author:sunrun description:Dockerized Consul

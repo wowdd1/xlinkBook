@@ -1,11 +1,12 @@
 github-sony-sonyflake | sonyflake | https://github.com/sony/sonyflake | author:sony description:A distributed unique ID generator inspired by Twitter's Snowflake
 github-sony-gobreaker | gobreaker | https://github.com/sony/gobreaker | author:sony description:Circuit Breaker implemented in Go
 github-sony-v8eval | v8eval | https://github.com/sony/v8eval | author:sony description:Multi-language bindings to JavaScript engine V8
-github-sony-huis-ui-creator | huis-ui-creator | https://github.com/sony/huis-ui-creator | author:sony description:Updated Aug 10, 2016
-github-sony-generator-cordova-plugin-devbed | generator-cordova-plugin-devbed | https://github.com/sony/generator-cordova-plugin-devbed | author:sony description:Updated May 26, 2016
-github-sony-cordova-plugin-cdp-nativebridge | cordova-plugin-cdp-nativebridge | https://github.com/sony/cordova-plugin-cdp-nativebridge | author:sony description:Updated Apr 14, 2016
+github-sony-huis-ui-creator | huis-ui-creator | https://github.com/sony/huis-ui-creator | author:sony 
+github-sony-generator-cordova-plugin-devbed | generator-cordova-plugin-devbed | https://github.com/sony/generator-cordova-plugin-devbed | author:sony 
+github-sony-cordova-plugin-cdp-nativebridge | cordova-plugin-cdp-nativebridge | https://github.com/sony/cordova-plugin-cdp-nativebridge | author:sony 
 github-sony-cdn-purge-control-php | cdn-purge-control-php | https://github.com/sony/cdn-purge-control-php | author:sony description:Multi CDN purge control library for PHP
-github-sony-pdaf-library | pdaf-library | https://github.com/sony/pdaf-library | author:sony description:Updated Mar 28, 2016
-github-sony-smarttennissensormp4meta | smarttennissensormp4meta | https://github.com/sony/smarttennissensormp4meta | author:sony description:Updated Sep 28, 2016
+github-sony-pdaf-library | pdaf-library | https://github.com/sony/pdaf-library | author:sony 
+github-sony-node-win-usbdev | node-win-usbdev | https://github.com/sony/node-win-usbdev | author:sony 
+github-sony-openocd-nuttx | openocd-nuttx | https://github.com/sony/openocd-nuttx | author:sony description:Fork of OpenOCD with NuttX thread support.
 github-sony-smarttennissensorsdk | smarttennissensorsdk | https://github.com/sony/smarttennissensorsdk | author:sony description:The Smart Tennis Sensor plugs into the end of a tennis racket and records data about all the shots you make throughout a game or practice. With the SDK, you can develop apps for analyzing and presenting that data in real-time.
-github-sony-node-win-usbdev | node-win-usbdev | https://github.com/sony/node-win-usbdev | author:sony description:Updated Apr 28, 2016
+github-sony-smarttennissensormp4meta | smarttennissensormp4meta | https://github.com/sony/smarttennissensormp4meta | author:sony 

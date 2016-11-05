@@ -3,16 +3,17 @@ github-tum-vision-dvo_slam | dvo_slam | https://github.com/tum-vision/dvo_slam |
 github-tum-vision-fastfusion | fastfusion | https://github.com/tum-vision/fastfusion | author:tum-vision description:Volumetric 3D Mapping in Real-Time on a CPU
 github-tum-vision-tum_ardrone | tum_ardrone | https://github.com/tum-vision/tum_ardrone | author:tum-vision description:Repository for the tum_ardrone ROS package, implementing autonomous flight with PTAM-based visual navigation for the Parrot AR.Drone.
 github-tum-vision-dvo | dvo | https://github.com/tum-vision/dvo | author:tum-vision description:Dense Visual Odometry
-github-tum-vision-captcha_recognition | captcha_recognition | https://github.com/tum-vision/captcha_recognition | author:tum-vision description:Updated Nov 2, 2015
+github-tum-vision-captcha_recognition | captcha_recognition | https://github.com/tum-vision/captcha_recognition | author:tum-vision 
 github-tum-vision-ardrone_autonomy | ardrone_autonomy | https://github.com/tum-vision/ardrone_autonomy | author:tum-vision description:This is a slightly modified version of the official ardrone_autonomy package, which You can find here: https://github.com/AutonomyLab/ardrone_autonomy
-github-tum-vision-afs | afs | https://github.com/tum-vision/afs | author:tum-vision description:Automatic Feature Selection
 github-tum-vision-fastms | fastms | https://github.com/tum-vision/fastms | author:tum-vision description:Real-Time Minimization of the Piecewise Smooth Mumford-Shah Functional
-github-tum-vision-autonavx_web | autonavx_web | https://github.com/tum-vision/autonavx_web | author:tum-vision description:interactive exercises for AUTONAVx course
 github-tum-vision-mono_dataset_code | mono_dataset_code | https://github.com/tum-vision/mono_dataset_code | author:tum-vision description:Code for Monocular Visual Odometry Dataset - https://vision.cs.tum.edu/data/datasets/mono-dataset
+github-tum-vision-afs | afs | https://github.com/tum-vision/afs | author:tum-vision description:Automatic Feature Selection
+github-tum-vision-autonavx_web | autonavx_web | https://github.com/tum-vision/autonavx_web | author:tum-vision description:interactive exercises for AUTONAVx course
 github-tum-vision-autonavx_ardrone | autonavx_ardrone | https://github.com/tum-vision/autonavx_ardrone | author:tum-vision description:Code for AR.Drone Exercises
-github-tum-vision-tum_simulator | tum_simulator | https://github.com/tum-vision/tum_simulator | author:tum-vision description:Updated Nov 11, 2015
+github-tum-vision-tum_simulator | tum_simulator | https://github.com/tum-vision/tum_simulator | author:tum-vision 
 github-tum-vision-sublabel_relax | sublabel_relax | https://github.com/tum-vision/sublabel_relax | author:tum-vision description:Sublabel-Accurate Convex Relaxations
-github-tum-vision-prost | prost | https://github.com/tum-vision/prost | author:tum-vision description:Updated Oct 17, 2016
+github-tum-vision-autonavx_skulpt | autonavx_skulpt | https://github.com/tum-vision/autonavx_skulpt | author:tum-vision description:python interpreter and drone simulator for the visnav edx excercises
+github-tum-vision-prost | prost | https://github.com/tum-vision/prost | author:tum-vision 
 github-tum-vision-kfusion_ros | kfusion_ros | https://github.com/tum-vision/kfusion_ros | author:tum-vision description:ROS integration for kfusion
 github-tum-vision-rgbd_demo | rgbd_demo | https://github.com/tum-vision/rgbd_demo | author:tum-vision description:Simple ROS demo for processing RGB-D data
 github-tum-vision-csd_lmnn | csd_lmnn | https://github.com/tum-vision/csd_lmnn | author:tum-vision description:Combined Spectral Descriptors and LMNN for non-rigid 3D shape retrieval

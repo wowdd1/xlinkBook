@@ -2,15 +2,66 @@ github-medallia-Word2VecJava | Word2VecJava | https://github.com/medallia/Word2V
 github-medallia-unsafe | unsafe | https://github.com/medallia/unsafe | author:medallia description:Java library to compile and run C++ code in-memory
 github-medallia-ios-MMAccessoryPanel | ios-MMAccessoryPanel | https://github.com/medallia/ios-MMAccessoryPanel | author:medallia description:MMAccessoryPanel is a iOS Cocoa Touch class that creates and manages collapsible bars on top of any UIScrollView, just below the navigation bar.
 github-medallia-javaone2016 | javaone2016 | https://github.com/medallia/javaone2016 | author:medallia description:Code Generation with JavaCompiler for Fun, Speed, and Business Profit
+github-medallia-docker | docker | https://github.com/medallia/docker | author:medallia description:Hacks and modifications of the open-source application container engine.
 github-medallia-hipchat-notifier | hipchat-notifier | https://github.com/medallia/hipchat-notifier | author:medallia description:Push HipChat notifications to the configured room.
+github-medallia-angular-styleguide | angular-styleguide | https://github.com/medallia/angular-styleguide | author:medallia description:Angular Style Guide: A starting point for Angular development teams to provide consistency through good practices.
+github-medallia-highcharts.com | highcharts.com | https://github.com/medallia/highcharts.com | author:medallia description:Highcharts JS, the JavaScript charting framework
+github-medallia-voldemort | voldemort | https://github.com/medallia/voldemort | author:medallia description:Medallia fork of Voldemort 0.90.1 to added secondary indexes (secondaryIndex branch)
 github-medallia-jinn | jinn | https://github.com/medallia/jinn | author:medallia description:Medallia infrastructure simulation environment
-github-medallia-empty | empty | https://github.com/medallia/empty | author:medallia description:An Empty Repository
-github-medallia-hashtest | hashtest | https://github.com/medallia/hashtest | author:medallia description:Updated Aug 28, 2015
+github-medallia-swagger-codegen | swagger-codegen | https://github.com/medallia/swagger-codegen | author:medallia description:swagger-codegen contains a template-driven engine to generate client code in different languages by parsing your Swagger Resource Declaration.
+github-medallia-go-ceph | go-ceph | https://github.com/medallia/go-ceph | author:medallia description:Go bindings for RADOS, RBD, and CephFS
+github-medallia-FileSaver.js | FileSaver.js | https://github.com/medallia/FileSaver.js | author:medallia description:An HTML5 saveAs() FileSaver implementation
+github-medallia-Setup-Unleashed-Project-Timeline | Setup-Unleashed-Project-Timeline | https://github.com/medallia/Setup-Unleashed-Project-Timeline | author:medallia description:Project timeline for Setup Unleashed
+github-medallia-idiomatic.js | idiomatic.js | https://github.com/medallia/idiomatic.js | author:medallia description:Principles of Writing Consistent, Idiomatic JavaScript
+github-medallia-swagger-parser | swagger-parser | https://github.com/medallia/swagger-parser | author:medallia description:Swagger Spec to Java POJOs
+github-medallia-sway | sway | https://github.com/medallia/sway | author:medallia description:A library that simplifies Swagger integrations.
+github-medallia-android-lang-tool | android-lang-tool | https://github.com/medallia/android-lang-tool | author:medallia description:Tool for exporting and importing Android string resources for translation
 github-medallia-docker-zookeeper | docker-zookeeper | https://github.com/medallia/docker-zookeeper | author:medallia description:zookeeper in a docker container
+github-medallia-sinopia | sinopia | https://github.com/medallia/sinopia | author:medallia description:Private npm repository server
+github-medallia-goipmi | goipmi | https://github.com/medallia/goipmi | author:medallia description:Go IPMI library
+github-medallia-libnetwork | libnetwork | https://github.com/medallia/libnetwork | author:medallia description:networking for containers
 github-medallia-cnm-routed-plugin | cnm-routed-plugin | https://github.com/medallia/cnm-routed-plugin | author:medallia description:Network plugin for Docker to support IP per container using pure L3 routing.
+github-medallia-json-refs | json-refs | https://github.com/medallia/json-refs | author:medallia description:Various utilities for JSON Pointers (http://tools.ietf.org/html/rfc6901) and JSON References (http://tools.ietf.org/html/draft-pbryan-zyp-json-ref-03).
 github-medallia-quagga | quagga | https://github.com/medallia/quagga | author:medallia description:Clone of http://git.savannah.gnu.org/cgit/quagga.git
-github-medallia-docker-aurora-scheduler | docker-aurora-scheduler | https://github.com/medallia/docker-aurora-scheduler | author:medallia description:Aurora scheduler docker image based on github.com/medallia/aurora:docker-parameters
+github-medallia-jq-package-builder | jq-package-builder | https://github.com/medallia/jq-package-builder | author:medallia 
+github-medallia-HTMLHint | HTMLHint | https://github.com/medallia/HTMLHint | author:medallia description:A Static Code Analysis Tool for HTML
+github-medallia-MBProgressHUD | MBProgressHUD | https://github.com/medallia/MBProgressHUD | author:medallia description:MBProgressHUD, an iOS activity indicator view
+github-medallia-jrswizzle | jrswizzle | https://github.com/medallia/jrswizzle | author:medallia description:JRSwizzle with Carthage Support!
+github-medallia-componentkit | componentkit | https://github.com/medallia/componentkit | author:medallia description:A React-inspired view framework for iOS.
+github-medallia-marathon-client | marathon-client | https://github.com/medallia/marathon-client | author:medallia description:Java API client for Mesosphere's Marathon.
+github-medallia-wavefront-push-agent | wavefront-push-agent | https://github.com/medallia/wavefront-push-agent | author:medallia description:Wavefront Java Top-Level Project
 github-medallia-w2v4j | w2v4j | https://github.com/medallia/w2v4j | author:medallia description:Java port of the Word2Vec library
-github-medallia-jq-package-builder | jq-package-builder | https://github.com/medallia/jq-package-builder | author:medallia description:Updated Apr 13, 2016
-github-medallia-ui-challenge | ui-challenge | https://github.com/medallia/ui-challenge | author:medallia description:Updated Jun 17, 2014
+github-medallia-browserify-shim | browserify-shim | https://github.com/medallia/browserify-shim | author:medallia description:Makes CommonJS incompatible files browserifyable.
+github-medallia-jquerytools | jquerytools | https://github.com/medallia/jquerytools | author:medallia description:The missing UI library for the Web
+github-medallia-netty-tools | netty-tools | https://github.com/medallia/netty-tools | author:medallia description:A collection of tools useful when working with JBoss Netty.
+github-medallia-bootstrap | bootstrap | https://github.com/medallia/bootstrap | author:medallia description:Native AngularJS (Angular) directives for Bootstrap. Small footprint (5kB gzipped), no 3rd party JS dependencies (jQuery, bootstrap JS) required. Please read the README.md file before submitting an issue!
+github-medallia-pg_repack | pg_repack | https://github.com/medallia/pg_repack | author:medallia description:Reorganize tables in PostgreSQL databases with minimal locks
+github-medallia-sass-lint | sass-lint | https://github.com/medallia/sass-lint | author:medallia description:Pure Node.js Sass linting
+github-medallia-runc | runc | https://github.com/medallia/runc | author:medallia description:runc container cli tools
+github-medallia-empty | empty | https://github.com/medallia/empty | author:medallia description:An Empty Repository
+github-medallia-rexray | rexray | https://github.com/medallia/rexray | author:medallia description:REX-Ray provides a vendor agnostic storage orchestration engine.
+github-medallia-boot2docker | boot2docker | https://github.com/medallia/boot2docker | author:medallia description:Lightweight Linux for Docker
+github-medallia-docker-gc | docker-gc | https://github.com/medallia/docker-gc | author:medallia description:Docker garbage collection of containers and images
+github-medallia-hashtest | hashtest | https://github.com/medallia/hashtest | author:medallia 
+github-medallia-metrics-influxdb | metrics-influxdb | https://github.com/medallia/metrics-influxdb | author:medallia description:A reporter for metrics which announces measurements to an InfluxDB server.
+github-medallia-cabbie | cabbie | https://github.com/medallia/cabbie | author:medallia description:WebDriver for the masses
+github-medallia-docker-phpLDAPadmin | docker-phpLDAPadmin | https://github.com/medallia/docker-phpLDAPadmin | author:medallia description:A docker image to run phpLDAPadmin
+github-medallia-node-rgbcolor | node-rgbcolor | https://github.com/medallia/node-rgbcolor | author:medallia description:A nodejs module to parse color values
+github-medallia-postcss-url | postcss-url | https://github.com/medallia/postcss-url | author:medallia description:PostCSS plugin to rebase or inline on url().
+github-medallia-JBChartView | JBChartView | https://github.com/medallia/JBChartView | author:medallia description:iOS-based charting library for both line and bar graphs.
+github-medallia-jQuery-FontSpy.js | jQuery-FontSpy.js | https://github.com/medallia/jQuery-FontSpy.js | author:medallia description:Style your @font-face elements while they load or upon catastrophic failure
+github-medallia-ui-challenge | ui-challenge | https://github.com/medallia/ui-challenge | author:medallia 
+github-medallia-dustjs | dustjs | https://github.com/medallia/dustjs | author:medallia description:Asynchronous templates for the browser and node.js
+github-medallia-metrics | metrics | https://github.com/medallia/metrics | author:medallia description:Capturing JVM- and application-level metrics. So you know what's going on.
+github-medallia-thrift | thrift | https://github.com/medallia/thrift | author:medallia description:Fork of Apache Thrift to add support for FutureIface (async client based on Java8 CompletableFuture) in Java code generator
+github-medallia-collectd-docker | collectd-docker | https://github.com/medallia/collectd-docker | author:medallia description:Collect docker container resource usage
+github-medallia-go-jira | go-jira | https://github.com/medallia/go-jira | author:medallia description:Go client library for Atlassian JIRA
 github-medallia-coop-paging-poc | coop-paging-poc | https://github.com/medallia/coop-paging-poc | author:medallia description:Proof-of-Concept for Cooperative Paging
+github-medallia-docker-aurora-scheduler | docker-aurora-scheduler | https://github.com/medallia/docker-aurora-scheduler | author:medallia description:Aurora scheduler docker image based on github.com/medallia/aurora:docker-parameters
+github-medallia-linkerd | linkerd | https://github.com/medallia/linkerd | author:medallia description:A dynamic linker for microservices.
+github-medallia-aurora | aurora | https://github.com/medallia/aurora | author:medallia description:Mirror of Apache Aurora
+github-medallia-convoy | convoy | https://github.com/medallia/convoy | author:medallia description:A Docker volume plugin, managing persistent container volumes.
+github-medallia-netlink | netlink | https://github.com/medallia/netlink | author:medallia description:Simple netlink library for go.
+github-medallia-GTScrollNavigationBar | GTScrollNavigationBar | https://github.com/medallia/GTScrollNavigationBar | author:medallia description:A scrollable UINavigationBar that follows a UIScrollView
+github-medallia-code-guide | code-guide | https://github.com/medallia/code-guide | author:medallia description:Standards for flexible, durable, and sustainable HTML and CSS.
+github-medallia-srcdoc-polyfill | srcdoc-polyfill | https://github.com/medallia/srcdoc-polyfill | author:medallia description:A shim for the iFrame "srcdoc" attribute

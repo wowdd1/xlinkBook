@@ -5,10 +5,10 @@ github-airbnb-aerosolve | aerosolve | https://github.com/airbnb/aerosolve | auth
 github-airbnb-infinity | infinity | https://github.com/airbnb/infinity | author:airbnb description:UITableViews for the web (DEPRECATED)
 github-airbnb-react-dates | react-dates | https://github.com/airbnb/react-dates | author:airbnb description:An accessible, easily internationalizable, mobile-friendly datepicker library for the web
 github-airbnb-hypernova | hypernova | https://github.com/airbnb/hypernova | author:airbnb description:A service for server-side rendering your JavaScript views
-github-airbnb-polyglot.js | polyglot.js | https://github.com/airbnb/polyglot.js | author:airbnb description:Give your JavaScript the ability to speak many languages.
 github-airbnb-react-native-maps | react-native-maps | https://github.com/airbnb/react-native-maps | author:airbnb description:React Native Mapview component for iOS + Android
-github-airbnb-airpal | airpal | https://github.com/airbnb/airpal | author:airbnb description:Web UI for PrestoDB.
+github-airbnb-polyglot.js | polyglot.js | https://github.com/airbnb/polyglot.js | author:airbnb description:Give your JavaScript the ability to speak many languages.
 github-airbnb-css | css | https://github.com/airbnb/css | author:airbnb description:A mostly reasonable approach to CSS and Sass.
+github-airbnb-airpal | airpal | https://github.com/airbnb/airpal | author:airbnb description:Web UI for PrestoDB.
 github-airbnb-DeepLinkDispatch | DeepLinkDispatch | https://github.com/airbnb/DeepLinkDispatch | author:airbnb description:A simple, annotation-based library for making deep link handling better on Android
 github-airbnb-synapse | synapse | https://github.com/airbnb/synapse | author:airbnb description:A transparent service discovery framework for connecting an SOA
 github-airbnb-ruby | ruby | https://github.com/airbnb/ruby | author:airbnb description:Ruby Style Guide
@@ -19,43 +19,97 @@ github-airbnb-rheostat | rheostat | https://github.com/airbnb/rheostat | author:
 github-airbnb-RxGroups | RxGroups | https://github.com/airbnb/RxGroups | author:airbnb description:Easily group RxJava Observables together and tie them to your Android Activity lifecycle
 github-airbnb-react-with-styles | react-with-styles | https://github.com/airbnb/react-with-styles | author:airbnb description:Use CSS-in-JavaScript with themes for React without being tightly coupled to one implementation
 github-airbnb-hammerspace | hammerspace | https://github.com/airbnb/hammerspace | author:airbnb description:Off-heap large object storage
+github-airbnb-knowledge-repo | knowledge-repo | https://github.com/airbnb/knowledge-repo | author:airbnb description:A next-generation curated knowledge sharing platform for data scientists and other technical professions.
 github-airbnb-zonify | zonify | https://github.com/airbnb/zonify | author:airbnb description:a command line tool for generating DNS records from EC2 instances
 github-airbnb-backpack | backpack | https://github.com/airbnb/backpack | author:airbnb description:A pack of UI components for Backbone projects. Grab your backpack and enjoy the Views.
 github-airbnb-trebuchet | trebuchet | https://github.com/airbnb/trebuchet | author:airbnb description:Trebuchet launches features at people
-github-airbnb-knowledge-repo | knowledge-repo | https://github.com/airbnb/knowledge-repo | author:airbnb description:A next-generation curated knowledge sharing platform for data scientists and other technical professions.
-github-airbnb-smartstack-cookbook | smartstack-cookbook | https://github.com/airbnb/smartstack-cookbook | author:airbnb description:The chef recipes for running and testing Airbnb's SmartStack
 github-airbnb-kafkat | kafkat | https://github.com/airbnb/kafkat | author:airbnb description:KafkaT-ool
+github-airbnb-smartstack-cookbook | smartstack-cookbook | https://github.com/airbnb/smartstack-cookbook | author:airbnb description:The chef recipes for running and testing Airbnb's SmartStack
 github-airbnb-stemcell | stemcell | https://github.com/airbnb/stemcell | author:airbnb description:Airbnb's EC2 instance creation and bootstrapping tool
 github-airbnb-optica | optica | https://github.com/airbnb/optica | author:airbnb description:A tool for keeping track of nodes in your infrastructure
 github-airbnb-twitter-commons-sample | twitter-commons-sample | https://github.com/airbnb/twitter-commons-sample | author:airbnb description:A sample REST service based on Twitter Commons
 github-airbnb-kafka-statsd-metrics2 | kafka-statsd-metrics2 | https://github.com/airbnb/kafka-statsd-metrics2 | author:airbnb description:Send Kafka Metrics to StatsD.
 github-airbnb-reair | reair | https://github.com/airbnb/reair | author:airbnb description:ReAir is a collection of easy-to-use tools for replicating tables and partitions between Hive data warehouses.
-github-airbnb-babel-preset-airbnb | babel-preset-airbnb | https://github.com/airbnb/babel-preset-airbnb | author:airbnb description:A babel preset for transforming your JavaScript for Airbnb
+github-airbnb-babel-plugin-dynamic-import-webpack | babel-plugin-dynamic-import-webpack | https://github.com/airbnb/babel-plugin-dynamic-import-webpack | author:airbnb description:Babel plugin to transpile import() to require.ensure, for Webpack
 github-airbnb-interferon | interferon | https://github.com/airbnb/interferon | author:airbnb description:Signaling you about infrastructure or application issues
+github-airbnb-babel-preset-airbnb | babel-preset-airbnb | https://github.com/airbnb/babel-preset-airbnb | author:airbnb description:A babel preset for transforming your JavaScript for Airbnb
 github-airbnb-hypernova-react | hypernova-react | https://github.com/airbnb/hypernova-react | author:airbnb description:React bindings for Hypernova.
 github-airbnb-plog | plog | https://github.com/airbnb/plog | author:airbnb description:Fire-and-forget UDP logging service with custom Netty pipelines & extensive monitoring
 github-airbnb-cloud-maker | cloud-maker | https://github.com/airbnb/cloud-maker | author:airbnb description:Building castles in the sky
 github-airbnb-backbone.baseview | backbone.baseview | https://github.com/airbnb/backbone.baseview | author:airbnb description:DEPRECATED: A simple base view class for Backbone.View
+github-airbnb-MaxScale | MaxScale | https://github.com/airbnb/MaxScale | author:airbnb description:An intelligent database proxy.
 github-airbnb-hypernova-ruby | hypernova-ruby | https://github.com/airbnb/hypernova-ruby | author:airbnb description:Ruby client for Hypernova.
 github-airbnb-deline | deline | https://github.com/airbnb/deline | author:airbnb description:An ES6 template literal tag that strips unwanted newlines from multi-line strings.
+github-airbnb-faker | faker | https://github.com/airbnb/faker | author:airbnb description:A library for generating fake data such as names, addresses, and phone numbers.
+github-airbnb-glide | glide | https://github.com/airbnb/glide | author:airbnb description:An image loading and caching library for Android focused on smooth scrolling
 github-airbnb-hypernova-node | hypernova-node | https://github.com/airbnb/hypernova-node | author:airbnb description:node.js client for Hypernova
+github-airbnb-wechat-rails | wechat-rails | https://github.com/airbnb/wechat-rails | author:airbnb description:API and message handling for wechat in rails environment
 github-airbnb-sssp | sssp | https://github.com/airbnb/sssp | author:airbnb description:Software distribution by way of S3 signed URLs
 github-airbnb-mocha-wrap | mocha-wrap | https://github.com/airbnb/mocha-wrap | author:airbnb description:Fluent pluggable interface for easily wrapping `describe` and `it` blocks in Mocha tests.
 github-airbnb-billow | billow | https://github.com/airbnb/billow | author:airbnb description:Query AWS data without API credentials. Don't wait for a response.
-github-airbnb-js-shims | js-shims | https://github.com/airbnb/js-shims | author:airbnb description:JS language shims used by Airbnb.
 github-airbnb-apple-tv-auth | apple-tv-auth | https://github.com/airbnb/apple-tv-auth | author:airbnb description:Example application to demonstrate how to build Apple TV style authentication.
-github-airbnb-chancery | chancery | https://github.com/airbnb/chancery | author:airbnb description:Automate on Github pushes
+github-airbnb-js-shims | js-shims | https://github.com/airbnb/js-shims | author:airbnb description:JS language shims used by Airbnb.
+github-airbnb-Backbone-relational | Backbone-relational | https://github.com/airbnb/Backbone-relational | author:airbnb description:Get and set relations (one-to-one, one-to-many, many-to-one) for Backbone models
+github-airbnb-java-code-styles | java-code-styles | https://github.com/airbnb/java-code-styles | author:airbnb description:IntelliJ IDEA code style settings for Airbnb's Java and Android projects.
+github-airbnb-react-native-push-notification | react-native-push-notification | https://github.com/airbnb/react-native-push-notification | author:airbnb description:React Native Local and Remote Notifications
+github-airbnb-tapkulibrary | tapkulibrary | https://github.com/airbnb/tapkulibrary | author:airbnb description:tap + haiku = tapku, a well crafted open source iOS framework
+github-airbnb-node-spotify-web | node-spotify-web | https://github.com/airbnb/node-spotify-web | author:airbnb description:Node.js implementation of the Spotify Web protocol
+github-airbnb-android-mapviewballoons | android-mapviewballoons | https://github.com/airbnb/android-mapviewballoons | author:airbnb description:Simple information balloon annotation for Android MapView
+github-airbnb-brakeman | brakeman | https://github.com/airbnb/brakeman | author:airbnb description:A static analysis security vulnerability scanner for Ruby on Rails applications
+github-airbnb-sticky-headers-recyclerview | sticky-headers-recyclerview | https://github.com/airbnb/sticky-headers-recyclerview | author:airbnb description:Sticky Headers decorator for Android's RecyclerView
+github-airbnb-camus | camus | https://github.com/airbnb/camus | author:airbnb description:Kafka to HDFS pipeline
 github-airbnb-react-with-styles-interface-aphrodite | react-with-styles-interface-aphrodite | https://github.com/airbnb/react-with-styles-interface-aphrodite | author:airbnb description:Interface to use react-with-styles with Aphrodite
+github-airbnb-marathon | marathon | https://github.com/airbnb/marathon | author:airbnb description:Mesos framework for long running services
+github-airbnb-chancery | chancery | https://github.com/airbnb/chancery | author:airbnb description:Automate on Github pushes
 github-airbnb-appear | appear | https://github.com/airbnb/appear | author:airbnb description:reveal terminal programs in the gui
-github-airbnb-gem-aws-creds | gem-aws-creds | https://github.com/airbnb/gem-aws-creds | author:airbnb description:Easily manipulate and access AWS credentials
-github-airbnb-react-with-styles-interface-react-native | react-with-styles-interface-react-native | https://github.com/airbnb/react-with-styles-interface-react-native | author:airbnb description:Interface to use react-with-styles with React Native
-github-airbnb-eslint-plugin-react-with-styles | eslint-plugin-react-with-styles | https://github.com/airbnb/eslint-plugin-react-with-styles | author:airbnb description:ESLint plugin for react-with-styles
-github-airbnb-cryo | cryo | https://github.com/airbnb/cryo | author:airbnb description:Updated Jan 8, 2016
-github-airbnb-browser-shims | browser-shims | https://github.com/airbnb/browser-shims | author:airbnb description:Browser and JS shims used by Airbnb.
 github-airbnb-prop-types | prop-types | https://github.com/airbnb/prop-types | author:airbnb description:Custom React PropType validators that we use at Airbnb.
-github-airbnb-hypernova-aphrodite | hypernova-aphrodite | https://github.com/airbnb/hypernova-aphrodite | author:airbnb description:Updated Sep 15, 2016
-github-airbnb-wraithdb | wraithdb | https://github.com/airbnb/wraithdb | author:airbnb description:Updated Mar 11, 2013
-github-airbnb-gem-aws-instmd | gem-aws-instmd | https://github.com/airbnb/gem-aws-instmd | author:airbnb description:Effortless access to EC2 instance metadata
-github-airbnb-collapstring | collapstring | https://github.com/airbnb/collapstring | author:airbnb description:Collapse quoted strings in strings
+github-airbnb-mesos | mesos | https://github.com/airbnb/mesos | author:airbnb description:Mirror of Apache Mesos
+github-airbnb-python-slackclient | python-slackclient | https://github.com/airbnb/python-slackclient | author:airbnb 
+github-airbnb-eslint-plugin-react-with-styles | eslint-plugin-react-with-styles | https://github.com/airbnb/eslint-plugin-react-with-styles | author:airbnb description:ESLint plugin for react-with-styles
+github-airbnb-aws-cli | aws-cli | https://github.com/airbnb/aws-cli | author:airbnb description:Universal Command Line Interface for Amazon Web Services
+github-airbnb-jmxtrans | jmxtrans | https://github.com/airbnb/jmxtrans | author:airbnb description:jmxtrans
+github-airbnb-reactivex.github.io | reactivex.github.io | https://github.com/airbnb/reactivex.github.io | author:airbnb description:ReactiveX Website
+github-airbnb-retrofit | retrofit | https://github.com/airbnb/retrofit | author:airbnb description:Type-safe REST client for Android and Java by Square, Inc.
+github-airbnb-squash-java | squash-java | https://github.com/airbnb/squash-java | author:airbnb description:The Squash client library for Java projects.
+github-airbnb-gem-aws-creds | gem-aws-creds | https://github.com/airbnb/gem-aws-creds | author:airbnb description:Easily manipulate and access AWS credentials
+github-airbnb-mixpanel-iphone | mixpanel-iphone | https://github.com/airbnb/mixpanel-iphone | author:airbnb description:iPhone tracking library for Mixpanel Analytics
+github-airbnb-browser-shims | browser-shims | https://github.com/airbnb/browser-shims | author:airbnb description:Browser and JS shims used by Airbnb.
+github-airbnb-docker-registry | docker-registry | https://github.com/airbnb/docker-registry | author:airbnb description:Registry server for Docker (hosting/delivering of repositories and images)
+github-airbnb-react-with-styles-interface-react-native | react-with-styles-interface-react-native | https://github.com/airbnb/react-with-styles-interface-react-native | author:airbnb description:Interface to use react-with-styles with React Native
+github-airbnb-docker-client | docker-client | https://github.com/airbnb/docker-client | author:airbnb description:Docker client library to access the Docker remote API.
+github-airbnb-security_monkey | security_monkey | https://github.com/airbnb/security_monkey | author:airbnb description:Security Monkey
+github-airbnb-audited | audited | https://github.com/airbnb/audited | author:airbnb description:Audited (formerly acts_as_audited) is an ORM extension that logs all changes to your Rails models.
+github-airbnb-cryo | cryo | https://github.com/airbnb/cryo | author:airbnb 
+github-airbnb-elephant-bird | elephant-bird | https://github.com/airbnb/elephant-bird | author:airbnb description:Twitter's collection of LZO and Protocol Buffer-related Hadoop, Pig, Hive, and HBase code.
+github-airbnb-hadoop | hadoop | https://github.com/airbnb/hadoop | author:airbnb description:Hadoop on Mesos
+github-airbnb-newrelic_aws_cloudwatch_plugin | newrelic_aws_cloudwatch_plugin | https://github.com/airbnb/newrelic_aws_cloudwatch_plugin | author:airbnb description:New Relic AWS Cloudwatch Plugin
+github-airbnb-statsd-ruby | statsd-ruby | https://github.com/airbnb/statsd-ruby | author:airbnb description:A Ruby Statsd client that isn't a direct port of the Python example code. Because Ruby isn't Python.
+github-airbnb-hypernova-aphrodite | hypernova-aphrodite | https://github.com/airbnb/hypernova-aphrodite | author:airbnb 
+github-airbnb-storm-kafka-0.8-plus | storm-kafka-0.8-plus | https://github.com/airbnb/storm-kafka-0.8-plus | author:airbnb 
+github-airbnb-brace | brace | https://github.com/airbnb/brace | author:airbnb description:browserify compatible version of the ace editor.
+github-airbnb-honeypot | honeypot | https://github.com/airbnb/honeypot | author:airbnb description:Hive log parser and visualizer that plugs into Airflow
+github-airbnb-okhttp | okhttp | https://github.com/airbnb/okhttp | author:airbnb description:An HTTP+SPDY client for Android and Java applications.
+github-airbnb-react-native | react-native | https://github.com/airbnb/react-native | author:airbnb description:A framework for building native apps with React.
+github-airbnb-poseidon | poseidon | https://github.com/airbnb/poseidon | author:airbnb description:A client for Kafka 0.8
+github-airbnb-wraithdb | wraithdb | https://github.com/airbnb/wraithdb | author:airbnb 
+github-airbnb-marginalia | marginalia | https://github.com/airbnb/marginalia | author:airbnb description:Attach comments to ActiveRecord's SQL queries
+github-airbnb-zendesk-api | zendesk-api | https://github.com/airbnb/zendesk-api | author:airbnb description:A Ruby gem to interact with the Zendesk API
+github-airbnb-kafka | kafka | https://github.com/airbnb/kafka | author:airbnb description:Mirror of Apache Kafka
 github-airbnb-node-plog-client | node-plog-client | https://github.com/airbnb/node-plog-client | author:airbnb description:Node.js client for Plog, the Kafka forwarder
+github-airbnb-gem-aws-instmd | gem-aws-instmd | https://github.com/airbnb/gem-aws-instmd | author:airbnb description:Effortless access to EC2 instance metadata
+github-airbnb-requirejs-rails | requirejs-rails | https://github.com/airbnb/requirejs-rails | author:airbnb description:RequireJS support for your Rails 3 application
+github-airbnb-storm-mesos | storm-mesos | https://github.com/airbnb/storm-mesos | author:airbnb description:Run Storm on top of the Mesos cluster resource manager
+github-airbnb-collapstring | collapstring | https://github.com/airbnb/collapstring | author:airbnb description:Collapse quoted strings in strings
+github-airbnb-s3cmd | s3cmd | https://github.com/airbnb/s3cmd | author:airbnb description:Official s3cmd repo -- Command line tool for managing Amazon S3 and CloudFront services
+github-airbnb-poseidon_cluster | poseidon_cluster | https://github.com/airbnb/poseidon_cluster | author:airbnb description:Poseidon cluster extensions
+github-airbnb-zendesk_api_client_rb | zendesk_api_client_rb | https://github.com/airbnb/zendesk_api_client_rb | author:airbnb 
+github-airbnb-newrelic_plugin | newrelic_plugin | https://github.com/airbnb/newrelic_plugin | author:airbnb description:New Relic Ruby Plugin Agent SDK
+github-airbnb-erubis | erubis | https://github.com/airbnb/erubis | author:airbnb description:Fork of erubis
+github-airbnb-ruby-prof | ruby-prof | https://github.com/airbnb/ruby-prof | author:airbnb description:ruby-prof: a code profiler for MRI rubies
+github-airbnb-buck | buck | https://github.com/airbnb/buck | author:airbnb description:A fast build system that encourages the creation of small, reusable modules over a variety of platforms and languages.
+github-airbnb-homebrew | homebrew | https://github.com/airbnb/homebrew | author:airbnb description:Development repository for Opscode Cookbook homebrew
+github-airbnb-Flask-AppBuilder | Flask-AppBuilder | https://github.com/airbnb/Flask-AppBuilder | author:airbnb description:Simple and rapid application development framework, built on top of Flask. includes detailed security, auto CRUD generation for your models, google charts and much more. Demo (login with guest/welcome) - http://flaskappbuilder.pythonanywhere.com/
+github-airbnb-storm | storm | https://github.com/airbnb/storm | author:airbnb description:Distributed and fault-tolerant realtime computation: stream processing, continuous computation, distributed RPC, and more
 github-airbnb-m2repository | m2repository | https://github.com/airbnb/m2repository | author:airbnb description:Maven repository for some of Airbnb's own libraries and forks
+github-airbnb-rspec-gc-control | rspec-gc-control | https://github.com/airbnb/rspec-gc-control | author:airbnb description:Add a mechanism to control the garbage collector in RSpec.
+github-airbnb-dd-agent | dd-agent | https://github.com/airbnb/dd-agent | author:airbnb description:Datadog Agent

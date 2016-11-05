@@ -2,7 +2,14 @@ github-tanium-pytan | pytan | https://github.com/tanium/pytan | author:tanium de
 github-tanium-TaniumOsquery | TaniumOsquery | https://github.com/tanium/TaniumOsquery | author:tanium description:An integration between Tanium and Osquery
 github-tanium-SplunkforTanium | SplunkforTanium | https://github.com/tanium/SplunkforTanium | author:tanium description:This is the Splunk App integrated with Tanium
 github-tanium-pyjenkins | pyjenkins | https://github.com/tanium/pyjenkins | author:tanium description:A Jenkins meta-plugin for defining a build in python sourced from version control
-github-tanium-PaloAltoNetworksTrapsContent | PaloAltoNetworksTrapsContent | https://github.com/tanium/PaloAltoNetworksTrapsContent | author:tanium description:Updated Mar 31, 2016
+github-tanium-PaloAltoNetworksTrapsContent | PaloAltoNetworksTrapsContent | https://github.com/tanium/PaloAltoNetworksTrapsContent | author:tanium 
+github-tanium-swagger-editor | swagger-editor | https://github.com/tanium/swagger-editor | author:tanium description:Swagger Editor
+github-tanium-scandir | scandir | https://github.com/tanium/scandir | author:tanium description:Better directory iterator and faster os.walk(), now in the Python 3.5 stdlib
+github-tanium-ng-idle | ng-idle | https://github.com/tanium/ng-idle | author:tanium description:Responding to idle users in AngularJS applications.
+github-tanium-reveal.js | reveal.js | https://github.com/tanium/reveal.js | author:tanium description:The HTML Presentation Framework
+github-tanium-yara | yara | https://github.com/tanium/yara | author:tanium description:The pattern matching swiss knife
 github-tanium-Detect-IocUpload | Detect-IocUpload | https://github.com/tanium/Detect-IocUpload | author:tanium description:Example code for integration partners to use when integrating with Tanium Detect.
 github-tanium-stand-alone-python | stand-alone-python | https://github.com/tanium/stand-alone-python | author:tanium description:This provides scripts that utilize py2exe to produce a stand alone Python interpreter as a single Windows executable.
 github-tanium-parameterized-pytests | parameterized-pytests | https://github.com/tanium/parameterized-pytests | author:tanium description:Provides support for parameterizing tests in python's unittest
+github-tanium-p4-plugin | p4-plugin | https://github.com/tanium/p4-plugin | author:tanium description:Perforce plugin for Jenkins
+github-tanium-bower-angular-translate | bower-angular-translate | https://github.com/tanium/bower-angular-translate | author:tanium description:angular-translate Bower Package

@@ -1,8 +1,30 @@
 github-warbyparker-Warby_MqModule | Warby_MqModule | https://github.com/WarbyParker/Warby_MqModule | author:warbyparker description:A Magento module for publishing an JSON order object to a rabbit exchange on order conformation.
 github-warbyparker-Warby_BulkGiftAccount | Warby_BulkGiftAccount | https://github.com/WarbyParker/Warby_BulkGiftAccount | author:warbyparker description:An Enterprise Magento module for the bulk creation of gift cards.
 github-warbyparker-ansible-coreos | ansible-coreos | https://github.com/WarbyParker/ansible-coreos | author:warbyparker description:Ansible Module to manage CoreOS
+github-warbyparker-pong-rank | pong-rank | https://github.com/WarbyParker/pong-rank | author:warbyparker description:App to rank office ping pong competitors based on the Elo rating system
+github-warbyparker-exoskeleton | exoskeleton | https://github.com/WarbyParker/exoskeleton | author:warbyparker description:Faster and leaner Backbone for your HTML5 apps
 github-warbyparker-functional-react | functional-react | https://github.com/WarbyParker/functional-react | author:warbyparker description:Exploration into functional frontend with React
-github-warbyparker-raspberry-pi | raspberry-pi | https://github.com/WarbyParker/raspberry-pi | author:warbyparker description:Updated Mar 17, 2014
-github-warbyparker-hipchat_freshdesk_addon | hipchat_freshdesk_addon | https://github.com/WarbyParker/hipchat_freshdesk_addon | author:warbyparker description:Hipchat Addon
-github-warbyparker-www_lodash | www_lodash | https://github.com/WarbyParker/www_lodash | author:warbyparker description:Custom Lodash bundle
+github-warbyparker-js-logger | js-logger | https://github.com/WarbyParker/js-logger | author:warbyparker description:Lightweight, unobtrusive, configurable JavaScript logger.
+github-warbyparker-faker.js | faker.js | https://github.com/WarbyParker/faker.js | author:warbyparker description:generate massive amounts of fake data in Node.js and the browser
+github-warbyparker-docker-selenium | docker-selenium | https://github.com/WarbyParker/docker-selenium | author:warbyparker description:Docker images for Selenium Standalone Server
+github-warbyparker-backbone.validation | backbone.validation | https://github.com/WarbyParker/backbone.validation | author:warbyparker description:A validation plugin for Backbone.js that validates both your model as well as form input
+github-warbyparker-distribution | distribution | https://github.com/WarbyParker/distribution | author:warbyparker description:The Docker toolset to pack, ship, store, and deliver content
+github-warbyparker-marked | marked | https://github.com/WarbyParker/marked | author:warbyparker description:A markdown parser and compiler. Built for speed.
+github-warbyparker-opsweekly | opsweekly | https://github.com/WarbyParker/opsweekly | author:warbyparker description:On call alert classification and reporting
+github-warbyparker-catbox-redis-master-slave | catbox-redis-master-slave | https://github.com/WarbyParker/catbox-redis-master-slave | author:warbyparker description:redis engine for catbox that handles the master-slave replication
 github-warbyparker-warbyparker.github.io | warbyparker.github.io | https://github.com/WarbyParker/warbyparker.github.io | author:warbyparker description:Prototypes, demos, and miscellaneous web paraphernalia.
+github-warbyparker-mozaik-demo | mozaik-demo | https://github.com/WarbyParker/mozaik-demo | author:warbyparker description:Sample mozaïk app with two dashboards
+github-warbyparker-grunt-coffee-react | grunt-coffee-react | https://github.com/WarbyParker/grunt-coffee-react | author:warbyparker description:DEPRECATED – Compile CJSX files to JavaScript using Grunt
+github-warbyparker-catbox-redis | catbox-redis | https://github.com/WarbyParker/catbox-redis | author:warbyparker description:Redis adapter for catbox
+github-warbyparker-node-redis-gzip | node-redis-gzip | https://github.com/WarbyParker/node-redis-gzip | author:warbyparker description:Magical gzip/gunzip on calls to setz(), getz(), mgetz()
+github-warbyparker-www_lodash | www_lodash | https://github.com/WarbyParker/www_lodash | author:warbyparker description:Custom Lodash bundle
+github-warbyparker-backbone.radio | backbone.radio | https://github.com/WarbyParker/backbone.radio | author:warbyparker description:Messaging patterns for Backbone applications.
+github-warbyparker-backbone-deep-model | backbone-deep-model | https://github.com/WarbyParker/backbone-deep-model | author:warbyparker description:Improved support for models with nested attributes.
+github-warbyparker-pyjade | pyjade | https://github.com/WarbyParker/pyjade | author:warbyparker description:Jade syntax adapter for Django, Jinja2 and Mako templates
+github-warbyparker-raspberry-pi | raspberry-pi | https://github.com/WarbyParker/raspberry-pi | author:warbyparker 
+github-warbyparker-responsive-carousel | responsive-carousel | https://github.com/WarbyParker/responsive-carousel | author:warbyparker description:A jQuery-based script for responsive carousels that work with mouse, touch, and keyboard
+github-warbyparker-schematics | schematics | https://github.com/WarbyParker/schematics | author:warbyparker description:Python Data Structures for Humans™.
+github-warbyparker-ansible | ansible | https://github.com/WarbyParker/ansible | author:warbyparker description:Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid writing scripts or custom code to deploy and update your applications— automate in a language that approaches plain English, using SSH, with no agents to install on remote systems.
+github-warbyparker-hipchat_freshdesk_addon | hipchat_freshdesk_addon | https://github.com/WarbyParker/hipchat_freshdesk_addon | author:warbyparker description:Hipchat Addon
+github-warbyparker-foundation | foundation | https://github.com/WarbyParker/foundation | author:warbyparker description:The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites and apps that work on any kind of device.
+github-warbyparker-FuelSDK-Python | FuelSDK-Python | https://github.com/WarbyParker/FuelSDK-Python | author:warbyparker description:FuelSDK for python

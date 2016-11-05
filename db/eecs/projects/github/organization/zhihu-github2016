@@ -1,2 +1,12 @@
 github-zhihu-kids | kids | https://github.com/zhihu/kids | author:zhihu description:Kids Is Data Stream
 github-zhihu-redis-shard | redis-shard | https://github.com/zhihu/redis-shard | author:zhihu description:Redis sharding client library
+github-zhihu-mirror | mirror | https://github.com/zhihu/mirror | author:zhihu description:Yet another Sketch Mirror App for Android.
+github-zhihu-jondis | jondis | https://github.com/zhihu/jondis | author:zhihu description:Jon's Redis Pool. Provides Master / Slave discovery and failover
+github-zhihu-phabricator | phabricator | https://github.com/zhihu/phabricator | author:zhihu description:An early release of Facebook's development tools.
+github-zhihu-libphutil | libphutil | https://github.com/zhihu/libphutil | author:zhihu description:A collection of PHP utility classes
+github-zhihu-puppet-consul | puppet-consul | https://github.com/zhihu/puppet-consul | author:zhihu description:A Puppet Module to Manage Consul
+github-zhihu-arcanist | arcanist | https://github.com/zhihu/arcanist | author:zhihu description:Arcanist is the CLI to Differential, Facebook's code review tool. Currently an unstable preview release.
+github-zhihu-puppet-cdh | puppet-cdh | https://github.com/zhihu/puppet-cdh | author:zhihu description:Puppet module for Hadoop and the rest of Cloudera's CDH 5.
+github-zhihu-protobuf | protobuf | https://github.com/zhihu/protobuf | author:zhihu description:Protocol Buffers - Google's data interchange format
+github-zhihu-chromium.src | chromium.src | https://github.com/zhihu/chromium.src | author:zhihu description:mirror of https://chromium.googlesource.com/chromium/src.git
+github-zhihu-disqus-arcanist | disqus-arcanist | https://github.com/zhihu/disqus-arcanist | author:zhihu description:Arcanist extensions by Disqus

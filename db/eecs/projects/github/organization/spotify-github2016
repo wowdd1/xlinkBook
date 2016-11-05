@@ -26,14 +26,14 @@ github-spotify-web-api-auth-examples | web-api-auth-examples | https://github.co
 github-spotify-JniHelpers | JniHelpers | https://github.com/spotify/JniHelpers | author:spotify description:Tools for writing great JNI code
 github-spotify-quickstart | quickstart | https://github.com/spotify/quickstart | author:spotify description:A CommonJS module resolver, loader and compiler for node.js and browsers.
 github-spotify-netty-zmtp | netty-zmtp | https://github.com/spotify/netty-zmtp | author:spotify description:A Netty implementation of ZMTP, the ZeroMQ Message Transport Protocol.
-github-spotify-ios-style | ios-style | https://github.com/spotify/ios-style | author:spotify description:Guidelines for iOS development in use at Spotify
 github-spotify-ramlfications | ramlfications | https://github.com/spotify/ramlfications | author:spotify description:Python parser for RAML
+github-spotify-ios-style | ios-style | https://github.com/spotify/ios-style | author:spotify description:Guidelines for iOS development in use at Spotify
 github-spotify-dockerfile-mode | dockerfile-mode | https://github.com/spotify/dockerfile-mode | author:spotify description:An emacs mode for handling Dockerfiles
 github-spotify-cassandra-reaper | cassandra-reaper | https://github.com/spotify/cassandra-reaper | author:spotify description:Software to run automated repairs of cassandra
 github-spotify-docker-cassandra | docker-cassandra | https://github.com/spotify/docker-cassandra | author:spotify description:Cassandra in Docker with fast startup
 github-spotify-SPStackedNav | SPStackedNav | https://github.com/spotify/SPStackedNav | author:spotify description:Navigation controller which represents its content in stacks of panes, rather than one at a time
-github-spotify-lingon | lingon | https://github.com/spotify/lingon | author:spotify description:A user friendly tool for building single-page JavaScript applications
 github-spotify-echoprint-server | echoprint-server | https://github.com/spotify/echoprint-server | author:spotify description:Server for the Echoprint audio fingerprint system
+github-spotify-lingon | lingon | https://github.com/spotify/lingon | author:spotify description:A user friendly tool for building single-page JavaScript applications
 github-spotify-threaddump-analyzer | threaddump-analyzer | https://github.com/spotify/threaddump-analyzer | author:spotify description:A JVM threaddump analyzer
 github-spotify-ffwd | ffwd | https://github.com/spotify/ffwd | author:spotify description:An event and metrics fast-forwarding agent.
 github-spotify-git-test | git-test | https://github.com/spotify/git-test | author:spotify description:test your commits
@@ -42,8 +42,8 @@ github-spotify-boilerplate-app | boilerplate-app | https://github.com/spotify/bo
 github-spotify-docker-stress | docker-stress | https://github.com/spotify/docker-stress | author:spotify description:Simple docker stress test and monitoring tools
 github-spotify-visualizer-app | visualizer-app | https://github.com/spotify/visualizer-app | author:spotify description:Visualizer App Demo
 github-spotify-crtauth | crtauth | https://github.com/spotify/crtauth | author:spotify description:a public key backed client/server authentication system
-github-spotify-hdfs2cass | hdfs2cass | https://github.com/spotify/hdfs2cass | author:spotify description:Hadoop mapreduce job to bulk load data into Cassandra
 github-spotify-moob | moob | https://github.com/spotify/moob | author:spotify description:Control systems using Web-based out-of-band managers without a browser
+github-spotify-hdfs2cass | hdfs2cass | https://github.com/spotify/hdfs2cass | author:spotify description:Hadoop mapreduce job to bulk load data into Cassandra
 github-spotify-rspec-dns | rspec-dns | https://github.com/spotify/rspec-dns | author:spotify description:Easily test your DNS with RSpec
 github-spotify-sparkey-java | sparkey-java | https://github.com/spotify/sparkey-java | author:spotify description:Java implementation of the Sparkey key value store
 github-spotify-folsom | folsom | https://github.com/spotify/folsom | author:spotify description:An asynchronous memcache client for Java
@@ -52,87 +52,107 @@ github-spotify-spotiamb | spotiamb | https://github.com/spotify/spotiamb | autho
 github-spotify-super-smash-brogp | super-smash-brogp | https://github.com/spotify/super-smash-brogp | author:spotify description:Sends and withdraws BGP prefixes for fun.
 github-spotify-ratatool | ratatool | https://github.com/spotify/ratatool | author:spotify description:A tool for random data sampling and generation
 github-spotify-python-graphwalker | python-graphwalker | https://github.com/spotify/python-graphwalker | author:spotify description:Python re-implementation of the graphwalker testing tool
-github-spotify-spotify-js-challenge | spotify-js-challenge | https://github.com/spotify/spotify-js-challenge | author:spotify description:Updated Oct 2, 2013
-github-spotify-pyschema | pyschema | https://github.com/spotify/pyschema | author:spotify description:Python library for class-based schema definition, object serialization and data validation
+github-spotify-spotify-js-challenge | spotify-js-challenge | https://github.com/spotify/spotify-js-challenge | author:spotify 
 github-spotify-big-data-rosetta-code | big-data-rosetta-code | https://github.com/spotify/big-data-rosetta-code | author:spotify description:Code snippets for solving common big data problems in various platforms. Inspired by Rosetta Code (http://rosettacode.org/)
+github-spotify-pyschema | pyschema | https://github.com/spotify/pyschema | author:spotify description:Python library for class-based schema definition, object serialization and data validation
 github-spotify-spark-bigquery | spark-bigquery | https://github.com/spotify/spark-bigquery | author:spotify description:Google BigQuery support for Spark, SQL, and DataFrames
 github-spotify-lyceum | lyceum | https://github.com/spotify/lyceum | author:spotify description:A riemann plugin to build and deploy modular rules.
-github-spotify-psyonspotify | psyonspotify | https://github.com/spotify/psyonspotify | author:spotify description:Hack: A psytrance discovery Android app using libspotify
 github-spotify-cassandra-opstools | cassandra-opstools | https://github.com/spotify/cassandra-opstools | author:spotify description:Generic tools and script to help operating Cassandra cluster
+github-spotify-psyonspotify | psyonspotify | https://github.com/spotify/psyonspotify | author:spotify description:Hack: A psytrance discovery Android app using libspotify
 github-spotify-annoy-java | annoy-java | https://github.com/spotify/annoy-java | author:spotify description:Approximate nearest neighbors in Java
-github-spotify-missinglink | missinglink | https://github.com/spotify/missinglink | author:spotify description:Build time tool for detecting link problems in java projects
-github-spotify-duck | duck | https://github.com/spotify/duck | author:spotify description:A minimalist installer system generator
 github-spotify-futures-extra | futures-extra | https://github.com/spotify/futures-extra | author:spotify description:Java library for working with Guava futures
-github-spotify-syslog-redirector | syslog-redirector | https://github.com/spotify/syslog-redirector | author:spotify description:Redirects stdin/stderr to syslog
+github-spotify-missinglink | missinglink | https://github.com/spotify/missinglink | author:spotify description:Build time tool for detecting link problems in java projects
 github-spotify-reactochart | reactochart | https://github.com/spotify/reactochart | author:spotify description:📈 React chart component library (unstable) - http://spotify.github.io/reactochart/examples/
+github-spotify-syslog-redirector | syslog-redirector | https://github.com/spotify/syslog-redirector | author:spotify description:Redirects stdin/stderr to syslog
+github-spotify-duck | duck | https://github.com/spotify/duck | author:spotify description:A minimalist installer system generator
 github-spotify-ffwd-java | ffwd-java | https://github.com/spotify/ffwd-java | author:spotify description:A Java implementation of the FastForward metrics agent
 github-spotify-crunch-lib | crunch-lib | https://github.com/spotify/crunch-lib | author:spotify description:Useful reusable pipeline components for Crunch jobs
 github-spotify-debify | debify | https://github.com/spotify/debify | author:spotify description:Tool for building simple Debian repositories
 github-spotify-linux | linux | https://github.com/spotify/linux | author:spotify description:Spotify's Linux kernel for Debian-based systems
 github-spotify-sparkey-python | sparkey-python | https://github.com/spotify/sparkey-python | author:spotify description:Python bindings for the sparkey key value store
-github-spotify-jsconfeu-2013 | jsconfeu-2013 | https://github.com/spotify/jsconfeu-2013 | author:spotify description:Spotify Coding challenge for jsconfeu-2013
-github-spotify-pywk | pywk | https://github.com/spotify/pywk | author:spotify description:Python awk-like line processing tool
 github-spotify-completable-futures | completable-futures | https://github.com/spotify/completable-futures | author:spotify description:Utilities for working with futures in Java 8
-github-spotify-talos | talos | https://github.com/spotify/talos | author:spotify description:Hiera secrets distribution over HTTP
-github-spotify-wasd | wasd | https://github.com/spotify/wasd | author:spotify description:service↔machine discovery with a friendly REST API
-github-spotify-hadoop-openpgp-codec | hadoop-openpgp-codec | https://github.com/spotify/hadoop-openpgp-codec | author:spotify description:Codec for Hadoop adding OpenPGP encryption using Bouncy Castle
-github-spotify-docker-bigtable | docker-bigtable | https://github.com/spotify/docker-bigtable | author:spotify description:A docker container with an in memory implementation of Google Cloud Bigtable
-github-spotify-async-datastore-client | async-datastore-client | https://github.com/spotify/async-datastore-client | author:spotify description:A modern and feature-rich Asynchronous Java client for Google Cloud Datastore
+github-spotify-pywk | pywk | https://github.com/spotify/pywk | author:spotify description:Python awk-like line processing tool
+github-spotify-jsconfeu-2013 | jsconfeu-2013 | https://github.com/spotify/jsconfeu-2013 | author:spotify description:Spotify Coding challenge for jsconfeu-2013
 github-spotify-ios-ci | ios-ci | https://github.com/spotify/ios-ci | author:spotify description:A collection of scripts Spotify runs on its Open Source iOS projects.
-github-spotify-flume-syslog-source2 | flume-syslog-source2 | https://github.com/spotify/flume-syslog-source2 | author:spotify description:Improved Syslog source for Flume
+github-spotify-wasd | wasd | https://github.com/spotify/wasd | author:spotify description:service↔machine discovery with a friendly REST API
+github-spotify-talos | talos | https://github.com/spotify/talos | author:spotify description:Hiera secrets distribution over HTTP
 github-spotify-dockerfile-maven | dockerfile-maven | https://github.com/spotify/dockerfile-maven | author:spotify description:A set of Maven tools for dealing with Dockerfiles
+github-spotify-docker-bigtable | docker-bigtable | https://github.com/spotify/docker-bigtable | author:spotify description:A docker container with an in memory implementation of Google Cloud Bigtable
+github-spotify-hadoop-openpgp-codec | hadoop-openpgp-codec | https://github.com/spotify/hadoop-openpgp-codec | author:spotify description:Codec for Hadoop adding OpenPGP encryption using Bouncy Castle
+github-spotify-async-datastore-client | async-datastore-client | https://github.com/spotify/async-datastore-client | author:spotify description:A modern and feature-rich Asynchronous Java client for Google Cloud Datastore
+github-spotify-flume-syslog-source2 | flume-syslog-source2 | https://github.com/spotify/flume-syslog-source2 | author:spotify description:Improved Syslog source for Flume
 github-spotify-vdisk | vdisk | https://github.com/spotify/vdisk | author:spotify description:Tool to create sparse debian based disk images for virtual hosts
 github-spotify-elasticsearch-index-window | elasticsearch-index-window | https://github.com/spotify/elasticsearch-index-window | author:spotify description:An Elasticsearch plugin that enables you to keep only the N latest indices.
+github-spotify-pyfg | pyfg | https://github.com/spotify/pyfg | author:spotify 
 github-spotify-griffin | griffin | https://github.com/spotify/griffin | author:spotify description:Documentation generator based off of RAML - PRE-ALPHA
-github-spotify-pyfg | pyfg | https://github.com/spotify/pyfg | author:spotify description:Updated Jun 14, 2016
 github-spotify-crtauth-java | crtauth-java | https://github.com/spotify/crtauth-java | author:spotify description:Java port of the crtauth authentication library
 github-spotify-daemon-java | daemon-java | https://github.com/spotify/daemon-java | author:spotify description:A java class that implements a reload hook via SIGHUP
 github-spotify-semantic-metrics | semantic-metrics | https://github.com/spotify/semantic-metrics | author:spotify description:Capturing meaningful metrics in your Java application
+github-spotify-DebuggerJS | DebuggerJS | https://github.com/spotify/DebuggerJS | author:spotify description:A JS debugger utility that helps you log and debug your applications. It's very flexible and allows you to write your own loggers and parsers.
 github-spotify-homebrew-public | homebrew-public | https://github.com/spotify/homebrew-public | author:spotify description:Homebrew formula for open-source software developed by Spotify
+github-spotify-pyeos | pyeos | https://github.com/spotify/pyeos | author:spotify 
 github-spotify-sprunch | sprunch | https://github.com/spotify/sprunch | author:spotify description:Minimalist Scala API on top of Apache Crunch
-github-spotify-pyeos | pyeos | https://github.com/spotify/pyeos | author:spotify description:Updated Jun 14, 2016
 github-spotify-mlockexec | mlockexec | https://github.com/spotify/mlockexec | author:spotify description:tool that keeps locked files into memory while running another process
 github-spotify-spotify-json | spotify-json | https://github.com/spotify/spotify-json | author:spotify description:Fast and nice to use C++ JSON library.
-github-spotify-logging-java | logging-java | https://github.com/spotify/logging-java | author:spotify description:Utility classes to set up logging in a Spotify compatible way
 github-spotify-docgenerator | docgenerator | https://github.com/spotify/docgenerator | author:spotify description:Automatically generate API documentation from Jackson annotated types and javax.ws.rs.* method annotations
+github-spotify-logging-java | logging-java | https://github.com/spotify/logging-java | author:spotify description:Utility classes to set up logging in a Spotify compatible way
+github-spotify-nu | nu | https://github.com/spotify/nu | author:spotify description:The Nu programming language.
 github-spotify-testing-game | testing-game | https://github.com/spotify/testing-game | author:spotify description:A script that counts the number of tests each developer makes over a project
 github-spotify-drserv | drserv | https://github.com/spotify/drserv | author:spotify description:RESTful service for publishing packages to debian repositories
-github-spotify-puppet-talos | puppet-talos | https://github.com/spotify/puppet-talos | author:spotify description:Puppet module to manage Talos, Hiera secrets distribution tool.
 github-spotify-rspec-dnsruby | rspec-dnsruby | https://github.com/spotify/rspec-dnsruby | author:spotify description:Easily test your DNS with RSpec - dnsruby version
-github-spotify-scio-idea-plugin | scio-idea-plugin | https://github.com/spotify/scio-idea-plugin | author:spotify description:Scio IDEA plugin
-github-spotify-gcs-tools | gcs-tools | https://github.com/spotify/gcs-tools | author:spotify description:GCS support for avro-tools and parquet-tools
-github-spotify-cassandra-extra | cassandra-extra | https://github.com/spotify/cassandra-extra | author:spotify description:Updated Jul 16, 2015
+github-spotify-kairosdb | kairosdb | https://github.com/spotify/kairosdb | author:spotify description:Fast scalable time series database
+github-spotify-puppet-talos | puppet-talos | https://github.com/spotify/puppet-talos | author:spotify description:Puppet module to manage Talos, Hiera secrets distribution tool.
+github-spotify-cassandra-extra | cassandra-extra | https://github.com/spotify/cassandra-extra | author:spotify 
 github-spotify-helios-skydns | helios-skydns | https://github.com/spotify/helios-skydns | author:spotify description:SkyDNS registrar plugin for Helios
-github-spotify-code-of-conduct | code-of-conduct | https://github.com/spotify/code-of-conduct | author:spotify description:Spotify FOSS Community Code of Conduct
-github-spotify-mace | mace | https://github.com/spotify/mace | author:spotify description:For smashing things.
-github-spotify-spotify-checkstyle-config | spotify-checkstyle-config | https://github.com/spotify/spotify-checkstyle-config | author:spotify description:The Spotify checkstyle configuration
-github-spotify-certcheck | certcheck | https://github.com/spotify/certcheck | author:spotify description:Updated Mar 10, 2014
+github-spotify-scio-idea-plugin | scio-idea-plugin | https://github.com/spotify/scio-idea-plugin | author:spotify description:Scio IDEA plugin
 github-spotify-spawn | spawn | https://github.com/spotify/spawn | author:spotify description:A Java library for managing child processes.
+github-spotify-code-of-conduct | code-of-conduct | https://github.com/spotify/code-of-conduct | author:spotify description:Spotify FOSS Community Code of Conduct
+github-spotify-cobbler | cobbler | https://github.com/spotify/cobbler | author:spotify description:everyone's favorite Linux Install & Update Server
+github-spotify-gcs-tools | gcs-tools | https://github.com/spotify/gcs-tools | author:spotify description:GCS support for avro-tools and parquet-tools
+github-spotify-etcd | etcd | https://github.com/spotify/etcd | author:spotify description:A highly-available key value store for shared configuration and service discovery
+github-spotify-certcheck | certcheck | https://github.com/spotify/certcheck | author:spotify 
+github-spotify-mace | mace | https://github.com/spotify/mace | author:spotify description:For smashing things.
+github-spotify-collectd | collectd | https://github.com/spotify/collectd | author:spotify description:The system statistics collection daemon. Mirror of the canonical repository (updated automatically). Please send Pull Requests here!
+github-spotify-spotify-checkstyle-config | spotify-checkstyle-config | https://github.com/spotify/spotify-checkstyle-config | author:spotify description:The Spotify checkstyle configuration
 github-spotify-ssh-tls | ssh-tls | https://github.com/spotify/ssh-tls | author:spotify description:A Java library that does a TLS handshake by using SSH keys
+github-spotify-skydns | skydns | https://github.com/spotify/skydns | author:spotify description:DNS service discovery for etcd
+github-spotify-bucket-runner | bucket-runner | https://github.com/spotify/bucket-runner | author:spotify description:Run a command in parallel, distributing the input files to each.
+github-spotify-phpconf-argentina-2014 | phpconf-argentina-2014 | https://github.com/spotify/phpconf-argentina-2014 | author:spotify 
+github-spotify-hornet | hornet | https://github.com/spotify/hornet | author:spotify 
 github-spotify-tutter-jenkins | tutter-jenkins | https://github.com/spotify/tutter-jenkins | author:spotify description:Merges pull requests if tests PASS
-github-spotify-phpconf-argentina-2014 | phpconf-argentina-2014 | https://github.com/spotify/phpconf-argentina-2014 | author:spotify description:Updated Nov 7, 2014
-github-spotify-hornet | hornet | https://github.com/spotify/hornet | author:spotify description:Updated Sep 29, 2016
+github-spotify-google-http-java-client | google-http-java-client | https://github.com/spotify/google-http-java-client | author:spotify description:Google HTTP Client Library for Java
+github-spotify-backup-utils | backup-utils | https://github.com/spotify/backup-utils | author:spotify description:GitHub Enterprise Backup Utilities
 github-spotify-spire-nodeset-example | spire-nodeset-example | https://github.com/spotify/spire-nodeset-example | author:spotify description:An example of parsing a simple language in Java using JFlex and CUP
+github-spotify-sekexe | sekexe | https://github.com/spotify/sekexe | author:spotify description:Separate Kernel Execution: execute a process within user-mode-linux and retrieve its output and status code
+github-spotify-container-agent | container-agent | https://github.com/spotify/container-agent | author:spotify description:Simple agent for running containers based on a declarative manifest.
 github-spotify-skygc | skygc | https://github.com/spotify/skygc | author:spotify description:Garbage Collector when using the helios-skydns registrar plugin with the Helios Testing Framework
-github-spotify-jira-lkk-bridge | jira-lkk-bridge | https://github.com/spotify/jira-lkk-bridge | author:spotify description:JIRA plugin to bridge to LeanKit Kanban
-github-spotify-java-lkk | java-lkk | https://github.com/spotify/java-lkk | author:spotify description:LeanKitKanban Client for Java
-github-spotify-spymaster | spymaster | https://github.com/spotify/spymaster | author:spotify description:Proof-of-concept metric collection framework
-github-spotify-netty-batch-flusher | netty-batch-flusher | https://github.com/spotify/netty-batch-flusher | author:spotify description:Netty Batch Flusher
-github-spotify-hush-tab | hush-tab | https://github.com/spotify/hush-tab | author:spotify description:Updated Apr 26, 2016
-github-spotify-foss-root | foss-root | https://github.com/spotify/foss-root | author:spotify description:Maven POM that serves as a parent for Spotify FOSS projects
-github-spotify-syslog-redirector-golang | syslog-redirector-golang | https://github.com/spotify/syslog-redirector-golang | author:spotify description:A specific build and version of golang known to properly create static executables
-github-spotify-requests-crtauth | requests-crtauth | https://github.com/spotify/requests-crtauth | author:spotify description:A crtauth authentication plugin for Python Requests
-github-spotify-docker-batch | docker-batch | https://github.com/spotify/docker-batch | author:spotify description:A helper to invoke batch jobs in containers. Plays nicely with being triggered by cron on the host.
-github-spotify-spire-node | spire-node | https://github.com/spotify/spire-node | author:spotify description:Updated Dec 20, 2013
-github-spotify-spire-pythonlib | spire-pythonlib | https://github.com/spotify/spire-pythonlib | author:spotify description:Updated Dec 20, 2013
+github-spotify-spire-server | spire-server | https://github.com/spotify/spire-server | author:spotify 
+github-spotify-spire-pythonlib | spire-pythonlib | https://github.com/spotify/spire-pythonlib | author:spotify 
 github-spotify-metrics-munin-reporter | metrics-munin-reporter | https://github.com/spotify/metrics-munin-reporter | author:spotify description:Munin reporter for Coda Hale's metrics lib
-github-spotify-spire-server | spire-server | https://github.com/spotify/spire-server | author:spotify description:Updated Dec 20, 2013
-github-spotify-spire-client | spire-client | https://github.com/spotify/spire-client | author:spotify description:Updated Dec 20, 2013
+github-spotify-spire-node | spire-node | https://github.com/spotify/spire-node | author:spotify 
+github-spotify-bigtop | bigtop | https://github.com/spotify/bigtop | author:spotify description:Mirror of Apache Bigtop
+github-spotify-netty-batch-flusher | netty-batch-flusher | https://github.com/spotify/netty-batch-flusher | author:spotify description:Netty Batch Flusher
+github-spotify-hush-tab | hush-tab | https://github.com/spotify/hush-tab | author:spotify 
+github-spotify-requests-crtauth | requests-crtauth | https://github.com/spotify/requests-crtauth | author:spotify description:A crtauth authentication plugin for Python Requests
+github-spotify-s3mper | s3mper | https://github.com/spotify/s3mper | author:spotify description:s3mper - Consistent Listing for S3
+github-spotify-condor | condor | https://github.com/spotify/condor | author:spotify 
+github-spotify-spire-client | spire-client | https://github.com/spotify/spire-client | author:spotify 
+github-spotify-android-auth | android-auth | https://github.com/spotify/android-auth | author:spotify description:Spotify authentication and authorization for Android. Helps to get access tokens for Spotify Android SDK and Spotify Web API.
+github-spotify-foss-root | foss-root | https://github.com/spotify/foss-root | author:spotify description:Maven POM that serves as a parent for Spotify FOSS projects
 github-spotify-ssh-agent-proxy | ssh-agent-proxy | https://github.com/spotify/ssh-agent-proxy | author:spotify description:A Java library that talks to the local ssh-agent.
+github-spotify-docker-batch | docker-batch | https://github.com/spotify/docker-batch | author:spotify description:A helper to invoke batch jobs in containers. Plays nicely with being triggered by cron on the host.
+github-spotify-DataflowJavaSDK | DataflowJavaSDK | https://github.com/spotify/DataflowJavaSDK | author:spotify description:Google Cloud Dataflow provides a simple, powerful model for building both batch and streaming parallel data processing pipelines.
+github-spotify-java-lkk | java-lkk | https://github.com/spotify/java-lkk | author:spotify description:LeanKitKanban Client for Java
+github-spotify-jira-lkk-bridge | jira-lkk-bridge | https://github.com/spotify/jira-lkk-bridge | author:spotify description:JIRA plugin to bridge to LeanKit Kanban
+github-spotify-robolectric | robolectric | https://github.com/spotify/robolectric | author:spotify description:Android Unit Testing Framework
+github-spotify-syslog-redirector-golang | syslog-redirector-golang | https://github.com/spotify/syslog-redirector-golang | author:spotify description:A specific build and version of golang known to properly create static executables
+github-spotify-spymaster | spymaster | https://github.com/spotify/spymaster | author:spotify description:Proof-of-concept metric collection framework
+github-spotify-kafka | kafka | https://github.com/spotify/kafka | author:spotify description:Mirror of Apache Kafka
+github-spotify-perf-map-agent | perf-map-agent | https://github.com/spotify/perf-map-agent | author:spotify description:A java agent to generate method mappings to use with the linux `perf` tool
 github-spotify-ghelog | ghelog | https://github.com/spotify/ghelog | author:spotify description:Simple tool for importing ghe logs into kibana
+github-spotify-apollo-metrics | apollo-metrics | https://github.com/spotify/apollo-metrics | author:spotify description:Metrics module for Apollo using the semantic-metrics library
 github-spotify-crtauth-java-agent-signer-apache | crtauth-java-agent-signer-apache | https://github.com/spotify/crtauth-java-agent-signer-apache | author:spotify description:A Signer for crtauth-java that connects to ssh-agent
+github-spotify-docker-alpine | docker-alpine | https://github.com/spotify/docker-alpine | author:spotify description:Alpine image with `bash` and `curl`
 github-spotify-batty | batty | https://github.com/spotify/batty | author:spotify description:GitHub Enterprise replicator test
 github-spotify-helios-go | helios-go | https://github.com/spotify/helios-go | author:spotify description:Go client for Helios
-github-spotify-apollo-metrics | apollo-metrics | https://github.com/spotify/apollo-metrics | author:spotify description:Metrics module for Apollo using the semantic-metrics library
 github-spotify-dataproc-java-submitter | dataproc-java-submitter | https://github.com/spotify/dataproc-java-submitter | author:spotify description:A library for submitting Hadoop jobs to Google Cloud Dataproc from Java
-github-spotify-android-auth | android-auth | https://github.com/spotify/android-auth | author:spotify description:Updated Oct 17, 2016

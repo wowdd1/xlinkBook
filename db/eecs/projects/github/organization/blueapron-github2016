@@ -1,9 +1,50 @@
+github-blueapron-ship_compliant-ruby | ship_compliant-ruby | https://github.com/blueapron/ship_compliant-ruby | author:blueapron description:Ruby API Client for ShipCompliant
+github-blueapron-dexmaker | dexmaker | https://github.com/blueapron/dexmaker | author:blueapron 
 github-blueapron-rubocop-blueapron | rubocop-blueapron | https://github.com/blueapron/rubocop-blueapron | author:blueapron description:Blue Apron Style Guide RuboCop extension
-github-blueapron-grunt-qunit-kimchi | grunt-qunit-kimchi | https://github.com/blueapron/grunt-qunit-kimchi | author:blueapron description:Run QUnit test in PhantomJS with Screenshot Support and Style Regression Test.
-github-blueapron-devops-test | devops-test | https://github.com/blueapron/devops-test | author:blueapron description:Updated May 31, 2016
-github-blueapron-spree-client-ruby | spree-client-ruby | https://github.com/blueapron/spree-client-ruby | author:blueapron description:Updated Jun 2, 2016
-github-blueapron-dual_burner | dual_burner | https://github.com/blueapron/dual_burner | author:blueapron description:Deploy To Multiple Heroku Apps From One Github Repository
-github-blueapron-eventosaurus | eventosaurus | https://github.com/blueapron/eventosaurus | author:blueapron description:Enables easy async storing and retrieving of events on DynamoDB
-github-blueapron-docker_rake | docker_rake | https://github.com/blueapron/docker_rake | author:blueapron description:Gem with Rake tasks for common Docker development commands
+github-blueapron-spree_avatax | spree_avatax | https://github.com/blueapron/spree_avatax | author:blueapron description:Avalara Tax Calculator for Spree
+github-blueapron-spree_gateway | spree_gateway | https://github.com/blueapron/spree_gateway | author:blueapron description:Community maintained collection of gateways for use in Spree
+github-blueapron-sensu-community-plugins | sensu-community-plugins | https://github.com/blueapron/sensu-community-plugins | author:blueapron description:Sensu community plugins for checks, handlers, & mutators.
+github-blueapron-devise_security_extension | devise_security_extension | https://github.com/blueapron/devise_security_extension | author:blueapron description:An enterprise security extension for devise, trying to meet industrial standard security demands for web applications.
+github-blueapron-heroku-buildpack-version | heroku-buildpack-version | https://github.com/blueapron/heroku-buildpack-version | author:blueapron description:Heroku buildpack that compiles a profile.d script for the SOURCE_VERSION environment variable.
+github-blueapron-stripe-ruby | stripe-ruby | https://github.com/blueapron/stripe-ruby | author:blueapron description:Stripe Ruby bindings
+github-blueapron-akamai_api | akamai_api | https://github.com/blueapron/akamai_api | author:blueapron description:Akamai gem+CLI to work with CCU and ECCU interfaces
+github-blueapron-magickly | magickly | https://github.com/blueapron/magickly | author:blueapron description:image manipulation as a (plugin-able) service
+github-blueapron-viddl-rb | viddl-rb | https://github.com/blueapron/viddl-rb | author:blueapron description:An extendable commandline video downloader for flash video sites like vimeo, youtube, ...
+github-blueapron-resque-heroku-autoscaler | resque-heroku-autoscaler | https://github.com/blueapron/resque-heroku-autoscaler | author:blueapron description:Resque plugin to autoscale your workers on Heroku
+github-blueapron-devops-test | devops-test | https://github.com/blueapron/devops-test | author:blueapron 
+github-blueapron-handlebars_assets | handlebars_assets | https://github.com/blueapron/handlebars_assets | author:blueapron description:Use handlebars.js templates with the Rails asset pipeline.
+github-blueapron-spree-client-ruby | spree-client-ruby | https://github.com/blueapron/spree-client-ruby | author:blueapron 
+github-blueapron-fake-s3 | fake-s3 | https://github.com/blueapron/fake-s3 | author:blueapron description:A lightweight server clone of Amazon S3 that simulates most of the commands supported by S3 with minimal dependencies
+github-blueapron-spree | spree | https://github.com/blueapron/spree | author:blueapron description:Spree is a complete open source e-commerce solution for Ruby on Rails.
+github-blueapron-heroku-buildpack-ruby | heroku-buildpack-ruby | https://github.com/blueapron/heroku-buildpack-ruby | author:blueapron description:Heroku's Ruby Buildpack for Cedar
+github-blueapron-ansible-role-elk-kibana | ansible-role-elk-kibana | https://github.com/blueapron/ansible-role-elk-kibana | author:blueapron 
+github-blueapron-knapsack | knapsack | https://github.com/blueapron/knapsack | author:blueapron description:Knapsack splits tests across CI nodes and makes sure that tests will run comparable time on each node.
+github-blueapron-ember-rails | ember-rails | https://github.com/blueapron/ember-rails | author:blueapron description:Ember for Rails 3.1+
+github-blueapron-kafka-connect-bigquery-1 | kafka-connect-bigquery-1 | https://github.com/blueapron/kafka-connect-bigquery-1 | author:blueapron description:A Kafka Connect BigQuery sink connector
+github-blueapron-confluent-docker-images | confluent-docker-images | https://github.com/blueapron/confluent-docker-images | author:blueapron description:Dockerfiles for Confluent Stream Data Platform
 github-blueapron-kafka_rest-ruby | kafka_rest-ruby | https://github.com/blueapron/kafka_rest-ruby | author:blueapron description:Ruby client for Confluent's Kafka REST Proxy
+github-blueapron-dual_burner | dual_burner | https://github.com/blueapron/dual_burner | author:blueapron description:Deploy To Multiple Heroku Apps From One Github Repository
+github-blueapron-swift-style-guide | swift-style-guide | https://github.com/blueapron/swift-style-guide | author:blueapron description:The official Swift style guide for raywenderlich.com.
+github-blueapron-mesos-consul | mesos-consul | https://github.com/blueapron/mesos-consul | author:blueapron description:Mesos to Consul bridge for service discovery
+github-blueapron-activerecord-hierarchical_query | activerecord-hierarchical_query | https://github.com/blueapron/activerecord-hierarchical_query | author:blueapron description:Simple DSL for creating recursive queries with ActiveRecord
+github-blueapron-kafka-connect-jdbc | kafka-connect-jdbc | https://github.com/blueapron/kafka-connect-jdbc | author:blueapron description:Kafka Connect connector for JDBC-compatible databases
+github-blueapron-ontrac-web-services | ontrac-web-services | https://github.com/blueapron/ontrac-web-services | author:blueapron 
+github-blueapron-jsonapi-utils | jsonapi-utils | https://github.com/blueapron/jsonapi-utils | author:blueapron description:Build JSON APIs with ease.
+github-blueapron-ember-cli-mirage | ember-cli-mirage | https://github.com/blueapron/ember-cli-mirage | author:blueapron description:A client-side mock server to develop, test and prototype your app
+github-blueapron-python-consul | python-consul | https://github.com/blueapron/python-consul | author:blueapron description:Python client for Consul (http://www.consul.io/)
+github-blueapron-docker-dns-gen | docker-dns-gen | https://github.com/blueapron/docker-dns-gen | author:blueapron description:DNS Server for docker
+github-blueapron-eventosaurus | eventosaurus | https://github.com/blueapron/eventosaurus | author:blueapron description:Enables easy async storing and retrieving of events on DynamoDB
+github-blueapron-mesos-ui | mesos-ui | https://github.com/blueapron/mesos-ui | author:blueapron description:An alternative web UI for Apache Mesos, built with ❤️ and React.JS
+github-blueapron-strap | strap | https://github.com/blueapron/strap | author:blueapron description:👢 Bootstrap your OS X development system.
+github-blueapron-schema-registry | schema-registry | https://github.com/blueapron/schema-registry | author:blueapron description:Schema registry for Kafka
+github-blueapron-jsonapi-resources | jsonapi-resources | https://github.com/blueapron/jsonapi-resources | author:blueapron description:A resource-focused Rails library for developing JSON API compliant servers.
+github-blueapron-docker_rake | docker_rake | https://github.com/blueapron/docker_rake | author:blueapron description:Gem with Rake tasks for common Docker development commands
 github-blueapron-grunt-phantomjs-basil | grunt-phantomjs-basil | https://github.com/blueapron/grunt-phantomjs-basil | author:blueapron description:grunt-phantomjs-basil
+github-blueapron-grunt-qunit-kimchi | grunt-qunit-kimchi | https://github.com/blueapron/grunt-qunit-kimchi | author:blueapron description:Run QUnit test in PhantomJS with Screenshot Support and Style Regression Test.
+github-blueapron-octopus | octopus | https://github.com/blueapron/octopus | author:blueapron description:Database Sharding for ActiveRecord
+github-blueapron-emblem-rails | emblem-rails | https://github.com/blueapron/emblem-rails | author:blueapron description:Emblem.js integration with rails asset pipeline
+github-blueapron-airflow | airflow | https://github.com/blueapron/airflow | author:blueapron description:AirFlow is a system to programmatically author, schedule and monitor data pipelines.
+github-blueapron-tabs | tabs | https://github.com/blueapron/tabs | author:blueapron description:A redis-backed metrics tracker for keeping tabs on pretty much anything ;)
+github-blueapron-hirefire-resource | hirefire-resource | https://github.com/blueapron/hirefire-resource | author:blueapron description:Ruby library for quickly adding worker dyno support to HireFire.
+github-blueapron-data-migrate | data-migrate | https://github.com/blueapron/data-migrate | author:blueapron description:Migrate and update data alongside your database structure.
+github-blueapron-fedex | fedex | https://github.com/blueapron/fedex | author:blueapron description:Ruby library to interact with FedEx Rate Web Service

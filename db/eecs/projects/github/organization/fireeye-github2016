@@ -1,0 +1,18 @@
+github-fireeye-flare-floss | flare-floss | https://github.com/fireeye/flare-floss | author:fireeye description:FireEye Labs Obfuscated String Solver - Automatically extract obfuscated strings from malware.
+github-fireeye-flare-ida | flare-ida | https://github.com/fireeye/flare-ida | author:fireeye description:IDA Pro utilities from FLARE team
+github-fireeye-flare-fakenet-ng | flare-fakenet-ng | https://github.com/fireeye/flare-fakenet-ng | author:fireeye description:FakeNet-NG - Next Generation Dynamic Network Analysis Tool
+github-fireeye-iocs | iocs | https://github.com/fireeye/iocs | author:fireeye description:FireEye Publicly Shared Indicators of Compromise (IOCs)
+github-fireeye-flare-wmi | flare-wmi | https://github.com/fireeye/flare-wmi | author:fireeye 
+github-fireeye-flare-dbg | flare-dbg | https://github.com/fireeye/flare-dbg | author:fireeye description:flare-dbg is a project meant to aid malware reverse engineers in rapidly developing debugger scripts.
+github-fireeye-tools | tools | https://github.com/fireeye/tools | author:fireeye description:general purpose and malware specific analysis tools
+github-fireeye-synfulknock | synfulknock | https://github.com/fireeye/synfulknock | author:fireeye 
+github-fireeye-chopshop | chopshop | https://github.com/fireeye/chopshop | author:fireeye description:Protocol Analysis/Decoder Framework
+github-fireeye-Volatility-Plugins | Volatility-Plugins | https://github.com/fireeye/Volatility-Plugins | author:fireeye 
+github-fireeye-flare-bytecode_graph | flare-bytecode_graph | https://github.com/fireeye/flare-bytecode_graph | author:fireeye 
+github-fireeye-tf_rl_tutorial | tf_rl_tutorial | https://github.com/fireeye/tf_rl_tutorial | author:fireeye description:Tutorial: Statistical Relational Learning with Google TensorFlow
+github-fireeye-pycommands | pycommands | https://github.com/fireeye/pycommands | author:fireeye description:PyCommand Scripts for Immunity Debugger
+github-fireeye-rt2jira | rt2jira | https://github.com/fireeye/rt2jira | author:fireeye description:Convert RT tickets to JIRA tickets
+github-fireeye-pivy-report | pivy-report | https://github.com/fireeye/pivy-report | author:fireeye description:Poison Ivy Appendix/Extras
+github-fireeye-MSetsExtra | MSetsExtra | https://github.com/fireeye/MSetsExtra | author:fireeye description:A Coq Library for Efficiently Executable Sets
+github-fireeye-mimosa-rpm-package | mimosa-rpm-package | https://github.com/fireeye/mimosa-rpm-package | author:fireeye 
+github-fireeye-fireeye-bootswatch | fireeye-bootswatch | https://github.com/fireeye/fireeye-bootswatch | author:fireeye 

@@ -3,3 +3,19 @@ github-fanduel-ex_vmstats | ex_vmstats | https://github.com/fanduel/ex_vmstats |
 github-fanduel-jsonrpc2-elixir | jsonrpc2-elixir | https://github.com/fanduel/jsonrpc2-elixir | author:fanduel description:JSON-RPC 2.0 for Elixir
 github-fanduel-ng-cookies | ng-cookies | https://github.com/fanduel/ng-cookies | author:fanduel description:Simple cookie service for AngularJS
 github-fanduel-optimus-css | optimus-css | https://github.com/fanduel/optimus-css | author:fanduel description:Inline CSS image references as base64 data-URIs
+github-fanduel-NMRangeSlider | NMRangeSlider | https://github.com/fanduel/NMRangeSlider | author:fanduel description:A custom range slider for iOS
+github-fanduel-miasma | miasma | https://github.com/fanduel/miasma | author:fanduel description:Cloud modeling library
+github-fanduel-redis-collectd-plugin | redis-collectd-plugin | https://github.com/fanduel/redis-collectd-plugin | author:fanduel description:A Redis plugin for collectd.
+github-fanduel-hiera-eyaml-gpg | hiera-eyaml-gpg | https://github.com/fanduel/hiera-eyaml-gpg | author:fanduel description:GPG encryption backend for the hiera-eyaml module
+github-fanduel-twemproxy | twemproxy | https://github.com/fanduel/twemproxy | author:fanduel description:A fast, light-weight proxy for memcached and redis
+github-fanduel-puppet-couchdb | puppet-couchdb | https://github.com/fanduel/puppet-couchdb | author:fanduel description:A basic module to install this document-oriented database containing a function to retrieve metadata from couchdb
+github-fanduel-ec2-consistent-snapshot | ec2-consistent-snapshot | https://github.com/fanduel/ec2-consistent-snapshot | author:fanduel description:Initiate consistent EBS snapshots in Amazon EC2
+github-fanduel-tsung | tsung | https://github.com/fanduel/tsung | author:fanduel description:Tsung is a high-performance benchmark framework for various protocols including HTTP, XMPP, LDAP, etc.
+github-fanduel-collectd | collectd | https://github.com/fanduel/collectd | author:fanduel description:The system statistics collection daemon. Mirror of the canonical repository (updated automatically). Please send Pull Requests here!
+github-fanduel-SHNUrlRouter | SHNUrlRouter | https://github.com/fanduel/SHNUrlRouter | author:fanduel description:A simple router for Swift
+github-fanduel-miasma-aws | miasma-aws | https://github.com/fanduel/miasma-aws | author:fanduel description:Miasma AWS API
+github-fanduel-pritunl | pritunl | https://github.com/fanduel/pritunl | author:fanduel description:Enterprise VPN server
+github-fanduel-KILabel | KILabel | https://github.com/fanduel/KILabel | author:fanduel description:A simple to use drop in replacement for UILabel for iOS 7 and above that highlights links such as URLs, twitter style usernames and hashtags and makes them touchable.
+github-fanduel-docker-selenium | docker-selenium | https://github.com/fanduel/docker-selenium | author:fanduel description:Docker images for Selenium Standalone Server
+github-fanduel-sfn | sfn | https://github.com/fanduel/sfn | author:fanduel description:SparkleFormation CLI
+github-fanduel-hubot-gtalk | hubot-gtalk | https://github.com/fanduel/hubot-gtalk | author:fanduel description:GTalk adapter for Hubot

@@ -5,25 +5,26 @@ github-dmlc-mshadow | mshadow | https://github.com/dmlc/mshadow | author:dmlc de
 github-dmlc-minerva | minerva | https://github.com/dmlc/minerva | author:dmlc description:Minerva: a fast and flexible tool for deep learning on multi-GPU. It provides ndarray programming interface, just like Numpy. Python bindings and C++ bindings are both available. The resulting code can be run on CPU or GPU. Multi-GPU support is very easy.
 github-dmlc-nnvm | nnvm | https://github.com/dmlc/nnvm | author:dmlc description:Intermediate Computational Graph Representation for Deep Learning Systems
 github-dmlc-parameter_server | parameter_server | https://github.com/dmlc/parameter_server | author:dmlc description:moved to https://github.com/dmlc/ps-lite
-github-dmlc-wormhole | wormhole | https://github.com/dmlc/wormhole | author:dmlc description:Deprecated
 github-dmlc-dmlc-core | dmlc-core | https://github.com/dmlc/dmlc-core | author:dmlc description:A common bricks library for building scalable and portable distributed machine learning.
+github-dmlc-wormhole | wormhole | https://github.com/dmlc/wormhole | author:dmlc description:Deprecated
 github-dmlc-ps-lite | ps-lite | https://github.com/dmlc/ps-lite | author:dmlc description:A lightweight parameter server interface
-github-dmlc-rabit | rabit | https://github.com/dmlc/rabit | author:dmlc description:Reliable Allreduce and Broadcast Interface for distributed machine learning
 github-dmlc-minpy | minpy | https://github.com/dmlc/minpy | author:dmlc description:Pure NumPy practice with third-party operator integration
-github-dmlc-MXNet.jl | MXNet.jl | https://github.com/dmlc/MXNet.jl | author:dmlc description:MXNet Julia Package - flexible and efficient deep learning in Julia
+github-dmlc-rabit | rabit | https://github.com/dmlc/rabit | author:dmlc description:Reliable Allreduce and Broadcast Interface for distributed machine learning
 github-dmlc-mxnet.js | mxnet.js | https://github.com/dmlc/mxnet.js | author:dmlc description:MXNetJS: Javascript Package for Deep Learning in Browser (without server)
+github-dmlc-MXNet.jl | MXNet.jl | https://github.com/dmlc/MXNet.jl | author:dmlc description:MXNet Julia Package - flexible and efficient deep learning in Julia
 github-dmlc-difacto | difacto | https://github.com/dmlc/difacto | author:dmlc description:Distributed Factorization Machines
 github-dmlc-mxnet-gtc-tutorial | mxnet-gtc-tutorial | https://github.com/dmlc/mxnet-gtc-tutorial | author:dmlc description:MXNet Tutorial for NVidia GTC 2016.
 github-dmlc-mxnet-memonger | mxnet-memonger | https://github.com/dmlc/mxnet-memonger | author:dmlc description:Sublinear memory optimization for deep learning, reduce GPU memory cost to train deeper nets
-github-dmlc-experimental-lda | experimental-lda | https://github.com/dmlc/experimental-lda | author:dmlc description:Updated Jun 23, 2016
+github-dmlc-experimental-lda | experimental-lda | https://github.com/dmlc/experimental-lda | author:dmlc 
 github-dmlc-mxnet-model-gallery | mxnet-model-gallery | https://github.com/dmlc/mxnet-model-gallery | author:dmlc description:Pre-trained Models of DMLC Project
 github-dmlc-experimental-mf | experimental-mf | https://github.com/dmlc/experimental-mf | author:dmlc description:cache-friendly multithread matrix factorization
 github-dmlc-XGBoost.jl | XGBoost.jl | https://github.com/dmlc/XGBoost.jl | author:dmlc description:XGBoost Julia Package
 github-dmlc-MXNet.cpp | MXNet.cpp | https://github.com/dmlc/MXNet.cpp | author:dmlc description:CPP wrapper for MXNet interface
-github-dmlc-mxnet-notebooks | mxnet-notebooks | https://github.com/dmlc/mxnet-notebooks | author:dmlc description:Updated Sep 29, 2016
+github-dmlc-mxnet-notebooks | mxnet-notebooks | https://github.com/dmlc/mxnet-notebooks | author:dmlc 
 github-dmlc-dmlc.github.io | dmlc.github.io | https://github.com/dmlc/dmlc.github.io | author:dmlc description:the homepage http://dmlc.ml
 github-dmlc-web-data | web-data | https://github.com/dmlc/web-data | author:dmlc description:The repo to host all the web data including images for documents in dmlc projects.
+github-dmlc-caffe | caffe | https://github.com/dmlc/caffe | author:dmlc description:Caffe: a fast open framework for deep learning.
 github-dmlc-mxnet-deepmark | mxnet-deepmark | https://github.com/dmlc/mxnet-deepmark | author:dmlc description:Benchmark speed and other issues internally, before push to deep-mark
 github-dmlc-mxnet-examples | mxnet-examples | https://github.com/dmlc/mxnet-examples | author:dmlc description:MXNet Example
 github-dmlc-drat | drat | https://github.com/dmlc/drat | author:dmlc description:Drat Repository for DMLC R packages
-github-dmlc-nnvm-rtc | nnvm-rtc | https://github.com/dmlc/nnvm-rtc | author:dmlc description:Updated Oct 16, 2016
+github-dmlc-nnvm-rtc | nnvm-rtc | https://github.com/dmlc/nnvm-rtc | author:dmlc 

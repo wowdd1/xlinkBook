@@ -1,0 +1,9 @@
+github-coupang-spring-jade4j | spring-jade4j | https://github.com/coupang/spring-jade4j | author:coupang description:jade4j spring integration
+github-coupang-initializr | initializr | https://github.com/coupang/initializr | author:coupang description:A web-based quickstart generator for Spring projects
+github-coupang-Diamond | Diamond | https://github.com/coupang/Diamond | author:coupang 
+github-coupang-graphite-cyanite | graphite-cyanite | https://github.com/coupang/graphite-cyanite | author:coupang description:A plugin for using graphite-web with the cassandra-based Cyanite storage backend.
+github-coupang-cdnjs | cdnjs | https://github.com/coupang/cdnjs | author:coupang description:Our goal is to operate this CDN in a peer reviewed fashion.
+github-coupang-simple-spring-memcached | simple-spring-memcached | https://github.com/coupang/simple-spring-memcached | author:coupang description:A drop-in library to enable memcached caching in Spring beans via annotations
+github-coupang-pinpoint | pinpoint | https://github.com/coupang/pinpoint | author:coupang description:Pinpoint is an open source APM (Application Performance Management) tool for large-scale distributed systems written in Java.
+github-coupang-opentsdb | opentsdb | https://github.com/coupang/opentsdb | author:coupang description:A scalable, distributed Time Series Database.
+github-coupang-jedis | jedis | https://github.com/coupang/jedis | author:coupang description:A blazingly small and sane redis java client

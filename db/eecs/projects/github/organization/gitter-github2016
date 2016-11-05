@@ -1,0 +1,85 @@
+github-gitter-gitter | gitter | https://github.com/gitterHQ/gitter | author:gitter description:Discuss and file Gitter issues here
+github-gitter-desktop | desktop | https://github.com/gitterHQ/desktop | author:gitter description:Gitter Desktop Client
+github-gitter-services | services | https://github.com/gitterHQ/services | author:gitter description:Gitter integrations
+github-gitter-irc-bridge | irc-bridge | https://github.com/gitterHQ/irc-bridge | author:gitter description:IRC ⚡️ Gitter
+github-gitter-node-gitter | node-gitter | https://github.com/gitterHQ/node-gitter | author:gitter description:Gitter API Client
+github-gitter-sidecar | sidecar | https://github.com/gitterHQ/sidecar | author:gitter description:Gitter embed widget
+github-gitter-gitter-translations | gitter-translations | https://github.com/gitterHQ/gitter-translations | author:gitter description:Translations of Gitter to other languages. Please submit pull-requests if you would like to add or change any of our translations.
+github-gitter-docs | docs | https://github.com/gitterHQ/docs | author:gitter description:Gitter API Documentation
+github-gitter-vat-calculator | vat-calculator | https://github.com/gitterHQ/vat-calculator | author:gitter description:Calculate European VAT rates
+github-gitter-mutant.js | mutant.js | https://github.com/gitterHQ/mutant.js | author:gitter description:Watch for mutations
+github-gitter-realtime-client | realtime-client | https://github.com/gitterHQ/realtime-client | author:gitter description:Gitter Realtime Client
+github-gitter-gitter-demo-app | gitter-demo-app | https://github.com/gitterHQ/gitter-demo-app | author:gitter description:Gitter Demo App
+github-gitter-tentacles | tentacles | https://github.com/gitterHQ/tentacles | author:gitter description:A node.js client for GitHub
+github-gitter-sorted | sorted | https://github.com/gitterHQ/sorted | author:gitter description:Sorting for Marionette CollectionView and CompositeViews
+github-gitter-gitter-node-stream | gitter-node-stream | https://github.com/gitterHQ/gitter-node-stream | author:gitter description:Gitter Stream API example client
+github-gitter-request-http-cache | request-http-cache | https://github.com/gitterHQ/request-http-cache | author:gitter description:HTTP Caching for Request
+github-gitter-dolph | dolph | https://github.com/gitterHQ/dolph | author:gitter description:The muscular yet sophisticated rate-limiter middleware
+github-gitter-halley | halley | https://github.com/gitterHQ/halley | author:gitter description:A Javascript bayeux client for modern browsers and nodejs. Forked from Faye.
+github-gitter-gitter-chrome-app | gitter-chrome-app | https://github.com/gitterHQ/gitter-chrome-app | author:gitter description:Chrome app for Gitter
+github-gitter-gitter-markdown-processor | gitter-markdown-processor | https://github.com/gitterHQ/gitter-markdown-processor | author:gitter 
+github-gitter-readme-badger | readme-badger | https://github.com/gitterHQ/readme-badger | author:gitter description:Inserts badges into GitHub READMEs
+github-gitter-gitter-ruby-stream | gitter-ruby-stream | https://github.com/gitterHQ/gitter-ruby-stream | author:gitter description:Gitter Stream API example client
+github-gitter-emojify.js | emojify.js | https://github.com/gitterHQ/emojify.js | author:gitter description:A Javascript module to convert Emoji keywords to images
+github-gitter-autolink | autolink | https://github.com/gitterHQ/autolink | author:gitter description:Autolink http(s) links in the DOM
+github-gitter-gitter-faye-client | gitter-faye-client | https://github.com/gitterHQ/gitter-faye-client | author:gitter description:Gitter Faye API example client
+github-gitter-bjax | bjax | https://github.com/gitterHQ/bjax | author:gitter description:A tiny universal HTTP client for node and the browser
+github-gitter-gitterHQ.github.io | gitterHQ.github.io | https://github.com/gitterHQ/gitterHQ.github.io | author:gitter description:Troupe engineering blog
+github-gitter-hitchhikers | hitchhikers | https://github.com/gitterHQ/hitchhikers | author:gitter description:Site for GitHub Universe
+github-gitter------marquee--img-src-x-onerror-confirm-1----marquee-----plaintext--------plaintext-onmouseover-prom | -----marquee--img-src-x-onerror-confirm-1----marquee-----plaintext--------plaintext-onmouseover-prom | https://github.com/gitterHQ/-----marquee--img-src-x-onerror-confirm-1----marquee-----plaintext--------plaintext-onmouseover-prom | author:gitter description:'">><marquee><img src=x onerror=confirm(1)></marquee>"></plaintext\></\><plaintext/onmouseover=prompt(1)>"><script>alert(document.domain)</script>@gmail.com<isindex formaction=javascript:alert(/XSS/) type=submit>'-->"></script><script>alert(1)</script>"><img/id="confirm&lpar;1&#x29;"/alt="/"src="/"onerror=eval(id&#x29;>'"><img src="http://bryan…
+github-gitter-sandbox | sandbox | https://github.com/gitterHQ/sandbox | author:gitter description:Feel free to test and play here
+github-gitter-cloaked-avenger | cloaked-avenger | https://github.com/gitterHQ/cloaked-avenger | author:gitter description:The cloaked avenger
+github-gitter-tentacles-streams | tentacles-streams | https://github.com/gitterHQ/tentacles-streams | author:gitter description:A streaming GitHub client for nodejs
+github-gitter-faye | faye | https://github.com/gitterHQ/faye | author:gitter description:Simple pub/sub messaging for the web
+github-gitter-dugout | dugout | https://github.com/gitterHQ/dugout | author:gitter description:View MongoDB slow log information
+github-gitter-node-redis-sentinel-client | node-redis-sentinel-client | https://github.com/gitterHQ/node-redis-sentinel-client | author:gitter description:Redis Sentinel client (transparently compatible with node_redis client) for Node.js
+github-gitter-marked | marked | https://github.com/gitterHQ/marked | author:gitter description:A fork of the marked parser, customised for Gitter. Highly recommend using the original marked parser over this fork
+github-gitter-promiseDB | promiseDB | https://github.com/gitterHQ/promiseDB | author:gitter description:A promise wrapper for indexedDB
+github-gitter-cube | cube | https://github.com/gitterHQ/cube | author:gitter description:Cube: A system for time series visualization.
+github-gitter-convert-animate-css-to-less | convert-animate-css-to-less | https://github.com/gitterHQ/convert-animate-css-to-less | author:gitter description:Conversion script for animate.css to less
+github-gitter-fuelux | fuelux | https://github.com/gitterHQ/fuelux | author:gitter description:Extends Twitter Bootstrap with additional lightweight JavaScript controls. Easy to install, customize, update, and optimize. All functionality covered by live documentation and unit tests.
+github-gitter-mongoose | mongoose | https://github.com/gitterHQ/mongoose | author:gitter description:MongoDB object modeling designed to work in an asynchronous environment.
+github-gitter-websucket | websucket | https://github.com/gitterHQ/websucket | author:gitter description:A badly behaved WebSocket implementation
+github-gitter-cordova-osx | cordova-osx | https://github.com/gitterHQ/cordova-osx | author:gitter description:Mirror of Apache Cordova mac
+github-gitter-cronlock | cronlock | https://github.com/gitterHQ/cronlock | author:gitter description:cronlock lets you deploy cronjobs cluster-wide without worrying about overlaps. It uses Redis to keep track of locks.
+github-gitter-highlight.js | highlight.js | https://github.com/gitterHQ/highlight.js | author:gitter description:Javascript syntax highlighter
+github-gitter-blog.gitter.im | blog.gitter.im | https://github.com/gitterHQ/blog.gitter.im | author:gitter description:The Gitter blog
+github-gitter-moment | moment | https://github.com/gitterHQ/moment | author:gitter description:Parse, validate, manipulate, and display dates in javascript.
+github-gitter-gulp-less | gulp-less | https://github.com/gitterHQ/gulp-less | author:gitter description:A LESS plugin for Gulp
+github-gitter-node-redis-scripto | node-redis-scripto | https://github.com/gitterHQ/node-redis-scripto | author:gitter description:Redis Script Manager for NodeJS
+github-gitter-mongoose-number | mongoose-number | https://github.com/gitterHQ/mongoose-number | author:gitter description:Provides Mongoose v2 sub-classed Number with atomic increment/decrement support
+github-gitter-shutdown | shutdown | https://github.com/gitterHQ/shutdown | author:gitter description:Sequenced shutdown events for graceful shutdown in Node
+github-gitter-backbone | backbone | https://github.com/gitterHQ/backbone | author:gitter description:Give your JS App some Backbone with Models, Views, Collections, and Events
+github-gitter-ansible | ansible | https://github.com/gitterHQ/ansible | author:gitter description:Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid writing scripts or custom code to deploy and update your applications— automate in a language that approaches plain English, using SSH, with no agents to install on remote systems.
+github-gitter-prehash-presence-challenge | prehash-presence-challenge | https://github.com/gitterHQ/prehash-presence-challenge | author:gitter description:Gitter's Prehash Presence Service Challenge
+github-gitter-statuserror | statuserror | https://github.com/gitterHQ/statuserror | author:gitter description:Error with Status Code
+github-gitter-backbone-proxy-collection | backbone-proxy-collection | https://github.com/gitterHQ/backbone-proxy-collection | author:gitter 
+github-gitter-cordova-js | cordova-js | https://github.com/gitterHQ/cordova-js | author:gitter description:Mirror of Apache Cordova js
+github-gitter-pullup | pullup | https://github.com/gitterHQ/pullup | author:gitter description:A website you join via pull request.
+github-gitter-intercom.io | intercom.io | https://github.com/gitterHQ/intercom.io | author:gitter description:An NodeJS API client for intercom.io
+github-gitter-pid-stats | pid-stats | https://github.com/gitterHQ/pid-stats | author:gitter description:Given pid files, send process stats to statsd
+github-gitter-nano | nano | https://github.com/gitterHQ/nano | author:gitter description:Nano is a minimalistic client for CouchDB
+github-gitter-rhubarb | rhubarb | https://github.com/gitterHQ/rhubarb | author:gitter description:General Gitter chat about whatever
+github-gitter-typeahead.js | typeahead.js | https://github.com/gitterHQ/typeahead.js | author:gitter description:typeahead.js is a fast and fully-featured autocomplete library
+github-gitter-gulp-tar | gulp-tar | https://github.com/gitterHQ/gulp-tar | author:gitter description:Create tarball from files
+github-gitter-clockout | clockout | https://github.com/gitterHQ/clockout | author:gitter description:Microframework for node.js to keep track of whats currently happening on the server
+github-gitter-vies | vies | https://github.com/gitterHQ/vies | author:gitter 
+github-gitter-backbone-sorted-collection | backbone-sorted-collection | https://github.com/gitterHQ/backbone-sorted-collection | author:gitter description:Create a sorted version of a backbone collection that stays in sync.
+github-gitter-node-dogstatsd | node-dogstatsd | https://github.com/gitterHQ/node-dogstatsd | author:gitter description:node.js client for extended StatsD server of Datadog.
+github-gitter-smoker | smoker | https://github.com/gitterHQ/smoker | author:gitter description:Node module for smoke testing applications
+github-gitter-iframely | iframely | https://github.com/gitterHQ/iframely | author:gitter description:Embeds API you wish you built yourself. Over 1600 domains. (Responsive, oEmbed, Twitter Cards, Open Graph, Readability and more)
+github-gitter-ansible-ec2-inventory | ansible-ec2-inventory | https://github.com/gitterHQ/ansible-ec2-inventory | author:gitter description:Ansible dynamic inventory that uses EC2 tags to keep track of names and groups
+github-gitter-tentacles-redirect-detector | tentacles-redirect-detector | https://github.com/gitterHQ/tentacles-redirect-detector | author:gitter 
+github-gitter-passport-http-bearer | passport-http-bearer | https://github.com/gitterHQ/passport-http-bearer | author:gitter description:HTTP Bearer authentication strategy for Passport and Node.js.
+github-gitter-doony | doony | https://github.com/gitterHQ/doony | author:gitter description:UI Improvements for Jenkins
+github-gitter-keymaster | keymaster | https://github.com/gitterHQ/keymaster | author:gitter description:A simple micro-library for defining and dispatching keyboard shortcuts. It has no dependencies.
+github-gitter-handlebars-loader | handlebars-loader | https://github.com/gitterHQ/handlebars-loader | author:gitter description:A handlebars template loader for webpack
+github-gitter-dragula | dragula | https://github.com/gitterHQ/dragula | author:gitter description:👌 Drag and drop so simple it hurts
+github-gitter-change | change | https://github.com/gitterHQ/change | author:gitter description:Up-coming changes to Gitter
+github-gitter-request-http-cache-protobuf-serializer | request-http-cache-protobuf-serializer | https://github.com/gitterHQ/request-http-cache-protobuf-serializer | author:gitter 
+github-gitter-eslint-config-gitter | eslint-config-gitter | https://github.com/gitterHQ/eslint-config-gitter | author:gitter description:Eslint rules for Gitter
+github-gitter-cal-heatmap | cal-heatmap | https://github.com/gitterHQ/cal-heatmap | author:gitter description:Cal-Heatmap is a javascript module to create calendar heatmap to visualize time series data
+github-gitter-faye-redis-node | faye-redis-node | https://github.com/gitterHQ/faye-redis-node | author:gitter description:Redis engine backend for Faye
+github-gitter-request-http-cache-snappy-compressor | request-http-cache-snappy-compressor | https://github.com/gitterHQ/request-http-cache-snappy-compressor | author:gitter description:Snappy compressor for request-http-cache
+github-gitter-snappy-cache-snappy-codec | snappy-cache-snappy-codec | https://github.com/gitterHQ/snappy-cache-snappy-codec | author:gitter description:Snappy codec for snappy-cache
+github-gitter-backbone-filtered-collection | backbone-filtered-collection | https://github.com/gitterHQ/backbone-filtered-collection | author:gitter 

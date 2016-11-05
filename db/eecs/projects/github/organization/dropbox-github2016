@@ -10,13 +10,13 @@ github-dropbox-changes | changes | https://github.com/dropbox/changes | author:d
 github-dropbox-scooter | scooter | https://github.com/dropbox/scooter | author:dropbox description:An SCSS framework & UI library for Dropbox Web.
 github-dropbox-css-style-guide | css-style-guide | https://github.com/dropbox/css-style-guide | author:dropbox description:Dropbox’s (S)CSS authoring style guide
 github-dropbox-pyxl | pyxl | https://github.com/dropbox/pyxl | author:dropbox description:A Python extension for writing structured and reusable inline HTML.
-github-dropbox-hydra | hydra | https://github.com/dropbox/hydra | author:dropbox description:A multi-process MongoDB collection copier.
 github-dropbox-SwiftyDropbox | SwiftyDropbox | https://github.com/dropbox/SwiftyDropbox | author:dropbox description:Swift SDK for the Dropbox API v2.
+github-dropbox-hydra | hydra | https://github.com/dropbox/hydra | author:dropbox description:A multi-process MongoDB collection copier.
 github-dropbox-PyHive | PyHive | https://github.com/dropbox/PyHive | author:dropbox description:Python interface to Hive and Presto.
+github-dropbox-dropbox-sdk-python | dropbox-sdk-python | https://github.com/dropbox/dropbox-sdk-python | author:dropbox description:Python SDK for Dropbox API v2.
 github-dropbox-python-zxcvbn | python-zxcvbn | https://github.com/dropbox/python-zxcvbn | author:dropbox description:A realistic password strength estimator.
 github-dropbox-nn | nn | https://github.com/dropbox/nn | author:dropbox description:Non-nullable pointers for C++
 github-dropbox-dropbox-sdk-php | dropbox-sdk-php | https://github.com/dropbox/dropbox-sdk-php | author:dropbox description:A PHP library for the Dropbox Core API.
-github-dropbox-dropbox-sdk-python | dropbox-sdk-python | https://github.com/dropbox/dropbox-sdk-python | author:dropbox description:Python SDK for Dropbox API v2.
 github-dropbox-dropbox-sdk-java | dropbox-sdk-java | https://github.com/dropbox/dropbox-sdk-java | author:dropbox description:A Java library for the Dropbox Core API.
 github-dropbox-dbxcli | dbxcli | https://github.com/dropbox/dbxcli | author:dropbox description:A command line client for Dropbox built using the Go SDK
 github-dropbox-dropbox-sdk-dotnet | dropbox-sdk-dotnet | https://github.com/dropbox/dropbox-sdk-dotnet | author:dropbox description:.NET SDK for the Dropbox API v2.
@@ -28,85 +28,114 @@ github-dropbox-dropbox-sdk-js | dropbox-sdk-js | https://github.com/dropbox/drop
 github-dropbox-librsync | librsync | https://github.com/dropbox/librsync | author:dropbox description:Dropbox modified version of librysnc
 github-dropbox-miniutf | miniutf | https://github.com/dropbox/miniutf | author:dropbox description:A C++ library for basic Unicode manipulation.
 github-dropbox-pygerduty | pygerduty | https://github.com/dropbox/pygerduty | author:dropbox description:A Python library for PagerDuty.
-github-dropbox-datagraph | datagraph | https://github.com/dropbox/datagraph | author:dropbox description:Updated Feb 1, 2016
+github-dropbox-datagraph | datagraph | https://github.com/dropbox/datagraph | author:dropbox 
 github-dropbox-avrecode | avrecode | https://github.com/dropbox/avrecode | author:dropbox description:Lossless video compression: decode an H.264-encoded video file and reversibly re-encode it as as a smaller file.
 github-dropbox-nsot | nsot | https://github.com/dropbox/nsot | author:dropbox description:Network Source of Truth IPAM and network inventory database
-github-dropbox-PhotoWatch | PhotoWatch | https://github.com/dropbox/PhotoWatch | author:dropbox description:A demo app for the SwiftyDropbox SDK.
 github-dropbox-rust-alloc-no-stdlib | rust-alloc-no-stdlib | https://github.com/dropbox/rust-alloc-no-stdlib | author:dropbox description:An interface to a generic allocator so a no_std rust library can allocate memory, with, or without stdlib being linked.
+github-dropbox-PhotoWatch | PhotoWatch | https://github.com/dropbox/PhotoWatch | author:dropbox description:A demo app for the SwiftyDropbox SDK.
 github-dropbox-mdwebhook | mdwebhook | https://github.com/dropbox/mdwebhook | author:dropbox description:A sample app that uses webhooks to convert Markdown files to HTML.
 github-dropbox-amqp-coffee | amqp-coffee | https://github.com/dropbox/amqp-coffee | author:dropbox description:An AMQP 0.9.1 client for Node.js.
 github-dropbox-datastore-js | datastore-js | https://github.com/dropbox/datastore-js | author:dropbox description:A fork of dropbox/dropbox-js which adds support for the Datastore API
 github-dropbox-nautilus-dropbox | nautilus-dropbox | https://github.com/dropbox/nautilus-dropbox | author:dropbox description:Dropbox Integration for Nautilus
-github-dropbox-trapperkeeper | trapperkeeper | https://github.com/dropbox/trapperkeeper | author:dropbox description:A suite of tools for ingesting and displaying SNMP traps.
 github-dropbox-stone | stone | https://github.com/dropbox/stone | author:dropbox description:Write your APIs in stone.
+github-dropbox-trapperkeeper | trapperkeeper | https://github.com/dropbox/trapperkeeper | author:dropbox description:A suite of tools for ingesting and displaying SNMP traps.
 github-dropbox-Lists-js | Lists-js | https://github.com/dropbox/Lists-js | author:dropbox description:A sample app for sharing datastores.
 github-dropbox-dropbox-sdk-obj-c | dropbox-sdk-obj-c | https://github.com/dropbox/dropbox-sdk-obj-c | author:dropbox description:Official Objective-C SDK for the Dropbox API v2.
 github-dropbox-pytest-flakefinder | pytest-flakefinder | https://github.com/dropbox/pytest-flakefinder | author:dropbox description:Runs tests multiple times to expose flakiness.
 github-dropbox-lopper | lopper | https://github.com/dropbox/lopper | author:dropbox description:A lightweight C++ framework for vectorizing image-processing code
 github-dropbox-dropbox-ios-dropins-sdk | dropbox-ios-dropins-sdk | https://github.com/dropbox/dropbox-ios-dropins-sdk | author:dropbox description:An iOS library for choosing files in Dropbox.
 github-dropbox-image-search | image-search | https://github.com/dropbox/image-search | author:dropbox description:A hypothetical Dropbox API app that makes it possible to do image searches from Dropbox.
-github-dropbox-grouper | grouper | https://github.com/dropbox/grouper | author:dropbox description:Group Management Server
 github-dropbox-encfs | encfs | https://github.com/dropbox/encfs | author:dropbox description:EncFS Encrypted Filesystem
+github-dropbox-grouper | grouper | https://github.com/dropbox/grouper | author:dropbox description:Group Management Server
 github-dropbox-Lists-ios | Lists-ios | https://github.com/dropbox/Lists-ios | author:dropbox description:A sample app for sharing datastores.
+github-dropbox-typed_ast | typed_ast | https://github.com/dropbox/typed_ast | author:dropbox 
 github-dropbox-cordova-datastores-example | cordova-datastores-example | https://github.com/dropbox/cordova-datastores-example | author:dropbox description:A version of the datastores tasks example that has been modified to run in a Cordova app.
-github-dropbox-Lists-swift | Lists-swift | https://github.com/dropbox/Lists-swift | author:dropbox description:A sample app for sharing datastores.
 github-dropbox-dropbox-sdk-go-unofficial | dropbox-sdk-go-unofficial | https://github.com/dropbox/dropbox-sdk-go-unofficial | author:dropbox description:⚠️ An UNOFFICIAL Dropbox v2 API SDK for Go
+github-dropbox-Lists-swift | Lists-swift | https://github.com/dropbox/Lists-swift | author:dropbox description:A sample app for sharing datastores.
 github-dropbox-dbx-unittest2pytest | dbx-unittest2pytest | https://github.com/dropbox/dbx-unittest2pytest | author:dropbox description:Convert unittest asserts to pytest rewritten asserts.
 github-dropbox-stopwatch | stopwatch | https://github.com/dropbox/stopwatch | author:dropbox description:Scoped, nested, aggregated python timing library
-github-dropbox-typed_ast | typed_ast | https://github.com/dropbox/typed_ast | author:dropbox description:Updated Oct 19, 2016
 github-dropbox-questions | questions | https://github.com/dropbox/questions | author:dropbox description:Simple application for storing interview questions.
 github-dropbox-pynsot | pynsot | https://github.com/dropbox/pynsot | author:dropbox description:A Python client and CLI utility for the Network Source of Truth (NSoT) REST API.
 github-dropbox-dropbox-api-v2-explorer | dropbox-api-v2-explorer | https://github.com/dropbox/dropbox-api-v2-explorer | author:dropbox description:Dropbox API v2 Explorer
-github-dropbox-hermes | hermes | https://github.com/dropbox/hermes | author:dropbox description:SRE Event and Autotasking system
+github-dropbox-marshal | marshal | https://github.com/dropbox/marshal | author:dropbox description:A Kafka consumer coordination library for Go.
 github-dropbox-dropbox-api-v2-repl | dropbox-api-v2-repl | https://github.com/dropbox/dropbox-api-v2-repl | author:dropbox description:Utilities to test the Dropbox API v2.
-github-dropbox-changes-client | changes-client | https://github.com/dropbox/changes-client | author:dropbox description:A build client for Changes.
+github-dropbox-hermes | hermes | https://github.com/dropbox/hermes | author:dropbox description:SRE Event and Autotasking system
 github-dropbox-changes-mesos-framework | changes-mesos-framework | https://github.com/dropbox/changes-mesos-framework | author:dropbox description:Mesos scheduling framework for Changes.
+github-dropbox-changes-client | changes-client | https://github.com/dropbox/changes-client | author:dropbox description:A build client for Changes.
+github-dropbox-goprotoc | goprotoc | https://github.com/dropbox/goprotoc | author:dropbox 
 github-dropbox-phabricator-changes | phabricator-changes | https://github.com/dropbox/phabricator-changes | author:dropbox description:Integration between Phabricator and Changes
-github-dropbox-goprotoc | goprotoc | https://github.com/dropbox/goprotoc | author:dropbox description:Updated Jan 5, 2015
 github-dropbox-dropbox_hook | dropbox_hook | https://github.com/dropbox/dropbox_hook | author:dropbox description:A tool for testing your Dropbox webhook endpoints.
 github-dropbox-Lists-android | Lists-android | https://github.com/dropbox/Lists-android | author:dropbox description:A sample app for sharing datastores.
 github-dropbox-Dropline | Dropline | https://github.com/dropbox/Dropline | author:dropbox description:Tool to monitor how busy an area is using Wi-Fi. Originally intended for Dropbox's Tuck Shop.
 github-dropbox-ClickTheBox-android | ClickTheBox-android | https://github.com/dropbox/ClickTheBox-android | author:dropbox description:Simple app for storing game state using the Dropbox Datastore API.
 github-dropbox-emmer | emmer | https://github.com/dropbox/emmer | author:dropbox description:A python framework for dynamic tftp servers.
-github-dropbox-ClickTheBox-js | ClickTheBox-js | https://github.com/dropbox/ClickTheBox-js | author:dropbox description:Simple app for storing game state using the Dropbox Datastore API.
+github-dropbox-goxlsx | goxlsx | https://github.com/dropbox/goxlsx | author:dropbox description:Google Go (golang) library for reading XLSX files.
 github-dropbox-DropboxBusinessScripts | DropboxBusinessScripts | https://github.com/dropbox/DropboxBusinessScripts | author:dropbox description:Scripting resources to serve as a base for common Dropbox Business tasks
-github-dropbox-DropboxBusinessAdminTool | DropboxBusinessAdminTool | https://github.com/dropbox/DropboxBusinessAdminTool | author:dropbox description:Power User tool to assist Dropbox Business Administrators in managing their Dropbox team
-github-dropbox-whitegold | whitegold | https://github.com/dropbox/whitegold | author:dropbox description:Whitegold color corrector
+github-dropbox-ClickTheBox-js | ClickTheBox-js | https://github.com/dropbox/ClickTheBox-js | author:dropbox description:Simple app for storing game state using the Dropbox Datastore API.
+github-dropbox-llama | llama | https://github.com/dropbox/llama | author:dropbox description:Loss & LAtency MAtrix
 github-dropbox-pep8squad | pep8squad | https://github.com/dropbox/pep8squad | author:dropbox description:PEP8 Squad, for enforcing foolish consistency
+github-dropbox-DropboxBusinessAdminTool | DropboxBusinessAdminTool | https://github.com/dropbox/DropboxBusinessAdminTool | author:dropbox description:Power User tool to assist Dropbox Business Administrators in managing their Dropbox team
+github-dropbox-libpypa | libpypa | https://github.com/dropbox/libpypa | author:dropbox description:libpypa is a Python parser implemented in pure C++
 github-dropbox-dropbox-sdk-java-v2 | dropbox-sdk-java-v2 | https://github.com/dropbox/dropbox-sdk-java-v2 | author:dropbox description:[DEPRECATED] Java SDK for Dropbox API v2: Use https://github.com/dropbox/dropbox-sdk-java instead
 github-dropbox-rust-brotli-no-stdlib | rust-brotli-no-stdlib | https://github.com/dropbox/rust-brotli-no-stdlib | author:dropbox description:An implementation of https://github.com/google/brotli in rust avoiding the stdlib
-github-dropbox-llama | llama | https://github.com/dropbox/llama | author:dropbox description:Loss & LAtency MAtrix
-github-dropbox-pytest-call-tracer | pytest-call-tracer | https://github.com/dropbox/pytest-call-tracer | author:dropbox description:Updated May 6, 2014
-github-dropbox-ClickTheBox-ios | ClickTheBox-ios | https://github.com/dropbox/ClickTheBox-ios | author:dropbox description:Simple app for storing game state using the Dropbox Datastore API.
-github-dropbox-dropbox-api-spec | dropbox-api-spec | https://github.com/dropbox/dropbox-api-spec | author:dropbox description:Updated Sep 29, 2016
-github-dropbox-groupy | groupy | https://github.com/dropbox/groupy | author:dropbox description:Grouper Python Client Library
+github-dropbox-whitegold | whitegold | https://github.com/dropbox/whitegold | author:dropbox description:Whitegold color corrector
+github-dropbox-pytest-call-tracer | pytest-call-tracer | https://github.com/dropbox/pytest-call-tracer | author:dropbox 
 github-dropbox-changes-lxc-wrapper | changes-lxc-wrapper | https://github.com/dropbox/changes-lxc-wrapper | author:dropbox description:A lightweight container manager and build client wrapper for Changes.
 github-dropbox-presto-kafka-connector | presto-kafka-connector | https://github.com/dropbox/presto-kafka-connector | author:dropbox description:a presto connector for kafka
+github-dropbox-dropbox-api-spec | dropbox-api-spec | https://github.com/dropbox/dropbox-api-spec | author:dropbox 
+github-dropbox-ClickTheBox-ios | ClickTheBox-ios | https://github.com/dropbox/ClickTheBox-ios | author:dropbox description:Simple app for storing game state using the Dropbox Datastore API.
+github-dropbox-kafka | kafka | https://github.com/dropbox/kafka | author:dropbox description:Go driver for Kafka
 github-dropbox-hocrux | hocrux | https://github.com/dropbox/hocrux | author:dropbox description:Handwritten optical character recognition
 github-dropbox-puppet-osx_ard | puppet-osx_ard | https://github.com/dropbox/puppet-osx_ard | author:dropbox description:A Module for managing Apple Remote Desktop access on OS X.
-github-dropbox-pyston-perf | pyston-perf | https://github.com/dropbox/pyston-perf | author:dropbox description:Updated Sep 20, 2016
-github-dropbox-puppet-osx_setupassistant | puppet-osx_setupassistant | https://github.com/dropbox/puppet-osx_setupassistant | author:dropbox description:An example of using erb templates to dynamically generate mobileconfigs.
-github-dropbox-oid_translate | oid_translate | https://github.com/dropbox/oid_translate | author:dropbox description:Python Bindings around net-snmp for OID/MIB Name Translations.
-github-dropbox-phabricator-sentry | phabricator-sentry | https://github.com/dropbox/phabricator-sentry | author:dropbox description:Sentry integration for Phabricator
 github-dropbox-libavcodec-hooks | libavcodec-hooks | https://github.com/dropbox/libavcodec-hooks | author:dropbox description:Fork of ffmpeg (git://source.ffmpeg.org/ffmpeg.git). Required to compile avrecode lossless video compression (https://github.com/dropbox/avrecode). Adds hooks into low-level coding functions of libavcodec. License: LGPL.
-github-dropbox-puppet_run | puppet_run | https://github.com/dropbox/puppet_run | author:dropbox description:A wrapper script and launchd for running open source puppet on OS X
+github-dropbox-groupy | groupy | https://github.com/dropbox/groupy | author:dropbox description:Grouper Python Client Library
+github-dropbox-pyston-perf | pyston-perf | https://github.com/dropbox/pyston-perf | author:dropbox 
 github-dropbox-revision-browser | revision-browser | https://github.com/dropbox/revision-browser | author:dropbox description:Dropbox app that uses Dropins, API v1, and v2!
+github-dropbox-rethink-java-driver | rethink-java-driver | https://github.com/dropbox/rethink-java-driver | author:dropbox description:A Java RethinkDB Driver
+github-dropbox-phabricator-sentry | phabricator-sentry | https://github.com/dropbox/phabricator-sentry | author:dropbox description:Sentry integration for Phabricator
+github-dropbox-puppet-osx_setupassistant | puppet-osx_setupassistant | https://github.com/dropbox/puppet-osx_setupassistant | author:dropbox description:An example of using erb templates to dynamically generate mobileconfigs.
+github-dropbox-livegrep | livegrep | https://github.com/dropbox/livegrep | author:dropbox description:Interactively grep source code. Source for http://livegrep.com/
 github-dropbox-spookify | spookify | https://github.com/dropbox/spookify | author:dropbox description:haunted dropbox! ghosts on images.
+github-dropbox-puppet_run | puppet_run | https://github.com/dropbox/puppet_run | author:dropbox description:A wrapper script and launchd for running open source puppet on OS X
 github-dropbox-notouch | notouch | https://github.com/dropbox/notouch | author:dropbox description:UI and event database for storing and managing server and switch installer events.
 github-dropbox-changes-artifacts | changes-artifacts | https://github.com/dropbox/changes-artifacts | author:dropbox description:Artifact store server and client for Changes
+github-dropbox-oid_translate | oid_translate | https://github.com/dropbox/oid_translate | author:dropbox description:Python Bindings around net-snmp for OID/MIB Name Translations.
 github-dropbox-puppet-osx_utils | puppet-osx_utils | https://github.com/dropbox/puppet-osx_utils | author:dropbox description:Puppet Module that contains some handy OS X Specific Types.
-github-dropbox-pem-converter-maven-plugin | pem-converter-maven-plugin | https://github.com/dropbox/pem-converter-maven-plugin | author:dropbox description:A Maven plugin that converts OpenSSL-format PEM certificate files to Java-compatible JKS files.
-github-dropbox-libunwind | libunwind | https://github.com/dropbox/libunwind | author:dropbox description:Pyston's fork of libunwind; originally from git://git.sv.gnu.org/libunwind.git
+github-dropbox-xz | xz | https://github.com/dropbox/xz | author:dropbox description:💾 Free general-purpose data compression software with high compression ratio.
+github-dropbox-sentry-puppet | sentry-puppet | https://github.com/dropbox/sentry-puppet | author:dropbox description:Send failed puppet runs to sentry =D
 github-dropbox-babelapi | babelapi | https://github.com/dropbox/babelapi | author:dropbox description:Define an API once in Babel. Implement or use an existing code generator to map the API definition into usable objects and functions in any programming language.
 github-dropbox-rust-subprocess-communicate | rust-subprocess-communicate | https://github.com/dropbox/rust-subprocess-communicate | author:dropbox description:This implements the python subprocess.communicate tool for rust
+github-dropbox-libPhoneNumber-iOS | libPhoneNumber-iOS | https://github.com/dropbox/libPhoneNumber-iOS | author:dropbox description:iOS library for parsing, formatting, storing and validating international phone numbers from libphonenumber library.
+github-dropbox-pem-converter-maven-plugin | pem-converter-maven-plugin | https://github.com/dropbox/pem-converter-maven-plugin | author:dropbox description:A Maven plugin that converts OpenSSL-format PEM certificate files to Java-compatible JKS files.
+github-dropbox-go-lxc | go-lxc | https://github.com/dropbox/go-lxc | author:dropbox description:Go bindings for liblxc
+github-dropbox-libunwind | libunwind | https://github.com/dropbox/libunwind | author:dropbox description:Pyston's fork of libunwind; originally from git://git.sv.gnu.org/libunwind.git
 github-dropbox-presto-hdbc | presto-hdbc | https://github.com/dropbox/presto-hdbc | author:dropbox description:Presto HDBC Connector
-github-dropbox-pyston-testsuite | pyston-testsuite | https://github.com/dropbox/pyston-testsuite | author:dropbox description:Test suite for the Pyston project
+github-dropbox-node | node | https://github.com/dropbox/node | author:dropbox description:Node.js JavaScript runtime ✨🐢🚀✨
 github-dropbox-AskBox | AskBox | https://github.com/dropbox/AskBox | author:dropbox description:A javascript widget to let users ask you questions right from your documentation webpage.
 github-dropbox-sfmdemo | sfmdemo | https://github.com/dropbox/sfmdemo | author:dropbox description:Demo of the Dropbox API's shared folder metadata features.
 github-dropbox-python-invariant | python-invariant | https://github.com/dropbox/python-invariant | author:dropbox description:A simple library for ensuring arguments to functions are constant.
+github-dropbox-RMConnecter | RMConnecter | https://github.com/dropbox/RMConnecter | author:dropbox description:Connecter is an OS X app to help you interact with iTunes Connect’s Transporter binary, which allows you to interact with app metadata in iTunes Connect.
+github-dropbox-terraform | terraform | https://github.com/dropbox/terraform | author:dropbox description:Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
+github-dropbox-virtualenv | virtualenv | https://github.com/dropbox/virtualenv | author:dropbox description:Virtual Python Environment builder adopted for pyston
+github-dropbox-video.js | video.js | https://github.com/dropbox/video.js | author:dropbox description:Video.js - open source HTML5 & Flash video player
+github-dropbox-pyston-testsuite | pyston-testsuite | https://github.com/dropbox/pyston-testsuite | author:dropbox description:Test suite for the Pyston project
+github-dropbox-bazel | bazel | https://github.com/dropbox/bazel | author:dropbox description:Correct, reproducible, and fast builds for everyone.
 github-dropbox-mantle | mantle | https://github.com/dropbox/mantle | author:dropbox description:Datacenter Management System
-github-dropbox-strongpoc | strongpoc | https://github.com/dropbox/strongpoc | author:dropbox description:Strong Point of Contact
+github-dropbox-lmdb-rs | lmdb-rs | https://github.com/dropbox/lmdb-rs | author:dropbox description:Rust bindings for LMDB
+github-dropbox-rust-openssl | rust-openssl | https://github.com/dropbox/rust-openssl | author:dropbox description:OpenSSL bindings for Rust
+github-dropbox-presto | presto | https://github.com/dropbox/presto | author:dropbox description:Distributed SQL query engine for running interactive analytic queries against big data sources.
+github-dropbox-gogoprotobuf | gogoprotobuf | https://github.com/dropbox/gogoprotobuf | author:dropbox description:Protocol Buffers for Go with Gadgets
+github-dropbox-libzbc | libzbc | https://github.com/dropbox/libzbc | author:dropbox description:ZBC device manipulation library
+github-dropbox-python-brotli-rs | python-brotli-rs | https://github.com/dropbox/python-brotli-rs | author:dropbox description:Bindings for the brotli rust implementation into python
 github-dropbox-dropbox.github.io | dropbox.github.io | https://github.com/dropbox/dropbox.github.io | author:dropbox description:http://dropbox.github.io
-github-dropbox-zookeeper | zookeeper | https://github.com/dropbox/zookeeper | author:dropbox description:Updated Jul 7, 2016
+github-dropbox-strongpoc | strongpoc | https://github.com/dropbox/strongpoc | author:dropbox description:Strong Point of Contact
+github-dropbox-gitolite | gitolite | https://github.com/dropbox/gitolite | author:dropbox description:Hosting git repositories -- Gitolite allows you to setup git hosting on a central server, with very fine-grained access control and many (many!) more powerful features.
+github-dropbox-brotli-rs | brotli-rs | https://github.com/dropbox/brotli-rs | author:dropbox description:A Brotli implementation in pure and safe Rust
+github-dropbox-libseccomp | libseccomp | https://github.com/dropbox/libseccomp | author:dropbox description:The main libseccomp repository
+github-dropbox-react | react | https://github.com/dropbox/react | author:dropbox description:A declarative, efficient, and flexible JavaScript library for building user interfaces.
+github-dropbox-plyj | plyj | https://github.com/dropbox/plyj | author:dropbox description:A Java parser written in Python using PLY.
 github-dropbox-react-framestats | react-framestats | https://github.com/dropbox/react-framestats | author:dropbox description:Performance monitoring tool for React applications
+github-dropbox-zookeeper | zookeeper | https://github.com/dropbox/zookeeper | author:dropbox 
+github-dropbox-videojs-contrib-hls | videojs-contrib-hls | https://github.com/dropbox/videojs-contrib-hls | author:dropbox description:HLS library for video.js
+github-dropbox-protobuf | protobuf | https://github.com/dropbox/protobuf | author:dropbox description:Protocol Buffers - Google's data interchange format
 github-dropbox-huba | huba | https://github.com/dropbox/huba | author:dropbox description:Haskell clone of Scuba

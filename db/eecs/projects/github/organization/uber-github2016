@@ -1,7 +1,7 @@
 github-uber-image-diff | image-diff | https://github.com/uber/image-diff | author:uber description:Create image differential between two images
-github-uber-react-map-gl | react-map-gl | https://github.com/uber/react-map-gl | author:uber description:Updated Oct 18, 2016
+github-uber-react-map-gl | react-map-gl | https://github.com/uber/react-map-gl | author:uber 
 github-uber-go-torch | go-torch | https://github.com/uber/go-torch | author:uber description:Stochastic flame graph profiler for Go programs
-github-uber-react-vis | react-vis | https://github.com/uber/react-vis | author:uber description:Updated Oct 7, 2016
+github-uber-react-vis | react-vis | https://github.com/uber/react-vis | author:uber 
 github-uber-ringpop-node | ringpop-node | https://github.com/uber/ringpop-node | author:uber description:Scalable, fault-tolerant application-layer sharding for Node.js applications
 github-uber-npm-shrinkwrap | npm-shrinkwrap | https://github.com/uber/npm-shrinkwrap | author:uber description:A consistent shrinkwrap tool
 github-uber-tchannel | tchannel | https://github.com/uber/tchannel | author:uber description:network multiplexing and framing protocol for RPC
@@ -9,13 +9,13 @@ github-uber-okbuck | okbuck | https://github.com/uber/okbuck | author:uber descr
 github-uber-signals-ios | signals-ios | https://github.com/uber/signals-ios | author:uber description:Typeful eventing
 github-uber-pyflame | pyflame | https://github.com/uber/pyflame | author:uber description:Pyflame: A Ptracing Profiler For Python
 github-uber-hyperbahn | hyperbahn | https://github.com/uber/hyperbahn | author:uber description:Service discovery and routing for large scale microservice operations
+github-uber-deck.gl | deck.gl | https://github.com/uber/deck.gl | author:uber description:A WebGL overlay suite
 github-uber-clay | clay | https://github.com/uber/clay | author:uber description:Clay is a framework for building RESTful backend services using best practices. It’s a wrapper around Flask.
 github-uber-jetstream-ios | jetstream-ios | https://github.com/uber/jetstream-ios | author:uber description:An elegant model framework written in Swift
-github-uber-deck.gl | deck.gl | https://github.com/uber/deck.gl | author:uber description:A WebGL overlay suite
 github-uber-coding-challenge-tools | coding-challenge-tools | https://github.com/uber/coding-challenge-tools | author:uber description:Uber's tools team coding challenge
 github-uber-node-stap | node-stap | https://github.com/uber/node-stap | author:uber description:Tools for analyzing Node.js programs with SystemTap
 github-uber-ohana-ios | ohana-ios | https://github.com/uber/ohana-ios | author:uber description:Contacts simplified
-github-uber-Python-Sample-Application | Python-Sample-Application | https://github.com/uber/Python-Sample-Application | author:uber description:Updated Oct 4, 2015
+github-uber-Python-Sample-Application | Python-Sample-Application | https://github.com/uber/Python-Sample-Application | author:uber 
 github-uber-ringpop-go | ringpop-go | https://github.com/uber/ringpop-go | author:uber description:Scalable, fault-tolerant application-layer sharding for Go applications
 github-uber-luma.gl | luma.gl | https://github.com/uber/luma.gl | author:uber description:A JavaScript WebGL Framework for Data Visualization
 github-uber-rides-ios-sdk | rides-ios-sdk | https://github.com/uber/rides-ios-sdk | author:uber description:Uber Rides iOS SDK (beta)
@@ -24,17 +24,19 @@ github-uber-phabricator-jenkins-plugin | phabricator-jenkins-plugin | https://gi
 github-uber-r-dom | r-dom | https://github.com/uber/r-dom | author:uber description:React DOM wrapper
 github-uber-vertica-python | vertica-python | https://github.com/uber/vertica-python | author:uber description:vertica-python is a native Python adapter for the Vertica (http://www.vertica.com) database.
 github-uber-rides-android-sdk | rides-android-sdk | https://github.com/uber/rides-android-sdk | author:uber description:Uber Rides Android SDK (beta)
-github-uber-tchannel-node | tchannel-node | https://github.com/uber/tchannel-node | author:uber description:Updated Oct 19, 2016
+github-uber-tchannel-node | tchannel-node | https://github.com/uber/tchannel-node | author:uber 
+github-uber-multitransport-jsonrpc | multitransport-jsonrpc | https://github.com/uber/multitransport-jsonrpc | author:uber description:JSON-RPC Client (Node.js & Browser) and Server (Node.js) aim at "natural looking" server and client code.
 github-uber-zero-config | zero-config | https://github.com/uber/zero-config | author:uber description:A zero configuration configuration loader
+github-uber-Objective-LevelDB | Objective-LevelDB | https://github.com/uber/Objective-LevelDB | author:uber description:An Objective-C database library built over Google's LevelDB
 github-uber-uberalls | uberalls | https://github.com/uber/uberalls | author:uber description:Track code coverage metrics with Jenkins and Phabricator
 github-uber-logtron | logtron | https://github.com/uber/logtron | author:uber description:A logging MACHINE
 github-uber-tchannel-java | tchannel-java | https://github.com/uber/tchannel-java | author:uber description:A Java implementation of the TChannel protocol.
 github-uber-potter | potter | https://github.com/uber/potter | author:uber description:a CLI to create node.js services
 github-uber-cassette | cassette | https://github.com/uber/cassette | author:uber description:Store and replay HTTP requests made in your Python app
 github-uber-statsrelay | statsrelay | https://github.com/uber/statsrelay | author:uber description:A consistent-hashing relay for statsd and carbon metrics
-github-uber-in-n-out | in-n-out | https://github.com/uber/in-n-out | author:uber description:A library to perform point-in-geofence searches.
 github-uber-hacheck | hacheck | https://github.com/uber/hacheck | author:uber description:HAproxy healthcheck proxying service
 github-uber-rides-python-sdk | rides-python-sdk | https://github.com/uber/rides-python-sdk | author:uber description:Uber Rides Python SDK (beta)
+github-uber-in-n-out | in-n-out | https://github.com/uber/in-n-out | author:uber description:A library to perform point-in-geofence searches.
 github-uber-doubles | doubles | https://github.com/uber/doubles | author:uber description:Test doubles for Python.
 github-uber-charlatan | charlatan | https://github.com/uber/charlatan | author:uber description:A Python library to efficiently manage and install database fixtures
 github-uber-express-statsd | express-statsd | https://github.com/uber/express-statsd | author:uber description:Statsd route monitoring middleware for connect/express
@@ -42,6 +44,7 @@ github-uber-grafana-dash-gen | grafana-dash-gen | https://github.com/uber/grafan
 github-uber-uReplicator | uReplicator | https://github.com/uber/uReplicator | author:uber description:Improvement of Apache Kafka Mirrormaker
 github-uber-tchannel-python | tchannel-python | https://github.com/uber/tchannel-python | author:uber description:Python implementation of the TChannel protocol.
 github-uber-rides-java-sdk | rides-java-sdk | https://github.com/uber/rides-java-sdk | author:uber description:Uber Rides Java SDK (beta)
+github-uber-standard | standard | https://github.com/uber/standard | author:uber description:JavaScript Standard Style — One Style to Rule Them All
 github-uber-uncaught-exception | uncaught-exception | https://github.com/uber/uncaught-exception | author:uber description:Handle uncaught exceptions.
 github-uber-lb_pool | lb_pool | https://github.com/uber/lb_pool | author:uber description:HTTP client load balancer with retries
 github-uber-eight-track | eight-track | https://github.com/uber/eight-track | author:uber description:Record and playback HTTP requests
@@ -50,51 +53,93 @@ github-uber-uber-ngen | uber-ngen | https://github.com/uber/uber-ngen | author:u
 github-uber-kafka-spraynozzle | kafka-spraynozzle | https://github.com/uber/kafka-spraynozzle | author:uber description:A nozzle to spray a kafka topic at an HTTP endpoint.
 github-uber-canduit | canduit | https://github.com/uber/canduit | author:uber description:Node.js Phabricator Conduit API client
 github-uber-py-find-injection | py-find-injection | https://github.com/uber/py-find-injection | author:uber description:Look for SQL injection attacks in python source code
+github-uber-idl | idl | https://github.com/uber/idl | author:uber description:A CLI for managing Thrift IDL files
 github-uber-tcurl | tcurl | https://github.com/uber/tcurl | author:uber description:A command line utility to talk to tchannel servers
 github-uber-mutornadomon | mutornadomon | https://github.com/uber/mutornadomon | author:uber description:Easy-to-install monitor endpoint for Tornado applications
-github-uber-idl | idl | https://github.com/uber/idl | author:uber description:A CLI for managing Thrift IDL files
 github-uber-airlock | airlock | https://github.com/uber/airlock | author:uber description:A prober to probe HTTP based backends for health
 github-uber-lint-trap | lint-trap | https://github.com/uber/lint-trap | author:uber description:JavaScript linter module for Uber projects
 github-uber-sublime-phabricator | sublime-phabricator | https://github.com/uber/sublime-phabricator | author:uber description:Open files in Phabricator via Sublime Text
-github-uber-usb2fac | usb2fac | https://github.com/uber/usb2fac | author:uber description:Enabling 2fac confirmation for newly connected USB devices
+github-uber-node-statsd-client | node-statsd-client | https://github.com/uber/node-statsd-client | author:uber description:Node.js client for statsd
 github-uber-kafka-logger | kafka-logger | https://github.com/uber/kafka-logger | author:uber description:A kafka logger for winston
+github-uber-usb2fac | usb2fac | https://github.com/uber/usb2fac | author:uber description:Enabling 2fac confirmation for newly connected USB devices
 github-uber-sentry-logger | sentry-logger | https://github.com/uber/sentry-logger | author:uber description:A Sentry transport for Winston
 github-uber-multidimensional_urlencode | multidimensional_urlencode | https://github.com/uber/multidimensional_urlencode | author:uber description:Python library to urlencode a multidimensional dict
 github-uber-jaeger-client-go | jaeger-client-go | https://github.com/uber/jaeger-client-go | author:uber description:Jaeger Bindings for Go OpenTracing API.
 github-uber-express-translate | express-translate | https://github.com/uber/express-translate | author:uber description:Add simple translation support to Express
 github-uber-bufrw | bufrw | https://github.com/uber/bufrw | author:uber description:Buffer Reading and Writing
-github-uber-Bug-Bounty-Page | Bug-Bounty-Page | https://github.com/uber/Bug-Bounty-Page | author:uber description:A repo to make our changes more transparent to bug bounty researchers in our program (so they can see commits, etc).
 github-uber-react-vis-force | react-vis-force | https://github.com/uber/react-vis-force | author:uber description:d3-force graphs as React Components.
-github-uber-sevnup | sevnup | https://github.com/uber/sevnup | author:uber description:Reliably carry on work for a hashring node that owns a keyspace
+github-uber-buck-http-cache | buck-http-cache | https://github.com/uber/buck-http-cache | author:uber description:An Implementation of Buck's HTTP Cache API as a distributed cache service.
+github-uber-Bug-Bounty-Page | Bug-Bounty-Page | https://github.com/uber/Bug-Bounty-Page | author:uber description:A repo to make our changes more transparent to bug bounty researchers in our program (so they can see commits, etc).
 github-uber-jaeger-client-java | jaeger-client-java | https://github.com/uber/jaeger-client-java | author:uber description:Jaeger Bindings for Java OpenTracing API
+github-uber-uber-node-spruce | uber-node-spruce | https://github.com/uber/uber-node-spruce | author:uber description:Configurable logging lib for Node.js
+github-uber-sevnup | sevnup | https://github.com/uber/sevnup | author:uber description:Reliably carry on work for a hashring node that owns a keyspace
 github-uber-build-changelog | build-changelog | https://github.com/uber/build-changelog | author:uber description:A CLI to auto-generate a deploy ready changelog
 github-uber-fixed-server | fixed-server | https://github.com/uber/fixed-server | author:uber description:Server for HTTP fixtures
-github-uber-uber-licence | uber-licence | https://github.com/uber/uber-licence | author:uber description:Utility to deal with Uber OSS licences
+github-uber-job_progress | job_progress | https://github.com/uber/job_progress | author:uber description:Store the progress of a job
 github-uber-ringpop-common | ringpop-common | https://github.com/uber/ringpop-common | author:uber description:Cross-language compatible tools and documentation for Ringpop
 github-uber-cache-dir | cache-dir | https://github.com/uber/cache-dir | author:uber description:An ES6 map-like cache with file-based backing
-github-uber-typed-request-client | typed-request-client | https://github.com/uber/typed-request-client | author:uber description:Make HTTP requests using TypedRequest and TypedResponse objects.
-github-uber-cidrtrie | cidrtrie | https://github.com/uber/cidrtrie | author:uber description:Trie implementation of a CIDR lookup table
-github-uber-job_progress | job_progress | https://github.com/uber/job_progress | author:uber description:Store the progress of a job
+github-uber-node-s2 | node-s2 | https://github.com/uber/node-s2 | author:uber description:bindings for s2 in node
 github-uber-tcap | tcap | https://github.com/uber/tcap | author:uber description:Uses pcap to inspect tchannel traffic over a network interface
-github-uber-failpointsjs | failpointsjs | https://github.com/uber/failpointsjs | author:uber description:Updated Sep 3, 2015
-github-uber-typed-request-stack | typed-request-stack | https://github.com/uber/typed-request-stack | author:uber description:Middleware stack runner for typed HTTP requests
-github-uber-HackerOneAlchemy | HackerOneAlchemy | https://github.com/uber/HackerOneAlchemy | author:uber description:A tool to generate statistics and help manage bug bounty reports in HackerOne.
+github-uber-uber-licence | uber-licence | https://github.com/uber/uber-licence | author:uber description:Utility to deal with Uber OSS licences
+github-uber-terraform | terraform | https://github.com/uber/terraform | author:uber description:Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
+github-uber-cidrtrie | cidrtrie | https://github.com/uber/cidrtrie | author:uber description:Trie implementation of a CIDR lookup table
+github-uber-kafka-rest | kafka-rest | https://github.com/uber/kafka-rest | author:uber description:REST Proxy for Kafka
 github-uber-ringpop-ui | ringpop-ui | https://github.com/uber/ringpop-ui | author:uber description:A visualization tool for Ringpop
+github-uber-typed-request-client | typed-request-client | https://github.com/uber/typed-request-client | author:uber description:Make HTTP requests using TypedRequest and TypedResponse objects.
+github-uber-typed-request-stack | typed-request-stack | https://github.com/uber/typed-request-stack | author:uber description:Middleware stack runner for typed HTTP requests
+github-uber-failpointsjs | failpointsjs | https://github.com/uber/failpointsjs | author:uber 
 github-uber-py-look-for-timeouts | py-look-for-timeouts | https://github.com/uber/py-look-for-timeouts | author:uber description:Scan for missing timeout calls in python source files
+github-uber-HackerOneAlchemy | HackerOneAlchemy | https://github.com/uber/HackerOneAlchemy | author:uber description:A tool to generate statistics and help manage bug bounty reports in HackerOne.
 github-uber-tcheck | tcheck | https://github.com/uber/tcheck | author:uber description:TChannel health check utility
-github-uber-connect-csrf-lite | connect-csrf-lite | https://github.com/uber/connect-csrf-lite | author:uber description:CSRF validation middleware for Connect/Express
+github-uber-mathjs | mathjs | https://github.com/uber/mathjs | author:uber description:An extensive math library for JavaScript and Node.js
+github-uber-Prozess | Prozess | https://github.com/uber/Prozess | author:uber description:kafka library for node.js
 github-uber-jaeger-client-python | jaeger-client-python | https://github.com/uber/jaeger-client-python | author:uber description:Jaeger Bindings for Python OpenTracing API
+github-uber-arcanist | arcanist | https://github.com/uber/arcanist | author:uber description:Command line interface for Phabricator
 github-uber-fixtures-fs | fixtures-fs | https://github.com/uber/fixtures-fs | author:uber description:Create a temporary fs with JSON fixtures
 github-uber-ringpop-admin | ringpop-admin | https://github.com/uber/ringpop-admin | author:uber description:Command-line tools for Ringpop
-github-uber-shallow-settings | shallow-settings | https://github.com/uber/shallow-settings | author:uber description:Shallow inheritance-based settings for your application
+github-uber-connect-csrf-lite | connect-csrf-lite | https://github.com/uber/connect-csrf-lite | author:uber description:CSRF validation middleware for Connect/Express
+github-uber-vagrant-aws | vagrant-aws | https://github.com/uber/vagrant-aws | author:uber description:Use Vagrant to manage your EC2 and VPC instances.
+github-uber-node_redis | node_redis | https://github.com/uber/node_redis | author:uber description:redis client for node
+github-uber-confluent-schema-registry | confluent-schema-registry | https://github.com/uber/confluent-schema-registry | author:uber description:Schema registry for Kafka
+github-uber-json-schema-filter | json-schema-filter | https://github.com/uber/json-schema-filter | author:uber description:Filters (removes) objects from document based on passed json-schema
+github-uber-node-zookeeper | node-zookeeper | https://github.com/uber/node-zookeeper | author:uber description:node.js client for Apache Zookeeper
 github-uber-py-find-unicode | py-find-unicode | https://github.com/uber/py-find-unicode | author:uber description:Find incorrect unicode() invocations
 github-uber-clusto-query | clusto-query | https://github.com/uber/clusto-query | author:uber description:Silly CLI for querying clusto more quickly
-github-uber-jaeger-client-node | jaeger-client-node | https://github.com/uber/jaeger-client-node | author:uber description:Jaeger Bindings for Javascript OpenTracing API
+github-uber-shallow-settings | shallow-settings | https://github.com/uber/shallow-settings | author:uber description:Shallow inheritance-based settings for your application
 github-uber-node-dot-arcanist | node-dot-arcanist | https://github.com/uber/node-dot-arcanist | author:uber description:Uber's .arcanist folder as an npm module
+github-uber-standard-format | standard-format | https://github.com/uber/standard-format | author:uber description:converts your code into Standard JavaScript Format
+github-uber-jaeger | jaeger | https://github.com/uber/jaeger | author:uber description:Jaeger - Uber's Distributed Tracing System
+github-uber-winston | winston | https://github.com/uber/winston | author:uber description:a multi-transport async logging library for node.js
+github-uber-packer | packer | https://github.com/uber/packer | author:uber description:Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
+github-uber-hammock | hammock | https://github.com/uber/hammock | author:uber description:Node.js mock http object library for http req / res
+github-uber-sentry | sentry | https://github.com/uber/sentry | author:uber description:Sentry is a realtime, platform-agnostic error logging and aggregation platform
+github-uber-lynx | lynx | https://github.com/uber/lynx | author:uber description:node.js client for Etsy'd StatsD server
+github-uber-node_redis_lua | node_redis_lua | https://github.com/uber/node_redis_lua | author:uber description:Redis scripting for node_redis
+github-uber-jaeger-client-node | jaeger-client-node | https://github.com/uber/jaeger-client-node | author:uber description:Jaeger Bindings for Javascript OpenTracing API
+github-uber-goamz | goamz | https://github.com/uber/goamz | author:uber description:Golang Amazon Library
+github-uber-confluent-rest-utils | confluent-rest-utils | https://github.com/uber/confluent-rest-utils | author:uber description:Utilities and a small framework for building REST services with Jersey, Jackson, and Jetty.
 github-uber-pyrehol | pyrehol | https://github.com/uber/pyrehol | author:uber description:Python wrapper for Firehol
+github-uber-fbthrift | fbthrift | https://github.com/uber/fbthrift | author:uber description:Facebook's branch of Apache Thrift, including a new C++ server.
+github-uber-clustoclient | clustoclient | https://github.com/uber/clustoclient | author:uber description:Python client library and utilities for Clusto (http://clusto.org/)
+github-uber-rc | rc | https://github.com/uber/rc | author:uber description:The non-configurable configuration loader for lazy people.
+github-uber-node-tabtab | node-tabtab | https://github.com/uber/node-tabtab | author:uber description:tab completion helpers, for node cli programs. Inspired by npm completion
 github-uber-pymegacli | pymegacli | https://github.com/uber/pymegacli | author:uber description:Python API wrapper around MegaCli64
+github-uber-kafka-node | kafka-node | https://github.com/uber/kafka-node | author:uber description:Node.js client for Apache Kafka 0.8
 github-uber-tchannel-gen | tchannel-gen | https://github.com/uber/tchannel-gen | author:uber description:Scaffolding for new TChannel w/ Hyperbahn applications
+github-uber-migrate | migrate | https://github.com/uber/migrate | author:uber description:Database migration handling in Golang
+github-uber-thrift | thrift | https://github.com/uber/thrift | author:uber description:Mirror of Apache Thrift
+github-uber-python-phabricator | python-phabricator | https://github.com/uber/python-phabricator | author:uber description:Python bindings for Phabricator
+github-uber-package_control_channel | package_control_channel | https://github.com/uber/package_control_channel | author:uber description:Default channel file for Package Control. Follow the directions at:
+github-uber-node-zookeeper-client | node-zookeeper-client | https://github.com/uber/node-zookeeper-client | author:uber description:A pure Javascript ZooKeeper client for Node.js
+github-uber-oneapi-python | oneapi-python | https://github.com/uber/oneapi-python | author:uber description:oneapi-python
+github-uber-libphutil | libphutil | https://github.com/uber/libphutil | author:uber description:A collection of PHP utility classes
+github-uber-pyodbc | pyodbc | https://github.com/uber/pyodbc | author:uber description:Python ODBC bridge
+github-uber-go.uber.org | go.uber.org | https://github.com/uber/go.uber.org | author:uber description:Golang https://go.uber.org custom import path
+github-uber-memsql-spark-connector | memsql-spark-connector | https://github.com/uber/memsql-spark-connector | author:uber description:A connector for MemSQL and Spark
+github-uber-riakpbc | riakpbc | https://github.com/uber/riakpbc | author:uber description:really basic, really simple riak protocol buffer client library for node.js
+github-uber-mock-fs | mock-fs | https://github.com/uber/mock-fs | author:uber description:Configurable mock for the fs module
+github-uber-confluent-common | confluent-common | https://github.com/uber/confluent-common | author:uber description:Common utilities library containing metrics, config and utils
+github-uber-jaeger-lib | jaeger-lib | https://github.com/uber/jaeger-lib | author:uber description:A collection of shared infrastructure libraries used by different components of Jaeger.
+github-uber-BufferMaker | BufferMaker | https://github.com/uber/BufferMaker | author:uber description:BufferMaker
 github-uber-jaeger-idl | jaeger-idl | https://github.com/uber/jaeger-idl | author:uber description:A set of shared data model definitions used by Jaeger components.
 github-uber-stale-fresh-cache | stale-fresh-cache | https://github.com/uber/stale-fresh-cache | author:uber description:Cache data and eagerly retrieve when it begins to get stale
-github-uber-go.uber.org | go.uber.org | https://github.com/uber/go.uber.org | author:uber description:Golang https://go.uber.org custom import path
-github-uber-jaeger-lib | jaeger-lib | https://github.com/uber/jaeger-lib | author:uber description:A collection of shared infrastructure libraries used by different components of Jaeger.

@@ -1,122 +1,124 @@
 github-usgs-devcorner | devcorner | https://github.com/usgs/devcorner | author:usgs description:This meta-repository will serve as a reference location for a number of github repositories sharing ANSS ComCat-related code.
 github-usgs-nshmp-haz-fortran | nshmp-haz-fortran | https://github.com/usgs/nshmp-haz-fortran | author:usgs description:NSHMP Fortran Codes
-github-usgs-geomag-algorithms | geomag-algorithms | https://github.com/usgs/geomag-algorithms | author:usgs description:Updated Oct 7, 2016
+github-usgs-geomag-algorithms | geomag-algorithms | https://github.com/usgs/geomag-algorithms | author:usgs 
 github-usgs-earthquake-eventpages | earthquake-eventpages | https://github.com/usgs/earthquake-eventpages | author:usgs description:Web application for displaying earthquake event pages.
 github-usgs-libcomcat | libcomcat | https://github.com/usgs/libcomcat | author:usgs description:Library of functions and wrapper scripts for accessing NEIC ComCat server data
-github-usgs-nshmp-haz | nshmp-haz | https://github.com/usgs/nshmp-haz | author:usgs description:National Seismic Hazard Mapping Program codes
 github-usgs-slab2 | slab2 | https://github.com/usgs/slab2 | author:usgs description:Slab2.0 is a three-dimensional compilation of global subduction geometries, separated into regional models for each major subduction zone.
-github-usgs-shakemap | shakemap | https://github.com/usgs/shakemap | author:usgs description:Near-real-time maps of ground motion and shaking intensity
+github-usgs-nshmp-haz | nshmp-haz | https://github.com/usgs/nshmp-haz | author:usgs description:National Seismic Hazard Mapping Program codes
 github-usgs-best-practices | best-practices | https://github.com/usgs/best-practices | author:usgs description:Documents best practices for software development within the U.S. Geological Survey
-github-usgs-strec | strec | https://github.com/usgs/strec | author:usgs description:STREC stands for SeismoTectonic Regime Earthquake Calculator. It’s purpose is to determine automatically the earthquake type (subduction zone interface, active crustal shallow, stable continental region, etc.) and the earthquake focal mechanism.
-github-usgs-icoast | icoast | https://github.com/usgs/icoast | author:usgs description:Updated Feb 4, 2016
-github-usgs-hazdev-location-view | hazdev-location-view | https://github.com/usgs/hazdev-location-view | author:usgs description:Web library for getting location information from a user.
 github-usgs-nshmp-model-cous-2014 | nshmp-model-cous-2014 | https://github.com/usgs/nshmp-model-cous-2014 | author:usgs description:NSHMP Conterminous U.S. 2014
-github-usgs-earthquake-usdesign | earthquake-usdesign | https://github.com/usgs/earthquake-usdesign | author:usgs description:Web application for computing seismic design values conforming to various design codes in the United States.
-github-usgs-geo-data-portal | geo-data-portal | https://github.com/usgs/geo-data-portal | author:usgs description:Updated Sep 5, 2013
-github-usgs-earthquake-event-ws-client | earthquake-event-ws-client | https://github.com/usgs/earthquake-event-ws-client | author:usgs description:Java library for searching the ANSS ComCat comprehensive earthquake catalog.
+github-usgs-icoast | icoast | https://github.com/usgs/icoast | author:usgs 
+github-usgs-strec | strec | https://github.com/usgs/strec | author:usgs description:STREC stands for SeismoTectonic Regime Earthquake Calculator. It’s purpose is to determine automatically the earthquake type (subduction zone interface, active crustal shallow, stable continental region, etc.) and the earthquake focal mechanism.
 github-usgs-cookiecutter-python-package | cookiecutter-python-package | https://github.com/usgs/cookiecutter-python-package | author:usgs description:A simple Python project template for U.S. Geological Survey (USGS) software projects.
+github-usgs-hazdev-location-view | hazdev-location-view | https://github.com/usgs/hazdev-location-view | author:usgs description:Web library for getting location information from a user.
+github-usgs-shakemap | shakemap | https://github.com/usgs/shakemap | author:usgs description:Near-real-time maps of ground motion and shaking intensity
+github-usgs-earthquake-usdesign | earthquake-usdesign | https://github.com/usgs/earthquake-usdesign | author:usgs description:Web application for computing seismic design values conforming to various design codes in the United States.
+github-usgs-earthquake-event-ws-client | earthquake-event-ws-client | https://github.com/usgs/earthquake-event-ws-client | author:usgs description:Java library for searching the ANSS ComCat comprehensive earthquake catalog.
 github-usgs-hazdev-svgimagemap | hazdev-svgimagemap | https://github.com/usgs/hazdev-svgimagemap | author:usgs description:ImageMaps implemented as SVG for responsive resizing.
 github-usgs-Quakeml | Quakeml | https://github.com/usgs/Quakeml | author:usgs description:ANSS Quakeml
+github-usgs-geo-data-portal | geo-data-portal | https://github.com/usgs/geo-data-portal | author:usgs 
 github-usgs-earthquake-website | earthquake-website | https://github.com/usgs/earthquake-website | author:usgs description:USGS Earthquake Hazards Program Website
-github-usgs-finite-fault | finite-fault | https://github.com/usgs/finite-fault | author:usgs description:Finite-Fault Modeling of the Earthquake Source using Teleseismic Body Waves
-github-usgs-nshmp-haz-catalogs | nshmp-haz-catalogs | https://github.com/usgs/nshmp-haz-catalogs | author:usgs description:NSHMP Earthquake Catalogs
-github-usgs-landslides-website | landslides-website | https://github.com/usgs/landslides-website | author:usgs description:Updated Oct 5, 2016
 github-usgs-EDEN-hydrograph-data | EDEN-hydrograph-data | https://github.com/usgs/EDEN-hydrograph-data | author:usgs description:Publish hydrograph pages and data for EDEN (Everglades Depth Estimation Network)
 github-usgs-rcomcat | rcomcat | https://github.com/usgs/rcomcat | author:usgs description:R library for searching the ANSS ComCat comprehensive earthquake catalog.
+github-usgs-nshmp-haz-catalogs | nshmp-haz-catalogs | https://github.com/usgs/nshmp-haz-catalogs | author:usgs description:NSHMP Earthquake Catalogs
+github-usgs-finite-fault | finite-fault | https://github.com/usgs/finite-fault | author:usgs description:Finite-Fault Modeling of the Earthquake Source using Teleseismic Body Waves
 github-usgs-earthquake-hazard-tool | earthquake-hazard-tool | https://github.com/usgs/earthquake-hazard-tool | author:usgs description:Unified application for hazard calculations.
+github-usgs-pdl | pdl | https://github.com/usgs/pdl | author:usgs description:Product Distribution Layer
 github-usgs-hazdev-webutils | hazdev-webutils | https://github.com/usgs/hazdev-webutils | author:usgs description:Utilities commonly used in web applications developed by the EHP HazDev team.
-github-usgs-edgecwb | edgecwb | https://github.com/usgs/edgecwb | author:usgs description:Updated Jul 1, 2016
 github-usgs-hazdev-d3 | hazdev-d3 | https://github.com/usgs/hazdev-d3 | author:usgs description:D3 Utilities
+github-usgs-edgecwb | edgecwb | https://github.com/usgs/edgecwb | author:usgs 
 github-usgs-nwis-web-services-snapshot-add-in | nwis-web-services-snapshot-add-in | https://github.com/usgs/nwis-web-services-snapshot-add-in | author:usgs description:NWIS Web Services Snapshot Source Code
+github-usgs-landslides-website | landslides-website | https://github.com/usgs/landslides-website | author:usgs 
 github-usgs-nshmp-model-cous-2008 | nshmp-model-cous-2008 | https://github.com/usgs/nshmp-model-cous-2008 | author:usgs description:NSHMP Conterminous U.S. 2008
 github-usgs-geomag-plots | geomag-plots | https://github.com/usgs/geomag-plots | author:usgs description:Plots of timeseries data for geomagnetic observatories
-github-usgs-earthquake-design-ws | earthquake-design-ws | https://github.com/usgs/earthquake-design-ws | author:usgs description:Web services provided by the U.S. Geological Survey for computing seismic design parameters.
 github-usgs-earthquake-event-ws | earthquake-event-ws | https://github.com/usgs/earthquake-event-ws | author:usgs description:Web service and data feeds for seismic event data
-github-usgs-shakecast | shakecast | https://github.com/usgs/shakecast | author:usgs description:ShakeCast
 github-usgs-matcomcat | matcomcat | https://github.com/usgs/matcomcat | author:usgs description:Matlab wrapper around ANSS ComCat server
 github-usgs-eqmessageutils | eqmessageutils | https://github.com/usgs/eqmessageutils | author:usgs description:Earthquake Message Format Utilities
-github-usgs-arcgis-sample | arcgis-sample | https://github.com/usgs/arcgis-sample | author:usgs description:Updated Apr 20, 2015
+github-usgs-arcgis-sample | arcgis-sample | https://github.com/usgs/arcgis-sample | author:usgs 
 github-usgs-hazdev-basemap | hazdev-basemap | https://github.com/usgs/hazdev-basemap | author:usgs description:Tile overlays used in hazdev applications.
-github-usgs-asl-sensorloc | asl-sensorloc | https://github.com/usgs/asl-sensorloc | author:usgs description:Utilities for processing Mini-SEED files.
+github-usgs-earthquake-faults | earthquake-faults | https://github.com/usgs/earthquake-faults | author:usgs description:Quaternary and hazard fault web applications
+github-usgs-hazdev-template | hazdev-template | https://github.com/usgs/hazdev-template | author:usgs description:Lightweight php template framework
 github-usgs-geomag-edge-ws | geomag-edge-ws | https://github.com/usgs/geomag-edge-ws | author:usgs description:Web service for geomagnetism data stored in the EDGE
 github-usgs-seedscan | seedscan | https://github.com/usgs/seedscan | author:usgs description:ASL Java SeedScan
-github-usgs-neicmap | neicmap | https://github.com/usgs/neicmap | author:usgs description:Updated Oct 26, 2015
-github-usgs-earthquake-list-widget | earthquake-list-widget | https://github.com/usgs/earthquake-list-widget | author:usgs description:Widget for embedding earthquake list(s) on web pages.
+github-usgs-asl-sensorloc | asl-sensorloc | https://github.com/usgs/asl-sensorloc | author:usgs description:Utilities for processing Mini-SEED files.
+github-usgs-earthquake-latest-earthquakes | earthquake-latest-earthquakes | https://github.com/usgs/earthquake-latest-earthquakes | author:usgs 
+github-usgs-ps2ff | ps2ff | https://github.com/usgs/ps2ff | author:usgs description:Produce approximated finite fault distances and variance corrections given point source information, e.g., Repi (epcentral distance) to Rrup (rupture distance)
+github-usgs-neicmap | neicmap | https://github.com/usgs/neicmap | author:usgs 
+github-usgs-web-design-standards | web-design-standards | https://github.com/usgs/web-design-standards | author:usgs description:Open source UI components and visual style guide for U.S. federal government websites
 github-usgs-logger2csv | logger2csv | https://github.com/usgs/logger2csv | author:usgs description:Create daily CSV files containing data retrieved from a CampbellScientific data logger
-github-usgs-neicio | neicio | https://github.com/usgs/neicio | author:usgs description:Updated Mar 7, 2016
+github-usgs-earthquake-list-widget | earthquake-list-widget | https://github.com/usgs/earthquake-list-widget | author:usgs description:Widget for embedding earthquake list(s) on web pages.
 github-usgs-hazdev-geoserve-ws | hazdev-geoserve-ws | https://github.com/usgs/hazdev-geoserve-ws | author:usgs description:Geoserve
-github-usgs-pdl | pdl | https://github.com/usgs/pdl | author:usgs description:Product Distribution Layer
-github-usgs-asl-dqa-web | asl-dqa-web | https://github.com/usgs/asl-dqa-web | author:usgs description:Updated Jun 7, 2016
+github-usgs-neicio | neicio | https://github.com/usgs/neicio | author:usgs 
+github-usgs-asl-dqa-web | asl-dqa-web | https://github.com/usgs/asl-dqa-web | author:usgs 
 github-usgs-swarm | swarm | https://github.com/usgs/swarm | author:usgs description:a Java application designed to display and analyze seismic waveforms in real-time.
-github-usgs-earthquake-faults | earthquake-faults | https://github.com/usgs/earthquake-faults | author:usgs description:Quaternary and hazard fault web applications
+github-usgs-hazdev-leaflet | hazdev-leaflet | https://github.com/usgs/hazdev-leaflet | author:usgs description:General utilities for working with Leaflet
 github-usgs-iplover | iplover | https://github.com/usgs/iplover | author:usgs description:Quantifying coastal habitat utilization with smartphones!
 github-usgs-perl-lsi-megasas | perl-lsi-megasas | https://github.com/usgs/perl-lsi-megasas | author:usgs description:Perl interface to monitor LSI MegaRAID controllers
-github-usgs-hazdev-template | hazdev-template | https://github.com/usgs/hazdev-template | author:usgs description:Lightweight php template framework
-github-usgs-ps2ff | ps2ff | https://github.com/usgs/ps2ff | author:usgs description:Produce approximated finite fault distances and variance corrections given point source information (e.g., Repi (epcentral distance) to Rjb (Joyner-Boore distance)
-github-usgs-geomag-website | geomag-website | https://github.com/usgs/geomag-website | author:usgs description:Updated Oct 18, 2016
-github-usgs-hazdev-leaflet | hazdev-leaflet | https://github.com/usgs/hazdev-leaflet | author:usgs description:General utilities for working with Leaflet
-github-usgs-earthquake-latest-earthquakes | earthquake-latest-earthquakes | https://github.com/usgs/earthquake-latest-earthquakes | author:usgs description:Updated Aug 10, 2016
+github-usgs-geomag-website | geomag-website | https://github.com/usgs/geomag-website | author:usgs 
 github-usgs-hydra-web-service | hydra-web-service | https://github.com/usgs/hydra-web-service | author:usgs description:Web service for information from Hydra backend
-github-usgs-geomag-edge | geomag-edge | https://github.com/usgs/geomag-edge | author:usgs description:Dockerfile and related scripts to build a lightweight EDGE/CWB container image.
-github-usgs-CatStat | CatStat | https://github.com/usgs/CatStat | author:usgs description:Earthquake catalog statistics and plotting
+github-usgs-earthquake-design-ws | earthquake-design-ws | https://github.com/usgs/earthquake-design-ws | author:usgs description:Web services provided by the U.S. Geological Survey for computing seismic design parameters.
+github-usgs-shakecast | shakecast | https://github.com/usgs/shakecast | author:usgs description:ShakeCast
 github-usgs-jem-bmd-library | jem-bmd-library | https://github.com/usgs/jem-bmd-library | author:usgs description:JEM BMD Reader Library Java library to read and query from Binary Modeling Data (BMD) output from EPA WASP model.
-github-usgs-earthquake-impact-utils | earthquake-impact-utils | https://github.com/usgs/earthquake-impact-utils | author:usgs description:Updated Sep 15, 2016
-github-usgs-geomag-web-absolutes | geomag-web-absolutes | https://github.com/usgs/geomag-web-absolutes | author:usgs description:Updated Sep 19, 2016
-github-usgs-earthquake-catalog-ushis | earthquake-catalog-ushis | https://github.com/usgs/earthquake-catalog-ushis | author:usgs description:Updated May 6, 2015
+github-usgs-neic-locator | neic-locator | https://github.com/usgs/neic-locator | author:usgs description:Port of the current NEIC locator from FORTRAN77 to Java
+github-usgs-earthquake-network-operations | earthquake-network-operations | https://github.com/usgs/earthquake-network-operations | author:usgs description:Seismic network operations monitoring pages.
+github-usgs-earthquake-vs30 | earthquake-vs30 | https://github.com/usgs/earthquake-vs30 | author:usgs 
+github-usgs-hazdev-gis | hazdev-gis | https://github.com/usgs/hazdev-gis | author:usgs description:Document GIS services and workflows provided by the GHSC HazDev GIS team
+github-usgs-eq-convert-catalog | eq-convert-catalog | https://github.com/usgs/eq-convert-catalog | author:usgs 
+github-usgs-hazdev-project-skeleton | hazdev-project-skeleton | https://github.com/usgs/hazdev-project-skeleton | author:usgs 
+github-usgs-hazdev-cache-invalidator | hazdev-cache-invalidator | https://github.com/usgs/hazdev-cache-invalidator | author:usgs description:Application/library used to invalidate cached pages
+github-usgs-earthquake-catalog-ushis | earthquake-catalog-ushis | https://github.com/usgs/earthquake-catalog-ushis | author:usgs 
 github-usgs-mdgetpython | mdgetpython | https://github.com/usgs/mdgetpython | author:usgs description:Python version of mdget
 github-usgs-hazdev-arcgismap | hazdev-arcgismap | https://github.com/usgs/hazdev-arcgismap | author:usgs description:Widget for displaying ArcGIS services on a leaflet map.
-github-usgs-hazdev-gis | hazdev-gis | https://github.com/usgs/hazdev-gis | author:usgs description:Document GIS services and workflows provided by the GHSC HazDev GIS team
-github-usgs-hazdev-project-skeleton | hazdev-project-skeleton | https://github.com/usgs/hazdev-project-skeleton | author:usgs description:Updated Sep 27, 2016
-github-usgs-hazdev-broker | hazdev-broker | https://github.com/usgs/hazdev-broker | author:usgs description:Small Rapid Data Distribution
-github-usgs-earthquake-network-operations | earthquake-network-operations | https://github.com/usgs/earthquake-network-operations | author:usgs description:Seismic network operations monitoring pages.
 github-usgs-volcano-core | volcano-core | https://github.com/usgs/volcano-core | author:usgs description:Utility classes used across multiple applications
-github-usgs-neic-locator | neic-locator | https://github.com/usgs/neic-locator | author:usgs description:Port of the current NEIC locator from FORTRAN77 to Java
-github-usgs-earthquake-vs30 | earthquake-vs30 | https://github.com/usgs/earthquake-vs30 | author:usgs description:Updated Oct 3, 2016
-github-usgs-eq-convert-catalog | eq-convert-catalog | https://github.com/usgs/eq-convert-catalog | author:usgs description:Updated Sep 29, 2016
-github-usgs-azimuth | azimuth | https://github.com/usgs/azimuth | author:usgs description:ASL Azimuth
+github-usgs-ssim-api | ssim-api | https://github.com/usgs/ssim-api | author:usgs description:This package provides functions for extracting results from the results tables in a .ssim database and for building paths to spatial outputs.
+github-usgs-groundfailure | groundfailure | https://github.com/usgs/groundfailure | author:usgs 
+github-usgs-prism | prism | https://github.com/usgs/prism | author:usgs 
 github-usgs-pdlmonitor | pdlmonitor | https://github.com/usgs/pdlmonitor | author:usgs description:Tool to monitor a Product Distribution Layer installation.
 github-usgs-nccv_code_examples | nccv_code_examples | https://github.com/usgs/nccv_code_examples | author:usgs description:National Climate Change Viewer Code Examples
 github-usgs-earthquake-wwdesign | earthquake-wwdesign | https://github.com/usgs/earthquake-wwdesign | author:usgs description:Web application for computing design values worldwide.
 github-usgs-earthquake-heliplots | earthquake-heliplots | https://github.com/usgs/earthquake-heliplots | author:usgs description:Web interface for viewing heliplot data
-github-usgs-earthquake-detection-formats | earthquake-detection-formats | https://github.com/usgs/earthquake-detection-formats | author:usgs description:Data exchange formats to communicate seismic event detection information
-github-usgs-shakemap-scenarios | shakemap-scenarios | https://github.com/usgs/shakemap-scenarios | author:usgs description:Code for running USGS Shakemap Scenarios
+github-usgs-hazdev-broker | hazdev-broker | https://github.com/usgs/hazdev-broker | author:usgs description:Small Rapid Data Distribution
+github-usgs-earthquake-legacy-usdesign | earthquake-legacy-usdesign | https://github.com/usgs/earthquake-legacy-usdesign | author:usgs description:Legacy tool used for computing seismic design values
+github-usgs-hazdev-accordion | hazdev-accordion | https://github.com/usgs/hazdev-accordion | author:usgs description:Widget for creating collapsable regions on web pages.
 github-usgs-pager | pager | https://github.com/usgs/pager | author:usgs description:Prompt Assessment of Global Earthquakes for Response (PAGER)
-github-usgs-prism | prism | https://github.com/usgs/prism | author:usgs description:Updated Oct 13, 2016
-github-usgs-ssim-api | ssim-api | https://github.com/usgs/ssim-api | author:usgs description:This package provides functions for extracting results from the results tables in a .ssim database and for building paths to spatial outputs.
-github-usgs-hazdev-cache-invalidator | hazdev-cache-invalidator | https://github.com/usgs/hazdev-cache-invalidator | author:usgs description:Application/library used to invalidate cached pages
-github-usgs-anss-comcat | anss-comcat | https://github.com/usgs/anss-comcat | author:usgs description:Documentation for ANSS Comprehensive Catalog
-github-usgs-neicutil | neicutil | https://github.com/usgs/neicutil | author:usgs description:Updated Sep 29, 2015
+github-usgs-CatStat | CatStat | https://github.com/usgs/CatStat | author:usgs description:Earthquake catalog statistics and plotting
+github-usgs-earthquake-impact-utils | earthquake-impact-utils | https://github.com/usgs/earthquake-impact-utils | author:usgs description:Utilities to support USGS earthquake shaking and impacts software, such as ShakeMap, PAGER, and groundfailure.
+github-usgs-MapIO | MapIO | https://github.com/usgs/MapIO | author:usgs description:Provides library for dealing with grid formats
 github-usgs-landcovertrends | landcovertrends | https://github.com/usgs/landcovertrends | author:usgs description:Python package analyzing U.S. land cover trends
-github-usgs-multi-select | multi-select | https://github.com/usgs/multi-select | author:usgs description:Updated Jul 30, 2015
-github-usgs-Glass2 | Glass2 | https://github.com/usgs/Glass2 | author:usgs description:Second generation global associator
-github-usgs-et_utils | et_utils | https://github.com/usgs/et_utils | author:usgs description:Python code for EvapoTranspiration data processing.
+github-usgs-multi-select | multi-select | https://github.com/usgs/multi-select | author:usgs 
 github-usgs-demo | demo | https://github.com/usgs/demo | author:usgs description:Just a temporary demo project.
 github-usgs-usgs.github.io | usgs.github.io | https://github.com/usgs/usgs.github.io | author:usgs description:USGS Organization Pages
-github-usgs-hazdev-question-view | hazdev-question-view | https://github.com/usgs/hazdev-question-view | author:usgs description:Updated Nov 3, 2015
-github-usgs-nshmp-haz-ws | nshmp-haz-ws | https://github.com/usgs/nshmp-haz-ws | author:usgs description:NSHMP Hazard Web Services
+github-usgs-anss-comcat | anss-comcat | https://github.com/usgs/anss-comcat | author:usgs description:Documentation for ANSS Comprehensive Catalog
+github-usgs-neicutil | neicutil | https://github.com/usgs/neicutil | author:usgs 
+github-usgs-Glass2 | Glass2 | https://github.com/usgs/Glass2 | author:usgs description:Second generation global associator
+github-usgs-et_utils | et_utils | https://github.com/usgs/et_utils | author:usgs description:Python code for EvapoTranspiration data processing.
+github-usgs-hazdev-question-view | hazdev-question-view | https://github.com/usgs/hazdev-question-view | author:usgs 
+github-usgs-earthquake-rtgm-calculator | earthquake-rtgm-calculator | https://github.com/usgs/earthquake-rtgm-calculator | author:usgs description:Web application for calculating risk targeted ground motions and risk coefficients from hazard curves.
 github-usgs-winston | winston | https://github.com/usgs/winston | author:usgs description:Winston is a Java-based seismic wave server, which provides data and plots to clients.
 github-usgs-hazdev | hazdev | https://github.com/usgs/hazdev | author:usgs description:A project for consolidating common documentation, workflows and principles that apply to the HazDev team and their repositories.
-github-usgs-earthquake-rtgm-calculator | earthquake-rtgm-calculator | https://github.com/usgs/earthquake-rtgm-calculator | author:usgs description:Web application for calculating risk targeted ground motions and risk coefficients from hazard curves.
-github-usgs-hazdev-accordion | hazdev-accordion | https://github.com/usgs/hazdev-accordion | author:usgs description:Widget for creating collapsable regions on web pages.
-github-usgs-HeliPlotAPI | HeliPlotAPI | https://github.com/usgs/HeliPlotAPI | author:usgs description:Splits HeliPlot program into separate class files to be used as an API-similar package
+github-usgs-NMC-volunteermap | NMC-volunteermap | https://github.com/usgs/NMC-volunteermap | author:usgs 
+github-usgs-nshmp-haz-ws | nshmp-haz-ws | https://github.com/usgs/nshmp-haz-ws | author:usgs description:NSHMP Hazard Web Services
 github-usgs-pdl-indexer-sync | pdl-indexer-sync | https://github.com/usgs/pdl-indexer-sync | author:usgs description:Compare and detect differences between PDL indexer instances
 github-usgs-xmax | xmax | https://github.com/usgs/xmax | author:usgs description:XMAX waveform display
-github-usgs-hazdev-tablist | hazdev-tablist | https://github.com/usgs/hazdev-tablist | author:usgs description:Updated Apr 25, 2016
-github-usgs-NMC-volunteermap | NMC-volunteermap | https://github.com/usgs/NMC-volunteermap | author:usgs description:Updated Jan 29, 2016
-github-usgs-earthquake-gps | earthquake-gps | https://github.com/usgs/earthquake-gps | author:usgs description:Updated May 25, 2016
+github-usgs-hazdev-tablist | hazdev-tablist | https://github.com/usgs/hazdev-tablist | author:usgs 
 github-usgs-earthquake-global_vs30 | earthquake-global_vs30 | https://github.com/usgs/earthquake-global_vs30 | author:usgs description:Global Vs30
-github-usgs-seedscan-testdata | seedscan-testdata | https://github.com/usgs/seedscan-testdata | author:usgs description:Updated Jun 22, 2016
 github-usgs-pensive | pensive | https://github.com/usgs/pensive | author:usgs description:A tool for visualizing the spectra of continous data from a network of seismometers.
-github-usgs-hydra-web-display | hydra-web-display | https://github.com/usgs/hydra-web-display | author:usgs description:Updated Aug 2, 2016
-github-usgs-earthquake-eventadmin | earthquake-eventadmin | https://github.com/usgs/earthquake-eventadmin | author:usgs description:Updated Jul 14, 2016
-github-usgs-strongmotionfetch | strongmotionfetch | https://github.com/usgs/strongmotionfetch | author:usgs description:Updated Jul 7, 2016
-github-usgs-nshmp-model-ak-2007 | nshmp-model-ak-2007 | https://github.com/usgs/nshmp-model-ak-2007 | author:usgs description:NSHMP 2007 Alaska Model
-github-usgs-quakeml-parser-js | quakeml-parser-js | https://github.com/usgs/quakeml-parser-js | author:usgs description:Updated Jun 22, 2016
-github-usgs-MapIO | MapIO | https://github.com/usgs/MapIO | author:usgs description:Provides library for dealing with grid formats
-github-usgs-groundfailure | groundfailure | https://github.com/usgs/groundfailure | author:usgs description:Updated Oct 19, 2016
-github-usgs-earthquake-legacy-usdesign | earthquake-legacy-usdesign | https://github.com/usgs/earthquake-legacy-usdesign | author:usgs description:Legacy tool used for computing seismic design values
-github-usgs-nshmp-model-hi-1998 | nshmp-model-hi-1998 | https://github.com/usgs/nshmp-model-hi-1998 | author:usgs description:NSHMP 1998 Hawaii Model
+github-usgs-HeliPlotAPI | HeliPlotAPI | https://github.com/usgs/HeliPlotAPI | author:usgs description:Splits HeliPlot program into separate class files to be used as an API-similar package
+github-usgs-seedscan-testdata | seedscan-testdata | https://github.com/usgs/seedscan-testdata | author:usgs 
+github-usgs-quakeml-parser-js | quakeml-parser-js | https://github.com/usgs/quakeml-parser-js | author:usgs 
+github-usgs-earthquake-gps | earthquake-gps | https://github.com/usgs/earthquake-gps | author:usgs 
 github-usgs-earthquake-cpt | earthquake-cpt | https://github.com/usgs/earthquake-cpt | author:usgs description:CPT Data
+github-usgs-nshmp-model-hi-1998 | nshmp-model-hi-1998 | https://github.com/usgs/nshmp-model-hi-1998 | author:usgs description:NSHMP 1998 Hawaii Model
+github-usgs-hydra-web-display | hydra-web-display | https://github.com/usgs/hydra-web-display | author:usgs 
+github-usgs-earthquake-eventadmin | earthquake-eventadmin | https://github.com/usgs/earthquake-eventadmin | author:usgs 
+github-usgs-strongmotionfetch | strongmotionfetch | https://github.com/usgs/strongmotionfetch | author:usgs 
+github-usgs-nshmp-model-ak-2007 | nshmp-model-ak-2007 | https://github.com/usgs/nshmp-model-ak-2007 | author:usgs description:NSHMP 2007 Alaska Model
+github-usgs-azimuth | azimuth | https://github.com/usgs/azimuth | author:usgs description:ASL Azimuth
+github-usgs-shakemap-scenarios | shakemap-scenarios | https://github.com/usgs/shakemap-scenarios | author:usgs description:Code for running USGS Shakemap Scenarios
+github-usgs-earthquake-detection-formats | earthquake-detection-formats | https://github.com/usgs/earthquake-detection-formats | author:usgs description:Data exchange formats to communicate seismic event detection information
+github-usgs-landslides-post-wildfire-debris-flow | landslides-post-wildfire-debris-flow | https://github.com/usgs/landslides-post-wildfire-debris-flow | author:usgs description:A web application that displays estimates for the probability and volume of debris flows that may be produced by a storm in a recently burned area
 github-usgs-earthquake-hazard-probabilistic-db | earthquake-hazard-probabilistic-db | https://github.com/usgs/earthquake-hazard-probabilistic-db | author:usgs description:Seismic hazard curve database
 github-usgs-earthquake-hazard-probabilistic-ws | earthquake-hazard-probabilistic-ws | https://github.com/usgs/earthquake-hazard-probabilistic-ws | author:usgs description:Seismic hazard curve web service
-github-usgs-landslides-trigrs | landslides-trigrs | https://github.com/usgs/landslides-trigrs | author:usgs description:Updated Sep 1, 2016
+github-usgs-landslides-trigrs | landslides-trigrs | https://github.com/usgs/landslides-trigrs | author:usgs 
+github-usgs-geomag-edge | geomag-edge | https://github.com/usgs/geomag-edge | author:usgs description:Dockerfile and related scripts to build a lightweight EDGE/CWB container image.
+github-usgs-geomag-web-absolutes | geomag-web-absolutes | https://github.com/usgs/geomag-web-absolutes | author:usgs 

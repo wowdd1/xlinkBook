@@ -17,38 +17,66 @@ github-stripe-topmodel | topmodel | https://github.com/stripe/topmodel | author:
 github-stripe-gaps | gaps | https://github.com/stripe/gaps | author:stripe description:Easy management of your Google Groups subscriptions.
 github-stripe-stripe-android | stripe-android | https://github.com/stripe/stripe-android | author:stripe description:Stripe Android bindings
 github-stripe-stripe-java | stripe-java | https://github.com/stripe/stripe-java | author:stripe description:Stripe Java bindings
+github-stripe-veneur | veneur | https://github.com/stripe/veneur | author:stripe description:A DogStatsD server implementation with global aggregation capability.
 github-stripe-ApplePayStubs | ApplePayStubs | https://github.com/stripe/ApplePayStubs | author:stripe description:Test your Apple Pay integration without Apple Pay
 github-stripe-wilde-things | wilde-things | https://github.com/stripe/wilde-things | author:stripe description:A tutorial integrating Stripe in PHP
 github-stripe-timberlake | timberlake | https://github.com/stripe/timberlake | author:stripe description:Timberlake is a Job Tracker for Hadoop.
-github-stripe-veneur | veneur | https://github.com/stripe/veneur | author:stripe description:A DogStatsD server implementation with global aggregation capability.
 github-stripe-mongoriver | mongoriver | https://github.com/stripe/mongoriver | author:stripe description:A library for writing MongoDB oplog tailers.
 github-stripe-monospace-rails | monospace-rails | https://github.com/stripe/monospace-rails | author:stripe description:Sample Rails application using Stripe to charge a subscription
-github-stripe-herringbone | herringbone | https://github.com/stripe/herringbone | author:stripe description:Tools for working with parquet, impala, and hive
-github-stripe-sequins | sequins | https://github.com/stripe/sequins | author:stripe description:A simple K/V store on top of Hadoop's SequenceFile
+github-stripe-sequins | sequins | https://github.com/stripe/sequins | author:stripe description:A key/value store for serving static batch data
 github-stripe-subprocess | subprocess | https://github.com/stripe/subprocess | author:stripe description:A port of Python's subprocess module to Ruby
+github-stripe-herringbone | herringbone | https://github.com/stripe/herringbone | author:stripe description:Tools for working with parquet, impala, and hive
 github-stripe-monospace-django | monospace-django | https://github.com/stripe/monospace-django | author:stripe description:Sample Django application using Stripe to charge for subscriptions
 github-stripe-pd2pg | pd2pg | https://github.com/stripe/pd2pg | author:stripe description:Import PagerDuty data into Postgres for analysis
 github-stripe-chalk-log | chalk-log | https://github.com/stripe/chalk-log | author:stripe description:Chalk::Log adds a logger object to any class, which can be used for unstructured or semi-structured logging.
 github-stripe-macgyver | macgyver | https://github.com/stripe/macgyver | author:stripe description:A Chrome extension which duct tapes an SSH agent to the platformKey API
 github-stripe-unilog | unilog | https://github.com/stripe/unilog | author:stripe description:A logger for use with daemontools.
-github-stripe-payment-tag | payment-tag | https://github.com/stripe/payment-tag | author:stripe description:Updated May 31, 2013
+github-stripe-payment-tag | payment-tag | https://github.com/stripe/payment-tag | author:stripe 
 github-stripe-ios-dashboard-ui | ios-dashboard-ui | https://github.com/stripe/ios-dashboard-ui | author:stripe description:UI components from the Stripe Dashboard iOS app
 github-stripe-mobile-viewport-control | mobile-viewport-control | https://github.com/stripe/mobile-viewport-control | author:stripe description:Dynamically control the mobile viewport
 github-stripe-bonsai | bonsai | https://github.com/stripe/bonsai | author:stripe description:Beautiful trees, without the landscaping.
-github-stripe-chalk-config | chalk-config | https://github.com/stripe/chalk-config | author:stripe description:Maps on-disk config files into a loaded global configatron instance, taking into account your current environment.
 github-stripe-example-ios-backend | example-ios-backend | https://github.com/stripe/example-ios-backend | author:stripe description:A simple, easy-to-deploy backend that you can use to demo our example iOS apps.
 github-stripe-smokescreen | smokescreen | https://github.com/stripe/smokescreen | author:stripe description:A simple HTTP proxy that fogs over naughty URLs
+github-stripe-chalk-config | chalk-config | https://github.com/stripe/chalk-config | author:stripe description:Maps on-disk config files into a loaded global configatron instance, taking into account your current environment.
 github-stripe-go-einhorn | go-einhorn | https://github.com/stripe/go-einhorn | author:stripe description:Talk to einhorn from your Go worker
 github-stripe-terms | terms | https://github.com/stripe/terms | author:stripe description:Stripe's Terms
-github-stripe-stripe-reachability | stripe-reachability | https://github.com/stripe/stripe-reachability | author:stripe description:A bash script to test access to the Stripe API
 github-stripe-datadog-checks | datadog-checks | https://github.com/stripe/datadog-checks | author:stripe description:Checks for the Datadog Agent that Stripe finds useful.
 github-stripe-krl | krl | https://github.com/stripe/krl | author:stripe description:OpenSSH Key Revocation List support for Go
+github-stripe-stripe-reachability | stripe-reachability | https://github.com/stripe/stripe-reachability | author:stripe description:A bash script to test access to the Stripe API
 github-stripe-javascript-style | javascript-style | https://github.com/stripe/javascript-style | author:stripe description:Javascript linter with rules for Stripe projects
-github-stripe-python-interview-prep | python-interview-prep | https://github.com/stripe/python-interview-prep | author:stripe description:Updated Feb 22, 2016
-github-stripe-java-interview-prep | java-interview-prep | https://github.com/stripe/java-interview-prep | author:stripe description:Updated Oct 21, 2015
+github-stripe-python-interview-prep | python-interview-prep | https://github.com/stripe/python-interview-prep | author:stripe 
+github-stripe-slackin | slackin | https://github.com/stripe/slackin | author:stripe description:Public Slack organizations made easy
+github-stripe-react-intl | react-intl | https://github.com/stripe/react-intl | author:stripe description:React Components for internationalization.
+github-stripe-java-interview-prep | java-interview-prep | https://github.com/stripe/java-interview-prep | author:stripe 
+github-stripe-zeus | zeus | https://github.com/stripe/zeus | author:stripe description:Boot any rails app in under a second.
+github-stripe-rubydoop | rubydoop | https://github.com/stripe/rubydoop | author:stripe description:Write Hadoop jobs in JRuby
+github-stripe-thin | thin | https://github.com/stripe/thin | author:stripe description:A very fast & simple Ruby web server
 github-stripe-random | random | https://github.com/stripe/random | author:stripe description:A collection of random utilities
+github-stripe-scalding | scalding | https://github.com/stripe/scalding | author:stripe description:A Scala API for Cascading
+github-stripe-eventmachine | eventmachine | https://github.com/stripe/eventmachine | author:stripe description:EventMachine: fast, simple event-processing library for Ruby programs
 github-stripe-eslint-config-stripe | eslint-config-stripe | https://github.com/stripe/eslint-config-stripe | author:stripe description:This package provides Stripe's .eslintrc as an extensible shared config.
 github-stripe-siv-go | siv-go | https://github.com/stripe/siv-go | author:stripe description:A pure Go implementation of the SIV AEAD.
-github-stripe-sentry-restricted-github | sentry-restricted-github | https://github.com/stripe/sentry-restricted-github | author:stripe description:Updated Jan 20, 2015
-github-stripe-time-utils | time-utils | https://github.com/stripe/time-utils | author:stripe description:Updated Jun 10, 2013
+github-stripe-netsuite | netsuite | https://github.com/stripe/netsuite | author:stripe description:NetSuite SuiteTalk API Wrapper
+github-stripe-sentry-restricted-github | sentry-restricted-github | https://github.com/stripe/sentry-restricted-github | author:stripe 
+github-stripe-time-utils | time-utils | https://github.com/stripe/time-utils | author:stripe 
+github-stripe-osquery | osquery | https://github.com/stripe/osquery | author:stripe description:SQL powered operating system instrumentation, monitoring, and analytics.
+github-stripe-parquet-mr | parquet-mr | https://github.com/stripe/parquet-mr | author:stripe description:Java implementation to use with Map-Reduce
+github-stripe-rest-client | rest-client | https://github.com/stripe/rest-client | author:stripe description:Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.
 github-stripe-scala-interview-prep | scala-interview-prep | https://github.com/stripe/scala-interview-prep | author:stripe description:Example SBT project.
+github-stripe-Specs | Specs | https://github.com/stripe/Specs | author:stripe description:A repository of CocoaPods (cocoapods.org) specifications.
+github-stripe-ember-rfcs | ember-rfcs | https://github.com/stripe/ember-rfcs | author:stripe description:RFCs for changes to Ember
+github-stripe-terraforming | terraforming | https://github.com/stripe/terraforming | author:stripe description:Export existing AWS resources to Terraform style (tf, tfstate)
+github-stripe-statsd-datadog-backend | statsd-datadog-backend | https://github.com/stripe/statsd-datadog-backend | author:stripe description:A plugin to connect etsy's statsD to Datadog
+github-stripe-jenkins-datadog-plugin | jenkins-datadog-plugin | https://github.com/stripe/jenkins-datadog-plugin | author:stripe description:A Jenkins plugin used to forward metrics, events, and service checks to an account at Datadog, automatically.
+github-stripe-doorman | doorman | https://github.com/stripe/doorman | author:stripe description:an osquery fleet manager
+github-stripe-tikal-multijob-plugin | tikal-multijob-plugin | https://github.com/stripe/tikal-multijob-plugin | author:stripe description:A new multijob plugin was created by Tikal ALM team. Using this job you can add full hierarchy of Jenkins jobs that will be executed in sequence or in parallel.
+github-stripe-terraform | terraform | https://github.com/stripe/terraform | author:stripe description:Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
+github-stripe-keywhiz | keywhiz | https://github.com/stripe/keywhiz | author:stripe description:A system for distributing and managing secrets
+github-stripe-third-party | third-party | https://github.com/stripe/third-party | author:stripe description:All of the dependencies that osquery needs that don't have nice packages
+github-stripe-librarian-puppet | librarian-puppet | https://github.com/stripe/librarian-puppet | author:stripe 
+github-stripe-dd-agent | dd-agent | https://github.com/stripe/dd-agent | author:stripe description:Datadog Agent
+github-stripe-bundler | bundler | https://github.com/stripe/bundler | author:stripe description:Manage your application's gem dependencies with less pain
+github-stripe-dogstatsd | dogstatsd | https://github.com/stripe/dogstatsd | author:stripe description:A Ruby client for DogStatsd
+github-stripe-python-confidant-client | python-confidant-client | https://github.com/stripe/python-confidant-client | author:stripe description:Client library and CLI for Confidant
+github-stripe-statsdump | statsdump | https://github.com/stripe/statsdump | author:stripe description:Simple script to analyze statsd UDP traffic.
+github-stripe-puppet-datadog-agent | puppet-datadog-agent | https://github.com/stripe/puppet-datadog-agent | author:stripe description:Puppet module to install the Datadog agent

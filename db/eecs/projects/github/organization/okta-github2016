@@ -1,14 +1,14 @@
-github-okta-oktasdk-java | oktasdk-java | https://github.com/okta/oktasdk-java | author:okta description:Updated Oct 14, 2016
+github-okta-oktasdk-java | oktasdk-java | https://github.com/okta/oktasdk-java | author:okta 
 github-okta-api | api | https://github.com/okta/api | author:okta description:Okta's Public API Repository
 github-okta-okta.github.io | okta.github.io | https://github.com/okta/okta.github.io | author:okta description:Okta Identity Platform API Docs and Developer Home
-github-okta-okta-mobile-connect | okta-mobile-connect | https://github.com/okta/okta-mobile-connect | author:okta description:Updated Sep 15, 2016
+github-okta-okta-mobile-connect | okta-mobile-connect | https://github.com/okta/okta-mobile-connect | author:okta 
 github-okta-okta-music-store | okta-music-store | https://github.com/okta/okta-music-store | author:okta description:An example website that uses the Okta API
-github-okta-okta-openvpn | okta-openvpn | https://github.com/okta/okta-openvpn | author:okta description:Updated Sep 30, 2016
+github-okta-oktasdk-python | oktasdk-python | https://github.com/okta/oktasdk-python | author:okta 
+github-okta-okta-openvpn | okta-openvpn | https://github.com/okta/okta-openvpn | author:okta 
 github-okta-okta-auth-js | okta-auth-js | https://github.com/okta/okta-auth-js | author:okta description:The official js wrapper around Okta's auth API
-github-okta-oktasdk-python | oktasdk-python | https://github.com/okta/oktasdk-python | author:okta description:Updated Aug 23, 2016
 github-okta-okta-signin-widget | okta-signin-widget | https://github.com/okta/okta-signin-widget | author:okta description:Okta SignIn widget that renders the new login/auth/recovery flows
-github-okta-oktasdk-csharp | oktasdk-csharp | https://github.com/okta/oktasdk-csharp | author:okta description:Updated Oct 14, 2016
-github-okta-UserDocs | UserDocs | https://github.com/okta/UserDocs | author:okta description:Updated Oct 19, 2016
-github-okta-okta-help | okta-help | https://github.com/okta/okta-help | author:okta description:Updated Oct 19, 2016
-github-okta-okta-provisioning-sdk | okta-provisioning-sdk | https://github.com/okta/okta-provisioning-sdk | author:okta description:Updated Jan 14, 2014
+github-okta-oktasdk-csharp | oktasdk-csharp | https://github.com/okta/oktasdk-csharp | author:okta 
+github-okta-okta-help | okta-help | https://github.com/okta/okta-help | author:okta 
+github-okta-UserDocs | UserDocs | https://github.com/okta/UserDocs | author:okta 
+github-okta-okta-provisioning-sdk | okta-provisioning-sdk | https://github.com/okta/okta-provisioning-sdk | author:okta 
 github-okta-okta-oidc-cognito | okta-oidc-cognito | https://github.com/okta/okta-oidc-cognito | author:okta description:Proof of concept of using Okta's OIDC implementation with AWS Cognito

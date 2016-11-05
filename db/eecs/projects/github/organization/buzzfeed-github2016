@@ -1,16 +1,41 @@
 github-buzzfeed-Sketch-Toolbox | Sketch-Toolbox | https://github.com/buzzfeed/Sketch-Toolbox | author:buzzfeed description:A plugin manager for Sketch.app
+github-buzzfeed-libgif-js | libgif-js | https://github.com/buzzfeed/libgif-js | author:buzzfeed description:JavaScript GIF parser and player
 github-buzzfeed-mattress | mattress | https://github.com/buzzfeed/mattress | author:buzzfeed description:iOS Offline Caching for Web Content
-github-buzzfeed-solid-completions | solid-completions | https://github.com/buzzfeed/solid-completions | author:buzzfeed description:Atom Autocomplete+ provider and generator for SublimeText completions files for the Solid CSS Framework
 github-buzzfeed-pyh3 | pyh3 | https://github.com/buzzfeed/pyh3 | author:buzzfeed description:An implementation of the H3 graph layout algorithm in pure Python
+github-buzzfeed-solid-completions | solid-completions | https://github.com/buzzfeed/solid-completions | author:buzzfeed description:Atom Autocomplete+ provider and generator for SublimeText completions files for the Solid CSS Framework
 github-buzzfeed-caliendo | caliendo | https://github.com/buzzfeed/caliendo | author:buzzfeed description:caliendo
 github-buzzfeed-solid | solid | https://github.com/buzzfeed/solid | author:buzzfeed description:This repo will collect all basic BuzzFeed styling CSS.
 github-buzzfeed-pytest_config | pytest_config | https://github.com/buzzfeed/pytest_config | author:buzzfeed description:A plugin for pytest to aid setup and configuration.
+github-buzzfeed-slate | slate | https://github.com/buzzfeed/slate | author:buzzfeed description:Beautiful static documentation for your API
+github-buzzfeed-objective-c-style-guide | objective-c-style-guide | https://github.com/buzzfeed/objective-c-style-guide | author:buzzfeed description:Objective-C Style Guide
 github-buzzfeed-phonon | phonon | https://github.com/buzzfeed/phonon | author:buzzfeed description:Phonon
-github-buzzfeed-buzzfeed-devfest-conference-2016 | buzzfeed-devfest-conference-2016 | https://github.com/buzzfeed/buzzfeed-devfest-conference-2016 | author:buzzfeed description:Updated Feb 5, 2016
-github-buzzfeed-auth_proxy | auth_proxy | https://github.com/buzzfeed/auth_proxy | author:buzzfeed description:Updated May 12, 2016
+github-buzzfeed-buzzfeed-devfest-conference-2016 | buzzfeed-devfest-conference-2016 | https://github.com/buzzfeed/buzzfeed-devfest-conference-2016 | author:buzzfeed 
+github-buzzfeed-HidingNavigationBar | HidingNavigationBar | https://github.com/buzzfeed/HidingNavigationBar | author:buzzfeed description:Easily hide and show a view controller's navigation bar (and tab bar) as a user scrolls
+github-buzzfeed-pyfacebook | pyfacebook | https://github.com/buzzfeed/pyfacebook | author:buzzfeed 
+github-buzzfeed-auth_proxy | auth_proxy | https://github.com/buzzfeed/auth_proxy | author:buzzfeed 
 github-buzzfeed-CocoaMarkdown | CocoaMarkdown | https://github.com/buzzfeed/CocoaMarkdown | author:buzzfeed description:Markdown parsing and rendering for iOS and OS X
 github-buzzfeed-distropages | distropages | https://github.com/buzzfeed/distropages | author:buzzfeed description:Ads Team public distro github pages
-github-buzzfeed-pyfacebook | pyfacebook | https://github.com/buzzfeed/pyfacebook | author:buzzfeed description:Updated Sep 24, 2014
+github-buzzfeed-hashids | hashids | https://github.com/buzzfeed/hashids | author:buzzfeed description:Hashids, ported for Swift (http://www.hashids.org)
 github-buzzfeed-python-operative | python-operative | https://github.com/buzzfeed/python-operative | author:buzzfeed description:Python bridge for Operative
-github-buzzfeed-tinymodel | tinymodel | https://github.com/buzzfeed/tinymodel | author:buzzfeed description:Tinymodel is a light-weight, service-agnostic model implementation for Python.
 github-buzzfeed-printscreen | printscreen | https://github.com/buzzfeed/printscreen | author:buzzfeed description:printscreen
+github-buzzfeed-wd | wd | https://github.com/buzzfeed/wd | author:buzzfeed description:A node.js client for webdriver/selenium 2.
+github-buzzfeed-sailthru-perl-client | sailthru-perl-client | https://github.com/buzzfeed/sailthru-perl-client | author:buzzfeed description:Perl client for Sailthru API
+github-buzzfeed-cbforest | cbforest | https://github.com/buzzfeed/cbforest | author:buzzfeed description:C++ wrapper library around ForestDB, for use in Couchbase Lite.
+github-buzzfeed-BLIP-Cocoa | BLIP-Cocoa | https://github.com/buzzfeed/BLIP-Cocoa | author:buzzfeed description:Implementation of the BLIP messaging protocol, for iOS and Mac OS X
+github-buzzfeed-python-rtmbot | python-rtmbot | https://github.com/buzzfeed/python-rtmbot | author:buzzfeed 
+github-buzzfeed-GoogleIDToken-Validator | GoogleIDToken-Validator | https://github.com/buzzfeed/GoogleIDToken-Validator | author:buzzfeed description:GoogleIDToken::Validator perl module
+github-buzzfeed-Tweaks | Tweaks | https://github.com/buzzfeed/Tweaks | author:buzzfeed description:An easy way to fine-tune, and adjust parameters for iOS apps in development.
+github-buzzfeed-text-caml | text-caml | https://github.com/buzzfeed/text-caml | author:buzzfeed description:A mustache-like template engine for Perl
+github-buzzfeed-SwiftyJSON | SwiftyJSON | https://github.com/buzzfeed/SwiftyJSON | author:buzzfeed description:The better way to deal with JSON data in Swift
+github-buzzfeed-CocoaLumberjack | CocoaLumberjack | https://github.com/buzzfeed/CocoaLumberjack | author:buzzfeed description:A fast & simple, yet powerful & flexible logging framework for Mac and iOS
+github-buzzfeed-KeychainAccess | KeychainAccess | https://github.com/buzzfeed/KeychainAccess | author:buzzfeed description:Simple Swift wrapper for Keychain that works on iOS and OS X
+github-buzzfeed-tinymodel | tinymodel | https://github.com/buzzfeed/tinymodel | author:buzzfeed description:Tinymodel is a light-weight, service-agnostic model implementation for Python.
+github-buzzfeed-jemplate-runtime | jemplate-runtime | https://github.com/buzzfeed/jemplate-runtime | author:buzzfeed description:Jemplate runtime as a node module (without Ajax or JSON support)
+github-buzzfeed-jemplate | jemplate | https://github.com/buzzfeed/jemplate | author:buzzfeed description:Industrial strength JavaScript template framework
+github-buzzfeed-facepy | facepy | https://github.com/buzzfeed/facepy | author:buzzfeed description:Facepy makes it really easy to interact with Facebook's Graph API
+github-buzzfeed-Template-Mustache | Template-Mustache | https://github.com/buzzfeed/Template-Mustache | author:buzzfeed description:Drawing Mustaches on Perl, for fun and profit
+github-buzzfeed-private_s3_httpd | private_s3_httpd | https://github.com/buzzfeed/private_s3_httpd | author:buzzfeed description:Private HTTP Server for Amazon S3 content
+github-buzzfeed-adjust_ios_sdk | adjust_ios_sdk | https://github.com/buzzfeed/adjust_ios_sdk | author:buzzfeed description:This is the iOS SDK of
+github-buzzfeed-perl-anyevent-nsq | perl-anyevent-nsq | https://github.com/buzzfeed/perl-anyevent-nsq | author:buzzfeed description:A AnyEvent-based client for NSQ.io
+github-buzzfeed-ImagePalette | ImagePalette | https://github.com/buzzfeed/ImagePalette | author:buzzfeed description:Swift/iOS port of Android's Palette https://developer.android.com/reference/android/support/v7/graphics/Palette.html
+github-buzzfeed-couchbase-lite-ios | couchbase-lite-ios | https://github.com/buzzfeed/couchbase-lite-ios | author:buzzfeed description:Lightweight, embedded, syncable NoSQL database engine for iOS (and Mac!) apps.

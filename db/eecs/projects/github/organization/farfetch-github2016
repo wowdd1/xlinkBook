@@ -1,1 +1,3 @@
 github-farfetch-Buildionaire | Buildionaire | https://github.com/Farfetch/Buildionaire | author:farfetch description:Gamification Platform to Monitor Build Quality
+github-farfetch-jenkins | jenkins | https://github.com/Farfetch/jenkins | author:farfetch description:Jenkins Continuous Integration Server
+github-farfetch-testrail-client | testrail-client | https://github.com/Farfetch/testrail-client | author:farfetch description:C# implementation of the TestRail API

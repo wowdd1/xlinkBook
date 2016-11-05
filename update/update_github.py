@@ -674,15 +674,16 @@ class GithubSpider(Spider):
                 'macmillanpublishers' : 'https://github.com/macmillanpublishers',\
                 'oreillymedia' : 'https://github.com/oreillymedia',\
                 'usgs' : 'https://github.com/usgs',\
-                'gitter' : 'https://github.com/gitterHQ'}
+                'gitter' : 'https://github.com/gitterHQ',\
+                'Oxford-Robotics-Institute' : 'https://github.com/oxford-ori'}
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\
                 'nipy' : 'https://github.com/nipy',\
                 'OpenNeuroLab' : 'https://github.com/OpenNeuroLab',\
                 'PySurfer' : 'https://github.com/PySurfer',\
-		'CBMM' : 'https://github.com/CBMM',\
-		'AllenInstitute' : 'https://github.com/AllenInstitute',\
-		'ACElab' : 'https://github.com/aces',\
+                'CBMM' : 'https://github.com/CBMM',\
+                'AllenInstitute' : 'https://github.com/AllenInstitute',\
+                'ACElab' : 'https://github.com/aces',\
                 'MCB80x' : 'https://github.com/mcb80x',\
                 'BackyardBrains' : 'https://github.com/BackyardBrains',\
                 'nengo' : 'https://github.com/nengo'}
@@ -694,12 +695,13 @@ class GithubSpider(Spider):
         self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
         #self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
         #self.getProjectByDict(data_gene, 'biology/projects/github/organization/')
-        #self.getStartupPorjects()
+        #self.getStartupPorjects('../db/economics/startup-billion-dollar-club2016')
+        #self.getStartupPorjects('../db/rank/smartest-companies2016')
 
-    def getStartupPorjects(self):
+    def getStartupPorjects(self, path):
         data = {}
-        if os.path.exists('../db/economics/startup-billion-dollar-club2016'):
-            f = open('../db/economics/startup-billion-dollar-club2016', 'rU')
+        if os.path.exists(path):
+            f = open(path, 'rU')
             for line in f.readlines():
                 record = Record(line)
                 key = record.get_title().replace(' ', '').strip()
@@ -730,19 +732,32 @@ class GithubSpider(Spider):
                 print data[k] + "?page=" + str(i)
                 r = self.requestWithAuth(data[k] + "?page=" + str(i))
                 soup = BeautifulSoup(r.text) 
-                for div in soup.find_all('div', class_="repo-list-item public source"):
-                    stats = div.div.a.text.strip().replace(',', '')
-                    title =  div.h3.a.text.strip()
-                    desc = "description:" + div.p.text.strip().replace('\n', '')
+
+                starDict = {}
+                for a in soup.find_all('a', class_='muted-link tooltipped tooltipped-s mr-3'):
+                    project = a['href'].replace('/stargazers', '')
+                    project = project[project.rfind('/') + 1 :].lower()
+                    starDict[project] = int(a.text.strip().replace(',', ''))
+
+                for li in soup.find_all('li'):
+                    if li.h3 == None:
+                        continue
+                    title =  li.h3.a.text.strip()
+                    if starDict.has_key(title.lower()) == False:
+                        starDict[title.lower()] = 0
+                    
+                    desc = ''
+                    if li.p != None:
+                        desc = "description:" + li.p.text.strip().replace('\n', '')
                     self.count += 1
                     id = 'github-' + k + "-" + str(self.count) 
-                    record = self.get_storage_format(stats, title, "https://github.com" + div.h3.a['href'], desc)
+                    record = self.get_storage_format(str(starDict[title.lower()]), title, "https://github.com" + li.h3.a['href'], desc)
                     project_dict[id] = Record(record)
             self.count = 0
             for item in sorted(project_dict.items(), key=lambda project_dict:int(project_dict[1].get_id().strip()), reverse=True):
                 print item[1].get_id() + " " + item[1].get_title()
                 self.count += 1
-		id = item[0][0 : item[0].rfind('-')] + '-' + item[1].get_title().strip()
+                id = item[0][0 : item[0].rfind('-')] + '-' + item[1].get_title().strip()
                 self.write_db(f, id, item[1].get_title().strip(), item[1].get_url().strip(), 'author:'+ k + ' ' + item[1].get_describe().strip())
 
             self.close_db(f)

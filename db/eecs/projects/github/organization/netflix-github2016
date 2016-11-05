@@ -9,7 +9,8 @@ github-netflix-Scumblr | Scumblr | https://github.com/Netflix/Scumblr | author:n
 github-netflix-zuul | zuul | https://github.com/Netflix/zuul | author:netflix description:Zuul is a gateway service that provides dynamic routing, monitoring, resiliency, security, and more.
 github-netflix-dynomite | dynomite | https://github.com/Netflix/dynomite | author:netflix description:A generic dynamo implementation for different k-v storage engines
 github-netflix-curator | curator | https://github.com/Netflix/curator | author:netflix description:ZooKeeper client wrapper and rich ZooKeeper framework
-github-netflix-atlas | atlas | https://github.com/Netflix/atlas | author:netflix description:Updated Oct 10, 2016
+github-netflix-chaosmonkey | chaosmonkey | https://github.com/Netflix/chaosmonkey | author:netflix description:Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures.
+github-netflix-atlas | atlas | https://github.com/Netflix/atlas | author:netflix description:In-memory dimensional time series database.
 github-netflix-archaius | archaius | https://github.com/Netflix/archaius | author:netflix description:Library for configuration management API
 github-netflix-ribbon | ribbon | https://github.com/Netflix/ribbon | author:netflix description:Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.
 github-netflix-servo | servo | https://github.com/Netflix/servo | author:netflix description:Netflix Application Monitoring Library
@@ -17,8 +18,8 @@ github-netflix-security_monkey | security_monkey | https://github.com/Netflix/se
 github-netflix-astyanax | astyanax | https://github.com/Netflix/astyanax | author:netflix description:Cassandra Java Client
 github-netflix-bless | bless | https://github.com/Netflix/bless | author:netflix description:Repository for BLESS, an SSH Certificate Authority that runs as a AWS Lambda function
 github-netflix-vizceral | vizceral | https://github.com/Netflix/vizceral | author:netflix description:WebGL component for displaying animated traffic graphs
+github-netflix-Fido | Fido | https://github.com/Netflix/Fido | author:netflix 
 github-netflix-sleepy-puppy | sleepy-puppy | https://github.com/Netflix/sleepy-puppy | author:netflix description:Sleepy Puppy XSS Payload Management Framework
-github-netflix-Fido | Fido | https://github.com/Netflix/Fido | author:netflix description:Updated Apr 12, 2016
 github-netflix-Priam | Priam | https://github.com/Netflix/Priam | author:netflix description:Co-Process for backup/recovery, Token Management, and Centralized Configuration management for Cassandra.
 github-netflix-sketchy | sketchy | https://github.com/Netflix/sketchy | author:netflix description:A task based API for taking screenshots and scraping text from websites.
 github-netflix-aminator | aminator | https://github.com/Netflix/aminator | author:netflix description:A tool for creating EBS AMIs. This tool currently works for CentOS/RedHat Linux images and is intended to run on an EC2 instance.
@@ -30,89 +31,89 @@ github-netflix-Turbine | Turbine | https://github.com/Netflix/Turbine | author:n
 github-netflix-governator | governator | https://github.com/Netflix/governator | author:netflix description:Governator is a library of extensions and utilities that enhance Google Guice to provide: classpath scanning and automatic binding, lifecycle management, configuration to field mapping, field validation and parallelized object warmup.
 github-netflix-PigPen | PigPen | https://github.com/Netflix/PigPen | author:netflix description:Map-Reduce for Clojure
 github-netflix-blitz4j | blitz4j | https://github.com/Netflix/blitz4j | author:netflix description:Logging framework for fast asynchronous logging
-github-netflix-chaosmonkey | chaosmonkey | https://github.com/Netflix/chaosmonkey | author:netflix description:Chaos Monkey is a resiliency tool that helps applications tolerate random instance failures.
 github-netflix-EVCache | EVCache | https://github.com/Netflix/EVCache | author:netflix description:A distributed in-memory data store for the cloud
 github-netflix-Fenzo | Fenzo | https://github.com/Netflix/Fenzo | author:netflix description:Extensible Scheduler for Mesos Frameworks
+github-netflix-denominator | denominator | https://github.com/Netflix/denominator | author:netflix description:Portably control DNS clouds using java or bash
 github-netflix-karyon | karyon | https://github.com/Netflix/karyon | author:netflix description:The nucleus or the base container for Applications and Services built using the NetflixOSS ecosystem
 github-netflix-Lipstick | Lipstick | https://github.com/Netflix/Lipstick | author:netflix description:Pig Visualization framework
 github-netflix-aws-autoscaling | aws-autoscaling | https://github.com/Netflix/aws-autoscaling | author:netflix description:Tools and Documentation about using Auto Scaling
 github-netflix-msl | msl | https://github.com/Netflix/msl | author:netflix description:Message Security Layer
 github-netflix-netflix-graph | netflix-graph | https://github.com/Netflix/netflix-graph | author:netflix description:Compact in-memory representation of directed graph data
 github-netflix-edda | edda | https://github.com/Netflix/edda | author:netflix description:Service to track changes in your cloud
-github-netflix-netflix.github.com | netflix.github.com | https://github.com/Netflix/netflix.github.com | author:netflix description:Updated Oct 19, 2016
-github-netflix-Workflowable | Workflowable | https://github.com/Netflix/Workflowable | author:netflix description:Updated May 12, 2016
-github-netflix-Surus | Surus | https://github.com/Netflix/Surus | author:netflix description:Updated Sep 15, 2016
+github-netflix-netflix.github.com | netflix.github.com | https://github.com/Netflix/netflix.github.com | author:netflix 
+github-netflix-Workflowable | Workflowable | https://github.com/Netflix/Workflowable | author:netflix 
+github-netflix-Surus | Surus | https://github.com/Netflix/Surus | author:netflix 
 github-netflix-recipes-rss | recipes-rss | https://github.com/Netflix/recipes-rss | author:netflix description:RSS Reader Recipes that uses several of the Netflix OSS components
-github-netflix-denominator | denominator | https://github.com/Netflix/denominator | author:netflix description:Portably control DNS clouds using java or bash
 github-netflix-gcviz | gcviz | https://github.com/Netflix/gcviz | author:netflix description:Garbage Collector Visualization Tool/Framework
 github-netflix-Raigad | Raigad | https://github.com/Netflix/Raigad | author:netflix description:Co-Process for backup/recovery, Auto Deployments and Centralized Configuration management for ElasticSearch
 github-netflix-ember-nf-graph | ember-nf-graph | https://github.com/Netflix/ember-nf-graph | author:netflix description:Composable graphing component library for EmberJS.
-github-netflix-aegisthus | aegisthus | https://github.com/Netflix/aegisthus | author:netflix description:A Bulk Data Pipeline out of Cassandra
-github-netflix-zeno | zeno | https://github.com/Netflix/zeno | author:netflix description:Netflix's In-Memory Data Propagation Framework
-github-netflix-Prana | Prana | https://github.com/Netflix/Prana | author:netflix description:A sidecar for your NetflixOSS based services.
 github-netflix-vmaf | vmaf | https://github.com/Netflix/vmaf | author:netflix description:Perceptual video quality assessment based on multi-method fusion.
+github-netflix-Prana | Prana | https://github.com/Netflix/Prana | author:netflix description:A sidecar for your NetflixOSS based services.
+github-netflix-zeno | zeno | https://github.com/Netflix/zeno | author:netflix description:Netflix's In-Memory Data Propagation Framework
+github-netflix-aegisthus | aegisthus | https://github.com/Netflix/aegisthus | author:netflix description:A Bulk Data Pipeline out of Cassandra
 github-netflix-pytheas | pytheas | https://github.com/Netflix/pytheas | author:netflix description:Web Resources and UI Framework
 github-netflix-NfWebCrypto | NfWebCrypto | https://github.com/Netflix/NfWebCrypto | author:netflix description:Web Cryptography API Polyfill
-github-netflix-Cloud-Prize | Cloud-Prize | https://github.com/Netflix/Cloud-Prize | author:netflix description:Description and terms for the Netflix Cloud Prize, which runs from March-September 2013. Read the rules, fork to your GitHub account to create a Submission, then send us your email address.
 github-netflix-osstracker | osstracker | https://github.com/Netflix/osstracker | author:netflix description:Github organization OSS metrics collector and metrics dashboard
-github-netflix-gradle-template | gradle-template | https://github.com/Netflix/gradle-template | author:netflix description:Updated Apr 7, 2016
 github-netflix-falcor-router-demo | falcor-router-demo | https://github.com/Netflix/falcor-router-demo | author:netflix description:A demonstration of how to build a Router for a Netflix-like application
+github-netflix-Cloud-Prize | Cloud-Prize | https://github.com/Netflix/Cloud-Prize | author:netflix description:Description and terms for the Netflix Cloud Prize, which runs from March-September 2013. Read the rules, fork to your GitHub account to create a Submission, then send us your email address.
+github-netflix-gradle-template | gradle-template | https://github.com/Netflix/gradle-template | author:netflix 
 github-netflix-falcor-express-demo | falcor-express-demo | https://github.com/Netflix/falcor-express-demo | author:netflix description:Demonstration Falcor end point for a Netflix-style Application using express
 github-netflix-staash | staash | https://github.com/Netflix/staash | author:netflix description:A language-agnostic as well as storage-agnostic web interface for storing data into persistent storage systems, the metadata layer abstracts a lot of storage details and the pattern automation APIs take care of automating common data access patterns.
-github-netflix-ReactiveLab | ReactiveLab | https://github.com/Netflix/ReactiveLab | author:netflix description:Experiments and prototypes with reactive application design.
 github-netflix-vizceral-example | vizceral-example | https://github.com/Netflix/vizceral-example | author:netflix description:Example Vizceral app
-github-netflix-Nicobar | Nicobar | https://github.com/Netflix/Nicobar | author:netflix description:Updated Feb 3, 2016
-github-netflix-s3mper | s3mper | https://github.com/Netflix/s3mper | author:netflix description:s3mper - Consistent Listing for S3
+github-netflix-ReactiveLab | ReactiveLab | https://github.com/Netflix/ReactiveLab | author:netflix description:Experiments and prototypes with reactive application design.
 github-netflix-brutal | brutal | https://github.com/Netflix/brutal | author:netflix description:A multi-network asynchronous chat bot framework using twisted
-github-netflix-inviso | inviso | https://github.com/Netflix/inviso | author:netflix description:Updated Aug 18, 2016
+github-netflix-Nicobar | Nicobar | https://github.com/Netflix/Nicobar | author:netflix 
+github-netflix-s3mper | s3mper | https://github.com/Netflix/s3mper | author:netflix description:s3mper - Consistent Listing for S3
+github-netflix-inviso | inviso | https://github.com/Netflix/inviso | author:netflix 
 github-netflix-CassJMeter | CassJMeter | https://github.com/Netflix/CassJMeter | author:netflix description:JMeter plugin to run cassandra tests.
-github-netflix-spectator | spectator | https://github.com/Netflix/spectator | author:netflix description:Updated Oct 14, 2016
+github-netflix-spectator | spectator | https://github.com/Netflix/spectator | author:netflix description:Client library for collecting metrics.
 github-netflix-ndbench | ndbench | https://github.com/Netflix/ndbench | author:netflix description:Netflix Data Store Benchmark
 github-netflix-dyno | dyno | https://github.com/Netflix/dyno | author:netflix description:Java client for Dynomite
 github-netflix-netflix-commons | netflix-commons | https://github.com/Netflix/netflix-commons | author:netflix description:Common utilities for Netflix OSS projects
-github-netflix-falcor-router | falcor-router | https://github.com/Netflix/falcor-router | author:netflix description:A Falcor JavaScript DataSource which creates a Virtual JSON Graph document on your app server.
 github-netflix-hal-9001 | hal-9001 | https://github.com/Netflix/hal-9001 | author:netflix description:Hal-9001 is a Go library that offers a number of facilities for creating a bot and its plugins.
-github-netflix-vizceral-react | vizceral-react | https://github.com/Netflix/vizceral-react | author:netflix description:Updated Oct 14, 2016
+github-netflix-falcor-router | falcor-router | https://github.com/Netflix/falcor-router | author:netflix description:A Falcor JavaScript DataSource which creates a Virtual JSON Graph document on your app server.
+github-netflix-vizceral-react | vizceral-react | https://github.com/Netflix/vizceral-react | author:netflix 
 github-netflix-glisten | glisten | https://github.com/Netflix/glisten | author:netflix description:Ease of use Groovy library for building JVM applications with Amazon Simple Workflow (SWF)
 github-netflix-lemur-docker | lemur-docker | https://github.com/Netflix/lemur-docker | author:netflix description:Docker files for the Lemur certificate orchestration tool
 github-netflix-falcor-express | falcor-express | https://github.com/Netflix/falcor-express | author:netflix description:Express Middleware for Hosting Falcor Data Sources.
 github-netflix-photon | photon | https://github.com/Netflix/photon | author:netflix description:Photon is a Java implementation of the Interoperable Master Format (IMF) standard. IMF is a SMPTE standard whose core constraints are defined in the specification st2067-2:2013
 github-netflix-blesk | blesk | https://github.com/Netflix/blesk | author:netflix description:Netflix blesk is a lightweight client for pushing notifications to web based applications/sites.
 github-netflix-falcor-hapi | falcor-hapi | https://github.com/Netflix/falcor-hapi | author:netflix description:Falcor middleware for Hapi app server
-github-netflix-ocelli | ocelli | https://github.com/Netflix/ocelli | author:netflix description:Updated Feb 3, 2016
 github-netflix-falcor-http-datasource | falcor-http-datasource | https://github.com/Netflix/falcor-http-datasource | author:netflix description:A DataSource for Falcor that can be use to retrieve JSON Graph data from an HTTP server.
+github-netflix-ocelli | ocelli | https://github.com/Netflix/ocelli | author:netflix 
 github-netflix-dyno-queues | dyno-queues | https://github.com/Netflix/dyno-queues | author:netflix description:Dyno Queues is a recipe that provides task queues utilizing Dynomite.
 github-netflix-dynomite-manager | dynomite-manager | https://github.com/Netflix/dynomite-manager | author:netflix description:A sidecar to manage Dynomite clusters
+github-netflix-dial-reference | dial-reference | https://github.com/Netflix/dial-reference | author:netflix 
 github-netflix-sleepy-puppy-docker | sleepy-puppy-docker | https://github.com/Netflix/sleepy-puppy-docker | author:netflix description:sleepy puppy docker setup
-github-netflix-dial-reference | dial-reference | https://github.com/Netflix/dial-reference | author:netflix description:Updated Oct 19, 2016
 github-netflix-falcor-json-graph | falcor-json-graph | https://github.com/Netflix/falcor-json-graph | author:netflix description:A set of factory functions for creating JSON Graph values
 github-netflix-vizceral-component | vizceral-component | https://github.com/Netflix/vizceral-component | author:netflix description:web component wrapper for vizceral
 github-netflix-unleash | unleash | https://github.com/Netflix/unleash | author:netflix description:Professionally publish your JavaScript modules in one keystroke
 github-netflix-rend-lmdb | rend-lmdb | https://github.com/Netflix/rend-lmdb | author:netflix description:Example LMDB backend for rend
-github-netflix-vp9-dash | vp9-dash | https://github.com/Netflix/vp9-dash | author:netflix description:VP9 ISO-BMFF Packaging Specification and sample files
 github-netflix-q | q | https://github.com/Netflix/q | author:netflix description:Query testing framework
+github-netflix-vp9-dash | vp9-dash | https://github.com/Netflix/vp9-dash | author:netflix description:VP9 ISO-BMFF Packaging Specification and sample files
 github-netflix-falcor-restify | falcor-restify | https://github.com/Netflix/falcor-restify | author:netflix description:Restify Middleware for Hosting Falcor Data Sources.
 github-netflix-frigga | frigga | https://github.com/Netflix/frigga | author:netflix description:Utilities for working with Asgard named objects
 github-netflix-iep | iep | https://github.com/Netflix/iep | author:netflix description:Insight Engineering Platform Components
-github-netflix-metacat | metacat | https://github.com/Netflix/metacat | author:netflix description:Updated Oct 13, 2016
+github-netflix-metacat | metacat | https://github.com/Netflix/metacat | author:netflix 
 github-netflix-falcor-path-utils | falcor-path-utils | https://github.com/Netflix/falcor-path-utils | author:netflix description:A collection of utilities for manipulating Falcor Paths.
-github-netflix-falcor-path-syntax | falcor-path-syntax | https://github.com/Netflix/falcor-path-syntax | author:netflix description:Parser for Falcor Path Syntax
 github-netflix-ember-nf-graph-examples | ember-nf-graph-examples | https://github.com/Netflix/ember-nf-graph-examples | author:netflix description:Hosted examples of ember nf-graph components
+github-netflix-falcor-path-syntax | falcor-path-syntax | https://github.com/Netflix/falcor-path-syntax | author:netflix description:Parser for Falcor Path Syntax
+github-netflix-runtime-health | runtime-health | https://github.com/Netflix/runtime-health | author:netflix 
 github-netflix-restful-jsonapi | restful-jsonapi | https://github.com/Netflix/restful-jsonapi | author:netflix description:JSONAPI support, both in request parameters, and serialization.
-github-netflix-runtime-health | runtime-health | https://github.com/Netflix/runtime-health | author:netflix description:Updated Sep 28, 2016
-github-netflix-rx-aws-java-sdk | rx-aws-java-sdk | https://github.com/Netflix/rx-aws-java-sdk | author:netflix description:Updated Jun 28, 2016
 github-netflix-techreports | techreports | https://github.com/Netflix/techreports | author:netflix description:Technical reports and preprints
+github-netflix-rx-aws-java-sdk | rx-aws-java-sdk | https://github.com/Netflix/rx-aws-java-sdk | author:netflix 
+github-netflix-AWSObjectMapper | AWSObjectMapper | https://github.com/Netflix/AWSObjectMapper | author:netflix description:Serializing / deserializing library for AWS objects
 github-netflix-falcor-hapi-demo | falcor-hapi-demo | https://github.com/Netflix/falcor-hapi-demo | author:netflix description:Demonstration Falcor end point using Hapi
 github-netflix-security-bulletins | security-bulletins | https://github.com/Netflix/security-bulletins | author:netflix description:Security Bulletins that relate to Netflix Open Source
-github-netflix-eureka-ui | eureka-ui | https://github.com/Netflix/eureka-ui | author:netflix description:Updated Dec 11, 2015
-github-netflix-fabricator | fabricator | https://github.com/Netflix/fabricator | author:netflix description:Updated Oct 6, 2016
-github-netflix-AWSObjectMapper | AWSObjectMapper | https://github.com/Netflix/AWSObjectMapper | author:netflix description:Serializing / deserializing library for AWS objects
+github-netflix-fabricator | fabricator | https://github.com/Netflix/fabricator | author:netflix 
+github-netflix-eureka-ui | eureka-ui | https://github.com/Netflix/eureka-ui | author:netflix 
 github-netflix-eslint-config-netflix | eslint-config-netflix | https://github.com/Netflix/eslint-config-netflix | author:netflix description:Shared ESLint config for Netflix JavaScript
 github-netflix-netflixoss-build-infrastructure | netflixoss-build-infrastructure | https://github.com/Netflix/netflixoss-build-infrastructure | author:netflix description:Project used to test our gradle publishing to bintray
-github-netflix-falcor-restify-demo | falcor-restify-demo | https://github.com/Netflix/falcor-restify-demo | author:netflix description:Demonstration Falcor end point for Netflix clone using Restify
 github-netflix-eslint-config-netflix-dea | eslint-config-netflix-dea | https://github.com/Netflix/eslint-config-netflix-dea | author:netflix description:Shared ESLint config for Netflix DEA JavaScript
+github-netflix-falcor-restify-demo | falcor-restify-demo | https://github.com/Netflix/falcor-restify-demo | author:netflix description:Demonstration Falcor end point for Netflix clone using Restify
 github-netflix-iep-shadow | iep-shadow | https://github.com/Netflix/iep-shadow | author:netflix description:Shadowed versions of rx/platform libraries for Insight Engineering Platform use
 github-netflix-rend-http | rend-http | https://github.com/Netflix/rend-http | author:netflix description:Rend server to proxy simple requests to an HTTP proxy
 github-netflix-webpack-parse-query | webpack-parse-query | https://github.com/Netflix/webpack-parse-query | author:netflix description:Webpack Loader Utils' parseQuery as a separate module
-github-netflix-falcor-datasource-chainer | falcor-datasource-chainer | https://github.com/Netflix/falcor-datasource-chainer | author:netflix description:Updated Dec 12, 2015
-github-netflix-edda-client | edda-client | https://github.com/Netflix/edda-client | author:netflix description:Updated May 27, 2016
+github-netflix-reactivesocket-examples | reactivesocket-examples | https://github.com/Netflix/reactivesocket-examples | author:netflix 
+github-netflix-falcor-datasource-chainer | falcor-datasource-chainer | https://github.com/Netflix/falcor-datasource-chainer | author:netflix 
+github-netflix-edda-client | edda-client | https://github.com/Netflix/edda-client | author:netflix 

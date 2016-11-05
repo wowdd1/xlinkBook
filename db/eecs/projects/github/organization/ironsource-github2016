@@ -1,56 +1,65 @@
 github-ironsource-node-regedit | node-regedit | https://github.com/ironSource/node-regedit | author:ironsource description:Read, Write, List and do all sorts of funky stuff to the windows registry using node.js and windows script host
 github-ironsource-node-generator-chrome-ninja | node-generator-chrome-ninja | https://github.com/ironSource/node-generator-chrome-ninja | author:ironsource description:Yeoman Chrome extension generator
-github-ironsource-stubborn | stubborn | https://github.com/ironSource/stubborn | author:ironsource description:A retry engine
 github-ironsource-node-dynamodb-stream | node-dynamodb-stream | https://github.com/ironSource/node-dynamodb-stream | author:ironsource description:A wrapper around low level aws sdk that makes it easy to consume a dynamodb-stream
+github-ironsource-stubborn | stubborn | https://github.com/ironSource/stubborn | author:ironsource description:A retry engine
 github-ironsource-atom-go | atom-go | https://github.com/ironSource/atom-go | author:ironsource description:ironSource.atom SDK for Go
-github-ironsource-node-if-async | node-if-async | https://github.com/ironSource/node-if-async | author:ironsource description:async conditional execution for async.js or standalone usage
 github-ironsource-atom-javascript | atom-javascript | https://github.com/ironSource/atom-javascript | author:ironsource description:ironSource.atom SDK for Javascript at the browser
+github-ironsource-node-if-async | node-if-async | https://github.com/ironSource/node-if-async | author:ironsource description:async conditional execution for async.js or standalone usage
 github-ironsource-docker-config | docker-config | https://github.com/ironSource/docker-config | author:ironsource description:ironsource.atom
 github-ironsource-atom-ios | atom-ios | https://github.com/ironSource/atom-ios | author:ironsource description:ironSource.atom SDK for IOS http://www.ironsrc.com/data-flow-management/
 github-ironsource-atom-python | atom-python | https://github.com/ironSource/atom-python | author:ironsource description:ironSource.atom SDK for Python
 github-ironsource-license-report | license-report | https://github.com/ironSource/license-report | author:ironsource description:create a short report about project's dependencies (license, url etc)
 github-ironsource-node-generator-bare-react | node-generator-bare-react | https://github.com/ironSource/node-generator-bare-react | author:ironsource description:Generator for React apps and components
-github-ironsource-node-generator-nom | node-generator-nom | https://github.com/ironSource/node-generator-nom | author:ironsource description:A modular Yeoman generator to create or update node modules.
-github-ironsource-rename-import-dll | rename-import-dll | https://github.com/ironSource/rename-import-dll | author:ironsource description:Updated Jul 20, 2016
+github-ironsource-rename-import-dll | rename-import-dll | https://github.com/ironSource/rename-import-dll | author:ironsource 
 github-ironsource-atom-node | atom-node | https://github.com/ironSource/atom-node | author:ironsource description:ironSource.atom SDK for Node
 github-ironsource-atom-beats | atom-beats | https://github.com/ironSource/atom-beats | author:ironsource description:ironSource.atom SDK for Beats
+github-ironsource-node-generator-nom | node-generator-nom | https://github.com/ironSource/node-generator-nom | author:ironsource description:A modular Yeoman generator to create or update node modules.
 github-ironsource-ironbeast-android | ironbeast-android | https://github.com/ironSource/ironbeast-android | author:ironsource description:Android tracking library for IronBeast API
-github-ironsource-atom-android | atom-android | https://github.com/ironSource/atom-android | author:ironsource description:ironSource.atom SDK for Android http://www.ironsrc.com/data-flow-management/
-github-ironsource-atom-java | atom-java | https://github.com/ironSource/atom-java | author:ironsource description:ironSource.atom SDK for Java
 github-ironsource-atom-logstash | atom-logstash | https://github.com/ironSource/atom-logstash | author:ironsource description:Using ironSource.atom with Logstash & Docker
-github-ironsource-atom-dotnet | atom-dotnet | https://github.com/ironSource/atom-dotnet | author:ironsource description:ironSource.atom SDK for .NET http://www.ironsrc.com/data-flow-management/
+github-ironsource-atom-java | atom-java | https://github.com/ironSource/atom-java | author:ironsource description:ironSource.atom SDK for Java
+github-ironsource-atom-android | atom-android | https://github.com/ironSource/atom-android | author:ironsource description:ironSource.atom SDK for Android http://www.ironsrc.com/data-flow-management/
 github-ironsource-atom-unity | atom-unity | https://github.com/ironSource/atom-unity | author:ironsource description:ironSource.atom SDK for Unity
+github-ironsource-atom-dotnet | atom-dotnet | https://github.com/ironSource/atom-dotnet | author:ironsource description:ironSource.atom SDK for .NET http://www.ironsrc.com/data-flow-management/
 github-ironsource-atom-php | atom-php | https://github.com/ironSource/atom-php | author:ironsource description:ironSource.atom SDK for PHP
 github-ironsource-atom-ruby | atom-ruby | https://github.com/ironSource/atom-ruby | author:ironsource description:ironSource.atom SDK for Ruby
-github-ironsource-atom-javascript-session | atom-javascript-session | https://github.com/ironSource/atom-javascript-session | author:ironsource description:atom javascript sdk for the browser with user session support
+github-ironsource-atom-javascript-session | atom-javascript-session | https://github.com/ironSource/atom-javascript-session | author:ironsource description:ironSource.atom SDK for Javascript at the browser with user session support
 github-ironsource-json-proxy | json-proxy | https://github.com/ironSource/json-proxy | author:ironsource description:takes an http stream of json objects and retransmits them one by one to another destination
 github-ironsource-node-config-prompt | node-config-prompt | https://github.com/ironSource/node-config-prompt | author:ironsource description:Configuration store with a cli prompt and JSON Schema validation
-github-ironsource-node-dynamodb-value | node-dynamodb-value | https://github.com/ironSource/node-dynamodb-value | author:ironsource description:convert js objects into dynamodb schema objects and back
 github-ironsource-node-pg-validate | node-pg-validate | https://github.com/ironSource/node-pg-validate | author:ironsource description:validate js objects against postgres or redshift metadata/schema
-github-ironsource-iSmusic | iSmusic | https://github.com/ironSource/iSmusic | author:ironsource description:hackathon music app.
-github-ironsource-exec-it | exec-it | https://github.com/ironSource/exec-it | author:ironsource description:Updated Jul 20, 2015
-github-ironsource-nodejs-coding-guidelines | nodejs-coding-guidelines | https://github.com/ironSource/nodejs-coding-guidelines | author:ironsource description:Node.js coding conventions and guidelines
+github-ironsource-kinesis-producer | kinesis-producer | https://github.com/ironSource/kinesis-producer | author:ironsource description:An aggregated records batch producer for Amazon Kinesis
+github-ironsource-node-dynamodb-value | node-dynamodb-value | https://github.com/ironSource/node-dynamodb-value | author:ironsource description:convert js objects into dynamodb schema objects and back
+github-ironsource-portable-executable | portable-executable | https://github.com/ironSource/portable-executable | author:ironsource 
 github-ironsource-log4js-elasticsearch-aws | log4js-elasticsearch-aws | https://github.com/ironSource/log4js-elasticsearch-aws | author:ironsource description:Extension for the log4js-elasticsearch which uses the AWS SDK to sign requests allowing you to use user/role based policies for AWS Elasticsearch Service.
+github-ironsource-iSmusic | iSmusic | https://github.com/ironSource/iSmusic | author:ironsource description:hackathon music app.
+github-ironsource-nodejs-coding-guidelines | nodejs-coding-guidelines | https://github.com/ironSource/nodejs-coding-guidelines | author:ironsource description:Node.js coding conventions and guidelines
 github-ironsource-proxy | proxy | https://github.com/ironSource/proxy | author:ironsource description:Duplicates traffic from prod to dev server
-github-ironsource-aws-sqs-workflow | aws-sqs-workflow | https://github.com/ironSource/aws-sqs-workflow | author:ironsource description:Simple workflow on top of aws sqs service
+github-ironsource-exec-it | exec-it | https://github.com/ironSource/exec-it | author:ironsource 
+github-ironsource-node-multi-tap | node-multi-tap | https://github.com/ironSource/node-multi-tap | author:ironsource 
+github-ironsource-node-ella | node-ella | https://github.com/ironSource/node-ella | author:ironsource 
+github-ironsource-run-and-wait | run-and-wait | https://github.com/ironSource/run-and-wait | author:ironsource 
+github-ironsource-bi-tools | bi-tools | https://github.com/ironSource/bi-tools | author:ironsource 
 github-ironsource-win-lnk | win-lnk | https://github.com/ironSource/win-lnk | author:ironsource description:Manage Windows Shortcuts WIP
 github-ironsource-atom_transformer_example | atom_transformer_example | https://github.com/ironSource/atom_transformer_example | author:ironsource description:A basic transformer example for Atom advanced users
-github-ironsource-node-ella | node-ella | https://github.com/ironSource/node-ella | author:ironsource description:Updated Jun 17, 2016
 github-ironsource-node-ec2-userdata | node-ec2-userdata | https://github.com/ironSource/node-ec2-userdata | author:ironsource description:Get the user data from an ec2 machine's hypervisor web interface, programmatilly or via command line
-github-ironsource-bi-tools | bi-tools | https://github.com/ironSource/bi-tools | author:ironsource description:Updated Aug 29, 2016
-github-ironsource-run-and-wait | run-and-wait | https://github.com/ironSource/run-and-wait | author:ironsource description:Updated Mar 15, 2015
-github-ironsource-rijik | rijik | https://github.com/ironSource/rijik | author:ironsource description:a very simple http healthprobe to plug inside your app
-github-ironsource-node-family-store | node-family-store | https://github.com/ironSource/node-family-store | author:ironsource description:Updated Jun 20, 2016
+github-ironsource-aws-sqs-workflow | aws-sqs-workflow | https://github.com/ironSource/aws-sqs-workflow | author:ironsource description:Simple workflow on top of aws sqs service
+github-ironsource-stf | stf | https://github.com/ironSource/stf | author:ironsource description:Control and manage Android devices from your browser.
+github-ironsource-vault-java-driver | vault-java-driver | https://github.com/ironSource/vault-java-driver | author:ironsource description:Zero-dependency Java client for HashiCorp's Vault
 github-ironsource-node-pg-metadata | node-pg-metadata | https://github.com/ironSource/node-pg-metadata | author:ironsource description:quickly get the metadata of a postresql or redshift db
-github-ironsource-node-chrome-unmirror | node-chrome-unmirror | https://github.com/ironSource/node-chrome-unmirror | author:ironsource description:Updated Jun 17, 2016
-github-ironsource-node-regedit-code-generator | node-regedit-code-generator | https://github.com/ironSource/node-regedit-code-generator | author:ironsource description:scrape method signatures from msdn to generate vbscript code for https://github.com/ironsource/node-regedit
-github-ironsource-node-vinyl-fs-merge | node-vinyl-fs-merge | https://github.com/ironSource/node-vinyl-fs-merge | author:ironsource description:Updated Jun 6, 2016
-github-ironsource-node-atomic-json-store | node-atomic-json-store | https://github.com/ironSource/node-atomic-json-store | author:ironsource description:Updated Jun 6, 2016
-github-ironsource-zero-s3 | zero-s3 | https://github.com/ironSource/zero-s3 | author:ironsource description:Updated Jul 8, 2015
-github-ironsource-karma-mongodb-reporter | karma-mongodb-reporter | https://github.com/ironSource/karma-mongodb-reporter | author:ironsource description:a karma reporter for saving test results to mongodb
-github-ironsource-node-dynamodb-path | node-dynamodb-path | https://github.com/ironSource/node-dynamodb-path | author:ironsource description:Updated Oct 26, 2015
-github-ironsource-geoip-maxmind | geoip-maxmind | https://github.com/ironSource/geoip-maxmind | author:ironsource description:IronSource GeoIP PUBLIC Docker Container
-github-ironsource-node-multi-tap | node-multi-tap | https://github.com/ironSource/node-multi-tap | author:ironsource description:Updated May 13, 2016
-github-ironsource-node-config-root | node-config-root | https://github.com/ironSource/node-config-root | author:ironsource description:Updated Jun 6, 2016
+github-ironsource-vault | vault | https://github.com/ironSource/vault | author:ironsource description:A tool for managing secrets.
+github-ironsource-node-family-store | node-family-store | https://github.com/ironSource/node-family-store | author:ironsource 
+github-ironsource-node-chrome-unmirror | node-chrome-unmirror | https://github.com/ironSource/node-chrome-unmirror | author:ironsource 
+github-ironsource-node-dynamodb-path | node-dynamodb-path | https://github.com/ironSource/node-dynamodb-path | author:ironsource 
+github-ironsource-node-atomic-json-store | node-atomic-json-store | https://github.com/ironSource/node-atomic-json-store | author:ironsource 
+github-ironsource-rijik | rijik | https://github.com/ironSource/rijik | author:ironsource description:a very simple http healthprobe to plug inside your app
 github-ironsource-nw-workshop-2014 | nw-workshop-2014 | https://github.com/ironSource/nw-workshop-2014 | author:ironsource description:code for node-webkit workshop at nodeconf.is 2014
-github-ironsource-my-platform | my-platform | https://github.com/ironSource/my-platform | author:ironsource description:Updated Apr 2, 2015
+github-ironsource-doqmentdb | doqmentdb | https://github.com/ironSource/doqmentdb | author:ironsource description:A Promise-Based DocumentDB ODM Client for NodeJS
+github-ironsource-node-regedit-code-generator | node-regedit-code-generator | https://github.com/ironSource/node-regedit-code-generator | author:ironsource description:scrape method signatures from msdn to generate vbscript code for https://github.com/ironsource/node-regedit
+github-ironsource-node-vinyl-fs-merge | node-vinyl-fs-merge | https://github.com/ironSource/node-vinyl-fs-merge | author:ironsource 
+github-ironsource-my-platform | my-platform | https://github.com/ironSource/my-platform | author:ironsource 
+github-ironsource-amazon-kinesis-client-python | amazon-kinesis-client-python | https://github.com/ironSource/amazon-kinesis-client-python | author:ironsource description:Amazon Kinesis Client Library for Python
+github-ironsource-geoip-maxmind | geoip-maxmind | https://github.com/ironSource/geoip-maxmind | author:ironsource description:IronSource GeoIP PUBLIC Docker Container
+github-ironsource-node-config-root | node-config-root | https://github.com/ironSource/node-config-root | author:ironsource 
+github-ironsource-newrelic-pm2-plugin | newrelic-pm2-plugin | https://github.com/ironSource/newrelic-pm2-plugin | author:ironsource description:New Relic plugin to pull in data from PM2
+github-ironsource-karma-mongodb-reporter | karma-mongodb-reporter | https://github.com/ironSource/karma-mongodb-reporter | author:ironsource description:a karma reporter for saving test results to mongodb
+github-ironsource-zero-s3 | zero-s3 | https://github.com/ironSource/zero-s3 | author:ironsource 
+github-ironsource-teleport | teleport | https://github.com/ironSource/teleport | author:ironsource description:Execute Python code in country-specific networking context

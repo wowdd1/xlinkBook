@@ -1,7 +1,21 @@
 github-deliveroo-deliveroo.engineering | deliveroo.engineering | https://github.com/deliveroo/deliveroo.engineering | author:deliveroo description:Guidelines and conventions for good software at Deliveroo
 github-deliveroo-ravelin-ruby | ravelin-ruby | https://github.com/deliveroo/ravelin-ruby | author:deliveroo description:Ravelin Ruby gem - https://www.ravelin.com
-github-deliveroo-deliveroo.github.io | deliveroo.github.io | https://github.com/deliveroo/deliveroo.github.io | author:deliveroo description:Our tech blog and coding guidelines
-github-deliveroo-rooted-rails | rooted-rails | https://github.com/deliveroo/rooted-rails | author:deliveroo description:Rails integration for the Rooted event publisher
-github-deliveroo-rooted | rooted | https://github.com/deliveroo/rooted | author:deliveroo description:An opinionated event publisher for Ruby
+github-deliveroo-routemaster | routemaster | https://github.com/deliveroo/routemaster | author:deliveroo description:Event Bus for RESTful architectures
 github-deliveroo-react-creditCard | react-creditCard | https://github.com/deliveroo/react-creditCard | author:deliveroo description:React component to handle credit cards. This is a conversion of the Stripe jQuery plugin.
+github-deliveroo-rooted | rooted | https://github.com/deliveroo/rooted | author:deliveroo description:An opinionated event publisher for Ruby
+github-deliveroo-travis_dedup | travis_dedup | https://github.com/deliveroo/travis_dedup | author:deliveroo description:Stop all builds on the same PR when a new job starts
+github-deliveroo-routemaster-drain | routemaster-drain | https://github.com/deliveroo/routemaster-drain | author:deliveroo description:Event receiver for the Routemaster bus
+github-deliveroo-gettext | gettext | https://github.com/deliveroo/gettext | author:deliveroo description:Gettext gem is a pure Ruby Localization(L10n) library and tool which is modeled after the GNU gettext package.
+github-deliveroo-phonelib | phonelib | https://github.com/deliveroo/phonelib | author:deliveroo description:Ruby gem for phone validation and formatting using google libphonenumber library data
+github-deliveroo-premier-ios | premier-ios | https://github.com/deliveroo/premier-ios | author:deliveroo description:A sample app to use for testing iOS interview candidates.
 github-deliveroo-routemaster-rushhour | routemaster-rushhour | https://github.com/deliveroo/routemaster-rushhour | author:deliveroo description:An app to stress-test and benchmark the routemaster event bus
+github-deliveroo-activerecord_autoreplica | activerecord_autoreplica | https://github.com/deliveroo/activerecord_autoreplica | author:deliveroo description:Simple read replica proxy for ActiveRecord
+github-deliveroo-rooted-rails | rooted-rails | https://github.com/deliveroo/rooted-rails | author:deliveroo description:Rails integration for the Rooted event publisher
+github-deliveroo-routemaster-blackhole | routemaster-blackhole | https://github.com/deliveroo/routemaster-blackhole | author:deliveroo description:A silly Routemaster subscriber that does nothing but gobble events
+github-deliveroo-deliveroo.github.io | deliveroo.github.io | https://github.com/deliveroo/deliveroo.github.io | author:deliveroo description:Our tech blog and coding guidelines
+github-deliveroo-routemaster-client | routemaster-client | https://github.com/deliveroo/routemaster-client | author:deliveroo description:Ruby client API for the Routemaster event bus
+github-deliveroo-heroku-datadog-drain-golang | heroku-datadog-drain-golang | https://github.com/deliveroo/heroku-datadog-drain-golang | author:deliveroo 
+github-deliveroo-record-cache | record-cache | https://github.com/deliveroo/record-cache | author:deliveroo description:Cache Active Model Records in Rails 3
+github-deliveroo-heroku-buildpack-post-build-clean | heroku-buildpack-post-build-clean | https://github.com/deliveroo/heroku-buildpack-post-build-clean | author:deliveroo description:Buildpack to remove unwanted files from the slug post-build
+github-deliveroo-pg_search | pg_search | https://github.com/deliveroo/pg_search | author:deliveroo description:pg_search builds ActiveRecord named scopes that take advantage of PostgreSQL’s full text search
+github-deliveroo-deploylist | deploylist | https://github.com/deliveroo/deploylist | author:deliveroo description:Deploys and changelog service

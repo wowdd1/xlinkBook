@@ -1,5 +1,12 @@
 github-fanatics-Docker-Nginx-S3-Proxy | Docker-Nginx-S3-Proxy | https://github.com/Fanatics/Docker-Nginx-S3-Proxy | author:fanatics description:Provide access to private S3 objects via Nginx
-github-fanatics-TechBlog | TechBlog | https://github.com/Fanatics/TechBlog | author:fanatics description:Updated Feb 2, 2016
-github-fanatics-planout.lua | planout.lua | https://github.com/Fanatics/planout.lua | author:fanatics description:Updated Mar 30, 2016
-github-fanatics-Engineering-Handbook | Engineering-Handbook | https://github.com/Fanatics/Engineering-Handbook | author:fanatics description:Fanatics' Engineering Handbook, describing hiring, onboarding, and more.
+github-fanatics-TechBlog | TechBlog | https://github.com/Fanatics/TechBlog | author:fanatics 
+github-fanatics-planout.lua | planout.lua | https://github.com/Fanatics/planout.lua | author:fanatics 
+github-fanatics-swaggerize-routes | swaggerize-routes | https://github.com/Fanatics/swaggerize-routes | author:fanatics description:Swagger document driven route builder.
+github-fanatics-generator-swaggerize | generator-swaggerize | https://github.com/Fanatics/generator-swaggerize | author:fanatics description:Yeoman generator for design-driven apis with swagger 2.0 and krakenjs/swaggerize tools.
+github-fanatics-planout | planout | https://github.com/Fanatics/planout | author:fanatics description:PlanOut is a library and interpreter for designing online experiments.
+github-fanatics-planout-golang | planout-golang | https://github.com/Fanatics/planout-golang | author:fanatics description:(Multi Variate Testing) Interpreter for Planout code written in Golang
+github-fanatics-hubot-octopus | hubot-octopus | https://github.com/Fanatics/hubot-octopus | author:fanatics description:A Hubot adapter for Octopus Deploy
+github-fanatics-hubot-slack | hubot-slack | https://github.com/Fanatics/hubot-slack | author:fanatics description:This is a Hubot adapter to use with Slack.
+github-fanatics-typeahead.js | typeahead.js | https://github.com/Fanatics/typeahead.js | author:fanatics description:typeahead.js is a fast and fully-featured autocomplete library
 github-fanatics-JavaScript-ESLint | JavaScript-ESLint | https://github.com/Fanatics/JavaScript-ESLint | author:fanatics description:ESLint file for JavaScript projects
+github-fanatics-Engineering-Handbook | Engineering-Handbook | https://github.com/Fanatics/Engineering-Handbook | author:fanatics description:Fanatics' Engineering Handbook, describing hiring, onboarding, and more.

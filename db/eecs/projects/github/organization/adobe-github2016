@@ -3,27 +3,32 @@ github-adobe-brackets-shell | brackets-shell | https://github.com/adobe/brackets
 github-adobe-brackets-app | brackets-app | https://github.com/adobe/brackets-app | author:adobe description:Deprecated CEF1-based app shell for Brackets. Use https://github.com/adobe/brackets-shell instead.
 github-adobe-adobe.github.com | adobe.github.com | https://github.com/adobe/adobe.github.com | author:adobe description:Adobe central hub for open source
 github-adobe-cssfilterlab | cssfilterlab | https://github.com/adobe/cssfilterlab | author:adobe description:CSS FilterLab
+github-adobe-glsl2agal | glsl2agal | https://github.com/adobe/glsl2agal | author:adobe description:GLSL To AGAL compiler -- Use this to compile GLSL shaders so they can be used in your flash application.
 github-adobe-webkit | webkit | https://github.com/adobe/webkit | author:adobe description:Experiments and contributions to WebKit. Tracks git://git.webkit.org/WebKit.git
 github-adobe-brackets-phonegap | brackets-phonegap | https://github.com/adobe/brackets-phonegap | author:adobe description:A brackets extension for PhoneGap development.
+github-adobe-CodeMirror2 | CodeMirror2 | https://github.com/adobe/CodeMirror2 | author:adobe description:In-browser code editor
 github-adobe-Spry | Spry | https://github.com/adobe/Spry | author:adobe description:Spry is a JavaScript-based framework that enables the rapid development of Ajax-powered web pages.
 github-adobe-GLS3D | GLS3D | https://github.com/adobe/GLS3D | author:adobe description:An implementation of OpenGL for Stage3D that can run inside Flash Player 11+
 github-adobe-brackets.io | brackets.io | https://github.com/adobe/brackets.io | author:adobe description:brackets.io website
 github-adobe-chromium | chromium | https://github.com/adobe/chromium | author:adobe description:Experiments and contributions to Chromium project
-github-adobe-web-platform | web-platform | https://github.com/adobe/web-platform | author:adobe description:Updated Oct 9, 2014
+github-adobe-web-platform | web-platform | https://github.com/adobe/web-platform | author:adobe 
 github-adobe-brackets-edge-web-fonts | brackets-edge-web-fonts | https://github.com/adobe/brackets-edge-web-fonts | author:adobe description:Edge Web Fonts extension for Brackets. Simply unzip and drop into your Brackets extension folder to browse and include Edge Web Fonts.
 github-adobe-dds2atf | dds2atf | https://github.com/adobe/dds2atf | author:adobe description:Tool for converting DDS files into ATF files suitable for use with the Flash Stage3D API
 github-adobe-graphicalweb-keynote | graphicalweb-keynote | https://github.com/adobe/graphicalweb-keynote | author:adobe description:Keynote for Graphical Web Conference
 github-adobe-brackets-registry | brackets-registry | https://github.com/adobe/brackets-registry | author:adobe description:A registry system for hosting Brackets extensions powered by node.js
-github-adobe-avmplus | avmplus | https://github.com/adobe/avmplus | author:adobe description:Source code for the Actionscript virtual machine
 github-adobe-node-smb-server | node-smb-server | https://github.com/adobe/node-smb-server | author:adobe description:A 100% JavaScript implementation of the SMB file sharing protocol.
+github-adobe-avmplus | avmplus | https://github.com/adobe/avmplus | author:adobe description:Source code for the Actionscript virtual machine
+github-adobe-telemetry-utils | telemetry-utils | https://github.com/adobe/telemetry-utils | author:adobe description:Tools to compliment Flash's Telemetry feature
 github-adobe-css-pseudo-elements | css-pseudo-elements | https://github.com/adobe/css-pseudo-elements | author:adobe description:Contains a prototype library for using a pseudo-elements syntax to create more boxes in the rendering tree, extending what is possible with ::before and ::after in CSS 2.1
 github-adobe-iphone-filter-demo | iphone-filter-demo | https://github.com/adobe/iphone-filter-demo | author:adobe description:demo for create the web showcasing filters on iPad
-github-adobe-angle | angle | https://github.com/adobe/angle | author:adobe description:Experiments and contributions to ANGLE project.
 github-adobe-WebkitAIR | WebkitAIR | https://github.com/adobe/WebkitAIR | author:adobe description:Webkit used in Adobe AIR
+github-adobe-angle | angle | https://github.com/adobe/angle | author:adobe description:Experiments and contributions to ANGLE project.
 github-adobe-angle.js | angle.js | https://github.com/adobe/angle.js | author:adobe description:ANGLE port to JS
 github-adobe-brackets-updates | brackets-updates | https://github.com/adobe/brackets-updates | author:adobe description:Update info and deployment scripts for Brackets/Edge Code
-github-adobe-skia | skia | https://github.com/adobe/skia | author:adobe description:Experiments and contributions to Skia project
 github-adobe-brackets-plugin-exclusions | brackets-plugin-exclusions | https://github.com/adobe/brackets-plugin-exclusions | author:adobe description:Brackets plugin for working with CSS Exclusions
-github-adobe-flash-platform | flash-platform | https://github.com/adobe/flash-platform | author:adobe description:Updated Jul 4, 2012
-github-adobe-edge-hub | edge-hub | https://github.com/adobe/edge-hub | author:adobe description:Updated May 30, 2012
+github-adobe-brackets-phonegap-prototype | brackets-phonegap-prototype | https://github.com/adobe/brackets-phonegap-prototype | author:adobe description:Brackets Extension for interacting with PhoneGap.
+github-adobe-skia | skia | https://github.com/adobe/skia | author:adobe description:Experiments and contributions to Skia project
+github-adobe-flash-platform | flash-platform | https://github.com/adobe/flash-platform | author:adobe 
+github-adobe-incubator-cordova-weinre | incubator-cordova-weinre | https://github.com/adobe/incubator-cordova-weinre | author:adobe description:Mirror of Apache Weinre
 github-adobe-SimpleTable | SimpleTable | https://github.com/adobe/SimpleTable | author:adobe description:Provides a simple data model for UITableView contents. The primary use case is to declaratively define a table view.
+github-adobe-edge-hub | edge-hub | https://github.com/adobe/edge-hub | author:adobe 

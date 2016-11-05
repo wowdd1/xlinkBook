@@ -1,5 +1,5 @@
 github-csail-mit6470 | mit6470 | https://github.com/csail/mit6470 | author:csail description:Website for IAP course 6.470
-github-csail-scratchpad | scratchpad | https://github.com/csail/scratchpad | author:csail description:Updated Mar 15, 2011
+github-csail-scratchpad | scratchpad | https://github.com/csail/scratchpad | author:csail 
 github-csail-6006psets_ng | 6006psets_ng | https://github.com/csail/6006psets_ng | author:csail description:New-Style 6.006 Problem Sets
 github-csail-airblue | airblue | https://github.com/csail/airblue | author:csail description:Airblue: WiFi implemented in BSV
 github-csail-police | police | https://github.com/csail/police | author:csail description:Ruby implementation of the Resin data flow assertion framework
@@ -14,6 +14,6 @@ github-csail-tem_multi_proxy | tem_multi_proxy | https://github.com/csail/tem_mu
 github-csail-mit6470-grader-sample | mit6470-grader-sample | https://github.com/csail/mit6470-grader-sample | author:csail description:MIT 6.470 Hackathon sample grading endpoint: infrastructure and sample problems
 github-csail-mit6470-vm | mit6470-vm | https://github.com/csail/mit6470-vm | author:csail description:Documentation for the MIT 6.470 development VM
 github-csail-hibaby | hibaby | https://github.com/csail/hibaby | author:csail description:De-anonymizer for dating networks
-github-csail-mit6470-hackathon | mit6470-hackathon | https://github.com/csail/mit6470-hackathon | author:csail description:Updated Dec 18, 2012
+github-csail-mit6470-hackathon | mit6470-hackathon | https://github.com/csail/mit6470-hackathon | author:csail 
 github-csail-mit6470-blog | mit6470-blog | https://github.com/csail/mit6470-blog | author:csail description:The 6.470 staff blog
 github-csail-tem-thesis | tem-thesis | https://github.com/csail/tem-thesis | author:csail description:Source code for the Trusted Execution Model thesis

@@ -12,19 +12,26 @@ github-pinterest-riffed | riffed | https://github.com/pinterest/riffed | author:
 github-pinterest-snappass | snappass | https://github.com/pinterest/snappass | author:pinterest description:It's like SnapChat... for passwords.
 github-pinterest-terrapin | terrapin | https://github.com/pinterest/terrapin | author:pinterest description:Serving system for batch generated data sets
 github-pinterest-widgets | widgets | https://github.com/pinterest/widgets | author:pinterest description:JavaScript widgets, including the Pin It button.
-github-pinterest-react-pinterest | react-pinterest | https://github.com/pinterest/react-pinterest | author:pinterest description:Updated Aug 19, 2016
 github-pinterest-pinlater | pinlater | https://github.com/pinterest/pinlater | author:pinterest description:PinLater is a Thrift service to manage scheduling and execution of asynchronous jobs.
-github-pinterest-ios-pdk | ios-pdk | https://github.com/pinterest/ios-pdk | author:pinterest description:Pinterest iOS SDK
+github-pinterest-react-pinterest | react-pinterest | https://github.com/pinterest/react-pinterest | author:pinterest 
 github-pinterest-jbender | jbender | https://github.com/pinterest/jbender | author:pinterest description:An easy-to-use library for creating load testing applications.
+github-pinterest-ios-pdk | ios-pdk | https://github.com/pinterest/ios-pdk | author:pinterest description:Pinterest iOS SDK
 github-pinterest-thrift-tools | thrift-tools | https://github.com/pinterest/thrift-tools | author:pinterest description:thrift-tools is a library and a set of tools to introspect Apache Thrift traffic.
 github-pinterest-git-stacktrace | git-stacktrace | https://github.com/pinterest/git-stacktrace | author:pinterest description:Easily figure out which git commit caused a given stacktrace
 github-pinterest-pagerduty-monit | pagerduty-monit | https://github.com/pinterest/pagerduty-monit | author:pinterest description:Wrapper scripts to integrate monit and PagerDuty.
-github-pinterest-pinterest-api-demo | pinterest-api-demo | https://github.com/pinterest/pinterest-api-demo | author:pinterest description:Updated May 17, 2016
+github-pinterest-pinterest-api-demo | pinterest-api-demo | https://github.com/pinterest/pinterest-api-demo | author:pinterest 
 github-pinterest-kingpin | kingpin | https://github.com/pinterest/kingpin | author:pinterest description:KingPin is the toolset used at Pinterest for service discovery and application configuration.
 github-pinterest-pinrepo | pinrepo | https://github.com/pinterest/pinrepo | author:pinterest description:Pinrepo is a highly scalable solution for storing and serving build artifacts such as debian packages, maven jars and pypi packages.
 github-pinterest-elixir-thrift | elixir-thrift | https://github.com/pinterest/elixir-thrift | author:pinterest description:Thrift Utilities for Elixir
 github-pinterest-quasar-thrift | quasar-thrift | https://github.com/pinterest/quasar-thrift | author:pinterest description:A Thrift server that uses Quasar's lightweight threads to handle connections.
 github-pinterest-android-pdk | android-pdk | https://github.com/pinterest/android-pdk | author:pinterest description:Pinterest Android SDK
 github-pinterest-arcanist-linters | arcanist-linters | https://github.com/pinterest/arcanist-linters | author:pinterest description:A collection of custom Arcanist linters
+github-pinterest-urlnorm | urlnorm | https://github.com/pinterest/urlnorm | author:pinterest description:Convert URL's to a normalized unicode format
 github-pinterest-wheeljack | wheeljack | https://github.com/pinterest/wheeljack | author:pinterest description:Work with interdependent python repositories seemlessly.
 github-pinterest-arcanist-owners | arcanist-owners | https://github.com/pinterest/arcanist-owners | author:pinterest description:An Arcanist extension for displaying file ownership information
+github-pinterest-twofishes | twofishes | https://github.com/pinterest/twofishes | author:pinterest description:A coarse splitting geocoder in scala, based primarily on geonames data
+github-pinterest-dht_ring | dht_ring | https://github.com/pinterest/dht_ring | author:pinterest description:Consistent hashing ring for Distributed Hash Tables (DHT)
+github-pinterest-mcd | mcd | https://github.com/pinterest/mcd | author:pinterest description:Fast memcached protocol client in pure Erlang
+github-pinterest-thrift | thrift | https://github.com/pinterest/thrift | author:pinterest description:Mirror of Apache Thrift
+github-pinterest-corman | corman | https://github.com/pinterest/corman | author:pinterest description:Configuration reload manager for Erlang applications
+github-pinterest-spark | spark | https://github.com/pinterest/spark | author:pinterest description:Mirror of Apache Spark

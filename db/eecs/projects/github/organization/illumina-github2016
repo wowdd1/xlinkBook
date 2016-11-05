@@ -1,0 +1,16 @@
+github-illumina-manta | manta | https://github.com/Illumina/manta | author:illumina description:Structural variant and indel caller for mapped sequencing data
+github-illumina-hap.py | hap.py | https://github.com/Illumina/hap.py | author:illumina description:Haplotype VCF comparison tools
+github-illumina-pyflow | pyflow | https://github.com/Illumina/pyflow | author:illumina description:A lightweight parallel task engine
+github-illumina-canvas | canvas | https://github.com/Illumina/canvas | author:illumina description:Canvas - Copy number variant (CNV) calling from DNA sequencing data
+github-illumina-isaac2 | isaac2 | https://github.com/Illumina/isaac2 | author:illumina description:Aligner for sequencing data
+github-illumina-akt | akt | https://github.com/Illumina/akt | author:illumina description:Ancestry and Kinship Tools
+github-illumina-interop | interop | https://github.com/Illumina/interop | author:illumina description:C++ Library to parse Illumina InterOp files
+github-illumina-Isaac3 | Isaac3 | https://github.com/Illumina/Isaac3 | author:illumina description:Aligner for sequencing data
+github-illumina-tHapMix | tHapMix | https://github.com/Illumina/tHapMix | author:illumina description:Haplotype-based somatic genome simulator
+github-illumina-agg | agg | https://github.com/Illumina/agg | author:illumina description:gvcf aggregation tool
+github-illumina-Pisces | Pisces | https://github.com/Illumina/Pisces | author:illumina description:Somatic variant caller for tumor-only samples
+github-illumina-Nirvana | Nirvana | https://github.com/Illumina/Nirvana | author:illumina description:The nimble & robust variant annotator
+github-illumina-MarViN | MarViN | https://github.com/Illumina/MarViN | author:illumina 
+github-illumina-BeadArrayFiles | BeadArrayFiles | https://github.com/Illumina/BeadArrayFiles | author:illumina description:Python library to parse file formats related to Illumina bead arrays
+github-illumina-strelka | strelka | https://github.com/Illumina/strelka | author:illumina description:Somatic and germline small variant caller for mapped sequencing data
+github-illumina-licenses | licenses | https://github.com/Illumina/licenses | author:illumina 

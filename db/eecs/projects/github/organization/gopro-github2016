@@ -1,0 +1,2 @@
+github-gopro-nightwatch | nightwatch | https://github.com/gopro/nightwatch | author:gopro description:Automated testing and continous integration framework based on node.js and selenium webdriver
+github-gopro-devops-captainhook | devops-captainhook | https://github.com/gopro/devops-captainhook | author:gopro description:A generic webhook endpoint that runs scripts based on the URL called

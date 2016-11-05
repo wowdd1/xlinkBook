@@ -2,20 +2,21 @@ github-adyen-adyen-magento | adyen-magento | https://github.com/Adyen/adyen-mage
 github-adyen-adyen-php-sample-code | adyen-php-sample-code | https://github.com/Adyen/adyen-php-sample-code | author:adyen description:Adyen PHP integration shows you how to integrate with Adyen using PHP.
 github-adyen-adyen-cse-web | adyen-cse-web | https://github.com/Adyen/adyen-cse-web | author:adyen description:Client-side encryption on JavaScript
 github-adyen-adyen-java-sample-code | adyen-java-sample-code | https://github.com/Adyen/adyen-java-sample-code | author:adyen description:Java Sample Code
+github-adyen-adyen-php-api-library | adyen-php-api-library | https://github.com/Adyen/adyen-php-api-library | author:adyen description:Adyen API Library for PHP
 github-adyen-adyen-cse-ios | adyen-cse-ios | https://github.com/Adyen/adyen-cse-ios | author:adyen description:Sample code for client-side encryption on iOS
 github-adyen-adyen-magento2 | adyen-magento2 | https://github.com/Adyen/adyen-magento2 | author:adyen description:Adyen Payment plugin for Magento2
-github-adyen-adyen-php-api-library | adyen-php-api-library | https://github.com/Adyen/adyen-php-api-library | author:adyen description:Adyen API Library for PHP
 github-adyen-adyen-checkout-ios | adyen-checkout-ios | https://github.com/Adyen/adyen-checkout-ios | author:adyen description:Adyen Checkout is a native client for accepting payments in-app.
-github-adyen-adyen-apple-pay-sample-code | adyen-apple-pay-sample-code | https://github.com/Adyen/adyen-apple-pay-sample-code | author:adyen description:Updated Apr 29, 2015
-github-adyen-adyen-checkout-android | adyen-checkout-android | https://github.com/Adyen/adyen-checkout-android | author:adyen description:Adyen Checkout is a native client for accepting payments in-app.
+github-adyen-adyen-apple-pay-sample-code | adyen-apple-pay-sample-code | https://github.com/Adyen/adyen-apple-pay-sample-code | author:adyen 
 github-adyen-adyen-asp.net-sample-code | adyen-asp.net-sample-code | https://github.com/Adyen/adyen-asp.net-sample-code | author:adyen description:ASP.NET 2.0 sample code
+github-adyen-adyen-checkout-android | adyen-checkout-android | https://github.com/Adyen/adyen-checkout-android | author:adyen description:Adyen Checkout is a native client for accepting payments in-app.
+github-adyen-adyen-android-pay-sample-code | adyen-android-pay-sample-code | https://github.com/Adyen/adyen-android-pay-sample-code | author:adyen 
+github-adyen-adyen-pos-quick-integration-sample-code | adyen-pos-quick-integration-sample-code | https://github.com/Adyen/adyen-pos-quick-integration-sample-code | author:adyen 
+github-adyen-adyen-salesforce-commerce-cloud | adyen-salesforce-commerce-cloud | https://github.com/Adyen/adyen-salesforce-commerce-cloud | author:adyen description:Salesforce Commerce Cloud (formerly Demandware)
 github-adyen-adyen-magento-subscription | adyen-magento-subscription | https://github.com/Adyen/adyen-magento-subscription | author:adyen description:Adyen Subscription plugin for Magento
-github-adyen-adyen-python-sample-code | adyen-python-sample-code | https://github.com/Adyen/adyen-python-sample-code | author:adyen description:Python sample code
-github-adyen-adyen-pos-quick-integration-sample-code | adyen-pos-quick-integration-sample-code | https://github.com/Adyen/adyen-pos-quick-integration-sample-code | author:adyen description:Updated Aug 8, 2016
-github-adyen-adyen-demandware | adyen-demandware | https://github.com/Adyen/adyen-demandware | author:adyen description:demandware
 github-adyen-adyen-cse-android | adyen-cse-android | https://github.com/Adyen/adyen-cse-android | author:adyen description:Sample code for client-side encryption on Android
-github-adyen-adyen-android-pay-sample-code | adyen-android-pay-sample-code | https://github.com/Adyen/adyen-android-pay-sample-code | author:adyen description:Updated Sep 2, 2016
+github-adyen-adyen-python-sample-code | adyen-python-sample-code | https://github.com/Adyen/adyen-python-sample-code | author:adyen description:Python sample code
 github-adyen-adyen-report-merger | adyen-report-merger | https://github.com/Adyen/adyen-report-merger | author:adyen description:The Adyen Report Merger Tool download a range of reports from the Adyen Backoffice with option to merge into one file
-github-adyen-adyen-dl-android | adyen-dl-android | https://github.com/Adyen/adyen-dl-android | author:adyen description:Updated Oct 19, 2016
 github-adyen-adyen-shop-demo-sample-code | adyen-shop-demo-sample-code | https://github.com/Adyen/adyen-shop-demo-sample-code | author:adyen description:Adyen iOS Shop demo with ApplePay
 github-adyen-adyen-dl-ios | adyen-dl-ios | https://github.com/Adyen/adyen-dl-ios | author:adyen description:This repository contains Adyen's Directory Lookup (DL) library for iOS.
+github-adyen-adyen-dl-android | adyen-dl-android | https://github.com/Adyen/adyen-dl-android | author:adyen description:This repository contains Adyen's Directory Lookup (DL) library for Android.
+github-adyen-active_merchant | active_merchant | https://github.com/Adyen/active_merchant | author:adyen description:Active Merchant is a simple payment abstraction library extracted from Shopify. The aim of the project is to feel natural to Ruby users and to abstract as many parts as possible away from the user to offer a consistent interface across all supported gateways.

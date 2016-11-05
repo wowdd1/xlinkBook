@@ -5,12 +5,28 @@ github-pluralsight-react-styleable | react-styleable | https://github.com/plural
 github-pluralsight-guides-cms | guides-cms | https://github.com/pluralsight/guides-cms | author:pluralsight description:Markdown based CMS with Github repository as persistent storage
 github-pluralsight-pluralsight-author-contrib | pluralsight-author-contrib | https://github.com/pluralsight/pluralsight-author-contrib | author:pluralsight description:Pluralsight author related materials
 github-pluralsight-redux-react-connector | redux-react-connector | https://github.com/pluralsight/redux-react-connector | author:pluralsight description:Convenient subscription to redux stores
-github-pluralsight-FocusableView | FocusableView | https://github.com/pluralsight/FocusableView | author:pluralsight description:Updated Mar 25, 2016
+github-pluralsight-FocusableView | FocusableView | https://github.com/pluralsight/FocusableView | author:pluralsight 
 github-pluralsight-mob-timer | mob-timer | https://github.com/pluralsight/mob-timer | author:pluralsight description:A mob programming application
 github-pluralsight-git-switch | git-switch | https://github.com/pluralsight/git-switch | author:pluralsight description:This is a Windows utility that allows multiple users to share a pairing station while using their own creds for commits.
+github-pluralsight-irt_parameter_estimation | irt_parameter_estimation | https://github.com/pluralsight/irt_parameter_estimation | author:pluralsight description:Parameter estimation routines for logistic Item Characteristic Curves (ICC) from Item Response Theory (IRT)
+github-pluralsight-pairing-station | pairing-station | https://github.com/pluralsight/pairing-station | author:pluralsight description:A charming little OS X app to manage identities on a pairing station.
+github-pluralsight-Bless.Net | Bless.Net | https://github.com/pluralsight/Bless.Net | author:pluralsight 
 github-pluralsight-HHPS-Partner-Tutorials | HHPS-Partner-Tutorials | https://github.com/pluralsight/HHPS-Partner-Tutorials | author:pluralsight description:Private articles repo
-github-pluralsight-Bless.Net | Bless.Net | https://github.com/pluralsight/Bless.Net | author:pluralsight description:Updated Nov 30, 2015
+github-pluralsight-sparse_dot | sparse_dot | https://github.com/pluralsight/sparse_dot | author:pluralsight description:Highly efficient dot products using sparse arrays (in location/data form)
+github-pluralsight-mtm_stats | mtm_stats | https://github.com/pluralsight/mtm_stats | author:pluralsight description:Highly efficient set statistics about many-to-many relationships
+github-pluralsight-maybe-dotnet | maybe-dotnet | https://github.com/pluralsight/maybe-dotnet | author:pluralsight 
+github-pluralsight-UIImageColors | UIImageColors | https://github.com/pluralsight/UIImageColors | author:pluralsight description:iTunes style color fetcher for UIImage.
+github-pluralsight-WootricSDK-iOS | WootricSDK-iOS | https://github.com/pluralsight/WootricSDK-iOS | author:pluralsight description:iOS SDK survey
+github-pluralsight-plug | plug | https://github.com/pluralsight/plug | author:pluralsight 
+github-pluralsight-CocoaLumberjack | CocoaLumberjack | https://github.com/pluralsight/CocoaLumberjack | author:pluralsight description:A fast & simple, yet powerful & flexible logging framework for Mac and iOS
+github-pluralsight-raven-swift | raven-swift | https://github.com/pluralsight/raven-swift | author:pluralsight description:Swift client for Sentry
+github-pluralsight-reactScrollbar | reactScrollbar | https://github.com/pluralsight/reactScrollbar | author:pluralsight description:Scrollbar component for React
+github-pluralsight-DateTools | DateTools | https://github.com/pluralsight/DateTools | author:pluralsight description:Dates and times made easy in Objective-C
+github-pluralsight-SwiftyBeaver | SwiftyBeaver | https://github.com/pluralsight/SwiftyBeaver | author:pluralsight description:Convenient logging during development & release in Swift 2 & 3
 github-pluralsight-ps-wait | ps-wait | https://github.com/pluralsight/ps-wait | author:pluralsight description:Wait for a condition to be met
+github-pluralsight-node-octopus-deploy | node-octopus-deploy | https://github.com/pluralsight/node-octopus-deploy | author:pluralsight description:Node script to create a release within Octopus Deploy, and optionally also deploy that release. This package will use the Octopus Deploy REST API in order to be able to call it from a linux machine.
+github-pluralsight-include-media | include-media | https://github.com/pluralsight/include-media | author:pluralsight description:Write simple, elegant and maintainable media queries with Sass
+github-pluralsight-analytics-swift | analytics-swift | https://github.com/pluralsight/analytics-swift | author:pluralsight description:The hassle-free way to add analytics to your Swift app.
+github-pluralsight-segment-wootric-ios | segment-wootric-ios | https://github.com/pluralsight/segment-wootric-ios | author:pluralsight description:The Wootric analytics-ios integration
+github-pluralsight-lanyard | lanyard | https://github.com/pluralsight/lanyard | author:pluralsight 
 github-pluralsight-pluralsight-wordpress-widget | pluralsight-wordpress-widget | https://github.com/pluralsight/pluralsight-wordpress-widget | author:pluralsight description:Wordpress plugin
-github-pluralsight-lanyard | lanyard | https://github.com/pluralsight/lanyard | author:pluralsight description:Updated Feb 12, 2014
-github-pluralsight-plug | plug | https://github.com/pluralsight/plug | author:pluralsight description:Updated Aug 23, 2012

@@ -7,54 +7,139 @@ github-flipkart-loader | loader | https://github.com/Flipkart/loader | author:fl
 github-flipkart-GraceKelly | GraceKelly | https://github.com/Flipkart/GraceKelly | author:flipkart description:A Best Effort Cache Synchronization Library In Java
 github-flipkart-phantom-mysql-proxy | phantom-mysql-proxy | https://github.com/Flipkart/phantom-mysql-proxy | author:flipkart description:The Mysql proxy leverages the Phantom extensibility support.
 github-flipkart-harness | harness | https://github.com/Flipkart/harness | author:flipkart description:Harness project - an automation test framework for functional tests
-github-flipkart-multitenancy | multitenancy | https://github.com/Flipkart/multitenancy | author:flipkart description:Tenant gem for supply chain
 github-flipkart-ekart-analytics | ekart-analytics | https://github.com/Flipkart/ekart-analytics | author:flipkart description:Repo for Scripts, Models, etc created by analytics team
-github-flipkart-netmap | netmap | https://github.com/Flipkart/netmap | author:flipkart description:netmap and VALE - very fast packet I/O from userspace (FreeBSD/Linux)
+github-flipkart-pdf.js | pdf.js | https://github.com/Flipkart/pdf.js | author:flipkart description:PDF Reader in JavaScript
 github-flipkart-speed | speed | https://github.com/Flipkart/speed | author:flipkart description:Fault tolerant distributed in memory filesystem based on Membase
+github-flipkart-netmap | netmap | https://github.com/Flipkart/netmap | author:flipkart description:netmap and VALE - very fast packet I/O from userspace (FreeBSD/Linux)
+github-flipkart-multitenancy | multitenancy | https://github.com/Flipkart/multitenancy | author:flipkart description:Tenant gem for supply chain
+github-flipkart-open-replicator | open-replicator | https://github.com/Flipkart/open-replicator | author:flipkart description:Open Replicator is a high performance MySQL binlog parser written in Java. It unfolds the possibilities that you can parse, filter and broadcast the binlog events in a real time manner.
+github-flipkart-elasticsearch | elasticsearch | https://github.com/Flipkart/elasticsearch | author:flipkart description:Open Source, Distributed, RESTful Search Engine
 github-flipkart-nosh | nosh | https://github.com/Flipkart/nosh | author:flipkart description:Interactive text-based console with pluggable commands for Java applications
-github-flipkart-hhd-wpa | hhd-wpa | https://github.com/Flipkart/hhd-wpa | author:flipkart description:Updated Mar 30, 2016
-github-flipkart-MySQL-replication-listener | MySQL-replication-listener | https://github.com/Flipkart/MySQL-replication-listener | author:flipkart description:This is a fork of MySQL-replication-listener on launchpad. https://launchpad.net/mysql-replication-listener
-github-flipkart-RetailSFM | RetailSFM | https://github.com/Flipkart/RetailSFM | author:flipkart description:This repository will store the code of retail SFM sub systems
-github-flipkart-fk-affiliate-api-python | fk-affiliate-api-python | https://github.com/Flipkart/fk-affiliate-api-python | author:flipkart description:Product and Offers Feed APIs
+github-flipkart-minnal | minnal | https://github.com/Flipkart/minnal | author:flipkart description:Minnal is a REST framework that helps you eliminate boiler plate code and build applications faster
+github-flipkart-ruby-sonar-plugin | ruby-sonar-plugin | https://github.com/Flipkart/ruby-sonar-plugin | author:flipkart description:Plugin to generate sonar metrics for ruby
+github-flipkart-neo4j-lucene4-index | neo4j-lucene4-index | https://github.com/Flipkart/neo4j-lucene4-index | author:flipkart description:Index provider for neo4j using lucene v4.
+github-flipkart-decimal-money | decimal-money | https://github.com/Flipkart/decimal-money | author:flipkart description:Library for dealing with money and currency conversion
+github-flipkart-azkaban2 | azkaban2 | https://github.com/Flipkart/azkaban2 | author:flipkart description:Azkaban scheduler re-written from the ground up.
+github-flipkart-offline | offline | https://github.com/Flipkart/offline | author:flipkart description:Automatically display online/offline indication to your users. #hubspot-open-source
+github-flipkart-sbt-scct | sbt-scct | https://github.com/Flipkart/sbt-scct | author:flipkart description:sbt integration to scct
+github-flipkart-padrino-rpm | padrino-rpm | https://github.com/Flipkart/padrino-rpm | author:flipkart description:New Relic Instrumentations for the Padrino framework
+github-flipkart-fk-ios-chat-heads | fk-ios-chat-heads | https://github.com/Flipkart/fk-ios-chat-heads | author:flipkart description:Chat heads for collaborative shopping
+github-flipkart-quartz | quartz | https://github.com/Flipkart/quartz | author:flipkart 
+github-flipkart-libphonenumber-csharp | libphonenumber-csharp | https://github.com/Flipkart/libphonenumber-csharp | author:flipkart description:Forking original c# port
+github-flipkart-DTCoreText | DTCoreText | https://github.com/Flipkart/DTCoreText | author:flipkart description:Methods to allow using HTML code with CoreText
+github-flipkart-wrk2 | wrk2 | https://github.com/Flipkart/wrk2 | author:flipkart description:A constant throughput, correct latency recording variant of wrk
+github-flipkart-mtcp | mtcp | https://github.com/Flipkart/mtcp | author:flipkart description:mTCP: A Highly Scalable User-level TCP Stack for Multicore Systems
+github-flipkart-rest-client | rest-client | https://github.com/Flipkart/rest-client | author:flipkart description:Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.
+github-flipkart-load_balancer_adapter | load_balancer_adapter | https://github.com/Flipkart/load_balancer_adapter | author:flipkart description:ActiveRecord adapter that load balances connections across multiple database hosts.
+github-flipkart-lucene-solr | lucene-solr | https://github.com/Flipkart/lucene-solr | author:flipkart description:Mirror of Apache Lucene & Solr
+github-flipkart-hhd-wpa | hhd-wpa | https://github.com/Flipkart/hhd-wpa | author:flipkart 
+github-flipkart-elastalert | elastalert | https://github.com/Flipkart/elastalert | author:flipkart description:Easy & Flexible Alerting With ElasticSearch
+github-flipkart-docker-rundeck | docker-rundeck | https://github.com/Flipkart/docker-rundeck | author:flipkart 
+github-flipkart-ribbon | ribbon | https://github.com/Flipkart/ribbon | author:flipkart description:Ribbon is a Inter Process Communication (remote procedure calls) library with built in software load balancers. The primary usage model involves REST calls with various serialization scheme support.
+github-flipkart-databus | databus | https://github.com/Flipkart/databus | author:flipkart description:Source-agnostic distributed change data capture system
+github-flipkart-commons-scxml2 | commons-scxml2 | https://github.com/Flipkart/commons-scxml2 | author:flipkart description:GitHub clone of SVN repo http://svn.apache.org/repos/asf/commons/proper/scxml/trunk (cloned by http://svn2github.com/)
 github-flipkart-fk-apache-camel-kafka-async | fk-apache-camel-kafka-async | https://github.com/Flipkart/fk-apache-camel-kafka-async | author:flipkart description:Apache Camel Kafka Component - which uses Kafka Asynchronous producer
-github-flipkart-quartz | quartz | https://github.com/Flipkart/quartz | author:flipkart description:Updated Jul 28, 2015
-github-flipkart-F7-models | F7-models | https://github.com/Flipkart/F7-models | author:flipkart description:Updated Apr 26, 2016
-github-flipkart-hash-utility | hash-utility | https://github.com/Flipkart/hash-utility | author:flipkart description:A simple utility to authenticate a service call, based on HMAC (signature).
-github-flipkart-ekart-balance-bucket-hbase-consumer | ekart-balance-bucket-hbase-consumer | https://github.com/Flipkart/ekart-balance-bucket-hbase-consumer | author:flipkart description:Hbase Client Consumer for Balance Bucket Service
-github-flipkart-ekart-longterm-planner | ekart-longterm-planner | https://github.com/Flipkart/ekart-longterm-planner | author:flipkart description:Updated Jun 21, 2016
-github-flipkart-ads-pla-alert | ads-pla-alert | https://github.com/Flipkart/ads-pla-alert | author:flipkart description:This repo will be used for pla alerts.
-github-flipkart-fk-lpe-etcd | fk-lpe-etcd | https://github.com/Flipkart/fk-lpe-etcd | author:flipkart description:Updated Aug 30, 2016
-github-flipkart-hibernate-addons | hibernate-addons | https://github.com/Flipkart/hibernate-addons | author:flipkart description:Updated Sep 2, 2016
-github-flipkart-kingsmoot | kingsmoot | https://github.com/Flipkart/kingsmoot | author:flipkart description:Leader election library based on etcd
-github-flipkart-scripts | scripts | https://github.com/Flipkart/scripts | author:flipkart description:Updated Sep 8, 2016
-github-flipkart-apl-bulkingestor | apl-bulkingestor | https://github.com/Flipkart/apl-bulkingestor | author:flipkart description:Updated Sep 27, 2016
-github-flipkart-espion | espion | https://github.com/Flipkart/espion | author:flipkart description:Codahale Metrics for Scala
-github-flipkart-tps-shardManager | tps-shardManager | https://github.com/Flipkart/tps-shardManager | author:flipkart description:Updated Oct 10, 2016
-github-flipkart-ekart-inventory-view | ekart-inventory-view | https://github.com/Flipkart/ekart-inventory-view | author:flipkart description:ekart-inventory-view[FBE]
-github-flipkart-automobile | automobile | https://github.com/Flipkart/automobile | author:flipkart description:an automation test framework for mobile apps
-github-flipkart-sun-jdk-7-debian-x64 | sun-jdk-7-debian-x64 | https://github.com/Flipkart/sun-jdk-7-debian-x64 | author:flipkart description:Sun JDK 1.7 package for debian squeeze
-github-flipkart-pwa-mocks | pwa-mocks | https://github.com/Flipkart/pwa-mocks | author:flipkart description:Updated May 1, 2016
-github-flipkart-bootcamp2014-mvn-intro | bootcamp2014-mvn-intro | https://github.com/Flipkart/bootcamp2014-mvn-intro | author:flipkart description:Updated Jul 4, 2014
-github-flipkart-excel-adapter-framework | excel-adapter-framework | https://github.com/Flipkart/excel-adapter-framework | author:flipkart description:Updated Jun 10, 2016
-github-flipkart-fixit-felix | fixit-felix | https://github.com/Flipkart/fixit-felix | author:flipkart description:Fixit-Felix troubleshooting workshop
-github-flipkart-minnal-sample-app | minnal-sample-app | https://github.com/Flipkart/minnal-sample-app | author:flipkart description:Contains sample application developed on minnal framework
-github-flipkart-aplhackday | aplhackday | https://github.com/Flipkart/aplhackday | author:flipkart description:Updated Jul 21, 2016
-github-flipkart-LoaderEngine | LoaderEngine | https://github.com/Flipkart/LoaderEngine | author:flipkart description:Simple Loader Engine for Flash Sale
-github-flipkart-ask-me | ask-me | https://github.com/Flipkart/ask-me | author:flipkart description:Ask any question about a flipkart product and we will give you relevant answers from reliable sources.
-github-flipkart-assistent | assistent | https://github.com/Flipkart/assistent | author:flipkart description:Updated Jul 22, 2016
+github-flipkart-swagger-codegen | swagger-codegen | https://github.com/Flipkart/swagger-codegen | author:flipkart description:swagger-codegen contains a template-driven engine to generate client code in different languages by parsing your Swagger Resource Declaration.
+github-flipkart-MySQL-replication-listener | MySQL-replication-listener | https://github.com/Flipkart/MySQL-replication-listener | author:flipkart description:This is a fork of MySQL-replication-listener on launchpad. https://launchpad.net/mysql-replication-listener
+github-flipkart-camus | camus | https://github.com/Flipkart/camus | author:flipkart 
+github-flipkart-fk-affiliate-api-python | fk-affiliate-api-python | https://github.com/Flipkart/fk-affiliate-api-python | author:flipkart description:Product and Offers Feed APIs
+github-flipkart-betamax | betamax | https://github.com/Flipkart/betamax | author:flipkart description:Betamax is a tool for mocking external HTTP resources such as web services and REST APIs in your tests. The project was inspired by the VCR library for Ruby.
 github-flipkart-fk-3p-solr | fk-3p-solr | https://github.com/Flipkart/fk-3p-solr | author:flipkart description:Apache solr debianization for flipkart
+github-flipkart-brand-regulation-alpha | brand-regulation-alpha | https://github.com/Flipkart/brand-regulation-alpha | author:flipkart 
+github-flipkart-balloon.css | balloon.css | https://github.com/Flipkart/balloon.css | author:flipkart description:Simple tooltips made of pure CSS
 github-flipkart-relay | relay | https://github.com/Flipkart/relay | author:flipkart description:Relayer implementation in Java to reliably transmit messages from a datasource to a queue
-github-flipkart-brand-regulation-alpha | brand-regulation-alpha | https://github.com/Flipkart/brand-regulation-alpha | author:flipkart description:Updated Aug 1, 2016
-github-flipkart-autodeploy | autodeploy | https://github.com/Flipkart/autodeploy | author:flipkart description:Updated Jul 12, 2016
-github-flipkart-ilip-motion-meter | ilip-motion-meter | https://github.com/Flipkart/ilip-motion-meter | author:flipkart description:Updated Jul 11, 2016
+github-flipkart-confd | confd | https://github.com/Flipkart/confd | author:flipkart description:Manage local application configuration files using templates and data from etcd or consul
+github-flipkart-kafka-1 | kafka-1 | https://github.com/Flipkart/kafka-1 | author:flipkart description:Mirror of Apache Kafka
+github-flipkart-jQuery-QueryBuilder | jQuery-QueryBuilder | https://github.com/Flipkart/jQuery-QueryBuilder | author:flipkart description:jQuery plugin offering an interface to create complex queries
+github-flipkart-assistent | assistent | https://github.com/Flipkart/assistent | author:flipkart 
+github-flipkart-ask-me | ask-me | https://github.com/Flipkart/ask-me | author:flipkart description:Ask any question about a flipkart product and we will give you relevant answers from reliable sources.
+github-flipkart-hcatalog | hcatalog | https://github.com/Flipkart/hcatalog | author:flipkart description:Mirror of Apache HCatalog
+github-flipkart-thread_safe | thread_safe | https://github.com/Flipkart/thread_safe | author:flipkart description:A collection of utilities for thread-safe programming in Ruby.
+github-flipkart-acts_as_tenant | acts_as_tenant | https://github.com/Flipkart/acts_as_tenant | author:flipkart description:Easy multi-tenancy for Rails in a shared database setup
+github-flipkart-DP-Time-picker | DP-Time-picker | https://github.com/Flipkart/DP-Time-picker | author:flipkart 
+github-flipkart-vitess | vitess | https://github.com/Flipkart/vitess | author:flipkart description:vitess provides servers and tools which facilitate scaling of MySQL databases for large scale web services.
 github-flipkart-luceneIndexer | luceneIndexer | https://github.com/Flipkart/luceneIndexer | author:flipkart description:Create lucene index in hdfs
-github-flipkart-ads-thundering-rhino | ads-thundering-rhino | https://github.com/Flipkart/ads-thundering-rhino | author:flipkart description:Updated Oct 18, 2016
-github-flipkart-ads-analytics-scheduled-jobs | ads-analytics-scheduled-jobs | https://github.com/Flipkart/ads-analytics-scheduled-jobs | author:flipkart description:Updated Oct 18, 2016
+github-flipkart-CPS | CPS | https://github.com/Flipkart/CPS | author:flipkart 
+github-flipkart-collectd | collectd | https://github.com/Flipkart/collectd | author:flipkart description:The system statistics collection daemon. Mirror of the canonical repository (updated automatically). Please send Pull Requests here!
+github-flipkart-stag-java | stag-java | https://github.com/Flipkart/stag-java | author:flipkart description:Speedy Type Adapter Generation
+github-flipkart-validator | validator | https://github.com/Flipkart/validator | author:flipkart description:Package validator implements struct field validations
+github-flipkart-go-workers | go-workers | https://github.com/Flipkart/go-workers | author:flipkart description:Sidekiq compatible background workers in golang
+github-flipkart-wrk | wrk | https://github.com/Flipkart/wrk | author:flipkart description:Modern HTTP benchmarking tool
+github-flipkart-civetweb | civetweb | https://github.com/Flipkart/civetweb | author:flipkart description:Embedded C/C++ web server
+github-flipkart-tps-shardManager | tps-shardManager | https://github.com/Flipkart/tps-shardManager | author:flipkart 
+github-flipkart-ekart-inventory-view | ekart-inventory-view | https://github.com/Flipkart/ekart-inventory-view | author:flipkart description:ekart-inventory-view[FBE]
+github-flipkart-ads-thundering-rhino | ads-thundering-rhino | https://github.com/Flipkart/ads-thundering-rhino | author:flipkart 
+github-flipkart-ads-analytics-scheduled-jobs | ads-analytics-scheduled-jobs | https://github.com/Flipkart/ads-analytics-scheduled-jobs | author:flipkart 
 github-flipkart-fk-ad-adiquity | fk-ad-adiquity | https://github.com/Flipkart/fk-ad-adiquity | author:flipkart description:flipkart ads funnel reporting
-github-flipkart-CPS | CPS | https://github.com/Flipkart/CPS | author:flipkart description:Updated Oct 19, 2016
-github-flipkart-fk-fdp-kafka | fk-fdp-kafka | https://github.com/Flipkart/fk-fdp-kafka | author:flipkart description:This is supposed to be a fork of kafka but there's already a fork. So reuploading this one.
 github-flipkart-concord | concord | https://github.com/Flipkart/concord | author:flipkart description:interfacing for oss
-github-flipkart-bootcamp2014-build-tool-faceoff | bootcamp2014-build-tool-faceoff | https://github.com/Flipkart/bootcamp2014-build-tool-faceoff | author:flipkart description:Updated Jul 4, 2014
-github-flipkart-obelix | obelix | https://github.com/Flipkart/obelix | author:flipkart description:Updated Jan 27, 2015
+github-flipkart-hibernate-addons | hibernate-addons | https://github.com/Flipkart/hibernate-addons | author:flipkart 
+github-flipkart-fbe_fa_tagging_poc_storm | fbe_fa_tagging_poc_storm | https://github.com/Flipkart/fbe_fa_tagging_poc_storm | author:flipkart 
+github-flipkart-seldon-drools-poc | seldon-drools-poc | https://github.com/Flipkart/seldon-drools-poc | author:flipkart 
 github-flipkart-linux | linux | https://github.com/Flipkart/linux | author:flipkart description:Flipkart fork of Linux kernel
-github-flipkart-user-affinity | user-affinity | https://github.com/Flipkart/user-affinity | author:flipkart description:Updated Mar 15, 2016
+github-flipkart-ceph-deploy | ceph-deploy | https://github.com/Flipkart/ceph-deploy | author:flipkart description:Deploy Ceph with minimal infrastructure, using just SSH access
+github-flipkart-s3-tests | s3-tests | https://github.com/Flipkart/s3-tests | author:flipkart description:Compatibility tests for S3 clones
+github-flipkart-calamari | calamari | https://github.com/Flipkart/calamari | author:flipkart description:Web-based monitoring and management for Ceph
+github-flipkart-teuthology | teuthology | https://github.com/Flipkart/teuthology | author:flipkart description:Ceph test suite
+github-flipkart-proxygen | proxygen | https://github.com/Flipkart/proxygen | author:flipkart description:A collection of C++ HTTP libraries including an easy to use HTTP server.
+github-flipkart-pig | pig | https://github.com/Flipkart/pig | author:flipkart description:Mirror of Apache Pig
+github-flipkart-minnal-sample-app | minnal-sample-app | https://github.com/Flipkart/minnal-sample-app | author:flipkart description:Contains sample application developed on minnal framework
+github-flipkart-swagger-maven-plugin | swagger-maven-plugin | https://github.com/Flipkart/swagger-maven-plugin | author:flipkart description:A maven build plugin which helps you generate API document during build phase
+github-flipkart-activeldap | activeldap | https://github.com/Flipkart/activeldap | author:flipkart description:ActiveLdap provides an object oriented interface to LDAP.
+github-flipkart-fixit-felix | fixit-felix | https://github.com/Flipkart/fixit-felix | author:flipkart description:Fixit-Felix troubleshooting workshop
+github-flipkart-incubator-zeppelin | incubator-zeppelin | https://github.com/Flipkart/incubator-zeppelin | author:flipkart description:Mirror of Apache Zeppelin (Incubating)
+github-flipkart-metrics | metrics | https://github.com/Flipkart/metrics | author:flipkart description:Capturing JVM- and application-level metrics. So you know what's going on.
+github-flipkart-ekart-balance-bucket-hbase-consumer | ekart-balance-bucket-hbase-consumer | https://github.com/Flipkart/ekart-balance-bucket-hbase-consumer | author:flipkart description:Hbase Client Consumer for Balance Bucket Service
+github-flipkart-user-affinity | user-affinity | https://github.com/Flipkart/user-affinity | author:flipkart 
+github-flipkart-padrino-framework | padrino-framework | https://github.com/Flipkart/padrino-framework | author:flipkart description:Padrino is a full-stack ruby framework built upon Sinatra.
+github-flipkart-bigdata-interop | bigdata-interop | https://github.com/Flipkart/bigdata-interop | author:flipkart description:Libraries and tools for interoperability between Hadoop-related open-source software and Google Cloud Platform.
+github-flipkart-tools | tools | https://github.com/Flipkart/tools | author:flipkart description:[mirror] Go Tools
+github-flipkart-zipkin | zipkin | https://github.com/Flipkart/zipkin | author:flipkart description:Zipkin is a distributed tracing system
+github-flipkart-incubator-lens | incubator-lens | https://github.com/Flipkart/incubator-lens | author:flipkart description:Fork of incubator-lens used by fdp
+github-flipkart-zxing | zxing | https://github.com/Flipkart/zxing | author:flipkart description:Official ZXing ("Zebra Crossing") project home
+github-flipkart-obelix | obelix | https://github.com/Flipkart/obelix | author:flipkart 
+github-flipkart-java-redis-rdb | java-redis-rdb | https://github.com/Flipkart/java-redis-rdb | author:flipkart description:Parse Redis dump.rdb file
+github-flipkart-Sql4D | Sql4D | https://github.com/Flipkart/Sql4D | author:flipkart description:Sql interface to druid.
+github-flipkart-spark | spark | https://github.com/Flipkart/spark | author:flipkart description:Mirror of Apache Spark
+github-flipkart-lpe-holiday | lpe-holiday | https://github.com/Flipkart/lpe-holiday | author:flipkart 
+github-flipkart-kafka-manager | kafka-manager | https://github.com/Flipkart/kafka-manager | author:flipkart description:A tool for managing Apache Kafka.
+github-flipkart-spring-boot-base-template | spring-boot-base-template | https://github.com/Flipkart/spring-boot-base-template | author:flipkart description:A base template to be used to write microservices in Spring. This will have basic set of libraries and code structuring to avoid writing any boiler plate code.
+github-flipkart-go-http-auth | go-http-auth | https://github.com/Flipkart/go-http-auth | author:flipkart description:Basic and Digest HTTP Authentication for golang http
+github-flipkart-bundler | bundler | https://github.com/Flipkart/bundler | author:flipkart description:Manage your application's gem dependencies with less pain
+github-flipkart-rails | rails | https://github.com/Flipkart/rails | author:flipkart description:Ruby on Rails
+github-flipkart-activerecord_use_slave | activerecord_use_slave | https://github.com/Flipkart/activerecord_use_slave | author:flipkart description:Switch ActiveRecord connections to a slave database for a given request... or block
+github-flipkart-TileStache | TileStache | https://github.com/Flipkart/TileStache | author:flipkart description:A stylish alternative for caching your map tiles.
+github-flipkart-ekart-longterm-planner | ekart-longterm-planner | https://github.com/Flipkart/ekart-longterm-planner | author:flipkart 
+github-flipkart-ilip-motion-meter | ilip-motion-meter | https://github.com/Flipkart/ilip-motion-meter | author:flipkart 
+github-flipkart-datasploit | datasploit | https://github.com/Flipkart/datasploit | author:flipkart description:A tool to perform various OSINT techniques, aggregate all the raw data, visualise it on a dashboard, and facilitate alerting and monitoring on the data.
+github-flipkart-jquery-date-range-picker | jquery-date-range-picker | https://github.com/Flipkart/jquery-date-range-picker | author:flipkart description:A jQuery plugin that allows user to select a date range
+github-flipkart-ads-pla-alert | ads-pla-alert | https://github.com/Flipkart/ads-pla-alert | author:flipkart description:This repo will be used for pla alerts.
+github-flipkart-aplhackday | aplhackday | https://github.com/Flipkart/aplhackday | author:flipkart 
+github-flipkart-LoaderEngine | LoaderEngine | https://github.com/Flipkart/LoaderEngine | author:flipkart description:Simple Loader Engine for Flash Sale
+github-flipkart-giggle | giggle | https://github.com/Flipkart/giggle | author:flipkart description:Giggle is Kaggle like platform for predictive modelling.
+github-flipkart-autodeploy | autodeploy | https://github.com/Flipkart/autodeploy | author:flipkart 
+github-flipkart-excel-adapter-framework | excel-adapter-framework | https://github.com/Flipkart/excel-adapter-framework | author:flipkart 
+github-flipkart-error-prone | error-prone | https://github.com/Flipkart/error-prone | author:flipkart description:Catch common Java mistakes as compile-time errors
+github-flipkart-aw-reporting | aw-reporting | https://github.com/Flipkart/aw-reporting | author:flipkart description:AdWords Reports to DB
+github-flipkart-hash-utility | hash-utility | https://github.com/Flipkart/hash-utility | author:flipkart description:A simple utility to authenticate a service call, based on HMAC (signature).
+github-flipkart-pwa-mocks | pwa-mocks | https://github.com/Flipkart/pwa-mocks | author:flipkart 
+github-flipkart-dracula-theme | dracula-theme | https://github.com/Flipkart/dracula-theme | author:flipkart description:😱 A dark theme for Atom, Alfred, Emacs, iTerm, JetBrains, Slack, Sublime Text, Textmate, Terminal.app, Vim, Xcode, Zsh and more!
+github-flipkart-azkaban-plugins | azkaban-plugins | https://github.com/Flipkart/azkaban-plugins | author:flipkart description:Common plugins for azkaban2
+github-flipkart-spoiwo | spoiwo | https://github.com/Flipkart/spoiwo | author:flipkart description:Scala POI Wrapper for the spreadsheet generation in Excel:
+github-flipkart-F7-models | F7-models | https://github.com/Flipkart/F7-models | author:flipkart 
+github-flipkart-redis-session-store | redis-session-store | https://github.com/Flipkart/redis-session-store | author:flipkart description:A simple session store for Rails based on Redis.
+github-flipkart-neo4j | neo4j | https://github.com/Flipkart/neo4j | author:flipkart description:The World's Leading Graph Database
+github-flipkart-dropwizard | dropwizard | https://github.com/Flipkart/dropwizard | author:flipkart description:A damn simple library for building production-ready RESTful web services.
+github-flipkart-sun-jdk-7-debian-x64 | sun-jdk-7-debian-x64 | https://github.com/Flipkart/sun-jdk-7-debian-x64 | author:flipkart description:Sun JDK 1.7 package for debian squeeze
+github-flipkart-automobile | automobile | https://github.com/Flipkart/automobile | author:flipkart description:an automation test framework for mobile apps
+github-flipkart-RationalArithmetic | RationalArithmetic | https://github.com/Flipkart/RationalArithmetic | author:flipkart description:TDDing RationalArithmetic
+github-flipkart-hive-udf | hive-udf | https://github.com/Flipkart/hive-udf | author:flipkart description:NexR Hive UDFs
+github-flipkart-mockserver | mockserver | https://github.com/Flipkart/mockserver | author:flipkart description:MockServer enables easy mocking of any system you integrate with via HTTP or HTTPS with clients written in Java, JavaScript and Ruby. MockServer also includes a proxy that introspects all proxied traffic including encrypted SSL traffic and supports Port Forwarding, Web Proxying (i.e. HTTP proxy), HTTPS Tunneling Proxying (using HTTP CONNECT) and…
+github-flipkart-soapui | soapui | https://github.com/Flipkart/soapui | author:flipkart description:SoapUI is a free and open source cross-platform functional testing solution for APIs and web services.
+github-flipkart-scripts | scripts | https://github.com/Flipkart/scripts | author:flipkart 
+github-flipkart-apl-bulkingestor | apl-bulkingestor | https://github.com/Flipkart/apl-bulkingestor | author:flipkart 
+github-flipkart-ceph | ceph | https://github.com/Flipkart/ceph | author:flipkart description:Ceph is a distributed object, block, and file storage platform
+github-flipkart-espion | espion | https://github.com/Flipkart/espion | author:flipkart description:Codahale Metrics for Scala
+github-flipkart-kingsmoot | kingsmoot | https://github.com/Flipkart/kingsmoot | author:flipkart description:Leader election library based on etcd
+github-flipkart-fk-lpe-etcd | fk-lpe-etcd | https://github.com/Flipkart/fk-lpe-etcd | author:flipkart 
+github-flipkart-bootcamp2014-build-tool-faceoff | bootcamp2014-build-tool-faceoff | https://github.com/Flipkart/bootcamp2014-build-tool-faceoff | author:flipkart 
+github-flipkart-bootcamp2014-mvn-intro | bootcamp2014-mvn-intro | https://github.com/Flipkart/bootcamp2014-mvn-intro | author:flipkart 

@@ -1,99 +1,128 @@
-github-infinidat-infi.docopt_completion | infi.docopt_completion | https://github.com/Infinidat/infi.docopt_completion | author:infinidat description:Updated Jun 22, 2016
+github-infinidat-infi.docopt_completion | infi.docopt_completion | https://github.com/Infinidat/infi.docopt_completion | author:infinidat 
+github-infinidat-munch | munch | https://github.com/Infinidat/munch | author:infinidat description:A Munch is a Python dictionary that provides attribute-style access (a la JavaScript objects).
 github-infinidat-gitpy | gitpy | https://github.com/Infinidat/gitpy | author:infinidat description:Python bindings for the Git source control system
-github-infinidat-infi.projector | infi.projector | https://github.com/Infinidat/infi.projector | author:infinidat description:Updated Oct 5, 2016
 github-infinidat-infi.clickhouse_orm | infi.clickhouse_orm | https://github.com/Infinidat/infi.clickhouse_orm | author:infinidat description:A Python library for working with the ClickHouse database (https://clickhouse.yandex/)
+github-infinidat-infi.projector | infi.projector | https://github.com/Infinidat/infi.projector | author:infinidat 
 github-infinidat-infi.systray | infi.systray | https://github.com/Infinidat/infi.systray | author:infinidat description:Windows system tray icon
 github-infinidat-relocatable-python | relocatable-python | https://github.com/Infinidat/relocatable-python | author:infinidat description:build system for building a portable python interpreter
-github-infinidat-dowser | dowser | https://github.com/Infinidat/dowser | author:infinidat description:Updated Jan 28, 2014
-github-infinidat-infi.pyvmomi_wrapper | infi.pyvmomi_wrapper | https://github.com/Infinidat/infi.pyvmomi_wrapper | author:infinidat description:Updated Aug 29, 2016
-github-infinidat-relocatable-python3 | relocatable-python3 | https://github.com/Infinidat/relocatable-python3 | author:infinidat description:Updated Oct 10, 2016
+github-infinidat-dowser | dowser | https://github.com/Infinidat/dowser | author:infinidat 
+github-infinidat-infi.pyvmomi_wrapper | infi.pyvmomi_wrapper | https://github.com/Infinidat/infi.pyvmomi_wrapper | author:infinidat 
+github-infinidat-relocatable-python3 | relocatable-python3 | https://github.com/Infinidat/relocatable-python3 | author:infinidat 
+github-infinidat-infi.asi | infi.asi | https://github.com/Infinidat/infi.asi | author:infinidat description:asynchronous SCSI interface
 github-infinidat-infi.storagemodel | infi.storagemodel | https://github.com/Infinidat/infi.storagemodel | author:infinidat description:A high-level library for traversing the OS storage model.
 github-infinidat-infi.pyutils | infi.pyutils | https://github.com/Infinidat/infi.pyutils | author:infinidat description:Misc python utilities
-github-infinidat-infi.asi | infi.asi | https://github.com/Infinidat/infi.asi | author:infinidat description:asynchronous SCSI interface
-github-infinidat-infi.execute | infi.execute | https://github.com/Infinidat/infi.execute | author:infinidat description:Updated Sep 25, 2016
-github-infinidat-infi.instruct | infi.instruct | https://github.com/Infinidat/infi.instruct | author:infinidat description:declarative structure marshalling
 github-infinidat-infinitrace | infinitrace | https://github.com/Infinidat/infinitrace | author:infinidat description:A trace solution for C/C++ code on Linux, optimized for high trace volumes and low latency
-github-infinidat-infi.jira_cli | infi.jira_cli | https://github.com/Infinidat/infi.jira_cli | author:infinidat description:Updated Oct 16, 2016
-github-infinidat-slimfastq | slimfastq | https://github.com/Infinidat/slimfastq | author:infinidat description:Fast, efficient, lossless compression of fastq files
-github-infinidat-infi.exceptools | infi.exceptools | https://github.com/Infinidat/infi.exceptools | author:infinidat description:a mechanism for chaining exceptions, compatible with Python 2.x
-github-infinidat-infi.recipe.application_packager | infi.recipe.application_packager | https://github.com/Infinidat/infi.recipe.application_packager | author:infinidat description:Updated Aug 7, 2016
+github-infinidat-infi.instruct | infi.instruct | https://github.com/Infinidat/infi.instruct | author:infinidat description:declarative structure marshalling
+github-infinidat-infi.execute | infi.execute | https://github.com/Infinidat/infi.execute | author:infinidat 
+github-infinidat-infi.jira_cli | infi.jira_cli | https://github.com/Infinidat/infi.jira_cli | author:infinidat 
+github-infinidat-infi.recipe.application_packager | infi.recipe.application_packager | https://github.com/Infinidat/infi.recipe.application_packager | author:infinidat 
 github-infinidat-infi.hbaapi | infi.hbaapi | https://github.com/Infinidat/infi.hbaapi | author:infinidat description:wrapping library for hbaapi in Python
+github-infinidat-infi.exceptools | infi.exceptools | https://github.com/Infinidat/infi.exceptools | author:infinidat description:a mechanism for chaining exceptions, compatible with Python 2.x
+github-infinidat-slimfastq | slimfastq | https://github.com/Infinidat/slimfastq | author:infinidat description:Fast, efficient, lossless compression of fastq files
+github-infinidat-infi.dtypes.wwn | infi.dtypes.wwn | https://github.com/Infinidat/infi.dtypes.wwn | author:infinidat description:WWN datatype in Python
+github-infinidat-infi.multipathtools | infi.multipathtools | https://github.com/Infinidat/infi.multipathtools | author:infinidat description:python bindings to multipath-tools daemon
+github-infinidat-infi.os_info | infi.os_info | https://github.com/Infinidat/infi.os_info | author:infinidat 
+github-infinidat-infi.parted | infi.parted | https://github.com/Infinidat/infi.parted | author:infinidat description:Python library for adding/removing disk partitions in linux
+github-infinidat-infi.pypi_manager | infi.pypi_manager | https://github.com/Infinidat/infi.pypi_manager | author:infinidat description:scripts for copying packages to djangopypi servers
+github-infinidat-infi.traceback | infi.traceback | https://github.com/Infinidat/infi.traceback | author:infinidat description:better tracebacks
+github-infinidat-pyvmomi | pyvmomi | https://github.com/Infinidat/pyvmomi | author:infinidat description:VMware vSphere API Python Bindings
+github-infinidat-psutil | psutil | https://github.com/Infinidat/psutil | author:infinidat description:A cross-platform process and system utilities module for Python
+github-infinidat-infi.devicemanager | infi.devicemanager | https://github.com/Infinidat/infi.devicemanager | author:infinidat description:Python bindings to Windows Device Manager's APIs
+github-infinidat-infi.win32service | infi.win32service | https://github.com/Infinidat/infi.win32service | author:infinidat description:wrapping library for windows services in Python
+github-infinidat-infi.conf | infi.conf | https://github.com/Infinidat/infi.conf | author:infinidat description:Yet another python configuration library
 github-infinidat-infi.unittest | infi.unittest | https://github.com/Infinidat/infi.unittest | author:infinidat description:Various extensions to the unittest module
 github-infinidat-infi.amqp | infi.amqp | https://github.com/Infinidat/infi.amqp | author:infinidat description:Simple AMQP publisher and consumer, with auto-reconnection.
-github-infinidat-infi.diskmanagement | infi.diskmanagement | https://github.com/Infinidat/infi.diskmanagement | author:infinidat description:Windows Disk Management wrapping in Python
 github-infinidat-infi.dtypes.hctl | infi.dtypes.hctl | https://github.com/Infinidat/infi.dtypes.hctl | author:infinidat description:HCTL-related datatypes in Python
-github-infinidat-infi.multipathtools | infi.multipathtools | https://github.com/Infinidat/infi.multipathtools | author:infinidat description:python bindings to multipath-tools daemon
-github-infinidat-infi.os_info | infi.os_info | https://github.com/Infinidat/infi.os_info | author:infinidat description:Updated Sep 29, 2016
-github-infinidat-infi.traceback | infi.traceback | https://github.com/Infinidat/infi.traceback | author:infinidat description:better tracebacks
-github-infinidat-infi.conf | infi.conf | https://github.com/Infinidat/infi.conf | author:infinidat description:Yet another python configuration library
-github-infinidat-infi.pypi_manager | infi.pypi_manager | https://github.com/Infinidat/infi.pypi_manager | author:infinidat description:scripts for copying packages to djangopypi servers
-github-infinidat-infi.parted | infi.parted | https://github.com/Infinidat/infi.parted | author:infinidat description:Python library for adding/removing disk partitions in linux
-github-infinidat-infi.devicemanager | infi.devicemanager | https://github.com/Infinidat/infi.devicemanager | author:infinidat description:Python bindings to Windows Device Manager's APIs
-github-infinidat-infi.dtypes.wwn | infi.dtypes.wwn | https://github.com/Infinidat/infi.dtypes.wwn | author:infinidat description:WWN datatype in Python
-github-infinidat-infi.win32service | infi.win32service | https://github.com/Infinidat/infi.win32service | author:infinidat description:wrapping library for windows services in Python
-github-infinidat-infinidat_openstack | infinidat_openstack | https://github.com/Infinidat/infinidat_openstack | author:infinidat description:Updated Oct 19, 2016
-github-infinidat-infi.recipe.template.version | infi.recipe.template.version | https://github.com/Infinidat/infi.recipe.template.version | author:infinidat description:an extension to collective.recipe.template
-github-infinidat-infi.app_repo | infi.app_repo | https://github.com/Infinidat/infi.app_repo | author:infinidat description:Updated Oct 10, 2016
-github-infinidat-infi.git_mirror | infi.git_mirror | https://github.com/Infinidat/infi.git_mirror | author:infinidat description:Scripts for replicating git repositories
-github-infinidat-infi.winapi.file_version_information | infi.winapi.file_version_information | https://github.com/Infinidat/infi.winapi.file_version_information | author:infinidat description:Python module for file versioning API in Windows
-github-infinidat-infi.hello | infi.hello | https://github.com/Infinidat/infi.hello | author:infinidat description:hello world
-github-infinidat-infi.logging | infi.logging | https://github.com/Infinidat/infi.logging | author:infinidat description:Updated Sep 30, 2015
-github-infinidat-infi.dtypes.iqn | infi.dtypes.iqn | https://github.com/Infinidat/infi.dtypes.iqn | author:infinidat description:IQN datatype in Python
-github-infinidat-infi.srm_client | infi.srm_client | https://github.com/Infinidat/infi.srm_client | author:infinidat description:Updated Apr 12, 2015
+github-infinidat-infi.diskmanagement | infi.diskmanagement | https://github.com/Infinidat/infi.diskmanagement | author:infinidat description:Windows Disk Management wrapping in Python
+github-infinidat-infinidat_openstack | infinidat_openstack | https://github.com/Infinidat/infinidat_openstack | author:infinidat 
+github-infinidat-infi.mountoolinux | infi.mountoolinux | https://github.com/Infinidat/infi.mountoolinux | author:infinidat description:Python library for posix mounts
 github-infinidat-sublime-infinidat | sublime-infinidat | https://github.com/Infinidat/sublime-infinidat | author:infinidat description:Infinidat plug-in for Sublime Text 3
-github-infinidat-infi.tracing | infi.tracing | https://github.com/Infinidat/infi.tracing | author:infinidat description:Updated Jan 7, 2015
-github-infinidat-infi.pysync | infi.pysync | https://github.com/Infinidat/infi.pysync | author:infinidat description:rsync-like utility to help sync dev files to a remote machine
-github-infinidat-infi.django_rest_utils | infi.django_rest_utils | https://github.com/Infinidat/infi.django_rest_utils | author:infinidat description:Updated Sep 19, 2016
-github-infinidat-infi.pkgmgr | infi.pkgmgr | https://github.com/Infinidat/infi.pkgmgr | author:infinidat description:Linux package management in Python
-github-infinidat-infi.wmpio | infi.wmpio | https://github.com/Infinidat/infi.wmpio | author:infinidat description:Windows MPIO Management in Python
+github-infinidat-infi.srm_client | infi.srm_client | https://github.com/Infinidat/infi.srm_client | author:infinidat 
+github-infinidat-infi.wmi | infi.wmi | https://github.com/Infinidat/infi.wmi | author:infinidat description:monkeypatched fork of comptypes to support faster WMI access
+github-infinidat-infi.recipe.template.version | infi.recipe.template.version | https://github.com/Infinidat/infi.recipe.template.version | author:infinidat description:an extension to collective.recipe.template
+github-infinidat-infi.app_repo | infi.app_repo | https://github.com/Infinidat/infi.app_repo | author:infinidat 
 github-infinidat-infi.registry | infi.registry | https://github.com/Infinidat/infi.registry | author:infinidat description:a Python dictionary-like interface to the Windows Registry
 github-infinidat-infi.winver | infi.winver | https://github.com/Infinidat/infi.winver | author:infinidat description:Windows version information in Python
-github-infinidat-storage_interfaces | storage_interfaces | https://github.com/Infinidat/storage_interfaces | author:infinidat description:Abstract classes for representing storage-related objects
+github-infinidat-infi.wmpio | infi.wmpio | https://github.com/Infinidat/infi.wmpio | author:infinidat description:Windows MPIO Management in Python
 github-infinidat-infi.reboot | infi.reboot | https://github.com/Infinidat/infi.reboot | author:infinidat description:a mechanism for Python applications to request host reboots
-github-infinidat-infi.recipe.python | infi.recipe.python | https://github.com/Infinidat/infi.recipe.python | author:infinidat description:a recipe for downloading and packing portable builds of Python
+github-infinidat-infi.django_rest_utils | infi.django_rest_utils | https://github.com/Infinidat/infi.django_rest_utils | author:infinidat 
+github-infinidat-storage_interfaces | storage_interfaces | https://github.com/Infinidat/storage_interfaces | author:infinidat description:Abstract classes for representing storage-related objects
+github-infinidat-infi.tracing | infi.tracing | https://github.com/Infinidat/infi.tracing | author:infinidat 
+github-infinidat-infi.pysync | infi.pysync | https://github.com/Infinidat/infi.pysync | author:infinidat description:rsync-like utility to help sync dev files to a remote machine
 github-infinidat-infi.cwrap | infi.cwrap | https://github.com/Infinidat/infi.cwrap | author:infinidat description:wrapping library for calling c functions from shared libraries on Windows in Python
+github-infinidat-pyvisdk | pyvisdk | https://github.com/Infinidat/pyvisdk | author:infinidat description:vSphere SDK for Python
+github-infinidat-vmware-scrapper | vmware-scrapper | https://github.com/Infinidat/vmware-scrapper | author:infinidat description:Scrapes the VMware vSphere API documentation and generates code and sphinx documentation.
+github-infinidat-infi.git_mirror | infi.git_mirror | https://github.com/Infinidat/infi.git_mirror | author:infinidat description:Scripts for replicating git repositories
+github-infinidat-infi.winapi.file_version_information | infi.winapi.file_version_information | https://github.com/Infinidat/infi.winapi.file_version_information | author:infinidat description:Python module for file versioning API in Windows
 github-infinidat-infi.wioctl | infi.wioctl | https://github.com/Infinidat/infi.wioctl | author:infinidat description:Python library for doing IOCTLs on Windows
-github-infinidat-infi.sysv_service | infi.sysv_service | https://github.com/Infinidat/infi.sysv_service | author:infinidat description:Updated Jun 22, 2016
+github-infinidat-infi.sysv_service | infi.sysv_service | https://github.com/Infinidat/infi.sysv_service | author:infinidat 
+github-infinidat-infi.pkgmgr | infi.pkgmgr | https://github.com/Infinidat/infi.pkgmgr | author:infinidat description:Linux package management in Python
+github-infinidat-djangopypi | djangopypi | https://github.com/Infinidat/djangopypi | author:infinidat description:Simple PyPI server written in django. Allows you to register/upload with distutils and install with easy_install/pip.
 github-infinidat-infi.run_as_root | infi.run_as_root | https://github.com/Infinidat/infi.run_as_root | author:infinidat description:Python decorator for ensuring that you're running as root
-github-infinidat-infi.mountoolinux | infi.mountoolinux | https://github.com/Infinidat/infi.mountoolinux | author:infinidat description:Python library for posix mounts
-github-infinidat-infi.wmi | infi.wmi | https://github.com/Infinidat/infi.wmi | author:infinidat description:monkeypatched fork of comptypes to support faster WMI access
-github-infinidat-infi.django_postgresql_migrations | infi.django_postgresql_migrations | https://github.com/Infinidat/infi.django_postgresql_migrations | author:infinidat description:Updated Oct 5, 2016
+github-infinidat-infi.recipe.python | infi.recipe.python | https://github.com/Infinidat/infi.recipe.python | author:infinidat description:a recipe for downloading and packing portable builds of Python
+github-infinidat-traces | traces | https://github.com/Infinidat/traces | author:infinidat description:API tracing framework for Linux C/C++ applications
+github-infinidat-infi.hello | infi.hello | https://github.com/Infinidat/infi.hello | author:infinidat description:hello world
+github-infinidat-infi.logging | infi.logging | https://github.com/Infinidat/infi.logging | author:infinidat 
+github-infinidat-infi.dtypes.iqn | infi.dtypes.iqn | https://github.com/Infinidat/infi.dtypes.iqn | author:infinidat description:IQN datatype in Python
+github-infinidat-infi.recipe.buildout_logging | infi.recipe.buildout_logging | https://github.com/Infinidat/infi.recipe.buildout_logging | author:infinidat 
+github-infinidat-infi.credentials_store | infi.credentials_store | https://github.com/Infinidat/infi.credentials_store | author:infinidat 
 github-infinidat-infi.iscsiapi | infi.iscsiapi | https://github.com/Infinidat/infi.iscsiapi | author:infinidat description:Crossplaform python module to perform basic iSCSI operations
-github-infinidat-infi.run_as | infi.run_as | https://github.com/Infinidat/infi.run_as | author:infinidat description:Updated Nov 2, 2014
-github-infinidat-infi.dbus | infi.dbus | https://github.com/Infinidat/infi.dbus | author:infinidat description:Updated Jun 6, 2013
-github-infinidat-buildout-bootstrap | buildout-bootstrap | https://github.com/Infinidat/buildout-bootstrap | author:infinidat description:Updated Jul 17, 2013
-github-infinidat-infi.greeter | infi.greeter | https://github.com/Infinidat/infi.greeter | author:infinidat description:Updated Sep 30, 2015
-github-infinidat-infi.logs_collector | infi.logs_collector | https://github.com/Infinidat/infi.logs_collector | author:infinidat description:Updated Nov 8, 2015
-github-infinidat-infi.asi_utils | infi.asi_utils | https://github.com/Infinidat/infi.asi_utils | author:infinidat description:Updated Nov 8, 2015
-github-infinidat-literals | literals | https://github.com/Infinidat/literals | author:infinidat description:Utility package for creating conditional/version dependent constants
-github-infinidat-lanister | lanister | https://github.com/Infinidat/lanister | author:infinidat description:Updated Jan 27, 2016
-github-infinidat-infi.rdc | infi.rdc | https://github.com/Infinidat/infi.rdc | author:infinidat description:Updated Feb 7, 2016
-github-infinidat-infi.gitlab_copy_id | infi.gitlab_copy_id | https://github.com/Infinidat/infi.gitlab_copy_id | author:infinidat description:Updated Apr 2, 2015
-github-infinidat-infi.sgutils | infi.sgutils | https://github.com/Infinidat/infi.sgutils | author:infinidat description:Updated Mar 22, 2015
-github-infinidat-pystick | pystick | https://github.com/Infinidat/pystick | author:infinidat description:Updated Mar 11, 2015
-github-infinidat-infi.memuse | infi.memuse | https://github.com/Infinidat/infi.memuse | author:infinidat description:Updated Dec 21, 2014
-github-infinidat-infi.nose_html_output | infi.nose_html_output | https://github.com/Infinidat/infi.nose_html_output | author:infinidat description:Updated Nov 2, 2014
-github-infinidat-infi.recipe.buildout_logging | infi.recipe.buildout_logging | https://github.com/Infinidat/infi.recipe.buildout_logging | author:infinidat description:Updated Nov 2, 2014
-github-infinidat-api_object_schema | api_object_schema | https://github.com/Infinidat/api_object_schema | author:infinidat description:Utilities for defining schemas of Pythonic objects interacting with external APIs
-github-infinidat-infi.mount_utils | infi.mount_utils | https://github.com/Infinidat/infi.mount_utils | author:infinidat description:Updated Sep 28, 2016
-github-infinidat-infi.dnssimple | infi.dnssimple | https://github.com/Infinidat/infi.dnssimple | author:infinidat description:Updated Jul 18, 2016
-github-infinidat-infi.datatable | infi.datatable | https://github.com/Infinidat/infi.datatable | author:infinidat description:Updated Aug 22, 2016
-github-infinidat-mitba | mitba | https://github.com/Infinidat/mitba | author:infinidat description:Python caching library for functions and methods
-github-infinidat-infi.credentials_store | infi.credentials_store | https://github.com/Infinidat/infi.credentials_store | author:infinidat description:Updated Aug 28, 2016
-github-infinidat-infi.monotonic_time | infi.monotonic_time | https://github.com/Infinidat/infi.monotonic_time | author:infinidat description:monotonic time
+github-infinidat-selectize.js | selectize.js | https://github.com/Infinidat/selectize.js | author:infinidat description:Selectize is the hybrid of a textbox and <select> box. It's jQuery based and it has autocomplete and native-feeling keyboard navigation; useful for tagging, contact lists, etc.
+github-infinidat-multipathd_udev_monitor | multipathd_udev_monitor | https://github.com/Infinidat/multipathd_udev_monitor | author:infinidat 
+github-infinidat-greenlet | greenlet | https://github.com/Infinidat/greenlet | author:infinidat description:Lightweight in-process concurrent programming
+github-infinidat-infi.sgutils | infi.sgutils | https://github.com/Infinidat/infi.sgutils | author:infinidat 
+github-infinidat-infi.gitlab_copy_id | infi.gitlab_copy_id | https://github.com/Infinidat/infi.gitlab_copy_id | author:infinidat 
+github-infinidat-pycrypto | pycrypto | https://github.com/Infinidat/pycrypto | author:infinidat description:The Python Cryptography Toolkit
+github-infinidat-pystick | pystick | https://github.com/Infinidat/pystick | author:infinidat 
 github-infinidat-infiniboot | infiniboot | https://github.com/Infinidat/infiniboot | author:infinidat description:Infinidat × Bootstrap: an elegant(-ish) CSS for a more civilized age.
-github-infinidat-infi.nose_logbook | infi.nose_logbook | https://github.com/Infinidat/infi.nose_logbook | author:infinidat description:Logbook integration for Nose
+github-infinidat-infi.monotonic_time | infi.monotonic_time | https://github.com/Infinidat/infi.monotonic_time | author:infinidat description:monotonic time
 github-infinidat-infinisdk | infinisdk | https://github.com/Infinidat/infinisdk | author:infinidat description:Python SDK for INFINIDAT storage products
+github-infinidat-infi.nose_logbook | infi.nose_logbook | https://github.com/Infinidat/infi.nose_logbook | author:infinidat description:Logbook integration for Nose
 github-infinidat-intercom.js | intercom.js | https://github.com/Infinidat/intercom.js | author:infinidat description:A client-side cross-window message broadcast library built on top of the HTML5 localStorage API.
-github-infinidat-pretty-httpbin | pretty-httpbin | https://github.com/Infinidat/pretty-httpbin | author:infinidat description:Updated Mar 24, 2016
-github-infinidat-infi.eventlog | infi.eventlog | https://github.com/Infinidat/infi.eventlog | author:infinidat description:Updated Jun 22, 2016
-github-infinidat-infinigui | infinigui | https://github.com/Infinidat/infinigui | author:infinidat description:Updated May 10, 2016
-github-infinidat-infi.ddnsimple | infi.ddnsimple | https://github.com/Infinidat/infi.ddnsimple | author:infinidat description:Updated Apr 10, 2016
-github-infinidat-multipathd_udev_monitor | multipathd_udev_monitor | https://github.com/Infinidat/multipathd_udev_monitor | author:infinidat description:Updated Apr 25, 2015
-github-infinidat-comtypes | comtypes | https://github.com/Infinidat/comtypes | author:infinidat description:Updated Aug 4, 2015
-github-infinidat-infi.nose_plugins | infi.nose_plugins | https://github.com/Infinidat/infi.nose_plugins | author:infinidat description:Updated Aug 18, 2015
-github-infinidat-bro | bro | https://github.com/Infinidat/bro | author:infinidat description:Updated Jul 22, 2015
-github-infinidat-infi.rpc | infi.rpc | https://github.com/Infinidat/infi.rpc | author:infinidat description:Updated Jul 28, 2015
-github-infinidat-infi.gevent_utils | infi.gevent_utils | https://github.com/Infinidat/infi.gevent_utils | author:infinidat description:Updated May 25, 2015
-github-infinidat-infi.recipe.console_scripts | infi.recipe.console_scripts | https://github.com/Infinidat/infi.recipe.console_scripts | author:infinidat description:Updated May 25, 2015
-github-infinidat-infi.recipe.close_application | infi.recipe.close_application | https://github.com/Infinidat/infi.recipe.close_application | author:infinidat description:Updated May 6, 2015
+github-infinidat-backbone.epoxy | backbone.epoxy | https://github.com/Infinidat/backbone.epoxy | author:infinidat description:Declarative data binding and computed models for Backbone
+github-infinidat-pretty-httpbin | pretty-httpbin | https://github.com/Infinidat/pretty-httpbin | author:infinidat 
+github-infinidat-infi.greeter | infi.greeter | https://github.com/Infinidat/infi.greeter | author:infinidat 
+github-infinidat-infi.nose_plugins | infi.nose_plugins | https://github.com/Infinidat/infi.nose_plugins | author:infinidat 
+github-infinidat-comtypes | comtypes | https://github.com/Infinidat/comtypes | author:infinidat 
+github-infinidat-nose | nose | https://github.com/Infinidat/nose | author:infinidat description:nose is nicer testing for python
+github-infinidat-infi.rpc | infi.rpc | https://github.com/Infinidat/infi.rpc | author:infinidat 
+github-infinidat-bro | bro | https://github.com/Infinidat/bro | author:infinidat 
+github-infinidat-infi.recipe.console_scripts | infi.recipe.console_scripts | https://github.com/Infinidat/infi.recipe.console_scripts | author:infinidat 
+github-infinidat-infi.gevent_utils | infi.gevent_utils | https://github.com/Infinidat/infi.gevent_utils | author:infinidat 
+github-infinidat-infi.recipe.close_application | infi.recipe.close_application | https://github.com/Infinidat/infi.recipe.close_application | author:infinidat 
+github-infinidat-infi.mount_utils | infi.mount_utils | https://github.com/Infinidat/infi.mount_utils | author:infinidat 
+github-infinidat-ansible-modules-extras | ansible-modules-extras | https://github.com/Infinidat/ansible-modules-extras | author:infinidat description:Ansible extra modules - these modules ship with ansible
+github-infinidat-infi.django_postgresql_migrations | infi.django_postgresql_migrations | https://github.com/Infinidat/infi.django_postgresql_migrations | author:infinidat 
+github-infinidat-mitba | mitba | https://github.com/Infinidat/mitba | author:infinidat description:Python caching library for functions and methods
+github-infinidat-gevent | gevent | https://github.com/Infinidat/gevent | author:infinidat description:Coroutine-based concurrency library for Python
+github-infinidat-api_object_schema | api_object_schema | https://github.com/Infinidat/api_object_schema | author:infinidat description:Utilities for defining schemas of Pythonic objects interacting with external APIs
+github-infinidat-cinder | cinder | https://github.com/Infinidat/cinder | author:infinidat 
+github-infinidat-infi.nose_html_output | infi.nose_html_output | https://github.com/Infinidat/infi.nose_html_output | author:infinidat 
+github-infinidat-infi.run_as | infi.run_as | https://github.com/Infinidat/infi.run_as | author:infinidat 
+github-infinidat-buildout | buildout | https://github.com/Infinidat/buildout | author:infinidat 
+github-infinidat-infi.memuse | infi.memuse | https://github.com/Infinidat/infi.memuse | author:infinidat 
+github-infinidat-requests | requests | https://github.com/Infinidat/requests | author:infinidat description:Python HTTP Requests for Humans™.
+github-infinidat-jQuery-Timepicker-Addon | jQuery-Timepicker-Addon | https://github.com/Infinidat/jQuery-Timepicker-Addon | author:infinidat description:Adds a timepicker to jQueryUI Datepicker
+github-infinidat-Sortable | Sortable | https://github.com/Infinidat/Sortable | author:infinidat description:Sortable — is a minimalist JavaScript library for reorderable drag-and-drop lists on modern browsers and touch devices. No jQuery. Supports Meteor, AngularJS, React and any CSS library, e.g. Bootstrap.
+github-infinidat-jquery-treetable | jquery-treetable | https://github.com/Infinidat/jquery-treetable | author:infinidat description:jQuery plugin to show a tree structure in a table
+github-infinidat-infi.ddnsimple | infi.ddnsimple | https://github.com/Infinidat/infi.ddnsimple | author:infinidat 
+github-infinidat-infinigui | infinigui | https://github.com/Infinidat/infinigui | author:infinidat 
+github-infinidat-react-dygraphs | react-dygraphs | https://github.com/Infinidat/react-dygraphs | author:infinidat description:A React wrapper for the dygraphs charting library.
+github-infinidat-infi.eventlog | infi.eventlog | https://github.com/Infinidat/infi.eventlog | author:infinidat 
+github-infinidat-infi.zsi | infi.zsi | https://github.com/Infinidat/infi.zsi | author:infinidat description:Git copy of ZSI library from globus.
+github-infinidat-fisheye-git-repo-api | fisheye-git-repo-api | https://github.com/Infinidat/fisheye-git-repo-api | author:infinidat description:Fisheye/Crucible Plugin for Adding/Indexing/Deleting Git Repositories
+github-infinidat-gitorious-plugin | gitorious-plugin | https://github.com/Infinidat/gitorious-plugin | author:infinidat 
+github-infinidat-blockui | blockui | https://github.com/Infinidat/blockui | author:infinidat description:jQuery BlockUI Plugin
+github-infinidat-logbook | logbook | https://github.com/Infinidat/logbook | author:infinidat description:A cool logging replacement for Python. Under construction
+github-infinidat-infi.dnssimple | infi.dnssimple | https://github.com/Infinidat/infi.dnssimple | author:infinidat 
+github-infinidat-infi.datatable | infi.datatable | https://github.com/Infinidat/infi.datatable | author:infinidat 
+github-infinidat-pyzmq | pyzmq | https://github.com/Infinidat/pyzmq | author:infinidat description:PyZMQ: Python bindings for zeromq
+github-infinidat-winpty | winpty | https://github.com/Infinidat/winpty | author:infinidat description:A Windows software package providing an interface similar to a Unix pty-master for communicating with Windows console programs.
+github-infinidat-buildout-bootstrap | buildout-bootstrap | https://github.com/Infinidat/buildout-bootstrap | author:infinidat 
+github-infinidat-infi.dbus | infi.dbus | https://github.com/Infinidat/infi.dbus | author:infinidat 
+github-infinidat-infi.asi_utils | infi.asi_utils | https://github.com/Infinidat/infi.asi_utils | author:infinidat 
+github-infinidat-django-mailer | django-mailer | https://github.com/Infinidat/django-mailer | author:infinidat description:mail queuing and management for the Django web framework
+github-infinidat-infi.rdc | infi.rdc | https://github.com/Infinidat/infi.rdc | author:infinidat 
+github-infinidat-lanister | lanister | https://github.com/Infinidat/lanister | author:infinidat 
+github-infinidat-infi.logs_collector | infi.logs_collector | https://github.com/Infinidat/infi.logs_collector | author:infinidat 
+github-infinidat-literals | literals | https://github.com/Infinidat/literals | author:infinidat description:Utility package for creating conditional/version dependent constants

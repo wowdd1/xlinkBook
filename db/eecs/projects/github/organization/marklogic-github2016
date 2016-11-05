@@ -9,79 +9,92 @@ github-marklogic-semantic | semantic | https://github.com/marklogic/semantic | a
 github-marklogic-RunDMC | RunDMC | https://github.com/marklogic/RunDMC | author:marklogic description:MarkLogic application for running a developer site
 github-marklogic-python_api | python_api | https://github.com/marklogic/python_api | author:marklogic description:MarkLogic Python API
 github-marklogic-marklogic-data-hub | marklogic-data-hub | https://github.com/marklogic/marklogic-data-hub | author:marklogic description:A data hub framework for MarkLogic.
-github-marklogic-Geophoto | Geophoto | https://github.com/marklogic/Geophoto | author:marklogic description:Updated Jan 29, 2016
+github-marklogic-Geophoto | Geophoto | https://github.com/marklogic/Geophoto | author:marklogic 
 github-marklogic-demo-cat | demo-cat | https://github.com/marklogic/demo-cat | author:marklogic description:An application to help SEs find good demos and record bugs and RFEs on them. AngularJS talks to the MarkLogic database via the REST API.
 github-marklogic-ml-rest-lib | ml-rest-lib | https://github.com/marklogic/ml-rest-lib | author:marklogic description:An XQuery library designed to make it easier to develop and deploy RESTful web services on MarkLogic Server
 github-marklogic-xqsync | xqsync | https://github.com/marklogic/xqsync | author:marklogic description:XQSync
-github-marklogic-marklogic-contentpump | marklogic-contentpump | https://github.com/marklogic/marklogic-contentpump | author:marklogic description:Command-line tool to import, export, and copy data to or from MarkLogic databases
+github-marklogic-marklogic-contentpump | marklogic-contentpump | https://github.com/marklogic/marklogic-contentpump | author:marklogic description:MarkLogic Connector for Hadoop and MarkLogic Contentpump (mlcp)
 github-marklogic-recordloader | recordloader | https://github.com/marklogic/recordloader | author:marklogic description:Java-based tool for loading data into MarkLogic
 github-marklogic-corb | corb | https://github.com/marklogic/corb | author:marklogic description:Content reprocessing in bulk
 github-marklogic-mlphp | mlphp | https://github.com/marklogic/mlphp | author:marklogic description:PHP Connector for MarkLogic REST API
-github-marklogic-corb2 | corb2 | https://github.com/marklogic/corb2 | author:marklogic description:MarkLogic tool for processing and reporting on content, enhanced from the original CoRB
-github-marklogic-semantic-news-search | semantic-news-search | https://github.com/marklogic/semantic-news-search | author:marklogic description:Updated Oct 10, 2013
+github-marklogic-semantic-news-search | semantic-news-search | https://github.com/marklogic/semantic-news-search | author:marklogic 
 github-marklogic-atompub-server | atompub-server | https://github.com/marklogic/atompub-server | author:marklogic description:An AtomPub Server on MarkLogic
 github-marklogic-cq | cq | https://github.com/marklogic/cq | author:marklogic description:MarkLogic CQ - a query tool
+github-marklogic-bitemp-explorer | bitemp-explorer | https://github.com/marklogic/bitemp-explorer | author:marklogic description:An interactive UI for exploring bitemporal data and queries in MarkLogic.
 github-marklogic-dictionaries | dictionaries | https://github.com/marklogic/dictionaries | author:marklogic description:Dictionaries and Thesauri
+github-marklogic-corb2 | corb2 | https://github.com/marklogic/corb2 | author:marklogic description:MarkLogic tool for processing and reporting on content, enhanced from the original CoRB
+github-marklogic-mljson | mljson | https://github.com/marklogic/mljson | author:marklogic description:XQuery library for working with JSON content in MarkLogic
 github-marklogic-marker | marker | https://github.com/marklogic/marker | author:marklogic description:CMS toolkit for MarkLogic Server
-github-marklogic-sparql2xquery | sparql2xquery | https://github.com/marklogic/sparql2xquery | author:marklogic description:SPARQL to XQuery Translator for use with MarkLogic Semantic Toolkit
 github-marklogic-infostudio-plugins | infostudio-plugins | https://github.com/marklogic/infostudio-plugins | author:marklogic description:Information Studio Plugins
+github-marklogic-sparql2xquery | sparql2xquery | https://github.com/marklogic/sparql2xquery | author:marklogic description:SPARQL to XQuery Translator for use with MarkLogic Semantic Toolkit
 github-marklogic-performance-meters | performance-meters | https://github.com/marklogic/performance-meters | author:marklogic description:PerformanceMeters
 github-marklogic-DocumentDiscovery | DocumentDiscovery | https://github.com/marklogic/DocumentDiscovery | author:marklogic description:A DataDiscovery application for binary documents
 github-marklogic-try | try | https://github.com/marklogic/try | author:marklogic description:code for MarkLogic's try service
 github-marklogic-mongo2marklogic | mongo2marklogic | https://github.com/marklogic/mongo2marklogic | author:marklogic description:MarkLogic Converter for MongoDB®
 github-marklogic-cqsh | cqsh | https://github.com/marklogic/cqsh | author:marklogic description:CQSH - An XQuery Shell
 github-marklogic-top-songs | top-songs | https://github.com/marklogic/top-songs | author:marklogic description:Top Songs Sample
+github-marklogic-mlu-character-search | mlu-character-search | https://github.com/marklogic/mlu-character-search | author:marklogic 
 github-marklogic-mlstat | mlstat | https://github.com/marklogic/mlstat | author:marklogic description:MarkLogic Monitoring and System Stats tool
-github-marklogic-mlu-character-search | mlu-character-search | https://github.com/marklogic/mlu-character-search | author:marklogic description:Updated Jun 7, 2016
-github-marklogic-comoms | comoms | https://github.com/marklogic/comoms | author:marklogic description:COntent Management on MarkLogic Server
 github-marklogic-libmlxcc | libmlxcc | https://github.com/marklogic/libmlxcc | author:marklogic description:libmlxcc - Mark Logic Connector for C, PHP, Perl, Ruby, and Python
+github-marklogic-epubreader | epubreader | https://github.com/marklogic/epubreader | author:marklogic description:An EPUB reading application built on MarkLogic Server
+github-marklogic-comoms | comoms | https://github.com/marklogic/comoms | author:marklogic description:COntent Management on MarkLogic Server
 github-marklogic-wordpress-marklogic-search | wordpress-marklogic-search | https://github.com/marklogic/wordpress-marklogic-search | author:marklogic description:WordPress Plugin for MarkLogic Search
 github-marklogic-mljam | mljam | https://github.com/marklogic/mljam | author:marklogic description:LIbrary that enables evaluation of Java code from within MarkLogic
-github-marklogic-AutoLoader | AutoLoader | https://github.com/marklogic/AutoLoader | author:marklogic description:Java direcetory-listener that uses RecordLoader to load data
 github-marklogic-mljcr | mljcr | https://github.com/marklogic/mljcr | author:marklogic description:MLJCR - Mark Logic Java Content Repository (JSR-170)
 github-marklogic-bill | bill | https://github.com/marklogic/bill | author:marklogic description:Shakespeare Demo Application
+github-marklogic-AutoLoader | AutoLoader | https://github.com/marklogic/AutoLoader | author:marklogic description:Java direcetory-listener that uses RecordLoader to load data
+github-marklogic-oauth2 | oauth2 | https://github.com/marklogic/oauth2 | author:marklogic description:An Oauth2 library/sample for MarkLogic
 github-marklogic-marklogic.github.io | marklogic.github.io | https://github.com/marklogic/marklogic.github.io | author:marklogic description:Repo that represents marklogic.github.com
-github-marklogic-xcc-java | xcc-java | https://github.com/marklogic/xcc-java | author:marklogic description:XCC/Java source repository
+github-marklogic-jqee | jqee | https://github.com/marklogic/jqee | author:marklogic description:JQEE
+github-marklogic-jedit | jedit | https://github.com/marklogic/jedit | author:marklogic description:jEdit XQuery Plugin
+github-marklogic-marklogic-jena | marklogic-jena | https://github.com/marklogic/marklogic-jena | author:marklogic description:Adapter for using MarkLogic with the Jena RDF Framework
+github-marklogic-tunage | tunage | https://github.com/marklogic/tunage | author:marklogic description:Sample application that enables search on your iTunes library.
 github-marklogic-webdavjedit | webdavjedit | https://github.com/marklogic/webdavjedit | author:marklogic description:jEdit WebDAV Plugin
 github-marklogic-boing-boing | boing-boing | https://github.com/marklogic/boing-boing | author:marklogic description:Tools to load the Boing Boing blog archive into a MarkLogic Server database and build an exploration application.
-github-marklogic-jedit | jedit | https://github.com/marklogic/jedit | author:marklogic description:jEdit XQuery Plugin
-github-marklogic-jqee | jqee | https://github.com/marklogic/jqee | author:marklogic description:JQEE
 github-marklogic-entity-services | entity-services | https://github.com/marklogic/entity-services | author:marklogic description:This is the repository for entity services, a feature in MarkLogic 9
 github-marklogic-marklogic-sesame | marklogic-sesame | https://github.com/marklogic/marklogic-sesame | author:marklogic description:Marklogic Sesame API for using MarkLogic with the Sesame RDF Framework
-github-marklogic-marklogic-jena | marklogic-jena | https://github.com/marklogic/marklogic-jena | author:marklogic description:Adapter for using MarkLogic with the Jena RDF Framework
+github-marklogic-xcc-java | xcc-java | https://github.com/marklogic/xcc-java | author:marklogic description:XCC/Java source repository
+github-marklogic-mlw-2012-app | mlw-2012-app | https://github.com/marklogic/mlw-2012-app | author:marklogic 
 github-marklogic-mlsam | mlsam | https://github.com/marklogic/mlsam | author:marklogic description:Library that allows access to relational databases from within MarkLogic
 github-marklogic-mluc11 | mluc11 | https://github.com/marklogic/mluc11 | author:marklogic description:Sample MarkLogic MLJSON Application
-github-marklogic-mlw-2012-app | mlw-2012-app | https://github.com/marklogic/mlw-2012-app | author:marklogic description:Updated Nov 25, 2012
-github-marklogic-tunage | tunage | https://github.com/marklogic/tunage | author:marklogic description:Sample application that enables search on your iTunes library.
-github-marklogic-inside-marklogic-server | inside-marklogic-server | https://github.com/marklogic/inside-marklogic-server | author:marklogic description:Code examples for the Inside MarkLogic Server book
 github-marklogic-userlogin | userlogin | https://github.com/marklogic/userlogin | author:marklogic description:User Login/Logout/Register XQuery Library
+github-marklogic-widowmaker | widowmaker | https://github.com/marklogic/widowmaker | author:marklogic description:Stress test engine for MarkLogic projects
+github-marklogic-inside-marklogic-server | inside-marklogic-server | https://github.com/marklogic/inside-marklogic-server | author:marklogic description:Code examples for the Inside MarkLogic Server book
 github-marklogic-mluser | mluser | https://github.com/marklogic/mluser | author:marklogic description:Add, remove, and set passwords for users on multiple, unclustered MarkLogic instances.
 github-marklogic-mlFacets | mlFacets | https://github.com/marklogic/mlFacets | author:marklogic description:An AngularJS directive for facets
-github-marklogic-xqlog | xqlog | https://github.com/marklogic/xqlog | author:marklogic description:xqlog: XQuery Blogger
-github-marklogic-loader | loader | https://github.com/marklogic/loader | author:marklogic description:Loader
-github-marklogic-versi | versi | https://github.com/marklogic/versi | author:marklogic description:Versi Design Template
 github-marklogic-soaprouter | soaprouter | https://github.com/marklogic/soaprouter | author:marklogic description:SOAP Router
-github-marklogic-xqdoc-ws | xqdoc-ws | https://github.com/marklogic/xqdoc-ws | author:marklogic description:xqDoc Web Services
-github-marklogic-xfaqtor | xfaqtor | https://github.com/marklogic/xfaqtor | author:marklogic description:Mark Logic XFaqtor
-github-marklogic-widowmaker | widowmaker | https://github.com/marklogic/widowmaker | author:marklogic description:Stress test engine for MarkLogic projects
-github-marklogic-eauser-geomapper | eauser-geomapper | https://github.com/marklogic/eauser-geomapper | author:marklogic description:TEACUP: MarkLogic-based visualization of where early access users are from
-github-marklogic-phpxdbc | phpxdbc | https://github.com/marklogic/phpxdbc | author:marklogic description:XDBC Connectivity for PHP - Obsolete
-github-marklogic-perlxdbc | perlxdbc | https://github.com/marklogic/perlxdbc | author:marklogic description:XDBC Connectivity for Perl - Obsolete
-github-marklogic-pairs | pairs | https://github.com/marklogic/pairs | author:marklogic description:Co-occurrence demo
-github-marklogic-alerting | alerting | https://github.com/marklogic/alerting | author:marklogic description:Alerting demo
 github-marklogic-queryingxmlbook | queryingxmlbook | https://github.com/marklogic/queryingxmlbook | author:marklogic description:Code from Querying XML by Buxton
-github-marklogic-xqrunner | xqrunner | https://github.com/marklogic/xqrunner | author:marklogic description:Mark Logic XQRunner Java XQuery Executor
 github-marklogic-facebook | facebook | https://github.com/marklogic/facebook | author:marklogic description:Facebook XQuery Library
 github-marklogic-feed | feed | https://github.com/marklogic/feed | author:marklogic description:Feed
-github-marklogic-cookbook | cookbook | https://github.com/marklogic/cookbook | author:marklogic description:MarkLogic Recipes
-github-marklogic-heatmap | heatmap | https://github.com/marklogic/heatmap | author:marklogic description:HeatMap Demo
-github-marklogic-idocs | idocs | https://github.com/marklogic/idocs | author:marklogic description:Interactive API docs
+github-marklogic-loader | loader | https://github.com/marklogic/loader | author:marklogic description:Loader
+github-marklogic-pairs | pairs | https://github.com/marklogic/pairs | author:marklogic description:Co-occurrence demo
+github-marklogic-alerting | alerting | https://github.com/marklogic/alerting | author:marklogic description:Alerting demo
+github-marklogic-xray | xray | https://github.com/marklogic/xray | author:marklogic description:XQuery test framework
 github-marklogic-HadoopExamples | HadoopExamples | https://github.com/marklogic/HadoopExamples | author:marklogic description:These are example Hadoop jobs that come with the MarkLogic Connector for Hadoop.
+github-marklogic-heatmap | heatmap | https://github.com/marklogic/heatmap | author:marklogic description:HeatMap Demo
+github-marklogic-xqdoc-ws | xqdoc-ws | https://github.com/marklogic/xqdoc-ws | author:marklogic description:xqDoc Web Services
+github-marklogic-xfaqtor | xfaqtor | https://github.com/marklogic/xfaqtor | author:marklogic description:Mark Logic XFaqtor
+github-marklogic-Windy-City-DB-Dataset | Windy-City-DB-Dataset | https://github.com/marklogic/Windy-City-DB-Dataset | author:marklogic description:Sample data for Windy City DB
+github-marklogic-xqlog | xqlog | https://github.com/marklogic/xqlog | author:marklogic description:xqlog: XQuery Blogger
+github-marklogic-versi | versi | https://github.com/marklogic/versi | author:marklogic description:Versi Design Template
+github-marklogic-XQuery-Flickr | XQuery-Flickr | https://github.com/marklogic/XQuery-Flickr | author:marklogic description:XQuery implementation of the Flickr API
+github-marklogic-oauth | oauth | https://github.com/marklogic/oauth | author:marklogic description:An OAuth implementation in XQuery
+github-marklogic-xqrunner | xqrunner | https://github.com/marklogic/xqrunner | author:marklogic description:Mark Logic XQRunner Java XQuery Executor
+github-marklogic-voice-memo | voice-memo | https://github.com/marklogic/voice-memo | author:marklogic 
+github-marklogic-ML-Schematron | ML-Schematron | https://github.com/marklogic/ML-Schematron | author:marklogic description:Module to support Schematron in MarkLogic server
+github-marklogic-perlxdbc | perlxdbc | https://github.com/marklogic/perlxdbc | author:marklogic description:XDBC Connectivity for Perl - Obsolete
+github-marklogic-phpxdbc | phpxdbc | https://github.com/marklogic/phpxdbc | author:marklogic description:XDBC Connectivity for PHP - Obsolete
+github-marklogic-eauser-geomapper | eauser-geomapper | https://github.com/marklogic/eauser-geomapper | author:marklogic description:TEACUP: MarkLogic-based visualization of where early access users are from
+github-marklogic-glom | glom | https://github.com/marklogic/glom | author:marklogic description:Graph, Clustering, and Machine Learning algorithms on MarkLogic
+github-marklogic-cookbook | cookbook | https://github.com/marklogic/cookbook | author:marklogic description:MarkLogic Recipes
+github-marklogic-idocs | idocs | https://github.com/marklogic/idocs | author:marklogic description:Interactive API docs
 github-marklogic-git-playground | git-playground | https://github.com/marklogic/git-playground | author:marklogic description:Just a scratch repo for learning about git and github
-github-marklogic-ut-java | ut-java | https://github.com/marklogic/ut-java | author:marklogic description:Updated Jan 30, 2014
-github-marklogic-connection-test | connection-test | https://github.com/marklogic/connection-test | author:marklogic description:Updated Jan 29, 2014
-github-marklogic-data-movement | data-movement | https://github.com/marklogic/data-movement | author:marklogic description:The MarkLogic Data Movement API
+github-marklogic-ut-java | ut-java | https://github.com/marklogic/ut-java | author:marklogic 
+github-marklogic-connection-test | connection-test | https://github.com/marklogic/connection-test | author:marklogic 
 github-marklogic-jsp | jsp | https://github.com/marklogic/jsp | author:marklogic description:Mark Logic XQuery JSP Tag Library
 github-marklogic-newrelic-plugin | newrelic-plugin | https://github.com/marklogic/newrelic-plugin | author:marklogic description:A NewRelic plugin for monitoring MarkLogic
-github-marklogic-DrupalConnect | DrupalConnect | https://github.com/marklogic/DrupalConnect | author:marklogic description:repository for documentation related to the Drupal-MarkLogic Connector project
+github-marklogic-data-movement | data-movement | https://github.com/marklogic/data-movement | author:marklogic description:The MarkLogic Data Movement API
+github-marklogic-hands-on-rest | hands-on-rest | https://github.com/marklogic/hands-on-rest | author:marklogic description:Exercises for learning the MarkLogic REST Client API
+github-marklogic-XQuery-Sublime | XQuery-Sublime | https://github.com/marklogic/XQuery-Sublime | author:marklogic description:Syntax highlighting and snippets for working with XQuery in general and MarkLogic in particular.
 github-marklogic-rundmc-drupal | rundmc-drupal | https://github.com/marklogic/rundmc-drupal | author:marklogic description:Software to run Developer dot Marklogic dot Com via Drupal
+github-marklogic-DrupalConnect | DrupalConnect | https://github.com/marklogic/DrupalConnect | author:marklogic description:repository for documentation related to the Drupal-MarkLogic Connector project

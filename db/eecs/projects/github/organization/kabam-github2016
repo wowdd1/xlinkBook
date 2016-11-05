@@ -1,2 +1,24 @@
 github-kabam-cloudformula | cloudformula | https://github.com/Kabam/cloudformula | author:kabam description:CloudFormula is a user-friendly tool to generate and upload CloudFormation templates from ERB templates.
+github-kabam-i18n-active_record | i18n-active_record | https://github.com/Kabam/i18n-active_record | author:kabam description:My fork of I18n ActiveRecord backend with some improvements and fixed bugs.
+github-kabam-CRToast | CRToast | https://github.com/Kabam/CRToast | author:kabam description:A modern iOS toast view that can fit your notification needs
+github-kabam-mysql | mysql | https://github.com/Kabam/mysql | author:kabam description:Development repository for Opscode Cookbook mysql
+github-kabam-rs-mysql | rs-mysql | https://github.com/Kabam/rs-mysql | author:kabam description:Chef cookbook for setting up a MySQL server in RightScale
 github-kabam-chef-mongodb | chef-mongodb | https://github.com/Kabam/chef-mongodb | author:kabam description:Fork of https://github.com/edelight/chef-mongodb
+github-kabam-Graphite-Tattle | Graphite-Tattle | https://github.com/Kabam/Graphite-Tattle | author:kabam 
+github-kabam-chef-cookbook-nginx-proxy | chef-cookbook-nginx-proxy | https://github.com/Kabam/chef-cookbook-nginx-proxy | author:kabam description:Configure nginx as frontend proxy server.
+github-kabam-selenium | selenium | https://github.com/Kabam/selenium | author:kabam description:A mirror of the Selenium source. Please file issues in Google Code. Also confirm you have signed the CLA (http://goo.gl/qC50R) when making a Pull Request.
+github-kabam-ngImgCrop | ngImgCrop | https://github.com/Kabam/ngImgCrop | author:kabam description:Image Crop directive for AngularJS
+github-kabam-chef-typesafe-stack | chef-typesafe-stack | https://github.com/Kabam/chef-typesafe-stack | author:kabam description:DEPRECATED: Chef cookbook to install Typesafe Scala stack (sbt, giter8)
+github-kabam-hipchat-colors | hipchat-colors | https://github.com/Kabam/hipchat-colors | author:kabam description:Fixing Hipchat 3.0's horrible colors
+github-kabam-build-essential | build-essential | https://github.com/Kabam/build-essential | author:kabam description:Development repository for Opscode Cookbook build-essential
+github-kabam-calabash-android | calabash-android | https://github.com/Kabam/calabash-android | author:kabam description:Automated Functional testing for Android based on cucumber
+github-kabam-calabash-ios | calabash-ios | https://github.com/Kabam/calabash-ios | author:kabam description:Calabash for iOS
+github-kabam-markitup1.x | markitup1.x | https://github.com/Kabam/markitup1.x | author:kabam description:markItUp! Universal markup editor 1.x
+github-kabam-rsc_gluster | rsc_gluster | https://github.com/Kabam/rsc_gluster | author:kabam 
+github-kabam-XCodeEditor-for-Unity | XCodeEditor-for-Unity | https://github.com/Kabam/XCodeEditor-for-Unity | author:kabam description:XCode 4 project editor for Unity3D postprocess.
+github-kabam-capistrano-scm-gitcopy | capistrano-scm-gitcopy | https://github.com/Kabam/capistrano-scm-gitcopy | author:kabam description:Capsitrano 3 copy scm - tar your git branch and deploy to your server
+github-kabam-loggly_rsyslog_ng | loggly_rsyslog_ng | https://github.com/Kabam/loggly_rsyslog_ng | author:kabam description:Chef cookbook to configure rsyslog to send logs to Loggly
+github-kabam-gproc | gproc | https://github.com/Kabam/gproc | author:kabam description:Extended process registry for Erlang
+github-kabam-cowboy | cowboy | https://github.com/Kabam/cowboy | author:kabam description:Small, fast, modular HTTP server and socket acceptor pool.
+github-kabam-riak-erlang-client | riak-erlang-client | https://github.com/Kabam/riak-erlang-client | author:kabam description:Erlang clients for Riak.
+github-kabam-statebox | statebox | https://github.com/Kabam/statebox | author:kabam description:Erlang state "monad" with merge/conflict-resolution capabilities. Useful for Riak.

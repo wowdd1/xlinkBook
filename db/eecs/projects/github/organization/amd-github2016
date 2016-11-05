@@ -2,3 +2,7 @@ github-AMD-OpenCL-caffe | OpenCL-caffe | https://github.com/amd/OpenCL-caffe | a
 github-AMD-Chromium-WebCL | Chromium-WebCL | https://github.com/amd/Chromium-WebCL | author:AMD description:WebCL implementation for Chromium
 github-AMD-rest3d | rest3d | https://github.com/amd/rest3d | author:AMD description:REST3D PROJECT see www.rest3d.org
 github-AMD-furious.js | furious.js | https://github.com/amd/furious.js | author:AMD description:scientific computing package for JavaScript - inspired by NumPy
+github-AMD-glTF | glTF | https://github.com/amd/glTF | author:AMD description:glTF - the runtime asset format for WebGL, OpenGL ES, and OpenGL.
+github-AMD-node-unzip | node-unzip | https://github.com/amd/node-unzip | author:AMD description:node.js cross-platform unzip using streams
+github-AMD-convnet-benchmarks | convnet-benchmarks | https://github.com/amd/convnet-benchmarks | author:AMD description:Easy benchmarking of all public open-source implementations of convnets
+github-AMD-existdb-node | existdb-node | https://github.com/amd/existdb-node | author:AMD description:A node.js client library for the eXist-db Native XML Database.

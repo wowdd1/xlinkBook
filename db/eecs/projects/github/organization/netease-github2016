@@ -1,7 +1,10 @@
 github-netease-pomelo | pomelo | https://github.com/NetEase/pomelo | author:netease description:A fast,scalable,distributed game server framework for Node.js.
+github-netease-Emmagee | Emmagee | https://github.com/NetEase/Emmagee | author:netease description:Android performance test tool-CPU,memory,network traffic,starting time,battery current and status
 github-netease-UnitySocketIO | UnitySocketIO | https://github.com/NetEase/UnitySocketIO | author:netease description:socket.io client for unity3d.
 github-netease-lordofpomelo | lordofpomelo | https://github.com/NetEase/lordofpomelo | author:netease description:the online demo of pomelo
+github-netease-Dagger | Dagger | https://github.com/NetEase/Dagger | author:netease description:a Web UI autotest framework based on Selenium and TestNg
 github-netease-chatofpomelo | chatofpomelo | https://github.com/NetEase/chatofpomelo | author:netease description:chat application of pomelo
+github-netease-InnoSQL | InnoSQL | https://github.com/NetEase/InnoSQL | author:netease description:A branch version of MySQL from NetEase
 github-netease-libpomelo | libpomelo | https://github.com/NetEase/libpomelo | author:netease description:[DEPRECATED] Please Go to https://github.com/NetEase/libpomelo2
 github-netease-libpomelo2 | libpomelo2 | https://github.com/NetEase/libpomelo2 | author:netease description:A New Client SDK for Pomelo
 github-netease-pomelo-cocos2d-js | pomelo-cocos2d-js | https://github.com/NetEase/pomelo-cocos2d-js | author:netease description:pomelo-cocos2d-js client
@@ -13,8 +16,8 @@ github-netease-pomelo-iosclient | pomelo-iosclient | https://github.com/NetEase/
 github-netease-pomelo-rpc | pomelo-rpc | https://github.com/NetEase/pomelo-rpc | author:netease description:rpc framework for pomelo
 github-netease-chatofpomelo-websocket | chatofpomelo-websocket | https://github.com/NetEase/chatofpomelo-websocket | author:netease description:chatofpomelo with pomelo 0.3.0
 github-netease-pomelo-cocos2dchat | pomelo-cocos2dchat | https://github.com/NetEase/pomelo-cocos2dchat | author:netease description:cocos2dchat based on cocos2d-x and libpomelo
-github-netease-pomelo-ioschat | pomelo-ioschat | https://github.com/NetEase/pomelo-ioschat | author:netease description:A chat demo for pomelo iOS client
 github-netease-treasures | treasures | https://github.com/NetEase/treasures | author:netease description:a tutorial demo of pomelo
+github-netease-pomelo-ioschat | pomelo-ioschat | https://github.com/NetEase/pomelo-ioschat | author:netease description:A chat demo for pomelo iOS client
 github-netease-airtest | airtest | https://github.com/NetEase/airtest | author:netease description:Deprecated, moved to https://github.com/NetEaseGame/AutomatorX
 github-netease-erlyssh | erlyssh | https://github.com/NetEase/erlyssh | author:netease description:A Parallel SSH Execution Tool
 github-netease-pomelo-cn | pomelo-cn | https://github.com/NetEase/pomelo-cn | author:netease description:The Chinese issues for pomelo.
@@ -23,33 +26,41 @@ github-netease-pomelo-androidchat | pomelo-androidchat | https://github.com/NetE
 github-netease-pomelo-sync | pomelo-sync | https://github.com/NetEase/pomelo-sync | author:netease description:the backend database sync module
 github-netease-pomelo-admin | pomelo-admin | https://github.com/NetEase/pomelo-admin | author:netease description:admin module for pomelo monitor system
 github-netease-pomelo-robot | pomelo-robot | https://github.com/NetEase/pomelo-robot | author:netease description:the client test framework for websocket
-github-netease-pomelo-bt | pomelo-bt | https://github.com/NetEase/pomelo-bt | author:netease description:behavior tree implementation for pomelo ai
+github-netease-lively-logic | lively-logic | https://github.com/NetEase/lively-logic | author:netease description:这是一个游戏参数调节的框架，使用racket语言。
 github-netease-pomelo-mqtt-connector | pomelo-mqtt-connector | https://github.com/NetEase/pomelo-mqtt-connector | author:netease description:pomelo mqtt connector based on mqtt over tcp and over ws protocol
-github-netease-pomelo-globalchannel-plugin | pomelo-globalchannel-plugin | https://github.com/NetEase/pomelo-globalchannel-plugin | author:netease description:globalChannel plugin for pomelo
+github-netease-pomelo-bt | pomelo-bt | https://github.com/NetEase/pomelo-bt | author:netease description:behavior tree implementation for pomelo ai
+github-netease-openlua | openlua | https://github.com/NetEase/openlua | author:netease description:An open compiler for Lua programming language
 github-netease-pomelo-admin-web | pomelo-admin-web | https://github.com/NetEase/pomelo-admin-web | author:netease description:monitor server demo for pomelo admin system
-github-netease-pomelo-status-plugin | pomelo-status-plugin | https://github.com/NetEase/pomelo-status-plugin | author:netease description:status plugin for pomelo
+github-netease-xmpp-over-websocket | xmpp-over-websocket | https://github.com/NetEase/xmpp-over-websocket | author:netease description:A solution for real time message push/pull scenarios based on XMPP and websocket.
+github-netease-pomelo-globalchannel-plugin | pomelo-globalchannel-plugin | https://github.com/NetEase/pomelo-globalchannel-plugin | author:netease description:globalChannel plugin for pomelo
 github-netease-pomelo-logger | pomelo-logger | https://github.com/NetEase/pomelo-logger | author:netease description:logger wrapper of log4js for pomelo logger system
+github-netease-pomelo-status-plugin | pomelo-status-plugin | https://github.com/NetEase/pomelo-status-plugin | author:netease description:status plugin for pomelo
 github-netease-pomelo-aoi | pomelo-aoi | https://github.com/NetEase/pomelo-aoi | author:netease description:The aoi module used in lordofpomelo
-github-netease-pomelo-cli | pomelo-cli | https://github.com/NetEase/pomelo-cli | author:netease description:pomelo-cli is a command-line library for pomelo maintenance
-github-netease-pomelo-unitychat | pomelo-unitychat | https://github.com/NetEase/pomelo-unitychat | author:netease description:Updated Jan 14, 2013
-github-netease-pomelo-zookeeper-plugin | pomelo-zookeeper-plugin | https://github.com/NetEase/pomelo-zookeeper-plugin | author:netease description:zookeeper service for pomelo
+github-netease-robotium | robotium | https://github.com/NetEase/robotium | author:netease description:Like Selenium, but for Android ---Netease Version
 github-netease-pomelo-protocol | pomelo-protocol | https://github.com/NetEase/pomelo-protocol | author:netease description:pomelo-protocol
-github-netease-pomelo-rpc-zeromq | pomelo-rpc-zeromq | https://github.com/NetEase/pomelo-rpc-zeromq | author:netease description:pomelo rpc using zeromq for communication
+github-netease-pomelo-cli | pomelo-cli | https://github.com/NetEase/pomelo-cli | author:netease description:pomelo-cli is a command-line library for pomelo maintenance
+github-netease-pomelo-unitychat | pomelo-unitychat | https://github.com/NetEase/pomelo-unitychat | author:netease 
+github-netease-pomelo-zookeeper-plugin | pomelo-zookeeper-plugin | https://github.com/NetEase/pomelo-zookeeper-plugin | author:netease description:zookeeper service for pomelo
+github-netease-ganger | ganger | https://github.com/NetEase/ganger | author:netease description:A simple automate tool.
 github-netease-pomelo-unitychat-socket | pomelo-unitychat-socket | https://github.com/NetEase/pomelo-unitychat-socket | author:netease description:pomelo-chat client based on socket, support unity 3D and other .net environment,
+github-netease-pomelo-rpc-zeromq | pomelo-rpc-zeromq | https://github.com/NetEase/pomelo-rpc-zeromq | author:netease description:pomelo rpc using zeromq for communication
 github-netease-pomelo-robot-demo | pomelo-robot-demo | https://github.com/NetEase/pomelo-robot-demo | author:netease description:pomelo-protocol
 github-netease-pomelo-daemon | pomelo-daemon | https://github.com/NetEase/pomelo-daemon | author:netease description:provide daemon process service for pomelo to deploy in distributed environments
-github-netease-c | c | https://github.com/NetEase/c | author:netease description:Updated Jun 29, 2016
-github-netease-example | example | https://github.com/NetEase/example | author:netease description:Updated Aug 24, 2012
+github-netease-c | c | https://github.com/NetEase/c | author:netease 
+github-netease-example | example | https://github.com/NetEase/example | author:netease 
 github-netease-pomelo-sync-plugin | pomelo-sync-plugin | https://github.com/NetEase/pomelo-sync-plugin | author:netease description:sync plugin for pomelo
 github-netease-pomelo-loader | pomelo-loader | https://github.com/NetEase/pomelo-loader | author:netease description:loader module for pomelo to load handler and remote with the convention over configuration rules
-github-netease-pomelo-protobuf-plugin | pomelo-protobuf-plugin | https://github.com/NetEase/pomelo-protobuf-plugin | author:netease description:plugin for pomelo protobuf
 github-netease-pomelo-scale-plugin | pomelo-scale-plugin | https://github.com/NetEase/pomelo-scale-plugin | author:netease description:scale up service for pomelo
+github-netease-pomelo-protobuf-plugin | pomelo-protobuf-plugin | https://github.com/NetEase/pomelo-protobuf-plugin | author:netease description:plugin for pomelo protobuf
 github-netease-pomelo-data-plugin | pomelo-data-plugin | https://github.com/NetEase/pomelo-data-plugin | author:netease description:load data pomelo plugin
+github-netease-pomelo-pathfinding | pomelo-pathfinding | https://github.com/NetEase/pomelo-pathfinding | author:netease description:Path finding module used in lordofpomelo.
 github-netease-pomelo-monitor | pomelo-monitor | https://github.com/NetEase/pomelo-monitor | author:netease description:Simple, comprehensive monitoring tool for operating-system and process in nodejs.
 github-netease-pomelo-masterha-plugin | pomelo-masterha-plugin | https://github.com/NetEase/pomelo-masterha-plugin | author:netease description:master ha plugin for pomelo
-github-netease-pomelo-dotnetchat-console | pomelo-dotnetchat-console | https://github.com/NetEase/pomelo-dotnetchat-console | author:netease description:pomelo-chat client based on socket and .net
-github-netease-pomelo-pathfinding | pomelo-pathfinding | https://github.com/NetEase/pomelo-pathfinding | author:netease description:Path finding module used in lordofpomelo.
+github-netease-seq-queue | seq-queue | https://github.com/NetEase/seq-queue | author:netease description:A simple tool to keep requests to be executed in order
 github-netease-pomelo-collection | pomelo-collection | https://github.com/NetEase/pomelo-collection | author:netease description:Collection used for pomelo
+github-netease-pomelo-dotnetchat-console | pomelo-dotnetchat-console | https://github.com/NetEase/pomelo-dotnetchat-console | author:netease description:pomelo-chat client based on socket and .net
+github-netease-bearcat | bearcat | https://github.com/NetEase/bearcat | author:netease description:powered by enhanced javaScript objects
 github-netease-pomelo-data-plugin-demo | pomelo-data-plugin-demo | https://github.com/NetEase/pomelo-data-plugin-demo | author:netease description:pomelo-data-plugin demo
 github-netease-airtest-gui | airtest-gui | https://github.com/NetEase/airtest-gui | author:netease description:GUI write by qt for airtest
+github-netease-gitbucket-plugin | gitbucket-plugin | https://github.com/NetEase/gitbucket-plugin | author:netease description:GitBucket Plugin for Jenkins
 github-netease-rubocop | rubocop | https://github.com/NetEase/rubocop | author:netease description:Enhanced rubocop, which can also check whether method comments are added.

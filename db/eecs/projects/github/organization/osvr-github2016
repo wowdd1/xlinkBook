@@ -9,32 +9,45 @@ github-OSVR-OSVR-Vive | OSVR-Vive | https://github.com/OSVR/OSVR-Vive | author:O
 github-OSVR-OSVR-Leap-Motion | OSVR-Leap-Motion | https://github.com/OSVR/OSVR-Leap-Motion | author:OSVR description:OSVR Leap Motion plugin
 github-OSVR-OSVR-Android-Build | OSVR-Android-Build | https://github.com/OSVR/OSVR-Android-Build | author:OSVR description:Repo with submodules for building OSVR for Android
 github-OSVR-OSVR-Unity-Rendering | OSVR-Unity-Rendering | https://github.com/OSVR/OSVR-Unity-Rendering | author:OSVR description:Rendering plugin for Unity
-github-OSVR-Unity-VR-Samples | Unity-VR-Samples | https://github.com/OSVR/Unity-VR-Samples | author:OSVR description:Updated Jul 26, 2016
 github-OSVR-distortionizer | distortionizer | https://github.com/OSVR/distortionizer | author:OSVR description:Tool for determining distortion parameters of arbitrary HMDs, and a corresponding set of shaders to correct that distortion.
+github-OSVR-Unity-VR-Samples | Unity-VR-Samples | https://github.com/OSVR/Unity-VR-Samples | author:OSVR 
 github-OSVR-OSVR-Tracker-Viewer | OSVR-Tracker-Viewer | https://github.com/OSVR/OSVR-Tracker-Viewer | author:OSVR description:Utility for viewing OSVR tracking data, using OpenSceneGraph.
-github-OSVR-Homebrew-OSVR | Homebrew-OSVR | https://github.com/OSVR/Homebrew-OSVR | author:OSVR description:Mac OS X Homebrew tap for OSVR
-github-OSVR-OSVR-Unity-Palace-Demo | OSVR-Unity-Palace-Demo | https://github.com/OSVR/OSVR-Unity-Palace-Demo | author:OSVR description:A simple example OSVR Unity 5.3 project.
 github-OSVR-OSVR-HDK-Windows-Drivers | OSVR-HDK-Windows-Drivers | https://github.com/OSVR/OSVR-HDK-Windows-Drivers | author:OSVR description:Drivers and related code/data for improving the hardware experience for the HDK on Windows
+github-OSVR-OSVR-Unity-Palace-Demo | OSVR-Unity-Palace-Demo | https://github.com/OSVR/OSVR-Unity-Palace-Demo | author:OSVR description:A simple example OSVR Unity 5.3 project.
+github-OSVR-Homebrew-OSVR | Homebrew-OSVR | https://github.com/OSVR/Homebrew-OSVR | author:OSVR description:Mac OS X Homebrew tap for OSVR
 github-OSVR-OSVR-General | OSVR-General | https://github.com/OSVR/OSVR-General | author:OSVR description:Catch-all project for issues and information not specific to a single repo
 github-OSVR-Managed-OSVR | Managed-OSVR | https://github.com/OSVR/Managed-OSVR | author:OSVR description:OSVR .NET/CLR bindings
 github-OSVR-OSVR-Specs-and-Proposals | OSVR-Specs-and-Proposals | https://github.com/OSVR/OSVR-Specs-and-Proposals | author:OSVR description:Plugin schemas in development
-github-OSVR-OSVR-Android-Plugins | OSVR-Android-Plugins | https://github.com/OSVR/OSVR-Android-Plugins | author:OSVR description:Source for Android-specific plugins
-github-OSVR-OSVR-SMI | OSVR-SMI | https://github.com/OSVR/OSVR-SMI | author:OSVR description:SMI eye-tracker plugin
 github-OSVR-OSVR-Android-Samples | OSVR-Android-Samples | https://github.com/OSVR/OSVR-Android-Samples | author:OSVR description:Samples of using OSVR on Android.
+github-OSVR-OSVR-SMI | OSVR-SMI | https://github.com/OSVR/OSVR-SMI | author:OSVR description:SMI eye-tracker plugin
 github-OSVR-OSVR-Android-SDK | OSVR-Android-SDK | https://github.com/OSVR/OSVR-Android-SDK | author:OSVR description:Android SDK for OSVR - link goes to latest build download
-github-OSVR-OSVR-AndroidServerLauncher | OSVR-AndroidServerLauncher | https://github.com/OSVR/OSVR-AndroidServerLauncher | author:OSVR description:Updated Oct 8, 2016
-github-OSVR-libfunctionality | libfunctionality | https://github.com/OSVR/libfunctionality | author:OSVR description:A minimal library for dynamically-loaded or statically-linked functionality modules.
-github-OSVR-OSVR-Nod | OSVR-Nod | https://github.com/OSVR/OSVR-Nod | author:OSVR description:OSVR plugin for Nod devices including Ring and Backspin
+github-OSVR-OSVR-AndroidServerLauncher | OSVR-AndroidServerLauncher | https://github.com/OSVR/OSVR-AndroidServerLauncher | author:OSVR 
+github-OSVR-OSVR-Android-Plugins | OSVR-Android-Plugins | https://github.com/OSVR/OSVR-Android-Plugins | author:OSVR description:Source for Android-specific plugins
+github-OSVR-android-cmake | android-cmake | https://github.com/OSVR/android-cmake | author:OSVR description:CMake toolchain file and other scripts for the Android NDK - fork for use as submodule
 github-OSVR-OSVR-Config | OSVR-Config | https://github.com/OSVR/OSVR-Config | author:OSVR description:Configuration utility for the OSVR Server.
-github-OSVR-OSVR-ARToolKit | OSVR-ARToolKit | https://github.com/OSVR/OSVR-ARToolKit | author:OSVR description:ARToolKit Analysis Plugin for OSVR
 github-OSVR-OSVR-win-installer | OSVR-win-installer | https://github.com/OSVR/OSVR-win-installer | author:OSVR description:Basic windows installer
-github-OSVR-OSVR-JSON-Schemas | OSVR-JSON-Schemas | https://github.com/OSVR/OSVR-JSON-Schemas | author:OSVR description:JSON Schemas related to OSVR interfaces.
-github-OSVR-OSVR-JSON-Editor | OSVR-JSON-Editor | https://github.com/OSVR/OSVR-JSON-Editor | author:OSVR description:Browser-based tool for editing OSVR JSON files, based on JSON Schema.
 github-OSVR-OSVR-CPI | OSVR-CPI | https://github.com/OSVR/OSVR-CPI | author:OSVR description:OSVR Control Panel Interface
-github-OSVR-UIforETWbins | UIforETWbins | https://github.com/OSVR/UIforETWbins | author:OSVR description:Repo of binaries from the google/UIforETW project - link goes to source
+github-OSVR-libfunctionality | libfunctionality | https://github.com/OSVR/libfunctionality | author:OSVR description:A minimal library for dynamically-loaded or statically-linked functionality modules.
+github-OSVR-OSVR-ARToolKit | OSVR-ARToolKit | https://github.com/OSVR/OSVR-ARToolKit | author:OSVR description:ARToolKit Analysis Plugin for OSVR
+github-OSVR-libSDL2pp | libSDL2pp | https://github.com/OSVR/libSDL2pp | author:OSVR description:C++11 bindings/wrapper for SDL2
+github-OSVR-OSVR-Nod | OSVR-Nod | https://github.com/OSVR/OSVR-Nod | author:OSVR description:OSVR plugin for Nod devices including Ring and Backspin
+github-OSVR-OSVR-JSON-Schemas | OSVR-JSON-Schemas | https://github.com/OSVR/OSVR-JSON-Schemas | author:OSVR description:JSON Schemas related to OSVR interfaces.
 github-OSVR-OSVR-Display | OSVR-Display | https://github.com/OSVR/OSVR-Display | author:OSVR description:Cross-platform detection and configuration of displays
+github-OSVR-OSVR-JSON-Editor | OSVR-JSON-Editor | https://github.com/OSVR/OSVR-JSON-Editor | author:OSVR description:Browser-based tool for editing OSVR JSON files, based on JSON Schema.
+github-OSVR-UIforETWbins | UIforETWbins | https://github.com/OSVR/UIforETWbins | author:OSVR description:Repo of binaries from the google/UIforETW project - link goes to source
+github-OSVR-glm | glm | https://github.com/OSVR/glm | author:OSVR description:OpenGL Mathematics (GLM) - fork for use as submodule
+github-OSVR-steamworks-vr-api | steamworks-vr-api | https://github.com/OSVR/steamworks-vr-api | author:OSVR description:Source for the Steamworks VR API
 github-OSVR-OSVR-Boxstarter | OSVR-Boxstarter | https://github.com/OSVR/OSVR-Boxstarter | author:OSVR description:Boxstarter self-installer scripts to prepare user, developer, or CI environments using Chocolatey.
+github-OSVR-eigen-kalman | eigen-kalman | https://github.com/OSVR/eigen-kalman | author:OSVR description:Kalman-style filter library building on the Eigen matrix math library
+github-OSVR-docopt.cpp | docopt.cpp | https://github.com/OSVR/docopt.cpp | author:OSVR description:C++11 port of docopt
 github-OSVR-OSVR-TrackerUtilities | OSVR-TrackerUtilities | https://github.com/OSVR/OSVR-TrackerUtilities | author:OSVR description:Tools for recording and viewing tracker data
-github-OSVR-OSVR-Vuzix | OSVR-Vuzix | https://github.com/OSVR/OSVR-Vuzix | author:OSVR description:OSVR plugin to support Vuzix HMDs
 github-OSVR-OSVR-FSM9 | OSVR-FSM9 | https://github.com/OSVR/OSVR-FSM9 | author:OSVR description:OSVR plugin for Hillcrest Labs' FSM-9 tracker.
+github-OSVR-OSVR-Vuzix | OSVR-Vuzix | https://github.com/OSVR/OSVR-Vuzix | author:OSVR description:OSVR plugin to support Vuzix HMDs
+github-OSVR-UIforETW | UIforETW | https://github.com/OSVR/UIforETW | author:OSVR description:Fork for fixes and OSVR-specific changes
+github-OSVR-spdlog | spdlog | https://github.com/OSVR/spdlog | author:OSVR description:Super fast C++ logging library.
 github-OSVR-OSVR-Compatibility-Aggregator | OSVR-Compatibility-Aggregator | https://github.com/OSVR/OSVR-Compatibility-Aggregator | author:OSVR description:Ruby gem for retrieving and using JSON metadata related to OSVR.
+github-OSVR-jenkins-osvr-style | jenkins-osvr-style | https://github.com/OSVR/jenkins-osvr-style | author:OSVR description:Stylesheet for making Jenkins look prettier
+github-OSVR-tinympl | tinympl | https://github.com/OSVR/tinympl | author:OSVR description:C++11 template meta-programming library.
+github-OSVR-discount | discount | https://github.com/OSVR/discount | author:OSVR description:Windows binary build of Discount accompanied by source and scripts - see parent repo for upstream.
+github-OSVR-boost-process | boost-process | https://github.com/OSVR/boost-process | author:OSVR description:Boost.Process is a library to manage system processes
+github-OSVR-asio | asio | https://github.com/OSVR/asio | author:OSVR description:Asio C++ Library

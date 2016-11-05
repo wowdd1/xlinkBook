@@ -1,5 +1,17 @@
 github-zocdoc-ZocBuild.Database | ZocBuild.Database | https://github.com/Zocdoc/ZocBuild.Database | author:zocdoc description:A build and deployment library for objects in SQL Server databases.
 github-zocdoc-ZocMon | ZocMon | https://github.com/Zocdoc/ZocMon | author:zocdoc description:Simple production monitoring for .net web applications
+github-zocdoc-cassette | cassette | https://github.com/Zocdoc/cassette | author:zocdoc description:Manages .NET web application assets (scripts, css and templates)
+github-zocdoc-Nustache | Nustache | https://github.com/Zocdoc/Nustache | author:zocdoc description:Logic-less templates for .NET
+github-zocdoc-jquery.payment | jquery.payment | https://github.com/Zocdoc/jquery.payment | author:zocdoc description:A general purpose library for building credit card forms, validating inputs and formatting numbers.
+github-zocdoc-mustache-sharp | mustache-sharp | https://github.com/Zocdoc/mustache-sharp | author:zocdoc description:An extension of the mustache text template engine for .NET.
+github-zocdoc-schemazen | schemazen | https://github.com/Zocdoc/schemazen | author:zocdoc description:Script and create SQL Server objects quickly
+github-zocdoc-Bundler | Bundler | https://github.com/Zocdoc/Bundler | author:zocdoc description:Compile & Minify Less/Sass/Stylus/Css/JS/CoffeeScript/LiveScript files
 github-zocdoc-ZocUtil.Database | ZocUtil.Database | https://github.com/Zocdoc/ZocUtil.Database | author:zocdoc description:Class library of database command helpers.
+github-zocdoc-ansible-modules-core | ansible-modules-core | https://github.com/Zocdoc/ansible-modules-core | author:zocdoc description:Ansible modules - these modules ship with ansible
+github-zocdoc-scala-style-guide | scala-style-guide | https://github.com/Zocdoc/scala-style-guide | author:zocdoc description:Databricks Scala Coding Style Guide
+github-zocdoc-ServiceStack | ServiceStack | https://github.com/Zocdoc/ServiceStack | author:zocdoc description:Thoughtfully architected, obscenely fast, thoroughly enjoyable web services for all
 github-zocdoc-ZocMonGraphs | ZocMonGraphs | https://github.com/Zocdoc/ZocMonGraphs | author:zocdoc description:MVC application to display data created with ZocMon library.
-github-zocdoc-Tutorial | Tutorial | https://github.com/Zocdoc/Tutorial | author:zocdoc description:Updated Aug 25, 2015
+github-zocdoc-Tutorial | Tutorial | https://github.com/Zocdoc/Tutorial | author:zocdoc 
+github-zocdoc-javascript | javascript | https://github.com/Zocdoc/javascript | author:zocdoc description:JavaScript Style Guide
+github-zocdoc-FuelSDK-CSharp | FuelSDK-CSharp | https://github.com/Zocdoc/FuelSDK-CSharp | author:zocdoc description:FuelSDK-CSharp
+github-zocdoc-googleads-adwords-dotnet-lib | googleads-adwords-dotnet-lib | https://github.com/Zocdoc/googleads-adwords-dotnet-lib | author:zocdoc description:The AdWords and DoubleClick Ad Exchange Buyer API DotNet Client Library

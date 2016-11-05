@@ -8,60 +8,140 @@ github-newrelic-check_docker | check_docker | https://github.com/newrelic/check_
 github-newrelic-sidecar | sidecar | https://github.com/newrelic/sidecar | author:newrelic description:Gossip-based service discovery. Docker native, but supports static discovery, too.
 github-newrelic-go_nagios | go_nagios | https://github.com/newrelic/go_nagios | author:newrelic description:Go lang package for writing Nagios checks
 github-newrelic-dPerf | dPerf | https://github.com/newrelic/dPerf | author:newrelic description:Distributed Mobile CPU Profiling
-github-newrelic-newrelic-ruby-kata | newrelic-ruby-kata | https://github.com/newrelic/newrelic-ruby-kata | author:newrelic description:Updated Feb 4, 2016
-github-newrelic-futurestack14_badge | futurestack14_badge | https://github.com/newrelic/futurestack14_badge | author:newrelic description:Source code for the badges from New Relic's FutureStack 2014 conference
+github-newrelic-newrelic-ruby-kata | newrelic-ruby-kata | https://github.com/newrelic/newrelic-ruby-kata | author:newrelic 
 github-newrelic-dkenv | dkenv | https://github.com/newrelic/dkenv | author:newrelic description:A docker version switcher
+github-newrelic-futurestack14_badge | futurestack14_badge | https://github.com/newrelic/futurestack14_badge | author:newrelic description:Source code for the badges from New Relic's FutureStack 2014 conference
 github-newrelic-extends_newrelic_rpm | extends_newrelic_rpm | https://github.com/newrelic/extends_newrelic_rpm | author:newrelic description:Gems that extend New Relic's Ruby agent (newrelic_rpm), linked via git submodules
 github-newrelic-papers | papers | https://github.com/newrelic/papers | author:newrelic description:Validates licenses of your Rails dependencies against a whitelist
-github-newrelic-newrelic-python-kata | newrelic-python-kata | https://github.com/newrelic/newrelic-python-kata | author:newrelic description:Newrelic Python Kata
 github-newrelic-marlowe | marlowe | https://github.com/newrelic/marlowe | author:newrelic description:Experimental project for investigating interesting visualizations of APM data
+github-newrelic-newrelic-python-kata | newrelic-python-kata | https://github.com/newrelic/newrelic-python-kata | author:newrelic description:Newrelic Python Kata
 github-newrelic-tendersync | tendersync | https://github.com/newrelic/tendersync | author:newrelic description:Utility for syncing documents from an ENTP Tender repository to a local filesystem, as well as creating index files
 github-newrelic-agent_sdk_samples | agent_sdk_samples | https://github.com/newrelic/agent_sdk_samples | author:newrelic description:Sample wrappers and code for the New Relic Agent SDK
 github-newrelic-newrelic-cordova-ios | newrelic-cordova-ios | https://github.com/newrelic/newrelic-cordova-ios | author:newrelic description:A PhoneGap / Cordova plugin for New Relic's iOS SDK
 github-newrelic-ruby-metaprogramming-challenge | ruby-metaprogramming-challenge | https://github.com/newrelic/ruby-metaprogramming-challenge | author:newrelic description:A fun metaprogramming challenge created at New Relic
 github-newrelic-ia | ia | https://github.com/newrelic/ia | author:newrelic description:Infrastructure Agent
+github-newrelic-sigar | sigar | https://github.com/newrelic/sigar | author:newrelic description:System Information Gatherer And Reporter
 github-newrelic-empanada | empanada | https://github.com/newrelic/empanada | author:newrelic description:Software, install and config docs to support using a Raspberry Pi as an information radiator
-github-newrelic-rpm_test_app | rpm_test_app | https://github.com/newrelic/rpm_test_app | author:newrelic description:A generic rails application used for testing the New Relic RPM plugin/gem
 github-newrelic-ldap-selfservice | ldap-selfservice | https://github.com/newrelic/ldap-selfservice | author:newrelic description:LDAP Toolbox Project - Self-Service Password (0.8 fork) - http://ltb-project.org/wiki/documentation/self-service-password
+github-newrelic-rpm_test_app | rpm_test_app | https://github.com/newrelic/rpm_test_app | author:newrelic description:A generic rails application used for testing the New Relic RPM plugin/gem
 github-newrelic-puppet-dell | puppet-dell | https://github.com/newrelic/puppet-dell | author:newrelic description:Puppet management of drac cards using racadm
 github-newrelic-supervisor-remote-logging | supervisor-remote-logging | https://github.com/newrelic/supervisor-remote-logging | author:newrelic description:Use supervisord to relay your application's stdout/stderr to syslog.
-github-newrelic-futurestack_badge | futurestack_badge | https://github.com/newrelic/futurestack_badge | author:newrelic description:Updated Jun 16, 2014
+github-newrelic-futurestack_badge | futurestack_badge | https://github.com/newrelic/futurestack_badge | author:newrelic 
 github-newrelic-nuget-azure-web-sites | nuget-azure-web-sites | https://github.com/newrelic/nuget-azure-web-sites | author:newrelic description:The nuget package for x86 apps (of type web site) running on Windows Azure
+github-newrelic-brewery | brewery | https://github.com/newrelic/brewery | author:newrelic description:New Developer Provisioning scripts
 github-newrelic-helios | helios | https://github.com/newrelic/helios | author:newrelic description:Controlling lights at New Relic
 github-newrelic-puppet-nrsysmond | puppet-nrsysmond | https://github.com/newrelic/puppet-nrsysmond | author:newrelic description:Puppet module to install the New Relic Server Monitor
-github-newrelic-brewery | brewery | https://github.com/newrelic/brewery | author:newrelic description:New Developer Provisioning scripts
-github-newrelic-yakaa | yakaa | https://github.com/newrelic/yakaa | author:newrelic description:Yet Another Keep Alive Agent for Node
 github-newrelic-node-mitm-server | node-mitm-server | https://github.com/newrelic/node-mitm-server | author:newrelic description:A node library for writing man-in-the-middle proxy servers
+github-newrelic-shipyard | shipyard | https://github.com/newrelic/shipyard | author:newrelic description:Docker web interface
+github-newrelic-yakaa | yakaa | https://github.com/newrelic/yakaa | author:newrelic description:Yet Another Keep Alive Agent for Node
+github-newrelic-webhook-processor-example | webhook-processor-example | https://github.com/newrelic/webhook-processor-example | author:newrelic 
 github-newrelic-rails3_upgrade | rails3_upgrade | https://github.com/newrelic/rails3_upgrade | author:newrelic description:Helping you upgrade Rails on master
-github-newrelic-webhook-processor-example | webhook-processor-example | https://github.com/newrelic/webhook-processor-example | author:newrelic description:Updated Aug 19, 2014
 github-newrelic-nuget-azure-cloud-services | nuget-azure-cloud-services | https://github.com/newrelic/nuget-azure-cloud-services | author:newrelic description:The nuget package for x64 apps (VMs or Cloud Services - Web Roles  Worker Roles) running on Windows Azure
+github-newrelic-insights-arduino-client | insights-arduino-client | https://github.com/newrelic/insights-arduino-client | author:newrelic 
 github-newrelic-newrelic-dot-net-kata | newrelic-dot-net-kata | https://github.com/newrelic/newrelic-dot-net-kata | author:newrelic description:Using New Relic and Azure Cloud Services (emulated or not) see how many things you can find and fix to make this app perform fast
+github-newrelic-ARTBench | ARTBench | https://github.com/newrelic/ARTBench | author:newrelic 
 github-newrelic-insights-about-pagerduty | insights-about-pagerduty | https://github.com/newrelic/insights-about-pagerduty | author:newrelic description:Slurp resolved PagerDuty incident data into New Relic Insights
-github-newrelic-ARTBench | ARTBench | https://github.com/newrelic/ARTBench | author:newrelic description:Updated Jul 7, 2014
 github-newrelic-nuget-agent-api | nuget-agent-api | https://github.com/newrelic/nuget-agent-api | author:newrelic description:The New Relic .NET Agent API supports custom error and metric reporting, and custom transaction parameters. If the agent is not installed or is disabled, method invocations of this API will have no effect. You can find more information about the NewRelic.Agent.Api at http://newrelic.com/docs/dotnet/AgentApi. This is for the ANY CPU build of the API
-github-newrelic-zero-to-docker-blog-post | zero-to-docker-blog-post | https://github.com/newrelic/zero-to-docker-blog-post | author:newrelic description:examples for the Zero to Docker blog post
-github-newrelic-insights-arduino-client | insights-arduino-client | https://github.com/newrelic/insights-arduino-client | author:newrelic description:Updated Dec 13, 2015
 github-newrelic-metriks-reporter-new_relic | metriks-reporter-new_relic | https://github.com/newrelic/metriks-reporter-new_relic | author:newrelic description:Metriks::Reporter to send collected data to a New Relic account
+github-newrelic-zero-to-docker-blog-post | zero-to-docker-blog-post | https://github.com/newrelic/zero-to-docker-blog-post | author:newrelic description:examples for the Zero to Docker blog post
+github-newrelic-gem-licenses | gem-licenses | https://github.com/newrelic/gem-licenses | author:newrelic description:Collect gem licenses.
+github-newrelic-puppet-heka | puppet-heka | https://github.com/newrelic/puppet-heka | author:newrelic description:A simple Puppet module for configuring Heka, an event stream processor written in Go
+github-newrelic-puppet-newrelic | puppet-newrelic | https://github.com/newrelic/puppet-newrelic | author:newrelic description:puppet module for installing the New Relic server monitor
 github-newrelic-dockerized-mysql-plugin | dockerized-mysql-plugin | https://github.com/newrelic/dockerized-mysql-plugin | author:newrelic description:Docker image distribution of the New Relic MySQL Plugin
 github-newrelic-vauxs-swift | vauxs-swift | https://github.com/newrelic/vauxs-swift | author:newrelic description:Sample code showing how to instrument a Swift app
-github-newrelic-puppet-heka | puppet-heka | https://github.com/newrelic/puppet-heka | author:newrelic description:A simple Puppet module for configuring Heka, an event stream processor written in Go
-github-newrelic-black-friday-2015 | black-friday-2015 | https://github.com/newrelic/black-friday-2015 | author:newrelic description:Black Friday 2015
-github-newrelic-newrelic-azure-webjobs | newrelic-azure-webjobs | https://github.com/newrelic/newrelic-azure-webjobs | author:newrelic description:This is a demo project that illustrates how to use the New Relic .NET agent to instrument Azure Web Jobs
-github-newrelic-newrelic-cf | newrelic-cf | https://github.com/newrelic/newrelic-cf | author:newrelic description:Updated Dec 9, 2015
+github-newrelic-jrails | jrails | https://github.com/newrelic/jrails | author:newrelic description:jRails is a drop-in jQuery replacement for Prototype/script.aculo.us on Rails. Using jRails, you can get all of the same default Rails helpers for javascript functionality using the lighter jQuery library.
+github-newrelic-rails-dev-boost | rails-dev-boost | https://github.com/newrelic/rails-dev-boost | author:newrelic description:Speed up slow Rails development mode
+github-newrelic-insights-electric-imp | insights-electric-imp | https://github.com/newrelic/insights-electric-imp | author:newrelic 
 github-newrelic-heroku-newrelic-java-install | heroku-newrelic-java-install | https://github.com/newrelic/heroku-newrelic-java-install | author:newrelic description:heroku plugin to ease install of newrelic javaagent
-github-newrelic-insights-electric-imp | insights-electric-imp | https://github.com/newrelic/insights-electric-imp | author:newrelic description:Updated Jan 21, 2015
-github-newrelic-puppet-redis | puppet-redis | https://github.com/newrelic/puppet-redis | author:newrelic description:Puppet module for configuring Redis
-github-newrelic-newrelic-pcf-agent-tile | newrelic-pcf-agent-tile | https://github.com/newrelic/newrelic-pcf-agent-tile | author:newrelic description:Updated Sep 29, 2016
-github-newrelic-java-agent-api | java-agent-api | https://github.com/newrelic/java-agent-api | author:newrelic description:Updated May 24, 2016
-github-newrelic-guava-libraries | guava-libraries | https://github.com/newrelic/guava-libraries | author:newrelic description:New Relic's guava fork
-github-newrelic-customRangeSlider | customRangeSlider | https://github.com/newrelic/customRangeSlider | author:newrelic description:Public repository for Javascript range slider.
-github-newrelic-TestOutboundConnections | TestOutboundConnections | https://github.com/newrelic/TestOutboundConnections | author:newrelic description:A simple Java application to test connectivity from your application server to the outside world on http and https.
-github-newrelic-php_framework_inflator | php_framework_inflator | https://github.com/newrelic/php_framework_inflator | author:newrelic description:This repo contains bash scripts used to standup and "inflate" a handful of PHP frameworks for testing
+github-newrelic-black-friday-2015 | black-friday-2015 | https://github.com/newrelic/black-friday-2015 | author:newrelic description:Black Friday 2015
+github-newrelic-newrelic-cf | newrelic-cf | https://github.com/newrelic/newrelic-cf | author:newrelic 
+github-newrelic-newrelic-azure-webjobs | newrelic-azure-webjobs | https://github.com/newrelic/newrelic-azure-webjobs | author:newrelic description:This is a demo project that illustrates how to use the New Relic .NET agent to instrument Azure Web Jobs
+github-newrelic-puppet-rbenv | puppet-rbenv | https://github.com/newrelic/puppet-rbenv | author:newrelic description:Puppet manifest for rbenv installation
+github-newrelic-rancid-git | rancid-git | https://github.com/newrelic/rancid-git | author:newrelic description:Really Awesome New Cisco confIg Differ with git extensions and support for colorized emails!
+github-newrelic-puppet-ossec | puppet-ossec | https://github.com/newrelic/puppet-ossec | author:newrelic description:ossec module for puppet
+github-newrelic-liquid | liquid | https://github.com/newrelic/liquid | author:newrelic description:Liquid markup language. Safe, customer facing template language for flexible web apps.
+github-newrelic-vagrant | vagrant | https://github.com/newrelic/vagrant | author:newrelic description:Vagrant is a tool for building and distributing virtualized development environments.
 github-newrelic-puppet-nagios | puppet-nagios | https://github.com/newrelic/puppet-nagios | author:newrelic description:Puppet module for configuring a Nagios Server
+github-newrelic-php_framework_inflator | php_framework_inflator | https://github.com/newrelic/php_framework_inflator | author:newrelic description:This repo contains bash scripts used to standup and "inflate" a handful of PHP frameworks for testing
+github-newrelic-titanium_mobile | titanium_mobile | https://github.com/newrelic/titanium_mobile | author:newrelic description:Appcelerator Titanium Mobile
+github-newrelic-TestOutboundConnections | TestOutboundConnections | https://github.com/newrelic/TestOutboundConnections | author:newrelic description:A simple Java application to test connectivity from your application server to the outside world on http and https.
+github-newrelic-ruby-saml | ruby-saml | https://github.com/newrelic/ruby-saml | author:newrelic description:SAML SSO for Ruby
+github-newrelic-sunspot | sunspot | https://github.com/newrelic/sunspot | author:newrelic description:Solr-powered search for Ruby objects
+github-newrelic-ci_reporter | ci_reporter | https://github.com/newrelic/ci_reporter | author:newrelic description:CI::Reporter is an add-on to Test::Unit and RSpec that allows you to generate XML reports of your test and/or spec runs.
+github-newrelic-rails | rails | https://github.com/newrelic/rails | author:newrelic description:Ruby on Rails
+github-newrelic-tinder | tinder | https://github.com/newrelic/tinder | author:newrelic description:Tinder is a Ruby API for interfacing with Campfire, the 37Signals chat application.
+github-newrelic-requirejs-rails | requirejs-rails | https://github.com/newrelic/requirejs-rails | author:newrelic description:RequireJS support for your Rails 3 application
+github-newrelic-puppet-redis | puppet-redis | https://github.com/newrelic/puppet-redis | author:newrelic description:Puppet module for configuring Redis
+github-newrelic-guava-libraries | guava-libraries | https://github.com/newrelic/guava-libraries | author:newrelic description:New Relic's guava fork
+github-newrelic-newrelic-pcf-agent-tile | newrelic-pcf-agent-tile | https://github.com/newrelic/newrelic-pcf-agent-tile | author:newrelic 
+github-newrelic-java-agent-api | java-agent-api | https://github.com/newrelic/java-agent-api | author:newrelic 
+github-newrelic-mysql_role_swap | mysql_role_swap | https://github.com/newrelic/mysql_role_swap | author:newrelic description:(Nearly) Zero interruption mysql maintenance script.
+github-newrelic-puppet-cobbler | puppet-cobbler | https://github.com/newrelic/puppet-cobbler | author:newrelic description:Fork of https://bitbucket.org/jsosic/puppet-cobbler
 github-newrelic-grabby | grabby | https://github.com/newrelic/grabby | author:newrelic description:Prototype: automaticatic custom parameter instrumentation for Insights (Rails only)
+github-newrelic-puppetlabs-nginx | puppetlabs-nginx | https://github.com/newrelic/puppetlabs-nginx | author:newrelic description:Puppet Module to manage NGINX on various UNIXes
+github-newrelic-customRangeSlider | customRangeSlider | https://github.com/newrelic/customRangeSlider | author:newrelic description:Public repository for Javascript range slider.
+github-newrelic-vagrant-aws | vagrant-aws | https://github.com/newrelic/vagrant-aws | author:newrelic description:Use Vagrant to manage your EC2 and VPC instances.
+github-newrelic-hibernate-orm | hibernate-orm | https://github.com/newrelic/hibernate-orm | author:newrelic description:Hibernate's core Object/Relational Mapping functionality
+github-newrelic-ace | ace | https://github.com/newrelic/ace | author:newrelic description:Ace (Ajax.org Cloud9 Editor)
+github-newrelic-hurl | hurl | https://github.com/newrelic/hurl | author:newrelic description:Hurl makes HTTP requests.
+github-newrelic-opentoken-newrelic-rails23 | opentoken-newrelic-rails23 | https://github.com/newrelic/opentoken-newrelic-rails23 | author:newrelic description:parse encrypted tokens in the opentoken format
 github-newrelic-nuget-azure-web-sites-x64 | nuget-azure-web-sites-x64 | https://github.com/newrelic/nuget-azure-web-sites-x64 | author:newrelic description:The nuget package for x64 apps (of type "web site") running on Windows Azure
-github-newrelic-newrelic-azure-environment-configuration | newrelic-azure-environment-configuration | https://github.com/newrelic/newrelic-azure-environment-configuration | author:newrelic description:This is a demo project that illustrates how to use the .NET agent API to set things dynamically, like app name, using the Azure management APIs
-github-newrelic-nuget | nuget | https://github.com/newrelic/nuget | author:newrelic description:Updated Aug 9, 2013
-github-newrelic-km-send | km-send | https://github.com/newrelic/km-send | author:newrelic description:A utility to process Kiss Metrics log files for transmission to the KM server
-github-newrelic-stealth_stars | stealth_stars | https://github.com/newrelic/stealth_stars | author:newrelic description:Demo application for RailsConf 2013
+github-newrelic-puppet-rsyslog | puppet-rsyslog | https://github.com/newrelic/puppet-rsyslog | author:newrelic description:Manage rsyslog through puppet
+github-newrelic-delayed_job | delayed_job | https://github.com/newrelic/delayed_job | author:newrelic description:Database based asynchronously priority queue system -- Extracted from Shopify
+github-newrelic-puppet-logstash-reporter | puppet-logstash-reporter | https://github.com/newrelic/puppet-logstash-reporter | author:newrelic description:Reports logs and metrics from Puppet to Logstash
+github-newrelic-puppet-zookeeper | puppet-zookeeper | https://github.com/newrelic/puppet-zookeeper | author:newrelic description:Github mirror of "operations/puppet/zookeeper" - our actual code is hosted with Gerrit (please see https://www.mediawiki.org/wiki/Developer_access for contributing https://gerrit.wikimedia.org/r/#/admin/projects/operations/puppet/zookeeper
 github-newrelic-github-insights-event-pump | github-insights-event-pump | https://github.com/newrelic/github-insights-event-pump | author:newrelic description:Processor to read github event feed and import into insights
+github-newrelic-thrift | thrift | https://github.com/newrelic/thrift | author:newrelic description:Mirror of Apache Thrift
+github-newrelic-prototype_legacy_helper | prototype_legacy_helper | https://github.com/newrelic/prototype_legacy_helper | author:newrelic description:WARNING: this repo is not maintained anymore, if you want to maintain it, please send an mail to rails-core
+github-newrelic-puppet-sphinx | puppet-sphinx | https://github.com/newrelic/puppet-sphinx | author:newrelic description:Puppet module for installing and managing Sphinx.
+github-newrelic-active_scaffold | active_scaffold | https://github.com/newrelic/active_scaffold | author:newrelic description:Save time and headaches, and create a more easily maintainable set of pages, with ActiveScaffold. ActiveScaffold handles all your CRUD (create, read, update, delete) user interface needs, leaving you more time to focus on more challenging (and interesting!) problems.
+github-newrelic-render_component | render_component | https://github.com/newrelic/render_component | author:newrelic description:Rails 3 Version of render_component
+github-newrelic-mocha | mocha | https://github.com/newrelic/mocha | author:newrelic description:Mocha is a mocking and stubbing library for Ruby
+github-newrelic-typeahead.js | typeahead.js | https://github.com/newrelic/typeahead.js | author:newrelic description:typeahead.js is a fast and fully-featured autocomplete library
+github-newrelic-Specs | Specs | https://github.com/newrelic/Specs | author:newrelic description:A repository of CocoaPods (cocoapods.org) specifications.
+github-newrelic-puppetlabs-vcsrepo | puppetlabs-vcsrepo | https://github.com/newrelic/puppetlabs-vcsrepo | author:newrelic description:Support for source control repositories
+github-newrelic-puppet-snmp | puppet-snmp | https://github.com/newrelic/puppet-snmp | author:newrelic description:Puppet module to manage SNMP.
+github-newrelic-ruby-yui-compressor | ruby-yui-compressor | https://github.com/newrelic/ruby-yui-compressor | author:newrelic description:A Ruby interface to YUI Compressor for minifying JavaScript and CSS assets.
+github-newrelic-puppet-module-monit | puppet-module-monit | https://github.com/newrelic/puppet-module-monit | author:newrelic description:Puppet Monit Module
+github-newrelic-bower-angular-mocks | bower-angular-mocks | https://github.com/newrelic/bower-angular-mocks | author:newrelic description:angular-mocks.js bower repo
+github-newrelic-puppet-kafka | puppet-kafka | https://github.com/newrelic/puppet-kafka | author:newrelic description:Puppet module for Apache Kafka 0.8. https://gerrit.wikimedia.org/r/#/admin/projects/operations/puppet/kafka
+github-newrelic-puppetlabs-mysql | puppetlabs-mysql | https://github.com/newrelic/puppetlabs-mysql | author:newrelic description:getting ready to publish our mysql module!
+github-newrelic-carrierwave | carrierwave | https://github.com/newrelic/carrierwave | author:newrelic description:Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks
+github-newrelic-puppet-resolvconf | puppet-resolvconf | https://github.com/newrelic/puppet-resolvconf | author:newrelic description:Generic types for managing /etc/resolv.conf with Puppet
+github-newrelic-nuget | nuget | https://github.com/newrelic/nuget | author:newrelic 
+github-newrelic-github-sqs-plugin | github-sqs-plugin | https://github.com/newrelic/github-sqs-plugin | author:newrelic description:This plugin triggers builds on events from the GitHub that are published via Amazon Web Services Simple Queue Service.
+github-newrelic-guard-minitest | guard-minitest | https://github.com/newrelic/guard-minitest | author:newrelic description:Guard::Minitest automatically run your tests (much like autotest)
+github-newrelic-rails_4_session_flash_backport | rails_4_session_flash_backport | https://github.com/newrelic/rails_4_session_flash_backport | author:newrelic 
+github-newrelic-valgrind-plugin | valgrind-plugin | https://github.com/newrelic/valgrind-plugin | author:newrelic 
+github-newrelic-newrelic-azure-environment-configuration | newrelic-azure-environment-configuration | https://github.com/newrelic/newrelic-azure-environment-configuration | author:newrelic description:This is a demo project that illustrates how to use the .NET agent API to set things dynamically, like app name, using the Azure management APIs
+github-newrelic-puppet-network | puppet-network | https://github.com/newrelic/puppet-network | author:newrelic description:Puppet module to manage Red Hat/Fedora traditional network configuration.
+github-newrelic-puppetlabs-lvm | puppetlabs-lvm | https://github.com/newrelic/puppetlabs-lvm | author:newrelic description:Puppet Module to manage LVM
+github-newrelic-foreman | foreman | https://github.com/newrelic/foreman | author:newrelic description:Manage Procfile-based applications
+github-newrelic-divergence | divergence | https://github.com/newrelic/divergence | author:newrelic description:A HTTP proxy that lets you map subdomains to git branches for site testing
+github-newrelic-puppet-ntp | puppet-ntp | https://github.com/newrelic/puppet-ntp | author:newrelic description:Manage NTP client and server via puppet on Debian-, RedHat- and SUSE-based distributions
+github-newrelic-soap4r-noeticpenguin | soap4r-noeticpenguin | https://github.com/newrelic/soap4r-noeticpenguin | author:newrelic description:Modified soap4r library to run on Ruby 1.9
+github-newrelic-librarian-puppet | librarian-puppet | https://github.com/newrelic/librarian-puppet | author:newrelic 
+github-newrelic-ruby-cobbler | ruby-cobbler | https://github.com/newrelic/ruby-cobbler | author:newrelic description:A ruby interface for interacting with a Cobbler server.
+github-newrelic-em-sflow | em-sflow | https://github.com/newrelic/em-sflow | author:newrelic description:EventMachine-powered sFlow Library
+github-newrelic-record-cache | record-cache | https://github.com/newrelic/record-cache | author:newrelic description:Cache Active Model Records in Rails 3
+github-newrelic-grape-swagger | grape-swagger | https://github.com/newrelic/grape-swagger | author:newrelic description:Add swagger compliant documentation to your grape API
+github-newrelic-github | github | https://github.com/newrelic/github | author:newrelic description:Ruby interface to github API v3
+github-newrelic-api-pagination | api-pagination | https://github.com/newrelic/api-pagination | author:newrelic description:Link header pagination for Grape APIs.
+github-newrelic-titanium_mobile_tooling | titanium_mobile_tooling | https://github.com/newrelic/titanium_mobile_tooling | author:newrelic description:Tooling for Titanium Mobile.
+github-newrelic-stealth_stars | stealth_stars | https://github.com/newrelic/stealth_stars | author:newrelic description:Demo application for RailsConf 2013
+github-newrelic-puppetlabs-postgresql | puppetlabs-postgresql | https://github.com/newrelic/puppetlabs-postgresql | author:newrelic description:Puppet module for managing PostgreSQL
+github-newrelic-net-http-persistent | net-http-persistent | https://github.com/newrelic/net-http-persistent | author:newrelic description:Thread-safe persistent connections with Net::HTTP
+github-newrelic-etcd-ruby | etcd-ruby | https://github.com/newrelic/etcd-ruby | author:newrelic description:Bare minimal ruby client for etcd
+github-newrelic-ruby-build | ruby-build | https://github.com/newrelic/ruby-build | author:newrelic description:Compile and install Ruby
+github-newrelic-puppet-etcd | puppet-etcd | https://github.com/newrelic/puppet-etcd | author:newrelic description:A puppet module for installing and configuring etcd
+github-newrelic-rubyipmi | rubyipmi | https://github.com/newrelic/rubyipmi | author:newrelic description:Command line wrapper for ipmitool and freeipmi
+github-newrelic-xmlsec-ruby | xmlsec-ruby | https://github.com/newrelic/xmlsec-ruby | author:newrelic description:Ruby bindings for xmlsec using SWIG. Currently only supports some basic signature verification.
+github-newrelic-km-send | km-send | https://github.com/newrelic/km-send | author:newrelic description:A utility to process Kiss Metrics log files for transmission to the KM server
+github-newrelic-highcharts.com | highcharts.com | https://github.com/newrelic/highcharts.com | author:newrelic description:Highcharts JS, the JavaScript charting framework
+github-newrelic-github-backup | github-backup | https://github.com/newrelic/github-backup | author:newrelic description:Back up your Github repositories
+github-newrelic-capistrano-newrelic | capistrano-newrelic | https://github.com/newrelic/capistrano-newrelic | author:newrelic description:New Relic integration for Capistrano 3
+github-newrelic-enterprise-installation | enterprise-installation | https://github.com/newrelic/enterprise-installation | author:newrelic description:Travis CI Enterprise Installation Instructions
+github-newrelic-minotaur | minotaur | https://github.com/newrelic/minotaur | author:newrelic description:Open Source Cloud Formation
+github-newrelic-combustion | combustion | https://github.com/newrelic/combustion | author:newrelic description:Simple, elegant testing for Rails Engines
+github-newrelic-gcm_ChatServer_nodejs | gcm_ChatServer_nodejs | https://github.com/newrelic/gcm_ChatServer_nodejs | author:newrelic description:A nodejs chat server that uses Google Cloud Messaging to push messages
+github-newrelic-gridster.js | gridster.js | https://github.com/newrelic/gridster.js | author:newrelic description:gridster.js is a jQuery plugin that makes building intuitive draggable layouts from elements spanning multiple columns

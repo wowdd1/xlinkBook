@@ -5,28 +5,29 @@ github-apple-swift-corelibs-foundation | swift-corelibs-foundation | https://git
 github-apple-swift-corelibs-libdispatch | swift-corelibs-libdispatch | https://github.com/apple/swift-corelibs-libdispatch | author:apple description:The libdispatch Project, (a.k.a. Grand Central Dispatch), for concurrency on multicore hardware
 github-apple-swift-protobuf-plugin | swift-protobuf-plugin | https://github.com/apple/swift-protobuf-plugin | author:apple description:Moved to apple/swift-protobuf
 github-apple-swift-corelibs-xctest | swift-corelibs-xctest | https://github.com/apple/swift-corelibs-xctest | author:apple description:The XCTest Project, A Swift core library for providing unit test support
-github-apple-swift-llvm | swift-llvm | https://github.com/apple/swift-llvm | author:apple description:Updated Oct 19, 2016
-github-apple-swift-3-api-guidelines-review | swift-3-api-guidelines-review | https://github.com/apple/swift-3-api-guidelines-review | author:apple description:Updated Feb 29, 2016
+github-apple-swift-llvm | swift-llvm | https://github.com/apple/swift-llvm | author:apple 
 github-apple-swift-protobuf | swift-protobuf | https://github.com/apple/swift-protobuf | author:apple description:Plugin and runtime library for using protobuf with Swift
-github-apple-swift-clang | swift-clang | https://github.com/apple/swift-clang | author:apple description:Updated Oct 20, 2016
+github-apple-swift-3-api-guidelines-review | swift-3-api-guidelines-review | https://github.com/apple/swift-3-api-guidelines-review | author:apple 
+github-apple-swift-clang | swift-clang | https://github.com/apple/swift-clang | author:apple 
 github-apple-swift-lldb | swift-lldb | https://github.com/apple/swift-lldb | author:apple description:This is the version of LLDB that supports the Swift programming language & REPL.
 github-apple-swift-llbuild | swift-llbuild | https://github.com/apple/swift-llbuild | author:apple description:A low-level build system, used by the Swift Package Manager
-github-apple-example-package-dealer | example-package-dealer | https://github.com/apple/example-package-dealer | author:apple description:Example package for use with the Swift Package Manager
 github-apple-cups | cups | https://github.com/apple/cups | author:apple description:Official CUPS Sources
+github-apple-example-package-dealer | example-package-dealer | https://github.com/apple/example-package-dealer | author:apple description:Example package for use with the Swift Package Manager
 github-apple-example-package-playingcard | example-package-playingcard | https://github.com/apple/example-package-playingcard | author:apple description:Example package for use with the Swift Package Manager
 github-apple-example-package-fisheryates | example-package-fisheryates | https://github.com/apple/example-package-fisheryates | author:apple description:Example package for use with the Swift Package Manager
 github-apple-example-package-deckofplayingcards | example-package-deckofplayingcards | https://github.com/apple/example-package-deckofplayingcards | author:apple description:Example package for use with the Swift Package Manager
 github-apple-swift-xcode-playground-support | swift-xcode-playground-support | https://github.com/apple/swift-xcode-playground-support | author:apple description:Logging and communication to allow Swift toolchains to communicate with Xcode.
-github-apple-swift-internals | swift-internals | https://github.com/apple/swift-internals | author:apple description:Updated Aug 2, 2016
+github-apple-swift-cmark | swift-cmark | https://github.com/apple/swift-cmark | author:apple description:CommonMark parsing and rendering library and program in C
+github-apple-swift-internals | swift-internals | https://github.com/apple/swift-internals | author:apple 
 github-apple-ccs-calendarserver | ccs-calendarserver | https://github.com/apple/ccs-calendarserver | author:apple description:The Calendar and Contacts Server.
 github-apple-swift-integration-tests | swift-integration-tests | https://github.com/apple/swift-integration-tests | author:apple description:Automated tests for validating the generated Swift snapshots behave correctly
-github-apple-swift-compiler-rt | swift-compiler-rt | https://github.com/apple/swift-compiler-rt | author:apple description:Updated Oct 19, 2016
+github-apple-swift-compiler-rt | swift-compiler-rt | https://github.com/apple/swift-compiler-rt | author:apple 
 github-apple-swift-protobuf-test-conformance | swift-protobuf-test-conformance | https://github.com/apple/swift-protobuf-test-conformance | author:apple description:Plugin for Google's conformance test to verify compatibility of swift-protobuf
-github-apple-ccs-caldavclientlibrary | ccs-caldavclientlibrary | https://github.com/apple/ccs-caldavclientlibrary | author:apple description:CalDAV/CardDAV Testing Tool Used by CalendarServer
+github-apple-ccs-pykerberos | ccs-pykerberos | https://github.com/apple/ccs-pykerberos | author:apple description:Python Kerberos library used by CalendarServer
 github-apple-ccs-pycalendar | ccs-pycalendar | https://github.com/apple/ccs-pycalendar | author:apple description:Python iCalendar library used by CalendarServer
+github-apple-ccs-caldavclientlibrary | ccs-caldavclientlibrary | https://github.com/apple/ccs-caldavclientlibrary | author:apple description:CalDAV/CardDAV Testing Tool Used by CalendarServer
 github-apple-ccs-twistedextensions | ccs-twistedextensions | https://github.com/apple/ccs-twistedextensions | author:apple description:Extensions to Twisted used by CalendarServer
+github-apple-ccs-caldavtester | ccs-caldavtester | https://github.com/apple/ccs-caldavtester | author:apple description:CalDAV/CardDAV Testing Framework used by CalendarServer
 github-apple-ccs-pysecuretransport | ccs-pysecuretransport | https://github.com/apple/ccs-pysecuretransport | author:apple description:Twisted SecureTransport library used by CalendarServer
 github-apple-ccs-pyopendirectory | ccs-pyopendirectory | https://github.com/apple/ccs-pyopendirectory | author:apple description:Python OpenDirectory library used by CalendarServer
-github-apple-ccs-pykerberos | ccs-pykerberos | https://github.com/apple/ccs-pykerberos | author:apple description:Python Kerberos library used by CalendarServer
-github-apple-ccs-caldavtester | ccs-caldavtester | https://github.com/apple/ccs-caldavtester | author:apple description:CalDAV/CardDAV Testing Framework used by CalendarServer
 github-apple-ccs-pyosxframeworks | ccs-pyosxframeworks | https://github.com/apple/ccs-pyosxframeworks | author:apple description:Python Framework for macOS APIs used by CalendarServer

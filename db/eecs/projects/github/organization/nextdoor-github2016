@@ -9,23 +9,53 @@ github-nextdoor-collectd_plugins | collectd_plugins | https://github.com/Nextdoo
 github-nextdoor-kingpin | kingpin | https://github.com/Nextdoor/kingpin | author:nextdoor description:Deployment Automation Engine
 github-nextdoor-NDRefresh | NDRefresh | https://github.com/Nextdoor/NDRefresh | author:nextdoor description:Flexible pull to refresh control for iOS, written in Swift.
 github-nextdoor-alphabot | alphabot | https://github.com/Nextdoor/alphabot | author:nextdoor description:Open source python bot to chat with Slack and other platforms.
-github-nextdoor-zkmonitor | zkmonitor | https://github.com/Nextdoor/zkmonitor | author:nextdoor description:Zookeeper Monitoring Daemon
 github-nextdoor-dutch-boy | dutch-boy | https://github.com/Nextdoor/dutch-boy | author:nextdoor description:A Memory Leak Detector Plugin for Nose
 github-nextdoor-puppet_thycotic | puppet_thycotic | https://github.com/Nextdoor/puppet_thycotic | author:nextdoor description:Puppet library for accessing 'secrets' stored in Thycotic's 'Secret Server'
+github-nextdoor-zkmonitor | zkmonitor | https://github.com/Nextdoor/zkmonitor | author:nextdoor description:Zookeeper Monitoring Daemon
+github-nextdoor-airflow | airflow | https://github.com/Nextdoor/airflow | author:nextdoor description:Airflow is a system to programmatically author, schedule and monitor data pipelines.
 github-nextdoor-public-ops-tools | public-ops-tools | https://github.com/Nextdoor/public-ops-tools | author:nextdoor description:Rundeck scripts, etc. that are publicly accessible.
-github-nextdoor-puppet-strongswan | puppet-strongswan | https://github.com/Nextdoor/puppet-strongswan | author:nextdoor description:Manages StrongSwan on a host with Puppet
 github-nextdoor-NDPhraseParser | NDPhraseParser | https://github.com/Nextdoor/NDPhraseParser | author:nextdoor description:A library that allows for formatting strings with context, like Python.
-github-nextdoor-public_cookbooks | public_cookbooks | https://github.com/Nextdoor/public_cookbooks | author:nextdoor description:RightScale Cookbooks: Public Cookbooks
+github-nextdoor-puppet-strongswan | puppet-strongswan | https://github.com/Nextdoor/puppet-strongswan | author:nextdoor description:Manages StrongSwan on a host with Puppet
+github-nextdoor-shrun | shrun | https://github.com/Nextdoor/shrun | author:nextdoor 
+github-nextdoor-cloudformation | cloudformation | https://github.com/Nextdoor/cloudformation | author:nextdoor description:Simple repo of totally public CloudFormation scripts
+github-nextdoor-kazoo | kazoo | https://github.com/Nextdoor/kazoo | author:nextdoor description:Kazoo is a higher level Python library that makes it easier to use Zookeeper.
+github-nextdoor-avro-flume-hive-example | avro-flume-hive-example | https://github.com/Nextdoor/avro-flume-hive-example | author:nextdoor 
+github-nextdoor-tornado_rest_client | tornado_rest_client | https://github.com/Nextdoor/tornado_rest_client | author:nextdoor description:Tornado REST Client Framework
 github-nextdoor-puppet-k8s | puppet-k8s | https://github.com/Nextdoor/puppet-k8s | author:nextdoor description:Kubernetes Puppet Module
 github-nextdoor-nextdoor.github.io | nextdoor.github.io | https://github.com/Nextdoor/nextdoor.github.io | author:nextdoor description:Nextdoor Opensource Projects
-github-nextdoor-tornado_rest_client | tornado_rest_client | https://github.com/Nextdoor/tornado_rest_client | author:nextdoor description:Tornado REST Client Framework
+github-nextdoor-public_cookbooks | public_cookbooks | https://github.com/Nextdoor/public_cookbooks | author:nextdoor description:RightScale Cookbooks: Public Cookbooks
 github-nextdoor-puppet_rightscale | puppet_rightscale | https://github.com/Nextdoor/puppet_rightscale | author:nextdoor description:Puppet libraries and modules for interacting with RightScale
-github-nextdoor-cloudformation | cloudformation | https://github.com/Nextdoor/cloudformation | author:nextdoor description:Simple repo of totally public CloudFormation scripts
-github-nextdoor-shrun | shrun | https://github.com/Nextdoor/shrun | author:nextdoor description:Updated Oct 13, 2016
 github-nextdoor-buckle | buckle | https://github.com/Nextdoor/buckle | author:nextdoor description:Bind your command-line toolbelt together
+github-nextdoor-Portus | Portus | https://github.com/Nextdoor/Portus | author:nextdoor description:Authorization service and frontend for Docker registry (v2)
+github-nextdoor-sendgrid-python | sendgrid-python | https://github.com/Nextdoor/sendgrid-python | author:nextdoor description:SendGrid Python Library
+github-nextdoor-puppetlabs-aws | puppetlabs-aws | https://github.com/Nextdoor/puppetlabs-aws | author:nextdoor description:Puppet module for managing AWS resources to build out infrastructure
+github-nextdoor-hubot-scripts | hubot-scripts | https://github.com/Nextdoor/hubot-scripts | author:nextdoor 
+github-nextdoor-rancher-utils | rancher-utils | https://github.com/Nextdoor/rancher-utils | author:nextdoor 
+github-nextdoor-backstop | backstop | https://github.com/Nextdoor/backstop | author:nextdoor description:HTTP service for submitting metrics to Graphite
+github-nextdoor-pyes | pyes | https://github.com/Nextdoor/pyes | author:nextdoor description:Python connector for ElasticSearch
+github-nextdoor-logstash | logstash | https://github.com/Nextdoor/logstash | author:nextdoor description:logstash - logs/event transport, processing, management, search.
+github-nextdoor-wal-e | wal-e | https://github.com/Nextdoor/wal-e | author:nextdoor description:A S3 based WAL-shipping disaster recovery and standby toolkit
+github-nextdoor-qds-sdk-py | qds-sdk-py | https://github.com/Nextdoor/qds-sdk-py | author:nextdoor description:Python SDK for accessing Qubole Data Service
+github-nextdoor-collectd-librato | collectd-librato | https://github.com/Nextdoor/collectd-librato | author:nextdoor description:Collectd Plugin for Librato Metrics
+github-nextdoor-PKRevealController | PKRevealController | https://github.com/Nextdoor/PKRevealController | author:nextdoor description:PKRevealController (ex. ZUUIRevealController) is a delightful view controller container for iOS, enabling you to present multiple controllers on top of one another.
+github-nextdoor-s3-plugin | s3-plugin | https://github.com/Nextdoor/s3-plugin | author:nextdoor description:Upload Jenkins build artifacts to Amazon S3
+github-nextdoor-celery | celery | https://github.com/Nextdoor/celery | author:nextdoor description:Distributed Task Queue (development branch)
+github-nextdoor-statsd-librato-backend | statsd-librato-backend | https://github.com/Nextdoor/statsd-librato-backend | author:nextdoor description:A StatsD backend that sends metrics to Librato Metrics
+github-nextdoor-storage_scripts | storage_scripts | https://github.com/Nextdoor/storage_scripts | author:nextdoor 
 github-nextdoor-yardmaster | yardmaster | https://github.com/Nextdoor/yardmaster | author:nextdoor description:n. a person who superintends all or part of a railroad yard
-github-nextdoor-python-imaging-library | python-imaging-library | https://github.com/Nextdoor/python-imaging-library | author:nextdoor description:Nextdoor fork of PIL
-github-nextdoor-hubot-scripts | hubot-scripts | https://github.com/Nextdoor/hubot-scripts | author:nextdoor description:Updated Jan 12, 2016
-github-nextdoor-storage_scripts | storage_scripts | https://github.com/Nextdoor/storage_scripts | author:nextdoor description:Updated May 20, 2016
+github-nextdoor-M2Crypto | M2Crypto | https://github.com/Nextdoor/M2Crypto | author:nextdoor description:M2Crypto for 2013+: Python 2.6+, OpenSSL 0.9.8+, SWIG 2.0+, modern POSIX or Windows Vista+
+github-nextdoor-puppet-datadog-agent | puppet-datadog-agent | https://github.com/Nextdoor/puppet-datadog-agent | author:nextdoor description:Puppet module to install the Datadog agent
+github-nextdoor-ngx_aws_auth | ngx_aws_auth | https://github.com/Nextdoor/ngx_aws_auth | author:nextdoor description:nginx module to proxy to authenticated AWS services
 github-nextdoor-rightscale_rightlink10_rightscripts | rightscale_rightlink10_rightscripts | https://github.com/Nextdoor/rightscale_rightlink10_rightscripts | author:nextdoor description:"Cookbook" scripts for use with RightScale RightLink10
-github-nextdoor-rancher-utils | rancher-utils | https://github.com/Nextdoor/rancher-utils | author:nextdoor description:Updated Feb 17, 2016
+github-nextdoor-amazon-kinesis-agent | amazon-kinesis-agent | https://github.com/Nextdoor/amazon-kinesis-agent | author:nextdoor description:Continuously monitors a set of log files and sends new data to the Amazon Kinesis Stream and Amazon Kinesis Firehose in near-real-time.
+github-nextdoor-puppet-opsmatic | puppet-opsmatic | https://github.com/Nextdoor/puppet-opsmatic | author:nextdoor description:A Puppet module for installing Opsmatic reporter on Puppet runs
+github-nextdoor-image_optimize | image_optimize | https://github.com/Nextdoor/image_optimize | author:nextdoor description:Bundle a running VM into a new image for use on next launch.
+github-nextdoor-rightscale_cookbooks | rightscale_cookbooks | https://github.com/Nextdoor/rightscale_cookbooks | author:nextdoor 
+github-nextdoor-python-imaging-library | python-imaging-library | https://github.com/Nextdoor/python-imaging-library | author:nextdoor description:Nextdoor fork of PIL
+github-nextdoor-puppet-sysctl | puppet-sysctl | https://github.com/Nextdoor/puppet-sysctl | author:nextdoor description:Puppet module for Sysctl
+github-nextdoor-pysqlite | pysqlite | https://github.com/Nextdoor/pysqlite | author:nextdoor description:Python DB-API module for SQLite 3.
+github-nextdoor-elasticsearch-zookeeper | elasticsearch-zookeeper | https://github.com/Nextdoor/elasticsearch-zookeeper | author:nextdoor 
+github-nextdoor-collectd-elasticsearch | collectd-elasticsearch | https://github.com/Nextdoor/collectd-elasticsearch | author:nextdoor description:Collectd ElasticSearch plugin
+github-nextdoor-kombu | kombu | https://github.com/Nextdoor/kombu | author:nextdoor description:Messaging library for Python.
+github-nextdoor-thrift | thrift | https://github.com/Nextdoor/thrift | author:nextdoor description:Mirror of Apache Thrift
+github-nextdoor-django-postgrespool | django-postgrespool | https://github.com/Nextdoor/django-postgrespool | author:nextdoor description:Postgres Connection Pooling for Django, powered by SQLAlchemy.
