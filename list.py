@@ -95,6 +95,7 @@ css_table_overwrite = '\
 }\
 </style>'
 
+
 css_style_2 = css_style_1 + css_table_overwrite
 
 css_style_3 = '\
@@ -453,6 +454,9 @@ def getScript(file_name, first_record):
     output_script_already = True
     global script
     print "<head>"
+    #print '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">'
+
+
     print script_head
     print "var default_tab = '" + Config.default_tab + "';"
     print "var second_default_tab = '" + Config.second_default_tab + "';"
@@ -476,6 +480,10 @@ def getScript(file_name, first_record):
     print 'var column = "' + column_num + '";'
     print 'var database = "' + database + '";'
     print 'var key = "";'
+    if len(Config.smart_engin_for_dialog) > 0:
+        print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
+    else:
+        print 'var dialog_engin_count = ' + str(len(utils.getEnginList('d:star'))) + ';'
     if source.endswith('/') == False:
         print 'key = "' + source[source.rfind('/') + 1 :] + '";'
     extensions = utils.getExtensions()
@@ -509,6 +517,7 @@ def getScript(file_name, first_record):
         mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
         print mathjs
     print loadJSScript()
+
     print loadCSS()
     ref_class = css_head
     ref_class += '.ref { margin: 5px;'
@@ -518,7 +527,7 @@ def getScript(file_name, first_record):
         ref_class += "width: 575px;"
     if column_num == "1":
         ref_class += "width: 900px;"
-    ref_class += "}"
+    ref_class += "}" 
     ref_class += css_end
     print ref_class
     if output_with_style and plugins_mode == False:
@@ -536,6 +545,10 @@ def getScript(file_name, first_record):
             print css_style_5
         elif css_style_type == 6:
             print css_style_6
+
+
+    print '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>'
+
     print "</head>"
 
 def build_lines(list_all, file_name):
@@ -959,7 +972,7 @@ def smartLink(content, record):
             #ret = ret.replace(';', ', ')
             split_char = ';'
 
-        return genSmartLinkHtml(tag, record, split_char, '', content)
+        return genSmartLinkHtml(tag, record, split_char, '', content, dialogMode=True)
 
     else:
         if last_content.find(content) != -1:
@@ -984,10 +997,14 @@ def genAccountHtml(tag, record, content):
         url = 'https://vimeo.com/%s'
     elif tag == 'g-group':
         url = 'https://groups.google.com/a/%s'
+    elif tag == 'fb-group':
+        url = 'https://www.facebook.com/groups/%s/'
     elif tag == 'medium':
         url = 'https://medium.com/@%s'
     elif tag == 'goodreads':
         url = 'http://www.goodreads.com/review/list/%s'
+    elif tag == 'meetup':
+        url = 'https://www.meetup.com/%s/'
     if url != '':
         return genSmartLinkHtml(tag, record, ',', url, content, urlFromServer=False, accountTag=True)
     else:
@@ -995,12 +1012,12 @@ def genAccountHtml(tag, record, content):
 
 
 def isAccountTag(content):
-    return content.strip().startswith('slack:') or content.strip().startswith('gitter:') or content.strip().startswith('twitter:') or content.strip().startswith('github:') or content.strip().startswith('youtube:') or content.strip().startswith('vimeo') or content.strip().startswith('g-group') or content.strip().startswith('medium') or content.strip().startswith('goodreads')
+    return content.strip().startswith('slack:') or content.strip().startswith('gitter:') or content.strip().startswith('twitter:') or content.strip().startswith('github:') or content.strip().startswith('youtube:') or content.strip().startswith('vimeo:') or content.strip().startswith('g-group:') or content.strip().startswith('medium:') or content.strip().startswith('goodreads:') or content.strip().startswith('fb-group:') or content.strip().startswith('meetup:')
 
 def isSmartLinkTag(content):
-    return content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner:') or content.strip().startswith('alias:') or content.strip().startswith('professor:') or content.strip().startswith('conference:') or content.strip().startswith('cto:') or content.strip().startswith('company:') or content.strip().startswith('g-plus')
+    return content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner:') or content.strip().startswith('alias:') or content.strip().startswith('professor:') or content.strip().startswith('conference:') or content.strip().startswith('cto:') or content.strip().startswith('company:') or content.strip().startswith('g-plus') or content.strip().startswith('engineer:') or content.strip().startswith('institute:') or content.strip().startswith('director') or content.strip().startswith('ceo')
 
-def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False):
+def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False):
     global last_content
     ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
     last_content = ret
@@ -1014,10 +1031,10 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
             if url != '':
                 link = url
                 if url.find('%s') != -1:
-                    link = url.replace('%s', i.strip())
-                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag)) 
+                    link = url.replace('%s', i.strip().replace(' ', ''))
+                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret))) 
             else:
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag)) 
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode) 
             if old_i != ret[len(ret) - 1]:
                 if accountTag:
                     html += '&nbsp;'
@@ -1028,22 +1045,36 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
             link = url
             if url.find('%s') != -1:
                 link = url.replace('%s', ret)
-            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag))
+            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1))
         else:
-            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag))
+            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1))
 
     return content[ 0 : content.find(':') + 1 ] + html
 
-def getShowText(accountTag, text, tag):
+def getShowText(accountTag, text, tag, linkCount):
+    col = int(column_num)
+    font_size = 0
+    if column_num == '1':
+        font_size = '12'
+    elif column_num == '2':
+        font_size = '10'
+    else:
+        font_size = '8'
+        if linkCount < 5:
+            font_size = '12'
+
     if accountTag:
         prefix = '@'
         if tag == 'goodreads':
             text = text[text.find('-') + 1 :]
         if tag == 'slack':
             prefix = '#'
-        return '<font style="color:#999966 ; font-size: 9pt;">' + prefix + text + '</font>'
-    elif tag == 'alias':
-        return '<font style="font-size: 10pt;">' + text + '</font>'
+        if len(text) > 14:
+            font_size = str(int(font_size) - 4)
+            text = text[0: 14]
+        return '<font style="color:#999966 ; font-size: ' + str(font_size) + 'pt;">' + prefix + text + '</font>'
+    else:
+        return '<font style="font-size: ' + str(font_size) + 'pt;">' + text + '</font>'
     return text
 
 def print_search_box(hiden):
@@ -1547,7 +1578,7 @@ def print_list(all_lines, file_name = ''):
                 print_table_footer()
                 #print '</table>'
   
-
+       
         if current > 0:
             message = ''
             if html_style:

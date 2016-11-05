@@ -1,20 +1,28 @@
-ai-labs-1 | 麻省理工学院 |  |
-ai-labs-2 | 斯坦福大学 |  |
-ai-labs-3 | 卡内基梅隆大学 |  |
-ai-labs-4 | 加州大学伯克利分校 |  |
-ai-labs-5 | 布里斯托大学 |  |
-ai-labs-6 | 耶路撒冷希伯来大学 |  |
-ai-labs-7 | 牛津大学 |  |
-ai-labs-8 | Dalle Molle |  |
-ai-labs-9 | SCIAI |  |
-ai-labs-10 | 苏黎世理工 |  |
-ai-labs-11 | DeepMind |  |
-ai-labs-12 | 微软研究院 |  |
-ai-labs-13 | 艾伦人工智能研究院 |  |
-ai-labs-14 | Facebook人工智能实验室 |  |
-ai-labs-15 | 丰田实验室 |  |
-ai-labs-16 | Uber先进科技中心 |  |
-ai-labs-17 | 亚马逊AWS |  |
-ai-labs-18 | IBM实验室 |  |
-ai-labs-19 | 本田硅谷研发中心 |  |
-ai-labs-20 | Openai |  |
+ai-labs-1 | MIT csail | www.csail.mit.edu | director:Daniela Rus github:csail
+ai-labs-2 | Stanford Artificial Intelligence Lab |  http://ai.stanford.edu/ | director:Fei-fei Li
+ai-labs-3 | CMU Robot | https://www.ri.cmu.edu/ | director:Rachel Burcin alias:CMU Machine Learning
+ai-labs-4 | Berkeley Artificial Intelligence Research Lab | http://bair.berkeley.edu/ | alias:caffe
+ai-labs-5 | University of Bristol |  | director:Colin Campell
+ai-labs-6 | Hebrew University of Jerusalem |  |
+ai-labs-7 | Mobileye | http://www.mobileye.com/ | cto:Amnon Shashua
+ai-labs-8 | Oxford Centre for Theoretical Neuroscience and Artificial Intelligence | https://www.psy.ox.ac.uk/research/oxford-centre-for-theoretical-neuroscience-and-artificial-intelligence | 
+ai-labs-9 | Oxford Robotics Institute | http://oxfordrobots.com/ | alias:OXFORD ROBOTCAR, matconvnet
+ai-labs-10 | Université de Montréal | | director:Yoshua Bengio alias:theano, elementai
+ai-labs-11 | Dalle Molle | http://idsia.ch/ |
+ai-labs-12 | The Siena College Institute for Artificial Intelligence |  | alias:SCIAI
+ai-labs-13 | ETH AI |  | 
+ai-labs-14 | Google X | https://www.solveforx.com/ | director:Astro Teller twitter:solveforx alias:solveforx
+ai-labs-15 | Google Brain | http://research.google.com/teams/brain/ | director:Geoffrey E. Hinton, Jeff Dean university:university of toronto alias:tensorflow
+ai-labs-16 | DeepMind | http://www.deepmind.com | director:Demis Hassabis, David Silver alias:deep mind github:deepmind twitter:DeepMindAI
+ai-labs-17 | Microsoft Research | http://research.microsoft.com/en-us/ | director:Harry Shum github:microsoft-research alias:CNTK
+ai-labs-18 | Allen Institute for Artificial Intelligence | http://allenai.org/ | ceo:Oren Etzioni github:allenai
+ai-labs-19 | Facebook AI Lab | https://research.facebook.com/ai/ | director:Yann LeCun github:facebook university:New York University alias:torch
+ai-labs-20 | SAIL-Toyota Center for AI Research | http://aicenter.stanford.edu/ | ceo:Gill Pratt
+ai-labs-21 | Uber Advanced Technologies Center | https://www.uber.com/info/atc/ | director:Sherif Marakby
+ai-labs-22 | Amazon AWS | http://aws.amazon.com/ | director:Matt Wood github:amznlabs
+ai-labs-23 | IBM Research | http://researcher.watson.ibm.com/ | director:David Kenny alias:ibm watson
+ai-labs-24 | Honda Silicon Valley Lab | https://www.hondasvl.com/ | director:Naoki Sugimoto
+ai-labs-25 | Openai | http://openai.com | cto:Greg Brockman github:openai twitter:OpenAI gitter:openai alias:Tesla
+ai-labs-26 | Baidu Silicon Valley AI Lab | http://research.baidu.com/silicon-valley-ai-lab/ | director:Andrew Ng, Adam Coates github:baidu-research, baidu vimeo:baiduusa alias:Paddle
+ai-labs-27 | Apple AI Research | | director:Ruslan Salakhutdinov
+ai-labs-28 | Nvidia | | director:Danny Shapiro alias:cudnn

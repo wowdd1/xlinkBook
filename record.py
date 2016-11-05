@@ -139,6 +139,7 @@ class Tag():
         self.tag_engineer = 'engineer:'
         self.tag_hacker = 'hacker:'
         self.tag_leader = 'leader:'
+        self.tag_director = 'director:'
         self.tag_community = 'community:'
         self.tag_conference = 'conference:'
         self.tag_workshop = 'workshop:'
@@ -161,10 +162,12 @@ class Tag():
         self.tag_g_plus = 'g-plus:'
         self.tag_medium = 'medium:'
         self.tag_goodreads = 'goodreads:'
+        self.tag_fb_group = 'fb-group:'
+        self.tag_meetup = 'meetup:'
 
         self.tag_list = [self.tag_id, self.tag_videourl, self.tag_author, self.tag_winner, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_prerequisites, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_professor, self.tag_adviser, self.tag_scientist, self.tag_description, self.tag_textbook, self.tag_book, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cto, self.tag_founder, self.tag_programmer, self.tag_engineer, self.tag_hacker, self.tag_leader, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_lab, self.tag_group, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads]
+                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cto, self.tag_founder, self.tag_programmer, self.tag_engineer, self.tag_hacker, self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_lab, self.tag_group, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup]
 
         self.tag_list_short = ["d:"]
 

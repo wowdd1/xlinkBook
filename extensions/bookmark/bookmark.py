@@ -88,9 +88,12 @@ class Bookmark(BaseExtension):
             if pid == '':
                 if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
                     count += 1
-                    if count < int(form_dict['page']) * Config.bookmark_page_item_count and count > (int(form_dict['page']) - 1) * Config.bookmark_page_item_count:
-                        currentPage = form_dict['page']
+                    if rID.startswith('loop-b'):
                         html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                    else:
+                        if count < int(form_dict['page']) * Config.bookmark_page_item_count and count >= (int(form_dict['page']) - 1) * Config.bookmark_page_item_count:
+                            currentPage = form_dict['page']
+                            html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
                     url = ''
                     if jobj.has_key('url'):
                         url = jobj['url']
@@ -125,14 +128,23 @@ class Bookmark(BaseExtension):
             else:
                 total_page = len(records) / Config.bookmark_page_item_count + 1
             print 'currentPage ' + str(currentPage)
-            if total_page > 1:
+            if total_page > 1 and rID.startswith('loop-b') == False:
                 html += '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
                 for page in range(0, total_page):
                     print (page + 1)
+                    if page == 0 and int(currentPage) > 1:
+                        html += self.utils.enhancedLink('', '<font size="5"><</font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, int(currentPage) - 1))
+                        html += '&nbsp;&nbsp;&nbsp;&nbsp;'
+
                     if ((page + 1) == int(currentPage)):
                         html += '<font size="5">' + self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1), style="color:#00BFFF;") + '</font> '
                     else:
                         html += self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1)) + ' '
+                    
+                        
+                    if page == total_page - 1 and int(currentPage) < total_page:
+                        html += '&nbsp;&nbsp;&nbsp;&nbsp;'
+                        html += self.utils.enhancedLink('', '<font size="5">></font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, int(currentPage) + 1))
             
                 html += '</div>'
             return html
@@ -159,7 +171,7 @@ class Bookmark(BaseExtension):
 
         script += 'postArgs["page"] = ' + str(page) + ';'
 
-        script += 'requestExtension(postArgs);';
+        script += 'requestExtension(postArgs, false);';
         return script
 
 
@@ -172,7 +184,7 @@ class Bookmark(BaseExtension):
             if self.containIgoncase(jobj['title'].strip(), rTitle.strip()):
                 #print jobj['title'].strip() + ' ' + rTitle.strip()
                 return True
-            if jobj.has_key('url'):
+            if jobj.has_key('url') and len(rTitle) > 8:
                 if self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '').strip()):
                     return True
                 if self.containIgoncase(jobj['url'].strip(), rTitle.replace(' ', '%20').strip()):
@@ -194,7 +206,7 @@ class Bookmark(BaseExtension):
             url = jobj['url']
 
         if url != '':
-            html += '<p>' + self.utils.enhancedLink(jobj['url'], self.utils.formatTitle(jobj['title'], Config.smart_link_br_len), module='bookmark', library=orginFilename, rid=rID)
+            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len), module='bookmark', library=orginFilename, rid=rID)
         else:
             html += '<p>' + jobj['title'] + ' > '
         #if self.existChild(str(jobj['id'])):
@@ -205,7 +217,9 @@ class Bookmark(BaseExtension):
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
             script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-b-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), jobj['title'], url, '-', hidenEnginSection=Config.bookmark_hiden_engin_section)
-            html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
+            if Config.bookmark_show_url_under_title == False:
+                url = ''
+            html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, url=url);
 
         html += '</p></li>'
 

@@ -161,7 +161,7 @@ def customPrintFile(line):
         print customid + '-' + str(line_id) + line + 'author:' + line[line.find('|') + 1 : line.find('|', line.find('|') + 1)].strip()
         return
 
-    id = line[0 : line.find(' ')]
+    id = parentid + '-' + line[0 : line.find(' ')]
     if ids.has_key(id):
         return
     ids[id] = id

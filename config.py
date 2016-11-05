@@ -11,12 +11,16 @@ class Config():
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'google' #'glucky'
-    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky'],\
+    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky', 'linkedin'],\
                            'university' : 'youtube',\
                            'professor' : ['phdtree', 'glucky'],\
-                           'g-plus' : 'plus.google'}
+                           'g-plus' : 'plus.google',\
+                           'company' : 'glucky',\
+                           'director' : ['twitter', 'glucky']}
                            #'topic' : ''}
-    smart_engin_for_extension = {'reference' : 'udacity'}
+    smart_engin_for_extension = {'' : ''}
+
+    smart_engin_for_dialog = []
 
     smart_link_max_text_len = 60
     smart_link_br_len = 80
@@ -127,7 +131,7 @@ class Config():
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
           'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
           'rss' : ip_adress + '/?db=rss/&key=rss2016',\
-          'disk' : ip_adress + '/?db=other/&key=disk2016',\
+          #'disk' : ip_adress + '/?db=other/&key=disk2016',\
           'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
           #'ipynb' : 'localhost:8888/tree',\
           #'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
@@ -159,6 +163,7 @@ class Config():
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
     bookmark_page_item_count = 12
+    bookmark_show_url_under_title = False
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
