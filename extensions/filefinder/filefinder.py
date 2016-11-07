@@ -53,6 +53,11 @@ class Filefinder(BaseExtension):
             html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str(count), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') 
             html += '&nbsp;'
 
+        keywords = aliasList + [rTitle.replace('%20', ' ')]
+        dbFileList = self.genFileList(self.getMatchFiles2('|'.join(keywords).replace('| ', '|'), [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]]))
+        if dbFileList != '':
+            html += '<br><br>db files:<br>' + dbFileList
+
         html += '</div>'
 
         return html
@@ -70,7 +75,40 @@ class Filefinder(BaseExtension):
                 output = output.replace('//', '/')
         return output
 
+    dbFileArgsDict = {}
+
+    def getMatchFiles2(self, keywords, filterList):
+        print filterList
+        cmd = 'grep -rE "' + keywords + '" db'
+        print cmd
+        output = subprocess.check_output(cmd, shell=True)
+        fileList = []
+        self.dbFileArgsDict = {}
+        for line in output.split('\n'):
+            fileName = line[0 : line.find(':')].strip()
+            igone = False
+            for f in filterList:
+                if fileName == f.strip():
+                    igone = True
+                    continue
+            if igone:
+                continue
+            rID = line[line.find(':') + 1 : line.find('|')].strip().replace(' ', '%20') 
+            if self.dbFileArgsDict.has_key(fileName) == False:
+                print fileName
+                self.dbFileArgsDict[fileName] = rID
+                fileList.append(fileName)
+            else:
+                if self.dbFileArgsDict[fileName].find(rID) == -1:
+                    self.dbFileArgsDict[fileName] = self.dbFileArgsDict[fileName] + '[or]' + rID
+        return fileList
+
+
+
+
     def genFileList(self, dataList):
+        if len(dataList) == 0:
+            return ''
         print 'genFileList ' + ''.join(dataList)
         html = ''
         count = 0
@@ -82,6 +120,8 @@ class Filefinder(BaseExtension):
                     html += '<li><span>' + str(count) + '.</span>'
                     if line.startswith('db/') and line.endswith(str(datetime.date.today().year)):
                         url = 'http://' + Config.ip_adress + '/?db=' + line[line.find('/') + 1 : line.rfind('/') + 1] + '&key=' + line[line.rfind('/') + 1 :] + '&column=' + Config.column_num + '&width=' + Config.default_width
+                        if self.dbFileArgsDict.has_key(line.strip()):
+                            url += '&filter=' + self.dbFileArgsDict[line.strip()]
                         html += '<p>' + self.utils.enhancedLink(url, line[line.rfind('/') + 1 :], module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])
                     else:
                         html += '<p>' + self.utils.enhancedLink(line, line[line.rfind('/') + 1 :], module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])

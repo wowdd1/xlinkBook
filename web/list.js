@@ -18,13 +18,13 @@ $(function() {
 function title() {  
     return $("[data-toggle='popover']").text;  
 }  
-  
-//模拟动态加载内容(真实情况可能会跟后台进行ajax交互)  
+
+ 
 function content(text) {  
     var content_id = "content-id-" + $.now();
 
-    args = {type : 'dialog', searchText: text, fileName : fileName};
-    $.post('/queryUrl', args, function(data) {
+    dialog_args = {type : 'dialog', searchText: text, fileName : fileName};
+    $.post('/queryUrl', dialog_args, function(data) {
         $('#' + content_id).html(data);
     });
 
@@ -34,6 +34,13 @@ function content(text) {
         if (i % 5 == 0 && i > 0) {
            result += 'nbsp;<br>' ;
         }
+    }
+    if (dialog_engin_count > 5) {
+        //result +='<br>';
+    }
+    
+    for (var i = 0; i < dialog_command_count; i++) {
+        result += '<br>' ;
     }
     
     result += 'Loading...</div>';
@@ -146,13 +153,17 @@ function search(inputid,optionid){
         window.open(url)
         userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
     } else if (select[select.selectedIndex].value == "add") {
-        $.post('/addRecord', {fileName : fileName, data : input.value}, function(data) {
-	    window.location.href = window.location.href;   
-	});
+        addRecord(fileName, input.value);
     } else {
         window.open(select.value + input.value);
         userlog(select[select.selectedIndex].text, select.value + input.value, 'searchbox', fileName, '', input.value, '');
     }
+}
+
+function addRecord(fileName, data) {
+    $.post('/addRecord', {fileName : fileName, data : data}, function(data) {
+        window.location.href = window.location.href;   
+    });
 }
 
 function trimStr(str){return str.replace(/(^s*)|(s*$)/g,"");}

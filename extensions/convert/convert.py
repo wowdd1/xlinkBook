@@ -91,6 +91,7 @@ class Convert(BaseExtension):
             start = True
         count = 0
         records = []
+        titles = ''
         for line in data.split('\n'):
             
             r = Record(line)
@@ -105,6 +106,7 @@ class Convert(BaseExtension):
 
             self.count += 1
             count += 1
+            titles += title + ', '
             records.append(Record('convert-' + str(count) + ' | ' + title + ' | ' + link + ' | '))
             if link != '':
                 title = '<a href="' + link + '" target="_blank">' + title + "</a>"
@@ -136,6 +138,7 @@ class Convert(BaseExtension):
         if start:
             html += '</ol></div>'
         #html += "</ol></div>"
+        print '\n' + titles + '\n'
         if Config.convert_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'convert', self.form_dict['rTitle'], Config.convert_output_data_format)
         else:

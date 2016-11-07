@@ -16,6 +16,7 @@ from utils import Utils
 import copy
 from config import Config
 from flask import session
+import datetime
 
 source = ""
 filter_keyword = ""
@@ -409,10 +410,10 @@ def genEnginOption(selectid):
     if Config.smart_link_engin != '':
         option += '<option value ="' + utils.getEnginUrl(Config.smart_link_engin) + '">' + Config.smart_link_engin + '</option>'
         
-    if plugins_mode == False:
-        option += '<option value ="current">current</option>'
-        option += '<option value ="add">add (operate)</option>'
-    option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
+    #if plugins_mode == False:
+    #    option += '<option value ="current">current</option>'
+        #option += '<option value ="add">add (operate)</option>'
+    #option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
     for e in engin_list:
         if e == "google" or e == Config.smart_link_engin:
             continue
@@ -480,10 +481,15 @@ def getScript(file_name, first_record):
     print 'var column = "' + column_num + '";'
     print 'var database = "' + database + '";'
     print 'var key = "";'
-    if len(Config.smart_engin_for_dialog) > 0:
-        print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
-    else:
-        print 'var dialog_engin_count = ' + str(len(utils.getEnginList('d:star'))) + ';'
+    if plugins_mode == False:
+        if len(Config.smart_engin_for_dialog) > 0:
+            print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
+        else:
+            print 'var dialog_engin_count = ' + str(len(utils.getEnginList('d:star'))) + ';'
+        if len(Config.command_for_dialog) > 0 and source.find('-library') != -1:
+            print 'var dialog_command_count = ' + str(len(Config.command_for_dialog)) + ';'
+        else:
+            print 'var dialog_command_count = 0;'
     if source.endswith('/') == False:
         print 'key = "' + source[source.rfind('/') + 1 :] + '";'
     extensions = utils.getExtensions()
@@ -546,12 +552,13 @@ def getScript(file_name, first_record):
         elif css_style_type == 6:
             print css_style_6
 
-
-    print '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>'
+    if plugins_mode == False:
+        print '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>'
 
     print "</head>"
 
 def build_lines(list_all, file_name):
+    #print 'build_lines start:' + str(datetime.datetime.now())
     global div_link_content, gen_html_done, max_links_row;
     id_title_lines = copy.deepcopy(list_all)
     describe_lines = []
@@ -606,12 +613,13 @@ def build_lines(list_all, file_name):
                 #if url.strip() != '':
                 #    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + '<a href="' + url + '" target="_blank">' + title + '</a>'
                 rid = id_title[0: id_title.find('|')]
-                if url.strip() != '':
-                    id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid, resourceType='topic')
-                else:
-                    if plugins_mode:
+                if plugins_mode:
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + title.strip().replace('%20', ' ')
+                else:
+                    if url.strip() != '':
+                        id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.enhancedLink(url, title.strip(), module='main', library=source, rid=rid, resourceType='topic')
                     else:
+                        
                         id_title_lines[i][j] = id_title[0: id_title.find('|') + 1] + utils.toSmartLink(title.strip(), noFormat=(column_num == '1'), module='main', library=source, rid=rid, resourceType='topic')
 
                 if engin != '':
@@ -693,7 +701,10 @@ def build_lines(list_all, file_name):
                                     hidenScript = ''
                                     hidenScript2 = ''
                                     hidenScript3 = ''
+                                    #print 'l ' + str(l) + ' lines:' + str(lines - 1)
+                                    #print 'getEnginTypes start:' + str(datetime.datetime.now()) + '<br>'
                                     last_engin_type = utils.getEnginTypes()[len(utils.getEnginTypes()) - 1]
+                                    #print 'getEnginTypes end:' + str(datetime.datetime.now()) + '<br>'
                                     nopass_flag = True
                                     for link2 in navLinks:
                                         hidenScript += 'hidendiv_2("' + '#div-' + link2 + '");'
@@ -709,13 +720,16 @@ def build_lines(list_all, file_name):
                                     length = 0
                                     is_extension = False
                                     hidenScript = hidenScript2
+                                    #print 'navLinks start:' + str(datetime.datetime.now()) + '<br>'
                                     for link in navLinks:
                                         nav_div_id = "#div-nav-" + str(count_index)
                                         divID = '#div'
                                         aid = "#div-nav-" + link
                                         if is_extension:
                                             hidenScript = hidenScript3
+                                        #print 'genLinkWithScript2 start:' + str(datetime.datetime.now())
                                         content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 4) + ');', link, '#888888', 9, aid)
+                                        #print 'genLinkWithScript2 end:' + str(datetime.datetime.now())
                                         count += 1 
                                         length += len(link) + 1
                                         if count >= max_nav_link_row or length > split_length or link == last_engin_type:
@@ -737,6 +751,8 @@ def build_lines(list_all, file_name):
                                             hidenScript2 += 'hidendiv_3("' + nav_div_id + '");'
                                         if link == last_engin_type:
                                             is_extension = True
+                                    #print 'navLinks end:' + str(datetime.datetime.now()) + '<br>'
+                                    #print 'genMoreEnginHtml start:' + str(datetime.datetime.now()) + '<br>'
                                     if Config.extension_mode == False and Config.hiden_engins:
                                         more_html = ''
                                         more_html = utils.genMoreEnginHtml('#div-' + linkID, hidenScript2 + 'setText("' + '#div-' + linkID + '")', '...', content_divID + '-' + content_divID, doubleQ=False)
@@ -744,7 +760,8 @@ def build_lines(list_all, file_name):
                                             if div_content_list[index].find('#more') != -1:
                                                 div_content_list[index] = div_content_list[index].replace('#more', more_html)
                                                 break
-                                    if content != '':
+                                    #print 'genMoreEnginHtml end:' + str(datetime.datetime.now()) + '<br>'
+                                    if content != '' and plugins_mode == False:
                                         div_style = ''
                                         if Config.background == '':
                                             div_style += 'background-color:#F8F8FF;'
@@ -752,14 +769,15 @@ def build_lines(list_all, file_name):
                                         div_content_extension_list.append('<div id="' + nav_div_id + '" style="' + div_style + '">')
                                         div_content_extension_list.append(content)
                                         div_content_extension_list.append('</div>')
-                                        if plugins_mode == False:
-                                            div_content_extension_list.append('<br>')
+                                        #if plugins_mode == False:
+                                        div_content_extension_list.append('<br>')
+                                    #print 'getDescDivs start:' + str(datetime.datetime.now()) + '<br>'
                                     for link in navLinks:
                                         divID = '#div-' + link
                                         div_content_extension_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
+                                    #print 'getDescDivs end:' + str(datetime.datetime.now()) + '<br>'
                                 if l == lines - 1:
                                     gen_html_done = True
-
 
                     if end >= describe:
                         if html_style == False:
@@ -781,7 +799,7 @@ def build_lines(list_all, file_name):
                 for (k, v) in engin_list_dict.items():
                     id_title_lines[i][j] += v
             
-
+    #print 'build_lines end:' + str(datetime.datetime.now())
     return id_title_lines, describe_lines
 
 def get_line(lines, start, end, j):
@@ -902,6 +920,8 @@ def gen_html_body_v2(content, row, subRow):
 last_content = ''
 def smartLink(content, record):
     global last_content
+    if content == '':
+        return ''
     if content.strip().startswith('path:'):
         path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'}).strip()
         last_content = path
@@ -971,8 +991,8 @@ def smartLink(content, record):
         elif ret.find(';') != -1:
             #ret = ret.replace(';', ', ')
             split_char = ';'
-
-        return genSmartLinkHtml(tag, record, split_char, '', content, dialogMode=True)
+        digMode = Config.smart_engin_for_tag.has_key(tag) == False
+        return genSmartLinkHtml(tag, record, split_char, '', content, dialogMode=digMode)
 
     else:
         if last_content.find(content) != -1:
@@ -1015,7 +1035,7 @@ def isAccountTag(content):
     return content.strip().startswith('slack:') or content.strip().startswith('gitter:') or content.strip().startswith('twitter:') or content.strip().startswith('github:') or content.strip().startswith('youtube:') or content.strip().startswith('vimeo:') or content.strip().startswith('g-group:') or content.strip().startswith('medium:') or content.strip().startswith('goodreads:') or content.strip().startswith('fb-group:') or content.strip().startswith('meetup:')
 
 def isSmartLinkTag(content):
-    return content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner:') or content.strip().startswith('alias:') or content.strip().startswith('professor:') or content.strip().startswith('conference:') or content.strip().startswith('cto:') or content.strip().startswith('company:') or content.strip().startswith('g-plus') or content.strip().startswith('engineer:') or content.strip().startswith('institute:') or content.strip().startswith('director') or content.strip().startswith('ceo')
+    return content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner:') or content.strip().startswith('alias:') or content.strip().startswith('professor:') or content.strip().startswith('conference:') or content.strip().startswith('cto:') or content.strip().startswith('company:') or content.strip().startswith('g-plus') or content.strip().startswith('engineer:') or content.strip().startswith('institute:') or content.strip().startswith('director') or content.strip().startswith('ceo') or content.strip().startswith('vp:')
 
 def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False):
     global last_content
@@ -1032,7 +1052,7 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
                 link = url
                 if url.find('%s') != -1:
                     link = url.replace('%s', i.strip().replace(' ', ''))
-                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret))) 
+                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode) 
             else:
                 html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode) 
             if old_i != ret[len(ret) - 1]:
@@ -1045,9 +1065,9 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
             link = url
             if url.find('%s') != -1:
                 link = url.replace('%s', ret)
-            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1))
+            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode)
         else:
-            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1))
+            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode)
 
     return content[ 0 : content.find(':') + 1 ] + html
 
