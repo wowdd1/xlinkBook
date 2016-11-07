@@ -675,7 +675,8 @@ class GithubSpider(Spider):
                 'oreillymedia' : 'https://github.com/oreillymedia',\
                 'usgs' : 'https://github.com/usgs',\
                 'gitter' : 'https://github.com/gitterHQ',\
-                'Oxford-Robotics-Institute' : 'https://github.com/oxford-ori'}
+                'Oxford-Robotics-Institute' : 'https://github.com/oxford-ori',\
+                'mila-udem' : 'https://github.com/mila-udem'}
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\
                 'nipy' : 'https://github.com/nipy',\

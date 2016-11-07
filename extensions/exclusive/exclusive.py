@@ -6,7 +6,8 @@ from config import Config
 class Exclusive(BaseExtension):
 
     def excute(self, form_dict):
-        title = form_dict['rTitle']
+        rID = form_dict['rID'].strip()
+        title = form_dict['rTitle'].strip()
         #fileName = form_dict['fileName']
         fileName = form_dict['originFileName']
         #if fileName.find("/custom") != -1:
@@ -17,7 +18,8 @@ class Exclusive(BaseExtension):
         db = fileName[fileName.find('db/') + 3 : fileName.rfind('/')] + '/'
         key = fileName[fileName.rfind('/') + 1 :]
         print db + ' ' + key
-        return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + title.replace('...', '') + '&column=1'
+        #return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + title.replace('...', '') + '&column=1'
+        return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1'
 
 
     def check(self, form_dict):

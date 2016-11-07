@@ -7,7 +7,7 @@ ai-labs-6 | Hebrew University of Jerusalem |  |
 ai-labs-7 | Mobileye | http://www.mobileye.com/ | cto:Amnon Shashua
 ai-labs-8 | Oxford Centre for Theoretical Neuroscience and Artificial Intelligence | https://www.psy.ox.ac.uk/research/oxford-centre-for-theoretical-neuroscience-and-artificial-intelligence | 
 ai-labs-9 | Oxford Robotics Institute | http://oxfordrobots.com/ | alias:OXFORD ROBOTCAR, matconvnet
-ai-labs-10 | Université de Montréal | | director:Yoshua Bengio alias:theano, elementai
+ai-labs-10 | Université de Montréal | | director:Yoshua Bengio alias:theano, elementai github:mila-udem
 ai-labs-11 | Dalle Molle | http://idsia.ch/ |
 ai-labs-12 | The Siena College Institute for Artificial Intelligence |  | alias:SCIAI
 ai-labs-13 | ETH AI |  | 
@@ -24,5 +24,6 @@ ai-labs-23 | IBM Research | http://researcher.watson.ibm.com/ | director:David K
 ai-labs-24 | Honda Silicon Valley Lab | https://www.hondasvl.com/ | director:Naoki Sugimoto
 ai-labs-25 | Openai | http://openai.com | cto:Greg Brockman github:openai twitter:OpenAI gitter:openai alias:Tesla
 ai-labs-26 | Baidu Silicon Valley AI Lab | http://research.baidu.com/silicon-valley-ai-lab/ | director:Andrew Ng, Adam Coates github:baidu-research, baidu vimeo:baiduusa alias:Paddle
-ai-labs-27 | Apple AI Research | | director:Ruslan Salakhutdinov
-ai-labs-28 | Nvidia | | director:Danny Shapiro alias:cudnn
+ai-labs-27 | Baidu Brain | http://ai.baidu.com/ | ceo:李彦宏 vp:王劲
+ai-labs-28 | Apple AI Research | | director:Ruslan Salakhutdinov
+ai-labs-29 | Nvidia | | ceo:Jen-Hsun Huang director:Danny Shapiro alias:cudnn, Titan X, CUDA youtube:nvidia github:nvidia

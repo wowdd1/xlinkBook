@@ -139,10 +139,19 @@ def handleAddRecord():
 
     if data != '' and os.path.exists(fileName):
         f = open(fileName, 'a')
-        f.write(data + '\n')
+        f.write(toRecordFormat(data))
         f.close()
 
     return ''
+
+def toRecordFormat(data):
+    if data.find('|') != -1:
+        return data + '\n'
+    else:
+        rID = 'custom-'
+        for item in data.split(' '):
+            rID += item[0 : 1]
+        return rID + ' | ' + data + ' | | \n'
 
 @app.route('/exec', methods=['POST'])
 def handleExec():
@@ -175,13 +184,23 @@ def handleQueryUrl():
         count = 0
         for k, v in resultDict.items():
             count += 1
-            result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966 ; font-size: 10pt;", module='dialog', library=request.form['fileName']) + '&nbsp;'
+            result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName']) + '&nbsp;'
             if count % 5 == 0 and count > 0:
                 result += '<br>'
+        if len(Config.command_for_dialog) > 0 and request.form['fileName'].find('-library') != -1:
+            result += '<br>' + dialogCommand(request.form['fileName'], request.form['searchText'])
     else:
         urls = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
         result = ' '.join(urls)
     print 'handleQueryUrl: ' + result
+    return result
+
+def dialogCommand(fileName, text):
+    result = ''
+    for command in Config.command_for_dialog:
+        if command == 'add':
+            script = "addRecord('" + fileName + "', '" + text + "');"
+            result += utils.enhancedLink('', '#' + command, script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
     return result
 
 @app.route('/userlog', methods=['POST'])
@@ -227,6 +246,8 @@ def handleThumb():
 def chrome():
     return utils.gen_plugin_content(request.form['title'])
 
+    
+
 @app.route('/web_content/chrome/<page>', methods=['GET', 'POST'])
 def web(page):
     print page
@@ -252,7 +273,7 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += " -n "    
     if ft != '':
         ft = ft.replace('"', '')
-        cmd += ' -f "' + ft.replace('-or-', '#or').replace('-and-', '#and').replace('-not-', '#not') + '"'
+        cmd += ' -f "' + ft.replace('[or]', '#or').replace('[and]', '#and').replace('[not]', '#not') + '"'
         if merger != 'false':
             cmd += ' -m '
     if merger == 'true':
@@ -306,7 +327,7 @@ def listAllFile(db):
     html += '<head>'
     html += '<style type="text/css">a { font-weight:Normal;  text-decoration:none; } a:hover { text-decoration:underline; }</style>'
     html += '<script language="JavaScript" type="text/JavaScript">'
-    html += ''.join(open('web/jquery-1.8.3.min.js', 'rU').readlines())
+    html += ''.join(open('web/jquery-3.1.1.min.js', 'rU').readlines())
     html += 'function userlog(text, url, module, library, rid) {$.post("/userlog", {text : text , url : url, module : module, library : library, rid : rid}, function(data){});}'
     html +='</script>'
     html += '</head>'

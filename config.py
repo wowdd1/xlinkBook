@@ -11,16 +11,21 @@ class Config():
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'google' #'glucky'
-    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky', 'linkedin'],\
+    smart_engin_for_tag = {}
+    '''
+    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky'],\
                            'university' : 'youtube',\
                            'professor' : ['phdtree', 'glucky'],\
                            'g-plus' : 'plus.google',\
                            'company' : 'glucky',\
                            'director' : ['twitter', 'glucky']}
                            #'topic' : ''}
+    '''
     smart_engin_for_extension = {'' : ''}
 
+    #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
+    command_for_dialog = ['add']
 
     smart_link_max_text_len = 60
     smart_link_br_len = 80
@@ -196,7 +201,7 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'h1' #"div#title"  # tag#class or tag
+    convert_tag = 'a' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""

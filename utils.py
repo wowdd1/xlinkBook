@@ -60,6 +60,7 @@ class Utils:
     }
     search_engin_dict = {}
     search_engin_type_engin_dict = {}
+    search_engin_type_2_engin_title_dict = {}
     search_engin_type = []
     engin_extension = []
     search_engin_url_dict = {}
@@ -120,7 +121,14 @@ class Utils:
                             self.search_engin_type_engin_dict[category].append(url)
                         else:
                             self.search_engin_type_engin_dict[category] = [url]
- 
+
+                        if self.search_engin_type_2_engin_title_dict.has_key(category):
+                            self.search_engin_type_2_engin_title_dict[category].append(record.get_title().strip())
+                        else:
+                            self.search_engin_type_2_engin_title_dict[category] = [record.get_title().strip()]
+                        
+            
+            self.search_engin_type_2_engin_title_dict['star'] = self.sortEnginList(self.search_engin_type_2_engin_title_dict['star'])
         if len(self.search_engin_type) == 0 and os.path.exists('db/metadata/engin_type'):
             f = open('db/metadata/engin_type','rU')
             all_lines = f.readlines()
@@ -447,17 +455,22 @@ class Utils:
         else:
             return ''
 
+
     def getEnginList(self, engins, folder=''):
         if engins.startswith('description:') or engins.startswith('d:'):
+            key = engins[engins.find(':') + 1 :].strip()
+            if self.search_engin_type_2_engin_title_dict.has_key(key):
+                return self.search_engin_type_2_engin_title_dict[key]
             engin_list = []
             tags = engins[engins.find(':') + 1 :].strip().split(' ')
             #print engins
             if self.ddg_mode:
-                return self.getDDGEnginList(tags)
+                self.search_engin_type_2_engin_title_dict[key] = self.getDDGEnginList(tags)
             if Config.recommend_engin and tags[0] == 'star' and folder != '':
-                return self.recommendEngins(folder)
+                self.search_engin_type_2_engin_title_dict[key] = self.recommendEngins(folder)
             else:
-                return self.realGetEnginList(tags, self.search_engin_dict.values())
+                self.search_engin_type_2_engin_title_dict[key] = self.realGetEnginList(tags, self.search_engin_dict.values())
+            return self.search_engin_type_2_engin_title_dict[key] 
         else:
             return engins.split(' ')
 
@@ -479,9 +492,12 @@ class Utils:
                         #engin = record.get_title().strip()
                         engin_list.append(record.get_title().strip())
         if sort:
-            return sorted(engin_list, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
+            return self.sortEnginList(engin_list)
         else:
             return engin_list
+
+    def sortEnginList(self, engin_list):
+        return sorted(engin_list, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
 
     def getDDGEnginList(self, tags):
         if len(self.ddg_search_engin_type) == 0 or len(self.ddg_search_engin_dict) == 0:
@@ -538,10 +554,10 @@ class Utils:
                 keyword = topic.strip()
             if Config.hiden_content_after_search and pluginsMode == False:
                 script = "var pid = this.parentNode.parentNode.id; hidenMoreContent(pid, 1);"
-                style = "color:'" + color + ' ; font-size: ' + str(fontSize) + "'pt;"
+                style = "color:'" + color + '; font-size: ' + str(fontSize) + "'pt;"
                 result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, script=script, useQuote=useQuote, module=module, library=library, searchText=keyword, rid='#rid')
             else:
-                style = "color:'" + color + ' ; font-size:' + str(fontSize) + "'pt;"
+                style = "color:'" + color + '; font-size:' + str(fontSize) + "'pt;"
                 result[engin] = self.enhancedLink(self.getEnginUrlEx(engin, keyword, query), self.formatEnginTitle(engin_display), style=style, useQuote=useQuote, module=module, library=library, searchText=keyword, rid='#rid')
             result[engin] += '&nbsp;'
         return result
@@ -698,7 +714,7 @@ class Utils:
             engins = self.star_engin_cache
         else:
             engins = self.getEnginList('d:star')
-            self.star_engin_cache = engins;
+            self.star_engin_cache = engins.append('glucky');
 
         for engin in engins:
             result[engin] = self.toQueryUrl(self.getEnginUrl(engin), text)
@@ -790,7 +806,7 @@ class Utils:
         result = ''
         
         if dialogMode:
-            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="top" data-trigger="hover" >'
+            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="top" data-trigger="hover" alt="sdw">'
         else:
             result = '<a target="_blank" href="javascript:void(0);"'
 
@@ -1227,11 +1243,13 @@ class Utils:
         f.close()
         cmd = "./list.py -i web_content/chrome/input -b 4  -c 1  -p -e 'd:star' -n -d "
         '''
+        print str(datetime.datetime.now())
         cmd = "./list.py -i ' | " + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + " | | ' -b 4  -c 1  -p -e 'd:star' -n -d "
         if search_box == False:
             cmd += ' -x '
         cmd += " > web_content/chrome/output.html"
         html = subprocess.check_output(cmd, shell=True)
+        print str(datetime.datetime.now())
         #print data
         #data = "ddd"
         #f = open('web_content/chrome/output.html', 'w')
