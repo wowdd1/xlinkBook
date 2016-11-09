@@ -253,6 +253,9 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs['screenWidth'] = screen.width;
     postArgs['screenHeight'] = screen.height;
     postArgs['page'] = 1;
+    postArgs['os'] = getOsInfo();
+    postArgs['browser'] = getBrowserInfo();
+
     if (obj.text == "search" || obj.text == "keyword") {
         var selection = window.getSelection().toString();
         if (selection != '') {
@@ -435,7 +438,9 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     if (fileName.indexOf("library") > 0){
         nocache = "true";
     }
-    $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, originFileName : fileName, nocache : nocache, column : column, 'check' : 'true', user_name : user_name}, function(data){
+    var os = getOsInfo();
+    var browser = getBrowserInfo();
+    $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, originFileName : fileName, nocache : nocache, column : column, 'check' : 'true', user_name : user_name, os : os, browser : browser}, function(data){
         if (data.trim() != '') {
             console.log("xx", data)
             var extensions = data.split(" ");
@@ -570,7 +575,9 @@ function exec(command, text, url) {
 }
 
 function userlog(text, url, module, library, rid, searchText, resourceType) {
-    $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name}, function(data){});
+    var os = getOsInfo();
+    var browser = getBrowserInfo();
+    $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){});
 }
 
 function chanageLinkColor(obj, color, fontSize) {
@@ -599,4 +606,78 @@ function queryUrlFromServer(text, url, module, library, rid, searchText, resourc
             userlog(text, urls[i], module, library, rid, searchText, resourceType);
         }
     });
+}
+
+function getBrowserInfo() {
+    var ua = navigator.userAgent.toLowerCase(); 
+    var isStrict = document.compatMode == "CSS1Compat"  
+    isOpera = ua.indexOf("opera") > -1  
+    isChrome = ua.indexOf("chrome") > -1  
+    isSafari = !isChrome && (/webkit|khtml/).test(ua)  
+    isSafari3 = isSafari && ua.indexOf('webkit/5') != -1  
+    isIE = !isOpera && ua.indexOf("msie") > -1  
+    isIE7 = !isOpera && ua.indexOf("msie 7") > -1  
+    isIE8 = !isOpera && ua.indexOf("msie 8") > -1  
+    isGecko = !isSafari && !isChrome && ua.indexOf("gecko") > -1  
+    isGecko3 = isGecko && ua.indexOf("rv:1.9") > -1  
+    isBorderBox = isIE && !isStrict  
+    var broser = ""; 
+
+    if(isIE){  
+        broser = "IE 6";  
+    }else if(isIE7){  
+        broser = "IE 7";  
+    }else if(isIE8){  
+        broser = "IE 8";  
+    }else if(isOpera){  
+        broser = "Opera";  
+    }else if(isChrome){  
+        broser = "Chrome";  
+    }else if(isSafari){  
+        broser = "Safari";  
+    }else if(isSafari3){  
+        broser = "Safari3";  
+    }else{  
+        broser = "Unknow";  
+    }     
+    return broser;
+}
+
+function getOsInfo() {
+    var ua = navigator.userAgent.toLowerCase();  
+                
+    isWin7 = ua.indexOf("nt 6.1") > -1  
+    isVista = ua.indexOf("nt 6.0") > -1  
+    isWin2003 = ua.indexOf("nt 5.2") > -1  
+    isWinXp = ua.indexOf("nt 5.1") > -1  
+    isWin2000 = ua.indexOf("nt 5.0") > -1  
+    isWindows = (ua.indexOf("windows") != -1 || ua.indexOf("win32") != -1)  
+    isMac = (ua.indexOf("macintosh") != -1 || ua.indexOf("mac os x") != -1)  
+    isAir = (ua.indexOf("adobeair") != -1)  
+    isLinux = (ua.indexOf("linux") != -1)  
+      
+    var sys = "";  
+     
+    if(isWin7){  
+        sys = "Windows 7";  
+    }else if(isVista){  
+        sys = "Vista";  
+    }else if(isWinXp){  
+        sys = "Windows xp";  
+    }else if(isWin2003){  
+        sys = "Windows 2003";  
+    }else if(isWin2000){  
+        sys = "Windows 2000";  
+    }else if(isWindows){  
+        sys = "Windows";  
+    }else if(isMac){  
+        sys = "Macintosh";  
+    }else if(isAir){  
+        sys = "Adobeair";  
+    }else if(isLinux){  
+        sys = "Linux";  
+    }else{  
+        sys = "Unknow";  
+    }  
+    return sys;
 }

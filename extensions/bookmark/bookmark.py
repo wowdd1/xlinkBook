@@ -10,6 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 import subprocess
 from record import Record
+from record import Tag
 
 #
 # use "Export History/Bookmarks to JSON/XLS*" chrome extension export bookmark to extensions/bookmark/data/chrome_bookmarks.json
@@ -24,6 +25,7 @@ class Bookmark(BaseExtension):
                '' : ''}
     raw_data = ''
     jobj_list = []
+    tag = Tag()
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
@@ -217,13 +219,15 @@ class Bookmark(BaseExtension):
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
             script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-b-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), jobj['title'], url, '-', hidenEnginSection=Config.bookmark_hiden_engin_section)
-            if Config.bookmark_show_url_under_title == False:
-                url = ''
-            html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, url=url);
+
+            descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
+            print 'descHtml:' + descHtml
+            html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml=descHtml);
 
         html += '</p></li>'
 
         return html
+
 
     def genWebsiteHtml(self, key, orginFilename):
         html = '<div class="ref"><ol>'

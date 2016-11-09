@@ -218,6 +218,11 @@ def handleUserLog():
     print '     rid: ' + request.form['rid']
     print '     resourceType: ' + request.form['resourceType']
     print '     user: ' + request.form['user']
+    print '     os: ' + request.form['os']
+    print '     browser: ' + request.form['browser']
+    print '     mac: ' + request.form['mac']
+    print '     ip: ' + request.form['ip']
+    print '     from: ' + request.form['from']
     return ''
 
 @app.route('/extensions', methods=['POST'])
@@ -464,7 +469,10 @@ def library():
         f = open('db/library/' + library, 'a')
         f.write('none | ' + Config.start_library_title+ ' | ' + Config.start_library_url + '| \n')
         f.close()
-    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:star'  -d  -r 20 -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
+    engin = 'star'
+    if Config.recommend_engin_type != '':
+        engin = Config.recommend_engin_type
+    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:" + engin + "'  -d  -r 20 -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
     print cmd
     return subprocess.check_output(cmd, shell=True)
 

@@ -97,7 +97,7 @@ engin-93 | crunchbase | https://www.crunchbase.com/%s/ | priority:8 description:
 engin-94 | topuniversities | http://www.topuniversities.com/search/site/ | priority:0 description:organization review
 engin-95 | douban | https://www.douban.com/search?q= | priority:0 description:book social
 engin-96 | 4shared | http://search.4shared.com/q/CCQD/1/books_office/ | priority:0 description:book
-engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | priority:0 description:business
+engin-97 | indeed | http://www.indeed.com/jobs?l=Mountain+View,+CA&q= | priority:0 description:job
 engin-98 | cn.indeed | http://cn.indeed.com/%E5%B7%A5%E4%BD%9C?l=%E6%B7%B1%E5%9C%B3%E5%B8%82&rq=1&fromage=last&q= | priority:0 description:business
 engin-99 | 51cto | http://www.51cto.com/php/search.php?t=news&ie=utf-8&q= | priority:0 description:news
 engin-100 | dangdang | http://search.dangdang.com/?category_path=01.00.00.00.00.00&type=01.00.00.00.00.00&key= | priority:0 description:book
@@ -116,7 +116,7 @@ engin-112 | digg | http://digg.com/search?q= | priority:0 description:digg
 engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | priority:0 description:wiki
 engin-114 | groups | https://groups.google.com/forum/#!search/ | priority:0 description:organization social
 engin-115 | cognet | http://search.mit.edu/search?client=mit&site=default_collection&output=xml_no_dtd&proxystylesheet=mit&as_sitesearch=cognet.mit.edu&q= | priority:0 description:book paper dataset
-engin-116 | lagou | http://www.lagou.com/jobs/list_ | priority:0 description:business
+engin-116 | lagou | http://www.lagou.com/jobs/list_ | priority:0 description:job
 engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=package:chromium&type=cs&q= | priority:0 description:code
 engin-118 | searchcode | https://searchcode.com/?q= | priority:0 description:code
 engin-119 | krugle | http://opensearch.krugle.org/document/search/#query= | priority:0 description:code

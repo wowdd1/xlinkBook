@@ -693,11 +693,12 @@ class GithubSpider(Spider):
                       'Voigt-Lab' : 'https://github.com/VoigtLab',\
                       'ENCODE-DCC' : 'https://github.com/ENCODE-DCC'}
 
-        self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
+        #self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
         #self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
         #self.getProjectByDict(data_gene, 'biology/projects/github/organization/')
         #self.getStartupPorjects('../db/economics/startup-billion-dollar-club2016')
         #self.getStartupPorjects('../db/rank/smartest-companies2016')
+        self.getStartupPorjects('../db/rank/self-driving-company2016')
 
     def getStartupPorjects(self, path):
         data = {}
@@ -705,7 +706,7 @@ class GithubSpider(Spider):
             f = open(path, 'rU')
             for line in f.readlines():
                 record = Record(line)
-                key = record.get_title().replace(' ', '').strip()
+                key = record.get_title().replace(' ', '').replace('.', '').strip()
                 url = 'https://github.com/' + key
                 data[key.lower()] = url 
                   

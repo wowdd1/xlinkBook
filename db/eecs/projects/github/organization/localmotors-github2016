@@ -1,0 +1,21 @@
+github-localmotors-youtube-upload-angular | youtube-upload-angular | https://github.com/localmotors/youtube-upload-angular | author:localmotors description:An Angular wrapper on the YouTube Upload Widget
+github-localmotors-jenkins-isotope-style | jenkins-isotope-style | https://github.com/localmotors/jenkins-isotope-style | author:localmotors description:Stylesheet for making Jenkins look prettier
+github-localmotors-Style-Guide-Boilerplate | Style-Guide-Boilerplate | https://github.com/localmotors/Style-Guide-Boilerplate | author:localmotors description:A starting point for crafting living style guides.
+github-localmotors-puppet-odoo | puppet-odoo | https://github.com/localmotors/puppet-odoo | author:localmotors 
+github-localmotors-puppet-mcollective | puppet-mcollective | https://github.com/localmotors/puppet-mcollective | author:localmotors description:A module to install and configure mcollective server and client with activeMQ as the middleware.
+github-localmotors-duo_unix | duo_unix | https://github.com/localmotors/duo_unix | author:localmotors description:Duo two-factor authentication for Unix systems
+github-localmotors-puppet-s3fs | puppet-s3fs | https://github.com/localmotors/puppet-s3fs | author:localmotors description:Puppet module to setup s3fs
+github-localmotors-puppet-odoo-mastersetup | puppet-odoo-mastersetup | https://github.com/localmotors/puppet-odoo-mastersetup | author:localmotors 
+github-localmotors-puppet-odoo-roles | puppet-odoo-roles | https://github.com/localmotors/puppet-odoo-roles | author:localmotors description:Roles for the odoo servers
+github-localmotors-puppet-useraccounts | puppet-useraccounts | https://github.com/localmotors/puppet-useraccounts | author:localmotors 
+github-localmotors-puppet-nagios | puppet-nagios | https://github.com/localmotors/puppet-nagios | author:localmotors description:Setup/Configure Nagios Server
+github-localmotors-apache2 | apache2 | https://github.com/localmotors/apache2 | author:localmotors description:Development repository for the apache2 cookbook
+github-localmotors-pyxl | pyxl | https://github.com/localmotors/pyxl | author:localmotors description:A Python extension for writing structured and reusable inline HTML.
+github-localmotors-django-cachemodel | django-cachemodel | https://github.com/localmotors/django-cachemodel | author:localmotors description:Automatic caching for django models.
+github-localmotors-nrpe | nrpe | https://github.com/localmotors/nrpe | author:localmotors description:Chef cookbook to install Nagios NRPE client (was previously part of the Nagios cookbook)
+github-localmotors-sysctl | sysctl | https://github.com/localmotors/sysctl | author:localmotors description:Development repository for the sysctl cookbook
+github-localmotors-puppet-odoo-profiles | puppet-odoo-profiles | https://github.com/localmotors/puppet-odoo-profiles | author:localmotors 
+github-localmotors-veh-engineering | veh-engineering | https://github.com/localmotors/veh-engineering | author:localmotors description:processes and tools for vehicle platform and application engineering
+github-localmotors-legal | legal | https://github.com/localmotors/legal | author:localmotors description:Legal agreements for Local Motors
+github-localmotors-test-kitchen | test-kitchen | https://github.com/localmotors/test-kitchen | author:localmotors description:Test Kitchen is an integration tool for developing and testing infrastructure code and software on isolated target platforms.
+github-localmotors-puppet-odoo-scripts | puppet-odoo-scripts | https://github.com/localmotors/puppet-odoo-scripts | author:localmotors 

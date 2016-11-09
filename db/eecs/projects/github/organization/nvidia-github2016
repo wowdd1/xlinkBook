@@ -18,8 +18,8 @@ github-nvidia-nvidia-modprobe | nvidia-modprobe | https://github.com/NVIDIA/nvid
 github-nvidia-CoMD-CUDA | CoMD-CUDA | https://github.com/NVIDIA/CoMD-CUDA | author:nvidia description:GPU implementation of classical molecular dynamics proxy application.
 github-nvidia-pynvrtc | pynvrtc | https://github.com/NVIDIA/pynvrtc | author:nvidia description:Python Binding to NVRTC
 github-nvidia-vdpau-hevc-example | vdpau-hevc-example | https://github.com/NVIDIA/vdpau-hevc-example | author:nvidia description:A sample VDPAU H.265/HEVC video player
-github-nvidia-nvidia-installer | nvidia-installer | https://github.com/NVIDIA/nvidia-installer | author:nvidia description:NVIDIA driver installer
 github-nvidia-nvidia-xconfig | nvidia-xconfig | https://github.com/NVIDIA/nvidia-xconfig | author:nvidia description:NVIDIA xorg.conf configurator
+github-nvidia-nvidia-installer | nvidia-installer | https://github.com/NVIDIA/nvidia-installer | author:nvidia description:NVIDIA driver installer
 github-nvidia-cbootimage | cbootimage | https://github.com/NVIDIA/cbootimage | author:nvidia description:Tegra BCT and bootable flash image generator/compiler
 github-nvidia-tegra-pinmux-scripts | tegra-pinmux-scripts | https://github.com/NVIDIA/tegra-pinmux-scripts | author:nvidia description:Scripts to auto-generate pin mux drivers and board configuration tables for Tegra SoCs and boards
 github-nvidia-GFN-Link | GFN-Link | https://github.com/NVIDIA/GFN-Link | author:nvidia 
@@ -53,7 +53,6 @@ github-nvidia-android-framework-base | android-framework-base | https://github.c
 github-nvidia-android-system-vold | android-system-vold | https://github.com/NVIDIA/android-system-vold | author:nvidia description:Android Mount Daemon
 github-nvidia-android-framework-opt-net-wifi | android-framework-opt-net-wifi | https://github.com/NVIDIA/android-framework-opt-net-wifi | author:nvidia description:Android WiFi Service
 github-nvidia-torch-distro | torch-distro | https://github.com/NVIDIA/torch-distro | author:nvidia description:Torch installation in a self-contained folder
-github-nvidia-torch-cudnn | torch-cudnn | https://github.com/NVIDIA/torch-cudnn | author:nvidia description:Torch-7 FFI bindings for NVIDIA CuDNN
 github-nvidia-SKA-gpu-degrid | SKA-gpu-degrid | https://github.com/NVIDIA/SKA-gpu-degrid | author:nvidia description:Degridding for the square kilometer array using GPUs
 github-nvidia-SKA-gpu-stefcal | SKA-gpu-stefcal | https://github.com/NVIDIA/SKA-gpu-stefcal | author:nvidia description:Antenna gain calibration for the square kilometer array using GPUs
 github-nvidia-torch-cunn | torch-cunn | https://github.com/NVIDIA/torch-cunn | author:nvidia 
@@ -62,4 +61,5 @@ github-nvidia-android-3rdparty-u-boot | android-3rdparty-u-boot | https://github
 github-nvidia-SKA-gpu-grid | SKA-gpu-grid | https://github.com/NVIDIA/SKA-gpu-grid | author:nvidia description:Gridding for the square kilometer array using GPUs
 github-nvidia-nvidia-query-resource-opengl | nvidia-query-resource-opengl | https://github.com/NVIDIA/nvidia-query-resource-opengl | author:nvidia description:A tool for querying OpenGL resource usage of applications using the NVIDIA OpenGL driver
 github-nvidia-android-prebuilts-device-nvidia | android-prebuilts-device-nvidia | https://github.com/NVIDIA/android-prebuilts-device-nvidia | author:nvidia description:Android Device Configuration
+github-nvidia-torch-cudnn | torch-cudnn | https://github.com/NVIDIA/torch-cudnn | author:nvidia description:Torch-7 FFI bindings for NVIDIA CuDNN
 github-nvidia-torch-cutorch | torch-cutorch | https://github.com/NVIDIA/torch-cutorch | author:nvidia description:A CUDA backend for Torch7

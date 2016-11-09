@@ -198,37 +198,6 @@ def print_keyword(file_name):
         head -50 | nl'
     os.system(cmd)
 
-def color_keyword(text):
-    result = text
-    #if text.find('<a') != -1:
-    #    return text
-    for k in keyword_list:
-        k = ' ' + k
-        if result.find(k + ' ') != -1:
-            continue
-        k = k.strip()
-        if (color_index - 1) % 2 == 0:
-            if html_style == True:
-                #result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
-                result = replacekeyword(result, k, '<font color="#33EE22">' + k + '</font>')
-            else:
-                result = result.replace(k, utils.getColorStr('brown', k))
-        else:
-            if html_style == True:
-                #result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
-                result = replacekeyword(result, k, '<font color="#66CCFF">' + k + '</font>')
-                #return result.encode('utf-8')
-            else:
-                result = result.replace(k, utils.getColorStr('darkcyan', k))
-
-    return result.encode('utf-8')
-
-def replacekeyword(data, k, colorKeyword):
-    data = data.replace(' ' + k, ' ' + colorKeyword)
-    data = data.replace(' ' + k[0 : 1].upper() + k[1:] + ' ', ' ' + colorKeyword)
-    data = data.replace(' ' + k[0 : 1].upper() + k[1:], ' ' + colorKeyword)
-    data = data.replace(' ' + k.upper(), ' ' + colorKeyword)
-    return data
 
 def contain_keyword(text):
     for k in keyword_list:
@@ -355,52 +324,6 @@ def update_cell_len(index):
     else:
         course_name_len = cell_len - course_num_len - 1
 
-def next_pos(text, start):
-    min_end = len(text)
-    c_len = course_name_len
-    if html_style:
-        c_len = course_name_len + 10
-    for k in keyword_list:
-        end = text.lower().find(' ' + k, start + 2)
-        if end != -1 and end + 1 < min_end:
-            end += 1
-            min_end = end
-
-    if min_end != len(text):
-        min_end -= 1
-        if min_end - start > c_len:
-            ret_end = start + c_len
-            return space_end(text, start, ret_end, c_len)
-        else:
-            return min_end
-
-    if (len(text) - start) < c_len:
-        return start + len(text) - start
-    else:
-        ret_end = start + c_len
-        return space_end(text, start, ret_end, c_len)
-       
-def space_end(text, start, end, c_len): 
-    if html_style == False:
-        return end
-
-    ret_end1 = end
-    ret_end2 = end
-    while ret_end1 >= 0 and ret_end1 < len(text) and text[ret_end1] != ' ':
-        ret_end1 -= 1
-    if ret_end1 < 0:
-        return 0
-    while ret_end2 >= 0 and ret_end2 < len(text) and text[ret_end2] != ' ':
-        ret_end2 += 1
-    if ret_end2 >= len(text):
-        return len(text)
-    
-    if (end - ret_end1) > (ret_end2 - end):
-        return ret_end2
-    if (ret_end2 - start) <= c_len:
-        return ret_end2
-    else:
-        return ret_end1
 
 def genEnginOption(selectid):
 
@@ -485,7 +408,7 @@ def getScript(file_name, first_record):
         if len(Config.smart_engin_for_dialog) > 0:
             print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
         else:
-            print 'var dialog_engin_count = ' + str(len(utils.getEnginList('d:star'))) + ';'
+            print 'var dialog_engin_count = ' + str(len(utils.getEnginList('d:' + Config.recommend_engin_type_for_dialog))) + ';'
         if len(Config.command_for_dialog) > 0 and source.find('-library') != -1:
             print 'var dialog_command_count = ' + str(len(Config.command_for_dialog)) + ';'
         else:
@@ -519,6 +442,7 @@ def getScript(file_name, first_record):
                 };\
 	    });";
         print script_head + click_more + script_end
+
     if plugins_mode == False:
         mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
         print mathjs
@@ -784,9 +708,14 @@ def build_lines(list_all, file_name):
                             describe_lines[l][i][j] = align_describe("")
                         continue
                     record_describe = list_all[i][j].get_describe()
-                    end = next_pos(record_describe, start) 
+                    end = utils.next_pos(record_describe, start, course_name_len, keyword_list, htmlStyle=html_style) 
                     if output_with_describe:
+                        #print list_all[i][j].get_describe()[start : end] + '<br>'
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end], list_all[i][j])
+                        #print describe_lines[l][i][j] + '<br>'
+                        #print 'start:' + str(start) + '<br>'
+                        #print 'end:' + str(end) + '<br>'
+                        #print 'course_name_len: ' + str(course_name_len) + '<br>'
                     start = end
                 count = 0
                 
@@ -809,7 +738,7 @@ def get_line(lines, start, end, j):
         rID = ''
         if isinstance(lines[i][j], Record):
             lines[i][j] =  u' '.join(lines[i][j].get_describe()).encode('utf-8')
-        text = color_keyword(lines[i][j])
+        text = utils.color_keyword(lines[i][j], keyword_list, color_index=color_index, html_style=html_style)
         if html_style and text.strip() == '':
             text = vertical
         result += text + vertical
@@ -936,7 +865,7 @@ def smartLink(content, record):
         if path != source[source.find('db/') :]:
             result += utils.enhancedLink(src, 'path-file', img='<img alt="' + alt+ '" src="https://publicportal.teamsupport.com/Images/file.png" width="20" height="20">', module='main', library=source, rid=record.get_id()) + '&nbsp;'
 
-        result += utils.enhancedLink(folder, 'path-dir', img='<img src="http://lh4.ggpht.com/_tyPXi6GBG_4/SmTOwvWtbrI/AAAAAAAAAHQ/SWd87bZZ_gk/Graphite-folder-set.jpg?imgmax=800" width="20" height="15">', module='main', library=source, rid=record.get_id())
+        result += utils.enhancedLink(folder, 'path-dir', img='<img src="http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg" width="20" height="15">', module='main', library=source, rid=record.get_id())
         
         return result
     elif content.strip().startswith('id:'):
@@ -960,7 +889,7 @@ def smartLink(content, record):
             if engin != '':
                 html += utils.toSmartLink(record.get_title().strip(), engin=engin, showText=tag, module='main', library=source, rid=record.get_id()) 
                 if tag.strip() != tags[len(tags) - 1].strip():
-                    html += ',&nbsp;'
+                    html += '<font color="blue"><i>,</i></font>&nbsp;'
         if html != '':
             return content[ 0 : content.find(':') + 1 ] + html
         else:
@@ -977,7 +906,10 @@ def smartLink(content, record):
     elif isSmartLinkTag(content):
         html = ''
         tag = content[ 0 : content.find(':')].strip()
+        #ret = content[content.find(':') + 1 : ].strip()
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
+        #print ret + '<br>'
+        #ret = 
         last_content = ret
         if ret == None:
             return ''
@@ -995,10 +927,10 @@ def smartLink(content, record):
         return genSmartLinkHtml(tag, record, split_char, '', content, dialogMode=digMode)
 
     else:
-        if last_content.find(content) != -1:
-            last_content += content
+        if last_content.strip().find(content.strip()) != -1:
+            last_content += content.strip()
             return ''
-        last_content += content
+        last_content += content.strip()
         return content
 
 def genAccountHtml(tag, record, content):
@@ -1010,7 +942,9 @@ def genAccountHtml(tag, record, content):
     elif tag == 'twitter':
         url = 'https://twitter.com/%s'    
     elif tag == 'youtube':
-        url = 'https://www.youtube.com/user/%s/'
+        url = 'https://www.youtube.com/user/%s/videos'
+    elif tag == 'y-channel':
+        url = 'https://www.youtube.com/channel/%s/videos'
     elif tag == 'github':
         url = 'https://www.github.com/%s/'
     elif tag == 'vimeo':
@@ -1020,7 +954,7 @@ def genAccountHtml(tag, record, content):
     elif tag == 'fb-group':
         url = 'https://www.facebook.com/groups/%s/'
     elif tag == 'medium':
-        url = 'https://medium.com/@%s'
+        url = 'https://medium.com/%s'
     elif tag == 'goodreads':
         url = 'http://www.goodreads.com/review/list/%s'
     elif tag == 'meetup':
@@ -1032,10 +966,18 @@ def genAccountHtml(tag, record, content):
 
 
 def isAccountTag(content):
-    return content.strip().startswith('slack:') or content.strip().startswith('gitter:') or content.strip().startswith('twitter:') or content.strip().startswith('github:') or content.strip().startswith('youtube:') or content.strip().startswith('vimeo:') or content.strip().startswith('g-group:') or content.strip().startswith('medium:') or content.strip().startswith('goodreads:') or content.strip().startswith('fb-group:') or content.strip().startswith('meetup:')
+    if content.find(':') != -1:
+        prefix = content[0 : content.find(':') + 1].strip()
+        return ' '.join(tag.tag_list_account).find(prefix) != -1
+    else:
+        return False
 
 def isSmartLinkTag(content):
-    return content.strip().startswith('instructors:') or content.strip().startswith('author:') or content.strip().startswith('organization:') or content.strip().startswith('university:') or content.strip().startswith('winner:') or content.strip().startswith('alias:') or content.strip().startswith('professor:') or content.strip().startswith('conference:') or content.strip().startswith('cto:') or content.strip().startswith('company:') or content.strip().startswith('g-plus') or content.strip().startswith('engineer:') or content.strip().startswith('institute:') or content.strip().startswith('director') or content.strip().startswith('ceo') or content.strip().startswith('vp:')
+    if content.find(':') != -1:
+        prefix = content[0 : content.find(':') + 1].strip()
+        return ' '.join(tag.tag_list_smart_link).find(prefix) != -1
+    else:
+        return False
 
 def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False):
     global last_content
@@ -1044,10 +986,17 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
     html = ''
     if ret.find(split_char) != -1:
         ret = ret.split(split_char)
+        lineLenCount = 0
         for i in ret:
-            old_i = i
+            old_i = i.strip()
             if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
                 i = i[0 : i.find(Config.delete_from_char)].strip()
+            if len(i.strip()) > 14:
+                lineLenCount += 14
+            else:
+                lineLenCount += len(i.strip())
+            if old_i == ret[0].strip():
+                lineLenCount += len(tag)
             if url != '':
                 link = url
                 if url.find('%s') != -1:
@@ -1055,11 +1004,15 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
                 html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode) 
             else:
                 html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode) 
-            if old_i != ret[len(ret) - 1]:
+            if old_i != ret[len(ret) - 1].strip():
                 if accountTag:
                     html += '&nbsp;'
                 else:
-                    html += split_char + '&nbsp;'
+                    html += '<font color="blue"><i>' + split_char + '</i></font>' + '&nbsp;'
+
+            if lineLenCount > course_name_len + lineLenCount / 6:
+                lineLenCount = 0
+                html += '<br>'
     else:
         if url != '':
             link = url
@@ -1081,7 +1034,11 @@ def getShowText(accountTag, text, tag, linkCount):
     else:
         font_size = '8'
         if linkCount < 5:
-            font_size = '12'
+            font_size = '11'
+        elif linkCount < 7:
+            font_size = '10'
+        elif linkCount < 8:
+            font_size = '9'
 
     if accountTag:
         prefix = '@'
@@ -1090,11 +1047,16 @@ def getShowText(accountTag, text, tag, linkCount):
         if tag == 'slack':
             prefix = '#'
         if len(text) > 14:
-            font_size = str(int(font_size) - 4)
+            #font_size = str(int(font_size) - 2)
             text = text[0: 14]
-        return '<font style="color:#999966 ; font-size: ' + str(font_size) + 'pt;">' + prefix + text + '</font>'
+        if text.startswith(prefix) == False:
+            text = prefix + text
+        return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt;"><i>' + text + '</i></font>'
     else:
-        return '<font style="font-size: ' + str(font_size) + 'pt;">' + text + '</font>'
+        if Config.background != '':
+            return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
+        else:
+            return '<font style="font-size:' + str(font_size) + 'pt;">' + text + '</font>'
     return text
 
 def print_search_box(hiden):
@@ -1604,7 +1566,10 @@ def print_list(all_lines, file_name = ''):
             if html_style:
                 message += '<div id="total-info"><br/>'
             if filter_keyword != "":
-                message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records cotain " + filter_keyword
+                info = filter_keyword
+                if len(filter_keyword) > 20:
+                    info = filter_keyword[0 : 20] + '..'
+                message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records cotain " + info
             else:
                 message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records"
             if file_name != '':
@@ -1789,10 +1754,10 @@ def main(argv):
             split_length = custom_cell_len + 15
             #max_nav_link_row = 1000
         elif o in ('-r', '--row'):
-            if int(a) > 0 and int(a) < 30:
+            if int(a) > 0 and int(a) < 50:
                 custom_cell_row = int(a)
             else:
-                print 'the row must between 0 and 30'
+                print 'the row must between 0 and 50'
         elif o in ('-t', '--top'):
             top_row = int(a)
             old_top_row = int(a)

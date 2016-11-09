@@ -1,0 +1,20 @@
+github-tesla-m2eclipse-subclipse | m2eclipse-subclipse | https://github.com/tesla/m2eclipse-subclipse | author:tesla description:Maven SCM Handler for Subclipse
+github-tesla-m2eclipse-egit | m2eclipse-egit | https://github.com/tesla/m2eclipse-egit | author:tesla description:Maven SCM Handler for EGit
+github-tesla-m2e-core-tests | m2e-core-tests | https://github.com/tesla/m2e-core-tests | author:tesla description:Test suite for m2e
+github-tesla-m2eclipse-tycho | m2eclipse-tycho | https://github.com/tesla/m2eclipse-tycho | author:tesla 
+github-tesla-book-tycho | book-tycho | https://github.com/tesla/book-tycho | author:tesla 
+github-tesla-m2eclipse-webby | m2eclipse-webby | https://github.com/tesla/m2eclipse-webby | author:tesla description:Web Application Runner for Maven WAR Projects
+github-tesla-m2eclipse-ajdt | m2eclipse-ajdt | https://github.com/tesla/m2eclipse-ajdt | author:tesla 
+github-tesla-m2eclipse-cvs | m2eclipse-cvs | https://github.com/tesla/m2eclipse-cvs | author:tesla description:Maven SCM Handler for CVS
+github-tesla-m2eclipse-mavenarchiver | m2eclipse-mavenarchiver | https://github.com/tesla/m2eclipse-mavenarchiver | author:tesla 
+github-tesla-tesla-ide | tesla-ide | https://github.com/tesla/tesla-ide | author:tesla 
+github-tesla-m2eclipse-hudson | m2eclipse-hudson | https://github.com/tesla/m2eclipse-hudson | author:tesla description:Hudson Integration for M2Eclipse
+github-tesla-m2eclipse-modello | m2eclipse-modello | https://github.com/tesla/m2eclipse-modello | author:tesla 
+github-tesla-m2eclipse-sisu | m2eclipse-sisu | https://github.com/tesla/m2eclipse-sisu | author:tesla 
+github-tesla-m2eclipse-plexus | m2eclipse-plexus | https://github.com/tesla/m2eclipse-plexus | author:tesla 
+github-tesla-m2eclipse-buildhelper | m2eclipse-buildhelper | https://github.com/tesla/m2eclipse-buildhelper | author:tesla 
+github-tesla-tesla-aether | tesla-aether | https://github.com/tesla/tesla-aether | author:tesla 
+github-tesla-m2eclipse-tests | m2eclipse-tests | https://github.com/tesla/m2eclipse-tests | author:tesla 
+github-tesla-feature-zip-plugin | feature-zip-plugin | https://github.com/tesla/feature-zip-plugin | author:tesla 
+github-tesla-site-m2eclipse | site-m2eclipse | https://github.com/tesla/site-m2eclipse | author:tesla description:M2Eclipse Website
+github-tesla-m2eclipse-antlr | m2eclipse-antlr | https://github.com/tesla/m2eclipse-antlr | author:tesla 

@@ -2,6 +2,11 @@
    width: 500px;
    margin: 5px;
 }*/
+
+.desc {
+   padding-left: 45px;
+}
+
 ol {
    color: #ccc;
    list-style-type: none;

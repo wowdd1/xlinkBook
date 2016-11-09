@@ -18,6 +18,7 @@ class Config():
                            'professor' : ['phdtree', 'glucky'],\
                            'g-plus' : 'plus.google',\
                            'company' : 'glucky',\
+                           'website' : 'glucky',\
                            'director' : ['twitter', 'glucky']}
                            #'topic' : ''}
     '''
@@ -26,6 +27,7 @@ class Config():
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
     command_for_dialog = ['add']
+    recommend_engin_type_for_dialog = 'star' #ref db/metadata/engin_type
 
     smart_link_max_text_len = 60
     smart_link_br_len = 80
@@ -36,8 +38,6 @@ class Config():
     recommend_engin = True
     recommend_engin_num = 20
     recommend_engin_type = 'star' #ref db/metadata/engin_type
-
-
 
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
@@ -129,8 +129,8 @@ class Config():
     background_after_click = '#E9967A' ##CCEEFF
     fontsize_after_click = ''
 
-    
     background = ''
+    #background = 'https://datacdn.soyo.or.kr/wcont/uploads/2016/02/02164057/alphago_01.jpg'
 
     fav_links = { 'papers' : ip_adress + '/?db=eecs/papers/&key=?',\
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
@@ -168,7 +168,6 @@ class Config():
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
     bookmark_page_item_count = 12
-    bookmark_show_url_under_title = False
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
@@ -201,7 +200,7 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'a' #"div#title"  # tag#class or tag
+    convert_tag = 'strong' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
