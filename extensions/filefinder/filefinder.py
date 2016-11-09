@@ -79,11 +79,14 @@ class Filefinder(BaseExtension):
 
     def getMatchFiles2(self, keywords, filterList):
         print filterList
-        cmd = 'grep -rE "' + keywords + '" db'
+        cmd = 'grep -riE "' + keywords + '" db'
         print cmd
         output = subprocess.check_output(cmd, shell=True)
         fileList = []
+        fileCountDict = {}
         self.dbFileArgsDict = {}
+        lastFileName = ''
+        count = 0
         for line in output.split('\n'):
             fileName = line[0 : line.find(':')].strip()
             igone = False
@@ -94,6 +97,14 @@ class Filefinder(BaseExtension):
             if igone:
                 continue
             rID = line[line.find(':') + 1 : line.find('|')].strip().replace(' ', '%20') 
+            if lastFileName != '' and fileName == lastFileName:
+                count += 1
+            else:
+                count = 1
+            if fileName != '':
+                fileCountDict[fileName] = count 
+                lastFileName = fileName
+
             if self.dbFileArgsDict.has_key(fileName) == False:
                 print fileName
                 self.dbFileArgsDict[fileName] = rID
@@ -101,7 +112,16 @@ class Filefinder(BaseExtension):
             else:
                 if self.dbFileArgsDict[fileName].find(rID) == -1:
                     self.dbFileArgsDict[fileName] = self.dbFileArgsDict[fileName] + '[or]' + rID
-        return fileList
+        fileCountDict2 = {}
+        for k, v in fileCountDict.items():
+            if k == '':
+                continue
+            fileCountDict2[k + '(' + str(v) + ')'] = v
+        
+        result = []
+        for k, v in sorted(fileCountDict2.items(), lambda x, y: cmp(x[1], y[1]), reverse=True) :
+            result.append(k)
+        return result
 
 
 
@@ -118,11 +138,19 @@ class Filefinder(BaseExtension):
                 if line != '' and (line.find(Config.output_data_to_new_tab_path) == -1 or line.find('.') != -1):
                     count += 1
                     html += '<li><span>' + str(count) + '.</span>'
-                    if line.startswith('db/') and line.endswith(str(datetime.date.today().year)):
-                        url = 'http://' + Config.ip_adress + '/?db=' + line[line.find('/') + 1 : line.rfind('/') + 1] + '&key=' + line[line.rfind('/') + 1 :] + '&column=' + Config.column_num + '&width=' + Config.default_width
+                    if line.startswith('db/') and (line.endswith(str(datetime.date.today().year)) or line.find('(') != -1):
+                        countInfo = ''
+                        if line.find('(') != -1:
+                            countInfo = '(<font color="red"><b>' + line[line.find('(') + 1 : line.find(')')] + '</b></font>)'
+                            line = line[0 : line.find('(')]
+                        url = 'http://' + Config.ip_adress + '/?db=' + line[line.find('/') + 1 : line.rfind('/') + 1] + '&key=' + line[line.rfind('/') + 1 :] 
+                        if line.find('paper') != -1:
+                            url += '&column=1'
+                        else:
+                            url += '&column=' + Config.column_num + '&width=' + Config.default_width
                         if self.dbFileArgsDict.has_key(line.strip()):
                             url += '&filter=' + self.dbFileArgsDict[line.strip()]
-                        html += '<p>' + self.utils.enhancedLink(url, line[line.rfind('/') + 1 :], module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])
+                        html += '<p>' + self.utils.enhancedLink(url, line[line.rfind('/') + 1 :], module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=line[line.rfind('/') + 1 :] + countInfo)
                     else:
                         html += '<p>' + self.utils.enhancedLink(line, line[line.rfind('/') + 1 :], module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])
 

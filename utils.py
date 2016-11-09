@@ -456,13 +456,26 @@ class Utils:
             return ''
 
 
-    def getEnginList(self, engins, folder=''):
+    def getEnginList(self, engins, folder='', sort=False):
         if engins.startswith('description:') or engins.startswith('d:'):
             key = engins[engins.find(':') + 1 :].strip()
-            if self.search_engin_type_2_engin_title_dict.has_key(key):
-                return self.search_engin_type_2_engin_title_dict[key]
             engin_list = []
             tags = engins[engins.find(':') + 1 :].strip().split(' ')
+            cachedEngins = []
+            tags2 = []
+            for tag in tags:
+                if self.search_engin_type_2_engin_title_dict.has_key(tag.strip()):
+                    cachedEngins = cachedEngins + self.search_engin_type_2_engin_title_dict[tag.strip()]
+                else:
+                    tags2.append(tag.strip())
+            if len(tags2) == 0:
+                self.search_engin_type_2_engin_title_dict[key] = cachedEngins
+                if sort:
+                    self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(cachedEngins)
+                return self.search_engin_type_2_engin_title_dict[key]
+            else:
+                tags = tags2
+
             #print engins
             if self.ddg_mode:
                 self.search_engin_type_2_engin_title_dict[key] = self.getDDGEnginList(tags)
@@ -470,9 +483,16 @@ class Utils:
                 self.search_engin_type_2_engin_title_dict[key] = self.recommendEngins(folder)
             else:
                 self.search_engin_type_2_engin_title_dict[key] = self.realGetEnginList(tags, self.search_engin_dict.values())
+
+            if len(cachedEngins) > 0:
+                self.search_engin_type_2_engin_title_dict[key] = cachedEngins + self.search_engin_type_2_engin_title_dict[key]
+                if sort:
+                    self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(self.search_engin_type_2_engin_title_dict[key])
             return self.search_engin_type_2_engin_title_dict[key] 
         else:
             return engins.split(' ')
+
+
 
     def realGetEnginList(self, tags, records, match_title=False, sort=True):
         engin_list = []
@@ -623,6 +643,7 @@ class Utils:
             result += div
         result += "</div>" 
         result += '<div id="' + divid + '-data" style="border-radius: 10px 10px 10px 10px;"></div>'
+        
         return result
 
 
@@ -704,17 +725,20 @@ class Utils:
                     urls.append(self.toQueryUrl(self.getEnginUrl(u), text))  
         return urls
 
-    star_engin_cache = None
+    dialog_engin_cache = None
     def clientQueryEnginUrl2(self, text):
         result = {}
         engins = []
         if len(Config.smart_engin_for_dialog) > 0:
             engins = Config.smart_engin_for_dialog
-        elif self.star_engin_cache != None:
-            engins = self.star_engin_cache
+        elif self.dialog_engin_cache != None:
+            engins = self.dialog_engin_cache
         else:
-            engins = self.getEnginList('d:star')
-            self.star_engin_cache = engins.append('glucky');
+            if Config.recommend_engin_type_for_dialog != '':
+                engins = self.getEnginList('d:' + Config.recommend_engin_type_for_dialog, sort=True)
+            else:
+                engins = self.getEnginList('d:star', sort=True)
+            self.dialog_engin_cache = engins.append('glucky');
 
         for engin in engins:
             result[engin] = self.toQueryUrl(self.getEnginUrl(engin), text)
@@ -907,10 +931,13 @@ class Utils:
     def getLastEnginType(self):
         return self.search_engin_type[len(self.search_engin_type) - 1]
 
-    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True, url=''):
+    def genMoreEnginHtml(self, aid, script, text, content_divID, color='', doubleQ=True, descHtml=''):
         #return ' <a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + ';"> <font size="2" color="#999966">more</font></a>'
         div = '<div id="' + content_divID + '"></div>';
         html = ''
+        desc_divID = aid + '-desc'
+        if descHtml != '':
+            script += "hidendiv_3('" + desc_divID + "');"
         if color != '':
             if doubleQ:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '"><font color="' + color + '">' + text + '</font></a></font>'
@@ -921,14 +948,10 @@ class Utils:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick="' + script + '"><font color="#999966">' + text + '</font></a></font>'
             else:
                 html = ' <font size="2"><a id="' + aid +'" href="' + 'javascript:void(0);' + '" onClick=' + script + '><font color="#999966">' + text + '</font></a></font>'
-        if url != '':
-            url = url.replace('http://', '').replace('https://', '')
-            if len(url) > Config.smart_link_br_len:
-                url = url[0 : Config.smart_link_br_len - 3] + '..'
-
-            return html + '<br><font size="1" style="color:#547BBE;">' + url + '</font>'+ div
-        else:
-            return html + div
+            html = html + div
+        if descHtml != '':
+            html += '<div id="' + desc_divID + '" style="display: none;">' + descHtml + '</div>'
+        return html
 
     def genMoreEnginScript(sefl, linkID, content_divID, id, title, url, info, hidenEnginSection=False):
         script = ''
@@ -1013,7 +1036,103 @@ class Utils:
             print "no url found in " + subject +" db"
 
         return url
+
+
+    def genDescHtml(self, desc, titleLen, keywordList):
+        start = 0
+        html = '<br>'
+        desc = ' ' + desc
+        while True:
+            end = self.next_pos(desc, start, titleLen, keywordList)
+            if end < len(desc):
+                html += self.color_keyword(desc[start : end], keywordList) + '<br>'
+                start = end
+            else:
+                html += self.color_keyword(desc[start : ], keywordList) + '<br>'
+                break
+
+        return html
+
+    def next_pos(self, text, start, titleLen, keywordList, htmlStyle=True):
+        min_end = len(text)
+        c_len = titleLen
+        if htmlStyle:
+            c_len = titleLen + 10
+        for k in keywordList:
+            end = text.lower().find(' ' + k, start + 2)
+            if end != -1 and end + 1 < min_end:
+                end += 1
+                min_end = end
+
+        if min_end < len(text):
+            min_end -= 1
+            if min_end - start > c_len:
+                ret_end = start + c_len
+                return self.space_end(text, start, ret_end, c_len, htmlStyle=htmlStyle)
+            else:
+                return min_end 
+
+        if (len(text) - start) < c_len:
+            return start + len(text) - start
+        else:
+            ret_end = start + c_len
+            return self.space_end(text, start, ret_end, c_len, htmlStyle=htmlStyle)
+           
+    def space_end(self, text, start, end, c_len, htmlStyle=True): 
+        if htmlStyle == False:
+            return end
+
+        ret_end1 = end
+        ret_end2 = end
+        while ret_end1 >= 0 and ret_end1 < len(text) and text[ret_end1] != ' ':
+            ret_end1 -= 1
+        if ret_end1 < 0:
+            return 0
+        while ret_end2 >= 0 and ret_end2 < len(text) and text[ret_end2] != ' ':
+            ret_end2 += 1
+        if ret_end2 >= len(text):
+            return len(text)
         
+        if (end - ret_end1) > (ret_end2 - end):
+            return ret_end2
+        if (ret_end2 - start) <= c_len:
+            return ret_end2
+        else:
+            return ret_end1
+
+   
+    def color_keyword(self, text, keywordList, color_index=0, html_style=True):
+        result = text
+        #if text.find('<a') != -1:
+        #    return text
+        for k in keywordList:
+            k = ' ' + k
+            if result.find(k + ' ') != -1:
+                continue
+            k = k.strip()
+            if (color_index - 1) % 2 == 0:
+                if html_style == True:
+                    #result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
+                    result = self.replacekeyword(result, k, '<font color="#33EE22">' + k + '</font>')
+                else:
+                    result = result.replace(k, utils.getColorStr('brown', k))
+            else:
+                if html_style == True:
+                    #result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
+                    result = self.replacekeyword(result, k, '<font color="#66CCFF">' + k + '</font>')
+                    #return result.encode('utf-8')
+                else:
+                    result = result.replace(k, utils.getColorStr('darkcyan', k))
+
+        return result.encode('utf-8')
+
+    def replacekeyword(self, data, k, colorKeyword):
+        data = data.replace(' ' + k, ' ' + colorKeyword)
+        data = data.replace(' ' + k[0 : 1].upper() + k[1:] + ' ', ' ' + colorKeyword)
+        data = data.replace(' ' + k[0 : 1].upper() + k[1:], ' ' + colorKeyword)
+        data = data.replace(' ' + k.upper(), ' ' + colorKeyword)
+        return data
+
     def find_file_by_pattern(self, pattern='.*', base=".", circle=True):
         re_file = re.compile(pattern, re.I)
         #print pattern
@@ -1247,6 +1366,7 @@ class Utils:
         cmd = "./list.py -i ' | " + selection.replace('"', ' ').replace("'", " ").replace('\n', '').strip() + " | | ' -b 4  -c 1  -p -e 'd:star' -n -d "
         if search_box == False:
             cmd += ' -x '
+        
         cmd += " > web_content/chrome/output.html"
         html = subprocess.check_output(cmd, shell=True)
         print str(datetime.datetime.now())
@@ -1260,7 +1380,7 @@ class Utils:
         if search_box:
             return '<iframe  id="iFrameLink" width="600" height="300" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         else:
-            return '<iframe  id="iFrameLink" width="600" height="190" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
+            return '<iframe  id="iFrameLink" width="600" height="210" frameborder="0"  src="http://' + Config.ip_adress + '/web_content/chrome/test.html"></iframe>'
         #return '{"firstAccess" : "' + data + '"}'
 
     def suportFrame(self, url, sec):

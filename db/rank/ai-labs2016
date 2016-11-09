@@ -1,29 +1,32 @@
-ai-labs-1 | MIT csail | www.csail.mit.edu | director:Daniela Rus github:csail
-ai-labs-2 | Stanford Artificial Intelligence Lab |  http://ai.stanford.edu/ | director:Fei-fei Li
-ai-labs-3 | CMU Robot | https://www.ri.cmu.edu/ | director:Rachel Burcin alias:CMU Machine Learning
-ai-labs-4 | Berkeley Artificial Intelligence Research Lab | http://bair.berkeley.edu/ | alias:caffe
-ai-labs-5 | University of Bristol |  | director:Colin Campell
-ai-labs-6 | Hebrew University of Jerusalem |  |
-ai-labs-7 | Mobileye | http://www.mobileye.com/ | cto:Amnon Shashua
-ai-labs-8 | Oxford Centre for Theoretical Neuroscience and Artificial Intelligence | https://www.psy.ox.ac.uk/research/oxford-centre-for-theoretical-neuroscience-and-artificial-intelligence | 
-ai-labs-9 | Oxford Robotics Institute | http://oxfordrobots.com/ | alias:OXFORD ROBOTCAR, matconvnet
-ai-labs-10 | Université de Montréal | | director:Yoshua Bengio alias:theano, elementai github:mila-udem
-ai-labs-11 | Dalle Molle | http://idsia.ch/ |
-ai-labs-12 | The Siena College Institute for Artificial Intelligence |  | alias:SCIAI
-ai-labs-13 | ETH AI |  | 
-ai-labs-14 | Google X | https://www.solveforx.com/ | director:Astro Teller twitter:solveforx alias:solveforx
-ai-labs-15 | Google Brain | http://research.google.com/teams/brain/ | director:Geoffrey E. Hinton, Jeff Dean university:university of toronto alias:tensorflow
-ai-labs-16 | DeepMind | http://www.deepmind.com | director:Demis Hassabis, David Silver alias:deep mind github:deepmind twitter:DeepMindAI
-ai-labs-17 | Microsoft Research | http://research.microsoft.com/en-us/ | director:Harry Shum github:microsoft-research alias:CNTK
-ai-labs-18 | Allen Institute for Artificial Intelligence | http://allenai.org/ | ceo:Oren Etzioni github:allenai
-ai-labs-19 | Facebook AI Lab | https://research.facebook.com/ai/ | director:Yann LeCun github:facebook university:New York University alias:torch
-ai-labs-20 | SAIL-Toyota Center for AI Research | http://aicenter.stanford.edu/ | ceo:Gill Pratt
-ai-labs-21 | Uber Advanced Technologies Center | https://www.uber.com/info/atc/ | director:Sherif Marakby
-ai-labs-22 | Amazon AWS | http://aws.amazon.com/ | director:Matt Wood github:amznlabs
-ai-labs-23 | IBM Research | http://researcher.watson.ibm.com/ | director:David Kenny alias:ibm watson
-ai-labs-24 | Honda Silicon Valley Lab | https://www.hondasvl.com/ | director:Naoki Sugimoto
-ai-labs-25 | Openai | http://openai.com | cto:Greg Brockman github:openai twitter:OpenAI gitter:openai alias:Tesla
-ai-labs-26 | Baidu Silicon Valley AI Lab | http://research.baidu.com/silicon-valley-ai-lab/ | director:Andrew Ng, Adam Coates github:baidu-research, baidu vimeo:baiduusa alias:Paddle
-ai-labs-27 | Baidu Brain | http://ai.baidu.com/ | ceo:李彦宏 vp:王劲
-ai-labs-28 | Apple AI Research | | director:Ruslan Salakhutdinov
-ai-labs-29 | Nvidia | | ceo:Jen-Hsun Huang director:Danny Shapiro alias:cudnn, Titan X, CUDA youtube:nvidia github:nvidia
+ai-labs-1 | MIT csail | www.csail.mit.edu | director:Daniela Rus github:csail alias:medialab youtube:mitmedialab, MIT, MITCSAIL
+ai-labs-2 | Stanford Artificial Intelligence Lab |  http://ai.stanford.edu/ | director:Fei-fei Li youtube:StanfordUniversity, stanfordonline, stanfordeng scientist:Serafim Batzoglou, Gill Bejerano, Ron Dror, Stefano Ermon, Michael Genesereth, Leonidas Guibas, Dan Jurafsky, Oussama Khatib, Fei Fei Li, Percy Liang, Chris Manning, Juan Carlos Niebles, Ken Salisbury, Silvio Savarese, Maneesh Agrawala, John Duchi, Ron Fedkiw, Noah Goodman, Mykel Kochenderfer, Daphne Koller, Anshul Kundaje, Jure Leskovec, Andrew Ng, Vijay Pande, Chris Re, Sebastian Thrun, Edward Feigenbaum, Richard Fikes, Jean-Claude Latombe, Nils Nilsson, Yoav Shoham
+ai-labs-3 | CMU Robot | https://www.ri.cmu.edu/ | director:Rachel Burcin faculty:Dimitrios Apostolopoulos, Chris Atkeson, J. Andrew (Drew) Bagnell, David Bourne, Howie Choset, Stelian Coros, Keenan Crane youtube:CarnegieMellonU, cmurobotics
+ai-labs-4 | CMU ML | | faculty:Maria Florina Balcan, Ziv Bar-Joseph, William Cohen, Christos Faloutsos, Stephen Fienberg, Katerina Fragkiadaki, Geoffrey Gordon, Matt Gormley, Robert Kass, Ann Lee, Roy Maxion, Tom Mitchell, Alan Montgomery, Andrew W. Moore, Robert Murphy, BarnabÃ¡s PÃ³czos, Pradeep Ravikumar, Roni Rosenfeld, Ruslan Salakhutdinov, Jeff Schneider, Cosma Shalizi, Aarti Singh, Alex Smola, Ryan Tibshirani, Manuela Veloso, Larry Wasserman, Eric Xing, Yiming Yang alias:CMU Machine Learning 
+ai-labs-5 | Berkeley Artificial Intelligence Research Lab | http://bair.berkeley.edu/ | youtube:UCBerkeley alias:caffe faculty:Pieter Abbeel, Peter Bartlett, Trevor Darrell, Anca Dragan, Alyosha Efros, Ken Goldberg, Michael I.Jordan, Dan Klein, Sergey Levine, Jitendra Malik, Stuart Russell, Ruzena Bajcsy, Alexandre Bayen, John Canny, John DeNero, Laurent El Ghaoui, Ron Fearing, Jack Gallant, Joseph Gonzalez, Tom Griffiths, Marti A.Hearst, Kurt Keutzer, Ren Ng, Bruno Olshausen, Christos Papadimitriou, Ben Recht, Shankar Sastry, Dawn Song, Claire Tomlin, Martin Wainwright, Laura Waller, Bin Yu, Avideh Zakhor, Jerome A.Feldman, Nelson Morgan, Lotfi Zadeh
+ai-labs-6 | University of Bristol |  | director:Colin Campell
+ai-labs-7 | Hebrew University of Jerusalem |  |
+ai-labs-8 | Mobileye | http://www.mobileye.com/ | cto:Amnon Shashua youtube:amnonshashua, MobileyeAWS y-channel:UCUVi8zP012gBaiKX1UsipcA people:Amnon Shashua, Liz Cohen -Yerushalmi, Ziv Aviram, Shai Shalev-Shwartz, Ofer Maharshak, Yoram Gdalyahu, Gaby Hayon, Elad Serfaty, Itay Gat, Erez Dagan, Elchanan Rushinek, Shotaro Kawahara, Gideon Stein, David B. Yoffie, Pini Segal, Tal Babaioff, Dan Galves
+ai-labs-9 | Oxford Centre for Theoretical Neuroscience and Artificial Intelligence | https://www.psy.ox.ac.uk/research/oxford-centre-for-theoretical-neuroscience-and-artificial-intelligence | youtube:oxford
+ai-labs-10 | Oxford Robotics Institute | http://oxfordrobots.com/ | alias:OXFORD ROBOTCAR, matconvnet
+ai-labs-11 | Université de Montréal | | director:Yoshua Bengio alias:theano, elementai github:mila-udem
+ai-labs-12 | Dalle Molle | http://idsia.ch/ |
+ai-labs-13 | The Siena College Institute for Artificial Intelligence |  | alias:SCIAI
+ai-labs-14 | ETH AI |  | 
+ai-labs-15 | Google X | https://www.solveforx.com/ | director:Astro Teller twitter:solveforx alias:solveforx
+ai-labs-16 | Google Brain | http://research.google.com/teams/brain/ | director:Geoffrey E. Hinton, Jeff Dean university:university of toronto youtube:GoogleTechTalks, GoogleDevelopers alias:tensorflow scientist:Martín Abadi, Anelia Angelova, Samy Bengio, Thomas M. Breuel, Michael Burrows, Jianmin Chen, Greg Corrado, Andrew M. Dai, Andy Davis, Jeffrey Dean, Matthieu Devin, Douglas Eck, Dumitru Erhan, Anthony Francis, Daniel Golovin, Stephan Gouws, Geoffrey E. Hinton, Geoffrey Irving, Michael Isard, Navdeep Jaitly, Lukasz Kaiser, Anjuli Kannan, Matthew Kelcey, Manjunath Kudlur, Quoc V. Le, Josh Levenberg, Rajat Monga, Derek G. Murray, Mohammad Norouzi, Christopher Olah, Esteban Real, D. Sculley, Pierre Sermanet, Jonathon Shlens, Vikas Sindhwani, David Sussillo, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Viegas, Pete Warden, Martin Wattenberg, Ron J. Weiss, Chad Whipkey, Martin Wicke, Yonghui, Xiaoqiang Zheng
+ai-labs-17 | DeepMind | http://www.deepmind.com | director:Demis Hassabis, David Silver alias:deep mind github:deepmind twitter:DeepMindAI youtube:Mikesev y-channel:UCP7jMXSY2xbc3KCAE0MHQ-A scientist:Ioannis Antonoglou, Martin Riedmiller, Mustafa Suleyman (cofounder), Shane Legg (cofounder), Charles Blundell, Danilo Jimenez Rezende, Shakir Mohamed, Demis Hassabis (cofounder), Marc Bellemare, Alex Graves, Joel Veness, Vlad Minh, Koray Kavukcuoglu, David Silver
+ai-labs-18 | Microsoft Research | http://research.microsoft.com/en-us/ | director:Harry Shum github:microsoft-research youtube:MicrosoftResearch alias:CNTK
+ai-labs-19 | Allen Institute for Artificial Intelligence | http://allenai.org/ | ceo:Oren Etzioni github:allenai y-channel:UCEqgmyWChwvt6MFGGlmUQCQ people:Oren Etzioni, James Allard, Waleed Ammar, Colin Arenz, Dmitry Belenko, Chandra Bhagavatula, Sumithra Bhakthavatsalam, Hiram Brown, Jonghyun Choi, Peter Clark, Miles Crawford, Bhavana Dalvi, Erika Deal, Santosh Divvala, Jason Dunkelberger, Ingmar Ellenberger, Ali Farhadi, Matt Gardner, Gabe Garza, Dirk Groeneveld, Joel Grus, Michal Guerquin, Vu Ha, Marie Hagman, Alida Hammond, Lee Heffelfinger, Alvaro Herrasti, Mark Hopkins, Vidur Joshi, Ani Kembhavi, Liz Kernes, Tushar Khot, Been Kim, Jesse Kinkead, Rodney Kinney, Eric Kolve, Jayant Krishnamurthy, Michael Langan, Ronan Le Bras, Roie Levin, Tran Luu, Maggie Lynn, Roozbeh Mottaghi, Amos Ng, Merrielle Ondreicka, Hsu Han Ooi, Molly Owen, Matthew Peters, Cristian Petrescu-Prahova, Russell Power, Mohammad Rastegari, Brendan Roof, Ashish Sabharwal, Michael Schmitz, Carissa Schoenick, Dustin Schwenk, Hanie Sedghi, Noah Siegel, Sam Skjonsberg, Brandon Stilson, Oyvind Tafjord, Niket Tandon, Peter Turney, Spencer Visick
+ai-labs-20 | Facebook AI Lab | https://research.facebook.com/ai/ | director:Yann LeCun github:facebook university:New York University alias:torch youtube:FacebookDevelopers researcher:Michael Auli, Piotr Bojanowski, Antoine Bordes, Leon Bottou, Y-Lan Boureau, Soumith Chintala, Justin Chiu, Sumit Chopra, Ronan Collobert, Alexis Conneau, Camille Couprie, Yann Dauphin, Piotr Dollar, Matthijs Douze, Angela Fan, Rob Fergus, Adam Fisch, Ross Girshick, Qucheng Gong, Priya Goyal, Benjamin Graham, David Grangier, Edouard Grave, Sam Gross, Bharath Hariharan, Allan Jabri, Jeff Johnson, Armand Joulin, Hervé Jégou, Anitha Kannan, Douwe Kiela, Timothée Lacroix, Yann LeCun, Kevin Lee, Adam Lerer, Mike Lewis, Zeming Lin, David Lopez-Paz, Laurens van der Maaten, Tomas Mikolov, Alexander Miller, Natalia Neverova, Manohar Paluri, Christian Puhrsch, Marc'Aurelio Ranzato, Holger Schwenk, Gabriel Synnaeve, Arthur Szlam, Yaniv Taigman, Yuandong Tian, Andrew Tulloch, Mark Tygert, Nicolas Usunier, Vladimir Vapnik, Nicolas Vasilache, Jason Weston, Ledell Wu, Omry Yadan, Denis Yarats, Larry Zitnick
+ai-labs-21 | SAIL-Toyota Center for AI Research | http://aicenter.stanford.edu/ | ceo:Gill Pratt
+ai-labs-22 | BostonDynamics | | youtube:BostonDynamics 
+ai-labs-23 | Uber Advanced Technologies Center | https://www.uber.com/info/atc/ | director:Sherif Marakby
+ai-labs-24 | Amazon AWS | http://aws.amazon.com/ | director:Matt Wood github:amznlabs
+ai-labs-25 | IBM Research | http://researcher.watson.ibm.com/ | director:David Kenny alias:ibm watson youtube:IBMLabs, IBM, watsonanalytics
+ai-labs-26 | Honda Silicon Valley Lab | https://www.hondasvl.com/ | director:Naoki Sugimoto
+ai-labs-27 | Openai | http://openai.com | scientist:Ilya Sutskever cto:Greg Brockman investor:Elon Musk, Sam Altman, Peter Thiel, Reid Hoffman github:openai twitter:OpenAI gitter:openai alias:Tesla youtube:spacexchannel, TeslaMotors
+ai-labs-28 | Baidu Silicon Valley AI Lab | http://research.baidu.com/silicon-valley-ai-lab/ | director:Andrew Ng, Adam Coates github:baidu-research, baidu vimeo:baiduusa alias:Paddle
+ai-labs-29 | Baidu Brain | http://ai.baidu.com/ | ceo:李彦宏 vp:王劲
+ai-labs-30 | Apple AI Research | | director:Ruslan Salakhutdinov youtube:apple
+ai-labs-31 | Nvidia | | ceo:Jen-Hsun Huang director:Danny Shapiro alias:cudnn, Titan X, CUDA youtube:nvidia github:nvidia, NvidiaTaiwan
+ai-labs-32 | DARPA | | youtube:DARPAtv

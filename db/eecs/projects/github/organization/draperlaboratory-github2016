@@ -1,0 +1,11 @@
+github-draperlaboratory-fracture | fracture | https://github.com/draperlaboratory/fracture | author:draperlaboratory description:an architecture-independent decompiler to LLVM IR
+github-draperlaboratory-llvm-cbe | llvm-cbe | https://github.com/draperlaboratory/llvm-cbe | author:draperlaboratory description:resurrected LLVM "C Backend", with improvements
+github-draperlaboratory-user-ale | user-ale | https://github.com/draperlaboratory/user-ale | author:draperlaboratory description:The User Activity Logging Engine, or User-ALE, is a logging mechanism used to quantitatively assess the behavioural and cognitive state of a data analyst while interacting with Big Data Exploitation Systems
+github-draperlaboratory-qemu-msp | qemu-msp | https://github.com/draperlaboratory/qemu-msp | author:draperlaboratory description:QEMU MSP430 Target (Fork of QEMU)
+github-draperlaboratory-useralejs | useralejs | https://github.com/draperlaboratory/useralejs | author:draperlaboratory description:The Official UserAle JavaScript Client
+github-draperlaboratory-distill | distill | https://github.com/draperlaboratory/distill | author:draperlaboratory description:Distill is an analytic framework for user activity logging
+github-draperlaboratory-compass | compass | https://github.com/draperlaboratory/compass | author:draperlaboratory description:Python REST interface for OrientDB
+github-draperlaboratory-SurveyMongo | SurveyMongo | https://github.com/draperlaboratory/SurveyMongo | author:draperlaboratory description:Mongo DB of Survey Monkey surveys, indexed by user hash
+github-draperlaboratory-userale.pyqt5 | userale.pyqt5 | https://github.com/draperlaboratory/userale.pyqt5 | author:draperlaboratory description:The Official UserAle PyQt5 Client
+github-draperlaboratory-tap | tap | https://github.com/draperlaboratory/tap | author:draperlaboratory 
+github-draperlaboratory-stout | stout | https://github.com/draperlaboratory/stout | author:draperlaboratory description:The Subject Tracker for Online User Testing (STOUT) is a content management system for formal human performance experimentation. STOUT presents tools and operational tasks to each participant. In doing so, it collects: - an intake questionnaire to assess the user’s background and experience as an analyst - operational task performance and confid…

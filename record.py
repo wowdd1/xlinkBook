@@ -105,8 +105,12 @@ class Tag():
         self.tag_features = 'features:'
         self.tag_instructors = 'instructors:'
         self.tag_professor = 'professor:'
+        self.tag_faculty = 'faculty:'
+        self.tag_investigator = 'investigator:'
+        self.tag_researcher = 'researcher:'
         self.tag_adviser = 'adviser:'
         self.tag_scientist = 'scientist:'
+        self.tag_people = 'people:'
         self.tag_description = 'description:'
         self.tag_textbook = 'textbook:'
         self.tag_book = 'book:'
@@ -136,6 +140,8 @@ class Tag():
         self.tag_cto = 'cto:'
         self.tag_founder = 'founder:'
         self.tag_vp = 'vp:'
+        self.tag_investor = 'investor:'
+        self.tag_stockholder = 'stockholder:'
         self.tag_programmer = 'programmer:'
         self.tag_engineer = 'engineer:'
         self.tag_hacker = 'hacker:'
@@ -146,6 +152,7 @@ class Tag():
         self.tag_workshop = 'workshop:'
         self.tag_challenge = 'challenge:'
         self.tag_company = 'company:'
+        self.tag_startup = 'startup:'
         self.tag_lab = 'lab:'
         self.tag_group = 'group:'
         self.tag_team = 'team:'
@@ -165,12 +172,20 @@ class Tag():
         self.tag_goodreads = 'goodreads:'
         self.tag_fb_group = 'fb-group:'
         self.tag_meetup = 'meetup:'
+        self.tag_y_channel = 'y-channel:'
+        self.tag_award = 'award:'
+        self.tag_website = 'website:'
+        self.tag_url = 'url:'
 
         self.tag_list = [self.tag_id, self.tag_videourl, self.tag_author, self.tag_winner, self.tag_ratings, self.tag_term, self.tag_prereq, self.tag_prerequisites, self.tag_toprepo, self.tag_project, self.tag_university,\
-                         self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_professor, self.tag_adviser, self.tag_scientist, self.tag_description, self.tag_textbook, self.tag_book, self.tag_paper, self.tag_homepage,\
-                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cto, self.tag_founder, self.tag_vp, self.tag_programmer, self.tag_engineer, self.tag_hacker, self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_lab, self.tag_group, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup]
+                         self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_professor, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_adviser, self.tag_scientist, self.tag_people, self.tag_description, self.tag_textbook, self.tag_book, self.tag_paper, self.tag_homepage,\
+                         self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cto, self.tag_founder, self.tag_vp, self.tag_investor, self.tag_stockholder, self.tag_programmer, self.tag_engineer, self.tag_hacker, self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, self.tag_lab, self.tag_group, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup, self.tag_y_channel, self.tag_award, self.tag_website, self.tag_url]
 
         self.tag_list_short = ["d:"]
+
+        self.tag_list_account = [self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_github, self.tag_youtube, self.tag_vimeo, self.tag_g_group, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup, self.tag_y_channel]
+
+        self.tag_list_smart_link = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_alias, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_company, self.tag_g_plus, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_award, self.tag_website]
 
 class WrapRecord(Record):
 
@@ -180,7 +195,7 @@ class WrapRecord(Record):
         self.tag = Tag()
 
     def next_tag_pos(self, pos, max_pos):
-        min_pos = 1000
+        min_pos = len(self.describe) + 1
         for t in self.tag.tag_list:
             next_pos = self.describe.lower().find(t, pos + 1)
             if next_pos != -1:
@@ -189,7 +204,7 @@ class WrapRecord(Record):
                 elif next_pos < min_pos:
                     min_pos = next_pos
 
-        if min_pos != 1000:
+        if min_pos != len(self.describe) + 1:
             return min_pos
         else:
             return -1
