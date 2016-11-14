@@ -157,6 +157,7 @@ def customPrintFile(line):
 
     customid = 'famous-neuroscientists'
     customid = parentid + '-' + str(line_id)
+    customid = parentid
 
     if line.strip().startswith('|'):
         print customid + '-' + str(line_id) + line + 'author:' + line[line.find('|') + 1 : line.find('|', line.find('|') + 1)].strip()
@@ -369,7 +370,7 @@ def customPrintFile(line):
         #title = title[0 : title.find('(')].strip()
     '''
     #print customid  + '-' + str(line_id) + ' | ' + line.strip()  + ' | | '
-    print customid  +  ' | ' + line.strip()  + ' | | '
+    #print customid  +  ' | ' + line.strip()  + ' | | '
     #print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
 
 

@@ -11,9 +11,12 @@ class Config():
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'google' #'glucky'
+
+
+    smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag = {}
     '''
-    smart_engin_for_tag = {'instructors' : ['twitter', 'glucky'],\
+    smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
                            'university' : 'youtube',\
                            'professor' : ['phdtree', 'glucky'],\
                            'g-plus' : 'plus.google',\
@@ -22,11 +25,12 @@ class Config():
                            'director' : ['twitter', 'glucky']}
                            #'topic' : ''}
     '''
+    
     smart_engin_for_extension = {'' : ''}
 
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
-    command_for_dialog = ['add']
+    command_for_dialog = ['add2library']
     recommend_engin_type_for_dialog = 'star' #ref db/metadata/engin_type
 
     smart_link_max_text_len = 60
@@ -45,6 +49,7 @@ class Config():
     #default_library = ''
     default_library = 'ai-library'
     #default_library = 'engineering-library'
+    #default_library = 'multimedia-library'
     #default_library = 'cognitive-library'
     #default_library = 'neuro-library'
     #default_library = 'gene-library'
@@ -101,7 +106,7 @@ class Config():
     column_num = "3"
     custom_cell_len = 88 
     split_length = custom_cell_len + 15
-    custom_cell_row = 5
+    custom_cell_row_list = [50, 40, 30]
     cell_len = 89  #  cell_len >= course_num_len + 1 + course_name_len + 3
     course_name_len = 70
     course_num_len = 10
@@ -162,7 +167,6 @@ class Config():
     reference_output_data_format = ''
 
     # bookmark
-    bookmark_enable_cloud_bookmark = False
     bookmark_file_path = "/Users/zd/Downloads/chrome_bookmarks.json"
     bookmark_hiden_engin_section = True
     bookmark_output_data_to_new_tab = False
@@ -171,6 +175,7 @@ class Config():
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
+    filefinder_search_db = True
 
     #content
     content_hiden_engin_section = True
@@ -200,7 +205,7 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'strong' #"div#title"  # tag#class or tag
+    convert_tag = 'td' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
