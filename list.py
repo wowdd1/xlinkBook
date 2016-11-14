@@ -987,6 +987,8 @@ def genAccountHtml(tag, record, content, containID=''):
         url = 'http://memkite.com/%s/'
     elif tag == 'l-group':
         url = 'https://www.linkedin.com/groups/%s/profile'
+    elif tag == 'docker':
+        url = 'https://hub.docker.com/r/%s/'
     else:
         url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tag)
     if url != '':
@@ -1082,6 +1084,8 @@ def getShowText(accountTag, text, tag, linkCount):
             text = text[text.find('-') + 1 :]
         if tag == 'slack':
             prefix = '#'
+        if tag == 'github' and text.find('/') != -1:
+            text = text[text.rfind('/') + 1 : ]
         if len(text) > 14:
             #font_size = str(int(font_size) - 2)
             text = text[0: 14]

@@ -6,6 +6,7 @@ from utils import Utils
 import subprocess
 from config import Config
 import datetime
+import random
 
 class Filefinder(BaseExtension):
     form_dict = None
@@ -18,16 +19,57 @@ class Filefinder(BaseExtension):
         self.form_dict = form_dict
         rTitle = form_dict['rTitle'] 
         rID = form_dict['rID']
+        fileName = form_dict['fileName'].encode('utf8')
+        html = ''
+        record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True)
+        aliasList = self.getAliasList(record)
+        divID = form_dict['divID'].encode('utf8')
+
+        if divID.find('-dbfile-') != -1:
+            keywords = aliasList + [rTitle.replace('%20', ' ')]
+            dbFileList = self.genFileList(self.getMatchFiles2('|'.join(keywords).replace('| ', '|'), [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]]))
+            if dbFileList != '':
+                html += 'matched db files:<br>' + dbFileList
+            return html
+
+
         if form_dict.has_key('selection') and form_dict['selection'] != '':
             rTitle = form_dict['selection'].strip()
-        html = ''
+        
         localFiles = self.genFileList(self.getMatchFiles(rTitle.strip()).split('\n'))
         if localFiles != '':
             html += '<br>' + localFiles
 
-        alias = ''
+        
+        
+        for alias in aliasList:
+            result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'))
+            if result != '':
+                html += alias + ':<br>' + result
+
+        html += '<div class="ref"><br>search my baidu disk for: <br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
+        count = 1
+        for alias in aliasList:
+            count += 1
+            html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
+            #html += '&nbsp;'
+        html += '</div>'
+        if rID.startswith('loop') == False:
+            
+            fileDivID = divID + '-dbfile-' + str(random.randint(0, 1000))
+            fileLinkID = divID + '-dbfile-a-' + str(random.randint(0, 1000))
+
+            html += '<br><div id="' + fileDivID + '" class="ref">'
+
+            script = "var postArgs = {name : 'filefinder', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + fileDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
+            script += "$('#' + '" + fileDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + fileDivID +"').html('Loading...');"
+            html += '<a id="' + fileLinkID + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:12pt;">Search Local DB</a><br> '
+            html += '</div>'
+
+        return html
+
+    def getAliasList(self, record):
         aliasList = []
-        record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True)
         if record != None and record.get_id().strip() != '':
             ret = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'alias'})
             if ret != None:
@@ -36,32 +78,11 @@ class Filefinder(BaseExtension):
                 if alias != '':
                     if alias.find(',') != -1:
                         aliasList = alias.split(',')
-                        for als in aliasList:
-                            result = self.genFileList(self.getMatchFiles(als.strip()).split('\n'))
-                            if result != '':
-                                html += als + ':<br>' + result
+                        return aliasList
                     else:
                         aliasList = [alias.strip()]
-                        result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'))
-                        if result != '':
-                            html += alias + ':<br>' + result
 
-        html += '<div class="ref"><br>search my baidu disk for: <br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
-        count = 1
-        for alias in aliasList:
-            count += 1
-            html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
-            #html += '&nbsp;'
-
-        if Config.filefinder_search_db:
-            keywords = aliasList + [rTitle.replace('%20', ' ')]
-            dbFileList = self.genFileList(self.getMatchFiles2('|'.join(keywords).replace('| ', '|'), [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]]))
-            if dbFileList != '':
-                html += '<br><br>db files:<br>' + dbFileList
-
-        html += '</div>'
-
-        return html
+        return aliasList
 
     def getMatchFiles(self, title):
         output = ''
