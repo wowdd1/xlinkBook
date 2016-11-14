@@ -15,7 +15,7 @@ import datetime
 from flask import (Flask, flash, request, redirect,
     render_template, url_for, session)
 from rauth.service import OAuth2Service
-from record import Tag
+from record import Tag, Record
 
 tag = Tag()
 # Use your own values in your real application 
@@ -146,6 +146,16 @@ def handleAddRecord():
 
     return ''
 
+@app.route('/exclusive', methods=['POST'])
+def handleExclusive():
+    data = request.form['data'].strip()
+    fileName = request.form['fileName'].strip()
+    rID = ''
+    for d in data.strip().split(' '):
+        rID += d[0 : 1].lower()
+    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ')
+    return utils.output2Disk([record], 'main', fileName[fileName.rfind('/') + 1 :] + '-exclusive')
+
 def toRecordFormat(data):
     if data.find('|') != -1:
         return data + '\n'
@@ -222,6 +232,9 @@ def dialogCommand(fileName, text):
         if command == 'add2library':
             script = "addRecord('" + fileName + "', '" + text + "');"
             result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+        elif command == 'exclusive':
+            script = "exclusive('" + fileName + "', '" + text + "');"
+            result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
     return result
 
 @app.route('/userlog', methods=['POST'])

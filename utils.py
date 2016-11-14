@@ -688,9 +688,9 @@ class Utils:
             return url
 
         url += 'http://' + Config.ip_adress + '/?db=' + Config.output_data_to_new_tab_path.replace('db/', '')
-        url += module
+        url += module + '/'
         if outputFormat.strip() != '':
-            url += '/' + outputFormat + '/'
+            url += outputFormat + '/'
         
         url += '&key=' + fileName
         return url

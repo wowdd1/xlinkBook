@@ -207,6 +207,12 @@ function addRecord(fileName, data) {
     });
 }
 
+function exclusive(fileName, data) {
+    $.post('/exclusive', {fileName : fileName, data : data}, function(data) {
+        window.open(data);   
+    });
+}
+
 function trimStr(str){return str.replace(/(^s*)|(s*$)/g,"");}
 
 function searchTopic(obj, rid, topic, otherInfo){

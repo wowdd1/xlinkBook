@@ -167,19 +167,17 @@ class Bookmark(BaseExtension):
         html += '<br><div id="' + cloudDivID + '" class="ref">'
         aCount = 0
         alias = [rTitle] + alias
-        if len(alias) == 1:
-            script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
-            script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
-            html += '<a id="' + cloudLinkID + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:9pt;">Load Cloud Bookmarks</a>'
-        else:
-            html += ' Load Cloud Bookmarks:  '
-            
-            for a in alias:
-                aCount += 1
+ 
+        html += ' Load Cloud Bookmarks for:  '
+        
+        for a in alias:
+            aCount += 1
+            if aCount == 1:
+                html += '<br>'
 
-                script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + a +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
-                script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
-                html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:12pt;">' + str(aCount) + '</a> '
+            script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + a +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
+            script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
+            html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:10pt;">' + str(a) + '</a><br> '
         html += '</div>'
         return html
 

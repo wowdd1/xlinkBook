@@ -46,12 +46,12 @@ class Filefinder(BaseExtension):
                         if result != '':
                             html += alias + ':<br>' + result
 
-        html += '<div class="ref"><br>search my baidu disk ' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText="1", rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '&nbsp;'
+        html += '<div class="ref"><br>search my baidu disk for: <br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
         count = 1
         for alias in aliasList:
             count += 1
-            html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str(count), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') 
-            html += '&nbsp;'
+            html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
+            #html += '&nbsp;'
 
         if Config.filefinder_search_db:
             keywords = aliasList + [rTitle.replace('%20', ' ')]
