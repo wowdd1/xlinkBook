@@ -711,9 +711,10 @@ def build_lines(list_all, file_name):
                                         #if plugins_mode == False:
                                         div_content_extension_list.append('<br>')
                                     #print 'getDescDivs start:' + str(datetime.datetime.now()) + '<br>'
+                                    dataMarginTop = getDataMarginTop()
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_extension_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12))
+                                        div_content_extension_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12, dataMarginTop=dataMarginTop))
                                     #print 'getDescDivs end:' + str(datetime.datetime.now()) + '<br>'
                                 if l == lines - 1:
                                     gen_html_done = True
@@ -745,6 +746,12 @@ def build_lines(list_all, file_name):
             
     #print 'build_lines end:' + str(datetime.datetime.now())
     return id_title_lines, describe_lines
+
+def getDataMarginTop():
+    if column_num == '1':
+        return ''
+    else:
+        return '15'
 
 def get_line(lines, start, end, j):
     result = vertical

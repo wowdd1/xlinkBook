@@ -65,6 +65,7 @@ class Bookmark(BaseExtension):
     def excute(self, form_dict):
         divID = form_dict['divID'].encode('utf8')
         html = '<br><div class="ref"><ol>'
+        rID = form_dict['rID'].encode('utf8')
         print divID
         if divID.find('-cloud-') != -1:
             html = ''
@@ -76,7 +77,7 @@ class Bookmark(BaseExtension):
             return html
 
         fileName = form_dict['fileName'].encode('utf8')
-        rID = form_dict['rID'].encode('utf8')
+        
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
         alias = self.getAlias(rID.strip(), form_dict['originFileName'])
         #if form_dict.has_key('selection') and form_dict['selection'].strip() != '':
@@ -127,11 +128,10 @@ class Bookmark(BaseExtension):
         if count == 0:
             html = ''
         
-
+        total_page = 0;
         if Config.bookmark_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'bookmark', rTitle, Config.bookmark_output_data_format)
         else:
-            total_page = 0;
             if len(records) < Config.bookmark_page_item_count:
                 total_page = 1
             elif len(records) % Config.bookmark_page_item_count == 0:
@@ -159,26 +159,27 @@ class Bookmark(BaseExtension):
             
                 html += '</div>'
 
+        if rID.startswith('loop') == False:
+            cloudDivID = divID + '-cloud-' + str(random.randint(0, 1000))
+            cloudLinkID = divID + '-cloud-a-' + str(random.randint(0, 1000))
 
-        cloudDivID = divID + '-cloud-' + str(random.randint(0, 1000))
-        cloudLinkID = divID + '-cloud-a-' + str(random.randint(0, 1000))
-
-        
-        html += '<br><div id="' + cloudDivID + '" class="ref">'
-        aCount = 0
-        alias = [rTitle] + alias
- 
-        html += ' Load Cloud Bookmarks for:  '
-        
-        for a in alias:
-            aCount += 1
-            if aCount == 1:
+            if total_page > 1:
                 html += '<br>'
+            html += '<div id="' + cloudDivID + '" class="ref">'
+            aCount = 0
+            alias = [rTitle] + alias
+     
+            html += 'Load Cloud Bookmarks for:  '
+            
+            for a in alias:
+                aCount += 1
+                if aCount == 1:
+                    html += '<br>'
 
-            script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + a +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
-            script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
-            html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:10pt;">' + str(a) + '</a><br> '
-        html += '</div>'
+                script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + a +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
+                script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
+                html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:10pt;">' + str(a) + '</a><br> '
+            html += '</div>'
         return html
 
     def getPageScript(self, form_dict, page):

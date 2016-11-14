@@ -126,6 +126,7 @@ class Figures(BaseExtension):
             thumb_width = '600px'
             row_count = 7
             space = 2 * '&nbsp;'
+       
         if thumb != '':
             html += self.utils.enhancedLink(thumb, '', img='<img width="' + thumb_width + '" src="' + thumb + '" style="' + self.img_style + '"/>', module='figures') + '<br/>'
         if figures != None: 

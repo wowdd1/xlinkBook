@@ -305,6 +305,9 @@ class Utils:
             return line
         if self.check_contain_chinese(line):
             return line
+            
+        if line.strip().find(' ') == -1:
+            return line
         new_line = ''
         for item in line.split(' '):
             new_line += item[0 : 1] + item[1:].lower() + ' '
@@ -611,7 +614,7 @@ class Utils:
     def getDDGEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
         return {}
 
-    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, color2, fontSize):
+    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, color2, fontSize, dataMarginTop=''):
         result = '<div id="' + divid + '" style="display: none;">'
         engin_list = self.getEnginList('d:' + enginType)
         #print engin_list
@@ -645,7 +648,10 @@ class Utils:
             count += 1
             result += div
         result += "</div>" 
-        result += '<div id="' + divid + '-data" style="border-radius: 10px 10px 10px 10px;"></div>'
+        if dataMarginTop != '':
+            result += '<div id="' + divid + '-data" style="border-radius: 10px 10px 10px 10px; margin-top:' + dataMarginTop + 'px;"></div>'
+        else:
+            result += '<div id="' + divid + '-data" style="border-radius: 10px 10px 10px 10px;"></div>'
         
         return result
 
@@ -1123,27 +1129,28 @@ class Utils:
             return ret_end1
 
    
-    def color_keyword(self, text, keywordList, color_index=0, html_style=True):
+    def color_keyword(self, text, keywordList, color_index=0, html_style=True, isTag=True, color1="#33EE22", color2="#66CCFF"):
         result = text
         #if text.find('<a') != -1:
         #    return text
         for k in keywordList:
-            k = ' ' + k
-            if result.find(k + ' ') != -1:
-                continue
+            if isTag:
+                k = ' ' + k
+                if result.find(k + ' ') != -1:
+                    continue
             if result.find(k) == -1:
                 continue
             k = k.strip()
             if (color_index - 1) % 2 == 0:
                 if html_style == True:
                     #result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
-                    result = self.replacekeyword(result, k, '<font color="#33EE22">' + k + '</font>')
+                    result = self.replacekeyword(result, k, '<font color="' + color1 + '">' + k + '</font>')
                 else:
                     result = result.replace(k, utils.getColorStr('brown', k))
             else:
                 if html_style == True:
                     #result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
-                    result = self.replacekeyword(result, k, '<font color="#66CCFF">' + k + '</font>')
+                    result = self.replacekeyword(result, k, '<font color="' + color2 + '">' + k + '</font>')
                     #return result.encode('utf-8')
                 else:
                     result = result.replace(k, utils.getColorStr('darkcyan', k))

@@ -154,7 +154,7 @@ def handleExclusive():
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
     record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ')
-    return utils.output2Disk([record], 'main', fileName[fileName.rfind('/') + 1 :] + '-exclusive')
+    return utils.output2Disk([record], 'main', 'exclusive')
 
 def toRecordFormat(data):
     if data.find('|') != -1:
