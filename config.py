@@ -30,7 +30,7 @@ class Config():
 
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
-    command_for_dialog = ['add2library']
+    command_for_dialog = ['add2library', 'exclusive']
     recommend_engin_type_for_dialog = 'star' #ref db/metadata/engin_type
 
     smart_link_max_text_len = 60
