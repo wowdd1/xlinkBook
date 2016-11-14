@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 import subprocess
 from record import Record
 from record import Tag
+import random
 
 #
 # use "Export History/Bookmarks to JSON/XLS*" chrome extension export bookmark to extensions/bookmark/data/chrome_bookmarks.json
@@ -62,6 +63,18 @@ class Bookmark(BaseExtension):
             return []
 
     def excute(self, form_dict):
+        divID = form_dict['divID'].encode('utf8')
+        html = '<br><div class="ref"><ol>'
+        print divID
+        if divID.find('-cloud-') != -1:
+            html = ''
+            cloud_bookmark = self.genWebsiteHtml(form_dict['rTitle'].encode('utf8'), form_dict['originFileName'])
+            if cloud_bookmark.find('<li>') != -1:
+                html += 'cloud bookmark(' + form_dict['rTitle'].encode('utf8') + '):<br>' + cloud_bookmark
+            else:
+                html = ''
+            return html
+
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
@@ -70,11 +83,11 @@ class Bookmark(BaseExtension):
         #    selection = form_dict['selection'].encode('utf8').strip()
             #if rTitle.find(selection) != -1:
         #    rTitle = selection
-        divID = form_dict['divID'].encode('utf8')
+        
 
         self.updateBookmark()
 
-        html = '<br><div class="ref"><ol>'
+        
         count = 0
         pid = ''
         records = []
@@ -113,11 +126,7 @@ class Bookmark(BaseExtension):
 
         if count == 0:
             html = ''
-
-        if Config.bookmark_enable_cloud_bookmark:
-            cloud_bookmark = self.genWebsiteHtml(form_dict['rTitle'].encode('utf8'), form_dict['originFileName'])
-            if cloud_bookmark.find('<li>') != -1:
-                html += 'cloud bookmark:<br>' + cloud_bookmark
+        
 
         if Config.bookmark_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'bookmark', rTitle, Config.bookmark_output_data_format)
@@ -135,44 +144,54 @@ class Bookmark(BaseExtension):
                 for page in range(0, total_page):
                     print (page + 1)
                     if page == 0 and int(currentPage) > 1:
-                        html += self.utils.enhancedLink('', '<font size="5"><</font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, int(currentPage) - 1))
+                        html += self.utils.enhancedLink('', '<font size="5">< </font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, int(currentPage) - 1), ignoreUrl=True)
                         html += '&nbsp;&nbsp;&nbsp;&nbsp;'
 
                     if ((page + 1) == int(currentPage)):
-                        html += '<font size="5">' + self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1), style="color:#00BFFF;") + '</font> '
+                        html += '<font size="5">' + self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1), style="color:#00BFFF;", ignoreUrl=True) + '</font> '
                     else:
-                        html += self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1)) + ' '
+                        html += self.utils.enhancedLink('', str(page + 1), module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, page + 1), ignoreUrl=True) + ' '
                     
                         
                     if page == total_page - 1 and int(currentPage) < total_page:
                         html += '&nbsp;&nbsp;&nbsp;&nbsp;'
-                        html += self.utils.enhancedLink('', '<font size="5">></font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, int(currentPage) + 1))
+                        html += self.utils.enhancedLink('', '<font size="5"> ></font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, int(currentPage) + 1), ignoreUrl=True)
             
                 html += '</div>'
-            return html
+
+
+        cloudDivID = divID + '-cloud-' + str(random.randint(0, 1000))
+        cloudLinkID = divID + '-cloud-a-' + str(random.randint(0, 1000))
+
+        
+        html += '<br><div id="' + cloudDivID + '" class="ref">'
+        aCount = 0
+        alias = [rTitle] + alias
+        if len(alias) == 1:
+            script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
+            script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
+            html += '<a id="' + cloudLinkID + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:9pt;">Load Cloud Bookmarks</a>'
+        else:
+            html += ' Load Cloud Bookmarks:  '
+            
+            for a in alias:
+                aCount += 1
+
+                script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + a +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
+                script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
+                html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:12pt;">' + str(aCount) + '</a> '
+        html += '</div>'
+        return html
 
     def getPageScript(self, form_dict, page):
         script = 'var postArgs = {};';
-        script += 'postArgs["objID"] = "' + form_dict['objID'] + '";'
-        script += 'postArgs["targetid"] = "' + form_dict['targetid'] + '";'
-        script += 'postArgs["targetDataId"] = "' + form_dict['targetDataId'] + '";'
-        script += 'postArgs["name"] = "' + form_dict['name'] + '";'
-        script += 'postArgs["rID"] = "' + form_dict['rID'] + '";'
-        script += 'postArgs["rTitle"] = "' + form_dict['rTitle'] + '";'
-        script += 'postArgs["url"] = "' + form_dict['url'] + '";'
-        script += 'postArgs["fileName"] = "' + form_dict['fileName'] + '";'
-        script += 'postArgs["check"] = "' + form_dict['check'] + '";'
-        script += 'postArgs["column"] = "' + form_dict['column'] + '";'
-        script += 'postArgs["divID"] = "' + form_dict['divID'] + '";'
-        script += 'postArgs["defaultLinks"] = ' + str(form_dict['defaultLinks']) + ';'
-        script += 'postArgs["user_name"] = "' + form_dict['user_name'] + '";'
-        script += 'postArgs["originFileName"] = "' + form_dict['originFileName'] + '";'
-        script += 'postArgs["selection"] = "' + form_dict['selection'] + '";'
-        script += 'postArgs["screenWidth"] = ' + str(form_dict['screenWidth']) + ';'
-        script += 'postArgs["screenHeight"] = ' + str(form_dict['screenHeight']) + ';'
-
+        #print form_dict
+        for k, v in form_dict.items():
+            if k == 'defaultLinks' or k == 'screenWidth' or k =='screenHeight':
+                script += 'postArgs["' + k + '"] = ' + str(form_dict[k]) + ';'
+            else: 
+                script += 'postArgs["' + k + '"] = "' + form_dict[k] + '";'
         script += 'postArgs["page"] = ' + str(page) + ';'
-
         script += 'requestExtension(postArgs, false);';
         return script
 
@@ -220,8 +239,10 @@ class Bookmark(BaseExtension):
             appendID = str(count)
             script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-b-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), jobj['title'], url, '-', hidenEnginSection=Config.bookmark_hiden_engin_section)
 
-            descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
-            print 'descHtml:' + descHtml
+            descHtml = ''
+            if url != '':
+                descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
+            #print 'descHtml:' + descHtml
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml=descHtml);
 
         html += '</p></li>'
@@ -230,7 +251,7 @@ class Bookmark(BaseExtension):
 
 
     def genWebsiteHtml(self, key, orginFilename):
-        html = '<div class="ref"><ol>'
+        html = '<ol>'
         count = 0
         cookies = dict(unsafe='True')
         page = ''
@@ -251,15 +272,21 @@ class Bookmark(BaseExtension):
             #print r.text
             for div in soup.find_all('div', class_='content'):
                 count += 1
-                html += '<li><span>' + str(count) + '.</span><p>' + self.utils.enhancedLink(div.a['href'], div.a.text, module='xmarks', library=orginFilename)
+                title = self.colorkeyword(div.a.text, key)
+                html += '<li><span>' + str(count) + '.</span><p>' + self.utils.enhancedLink(div.a['href'], title, module='xmarks', library=orginFilename)
                 html += "</p></li>"
             nextDiv = soup.find('div', class_='site-pagination')
             if nextDiv != None and nextpage == '':
                 nextpage = 'http://www.xmarks.com' + nextDiv.a['href']
             if nextDiv == None:
                 break
-        html += "</ol></div>"
+        html += "</ol>"
         return html
+
+    def colorkeyword(self, text, keyword):
+        text = text.replace(keyword.replace('%20', ' '), '<font style="color:red;">' + keyword + '</font>')
+        text = text.replace(keyword.replace('%20', ' ').lower(), '<font style="color:red;">' + keyword.lower() + '</font>')
+        return text
 
     def containIgoncase(self, leftData, rightData):
         return leftData.lower().find(rightData.lower()) != -1
@@ -274,5 +301,5 @@ class Bookmark(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        return self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or Config.bookmark_enable_cloud_bookmark or self.containIgoncase2(self.raw_data, self.getAlias(rID, form_dict['originFileName']))
+        return self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or self.containIgoncase2(self.raw_data, self.getAlias(rID, form_dict['originFileName'])) or rTitle.find('.') != -1
 

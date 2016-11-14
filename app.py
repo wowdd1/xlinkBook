@@ -15,7 +15,9 @@ import datetime
 from flask import (Flask, flash, request, redirect,
     render_template, url_for, session)
 from rauth.service import OAuth2Service
+from record import Tag
 
+tag = Tag()
 # Use your own values in your real application 
 github = OAuth2Service(
     name='github',
@@ -64,7 +66,7 @@ def index():
         args_history['style'] = request.args.get('style', str(Config.css_style_type))
         args_history['desc'] = request.args.get('desc', 'true')
         args_history['width'] = request.args.get('width', '')
-        args_history['row'] = request.args.get('row', '20')
+        args_history['row'] = request.args.get('row', '')
         args_history['top'] = request.args.get('top', '')
         args_history['level'] = request.args.get('level', '')
         args_history['merger'] = request.args.get('merger', '')
@@ -82,7 +84,7 @@ def index():
                       request.args.get('style', str(Config.css_style_type)),
                       request.args.get('desc', 'true'),
                       request.args.get('width', ''),
-                      request.args.get('row', '20'),
+                      request.args.get('row', ''),
                       request.args.get('top', ''),
                       request.args.get('level', ''),
                       request.args.get('merger', ''),
@@ -179,28 +181,47 @@ def handleExec():
 def handleQueryUrl():
     result = ''
     if request.form.has_key('type'):
-        resultDict = utils.clientQueryEnginUrl2(request.form['searchText'])
-        
-        count = 0
-        for k, v in resultDict.items():
-            count += 1
-            result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName']) + '&nbsp;'
-            if count % 5 == 0 and count > 0:
-                result += '<br>'
-        if len(Config.command_for_dialog) > 0 and request.form['fileName'].find('-library') != -1:
-            result += '<br>' + dialogCommand(request.form['fileName'], request.form['searchText'])
+        if request.form['type'] == 'dialog':
+            print request.form
+            resultDict = utils.clientQueryEnginUrl2(request.form['searchText'], resourceType=request.form['resourceType'])
+            
+            count = 0
+            for k, v in resultDict.items():
+                count += 1
+                '''
+                script = ''
+                if request.form['aid'] != '':
+                    script = "chanageLinkColorByID('" + request.form['aid'] + "','" + Config.background_after_click + "', '');"
+                    print '------\n'
+                    print script
+                '''
+
+                if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
+                    v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
+                    print k + '--->' + v
+                        
+                result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
+                if count % 5 == 0 and count > 0:
+                    result += '<br>'
+            if len(Config.command_for_dialog) > 0:
+                library = os.getcwd() + '/db/library/' + Config.default_library;
+                result += '<br>' + dialogCommand(library, request.form['searchText'])
+            result = str(count) + '#' + result
     else:
-        urls = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
-        result = ' '.join(urls)
-    print 'handleQueryUrl: ' + result
+        resultDict = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
+        for k, v in resultDict.items():
+            if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
+                resultDict[k] = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
+        result = ' '.join(resultDict.values())
+    #print 'handleQueryUrl: ' + result
     return result
 
 def dialogCommand(fileName, text):
     result = ''
     for command in Config.command_for_dialog:
-        if command == 'add':
+        if command == 'add2library':
             script = "addRecord('" + fileName + "', '" + text + "');"
-            result += utils.enhancedLink('', '#' + command, script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+            result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
     return result
 
 @app.route('/userlog', methods=['POST'])
@@ -472,7 +493,7 @@ def library():
     engin = 'star'
     if Config.recommend_engin_type != '':
         engin = Config.recommend_engin_type
-    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:" + engin + "'  -d  -r 20 -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
+    cmd = "./list.py -i db/library/" +  library + " -b 4 -u library/ -c 3  -n  -e 'd:" + engin + "'  -d  -w " + Config.default_width + " -s " + str(Config.css_style_type) + " -y " + session['name']
     print cmd
     return subprocess.check_output(cmd, shell=True)
 

@@ -519,3 +519,4 @@ engin-526 | udacity | https://www.google.com/search?lr=&hl=en&as_qdr=all&q=%s%3A
 engin-527 | phdtree | http://phdtree.org/scholar/list/?q= | priority:5 description:wiki
 engin-528 | iversity.org | https://iversity.org/en/courses?utf8=✓&state=&course_type=&course_format=&language=&search= | priority:3 description:course
 engin-529 | openreview | http://openreview.net/search?term=%s&group=all&content=all | priority:5 description:review, paper
+engin-530 | osgameclones | http://osgameclones.com/?q= | priority:5 description:project

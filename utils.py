@@ -377,7 +377,10 @@ class Utils:
     def getEnginUrl(self, engin):
         if self.ddg_mode:
             return self.ddg_search_engin_url_dict[engin]
-        return self.search_engin_url_dict[engin]
+        if self.search_engin_url_dict.has_key(engin):
+            return self.search_engin_url_dict[engin]
+        else:
+            return ''
 
     def getEnginUrlOtherInfo(self, record):
         r = CourseRecord(record.line)
@@ -704,32 +707,40 @@ class Utils:
         return self.toQueryUrl(url, text)
 
     def clientQueryEnginUrl(self, originUrl, text, resourceType, module):
-        url = self.toQueryUrl(self.bestMatchEngin(text, resourceType=resourceType), text)
+        result = {}
+        engin = ''
+        url = self.toQueryUrl(self.getEnginUrl(Config.smart_link_engin), text)
         if originUrl != '':
             url = originUrl
-        urls = [originUrl]
+
+        result[Config.smart_link_engin] = url
+
         if resourceType !='' and Config.smart_engin_for_tag.has_key(resourceType.strip()):
+            result = {}
             if isinstance(Config.smart_engin_for_tag[resourceType.strip()], str):
-                urls = [self.toQueryUrl(self.getEnginUrl(Config.smart_engin_for_tag[resourceType.strip()]), text)]
+                engin = Config.smart_engin_for_tag[resourceType.strip()]
+                result[engin.strip()] = self.toQueryUrl(self.getEnginUrl(engin), text)
             else:
-                urls = []
                 for u in Config.smart_engin_for_tag[resourceType.strip()]:
-                    urls.append(self.toQueryUrl(self.getEnginUrl(u), text))
+                    result[u.strip()] = self.toQueryUrl(self.getEnginUrl(u), text)
 
         if module != '' and Config.smart_engin_for_extension.has_key(module.strip()):
+            result = {}
             if isinstance(Config.smart_engin_for_extension[module.strip()], str):
-                urls = [self.toQueryUrl(self.getEnginUrl(Config.smart_engin_for_extension[module.strip()]), text)]
+                engin = Config.smart_engin_for_extension[module.strip()]
+                result[engin.strip()] = self.toQueryUrl(self.getEnginUrl(engin), text)
             else:
-                urls = []
                 for u in Config.smart_engin_for_extension[module.strip()]:
-                    urls.append(self.toQueryUrl(self.getEnginUrl(u), text))  
-        return urls
+                    result[u.strip()] = self.toQueryUrl(self.getEnginUrl(u), text)  
+        return result
 
     dialog_engin_cache = None
-    def clientQueryEnginUrl2(self, text):
+    def clientQueryEnginUrl2(self, text, resourceType=''):
         result = {}
         engins = []
-        if len(Config.smart_engin_for_dialog) > 0:
+        if resourceType != '' and Config.smart_engin_for_tag.has_key(resourceType):
+            engins = Config.smart_engin_for_tag[resourceType]
+        elif len(Config.smart_engin_for_dialog) > 0:
             engins = Config.smart_engin_for_dialog
         elif self.dialog_engin_cache != None:
             engins = self.dialog_engin_cache
@@ -745,6 +756,13 @@ class Utils:
 
         return result
 
+    def accountMode(self, tag_list_account, tag_list_account_mode, engin, resourceType):
+        if Config.smart_engin_lucky_mode_for_account:
+            accountTags = ' '.join(tag_list_account)
+            accountModeTags = ' '.join(tag_list_account_mode)
+            return accountTags.find(engin + ':') != -1 and accountModeTags.find(resourceType + ':') != -1
+        return False
+
     def toQueryUrl(self, url, text):
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
         if url == '':
@@ -757,11 +775,12 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False):
         url = url.strip()
         user_log_js = ''
         query_url_js = ''
         chanage_color_js = ''
+        rid = rid.strip()
         text = text.replace('"', '').replace("'", '')
         #text = self.clearHtmlTag(text).replace('\n', '')
         send_text = self.clearHtmlTag(text).replace('\n', '')
@@ -804,38 +823,41 @@ class Utils:
             return link
 
         open_js = ''
-        if urlFromServer:
-            user_log_js = ''
-            open_js = query_url_js;
-        else:
-            urls = [url]    
-            if module != '' or resourceType != '':
-                urls = self.clientQueryEnginUrl(url, searchText, resourceType, module)
-            for link in urls:
-                if link == '':
-                    continue
-                if newTab:
-                    if useQuote:
-                        open_js += "window.open(#quote" + link + "#quote);"
+        if ignoreUrl == False:
+            if urlFromServer:
+                user_log_js = ''
+                open_js = query_url_js;
+            else:
+                urls = [url]    
+                if module != '' or resourceType != '':
+                    resultDict = self.clientQueryEnginUrl(url, searchText, resourceType, module)
+                    if resultDict != None and len(resultDict) > 0:
+                        urls = resultDict.values()
+                for link in urls:
+                    if link == '':
+                        continue
+                    if newTab:
+                        if useQuote:
+                            open_js += "window.open(#quote" + link + "#quote);"
+                        else:
+                            open_js += "window.open('" + link + "');"
                     else:
-                        open_js += "window.open('" + link + "');"
-                else:
-                    if useQuote:
-                        open_js += "window.location.href = #quote" + link + "#quote;"
-                    else:
-                        open_js += "window.location.href = '" + link + "';"
-                    break
+                        if useQuote:
+                            open_js += "window.location.href = #quote" + link + "#quote;"
+                        else:
+                            open_js += "window.location.href = '" + link + "';"
+                        break
         #open_js = ''
  
         result = ''
         
         if dialogMode:
-            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="top" data-trigger="hover" alt="sdw">'
+            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="top" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '" id="' + aid + '">'
         else:
             result = '<a target="_blank" href="javascript:void(0);"'
 
             if aid != '':
-                result += ' id=' + id 
+                result += ' id=' + aid 
 
             if script != '':
                 script = script.replace('"', "'")
@@ -1108,6 +1130,8 @@ class Utils:
         for k in keywordList:
             k = ' ' + k
             if result.find(k + ' ') != -1:
+                continue
+            if result.find(k) == -1:
                 continue
             k = k.strip()
             if (color_index - 1) % 2 == 0:

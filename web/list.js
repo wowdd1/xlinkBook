@@ -6,10 +6,11 @@ $(function() {
     
     $("[data-toggle='popover']").popover({  
         html : true,    
-        title: title(),    
+        title: title(), 
+        container: 'body',
         delay:{show:500, hide:1000},  
         content: function() {  
-          return content(this.textContent);    
+          return content(this.textContent, $(this).data('popover-content'));    
         }   
     });  
 }); 
@@ -20,15 +21,42 @@ function title() {
 }  
 
  
-function content(text) {  
+function content(text, data) {  
+    console.log('', data);
     var content_id = "content-id-" + $.now();
+    split_data = null;
+    rid = '';
+    resourceType = '';
+    aid = '';
+    result = content2(content_id, dialog_engin_count, dialog_command_count);
 
-    dialog_args = {type : 'dialog', searchText: text, fileName : fileName};
+    if (data.indexOf('#') > 0) {
+        split_data = data.split('#');
+        rid = split_data[0];
+        resourceType = split_data[1];
+        aid = split_data[2];
+    }
+    
+    dialog_args = {type : 'dialog', rID : rid, searchText: text, resourceType : resourceType, fileName : fileName, library : library, aid : aid};
     $.post('/queryUrl', dialog_args, function(data) {
-        $('#' + content_id).html(data);
+        if (data.indexOf('#') > 0) {
+            engin_count = parseInt(data.substring(0, data.indexOf('#')));
+            data = data.substring(data.indexOf('#') + 1);
+            console.log('', aid);
+
+            $('#' + content_id).html(data);
+
+        } else {
+            $('#' + content_id).html(data);
+        }
     });
 
+    return result;
+}  
+
+function content2(content_id, dialog_engin_count, dialog_command_count) {
     result = '<div id="' + content_id + '">'
+    /*
     for (var i = 0; i < dialog_engin_count - 1; i++) {
         result += 'nbsp;';
         if (i % 5 == 0 && i > 0) {
@@ -38,15 +66,16 @@ function content(text) {
     if (dialog_engin_count > 5) {
         //result +='<br>';
     }
-    
-    for (var i = 0; i < dialog_command_count; i++) {
+        for (var i = 0; i < dialog_command_count; i++) {
         result += '<br>' ;
     }
     
     result += 'Loading...</div>';
     console.log('',result);
+    */
+    result += 'nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;';
     return result;
-}  
+}
 
 
 
@@ -113,9 +142,21 @@ function showdiv(targetid,objN){
           console.log("error", targetid);
           return
       }
+      /*=
+      if (trimStr(target.innerHTML) == '') {
+          target.style.display="none";
+          return;
+      }
+      if (targetid.indexOf('tr-') >= 0) {
+          if (target.innerHTML.indexOf('showing') < 0) {
+            target.style.display="none";
+            return;
+          }
+      }*/
       var clicktext=document.getElementById(objN);
             if (clicktext.innerText=="less"){
                 target.style.display="";
+
                 $('#' + targetid).attr("alt", 'showing')
             } else {
                 if (targetid.indexOf('tr-') >= 0) {
@@ -209,6 +250,7 @@ function searchTopic(obj, rid, topic, otherInfo){
     }
 }
 
+
 function navTopic(obj, divID, parentDivID, countIndex){
     var targetid = divID + "-" + obj.text;
     var target_data_id = divID + "-" + obj.text + '-data';
@@ -237,6 +279,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
     }
 
     var postArgs;
+
     if (args[divID] != null){
         postArgs = {name : obj.text, rID : args[divID][0], rTitle : args[divID][1], url : args[divID][2], fileName : fileName, 'check' : 'false', column : column};
     } else {
@@ -249,13 +292,13 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs['targetid'] = targetid;
     postArgs['targetDataId'] = target_data_id;
     postArgs['originFileName'] = fileName;
-    postArgs['selection'] = window.getSelection().toString();
     postArgs['screenWidth'] = screen.width;
     postArgs['screenHeight'] = screen.height;
     postArgs['page'] = 1;
     postArgs['os'] = getOsInfo();
     postArgs['browser'] = getBrowserInfo();
 
+    postArgs['selection'] = window.getSelection().toString();
     if (obj.text == "search" || obj.text == "keyword") {
         var selection = window.getSelection().toString();
         if (selection != '') {
@@ -264,17 +307,30 @@ function navTopic(obj, divID, parentDivID, countIndex){
             postArgs['selection'] = global_selection;
             global_selection = '';
         } else {
+            if (obj.text == 'search') {
+                for (var i = 0; i < starDivCount; i++) {
+                    starDivObj = document.getElementById(divID + '-star-' + i.toString())
+                    if (starDivObj.style.display == 'none') {
+                        starDivObj.style.display = '';
+                    } else {
+                        starDivObj.style.display = 'none';
+                    }
+                    
+                }
+                return
+            }
             postArgs['selection'] = args[divID][1];
         /*
-	    if (obj.text == "keyword") {
-	        postArgs['selection'] = args[divID][1];
-	    } else {
+        if (obj.text == "keyword") {
+            postArgs['selection'] = args[divID][1];
+        } else {
                 $("#" + targetid).html("please select some text for search");
                 return
-	    }*/
+        }*/
         }
         $("#" + targetid).html('');
     }
+
     var extension = false;
     for (var i = 0; i < extensions.length; i++) {
         console.log('zzz', extensions[i]);
@@ -395,6 +451,7 @@ function genEnginHtml(targetid, topic, otherInfo, rID) {
 
 }
 
+
 function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     var target=document.getElementById(targetid);
     if (target.innerHTML.indexOf(topic) > 0) {
@@ -414,12 +471,15 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     args[targetid] = [id, topic, url];
 
     var extensionHtml= extension_array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
+    var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
+    target.innerHTML = enginHtml + extensionHtml;
 
     if (hidenEngin) {
-        target.innerHTML = extensionHtml;
-    } else {
-        var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
-        target.innerHTML = enginHtml + extensionHtml
+        //target.innerHTML = enginHtml + extensionHtml;
+        //console.log('', targetid + '-star-0');
+        for (var i = 0; i < starDivCount; i++) {
+            document.getElementById(targetid + '-star-' + i.toString()).style.display = "none";
+        } 
     }
     
     console.log("xx", reference[id]);
@@ -440,6 +500,7 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     }
     var os = getOsInfo();
     var browser = getBrowserInfo();
+
     $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, originFileName : fileName, nocache : nocache, column : column, 'check' : 'true', user_name : user_name, os : os, browser : browser}, function(data){
         if (data.trim() != '') {
             console.log("xx", data)
@@ -469,9 +530,11 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
             }
         }
     });
+
     if (!disable_thumb && id.indexOf('loop') < 0) {
         $.post('/thumb', {name : module, rID : id, url : url, fileName : fileName, nocache : nocache, 'check' : 'false'}, function(data){
             if (data != '') {
+
                 $('#div-thumb-' + id.toLowerCase()).html('<a target="_blank" href="' + data+ '"><image width="78px" height="70px" src="https://api.thumbalizr.com/?url=' + data + '&width=1280&quality=100"/></a>');
             }
         });
@@ -514,7 +577,7 @@ function hidenMoreContent(pid, start) {
     
     setText('a-' + id1.toString() + '-' + id2.toString() + '-0');
     showdiv('div-' + id1.toString() + '-' + id2.toString() + '-0','a-' + id1.toString() + '-' + id2.toString() + '-0');
-    var count = 20;
+    var count = hidenMoreCount;
     var index = 0;
     for (var i = 0; i < count; i++) {
         id = id1.toString() + '-' + id2.toString() + '-' + i.toString()
@@ -580,15 +643,28 @@ function userlog(text, url, module, library, rid, searchText, resourceType) {
     $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){});
 }
 
+function chanageLinkColorByID(id, color, fontSize) {
+    console.log('chanageLinkColorByID', id);
+    var obj = $(id);
+    chanageLinkColor(obj, color, fontSize);
+}
+
 function chanageLinkColor(obj, color, fontSize) {
+    console.log('chanageLinkColor', obj);
+    console.log('chanageLinkColor', color);
     if (fontSize != '') {
         obj.innerHTML = '<font color="' + color + '" size="' + fontSize + '">' + obj.text + '</font>'
     } else {
         if (color != '') {
             //obj.style.background = color;//'#CCEEFF'
-            obj.style.color = color;
+            if (obj.style != null) {
+                obj.style.color = color;
+            }
+            
         }
     }
+
+    obj.innerHTML = '<s>' + obj.innerHTML + '</s>';
 }
 
 function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab) {

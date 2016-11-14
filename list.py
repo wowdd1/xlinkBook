@@ -24,7 +24,7 @@ column_num = Config.column_num
 
 custom_cell_len = Config.custom_cell_len
 split_length = Config.split_length
-custom_cell_row = Config.custom_cell_row
+custom_cell_row = Config.custom_cell_row_list[2]
 cell_len = Config.cell_len  #  cell_len >= course_num_len + 1 + course_name_len + 3
 course_name_len = Config.course_name_len
 course_num_len = Config.course_num_len
@@ -227,7 +227,7 @@ def align_id_title(record):
     else:
         return course_num + vertical + course_name
 
-def align_describe(describe, record=None):
+def align_describe(describe, record=None, containID=''):
     if html_style == False:
         if utils.str_block_width(describe) > course_name_len - 1 and output_with_describe == False:
             describe = describe[0 : course_name_len - 3 ] + "..."
@@ -235,7 +235,7 @@ def align_describe(describe, record=None):
             describe += get_space(0, course_name_len - utils.str_block_width(describe))
         return get_space(0, course_num_len) + vertical + describe
     else:
-        return  vertical + smartLink(describe, record)
+        return  vertical + smartLink(describe, record, containID=containID)
 
 def print_with_color(text):
     global color_index
@@ -369,7 +369,7 @@ def loadFiles(folder, fileType):
             result += ''.join(open(folder + '/' + f, 'rU').readlines())
     return result
 
-def getScript(file_name, first_record):
+def getScript(file_name, first_record, total_records):
     if loadmore_mode:
         return 
     global output_script_already
@@ -401,9 +401,12 @@ def getScript(file_name, first_record):
 
     print 'var user_name = "' + username + '";'
     print 'var fileName = "' + os.getcwd() + '/' + source + '";'
+    print 'var library = "' + os.getcwd() + '/db/library/' + Config.default_library + '";'
     print 'var column = "' + column_num + '";'
     print 'var database = "' + database + '";'
     print 'var key = "";'
+    print 'var starDivCount = ' + str(starDivCount) + ';'
+    print 'var hidenMoreCount = ' + str(Config.custom_cell_row_list[int(column_num) - 1]) + ';' 
     if plugins_mode == False:
         if len(Config.smart_engin_for_dialog) > 0:
             print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
@@ -423,24 +426,33 @@ def getScript(file_name, first_record):
 
     print script_end
 
-    if plugins_mode:
+    if plugins_mode or total_records == 1:
         title = first_record.get_title().strip().replace(' ', '%20')
-        click_more = "document.addEventListener('DOMContentLoaded', function () {\
-	        setText('a-0-0-0');\
-	        showdiv('div-000','a-0-0-0');\
-	        appendContent('div-0-0-0','','" + title + "','');\
-                navTopic(document.getElementById('div-0-0-0-nav-all'),'div-0-0-0','div-0-0-0-nav-',4);\
-                var search_txt = document.getElementById('search_txt');\
-                search_txt.focus();\
-                search_txt.onchange=function(){\
-                    var search_a = document.getElementById('a-0-0-0');\
-                    if (search_a.text == 'less' && this.value.length > 0) {\
-                        setText('a-0-0-0');\
-                        showdiv('div-0-0-0','a-0-0-0');\
-                        setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
-                    }\
-                };\
-	    });";
+        if plugins_mode:
+            click_more = "document.addEventListener('DOMContentLoaded', function () {\
+    	        setText('a-0-0-0');\
+    	        showdiv('div-000','a-0-0-0');\
+    	        appendContent('div-0-0-0','','" + title + "','','',false);\
+                    navTopic(document.getElementById('div-0-0-0-nav-all'),'div-0-0-0','div-0-0-0-nav-',4);\
+                    var search_txt = document.getElementById('search_txt');\
+                    search_txt.focus();\
+                    search_txt.onchange=function(){\
+                        var search_a = document.getElementById('a-0-0-0');\
+                        if (search_a.text == 'less' && this.value.length > 0) {\
+                            setText('a-0-0-0');\
+                            showdiv('div-0-0-0','a-0-0-0');\
+                            setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
+                        }\
+                    };\
+    	    });";
+        elif total_records == 1:
+            click_more = "document.addEventListener('DOMContentLoaded', function () {\
+                setText('a-0-0-0');\
+                showdiv('div-000','a-0-0-0');\
+                appendContent('div-0-0-0','" + first_record.get_id().strip() + "','" + title + "','" + first_record.get_url().strip() + "','',false);"
+            for i in range(0, 30):
+                click_more += "showdiv('td-div-0-0-" + str(i) + "', 'a-0-0-0');showdiv('tr-0-" + str(i) + "', 'a-0-0-0');"
+            click_more +="});";
         print script_head + click_more + script_end
 
     if plugins_mode == False:
@@ -481,9 +493,10 @@ def getScript(file_name, first_record):
 
     print "</head>"
 
+starDivCount = 0
 def build_lines(list_all, file_name):
     #print 'build_lines start:' + str(datetime.datetime.now())
-    global div_link_content, gen_html_done, max_links_row;
+    global div_link_content, gen_html_done, max_links_row, starDivCount;
     id_title_lines = copy.deepcopy(list_all)
     describe_lines = []
     engin_list = []
@@ -510,6 +523,7 @@ def build_lines(list_all, file_name):
         border_style_five() 
     title = ''
     id = ''
+    #print custom_cell_row
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
     for i in range(0, len(list_all)):
@@ -608,6 +622,7 @@ def build_lines(list_all, file_name):
                                 else:
                                     describe_lines[l][i][j] = '#' + '#'.join(engin_list_dive)
                                 if describe_lines[l][i][j].find('#') != -1:
+                                    starDivCount += 1
                                     describe_lines[l][i][j] = describe_lines[l][i][j][0 : describe_lines[l][i][j].find('|') + 1] + \
                                                       '<div id="#div-star-' + str(l) +'" >' + describe_lines[l][i][j][describe_lines[l][i][j].find('|') + 1 : ] 
                                     if Config.hiden_engins and engin_list_dive[len(engin_list_dive) -1 ] == engin_list_sub[len(engin_list_sub) - 1]:
@@ -711,7 +726,7 @@ def build_lines(list_all, file_name):
                     end = utils.next_pos(record_describe, start, course_name_len, keyword_list, htmlStyle=html_style) 
                     if output_with_describe:
                         #print list_all[i][j].get_describe()[start : end] + '<br>'
-                        describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end], list_all[i][j])
+                        describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end], list_all[i][j], containID="td-div-" + ijl)
                         #print describe_lines[l][i][j] + '<br>'
                         #print 'start:' + str(start) + '<br>'
                         #print 'end:' + str(end) + '<br>'
@@ -847,7 +862,7 @@ def gen_html_body_v2(content, row, subRow):
     return content
 
 last_content = ''
-def smartLink(content, record):
+def smartLink(content, record, containID=''):
     global last_content
     if content == '':
         return ''
@@ -901,7 +916,7 @@ def smartLink(content, record):
         return content[ 0 : content.find(':') + 1 ] + html
     elif isAccountTag(content):
         tag = content[ 0 : content.find(':')].strip()
-        return genAccountHtml(tag, record, content)
+        return genAccountHtml(tag, record, content, containID=containID)
 
     elif isSmartLinkTag(content):
         html = ''
@@ -924,7 +939,7 @@ def smartLink(content, record):
             #ret = ret.replace(';', ', ')
             split_char = ';'
         digMode = Config.smart_engin_for_tag.has_key(tag) == False
-        return genSmartLinkHtml(tag, record, split_char, '', content, dialogMode=digMode)
+        return genSmartLinkHtml(tag, record, split_char, '', content, dialogMode=digMode, containID=containID)
 
     else:
         if last_content.strip().find(content.strip()) != -1:
@@ -933,7 +948,7 @@ def smartLink(content, record):
         last_content += content.strip()
         return content
 
-def genAccountHtml(tag, record, content):
+def genAccountHtml(tag, record, content, containID=''):
     url = ''
     if tag == 'slack':
         url = 'https://%s.slack.com/'
@@ -959,8 +974,16 @@ def genAccountHtml(tag, record, content):
         url = 'http://www.goodreads.com/review/list/%s'
     elif tag == 'meetup':
         url = 'https://www.meetup.com/%s/'
+    elif tag == 'g-plus':
+        url = 'https://plus.google.com/u/0/communities/%s'
+    elif tag == 'memkite':
+        url = 'http://memkite.com/%s/'
+    elif tag == 'l-group':
+        url = 'https://www.linkedin.com/groups/%s/profile'
+    else:
+        url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tag)
     if url != '':
-        return genSmartLinkHtml(tag, record, ',', url, content, urlFromServer=False, accountTag=True)
+        return genSmartLinkHtml(tag, record, ',', url, content, urlFromServer=False, accountTag=True, containID=containID)
     else:
         return ''
 
@@ -979,11 +1002,13 @@ def isSmartLinkTag(content):
     else:
         return False
 
-def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False):
+def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False, containID=''):
     global last_content
     ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
     last_content = ret
     html = ''
+    count = 0
+    aid = ''
     if ret.find(split_char) != -1:
         ret = ret.split(split_char)
         lineLenCount = 0
@@ -997,30 +1022,34 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
                 lineLenCount += len(i.strip())
             if old_i == ret[0].strip():
                 lineLenCount += len(tag)
+            count += 1
+            aid = containID + '-a-' + str(count)
             if url != '':
                 link = url
                 if url.find('%s') != -1:
                     link = url.replace('%s', i.strip().replace(' ', ''))
-                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode) 
+                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
             else:
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode) 
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
             if old_i != ret[len(ret) - 1].strip():
                 if accountTag:
                     html += '&nbsp;'
                 else:
                     html += '<font color="blue"><i>' + split_char + '</i></font>' + '&nbsp;'
 
-            if lineLenCount > course_name_len + lineLenCount / 6:
+            if lineLenCount > course_name_len + course_name_len / 6 and column_num != '1':
                 lineLenCount = 0
                 html += '<br>'
     else:
+        count = 1
+        aid = containID + '-a-' + str(count)
         if url != '':
             link = url
             if url.find('%s') != -1:
                 link = url.replace('%s', ret)
-            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode)
+            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
         else:
-            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode)
+            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
 
     return content[ 0 : content.find(':') + 1 ] + html
 
@@ -1425,11 +1454,12 @@ def print_list(all_lines, file_name = ''):
         id_title_lines, describe_lines = build_lines(list_all, file_name)
         #print_search_box()
         #print id_title_lines
+        #print describe_lines
         if column_num == "3":
             if html_style == False:
                 print_table_head(3)
             else:
-                getScript(file_name, list_all[0][0])
+                getScript(file_name, list_all[0][0], total_records)
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[2])):
                 content = get_line(id_title_lines, 0, 3, i)
@@ -1489,7 +1519,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(2)
             else:
-                getScript(file_name, list_all[0][0])
+                getScript(file_name, list_all[0][0], total_records)
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[1])):
                 content = get_line(id_title_lines, 0, 2, i)
@@ -1534,7 +1564,7 @@ def print_list(all_lines, file_name = ''):
             if html_style == False:
                 print_table_head(1)
             else:
-                getScript(file_name, list_all[0][0])
+                getScript(file_name, list_all[0][0], total_records)
                 print_table_head_with_style()
             for i in range(0, len(id_title_lines[0])):
                 content = get_line(id_title_lines, 0, 1, i)
@@ -1605,7 +1635,7 @@ current_level = 1
 level = 100
 
 def getLibraryRealUrl(file_name):
-    return 'http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :] + '&column=3&width=79'
+    return 'http://' + Config.ip_adress + '/?db=' + file_name[file_name.find('/') + 1 : file_name.rfind('/') + 1] + '&key=' + file_name[file_name.rfind('/') + 1 :] + '&column=' + Config.column_num + '&width=' + Config.default_width
 
 
 def notIncludeFile(item, fileNameNotContain):
@@ -1714,6 +1744,12 @@ def adjust_column_num(cn):
     adjust_cell_len()
     adjust_link_number()
 
+def adjust_cell_row():
+    global custom_cell_row 
+    custom_cell_row = Config.custom_cell_row_list[int(column_num) - 1]
+    #print int(custom_cell_row)
+
+
 def main(argv):
     global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page
     try:
@@ -1740,6 +1776,7 @@ def main(argv):
             column_num = a
             adjust_cell_len()
             adjust_link_number()
+            adjust_cell_row()
         elif o in ('-f', '--filter'):
             filter_keyword = str(a).strip()
         elif o in ('-s', '--style'):

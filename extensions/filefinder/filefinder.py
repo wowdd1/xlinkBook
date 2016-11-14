@@ -53,10 +53,11 @@ class Filefinder(BaseExtension):
             html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str(count), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') 
             html += '&nbsp;'
 
-        keywords = aliasList + [rTitle.replace('%20', ' ')]
-        dbFileList = self.genFileList(self.getMatchFiles2('|'.join(keywords).replace('| ', '|'), [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]]))
-        if dbFileList != '':
-            html += '<br><br>db files:<br>' + dbFileList
+        if Config.filefinder_search_db:
+            keywords = aliasList + [rTitle.replace('%20', ' ')]
+            dbFileList = self.genFileList(self.getMatchFiles2('|'.join(keywords).replace('| ', '|'), [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]]))
+            if dbFileList != '':
+                html += '<br><br>db files:<br>' + dbFileList
 
         html += '</div>'
 
