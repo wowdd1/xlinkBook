@@ -175,7 +175,6 @@ class Config():
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
-    filefinder_search_db = True
 
     #content
     content_hiden_engin_section = True
