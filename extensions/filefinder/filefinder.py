@@ -49,11 +49,11 @@ class Filefinder(BaseExtension):
             if result != '':
                 html += alias + ':<br>' + result
 
-        html += '<div class="ref"><br>search my baidu disk for: <br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
+        html += '<div class="ref"><br>search my baidu disk for: <br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
         count = 1
         for alias in aliasList:
             count += 1
-            html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + '<br>'
+            html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
             #html += '&nbsp;'
         html += '</div>'
         if rID.startswith('loop') == False:
@@ -61,7 +61,7 @@ class Filefinder(BaseExtension):
             fileDivID = divID + '-dbfile-' + str(random.randint(0, 1000))
             fileLinkID = divID + '-dbfile-a-' + str(random.randint(0, 1000))
 
-            html += '<br><div id="' + fileDivID + '" class="ref">'
+            html += '<div id="' + fileDivID + '" class="ref">'
 
             script = "var postArgs = {name : 'filefinder', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + fileDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
             script += "$('#' + '" + fileDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + fileDivID +"').html('Loading...');"
