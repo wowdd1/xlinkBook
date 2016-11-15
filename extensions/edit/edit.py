@@ -40,7 +40,11 @@ class Edit(BaseExtension):
             desc = r.get_describe().strip()
             html = '<br><textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 12px;">'
             start = 0
-            html += 'title:' + r.get_title().strip() + '\n'
+            if rID.startswith('custom-'):
+                html += 'id:' + r.get_id().strip() + '\n'
+                html += '\ntitle:' + r.get_title().strip() + '\n'
+            else:
+                html += 'title:' + r.get_title().strip() + '\n'
             html += '\nurl:' + r.get_url().strip() + '\n'
             while start < len(desc):
                 end = self.utils.next_pos(desc, start, int(cols)- 5, self.tag.tag_list) 
@@ -65,6 +69,7 @@ class Edit(BaseExtension):
     def editRecord(self, rID, data, originFileName):
         print data
         record = Record(' | | | ' + data)
+        newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'}).strip()
         title = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'title'}).strip()
         url = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'url'}).strip()
         desc = data.replace('title:' + title, '').replace('url:' + url, '').strip()
@@ -72,7 +77,12 @@ class Edit(BaseExtension):
         print title 
         print url
         print desc
-        newline = rID + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
+        newline = ''
+        if rID.startswith('custom-'):
+            desc = desc.replace('id:' + newid, '').strip()
+            newline = newid + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
+        else:
+            newline = rID + ' | ' + title + ' | ' + url + ' | ' + desc + '\n'
         print 'newline:'
         print newline
         if os.path.exists(originFileName):
