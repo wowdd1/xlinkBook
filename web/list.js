@@ -763,3 +763,7 @@ function getOsInfo() {
     }  
     return sys;
 }
+
+function setbg(id, color) {
+    document.getElementById(id).style.background=color
+}
