@@ -26,7 +26,8 @@ class Filefinder(BaseExtension):
         divID = form_dict['divID'].encode('utf8')
 
         if divID.find('-dbfile-') != -1:
-            keywords = aliasList + [rTitle.replace('%20', ' ')]
+            #keywords = aliasList + [rTitle.replace('%20', ' ')]
+            keywords = [rTitle.replace('%20', ' ')]
             dbFileList = self.genFileList(self.getMatchFiles2('|'.join(keywords).replace('| ', '|'), [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]]))
             if dbFileList != '':
                 html += 'matched db files:<br>' + dbFileList
@@ -36,14 +37,15 @@ class Filefinder(BaseExtension):
         if form_dict.has_key('selection') and form_dict['selection'] != '':
             rTitle = form_dict['selection'].strip()
         
-        localFiles = self.genFileList(self.getMatchFiles(rTitle.strip()).split('\n'))
+        localFiles = self.genFileList(self.getMatchFiles(rTitle.strip()).split('\n'), divID=divID, rID=rID)
         if localFiles != '':
             html += '<br>' + localFiles
 
         
-        
+        count = 0
         for alias in aliasList:
-            result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'))
+            count += 1
+            result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID)
             if result != '':
                 html += alias + ':<br>' + result
 
@@ -148,7 +150,7 @@ class Filefinder(BaseExtension):
 
 
 
-    def genFileList(self, dataList):
+    def genFileList(self, dataList, divID='', rID=''):
         if len(dataList) == 0:
             return ''
         print 'genFileList ' + ''.join(dataList)
@@ -160,6 +162,9 @@ class Filefinder(BaseExtension):
                 if line != '' and (line.find(Config.output_data_to_new_tab_path) == -1 or line.find('.') != -1):
                     count += 1
                     html += '<li><span>' + str(count) + '.</span>'
+                    url = line
+                    tilte = line[line.rfind('/') + 1 :]
+
                     if line.startswith('db/') and (line.endswith(str(datetime.date.today().year)) or line.find('(') != -1):
                         countInfo = ''
                         if line.find('(') != -1:
@@ -172,9 +177,19 @@ class Filefinder(BaseExtension):
                             url += '&column=' + Config.column_num + '&width=' + Config.default_width
                         if self.dbFileArgsDict.has_key(line.strip()):
                             url += '&filter=' + self.dbFileArgsDict[line.strip()]
-                        html += '<p>' + self.utils.enhancedLink(url, line[line.rfind('/') + 1 :], module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=line[line.rfind('/') + 1 :] + countInfo)
+                        
+                        html += '<p>' + self.utils.enhancedLink(url, tilte, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=tilte + countInfo)
                     else:
-                        html += '<p>' + self.utils.enhancedLink(line, line[line.rfind('/') + 1 :], module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'])
+                        
+                        html += '<p>' + self.utils.enhancedLink(line, tilte, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName']) + self.utils.getIconHtml(line)
+                    if divID != '':
+                        divID += '-' + str(count)
+                        linkID = 'a-' + divID[divID.find('-') + 1 :]
+                        appendID = str(count)
+                        url = url.replace(' ', '#space')
+                        script = self.utils.genMoreEnginScript(linkID, divID, "loop-f-" + rID.replace(' ', '-') + '-' + str(appendID) , tilte, url, '-', hidenEnginSection=Config.bookmark_hiden_engin_section)
+                        html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', divID, '', False);
+
 
                     html += '</p></li>'
             html += "</ol></div>"

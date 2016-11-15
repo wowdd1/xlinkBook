@@ -709,7 +709,8 @@ def build_lines(list_all, file_name):
                                         div_content_extension_list.append(content)
                                         div_content_extension_list.append('</div>')
                                         #if plugins_mode == False:
-                                        div_content_extension_list.append('<br>')
+                                        if column_num == '3':
+                                            div_content_extension_list.append('<br>')
                                     #print 'getDescDivs start:' + str(datetime.datetime.now()) + '<br>'
                                     dataMarginTop = getDataMarginTop()
                                     for link in navLinks:
@@ -989,6 +990,8 @@ def genAccountHtml(tag, record, content, containID=''):
         url = 'https://www.linkedin.com/groups/%s/profile'
     elif tag == 'docker':
         url = 'https://hub.docker.com/r/%s/'
+    elif tag == 'zhihu':
+        url = 'https://zhuanlan.zhihu.com/%s'
     else:
         url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tag)
     if url != '':

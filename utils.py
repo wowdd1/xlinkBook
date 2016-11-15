@@ -907,6 +907,9 @@ class Utils:
             return self.formatTitle(text, br_number)
 
     def formatTitle(self, title, br_number=Config.smart_link_br_len):
+        if title.find(': Amazon.com: Books') != -1:
+            title = title.replace(': Amazon.com: Books', '')
+            title = title[0 : title.rfind(':')]
         if len(title) > br_number:
             at = title.find(' ', br_number)
             if at != -1:
@@ -1238,6 +1241,19 @@ class Utils:
             self.quickSortHelper(alist,first,splitpoint-1, sortType)
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
+    def getIconHtml(self, url, width=14, height=12):
+        if Config.enable_website_icon == False:
+            return ''
+        src = ''
+        if url.startswith('http'):
+            url = url[0 : url.find('/', url.find('//') + 2)]
+        for k, v in Config.website_icons.items():
+            if url.find(k) != -1:
+                src = v
+                break
+        if src != '':
+            return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
+        return ''
 
     def partition(self, alist,first,last, sortType):
         pivotvalue = alist[first]
