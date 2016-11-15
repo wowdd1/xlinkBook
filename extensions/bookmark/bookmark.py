@@ -178,7 +178,7 @@ class Bookmark(BaseExtension):
 
                 script = "var postArgs = {name : 'bookmark', rID : '" + rID + "', rTitle : '" + a +"', check: 'false', fileName : '" + fileName + "', divID : '" + cloudDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
                 script += "$('#' + '" + cloudDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + cloudDivID +"').html('Loading...');"
-                html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:10pt;">' + str(a) + '</a><br> '
+                html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:10pt;">' + str(a) + '</a> '
             html += '</div>'
         return html
 

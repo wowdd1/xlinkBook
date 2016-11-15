@@ -204,7 +204,7 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'span#thumb_ext' #"div#title"  # tag#class or tag
+    convert_tag = 'span' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""

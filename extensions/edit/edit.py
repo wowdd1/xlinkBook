@@ -26,7 +26,7 @@ class Edit(BaseExtension):
         print fileName
         r = self.utils.getRecord(rID, path=fileName)
         html = 'not found'
-        areaID = rID.replace(' ', '-') + '-area'
+        areaID = rID.replace(' ', '-').replace('.', '-') + '-area'
         if r != None and r.get_id().strip() != '':
             column = str(form_dict['column'])
             rows = '25'
@@ -38,7 +38,7 @@ class Edit(BaseExtension):
                 rows = '35'
                 cols = '88'
             desc = r.get_describe().strip()
-            html = '<br><textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px;" '
+            html = '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px;" '
             html += 'onfocus="setbg(' + "'" + areaID + "'," + "'#e5fff3');" + '" '
             html += 'onblur="setbg(' + "'" + areaID + "'," + "'white');" + '">'
             start = 0
@@ -71,7 +71,9 @@ class Edit(BaseExtension):
     def editRecord(self, rID, data, originFileName):
         print data
         record = Record(' | | | ' + data)
-        newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'}).strip()
+        newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'})
+        if newid != None:
+            newid = newid.strip()
         title = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'title'}).strip()
         url = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'url'}).strip()
         desc = data.replace('title:' + title, '').replace('url:' + url, '').strip()
