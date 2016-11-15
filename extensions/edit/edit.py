@@ -45,7 +45,7 @@ class Edit(BaseExtension):
             while start < len(desc):
                 end = self.utils.next_pos(desc, start, int(cols)- 5, self.tag.tag_list) 
                 line = desc[start : end].strip()
-                if line.find(':') != -1:
+                if line.find(':') != -1 and line.find(':') < 15 and line[0 : 1].islower():
                     line = '\n' + line
                 html += line + '\n'
                 
