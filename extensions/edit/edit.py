@@ -30,15 +30,17 @@ class Edit(BaseExtension):
         if r != None and r.get_id().strip() != '':
             column = str(form_dict['column'])
             rows = '25'
-            cols = '73'
+            cols = '75'
             if column == '1':
                 rows = '45'
-                cols = '95' 
+                cols = '99' 
             elif column == '2':
                 rows = '35'
-                cols = '83'
+                cols = '88'
             desc = r.get_describe().strip()
-            html = '<br><textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 12px;">'
+            html = '<br><textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px;" '
+            html += 'onfocus="setbg(' + "'" + areaID + "'," + "'#e5fff3');" + '" '
+            html += 'onblur="setbg(' + "'" + areaID + "'," + "'white');" + '">'
             start = 0
             if rID.startswith('custom-'):
                 html += 'id:' + r.get_id().strip() + '\n'
@@ -47,7 +49,7 @@ class Edit(BaseExtension):
                 html += 'title:' + r.get_title().strip() + '\n'
             html += '\nurl:' + r.get_url().strip() + '\n'
             while start < len(desc):
-                end = self.utils.next_pos(desc, start, int(cols)- 5, self.tag.tag_list) 
+                end = self.utils.next_pos(desc, start, int(cols)- 10, self.tag.tag_list) 
                 line = desc[start : end].strip()
                 if line.find(':') != -1 and line.find(':') < 15 and line[0 : 1].islower():
                     line = '\n' + line
