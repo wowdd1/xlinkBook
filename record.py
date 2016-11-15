@@ -90,6 +90,8 @@ class Category():
 class Tag():
     def __init__(self):
         self.tag_id = "id:"
+        self.tag_title = 'title:'
+        self.tag_url = 'url:'
         self.tag_videourl = 'videourl:'
         self.tag_author = 'author:'
         self.tag_winner = "winner:"
@@ -194,15 +196,16 @@ class Tag():
         self.tag_alternativeto = 'alternativeto:'
         self.tag_clone = 'clone:'
         self.tag_docker = 'docker:'
+        self.tag_zhihu = 'zhihu:'
 
-        self.tag_list = [self.tag_id, self.tag_videourl, self.tag_author, self.tag_winner, self.tag_ratings, self.tag_term,\
+        self.tag_list = [self.tag_id, self.tag_title, self.tag_url, self.tag_videourl, self.tag_author, self.tag_winner, self.tag_ratings, self.tag_term,\
                          self.tag_prereq, self.tag_prerequisites, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_professor,\
-                         self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_adviser, self.tag_scientist, self.tag_people, self.tag_follow, self.tag_description, self.tag_textbook, self.tag_book, self.tag_paper, self.tag_homepage, self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_founder, self.tag_vp, self.tag_investor, self.tag_stockholder, self.tag_programmer, self.tag_engineer, self.tag_developer, self.tag_hacker, self.tag_producer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup, self.tag_y_channel, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, self.tag_blog, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker]
+                         self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_adviser, self.tag_scientist, self.tag_people, self.tag_follow, self.tag_description, self.tag_textbook, self.tag_book, self.tag_paper, self.tag_homepage, self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_founder, self.tag_vp, self.tag_investor, self.tag_stockholder, self.tag_programmer, self.tag_engineer, self.tag_developer, self.tag_hacker, self.tag_producer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup, self.tag_y_channel, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, self.tag_blog, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_zhihu]
 
         self.tag_list_short = ["d:"]
 
-        self.tag_list_account = [self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_github, self.tag_youtube, self.tag_vimeo, self.tag_g_group, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup, self.tag_y_channel, self.tag_memkite, self.tag_l_group, self.tag_docker]
+        self.tag_list_account = [self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_github, self.tag_youtube, self.tag_vimeo, self.tag_g_group, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_meetup, self.tag_y_channel, self.tag_memkite, self.tag_l_group, self.tag_docker, self.tag_zhihu]
 
         #account_mode only for people or organization
         self.tag_list_account_mode =  self.tag_list_smart_link = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_producer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer]

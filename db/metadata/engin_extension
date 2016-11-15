@@ -4,6 +4,7 @@ reference
 bookmark
 filefinder
 convert
+outline
 script
 rss
 citation
@@ -22,6 +23,7 @@ note
 gitter
 keyword
 #ipython
+edit
 exclusive
 save
 delete

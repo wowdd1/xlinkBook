@@ -146,6 +146,6 @@ class Convert(BaseExtension):
 
     def check(self, form_dict):
         url = form_dict['url'].encode('utf8')
-        return url != ''
+        return url != '' and url.startswith('http')
         #url = form_dict['url'].encode('utf8')
         #return url != "" and url.startswith('http')

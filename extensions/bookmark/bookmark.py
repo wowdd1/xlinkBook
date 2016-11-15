@@ -226,7 +226,7 @@ class Bookmark(BaseExtension):
             url = jobj['url']
 
         if url != '':
-            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len), module='bookmark', library=orginFilename, rid=rID)
+            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len), module='bookmark', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
         else:
             html += '<p>' + jobj['title'] + ' > '
         #if self.existChild(str(jobj['id'])):
@@ -272,7 +272,7 @@ class Bookmark(BaseExtension):
             for div in soup.find_all('div', class_='content'):
                 count += 1
                 title = self.colorkeyword(div.a.text, key)
-                html += '<li><span>' + str(count) + '.</span><p>' + self.utils.enhancedLink(div.a['href'], title, module='xmarks', library=orginFilename)
+                html += '<li><span>' + str(count) + '.</span><p>' + self.utils.enhancedLink(div.a['href'], title, module='xmarks', library=orginFilename) + self.utils.getIconHtml(div.a['href'])
                 html += "</p></li>"
             nextDiv = soup.find('div', class_='site-pagination')
             if nextDiv != None and nextpage == '':

@@ -230,7 +230,7 @@ class Reference(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         self.loadReference(self.formatFileName(fileName), rID)
-        if self.record_reference.has_key(rID) or fileName.find('papers') != -1 or form_dict['url'] != '':
+        if self.record_reference.has_key(rID) or fileName.find('papers') != -1 or form_dict['url'] != '' and form_dict['url'].startswith('http'):
             return True
         return False
                 

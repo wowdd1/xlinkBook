@@ -27,6 +27,6 @@ class Share(BaseExtension):
 
     def check(self, form_dict):
         url = form_dict['url']
-        return url != ''
+        return url != '' and url.startswith('http')
         #url= form_dict['url']
         #return url != None and url != ''

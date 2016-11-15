@@ -93,4 +93,4 @@ class Preview(BaseExtension):
 
     def check(self, form_dict):
         url = form_dict['url'].encode('utf8')
-	return url != None and url != '' and url.find(Config.ip_adress) == -1
+        return url != None and url != '' and url.startswith('http') and url.find(Config.ip_adress) == -1
