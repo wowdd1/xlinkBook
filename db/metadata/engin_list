@@ -265,9 +265,7 @@ engin-262 | iciba | http://www.iciba.com/ | priority:0 description:tools
 engin-263 | calendar | https://calendar.google.com/calendar/render?hl=zh_cn&pli=1#main_7&q= | priority:0 description:tools
 engin-264 | cal.supfree | http://cal.supfree.net/?q= | priority:0 description:tools
 engin-265 | pan.baidu | http://pan.baidu.com/disk/home#search/key= | priority:5 description:cloud
-engin-266 | presentation | https://docs.google.com/presentation/u/0/?q= | priority:3 description:tools
-engin-267 | spreadsheets | https://docs.google.com/spreadsheets/u/0/?q= | priority:0 description:tools
-engin-268 | document | https://docs.google.com/document/u/0/?q= | priority:3 description:tools
+engin-266 | docs.google | https://docs.google.com/document/u/0/?showDriveBanner=true&q=%s# | priority:3 description:cloud
 engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 description:cloud
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:4 description:tools
 engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:6 description:tools

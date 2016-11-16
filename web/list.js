@@ -195,6 +195,9 @@ function search(inputid,optionid){
         userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
     } else if (select[select.selectedIndex].value == "add") {
         addRecord(fileName, input.value);
+    } else if (select[select.selectedIndex].value == "exclusive") {
+        exclusive('exclusive', input.value);
+
     } else {
         window.open(select.value + input.value);
         userlog(select[select.selectedIndex].text, select.value + input.value, 'searchbox', fileName, '', input.value, '');
@@ -323,6 +326,11 @@ function navTopic(obj, divID, parentDivID, countIndex){
                     }
                     
                 }
+                if (lastHidenDivID != '') {
+                    console.log('', lastHidenDivID);
+                    document.getElementById(lastHidenDivID).style.display = '';
+                    document.getElementById(lastHidenDivID + '-data').style.display = '';
+                }
                 return
             }
             postArgs['selection'] = args[divID][1];
@@ -404,7 +412,7 @@ function showdiv_2(targetid){
                 target.style.display="none";
             }
 }
-
+var lastHidenDivID = ''
 function hidendiv_2(targetid){
       
       var selection = window.getSelection().toString();
@@ -412,7 +420,14 @@ function hidendiv_2(targetid){
           global_selection = selection;
       }
       var target=document.getElementById(targetid);
-      target.style.display="none";
+      if (target.style.display != 'none') {
+          target.style.display="none";
+          if (targetid.indexOf('search') < 0) {
+            lastHidenDivID = targetid;
+
+          }
+      }
+      
       var target=document.getElementById(targetid + "-data");
       target.style.display="none";
 }

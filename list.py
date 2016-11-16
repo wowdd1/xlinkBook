@@ -333,8 +333,8 @@ def genEnginOption(selectid):
     if Config.smart_link_engin != '':
         option += '<option value ="' + utils.getEnginUrl(Config.smart_link_engin) + '">' + Config.smart_link_engin + '</option>'
         
-    #if plugins_mode == False:
-    #    option += '<option value ="current">current</option>'
+    if plugins_mode == False:
+        option += '<option value ="exclusive">exclusive</option>'
         #option += '<option value ="add">add (operate)</option>'
     #option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
     for e in engin_list:
@@ -599,7 +599,7 @@ def build_lines(list_all, file_name):
                                 else:
                                     linkID = 'a-' + ijl;
                                     content_divID = "div-" + ijl
-                                script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), list_all[i][j].get_url().strip(), utils.getEnginUrlOtherInfo(list_all[i][j]))
+                                script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), list_all[i][j].get_url().strip(), utils.getEnginUrlOtherInfo(list_all[i][j]), hidenEnginSection=False)
 
 
                             if output_with_describe and end < describe:
@@ -992,6 +992,8 @@ def genAccountHtml(tag, record, content, containID=''):
         url = 'https://hub.docker.com/r/%s/'
     elif tag == 'zhihu':
         url = 'https://zhuanlan.zhihu.com/%s'
+    elif tag == 'bitbucket':
+        url = 'https://bitbucket.org/%s/'
     else:
         url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tag)
     if url != '':
@@ -1306,6 +1308,8 @@ def enhancedRecord(fileName, record, count, filter_mode=False):
     
     if Config.hiden_record_id and record.get_describe().find('id:') == -1:
         line += ' id:' + id
+    if fileName.find('exclusive') != -1:
+        line += ' title:' + record.get_title().strip()
 
     if record.get_url().find(Config.ip_adress) != -1 and record.get_path() == '':
         url = record.get_url().strip()
