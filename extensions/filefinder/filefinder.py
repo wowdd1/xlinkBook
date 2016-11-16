@@ -170,6 +170,7 @@ class Filefinder(BaseExtension):
                         if line.find('(') != -1:
                             countInfo = '(<font color="red"><b>' + line[line.find('(') + 1 : line.find(')')] + '</b></font>)'
                             line = line[0 : line.find('(')]
+                            tilte = tilte[0 : tilte.rfind('(')].strip()
                         url = 'http://' + Config.ip_adress + '/?db=' + line[line.find('/') + 1 : line.rfind('/') + 1] + '&key=' + line[line.rfind('/') + 1 :] 
                         if line.find('paper') != -1:
                             url += '&column=1'
