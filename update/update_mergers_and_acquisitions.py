@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8 -*-
 from spider import *
 
 sys.path.append("..")
@@ -20,6 +20,7 @@ class MergersAndAcquisitionsSpider(Spider):
                      'ibm' : 'http://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_IBM',\
                      'yahoo' : 'http://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Yahoo!',\
                      'twitter' : 'http://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Twitter'}
+        wiki_dict = {'google' : 'http://en.wikipedia.org/wiki/List_of_mergers_and_acquisitions_by_Google'}
         for key, url in wiki_dict.items():
             r = requests.get(url)
             soup = BeautifulSoup(r.text)
@@ -40,21 +41,30 @@ class MergersAndAcquisitionsSpider(Spider):
                 count += 1
 
                 if key == 'google':
-                    if count > 8 or (count == 8 and self.count == len(rows) - 2):
+                    #if count > 8 or (count == 8 and self.count == len(rows) - 2):
+                    if count == 7:
                         print title
-                        count = 1
+                        count = 0
                         self.count += 1
                         self.write_db(f, item_id + str(self.count), title, '', utils.removeDoubleSpace(desc))
                         title = ''
-                        desc = 'description:'
+                        desc = ''
                         print '----------------------------------'
-                    if count != 1 and count != 8:
-                        if count == 2:
-                            desc += td.text.strip()[td.text.strip().find(' ') :].strip() + ' '
-                        elif count == 3:
+                    if count != 7:
+                        #if count == 3:
+                        #    desc += td.text.strip()[td.text.strip().find(' ') :].strip() + ' '
+                        if count == 1:
+                            desc += 'date:' + td.text.strip()[td.text.strip().find(' ') :].strip() + ' '
+                        elif count == 2:
                             title = utils.removeDoubleSpace(td.text.strip())
-                        else:
-                            desc += td.text.strip() + ' '
+                        elif count == 3:
+                            desc += 'business:' + td.text.strip().replace(' and ', ', ') + ' '
+                        elif count == 4:
+                            desc += 'country:' + td.text.strip() + ' '
+                        elif count == 5:
+                            desc += 'price:$' + td.text.strip()[td.text.strip().find('♠') + 1 :].strip() + ' '
+                        elif count == 6:
+                           desc += 'description:' + td.text.strip() + ' '
                 if key == 'facebook':
                     if count > 10 or (count == 10 and self.count == len(rows) - 2):
                         count = 1
@@ -155,7 +165,8 @@ class MergersAndAcquisitionsSpider(Spider):
                             desc += td.text.strip() + ' '
 
             self.close_db(f)
-            if file_lines != self.count and self.count > 0:
+            #if file_lines != self.count and self.count > 0:
+            if True:
                 self.do_upgrade_db(file_name)
                 print "before lines: " + str(file_lines) + " after update: " + str(self.count) + " \n\n"
             else:
