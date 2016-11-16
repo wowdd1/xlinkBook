@@ -64,7 +64,7 @@ class Bookmark(BaseExtension):
 
     def excute(self, form_dict):
         divID = form_dict['divID'].encode('utf8')
-        html = '<br><div class="ref"><ol>'
+        html = '<div class="ref"><ol>'
         rID = form_dict['rID'].encode('utf8')
         print divID
         if divID.find('-cloud-') != -1:
@@ -300,5 +300,6 @@ class Bookmark(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
+        print rTitle
         return self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or self.containIgoncase2(self.raw_data, self.getAlias(rID, form_dict['originFileName'])) or rTitle.find('.') != -1
 

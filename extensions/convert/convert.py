@@ -129,7 +129,7 @@ class Convert(BaseExtension):
             ref_divID = divID + '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r.get_title().strip(), link, '-', hidenEnginSection=Config.convert_hiden_engin_section)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-" + rID.replace(' ', '-') + '-' + str(appendID), r.get_title().strip(), link, '-', hidenEnginSection=True)
             html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
 
             #html += '<br>'
