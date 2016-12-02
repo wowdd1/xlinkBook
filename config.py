@@ -10,23 +10,27 @@ class Config():
 
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
-    smart_link_engin = 'google' #'glucky'
+    smart_link_engin = 'glucky' #'google'
 
 
     smart_engin_lucky_mode_for_account = True
+    smart_engin_for_tag_batch_open = False
+    
     smart_engin_for_tag = {}
     '''
+
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
                            'university' : 'youtube',\
                            'professor' : ['phdtree', 'glucky'],\
                            'g-plus' : 'plus.google',\
                            'company' : 'glucky',\
                            'website' : 'glucky',\
-                           'director' : ['twitter', 'glucky']}
+                           'director' : ['twitter', 'glucky'],\
+                           'job' : ['google', 'd:job']}
                            #'topic' : ''}
     '''
     
-    smart_engin_for_extension = {'' : ''}
+    #smart_engin_for_extension = {'' : ''}
 
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
@@ -37,7 +41,7 @@ class Config():
     smart_link_br_len = 80
     replace_with_smart_link = False
 
-    page_item_count = 63
+    page_item_count = 100#63
 
     recommend_engin = True
     recommend_engin_num = 20
@@ -73,6 +77,8 @@ class Config():
     track_mode = False
 
     disable_default_engin = True
+
+    disable_nav_engins = True # it take 2s for gen nav engins html
   
     disable_thumb = "false"
 
@@ -153,8 +159,8 @@ class Config():
           #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
 
-    delete_from_char = ''
-    delete_forward = True
+    delete_from_char = '、'
+    delete_forward = False
 
     # ==== extension ====
     output_data_to_new_tab_path = 'db/other/'
@@ -171,10 +177,12 @@ class Config():
     bookmark_hiden_engin_section = True
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
-    bookmark_page_item_count = 12
+    bookmark_page_item_count = [16, 14, 12]
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
+    filefinder_netdisk_engin = 'pan.baidu'
+    filefinder_sort_by_count = True
 
     #content
     content_hiden_engin_section = True
@@ -204,7 +212,7 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'strong' #"div#title"  # tag#class or tag
+    convert_tag = 'span#field-content' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""

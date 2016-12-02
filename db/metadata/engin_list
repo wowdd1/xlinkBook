@@ -52,7 +52,7 @@ engin-51 | github | https://github.com/search?q= | priority:8 description:projec
 engin-52 | stackoverflow | http://stackoverflow.com/search?q= | priority:8 description:q-a star
 engin-53 | mathoverflow | http://mathoverflow.net/search?q= | priority:0 description:q-a
 engin-54 | wikipedia | https://wikipedia.org/wiki/ | priority:8 description:wiki star icon:http://mycroftproject.com/updateos.php/id0/httpsptmwikipedia.ico
-engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | priority:0 description:q-a
+engin-55 | zhihu | https://www.zhihu.com/search?type=question&q= | priority:8 description:q-a star
 engin-56 | csdn | http://so.csdn.net/so/search/s.do?ref=toolbar&q= | priority:0 description:news
 engin-57 | androidxref | http://androidxref.com/6.0.1_r10/search?q= | priority:0 description:code
 engin-58 | googlecode | https://code.google.com/hosting/search?q= | priority:0 description:project
@@ -90,7 +90,7 @@ engin-86 | packtpub | https://www.packtpub.com/all/?search= | priority:0 descrip
 engin-87 | twitter | https://twitter.com/search?src=typd&q= | priority:8 description:social star icon:http://mycroftproject.com/updateos.php/id0/twitter-music.png
 engin-88 | weibo | http://s.weibo.com/weibo/ | priority:8 description:social star
 engin-89 | t.qq | http://search.t.qq.com/index.php?k= | priority:0 description:social
-engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization star icon:http://mycroftproject.com/updateos.php/id0/linkedin_googfr.ico
+engin-90 | linkedin | http://www.linkedin.com/vsearch/f?type=all&keywords= | priority:8 description:social people organization job star icon:http://mycroftproject.com/updateos.php/id0/linkedin_googfr.ico
 engin-91 | sanity.com | http://www.arxiv-sanity.com/search?q= | priority:4 description:paper
 engin-92 | facebook | https://www.facebook.com/search/top/?init=quick&q= | priority:8 description:social star icon:http://mycroftproject.com/updateos.php/id0/facebookvideomirror.ico
 engin-93 | crunchbase | https://www.crunchbase.com/%s/ | priority:8 description:organization people icon:http://mycroftproject.com/updateos.php/id0/crunchbasesearch.png
@@ -493,7 +493,7 @@ engin-502 | protocols.io | https://www.protocols.io/search?key= | priority:0 des
 engin-503 | protocol-online | http://www.protocol-online.org/cgi-bin/prot/search.cgi?query=%s&submit2=Go | priority:0 description:protocol
 engin-504 | addgene | https://www.addgene.org/search/advanced/?q= | priority:0 description:protocol
 engin-505 | neuinfo | https://neuinfo.org/data/search?q=%s&l=%s | priority:5 description:data
-engin-506 | vimeo | https://vimeo.com/search?q= | priority:6 description:video star
+engin-506 | vimeo | https://vimeo.com/search?q= | priority:6 description:video
 engin-507 | ebi | http://www.ebi.ac.uk/ebisearch/search.ebi?query=%s&submit1=1&db=allebi&requestFrom=ebi_index | priority:6 description:dataset
 engin-508 | qkankan | http://www.qkankan.com/index.html?q= | priority:6 description:website
 engin-509 | openaire | https://www.openaire.eu/search/find?keyword= | priority:4 description:paper project dataset
@@ -520,3 +520,6 @@ engin-529 | openreview | http://openreview.net/search?term=%s&group=all&content=
 engin-530 | osgameclones | http://osgameclones.com/?q= | priority:5 description:project
 engin-531 | scholarpedia | http://www.scholarpedia.org/article/%s | priority:5 description:wiki
 engin-532 | experiment | https://experiment.com/search/results?utf8=%E2%9C%93&q=%s&commit=Search | priority:4 description:project finance 
+engin-533 | jiqizhixin | http://www.jiqizhixin.com/portal/search/index?keyword= | priority:5 description:news
+engin-534 | jupyter | https://github.com/search?l=Jupyter+Notebook&q=%s&ref=searchresults&type=Repositories&utf8=✓ | priority:4 description:project tutorial
+engin-535 | lib.csdn | http://lib.csdn.net/search/ | priority:6 description:wiki couese project star

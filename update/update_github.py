@@ -55,6 +55,7 @@ class GithubSpider(Spider):
         "HTML",
         "Java",
         "JavaScript",
+        "Jupyter+Notebook",
         "Lua",
         "Matlab",
         "Objective-C",
@@ -676,6 +677,7 @@ class GithubSpider(Spider):
                 'usgs' : 'https://github.com/usgs',\
                 'gitter' : 'https://github.com/gitterHQ',\
                 'Oxford-Robotics-Institute' : 'https://github.com/oxford-ori',\
+                'ToyotaResearchInstitute' : 'https://github.com/ToyotaResearchInstitute',\
                 'mila-udem' : 'https://github.com/mila-udem'}
 
         data_neuro = {'INCF' : 'https://github.com/INCF',\

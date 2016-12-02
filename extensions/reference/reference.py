@@ -229,6 +229,9 @@ class Reference(BaseExtension):
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
+        url = form_dict['url'].encode('utf8')
+        if url == '':
+            return False
         self.loadReference(self.formatFileName(fileName), rID)
         if self.record_reference.has_key(rID) or fileName.find('papers') != -1 or form_dict['url'] != '' and form_dict['url'].startswith('http'):
             return True
@@ -275,6 +278,8 @@ class Reference(BaseExtension):
     def genMetadataHtml(self, key, ref_divID):
         if self.record_reference.has_key(key):
             self.html = '<div class="ref"><br><ol>'
+            if self.form_dict['column'] == '1':
+                self.html = '<div class="ref"><ol>'
             count = 0
             for r in self.record_reference[key]:
                 count += 1

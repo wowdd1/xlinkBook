@@ -18,19 +18,25 @@ class Filefinder(BaseExtension):
     def excute(self, form_dict):
         self.form_dict = form_dict
         rTitle = form_dict['rTitle'] 
+        if rTitle.strip() == '':
+            return ''
         rID = form_dict['rID']
         fileName = form_dict['fileName'].encode('utf8')
+        nocache = True
+        if form_dict.has_key('nocache'):
+            nocache = form_dict['nocache'].encode('utf8')
+        use_cache = nocache == False
         html = ''
-        record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True)
+        record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True, use_cache=use_cache)
         aliasList = self.getAliasList(record)
         divID = form_dict['divID'].encode('utf8')
 
         if divID.find('-dbfile-') != -1:
             #keywords = aliasList + [rTitle.replace('%20', ' ')]
-            keywords = [rTitle.replace('%20', ' ')]
-            dbFileList = self.genFileList(self.getMatchFiles2('|'.join(keywords).replace('| ', '|'), [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]]))
+            keyword = rTitle.replace('%20', ' ').strip()
+            dbFileList = self.genFileList(self.getMatchFiles2(keyword, [form_dict['originFileName'][form_dict['originFileName'].find('db/') :], form_dict['fileName'][form_dict['fileName'].find('db/') :]], 'db'))
             if dbFileList != '':
-                html += 'matched db files:<br>' + dbFileList
+                html += 'matched db files(' + str(keyword) + '):<br>' + dbFileList
             return html
 
 
@@ -39,7 +45,9 @@ class Filefinder(BaseExtension):
         
         localFiles = self.genFileList(self.getMatchFiles(rTitle.strip()).split('\n'), divID=divID, rID=rID)
         if localFiles != '':
-            html += '<br>' + localFiles
+            if form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
+                html += '<br>'
+            html += localFiles
 
         
         count = 0
@@ -49,11 +57,17 @@ class Filefinder(BaseExtension):
             if result != '':
                 html += alias + ':<br>' + result
 
-        html += '<div class="ref"><br>search my baidu disk for: <br>' + self.utils.toSmartLink(rTitle, engin="pan.baidu", showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
+        if fileName.find('exclusive') != -1:
+            keyword = rTitle.replace('%20', ' ').strip()
+            dbFileList = self.genFileList(self.getMatchFiles2(keyword, [], 'db/library'))
+            if dbFileList != '':
+                html += 'matched library files(' + str(keyword) + '):<br>' + dbFileList
+
+        html += '<div class="ref"><br>Search My Netdisk<br>' + self.utils.toSmartLink(rTitle, engin=Config.filefinder_netdisk_engin, showText='<font size="2">' + rTitle.replace('%20', ' ') + '</font>', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
         count = 1
         for alias in aliasList:
             count += 1
-            html += self.utils.toSmartLink(alias.strip(), engin="pan.baidu", showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
+            html += self.utils.toSmartLink(alias.strip(), engin=Config.filefinder_netdisk_engin, showText=str('<font size="2">' + alias + '</font>'), rid=self.form_dict['rID'], library=self.form_dict['originFileName'], module='filefinder') + ' '
             #html += '&nbsp;'
         html += '</div>'
         if rID.startswith('loop') == False:
@@ -63,9 +77,19 @@ class Filefinder(BaseExtension):
 
             html += '<div id="' + fileDivID + '" class="ref">'
 
-            script = "var postArgs = {name : 'filefinder', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + fileDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
-            script += "$('#' + '" + fileDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + fileDivID +"').html('Loading...');"
-            html += '<a id="' + fileLinkID + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:12pt;">Search Local DB</a><br> '
+            if len(aliasList) == 0:
+                script = "var postArgs = {name : 'filefinder', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + fileDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
+                script += "$('#' + '" + fileDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + fileDivID +"').html('Loading...');"
+                html += '<a id="' + fileLinkID + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:12pt;">Search Local DB</a><br> '
+            else:
+                html += '<br>Search Local DB<br>'
+                k_list = [rTitle.replace('%20', ' ')] + aliasList
+                for keyword in k_list:
+                    script = "var postArgs = {name : 'filefinder', rID : '" + rID + "', rTitle : '" + keyword +"', check: 'false', fileName : '" + fileName + "', divID : '" + fileDivID + "', originFileName : '" + form_dict['originFileName'] + "'};";
+                    script += "$('#' + '" + fileDivID +"').load('/extensions', postArgs, function(data) { });$('#' + '" + fileDivID +"').html('Loading...');"
+                    if len(keyword) > 30:
+                        keyword = keyword[0 : 30] + '..'
+                    html += '<font size="2"><a id="' + fileLinkID + '" href="javascript:void(0);" onclick="' + script + '">' + keyword +'</a></font> '
             html += '</div>'
 
         return html
@@ -92,27 +116,40 @@ class Filefinder(BaseExtension):
             if path != '':
                 cmd = 'find ' + path + ' -iname "*' + title.replace('"', '').replace('%20', ' ').replace(' ', '*') + '*"'
                 print 'cmd ' + cmd 
-                output += subprocess.check_output(cmd, shell=True)
+                try:
+                    output += subprocess.check_output(cmd, shell=True)
+                except Exception as e:
+                    output += ''
             if output.find('No such file') != -1:
                 continue
             if output.find('//') != -1:
                 output = output.replace('//', '/')
+        #print 'getMatchFiles ' + output
         return output
 
     dbFileArgsDict = {}
 
-    def getMatchFiles2(self, keywords, filterList):
+    def getMatchFiles2(self, keyword, filterList, path):
         print filterList
-        cmd = 'grep -riE "' + keywords + '" db'
+        cmd = 'grep -riE "' + keyword + '" ' + path
         print cmd
-        output = subprocess.check_output(cmd, shell=True)
+        output = ''
+        try:
+            output = subprocess.check_output(cmd, shell=True)
+        except Exception as e:
+            return ''
         fileList = []
         fileCountDict = {}
+        titleDict = {}
         self.dbFileArgsDict = {}
         lastFileName = ''
         count = 0
         for line in output.split('\n'):
             fileName = line[0 : line.find(':')].strip()
+            firstIndex = line.find('|')
+            rID = line[line.find(':') + 1 : firstIndex].strip().replace(' ', '%20')
+            title = line[firstIndex + 1 : line.find('|', firstIndex + 1)].strip()
+
             igone = False
             for f in filterList:
                 if fileName == f.strip():
@@ -120,13 +157,15 @@ class Filefinder(BaseExtension):
                     continue
             if igone:
                 continue
-            rID = line[line.find(':') + 1 : line.find('|')].strip().replace(' ', '%20') 
+             
             if lastFileName != '' and fileName == lastFileName:
                 count += 1
             else:
                 count = 1
             if fileName != '':
                 fileCountDict[fileName] = count 
+                if title.lower().find(keyword.lower().strip()) != -1:
+                    titleDict[fileName] = ''
                 lastFileName = fileName
 
             if self.dbFileArgsDict.has_key(fileName) == False:
@@ -137,15 +176,29 @@ class Filefinder(BaseExtension):
                 if self.dbFileArgsDict[fileName].find(rID) == -1:
                     self.dbFileArgsDict[fileName] = self.dbFileArgsDict[fileName] + '[or]' + rID
         fileCountDict2 = {}
+        fileCountDict3 = {}
         for k, v in fileCountDict.items():
             if k == '':
                 continue
-            fileCountDict2[k + '(' + str(v) + ')'] = v
+            key = k + '(' + str(v) + ')'
+            if titleDict.has_key(k):
+                key = k + '(' + str(v) + '*)'
+
+            if k.find('-library') != -1:
+                fileCountDict3[key] = v
+            else:
+                if Config.filefinder_sort_by_count:
+                    fileCountDict2[key] = v
+                else:
+                    fileCountDict2[key] = k
         
         result = []
         for k, v in sorted(fileCountDict2.items(), lambda x, y: cmp(x[1], y[1]), reverse=True) :
             result.append(k)
-        return result
+        result2 = []
+        for k, v in fileCountDict3.items():
+            result2.append(k)
+        return result2 + result
 
 
 
@@ -159,18 +212,22 @@ class Filefinder(BaseExtension):
         if len(dataList) > 0:
             html = '<div class="ref"><ol>'
             for line in dataList:
-                if line != '' and (line.find(Config.output_data_to_new_tab_path) == -1 or line.find('.') != -1):
+
+                if line != '' and (line.find('exclusive') == -1 or line.find('.') != -1):
                     count += 1
                     html += '<li><span>' + str(count) + '.</span>'
                     url = line
-                    tilte = line[line.rfind('/') + 1 :]
+                    title = line[line.rfind('/') + 1 :]
 
                     if line.startswith('db/') and (line.endswith(str(datetime.date.today().year)) or line.find('(') != -1):
                         countInfo = ''
                         if line.find('(') != -1:
                             countInfo = '(<font color="red"><b>' + line[line.find('(') + 1 : line.find(')')] + '</b></font>)'
                             line = line[0 : line.find('(')]
-                            tilte = tilte[0 : tilte.rfind('(')].strip()
+                            title = title[0 : title.rfind('(')].strip()
+                            if title.find('-library') != -1:
+                                title = '<font color="red">' + title + '</font>'
+
                         url = 'http://' + Config.ip_adress + '/?db=' + line[line.find('/') + 1 : line.rfind('/') + 1] + '&key=' + line[line.rfind('/') + 1 :] 
                         if line.find('paper') != -1:
                             url += '&column=1'
@@ -179,16 +236,16 @@ class Filefinder(BaseExtension):
                         if self.dbFileArgsDict.has_key(line.strip()):
                             url += '&filter=' + self.dbFileArgsDict[line.strip()]
                         
-                        html += '<p>' + self.utils.enhancedLink(url, tilte, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=tilte + countInfo)
+                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=title + countInfo)
                     else:
                         
-                        html += '<p>' + self.utils.enhancedLink(line, tilte, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName']) + self.utils.getIconHtml(line)
+                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName']) + self.utils.getIconHtml(line)
                     if divID != '':
                         divID += '-' + str(count)
                         linkID = 'a-' + divID[divID.find('-') + 1 :]
                         appendID = str(count)
                         url = url.replace(' ', '#space')
-                        script = self.utils.genMoreEnginScript(linkID, divID, "loop-f-" + rID.replace(' ', '-') + '-' + str(appendID) , tilte, url, '-', hidenEnginSection=Config.bookmark_hiden_engin_section)
+                        script = self.utils.genMoreEnginScript(linkID, divID, "loop-f-" + rID.replace(' ', '-') + '-' + str(appendID) , title, url, '-', hidenEnginSection=Config.bookmark_hiden_engin_section)
                         html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', divID, '', False);
 
 

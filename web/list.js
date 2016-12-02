@@ -1,6 +1,8 @@
 var args = [];
 var search_box;
 var global_selection = '';
+var extension_count_dict = [];
+
 
 $(function() {  
     
@@ -80,7 +82,7 @@ function content2(content_id, dialog_engin_count, dialog_command_count) {
 
 
 $(document).ready(function(){
-	
+
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
   if (fileName.indexOf('arxiv') != -1) {
@@ -158,6 +160,7 @@ function showdiv(targetid,objN){
                 target.style.display="";
 
                 $('#' + targetid).attr("alt", 'showing')
+                //console.log("showing" , targetid);
             } else {
                 if (targetid.indexOf('tr-') >= 0) {
                     if (target.innerHTML.indexOf('showing') > 0) {
@@ -306,6 +309,12 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs['page'] = 1;
     postArgs['os'] = getOsInfo();
     postArgs['browser'] = getBrowserInfo();
+    postArgs['extension_count'] = extension_count_dict[args[divID][0]];
+    if (obj.text == 'bookmark' || obj.text == 'filefinder') {
+        postArgs['nocache'] = true;
+    } else {
+        postArgs['nocache'] = false;
+    }
 
     postArgs['selection'] = window.getSelection().toString();
     if (obj.text == "search" || obj.text == "keyword") {
@@ -399,6 +408,10 @@ function requestExtension(postArgs, tipInfo) {
         if (tipInfo) {
             clearInterval(loadAnimID);
         }
+
+        $.post('/extensionJobDone', postArgs, function(data) {
+
+        });
         
         MathJax.Hub.Queue(["Typeset", MathJax.Hub, postArgs['targetid']]);
     });
@@ -509,6 +522,7 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
         hidenMetadata(targetid, extensions[i], "none");
     }
     if (id == "") {
+        console.log("xx", 'id is empty');
         return;
     }
     var module = "*";
@@ -526,6 +540,7 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
         if (data.trim() != '') {
             console.log("xx", data)
             var extensions = data.split(" ");
+            extension_count_dict[id] = extensions.length;
             var found = false;
             for (var i = 0; i < extensions.length; i++) {
                 hidenMetadata(targetid, extensions[i], "");
@@ -611,7 +626,7 @@ function hidenMoreContent(pid, start) {
             showdiv('tr-' + trid, 'a-' + id1.toString() + '-' + id2.toString() + '-0' );
             index = 0;
         } else {
-            if (index > 2) {
+            if (index > 1223) {
                 break;
             }
             index = index + 1;

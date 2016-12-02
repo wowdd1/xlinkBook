@@ -27,6 +27,7 @@ import subprocess
 from config import Config
 reload(sys)
 sys.setdefaultencoding('utf8')
+from record import Tag
 
 
 regex = re.compile("\033\[[0-9;]*m")
@@ -75,6 +76,7 @@ class Utils:
 
     def __init__(self):
         self.loadEngins()
+        self.tag = Tag()
 
     def setEnginMode(self, engin):
         if engin.find(':duckduckgo') != -1:
@@ -441,7 +443,14 @@ class Utils:
     def recommendEngins(self, folder):
         engins = []
         if Config.recommend_engin_type != '':
-            engins = self.realGetEnginList([Config.recommend_engin_type], self.search_engin_dict.values())
+            if Config.recommend_engin_type.find(' ') != -1:
+                engin_types = Config.recommend_engin_type.split(' ')
+                per_engin_for_type = Config.recommend_engin_num / len(engin_types)
+                for enginType in engin_types:
+                    engins += self.realGetEnginList([enginType], self.search_engin_dict.values())[0 : per_engin_for_type]
+
+            else:
+                engins = self.realGetEnginList([Config.recommend_engin_type], self.search_engin_dict.values())
         else:
             etype = self.getRecommendType(folder)
             if etype != '':
@@ -469,38 +478,39 @@ class Utils:
             return ''
 
 
-    def getEnginList(self, engins, folder='', sort=False):
+    def getEnginList(self, engins, folder='', sort=False, recommend=False):
         if engins.startswith('description:') or engins.startswith('d:'):
             key = engins[engins.find(':') + 1 :].strip()
             engin_list = []
             tags = engins[engins.find(':') + 1 :].strip().split(' ')
             cachedEngins = []
             tags2 = []
-            for tag in tags:
-                if self.search_engin_type_2_engin_title_dict.has_key(tag.strip()):
-                    cachedEngins = cachedEngins + self.search_engin_type_2_engin_title_dict[tag.strip()]
-                else:
-                    tags2.append(tag.strip())
-            if len(tags2) == 0:
-                self.search_engin_type_2_engin_title_dict[key] = cachedEngins
-                if sort:
-                    self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(cachedEngins)
-                return self.search_engin_type_2_engin_title_dict[key]
-            else:
-                tags = tags2
-
-            #print engins
-            if self.ddg_mode:
-                self.search_engin_type_2_engin_title_dict[key] = self.getDDGEnginList(tags)
-            if Config.recommend_engin and tags[0] == 'star' and folder != '':
+            if recommend:
                 self.search_engin_type_2_engin_title_dict[key] = self.recommendEngins(folder)
             else:
-                self.search_engin_type_2_engin_title_dict[key] = self.realGetEnginList(tags, self.search_engin_dict.values())
+                for tag in tags:
+                    if self.search_engin_type_2_engin_title_dict.has_key(tag.strip()):
+                        cachedEngins = cachedEngins + self.search_engin_type_2_engin_title_dict[tag.strip()]
+                    else:
+                        tags2.append(tag.strip())
+                if len(tags2) == 0:
+                    self.search_engin_type_2_engin_title_dict[key] = cachedEngins
+                    if sort:
+                        self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(cachedEngins)
+                    return self.search_engin_type_2_engin_title_dict[key]
+                else:
+                    tags = tags2
 
-            if len(cachedEngins) > 0:
-                self.search_engin_type_2_engin_title_dict[key] = cachedEngins + self.search_engin_type_2_engin_title_dict[key]
-                if sort:
-                    self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(self.search_engin_type_2_engin_title_dict[key])
+                #print engins
+                if self.ddg_mode:
+                    self.search_engin_type_2_engin_title_dict[key] = self.getDDGEnginList(tags)
+                else:
+                    self.search_engin_type_2_engin_title_dict[key] = self.realGetEnginList(tags, self.search_engin_dict.values())
+
+                if len(cachedEngins) > 0:
+                    self.search_engin_type_2_engin_title_dict[key] = cachedEngins + self.search_engin_type_2_engin_title_dict[key]
+                    if sort:
+                        self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(self.search_engin_type_2_engin_title_dict[key])
             return self.search_engin_type_2_engin_title_dict[key] 
         else:
             return engins.split(' ')
@@ -621,39 +631,40 @@ class Utils:
     def getDDGEnginListLinks(self, engins, topic, id='', query = '', color="#999966", fontSize=11):
         return {}
 
-    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, color2, fontSize, dataMarginTop=''):
+    def getDescDivs(self, divid, enginType, keyword, links_per_row, scrip, color, color2, fontSize, dataMarginTop='', disableNavEngins=False):
         result = '<div id="' + divid + '" style="display: none;">'
-        engin_list = self.getEnginList('d:' + enginType)
-        #print engin_list
-        remain = len(engin_list)
-        last = 0
-        count = 0
-        while remain > 0:
-            #print '---'
-            #print 'remain' + str(remain)
-            #print 'links_per_row' + str(links_per_row)
-            #print 'last' + str(last)
-            if remain > links_per_row:
-                engin_list_dive = engin_list[last : last + links_per_row]
-            else:
-                engin_list_dive = engin_list[last : ]
-                remain = 0
-            #print engin_list_dive
-            div = '<div id="' + divid + '-' + str(count) + '" ">'
-            link_count = 0
-            for e in engin_list_dive:
-                link_count += 1
-                if link_count % 2 == 0:
-                    div += self.genLinkWithScript2(scrip, e.strip() , color2, self.priority2fontsize(e.strip(), self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
+        if disableNavEngins == False:
+            engin_list = self.getEnginList('d:' + enginType)
+            #print engin_list
+            remain = len(engin_list)
+            last = 0
+            count = 0
+            while remain > 0:
+                #print '---'
+                #print 'remain' + str(remain)
+                #print 'links_per_row' + str(links_per_row)
+                #print 'last' + str(last)
+                if remain > links_per_row:
+                    engin_list_dive = engin_list[last : last + links_per_row]
                 else:
-                    div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(e.strip(), self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
-            remain -= links_per_row
-            last += links_per_row
-            #print remain
-            #print last
-            div += '</div>'
-            count += 1
-            result += div
+                    engin_list_dive = engin_list[last : ]
+                    remain = 0
+                #print engin_list_dive
+                div = '<div id="' + divid + '-' + str(count) + '" ">'
+                link_count = 0
+                for e in engin_list_dive:
+                    link_count += 1
+                    if link_count % 2 == 0:
+                        div += self.genLinkWithScript2(scrip, e.strip() , color2, self.priority2fontsize(e.strip(), self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
+                    else:
+                        div += self.genLinkWithScript2(scrip, e.strip(), color, self.priority2fontsize(e.strip(), self.getEnginPriority(e.strip()),fontSize)) + '&nbsp;'
+                remain -= links_per_row
+                last += links_per_row
+                #print remain
+                #print last
+                div += '</div>'
+                count += 1
+                result += div
         result += "</div>" 
         if dataMarginTop != '':
             result += '<div id="' + divid + '-data" style="border-radius: 10px 10px 10px 10px; margin-top:' + dataMarginTop + 'px;"></div>'
@@ -711,6 +722,8 @@ class Utils:
     def bestMatchEngin(self, text, resourceType=''):
         #TODO get best engin by resourceType
         #print resourceType
+        if resourceType != '' and ' '.join(self.tag.tag_list_direct_link).find(resourceType) != -1:
+            return self.getEnginUrl('glucky')
         return self.getEnginUrl(Config.smart_link_engin)
 
     def bestMatchEnginUrl(self, text, resourceType='', source=''):
@@ -730,36 +743,48 @@ class Utils:
 
         if resourceType !='' and Config.smart_engin_for_tag.has_key(resourceType.strip()):
             result = {}
-            if isinstance(Config.smart_engin_for_tag[resourceType.strip()], str):
-                engin = Config.smart_engin_for_tag[resourceType.strip()]
-                result[engin.strip()] = self.toQueryUrl(self.getEnginUrl(engin), text)
-            else:
-                for u in Config.smart_engin_for_tag[resourceType.strip()]:
-                    result[u.strip()] = self.toQueryUrl(self.getEnginUrl(u), text)
+            for u in self.expandEngins(Config.smart_engin_for_tag[resourceType.strip()]):
+                result[u.strip()] = self.toQueryUrl(self.getEnginUrl(u), text)
 
+        '''
         if module != '' and Config.smart_engin_for_extension.has_key(module.strip()):
             result = {}
-            if isinstance(Config.smart_engin_for_extension[module.strip()], str):
-                engin = Config.smart_engin_for_extension[module.strip()]
-                result[engin.strip()] = self.toQueryUrl(self.getEnginUrl(engin), text)
-            else:
-                for u in Config.smart_engin_for_extension[module.strip()]:
-                    result[u.strip()] = self.toQueryUrl(self.getEnginUrl(u), text)  
+            for u in self.expandEngins(Config.smart_engin_for_extension[module.strip()]):
+                result[u.strip()] = self.toQueryUrl(self.getEnginUrl(u), text)  
+        '''
         return result
 
     dialog_engin_cache = None
+
+    def expandEngins(self, engins):
+        result = []
+        if isinstance(engins, str):
+            engins = [engins]
+        for e in engins:
+            if e.find(':') != -1:
+                result = result + self.getEnginList(e, sort=True)
+            else:
+                result.append(e)
+        return result
+
     def clientQueryEnginUrl2(self, text, resourceType=''):
         result = {}
         engins = []
         if resourceType != '' and Config.smart_engin_for_tag.has_key(resourceType):
-            engins = Config.smart_engin_for_tag[resourceType]
+            engins = self.expandEngins(Config.smart_engin_for_tag[resourceType])
         elif len(Config.smart_engin_for_dialog) > 0:
-            engins = Config.smart_engin_for_dialog
+            engins = self.expandEngins(Config.smart_engin_for_dialog)
         elif self.dialog_engin_cache != None:
             engins = self.dialog_engin_cache
         else:
             if Config.recommend_engin_type_for_dialog != '':
-                engins = self.getEnginList('d:' + Config.recommend_engin_type_for_dialog, sort=True)
+                if Config.recommend_engin_type_for_dialog.find(' ') != -1:
+                    engin_types = Config.recommend_engin_type_for_dialog.split(' ')
+                    per_engin_for_type = Config.recommend_engin_num / len(engin_types)
+                    for enginType in engin_types:
+                        engins += self.getEnginList('d:' + enginType, sort=True)[0 : per_engin_for_type]
+                else:
+                    engins = self.getEnginList('d:' + Config.recommend_engin_type_for_dialog, sort=True)
             else:
                 engins = self.getEnginList('d:star', sort=True)
             self.dialog_engin_cache = engins.append('glucky');
@@ -898,7 +923,7 @@ class Utils:
         return result
 
     def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False, showText='', module='', library='', rid='', resourceType=''):
-        if text != '' and len(text.strip()) <= Config.smart_link_max_text_len:
+        if text != '':
             url = ''
             if engin != '':
                 url = self.toQueryUrl(self.getEnginUrl(engin.strip()), text)
@@ -908,23 +933,29 @@ class Utils:
                 return self.enhancedLink(url, text, showText=showText, module=module, library=library, rid=rid, resourceType=resourceType)
             else:
                 return self.enhancedLink(url, self.formatTitle(text, br_number), showText=showText, module=module, library=library, rid=rid, resourceType=resourceType)
-        if noFormat:
-            return text
-        else:
-            return self.formatTitle(text, br_number)
+        return text
 
-    def formatTitle(self, title, br_number=Config.smart_link_br_len):
+    def formatTitle(self, title, br_number=Config.smart_link_br_len, keywords=[]):
         if title.find(': Amazon.com: Books') != -1:
             title = title.replace(': Amazon.com: Books', '')
             title = title[0 : title.rfind(':')]
         if len(title) > br_number:
             at = title.find(' ', br_number)
             if at != -1:
-                return title[0 : at] + '<br>' + self.formatTitle(title[at:], br_number)
+                return self.replaceKeyword(title[0 : at], keywords) + '<br>' + self.formatTitle(title[at:], br_number)
             else:
-                return title
+                return self.replaceKeyword(title, keywords)
         else:
-            return title
+            return self.replaceKeyword(title, keywords)
+
+    def replaceKeyword(self, text, keywords=[]):
+        if len(keywords) == 0:
+            return text
+        for kw in keywords:
+            if text.find(kw.strip()) != -1:
+                colorText = '<font color="red">' + kw.strip() + '</font>'
+                return text.replace(kw, colorText)
+        return text
 
     def priority2fontsize(self, engin, priority, baseFontSize):
         if priority.strip() == '':
@@ -1097,7 +1128,7 @@ class Utils:
         if htmlStyle:
             c_len = titleLen + 10
         for k in keywordList:
-            end = text.lower().find(' ' + k, start + 2)
+            end = text.find(' ' + k, start + 2)
             if end != -1 and end + 1 < min_end:
                 end += 1
                 min_end = end

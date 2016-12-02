@@ -20,7 +20,8 @@ class Citation(BaseExtension):
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
-        return fileName.find('papers') != -1
+        url = form_dict['url'].encode('utf8')
+        return fileName.find('papers') != -1 and url != ''
 
     def excute(self, form_dict):
 
