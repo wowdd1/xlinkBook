@@ -31,6 +31,7 @@ class Bookmark(BaseExtension):
         BaseExtension.__init__(self)
         self.utils = Utils()
         self.loadBookmark()
+        self.form_dict = None
 
     def existChild(self, pid):
         return self.raw_data.lower().find('"parentId":"' + pid + '"') != -1
@@ -46,9 +47,10 @@ class Bookmark(BaseExtension):
             subprocess.check_output("mv " + Config.bookmark_file_path + " extensions/bookmark/data/chrome_bookmarks.json", shell=True)
             self.loadBookmark()
 
-    def getAlias(self, rID, file):
+    def getAlias(self, rID, file, nocache):
         alias = ''
-        record = self.utils.getRecord(rID.strip(), path=file, log=True)
+        use_cache = nocache == False
+        record = self.utils.getRecord(rID.strip(), path=file, log=True, use_cache=use_cache)
         if record != None and record.get_id().strip() != '':
             ret = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'alias'})
             if ret != None:
@@ -63,8 +65,15 @@ class Bookmark(BaseExtension):
             return []
 
     def excute(self, form_dict):
+        self.form_dict = form_dict
         divID = form_dict['divID'].encode('utf8')
-        html = '<div class="ref"><ol>'
+        nocache = False
+        if form_dict.has_key('nocache'):
+            nocache = form_dict['nocache'].encode('utf8')
+        html = ''
+        if form_dict['column'] != '1' and form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
+            html += '<br>'
+        html += '<div class="ref"><ol>'
         rID = form_dict['rID'].encode('utf8')
         print divID
         if divID.find('-cloud-') != -1:
@@ -79,7 +88,8 @@ class Bookmark(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        alias = self.getAlias(rID.strip(), form_dict['originFileName'])
+        alias = self.getAlias(rID.strip(), form_dict['originFileName'], nocache)
+        print alias
         #if form_dict.has_key('selection') and form_dict['selection'].strip() != '':
         #    selection = form_dict['selection'].encode('utf8').strip()
             #if rTitle.find(selection) != -1:
@@ -100,6 +110,7 @@ class Bookmark(BaseExtension):
             pid = rID[rID.rfind('-') + 1 :]
         print 'rID ' + rID + ' pid: ' + pid + ' rTitle:' + rTitle
 
+
         for jobj in self.jobj_list:
             if pid == '':
                 if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
@@ -107,7 +118,7 @@ class Bookmark(BaseExtension):
                     if rID.startswith('loop-b'):
                         html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
                     else:
-                        if count < int(form_dict['page']) * Config.bookmark_page_item_count and count >= (int(form_dict['page']) - 1) * Config.bookmark_page_item_count:
+                        if count < int(form_dict['page']) * Config.bookmark_page_item_count[int(form_dict['column']) - 1] and count >= (int(form_dict['page']) - 1) * Config.bookmark_page_item_count[int(form_dict['column']) - 1]:
                             currentPage = form_dict['page']
                             html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
                     url = ''
@@ -132,12 +143,12 @@ class Bookmark(BaseExtension):
         if Config.bookmark_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'bookmark', rTitle, Config.bookmark_output_data_format)
         else:
-            if len(records) < Config.bookmark_page_item_count:
+            if len(records) < Config.bookmark_page_item_count[int(form_dict['column']) - 1]:
                 total_page = 1
-            elif len(records) % Config.bookmark_page_item_count == 0:
-                total_page = len(records) / Config.bookmark_page_item_count
+            elif len(records) % Config.bookmark_page_item_count[int(form_dict['column']) - 1] == 0:
+                total_page = len(records) / Config.bookmark_page_item_count[int(form_dict['column']) - 1]
             else:
-                total_page = len(records) / Config.bookmark_page_item_count + 1
+                total_page = len(records) / Config.bookmark_page_item_count[int(form_dict['column']) - 1] + 1
             print 'currentPage ' + str(currentPage)
             if total_page > 1 and rID.startswith('loop-b') == False:
                 html += '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
@@ -163,13 +174,13 @@ class Bookmark(BaseExtension):
             cloudDivID = divID + '-cloud-' + str(random.randint(0, 1000))
             cloudLinkID = divID + '-cloud-a-' + str(random.randint(0, 1000))
 
-            if total_page > 1:
+            if total_page > 1 and form_dict['column'] != '1':
                 html += '<br>'
             html += '<div id="' + cloudDivID + '" class="ref">'
             aCount = 0
             alias = [rTitle] + alias
      
-            html += 'Load Cloud Bookmarks for:  '
+            html += 'Load Cloud Bookmark'
             
             for a in alias:
                 aCount += 1
@@ -181,6 +192,9 @@ class Bookmark(BaseExtension):
                 html += '<a id="' + cloudLinkID+ '-' + str(aCount) + '" href="javascript:void(0);" onclick="' + script + '" style="font-size:10pt;">' + str(a) + '</a> '
             html += '</div>'
         return html
+
+    def getBookmarkItemCount(self, column):
+        return Config.bookmark_page_item_count[int(column) - 1]
 
     def getPageScript(self, form_dict, page):
         script = 'var postArgs = {};';
@@ -216,7 +230,7 @@ class Bookmark(BaseExtension):
 
         return False
 
-    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename):
+    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[]):
         html = ''
         
         html += '<li><span>' + str(count) + '.</span>'
@@ -226,7 +240,7 @@ class Bookmark(BaseExtension):
             url = jobj['url']
 
         if url != '':
-            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len), module='bookmark', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
+            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords), module='bookmark', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
         else:
             html += '<p>' + jobj['title'] + ' > '
         #if self.existChild(str(jobj['id'])):
@@ -300,6 +314,9 @@ class Bookmark(BaseExtension):
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        print rTitle
-        return self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or self.containIgoncase2(self.raw_data, self.getAlias(rID, form_dict['originFileName'])) or rTitle.find('.') != -1
+        nocache = False
+        if form_dict.has_key('nocache'):
+            nocache = form_dict['nocache'].encode('utf8')
+        print 'rTitle:' + rTitle
+        return fileName.find('exclusive') != -1 or self.rounter.has_key(rID) or rID.startswith('loop-b') or self.containIgoncase(self.raw_data, rTitle) or self.containIgoncase2(self.raw_data, self.getAlias(rID, form_dict['originFileName'], nocache)) or rTitle.find('.') != -1
 

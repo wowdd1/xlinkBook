@@ -185,6 +185,7 @@ def handleExec():
             cmd = sublime.replace(' ', '\ ') + ' "' + fileName.strip() + '"'
         print cmd
         output = subprocess.check_output(cmd, shell=True)
+
     return output
 
 @app.route('/queryUrl', methods=['POST'])
@@ -263,10 +264,18 @@ def handleUserLog():
 def handleExtension():
     if request.args.get('verify', '') != '':
         request.form['fileName'] = request.args.get('verify', '')
-    print request.form
+
     if request.form['rID'] == "":
         return ""
     return extensionManager.doWork(request.form)
+
+@app.route('/extensionJobDone', methods=['POST'])
+def handleExtensionJobDone():
+    print 'handleExtensionJobDone:'
+    print '    rID:' + request.form['rID']
+    print '    rTitle:' + request.form['rTitle'].replace('%20', ' ')
+    print '    name:' + request.form['name']
+    return 'ok'
 
 @app.route('/thumb', methods=['POST'])
 def handleThumb():

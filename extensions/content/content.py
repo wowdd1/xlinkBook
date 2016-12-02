@@ -100,6 +100,8 @@ class Content(BaseExtension):
 
     def genMetadataHtml(self, key, content_divID, defaultLinks):
         html = '<div class="ref"><br><ol>'
+        if self.form_dict['column'] == '1':
+            html = '<div class="ref"><ol>'
         count = 0
         if self.datafile_content.has_key(key):
             self.record_content = self.datafile_content

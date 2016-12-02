@@ -24,7 +24,7 @@ class Edit(BaseExtension):
             return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName)
             
         print fileName
-        r = self.utils.getRecord(rID, path=fileName)
+        r = self.utils.getRecord(rID, path=fileName, use_cache=False)
         html = 'not found'
         areaID = rID.replace(' ', '-').replace('.', '-') + '-area'
         if r != None and r.get_id().strip() != '':
@@ -38,7 +38,12 @@ class Edit(BaseExtension):
                 rows = '35'
                 cols = '88'
             desc = r.get_describe().strip()
-            html = '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px;" '
+            html = ''
+            print form_dict['extension_count']
+            print desc
+            if int(form_dict['extension_count']) > 12:
+                html += '<br>'
+            html += '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px;" '
             html += 'onfocus="setbg(' + "'" + areaID + "'," + "'#e5fff3');" + '" '
             html += 'onblur="setbg(' + "'" + areaID + "'," + "'white');" + '">'
             start = 0
@@ -49,21 +54,26 @@ class Edit(BaseExtension):
                 html += 'title:' + r.get_title().strip() + '\n'
             html += '\nurl:' + r.get_url().strip() + '\n'
             while start < len(desc):
-                end = self.utils.next_pos(desc, start, int(cols)- 10, self.tag.tag_list) 
+                end = self.utils.next_pos(desc, start, int(cols), self.tag.tag_list) 
+                #print end
                 line = desc[start : end].strip()
+                
+                print line
                 if line.find(':') != -1 and line.find(':') < 15 and line[0 : 1].islower():
                     line = '\n' + line
                 html += line + '\n'
                 
 
-                
-                
+                if end < 0 or line.strip() == '':
+                    break
                 start = end
 
             html += '</textarea>'
             script = "var text = $('#" + areaID + "'); console.log('', text[0].value);"
             script += "var postArgs = {name : 'edit', rID : '" + rID + "', rTitle : '" + rTitle +"', check: 'false', fileName : '" + fileName + "', divID : '" + divID + "', originFileName : '" + originFileName+ "', textContent: text[0].value};";
-            script += "$.post('/extensions', postArgs, function(data) { window.location.href = window.location.href; });"
+            linkid = divID.replace('-edit', '').replace('div', 'a')
+            script += "$.post('/extensions', postArgs, function(data) { window.location.href = window.location.href.replace('#', ''); });"
+            # var a = document.getElementById('" + linkid + "'); var evnt = a['onclick']; evnt.call(a);
 
             html += '<br><button type="submit" id="edit_btn" hidefocus="true" onclick="' + script + '">submit</button>'
         return html

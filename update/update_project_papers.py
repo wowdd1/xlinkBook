@@ -9,7 +9,8 @@ class ProjectPaperSpider(Spider):
     def __init__(self):
         Spider.__init__(self)
         self.utils = Utils()
-        self.school = "papers/project-papers"
+        self.school = "project-papers"
+        self.dirs = "eecs/papers/project-papers/" 
 
     def doWork(self):
         '''
@@ -25,15 +26,15 @@ class ProjectPaperSpider(Spider):
         '''
         #self.getWastonPapers()
         self.getDeepmindPapers()
-        self.getFacebookResearchPapers()
-        self.getGoogleBrainPapers()
-	self.getAI2Papers()
-	self.getBaiduResearchPapers()
+        #self.getFacebookResearchPapers()
+        #self.getGoogleBrainPapers()
+	#self.getAI2Papers()
+	#self.getBaiduResearchPapers()
 
     def getBaiduResearchPapers(self):
 
 	urls = ['http://research.baidu.com/silicon-valley-ai-lab/', 'http://research.baidu.com/institute-of-deep-learning', 'http://research.baidu.com/big-data-lab/']
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "baidu-research", self.school)
+        file_name = self.get_file_name(self.dirs + "baidu-research", self.school)
 	file_lines = self.countFileLineNum(file_name)
 	f = self.open_db(file_name + ".tmp")
 	self.count = 0
@@ -99,7 +100,7 @@ class ProjectPaperSpider(Spider):
 	ul = soup.find('ul', class_='filter-data')
 	soup = BeautifulSoup(ul.prettify())
 
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "ai2", self.school)
+        file_name = self.get_file_name(self.dirs + "ai2", self.school)
         file_lines = self.countFileLineNum(file_name)
 	f = self.open_db(file_name + ".tmp")
 	self.count = 0
@@ -133,7 +134,7 @@ class ProjectPaperSpider(Spider):
 	ul = soup.find('ul', class_='pub-list')
 	soup = BeautifulSoup(ul.prettify())
 
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "googlebrain", self.school)
+        file_name = self.get_file_name(self.dirs + "googlebrain", self.school)
         file_lines = self.countFileLineNum(file_name)
 	f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -174,7 +175,7 @@ class ProjectPaperSpider(Spider):
     def getFacebookResearchPapers(self):
         count = 0
 
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "facebook-ai", self.school)
+        file_name = self.get_file_name(self.dirs + "facebook-ai", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -236,14 +237,12 @@ class ProjectPaperSpider(Spider):
             print "no need upgrade\n"
 
     def getDeepmindPapers(self):
-        r = requests.get('https://deepmind.com/publications')
-        soup = BeautifulSoup(r.text)
-
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "deepmind", self.school)
+        file_name = self.get_file_name(self.dirs + "deepmind", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
 
+        '''
         for ul in soup.find_all('ul', class_='publication'):
             #print ul
             sp = BeautifulSoup(ul.prettify())
@@ -261,7 +260,32 @@ class ProjectPaperSpider(Spider):
             print desc
             self.count += 1
             self.write_db(f, 'deepmind-' + str(self.count), title, link, 'author:' + authors + ' description:' + desc)
+        '''
+        all_authors = {}
+        for page in range(0 , 100):
+            url = 'https://deepmind.com/research/publications/?page=' + str(page + 1)
+            print url
+            r = self.requestWithProxy(url)
 
+            if r.status_code != 200:
+                break
+            soup = BeautifulSoup(r.text)
+            divs = soup.find_all('div', class_='research-list--item-heading')
+            if len(divs) == 0:
+                break
+            for div in divs:
+                print div.h1.text
+                desc = div.p.text
+                data = self.utils.removeDoubleSpace(div.text[div.text.find('Authors:') + 8 :].strip().replace('\n', ' '))
+                for author in data.split(','):
+                    author = author.strip()
+                    if all_authors.has_key(author) == False:
+                        all_authors[author] = author
+                print data
+                self.count += 1
+                self.write_db(f, 'deepmind-paper-' + str(self.count), div.h1.text, '', 'author:' + data + ' description:' + desc)
+
+        print ', '.join(all_authors.keys())
 
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
@@ -274,7 +298,7 @@ class ProjectPaperSpider(Spider):
     def getCALOPapers(self):
         r = requests.get('http://www.ai.sri.com/pubs/search.php?project=179')
         soup = BeautifulSoup(r.text)
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "CALO", self.school)
+        file_name = self.get_file_name(self.dirs + "CALO", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -302,7 +326,7 @@ class ProjectPaperSpider(Spider):
         journal = ""
         desc = ""
         url = ""
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "AutonomousDriving", self.school)
+        file_name = self.get_file_name(self.dirs + "AutonomousDriving", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -335,7 +359,7 @@ class ProjectPaperSpider(Spider):
             print "no need upgrade\n"
 
     def getMobileyePapers(self):
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "Mobileye", self.school)
+        file_name = self.get_file_name(self.dirs + "Mobileye", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -363,7 +387,7 @@ class ProjectPaperSpider(Spider):
         r = requests.get("http://wiki.apache.org/hadoop/Papers")
         soup = BeautifulSoup(r.text)
 
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "hadoop", self.school)
+        file_name = self.get_file_name(self.dirs + "hadoop", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -386,7 +410,7 @@ class ProjectPaperSpider(Spider):
         r = requests.get("http://spark.apache.org/documentation.html")
         soup = BeautifulSoup(r.text)
 
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "spark", self.school)
+        file_name = self.get_file_name(self.dirs + "spark", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -414,7 +438,7 @@ class ProjectPaperSpider(Spider):
         r = requests.get("http://start.mit.edu/publications.php")
         soup = BeautifulSoup(r.text)
 
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "START", self.school)
+        file_name = self.get_file_name(self.dirs + "START", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -466,7 +490,7 @@ class ProjectPaperSpider(Spider):
         r = requests.get("http://stair.stanford.edu/papers.php")
         soup = BeautifulSoup(r.text)
 
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "STAIRP", self.school)
+        file_name = self.get_file_name(self.dirs + "STAIRP", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -494,7 +518,7 @@ class ProjectPaperSpider(Spider):
     def getRoboBrainPapers(self):
         r = requests.get("http://robobrain.me/#/about")
         soup = BeautifulSoup(r.text)
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "robotbrain", self.school)
+        file_name = self.get_file_name(self.dirs + "robotbrain", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
@@ -512,7 +536,7 @@ class ProjectPaperSpider(Spider):
     def getWastonPapers(self):
         r = requests.get('http://researcher.watson.ibm.com/researcher/view_group_pubs.php?grp=2099')
         soup = BeautifulSoup(r.text)
-        file_name = self.get_file_name("eecs/" + self.school + "/" + "waston", self.school)
+        file_name = self.get_file_name(self.dirs + "waston", self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0

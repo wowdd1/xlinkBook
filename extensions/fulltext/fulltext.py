@@ -19,4 +19,4 @@ class Fulltext(BaseExtension):
 
     def check(self, form_dict):
         fileName = form_dict['fileName'].encode('utf8')
-        return fileName.find('papers') != -1
+        return fileName.find('arxiv') != -1

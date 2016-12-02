@@ -1,6 +1,5 @@
 all
 social
-#predict
 news
 image
 video
@@ -23,6 +22,7 @@ slide
 book
 project
 code
+#schematic
 dataset
 protocol
 cloud

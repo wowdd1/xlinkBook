@@ -132,7 +132,8 @@ class AiPapersSpider(Spider):
             title = li.a.text[li.a.text.find('(') : ].replace('(', '').replace(')', '').strip().split(' ')
             conference = title[0]
             year = title[1]
-            if int(year) > 1986:
+            #if int(year) > 1986:
+            if int(year) > 2015:
                 print 'process ' + ' '.join(title)
                 r = requests.get('http://papers.nips.cc' + li.a['href'])
                 sp = BeautifulSoup(r.text)
@@ -444,6 +445,7 @@ start.getIJCAIPaper()
 start.getCVFoundation()
 
 #TODO
+#ICLR http://www.iclr.cc/doku.php?id=ICLR2017:main&redirect=1
 #TPAMI http://dblp.uni-trier.de/db/journals/pami/
 #AI http://dblp.uni-trier.de/db/journals/ai/
 #IJCV http://dblp.uni-trier.de/db/journals/ijcv/

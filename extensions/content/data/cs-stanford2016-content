@@ -433,3 +433,71 @@ CS231A-15.25 | Belief propagation | | parentid:CS231A-15
 CS231A-15.26 | Graph cuts | | parentid:CS231A-15
 CS231A-15.27 | Linear programming | | parentid:CS231A-15
 CS231A-15.28 | Uncertainty estimation (error analysis) | | parentid:CS231A-15
+CS131-1 | Introduction | | parentid:CS131
+CS131-2 | Images as functions | | parentid:CS131
+CS131-3 | Filtering | | parentid:CS131
+CS131-4 | Linearity and convolution | | parentid:CS131
+CS131-5 | Filters as templates | | parentid:CS131
+CS131-6 | Edge detection: Gradients | | parentid:CS131
+CS131-7 | Edge detection: 2D operators | | parentid:CS131
+CS131-8 | Hough transform: Lines | | parentid:CS131
+CS131-9 | Hough transform: Circles | | parentid:CS131
+CS131-10 | Generalized Hough transform | | parentid:CS131
+CS131-11 | Fourier transform | | parentid:CS131
+CS131-12 | Convolution in frequency domain | | parentid:CS131
+CS131-13 | Aliasing | | parentid:CS131
+CS131-14 | Cameras and images | | parentid:CS131
+CS131-15 | Perspective imaging | | parentid:CS131
+CS131-16 | Stereo geometry | | parentid:CS131
+CS131-17 | Epipolar geometry | | parentid:CS131
+CS131-18 | Stereo correspondence | | parentid:CS131
+CS131-19 | Extrinsic camera parameters | | parentid:CS131
+CS131-20 | Instrinsic camera parameters | | parentid:CS131
+CS131-21 | Calibrating cameras | | parentid:CS131
+CS131-22 | Image to image projections | | parentid:CS131
+CS131-23 | Homographies and mosaics | | parentid:CS131
+CS131-24 | Projective geometry | | parentid:CS131
+CS131-25 | Essential matrix | | parentid:CS131
+CS131-26 | Fundamental matrix | | parentid:CS131
+CS131-27 | Introduction to "features" | | parentid:CS131
+CS131-28 | Finding corners | | parentid:CS131
+CS131-29 | Scale invariance | | parentid:CS131
+CS131-30 | SIFT descriptor | | parentid:CS131
+CS131-31 | Matching feature points | | parentid:CS131
+CS131-32 | Robust error functions | | parentid:CS131
+CS131-33 | RANSAC | | parentid:CS131
+CS131-34 | Photometry | | parentid:CS131
+CS131-35 | Lightness | | parentid:CS131
+CS131-36 | Shape from shading | | parentid:CS131
+CS131-37 | Introduction to motion | | parentid:CS131
+CS131-38 | Dense flow: Brightness constraint | | parentid:CS131
+CS131-39 | Dense flow: Lucas and Kanade | | parentid:CS131
+CS131-40 | Hierarchical LK | | parentid:CS131
+CS131-41 | Motion models | | parentid:CS131
+CS131-42 | Introduction to tracking | | parentid:CS131
+CS131-43 | Tracking as inference | | parentid:CS131
+CS131-44 | The Kalman filter | | parentid:CS131
+CS131-45 | Bayes filters | | parentid:CS131
+CS131-46 | Particle filters | | parentid:CS131
+CS131-47 | Particle filters for localization | | parentid:CS131
+CS131-48 | Particle filters for real | | parentid:CS131
+CS131-49 | Tracking considerations | | parentid:CS131
+CS131-50 | Introduction to recognition | | parentid:CS131
+CS131-51 | Classification: Generative models | | parentid:CS131
+CS131-52 | Principle Component Analysis | | parentid:CS131
+CS131-53 | Appearance-based tracking | | parentid:CS131
+CS131-54 | Discriminative classifiers | | parentid:CS131
+CS131-55 | Boosting and face detection | | parentid:CS131
+CS131-56 | Support Vector Machines | | parentid:CS131
+CS131-57 | Bag of visual words | | parentid:CS131
+CS131-58 | Introduction to video analysis | | parentid:CS131
+CS131-59 | Activity recognition | | parentid:CS131
+CS131-60 | Hidden Markov Models | | parentid:CS131
+CS131-61 | Color spaces | | parentid:CS131
+CS131-62 | Segmentation | | parentid:CS131
+CS131-63 | Mean shift segmentation | | parentid:CS131
+CS131-64 | Segmentation by graph partitioning | | parentid:CS131
+CS131-65 | Binary morphology | | parentid:CS131
+CS131-66 | 3D perception | | parentid:CS131
+CS131-67 | The retina | | parentid:CS131
+CS131-68 | Vision in the brain | | parentid:CS131

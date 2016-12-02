@@ -227,6 +227,8 @@ def align_id_title(record):
     else:
         return course_num + vertical + course_name
 
+
+last_need_smart_link = False
 def align_describe(describe, record=None, containID=''):
     if html_style == False:
         if utils.str_block_width(describe) > course_name_len - 1 and output_with_describe == False:
@@ -235,7 +237,34 @@ def align_describe(describe, record=None, containID=''):
             describe += get_space(0, course_name_len - utils.str_block_width(describe))
         return get_space(0, course_num_len) + vertical + describe
     else:
-        return  vertical + smartLink(describe, record, containID=containID)
+        global last_need_smart_link
+        need_smart_link2 = needSmartLink(describe)
+        if last_need_smart_link and need_smart_link2 == False:
+
+            if last_content.strip().find(describe.strip()) != -1:
+                return vertical 
+            else:
+                last_need_smart_link = need_smart_link2
+                return vertical + describe
+
+
+        last_need_smart_link = need_smart_link2
+        if need_smart_link2:
+            return  vertical + smartLink(describe, record, containID=containID)
+        else:
+            return vertical + describe
+
+def needSmartLink(describe):
+    if describe.find(':') == -1:
+        return False
+    else:
+        prefix = describe[0 : describe.find(':') + 1].strip()
+
+        if ' '.join(tag.tag_list_smart_link).find(prefix) == -1 and ' '.join(tag.tag_list_account.keys()).find(prefix) == -1:
+            return False
+        else:
+            #print prefix
+            return True
 
 def print_with_color(text):
     global color_index
@@ -406,7 +435,7 @@ def getScript(file_name, first_record, total_records):
     print 'var database = "' + database + '";'
     print 'var key = "";'
     print 'var starDivCount = ' + str(starDivCount) + ';'
-    print 'var hidenMoreCount = ' + str(Config.custom_cell_row_list[int(column_num) - 1]) + ';' 
+    print 'var hidenMoreCount = ' + str(custom_cell_row) + ';' 
     if plugins_mode == False:
         if len(Config.smart_engin_for_dialog) > 0:
             print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
@@ -450,7 +479,7 @@ def getScript(file_name, first_record, total_records):
                 setText('a-0-0-0');\
                 showdiv('div-000','a-0-0-0');\
                 appendContent('div-0-0-0','" + first_record.get_id().strip() + "','" + title + "','" + first_record.get_url().strip() + "','',false);"
-            for i in range(0, 30):
+            for i in range(0, custom_cell_row):
                 click_more += "showdiv('td-div-0-0-" + str(i) + "', 'a-0-0-0');showdiv('tr-0-" + str(i) + "', 'a-0-0-0');"
             click_more +="});";
         print script_head + click_more + script_end
@@ -501,7 +530,7 @@ def build_lines(list_all, file_name):
     describe_lines = []
     engin_list = []
     if engin != '':
-        engin_list = utils.getEnginList(engin.strip(), file_name)
+        engin_list = utils.getEnginList(engin.strip(), file_name, recommend=Config.recommend_engin)
 
     global loadmore_count
     if source.find('arxiv') != -1 and filter_keyword == '':
@@ -690,11 +719,13 @@ def build_lines(list_all, file_name):
                                             hidenScript2 += 'hidendiv_3("' + nav_div_id + '");'
                                         if link == last_engin_type:
                                             is_extension = True
+
                                     #print 'navLinks end:' + str(datetime.datetime.now()) + '<br>'
                                     #print 'genMoreEnginHtml start:' + str(datetime.datetime.now()) + '<br>'
                                     if Config.extension_mode == False and Config.hiden_engins:
                                         more_html = ''
-                                        more_html = utils.genMoreEnginHtml('#div-' + linkID, hidenScript2 + 'setText("' + '#div-' + linkID + '")', '...', content_divID + '-' + content_divID, doubleQ=False)
+                                        if Config.disable_nav_engins == False:
+                                            more_html = utils.genMoreEnginHtml('#div-' + linkID, hidenScript2 + 'setText("' + '#div-' + linkID + '")', '...', content_divID + '-' + content_divID, doubleQ=False)
                                         for index in range(0, len(div_content_list)):
                                             if div_content_list[index].find('#more') != -1:
                                                 div_content_list[index] = div_content_list[index].replace('#more', more_html)
@@ -715,7 +746,7 @@ def build_lines(list_all, file_name):
                                     dataMarginTop = getDataMarginTop()
                                     for link in navLinks:
                                         divID = '#div-' + link
-                                        div_content_extension_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12, dataMarginTop=dataMarginTop))
+                                        div_content_extension_list.append(utils.getDescDivs(divID, link, title.replace(' ', '%20'), max_nav_links_row, 'searchTopic(this,"' + "#rid" + '","' +"#topic" + '","' + "#otherInfo" + '");', '#822312', '#131612', 12, dataMarginTop=dataMarginTop, disableNavEngins=Config.disable_nav_engins))
                                     #print 'getDescDivs end:' + str(datetime.datetime.now()) + '<br>'
                                 if l == lines - 1:
                                     gen_html_done = True
@@ -749,10 +780,13 @@ def build_lines(list_all, file_name):
     return id_title_lines, describe_lines
 
 def getDataMarginTop():
+    return ''
+    '''
     if column_num == '1':
         return ''
     else:
         return '15'
+    '''
 
 def get_line(lines, start, end, j):
     result = vertical
@@ -937,67 +971,43 @@ def smartLink(content, record, containID=''):
         if ret == None:
             return ''
         split_char = ','
-        if ret.find(' and ') != -1:
-            ret = ret.replace(' and ', ', ')
+        #if ret.find(' and ') != -1:
+        #    ret = ret.replace(' and ', ', ')
         if ret.find(' or ') != -1:
             ret = ret.replace(' or ', ', ')
-        elif ret.find('/') != -1:
-            ret = ret.replace('/', ', ')
+        #elif ret.find('/') != -1:
+        #    ret = ret.replace('/', ', ')
         elif ret.find(';') != -1:
             #ret = ret.replace(';', ', ')
             split_char = ';'
-        digMode = Config.smart_engin_for_tag.has_key(tag) == False
-        return genSmartLinkHtml(tag, record, split_char, '', content, dialogMode=digMode, containID=containID)
+        
+        if isDirectLinkTag(content):
+            return genSmartLinkHtml(tag, ret, record, split_char, '', content, dialogMode=False, containID=containID)
+        else:
+            digMode = True
+            if Config.smart_engin_for_tag_batch_open and Config.smart_engin_for_tag.has_key(tag):
+                digMode = False
+            else:
+                digMode = True
+            crossref = False
+
+            if tag =='crossref':
+                crossref = True
+            return genSmartLinkHtml(tag, ret, record, split_char, '', content, dialogMode=digMode, containID=containID, crossref=crossref)
 
     else:
-        if last_content.strip().find(content.strip()) != -1:
-            last_content += content.strip()
-            return ''
         last_content += content.strip()
         return content
 
-def genAccountHtml(tag, record, content, containID=''):
+def genAccountHtml(tagStr, record, content, containID=''):
     url = ''
-    if tag == 'slack':
-        url = 'https://%s.slack.com/'
-    elif tag == 'gitter':
-        url = 'https://gitter.im/%s/gym'
-    elif tag == 'twitter':
-        url = 'https://twitter.com/%s'    
-    elif tag == 'youtube':
-        url = 'https://www.youtube.com/user/%s/videos'
-    elif tag == 'y-channel':
-        url = 'https://www.youtube.com/channel/%s/videos'
-    elif tag == 'github':
-        url = 'https://www.github.com/%s/'
-    elif tag == 'vimeo':
-        url = 'https://vimeo.com/%s'
-    elif tag == 'g-group':
-        url = 'https://groups.google.com/a/%s'
-    elif tag == 'fb-group':
-        url = 'https://www.facebook.com/groups/%s/'
-    elif tag == 'medium':
-        url = 'https://medium.com/%s'
-    elif tag == 'goodreads':
-        url = 'http://www.goodreads.com/review/list/%s'
-    elif tag == 'meetup':
-        url = 'https://www.meetup.com/%s/'
-    elif tag == 'g-plus':
-        url = 'https://plus.google.com/u/0/communities/%s'
-    elif tag == 'memkite':
-        url = 'http://memkite.com/%s/'
-    elif tag == 'l-group':
-        url = 'https://www.linkedin.com/groups/%s/profile'
-    elif tag == 'docker':
-        url = 'https://hub.docker.com/r/%s/'
-    elif tag == 'zhihu':
-        url = 'https://zhuanlan.zhihu.com/%s'
-    elif tag == 'bitbucket':
-        url = 'https://bitbucket.org/%s/'
+    if tag.tag_list_account.has_key(tagStr + ':'):
+        url = tag.tag_list_account[tagStr + ':']
     else:
-        url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tag)
+        url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tagStr)
     if url != '':
-        return genSmartLinkHtml(tag, record, ',', url, content, urlFromServer=False, accountTag=True, containID=containID)
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tagStr})
+        return genSmartLinkHtml(tagStr, ret, record, ',', url, content, urlFromServer=False, accountTag=True, containID=containID)
     else:
         return ''
 
@@ -1005,7 +1015,7 @@ def genAccountHtml(tag, record, content, containID=''):
 def isAccountTag(content):
     if content.find(':') != -1:
         prefix = content[0 : content.find(':') + 1].strip()
-        return ' '.join(tag.tag_list_account).find(prefix) != -1
+        return ' '.join(tag.tag_list_account.keys()).find(prefix) != -1
     else:
         return False
 
@@ -1016,9 +1026,16 @@ def isSmartLinkTag(content):
     else:
         return False
 
-def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False, containID=''):
+def isDirectLinkTag(content):
+    if content.find(':') != -1:
+        prefix = content[0 : content.find(':') + 1].strip()
+        return ' '.join(tag.tag_list_direct_link).find(prefix) != -1
+    else:
+        return False
+
+def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False, containID='', crossref=False):
     global last_content
-    ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
+    ret = tag_content
     last_content = ret
     html = ''
     count = 0
@@ -1030,21 +1047,21 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
             old_i = i.strip()
             if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
                 i = i[0 : i.find(Config.delete_from_char)].strip()
-            if len(i.strip()) > 14:
-                lineLenCount += 14
-            else:
-                lineLenCount += len(i.strip())
+            lineLenCount += getCutLen(tag, i.strip())
             if old_i == ret[0].strip():
                 lineLenCount += len(tag)
             count += 1
             aid = containID + '-a-' + str(count)
-            if url != '':
-                link = url
-                if url.find('%s') != -1:
-                    link = url.replace('%s', i.strip().replace(' ', ''))
-                html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
+            if crossref:
+                html += genCrossrefHtml(record.get_id(), aid, tag, i)
             else:
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
+                if url != '':
+                    link = url
+                    if url.find('%s') != -1:
+                        link = url.replace('%s', i.strip().replace(' ', ''))
+                    html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
+                else:
+                    html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
             if old_i != ret[len(ret) - 1].strip():
                 if accountTag:
                     html += '&nbsp;'
@@ -1057,23 +1074,54 @@ def genSmartLinkHtml(tag, record, split_char, url, content, urlFromServer=True, 
     else:
         count = 1
         aid = containID + '-a-' + str(count)
-        if url != '':
-            link = url
-            if url.find('%s') != -1:
-                link = url.replace('%s', ret)
-            html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
+        if crossref:
+            html += genCrossrefHtml(record.get_id(), aid, tag, ret)
         else:
-            html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
+            if url != '':
+                link = url
+                if url.find('%s') != -1:
+                    link = url.replace('%s', ret)
+                html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
+            else:
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
 
     return content[ 0 : content.find(':') + 1 ] + html
+
+def genCrossrefHtml(rid, aid, tag, content):
+    html = ''
+    if content.find('#') != -1:
+        data = content.strip().split('#')
+        
+        if len(data) != 2:
+            return ''
+        filters = []
+        if data[1].find('+') != -1:
+            filters = data[1].split('+')
+        else:
+            filters = [data[1]]
+
+        db = data[0][0 : data[0].rfind('/') + 1].strip()
+        key = data[0][data[0].rfind('/') + 1 :].strip()
+        for ft in filters:
+            link = 'http://localhost:5000/?db=' + db + '&key=' + key + '&filter=' + ft
+            html += utils.enhancedLink(link, '<font style="font-size:10pt;">' + ft + '</font>', module='main', library=source, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid)
+            if ft != filters[len(filters) -1]:
+                html += ',&nbsp;'
+    else:
+        db = content[0 : content.rfind('/') + 1].strip()
+        key = content[content.rfind('/') + 1 :].strip()
+        link = 'http://localhost:5000/?db=' + db + '&key=' + key 
+        html += utils.enhancedLink(link, '<font style="font-size:10pt;">' + key + '</font>', module='main', library=source, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid) 
+
+    return html 
 
 def getShowText(accountTag, text, tag, linkCount):
     col = int(column_num)
     font_size = 0
     if column_num == '1':
-        font_size = '12'
-    elif column_num == '2':
         font_size = '10'
+    elif column_num == '2':
+        font_size = '9'
     else:
         font_size = '8'
         if linkCount < 5:
@@ -1091,9 +1139,7 @@ def getShowText(accountTag, text, tag, linkCount):
             prefix = '#'
         if tag == 'github' and text.find('/') != -1:
             text = text[text.rfind('/') + 1 : ]
-        if len(text) > 14:
-            #font_size = str(int(font_size) - 2)
-            text = text[0: 14]
+        text = text[0: getCutLen(tag, text)]
         if text.startswith(prefix) == False:
             text = prefix + text
         return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt;"><i>' + text + '</i></font>'
@@ -1103,6 +1149,15 @@ def getShowText(accountTag, text, tag, linkCount):
         else:
             return '<font style="font-size:' + str(font_size) + 'pt;">' + text + '</font>'
     return text
+
+def getCutLen(tag, text):
+    if tag == 'github':
+        return len(text)
+    elif len(text) > 14:
+        return 14
+    else:
+        return len(text)
+
 
 def print_search_box(hiden):
     global search_box_displayed
@@ -1220,7 +1275,10 @@ def containLogicalOperators(keyword):
         return True
     return False
 
-def match(keyword, data):
+def match(keyword, data, rid=''):
+    if rid != '' and rid.find(keyword) != -1 and rid.strip().lower() != keyword.strip().lower():
+        return False
+
     if data.lower().find(keyword.strip().lower()) != -1 or re.match(keyword.strip(), data) != None:
         return True
     return False
@@ -1231,7 +1289,7 @@ def isSpaceLine(line):
         return True
     return False
     
-def filter(keyword, data):
+def filter(keyword, data, rid=''):
     if containLogicalOperators(keyword):
         conditions = []
         if keyword.find('#not') != -1:
@@ -1239,7 +1297,7 @@ def filter(keyword, data):
             for con in conditions:
                 if con.strip() == '':
                     continue
-                if match(con, data):
+                if match(con, data, rid=rid):
                     return False
             return True
         elif keyword.find('#and') != -1:
@@ -1247,7 +1305,7 @@ def filter(keyword, data):
             for con in conditions:
                 if con.strip() == '':
                     continue
-                if match(con, data) == False:
+                if match(con, data, rid=rid) == False:
                     return False
             return True
         elif keyword.find('#or') != -1:
@@ -1255,7 +1313,7 @@ def filter(keyword, data):
             for con in conditions:
                 if con.strip() == '':
                     continue
-                if match(con, data):
+                if match(con, data, rid=rid):
                     return True
             return False
         
@@ -1279,11 +1337,12 @@ def getLines(file_name):
                 
                 data = record.get_id() + ' ' + record.get_title()
                 keyword = filter_keyword
+
                 if includeDesc(filter_keyword):
                     keyword, data = getKeywordAndData(filter_keyword, line)
                 if record_dict.has_key(record.get_url().strip()) and record.get_url().strip() != '':
                     continue
-                if filter(keyword, data):
+                if filter(keyword, data, rid=record.get_id()):
                     count += 1
                     all_lines.append(enhancedRecord(file_name, record, count, True))
                     record_dict[record.get_url().strip()] = ""
@@ -1373,11 +1432,11 @@ def print_list(all_lines, file_name = ''):
     if filter_keyword != '' and merger_result: 
         all_lines = utils.sortLines(all_lines)
 
-    if Config.page_item_count > 0 and html_style:
+    if Config.page_item_count > 0 and html_style and source.find('arxiv') == -1:
         start_item = (current_page - 1) * Config.page_item_count
         all_lines = all_lines[ start_item : start_item + Config.page_item_count]
         
-    if len(all_lines) == 1:
+    if len(all_lines) == 1 or file_name.find('paper') != -1:
         adjust_column_num('1')
     elif len(all_lines) == 2:
         adjust_column_num('2')
@@ -1639,7 +1698,7 @@ def print_list(all_lines, file_name = ''):
                 message = ''
             if plugins_mode == False:
                 print message
-                if html_style and Config.page_item_count > 0 and total_records > Config.page_item_count:
+                if html_style and Config.page_item_count > 0 and total_records > Config.page_item_count and source.find('arxiv') == -1:
                     total_pages = total_records / Config.page_item_count
                     if total_records % Config.page_item_count > 0:
                         total_pages += 1
@@ -1797,6 +1856,7 @@ def main(argv):
             adjust_cell_row()
         elif o in ('-f', '--filter'):
             filter_keyword = str(a).strip()
+            #print filter_keyword
         elif o in ('-s', '--style'):
             output_with_color = True
             css_style_type = int(a)
@@ -1809,10 +1869,10 @@ def main(argv):
             split_length = custom_cell_len + 15
             #max_nav_link_row = 1000
         elif o in ('-r', '--row'):
-            if int(a) > 0 and int(a) < 50:
+            if int(a) > 0 and int(a) < 80:
                 custom_cell_row = int(a)
             else:
-                print 'the row must between 0 and 50'
+                print 'the row must between 0 and 80'
         elif o in ('-t', '--top'):
             top_row = int(a)
             old_top_row = int(a)
