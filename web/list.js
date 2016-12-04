@@ -39,7 +39,7 @@ function content(text, data) {
         aid = split_data[2];
     }
     
-    dialog_args = {type : 'dialog', rID : rid, searchText: text, resourceType : resourceType, fileName : fileName, library : library, aid : aid};
+    dialog_args = {type : 'dialog', rID : rid, searchText: text, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args};
     $.post('/queryUrl', dialog_args, function(data) {
         if (data.indexOf('#') > 0) {
             engin_count = parseInt(data.substring(0, data.indexOf('#')));
@@ -214,7 +214,7 @@ function addRecord(fileName, data) {
 }
 
 function exclusive(fileName, data) {
-    $.post('/exclusive', {fileName : fileName, data : data}, function(data) {
+    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : engin_args}, function(data) {
         window.open(data);   
     });
 }

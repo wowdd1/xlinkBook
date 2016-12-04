@@ -153,11 +153,21 @@ def handleAddRecord():
 def handleExclusive():
     data = request.form['data'].strip()
     fileName = request.form['fileName'].strip()
+    enginArgs = request.form['enginArgs'].strip()
     rID = ''
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
-    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ')
-    return utils.output2Disk([record], 'main', 'exclusive')
+
+    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ' + utils.getCrossref(data, 'db/library'))
+    url = utils.output2Disk([record], 'main', 'exclusive')
+    
+    if enginArgs.find(':') != -1:
+        enginType = enginArgs[enginArgs.find(':') + 1 :]
+        if enginType != 'star':
+            url += '&enginType=' + enginType
+    return url
+
+
 
 def toRecordFormat(data):
     if data.find('|') != -1:
@@ -202,9 +212,11 @@ def handlerQueryStarEngin():
 @app.route('/queryUrl', methods=['POST'])
 def handleQueryUrl():
     result = ''
+    
     if request.form.has_key('type'):
         if request.form['type'] == 'dialog':
             print request.form
+            engin_args = request.form['enginArgs']
             resultDict = utils.clientQueryEnginUrl2(request.form['searchText'], resourceType=request.form['resourceType'])
             
             count = 0
@@ -344,7 +356,7 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     elif enginType != '':
         cmd += " -e 'd:" + enginType + "' "
     elif Config.disable_star_engin == False:
-        cmd += " -e 'd:star' "
+        cmd += " -e 'd:" + Config.recommend_engin_type + "' "
     if top != '':
         cmd += ' -t ' + top + ' '
     if desc == 'true':
