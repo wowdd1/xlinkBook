@@ -26,7 +26,8 @@ class Exclusive(BaseExtension):
             #return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + title.replace('...', '') + '&column=1'
             return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1'
         else:
-            record = Record('custom-exclusive-' + rID + ' | '+ title.replace('%20', ' ') + ' | | ')
+            title = title.replace('%20', ' ')
+            record = Record('custom-exclusive-' + rID + ' | '+ title + ' | | ' + self.utils.getCrossref(title, 'db/library'))
             return self.utils.output2Disk([record], 'exclusive', 'exclusive')
         #if fileName.find("/custom") != -1:
         #    fileName = form_dict['originFileName']

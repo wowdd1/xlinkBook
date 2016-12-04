@@ -676,6 +676,44 @@ class Utils:
         
         return result
 
+    def getCrossref(self, keyword, path):
+        cmd = 'grep -riE "' + keyword + '" ' + path
+        print cmd
+        output = ''
+        try:
+            output = subprocess.check_output(cmd, shell=True)
+        except Exception as e:
+            return ''
+        adict = {}
+        for line in output.split('\n'):
+            fileName = line[0 : line.find(':')].strip()
+            firstIndex = line.find('|')
+            rID = line[line.find(':') + 1 : firstIndex].strip().replace(' ', '%20')
+            title = line[firstIndex + 1 : line.find('|', firstIndex + 1)].strip()
+            if title != '':
+                if adict.has_key(fileName):
+                    adict[fileName].append(title)
+                else:
+                    adict[fileName] = [title]
+        result = ''
+        print '---getCrossref---'
+        for k, v in adict.items():
+            #print k + ' #' + '#'.join(v)
+            prefix = ''
+            if k.startswith('db/'):
+                prefix = k[3:]
+            ft = '+'.join(v).strip()
+            if ft.endswith('+'):
+                ft = ft[0 : len(ft) - 2]
+            result += prefix + '#' + ft
+            if k != adict.items()[len(adict) - 1][0]:
+                result += ', '
+
+        print result
+        if result != '':
+            result = 'crossref:' + result
+        return result
+
 
     def output2Disk(self, records, module, fileName, outputFormat=''):
         data = ''
@@ -698,7 +736,7 @@ class Utils:
                     data += '    '
                 data += '- [ ] [' + record.get_title().strip() + '](' + record.get_url().strip() + ')\n'
             else:
-                data += record.get_id().strip() + '-' + str(count) + ' | ' + record.get_title().strip() + ' | ' + record.get_url().strip() + ' | ' + '\n'
+                data += record.get_id().strip() + '-' + str(count) + ' | ' + record.get_title().strip() + ' | ' + record.get_url().strip() + ' | ' + record.get_describe().strip() + '\n'
         outputDir = Config.output_data_to_new_tab_path + module + '/'
         if outputFormat != '':
             outputDir += outputFormat + '/'
