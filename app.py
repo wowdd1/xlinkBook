@@ -72,6 +72,7 @@ def index():
         args_history['merger'] = request.args.get('merger', '')
         args_history['border'] = request.args.get('border', '')
         args_history['engin'] = request.args.get('engin', '')
+        args_history['enginType'] = request.args.get('enginType', '')
         args_history['navigation'] = request.args.get('navigation', 'true')
         args_history['verify'] = request.args.get('verify', '')
         args_history['alexa'] = request.args.get('alexa', '')
@@ -90,6 +91,7 @@ def index():
                       request.args.get('merger', ''),
                       request.args.get('border', ''),
                       request.args.get('engin', ''),
+                      request.args.get('enginType', ''),
                       request.args.get('navigation', 'true'),
                       request.args.get('verify', ''),
                       request.args.get('alexa', ''),
@@ -115,6 +117,7 @@ def handleLoadmore():
                       args_history['merger'],
                       args_history['border'],
                       args_history['engin'],
+                      args_history['enginType'],
                       args_history['navigation'],
                       args_history['verify'],
                       args_history['alexa'],
@@ -314,7 +317,7 @@ def web(page):
     f.close()
     return data
 
-def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, navigation, verify, alexa, track, loadmore, nosearchbox, page):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, enginType, navigation, verify, alexa, track, loadmore, nosearchbox, page):
     if db.endswith('/') == False:
         db += '/'
     cmd = "./list.py -i db/" + db + key + " -b 4"
@@ -338,6 +341,8 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -l ' + level + ' '
     if engin != '':
         cmd += ' -e "' + engin + '" '
+    elif enginType != '':
+        cmd += " -e 'd:" + enginType + "' "
     elif Config.disable_star_engin == False:
         cmd += " -e 'd:star' "
     if top != '':
