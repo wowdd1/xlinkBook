@@ -523,3 +523,4 @@ engin-532 | experiment | https://experiment.com/search/results?utf8=%E2%9C%93&q=
 engin-533 | jiqizhixin | http://www.jiqizhixin.com/portal/search/index?keyword= | priority:5 description:news
 engin-534 | jupyter | https://github.com/search?l=Jupyter+Notebook&q=%s&ref=searchresults&type=Repositories&utf8=✓ | priority:4 description:project tutorial
 engin-535 | lib.csdn | http://lib.csdn.net/search/ | priority:6 description:wiki couese project star
+engin-536 | careerengine | http://search.careerengine.us/posts/ | priority:5 description:news, job

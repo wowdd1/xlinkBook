@@ -505,16 +505,24 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin) {
     args[targetid] = [id, topic, url];
 
     var extensionHtml= extension_array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
-
-    $.post('/queryStarEngin', {rID : id, rTitle : topic, targetid : targetid, url : url, otherInfo : otherInfo}, function(data) {
-            if (data == '') {
-                var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
-                target.innerHTML = enginHtml + extensionHtml;
-            } else {
-                target.innerHTML = data + extensionHtml;
-            }
-            appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin);
+    console.log('engin_args', engin_args);
+    if (engin_args != '') {
+        var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
+        target.innerHTML = enginHtml + extensionHtml;
+        appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin);
+    } else {
+        $.post('/queryStarEngin', {rID : id, rTitle : topic, targetid : targetid, url : url, otherInfo : otherInfo}, function(data) {
+        if (data == '') {
+            var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
+            target.innerHTML = enginHtml + extensionHtml;
+        } else {
+            target.innerHTML = data + extensionHtml;
+        }
+        appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin);
     });
+
+    }
+
 }
 
 function appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin) {

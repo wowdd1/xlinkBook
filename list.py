@@ -420,6 +420,7 @@ def getScript(file_name, first_record, total_records):
     print "var extension_array = [];" 
     print "var reference = new Array();"
     print "var content = new Array();"
+    print "var engin_args = '" + engin + "';" 
     if len(div_content_list) > 0:
         for content in div_content_list:
             print "array.push('" + content + "');" 
@@ -531,6 +532,8 @@ def build_lines(list_all, file_name):
     engin_list = []
     if engin != '':
         engin_list = utils.getEnginList(engin.strip(), file_name, recommend=Config.recommend_engin)
+        if len(engin_list) > Config.recommend_engin_num:
+            engin_list = engin_list[0 : Config.recommend_engin_num]
 
     global loadmore_count
     if source.find('arxiv') != -1 and filter_keyword == '':

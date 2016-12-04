@@ -485,9 +485,8 @@ class Utils:
             tags = engins[engins.find(':') + 1 :].strip().split(' ')
             cachedEngins = []
             tags2 = []
-            if recommend:
-                self.search_engin_type_2_engin_title_dict[key] = self.recommendEngins(folder)
-            else:
+
+            if len(tags) > 0 and ''.join(tags).strip() != '':
                 for tag in tags:
                     if self.search_engin_type_2_engin_title_dict.has_key(tag.strip()):
                         cachedEngins = cachedEngins + self.search_engin_type_2_engin_title_dict[tag.strip()]
@@ -511,6 +510,10 @@ class Utils:
                     self.search_engin_type_2_engin_title_dict[key] = cachedEngins + self.search_engin_type_2_engin_title_dict[key]
                     if sort:
                         self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(self.search_engin_type_2_engin_title_dict[key])
+
+            if len(self.search_engin_type_2_engin_title_dict[key]) == 0 and recommend:
+                self.search_engin_type_2_engin_title_dict[key] = self.recommendEngins(folder)
+            
             return self.search_engin_type_2_engin_title_dict[key] 
         else:
             return engins.split(' ')
