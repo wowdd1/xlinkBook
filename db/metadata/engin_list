@@ -124,7 +124,7 @@ engin-120 | openhub | https://code.openhub.net/search?s= | priority:0 descriptio
 engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | priority:8 description:slide
 engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | priority:0 description:course
 engin-123 | 36kr | http://36kr.com/search/articles/ | priority:0 description:news
-engin-124 | quora | https://www.quora.com/search?q= | priority:0 description:q-a star
+engin-124 | quora | https://www.quora.com/search?q= | priority:5 description:q-a star
 engin-125 | sogou | http://www.sogou.com/web?query= | priority:0 description:all
 engin-126 | 360so | https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q= | priority:0 description:all
 engin-127 | xmarks | http://www.xmarks.com/topic/ | priority:0 description:website

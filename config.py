@@ -44,7 +44,7 @@ class Config():
     page_item_count = 100#63
 
     recommend_engin = True
-    recommend_engin_num = 20
+    recommend_engin_num = 22
     recommend_engin_type = 'star' #ref db/metadata/engin_type
 
     start_library_title = 'add some record from here!'
@@ -159,8 +159,8 @@ class Config():
           #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
 
-    delete_from_char = '、'
-    delete_forward = False
+    delete_from_char = ''
+    delete_forward = True
 
     # ==== extension ====
     output_data_to_new_tab_path = 'db/other/'
@@ -212,11 +212,11 @@ class Config():
     convert_page_start = 0
     convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'span#field-content' #"div#title"  # tag#class or tag
+    convert_tag = 'a' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
-    convert_contain = ""
+    convert_contain = "@"
     convert_start = 0
     convert_split_column_number = 0
     convert_output_data_to_new_tab = False

@@ -188,6 +188,14 @@ def handleExec():
 
     return output
 
+@app.route('/queryStarEngin', methods=['POST'])
+def handlerQueryStarEngin():
+    rID = request.form['rID']
+    rTitle = request.form['rTitle']
+    targetid = request.form['targetid']
+    print 'handlerQueryStarEngin--> rID:' + rID + ' rTitle:' + rTitle + ' taggetid:' + targetid
+    return ''
+
 @app.route('/queryUrl', methods=['POST'])
 def handleQueryUrl():
     result = ''
