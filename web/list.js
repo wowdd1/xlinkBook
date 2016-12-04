@@ -486,7 +486,7 @@ function genEnginHtml(targetid, topic, otherInfo, rID) {
 }
 
 
-function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
+function appendContent(targetid, id, topic, url, otherInfo, hidenEngin) {
     var target=document.getElementById(targetid);
     if (target.innerHTML.indexOf(topic) > 0) {
         if (!disable_thumb) {
@@ -505,14 +505,28 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin){
     args[targetid] = [id, topic, url];
 
     var extensionHtml= extension_array.join("").replace(/#div/g, targetid).replace(/#topic/g, topic).replace(/#otherInfo/g, otherInfo).replace(/#quote/g, "'").replace(/#rid/g, id);
-    var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
-    target.innerHTML = enginHtml + extensionHtml;
+
+    $.post('/queryStarEngin', {rID : id, rTitle : topic, targetid : targetid, url : url, otherInfo : otherInfo}, function(data) {
+            if (data == '') {
+                var enginHtml = genEnginHtml(targetid, topic, otherInfo, id)
+                target.innerHTML = enginHtml + extensionHtml;
+            } else {
+                target.innerHTML = data + extensionHtml;
+            }
+            appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin);
+    });
+}
+
+function appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin) {
 
     if (hidenEngin) {
         //target.innerHTML = enginHtml + extensionHtml;
         //console.log('', targetid + '-star-0');
         for (var i = 0; i < starDivCount; i++) {
-            document.getElementById(targetid + '-star-' + i.toString()).style.display = "none";
+            var obj = document.getElementById(targetid + '-star-' + i.toString());
+            if (obj != null) {
+                obj.style.display = "none";
+            }
         } 
     }
     

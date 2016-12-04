@@ -1068,7 +1068,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
                 else:
                     html += '<font color="blue"><i>' + split_char + '</i></font>' + '&nbsp;'
 
-            if lineLenCount > course_name_len + course_name_len / 6 and column_num != '1':
+            if lineLenCount > course_name_len + course_name_len / 6:
                 lineLenCount = 0
                 html += '<br>'
     else:

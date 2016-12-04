@@ -34,6 +34,9 @@ class Delete(BaseExtension):
             for line in f.readlines():
                 if rID != line[0 : line.find('|')].strip():
                     all_lines.append(line)
+                else:
+                    print 'deleted line:'
+                    print line
             f.close()
             f = open(library, 'w')
             if len(all_lines) > 0:
