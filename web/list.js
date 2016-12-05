@@ -303,17 +303,7 @@ function navTopic(obj, divID, parentDivID, countIndex){
         postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), url : '', fileName : fileName, 'check' : 'false', column : column};
     }
 
-    if (track_mode && postArgs['rID'] != '') {
-        console.log('datatarget', targetid + '-data');
-        data_target = $('#' + targetid + '-data');
-        if (data_target != null) {
-            data_target.show();
-            postArgs["navigate"] = trackmode_engin_type;
-            data_target.load('/navigate', postArgs, function(data){
-            });
-            return;
-        }
-    }
+
 
     postArgs["objID"] = obj.id;
     postArgs["divID"] = divID + "-" + obj.text;
@@ -332,6 +322,18 @@ function navTopic(obj, divID, parentDivID, countIndex){
         postArgs['nocache'] = true;
     } else {
         postArgs['nocache'] = false;
+    }
+
+    if (track_mode && postArgs['rID'] != '') {
+        console.log('datatarget', targetid + '-data');
+        data_target = $('#' + targetid + '-data');
+        if (data_target != null) {
+            data_target.show();
+            postArgs["navigate"] = trackmode_engin_type;
+            data_target.load('/navigate', postArgs, function(data){
+            });
+            return;
+        }
     }
 
     postArgs['selection'] = window.getSelection().toString();
