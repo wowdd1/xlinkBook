@@ -264,6 +264,8 @@ function searchTopic(obj, rid, topic, otherInfo){
 
 
 function navTopic(obj, divID, parentDivID, countIndex){
+
+
     var targetid = divID + "-" + obj.text;
     var target_data_id = divID + "-" + obj.text + '-data';
     var target=document.getElementById(targetid);
@@ -280,8 +282,11 @@ function navTopic(obj, divID, parentDivID, countIndex){
             children[j].style.fontSize="9pt";
         }
     }
-    obj.style.color="#822312";
-    obj.style.fontSize="12pt";
+    if (track_mode == false) {
+        obj.style.color="#822312";
+        obj.style.fontSize="12pt"; 
+    }
+
     if (target.style.display == ""){
         target.style.display="none";
         target_data.style.display="none";
@@ -297,6 +302,19 @@ function navTopic(obj, divID, parentDivID, countIndex){
     } else {
         postArgs = {name : obj.text, rID : 'search', rTitle : search_box.value.replace('', '%20'), url : '', fileName : fileName, 'check' : 'false', column : column};
     }
+
+    if (track_mode && postArgs['rID'] != '') {
+        console.log('datatarget', targetid + '-data');
+        data_target = $('#' + targetid + '-data');
+        if (data_target != null) {
+            data_target.show();
+            postArgs["navigate"] = trackmode_engin_type;
+            data_target.load('/navigate', postArgs, function(data){
+            });
+            return;
+        }
+    }
+
     postArgs["objID"] = obj.id;
     postArgs["divID"] = divID + "-" + obj.text;
     postArgs["defaultLinks"] = 2;
@@ -354,24 +372,13 @@ function navTopic(obj, divID, parentDivID, countIndex){
         $("#" + targetid).html('');
     }
 
-    var extension = false;
     for (var i = 0; i < extensions.length; i++) {
         console.log('zzz', extensions[i]);
         if (extensions[i] == obj.text) { 
-            extension = true;
             requestExtension(postArgs, true);
         }
     }
-    if (!extension && postArgs['rID'] != '') {
-        console.log('datatarget', targetid + '-data');
-        data_target = $('#' + targetid + '-data');
-        if (data_target != null) {
-            data_target.show();
-            postArgs["navigate"] = 'true';
-            data_target.load('/navigate', postArgs, function(data){
-            });
-        }
-    }
+ 
 }
 
 function requestExtension(postArgs, tipInfo) {

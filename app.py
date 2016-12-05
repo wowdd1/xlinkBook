@@ -16,8 +16,10 @@ from flask import (Flask, flash, request, redirect,
     render_template, url_for, session)
 from rauth.service import OAuth2Service
 from record import Tag, Record
+from knowledgegraph import KnowledgeGraph
 
 tag = Tag()
+kg = KnowledgeGraph()
 # Use your own values in your real application 
 github = OAuth2Service(
     name='github',
@@ -131,6 +133,7 @@ def handleLoadmore():
 
 @app.route('/navigate', methods=['POST'])
 def handleNavigate():
+    print request.form
     if request.form['rID'] == "":
         return ""
     return extensionManager.doWork(request.form)
@@ -158,7 +161,7 @@ def handleExclusive():
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
 
-    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ' + utils.getCrossref(data, 'db/library'))
+    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ' + kg.getKnowledgeGraph(data, ' '.join(Config.exclusive_crossref_path)))
     url = utils.output2Disk([record], 'main', 'exclusive')
     
     if enginArgs.find(':') != -1:
@@ -330,6 +333,7 @@ def web(page):
     return data
 
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, enginType, navigation, verify, alexa, track, loadmore, nosearchbox, page):
+    print 'track:' + track
     if db.endswith('/') == False:
         db += '/'
     cmd = "./list.py -i db/" + db + key + " -b 4"
@@ -371,10 +375,9 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
         cmd += ' -a '
     if width != '':
         cmd += ' -w ' + width + ' '
-    if track == 'true':
-        Config.track_mode = True
-    else:
-        Config.track_mode = False
+    if track != 'false':
+        cmd += ' -q ' + track + ' '
+
     if nosearchbox == 'true':
         cmd += ' -x '
 

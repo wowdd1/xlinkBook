@@ -75,6 +75,8 @@ search_box_displayed = False
 search_box_hiden = False
 library_hiden = False
 gened_libary = False
+trackmode = Config.track_mode
+trackmode_engin_type = ''
 
 script_head = '<script language="JavaScript" type="text/JavaScript">';
 script_end = '</script>'
@@ -416,6 +418,12 @@ def getScript(file_name, first_record, total_records):
     if Config.hiden_record_id:
         Config.disable_thumb = 'true'
     print "var disable_thumb = " + Config.disable_thumb + ";"
+    if trackmode:
+        print "var track_mode = true;";
+        print "var trackmode_engin_type = '" + trackmode_engin_type + "';"
+    else:
+        print "var track_mode = false;";
+
     print "var array = []; "
     print "var extension_array = [];" 
     print "var reference = new Array();"
@@ -1107,7 +1115,10 @@ def genCrossrefHtml(rid, aid, tag, content):
         key = data[0][data[0].rfind('/') + 1 :].strip()
         for ft in filters:
             link = 'http://localhost:5000/?db=' + db + '&key=' + key + '&filter=' + ft
-            html += utils.enhancedLink(link, '<font style="font-size:10pt;">' + ft + '</font>', module='main', library=source, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid)
+            text = '<font style="font-size:10pt;">' + ft + '</font>'
+            if db.find('library/') != -1:
+                text = '<font style="font-size:10pt; color="red">' + ft[0:1] + '</font>' + '<font style="font-size:10pt;">' + ft[1:] + '</font>'
+            html += utils.enhancedLink(link, text, module='main', library=source, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid)
             if ft != filters[len(filters) -1]:
                 html += ',&nbsp;'
     else:
@@ -1831,10 +1842,10 @@ def adjust_cell_row():
 
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page'])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:q:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page', 'tracemode'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1908,6 +1919,10 @@ def main(argv):
             library_hiden = True
         elif o in ('-o', '--page'):
             current_page = int(a)
+        elif o in ('-q', '--tracemode'):
+            trackmode = True
+            trackmode_engin_type = str(a)
+            #print '---' + trackmode_engin_type
     
     if source.endswith('-library') and Config.auto_library_cell_len:
         adjust_column_num('3')

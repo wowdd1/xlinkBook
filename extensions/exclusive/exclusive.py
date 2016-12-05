@@ -4,12 +4,14 @@ from extensions.bas_extension import BaseExtension
 from config import Config
 from utils import Utils
 from record import Record
+from knowledgegraph import KnowledgeGraph
 
 class Exclusive(BaseExtension):
 
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
+        self.kg = KnowledgeGraph()
 
     def excute(self, form_dict):
         rID = form_dict['rID'].strip()
@@ -27,7 +29,7 @@ class Exclusive(BaseExtension):
             return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1'
         else:
             title = title.replace('%20', ' ')
-            record = Record('custom-exclusive-' + rID + ' | '+ title + ' | | ' + self.utils.getCrossref(title, 'db/library'))
+            record = Record('custom-exclusive-' + rID + ' | '+ title + ' | | ' + self.kg.getKnowledgeGraph(title, ' '.join(Config.exclusive_crossref_path)))
             return self.utils.output2Disk([record], 'exclusive', 'exclusive')
         #if fileName.find("/custom") != -1:
         #    fileName = form_dict['originFileName']
