@@ -159,6 +159,8 @@ class Config():
           #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
 
+
+
     delete_from_char = ''
     delete_forward = True
 
@@ -178,6 +180,9 @@ class Config():
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
     bookmark_page_item_count = [16, 14, 12]
+
+    #exclusive
+    exclusive_crossref_path = ['db/library']
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']

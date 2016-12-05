@@ -103,10 +103,12 @@ class ExtensionManager:
         else:
             name = form['name']
             if form.has_key('navigate'):
-                if Config.track_mode:
-                    name = 'track'
-                else:
-                    return ''
+                name = 'track'
+                if form['navigate'].strip() == '':
+                    form['name'] = 'star'
+                else: 
+                    form['name'] = form['navigate'].strip()
+
             extension = self.loadExtension(name)
             return extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
     def checkCache(self, names, form):

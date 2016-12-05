@@ -145,7 +145,7 @@ class Filefinder(BaseExtension):
         lastFileName = ''
         count = 0
         for line in output.split('\n'):
-            fileName = line[0 : line.find(':')].strip()
+            fileName = line[0 : line.find(':')].strip().replace('//', '/')
             firstIndex = line.find('|')
             rID = line[line.find(':') + 1 : firstIndex].strip().replace(' ', '%20')
             title = line[firstIndex + 1 : line.find('|', firstIndex + 1)].strip()
