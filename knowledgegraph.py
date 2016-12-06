@@ -22,6 +22,7 @@ class KnowledgeGraph(object):
       except Exception as e:
           return ''
       adict = {}
+      titleDict = {}
       for line in output.split('\n'):
           fileName = line[0 : line.find(':')].strip().replace('//', '/')
           firstIndex = line.find('|')
@@ -30,10 +31,17 @@ class KnowledgeGraph(object):
           if title != '':
               if title.find(',') != -1:
                   title = title[0 : title.find(',')]
+              if title.find('+') != -1:
+                  title = title[0 : title.find('+')]
+              if title.find('#') != -1:
+                  title = title[0 : title.find('#')]
+              if titleDict.has_key(title):
+                  continue
               if adict.has_key(fileName):
                   adict[fileName].append(title)
               else:
                   adict[fileName] = [title]
+              titleDict[title] = title
       result = ''
       print '---getCrossref---'
       for k, v in adict.items():

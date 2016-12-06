@@ -199,7 +199,7 @@ function search(inputid,optionid){
     } else if (select[select.selectedIndex].value == "add") {
         addRecord(fileName, input.value);
     } else if (select[select.selectedIndex].value == "exclusive") {
-        exclusive('exclusive', input.value);
+        exclusive('exclusive', input.value, '');
 
     } else {
         window.open(select.value + input.value);
@@ -213,8 +213,8 @@ function addRecord(fileName, data) {
     });
 }
 
-function exclusive(fileName, data) {
-    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : engin_args}, function(data) {
+function exclusive(fileName, data, crossrefPath) {
+    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : engin_args, crossrefPath: crossrefPath}, function(data) {
         window.open(data);   
     });
 }

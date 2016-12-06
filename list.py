@@ -261,11 +261,11 @@ def needSmartLink(describe):
         return False
     else:
         prefix = describe[0 : describe.find(':') + 1].strip()
-
-        if ' '.join(tag.tag_list_smart_link).find(prefix) == -1 and ' '.join(tag.tag_list_account.keys()).find(prefix) == -1:
+        smart_link_str = ' '.join(tag.tag_list_smart_link)
+        account_str = ' '.join(tag.tag_list_account.keys())
+        if smart_link_str.find(prefix) == -1 and account_str.find(prefix) == -1:
             return False
         else:
-            #print prefix
             return True
 
 def print_with_color(text):
@@ -769,6 +769,7 @@ def build_lines(list_all, file_name):
                     record_describe = list_all[i][j].get_describe()
                     end = utils.next_pos(record_describe, start, course_name_len, keyword_list, htmlStyle=html_style) 
                     if output_with_describe:
+                        #print list_all[i][j].get_describe()+ '<br>'
                         #print list_all[i][j].get_describe()[start : end] + '<br>'
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end], list_all[i][j], containID="td-div-" + ijl)
                         #print describe_lines[l][i][j] + '<br>'
@@ -1004,6 +1005,9 @@ def smartLink(content, record, containID=''):
 
             if tag =='crossref':
                 crossref = True
+                #print content + "<br>"
+                #print ret + '<br>'
+                ret = content[content.find(':') + 1 :]
             return genSmartLinkHtml(tag, ret, record, split_char, '', content, dialogMode=digMode, containID=containID, crossref=crossref)
 
     else:
@@ -1054,6 +1058,8 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
     if ret.find(split_char) != -1:
         ret = ret.split(split_char)
         lineLenCount = 0
+        #print tag_content
+        #print ret
         for i in ret:
             old_i = i.strip()
             if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
@@ -1064,6 +1070,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             count += 1
             aid = containID + '-a-' + str(count)
             if crossref:
+                #print i + '<br>'
                 html += genCrossrefHtml(record.get_id(), aid, tag, i)
             else:
                 if url != '':
@@ -1096,11 +1103,12 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             else:
                 html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
 
-    return content[ 0 : content.find(':') + 1 ] + html
+    return content[ 0 : content.find(':') + 1 ]  + html
 
 def genCrossrefHtml(rid, aid, tag, content):
     html = ''
     if content.find('#') != -1:
+        #print content + '<br>'
         data = content.strip().split('#')
         
         if len(data) != 2:
@@ -1114,6 +1122,7 @@ def genCrossrefHtml(rid, aid, tag, content):
         db = data[0][0 : data[0].rfind('/') + 1].strip()
         key = data[0][data[0].rfind('/') + 1 :].strip()
         for ft in filters:
+            #print ft + '<br>'
             link = 'http://localhost:5000/?db=' + db + '&key=' + key + '&filter=' + ft
             text = '<font style="font-size:10pt;">' + ft + '</font>'
             if db.find('library/') != -1:

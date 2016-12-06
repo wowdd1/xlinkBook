@@ -798,6 +798,17 @@ class Utils:
 
         return result
 
+    def clientQueryDirs(self, path):
+        dirs = []
+
+        for item in os.listdir(path):
+            full_path = os.path.join(os.getcwd() + '/' + path + '/', item)
+            if os.path.isfile(full_path) == False:
+                dir_path = (path + '/' + item).replace('//', '/')
+                dirs.append(dir_path)
+                dirs += self.clientQueryDirs(dir_path)
+        return dirs
+
     def accountMode(self, tag_list_account, tag_list_account_mode, engin, resourceType):
         if Config.smart_engin_lucky_mode_for_account:
             accountTags = ' '.join(tag_list_account)
@@ -1133,11 +1144,21 @@ class Utils:
             c_len = titleLen + 10
         for k in keywordList:
             end = text.find(' ' + k, start + 2)
+            if text.find(' ' + k + ' ', end) != -1:
+                continue
             if end != -1 and end + 1 < min_end:
                 end += 1
                 min_end = end
 
+
         if min_end < len(text):
+            startTag = text[start : text.find(':', start) + 1]
+            smart_link_str = ' '.join(self.tag.tag_list_smart_link)
+            account_str = ' '.join(self.tag.tag_list_account.keys())
+
+            if smart_link_str.find(startTag) != -1 or account_str.find(startTag) != -1:
+                return min_end -1
+
             min_end -= 1
             if min_end - start > c_len:
                 ret_end = start + c_len

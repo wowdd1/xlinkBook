@@ -422,6 +422,7 @@ class GithubSpider(Spider):
     result = ""
     request_times = 0
     token = ''
+    
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -777,9 +778,9 @@ class GithubSpider(Spider):
         per_page = 100
 
         #self.getProjects(star, per_page)
-        #self.getKeyProjects(star, per_page)
+        self.getKeyProjects(star, per_page)
         #self.getUsers(500, 100)
-        self.getOrganizations()
+        #self.getOrganizations()
 
     def getProjects(self, star, per_page):
         for lang in self.lang_list:
