@@ -16,7 +16,9 @@ class Config():
     smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag_batch_open = False
     
-    smart_engin_for_tag = {}
+    #smart_engin_for_tag = {}
+
+    smart_engin_for_tag = {'weixin' : 'weixin'}
     '''
 
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
@@ -183,6 +185,7 @@ class Config():
 
     #exclusive
     exclusive_crossref_path = ['db/library']
+    exclusive_local_db_path = 'db/' + default_subject
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']

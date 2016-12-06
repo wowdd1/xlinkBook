@@ -125,8 +125,8 @@ engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= 
 engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | priority:0 description:course
 engin-123 | 36kr | http://36kr.com/search/articles/ | priority:0 description:news
 engin-124 | quora | https://www.quora.com/search?q= | priority:5 description:q-a star
-engin-125 | sogou | http://www.sogou.com/web?query= | priority:0 description:all
-engin-126 | 360so | https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q= | priority:0 description:all
+engin-125 | sogou | http://www.sogou.com/web?query= | priority:4 description:all
+engin-126 | 360so | https://www.so.com/s?ie=utf-8&shb=1&src=360sou_newhome&q= | priority:4 description:all
 engin-127 | xmarks | http://www.xmarks.com/topic/ | priority:0 description:website
 engin-128 | alexa | http://www.alexa.com/siteinfo/ | priority:0 description:website
 engin-129 | sitesearch | http://www.similarsitesearch.com/cn/q.php?URL= | priority:0 description:website
@@ -526,3 +526,5 @@ engin-535 | lib.csdn | http://lib.csdn.net/search/ | priority:6 description:wiki
 engin-536 | careerengine | http://search.careerengine.us/posts/ | priority:5 description:news, job
 engin-537 | julyedu | https://www.google.com.hk/search?q=%s+site%3Ajulyedu.com | priority:3 description:course
 engin-538 | producthunt | https://www.producthunt.com/search/posts?q= | priority:5 description:product news
+engin-539 | v.qq | http://v.qq.com/x/search/?q=%s&stag=0&smartbox_ab= | priority:4 description:video
+engin-540 | weixin | http://weixin.sogou.com/weixin?type=2&query= | priority:4 description:social

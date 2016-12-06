@@ -154,20 +154,31 @@ def handleAddRecord():
 
 @app.route('/exclusive', methods=['POST'])
 def handleExclusive():
+    print request.form
     data = request.form['data'].strip()
     fileName = request.form['fileName'].strip()
     enginArgs = request.form['enginArgs'].strip()
+    crossrefPath = request.form['crossrefPath'].strip()
     rID = ''
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
 
-    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ' + kg.getKnowledgeGraph(data, ' '.join(Config.exclusive_crossref_path)))
+    targetPath = ' '.join(Config.exclusive_crossref_path)
+    if crossrefPath != '':
+        targetPath = ' ' +  crossrefPath
+    desc = 'local-db:' + data
+    desc += ' ' + kg.getKnowledgeGraph(data, targetPath)
+    
+    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ' + desc)
+    #print record.line
     url = utils.output2Disk([record], 'main', 'exclusive')
     
     if enginArgs.find(':') != -1:
         enginType = enginArgs[enginArgs.find(':') + 1 :]
         if enginType != 'star':
             url += '&enginType=' + enginType
+    if crossrefPath != '':
+        url += '&crossrefPath=' + crossrefPath
     return url
 
 
@@ -220,30 +231,50 @@ def handleQueryUrl():
         if request.form['type'] == 'dialog':
             print request.form
             engin_args = request.form['enginArgs']
-            resultDict = utils.clientQueryEnginUrl2(request.form['searchText'], resourceType=request.form['resourceType'])
-            
-            count = 0
-            for k, v in resultDict.items():
-                count += 1
-                '''
-                script = ''
-                if request.form['aid'] != '':
-                    script = "chanageLinkColorByID('" + request.form['aid'] + "','" + Config.background_after_click + "', '');"
-                    print '------\n'
-                    print script
-                '''
 
-                if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
-                    v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
-                    print k + '--->' + v
-                        
-                result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
-                if count % 5 == 0 and count > 0:
-                    result += '<br>'
-            if len(Config.command_for_dialog) > 0:
-                library = os.getcwd() + '/db/library/' + Config.default_library;
-                result += '<br>' + dialogCommand(library, request.form['searchText'])
-            result = str(count) + '#' + result
+            if request.form['resourceType'] == 'local-db':
+                count = 0
+                dirs = utils.clientQueryDirs(Config.exclusive_local_db_path)
+                dirs += [Config.exclusive_local_db_path]
+                for item in dirs:
+                    count += 1
+
+                    link = 'http://' + Config.ip_adress + '/?db=other/main/&key=exclusive2016&crossrefPath=' + item 
+                    title = item[item.rfind('/') + 1: ]
+                    script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "');"
+                    print title
+                    print link
+                    result += utils.enhancedLink('', title, searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
+                    
+                    if count % 5 == 0 and count > 0:
+                        result += '<br>'
+
+                return str(count) + '#' + result
+            else:
+                resultDict = utils.clientQueryEnginUrl2(request.form['searchText'], resourceType=request.form['resourceType'])
+                
+                count = 0
+                for k, v in resultDict.items():
+                    count += 1
+                    '''
+                    script = ''
+                    if request.form['aid'] != '':
+                        script = "chanageLinkColorByID('" + request.form['aid'] + "','" + Config.background_after_click + "', '');"
+                        print '------\n'
+                        print script
+                    '''
+
+                    if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
+                        v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
+                        print k + '--->' + v
+                            
+                    result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
+                    if count % 5 == 0 and count > 0:
+                        result += '<br>'
+                if len(Config.command_for_dialog) > 0:
+                    library = os.getcwd() + '/db/library/' + Config.default_library;
+                    result += '<br>' + dialogCommand(library, request.form['searchText'])
+                result = str(count) + '#' + result
     else:
         resultDict = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
         for k, v in resultDict.items():
@@ -260,7 +291,7 @@ def dialogCommand(fileName, text):
             script = "addRecord('" + fileName + "', '" + text + "');"
             result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
         elif command == 'exclusive':
-            script = "exclusive('" + fileName + "', '" + text + "');"
+            script = "exclusive('" + fileName + "', '" + text + "', '');"
             result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
     return result
 
