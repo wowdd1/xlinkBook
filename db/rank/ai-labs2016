@@ -23,7 +23,7 @@ ai-labs-22 | SAIL-Toyota Center for AI Research | http://aicenter.stanford.edu/ 
 ai-labs-23 | Toyota Technological Institute at Chicago | http://www.ttic.edu | alias:TTIC, KITTI github:ToyotaResearchInstitute
 ai-labs-24 | BostonDynamics |  | youtube:BostonDynamics founder:Marc Raibert project:Atlas, Spot, LS3, PETMAN, CHEETAH, BigDog, SandFlea, RHex, RiSE, LittleDog
 ai-labs-25 | Uber Advanced Technologies Center | https://www.uber.com/info/atc/ | director:Sherif Marakby alias:Uber AI Lab
-ai-labs-26 | Amazon AWS | http://aws.amazon.com/ | director:Matt Wood, Alex Smola github:amznlabs cto:Werner Voegls project:MXNet
+ai-labs-26 | Amazon AWS | http://aws.amazon.com/ | director:Matt Wood, Alex Smola scientist:Nikko Strom github:amznlabs cto:Werner Voegls project:MXNet
 ai-labs-27 | IBM Research | http://researcher.watson.ibm.com/ | director:David Kenny github:ibmtjbot/tjbot people:邵凌, 沈晓卫 alias:ibm watson youtube:IBMLabs, IBM, watsonanalytics
 ai-labs-28 | Honda Silicon Valley Lab | https://www.hondasvl.com/ | director:Naoki Sugimoto project:ASIMO
 ai-labs-29 | Tesla Autopilot |  | ceo:Elon Musk alias:Tesla, spacex github:commaai
@@ -32,7 +32,7 @@ ai-labs-31 | Baidu Silicon Valley AI Lab | http://research.baidu.com/silicon-val
 ai-labs-32 | Baidu Deep Learning Research | http://idl.baidu.com/index.html | ceo:李彦宏 vp:王劲, James Peng, 张亚勤 director:林元庆, 吴中勤, 刘炀 scientist:徐伟 website:ai.baidu github:baidu/tera, PaddlePaddle/Paddle alias:baidu brain, 百度大脑
 ai-labs-33 | Baidu Autonomous Driving |  | vp:王路 director:Tony Han, 王劲, 张辉, 羊孜之, 张少宇 engineer:楼天城 alias:百度无人驾驶
 ai-labs-34 | Apple AI Research |  | director:Ruslan Salakhutdinov, Jonathan Cohen youtube:apple company:Siri, Novauris, VocalIQ, Turi, Cue, Matcha, Semetric, Spotsetter, WiFiSlam, Topsy, Perceptio, Metaio, Polar Rose, Emollient, Flyby
-ai-labs-35 | Nvidia |  | ceo:Jen-Hsun Huang director:Danny Shapiro alias:cudnn, Titan X, CUDA, GPU Accelerated youtube:nvidia github:nvidia, NvidiaTaiwan twitter:NvidiaAI
+ai-labs-35 | Nvidia |  | ceo:Jen-Hsun Huang director:Danny Shapiro alias:cudnn, Titan X, CUDA, GPU Accelerated project:GPU Teaching Kits youtube:nvidia github:nvidia, NvidiaTaiwan twitter:NvidiaAI
 ai-labs-36 | DARPA | | youtube:DARPAtv
 ai-labs-37 | Intel |  | alias:Nervana people:宋继强 weibo:ilcwb
 ai-labs-38 | Intel Automated Driving Group | | director:Doug Davis, Kathy Winter

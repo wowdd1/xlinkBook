@@ -154,13 +154,17 @@ def handleAddRecord():
 
 @app.route('/exclusive', methods=['POST'])
 def handleExclusive():
+    print 'handleExclusive:'
     print request.form
     data = request.form['data'].strip()
     fileName = request.form['fileName'].strip()
     enginArgs = request.form['enginArgs'].strip()
     crossrefPath = request.form['crossrefPath'].strip()
     newTab = request.form['newTab'].strip()
-    print 'newTab' + newTab
+    resourceType = request.form['resourceType'].strip()
+    originFilename = request.form['originFilename'].strip()
+    lastRID = request.form['rID'].strip()
+
     rID = ''
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
@@ -169,7 +173,9 @@ def handleExclusive():
     if crossrefPath != '':
         targetPath = ' ' +  crossrefPath
     desc = 'localdb:' + data
-    desc += ' ' + kg.getKnowledgeGraph(data, targetPath)
+    desc += ' ' + kg.getKnowledgeGraph(data, resourceType, targetPath, lastRID, fileName)
+    if resourceType != '':
+        desc += ' category:' + resourceType 
     
     record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ' + desc)
     #print record.line
@@ -197,7 +203,10 @@ def handleBatchOpen():
         engins = Config.smart_engin_for_command_batch_open
         urls = ''
         for e in engins:
-            for e2 in utils.expandEngins(e):
+            epEngins = utils.expandEngins(e)
+            if len(epEngins) > 5:
+                epEngins = epEngins[0 : 5]
+            for e2 in epEngins:
                 url = utils.toQueryUrl(utils.getEnginUrl(e2), data)
                 urls += url + ' '
         print urls
@@ -256,15 +265,17 @@ def handleQueryUrl():
             engin_args = request.form['enginArgs']
 
             if request.form['resourceType'] == 'localdb':
+                print request.form['library']
+                print request.form['rID']
                 count = 0
-                dirs = utils.clientQueryDirs(Config.exclusive_local_db_path)
+                dirs = utils.clientQueryDirs(Config.exclusive_local_db_path, rID=request.form['rID'], fileName=request.form['library'])
                 dirs += [Config.exclusive_local_db_path, 'db/library']
                 for item in dirs:
                     count += 1
 
                     link = 'http://' + Config.ip_adress + '/?db=other/main/&key=exclusive2016&crossrefPath=' + item 
                     title = item[item.rfind('/') + 1: ]
-                    script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "', false);"
+                    script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "');"
                     print title
                     print link
                     result += utils.enhancedLink('', title, searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
@@ -296,7 +307,7 @@ def handleQueryUrl():
                         result += '<br>'
                 if len(Config.command_for_dialog) > 0:
                     library = os.getcwd() + '/db/library/' + Config.default_library;
-                    result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'])
+                    result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'])
                 result = str(count) + '#' + result
     else:
         resultDict = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
@@ -307,14 +318,14 @@ def handleQueryUrl():
     #print 'handleQueryUrl: ' + result
     return result
 
-def dialogCommand(fileName, text, resourceType):
+def dialogCommand(fileName, text, resourceType, originFilename, rID):
     result = ''
     for command in Config.command_for_dialog:
         if command == 'add2library':
             script = "addRecord('" + fileName + "', '" + text + "');"
             result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
         elif command == 'exclusive':
-            script = "exclusive('" + fileName + "', '" + text + "', '', true);"
+            script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "');"
             result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
         elif command == 'batch':
             script = "batchOpen('" + text + "', '" + resourceType + "');"
