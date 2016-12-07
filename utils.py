@@ -798,7 +798,7 @@ class Utils:
 
         return result
 
-    def clientQueryDirs(self, path):
+    def clientQueryDirs(self, path, rID='', fileName=''):
         dirs = []
 
         for item in os.listdir(path):
@@ -828,7 +828,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName=''):
         url = url.strip()
         user_log_js = ''
         query_url_js = ''

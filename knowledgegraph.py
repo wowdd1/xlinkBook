@@ -1,17 +1,37 @@
 #!/bin/env python
 
 import subprocess
+from webservice.base_webservice import BaseWebservice
+from record import Record
+import os
+from utils import Utils
 
 class KnowledgeGraph(object):
   """docstring for KnowageGraph"""
   def __init__(self):
     super(KnowledgeGraph, self).__init__()
+    self.webservice = BaseWebservice()
+    self.utils = Utils()
 
 
-  def getKnowledgeGraph(self, keyword, path):
+  def getKnowledgeGraph(self, keyword, resourceType, path, rID, fileName):
+      knowledgeGraph = ''
       crossref = self.getCrossref(keyword, path)
 
-      return crossref
+      if crossref != '':
+          knowledgeGraph += crossref + ' '
+
+      print rID + ' ' + fileName
+      record = None
+      if os.path.exists(fileName) and rID != '':
+          record = self.utils.getRecord(rID, path=fileName)
+      if record != None and record.get_id().strip() == rID:
+          instructors = self.webservice.callWebservice("instructors", record, keyword, resourceType)
+          #print instructors
+          #if len(instructors) > 0:
+          #    knowledgeGraph += 'instructors:' + ', '.join(instructors).strip() + ' '
+      print knowledgeGraph
+      return knowledgeGraph
    
   def getCrossref(self, keyword, path):
       cmd = 'grep -riE "' + keyword + '" ' + path
