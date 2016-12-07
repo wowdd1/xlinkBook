@@ -15,6 +15,7 @@ class Config():
 
     smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag_batch_open = False
+    smart_engin_for_command_batch_open = ['google', 'baidu']
     
     #smart_engin_for_tag = {}
 
@@ -36,7 +37,8 @@ class Config():
 
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
-    command_for_dialog = ['add2library', 'exclusive']
+    command_for_dialog = ['add2library', 'batch', 'exclusive']
+
     recommend_engin_type_for_dialog = 'star' #ref db/metadata/engin_type
 
     smart_link_max_text_len = 60

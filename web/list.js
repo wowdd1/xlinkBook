@@ -199,7 +199,7 @@ function search(inputid,optionid){
     } else if (select[select.selectedIndex].value == "add") {
         addRecord(fileName, input.value);
     } else if (select[select.selectedIndex].value == "exclusive") {
-        exclusive('exclusive', input.value, '');
+        exclusive('exclusive', input.value, '', true);
 
     } else {
         window.open(select.value + input.value);
@@ -213,9 +213,28 @@ function addRecord(fileName, data) {
     });
 }
 
-function exclusive(fileName, data, crossrefPath) {
-    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : engin_args, crossrefPath: crossrefPath}, function(data) {
-        window.open(data);   
+function exclusive(fileName, data, crossrefPath, newTab) {
+    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : engin_args, crossrefPath: crossrefPath, newTab : newTab}, function(data) {
+        if (data.indexOf('refresh#') != -1) {
+            window.location.href = data.substring(data.indexOf('#') + 1);
+        } else {
+            window.open(data); 
+        }
+          
+    });
+}
+
+function batchOpen(data, resourceType) {
+
+    $.post('/batchOpen', {data : data, resourceType : resourceType}, function(data) {
+        if (data != '') {
+            urls = data.split(' ');
+            for (var i = 0; i < urls.length; i++) {
+                if (urls[i] != '') {
+                    window.open(urls[i]);
+                }
+            }
+        }
     });
 }
 
