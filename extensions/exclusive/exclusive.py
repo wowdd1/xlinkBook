@@ -29,7 +29,10 @@ class Exclusive(BaseExtension):
             return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1'
         else:
             title = title.replace('%20', ' ')
-            record = Record('custom-exclusive-' + rID + ' | '+ title + ' | | ' + self.kg.getKnowledgeGraph(title, '', ' '.join(Config.exclusive_crossref_path), rID, form_dict['fileName']))
+            desc = 'engintype:' + title + ' '
+            desc += 'localdb:' + title + ' '
+            desc += self.kg.getCrossref(title, ' '.join(Config.exclusive_crossref_path))
+            record = Record('custom-exclusive-' + rID + ' | '+ title + ' | | ' + desc)
             return self.utils.output2Disk([record], 'exclusive', 'exclusive')
         #if fileName.find("/custom") != -1:
         #    fileName = form_dict['originFileName']
