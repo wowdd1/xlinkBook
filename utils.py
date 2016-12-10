@@ -211,7 +211,7 @@ class Utils:
 
     def gen_menu(self, source):
         db_root = '<a target="_blank" href="http://' + Config.ip_adress + '/?db=?" style="margin-right:6px">Home</a>'
-        html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">' + db_root
+        html = '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + db_root
         for link_dict in Config.fav_links.items():
             src = link_dict[1]
             if src.startswith('http') == False:
@@ -236,7 +236,7 @@ class Utils:
                 f = open('db/library/' + user_name + '-library')
                 lines = len(f.readlines())
                 f.close()
-            html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root
+            html = '<div style="float:right; margin-top:2px; margin-right:10px ">' + db_root
             '''
 	    for link_dict in Config.fav_links.items():
 		html += '<a target="_blank" href="http://' + link_dict[1] + '" style="margin-right:6px">' + link_dict[0] + "</a>"
@@ -882,7 +882,7 @@ class Utils:
                 open_js = query_url_js;
             else:
                 urls = [url]    
-                if module != '' or resourceType != '':
+                if (module != '' or resourceType != '') and url == '':
                     resultDict = self.clientQueryEnginUrl(url, searchText, resourceType, module)
                     if resultDict != None and len(resultDict) > 0:
                         urls = resultDict.values()
@@ -994,7 +994,7 @@ class Utils:
         else:
             return round(number)
              
-    def getNavLinkList(self, engin):
+    def getNavLinkList(self, engin, searchEnginOnly=False):
         if self.ddg_mode:
             if len(self.ddg_search_engin_type) == 0 or len(self.ddg_search_engin_dict) == 0:
                 self.loadDDGEngins()
@@ -1003,7 +1003,10 @@ class Utils:
             if Config.extension_mode:
                 return self.engin_extension
             else:
-                return self.search_engin_type + self.engin_extension
+                if searchEnginOnly:
+                    return self.search_engin_type
+                else:
+                    return self.search_engin_type + self.engin_extension
         #return ['paper', 'book', 'project', 'course', 'talk', 'organization', 'people', 'social']
 
     def getEnginTypes(self):

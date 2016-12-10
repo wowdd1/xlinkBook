@@ -7,29 +7,41 @@ import os
 from utils import Utils
 
 class KnowledgeGraph(object):
+
+  kg_cache = {}
   """docstring for KnowageGraph"""
   def __init__(self):
     super(KnowledgeGraph, self).__init__()
     self.webservice = BaseWebservice()
     self.utils = Utils()
 
-
+  
+  def getKnowledgeGraphCache(self, keyword):
+    if self.kg_cache.has_key(keyword):
+        return self.kg_cache[keyword]
+    else:
+        return ''
+        
   def getKnowledgeGraph(self, keyword, resourceType, path, rID, fileName):
+      if self.kg_cache.has_key(keyword):
+          return self.kg_cache[keyword]
       knowledgeGraph = ''
-      crossref = self.getCrossref(keyword, path)
+      #crossref = self.getCrossref(keyword, path)
 
-      if crossref != '':
-          knowledgeGraph += crossref + ' '
+      #if crossref != '':
+      #    knowledgeGraph += crossref + ' '
 
       print rID + ' ' + fileName
-      record = None
+      record = Record('')
       if os.path.exists(fileName) and rID != '':
           record = self.utils.getRecord(rID, path=fileName)
       if record != None and record.get_id().strip() == rID:
-          instructors = self.webservice.callWebservice("instructors", record, keyword, resourceType)
-          #print instructors
-          #if len(instructors) > 0:
-          #    knowledgeGraph += 'instructors:' + ', '.join(instructors).strip() + ' '
+          for tag in ['instructors', 'keyword']:
+              result = self.webservice.callWebservice(tag, record, keyword, resourceType)
+              #print instructors
+              if result != None and len(result) > 0:
+                  knowledgeGraph += tag +':' + ', '.join(result).strip() + ' '
+      self.kg_cache[keyword] = knowledgeGraph
       print knowledgeGraph
       return knowledgeGraph
    

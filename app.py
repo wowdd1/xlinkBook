@@ -164,6 +164,7 @@ def handleExclusive():
     resourceType = request.form['resourceType'].strip()
     originFilename = request.form['originFilename'].strip()
     lastRID = request.form['rID'].strip()
+    kgraph = request.form['kgraph'].strip()
 
     rID = ''
     for d in data.strip().split(' '):
@@ -172,14 +173,25 @@ def handleExclusive():
     targetPath = ' '.join(Config.exclusive_crossref_path)
     if crossrefPath != '':
         targetPath = ' ' +  crossrefPath
-    desc = 'localdb:' + data
-    desc += ' ' + kg.getKnowledgeGraph(data, resourceType, targetPath, lastRID, fileName)
+    desc = 'engintype:' + data + ' '
+    desc += 'localdb:' + data
+    desc += ' ' + kg.getCrossref(data, targetPath)
     if resourceType != '':
         desc += ' category:' + resourceType 
-    
-    record = Record('custom-exclusive-' + rID + ' | '+ data + ' | | ' + desc)
+
+    kg_cache = kg.getKnowledgeGraphCache(data)
+    if kg_cache != '':
+        desc += ' ' + kg_cache
+    elif kgraph == 'true':
+        desc += ' description:' + resourceType + '#' + originFilename + '#' + lastRID
+    url = ''
+    if data.startswith('http'):
+        url = data
+    #record = Record('custom-exclusive-' + rID + ' | '+ data + ' | ' + url + ' | ' + desc)
     #print record.line
-    url = utils.output2Disk([record], 'main', 'exclusive')
+    #url = utils.output2Disk([record], 'main', 'exclusive')
+
+    url = doExclusive(rID, data, url, desc)
     
     if enginArgs.find(':') != -1:
         enginType = enginArgs[enginArgs.find(':') + 1 :]
@@ -193,6 +205,41 @@ def handleExclusive():
     else:
         return url
 
+@app.route('/getKnowledgeGraph', methods=['POST'])
+def handleKnowledgeGraph():
+    url = request.form['url'].strip()
+    fileName = request.form['fileName'].strip()
+    print 'handleKnowledgeGraph ' + fileName
+    #getKnowledgeGraph(data, resourceType, targetPath, lastRID, fileName)
+    if os.path.exists(fileName):
+        f = open(fileName, 'rU')
+        lines = f.readlines()
+        f.close()
+        if ''.join(lines).find('keyword:') == -1:
+            new_lines_record = []
+            for line in lines:
+                if line.strip() != '':
+                    record = Record(line)
+                    description = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'description'}).strip()
+                    if description == None or description.strip() == '':
+                        return ''
+                    description_list = description.split('#')
+                    print description
+                    kb_str = kg.getKnowledgeGraph(record.get_title().strip(), description_list[0], '', description_list[2], description_list[1])
+                    print kb_str
+                    new_lines_record.append(Record(line.replace('\n', '').replace('description:' + description, '') + ' ' + kb_str))
+            if len(new_lines_record) == 1:
+                url = utils.output2Disk(new_lines_record, 'main', 'exclusive')
+                if url != '':
+                    return url
+                else:
+                    return ''
+    return ''
+
+def doExclusive(rID, title, url, desc):
+    record = Record('custom-exclusive-' + rID + ' | '+ title + ' | ' + url + ' | ' + desc)
+    return utils.output2Disk([record], 'main', 'exclusive') 
+    
 @app.route('/batchOpen', methods=['POST'])
 def handleBatchOpen():
     data = request.form['data'].strip()
@@ -275,7 +322,7 @@ def handleQueryUrl():
 
                     link = 'http://' + Config.ip_adress + '/?db=other/main/&key=exclusive2016&crossrefPath=' + item 
                     title = item[item.rfind('/') + 1: ]
-                    script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "');"
+                    script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', engin_args, false);"
                     print title
                     print link
                     result += utils.enhancedLink('', title, searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
@@ -284,10 +331,25 @@ def handleQueryUrl():
                         result += '<br>'
 
                 return str(count) + '#' + result
+            elif request.form['resourceType'] == 'engintype':
+                enginTypes = utils.getNavLinkList('', searchEnginOnly=True)
+                count = 0
+                for et in enginTypes:
+                    count += 1
+                    script = "exclusive('exclusive', '" + request.form['searchText'] + "', '', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', 'd:" + et + "', false);"
+                    
+                    result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '";style="font-size: 10pt;">' + et + '</a>'+ '&nbsp;'
+                    #result += utils.enhancedLink('', et, searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
+                
+                    if count % 9 == 0 and count > 0:
+                        result += '<br>'
+                print result
+                return result
             else:
                 resultDict = utils.clientQueryEnginUrl2(request.form['searchText'], resourceType=request.form['resourceType'])
                 
                 count = 0
+                print  resultDict
                 for k, v in resultDict.items():
                     count += 1
                     '''
@@ -300,11 +362,12 @@ def handleQueryUrl():
 
                     if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
                         v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
-                        print k + '--->' + v
+                    print k + '--->' + v
                             
                     result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
                     if count % 5 == 0 and count > 0:
                         result += '<br>'
+                print result
                 if len(Config.command_for_dialog) > 0:
                     library = os.getcwd() + '/db/library/' + Config.default_library;
                     result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'])
@@ -325,11 +388,14 @@ def dialogCommand(fileName, text, resourceType, originFilename, rID):
             script = "addRecord('" + fileName + "', '" + text + "');"
             result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
         elif command == 'exclusive':
-            script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "');"
+            script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, false);"
             result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
         elif command == 'batch':
             script = "batchOpen('" + text + "', '" + resourceType + "');"
             result += utils.enhancedLink('', '#batch', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+        elif command == 'kgraph':
+            script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, true);"
+            result += utils.enhancedLink('', '#kgraph', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
 
     return result
 

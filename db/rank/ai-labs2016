@@ -8,7 +8,7 @@ ai-labs-7 | University of Bristol |  | director:Colin Campell people:Sabine Haue
 ai-labs-8 | Hebrew University of Jerusalem |  |
 ai-labs-9 | Mobileye | http://www.mobileye.com/ | cto:Amnon Shashua youtube:amnonshashua, MobileyeAWS y-channel:UCUVi8zP012gBaiKX1UsipcA people:Amnon Shashua, Liz Cohen -Yerushalmi, Ziv Aviram, Shai Shalev-Shwartz, Ofer Maharshak, Yoram Gdalyahu, Gaby Hayon, Elad Serfaty, Itay Gat, Erez Dagan, Elchanan Rushinek, Shotaro Kawahara, Gideon Stein, David B. Yoffie, Pini Segal, Tal Babaioff, Dan Galves
 ai-labs-10 | Oxford Centre for Theoretical Neuroscience and AI | https://www.psy.ox.ac.uk/research/oxford-centre-for-theoretical-neuroscience-and-artificial-intelligence | youtube:oxford
-ai-labs-11 | Oxford Robotics Institute | http://oxfordrobots.com/ | alias:OXFORD ROBOTCAR, matconvnet website:robotcar-dataset.robots.ox.ac.uk
+ai-labs-11 | Oxford Robotics Institute | http://oxfordrobots.com/ | alias:OXFORD ROBOTCAR, matconvnet company:oxbotica website:robotcar-dataset.robots.ox.ac.uk
 ai-labs-12 | MILA |  | director:Yoshua Bengio, Hugo Larochelle alias:theano, elementai, Université de Montréal github:mila-udem, lisa-lab scientist:Christopher Pal, Doina Precup, Joelle Pineau, Simon Lacoste-Julien, Laurent Charlin, Pascal Vincent, Aaron Courville
 ai-labs-13 | Dalle Molle | http://idsia.ch/ | director:Jürgen Schmidhuber
 ai-labs-14 | The Siena College Institute for Artificial Intelligence |  | alias:SCIAI
@@ -22,7 +22,7 @@ ai-labs-21 | Facebook Artificial Intelligence Research | https://research.facebo
 ai-labs-22 | SAIL-Toyota Center for AI Research | http://aicenter.stanford.edu/ | ceo:Gill Pratt
 ai-labs-23 | Toyota Technological Institute at Chicago | http://www.ttic.edu | alias:TTIC, KITTI github:ToyotaResearchInstitute
 ai-labs-24 | BostonDynamics |  | youtube:BostonDynamics founder:Marc Raibert project:Atlas, Spot, LS3, PETMAN, CHEETAH, BigDog, SandFlea, RHex, RiSE, LittleDog
-ai-labs-25 | Uber Advanced Technologies Center | https://www.uber.com/info/atc/ | director:Sherif Marakby alias:Uber AI Lab
+ai-labs-25 | Uber Advanced Technologies Center | https://www.uber.com/info/atc/ | director:Sherif Marakby company:Geometric Intelligence, Otto people:Zoubin Ghahramani, Gary Marcus alias:Uber AI Lab
 ai-labs-26 | Amazon AWS | http://aws.amazon.com/ | director:Matt Wood, Alex Smola scientist:Nikko Strom github:amznlabs cto:Werner Voegls project:MXNet
 ai-labs-27 | IBM Research | http://researcher.watson.ibm.com/ | director:David Kenny github:ibmtjbot/tjbot people:邵凌, 沈晓卫 alias:ibm watson youtube:IBMLabs, IBM, watsonanalytics
 ai-labs-28 | Honda Silicon Valley Lab | https://www.hondasvl.com/ | director:Naoki Sugimoto project:ASIMO
@@ -32,9 +32,12 @@ ai-labs-31 | Baidu Silicon Valley AI Lab | http://research.baidu.com/silicon-val
 ai-labs-32 | Baidu Deep Learning Research | http://idl.baidu.com/index.html | ceo:李彦宏 vp:王劲, James Peng, 张亚勤 director:林元庆, 吴中勤, 刘炀 scientist:徐伟 website:ai.baidu github:baidu/tera, PaddlePaddle/Paddle alias:baidu brain, 百度大脑
 ai-labs-33 | Baidu Autonomous Driving |  | vp:王路 director:Tony Han, 王劲, 张辉, 羊孜之, 张少宇 engineer:楼天城 alias:百度无人驾驶
 ai-labs-34 | Apple AI Research |  | director:Ruslan Salakhutdinov, Jonathan Cohen youtube:apple company:Siri, Novauris, VocalIQ, Turi, Cue, Matcha, Semetric, Spotsetter, WiFiSlam, Topsy, Perceptio, Metaio, Polar Rose, Emollient, Flyby
-ai-labs-35 | Nvidia |  | ceo:Jen-Hsun Huang director:Danny Shapiro alias:cudnn, Titan X, CUDA, GPU Accelerated project:GPU Teaching Kits youtube:nvidia github:nvidia, NvidiaTaiwan twitter:NvidiaAI
-ai-labs-36 | DARPA | | youtube:DARPAtv
+ai-labs-35 | Nvidia |  | ceo:Jen-Hsun Huang alias:cudnn, Titan X, CUDA, GPU Accelerated project:GPU Teaching Kits youtube:nvidia github:nvidia, NvidiaTaiwan twitter:NvidiaAI
+ai-labs-36 | Nvidia Automotive | | director:Danny Shapiro 
 ai-labs-37 | Intel |  | alias:Nervana people:宋继强 weibo:ilcwb
 ai-labs-38 | Intel Automated Driving Group | | director:Doug Davis, Kathy Winter
-ai-labs-39 | Noah's Ark | http://www.noahlab.com.hk | scientist:Sean Ding, 李航
-ai-labs-40 | partnershiponai | https://www.partnershiponai.org/ | 
+ai-labs-39 | Max Planck Research Group for Autonomous Vision | http://www.cvlibs.net/index.php | 
+ai-labs-40 | DARPA | | youtube:DARPAtv
+ai-labs-41 | Noah's Ark | http://www.noahlab.com.hk | scientist:Sean Ding, 李航
+ai-labs-42 | Partnership On AI | https://www.partnershiponai.org/ | 
+ai-labs-43 | Open AI Lab |  | people:余凯

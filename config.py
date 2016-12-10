@@ -19,7 +19,7 @@ class Config():
     
     #smart_engin_for_tag = {}
 
-    smart_engin_for_tag = {'weixin' : 'weixin'}
+    smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo']}
     '''
 
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
@@ -37,7 +37,7 @@ class Config():
 
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
-    command_for_dialog = ['add2library', 'batch', 'exclusive']
+    command_for_dialog = ['add2library', 'batch', 'kgraph', 'exclusive']
 
     recommend_engin_type_for_dialog = 'star' #ref db/metadata/engin_type
 
@@ -218,15 +218,15 @@ class Config():
     '''
     #'''
     convert_url_args = '' #'?start=' #'?start=0&tag='
-    convert_page_step = 0
-    convert_page_start = 0
-    convert_page_max = 10
+    convert_page_step = 1
+    convert_page_start = 1
+    convert_page_max = 16
     convert_page_to_end = False
-    convert_tag = 'a' #"div#title"  # tag#class or tag
+    convert_tag = 'h2' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
-    convert_contain = "@"
+    convert_contain = ""
     convert_start = 0
     convert_split_column_number = 0
     convert_output_data_to_new_tab = False

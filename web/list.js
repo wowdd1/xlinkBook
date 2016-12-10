@@ -85,6 +85,15 @@ $(document).ready(function(){
 
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
+  if (fileName.indexOf('exclusive') != -1) {
+      $.post('/getKnowledgeGraph', {url : window.location.href, fileName : fileName}, function(data) {
+           if (data != '') {
+               window.location.href = data;
+           }
+           
+      });
+  }
+
   if (fileName.indexOf('arxiv') != -1) {
 
   var loading_more = false;
@@ -199,7 +208,7 @@ function search(inputid,optionid){
     } else if (select[select.selectedIndex].value == "add") {
         addRecord(fileName, input.value);
     } else if (select[select.selectedIndex].value == "exclusive") {
-        exclusive('exclusive', input.value, '', true, '', fileName, '');
+        exclusive('exclusive', input.value, '', true, '', fileName, '', engin_args, false);
 
     } else {
         window.open(select.value + input.value);
@@ -213,8 +222,8 @@ function addRecord(fileName, data) {
     });
 }
 
-function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID) {
-    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : engin_args, crossrefPath: crossrefPath, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID}, function(data) {
+function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph) {
+    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : enginArgs, crossrefPath: crossrefPath, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph}, function(data) {
         if (data.indexOf('refresh#') != -1) {
             window.location.href = data.substring(data.indexOf('#') + 1);
         } else {

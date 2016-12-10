@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
-class TwitterWebservice(object):
+from webservice.base_webservice import BaseWebservice
+
+class TwitterWebservice(BaseWebservice):
     """docstring for TwitterWebservice"""
     def __init__(self, arg):
-        super(TwitterWebservice, self).__init__()
+        BaseWebservice.__init__(self)
         self.arg = arg
 
 

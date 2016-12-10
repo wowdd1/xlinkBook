@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 
+from webservice.base_webservice import BaseWebservice
 
-class InstructorsWebservice(object):
+class InstructorsWebservice(BaseWebservice):
     """docstring for InstructorsWebservice"""
     def __init__(self, arg):
-      super(InstructorsWebservice, self).__init__()
+      BaseWebservice.__init__(self)
       self.arg = arg
 
 
     def getWebData(self, record, keyword, keywordResourceType):
         #return record.get_title() + ' ' + keyword + ' ' + keywordResourceType
 
-        return ['weqeq weeqw', 'eqeq qweqw', 'qtqw ooo']
+        return []
