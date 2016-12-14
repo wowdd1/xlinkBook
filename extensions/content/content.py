@@ -125,7 +125,6 @@ class Content(BaseExtension):
                     format_index = r.get_id()[r.get_id().rfind('-') + 1 : ].strip()
 		while format_index.find('-') != -1:
 		    format_index = format_index[format_index.find('-') + 1 :]
-
                 html += '<li><span>' + format_index + '</span>'
                 if len(format_index) > 5:
                     html += '</li><br/><li>'

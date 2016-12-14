@@ -28,7 +28,7 @@ engin-27 | appft.uspto | http://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Se
 engin-28 | patft.uspto | http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=0&f=S&l=50&FIELD1=AANM&co1=AND&d=PTXT&TERM1= | priority:0 description:patent
 engin-29 | patents.google | https://patents.google.com/?q= | priority:0 description:patent
 engin-30 | yahoo | https://search.yahoo.com/search;_ylt=Atkyc2y9pQQo09zbTUWM4CWbvZx4?p= | priority:0 description:all
-engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:9 description:default star course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
+engin-31 | youtube | https://www.youtube.com/results?search_query= | priority:8 description:default star course talk video icon:http://mycroftproject.com/updateos.php/id0/youtube_reviews.ico
 engin-32 | coursera | https://www.coursera.org/courses?query= | priority:8 description:course
 engin-33 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course
 engin-34 | edx | https://www.edx.org/course?search_query= | priority:8 description:course
@@ -110,7 +110,7 @@ engin-106 | harvard | http://www.harvard.edu/searches#gsc.tab=0&gsc.q= | priorit
 engin-107 | search.ox | https://search.ox.ac.uk/search?access=p&output=xml_no_dtd&ie=UTF-8&client=admin&proxystylesheet=admin&site=default-minus&submit=Search&q= | priority:0 description:people course
 engin-108 | ethz.ch | https://www.ethz.ch/en/utils/search.ethz_search.html?language=en&pagetype=all&search= | priority:0 description:people course
 engin-109 | techtalks | http://techtalks.tv/search/results/?q= | priority:8 description:talk course
-engin-110 | plus.google | https://plus.google.com/s/%s/top | priority:6 description:social star shortname:google+
+engin-110 | plus.google | https://plus.google.com/s/%s/top | priority:6 description:social shortname:google+
 engin-111 | slashdot | https://slashdot.org/index2.pl?fhfilter= | priority:0 description:news
 engin-112 | digg | http://digg.com/search?q= | priority:0 description:digg
 engin-113 | wiktionary | https://en.wiktionary.org/wiki/ | priority:0 description:wiki
@@ -270,7 +270,7 @@ engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 descri
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:4 description:tools
 engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:6 description:tools
 engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:cloud
-engin-273 | mail | https://mail.google.com/mail/u/0/#search/ | priority:0 description:tools social
+engin-273 | mail.google | https://mail.google.com/mail/u/0/#search/ | priority:8 description:tools social star shortname:gmail
 engin-274 | dropbox | https://www.dropbox.com/search/personal?query=%s&query_unnormalized=%s&last_fq_path= | priority:0 description:cloud
 engin-275 | dotnetrocks | https://www.dotnetrocks.com/?q= | priority:0 description:podcast
 engin-276 | voanews | http://www.voanews.com/search/search2.aspx#all|%s|0|allzones|min|now|date | priority:0 description:podcast
@@ -534,3 +534,5 @@ engin-543 | weixinla | http://www.weixinla.com/search/ | priority:3 description:
 engin-544 | chuansong | http://chuansong.me/search?q= | priority:3 description:social news
 engin-545 | toutiao | https://toutiao.io/subjects?utf8=✓&q= | priority:3 description:social news
 engin-546 | emeraldinsight | http://www.emeraldinsight.com/action/doSearch?AllField=%s&content=articlesChapters | | priority:3 description:paper
+engin-547 | qoofan.com | https://www.google.com.hk/search?q=%s+site%3Aqoofan.com | priority:3 description:social news
+engin-548 | analyticsvidhya | https://www.analyticsvidhya.com/?s= | priority:5 description:blog job tutorial, discovery

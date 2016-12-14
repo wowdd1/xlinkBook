@@ -19,7 +19,7 @@ class Config():
     
     #smart_engin_for_tag = {}
 
-    smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo']}
+    smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo', 'qoofan.com', 'glucky']}
     '''
 
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
@@ -49,6 +49,7 @@ class Config():
 
     recommend_engin = True
     recommend_engin_num = 22
+    recommend_engin_num_dialog = 23
     recommend_engin_type = 'star' #ref db/metadata/engin_type
 
     start_library_title = 'add some record from here!'
@@ -71,10 +72,8 @@ class Config():
     #default_library = 'universe-library'
     #default_library = 'earth-library'
     #default_library = 'social-library'
-    #default_library = 'frontier-library'
-    #default_library = 'research-library'
-    #default_library = 'humanities-art-library'
-    #default_library = 'thought-political-library'
+    #default_library = 'art-library'
+    #default_library = 'political-library'
 
     #show random preview when click nav link
 
@@ -144,19 +143,26 @@ class Config():
     background_after_click = '#E9967A' ##CCEEFF
     fontsize_after_click = ''
 
-    background = ''
-    #background = 'https://datacdn.soyo.or.kr/wcont/uploads/2016/02/02164057/alphago_01.jpg'
+    background = 0
+    backgrounds = ['',\
+                    'http://img.blog.csdn.net/20161213000422101',\
+                    'https://datacdn.soyo.or.kr/wcont/uploads/2016/02/02164057/alphago_01.jpg',\
+                    'http://img.blog.csdn.net/20150506120021512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd293ZGQx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center',\
+                    'http://images.njcw.com/upload/2011-5/201105071635561829723_w.jpg',\
+                    'http://www.caneis.com.tw/link/info/Middle_East_info/Egypt/images/Cairo-007-1.jpg']
 
     fav_links = { 'papers' : ip_adress + '/?db=eecs/papers/&key=?',\
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
           'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
-          'rss' : ip_adress + '/?db=rss/&key=rss2016',\
+          #'rss' : ip_adress + '/?db=rss/&key=rss2016',\
           #'disk' : ip_adress + '/?db=other/&key=disk2016',\
           'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
           #'ipynb' : 'localhost:8888/tree',\
           #'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
           #'members' : ip_adress + '/?db=rank/&key=members2016&column=2',\
           'rank' : ip_adress + '/?db=rank/&key=?',\
+          'frontier' : ip_adress + '/?db=other/&key=frontier2016',\
+          'research' : ip_adress + '/?db=other/&key=research2016',\
           #'rank' : ip_adress + '/?db=rank/&key=?',\
 		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=3'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
@@ -184,6 +190,10 @@ class Config():
     bookmark_output_data_to_new_tab = False
     bookmark_output_data_format = ''
     bookmark_page_item_count = [16, 14, 12]
+
+    #history
+    history_file_path = "/Users/zd/Downloads/chrome_history.json"
+    history_hiden_engin_section = True
 
     #exclusive
     exclusive_crossref_path = ['db/library']
@@ -222,7 +232,7 @@ class Config():
     convert_page_start = 1
     convert_page_max = 16
     convert_page_to_end = False
-    convert_tag = 'h2' #"div#title"  # tag#class or tag
+    convert_tag = 'a' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
