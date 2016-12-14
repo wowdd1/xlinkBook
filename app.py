@@ -133,7 +133,7 @@ def handleLoadmore():
 
 @app.route('/navigate', methods=['POST'])
 def handleNavigate():
-    print request.form
+    #print request.form
     if request.form['rID'] == "":
         return ""
     return extensionManager.doWork(request.form)
@@ -155,7 +155,7 @@ def handleAddRecord():
 @app.route('/exclusive', methods=['POST'])
 def handleExclusive():
     print 'handleExclusive:'
-    print request.form
+    #print request.form
     data = request.form['data'].strip()
     fileName = request.form['fileName'].strip()
     enginArgs = request.form['enginArgs'].strip()
@@ -187,10 +187,6 @@ def handleExclusive():
     url = ''
     if data.startswith('http'):
         url = data
-    #record = Record('custom-exclusive-' + rID + ' | '+ data + ' | ' + url + ' | ' + desc)
-    #print record.line
-    #url = utils.output2Disk([record], 'main', 'exclusive')
-
     url = doExclusive(rID, data, url, desc)
     
     if enginArgs.find(':') != -1:
@@ -209,8 +205,6 @@ def handleExclusive():
 def handleKnowledgeGraph():
     url = request.form['url'].strip()
     fileName = request.form['fileName'].strip()
-    print 'handleKnowledgeGraph ' + fileName
-    #getKnowledgeGraph(data, resourceType, targetPath, lastRID, fileName)
     if os.path.exists(fileName):
         f = open(fileName, 'rU')
         lines = f.readlines()
@@ -220,9 +214,10 @@ def handleKnowledgeGraph():
             for line in lines:
                 if line.strip() != '':
                     record = Record(line)
-                    description = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'description'}).strip()
+                    description = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'description'})
                     if description == None or description.strip() == '':
                         return ''
+                    description = description.strip()
                     description_list = description.split('#')
                     print description
                     kb_str = kg.getKnowledgeGraph(record.get_title().strip(), description_list[0], '', description_list[2], description_list[1])
@@ -244,7 +239,6 @@ def doExclusive(rID, title, url, desc):
 def handleBatchOpen():
     data = request.form['data'].strip()
     resourceType = request.form['resourceType'].strip()
-    print 'handleBatchOpen data:' + data + ' resourceType:' + resourceType
 
     if len(Config.smart_engin_for_command_batch_open) > 0:
         engins = Config.smart_engin_for_command_batch_open
@@ -299,7 +293,6 @@ def handlerQueryStarEngin():
     rID = request.form['rID']
     rTitle = request.form['rTitle']
     targetid = request.form['targetid']
-    print 'handlerQueryStarEngin--> rID:' + rID + ' rTitle:' + rTitle + ' taggetid:' + targetid
     return ''
 
 @app.route('/queryUrl', methods=['POST'])
@@ -308,7 +301,7 @@ def handleQueryUrl():
     
     if request.form.has_key('type'):
         if request.form['type'] == 'dialog':
-            print request.form
+            #print request.form
             engin_args = request.form['enginArgs']
 
             if request.form['resourceType'] == 'localdb':
@@ -323,8 +316,7 @@ def handleQueryUrl():
                     link = 'http://' + Config.ip_adress + '/?db=other/main/&key=exclusive2016&crossrefPath=' + item 
                     title = item[item.rfind('/') + 1: ]
                     script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', engin_args, false);"
-                    print title
-                    print link
+
                     result += utils.enhancedLink('', title, searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
                     
                     if count % 5 == 0 and count > 0:
@@ -339,35 +331,27 @@ def handleQueryUrl():
                     script = "exclusive('exclusive', '" + request.form['searchText'] + "', '', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', 'd:" + et + "', false);"
                     
                     result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '";style="font-size: 10pt;">' + et + '</a>'+ '&nbsp;'
-                    #result += utils.enhancedLink('', et, searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
                 
                     if count % 9 == 0 and count > 0:
                         result += '<br>'
-                print result
                 return result
             else:
                 resultDict = utils.clientQueryEnginUrl2(request.form['searchText'], resourceType=request.form['resourceType'])
                 
                 count = 0
-                print  resultDict
+                #print  resultDict
                 for k, v in resultDict.items():
                     count += 1
-                    '''
-                    script = ''
-                    if request.form['aid'] != '':
-                        script = "chanageLinkColorByID('" + request.form['aid'] + "','" + Config.background_after_click + "', '');"
-                        print '------\n'
-                        print script
-                    '''
 
                     if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
                         v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
-                    print k + '--->' + v
                             
                     result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
-                    if count % 5 == 0 and count > 0:
+                    if count % 5 == 0 and count > 0 and len(resultDict) != 5:
                         result += '<br>'
-                print result
+                    if count >= Config.recommend_engin_num_dialog:
+                        break
+                #print result
                 if len(Config.command_for_dialog) > 0:
                     library = os.getcwd() + '/db/library/' + Config.default_library;
                     result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'])
@@ -378,7 +362,7 @@ def handleQueryUrl():
             if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
                 resultDict[k] = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
         result = ' '.join(resultDict.values())
-    #print 'handleQueryUrl: ' + result
+
     return result
 
 def dialogCommand(fileName, text, resourceType, originFilename, rID):
@@ -448,7 +432,6 @@ def handleThumb():
             output = subprocess.check_output("curl --max-time 1 --head " + 'https://api.thumbalizr.com/?url=' + url + '&width=1280&quality=100', shell=True)
         except Exception as e:
             print e
-        #requests.get('https://api.thumbalizr.com/?url=' + url + '&width=800')
     return url
 
 @app.route('/chrome', methods=['GET', 'POST'])

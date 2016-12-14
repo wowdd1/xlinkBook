@@ -744,7 +744,7 @@ def build_lines(list_all, file_name):
                                     #print 'genMoreEnginHtml end:' + str(datetime.datetime.now()) + '<br>'
                                     if content != '' and plugins_mode == False:
                                         div_style = ''
-                                        if Config.background == '':
+                                        if Config.backgrounds[Config.background] == '':
                                             div_style += 'background-color:#F8F8FF;'
                                         div_style += 'border-radius: 5px 5px 5px 5px; width:auto; float:left;'
                                         div_content_extension_list.append('<div id="' + nav_div_id + '" style="' + div_style + '">')
@@ -862,7 +862,7 @@ def get_background_color(content):
         if (index + 1) % 2 != 0 and index != 0:
             if (css_style_type == 0 or css_style_type == 6) and ((contain_keyword(content_back[index].strip()) == False or (contain_desc_keyword(content_back[index].strip())))):
                 #background_colors.append('background-color:#f6f5ec; border-radius: 5px 5px 5px 5px;')
-                if Config.background == '':
+                if Config.backgrounds[Config.background]:
                     background_colors.append('background-color:#F8F8FF; border-radius: 5px 5px 5px 5px;')
                 else:
                     background_colors.append('')
@@ -1167,10 +1167,13 @@ def getShowText(accountTag, text, tag, linkCount):
             text = prefix + text
         return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt;"><i>' + text + '</i></font>'
     else:
-        if Config.background != '':
+        #return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
+         
+        if Config.backgrounds[Config.background] != '':
             return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
         else:
             return '<font style="font-size:' + str(font_size) + 'pt;">' + text + '</font>'
+        
     return text
 
 def getCutLen(tag, text):
@@ -1219,16 +1222,16 @@ def print_table_head_with_style():
         if loadmore_mode == False:
             body = ''
             body += '<body  style="text-align:center; background-color:' + background_color + ';'
-            if Config.background != '':
-                body += 'background-image:url(' + Config.background + ');">'
+            if Config.backgrounds[Config.background] != '':
+                body += 'background-image:url(' + Config.backgrounds[Config.background] + ');">'
             else:
                 body += '">'
             print body
         center_style += 'margin:0px auto; background-color:#FFFFFF;  width:' + width + '; border:1; bordercolor=#000077;'
     else:
         if loadmore_mode == False:
-            if Config.background != '':
-                print '<body style="background-image:url(' + Config.background + ')">'
+            if Config.backgrounds[Config.background] != '':
+                print '<body style="background-image:url(' + Config.backgrounds[Config.background] + ')">'
             else:
                 print '<body>'
     center_style += 'margin-left:' + Config.content_margin_left + '; margin-top:' + Config.content_margin_top + ';'
