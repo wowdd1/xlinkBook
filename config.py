@@ -19,7 +19,8 @@ class Config():
     
     #smart_engin_for_tag = {}
 
-    smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo', 'qoofan.com', 'glucky']}
+    smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo', 'qoofan.com', 'glucky'],\
+                           'fb-pages' : ['fb-pages', 'glucky']}
     '''
 
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
@@ -39,7 +40,7 @@ class Config():
     smart_engin_for_dialog = []
     command_for_dialog = ['add2library', 'batch', 'kgraph', 'exclusive']
 
-    recommend_engin_type_for_dialog = 'star' #ref db/metadata/engin_type
+    recommend_engin_type_for_dialog = '' #'star' #ref db/metadata/engin_type
 
     smart_link_max_text_len = 60
     smart_link_br_len = 80
@@ -48,13 +49,15 @@ class Config():
     page_item_count = 100#63
 
     recommend_engin = True
-    recommend_engin_num = 22
+    recommend_engin_num = 23
     recommend_engin_num_dialog = 23
     recommend_engin_type = 'star' #ref db/metadata/engin_type
+    recommend_engin_by_tag = False
 
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
+    menu_library_list = ['ai-library', 'multimedia-library', 'cognitive-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library']
     #default_library = ''
     default_library = 'ai-library'
     #default_library = 'engineering-library'
@@ -74,6 +77,8 @@ class Config():
     #default_library = 'social-library'
     #default_library = 'art-library'
     #default_library = 'political-library'
+    #default_library = 'media-library'
+    #default_library = 'telecom-library'
 
     #show random preview when click nav link
 
@@ -149,9 +154,12 @@ class Config():
                     'https://datacdn.soyo.or.kr/wcont/uploads/2016/02/02164057/alphago_01.jpg',\
                     'http://img.blog.csdn.net/20150506120021512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd293ZGQx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center',\
                     'http://images.njcw.com/upload/2011-5/201105071635561829723_w.jpg',\
-                    'http://www.caneis.com.tw/link/info/Middle_East_info/Egypt/images/Cairo-007-1.jpg']
+                    'http://www.caneis.com.tw/link/info/Middle_East_info/Egypt/images/Cairo-007-1.jpg',\
+                    'https://cdn-images-1.medium.com/max/2000/1*BTGKRLq55y8Hld9pyvarXg.png',\
+                    'http://st.depositphotos.com/1007919/3724/i/950/depositphotos_37248955-stock-photo-binary-background.jpg',\
+                    'http://amazingstuff.co.uk/wp-content/uploads/2012/02/scale_of_the_universe_2.png']
 
-    fav_links = { 'papers' : ip_adress + '/?db=eecs/papers/&key=?',\
+    fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
           'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
           #'rss' : ip_adress + '/?db=rss/&key=rss2016',\
@@ -170,6 +178,8 @@ class Config():
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
 
 
+    distribution = False
+    slack_token = 'xoxp-119467920674-119554940085-119400155379-b20efe8eba7374483e02314a780dec1d'
 
     delete_from_char = ''
     delete_forward = True
@@ -201,7 +211,7 @@ class Config():
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
-    filefinder_netdisk_engin = 'pan.baidu'
+    filefinder_netdisk_engin = 'pan.baidu' #drive  onedrive dropbox
     filefinder_sort_by_count = True
 
     #content
@@ -232,7 +242,7 @@ class Config():
     convert_page_start = 1
     convert_page_max = 16
     convert_page_to_end = False
-    convert_tag = 'a' #"div#title"  # tag#class or tag
+    convert_tag = 'strong' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""

@@ -28,6 +28,8 @@ from config import Config
 reload(sys)
 sys.setdefaultencoding('utf8')
 from record import Tag
+from slackclient import SlackClient
+import urllib
 
 
 regex = re.compile("\033\[[0-9;]*m")
@@ -246,18 +248,20 @@ class Utils:
             content = user_name
 
             if Config.display_all_library:
-                html += self.gen_libary2(user_name, source)
+                html += self.gen_libary2(user_name, source, libraryList=Config.menu_library_list)
             else:
                 html += self.enhancedLink("http://' + Config.ip_adress + '/?db=library/&key=?", 'library', library=source, module='main') + '&nbsp;'
 
-            html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '</div>'
+            html +=  self.enhancedLink('http://' + Config.ip_adress + '/?db=library/&key=' + user_name + '-library&column=3&width=' + Config.default_width, content + '<font size="2">(</font><font size="2" color="#999966">' + str(lines) + '</font><font size="2">)</font>', library=source, module='main') + '&nbsp'
+
+            html += self.gen_library_more(source) + '</div>'
         else:
             html = '<div style="float:right; margin-top:2px; margin-right:10px">' + db_root + self.enhancedLink("http://' + Config.ip_adress + '/login", 'Login', library=source, module='main') + '</div>'
         html += '<div style="height: 21px; width: 100px"></div>'
 
         return html
 
-    def gen_libary2(self, user, source):
+    def gen_libary2(self, user, source, libraryList=[], inLibary=True):
         html = ''
         file_list = os.listdir("db/library/")
         count = 0
@@ -268,6 +272,19 @@ class Utils:
                 continue
             if Config.default_library != '' and item.find(Config.default_library) != -1:
                 continue
+            passItem = False
+            found = False
+            if len(libraryList) > 0:
+                for library in libraryList:
+                    if item == library:
+                        found = True
+                if inLibary:
+                    passItem = not(found)      
+                else:
+                    passItem = found            
+
+            if passItem:
+                continue
             count += 1
             f = open('db/library/' + item)
             lines = len(f.readlines())
@@ -277,8 +294,11 @@ class Utils:
             if count > 5 :
                 count = 0
                 #html += '<br/>' #need adjust config content_margin_top
+
         return html
         
+    def gen_library_more(self, source):
+        return self.enhancedLink('', "more", module='menu', library=source, resourceType='menu', dialogMode=True, dialogPlacement='bottom') 
 
     def getAlexaRank(self, engin):
         engin = engin.lower().strip()
@@ -609,8 +629,6 @@ class Utils:
         return result
 
     def formatEnginTitle(self, engin):
-        if engin == 'search.mit':
-            engin = 'mit'
 
         record = self.search_engin_dict[engin]
         shortname = record.get_shortname()
@@ -790,7 +808,10 @@ class Utils:
                 else:
                     engins = self.getEnginList('d:' + Config.recommend_engin_type_for_dialog, sort=True)
             else:
-                engins = self.getEnginList('d:star', sort=True)
+                if resourceType != '' and Config.recommend_engin_by_tag and ' '.join(self.search_engin_type).find(resourceType) != -1:
+                    engins = self.getEnginList('d:' + resourceType, sort=True)
+                else:
+                    engins = self.getEnginList('d:star', sort=True)
             self.dialog_engin_cache = engins.append('glucky');
 
         for engin in engins:
@@ -828,7 +849,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName=''):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top'):
         url = url.strip()
         user_log_js = ''
         query_url_js = ''
@@ -905,7 +926,7 @@ class Utils:
         result = ''
         
         if dialogMode:
-            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="top" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '" id="' + aid + '">'
+            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="' + dialogPlacement + '" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '" id="' + aid + '">'
         else:
             result = '<a target="_blank" href="javascript:void(0);"'
 
@@ -1200,8 +1221,6 @@ class Utils:
    
     def color_keyword(self, text, keywordList, color_index=0, html_style=True, isTag=True, color1="#33EE22", color2="#66CCFF"):
         result = text
-        #if text.find('<a') != -1:
-        #    return text
         for k in keywordList:
             if isTag:
                 k = ' ' + k
@@ -1212,17 +1231,14 @@ class Utils:
             k = k.strip()
             if (color_index - 1) % 2 == 0:
                 if html_style == True:
-                    #result = result.replace(k, '<font color="#33EE22">' + k + '</font>')
                     result = self.replacekeyword(result, k, '<font color="' + color1 + '">' + k + '</font>')
                 else:
-                    result = result.replace(k, utils.getColorStr('brown', k))
+                    result = result.replace(k, self.getColorStr('brown', k))
             else:
                 if html_style == True:
-                    #result = result.replace(k, '<font color="#66CCFF">' + k + '</font>')
                     result = self.replacekeyword(result, k, '<font color="' + color2 + '">' + k + '</font>')
-                    #return result.encode('utf-8')
                 else:
-                    result = result.replace(k, utils.getColorStr('darkcyan', k))
+                    result = result.replace(k, self.getColorStr('darkcyan', k))
 
         return result.encode('utf-8')
 
@@ -1519,6 +1535,13 @@ class Utils:
         if output.find('200 OK') == -1:
             return True
         return False
+
+    def slack_message(self, message, channel):
+        token = Config.slack_token
+        sc = SlackClient(token)
+        sc.api_call('chat.postMessage', channel=channel, 
+                    text=message, username='My Sweet Bot',
+                    icon_emoji=':robot_face:')
 
 
     def clearHtmlTag(self, htmlstr):
