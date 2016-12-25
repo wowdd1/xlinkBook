@@ -411,92 +411,95 @@ def getScript(file_name, first_record, total_records):
     print "<head>"
     #print '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">'
 
-
-    print script_head
-    print "var default_tab = '" + Config.default_tab + "';"
-    print "var second_default_tab = '" + Config.second_default_tab + "';"
-    if Config.hiden_record_id:
-        Config.disable_thumb = 'true'
-    print "var disable_thumb = " + Config.disable_thumb + ";"
-    if trackmode:
-        print "var track_mode = true;";
-        print "var trackmode_engin_type = '" + trackmode_engin_type + "';"
-    else:
-        print "var track_mode = false;";
-
-    print "var array = []; "
-    print "var extension_array = [];" 
-    print "var reference = new Array();"
-    print "var content = new Array();"
-    print "var engin_args = '" + engin + "';" 
-    if len(div_content_list) > 0:
-        for content in div_content_list:
-            print "array.push('" + content + "');" 
-    if len(div_content_extension_list) > 0:
-        for content in div_content_extension_list:
-            print "extension_array.push('" + content + "');" 
-
-
-    print 'var user_name = "' + username + '";'
-    print 'var fileName = "' + os.getcwd() + '/' + source + '";'
-    print 'var library = "' + os.getcwd() + '/db/library/' + Config.default_library + '";'
-    print 'var column = "' + column_num + '";'
-    print 'var database = "' + database + '";'
-    print 'var key = "";'
-    print 'var starDivCount = ' + str(starDivCount) + ';'
-    print 'var hidenMoreCount = ' + str(custom_cell_row) + ';' 
-    if plugins_mode == False:
-        if len(Config.smart_engin_for_dialog) > 0:
-            print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
+    if Config.distribution == False:
+        print script_head
+        print "var default_tab = '" + Config.default_tab + "';"
+        print "var second_default_tab = '" + Config.second_default_tab + "';"
+        if Config.hiden_record_id:
+            Config.disable_thumb = 'true'
+        print "var disable_thumb = " + Config.disable_thumb + ";"
+        if trackmode:
+            print "var track_mode = true;";
+            print "var trackmode_engin_type = '" + trackmode_engin_type + "';"
         else:
-            print 'var dialog_engin_count = ' + str(len(utils.getEnginList('d:' + Config.recommend_engin_type_for_dialog))) + ';'
-        if len(Config.command_for_dialog) > 0 and source.find('-library') != -1:
-            print 'var dialog_command_count = ' + str(len(Config.command_for_dialog)) + ';'
-        else:
-            print 'var dialog_command_count = 0;'
-    if source.endswith('/') == False:
-        print 'key = "' + source[source.rfind('/') + 1 :] + '";'
-    extensions = utils.getExtensions()
-    if len(extensions) > 0:
-        print 'var extensions = [];'
-        for e in extensions:
-            print "extensions.push('" + e + "');"
+            print "var track_mode = false;";
 
-    print script_end
+        print "var array = []; "
+        print "var extension_array = [];" 
+        print "var reference = new Array();"
+        print "var content = new Array();"
+        print "var engin_args = '" + engin + "';" 
+        if len(div_content_list) > 0:
+            for content in div_content_list:
+                print "array.push('" + content + "');" 
+        if len(div_content_extension_list) > 0:
+            for content in div_content_extension_list:
+                print "extension_array.push('" + content + "');" 
 
-    if plugins_mode or total_records == 1:
-        title = first_record.get_title().strip().replace(' ', '%20')
-        if plugins_mode:
-            click_more = "document.addEventListener('DOMContentLoaded', function () {\
-    	        setText('a-0-0-0');\
-    	        showdiv('div-000','a-0-0-0');\
-    	        appendContent('div-0-0-0','','" + title + "','','',false);\
-                    navTopic(document.getElementById('div-0-0-0-nav-all'),'div-0-0-0','div-0-0-0-nav-',4);\
-                    var search_txt = document.getElementById('search_txt');\
-                    search_txt.focus();\
-                    search_txt.onchange=function(){\
-                        var search_a = document.getElementById('a-0-0-0');\
-                        if (search_a.text == 'less' && this.value.length > 0) {\
-                            setText('a-0-0-0');\
-                            showdiv('div-0-0-0','a-0-0-0');\
-                            setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
-                        }\
-                    };\
-    	    });";
-        elif total_records == 1:
-            click_more = "document.addEventListener('DOMContentLoaded', function () {\
-                setText('a-0-0-0');\
-                showdiv('div-000','a-0-0-0');\
-                appendContent('div-0-0-0','" + first_record.get_id().strip() + "','" + title + "','" + first_record.get_url().strip() + "','',false);"
-            for i in range(0, custom_cell_row):
-                click_more += "showdiv('td-div-0-0-" + str(i) + "', 'a-0-0-0');showdiv('tr-0-" + str(i) + "', 'a-0-0-0');"
-            click_more +="});";
-        print script_head + click_more + script_end
 
-    if plugins_mode == False:
-        mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
-        print mathjs
-    print loadJSScript()
+        print 'var user_name = "' + username + '";'
+        print 'var fileName = "' + os.getcwd() + '/' + source + '";'
+        print 'var library = "' + os.getcwd() + '/db/library/' + Config.default_library + '";'
+        print 'var column = "' + column_num + '";'
+        print 'var database = "' + database + '";'
+        print 'var key = "";'
+        print 'var starDivCount = ' + str(starDivCount) + ';'
+        print 'var hidenMoreCount = ' + str(custom_cell_row) + ';' 
+        if plugins_mode == False:
+            if len(Config.smart_engin_for_dialog) > 0:
+                print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
+            else:
+                print 'var dialog_engin_count = ' + str(len(utils.getEnginList('d:' + Config.recommend_engin_type_for_dialog))) + ';'
+            if len(Config.command_for_dialog) > 0 and source.find('-library') != -1:
+                print 'var dialog_command_count = ' + str(len(Config.command_for_dialog)) + ';'
+            else:
+                print 'var dialog_command_count = 0;'
+        if source.endswith('/') == False:
+            print 'key = "' + source[source.rfind('/') + 1 :] + '";'
+        extensions = utils.getExtensions()
+        if len(extensions) > 0:
+            print 'var extensions = [];'
+            for e in extensions:
+                print "extensions.push('" + e + "');"
+
+        print script_end
+
+        if plugins_mode or total_records == 1:
+            title = first_record.get_title().strip().replace(' ', '%20')
+            if plugins_mode:
+                click_more = "document.addEventListener('DOMContentLoaded', function () {\
+        	        setText('a-0-0-0');\
+        	        showdiv('div-000','a-0-0-0');\
+        	        appendContent('div-0-0-0','','" + title + "','','',false);\
+                        navTopic(document.getElementById('div-0-0-0-nav-all'),'div-0-0-0','div-0-0-0-nav-',4);\
+                        var search_txt = document.getElementById('search_txt');\
+                        search_txt.focus();\
+                        search_txt.onchange=function(){\
+                            var search_a = document.getElementById('a-0-0-0');\
+                            if (search_a.text == 'less' && this.value.length > 0) {\
+                                setText('a-0-0-0');\
+                                showdiv('div-0-0-0','a-0-0-0');\
+                                setText('searchbox-a');showdiv('searchbox_div', 'searchbox-a');appendContentBox('searchbox_div', 'search_txt');\
+                            }\
+                        };\
+        	    });";
+            elif total_records == 1:
+                click_more = "document.addEventListener('DOMContentLoaded', function () {\
+                    setText('a-0-0-0');\
+                    showdiv('div-000','a-0-0-0');\
+                    appendContent('div-0-0-0','" + first_record.get_id().strip() + "','" + title + "','" + first_record.get_url().strip() + "','',false);"
+                for i in range(0, custom_cell_row):
+                    click_more += "showdiv('td-div-0-0-" + str(i) + "', 'a-0-0-0');showdiv('tr-0-" + str(i) + "', 'a-0-0-0');"
+                click_more +="});";
+            print script_head + click_more + script_end
+
+        if plugins_mode == False:
+            mathjs = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
+            print mathjs
+        print loadJSScript()
+
+        if plugins_mode == False:
+            print '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>'
 
     print loadCSS()
     ref_class = css_head
@@ -526,8 +529,7 @@ def getScript(file_name, first_record, total_records):
         elif css_style_type == 6:
             print css_style_6
 
-    if plugins_mode == False:
-        print '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>'
+
 
     print "</head>"
 
@@ -618,6 +620,7 @@ def build_lines(list_all, file_name):
                 nav_links_content = ''
                 
                 for l in range(0, lines):
+                    ijl = str(i) + '-' + str(j) + '-' + str(l)
 
 		    if html_style:
                         describe_lines[l][i][j] = align_describe('')
@@ -625,12 +628,6 @@ def build_lines(list_all, file_name):
                             engin_list_dive = []
                             engin_list_sub = []
                             engin_list_sub = engin_list
-                            #if len(engin_list) > default_links_row:
-                            #    engin_list_sub = engin_list[default_links_row :]
-                            #else:
-                            #    engin_list_sub = engin_list
-
-                            ijl = str(i) + '-' + str(j) + '-' + str(l)
 
                             if l == 0:
                                 if loadmore_mode and loadmore_count != 0:
@@ -768,7 +765,7 @@ def build_lines(list_all, file_name):
                         continue
                     record_describe = list_all[i][j].get_describe()
                     end = utils.next_pos(record_describe, start, course_name_len, keyword_list, htmlStyle=html_style) 
-                    if output_with_describe:
+                    if output_with_describe and Config.distribution == False:
                         #print list_all[i][j].get_describe()+ '<br>'
                         #print list_all[i][j].get_describe()[start : end] + '<br>'
                         describe_lines[l][i][j] = align_describe(list_all[i][j].get_describe()[start : end], list_all[i][j], containID="td-div-" + ijl)
@@ -782,7 +779,7 @@ def build_lines(list_all, file_name):
                 if html_style: 
                     if Config.extension_mode == False and Config.disable_default_engin == False:
                         id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
-                    if script != '':
+                    if script != '' and Config.distribution == False:
                         id_title_lines[i][j] += utils.genMoreEnginHtml(linkID, script, '...', content_divID);
             elif engin != '' and html_style and engin_list_dict != '' and dir_mode == False:
                 for (k, v) in engin_list_dict.items():
@@ -862,7 +859,7 @@ def get_background_color(content):
         if (index + 1) % 2 != 0 and index != 0:
             if (css_style_type == 0 or css_style_type == 6) and ((contain_keyword(content_back[index].strip()) == False or (contain_desc_keyword(content_back[index].strip())))):
                 #background_colors.append('background-color:#f6f5ec; border-radius: 5px 5px 5px 5px;')
-                if Config.backgrounds[Config.background]:
+                if Config.backgrounds[Config.background] == '':
                     background_colors.append('background-color:#F8F8FF; border-radius: 5px 5px 5px 5px;')
                 else:
                     background_colors.append('')
@@ -1062,8 +1059,8 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
         #print ret
         for i in ret:
             old_i = i.strip()
-            if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
-                i = i[0 : i.find(Config.delete_from_char)].strip()
+            #if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
+            #    i = i[0 : i.find(Config.delete_from_char)].strip()
             lineLenCount += getCutLen(tag, i.strip())
             if old_i == ret[0].strip():
                 lineLenCount += len(tag)
@@ -1160,7 +1157,7 @@ def getShowText(accountTag, text, tag, linkCount):
             text = text[text.find('-') + 1 :]
         if tag == 'slack':
             prefix = '#'
-        if tag == 'github' and text.find('/') != -1:
+        if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
             text = text[text.rfind('/') + 1 : ]
         text = text[0: getCutLen(tag, text)]
         if text.startswith(prefix) == False:
@@ -1236,7 +1233,7 @@ def print_table_head_with_style():
                 print '<body>'
     center_style += 'margin-left:' + Config.content_margin_left + '; margin-top:' + Config.content_margin_top + ';'
     center_style += '"'
-    if loadmore_mode == False:
+    if loadmore_mode == False and Config.distribution == False:
         print_search_box(search_box_hiden)
             
         if library_hiden == False and plugins_mode == False and gened_libary == False:
@@ -1694,17 +1691,19 @@ def print_list(all_lines, file_name = ''):
                 #print '</table>'
   
        
-        if current > 0:
+        if current > 0 and Config.distribution == False:
             message = ''
             if html_style:
                 message += '<div id="total-info"><br/>'
-            if filter_keyword != "":
-                info = filter_keyword
-                if len(filter_keyword) > 20:
-                    info = filter_keyword[0 : 20] + '..'
-                message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records cotain " + info
+                if filter_keyword != "":
+                    info = filter_keyword
+                    if len(filter_keyword) > 20:
+                        info = filter_keyword[0 : 20] + '..'
+                    message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records cotain " + info
+                else:
+                    message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records"
             else:
-                message += '\nTotal <font color="#999966">' + str(total_records) + "</font> records"
+                message += '\nTotal ' + str(total_records) + " records"
             if file_name != '':
                 if html_style:
                     a = '<a target="_blank" href="' + getLibraryRealUrl(file_name) + '">' + file_name[file_name.rfind('/') + 1 :] + '</a>'

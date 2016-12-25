@@ -298,7 +298,7 @@ def handlerQueryStarEngin():
 @app.route('/queryUrl', methods=['POST'])
 def handleQueryUrl():
     result = ''
-    
+    #print request.form
     if request.form.has_key('type'):
         if request.form['type'] == 'dialog':
             #print request.form
@@ -333,6 +333,17 @@ def handleQueryUrl():
                     result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '";style="font-size: 10pt;">' + et + '</a>'+ '&nbsp;'
                 
                     if count % 9 == 0 and count > 0:
+                        result += '<br>'
+                return result
+            elif request.form['searchText'] == 'more' and request.form['resourceType'] == '':
+                #print request.form
+                html = utils.gen_libary2('', '', libraryList=Config.menu_library_list, inLibary=False).replace('#', '')
+                html = html.split('&nbsp;')
+                count = 0
+                for item in html:
+                    count += 1
+                    result += item + '&nbsp;'
+                    if count % 4 == 0 and count > 0:
                         result += '<br>'
                 return result
             else:

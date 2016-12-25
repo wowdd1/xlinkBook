@@ -422,7 +422,7 @@ class GithubSpider(Spider):
     result = ""
     request_times = 0
     token = ''
-    
+
     def __init__(self):
         Spider.__init__(self)
         self.school = "github"
@@ -696,12 +696,12 @@ class GithubSpider(Spider):
                       'Voigt-Lab' : 'https://github.com/VoigtLab',\
                       'ENCODE-DCC' : 'https://github.com/ENCODE-DCC'}
 
-        #self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
-        #self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
-        #self.getProjectByDict(data_gene, 'biology/projects/github/organization/')
+        self.getProjectByDict(data_eecs, 'eecs/projects/github/organization/')
+        self.getProjectByDict(data_neuro, 'neuroscience/projects/github/organization/')
+        self.getProjectByDict(data_gene, 'biology/projects/github/organization/')
         #self.getStartupPorjects('../db/economics/startup-billion-dollar-club2016')
         #self.getStartupPorjects('../db/rank/smartest-companies2016')
-        self.getStartupPorjects('../db/rank/self-driving-company2016')
+        #self.getStartupPorjects('../db/rank/self-driving-company2016')
 
     def getStartupPorjects(self, path):
         data = {}
@@ -777,8 +777,8 @@ class GithubSpider(Spider):
         star = 300
         per_page = 100
 
-        #self.getProjects(star, per_page)
-        self.getKeyProjects(star, per_page)
+        self.getProjects(star, per_page)
+        #self.getKeyProjects(star, per_page)
         #self.getUsers(500, 100)
         #self.getOrganizations()
 

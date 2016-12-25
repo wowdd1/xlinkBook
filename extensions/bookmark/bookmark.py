@@ -37,10 +37,11 @@ class Bookmark(BaseExtension):
         return self.raw_data.lower().find('"parentId":"' + pid + '"') != -1
 
     def loadBookmark(self):
-        f = open('extensions/bookmark/data/chrome_bookmarks.json', 'rU')
-        self.raw_data = f.read()
-        self.jobj_list = json.loads(self.raw_data)
-        f.close()
+        if os.path.exists('extensions/bookmark/data/chrome_bookmarks.json'):
+            f = open('extensions/bookmark/data/chrome_bookmarks.json', 'rU')
+            self.raw_data = f.read()
+            self.jobj_list = json.loads(self.raw_data)
+            f.close()
 
     def updateBookmark(self):
         if os.path.exists(Config.bookmark_file_path):
@@ -311,6 +312,8 @@ class Bookmark(BaseExtension):
         return False
 
     def check(self, form_dict):
+        if os.path.exists('extensions/bookmark/data/chrome_bookmarks.json') == False:
+            return False
         fileName = form_dict['fileName'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')

@@ -24,10 +24,11 @@ class History(BaseExtension):
 
     def loadHistory(self):
         self.updateHistory()
-        f = open('extensions/history/data/chrome_history.json', 'rU')
-        self.raw_data = f.read()
-        self.jobj_list = json.loads(self.raw_data)
-        f.close()
+        if os.path.exists('extensions/history/data/chrome_history.json'):
+            f = open('extensions/history/data/chrome_history.json', 'rU')
+            self.raw_data = f.read()
+            self.jobj_list = json.loads(self.raw_data)
+            f.close()
 
     def updateHistory(self):
         if os.path.exists(Config.history_file_path):
@@ -67,9 +68,12 @@ class History(BaseExtension):
             html += '<br>'
         html += '<div class="ref"><ol>'
         count = 0
-
+        item_dict = {}
         for jobj in self.jobj_list:
             if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
+                if item_dict.has_key(jobj['title'].strip()):
+                    continue
+                item_dict[jobj['title'].strip()] = ''
                 count += 1
                 html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
 
@@ -128,5 +132,5 @@ class History(BaseExtension):
     def check(self, form_dict):
         self.updateHistory()
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        return self.containIgoncase(self.raw_data, rTitle)
+        return os.path.exists('extensions/history/data/chrome_history.json') and self.containIgoncase(self.raw_data, rTitle)
 
