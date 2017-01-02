@@ -542,3 +542,5 @@ engin-551 | fb-pages | https://www.facebook.com/search/str/%s/keywords_pages | p
 engin-552 | airbnb | https://www.airbnb.com/s/ | priority:6 description:business
 engin-553 | angel | https://angel.co/%s | priority:4 description:job
 engin-554 | panopto | https://www.google.com/search?q=panopto+%s | priority:8 description:course star
+engin-555 | panduoduo | http://www.panduoduo.net/s/name/ | priority:4 description:book cloud
+engin-556 | universe | https://www.universe.com/explore?query=%s | priority:4 description:event

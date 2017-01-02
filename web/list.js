@@ -738,6 +738,14 @@ function userlog(text, url, module, library, rid, searchText, resourceType) {
     $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){});
 }
 
+function agentRequest(agentName, rid, path) {
+
+    $.post("/agent", {agentName : agentName, rid : rid, path : path}, function(data) {
+        
+    });
+
+}
+
 function chanageLinkColorByID(id, color, fontSize) {
     console.log('chanageLinkColorByID', id);
     var obj = $(id);

@@ -1,0 +1,100 @@
+custom-ai-company | X.AI | | description:美国	自然语言处理	个性化智能助理	三轮融资 3.4 亿美元
+custom-ai-company | Api.ai | | description:美国	语音识别，自然语言处理， 人工智能	自然语言交互系统	四轮融资 860 万美元
+custom-ai-company | Maluuba | | description:加拿大 自然语言处理	自然语言理解的基础研究，智能设备的自然交互应用	两轮融资 1100 万美元
+custom-ai-company | Synapsify | | description:美国	自然语言处理	用于对内容的加速发现、观点提取和建议。	两轮融资145万美元
+custom-ai-company | KITT.AI | | description:美国	自然语言处理	聊天机器人平台ChatFlow	
+custom-ai-company | 科大讯飞 | | description:中国 语音技术和自然语言处理	输入法，教育、电信等行业解决方案	市值约 368 亿人民币
+custom-ai-company | 思必驰 | | description:中国 智能语音交互和自然对话	车载、智能家居和智能机器人等智能硬件的语音交互服务	C 轮融资 2 亿人民币
+custom-ai-company | 云知声 | | description:中国 语音技术和自然语言处理	车载、医疗和智能家居等物联网的智能语音解决方案	B 轮融资 5 千万美元
+custom-ai-company | 出门问问 | | description:中国 语音技术和自然语言处理	智能手表和车载智能语音应用	累计融资 7500 万美元
+custom-ai-company | Clarifai | | description:美国	计算机视觉	图像及视频识别及图像检索 API	两轮融资 4125 万美元
+custom-ai-company | Affectiva | | description:美国	计算机视觉和深度学习	实时面部表情分析和情绪识别解决方案	四轮融资 3372 万美元
+custom-ai-company | ViSenze | | description:新加坡 计算机视觉	电子商务、移动商务、 在线广告等图像识别解决方案	两轮融资 1400 万美元
+custom-ai-company | Ditto Labs | | description:英国 计算机视觉	数字媒体、广告营销、社交图片识别分析	四轮融资 968 万美元
+custom-ai-company | Orbital Insight | | description:美国	计算机视觉、深度学习和数据科学	分析海量卫星图像，用于经济趋势分析和公益研究	三轮融资 2870 万美元
+custom-ai-company | Planet Labs | | description:美国	计算机视觉和数据科学	将卫星图像识别用于农业、城市规划和灾害响应等	融资 1830万美元
+custom-ai-company | Descartes Labs | | description:美国	计算机视觉和深度学习	通过DLFP平台为农业提供数据分析和预测的解决方案	三轮融资 828 万美元
+custom-ai-company | 商汤科技 | | description:中国 计算机视觉和深度学习	人脸识别、危险品识别、行为检测、车辆检测等的安防监控系统	B 轮融资数千万美元
+custom-ai-company | 旷视科技 | | description:中国 计算机视觉和深度学习	Face++人脸识别云服务平台、Image++图像识别平台、VisionHacker移动游戏工作室	估值约 10 亿美元
+custom-ai-company | 依图科技 | | description:中国 计算机视觉和深度学习	基于图像理解的信息获取和人机交互服务	B 轮融资千万美元
+custom-ai-company | 图普科技 | | description:中国 计算机视觉和深度学习	图像识别、智能审核、图片增值等云服务	A 轮融资百万美元
+custom-ai-company | Wave Computing | | description:美国	深度学习芯片架构	DPU (Dataflow Processing Unit)	两轮融资 2450 万美元
+custom-ai-company | Deep Vision | | description:美国 人工智能视觉算法	将人工智能算法和低功耗芯片技术相结合，开发了技术指标先进的低功耗人工智能芯片，提高智能设备的视觉识别能力。	
+custom-ai-company | ALCES | | description:美国 人工智能视觉算法	在手机摄像头的微小尺寸上实现高清超动态的3D 图像感知，大大提高智能机器对环境的感知水平。	共获数千万美元融资
+custom-ai-company | Ceva | | description:美国	人工智能芯片技术	用于机器学习的第二代神经网络软件框架 CDNN2	B 轮 420 万美元
+custom-ai-company | TeraDeep | | description:美国	基于传统的ARM和其它移动处理器平台上的深度学习算法	可以嵌入移动设备的深度学习模块	
+custom-ai-company | Kneron | | description:美国 神经网络处理器 NPU 及解决方案	Kneron 可以提供终端的 NPU，并组建软件、硬件、云服务和端协同的整套 NPU 解决方案。	
+custom-ai-company | 寒武纪 | | description:中国 深度学习	中国首款神经网络处理器	千万天使投资
+custom-ai-company | 深鉴科技 | | description:中国 神经网络压缩、编译、神经网络处理器DPU设计、 FPGA开发、系统集成完整开发能力	深度学习DPU平台	
+custom-ai-company | ABB Robotics | | description:瑞士 机器人及自动化技术	工业机器人、智能设备	
+custom-ai-company | Fanuc | | description:日本 机器人及自动化技术	工业机器人	
+custom-ai-company | KUKA Robotics | | description:德国 机器人及自动化技术	工业机器人	
+custom-ai-company | Rethink Robotics | | description:美国	机器人、人机交互	智能机器人	七轮融资 1350 万美元
+custom-ai-company | Universal Robots | | description:丹麦 机器人及自动化技术	工业机器人	
+custom-ai-company | 3D Robotics | | description:美国	计算机视觉、机器人技术	无人机，软件服务	五轮融资 1.2 美元 
+custom-ai-company | Cyberdyne | | description:日本 可穿戴设备	医疗助理机器人	B 轮融资 1200 万美元
+custom-ai-company | iRobot | | description:美国	计算机视觉、机器人技术	电子产品，家用机器人	三轮融资 3000 万美元
+custom-ai-company | ReWalk Robotics | | description:德国 计算机视觉、机器人技术	代步机器人，残障专用智能设备	两轮融资 1800 万美元
+custom-ai-company | Dyson | | description:英国 智能机器，自动视觉定位及室内地图构建	清洁机器人	
+custom-ai-company | 新松机器人 | | description:中国 机器人及自动化技术	工业机器人和行业解决方案	约 400 亿人民币市值
+custom-ai-company | 埃夫特机器人 | | description:中国 机器人	工业机器人、智能装备和行业解决方案	
+custom-ai-company | 大疆 | | description:中国	计算机视觉、无人机控制、环境及障碍感知、视觉跟随、自动寻路	无人机航拍和图像传输	B 轮融资 7500 万美元
+custom-ai-company | CureMetrix | | description:美国	图像分析	基于影像分析的乳腺癌和肺癌检测	种子轮
+custom-ai-company | Enlitic | | description:美国	深度学习、大数据、图像检测	癌症检测系统	三轮融资 1500 万美元
+custom-ai-company | VoxelCloud | | description:美国	深度学习	医疗影像分析云服务	
+custom-ai-company | Insilico Medicine | | description:美国	深度学习和大数据	癌症诊疗	种子轮 80 万美元
+custom-ai-company | Oncora Medical | | description:美国	大数据和机器学习技术	通过数据分析为放射肿瘤学家提供临床决策支持，用于个性化医疗。	两轮融资 132 万美元
+custom-ai-company | Atomwise | | description:美国	深度学习	药物发现	种子轮 630 万美元
+custom-ai-company | TwoXAR | | description:美国	深度学习	通过药物研发平台DUMA™来评估大型公共和私有数据集，以迅速识别药物，并对药物和疾病的匹配度按照概率进行排序。	种子轮 340 万美元
+custom-ai-company | Berg Health | | description:美国	深度学习	Interrogative Biology®平台结合病人生物学和人工智能分析来进行药物发现、开发和诊断等。	
+custom-ai-company | CloudMedX | | description:美国	机器学习、自然语言处理	拥有MedxExchange 、MedxInsights custom-ai-company | 和MedxCare三款服务产品的医疗人工智能平台，提供数据、医疗洞见和健康管理服务。	融资 660 万美元
+custom-ai-company | Deep Genomics | | description:加拿大 深度学习、基因生物学、精准医疗		种子轮 370 万美元
+custom-ai-company | 碳云智能 | | description:中国 大数据、人工智能	通过数据挖掘和机器分析提供个人性健康指数分析和预测。	估值约 10 亿美元
+custom-ai-company | Context Relevant | | description:美国	数据挖掘、预测分析	本地分析软件和云服务	五轮融资 4430 万美元
+custom-ai-company | Kensho Technologies | | description:美国	机器学习、自然语言处理、数据挖掘	金融分析辅助决策系统	两轮 5780 万美元
+custom-ai-company | ZestFinance | | description:美国	数据挖掘、机器学习	信用服务	四轮共 1.12 亿美元
+custom-ai-company | Aire | | description:英国 信用评级	金融产品的信用评级	四轮共 700 万美元
+custom-ai-company | 高盛 | | description:美国	数据挖掘、机器学习	AppBank、金融业务自动化	市值约 678 亿美元
+custom-ai-company | 蚂蚁金服 | | description:中国 人工智能、数据挖掘	智能助理、信用评级和风险管理等应用	估值约 600 亿美元
+custom-ai-company | Tesla | | description:美国	自动驾驶	电动汽车	获得 20 亿美元融资
+custom-ai-company | Drive.ai | | description:美国	深度学习	自动驾驶汽车	1200 万美元融资
+custom-ai-company | Mobileye | | description:以色列 计算机视觉、智能驾驶	汽车工业的计算机视觉算法和驾驶辅助系统的芯片技术的研究	5.15 亿美元融资
+custom-ai-company | nuTonomy | | description:新加坡/美国	3D自动驾驶技术	城市自动驾驶的算法和软件	
+custom-ai-company | Innoviz Technologies | | description:以色列 智能3D传感、传感器融合和精准地图和定位等核心自动驾驶技术	物美价廉的高清晰度固态激光雷达	A 轮 900 万美元融资
+custom-ai-company | Peloton | | description:美国	雷达和专用短程通信安全系统	自动驾驶卡车	四轮融资 1840 万美元
+custom-ai-company | SmartDrive | | description:美国	计算机视觉、数据挖掘	交通安全和表现的智能解决方案	六轮融资 1.8亿 美元
+custom-ai-company | Zoox | | description:美国	全自动驾驶	全新的自动驾驶汽车	
+custom-ai-company | 图森互联 | | description:中国 计算机视觉和深度学习	自动驾驶、图像识别SaaS服务	A 轮融资 5000 万人民币
+custom-ai-company | Minieye | | description:中国 计算机视觉、智能驾驶	辅助驾驶系统	
+custom-ai-company | Uber | | description:美国	自动驾驶、机器学习、数据挖掘	自动驾驶汽车、智能交通和智能出行应用	估值 660 亿美元
+custom-ai-company | Airbnb | | description:美国	机器学习	开源 AeroSolve机器学习框架、智能助手、智能推荐、定价	9 轮融资 20 亿美元
+custom-ai-company | Salesforce | | description:美国	云计算、深度学习、数据处理	CRM 解决方案	市值约 506 亿美元
+custom-ai-company | Slack | | description:美国	机器学习	企业通讯应用，bots平台	估值约 38 亿美元
+custom-ai-company | Sentient Technologies | | description:美国	人工智能、大规模分布式计算	解决复杂商业问题的综合智能系统	三轮融资 1.4 亿美元
+custom-ai-company | Dataminr | | description:美国	数据挖掘	基于社交网络的数据分析服务	五轮融资 1.8 亿美元
+custom-ai-company | ROSS Intelligence | | description:美国	认知计算、深度学习、自然语言处理	法务研究智能辅助工具	
+custom-ai-company | 滴滴 | | description:中国 自动驾驶、机器学习、数据挖掘	自动驾驶汽车、智能交通和智能出行应用	估值约 340 亿美元
+custom-ai-company | 今日头条 | | description:中国 深度学习、自然语言处理、图像识别	媒体产品的应用	估值约 120 亿美元
+custom-ai-company | 地平线机器人 | | description:中国 基于云端的深度神经网络算法、图像、语音、自然语言理解和运动控制、技术集成	智能机器解决方案	A+ 轮融资数千万美元
+custom-ai-company | DeepMind | | description:英国 人工智能基础研究	AlphaGo、医疗健康、谷歌内部产品应用。	以4亿英镑被谷歌收购
+custom-ai-company | Vicarious | | description:美国	人工智能基础研究	新的计算机视觉系统，机器人视觉	五轮融资 7200 万美元
+custom-ai-company | Bonsai | | description:美国	深度学习	Inkling 脚本语言和集成开发环境Mastermind	新获 600 万美元融资
+custom-ai-company | Preferred Networks | | description:日本 深度学习	深度学习操作系统Chainer，机器学习在物联网的应用	三轮融资 1730 万美元
+custom-ai-company | Skymind | | description:美国	深度学习	深度学习企业应用包SKIL、开源框架Deeplearning4j	种子轮融资 300 万美元
+custom-ai-company | H2O.ai | | description:美国	机器学习	开源机器学习平台和商业化支持	四轮融资 3360 万美元
+custom-ai-company | Uptake | | description:美国	数据挖掘、机器学习	为铁路、建筑等大行业提供数据预测分析SaaS服务	估值 11 亿美元
+custom-ai-company | Indico | | description:美国	机器学习	为数据科学家提供图像、文本的识别和分析的工具	三轮融资 318 万美元
+custom-ai-company | 第四范式 | | description:中国 机器学习	金融应用和「先知」平台	A 轮融资数百万美元
+custom-ai-company | 谷歌 | | description:美国	人工智能综合研究	TensorFlow等开源框架，Google Photos、Now、Inbox和搜索等多项产品和服务、硬件	市值 5437 亿美元
+custom-ai-company | Facebook | | description:美国	人工智能综合研究	多个开源框架和硬件平台，Messenger、社交网络和定向广告等多项产品和服务	市值 3682 亿美元
+custom-ai-company | 亚马逊 | | description:美国	人工智能综合研究	云服务、Echo等智能家居、机器人、电商产品应用	市值 3969 亿美元
+custom-ai-company | 微软 | | description:美国	人工智能综合研究	CNTK等开源框架，Cortana、小冰等多项产业和服务，硬件	市值 4488 亿美元
+custom-ai-company | IBM | | description:美国	人工智能综合研究	Watson、行业认知计算解决方案、量子计算机等	市值 1518 亿美元
+custom-ai-company | 苹果 | | description:美国	人工智能综合研究	基于智能手机等硬件的多项产品和硬件、智能助手、智能家居、医疗等	市值 6091 亿美元
+custom-ai-company | 百度 | | description:中国 人工智能综合研究	开源框架PaddlePaddle、百度大脑、自动驾驶、互联网应用	市值 636 亿美元
+custom-ai-company | 阿里巴巴 | | description:中国 人工智能综合研究	云服务、人工智能平台 DT PAI、电商产品应用	市值 2635 亿美元
+custom-ai-company | 腾讯 | | description:中国 人工智能综合研究	互联网应用	市值 2645 亿美元
+custom-ai-company | 搜狗 | | description:中国 人工智能综合研究	搜索引擎、知识图谱、输入法、语音交互产品等	
+custom-ai-company | NVIDIA | | description:美国	人工智能硬件	GPU、深度学习超级计算机DGX-1、自动驾驶超级计算机Xavier	市值 366 亿美元
+custom-ai-company | 英特尔 | | description:美国	人工智能硬件	CPU、Xeon Phi、Nervana	市值 1782 亿美元
+custom-ai-company | 高通 | | description:美国	人工智能硬件	移动智能设备芯片	市值约 970 亿美元custom-ai-company | 

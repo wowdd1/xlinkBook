@@ -1,0 +1,24 @@
+custom-MBA | MBA | | 
+custom-entrepreneurship-mit | entrepreneurship mit | http://localhost:5000/?db=business/&key=entrepreneurship-mit-ocw2016&column=3 |
+custom-startup-books | startup books | http://localhost:5000/?db=business-finance/&key=startup-books2016&column=2&width=54 | alias:jhdl-book
+MGMT-E2740 | Investment Theory and Applications | http://www.extension.harvard.edu/academics/courses/principles-finance/13407 | path:db/economics/finance-harvard-online2016
+163-ocw-156 | 法律学 | http://v.163.com/special/opencourse/law.html | alias:法律 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-6 | 小规模生意如何起步 | http://open.163.com/movie/2014/9/5/C/MA8CUF9DQ_MA9U6RQ5C.html | weixin:沃顿商业 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-196 | 如何创业 | http://v.163.com/special/opencourse/startup.html | zhihu:donglaoshi, freesfund alias:billion dollar club, startup, 创业 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-114 | 投资学入门 | http://v.163.com/special/opencourse/investments.html | investor:Dave McClure, Joe Lonsdale, Steven Chen, Joshua Schachter, Reid Hoffman, Marc Pincus, Kevin Hartz, Peter Thiel, Mike Maples Jr., Keith Rabois, Chris Sacca, Marc Andreessen, Ben Horowitz, Mitch Kapor, 施密特, Marc Benioff, Kevin Rose, Naval Ravikant, Jeff Clavier, Sean Parker, Dave Morin, Manu Kumar, Paul Buchheit, Garry Tan, Ben Ling, Paul Graham, Ron Conway, David Lee, Charles Hudson, Josh Elman, Seth Goldstein, Tina Sharkey, Chamath Palihapitiya, Max Levchin, Rob Hayes, Mike Arrington, Evan Williams, Biz Stone, Jack Dorsey, Jim Breyer, Marissa Mayer, Shervin Pishevar, David Sacks, Tim Draper, Aydin Senkut, James Hong, Georges Harik, Jeremy Stoppelman, Michael Birch, Jawed Karim, Adam D'Angelo alias:投资 website:pedaily.cn description:西南大学《投资学入门》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-133 | 金融理论 | http://v.163.com/special/opencourse/financialtheory.html | description:耶鲁大学《金融理论》 weixin:图解金融 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-134 | 沃顿的学问 | http://v.163.com/special/opencourse/knowledgewharton.html | description:宾州大学沃顿商学院《沃顿的学问》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-136 | 博弈论 | http://v.163.com/special/gametheory/ | description:耶鲁大学公开课《博弈论》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-125 | 华尔街训练营 | http://v.163.com/special/opencourse/wall.html | description:宾夕法尼亚州立大学《华尔街训练营》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-121 | 房地产金融学 | http://v.163.com/special/opencourse/realestatefinance.html | description:哥伦比亚大学《房地产金融学》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-123 | 美联储与金融危机 | http://v.163.com/special/opencourse/chairmanbernankes.html | description:伯南克公开课《美联储与金融危机》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-126 | 银行业危机——源起与后果 | http://v.163.com/special/opencourse/banking.html | description:《银行业危机——源起与后果》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-127 | 金融危机 | http://v.163.com/special/opencourse/carnegie.html | description:卡内基伦理国际事务委员会《金融危机》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-209 | Intel投资部副总裁谈投资 | http://v.163.com/special/opencourse/marketstrategy.html | description:斯坦福《Intel投资部副总裁谈投资》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-241 | 走出投资困境 | http://open.163.com/special/cuvocw/zouchutouzikunjing.html | description:西南财经大学《走出投资困境》 path:db/videos/163cnocw/163cnocw-neteasy2016
+163-ocw-248 | 全球视野下的投资 | http://open.163.com/special/cuvocw/quanqiutouzi.html | description:上海财经大学《全球视野下的投资》 path:db/videos/163cnocw/163cnocw-neteasy2016
+163-ocw-302 | 金融学与中国金融发展系列讲座 | http://v.163.com/special/cuvocw/jinrongxueyuzhongguo.html | description:中国人民大学《金融学与中国金融发展系列讲座》 path:db/videos/163cnocw/163cnocw-neteasy2016
+163-ocw-258 | 中国的国际金融专题 | http://v.163.com/special/cuvocw/zhongguodeguojijinrong.html | description:对外经贸大学《中国的国际金融专题》 path:db/videos/163cnocw/163cnocw-neteasy2016
+163-ocw-220 | 证券市场与大众理财 | http://v.163.com/special/cuvocw/zhengquanlicai.html?1436325331765 | description:合肥工业大学《证券市场与大众理财》 path:db/videos/163cnocw/163cnocw-neteasy2016
+163-ocw-135 | 金融市场 | http://v.163.com/special/financialmarkets/ | description:耶鲁大学《金融市场》 path:db/videos/163ocw/163ocw-neteasy2016
+163-ocw-212 | 供应链 | http://v.163.com/special/opencourse/special.html | description:麻省理工《供应链管理专题》 path:db/videos/163ocw/163ocw-neteasy2016

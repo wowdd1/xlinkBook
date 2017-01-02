@@ -385,9 +385,9 @@ def dialogCommand(fileName, text, resourceType, originFilename, rID):
         elif command == 'exclusive':
             script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, false);"
             result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
-        elif command == 'batch':
+        elif command == 'trace':
             script = "batchOpen('" + text + "', '" + resourceType + "');"
-            result += utils.enhancedLink('', '#batch', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+            result += utils.enhancedLink('', '#trace', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
         elif command == 'kgraph':
             script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, true);"
             result += utils.enhancedLink('', '#kgraph', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
@@ -414,6 +414,15 @@ def handleUserLog():
     print '     mac: ' + request.form['mac']
     print '     ip: ' + request.form['ip']
     print '     from: ' + request.form['from']
+    return ''
+
+@app.route('/agent', methods=['POST'])
+def handleAgent():
+    print 'handleAgent'
+    agentName = request.form['agentName']
+    rid = request.form['rid']
+    path = request.form['path']
+    print agentName + ' ' + rid + ' ' + path
     return ''
 
 @app.route('/extensions', methods=['POST'])

@@ -1,0 +1,21 @@
+stanford-ai-12-1 | Basics | | parentid:stanford-ai-12
+stanford-ai-12-1.1 | Introduction | | parentid:stanford-ai-12-1
+stanford-ai-12-1.2 | Recursive State Estimation | | parentid:stanford-ai-12-1
+stanford-ai-12-1.3 | Gaussian Filters | | parentid:stanford-ai-12-1
+stanford-ai-12-1.4 | Nonparametric Filters | | parentid:stanford-ai-12-1
+stanford-ai-12-1.5 | Robot Motion | | parentid:stanford-ai-12-1
+stanford-ai-12-1.6 | Robot Perception | | parentid:stanford-ai-12-1
+stanford-ai-12-2 | Localization | | parentid:stanford-ai-12
+stanford-ai-12-2.1 | Mobile Robot Localization: Markov and Gaussian | | parentid:stanford-ai-12-2
+stanford-ai-12-2.2 | Mobile Robot Localization: Grid And Monte Carlo | | parentid:stanford-ai-12-2
+stanford-ai-12-3 | Mapping | | parentid:stanford-ai-12
+stanford-ai-12-3.1 | Occupancy Grid Mapping | | parentid:stanford-ai-12-3
+stanford-ai-12-3.2 | Simultaneous Localization and Mapping | | parentid:stanford-ai-12-3
+stanford-ai-12-3.3 | The GraphSLAM Algorithm | | parentid:stanford-ai-12-3
+stanford-ai-12-3.4 | The Sparse Extended Information Filter | | parentid:stanford-ai-12-3
+stanford-ai-12-3.5 | The FastSLAM Algorithm | | parentid:stanford-ai-12-3
+stanford-ai-12-4 | Planning and Control | | parentid:stanford-ai-12
+stanford-ai-12-4.1 | Markov Decision Processes | | parentid:stanford-ai-12-4
+stanford-ai-12-4.2 | Partially Observable Markov Decision Processes | | parentid:stanford-ai-12-4
+stanford-ai-12-4.3 | Approximate POMDP Techniques | | parentid:stanford-ai-12-4
+stanford-ai-12-4.4 | Exploration | | parentid:stanford-ai-12-4custom-namixuewei-1 | Introduction | | parentid:custom-namixuewei

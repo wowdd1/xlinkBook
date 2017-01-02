@@ -989,8 +989,10 @@ def smartLink(content, record, containID=''):
         elif ret.find(';') != -1:
             #ret = ret.replace(';', ', ')
             split_char = ';'
-        
-        if isDirectLinkTag(content):
+
+        if tag == 'agent':
+            return genSmartAgentLinkHtml(tag, ret, record, split_char, content)
+        elif isDirectLinkTag(content):
             return genSmartLinkHtml(tag, ret, record, split_char, '', content, dialogMode=False, containID=containID)
         else:
             digMode = True
@@ -1010,6 +1012,22 @@ def smartLink(content, record, containID=''):
     else:
         last_content += content.strip()
         return content
+
+def genSmartAgentLinkHtml(tag, ret, record, split_char, content):
+    agentList = []
+    if ret.find(split_char) != -1:
+        agentList = ret.split(split_char)
+    else:
+        agentList = [ret]
+    html = ''
+    for agent in agentList:
+        script = "agentRequest('" + agent + "', '" + record.get_id().strip() + "', '" + source + "');"
+        html += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + agent + '</a>'
+        if agent != agentList[len(agentList) -1]:
+            html += split_char + '&nbsp;'
+
+    return content[0 : content.find(':') + 1] + html
+
 
 def genAccountHtml(tagStr, record, content, containID=''):
     url = ''
