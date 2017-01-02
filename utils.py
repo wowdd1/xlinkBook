@@ -839,8 +839,6 @@ class Utils:
 
     def toQueryUrl(self, url, text):
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
-        if url == '':
-            return self.bestMatchEnginUrl(text)
         if url.find('%s') != -1:
             url = url.replace('%s', query_text)
         else:
