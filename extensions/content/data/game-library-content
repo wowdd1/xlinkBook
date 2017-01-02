@@ -1,0 +1,117 @@
+custom-game-engin-1 | Foundations | | parentid:custom-game-engin
+custom-game-engin-1.1 | Introduction | | parentid:custom-game-engin-1
+custom-game-engin-1.1.1 | Structure of a Typical Game Team | | parentid:custom-game-engin-1.1
+custom-game-engin-1.1.2 | What Is a Game? | | parentid:custom-game-engin-1.1
+custom-game-engin-1.1.3 | What Is a Game Engine? | | parentid:custom-game-engin-1.1
+custom-game-engin-1.1.4 | Engine Differences Across Genres | | parentid:custom-game-engin-1.1
+custom-game-engin-1.1.5 | Game Engine Survey | | parentid:custom-game-engin-1.1
+custom-game-engin-1.1.6 | Runtime Engine Architecture | | parentid:custom-game-engin-1.1
+custom-game-engin-1.1.7 | Tools and the Asset Pipeline | | parentid:custom-game-engin-1.1
+custom-game-engin-1.2 | Tools of the Trade | | parentid:custom-game-engin-1
+custom-game-engin-1.2.1 | Version Control | | parentid:custom-game-engin-1.2
+custom-game-engin-1.2.2 | Microsoft Visual Studio | | parentid:custom-game-engin-1.2
+custom-game-engin-1.2.3 | Profiling Tools | | parentid:custom-game-engin-1.2
+custom-game-engin-1.2.4 | Memory Leak and Corruption Detection | | parentid:custom-game-engin-1.2
+custom-game-engin-1.2.5 | Other Tools | | parentid:custom-game-engin-1.2
+custom-game-engin-1.3 | Fundamentals of Software Engineering for Games | | parentid:custom-game-engin-1
+custom-game-engin-1.3.1 | C++ Review and Best Practices | | parentid:custom-game-engin-1.3
+custom-game-engin-1.3.2 | Data, Code and Memory | | parentid:custom-game-engin-1.3
+custom-game-engin-1.3.3 | Catching and Handling Errors | | parentid:custom-game-engin-1.3
+custom-game-engin-1.3.4 | Pipelines, Caches and Optimization | | parentid:custom-game-engin-1.3
+custom-game-engin-1.4 | 3D Math for Games | | parentid:custom-game-engin-1
+custom-game-engin-1.4.1 | Solving 3D Problems in 2D | | parentid:custom-game-engin-1.4
+custom-game-engin-1.4.2 | Points and Vectors | | parentid:custom-game-engin-1.4
+custom-game-engin-1.4.3 | Matrices | | parentid:custom-game-engin-1.4
+custom-game-engin-1.4.4 | Quaternions | | parentid:custom-game-engin-1.4
+custom-game-engin-1.4.5 | Comparison of Rotational Representations | | parentid:custom-game-engin-1.4
+custom-game-engin-1.4.6 | Other Useful Mathematical Objects | | parentid:custom-game-engin-1.4
+custom-game-engin-1.4.7 | Hardware-Accelerated SIMD Math | | parentid:custom-game-engin-1.4
+custom-game-engin-1.4.8 | Random Number Generation | | parentid:custom-game-engin-1.4
+custom-game-engin-2 | Low-Level Engine Systems | | parentid:custom-game-engin
+custom-game-engin-2.1 | Engine Support Systems | | parentid:custom-game-engin-2
+custom-game-engin-2.1.1 | Subsystem Start-Up and Shut-Down | | parentid:custom-game-engin-2.1
+custom-game-engin-2.1.2 | Memory Management | | parentid:custom-game-engin-2.1
+custom-game-engin-2.1.3 | Containers | | parentid:custom-game-engin-2.1
+custom-game-engin-2.1.4 | Strings | | parentid:custom-game-engin-2.1
+custom-game-engin-2.1.5 | Engine Configuration | | parentid:custom-game-engin-2.1
+custom-game-engin-2.2 | Resources and the File System | | parentid:custom-game-engin-2
+custom-game-engin-2.2.1 | File System | | parentid:custom-game-engin-2.2
+custom-game-engin-2.2.2 | The Resource Manager | | parentid:custom-game-engin-2.2
+custom-game-engin-2.3 | The Game Loop and Real-Time Simulation | | parentid:custom-game-engin-2
+custom-game-engin-2.3.1 | The Rendering Loop | | parentid:custom-game-engin-2.3
+custom-game-engin-2.3.2 | The Game Loop | | parentid:custom-game-engin-2.3
+custom-game-engin-2.3.3 | Game Loop Architectural Styles | | parentid:custom-game-engin-2.3
+custom-game-engin-2.3.4 | Abstract Timelines | | parentid:custom-game-engin-2.3
+custom-game-engin-2.3.5 | Measuring and Dealing with Time | | parentid:custom-game-engin-2.3
+custom-game-engin-2.3.6 | Multiprocessor Game Loops | | parentid:custom-game-engin-2.3
+custom-game-engin-2.3.7 | Networked Multiplayer Game Loops | | parentid:custom-game-engin-2.3
+custom-game-engin-2.4 | Human Interface Devices (HID) | | parentid:custom-game-engin-2
+custom-game-engin-2.4.1 | Types of Human Interface Devices | | parentid:custom-game-engin-2.4
+custom-game-engin-2.4.2 | Interfacing with a HID | | parentid:custom-game-engin-2.4
+custom-game-engin-2.4.3 | Types of Inputs | | parentid:custom-game-engin-2.4
+custom-game-engin-2.4.4 | Types of Outputs | | parentid:custom-game-engin-2.4
+custom-game-engin-2.4.5 | Game Engine HID Systems | | parentid:custom-game-engin-2.4
+custom-game-engin-2.4.6 | Human Interface Devices in Practice | | parentid:custom-game-engin-2.4
+custom-game-engin-2.5 | Tools for Debugging and Development | | parentid:custom-game-engin-2
+custom-game-engin-2.5.1 | Logging and Tracing | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.2 | Debug Drawing Facilities | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.3 | In-Game Menus | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.4 | In-Game Console | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.5 | Debug Cameras and Pausing the Game | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.6 | Cheats | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.7 | Screenshots and Movie Capture | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.8 | In-Game Profiling | | parentid:custom-game-engin-2.5
+custom-game-engin-2.5.9 | In-Game Memory Stats and Leak Detection | | parentid:custom-game-engin-2.5
+custom-game-engin-3 | Graphics, Motion and Sound | | parentid:custom-game-engin
+custom-game-engin-3.1 | The Rendering Engine | | parentid:custom-game-engin-3
+custom-game-engin-3.1.1 | Foundations of Depth-Buffered Triangle Rasterization | | parentid:custom-game-engin-3.1
+custom-game-engin-3.1.2 | The Rendering Pipeline | | parentid:custom-game-engin-3.1
+custom-game-engin-3.1.3 | Advanced Lighting and Global Illumination | | parentid:custom-game-engin-3.1
+custom-game-engin-3.1.4 | Visual Effects and Overlays | | parentid:custom-game-engin-3.1
+custom-game-engin-3.1.5 | Further Reading | | parentid:custom-game-engin-3.1
+custom-game-engin-3.2 | Animation Systems | | parentid:custom-game-engin-3
+custom-game-engin-3.2.1 | Types of Character Animation | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.2 | Skeletons | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.3 | Poses | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.4 | Clips | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.5 | Skinning and Matrix Palette Generation | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.6 | Animation Blending | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.7 | Post-Processing | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.8 | Compression Techniques | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.9 | Animation System Architecture | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.10 | The Animation Pipeline | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.11 | Action State Machines | | parentid:custom-game-engin-3.2
+custom-game-engin-3.2.12 | Animation Controllers | | parentid:custom-game-engin-3.2
+custom-game-engin-3.3 | Collision and Rigid Body Dynamics | | parentid:custom-game-engin-3
+custom-game-engin-3.3.1 | Do You Want Physics in Your Game? | | parentid:custom-game-engin-3.3
+custom-game-engin-3.3.2 | Collision/Physics Middleware | | parentid:custom-game-engin-3.3
+custom-game-engin-3.3.3 | The Collision Detection System | | parentid:custom-game-engin-3.3
+custom-game-engin-3.3.4 | Rigid Body Dynamics | | parentid:custom-game-engin-3.3
+custom-game-engin-3.3.5 | Integrating a Physics Engine into Your Game | | parentid:custom-game-engin-3.3
+custom-game-engin-3.3.6 | Advanced Physics Features | | parentid:custom-game-engin-3.3
+custom-game-engin-3.4 | Audio | | parentid:custom-game-engin-3
+custom-game-engin-3.4.1 | The Physics of Sound | | parentid:custom-game-engin-3.4
+custom-game-engin-3.4.2 | The Mathematics of Sound | | parentid:custom-game-engin-3.4
+custom-game-engin-3.4.3 | The Technology of Sound | | parentid:custom-game-engin-3.4
+custom-game-engin-3.4.4 | Rendering Audio in 3D | | parentid:custom-game-engin-3.4
+custom-game-engin-3.4.5 | Audio Engine Architecture | | parentid:custom-game-engin-3.4
+custom-game-engin-3.4.6 | Game-Specific Audio Features | | parentid:custom-game-engin-3.4
+custom-game-engin-4 | Gameplay | | parentid:custom-game-engin
+custom-game-engin-4.1 | Introduction to Gameplay Systems | | parentid:custom-game-engin-4
+custom-game-engin-4.1.1 | Anatomy of a Game World | | parentid:custom-game-engin-4.1
+custom-game-engin-4.1.2 | Implementing Dynamic Elements: Game Objects | | parentid:custom-game-engin-4.1
+custom-game-engin-4.1.3 | Data-Driven Game Engines | | parentid:custom-game-engin-4.1
+custom-game-engin-4.1.4 | The Game World Editor | | parentid:custom-game-engin-4.1
+custom-game-engin-4.2 | Runtime Gameplay Foundation Systems | | parentid:custom-game-engin-4
+custom-game-engin-4.2.1 | Components of the Gameplay Foundation System | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.2 | Runtime Object Model Architectures | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.3 | World Chunk Data Formats | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.4 | Loading and Streaming Game Worlds | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.5 | Object References and World Queries | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.6 | Updating Game Objects in Real Time | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.7 | Events and Message-Passing | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.8 | Scripting | | parentid:custom-game-engin-4.2
+custom-game-engin-4.2.9 | High-Level Game Flow | | parentid:custom-game-engin-4.2
+custom-game-engin-4.3 | You Mean There’s More? | | parentid:custom-game-engin-4
+custom-game-engin-4.3.1 | Some Engine Systems We Didn’t Cover | | parentid:custom-game-engin-4.3
+custom-game-engin-4.3.2 | Gameplay Systems | | parentid:custom-game-engin-4.3

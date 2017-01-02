@@ -3,7 +3,9 @@
 
 class Config():
     
+    #default_db = 'db'
     default_subject = 'eecs'
+
 
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
@@ -17,6 +19,12 @@ class Config():
     smart_engin_for_tag_batch_open = False
     smart_engin_for_command_batch_open = ['google', 'baidu']
     
+    recommend_engin = True
+    recommend_engin_num = 23
+    recommend_engin_num_dialog = 23
+    recommend_engin_type = 'star' #ref db/metadata/engin_type
+    recommend_engin_by_tag = False
+
     #smart_engin_for_tag = {}
 
     smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo', 'qoofan.com', 'glucky'],\
@@ -38,7 +46,7 @@ class Config():
 
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
-    command_for_dialog = ['add2library', 'batch', 'kgraph', 'exclusive']
+    command_for_dialog = ['add2library', 'trace', 'kgraph', 'exclusive']
 
     recommend_engin_type_for_dialog = '' #'star' #ref db/metadata/engin_type
 
@@ -47,12 +55,6 @@ class Config():
     replace_with_smart_link = False
 
     page_item_count = 100#63
-
-    recommend_engin = True
-    recommend_engin_num = 23
-    recommend_engin_num_dialog = 23
-    recommend_engin_type = 'star' #ref db/metadata/engin_type
-    recommend_engin_by_tag = False
 
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
@@ -148,17 +150,6 @@ class Config():
     background_after_click = '#E9967A' ##CCEEFF
     fontsize_after_click = ''
 
-    background = 0
-    backgrounds = ['',\
-                    'http://img.blog.csdn.net/20161213000422101',\
-                    'https://datacdn.soyo.or.kr/wcont/uploads/2016/02/02164057/alphago_01.jpg',\
-                    'http://img.blog.csdn.net/20150506120021512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd293ZGQx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center',\
-                    'http://images.njcw.com/upload/2011-5/201105071635561829723_w.jpg',\
-                    'http://www.caneis.com.tw/link/info/Middle_East_info/Egypt/images/Cairo-007-1.jpg',\
-                    'https://cdn-images-1.medium.com/max/2000/1*BTGKRLq55y8Hld9pyvarXg.png',\
-                    'http://st.depositphotos.com/1007919/3724/i/950/depositphotos_37248955-stock-photo-binary-background.jpg',\
-                    'http://amazingstuff.co.uk/wp-content/uploads/2012/02/scale_of_the_universe_2.png']
-
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
           'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
@@ -253,6 +244,20 @@ class Config():
     convert_output_data_format = ''
     #'''
 
+    #=====bk====
+    background = 0
+    backgrounds = ['',\
+                    'http://img.blog.csdn.net/20161213000422101',\
+                    'https://datacdn.soyo.or.kr/wcont/uploads/2016/02/02164057/alphago_01.jpg',\
+                    'http://img.blog.csdn.net/20150506120021512?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd293ZGQx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center',\
+                    'http://img.blog.csdn.net/20161227171638323',\
+                    'http://images.njcw.com/upload/2011-5/201105071635561829723_w.jpg',\
+                    'http://www.caneis.com.tw/link/info/Middle_East_info/Egypt/images/Cairo-007-1.jpg',\
+                    'https://cdn-images-1.medium.com/max/2000/1*BTGKRLq55y8Hld9pyvarXg.png',\
+                    'http://st.depositphotos.com/1007919/3724/i/950/depositphotos_37248955-stock-photo-binary-background.jpg',\
+                    'http://amazingstuff.co.uk/wp-content/uploads/2012/02/scale_of_the_universe_2.png',\
+                    'https://curiositando.files.wordpress.com/2014/12/cervello_destro1.jpg',\
+                    'http://img1.voc.com.cn/UpLoadFile/2013/03/05/201303051655526838.jpg']
 
     #=====icon====
     enable_website_icon = True

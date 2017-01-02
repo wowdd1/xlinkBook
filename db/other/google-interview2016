@@ -1,0 +1,625 @@
+ id | Cracking The Coding Interview Set 1 | |
+ id | How to Get a Job at the Big 4 | |
+ id | How computers process a program | |
+ id | How floating point numbers are stored simple 8-bit | |
+ id | simple 8-bit | |
+ id | 32 bit | |
+ id | 64 bit | |
+ id | Computer Arch Intro (first video only - interesting but not required) | |
+ id | C K&R C book (ANSI C) Clang | |
+ id | K&R C book (ANSI C) |  | 
+ id | Clang | |
+ id | GDB | |
+ id | Valgrind | |
+ id | C++ basics pointers functions references templates compilation scope & linkage namespaces OOP STL functors | |
+ id | basics |  | 
+ id | pointers |  | 
+ id | functions |  | 
+ id | references |  | 
+ id | templates |  | 
+ id | compilation |  | 
+ id | scope & linkage |  | 
+ id | namespaces |  | 
+ id | OOP |  | 
+ id | STL |  | 
+ id | functors | |
+ id | C++ at Google | |
+ id | Google C++ Style Guide | |
+ id | Google uses clang-format (there is a command line "style" argument -style=google) |  | 
+ id | Efficiency with Algorithms, Performance with Data Structures | |
+ id | review of C++ concepts | |
+ id | Python I've already use Python quite a bit. This is just for review. | |
+ id | I've already use Python quite a bit. This is just for review. |  | 
+ id | Compilers | |
+ id | C++ | |
+ id | Understanding Compiler Optimization (C++) | |
+ id | C | |
+ id | C++ | |
+ id | Python | |
+ id | Before you get started The myth of the Genius Programmer | |
+ id | The myth of the Genius Programmer | |
+ id | Google engineers are smart, but many have an insecurity that they aren't smart enough. |  | 
+ id | Algorithmic complexity / Big O / Asymptotic analysis nothing to implement Harvard CS50 - Asymptotic Notation | |
+ id | nothing to implement |  | 
+ id | Harvard CS50 - Asymptotic Notation | |
+ id | Big O Notations (general quick tutorial) - | |
+ id | Big O Notation (and Omega and Theta) - best mathematical explanation | |
+ id | Skiena video | |
+ id | video | |
+ id | slides | |
+ id | A Gentle Introduction to Algorithm Complexity Analysis | |
+ id | Orders of Growth | |
+ id | Asymptotics | |
+ id | UC Berkeley Big O | |
+ id | UC Berkeley Big Omega | |
+ id | Amortized Analysis | |
+ id | Illustrating "Big O" | |
+ id | Cheat sheet | |
+ id | Arrays (Implement an automatically resizing vector) Description Arrays | |
+ id | Description Arrays | |
+ id | Arrays | |
+ id | Arrays | |
+ id | Multi-dim | |
+ id | Dynamic Arrays | |
+ id | Jagged | |
+ id | Resizing arrays | |
+ id | Implement a vector (mutable array with automatic resizing) Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing. new raw data array with allocated memory can allocate int array under the hood, just not use its features start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128 size() - number of items capacity() - number of items it can hold is_empty() at(index) - returns item at given index, blows up if index out of bounds push(item) insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right prepend(item) - can use insert above at index 0 pop() - remove from end, return value delete(index) - delete item at index, shifting all trailing elements left remove(item) - looks for value and removes index holding it (even if in multiple places) find(item) - looks for value and returns first index with that value, -1 if not found resize(new_capacity) // private function when you reach capacity, resize to double the size when popping an item, if size is 1/4 of capacity, resize to half |  | 
+ id | Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing. |  | 
+ id | new raw data array with allocated memory can allocate int array under the hood, just not use its features start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128 |  | 
+ id | can allocate int array under the hood, just not use its features |  | 
+ id | start with 16, or if starting number is greater, use power of 2 - 16, 32, 64, 128 |  | 
+ id | size() - number of items |  | 
+ id | capacity() - number of items it can hold |  | 
+ id | is_empty() |  | 
+ id | at(index) - returns item at given index, blows up if index out of bounds |  | 
+ id | push(item) |  | 
+ id | insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right |  | 
+ id | prepend(item) - can use insert above at index 0 |  | 
+ id | pop() - remove from end, return value |  | 
+ id | delete(index) - delete item at index, shifting all trailing elements left |  | 
+ id | remove(item) - looks for value and removes index holding it (even if in multiple places) |  | 
+ id | find(item) - looks for value and returns first index with that value, -1 if not found |  | 
+ id | resize(new_capacity) // private function when you reach capacity, resize to double the size when popping an item, if size is 1/4 of capacity, resize to half |  | 
+ id | when you reach capacity, resize to double the size |  | 
+ id | when popping an item, if size is 1/4 of capacity, resize to half |  | 
+ id | Time O(1) to add/remove at end (amortized for allocations for more space), index, or update O(n) to insert/remove elsewhere |  | 
+ id | O(1) to add/remove at end (amortized for allocations for more space), index, or update |  | 
+ id | O(n) to insert/remove elsewhere |  | 
+ id | Space contiguous in memory, so proximity helps performance space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n) |  | 
+ id | contiguous in memory, so proximity helps performance |  | 
+ id | space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n) |  | 
+ id | Linked Lists Description | |
+ id | Description | |
+ id | CS 61B - Linked lists | |
+ id | C Code | |
+ id | Linked List vs Arrays | |
+ id | why you should avoid linked lists | |
+ id | Gotcha you need pointer to pointer knowledge (for when you pass a pointer to a function that may change the address where that pointer points) This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness. | |
+ id | implement (I did with tail pointer & without) size() - returns number of data elements in list empty() - bool returns true if empty value_at(index) - returns the value of the nth item (starting at 0 for first) push_front(value) - adds an item to the front of the list pop_front() - remove front item and return its value push_back(value) - adds an item at the end pop_back() - removes end item and returns its value front() - get value of front item back() - get value of end item insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index erase(index) - removes node at given index value_n_from_end(n) - returns the value of the node at nth position from the end of the list reverse() - reverses the list remove_value(value) - removes the first item in the list with this value |  | 
+ id | size() - returns number of data elements in list |  | 
+ id | empty() - bool returns true if empty |  | 
+ id | value_at(index) - returns the value of the nth item (starting at 0 for first) |  | 
+ id | push_front(value) - adds an item to the front of the list |  | 
+ id | pop_front() - remove front item and return its value |  | 
+ id | push_back(value) - adds an item at the end |  | 
+ id | pop_back() - removes end item and returns its value |  | 
+ id | front() - get value of front item |  | 
+ id | back() - get value of end item |  | 
+ id | insert(index, value) - insert value at index, so current item at that index is pointed to by new item at index |  | 
+ id | erase(index) - removes node at given index |  | 
+ id | value_n_from_end(n) - returns the value of the node at nth position from the end of the list |  | 
+ id | reverse() - reverses the list |  | 
+ id | remove_value(value) - removes the first item in the list with this value |  | 
+ id | Doubly-linked List Description | |
+ id | Description | |
+ id | No need to implement |  | 
+ id | Stack | |
+ id | Will not implement. Implementing with array is trivial. |  | 
+ id | Queue | |
+ id | Circular buffer/FIFO | |
+ id | Implement using linked-list, with tail pointer enqueue(value) - adds value at position at tail dequeue() - returns value and removes least recently added element (front) empty() |  | 
+ id | enqueue(value) - adds value at position at tail |  | 
+ id | dequeue() - returns value and removes least recently added element (front) |  | 
+ id | empty() |  | 
+ id | Implement using fixed-sized array enqueue(value) - adds item at end of available storage dequeue() - returns value and removes least recently added element empty() full() |  | 
+ id | enqueue(value) - adds item at end of available storage |  | 
+ id | dequeue() - returns value and removes least recently added element |  | 
+ id | full() |  | 
+ id | Cost a bad implementation using linked list where you enqueue at head and dequeue at tail would be O(n) because you'd need the next to last element, causing a full traversal each dequeue enqueue O(1) (amortized, linked list and array [probing]) dequeue O(1) (linked list and array) empty O(1) (linked list and array) |  | 
+ id | a bad implementation using linked list where you enqueue at head and dequeue at tail would be O(n) because you'd need the next to last element, causing a full traversal each dequeue |  | 
+ id | enqueue O(1) (amortized, linked list and array [probing]) |  | 
+ id | dequeue O(1) (linked list and array) |  | 
+ id | empty O(1) (linked list and array) |  | 
+ id | Hash table Videos Hashing with Chaining | |
+ id | Videos Hashing with Chaining | |
+ id | Hashing with Chaining | |
+ id | Table Doubling, Karp-Rabin | |
+ id | Open Addressing, Cryptographic Hashing | |
+ id | PyCon 2010 The Mighty Dictionary | |
+ id | x Randomization Universal & Perfect Hashing | |
+ id | x Perfect hashing | |
+ id | Online Courses | |
+ id | distributed hash tables | |
+ id | implement with array using linear probing hash(k, m) - m is size of hash table add(key, value) - if key already exists, update value exists(key) get(key) remove(key) |  | 
+ id | hash(k, m) - m is size of hash table |  | 
+ id | add(key, value) - if key already exists, update value |  | 
+ id | exists(key) |  | 
+ id | get(key) |  | 
+ id | remove(key) |  | 
+ id | Endianness | |
+ id | Very technical talk for kernel devs. Don't worry if most is over your head. |  | 
+ id | The first half is enough. |  | 
+ id | Binary search | |
+ id | detail | |
+ id | Implement binary search (on sorted array of integers) binary search using recursion |  | 
+ id | binary search (on sorted array of integers) |  | 
+ id | binary search using recursion |  | 
+ id | Bitwise operations Bits cheat sheet - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32) Get a really good understanding of manipulating bits with &, , ^, ~, >>, << words | |
+ id | Bits cheat sheet - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32) | | 
+ id | Get a really good understanding of manipulating bits with &, , ^, ~, >>, << words | |
+ id | words | |
+ id | Good intro | |
+ id | 2s and 1s complement | |
+ id | count set bits | |
+ id | round to next power of 2 | |
+ id | swap values | |
+ id | absolute value | |
+ id | Notes & Background Series | |
+ id | Series | |
+ id | Series | |
+ id | basic tree construction |  | 
+ id | traversal |  | 
+ id | manipulation algorithms |  | 
+ id | BFS (breadth-first search) MIT | |
+ id | MIT | |
+ id | level order (BFS, using queue) time complexity O(n) space complexity best O(1), worst O(n/2)=O(n) |  | 
+ id | DFS (depth-first search) MIT | |
+ id | MIT | |
+ id | notes time complexity O(n) space complexity best O(log n) - avg. height of tree worst O(n) |  | 
+ id | inorder (DFS left, self, right) |  | 
+ id | postorder (DFS left, right, self) |  | 
+ id | preorder (DFS self, left, right) |  | 
+ id | Binary search trees BSTs Binary Search Tree Review | |
+ id | Binary Search Tree Review | |
+ id | Series | |
+ id | starts with symbol table and goes through BST applications |  | 
+ id | MIT | |
+ id | C/C++ | |
+ id | Implement insert // insert value into tree get_node_count // get count of values stored print_values // prints the values in the tree, from min to max delete_tree is_in_tree // returns true if given value exists in the tree get_height // returns the height in nodes (single node's height is 1) get_min // returns the minimum value stored in the tree get_max // returns the maximum value stored in the tree is_binary_search_tree delete_value get_successor // returns next-highest value in tree after given value, -1 if none |  | 
+ id | insert // insert value into tree |  | 
+ id | get_node_count // get count of values stored |  | 
+ id | print_values // prints the values in the tree, from min to max |  | 
+ id | delete_tree |  | 
+ id | is_in_tree // returns true if given value exists in the tree |  | 
+ id | get_height // returns the height in nodes (single node's height is 1) |  | 
+ id | get_min // returns the minimum value stored in the tree |  | 
+ id | get_max // returns the maximum value stored in the tree |  | 
+ id | is_binary_search_tree |  | 
+ id | delete_value |  | 
+ id | get_successor // returns next-highest value in tree after given value, -1 if none |  | 
+ id | Heap / Priority Queue / Binary Heap visualized as a tree, but is usually linear in storage (array, linked list) | |
+ id | visualized as a tree, but is usually linear in storage (array, linked list) |  | 
+ id | Heap Sort - jumps to start | |
+ id | Heap Sort | |
+ id | Building a heap | |
+ id | MIT Heaps and Heap Sort | |
+ id | CS 61B Lecture 24 Priority Queues | |
+ id | Linear Time BuildHeap (max-heap) | |
+ id | Implement a max-heap insert sift_up - needed for insert get_max - returns the max item, without removing it get_size() - return number of elements stored is_empty() - returns true if heap contains no elements extract_max - returns the max item, removing it sift_down - needed for extract_max remove(i) - removes item at index x heapify - create a heap from an array of elements, needed for heap_sort heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap note using a min heap instead would save operations, but double the space needed (cannot do in-place). |  | 
+ id | insert |  | 
+ id | sift_up - needed for insert |  | 
+ id | get_max - returns the max item, without removing it |  | 
+ id | get_size() - return number of elements stored |  | 
+ id | is_empty() - returns true if heap contains no elements |  | 
+ id | extract_max - returns the max item, removing it |  | 
+ id | sift_down - needed for extract_max |  | 
+ id | remove(i) - removes item at index x |  | 
+ id | heapify - create a heap from an array of elements, needed for heap_sort |  | 
+ id | heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap note using a min heap instead would save operations, but double the space needed (cannot do in-place). |  | 
+ id | note using a min heap instead would save operations, but double the space needed (cannot do in-place). |  | 
+ id | Tries Note there are different kinds of tries. Some have prefixes, some don't, and some use string instead of bits to track the path. I read through code, but will not implement. | |
+ id | Note there are different kinds of tries. Some have prefixes, some don't, and some use string instead of bits to track the path. |  | 
+ id | I read through code, but will not implement. |  | 
+ id | Short course videos | |
+ id | The Trie A Neglected Data Structure | |
+ id | TopCoder - Using Tries | |
+ id | Stanford Lecture (real world use case) | |
+ id | MIT, Advanced Data Structures, Strings (can get pretty obscure about halfway through) | |
+ id | Balanced search trees Know least one type of balanced binary tree (and know how it's implemented) "Among balanced search trees, AVL and 2/3 trees are now passé, and red-black trees seem to be more popular. A particularly interesting self-organizing data structure is the splay tree, which uses rotations to move any accessed key to the root." - Skiena Of these, I chose to implement a splay tree. From what I've read, you won't implement a balanced search tree in your interview. But I wanted exposure to coding one up and let's face it, splay trees are the bee's knees. I did read a lot of red-black tree code. splay tree insert, search, delete functions If you end up implementing red/black tree try just these search and insertion functions, skipping delete I want to learn more about B-Tree since it's used so widely with very large data sets. Self-balancing binary search tree | |
+ id | Know least one type of balanced binary tree (and know how it's implemented) |  | 
+ id | "Among balanced search trees, AVL and 2/3 trees are now passé, and red-black trees seem to be more popular. A particularly interesting self-organizing data structure is the splay tree, which uses rotations to move any accessed key to the root." - Skiena |  | 
+ id | Of these, I chose to implement a splay tree. From what I've read, you won't implement a balanced search tree in your interview. But I wanted exposure to coding one up and let's face it, splay trees are the bee's knees. I did read a lot of red-black tree code. splay tree insert, search, delete functions If you end up implementing red/black tree try just these search and insertion functions, skipping delete |  | 
+ id | splay tree insert, search, delete functions If you end up implementing red/black tree try just these |  | 
+ id | search and insertion functions, skipping delete |  | 
+ id | I want to learn more about B-Tree since it's used so widely with very large data sets. |  | 
+ id | Self-balancing binary search tree | |
+ id | AVL trees In practice From what I can tell, these aren't used much in practice, but I could see where they would be The AVL tree is another structure supporting O(log n) search, insertion, and removal. It is more rigidly balanced than red–black trees, leading to slower insertion and removal but faster retrieval. This makes it attractive for data structures that may be built once and loaded without reconstruction, such as language dictionaries (or program dictionaries, such as the opcodes of an assembler or interpreter). MIT AVL Trees / AVL Sort | |
+ id | In practice From what I can tell, these aren't used much in practice, but I could see where they would be The AVL tree is another structure supporting O(log n) search, insertion, and removal. It is more rigidly balanced than red–black trees, leading to slower insertion and removal but faster retrieval. This makes it attractive for data structures that may be built once and loaded without reconstruction, such as language dictionaries (or program dictionaries, such as the opcodes of an assembler or interpreter). |  | 
+ id | MIT AVL Trees / AVL Sort | |
+ id | Splay trees In practice Splay trees are typically used in the implementation of caches, memory allocators, routers, garbage collectors, data compression, ropes (replacement of string used for long text strings), in Windows NT (in the virtual memory, networking, and file system code) etc. CS 61B Splay Trees | |
+ id | In practice Splay trees are typically used in the implementation of caches, memory allocators, routers, garbage collectors, data compression, ropes (replacement of string used for long text strings), in Windows NT (in the virtual memory, networking, and file system code) etc. |  | 
+ id | CS 61B Splay Trees | |
+ id | MIT Lecture Splay Trees - Gets very mathy, but watch the last 10 minutes for sure. - | |
+ id | 2-3 search trees In practice 2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees). You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees. 23-Tree Intuition and Definition | |
+ id | In practice 2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees). You would use 2-3 tree very rarely because its implementation involves different types of nodes. Instead, people use Red Black trees. |  | 
+ id | 23-Tree Intuition and Definition | |
+ id | Binary View of 23-Tree | |
+ id | 2-3 Trees (student recitation) | |
+ id | 2-3-4 Trees (aka 2-4 trees) In practice For every 2-4 tree, there are corresponding red–black trees with data elements in the same order. The insertion and deletion operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an important tool for understanding the logic behind red–black trees, and this is why many introductory algorithm texts introduce 2-4 trees just before red–black trees, even though 2-4 trees are not often used in practice. CS 61B Lecture 26 Balanced Search Trees | |
+ id | In practice For every 2-4 tree, there are corresponding red–black trees with data elements in the same order. The insertion and deletion operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an important tool for understanding the logic behind red–black trees, and this is why many introductory algorithm texts introduce 2-4 trees just before red–black trees, even though 2-4 trees are not often used in practice. |  | 
+ id | CS 61B Lecture 26 Balanced Search Trees | |
+ id | Bottom Up 234-Trees | |
+ id | Top Down 234-Trees | |
+ id | B-Trees fun fact it's a mystery, but the B could stand for Boeing, Balanced, or Bayer (co-inventor) In Practice B-Trees are widely used in databases. Most modern filesystems use B-trees (or Variants). In addition to its use in databases, the B-tree is also used in filesystems to allow quick random access to an arbitrary block in a particular file. The basic problem is turning the file block i address into a disk block (or perhaps to a cylinder-head-sector) address. B-Tree | |
+ id | fun fact it's a mystery, but the B could stand for Boeing, Balanced, or Bayer (co-inventor) |  | 
+ id | In Practice B-Trees are widely used in databases. Most modern filesystems use B-trees (or Variants). In addition to its use in databases, the B-tree is also used in filesystems to allow quick random access to an arbitrary block in a particular file. The basic problem is turning the file block i address into a disk block (or perhaps to a cylinder-head-sector) address. |  | 
+ id | B-Tree | |
+ id | Introduction to B-Trees | |
+ id | B-Tree Definition and Insertion | |
+ id | B-Tree Deletion | |
+ id | MIT 6.851 - Memory Hierarchy Models | |
+ id | Red/black trees In practice Red–black trees offer worst-case guarantees for insertion time, deletion time, and search time. Not only does this make them valuable in time-sensitive applications such as real-time applications, but it makes them valuable building blocks in other data structures which provide worst-case guarantees; for example, many data structures used in computational geometry can be based on red–black trees, and the Completely Fair Scheduler used in current Linux kernels uses red–black trees. In the version 8 of Java, the Collection HashMap has been modified such that instead of using a LinkedList to store identical elements with poor hashcodes, a Red-Black tree is used. Aduni - Algorithms - Lecture 4 link jumps to starting point | |
+ id | In practice Red–black trees offer worst-case guarantees for insertion time, deletion time, and search time. Not only does this make them valuable in time-sensitive applications such as real-time applications, but it makes them valuable building blocks in other data structures which provide worst-case guarantees; for example, many data structures used in computational geometry can be based on red–black trees, and the Completely Fair Scheduler used in current Linux kernels uses red–black trees. In the version 8 of Java, the Collection HashMap has been modified such that instead of using a LinkedList to store identical elements with poor hashcodes, a Red-Black tree is used. |  | 
+ id | Aduni - Algorithms - Lecture 4 link jumps to starting point | |
+ id | Aduni - Algorithms - Lecture 5 | |
+ id | N-ary (K-ary, M-ary) trees note the N or K is the branching factor (max branches) binary trees are a 2-ary tree, with branching factor = 2 2-3 trees are 3-ary | |
+ id | note the N or K is the branching factor (max branches) binary trees are a 2-ary tree, with branching factor = 2 2-3 trees are 3-ary |  | 
+ id | binary trees are a 2-ary tree, with branching factor = 2 |  | 
+ id | 2-3 trees are 3-ary |  | 
+ id | Notes Implement sorts & know best case/worst case, average complexity of each no bubble sort - it's terrible - O(n^2), except when n <= 16 stability in sorting algorithms ("Is Quicksort stable?") | |
+ id | Implement sorts & know best case/worst case, average complexity of each no bubble sort - it's terrible - O(n^2), except when n <= 16 |  | 
+ id | no bubble sort - it's terrible - O(n^2), except when n <= 16 |  | 
+ id | stability in sorting algorithms ("Is Quicksort stable?") | |
+ id | Which algorithms can be used on linked lists? Which on arrays? Which on both? I wouldn't recommend sorting a linked list, but merge sort is doable. | |
+ id | I wouldn't recommend sorting a linked list, but merge sort is doable. |  | 
+ id | For heapsort, see Heap data structure above. Heap sort is great, but not stable. |  | 
+ id | Bubble Sort | |
+ id | Analyzing Bubble Sort | |
+ id | Insertion Sort, Merge Sort | |
+ id | Insertion Sort | |
+ id | Merge Sort | |
+ id | Quicksort | |
+ id | Selection Sort | |
+ id | Stanford lectures on sorting | |
+ id | Shai Simonson, Aduni.org | |
+ id | Steven Skiena lectures on sorting lecture begins at 2646 | |
+ id | lecture begins at 2646 | |
+ id | lecture begins at 2740 | |
+ id | lecture begins at 3500 | |
+ id | lecture begins at 2350 | |
+ id | UC Berkeley CS 61B Lecture 29 Sorting I | |
+ id | CS 61B Lecture 29 Sorting I | |
+ id | CS 61B Lecture 30 Sorting II | |
+ id | CS 61B Lecture 32 Sorting III | |
+ id | CS 61B Lecture 33 Sorting V | |
+ id | - Merge sort code Using output array | |
+ id | Using output array | |
+ id | In-place | |
+ id | - Quick sort code | |
+ id | Implement Mergesort O(n log n) average and worst case Quicksort O(n log n) average case Selection sort and insertion sort are both O(n^2) average and worst case For heapsort, see Heap data structure above. |  | 
+ id | Mergesort O(n log n) average and worst case |  | 
+ id | Quicksort O(n log n) average case |  | 
+ id | Selection sort and insertion sort are both O(n^2) average and worst case |  | 
+ id | For heapsort, see Heap data structure above. |  | 
+ id | For curiosity - not required Radix Sort | |
+ id | Radix Sort | |
+ id | Radix Sort | |
+ id | Radix Sort, Counting Sort (linear time given constraints) | |
+ id | Randomization Matrix Multiply, Quicksort, Freivalds' algorithm | |
+ id | Sorting in Linear Time | |
+ id | Notes from Yegge There are three basic ways to represent a graph in memory objects and pointers matrix adjacency list Familiarize yourself with each representation and its pros & cons BFS and DFS - know their computational complexity, their tradeoffs, and how to implement them in real code When asked a question, look for a graph-based solution first, then move on if none. |  | 
+ id | There are three basic ways to represent a graph in memory objects and pointers matrix adjacency list |  | 
+ id | objects and pointers |  | 
+ id | matrix |  | 
+ id | adjacency list |  | 
+ id | Familiarize yourself with each representation and its pros & cons |  | 
+ id | BFS and DFS - know their computational complexity, their tradeoffs, and how to implement them in real code |  | 
+ id | When asked a question, look for a graph-based solution first, then move on if none. |  | 
+ id | Skiena Lectures - great intro CSE373 2012 - Lecture 11 - Graph Data Structures | |
+ id | CSE373 2012 - Lecture 11 - Graph Data Structures | |
+ id | CSE373 2012 - Lecture 12 - Breadth-First Search | |
+ id | CSE373 2012 - Lecture 13 - Graph Algorithms | |
+ id | CSE373 2012 - Lecture 14 - Graph Algorithms (con't) | |
+ id | CSE373 2012 - Lecture 15 - Graph Algorithms (con't 2) | |
+ id | CSE373 2012 - Lecture 16 - Graph Algorithms (con't 3) | |
+ id | Graphs (review and more) Aduni Graph Algorithms I - Topological Sorting, Minimum Spanning Trees, Prim's Algorithm - Lecture 6 | |
+ id | Aduni Graph Algorithms I - Topological Sorting, Minimum Spanning Trees, Prim's Algorithm - Lecture 6 | |
+ id | Aduni Graph Algorithms II - DFS, BFS, Kruskal's Algorithm, Union Find Data Structure - Lecture 7 | |
+ id | Aduni Graph Algorithms III Shortest Path - Lecture 8 | |
+ id | Aduni Graph Alg. IV Intro to geometric algorithms - Lecture 9 | |
+ id | CS 61B 2014 (starting at 5809) | |
+ id | CS 61B 2014 Weighted graphs | |
+ id | Greedy Algorithms Minimum Spanning Tree | |
+ id | Full Coursera Course Algorithms on Graphs | |
+ id | Algorithms on Graphs | |
+ id | If you get a chance, try to study up on fancier algorithms Dijkstra's algorithm | |
+ id | Dijkstra's algorithm | |
+ id | A* | |
+ id | I'll implement DFS with adjacency list DFS with adjacency matrix BFS with adjacency list BFS with adjacency matrix DFS-based algorithms (see Aduni videos above) topological sort single-source shortest path (Dijkstra) count connected components in a graph check for cycle list strongly connected components check for bipartite graph |  | 
+ id | DFS with adjacency list |  | 
+ id | DFS with adjacency matrix |  | 
+ id | BFS with adjacency list |  | 
+ id | BFS with adjacency matrix |  | 
+ id | DFS-based algorithms (see Aduni videos above) topological sort single-source shortest path (Dijkstra) count connected components in a graph check for cycle list strongly connected components check for bipartite graph |  | 
+ id | topological sort |  | 
+ id | single-source shortest path (Dijkstra) |  | 
+ id | count connected components in a graph |  | 
+ id | check for cycle |  | 
+ id | list strongly connected components |  | 
+ id | check for bipartite graph |  | 
+ id | Recursion when it is appropriate to use it how is tail recursion better than not? Short Series on Recurrence Relations | |
+ id | when it is appropriate to use it |  | 
+ id | how is tail recursion better than not? |  | 
+ id | Short Series on Recurrence Relations | |
+ id | Stanford lectures on recursion | |
+ id | Dynamic Programming Videos CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming | |
+ id | Videos CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming | |
+ id | CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming | |
+ id | CSE373 2012 - Lecture 20 - Edit Distance | |
+ id | CSE373 2012 - Lecture 21 - Dynamic Programming Examples | |
+ id | CSE373 2012 - Lecture 22 - Applications of Dynamic Programming | |
+ id | Simonson Dynamic Programming 0 (starts at 5918) | |
+ id | Simonson Dynamic Programming I - Lecture 11 | |
+ id | Simonson Dynamic programming II - Lecture 12 | |
+ id | 6.006 Dynamic Programming I Fibonacci, Shortest Paths | |
+ id | 6.006 Dynamic Programming II Text Justification, Blackjack | |
+ id | 6.006 DP III Parenthesization, Edit Distance, Knapsack | |
+ id | 6.006 DP IV Guitar Fingering, Tetris, Super Mario Bros. | |
+ id | Coursera The RNA secondary structure problem | |
+ id | The RNA secondary structure problem | |
+ id | A dynamic programming algorithm | |
+ id | Illustrating the DP algorithm | |
+ id | Running time of the DP algorithm | |
+ id | DP vs. recursive implementation | |
+ id | Global pairwise sequence alignment | |
+ id | Local pairwise sequence alignment | |
+ id | Combinatorics (n choose k) & Probability Make School Probability | |
+ id | Make School Probability | |
+ id | Make School More Probability and Markov Chains | |
+ id | MIT 6.042J - Probability Introduction | |
+ id | MIT 6.042J - Conditional Probability | |
+ id | MIT 6.042J - Independence | |
+ id | MIT 6.042J - Random Variables | |
+ id | MIT 6.042J - Expectation I | |
+ id | MIT 6.042J - Expectation II | |
+ id | MIT 6.042J - Large Deviations | |
+ id | MIT 6.042J - Random Walks | |
+ id | NP and NP Complete Know about the most famous classes of NP-complete problems, such as traveling salesman and the knapsack problem, and be able to recognize them when an interviewer asks you them in disguise. Know what NP-complete means. Computational Complexity | |
+ id | Know about the most famous classes of NP-complete problems, such as traveling salesman and the knapsack problem, and be able to recognize them when an interviewer asks you them in disguise. |  | 
+ id | Know what NP-complete means. |  | 
+ id | Computational Complexity | |
+ id | CSE373 2012 - Lecture 23 - Introduction to NP-Completeness | |
+ id | CSE373 2012 - Lecture 24 - NP-Completeness Proofs | |
+ id | CSE373 2012 - Lecture 25 - NP-Completeness Challenge | |
+ id | Complexity P, NP, NP-completeness, Reductions | |
+ id | Recitation R8. NP-Complete Problems | |
+ id | Complexity Approximation Algorithms | |
+ id | Complexity Fixed-Parameter Algorithms | |
+ id | Simonson Approximation Algorithms | |
+ id | Garbage collection | |
+ id | Caches LRU cache |  | 
+ id | LRU cache |  | 
+ id | String searching & manipulations Search pattern in text | |
+ id | Search pattern in text | |
+ id | Rabin-Karp | |
+ id | Precomputing | |
+ id | Optimization Implementation and Analysis | |
+ id | Knuth-Morris-Pratt (KMP) | |
+ id | Boyer–Moore string search algorithm | |
+ id | Coursera Algorithms on Strings | |
+ id | Design patterns description | |
+ id | description | |
+ id | Patterns | |
+ id | UML | |
+ id | strategy |  | 
+ id | singleton |  | 
+ id | adapter |  | 
+ id | prototype |  | 
+ id | decorator |  | 
+ id | visitor |  | 
+ id | factory |  | 
+ id | Operating Systems (25 videos) Computer Science 162 | |
+ id | Computer Science 162 | |
+ id | Covers Processes, Threads, Concurrency issues difference between processes and threads processes threads locks mutexes semaphores monitors how they work deadlock livelock CPU activity, interrupts, context switching Modern concurrency constructs with multicore processors Process resource needs (memory code, static storage, stack, heap, and also file descriptors, i/o) Thread resource needs (shares above with other threads in same process but each has its own pc, stack counter, registers and stack) Forking is really copy on write (read-only) until the new process writes to memory, then it does a full copy. Context switching How context switching is initiated by the operating system and underlying hardware |  | 
+ id | Processes, Threads, Concurrency issues difference between processes and threads processes threads locks mutexes semaphores monitors how they work deadlock livelock |  | 
+ id | difference between processes and threads |  | 
+ id | processes |  | 
+ id | threads |  | 
+ id | locks |  | 
+ id | mutexes |  | 
+ id | semaphores |  | 
+ id | monitors |  | 
+ id | how they work |  | 
+ id | deadlock |  | 
+ id | livelock |  | 
+ id | CPU activity, interrupts, context switching |  | 
+ id | Modern concurrency constructs with multicore processors |  | 
+ id | Process resource needs (memory code, static storage, stack, heap, and also file descriptors, i/o) |  | 
+ id | Thread resource needs (shares above with other threads in same process but each has its own pc, stack counter, registers and stack) |  | 
+ id | Forking is really copy on write (read-only) until the new process writes to memory, then it does a full copy. |  | 
+ id | Context switching How context switching is initiated by the operating system and underlying hardware |  | 
+ id | How context switching is initiated by the operating system and underlying hardware |  | 
+ id | threads in C++ | |
+ id | stopped here | |
+ id | concurrency in Python | |
+ id | Data handling see scalability options below Distill large data sets to single values Transform one data set to another Handling obscenely large amounts of data |  | 
+ id | see scalability options below |  | 
+ id | Distill large data sets to single values |  | 
+ id | Transform one data set to another |  | 
+ id | Handling obscenely large amounts of data |  | 
+ id | System design | |
+ id | features sets |  | 
+ id | interfaces |  | 
+ id | class hierarchies |  | 
+ id | designing a system under certain constraints |  | 
+ id | simplicity and robustness |  | 
+ id | tradeoffs |  | 
+ id | performance analysis and optimization |  | 
+ id | Familiarize yourself with a unix-based code editor emacs & vi(m) suggested by Yegge, from an old Amazon recruiting post vi(m) | |
+ id | suggested by Yegge, from an old Amazon recruiting post |  | 
+ id | vi(m) | |
+ id | set of 4 | |
+ id | emacs | |
+ id | set of 3 | |
+ id | Be able to use unix command line tools suggested by Yegge, from an old Amazon recruiting post. I filled in the list below from good tools. bash cat grep sed awk curl or wget sort tr uniq |  | 
+ id | suggested by Yegge, from an old Amazon recruiting post. I filled in the list below from good tools. |  | 
+ id | bash |  | 
+ id | cat |  | 
+ id | grep |  | 
+ id | sed |  | 
+ id | awk |  | 
+ id | curl or wget |  | 
+ id | sort |  | 
+ id | tr |  | 
+ id | uniq |  | 
+ id | Testing how unit testing works what are mock objects what is integration testing what is dependency injection |  | 
+ id | how unit testing works |  | 
+ id | what are mock objects |  | 
+ id | what is integration testing |  | 
+ id | what is dependency injection |  | 
+ id | Scheduling in an OS, how it works |  | 
+ id | in an OS, how it works |  | 
+ id | Implement system routines understand what lies beneath the programming APIs you use can you implement them? |  | 
+ id | understand what lies beneath the programming APIs you use |  | 
+ id | can you implement them? |  | 
+ id | The Algorithm Design Manual (Skiena) Book (can rent on kindle) | |
+ id | Book (can rent on kindle) | |
+ id | Half.com is a great resource for textbooks at good prices. |  | 
+ id | Answers | |
+ id | Errata | |
+ id | Programming Interviews Exposed Secrets to Landing Your Next Job, 2nd Edition | |
+ id | Cracking the Coding Interview, 6th Edition | |
+ id | If you see people reference "The Google Resume", it was a book replaced by "Cracking the Coding Interview". |  | 
+ id | C Programming Language, Vol 2 answers to questions | |
+ id | answers to questions | |
+ id | C++ Primer Plus, 6th Edition |  | 
+ id | The Unix Programming Environment | |
+ id | Programming Pearls | |
+ id | Algorithms and Programming Problems and Solutions | |
+ id | Introduction to Algorithms | |
+ id | How Search Works | |
+ id | Series | |
+ id | LeetCode | |
+ id | Project Euler | |
+ id | TopCoder | |
+ id | HackerRank | |
+ id | Codility | |
+ id | InterviewCake | |
+ id | InterviewBit | |
+ id | Cracking The Coding Interview Set 2 | |
+ id | Great stuff at the back of Cracking The Coding Interview |  | 
+ id | Think of about 20 interview questions you'll get, along the lines of the items below |  | 
+ id | have 2-3 answers for each |  | 
+ id | Have a story, not just data, about something you accomplished |  | 
+ id | Why do you want this job? |  | 
+ id | What's a tough problem you've solved? |  | 
+ id | Biggest challenges faced? |  | 
+ id | Best/worst designs seen? |  | 
+ id | Ideas for improving an existing Google product. |  | 
+ id | How do you work best, as an individual and as part of a team? |  | 
+ id | Which of your skills or experiences would be assets in the role and why? |  | 
+ id | What did you most enjoy at [job x / project y]? |  | 
+ id | What was the biggest challenge you faced at [job x / project y]? |  | 
+ id | What was the hardest bug you faced at [job x / project y]? |  | 
+ id | What did you learn at [job x / project y]? |  | 
+ id | What would you have done better at [job x / project y]? |  | 
+ id | How large is your team? |  | 
+ id | What is your dev cycle look like? Do you do waterfall/sprints/agile? |  | 
+ id | Are rushes to deadlines common? Or is there flexibility? |  | 
+ id | How are decisions made in your team? |  | 
+ id | How many meetings do you have per week? |  | 
+ id | Do you feel your work environment helps you concentrate? |  | 
+ id | What are you working on? |  | 
+ id | What do you like about it? |  | 
+ id | What is the work life like? |  | 
+ id | Augmented Data Structures CS 61B Lecture 39 Augmenting Data Structures | |
+ id | CS 61B Lecture 39 Augmenting Data Structures | |
+ id | Geometry, Convex hull Geometric Algorithms Graham & Jarvis - Lecture 10 | |
+ id | Geometric Algorithms Graham & Jarvis - Lecture 10 | |
+ id | Divide & Conquer Convex Hull, Median Finding | |
+ id | Skip lists "These are somewhat of a cult data structure" - Skiena Randomization Skip Lists | |
+ id | "These are somewhat of a cult data structure" - Skiena |  | 
+ id | Randomization Skip Lists | |
+ id | Network Flows Network Flows | |
+ id | Network Flows | |
+ id | Augmenting Path Algorithms | |
+ id | Network Flow Algorithms | |
+ id | Linear Programming Lecture 13 10/11 Linear Programming | |
+ id | Lecture 13 10/11 Linear Programming | |
+ id | Lecture 14 10/16 Linear Programming | |
+ id | Disjoint Sets & Union Find | |
+ id | UCB 61B - Disjoint Sets; Sorting & selection | |
+ id | CS 61B Lecture 31 Disjoint Sets | |
+ id | van Emde Boas Trees Divide & Conquer van Emde Boas Trees | |
+ id | Divide & Conquer van Emde Boas Trees | |
+ id | Fast Fourier Transform Divide & Conquer FFT | |
+ id | Divide & Conquer FFT | |
+ id | Integer Arithmetic, Karatsuba Multiplication | |
+ id | Treap ? |  | 
+ id | ? |  | 
+ id | Parity & Hamming Code Parity | |
+ id | Parity | |
+ id | Hamming Code Error detection | |
+ id | Error detection | |
+ id | Error correction | |
+ id | Error Checking | |
+ id | Computer Security MIT (23 videos) | |
+ id | MIT (23 videos) | |
+ id | Markov text generation | |
+ id | Information theory Markov processes | |
+ id | Markov processes | |
+ id | includes Markov chain |  | 
+ id | Bloom Filter | |
+ id | Machine Learning Why ML? | |
+ id | Why ML? | |
+ id | Google Developers' Machine Learning Recipes (Scikit Learn & Tensorflow) | |
+ id | great course (Stanford) | |
+ id | Google's Deep Learning Nanodegree | |
+ id | Google/Kaggle Machine Learning Engineer Nanodegree | |
+ id | Self-Driving Car Engineer Nanodegree | |
+ id | Metis Online Course ($99 for 2 months) | |
+ id | Practical Guide to implementing Neural Networks in Python (using Theano) | |
+ id | Data School | |
+ id | Vector calculus |  | 
+ id | Parallel Programming | |
+ id | More Dynamic Programming 6.046 Dynamic Programming & Advanced DP | |
+ id | 6.046 Dynamic Programming & Advanced DP | |
+ id | 6.046 Dynamic Programming All-Pairs Shortest Paths | |
+ id | 6.046 Dynamic Programming (student recitation) | |
+ id | Advanced Graph Processing Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees | |
+ id | Synchronous Distributed Algorithms Symmetry-Breaking. Shortest-Paths Spanning Trees | |
+ id | Asynchronous Distributed Algorithms Shortest-Paths Spanning Trees | |
+ id | Speeding up Dijkstra | |
+ id | covers Fibonacci heap, a more complicated but more efficient heap than binary heap |  | 
+ id | Bellman-Ford | |
+ id | MIT 18.06 Linear Algebra, Spring 2005 (35 videos) | |
+ id | Computer Science 70, 001 - Spring 2015 - Discrete Mathematics and Probability Theory | |
+ id | Discrete Mathematics (19 videos) | |
+ id | Scalability | |
+ id | CSE373 - Analysis of Algorithms (25 videos) Skiena lectures from Algorithm Design Manual | |
+ id | Skiena lectures from Algorithm Design Manual |  | 
+ id | UC Berkeley 61B (39 videos) | |
+ id | MIT 6.004 Computation Structures (49 videos) | |
+ id | MIT 6.006 Intro to Algorithms (47 videos) | |
+ id | MIT 6.033 Computer System Engineering (22 videos) | |
+ id | MIT 6.034 Artificial Intelligence, Fall 2010 (30 videos) | |
+ id | MIT 6.042J Mathematics for Computer Science, Fall 2010 (25 videos) | |
+ id | MIT 6.046 Design and Analysis of Algorithms (34 videos) | |
+ id | MIT 6.050J Information and Entropy, Spring 2008 () | |
+ id | MIT 6.851 Advanced Data Structures (22 videos) | |
+ id | MIT 6.854 (Advanced Algorithms), Spring 2016 (24 videos) | |
+ id | MIT 6.858 Computer Systems Security, Fall 2014 () | |
+ id | Stanford Programming Paradigms (17 videos) Course on C and C++ | |
+ id | Course on C and C++ |  | 
+ id | Introduction to Cryptography | |
+ id | more in series (not in order) | |
+ id | Books Clean Code Code Complete How to Prove It A Structured Approach, 2nd Edition Unix Power Tools, Third Edition |  | 
+ id | Clean Code |  | 
+ id | Code Complete |  | 
+ id | How to Prove It A Structured Approach, 2nd Edition |  | 
+ id | Unix Power Tools, Third Edition |  | 
+ id | C++ Talks at CPPCon | |
+ id | MIT CMS.611J Creating Video Games, Fall 2014 | |
+ id | Compilers Course | |
+ id | Computer and processor architecture | |
+ id | Long series of C++ videos | |

@@ -1,0 +1,38 @@
+reference-1-1 | /feed.xml | https://karpathy.github.io/2016/05/31/rl/feed.xml | 
+reference-2-2 | Andrej Karpathy blog | https://karpathy.github.io/2016/05/31/rl/ | 
+reference-3-3 | # | https://karpathy.github.io/2016/05/31/rl/# | 
+reference-4-4 | About | https://karpathy.github.io/about/ | 
+reference-5-5 | Hacker's guide to Neural Networks | https://karpathy.github.io/neuralnets/ | 
+reference-6-6 | learn to play ATARI games | http://www.nature.com/nature/journal/v518/n7540/abs/nature14236.html | 
+reference-7-7 | Go | http://googleresearch.blogspot.com/2016/01/alphago-mastering-ancient-game-of-go.html | 
+reference-8-8 | run and leap | https://www.cs.ubc.ca/~van/papers/2016-TOG-deepRL/index.html | 
+reference-9-9 | complex manipulation tasks | http://www.bloomberg.com/features/2015-preschool-for-robots/ | 
+reference-10-10 | through Richard Sutton’s book | https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html | 
+reference-11-11 | David Silver’s course | http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html | 
+reference-12-12 | John Schulmann’s lectures | https://www.youtube.com/watch?v=oPGVsoBonLM | 
+reference-13-13 | RL library in Javascript | http://cs.stanford.edu/people/karpathy/reinforcejs/ | 
+reference-14-14 | OpenAI Gym | https://gym.openai.com/ | 
+reference-15-15 | shown | http://arxiv.org/abs/1602.01783 | 
+reference-16-16 | Gist link | https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5 | 
+reference-17-17 | Markov Decision Process (MDP) | https://en.wikipedia.org/wiki/Markov_decision_process | 
+reference-18-18 | here | http://arxiv.org/abs/1506.02438 | 
+reference-19-19 | Building Machines That Learn and Think Like People | https://arxiv.org/abs/1604.00289 | 
+reference-20-20 | Williams 1992 | http://www-anw.cs.umass.edu/~barto/courses/cs687/williams92simple.pdf | 
+reference-21-21 | Recurrent Models of Visual Attention | http://arxiv.org/abs/1406.6247 | 
+reference-22-22 | Gradient Estimation Using Stochastic Computation Graphs | http://arxiv.org/abs/1506.05254 | 
+reference-23-23 | Neural Turing Machine | https://arxiv.org/abs/1410.5401 | 
+reference-24-24 | RL-NTM | http://arxiv.org/abs/1505.00521 | 
+reference-25-25 | deterministic policy gradients | http://jmlr.org/proceedings/papers/v32/silver14.pdf | 
+reference-26-26 | Google’s robot arm farm | http://googleresearch.blogspot.com/2016/03/deep-learning-for-robots-learning-from.html | 
+reference-27-27 | Tesla’s Model S + Autopilot | http://qz.com/694520/tesla-has-780-million-miles-of-driving-data-and-adds-another-million-every-10-hours/ | 
+reference-28-28 | AlphaGo | https://deepmind.com/alpha-go | 
+reference-29-29 | robot teleoperation | https://www.youtube.com/watch?v=kZlg0QvKkQQ | 
+reference-30-30 | apprenticeship learning | http://ai.stanford.edu/~pabbeel//thesis/thesis.pdf | 
+reference-31-31 | trajectory optimization | http://people.eecs.berkeley.edu/~igor.mordatch/policy/index.html | 
+reference-32-32 | Guided Policy Search | http://arxiv.org/abs/1504.00702 | 
+reference-33-33 | cross-entropy method (CEM) | https://en.wikipedia.org/wiki/Cross-entropy_method | 
+reference-34-34 | TRPO | https://arxiv.org/abs/1502.05477 | 
+reference-35-35 | in practice | http://arxiv.org/abs/1604.06778 | 
+reference-36-36 | comments powered by Disqus | http://disqus.com | 
+reference-37-37 | karpathy | https://github.com/karpathy | 
+reference-38-38 | karpathy | https://twitter.com/karpathy | 

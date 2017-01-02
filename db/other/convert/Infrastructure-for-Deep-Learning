@@ -1,0 +1,59 @@
+convert-1-1 | About | https://openai.com/about/ | 
+convert-2-2 | Blog | https://openai.com/blog/ | 
+convert-3-3 | OpenAI Gym | https://gym.openai.com | 
+convert-4-4 | Requests for Research | https://openai.com/requests-for-research/ | 
+convert-5-5 | kubernetes-ec2-autoscaler | https://github.com/openai/kubernetes-ec2-autoscaler | 
+convert-6-6 | reinforcement learning | http://karpathy.github.io/2016/05/31/rl/ | 
+convert-7-7 | Dario Amodei | https://www.linkedin.com/in/dario-amodei-3934934 | 
+convert-8-8 | Improved Techniques for Training GANs | https://arxiv.org/abs/1606.03498 | 
+convert-9-9 | Tim Salimans | http://timsalimans.com/ | 
+convert-10-10 | Generative Adversarial Network | https://openai.com/blog/generative-models/#gan | 
+convert-11-11 | minibatch | https://www.coursera.org/learn/machine-learning/lecture/9zJUs/mini-batch-gradient-descent | 
+convert-12-12 | MNIST | http://yann.lecun.com/exdb/mnist/ | 
+convert-13-13 | CIFAR-10 | https://www.cs.toronto.edu/~kriz/cifar.html | 
+convert-14-14 | CIFAR-10 samples | https://openai.com/assets/research/generative-models/cifar10samples-2-5f6f6c0616f4cf0e63817d2e857e1a4bedd5c9f28f6971ae9f427b37105c3a2f.jpg | 
+convert-15-15 | Ian Goodfellow | https://www.linkedin.com/in/ian-goodfellow-b7187213 | 
+convert-16-16 | ImageNet | http://image-net.org/ | 
+convert-17-17 | Our model | https://openai.com/blog/generative-models#improving-gans | 
+convert-18-18 | sample | https://github.com/openai/iaf/blob/master/tf_train.py#L51-L93 | 
+convert-19-19 | our | https://github.com/openai/improved-gan | 
+convert-20-20 | open | https://github.com/openai/vime | 
+convert-21-21 | source | https://github.com/openai/iaf | 
+convert-22-22 | projects | https://github.com/openai/imitation | 
+convert-23-23 | TensorFlow | https://www.tensorflow.org/ | 
+convert-24-24 | Theano | http://deeplearning.net/software/theano/ | 
+convert-25-25 | Numpy | http://www.numpy.org/ | 
+convert-26-26 | Keras | https://keras.io/ | 
+convert-27-27 | Anaconda | https://www.continuum.io/anaconda-overview | 
+convert-28-28 | OpenCV | http://opencv.org/ | 
+convert-29-29 | performance optimizations | https://docs.continuum.io/anaconda/#high-performance | 
+convert-30-30 | sublinear | https://research.googleblog.com/2016/04/announcing-tensorflow-08-now-with.html | 
+convert-31-31 | simulators | https://gym.openai.com/envs#box2d | 
+convert-32-32 | reinforcement learning environments | https://gym.openai.com/envs#atari | 
+convert-33-33 | nvidia-smi | https://developer.nvidia.com/nvidia-system-management-interface | 
+convert-34-34 | AWS | https://aws.amazon.com/ | 
+convert-35-35 | Titan X | http://www.geforce.com/hardware/10series/titan-x-pascal | 
+convert-36-36 | htop | http://hisham.hm/htop/ | 
+convert-37-37 | Terraform | https://www.terraform.io/ | 
+convert-38-38 | Ubuntu | http://www.ubuntu.com/ | 
+convert-39-39 | Chef | https://www.chef.io/chef/ | 
+convert-40-40 | Packer | https://www.packer.io/ | 
+convert-41-41 | OpenVPN | https://openvpn.net/ | 
+convert-42-42 | strongSwan | https://www.strongswan.org/ | 
+convert-43-43 | Customer Gateways | http://docs.aws.amazon.com/AmazonVPC/latest/NetworkAdminGuide/Introduction.html | 
+convert-44-44 | NFS | https://en.wikipedia.org/wiki/Network_File_System | 
+convert-45-45 | EFS | https://aws.amazon.com/efs/ | 
+convert-46-46 | S3 | https://aws.amazon.com/s3/ | 
+convert-47-47 | Kubernetes | http://kubernetes.io/ | 
+convert-48-48 | learning curves | https://en.wikipedia.org/wiki/Learning_curve | 
+convert-49-49 | flannel | https://coreos.com/flannel/docs/latest/ | 
+convert-50-50 | TensorBoard | https://www.tensorflow.org/versions/r0.10/how_tos/summaries_and_tensorboard/index.html | 
+convert-51-51 | Service | http://kubernetes.io/docs/user-guide/services/ | 
+convert-52-52 | Auto Scaling | https://aws.amazon.com/autoscaling/ | 
+convert-53-53 | Scaling Policies | http://docs.aws.amazon.com/autoscaling/latest/userguide/policy_creating.html | 
+convert-54-54 | drain | http://kubernetes.io/docs/user-guide/kubectl/kubectl_drain/ | 
+convert-55-55 | Pod | http://kubernetes.io/docs/user-guide/pods/ | 
+convert-56-56 | uncordons | http://kubernetes.io/docs/user-guide/kubectl/kubectl_uncordon/ | 
+convert-57-57 | welcome help | https://jobs.lever.co/openai/f7801a92-1e2f-4656-a572-962b53ec34f6 | 
+convert-58-58 | Join OpenAI | https://jobs.lever.co/openai/f7801a92-1e2f-4656-a572-962b53ec34f6 | 
+convert-59-59 | Chat with others | https://gitter.im/openai/infra | 

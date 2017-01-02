@@ -1,0 +1,42 @@
+github-ENCODE-DCC-encoded | encoded | https://github.com/ENCODE-DCC/encoded | author:ENCODE-DCC description:Metadata database for ENCODE 3
+github-ENCODE-DCC-kentUtils | kentUtils | https://github.com/ENCODE-DCC/kentUtils | author:ENCODE-DCC description:UCSC command line bioinformatic utilities
+github-ENCODE-DCC-chip-seq-pipeline | chip-seq-pipeline | https://github.com/ENCODE-DCC/chip-seq-pipeline | author:ENCODE-DCC description:ENCODE Uniform processing pipeline for ChIP-seq
+github-ENCODE-DCC-long-rna-seq-pipeline | long-rna-seq-pipeline | https://github.com/ENCODE-DCC/long-rna-seq-pipeline | author:ENCODE-DCC description:STAR based ENCODE Long RNA-Seq processing pipeline
+github-ENCODE-DCC-uniformAnalysis | uniformAnalysis | https://github.com/ENCODE-DCC/uniformAnalysis | author:ENCODE-DCC description:Uniform analysis pipeline work at UCSC for ENCODE
+github-ENCODE-DCC-submission_sample_scripts | submission_sample_scripts | https://github.com/ENCODE-DCC/submission_sample_scripts | author:ENCODE-DCC description:Scripts to demonstrate the ENCODE REST API for metadata submission.
+github-ENCODE-DCC-encValData | encValData | https://github.com/ENCODE-DCC/encValData | author:ENCODE-DCC 
+github-ENCODE-DCC-WranglerScripts | WranglerScripts | https://github.com/ENCODE-DCC/WranglerScripts | author:ENCODE-DCC description:Collection of scripts used by the wranglers to interact with the servers
+github-ENCODE-DCC-qc_metrics | qc_metrics | https://github.com/ENCODE-DCC/qc_metrics | author:ENCODE-DCC description:Module to grab QC metrics from ENCODE uniform processing pipelines
+github-ENCODE-DCC-snovault | snovault | https://github.com/ENCODE-DCC/snovault | author:ENCODE-DCC description:The SnoVault general purpose hybrid object-relational database
+github-ENCODE-DCC-ucscGb | ucscGb | https://github.com/ENCODE-DCC/ucscGb | author:ENCODE-DCC description:Python code out of the UCSC Genome Brower "kent/src" tree
+github-ENCODE-DCC-cvDjango | cvDjango | https://github.com/ENCODE-DCC/cvDjango | author:ENCODE-DCC description:Repository to try out Django in the implementation of controlled vocabulary and experimental meta-data
+github-ENCODE-DCC-ENCODE-DAC-pipelines | ENCODE-DAC-pipelines | https://github.com/ENCODE-DCC/ENCODE-DAC-pipelines | author:ENCODE-DCC description:Hub for data analysis pipelines and software in ENCODE 3.
+github-ENCODE-DCC-dnase_pipeline | dnase_pipeline | https://github.com/ENCODE-DCC/dnase_pipeline | author:ENCODE-DCC description:ENCODE DNase-seq pipeline essentials for running on dnanexus.
+github-ENCODE-DCC-dna-me-pipeline | dna-me-pipeline | https://github.com/ENCODE-DCC/dna-me-pipeline | author:ENCODE-DCC description:DCC/DAC methylation pipeline source
+github-ENCODE-DCC-pyencoded-tools | pyencoded-tools | https://github.com/ENCODE-DCC/pyencoded-tools | author:ENCODE-DCC 
+github-ENCODE-DCC-Bismark-ENCODE-WGBS | Bismark-ENCODE-WGBS | https://github.com/ENCODE-DCC/Bismark-ENCODE-WGBS | author:ENCODE-DCC description:DNANexus Whole Genome Bisulphite Analysis Pipeline
+github-ENCODE-DCC-encodedES | encodedES | https://github.com/ENCODE-DCC/encodedES | author:ENCODE-DCC description:Python module to download, parse and index ontology files.
+github-ENCODE-DCC-wgot | wgot | https://github.com/ENCODE-DCC/wgot | author:ENCODE-DCC description:Peformant parallel GET extracted from aws-cli
+github-ENCODE-DCC-trackhub_example | trackhub_example | https://github.com/ENCODE-DCC/trackhub_example | author:ENCODE-DCC description:Simple examples of common data and organization types used to vizualize data in the UCSC Genome Browser using Track Hubs
+github-ENCODE-DCC-s3-bucket-listing | s3-bucket-listing | https://github.com/ENCODE-DCC/s3-bucket-listing | author:ENCODE-DCC description:Create nice directory listings for s3 buckets with javascript and HTML.
+github-ENCODE-DCC-Meta-capture-pure-js-prototype | Meta-capture-pure-js-prototype | https://github.com/ENCODE-DCC/Meta-capture-pure-js-prototype | author:ENCODE-DCC description:Prototype Metadata capture in JSON using Jade / Bootstrap / Knockout JS / Express / Mongoose
+github-ENCODE-DCC-dagre-d3 | dagre-d3 | https://github.com/ENCODE-DCC/dagre-d3 | author:ENCODE-DCC description:A D3-based renderer for Dagre
+github-ENCODE-DCC-file-validation-pipeline | file-validation-pipeline | https://github.com/ENCODE-DCC/file-validation-pipeline | author:ENCODE-DCC description:ENCODE / DNA nexus pipeline for file validation
+github-ENCODE-DCC-dxencode | dxencode | https://github.com/ENCODE-DCC/dxencode | author:ENCODE-DCC description:Utility module to interface encoded metadatabase, AWS, and DNANexus api for Universal Pipelines
+github-ENCODE-DCC-dalliance | dalliance | https://github.com/ENCODE-DCC/dalliance | author:ENCODE-DCC description:Interactive web-based genome browser.
+github-ENCODE-DCC-Mappings | Mappings | https://github.com/ENCODE-DCC/Mappings | author:ENCODE-DCC description:Official ENCODE mappings for a variety of terms
+github-ENCODE-DCC-dccMetadataImport | dccMetadataImport | https://github.com/ENCODE-DCC/dccMetadataImport | author:ENCODE-DCC description:Tables of metadata to import to the DCC.
+github-ENCODE-DCC-encodemouseportal | encodemouseportal | https://github.com/ENCODE-DCC/encodemouseportal | author:ENCODE-DCC 
+github-ENCODE-DCC-modencode | modencode | https://github.com/ENCODE-DCC/modencode | author:ENCODE-DCC description:modENCODE temporary site
+github-ENCODE-DCC-encode_slims | encode_slims | https://github.com/ENCODE-DCC/encode_slims | author:ENCODE-DCC 
+github-ENCODE-DCC-dna-nexus-collaboration | dna-nexus-collaboration | https://github.com/ENCODE-DCC/dna-nexus-collaboration | author:ENCODE-DCC description:ENCODE-DNANexus collaboration
+github-ENCODE-DCC-modENCODE-comparative-website | modENCODE-comparative-website | https://github.com/ENCODE-DCC/modENCODE-comparative-website | author:ENCODE-DCC description:Comparative modENCODE/ENCODE website.
+github-ENCODE-DCC-metadata-to-pipelines | metadata-to-pipelines | https://github.com/ENCODE-DCC/metadata-to-pipelines | author:ENCODE-DCC description:Repository for code used in translating encoded metadata to pipelines.
+github-ENCODE-DCC-react-bootstrap | react-bootstrap | https://github.com/ENCODE-DCC/react-bootstrap | author:ENCODE-DCC description:Bootstrap 3 components built with React
+github-ENCODE-DCC-trackhubtest | trackhubtest | https://github.com/ENCODE-DCC/trackhubtest | author:ENCODE-DCC description:Regression Test's for UCSC Genome Browser Track Hubs
+github-ENCODE-DCC-geo-submission | geo-submission | https://github.com/ENCODE-DCC/geo-submission | author:ENCODE-DCC 
+github-ENCODE-DCC-DAC_submissions | DAC_submissions | https://github.com/ENCODE-DCC/DAC_submissions | author:ENCODE-DCC description:Scripts to support data and metadata submissions from the DAC
+github-ENCODE-DCC-encoded_commands | encoded_commands | https://github.com/ENCODE-DCC/encoded_commands | author:ENCODE-DCC description:Commands installed on mahout
+github-ENCODE-DCC-ENCODE_Data_Hubs | ENCODE_Data_Hubs | https://github.com/ENCODE-DCC/ENCODE_Data_Hubs | author:ENCODE-DCC 
+github-ENCODE-DCC-pyramid_persona | pyramid_persona | https://github.com/ENCODE-DCC/pyramid_persona | author:ENCODE-DCC description:Pyramid plugin to use persona for authentication
+github-ENCODE-DCC-trackhub | trackhub | https://github.com/ENCODE-DCC/trackhub | author:ENCODE-DCC description:create, manage, and upload track hubs for use in the UCSC genome browser
