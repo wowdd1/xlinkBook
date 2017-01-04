@@ -264,7 +264,7 @@ class ArxivSpider(Spider):
                 print 'loading history file'
                 files = []
                 for i in range(0, len(counts)):
-                    files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2016')
+                    files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2017')
 
                 for fileName in files:
 

@@ -151,7 +151,7 @@ class Config():
     fontsize_after_click = ''
 
     fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
-		  'civilization' : ip_adress + '/?db=other/&key=civilization2016&column=2',\
+		  'civilization' : ip_adress + '/?db=other/&key=civilization2017&column=2',\
           'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
           #'rss' : ip_adress + '/?db=rss/&key=rss2016',\
           #'disk' : ip_adress + '/?db=other/&key=disk2016',\
@@ -160,10 +160,8 @@ class Config():
           #'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
           #'members' : ip_adress + '/?db=rank/&key=members2016&column=2',\
           'rank' : ip_adress + '/?db=rank/&key=?',\
-          'frontier' : ip_adress + '/?db=other/&key=frontier2016',\
-          'research' : ip_adress + '/?db=other/&key=research2016',\
-          #'rank' : ip_adress + '/?db=rank/&key=?',\
-		  'youtube' :  ip_adress + '/?db=videos/&key=youtube2016&column=3'}
+          'frontier' : ip_adress + '/?db=other/&key=frontier2017',\
+          'research' : ip_adress + '/?db=other/&key=research2017'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
           #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
@@ -257,7 +255,8 @@ class Config():
                     'http://st.depositphotos.com/1007919/3724/i/950/depositphotos_37248955-stock-photo-binary-background.jpg',\
                     'http://amazingstuff.co.uk/wp-content/uploads/2012/02/scale_of_the_universe_2.png',\
                     'https://curiositando.files.wordpress.com/2014/12/cervello_destro1.jpg',\
-                    'http://img1.voc.com.cn/UpLoadFile/2013/03/05/201303051655526838.jpg']
+                    'http://img1.voc.com.cn/UpLoadFile/2013/03/05/201303051655526838.jpg',\
+                    'http://p1.pstatp.com/large/530000529b6125ce87c']
 
     #=====icon====
     enable_website_icon = True

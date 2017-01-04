@@ -22,6 +22,7 @@ class MitSpider(Spider):
         self.ocw_links = self.ocw_spider.getOcwLinks(subject)
 
     def getTextBook(self, course_num):
+        '''
         terms = ['2015SP', '2014SP', '2013SP']
         for term in terms:
             r = requests.get('http://eduapps.mit.edu/textbook/books.html?Term=' + term + '&Subject=' + course_num)
@@ -34,6 +35,7 @@ class MitSpider(Spider):
                 if splits[0] == 'Course Has No Materials':
                     continue
                 return 'textbook:' + splits[1] + ' (' + splits[0] + ')' + ' '
+        '''
         return ''
 
     def getMitCourseLink(self, links, course_num):
