@@ -71,11 +71,7 @@ class Bookmark(BaseExtension):
         nocache = False
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
-        html = ''
-        if form_dict['column'] != '1' and form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
-            html += '<br>'
-        html += '<div class="ref"><ol>'
-        rID = form_dict['rID'].encode('utf8')
+
         print divID
         if divID.find('-cloud-') != -1:
             html = ''
@@ -85,6 +81,12 @@ class Bookmark(BaseExtension):
             else:
                 html = ''
             return html
+        
+        html = ''
+        if form_dict['column'] != '1' and form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
+            html += '<br>'
+        html += '<div class="ref"><ol>'
+        rID = form_dict['rID'].encode('utf8')
 
         fileName = form_dict['fileName'].encode('utf8')
         
