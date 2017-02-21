@@ -19,7 +19,7 @@ class History(BaseExtension):
     def __init__(self):
         BaseExtension.__init__(self)
         self.utils = Utils()
-        self.loadHistory()
+        #self.loadHistory()
         self.form_dict = None
 
     def loadHistory(self):
@@ -52,6 +52,10 @@ class History(BaseExtension):
         else:
             return []
 
+    def needBR(self):
+        return self.form_dict['column'] != '1' and self.form_dict.has_key('extension_count') and int(self.form_dict['extension_count']) > 12
+             
+
     def excute(self, form_dict):
         self.form_dict = form_dict
         if form_dict.has_key('nocache'):
@@ -60,28 +64,65 @@ class History(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         divID = form_dict['divID'].encode('utf8')
         alias = self.getAlias(rID.strip(), form_dict['originFileName'], nocache)
-
-        self.updateHistory()
-
         html = ''
-        if form_dict['column'] != '1' and form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
-            html += '<br>'
-        html += '<div class="ref"><ol>'
-        count = 0
-        item_dict = {}
-        for jobj in self.jobj_list:
-            if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
-                if item_dict.has_key(jobj['title'].strip()):
+
+        if self.existHistoryFile(form_dict['originFileName'].strip()):
+            historyFilename = form_dict['originFileName'][form_dict['originFileName'].rfind('/') + 1 :].strip()
+            f = open('extensions/history/data/' + historyFilename + '-history', 'r+')
+            rDict = {}
+            all_lines = f.readlines()
+            for line in all_lines:
+                r = Record(line)
+                if r.valid(r.line) == False:
                     continue
-                item_dict[jobj['title'].strip()] = ''
-                count += 1
-                html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                if r.get_url().strip() != '':
+                    rDict[r.get_url().strip()] = r
+            rList = []
+            if len(rDict) != len(all_lines):
+                f.truncate()
+                f.close()
+                f = open('extensions/history/data/' + historyFilename + '-history', 'r+')
+                for k, v in rDict.items():
+                    if v.line.strip() != '' and v.valid(r.line):
+                        f.write(v.line)
+                        if v.get_id().strip() == form_dict['rID'].strip():
+                            rList.append(v)
+            f.close()
 
-        html += "</ol></div>"
+            #f = open('extensions/history/data/' + historyFilename, 'r')
+            if len(rList) > 0:
+                if self.needBR():
+                    html += '<br>'
+                html += '<div class="ref"><ol>'
+                count = 0
+                rList.reverse()
+                for item in rList:
+                    count += 1
+                    html += '<li><span>' + str(count) + '.</span>'
+                    html += '<p>' + self.utils.enhancedLink(item.get_url().strip(), self.utils.formatTitle(item.get_title().strip().replace('%20', ' '), Config.smart_link_br_len, []), module='history', library=form_dict['originFileName'], rid=rID) + self.utils.getIconHtml(item.get_url().strip()) + '</p></li>'
+            #f.close()
+            return html
+        else:
+            self.updateHistory()
 
-        if count == 0:
-            html = ''
-        return html
+            if self.needBR():
+                html += '<br>'
+            html += '<div class="ref"><ol>'
+            count = 0
+            item_dict = {}
+            for jobj in self.jobj_list:
+                if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
+                    if item_dict.has_key(jobj['title'].strip()):
+                        continue
+                    item_dict[jobj['title'].strip()] = ''
+                    count += 1
+                    html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+
+            html += "</ol></div>"
+
+            if count == 0:
+                html = ''
+            return html
 
     def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[]):
         html = ''
@@ -129,8 +170,13 @@ class History(BaseExtension):
     def containIgoncase(self, leftData, rightData):
         return leftData.lower().find(rightData.lower()) != -1
 
+    def existHistoryFile(self, filename):
+        if filename.find('/') != -1:
+            filename = filename[filename.rfind('/') + 1 :]
+        return os.path.exists('extensions/history/data/' + filename + '-history')
+
     def check(self, form_dict):
         self.updateHistory()
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        return os.path.exists('extensions/history/data/chrome_history.json') and self.containIgoncase(self.raw_data, rTitle)
+        return self.existHistoryFile(form_dict['originFileName'])
 

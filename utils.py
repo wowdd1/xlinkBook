@@ -830,6 +830,13 @@ class Utils:
                 dirs += self.clientQueryDirs(dir_path)
         return dirs
 
+    def isAccountTag(self, content, tag_list_account):
+        if content.find(':') != -1:
+            prefix = content[0 : content.find(':') + 1].strip()
+            return ' '.join(tag_list_account.keys()).find(prefix) != -1
+        else:
+            return False
+
     def accountMode(self, tag_list_account, tag_list_account_mode, engin, resourceType):
         if Config.smart_engin_lucky_mode_for_account:
             accountTags = ' '.join(tag_list_account)
@@ -847,7 +854,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top'):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False):
         url = url.strip()
         user_log_js = ''
         query_url_js = ''
@@ -861,20 +868,23 @@ class Utils:
         if searchText == '':
             searchText = send_text
         newTabArgs = 'false'
+        isTagArgs = 'false'
         if newTab:
             newTabArgs = 'true'
+        if isTag:
+            isTagArgs = 'true'
         if useQuote:
             # because array.push('') contain ', list.py will replace "'" to ""
             # so use  #quote as ', in appendContent wiil replace #quote back to '
-            user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote);"
+            user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, #quote" + resourceType + "#quote);"
 
-            query_url_js = "queryUrlFromServer(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, " + newTabArgs + ");"
+            query_url_js = "queryUrlFromServer(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, " + newTabArgs + ", " + isTagArgs+ ", #quote" + fileName + "#quote);"
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, #quote"+ Config.background_after_click +"#quote, #quote" + Config.fontsize_after_click + "#quote, #quote" + resourceType + "#quote);"
 
         else:
             user_log_js = "userlog('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');"
-            query_url_js = "queryUrlFromServer('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "', " + newTabArgs + ");"
+            query_url_js = "queryUrlFromServer('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "', " + newTabArgs + ", " + isTagArgs + ", '" + fileName + "');"
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
 
@@ -908,11 +918,12 @@ class Utils:
                 for link in urls:
                     if link == '':
                         continue
+
                     if newTab:
                         if useQuote:
-                            open_js += "window.open(#quote" + link + "#quote);"
+                            open_js += "window.open(#quote" + link + "#quote);updateSearchbox(#quote" + searchText + "#quote);"
                         else:
-                            open_js += "window.open('" + link + "');"
+                            open_js += "window.open('" + link + "');updateSearchbox('" + searchText + "');"
                     else:
                         if useQuote:
                             open_js += "window.location.href = #quote" + link + "#quote;"
@@ -924,7 +935,7 @@ class Utils:
         result = ''
         
         if dialogMode:
-            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="' + dialogPlacement + '" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '" id="' + aid + '">'
+            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="' + dialogPlacement + '" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '#' + str(isTag) + '" id="' + aid + '">'
         else:
             result = '<a target="_blank" href="javascript:void(0);"'
 
@@ -955,6 +966,7 @@ class Utils:
             result += '</a>'
 
         return result
+
 
     def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False, showText='', module='', library='', rid='', resourceType=''):
         if text != '':
@@ -1325,7 +1337,7 @@ class Utils:
         if Config.enable_website_icon == False:
             return ''
         src = ''
-        if url.startswith('http'):
+        if url.startswith('http') and url.endswith('btnI=1') == False:
             url = url[0 : url.find('/', url.find('//') + 2)]
         for k, v in Config.website_icons.items():
             if url.find(k) != -1:

@@ -203,7 +203,7 @@ def print_keyword(file_name):
 
 def contain_keyword(text):
     for k in keyword_list:
-        if text.find(k) != -1:
+        if text.find(k) != -1 or text.find(k.replace(':', '')) != -1:
             return True
     return False
 
@@ -1013,6 +1013,9 @@ def smartLink(content, record, containID=''):
         last_content += content.strip()
         return content
 
+def isAccountTag(content):
+    return utils.isAccountTag(content, tag.tag_list_account)
+
 def genSmartAgentLinkHtml(tag, ret, record, split_char, content):
     agentList = []
     if ret.find(split_char) != -1:
@@ -1041,13 +1044,6 @@ def genAccountHtml(tagStr, record, content, containID=''):
     else:
         return ''
 
-
-def isAccountTag(content):
-    if content.find(':') != -1:
-        prefix = content[0 : content.find(':') + 1].strip()
-        return ' '.join(tag.tag_list_account.keys()).find(prefix) != -1
-    else:
-        return False
 
 def isSmartLinkTag(content):
     if content.find(':') != -1:
@@ -1118,7 +1114,12 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             else:
                 html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
 
-    return content[ 0 : content.find(':') + 1 ]  + html
+    return genTagLink(content, 'main', source, record.get_id(), tag, dialogMode, aid, crossref) + html
+
+def genTagLink(content, module, library, rid, resourceType, dialogMode, aid, crossref):
+    if crossref:
+        dialogMode = False
+    return utils.enhancedLink('', '<font color="#66CCFF">' + content[ 0 :  content.find(':')].strip() + '</font>', module=module, library=library, fileName=library, rid=rid, resourceType=resourceType, urlFromServer=True, dialogMode=dialogMode, aid=aid, isTag=True) + ':'
 
 def genCrossrefHtml(rid, aid, tag, content):
     html = ''

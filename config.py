@@ -6,9 +6,13 @@ class Config():
     #default_db = 'db'
     default_subject = 'eecs'
 
+    default_db = 'db' #'2016-db'
+
 
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
+
+    igon_authorized = True
 
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
@@ -17,7 +21,7 @@ class Config():
 
     smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag_batch_open = False
-    smart_engin_for_command_batch_open = ['google', 'baidu']
+    smart_engin_for_command_batch_open = ['twitter', 'baidu']
     
     recommend_engin = True
     recommend_engin_num = 23
@@ -59,12 +63,12 @@ class Config():
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
-    menu_library_list = ['ai-library', 'multimedia-library', 'cognitive-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library']
+    menu_library_list = ['ai-library', 'multimedia-library', 'mind-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library']
     #default_library = ''
     default_library = 'ai-library'
     #default_library = 'engineering-library'
     #default_library = 'multimedia-library'
-    #default_library = 'cognitive-library'
+    #default_library = 'mind-library'
     #default_library = 'neuro-library'
     #default_library = 'gene-library'
     #default_library = 'math-library'
@@ -73,7 +77,7 @@ class Config():
     #default_library = 'business-finance-library'
     #default_library = 'medical-library'
     #default_library = 'energy-library'
-    #default_library = 'military(NBC)-library'
+    #default_library = 'aerospace-library'
     #default_library = 'universe-library'
     #default_library = 'earth-library'
     #default_library = 'social-library'
@@ -81,6 +85,11 @@ class Config():
     #default_library = 'political-library'
     #default_library = 'media-library'
     #default_library = 'telecom-library'
+    #default_library = 'entertainment-library'
+    #default_library = 'military-library'
+    #default_library = 'product-library'
+    #default_library = 'research-library'
+
 
     #show random preview when click nav link
 
@@ -160,8 +169,7 @@ class Config():
           #'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
           #'members' : ip_adress + '/?db=rank/&key=members2016&column=2',\
           'rank' : ip_adress + '/?db=rank/&key=?',\
-          'frontier' : ip_adress + '/?db=other/&key=frontier2017',\
-          'research' : ip_adress + '/?db=other/&key=research2017'}
+          'frontier' : ip_adress + '/?db=other/&key=frontier2017'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
           #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
@@ -227,11 +235,11 @@ class Config():
     '''
     #'''
     convert_url_args = '' #'?start=' #'?start=0&tag='
-    convert_page_step = 1
+    convert_page_step = 0
     convert_page_start = 1
     convert_page_max = 16
     convert_page_to_end = False
-    convert_tag = 'strong' #"div#title"  # tag#class or tag
+    convert_tag = 'h3' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
@@ -256,7 +264,9 @@ class Config():
                     'http://amazingstuff.co.uk/wp-content/uploads/2012/02/scale_of_the_universe_2.png',\
                     'https://curiositando.files.wordpress.com/2014/12/cervello_destro1.jpg',\
                     'http://img1.voc.com.cn/UpLoadFile/2013/03/05/201303051655526838.jpg',\
-                    'http://p1.pstatp.com/large/530000529b6125ce87c']
+                    'http://p1.pstatp.com/large/530000529b6125ce87c',\
+                    'http://zdnet4.cbsistatic.com/hub/i/r/2016/06/01/8a90fae5-22f7-480b-9ea5-a4f6252e7ed0/resize/1170x878/d756410179b9c71086b1496f4b924556/001.jpg',\
+                    'http://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/s9_rr_itc_cn/000254925dab8674da3fb790364ddcf0.png']
 
     #=====icon====
     enable_website_icon = True
@@ -283,4 +293,9 @@ class Config():
                  'quora' : 'https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/quora-128.png',\
                  'reddit' : 'http://icons.iconarchive.com/icons/uiconstock/socialmedia/128/Reddit-icon.png',\
                  'zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
-                 'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png'}
+                 'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
+                 'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
+                 'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
+                 'twitter' : 'https://abs.twimg.com/icons/apple-touch-icon-192x192.png',\
+                 'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
+                 'facebook' : 'https://images.seeklogo.net/2011/06/facebook-icon-logo-vector-400x400.png'}

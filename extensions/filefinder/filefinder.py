@@ -18,7 +18,7 @@ class Filefinder(BaseExtension):
     def excute(self, form_dict):
         self.form_dict = form_dict
         rTitle = form_dict['rTitle'] 
-        if rTitle.strip() == '':
+        if rTitle.strip() == '' or len(rTitle.strip()) < 3:
             return ''
         rID = form_dict['rID']
         fileName = form_dict['fileName'].encode('utf8')
