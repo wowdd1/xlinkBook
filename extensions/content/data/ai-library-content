@@ -1,99 +1,121 @@
-custom-namixuewei-1 | 无人驾驶汽车的产生与发展 | | parentid:custom-namixuewei
-custom-namixuewei-1.1 | 地面无人驾驶车辆的发展 | | parentid:custom-namixuewei-1
-custom-namixuewei-1.2 | 无人驾驶汽车的产生 | | parentid:custom-namixuewei-1
-custom-namixuewei-1.3 | 无人驾驶汽车成为现实 | | parentid:custom-namixuewei-1
-custom-namixuewei-1.4 | 无人驾驶汽车概述 | | parentid:custom-namixuewei-1
-custom-namixuewei-2 | 无人驾驶汽车体系结构 | | parentid:custom-namixuewei
-custom-namixuewei-2.1 | 分层递阶式与反应式体系结构 | | parentid:custom-namixuewei-2
-custom-namixuewei-2.1.1 | 分层递阶式体系结构 | | parentid:custom-namixuewei-2.1
-custom-namixuewei-2.1.2 | 反应式体系结构 | | parentid:custom-namixuewei-2.1
-custom-namixuewei-2.2 | 4D RCS | | parentid:custom-namixuewei-2
-custom-namixuewei-2.3 | JAUS | | parentid:custom-namixuewei-2
-custom-namixuewei-2.4 | 无人驾驶汽车体系结构实例 | | parentid:custom-namixuewei-2
-custom-namixuewei-2.4.1 | Boss无人驾驶汽车体系结构 | | parentid:custom-namixuewei-2.4
-custom-namixuewei-2.4.2 | Brr号无人驾驶汽车体系结构 | | parentid:custom-namixuewei-2.4
-custom-namixuewei-3 | 无人驾驶汽车环境感知技术基础 | | parentid:custom-namixuewei
-custom-namixuewei-3.1 | 激光雷达测距传感器 | | parentid:custom-namixuewei-3
-custom-namixuewei-3.1.1 | LMSSll激光雷达 | | parentid:custom-namixuewei-3.1
-custom-namixuewei-3.1.2 | 64线激光雷达 | | parentid:custom-namixuewei-3.1
-custom-namixuewei-3.2 | ESR毫米波雷达 | | parentid:custom-namixuewei-3
-custom-namixuewei-3.3 | 车载视觉传感器 | | parentid:custom-namixuewei-3
-custom-namixuewei-3.3.1 | 车载视觉 | | parentid:custom-namixuewei-3.3
-custom-namixuewei-3.3.2 | 彩色空间模型 | | parentid:custom-namixuewei-3.3
-custom-namixuewei-3.3.3 | 图像预处理 | | parentid:custom-namixuewei-3.3
-custom-namixuewei-3.4 | 传感器标定 | | parentid:custom-namixuewei-3
-custom-namixuewei-3.4.1 | 激光雷达标定 | | parentid:custom-namixuewei-3.4
-custom-namixuewei-3.4.2 | 摄像机标定 | | parentid:custom-namixuewei-3.4
-custom-namixuewei-3.4.3 | 摄像机和激光雷达联合标定 | | parentid:custom-namixuewei-3.4
-custom-namixuewei-4 | 无人驾驶汽车环境感知 | | parentid:custom-namixuewei
-custom-namixuewei-4.1 | 结构化道路检测 | | parentid:custom-namixuewei-4
-custom-namixuewei-4.1.1 | 结构化道路常用基本假设 | | parentid:custom-namixuewei-4.1
-custom-namixuewei-4.1.2 | 直道检测 | | parentid:custom-namixuewei-4.1
-custom-namixuewei-4.1.3 | 弯道检测 | | parentid:custom-namixuewei-4.1
-custom-namixuewei-4.1.4 | 复杂环境下车道检测图像预处理 | | parentid:custom-namixuewei-4.1
-custom-namixuewei-4.2 | 非结构化道路检测 | | parentid:custom-namixuewei-4
-custom-namixuewei-4.3 | 行驶环境中目标检测 | | parentid:custom-namixuewei-4
-custom-namixuewei-4.3.1 | 行人检测 | | parentid:custom-namixuewei-4.3
-custom-namixuewei-4.3.2 | 车辆检测 | | parentid:custom-namixuewei-4.3
-custom-namixuewei-4.4 | 交通信号灯和交通标志的检测 | | parentid:custom-namixuewei-4
-custom-namixuewei-4.4.1 | 交通信号灯检测 | | parentid:custom-namixuewei-4.4
-custom-namixuewei-4.4.2 | 交通标志检测 | | parentid:custom-namixuewei-4.4
-custom-namixuewei-5 | 无人驾驶汽车定位导航 | | parentid:custom-namixuewei
-custom-namixuewei-5.1 | 电子罗盘与速率陀螺的航向数据融合 | | parentid:custom-namixuewei-5
-custom-namixuewei-5.2 | GPS罗盘里程计位置数据融合 | | parentid:custom-namixuewei-5
-custom-namixuewei-5.2.1 | 全球导航定位系统 | | parentid:custom-namixuewei-5.2
-custom-namixuewei-5.2.2 | 航迹推算 | | parentid:custom-namixuewei-5.2
-custom-namixuewei-5.2.3 | GPS罗盘 里程计组合导航定位系统 | | parentid:custom-namixuewei-5.2
-custom-namixuewei-5.3 | 无人驾驶汽车GPS DR组合定位系统实例 | | parentid:custom-namixuewei-5
-custom-namixuewei-5.3.1 | 定位传感器 | | parentid:custom-namixuewei-5.3
-custom-namixuewei-5.3.2 | GPs DR组合方式分析 | | parentid:custom-namixuewei-5.3
-custom-namixuewei-5.3.3 | 互补式组合导航实现 | | parentid:custom-namixuewei-5.3
-custom-namixuewei-5.4 | 同时定位与地图创建 | | parentid:custom-namixuewei-5
-custom-namixuewei-5.4.1 | SLAM的实现方法 | | parentid:custom-namixuewei-5.4
-custom-namixuewei-5.4.2 | SIAM理论发展的关键问题 | | parentid:custom-namixuewei-5.4
-custom-namixuewei-5.4.3 | SlJAM应用举例 | | parentid:custom-namixuewei-5.4
-custom-namixuewei-5.5 | 视觉里程计 | | parentid:custom-namixuewei-5
-custom-namixuewei-5.5.1 | 视觉里程计的基本原理 | | parentid:custom-namixuewei-5.5
-custom-namixuewei-5.5.2 | 视觉里程计算法分类 | | parentid:custom-namixuewei-5.5
-custom-namixuewei-5.6 | 3 两帧视觉里程计算法中的关键问题 | | parentid:custom-namixuewei-5
-custom-namixuewei-5.6.1 | 考虑运动学约束的视觉里程计算法 | | parentid:custom-namixuewei-5.6
-custom-namixuewei-6 | 无人驾驶汽车路径规划 | | parentid:custom-namixuewei
-custom-namixuewei-6.1 | 路径规划概述 | | parentid:custom-namixuewei-6
-custom-namixuewei-6.1.1 | 环境地图表示方法 | | parentid:custom-namixuewei-6.1
-custom-namixuewei-6.1.2 | 路径搜索算法 | | parentid:custom-namixuewei-6.1
-custom-namixuewei-6.2 | 基于启发式搜索算法的路径规划 | | parentid:custom-namixuewei-6
-custom-namixuewei-6.2.1 | 经典A*路径规划 | | parentid:custom-namixuewei-6.2
-custom-namixuewei-6.2.2 | 改进的A*路径规划 | | parentid:custom-namixuewei-6.2
-custom-namixuewei-6.3 | 实时、增量式路径规划 | | parentid:custom-namixuewei-6
-custom-namixuewei-6.3.1 | 状态空间表示 | | parentid:custom-namixuewei-6.3
-custom-namixuewei-6.3.2 | 增量式路径规划 | | parentid:custom-namixuewei-6.3
-custom-namixuewei-6.3.3 | 变维度状态空间的实时、增量式路径规划 | | parentid:custom-namixuewei-6.3
-custom-namixuewei-7 | 无人驾驶汽车运动控制 | | parentid:custom-namixuewei
-custom-namixuewei-7.1 | 无人驾驶汽车的纵向控制 | | parentid:custom-namixuewei-7
-custom-namixuewei-7.1.1 | 油门控制 | | parentid:custom-namixuewei-7.1
-custom-namixuewei-7.1.2 | 制动控制 | | parentid:custom-namixuewei-7.1
-custom-namixuewei-7.1.3 | 油门与制动的切换规则 | | parentid:custom-namixuewei-7.1
-custom-namixuewei-7.2 | 基于航向预估的无人驾驶汽车横向控制 | | parentid:custom-namixuewei-7
-custom-namixuewei-7.2.1 | 二自由度动力学模型 | | parentid:custom-namixuewei-7.2
-custom-namixuewei-7.2.2 | 航向预估算法原理 | | parentid:custom-namixuewei-7.2
-custom-namixuewei-7.3 | 基于滑模变结构理论的无人驾驶汽车横向控制 | | parentid:custom-namixuewei-7
-custom-namixuewei-7.3.1 | 自动转向控制系统结构 | | parentid:custom-namixuewei-7.3
-custom-namixuewei-7.3.2 | 基于曲率的前馈控制 | | parentid:custom-namixuewei-7.3
-custom-namixuewei-7.3.3 | 基于偏差的反馈控制 | | parentid:custom-namixuewei-7.3
-custom-namixuewei-7.4 | 考虑环境信息与车辆约束的无人驾驶汽车路径跟踪 | | parentid:custom-namixuewei-7
-custom-namixuewei-7.4.1 | 考虑环境信息与车辆约束的行驶曲线生成 | | parentid:custom-namixuewei-7.4
-custom-namixuewei-7.4.2 | 基于车辆动力学约束的速度规划 | | parentid:custom-namixuewei-7.4
-custom-namixuewei-8 | 无人驾驶汽车一体化设计 | | parentid:custom-namixuewei
-custom-namixuewei-8.1 | 传统无人驾驶汽车 | | parentid:custom-namixuewei-8
-custom-namixuewei-8.2 | 无人驾驶汽车一体化设计 | | parentid:custom-namixuewei-8
-custom-namixuewei-8.2.1 | 无人驾驶汽车动力学 | | parentid:custom-namixuewei-8.2
-custom-namixuewei-8.2.2 | 无人驾驶汽车一体化体系结构 | | parentid:custom-namixuewei-8.2
-custom-namixuewei-8.2.3 | 无人驾驶汽车底层一体化设计 | | parentid:custom-namixuewei-8.2
-custom-namixuewei-8.3 | 无人驾驶汽车仿真平台与实车测试 | | parentid:custom-namixuewei-8
-custom-namixuewei-8.3.1 | 无人驾驶汽车仿真平台 | | parentid:custom-namixuewei-8.3
-custom-namixuewei-8.3.2 | 无人驾驶汽车的实车测试 | | parentid:custom-namixuewei-8.3
-custom-namixuewei-9 | 无人驾驶汽车的机遇与挑战 | | parentid:custom-namixuewei
-custom-namixuewei-9.1 | 车联网与智能交通系统 | | parentid:custom-namixuewei-9
-custom-namixuewei-9.2 | 国外无人驾驶汽车 | | parentid:custom-namixuewei-9
-custom-namixuewei-9.3 | 我国无人驾驶汽车 | | parentid:custom-namixuewei-9
-custom-namixuewei-9.4 | 无人驾驶汽车发展面临的机遇与挑战 | | parentid:custom-namixuewei-9
+custom-sdcnd-1 | Fundamentals | | parentid:custom-sdcnd
+custom-sdcnd-1.1 | Linear Algebra | | parentid:custom-sdcnd-1
+custom-sdcnd-1.2 | Calculus | | parentid:custom-sdcnd-1
+custom-sdcnd-1.3 | Mathematical Skills | | parentid:custom-sdcnd-1
+custom-sdcnd-1.4 | Probability Theory and Statistics | | parentid:custom-sdcnd-1
+custom-sdcnd-1.5 | Input Sources | | parentid:custom-sdcnd-1
+custom-sdcnd-1.6 | Camera | | parentid:custom-sdcnd-1
+custom-sdcnd-1.7 | LIDAR | | parentid:custom-sdcnd-1
+custom-sdcnd-1.8 | RADAR | | parentid:custom-sdcnd-1
+custom-sdcnd-1.9 | GPS | | parentid:custom-sdcnd-1
+custom-sdcnd-1.10 | IMU | | parentid:custom-sdcnd-1
+custom-sdcnd-2 | Fields | | parentid:custom-sdcnd
+custom-sdcnd-2.1 | Artificial Intelligence | | parentid:custom-sdcnd-2
+custom-sdcnd-2.2 | Machine Learning | | parentid:custom-sdcnd-2
+custom-sdcnd-2.3 | Computer Vision | | parentid:custom-sdcnd-2
+custom-sdcnd-2.4 | Deep Learning | | parentid:custom-sdcnd-2
+custom-sdcnd-2.5 | Control Theory | | parentid:custom-sdcnd-2
+custom-sdcnd-2.6 | Reinforcement Learning | | parentid:custom-sdcnd-2
+custom-sdcnd-2.7 | Signal Processing | | parentid:custom-sdcnd-2
+custom-sdcnd-3 | Techniques | | parentid:custom-sdcnd
+custom-sdcnd-3.1 | Motion Planning | | parentid:custom-sdcnd-3
+custom-sdcnd-3.2 | SLAM | | parentid:custom-sdcnd-3
+custom-sdcnd-3.3 | Image Processing | | parentid:custom-sdcnd-3
+custom-sdcnd-3.4 | Sensor Calibration | | parentid:custom-sdcnd-3
+custom-sdcnd-3.5 | Sensor Fusion | | parentid:custom-sdcnd-3
+custom-sdcnd-3.6 | Feature Extraction | | parentid:custom-sdcnd-3
+custom-sdcnd-3.7 | Object Detection | | parentid:custom-sdcnd-3
+custom-sdcnd-3.8 | Classification & Tracking | | parentid:custom-sdcnd-3
+custom-sdcnd-4 | Algorithms | | parentid:custom-sdcnd
+custom-sdcnd-4.1 | Kalman Filters | | parentid:custom-sdcnd-4
+custom-sdcnd-4.2 | EKF | | parentid:custom-sdcnd-4
+custom-sdcnd-4.3 | Bayesian Networks | | parentid:custom-sdcnd-4
+custom-sdcnd-4.4 | SLAM | | parentid:custom-sdcnd-4
+custom-sdcnd-4.5 | Yamauchi | | parentid:custom-sdcnd-4
+custom-sdcnd-4.6 | STC | | parentid:custom-sdcnd-4
+custom-sdcnd-4.7 | CCD | | parentid:custom-sdcnd-4
+custom-sdcnd-4.8 | A* | | parentid:custom-sdcnd-4
+custom-sdcnd-4.9 | D* | | parentid:custom-sdcnd-4
+custom-sdcnd-4.10 | Particle Filters | | parentid:custom-sdcnd-4
+custom-sdcnd-4.11 | Other Bayesian Filters | | parentid:custom-sdcnd-4
+custom-sdcnd-5 | Languages | | parentid:custom-sdcnd
+custom-sdcnd-5.1 | C/C++ | | parentid:custom-sdcnd-5
+custom-sdcnd-5.2 | Python | | parentid:custom-sdcnd-5
+custom-sdcnd-5.3 | Java | | parentid:custom-sdcnd-5
+custom-sdcnd-5.4 | Matlab/Simulink | | parentid:custom-sdcnd-5
+custom-sdcnd-6 | Libraries | | parentid:custom-sdcnd
+custom-sdcnd-6.1 | OpenCV | | parentid:custom-sdcnd-6
+custom-sdcnd-6.2 | TensorFlow | | parentid:custom-sdcnd-6
+custom-sdcnd-6.3 | Torch | | parentid:custom-sdcnd-6
+custom-sdcnd-6.4 | Theano | | parentid:custom-sdcnd-6
+custom-sdcnd-6.5 | Scikit-Learn | | parentid:custom-sdcnd-6
+custom-sdcnd-6.6 | CUDA | | parentid:custom-sdcnd-6
+custom-sdcnd-7 | Tools | | parentid:custom-sdcnd
+custom-sdcnd-7.1 | Linux Environment | | parentid:custom-sdcnd-7
+custom-sdcnd-7.2 | ROS | | parentid:custom-sdcnd-7
+custom-sdcnd-7.3 | gbd/ddd | | parentid:custom-sdcnd-7
+custom-sdcnd-7.4 | git | | parentid:custom-sdcnd-7
+custom-sdcnd-7.5 | Jenkins | | parentid:custom-sdcnd-7
+custom-sdcnd-7.6 | Travis | | parentid:custom-sdcnd-7
+custom-sdcnd-7.7 | Docker | | parentid:custom-sdcnd-7
+custom-sdcnd-7.8 | Hadoop | | parentid:custom-sdcnd-7
+custom-sdcnd-7.9 | Spark | | parentid:custom-sdcnd-7
+custom-sdcnd-7.10 | Storm | | parentid:custom-sdcnd-7
+custom-sdcnd-7.11 | Kafka | | parentid:custom-sdcnd-7
+custom-sdcnd-7.12 | Akka | | parentid:custom-sdcnd-7
+custom-sdcnd-7.13 | Zookeeper | | parentid:custom-sdcnd-7
+custom-sdcnd-7.14 | GIS Software (Point Cloud) | | parentid:custom-sdcnd-7
+custom-sdcnd-8 | Software Engineering Methodologies | | parentid:custom-sdcnd
+custom-sdcnd-8.1 | Unit Testing | | parentid:custom-sdcnd-8
+custom-sdcnd-8.2 | validation & release (development and product lifecycle) | | parentid:custom-sdcnd-8
+custom-sdcnd-8.3 | System & Customer acceptance testing | | parentid:custom-sdcnd-8
+custom-sdcnd-8.4 | Object-Oriented Analysis | | parentid:custom-sdcnd-8
+custom-sdcnd-8.5 | Object-Oriented Design | | parentid:custom-sdcnd-8
+custom-sdcnd-8.6 | System Integration | | parentid:custom-sdcnd-8
+custom-sdcnd-8.7 | Software Architectures | | parentid:custom-sdcnd-8
+custom-sdcnd-8.8 | Monitoring and debugging | | parentid:custom-sdcnd-8
+custom-sdcnd-9 | Software Development Skills | | parentid:custom-sdcnd
+custom-sdcnd-9.1 | Code Optimization | | parentid:custom-sdcnd-9
+custom-sdcnd-9.2 | Modular Code | | parentid:custom-sdcnd-9
+custom-sdcnd-9.3 | Implement & Adapt Complex Algorithms | | parentid:custom-sdcnd-9
+custom-sdcnd-9.4 | Computer Networking | | parentid:custom-sdcnd-9
+custom-sdcnd-9.5 | Data Collection | | parentid:custom-sdcnd-9
+custom-sdcnd-9.6 | Offline data processing and analytics | | parentid:custom-sdcnd-9
+custom-sdcnd-9.7 | Large Code base manipulation & management | | parentid:custom-sdcnd-9
+custom-sdcnd-9.8 | Robust Safety-critical efficient code | | parentid:custom-sdcnd-9
+custom-sdcnd-10 | Deployment Environments | | parentid:custom-sdcnd
+custom-sdcnd-10.1 | Distributed Architectures | | parentid:custom-sdcnd-10
+custom-sdcnd-10.2 | Parallel Architectures (GPU) | | parentid:custom-sdcnd-10
+custom-sdcnd-10.3 | Scalable Architectures | | parentid:custom-sdcnd-10
+custom-sdcnd-10.4 | Real-Time Operating Systems (low-latency) | | parentid:custom-sdcnd-10
+custom-sdcnd-10.5 | Embedded Systems | | parentid:custom-sdcnd-10
+custom-sdcnd-10.6 | [Embedded] Firmware | | parentid:custom-sdcnd-10
+custom-sdcnd-10.7 | High Availability | | parentid:custom-sdcnd-10
+custom-sdcnd-10.8 | Fault-tolerance | | parentid:custom-sdcnd-10
+custom-sdcnd-11 | Personal Skills | | parentid:custom-sdcnd
+custom-sdcnd-11.1 | Inquisitive | | parentid:custom-sdcnd-11
+custom-sdcnd-11.2 | Proactive | | parentid:custom-sdcnd-11
+custom-sdcnd-11.3 | Interested in learning | | parentid:custom-sdcnd-11
+custom-sdcnd-11.4 | Work Independently without supervision | | parentid:custom-sdcnd-11
+custom-sdcnd-11.5 | Take Initiative to suggest and implement improvements | | parentid:custom-sdcnd-11
+custom-sdcnd-11.6 | Escalate risk | | parentid:custom-sdcnd-11
+custom-sdcnd-11.7 | Work under aggressive schedules towards world-class solutions | | parentid:custom-sdcnd-11
+custom-sdcnd-11.8 | Talented | | parentid:custom-sdcnd-11
+custom-sdcnd-11.9 | energetic & committed | | parentid:custom-sdcnd-11
+custom-sdcnd-11.10 | Ability to deliver exceptional results in challenging tasks | | parentid:custom-sdcnd-11
+custom-sdcnd-11.11 | Fearless | | parentid:custom-sdcnd-11
+custom-sdcnd-11.12 | Thrives under pressure | | parentid:custom-sdcnd-11
+custom-sdcnd-11.13 | Hyper focused | | parentid:custom-sdcnd-11
+custom-sdcnd-11.14 | Yearn for cutting edge and high profile projects | | parentid:custom-sdcnd-11
+custom-sdcnd-11.15 | Passionate about their craft | | parentid:custom-sdcnd-11
+custom-sdcnd-12 | Interpersonal Skills | | parentid:custom-sdcnd
+custom-sdcnd-12.1 | String verbal and written communication skills | | parentid:custom-sdcnd-12
+custom-sdcnd-12.2 | Collaborate in multi-disciplinary team | | parentid:custom-sdcnd-12
+custom-sdcnd-12.3 | Fast-paced & dynamic environments | | parentid:custom-sdcnd-12
+custom-sdcnd-12.4 | Escalate risks | | parentid:custom-sdcnd-12
+custom-sdcnd-12.5 | Mentor-ship | | parentid:custom-sdcnd-12
+custom-sdcnd-12.6 | Working remote (time-zones) & distributed (location) teams | | parentid:custom-sdcnd-12
+custom-sdcnd-12.7 | Open-Source contributor | | parentid:custom-sdcnd-12
+custom-sdcnd-12.8 | Passionate about working on startups | | parentid:custom-sdcnd-12
+custom-sdcnd-12.9 | Leadership | | parentid:custom-sdcnd-12
+custom-sdcnd-12.10 | entrepreneurship & persuasion | | parentid:custom-sdcnd-12

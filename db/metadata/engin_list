@@ -544,3 +544,17 @@ engin-553 | angel | https://angel.co/%s | priority:4 description:job
 engin-554 | panopto | https://www.google.com/search?q=panopto+%s | priority:8 description:course star
 engin-555 | panduoduo | http://www.panduoduo.net/s/name/ | priority:4 description:book cloud
 engin-556 | universe | https://www.universe.com/explore?query=%s | priority:4 description:event
+engin-557 | memect.com | http://ml.memect.com/search/?q=%s | priority:6 description:news
+engin-558 | learning | https://www.linkedin.com/learning/search?keywords=%s | priority:6 description:course shortname:linkedinLearn
+engin-559 | pluralsight | https://www.pluralsight.com/search?q=%s | priority:4 description:course
+engin-560 | authorea | https://www.authorea.com/browse?q= | priority:4 description:tools
+engin-561 | picatic | https://www.picatic.com/events#?q=%s&date=any | priority:4 description:event
+engin-562 | slideplayer | http://slideplayer.com/search/?q= | priority:4 description:slide
+engin-563 | chalkstreet | https://www.chalkstreet.com/search/#!/q=%s/type=all | priority:4 description:course
+engin-564 | nasa | https://www.ncbi.nlm.nih.gov/pmc/?term=(%s)+AND+%22nasa+funded%22%5BFilter%5D | priority:7 description:paper
+engin-565 | cctalk | http://www.cctalk.com/search/?key= | priority:3 description:course
+engin-566 | datacamp | https://www.datacamp.com/courses/q: | priority:4 description:course
+engin-567 | hackster | https://www.hackster.io/search?q= | priority:3 description:course
+engin-568 | lynda | https://www.lynda.com/search?q= | priority:6 description:course
+engin-569 | paysa | https://www.paysa.com/jobs#!title=%s&skills=&page=1&limit=10&order=comp | priority:6 description:job
+engin-570 | sagepub | http://journals.sagepub.com/action/doSearch?AllField=%s | priority:6 description:journal

@@ -65,6 +65,13 @@ class Bookmark(BaseExtension):
         else:
             return []
 
+    def needBR(self):
+        if self.form_dict['column'] != '1' and self.form_dict.has_key('extension_count') and int(self.form_dict['extension_count']) > 12:
+            return True
+        if self.form_dict['column'] == '3' and int(self.form_dict['extension_count']) > 10:
+            return True
+        return False
+
     def excute(self, form_dict):
         self.form_dict = form_dict
         divID = form_dict['divID'].encode('utf8')
@@ -83,9 +90,10 @@ class Bookmark(BaseExtension):
             return html
         
         html = ''
-        if form_dict['column'] != '1' and form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
+        if self.needBR():
             html += '<br>'
         html += '<div class="ref"><ol>'
+
         rID = form_dict['rID'].encode('utf8')
 
         fileName = form_dict['fileName'].encode('utf8')

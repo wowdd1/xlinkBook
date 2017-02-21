@@ -30,6 +30,7 @@ function content(text, data) {
     rid = '';
     resourceType = '';
     aid = '';
+    isTag = false;
     result = content2(content_id, dialog_engin_count, dialog_command_count);
 
     if (data.indexOf('#') > 0) {
@@ -37,11 +38,15 @@ function content(text, data) {
         rid = split_data[0];
         resourceType = split_data[1];
         aid = split_data[2];
+        if (split_data[3] == 'True') {
+            isTag = true;
+        }
+        
     }
     
-    dialog_args = {type : 'dialog', rID : rid, searchText: text, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args};
+    dialog_args = {type : 'dialog', rID : rid, searchText: text, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args, isTag : isTag};
     $.post('/queryUrl', dialog_args, function(data) {
-        if (data.indexOf('#') > 0) {
+        if (data.indexOf('#') > 0 && data.substring(0, data.indexOf('#')).indexOf('color:') < 0) {
             engin_count = parseInt(data.substring(0, data.indexOf('#')));
             data = data.substring(data.indexOf('#') + 1);
             console.log('', aid);
@@ -83,6 +88,8 @@ function content2(content_id, dialog_engin_count, dialog_command_count) {
 
 $(document).ready(function(){
 
+  search_box = document.getElementById('search_txt');
+
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
   if (fileName.indexOf('exclusive') != -1) {
@@ -120,7 +127,7 @@ $(document).ready(function(){
       if (count < 300) {
           return;
       }
-      postArgs = {'db' : 'eecs/papers/arxiv/', 'key' : 'arxiv' + count + '-arxiv2016'}
+      postArgs = {'db' : 'eecs/papers/arxiv/', 'key' : 'arxiv' + count + '-arxiv' + getDateTimeStr()}
       var parent_div = document.getElementById('loadmore');
       var div = document.createElement('div');
       div.id = 'loadmore-div-' + count;
@@ -137,6 +144,13 @@ $(document).ready(function(){
   }
 });
 
+function getDateTimeStr(){
+    var s="";
+    var d = new Date();
+    s += d.getFullYear() ;
+    return s;
+}
+
 function setText(objN){
     var clicktext=document.getElementById(objN);
     if (clicktext.innerText == "..."){
@@ -145,6 +159,13 @@ function setText(objN){
         clicktext.innerText="...";
     }
     clicktext.style.color="#999966";
+}
+
+function updateSearchbox(text) {
+    search_box.value = text.split("%20").join(' ');
+    if (search_box_target != null) {
+        search_box_target.innerHTML = genEnginHtml(search_box_target.id, text, '', '');
+    }
 }
 
 function showdiv(targetid,objN){
@@ -651,22 +672,27 @@ function hidenMetadata(targetid, datatype, value){
     }
 }
 
+var search_box_target;
 function appendContentBox(targetid, boxid){
     var target=document.getElementById(targetid);
     var box=document.getElementById(boxid);
     search_box = box;
+    search_box_target = target;
     console.log("id", targetid);
     var data = box.value;
     while(data.indexOf(' ') >= 0) {
 	data = data.replace(' ', '%20');
     }
-    target.innerHTML = array.join("").replace(/#div/g, targetid).replace(/#topic/g, data).replace(/#otherInfo/g, "");
+    target.innerHTML = genEnginHtml(targetid, data, '', '');
     for (var i = 0; i < extensions.length; i++) {
         hidenMetadata(targetid, extensions[i], "none")
     }
 }
 
 function hidenMoreContent(pid, start) {
+    if (pid == 'searchbox_div') {
+        return;
+    }
     id1 = pid.split('-')[start];
     id2 = pid.split('-')[start + 1];
     
@@ -729,7 +755,8 @@ function replaceArg(url, arg, value) {
 
 function exec(command, text, url) {
     console.log('execCommand', url);
-    $.post('/exec', {command : command, text : text, fileName :  url }, function(data){});
+    updateSearchbox(text);
+    $.post('/exec', {command : command, text : text, fileName : url }, function(data){});
 }
 
 function userlog(text, url, module, library, rid, searchText, resourceType) {
@@ -770,8 +797,8 @@ function chanageLinkColor(obj, color, fontSize) {
     obj.innerHTML = '<s>' + obj.innerHTML + '</s>';
 }
 
-function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab) {
-    $.post("/queryUrl", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name}, function(data){
+function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab, isTag, fileName) {
+    $.post("/queryUrl", {text : text , searchText : searchText, url : url, module : module, library : library, rID : rid, resourceType: resourceType, user : user_name, isTag : isTag, fileName : fileName}, function(data){
         console.log('queryUrlFromServer--->', data);
         var urls = null;
         if (data.indexOf(' ') > 0) {
@@ -781,8 +808,10 @@ function queryUrlFromServer(text, url, module, library, rid, searchText, resourc
         }
 
         for (var i = 0; i < urls.length; i++) {
-            window.open(urls[i]);
-            userlog(text, urls[i], module, library, rid, searchText, resourceType);
+            if (urls[i] != '') {
+                window.open(urls[i]);
+                userlog(text, urls[i], module, library, rid, searchText, resourceType); 
+            }
         }
     });
 }

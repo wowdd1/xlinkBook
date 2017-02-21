@@ -99,9 +99,10 @@ class Content(BaseExtension):
         return self.genMetadataHtml(key, content_divID, defaultLinks)
 
     def genMetadataHtml(self, key, content_divID, defaultLinks):
-        html = '<div class="ref"><br><ol>'
-        if self.form_dict['column'] == '1':
-            html = '<div class="ref"><ol>'
+        html = '<div class="ref"><ol>'
+        if self.form_dict['column'] == '3' and int(self.form_dict['extension_count']) > 10:
+            html = '<div class="ref"><br><ol>'
+
         count = 0
         if self.datafile_content.has_key(key):
             self.record_content = self.datafile_content

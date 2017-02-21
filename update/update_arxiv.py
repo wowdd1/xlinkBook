@@ -338,8 +338,8 @@ class ArxivSpider(Spider):
                 break
         
         
-            print 'Sleeping for %i seconds' % (25.0 , )
-            time.sleep(25.0 + random.uniform(0, 3))  
+            print 'Sleeping for %i seconds' % (30.0 , )
+            time.sleep(30.0 + random.uniform(0, 3))  
         
         if self.incremental_mode:
             if len(all_papers) > 0:

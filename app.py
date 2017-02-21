@@ -295,9 +295,85 @@ def handlerQueryStarEngin():
     targetid = request.form['targetid']
     return ''
 
+def getCrossrefUrls(content):
+    urls = []
+    if content.find('#') != -1:
+        #print content + '<br>'
+        data = content.strip().split('#')
+        
+        if len(data) != 2:
+            return ''
+        filters = []
+        if data[1].find('+') != -1:
+            filters = data[1].split('+')
+        else:
+            filters = [data[1]]
+
+        db = data[0][0 : data[0].rfind('/') + 1].strip()
+        key = data[0][data[0].rfind('/') + 1 :].strip()
+        for ft in filters:
+            #print ft + '<br>'
+            link = 'http://localhost:5000/?db=' + db + '&key=' + key + '&filter=' + ft
+            urls.append(link)
+    return urls
+
 @app.route('/queryUrl', methods=['POST'])
 def handleQueryUrl():
     result = ''
+    print request.form
+    if request.form.has_key('isTag') and (request.form['isTag'] == True or request.form['isTag'] == 'True' or request.form['isTag'] == 'true'):
+        record = utils.getRecord(request.form['rID'], path=request.form['fileName'])
+        if record != None and record.get_id().strip() == request.form['rID']:
+            args = { 'tag' : request.form['searchText'].strip() + ':' } 
+            ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, args)
+            print ret
+            if ret != None:
+                if ret.find(', ') != -1:
+                    ret = ret.split(',')
+                else:
+                    ret = [ret]
+
+                if request.form.has_key('type') and request.form['type'] == 'dialog':
+                    resultDict = utils.clientQueryEnginUrl2(request.form['searchText'], resourceType=request.form['resourceType'])      
+                    count = 0
+                    #print  resultDict
+                    result = ''
+                    for k, v in resultDict.items():
+                        count += 1
+
+                        #if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
+                        #    v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
+                        script = ''
+                        for q in ret:
+                            script += "window.open('" + utils.toQueryUrl(utils.getEnginUrl(k.strip()), q.strip()).strip().replace('#', '') + "');"
+                        result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '" style="color:#999966;font-size:10pt;">' + k + '</a>'+ '&nbsp;'
+                        if count % 5 == 0 and count > 0 and len(resultDict) != 5:
+                            result += '<br>'
+                        if count >= Config.recommend_engin_num_dialog:
+                            break
+                        
+                    return result
+                else:
+                    urls = ''
+                    if request.form['resourceType'] == 'crossref':
+                        for q in ret:
+                            urlList = getCrossrefUrls(q.strip())
+                            urls += ' '.join(urlList) + ' '
+                        return urls
+                    else:
+                        if utils.isAccountTag(request.form['searchText'] + ':', tag.tag_list_account):
+                            for q in ret:
+                                urls += tag.tag_list_account[request.form['searchText'] + ':'].replace('%s', q.strip()) + ' '
+                            return urls
+                        else:
+                            for q in ret:
+                                urls += utils.toQueryUrl(utils.getEnginUrl('glucky'), q) + ' '
+                            return urls
+            else:
+                return ''
+        else:
+            return ''
+
     #print request.form
     if request.form.has_key('type'):
         if request.form['type'] == 'dialog':
@@ -317,7 +393,7 @@ def handleQueryUrl():
                     title = item[item.rfind('/') + 1: ]
                     script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', engin_args, false);"
 
-                    result += utils.enhancedLink('', title, searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
+                    result += utils.enhancedLink('', title, searchText=request.form['searchText'], style="color:#999966; font-size:10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
                     
                     if count % 5 == 0 and count > 0:
                         result += '<br>'
@@ -330,7 +406,7 @@ def handleQueryUrl():
                     count += 1
                     script = "exclusive('exclusive', '" + request.form['searchText'] + "', '', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', 'd:" + et + "', false);"
                     
-                    result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '";style="font-size: 10pt;">' + et + '</a>'+ '&nbsp;'
+                    result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '"style="color:#999966;font-size:10pt;">' + et + '</a>'+ '&nbsp;'
                 
                     if count % 9 == 0 and count > 0:
                         result += '<br>'
@@ -414,6 +490,15 @@ def handleUserLog():
     print '     mac: ' + request.form['mac']
     print '     ip: ' + request.form['ip']
     print '     from: ' + request.form['from']
+
+    module = request.form['module'].strip()
+    if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and module != 'history' and module != 'dialog' and module != 'star':
+        historyFile = 'extensions/history/data/' + library[library.rfind('/') + 1 :] + '-history'
+        line = request.form['rid'] + ' | ' + request.form['searchText'] + ' | ' + request.form['url'] + ' | '
+        cmd = 'echo "' + line + '" >> ' + historyFile
+        print cmd
+        output = subprocess.check_output(cmd, shell=True)
+
     return ''
 
 @app.route('/agent', methods=['POST'])
@@ -474,7 +559,7 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     print 'track:' + track
     if db.endswith('/') == False:
         db += '/'
-    cmd = "./list.py -i db/" + db + key + " -b 4"
+    cmd = "./list.py -i " + Config.default_db + "/" + db + key + " -b 4"
     if db != '':
         cmd += ' -u ' + db + ' ' #+ db.replace('/', '') + ' '
         #cmd += ' -u ' + db.replace('/', '') + ' '
@@ -532,10 +617,10 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     return cmd.replace('?', '') 
 
 def listDB():
-    return genList(sorted(os.listdir('db/')))
+    return genList(sorted(os.listdir(Config.default_db + '/')))
 
 def listAllFile(db):
-    folder = 'db/' + db
+    folder = Config.default_db + '/' + db
     files = sorted(os.listdir(folder))
     html = ''
     html += '<head>'
@@ -628,6 +713,9 @@ def login():
     redirect_uri = url_for('authorized', next=request.args.get('next') or
         request.referrer or None, _external=True)
     print(redirect_uri)
+    if Config.igon_authorized:
+        session['name'] = 'wowdd1'
+        return redirect(url_for('library'))
     # More scopes http://developer.github.com/v3/oauth/#scopes
     params = {'redirect_uri': redirect_uri, 'scope': 'user:email'}
     print(github.get_authorize_url(**params))

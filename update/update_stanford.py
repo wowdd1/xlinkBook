@@ -136,7 +136,10 @@ class StanfordSpider(Spider):
                 self.processData(f, subject, url + year_arg)
 
             for k, record in [(k,self.course_dict[k]) for k in sorted(self.course_dict.keys())]:
-                self.write_db(f, k, record.get_title().strip(), record.get_url().strip(), record.get_describe().strip())
+                title = record.get_title().strip()
+                if title.find('(') != -1:
+                    title = title[0 : title.find('(')].strip()
+                self.write_db(f, k, title, record.get_url().strip(), record.get_describe().strip())
                 self.count += 1 
 
             self.close_db(f)

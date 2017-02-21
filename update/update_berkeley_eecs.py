@@ -7,6 +7,8 @@
 from spider import *
 from update_berkeley_webcast import BerkeleyWebcastSpider
 from update_berkeley_catalog import BerkeleyCatalogSpider
+sys.path.append("..")
+from utils import Utils
 
 py3k = sys.version_info[0] >= 3
 if py3k:
@@ -70,6 +72,8 @@ class BerkeleyEECSSpider(Spider):
         self.deep_mind = True
         self.berkeleyWebcastSpider = BerkeleyWebcastSpider()
         self.berkeleyCatalogSpider = BerkeleyCatalogSpider()
+        self.utils = Utils()
+
     def getLink(self, url):
         r = requests.get(url)
         soup = BeautifulSoup(r.text)
@@ -138,25 +142,64 @@ class BerkeleyEECSSpider(Spider):
         #berkeley
         #"""
         print "downloading berkeley course info"
-        r = requests.get("http://www-inst.eecs.berkeley.edu/classes-cs.html")
-
-        parser = TableHandler()
-        parser.feed(r.text)
-
         file_name = self.get_file_name(self.subject, self.school)
         file_lines = self.countFileLineNum(file_name)
         f = self.open_db(file_name + ".tmp")
         self.count = 0
+
+        r = requests.get("http://www-inst.eecs.berkeley.edu/classes-eecs.html")
+
+        course_id = ''
+        course_name = ''
+        url = ''
+        for item in r.text.split('\n'):
+            if item.find('colspan') != -1:
+                continue
+            if item.find('<') == -1:
+                continue
+
+            if item.find('href') != -1 and item.find('html') == -1:
+                course_id = self.utils.clearHtmlTag(item).strip()
+                #url = item[item.find('/'): item.find('>', item.find('/')) - 1]
+                url = self.genUrl(course_id)
+
+                continue
+            if course_id != '' and item.find('td') != -1 and item.find('html') == -1:
+                course_name = self.utils.clearHtmlTag(item).strip()
+                if course_name.find('(') != -1 and course_name.startswith('(') == False:
+                    course_name = course_name[0 : course_name.find('(')].strip()
+            #print item
+            if item.find('/tr') != -1:
+                if len(course_id) < 10:
+                    print course_id
+                    print course_name
+                    print url
+                    self.count += 1
+                    self.write_db(f, course_id, course_name, url, '')
+
+                course_id = ''
+                course_name = ''
+                url = ''
+
+        soup = BeautifulSoup(r.text)
+        parser = TableHandler()
+        parser.feed(r.text)
+
     
         print "processing html and write data to file..."
-        '''
-        for table in soup.find_all("table", class_="column"):
-            tr =  table.tr
-            self.processBerkeleyData(f, tr)
+        #'''
+        for tr in soup.find_all("tr"):
+            #tr =  table.tr
+            #self.processBerkeleyData(f, tr)
     
-            for next_tr in tr.next_siblings:
-                if next_tr.string == None:
-                    self.processBerkeleyData(f, next_tr)
+            #for next_tr in tr.next_siblings:
+            #    if next_tr.string == None:
+            #        self.processBerkeleyData(f, next_tr)
+            print tr.text
+            #soup2 = BeautifulSoup(table.text)
+            #print table.text
+            #for tr in soup2.find_all('tr'):
+            #    print tr.text
     
         '''
         print 'get webcast info...'
@@ -186,6 +229,7 @@ class BerkeleyEECSSpider(Spider):
                     description += 'description:' + course_dict[key].get_description()
             self.write_db(f, row[0:row.find(" ")], row[row.find(" "):].strip(), url, description)
 
+        '''
         self.close_db(f)
         if file_lines != self.count and self.count > 0:
             self.do_upgrade_db(file_name)
