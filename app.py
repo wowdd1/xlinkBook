@@ -285,6 +285,28 @@ def handleExec():
             cmd = sublime.replace(' ', '\ ') + ' "' + fileName.strip() + '"'
         print cmd
         output = subprocess.check_output(cmd, shell=True)
+    elif command == 'deleteRow':
+        if os.path.exists(fileName):
+            f = open(fileName, 'rU')
+            all_lines = []
+            key = request.form['key'].strip()
+            for line in f.readlines():
+                r = Record(line)
+                if key != r.get_url().strip():
+                    all_lines.append(line)
+                else:
+                    print 'deleteRow'
+                    print line
+            f.close()
+            
+            f = open(fileName, 'w')
+            if len(all_lines) > 0:
+                for line in all_lines:
+                    f.write(line)
+            else:
+                f.write('')
+                f.close()
+            
 
     return output
 
