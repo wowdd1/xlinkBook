@@ -58,6 +58,7 @@ class History(BaseExtension):
 
     def excute(self, form_dict):
         self.form_dict = form_dict
+        print form_dict
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
@@ -68,7 +69,8 @@ class History(BaseExtension):
 
         if self.existHistoryFile(form_dict['originFileName'].strip()):
             historyFilename = form_dict['originFileName'][form_dict['originFileName'].rfind('/') + 1 :].strip()
-            f = open('extensions/history/data/' + historyFilename + '-history', 'r+')
+            historyFile = 'extensions/history/data/' + historyFilename + '-history'
+            f = open(historyFile, 'r+')
             rDict = {}
             all_lines = f.readlines()
             for line in all_lines:
@@ -81,7 +83,7 @@ class History(BaseExtension):
             if len(rDict) != len(all_lines):
                 f.truncate()
                 f.close()
-                f = open('extensions/history/data/' + historyFilename + '-history', 'r+')
+                f = open(historyFile, 'r+')
                 for k, v in rDict.items():
                     if v.line.strip() != '' and v.valid(r.line):
                         f.write(v.line)
@@ -99,8 +101,14 @@ class History(BaseExtension):
                 for item in rList:
                     count += 1
                     html += '<li><span>' + str(count) + '.</span>'
-                    html += '<p>' + self.utils.enhancedLink(item.get_url().strip(), self.utils.formatTitle(item.get_title().strip().replace('%20', ' '), Config.smart_link_br_len, []), module='history', library=form_dict['originFileName'], rid=rID) + self.utils.getIconHtml(item.get_url().strip()) + '</p></li>'
+                    html += '<p>' + self.utils.enhancedLink(item.get_url().strip(), self.utils.formatTitle(item.get_title().strip().replace('%20', ' '), Config.smart_link_br_len, []), module='history', library=form_dict['originFileName'], rid=rID) + self.utils.getIconHtml(item.get_url().strip())
+
+                    deleteScript = "$.post('/exec', {command : 'deleteRow', fileName : '" + historyFile + "', key : '" + item.get_url().strip() + "'}, function(data){" + "var target=document.getElementById('" + divID.replace('-history', '') + '-nav-history' + "');hidendiv_2('" + divID + "');navTopic(target,'" + divID.replace('-history', '') + "','" + divID.replace('-history', '') + '-nav-' + "',9);" + "});"
+                    deleteButton = '<a target="_blank" href="javascript:void(0);" onclick="' + deleteScript + '" style="color:#999966; font-size: 10pt;"> x </a>'
+                    html += deleteButton + '</p></li>'
+                html += "</ol></div>"
             #f.close()
+
             return html
         else:
             self.updateHistory()
