@@ -514,7 +514,7 @@ def handleUserLog():
     print '     from: ' + request.form['from']
 
     module = request.form['module'].strip()
-    if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and module != 'history' and module != 'dialog' and module != 'star':
+    if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
         historyFile = 'extensions/history/data/' + library[library.rfind('/') + 1 :] + '-history'
         line = request.form['rid'] + ' | ' + request.form['searchText'] + ' | ' + request.form['url'] + ' | '
         cmd = 'echo "' + line + '" >> ' + historyFile
@@ -522,6 +522,12 @@ def handleUserLog():
         output = subprocess.check_output(cmd, shell=True)
 
     return ''
+
+def igonLog(module):
+    for md in Config.igon_log_for_module:
+        if module.strip() == md:
+            return True
+    return False
 
 @app.route('/agent', methods=['POST'])
 def handleAgent():
