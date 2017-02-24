@@ -58,7 +58,7 @@ class History(BaseExtension):
 
     def excute(self, form_dict):
         self.form_dict = form_dict
-        print form_dict
+        #print form_dict
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
@@ -77,8 +77,10 @@ class History(BaseExtension):
                 r = Record(line)
                 if r.valid(r.line) == False:
                     continue
+ 
                 if r.get_url().strip() != '':
                     rDict[r.get_url().strip()] = r
+
             rList = []
             if len(rDict) != len(all_lines):
                 f.truncate()
@@ -87,7 +89,7 @@ class History(BaseExtension):
                 for k, v in rDict.items():
                     if v.line.strip() != '' and v.valid(r.line):
                         f.write(v.line)
-                        if v.get_id().strip() == form_dict['rID'].strip():
+                        if v.get_id().strip() == form_dict['rID'].strip() or (v.get_id().strip().startswith('loop') and v.get_id().strip().find(form_dict['rID'].strip()) != -1):
                             rList.append(v)
             f.close()
 

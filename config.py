@@ -18,6 +18,7 @@ class Config():
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'glucky' #'google'
 
+    igon_log_for_module = ['history', 'star'] #dialog
 
     smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag_batch_open = False
