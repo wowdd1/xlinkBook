@@ -18,7 +18,7 @@ class Config():
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'glucky' #'google'
 
-    igon_log_for_module = ['history', 'star'] #dialog
+    igon_log_for_history_module = ['history', 'star', 'exclusive'] #dialog
 
     smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag_batch_open = False
@@ -33,7 +33,8 @@ class Config():
     #smart_engin_for_tag = {}
 
     smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo', 'qoofan.com', 'glucky'],\
-                           'fb-pages' : ['fb-pages', 'glucky']}
+                           'fb-pages' : ['fb-pages', 'glucky'],\
+                           'baijiahao' : ['baijiahao']}
     '''
 
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
@@ -56,7 +57,7 @@ class Config():
     recommend_engin_type_for_dialog = '' #'star' #ref db/metadata/engin_type
 
     smart_link_max_text_len = 60
-    smart_link_br_len = 80
+    smart_link_br_len = 60
     replace_with_smart_link = False
 
     page_item_count = 100#63
@@ -299,4 +300,5 @@ class Config():
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
                  'twitter' : 'https://abs.twimg.com/icons/apple-touch-icon-192x192.png',\
                  'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
-                 'facebook' : 'https://images.seeklogo.net/2011/06/facebook-icon-logo-vector-400x400.png'}
+                 'facebook' : 'https://images.seeklogo.net/2011/06/facebook-icon-logo-vector-400x400.png',\
+                 'localhost' : 'https://publicportal.teamsupport.com/Images/file.png'}

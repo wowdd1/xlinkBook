@@ -456,7 +456,8 @@ function requestExtension(postArgs, tipInfo) {
            //window.location.href = data;
             window.open(data);
             userlog(postArgs['rTitle'], data, postArgs['name'], postArgs['fileName'], postArgs['rID'], postArgs['rTitle'], '');
-            $("#" + target_data_id).html('<br>&nbsp;&nbsp;<a target="_blank" href="' + data + '">target link</a><br>');
+            //$("#" + target_data_id).html('<br>&nbsp;&nbsp;<a target="_blank" href="' + data + '">target link</a><br>');
+            $("#" + target_data_id).html('');
         } else if (data.substring(0, data.indexOf(' ')) == 'edit') {
            
             url = data.substring(data.indexOf(' ') + 1)

@@ -524,7 +524,7 @@ def handleUserLog():
     return ''
 
 def igonLog(module):
-    for md in Config.igon_log_for_module:
+    for md in Config.igon_log_for_history_module:
         if module.strip() == md:
             return True
     return False

@@ -206,8 +206,8 @@ class MitSpider(Spider):
             if self.deep_mind:
                 textbook = self.getTextBook(course_num)
 
-            if textbook == '' and self.deep_mind and self.ocw_links.get(course_num, '') != '':
-                textbook = self.ocw_spider.getTextBook(self.ocw_links[course_num], course_num)
+            #if textbook == '' and self.deep_mind and self.ocw_links.get(course_num, '') != '':
+            #    textbook = self.ocw_spider.getTextBook(self.ocw_links[course_num], course_num)
 
             link = self.getMitCourseLink([], course_num)
             preq = ''

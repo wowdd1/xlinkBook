@@ -55,6 +55,10 @@ class History(BaseExtension):
     def needBR(self):
         return self.form_dict['column'] != '1' and self.form_dict.has_key('extension_count') and int(self.form_dict['extension_count']) > 12
              
+    def getDeleteButton(self, divID, historyFile, url):
+        deleteScript = "$.post('/exec', {command : 'deleteRow', fileName : '" + historyFile + "', key : '" + url + "'}, function(data){" + "var target=document.getElementById('" + divID.replace('-history', '') + '-nav-history' + "');hidendiv_2('" + divID + "');navTopic(target,'" + divID.replace('-history', '') + "','" + divID.replace('-history', '') + '-nav-' + "',9);" + "});"
+        deleteButton = '&nbsp;&nbsp;<a target="_blank" href="javascript:void(0);" onclick="' + deleteScript + '" style="color:#999966; font-size: 10pt;"><image src="http://findicons.com/files/icons/766/base_software/128/deletered.png" width="14" height="12"></image></a>'    
+        return deleteButton
 
     def excute(self, form_dict):
         self.form_dict = form_dict
@@ -95,21 +99,35 @@ class History(BaseExtension):
 
             #f = open('extensions/history/data/' + historyFilename, 'r')
             if len(rList) > 0:
+                rList = sorted(rList, key=lambda d: d.get_url().strip()[0 : 20], reverse=True)
+
                 if self.needBR():
                     html += '<br>'
-                html += '<div class="ref"><ol>'
+                #
                 count = 0
                 rList.reverse()
-                for item in rList:
-                    count += 1
-                    html += '<li><span>' + str(count) + '.</span>'
-                    html += '<p>' + self.utils.enhancedLink(item.get_url().strip(), self.utils.formatTitle(item.get_title().strip().replace('%20', ' '), Config.smart_link_br_len, []), module='history', library=form_dict['originFileName'], rid=rID) + self.utils.getIconHtml(item.get_url().strip())
+                if form_dict['column'] == '1':
+                    titleList = []
+                    urlList = []
+                    htmlList = []
+                    for item in rList:
+                        title = item.get_title().strip().replace('%20', ' ')
+                        titleList.append(title)
+                        #print titleList
+                        urlList.append(item.get_url().strip())
+                        htmlList.append(self.getDeleteButton(divID, historyFile, item.get_url().strip()))
 
-                    deleteScript = "$.post('/exec', {command : 'deleteRow', fileName : '" + historyFile + "', key : '" + item.get_url().strip() + "'}, function(data){" + "var target=document.getElementById('" + divID.replace('-history', '') + '-nav-history' + "');hidendiv_2('" + divID + "');navTopic(target,'" + divID.replace('-history', '') + "','" + divID.replace('-history', '') + '-nav-' + "',9);" + "});"
-                    deleteButton = '<a target="_blank" href="javascript:void(0);" onclick="' + deleteScript + '" style="color:#999966; font-size: 10pt;"> x </a>'
-                    html += deleteButton + '</p></li>'
-                html += "</ol></div>"
-            #f.close()
+                    return self.utils.toListHtml(titleList, urlList, htmlList, 10, False)
+                else:
+                    html += '<div class="ref"><ol>'
+                    for item in rList:
+                        title = item.get_title().strip().replace('%20', ' ')
+                        count += 1
+                        html += '<li><span>' + str(count) + '.</span>'
+                        html += '<p>' + self.utils.enhancedLink(item.get_url().strip(), self.utils.formatTitle(title, Config.smart_link_br_len, []), module='history', library=form_dict['originFileName'], rid=rID) + self.utils.getIconHtml(item.get_url().strip())
+                        html += self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '</p></li>'
+
+                    html += "</ol></div>"
 
             return html
         else:
