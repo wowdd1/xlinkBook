@@ -129,9 +129,10 @@ class Bookmark(BaseExtension):
                     if rID.startswith('loop-b'):
                         html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
                     else:
-                        if count < int(form_dict['page']) * Config.bookmark_page_item_count[int(form_dict['column']) - 1] and count >= (int(form_dict['page']) - 1) * Config.bookmark_page_item_count[int(form_dict['column']) - 1]:
+                        if count <= int(form_dict['page']) * Config.bookmark_page_item_count[int(form_dict['column']) - 1] and count > (int(form_dict['page']) - 1) * Config.bookmark_page_item_count[int(form_dict['column']) - 1]:
                             currentPage = form_dict['page']
                             html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                        
                     url = ''
                     if jobj.has_key('url'):
                         url = jobj['url']
@@ -161,6 +162,7 @@ class Bookmark(BaseExtension):
             else:
                 total_page = len(records) / Config.bookmark_page_item_count[int(form_dict['column']) - 1] + 1
             print 'currentPage ' + str(currentPage)
+
             if total_page > 1 and rID.startswith('loop-b') == False:
                 html += '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
                 for page in range(0, total_page):
@@ -313,7 +315,12 @@ class Bookmark(BaseExtension):
         return text
 
     def containIgoncase(self, leftData, rightData):
-        return leftData.lower().find(rightData.lower()) != -1
+        if leftData.lower().find(rightData.lower()) != -1:
+            return True
+        else:
+            #if leftData.find('2017') != -1:
+            #    print leftData + ' - ' + rightData
+            return False
 
     def containIgoncase2(self, leftData, rightDataList):
         for rightData in rightDataList:

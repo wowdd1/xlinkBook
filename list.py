@@ -220,8 +220,12 @@ def align_id_title(record):
         else:
             course_name = course_name + get_space(0, course_name_len - utils.str_block_width(course_name))
     else:
-        if utils.str_block_width(course_name) > course_name_len + 15:
-            course_name = course_name[0 : course_name_len - 3 ] + "..."
+        if column_num == '3':
+            if utils.str_block_width(course_name) > course_name_len:
+                course_name = course_name[0 : course_name_len - 5 ] + "..."
+        else:
+            if utils.str_block_width(course_name) > course_name_len + 15:
+                course_name = course_name[0 : course_name_len - 3 ] + "..."
 
     if len(course_num) < course_num_len:
         space = get_space(0, course_num_len - len(course_num))
@@ -1176,7 +1180,8 @@ def getShowText(accountTag, text, tag, linkCount):
             text = text[text.find('-') + 1 :]
         if tag == 'slack':
             prefix = '#'
-        if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
+        #if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
+        if text.find('/') != -1:
             text = text[text.rfind('/') + 1 : ]
         text = text[0: getCutLen(tag, text)]
         if text.startswith(prefix) == False:
