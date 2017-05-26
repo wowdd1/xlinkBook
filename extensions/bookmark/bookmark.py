@@ -121,15 +121,28 @@ class Bookmark(BaseExtension):
             pid = rID[rID.rfind('-') + 1 :]
         print 'rID ' + rID + ' pid: ' + pid + ' rTitle:' + rTitle
 
+        notList = []
+        aliasList = []
+        for item in alias:
+            item = item.strip()
+            if item.startswith('!') == True:
+                notList.append(item.replace('!', '').strip())
+            else:
+                aliasList.append(item)
+        print notList
+        print aliasList
+        page_item_count = Config.bookmark_page_item_count[int(form_dict['column']) - 1]
+        if form_dict.has_key('nopage'):
+            page_item_count = 1000
 
         for jobj in self.jobj_list:
             if pid == '':
-                if self.match_item(jobj, [rTitle]) or self.match_item(jobj, alias):
+                if self.match_item(jobj, [rTitle]) or self.match_item(jobj, aliasList, notList):
                     count += 1
                     if rID.startswith('loop-b'):
                         html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
                     else:
-                        if count <= int(form_dict['page']) * Config.bookmark_page_item_count[int(form_dict['column']) - 1] and count > (int(form_dict['page']) - 1) * Config.bookmark_page_item_count[int(form_dict['column']) - 1]:
+                        if count <= int(form_dict['page']) * page_item_count and count > (int(form_dict['page']) - 1) * page_item_count:
                             currentPage = form_dict['page']
                             html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
                         
@@ -155,18 +168,25 @@ class Bookmark(BaseExtension):
         if Config.bookmark_output_data_to_new_tab:
             return self.utils.output2Disk(records, 'bookmark', rTitle, Config.bookmark_output_data_format)
         else:
-            if len(records) < Config.bookmark_page_item_count[int(form_dict['column']) - 1]:
+            if len(records) < page_item_count:
                 total_page = 1
-            elif len(records) % Config.bookmark_page_item_count[int(form_dict['column']) - 1] == 0:
-                total_page = len(records) / Config.bookmark_page_item_count[int(form_dict['column']) - 1]
+            elif len(records) % page_item_count == 0:
+                total_page = len(records) / page_item_count
             else:
-                total_page = len(records) / Config.bookmark_page_item_count[int(form_dict['column']) - 1] + 1
+                total_page = len(records) / page_item_count + 1
             print 'currentPage ' + str(currentPage)
 
             if total_page > 1 and rID.startswith('loop-b') == False:
+                if int(currentPage) == 1:
+                    html += '<div style="margin-left:auto; text-align:right;margin-top:2px; margin-right:55px;">'
+
+                    html += self.utils.enhancedLink('', '<font size="1">expand</font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, 1, nopage=True), ignoreUrl=True)
+                    html += '</div>'
+
                 html += '<div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto;">'
                 for page in range(0, total_page):
                     print (page + 1)
+
                     if page == 0 and int(currentPage) > 1:
                         html += self.utils.enhancedLink('', '<font size="5">< </font>', module='bookmark', library=form_dict['originFileName'], rid=form_dict['rID'], script=self.getPageScript(form_dict, int(currentPage) - 1), ignoreUrl=True)
                         html += '&nbsp;&nbsp;&nbsp;&nbsp;'
@@ -209,7 +229,7 @@ class Bookmark(BaseExtension):
     def getBookmarkItemCount(self, column):
         return Config.bookmark_page_item_count[int(column) - 1]
 
-    def getPageScript(self, form_dict, page):
+    def getPageScript(self, form_dict, page, nopage=False):
         script = 'var postArgs = {};';
         #print form_dict
         for k, v in form_dict.items():
@@ -218,14 +238,22 @@ class Bookmark(BaseExtension):
             else: 
                 script += 'postArgs["' + k + '"] = "' + form_dict[k] + '";'
         script += 'postArgs["page"] = ' + str(page) + ';'
+        if nopage:
+            script += 'postArgs["nopage"] = true;'
         script += 'requestExtension(postArgs, false);';
         return script
 
 
-    def match_item(self, jobj, rTitleList):
+    def match_item(self, jobj, rTitleList, notList=[]):
         if len(rTitleList) == 0:
             return False
-        for rTitle in rTitleList:
+        if len(notList) > 0 and self.do_match_item(jobj, notList):
+            return False
+
+        return self.do_match_item(jobj, rTitleList)
+
+    def do_match_item(self, jobj, items):
+        for rTitle in items:
             if rTitle.strip() == '':
                 continue
             if self.containIgoncase(jobj['title'].strip(), rTitle.strip()):
@@ -241,7 +269,7 @@ class Bookmark(BaseExtension):
             if self.containIgoncase(jobj['title'].strip(), rTitle.strip().replace(' ', '-')):
                 return True
 
-        return False
+        return False        
 
     def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[]):
         html = ''
@@ -316,6 +344,8 @@ class Bookmark(BaseExtension):
 
     def containIgoncase(self, leftData, rightData):
         if leftData.lower().find(rightData.lower()) != -1:
+            return True
+        elif rightData.endswith('s') and leftData.lower().find(rightData[0 : len(rightData) - 1].lower()) != -1:
             return True
         else:
             #if leftData.find('2017') != -1:

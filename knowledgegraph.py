@@ -62,7 +62,7 @@ class KnowledgeGraph(object):
           title = line[firstIndex + 1 : line.find('|', firstIndex + 1)].strip()
           if title != '':
               if title.find(',') != -1:
-                  title = title[0 : title.find(',')]
+                  title = title.replace(',', '')
               if title.find('+') != -1:
                   title = title[0 : title.find('+')]
               if title.find('#') != -1:

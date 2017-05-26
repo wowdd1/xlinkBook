@@ -28,9 +28,11 @@ delete_from_char = ''
 parentid=''
 keys = {}
 
-pid = 0
+pid = 21
 sub_pid = 0
 sub_sub_pid = 0
+sub_sub_sub_pid = 0
+sub_sub_sub_sub_pid = 0
 app_mode = False
 unit = 0
 chapter = 0
@@ -150,13 +152,13 @@ def get_parent_code(code):
 ids = {}
 def customPrintFile(line):
     global parentid
-    global pid, sub_pid, sub_sub_pid, app_mode
+    global pid, sub_pid, sub_sub_pid, sub_sub_sub_pid, sub_sub_sub_sub_pid, app_mode
     global unit, chapter, sub_chapter, last_pid
     #customid = str(line_id)
 
 
     customid = 'famous-neuroscientists'
-    customid = parentid + '-' + str(line_id)
+    #customid = parentid + '-' + str(line_id)
     customid = parentid
 
     if line.strip().startswith('|'):
@@ -254,19 +256,33 @@ def customPrintFile(line):
         pid += 1
         sub_pid = 0
         sub_sub_pid = 0
+        sub_sub_sub_pid = 0
+        sub_sub_sub_sub_pid = 0
         print customid + '-' + str(pid) + ' | ' + utils.caseLine(line[line.find(' ') : ].strip()) + ' | | parentid:' + customid
     elif id == 'sub_pid':
         sub_pid += 1
         sub_sub_pid = 0
+        sub_sub_sub_pid = 0
+        sub_sub_sub_sub_pid = 0
         print customid + '-' + str(pid) + '.'  + str(sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid)
     elif id == "sub_sub_pid":
     #else:
         sub_sub_pid += 1
+        sub_sub_sub_pid = 0
+        sub_sub_sub_sub_pid = 0
         #if sub_pid == 0:
         #    sub_pid += 1
         #    print customid + '-' + str(pid)  + '.'  + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) 
         #else:
         print customid + '-' + str(pid) + '.'  + str(sub_pid) + '.'  + str(sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.'  + str(sub_pid)
+    elif id == 'sub_sub_sub_pid':
+        sub_sub_sub_pid += 1
+        sub_sub_sub_sub_pid = 0
+        print customid + '-' + str(pid) + '.'  + str(sub_pid) + '.'  + str(sub_sub_pid) + '.'  + str(sub_sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.'  + str(sub_pid) + '.' + str(sub_sub_pid)
+    elif id == 'sub_sub_sub_sub_pid':
+        sub_sub_sub_sub_pid += 1
+        print customid + '-' + str(pid) + '.'  + str(sub_pid) + '.'  + str(sub_sub_pid) + '.'  + str(sub_sub_sub_pid) + '.'  + str(sub_sub_sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.'  + str(sub_pid) + '.' + str(sub_sub_pid) + '.'  + str(sub_sub_sub_pid)
+
 
     '''
     if line.strip().startswith('PART'):

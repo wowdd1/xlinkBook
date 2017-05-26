@@ -268,6 +268,14 @@ function batchOpen(data, resourceType) {
     });
 }
 
+function tolist(rID, resourceType, originFilename) {
+    $.post('/tolist', {rID : rID, resourceType : resourceType, originFilename : originFilename}, function(data) {
+        if (data != '') {
+            window.open(data);
+        }
+    });
+}
+
 function trimStr(str){return str.replace(/(^s*)|(s*$)/g,"");}
 
 function searchTopic(obj, rid, topic, otherInfo){
@@ -798,7 +806,7 @@ function chanageLinkColor(obj, color, fontSize) {
     obj.innerHTML = '<s>' + obj.innerHTML + '</s>';
 }
 
-function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab, isTag, fileName) {
+function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab, isTag, fileName, log) {
     $.post("/queryUrl", {text : text , searchText : searchText, url : url, module : module, library : library, rID : rid, resourceType: resourceType, user : user_name, isTag : isTag, fileName : fileName}, function(data){
         console.log('queryUrlFromServer--->', data);
         var urls = null;
@@ -811,7 +819,9 @@ function queryUrlFromServer(text, url, module, library, rid, searchText, resourc
         for (var i = 0; i < urls.length; i++) {
             if (urls[i] != '') {
                 window.open(urls[i]);
-                userlog(text, urls[i], module, library, rid, searchText, resourceType); 
+                if (log) {
+                    userlog(text, urls[i], module, library, rid, searchText, resourceType); 
+                }
             }
         }
     });

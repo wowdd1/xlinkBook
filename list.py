@@ -360,20 +360,20 @@ def update_cell_len(index):
         course_name_len = cell_len - course_num_len - 1
 
 
-def genEnginOption(selectid):
+def genEnginOption(selectid, defaultEngin=Config.smart_link_engin):
 
     option = ''
     engin_list = utils.getAllEnginList()
     option = '<select id="' + selectid +'">'
-    if Config.smart_link_engin != '':
-        option += '<option value ="' + utils.getEnginUrl(Config.smart_link_engin) + '">' + Config.smart_link_engin + '</option>'
+    if defaultEngin != '':
+        option += '<option value ="' + utils.getEnginUrl(defaultEngin) + '">' + defaultEngin + '</option>'
         
     if plugins_mode == False:
         option += '<option value ="exclusive">exclusive</option>'
         #option += '<option value ="add">add (operate)</option>'
     #option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
     for e in engin_list:
-        if e == "google" or e == Config.smart_link_engin:
+        if e == "google" or e == defaultEngin:
             continue
         option += '<option value ="' + utils.getEnginUrl(e) + '">' + e + '</option>'
     option += '</select>'
@@ -707,6 +707,8 @@ def build_lines(list_all, file_name):
                                         aid = "#div-nav-" + link
                                         if is_extension:
                                             hidenScript = hidenScript3
+                                        if link == 'exclusive':
+                                            hidenScript += 'hidenMoreContent(this.parentNode.parentNode.id,1);'
                                         #print 'genLinkWithScript2 start:' + str(datetime.datetime.now())
                                         content += utils.genLinkWithScript2(hidenScript + 'navTopic(this,\"' + divID + '\",\"' + '#div-nav-' + '\",' + str((len(navLinks) / max_nav_link_row) + 4) + ');', link, '#888888', 9, aid)
                                         #print 'genLinkWithScript2 end:' + str(datetime.datetime.now())
@@ -1044,7 +1046,8 @@ def genAccountHtml(tagStr, record, content, containID=''):
         url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tagStr)
     if url != '':
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tagStr})
-        return genSmartLinkHtml(tagStr, ret, record, ',', url, content, urlFromServer=False, accountTag=True, containID=containID)
+        dialogMode = False
+        return genSmartLinkHtml(tagStr, ret, record, ',', url, content, urlFromServer=False, accountTag=True, containID=containID, dialogMode=dialogMode)
     else:
         return ''
 
@@ -1086,15 +1089,21 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             aid = containID + '-a-' + str(count)
             if crossref:
                 #print i + '<br>'
-                html += genCrossrefHtml(record.get_id(), aid, tag, i)
+                html += utils.genCrossrefHtml(record.get_id(), aid, tag, i, source, split_char=split_char)
+                #if old_i != ret[len(ret) - 1].strip():
+                #    split_char = '<br>'
+                #    html += split_char
+                #    continue
             else:
+                sText = getShowText(accountTag, i.strip(), tag, len(ret))
+                linkText = getLinkText(accountTag, i.strip(), sText)
                 if url != '':
                     link = url
                     if url.find('%s') != -1:
                         link = url.replace('%s', i.strip().replace(' ', ''))
-                    html += utils.enhancedLink(link, i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
+                    html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
                 else:
-                    html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), i.strip(), module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
+                    html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
             if old_i != ret[len(ret) - 1].strip():
                 if accountTag:
                     html += '&nbsp;'
@@ -1108,57 +1117,29 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
         count = 1
         aid = containID + '-a-' + str(count)
         if crossref:
-            html += genCrossrefHtml(record.get_id(), aid, tag, ret)
+            html += utils.genCrossrefHtml(record.get_id(), aid, tag, ret, source)
         else:
+            sText = getShowText(accountTag, ret.strip(), tag, 1)
+            linkText = getLinkText(accountTag, ret.strip(), sText)
             if url != '':
                 link = url
                 if url.find('%s') != -1:
                     link = url.replace('%s', ret)
-                html += utils.enhancedLink(link, ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
+                html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid)
             else:
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), ret, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, ret.strip(), tag, 1), dialogMode=dialogMode, aid=aid)
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid)
 
-    return genTagLink(content, 'main', source, record.get_id(), tag, dialogMode, aid, crossref) + html
+    if accountTag and tag_content.find(split_char) != -1 and len(tag_content.split(split_char)) > 7:
+        dialogMode = True
+    return genTagLink(content, 'main', source, record.get_id(), tag, dialogMode, aid, crossref, accountTag) + html
 
-def genTagLink(content, module, library, rid, resourceType, dialogMode, aid, crossref):
-    if crossref:
-        dialogMode = False
-    return utils.enhancedLink('', '<font color="#66CCFF">' + content[ 0 :  content.find(':')].strip() + '</font>', module=module, library=library, fileName=library, rid=rid, resourceType=resourceType, urlFromServer=True, dialogMode=dialogMode, aid=aid, isTag=True) + ':'
+def genTagLink(content, module, library, rid, resourceType, dialogMode, aid, crossref, accountTag):
+    #if crossref:
+    #    dialogMode = False
+    return utils.enhancedLink('', '<font color="#66CCFF">' + content[ 0 :  content.find(':')].strip() + '</font>', module=module, library=library, fileName=library, rid=rid, resourceType=resourceType, urlFromServer=True, dialogMode=dialogMode, aid=aid, isTag=True, log=False) + ':'
 
-def genCrossrefHtml(rid, aid, tag, content):
-    html = ''
-    if content.find('#') != -1:
-        #print content + '<br>'
-        data = content.strip().split('#')
-        
-        if len(data) != 2:
-            return ''
-        filters = []
-        if data[1].find('+') != -1:
-            filters = data[1].split('+')
-        else:
-            filters = [data[1]]
 
-        db = data[0][0 : data[0].rfind('/') + 1].strip()
-        key = data[0][data[0].rfind('/') + 1 :].strip()
-        for ft in filters:
-            #print ft + '<br>'
-            link = 'http://localhost:5000/?db=' + db + '&key=' + key + '&filter=' + ft
-            text = '<font style="font-size:10pt;">' + ft + '</font>'
-            if db.find('library/') != -1:
-                text = '<font style="font-size:10pt; color="red">' + ft[0:1] + '</font>' + '<font style="font-size:10pt;">' + ft[1:] + '</font>'
-            html += utils.enhancedLink(link, text, module='main', library=source, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid)
-            if ft != filters[len(filters) -1]:
-                html += ',&nbsp;'
-    else:
-        db = content[0 : content.rfind('/') + 1].strip()
-        key = content[content.rfind('/') + 1 :].strip()
-        link = 'http://localhost:5000/?db=' + db + '&key=' + key 
-        html += utils.enhancedLink(link, '<font style="font-size:10pt;">' + key + '</font>', module='main', library=source, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid) 
-
-    return html 
-
-def getShowText(accountTag, text, tag, linkCount):
+def getShowText(accountTag, text, tagStr, linkCount):
     col = int(column_num)
     font_size = 0
     if column_num == '1':
@@ -1176,14 +1157,18 @@ def getShowText(accountTag, text, tag, linkCount):
 
     if accountTag:
         prefix = '@'
-        if tag == 'goodreads':
+        if tagStr == 'goodreads':
             text = text[text.find('-') + 1 :]
-        if tag == 'slack':
+        if tagStr == 'slack':
             prefix = '#'
         #if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
         if text.find('/') != -1:
             text = text[text.rfind('/') + 1 : ]
-        text = text[0: getCutLen(tag, text)]
+
+        if tag.account_tag_alias.has_key(text):
+            text = tag.account_tag_alias[text]
+        else:
+            text = text[0: getCutLen(tagStr, text)]
         if text.startswith(prefix) == False:
             text = prefix + text
         return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt;"><i>' + text + '</i></font>'
@@ -1196,6 +1181,12 @@ def getShowText(accountTag, text, tag, linkCount):
             return '<font style="font-size:' + str(font_size) + 'pt;">' + text + '</font>'
         
     return text
+
+def getLinkText(accountTag, text, sText):
+    if accountTag and tag.account_tag_alias.has_key(text):
+        return tag.account_tag_alias[text]
+    else:
+        return text
 
 def getCutLen(tag, text):
     if tag == 'github':
@@ -1219,7 +1210,7 @@ def print_search_box(hiden):
         #if plugins_mode:
         #    div += ' display:none;'
         div += '">'
-	out = div + '<input id="search_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select") +\
+	out = div + '<input id="search_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select", defaultEngin=Config.default_engin_searchbox) +\
               '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">Go</button>'
         if output_navigation_links:
                out += utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 

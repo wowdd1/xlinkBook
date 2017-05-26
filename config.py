@@ -17,6 +17,7 @@ class Config():
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'glucky' #'google'
+    default_engin_searchbox = 'zhihu'
 
     igon_log_for_history_module = ['history', 'star', 'exclusive'] #dialog
 
@@ -34,7 +35,8 @@ class Config():
 
     smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo', 'qoofan.com', 'glucky'],\
                            'fb-pages' : ['fb-pages', 'glucky'],\
-                           'baijiahao' : ['baijiahao']}
+                           'baijiahao' : ['baijiahao'],\
+                           'conference' : ['glucky', 'google', 'd:event']}
     '''
 
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
@@ -53,6 +55,7 @@ class Config():
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
     command_for_dialog = ['add2library', 'trace', 'kgraph', 'exclusive']
+    command_for_tag_dialog = ['tolist']
 
     recommend_engin_type_for_dialog = '' #'star' #ref db/metadata/engin_type
 
@@ -65,7 +68,7 @@ class Config():
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
-    menu_library_list = ['ai-library', 'multimedia-library', 'mind-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library']
+    menu_library_list = ['ai-library', 'multimedia-library', 'mind-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library', 'product-library', 'political-library']
     #default_library = ''
     default_library = 'ai-library'
     #default_library = 'engineering-library'
@@ -85,8 +88,15 @@ class Config():
     #default_library = 'social-library'
     #default_library = 'art-library'
     #default_library = 'political-library'
+    #default_library = 'thought-library'
     #default_library = 'media-library'
     #default_library = 'telecom-library'
+    #default_library = 'manufacture-library'
+    #default_library = 'traffic-library'
+    #default_library = 'retail-library'
+    #default_library = 'building-library'
+    #default_library = 'life-library'
+    #default_library = 'sport-library'
     #default_library = 'entertainment-library'
     #default_library = 'military-library'
     #default_library = 'product-library'
@@ -126,8 +136,8 @@ class Config():
     #do not show nav links, only show extension links
     extension_mode = False
 
-    default_tab = 'content'
-    second_default_tab = 'bookmark'#'figures'
+    default_tab = 'bookmark' #'content'
+    second_default_tab = 'history'#'figures'
 
     default_width = "54" #"79"
     column_num = "3"
@@ -171,6 +181,8 @@ class Config():
           #'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
           #'members' : ip_adress + '/?db=rank/&key=members2016&column=2',\
           'rank' : ip_adress + '/?db=rank/&key=?',\
+          #'paperbot' : 'https://web.paperbot.ai/',\
+          #'iris.ai' : 'https://the.iris.ai/explore',\
           'frontier' : ip_adress + '/?db=other/&key=frontier2017'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
           #'library' : ip_adress + '/?db=library/&key=?'}
@@ -178,7 +190,7 @@ class Config():
 
 
     distribution = False
-    slack_token = 'xoxp-119467920674-119554940085-119400155379-b20efe8eba7374483e02314a780dec1d'
+    slack_token = ['xoxb', '156129958533', 'YdIXSA2syy7ipacDQo6cr03j']
 
     delete_from_char = ''
     delete_forward = True
@@ -241,7 +253,7 @@ class Config():
     convert_page_start = 1
     convert_page_max = 16
     convert_page_to_end = False
-    convert_tag = 'h3' #"div#title"  # tag#class or tag
+    convert_tag = 'li' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
@@ -301,4 +313,9 @@ class Config():
                  'twitter' : 'https://abs.twimg.com/icons/apple-touch-icon-192x192.png',\
                  'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
                  'facebook' : 'https://images.seeklogo.net/2011/06/facebook-icon-logo-vector-400x400.png',\
-                 'localhost' : 'https://publicportal.teamsupport.com/Images/file.png'}
+                 'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
+                 'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\
+                 'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
+                 'v.qq' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311155846,3382957541&fm=23&gp=0.jpg',\
+                 'douyu' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=791058301,37936658&fm=23&gp=0.jpg',\
+                 'pan.baidu' : 'http://img0.imgtn.bdimg.com/it/u=3595078885,1850864109&fm=23&gp=0.jpg'}
