@@ -255,6 +255,44 @@ def handleBatchOpen():
 
     return ''
 
+@app.route('/tolist', methods=['POST'])
+def handleToList():
+    rID = request.form['rID'].strip()
+    fileName = request.form['originFilename'].strip()
+    resourceType = request.form['resourceType'].strip()
+
+    print request.form
+
+    record = utils.getRecord(rID, path=fileName)
+    records = []
+    accountTag = utils.isAccountTag(resourceType, tag.tag_list_account)
+
+    if record != None and record.get_id().strip() == rID:
+        args = { 'tag' : resourceType + ':' } 
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, args)
+        url = ''
+        for item in ret.split(','):
+            if accountTag:
+                url = tag.tag_list_account[resourceType + ':'].replace('%s', item.strip())
+                if item.find('/') != -1:
+                    item = item[item.rfind('/') + 1 :]
+            elif resourceType == 'crossref':
+                if item.find('#') != -1:
+                    result = utils.getCrossrefUrls(item.strip())
+                    for k, v in result.items():
+                        records.append(Record(' | ' + k.strip() + ' | ' + v + ' | '))
+                    continue
+                else:
+                    k, url = utils.getCrossrefUrl(item)
+            elif Config.smart_engin_for_tag.has_key(resourceType):
+                url = utils.toQueryUrl(utils.getEnginUrl(Config.smart_engin_for_tag[resourceType][0]), item.strip())
+            else:
+                url = utils.toQueryUrl(utils.getEnginUrl('glucky'), item.strip() + ' ' + resourceType)
+
+            records.append(Record(' | ' + item.strip() + ' | ' + url + ' | '))
+    if len(records) > 0:
+        return utils.output2Disk(records, 'tag', rID + '-' + resourceType)
+    return ''
 
 def toRecordFormat(data):
     if data.find('|') != -1:
@@ -373,7 +411,9 @@ def handleQueryUrl():
                             result += '<br>'
                         if count >= Config.recommend_engin_num_dialog:
                             break
-                        
+                    if len(Config.command_for_tag_dialog) > 0:
+                        library = os.getcwd() + '/db/library/' + Config.default_library;
+                        result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'], tagCommand=True)
                     return result
                 else:
                     urls = ''
@@ -385,12 +425,14 @@ def handleQueryUrl():
                     else:
                         if utils.isAccountTag(request.form['searchText'] + ':', tag.tag_list_account):
                             for q in ret:
-                                urls += tag.tag_list_account[request.form['searchText'] + ':'].replace('%s', q.strip()) + ' '
-                            return urls
+                                url = tag.tag_list_account[request.form['searchText'] + ':'].replace('%s', q.strip())
+                                urls += url + ' '
                         else:
                             for q in ret:
-                                urls += utils.toQueryUrl(utils.getEnginUrl('glucky'), q) + ' '
-                            return urls
+                                url = utils.toQueryUrl(utils.getEnginUrl('glucky'), q)
+                                urls +=  url + ' '
+                        print urls + '<<<<'
+                        return urls
             else:
                 return ''
         else:
@@ -474,21 +516,27 @@ def handleQueryUrl():
 
     return result
 
-def dialogCommand(fileName, text, resourceType, originFilename, rID):
+def dialogCommand(fileName, text, resourceType, originFilename, rID, tagCommand=False):
     result = ''
-    for command in Config.command_for_dialog:
-        if command == 'add2library':
-            script = "addRecord('" + fileName + "', '" + text + "');"
-            result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
-        elif command == 'exclusive':
-            script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, false);"
-            result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
-        elif command == 'trace':
-            script = "batchOpen('" + text + "', '" + resourceType + "');"
-            result += utils.enhancedLink('', '#trace', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
-        elif command == 'kgraph':
-            script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, true);"
-            result += utils.enhancedLink('', '#kgraph', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+    if tagCommand:
+        for command in Config.command_for_tag_dialog:
+            if command == 'tolist':
+                script = "tolist('" + rID + "', '" + resourceType + "','" + originFilename + "');"
+                result += utils.enhancedLink('', '#tolist', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+    else:
+        for command in Config.command_for_dialog:
+            if command == 'add2library':
+                script = "addRecord('" + fileName + "', '" + text + "');"
+                result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+            elif command == 'exclusive':
+                script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, false);"
+                result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+            elif command == 'trace':
+                script = "batchOpen('" + text + "', '" + resourceType + "');"
+                result += utils.enhancedLink('', '#trace', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+            elif command == 'kgraph':
+                script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, true);"
+                result += utils.enhancedLink('', '#kgraph', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
 
     return result
 
@@ -520,6 +568,7 @@ def handleUserLog():
         cmd = 'echo "' + line + '" >> ' + historyFile
         print cmd
         output = subprocess.check_output(cmd, shell=True)
+        #utils.slack_message(request.form['url'], 'general')
 
     return ''
 

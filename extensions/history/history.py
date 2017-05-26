@@ -123,9 +123,18 @@ class History(BaseExtension):
                     for item in rList:
                         title = item.get_title().strip().replace('%20', ' ')
                         count += 1
+                        jobj_record = {}
+                        jobj_record['id'] = rID + '-' + str(count)
+                        jobj_record['title'] = title
+                        jobj_record['url'] = item.get_url().strip()
+                        appendHtml = self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '&nbsp;'
+
+                        html += self.gen_item(rID, divID, count, jobj_record, False, form_dict['originFileName'], appendHtml=appendHtml)
+
+                        '''
                         html += '<li><span>' + str(count) + '.</span>'
                         html += '<p>' + self.utils.enhancedLink(item.get_url().strip(), self.utils.formatTitle(title, Config.smart_link_br_len, []), module='history', library=form_dict['originFileName'], rid=rID) + self.utils.getIconHtml(item.get_url().strip())
-                        html += self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '</p></li>'
+                        '''
 
                     html += "</ol></div>"
 
@@ -152,7 +161,7 @@ class History(BaseExtension):
                 html = ''
             return html
 
-    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[]):
+    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[], appendHtml=''):
         html = ''
         
         html += '<li><span>' + str(count) + '.</span>'
@@ -161,12 +170,19 @@ class History(BaseExtension):
         if jobj.has_key('url'):
             url = jobj['url']
 
+        title = self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords)
+        if self.tag.account_tag_alias.has_key(jobj['title'].strip()):
+            title = self.tag.account_tag_alias[jobj['title'].strip()]
+
         if url != '':
-            html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords), module='history', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
+            html += '<p>' + self.utils.enhancedLink(url, title, module='history', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
         else:
             html += '<p>' + jobj['title'] + ' > '
         #if self.existChild(str(jobj['id'])):
         #    html += ' > '
+
+        if appendHtml != '':
+            html += appendHtml
 
         if moreOption:
             ref_divID += '-' + str(count)

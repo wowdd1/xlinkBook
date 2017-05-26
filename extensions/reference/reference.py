@@ -267,7 +267,7 @@ class Reference(BaseExtension):
                 #self.html += self.utils.getDefaultEnginHtml(r[0], defaultLinks)
                 if script != "":
                     self.html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False);
-                title = a.text.strip()
+                #title = a.text.strip()
                 self.html += '</p></li>'
             return self.html + "</ol></div>"
 

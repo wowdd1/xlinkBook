@@ -758,6 +758,7 @@ class Utils:
         result = {}
         engin = ''
         url = self.toQueryUrl(self.getEnginUrl(Config.smart_link_engin), text)
+        
         if originUrl != '':
             url = originUrl
 
@@ -830,12 +831,17 @@ class Utils:
                 dirs += self.clientQueryDirs(dir_path)
         return dirs
 
-    def isAccountTag(self, content, tag_list_account):
-        if content.find(':') != -1:
-            prefix = content[0 : content.find(':') + 1].strip()
-            return ' '.join(tag_list_account.keys()).find(prefix) != -1
-        else:
+    def isAccountTag(self, tag, tag_list_account):
+        if tag == '':
             return False
+        prefix = ''
+        if tag.find(':') != -1:
+            prefix = tag[0 : tag.find(':') + 1].strip()
+        else:
+            prefix += tag + ':'
+
+        return ' '.join(tag_list_account.keys()).find(prefix) != -1
+
 
     def accountMode(self, tag_list_account, tag_list_account_mode, engin, resourceType):
         if Config.smart_engin_lucky_mode_for_account:
@@ -854,7 +860,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
         url = url.strip()
         user_log_js = ''
         query_url_js = ''
@@ -869,22 +875,28 @@ class Utils:
             searchText = send_text
         newTabArgs = 'false'
         isTagArgs = 'false'
+        islog = 'true'
         if newTab:
             newTabArgs = 'true'
         if isTag:
             isTagArgs = 'true'
+
+        if log == False:
+            islog = 'false'
         if useQuote:
             # because array.push('') contain ', list.py will replace "'" to ""
             # so use  #quote as ', in appendContent wiil replace #quote back to '
-            user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, #quote" + resourceType + "#quote);"
+            if log:
+                user_log_js = "userlog(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, #quote" + resourceType + "#quote);"
 
-            query_url_js = "queryUrlFromServer(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, " + newTabArgs + ", " + isTagArgs+ ", #quote" + fileName + "#quote);"
+            query_url_js = "queryUrlFromServer(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, " + newTabArgs + ", " + isTagArgs+ ", #quote" + fileName + "#quote," + islog + ");"
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, #quote"+ Config.background_after_click +"#quote, #quote" + Config.fontsize_after_click + "#quote, #quote" + resourceType + "#quote);"
 
         else:
-            user_log_js = "userlog('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');"
-            query_url_js = "queryUrlFromServer('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "', " + newTabArgs + ", " + isTagArgs + ", '" + fileName + "');"
+            if log:
+                user_log_js = "userlog('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');"
+            query_url_js = "queryUrlFromServer('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "', " + newTabArgs + ", " + isTagArgs + ", '" + fileName + "'," + islog +");"
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
 
@@ -1170,6 +1182,53 @@ class Utils:
                 break
 
         return html
+
+    def genCrossrefHtml(self, rid, aid, tag, content, library, split_char=','):
+        html = ''
+        if content.find('#') != -1:           
+            result = self.getCrossrefUrls(content).items()
+            for ft, link in result:
+                text = '<font style="font-size:10pt;">' + ft + '</font>'
+                db = content[0 : content.rfind('/') + 1].strip()
+                if db.find('library/') != -1:
+                    text = '<font style="font-size:10pt; color="red">' + ft[0:1] + '</font>' + '<font style="font-size:10pt;">' + ft[1:] + '</font>'
+                html += self.enhancedLink(link, text, module='main', library=library, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid)
+                if ft != result[len(result) -1][0]:
+                    html += split_char + '&nbsp;'
+                #if ft != filters[len(filters) -1]:
+                #    html += '<br>'
+        else:
+            key, url = self.getCrossrefUrl(content) 
+
+            html += self.enhancedLink(url, '<font style="font-size:10pt;">' + key + '</font>', module='main', library=library, rid=rid, resourceType=tag, urlFromServer=False, dialogMode=False, aid=aid) 
+
+        return html 
+
+    def getCrossrefUrls(self, content):
+        data = content.strip().split('#')
+        result = {}
+        if len(data) != 2:
+            return result
+        filters = []
+        if data[1].find('+') != -1:
+            filters = data[1].split('+')
+        else:
+            filters = [data[1]]
+
+        db = data[0][0 : data[0].rfind('/') + 1].strip()
+        key = data[0][data[0].rfind('/') + 1 :].strip()
+        for ft in filters:
+            #print ft + '<br>'
+            link = 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + ft
+            result[ft] = link
+
+        return result     
+
+    def getCrossrefUrl(self, content):
+        db = content[0 : content.rfind('/') + 1].strip()
+        key = content[content.rfind('/') + 1 :].strip()
+        link = 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key 
+        return key, link
 
     def next_pos(self, text, start, titleLen, keywordList, htmlStyle=True):
         min_end = len(text)
@@ -1547,8 +1606,9 @@ class Utils:
         return False
 
     def slack_message(self, message, channel):
-        token = Config.slack_token
+        token = '-'.join(Config.slack_token)
         sc = SlackClient(token)
+        #print token
         sc.api_call('chat.postMessage', channel=channel, 
                     text=message, username='My Sweet Bot',
                     icon_emoji=':robot_face:')
