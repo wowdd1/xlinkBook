@@ -286,6 +286,7 @@ class Config():
     #=====icon====
     enable_website_icon = True
     website_icons = {'.pdf' : 'https://cdn4.iconfinder.com/data/icons/CS5/128/ACP_PDF%202_file_document.png',\
+                 '.dir' : 'http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg',\
                  'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'amazon' : 'http://elianeelias.com/coda/wp-content/uploads/2013/05/Amazon-icon.png',\
                  'csdn' : 'http://a2.mzstatic.com/us/r30/Purple71/v4/99/61/36/996136cc-f759-5c0c-4531-ee0c6fec786a/icon175x175.png',\
