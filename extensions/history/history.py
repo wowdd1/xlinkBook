@@ -74,29 +74,40 @@ class History(BaseExtension):
         if self.existHistoryFile(form_dict['originFileName'].strip()):
             historyFilename = form_dict['originFileName'][form_dict['originFileName'].rfind('/') + 1 :].strip()
             historyFile = 'extensions/history/data/' + historyFilename + '-history'
+            #print historyFile
             f = open(historyFile, 'r+')
             rDict = {}
             all_lines = f.readlines()
             for line in all_lines:
                 r = Record(line)
                 if r.valid(r.line) == False:
+                    #print r.line
                     continue
  
                 if r.get_url().strip() != '':
                     rDict[r.get_url().strip()] = r
 
             rList = []
+            #print rDict
             if len(rDict) != len(all_lines):
                 f.truncate()
                 f.close()
-                f = open(historyFile, 'r+')
-                for k, v in rDict.items():
-                    if v.line.strip() != '' and v.valid(r.line):
+            else:
+                f.close()
+
+            f = open(historyFile, 'r+')
+            for k, v in rDict.items():
+                #print v.line
+
+                if v.line.strip() != '' and v.valid(r.line):
+                    if len(rDict) != len(all_lines):
                         f.write(v.line)
-                        if v.get_id().strip() == form_dict['rID'].strip() or (v.get_id().strip().startswith('loop') and v.get_id().strip().find(form_dict['rID'].strip()) != -1):
-                            rList.append(v)
+                    if v.get_id().strip() == form_dict['rID'].strip() or (v.get_id().strip().startswith('loop') and v.get_id().strip().find(form_dict['rID'].strip()) != -1):
+                        rList.append(v)
+
             f.close()
 
+            #print rList
             #f = open('extensions/history/data/' + historyFilename, 'r')
             if len(rList) > 0:
                 rList = sorted(rList, key=lambda d: d.get_url().strip()[0 : 20], reverse=True)
@@ -129,7 +140,7 @@ class History(BaseExtension):
                         jobj_record['url'] = item.get_url().strip()
                         appendHtml = self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '&nbsp;'
 
-                        html += self.gen_item(rID, divID, count, jobj_record, False, form_dict['originFileName'], appendHtml=appendHtml)
+                        html += self.gen_item(rID, divID, count, jobj_record, Config.more_button_for_history_module, form_dict['originFileName'], appendHtml=appendHtml)
 
                         '''
                         html += '<li><span>' + str(count) + '.</span>'
@@ -153,7 +164,7 @@ class History(BaseExtension):
                         continue
                     item_dict[jobj['title'].strip()] = ''
                     count += 1
-                    html += self.gen_item(rID, divID, count, jobj, True, form_dict['originFileName'])
+                    html += self.gen_item(rID, divID, count, jobj, Config.more_button_for_history_module, form_dict['originFileName'])
 
             html += "</ol></div>"
 

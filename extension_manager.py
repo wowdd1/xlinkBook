@@ -108,7 +108,7 @@ class ExtensionManager:
                     form['name'] = 'star'
                 else: 
                     form['name'] = form['navigate'].strip()
-
+            
             extension = self.loadExtension(name)
             return extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
     def checkCache(self, names, form):

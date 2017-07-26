@@ -20,10 +20,11 @@ class Config():
     default_engin_searchbox = 'zhihu'
 
     igon_log_for_history_module = ['history', 'star', 'exclusive'] #dialog
+    more_button_for_history_module = True
 
     smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag_batch_open = False
-    smart_engin_for_command_batch_open = ['twitter', 'baidu']
+    smart_engin_for_command_batch_open = ['twitter', 'baidu', 'amazon']
     
     recommend_engin = True
     recommend_engin_num = 23
@@ -249,11 +250,11 @@ class Config():
     '''
     #'''
     convert_url_args = '' #'?start=' #'?start=0&tag='
-    convert_page_step = 0
+    convert_page_step = 1
     convert_page_start = 1
     convert_page_max = 16
     convert_page_to_end = False
-    convert_tag = 'li' #"div#title"  # tag#class or tag
+    convert_tag = 'h2' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
@@ -318,4 +319,9 @@ class Config():
                  'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
                  'v.qq' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=311155846,3382957541&fm=23&gp=0.jpg',\
                  'douyu' : 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=791058301,37936658&fm=23&gp=0.jpg',\
-                 'pan.baidu' : 'http://img0.imgtn.bdimg.com/it/u=3595078885,1850864109&fm=23&gp=0.jpg'}
+                 'pan.baidu' : 'http://img0.imgtn.bdimg.com/it/u=3595078885,1850864109&fm=23&gp=0.jpg',\
+                 'youku' : 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1278976984,3400181597&fm=26&gp=0.jpg',\
+                 'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
+                 'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
+                 'twitch' : 'http://apps.friday.tw/news/wp-content/uploads/2015/03/twitchicon.png',\
+                 'bilibili' : 'http://cdn.duitang.com/uploads/item/201507/09/20150709195721_icm2N.thumb.224_0.jpeg'}

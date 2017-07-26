@@ -54,6 +54,8 @@ class Record():
         desc = self.line[self.get_pos(3) + 1 : ].replace('|', '')
         #if Config.hiden_record_id:
         #    desc = 'id:' + self.get_id().strip() + ' ' + desc
+        if desc.startswith(' ') == False:
+            desc = ' ' + desc
         return desc
 
     def valid(self, line):
@@ -222,7 +224,9 @@ class Tag():
         self.tag_docker = 'docker:'
         self.tag_zhihu = 'zhihu:'
         self.tag_z_zhihu = 'z-zhihu:'
+        self.tag_c_zhihu = 'c-zhihu:'
         self.tag_bitbucket = 'bitbucket:'
+        self.tag_sourceforge = 'sourceforge:'
         self.tag_business = 'business:'
         self.tag_country = 'country:'
         self.tag_price = "price:"
@@ -290,12 +294,60 @@ class Tag():
         self.tag_sayit = 'sayit:'
         self.tag_kaggle = 'kaggle:'
         self.tag_soundcloud = 'soundcloud:'
+        self.tag_expo = 'expo:'
+        self.tag_bilibili = 'bilibili:'
+        self.tag_archive_org = 'archive.org:'
+        self.tag_zeef = 'zeef:'
+        self.tag_g_cores = 'g-cores:'
+        self.tag_tieba = 'tieba:'
+        self.tag_discord = 'discord:'
+
+
+        #for multimedia
+        self.tag_co_president = "co-president:"
+        self.tag_creative_director = "creative-director:"
+        self.tag_art_director = "art-director:"
+        self.tag_game_director = "game-director:"
+        self.tag_editor = "editor:"
+        self.tag_lead_programmer = "lead-programmer:"
+        self.tag_programmer = "programmer:"
+        self.tag_graphics_programmer = "graphics-programmer:"
+        self.tag_lead_game_designer = "lead-game-designer:"
+        self.tag_game_designer = "game-designer:"
+        self.tag_user_interface_designer = "user-interface-designer:"
+        self.tag_lead_artist = "lead-artist:"
+        self.tag_lead_character_artist = "lead-character-artist:"
+        self.tag_concept_artist = "concept-artist:"
+        self.tag_lead_animation = "lead-animation:"
+        self.tag_lead_gameplay_animator = "lead-gameplay-animator:"
+        self.tag_animator = "animator:"
+        self.tag_musician_composer = "musician-composer:"
+        self.tag_lead_audio = "lead-audio:"
+        self.tag_lead_environment_artist = "lead-environment-artist:"
+        self.tag_environment_artist = "environment-artist:"
+        self.tag_lead_lighting_artist = "lead-lighting-artist:"
+        self.tag_lighting_artist = "lighting-artist:"
+        self.tag_lead_visual_effects_artist = "lead-visual-effects-artist:"
+        self.tag_visual_effects_artist = "visual-effects-artist:"
+        self.tag_single_player_quality = "single-player-quality:"
+        self.tag_assurance_manager = "assurance-manager:"
+        self.tag_technical_art_director = "technical-art-director:"
+        self.tag_actor = "actor:"
+        self.tag_communication_director = "communication-director:"
+        self.tag_lead_designer = "lead-designer:"
+        self.tag_lead_cinematic_animator = "lead-cinematic-animator:"
+        self.tag_publisher = 'publisher:'
+        self.tag_studio = 'studio:'
+        self.tag_producer = 'producer:'
+        #for multimedia
+
+        self.tag_map = {'multimedia-library' : [self.tag_co_president, self.tag_creative_director, self.tag_art_director, self.tag_game_director, self.tag_editor, self.tag_lead_programmer, self.tag_programmer, self.tag_graphics_programmer, self.tag_lead_game_designer, self.tag_game_designer, self.tag_user_interface_designer, self.tag_lead_artist, self.tag_lead_character_artist, self.tag_concept_artist, self.tag_lead_animation, self.tag_lead_gameplay_animator, self.tag_animator, self.tag_musician_composer, self.tag_lead_audio, self.tag_lead_environment_artist, self.tag_environment_artist, self.tag_lead_lighting_artist, self.tag_lighting_artist, self.tag_lead_visual_effects_artist, self.tag_visual_effects_artist, self.tag_single_player_quality, self.tag_assurance_manager, self.tag_technical_art_director, self.tag_actor, self.tag_communication_director, self.tag_lead_designer, self.tag_lead_cinematic_animator, self.tag_publisher, self.tag_studio, self.tag_producer]}
 
 
         self.tag_list = [self.tag_id, self.tag_title, self.tag_url, self.tag_videourl, self.tag_author, self.tag_winner, self.tag_ratings, self.tag_term,\
                          self.tag_prereq, self.tag_prerequisites, self.tag_toprepo, self.tag_project, self.tag_university,\
                          self.tag_available, self.tag_level, self.tag_features, self.tag_instructors, self.tag_professor,\
-                         self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_adviser, self.tag_scientist, self.tag_phd, self.tag_people, self.tag_follow, self.tag_description, self.tag_textbook, self.tag_book, self.tag_bible, self.tag_paper, self.tag_homepage, self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cso, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_founder, self.tag_vp, self.tag_investor, self.tag_stockholder, self.tag_foundation, self.tag_programmer, self.tag_engineer, self.tag_developer, self.tag_hacker, self.tag_product, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, self.tag_meetup, self.tag_huodongxing, self.tag_y_channel, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, self.tag_blog, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_zhihu, self.tag_z_zhihu, self.tag_bitbucket, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebok, self.tag_reddit, self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, self.tag_weixin, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, self.tag_freenode, self.tag_videolectures, self.tag_techtalks, self.tag_universe, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_douyu, self.tag_digg, self.tag_twitch, self.tag_ustream, self.tag_csdnlib, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, self.tag_pcpartpicker, self.tag_baijiahao, self.tag_dean, self.tag_jianshu, self.tag_15yan, self.tag_consultant, self.tag_nucleus, self.tag_youku, self.tag_zaker, self.tag_v_qq, self.tag_sohu, self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud]
+                         self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_adviser, self.tag_scientist, self.tag_phd, self.tag_people, self.tag_follow, self.tag_description, self.tag_textbook, self.tag_book, self.tag_bible, self.tag_paper, self.tag_homepage, self.tag_organization, self.tag_platform, self.tag_specialization, self.tag_journal, self.tag_tutorial, self.tag_dataset, self.tag_priority, self.tag_parentid, self.tag_category, self.tag_summary, self.tag_published, self.tag_version, self.tag_path, self.tag_icon, self.tag_shortname, self.tag_ceo, self.tag_cso, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_founder, self.tag_vp, self.tag_investor, self.tag_stockholder, self.tag_foundation, self.tag_programmer, self.tag_engineer, self.tag_developer, self.tag_hacker, self.tag_product, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_leader, self.tag_director, self.tag_community, self.tag_conference, self.tag_workshop, self.tag_challenge, self.tag_company, self.tag_startup, self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_youtube, self.tag_github, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, self.tag_meetup, self.tag_huodongxing, self.tag_y_channel, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, self.tag_blog, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_bitbucket, self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebok, self.tag_reddit, self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, self.tag_weixin, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, self.tag_freenode, self.tag_videolectures, self.tag_techtalks, self.tag_universe, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_douyu, self.tag_digg, self.tag_twitch, self.tag_ustream, self.tag_csdnlib, self.tag_iqiyi, self.tag_flipboard, self.tag_channel9, self.tag_panopto, self.tag_piazza, self.tag_expert, self.tag_blogcsdn, self.tag_pcpartpicker, self.tag_baijiahao, self.tag_dean, self.tag_jianshu, self.tag_15yan, self.tag_consultant, self.tag_nucleus, self.tag_youku, self.tag_zaker, self.tag_v_qq, self.tag_sohu, self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, self.tag_bilibili, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord]
 
         self.tag_list_short = ["d:"]
 
@@ -318,7 +370,9 @@ class Tag():
                         self.tag_docker :  'https://hub.docker.com/r/%s/',\
                         self.tag_zhihu :  'https://www.zhihu.com/%s',\
                         self.tag_z_zhihu : 'https://zhuanlan.zhihu.com/%s',\
+                        self.tag_c_zhihu : 'https://www.zhihu.com/collection/%s',\
                         self.tag_bitbucket :  'https://bitbucket.org/%s/',\
+                        self.tag_sourceforge : 'https://sourceforge.net/projects/%s',\
                         self.tag_facebok :  'https://www.facebook.com/%s/?fref=nf',\
                         self.tag_reddit :  'https://www.reddit.com/r/%s/',\
                         self.tag_weibo : 'http://weibo.com/u/%s',\
@@ -360,16 +414,45 @@ class Tag():
                         self.tag_inke : 'http://www.inke.cn/replaylive_list.html?uid=%s',\
                         self.tag_sayit : 'https://sayit.%s',\
                         self.tag_kaggle : 'https://www.kaggle.com/%s',\
-                        self.tag_soundcloud : 'https://soundcloud.com/%s'}
+                        self.tag_soundcloud : 'https://soundcloud.com/%s',\
+                        self.tag_bilibili : 'https://space.bilibili.com/%s#!/video',\
+                        self.tag_archive_org : 'https://archive.org/details/%s',\
+                        self.tag_zeef : 'https://%s.zeef.com/%s',\
+                        self.tag_g_cores : 'http://www.g-cores.com/users/%s',\
+                        self.tag_tieba : 'https://tieba.baidu.com/f?kw=%s',\
+                        self.tag_discord : 'https://discordapp.com/channels/%s/'}
 
-        self.account_tag_alias = {'2894093575' : "jiangmen", '1398503970' : "di ping xian"}
+        self.account_tag_alias = {'2894093575' : "jiangmen", '1398503970' : "di ping xian", '493603743' : 'jiqizhixin',\
+                                'UC0JB7TSe49lg56u6qH8y_MQ' : 'GDC', 'UCU1AE2Hp_yYtnJQfYEuQrEA' : 'Game engine Topic',\
+                                '741405198' : '3DM-1', '976856243' : '3DM-2', '2603675662' : '3DM-3', '2503010062' : '3DM-4',\
+                                '590391288' : '3DM-5', '2570119694' : '3DM-6', '2570095630' : '3DM-7', '2502952974' : '3DM-8',\
+                                '4027808857' : '3DM-9', '2519757326' : '3DM-10', '999596718' : 'gamersky', '352735192' : 'ali213',\
+                                '3392614728' : '3DM-11', '3523716759' : 'ali213-2', '3090197518' : '3DM-12', '2871944101' : '3DM-13',\
+                                '4236980354' : '3DM-14', '3559008924' : '3DM-15', '2503015182' : '3DM-16', '2486281890' : '3DM-17',\
+                                'UNDg0MTQ0MTY' : '3DMGame', '3590614487' : '3DM-18', '3893359033': '3DM-19', '654742521' : '3DM-20',\
+                                '3056621326' : '3DM-21', '2502981390' : '3DM-22', '3073430542' : '3DM-23', '2519785230' : '3DM-24',\
+                                '486768649' : '3DM-25', '3073388814' : '3DM-26', '3593180263' : '3DM-27', '2022788793' : 'paopao slam',\
+                                '3293067964' : 'machinelearning'}
 
         #account_mode only for people or organization
         self.tag_list_account_mode = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_zhihu, self.tag_leader]
         
         self.tag_list_direct_link = [self.tag_website]
 
-        self.tag_list_smart_link = [self.tag_path, self.tag_id, self.tag_project, self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_alias, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cso, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_g_plus, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_phd, self.tag_people, self.tag_award, self.tag_website, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_product, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_blog, self.tag_alternativeto, self.tag_clone, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_facebok, self.tag_challenge, self.tag_job, self.tag_leader, self.tag_alliance, self.tag_crossref, self.tag_founder, self.tag_dataset, self.tag_weixin, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_review, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_bible, self.tag_expert, self.tag_dean, self.tag_consultant, self.tag_flagship, self.tag_textbook]
+        self.tag_list_smart_link = [self.tag_path, self.tag_id, self.tag_project, self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_alias, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cso, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_g_plus, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_phd, self.tag_people, self.tag_award, self.tag_website, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_product, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_blog, self.tag_alternativeto, self.tag_clone, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_facebok, self.tag_challenge, self.tag_job, self.tag_leader, self.tag_alliance, self.tag_crossref, self.tag_founder, self.tag_dataset, self.tag_weixin, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_review, self.tag_agent, self.tag_survey, self.tag_series, self.tag_specialization, self.tag_program, self.tag_bible, self.tag_expert, self.tag_dean, self.tag_consultant, self.tag_flagship, self.tag_textbook, self.tag_expo]
+
+    def get_tag_list(self, library):
+        #print 'get_tag_list:' + library
+
+        if self.tag_map.has_key(library):
+            return self.tag_list + self.tag_map[library] #+ self.tag_list_account.keys()
+        return self.tag_list #+ self.tag_list_account.keys()
+
+    def get_list_smart_link(self, library):
+        #print 'get_list_smart_link:' + library
+        if self.tag_map.has_key(library):
+            return self.tag_list_smart_link + self.tag_map[library]
+        return self.tag_list_smart_link
 
 
 
@@ -380,9 +463,9 @@ class WrapRecord(Record):
         self.describe = self.to_unicode(self.get_describe())
         self.tag = Tag()
 
-    def next_tag_pos(self, pos, max_pos):
+    def next_tag_pos(self, pos, max_pos, library=''):
         min_pos = len(self.describe) + 1
-        for t in self.tag.tag_list:
+        for t in self.tag.get_tag_list(library):
             next_pos = self.describe.lower().find(t, pos + 1)
             if next_pos != -1 :
                 if max_pos:
@@ -395,7 +478,8 @@ class WrapRecord(Record):
         else:
             return -1
 
-    def get_tag_content(self, tag, max_pos=False):
+    def get_tag_content(self, tag, max_pos=False, library=''):
+        tag = ' ' + tag.strip()
         if tag.endswith(':') == False:
             tag = tag + ':'
             
@@ -404,7 +488,7 @@ class WrapRecord(Record):
         #print start_pos
         #print self.describe.lower()[start_pos :]
         if start_pos != -1:
-            end_pos = self.next_tag_pos(start_pos + len(tag), max_pos)
+            end_pos = self.next_tag_pos(start_pos + len(tag), max_pos, library=library)
             if end_pos != -1:
                 #print start_pos 
                 #print end_pos

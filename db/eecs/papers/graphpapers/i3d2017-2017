@@ -1,25 +1,21 @@
-i3d2016-1 | SSVDAGs: Symmetry-aware Sparse Voxel DAGs |  | author:Alberto Jaspe Villanueva ,  Fabio Marton ,  Enrico Gobbetti
-i3d2016-2 | Exploiting Coherence in Time-Varying Voxel Data |  | author:Viktor Kampe ,  Sverker Rasmuson , Markus Billeter,  Erik Sintorn ,  Ulf Assarsson
-i3d2016-3 | Triangle Reordering for Reduced Overdraw in Animated Scenes |  | author:Songfang Han ,  Pedro V. Sander
-i3d2016-4 | On the Efficiency of Image Metrics for Evaluating the Visual Quality of 3D Models |  | author:Guillaume Lavoue , Mohamed Larabi,  Libor Vasa
-i3d2016-5 | PRECISION: Precomputed Environment Semantics for Contact-Rich Character Animation |  | author:Mubbasir Kapadia , Xu Xianghao,  Marcelo Kallmann ,  Stelian Coros ,  Robert W. Sumner ,  Markus Gross
-i3d2016-6 | Dynamically Balanced and Plausible Trajectory Planning for Human-Like Characters |  | author:Chonhyon Park , Jae Sung Park,  Steve Tonneau,  Nicolas Mansard,  Franck Multon,  Julien Pettre,  Dinesh Manocha
-i3d2016-7 | Path Patterns: Analyzing and Comparing Real and Simulated Crowds |  | author:He Wang ,  Jan Ondrej ,  Carol O'Sullivan
-i3d2016-8 | Real-time Hair Mesh Simulation |  | author:Kui Wu ,  Cem Yuksel
-i3d2016-9 | Ductile Fracture for Clustered Shape Matching |  | author:Ben Jones , April Martin,  Joshua A. Levine ,  Tamar Shinar ,  Adam W. Bargteil
-i3d2016-10 | Adaptive Impulse Response Modeling for Interactive Sound Propagation |  | author:Carl Schissler ,  Dinesh Manocha
-i3d2016-11 | Interactive Modal Sound Synthesis Using Generalized Proportional Damping |  | author:Auston Sterling,  Ming C. Lin
-i3d2016-12 | Guided Ecological Simulation for Artistic Editing of Plant Distributions in Natural Scenes |  | author:Gwyneth A. Bradbury ,  Kartic Subr ,  Charalampos Koniaris ,  Kenny Mitchell ,  Tim Weyrich
-i3d2016-13 | Barehanded Music: Real-time Hand Interaction for Virtual Piano |  | author:Hui Liang , Jin Wang,  Qian Sun,  Yong-Jin Liu,  Junsong Yuan,  Jun Luo,  Ying He
-i3d2016-14 | Augmented Reality Instruction for Object Assembly based on Markerless Tracking |  | author:Li-Chen Wu,  I-Chen Lin , Ming-Han Tsai
-i3d2016-15 | Data-Driven Adaptive History List for Image Editing |  | author:Hsiang-Ting Chen ,  Li-Yi Wei ,  Bjorn Hartmann ,  Maneesh Agrawala
-i3d2016-16 | New Controls for Combining Images in Correspondence |  | author:Jing Liao,  Diego Nehab ,  Hugues Hoppe ,  Pedro V. Sander
-i3d2016-17 | Accurate Analytic Approximations For Real-Time Specular Area Lighting |  | author:Pascal Lecocq ,  Sourimant Gael ,  Marvie Jean-Eudes
-i3d2016-18 | Sequential Monte Carlo Instant Radiosity |  | author:Peter Hedman ,  Tero Karras ,  Jaakko Lehtinen
-i3d2016-19 | Precomputed Illuminance Composition for Real-Time Global Illumination |  | author:Johannes Jendersie,  David Kuri ,  Thorsten Grosch
-i3d2016-20 | CloudLight: A System of Amortizing Indirect Lighting in Real-Time Rendering |  | author:Cyril Crassin ,  David Luebke , Michael Mara,  Morgan McGuire , Brent Oster,  Peter Shirley ,  Peter-Pike Sloan ,  Chris Wyman
-i3d2016-21 | Real-time Rendering of Procedural Multiscale Materials |  | author:Tobias Zirr ,  Anton Kaplanyan
-i3d2016-22 | A Phenomenological Scattering Model for Order-Independent Transparency |  | author:Morgan McGuire , Michael Mara
-i3d2016-23 | Beyond Hard Shadows: Moment Shadow Maps for Single Scattering, Soft Shadows and Translucent Occluders |  | author:Christoph Peters , Cedrick Munstermann,  Nico Wetzstein,  Reinhard Klein
-i3d2016-24 | A Multiview and Multilayer Approach for Interactive Ray Tracing |  | author:Konstantinos Vardis ,  Andreas - Alexandros Vasilakis ,  Georgios Papaioannou
-i3d2016-25 | An Evaluation of Multi-Hit Ray Traversal in a BVH using Existing First-Hit/Any-Hit Kernels |  | author:Jefferson Amstutz,  Christiaan Gribble , Johannes Gunther,  Ingo Wald
+i3d2017-1 | Tiled Light Trees |  | author:Yuriy O'Donnell,  Matthaus Chajdas
+i3d2017-2 | Real-Time Global Illumination using Precomputed Light Field Probes |  | author:Morgan McGuire , Michael Mara,  Derek Nowrouzezahrai ,  David Luebke
+i3d2017-3 | Stochastic Light Culling |  | author:Yusuke Tokuyoshi,  Takahiro Harada
+i3d2017-4 | Interactive Cage Generation for Mesh Deformation |  | author:Binh Huy Le ,  Zhigang Deng
+i3d2017-5 | Parallel Continuous Collision Detection for High-Performance GPU Cluster |  | author:Peng Du ,  Elvis S. Liu ,  Toyotaro Suzumura
+i3d2017-6 | Global Stiffness Structural Optimization for 3D Printing under Unknown Loads |  | author:Tuanfeng Y. Wang , Yuan Liu, Xuefeng Liu,  Zhouwang Yang ,  Dongming Yan ,  Ligang Liu
+i3d2017-7 | Real-time Fiber-level Cloth Rendering |  | author:Kui Wu ,  Cem Yuksel
+i3d2017-8 | Responsive Real-Time Grass Rendering for General 3D Scenes |  | author:Klemens Jahrmann,  Michael Wimmer
+i3d2017-9 | Hashed Alpha Testing |  | author:Chris Wyman ,  Morgan McGuire
+i3d2017-10 | How2Sketch: Generating Easy-To-Follow Tutorials for Sketching 3D Objects |  | author:James W. Hennessey ,  Han Liu ,  Holger Winnemoller ,  Mira Dontcheva ,  Niloy J. Mitra
+i3d2017-11 | Sketch-based Guided Modeling of 3D Buildings from Oriented Photos |  | author:Michael Schwarzler , Lisa Kellner, Stefan Maierhofer,  Michael Wimmer
+i3d2017-12 | Feature-based Volumetric Terrain Generation |  | author:Michael Becher,  Michael Krone ,  Guido Reina ,  Thomas Ertl
+i3d2017-13 | Computing Delaunay Refinement Using the GPU |  | author:Zhenghai Chen, Meng Qi,  Tiow-Seng Tan
+i3d2017-14 | Real-Time High-Quality Surface Rendering for Large Scale Particle-based Fluids |  | author:Xiangyun Xiao, Shuai Zhang, Xubo Yang
+i3d2017-15 | Efficient Rendering of Volumetric Motion Blur Using Temporally Unstructured Volumes |  | author:Magnus Wrenninge
+i3d2017-16 | Compressing Color Data for Voxelized Surface Geometry |  | author:Dan Dolonius,  Erik Sintorn ,  Viktor Kampe ,  Ulf Assarsson
+i3d2017-17 | MPTC: Video Rendering for Virtual Screens using Compressed Textures |  | author:Srihari Pratapa,  Pavel Krajcevski ,  Dinesh Manocha
+i3d2017-18 | Scene-Adaptive High Dynamic Range Display for Low Latency Augmented Reality |  | author:Peter Lincoln, Alex Blate,  Montek Singh ,  Andrei State ,  Mary Whitton ,  Turner Whitted ,  Henry Fuchs
+i3d2017-19 | Path Compression Kd-trees with Multi-layer Parallel Construction: A Case Study on Ray Tracing |  | author:Zonghui Li, Yangdong Deng, Ming Gu
+i3d2017-20 | An N-ary BVH Child Node Sorting Technique for Occlusion Tests |  | author:Shinji Ogaki, Alexandre Derouet-Jourdan
+i3d2017-21 | Efficient Ray Tracing Kernels for Modern CPU Architectures |  | author:Valentin Fuetterling,  Carsten Lojewski ,  Franz-Josef Pfreundt ,  Achim Ebert
