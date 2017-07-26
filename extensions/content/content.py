@@ -7,6 +7,7 @@ from utils import Utils
 from update.all_subject import default_subject
 from record import ContentRecord
 from config import Config
+import re
 import requests
 reload(sys)
 sys.setdefaultencoding("utf-8")
@@ -80,12 +81,25 @@ class Content(BaseExtension):
     def check(self, form_dict):
         rID = form_dict['rID'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
-        self.loadContent(rID, fileName, self.optional_content)
-        self.loadContent(rID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
+        #return True
+        #r = self.utils.getRecord(rID, path=fileName)
+        #if r != None and r.line.strip() != '':
+        #    print 'xwwwww' + r.line
+        #    return True
+        p = self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getExtensionDataFilePath(self.formatFileName(fileName)))
+        print p
+        if p != '':
+            print 'xwwwww22222' + p
+
+            return True
+        return False
+
+        #self.loadContent(rID, fileName, self.optional_content)
+        #self.loadContent(rID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
         #print self.record_content
-        print self.optional_content
-        print self.datafile_content
-        return self.datafile_content.has_key(rID) or self.optional_content.has_key(rID)
+        #print self.optional_content
+        #print self.datafile_content
+        #return self.datafile_content.has_key(rID) or self.optional_content.has_key(rID)
         
 
     def write(self, html):

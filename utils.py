@@ -352,6 +352,7 @@ class Utils:
     cache_records = {}
 
     def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False, use_cache=True):
+        #print path + 'xxx'
         if self.cache_records.has_key(keyword) and use_cache:
             if log:
                 print 'return cached record for ' + keyword
@@ -1356,6 +1357,7 @@ class Utils:
             #print full_path
             if os.path.isfile(full_path) and full_path.find('db/') != -1:
                 #print full_path
+                '''
                 with open(full_path, 'r+') as f:
                     try:
                         data = mmap.mmap(f.fileno(), 0)
@@ -1363,9 +1365,24 @@ class Utils:
                             final_file_list.append(full_path)
                     except Exception as e:
                         print str(e) + full_path
+                '''
+                p = self.find_file_by_pattern_path(re_file, full_path)
+                if p != '':
+                    final_file_list.append(p)
+
             else:
                 final_file_list += self.find_file_by_pattern(pattern, full_path)
         return final_file_list
+
+    def find_file_by_pattern_path(self, re, path):
+        with open(path, 'r+') as f:
+            try:
+                data = mmap.mmap(f.fileno(), 0)
+                if re.search(data):
+                    return path
+            except Exception as e:
+                print str(e) + path
+        return ''
 
     def sortLines(self, lines):
         if len(lines) > 0:
@@ -1411,11 +1428,16 @@ class Utils:
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
     def getIconHtml(self, url, width=14, height=12):
+        #print 'getIconHtml ' + url
         if Config.enable_website_icon == False:
             return ''
+        if os.path.isdir(url):
+            url += '.dir'
+            #print url
         src = ''
         if url.startswith('http') and url.endswith('btnI=1') == False:
             url = url[0 : url.find('/', url.find('//') + 2)]
+
         for k, v in Config.website_icons.items():
             if url.find(k) != -1:
                 src = v
