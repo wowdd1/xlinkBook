@@ -17,6 +17,7 @@ class Exclusive(BaseExtension):
         rID = form_dict['rID'].strip()
         title = form_dict['rTitle'].strip()
         #fileName = form_dict['fileName']
+        url = form_dict['url'].strip()
         fileName = form_dict['originFileName']
         print fileName
         r = self.utils.getRecord(rID, path=fileName)
@@ -32,7 +33,7 @@ class Exclusive(BaseExtension):
             desc = 'engintype:' + title + ' '
             desc += 'localdb:' + title + ' '
             desc += self.kg.getCrossref(title, ' '.join(Config.exclusive_crossref_path))
-            record = Record('custom-exclusive-' + rID + ' | '+ title + ' | | ' + desc)
+            record = Record('custom-exclusive-' + rID + ' | '+ title + ' | ' + url + ' | ' + desc)
             return self.utils.output2Disk([record], 'exclusive', 'exclusive')
         #if fileName.find("/custom") != -1:
         #    fileName = form_dict['originFileName']

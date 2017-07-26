@@ -1,4 +1,4 @@
-engin-1 | google | https://www.google.com/search?q= | priority:9 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
+engin-1 | google | https://www.google.com.hk/search?q= | priority:9 description:default all star icon:http://mycroftproject.com/updateos.php/id0/gcc_rubeur.ico
 engin-2 | googlevideo | https://www.google.com.hk/videohp?hl=en&gws_rd=ssl&q= | priority:0 description:course talk
 engin-3 | scholar | https://scholar.google.com/scholar?hl=en&q= | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/googlescholar.ico
 engin-4 | arxiv | http://search.arxiv.org:8081/?query=%s&in=grp_cs | priority:8 description:paper star icon:http://mycroftproject.com/updateos.php/id0/arxiv_general.ico
@@ -121,7 +121,7 @@ engin-117 | chromium | https://code.google.com/p/chromium/codesearch#search/&sq=
 engin-118 | searchcode | https://searchcode.com/?q= | priority:0 description:code
 engin-119 | krugle | http://opensearch.krugle.org/document/search/#query= | priority:0 description:code
 engin-120 | openhub | https://code.openhub.net/search?s= | priority:0 description:code
-engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | priority:8 description:slide
+engin-121 | neatcn | http://ss.neatcn.com/search/slideshow?searchfrom=header&q= | priority:8 description:ppt
 engin-122 | khanacademy | https://www.khanacademy.org/search?page_search_query= | priority:0 description:course
 engin-123 | 36kr | http://36kr.com/search/articles/ | priority:0 description:news
 engin-124 | quora | https://www.quora.com/search?q= | priority:6 description:q-a star
@@ -142,7 +142,7 @@ engin-138 | law-star | http://law1.law-star.com/search?kw= | priority:0 descript
 engin-139 | worldlii | http://www.worldlii.org/cgi-bin/sinosrch.cgi?query= | priority:0 description:legal
 engin-140 | law.com | http://www.law.com/search/?query= | priority:0 description:legal
 engin-141 | baike | http://baike.baidu.com/search?pn=0&rn=0&enc=utf8&word= | priority:0 description:wiki
-engin-142 | wenku | http://wenku.baidu.com/search?word= | priority:0 description:slide doc
+engin-142 | wenku | http://wenku.baidu.com/search?word= | priority:0 description:ppt doc
 engin-143 | bitbucket | https://bitbucket.org/repo/all?name= | priority:0 description:project
 engin-144 | edusalsa | https://edusalsa.com/search?q= | priority:0 description:course review
 engin-145 | coursecycle | https://coursecycle.com/ | priority:0 description:course review
@@ -211,7 +211,7 @@ engin-208 | dev.twitter | https://dev.twitter.com/search/node/%s%20language%3Aen
 engin-209 | unity3d | https://unity3d.com/search?gq= | priority:0 description:develop
 engin-210 | unrealengine | https://www.unrealengine.com/bingSearch?keyword= | priority:0 description:develop
 engin-211 | darpa | http://search.darpa.mil/search?q=%s&btnG=Search&client=default_frontend&output=xml_no_dtd&proxystylesheet=default_frontend&sort=date%3AD%3AL%3Ad1&wc=200&wc_mc=1&oe=UTF-8&ie=UTF-8&ud=1&filter=p&getfields=*&exclude_apps=1&site=default_collection | priority:0 description:project project
-engin-212 | nasa | http://nasasearch.nasa.gov/search?utf8=%E2%9C%93&affiliate=nasa&query= | priority:0 description:project
+engin-212 | nasasearch | http://nasasearch.nasa.gov/search?utf8=%E2%9C%93&affiliate=nasa&query= | priority:0 description:project
 engin-213 | rand | http://www.rand.org/search.html?query=%s&search-submit= | priority:0 description:project
 engin-214 | usa.gov | http://search.usa.gov/search?utf8=%E2%9C%93&affiliate=nrl&query= | priority:0 description:project
 engin-215 | cnblogs | http://zzk.cnblogs.com/s?t=b&w= | priority:0 description:blog
@@ -250,7 +250,7 @@ engin-247 | fortune | http://search-app.fortune.com/?q= | priority:0 description
 engin-248 | jpo.go | http://www.jpo.go.jp/search/english_search_results.html?q=%s&sa.x=0&sa.y=0&cx=011234856858711762651%3Atvllqmfwrau | priority:0 description:patent
 engin-249 | jingpinke | http://course.jingpinke.com/search?keyword= | priority:0 description:course
 engin-250 | xuezhe | http://xuezhe.cnki.net/Search/Search.aspx?ac=result&sm=0&sv= | priority:0 description:people
-engin-251 | thepiratebay | https://thepiratebay.org/search/%s/0/99/0 | priority:0 description:p2p
+engin-251 | thepiratebay | https://thepiratebay.org/search/%s/0/99/0 | priority:5 description:p2p
 engin-252 | enbtx | http://www.enbtx.com/Search/%s/1.html | priority:0 description:p2p
 engin-253 | verycd | http://www.verycd.com/search/entries/ | priority:0 description:p2p
 engin-254 | search.bt | http://search.bt.com/result?p=%s&y=Search&pr=dp | priority:0 description:p2p
@@ -270,7 +270,7 @@ engin-269 | drive | https://drive.google.com/drive/search?q= | priority:0 descri
 engin-270 | yinxiang | https://app.yinxiang.com/Home.action#ses=1&sh=5&sds=5&x= | priority:4 description:tools
 engin-271 | webstore | https://chrome.google.com/webstore/search/ | priority:6 description:tools
 engin-272 | onedrive | https://onedrive.live.com/?id=root&cid=8C7327A3A224098E&qt=search&q= | priority:0 description:cloud
-engin-273 | mail.google | https://mail.google.com/mail/u/0/#search/ | priority:8 description:tools social star shortname:gmail
+engin-273 | mail.google | https://mail.google.com/mail/u/0/#search/ | priority:8 description:tools social shortname:gmail
 engin-274 | dropbox | https://www.dropbox.com/search/personal?query=%s&query_unnormalized=%s&last_fq_path= | priority:0 description:cloud
 engin-275 | dotnetrocks | https://www.dotnetrocks.com/?q= | priority:0 description:podcast
 engin-276 | voanews | http://www.voanews.com/search/search2.aspx#all|%s|0|allzones|min|now|date | priority:0 description:podcast
@@ -391,7 +391,7 @@ engin-400 | mycroft | http://mycroftproject.com/search-engines.html?name= | prio
 engin-401 | altmetric | https://www.altmetric.com/?s= | priority:0 description:tools
 engin-402 | hypothes | https://hypothes.is/stream?q= | priority:4 description:tools
 engin-403 | alternativeto | http://alternativeto.net/software/ | priority:3 description:discovery tools
-engin-404 | xuetangx | http://www.xuetangx.com/courses/search?query= | priority:0 description:course
+engin-404 | xuetangx | http://www.xuetangx.com/courses/search?query= | priority:7 description:course
 engin-405 | ptopenlab | https://crl.ptopenlab.com:8800/dashboard/supervessel/market_images/?q= | priority:4 description:cloud
 engin-406 | codio | https://codio.com/home/projects/?tab=1&sDirection=asc&sProp=reverseOwnerLastAccess&filter= | priority:3 description:cloud
 engin-407 | hub.docker | https://hub.docker.com/search/?isAutomated=0&isOfficial=0&page=1&pullCount=0&q=%s&starCount=0 | priority:4 description:cloud
@@ -401,13 +401,13 @@ engin-410 | aws.amazon | https://us-west-2.console.aws.amazon.com/console/home?n
 engin-411 | aliyun | https://www.aliyun.com/ss/?k= | priority:0 description:cloud
 engin-412 | qcloud | https://www.qcloud.com/search/result.php?type=1&pagenum=1&kwd= | priority:0 description:cloud
 engin-413 | bce.baidu | https://bce.baidu.com/search.html?q= | priority:0 description:cloud
-engin-414 | nbviewer | http://nbviewer.jupyter.org/github/ | priority:3 description:tools
+engin-414 | nbviewer | http://nbviewer.jupyter.org/github/%s/ | priority:4 description:tools
 engin-415 | openpowerfoundation | http://openpowerfoundation.org/?submit=Search&s= | priority:4 description:develop
 engin-416 | qwiklab | https://nvidia.qwiklab.com/searches/elasticsearch?q= | priority:0 description:cloud
 engin-417 | paperscape | http://paperscape.org/?q= | priority:5 description:visualization
 engin-418 | image.baidu | http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word= | priority:3 description:image
 engin-419 | bing.com/images | http://cn.bing.com/images/search?q=%s&go=Submit&qs=bs&form=QBILPG | priority:3 description:image
-engin-420 | slack | https://slack.com/signin/find?q= | priority:3 description:tools
+engin-420 | slack | https://%s.slack.com/ | priority:7 description:tools social
 engin-421 | gitter | https://gitter.im/ | priority:3 description:tools
 engin-422 | flickr | https://www.flickr.com/search/?text= | priority:0 description:image
 engin-423 | images.search.yahoo | https://images.search.yahoo.com/search/images;_ylt=AwrTcXxU5FhXgMQA8KiLuLkF?p=%s&ei=UTF-8&iscqry=&fr=sfp | priority:0 description:image
@@ -527,7 +527,7 @@ engin-536 | careerengine | http://search.careerengine.us/posts/ | priority:5 des
 engin-537 | julyedu | https://www.google.com.hk/search?q=%s+site%3Ajulyedu.com | priority:3 description:course
 engin-538 | producthunt | https://www.producthunt.com/search/posts?q= | priority:5 description:product news
 engin-539 | v.qq | http://v.qq.com/x/search/?q=%s&stag=0&smartbox_ab= | priority:4 description:video
-engin-540 | weixin.so | http://weixin.sogou.com/weixin?type=2&query= | priority:4 description:social news shortname:weixin
+engin-540 | weixin.so | http://weixin.sogou.com/weixin?type=1&query= | priority:4 description:social news shortname:weixin
 engin-541 | eventbrite | https://www.eventbrite.com/d/ca--san-francisco/%s/?crt=regular&sort=best | priority:5 description:event
 engin-542 | leiphone | http://www.leiphone.com/search?s=%s&site=article | priority:4 description:news course
 engin-543 | weixinla | http://www.weixinla.com/search/ | priority:3 description:social news
@@ -537,7 +537,7 @@ engin-546 | emeraldinsight | http://www.emeraldinsight.com/action/doSearch?AllFi
 engin-547 | qoofan.com | https://www.google.com.hk/search?q=%s+site%3Aqoofan.com | priority:3 description:social news
 engin-548 | analyticsvidhya | https://www.analyticsvidhya.com/?s= | priority:5 description:blog job tutorial, discovery
 engin-549 | awesome | https://github.com/search?q=awesome%20 | priority:7 description:project paper course dataset
-engin-550 | newrank | http://www.newrank.cn/public/info/search.html?value=%s&isBind=false | priority:8  description:star review social news
+engin-550 | newrank | http://www.newrank.cn/public/info/search.html?value=%s&isBind=false | priority:8  description:review social news
 engin-551 | fb-pages | https://www.facebook.com/search/str/%s/keywords_pages | priority:8  description:social news
 engin-552 | airbnb | https://www.airbnb.com/s/ | priority:6 description:business
 engin-553 | angel | https://angel.co/%s | priority:4 description:job
@@ -549,7 +549,7 @@ engin-558 | learning | https://www.linkedin.com/learning/search?keywords=%s | pr
 engin-559 | pluralsight | https://www.pluralsight.com/search?q=%s | priority:4 description:course
 engin-560 | authorea | https://www.authorea.com/browse?q= | priority:4 description:tools
 engin-561 | picatic | https://www.picatic.com/events#?q=%s&date=any | priority:4 description:event
-engin-562 | slideplayer | http://slideplayer.com/search/?q= | priority:4 description:slide
+engin-562 | slideplayer | http://slideplayer.com/search/?q= | priority:4 description:ppt
 engin-563 | chalkstreet | https://www.chalkstreet.com/search/#!/q=%s/type=all | priority:4 description:course
 engin-564 | nasa | https://www.ncbi.nlm.nih.gov/pmc/?term=(%s)+AND+%22nasa+funded%22%5BFilter%5D | priority:7 description:paper
 engin-565 | cctalk | http://www.cctalk.com/search/?key= | priority:3 description:course
@@ -558,3 +558,22 @@ engin-567 | hackster | https://www.hackster.io/search?q= | priority:3 descriptio
 engin-568 | lynda | https://www.lynda.com/search?q= | priority:6 description:course
 engin-569 | paysa | https://www.paysa.com/jobs#!title=%s&skills=&page=1&limit=10&order=comp | priority:6 description:job
 engin-570 | sagepub | http://journals.sagepub.com/action/doSearch?AllField=%s | priority:6 description:journal
+engin-571 | baijiahao | https://www.baidu.com/s?wd=%s%20site%3Abaijiahao.baidu.com | priority:4 description:social news
+engin-572 | behance | https://www.behance.net/search?content=projects&sort=appreciations&time=week&search= | priority:8 description:design
+engin-573 | software.nasa | https://software.nasa.gov/search/software/ | priority:7 description:project
+engin-574 | ilectureonline | http://www.ilectureonline.com/search/ | priority:5 description:course
+engin-575 | wikileaks | https://search.wikileaks.org/?q=%s |  priority:5 description:wiki
+engin-576 | cse.google | https://cse.google.com/cse?cx=partner-pub-1184791463292965%3Anozemmzf6sn&q=%s | priority:6 description:course shortname:openculture
+engin-577 | edu.csdn | http://edu.csdn.net/search?keywords=%s&type=4 | priority:4 description:course
+engin-578 | paperbot | https://web.paperbot.ai/search?q= | priority:7 description:tools social
+engin-579 | huodongjia | https://www.huodongjia.com/search/?keyword=%s | priority:6 description:event
+engin-580 | zhihuihuiwu | http://www.zhihuihuiwu.com/event/search?cityId=&dateType=&keyWord=%s | priority:6 description:event
+engin-581 | opensource.google | https://opensource.google.com/projects/search?q= | priority:7 description:project
+engin-582 | speakerdeck | https://speakerdeck.com/search?utf8=✓&q= | priority:4 description:ppt
+engin-583 | hdwan | http://www.hdwan.net/?s= | priority:5 description:p2p
+engin-584 | bdyunso | http://www.bdyunso.com/search-all-%s-1/ | priority:5 description:cloud
+engin-585 | wowenda | http://wowenda.com/search.asp?wd= | priority:5 description:cloud
+engin-586 | bit.baidu | http://bit.baidu.com/course/search.html?keywords=%s | priority:6 description:course
+engin-587 | tagboard | https://tagboard.com/%s/search | priority:8 description:social
+engin-588 | zeef | https://zeef.com/?query=%s&in=all | priority:8 description:all project star
+engin-589 | gdcvault | http://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=%s&conference_id= | priority:8 description:star talk ppt

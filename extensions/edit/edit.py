@@ -21,7 +21,10 @@ class Edit(BaseExtension):
         divID = form_dict['divID']
         if form_dict.has_key('textContent'):
             textContent = form_dict['textContent']
-            return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName)
+            library = ''
+            if form_dict['fileName'].strip().endswith('-library'):
+                library = form_dict['fileName'][form_dict['fileName'].rfind('/') + 1 :].strip()
+            return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName, library=library)
             
         print fileName
         r = self.utils.getRecord(rID, path=fileName, use_cache=False)
@@ -53,8 +56,13 @@ class Edit(BaseExtension):
             else:
                 html += 'title:' + r.get_title().strip() + '\n'
             html += '\nurl:' + r.get_url().strip() + '\n'
+
+            library = ''
+            if form_dict['fileName'].strip().endswith('-library'):
+                library = form_dict['fileName'][form_dict['fileName'].rfind('/') + 1 :].strip()
+            #print 'library:----' + library
             while start < len(desc):
-                end = self.utils.next_pos(desc, start, int(cols), self.tag.tag_list) 
+                end = self.utils.next_pos(desc, start, int(cols), self.tag.get_tag_list(library), library=library) 
                 #print end
                 line = desc[start : end].strip()
                 
@@ -78,14 +86,14 @@ class Edit(BaseExtension):
             html += '<br><button type="submit" id="edit_btn" hidefocus="true" onclick="' + script + '">submit</button>'
         return html
 
-    def editRecord(self, rID, data, originFileName):
+    def editRecord(self, rID, data, originFileName, library=''):
         print data
         record = Record(' | | | ' + data)
         newid = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'})
         if newid != None:
             newid = newid.strip()
-        title = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'title'}).strip()
-        url = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'url'}).strip()
+        title = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'title', 'library' : library}).strip()
+        url = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'url', 'library' : library}).strip()
         desc = data.replace('title:' + title, '').replace('url:' + url, '').strip()
         print rID
         print title 

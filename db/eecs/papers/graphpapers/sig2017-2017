@@ -1,162 +1,166 @@
-sig2016-1 | The Diffractive Achromat: Full-Spectrum Computational Imaging With Diffractive Optics |  | author:
-sig2016-2 | Practical Multispectral Lighting Reproduction |  | author:
-sig2016-3 | Computational Imaging With Multi-Camera Time-of-Flight Systems |  | author:
-sig2016-4 | Occluded Imaging With Time-of-Flight Sensors |  | author:
-sig2016-5 | Example-based Plastic Deformation of Rigid Bodies |  | author:
-sig2016-6 | Pose-Space Subspace Dynamics |  | author:Hongyi Xu 
-sig2016-7 | Efficient Dynamic Skinning with Low-Rank Helper Bone Controllers |  | author:
-sig2016-8 | Real-time Skeletal Skinning with Optimized Centers of Rotation |  | author:
-sig2016-9 | Erosion Thickness on Medial Axes of 3D Shapes |  | author:
-sig2016-10 | Q-MAT: Computing Medial Axis Transform Using Quadratic Error Minimization |  | author:
-sig2016-11 | Mesh Arrangements for Solid Geometry |  | author:
-sig2016-12 | Animated Mesh Approximation With Sphere-Meshes |  | author:
-sig2016-13 | Integration with Stochastic Point Processes |  | author:
-sig2016-14 | Fast 4D Sheared Filtering for Interactive Rendering of Distribution Effects |  | author:
-sig2016-15 | Adaptive Polynomial Rendering |  | author:Bochang Moon ,  Steven McDonagh ,  Kenny Mitchell 
-sig2016-16 | Real-Time Polygonal-Light Shading with Linearly Transformed Cosines |  | author:
-sig2016-17 | Adjoint-Driven Russian Roulette and Splitting in Light-Transport Simulation |  | author:
-sig2016-18 | Computational Thermoforming |  | author:
-sig2016-19 | Procedural Voronoi Foams for Additive Manufacturing |  | author:Jonas Martinez ,  Jeremie Dumas 
-sig2016-20 | Printed Perforated Lampshades for Continuous Projective Images |  | author:
-sig2016-21 | Pushing the Limits of 3D Color Printing: Error Diffusion With Translucent Materials |  | author:Alan Brunton ,  Can Ates Arikan 
-sig2016-22 | CofiFab: Coarse-to-Fine Fabrication of Large 3D Objects |  | author:
-sig2016-23 | RAID: A Relation-Augmented Image Descriptor |  | author:
-sig2016-24 | Learning How Objects Function via Co-Analysis of Interactions |  | author:
-sig2016-25 | PATEX: Exploring Pattern Variations |  | author:
-sig2016-26 | 3D Mesh Labeling via Deep Convolutional Neural Networks |  | author:Kan Guo, Dongqing Zou
-sig2016-27 | Efficient 3D Object Segmentation from Densely Sampled Light Fields with Applications to 3D Reconstruction |  | author:
-sig2016-28 | A Compiler for 3D Machine Knitting |  | author:
-sig2016-29 | Physics-driven Pattern Adjustment for Direct 3D Garment Editing |  | author:
-sig2016-30 | Matching Real Fabrics With Micro-Appearance Models |  | author:Pramook Khungurn ,  Daniel Schroeder ,  Shuang Zhao ,  Steve Marschner 
-sig2016-31 | Fitting Procedural Yarn Models for Realistic Cloth Rendering |  | author:
-sig2016-32 | Tactile Mesh Saliency |  | author:
-sig2016-33 | Perceptual Effect of Shoulder Motions on Crowd Animations |  | author:
-sig2016-34 | Body Talk: Crowdshaping Realistic 3D Avatars with Words |  | author:
-sig2016-35 | An Interaction-Aware, Perceptual Model for Non-Linear Elastic Objects |  | author:
-sig2016-36 | Position-Normal Distributions for Efficient Rendering of Specular Microstructure |  | author:
-sig2016-37 | Multi-Scale Rendering of Scratched Materials Using a Structured SV-BRDF Model |  | author:
-sig2016-38 | Multiple-Scattering Microfacet BSDFs with the Smith Model |  | author:
-sig2016-39 | Predicting Appearance From Measured Microgeometry of Metal Surfaces |  | author:Zhao Dong *,  Bruce Walter *,  Steve Marschner 
-sig2016-40 | Cinema 3D: Large Scale Automultiscopic Display |  | author:
-sig2016-41 | High Brightness HDR Projection Using Dynamic Freeform Lensing |  | author:
-sig2016-42 | Additive Light-Field Displays: Realization of Augmented Reality With Holographic Optical Elements |  | author:Seungjae Lee, Changwon Jang, Seokil Moon, Jaebum Cho
-sig2016-43 | Fairy Lights in Femtoseconds: Aerial and Volumetric Graphics Rendered by a Focused Femtosecond Laser Combined With Computational Holographic Fields |  | author:
-sig2016-44 | Generating Dynamically Feasible Trajectories for Quadrotor Cameras |  | author:Mike Roberts 
-sig2016-45 | Roto++: Accelerating Professional Rotoscoping using Shape Manifolds |  | author:
-sig2016-46 | Rich360: Optimized Spherical Representation from Structured Panoramic Camera Arrays |  | author:Jungjin Lee,  Bumki Kim,  Kyehyun Kim,  Younghui Kim
-sig2016-47 | Mapping Virtual and Physical Reality |  | author:
-sig2016-48 | A Non-Parametric Factor Microfacet Model for Isotropic BRDFs |  | author:
-sig2016-49 | Reflectance Modeling by Neural Texture Synthesis |  | author:
-sig2016-50 | ZoeMatrope: A System for Physical Material Design |  | author:Leo Miyashita , K. Ishihara, Yoshihiro Watanabe
-sig2016-51 | Emulating Displays with Continuously Varying Frame Rates |  | author:
-sig2016-52 | GazeStereo3D: Seamless Disparity Manipulations |  | author:
-sig2016-53 | Binary-Continuous Image Decomposition for Multi-view Display |  | author:
-sig2016-54 | Seamless Visual Sharing with Color-Vision Deficiencies |  | author:Wuyao Shen, Xiangyu Mao, Xinghong Hu
-sig2016-55 | Wasserstein Barycentric Coordinates: Histogram Regression Using Optimal Transport |  | author:
-sig2016-56 | Entropic Metric Alignment for Correspondence Problems |  | author:
-sig2016-57 | Point Registration via Efficient Convex Relaxation |  | author:Haggai Maron , Nadav Dym,  Itay Kezurer ,  Shahar Kovalsky 
-sig2016-58 | Bijective Maps from Simplicial Foliations |  | author:Marcel Campen ,  Claudio Silva 
-sig2016-59 | Globally Optimal Toon Tracking |  | author:Haichao Zhu,  Xueting Liu ,  Tien-Tsin Wong 
-sig2016-60 | Resolving Fluid Boundary Layers With Particle-Strength Exchange and Weak Adaptivity |  | author:
-sig2016-61 | Schrodinger's Smoke |  | author:
-sig2016-62 | Surface-Only Liquids |  | author:
-sig2016-63 | Efficient Fluid Simulation on the Surface of a Sphere |  | author:David Hill
-sig2016-64 | Multiphase SPH Simulation for Interactive Fluids and Solids |  | author:
-sig2016-65 | Unified Motion Planner for Fishes with Various Swimming Styles |  | author:Daiki Satoi Mikihiro Hagiwara, Akira Uemoto, Hisanao Nakadai
-sig2016-66 | Guided Learning of Control Graphs for Physics-Based Characters |  | author:
-sig2016-67 | Terrain-Adaptive Locomotion Skills Using Deep Reinforcement Learning |  | author:Xue Bin Peng,  Glen Berseth 
-sig2016-68 | Task-based Locomotion |  | author:Shailen Agrawal 
-sig2016-69 | Image Perforation: Automatically Accelerating Image Pipelines by Intelligently Skipping Samples |  | author:
-sig2016-70 | Automatically Scheduling Halide Image Processing Pipelines |  | author:
-sig2016-71 | ProxImaL: Efficient Image Optimization using Proximal Algorithms |  | author:
-sig2016-72 | Rigel: Flexible Multi-Rate Image Processing Hardware |  | author:James Hegarty , Ross Daly, Zachary DeVito,  Jonathan Ragan-Kelley 
-sig2016-73 | Reconciling Elastic and Equilibrium Methods for Static Analysis |  | author:
-sig2016-74 | Computational Design of Stable Planar-Rod Structures |  | author:Eder Miguel , Mathias Leputre
-sig2016-75 | Non-Linear Shape Optimization Using Local Subspace Projections |  | author:
-sig2016-76 | Acoustic Voxels: Computational Optimization of Modular Acoustic Filters |  | author:
-sig2016-77 | Beyond Developable: Computational Design and Fabrication with Auxetic Materials |  | author:
-sig2016-78 | Interactive Design of Developable Surfaces |  | author:
-sig2016-79 | Computational Design of Reconfigurables |  | author:Akash Garg ,  Alec Jacobson 
-sig2016-80 | Efficient and Flexible Deformation Representation for Data-Driven Surface Modeling |  | author:
-sig2016-81 | cSculpt: A System for Collaborative Sculpting |  | author:
-sig2016-82 | StyLit: Illumination-Guided Example-Based Stylization of 3D Renderings |  | author:
-sig2016-83 | Flow-Guided Warping for Image-Based Shape Manipulation |  | author:
-sig2016-84 | Transfiguring Portraits |  | author:
-sig2016-85 | Band-Sifting Decomposition for Image Based Material Editing |  | author:
-sig2016-86 | Interactive Acoustic Transfer Approximation for Modal Sound |  | author:Dingzeyu Li ,  Yun Fei 
-sig2016-87 | Toward Animating Water with Complex Acoustic Bubbles |  | author:
-sig2016-88 | Generalized Non-reflecting Boundaries for Fluid Re-Simulation |  | author:Morten Bojsen-Hansen 
-sig2016-89 | Preserving Geometry and Topology for Fluid Flows with Thin Obstacles and Narrow Gaps |  | author:
-sig2016-90 | Synthesis of Filigrees for Digital Fabrication |  | author:
-sig2016-91 | Designing Structurally Sound Ornamental Curve Networks |  | author:
-sig2016-92 | Connected Fermat Spirals for Layered Fabrication |  | author:
-sig2016-93 | Printing Arbitrary Meshes With a 5DOF Wireframe Printer |  | author:Rundong Wu ,  Huaishu Peng ,  Francois Guimbretiere 
-sig2016-94 | Live Intrinsic Video |  | author:
-sig2016-95 | Multi-View Intrinsic Images of Outdoors Scenes with an Application to Relighting |  | author:Sylvain Duchene , Clement Riant,  Gaurav Chaurasia ,  Jorge Lopez-Moreno ,  Pierre-Yves Laffont ,  Stefan Popov ,  Adrien Bousseau , George Drettakis
-sig2016-96 | Let there be Color!: Joint End-to-end Learning of Global and Local Image Priors for Automatic Image Colorization with Simultaneous Classification |  | author:Satoshi Iizuka *,  Edgar Simo-Serra *
-sig2016-97 | Approximate Translational Building Blocks for Image Decomposition and Synthesis |  | author:Chuan Li 
-sig2016-98 | A Semi-Implicit Material Point Method for the Continuum Simulation of Granular Materials |  | author:Gilles Daviet 
-sig2016-99 | Drucker-Prager Elastoplasticity for Sand Animation |  | author:
-sig2016-100 | Non-Smooth Developable Geometry for Interactively Animating Paper Crumpling |  | author:
-sig2016-101 | Fast Approximations for Boundary Element Based Brittle Fracture Simulation |  | author:David Hahn
-sig2016-102 | Bounded Distortion Harmonic Shape Interpolation |  | author:
-sig2016-103 | On the Convexity and Feasibility of the Bounded Distortion Harmonic Mapping Problem |  | author:
-sig2016-104 | Volume-encoded UV-maps |  | author:
-sig2016-105 | Motion Graphs for Unstructured Textured Meshes |  | author:
-sig2016-106 | Real-time Rendering on a Power Budget |  | author:
-sig2016-107 | A System for Rapid Exploration of Shader Optimization Choices |  | author:
-sig2016-108 | Efficient GPU Rendering of Subdivision Surfaces using Adaptive Quadtrees |  | author:
-sig2016-109 | Ebb: A DSL for Physical Simulation on CPUs and GPUs |  | author:Gilbert Bernstein , Chinmayee Shah, Crystal Lemire,  Zachery DeVito ,  Matthew Fisher ,  Philip Levis 
-sig2016-110 | Simit: A Language for Physical Simulation |  | author:
-sig2016-111 | Parallel Inverse Kinematics for Multithreaded Architectures |  | author:
-sig2016-112 | Fusion4D: Real-time Performance Capture of Challenging Scenes |  | author:
-sig2016-113 | An Anatomically Constrained Local Deformation Model for Monocular Face Capture |  | author:
-sig2016-114 | AutoHair: Fully Automatic Hair Modeling from A Single Image |  | author:Menglei Chai ,  Tianjia Shao ,  Hongzhi Wu , Yanlin Weng
-sig2016-115 | Lightweight Eye Capture Using a Parametric Model |  | author:
-sig2016-116 | Reconstruction of Personalized 3D Face Rigs from Monocular Video |  | author:
-sig2016-117 | Realtime 3D Eye Gaze Animation Using a Single RGB Camera |  | author:
-sig2016-118 | The Sketchy Database: Learning to Retrieve Badly Drawn Bunnies |  | author:
-sig2016-119 | Fidelity vs. Simplicity : a Global Approach to Line Drawing Vectorization |  | author:Jean-Dominique Favreau ,  Florent Lafarge 
-sig2016-120 | Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup |  | author:Edgar Simo-Serra *,  Satoshi Iizuka *, Kazuma Sasaki
-sig2016-121 | Legible Compact Calligrams |  | author:
-sig2016-122 | My Text in Your Handwriting |  | author:Tom S.F. Haines ,  Oisin Mac Aodha 
-sig2016-123 | HexEx: Robust Hexahedral Mesh Extraction |  | author:Max Lyon ,  David Bommes 
-sig2016-124 | All-Hex Meshing Using Closed Form-Induced Polycubes |  | author:Xianzhong Fang, Weiwei Xu,  Hujun Bao 
-sig2016-125 | Fast and Exact Discrete Geodesic Computation Based on Triangle-Oriented Wavefront Propagation |  | author:
-sig2016-126 | Interactively cutting and constraining nodes in a mesh by augmented matrices, |  | author:Yu-Hong Yeung , Jessica Crouch
-sig2016-127 | Real-time Facial Animation with Image-based Dynamic Avatars |  | author:Chen Cao ,  Hongzhi Wu , Yanlin Weng,  Tianjia Shao 
-sig2016-128 | JALI: An Animator-Centric Viseme Model for Expressive Lip Synchronization |  | author:Pif Edwards, Chris Landreth
-sig2016-129 | Perspective-aware Manipulation of Portrait Photos |  | author:
-sig2016-130 | Painting Style Transfer for Head Portraits Using Convolutional Neural Networks |  | author:
-sig2016-131 | Interactive Sketching of Urban Procedural Models |  | author:
-sig2016-132 | Computational Network Design from Functional Specifications |  | author:
-sig2016-133 | Crowd-driven Mid-scale Layout Design |  | author:
-sig2016-134 | A Probabilistic Model for Exteriors of Residential Buildings |  | author:
-sig2016-135 | Discrete Connection and Covariant Derivative for Vector Field Analysis and Design |  | author:
-sig2016-136 | Subdivision Exterior Calculus for Geometry Processing |  | author:
-sig2016-137 | Accelerated Quadratic Proxy for Geometric Optimization |  | author:Shahar Kovalsky ,  Meirav Galun 
-sig2016-138 | G1 Non-Uniform Catmull-Clark Surfaces |  | author:
-sig2016-139 | Construction of Manifolds via Compatible Sparse Representations |  | author:Ruimin Wang,  Ligang Liu ,  Zhouwang Yang , Kang Wang, Wen Shan,  Jiansong Deng 
-sig2016-140 | Intrinsic Girth Function for Shape Processing |  | author:
-sig2016-141 | SemanticPaint: Interactive 3D Labeling and Learning at your Fingertips |  | author:
-sig2016-142 | Detail-preserving Mesh Unfolding for Non-rigid Shape Retrieval |  | author:
-sig2016-143 | Modeling Dense Inflorescences |  | author:
-sig2016-144 | Spectral Style Transfer for Human Motion between Independent Actions |  | author:
-sig2016-145 | A Deep Learning Framework for Character Motion Synthesis and Editing |  | author:
-sig2016-146 | PiGraphs: Learning Interaction Snapshots from Observations |  | author:Manolis Savva ,  Angel X. Chang ,  Pat Hanrahan ,  Matthew Fisher 
-sig2016-147 | Multi-Scale Label-Map Extraction for Texture Synthesis |  | author:
-sig2016-148 | Time-varying Weathering in Texture Space |  | author:Rachele Bellini,  Yanir Kleiman 
-sig2016-149 | Vector Regression Functions for Texture Compression |  | author:
-sig2016-150 | Multiway K-Clustered Tensor Approximation: Toward High- Performance Photorealistic Data-Driven Rendering |  | author:Yu-Ting Tsai
-sig2016-151 | DisCo: Display-Camera Communication Using Rolling Shutter Sensors |  | author:
-sig2016-152 | Soli: Ubiquitous Gesture Sensing With Millimeter Wave Radar |  | author:Mustafa Karagozler,  Ivan Poupyrev , Jaime Lien, Carsten Schwesig, Nick Gillian, Patrick Amihood, Hakim Raja
-sig2016-153 | Efficient and Precise Interactive Hand Tracking through Joint, Continuous Optimization of Pose and Correspondences |  | author:
-sig2016-154 | Rig Animation with a Tangible and Modular Input Device |  | author:
-sig2016-155 | Artist-Directed Dynamics for 2D Animation |  | author:
-sig2016-156 | Modeling Character Canvases from Cartoon Drawings |  | author:
-sig2016-157 | SketchiMo: Sketch-based Motion Editing for Articulated Characters |  | author:Byungkuk Choi*,  Roger Blanco i Ribera*,  J. P. Lewis,  Yeongho Seol,  Seokpyo Hong, Haegwang Eom,  Sunjin Jung
-sig2016-158 | Shadow Theatre: Discovering Human Motion from a Sequence of Silhouettes |  | author:Jungdam Won 
-sig2016-159 | Automatic Triage for a Photo Series |  | author:
-sig2016-160 | Automatic Photo Adjustment Using Deep Neural Networks |  | author:
-sig2016-161 | EyeOpener: Editing Eyes in the Wild |  | author:
-sig2016-162 | Sky is Not the Limit |  | author:
+sig2017-1 | CoLux: Multi-Object 3D Micro-Motion Analysis Using Speckle Imaging |  | author:Brandon M. Smith , Pratham Desai,  Vishal Agarwal
+sig2017-2 | 4D Imaging through Spray-On Optics |  | author:
+sig2017-3 | Rainbow Particle Imaging Velocimetry for Dense 3D Fluid Velocity Imaging |  | author:Jinhui Xiong ,  Ramzi Idoughi , Andres A. Aguirre-Pablo, Abdulrahman B. Aljedaani,  Xiong Dun , Qiang Fu,  Sigurdur T. Thoroddsen 
+sig2017-4 | Epipolar Time-of-Flight Imaging |  | author:
+sig2017-5 | Scalable Locally Injective Maps |  | author:
+sig2017-6 | Geometric Optimization via Composite Majorization |  | author:
+sig2017-7 | Variance-Minimizing Transport Plans for Inter-surface Mapping |  | author:
+sig2017-8 | Regularized Kelvinlets: Sculpting Brushes based on Fundamental Solutions of Elasticity |  | author:
+sig2017-9 | DeepLoco: Dynamic Locomotion Skills Using Hierarchical Deep |  | author:
+sig2017-10 | Phase-Functioned Neural Networks for Character Control |  | author:
+sig2017-11 | Learning to Schedule Control Fragments for Physics-Based Characters Using Deep Q-Learning |  | author:
+sig2017-12 | Discovering and Synthesizing Humanoid Climbing Movements |  | author:Kourosh Naderi ,  Joose Rajamaki 
+sig2017-13 | VNect: Real-time 3D Human Pose Estimation with a Single RGB Camera |  | author:
+sig2017-14 | Real-time Geometry, Albedo and Motion Reconstruction Using a Single RGBD Camera |  | author:
+sig2017-15 | Modeling Surface Appearance From a Single Photograph Using Self-Augmented Convolutional Neural Networks |  | author:
+sig2017-16 | Virtual Rephotography: Novel View Prediction Error for 3D Reconstruction |  | author:
+sig2017-17 | Computational Zoom: A Framework for Post-Capture Image Composition |  | author:
+sig2017-18 | Movie Editing and Cognitive Event Segmentation in Virtual Reality Video |  | author:
+sig2017-19 | Sequential Line Search for Efficient Visual Design Optimization by Crowds |  | author:Yuki Koyama ,  Issei Sato ,  Daisuke Sakamoto 
+sig2017-20 | PERFORM: Perceptual Approach for Adding OCEAN Personality to Human Motion using Laban Movement Analysis |  | author:
+sig2017-21 | Understanding the Impact of Animated Gesture Performance on Personality Perceptions |  | author:Harrison Jesse Smith, Michael Neff
+sig2017-22 | Saccade Landing Position Prediction for Gaze-Contingent Rendering |  | author:
+sig2017-23 | Co-Locating Style-Defining Elements on 3D Shapes |  | author:
+sig2017-24 | Deformation-Driven Shape Correspondence via Shape Recognition |  | author:
+sig2017-25 | GRASS: Generative Recursive Autoencoders for Shape Structures |  | author:
+sig2017-26 | Retrieval on Parametric Shape Collections |  | author:
+sig2017-27 | Understanding and Exploiting Object Interaction Landscapes |  | author:
+sig2017-28 | Example-Based Damping Design |  | author:Hongyi Xu 
+sig2017-29 | Data-Driven Physics for Human Soft Tissue Animation |  | author:
+sig2017-30 | Robust eXtended Finite Elements for Complex Cutting of Deformables |  | author:
+sig2017-31 | A Multi-Scale Model for Simulating Liquid-Hair Interactions |  | author:
+sig2017-32 | Bounding Proxies for Shape Approximation |  | author:Stephane Calderon
+sig2017-33 | Spatiotemporal Atlas Parameterization for Evolving Meshes |  | author:
+sig2017-34 | FlowRep: Descriptive Curve Networks for Free-Form Design Shapes |  | author:
+sig2017-35 | Functional Characterization of Intrinsic and Extrinsic Geometry |  | author:
+sig2017-36 | Constrained Palette-Space Exploration |  | author:Nicolas Mellado,  David Vanderhaeghe Charlotte Hoarau,  Sidonie Christophe,  Mathieu Bredif
+sig2017-37 | Playful Palette: An Interactive Parametric Color Mixer for Artists |  | author:
+sig2017-38 | Decomposing Images into Layers via RGB-space Geometry |  | author:Jianchao Tan ,  Jyh-Ming Lien,  
+sig2017-39 | Interactive High-Quality Green-Screen Keying via Color Unmixing |  | author:
+sig2017-40 | Unmixing-Based Soft Color Segmentation for Image Manipulation |  | author:
+sig2017-41 | Computational Design and Automated Fabrication of Kirchhoff-Plateau Surfaces |  | author:
+sig2017-42 | Image-based Reconstruction of Wire Art |  | author:
+sig2017-43 | CurveUps: Shaping Objects from Flat Plates with Tension-Actuated Curvature |  | author:Ruslan Guseinov ,  Eder Miguel 
+sig2017-44 | String Actuated Curved Folded Surfaces |  | author:
+sig2017-45 | Optimal Discrete Slicing |  | author:
+sig2017-46 | Practical Acquisition and Rendering of Diffraction Effects in Surface Reflectance |  | author:Antoine Toisoul 
+sig2017-47 | A Practical Extension to Microfacet Theory for the Modeling of Varying Iridescence |  | author:
+sig2017-48 | A Two-Scale Microfacet Reflectance Model Combining Reflection and Diffraction |  | author:
+sig2017-49 | An Efficient and Practical Near and Far Field Fur Reflectance Model |  | author:
+sig2017-50 | Fluxed Animated Boundary Method |  | author:
+sig2017-51 | Efficient Optimal Control of Smoke using Spacetime Multigrid |  | author:Zherong Pan
+sig2017-52 | Interpolations of Smoke and Liquid Simulations |  | author:
+sig2017-53 | Data-Driven Synthesis of Smoke Flows with CNN-based Feature Descriptors |  | author:Mengyu Chu
+sig2017-54 | Learning Hierarchical Shape Segmentation and Labeling from Online Repositories |  | author:
+sig2017-55 | Convolutional Neural Networks on Surfaces via Seamless Toric Covers |  | author:
+sig2017-56 | O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis |  | author:
+sig2017-57 | ClothCap: Seamless 4D Clothing Capture and Retargeting |  | author:
+sig2017-58 | Fusing State Spaces for Markov Chain Monte Carlo Rendering |  | author:
+sig2017-59 | Charted Metropolis Light Transport |  | author:
+sig2017-60 | A Spatial Target Function for Metropolis Photon Tracing |  | author:
+sig2017-61 | Antialiasing Complex Global Illumination Effects in Path-space |  | author:
+sig2017-62 | Topology-Controlled Reconstruction of Multi-Labelled Domains From Cross-Sections |  | author:
+sig2017-63 | BundleFusion: Real-time Globally Consistent 3D Reconstruction using Online Surface Re-integration |  | author:
+sig2017-64 | Field-Aligned Online Surface Reconstruction |  | author:
+sig2017-65 | Tanks and Temples: Benchmarking Large-Scale Scene Reconstruction |  | author:Arno Knapitsch ,  Jaesik Park ,  Qian-Yi Zhou 
+sig2017-66 | Dip Transform for 3D Shape Reconstruction |  | author:
+sig2017-67 | Interactive Design of Animated Plushies |  | author:James Bern ,  Kai-Hung Chang 
+sig2017-68 | Functionality-aware Retargeting of Mechanisms to 3D Shapes |  | author:
+sig2017-69 | A Computational Design Tool for Compliant Mechanisms |  | author:
+sig2017-70 | Computational Design of Telescoping Structures |  | author:Christopher Yu ,  Keenan Crane 
+sig2017-71 | Dynamics-Aware Numerical Coarsening for Fabrication Design |  | author:
+sig2017-72 | Holographic Near-Eye Displays for Virtual and Augmented Reality |  | author:Andrew Maimone ,  Andreas Georgiou 
+sig2017-73 | Focal Surface Displays |  | author:Nathan Matsuda ,  Alexander Fix 
+sig2017-74 | Accommodation and Comfort in Head-Mounted Displays |  | author:
+sig2017-75 | Accommodation-invariant Computational Near-eye Displays |  | author:
+sig2017-76 | Harmonic Global Parametrization with Rational Holonomy |  | author:Alon Bright*,  Edward Chien *
+sig2017-77 | Spherical Orbifold Tutte Embeddings |  | author:
+sig2017-78 | Similarity Maps and Field-Guided T-Splines: a Perfect Couple |  | author:Marcel Campen 
+sig2017-79 | Consistent Functional Cross Field Design for Mesh Quadrangulation |  | author:
+sig2017-80 | A Deep Learning Approach for Generalized Speech Animation |  | author:
+sig2017-81 | Audio-Driven Facial Animation by Joint End-to-End Learning of Pose and Emotion |  | author:
+sig2017-82 | Synthesizing Obama: Learning Lip Sync from Audio |  | author:Supasorn Suwajanakorn ,  Steve Seitz 
+sig2017-83 | VoCo: Text-based Insertion and Replacement in Audio Narration |  | author:
+sig2017-84 | Kernel-predicting Convolutional Networks for Denoising Monte Carlo Renderings |  | author:
+sig2017-85 | Interactive Reconstruction of Monte Carlo Image Sequences using a Recurrent Denoising Autoencoder |  | author:
+sig2017-86 | Aether: An Embedded Domain Specific Sampling Language for Monte Carlo Rendering |  | author:
+sig2017-87 | Shader Components: Modular and High Performance Shader Development |  | author:
+sig2017-88 | A Compressed Representation for Ray Tracing Parametric Surfaces |  | author:
+sig2017-89 | Variational Stokes: A Unified Pressure-Viscosity Solver for Accurate Viscous Liquids |  | author:
+sig2017-90 | Infinite Continuous Adaptivity for Incompressible SPH |  | author:Rene Winchenbach,  Hendrik Hochstetter 
+sig2017-91 | Water Wave Packets |  | author:
+sig2017-92 | Multi-Scale Vorticle Fluids |  | author:
+sig2017-93 | Multi-species simulation of porous sand and water mixtures |  | author:
+sig2017-94 | Programmable 2D Arrangements for Element Texture Design |  | author:
+sig2017-95 | Deep Correlations for Texture synthesis |  | author:
+sig2017-96 | Patch-Based Optimization for Image-Based Texture Mapping |  | author:Sai Bi ,  Nima Khademi Kalantari , Ravi Ramamoorthi
+sig2017-97 | Globally and Locally Consistent Image Completion |  | author:Satoshi Iizuka ,  Edgar Simo-Serra 
+sig2017-98 | Nautilus: Recovering Regional Symmetry Transformations for Image Editing |  | author:
+sig2017-99 | A Forward Scattering Dipole Model from a Functional Integral Approximation |  | author:Roald Frederickx 
+sig2017-100 | Lighting Grid Hierarchy for Self-illuminating Explosions |  | author:
+sig2017-101 | Spectral and Decomposition Tracking for Rendering Heterogeneous Volumes |  | author:
+sig2017-102 | Beyond Points and Beams: Higher-Dimensional Photon Samples for Volumetric Light Transport |  | author:Benedikt Bitterli 
+sig2017-103 | Regular Meshes from Polygonal Patterns |  | author:
+sig2017-104 | Robust Hex-Dominant Mesh Generation using Field-Guided Polyhedral Agglomeration |  | author:
+sig2017-105 | Hexahedral-dominant meshing |  | author:
+sig2017-106 | Boundary Element Octahedral Fields in Volumes |  | author:
+sig2017-107 | Interactive Sound Propagation and Rendering for Large Multi-Source Scenes |  | author:Carl Schissler 
+sig2017-108 | Animating Elastic Rods with Sound |  | author:
+sig2017-109 | A Stiffly Accurate Integrator for Elastodynamic Problems |  | author:Dominik L. Michels ,  Vu Thai Luan , Mayya Tokman
+sig2017-110 | Quasi-Newton Methods for Real-Time Simulation of Hyperelastic Materials |  | author:
+sig2017-111 | Deep Extraction of Manga Structural Lines |  | author:C. Li,  X. Liu
+sig2017-112 | Deep Bilateral Learning for Real-Time Image Enhancement |  | author:
+sig2017-113 | Real-Time User-Guided Image Colorization with Learned Deep Priors |  | author:Richard Zhang *,  Jun-Yan Zhu *,  Phillip Isola ,  Xinyang Geng , Angela S. Lin,  Tianhe Yu, Alexei A. Efros
+sig2017-114 | Visual Attribute Transfer through Deep Image Analogy |  | author:
+sig2017-115 | Deep Compositing Using Lie Algebras |  | author:
+sig2017-116 | Two-Scale Topology Optimization with Microstructures |  | author:Bo Zhu ,  Melina Skouras ,  Desai Chen 
+sig2017-117 | Orthotropic k-nearest Foams for Additive Manufacturing |  | author:
+sig2017-118 | Worst-Case Stress Relief for Microstructures |  | author:Julian Panetta ,  Abtin Rahimian 
+sig2017-119 | Printing Anisotropic Appearance with Magnetic Flakes |  | author:
+sig2017-120 | Color contoning for 3D printing |  | author:
+sig2017-121 | BendSketch: Modeling Freeform Surfaces Through 2D Sketching |  | author:
+sig2017-122 | DeepSketch2Face: A Deep Learning Based Sketching System for 3D Face and Caricature Modeling |  | author:Xiaoguang Han , Chang Gao
+sig2017-123 | Example-Based Expressive Animation of 2D Rigid Bodies |  | author:
+sig2017-124 | Skippy: Single View 3D Curve Interactive Modeling |  | author:
+sig2017-125 | k-Curves: Interpolation at Local Maximum Curvature |  | author:
+sig2017-126 | Time Slice Video Synthesis by Robust Video Alignment |  | author:
+sig2017-127 | Computational Video Editing for Dialogue-Driven Scenes |  | author:
+sig2017-128 | Real-Time Planning for Automated Multi-View Drone Cinematography |  | author:
+sig2017-129 | Light Field Video Capture Using a Learning-Based Hybrid Imaging System |  | author:
+sig2017-130 | Fast Weather Simulation for Inverse Procedural Design of 3D Urban Models |  | author:
+sig2017-131 | Authoring Landscapes by Combining Ecosystem and Terrain Erosion Simulation |  | author:
+sig2017-132 | Botanical Materials Based on Biomechanics |  | author:Bohan Wang,  Yili Zhao 
+sig2017-133 | Implicit Crowds: Optimization Integrator for Robust Crowd Simulation |  | author:
+sig2017-134 | Convergence Analysis for Anisotropic Monte Carlo Sampling Spectra |  | author:Gurprit Singh 
+sig2017-135 | Wasserstein Blue-Noise Sampling |  | author:
+sig2017-136 | An Adaptive Point Sampler on a Regular Lattice |  | author:
+sig2017-137 | A Spherical Cap Preserving Parameterization for Spherical Distributions |  | author:Jonathan Dupuy ,  Eric Heitz 
+sig2017-138 | A Schur Complement Preconditioner for Scalable Parallel Fluid Simulation |  | author:
+sig2017-139 | Power Diagrams and Sparse Paged Grids for High Resolution Adaptive Liquids |  | author:
+sig2017-140 | Generic Objective Vortices for Flow Visualization |  | author:
+sig2017-141 | Inside Fluids: Clebsch Maps for Visualization and Processing |  | author:
+sig2017-142 | Perceptual Evaluation of Liquid Simulation Methods |  | author:Kiwon Um ,  Xiangyu Hu 
+sig2017-143 | Interactive Relighting in Single Low-Dynamic-Range Images |  | author:Jung-Hsuan Wu
+sig2017-144 | Non-Uniform Spatial Deformation of Light Fields by Locally Linear Transformations |  | author:Clemens Birklbauer,  David Schedl 
+sig2017-145 | Deep High Dynamic Range Imaging of Dynamic Scenes |  | author:Nima Khademi Kalantari , Ravi Ramamoorthi
+sig2017-146 | Spectral Remapping for Image Downscaling |  | author:Eduardo Gastal 
+sig2017-147 | Portrait Lighting Transfer using a Mass Transport Approach |  | author:
+sig2017-148 | Multi-Contact Locomotion Using a Contact Graph with Feasibility Predictors |  | author:Changgu Kang
+sig2017-149 | Domain of Attraction Expansion for Physics-Based Character Control |  | author:
+sig2017-150 | Momentum-mapped Inverted Pendulum Models for Controlling Dynamic Human Motions |  | author:
+sig2017-151 | 3DTV at Home: Eulerian-Lagrangian Stereo-to-Multiview Conversion |  | author:
+sig2017-152 | Hiding of Phase-Based Stereo Disparity for Ghost-Free Viewing Without Glasses. |  | author:Taiki Fukiage,  Takahiro Kawabe 
+sig2017-153 | Low-Cost 360 Stereo Photography and Video Capture |  | author:Kevin Matzen, Michael Cohen, Bryce Evans,  Johannes Kopf 
+sig2017-154 | Mixed-primary Factorization for Dual-frame Computational Displays |  | author:
+sig2017-155 | Bounce Maps: An Improved Restitution Model for Real-Time Rigid-Body Impact |  | author:
+sig2017-156 | All's Well That Ends Well: Guaranteed Resolution of Simultaneous Rigid-Body Impact |  | author:
+sig2017-157 | Improving the GJK Algorithm for Faster and More Reliable Distance Queries Between Convex Objects |  | author:
+sig2017-158 | Anisotropic Elastoplasticity for Cloth, Knit, and Hair Frictional Contact |  | author:
+sig2017-159 | Phace: Physics-based Face Modeling and Animation |  | author:
+sig2017-160 | Facial Retargeting with Automatic Range of Motion Alignment |  | author:
+sig2017-161 | Example-Based Synthesis of Stylized Facial Animations |  | author:
+sig2017-162 | A Data-driven Approach to Four-view Image-based Hair Modeling |  | author:Meng Zhang,  Menglei Chai ,  Hongzhi Wu 
+sig2017-163 | Interactive Design Space Exploration and Optimization for CAD Models |  | author:
+sig2017-164 | Interactive Design and Stability Analysis of Decorative Joinery for Furniture |  | author:
+sig2017-165 | Lightweight Structure Design Under Force Location Uncertainty |  | author:Erva Ulu ,  Jim McCann 
+sig2017-166 | Design and Volume Optimization of Space Structures |  | author:

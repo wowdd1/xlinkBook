@@ -427,7 +427,7 @@ class Utils:
         if engin != '':
             url = self.getEnginUrl(engin)
             if url.find('%s') != -1:
-                url = url.replace("%s", keyword.strip())
+                url = self.toAccountUrl(url, keyword.strip())
             else:
                 url += keyword.strip()
         if engin == "crunchbase" and query.find(':') != -1:
@@ -435,10 +435,25 @@ class Utils:
             query = query[query.find(':') + 1 :].strip()
             if query == 'star':
                 query = 'organization'
-            url = url.replace('%s', query)
+            url = self.toAccountUrl(url, query.strip())
 
         return url
-    
+
+    def toAccountUrl(self, url, keyword):
+        if keyword.find('@') != -1 and keyword.strip().startswith('@') == False:
+            temp1 = keyword.split('@')
+            temp2 = url.split('%s')
+            new_url = url
+            #print '1======' + new_url + '<br>'
+            for i in range(0, len(temp1)):
+                index = new_url.find('%s') + 1
+                #print new_url[0: index + 1] + '<br>'
+                #print new_url[index + 1:].strip() + '<br>'
+                new_url = new_url[0: index + 1].replace('%s', temp1[i]) + new_url[index + 1:].strip()
+            #print '======' + new_url + '<br>'
+            return new_url
+        return url.replace("%s", keyword.strip())
+
     def getEnginHtmlLink(self, engin, keyword, color=''):
         if color != '':
             return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="' + color + '">' + engin + '</font></a>'
@@ -832,6 +847,9 @@ class Utils:
         return dirs
 
     def isAccountTag(self, tag, tag_list_account):
+        #print tag + '<br>'
+        #if tag.strip().startswith('archiv'):
+        #    print tag_list_account
         if tag == '':
             return False
         prefix = ''
@@ -853,7 +871,7 @@ class Utils:
     def toQueryUrl(self, url, text):
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
         if url.find('%s') != -1:
-            url = url.replace('%s', query_text)
+            url = self.toAccountUrl(url, query_text.strip())
         else:
             url += query_text
         return url
@@ -1168,12 +1186,12 @@ class Utils:
         return url
 
 
-    def genDescHtml(self, desc, titleLen, keywordList):
+    def genDescHtml(self, desc, titleLen, keywordList, library=''):
         start = 0
         html = '<br>'
         desc = ' ' + desc
         while True:
-            end = self.next_pos(desc, start, titleLen, keywordList)
+            end = self.next_pos(desc, start, titleLen, keywordList, library=library)
             if end < len(desc):
                 html += self.color_keyword(desc[start : end], keywordList) + '<br>'
                 start = end
@@ -1230,7 +1248,7 @@ class Utils:
         link = 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key 
         return key, link
 
-    def next_pos(self, text, start, titleLen, keywordList, htmlStyle=True):
+    def next_pos(self, text, start, titleLen, keywordList, htmlStyle=True, library=''):
         min_end = len(text)
         c_len = titleLen
         if htmlStyle:
@@ -1246,7 +1264,7 @@ class Utils:
 
         if min_end < len(text):
             startTag = text[start : text.find(':', start) + 1]
-            smart_link_str = ' '.join(self.tag.tag_list_smart_link)
+            smart_link_str = ' '.join(self.tag.get_list_smart_link(library))
             account_str = ' '.join(self.tag.tag_list_account.keys())
 
             if smart_link_str.find(startTag) != -1 or account_str.find(startTag) != -1:

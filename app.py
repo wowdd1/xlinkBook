@@ -564,7 +564,7 @@ def handleUserLog():
     module = request.form['module'].strip()
     if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
         historyFile = 'extensions/history/data/' + library[library.rfind('/') + 1 :] + '-history'
-        line = request.form['rid'] + ' | ' + request.form['searchText'] + ' | ' + request.form['url'] + ' | '
+        line = request.form['rid'] + ' | ' + request.form['searchText'].replace('|', '') + ' | ' + request.form['url'] + ' | '
         cmd = 'echo "' + line + '" >> ' + historyFile
         print cmd
         output = subprocess.check_output(cmd, shell=True)

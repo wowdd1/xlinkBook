@@ -265,7 +265,7 @@ def needSmartLink(describe):
         return False
     else:
         prefix = describe[0 : describe.find(':') + 1].strip()
-        smart_link_str = ' '.join(tag.tag_list_smart_link)
+        smart_link_str = ' '.join(tag.get_list_smart_link(source2library(source)))
         account_str = ' '.join(tag.tag_list_account.keys())
         if smart_link_str.find(prefix) == -1 and account_str.find(prefix) == -1:
             return False
@@ -365,11 +365,18 @@ def genEnginOption(selectid, defaultEngin=Config.smart_link_engin):
     option = ''
     engin_list = utils.getAllEnginList()
     option = '<select id="' + selectid +'">'
-    if defaultEngin != '':
-        option += '<option value ="' + utils.getEnginUrl(defaultEngin) + '">' + defaultEngin + '</option>'
-        
+
     if plugins_mode == False:
+        if defaultEngin != '':
+            option += '<option value ="' + utils.getEnginUrl(defaultEngin) + '">' + defaultEngin + '</option>'
         option += '<option value ="exclusive">exclusive</option>'
+    else:
+        option += '<option value ="exclusive">exclusive</option>'
+        if defaultEngin != '':
+            option += '<option value ="' + utils.getEnginUrl(defaultEngin) + '">' + defaultEngin + '</option>'
+            
+    #if plugins_mode == False:
+        #option += '<option value ="exclusive">exclusive</option>'
         #option += '<option value ="add">add (operate)</option>'
     #option += '<option value ="' + utils.getEnginUrl("google") + '">google</option>'
     for e in engin_list:
@@ -399,6 +406,14 @@ def loadCSS():
 def loadFiles(folder, fileType):
     cur_list = os.listdir(folder + '/')
     result = ''
+    f_list = []
+    f_list_2 = []
+    for f in cur_list:
+        if f.startswith('jquery'):
+            f_list.append(f)
+        else:
+            f_list_2.append(f)
+    cur_list = f_list + f_list_2
     for f in cur_list:
         if f.endswith(fileType):
             result += ''.join(open(folder + '/' + f, 'rU').readlines())
@@ -770,7 +785,7 @@ def build_lines(list_all, file_name):
                             describe_lines[l][i][j] = align_describe("")
                         continue
                     record_describe = list_all[i][j].get_describe()
-                    end = utils.next_pos(record_describe, start, course_name_len, keyword_list, htmlStyle=html_style) 
+                    end = utils.next_pos(record_describe, start, course_name_len, keyword_list, htmlStyle=html_style, library=source2library(source)) 
                     if output_with_describe and Config.distribution == False:
                         #print list_all[i][j].get_describe()+ '<br>'
                         #print list_all[i][j].get_describe()[start : end] + '<br>'
@@ -924,7 +939,7 @@ def smartLink(content, record, containID=''):
     if content == '':
         return ''
     if content.strip().startswith('path:'):
-        path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path'}).strip()
+        path = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'path', 'library' : source2library(source)}).strip()
         last_content = path
         if path.find('/custom') != -1:
             return ''
@@ -941,13 +956,13 @@ def smartLink(content, record, containID=''):
         
         return result
     elif content.strip().startswith('id:'):
-        last_content = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id'}).strip()
+        last_content = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'id', 'library' : source2library(source)}).strip()
         if record.get_url() != None and record.get_url() != '':
             return content[ 0 : content.find(':') + 1 ] + utils.enhancedLink(record.get_url().strip(), record.get_id().strip(), module='main', library=source, rid=record.get_id())
         else:
             return content
     elif content.strip().startswith('category:'):
-        last_content = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'category'}).strip()
+        last_content = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'category', 'library' : source2library(source)}).strip()
         tags = content[content.find(':') + 1 : ].strip()
         if tags.find(',') != -1:
             tags = tags.split(',')
@@ -967,7 +982,7 @@ def smartLink(content, record, containID=''):
         else:
             return content
     elif content.strip().startswith('videourl:'):
-        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'videourl'})
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'videourl', 'library' : source2library(source)})
         last_content = ret
         html = utils.enhancedLink(ret.strip(), 'video', module='main', library=source, rid=record.get_id())
         return content[ 0 : content.find(':') + 1 ] + html
@@ -979,7 +994,7 @@ def smartLink(content, record, containID=''):
         html = ''
         tag = content[ 0 : content.find(':')].strip()
         #ret = content[content.find(':') + 1 : ].strip()
-        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag})
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tag, 'library' : source2library(source)})
         #print ret + '<br>'
         #ret = 
         last_content = ret
@@ -1045,7 +1060,7 @@ def genAccountHtml(tagStr, record, content, containID=''):
     else:
         url = utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip() + ' ' + tagStr)
     if url != '':
-        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tagStr})
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : tagStr, 'library' : source2library(source)})
         dialogMode = False
         return genSmartLinkHtml(tagStr, ret, record, ',', url, content, urlFromServer=False, accountTag=True, containID=containID, dialogMode=dialogMode)
     else:
@@ -1055,7 +1070,7 @@ def genAccountHtml(tagStr, record, content, containID=''):
 def isSmartLinkTag(content):
     if content.find(':') != -1:
         prefix = content[0 : content.find(':') + 1].strip()
-        return ' '.join(tag.tag_list_smart_link).find(prefix) != -1
+        return ' '.join(tag.get_list_smart_link(source2library(source))).find(prefix) != -1
     else:
         return False
 
@@ -1100,7 +1115,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
                 if url != '':
                     link = url
                     if url.find('%s') != -1:
-                        link = url.replace('%s', i.strip().replace(' ', ''))
+                        link = utils.toAccountUrl(url, i.strip().replace(' ', ''))
                     html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
                 else:
                     html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
@@ -1124,7 +1139,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             if url != '':
                 link = url
                 if url.find('%s') != -1:
-                    link = url.replace('%s', ret)
+                    link = utils.toAccountUrl(url, ret)
                 html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid)
             else:
                 html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid)
@@ -1165,6 +1180,9 @@ def getShowText(accountTag, text, tagStr, linkCount):
         if text.find('/') != -1:
             text = text[text.rfind('/') + 1 : ]
 
+        if text.find(prefix) != -1:
+            text = text[text.find(prefix) + 1 :]
+
         if tag.account_tag_alias.has_key(text):
             text = tag.account_tag_alias[text]
         else:
@@ -1199,10 +1217,13 @@ def getCutLen(tag, text):
 
 def print_search_box(hiden):
     global search_box_displayed
+    input_text = ''
     if html_style and search_box_displayed == False:
         search_box_displayed = True
         if plugins_mode == False:
             print '<br/>'
+        else:
+            input_text = source.replace('|', '').strip()
         onclick = "search('search_txt', 'select');"
         div = '<div style="text-align:center;width:100%;margin: 0px auto;' 
         if hiden:
@@ -1210,7 +1231,7 @@ def print_search_box(hiden):
         #if plugins_mode:
         #    div += ' display:none;'
         div += '">'
-	out = div + '<input id="search_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off">&nbsp;&nbsp;' + genEnginOption("select", defaultEngin=Config.default_engin_searchbox) +\
+	out = div + '<input id="search_txt" style="border-radius:5px;border:1px solid" maxlength="256" tabindex="1" size="46" name="word" autocomplete="off" type="text" value="' + input_text + '">&nbsp;&nbsp;' + genEnginOption("select", defaultEngin=Config.default_engin_searchbox) +\
               '&nbsp;&nbsp;<button alog-action="g-search-anwser" type="submit" id="search_btn" hidefocus="true" tabindex="2" onClick="' + onclick + '">Go</button>'
         if output_navigation_links:
                out += utils.genMoreEnginHtml("searchbox-a", utils.genMoreEnginScriptBox("searchbox-a", "searchbox_div", "search_txt"), '...', "searchbox_div") + '</div>' 
@@ -1301,7 +1322,7 @@ def getKeywordAndData(filter_keyword, line):
     for k in keyword_list:
         if filter_keyword.find(k) != -1:
             filter_keyword = filter_keyword.replace(k,'')
-            args = { 'tag' : k } 
+            args = { 'tag' : k , 'library' : source2library(source)} 
             ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, args)
             if ret != None:
                 data += ret + ' '
@@ -1866,9 +1887,15 @@ def adjust_cell_row():
     custom_cell_row = Config.custom_cell_row_list[int(column_num) - 1]
     #print int(custom_cell_row)
 
+def source2library(source):
+    if source.endswith('-library'):
+        return source[source.rfind('/') + 1 :].strip()
+    else:
+        return source
+
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type, keyword_list
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:q:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
                       "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page', 'tracemode'])
@@ -1949,6 +1976,11 @@ def main(argv):
             trackmode = True
             trackmode_engin_type = str(a)
             #print '---' + trackmode_engin_type
+
+    if source.endswith('-library'):
+        keyword_list = tag.get_tag_list(source2library(source))
+        #print keyword_list
+
     
     if source.endswith('-library') and Config.auto_library_cell_len:
         adjust_column_num('3')

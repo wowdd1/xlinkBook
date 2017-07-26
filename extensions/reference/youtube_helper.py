@@ -38,7 +38,7 @@ class YoutubeHelper():
 
     def getVideos(self, url):
         self.videos = []
-
+        print url
         r = requests.get(url)
         self.getVideo(r.text)
         

@@ -1,29 +1,31 @@
-egsr2016-1 | Single-Shot Layered Reflectance Separation using a Polarized Light Field Camera |  | author:Jaewon Kim , Shahram Izadi,  Abhijeet Ghosh
-egsr2016-2 | Perceptually Motivated BRDF Comparison using Single Image |  | author:Vlastimil Havran ,  Jiri Filip ,  Karol Myszkowski
-egsr2016-3 | A phenomenological model for throughfall rendering in real-time |  | author:Yoann Weber ,  Vincent Jolivet ,  Guillaume Gilet , Kazuki Nanko,  Djamchid Ghazanfarpour
-egsr2016-4 | 4D-rasterization for Fast Soft Shadow Rendering |  | author:Lili Wang, Qi Zhao, Cunlei Meng,  Voicu Popescu
-egsr2016-5 | Local Shape Editing at the Compositing Stage |  | author:Carlos Jorge Zubiaga ,  Gael Guennebaud ,  Romain Vergne ,  Pascal Barla
-egsr2016-6 | Solid Angle Sampling of Disk and Cylinder Lights |  | author:Manuel Gamito
-egsr2016-7 | Improving the Dwivedi sampling scheme |  | author:Johannes Meng ,  Johannes Hanika ,  Carsten Dachsbacher
-egsr2016-8 | Line Sampling for Direct Illumination |  | author:Niels Billen ,  Philip Dutré
-egsr2016-9 | Projective blue-noise sampling |  | author:Bernhard Reinert ,  Tobias Ritschel ,  Hans-Peter Seidel ,  Iliyan Georgiev
-egsr2016-10 | Parallel Multiple-Bounce Irradiance Caching |  | author:Nathaniel Jones ,  Christoph Reinhart
-egsr2016-11 | Product Importance Sampling for Transport Path Guiding |  | author:Sebastian Herholz,  Oskar Elek ,  Jiri Vorba ,  Hendrik Lensch ,  Jaroslav Krivanek
-egsr2016-12 | Forward Light Cuts: A Scalable Approach for Real-Time Global Illumination |  | author:Gilles Laurent, Gregoire de La Riviere,  Cyril Delalandre ,  Tamy Boubekeur
-egsr2016-13 | Sparse high-degree polynomials for wide-angle lenses |  | author:Emanuel Schrade ,  Johannes Hanika ,  Carsten Dachsbacher
-egsr2016-14 | Efficient Ray Tracing Through Aspheric Lenses and Imperfect Bokeh Synthesis |  | author:Hyuntae Joo, Soonhyeon Kwon, Sangmin Lee,  Elmar Eisemann ,  Sungkil Lee
-egsr2016-15 | Shape Depiction for Transparent Objects with Bucketed k-Buffer |  | author:David Murray
-egsr2016-16 | Fast Shadow Map Rendering for Many Lights Settings |  | author:Kai Selgrad , Jonas Muller, Christian Reintges,  Marc Stamminger
-egsr2016-17 | Nonlinearly Weighted First-Order Regression for Denoising Monte Carlo Renderings |  | author:Benedikt Bitterli ,  Fabrice Rousselle ,  Bochang Moon ,  Jose A. Iglesias-Guitian , Adler,  D.,  Kenny Mitchell ,  Wojciech Jarosz ,  Jan Novak
-egsr2016-18 | Fast Filtering of Reflection Probes |  | author:Josiah Manson ,  Peter-Pike Sloan
-egsr2016-19 | Adaptive Image-Space Sampling for Gaze-Contingent Real-time Rendering |  | author:Michael Stengel ,  Steve Grogorick ,  Martin Eisemann ,  Marcus Magnor
-egsr2016-20 | Predicting Visual Perception of Material Structure in Virtual Environments |  | author:Jiri Filip ,  Radomir Vavra ,  Michal Havlicek ,  Mikulas Krupicka
-egsr2016-21 | A Robust and Flexible Real-Time Sparkle Effect |  | author:Beibei Wang , How Bowles
-egsr2016-22 | Additional Progress Towards the Unification of Microfacet and Microflake Theories |  | author:Jonathan Dupuy ,  Eric Heitz ,  Eugene d'Eon
-egsr2016-23 | A General Micro-flake Model for Predicting the Appearance of Car Paint |  | author:Serkan Ergun , Sermet Onel, Aydin Ozturk
-egsr2016-24 | Constrained Convex Space Partition for Ray Tracing in Architectural Environments |  | author:Maxime Maria, Sebastien Horna,  Lilian Aveneau
-egsr2016-25 | Deep Partitioned Shadow Volumes using Stackless and Hybrid Traversals |  | author:Frederic Mora ,  Julien Gerhards ,  Lilian Aveneau ,  Djamchid Ghazanfarpour
-egsr2016-26 | Node Culling Multi-Hit BVH Traversal |  | author:Christiaan Gribble
-egsr2016-27 | Subdivision Next-Event Estimation for Path-Traced Subsurface Scattering |  | author:David Koerner ,  Jan Novak ,  Peter Kutz ,  Ralf Habel ,  Wojciech Jarosz
-egsr2016-28 | Bi-Directional Polarised Light Transport |  | author:Michal Mojzik, Tomas Skrivan ,  Alexander Wilkie ,  Jaroslav Krivanek
-egsr2016-29 | Point-Based Light Transport for Participating Media with Refractive Boundaries |  | author:Beibei Wang ,  Jean-Dominique Gascuel ,  Nicolas Holzschuch
+egsr2017-1 | Minimal Warping: Planning Incremental Novel-view Synthesis |  | author:Thomas Leimkuhler ,  Hans-Peter Seidel ,  Tobias Ritschel
+egsr2017-2 | Decomposing Single Images for Layered Photo Retouching |  | author:Carlo Innamorati ,  Tobias Ritschel ,  Tim Weyrich ,  Niloy J. Mitra
+egsr2017-3 | Controlling and Sampling Visibility Information on the Image Plane |  | author:Christian Lessig
+egsr2017-4 | Single-Pass Stereoscopic GPU Ray Casting Using Re-Projection Layers |  | author:Arend Buchacher, Marius Erdt
+egsr2017-5 | Real-Time Linear BRDF MIP-Mapping |  | author:Chao Xu,  Rui Wang ,  Shuang Zhao ,  Hujun Bao
+egsr2017-6 | An Appearance Model for Textile Fibers |  | author:Carlos Aliaga, Carlos Castillo,  Diego Gutierrez ,  Miguel A. Otaduy ,  Jorge Lopez-Moreno , Adrian Jarabo
+egsr2017-7 | Attribute-preserving gamut mapping of measured BRDFs |  | author:Tiancheng Sun,  Ana Serrano ,  Diego Gutierrez ,  Belen Masia
+egsr2017-8 | Ambient Dice |  | author:Michal Iwanicki ,  Peter-Pike Sloan
+egsr2017-9 | Stochastic Light Culling for VPLs on GGX Microsurfaces |  | author:Yusuke Tokuyoshi,  Takahiro Harada
+egsr2017-10 | Deep Shading: Convolutional Neural Networks for Screen-Space Shading |  | author:Oliver Nalbach ,  Elena Arabadzhiyska ,  Dushyant Mehta ,  Hans-Peter Seidel ,  Tobias Ritschel
+egsr2017-11 | VAO++: Practical Volumetric Ambient Occlusion for Games |  | author:Jakub Boksansky, Adam Pospisil,  Jiri Bittner
+egsr2017-12 | Real-time solar exposure simulation in complex cities |  | author:Imanol Munoz-Pandiella,  Carles Bosch , Nicolas Merillou,  Xavier Pueyo ,  Stephane Merillou
+egsr2017-13 | Variance and Convergence Analysis of Monte Carlo Line and Segment Sampling |  | author:Gurprit Singh , Bailey Miller,  Wojciech Jarosz
+egsr2017-14 | Frequency Based Radiance Cache for Rendering Animations |  | author:Adrien Dubouchet,  Laurent Belcour ,  Derek Nowrouzezahrai
+egsr2017-15 | Temporal Coherence for Metropolis Light Transport |  | author:Joran Van de Woestijne,  Roald Frederickx ,  Niels Billen ,  Philip Dutré
+egsr2017-16 | Extended Path Integral Formulation for Volumetric Transport |  | author:Toshiya Hachisuka ,  Iliyan Georgiev ,  Wojciech Jarosz ,  Jaroslav Krivanek ,  Derek Nowrouzezahrai
+egsr2017-17 | Practical Path Guiding for Efficient Light-transport Simulation |  | author:Thomas Muller ,  Markus Gross ,  Jan Novak
+egsr2017-18 | Line Integration for Rendering Heterogeneous Emissive Volumes |  | author:Florian Simon ,  Johannes Hanika ,  Tobias Zirr ,  Carsten Dachsbacher
+egsr2017-19 | Local quasi-Monte Carlo exploration |  | author:Lorenzo Tessari ,  Johannes Hanika ,  Carsten Dachsbacher
+egsr2017-20 | Gradient-Domain Vertex Connection and Merging |  | author:Weilun Sun, Xin Sun,  Nathan Carr ,  Derek Nowrouzezahrai ,  Ravi Ramamoorthi
+egsr2017-21 | Bi-Layer textures: a Model for Synthesis and Deformation of Composite Textures |  | author:Guingo Geoffrey ,  Basile Sauvage ,  Jean-Michel Dischler ,  Marie-Paule Cani
+egsr2017-22 | Fiber-Level On-the-Fly Procedural Textiles |  | author:Fujun Luan ,  Shuang Zhao ,  Kavita Bala
+egsr2017-23 | Material Design in Augmented Reality with In-Situ Visual Feedback |  | author:Weiqi Shi ,  Zeyu Wang , M. Sezgin,  Julie Dorsey ,  Holly Rushmeier
+egsr2017-24 | sLayer: a System for Multi-Layered Material Sculpting |  | author:Claudio Calabrese,  Marco Fratarcangeli ,  Fabio Pellacini
+egsr2017-25 | Bayesian Collaborative Denoising for Monte Carlo Rendering |  | author:Malik Boughida,  Tamy Boubekeur
+egsr2017-26 | Multiple Axis-Aligned Filters for Rendering of Combined Distribution Effects |  | author:Lifan Wu,  Ling-Qi Yan , Alexandr Kuznetsov,  Ravi Ramamoorthi
+egsr2017-27 | Noise Reduction on G-Buffers for Monte Carlo Filtering |  | author:Bochang Moon ,  Jose A. Iglesias-Guitian ,  Steven McDonagh ,  Kenny Mitchell
+egsr2017-28 | Stochastic Modeling and Resolution-Free Rendering of Film Grain |  | author:Alasdair Newson ,  Bruno Galerne ,  Julie Delon
+egsr2017-29 | Fast Hardware Construction and Refitting of Quantized Bounding Volume Hierarchies |  | author:Timo Viitanen, Matias Koskela, Pekka Jaaskelainen, Kalle Immonen, Takala,  J.
+egsr2017-30 | Area-Preserving Parameterizations for Spherical Ellipses |  | author:Ibon Guillen,  Carlos Urena,  Alan King,  Marcos Fajardo,  Iliyan Georgiev , Jorge Lopez-Moreno,  Adrian Jarabo
+egsr2017-31 | A k-d Tree Designed for Motion Blur |  | author:Xin Yang,  Qi Liu,  Baocai Yin,  Qiang Zhang, Dongsheng Zhou, Xiaopeng Wei

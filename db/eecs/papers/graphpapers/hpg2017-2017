@@ -1,17 +1,18 @@
-hpg2016-1 | Exploring and Expanding the Continuum of OIT Algorithms |  | author:Chris Wyman
-hpg2016-2 | SVGPU: Real Time 3D Rendering to Vector Graphics Formats |  | author:Apollo Ellis, Warren Hunt,  John Hart
-hpg2016-3 | Masked Software Occlusion Culling |  | author:Jon Hasselgren ,  Magnus Andersson ,  Tomas Akenine-Moller
-hpg2016-4 | Watertight Ray Traversal with Reduced Precision and Bounding Plane Reuse |  | author:Karthik Vaidyanathan,  Tomas Akenine-Moller ,  Marco Salvi
-hpg2016-5 | Efficient Stackless Hierarchy Traversal on GPUs with Backtracking in Constant Time |  | author:Nikolaus Binder ,  Alexander Keller
-hpg2016-6 | Bandwidth-Efficient BVH Layout for Incremental Hardware Traversal |  | author:Gabor Liktor , Karthik Vaidyanathan
-hpg2016-7 | DIRT: Deferred Image-based Ray Tracing |  | author:Konstantinos Vardis ,  Andreas A. Vasilakis ,  Georgios Papaioannou
-hpg2016-8 | Photon Splatting Using a View-Sample Cluster Hierarchy |  | author:Pierre Moreau ,  Erik Sintorn ,  Viktor Kampe ,  Ulf Assarsson ,  Michael Doggett
-hpg2016-9 | Deep G-Buffers for Stable Global Illumination Approximation |  | author:Michael Mara,  Morgan McGuire ,  Derek Nowrouzezahrai ,  David Luebke
-hpg2016-10 | Lightcuts Interpolation |  | author:Hauke Rehfeld ,  Carsten Dachsbacher
-hpg2016-11 | GVDB: Raytracing Sparse Voxel Database Structures on the GPU |  | author:Rama Hoetzlein
-hpg2016-12 | Local Shading Coherence Extraction for SIMD-Efficient Path Tracing on CPUs |  | author:Attila T. Afra , Carsten Benthin,  Ingo Wald ,  Jacob Munkberg
-hpg2016-13 | Adaptive Sampling for On-The-Fly Ray Casting of Particle-based Fluids |  | author:Hendrik Hochstetter ,  Jens Orthmann ,  Andreas Kolb
-hpg2016-14 | Infinite Resolution Textures |  | author:Alexander Reshetov ,  David Luebke
-hpg2016-15 | Filtering Distributions of Normals for Shading Antialiasing |  | author:Anton Kaplanyan , Stephen Hill,  Anjul Patney ,  Aaron Lefohn
-hpg2016-16 | Comparison of Projection Methods for Rendering Virtual Reality |  | author:Robert Toth,  Tomas Akenine-Moller ,  Jim Nilsson
-hpg2016-17 | A Fast, Massively Parallel Solver for Large, Irregular Pairwise Markov Random Fields |  | author:Daniel Thuerck,  Michael Waechter ,  Sven Widmer , Max von Buelow, Patrick Seemann, Marc E. Pfetsch,  Michael Goesele
+hpg2017-1 | Interactive Stable Ray Tracing |  | author:Alessandro Dal Corso ,  Marco Salvi , Craig Kolb,  Jeppe Revall Frisvad ,  Aaron Lefohn ,  David Luebke
+hpg2017-2 | Spatiotemporal Variance-Guided Filtering: Real-Time Reconstruction for Path-Traced Global Illumination |  | author:Christoph Schied,  Anton Kaplanyan ,  Chris Wyman ,  Anjul Patney , Chakravarty R. Alla Chaitanya,  John Burgess,  Shiqiu Liu,  Carsten Dachsbacher ,  Aaron Lefohn ,  Marco Salvi
+hpg2017-3 | Towards Stable Real-Time Path Tracing: An efficient denoising algorithm for global illumination |  | author:Michael Mara,  Morgan McGuire ,  Benedikt Bitterli ,  Wojciech Jarosz
+hpg2017-4 | Efficient Incoherent Ray Traversal on GPUs Through Compressed Wide BVHs |  | author:Henri Ylitie,  Tero Karras ,  Samuli Laine
+hpg2017-5 | Exploiting Budan-Fourier and Vincent¡¦s Theorems for Ray Tracing 3D Bezier Curves |  | author:Alexander Reshetov ,  David Luebke
+hpg2017-6 | Accelerated Single Ray Tracing for Wide Vector Units |  | author:Valentin Fuetterling, Carsten Lojewski,  Bernd Hamann ,  Achim Ebert
+hpg2017-7 | Improved Two-Level BVHs Using Partial Re-Braiding |  | author:Carsten Benthin ,  Sven Woop ,  Ingo Wald , Attila Afra
+hpg2017-8 | STBVH: A Spatial-Temporal BVH for Efficient Multi-Segment Motion Blur |  | author:Sven Woop , Attila Afra,  Carsten Benthin
+hpg2017-9 | Extended Morton Codes for High Performance Bounding Volume Hierarchy Construction |  | author:Marek Vinkler,  Jiri Bittner ,  Vlastimil Havran
+hpg2017-10 | Vectorized Production Path Tracing |  | author:Mark Lee, Brian Green, Feng Xie,  Eric Tabellion
+hpg2017-11 | Timeline Scheduling for Out-of-Core Ray Batching |  | author:Myungbae Son,  Sungeui Yoon
+hpg2017-12 | Dual Streaming for Hardware-Accelerated Ray Tracing |  | author:Konstantin Shkurko , Tim Grant,  Daniel Kopta ,  Ian Mallett ,  Cem Yuksel ,  Erik Brunvand
+hpg2017-13 | A Hardware-Friendly Bilateral Solver Accelerator for Real-Time Virtual Reality Video |  | author:Amrita Mazumdar , Armin Alaghi, Jon Barron, David Gallup,  Luis Ceze ,  Mark Oskin ,  Steven Seitz
+hpg2017-14 | Effective Static Bin Patterns for Sort-Middle Rendering |  | author:Bernhard Kerbl ,  Michael Kenzel ,  Dieter Schmalstieg ,  Markus Steinberger
+hpg2017-15 | Non-Linearly Quantized Moment Shadow Maps |  | author:Christoph Peters
+hpg2017-16 | Fast Maximal Poisson-Disk Sampling by Randomized Tiling |  | author:Tong Wang, Reiji Suda
+hpg2017-17 | Mesh Color Textures |  | author:Cem Yuksel
+hpg2017-18 | Hierarchical Multi-Layer Screen-Space Ray Tracing |  | author:Nikolai Hofmann, Phillip Bogendorfer,  Marc Stamminger ,  Kai Selgrad

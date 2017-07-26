@@ -29,7 +29,9 @@ class Convert(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         html = ''
         step = Config.convert_page_start
-        new_url = url
+        #new_url = url
+        new_url = url + str(step)
+
         self.count = 0
         if Config.convert_page_step > 0:
             all_data = ''
