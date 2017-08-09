@@ -351,7 +351,11 @@ class Utils:
 
     cache_records = {}
 
-    def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False, use_cache=True):
+    """
+    matchType: by id(1)  by title(2) by line(3)
+
+    """
+    def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False, use_cache=True, matchType=1):
         #print path + 'xxx'
         if self.cache_records.has_key(keyword) and use_cache:
             if log:
@@ -366,7 +370,7 @@ class Utils:
         if path == '':
             path = self.getPath(subject)
         if log:
-            print 'searching %s'%keyword + " in " + subject
+            print 'searching %s'%keyword + " in " + subject + '  matchType:' + str(matchType)
         record_list = []
         if log:
             print keyword
@@ -383,7 +387,18 @@ class Utils:
             for line in f.readlines():
                 record = Record(line)
                 record.set_path(file_name)
-                if record.get_id().lower().strip() == keyword.lower().strip():
+                found_tag = False
+
+                if matchType == 1: # by id 
+                    if record.get_id().lower().strip() == keyword.lower().strip():
+                        found_tag = True
+                elif matchType == 2: # by title
+                    if record.get_title().lower().strip() == keyword.lower().strip():
+                        found_tag = True
+                elif matchType == 3: # by line
+                    if record.line.lower().strip().find(keyword.lower().strip()) != -1:
+                        found_tag = True
+                if found_tag:
                     if log:
                         print "found " + record.get_id() + ' ' + record.get_title() + ' ' + record.get_url() + ' in ' + self.shortFileName(file_name)
                     if return_all:
@@ -712,7 +727,7 @@ class Utils:
 
 
 
-    def output2Disk(self, records, module, fileName, outputFormat=''):
+    def output2Disk(self, records, module, fileName, outputFormat='', ignoreUrl=False):
         data = ''
         if outputFormat == 'markdown':
             data += '## ' + fileName.replace('%20', ' ') + '\n'
@@ -728,12 +743,15 @@ class Utils:
         count = 0
         for record in records:
             count += 1
+            url = record.get_url().strip()
+            if ignoreUrl:
+                url = ''
             if outputFormat == 'markdown':
                 if record.line.find(' parentid:') != -1 and record.get_parentid().strip() != '':
                     data += '    '
-                data += '- [ ] [' + record.get_title().strip() + '](' + record.get_url().strip() + ')\n'
+                data += '- [ ] [' + record.get_title().strip() + '](' + url + ')\n'
             else:
-                data += record.get_id().strip() + '-' + str(count) + ' | ' + record.get_title().strip() + ' | ' + record.get_url().strip() + ' | ' + record.get_describe().strip() + '\n'
+                data += record.get_id().strip() + '-' + str(count) + ' | ' + record.get_title().strip() + ' | ' + url + ' | ' + record.get_describe().strip() + '\n'
         outputDir = Config.output_data_to_new_tab_path + module + '/'
         if outputFormat != '':
             outputDir += outputFormat + '/'
@@ -1375,6 +1393,8 @@ class Utils:
         return final_file_list
 
     def find_file_by_pattern_path(self, re, path):
+        if os.path.exists(path) == False:
+            return ''
         with open(path, 'r+') as f:
             try:
                 data = mmap.mmap(f.fileno(), 0)
@@ -1427,12 +1447,13 @@ class Utils:
             self.quickSortHelper(alist,first,splitpoint-1, sortType)
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
-    def getIconHtml(self, url, width=14, height=12):
+    def getIconHtml(self, url, width=14, height=12, radius=True):
         #print 'getIconHtml ' + url
         if Config.enable_website_icon == False:
             return ''
         if os.path.isdir(url):
             url += '.dir'
+            radius = False
             #print url
         src = ''
         if url.startswith('http') and url.endswith('btnI=1') == False:
@@ -1443,7 +1464,10 @@ class Utils:
                 src = v
                 break
         if src != '':
-            return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
+            if radius:
+                return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
+            else:
+                return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '">'
         return ''
 
     def partition(self, alist,first,last, sortType):

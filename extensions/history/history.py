@@ -8,6 +8,7 @@ from config import Config
 import subprocess
 from record import Record
 from record import Tag
+import re
 
 class History(BaseExtension):
 
@@ -226,12 +227,16 @@ class History(BaseExtension):
         return leftData.lower().find(rightData.lower()) != -1
 
     def existHistoryFile(self, filename):
+        return os.path.exists(self.getHistoryFileName(filename))
+
+    def getHistoryFileName(self, filename):
         if filename.find('/') != -1:
             filename = filename[filename.rfind('/') + 1 :]
-        return os.path.exists('extensions/history/data/' + filename + '-history')
+        return 'extensions/history/data/' + filename + '-history'
 
     def check(self, form_dict):
         self.updateHistory()
+        rID = form_dict['rID'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
-        return self.existHistoryFile(form_dict['originFileName'])
+        return self.existHistoryFile(form_dict['originFileName']) and self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getHistoryFileName(form_dict['originFileName']))
 

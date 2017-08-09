@@ -19,7 +19,7 @@ class Config():
     smart_link_engin = 'glucky' #'google'
     default_engin_searchbox = 'zhihu'
 
-    igon_log_for_history_module = ['history', 'star', 'exclusive'] #dialog
+    igon_log_for_modules = ['history', 'star', 'exclusive', 'content'] #dialog
     more_button_for_history_module = True
 
     smart_engin_lucky_mode_for_account = True
@@ -88,6 +88,7 @@ class Config():
     #default_library = 'earth-library'
     #default_library = 'social-library'
     #default_library = 'art-library'
+    #default_library = 'literature-library'
     #default_library = 'political-library'
     #default_library = 'thought-library'
     #default_library = 'media-library'
@@ -137,8 +138,8 @@ class Config():
     #do not show nav links, only show extension links
     extension_mode = False
 
-    default_tab = 'bookmark' #'content'
-    second_default_tab = 'history'#'figures'
+    default_tab = 'history' #'content'
+    second_default_tab = 'bookmark'#'figures'
 
     default_width = "54" #"79"
     column_num = "3"
@@ -172,12 +173,12 @@ class Config():
     background_after_click = '#E9967A' ##CCEEFF
     fontsize_after_click = ''
 
-    fav_links = { 'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
+    fav_links = { #'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
 		  'civilization' : ip_adress + '/?db=other/&key=civilization2017&column=2',\
-          'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
+          #'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
           #'rss' : ip_adress + '/?db=rss/&key=rss2016',\
           #'disk' : ip_adress + '/?db=other/&key=disk2016',\
-          'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
+          #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
           #'ipynb' : 'localhost:8888/tree',\
           #'degree' : ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3',\
           #'members' : ip_adress + '/?db=rank/&key=members2016&column=2',\
@@ -195,6 +196,11 @@ class Config():
 
     delete_from_char = ''
     delete_forward = True
+
+
+    application_dict = {'.ppt' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
+                        '.pptx' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
+                        '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
     # ==== extension ====
     output_data_to_new_tab_path = 'db/other/'
@@ -252,9 +258,9 @@ class Config():
     convert_url_args = '' #'?start=' #'?start=0&tag='
     convert_page_step = 1
     convert_page_start = 1
-    convert_page_max = 16
+    convert_page_max = 6
     convert_page_to_end = False
-    convert_tag = 'h2' #"div#title"  # tag#class or tag
+    convert_tag = 'strong' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
@@ -288,7 +294,7 @@ class Config():
     website_icons = {'.pdf' : 'https://cdn4.iconfinder.com/data/icons/CS5/128/ACP_PDF%202_file_document.png',\
                  '.dir' : 'http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg',\
                  'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
-                 'amazon' : 'http://elianeelias.com/coda/wp-content/uploads/2013/05/Amazon-icon.png',\
+                 'amazon' : 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUqAAAAJGFmYjUxMmQ3LWUyNDUtNGJmMy04Nzc4LWRmYzE1YTExMDY2YQ.png',\
                  'csdn' : 'http://a2.mzstatic.com/us/r30/Purple71/v4/99/61/36/996136cc-f759-5c0c-4531-ee0c6fec786a/icon175x175.png',\
                  'coursera': 'http://techraze.com/wp-content/uploads/2015/06/Coursera-APK-1.png',\
                  'edx' : 'https://icon.apkmirrordownload.com/org.edx.mobile.png',\
@@ -298,7 +304,7 @@ class Config():
                  'khan' : 'http://academics.cehd.umn.edu/mobile/wp-content/uploads/2013/10/khan-academy-icon.png',\
                  'medium' : 'https://memoriaelectrika.files.wordpress.com/2015/10/mediumlogo002.png',\
                  'mit': 'https://1.bp.blogspot.com/-fhwcWQmSJk4/VsMJ_NzuasI/AAAAAAAAAAo/qoBFDEJLnwI/w800-h800/images.png',\
-                 'stanford' : 'https://identity.stanford.edu/overview/images/emblems/SU_New_BlockStree_2color.png',
+                 'stanford' : 'https://d9tyu2epg3boq.cloudfront.net/institutions/stanford.png',
                  'berkeley' : 'http://www.berkeley.edu/brand/img/seals/ucbseal_139_540.png',\
                  'cmu' : 'http://www.wholeren.com/wp-content/uploads/2015/04/Carnegie_Mellon_University_CMU_1015361.png',\
                  'harvard' : 'http://tusm.3daystartup.org/files/2013/03/harvard.png',\
@@ -314,7 +320,7 @@ class Config():
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
                  'twitter' : 'https://abs.twimg.com/icons/apple-touch-icon-192x192.png',\
                  'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
-                 'facebook' : 'https://images.seeklogo.net/2011/06/facebook-icon-logo-vector-400x400.png',\
+                 'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
                  'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\
                  'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
@@ -325,4 +331,8 @@ class Config():
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
                  'twitch' : 'http://apps.friday.tw/news/wp-content/uploads/2015/03/twitchicon.png',\
-                 'bilibili' : 'http://cdn.duitang.com/uploads/item/201507/09/20150709195721_icm2N.thumb.224_0.jpeg'}
+                 'bilibili' : 'https://pbs.twimg.com/profile_images/813934430867759105/bGAicSr_.jpg',\
+                 'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
+                 'google' : 'http://images.dailytech.com/nimage/G_is_For_Google_New_Logo_Thumb.png',\
+                 'flickr' : 'http://clave7.webcindario.com/logo_flickr_01.png',\
+                 'jianshu' : 'http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png'}

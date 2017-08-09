@@ -30,10 +30,13 @@ class Convert(BaseExtension):
         html = ''
         step = Config.convert_page_start
         #new_url = url
-        new_url = url + str(step)
+        new_url = url
+
+        if Config.convert_url_args != '':
+            new_url = url + str(step)
 
         self.count = 0
-        if Config.convert_page_step > 0:
+        if Config.convert_page_step > 0 and Config.convert_url_args != '':
             all_data = ''
             while True:
                 data = self.convert2data(new_url)

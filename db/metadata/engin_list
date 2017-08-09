@@ -577,3 +577,4 @@ engin-586 | bit.baidu | http://bit.baidu.com/course/search.html?keywords=%s | pr
 engin-587 | tagboard | https://tagboard.com/%s/search | priority:8 description:social
 engin-588 | zeef | https://zeef.com/?query=%s&in=all | priority:8 description:all project star
 engin-589 | gdcvault | http://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=%s&conference_id= | priority:8 description:star talk ppt
+engin-590 | foxebook | http://www.foxebook.net/search/%s | priority:3 description:book

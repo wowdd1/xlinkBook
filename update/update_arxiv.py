@@ -237,117 +237,121 @@ class ArxivSpider(Spider):
 
     def doWork(self):
         base_url = 'http://export.arxiv.org/api/query?' # base api query url
-        cats = ['cs.CV', 'cs.LG', 'cs.CL', 'cs.NE', 'stat.ML'] 
-        # main loop where we fetch the new results
-        start = 0
-        results_per_iteration = 100
-        max_result = 18900
-        search_query = ''
-        for cat in cats:
-            if cat == cats[len(cats) -1]:
-                search_query += 'cat:' + cat
-            else:
-                search_query += 'cat:' + cat + '+OR+'
+        #cats = ['cs.CV', 'cs.LG', 'cs.CL', 'cs.NE', 'stat.ML', 'cs.DC', 'cs.RO', 'cs.AI', 'cs.AR'] 
+        #cats = ['cs.DC', 'cs.RO', 'cs.AI', 'cs.AR'] 
 
-        print 'Searching arXiv for %s' % (search_query, )
-        all_papers = []
-        num_added_total = start
-        exception = False
-        counts = self.getCounts()
-        print counts
-        if len(counts) >  0 and counts[len(counts) - 1] == self.batch_size:
-            self.incremental_mode = True
+        for cats in [['cs.CV', 'cs.LG', 'cs.CL', 'cs.NE', 'stat.ML'], ['cs.DC', 'cs.RO', 'cs.AI', 'cs.AR']]:
+
+            # main loop where we fetch the new results
             start = 0
-        if self.incremental_mode:
-            print 'incremental update mode'
-            if len(self.rawid_version_dict) == 0:
-                print 'loading history file'
-                files = []
-                for i in range(0, len(counts)):
-                    files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2017')
-
-                for fileName in files:
-
-                    f = open(fileName, 'rU')
-                    lines = f.readlines()
-                    for line in lines:
-                        record = PaperRecord(line)
-                        rawid, version = self.parse_arxiv_url(record.get_url().replace('.pdf', ''))
-                        self.rawid_version_dict[str(rawid)] = record.get_published().strip()
-
-                    f.close()
-            for k, v in self.rawid_version_dict.items():
-                print k + ' ' + v
-            print len(self.rawid_version_dict)
-
-            self.incremental_file = self.get_file_name('eecs/papers/arxiv/arxiv' + str(self.getCounts()[0] + self.batch_size)+ '-inc', self.school)
-            if os.path.exists(self.incremental_file):
-                os.remove(self.incremental_file)
-
-        for i in range(start, max_result, results_per_iteration):
-           
-            print "Results %i - %i" % (i,i+results_per_iteration)
-            query = 'search_query=%s&sortBy=lastUpdatedDate&start=%i&max_results=%i' % (search_query,
-                                                                 i, results_per_iteration)
-            response = None
-            try:
-                print 'requesting ' + base_url+query
-                #response = urllib.urlopen(base_url+query).read()
-                response = requests.get(base_url+query).text
-            except Exception as e:
-                exception = True
-                print e
-            #response = self.requestWithProxy(base_url+query).text
-            parse = feedparser.parse(response)
-            num_added = 0
-            num_skipped = 0
-            for e in parse.entries:
-        
-                j = self.encode_feedparser_dict(e)
-          
-                # extract just the raw arxiv id and version for this paper
-                rawid, version = self.parse_arxiv_url(j['id'])
-                j['_rawid'] = rawid
-                j['_version'] = version
-                j['title'] = self.utils.removeDoubleSpace(j['title'].replace('\n', '')).strip()
-                print j['title'].encode('utf-8')
-                #print j['id'].replace('abs', 'pdf')
-          
-                #print j['authors']
-                #print j['arxiv_primary_category']['term']
-                #print j['published']
-                #print j['summary'].replace('\n', '')
-                all_papers.append(j)
-                num_added += 1
-                num_added_total += 1
-          
-            if (i+results_per_iteration) % self.batch_size == 0 and exception == False:
-                if self.incremental_mode:
-                    if self.incrementalUpdate(all_papers) == False:
-                        all_papers = []
-                        break
+            results_per_iteration = 100
+            max_result = 18900
+            search_query = ''
+            for cat in cats:
+                if cat == cats[len(cats) -1]:
+                    search_query += 'cat:' + cat
                 else:
-                    id_stuff = str(max_result - num_added_total + self.batch_size)
-                    self.save("eecs/papers/arxiv/arxiv" + id_stuff, all_papers, id_stuff)
-                all_papers = []
-            #   print some information
-            #print 'Added %d papers, already had %d.' % (num_added, num_skipped)
-            if len(parse.entries) == 0:
-                print 'Received no results from arxiv. Rate limiting? Exitting. Restart later maybe.'
-                print response
-                break
-        
-        
-            print 'Sleeping for %i seconds' % (30.0 , )
-            time.sleep(30.0 + random.uniform(0, 3))  
-        
-        if self.incremental_mode:
-            if len(all_papers) > 0:
-                self.incrementalUpdate(all_papers)
-            self.processIncrementalFile()
+                    search_query += 'cat:' + cat + '+OR+'
 
-        if not self.incremental_mode and len(all_papers) > 0 and exception == False:
-            self.save("eecs/papers/arxiv/arxiv" + str(num_added_total), all_papers, num_added_total)
+            print 'Searching arXiv for %s' % (search_query, )
+            all_papers = []
+            num_added_total = start
+            exception = False
+            counts = self.getCounts()
+            print counts
+            if len(counts) >  0 and counts[len(counts) - 1] == self.batch_size:
+                self.incremental_mode = True
+                start = 0
+            if self.incremental_mode:
+                print 'incremental update mode'
+                if len(self.rawid_version_dict) == 0:
+                    print 'loading history file'
+                    files = []
+                    for i in range(0, len(counts)):
+                        files.append('../db/eecs/papers/arxiv/arxiv' + str(counts[i])+ '-arxiv2017')
+
+                    for fileName in files:
+
+                        f = open(fileName, 'rU')
+                        lines = f.readlines()
+                        for line in lines:
+                            record = PaperRecord(line)
+                            rawid, version = self.parse_arxiv_url(record.get_url().replace('.pdf', ''))
+                            self.rawid_version_dict[str(rawid)] = record.get_published().strip()
+
+                        f.close()
+                for k, v in self.rawid_version_dict.items():
+                    print k + ' ' + v
+                print len(self.rawid_version_dict)
+
+                self.incremental_file = self.get_file_name('eecs/papers/arxiv/arxiv' + str(self.getCounts()[0] + self.batch_size)+ '-inc', self.school)
+                if os.path.exists(self.incremental_file):
+                    os.remove(self.incremental_file)
+
+            for i in range(start, max_result, results_per_iteration):
+               
+                print "Results %i - %i" % (i,i+results_per_iteration)
+                query = 'search_query=%s&sortBy=lastUpdatedDate&start=%i&max_results=%i' % (search_query,
+                                                                     i, results_per_iteration)
+                response = None
+                try:
+                    print 'requesting ' + base_url+query
+                    #response = urllib.urlopen(base_url+query).read()
+                    response = requests.get(base_url+query).text
+                except Exception as e:
+                    exception = True
+                    print e
+                #response = self.requestWithProxy(base_url+query).text
+                parse = feedparser.parse(response)
+                num_added = 0
+                num_skipped = 0
+                for e in parse.entries:
+            
+                    j = self.encode_feedparser_dict(e)
+              
+                    # extract just the raw arxiv id and version for this paper
+                    rawid, version = self.parse_arxiv_url(j['id'])
+                    j['_rawid'] = rawid
+                    j['_version'] = version
+                    j['title'] = self.utils.removeDoubleSpace(j['title'].replace('\n', '')).strip()
+                    print j['title'].encode('utf-8')
+                    #print j['id'].replace('abs', 'pdf')
+              
+                    #print j['authors']
+                    #print j['arxiv_primary_category']['term']
+                    #print j['published']
+                    #print j['summary'].replace('\n', '')
+                    all_papers.append(j)
+                    num_added += 1
+                    num_added_total += 1
+              
+                if (i+results_per_iteration) % self.batch_size == 0 and exception == False:
+                    if self.incremental_mode:
+                        if self.incrementalUpdate(all_papers) == False:
+                            all_papers = []
+                            break
+                    else:
+                        id_stuff = str(max_result - num_added_total + self.batch_size)
+                        self.save("eecs/papers/arxiv/arxiv" + id_stuff, all_papers, id_stuff)
+                    all_papers = []
+                #   print some information
+                #print 'Added %d papers, already had %d.' % (num_added, num_skipped)
+                if len(parse.entries) == 0:
+                    print 'Received no results from arxiv. Rate limiting? Exitting. Restart later maybe.'
+                    print response
+                    break
+            
+            
+                print 'Sleeping for %i seconds' % (30.0 , )
+                time.sleep(30.0 + random.uniform(0, 3))  
+            
+            if self.incremental_mode:
+                if len(all_papers) > 0:
+                    self.incrementalUpdate(all_papers)
+                self.processIncrementalFile()
+
+            if not self.incremental_mode and len(all_papers) > 0 and exception == False:
+                self.save("eecs/papers/arxiv/arxiv" + str(num_added_total), all_papers, num_added_total)
 
     def processIncrementalFile(self):
         if os.path.exists(self.incremental_file):
