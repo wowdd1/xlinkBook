@@ -1495,10 +1495,11 @@ def print_list(all_lines, file_name = ''):
         start_item = (current_page - 1) * Config.page_item_count
         all_lines = all_lines[ start_item : start_item + Config.page_item_count]
         
-    if len(all_lines) == 1 or file_name.find('paper') != -1:
-        adjust_column_num('1')
-    elif len(all_lines) == 2:
-        adjust_column_num('2')
+    if html_style:
+        if len(all_lines) == 1:# or file_name.find('paper') != -1:
+            adjust_column_num('1')
+        elif len(all_lines) == 2:
+            adjust_column_num('2')
     
     if verify != '':
         file_name = verify
@@ -1506,6 +1507,7 @@ def print_list(all_lines, file_name = ''):
     if html_style == True and output_with_color:
         output_with_color = False
         output_with_style = True
+    #print 'column_num:' + str(column_num)
 
     if len(all_lines) > 0:
         line_count = len(all_lines)
@@ -1918,6 +1920,7 @@ def main(argv):
             source = a
         elif o in ('-c', '--column_num'):
             column_num = a
+            #print 'column_num:' + str(column_num)
             adjust_cell_len()
             adjust_link_number()
             adjust_cell_row()

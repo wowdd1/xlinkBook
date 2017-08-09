@@ -269,6 +269,7 @@ def handleToList():
 
     if record != None and record.get_id().strip() == rID:
         args = { 'tag' : resourceType + ':' } 
+        #print '&&&' + record.line
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, args)
         url = ''
         for item in ret.split(','):
@@ -279,8 +280,21 @@ def handleToList():
             elif resourceType == 'crossref':
                 if item.find('#') != -1:
                     result = utils.getCrossrefUrls(item.strip())
+                    #print '^^^ ' + item
+                    itemRecord = None
                     for k, v in result.items():
-                        records.append(Record(' | ' + k.strip() + ' | ' + v + ' | '))
+                        #if itemRecord == None:
+                        path = 'db/' + item[0 : item.find('#')].strip()
+                        #print '^^^ ' + path
+                        itemRecord = utils.getRecord(k.strip(), path=path, matchType=2)
+                            #print 'itemRecord ' + itemRecord.line
+
+                        v = ''
+                        if itemRecord != None and itemRecord.line.strip() != '':
+                            records.append(Record(itemRecord.get_id() + ' | ' + k.strip() + ' | ' + v + ' | ' + itemRecord.get_describe().replace('\n', '') + ' path:' + path))
+                        else:
+                            records.append(Record(' | ' + k.strip() + ' | ' + v + ' | '))
+
                     continue
                 else:
                     k, url = utils.getCrossrefUrl(item)
@@ -289,9 +303,10 @@ def handleToList():
             else:
                 url = utils.toQueryUrl(utils.getEnginUrl('glucky'), item.strip() + ' ' + resourceType)
 
+            #print url
             records.append(Record(' | ' + item.strip() + ' | ' + url + ' | '))
     if len(records) > 0:
-        return utils.output2Disk(records, 'tag', rID + '-' + resourceType)
+        return utils.output2Disk(records, 'tag', rID + '-' + resourceType, ignoreUrl=False)
     return ''
 
 def toRecordFormat(data):
@@ -311,11 +326,17 @@ def handleExec():
     output = ''
     if command == 'open':
         cmd = 'open "' + fileName + '"'
-        chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-        if os.path.exists(chrome):
-            cmd = chrome.replace(' ', '\ ') + ' "' + fileName + '"'
-        print cmd
-        output = subprocess.check_output(cmd, shell=True)
+        app = ''
+        for k, v in Config.application_dict.items():
+            if fileName.lower().strip().endswith(k):
+                app = v
+                break
+        if app == '':
+            app = Config.application_dict['*']
+        if os.path.exists(app):
+            cmd = app.replace(' ', '\ ') + ' "' + fileName + '"'
+            print cmd
+            output = subprocess.check_output(cmd, shell=True)
     elif command == 'edit':
         cmd = 'open "' + fileName + '"'
         sublime = '/Applications/Sublime Text.app/Contents/MacOS/Sublime Text'
@@ -573,7 +594,7 @@ def handleUserLog():
     return ''
 
 def igonLog(module):
-    for md in Config.igon_log_for_history_module:
+    for md in Config.igon_log_for_modules:
         if module.strip() == md:
             return True
     return False

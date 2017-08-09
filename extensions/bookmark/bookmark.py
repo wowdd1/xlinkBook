@@ -108,7 +108,6 @@ class Bookmark(BaseExtension):
         
 
         self.updateBookmark()
-
         
         count = 0
         pid = ''

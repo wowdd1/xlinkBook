@@ -64,6 +64,7 @@ class AiPapersSpider(Spider):
         conference = ''
         year = ''
         r = requests.get('http://cvpapers.com')
+        #r = self.requestWithProxy('http://cvpapers.com')
         sp = BeautifulSoup(r.text)
         ul = sp.find('ul')
         sp = BeautifulSoup(ul.prettify())
@@ -78,9 +79,15 @@ class AiPapersSpider(Spider):
                     continue
 
                 r = requests.get('http://cvpapers.com/' + a['href'])
+                #r = self.requestWithProxy('http://cvpapers.com/' + a['href'])
+
+                if year.find('NEW') != -1:
+                    year = year.replace('NEW', '').strip()
                 print conference + ' ' + year
                 soup = BeautifulSoup(r.text)
                 paper_list = []
+                if year != '2017':
+                    continue
 
                 i = 0
                 for dl in soup.find_all('dl'):
@@ -433,6 +440,7 @@ class AiPapersSpider(Spider):
                 
 
 start = AiPapersSpider()
+#start.getIcmlPaper()
 
 start.doWork()
 start.getCvPaper()

@@ -21,6 +21,7 @@ class Content(BaseExtension):
     optional_content = {}
 
     form_dict = None
+
    
 
     def __init__(self):
@@ -28,6 +29,8 @@ class Content(BaseExtension):
         self.utils = Utils()
         self.data_dir = 'extensions/content/data/'
         self.data_type = 'content'
+        self.contentref = ''
+
 
     def loadContent(self, rID, name, content):
 	print 'rid :' + rID
@@ -61,11 +64,20 @@ class Content(BaseExtension):
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
-        self.loadContent(rID, fileName, self.optional_content)
+        contentID = rID
 
-        self.loadContent(rID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
+        self.contentref = self.getContentRef(rID, fileName) 
+        print 'contentref:' + self.contentref
 
-        return self.genContentHtml(rID, divID, form_dict['defaultLinks'])
+        if self.contentref != '':
+            contentID = self.contentref
+            fileName = form_dict['originFileName'].encode('utf8')
+
+        self.loadContent(contentID, fileName, self.optional_content)
+
+        self.loadContent(contentID, self.getExtensionDataFilePath(self.formatFileName(fileName)), self.datafile_content)
+
+        return self.genContentHtml(contentID, divID, form_dict['defaultLinks'])
         '''
         r = requests.get('https://www.google.com.hk/search?q=jquery+load&oq=jqload&aqs=chrome.1.69i57j0l5.9057j0j7&sourceid=chrome&ie=UTF-8')
         soup = BeautifulSoup(r.text) 
@@ -82,16 +94,17 @@ class Content(BaseExtension):
         rID = form_dict['rID'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
         #return True
-        #r = self.utils.getRecord(rID, path=fileName)
-        #if r != None and r.line.strip() != '':
+
         #    print 'xwwwww' + r.line
         #    return True
         p = self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getExtensionDataFilePath(self.formatFileName(fileName)))
         print p
         if p != '':
-            print 'xwwwww22222' + p
-
             return True
+
+        if self.getContentRef(rID, fileName) != '':
+            return True
+
         return False
 
         #self.loadContent(rID, fileName, self.optional_content)
@@ -100,7 +113,16 @@ class Content(BaseExtension):
         #print self.optional_content
         #print self.datafile_content
         #return self.datafile_content.has_key(rID) or self.optional_content.has_key(rID)
-        
+
+    def getContentRef(self, rID, fileName):
+        record = self.utils.getRecord(rID, path=fileName)
+        if record != None and record.line.strip() != '':
+            contentref = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'contentref'})
+            if contentref != None:
+
+                return contentref.strip()
+        return ''
+
 
     def write(self, html):
         f = open('temp/test.html', 'w')
