@@ -1172,7 +1172,7 @@ def adjDialogMode(text, originDialogMode):
     if utils.getValueOrTextCheck(text):
         sText, value = utils.getValueOrTextSplit(text)
         #print 'stext:' + sText + ' value:' + value + ' ' + str(value.find('.') != -1) + '<br>' 
-        if value.find('.') != -1: # value is short link
+        if utils.isUrlFormat(value) != -1: # value is short link
             #print 'return False<br>'
             return False 
 
