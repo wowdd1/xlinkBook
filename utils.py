@@ -779,6 +779,8 @@ class Utils:
     def bestMatchEngin(self, text, resourceType=''):
         #TODO get best engin by resourceType
         #print resourceType
+        if text.startswith('http'):
+            return text
         if resourceType != '' and ' '.join(self.tag.tag_list_direct_link).find(resourceType) != -1:
             return self.getEnginUrl('glucky')
         return self.getEnginUrl(Config.smart_link_engin)
@@ -889,6 +891,8 @@ class Utils:
         return False
 
     def toQueryUrl(self, url, text):
+        if text.startswith('http'):
+            return text
         query_text = text.replace('"', ' ').replace("'", ' ').replace(' ', "%20") 
         if url.find('%s') != -1:
             url = self.toAccountUrl(url, query_text.strip())
@@ -906,6 +910,8 @@ class Utils:
         value = text[text.find('(') + 1 :].strip()
         value = value[0 : value.find(')')].strip()
         newText = text[0 : text.find('(')].strip() 
+        if value.startswith('bit.ly') or value.startswith('goo.gl'):
+            value = 'http://' + value
         return newText, value
 
     def getValueOrText(self, text, returnType='text'):

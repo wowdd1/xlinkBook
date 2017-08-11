@@ -591,7 +591,11 @@ def handleUserLog():
     module = request.form['module'].strip()
     if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
         historyFile = 'extensions/history/data/' + library[library.rfind('/') + 1 :] + '-history'
-        line = request.form['rid'] + ' | ' + utils.getValueOrText(request.form['searchText'].replace('|', ''), returnType='text') + ' | ' + request.form['url'] + ' | '
+        title = utils.getValueOrText(request.form['searchText'].replace('|', ''), returnType='text')
+
+        if request.form['resourceType'] != '' and utils.isAccountTag(request.form['resourceType'].strip(), tag.tag_list_account) == False and utils.getValueOrTextCheck(request.form['searchText']):
+            title += ' - ' + request.form['resourceType']
+        line = request.form['rid'] + ' | ' + title + ' | ' + request.form['url'] + ' | '
         cmd = 'echo "' + line + '" >> ' + historyFile
         print cmd
         output = subprocess.check_output(cmd, shell=True)
