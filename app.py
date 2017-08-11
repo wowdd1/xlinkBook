@@ -401,7 +401,8 @@ def getCrossrefUrls(content):
 @app.route('/queryUrl', methods=['POST'])
 def handleQueryUrl():
     result = ''
-    print request.form
+    #print '<<===handleQueryUrl:'
+    #print request.form
     if request.form.has_key('isTag') and (request.form['isTag'] == True or request.form['isTag'] == 'True' or request.form['isTag'] == 'true'):
         record = utils.getRecord(request.form['rID'], path=request.form['fileName'])
         if record != None and record.get_id().strip() == request.form['rID']:
@@ -425,6 +426,8 @@ def handleQueryUrl():
                         #if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
                         #    v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
                         script = ''
+                        #if k == 'glucky':
+                        #    print 'ccc: ' + utils.getValueOrText(q.strip(), returnType='value')
                         for q in ret:
                             script += "window.open('" + utils.toQueryUrl(utils.getEnginUrl(k.strip()), q.strip()).strip().replace('#', '') + "');"
                         result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '" style="color:#999966;font-size:10pt;">' + k + '</a>'+ '&nbsp;'
@@ -518,6 +521,9 @@ def handleQueryUrl():
                     if utils.accountMode(tag.tag_list_account, tag.tag_list_account_mode, k, request.form['resourceType']):
                         v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
                             
+                    #if k == 'glucky':
+                    #    print 'ccc1111: ' + request.form['searchText']
+                    #    print 'ccc1111: ' + utils.getValueOrText(request.form['searchText'], returnType='value')
                     result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
                     if count % 5 == 0 and count > 0 and len(resultDict) != 5:
                         result += '<br>'
@@ -585,7 +591,7 @@ def handleUserLog():
     module = request.form['module'].strip()
     if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
         historyFile = 'extensions/history/data/' + library[library.rfind('/') + 1 :] + '-history'
-        line = request.form['rid'] + ' | ' + request.form['searchText'].replace('|', '') + ' | ' + request.form['url'] + ' | '
+        line = request.form['rid'] + ' | ' + utils.getValueOrText(request.form['searchText'].replace('|', ''), returnType='text') + ' | ' + request.form['url'] + ' | '
         cmd = 'echo "' + line + '" >> ' + historyFile
         print cmd
         output = subprocess.check_output(cmd, shell=True)
