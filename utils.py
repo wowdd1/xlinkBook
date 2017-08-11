@@ -910,9 +910,19 @@ class Utils:
         value = text[text.find('(') + 1 :].strip()
         value = value[0 : value.find(')')].strip()
         newText = text[0 : text.find('(')].strip() 
-        if value.startswith('bit.ly') or value.startswith('goo.gl'):
+        if self.isShortUrl(value):
             value = 'http://' + value
         return newText, value
+
+    def isUrlFormat(self, text):
+        if text.startswith('http') != -1 or self.isShortUrl(text):
+            return True
+        return False
+        
+    def isShortUrl(self, text):
+        if text.startswith('bit.ly') or text.startswith('goo.gl'):
+            return True
+        return False
 
     def getValueOrText(self, text, returnType='text'):
         if self.getValueOrTextCheck(text):
