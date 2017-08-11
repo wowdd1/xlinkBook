@@ -183,8 +183,10 @@ class History(BaseExtension):
             url = jobj['url']
 
         title = self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords)
-        if self.tag.account_tag_alias.has_key(jobj['title'].strip()):
-            title = self.tag.account_tag_alias[jobj['title'].strip()]
+        #if self.tag.account_tag_alias.has_key(jobj['title'].strip()):
+        #    title = self.tag.account_tag_alias[jobj['title'].strip()]
+
+        title = self.utils.getValueOrText(jobj['title'].strip(), returnType='text')
 
         if url != '':
             html += '<p>' + self.utils.enhancedLink(url, title, module='history', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)

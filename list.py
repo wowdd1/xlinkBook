@@ -584,6 +584,7 @@ def build_lines(list_all, file_name):
         border_style_five() 
     title = ''
     id = ''
+    url = ''
     #print custom_cell_row
     for i in range(0, custom_cell_row):
         describe_lines.append(copy.deepcopy(list_all))
@@ -798,6 +799,8 @@ def build_lines(list_all, file_name):
                 count = 0
                 
                 if html_style: 
+                    if url.strip() != '' and url.find(Config.ip_adress) == -1:
+                        id_title_lines[i][j] += utils.getIconHtml('url', width=10, height=8)
                     if Config.extension_mode == False and Config.disable_default_engin == False:
                         id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
                     if script != '' and Config.distribution == False:
@@ -1054,7 +1057,6 @@ def genSmartAgentLinkHtml(tag, ret, record, split_char, content):
 
 
 def genAccountHtml(tagStr, record, content, containID=''):
-    url = ''
     if tag.tag_list_account.has_key(tagStr + ':'):
         url = tag.tag_list_account[tagStr + ':']
     else:
@@ -1088,6 +1090,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
     html = ''
     count = 0
     aid = ''
+    originDialogMode = dialogMode
     if ret.find(split_char) != -1:
         ret = ret.split(split_char)
         lineLenCount = 0
@@ -1095,6 +1098,11 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
         #print ret
         for i in ret:
             old_i = i.strip()
+            dialogMode = adjDialogMode(i.strip(), originDialogMode)
+            #if i.find('(') != -1:
+            #    print i + '<br>'
+            #    print 'dialogMode:' + str(dialogMode) + '<br>' 
+
             #if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
             #    i = i[0 : i.find(Config.delete_from_char)].strip()
             lineLenCount += getCutLen(tag, i.strip())
@@ -1115,10 +1123,10 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
                 if url != '':
                     link = url
                     if url.find('%s') != -1:
-                        link = utils.toAccountUrl(url, i.strip().replace(' ', ''))
-                    html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
+                        link = utils.toAccountUrl(url, linkText.replace(' ', ''))
+                    html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid, originText=i.strip()) 
                 else:
-                    html += utils.enhancedLink(utils.bestMatchEnginUrl(i.strip(), resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid) 
+                    html += utils.enhancedLink(utils.bestMatchEnginUrl(linkText, resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid, originText=i.strip()) 
             if old_i != ret[len(ret) - 1].strip():
                 if accountTag:
                     html += '&nbsp;'
@@ -1128,7 +1136,10 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             if lineLenCount > course_name_len + course_name_len / 6:
                 lineLenCount = 0
                 html += '<br>'
+            dialogMode = originDialogMode
+
     else:
+        dialogMode = adjDialogMode(ret.strip(), originDialogMode)
         count = 1
         aid = containID + '-a-' + str(count)
         if crossref:
@@ -1139,10 +1150,13 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             if url != '':
                 link = url
                 if url.find('%s') != -1:
-                    link = utils.toAccountUrl(url, ret)
-                html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid)
+                    link = utils.toAccountUrl(url, linkText)
+                html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid, originText=ret.strip())
             else:
-                html += utils.enhancedLink(utils.bestMatchEnginUrl(ret.strip(), resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid)
+                html += utils.enhancedLink(utils.bestMatchEnginUrl(linkText, resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=sText, dialogMode=dialogMode, aid=aid, originText=ret.strip())
+
+
+        dialogMode = originDialogMode
 
     if accountTag and tag_content.find(split_char) != -1 and len(tag_content.split(split_char)) > 7:
         dialogMode = True
@@ -1153,8 +1167,19 @@ def genTagLink(content, module, library, rid, resourceType, dialogMode, aid, cro
     #    dialogMode = False
     return utils.enhancedLink('', '<font color="#66CCFF">' + content[ 0 :  content.find(':')].strip() + '</font>', module=module, library=library, fileName=library, rid=rid, resourceType=resourceType, urlFromServer=True, dialogMode=dialogMode, aid=aid, isTag=True, log=False) + ':'
 
+def adjDialogMode(text, originDialogMode):
+
+    if utils.getValueOrTextCheck(text):
+        sText, value = utils.getValueOrTextSplit(text)
+        #print 'stext:' + sText + ' value:' + value + ' ' + str(value.find('.') != -1) + '<br>' 
+        if value.find('.') != -1: # value is short link
+            #print 'return False<br>'
+            return False 
+
+    return originDialogMode
 
 def getShowText(accountTag, text, tagStr, linkCount):
+    text = utils.getValueOrText(text, returnType='text')
     col = int(column_num)
     font_size = 0
     if column_num == '1':
@@ -1200,11 +1225,17 @@ def getShowText(accountTag, text, tagStr, linkCount):
         
     return text
 
-def getLinkText(accountTag, text, sText):
+def getLinkText(accountTag, text, showText):
+
+    return utils.getValueOrText(text, returnType='value')
+    '''
     if accountTag and tag.account_tag_alias.has_key(text):
         return tag.account_tag_alias[text]
     else:
         return text
+    '''
+
+
 
 def getCutLen(tag, text):
     if tag == 'github':

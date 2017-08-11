@@ -179,7 +179,7 @@ engin-175 | engadget | http://www.engadget.com/search/?search-terms= | priority:
 engin-176 | datasciencecentral | http://www.datasciencecentral.com/page/search?q= | priority:0 description:social
 engin-177 | math.stack | http://math.stackexchange.com/search?q= | priority:0 description:q-a
 engin-178 | kdnuggets | http://www.kdnuggets.com/?s= | priority:0 description:course social
-engin-179 | archive.org | https://archive.org/search.php?query= | priority:0 description:all
+engin-179 | archive.org | https://archive.org/search.php?query= | priority:5 description:all talk star
 engin-180 | techcrunch | http://techcrunch.com/search/ | priority:0 description:news
 engin-181 | itjuzi | https://www.itjuzi.com/search?key= | priority:5 description:organization finance
 engin-182 | bigdatauniversity | http://bigdatauniversity.com/?s= | priority:5 description:course
@@ -287,7 +287,7 @@ engin-286 | flickr | https://www.flickr.com/search/?q= | priority:0 description:
 engin-287 | artron | http://artso.artron.net/auction/search_auction.php?keyword= | priority:0 description:art
 engin-288 | artnet | http://www.artnet.com/search/artworks/?q= | priority:0 description:art
 engin-292 | ask.com | http://www.ask.com/web?q= | priority:0 description:all
-engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:6 description:social image star
+engin-295 | pinterest | https://www.pinterest.com/search/pins/?q= | priority:6 description:social image
 engin-296 | vk.com | http://vk.com/search?c%5Bq%5D=%s&c%5Bsection%5D=auto | priority:5 description:social
 engin-299 | jd.com | http://search.jd.com/Search?keyword= | priority:0 description:product
 engin-300 | ebay | http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw= | priority:0 description:product
@@ -578,3 +578,4 @@ engin-587 | tagboard | https://tagboard.com/%s/search | priority:8 description:s
 engin-588 | zeef | https://zeef.com/?query=%s&in=all | priority:8 description:all project star
 engin-589 | gdcvault | http://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=%s&conference_id= | priority:8 description:star talk ppt
 engin-590 | foxebook | http://www.foxebook.net/search/%s | priority:3 description:book
+engin-591 | gdc.archive | https://archive.org/details/@snicol?tab=uploads&sort=titleSorter&and[]=%s | priority:8 description:talk

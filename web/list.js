@@ -807,6 +807,8 @@ function chanageLinkColor(obj, color, fontSize) {
 }
 
 function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab, isTag, fileName, log) {
+    //console.log('queryUrlFromServer--->', searchText);
+
     $.post("/queryUrl", {text : text , searchText : searchText, url : url, module : module, library : library, rID : rid, resourceType: resourceType, user : user_name, isTag : isTag, fileName : fileName}, function(data){
         console.log('queryUrlFromServer--->', data);
         var urls = null;

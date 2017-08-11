@@ -20,6 +20,7 @@ from record import ReferenceRecord
 from record import PaperRecord
 from record import ContentRecord
 from record import EnginRecord
+from record import Tag
 import time, datetime
 import feedparser
 import urllib
@@ -895,9 +896,37 @@ class Utils:
             url += query_text
         return url
 
+
+    def getValueOrTextCheck(self, text):
+        if text.find('(') != -1 and text.find(')') != -1:
+            return True
+        return False
+
+    def getValueOrTextSplit(self, text):
+        value = text[text.find('(') + 1 :].strip()
+        value = value[0 : value.find(')')].strip()
+        newText = text[0 : text.find('(')].strip() 
+        return newText, value
+
+    def getValueOrText(self, text, returnType='text'):
+        if self.getValueOrTextCheck(text):
+            #print 'text:' + text + ' accountTag:' + str(accountTag) + ' returnType:' + returnType + '<br>'
+            newText, value = self.getValueOrTextSplit(text)
+            if returnType == 'text':
+                #print newText + '<br>'
+                return newText
+            elif returnType == 'value':
+                #print value + '<br>'
+                return value
+        elif self.tag.account_tag_alias.has_key(text):
+                return self.tag.account_tag_alias[text].strip()
+
+        return text
+
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style='', script='', showText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
+    def enhancedLink(self, url, text, aid='', style='', script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
+
         url = url.strip()
         user_log_js = ''
         query_url_js = ''
@@ -905,11 +934,20 @@ class Utils:
         rid = rid.strip()
         text = text.replace('"', '').replace("'", '')
         #text = self.clearHtmlTag(text).replace('\n', '')
-        send_text = self.clearHtmlTag(text).replace('\n', '')
+
+        if originText == '':
+            originText = text
+
+        #if originText.find('(') != -1:
+        #    print originText
+        #    print 'dialogMode:' + str(dialogMode)
+
+        send_text = self.clearHtmlTag(originText).replace('\n', '')
         if send_text.find('<') != -1:
             send_text = self.clearHtmlTag(send_text)
         if searchText == '':
             searchText = send_text
+
         newTabArgs = 'false'
         isTagArgs = 'false'
         islog = 'true'
@@ -937,8 +975,6 @@ class Utils:
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
 
-        
-            
         if url.startswith('http') == False and url != '':
             #js = "$.post('/exec', {command : 'open', fileName : '" + url + "'}, function(data){});"
             cmd = 'open'

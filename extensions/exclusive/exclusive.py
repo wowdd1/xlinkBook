@@ -27,7 +27,7 @@ class Exclusive(BaseExtension):
             key = fileName[fileName.rfind('/') + 1 :]
             print db + ' ' + key
             #return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + title.replace('...', '') + '&column=1'
-            return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1'
+            return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1&enginType='  + Config.recommend_engin_type
         else:
             title = title.replace('%20', ' ')
             desc = 'engintype:' + title + ' '
