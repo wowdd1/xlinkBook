@@ -232,8 +232,14 @@ function search(inputid,optionid){
         exclusive('exclusive', input.value, '', true, '', fileName, '', engin_args, false);
 
     } else {
-        window.open(select.value + input.value);
-        userlog(select[select.selectedIndex].text, select.value + input.value, 'searchbox', fileName, '', input.value, '');
+        url = select.value
+        if (url.indexOf("%s") != -1) {
+            url = url.replace("%s", input.value);
+        } else {
+            url = select.value + input.value;
+        }
+        window.open(url);
+        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
     }
 }
 
