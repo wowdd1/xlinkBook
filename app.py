@@ -515,6 +515,8 @@ def handleQueryUrl():
                 
                 count = 0
                 #print  resultDict
+                value = utils.getValueOrText(request.form['originText'], returnType='value')
+
                 for k, v in resultDict.items():
                     count += 1
 
@@ -528,11 +530,44 @@ def handleQueryUrl():
                     if count % 5 == 0 and count > 0 and len(resultDict) != 5:
                         result += '<br>'
                     if count >= Config.recommend_engin_num_dialog:
-                        break
+                        break                    
                 #print result
                 if len(Config.command_for_dialog) > 0:
                     library = os.getcwd() + '/db/library/' + Config.default_library;
                     result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'])
+                #print request.form['originText']
+                if utils.getValueOrTextCheck(request.form['originText']):
+                    #print utils.getValueOrText(request.form['originText'], returnType='value')
+                    valueList = [value]
+                    text = utils.getValueOrText(request.form['searchText'], returnType='text')
+                    if value.find('+') != -1:
+                        valueList = value.split('+')
+                    result += '<br>'
+                    count = 0
+                    for v in valueList:
+                        count += 1
+                        if utils.isUrlFormat(v):
+                            if v.startswith('http') == False:
+                                v = 'http://' + v
+                            result += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                        elif utils.getValueOrTextCheck(v):
+                            subValue = utils.getValueOrText(v, returnType='value')
+                            subText = utils.getValueOrText(v, returnType='text')
+                            if utils.isUrlFormat(subValue):
+                                if subValue.startswith('http') == False:
+                                    subValue = 'http://' + subValue
+                                if Config.website_icons.has_key(subText.strip().lower()):
+                                    iconHtml = utils.getIconHtml(subText)
+                                    result += utils.enhancedLink(subValue, text, showText=iconHtml, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                else:
+                                    result += utils.enhancedLink(subValue, subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                            else:
+                                result += '<font style="color:#002244; font-size: 9pt">' + subText + '</font>'
+
+                        else:
+                            result += '<font style="color:#002244; font-size: 9pt">' + v + '</font>'
+                        if len(valueList) > 1 and count != len(valueList):
+                            result += '&nbsp;'
                 result = str(count) + '#' + result
     else:
         resultDict = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])

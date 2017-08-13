@@ -293,7 +293,9 @@ class Config():
     enable_website_icon = True
     website_icons = {'.pdf' : 'https://cdn4.iconfinder.com/data/icons/CS5/128/ACP_PDF%202_file_document.png',\
                  '.dir' : 'http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg',\
+                 'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'http://vintaytime.com/wp-content/uploads/2017/02/url-shortener-icon.png',\
+                 'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
                  'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'amazon' : 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUqAAAAJGFmYjUxMmQ3LWUyNDUtNGJmMy04Nzc4LWRmYzE1YTExMDY2YQ.png',\
                  'csdn' : 'http://a2.mzstatic.com/us/r30/Purple71/v4/99/61/36/996136cc-f759-5c0c-4531-ee0c6fec786a/icon175x175.png',\

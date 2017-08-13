@@ -182,16 +182,18 @@ class History(BaseExtension):
         if jobj.has_key('url'):
             url = jobj['url']
 
-        title = self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords)
         #if self.tag.account_tag_alias.has_key(jobj['title'].strip()):
         #    title = self.tag.account_tag_alias[jobj['title'].strip()]
 
         title = self.utils.getValueOrText(jobj['title'].strip(), returnType='text')
 
+        ftitle = self.utils.formatTitle(title, Config.smart_link_br_len, keywords)
+
         if url != '':
-            html += '<p>' + self.utils.enhancedLink(url, title, module='history', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
+            #print url + jobj['title']
+            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID) + self.utils.getIconHtml(url, title=jobj['title'])
         else:
-            html += '<p>' + jobj['title'] + ' > '
+            html += '<p>' + title + ' > '
         #if self.existChild(str(jobj['id'])):
         #    html += ' > '
 
@@ -202,7 +204,11 @@ class History(BaseExtension):
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), jobj['title'], url, '-', hidenEnginSection=Config.history_hiden_engin_section)
+
+            if title.find(' - ') != -1:
+                title = title[0 : title.find('-')].strip()
+
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), title, url, '-', hidenEnginSection=Config.history_hiden_engin_section)
 
             descHtml = ''
             #if url != '':
