@@ -908,18 +908,20 @@ class Utils:
 
     def getValueOrTextSplit(self, text):
         value = text[text.find('(') + 1 :].strip()
-        value = value[0 : value.find(')')].strip()
+        value = value[0 : value.rfind(')')].strip()
         newText = text[0 : text.find('(')].strip() 
         if self.isShortUrl(value):
             value = 'http://' + value
         return newText, value
 
     def isUrlFormat(self, text):
-        if text.startswith('http') != -1 or self.isShortUrl(text):
+        if text.startswith('http') or self.isShortUrl(text):
             return True
         return False
         
     def isShortUrl(self, text):
+        if text.find('http') != -1:
+            text = text.replace('http://', '').replace('https://', '')
         if text.startswith('bit.ly') or text.startswith('goo.gl'):
             return True
         return False
@@ -1036,7 +1038,7 @@ class Utils:
         result = ''
         
         if dialogMode:
-            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="' + dialogPlacement + '" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '#' + str(isTag) + '" id="' + aid + '">'
+            result = '<a href="#" class="bind_hover_card" data-toggle="popover" data-placement="' + dialogPlacement + '" data-trigger="hover" data-popover-content="' + rid + '#' + resourceType + '#' + aid + '#' + str(isTag) + '#' + originText + '" id="' + aid + '">'
         else:
             result = '<a target="_blank" href="javascript:void(0);"'
 
@@ -1063,7 +1065,7 @@ class Utils:
             if showText != '':
                 result += showText
             else:
-                result += text
+                result += originText#text
             result += '</a>'
 
         return result
@@ -1086,6 +1088,7 @@ class Utils:
         if title.find(': Amazon.com: Books') != -1:
             title = title.replace(': Amazon.com: Books', '')
             title = title[0 : title.rfind(':')]
+
         if len(title) > br_number:
             at = title.find(' ', br_number)
             if at != -1:
@@ -1499,8 +1502,8 @@ class Utils:
             self.quickSortHelper(alist,first,splitpoint-1, sortType)
             self.quickSortHelper(alist,splitpoint+1,last, sortType)
 
-    def getIconHtml(self, url, width=14, height=12, radius=True):
-        #print 'getIconHtml ' + url
+    def getIconHtml(self, url, title='', width=14, height=12, radius=True):
+        url = url.lower()
         if Config.enable_website_icon == False:
             return ''
         if os.path.isdir(url):
@@ -1511,16 +1514,24 @@ class Utils:
         if url.startswith('http') and url.endswith('btnI=1') == False:
             url = url[0 : url.find('/', url.find('//') + 2)]
 
-        for k, v in Config.website_icons.items():
-            if url.find(k) != -1:
-                src = v
-                break
+        if Config.website_icons.has_key(url):
+            return self.genIconHtml(Config.website_icons[url], radius, width, height)
+        else:
+            if self.isShortUrl(url) and title != '':
+                url = title
+            for k, v in Config.website_icons.items():
+                if url.lower().find(k.lower()) != -1:
+                    src = v
+                    break
+            return self.genIconHtml(src, radius, width, height)
+
+    def genIconHtml(self, src, radius, width, height):
         if src != '':
             if radius:
                 return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '" style="border-radius:10px 10px 10px 10px; opacity:0.7;">'
             else:
                 return ' <img src="' + src + '" width="' + str(width) + '" height="' + str(height) + '">'
-        return ''
+        return ''      
 
     def partition(self, alist,first,last, sortType):
         pivotvalue = alist[first]

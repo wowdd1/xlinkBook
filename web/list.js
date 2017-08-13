@@ -18,8 +18,9 @@ $(function() {
 }); 
 
  
-function title() {  
+function title() {
     return $("[data-toggle='popover']").text;  
+
 }  
 
  
@@ -31,6 +32,7 @@ function content(text, data) {
     resourceType = '';
     aid = '';
     isTag = false;
+    originText = text
     result = content2(content_id, dialog_engin_count, dialog_command_count);
 
     if (data.indexOf('#') > 0) {
@@ -41,10 +43,10 @@ function content(text, data) {
         if (split_data[3] == 'True') {
             isTag = true;
         }
-        
+        originText = split_data[4];
     }
     
-    dialog_args = {type : 'dialog', rID : rid, searchText: text, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args, isTag : isTag};
+    dialog_args = {type : 'dialog', rID : rid, searchText: text, originText : originText, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args, isTag : isTag};
     $.post('/queryUrl', dialog_args, function(data) {
         if (data.indexOf('#') > 0 && data.substring(0, data.indexOf('#')).indexOf('color:') < 0) {
             engin_count = parseInt(data.substring(0, data.indexOf('#')));
