@@ -517,6 +517,12 @@ def handleQueryUrl():
                 #print  resultDict
                 value = utils.getValueOrText(request.form['originText'], returnType='value')
 
+                searchHtml = ''
+                commandHtml = ''
+                infoHtml = ''
+                infoLen = 0
+                infoBR = False
+
                 for k, v in resultDict.items():
                     count += 1
 
@@ -526,15 +532,15 @@ def handleQueryUrl():
                     #if k == 'glucky':
                     #    print 'ccc1111: ' + request.form['searchText']
                     #    print 'ccc1111: ' + utils.getValueOrText(request.form['searchText'], returnType='value')
-                    result += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
+                    searchHtml += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
                     if count % 5 == 0 and count > 0 and len(resultDict) != 5:
-                        result += '<br>'
+                        searchHtml += '<br>'
                     if count >= Config.recommend_engin_num_dialog:
                         break                    
                 #print result
                 if len(Config.command_for_dialog) > 0:
                     library = os.getcwd() + '/db/library/' + Config.default_library;
-                    result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'])
+                    commandHtml += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'])
                 #print request.form['originText']
                 if utils.getValueOrTextCheck(request.form['originText']):
                     #print utils.getValueOrText(request.form['originText'], returnType='value')
@@ -542,14 +548,15 @@ def handleQueryUrl():
                     text = utils.getValueOrText(request.form['searchText'], returnType='text')
                     if value.find('+') != -1:
                         valueList = value.split('+')
-                    result += '<br>'
+                    infoHtml += '<br>'
                     count = 0
                     for v in valueList:
                         count += 1
                         if utils.isUrlFormat(v):
                             if v.startswith('http') == False:
                                 v = 'http://' + v
-                            result += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                            infoHtml += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                            infoLen += len(text)
                         elif utils.getValueOrTextCheck(v):
                             subValue = utils.getValueOrText(v, returnType='value')
                             subText = utils.getValueOrText(v, returnType='text')
@@ -558,16 +565,49 @@ def handleQueryUrl():
                                     subValue = 'http://' + subValue
                                 if Config.website_icons.has_key(subText.strip().lower()):
                                     iconHtml = utils.getIconHtml(subText)
-                                    result += utils.enhancedLink(subValue, text, showText=iconHtml, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                    infoHtml += utils.enhancedLink(subValue, text, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                    infoLen += 1
+
                                 else:
-                                    result += utils.enhancedLink(subValue, subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                    infoHtml += utils.enhancedLink(subValue, subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                    infoLen += len(subText)
                             else:
-                                result += '<font style="color:#002244; font-size: 9pt">' + subText + '</font>'
+                                if utils.isAccountTag(subText, tag.tag_list_account):
+                                    url = tag.tag_list_account[subText + ':']
+                                    if url.find('%s') != -1:
+                                        url = url.replace('%s', subValue)
+                                    else:
+                                        url = url + subValue
+                                    if Config.website_icons.has_key(subText.strip().lower()):
+                                        iconHtml = utils.getIconHtml(subText)
+                                        infoHtml += utils.enhancedLink(url, text, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                        infoLen += 1
+
+                                    else:
+                                        infoHtml += utils.enhancedLink(url, subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                        infoLen += len(subText)
+                                else:
+                                    infoHtml += utils.enhancedLink(utils.bestMatchEnginUrl(subValue, resourceType=request.form['resourceType']), subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                    infoLen += len(subText)
+
 
                         else:
-                            result += '<font style="color:#002244; font-size: 9pt">' + v + '</font>'
+                            infoHtml += '<font style="color:#002244; font-size: 9pt">' + v + '</font>'
+                            infoLen += len(v)
+
                         if len(valueList) > 1 and count != len(valueList):
-                            result += '&nbsp;'
+                            infoHtml += '&nbsp;'
+                            infoLen += 1
+                        if infoLen - 34 > 0:
+                            infoHtml += '<br>'
+                            infoBR = True
+                            infoLen -= 34
+
+                if infoBR:
+                    result = infoHtml + commandHtml 
+                else:
+                    result = searchHtml + commandHtml + infoHtml
+
                 result = str(count) + '#' + result
     else:
         resultDict = utils.clientQueryEnginUrl(request.form['url'], request.form['searchText'], request.form['resourceType'], request.form['module'])
