@@ -22,6 +22,7 @@ class Filefinder(BaseExtension):
             return ''
         rID = form_dict['rID']
         fileName = form_dict['fileName'].encode('utf8')
+        url = form_dict['url'].replace('#space', ' ')
         nocache = True
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
@@ -43,7 +44,7 @@ class Filefinder(BaseExtension):
         if form_dict.has_key('selection') and form_dict['selection'] != '':
             rTitle = form_dict['selection'].strip()
         
-        localFiles = self.genFileList(self.getMatchFiles(rTitle.strip()).split('\n'), divID=divID, rID=rID)
+        localFiles = self.genFileList(self.getMatchFiles(rTitle.strip(), url=url).split('\n'), divID=divID, rID=rID, url=url)
         if localFiles != '':
             if form_dict.has_key('extension_count') and int(form_dict['extension_count']) > 12:
                 html += '<br>'
@@ -51,11 +52,12 @@ class Filefinder(BaseExtension):
 
         
         count = 0
-        for alias in aliasList:
-            count += 1
-            result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID)
-            if result != '':
-                html += alias + ':<br>' + result
+        if url != '' and self.isDir(url) == False:
+            for alias in aliasList:
+                count += 1
+                result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID)
+                if result != '':
+                    html += alias + ':<br>' + result
 
         if fileName.find('exclusive') != -1:
             keyword = rTitle.replace('%20', ' ').strip()
@@ -110,11 +112,24 @@ class Filefinder(BaseExtension):
 
         return aliasList
 
-    def getMatchFiles(self, title):
+    def isDir(self, url):
+        if url.startswith('/User') and url[url.rfind('/') :].find('.') == -1:
+            return True
+        return False
+
+    def getMatchFiles(self, title, url='', paths=Config.filefinder_dirs):
         output = ''
-        for path in Config.filefinder_dirs:
+        cmd = ''
+        
+        if url != '' and self.isDir(url):
+            url = url.replace(' ', '\ ').replace('%20', '\ ')
+            paths = [url]
+        for path in paths:
             if path != '':
-                cmd = 'find ' + path + ' -iname "*' + title.replace('"', '').replace('%20', ' ').replace(' ', '*') + '*"'
+                if url != '' and self.isDir(url):
+                    cmd = 'find ' + path + ' -iname "*"'
+                else:
+                    cmd = 'find ' + path + ' -iname "*' + title.replace('"', '').replace('%20', ' ').replace(' ', '*') + '*"'
                 print 'cmd ' + cmd 
                 try:
                     output += subprocess.check_output(cmd, shell=True)
@@ -203,7 +218,7 @@ class Filefinder(BaseExtension):
 
 
 
-    def genFileList(self, dataList, divID='', rID=''):
+    def genFileList(self, dataList, divID='', rID='', url=''):
         if len(dataList) == 0:
             return ''
         print 'genFileList ' + ''.join(dataList)
@@ -214,6 +229,10 @@ class Filefinder(BaseExtension):
             for line in dataList:
 
                 if line != '' and (line.find('exclusive') == -1 or line.find('.') != -1):
+                    if url != '' and line.strip().replace(' ', '%20') == url.strip():
+                        continue
+                    if line.endswith('.DS_Store'):
+                        continue
                     count += 1
                     html += '<li><span>' + str(count) + '.</span>'
                     url = line

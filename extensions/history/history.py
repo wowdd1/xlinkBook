@@ -61,6 +61,13 @@ class History(BaseExtension):
         deleteButton = '&nbsp;&nbsp;<a target="_blank" href="javascript:void(0);" onclick="' + deleteScript + '" style="color:#999966; font-size: 10pt;"><image src="http://findicons.com/files/icons/766/base_software/128/deletered.png" width="14" height="12"></image></a>'    
         return deleteButton
 
+    def getClickCount(self, record):
+        if record.line.find('clickcount:') != -1:
+            return self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'clickcount'}).strip()
+        else:
+            return ''
+
+
     def excute(self, form_dict):
         self.form_dict = form_dict
         #print form_dict
@@ -75,18 +82,52 @@ class History(BaseExtension):
         if self.existHistoryFile(form_dict['originFileName'].strip()):
             historyFilename = form_dict['originFileName'][form_dict['originFileName'].rfind('/') + 1 :].strip()
             historyFile = 'extensions/history/data/' + historyFilename + '-history'
-            #print historyFile
+            print historyFile
             f = open(historyFile, 'r+')
             rDict = {}
             all_lines = f.readlines()
             for line in all_lines:
                 r = Record(line)
-                if r.valid(r.line) == False:
+                if r.valid(line) == False:
                     #print r.line
                     continue
  
                 if r.get_url().strip() != '':
-                    rDict[r.get_url().strip()] = r
+                    key = r.get_url().strip()
+
+                    if rDict.has_key(key):
+
+                        cacheRecord = rDict[r.get_url().strip()]
+
+                        desc = self.getClickCount(cacheRecord)
+
+                        cacheLine = cacheRecord.line
+
+                        #desc = str(int(newLine[newLine.rfind(':')+1 :].replace('\n', '').strip()))
+
+                        if line.find('clickcount:') != -1:
+                            desc2 = str(int(self.getClickCount(r)))
+                            if int(desc2) > int(desc):
+                                desc = desc2
+
+                        desc = str(int(desc) + 1)
+
+                        preStr = cacheLine[0: cacheLine.rfind('clickcount:')].strip()
+                        preStr2 = r.line[0: r.line.rfind('clickcount:')].strip()
+
+                        if len(preStr2) > len(preStr):
+                            preStr = preStr2
+
+                        #print newLine
+                        #print desc
+                        rDict[r.get_url().strip()] = Record(preStr + ' clickcount:' + desc + '\n') 
+                    else:
+                        if line.find('clickcount:') != -1:
+                            rDict[r.get_url().strip()] = Record(line)
+                        else:
+                            preStr = line[0: line.rfind('clickcount:')].strip()
+
+                            rDict[r.get_url().strip()] = Record(preStr + ' clickcount:1' + '\n' )
 
             rList = []
             #print rDict
@@ -96,22 +137,56 @@ class History(BaseExtension):
             else:
                 f.close()
 
-            f = open(historyFile, 'r+')
+            f = None
             for k, v in rDict.items():
-                #print v.line
+                #print '---' + v.line
 
-                if v.line.strip() != '' and v.valid(r.line):
+                if v.line.strip() != '' and v.valid(v.line):
                     if len(rDict) != len(all_lines):
+                        if f == None:
+                            #print historyFile
+                            f = open(historyFile, 'w')
+                        #print v.line
+
                         f.write(v.line)
                     if v.get_id().strip() == form_dict['rID'].strip() or (v.get_id().strip().startswith('loop') and v.get_id().strip().find(form_dict['rID'].strip()) != -1):
                         rList.append(v)
+                else:
+                    print v.line
 
-            f.close()
+            if f != None:
+                f.close()
 
             #print rList
             #f = open('extensions/history/data/' + historyFilename, 'r')
             if len(rList) > 0:
-                rList = sorted(rList, key=lambda d: d.get_url().strip()[0 : 20], reverse=True)
+                if Config.hidtory_sort_type == 0:
+                    rList = sorted(rList, key=lambda d: int(self.getClickCount(d)), reverse=False)
+                    allSubList = []
+                    clickCount = self.getClickCount(rList[0])
+                    subList = []
+                    for item in rList:
+                        clickCount2 = self.getClickCount(item)
+                        if clickCount != clickCount2:
+                            clickCount = clickCount2
+                            allSubList.append(subList)
+                            subList = []
+                        subList.append(item)
+                    if len(subList) > 0:
+                        allSubList.append(subList)
+                    
+                    rList = []
+                    for subList in allSubList:
+                        rList += sorted(subList, key=lambda d: d.get_url().strip()[0 : 20], reverse=True)
+ 
+                elif Config.hidtory_sort_type == 1:
+                    rList = sorted(rList, key=lambda d: d.get_url().strip()[0 : 20], reverse=True)
+                elif Config.hidtory_sort_type == 2:
+                    rList = sorted(rList, key=lambda d: d.get_title().strip()[0 : 20], reverse=True)
+                else:
+                    rList = sorted(rList, key=lambda d: d.get_id().strip(), reverse=True)
+
+
 
                 if self.needBR():
                     html += '<br>'
@@ -139,8 +214,11 @@ class History(BaseExtension):
                         jobj_record['id'] = rID + '-' + str(count)
                         jobj_record['title'] = title
                         jobj_record['url'] = item.get_url().strip()
-                        appendHtml = self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '&nbsp;'
+                        jobj_record['count'] = self.getClickCount(item)
+                        jobj_record['desc'] = item.get_describe()
 
+                        appendHtml = self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '&nbsp;'
+                        #print jobj_record
                         html += self.gen_item(rID, divID, count, jobj_record, Config.more_button_for_history_module, form_dict['originFileName'], appendHtml=appendHtml)
 
                         '''
@@ -191,7 +269,13 @@ class History(BaseExtension):
 
         if url != '':
             #print url + jobj['title']
-            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID) + self.utils.getIconHtml(url, title=jobj['title'])
+            showText = ftitle
+            if Config.history_show_click_count and jobj.has_key('count'):
+                clickCount = jobj['count']
+                if int(clickCount) > 1:
+                    showText = ftitle + ' (' + clickCount + ')'
+
+            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, showText=showText) + self.utils.getIconHtml(url, title=jobj['title'])
         else:
             html += '<p>' + title + ' > '
         #if self.existChild(str(jobj['id'])):
@@ -204,13 +288,18 @@ class History(BaseExtension):
             ref_divID += '-' + str(count)
             linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
+            originTitle = title
 
             if title.find(' - ') != -1:
                 title = title[0 : title.find('-')].strip()
 
-            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), title, url, '-', hidenEnginSection=Config.history_hiden_engin_section)
+            script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), title, url, originTitle, hidenEnginSection=Config.history_hiden_engin_section)
 
             descHtml = ''
+
+            if jobj.has_key('desc') and jobj['desc'].strip() != '':
+                #print jobj['desc']
+                descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list)
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
             #print 'descHtml:' + descHtml

@@ -89,8 +89,8 @@ class Utils:
 
     def getExtensions(self):
         extensions = []
-        if os.path.exists('db/metadata/engin_extension'):
-            f = open('db/metadata/engin_extension', 'rU')
+        if os.path.exists(Config.engin_extension_file):
+            f = open(Config.engin_extension_file, 'rU')
             for line in f.readlines():
                 if line.strip() != '':
                     extensions.append(line.strip())
@@ -110,8 +110,8 @@ class Utils:
         #print self.alexa_dict
 
     def loadEngins(self):
-        if len(self.search_engin_dict) == 0 and os.path.exists('db/metadata/engin_list'):
-            f = open('db/metadata/engin_list','rU')
+        if len(self.search_engin_dict) == 0 and os.path.exists(Config.engin_list_file):
+            f = open(Config.engin_list_file,'rU')
             all_lines = f.readlines()
             for line in all_lines:
                 record = EnginRecord(line)
@@ -134,16 +134,16 @@ class Utils:
                         
             
             self.search_engin_type_2_engin_title_dict['star'] = self.sortEnginList(self.search_engin_type_2_engin_title_dict['star'])
-        if len(self.search_engin_type) == 0 and os.path.exists('db/metadata/engin_type'):
-            f = open('db/metadata/engin_type','rU')
+        if len(self.search_engin_type) == 0 and os.path.exists(Config.engin_type_file):
+            f = open(Config.engin_type_file,'rU')
             all_lines = f.readlines()
             for line in all_lines:
                 if line.startswith('#'):
                     continue
                 if line.strip() != '':
                     self.search_engin_type.append(line.strip().strip())
-        if len(self.engin_extension) == 0 and os.path.exists('db/metadata/engin_extension'):
-            f = open('db/metadata/engin_extension','rU')
+        if len(self.engin_extension) == 0 and os.path.exists(Config.engin_extension_file):
+            f = open(Config.engin_extension_file,'rU')
             all_lines = f.readlines()
             for line in all_lines:
                 if line.startswith('#'):
@@ -478,8 +478,8 @@ class Utils:
             return ' <a href="' + self.getEnginUrlEx(engin, keyword) + '" target="_blank"> <font size="2" color="#999966">' + engin + '</font></a>'
 
     def getRecommendType(self, fileName):
-        if os.path.exists('db/metadata/engin_type'):
-            f = open('db/metadata/engin_type', 'rU')
+        if os.path.exists(Config.engin_type_file):
+            f = open(Config.engin_type_file, 'rU')
             engin_types = []
             for line in f.readlines():
                 if line.startswith('#') or line.strip() == '':
@@ -563,10 +563,13 @@ class Utils:
                     if sort:
                         self.search_engin_type_2_engin_title_dict[key] = self.sortEnginList(self.search_engin_type_2_engin_title_dict[key])
 
-            if len(self.search_engin_type_2_engin_title_dict[key]) == 0 and recommend:
+            if self.search_engin_type_2_engin_title_dict.has_key(key) and len(self.search_engin_type_2_engin_title_dict[key]) == 0 and recommend:
                 self.search_engin_type_2_engin_title_dict[key] = self.recommendEngins(folder)
             
-            return self.search_engin_type_2_engin_title_dict[key] 
+            if self.search_engin_type_2_engin_title_dict.has_key(key):
+                return self.search_engin_type_2_engin_title_dict[key] 
+            else:
+                return []
         else:
             return engins.split(' ')
 
@@ -591,8 +594,7 @@ class Utils:
                         engin_list.append(record.get_title().strip())
         if sort:
             return self.sortEnginList(engin_list)
-        else:
-            return engin_list
+        return engin_list
 
     def sortEnginList(self, engin_list):
         return sorted(engin_list, key=lambda engin:self.search_engin_dict[engin].get_priority(), reverse=True)
@@ -827,7 +829,7 @@ class Utils:
                 result.append(e)
         return result
 
-    def clientQueryEnginUrl2(self, text, resourceType=''):
+    def clientQueryEnginUrl2(self, text, resourceType='', enginArgs=''):
         result = {}
         engins = []
         if resourceType != '' and Config.smart_engin_for_tag.has_key(resourceType):
@@ -849,7 +851,10 @@ class Utils:
                 if resourceType != '' and Config.recommend_engin_by_tag and ' '.join(self.search_engin_type).find(resourceType) != -1:
                     engins = self.getEnginList('d:' + resourceType, sort=True)
                 else:
-                    engins = self.getEnginList('d:star', sort=True)
+                    if enginArgs != '' and enginArgs.startswith('d:'):
+                        engins = self.getEnginList(enginArgs, sort=True)
+                    else:
+                        engins = self.getEnginList('d:star', sort=True)
             self.dialog_engin_cache = engins.append('glucky');
 
         for engin in engins:
@@ -868,6 +873,58 @@ class Utils:
                 dirs += self.clientQueryDirs(dir_path)
         return dirs
 
+    def genTagLink(self, text, module, library, rid, resourceType, dialogMode, aid, crossref='', accountTag='', suffix=':', searchText=''):
+        #if crossref:
+        #    dialogMode = False
+        return self.enhancedLink('', '<font color="#66CCFF">' + text + '</font>', module=module, library=library, fileName=library, rid=rid, resourceType=resourceType, urlFromServer=True, dialogMode=dialogMode, aid=aid, isTag=True, log=False, searchText=searchText) + suffix
+
+
+    smartLinkTagCache = {}
+    def isSmartLinkTag(self, tag, list_smart_link):
+        if tag == '':
+            return False
+        prefix = ''
+        if tag.find(':') != -1:
+            prefix = tag[0 : tag.find(':') + 1].strip()
+        else:
+            prefix += tag + ':'
+
+        if self.smartLinkTagCache.has_key(prefix):
+            #print 'isSmartLinkTag cache'
+
+            return True
+
+
+        reslut = ' '.join(list_smart_link).find(prefix) != -1
+
+        if reslut:
+            self.smartLinkTagCache[prefix] = ''
+
+        return reslut
+
+
+    directLinkTagCache = {}
+    def isDirectLinkTag(self, tag, list_direct_link):
+
+        if tag == '':
+            return False
+        prefix = ''
+        if tag.find(':') != -1:
+            prefix = tag[0 : tag.find(':') + 1].strip()
+        else:
+            prefix += tag + ':'
+
+        if self.directLinkTagCache.has_key(prefix):
+            #print 'isDirectLinkTag cache'
+            return True
+
+        result = ' '.join(list_direct_link).find(prefix) != -1
+
+        if result:
+            self.directLinkTagCache[prefix] = ''
+        return result
+
+    accountTagCache = {}
     def isAccountTag(self, tag, tag_list_account):
         #print tag + '<br>'
         #if tag.strip().startswith('archiv'):
@@ -880,7 +937,17 @@ class Utils:
         else:
             prefix += tag + ':'
 
-        return ' '.join(tag_list_account.keys()).find(prefix) != -1
+        if self.accountTagCache.has_key(prefix):
+            #print 'isAccountTag cache'
+
+            return True
+
+        result = ' '.join(tag_list_account.keys()).find(prefix) != -1
+
+        if result:
+            self.accountTagCache[prefix] = ''
+
+        return result
 
 
     def accountMode(self, tag_list_account, tag_list_account_mode, engin, resourceType):
@@ -1184,7 +1251,7 @@ class Utils:
         hidenEngin = 'false'
         if hidenEnginSection:
             hidenEngin = 'true'
-        script += "appendContent('" + content_divID + "','" + id + "','" + title.strip().replace(" ", '%20') + "','" + url+ "','" + info + "'," + hidenEngin + ");"
+        script += "appendContent('" + content_divID + "','" + id + "','" + title.strip().replace(" ", '%20') + "','" + url.strip().replace(" ", '%20') + "','" + info + "'," + hidenEngin + ");"
         return script
 
     def genMoreEnginScriptBox(sefl, linkID, content_divID, boxid):
@@ -1260,20 +1327,139 @@ class Utils:
         return url
 
 
-    def genDescHtml(self, desc, titleLen, keywordList, library=''):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True):
         start = 0
         html = '<br>'
         desc = ' ' + desc
-        while True:
-            end = self.next_pos(desc, start, titleLen, keywordList, library=library)
-            if end < len(desc):
-                html += self.color_keyword(desc[start : end], keywordList) + '<br>'
-                start = end
-            else:
-                html += self.color_keyword(desc[start : ], keywordList) + '<br>'
-                break
+        if genLink:
+            while True:
+                end = self.next_pos(desc, start, 10000, keywordList, library=library)
+                if end < len(desc):
+                    print desc[start : end].strip()
+                    html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library), keywordList) + '<br>'
+                    start = end
+                else:
+
+                    html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library), keywordList) + '<br>'
+                    break
+        else:
+            while True:
+                end = self.next_pos(desc, start, titleLen, keywordList, library=library)
+                if end < len(desc):
+                    html += self.color_keyword(desc[start : end], keywordList) + '<br>'
+                    start = end
+                else:
+                    html += self.color_keyword(desc[start : ], keywordList) + '<br>'
+                    break
 
         return html
+
+
+    def getLinkShowText(self, accountTag, originText, tagStr, linkCount, column_num='3'):
+        text = self.getValueOrText(originText, returnType='text')
+        col = int(column_num)
+        font_size = 0
+        if column_num == '1':
+            font_size = '10'
+        elif column_num == '2':
+            font_size = '9'
+        else:
+            font_size = '8'
+            if linkCount < 5:
+                font_size = '11'
+            elif linkCount < 7:
+                font_size = '10'
+            elif linkCount < 8:
+                font_size = '9'
+
+        if accountTag:
+            prefix = '@'
+            if tagStr == 'goodreads':
+                text = text[text.find('-') + 1 :]
+            if tagStr == 'slack':
+                prefix = '#'
+            #if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
+            if text.find('/') != -1:
+                text = text[text.rfind('/') + 1 : ]
+
+            if text.find(prefix) != -1:
+                text = text[text.find(prefix) + 1 :]
+
+            if self.tag.account_tag_alias.has_key(text):
+                text = self.tag.account_tag_alias[text]
+            else:
+                text = text[0: self.getCutLen(tagStr, text)]
+            if text.startswith(prefix) == False:
+                text = prefix + text
+            return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt;"><i>' + text + '</i></font>'
+        else:
+            #return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
+             
+            if Config.backgrounds[Config.background] != '':
+                return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
+            else:
+                return '<font style="font-size:' + str(font_size) + 'pt;">' + text + '</font>'
+            
+        return text
+
+    def getCutLen(self, tagStr, text):
+        if self.getValueOrTextCheck(text):
+            text = self.getValueOrText(text, returnType='text')
+        if tagStr == 'github':
+            return len(text)
+        elif len(text) > 14:
+            return 14
+        else:
+            return len(text)
+
+    def genDescLinkHtml(self, text, titleLenm, library=''):
+        tagStr = text[0: text.find(':') + 1].strip()
+        tagValue =  text[text.find(':') + 1 : ].strip()
+
+        html = ''
+        count = 0
+
+        if tagStr == 'website:':
+            tagValues = tagValue.split(',')
+            for item in tagValues:
+                count += 1
+                shwoText = self.getLinkShowText(False, item, tagStr.replace(':', ''), len(tagValues))
+
+                if self.getValueOrTextCheck(item):
+                    itemText = self.getValueOrText(item, returnType='text')
+                    print itemText
+                    itemValue = self.getValueOrText(item, returnType='value')
+                    html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid='', resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                else:
+                    url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
+                    html += self.enhancedLink(url, item, module='history', library=library, rid='', resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                if count != len(tagValues):
+                    html += ', '
+        elif self.isAccountTag(tagStr, self.tag.tag_list_account):
+            url = ''
+            if self.tag.tag_list_account.has_key(tagStr):
+                url = self.tag.tag_list_account[tagStr]
+            else:
+                url = utils.getEnginUrl('glucky')
+
+            tagValues = tagValue.split(',')
+            for item in tagValues:
+                count += 1
+                shwoText = self.getLinkShowText(True, item, tagStr.replace(':', ''), len(tagValues))
+                if self.getValueOrTextCheck(item):
+                    itemText = self.getValueOrText(item, returnType='text')
+                    print itemText
+                    itemValue = self.toQueryUrl(url, self.getValueOrText(item, returnType='value'))
+                    html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid='', resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)                  
+                else:
+                    url = self.toQueryUrl(url, item)
+                    html += self.enhancedLink(url, item, module='history', library=library, rid='', resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                if count != len(tagValues):
+                    html += ' '
+        else:
+            return ' ' + tagStr + tagValue
+
+        return ' ' + tagStr + html
 
     def genCrossrefHtml(self, rid, aid, tag, content, library, split_char=','):
         html = ''

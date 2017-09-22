@@ -541,7 +541,7 @@ engin-550 | newrank | http://www.newrank.cn/public/info/search.html?value=%s&isB
 engin-551 | fb-pages | https://www.facebook.com/search/str/%s/keywords_pages | priority:8  description:social news
 engin-552 | airbnb | https://www.airbnb.com/s/ | priority:6 description:business
 engin-553 | angel | https://angel.co/%s | priority:4 description:job
-engin-554 | panopto | https://www.google.com/search?q=panopto+%s | priority:8 description:course star
+engin-554 | panopto | https://www.google.com/search?q=panopto+%s | priority:8 description:course
 engin-555 | panduoduo | http://www.panduoduo.net/s/name/ | priority:4 description:book cloud
 engin-556 | universe | https://www.universe.com/explore?query=%s | priority:4 description:event
 engin-557 | memect.com | http://ml.memect.com/search/?q=%s | priority:6 description:news
@@ -575,7 +575,19 @@ engin-584 | bdyunso | http://www.bdyunso.com/search-all-%s-1/ | priority:5 descr
 engin-585 | wowenda | http://wowenda.com/search.asp?wd= | priority:5 description:cloud
 engin-586 | bit.baidu | http://bit.baidu.com/course/search.html?keywords=%s | priority:6 description:course
 engin-587 | tagboard | https://tagboard.com/%s/search | priority:8 description:social
-engin-588 | zeef | https://zeef.com/?query=%s&in=all | priority:8 description:all project star
+engin-588 | zeef | https://zeef.com/?query=%s&in=all | priority:8 description:all project
 engin-589 | gdcvault | http://www.gdcvault.com/search.php#&category=free&firstfocus=&keyword=%s&conference_id= | priority:8 description:star talk ppt
 engin-590 | foxebook | http://www.foxebook.net/search/%s | priority:3 description:book
 engin-591 | gdc.archive | https://archive.org/details/@snicol?tab=uploads&sort=titleSorter&and[]=%s | priority:8 description:talk
+engin-592 | jiqizhixin | https://handbook.jiqizhixin.com/search/%s | priority:8 description:project job
+engin-593 | steam | http://store.steampowered.com/search/?term=%s | priority:8 description:game review
+engin-594 | metacritic | http://www.metacritic.com/search/all/%s/results | priority:8 description:game review
+engin-595 | 58wangpan | http://www.58wangpan.com/search/%s | priority:6 description:cloud
+engin-596 | cs.rin | https://cs.rin.ru/forum/search.php?st=0&sk=t&sd=d&sr=topics&terms=any&sf=titleonly&keywords=%s | priority:8 description:game
+engin-597 | gamefaqs | https://www.gamefaqs.com/search?game=%s | priority:5 description:game
+engin-598 | steamdb | https://steamdb.info/search/?a=app&q=%s | priority:8 description:game
+engin-599 | pcgamingwiki | https://pcgamingwiki.com/w/index.php?search=%s&title=Special%3ASearch | priority:5 description:game
+engin-600 | gad | http://gad.qq.com/search/?key= | priority:5 description:talk develop
+engin-601 | torrentbytes | https://www.torrentbytes.net/browse.php?search=%s&cat=0&sc=3 | priority:8 description:game p2p
+engin-602 | githyp | http://www.githyp.com/?s=%s | priority:8 description:game
+engin-603 | news.baidu | http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%s | priority:4 description:news

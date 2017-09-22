@@ -282,7 +282,7 @@ class Bookmark(BaseExtension):
         if url != '':
             html += '<p>' + self.utils.enhancedLink(url, self.utils.formatTitle(jobj['title'], Config.smart_link_br_len, keywords), module='bookmark', library=orginFilename, rid=rID) + self.utils.getIconHtml(url)
         else:
-            html += '<p>' + jobj['title'] + ' > '
+            html += '<p>' + jobj['title'] +  self.utils.getIconHtml(".dir", radius=False) #' > '
         #if self.existChild(str(jobj['id'])):
         #    html += ' > '
 
