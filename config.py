@@ -14,17 +14,22 @@ class Config():
 
     igon_authorized = True
 
+    engin_list_file = 'db/metadata/engin_list'
+    engin_type_file = 'db/metadata/engin_type'
+    engin_extension_file = 'db/metadata/engin_extension'
+
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'glucky' #'google'
     default_engin_searchbox = 'zhihu'
 
-    igon_log_for_modules = ['history', 'star', 'exclusive', 'content'] #dialog
+    igon_log_for_modules = ['star', 'exclusive', 'content'] #dialog
     more_button_for_history_module = True
 
     smart_engin_lucky_mode_for_account = True
     smart_engin_for_tag_batch_open = False
     smart_engin_for_command_batch_open = ['twitter', 'baidu', 'amazon']
+    max_account_for_tag_batch_open = 10
     
     recommend_engin = True
     recommend_engin_num = 23
@@ -56,7 +61,7 @@ class Config():
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
     command_for_dialog = ['add2library', 'trace', 'kgraph', 'exclusive']
-    command_for_tag_dialog = ['tolist']
+    command_for_tag_dialog = ['tolist', 'merger']
 
     recommend_engin_type_for_dialog = '' #'star' #ref db/metadata/engin_type
 
@@ -138,6 +143,7 @@ class Config():
     #do not show nav links, only show extension links
     extension_mode = False
 
+    #handle by handleQueryNavTab of app.py first
     default_tab = 'history' #'content'
     second_default_tab = 'bookmark'#'figures'
 
@@ -222,6 +228,8 @@ class Config():
     #history
     history_file_path = "/Users/zd/Downloads/chrome_history.json"
     history_hiden_engin_section = True
+    hidtory_sort_type = 0 #0: click count 1: url 2: title
+    history_show_click_count = False
 
     #exclusive
     exclusive_crossref_path = ['db/library']
@@ -255,12 +263,12 @@ class Config():
     convert_output_data_format = ''
     '''
     #'''
-    convert_url_args = '' #'?start=' #'?start=0&tag='
+    convert_url_args = '/default.html?page=' #'?start=' #'?start=0&tag='
     convert_page_step = 1
     convert_page_start = 1
-    convert_page_max = 6
+    convert_page_max = 10
     convert_page_to_end = False
-    convert_tag = 'strong' #"div#title"  # tag#class or tag
+    convert_tag = 'a#PostTitle' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""

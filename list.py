@@ -265,12 +265,11 @@ def needSmartLink(describe):
         return False
     else:
         prefix = describe[0 : describe.find(':') + 1].strip()
-        smart_link_str = ' '.join(tag.get_list_smart_link(source2library(source)))
-        account_str = ' '.join(tag.tag_list_account.keys())
-        if smart_link_str.find(prefix) == -1 and account_str.find(prefix) == -1:
-            return False
-        else:
+
+        if isSmartLinkTag(prefix) or isAccountTag(prefix):
             return True
+        else:
+            return False
 
 def print_with_color(text):
     global color_index
@@ -561,6 +560,8 @@ def build_lines(list_all, file_name):
     engin_list = []
     if engin != '':
         engin_list = utils.getEnginList(engin.strip(), file_name, recommend=Config.recommend_engin)
+        #print engin
+        #print engin_list
         if len(engin_list) > Config.recommend_engin_num:
             engin_list = engin_list[0 : Config.recommend_engin_num]
 
@@ -656,7 +657,7 @@ def build_lines(list_all, file_name):
                                 else:
                                     linkID = 'a-' + ijl;
                                     content_divID = "div-" + ijl
-                                script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), list_all[i][j].get_url().strip(), utils.getEnginUrlOtherInfo(list_all[i][j]), hidenEnginSection=False)
+                                script += utils.genMoreEnginScript(linkID, content_divID, id, title.strip().replace(' ', '%20'), list_all[i][j].get_url().strip(), utils.getEnginUrlOtherInfo(list_all[i][j]), hidenEnginSection=Config.hiden_engins)
 
 
                             if output_with_describe and end < describe:
@@ -1037,6 +1038,12 @@ def smartLink(content, record, containID=''):
         last_content += content.strip()
         return content
 
+def isSmartLinkTag(content):
+    return utils.isSmartLinkTag(content2Tag(content), tag.get_list_smart_link(source2library(source)))
+
+def isDirectLinkTag(content):
+    return utils.isDirectLinkTag(content2Tag(content), tag.tag_list_direct_link)
+
 def isAccountTag(content):
     return utils.isAccountTag(content, tag.tag_list_account)
 
@@ -1069,19 +1076,12 @@ def genAccountHtml(tagStr, record, content, containID=''):
         return ''
 
 
-def isSmartLinkTag(content):
+def content2Tag(content):
     if content.find(':') != -1:
-        prefix = content[0 : content.find(':') + 1].strip()
-        return ' '.join(tag.get_list_smart_link(source2library(source))).find(prefix) != -1
+        return content[0 : content.find(':') + 1].strip()
     else:
-        return False
+        return content
 
-def isDirectLinkTag(content):
-    if content.find(':') != -1:
-        prefix = content[0 : content.find(':') + 1].strip()
-        return ' '.join(tag.tag_list_direct_link).find(prefix) != -1
-    else:
-        return False
 
 def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFromServer=True, accountTag=False, dialogMode=False, containID='', crossref=False):
     global last_content
@@ -1109,7 +1109,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
                 remarkImg = ''
             #if Config.delete_from_char != '' and i.find(Config.delete_from_char) != -1:
             #    i = i[0 : i.find(Config.delete_from_char)].strip()
-            lineLenCount += getCutLen(tag, i.strip())
+            lineLenCount += utils.getCutLen(tag, i.strip())
             if old_i == ret[0].strip():
                 lineLenCount += len(tag)
             count += 1
@@ -1122,15 +1122,15 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
                 #    html += split_char
                 #    continue
             else:
-                sText = getShowText(accountTag, i.strip(), tag, len(ret))
+                sText = utils.getLinkShowText(accountTag, i.strip(), tag, len(ret), column_num=column_num)
                 linkText = getLinkText(accountTag, i.strip(), sText)
                 if url != '':
                     link = url
                     if url.find('%s') != -1:
                         link = utils.toAccountUrl(url, linkText.replace(' ', ''))
-                    html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid, originText=i.strip()) 
+                    html += utils.enhancedLink(link, linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=utils.getLinkShowText(accountTag, i.strip(), tag, len(ret), column_num=column_num), dialogMode=dialogMode, aid=aid, originText=i.strip()) 
                 else:
-                    html += utils.enhancedLink(utils.bestMatchEnginUrl(linkText, resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=getShowText(accountTag, i.strip(), tag, len(ret)), dialogMode=dialogMode, aid=aid, originText=i.strip()) 
+                    html += utils.enhancedLink(utils.bestMatchEnginUrl(linkText, resourceType=tag, source=record.get_url()), linkText, module='main', library=source, rid=record.get_id(), resourceType=tag, urlFromServer=urlFromServer, showText=utils.getLinkShowText(accountTag, i.strip(), tag, len(ret), column_num=column_num), dialogMode=dialogMode, aid=aid, originText=i.strip()) 
 
                 html += remarkImg
             if old_i != ret[len(ret) - 1].strip():
@@ -1155,7 +1155,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
         if crossref:
             html += utils.genCrossrefHtml(record.get_id(), aid, tag, ret, source)
         else:
-            sText = getShowText(accountTag, ret.strip(), tag, 1)
+            sText = utils.getLinkShowText(accountTag, ret.strip(), tag, 1, column_num=column_num)
             linkText = getLinkText(accountTag, ret.strip(), sText)
             if url != '':
                 link = url
@@ -1168,14 +1168,11 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             html += remarkImg
         #dialogMode = originDialogMode
 
-    if accountTag and tag_content.find(split_char) != -1 and len(tag_content.split(split_char)) > 7:
+    if accountTag and tag_content.find(split_char) != -1 and len(tag_content.split(split_char)) > Config.max_account_for_tag_batch_open:
         dialogMode = True
-    return genTagLink(content, 'main', source, record.get_id(), tag, dialogMode, aid, crossref, accountTag) + html
+    return utils.genTagLink(content[ 0 :  content.find(':')].strip(), 'main', source, record.get_id(), tag, dialogMode, aid, crossref, accountTag) + html
 
-def genTagLink(content, module, library, rid, resourceType, dialogMode, aid, crossref, accountTag):
-    #if crossref:
-    #    dialogMode = False
-    return utils.enhancedLink('', '<font color="#66CCFF">' + content[ 0 :  content.find(':')].strip() + '</font>', module=module, library=library, fileName=library, rid=rid, resourceType=resourceType, urlFromServer=True, dialogMode=dialogMode, aid=aid, isTag=True, log=False) + ':'
+
 
 def adjDialogMode(text, originDialogMode):
 
@@ -1188,52 +1185,6 @@ def adjDialogMode(text, originDialogMode):
 
     return originDialogMode
 
-def getShowText(accountTag, originText, tagStr, linkCount):
-    text = utils.getValueOrText(originText, returnType='text')
-    col = int(column_num)
-    font_size = 0
-    if column_num == '1':
-        font_size = '10'
-    elif column_num == '2':
-        font_size = '9'
-    else:
-        font_size = '8'
-        if linkCount < 5:
-            font_size = '11'
-        elif linkCount < 7:
-            font_size = '10'
-        elif linkCount < 8:
-            font_size = '9'
-
-    if accountTag:
-        prefix = '@'
-        if tagStr == 'goodreads':
-            text = text[text.find('-') + 1 :]
-        if tagStr == 'slack':
-            prefix = '#'
-        #if (tag == 'github' or tag == 'bitbucket') and text.find('/') != -1:
-        if text.find('/') != -1:
-            text = text[text.rfind('/') + 1 : ]
-
-        if text.find(prefix) != -1:
-            text = text[text.find(prefix) + 1 :]
-
-        if tag.account_tag_alias.has_key(text):
-            text = tag.account_tag_alias[text]
-        else:
-            text = text[0: getCutLen(tagStr, text)]
-        if text.startswith(prefix) == False:
-            text = prefix + text
-        return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt;"><i>' + text + '</i></font>'
-    else:
-        #return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
-         
-        if Config.backgrounds[Config.background] != '':
-            return '<font style="font-size:' + str(font_size) + 'pt;" color="#8E24AA">' + text + '</font>'
-        else:
-            return '<font style="font-size:' + str(font_size) + 'pt;">' + text + '</font>'
-        
-    return text
 
 def getLinkText(accountTag, text, showText):
 
@@ -1246,14 +1197,6 @@ def getLinkText(accountTag, text, showText):
     '''
 
 
-
-def getCutLen(tag, text):
-    if tag == 'github':
-        return len(text)
-    elif len(text) > 14:
-        return 14
-    else:
-        return len(text)
 
 
 def print_search_box(hiden):
@@ -1809,7 +1752,7 @@ def print_list(all_lines, file_name = ''):
 
                     print utils.gen_pages(current_page, total_pages, getLibraryRealUrl(file_name))
                 
-                if html_style:
+                if html_style and library_hiden == False:
                     print utils.gen_menu(source)
             
 current_level = 1

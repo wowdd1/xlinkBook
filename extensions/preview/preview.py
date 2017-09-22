@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from utils import Utils
 import subprocess
 from config import Config
+import os
 
 class Preview(BaseExtension):
 
@@ -26,7 +27,7 @@ class Preview(BaseExtension):
 	width = str(int(screenWidth) / 3 + 50)
 	height = str(int(screenHeight) / 3 + 50)
 	column = form_dict['column']
-        if url.startswith('file'):
+        if url.startswith('file') or url.startswith('/User'):
             subprocess.check_output("/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome " + url, shell=True)
             return 'ok'
     

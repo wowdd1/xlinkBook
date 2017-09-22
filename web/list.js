@@ -276,8 +276,33 @@ function batchOpen(data, resourceType) {
     });
 }
 
+function batchOpenUrls(data) {
+    if (data == "") {
+        return;
+    }
+
+    if (data.indexOf(",") != -1) {
+        urls = data.split(",");
+        for (var i = 0; i < urls.length; i++) {
+            if (urls[i] != '') {
+                window.open(urls[i]);
+            }
+        }
+    } else {
+        window.open(data);
+    }
+}
+
 function tolist(rID, resourceType, originFilename) {
     $.post('/tolist', {rID : rID, resourceType : resourceType, originFilename : originFilename}, function(data) {
+        if (data != '') {
+            window.open(data);
+        }
+    });
+}
+
+function merger(rID, resourceType, originFilename) {
+    $.post('/merger', {rID : rID, resourceType : resourceType, originFilename : originFilename}, function(data) {
         if (data != '') {
             window.open(data);
         }
@@ -403,6 +428,10 @@ function navTopic(obj, divID, parentDivID, countIndex){
 
     postArgs['selection'] = window.getSelection().toString();
     if (obj.text == "search" || obj.text == "keyword") {
+        if (obj.text == 'search') {
+            postArgs['display'] = '';
+        }
+
         var selection = window.getSelection().toString();
         if (selection != '') {
             postArgs['selection'] = selection;
@@ -415,17 +444,24 @@ function navTopic(obj, divID, parentDivID, countIndex){
                     starDivObj = document.getElementById(divID + '-star-' + i.toString())
                     if (starDivObj.style.display == 'none') {
                         starDivObj.style.display = '';
+
                     } else {
                         starDivObj.style.display = 'none';
+
+                        if (lastHidenDivID != '') {
+                            console.log('', lastHidenDivID);
+                           document.getElementById(lastHidenDivID).style.display = '';
+                           document.getElementById(lastHidenDivID + '-data').style.display = '';
+                        }
+                        obj.style.color="#888888";
+                        obj.style.fontSize="9pt";
+                        postArgs['display'] = 'none';
+                        //return;
                     }
                     
                 }
-                if (lastHidenDivID != '') {
-                    console.log('', lastHidenDivID);
-                    document.getElementById(lastHidenDivID).style.display = '';
-                    document.getElementById(lastHidenDivID + '-data').style.display = '';
-                }
-                return
+
+                //return
             }
             postArgs['selection'] = args[divID][1];
         /*
@@ -563,6 +599,7 @@ function genEnginHtml(targetid, topic, otherInfo, rID) {
 
 function appendContent(targetid, id, topic, url, otherInfo, hidenEngin) {
     var target=document.getElementById(targetid);
+    url = url.replace(' ', '%20');
     if (target.innerHTML.indexOf(topic) > 0) {
         if (!disable_thumb) {
             if ($('#div-thumb-' + id.toLowerCase()).is(':visible')) {
@@ -642,25 +679,39 @@ function appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin) {
             for (var i = 0; i < extensions.length; i++) {
                 hidenMetadata(targetid, extensions[i], "");
             }
-            if (data.indexOf(default_tab) >= 0) {
-                for (var i = 0; i < extensions.length; i++) {
-                    if (extensions[i] == default_tab){
-                        navTopic(document.getElementById(targetid + "-nav-" + default_tab), targetid, targetid + "-nav-",4);
-                        found = true;
-                        break;
+            $.post('/queryNavTab', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, targetid : targetid, otherInfo : otherInfo, column : column}, function(data1){
+
+                console.log("data1", data1);
+
+                if (data1 != '' && data1.indexOf(",") >= 0) {
+                    dataSplit = data1.split(',');
+                    default_tab =  dataSplit[0].trim();
+                    second_default_tab = dataSplit[1].trim();
+                    console.log("default_tab ", default_tab);
+                    console.log("second_default_tab ", second_default_tab);
+                }   
+
+                if (data.indexOf(default_tab) >= 0) {
+                    for (var i = 0; i < extensions.length; i++) {
+                        if (extensions[i] == default_tab){
+                            navTopic(document.getElementById(targetid + "-nav-" + default_tab), targetid, targetid + "-nav-",4);
+                            found = true;
+                            break;
+                        }
                     }
                 }
-            }
-            
-            if (data.indexOf(second_default_tab) >= 0 && !found) {
-                for (var i = 0; i < extensions.length; i++) {
-                    if (extensions[i] == second_default_tab){
-                        navTopic(document.getElementById(targetid + "-nav-" + second_default_tab), targetid, targetid + "-nav-",4);
-                        found = true;
-                        break;
+                
+                if (data.indexOf(second_default_tab) >= 0 && !found) {
+                    for (var i = 0; i < extensions.length; i++) {
+                        if (extensions[i] == second_default_tab){
+                            navTopic(document.getElementById(targetid + "-nav-" + second_default_tab), targetid, targetid + "-nav-",4);
+                            found = true;
+                            break;
+                        }
                     }
                 }
-            }
+
+            });
         }
     });
 
@@ -817,7 +868,7 @@ function chanageLinkColor(obj, color, fontSize) {
 function queryUrlFromServer(text, url, module, library, rid, searchText, resourceType, newTab, isTag, fileName, log) {
     //console.log('queryUrlFromServer--->', searchText);
 
-    $.post("/queryUrl", {text : text , searchText : searchText, url : url, module : module, library : library, rID : rid, resourceType: resourceType, user : user_name, isTag : isTag, fileName : fileName}, function(data){
+    $.post("/queryUrl", {text : text , searchText : searchText, url : url, module : module, library : library, rID : rid, resourceType: resourceType, user : user_name, isTag : isTag, fileName : fileName, enginArgs : engin_args}, function(data){
         console.log('queryUrlFromServer--->', data);
         var urls = null;
         if (data.indexOf(' ') > 0) {
