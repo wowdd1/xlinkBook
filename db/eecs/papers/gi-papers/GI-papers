@@ -1,0 +1,351 @@
+1979 | An Improved Illumination Model for Shaded Display | | 
+1984 | Distributed Ray Tracing | | 
+1986 | The Rendering Equation | | 
+1995 | Practical Ray Tracing | | 
+1995 | The Reyes Image Rendering Architecture | | 
+1996 | Rendering Large Scenes Using Parallel Ray Tracing | | 
+1998 | Quasi-Monte Carlo Global Light Tracing with Infinite Number of Rays | | 
+1999 | Monte-Carlo Global Illumination Methods State of the Art and New Developments | | 
+2001 | State of the Art in Monte Carlo Ray Tracing | | 
+2002 | Ray Tracing on Programmable Graphics Hardware | | 
+2003 | Monte Carlo Ray Tracing | | 
+2003 | Realtime Ray Tracing and its use for Interactive Global Illumination | | 
+2004 | Real-time Ray Tracing and Interactive Global Illumination | | 
+2004 | State of the Art in Monte Carlo Global Illumination | | 
+2007 | Accelerating the bidirectional path tracing algorithm using a dedicated intersection processor | | 
+2007 | Packet-based Whitted and Distribution Ray Tracing | | 
+2007 | Photorealistic Image Rendering with Population Monte Carlo Energy Redistribution | | 
+2008 | Interactive Ray Tracing with CUDA | | 
+2008 | Ptex Per-Face Texture Mapping for production rendering | | 
+2008 | Raytracing Prefiltered Occlusion for Aggregate Geometry | | 
+2008 | Real-Time KD-Tree Construction on Graphics Hardware | | 
+2008 | Real-time Path Planning in Dynamic Virtual Environments Using Multi-agent Navigation Graphs | | 
+2009 | An Efficient GPU-based Approach for Interactive Global Illumination | | 
+2009 | Hybrid Ray Tracing - Tracing Using GPU-Accelerated Image-Space Methods | | 
+2009 | Sparse Voxel Octree Ray Tracing on the GPU | | 
+2010 | Architecture Considerations for Tracing Incoherent Rays | | 
+2010 | Combining Rasterization and Ray Tracing Techniques to Approximate Global Illumination in Real-Time | | 
+2010 | Experiments with GPGPU based Path Tracing | | 
+2010 | Path Regeneration for Interactive Path Tracing | | 
+2010 | Path Tracing - A non-biased Solution to the Rendering Equation | | 
+2010 | Recent developments in ray tracing for video games | | 
+2010 | Spectral Light Transport Simulation using a Precision-based Ray Tracing Architecture | | 
+2011 | A Divide-and-Conquer Algorithm for Simultaneous Photon Map Queries | | 
+2011 | Accelerating Path Tracing by Eye-Path Reprojection | | 
+2011 | Acceleration Methods for Ray Tracing based Global Illumination | | 
+2011 | Performance Considerations When Using a Dedicated Ray Traversal Engine | | 
+2012 | A Mobile Accelerator Architecture for Ray Tracing | | 
+2012 | Importance Sampling Techniques for Path Tracing in Participating Media | | 
+2012 | Improving Data Locality for Efficient In-Core Path Tracing | | 
+2012 | Ray Tracing in Real-Time Games | | 
+2012 | Real-Time Bidirectional Path Tracing via Rasterization | | 
+2012 | The Brigade Renderer - A Path Tracer for Real-Time Games - 2012 | | 
+2013 | PantaRay - Fast Ray-traced Occlusion Caching of Massive Scenes | | 
+2013 | Ray Tracing is the Future and ever will be | | 
+2014 | A Bidirectional Path Tracing Method for Global Illumination Rendering on GPU | | 
+2014 | Exploiting Local Orientation Similarity for Efficient Ray Traversal of Hair and Fur | | 
+2014 | Multi-Hit Ray Traversal | | 
+2014 | Ray tracing via GPU rasterization | | 
+2014 | Realtime Path Tracing and Point Cloud Models | | 
+2015 | Adaptive Rendering a posteriori methods | | 
+2015 | An Evaluation of Multi-Hit Ray Traversal in a BVH Using Existing First-Hit/Any-Hit Kernels | | 
+2015 | Efficient Implementation of Bi-directional Path Tracer on GPU | | 
+2015 | Filtering Environment Illumination for Interactive Physically-Based Rendering in Mixed Reality | | 
+2015 | Path tracing In RenderMan | | 
+2015 | Real-Time High Quality Rendering | | 
+2015 | The Path Tracing Revolution in the Movie Industry | | 
+2015 | Unifying Points, Beams, and Paths in Volumetric Light Transport Simulation | | 
+2016 | A Practical and Controllable Hair and Fur Model for Production Path Tracing | | 
+2016 | Experiences with path space sampling algorithms in Manuka | | 
+2016 | The Path to Path-Traced Movies | | 
+1993 | Bidirectional Path Tracing | | 
+1994 | Bidirectional Estimators for Light Transport | | 
+2007 | Accelerating the bidirectional path tracing algorithm using a dedicated intersection processor | | 
+???? | Bidirectional Path Tracing Implementation using NVIDIA OptiX | | 
+1987 | Generating antialiased images at low sampling densities | | 
+2008 | Multidimensional Adaptive Sampling and Reconstruction for Ray Tracing | | 
+2014 | Sample-Based Manifold Filtering for Interactive Global Illumination and Depth of Field | | 
+2015 | Path-space Motion Estimation and Decomposition for Robust Animation Filtering | | 
+2015 | Recent Advances in Adaptive Sampling and Reconstruction for Monte Carlo Rendering | | 
+2016 | Adaptive Image-Space Sampling for Gaze-Contingent Real-time Rendering | | 
+2015 | Specular Lobe-Aware Filtering and Upsampling for Interactive Indirect Illumination | | 
+2011 | Implementation of Random Parameter Filtering | | 
+2011 | On Filtering the Noise from the Random Parameters in Monte Carlo Rendering | | 
+2011 | Temporal Light Field Reconstruction for Rendering Distribution Effects | | 
+2012 | Reconstructing the Indirect Light Field for Global Illumination | | 
+2012 | Robust Image Denoising using a Virtual Flash Image for Monte Carlo Ray Tracing | | 
+2012 | SURE-based Optimization for Adaptive Sampling and Reconstruction | | 
+2012 | SURE-based Optimization for Adaptive Sampling and Reconstruction(pptx) | | 
+2013 | Robust Denoising using Feature and Color Information | | 
+2014 | Adaptive Rendering based on Weighted Local Regression | | 
+2015 | Adaptive Rendering with Linear Predictions | | 
+2016 | Adaptive Polynomial Rendering | | 
+2016 | Nonlinearly Weighted First-order Regression for Denoising Monte Carlo Renderings | | 
+2016 | Regularizing Image Reconstruction for Gradient-Domain Rendering with Feature Patches | | 
+2005 | Areview of image denoising algorithms, with a new one | | 
+2012 | Adaptive Rendering with Non-Local Means Filtering | | 
+2013 | Removing the Noise in Monte Carlo Rendering with General Image Denoising Algorithms | | 
+2014 | Boosting Monte Carlo Rendering by Ray Histogram Fusion | | 
+2009 | Adaptive Wavelet Rendering | | 
+2011 | Adaptive Sampling and Reconstruction using Greedy Error Minimization | | 
+2011 | Adaptive Wavelet Rendering(slides) | | 
+2015 | General and Robust Error Estimation and Reconstruction for Monte Carlo Rendering | | 
+2009 | Frequency Analysis and Sheared Reconstruction for Rendering Motion Blur | | 
+2011 | A Frequency Analysis of Monte-Carlo and other Numerical Integration Schemes | | 
+2015 | Fast 4D Sheared Filtering for Interactive Rendering of Distribution Effects | | 
+2005 | An efficient and robust ray-box intersection algorithm | | 
+2005 | Importance Resampling for Global Illumination | | 
+2005 | Ray Tracing with Reduced-Precision Bounding Volume Hierarchies | | 
+2006 | Geometric and Arithmetic Culling Methods for Entire Ray Packets | | 
+2007 | Realtime Ray Tracing on GPU with BVH-based Packet Traversal | | 
+2007 | Using SIMD Registers and Instructions to Enable Unstruction-Level Parallelism in Sorting Algorithms | | 
+2009 | Faster Incoherent Rays- Multi-BVH Ray Stream Tracing | | 
+2009 | Spatial Splits in Bounding Volume Hierarchies | | 
+2009 | StreamRay-A-stream-filtering-architecture-for-coherent-ray-tracing | | 
+2013 | Megakernels Considered Harmful/ Wavefront Path Tracing on GPUs | | 
+2013 | Sorted Deferred Shading for Production Path Tracing | | 
+2014 | Efficient GPU Screen-Space Ray Tracing | | 
+2015 | Efficient Ray Tracing of Subdivision Surfaces using Tessellation Caching | | 
+2015 | Reorder Buffer - An Energy-Efficient Multithreading Architecture for Hardware MIMD Ray Traversal | | 
+2015 | Robust BVH Ray Traversal - revised | | 
+2016 | A Multiview and Multilayer Approach for Interactive Ray Tracing | | 
+2016 | Embree Ray Tracing Kernels/ Overview and New Features | | 
+2016 | Local Shading Coherence Extraction for SIMD-Efficient Path Tracing on CPUs | | 
+2016 | Parallel Spatial Splits in Bounding Volume Hierarchies | | 
+2016 | Texture Space Caching and Reconstruction for Ray Tracing | | 
+2009 | Faster Incoherent Rays- Multi-BVH Ray Stream Tracing | | 
+2012 | Combining Single and Packet Ray Tracing for Arbitrary Ray Distributions on the Intel⃝R MIC Architecture | | 
+2014 | Dynamic Ray Stream Traversal | | 
+2015 | Efficient ray tracing kernels for modern CPU architectures | | 
+1986 | Using Caching and Breadth-first Search to Speed Up Ray-Tracing | | 
+2010 | Architecture Considerations for Tracing Incoherent Rays | | 
+1997 | Ren- dering complex scenes with memory-coherent ray tracing | | 
+2008 | Adaptive Ray Packet Reordering | | 
+2007 | SIMD Ray Stream Tracing - SIMD Ray Traversal with Generalized Ray Packets and On-the-fly Re-Ordering | | 
+2008 | Coherent Ray Tracing via Stream Filtering | | 
+2001 | Interactive Rendering with Coherent Ray Tracing | | 
+2007 | Ray Tracing Deformable Scenes Using Dynamic Bounding Volume Hierarchies | | 
+2008 | Large Ray Packets for Real-time Whitted Ray Tracing | | 
+2008 | Efficient SIMD Single-Ray Traversal using Multi-branching BVHs | | 
+2008 | Shallow Bounding Volume Hierarchies for Fast SIMD Ray Tracing of Incoherent Rays | | 
+2009 | Understanding the Efficiency of Ray Traversal on GPUs | | 
+2013 | Faster Incoherent Ray Traversal Using 8-Wide AVX Instructions | | 
+2003 | Poisson Image Editing | | 
+2006 | Poisson Surface Reconstruction | | 
+2008 | Fourier Analysis of the 2D Screened Poisson Equation for Gradient Domain Problems | | 
+2009 | GradientShop/ A Gradient-Domain Optimization Framework for Image and Video Filtering | | 
+2011 | SSD/ Smooth Signed Distance Surface Reconstruction | | 
+2013 | Screened Poisson Surface Reconstruction | | 
+2015 | Gradient-Domain Bidirectional Path Tracing | | 
+2015 | Gradient-Domain Path Tracing | | 
+2015 | Gradient-Domain Path Tracing(pptx) | | 
+2015 | Supplemental Material for Gradient-Domain Path Tracing | | 
+2016 | Temporal Gradient-Domain Path Tracing | | 
+2010 | OptiX - A General Purpose Ray Tracing Engine | | 
+2012 | Bidirectional Path Tracing Implementation using NVIDIA OptiX | | 
+2013 | Building Ray Tracing Applications with OptiX | | 
+2014 | Embree/ A Kernel Framework for Efficient CPU Ray Tracing | | 
+2014 | Ray tracing/ the future is now | | 
+2009 | A Hybrid GPU Rendering Pipeline for Alias-Free Hard Shadows | | 
+2009 | Fast Hard and Soft Shadow Generation on Complex Models using Selective Ray Tracing | | 
+2009 | Interactive Ray Tracing on the GPU and NVIRT Overview | | 
+2010 | A Hybrid Approach to Interactive Global Illumination and Soft Shadows | | 
+2012 | A hybrid GPU rasterized and ray traced rendering pipeline for real time rendering of per pixel effects | | 
+2014 | Ray-Traced Reflections in Real-Time Using Heuristic Based Hybrid Rendering | | 
+2015 | Hybrid Ray Traced Shadows | | 
+2089 | Hybird Shadow Testing Scheme for Ray Tracing | | 
+???? | hybrid-rendering | | 
+???? | luebke-nvidia-case-studies | | 
+2008 | Parallel Path Tracing using Incoherent Path-Atom Binning | | 
+2010 | Architecture Considerations for Tracing Incoherent Rays | | 
+2015 | A Mobile Ray Tracing Engine with Hybrid Number Representations | | 
+2015 | An Efficient Hybrid Ray Tracing and Rasterizer Architecture for Mobile GPU | | 
+2015 | Latency Tolerance Techniques for Real-time Ray Tracing on Mobile Computing Platform | | 
+2007 | Quasi-Monte Carlo Light Transport Simulation by Efficient Ray Tracing | | 
+2012 | Quasi-Monte Carlo Image Synthesis in a Nutshell | | 
+???? | Efficient Bidirectional Path Tracing by Randomized Quasi-Monte Carlo Integration | | 
+1999 | Tracing ray differential | | 
+2000 | Perturbation Methods for Interactive Specular Reflections | | 
+2000 | Theory and Application of Specular Path Perturbation | | 
+2001 | Path differentials and applications | | 
+2003 | Ray Differentials and Multiresolution Geometry Caching for Distribution Ray Tracing in Complex Scenes | | 
+2005 | A Frequency Analysis of Light Transport | | 
+2005 | A Frequency Analysis of Light Transport.ppt | | 
+2006 | Ray Tracing for the Movie ‘Cars’ | | 
+2012 | A Frequency Analysis of Light Transport from theory to implementation | | 
+2013 | 5D Covariance Tracing for Efficient Defocus and Motion Blur | | 
+2013 | 5D Covariance Tracing for Efficient Defocus and Motion Blur(slides) | | 
+2014 | A Local Frequency Analysis of Light Scattering and Absorption | | 
+2014 | Efficient Monte Carlo Rendering with Realistic Lenses | | 
+2014 | Progressive Spectral Ray Differentials | | 
+2014 | Spectral Ray Differentials | | 
+2016 | Antialiasing Complex Global Illumination Effects in Path-space | | 
+???? | Layered Light Field Reconstruction for Defocus Blur | | 
+2000 | A Practical Guide to Global Illumination using Photon Maps | | 
+2003 | Bias compensation for photon maps | | 
+2003 | Photon Mapping on Programmable Graphics Hardware | | 
+2004 | Realtime Caustics Using Distributed Photon Mapping | | 
+2004 | Simulating Photon Mapping for Real-time Applications | | 
+2005 | Photon Mapping Made Easy | | 
+2005 | Reordering for Cache Conscious Photon Mapping | | 
+2006 | - ltscourse - mcmc2 - kaplanyan - notes | | 
+2006 | Bias in Rendering | | 
+2007 | High Quality Rendering using Ray Tracing and Photon Mapping | | 
+2007 | SIMD Packet Techniques for Photon Mapping | | 
+2008 | Fast Final Gathering via Reverse Photon Mapping | | 
+2009 | Photon Mapping on the GPU | | 
+2011 | Accelerating Photon Mapping with Photon Flipping and Invalidity Photons | | 
+2011 | Interactive Ray-tracer Using Photon Mapping Technique | | 
+2012 | Historygrams- Enabling Interactive Global Illumination in Direct Volume Rendering using Photon Mapping | | 
+2012 | Photon Mapping in Pixar’s RenderMan | | 
+2013 | An Evaluation of the GAMA/StarPU Frameworks for Heterogeneous Platforms/ the Progressive Photon Mapping Algorithm | | 
+2013 | Photon Mapping based Simulation of Multi-Path Reflection Artifacts in Time-of-Flight Sensors | | 
+2013 | Understanding Photon Mapping | | 
+2014 | A Framework for Transient Rendering | | 
+2015 | Coherent photon mapping on the Intel MIC architecture | | 
+2016 | A survey of photon mapping state-of-the-art research and future challenges | | 
+2017 | Gradient-Domain Photon Density Estimation | | 
+1986 | Backward Ray Tracing | | 
+1995 | Importance driven path tracing using the photon map | | 
+1996 | Global Illumination using Photon Maps | | 
+1996 | Rendering caustics on non-Lambertian surfaces | | 
+???? | Radiosity Using Photon Maps | | 
+2002 | A Particle-Path based Method for Monte Carlo Density Estimation | | 
+2005 | Diffusion based Photon Mapping | | 
+2007 | Photon Differentials | | 
+2009 | Interactive Global Photon Mapping | | 
+2009 | Into the Blue- Better Caustics through Photon Relaxation | | 
+2010 | Temporal Photon Differentials | | 
+2012 | Description and solution of an unreported intrinsic bias in photon mapping density estimation with constant kernel | | 
+2014 | Overestimation and underestimation biases in photon mapping with non-constant kernels | | 
+2014 | Photon Differential Splatting for Rendering Caustics | | 
+2015 | Anisotropic density estimation for photon mapping | | 
+2002 | On Improving kd-trees for Ray Shooting | | 
+2006 | On building fast kd-Trees for Ray Tracing, and on doing that in O(N log N) | | 
+2015 | Building a Balanced k-d Tree in O(kn log n) Time | | 
+1975 | Multidimensional binary search trees used for associa- tive searching | | 
+???? | pbasic | | 
+2005 | A Survey on Participating Media Rendering Techniques | | 
+2005 | Advanced Density Estimation Techniques for Global Illumination | | 
+2005 | Ray Maps for Global Illumination | | 
+2005 | Ray Maps for Global Illumination - slides | | 
+2007 | Rendering Translucent Materials Using Photon Diffusion | | 
+2008 | Efficient Monte Carlo Methods for Light Transport in Scattering Media | | 
+2008 | The Beam Radiance Estimate for Volumetric Photon Mapping | | 
+2008 | The Beam Radiance Estimate for Volumetric Photon Mapping-slides | | 
+2010 | Unbiased, Adaptive Stochastic Sampling for Rendering Inhomogeneous Participating Media | | 
+2011 | A Comprehensive Theory of Volumetric Radiance Estimation using Photon Points and Beams | | 
+2011 | A Programmable System for Artistic Volumetric Lighting | | 
+2011 | Progressive Expectation–Maximization for Hierarchical Volumetric Photon Mapping | | 
+2011 | Progressive Photon Beams | | 
+2012 | Importance Sampling Techniques for Path Tracing in Participating Media | | 
+2013 | Joint Importance Sampling of Low-Order Volumetric Scattering | | 
+2013 | Joint Importance Sampling of Low-order Volumetric Scattering(pptx) | | 
+2014 | Robust light transport simulation in participating media | | 
+2014 | Unifying Points, Beams, and Paths in Volumetric Light Transport Simulation | | 
+2016 | On learning the visibility for joint importance sampling of low-order scattering | | 
+2017 | Beyond Points and Beams/ Higher-Dimensional Photon Samples for Volumetric Light Transport | | 
+2017 | Extended Path Integral Formulation for Volumetric Transport | | 
+2017 | Unbiased Light Transport Estimators for Inhomogeneous Participating Media | | 
+2017 | Unbiased Light Transport Estimators for Inhomogeneous Participating Media(pptx) | | 
+1998 | Efficient Simulation of Light Transport in Scenes with Participating Media using Photon Maps | | 
+2014 | upbp-notes | | 
+2014 | upbp-poster | | 
+2014 | upbp-slides(pptx) | | 
+???? | Efficient Ray Based Global Illumination Using Photon Maps | | 
+???? | Efficient Simulation of Light Transport in Scenes with Participating Media | | 
+???? | jarosz11comprehensive-slides | | 
+2010 | Efficient Free Path Sampling in Inhomogeneous Media | | 
+2011 | Free Path Sampling in High Resolution Inhomogeneous Participating Media | | 
+2013 | Integral formulation of null-collision Monte Carlo algorithms | | 
+2014 | Comparative analysis of discrete and continuous absorption weighting estimators used in Monte Carlo simulations of radiative transport in turbid media | | 
+2014 | Residual Ratio Tracking for Estimating Attenuation in Participating Media | | 
+2014 | Residual Ratio Tracking for Estimating Attenuation in Participating Media.key | | 
+2001 | Progressive Photon Mapping on GPUs | | 
+2005 | Fast Final Gathering via Reverse Photon Mapping | | 
+2008 | Progressive Photon Mapping | | 
+2009 | Stochastic Progressive Photon Mapping | | 
+2010 | A Progressive Error Estimation Framework for Photon Density Estimation | | 
+2010 | Parallel Progressive Photon Mapping on GPUs | | 
+2011 | Improved Stochastic Progressive Photon Mapping with Metropolis Sampling | | 
+2011 | Progressive Photon Mapping A Probabilistic Approach | | 
+2012 | Progressive Photon Mapping Extensions | | 
+2012 | Stochastic Progressive Photon Mapping for Dynamic Scenes | | 
+2012 | Supplemental Material/ Adaptive Progressive Photon Mapping | | 
+2013 | Adaptive Progressive Photon Mapping | | 
+2013 | Progressive Photon Relaxation | | 
+2014 | Distributed Out-of-Core Stochastic Progressive Photon Mapping | | 
+???? | APPM_SIGAsia2013(pptx) | | 
+1991 | Using non-Stochastic terms to advantage in kernel-based estimation of integrated squared density derivatives | | 
+???? | Nonparametric Functional Estimation Chapter 5 | | 
+2002 | Real Time Photon Mapping | | 
+2004 | Real-time Global Illumination by Simulating Photon Mapping | | 
+2004 | Realtime Realtime Caustics Using Caustics Using Distributed Photon Mapping | | 
+2004 | Simulating Photon Mapping for Real-time Applications | | 
+2009 | Hardware-Accelerated Global Illumination by Image Space Photon Mapping | | 
+2010 | Real-time Indirect Illumination Image Space Light Lattice Photon Mapping with Spherical Harmonics | | 
+2011 | Real-Time Photon Mapping on GPU | | 
+2012 | Real-Time GPU Photon Mapping | | 
+2013 | CloudLight- A system for amortizing indirect lighting in real-time rendering | | 
+2013 | Toward Practical Real-Time Photon Mapping- Efficient GPU Density Estimation | | 
+2008 | Advanced Global Illumination Using Photon Mapping | | 
+2012 | Multiresolution Radiosity Caching for Global Illumination in Movies | | 
+2012 | State of the Art in Photon Density Estimation | | 
+2013 | State of the Art in Photon Density Estimation | | 
+2013 | Toward Practical Real-Time Photon Mapping- Efficient GPU Density Estimation | | 
+???? | SIGGRAPH 2016 Sample Course Notes | | 
+2004 | - ltscourse - vcm - georgiev - notes | | 
+2011 | Bidirectional Light Transport with Vertex Merging | | 
+2011 | Bidirectional Photon Mapping | | 
+2012 | A Path Space Extension for Robust Light Transport Simulation | | 
+2012 | Light Transport Simulation with Vertex Connection and Merging | | 
+2012 | Light Transport Simulation with Vertex Connection and Merging (supplemental document) | | 
+2012 | Light Transport Simulation with Vertex Connection and Merging(pptx) | | 
+2013 | Combining Photon Mapping and Bidirectional Path Tracing | | 
+2013 | Path Space Regularization for Holistic and Robust Light Transport | | 
+2013 | Vertex Connection and Merging Combining photon mapping and bidirectional path tracing | | 
+2014 | Combining Photon Mapping and Bidirectional Path Tracing | | 
+1973 | Optimum Monte-Carlo sampling using Markov chains | | 
+1997 | Metropolis Light Transport | | 
+1999 | On The Start-Up Bias Problem Of Metropolis Sampling | | 
+2000 | A Variance Analysis of the Metropolis Light Transport Algorithm | | 
+2005 | Energy Redistribution Path Tracing | | 
+2005 | Implementing Energy Redistribution Path Tracing | | 
+2007 | Coherent Metropolis Light Transport with Multiple-Try Mutations | | 
+2016 | A Spatial Target Function for Metropolis Photon Tracing | | 
+2016 | Coherent Metropolis Light Transport on the GPU using Speculative Mutations | | 
+2013 | Gradient-Domain Metropolis Light Transport | | 
+2013 | Gradient-Domain Metropolis Light Transport(pptx) | | 
+2014 | Improved Sampling for Gradient-Domain Metropolis Light Transport | | 
+2015 | Anisotropic Gaussian Mutations for Metropolis Light Transport through Hessian-Hamiltonian Dynamics | | 
+2015 | Anisotropic Gaussian Mutations for Metropolis Light Transport through Hessian-Hamiltonian Dynamics.key | | 
+2015 | Anisotropic Gaussian Mutations for Metropolis Light Transport through Hessian-Hamiltonian Dynamics(pptx) | | 
+1995 | Reversible jump Markov chain Monte Carlo computation and Bayesian model determination | | 
+2015 | Informed Choices in Parimary Sample Space | | 
+2016 | Improving Global Exploration of MCMC Light Transport Simulation | | 
+2017 | Charted Metropolis Light Transport | | 
+2017 | Charted Metropolis Light Transport-1 | | 
+2017 | Fusing State Spaces for Markov Chain Monte Carlo Rendering | | 
+2017 | Reversible Jump Metropolis Light Transport using Inverse Mappings | | 
+2012 | Manifold Exploration (Expanded Technical Report) | | 
+2012 | Manifold Exploration/ A Markov Chain Monte Carlo Technique for Rendering Scenes with Difficult Specular Transport | | 
+2013 | Light Transport on Path-Space Manifolds | | 
+2014 | Hero Wavelength Spectral Sampling | | 
+2014 | HSLT_slides(pptx) | | 
+2014 | The Natural-Constraint Representation of the Path Space for Efficient Light Transport Simulation | | 
+2014 | The Natural-Constraint Representation of the Path Space for Efficient Light Transport Simulation_supplementary | | 
+2015 | Improved Half Vector Space Light Transport | | 
+2015 | Improved half vector space light transport_talk | | 
+2015 | Manifold Next Event Estimation | | 
+2015 | Manifold next event estimation(slides) | | 
+2016 | Estimating Local Beckmann Roughness for Complex BSDFs | | 
+2016 | Path Space Markov Chain Monte Carlo Methods in Computer Graphics | | 
+2001 | Simple and Robust Mutation Strategy for Metropolis Light Transport Algorithm | | 
+2002 | A Simple and Robust Mutation Strategy for the Metropolis Light Transport Algorithm | | 
+2014 | Multiplexed Metropolis Light Transport | | 
+2014 | Multiplexed Metropolis Light Transport(slides) | | 
+1992 | Simulated tempering- a new Monte Carlo scheme | | 
+1995 | Annealing Markov Chain Monte Carlo with Applications to Ancestral Inference | | 
+2001 | Extended Ensemble Monte Carlo | | 
+2011 | Robust Adaptive Photon Tracing using Photon Path Visibility | | 
+2016 | Robust Light Transport Simulation via Metropolised Bidirectional Estimators | | 

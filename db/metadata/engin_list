@@ -133,7 +133,7 @@ engin-129 | sitesearch | http://www.similarsitesearch.com/cn/q.php?URL= | priori
 engin-130 | similarsites | http://www.similarsites.com/site/ | priority:0 description:website
 engin-131 | diigo | https://www.diigo.com/tag/ | priority:5 description:tools
 engin-132 | visiontalks | http://www.computervisiontalks.com/?s= | priority:0 description:talk course tutorial
-engin-133 | tabao | https://world.taobao.com/search/search.htm?q= | priority:4 description:product
+engin-133 | tabao | https://s.taobao.com/search/search.htm?q= | priority:4 description:product
 engin-134 | ebay | http://www.ebay.com/sch/i.html?_nkw= | priority:0 description:product
 engin-135 | jrsearch | http://jrsearch.jd.com/gs/search?q= | priority:0 description:product finance
 engin-136 | kickstarter | https://www.kickstarter.com/discover/advanced?ref=nav_search&term= | priority:0 description:product finance
@@ -591,3 +591,4 @@ engin-600 | gad | http://gad.qq.com/search/?key= | priority:5 description:talk d
 engin-601 | torrentbytes | https://www.torrentbytes.net/browse.php?search=%s&cat=0&sc=3 | priority:8 description:game p2p
 engin-602 | githyp | http://www.githyp.com/?s=%s | priority:8 description:game
 engin-603 | news.baidu | http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%s | priority:4 description:news
+engin-604 | 3DM | http://bbs.3dmgame.com/search.php?mod=forums&searchid=2014&searchsubmit=yes&kw=%s | priority:8 description:game

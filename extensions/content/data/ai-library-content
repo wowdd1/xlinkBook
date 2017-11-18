@@ -1,4 +1,4 @@
-custom-sdcnd-1 | Fundamentals | | parentid:custom-sdcnd
+custom-sdcnd-1 | Fundamental | | parentid:custom-sdcnd
 custom-sdcnd-1.1 | Linear Algebra | | parentid:custom-sdcnd-1
 custom-sdcnd-1.2 | Calculus | | parentid:custom-sdcnd-1
 custom-sdcnd-1.3 | Mathematical Skills | | parentid:custom-sdcnd-1
@@ -26,24 +26,24 @@ custom-sdcnd-3.5 | Sensor Fusion | | parentid:custom-sdcnd-3
 custom-sdcnd-3.6 | Feature Extraction | | parentid:custom-sdcnd-3
 custom-sdcnd-3.7 | Object Detection | | parentid:custom-sdcnd-3
 custom-sdcnd-3.8 | Classification & Tracking | | parentid:custom-sdcnd-3
-custom-sdcnd-4 | Algorithms | | parentid:custom-sdcnd
-custom-sdcnd-4.1 | Kalman Filters | | parentid:custom-sdcnd-4
+custom-sdcnd-4 | Algorithm | | parentid:custom-sdcnd
+custom-sdcnd-4.1 | Kalman Filter | | parentid:custom-sdcnd-4
 custom-sdcnd-4.2 | EKF | | parentid:custom-sdcnd-4
-custom-sdcnd-4.3 | Bayesian Networks | | parentid:custom-sdcnd-4
+custom-sdcnd-4.3 | Bayesian Network | | parentid:custom-sdcnd-4
 custom-sdcnd-4.4 | SLAM | | parentid:custom-sdcnd-4
 custom-sdcnd-4.5 | Yamauchi | | parentid:custom-sdcnd-4
 custom-sdcnd-4.6 | STC | | parentid:custom-sdcnd-4
 custom-sdcnd-4.7 | CCD | | parentid:custom-sdcnd-4
 custom-sdcnd-4.8 | A* | | parentid:custom-sdcnd-4
 custom-sdcnd-4.9 | D* | | parentid:custom-sdcnd-4
-custom-sdcnd-4.10 | Particle Filters | | parentid:custom-sdcnd-4
-custom-sdcnd-4.11 | Other Bayesian Filters | | parentid:custom-sdcnd-4
-custom-sdcnd-5 | Languages | | parentid:custom-sdcnd
+custom-sdcnd-4.10 | Particle Filter | | parentid:custom-sdcnd-4
+custom-sdcnd-4.11 | Bayesian Filter | | parentid:custom-sdcnd-4
+custom-sdcnd-5 | Language | | parentid:custom-sdcnd
 custom-sdcnd-5.1 | C/C++ | | parentid:custom-sdcnd-5
 custom-sdcnd-5.2 | Python | | parentid:custom-sdcnd-5
 custom-sdcnd-5.3 | Java | | parentid:custom-sdcnd-5
 custom-sdcnd-5.4 | Matlab/Simulink | | parentid:custom-sdcnd-5
-custom-sdcnd-6 | Libraries | | parentid:custom-sdcnd
+custom-sdcnd-6 | Librarie | | parentid:custom-sdcnd
 custom-sdcnd-6.1 | OpenCV | | parentid:custom-sdcnd-6
 custom-sdcnd-6.2 | TensorFlow | | parentid:custom-sdcnd-6
 custom-sdcnd-6.3 | Torch | | parentid:custom-sdcnd-6
@@ -83,16 +83,16 @@ custom-sdcnd-9.5 | Data Collection | | parentid:custom-sdcnd-9
 custom-sdcnd-9.6 | Offline data processing and analytics | | parentid:custom-sdcnd-9
 custom-sdcnd-9.7 | Large Code base manipulation & management | | parentid:custom-sdcnd-9
 custom-sdcnd-9.8 | Robust Safety-critical efficient code | | parentid:custom-sdcnd-9
-custom-sdcnd-10 | Deployment Environments | | parentid:custom-sdcnd
-custom-sdcnd-10.1 | Distributed Architectures | | parentid:custom-sdcnd-10
-custom-sdcnd-10.2 | Parallel Architectures (GPU) | | parentid:custom-sdcnd-10
-custom-sdcnd-10.3 | Scalable Architectures | | parentid:custom-sdcnd-10
-custom-sdcnd-10.4 | Real-Time Operating Systems (low-latency) | | parentid:custom-sdcnd-10
-custom-sdcnd-10.5 | Embedded Systems | | parentid:custom-sdcnd-10
+custom-sdcnd-10 | Deployment Environment | | parentid:custom-sdcnd
+custom-sdcnd-10.1 | Distributed Architecture | | parentid:custom-sdcnd-10
+custom-sdcnd-10.2 | Parallel Architecture (GPU) | | parentid:custom-sdcnd-10
+custom-sdcnd-10.3 | Scalable Architecture | | parentid:custom-sdcnd-10
+custom-sdcnd-10.4 | Real-Time Operating System | | parentid:custom-sdcnd-10
+custom-sdcnd-10.5 | Embedded System | | parentid:custom-sdcnd-10
 custom-sdcnd-10.6 | [Embedded] Firmware | | parentid:custom-sdcnd-10
 custom-sdcnd-10.7 | High Availability | | parentid:custom-sdcnd-10
 custom-sdcnd-10.8 | Fault-tolerance | | parentid:custom-sdcnd-10
-custom-sdcnd-11 | Personal Skills | | parentid:custom-sdcnd
+custom-sdcnd-11 | Personal Skill | | parentid:custom-sdcnd
 custom-sdcnd-11.1 | Inquisitive | | parentid:custom-sdcnd-11
 custom-sdcnd-11.2 | Proactive | | parentid:custom-sdcnd-11
 custom-sdcnd-11.3 | Interested in learning | | parentid:custom-sdcnd-11
@@ -108,14 +108,85 @@ custom-sdcnd-11.12 | Thrives under pressure | | parentid:custom-sdcnd-11
 custom-sdcnd-11.13 | Hyper focused | | parentid:custom-sdcnd-11
 custom-sdcnd-11.14 | Yearn for cutting edge and high profile projects | | parentid:custom-sdcnd-11
 custom-sdcnd-11.15 | Passionate about their craft | | parentid:custom-sdcnd-11
-custom-sdcnd-12 | Interpersonal Skills | | parentid:custom-sdcnd
-custom-sdcnd-12.1 | String verbal and written communication skills | | parentid:custom-sdcnd-12
+custom-sdcnd-12 | Interpersonal Skill | | parentid:custom-sdcnd
+custom-sdcnd-12.1 | String verbal and written communication skill | | parentid:custom-sdcnd-12
 custom-sdcnd-12.2 | Collaborate in multi-disciplinary team | | parentid:custom-sdcnd-12
-custom-sdcnd-12.3 | Fast-paced & dynamic environments | | parentid:custom-sdcnd-12
-custom-sdcnd-12.4 | Escalate risks | | parentid:custom-sdcnd-12
+custom-sdcnd-12.3 | Fast-paced & dynamic environment | | parentid:custom-sdcnd-12
+custom-sdcnd-12.4 | Escalate risk | | parentid:custom-sdcnd-12
 custom-sdcnd-12.5 | Mentor-ship | | parentid:custom-sdcnd-12
 custom-sdcnd-12.6 | Working remote (time-zones) & distributed (location) teams | | parentid:custom-sdcnd-12
 custom-sdcnd-12.7 | Open-Source contributor | | parentid:custom-sdcnd-12
 custom-sdcnd-12.8 | Passionate about working on startups | | parentid:custom-sdcnd-12
 custom-sdcnd-12.9 | Leadership | | parentid:custom-sdcnd-12
 custom-sdcnd-12.10 | entrepreneurship & persuasion | | parentid:custom-sdcnd-12
+custom-sdcnd-13 | Build Your Own Autonomous Vehicle | | parentid:custom-sdcnd
+custom-sdcnd-13.1 | Course Introduction | | parentid:custom-sdcnd-13
+custom-sdcnd-13.1.1 | Course Introduction, Problem, Challenge, Solution | | parentid:custom-sdcnd-13.1
+custom-sdcnd-13.1.2 | Introduction to Robotics and Deep Learning | | parentid:custom-sdcnd-13.1
+custom-sdcnd-13.1.3 | Introduction to Jetson TX2, platform, RC car | | parentid:custom-sdcnd-13.1
+custom-sdcnd-13.1.4 | Introduction to ROS and perception control fast through AI | | parentid:custom-sdcnd-13.1
+custom-sdcnd-13.1.5 | Lab: Hardware hands on, getting TX2 and RC Car | | parentid:custom-sdcnd-13.1
+custom-sdcnd-13.1.6 | Lab: Installing all software dependencies on TX2 | | parentid:custom-sdcnd-13.1
+custom-sdcnd-13.2 | Sensors on Self-Driving Car | | parentid:custom-sdcnd-13
+custom-sdcnd-13.2.1 | Types of actual sensors in the car: Sonar, Accelerometer, and Gyroscope | | parentid:custom-sdcnd-13.2
+custom-sdcnd-13.2.2 | Types of perception sensors: Camera, Motors, and Encoders | | parentid:custom-sdcnd-13.2
+custom-sdcnd-13.2.3 | Sensor fusion, integration and testing method | | parentid:custom-sdcnd-13.2
+custom-sdcnd-13.2.4 | Lab: Sensor integration on RC Car | | parentid:custom-sdcnd-13.2
+custom-sdcnd-13.2.5 | Lab: Testing the ROS build for each sensors independently | | parentid:custom-sdcnd-13.2
+custom-sdcnd-13.3 | More ROS stuffs, including computer vision and PID Controller | | parentid:custom-sdcnd-13
+custom-sdcnd-13.3.1 | Introduction to ROS Tools (ROS Slang Term like Publish Subscriber Architecture, Topic, Node, Message) | | parentid:custom-sdcnd-13.3
+custom-sdcnd-13.3.2 | Image Filtering and Image Moments | | parentid:custom-sdcnd-13.3
+custom-sdcnd-13.3.3 | Controlling Self Driving Cars (PID Controller) | | parentid:custom-sdcnd-13.3
+custom-sdcnd-13.3.4 | Architect the system including Filters, map gen, CV, Localization and Path Planning | | parentid:custom-sdcnd-13.3
+custom-sdcnd-13.3.5 | Lab: How to take car control and Sensor Integration [ROS] Creating ROS Node, control steering, testing the RC Car using XBOX controller | | parentid:custom-sdcnd-13.3
+custom-sdcnd-13.4 | End to End Learning for Self driving cars | | parentid:custom-sdcnd-13
+custom-sdcnd-13.4.1 | The power of Perception and Control using NN | | parentid:custom-sdcnd-13.4
+custom-sdcnd-13.4.2 | Deep Learning and Sensor Fusion | | parentid:custom-sdcnd-13.4
+custom-sdcnd-13.4.3 | Implementation of end to end learning for self driving car | | parentid:custom-sdcnd-13.4
+custom-sdcnd-13.4.4 | Lab: Add function to assemble two sensor fusion | | parentid:custom-sdcnd-13.4
+custom-sdcnd-13.4.5 | Lab: Testing the Rviz for launching custom sensor package | | parentid:custom-sdcnd-13.4
+custom-sdcnd-13.4.6 | Lab: Start adding control and sensor fusion together | | parentid:custom-sdcnd-13.4
+custom-sdcnd-13.5 | Dead Reckoning | | parentid:custom-sdcnd-13
+custom-sdcnd-13.5.1 | Introduction to Dead Reckoning | | parentid:custom-sdcnd-13.5
+custom-sdcnd-13.5.2 | Calculating Positions | | parentid:custom-sdcnd-13.5
+custom-sdcnd-13.5.3 | Sensor Fusion and Kalman Filters | | parentid:custom-sdcnd-13.5
+custom-sdcnd-13.5.4 | Lab: Dead Reckoning | | parentid:custom-sdcnd-13.5
+custom-sdcnd-13.5.5 | Lab: extend the perception, sensor fusion and control together | | parentid:custom-sdcnd-13.5
+custom-sdcnd-13.6 | Path Planning | | parentid:custom-sdcnd-13
+custom-sdcnd-13.6.1 | Introduction to Path Planning | | parentid:custom-sdcnd-13.6
+custom-sdcnd-13.6.2 | A* Planning | | parentid:custom-sdcnd-13.6
+custom-sdcnd-13.6.3 | Adaptive Monte Carlo Localization (AMCL) | | parentid:custom-sdcnd-13.6
+custom-sdcnd-13.6.4 | Lab exercise: Path Planning | | parentid:custom-sdcnd-13.6
+custom-sdcnd-13.7 | Racing strategy | | parentid:custom-sdcnd-13
+custom-sdcnd-13.7.1 | Self driving car in racing arena (Traditional NN vs Latest NN) | | parentid:custom-sdcnd-13.7
+custom-sdcnd-13.7.2 | Training approach and strategy | | parentid:custom-sdcnd-13.7
+custom-sdcnd-13.7.3 | Approach to get right dataset | | parentid:custom-sdcnd-13.7
+custom-sdcnd-13.7.4 | Lab exercise: start getting dataset for racing and have better strategy for preparing track day | | parentid:custom-sdcnd-13.7
+custom-sdcnd-13.8 | Robot Localization | | parentid:custom-sdcnd-13
+custom-sdcnd-13.8.1 | Introduction to Robot Localization | | parentid:custom-sdcnd-13.8
+custom-sdcnd-13.8.2 | Localization with Particle Filters | | parentid:custom-sdcnd-13.8
+custom-sdcnd-13.8.3 | Robot preparation techniques | | parentid:custom-sdcnd-13.8
+custom-sdcnd-13.8.4 | Lab exercise Robot Localization and potentially get more data | | parentid:custom-sdcnd-13.8
+custom-sdcnd-13.9 | Mapping | | parentid:custom-sdcnd-13
+custom-sdcnd-13.9.1 | Introduction to Mapping | | parentid:custom-sdcnd-13.9
+custom-sdcnd-13.9.2 | SLAM | | parentid:custom-sdcnd-13.9
+custom-sdcnd-13.9.3 | Lab exercise Mapping and testing the RC car | | parentid:custom-sdcnd-13.9
+custom-sdcnd-13.10 | Final Project | | parentid:custom-sdcnd-13
+custom-sdcnd-13.10.1 | The racing event, we will create a match based on the best lap with strict rules | | parentid:custom-sdcnd-13.10
+custom-sdcnd-13.10.2 | Continue the racing for final event, if not then we will do the closing and giving certificate and things to move on | | parentid:custom-sdcnd-13.10
+custom-sdcnd-13.10.3 | Hiring roundtable & Networking | | parentid:custom-sdcnd-13.10
+custom-slam-1 | 预备知识 | | parentid:custom-slam
+custom-slam-2 | 初识SLAM | | parentid:custom-slam
+custom-slam-3 | 三维空间刚体运动 | | parentid:custom-slam
+custom-slam-4 | 李群与李代数 | | parentid:custom-slam
+custom-slam-5 | 相机与图像 | | parentid:custom-slam
+custom-slam-6 | 非线性优化 | | parentid:custom-slam
+custom-slam-7 | 视觉里程计1 | | parentid:custom-slam
+custom-slam-8 | 视觉里程计2 | | parentid:custom-slam
+custom-slam-9 | 设计前端1 | http://geek.csdn.net/news/detail/194645 | parentid:custom-slam
+custom-slam-10 | 设计前端2 | http://geek.csdn.net/news/detail/194691 | parentid:custom-slam
+custom-slam-11 | 后端1 | | parentid:custom-slam
+custom-slam-12 | 后端2 | | parentid:custom-slam
+custom-slam-13 | 回环检测 | | parentid:custom-slam
+custom-slam-14 | 建图 | | parentid:custom-slam
+custom-slam-14 | SLAM：现在与未来 | http://geek.csdn.net/news/detail/202128 | parentid:custom-slam

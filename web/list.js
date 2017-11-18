@@ -17,6 +17,69 @@ $(function() {
     });  
 }); 
 
+window.document.onkeydown = onkeydown;
+window.document.onkeyup = onkeyup;
+
+var KEY_X_DOWN = false;
+var lastClick = null;
+var clickArray = new Array();
+var KEY_L_ALT = 18;
+var KEY_L_CTRL = 17;
+var KEY_X_CODE = 88;
+var KEY_ESC_CODE = 27;
+
+function onkeydown(evt){
+    console.log('ss', "onkeydown " + evt.keyCode.toString());
+
+    evt = (evt) ? evt : window.event
+    if (evt.keyCode) {
+       if (evt.keyCode == KEY_X_CODE){
+            KEY_X_DOWN = true;
+
+       }else if(evt.keyCode == KEY_L_ALT){
+            console.log('ss', "onkeydown 18");
+
+            if (clickArray.length > 0) {
+                var obj = clickArray[clickArray.length - 1]
+                clickArray.splice(clickArray.length - 1, 1);
+
+                if (obj.text == 'less') {
+                    obj.click();
+                } else {
+                    for (var i = clickArray.length - 1; i <= 0; i--) {
+                        var obj = clickArray[i];
+                        clickArray.splice(i, 1);
+
+                        if (obj.text == 'less') {
+                            obj.click();
+                            break;
+                        }
+
+                    }
+
+                }
+
+            }
+       } else if (evt.keyCode == KEY_L_CTRL) {
+            if (lastClick != null) {
+                lastClick.click();
+            }
+       } else if (evt.keyCode == KEY_ESC_CODE) {
+
+       }
+    }
+}
+
+function onkeyup(evt){
+    evt = (evt) ? evt : window.event
+    if (evt.keyCode) {
+       if(evt.keyCode == KEY_X_CODE){
+            console.log('ss', "onkeyup 88");
+            KEY_X_DOWN = false;
+       }
+    }
+}
+
  
 function title() {
     return $("[data-toggle='popover']").text;  
@@ -155,6 +218,11 @@ function getDateTimeStr(){
 
 function setText(objN){
     var clicktext=document.getElementById(objN);
+    lastClick = clicktext;
+    if (clicktext.text == '...' && clicktext != clickArray[clickArray.length - 1]) {
+        clickArray.push(clicktext);
+    }
+
     if (clicktext.innerText == "..."){
         clicktext.innerText="less";
     } else {
@@ -828,6 +896,10 @@ function exec(command, text, url) {
 }
 
 function userlog(text, url, module, library, rid, searchText, resourceType) {
+    if (KEY_X_DOWN) {
+        KEY_X_DOWN = false;
+        return;
+    }
     var os = getOsInfo();
     var browser = getBrowserInfo();
     $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){});
