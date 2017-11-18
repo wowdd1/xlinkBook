@@ -308,7 +308,11 @@ def handleMerger():
                 recordDesc += k.strip() + values + ' '
 
 
-            return utils.output2Disk([Record(rID + '-' + resourceType + '-merger' + ' | ' +  record.get_title() + ' | ' + record.get_url() + ' | ' + recordDesc)], 'tag', rID + '-' + resourceType, ignoreUrl=False)
+            url = utils.output2Disk([Record(rID + '-' + resourceType + '-merger' + ' | ' +  record.get_title() + ' | ' + record.get_url() + ' | ' + recordDesc)], 'tag', rID + '-' + resourceType, ignoreUrl=False)
+
+            line = rID + ' | ' + record.get_title().strip() + '-' + resourceType + '-merger | ' + utils.toQueryUrl(utils.getEnginUrl('glucky'), record.get_title().strip()) + ' | ' +  recordDesc
+            toHistoryfile(line, fileName)
+            return url
 
 
     return ''
@@ -537,6 +541,9 @@ def handleQueryNavTab():
     title = request.form['rTitle']
     otherInfo = request.form['otherInfo']
     column = request.form['column']
+
+    if targetid.find('bookmark') != -1:
+        return 'bookmark,' + Config.default_tab
     if url != None and url != '':
         if url.find(Config.ip_adress) != -1:
             return 'pathways,' + Config.default_tab
@@ -561,6 +568,9 @@ def handleQueryNavTab():
     if targetid != None and targetid != '':
         if targetid.find('content-') != -1:
             return 'content,' + Config.default_tab
+        if targetid.find('history-') != -1:
+            return 'history,' + Config.default_tab
+
 
     return Config.default_tab + ',' + Config.second_default_tab
 
@@ -743,7 +753,7 @@ def handleQueryUrl():
                         if utils.search_engin_dict.has_key(v):
                             v = utils.toQueryUrl(utils.getEnginUrl(v), text)
                         if utils.isUrlFormat(v):
-                            if v.startswith('http') == False:
+                            if utils.isShortUrl(v) == False and v.startswith('http') == False:
                                 v = 'http://' + v
                             infoHtml += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
                             infoLen += len(text)
@@ -755,7 +765,7 @@ def handleQueryUrl():
                             if utils.search_engin_dict.has_key(subValue):
                                 subValue = utils.toQueryUrl(utils.getEnginUrl(subValue), subText)
                             if utils.isUrlFormat(subValue):
-                                if subValue.startswith('http') == False:
+                                if utils.isShortUrl(subValue) == False and subValue.startswith('http') == False:
                                     subValue = 'http://' + subValue
                                 if Config.website_icons.has_key(subText.strip().lower()):
                                     iconHtml = utils.getIconHtml(subText)
@@ -888,7 +898,6 @@ def handleUserLog():
 
     module = request.form['module'].strip()
     if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
-        historyFile = 'extensions/history/data/' + library[library.rfind('/') + 1 :] + '-history'
         title = utils.getValueOrText(request.form['searchText'].replace('|', ''), returnType='text')
 
         if request.form['resourceType'] != '' and utils.isAccountTag(request.form['resourceType'].strip(), tag.tag_list_account) == False and utils.getValueOrTextCheck(request.form['searchText']):
@@ -909,12 +918,18 @@ def handleUserLog():
                         break
 
         line += desc.strip() + ' '
-        cmd = 'echo "' + line + '" >> ' + historyFile
-        print cmd
-        output = subprocess.check_output(cmd, shell=True)
+        toHistoryfile(line, library)
         #utils.slack_message(request.form['url'], 'general')
 
     return ''
+
+def toHistoryfile(line, library):
+    if library.find('/') != -1:
+        library = library[library.rfind('/') + 1 :]
+    historyFile = 'extensions/history/data/' + library + '-history'
+    cmd = 'echo "' + line + '" >> ' + historyFile
+    print cmd
+    output = subprocess.check_output(cmd, shell=True)    
 
 def igonLog(module):
     for md in Config.igon_log_for_modules:

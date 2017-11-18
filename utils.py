@@ -977,8 +977,8 @@ class Utils:
         value = text[text.find('(') + 1 :].strip()
         value = value[0 : value.rfind(')')].strip()
         newText = text[0 : text.find('(')].strip() 
-        if self.isShortUrl(value):
-            value = 'http://' + value
+        #if self.isShortUrl(value):
+        #    value = 'http://' + value
         return newText, value
 
     def isUrlFormat(self, text):

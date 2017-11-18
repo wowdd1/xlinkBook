@@ -206,6 +206,7 @@ class Config():
 
     application_dict = {'.ppt' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
                         '.pptx' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
+                        '.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
                         '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
     # ==== extension ====
@@ -301,6 +302,7 @@ class Config():
     enable_website_icon = True
     website_icons = {'.pdf' : 'https://cdn4.iconfinder.com/data/icons/CS5/128/ACP_PDF%202_file_document.png',\
                  '.dir' : 'http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg',\
+                 'delete' : 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1740783565,3782353396&fm=27&gp=0.jpg',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'http://vintaytime.com/wp-content/uploads/2017/02/url-shortener-icon.png',\
                  'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
@@ -329,7 +331,7 @@ class Config():
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
-                 'twitter' : 'https://abs.twimg.com/icons/apple-touch-icon-192x192.png',\
+                 'twitter' : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508991050&di=8e1fd2688446e1afecc9ae98ec4d0ab6&imgtype=jpg&er=1&src=http%3A%2F%2Fzixun.tuan800.com%2Fuploads%2Fallimg%2F120607%2F18_120607093403_1.jpg',\
                  'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
                  'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
@@ -342,7 +344,7 @@ class Config():
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
                  'twitch' : 'http://apps.friday.tw/news/wp-content/uploads/2015/03/twitchicon.png',\
-                 'bilibili' : 'https://pbs.twimg.com/profile_images/813934430867759105/bGAicSr_.jpg',\
+                 'bilibili' : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509115826&di=df7ce219d3d1e3493044338df0f3375e&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.ithome.com%2FNewsUploadFiles%2Fthumbnail%2F2015%2F11%2F187408_240.jpg',\
                  'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
                  'google' : 'http://images.dailytech.com/nimage/G_is_For_Google_New_Logo_Thumb.png',\
                  'flickr' : 'http://clave7.webcindario.com/logo_flickr_01.png',\
