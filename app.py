@@ -1191,7 +1191,7 @@ def authorized():
 
 @app.route('/library', methods=['GET', 'POST'])
 def library():
-    if session['name'] == None or session['name'] == '':
+    if session.has_key('name') == False or session['name'] == None or session['name'] == '':
         return redirect(url_for('index'))
     library = session['name'] + "-library"
     if Config.default_library != '':
