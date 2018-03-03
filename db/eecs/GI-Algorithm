@@ -1,0 +1,11 @@
+gi-algorithm-1 | Path Tracing |  | alias:Ray Tracing
+gi-algorithm-2 | Metropolis Light Transport | |
+gi-algorithm-3 | Photon Mapping |  | 
+gi-algorithm-4 | Radiosity |  | 
+gi-algorithm-5 | Instance Radiosity |  | 
+gi-algorithm-6 | Irradiance Caching |  | 
+gi-algorithm-7 | Light Propagation Volumes |  | 
+gi-algorithm-8 | Voxel-based Global Illumination |  | keyword:SVOGI, VXGI
+gi-algorithm-9 | Harmonies Based Methods | |
+gi-algorithm-10 | Precomputed Radiance Transfer |  | 
+gi-algorithm-11 | Distance Based Global Illumination | |

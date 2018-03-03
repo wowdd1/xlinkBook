@@ -21,12 +21,14 @@ window.document.onkeydown = onkeydown;
 window.document.onkeyup = onkeyup;
 
 var KEY_X_DOWN = false;
+var KEY_E_DOWN = false;
 var lastClick = null;
 var clickArray = new Array();
 var KEY_L_ALT = 18;
 var KEY_L_CTRL = 17;
 var KEY_X_CODE = 88;
 var KEY_ESC_CODE = 27;
+var KEY_E_CODE = 69;
 
 function onkeydown(evt){
     console.log('ss', "onkeydown " + evt.keyCode.toString());
@@ -36,7 +38,9 @@ function onkeydown(evt){
        if (evt.keyCode == KEY_X_CODE){
             KEY_X_DOWN = true;
 
-       }else if(evt.keyCode == KEY_L_ALT){
+       } else if (evt.keyCode == KEY_E_CODE) {
+           KEY_E_DOWN = true;
+       } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
 
             if (clickArray.length > 0) {
@@ -76,6 +80,9 @@ function onkeyup(evt){
        if(evt.keyCode == KEY_X_CODE){
             console.log('ss', "onkeyup 88");
             KEY_X_DOWN = false;
+       } else if (evt.keyCode == KEY_E_CODE) {
+            console.log('ss', "onkeyup 69");
+            KEY_E_DOWN = false;
        }
     }
 }
@@ -115,12 +122,8 @@ function content(text, data) {
             engin_count = parseInt(data.substring(0, data.indexOf('#')));
             data = data.substring(data.indexOf('#') + 1);
             console.log('', aid);
-
-            $('#' + content_id).html(data);
-
-        } else {
-            $('#' + content_id).html(data);
         }
+        $('#' + content_id).html(data);
     });
 
     return result;
@@ -209,6 +212,37 @@ $(document).ready(function(){
   }
 });
 
+function refreshTab2(divID, objID, tab) {
+    obj = document.getElementById(objID);
+
+    if (obj != null && obj.style.color == 'rgb(130, 35, 18)'){
+        var obj = document.getElementById(objID);
+        hidendiv_2(divID);
+        navTopic(obj, divID.replace('-' + tab, ''), objID.replace('-' + tab, ''), 10);
+    }   
+}
+
+function refreshTab(aid, tab){
+
+
+    objID = aid.replace('td-', '');
+    objID = objID.substring(0, objID.indexOf('-a-'));
+    objIDs = objID.split('-');
+    tab = 'history'
+    divID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-' + tab;
+    objID = objIDs[0] + '-' + objIDs[1] + '-' + objIDs[2] + '-0-nav-' + tab;
+
+    obj = document.getElementById(objID);
+    console.log('divID', divID);
+    console.log('objID', objID);  
+    console.log('style', obj.style.color); 
+    if (obj != null && obj.style.color == 'rgb(130, 35, 18)'){
+        var obj = document.getElementById(objID);
+        hidendiv_2(divID);
+        navTopic(obj, divID.replace('-' + tab, ''), objID.replace('-' + tab, ''), 10);
+    }
+}
+
 function getDateTimeStr(){
     var s="";
     var d = new Date();
@@ -232,7 +266,9 @@ function setText(objN){
 }
 
 function updateSearchbox(text) {
+
     search_box.value = text.split("%20").join(' ');
+
     if (search_box_target != null) {
         search_box_target.innerHTML = genEnginHtml(search_box_target.id, text, '', '');
     }
@@ -303,20 +339,42 @@ function search(inputid,optionid){
 
     } else {
         url = select.value
-        if (url.indexOf("%s") != -1) {
-            url = url.replace("%s", input.value);
+        text = input.value
+        if (text.indexOf(',') != -1) {
+            data = text.split(',');
+            for (var i = 0; i < data.length; i++) {
+                if (data[i] != '') {
+                    doSearch(url, trimStr(data[i]));
+                }
+            }
         } else {
-            url = select.value + input.value;
+            doSearch(url, text);
+
         }
-        window.open(url);
-        userlog(select[select.selectedIndex].text, url, 'searchbox', fileName, '', input.value, '');
+        userlog(text, url, 'searchbox', fileName, '', input.value, '');
     }
+}
+
+function doSearch(url, text) {
+    if (url.indexOf("%s") != -1) {
+        url = url.replace("%s", text);
+    } else {
+        url = url + text;
+    }
+    window.open(url);
 }
 
 function addRecord(fileName, data) {
     $.post('/addRecord', {fileName : fileName, data : data}, function(data) {
         window.location.href = window.location.href;   
     });
+}
+
+function add2Library(rid, aid, text, resourceType, library) {
+
+    $.post('/add2Library', {rid : rid, text : text, resourceType : resourceType, library : library}, function(data) {
+        window.location.href = window.location.href; 
+    });   
 }
 
 function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph) {
@@ -330,6 +388,18 @@ function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFil
     });
 }
 
+function add2QucikAccess(rid, aid, text, resourceType, library) {
+
+    $.post('/add2QucikAccess', {rid : rid, text : text, resourceType : resourceType, library : library}, function(data) {
+
+        if (data == 'ok') {
+            refreshTab(aid, 'history');
+        }
+    });
+
+}
+
+
 function batchOpen(data, resourceType) {
 
     $.post('/batchOpen', {data : data, resourceType : resourceType}, function(data) {
@@ -340,6 +410,55 @@ function batchOpen(data, resourceType) {
                     window.open(urls[i]);
                 }
             }
+        }
+    });
+}
+
+function openUrl(url, searchText, newTab, excl) {
+
+    if (KEY_E_DOWN) {
+        if (excl) {
+            updateSearchbox(searchText);
+            if (url != '' && searchText.indexOf('(') < 0) {
+                searchText = searchText + '(' + url + ')'
+            }
+            exclusive('exclusive', searchText, '', true, '', '', '', '', false);
+        } else {
+            console.log(search_box.value);
+            if(search_box.value != '') {
+                updateSearchbox(search_box.value + ', ' + searchText);
+
+            } else {
+                updateSearchbox(searchText);
+            }  
+        }
+
+        KEY_E_DOWN = false;
+
+    } else if (newTab) {
+        window.open(url);
+        updateSearchbox(searchText);
+    } else {
+        window.location.href = url;
+    }
+
+}
+
+function openAll(text, urls) {
+    if (KEY_X_DOWN) {
+        var input = document.getElementById('search_txt');
+        input.value = text;
+
+    } else {
+        batchOpenUrls(urls);
+
+    }
+}
+
+function openAllOnePage(text, urls, module) {
+    $.post('/allInOnePage', {text : text, urls : urls, module : module}, function(data) {
+        if (data != '') {
+            window.open(data);
         }
     });
 }
@@ -362,9 +481,27 @@ function batchOpenUrls(data) {
 }
 
 function tolist(rID, resourceType, originFilename) {
-    $.post('/tolist', {rID : rID, resourceType : resourceType, originFilename : originFilename}, function(data) {
+    if (KEY_X_DOWN) {
+        $.post('/tolist', {rID : rID, resourceType : resourceType, originFilename : originFilename, 'returnText': 'true'}, function(data) {
+            if (data != '') {
+                var input = document.getElementById('search_txt');
+                input.value = data;               
+            }
+        });
+    } else {
+        $.post('/tolist', {rID : rID, resourceType : resourceType, originFilename : originFilename}, function(data) {
+            if (data != '') {
+                window.open(data);
+            }
+        });
+    }
+
+}
+
+function createlist(rID, resourceType, originFilename) {
+    $.post('/createlist', {rID : rID, resourceType : resourceType, originFilename : originFilename}, function(data) {
         if (data != '') {
-            window.open(data);
+            window.open(data);               
         }
     });
 }
@@ -705,17 +842,21 @@ function appendContent(targetid, id, topic, url, otherInfo, hidenEngin) {
 
 }
 
+function hidenEnginSection(targetid) {
+    for (var i = 0; i < starDivCount; i++) {
+        var obj = document.getElementById(targetid + '-star-' + i.toString());
+        if (obj != null) {
+            obj.style.display = "none";
+        }
+    }    
+}
+
 function appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin) {
 
     if (hidenEngin) {
         //target.innerHTML = enginHtml + extensionHtml;
         //console.log('', targetid + '-star-0');
-        for (var i = 0; i < starDivCount; i++) {
-            var obj = document.getElementById(targetid + '-star-' + i.toString());
-            if (obj != null) {
-                obj.style.display = "none";
-            }
-        } 
+        hidenEnginSection(targetid);
     }
     
     console.log("xx", reference[id]);
@@ -903,6 +1044,20 @@ function userlog(text, url, module, library, rid, searchText, resourceType) {
     var os = getOsInfo();
     var browser = getBrowserInfo();
     $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){});
+}
+
+function userlogEx(aid, text, url, module, library, rid, searchText, resourceType) {
+    if (KEY_X_DOWN) {
+        KEY_X_DOWN = false;
+        return;
+    }
+    var os = getOsInfo();
+    var browser = getBrowserInfo();
+    $.post("/userlog", {aid : aid, text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){
+        
+        refreshTab(aid, 'history');
+
+    });
 }
 
 function agentRequest(agentName, rid, path) {

@@ -44,7 +44,7 @@ class History(BaseExtension):
             ret = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'alias'})
             if ret != None:
                 alias = ret.strip()
-                print 'alias:' + alias
+                #print 'alias:' + alias
 
         if alias.find(',') != -1:
             return alias.split(',')
@@ -68,24 +68,47 @@ class History(BaseExtension):
             return '1'
 
 
+
+
+    def genQuickAccessSyncButton(self, rid, quickAccessHistoryFile, divID, objID):
+
+        script = "$.post('/syncQuickAccess', {rid : '" + rid + "', fileName : '" + quickAccessHistoryFile + "'},function(data) { "
+
+        script += "refreshTab2('" + divID + "', '" + objID + "', 'history');"
+
+        script += "});"
+
+        html = '<a target="_blank" href="javascript:void(0);" onclick="' + script + '">' + self.utils.getIconHtml('', 'sync') + '</a>'
+
+        return html
+
     def excute(self, form_dict):
         self.form_dict = form_dict
         #print form_dict
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
-        rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ')
+        rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()
         rID = form_dict['rID'].encode('utf8')
         divID = form_dict['divID'].encode('utf8')
+        objID = form_dict['objID'].encode('utf8')
         alias = self.getAlias(rID.strip(), form_dict['originFileName'], nocache)
         html = ''
+        quickAccessHistoryFile = ''
 
         if self.existHistoryFile(form_dict['originFileName'].strip()):
             historyFilename = form_dict['originFileName'][form_dict['originFileName'].rfind('/') + 1 :].strip()
             historyFile = 'extensions/history/data/' + historyFilename + '-history'
+            quickAccessHistoryFile = self.utils.getQuickAccessHistoryFileName()
             print historyFile
             f = open(historyFile, 'r+')
             rDict = {}
             all_lines = f.readlines()
+            if Config.history_enable_quick_access:
+                quickAccess = self.utils.queryQuickAccess(rID)
+                if quickAccess != None:
+                    print 'quickAccess:' + quickAccess.line
+                    all_lines.append(quickAccess.line)
+                    #print all_lines
             for line in all_lines:
                 r = Record(line)
                 if r.valid(line) == False:
@@ -93,11 +116,14 @@ class History(BaseExtension):
                     continue
  
                 if r.get_url().strip() != '':
-                    key = r.get_url().strip()
+                    #key = r.get_url().strip()
+                    key = r.get_id().strip() + '-' +r.get_title().strip()
+                    if key.find(' - ') != -1:
+                        key = key[0 : key.find(' - ')].strip()
 
                     if rDict.has_key(key):
 
-                        cacheRecord = rDict[r.get_url().strip()]
+                        cacheRecord = rDict[key]
 
                         desc = self.getClickCount(cacheRecord)
 
@@ -107,27 +133,30 @@ class History(BaseExtension):
 
                         if line.find('clickcount:') != -1:
                             desc2 = str(int(self.getClickCount(r)))
-                            if int(desc2) > int(desc):
-                                desc = desc2
-
-                        desc = str(int(desc) + 1)
+                            #if int(desc2) > int(desc):
+                            #    desc = desc2
+                            desc = str(int(desc2) + int(desc))
+                        else:
+                            desc = str(int(desc) + 1)
 
                         preStr = cacheLine[0: cacheLine.rfind('clickcount:')].strip()
                         preStr2 = r.line[0: r.line.rfind('clickcount:')].strip()
 
-                        if len(preStr2) > len(preStr):
-                            preStr = preStr2
 
+
+                        newRecord = Record(preStr2)
+                        if newRecord.get_describe().strip() != '':
+                            preStr = preStr2
                         #print newLine
                         #print desc
-                        rDict[r.get_url().strip()] = Record(preStr + ' clickcount:' + desc + '\n') 
+                        rDict[key] = Record(preStr + ' clickcount:' + desc + '\n') 
                     else:
                         if line.find('clickcount:') != -1:
-                            rDict[r.get_url().strip()] = Record(line)
+                            rDict[key] = Record(line)
                         else:
                             preStr = line[0: line.rfind('clickcount:')].strip()
 
-                            rDict[r.get_url().strip()] = Record(preStr + ' clickcount:1' + '\n' )
+                            rDict[key] = Record(preStr + ' clickcount:1' + '\n' )
 
             rList = []
             #print rDict
@@ -140,6 +169,8 @@ class History(BaseExtension):
             f = None
             for k, v in rDict.items():
                 #print '---' + v.line
+                #if k.lower().endswith(Config.history_quick_access_name.lower()):
+                #    print ')))))))((((' + v
 
                 if v.line.strip() != '' and v.valid(v.line):
                     if len(rDict) != len(all_lines):
@@ -147,8 +178,8 @@ class History(BaseExtension):
                             #print historyFile
                             f = open(historyFile, 'w')
                         #print v.line
-
-                        f.write(v.line)
+                        if k.lower().endswith(Config.history_quick_access_name.lower()) == False and v.get_title().lower().strip() != Config.history_quick_access_name.lower():
+                            f.write(v.line)
                     if v.get_id().strip() == form_dict['rID'].strip() or (v.get_id().strip().startswith('loop') and v.get_id().strip().find(form_dict['rID'].strip()) != -1):
                         rList.append(v)
                 else:
@@ -197,14 +228,35 @@ class History(BaseExtension):
                     titleList = []
                     urlList = []
                     htmlList = []
+                    descHtmlList = []
+
+
                     for item in rList:
                         title = item.get_title().strip().replace('%20', ' ')
                         titleList.append(title)
                         #print titleList
                         urlList.append(item.get_url().strip())
-                        htmlList.append(self.getDeleteButton(divID, historyFile, item.get_url().strip()))
 
-                    return self.utils.toListHtml(titleList, urlList, htmlList, 10, False)
+                        appendFrontHtml = ''
+                        if title.lower() != Config.history_quick_access_name.lower():
+                            appendFrontHtml = self.utils.genQuickAcessButton(item, 'history', iconType='remark')
+                        else:
+                            appendFrontHtml = self.utils.genQuickAcessButton(item, 'history')
+
+
+                        if title.lower() != Config.history_quick_access_name.lower():
+                            htmlList.append(appendFrontHtml + self.getDeleteButton(divID, historyFile, item.get_url().strip()))
+                        else:
+                            #html = self.utils.getIconHtml('', 'quickaccess')
+                            html += appendFrontHtml + self.genQuickAccessSyncButton(rID, quickAccessHistoryFile, divID, objID) + '&nbsp;'
+
+                            htmlList.append(html)
+
+                        descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1))
+
+                    #splitNumber = len(rList) / 3
+                    splitNumber = len(rList)
+                    return self.utils.toListHtml(titleList, urlList, htmlList, descHtmlList=descHtmlList, splitNumber=splitNumber, moreHtml=True)
                 else:
                     html += '<div class="ref"><ol>'
                     for item in rList:
@@ -217,9 +269,19 @@ class History(BaseExtension):
                         jobj_record['count'] = self.getClickCount(item)
                         jobj_record['desc'] = item.get_describe()
 
-                        appendHtml = self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '&nbsp;'
+                        appendHtml = ''
+                        appendFrontHtml = ''
+                        if title.lower() != Config.history_quick_access_name.lower():
+                            appendFrontHtml = self.utils.genQuickAcessButton(item, 'history', iconType='remark')
+
+                            appendHtml += self.getDeleteButton(divID, historyFile, item.get_url().strip()) + '&nbsp;'
+                        else:
+                            #appendHtml = self.utils.getIconHtml('', 'quickaccess')
+                            appendFrontHtml = self.utils.genQuickAcessButton(item, 'history')
+
+                            appendHtml += self.genQuickAccessSyncButton(rID, quickAccessHistoryFile, divID, objID) + '&nbsp;'
                         #print jobj_record
-                        html += self.gen_item(rID, divID, count, jobj_record, Config.more_button_for_history_module, form_dict['originFileName'], appendHtml=appendHtml)
+                        html += self.gen_item(rID, divID, count, jobj_record, Config.more_button_for_history_module, form_dict['originFileName'], appendFrontHtml='', appendAfterHtml=appendFrontHtml+appendHtml)
 
                         '''
                         html += '<li><span>' + str(count) + '.</span>'
@@ -251,12 +313,13 @@ class History(BaseExtension):
                 html = ''
             return html
 
-    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[], appendHtml=''):
+    def gen_item(self, rID, ref_divID, count, jobj, moreOption, orginFilename, keywords=[], appendFrontHtml='', appendAfterHtml=''):
         html = ''
         
         html += '<li><span>' + str(count) + '.</span>'
 
         url = ''
+        resType = ''
         if jobj.has_key('url'):
             url = jobj['url']
 
@@ -265,24 +328,52 @@ class History(BaseExtension):
 
         title = self.utils.getValueOrText(jobj['title'].strip(), returnType='text')
 
+        if title.find(' - ') != -1:
+            resType = title[title.rfind('-') + 1 :].strip()
+            if Config.website_icons.has_key(resType):
+                title = title[0 : title.find(' - ')]
+
+        if title.find('/') != -1:
+            title = title[title.rfind('/') + 1 : ]
+
         ftitle = self.utils.formatTitle(title, Config.smart_link_br_len, keywords)
 
+        urlIcon = ''
         if url != '':
+            if title.lower() != Config.history_quick_access_name.lower():
+                urlIcon = self.utils.getIconHtml(url, title=jobj['title'])
             #print url + jobj['title']
             showText = ftitle
-            if Config.history_show_click_count and jobj.has_key('count'):
-                clickCount = jobj['count']
-                if int(clickCount) > 1:
-                    showText = ftitle + ' (' + clickCount + ')'
+            #if Config.history_show_click_count and jobj.has_key('count'):
+            #    clickCount = jobj['count']
+            #    if int(clickCount) > 1:
+            #        showText = ftitle + ' (' + clickCount + ')'
 
-            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, showText=showText) + self.utils.getIconHtml(url, title=jobj['title'])
+            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, showText=showText)
+
+            if appendFrontHtml != '':
+                html += appendFrontHtml
+
+            html += urlIcon
+
+            #if jobj['desc'].strip().startswith('clickcount') == False and title.lower() != Config.history_quick_access_name.lower():
+            #        html += self.utils.getIconHtml('', title='remark')
+            
+
         else:
-            html += '<p>' + title + ' > '
+            html += '<p>' + title 
+            if appendFrontHtml != '':
+                html += appendFrontHtml
+            html += ' > '
         #if self.existChild(str(jobj['id'])):
         #    html += ' > '
 
-        if appendHtml != '':
-            html += appendHtml
+        if urlIcon == '' and resType != '' and Config.website_icons.has_key(resType):
+
+            html += self.utils.getIconHtml('', title=resType)
+
+        if appendAfterHtml != '':
+            html += appendAfterHtml
 
         if moreOption:
             ref_divID += '-' + str(count)
@@ -290,8 +381,8 @@ class History(BaseExtension):
             appendID = str(count)
             originTitle = title
 
-            if title.find(' - ') != -1:
-                title = title[0 : title.find('-')].strip()
+            #if title.find(' - ') != -1:
+            #    title = title[0 : title.find('-')].strip()
 
             script = self.utils.genMoreEnginScript(linkID, ref_divID, "loop-h-" + rID.replace(' ', '-') + '-' + str(appendID) + '-' + str(jobj['id']), title, url, originTitle, hidenEnginSection=Config.history_hiden_engin_section)
 
@@ -299,11 +390,15 @@ class History(BaseExtension):
 
             if jobj.has_key('desc') and jobj['desc'].strip() != '':
                 #print jobj['desc']
-                descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list)
+                if Config.history_enable_subitem_log:
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=orginFilename, rid=rID, iconKeyword=True, fontScala=1)
+                else:
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID)
+            
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
             #print 'descHtml:' + descHtml
-            html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml=descHtml);
+            html += self.utils.genMoreEnginHtml(linkID, script.replace("'", '"'), '...', ref_divID, '', False, descHtml=descHtml).strip();
 
         html += '</p></li>'
 

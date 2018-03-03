@@ -88,15 +88,17 @@ class Content(BaseExtension):
         '''
 
     def getExtensionDataFilePath(self, name):
-        return self.data_dir + name + '-' + self.data_type
+        return os.getcwd() + '/' + self.data_dir + name + '-' + self.data_type
 
     def check(self, form_dict):
-        rID = form_dict['rID'].encode('utf8')
+        rID = form_dict['rID'].encode('utf8').strip()
         fileName = form_dict['fileName'].encode('utf8')
         #return True
 
         #    print 'xwwwww' + r.line
         #    return True
+        #print rID
+        #print self.getExtensionDataFilePath(self.formatFileName(fileName))
         p = self.utils.find_file_by_pattern_path(re.compile(rID, re.I), self.getExtensionDataFilePath(self.formatFileName(fileName)))
         print p
         if p != '':

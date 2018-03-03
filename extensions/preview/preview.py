@@ -55,7 +55,7 @@ class Preview(BaseExtension):
 	    if self.utils.suportFrame(url, 5) == False:
 		return url
 
-        html = '<div class="ref"><br><iframe width="' + width + '" height="' + height + '" src="' + src + '" frameborder="0" allowfullscreen></iframe>'
+        html = '<div class="ref"><br><iframe width="' + width + '" height="' + height + '" src="' + self.getUrl(src) + '" frameborder="0" allowfullscreen></iframe>'
 	if url.find('youtube') != -1 and url.find('watch') != -1:
             r = requests.get(url)
             soup = BeautifulSoup(r.text)
@@ -91,6 +91,19 @@ class Preview(BaseExtension):
 
         return html + '</div>'
         
+
+    def getUrl(self, url):
+        '''
+        if 'weixin' in url:
+            r = requests.get(url)
+            soup = BeautifulSoup(r.text)
+            p = soup.find('p', class_='tit')
+
+            url = p.a['href']
+
+        print 'getUrl:' + url
+        '''
+        return url
 
     def check(self, form_dict):
         url = form_dict['url'].encode('utf8')

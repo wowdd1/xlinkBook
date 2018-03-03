@@ -157,9 +157,9 @@ def customPrintFile(line):
     #customid = str(line_id)
 
 
-    customid = 'famous-neuroscientists'
-    #customid = parentid + '-' + str(line_id)
-    customid = parentid
+    #customid = 'famous-neuroscientists'
+    customid = parentid + '-' + str(line_id)
+    #customid = parentid
 
     if line.strip().startswith('|'):
         print customid + '-' + str(line_id) + line + 'author:' + line[line.find('|') + 1 : line.find('|', line.find('|') + 1)].strip()
@@ -251,7 +251,7 @@ def customPrintFile(line):
         print customid + '-Appendix.' + str(sub_pid) + ' | ' + line[line.find(' '):].strip() + ' | | parentid:' + customid + '-Appendix'
         return
     '''
-    
+    '''
     if id== 'pid':
         pid += 1
         sub_pid = 0
@@ -282,7 +282,7 @@ def customPrintFile(line):
     elif id == 'sub_sub_sub_sub_pid':
         sub_sub_sub_sub_pid += 1
         print customid + '-' + str(pid) + '.'  + str(sub_pid) + '.'  + str(sub_sub_pid) + '.'  + str(sub_sub_sub_pid) + '.'  + str(sub_sub_sub_sub_pid) + ' | ' + line[line.find(' ') : ].strip() + ' | | parentid:' + customid + '-' + str(pid) + '.'  + str(sub_pid) + '.' + str(sub_sub_pid) + '.'  + str(sub_sub_sub_pid)
-
+    '''
 
     '''
     if line.strip().startswith('PART'):
@@ -386,7 +386,7 @@ def customPrintFile(line):
         #title = title[0 : title.find('(')].strip()
     '''
     #print customid  + '-' + str(line_id) + ' | ' + line.strip()  + ' | | '
-    #print customid  +  ' | ' + line.strip()  + ' | | '
+    print customid  +  ' | ' + line.strip()  + ' | | '
     #print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
 
 
@@ -467,7 +467,7 @@ def convert(source):
        html_content = ''
        if source.startswith('http'):
            user_agent = {'User-agent': 'Mozilla/5.0'}
-           r = requests.get(source, headers = user_agent) 
+           r = requests.get(source, headers=user_agent) 
            html_content = r.text
        elif source.endswith('html') or source.endswith('htm'):
            f = open(source)

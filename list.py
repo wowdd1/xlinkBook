@@ -391,32 +391,18 @@ output_script_already = False
 def loadJSScript():
     result = ''
     result += script_head
-    result += loadFiles('web', '.js')
+    result += utils.loadFiles('web', '.js')
     result += script_end
     return result
     
 def loadCSS():
     result = ''
     result += css_head
-    result += loadFiles('web', '.css')
+    result += utils.loadFiles('web', '.css')
     result += css_end
     return result
 
-def loadFiles(folder, fileType):
-    cur_list = os.listdir(folder + '/')
-    result = ''
-    f_list = []
-    f_list_2 = []
-    for f in cur_list:
-        if f.startswith('jquery'):
-            f_list.append(f)
-        else:
-            f_list_2.append(f)
-    cur_list = f_list + f_list_2
-    for f in cur_list:
-        if f.endswith(fileType):
-            result += ''.join(open(folder + '/' + f, 'rU').readlines())
-    return result
+
 
 def getScript(file_name, first_record, total_records):
     if loadmore_mode:
@@ -508,7 +494,10 @@ def getScript(file_name, first_record, total_records):
                     appendContent('div-0-0-0','" + first_record.get_id().strip() + "','" + title + "','" + first_record.get_url().strip() + "','',false);"
                 for i in range(0, custom_cell_row):
                     click_more += "showdiv('td-div-0-0-" + str(i) + "', 'a-0-0-0');showdiv('tr-0-" + str(i) + "', 'a-0-0-0');"
+
+                click_more += "hidenEnginSection('div-0-0-0');"
                 click_more +="});";
+
             print script_head + click_more + script_end
 
         if plugins_mode == False:
@@ -802,6 +791,8 @@ def build_lines(list_all, file_name):
                 if html_style: 
                     if url.strip() != '' and url.find(Config.ip_adress) == -1:
                         id_title_lines[i][j] += utils.getIconHtml('url', width=10, height=8)
+
+                        #id_title_lines[i][j] += utils.genQuickAcessBtn(list_all[i][j].get_id().strip(), 'main')
                     if Config.extension_mode == False and Config.disable_default_engin == False:
                         id_title_lines[i][j] += utils.getDefaultEnginHtml(title, default_links_row)
                     if script != '' and Config.distribution == False:
@@ -1018,7 +1009,7 @@ def smartLink(content, record, containID=''):
         if tag == 'agent':
             return genSmartAgentLinkHtml(tag, ret, record, split_char, content)
         elif isDirectLinkTag(content):
-            return genSmartLinkHtml(tag, ret, record, split_char, '', content, dialogMode=False, containID=containID)
+            return genSmartLinkHtml(tag, ret, record, split_char, '', content, dialogMode=True, containID=containID)
         else:
             digMode = True
             if Config.smart_engin_for_tag_batch_open and Config.smart_engin_for_tag.has_key(tag):
@@ -1123,7 +1114,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
                 #    continue
             else:
                 sText = utils.getLinkShowText(accountTag, i.strip(), tag, len(ret), column_num=column_num)
-                linkText = getLinkText(accountTag, i.strip(), sText)
+                linkText = getLinkText(accountTag, i.strip(), sText, tag)
                 if url != '':
                     link = url
                     if url.find('%s') != -1:
@@ -1156,7 +1147,7 @@ def genSmartLinkHtml(tag, tag_content, record, split_char, url, content, urlFrom
             html += utils.genCrossrefHtml(record.get_id(), aid, tag, ret, source)
         else:
             sText = utils.getLinkShowText(accountTag, ret.strip(), tag, 1, column_num=column_num)
-            linkText = getLinkText(accountTag, ret.strip(), sText)
+            linkText = getLinkText(accountTag, ret.strip(), sText, tag)
             if url != '':
                 link = url
                 if url.find('%s') != -1:
@@ -1186,7 +1177,7 @@ def adjDialogMode(text, originDialogMode):
     return originDialogMode
 
 
-def getLinkText(accountTag, text, showText):
+def getLinkText(accountTag, text, showText, tagStr):
 
     return utils.getValueOrText(text, returnType='value')
     '''

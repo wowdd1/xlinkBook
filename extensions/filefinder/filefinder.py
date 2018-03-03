@@ -52,7 +52,7 @@ class Filefinder(BaseExtension):
 
         
         count = 0
-        if url != '' and self.isDir(url) == False:
+        if self.isDir(url) == False:
             for alias in aliasList:
                 count += 1
                 result = self.genFileList(self.getMatchFiles(alias.strip()).split('\n'),divID=divID + '-alias-' + str(count), rID=rID)
