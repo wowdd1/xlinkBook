@@ -110,7 +110,14 @@ class ExtensionManager:
                     form['name'] = form['navigate'].strip()
             
             extension = self.loadExtension(name)
-            return extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
+
+            starttime = 0
+            endtime = 0
+            starttime = datetime.datetime.now().microsecond
+            result = extension.excute(form) #'cs-stanford2016', form['rID'], form['rTitle'], form['divID'])
+            endtime = datetime.datetime.now().microsecond
+            print name + " excute cost --> " + str((endtime - starttime) / 1000.0) + "ms"
+            return result
     def checkCache(self, names, form):
         result = ''
         for name in names:
@@ -125,6 +132,8 @@ class ExtensionManager:
     def checkAll(self, form):
         result = ''
         for k, v in self.extensions.items():
+            starttime = 0
+            endtime = 0
             starttime = datetime.datetime.now().microsecond
             if self.loadExtension(k).check(form):
                 result += k + " "

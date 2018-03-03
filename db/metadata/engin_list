@@ -444,7 +444,7 @@ engin-453 | sparrho | https://www.sparrho.com/search/ | priority:5 description:p
 engin-454 | nowomics | https://nowomics.com/?q= | priority:3 description:paper discovery
 engin-455 | dlvr.it | https://app.dlvr.it/share/automate/new/inputs?q= | priority:3 description:discovery
 engin-456 | robohub | http://robohub.org/index.php?s= | priority:0 description:news
-engin-457 | patreon | https://www.patreon.com/search?q= | priority:0 description:finance
+engin-457 | patreon | https://www.patreon.com/search?q= | priority:6 description:finance
 engin-458 | microsoft | https://www.microsoft.com/en-us/research/search/?q= | priority:0 description:paper project
 engin-459 | research.google | https://research.google.com/search.html?q= | priority:0 description:paper project
 engin-460 | research.facebook | https://research.facebook.com/search?q= | priority:0 description:paper project
@@ -592,3 +592,10 @@ engin-601 | torrentbytes | https://www.torrentbytes.net/browse.php?search=%s&cat
 engin-602 | githyp | http://www.githyp.com/?s=%s | priority:8 description:game
 engin-603 | news.baidu | http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=%s | priority:4 description:news
 engin-604 | 3DM | http://bbs.3dmgame.com/search.php?mod=forums&searchid=2014&searchsubmit=yes&kw=%s | priority:8 description:game
+engin-605 | twitterTag | https://twitter.com/hashtag/%s?src=hash | priority:8 description:socialtag
+engin-606 | facebookTag | https://www.facebook.com/hashtag/%s | priority:8 description:socialtag
+engin-607 | socialblade | https://socialblade.com/search/%s | priority:8 description:social review
+engin-608 | gamebanana | https://gamebanana.com/search?query= | priority:6 description:game
+engin-609 | xunyingwang | http://www.xunyingwang.com/search?q=%s | priority:6 description:movie
+engin-610 | gamejolt | https://gamejolt.com/search?q=%s | priority:6 description:game
+engin-611 | nicovideo | http://www.nicovideo.jp/search/%s | priority:6 description:video

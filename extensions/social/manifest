@@ -1,0 +1,6 @@
+{
+    "name" : "social",
+    "module" : "social",
+    "class" : "Social",
+    "version" : "0.1"
+}

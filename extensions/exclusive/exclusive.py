@@ -5,6 +5,7 @@ from config import Config
 from utils import Utils
 from record import Record
 from knowledgegraph import KnowledgeGraph
+import os
 
 class Exclusive(BaseExtension):
 
@@ -15,19 +16,32 @@ class Exclusive(BaseExtension):
 
     def excute(self, form_dict):
         rID = form_dict['rID'].strip()
-        title = form_dict['rTitle'].strip()
+        title = form_dict['rTitle'].replace('%20', ' ').strip()
         #fileName = form_dict['fileName']
         url = form_dict['url'].strip()
         fileName = form_dict['originFileName']
         print fileName
-        r = self.utils.getRecord(rID, path=fileName)
+        if rID.startswith('loop-h'):
+            historyPath = os.getcwd() + '/extensions/history/data/' + fileName[fileName.rfind('/') + 1 :] + '-history' 
+            print historyPath
+            r = self.utils.getRecord(title, path=historyPath, matchType=2, use_cache=False)
+        else:
+            r = self.utils.getRecord(rID, path=fileName)
 
         if r != None and r.get_id().strip() != '':
-            db = fileName[fileName.find('db/') + 3 : fileName.rfind('/')] + '/'
-            key = fileName[fileName.rfind('/') + 1 :]
-            print db + ' ' + key
-            #return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + title.replace('...', '') + '&column=1'
-            return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1&enginType='  + Config.recommend_engin_type
+
+            if rID.startswith('loop-h'):
+                title = title.replace('%20', ' ')
+                desc = r.get_describe() + ' ' + self.kg.getCrossref(title, ' '.join(Config.exclusive_crossref_path))
+                record = Record('custom-exclusive-' + rID + ' | '+ title + ' | ' + url + ' | ' + desc)
+                return self.utils.output2Disk([record], 'exclusive', 'exclusive')
+
+            else:
+                db = fileName[fileName.find('db/') + 3 : fileName.rfind('/')] + '/'
+                key = fileName[fileName.rfind('/') + 1 :]
+                print db + ' ' + key
+                #return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + title.replace('...', '') + '&column=1'
+                return 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + key + '&filter=' + rID + '&column=1&enginType='  + Config.recommend_engin_type
         else:
             title = title.replace('%20', ' ')
             desc = 'engintype:' + title + ' '

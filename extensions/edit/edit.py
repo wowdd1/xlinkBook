@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8-*- 
 
 from extensions.bas_extension import BaseExtension
 from config import Config
@@ -22,6 +23,10 @@ class Edit(BaseExtension):
         if form_dict.has_key('textContent'):
             textContent = form_dict['textContent']
             library = ''
+            textContent = textContent.replace(',\n  ', ', ')
+            print textContent
+
+            #return ''
             if form_dict['fileName'].strip().endswith('-library'):
                 library = form_dict['fileName'][form_dict['fileName'].rfind('/') + 1 :].strip()
             return self.editRecord(rID, self.utils.removeDoubleSpace(textContent.replace('\n', ' ')), originFileName, library=library)
@@ -36,7 +41,7 @@ class Edit(BaseExtension):
             cols = '75'
             if column == '1':
                 rows = '45'
-                cols = '99' 
+                cols = '199' 
             elif column == '2':
                 rows = '35'
                 cols = '88'
@@ -46,7 +51,7 @@ class Edit(BaseExtension):
             print desc
             if int(form_dict['extension_count']) > 12:
                 html += '<br>'
-            html += '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px;" '
+            html += '<textarea rows="' + rows + '" cols="' + cols + '" id="' + areaID + '" style="font-size: 13px; border-radius:5px 5px 5px 5px; font-family:San Francisco;color:#003399;white-space:pre-wrap" '
             html += 'onfocus="setbg(' + "'" + areaID + "'," + "'#e5fff3');" + '" '
             html += 'onblur="setbg(' + "'" + areaID + "'," + "'white');" + '">'
             start = 0
@@ -69,6 +74,7 @@ class Edit(BaseExtension):
                 print line
                 if line.find(':') != -1 and line.find(':') < 15 and line[0 : 1].islower():
                     line = '\n' + line
+                line = line.replace(', ', ',\n  ')
                 html += line + '\n'
                 
 
@@ -117,18 +123,168 @@ class Edit(BaseExtension):
                     print 'old line:'
                     print line
                     all_lines.append(newline)
+
+                    self.syncHistory(line, newline, originFileName)
             f.close()
-            
-            f = open(originFileName, 'w')
-            if len(all_lines) > 0:
-                for line in all_lines:
-                    f.write(line)
-            else:
-                f.write('')
-                f.close()
+
+            self.write2File(originFileName, all_lines)
             
             return 'refresh'
         return 'error'
+
+
+    def syncHistory(self, oldLine, newLine, originFileName):
+        print '--syncHistory--'
+        if oldLine != newLine:
+
+            oldRecord = Record(oldLine)
+            newRecord = Record(newLine)
+
+            oldID = oldRecord.get_id().strip()
+            newID = newRecord.get_id().strip()
+
+            oldDesc = oldRecord.get_describe()
+            newDesc = newRecord.get_describe()
+
+            historyFileName = self.getHistoryFile(originFileName)
+            all_lines = []
+            historyRecord = None
+            count = 0
+
+            if oldID != newID and os.path.exists(historyFileName):
+                print 'id chanage'
+                f = open(historyFileName, 'rU')
+
+                for line in f.readlines():
+                    count += 1
+                    historyRecord = Record(line)
+
+                    if historyRecord.get_id().strip() == oldID:
+                        print 'match line:' + line
+                        newline = newID + ' | ' + historyRecord.get_title().strip() + ' | ' + historyRecord.get_url().strip() + ' | ' + historyRecord.get_describe().strip() + '\n'
+                        print 'newline:' + newline
+                        all_lines.append(newline)
+                    else:
+                        all_lines.append(line)
+                f.close()
+                print 'hislines before:' + str(count) + ' after:' + str(len(all_lines))
+
+                self.write2File(historyFileName, all_lines)
+
+            elif oldDesc != newDesc:
+                print 'desc chanage'
+                oldDescDict = self.utils.toDescDict(oldDesc, originFileName)
+                newDescDict =  self.utils.toDescDict(newDesc, originFileName)
+
+                notMatchDict = {}
+
+                for k, v in newDescDict.items():
+                    if oldDescDict.has_key(k) == False:
+                        print 'add new tag:' + k
+                    elif oldDescDict[k] != newDescDict[k]:
+                        print 'desc not match:' + k
+
+                        notMatchDict = self.whatNotMacth(oldDescDict[k], newDescDict[k])
+
+                for k, v in oldDescDict.items():
+                    if newDescDict.has_key(k) == False:
+                        print 'delete tag:' + k
+
+                if os.path.exists(historyFileName):
+                    print 'foud history file:' + historyFileName
+                    f = open(historyFileName, 'rU')
+
+                    for line in f.readlines():
+                        #print line[0 : line.find('|')].strip()
+                        #print newID
+                        count += 1
+                        historyRecord = Record(line)
+                        if newID != historyRecord.get_id().strip():
+                            all_lines.append(line)
+                        else:
+                            found = False
+                            for k, v in notMatchDict.items():
+                                #print historyRecord.get_title()
+                                #print k
+                                if historyRecord.get_title().find(k) != -1:
+
+                                    print 'matched line:'
+                                    print line
+                                    found = True
+                                    desc = self.utils.valueText2Desc(v, prefix=False).strip()
+
+                                    print 'new desc:'
+                                    print desc
+
+                                    if line.find('clickcount:') != -1:
+                                        clickcount = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'clickcount'}).strip()
+
+                                        desc += ' clickcount:' + clickcount
+                                    newline = historyRecord.get_id().strip() + ' | ' + historyRecord.get_title().strip() + ' | ' + historyRecord.get_url().strip() + ' | ' + desc.strip() + '\n'
+                                    print 'new line:'
+                                    print newline
+                                    all_lines.append(newline)
+                                    break
+                            if found == False:
+                                all_lines.append(line)
+                    f.close()
+                    print 'hislines before:' + str(count) + ' after:' + str(len(all_lines))
+
+                    self.write2File(historyFileName, all_lines)
+
+                    print '---syncHistory finish----'
+
+    def getHistoryFile(self, fileName):
+        if fileName.find('/') != -1:
+            fileName = fileName[fileName.rfind('/') + 1 :]
+        return 'extensions/history/data/'+ fileName + '-history'
+       
+
+
+    def write2File(self, fileName, lines):
+        if os.path.exists(fileName):
+            f = open(fileName, 'w')
+            if len(lines) > 0:
+                for line in lines:
+                    f.write(line)
+            else:
+                f.write('')
+                f.close()   
+
+    def whatNotMacth(self, oldValue, newValue):
+        result = {}
+
+        oldValueDict = self.toNotMatchDict(oldValue)
+        newValueDict = self.toNotMatchDict(newValue)
+
+        #print oldValueDict
+        #print newValueDict
+
+        for k, v in newValueDict.items():
+            if oldValueDict.has_key(k) and oldValueDict[k] != newValueDict[k]:
+                print 'whatChanage:' + k 
+
+                result[k] = newValueDict[k]
+
+        return result
+
+    def toNotMatchDict(self, value):
+        valueDict = {}
+        if value.find(',') != -1:
+            values = value.split(',')
+        else:
+            values = [value]
+
+        for item in values:
+            item = item.strip().encode('utf-8')
+            #print '===' + item
+            if self.utils.getValueOrTextCheck(item):
+                #print item[0 : item.find('(')]
+                valueDict[self.utils.getValueOrText(item, 'text')] = item
+            else:
+                valueDict[item] = item
+      
+        return valueDict
 
 
 

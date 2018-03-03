@@ -12,12 +12,29 @@ class Config():
     #ip_adress="172.16.14.82"
     ip_adress="localhost:5000"
 
+    proxies = {
+        "http": "http://127.0.0.1:8087",
+        "https": "http://127.0.0.1:8087",
+    }
+
+    proxies2 = {
+        "http": "http://127.0.0.1:8787",
+        "https": "http://127.0.0.1:8787",
+    }
+
+
+    proxies3 = {
+        "http": "http://127.0.0.1:1080",
+        "https": "http://127.0.0.1:1080",
+    }
+    
     igon_authorized = True
 
     engin_list_file = 'db/metadata/engin_list'
     engin_type_file = 'db/metadata/engin_type'
     engin_extension_file = 'db/metadata/engin_extension'
 
+    smart_link_style = 'font-family:San Francisco;'
     # enable urlFromServer  enhancedLink(..., urlFromServer=True)
     # engin query order smart_link_engin -> smart_engin_for_tag -> smart_engin_for_extension
     smart_link_engin = 'glucky' #'google'
@@ -30,10 +47,14 @@ class Config():
     smart_engin_for_tag_batch_open = False
     smart_engin_for_command_batch_open = ['twitter', 'baidu', 'amazon']
     max_account_for_tag_batch_open = 10
+    open_all_link_in_one_page = True
+    open_all_link_in_frameset_mode = False
+    max_last_open_urls = 7
     
     recommend_engin = True
     recommend_engin_num = 23
-    recommend_engin_num_dialog = 23
+    recommend_engin_num_dialog = 10
+    recommend_engin_num_dialog_row = 5
     recommend_engin_type = 'star' #ref db/metadata/engin_type
     recommend_engin_by_tag = False
 
@@ -42,7 +63,8 @@ class Config():
     smart_engin_for_tag = {'weixin' : ['weixin.so', 'weixinla', 'chuansong', 'toutiao', 'weibo', 'qoofan.com', 'glucky'],\
                            'fb-pages' : ['fb-pages', 'glucky'],\
                            'baijiahao' : ['baijiahao'],\
-                           'conference' : ['glucky', 'google', 'd:event']}
+                           'conference' : ['glucky', 'google', 'd:event'],\
+                           'social-tag' : 'd:socialtag'}
     '''
 
     smart_engin_for_tag = {'instructors' : ['twitter', 'youtube'],\
@@ -60,7 +82,7 @@ class Config():
 
     #smart_engin_for_dialog = ['google', 'youtube', 'twitter', 'baidu']
     smart_engin_for_dialog = []
-    command_for_dialog = ['add2library', 'trace', 'kgraph', 'exclusive']
+    command_for_dialog = ['add2library', 'add2qa', 'trace', 'kgraph', 'exclusive']
     command_for_tag_dialog = ['tolist', 'merger']
 
     recommend_engin_type_for_dialog = '' #'star' #ref db/metadata/engin_type
@@ -74,7 +96,7 @@ class Config():
     start_library_title = 'add some record from here!'
     start_library_url = 'http://' + ip_adress + '/?db=other/&key=degree-chart-mit2016&column=3'
 
-    menu_library_list = ['ai-library', 'multimedia-library', 'mind-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library', 'product-library', 'political-library']
+    menu_library_list = ['ai-library', 'multimedia-library', 'mind-library', 'neuro-library', 'gene-library', 'math-library', 'phys-library', 'chem-library', 'business-finance-library', 'engineering-library', 'product-library', 'manage-library', 'art-library']
     #default_library = ''
     default_library = 'ai-library'
     #default_library = 'engineering-library'
@@ -94,7 +116,7 @@ class Config():
     #default_library = 'social-library'
     #default_library = 'art-library'
     #default_library = 'literature-library'
-    #default_library = 'political-library'
+    #default_library = 'manage-library'
     #default_library = 'thought-library'
     #default_library = 'media-library'
     #default_library = 'telecom-library'
@@ -180,8 +202,9 @@ class Config():
     fontsize_after_click = ''
 
     fav_links = { #'arxiv' : ip_adress + '/?db=eecs/papers/arxiv/&key=?',\
-		  'civilization' : ip_adress + '/?db=other/&key=civilization2017&column=2',\
+		  'civilization' : ip_adress + '/?db=other/&key=civilization2018&column=2',\
           #'bioRxiv' : 'cshsymposium.com/biorxiv/chartdailydetail.php',\
+          'db' : ip_adress + '/?db=?',\
           #'rss' : ip_adress + '/?db=rss/&key=rss2016',\
           #'disk' : ip_adress + '/?db=other/&key=disk2016',\
           #'github' : ip_adress + '/?db=eecs/projects/github/&key=?',\
@@ -191,7 +214,8 @@ class Config():
           'rank' : ip_adress + '/?db=rank/&key=?',\
           #'paperbot' : 'https://web.paperbot.ai/',\
           #'iris.ai' : 'https://the.iris.ai/explore',\
-          'frontier' : ip_adress + '/?db=other/&key=frontier2017'}
+          'roadmap' : ip_adress + '/?db=other/&key=roadmap',\
+          'frontier' : ip_adress + '/?db=other/&key=frontier2018'}
 		  #'eecs' :  ip_adress + '/?db=eecs/&key=?'}
           #'library' : ip_adress + '/?db=library/&key=?'}
 		  #'neuroscience' : ip_adress + '/?db=neuroscience/&key=?'}
@@ -204,8 +228,8 @@ class Config():
     delete_forward = True
 
 
-    application_dict = {'.ppt' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
-                        '.pptx' : '/Applications/Keynote.app/Contents/MacOS/Keynote',\
+    application_dict = {'.ppt' : '/Applications/Preview.app/Contents/MacOS/Preview',\
+                        '.pptx' : '/Applications/Preview.app/Contents/MacOS/Preview',\
                         '.epub' : '/Applications/iBooks.app/Contents/MacOS/iBooks',\
                         '*' : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'}
 
@@ -231,6 +255,10 @@ class Config():
     history_hiden_engin_section = True
     hidtory_sort_type = 0 #0: click count 1: url 2: title
     history_show_click_count = False
+    history_enable_subitem_log = False
+    history_enable_quick_access = True
+    history_quick_access_item_count = 5
+    history_quick_access_name = 'Quick Access'
 
     #exclusive
     exclusive_crossref_path = ['db/library']
@@ -264,12 +292,12 @@ class Config():
     convert_output_data_format = ''
     '''
     #'''
-    convert_url_args = '/default.html?page=' #'?start=' #'?start=0&tag='
+    convert_url_args = '' #'?start=' #'?start=0&tag='
     convert_page_step = 1
     convert_page_start = 1
-    convert_page_max = 10
+    convert_page_max = 4
     convert_page_to_end = False
-    convert_tag = 'a#PostTitle' #"div#title"  # tag#class or tag
+    convert_tag = '' #"div#title"  # tag#class or tag
     convert_min_num = 0
     convert_max_num = 1000
     convert_filter = ""
@@ -278,6 +306,25 @@ class Config():
     convert_split_column_number = 0
     convert_output_data_to_new_tab = False
     convert_output_data_format = ''
+    convert_cut_start = ''
+    convert_cut_start_offset = 0
+    convert_cut_end = ''
+    convert_cut_end_offset = 0
+    convert_remove = ''
+    convert_cut_max_len = 1000
+    convert_script = ''
+    convert_script_custom_ui = False
+
+    convert_dict = {'reddit' : {'url_args' : '', 'page_step' : convert_page_step, 'page_start' : convert_page_start,\
+                                 'page_max' : convert_page_max, 'page_to_end' : convert_page_to_end, 'tag' : 'a#title',\
+                                 'min_num' : convert_min_num, 'max_num' : convert_max_num, 'filter' : convert_filter,\
+                                 'contain' : convert_contain, 'start' : convert_start, 'split_column_number' : convert_split_column_number,\
+                                 'output_data_to_new_tab' : convert_output_data_to_new_tab, 'output_data_format' : convert_output_data_format},\
+                    'zhuanlan' : {'url_args' : '?limit=100&offset=', 'tag' : '#PostListItem-title', 'page_start' : 0, 'page_step' : 0},\
+                    'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
+                    'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : '(Prese', 'split_column_number' : 40, 'cut_max_len' : 70},\
+                    'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
+                    'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12}}
     #'''
 
     #=====bk====
@@ -302,11 +349,19 @@ class Config():
     enable_website_icon = True
     website_icons = {'.pdf' : 'https://cdn4.iconfinder.com/data/icons/CS5/128/ACP_PDF%202_file_document.png',\
                  '.dir' : 'http://cdn.osxdaily.com/wp-content/uploads/2014/05/users-folder-mac-osx.jpg',\
-                 'delete' : 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1740783565,3782353396&fm=27&gp=0.jpg',\
+                 'delete' : 'https://cdn2.iconfinder.com/data/icons/duo-toolbar-signs/512/erase-512.png',\
                  'homepage' : 'http://grupojvr.com.mx/web/wp-content/uploads/2014/08/Direcci%C3%B3n-azul.png',\
                  'url' : 'http://vintaytime.com/wp-content/uploads/2017/02/url-shortener-icon.png',\
+                 'website' : 'https://image.flaticon.com/icons/png/128/12/12195.png',\
+                 'sync' : 'https://d1ueyc5nx1it61.cloudfront.net/4ca92ab816119221027.png',\
+                 'quickaccess' : 'https://cdn.tenforums.com/geek/gars/images/2/types/thumb_Quick_Access.png',\
+                 'clickcount' : 'http://www.freepngimg.com/download/mouse_cursor_click/1-2-click-free-download-png.png',\
                  'remark' : 'http://www.mystipendium.de/sites/all/themes/sti/images/coq/editxl.png',\
                  'youtube' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
+                 'y-video' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
+                 'y-channel' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
+                 'y-channel2' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
+                 'y-playlist' : 'https://www.seeklogo.net/wp-content/uploads/2016/06/YouTube-icon.png',\
                  'amazon' : 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAUqAAAAJGFmYjUxMmQ3LWUyNDUtNGJmMy04Nzc4LWRmYzE1YTExMDY2YQ.png',\
                  'csdn' : 'http://a2.mzstatic.com/us/r30/Purple71/v4/99/61/36/996136cc-f759-5c0c-4531-ee0c6fec786a/icon175x175.png',\
                  'coursera': 'http://techraze.com/wp-content/uploads/2015/06/Coursera-APK-1.png',\
@@ -328,12 +383,16 @@ class Config():
                  'quora' : 'https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/quora-128.png',\
                  'reddit' : 'http://icons.iconarchive.com/icons/uiconstock/socialmedia/128/Reddit-icon.png',\
                  'zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
+                 'z-zhihu' : 'http://a3.mzstatic.com/us/r30/Purple6/v4/6e/e3/2b/6ee32b96-56d5-27b8-ea7a-998dae663ce7/icon175x175.png',\
                  'videolectures' : 'http://ftp.acc.umu.se/mirror/addons.superrepo.org/v7/addons/plugin.video.videolectures.net/icon.png',\
                  'weixin' : 'http://img4.imgtn.bdimg.com/it/u=972460576,3713596294&fm=21&gp=0.jpg',\
                  'weibo' : 'http://img4.imgtn.bdimg.com/it/u=173132403,536146045&fm=21&gp=0.jpg',\
-                 'twitter' : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1508991050&di=8e1fd2688446e1afecc9ae98ec4d0ab6&imgtype=jpg&er=1&src=http%3A%2F%2Fzixun.tuan800.com%2Fuploads%2Fallimg%2F120607%2F18_120607093403_1.jpg',\
+                 'twitter' : 'https://abs.twimg.com/icons/apple-touch-icon-192x192.png',\
                  'slack' : 'http://www.freeiconspng.com/uploads/slack-icon-10.png',\
                  'facebook' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
+                 'fb-group' : 'http://img.25pp.com/uploadfile/app/icon/20160505/1462390862727305.jpg',\
+                 'g-plus' : 'http://upsidebusiness.com/blog/wp-content/uploads/2015/05/google-plus.jpg',\
+                 'instagram' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/240px-Instagram_icon.png',\
                  'localhost' : 'https://publicportal.teamsupport.com/Images/file.png',\
                  'iqiyi' : 'https://images-na.ssl-images-amazon.com/images/I/71ABWNB-YML._SL500_AA300_.png',\
                  'linkedin' : 'https://blogs.cornell.edu/info2040/files/2016/09/LinkedinII-2f706bu.png',\
@@ -344,9 +403,18 @@ class Config():
                  'zeef' : 'https://zeef.io/image/24118/300/s?1432128680548',\
                  'discord' : 'http://www.nirthpanter.net/uploads/4/7/2/8/47284995/discord_3_orig.png',\
                  'twitch' : 'http://apps.friday.tw/news/wp-content/uploads/2015/03/twitchicon.png',\
-                 'bilibili' : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509115826&di=df7ce219d3d1e3493044338df0f3375e&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.ithome.com%2FNewsUploadFiles%2Fthumbnail%2F2015%2F11%2F187408_240.jpg',\
+                 'bilibili' : 'http://images.firstpost.com/wp-content/uploads/2017/09/BiliBili-380px.png',\
                  'slideshare' : 'http://expandedramblingscom-oxyllvbag8y7yalm1.stackpathdns.com/wp-content/uploads/2013/07/slideshare.jpg',\
-                 'google' : 'http://images.dailytech.com/nimage/G_is_For_Google_New_Logo_Thumb.png',\
+                 'google' : 'https://www.nbr.co.nz/sites/default/files/styles/article_full_300w/public/blog_post_img/Google-Logo.jpg',\
                  'flickr' : 'http://clave7.webcindario.com/logo_flickr_01.png',\
                  'jianshu' : 'http://cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png',\
-                 'archive.org' : 'http://richmondsfblog.com/wp-content/uploads/2016/11/internet-archive-squarelogo.png'}
+                 'archive.org' : 'http://richmondsfblog.com/wp-content/uploads/2016/11/internet-archive-squarelogo.png',\
+                 'tieba' : 'https://cdn4.iconfinder.com/data/icons/chinas-social-share-icons/256/cssi_tieba-512.png',\
+                 'appveyor' : 'https://www.appveyor.com/assets/img/appveyor-logo-256.png',\
+                 'baiduyun' : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517551378&di=77dfd3111d5e7b16ea262c3ce893656e&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0114ed5945efb4a8012193a3dced37.png',\
+                 'mixer' : 'https://mixer.com/_latest/assets/images/main/logos/merge-on-black.png',\
+                 'douban' : 'https://img3.doubanio.com/pview/event_poster/raw/public/8147be751c6567f.jpg',\
+                 'patreon' : 'http://www.comixlaunch.com/wp-content/uploads/2016/08/patreon-logo-05.jpg',\
+                 'steam' : 'http://media.moddb.com/images/members/1/927/926352/profile/steam.png',\
+                 'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
+                 'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png'}

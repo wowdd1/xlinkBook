@@ -26,7 +26,7 @@ class Pathways(BaseExtension):
             width = '530'
             height = '600'
             if column == '1':
-                width = '1300'
+                width = '1400'
                 height = '600'
             elif column == '2':
                 width = '700'

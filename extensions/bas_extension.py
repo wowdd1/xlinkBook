@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from config import Config
+import requests
 
 class BaseExtension:
     name = ''
@@ -9,6 +10,8 @@ class BaseExtension:
         self.name = ''
 
 
+    def requests(self, url):
+        return requests.get(url, proxies=Config.proxies3, verify=False)
 
     def excute(form_dict):
         return    

@@ -17,6 +17,8 @@ from flask import (Flask, flash, request, redirect,
 from rauth.service import OAuth2Service
 from record import Tag, Record
 from knowledgegraph import KnowledgeGraph
+import twitter
+
 
 tag = Tag()
 kg = KnowledgeGraph()
@@ -155,7 +157,7 @@ def handleAddRecord():
 @app.route('/exclusive', methods=['POST'])
 def handleExclusive():
     print 'handleExclusive:'
-    #print request.form
+    print request.form
     data = request.form['data'].strip()
     fileName = request.form['fileName'].strip()
     enginArgs = request.form['enginArgs'].strip()
@@ -166,27 +168,51 @@ def handleExclusive():
     lastRID = request.form['rID'].strip()
     kgraph = request.form['kgraph'].strip()
 
+    record = None
+    desc = ''
     rID = ''
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
 
-    targetPath = ' '.join(Config.exclusive_crossref_path)
-    if crossrefPath != '':
-        targetPath = ' ' +  crossrefPath
-    desc = 'engintype:' + data + ' '
-    desc += 'localdb:' + data
-    desc += ' ' + kg.getCrossref(data, targetPath)
-    if resourceType != '':
-        desc += ' category:' + resourceType 
+    if resourceType != '' and lastRID != '' and fileName != '':
+        record = utils.getRecord(lastRID, path=fileName)
 
-    kg_cache = kg.getKnowledgeGraphCache(data)
-    if kg_cache != '':
-        desc += ' ' + kg_cache
-    elif kgraph == 'true':
-        desc += ' description:' + resourceType + '#' + originFilename + '#' + lastRID
+    if record != None and record.get_id().strip() == lastRID:
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : resourceType})
+        for v in ret.split(','):
+            v = v.strip()
+            if v.startswith(data):
+                desc = utils.valueText2Desc(v)
+                break
+
+    else:
+
+        targetPath = ' '.join(Config.exclusive_crossref_path)
+        if crossrefPath != '':
+            targetPath = ' ' +  crossrefPath
+        desc = 'engintype:' + data + ' '
+        desc += 'localdb:' + data
+        desc += ' ' + kg.getCrossref(data, targetPath)
+        if resourceType != '':
+            desc += ' category:' + resourceType 
+
+        kg_cache = kg.getKnowledgeGraphCache(data)
+        if kg_cache != '':
+            desc += ' ' + kg_cache
+        elif kgraph == 'true':
+            desc += ' description:' + resourceType + '#' + originFilename + '#' + lastRID
+
+
     url = ''
     if data.startswith('http'):
         url = data
+    elif utils.getValueOrTextCheck(data):
+        text = utils.getValueOrText(data, returnType='text')
+        value = utils.getValueOrText(data, returnType='value')
+        if value.startswith('http'):
+            data = text
+            url = value 
+
     url = doExclusive(rID, data, url, desc)
     
     if enginArgs.find(':') != -1:
@@ -234,6 +260,90 @@ def handleKnowledgeGraph():
 def doExclusive(rID, title, url, desc):
     record = Record('custom-exclusive-' + rID + ' | '+ title + ' | ' + url + ' | ' + desc)
     return utils.output2Disk([record], 'main', 'exclusive') 
+
+
+
+@app.route('/add2Library', methods=['POST'])
+def handleAdd2Library():
+    rid = request.form['rid']
+    text = request.form['text'].encode('utf-8')
+    resourceType = request.form['resourceType']
+    library = request.form['library']
+
+    r = utils.getRecord(rid, path=library)
+    if r != None:
+        args = { 'tag' : resourceType + ':' } 
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, args)
+
+        itemDescDict = {}
+        for item in ret.split(','):
+            item = item.strip().encode('utf-8')
+            if item.startswith(text):
+                itemDescDict = utils.toDescDict(utils.valueText2Desc(item), library)
+                break
+
+        url = ''
+        if itemDescDict.has_key('website'):
+            homepage = itemDescDict['website']
+            if homepage.find(',') != -1:
+                homepage = homepage[0 : homepage.find(',')]
+
+            url = utils.getValueOrText(homepage, returnType='value')
+
+        desc = utils.dict2Desc(itemDescDict).replace(text + ' - ', '')
+        line = rid + '-' + resourceType + ' | ' + text + ' | ' + url + ' | ' + desc + ' \n'
+
+        if os.path.exists(library):
+            f = open(library, 'a')
+            f.write(line)
+            f.close()
+
+    return ''
+
+@app.route('/add2QucikAccess', methods=['POST'])
+def handleAdd2QucikAccess():
+    rid = request.form['rid']
+    text = request.form['text'].encode('utf-8')
+    resourceType = request.form['resourceType']
+    library = request.form['library']
+
+    r = utils.getRecord(rid, path=library)
+    if r != None:
+        args = { 'tag' : resourceType + ':' } 
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, args)
+
+        itemDescDict = {}
+        qaDescDict = {}
+        for item in ret.split(','):
+            item = item.strip().encode('utf-8')
+            if item.startswith(text):
+                itemDescDict = utils.toDescDict(utils.valueText2Desc(item), library)
+                break
+
+        qaRecord = utils.queryQuickAccess(rid)
+
+        if qaRecord != None:
+            qaDescDict = utils.toDescDict(qaRecord.get_describe(), library)
+
+        desc = utils.dict2Desc(utils.mergerDescDict(itemDescDict, qaDescDict))
+
+
+        url = ''
+        if len(lastOpenUrls) > 0:
+            url = lastOpenUrls[len(lastOpenUrls) - 1]
+        
+        if url == '':
+            url = utils.toQueryUrl(utils.getEnginUrl(Config.smart_link_engin), text)
+
+        line = rid + ' | ' + Config.history_quick_access_name + ' | ' + url + ' | '
+        line += desc + ' clickcount:1000 \n'
+
+        editQuickAccessHistoryfile(line)
+
+        return 'ok'
+
+    #print r.line
+    return ''
     
 @app.route('/batchOpen', methods=['POST'])
 def handleBatchOpen():
@@ -250,10 +360,119 @@ def handleBatchOpen():
             for e2 in epEngins:
                 url = utils.toQueryUrl(utils.getEnginUrl(e2), data)
                 urls += url + ' '
-        print urls
+                print url
         return urls
 
     return ''
+
+@app.route('/allInOnePage', methods=['POST'])
+def handleAllInOnePage():
+    text = request.form['text'].strip()
+    urls = request.form['urls'].strip()
+    module = request.form['module'].strip()
+    print 'text:' +text
+    print 'urls:' + urls
+
+    html = ''
+    suportLinkHtml = ''
+    notSuportLinkHtml = ''
+    suportLink = {}
+    notSuportLink = {}
+
+    textArray = text.split(',')
+    urlArray = urls.split(',')
+
+
+    style = '<style>body {width:100%; background-color:#E6E6FA;}</style>'
+    head = '<html><head>' + style + '</head><body><table>'
+    end = '</body></html>'
+    count = 0
+    for i in range(0, len(urlArray)):
+        itemText = textArray[i].strip()
+        itemUrl = urlArray[i].strip()
+        space = ''
+
+        if utils.suportFrame(itemUrl, 0.8):
+        #if True:
+    
+            print itemUrl + ' suport'
+            suportLink[itemText] = itemUrl
+            suportLinkHtml += '<a target="_black" href="' + itemUrl + '"><font style="font-size:10pt;">' + itemText + '</font></a>&nbsp;'
+        else:
+            notSuportLink[itemText] = itemUrl
+            notSuportLinkHtml += '<a target="_black" href="' + itemUrl + '"><font style="font-size:10pt;">' + itemText + '</font></a>&nbsp;'
+
+    count = 0
+    row = ''
+    htmlList = []
+    if Config.open_all_link_in_frameset_mode == False:
+        for k, v in suportLink.items():
+            row += '<td><iframe  id="iFrameLink" width="470" height="700" frameborder="0"  src="' + v +'" ></iframe></td><td width="60" ></td><td width="60" ></td><td width="60" ></td>'
+            count = count + 1
+            if count == 3:
+                html += '<tr>' + row + '</tr>'
+                count = 0
+                row = ''
+
+        if row != '':
+            html += '<tr>' + row + '</tr>' 
+
+            html = head + '<div style="width:100%; background-color:#E6E6FA"><div style="margin-left:auto; text-align:center;margin-top:2px; margin-right:auto; ">' + suportLinkHtml + \
+        '&nbsp;&nbsp;/&nbsp;&nbsp; ' + notSuportLinkHtml + '</div><div style="height: 21px; width: 100px"></div>' + html + '</div>' + end
+
+            htmlList = [html]
+    else:
+        for k, v in suportLink.items():
+            row += '<frame src="' + v +'" ></frame>'
+            count = count + 1
+            if count == 4:
+                frameset = '<frameset cols="25%,*,25%, 25%">' + row + '</frameset>'
+                html += frameset
+                htmlList.append(frameset)
+                count = 0
+                row = ''
+
+        if row != '':
+            if count == 1:
+                
+                frameset = '<frameset cols="100%">' + row + '</frameset>' 
+                html += frameset
+            if count == 2:
+                frameset = '<frameset cols="*,50%">' + row + '</frameset>' 
+                html += frameset
+            if count == 3:
+                frameset = '<frameset cols="*,30%,30%">' + row + '</frameset>' 
+                html += frameset
+            htmlList.append(frameset)
+
+
+
+    if len(htmlList) > 0:
+        for html in htmlList:
+            outputDir = Config.output_data_to_new_tab_path + module + '/'
+            if os.path.exists(outputDir) == False:
+                os.makedirs(outputDir)
+            fileName = 'onepage.html'
+            cmd = "echo '" + html + "' > " + outputDir + fileName
+            #print cmd
+            output = subprocess.check_output(cmd, shell=True)    
+
+
+
+            url = "file:///Users/zd/dev/python/xlb_env/xlinkBook/" + outputDir + fileName
+
+            #for k, v in notSuportLink.items():
+            #    if k != Config.history_quick_access_name:
+            #        localOpenFile(v, fileType='.html')
+
+            localOpenFile(url)
+
+    else:
+        for k, v in notSuportLink.items():
+            if k != Config.history_quick_access_name:
+                localOpenFile(v, fileType='.html')
+    return ''
+
 
 @app.route('/merger', methods=['POST'])
 def handleMerger():
@@ -277,7 +496,7 @@ def handleMerger():
                 value = utils.getValueOrText(originText, returnType='value')
 
                 
-                desc = valueText2Desc(originText, text=text, value=value, form=request.form, record=record,tagSplit='%%')
+                desc = utils.valueText2Desc(originText, text=text, value=value, form=request.form, record=record,tagSplit='%%')
                 for item in desc.split('%%'):
                     if item.strip() == '':
                         continue
@@ -317,6 +536,58 @@ def handleMerger():
 
     return ''
 
+
+
+@app.route('/createlist', methods=['POST'])
+def handleCreateList():
+    print 'handleCreateList'
+    rID = request.form['rID'].strip()
+    fileName = request.form['originFilename'].strip()
+    resourceType = request.form['resourceType'].strip()
+
+    if resourceType == 'twitter':
+        record = utils.getRecord(rID, path=fileName)
+
+
+    if record != None and record.get_id().strip() == rID:
+
+        listName = record.get_title().strip().replace(' ', '-') + '-' + resourceType
+ 
+        args = { 'tag' : resourceType + ':' } 
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, args)
+
+        api = twitter.Api()
+        
+
+        allList = api.GetLists(screen_name='wowdd1')
+
+        for item in allList:
+            if item.name == listName:
+                api.DestroyList(owner_screen_name='wowdd1', list_id=item.id)
+
+                print 'DestroyList:' + item.name
+
+        twitterList = api.CreateList(listName)
+        print 'CreateList:' + listName
+
+
+        for user in ret.split(','):
+            user = user.strip()
+
+            twitterUser = api.GetUser(screen_name=user)
+            try:
+                api.CreateListsMember(list_id=twitterList.id, screen_name=user, owner_screen_name='wowdd1') 
+            except Exception as e:
+                print 'user ' + user + ' can not be add to list'
+
+        return 'https://twitter.com/wowdd1/lists/' + listName
+
+        print ret  
+
+
+    return ''
+
+
 @app.route('/tolist', methods=['POST'])
 def handleToList():
     rID = request.form['rID'].strip()
@@ -327,6 +598,7 @@ def handleToList():
 
     record = utils.getRecord(rID, path=fileName)
     records = []
+    textList = []
     accountTag = utils.isAccountTag(resourceType, tag.tag_list_account)
 
     if record != None and record.get_id().strip() == rID:
@@ -369,79 +641,27 @@ def handleToList():
                     k, url = utils.getCrossrefUrl(item)
             elif Config.smart_engin_for_tag.has_key(resourceType):
                 url = utils.toQueryUrl(utils.getEnginUrl(Config.smart_engin_for_tag[resourceType][0]), item.strip())
+            elif resourceType == 'website':
+                url = value
             else:
                 #url = utils.toQueryUrl(utils.getEnginUrl('glucky'), item.strip() + ' ' + resourceType)
                 url = ''
 
-            #print url
-
-            records.append(Record(' | ' + item + ' | ' + url + ' | ' + valueText2Desc(originText, text=text, value=value, form=request.form, record=record)))
+            print url
+            textList.append(item.strip())
+            records.append(Record(' | ' + item + ' | ' + url + ' | ' + utils.valueText2Desc(originText, text=text, value=value, form=request.form, record=record)))
+    if request.form.has_key('returnText'):
+        return ', '.join(textList)
     if len(records) > 0:
-        return utils.output2Disk(records, 'tag', rID + '-' + resourceType, ignoreUrl=False)
+        outputUrl = utils.output2Disk(records, 'tag', rID + '-' + resourceType, ignoreUrl=False)
+
+        if record != None:
+            toHistoryfile(rID + ' | ' + record.get_title().strip() + ' - ' + resourceType.strip() + ' | ' + outputUrl + ' |', fileName)
+
+        return outputUrl
+
     return ''
 
-
-def valueText2Desc(originText, text='', value='', form=None, record=None, tagSplit=' '):
-    if text == '' or value == '':
-        text = utils.getValueOrText(originText, returnType='text')
-        value = utils.getValueOrText(originText, returnType='value')
-
-    if utils.getValueOrTextCheck(originText):
-        values = []
-        if value.find('+') != -1:
-            values = value.split('+')
-        else:
-            values = [value]
-        result = ''
-        desc = 'description:'
-        website = 'website:'
-        for v in values:
-            subText = v
-            subValue = v
-            if utils.getValueOrTextCheck(v):
-                subText = utils.getValueOrText(v, returnType='text')
-                subValue = utils.getValueOrText(v, returnType='value')
-
-                if utils.isAccountTag(subText, tag.tag_list_account):
-                    #result += subText + ':' + subValue + ' '
-                    if result.find(subText + ':') != -1:
-                        split = result.find(subText + ':') + len(subText) + 1
-                        result = result[0 : split] + subValue + ', ' + result[split:]
-                    else:
-                        result += subText + ':' + subValue + tagSplit
-
-                elif utils.isUrlFormat(subValue):
-                    website +=  text + ' - ' + subText + '(' + subValue + '), '
-                elif utils.search_engin_dict.has_key(subValue):
-                    website += text + ' - ' + subText + '(' + utils.toQueryUrl(utils.getEnginUrl(subValue), subText) + '),'
-                elif utils.getValueOrTextCheck(subValue):
-                    newSubText = utils.getValueOrText(subValue, returnType='text')
-                    newSubValue = utils.getValueOrText(subValue, returnType='value')
-
-                    if utils.isAccountTag(newSubText, tag.tag_list_account):
-                        if result.find(newSubText + ':') != -1:
-                            split = result.find(newSubText + ':') + len(newSubText) + 1
-                            result = result[0 : split] + subText + '(' + newSubValue + '), ' + result[split:]
-                        else:
-                            result += newSubText + ':' + subText + '(' + newSubValue + ')' + tagSplit
-                else:
-                    desc += subText + ' '
-
-            else:
-                desc += v + ' '
-        
-        result = result.strip()
-        if website != 'website:':
-            website = website.strip()
-            if website.endswith(','):
-                website = website[0 : len(website) - 1]
-            result += tagSplit + website
-        if desc != 'description:':
-            result += tagSplit + desc
-        return result
-
-    else:
-        return ''
 
 def toRecordFormat(data):
     if data.find('|') != -1:
@@ -452,6 +672,22 @@ def toRecordFormat(data):
             rID += item[0 : 1]
         return rID + ' | ' + data + ' | | \n'
 
+def localOpenFile(fileName, fileType=''):
+    cmd = 'open "' + fileName + '"'
+    app = ''
+    if fileType == '':
+        fileType = fileName
+    for k, v in Config.application_dict.items():
+        if fileType.lower().strip().endswith(k):
+            app = v
+            break
+    if app == '':
+        app = Config.application_dict['*']
+    if os.path.exists(app):
+        cmd = app.replace(' ', '\ ') + ' "' + fileName + '"'
+        print cmd
+        output = subprocess.check_output(cmd, shell=True)
+
 @app.route('/exec', methods=['POST'])
 def handleExec():
     command = request.form['command']
@@ -459,18 +695,7 @@ def handleExec():
     print command + ' ' + fileName
     output = ''
     if command == 'open':
-        cmd = 'open "' + fileName + '"'
-        app = ''
-        for k, v in Config.application_dict.items():
-            if fileName.lower().strip().endswith(k):
-                app = v
-                break
-        if app == '':
-            app = Config.application_dict['*']
-        if os.path.exists(app):
-            cmd = app.replace(' ', '\ ') + ' "' + fileName + '"'
-            print cmd
-            output = subprocess.check_output(cmd, shell=True)
+        localOpenFile(fileName)
     elif command == 'edit':
         cmd = 'open "' + fileName + '"'
         sublime = '/Applications/Sublime Text.app/Contents/MacOS/Sublime Text'
@@ -578,12 +803,18 @@ def handleQueryNavTab():
 @app.route('/queryUrl', methods=['POST'])
 def handleQueryUrl():
     result = ''
+    aid = ''
+    print request.form
+    if request.form.has_key('aid'):
+        aid = request.form['aid'].strip()
+
     if request.form.has_key('isTag') and (request.form['isTag'] == True or request.form['isTag'] == 'True' or request.form['isTag'] == 'true'):
         record = utils.getRecord(request.form['rID'], path=request.form['fileName'])
+        #print record.line
         if record != None and record.get_id().strip() == request.form['rID']:
             args = { 'tag' : request.form['searchText'].strip() + ':' } 
             ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, args)
-            print ret
+            #print 'ret ' + ret
             if ret != None:
                 if ret.find(', ') != -1:
                     ret = ret.split(',')
@@ -601,15 +832,19 @@ def handleQueryUrl():
                         for q in ret:
                             script += "window.open('" + utils.toQueryUrl(utils.getEnginUrl(k.strip()), q.strip()).strip().replace('#', '') + "');"
                         result += '<a target="_blank" href="javascript:void(0);" onclick="' + script + '" style="color:#999966;font-size:10pt;">' + k + '</a>'+ '&nbsp;'
-                        if count % 5 == 0 and count > 0 and len(resultDict) != 5:
+                        if count % Config.recommend_engin_num_dialog_row == 0 and count > 0 and len(resultDict) != Config.recommend_engin_num_dialog_row:
                             result += '<br>'
                         if count >= Config.recommend_engin_num_dialog:
                             break
                     if len(Config.command_for_tag_dialog) > 0:
-                        library = os.getcwd() + '/db/library/' + Config.default_library;
-                        result += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'], tagCommand=True)
+                        #library = os.getcwd() + '/db/library/' + Config.default_library;
+                        result += '<br>' + dialogCommand(request.form['fileName'], request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'], tagCommand=True, aid=aid)
 
                     if utils.isAccountTag(request.form['searchText'].strip(), tag.tag_list_account) and len(ret) > Config.max_account_for_tag_batch_open:
+                        
+                        if request.form['searchText'].strip() == 'twitter':
+                            script = "createlist('" + request.form['rID'].strip() + "', 'twitter','" + request.form['fileName'].strip() + "');"
+                            result += utils.enhancedLink('', '#createlist', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
                         count = 0
                         base = 0
                         for i in range(0, len(ret)):
@@ -619,18 +854,18 @@ def handleQueryUrl():
                                 base += 1
                                 count = 0
 
-                                result += ' ' + utils.genTagLink(text, 'dialog', request.form['library'], request.form['rID'], request.form['resourceType'].strip(), False, '', suffix='', searchText=request.form['searchText'].strip())
+                                result += ' ' + utils.genTagLink(text, 'dialog', request.form['library'], request.form['rID'], request.form['resourceType'].strip(), False, '', suffix='', searchText=request.form['searchText'].strip(), fileName=request.form['fileName'])
 
                                 #print result
 
                         if count != 0:
                             text = request.form['searchText'].strip() +'(' + str(base * Config.max_account_for_tag_batch_open + 1) + '-' + str(base * Config.max_account_for_tag_batch_open + count) + ')'
-                            result += ' ' + utils.genTagLink(text, 'dialog', request.form['library'], request.form['rID'], request.form['resourceType'].strip(), False, '', suffix='', searchText=request.form['searchText'].strip())
+                            result += ' ' + utils.genTagLink(text, 'dialog', request.form['library'], request.form['rID'], request.form['resourceType'].strip(), False, '', suffix='', searchText=request.form['searchText'].strip(), fileName=request.form['fileName'])
                             base += 1
 
                             count = 0
 
-
+                    #print result
                     return result
                 else:
                     urls = ''
@@ -655,12 +890,14 @@ def handleQueryUrl():
                                 if count >= start and count <= end:
                                     url = tag.tag_list_account[request.form['searchText'] + ':'].replace('%s', q.strip())
                                     urls += url + ' '
+                                    print url
       
                         else:
                             for q in ret:
                                 url = utils.toQueryUrl(utils.getEnginUrl('glucky'), q)
                                 urls +=  url + ' '
-                        print urls + '<<<<'
+                                print url
+                        #print urls + '<<<<'
                         #return ''
                         return urls
             else:
@@ -725,6 +962,7 @@ def handleQueryUrl():
                 infoLen = 0
                 infoBR = False
                 infoBRCount = 0
+                textList = []
                 linkList = []
 
                 for k, v in resultDict.items():
@@ -734,13 +972,13 @@ def handleQueryUrl():
                         v = utils.toQueryUrl(utils.getEnginUrl('glucky'), request.form['searchText'] + '%20' + k)
                             
                     searchHtml += utils.enhancedLink(v, utils.formatEnginTitle(k), searchText=request.form['searchText'], style="color:#999966; font-size: 10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType']) + '&nbsp;'
-                    if count % 5 == 0 and count > 0 and len(resultDict) != 5:
+                    if count % Config.recommend_engin_num_dialog_row == 0 and count > 0 and len(resultDict) != Config.recommend_engin_num_dialog_row:
                         searchHtml += '<br>'
                     if count >= Config.recommend_engin_num_dialog:
                         break                    
                 if len(Config.command_for_dialog) > 0:
-                    library = os.getcwd() + '/db/library/' + Config.default_library;
-                    commandHtml += '<br>' + dialogCommand(library, request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'])
+                    #library = os.getcwd() + '/db/library/' + Config.default_library;
+                    commandHtml += '<br>' + dialogCommand(request.form['fileName'], request.form['searchText'], request.form['resourceType'], request.form['fileName'], request.form['rID'], aid=aid)
                 if utils.getValueOrTextCheck(request.form['originText']):
                     valueList = [value]
                     text = utils.getValueOrText(request.form['searchText'], returnType='text')
@@ -748,15 +986,19 @@ def handleQueryUrl():
                         valueList = value.split('+')
                     infoHtml += '<br>'
                     count = 0
+                    dialogAID = ''
                     for v in valueList:
                         count += 1
+                        if aid != '':
+                            dialogAID = aid + '-' + str(count)
                         if utils.search_engin_dict.has_key(v):
                             v = utils.toQueryUrl(utils.getEnginUrl(v), text)
                         if utils.isUrlFormat(v):
                             if utils.isShortUrl(v) == False and v.startswith('http') == False:
                                 v = 'http://' + v
-                            infoHtml += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                            infoHtml += utils.enhancedLink(v, text, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
                             infoLen += len(text)
+                            textList.append(text)
                             linkList.append(v)
 
                         elif utils.getValueOrTextCheck(v):
@@ -767,15 +1009,27 @@ def handleQueryUrl():
                             if utils.isUrlFormat(subValue):
                                 if utils.isShortUrl(subValue) == False and subValue.startswith('http') == False:
                                     subValue = 'http://' + subValue
-                                if Config.website_icons.has_key(subText.strip().lower()):
-                                    iconHtml = utils.getIconHtml(subText)
-                                    infoHtml += utils.enhancedLink(subValue, text + ' - ' + subText, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
-                                    infoLen += 1
+                                subTextList = [subText]
+                                if subText.startswith('[') and subText.endswith(']'):
+                                    subText = subText[1 : len(subText) - 1]
+                                    subTextList = subText.split('*')
 
-                                else:
-                                    infoHtml += utils.enhancedLink(subValue, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
-                                    infoLen += len(subText)
-                                linkList.append(subValue)
+                                for st in subTextList:
+                                    sv = subValue
+                                    if subValue.find('%s') != -1:
+                                        sv = subValue.replace('%s', st)
+                                    if Config.website_icons.has_key(st.strip().lower()):
+                                        iconHtml = utils.getIconHtml(st)
+                                        infoHtml += utils.enhancedLink(sv, text + ' - ' + st, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                        infoLen += 1
+
+                                    else:
+                                        infoHtml += utils.enhancedLink(sv, text + ' - ' + st, showText=st, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                        infoLen += len(st)
+
+                                    infoHtml += '&nbsp;'
+                                    textList.append(st)
+                                    linkList.append(sv)
 
                             else:
                                 oldSubText = subText
@@ -788,27 +1042,33 @@ def handleQueryUrl():
                                         
                                 if utils.isAccountTag(subText, tag.tag_list_account):
                                     url = tag.tag_list_account[subText + ':']
-                                    if url.find('%s') != -1:
-                                        url = url.replace('%s', subValue)
-                                    else:
-                                        url = url + subValue
-                                    if oldSubText != subValue:
-                                        subText = oldSubText
+                                    subValueList = [subValue]
+                                    if subValue.find('*') != -1:
+                                        subValueList = subValue.split('*')
+                                    for sv in subValueList:
+                                        if url.find('%s') != -1:
+                                            url = url.replace('%s', sv)
+                                        else:
+                                            url = url + sv
+                                        if oldSubText != sv:
+                                            subText = oldSubText
 
-                                    if Config.website_icons.has_key(subText.strip().lower()):
-                                        iconHtml = utils.getIconHtml(subText)
-                                        infoHtml += utils.enhancedLink(url, text, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
-                                        infoLen += 1
+                                        if Config.website_icons.has_key(subText.strip().lower()):
+                                            iconHtml = utils.getIconHtml(subText)
+                                            infoHtml += utils.enhancedLink(url, text, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                            infoLen += 1
 
-                                    else:
-                                        infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
-                                        infoLen += len(subText)
+                                        else:
+                                            infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                            infoLen += len(subText)
+                                        textList.append(subText)
+                                        linkList.append(url)
                                 else:
                                     url = utils.bestMatchEnginUrl(subValue, resourceType=request.form['resourceType'])
-                                    infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'])
+                                    infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
                                     infoLen += len(subText)
-
-                                linkList.append(url)
+                                    textList.append(subText)
+                                    linkList.append(url)
 
 
 
@@ -829,14 +1089,16 @@ def handleQueryUrl():
  
 
                 if len(linkList) > 1:
-                    print linkList
-                    script = "batchOpenUrls('" + ','.join(linkList) + "');"
+                    print textList
+                    print '\n'.join(linkList)
+                    script = utils.getBatchOpenScript(textList, linkList, 'dialog')
                     infoHtml += ' /&nbsp;' + utils.enhancedLink('', '#all', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;")
 
                 if infoBR:
                     result = infoHtml[4:] + commandHtml 
                 else:
                     result = searchHtml + commandHtml + infoHtml
+                    result = result.replace('<br><br>', '<br>')
 
                 result = str(count) + '#' + result
     else:
@@ -848,7 +1110,7 @@ def handleQueryUrl():
 
     return result
 
-def dialogCommand(fileName, text, resourceType, originFilename, rID, tagCommand=False):
+def dialogCommand(fileName, text, resourceType, originFilename, rID, tagCommand=False, aid=''):
     result = ''
     if tagCommand:
         for command in Config.command_for_tag_dialog:
@@ -861,8 +1123,12 @@ def dialogCommand(fileName, text, resourceType, originFilename, rID, tagCommand=
     else:
         for command in Config.command_for_dialog:
             if command == 'add2library':
-                script = "addRecord('" + fileName + "', '" + text + "');"
+                script = "add2Library('" + rID + "', '" + aid + "', '" + text + "', '" + resourceType + "', '" + fileName + "');"
                 result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+            elif command == 'add2qa':
+                script = "add2QucikAccess('" + rID + "', '" + aid + "', '" + text + "', '" + resourceType + "', '" + fileName + "');"
+                result += utils.enhancedLink('', '#add2qa', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
+                print result
             elif command == 'exclusive':
                 script = "exclusive('" + fileName + "', '" + text + "', '', true, '" + resourceType + "', '" + originFilename + "', '" + rID + "', engin_args, false);"
                 result += utils.enhancedLink('', '#exclusive', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
@@ -875,20 +1141,76 @@ def dialogCommand(fileName, text, resourceType, originFilename, rID, tagCommand=
 
     return result
 
+lastOpenUrls = []
+autoGenHistory = {}
+
+@app.route('/syncQuickAccess', methods=['POST'])
+def handleSyncQuickAccess():
+    rid = request.form['rid'].strip()
+    fileName = request.form['fileName'].strip()
+    print 'handleSyncQuickAccess:' + rid + ' ' + fileName
+    if rid != '' and autoGenHistory.has_key(rid) and fileName!= '':
+        values = autoGenHistory[rid]
+        if values != '':
+            desc =  getQuickAccessDesc(values)
+            print 'handleSyncQuickAccess:' + desc
+
+            url = ''
+            if len(lastOpenUrls) > 0:
+                url = lastOpenUrls[len(lastOpenUrls) - 1]
+            line = rid + ' | ' + Config.history_quick_access_name + ' | ' + url + ' | '
+            line += desc + ' clickcount:1000 \n'
+
+            editQuickAccessHistoryfile(line)
+            autoGenHistory[rid]= ''
+    return ''
+
+def getQuickAccessDesc(values):
+    itemDict = {}
+    itemDesc = ''
+    if values == '':
+        return ''
+    if values.find(',') != -1:
+        for item in values.split(','):
+            item = item.strip()
+            if item == '':
+                continue
+            itemKey = item[0 : item.find(':')]
+            itemValue = item[item.find(':') + 1 :].strip()
+            if itemDict.has_key(itemKey):
+                itemDict[itemKey] = itemDict[itemKey] + ', ' + itemValue
+            else:
+                itemDict[itemKey] = itemValue
+    else:
+        itemDict[values[0 : values.find(':')]] = values[values.find(':') + 1 :].strip()
+
+
+    for ik, iv in itemDict.items():
+        itemDesc += ik + ':' + iv + ' ' 
+
+    return itemDesc
+
 @app.route('/userlog', methods=['POST'])
 def handleUserLog():
     dt = str(datetime.datetime.now())
+    linktext = request.form['text'].replace('%20', ' ').strip()
+    resourceType = request.form['resourceType'].strip()
+    url = request.form['url'].strip()
+    aid  = ''
+    if request.form.has_key('aid'):
+        aid = request.form['aid'].strip()
     print 'handleUserLog--->  ' + dt[0 : dt.rfind('.')] + '  <---'
-    print '     linktext: ' + request.form['text'].replace('%20', ' ')
+    print '     aid: ' + aid
+    print '     linktext: ' + linktext
     print '     searchText: ' + request.form['searchText'].replace('%20', ' ')
-    print '     url: ' + request.form['url']
+    print '     url: ' + url
     print '     module: ' + request.form['module']
     library = request.form['library']
     if library.find('db/') != -1:
         library = library[library.find('db/') :]
     print '     library: ' + library
     print '     rid: ' + request.form['rid']
-    print '     resourceType: ' + request.form['resourceType']
+    print '     resourceType: ' + resourceType
     print '     user: ' + request.form['user']
     print '     os: ' + request.form['os']
     print '     browser: ' + request.form['browser']
@@ -896,28 +1218,105 @@ def handleUserLog():
     print '     ip: ' + request.form['ip']
     print '     from: ' + request.form['from']
 
-    module = request.form['module'].strip()
-    if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
-        title = utils.getValueOrText(request.form['searchText'].replace('|', ''), returnType='text')
 
-        if request.form['resourceType'] != '' and utils.isAccountTag(request.form['resourceType'].strip(), tag.tag_list_account) == False and utils.getValueOrTextCheck(request.form['searchText']):
+    lastOpenUrls.append(request.form['url'])
+
+    if len(lastOpenUrls) > Config.max_last_open_urls:
+        lastOpenUrls.remove(lastOpenUrls[0])
+    if len(lastOpenUrls) > 0:
+        print "lastOpenUrls:"
+        for url in lastOpenUrls:
+            print url
+        print ''
+    module = request.form['module'].strip()
+
+    if Config.history_enable_quick_access:
+        autoGenLine = ''
+        if autoGenHistory.has_key(request.form['rid']):
+            autoGenLine = autoGenHistory[request.form['rid']]
+        if library == '' and module == 'history' and linktext != '' and linktext.lower() != Config.history_quick_access_name.lower():
+            desc = ''
+            if resourceType == 'website':
+                desc = 'website:' + linktext
+            else:
+                desc = resourceType + ':' + linktext
+
+            print desc
+
+            if autoGenLine.find(desc) == -1:
+                if autoGenLine == '':
+                    autoGenLine += desc
+                else:
+                    autoGenLine += ', ' + desc
+
+            autoGenHistory[request.form['rid']] = autoGenLine
+
+        if len(autoGenHistory.items()) > 0:
+            for k, v in autoGenHistory.items():
+                print k + ' ' + v
+                itemCount = 0
+                if v.find(',') != -1:
+                    itemCount = len(v.split(','))
+
+                if itemCount > Config.history_quick_access_item_count:
+                    itemDesc = getQuickAccessDesc(v)
+                    #print itemDesc
+
+                    if request.form['rid'].strip() != '':
+                        line = request.form['rid'] + ' | ' + Config.history_quick_access_name + ' | ' + request.form['url'] + ' | '
+                        line += itemDesc + ' clickcount:1000 \n'
+
+                        editQuickAccessHistoryfile(line)
+                        autoGenHistory[request.form['rid']] = ''
+
+                    print line
+                else:
+                    if request.form['rid'].strip() != '' and request.form['url'].strip() != '':
+                        line = request.form['rid'].strip() + ' | ' + Config.history_quick_access_name + ' | ' + request.form['url'].strip() + ' | \n'
+                        editQuickAccessHistoryfile(line, onlyEditUrl=True)
+        else:
+            if request.form['rid'].strip() != '' and request.form['url'].strip() != '':
+                line = request.form['rid'].strip() + ' | ' + Config.history_quick_access_name + ' | ' + request.form['url'].strip() + ' | \n'
+                editQuickAccessHistoryfile(line, onlyEditUrl=True)
+
+        print autoGenHistory
+
+    if library != '' and request.form['rid'].strip() != '' and request.form['url'].strip() != '' and igonLog(module) == False:
+        title = utils.getValueOrText(request.form['searchText'].replace('|', ''), returnType='text').strip()
+
+        if request.form['resourceType'] != '' and \
+            utils.isAccountTag(request.form['resourceType'].strip(), tag.tag_list_account) == False and\
+            utils.getValueOrTextCheck(request.form['searchText']):
+            
             title += ' - ' + request.form['resourceType']
+
         line = request.form['rid'] + ' | ' + title + ' | ' + request.form['url'] + ' | '
 
         desc = ''
-        if request.form['resourceType'].strip() != '' and title.find(' - ') == -1:
+        if module == 'dialog' and request.form['resourceType'].strip() != '':
             record = utils.getRecord(request.form['rid'].strip(), path=library)
-            if record != None and record.line.find(title + '(') != -1:
+            #if record != None:
+            #    print record.line
+            if title.find(' - ') != -1:
+                title = title[0 : title.find(' - ')].strip()
+            if record != None:
                 rtValue = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : request.form['resourceType']})
 
-                for rtItem in rtValue.split(','):
-                    if rtItem.strip().startswith(title + '('):
-                        print ')))))))'
-                        desc = valueText2Desc(rtItem).replace(title + ' - ', '')
-                        print desc
-                        break
+                if rtValue.find(title + '(') != -1:
+                    itemList = []
+                    if rtValue.find(',') != -1:
+                        itemList = rtValue.split(',')
+                    else:
+                        itemList = [rtValue]
+                    for rtItem in itemList:
+                        if rtItem.strip().startswith(title + '('):
+                            print ')))))))'
+                            desc = utils.valueText2Desc(rtItem).replace(title + ' - ', '')
+                            print desc
+                            break
 
         line += desc.strip() + ' '
+
         toHistoryfile(line, library)
         #utils.slack_message(request.form['url'], 'general')
 
@@ -927,9 +1326,44 @@ def toHistoryfile(line, library):
     if library.find('/') != -1:
         library = library[library.rfind('/') + 1 :]
     historyFile = 'extensions/history/data/' + library + '-history'
+
+    
     cmd = 'echo "' + line + '" >> ' + historyFile
     print cmd
-    output = subprocess.check_output(cmd, shell=True)    
+    output = subprocess.check_output(cmd, shell=True) 
+
+def editQuickAccessHistoryfile(line, onlyEditUrl=False):
+
+    historyFile = utils.getQuickAccessHistoryFileName()
+
+    if os.path.exists(historyFile):
+        f = open(historyFile, 'r+')
+        r = Record(line)
+        allLine = []
+        found = False
+        for qline in f.readlines():
+            record = Record(qline)
+            if record.get_id().strip() == r.get_id().strip():
+                if onlyEditUrl:
+                    allLine.append(record.get_id().strip() + ' | ' + record.get_title().strip() + ' | ' + r.get_url().strip() + ' | ' + record.get_describe().strip() + '\n')
+                else:
+                    allLine.append(line)
+                found = True
+            else:
+                allLine.append(qline)
+        f.close()
+
+        f = open(historyFile, 'w')
+
+        if found == False and onlyEditUrl == False:
+            allLine.append(line)
+        for qline in allLine:
+            f.write(qline)
+
+
+
+        f.close()
+
 
 def igonLog(module):
     for md in Config.igon_log_for_modules:
@@ -993,6 +1427,7 @@ def web(page):
 
 def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, enginType, navigation, verify, alexa, track, loadmore, nosearchbox, page):
     print 'track:' + track
+    print 'nosearchbox:' + str(nosearchbox)
     if db.endswith('/') == False:
         db += '/'
     cmd = "./list.py -i " + Config.default_db + "/" + db + key + " -b 4"
@@ -1062,8 +1497,9 @@ def listAllFile(db):
     html += '<head>'
     html += '<style type="text/css">a { font-weight:Normal;  text-decoration:none; } a:hover { text-decoration:underline; }</style>'
     html += '<script language="JavaScript" type="text/JavaScript">'
-    html += ''.join(open('web/jquery-3.1.1.min.js', 'rU').readlines())
-    html += 'function userlog(text, url, module, library, rid) {$.post("/userlog", {text : text , url : url, module : module, library : library, rid : rid}, function(data){});}'
+    #html += ''.join(open('web/jquery-3.1.1.min.js', 'rU').readlines())
+    #html += 'function userlog(text, url, module, library, rid) {$.post("/userlog", {text : text , url : url, module : module, library : library, rid : rid}, function(data){});}'
+    html += utils.loadFiles('web', '.js')
     html +='</script>'
     html += '</head>'
     #return genList(files, folder, db)
@@ -1108,7 +1544,9 @@ def genTable(files, folder= '', db=''):
     for f in sorted(files):
        count += 1
        if os.path.isfile(os.path.join(folder, f)):
-           tds += '<td>' + utils.enhancedLink('http://' + Config.ip_adress + '/?db=' + db + '&key=' + f, f, module='file', library=db + f, newTab=False) + '</td>'
+           url = 'http://' + Config.ip_adress + '/?db=' + db + '&key=' + f 
+           url += '&nosearchbox=true'
+           tds += '<td>' + utils.enhancedLink(url, f, module='file', library=db + f, newTab=False) + '</td>'
        else:
            if db != '':
                tds += '<td>' + utils.enhancedLink('http://' + Config.ip_adress + '/?db=' + db + f +  '/&key=?', f, module='file', library=db + f, newTab=False) + '</td>'
@@ -1123,8 +1561,8 @@ def genTable(files, folder= '', db=''):
     return html
 
 def genList(files, folder='', db=''):
-    html = ''
-    html += '<ul style="margin:0; padding:0; list-sytle:none;">'
+    html = '<head><script>' + utils.loadFiles('web', '.js') + '</script></head>'
+    html += '<body><ul style="margin:0; padding:0; list-sytle:none;">'
     count = 0
     for f in sorted(files):
         count += 1
@@ -1140,7 +1578,7 @@ def genList(files, folder='', db=''):
                 url = 'http://' + Config.ip_adress + '/?db=' + f +  '/&key=?'
                 html += '<li>' + utils.enhancedLink(url, f, module='file', library=f, newTab=False)  + '</li>'
 
-    html += '</ul>'
+    html += '</ul></body>'
     return html
 
 
