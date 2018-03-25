@@ -263,6 +263,8 @@ class Config():
     #exclusive
     exclusive_crossref_path = ['db/library']
     exclusive_local_db_path = 'db/' + default_subject
+    exclusive_default_tab = {'twitter' : 'convert'}
+
 
     #filefinder
     filefinder_dirs = ['~/Downloads', 'db']
@@ -324,7 +326,8 @@ class Config():
                     'csdn' : {'url_args' : '/article/list/', 'tag' : 'h3#blog-title'},\
                     'gdcvault' : {'url_args' : '', 'tag' : 'div#conference_info', 'cut_start' : '20', 'cut_start_offset' : 2, 'cut_end' : 'by', 'remove' : '(Prese', 'split_column_number' : 40, 'cut_max_len' : 70},\
                     'nips' : {'tag' : 'li', 'min_num' : 15, 'split_column_number' : 100, 'cut_end' : ',', 'cut_max_len' : 80},\
-                    'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12}}
+                    'twitter' : {'script' : 'convert_twitter.py', 'script_custom_ui' : False, 'split_column_number' : 12},\
+                    'igdb' : {'script' : 'convert_igdb.py', 'script_custom_ui' : True, 'split_column_number' : 12}}
     #'''
 
     #=====bk====
@@ -414,7 +417,9 @@ class Config():
                  'baiduyun' : 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517551378&di=77dfd3111d5e7b16ea262c3ce893656e&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0114ed5945efb4a8012193a3dced37.png',\
                  'mixer' : 'https://mixer.com/_latest/assets/images/main/logos/merge-on-black.png',\
                  'douban' : 'https://img3.doubanio.com/pview/event_poster/raw/public/8147be751c6567f.jpg',\
+                 'doulist' : 'https://img3.doubanio.com/pview/event_poster/raw/public/8147be751c6567f.jpg',\
                  'patreon' : 'http://www.comixlaunch.com/wp-content/uploads/2016/08/patreon-logo-05.jpg',\
                  'steam' : 'http://media.moddb.com/images/members/1/927/926352/profile/steam.png',\
                  'vine' : 'http://media.idownloadblog.com/wp-content/uploads/2014/03/Vine-1.4.8-for-iOS-app-icon-small-e1404946147708.png',\
-                 'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png'}
+                 'nico' : 'https://ddnavi.com/wp-content/uploads/2013/02/img_540644_19961289_0.png',\
+                 'disqus' : 'https://i2.wp.com/www.betterhostreview.com/wp-content/uploads/disqus.jpg'}

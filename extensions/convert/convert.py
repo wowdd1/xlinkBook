@@ -148,6 +148,10 @@ class Convert(BaseExtension):
         divID = form_dict['divID'].encode('utf8')
         rID = form_dict['rID'].encode('utf8')
         
+        resourceType = ''
+        if form_dict.has_key('resourceType'):
+            resourceType = form_dict['resourceType'].encode('utf8')
+
         self.initArgs(url)
 
         #print 'convert_script:' + self.convert_script
@@ -162,7 +166,7 @@ class Convert(BaseExtension):
             if self.convert_script_custom_ui:
                 return data.replace('\n', '<br>')
             else:
-                return self.genHtml(self.processData(data), divID, rID)
+                return self.genHtml(self.processData(data), divID, rID, resourceType)
 
         else:
             if url == '':
@@ -193,11 +197,11 @@ class Convert(BaseExtension):
                         break
                     new_url = url + str(step)
                 if all_data != '':
-                    return self.genHtml(all_data, divID, rID)
+                    return self.genHtml(all_data, divID, rID, resourceType)
                 else:
                     return ''
             else:
-                html = self.genHtml(self.convert2data(new_url), divID, rID)
+                html = self.genHtml(self.convert2data(new_url), divID, rID, resourceType)
 
         return html
 
@@ -230,7 +234,7 @@ class Convert(BaseExtension):
         return data.strip()
 
 
-    def genHtml(self, data, divID, rID):
+    def genHtml(self, data, divID, rID, resourceType):
         
         html = ''
         start = False
@@ -273,7 +277,7 @@ class Convert(BaseExtension):
             if desc.find('icon:') != -1:
                 icon = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'icon'})
 
-                title = ' <a href="javascript:void(0);" onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false);" + '"><img src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
+                title = ' <a href="javascript:void(0);" onclick="' + "openUrl('" + link + "', '" + link[link.rfind('/') + 1 :] + "', true, false, '" + rID + "', '" + resourceType + "', '');" + '"><img src="' + icon + '"' + ' alt="' + r.get_title().strip() + '"  style="border-radius:10px 10px 10px 10px; opacity:0.7;"></a>'
 
 
             if self.convert_split_column_number > 0 and (self.count== 1 or self.count > self.convert_split_column_number):

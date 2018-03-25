@@ -10,6 +10,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 import random
 from utils import Utils
+from record import Record
 from bs4 import BeautifulSoup
 import requests
 from config import Config
@@ -388,7 +389,19 @@ def customPrintFile(line):
     #print customid  + '-' + str(line_id) + ' | ' + line.strip()  + ' | | '
     print customid  +  ' | ' + line.strip()  + ' | | '
     #print line[0 : line.find(' ')].lower() + ' | ' + line[line.find(' ') :].strip()+ ' | | '
+    '''
+    r = Record(line)
 
+    title = r.get_title()
+
+    #title = title[title.find(',') + 1 :].strip().lower() +  ' ' + title[0 : title.find(',')].strip().lower()
+
+    new_title = ''
+    for t in title.split(' '):
+        new_title += t[0: 1].upper() + t[1:] + ' '
+
+    print r.get_id().strip() + customid + ' | ' + title.strip() + ' | | ' + r.get_describe().strip() 
+    '''
 
 def printLine(line, link='', source='', id='', desc=''):
     #line_id = random.randrange(10, 100, 2)

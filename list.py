@@ -20,6 +20,7 @@ import datetime
 
 source = ""
 filter_keyword = ""
+crossrefQuery = ''
 column_num = Config.column_num
 
 custom_cell_len = Config.custom_cell_len
@@ -45,6 +46,8 @@ verify = ''
 database = ''
 dir_mode = False
 username = ''
+
+extension = ''
 
 utils = Utils()
 line_max_len_list = [0, 0, 0]
@@ -407,7 +410,7 @@ def loadCSS():
 def getScript(file_name, first_record, total_records):
     if loadmore_mode:
         return 
-    global output_script_already
+    global output_script_already, crossrefQuery
     if output_script_already == True:
         return
     output_script_already = True
@@ -440,7 +443,7 @@ def getScript(file_name, first_record, total_records):
             for content in div_content_extension_list:
                 print "extension_array.push('" + content + "');" 
 
-
+        print 'var extension = "' + extension + '";'
         print 'var user_name = "' + username + '";'
         print 'var fileName = "' + os.getcwd() + '/' + source + '";'
         print 'var library = "' + os.getcwd() + '/db/library/' + Config.default_library + '";'
@@ -449,6 +452,9 @@ def getScript(file_name, first_record, total_records):
         print 'var key = "";'
         print 'var starDivCount = ' + str(starDivCount) + ';'
         print 'var hidenMoreCount = ' + str(custom_cell_row) + ';' 
+
+        print 'var crossrefQuery = "' + crossrefQuery + '";'
+
         if plugins_mode == False:
             if len(Config.smart_engin_for_dialog) > 0:
                 print 'var dialog_engin_count = ' + str(len(Config.smart_engin_for_dialog)) + ';'
@@ -1872,10 +1878,10 @@ def source2library(source):
 
 
 def main(argv):
-    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type, keyword_list
+    global source, column_num,filter_keyword, output_with_color, output_with_describe, custom_cell_len, custom_cell_row, top_row, level, merger_result, old_top_row, engin, css_style_type, output_navigation_links, max_nav_links_row, verify, max_nav_link_row, database, plugins_mode, split_length, max_nav_link_row, loadmore_mode, search_box_hiden, library_hiden, username, current_page, trackmode, trackmode_engin_type, keyword_list, extension, crossrefQuery
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:q:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
-                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page', 'tracemode'])
+        opts, args = getopt.getopt(sys.argv[1:], 'hk:i:c:f:s:dw:r:t:l:mb:e:nv:u:apz:xy:o:q:j:g:', ["help", "keyword", "input", "column", "filter", "style", "describe", "width", "row", "top", "level", "merger", "border",\
+                      "engin", "navigation", "verify", "use", "alexa", "plugins", 'loadmore', 'nosearchbox', 'username', 'page', 'tracemode', 'extension', 'crossrefQuery'])
     except getopt.GetoptError, err:
         print str(err)
         usage()
@@ -1954,6 +1960,11 @@ def main(argv):
             trackmode = True
             trackmode_engin_type = str(a)
             #print '---' + trackmode_engin_type
+
+        elif o in ('-j', '--extension'):
+            extension = str(a)
+        elif o in ('-g', '--crossrefQuery'):
+            crossrefQuery = a
 
     if source.endswith('-library'):
         keyword_list = tag.get_tag_list(source2library(source))

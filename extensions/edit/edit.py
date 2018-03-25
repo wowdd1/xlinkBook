@@ -130,7 +130,7 @@ class Edit(BaseExtension):
             self.write2File(originFileName, all_lines)
             
             return 'refresh'
-        return 'error'
+        return 'error'        
 
 
     def syncHistory(self, oldLine, newLine, originFileName):
@@ -218,8 +218,9 @@ class Edit(BaseExtension):
 
                                     if line.find('clickcount:') != -1:
                                         clickcount = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', line, {'tag' : 'clickcount'}).strip()
+                                        desc += ' clickcount:' + str(clickcount) 
+                                                  
 
-                                        desc += ' clickcount:' + clickcount
                                     newline = historyRecord.get_id().strip() + ' | ' + historyRecord.get_title().strip() + ' | ' + historyRecord.get_url().strip() + ' | ' + desc.strip() + '\n'
                                     print 'new line:'
                                     print newline

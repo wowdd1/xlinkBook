@@ -66,6 +66,8 @@ def index():
         return listAllFile(db)
     else:
         args_history['column'] = request.args.get('column', Config.column_num)
+
+        #filter="keyword[and]keyword[or]keyword[not]keyword"
         args_history['filter'] = request.args.get('filter','')
         args_history['style'] = request.args.get('style', str(Config.css_style_type))
         args_history['desc'] = request.args.get('desc', 'true')
@@ -83,6 +85,11 @@ def index():
         args_history['track'] = request.args.get('track', 'false')
         args_history['nosearchbox'] = request.args.get('nosearchbox', 'false')
         args_history['page'] = request.args.get('page', '')
+        args_history['extension'] = request.args.get('extension', '')
+
+        # crossrefQuery="other/gdc-speakers2018/filter=description:%s"
+        args_history['crossrefQuery'] = request.args.get('crossrefQuery', '')
+
         cmd = genCmd(db, key, 
                       request.args.get('column', Config.column_num),
                       request.args.get('filter', ''),
@@ -100,7 +107,7 @@ def index():
                       request.args.get('verify', ''),
                       request.args.get('alexa', ''),
                       request.args.get('track', 'false'), '', request.args.get('nosearchbox', 'false'),
-                      request.args.get('page', ''))
+                      request.args.get('page', ''), args_history['extension'], request.args.get('crossrefQuery', ''))
         
         print '\ncmd  --->   '  + cmd + '   <---\n'
         html = subprocess.check_output(cmd, shell=True)
@@ -126,7 +133,7 @@ def handleLoadmore():
                       args_history['verify'],
                       args_history['alexa'],
                       args_history['track'], 'true', args_history['nosearchbox'],
-                      args_history['page'],)
+                      args_history['page'], args_history['extension'])
 
     print '\ncmd  --->   '  + cmd + '   <---\n'
     html = subprocess.check_output(cmd, shell=True)
@@ -162,6 +169,7 @@ def handleExclusive():
     fileName = request.form['fileName'].strip()
     enginArgs = request.form['enginArgs'].strip()
     crossrefPath = request.form['crossrefPath'].strip()
+    crossrefQuery = request.form['crossrefQuery'].strip()
     newTab = request.form['newTab'].strip()
     resourceType = request.form['resourceType'].strip()
     originFilename = request.form['originFilename'].strip()
@@ -171,6 +179,13 @@ def handleExclusive():
     record = None
     desc = ''
     rID = ''
+
+    text = data
+    value = data
+    if utils.getValueOrTextCheck(data):
+        text = utils.getValueOrText(data, returnType='text')
+        value = utils.getValueOrText(data, returnType='value')
+
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
 
@@ -178,25 +193,64 @@ def handleExclusive():
         record = utils.getRecord(lastRID, path=fileName)
 
     if record != None and record.get_id().strip() == lastRID:
+        #print '--->' + record.line
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : resourceType})
-        for v in ret.split(','):
-            v = v.strip()
-            if v.startswith(data):
-                desc = utils.valueText2Desc(v)
-                break
+        if ret != None:
+            for v in ret.split(','):
+                v = v.strip()
+                if v.startswith(data):
+                    desc = utils.valueText2Desc(v, prefix=False)
+                    break
+        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'crossref'})
+        crossref = ''
+
+        if crossrefPath != '':
+            crossref = kg.getCrossref(text, crossrefPath)
+        if ret != None:
+            if crossref != '':
+                crossref += ', ' + ret
+            else:
+                crossref = 'crossref:' + ret
+
+
+
+        if crossref != '':
+            crossref = crossref.replace('crossref:', '')
+            crossrefDict = {}
+            for c in crossref.split(','):
+                c = c.strip()
+                if crossrefDict.has_key(c):
+                    continue
+                else:
+                    crossrefDict[c] = True
+
+            crossref = 'crossref:'
+            for k in crossrefDict.keys():
+                crossref += k + ', '
+
+            crossref = crossref.strip()
+            if crossref.endswith(','):
+                crossref = crossref[0 : len(crossref) - 1]
+
+            print 'crossref->>' + crossref
+
+            desc += ' ' + crossref
+
+
+        desc += ' localdb:' + text
 
     else:
 
         targetPath = ' '.join(Config.exclusive_crossref_path)
         if crossrefPath != '':
             targetPath = ' ' +  crossrefPath
-        desc = 'engintype:' + data + ' '
-        desc += 'localdb:' + data
-        desc += ' ' + kg.getCrossref(data, targetPath)
+        desc = 'engintype:' + text + ' '
+        desc += 'localdb:' + text
+        desc += ' ' + kg.getCrossref(text, targetPath)
         if resourceType != '':
             desc += ' category:' + resourceType 
 
-        kg_cache = kg.getKnowledgeGraphCache(data)
+        kg_cache = kg.getKnowledgeGraphCache(text)
         if kg_cache != '':
             desc += ' ' + kg_cache
         elif kgraph == 'true':
@@ -207,13 +261,22 @@ def handleExclusive():
     if data.startswith('http'):
         url = data
     elif utils.getValueOrTextCheck(data):
-        text = utils.getValueOrText(data, returnType='text')
-        value = utils.getValueOrText(data, returnType='value')
+        data = text
         if value.startswith('http'):
-            data = text
             url = value 
+        elif resourceType != '' and utils.isAccountTag(resourceType + ':', tag.tag_list_account):
+            url = utils.toQueryUrl(tag.tag_list_account[resourceType + ':'], value)
 
-    url = doExclusive(rID, data, url, desc)
+    newUrl = doExclusive(rID, data, url, desc)
+
+    for k, v in Config.exclusive_default_tab.items():
+        if url.find(k) != -1:
+            newUrl += '&extension=' + v
+            break
+
+    newUrl = newUrl + '&crossrefQuery="' + crossrefQuery.strip() + '"'
+
+    url = newUrl
     
     if enginArgs.find(':') != -1:
         enginType = enginArgs[enginArgs.find(':') + 1 :]
@@ -222,6 +285,7 @@ def handleExclusive():
     if crossrefPath != '':
         url += '&crossrefPath=' + crossrefPath
 
+    print url
     if newTab == 'false':
         return 'refresh#' + url
     else:
@@ -300,25 +364,53 @@ def handleAdd2Library():
 
     return ''
 
-@app.route('/add2QucikAccess', methods=['POST'])
-def handleAdd2QucikAccess():
+@app.route('/add2QuickAccess', methods=['POST'])
+def handleAdd2QuickAccess():
     rid = request.form['rid']
     text = request.form['text'].encode('utf-8')
-    resourceType = request.form['resourceType']
+    value = request.form['value'].encode('utf-8')
+    resourceType = request.form['resourceType'].strip()
     library = request.form['library']
 
-    r = utils.getRecord(rid, path=library)
-    if r != None:
-        args = { 'tag' : resourceType + ':' } 
-        ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, args)
+    print 'handleAdd2QuickAccess:' + text
+    #print request.form
 
-        itemDescDict = {}
-        qaDescDict = {}
-        for item in ret.split(','):
-            item = item.strip().encode('utf-8')
-            if item.startswith(text):
-                itemDescDict = utils.toDescDict(utils.valueText2Desc(item), library)
-                break
+    itemDescDict = {}
+    qaDescDict = {}
+
+    if value == '':
+
+        r = utils.getRecord(rid, path=library)
+        if r != None:
+            args = { 'tag' : resourceType + ':' } 
+            ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', r.line, args)
+
+
+            for item in ret.split(','):
+                item = item.strip().encode('utf-8')
+                if item.startswith(text):
+                    print item
+                    itemDescDict = utils.toDescDict(utils.valueText2Desc(item), library)
+                    break
+    else:
+        item = ''
+        newText = ''
+        if text.find('(') != -1:
+            newText = utils.getValueOrText(text, returnType='text')
+        else:
+            newText = text.strip()
+
+        if newText.find(' - ') != -1:
+            newText = newText[0 : newText.find(' - ')].strip()
+
+        if resourceType == '':
+            resourceType = newText.strip()
+
+        item = newText.strip() + '(' + resourceType + '(' + value + '))' 
+
+        itemDescDict = utils.toDescDict(utils.valueText2Desc(item, prefix=False), library)
+
+    if len(itemDescDict) > 0:
 
         qaRecord = utils.queryQuickAccess(rid)
 
@@ -327,7 +419,7 @@ def handleAdd2QucikAccess():
 
         desc = utils.dict2Desc(utils.mergerDescDict(itemDescDict, qaDescDict))
 
-
+        #print desc
         url = ''
         if len(lastOpenUrls) > 0:
             url = lastOpenUrls[len(lastOpenUrls) - 1]
@@ -556,8 +648,14 @@ def handleCreateList():
         args = { 'tag' : resourceType + ':' } 
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, args)
 
-        api = twitter.Api()
-        
+        #api = twitter.Api()
+
+        api = twitter.Api(consumer_key='eBC035F5rtFzaTXUfc4X7OpbZ',
+              consumer_secret='Pu2MIeNqgtP5ArQGJx5YkQzY1e2WFmLa3Z7s5CWvWHBB7GGksf',
+              access_token_key='348373764-00MtmSVHbbzcGWlomOhcRn0STmHXMJJT9tBKweWc',
+              access_token_secret='3OjwMbJEkj9Zj7bD2UGcyAwLkvQlLop3JJSudcyBZ7fii',
+              sleep_on_rate_limit=True,
+              proxies=Config.proxies3)
 
         allList = api.GetLists(screen_name='wowdd1')
 
@@ -639,6 +737,8 @@ def handleToList():
                     continue
                 else:
                     k, url = utils.getCrossrefUrl(item)
+            elif value.find('homepage(') != -1:
+                url = value[value.find('homepage')+ 9 : value.find(')', value.find('homepage'))]
             elif Config.smart_engin_for_tag.has_key(resourceType):
                 url = utils.toQueryUrl(utils.getEnginUrl(Config.smart_engin_for_tag[resourceType][0]), item.strip())
             elif resourceType == 'website':
@@ -646,10 +746,12 @@ def handleToList():
             else:
                 #url = utils.toQueryUrl(utils.getEnginUrl('glucky'), item.strip() + ' ' + resourceType)
                 url = ''
+            if url.startswith('http') == False:
+                url = ''
 
             print url
             textList.append(item.strip())
-            records.append(Record(' | ' + item + ' | ' + url + ' | ' + utils.valueText2Desc(originText, text=text, value=value, form=request.form, record=record)))
+            records.append(Record(' | ' + item + ' | ' + url + ' | ' + utils.valueText2Desc(originText, text=text, value=value, form=request.form, record=record, prefix=False)))
     if request.form.has_key('returnText'):
         return ', '.join(textList)
     if len(records) > 0:
@@ -759,13 +861,16 @@ def getCrossrefUrls(content):
 
 @app.route('/queryNavTab', methods=['POST'])
 def handleQueryNavTab():
-    #print '-queryNavTab-'
+    print '-queryNavTab-'
     print request.form
     url = request.form['url']
     targetid = request.form['targetid']
     title = request.form['rTitle']
     otherInfo = request.form['otherInfo']
     column = request.form['column']
+
+    if request.form.has_key('crossrefQuery') and request.form['crossrefQuery'].strip() != '':
+        return 'pathways,' + Config.default_tab
 
     if targetid.find('bookmark') != -1:
         return 'bookmark,' + Config.default_tab
@@ -920,7 +1025,7 @@ def handleQueryUrl():
 
                     link = 'http://' + Config.ip_adress + '/?db=other/main/&key=exclusive2016&crossrefPath=' + item 
                     title = item[item.rfind('/') + 1: ]
-                    script = "exclusive('exclusive', '" + request.form['searchText'] + "', '" + item + "', false, '', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', engin_args, false);"
+                    script = "exclusive('" + request.form['fileName'] + "', '" + request.form['searchText'] + "', '" + item + "', false, '" + request.form['resourceType'] + "', '" + request.form['fileName'] + "', '" + request.form['rID'] + "', engin_args, false);"
 
                     result += utils.enhancedLink('', title, searchText=request.form['searchText'], style="color:#999966; font-size:10pt;", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], script=script, ignoreUrl=True) + '&nbsp;'
                     
@@ -1004,8 +1109,16 @@ def handleQueryUrl():
                         elif utils.getValueOrTextCheck(v):
                             subValue = utils.getValueOrText(v, returnType='value')
                             subText = utils.getValueOrText(v, returnType='text')
+                            originSubValue = subValue
+                            subValueIsEngin = False
                             if utils.search_engin_dict.has_key(subValue):
-                                subValue = utils.toQueryUrl(utils.getEnginUrl(subValue), subText)
+                                subValue = utils.getEnginUrl(subValue)
+                                subValueIsEngin = True
+
+                            if Config.smart_engin_for_tag.has_key(originSubValue):
+                                subValue = 'http://_blank'
+                                subValueIsEngin = True
+
                             if utils.isUrlFormat(subValue):
                                 if utils.isShortUrl(subValue) == False and subValue.startswith('http') == False:
                                     subValue = 'http://' + subValue
@@ -1014,20 +1127,43 @@ def handleQueryUrl():
                                     subText = subText[1 : len(subText) - 1]
                                     subTextList = subText.split('*')
 
+                                count = 0
                                 for st in subTextList:
                                     sv = subValue
-                                    if subValue.find('%s') != -1:
-                                        sv = subValue.replace('%s', st)
+                                    count += 1
+                                    rt = request.form['resourceType']
+                                    urlFromServer = False
+                                    linkText = text + ' - ' + st
+                                    log = True
+
+                                    if subValueIsEngin:
+                                        if Config.smart_engin_for_tag.has_key(originSubValue):
+                                            rt = originSubValue
+                                            urlFromServer = True
+                                            linkText = st
+                                            log = False
+                                        else:
+                                            sv = utils.toQueryUrl(subValue, st)
+                                    else:
+                                        if subValue.find('%s') != -1:
+                                            sv = subValue.replace('%s', st)
                                     if Config.website_icons.has_key(st.strip().lower()):
                                         iconHtml = utils.getIconHtml(st)
-                                        infoHtml += utils.enhancedLink(sv, text + ' - ' + st, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                        infoHtml += utils.enhancedLink(sv, linkText, showText=iconHtml, module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=rt, aid=dialogAID, urlFromServer=urlFromServer, log=log)
                                         infoLen += 1
 
                                     else:
-                                        infoHtml += utils.enhancedLink(sv, text + ' - ' + st, showText=st, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
-                                        infoLen += len(st)
+                                        infoHtml += utils.enhancedLink(sv, linkText, showText=st, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=rt, aid=dialogAID, urlFromServer=urlFromServer, log=log)
+                                        iconHtml = utils.getIconHtml(sv)
+                                        if iconHtml != '':
+                                            infoHtml = infoHtml.strip() + iconHtml.strip()
+                                        infoLen += len(st) + 1
 
-                                    infoHtml += '&nbsp;'
+                                    if count > 15:
+                                        infoHtml += '<br>'
+                                        count = 0
+                                    else:
+                                        infoHtml += '&nbsp;'
                                     textList.append(st)
                                     linkList.append(sv)
 
@@ -1041,11 +1177,12 @@ def handleQueryUrl():
                                         subText = oldSubText
                                         
                                 if utils.isAccountTag(subText, tag.tag_list_account):
-                                    url = tag.tag_list_account[subText + ':']
                                     subValueList = [subValue]
                                     if subValue.find('*') != -1:
                                         subValueList = subValue.split('*')
                                     for sv in subValueList:
+                                        url = tag.tag_list_account[subText + ':']
+
                                         if url.find('%s') != -1:
                                             url = url.replace('%s', sv)
                                         else:
@@ -1063,6 +1200,25 @@ def handleQueryUrl():
                                             infoLen += len(subText)
                                         textList.append(subText)
                                         linkList.append(url)
+                                elif subText == 'crossref':
+                                    values = []
+                                    if subValue.find('*') != -1:
+                                        values = subValue.split('*')
+                                    else:
+                                        values = [subValue]
+                                    count = 0
+                                    for v in values:
+                                        count += 1
+                                        key, url = utils.getCrossrefUrl(v)
+                                        vtext = v
+                                        if v.find('/') != -1:
+                                            vtext = v[v.rfind('/') + 1 :]
+                                        infoHtml += utils.enhancedLink(url, vtext, showText=vtext, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
+                                        infoLen += len(vtext)
+                                        textList.append(vtext)
+                                        linkList.append(url)
+                                        if count != len(values):
+                                            infoHtml += ' '
                                 else:
                                     url = utils.bestMatchEnginUrl(subValue, resourceType=request.form['resourceType'])
                                     infoHtml += utils.enhancedLink(url, text + ' - ' + subText, showText=subText, style="color:#339944; font-size: 9pt", module='dialog', library=request.form['fileName'], rid=request.form['rID'], resourceType=request.form['resourceType'], aid=dialogAID)
@@ -1126,7 +1282,7 @@ def dialogCommand(fileName, text, resourceType, originFilename, rID, tagCommand=
                 script = "add2Library('" + rID + "', '" + aid + "', '" + text + "', '" + resourceType + "', '" + fileName + "');"
                 result += utils.enhancedLink('', '#add2' + fileName[fileName.rfind('/') + 1 :].replace('-library', ''), script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
             elif command == 'add2qa':
-                script = "add2QucikAccess('" + rID + "', '" + aid + "', '" + text + "', '" + resourceType + "', '" + fileName + "');"
+                script = "add2QuickAccess('" + rID + "', '" + aid + "', '" + text + "', '', '" + resourceType + "', '" + fileName + "');"
                 result += utils.enhancedLink('', '#add2qa', script=script, style="color: rgb(136, 136, 136); font-size: 10pt;") + '&nbsp;'
                 print result
             elif command == 'exclusive':
@@ -1302,7 +1458,7 @@ def handleUserLog():
             if record != None:
                 rtValue = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : request.form['resourceType']})
 
-                if rtValue.find(title + '(') != -1:
+                if rtValue != None and rtValue.find(title + '(') != -1:
                     itemList = []
                     if rtValue.find(',') != -1:
                         itemList = rtValue.split(',')
@@ -1425,7 +1581,7 @@ def web(page):
     f.close()
     return data
 
-def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, enginType, navigation, verify, alexa, track, loadmore, nosearchbox, page):
+def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger, border, engin, enginType, navigation, verify, alexa, track, loadmore, nosearchbox, page, extension, crossrefQuery):
     print 'track:' + track
     print 'nosearchbox:' + str(nosearchbox)
     if db.endswith('/') == False:
@@ -1483,7 +1639,14 @@ def genCmd(db, key, column_num, ft, style, desc, width, row, top, level, merger,
     if page != '':
         cmd += ' -o ' + page + ' '
 
+    if extension != '':
+        cmd += ' -j ' + extension + ' '
 
+    #if crossrefQuery != '':
+    cmd += ' -g "' + crossrefQuery.replace('"', '') + '" '
+
+
+    
 
     return cmd.replace('?', '') 
 

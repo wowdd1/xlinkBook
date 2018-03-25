@@ -22,6 +22,9 @@ window.document.onkeyup = onkeyup;
 
 var KEY_X_DOWN = false;
 var KEY_E_DOWN = false;
+var KEY_Q_DOWN = false;
+var KEY_G_DOWN = false;
+
 var lastClick = null;
 var clickArray = new Array();
 var KEY_L_ALT = 18;
@@ -29,6 +32,9 @@ var KEY_L_CTRL = 17;
 var KEY_X_CODE = 88;
 var KEY_ESC_CODE = 27;
 var KEY_E_CODE = 69;
+var KEY_Q_CODE = 81;
+var KEY_G_CODE = 71;
+
 
 function onkeydown(evt){
     console.log('ss', "onkeydown " + evt.keyCode.toString());
@@ -40,6 +46,11 @@ function onkeydown(evt){
 
        } else if (evt.keyCode == KEY_E_CODE) {
            KEY_E_DOWN = true;
+
+       } else if (evt.keyCode == KEY_Q_CODE) {
+           KEY_Q_DOWN = true;
+       } else if (evt.keyCode == KEY_G_CODE) {
+           KEY_G_DOWN = true;
        } else if(evt.keyCode == KEY_L_ALT){
             console.log('ss', "onkeydown 18");
 
@@ -83,9 +94,15 @@ function onkeyup(evt){
        } else if (evt.keyCode == KEY_E_CODE) {
             console.log('ss', "onkeyup 69");
             KEY_E_DOWN = false;
+
+       } else if (evt.keyCode == KEY_Q_CODE) {
+            KEY_Q_DOWN = false;
+       } else if (evt.keyCode == KEY_G_CODE) {
+            KEY_G_DOWN = false;
        }
     }
 }
+
 
  
 function title() {
@@ -116,7 +133,7 @@ function content(text, data) {
         originText = split_data[4];
     }
     
-    dialog_args = {type : 'dialog', rID : rid, searchText: text, originText : originText, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args, isTag : isTag};
+    dialog_args = {type : 'dialog', rID : rid, searchText: text, originText : originText, resourceType : resourceType, fileName : fileName, library : library, aid : aid, enginArgs : engin_args, isTag : isTag, windowHref : window.location.href};
     $.post('/queryUrl', dialog_args, function(data) {
         if (data.indexOf('#') > 0 && data.substring(0, data.indexOf('#')).indexOf('color:') < 0) {
             engin_count = parseInt(data.substring(0, data.indexOf('#')));
@@ -378,7 +395,7 @@ function add2Library(rid, aid, text, resourceType, library) {
 }
 
 function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFilename, rID, enginArgs, kgraph) {
-    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : enginArgs, crossrefPath: crossrefPath, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph}, function(data) {
+    $.post('/exclusive', {fileName : fileName, data : data, enginArgs : enginArgs, crossrefPath: crossrefPath, crossrefQuery : crossrefQuery, newTab : newTab, resourceType : resourceType, originFilename : originFilename, rID : rID, kgraph : kgraph}, function(data) {
         if (data.indexOf('refresh#') != -1) {
             window.location.href = data.substring(data.indexOf('#') + 1);
         } else {
@@ -388,9 +405,9 @@ function exclusive(fileName, data, crossrefPath, newTab, resourceType, originFil
     });
 }
 
-function add2QucikAccess(rid, aid, text, resourceType, library) {
+function add2QuickAccess(rid, aid, text, value, resourceType, library) {
 
-    $.post('/add2QucikAccess', {rid : rid, text : text, resourceType : resourceType, library : library}, function(data) {
+    $.post('/add2QuickAccess', {rid : rid, text : text, value : value, resourceType : resourceType, library : library}, function(data) {
 
         if (data == 'ok') {
             refreshTab(aid, 'history');
@@ -414,15 +431,23 @@ function batchOpen(data, resourceType) {
     });
 }
 
-function openUrl(url, searchText, newTab, excl) {
+function openUrl(url, searchText, newTab, excl, rid, resourceType, aid) {
 
-    if (KEY_E_DOWN) {
+    if (KEY_Q_DOWN) {
+
+        add2QuickAccess(rid, aid, searchText, url, resourceType, '');
+
+        KEY_Q_DOWN = false;
+
+        KEY_X_DOWN = true;
+
+    } else if (KEY_E_DOWN) {
         if (excl) {
             updateSearchbox(searchText);
             if (url != '' && searchText.indexOf('(') < 0) {
                 searchText = searchText + '(' + url + ')'
             }
-            exclusive('exclusive', searchText, '', true, '', '', '', '', false);
+            exclusive('exclusive', searchText, '', true, resourceType, '', '', '', false);
         } else {
             console.log(search_box.value);
             if(search_box.value != '') {
@@ -435,6 +460,44 @@ function openUrl(url, searchText, newTab, excl) {
 
         KEY_E_DOWN = false;
 
+    } else if (KEY_G_DOWN && resourceType == 'crossref') {
+        console.log(url);
+        urlPart = url.split('&');
+        db = ''
+        key = ''
+        url = ''
+        for (var i = 0; i < urlPart.length; i++) {
+            console.log(urlPart[i]);
+            if (urlPart[i].indexOf('db=') != -1) {
+                db = urlPart[i].substring(urlPart[i].indexOf('db=') + 3);
+            }
+
+            if (urlPart[i].indexOf('key=') != -1) {
+                key = urlPart[i].substring(urlPart[i].indexOf('key=') + 4);
+            }
+
+        }
+        console.log(db + key);
+
+        console.log(window.location.href);
+        hrefPart = window.location.href.split('&');
+        for (var i = 0; i < hrefPart.length; i++) {
+            console.log(hrefPart[i]);
+            if (hrefPart[i].indexOf('crossrefQuery=') != -1) {
+                url += 'crossrefQuery="' + db + key + '"';
+            } else {
+                url += hrefPart[i];
+            }
+
+            if(i != hrefPart.length - 1) {
+                url += '&';
+            }
+        }
+
+        console.log(url);
+        window.location.href = url;
+        KEY_G_DOWN = false;
+        return;
     } else if (newTab) {
         window.open(url);
         updateSearchbox(searchText);
@@ -613,6 +676,9 @@ function navTopic(obj, divID, parentDivID, countIndex){
     postArgs['os'] = getOsInfo();
     postArgs['browser'] = getBrowserInfo();
     postArgs['extension_count'] = extension_count_dict[args[divID][0]];
+    postArgs['crossrefQuery'] = crossrefQuery;
+    postArgs['windowHref'] = window.location.href
+
     if (obj.text == 'bookmark' || obj.text == 'filefinder') {
         postArgs['nocache'] = true;
     } else {
@@ -879,16 +945,19 @@ function appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin) {
     var os = getOsInfo();
     var browser = getBrowserInfo();
 
-    $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, originFileName : fileName, nocache : nocache, column : column, 'check' : 'true', user_name : user_name, os : os, browser : browser}, function(data){
+    if (crossrefQuery != '') {
+        nocache = 'true';
+    }
+
+    $.post('/extensions', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, originFileName : fileName, nocache : nocache, column : column, 'check' : 'true', user_name : user_name, os : os, browser : browser, crossrefQuery : crossrefQuery, windowHref : window.location.href}, function(data){
         if (data.trim() != '') {
             console.log("xx", data)
             var extensions = data.split(" ");
             extension_count_dict[id] = extensions.length;
-            var found = false;
             for (var i = 0; i < extensions.length; i++) {
                 hidenMetadata(targetid, extensions[i], "");
             }
-            $.post('/queryNavTab', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, targetid : targetid, otherInfo : otherInfo, column : column}, function(data1){
+            $.post('/queryNavTab', {name : module, rID : id, rTitle : topic, url : url, fileName : fileName, targetid : targetid, otherInfo : otherInfo, column : column, crossrefQuery : crossrefQuery}, function(data1){
 
                 console.log("data1", data1);
 
@@ -898,24 +967,29 @@ function appendContentEx(targetid, id, topic, url, otherInfo, hidenEngin) {
                     second_default_tab = dataSplit[1].trim();
                     console.log("default_tab ", default_tab);
                     console.log("second_default_tab ", second_default_tab);
-                }   
+                }
+
+                if (extension != '' && data.indexOf(extension) >= 0) {
+                    navTopic(document.getElementById(targetid + "-nav-" + extension), targetid, targetid + "-nav-",4);
+                    extension = '';
+                    return;
+
+                }
 
                 if (data.indexOf(default_tab) >= 0) {
                     for (var i = 0; i < extensions.length; i++) {
                         if (extensions[i] == default_tab){
                             navTopic(document.getElementById(targetid + "-nav-" + default_tab), targetid, targetid + "-nav-",4);
-                            found = true;
-                            break;
+                            return;
                         }
                     }
                 }
                 
-                if (data.indexOf(second_default_tab) >= 0 && !found) {
+                if (data.indexOf(second_default_tab) >= 0) {
                     for (var i = 0; i < extensions.length; i++) {
                         if (extensions[i] == second_default_tab){
                             navTopic(document.getElementById(targetid + "-nav-" + second_default_tab), targetid, targetid + "-nav-",4);
-                            found = true;
-                            break;
+                            return;
                         }
                     }
                 }
