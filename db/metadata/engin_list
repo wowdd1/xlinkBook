@@ -599,3 +599,5 @@ engin-608 | gamebanana | https://gamebanana.com/search?query= | priority:6 descr
 engin-609 | xunyingwang | http://www.xunyingwang.com/search?q=%s | priority:6 description:movie
 engin-610 | gamejolt | https://gamejolt.com/search?q=%s | priority:6 description:game
 engin-611 | nicovideo | http://www.nicovideo.jp/search/%s | priority:6 description:video
+engin-612 | igdb | https://www.igdb.com/search?utf8=✓&type=1&q=%s | priority:6 description:game
+engin-613 | mobygames | http://www.mobygames.com/search/quick?q=%s | priority:8 description:game star

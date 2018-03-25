@@ -88,9 +88,10 @@ class KnowledgeGraph(object):
           if k != adict.items()[len(adict) - 1][0]:
               result += ', '
 
-      print result
+      
       if result != '':
           result = 'crossref:' + result
+      print result
       return result
 
 

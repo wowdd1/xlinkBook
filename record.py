@@ -223,6 +223,7 @@ class Tag():
         self.tag_url = 'url:'
         self.tag_memkite = 'memkite:'
         self.tag_blog = 'blog:'
+        self.tag_linkedin = 'linkedin:'
         self.tag_l_group = 'l-group:'
         self.tag_alternativeto = 'alternativeto:'
         self.tag_clone = 'clone:'
@@ -318,6 +319,7 @@ class Tag():
         self.tag_patreon = 'patreon:'
         self.tag_g_youtube = 'g-youtube:'
         self.tag_douban = 'douban:'
+        self.tag_doulist = 'doulist:'
         self.tag_click_count = 'clickcount:'
         self.tag_artstation = 'artstation:'
         self.tag_appveyor = 'appveyor:'
@@ -328,6 +330,10 @@ class Tag():
         self.tag_nico = 'nico:'
         self.tag_wordpress = 'wordpress:'
         self.tag_photobucket = 'photobucket:'
+        self.tag_stumble = 'stumble:'
+        self.tag_disqus = 'disqus:'
+        self.tag_waffle = 'waffle:'
+        self.tag_pinterest = 'pinterest:'
 
         #for multimedia
         self.tag_co_president = "co-president:"
@@ -386,7 +392,7 @@ class Tag():
                          self.tag_lab, self.tag_team, self.tag_institute, self.tag_foundation, self.tag_summit, self.tag_alias, self.tag_slack, self.tag_gitter, self.tag_twitter, self.tag_social_tag,\
                          self.tag_youtube, self.tag_github, self.tag_gitlab, self.tag_vimeo, self.tag_g_group, self.tag_g_plus, self.tag_medium, self.tag_goodreads, self.tag_fb_group, self.tag_fb_pages, \
                          self.tag_meetup, self.tag_huodongxing, self.tag_y_video, self.tag_y_channel, self.tag_y_channel2, self.tag_y_playlist, self.tag_award, self.tag_website, self.tag_url, self.tag_memkite, \
-                         self.tag_blog, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_bitbucket, \
+                         self.tag_blog, self.tag_linkedin, self.tag_l_group, self.tag_alternativeto, self.tag_clone, self.tag_docker, self.tag_zhihu, self.tag_z_zhihu, self.tag_c_zhihu, self.tag_bitbucket, \
                          self.tag_sourceforge, self.tag_business, self.tag_country, self.tag_price, self.tag_date, self.tag_advisor, self.tag_intern, self.tag_facebook, self.tag_vk, self.tag_reddit, \
                          self.tag_weibo, self.tag_job, self.tag_alliance, self.tag_slideshare, self.tag_crossref, self.tag_contentref, self.tag_vimeopro, self.tag_atlassian, self.tag_qq_group, self.tag_discuss, \
                          self.tag_weixin, self.tag_localdb, self.tag_engintype, self.tag_keyword, self.tag_udacity, self.tag_review, self.tag_instagram, self.tag_leiphone, self.tag_businessinsider, \
@@ -395,7 +401,8 @@ class Tag():
                          self.tag_pcpartpicker, self.tag_baijiahao, self.tag_dean, self.tag_jianshu, self.tag_15yan, self.tag_consultant, self.tag_nucleus, self.tag_youku, self.tag_zaker, self.tag_v_qq, self.tag_sohu, \
                          self.tag_nbviewer, self.tag_flagship, self.tag_toutiao, self.tag_leaderboard, self.tag_benchmark, self.tag_baiduyun, self.tag_inke, self.tag_sayit, self.tag_kaggle, self.tag_soundcloud, self.tag_expo, \
                          self.tag_bilibili, self.tag_acfun, self.tag_archive_org, self.tag_zeef, self.tag_g_cores, self.tag_tieba, self.tag_discord, self.tag_mixer, self.tag_periscope, self.tag_flickr, self.tag_vine, self.tag_tudou, self.tag_patreon, self.tag_g_youtube, \
-                         self.tag_douban, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket]
+                         self.tag_douban, self.tag_doulist, self.tag_click_count, self.tag_artstation, self.tag_appveyor, self.tag_gamesradar, self.tag_opencollective, self.tag_gamejolt, self.tag_onetab, self.tag_nico, self.tag_wordpress, self.tag_photobucket, self.tag_stumble, self.tag_disqus,\
+                         self.tag_waffle, self.tag_pinterest]
 
         self.tag_list_short = ["d:"]
 
@@ -408,7 +415,7 @@ class Tag():
                         self.tag_vimeo :  'https://vimeo.com/%s',\
                         self.tag_g_group :  'https://groups.google.com/forum/#!forum/%s',\
                         self.tag_medium :  'https://medium.com/%s',\
-                        self.tag_goodreads :  'http://www.goodreads.com/review/list/%s',\
+                        self.tag_goodreads :  'http://www.goodreads.com/user/show/%s',\
                         self.tag_fb_group :  'https://www.facebook.com/groups/%s/',\
                         self.tag_fb_pages : 'https://www.facebook.com/search/str/%s/keywords_pages',\
                         self.tag_vk : 'https://vk.com/%s',\
@@ -419,6 +426,7 @@ class Tag():
                         self.tag_y_channel2 : 'https://www.youtube.com/c/%s/videos',\
                         self.tag_y_playlist : 'https://www.youtube.com/playlist?list=%s',\
                         self.tag_memkite :  'http://memkite.com/%s/',\
+                        self.tag_linkedin : 'https://www.linkedin.com/%s',\
                         self.tag_l_group :  'https://www.linkedin.com/groups/%s/profile',\
                         self.tag_docker :  'https://hub.docker.com/r/%s/',\
                         self.tag_zhihu :  'https://www.zhihu.com/%s',\
@@ -466,7 +474,6 @@ class Tag():
                         self.tag_toutiao  : 'http://www.toutiao.com/%s/',\
                         self.tag_baiduyun : 'https://pan.baidu.com/share/home?uk=%s',\
                         #self.tag_baiduyun : 'https://www.sopanpan.com/user/%s-0.html',\
-                        self.tag_inke : 'http://www.inke.cn/replaylive_list.html?uid=%s',\
                         self.tag_sayit : 'https://sayit.%s',\
                         self.tag_kaggle : 'https://www.kaggle.com/%s',\
                         self.tag_soundcloud : 'https://soundcloud.com/%s',\
@@ -486,6 +493,7 @@ class Tag():
                         self.tag_g_youtube : 'https://gaming.youtube.com/user/%s',\
                         self.tag_g_plus : 'https://plus.google.com/%s',\
                         self.tag_douban : 'https://www.douban.com/people/%s/',\
+                        self.tag_doulist : 'https://www.douban.com/doulist/%s',\
                         self.tag_artstation : 'https://www.artstation.com/%s',\
                         self.tag_appveyor : 'https://ci.appveyor.com/project/%s/build/artifacts',\
                         self.tag_gamesradar : 'http://www.gamesradar.com/author/%s/',\
@@ -494,7 +502,11 @@ class Tag():
                         self.tag_onetab : 'https://www.one-tab.com/page/%s',\
                         self.tag_nico : 'http://www.nicovideo.jp/user/%s/video',\
                         self.tag_wordpress : 'https://%s.wordpress.com/',\
-                        self.tag_photobucket : 'http://s446.photobucket.com/user/%s/library/'}
+                        self.tag_photobucket : 'http://s446.photobucket.com/user/%s/library/',\
+                        self.tag_stumble : 'http://www.stumbleupon.com/%s',\
+                        self.tag_disqus : 'https://disqus.com/home/forum/%s',\
+                        self.tag_waffle : 'https://waffle.io/%s',\
+                        self.tag_pinterest : 'https://www.pinterest.com/%s'}
 
         self.account_tag_alias = {'2894093575' : "jiangmen", '1398503970' : "di ping xian", '493603743' : 'jiqizhixin',\
                                 'UCU1AE2Hp_yYtnJQfYEuQrEA' : 'Game engine Topic',\

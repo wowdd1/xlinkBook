@@ -15,13 +15,38 @@ class Pathways(BaseExtension):
         column = form_dict['column']
         url = form_dict['url'].encode('utf8')
         #if fileName.endswith('-library') and url.find(Config.ip_adress) != -1:
-        if url.find(Config.ip_adress) != -1:
-            fileName = url[url.find('db=') + 3 :]
-            fileName = 'db/' + fileName
-            fileName = fileName.replace('&key=', '')
-            if fileName.find('&') != -1:
-                fileName = fileName[0 : fileName.find('&')]
-            print fileName
+
+        #print form_dict
+        if form_dict.has_key('crossrefQuery') and form_dict['crossrefQuery'].strip() != '':
+            query = form_dict['crossrefQuery']
+            if query.startswith('db/') == False:
+                query = 'db/' + query
+            if query.find('/filter') != -1:
+                query = query.replace('/filter', '&filter')
+            if query.find('filter=') == -1:
+                query = query + '&filter=%s'
+
+            record = self.utils.getRecord(form_dict['rID'], path=fileName, use_cache=False)
+
+            queryText = form_dict['rTitle']
+            if record != None and record.line.find('alias:') != -1:
+                alias = self.utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, {'tag' : 'alias'})
+                if alias != None:
+                    queryText = queryText + '[or]' + alias.replace(', ', '[or]').strip()
+
+            if query.find('%s') != -1:
+                query = query.replace('%s', queryText)
+            print query
+            fileName = query
+        else:
+
+            if url.find(Config.ip_adress) != -1:
+                fileName = url[url.find('db=') + 3 :]
+                fileName = 'db/' + fileName
+                fileName = fileName.replace('&key=', '')
+                if fileName.find('&') != -1:
+                    fileName = fileName[0 : fileName.find('&')]
+                print fileName
         if fileName.find('db/') != -1:
             width = '530'
             height = '600'
@@ -43,8 +68,9 @@ class Pathways(BaseExtension):
         return 'nothing'
 
     def check(self, form_dict):
+        #print form_dict
         originFileName = form_dict['originFileName'].encode('utf8')
         fileName = form_dict['fileName'].encode('utf8')
         url = form_dict['url'].encode('utf8')
         print fileName
-        return (originFileName != fileName and fileName.endswith('-library') == False) or url.find(Config.ip_adress) != -1
+        return (form_dict.has_key('crossrefQuery') and form_dict['crossrefQuery'] != '') or (originFileName != fileName and fileName.endswith('-library') == False) or url.find(Config.ip_adress) != -1

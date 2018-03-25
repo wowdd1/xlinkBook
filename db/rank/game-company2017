@@ -5,11 +5,11 @@ game-company-4 | BioWare |  | product:圣歌, 质量效应, 龙腾世纪, 博德
 game-company-5 | Sony Computer Entertainment | | product:直到黎明, 重力眩晕
 game-company-6 | Nintendo |  | product:马里奥, 口袋妖怪, 塞尔达传说: 荒野之息, 大金刚 alias:任天堂
 game-company-7 | Blizzard Entertainment |  | product:守望先锋, 暗黑破坏神, 魔兽世界, 魔兽争霸, 星际争霸
-game-company-8 | Ubisoft Montreal |  | product:刺客信条, 孤岛惊魂, 看门狗, 超越善恶, 全境封锁, 荣耀战魂, 幽灵行动: 荒野, 波斯王子, 彩虹六号, 细胞分裂 keyword:Ubisoft GDC Talks(http://bit.ly/2j81WJB)
+game-company-8 | Ubisoft |  | crossref:other/ubisoft-montreal2018 product:刺客信条, 孤岛惊魂, 看门狗, 超越善恶, 全境封锁, 荣耀战魂, 幽灵行动: 荒野, 波斯王子, 彩虹六号, 细胞分裂 keyword:Ubisoft GDC Talks(http://bit.ly/2j81WJB)
 game-company-9 | 2K Games | | product:生化奇兵, 文明, 无主之地, 黑手党, 特殊行动：一线生机, 黑暗
 game-company-10 | Bethesda | | product:上古卷轴, 辐射
 game-company-11 | Capcom |  | product:丧尸围城, 鬼泣, 街头霸王, 生化危机, 洛克人, 鬼武者, 怪物猎人
-game-company-12 | EA Sports | | product:FIFA, NBA LIVE
+game-company-12 | Electronic Arts |  | product:FIFA, NBA LIVE
 game-company-13 | EA DICE |  | product:星球大战, Battlefield, 镜之边缘, 荣誉勋章2010 keyword:DICE GDC Talks(http://bit.ly/2xXSWKy)
 game-company-65 | Sledgehammer Games | | product:使命召唤：二战
 game-company-14 | Infinity Ward | | product:使命召唤1 2, 使命召唤：现代战争
@@ -22,7 +22,7 @@ game-company-15 | SQUARE ENIX |  | product:最终幻想, 勇者斗恶龙, 王国
 game-company-16 | Crytek |  | product:孤岛危机, 孤岛惊魂1, 罗马之子
 game-company-17 | Guerrilla Games |  | product:地平线: 期待黎明, 杀戮地带 keyword:Guerrilla Games GDC Talks(http://bit.ly/2wVYEiv) alias:游骑兵 description:Sony
 game-company-18 | Ready at Dawn Studios |  | product:教团：1886
-game-company-19 | Kojima Productions |  | product:死亡搁浅 alias:小岛工作室
+game-company-19 | Kojima |  | product:死亡搁浅 alias:小岛工作室
 game-company-20 | KONAMI | | product:合金装备, 恶魔城, 寂静岭, 实况足球, 魂斗罗
 game-company-52 | Arkane Studios | | product:耻辱
 game-company-21 | 2K Sports | | product:NBA2K, WWE2K, NHL2K, MLB2K
@@ -63,3 +63,5 @@ game-company-58 | Spike | | product:掠食
 game-company-59 | Red Barrels | | product:逃生
 game-company-60 | Klei Entertainment | | product:忍者之印, 闪克, 饥荒, 隐形公司
 game-company-62 | Hello Games | | product:无人深空
+game-company-63 | Nvidia | | 
+game-company-64 | Microsoft | | 

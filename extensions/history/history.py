@@ -22,6 +22,7 @@ class History(BaseExtension):
         self.utils = Utils()
         #self.loadHistory()
         self.form_dict = None
+        self.divID = ''
 
     def loadHistory(self):
         self.updateHistory()
@@ -82,14 +83,22 @@ class History(BaseExtension):
 
         return html
 
+    def getAID(self, divID, text):
+        if text == Config.history_quick_access_name:
+            return 'td-' + divID.replace('history', 'a-qa-')
+
+        else:
+            return 'td-' + divID.replace('history', 'a-')
+
     def excute(self, form_dict):
         self.form_dict = form_dict
-        #print form_dict
+        print form_dict
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()
         rID = form_dict['rID'].encode('utf8')
         divID = form_dict['divID'].encode('utf8')
+        self.divID = divID
         objID = form_dict['objID'].encode('utf8')
         alias = self.getAlias(rID.strip(), form_dict['originFileName'], nocache)
         html = ''
@@ -230,7 +239,7 @@ class History(BaseExtension):
                     htmlList = []
                     descHtmlList = []
 
-
+                    count = 0
                     for item in rList:
                         title = item.get_title().strip().replace('%20', ' ')
                         titleList.append(title)
@@ -251,8 +260,9 @@ class History(BaseExtension):
                             html += appendFrontHtml + self.genQuickAccessSyncButton(rID, quickAccessHistoryFile, divID, objID) + '&nbsp;'
 
                             htmlList.append(html)
-
-                        descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1))
+                        count += 1
+                        aid = self.getAID(self.divID, title)
+                        descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, aid=aid))
 
                     #splitNumber = len(rList) / 3
                     splitNumber = len(rList)
@@ -348,8 +358,9 @@ class History(BaseExtension):
             #    clickCount = jobj['count']
             #    if int(clickCount) > 1:
             #        showText = ftitle + ' (' + clickCount + ')'
+            aid = self.getAID(self.divID, text=title)
 
-            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, showText=showText)
+            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, aid=aid, showText=showText)
 
             if appendFrontHtml != '':
                 html += appendFrontHtml
@@ -390,10 +401,11 @@ class History(BaseExtension):
 
             if jobj.has_key('desc') and jobj['desc'].strip() != '':
                 #print jobj['desc']
+                aid = self.getAID(self.divID, text=title)
                 if Config.history_enable_subitem_log:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=orginFilename, rid=rID, iconKeyword=True, fontScala=1)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=orginFilename, rid=rID, aid=aid, iconKeyword=True, fontScala=1)
                 else:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid)
             
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
