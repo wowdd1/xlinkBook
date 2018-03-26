@@ -17,18 +17,28 @@ class Filefinder(BaseExtension):
 
     def excute(self, form_dict):
         self.form_dict = form_dict
-        rTitle = form_dict['rTitle'] 
+        rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()
         if rTitle.strip() == '' or len(rTitle.strip()) < 3:
             return ''
         rID = form_dict['rID']
         fileName = form_dict['fileName'].encode('utf8')
+        originFileName = form_dict['originFileName'].encode('utf8')
         url = form_dict['url'].replace('#space', ' ')
         nocache = True
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
         use_cache = nocache == False
         html = ''
-        record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True, use_cache=use_cache)
+        record = None
+        if rID.startswith('loop-h'):
+            path = originFileName[0 : originFileName.find('db')] + 'extensions/history/data/' + originFileName[originFileName.rfind('/') + 1 :] + '-history'
+            print path
+            record = self.utils.getRecord(rTitle, path=path, log=True, use_cache=False, matchType=2, accurate=False)
+
+        else:
+            record = self.utils.getRecord(rID.strip(), path=form_dict['originFileName'], log=True, use_cache=use_cache)
+
+
         aliasList = self.getAliasList(record)
         divID = form_dict['divID'].encode('utf8')
 
@@ -224,6 +234,9 @@ class Filefinder(BaseExtension):
         print 'genFileList ' + ''.join(dataList)
         html = ''
         count = 0
+        log = True
+        if rID.startswith('loop'):
+            log = False
         if len(dataList) > 0:
             html = '<div class="ref"><ol>'
             for line in dataList:
@@ -255,10 +268,10 @@ class Filefinder(BaseExtension):
                         if self.dbFileArgsDict.has_key(line.strip()):
                             url += '&filter=' + self.dbFileArgsDict[line.strip()]
                         
-                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=title + countInfo)
+                        html += '<p>' + self.utils.enhancedLink(url, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], showText=title + countInfo, log=log)
                     else:
                         
-                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName']) + self.utils.getIconHtml(line)
+                        html += '<p>' + self.utils.enhancedLink(line, title, module='filefinder', rid=self.form_dict['rID'], library=self.form_dict['originFileName'], log=log) + self.utils.getIconHtml(line)
                     if divID != '':
                         divID += '-' + str(count)
                         linkID = 'a-' + divID[divID.find('-') + 1 :]

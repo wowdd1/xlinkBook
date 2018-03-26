@@ -333,9 +333,6 @@ class History(BaseExtension):
         if jobj.has_key('url'):
             url = jobj['url']
 
-        #if self.tag.account_tag_alias.has_key(jobj['title'].strip()):
-        #    title = self.tag.account_tag_alias[jobj['title'].strip()]
-
         title = self.utils.getValueOrText(jobj['title'].strip(), returnType='text')
 
         if title.find(' - ') != -1:

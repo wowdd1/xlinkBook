@@ -24,7 +24,7 @@ class Exclusive(BaseExtension):
         if rID.startswith('loop-h'):
             historyPath = os.getcwd() + '/extensions/history/data/' + fileName[fileName.rfind('/') + 1 :] + '-history' 
             print historyPath
-            r = self.utils.getRecord(title, path=historyPath, matchType=2, use_cache=False)
+            r = self.utils.getRecord(title, path=historyPath, matchType=2, use_cache=False, accurate=False)
         else:
             r = self.utils.getRecord(rID, path=fileName)
 

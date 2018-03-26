@@ -189,6 +189,7 @@ def handleExclusive():
     for d in data.strip().split(' '):
         rID += d[0 : 1].lower()
 
+
     if resourceType != '' and lastRID != '' and fileName != '':
         record = utils.getRecord(lastRID, path=fileName)
 

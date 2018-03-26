@@ -508,15 +508,6 @@ class Tag():
                         self.tag_waffle : 'https://waffle.io/%s',\
                         self.tag_pinterest : 'https://www.pinterest.com/%s'}
 
-        self.account_tag_alias = {'2894093575' : "jiangmen", '1398503970' : "di ping xian", '493603743' : 'jiqizhixin',\
-                                'UCU1AE2Hp_yYtnJQfYEuQrEA' : 'Game engine Topic',\
-                                '999596718' : 'gamersky', '352735192' : 'ali213',\
-                                '3523716759' : 'ali213-2', '2022788793' : 'paopao slam',\
-                                '3293067964' : 'machinelearning', 'PLOU2XLYxmsIKGc_NBoIhTn2Qhraji53cv' : 'TensorFlow Dev Summit 2017',\
-                                'UCgI_OSv7IAs96-fmgmAnzOg' : 'Silicon Valley Deep Learning Group', 'UCLGwlAK4v2j35Ie8dbSDo4Q' : 'Mlp Lab',\
-                                'UCbLj2jOTwTrCTo7EcPhZDlg' : 'Harini Suresh', 'f578191044caccd288923deaee77407e' : 'AI100',\
-                                '38737757' : 'PaoPaoSLAM', '1086126353' : 'AI-Drive', 'howardjeremyp' : 'Deep Learning For Coders'}
-
         #account_mode only for people or organization
         self.tag_list_account_mode = [self.tag_instructors, self.tag_author, self.tag_organization, self.tag_university, self.tag_winner, self.tag_professor, self.tag_conference, self.tag_cto, self.tag_cio, self.tag_cfo, self.tag_cmo, self.tag_cco, self.tag_cbo, self.tag_coo, self.tag_cpo, self.tag_company, self.tag_engineer, self.tag_institute, self.tag_director, self.tag_ceo, self.tag_vp, self.tag_startup, self.tag_investor, self.tag_scientist, self.tag_faculty, self.tag_investigator, self.tag_researcher, self.tag_people, self.tag_investor, self.tag_follow, self.tag_lab, self.tag_developer, self.tag_designer, self.tag_artist, self.tag_writer, self.tag_programmer, self.tag_title, self.tag_advisor, self.tag_intern, self.tag_zhihu, self.tag_leader]
         

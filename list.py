@@ -1186,12 +1186,6 @@ def adjDialogMode(text, originDialogMode):
 def getLinkText(accountTag, text, showText, tagStr):
 
     return utils.getValueOrText(text, returnType='value')
-    '''
-    if accountTag and tag.account_tag_alias.has_key(text):
-        return tag.account_tag_alias[text]
-    else:
-        return text
-    '''
 
 
 
