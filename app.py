@@ -649,7 +649,14 @@ def handleCreateList():
         args = { 'tag' : resourceType + ':' } 
         ret = utils.reflection_call('record', 'WrapRecord', 'get_tag_content', record.line, args)
 
-        api = twitter.Api()
+        #api = twitter.Api()
+        # need fill the key 
+        api = twitter.Api(consumer_key='',
+              consumer_secret='',
+              access_token_key='',
+              access_token_secret='',
+              sleep_on_rate_limit=True,
+              proxies=Config.proxies3)
 
         allList = api.GetLists(screen_name='wowdd1')
 
