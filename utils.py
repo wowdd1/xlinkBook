@@ -373,7 +373,7 @@ class Utils:
     matchType: by id(1)  by title(2) by line(3)
 
     """
-    def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False, use_cache=True, matchType=1):
+    def getRecord(self, keyword, use_subject='', path='', return_all=False, log=False, use_cache=True, matchType=1, accurate=True):
         #print path + 'xxx'
 
         cacheKey = keyword
@@ -412,11 +412,19 @@ class Utils:
                 found_tag = False
 
                 if matchType == 1: # by id 
-                    if record.get_id().lower().strip() == keyword.lower().strip():
-                        found_tag = True
+                    if accurate:
+                        if record.get_id().lower().strip() == keyword.lower().strip():
+                            found_tag = True
+                    else:
+                        if record.get_id().lower().find(keyword.lower().strip()) != -1:
+                            found_tag = True
                 elif matchType == 2: # by title
-                    if record.get_title().lower().strip() == keyword.lower().strip():
-                        found_tag = True
+                    if accurate:
+                        if record.get_title().lower().strip() == keyword.lower().strip():
+                            found_tag = True
+                    else:
+                        if record.get_title().lower().strip().find(keyword.lower().strip()) != -1:
+                            found_tag = True
                 elif matchType == 3: # by line
                     if record.line.lower().strip().find(keyword.lower().strip()) != -1:
                         found_tag = True
@@ -1029,8 +1037,6 @@ class Utils:
             elif returnType == 'value':
                 #print value + '<br>'
                 return value
-        elif self.tag.account_tag_alias.has_key(text):
-                return self.tag.account_tag_alias[text].strip()
 
         return text.encode('utf-8')
 
@@ -1048,6 +1054,8 @@ class Utils:
 
         if originText == '':
             originText = text
+        if fileName == '':
+            fileName = library
 
         #if originText.find('(') != -1:
         #    print originText
@@ -1119,17 +1127,16 @@ class Utils:
                 for link in urls:
                     if link == '':
                         continue
-
+                    newTabArg = 'false'
                     if newTab:
-                        if useQuote:
-                            open_js += "openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, true, true, #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + aid + "#quote);"
-                        else:
-                            open_js += "openUrl('" + link + "', '" + searchText + "', true, true, '" + rid + "', '" + resourceType + "', '" + aid + "');"
+                        newTabArg = 'true'
+
+                    if useQuote:
+                        open_js += "openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + aid + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
                     else:
-                        if useQuote:
-                            open_js += "openUrl(#quote" + link + "#quote;, #quote#quote, false, false, #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + aid + "#quote);"
-                        else:
-                            open_js += "openUrl('" + link + "', '', false, false, '" + rid + "', '" + resourceType + "', '" + aid + "');"
+                        open_js += "openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + aid + "', '" + module + "', '" + fileName + "');"
+
+                    if newTab == False:
                         break
         #open_js = ''
  
@@ -1600,10 +1607,7 @@ class Utils:
             if text.find(prefix) != -1:
                 text = text[text.find(prefix) + 1 :]
 
-            if self.tag.account_tag_alias.has_key(text):
-                text = self.tag.account_tag_alias[text]
-            else:
-                text = text[0: self.getCutLen(tagStr, text)]
+            text = text[0: self.getCutLen(tagStr, text)]
             if text.startswith(prefix) == False:
                 text = prefix + text + icon
             return '<font style="color:#008B00; font-size:' + str(font_size) + 'pt; ' + Config.smart_link_style + '"><i>' + text.encode('utf-8') + '</i></font>'

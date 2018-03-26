@@ -431,7 +431,7 @@ function batchOpen(data, resourceType) {
     });
 }
 
-function openUrl(url, searchText, newTab, excl, rid, resourceType, aid) {
+function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, fileName) {
 
     if (KEY_Q_DOWN) {
 
