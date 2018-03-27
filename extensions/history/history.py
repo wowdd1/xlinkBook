@@ -93,6 +93,7 @@ class History(BaseExtension):
     def excute(self, form_dict):
         self.form_dict = form_dict
         print form_dict
+        #print '---excute---'
         if form_dict.has_key('nocache'):
             nocache = form_dict['nocache'].encode('utf8')
         rTitle = form_dict['rTitle'].encode('utf8').replace('%20', ' ').strip()
@@ -238,6 +239,8 @@ class History(BaseExtension):
                     urlList = []
                     htmlList = []
                     descHtmlList = []
+                    aidList = []
+                    refreshIDList = []
 
                     count = 0
                     for item in rList:
@@ -262,12 +265,14 @@ class History(BaseExtension):
                             htmlList.append(html)
                         count += 1
                         refreshID = self.getRefreshID(self.divID, title)
-                        aid = self.getAID(ref_divID, count)
+                        aid = self.getAID(self.divID, count)
+                        aidList.append(aid)
+                        refreshIDList.append(refreshID)
                         descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, aid=aid, refreshID=refreshID))
 
                     #splitNumber = len(rList) / 3
                     splitNumber = len(rList)
-                    return self.utils.toListHtml(titleList, urlList, htmlList, descHtmlList=descHtmlList, splitNumber=splitNumber, moreHtml=True)
+                    return self.utils.toListHtml(titleList, urlList, htmlList, descHtmlList=descHtmlList, splitNumber=splitNumber, moreHtml=True, aidList=aidList, refreshIDList=refreshIDList, orginFilename=form_dict['originFileName'])
                 else:
                     html += '<div class="ref"><ol>'
                     for item in rList:
@@ -358,8 +363,16 @@ class History(BaseExtension):
             #        showText = ftitle + ' (' + clickCount + ')'
             aid = self.getAID(ref_divID, count)
             refreshID = self.getRefreshID(self.divID, text=title)
+            desc = jobj['desc'].strip()
+            if desc.find('clickcount') != -1:
+                desc = desc[0 : desc.find('clickcount')].strip()
 
-            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, aid=aid, refreshID=refreshID, showText=showText)
+            haveDesc = True
+            if len(desc) == 0:
+                haveDesc = False
+
+
+            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, haveDesc=haveDesc, aid=aid, refreshID=refreshID, showText=showText)
 
             if appendFrontHtml != '':
                 html += appendFrontHtml

@@ -1042,7 +1042,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
+    def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', haveDesc=True, newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
 
         url = url.strip()
         user_log_js = ''
@@ -1056,6 +1056,9 @@ class Utils:
             originText = text
         if fileName == '':
             fileName = library
+
+        if refreshID == '':
+            refreshID = aid;
 
 
         #if originText.find('(') != -1:
@@ -1130,15 +1133,18 @@ class Utils:
                     if link == '':
                         continue
                     newTabArg = 'false'
+                    haveDescArg = 'true'
                     if newTab:
                         newTabArg = 'true'
+                    if haveDesc == False:
+                        haveDescArg = 'false'
 
                     if useQuote:
                         open_js += "openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
-                        onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote);"
+                        onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote, #quote" + haveDescArg + "#quote);"
                     else:
                         open_js += "openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + refreshID + "', '" + module + "', '" + fileName + "');"
-                        onHover_js+= "onHover('" + aid + "', '" + searchText + "', '" + link + "', '" + rid + "', '" + module + "', '" + fileName+ "');"
+                        onHover_js+= "onHover('" + aid + "', '" + searchText + "', '" + link + "', '" + rid + "', '" + module + "', '" + fileName+ "', '" + haveDescArg + "');"
 
                     if newTab == False:
                         break
@@ -1188,7 +1194,7 @@ class Utils:
         return result
 
 
-    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False, showText='', module='', library='', rid='', resourceType=''):
+    def toSmartLink(self, text, br_number=Config.smart_link_br_len, engin='', noFormat=False, showText='', module='', library='', rid='', resourceType='', aid=''):
         if text != '':
             url = ''
             if engin != '':
@@ -1196,9 +1202,9 @@ class Utils:
             else:
                 url = self.bestMatchEnginUrl(text, resourceType=resourceType)
             if noFormat:
-                return self.enhancedLink(url, text, showText=showText, module=module, library=library, rid=rid, resourceType=resourceType)
+                return self.enhancedLink(url, text, showText=showText, module=module, library=library, rid=rid, resourceType=resourceType, aid=aid)
             else:
-                return self.enhancedLink(url, self.formatTitle(text, br_number), showText=showText, module=module, library=library, rid=rid, resourceType=resourceType)
+                return self.enhancedLink(url, self.formatTitle(text, br_number), showText=showText, module=module, library=library, rid=rid, resourceType=resourceType, aid=aid)
         return text
 
     def formatTitle(self, title, br_number=Config.smart_link_br_len, keywords=[]):
@@ -2332,7 +2338,7 @@ class Utils:
                     text=message, username='My Sweet Bot',
                     icon_emoji=':robot_face:')
 
-    def toListHtml(self, titleList, urlList, htmlList, descHtmlList=None, splitNumber=0, moreHtml=True, showWebsiteIcon=True):
+    def toListHtml(self, titleList, urlList, htmlList, descHtmlList=None, splitNumber=0, moreHtml=True, showWebsiteIcon=True, rid='', aidList=[], refreshIDList=[], orginFilename=''):
         html = ''
         start = False 
         if splitNumber == 0:
@@ -2356,7 +2362,10 @@ class Utils:
           url = urlList[i]
           html += '<li><span>' + str(i + 1) + '.</span>'
           if url != '':
-              html += '<p><a target="_blank" href="' + url + '">' + title + '</a>'
+              html += '<p>'
+
+              html += self.enhancedLink(url, title, module='history', library=orginFilename, aid=aidList[i], refreshID=refreshIDList[i])
+              #'<a target="_blank" href="' + url + '">' + title + '</a>'
           else:
               html += '<p>' + self.utils.toSmartLink(title, Config.smart_link_br_len)
 
@@ -2366,8 +2375,8 @@ class Utils:
           if htmlList != None and len(htmlList) > 0:
               html += htmlList[i]
           if moreHtml:
-              divID = 'div-' + str(i)
-              linkID = 'a-' + str(i)
+              divID = 'div-' + aidList[i].replace('a-', '')
+              linkID = aidList[i] + '-more'
               appendID = str(i + 1)
               script = self.genMoreEnginScript(linkID, divID, "loop-" + str(appendID), title, url, '-', hidenEnginSection=True)
               descHtml = ''
