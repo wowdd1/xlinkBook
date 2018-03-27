@@ -75,6 +75,7 @@ class Social(BaseExtension):
         socialUrl = self.preUrl(self.tag.tag_list_account[k])
 
         #print v + ' ' + socialUrl
+        print v
         print k + v.replace(socialUrl, '')
         return k +v.replace(socialUrl, '')      
 
@@ -108,8 +109,9 @@ class Social(BaseExtension):
     def preUrl(self, url):
         if url.find('%s') != -1:
             url = url[0 : url.find('%')]
-        url = url.replace('http://', '')
-        url = url.replace('https://', '')
+        url = url.replace('http:', '')
+        url = url.replace('https:', '')
+        url = url.replace('//', '')
         url = url.replace('www.', '')
 
         return url

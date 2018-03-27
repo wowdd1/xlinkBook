@@ -25,6 +25,8 @@ var KEY_E_DOWN = false;
 var KEY_Q_DOWN = false;
 var KEY_G_DOWN = false;
 
+var hover_mode = true;
+
 var lastClick = null;
 var clickArray = new Array();
 var KEY_L_ALT = 18;
@@ -34,6 +36,7 @@ var KEY_ESC_CODE = 27;
 var KEY_E_CODE = 69;
 var KEY_Q_CODE = 81;
 var KEY_G_CODE = 71;
+var KEY_H_CODE = 72
 
 
 function onkeydown(evt){
@@ -81,6 +84,10 @@ function onkeydown(evt){
             }
        } else if (evt.keyCode == KEY_ESC_CODE) {
 
+       } else if (evt.keyCode == KEY_H_CODE) {
+            hover_mode  = !hover_mode;
+
+            console.log('hover_mode ' + hover_mode);
        }
     }
 }
@@ -429,6 +436,36 @@ function batchOpen(data, resourceType) {
             }
         }
     });
+}
+
+var lastHovered = '';
+
+function onHover(aid, text, url, rid, module, fileName) {
+
+    if (hover_mode) {
+        console.log(aid + ' onHover ' + 'url:' + url + ' text:' + text);
+
+        if (module == 'history') {
+            more = document.getElementById(aid + '-more');
+            if (lastHovered != '' && more != null) {
+                lastMore = document.getElementById(lastHovered + '-more');
+                if (lastMore != null && lastMore.text == 'less') {
+                    lastMore.click();
+                }
+            }
+            if (more != null) {
+                more.click();
+
+                lastHovered = aid;
+            }
+
+            
+        }
+
+    }
+
+    
+
 }
 
 function openUrl(url, searchText, newTab, excl, rid, resourceType, aid, module, fileName) {
@@ -815,6 +852,7 @@ function hidendiv_2(targetid){
           global_selection = selection;
       }
       var target=document.getElementById(targetid);
+      //console.log('hidendiv_2 ' + targetid + ' ' + target.style.display);
       if (target.style.display != 'none') {
           target.style.display="none";
           if (targetid.indexOf('search') < 0) {
@@ -822,6 +860,7 @@ function hidendiv_2(targetid){
 
           }
       }
+      //console.log('hidendiv_2 ' + targetid + ' ' + target.style.display);
       
       var target=document.getElementById(targetid + "-data");
       target.style.display="none";
@@ -1120,16 +1159,18 @@ function userlog(text, url, module, library, rid, searchText, resourceType) {
     $.post("/userlog", {text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){});
 }
 
-function userlogEx(aid, text, url, module, library, rid, searchText, resourceType) {
+function userlogEx(aid, refreshID, text, url, module, library, rid, searchText, resourceType) {
     if (KEY_X_DOWN) {
         KEY_X_DOWN = false;
         return;
     }
     var os = getOsInfo();
     var browser = getBrowserInfo();
-    $.post("/userlog", {aid : aid, text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){
+    $.post("/userlog", {aid : aid, refreshID : refreshID, text : text , searchText : searchText, url : url, module : module, library : library, rid : rid, resourceType: resourceType, user : user_name, os : os, browser : browser, ip : '', from : '', mac : ''}, function(data){
         
-        refreshTab(aid, 'history');
+        if (refreshID != '') {
+            refreshTab(refreshID, 'history');
+        }
 
     });
 }
