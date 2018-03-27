@@ -83,7 +83,7 @@ class History(BaseExtension):
 
         return html
 
-    def getAID(self, divID, text):
+    def getRefreshID(self, divID, text):
         if text == Config.history_quick_access_name:
             return 'td-' + divID.replace('history', 'a-qa-')
 
@@ -261,8 +261,9 @@ class History(BaseExtension):
 
                             htmlList.append(html)
                         count += 1
-                        aid = self.getAID(self.divID, title)
-                        descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, aid=aid))
+                        refreshID = self.getRefreshID(self.divID, title)
+                        aid = self.getAID(ref_divID, count)
+                        descHtmlList.append(self.utils.genDescHtml(item.get_describe().strip(), Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, aid=aid, refreshID=refreshID))
 
                     #splitNumber = len(rList) / 3
                     splitNumber = len(rList)
@@ -355,9 +356,10 @@ class History(BaseExtension):
             #    clickCount = jobj['count']
             #    if int(clickCount) > 1:
             #        showText = ftitle + ' (' + clickCount + ')'
-            aid = self.getAID(self.divID, text=title)
+            aid = self.getAID(ref_divID, count)
+            refreshID = self.getRefreshID(self.divID, text=title)
 
-            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, aid=aid, showText=showText)
+            html += '<p>' + self.utils.enhancedLink(url, ftitle, module='history', library=orginFilename, rid=rID, aid=aid, refreshID=refreshID, showText=showText)
 
             if appendFrontHtml != '':
                 html += appendFrontHtml
@@ -384,8 +386,8 @@ class History(BaseExtension):
             html += appendAfterHtml
 
         if moreOption:
+            linkID = self.getAID(ref_divID, count) + '-more'
             ref_divID += '-' + str(count)
-            linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
             appendID = str(count)
             originTitle = title
 
@@ -398,11 +400,12 @@ class History(BaseExtension):
 
             if jobj.has_key('desc') and jobj['desc'].strip() != '':
                 #print jobj['desc']
-                aid = self.getAID(self.divID, text=title)
+                refreshID = self.getRefreshID(self.divID, text=title)
+                aid = self.getAID(self.divID, count)
                 if Config.history_enable_subitem_log:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=orginFilename, rid=rID, aid=aid, iconKeyword=True, fontScala=1)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, library=orginFilename, rid=rID, aid=aid, refreshID=refreshID, iconKeyword=True, fontScala=1)
                 else:
-                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid)
+                    descHtml = self.utils.genDescHtml(jobj['desc'], Config.course_name_len, self.tag.tag_list, iconKeyword=True, fontScala=1, rid=rID, aid=aid, refreshID=refreshID)
             
             #if url != '':
             #    descHtml = self.utils.genDescHtml('url:' + url, Config.course_name_len, self.tag.tag_list)
@@ -412,6 +415,12 @@ class History(BaseExtension):
         html += '</p></li>'
 
         return html
+
+    def getAID(self, ref_divID, count):
+        ref_divID += '-' + str(count)
+        linkID = 'a-' + ref_divID[ref_divID.find('-') + 1 :]
+
+        return linkID
 
     def match_item(self, jobj, rTitleList):
         if len(rTitleList) == 0:

@@ -1042,7 +1042,7 @@ class Utils:
 
     #hook user usage data
 
-    def enhancedLink(self, url, text, aid='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
+    def enhancedLink(self, url, text, aid='', refreshID='', style=Config.smart_link_style, script='', showText='', originText='', useQuote=False, module='', library='', img='', rid='', newTab=True, searchText='', resourceType='', urlFromServer=False, dialogMode=False, ignoreUrl=False, fileName='', dialogPlacement='top', isTag=False, log=True):
 
         url = url.strip()
         user_log_js = ''
@@ -1056,6 +1056,7 @@ class Utils:
             originText = text
         if fileName == '':
             fileName = library
+
 
         #if originText.find('(') != -1:
         #    print originText
@@ -1083,7 +1084,7 @@ class Utils:
             # because array.push('') contain ', list.py will replace "'" to ""
             # so use  #quote as ', in appendContent wiil replace #quote back to '
             if log:
-                user_log_js = "userlogEx(#quote" + aid+ "#quote,#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, #quote" + resourceType + "#quote);"
+                user_log_js = "userlogEx(#quote" + aid+ "#quote,#quote" + refreshID + "#quote,#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, #quote" + resourceType + "#quote);"
 
             query_url_js = "queryUrlFromServer(#quote" + send_text + "#quote,#quote" + url + "#quote,#quote" + module + "#quote,#quote" + library + "#quote, #quote" + rid + "#quote, #quote" + searchText+ "#quote, " + newTabArgs + ", " + isTagArgs+ ", #quote" + fileName + "#quote," + islog + ");"
             if Config.background_after_click != '' and text.find('path-') == -1:
@@ -1091,7 +1092,7 @@ class Utils:
 
         else:
             if log:
-                user_log_js = "userlogEx('" + aid + "','"+ send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');"
+                user_log_js = "userlogEx('" + aid + "','" + refreshID + "','"+ send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "');"
             query_url_js = "queryUrlFromServer('" + send_text + "','" + url + "','" + module + "','" + library + "', '" + rid + "', '" + searchText + "', '" + resourceType + "', " + newTabArgs + ", " + isTagArgs + ", '" + fileName + "'," + islog +");"
             if Config.background_after_click != '' and text.find('path-') == -1:
                 chanage_color_js = "chanageLinkColor(this, '" + Config.background_after_click + "', '" + Config.fontsize_after_click + "');"
@@ -1114,6 +1115,7 @@ class Utils:
             return link
 
         open_js = ''
+        onHover_js = ''
         if ignoreUrl == False:
             if urlFromServer:
                 user_log_js = ''
@@ -1132,9 +1134,11 @@ class Utils:
                         newTabArg = 'true'
 
                     if useQuote:
-                        open_js += "openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + aid + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
+                        open_js += "openUrl(#quote" + link + "#quote, #quote" + searchText + "#quote, " + newTabArg + ", " + newTabArg + ", #quote" + rid + "#quote, #quote" + resourceType + "#quote, #quote" + refreshID + "#quote, #quote" + module + "#quote, #quote" + fileName + "#quote);"
+                        onHover_js+= "onHover(#quote" + aid + "#quote, #quote" + searchText + "#quote, #quote" + link + "#quote, #quote" + rid + "#quote, #quote" + module + "#quote, #quote" + fileName+ "#quote);"
                     else:
-                        open_js += "openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + aid + "', '" + module + "', '" + fileName + "');"
+                        open_js += "openUrl('" + link + "', '" + searchText + "', " + newTabArg + ", " + newTabArg + ", '" + rid + "', '" + resourceType + "', '" + refreshID + "', '" + module + "', '" + fileName + "');"
+                        onHover_js+= "onHover('" + aid + "', '" + searchText + "', '" + link + "', '" + rid + "', '" + module + "', '" + fileName+ "');"
 
                     if newTab == False:
                         break
@@ -1160,6 +1164,9 @@ class Utils:
                 result += ' onclick="' + script + open_js + chanage_color_js + user_log_js + '"'
             else:
                 result += ' onclick="' + open_js + chanage_color_js + user_log_js + '"'
+
+            if onHover_js != '':
+                result += ' onmouseover="' + onHover_js + '"'
 
 
             if style != '':
@@ -1527,7 +1534,7 @@ class Utils:
 
         return linksDict
 
-    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', iconKeyword=False, fontScala=0):
+    def genDescHtml(self, desc, titleLen, keywordList, library='', genLink=True, rid='', aid='', refreshID='', iconKeyword=False, fontScala=0):
         start = 0
         html = '<br>'
         desc = ' ' + desc
@@ -1537,17 +1544,17 @@ class Utils:
                 if end < len(desc):
                     #print desc[start : end].strip()
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, fontScala=fontScala, accountIcon=False), keywordList) + '<br>'
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + '<br>'
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, fontScala=fontScala), keywordList) + '<br>'
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : end], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + '<br>'
                     start = end
                 else:
                     if iconKeyword:
-                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, fontScala=fontScala, accountIcon=False), keywordList) + '<br>'
+                        html += self.icon_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala, accountIcon=False), keywordList) + '<br>'
 
                     else:
-                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, fontScala=fontScala), keywordList) + '<br>'
+                        html += self.color_keyword(self.genDescLinkHtml(desc[start : ], titleLen, library=library, rid=rid, aid=aid, refreshID=refreshID, fontScala=fontScala), keywordList) + '<br>'
                     break
         else:
             while True:
@@ -1743,7 +1750,7 @@ class Utils:
         else:
             return ''
 
-    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', fontScala=0, accountIcon=True, returnUrlDict=False):
+    def genDescLinkHtml(self, text, titleLenm, library='', rid='', aid='', refreshID='', fontScala=0, accountIcon=True, returnUrlDict=False):
         tagStr = text[0: text.find(':') + 1].strip()
         tagValue =  text[text.find(':') + 1 : ].strip()
 
@@ -1755,6 +1762,7 @@ class Utils:
             tagValues = tagValue.split(',')
             for item in tagValues:
                 count += 1
+                newAID = aid + '-website-' + str(count)
                 shwoText = self.getLinkShowText(False, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala)
 
                 if self.getValueOrTextCheck(item):
@@ -1762,14 +1770,14 @@ class Utils:
                     #print itemText
                     itemValue = self.getValueOrText(item, returnType='value')
                     urlDict[itemText] = itemValue
-                    html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid=rid, aid=aid, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                    html += self.enhancedLink(itemValue, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
                     iconHtml = self.getIconHtml(itemValue)
                     if iconHtml != '':
                         html = html.strip() + iconHtml.strip()
                 else:
                     url = self.toQueryUrl(self.getEnginUrl('glucky'), item)
                     urlDict[item] = url
-                    html += self.enhancedLink(url, item, module='history', library=library, rid=rid, aid=aid, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                    html += self.enhancedLink(url, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
                 if count != len(tagValues):
                     html += ', '
         elif self.isAccountTag(tagStr, self.tag.tag_list_account):
@@ -1783,6 +1791,7 @@ class Utils:
             for item in tagValues:
                 item = item.strip()
                 count += 1
+                newAID = aid + '-' + tagStr.replace(':', '').strip().lower() + '-' + str(count)
                 shwoText = self.getLinkShowText(True, item, tagStr.replace(':', ''), len(tagValues), fontScala=fontScala, accountIcon=accountIcon)
                 if self.getValueOrTextCheck(item):
                     itemText = self.getValueOrText(item, returnType='text')
@@ -1791,13 +1800,13 @@ class Utils:
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, link)
                     urlDict[itemText] = link
-                    html += self.enhancedLink(link, itemText, module='history', library=library, rid=rid, aid=aid, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)                  
+                    html += self.enhancedLink(link, itemText, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)                  
                 else:
                     link = item
                     if link.startswith('http') == False:
                         link = self.toQueryUrl(url, item)
                     urlDict[item] = link
-                    html += self.enhancedLink(link, item, module='history', library=library, rid=rid, aid=aid, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
+                    html += self.enhancedLink(link, item, module='history', library=library, rid=rid, aid=newAID, refreshID=refreshID, resourceType=tagStr.replace(':', ''), showText=shwoText, dialogMode=False, originText=item)
                 if count != len(tagValues):
                     html += ' '
 
